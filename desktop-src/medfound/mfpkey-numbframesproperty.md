@@ -4,12 +4,12 @@ ms.assetid: 8bd95baa-c130-4616-8ab7-7d902162e4ed
 title: Propriedade MFPKEY_NUMBFRAMES (Wmcodecdsp. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dc3b0655a4a5e24b92f9699b198f10232de8edf8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dfcf103da1d629c90209aef4badd604651d73af3e9101cac0f613b47c82883e3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105748919"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119555412"
 ---
 # <a name="mfpkey_numbframes-property"></a>\_Propriedade MFPKEY NUMBFRAMES
 
@@ -29,7 +29,7 @@ VT-I4
 
 ## <a name="remarks"></a>Comentários
 
-Por padrão, o Windows Media Video 9 usa apenas intraframes (I-frames), também conhecido como quadros-chave ou quadros de ancoragem, que são quadros totalmente codificados e quadros de previsão (quadros P), que são codificados como uma diferença do I-frame anterior. Os quadros B são diferentes dos quadros P porque armazenam as diferenças do quadro anterior e as diferenças do quadro a seguir.
+por padrão, Windows vídeo de mídia 9 usa apenas intraframes (I-frames), também conhecido como quadros-chave ou quadros de ancoragem, que são quadros totalmente codificados e quadros de previsão (quadros P), que são codificados como uma diferença do I-frame anterior. Os quadros B são diferentes dos quadros P porque armazenam as diferenças do quadro anterior e as diferenças do quadro a seguir.
 
 Quando você configura o codec para usar os quadros B, ele usará o número especificado de quadros B entre cada par de quadros do tipo I ou P.
 
@@ -45,9 +45,9 @@ O intervalo válido de valores para essa propriedade é de 0 a 7.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                    |
-| parâmetro<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                    |
+| Cabeçalho<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
 
 
 

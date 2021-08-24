@@ -1,33 +1,33 @@
 ---
-description: Introdução com os serviços de edição do DirectShow
+description: Introdução com DirectShow serviços de edição
 ms.assetid: 63148895-5233-41f3-865a-5e8f83077437
-title: Introdução com os serviços de edição do DirectShow
+title: Introdução com DirectShow serviços de edição
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cc668fad63dbc7e450f23e8c10e2b6c3e19f0198
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: b370fcefed0e37a5557b58102be5aeb40e84add77a40310db5f29d7623f4b5ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103919701"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119564836"
 ---
-# <a name="getting-started-with-directshow-editing-services"></a>Introdução com os serviços de edição do DirectShow
+# <a name="getting-started-with-directshow-editing-services"></a>Introdução com DirectShow serviços de edição
 
 \[Essa API não tem suporte e pode ser alterada ou não estar disponível no futuro.\]
 
-Esta seção descreve os conceitos básicos de que você precisa para começar a usar os [serviços de edição do DirectShow](directshow-editing-services.md) (des). Ela contém os seguintes tópicos:
+esta seção descreve os conceitos básicos de que você precisa para começar a usar os [serviços de edição de DirectShow](directshow-editing-services.md) (DES). Ela contém os seguintes tópicos:
 
--   [Arquitetura de serviços de edição do DirectShow](directshow-editing-services-architecture.md)
+-   [DirectShow Editando a arquitetura de serviços](directshow-editing-services-architecture.md)
 -   [O modelo de linha do tempo](the-timeline-model.md)
 -   [Transições](transitions.md)
 -   [Composição e disposição em camadas](composition-and-layering.md)
--   [Tempo nos serviços de edição do DirectShow](time-in-directshow-editing-services.md)
+-   [tempo em DirectShow serviços de edição](time-in-directshow-editing-services.md)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Serviços de edição do DirectShow](directshow-editing-services.md)
+[DirectShow Editando serviços](directshow-editing-services.md)
 </dt> </dl>
 
  

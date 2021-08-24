@@ -9,12 +9,12 @@ keywords:
 - modo de comentários OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ad9f66a578fad4e5f0d4bdaae42821a4fc38859d
-ms.sourcegitcommit: 628fda3e63fd1d513ce9a5f55be8bbc4af4b2a4b
+ms.openlocfilehash: 6265dad27ab6c8cc44b97aef44b8d4a72143fedf0444278475663ed7e2619154
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105750786"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119553796"
 ---
 # <a name="selection-and-feedback-reference"></a>Referência de seleção e comentários
 

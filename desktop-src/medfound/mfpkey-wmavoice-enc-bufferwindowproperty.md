@@ -4,12 +4,12 @@ ms.assetid: 48c84e6d-b21f-468e-8847-f5e2acd5b44a
 title: Propriedade MFPKEY_WMAVOICE_ENC_BufferWindow (Wmcodecdsp. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 35d5035979ffd161eb7694690fbf2566db5dfd1d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8d05df85a6f1460666f82f494df0d41fdebd811a578817639eb6f7d41f0bf9ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105810758"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119603446"
 ---
 # <a name="mfpkey_wmavoice_enc_bufferwindow-property"></a>\_Propriedade MFPKEY WMAVOICE \_ ENC \_ BufferWindow
 
@@ -35,9 +35,9 @@ g \_ wszWMACVoiceBuffer
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                    |
-| parâmetro<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                    |
+| Cabeçalho<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
 
 
 

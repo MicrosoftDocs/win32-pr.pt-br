@@ -4,12 +4,12 @@ description: Monitor de Rede 3,3 permite que os usuários analisem, filtrem e ex
 ms.assetid: 932be193-70f9-48f9-95d8-18916d3b7064
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 04120f860654f4859aa930f32a4711999682eaf8
-ms.sourcegitcommit: d39e82e232f6510f843fdb8d55d25b4e9e02e880
+ms.openlocfilehash: fc8c794b04837cc9d32b265eb81bfeb08fa47bdc1730672971ff6824b31c8ca0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "103923022"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119685676"
 ---
 # <a name="using-network-monitor-to-view-etl-files"></a>Uso do Monitor de Rede para exibição de arquivos ETL
 

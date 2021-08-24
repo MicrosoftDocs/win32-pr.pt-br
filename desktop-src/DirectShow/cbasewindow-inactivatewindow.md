@@ -1,7 +1,7 @@
 ---
-description: O método InactivateWindow desativa a janela. Na classe base, esse método oculta a janela.
+description: O método InactivateWindow inativa a janela. Na classe base, esse método oculta a janela.
 ms.assetid: b575d4fd-dee1-4ae5-abb4-e92ae361e82a
-title: Método CBaseWindow. InactivateWindow (Winutil. h)
+title: Método CBaseWindow.InactivateWindow (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d1c5e925a3d9b510918636a221d5ad6e1b7da736
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3cf175a55ab5739b0fa171fe4c9553d3691be82d71b38fd5eb480d6e28043440
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105786998"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119567456"
 ---
-# <a name="cbasewindowinactivatewindow-method"></a>Método CBaseWindow. InactivateWindow
+# <a name="cbasewindowinactivatewindow-method"></a>Método CBaseWindow.InactivateWindow
 
-O `InactivateWindow` método desativa a janela. Na classe base, esse método oculta a janela.
+O `InactivateWindow` método inativa a janela. Na classe base, esse método oculta a janela.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,16 +40,16 @@ virtual HRESULT InactivateWindow();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um dos valores **HRESULT** mostrados na tabela a seguir.
+Retorna um dos **valores HRESULT** mostrados na tabela a seguir.
 
 
 
 | Código de retorno                                                                             | Descrição                            |
 |-----------------------------------------------------------------------------------------|----------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>    | Êxito.<br/>                    |
-| <dl> <dt>**\_falso**</dt> </dl> | A janela já está inativa.<br/> |
+| <dl> <dt>**S \_ FALSE**</dt> </dl> | A janela já está inativa.<br/> |
 
 
 
@@ -61,8 +61,8 @@ Retorna um dos valores **HRESULT** mostrados na tabela a seguir.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Winutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

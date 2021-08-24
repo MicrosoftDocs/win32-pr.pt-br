@@ -1,19 +1,19 @@
 ---
-description: O Windows Sockets 2 apresenta e/s sobreposta e requer que todos os provedores de transporte ofereçam suporte a esse recurso.
+description: Windows Os soquetes 2 apresentam e/s sobreposta e exigem que todos os provedores de transporte ofereçam suporte a esse recurso.
 ms.assetid: 90d49171-e211-4426-aa56-88aaeac7c578
 title: Entrada/saída sobreposta
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d8caa13dd3d50e4f0fdaa1b92fa8e99afd8e2e1
-ms.sourcegitcommit: 3d9dce1bd6c84e2b51759e940aa95aa9b459cd20
+ms.openlocfilehash: e5d260cccd13bfb8e872e0ac7346c112efff2f77cf115e3fe2f8dd3d3fb94deb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "103837690"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119641786"
 ---
 # <a name="overlapped-inputoutput"></a>Entrada/saída sobreposta
 
-O Windows Sockets 2 apresenta e/s sobreposta e requer que todos os provedores de transporte ofereçam suporte a esse recurso. A e/s sobreposta pode ser executada somente em soquetes que foram criados por meio da função [**WSPSocket**](/windows/desktop/api/Ws2spi/nc-ws2spi-lpwspsocket) com o sinalizador de cabeçalho wsa \_ \_ sobreposto definido e seguir o modelo estabelecido no Windows.
+Windows Os soquetes 2 apresentam e/s sobreposta e exigem que todos os provedores de transporte ofereçam suporte a esse recurso. A e/s sobreposta pode ser executada somente em soquetes que foram criados por meio da função [**WSPSocket**](/windows/desktop/api/Ws2spi/nc-ws2spi-lpwspsocket) com o sinalizador de cabeçalho wsa \_ \_ sobreposto definido e seguir o modelo estabelecido em Windows.
 
 Para receber, um cliente usa [**WSPRecv**](/previous-versions/windows/hardware/network/ff566309(v=vs.85)) ou [**WSPRecvFrom**](/previous-versions/windows/desktop/legacy/ms742287(v=vs.85)) para fornecer buffers para os quais os dados serão recebidos. Se um ou mais buffers forem lançados antes da hora em que os dados foram recebidos pela rede, será possível que os dados sejam colocados nos buffers do usuário imediatamente, conforme eles chegam e, portanto, evitem a operação de cópia que, caso contrário, ocorreria. Se os dados chegarem quando os buffers de recebimento já tiverem sido postados, eles serão copiados imediatamente para os buffers do usuário. Se os dados chegarem quando nenhum buffer de recebimento tiver sido postado pelo aplicativo, o provedor de serviços Resort para o estilo síncrono de operação em que os dados de entrada são armazenados em buffer internamente até o momento em que o cliente emite uma chamada de recebimento e, portanto, fornece um buffer no qual os dados podem ser copiados. Uma exceção a isso seria se o aplicativo usava [**WSPSetSockOpt**](/previous-versions/windows/hardware/network/ff566318(v=vs.85)) para definir o tamanho do buffer de recebimento como zero. Nessa instância, os protocolos confiáveis só permitirão que os dados sejam recebidos quando os buffers de aplicativo tivessem sido postados, e os dados em protocolos não confiáveis seriam perdidos.
 
@@ -49,10 +49,10 @@ Para provedores de serviços em que um componente de modo de usuário implementa
 -   O procedimento intermediário simplesmente desempacota os parâmetros, desaloca o buffer e chama o procedimento de conclusão fornecido pelo cliente.
 -   Para provedores de serviços em que um componente de modo kernel implementa e/s sobreposta, uma implementação típica é semelhante, exceto que a implementação usaria as interfaces de kernel padrão para enfileirar a APC.
 
-A descrição das interfaces de kernel relevantes está fora do escopo da especificação do Windows Sockets 2.
+a descrição das interfaces de kernel relevantes está fora do escopo da especificação Windows sockets 2.
 
 > [!Note]  
-> Os provedores de serviço devem permitir que clientes do Windows Sockets 2 invoquem operações de envio e recebimento de dentro do contexto da rotina de conclusão de e/s de soquete e garantir que, para um determinado soquete, as rotinas de conclusão de e/s não serão aninhadas.
+> os provedores de serviços devem permitir que os clientes do Windows sockets 2 invoquem as operações de envio e recebimento de dentro do contexto da rotina de conclusão de e/s de soquete e garantir que, para um determinado soquete, as rotinas de conclusão de e/s não serão aninhadas.
 
  
 

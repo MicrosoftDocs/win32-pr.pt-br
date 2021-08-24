@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 81b1c00c872352c984c87ee84f7eaed5baffafd3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fce5080edc44501290672bf0db0ebac69ef4856ec0b7163821cf60ac63d384ed
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759425"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119290706"
 ---
 # <a name="idwritefontfacegetgdicompatiblemetrics-method"></a>Método IDWriteFontFace:: GetGdiCompatibleMetrics
 
@@ -81,7 +81,7 @@ Um ponteiro para uma estrutura S de [**\_ \_ métrica de fonte DWRITE**](/window
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 

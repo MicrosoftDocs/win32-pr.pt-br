@@ -4,12 +4,12 @@ ms.assetid: 141ea422-d844-4e1c-9ef5-3b5ff27024f7
 title: Sistema. Music. period
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c5a1a61e7f6477c97ce71f84bc1a470e726c84a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 948e9317b4c02ebcf23077118e47f2928d664964016d82e0aeaddf7f39cb3471
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108110424"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119553576"
 ---
 # <a name="systemmusicperiod"></a>Sistema. Music. period
 

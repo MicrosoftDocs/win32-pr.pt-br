@@ -4,18 +4,18 @@ description: Este tópico mostra como criar um sombreador de domínio.
 ms.assetid: 329d4eb9-8886-401d-8fb4-39e06886998f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a01d6b006c5ffe3afa355abe5e662cb96aa1391
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 46733bc9147f67cf33a127d8254f16c5813d8ebc2f0cb96c2071ae15589e34bd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104084692"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119566176"
 ---
 # <a name="how-to-design-a-domain-shader"></a>Como criar um sombreador de domínio
 
-Um sombreador de domínio é o terceiro de três estágios que trabalham em conjunto para implementar o [mosaico](direct3d-11-advanced-stages-tessellation.md). O sombreador de domínio gera a geometria da superfície dos pontos de controle transformados de um sombreador envoltória e das coordenadas UV. Este tópico mostra como criar um sombreador de domínio.
+Um sombreador de domínio é o terceiro de três estágios que trabalham juntos para implementar [o mosaico](direct3d-11-advanced-stages-tessellation.md). O sombreador de domínio gera a geometria da superfície dos pontos de controle transformados de um sombreador de chassi e as coordenadas UV. Este tópico mostra como criar um sombreador de domínio.
 
-Um sombreador de domínio é invocado uma vez para cada ponto gerado pela função fixa Tessellator. As entradas são as \[ coordenadas UV W \] do ponto no patch, bem como todos os dados de saída do sombreador envoltória, incluindo pontos de controle e constantes de patch. A saída é um vértice definido de qualquer maneira desejada. Se a saída estiver sendo enviada para o sombreador de pixel, a saída deverá incluir uma posição (denotada com uma semântica de posição de VA \_ ).
+Um sombreador de domínio é invocado uma vez para cada ponto gerado pelo mosaico de função fixa. As entradas são as coordenadas UV W do ponto no patch, bem como todos os dados de saída do sombreador de chassi, incluindo pontos de controle e \[ \] constantes de patch. A saída é um vértice definido de qualquer maneira desejada. Se a saída estiver sendo enviada para o sombreador de pixel, a saída deverá incluir uma posição (denotada com uma semântica \_ de Posição SV).
 
 **Para criar um sombreador de domínio**
 
@@ -27,15 +27,15 @@ Um sombreador de domínio é invocado uma vez para cada ponto gerado pela funç�
 
     
 
-    O domínio é definido para um patch quádruplo.
+    O domínio é definido para um patch quad.
 
-2.  Declare o local no envoltória com o valor do sistema de [local de domínio](/windows/desktop/direct3dhlsl/sv-domainlocation) .
+2.  Declare o local no chassi com o valor [do sistema de localização](/windows/desktop/direct3dhlsl/sv-domainlocation) de domínio.
 
-    -   Para um patch quádruplo, use um float2.
-    -   Para um patch Tri, use um float3 (para coordenadas barycentric)
-    -   Para um Isoline, use um float2.
+    -   Para um patch quad, use um float2.
+    -   Para um patch tri, use um float3 (para coordenadas centradas em barras)
+    -   Para uma isoline, use um float2.
 
-    Portanto, o local do domínio para um patch quádruplo tem esta aparência:
+    Portanto, o local de domínio para um patch quad tem esta aparência:
 
     ```
     float2 UV : SV_DomainLocation
@@ -45,9 +45,9 @@ Um sombreador de domínio é invocado uma vez para cada ponto gerado pela funç�
 
 3.  Defina as outras entradas.
 
-    As outras entradas são provenientes do sombreador envoltória e são definidas pelo usuário. Isso inclui os pontos de controle de entrada para patch, dos quais pode haver entre 1 e 32 pontos e dados constantes de patch de entrada.
+    As outras entradas vêm do sombreador de chassi e são definidas pelo usuário. Isso inclui os pontos de controle de entrada para patch, dos quais pode haver entre 1 e 32 pontos e dados constantes de patch de entrada.
 
-    Os pontos de controle são definidos pelo usuário, geralmente com uma estrutura como esta (definida em [How to: design a Shader envoltória](direct3d-11-advanced-stages-hull-shader-design.md)):
+    Os pontos de controle são definidos pelo usuário, geralmente com uma estrutura como esta (definida em [Como criar um sombreador de chassi](direct3d-11-advanced-stages-hull-shader-design.md)):
 
     ```
     const OutputPatch<BEZIER_CONTROL_POINT, 16> bezpatch
@@ -55,7 +55,7 @@ Um sombreador de domínio é invocado uma vez para cada ponto gerado pela funç�
 
     
 
-    Os dados constantes de patch também são definidos pelo usuário e podem ser semelhantes a este (definido em [como criar um sombreador envoltória](direct3d-11-advanced-stages-hull-shader-design.md)):
+    Os dados constantes de patch também são definidos pelo usuário e podem ser parecidos com este (definido em [Como criar um sombreador de chassi):](direct3d-11-advanced-stages-hull-shader-design.md)
 
     ```
     HS_CONSTANT_DATA_OUTPUT input
@@ -63,9 +63,9 @@ Um sombreador de domínio é invocado uma vez para cada ponto gerado pela funç�
 
     
 
-4.  Adicionar código definido pelo usuário para computar as saídas; Isso constitui o corpo do sombreador de domínio.
+4.  Adicionar código definido pelo usuário para calcular as saídas; isso com torna o corpo do sombreador de domínio.
 
-    Essa estrutura contém saídas de sombreador de domínio definidas pelo usuário.
+    Essa estrutura contém saídas do sombreador de domínio definido pelo usuário.
 
     ```
     struct DS_OUTPUT
@@ -81,7 +81,7 @@ Um sombreador de domínio é invocado uma vez para cada ponto gerado pela funç�
 
     
 
-    A função usa cada UV de entrada (do Tessellator) e avalia o patch Bezier nessa posição.
+    A função pega cada UV de entrada (do mosaico) e avalia o patch do Bezier nessa posição.
 
     ```
     [domain("quad")]
@@ -99,11 +99,11 @@ Um sombreador de domínio é invocado uma vez para cada ponto gerado pela funç�
 
     
 
-    A função é invocada uma vez para cada ponto gerado pela função fixa Tessellator. Como este exemplo usa um patch quádruplo, o local do domínio de entrada ([VA \_ DomainLocation](/windows/desktop/direct3dhlsl/sv-domainlocation)) é um float2 (UV); um patch Tri teria um local de entrada float3 (coordenadas barycentric UVW) e um Isoline teria um local de domínio de entrada float2.
+    A função é invocada uma vez para cada ponto gerado pelo mosaico de função fixa. Como este exemplo usa um patch quad, o local do domínio de entrada ([SV \_ DomainLocation](/windows/desktop/direct3dhlsl/sv-domainlocation)) é um float2 (UV); um patch tri teria um local de entrada float3 (coordenadas centradas em UVW) e uma isoline teria um local de domínio de entrada float2.
 
-    As outras entradas para a função vêm do sombreador envoltória diretamente. Neste exemplo, é 16 pontos de controle, cada um sendo **um \_ \_ ponto de controle de Bézier**, bem como patches de dados constantes (**\_ \_ \_ saída de dados constante HS**). A saída é um vértice que contém qualquer **\_ saída** de dados desejada-DS neste exemplo.
+    As outras entradas para a função vêm diretamente do sombreador de chassi. Neste exemplo, são 16 pontos de controle cada um sendo um PONTO DE CONTROLE **\_ \_ BEZIER,** bem como dados constantes de patch ( SAÍDA DE DADOS **\_ CONSTANTES \_ \_ do HS).** A saída é um vértice que contém todos os dados desejados – **DS \_ OUTPUT** neste exemplo.
 
-Depois de criar um sombreador de domínio, consulte [como: criar um sombreador de domínio](direct3d-11-advanced-stages-domain-shader-create.md).
+Depois de criar um sombreador de domínio, [consulte Como criar um sombreador de domínio.](direct3d-11-advanced-stages-domain-shader-create.md)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -115,6 +115,6 @@ Depois de criar um sombreador de domínio, consulte [como: criar um sombreador d
 [Visão geral do mosaico](direct3d-11-advanced-stages-tessellation.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

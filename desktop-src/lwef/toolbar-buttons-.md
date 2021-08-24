@@ -4,16 +4,16 @@ description: Saiba mais sobre os botões da barra de ferramentas do editor de ca
 ms.assetid: 8867a038-d2c4-43c1-b994-bd3779a251b9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a0e9e6a3d2393709c6f3033111c3c88899326d99
-ms.sourcegitcommit: af9983bab40fe0b042f177ce7ca79f2eb0f9d0e8
+ms.openlocfilehash: e2be6bc8ee19da1134dd86ce7fafb37578ef55efc27d30ac119a63d15b7c8856
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "104555739"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119608083"
 ---
 # <a name="toolbar-buttons-microsoft-agent-character-editor"></a>Botões da barra de ferramentas (editor de caracteres do Microsoft Agent)
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 :::image type="icon" source="images/f9charnew.gif":::
 
@@ -77,7 +77,7 @@ Imprime o arquivo de definição de caractere atual aberto no editor.
 <span id="Cut"></span><span id="cut"></span><span id="CUT"></span>**Migração**
 </dt> <dd>
 
-Remove o item selecionado no editor e o coloca na área de transferência do Windows.
+remove o item selecionado no Editor e o coloca na área de transferência do Windows.
 
 </dd> </dl>
 
@@ -88,7 +88,7 @@ Remove o item selecionado no editor e o coloca na área de transferência do Win
 <span id="Copy"></span><span id="copy"></span><span id="COPY"></span>**CopiarObjeto**
 </dt> <dd>
 
-Copia o item selecionado no editor para a área de transferência do Windows.
+copia o item selecionado no Editor para a área de transferência do Windows.
 
 </dd> </dl>
 
@@ -99,7 +99,7 @@ Copia o item selecionado no editor para a área de transferência do Windows.
 <span id="Paste"></span><span id="paste"></span><span id="PASTE"></span>**Olar**
 </dt> <dd>
 
-Copia dados da área de transferência atual do Windows para o local selecionado.
+copia dados da área de transferência de Windows atual para o local selecionado.
 
 </dd> </dl>
 

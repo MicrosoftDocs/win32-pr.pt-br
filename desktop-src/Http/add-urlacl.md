@@ -1,9 +1,9 @@
 ---
 title: add urlacl
-description: Reserva a URL especificada para usuários e contas não administradores.
+description: Reserva a URL especificada para contas e usuários não administradores.
 ms.assetid: 5d89dec3-26e6-4db8-b4cc-e9b933ac60c5
 keywords:
-- Adicionar HTTP urlacl
+- adicionar urlacl HTTP
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.custom: snippet-project
 ms.date: 07/29/2020
-ms.openlocfilehash: 16f6cb64c0c784f3a5400e2c97e212edbc50936c
-ms.sourcegitcommit: 6515eef99ca0d1bbe3e27d4575e9986f5255f277
+ms.openlocfilehash: e3f4c715df70255ede8bd9ca5fc23131102983f8a3aeeb25735d5fc81d5ad9b5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "103930529"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119638776"
 ---
 # <a name="add-urlacl"></a>add urlacl
 
-Reserva a URL especificada para usuários e contas não administradores. A DACL (lista de controle de acesso discricionário) pode ser especificada usando um nome de conta com os parâmetros Listen e delegate ou usando uma cadeia de caracteres SDDL (Security Descriptor Definition Language).
+Reserva a URL especificada para contas e usuários não administradores. A DACL (lista de controle de acesso discricionário) pode ser especificada usando um nome de conta com os parâmetros listen e delegate ou usando uma cadeia de caracteres SDDL (linguagem de definição do descritor de segurança).
 
 ``` syntax
 add urlacl [url=]string
@@ -37,7 +37,7 @@ add urlacl [url=]string
 <dl> <dt>
 
 <span id="_url__string"></span><span id="_URL__STRING"></span>
-**[url =] cadeia de caracteres**
+**[url=] cadeia de caracteres**
 </dt> <dd>
 
 Especifica a URL totalmente qualificada.
@@ -45,35 +45,35 @@ Especifica a URL totalmente qualificada.
 </dd> <dt>
 
 <span id="_user__string"></span><span id="_USER__STRING"></span>
-**[User =] cadeia de caracteres**
+**[user=] string**
 </dt> <dd>
 
-Especifica o nome do usuário ou grupo de usuários.
+Especifica o nome de usuário ou grupo de usuários.
 
 </dd> <dt>
 
-<span id="_listen__yes_no__"></span><span id="_LISTEN__YES_NO__"></span>**\[escutar = {sim \| não}\]**
+<span id="_listen__yes_no__"></span><span id="_LISTEN__YES_NO__"></span>**\[listen={yes \| no}\]**
 </dt> <dd>
 
 Especifica um dos seguintes valores:
 
--   Sim: permite que o usuário registre URLs. Esse é o valor padrão.
--   Não: nega o usuário de registrar URLs.
+-   sim: permite que o usuário registre URLs. Esse é o valor padrão.
+-   não: nega que o usuário registre URLs.
 
 </dd> <dt>
 
-<span id="_delegate__yes_no__"></span><span id="_DELEGATE__YES_NO__"></span>**\[delegate = {sim \| não}\]**
+<span id="_delegate__yes_no__"></span><span id="_DELEGATE__YES_NO__"></span>**\[delegate={yes \| no}\]**
 </dt> <dd>
 
 Especifica um dos seguintes valores:
 
--   Sim: permite que o usuário delegue URLs.
--   Não: nega o usuário de delegar URLs. Esse é o valor padrão.
+-   sim: permite que o usuário delegar URLs.
+-   não: nega ao usuário a delegação de URLs. Esse é o valor padrão.
 
 </dd> <dt>
 
 <span id="_sddl__string"></span><span id="_SDDL__STRING"></span>
-**[SDDL =] cadeia de caracteres**
+**Cadeia de caracteres [sddl=]**
 </dt> <dd>
 
 Especifica a cadeia de caracteres SDDL que descreve a DACL.

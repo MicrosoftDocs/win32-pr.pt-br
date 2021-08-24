@@ -1,7 +1,7 @@
 ---
-description: O método WriteIPortableDeviceValuesToBuffer serializa uma interface IPortableDeviceValues para uma matriz de bytes alocada pelo chamador.
+description: O método WriteIPortableDeviceValuesToBuffer serializa uma interface IPortableDeviceValues para uma matriz de byte alocada pelo chamador.
 ms.assetid: 4d0108f1-563e-42df-897b-7cc0e9ff5b3a
-title: 'Método IWpdSerializer:: WriteIPortableDeviceValuesToBuffer (PortableDeviceTypes. h)'
+title: Método IWpdSerializer::WriteIPortableDeviceValuesToBuffer (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: f2a8f8b374f967f7231881d9e0eca6434e9c57e2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: db86953e2e08c0a66f6e497c1fcd2350cc726be8852803cf8f4d64bfff523500
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105766545"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119657736"
 ---
-# <a name="iwpdserializerwriteiportabledevicevaluestobuffer-method"></a>Método IWpdSerializer:: WriteIPortableDeviceValuesToBuffer
+# <a name="iwpdserializerwriteiportabledevicevaluestobuffer-method"></a>Método IWpdSerializer::WriteIPortableDeviceValuesToBuffer
 
-O método **WriteIPortableDeviceValuesToBuffer** serializa uma interface **IPortableDeviceValues** para uma matriz de bytes alocada pelo chamador.
+O **método WriteIPortableDeviceValuesToBuffer** serializa uma interface **IPortableDeviceValues** para uma matriz de byte alocada pelo chamador.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,44 +43,44 @@ HRESULT WriteIPortableDeviceValuesToBuffer(
 
 <dl> <dt>
 
-*dwOutputBufferLength* \[ no\]
+*dwOutputBufferLength* \[ Em\]
 </dt> <dd>
 
 **DWORD** que especifica o tamanho de *pBuffer*, em bytes.
 
 </dd> <dt>
 
-*pResults* \[ no\]
+*pResults* \[ Em\]
 </dt> <dd>
 
-Ponteiro para uma interface [**IPortableDeviceValues**](iportabledevicevalues.md) para serializar.
+Ponteiro para uma [**interface IPortableDeviceValues**](iportabledevicevalues.md) a ser serializado.
 
 </dd> <dt>
 
-*pBuffer* \[ fora\]
+*pBuffer* \[ out\]
 </dt> <dd>
 
 Ponteiro para um buffer alocado pelo chamador. Para saber o tamanho do buffer necessário, chame **GetSerializedSize**.
 
 </dd> <dt>
 
-*pdwBytesWritten* \[ fora\]
+*pdwBytesWritten* \[ out\]
 </dt> <dd>
 
-Ponteiro para um **DWORD** que indica o número de bytes que foi realmente gravado no buffer alocado pelo chamador.
+Ponteiro para um **DWORD** que indica o número de bytes que realmente foram gravados no buffer alocado pelo chamador.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 
 | Código de retorno                                                                                   | Descrição                                               |
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>          | O método foi bem-sucedido.<br/>                          |
-| <dl> <dt>**\_ponteiro E**</dt> </dl>     | Um argumento de ponteiro necessário era **nulo**.<br/>      |
+| <dl> <dt>**PONTEIRO \_ E**</dt> </dl>     | Um argumento de ponteiro necessário era **NULL.**<br/>      |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | O buffer fornecido pelo chamador não era grande o suficiente.<br/> |
 
 
@@ -97,8 +97,8 @@ Esse método copia uma interface **IPortableDeviceValues** em um buffer existent
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
 
 
 
@@ -106,7 +106,7 @@ Esse método copia uma interface **IPortableDeviceValues** em um buffer existent
 
 <dl> <dt>
 
-[**Interface IWpdSerializer**](iwpdserializer.md)
+[**IWpdSerializer Interface**](iwpdserializer.md)
 </dt> </dl>
 
  

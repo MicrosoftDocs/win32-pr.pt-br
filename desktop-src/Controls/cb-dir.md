@@ -3,7 +3,7 @@ title: Mensagem de CB_DIR (WinUser. h)
 description: Adiciona nomes à lista exibida pela caixa de combinação. A mensagem adiciona os nomes de diretórios e arquivos que correspondem a uma cadeia de caracteres especificada e um conjunto de atributos de arquivo. \_O diretório CB também pode adicionar letras de unidade mapeadas à lista.
 ms.assetid: 6082d12c-0af4-4a99-98c0-6a98d171f4d8
 keywords:
-- Controles de CB_DIR de mensagens do Windows
+- controles de Windows de mensagem de CB_DIR
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 98cbea5bb88614d5606dd3d5cb165be59f632556
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: defa19ffdebfb448e1a89c141da0b275c1df1bffdcfa9e3914293400d706b7ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824410"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119577116"
 ---
 # <a name="cb_dir-message"></a>\_Mensagem de diretório CB
 
@@ -60,7 +60,7 @@ Um ponteiro **LPCTSTR** para uma cadeia de caracteres terminada em nulo que espe
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a mensagem tiver sucesso, o valor de retorno será o índice de base zero do sobrenome adicionado à lista.
 
@@ -78,9 +78,9 @@ A lista exibe nomes de arquivo longos, se houver.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

@@ -1,137 +1,137 @@
 ---
-description: Este tutorial demonstra como usar um aplicativo multilíngue e torná-lo preparado para o mundo. Esse aplicativo está na forma de uma solução completa criada em Microsoft Visual Studio.
+description: Este tutorial demonstra como usar um aplicativo monolíngue e torná-lo pronto para o mundo. Esse aplicativo está na forma de uma solução completa criada em Microsoft Visual Studio.
 ms.assetid: 6d71aa90-8444-4f30-a2f8-f1a2aab015b0
-title: Adicionando suporte à interface do usuário multilíngue a um aplicativo
+title: Adicionando Interface de Usuário Multilíngue suporte a um aplicativo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 192d9053513a7fe915990c80deb32ffdb9114910
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0f5ca1ddba2574610cde1f375f7fab2b07461008665f2092c9c8e88ae9b51f96
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103836852"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119147689"
 ---
-# <a name="adding-multilingual-user-interface-support-to-an-application"></a>Adicionando suporte à interface do usuário multilíngue a um aplicativo
+# <a name="adding-multilingual-user-interface-support-to-an-application"></a>Adicionando Interface de Usuário Multilíngue suporte a um aplicativo
 
-Este tutorial demonstra como usar um aplicativo multilíngue e torná-lo preparado para o mundo. Esse aplicativo está na forma de uma solução completa criada em Microsoft Visual Studio.
+Este tutorial demonstra como usar um aplicativo monolíngue e torná-lo pronto para o mundo. Esse aplicativo está na forma de uma solução completa criada em Microsoft Visual Studio.
 
 -   [Visão geral](#splitting-the-various-language-resource-modules-an-overview)
-    -   [A ideia por trás do MUI de Hello](#the-idea-behind-hello-mui)
--   [Configurando a solução de Hello MUI](#setting-up-the-hello-mui-solution)
-    -   [Requisitos de plataforma](#platform-requirements)
+    -   [A ideia por trás do Hello MUI](#the-idea-behind-hello-mui)
+-   [Configurando a solução Hello MUI](#setting-up-the-hello-mui-solution)
+    -   [Requisitos da plataforma](#platform-requirements)
     -   [Pré-requisitos](#prerequisites)
--   [Etapa 0: criando o MUI de Hello embutido em código](#step-0-creating-the-hard-coded-hello-mui)
--   [Etapa 1: Implementando o módulo de recurso básico](#step-1-implementing-the-basic-resource-module)
--   [Etapa 2: criando o módulo de recurso básico](#step-2-building-the-basic-resource-module)
+-   [Etapa 0: Criando o Hello MUI codificado](#step-0-creating-the-hard-coded-hello-mui)
+-   [Etapa 1: implementando o módulo de recurso básico](#step-1-implementing-the-basic-resource-module)
+-   [Etapa 2: Criando o módulo de recurso básico](#step-2-building-the-basic-resource-module)
     -   [Dividindo os vários módulos de recursos de linguagem: uma visão geral](#splitting-the-various-language-resource-modules-an-overview)
-    -   [Dividindo os vários módulos de recursos de linguagem: criando os arquivos](#splitting-the-various-language-resource-modules-creating-the-files)
--   [Etapa 3: Criando um Resource-Savvy "Olá, MUI"](#step-3-creating-a-resource-savvy-hello-mui)
--   [Etapa 4: Globalizando "Olá, MUI"](#step-4-globalizing-hello-mui)
--   [Etapa 5: Personalizando "Olá, MUI"](#step-5-customizing-hello-mui)
--   [Considerações adicionais sobre o MUI](#additional-considerations-for-mui)
+    -   [Dividindo os vários módulos de recurso de linguagem: criando os arquivos](#splitting-the-various-language-resource-modules-creating-the-files)
+-   [Etapa 3: Criando um Resource-Savvy "Hello MUI"](#step-3-creating-a-resource-savvy-hello-mui)
+-   [Etapa 4: Globalizando "Hello MUI"](#step-4-globalizing-hello-mui)
+-   [Etapa 5: Personalização de "Hello MUI"](#step-5-customizing-hello-mui)
+-   [Considerações adicionais sobre a MUI](#additional-considerations-for-mui)
     -   [Suporte para aplicativos de console](#support-for-console-applications)
-    -   [Determinação de idiomas para dar suporte em tempo de execução](#determination-of-languages-to-support-at-run-time)
-    -   [Suporte a scripts complexos em versões anteriores ao Windows Vista](#complex-script-support-in-versions-prior-to-windows-vista)
+    -   [Determinação de idiomas para dar suporte em tempo de executar](#determination-of-languages-to-support-at-run-time)
+    -   [Suporte a script complexo em versões anteriores ao Windows Vista](#complex-script-support-in-versions-prior-to-windows-vista)
 -   [Resumo](#summary)
 
 ## <a name="overview"></a>Visão geral
 
-A partir do Windows Vista, o próprio sistema operacional Windows foi criado desde o início para ser uma plataforma multilíngue, com suporte adicional que permite criar aplicativos multilíngues que usam o modelo de recurso MUI do Windows.
+A partir do Windows Vista, o próprio sistema operacional Windows foi criado desde o início para ser uma plataforma multilíngue, com suporte adicional que permite criar aplicativos multilíngues que usam o modelo de recurso Windows MUI.
 
-Este tutorial ilustra esse novo suporte para aplicativos multilíngües ao abranger os seguintes aspectos:
+Este tutorial ilustra esse novo suporte para aplicativos multilíngues abordando os seguintes aspectos:
 
--   O usa o suporte aprimorado à plataforma MUI para permitir facilmente aplicativos multilíngües.
--   Estende os aplicativos multilíngues para serem executados em versões do Windows anteriores ao Windows Vista.
--   Aborda as considerações adicionais envolvidas no desenvolvimento de aplicativos multilíngües especializados, como aplicativos de console.
+-   Usa o suporte aprimorado da plataforma MUI para habilitar facilmente aplicativos multilíngues.
+-   Estende aplicativos multilíngues para executar em versões do Windows antes do Windows Vista.
+-   Aborda as considerações adicionais envolvidas no desenvolvimento de aplicativos multilíngues especializados, como aplicativos de console.
 
-Esses links ajudam a fornecer uma rápida atualização sobre os conceitos sobre internacionalização e o MUI:
+Esses links ajudam a fornecer uma atualização rápida sobre os conceitos sobre internacionalização e MUI:
 
--   [Visão geral rápida da internacionalização](understanding-internationalization.md).
--   [Conceitos do MUI](understanding-mui.md).
--   [Usando o MUI para desenvolver aplicativos Win32](using-multilingual-user-interface.md).
+-   [Visão geral rápida da internacionalização.](understanding-internationalization.md)
+-   [Conceitos da MUI.](understanding-mui.md)
+-   [Usando a MUI para desenvolver aplicativos Win32.](using-multilingual-user-interface.md)
 
-### <a name="the-idea-behind-hello-mui"></a>A ideia por trás do MUI de Hello
+### <a name="the-idea-behind-hello-mui"></a>A ideia por trás do Hello MUI
 
-Você provavelmente está familiarizado com o aplicativo Olá, Mundo clássico, que ilustra os conceitos básicos de programação. Este tutorial usa uma abordagem semelhante para ilustrar como usar o modelo de recurso MUI para atualizar um aplicativo multilíngue para criar uma versão multilíngue chamada Hello MUI.
+Você provavelmente está familiarizado com o aplicativo de Olá, Mundo clássico, que ilustra os conceitos básicos de programação. Este tutorial usa uma abordagem semelhante para ilustrar como usar o modelo de recurso da MUI para atualizar um aplicativo monolíngue para criar uma versão multilíngue chamada Hello MUI.
 
 > [!Note]  
-> As tarefas neste tutorial são descritas em etapas detalhadas devido à precisão com a qual essas atividades devem ser executadas e a necessidade de explicar os detalhes para os desenvolvedores que têm pouca experiência com essas tarefas.
+> As tarefas neste tutorial são descritas em etapas detalhadas devido à precisão com que essas atividades devem ser executadas e à necessidade de explicar os detalhes aos desenvolvedores que têm pouca experiência com essas tarefas.
 
  
 
-## <a name="setting-up-the-hello-mui-solution"></a>Configurando a solução de Hello MUI
+## <a name="setting-up-the-hello-mui-solution"></a>Configurando a solução Hello MUI
 
-Estas etapas descrevem como se preparar para criar a solução de Hello MUI.
+Estas etapas descreve como se preparar para criar a solução Hello MUI.
 
 ### <a name="platform-requirements"></a>Requisitos de plataforma
 
-Você deve compilar os exemplos de código neste tutorial usando o SDK (Software Development Kit) do Windows para o Windows 7 e o Visual Studio 2008. O SDK do Windows 7 será instalado no Windows XP, no Windows Vista e no Windows 7, e a solução de exemplo pode ser criada em qualquer uma dessas versões de sistema operacional.
+Você deve compilar os exemplos de código neste tutorial usando o SDK (Software Development Kit) do Windows para Windows 7 e Visual Studio 2008. O SDK Windows 7 será instalado no Windows XP, Windows Vista e Windows 7, e a solução de exemplo pode ser criada em qualquer uma dessas versões do sistema operacional.
 
-Todos os exemplos de código neste tutorial foram projetados para serem executados em versões x86 e x64 do Windows XP, Windows Vista e Windows 7. Partes específicas que não funcionarão no Windows XP são chamadas de quando apropriado.
+Todos os exemplos de código neste tutorial foram projetados para serem executados em versões x86 e x64 do Windows XP, Windows Vista e Windows 7. Partes específicas que não funcionarão no Windows XP são destacadas quando apropriado.
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
-1.  Instale o Visual Studio 2008.
+1.  Instale Visual Studio 2008.
 
     Para obter mais informações, consulte o [Visual Studio Developer Center](https://msdn.microsoft.com/vstudio/default.aspx).
 
-2.  Instale o SDK do Windows para o Windows 7.
+2.  Instale o Windows SDK do Windows 7.
 
-    Você pode instalá-lo na página SDK do Windows do [centro de desenvolvedores do Windows](https://msdn.microsoft.com/windowsserver/bb980924.aspx). O SDK inclui utilitários para desenvolver aplicativos para versões do sistema operacional a partir do Windows XP por meio do mais recente.
+    Você pode instalá-lo na página Windows SDK do [Windows Developer Center.](https://msdn.microsoft.com/windowsserver/bb980924.aspx) O SDK inclui utilitários para desenvolver aplicativos para versões do sistema operacional desde o Windows XP até o mais recente.
 
     > [!Note]  
-    > Se você não estiver instalando o pacote no local padrão, ou se não estiver instalando na unidade do sistema, que geralmente é a unidade C, anote o caminho de instalação.
+    > Se você não estiver instalando o pacote no local padrão ou se não estiver instalando na unidade do sistema, que geralmente é a unidade C, anote o caminho de instalação.
 
      
 
-3.  Configure os parâmetros de linha de comando do Visual Studio.
+3.  Configure os parâmetros Visual Studio linha de comando.
 
-    1.  Abra uma janela de comando do Visual Studio.
-    2.  Digite o **caminho do conjunto**.
-    3.  Confirme se a variável de caminho inclui o caminho da pasta bin do SDK do Windows 7:... Compartimento do \\ Windows \\ v 7.0 do Microsoft SDKs \\
+    1.  Abra uma Visual Studio de comando.
+    2.  Caminho do **conjunto de tipos**.
+    3.  Confirme se a variável de caminho inclui o caminho da pasta bin do SDK Windows 7: ... SDKs da Microsoft \\ Windows \\ compartimento v7.0 \\
 
-4.  Instale o pacote complementar de APIs de nível inferior do Microsoft NLS.
+4.  Instale o pacote de complemento de APIs de nível de baixo do Microsoft NLS.
     > [!Note]  
-    > No contexto deste tutorial, esse pacote será necessário apenas se você estiver personalizando o aplicativo para ser executado em versões do Windows anteriores ao Windows Vista. Consulte [Step 5: Personalizando Hello MUI](#step-5-customizing-hello-mui).
+    > No contexto deste tutorial, esse pacote só será necessário se você estiver personalização do aplicativo para ser executado em versões Windows antes do Windows Vista. Consulte [Etapa 5: Personalização do Hello MUI.](#step-5-customizing-hello-mui)
 
      
 
     1.  Baixe e instale o pacote de seu [site de download](https://www.microsoft.com/downloads/details.aspx?FamilyID=eb72cda0-834e-4c35-9419-ff14bc349c9d&amp;DisplayLang=en).
-    2.  Assim como ocorre com o SDK do Windows, se você não estiver instalando o pacote no local padrão ou se não estiver instalando na unidade do sistema, que geralmente é a unidade C, anote o caminho de instalação.
-    3.  Se sua plataforma de desenvolvimento for o Windows XP ou o Windows Server 2003, confirme se o Nlsdl.dll está instalado e registrado corretamente.
+    2.  Assim como acontece com o SDK do Windows, se você não estiver instalando o pacote no local padrão ou se não estiver instalando na unidade do sistema, que geralmente é a unidade C, anote o caminho de instalação.
+    3.  Se sua plataforma de desenvolvimento Windows XP ou Windows Server 2003, confirme se Nlsdl.dll está instalado e registrado corretamente.
 
-        1.  Navegue até a pasta "Redist" no local do caminho de instalação.
-        2.  Execute o nlsdl redistribuível apropriado \* . exe, como nlsdl.x86.exe. Esta etapa instala e registra Nlsdl.dll.
+        1.  Navegue até a pasta "redist" no local do caminho de instalação.
+        2.  Execute o Nlsdl redistribuível apropriado. \*.exe, como nlsdl.x86.exe. Esta etapa instala e registra Nlsdl.dll.
 
     > [!Note]  
-    > Se você desenvolver um aplicativo que usa o MUI e que deve ser executado em versões do Windows anteriores ao Windows Vista, Nlsdl.dll deverá estar presente na plataforma Windows de destino. Na maioria dos casos, isso significa que o aplicativo precisa executar e instalar o instalador nlsdl redistribuível (e não meramente copiar Nlsdl.dll si mesmo).
+    > Se você desenvolver um aplicativo que usa a MUI e que deve ser executado em versões Windows anteriores ao Windows Vista, o Nlsdl.dll deverá estar presente na plataforma Windows destino. Na maioria dos casos, isso significa que o aplicativo precisa carregar e instalar o instalador de Nlsdl redistribuível (e não simplesmente copiar Nlsdl.dll si mesmo).
 
      
 
-## <a name="step-0-creating-the-hard-coded-hello-mui"></a>Etapa 0: criando o MUI de Hello embutido em código
+## <a name="step-0-creating-the-hard-coded-hello-mui"></a>Etapa 0: Criando o Hello MUI codificado
 
-Este tutorial começa com a versão multilíngue do aplicativo Hello MUI. O aplicativo assume o uso da linguagem de programação C++, cadeias de caracteres largos e a função [**MessageBoxW**](/windows/win32/api/winuser/nf-winuser-messagebox) para saída.
+Este tutorial começa com a versão monolíngue do aplicativo Hello MUI. O aplicativo assume o uso da linguagem de programação C++, das cadeias de caracteres largos e da [**função MessageBoxW**](/windows/win32/api/winuser/nf-winuser-messagebox) para saída.
 
-Comece criando o \_ aplicativo GuiStep 0 inicial, bem como a solução HelloMUI, que contém todos os aplicativos deste tutorial.
+Comece criando o aplicativo GuiStep 0 inicial, bem como a solução HelloMUI, que contém todos os \_ aplicativos neste tutorial.
 
 1.  No Visual Studio 2008, crie um novo projeto. Use as seguintes configurações e valores:
 
-    1.  Tipo de projeto: em Visual C++ selecione Win32 e, em seguida, em modelos instalados do Visual Studio, selecione projeto Win32.
+    1.  Project tipo: em Visual C++ selecione Win32 e, em Visual Studio modelos instalados, selecione Win32 Project.
     2.  Nome: GuiStep \_ 0.
-    3.  Local: *ProjectRootDirectory* (as etapas posteriores fazem referência a esse diretório).
+    3.  Local: *ProjectRootDirectory* (etapas posteriores referenciam este diretório).
     4.  Nome da solução: HelloMUI.
-    5.  Selecione criar diretório para solução.
-    6.  No assistente de aplicativo Win32, selecione o tipo de aplicativo padrão: aplicativo do Windows.
+    5.  Selecione Criar diretório para a solução.
+    6.  No Assistente de Aplicativo Win32, selecione o tipo de aplicativo padrão: Windows aplicativo.
 
-2.  Configurar o modelo de Threading do projeto:
+2.  Configure o modelo de threading do projeto:
 
-    1.  Na Gerenciador de Soluções, clique com o botão direito do mouse no projeto GuiStep \_ 0 e selecione Propriedades.
-    2.  Na caixa de diálogo páginas de propriedades do projeto:
+    1.  No Gerenciador de Soluções, clique com o botão direito do mouse no projeto GuiStep \_ 0 e selecione Propriedades.
+    2.  Na caixa de diálogo Páginas de Propriedades do projeto:
 
-        1.  Na lista suspensa superior esquerda, defina configuração para todas as configurações.
-        2.  Em Propriedades de configuração, expanda C/C++, selecione geração de código e defina biblioteca de tempo de execução: depuração multi-threaded (/MTd).
+        1.  Na lista de opções superior esquerda, de definir Configuração como Todas as Configurações.
+        2.  Em Propriedades de Configuração, expanda C/C++, selecione Geração de Código e depure Biblioteca de Runtime: Depuração multi-threaded (/MTd).
 
-3.  Substitua o conteúdo de GuiStep \_ 0. cpp pelo código a seguir:
+3.  Substitua o conteúdo de GuiStep \_ 0.cpp pelo seguinte código:
     ```C++
     // GuiStep_0.cpp : Defines the entry point for the application.
     //
@@ -153,24 +153,24 @@ Comece criando o \_ aplicativo GuiStep 0 inicial, bem como a solução HelloMUI,
 
     
 
-4.  Crie e execute o aplicativo.
+4.  Compile e execute o aplicativo.
 
-O código-fonte direto acima faz a simples opção de design de codificação embutida, ou inserção, toda a saída que o usuário verá — nesse caso, o texto "Olá, MUI". Essa opção limita o utilitário do aplicativo para usuários que não reconhecem a palavra em inglês "Olá". Como o MUI é um acrônimo em inglês baseado em tecnologia, presume-se que a cadeia de caracteres permaneça "MUI" para todos os idiomas.
+O código-fonte simples acima faz a escolha de design simplista de codificação ou incorporação, toda a saída que o usuário verá– nesse caso, o texto "Hello MUI". Essa opção limita o utilitário do aplicativo para usuários que não reconhecem a palavra em inglês "Hello". Como a MUI é um acrônimo em inglês baseado em tecnologia, supõe-se neste tutorial que a cadeia de caracteres permaneça "MUI" para todos os idiomas.
 
-## <a name="step-1-implementing-the-basic-resource-module"></a>Etapa 1: Implementando o módulo de recurso básico
+## <a name="step-1-implementing-the-basic-resource-module"></a>Etapa 1: implementando o módulo de recurso básico
 
-O Microsoft Win32 expunha muito o recurso para que os desenvolvedores de aplicativos separem seus dados de recursos de interface do usuário do código-fonte do aplicativo. Essa separação vem na forma do modelo de recurso do Win32, em que cadeias de caracteres, bitmaps, ícones, mensagens e outros itens normalmente exibidos para um usuário são empacotados em uma seção distinta do executável, separados do código executável.
+O Microsoft Win32 já expôs há muito tempo a capacidade de os desenvolvedores de aplicativos separarem seus dados de recurso de interface do usuário do código-fonte do aplicativo. Essa separação vem na forma do modelo de recurso Win32, no qual cadeias de caracteres, bitmaps, ícones, mensagens e outros itens normalmente exibidos para um usuário são empacotados em uma seção distinta do executável, separada do código executável.
 
-Para ilustrar essa separação entre o código executável e o empacotamento de dados de recursos, nesta etapa o tutorial coloca a cadeia de caracteres "Olá" embutida em código (o recurso "en-US") na seção de recursos de um módulo DLL no \_ projeto HelloModule en \_ US.
+Para ilustrar essa separação entre o código executável e o empacotamento de dados de recursos, nesta etapa, o tutorial coloca a cadeia de caracteres "Hello" codificada anteriormente (o recurso "en-US" ) na seção de recursos de um módulo DLL no projeto HelloModule \_ en \_ us.
 
-Essa DLL Win32 também poderia conter a funcionalidade executável do tipo de biblioteca (como qualquer outra DLL). Mas para ajudar a se concentrar nos aspectos relacionados a recursos do Win32, deixamos o código DLL de tempo de execução fragmentado em DllMain. cpp. As seções subsequentes deste tutorial fazem uso dos dados do recurso HelloModule que estão sendo criados aqui e também apresentam o código de tempo de execução apropriado.
+Essa DLL do Win32 também pode conter a funcionalidade executável de tipo de biblioteca (como qualquer outra DLL pode. Mas, para ajudar a se concentrar nos aspectos relacionados a recursos do Win32, deixam o código DLL em tempo de run-time em dllmain.cpp. As seções subsequentes deste tutorial usam os dados de recurso HelloModule que estão sendo construídos aqui e também apresentam o código de runtime apropriado.
 
-Para construir um módulo de recurso do Win32, comece criando uma DLL com um DllMain fragmentado out:
+Para construir um módulo de recurso do Win32, comece criando uma DLL com um dllmain desalocado:
 
 1.  Adicione um novo projeto à solução HelloMUI:
 
-    1.  No menu arquivo, selecione Adicionar e novo projeto.
-    2.  Tipo de projeto: projeto Win32.
+    1.  No menu Arquivo, selecione Adicionar e, em seguida, Novo Project.
+    2.  Project tipo: Win32 Project.
     3.  Nome: HelloModule \_ en \_ US.
     4.  Local: *ProjectRootDirectory* \\ HelloMUI.
     5.  No assistente de aplicativo Win32, selecione tipo de aplicativo: DLL.
@@ -215,7 +215,7 @@ Para construir um módulo de recurso do Win32, comece criando uma DLL com um Dll
     1.  No projeto HelloModule \_ \_ , clique com o botão direito do mouse na pasta arquivos de recursos e selecione Adicionar e, em seguida, selecione novo item.
     2.  Na caixa de diálogo Adicionar novo item, escolha o seguinte:
 
-        1.  Categorias: em Visual C++ selecione recurso e, em seguida, em "modelos instalados do Visual Studio", selecione o arquivo de recurso (. rc).
+        1.  categorias: em Visual C++ selecione recurso e, em seguida, em "modelos Visual Studio instalados", selecione arquivo de recursos (. rc).
         2.  Nome: HelloModule.
         3.  Local: aceite o padrão.
         4.  Clique em Adicionar.
@@ -295,9 +295,9 @@ Para obter mais informações sobre a estrutura e a sintaxe do arquivo. rc, cons
 
 Usando modelos de recursos anteriores, a criação de qualquer um dos sete projetos HelloModule resultaria em sete DLLs separadas. Cada DLL contém uma seção de recursos com uma única cadeia de caracteres localizada no idioma apropriado. Embora apropriado para o modelo de recurso do Win32 histórico, esse design não aproveita o MUI.
 
-No SDK do Windows Vista e posterior, o MUI fornece a capacidade de dividir os executáveis no código-fonte e nos módulos de conteúdo localizáveis. Com a personalização adicional que é abordada posteriormente na etapa 5, os aplicativos podem ser habilitados para suporte multilíngue para execução em versões anteriores ao Windows Vista.
+no SDK do Windows Vista e posterior, o MUI fornece a capacidade de dividir os executáveis no código-fonte e nos módulos de conteúdo localizáveis. com a personalização adicional que é abordada posteriormente na etapa 5, os aplicativos podem ser habilitados para suporte multilíngue para execução em versões anteriores ao Windows Vista.
 
-Os principais mecanismos disponíveis para dividir os recursos do código executável, começando com o Windows Vista, são:
+os principais mecanismos disponíveis para dividir os recursos do código executável, começando com o Windows Vista, são:
 
 -   Usando rc.exe (o compilador RC) com opções específicas ou
 -   Usando uma ferramenta de divisão de estilo de pós-compilação chamada muirct.exe.
@@ -346,17 +346,17 @@ muirct.exe -c HelloModule.dll -e fr-FR\HelloModule.dll.mui
 
 
 
-Uma das coisas mais importantes a serem observadas no muirct.exe linhas de comando acima é que o sinalizador-x é usado para especificar uma ID de idioma de destino. O valor fornecido para muirct.exe é diferente para cada módulo de HelloModule.dll específico do idioma. Esse valor de idioma é central e é usado pelo muirct.exe para marcar apropriadamente o arquivo. mui durante a divisão. Um valor incorreto produz falhas de carregamento de recursos para esse arquivo. mui específico em tempo de execução. Consulte [constantes e cadeias de caracteres de identificador de linguagem](language-identifier-constants-and-strings.md) para obter mais detalhes sobre como mapear o nome do idioma para LCID.
+Uma das coisas mais importantes a observar nas muirct.exe comando acima é que o sinalizador -x é usado para especificar uma ID de idioma de destino. O valor fornecido para muirct.exe é diferente para cada módulo específico HelloModule.dll idioma. Esse valor de linguagem é central e é usado por muirct.exe para marcar adequadamente o arquivo .mui durante a divisão. Um valor incorreto produz falhas de carregamento de recursos para esse arquivo .mui específico em tempo de executar. Consulte [Constantes e cadeias de caracteres](language-identifier-constants-and-strings.md) do identificador de idioma para obter mais detalhes sobre como mapear o nome do idioma para lCID.
 
-Cada arquivo Split. mui acaba sendo colocado em um diretório correspondente ao nome do idioma, imediatamente abaixo do diretório no qual o HelloModule.dll neutro de idioma residirá. Para obter mais informações sobre o posicionamento do arquivo. mui, consulte [implantação de aplicativos](application-deployment.md).
+Cada arquivo .mui dividido acaba sendo colocado em um diretório correspondente ao nome do idioma, imediatamente abaixo do diretório no qual o idioma neutro HelloModule.dll residirá. Para obter mais informações sobre o posicionamento do arquivo .mui, consulte [Implantação de aplicativo.](application-deployment.md)
 
-### <a name="splitting-the-various-language-resource-modules-creating-the-files"></a>Dividindo os vários módulos de recursos de linguagem: criando os arquivos
+### <a name="splitting-the-various-language-resource-modules-creating-the-files"></a>Dividindo os vários módulos de recurso de linguagem: criando os arquivos
 
-Para este tutorial, você cria um arquivo de comando que contém os comandos para dividir as várias DLLs e a chama manualmente. Observe que, no trabalho de desenvolvimento real, você pode reduzir o potencial de erros de compilação, incluindo esses comandos como eventos de pré-compilação ou pós-compilação na solução HelloMUI, mas isso está além do escopo deste tutorial.
+Para este tutorial, você cria um arquivo de comando que contém os comandos para dividir as várias DLLs e o invoca manualmente. Observe que, no trabalho de desenvolvimento real, você pode reduzir o potencial de erros de build incluindo esses comandos como eventos de pré-build ou pós-build na solução HelloMUI, mas isso está além do escopo deste tutorial.
 
-Crie os arquivos para a compilação de depuração:
+Crie os arquivos para o build de depuração:
 
-1.  Crie um arquivo de comando DoReverseMuiLoc. cmd contendo os seguintes comandos:
+1.  Crie um arquivo de comando DoReverseMuiLoc.cmd contendo os seguintes comandos:
     ```C++
     mkdir .\en-US
     muirct.exe -q DoReverseMuiLoc.rcconfig -v 2 -x 0x0409 -g 0x0407 .\HelloModule_en_us.dll .\HelloModule.dll .\en-US\HelloModule.dll.mui
@@ -390,7 +390,7 @@ Crie os arquivos para a compilação de depuração:
 
     
 
-2.  Crie um arquivo XML DoReverseMuiLoc. rcconfig que contenha as seguintes linhas:
+2.  Crie um arquivo xml DoReverseMuiLoc.rcconfig contendo as seguintes linhas:
     ```C++
     <?xml version="1.0" encoding="utf-8"?>
         <localization>
@@ -433,33 +433,33 @@ Crie os arquivos para a compilação de depuração:
 
     
 
-3.  Copie DoReverseMuiLoc. cmd e DoReverseMuiLoc. rcconfig para *ProjectRootDirectory* \\ HelloMUI \\ debug.
-4.  Abra o prompt de comando do Visual Studio 2008 e navegue até o diretório de depuração.
-5.  Execute DoReverseMuiLoc. cmd.
+3.  Copie DoReverseMuiLoc.cmd e DoReverseMuiLoc.rcconfig para *ProjectRootDirectory* \\ HelloMUI \\ Debug.
+4.  Abra o prompt Visual Studio 2008 e navegue até o diretório Depurar.
+5.  Execute DoReverseMuiLoc.cmd.
 
-Ao criar uma compilação de versão, você copia os mesmos arquivos DoReverseMuiLoc. cmd e DoReverseMuiLoc. rcconfig para o diretório de liberação e executa o arquivo de comando lá.
+Ao criar um build de versão, copie os mesmos arquivos DoReverseMuiLoc.cmd e DoReverseMuiLoc.rcconfig para o diretório Release e execute o arquivo de comando lá.
 
-## <a name="step-3-creating-a-resource-savvy-hello-mui"></a>Etapa 3: Criando um Resource-Savvy "Olá, MUI"
+## <a name="step-3-creating-a-resource-savvy-hello-mui"></a>Etapa 3: Criando um Resource-Savvy "Hello MUI"
 
-Com a criação do exemplo inicial embutido em código \_0.exe GuiStep acima, você pode estender o alcance do aplicativo para vários usuários de idioma, optando por incorporar o modelo de recurso do Win32. O novo código de tempo de execução apresentado nesta etapa inclui a lógica de carregamento de módulo ([**LoadLibraryEx**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryexa)) e de recuperação de cadeia de caracteres ([**LoadString**](/windows/win32/api/winuser/nf-winuser-loadstringa)).
+Com base no exemplo inicial codificado do GuiStep0.exe acima, você pode estender o alcance do aplicativo para vários usuários de linguagem escolhendo incorporar o modelo de recurso \_ win32. O novo código em tempo de run time apresentado nesta etapa inclui o carregamento do módulo ([**LoadLibraryEx**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryexa)) e a lógica de recuperação de cadeia de caracteres ([**LoadString**](/windows/win32/api/winuser/nf-winuser-loadstringa)).
 
-1.  Adicione um novo projeto à solução HelloMUI (usando o menu seleção arquivo, adicionar e novo projeto) com as seguintes configurações e valores:
+1.  Adicione um novo projeto à solução HelloMUI (usando a seleção de menu Arquivo, Adicionar e Novo Project) com as seguintes configurações e valores:
 
-    1.  Tipo de projeto: projeto Win32.
+    1.  Project tipo: Win32 Project.
     2.  Nome: GuiStep \_ 1.
     3.  Local: aceite o padrão.
-    4.  No assistente de aplicativo Win32, selecione o tipo de aplicativo padrão: aplicativo do Windows.
+    4.  No Assistente de Aplicativo Win32, selecione o tipo de aplicativo padrão: Windows aplicativo.
 
-2.  Defina este projeto para ser executado no Visual Studio e configure seu modelo de Threading:
+2.  De definir este projeto para ser executado de dentro Visual Studio e configurar seu modelo de threading:
 
-    1.  Na Gerenciador de Soluções, clique com o botão direito do mouse no projeto GuiStep \_ 1 e selecione Definir como projeto de inicialização.
-    2.  Clique com o botão direito do mouse novamente e selecione Propriedades.
-    3.  Na caixa de diálogo páginas de propriedades do projeto:
+    1.  No Gerenciador de Soluções, clique com o botão direito do mouse no projeto GuiStep 1 e \_ selecione Definir como Iniciar Project.
+    2.  Clique com o botão direito do mouse nele novamente e selecione Propriedades.
+    3.  Na caixa de diálogo Páginas de Propriedades do projeto:
 
-        1.  Na lista suspensa superior esquerda, defina configuração para todas as configurações.
-        2.  Em Propriedades de configuração, expanda C/C++, selecione geração de código e defina biblioteca de tempo de execução: depuração multi-threaded (/MTd).
+        1.  Na lista de opções superior esquerda, de definir Configuração como Todas as Configurações.
+        2.  Em Propriedades de Configuração, expanda C/C++, selecione Geração de Código e depure Biblioteca de Runtime: Depuração multi-threaded (/MTd).
 
-3.  Substitua o conteúdo de GuiStep \_ 1. cpp pelo código a seguir:
+3.  Substitua o conteúdo de GuiStep \_ 1.cpp pelo seguinte código:
     ```C++
     // GuiStep_1.cpp : Defines the entry point for the application.
     //
@@ -522,40 +522,40 @@ Com a criação do exemplo inicial embutido em código \_0.exe GuiStep acima, vo
 
     
 
-4.  Crie e execute o aplicativo. A saída será exibida no idioma definido atualmente como o idioma de exibição do computador (desde que seja um dos sete idiomas que criamos).
+4.  Compile e execute o aplicativo. A saída será exibida no idioma atualmente definido como o idioma de exibição do computador (desde que seja um dos sete idiomas que criarmos).
 
-## <a name="step-4-globalizing-hello-mui"></a>Etapa 4: Globalizando "Olá, MUI"
+## <a name="step-4-globalizing-hello-mui"></a>Etapa 4: Globalizando "Hello MUI"
 
-Embora o exemplo anterior possa exibir sua saída em idiomas diferentes, ele fica curto em várias áreas. Talvez o mais perceptível seja que o aplicativo está disponível apenas em um pequeno subconjunto de linguagens quando comparado ao próprio sistema operacional Windows. Se, por exemplo, o \_ aplicativo GuiStep 1 da etapa anterior tiver sido instalado em uma compilação japonesa do Windows, as falhas de local de recurso seriam provavelmente.
+Embora o exemplo anterior seja capaz de exibir sua saída em idiomas diferentes, ele fica aquém em várias áreas. Talvez o mais perceptível seja que o aplicativo só esteja disponível em um pequeno subconjunto de idiomas quando comparado ao sistema operacional Windows em si. Se, por exemplo, o aplicativo GuiStep 1 da etapa anterior tiver sido instalado em um build japonês do Windows, as falhas de local do recurso \_ provavelmente serão.
 
 Para resolver essa situação, você tem duas opções principais:
 
--   Verifique se os recursos em um idioma de fallback final predeterminado estão incluídos.
--   Forneça uma maneira para o usuário final configurar suas preferências de idioma entre os subconjuntos de idiomas especificamente suportados pelo aplicativo.
+-   Verifique se os recursos em uma linguagem de fallback final predeterminada estão incluídos.
+-   Forneça uma maneira para o usuário final configurar suas preferências de idioma entre o subconjunto de idiomas especificamente com suporte pelo aplicativo.
 
-Dessas opções, a que fornece um idioma de fallback final é altamente aconselhável e é implementada neste tutorial passando o sinalizador-g para muirct.exe, como visto acima. Esse sinalizador informa muirct.exe para fazer uma linguagem específica (de-DE/0x0407) o idioma de fallback final associado ao módulo DLL com neutralidade de idioma (HelloModule.dll). Em tempo de execução, esse parâmetro é usado como último recurso para gerar texto a ser exibido para o usuário. Caso um idioma de fallback final não seja encontrado e nenhum recurso apropriado esteja disponível no binário neutro de idioma, o carregamento do recurso falhará. Portanto, você deve determinar cuidadosamente os cenários que seu aplicativo pode encontrar e planejar o idioma de fallback final de acordo.
+Entre essas opções, a que fornece uma linguagem de fallback final é altamente aconselhável e é implementada neste tutorial passando o sinalizador -g para muirct.exe, conforme visto acima. Esse sinalizador muirct.exe para tornar um idioma específico (de-DE/0x0407) o idioma de fallback final associado ao módulo DLL neutro em idioma (HelloModule.dll). Em tempo de executar, esse parâmetro é usado como último recurso para gerar texto a ser exibido para o usuário. Caso um idioma de fallback final não seja encontrado e nenhum recurso apropriado está disponível no binário com neutralidade de idioma, o carregamento do recurso falha. Portanto, você deve determinar cuidadosamente os cenários que seu aplicativo pode encontrar e planejar o idioma de fallback final de acordo.
 
-A outra opção de permitir preferências de linguagem configuráveis e carregar recursos com base nessa hierarquia definida pelo usuário pode aumentar significativamente a satisfação do cliente. Infelizmente, isso também complica a funcionalidade necessária no aplicativo.
+A outra opção de permitir preferências de idioma configuráveis e carregar recursos com base nessa hierarquia definida pelo usuário pode aumentar muito a satisfação do cliente. Infelizmente, isso também complica a funcionalidade necessária no aplicativo.
 
-Esta etapa do tutorial usa um mecanismo de arquivo de texto simplificado para habilitar a configuração de idioma do usuário personalizado. O arquivo de texto é analisado em tempo de execução pelo aplicativo, e a lista de idiomas analisados e validados é usada para estabelecer uma lista de fallback personalizada. Depois que a lista de fallback personalizada for estabelecida, as APIs do Windows carregarão recursos de acordo com a precedência de idioma definida nesta lista. O restante do código é semelhante ao encontrado na etapa anterior.
+Esta etapa do tutorial usa um mecanismo de arquivo de texto simplificado para habilitar a configuração de idioma do usuário personalizada. O arquivo de texto é analisado em tempo de executar pelo aplicativo e a lista de idiomas analisados e validados é usada para estabelecer uma lista de fallback personalizada. Depois que a lista de fallback personalizada for estabelecida, as APIs de Windows carregarão recursos de acordo com a precedência de idioma definida nesta lista. O restante do código é semelhante ao encontrado na etapa anterior.
 
-1.  Adicione um novo projeto à solução HelloMUI (usando o menu seleção arquivo, adicionar e novo projeto) com as seguintes configurações e valores:
+1.  Adicione um novo projeto à solução HelloMUI (usando a seleção de menu Arquivo, Adicionar e Novo Project) com as seguintes configurações e valores:
 
-    1.  Tipo de projeto: projeto Win32.
+    1.  Project tipo: Win32 Project.
     2.  Nome: GuiStep \_ 2.
     3.  Local: aceite o padrão.
-    4.  No assistente de aplicativo Win32, selecione o tipo de aplicativo padrão: aplicativo do Windows.
+    4.  No Assistente de Aplicativo Win32, selecione o tipo de aplicativo padrão: Windows aplicativo.
 
-2.  Defina este projeto para ser executado no Visual Studio e configure seu modelo de Threading:
+2.  De definir este projeto para ser executado de dentro Visual Studio e configurar seu modelo de threading:
 
-    1.  Na Gerenciador de Soluções, clique com o botão direito do mouse no projeto GuiStep \_ 2 e selecione Definir como projeto de inicialização.
-    2.  Clique com o botão direito do mouse novamente e selecione Propriedades.
-    3.  Na caixa de diálogo páginas de propriedades do projeto:
+    1.  No Gerenciador de Soluções, clique com o botão direito do mouse no projeto GuiStep 2 e \_ selecione Definir como Iniciar Project.
+    2.  Clique com o botão direito do mouse nele novamente e selecione Propriedades.
+    3.  Na caixa de diálogo Páginas de Propriedades do projeto:
 
-        1.  Na lista suspensa superior esquerda, defina configuração para todas as configurações.
-        2.  Em Propriedades de configuração, expanda C/C++, selecione geração de código e defina biblioteca de tempo de execução: depuração multi-threaded (/MTd).
+        1.  Na lista de opções superior esquerda, de definir Configuração como Todas as Configurações.
+        2.  Em Propriedades de Configuração, expanda C/C++, selecione Geração de Código e depure Biblioteca de Runtime: Depuração multi-threaded (/MTd).
 
-3.  Substitua o conteúdo de GuiStep \_ 2. cpp pelo código a seguir:
+3.  Substitua o conteúdo de GuiStep \_ 2.cpp pelo seguinte código:
     ```C++
     // GuiStep_2.cpp : Defines the entry point for the application.
     //
@@ -721,61 +721,61 @@ Esta etapa do tutorial usa um mecanismo de arquivo de texto simplificado para ha
 
     
 
-4.  Crie um arquivo de texto Unicode langs.txt que contenha a seguinte linha:
+4.  Crie um arquivo de texto Unicode langs.txt que contém a seguinte linha:
 
     ``` syntax
     hi-IN ta-IN ru-RU fr-FR es-ES en-US
     ```
 
     > [!Note]  
-    > Certifique-se de salvar o arquivo como Unicode.
+    > Salve o arquivo como Unicode.
 
      
 
-    Copie langs.txt para o diretório a partir do qual o programa será executado:
+    Copie langs.txt para o diretório do qual o programa será executado:
 
-    -   Se estiver executando de dentro do Visual Studio, copie-o para *ProjectRootDirectory* \\ HelloMUI \\ GuiStep \_ 2.
-    -   Se estiver executando do Windows Explorer, copie-o para o mesmo diretório que GuiStep \_2.exe.
+    -   Se estiver executando de dentro Visual Studio, copie-o para *ProjectRootDirectory* \\ HelloMUI \\ GuiStep \_ 2.
+    -   Se estiver executando Windows Explorer, copie-o para o mesmo diretório que GuiStep \_2.exe.
 
-5.  Compile e execute o projeto. Tente editar langs.txt para que os idiomas diferentes apareçam na frente da lista.
+5.  Compile e execute o projeto. Tente editar langs.txt para que idiomas diferentes apareçam na frente da lista.
 
-## <a name="step-5-customizing-hello-mui"></a>Etapa 5: Personalizando "Olá, MUI"
+## <a name="step-5-customizing-hello-mui"></a>Etapa 5: Personalização de "Hello MUI"
 
-Vários dos recursos de tempo de execução mencionados até agora neste tutorial estão disponíveis apenas no Windows Vista e versões posteriores. Talvez você queira reutilizar o esforço investido na localização e na divisão de recursos, fazendo com que o aplicativo funcione em versões de sistema operacional Windows de nível inferior, como o Windows XP. Esse processo envolve o ajuste do exemplo anterior em duas áreas-chave:
+Vários recursos de tempo de run time mencionados até agora neste tutorial estão disponíveis somente no Windows Vista e posterior. Talvez você queira usar o esforço aplicado na localização e na divisão de recursos fazendo com que o aplicativo funcione em versões de sistema operacional de nível Windows, como Windows XP. Esse processo envolve ajustar o exemplo anterior em duas áreas principais:
 
--   As funções de carregamento de recursos anteriores ao Windows Vista (como [**LoadString**](/windows/win32/api/winuser/nf-winuser-loadstringa), [**LoadIcon**](/windows/win32/api/winuser/nf-winuser-loadicona), [**LoadBitmap**](/windows/win32/api/winuser/nf-winuser-loadbitmapa), [**FormatMessage**](/windows/win32/api/winbase/nf-winbase-formatmessage)e outros) são compatíveis com não-mui. Os aplicativos que acompanham os recursos divididos (arquivos LN e. mui) devem carregar os módulos de recursos usando uma dessas duas funções:
+-   As funções de carregamento de recursos Windows Vista pré-Windows (como [**LoadString,**](/windows/win32/api/winuser/nf-winuser-loadstringa) [**LoadIcon,**](/windows/win32/api/winuser/nf-winuser-loadicona) [**LoadBitmap,**](/windows/win32/api/winuser/nf-winuser-loadbitmapa) [**FormatMessage**](/windows/win32/api/winbase/nf-winbase-formatmessage)e outras) não têm conhecimento da MUI. Os aplicativos que são fornecidas com recursos divididos (arquivos LN e .mui) devem carregar módulos de recurso usando uma destas duas funções:
 
-    -   Se o aplicativo for executado somente no Windows Vista e posterior, ele deverá carregar os módulos de recursos com [**LoadLibraryEx**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryexa).
-    -   Se o aplicativo for executado em versões anteriores ao Windows Vista, bem como ao Windows Vista ou posterior, ele deverá usar [**LoadMUILibrary**](/windows/desktop/api/Muiload/nf-muiload-loadmuilibrarya), que é uma função de nível inferior específica fornecida no SDK do Windows 7.
+    -   Se o aplicativo deve ser executado somente no Windows Vista e posterior, ele deve carregar módulos de recurso com [**LoadLibraryEx**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryexa).
+    -   Se o aplicativo deve ser executado em versões anteriores ao Windows Vista, bem como no vista do Windows ou posterior, ele deve usar [**LoadMUILibrary,**](/windows/desktop/api/Muiload/nf-muiload-loadmuilibrarya)que é uma função de nível downlevel específica fornecida no SDK do Windows 7.
 
--   O suporte de ordem de fallback de idioma e gerenciamento de idioma oferecido nas versões anteriores do Windows Vista do sistema operacional Windows é diferente do que no Windows Vista e posterior. Por esse motivo, os aplicativos que permitem o fallback de idioma configurado pelo usuário devem ajustar suas práticas de gerenciamento de idioma:
+-   O gerenciamento de linguagem e o suporte à ordem de fallback de idioma oferecidos em versões anteriores do Windows Vista do sistema operacional Windows diferem significativamente do que no Windows Vista e posterior. Por esse motivo, os aplicativos que permitem o fallback de idioma configurado pelo usuário devem ajustar suas práticas de gerenciamento de idioma:
 
-    -   Se o aplicativo for executado somente no Windows Vista e posterior, a configuração da lista de idiomas usando [**SetThreadPreferredUILanguages**](/windows/desktop/api/Winnls/nf-winnls-setthreadpreferreduilanguages) será suficiente.
-    -   Se o aplicativo for executado em todas as versões do Windows, será necessário construir o código que será executado em plataformas de nível inferior para iterar pela lista de idiomas configurados pelo usuário e investigação do módulo de recurso desejado. Isso pode ser visto nas seções 1C e 2 do código fornecido posteriormente nesta etapa.
+    -   Se o aplicativo deve ser executado somente no Windows Vista e posterior, definir a lista de idiomas usando [**SetThreadPreferredUILanguages**](/windows/desktop/api/Winnls/nf-winnls-setthreadpreferreduilanguages) é suficiente.
+    -   Se o aplicativo deve ser executado em todas as versões Windows, o código deve ser construído que será executado em plataformas de nível baixo para iterar por meio da lista de idiomas configurada pelo usuário e da investigação do módulo de recurso desejado. Isso pode ser visto nas seções 1c e 2 do código fornecido posteriormente nesta etapa.
 
 Crie um projeto que possa usar os módulos de recursos localizados em qualquer versão do Windows:
 
-1.  Adicione um novo projeto à solução HelloMUI (usando o menu seleção arquivo, adicionar e novo projeto) com as seguintes configurações e valores:
+1.  Adicione um novo projeto à solução HelloMUI (usando a seleção de menu Arquivo, Adicionar e Novo Project) com as seguintes configurações e valores:
 
-    1.  Tipo de projeto: projeto Win32.
+    1.  Project tipo: Win32 Project.
     2.  Nome: GuiStep \_ 3.
     3.  Local: aceite o padrão.
-    4.  No assistente de aplicativo Win32, selecione o tipo de aplicativo padrão: aplicativo do Windows.
+    4.  No Assistente de Aplicativo Win32, selecione o tipo de aplicativo padrão: Windows aplicativo.
 
-2.  Defina este projeto para ser executado no Visual Studio e configure seu modelo de Threading. Além disso, configure-o para adicionar os cabeçalhos e as bibliotecas necessários.
+2.  De definir esse projeto para ser executado de dentro Visual Studio e configurar seu modelo de threading. Além disso, configure-o para adicionar os bibliotecas e os headers necessários.
 
     > [!Note]  
-    > Os caminhos usados neste tutorial pressupõem que o SDK do Windows 7 e o pacote de APIs de nível inferior do Microsoft NLS foram instalados em seus diretórios padrão. Se esse não for o caso, modifique os caminhos adequadamente.
+    > Os caminhos usados neste tutorial supõem que o SDK do Windows 7 e o pacote de APIs de nível de baixo do Microsoft NLS foram instalados em seus diretórios padrão. Se esse não for o caso, modifique os caminhos adequadamente.
 
      
 
-    1.  Na Gerenciador de Soluções, clique com o botão direito do mouse no projeto GuiStep \_ 3 e selecione Definir como projeto de inicialização.
-    2.  Clique com o botão direito do mouse novamente e selecione Propriedades.
-    3.  Na caixa de diálogo páginas de propriedades do projeto:
+    1.  No Gerenciador de Soluções, clique com o botão direito do mouse no projeto GuiStep 3 e \_ selecione Definir como Iniciar Project.
+    2.  Clique com o botão direito do mouse nele novamente e selecione Propriedades.
+    3.  Na caixa de diálogo Páginas de Propriedades do projeto:
 
-        1.  Na lista suspensa superior esquerda, defina configuração para todas as configurações.
-        2.  Em Propriedades de configuração, expanda C/C++, selecione geração de código e defina biblioteca de tempo de execução: depuração multi-threaded (/MTd).
-        3.  Selecione geral e adicione aos diretórios de inclusão adicionais:
+        1.  Na lista de opções superior esquerda, de definir Configuração como Todas as Configurações.
+        2.  Em Propriedades de Configuração, expanda C/C++, selecione Geração de Código e depure Biblioteca de Runtime: Depuração multi-threaded (/MTd).
+        3.  Selecione Geral e adicione a Diretórios de Inclusão Adicionais:
 
             -   "C: as \\ APIs de nível inferior do Microsoft NLS \\ incluem".
 
@@ -783,7 +783,7 @@ Crie um projeto que possa usar os módulos de recursos localizados em qualquer v
         5.  Selecione avançado e defina a Convenção de chamada: \_ stdcall (/gz).
         6.  Em Propriedades de configuração, expanda vinculador, selecione entrada e adicionar a dependências adicionais:
 
-            -   "C: \\ arquivos de programas \\ Microsoft SDKs \\ Windows \\ v 7.0 \\ lib \\ MUILoad. lib".
+            -   "C: \\ arquivos de programas \\ Microsoft SDKs \\ Windows \\ v 7.0 \\ Lib \\ MUILoad. lib".
             -   "C: \\ APIs de nível inferior da Microsoft NLS \\ \\ x86 \\ nlsdl. lib".
 
 3.  Substitua o conteúdo de GuiStep \_ 3. cpp pelo código a seguir:
@@ -991,7 +991,7 @@ Crie um projeto que possa usar os módulos de recursos localizados em qualquer v
 5.  Compile e execute o projeto.
 
 > [!Note]  
-> Se o aplicativo deve ser executado em versões do Windows anteriores ao Windows Vista, leia os documentos que vieram com o pacote de [APIs de nível inferior do Microsoft NLS](https://www.microsoft.com/downloads/details.aspx?FamilyID=eb72cda0-834e-4c35-9419-ff14bc349c9d&amp;DisplayLang=en) sobre como redistribuir Nlsdl.dll.
+> se o aplicativo deve ser executado em versões do Windows anteriores ao Windows Vista, leia os documentos que vieram com o pacote de [APIs de nível inferior do Microsoft NLS](https://www.microsoft.com/downloads/details.aspx?FamilyID=eb72cda0-834e-4c35-9419-ff14bc349c9d&amp;DisplayLang=en) sobre como redistribuir Nlsdl.dll.
 
  
 
@@ -999,7 +999,7 @@ Crie um projeto que possa usar os módulos de recursos localizados em qualquer v
 
 ### <a name="support-for-console-applications"></a>Suporte para aplicativos de console
 
-As técnicas abordadas neste tutorial também podem ser usadas em aplicativos de console. No entanto, ao contrário da maioria dos controles de GUI padrão, a janela de comando do Windows não pode exibir caracteres para todos os idiomas. Por esse motivo, os aplicativos de console multilíngües exigem atenção especial.
+As técnicas abordadas neste tutorial também podem ser usadas em aplicativos de console. no entanto, ao contrário da maioria dos controles de GUI padrão, a Windows janela de comando não pode exibir caracteres para todos os idiomas. Por esse motivo, os aplicativos de console multilíngües exigem atenção especial.
 
 Chamar as APIs [**SetThreadUILanguage**](/windows/desktop/api/Winnls/nf-winnls-setthreaduilanguage) ou [**SetThreadPreferredUILanguages**](/windows/desktop/api/Winnls/nf-winnls-setthreadpreferreduilanguages) com sinalizadores de filtragem específicos faz com que as funções de carregamento de recursos removam as investigações de recursos de idioma para linguagens específicas que normalmente não são exibidas em uma janela de comando. Quando esses sinalizadores são definidos, os algoritmos de configuração de idioma permitem apenas os idiomas que serão exibidos corretamente na janela de comando para que fiquem na lista de fallback.
 
@@ -1023,9 +1023,9 @@ Você pode adotar uma das seguintes sugestões de design para determinar em quai
 
     Para obter mais informações sobre como determinar os idiomas atualmente instalados no sistema operacional, consulte a função [**EnumUILanguages**](/windows/desktop/api/Winnls/nf-winnls-enumuilanguagesa) .
 
-### <a name="complex-script-support-in-versions-prior-to-windows-vista"></a>Suporte a scripts complexos em versões anteriores ao Windows Vista
+### <a name="complex-script-support-in-versions-prior-to-windows-vista"></a>suporte a scripts complexos em versões anteriores ao Windows Vista
 
-Quando um aplicativo que dá suporte a determinados scripts complexos é executado em uma versão do Windows anterior ao Windows Vista, o texto nesse script pode não ser exibido corretamente em componentes de GUI. Por exemplo, no projeto de nível inferior neste tutorial, os scripts de hi-IN e ta-IN podem não ser exibidos na caixa de mensagem devido a problemas com o processamento de scripts complexos e a falta de fontes relacionadas. Normalmente, os problemas dessa natureza se apresentam como caixas quadradas no componente da GUI.
+quando um aplicativo que dá suporte a determinados scripts complexos é executado em uma versão do Windows antes do Windows Vista, o texto nesse script pode não ser exibido corretamente em componentes de GUI. Por exemplo, no projeto de nível inferior neste tutorial, os scripts de hi-IN e ta-IN podem não ser exibidos na caixa de mensagem devido a problemas com o processamento de scripts complexos e a falta de fontes relacionadas. Normalmente, os problemas dessa natureza se apresentam como caixas quadradas no componente da GUI.
 
 Mais informações sobre como habilitar o processamento de script complexo podem ser encontradas em [suporte a scripts e fontes no Windows](https://msdn.microsoft.com/goglobal/bb688099.aspx).
 

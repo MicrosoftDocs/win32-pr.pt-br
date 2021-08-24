@@ -1,20 +1,20 @@
 ---
-title: Tipos observados (recursos de ambiente herdado do Windows)
+title: tipos observados (recursos de ambiente de Windows herdados)
 description: Percebidotype é uma propriedade que classifica um item no índice.
 ms.assetid: 47a5cf55-79f6-48e7-a585-72fc3d7d53d4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: afaf7d8b827495a94b441e5504762dd53dbe733c
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 2de2baa37a46a9bd78e6e8a7ad94806dffe3a918046253bb09d4dab6090838b7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "105797581"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119610826"
 ---
-# <a name="perceived-types-legacy-windows-environment-features"></a>Tipos observados (recursos de ambiente herdado do Windows)
+# <a name="perceived-types-legacy-windows-environment-features"></a>tipos observados (recursos de ambiente de Windows herdados)
 
 > [!NOTE]
-> O Windows Desktop Search 2. x é uma tecnologia obsoleta que originalmente estava disponível como um suplemento para o Windows XP e o Windows Server 2003. Em versões posteriores, use o [Windows Search](../search/-search-3x-wds-overview.md) em vez disso.
+> Windows o Desktop Search 2. x é uma tecnologia obsoleta que estava originalmente disponível como um suplemento para o Windows XP e o Windows Server 2003. em versões posteriores, use [Windows pesquisa](../search/-search-3x-wds-overview.md) em vez disso.
 
 `PerceivedType` é uma propriedade que classifica um item no índice. Essa classificação é diferente da classificação "Kind" usada pela sintaxe de [consulta avançada](-search-2x-wds-aqsreference.md) , mas, da mesma forma, permite que os usuários refinam seus resultados de pesquisa. O tipo AQS permite que os usuários limitem sua consulta de pesquisa enquanto a propriedade Percebidatype permite que os usuários filtrem seu conjunto de resultados.
 

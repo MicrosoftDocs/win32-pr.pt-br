@@ -1,11 +1,11 @@
 ---
-title: Atributo MS-DS-Consistency-GUID
+title: Atributo MS-DS-Consistency-Guid
 description: Esse atributo é usado para verificar a consistência entre o diretório e outro objeto, banco de dados ou aplicativo, comparando GUIDs.
 ms.assetid: 1372f46a-5569-4b06-9803-7d3862cdb745
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo MS-DS-Consistency-GUID
-- Esquema de AD do atributo mS-DS-ConsistencyGuid
+- Esquema do AD do atributo MS-DS-Consistency-Guid
+- Esquema do AD do atributo mS-DS-ConsistencyGuid
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8fdbea1e9fba4ac28f968fdd61a054f55fe47deb
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 299b23ae1a4182ccde7e55465a80ace1067ea526562aad781bde1c3d46865741
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825227"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119300346"
 ---
-# <a name="ms-ds-consistency-guid-attribute"></a>Atributo MS-DS-Consistency-GUID
+# <a name="ms-ds-consistency-guid-attribute"></a>Atributo MS-DS-Consistency-Guid
 
 Esse atributo é usado para verificar a consistência entre o diretório e outro objeto, banco de dados ou aplicativo, comparando GUIDs.
 
@@ -30,13 +30,13 @@ Esse atributo é usado para verificar a consistência entre o diretório e outro
 | Entrada | Valor |
 |-------------------|-------------------------------------------------------|
 | CN                | MS-DS-Consistency-Guid                                |
-| LDAP-Display-Name | mS-DS-ConsistencyGuid                                 |
+| Ldap-Display-Name | mS-DS-ConsistencyGuid                                 |
 | Tamanho              | \-                                                    |
 | Privilégio de atualização  | \-                                                    |
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.1360                               |
-| System-ID-GUID    | 23773dc2-b63a-11d2-90e1-00c04fd91ab1                  |
-| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| System-Id-Guid    | 23773dc2-b63a-11d2-90e1-00c04fd91ab1                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -44,7 +44,7 @@ Esse atributo é usado para verificar a consistência entre o diretório e outro
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,10 +59,10 @@ Esse atributo é usado para verificar a consistência entre o diretório e outro
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -80,10 +80,10 @@ Esse atributo é usado para verificar a consistência entre o diretório e outro
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -92,7 +92,7 @@ Esse atributo é usado para verificar a consistência entre o diretório e outro
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,10 +101,10 @@ Esse atributo é usado para verificar a consistência entre o diretório e outro
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -122,7 +122,7 @@ Esse atributo é usado para verificar a consistência entre o diretório e outro
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| É de valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
@@ -143,7 +143,7 @@ Esse atributo é usado para verificar a consistência entre o diretório e outro
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| É de valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
@@ -164,7 +164,7 @@ Esse atributo é usado para verificar a consistência entre o diretório e outro
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| É de valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
@@ -185,7 +185,7 @@ Esse atributo é usado para verificar a consistência entre o diretório e outro
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| É de valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |

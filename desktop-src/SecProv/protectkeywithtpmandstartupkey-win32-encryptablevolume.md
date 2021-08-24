@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Root\CIMV2\Security\MicrosoftVolumeEncryption
-ms.openlocfilehash: 06ab2b9474b3564a567374490d9aeb70448338be
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2a15d001f3a92db2e9cb47cd319bbae4ab05ba9bf86b2105f30872159b237718
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105754947"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119667126"
 ---
 # <a name="protectkeywithtpmandstartupkey-method-of-the-win32_encryptablevolume-class"></a>Método ProtectKeyWithTPMAndStartupKey da classe Win32 \_ EncryptableVolume
 
@@ -108,7 +108,7 @@ A alteração do perfil padrão afeta a segurança e a capacidade de gerenciamen
 | <dl> <dt>16</dt> </dl> | Usado para depuração<br/>                                                      |
 | <dl> <dt>17</dt> </dl> | CRTM dinâmico<br/>                                                            |
 | <dl> <dt>anos</dt> </dl> | Definido pela plataforma<br/>                                                        |
-| <dl> <dt>aprimora</dt> </dl> | Usado por um sistema operacional confiável<br/>                                      |
+| <dl> <dt>19</dt> </dl> | Usado por um sistema operacional confiável<br/>                                      |
 | <dl> <dt>20</dt> </dl> | Usado por um sistema operacional confiável<br/>                                      |
 | <dl> <dt>Abril</dt> </dl> | Usado por um sistema operacional confiável<br/>                                      |
 | <dl> <dt>22</dt> </dl> | Usado por um sistema operacional confiável<br/>                                      |
@@ -142,7 +142,7 @@ Se a unidade oferecer suporte à criptografia de hardware e o BitLocker não tiv
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **UInt32**
 
@@ -178,7 +178,7 @@ Use [**ProtectKeyWithExternalKey**](protectkeywithexternalkey-win32-encryptablev
 
 Embora seja possível ter tanto um protetor de chave do tipo "TPM" quanto outro do tipo "TPM e chave de inicialização", a presença do tipo de protetor de chave "TPM" nega os efeitos de outros protetores de chave baseados em TPM.
 
-Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). Os arquivos MOF não são instalados como parte do SDK do Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](../wmisdk/managed-object-format--mof-.md).
+os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). os arquivos MOF não são instalados como parte do SDK do Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](../wmisdk/managed-object-format--mof-.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -186,8 +186,8 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Vista Enterprise, Windows Vista Ultimate \[ Desktop apps somente\]<br/>                       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows vista Enterprise, \[ somente aplicativos de área de trabalho do vista Ultimate Windows\]<br/>                       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                                    |
 | Namespace<br/>                | \\MicrosoftVolumeEncryption de \\ segurança \\ cimv2 raiz<br/>                                             |
 | MOF<br/>                      | <dl> <dt>Win32 \_ encryptablevolume. mof</dt> </dl> |
 

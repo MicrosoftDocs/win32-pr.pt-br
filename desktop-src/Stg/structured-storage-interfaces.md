@@ -1,21 +1,21 @@
 ---
-title: Interfaces de armazenamento estruturado
-description: Os serviços de armazenamento estruturados são organizados em três categorias de interfaces.
+title: Interfaces Armazenamento estruturadas
+description: os serviços estruturados Armazenamento são organizados em três categorias de interfaces.
 ms.assetid: a4281f07-eae4-4bcb-8d16-b6c0bd3c5b21
 keywords:
-- Interfaces de armazenamento estruturado
+- Interfaces Armazenamento estruturadas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0010a0d4dec4908111c8a5bb939f795f0a2b2eb3
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 345c7b10ae4f73a80b3a263b9a9487c2172382b176404871b363aff336441a09
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105756356"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119661716"
 ---
-# <a name="structured-storage-interfaces"></a>Interfaces de armazenamento estruturado
+# <a name="structured-storage-interfaces"></a>Interfaces Armazenamento estruturadas
 
-Os serviços de armazenamento estruturados são organizados em três categorias de [interfaces](interfaces.md). Cada conjunto representa um nível sucessivo de indireção ou abstração entre um arquivo composto, os objetos que ele contém e a mídia física na qual esses componentes individuais são armazenados.
+os serviços estruturados Armazenamento são organizados em três categorias de [interfaces](interfaces.md). Cada conjunto representa um nível sucessivo de indireção ou abstração entre um arquivo composto, os objetos que ele contém e a mídia física na qual esses componentes individuais são armazenados.
 
 A primeira categoria de interfaces consiste em [**IStorage**](/windows/desktop/api/Objidl/nn-objidl-istorage), [**IStream**](/windows/desktop/api/Objidl/nn-objidl-istream)e [**IRootStorage**](/windows/desktop/api/Objidl/nn-objidl-irootstorage). As duas primeiras interfaces definem como os objetos são armazenados em um arquivo composto. Essas interfaces fornecem métodos para abrir elementos de armazenamento, confirmar e reverter alterações, copiar e mover elementos e ler e gravar fluxos. Essas interfaces não reconhecem os formatos de dados nativos dos objetos individuais e, portanto, não têm nenhum método para salvar esses objetos no armazenamento persistente. A interface **IRootStorage** tem um único método para associar um documento composto a um nome de sistema de arquivos subjacente. Os clientes devem implementar essas interfaces para seus arquivos compostos.
 
@@ -25,7 +25,7 @@ Uma terceira categoria consiste em uma única interface, [**ILockBytes**](/windo
 
 ## <a name="compound-file-implementation-limits"></a>Limites de implementação de arquivo composto
 
-A implementação COM da arquitetura de armazenamento estruturado é chamada de *arquivos compostos*. Os objetos de armazenamento, conforme implementados em arquivos compostos, incluem uma implementação das interfaces [**IPropertyStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertystorage) e [**IPropertySetStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertysetstorage) .
+a implementação COM da arquitetura de Armazenamento estruturada é chamada de *arquivos compostos*. Armazenamento objetos, conforme implementados em arquivos compostos, incluem uma implementação das interfaces [**IPropertyStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertystorage) e [**IPropertySetStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertysetstorage) .
 
 Ponteiros para a implementação de arquivo composto dessas interfaces são adquiridos chamando a função [**StgCreateStorageEx**](/windows/desktop/api/coml2api/nf-coml2api-stgcreatestorageex) para criar um novo objeto de arquivo composto ou [**StgOpenStorageEx**](/windows/desktop/api/coml2api/nf-coml2api-stgopenstorageex) para abrir um arquivo composto criado anteriormente.
 

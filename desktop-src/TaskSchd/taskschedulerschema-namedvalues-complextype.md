@@ -1,9 +1,9 @@
 ---
 title: Tipo complexo namedValues
-description: Define um par de nome-valor no qual o nome está associado ao valor.
+description: Define um par nome-valor no qual o nome está associado ao valor .
 ms.assetid: 07c512fd-3eab-4238-8d75-83827a958a1e
 keywords:
-- Agendador de Tarefas tipo complexo namedValues
+- tipo complexo namedValues Agendador de Tarefas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5f18c9fddab58f33ffc724a3e8df7bd65583cb88
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9d54e7c33d0b7ab2e5be3c4de6f3f648398a7e65670c0379f5621ae9e8a8bd46
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644815"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119513932"
 ---
 # <a name="namedvalues-complex-type"></a>Tipo complexo namedValues
 
-Define um par de nome-valor no qual o nome está associado ao valor.
+Define um par nome-valor no qual o nome está associado ao valor .
 
 ``` syntax
 <xs:complexType name="namedValues">
@@ -42,7 +42,7 @@ Define um par de nome-valor no qual o nome está associado ao valor.
 
 | Elemento                                                        | Type                                                | Descrição                                                                         |
 |----------------------------------------------------------------|-----------------------------------------------------|-------------------------------------------------------------------------------------|
-| [**Valor**](taskschedulerschema-value-namedvalues-element.md) | [**nome do chamado**](schema-namedvalue-complextype.md) | Especifica o valor que está associado a um nome em um par de nome-valor.<br/> |
+| [**Valor**](taskschedulerschema-value-namedvalues-element.md) | [**namedValue**](schema-namedvalue-complextype.md) | Especifica o valor associado a um nome em um par nome-valor.<br/> |
 
 
 
@@ -52,8 +52,8 @@ Define um par de nome-valor no qual o nome está associado ao valor.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

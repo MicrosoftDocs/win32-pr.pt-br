@@ -1,6 +1,6 @@
 ---
-description: Método Shell. WindowsSecurity – exibe a caixa de diálogo Segurança do Windows.
-title: Método Shell. WindowsSecurity (shldisp. h)
+description: método Shell. WindowsSecurity – exibe a caixa de diálogo Segurança do Windows.
+title: Método Shell.WindowsSecurity (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 94916E29-5960-4010-B2C6-0FAA1E4BF72D
-ms.openlocfilehash: 2c6e18ba2388909390b856deb03b65b078f810d9
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 327855763220fd2ea1c2e0e6b93538c16fa27cf35cd65cba06888879580259c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109840857"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119591996"
 ---
 # <a name="shellwindowssecurity-method"></a>Método Shell. WindowsSecurity
 
-Exibe a caixa de diálogo **segurança do Windows** .
+exibe a caixa de diálogo **Segurança do Windows** .
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,7 +45,7 @@ Shell.WindowsSecurity()
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 ### <a name="jscript"></a>JScript
 
@@ -66,9 +66,9 @@ Esse método exibe a caixa de diálogo mostrada após pressionar CTRL + ALT + DE
 
 ## <a name="examples"></a>Exemplos
 
-Os exemplos a seguir mostram o uso de **WindowsSecurity** para JScript, VBScript e Visual Basic.
+os exemplos a seguir mostram o uso de **WindowsSecurity** para JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -122,9 +122,9 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                                                   |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                                                   |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                          |
+| Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
 | INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
 | DLL<br/>                      | <dl> <dt>Shell32.dll (versão 6,0 ou posterior)</dt> </dl> |
 

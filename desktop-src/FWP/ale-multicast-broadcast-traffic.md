@@ -1,49 +1,49 @@
 ---
-title: Tráfego de difusão/multicast ALE
-description: Todo o tráfego de difusão e multicast de entrada nas camadas de aplicação da camada de aplicativo (EPA) é mapeado para um fluxo de ALE global.
+title: Tráfego multicast/difusão ALE
+description: Todo o tráfego de multicast e difusão de entrada nas camadas de ALE (Imposição de Camada de Aplicativo) é mapeado para um fluxo ALE global.
 ms.assetid: b10b9758-8fce-4256-a25d-917e01336456
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f30b56a6e2a27a209baf66d34948b704ae321644
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2849f7277cc9ada580bca22fa5a4fdf618d959d255b442607963047dd2a37bba
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292116"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119315606"
 ---
-# <a name="ale-multicastbroadcast-traffic"></a>Tráfego de difusão/multicast ALE
+# <a name="ale-multicastbroadcast-traffic"></a>Tráfego multicast/difusão ALE
 
-Todo o tráfego de difusão e multicast de entrada nas camadas de aplicação da camada de aplicativo (EPA) é mapeado para um [fluxo de Ale](ale-stateful-filtering.md)global. O tráfego de resposta para multicast de entrada e pacotes de difusão é classificado na camada [**FWPM \_ camada de \_ \_ autenticação Ale \_ Connect \_ V {4 \| 6}**](management-filtering-layer-identifiers-.md) e os fluxos Ale separados são criados para cada resposta.
+Todo o tráfego de multicast e difusão de entrada nas camadas de ALE (Imposição de Camada de Aplicativo) é mapeado para um fluxo [ALE global.](ale-stateful-filtering.md) O tráfego de resposta para pacotes de difusão e multicast de entrada é classificado na camada [**FWPM \_ LAYER \_ \_ ALE AUTH \_ CONNECT \_ V{4 \| 6}**](management-filtering-layer-identifiers-.md) e fluxos ALE separados são criados para cada resposta.
 
-O tráfego de difusão e multicast de saída nas camadas ALE cria um fluxo ALE de 4 segundos. Por padrão, a autorização de um pacote de multicast de saída ou de difusão permitirá o tráfego de entrada, seja unicast, multicast ou difusão, de qualquer endereço remoto por até 4 segundos. Tal fluxo ALE só pode ser atualizado ou mantido ativo pelo tráfego de saída subsequente que corresponda ao fluxo da EPA.
+O multicast de saída e o tráfego de difusão nas camadas ALE cria um fluxo ALE de 4 segundos. Por padrão, a autorização de um pacote ALE de difusão ou multicast de saída permitirá o tráfego de entrada, seja unicast, multicast ou difusão, de qualquer endereço remoto por até 4 segundos. Esse fluxo ALE só pode ser atualizado ou mantido vivo pelo tráfego de saída subsequente que corresponde ao fluxo ALE.
 
 > [!Note]  
-> O tempo de vida de 4 segundos é especificado pelo texto explicativo [**FWPM de texto \_ explicativo interno \_ definir \_ Opções da camada de \_ \_ conexão autenticação \_ \_ V {4 \| 6}**](built-in-callout-identifiers.md). Para alterar o tempo de vida padrão de 4 segundos, adicione um filtro que referencie o texto explicativo **FWPM \_ \_ definir \_ opções \_ auth \_ Connect \_ Layer \_ V {4 \| 6}** . Consulte [personalização de fluxo Ale](ale-flow-customization.md) para obter mais informações.
+> O tempo de vida de 4 segundos é especificado pelo texto explicação [**FWPM \_ callout set \_ options \_ \_ AUTH \_ CONNECT LAYER \_ \_ V{4 \| 6}**](built-in-callout-identifiers.md). Para alterar o tempo de vida padrão de 4 segundos, adicione um filtro que faz referência ao texto explicação set **\_ options \_ \_ \_ AUTH \_ CONNECT LAYER \_ \_ V{4 \| 6} do FWPM.** Confira [Personalização Flow ALE](ale-flow-customization.md) para obter mais informações.
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Aplicação da camada de aplicativo (EPA)](application-layer-enforcement--ale-.md)
+[Imposição de camada de aplicativo (ALE)](application-layer-enforcement--ale-.md)
 </dt> <dt>
 
 [Camadas ALE](ale-layers.md)
 </dt> <dt>
 
-[Filtragem de estado de ALE](ale-stateful-filtering.md)
+[Filtragem com estado ALE](ale-stateful-filtering.md)
 </dt> <dt>
 
 [Reautorização de ALE](ale-re-authorization.md)
 </dt> <dt>
 
-[Personalização de fluxo ALE](ale-flow-customization.md)
+[Personalização de Flow ALE](ale-flow-customization.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

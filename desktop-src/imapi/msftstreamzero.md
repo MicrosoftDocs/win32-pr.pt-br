@@ -15,12 +15,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 20af1639f20f2c7f42426f224c05570565e49296
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c044b82d6dbea45a61a67724c84e5d13e5d94bbcc7d12c231df6b799258264d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644677"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119726716"
 ---
 # <a name="msftstreamzero-object"></a>Objeto MsftStreamZero
 
@@ -36,9 +36,9 @@ O objeto **MsftStreamZero** não define nenhum membro.
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente Windows Vista, Windows XP com \[ aplicativos de área de trabalho do SP2\]<br/>                 |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                |
-| parâmetro<br/>                   | <dl> <dt>Imapi2. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Vista, somente Windows XP com \[ aplicativos de área de trabalho do SP2\]<br/>                 |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                |
+| Cabeçalho<br/>                   | <dl> <dt>Imapi2. h</dt> </dl> |
 
 
 

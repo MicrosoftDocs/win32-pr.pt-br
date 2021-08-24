@@ -4,16 +4,16 @@ description: Propriedade TTSModeID
 ms.assetid: 9205c37e-e006-466a-9b33-b98408c01ed7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c6852f203f5df716df6cfc5962f9cfa911d8fc1a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d1a720b06362b77418434669146a0d89dea8afd37d7a44c4079b2e12c24fcd2e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104160276"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119607956"
 ---
 # <a name="ttsmodeid-property"></a>Propriedade TTSModeID
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 <dl> <dt>
 
@@ -27,7 +27,7 @@ Retorna ou define o modo do mecanismo de TTS usado para o caractere.
 <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintaxe**
 </dt> <dd>
 
-*agente do ***. Caracteres ("*** characterid * * *").* *  \[  =  *Modeid* TTSModeID\]
+*Agente ***. Caracteres ("**_characterid_*_")._ *  \[  =  *Modeid* TTSModeID\]
 
 
 
@@ -37,7 +37,7 @@ Retorna ou define o modo do mecanismo de TTS usado para o caractere.
 
 
 
- 
+ 
 
 </dd> </dl>
 
@@ -58,26 +58,26 @@ Os requisitos do mecanismo de fala do Microsoft Agent são baseados no Microsoft
 > [!Note]  
 > Essa propriedade também retornará a cadeia de caracteres vazia se você não tiver nenhum suporte de som compatível instalado no sistema.
 
- 
+ 
 
 > [!Note]  
 > A configuração do **TTSModeID** pode falhar se o Speech.dll não estiver instalado e o mecanismo especificado não corresponder à configuração do modo TTS compilado do caractere.
 
- 
+ 
 
 > [!Note]  
 > A consulta dessa propriedade normalmente não retorna um erro. No entanto, se o mecanismo de fala demorar muito tempo para ser carregado, você poderá receber um erro indicando que a consulta atingiu o tempo limite.
 
- 
+ 
 
 ## <a name="see-also"></a>Consulte Também
 
 [**Propriedade LanguageID**](languageid-property.md)
 
 
- 
+ 
 
- 
+ 
 
 
 

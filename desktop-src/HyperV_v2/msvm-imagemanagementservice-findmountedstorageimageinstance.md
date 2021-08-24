@@ -1,5 +1,5 @@
 ---
-description: Localiza um \_ objeto Msvm MountedStorageImage para um determinado caminho de imagem de disco.
+description: Localiza um objeto Msvm \_ MountedStorageImage para um determinado caminho de imagem de disco.
 ms.assetid: 498ed285-2b5b-472b-b0ee-649c97b61274
 title: Método FindMountedStorageImageInstance da classe Msvm_ImageManagementService
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 80462fb57be8c3f89764774ea68e73a988f11643
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: de205cb729b9ad53674808523cc640b9aaccb2adfaf6fba0b8a06c8a0d8952f9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501916"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119522626"
 ---
-# <a name="findmountedstorageimageinstance-method-of-the-msvm_imagemanagementservice-class"></a>Método FindMountedStorageImageInstance da \_ classe imagens Msvm
+# <a name="findmountedstorageimageinstance-method-of-the-msvm_imagemanagementservice-class"></a>Método FindMountedStorageImageInstance da classe Msvm \_ ImageManagementService
 
-Localiza um objeto [**Msvm \_ MountedStorageImage**](msvm-mountedstorageimage.md) para um determinado caminho de imagem de disco.
+Localiza um [**objeto Msvm \_ MountedStorageImage para**](msvm-mountedstorageimage.md) um determinado caminho de imagem de disco.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,17 +41,17 @@ uint32 FindMountedStorageImageInstance(
 
 <dl> <dt>
 
-*SelectionCriterion* \[ no\]
+*SelectionCriterion* \[ Em\]
 </dt> <dd>
 
 Um caminho totalmente qualificado que especifica o local de um arquivo de imagem de disco.
 
 </dd> <dt>
 
-*Critériotype* \[ no\]
+*CriterionType* \[ Em\]
 </dt> <dd>
 
-O tipo de critério a ser pesquisado ao localizar a imagem do disco.
+O tipo de critério a ser buscado ao localizar a imagem de disco.
 
 <dt>
 
@@ -69,14 +69,14 @@ O tipo de critério a ser pesquisado ao localizar a imagem do disco.
 
 </dt> <dd></dd> </dl> </dd> <dt>
 
-*Imagem* \[ do fora\]
+*Imagem* \[ out\]
 </dt> <dd>
 
-Uma referência ao [**Msvm \_ MountedStorageImage**](msvm-mountedstorageimage.md) (pode ser NULL se a imagem não estiver montada).
+Uma referência ao [**Msvm \_ MountedStorageImage**](msvm-mountedstorageimage.md) (pode ser nulo se a imagem não estiver montada).
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos seguintes valores:
 
@@ -94,16 +94,16 @@ Esse método retorna um dos seguintes valores:
 **Sem suporte** (32770)
 </dt> <dt>
 
-O **status é desconhecido** (32771)
+**O status é desconhecido** (32771)
 </dt> <dt>
 
-**Tempo limite** (32772)
+**Tempoout** (32772)
 </dt> <dt>
 
 **Parâmetro inválido** (32773)
 </dt> <dt>
 
-O **sistema está em uso** (32774)
+**O sistema está em uso** (32774)
 </dt> <dt>
 
 **Estado inválido para esta operação** (32775)
@@ -112,10 +112,10 @@ O **sistema está em uso** (32774)
 **Tipo de dados incorreto** (32776)
 </dt> <dt>
 
-O **sistema não está disponível** (32777)
+**O sistema não está disponível** (32777)
 </dt> <dt>
 
-**Memória insuficiente** (32778)
+**Memória sem memória** (32778)
 </dt> <dt>
 
 **Arquivo não encontrado** (32779)
@@ -130,10 +130,10 @@ O **sistema não está disponível** (32777)
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                             |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                             |
 | Servidor mínimo com suporte<br/> | Windows Server 2016<br/>                                                                          |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -142,7 +142,7 @@ O **sistema não está disponível** (32777)
 
 <dl> <dt>
 
-[**Msvm \_ imagens**](msvm-imagemanagementservice.md)
+[**Msvm \_ ImageManagementService**](msvm-imagemanagementservice.md)
 </dt> </dl>
 
  

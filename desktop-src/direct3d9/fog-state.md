@@ -1,37 +1,37 @@
 ---
-description: Os efeitos de neblina podem dar uma cena 3D maior realm.
+description: Os efeitos da luz podem dar maior realismo a uma cena 3D.
 ms.assetid: 26fe4f7c-7bb3-4a52-b539-5de2b11256e9
-title: Estado de neblina (Direct3D 9)
+title: Estado de Luz (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 61d3103cbbd3dfb220e2ddd75078040702fd7557
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 84004b8f261f9a6dc4c9b800ba5baa1f9a3c3e528db2b94e86286c3752414729
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104370035"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119564236"
 ---
-# <a name="fog-state-direct3d-9"></a>Estado de neblina (Direct3D 9)
+# <a name="fog-state-direct3d-9"></a>Estado de Luz (Direct3D 9)
 
-Os efeitos de neblina podem dar uma cena 3D maior realm. Você pode usar efeitos de neblina para mais do que simular a neblina. Eles também podem diminuir a clareza de uma cena com distância. Isso espelha o que acontece no mundo real; à medida que os objetos se tornam mais distantes do usuário, seus detalhes são menos distintos.
+Os efeitos da luz podem dar maior realismo a uma cena 3D. Você pode usar efeitos de mosca para mais do que simular a bateria. Eles também podem diminuir a clareza de uma cena com distância. Isso espelha o que acontece no mundo real; À medida que os objetos se tornam mais distantes do usuário, seus detalhes são menos distintos.
 
-Para obter mais informações sobre como usar a neblina em seu aplicativo, consulte [neblina (Direct3D 9)](fog.md).
+Para obter mais informações sobre como usar o ao mesmo tempo em seu aplicativo, [consulte Paulo (Direct3D 9)](fog.md).
 
-Um aplicativo C++ controla a neblina por meio de Estados de renderização de dispositivo. O tipo enumerado [**D3DRENDERSTATETYPE**](./d3drenderstatetype.md) inclui Estados para controlar se pixel (tabela) ou sombra de vértice é usado, qual cor é, a fórmula de neblina que o sistema aplica e os parâmetros da fórmula.
+Um aplicativo C++ controla os estados de renderização do dispositivo. O tipo enumerado [**D3DRENDERSTATETYPE**](./d3drenderstatetype.md) inclui estados para controlar se o pixel (tabela) ou o vértice é usado, qual cor é, a fórmula de leite que o sistema aplica e os parâmetros da fórmula.
 
-Você habilita a neblina definindo o \_ estado de RENDERIZAÇÃO D3DRS FOGENABLE como **true**. A cor de neblina pode ser definida como qualquer valor de cor usando o \_ estado de RENDERIZAÇÃO D3DRS FOGCOLOR; o componente alfa da cor de neblina é ignorado.
+Você habilita o recurso definindo o estado de renderização D3DRS \_ SEMPRENABLE como **TRUE.** A cor da coloração pode ser definida como qualquer valor de cor usando o estado de renderização D3DRSCOLOR; o componente alfa da cor \_ da coloração é ignorado.
 
-Os \_ Estados de RENDERIZAÇÃO D3DRS FOGTABLEMODE e D3DRS \_ FOGVERTEXMODE controlam a fórmula de neblina aplicada para cálculos de neblina e controlam indiretamente qual tipo de neblina é aplicado. Ambos os Estados de processamento podem ser definidos como um membro do tipo enumerado [**D3DFOGMODE**](./d3dfogmode.md) . A configuração de Process State como D3DFOG \_ None desabilita a sombra de pixel ou Vertex, respectivamente. Se ambos os Estados de renderização estiverem definidos como modos válidos, o sistema aplicará apenas efeitos de neblina de pixel.
+Os estados de renderização D3DRSMODTABLEMODE e \_ D3DRSVERTEXMODE controlam a fórmula de leite aplicada para cálculos de leite e controlam indiretamente qual tipo de \_ leite é aplicado. Ambos os estados de renderização podem ser definidos como um membro do tipo enumerado [**D3DFOGMODE.**](./d3dfogmode.md) Definir o estado de renderização como D3DFOG \_ NONE desabilita pixel ou vértice, respectivamente. Se ambos os estados de renderização são definidos como modos válidos, o sistema aplica apenas efeitos de pixel pixel pixel.
 
-Os Estados de renderização de D3DRS \_ FOGSTART e D3DRS \_ FOGEND do controle de parâmetros de fórmulas de neblina para o modo de D3DFOG \_ linear. Os controles de estado de renderização de D3DRS FOGDENSITY são uma \_ densidade de neblina nos modos de neblina exponencial.
+Os estados de renderização D3DRS DRASTART e D3DRS FEDERND controlam parâmetros de fórmula para o \_ \_ modo LINEAR D3DFOG. \_ O estado de renderização D3DRS DRADENSITY controla a densidade da cascata nos \_ modos de ração exponencial.
 
-Para obter mais informações, consulte [parâmetros de neblina (Direct3D 9)](fog-parameters.md).
+Para obter mais informações, [consulte Parâmetros de parâmetros Demão (Direct3D 9)](fog-parameters.md).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Processar Estados](render-states.md)
+[Renderizar estados](render-states.md)
 </dt> </dl>
 
  

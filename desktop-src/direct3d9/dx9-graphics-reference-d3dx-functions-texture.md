@@ -1,19 +1,19 @@
 ---
-description: O D3DX fornece as seguintes funções texturing.
+description: O D3DX fornece as seguintes funções de texting.
 ms.assetid: 1280e360-2628-47ac-b0e3-8ef9216e2e92
 title: Funções de textura no D3DX 9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2fd49c52447325eae821164ffff56c5be8e58adb
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: e61c2ba74aec0d9762ba28e02b15012c1aa1522eecd8b0cff712121f0c534f19
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104009869"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119728157"
 ---
 # <a name="texture-functions-in-d3dx-9"></a>Funções de textura no D3DX 9
 
-O D3DX fornece as seguintes funções texturing.
+O D3DX fornece as seguintes funções de texting.
 
 -   [**D3DXCheckCubeTextureRequirements**](d3dxcheckcubetexturerequirements.md)
 -   [**D3DXCheckTextureRequirements**](d3dxchecktexturerequirements.md)

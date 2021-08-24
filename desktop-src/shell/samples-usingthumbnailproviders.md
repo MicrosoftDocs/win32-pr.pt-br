@@ -1,5 +1,5 @@
 ---
-description: Demonstra como usar a interface Manipuladordeminiaturai para extrair a miniatura de um item do sistema de cache de miniaturas do Windows.
+description: demonstra como usar a interface manipuladordeminiaturai para extrair a miniatura de um item da Windows sistema de cache em miniatura.
 title: Usar exemplo de provedores de miniatura
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,20 +9,20 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 7e0cab8db27ddfdca0db5a7a08b6329c44776fc2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ac28ae28f3d5ef858b3f4cab328f94c4df245dc1681b263ca22fa34f7f6399df
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104968072"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119592866"
 ---
 # <a name="using-thumbnail-providers-sample"></a>Usar exemplo de provedores de miniatura
 
-Demonstra como usar a interface [**manipuladordeminiaturai**](/windows/desktop/api/Thumbcache/nn-thumbcache-ithumbnailprovider) para extrair a miniatura de um item do sistema de cache de miniaturas do Windows.
+demonstra como usar a interface [**manipuladordeminiaturai**](/windows/desktop/api/Thumbcache/nn-thumbcache-ithumbnailprovider) para extrair a miniatura de um item da Windows sistema de cache em miniatura.
 
 Este tópico inclui as seções a seguir.
 
--   [Requisitos](#requirements)
+-   [Requirements](#requirements)
 -   [Baixando o exemplo](#downloading-the-sample)
 -   [Compilando o exemplo](#building-the-sample)
 -   [Executando o exemplo](#running-the-sample)

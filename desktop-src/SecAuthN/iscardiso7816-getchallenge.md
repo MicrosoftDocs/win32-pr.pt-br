@@ -1,7 +1,7 @@
 ---
-description: O método getchallenge constrói um comando APDU (unidade de dados do protocolo de aplicativo) que emite um desafio (por exemplo, um número aleatório) para uso em um procedimento relacionado à segurança.
+description: O método GetChallenge constrói um comando APDU (unidade de dados do protocolo de aplicativo) que emita um desafio (por exemplo, um número aleatório) para uso em um procedimento relacionado à segurança.
 ms.assetid: 61f6db1c-b83a-4c1f-8ace-0222a12560ff
-title: 'Método ISCardISO7816:: getchallenge (Scardssp. h)'
+title: Método ISCardISO7816::GetChallenge (Scardssp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: 05fe18ad73de6c7c3ea30f986c7bb3420bc465b9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aa2c8b6ede97c9fede5984645fd298877da22153f9f0bf3aaf8789281b11889c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011458"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119481104"
 ---
-# <a name="iscardiso7816getchallenge-method"></a>Método ISCardISO7816:: getchallenge
+# <a name="iscardiso7816getchallenge-method"></a>Método ISCardISO7816::GetChallenge
 
-\[O método **getchallenge** está disponível para uso nos sistemas operacionais especificados na seção requisitos. Ele não está disponível para uso no Windows Server 2003 com Service Pack 1 (SP1) e posterior, no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. Os [módulos de cartão inteligente](/previous-versions/windows/desktop/secsmart/smart-card-modules) fornecem funcionalidade semelhante.\]
+\[O **método GetChallenge** está disponível para uso nos sistemas operacionais especificados na seção Requisitos. Ele não está disponível para uso no Windows Server 2003 com Service Pack 1 (SP1) e posterior, Windows Vista, Windows Server 2008 e versões subsequentes do sistema operacional. Os [Módulos de Cartão Inteligente](/previous-versions/windows/desktop/secsmart/smart-card-modules) fornecem funcionalidade semelhante.\]
 
-O método **getchallenge** constrói um comando APDU ( [*unidade de dados do protocolo de aplicativo*](../secgloss/a-gly.md) ) que emite um desafio (por exemplo, um número aleatório) para uso em um procedimento relacionado à segurança.
+O **método GetChallenge** constrói um comando APDU [*(unidade*](../secgloss/a-gly.md) de dados do protocolo de aplicativo) que emita um desafio (por exemplo, um número aleatório) para uso em um procedimento relacionado à segurança.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,23 +42,23 @@ HRESULT GetChallenge(
 
 <dl> <dt>
 
-*lBytesExpected* \[ no\]
+*lBytesExpected* \[ Em\]
 </dt> <dd>
 
 Comprimento máximo da resposta esperada.
 
 </dd> <dt>
 
-*ppCmd* \[ entrada, saída\]
+*ppCmd* \[ in, out\]
 </dt> <dd>
 
-Na entrada, um ponteiro para um objeto de interface [**ISCardCmd**](iscardcmd.md) ou **nulo**.
+Na entrada, um ponteiro para um objeto de interface [**ISCardCmd**](iscardcmd.md) ou **NULL.**
 
-No retorno, ele é preenchido com o comando APDU construído por essa operação. Se *ppCmd* foi definido como **NULL**, um objeto [**ISCardCmd**](iscardcmd.md) de [*cartão inteligente*](../secgloss/s-gly.md) será criado internamente e retornado por meio do ponteiro *ppCmd* .
+No retorno, ele é preenchido com o comando APDU construído por essa operação. Se *ppCmd foi* definido [](../secgloss/s-gly.md) como **NULL,** um objeto [**ISCardCmd**](iscardcmd.md) de cartão inteligente é criado internamente e retornado por meio do *ponteiro ppCmd.*
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um dos seguintes valores possíveis.
 
@@ -68,7 +68,7 @@ O método retorna um dos seguintes valores possíveis.
 |-----------------------------------------------------------------------------------------------|----------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>          | Operação concluída com sucesso.<br/> |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Parâmetro inválido.<br/>                |
-| <dl> <dt>**\_ponteiro E**</dt> </dl>     | Um ponteiro inadequado foi passado.<br/>      |
+| <dl> <dt>**PONTEIRO \_ E**</dt> </dl>     | Um ponteiro ruim foi passado.<br/>      |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Sem memória.<br/>                    |
 
 
@@ -79,9 +79,9 @@ O método retorna um dos seguintes valores possíveis.
 
 O desafio é válido pelo menos para o próximo comando.
 
-Para obter uma lista de todos os métodos fornecidos por essa interface, consulte [**ISCardISO7816**](iscardiso7816.md).
+Para ver uma lista de todos os métodos fornecidos por essa interface, consulte [**ISCardISO7816**](iscardiso7816.md).
 
-Além dos códigos de erro COM listados acima, essa interface pode retornar um código de erro de cartão inteligente se uma função de cartão inteligente foi chamada para concluir a solicitação. Para obter mais informações, consulte [valores de retorno de cartão inteligente](authentication-return-values.md).
+Além dos códigos de erro COM listados acima, essa interface poderá retornar um código de erro de cartão inteligente se uma função de cartão inteligente tiver sido chamada para concluir a solicitação. Para obter mais informações, consulte [Valores de retorno de cartão inteligente](authentication-return-values.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -89,12 +89,12 @@ Além dos códigos de erro COM listados acima, essa interface pode retornar um c
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                    |
-| Fim do suporte do cliente<br/>    | Windows XP<br/>                                                                   |
-| Fim do suporte do servidor<br/>    | Windows Server 2003<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Scardssp. h</dt> </dl>   |
-| Biblioteca de tipos<br/>             | <dl> <dt>Scardsrv. tlb</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                    |
+| Fim do suporte ao cliente<br/>    | Windows XP<br/>                                                                   |
+| Fim do suporte ao servidor<br/>    | Windows Server 2003<br/>                                                          |
+| parâmetro<br/>                   | <dl> <dt>Scardssp.h</dt> </dl>   |
+| Biblioteca de tipos<br/>             | <dl> <dt>Scardsrv.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
 | IID<br/>                      | IID \_ ISCardISO7816 é definido como 53B6AA68-3F56-11D0-916B-00AA00C18068<br/>        |
 

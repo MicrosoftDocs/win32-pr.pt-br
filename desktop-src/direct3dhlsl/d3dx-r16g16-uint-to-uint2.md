@@ -1,9 +1,9 @@
 ---
-title: Função D3DX_R16G16_UINT_to_UINT2
-description: Desempacota \_ o formato dxgi \_ R16G16 \_ dados do sombreador uint para um XMUINT2.
+title: D3DX_R16G16_UINT_to_UINT2 função
+description: Desempacotar dados do sombreador UINT DXGI \_ FORMAT \_ R16G16 \_ para um XMUINT2.
 ms.assetid: bb24fdc4-db47-4cf3-af05-4b39c3af3701
 keywords:
-- Função D3DX_R16G16_UINT_to_UINT2 HLSL
+- D3DX_R16G16_UINT_to_UINT2 função HLSL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2586ff8876ee10368d49b816b38f5c9c8caf7c7b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
-ms.translationtype: HT
+ms.openlocfilehash: 15e2d31194364c865d8f6ae77a838e8f64f2c153b4185a8f3d26e32737835dba
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298458"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119726906"
 ---
-# <a name="d3dx_r16g16_uint_to_uint2-function"></a>D3DX \_ R16G16 \_ uint \_ to \_ UINT2 function
+# <a name="d3dx_r16g16_uint_to_uint2-function"></a>Função UINT D3DX \_ R16G16 \_ \_ para \_ UINT2
 
-Desempacota \_ o formato dxgi \_ R16G16 \_ dados do sombreador uint para um XMUINT2.
+Desempacotar dados do sombreador UINT DXGI \_ FORMAT \_ R16G16 \_ para um XMUINT2.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,13 +40,13 @@ XMUINT2 D3DX_R16G16_UINT_to_UINT2(
 *packedInput* 
 </dt> <dd>
 
-Os dados do sombreador embalado.
+Os dados de sombreador empacotados.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Os dados do sombreador desempacotado.
+Os dados do sombreador desempacodados.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,7 +54,7 @@ Os dados do sombreador desempacotado.
 
 | Requisito | Valor |
 |-------------------|--------------------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3DX \_ DXGIFormatConvert. inl</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3DX \_ DXGIFormatConvert.inl</dt> </dl> |
 
 
 
@@ -65,7 +65,7 @@ Os dados do sombreador desempacotado.
 [Funções](format-conversion-functions.md)
 </dt> <dt>
 
-[Descompactando e empacotando o \_ formato dxgi para a edição de imagem In-Place](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
+[Desempacotar e empacotar formato DXGI \_ para In-Place edição de imagem](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
 </dt> </dl>
 
  

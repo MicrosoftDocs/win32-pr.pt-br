@@ -1,12 +1,12 @@
 ---
-title: Gravando fluxos com pixels não quadrados
-description: Gravando fluxos com pixels não quadrados
+title: gravando Fluxos com Pixels não quadrados
+description: gravando Fluxos com Pixels não quadrados
 ms.assetid: 4af7dedc-e2b8-4dc2-add4-84424e93c297
 keywords:
-- Windows Media Format SDK, gravando fluxos de vídeo
-- SDK do Windows Media Format, fluxos de vídeo
-- SDK do Windows Media Format, pixels não quadrados
-- SDK do Windows Media Format, pixels (não quadrado)
+- Windows SDK de formato de mídia, gravando fluxos de vídeo
+- Windows SDK do formato de mídia, fluxos de vídeo
+- Windows SDK de formato de mídia, pixels não quadrados
+- Windows SDK do formato de mídia, pixels (não quadrado)
 - ASF (Advanced Systems Format), gravando fluxos de vídeo
 - ASF (formato de sistemas avançados), gravando fluxos de vídeo
 - ASF (Advanced Systems Format), fluxos de vídeo
@@ -22,14 +22,14 @@ keywords:
 - pixels (não quadrado)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f1349840f151ab787ba0e0512cfab8fea08aacf1
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 08b44df1e4b4ce3f2bf2cb0e1d795b4caf396b6396e3e70b68b9040ad9a5456f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104007105"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119657946"
 ---
-# <a name="writing-streams-with-non-square-pixels"></a>Gravando fluxos com pixels não quadrados
+# <a name="writing-streams-with-non-square-pixels"></a>gravando Fluxos com Pixels não quadrados
 
 Há duas maneiras de criar fluxos de vídeo com pixels não quadrados que serão exibidos corretamente no Windows Media Player. A primeira técnica envolve a definição de atributos de nível de fluxo no cabeçalho do arquivo. A segunda técnica envolve adicionar uma extensão de unidade de dados a um fluxo no perfil e, em seguida, definir um valor para ela em cada exemplo que é gravada.
 
@@ -60,12 +60,12 @@ Há duas maneiras de criar fluxos de vídeo com pixels não quadrados que serão
 
 <dl> <dt>
 
-[**Para ler e gravar fluxos de vídeo com pixels não quadrados**](to-read-and-write-video-streams-with-non-square-pixels.md)
+[**para ler e gravar Fluxos de vídeo com Pixels não quadrados**](to-read-and-write-video-streams-with-non-square-pixels.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

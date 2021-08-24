@@ -1,11 +1,11 @@
 ---
-title: Propriedade _NewEnum IVMHardDiskConnectionCollection (VPCCOMInterfaces. h)
-description: Recupera um enumerador para a coleção. | Propriedade _NewEnum IVMHardDiskConnectionCollection (VPCCOMInterfaces. h)
+title: IVMHardDiskConnectionCollection _NewEnum propriedade (VPCCOMInterfaces.h)
+description: Recupera um enumerador para a coleção. | IVMHardDiskConnectionCollection _NewEnum propriedade (VPCCOMInterfaces.h)
 ms.assetid: 9302f536-de25-4aac-88cf-9f4af6efcda7
 keywords:
-- _NewEnum a propriedade Virtual PC
-- Propriedade _NewEnum Virtual PC, interface IVMHardDiskConnectionCollection
-- IVMHardDiskConnectionCollection interface virtual PC, Propriedade _NewEnum
+- _NewEnum propriedade Virtual PC
+- _NewEnum propriedade Virtual PC , interface IVMHardDiskConnectionCollection
+- INTERFACE IVMHardDiskConnectionCollection pc virtual , _NewEnum propriedade
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 66a6e8d5278b0aa164e2bc1ffd75b07a54300b45
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: b02c4bbd5d0d54d5116adc09c3a0a23c4594834b48b1b28d1700d41e5525b5d8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105813462"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119510796"
 ---
-# <a name="ivmharddiskconnectioncollection_newenum-property"></a>Propriedade IVMHardDiskConnectionCollection:: \_ NewEnum
+# <a name="ivmharddiskconnectioncollection_newenum-property"></a>IVMHardDiskConnectionCollection:: \_ propriedade NewEnum
 
-\[O Windows Virtual PC não está mais disponível para uso a partir do Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows O PC virtual não está mais disponível para uso a partir Windows 8. Em vez disso, use o provedor WMI do [Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
 
 Recupera um enumerador para a coleção.
 
@@ -45,7 +45,7 @@ HRESULT get__NewEnum(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-O enumerador [IEnumVARIANT](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) .
+O [enumerador IEnumVARIANT.](/windows/win32/api/oaidl/nn-oaidl-ienumvariant)
 
 ## <a name="error-codes"></a>Códigos do Erro
 
@@ -54,8 +54,8 @@ O enumerador [IEnumVARIANT](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) .
 | Nome/valor                                                                                                                                                    | Significado                                  |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------|
 | <dl> <dt>S \_ OK</dt> <dt>0</dt> </dl>                       | A operação foi bem-sucedida.<br/> |
-| <dl> <dt>E \_ </dt> <dt>0X80004003</dt> de ponteiro </dl>         | O parâmetro é **NULL**.<br/>    |
-| <dl> <dt>DISP \_ E \_ </dt> <dt>0x80020009</dt> de exceção </dl> | Erro inesperado.<br/> |
+| <dl> <dt>E \_ PONTEIRO</dt> <dt>0x80004003</dt> </dl>         | O parâmetro é **NULL.**<br/>    |
+| <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl> | Erro inesperado.<br/> |
 
 
 
@@ -65,12 +65,12 @@ O enumerador [IEnumVARIANT](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) .
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                         |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                                         |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                          |
-| Fim do suporte do cliente<br/>    | Windows 7<br/>                                                                               |
+| Fim do suporte ao cliente<br/>    | Windows 7<br/>                                                                               |
 | Produto<br/>                  | Windows Virtual PC<br/>                                                                      |
-| parâmetro<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl>      |
-| IID<br/>                      | IID \_ IVMHardDiskconnectionCollection é definido como b9f2caf4-0aeb-4085-B105-ceddb90dbf62<br/> |
+| Cabeçalho<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl>      |
+| IID<br/>                      | IID \_ IVMHardDiskconnectionCollection é definido como b9f2caf4-0aeb-4085-b105-ceddb90dbf62<br/> |
 
 
 

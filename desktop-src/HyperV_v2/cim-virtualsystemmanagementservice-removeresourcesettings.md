@@ -1,7 +1,7 @@
 ---
-description: Método RemoveResourceSettings da classe CIM_VirtualSystemManagementService-remove as configurações de recurso virtual de uma configuração de sistema virtual.
+description: Método RemoveResourceSettings da classe CIM_VirtualSystemManagementService - remove as configurações de recurso virtual de uma configuração do sistema virtual.
 ms.assetid: 7934a5e4-f54c-43fd-9ec3-d1fc1aad0acd
-title: Método RemoveResourceSettings da classe CIM_VirtualSystemManagementService
+title: Método RemoveResourceSettings da classe CIM_VirtualSystemManagementService dados
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: e5c7daabcdcd732c3a5693664e1768ebf66668d6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 4a3b94ff6ecd42ea362cc5caec91bdbd6c7f484acc687dc52d22acf4c1047f09
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108112254"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119682709"
 ---
-# <a name="removeresourcesettings-method-of-the-cim_virtualsystemmanagementservice-class"></a>Método RemoveResourceSettings da \_ classe VIRTUALSYSTEMMANAGEMENTSERVICE CIM
+# <a name="removeresourcesettings-method-of-the-cim_virtualsystemmanagementservice-class"></a>Método RemoveResourceSettings da classe CIM \_ VirtualSystemManagementService
 
-Remove as configurações de recursos virtuais de uma configuração de sistema virtual.
+Remove as configurações de recurso virtual de uma configuração do sistema virtual.
 
-Quando aplicado a partes de uma configuração de sistema virtual "atual", como os recursos de efeito colateral do sistema virtual ativo podem ser removidos.
+Quando aplicado a partes de uma configuração de sistema virtual "atual", como um efeito colateral, os recursos do sistema virtual ativo podem ser removidos.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,17 +42,17 @@ uint32 RemoveResourceSettings(
 
 <dl> <dt>
 
-*ResourceSettings* \[ no\]
+*ResourceSettings* \[ Em\]
 </dt> <dd>
 
-Matriz de referências a instâncias da classe [**CIM \_ ResourceAllocationSettingData**](cim-resourceallocationsettingdata.md) em que cada instância representa as configurações de um recurso virtual em uma configuração de sistema virtual que devem ser removidas.
+Matriz de referências a instâncias da classe [**CIM \_ ResourceAllocationSettingData**](cim-resourceallocationsettingdata.md) em que cada instância representa as configurações de um recurso virtual em uma configuração do sistema virtual que deve ser removida.
 
 </dd> <dt>
 
-*Trabalho* \[ do fora\]
+*Trabalho* \[ out\]
 </dt> <dd>
 
-Se a operação for de longa execução, opcionalmente, [**um \_ ConcreteJob CIM**](cim-concretejob.md) que representa o trabalho poderá ser retornado.
+Se a operação for de execução longa, opcionalmente, [**um \_ ConcreteJob CIM**](cim-concretejob.md) que representa o trabalho poderá ser retornado.
 
 </dd> </dl>
 
@@ -71,7 +71,7 @@ Retorna um 0 em caso de êxito; caso contrário, retornará um erro.
 **Falha** (2)
 </dt> <dt>
 
-**Tempo limite** (3)
+**Tempoout** (3)
 </dt> <dt>
 
 **Parâmetro inválido** (4)
@@ -80,16 +80,16 @@ Retorna um 0 em caso de êxito; caso contrário, retornará um erro.
 **Estado inválido** (5)
 </dt> <dt>
 
-**DMTF reservado** (..)
+**DMTF Reservado** (..)
 </dt> <dt>
 
-**Parâmetros de método marcados-trabalho iniciado** (4096)
+**Parâmetros de método verificados – Trabalho iniciado** (4096)
 </dt> <dt>
 
-**Método reservado** (4097.. 32767)
+**Método Reservado** (4097..32767)
 </dt> <dt>
 
-**Específico do fornecedor** (32768.. 65535)
+**Específico do** fornecedor (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -100,17 +100,17 @@ Retorna um 0 em caso de êxito; caso contrário, retornará um erro.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo com suporte<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[**\_VIRTUALSYSTEMMANAGEMENTSERVICE CIM**](cim-virtualsystemmanagementservice.md)
+[**CIM \_ VirtualSystemManagementService**](cim-virtualsystemmanagementservice.md)
 </dt> </dl>
 
  

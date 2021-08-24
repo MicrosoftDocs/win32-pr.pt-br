@@ -1,7 +1,7 @@
 ---
-description: Associa um comutador Ethernet virtual às extensões atualmente associadas a ele.
+description: Associa uma opção Ethernet virtual às extensões atualmente associadas a ele.
 ms.assetid: d8c87fa2-6859-49ed-abd5-32a836b00e5a
-title: Classe Msvm_HostedEthernetSwitchExtension
+title: Msvm_HostedEthernetSwitchExtension classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,18 +15,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: cb952d42864fb6130ad6cbec09ef5eb68439f6a7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dda28d4d5893f05ef067016da771b8dc510ba5588dd4f25ed89dfe7c4a8aa2fe
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647370"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119522976"
 ---
-# <a name="msvm_hostedethernetswitchextension-class"></a>\_Classe Msvm HostedEthernetSwitchExtension
+# <a name="msvm_hostedethernetswitchextension-class"></a>Classe Msvm \_ HostedEthernetSwitchExtension
 
-Associa um comutador Ethernet virtual às extensões atualmente associadas a ele.
+Associa uma opção Ethernet virtual às extensões atualmente associadas a ele.
 
-A sintaxe a seguir é simplificada formato MOF código (MOF) e inclui todas as propriedades herdadas.
+A sintaxe a seguir é simplificada Managed Object Format código MOF e inclui todas as propriedades herdadas.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,17 +41,17 @@ class Msvm_HostedEthernetSwitchExtension : CIM_HostedDependency
 
 ## <a name="members"></a>Membros
 
-A classe **Msvm \_ HostedEthernetSwitchExtension** tem estes tipos de membros:
+A **classe \_ HostedEthernetSwitchExtension Msvm** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Msvm \_ HostedEthernetSwitchExtension** tem essas propriedades.
+A **classe Msvm \_ HostedEthernetSwitchExtension** tem essas propriedades.
 
 <dl> <dt>
 
-**Antecedent**
+**Antecedente**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **[ **Msvm \_ VirtualEthernetSwitch**](msvm-virtualethernetswitch.md)**
@@ -60,26 +60,26 @@ Tipo de dados: **[ **Msvm \_ VirtualEthernetSwitch**](msvm-virtualethernetswitch
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent"), [**min**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
+Qualificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent"), [**Min**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
-Uma referência a uma instância da classe [**Msvm \_ VirtualEthernetSwitch**](msvm-virtualethernetswitch.md) que representa o comutador virtual.
+Uma referência a uma instância da [**classe Msvm \_ VirtualEthernetSwitch**](msvm-virtualethernetswitch.md) que representa o comutadores virtuais.
 
 </dd> <dt>
 
-**Depende**
+**Dependente**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **[ **Msvm \_ EthernetSwitchExtension**](msvm-ethernetswitchextension.md)**
+Tipo de dados: **[ **\_ EthernetSwitchExtension Msvm**](msvm-ethernetswitchextension.md)**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**chave**](/windows/desktop/WmiSdk/key-qualifier), [**substituição**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependente"), [**fraco**](/windows/desktop/WmiSdk/standard-qualifiers)
+Qualificadores: [**Chave**](/windows/desktop/WmiSdk/key-qualifier), [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependente"), [**Fraco**](/windows/desktop/WmiSdk/standard-qualifiers)
 </dt> </dl>
 
-Uma referência a uma instância da classe [**Msvm \_ EthernetSwitchExtension**](msvm-ethernetswitchextension.md) que representa a instância de extensão do comutador associada ao comutador virtual.
+Uma referência a uma instância da [**classe \_ EthernetSwitchExtension da Msvm**](msvm-ethernetswitchextension.md) que representa a instância de extensão do comutório vinculada ao com mudar virtual.
 
 </dd> </dl>
 
@@ -89,10 +89,10 @@ Uma referência a uma instância da classe [**Msvm \_ EthernetSwitchExtension**]
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

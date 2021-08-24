@@ -4,12 +4,12 @@ ms.assetid: 0c01bd51-353d-4f48-b33c-796f740915e2
 title: Conjunto de propriedades de PIN
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e53955ba1f075094c4fb2f6324ed143ca54f72c2
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: d143d980de7f2a634deecb2c3f06509854ac5a50fbe120da279cce3ad97be1e7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107909613"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119316096"
 ---
 # <a name="pin-property-set"></a>Conjunto de propriedades de PIN
 
@@ -17,7 +17,7 @@ O conjunto de propriedades PIN retorna a categoria de PIN de um PIN em um filtro
 
 
 
-| Label | Valor |
+| Rótulo | Valor |
 |-------------------|----------------------|
 | GUID do Conjunto de Propriedades | **AMPROPSETID \_ PIN** |
 
@@ -35,11 +35,11 @@ O conjunto de propriedades PIN retorna a categoria de PIN de um PIN em um filtro
 
  
 
-O DirectShow define as seguintes categorias de PIN no arquivo de cabeçalho UUIDs. h.
+DirectShow define as seguintes categorias de pin no arquivo de cabeçalho uuids. h.
 
 
 
-| GUID da categoria                     | Descrição                                                                                                                                                                                                                                                                                                             |
+| GUID da categoria                     | Description                                                                                                                                                                                                                                                                                                             |
 |-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **FIXAR \_ categoria \_ ANALOGVIDEOIN**  | Pino de entrada do filtro de captura que usa analógico e digitalizado.                                                                                                                                                                                                                                                     |
 | **FIXAR \_ captura de categoria \_**        | Capturar PIN.                                                                                                                                                                                                                                                                                                            |
@@ -51,7 +51,7 @@ O DirectShow define as seguintes categorias de PIN no arquivo de cabeçalho UUID
 | **FIXAR \_ o \_ teletexto da categoria**       | PIN fornecendo teletexto (uma variante de legenda oculta).                                                                                                                                                                                                                                                                   |
 | **código de panela da categoria do PIN \_ \_**       | PIN fornecendo dados de código de code.                                                                                                                                                                                                                                                                                            |
 | **FIXAR \_ categoria \_ VBI**            | PIN fornecendo dados de intervalo em branco vertical.                                                                                                                                                                                                                                                                          |
-| **FIXAR \_ categoria \_ VIDEOPORT**      | Pino de saída de vídeo a ser conectado ao pino de entrada zero no [mixer de sobreposição](overlay-mixer-filter.md).                                                                                                                                                                                                                    |
+| **FIXAR \_ categoria \_ VIDEOPORT**      | Pino de saída de vídeo a ser conectado ao pino de entrada zero na [mixer de sobreposição](overlay-mixer-filter.md).                                                                                                                                                                                                                    |
 | **FIXAR \_ categoria \_ VIDEOPORT \_ VBI** | PIN a ser conectado ao [alocador de superfície VBI](vbi-surface-allocator.md), o filtro de alocador de superfície VBI necessário para alocar a memória de vídeo correta para itens como sobreposições de legendagem oculta em cenários em que uma porta de vídeo está sendo usada. Cenários PCI, IEEE 1394 e USB não usam esse filtro. |
 | **\_captura de vídeo \_ CC \_ do PINNAME**   | Fatia de hardware-pino de legenda fechado                                                                                                                                                                                                                                                                                  |
 

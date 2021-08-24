@@ -4,12 +4,12 @@ ms.assetid: c741aa40-ba4c-459e-936a-19c002620c30
 title: Corrigir ações personalizadas de desinstalação de patch
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b90cfffbdb37f1f2fab046b794010a790e9a5212
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f69077337b80177984ff43f12038edb1daa48215f92c627f4ed22ea2f69c876b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105783267"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119145419"
 ---
 # <a name="patch-uninstall-custom-actions"></a>Corrigir ações personalizadas de desinstalação de patch
 
@@ -23,7 +23,7 @@ A [opção de desinstalação de patch de ação personalizada](custom-action-pa
 
 Para que uma [ação personalizada](custom-actions.md) seja executada quando um patch específico é desinstalado, a ação personalizada deve estar presente no aplicativo original ou estar em um patch para o produto que sempre é aplicado.
 
-Os desenvolvedores podem usar a propriedade [**MsiPatchRemovalList**](msipatchremovallist.md) para criar um pacote Windows Installer ou patch que executa [ações personalizadas](custom-actions.md) sobre a remoção de um patch. A ação personalizada pode ser criada no pacote de instalação original, um patch que já foi aplicado ao pacote ou um patch que não é um [patch desinstalável](uninstallable-patches.md). A ação personalizada pode ser condicional na propriedade **MsiPatchRemovalList** nas tabelas de sequência. Consulte [usando propriedades em instruções condicionais](using-properties-in-conditional-statements.md) para obter mais informações sobre a condicionalização de ações.
+os desenvolvedores podem usar a propriedade [**MsiPatchRemovalList**](msipatchremovallist.md) para criar um pacote Windows Installer ou patch que executa [ações personalizadas](custom-actions.md) sobre a remoção de um patch. A ação personalizada pode ser criada no pacote de instalação original, um patch que já foi aplicado ao pacote ou um patch que não é um [patch desinstalável](uninstallable-patches.md). A ação personalizada pode ser condicional na propriedade **MsiPatchRemovalList** nas tabelas de sequência. Consulte [usando propriedades em instruções condicionais](using-properties-in-conditional-statements.md) para obter mais informações sobre a condicionalização de ações.
 
 A ação personalizada pode obter os GUIDs dos patches que estão sendo removidos do valor da propriedade [**MsiPatchRemovalList**](msipatchremovallist.md) . A ação personalizada pode determinar se o estado de instalação do patch é aplicado, obsoleto ou substituído chamando o [**MsiGetPatchInfoEx**](/windows/desktop/api/Msi/nf-msi-msigetpatchinfoexa) ou a propriedade [**patchproperty**](patch-patchproperty.md) do [objeto patch](patch-object.md).
 

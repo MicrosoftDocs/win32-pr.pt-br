@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Wia.h
-ms.openlocfilehash: 4a5d469179f341f3bad5d2b9b5ed25a5715be694
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b5f48462d926d96acebf4a74f0a843d82f9cd97190585b954565d5da649ff9f8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090505"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119549686"
 ---
 # <a name="iwiapreviewupdatepreview-method"></a>Método IWiaPreview:: UpdatePreview
 
@@ -63,13 +63,13 @@ Passe toda a imagem armazenada em cache para o filtro de processamento de imagem
 *pChildWiaItem* \[ no\]
 </dt> <dd>
 
-Tipo: **[**IWiaItem2**](-wia-iwiaitem2.md) \** _
+Tipo: **[ **IWiaItem2**](-wia-iwiaitem2.md)\***
 
-Especifica um ponteiro para o [Item _ *IWiaItem2* *](-wia-iwiaitem2.md) , que é um filho do item **IWiaItem2** especificado pelo parâmetro *pWiaItem2* do método [**IWiaPreview:: GetNewPreview**](-wia-iwiapreview-getnewpreview.md) . Ou, se o aplicativo exigir uma visualização da mesa inteira, especificará um ponteiro para o parâmetro *pWiaItem2* do método **IWiaPreview:: GetNewPreview** . Quando *pChildWiaItem* é um filho do parâmetro *pWiaItem2* **IWiaPreview:: GetNewPreview**, esse item filho normalmente é criado pelo filtro de segmentação.
+Especifica um ponteiro para o item [**IWiaItem2**](-wia-iwiaitem2.md) , que é um filho do item **IWiaItem2** especificado pelo parâmetro *pWiaItem2* do método [**IWiaPreview:: GetNewPreview**](-wia-iwiapreview-getnewpreview.md) . Ou, se o aplicativo exigir uma visualização da mesa inteira, especificará um ponteiro para o parâmetro *pWiaItem2* do método **IWiaPreview:: GetNewPreview** . Quando *pChildWiaItem* é um filho do parâmetro *pWiaItem2* **IWiaPreview:: GetNewPreview**, esse item filho normalmente é criado pelo filtro de segmentação.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
@@ -84,7 +84,7 @@ O componente de visualização do WIA 2,0 armazena a imagem não filtrada baixad
 Para que um aplicativo transmita toda a imagem armazenada em cache para o filtro de processamento de imagens (que por sua vez passa para o aplicativo), ele deve definir *lOptions* como **WiaPreviewReturnOriginalImage** ao chamar **IWiaPreview:: UpdatePreview**. Ao definir *lOptions* como **WiaPreviewReturnOriginalImage**, o aplicativo deve garantir que as configurações de extensão ([**WIA \_ IPS \_ XEXTENT**](-wia-wiaitempropscanneritem.md) e **WIA \_ IPS \_ YEXTENT**) do item passado para **IWiaPreview:: UpdatePreview** corresponda à imagem em cache completo. O filtro de processamento de imagens não precisa fazer nada diferente nesse caso; Ele simplesmente filtra a imagem, com base nas propriedades de *pChildWiaItem* (normalmente, nesse caso, *pChildWiaItem* é o mesmo item que foi passado para [**IWiaPreview:: GetNewPreview**](-wia-iwiapreview-getnewpreview.md)). As diferentes subregiãos são ignoradas e toda a imagem é filtrada usando as mesmas configurações. Há algumas razões pelas quais um aplicativo faria isso.
 
 1.  O aplicativo pode não dar suporte à alteração das configurações (como o [**\_ \_ brilho de IPS WIA**](-wia-wiaitempropscanneritem.md) e o **\_ \_ contraste de IPS WIA**) individualmente para cada região detectada pelo filtro de segmentação (ou talvez nem mesmo queira usar o filtro de segmentação). É mais fácil para o aplicativo chamar **IWiaPreview:: UpdatePreview** com **WiaPreviewReturnOriginalImage** para que ele sempre receba a imagem completa do componente de visualização do WIA 2,0.
-2.  O componente de visualização do WIA 2,0 não oferece suporte ao formato de imagem da imagem de visualização; nesse caso, ele não pode executar as ações para recortar a região desejada. O suporte ao formato de imagem do componente de visualização do WIA 2,0 é limitado a formatos para os quais há codificadores e decodificadores Windows GDI+ 1,1. Esses formatos são bitmap (BMP) (um bitmap que inclui o BITMAPFILEHEADER), Graphics Interchange Format (GIF), JPEG, PNG (Portable Network Graphics) e TIFF (Tagged Image File Format).
+2.  O componente de visualização do WIA 2,0 não oferece suporte ao formato de imagem da imagem de visualização; nesse caso, ele não pode executar as ações para recortar a região desejada. o suporte ao formato de imagem do componente de visualização do WIA 2,0 é limitado a formatos para os quais há Windows GDI+ de codificadores e decodificadores 1,1. Esses formatos são bitmap (BMP) (um bitmap que inclui o BITMAPFILEHEADER), Graphics Interchange Format (GIF), JPEG, PNG (Portable Network Graphics) e TIFF (Tagged Image File Format).
 
 Observe que, se o aplicativo passar **WiaPreviewReturnOriginalImage** para **IWiaPreview:: UpdatePreview**, o componente de visualização WIA 2,0 poderá dar suporte a qualquer formato de imagem ou pixel.
 
@@ -118,9 +118,9 @@ UpdateRegion(
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>WIA. h</dt> </dl>   |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>WIA. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>WIA. idl</dt> </dl> |
 
 
