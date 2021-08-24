@@ -1,9 +1,9 @@
 ---
-title: Mensagem de TVM_GETINDENT (commctrl. h)
-description: Recupera o valor, em pixels, que os itens filho são recuados em relação aos seus itens pai. Você pode enviar essa mensagem explicitamente ou usando a macro do TreeView \_ GetIndent.
+title: TVM_GETINDENT mensagem (Commctrl.h)
+description: Recupera a quantidade, em pixels, de que os itens filho são recuados em relação aos seus itens pai. Você pode enviar essa mensagem explicitamente ou usando a \_ macro TreeView GetIndent.
 ms.assetid: 4109714e-94a3-4c88-96e7-b4b8ec67f4a1
 keywords:
-- Controles de TVM_GETINDENT de mensagens do Windows
+- TVM_GETINDENT controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 33775341adc47d84ead9a633d7d31b16ffc4a723
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bbee65da49efc19954209b2694d783761017d8c2ae53030e755b8bea61213276
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824747"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119834176"
 ---
-# <a name="tvm_getindent-message"></a>TVM \_ GETrecuo de mensagem
+# <a name="tvm_getindent-message"></a>Mensagem \_ GETINDENT do TVM
 
-Recupera o valor, em pixels, que os itens filho são recuados em relação aos seus itens pai. Você pode enviar essa mensagem explicitamente ou usando a macro do [**TreeView \_ GetIndent**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_getindent) .
+Recupera a quantidade, em pixels, de que os itens filho são recuados em relação aos seus itens pai. Você pode enviar essa mensagem explicitamente ou usando a [**macro \_ TreeView GetIndent.**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_getindent)
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -35,7 +35,7 @@ Recupera o valor, em pixels, que os itens filho são recuados em relação aos s
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna a quantidade de recuo.
 
@@ -45,9 +45,9 @@ Retorna a quantidade de recuo.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Construtor de CPersistStream. CPersistStream-método de construtor.
+description: Construtor CPersistStream.CPersistStream – método construtor.
 ms.assetid: 48143a61-5ba7-4bf9-bffa-244f2769144d
-title: Construtor CPersistStream. CPersistStream (pStream. h)
+title: Construtor CPersistStream.CPersistStream (Pstream.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,9 +23,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119813386"
 ---
-# <a name="cpersiststreamcpersiststream-constructor"></a>Construtor CPersistStream. CPersistStream
+# <a name="cpersiststreamcpersiststream-constructor"></a>Construtor CPersistStream.CPersistStream
 
-Método de construtor.
+Método do construtor.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,17 +43,17 @@ CPersistStream(
 
 <dl> <dt>
 
-*pUnk* 
+*Punk* 
 </dt> <dd>
 
 Ponteiro para a interface **IUnknown** do objeto de delegação.
 
 </dd> <dt>
 
-*phr* 
+*Phr* 
 </dt> <dd>
 
-Ponteiro para o valor de retorno de COM geral. Esse valor só será alterado se essa função falhar.
+Ponteiro para o valor de retorno COM geral. Esse valor será alterado somente se essa função falhar.
 
 </dd> </dl>
 
@@ -63,8 +63,8 @@ Ponteiro para o valor de retorno de COM geral. Esse valor só será alterado se 
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Pstream. h (incluir Fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Pstream.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

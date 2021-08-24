@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: Propriedade IndexSegment. Coltyp'
-title: Propriedade IndexSegment. Coltyp
+description: 'Saiba mais sobre: propriedade IndexSegment.Coltyp'
+title: Propriedade IndexSegment.Coltyp
 TOCTitle: 'Coltyp property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.IndexSegment.Coltyp
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.indexsegment.coltyp(v=EXCHG.10)
@@ -25,19 +25,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2042282f33ab1910b073329e97700e5b7ab0256a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8353dbae150b086d86d7a40b9484883e05d1eaf45c658fc092db4b27624de858
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105788724"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119834626"
 ---
-# <a name="indexsegmentcoltyp-property"></a>Propriedade IndexSegment. Coltyp
+# <a name="indexsegmentcoltyp-property"></a>Propriedade IndexSegment.Coltyp
 
 Obtém o tipo da coluna que está sendo indexada.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -58,7 +58,7 @@ public JET_coltyp Coltyp { get; }
 
 #### <a name="property-value"></a>Valor da propriedade
 
-Tipo: [Microsoft.ISAM.ESENT.Interop.JET_coltyp](./jet-coltyp-enumeration.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_coltyp](./jet-coltyp-enumeration.md)  
 
 ## <a name="see-also"></a>Confira também
 
@@ -66,6 +66,6 @@ Tipo: [Microsoft.ISAM.ESENT.Interop.JET_coltyp](./jet-coltyp-enumeration.md)
 
 [Classe IndexSegment](./indexsegment-class.md)
 
-[Membros do IndexSegment](./indexsegment-members.md)
+[Membros indexSegment](./indexsegment-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

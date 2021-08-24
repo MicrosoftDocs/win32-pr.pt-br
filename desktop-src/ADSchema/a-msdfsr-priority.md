@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a0b80f1ac05f05691c03fa9d62bb29444dbac1a
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: bace8fd682a00b3d0f4f2252ad792e9c0cf1110975b1e90264c7842e3f1661cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825377"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119704946"
 ---
 # <a name="ms-dfsr-priority-attribute"></a>atributo ms-DFSR-Priority
 
@@ -55,7 +55,7 @@ Nível de prioridade.
 | ID do link                | \-                                                                                                                        |
 | MAPI-Id                | \-                                                                                                                        |
 | System-Only            | Falso                                                                                                                     |
-| É de valor único       | True                                                                                                                      |
+| É de valor único       | Verdadeiro                                                                                                                      |
 | É indexado             | Falso                                                                                                                     |
 | No catálogo global      | Falso                                                                                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                              |
@@ -76,7 +76,7 @@ Nível de prioridade.
 | ID do link                | \-                                                                                                                        |
 | MAPI-Id                | \-                                                                                                                        |
 | System-Only            | Falso                                                                                                                     |
-| É de valor único       | True                                                                                                                      |
+| É de valor único       | Verdadeiro                                                                                                                      |
 | É indexado             | Falso                                                                                                                     |
 | No catálogo global      | Falso                                                                                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                              |
@@ -97,7 +97,7 @@ Nível de prioridade.
 | ID do link                | \-                                                                                                                        |
 | MAPI-Id                | \-                                                                                                                        |
 | System-Only            | Falso                                                                                                                     |
-| É de valor único       | True                                                                                                                      |
+| É de valor único       | Verdadeiro                                                                                                                      |
 | É indexado             | Falso                                                                                                                     |
 | No catálogo global      | Falso                                                                                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                              |

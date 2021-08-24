@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 07e3715c38b629869296e6f8df5dbebd9a515d1b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e2cf264ef8e48cf8515da32a09768ff3db2f544461f27e849fafdfca8998fab0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825309"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119704576"
 ---
 # <a name="object-guid-attribute"></a>Object-Guid atributo
 
@@ -58,10 +58,10 @@ O identificador exclusivo de um objeto.
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8C6D                          |
-| System-Only            | True                            |
-| É de valor único       | True                            |
-| É indexado             | True                            |
-| No catálogo global      | True                            |
+| System-Only            | Verdadeiro                            |
+| É de valor único       | Verdadeiro                            |
+| É indexado             | Verdadeiro                            |
+| No catálogo global      | Verdadeiro                            |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
 | Range-Lower            | 16                              |
 | Range-Upper            | 16                              |
@@ -79,10 +79,10 @@ O identificador exclusivo de um objeto.
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8C6D                          |
-| System-Only            | True                            |
-| É de valor único       | True                            |
-| É indexado             | True                            |
-| No catálogo global      | True                            |
+| System-Only            | Verdadeiro                            |
+| É de valor único       | Verdadeiro                            |
+| É indexado             | Verdadeiro                            |
+| No catálogo global      | Verdadeiro                            |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
 | Range-Lower            | 16                              |
 | Range-Upper            | 16                              |
@@ -100,10 +100,10 @@ O identificador exclusivo de um objeto.
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8C6D                          |
-| System-Only            | True                            |
-| É de valor único       | True                            |
-| É indexado             | True                            |
-| No catálogo global      | True                            |
+| System-Only            | Verdadeiro                            |
+| É de valor único       | Verdadeiro                            |
+| É indexado             | Verdadeiro                            |
+| No catálogo global      | Verdadeiro                            |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
 | Range-Lower            | 16                              |
 | Range-Upper            | 16                              |
@@ -121,10 +121,10 @@ O identificador exclusivo de um objeto.
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8C6D                          |
-| System-Only            | True                            |
-| É de valor único       | True                            |
-| É indexado             | True                            |
-| No catálogo global      | True                            |
+| System-Only            | Verdadeiro                            |
+| É de valor único       | Verdadeiro                            |
+| É indexado             | Verdadeiro                            |
+| No catálogo global      | Verdadeiro                            |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
 | Range-Lower            | 16                              |
 | Range-Upper            | 16                              |
@@ -142,10 +142,10 @@ O identificador exclusivo de um objeto.
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8C6D                          |
-| System-Only            | True                            |
-| É de valor único       | True                            |
-| É indexado             | True                            |
-| No catálogo global      | True                            |
+| System-Only            | Verdadeiro                            |
+| É de valor único       | Verdadeiro                            |
+| É indexado             | Verdadeiro                            |
+| No catálogo global      | Verdadeiro                            |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
 | Range-Lower            | 16                              |
 | Range-Upper            | 16                              |
@@ -163,10 +163,10 @@ O identificador exclusivo de um objeto.
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8C6D                          |
-| System-Only            | True                            |
-| É de valor único       | True                            |
-| É indexado             | True                            |
-| No catálogo global      | True                            |
+| System-Only            | Verdadeiro                            |
+| É de valor único       | Verdadeiro                            |
+| É indexado             | Verdadeiro                            |
+| No catálogo global      | Verdadeiro                            |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
 | Range-Lower            | 16                              |
 | Range-Upper            | 16                              |
@@ -184,10 +184,10 @@ O identificador exclusivo de um objeto.
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8C6D                          |
-| System-Only            | True                            |
-| É de valor único       | True                            |
-| É indexado             | True                            |
-| No catálogo global      | True                            |
+| System-Only            | Verdadeiro                            |
+| É de valor único       | Verdadeiro                            |
+| É indexado             | Verdadeiro                            |
+| No catálogo global      | Verdadeiro                            |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
 | Range-Lower            | 16                              |
 | Range-Upper            | 16                              |

@@ -1,23 +1,23 @@
 ---
-title: round_ni (sm4-ASM)
-description: Ponto flutuante redondo para integral float. | round_ni (sm4-ASM)
+title: round_ni (sm4 – asm)
+description: Float de ponto flutuante para float integral. | round_ni (sm4 – asm)
 ms.assetid: 6DEF818B-AFF9-4B44-950E-320EACE1CAC4
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2487715bbb2596653b1ca985a2e0390457feecbf
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: f8465651f4f8e3d80f963bbfe746947d768111812052224240b45bdc28e9d037
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107998573"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119853626"
 ---
-# <a name="round_ni-sm4---asm"></a>Round \_ Ni (sm4-ASM)
+# <a name="round_ni-sm4---asm"></a>round \_ ni (sm4 - asm)
 
-Ponto flutuante redondo para integral float.
+Float de ponto flutuante para float integral.
 
 
 
-| ARRED \_ Ni \[ \_ SAT \] dest \[ . Mask \] , \[ - \] src0 \[ \_ ABS \] \[ . swizzle\] |
+| round \_ ni \[ \_ sat \] dest \[ .mask , \] \[ - \] src0 \[ \_ abs \] \[ .swizzle\] |
 |------------------------------------------------------------------|
 
 
@@ -28,8 +28,8 @@ Ponto flutuante redondo para integral float.
 
 | Item                                                            | Descrição                                                    |
 |-----------------------------------------------------------------|----------------------------------------------------------------|
-| <span id="dest"></span><span id="DEST"></span>*dest*<br/> | \[no \] endereço dos resultados da operação.<br/> |
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[nos \] componentes na operação.<br/>             |
+| <span id="dest"></span><span id="DEST"></span>*Dest*<br/> | \[em \] O endereço dos resultados da operação.<br/> |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[em \] Os componentes na operação.<br/>             |
 
 
 
@@ -37,23 +37,23 @@ Ponto flutuante redondo para integral float.
 
 ## <a name="remarks"></a>Comentários
 
-Essa instrução executa uma rodada de ponto flutuante de componente para os valores em *src0*, gravando valores de ponto flutuante integral para *dest*. **Round \_ Ni** Arredonda em direção ao infinito, normalmente conhecido como Floor ().
+Essa instrução executa uma rodada de ponto flutuante por componente dos valores em *src0,* escrevendo valores integrais de ponto flutuante para *dest.* **round \_ ni** arredonda para -infinity, normalmente conhecido como floor().
 
 A tabela a seguir mostra os resultados obtidos ao executar a instrução com várias classes de números.
 
-F significa número real finito.
+F significa número finito real.
 
 
 
-| **src**  | **-INF** | **-F** | **-desnorma** | **-0** | **+0** | **+ desnormativo** | **+ F** | **+ INF** | **NaN** |
+| **src**  | **-inf** | **-F** | **-denorm** | **-0** | **+0** | **+denorm** | **+F** | **+inf** | **NaN** |
 |----------|----------|--------|-------------|--------|--------|-------------|--------|----------|---------|
-| **dest** | -inf     | -F     | -0          | -0     | +0     | +0          | + F     | +inf     | NaN     |
+| **Dest** | -inf     | -F     | -0          | -0     | +0     | +0          | +F     | +inf     | NaN     |
 
 
 
  
 
-Essa instrução se aplica aos seguintes estágios de sombreador:
+Essa instrução se aplica aos seguintes estágios do sombreador:
 
 
 
@@ -65,16 +65,16 @@ Essa instrução se aplica aos seguintes estágios de sombreador:
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreamento mínimo
+## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
 
-Essa função tem suporte nos seguintes modelos de sombreador.
+Essa função tem suporte nos modelos de sombreador a seguir.
 
 
 
-| Modelo de Sombreador                                              | Suportado |
+| Modelo de Sombreador                                              | Com suporte |
 |-----------------------------------------------------------|-----------|
 | [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sim       |
-| [Modelo do sombreador 4,1](dx-graphics-hlsl-sm4.md)              | sim       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | sim       |
 | [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | sim       |
 | [Modelo de sombreador 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | não        |
 | [Modelo de sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | não        |
@@ -88,7 +88,7 @@ Essa função tem suporte nos seguintes modelos de sombreador.
 
 <dl> <dt>
 
-[Assembly do Shader Model 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Assembly do modelo de sombreador 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

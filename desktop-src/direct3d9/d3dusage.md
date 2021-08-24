@@ -28,12 +28,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3d9types.h
-ms.openlocfilehash: 6d028d4a84c796c35913ffefd431739e1659eca3
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7f9a16fecc110a7bef8e6c065d8772ee72c46b77abf63857d23b734c555eba2d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105764024"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119750586"
 ---
 # <a name="d3dusage"></a>D3DUSAGE
 
@@ -78,21 +78,21 @@ Os usos são especificados quando um recurso é criado ou especificados com [**C
 | **D3DUSAGE \_ DEPTHSTENCIL**       |                      |                     | x              | x                   |                       | x              | x                   |
 | **D3DUSAGE \_ DMAP**               |                      |                     | x              |                     |                       |                | x                   |
 | **D3DUSAGE \_ DONOTCLIP**          | x                    | x                   |                |                     |                       |                |                     |
-| **D3DUSAGE \_ dinâmico**            | x                    | x                   | x              | x                   | x                     |                | x                   |
-| **D3DUSAGE \_ não seguro**          | x                    | x                   | x              | x                   | x                     | x              | x                   |
+| **D3DUSAGE \_ DYNAMIC**            | x                    | x                   | x              | x                   | x                     |                | x                   |
+| **D3DUSAGE \_ NONSECURE**          | x                    | x                   | x              | x                   | x                     | x              | x                   |
 | **D3DUSAGE \_ NPATCHES**           | x                    | x                   |                |                     |                       |                |                     |
-| **Pontos de D3DUSAGE \_**             | x                    | x                   |                |                     |                       |                |                     |
+| **PONTOS D3DUSAGE \_**             | x                    | x                   |                |                     |                       |                |                     |
 | **D3DUSAGE \_ RTPATCHES**          | x                    | x                   |                |                     |                       |                |                     |
 | **D3DUSAGE \_ RENDERTARGET**       |                      |                     | x              | x                   |                       | x              | x                   |
 | **D3DUSAGE \_ SOFTWAREPROCESSING** | x                    | x                   | x              | x                   | x                     |                | x                   |
 | **D3DUSAGE \_ TEXTAPI**            | x                    |                     | x              |                     |                       |                |                     |
-| **\_WRITEONLY D3DUSAGE**          | x                    | x                   |                |                     |                       |                |                     |
+| **D3DUSAGE \_ WRITEONLY**          | x                    | x                   |                |                     |                       |                |                     |
 
 
 
  
 
-Use [**CheckDeviceFormat**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-checkdeviceformat) para verificar o suporte de hardware para esses usos.
+Use [**CheckDeviceFormat para**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-checkdeviceformat) verificar o suporte de hardware para esses usos.
 
 Cada um dos métodos de criação de recursos é listado aqui.
 
@@ -101,13 +101,13 @@ Cada um dos métodos de criação de recursos é listado aqui.
 -   [**CreateIndexBuffer**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createindexbuffer)
 -   [**CreateOffscreenPlainSurface**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createoffscreenplainsurface)
 -   [**CreateRenderTarget**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createrendertarget)
--   [**CreateTexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createtexture)
--   [**CreateVertexBuffer**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createvertexbuffer)
+-   [**Createtexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createtexture)
+-   [**Createvertexbuffer**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createvertexbuffer)
 -   [**CreateVolumeTexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createvolumetexture)
 
-As funções [D3DXCreatexxx](dx9-graphics-reference-d3dx-functions-texture.md) texturing também usam alguns desses valores constantes para a criação de recursos.
+As funções de texting [D3DXCreatexxx](dx9-graphics-reference-d3dx-functions-texture.md) também usam alguns desses valores constantes para a criação de recursos.
 
-Para obter mais informações sobre os tipos de pool e suas restrições com determinados usos, consulte [**D3DPOOL**](./d3dpool.md).
+Para obter mais informações sobre tipos de pool e suas restrições com determinados usos, consulte [**D3DPOOL**](./d3dpool.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -115,7 +115,7 @@ Para obter mais informações sobre os tipos de pool e suas restrições com det
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3d9types. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 
@@ -123,10 +123,10 @@ Para obter mais informações sobre os tipos de pool e suas restrições com det
 
 <dl> <dt>
 
-[Constantes do Direct3D](dx9-graphics-reference-d3d-constants.md)
+[Constantes Direct3D](dx9-graphics-reference-d3d-constants.md)
 </dt> <dt>
 
-[\_Consulta D3DUSAGE](d3dusage-query.md)
+[CONSULTA D3DUSAGE \_](d3dusage-query.md)
 </dt> <dt>
 
 [**D3DDECLUSAGE**](./d3ddeclusage.md)

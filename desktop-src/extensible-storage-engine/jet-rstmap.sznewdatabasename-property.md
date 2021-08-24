@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre a propriedade: JET_RSTMAP. szNewDatabaseName'
-title: Propriedade JET_RSTMAP. szNewDatabaseName
+description: 'Saiba mais sobre: JET_RSTMAP.szNewDatabaseName'
+title: JET_RSTMAP.szNewDatabaseName
 TOCTitle: 'szNewDatabaseName property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_RSTMAP.szNewDatabaseName
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_rstmap.sznewdatabasename(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 245125d8139df1e1ec2cc78e0be05d99ee98774d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 84a4e51129458479be28d9d1f04740bf211259945ca80a5c8648320b9c71cc96
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164659"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119833506"
 ---
-# <a name="jet_rstmapsznewdatabasename-property"></a>Propriedade JET_RSTMAP. szNewDatabaseName
+# <a name="jet_rstmapsznewdatabasename-property"></a>JET_RSTMAP.szNewDatabaseName
 
 Obtém ou define o nome/caminho atual do banco de dados. Não deve ser nulo.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -62,14 +62,14 @@ public string szNewDatabaseName { get; set; }
 
 #### <a name="property-value"></a>Valor da propriedade
 
-Tipo: [System. String](/dotnet/api/system.string)  
+Tipo: [System.String](/dotnet/api/system.string)  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Classe JET_RSTMAP](./jet-rstmap-class.md)
+[JET_RSTMAP classe](./jet-rstmap-class.md)
 
-[Membros do JET_RSTMAP](./jet-rstmap-members.md)
+[JET_RSTMAP membros](./jet-rstmap-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

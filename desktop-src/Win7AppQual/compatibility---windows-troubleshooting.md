@@ -1,22 +1,22 @@
 ---
-description: Solução de problemas do Windows
+description: Windows Solucionando problemas
 ms.assetid: fb2c487a-d395-45eb-9010-936a61a414d0
-title: Solução de problemas do Windows
+title: Windows Solucionando problemas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ff332afe1b586b05866d78b49013a264e815f3eb
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: bd80becbcb54036872a36e04aef5e6c5a466fd8edc383217f41a5dc1b1758973
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108088554"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119795876"
 ---
-# <a name="windows-troubleshooting"></a>Solução de problemas do Windows
+# <a name="windows-troubleshooting"></a>Windows Solucionando problemas
 
 ## <a name="affected-platforms"></a>Plataformas afetadas
 
-**Clientes** -Windows 7  
-**Servidores** -Windows Server 2008 R2  
+**Clientes** – Windows 7  
+**Servidores** – Windows Server 2008 R2  
 
 
 
@@ -28,15 +28,15 @@ ms.locfileid: "108088554"
 
 ## <a name="description"></a>Descrição
 
-Um novo recurso da central de ações do Windows 7 (anteriormente conhecido como centro de soluções), solução de problemas do Windows, fornece uma experiência de solução de problemas sistemática para o usuário. A central de ações é um dos cinco ícones fixados no systray. A solução de problemas do Windows permite procurar ou Pesquisar pacotes de solução de problemas internos e para solucionar problemas de pacotes armazenados em um servidor da Microsoft na Internet – uma experiência melhor quando conectada (BWC). Você pode selecionar e executar um pacote de solução de problemas para tentar resolver o problema. Se não for possível identificar uma resolução para o problema, você terá a opção de Pesquisar ajuda, conteúdo da Comunidade e artigos de suporte ou outros pacotes de solução de problemas para conteúdo relacionado relevante. Caso não forneça uma resposta para o problema, você pode restaurar o computador para uma hora antes do momento em que o problema ocorreu ou obter ajuda com a assistência remota. A intenção é permitir que você encontre uma solução para o problema com facilidade e rapidez.
+Um novo Windows 7 (anteriormente conhecido como Centro de Soluções), Windows Solução de Problemas, oferece uma experiência de solução de problemas sistemática para o usuário. O Centro de Ações é um dos cinco ícones fixados no systray. Windows A solução de problemas permite procurar ou pesquisar pacotes de solução de problemas in-box e pacotes de solução de problemas armazenados em um servidor Microsoft na Internet – uma experiência BWC (Melhor quando conectado). Você pode selecionar e executar um pacote de solução de problemas para tentar resolver o problema. Se não for possível identificar uma resolução para o problema, você terá a opção de pesquisar artigos de ajuda, conteúdo da comunidade e suporte ou outros pacotes de solução de problemas para conteúdo relacionado relevante. Se isso não fornecer uma resposta para o problema, você poderá restaurar o computador para um momento anterior ao em que o problema ocorreu ou obter ajuda por meio de assistência remota. A intenção é permitir que você encontre uma solução para o problema de maneira fácil e rápida.
 
 ## <a name="usage"></a>Uso
 
-A central de ações está claramente visível e disponível em vários locais. Você pode iniciá-lo no menu de contexto da central de ações no systray, no painel de controle como um link de atalho em sistema e manutenção, na página principal da central de ações e no conteúdo da ajuda.
+A Central de Ações está claramente visível e disponível em vários locais. Você pode inocioná-lo no menu de contexto da Central de Ações no systray, no painel de controle como um link de atalho em sistema e manutenção, na página principal da Central de Ações e no conteúdo da Ajuda.
 
-Os pacotes de solução de problemas são baseados nos scripts do PowerShell. O processo de criação e publicação de um pacote de solução de problemas se tornará público para permitir que OEMs, IHVs, ISVs e profissionais de ti desenvolvam e enviem seu próprio conteúdo de solução de problemas.
+Os pacotes de solução de problemas são baseados em scripts do PowerShell. O processo de criar e publicar um pacote de solução de problemas será público para permitir que OEMs, IHVs, ISVs e profissionais de TI desenvolvam e enviarem seu próprio conteúdo de solução de problemas.
 
-Para uma experiência de usuário consistente, certifique-se de seguir as práticas recomendadas e diretrizes descritas no kit de ferramentas de solução de problemas do Windows ao projetar seus próprios pacotes de solução de problemas.
+Para uma experiência de usuário consistente, siga as melhores práticas e diretrizes descritas no kit de ferramentas Windows solução de problemas ao criar seus próprios pacotes de solução de problemas.
 
  
 

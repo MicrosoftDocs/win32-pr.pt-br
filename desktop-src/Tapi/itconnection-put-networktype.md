@@ -1,21 +1,21 @@
 ---
-description: O \_ método Put NetworkType define o tipo de rede.
+description: O método \_ put NetworkType define o tipo de rede.
 ms.assetid: 747e3133-d103-44dc-b119-5a4cb4ed7f18
-title: 'ITConnection: método de ut_NetworkType de:p (Sdpblb. h)'
+title: Método ITConnection::p ut_NetworkType (Sdpblb.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c0e08819bcc5cb00824c8c1510d85fdcb1de186b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 87f9d14090d04db639c95df59b051da77f2631064becff5bbb1873b37e82c745
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105761360"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119774986"
 ---
-# <a name="itconnectionput_networktype-method"></a>Método ITConnection::p UT \_ NetworkType
+# <a name="itconnectionput_networktype-method"></a>Método NETWORKType ITConnection::p ut \_
 
-\[ Os controles e as interfaces da conferência de telefonia IP de reunião não estão disponíveis para uso no Windows Vista, no Windows Server 2008 e nas versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
+\[As interfaces e controles de conferência de telefonia IP de reunião não estão disponíveis para uso no Windows Vista, Windows Server 2008 e versões subsequentes do sistema operacional. A API do Cliente RTC fornece funcionalidade semelhante.\]
 
-O método **Put \_ NetworkType** define o tipo de rede.
+O **método \_ put NetworkType** define o tipo de rede.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -32,14 +32,14 @@ HRESULT put_NetworkType(
 
 <dl> <dt>
 
-*pNetworkType* \[ no\]
+*pNetworkType* \[ Em\]
 </dt> <dd>
 
 Ponteiro para um **BSTR** que contém o tipo de rede.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
@@ -48,9 +48,9 @@ Esse método pode retornar um desses valores.
 | Código de retorno                                                                                   | Descrição                                                     |
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>          | O método foi bem-sucedido.<br/>                                    |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | O parâmetro *pNetworkType* não é válido.<br/>           |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | O *parâmetro pNetworkType* não é válido.<br/>           |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Há memória insuficiente para executar a operação.<br/> |
-| <dl> <dt>**E \_ falha**</dt> </dl>        | Erro não especificado.<br/>                                   |
+| <dl> <dt>**E \_ FAIL**</dt> </dl>        | Erro não especificado.<br/>                                   |
 | <dl> <dt>**E \_ NOTIMPL**</dt> </dl>     | Este método ainda não foi implementado.<br/>                  |
 
 
@@ -59,7 +59,7 @@ Esse método pode retornar um desses valores.
 
 ## <a name="remarks"></a>Comentários
 
-O aplicativo deve usar [**SysAllocString**](/windows/win32/api/oleauto/nf-oleauto-sysallocstring) para alocar memória para o parâmetro *PNetworkType* e usar [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) para liberar a memória quando a variável não for mais necessária.
+O aplicativo deve usar [**SysAllocString**](/windows/win32/api/oleauto/nf-oleauto-sysallocstring) para alocar memória para o parâmetro *pNetworkType* e usar [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) para liberar a memória quando a variável não for mais necessária.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,9 +67,9 @@ O aplicativo deve usar [**SysAllocString**](/windows/win32/api/oleauto/nf-oleaut
 
 | Requisito | Valor |
 |-------------------------|---------------------------------------------------------------------------------------|
-| Versão da TAPI<br/> | Requer TAPI 3,0 ou posterior<br/>                                                 |
-| parâmetro<br/>       | <dl> <dt>Sdpblb. h</dt> </dl>   |
-| Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
+| Versão do TAPI<br/> | Requer TAPI 3.0 ou posterior<br/>                                                 |
+| Cabeçalho<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
+| Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | DLL<br/>          | <dl> <dt>Sdpblb.dll</dt> </dl> |
 
 
@@ -81,7 +81,7 @@ O aplicativo deve usar [**SysAllocString**](/windows/win32/api/oleauto/nf-oleaut
 [**ITConnection**](itconnection.md)
 </dt> <dt>
 
-[**ITConnection:: obter o \_ NetworkType**](itconnection-get-networktype.md)
+[**ITConnection::get \_ NetworkType**](itconnection-get-networktype.md)
 </dt> </dl>
 
  

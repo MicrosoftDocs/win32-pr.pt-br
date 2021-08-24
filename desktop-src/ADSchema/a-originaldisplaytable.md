@@ -1,11 +1,11 @@
 ---
-title: Atributo original-display-Table
+title: Atributo Original-Display-Table
 description: A tabela de exibição MAPI (original) para uma entrada de endereço.
 ms.assetid: 3485665e-ce84-456e-b15e-acfa3be713ca
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo original-display-Table
-- Esquema de AD do atributo originalDisplayTable
+- Esquema do AD do atributo Original-Display-Table
+- Esquema do AD do atributo originalDisplayTable
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f24d41d6e950f2dd80f4aeec1a8b2f4815610ecb
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 0063260c7efd0ac712fd71e14347ebeaef8515fab610dd3218d42695f868ae28
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825304"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119704506"
 ---
-# <a name="original-display-table-attribute"></a>Atributo original-display-Table
+# <a name="original-display-table-attribute"></a>Atributo Original-Display-Table
 
 A tabela de exibição MAPI (original) para uma entrada de endereço.
 
@@ -29,14 +29,14 @@ A tabela de exibição MAPI (original) para uma entrada de endereço.
 
 | Entrada | Valor |
 |-------------------|-------------------------------------------------------|
-| CN                | Original-exibição-tabela                                |
-| LDAP-Display-Name | originalDisplayTable                                  |
+| CN                | Original-Display-Table                                |
+| Ldap-Display-Name | originalDisplayTable                                  |
 | Tamanho              | \-                                                    |
 | Privilégio de atualização  | \-                                                    |
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.2.445                                |
-| System-ID-GUID    | 5fd424ce-1262-11d0-a060-00aa006c33ed                  |
-| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| System-Id-Guid    | 5fd424ce-1262-11d0-a060-00aa006c33ed                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -58,15 +58,15 @@ A tabela de exibição MAPI (original) para uma entrada de endereço.
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x8103                                                   |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| Tem valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | Falso                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Falso                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32768                                                    |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000000                                               |
-| Classes usadas em        | [**Display-template**](c-displaytemplate.md)<br/> |
+| Classes usadas em        | [**Exibir modelo**](c-displaytemplate.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ A tabela de exibição MAPI (original) para uma entrada de endereço.
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x8103                                                   |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| Tem valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | Falso                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Falso                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32768                                                    |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000000                                               |
-| Classes usadas em        | [**Display-template**](c-displaytemplate.md)<br/> |
+| Classes usadas em        | [**Exibir modelo**](c-displaytemplate.md)<br/> |
 
 
 
@@ -100,10 +100,10 @@ A tabela de exibição MAPI (original) para uma entrada de endereço.
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x8103                                                   |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| Tem valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | Falso                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Falso                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32768                                                    |
 | Search-Flags           | 0x00000000                                               |
@@ -121,7 +121,7 @@ A tabela de exibição MAPI (original) para uma entrada de endereço.
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x8103                                                   |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| É de valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
 | No catálogo global      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
@@ -142,7 +142,7 @@ A tabela de exibição MAPI (original) para uma entrada de endereço.
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x8103                                                   |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| É de valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
 | No catálogo global      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
@@ -163,7 +163,7 @@ A tabela de exibição MAPI (original) para uma entrada de endereço.
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x8103                                                   |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| É de valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
 | No catálogo global      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |

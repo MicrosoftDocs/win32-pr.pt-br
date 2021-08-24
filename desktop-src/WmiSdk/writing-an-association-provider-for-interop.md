@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Escrevendo um provedor de associação para interoperabilidade
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e9f38f09a5c5771fe7fd04909f8247834b646ad1
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: b2d45ceebf9f3465bf9485f4105d9ea2e4438a25c9d169193a8b68c19669b51b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "105812379"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119794266"
 ---
 # <a name="writing-an-association-provider-for-interop"></a>Escrevendo um provedor de associação para interoperabilidade
 
@@ -18,7 +18,7 @@ Um provedor de associação fornece um mecanismo para registrar perfis e associ�
 
 Provedores de associação são usados para expor perfis padrão, como um perfil de energia. Isso é feito escrevendo um provedor de associação no namespace root/Interop que expõe instâncias de associação implementando uma classe, que é derivada do [**CIM \_ RegisteredProfile**](/previous-versions//ee309375(v=vs.85)). O provedor deve ser registrado tanto na raiz/na interoperabilidade quanto na raiz/ <implemented> namespace para dar suporte à passagem entre namespaces.
 
-Instrumentação de Gerenciamento do Windows (WMI) carrega o provedor de associação sempre que uma consulta de associação é executada no namespace root/Interop.
+Windows A instrumentação de gerenciamento (WMI) carrega o provedor de associação sempre que uma consulta de associação é executada no namespace root/Interop.
 
 **Para implementar um provedor de associação para interoperabilidade**
 
@@ -49,7 +49,7 @@ Instrumentação de Gerenciamento do Windows (WMI) carrega o provedor de associa
     ```
 
     > [!Note]  
-    > Para clientes Windows, a propriedade **RegisteredOrganization** deve ser definida como 1 e a propriedade **OtherRegisteredOrganization** definida como "Microsoft".
+    > para clientes Windows, a propriedade **RegisteredOrganization** deve ser definida como 1 e a propriedade **OtherRegisteredOrganization** definida como "Microsoft".
 
      
 
@@ -81,7 +81,7 @@ Instrumentação de Gerenciamento do Windows (WMI) carrega o provedor de associa
         };
         ```
 
-        Se o qualificador **\_ targetNamespace do MSFT** não for especificado na propriedade que faz referência ao namespace implementado, o filtro **ResultClass** da instrução "ASSOCIATORS of" não funcionará. Por exemplo, se o qualificador de **\_ targetNamespace do MSFT** não for especificado, a seguinte linha de comando do Windows PowerShell não retornará um objeto: **Get-WmiObject-Query "ASSOCIADORES de {ProcessProfile. InstanceId = ' Process '}, em que ResultClass = ' Win32 \_ Process '"**.
+        Se o qualificador **\_ targetNamespace do MSFT** não for especificado na propriedade que faz referência ao namespace implementado, o filtro **ResultClass** da instrução "ASSOCIATORS of" não funcionará. por exemplo, se o qualificador **\_ TargetNamespace do MSFT** não for especificado, a seguinte Windows PowerShell linha de comando não retornará um objeto: **get-wmiobject-query "associators of {ProcessProfile. InstanceID = ' Process '}, em que resultclass = ' Win32 \_ Process '"**.
 
         O qualificador de **\_ targetNamespace do MSFT** não pode apontar para um namespace em um computador remoto. Por exemplo, não há suporte para o namespace a seguir: MSFT \_ targetNamespace ( \\ \\ \\ \\ <RemoteMachine> \\ \\ \\ \\ interoperabilidade raiz).
 
@@ -131,7 +131,7 @@ Instrumentação de Gerenciamento do Windows (WMI) carrega o provedor de associa
     };
     ```
 
-4.  Coloque o esquema para o [**\_ ElementConformsToProfile CIM**](/previous-versions/windows/desktop/iscsitarg/cim-elementconformstoprofile) no namespace implementado. Para clientes Windows, esse é o arquivo Interop. mof localizado na pasta% SystemRoot% \\ System32 \\ WBEM.
+4.  Coloque o esquema para o [**\_ ElementConformsToProfile CIM**](/previous-versions/windows/desktop/iscsitarg/cim-elementconformstoprofile) no namespace implementado. para clientes Windows, esse é o arquivo interop. mof que está localizado na pasta% systemroot% \\ system32 \\ wbem.
 5.  Implemente a interface [**IWbemProviderInit**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemproviderinit) para seu provedor.
 
     O WMI usa [**IWbemProviderInit**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemproviderinit) para carregar e inicializar um provedor. O método [**tialize deIWbemProviderInit.Ini**](/windows/desktop/api/Wbemprov/nf-wbemprov-iwbemproviderinit-initialize) deve ser implementado de forma que permita que ele seja chamado para dois namespaces diferentes. Para obter mais informações, consulte [inicializando um provedor](initializing-a-provider.md).

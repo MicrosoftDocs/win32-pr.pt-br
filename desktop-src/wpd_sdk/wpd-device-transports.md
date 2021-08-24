@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 574c6b0b00980d110f2374e7426dd101c9122854
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5f091a84c573038c7d74cf5c2760c298a2542f70f06bdb45d1e72954c9dd5f25
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105789338"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119703816"
 ---
 # <a name="wpd_device_transports-enumeration"></a>Enumeração de transportes de \_ dispositivos WPD \_
 

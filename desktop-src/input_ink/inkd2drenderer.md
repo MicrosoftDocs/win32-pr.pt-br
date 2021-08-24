@@ -13,36 +13,36 @@ api_type:
 - COM
 api_location:
 - Inkrenderer.idl
-ms.openlocfilehash: 1649d52c2e9098513c115daaf295c4005e890b8e
-ms.sourcegitcommit: 5b98bf8c68922f8f03c14f793fbe17504900559c
+ms.openlocfilehash: 51383770b8eb0c5dca5efbb5f1756bee81ece506c0e92337e9df9a60eb0a8aee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "104172443"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119726726"
 ---
 # <a name="inkd2drenderer-class"></a>Classe InkD2DRenderer
 
-Implementa a interface [**IInkD2DRenderer**](/windows/win32/api/inkrenderer/nn-inkrenderer-iinkd2drenderer) .
+Implementa a interface [**IInkD2DRenderer.**](/windows/win32/api/inkrenderer/nn-inkrenderer-iinkd2drenderer)
 
-Um objeto [**IInkD2DRenderer**](/windows/win32/api/inkrenderer/nn-inkrenderer-iinkd2drenderer) permite a renderização de traços de tinta no contexto do dispositivo Direct2D designado de um aplicativo universal do Windows, em vez do controle [**InkCanvas**](/uwp/api/Windows.UI.Xaml.Controls.InkCanvas) padrão.
+Um [**objeto IInkD2DRenderer**](/windows/win32/api/inkrenderer/nn-inkrenderer-iinkd2drenderer) permite a renderização de traços de tinta no contexto do dispositivo Direct2D designado de um aplicativo universal Windows, em vez do controle [**InkCanvas padrão.**](/uwp/api/Windows.UI.Xaml.Controls.InkCanvas)
 
 ## <a name="members"></a>Membros
 
-A classe **InkD2DRenderer** herda da interface [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) . **InkD2DRenderer** também tem estes tipos de membros:
+A **classe InkD2DRenderer** herda da interface [**IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **InkD2DRenderer** também tem estes tipos de membros:
 
 - [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-A classe **InkD2DRenderer** tem esses métodos.
+A **classe InkD2DRenderer** tem esses métodos.
 
 | Método                              | Descrição                                                                             |
 |:------------------------------------|:----------------------------------------------------------------------------------------|
-| [**Draw**](/windows/win32/api/inkrenderer/nf-inkrenderer-iinkd2drenderer-draw) | Renderiza o traço de tinta para o contexto de dispositivo Direct2D designado do aplicativo.<br/> |
+| [**Draw**](/windows/win32/api/inkrenderer/nf-inkrenderer-iinkd2drenderer-draw) | Renderiza o traço de tinta para o Direct2D do dispositivo designado do aplicativo.<br/> |
 
-## <a name="creationaccess-functions"></a>Criar \\ funções de acesso
+## <a name="creationaccess-functions"></a>Funções \\ de acesso de criação
 
-Chame [<strong>CoCreateInstance</strong>](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) com o identificador de classe <strong>InkD2DRenderer</strong> para recuperar uma referência ao objeto.
+Chame [<strong>CoCreateInstance com</strong>](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) o identificador de <strong>classe InkD2DRenderer</strong> para recuperar uma referência ao objeto .
 
 ``` C++
 CoCreateInstance(__uuidof(InkD2DRenderer),
@@ -53,14 +53,14 @@ CoCreateInstance(__uuidof(InkD2DRenderer),
 
 ## <a name="examples"></a>Exemplos
 
-Este trecho de código do arquivo "SceneComposer. cpp" do [exemplo de escrita complexa](/samples/microsoft/windows-universal-samples/complexink/) demonstra a renderização de uma coleção de traços de tinta em um contexto de dispositivo Direct2D.
+Este snippet do arquivo "SceneComposer.cpp" do exemplo de inking complexo demonstra a renderização de uma coleção de traços de tinta em um contexto Direct2D dispositivo. [](/samples/microsoft/windows-universal-samples/complexink/)
 
 ```C++
 _inkRenderer->Render(strokes, _deviceResources->GetD2DDeviceContext());
 strokes->Clear();
 ```
 
-Este trecho de código do arquivo "InkRenderer. cpp" do [exemplo de escrita complexa](/samples/microsoft/windows-universal-samples/complexink/) mostra o método de renderização (chamado no trecho anterior) que chama o método [**draw**](/windows/win32/api/inkrenderer/nf-inkrenderer-iinkd2drenderer-draw) para renderizar os traços.
+Este snippet do arquivo "InkRenderer.cpp" do exemplo de inking complexo mostra o método Render (chamado no snippet anterior) que chama o método [**Draw**](/windows/win32/api/inkrenderer/nf-inkrenderer-iinkd2drenderer-draw) para renderizar os traços. [](/samples/microsoft/windows-universal-samples/complexink/)
 
 ```C++
 void InkRenderer::Render(
@@ -90,12 +90,12 @@ void InkRenderer::Render(
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                  |
-| parâmetro<br/>                   | <dl> <dt>Inkrenderer. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>Inkrenderer. idl</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Inkrenderer.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Inkrenderer.idl</dt> </dl> |
 | IID<br/>                      | IID \_ IInkD2DRenderer é definido como 4044e60c-7b01-4671-a97c-04e0210a07a5<br/>         |
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-[Processador de tinta](ink-renderer.md), [interações de caneta e](/windows/uwp/design/input/pen-and-stylus-interactions)caneta, [exemplo de análise de tinta](/samples/microsoft/windows-universal-samples/inkanalysis/), exemplo de [escrita simples](/samples/microsoft/windows-universal-samples/simpleink/), [exemplo de escrita complexa](/samples/microsoft/windows-universal-samples/complexink/)
+[Renderdor de tinta,](ink-renderer.md) [interações de caneta](/windows/uwp/design/input/pen-and-stylus-interactions)e caneta, exemplo de Análise de [Tinta,](/samples/microsoft/windows-universal-samples/inkanalysis/)Exemplo de tinta [simples,](/samples/microsoft/windows-universal-samples/simpleink/) [Amostra de tinta complexa](/samples/microsoft/windows-universal-samples/complexink/)

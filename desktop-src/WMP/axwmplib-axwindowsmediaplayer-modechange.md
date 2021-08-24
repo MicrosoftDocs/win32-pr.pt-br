@@ -1,9 +1,9 @@
 ---
 title: Evento ModeChange do objeto AxWindowsMediaPlayer
-description: O evento ModeChange ocorre quando um modo do Windows Media Player é alterado. | Evento ModeChange do objeto AxWindowsMediaPlayer
+description: o evento ModeChange ocorre quando um modo de Windows Media Player é alterado. | Evento ModeChange do objeto AxWindowsMediaPlayer
 ms.assetid: 56308425-dce5-4691-8970-c0807744abef
 keywords:
-- Evento ModeChange do objeto AxWindowsMediaPlayer do Windows Media Player
+- Evento ModeChange do objeto AxWindowsMediaPlayer Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c06575fc986f4223056244964c2d070874c890b2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: aa3b81ce7c48fd34f03131c7ed3f6cafed1029b103f218842a70ecaade08f1af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105813381"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119764836"
 ---
 # <a name="modechange-event-of-the-axwindowsmediaplayer-object"></a>Evento ModeChange do objeto AxWindowsMediaPlayer
 
-O evento ModeChange ocorre quando um modo do Windows Media Player é alterado.
+o evento ModeChange ocorre quando um modo de Windows Media Player é alterado.
 
 ``` syntax
 [C#]

@@ -1,7 +1,7 @@
 ---
-description: Analisa o texto para identificar palavras e fornece os resultados para o objeto WordSink.
+description: Analisar texto para identificar palavras e fornece os resultados para o objeto WordSink.
 ms.assetid: 42bfc961-c095-4380-9b55-b58a0d9f2c00
-title: 'Método IWordInfo:: BreakText'
+title: Método IWordInfo::BreakText
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Msir3jp.dll
-ms.openlocfilehash: f6f71e92137490d56c93d9443506c2d7ffa2688a
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 4cb4e4b27b52a4fb22a65f382a20c51a43ca5c77feb14828a7ea252e75c3b0f1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010107"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119749736"
 ---
-# <a name="iwordinfobreaktext-method"></a>Método IWordInfo:: BreakText
+# <a name="iwordinfobreaktext-method"></a>Método IWordInfo::BreakText
 
 \[Esse método é obsoleto e não tem suporte no Windows Vista.\]
 
-Analisa o texto para identificar palavras e fornece os resultados para o objeto [WordSink](/previous-versions//ms691570(v=vs.85)) .
+Analisar texto para identificar palavras e fornece os resultados para o [objeto WordSink.](/previous-versions//ms691570(v=vs.85))
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,31 +43,31 @@ HRESULT BreakText(
 
 <dl> <dt>
 
-*pTextSource* \[ no\]
+*pTextSource* \[ Em\]
 </dt> <dd>
 
-Um ponteiro para uma estrutura de [ \_ fonte de texto](/previous-versions//ms690919(v=vs.85)) que contém o texto Unicode.
+Um ponteiro para uma estrutura [TEXT \_ SOURCE](/previous-versions//ms690919(v=vs.85)) que contém o texto Unicode.
 
 </dd> <dt>
 
-*pWordSink* \[ no\]
+*pWordSink* \[ Em\]
 </dt> <dd>
 
-Um ponteiro para o objeto [WordSink](/previous-versions//ms691570(v=vs.85)) que recebe e manipula as palavras geradas por esse método. Se esse parâmetro for **nulo**, o método não quebrará a cadeia de caracteres em palavras.
+Um ponteiro para o [objeto WordSink](/previous-versions//ms691570(v=vs.85)) que recebe e trata as palavras geradas por esse método. Se esse parâmetro for **NULL,** o método não quebrará a cadeia de caracteres em palavras.
 
 </dd> <dt>
 
-*fBreakMode* \[ no\]
+*fBreakMode* \[ Em\]
 </dt> <dd>
 
-O modo de interrupção. Esse parâmetro pode usar um dos valores a seguir.
+O modo de quebra. Esse parâmetro pode usar um dos valores a seguir.
 
 
 
 | Valor                                                                                                                                                                                                                                                                                   | Significado                                                                                                     |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| <span id="IWORDINFO_BREAKTEXTMODE_DICTFORM"></span><span id="iwordinfo_breaktextmode_dictform"></span><dl> <dt>**IWORDINFO \_ BREAKTEXTMODE \_ DICTFORM**</dt> <dt>0x00000002</dt> </dl> | O Word quebra a cadeia de texto e passa o formulário de dicionário das palavras para o objeto **WordSink** .<br/> |
-| <span id="IWORDINFO_BREAKTEXTMODE_SMARTSEL"></span><span id="iwordinfo_breaktextmode_smartsel"></span><dl> <dt>**IWORDINFO \_ BREAKTEXTMODE \_ SMARTSEL**</dt> <dt>0x00000001</dt> </dl> | O Word quebra a cadeia de texto e passa as palavras para o objeto **WordSink** .<br/>                        |
+| <span id="IWORDINFO_BREAKTEXTMODE_DICTFORM"></span><span id="iwordinfo_breaktextmode_dictform"></span><dl> <dt>**IWORDINFO \_ BREAKTEXTMODE \_ DICTFORM**</dt> <dt>0x00000002</dt> </dl> | Word quebra a cadeia de caracteres de texto e passa a forma de dicionário das palavras para o **objeto WordSink.**<br/> |
+| <span id="IWORDINFO_BREAKTEXTMODE_SMARTSEL"></span><span id="iwordinfo_breaktextmode_smartsel"></span><dl> <dt>**IWORDINFO \_ BREAKTEXTMODE \_ SMARTSEL**</dt> <dt>0x00000001</dt> </dl> | Word quebra a cadeia de caracteres de texto e passa as palavras para o **objeto WordSink.**<br/>                        |
 
 
 
@@ -75,7 +75,7 @@ O modo de interrupção. Esse parâmetro pode usar um dos valores a seguir.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos valores a seguir.
 
@@ -83,8 +83,8 @@ Esse método retorna um dos valores a seguir.
 
 | Código de retorno                                                                            | Descrição                                                                                             |
 |----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>   | A operação foi realizada com êxito. Não há mais texto disponível para reabastecer o buffer *pTextSource* .<br/> |
-| <dl> <dt>**E \_ falha**</dt> </dl> | O parâmetro *pTextSource* é **nulo**.<br/>                                                     |
+| <dl> <dt>**S \_ OK**</dt> </dl>   | A operação foi realizada com êxito. Não há mais texto disponível para repor o buffer *pTextSource.*<br/> |
+| <dl> <dt>**E \_ FAIL**</dt> </dl> | O *parâmetro pTextSource* é **NULL.**<br/>                                                     |
 
 
 
@@ -92,7 +92,7 @@ Esse método retorna um dos valores a seguir.
 
 ## <a name="remarks"></a>Comentários
 
-Use o membro **pfnFillTextBuffer** da estrutura **de \_ fonte de texto** para reabastecer o texto de origem. Esse método deve lidar com todos os valores de retorno da função de retorno de chamada **pfnFillTextBuffer** . Se ocorrer um erro, conclua o processamento do texto no buffer antes de manipular o erro.
+Use o **membro pfnFillTextBuffer** da estrutura **TEXT \_ SOURCE** para reabastecer o texto de origem. Esse método deve manipular todos os valores de retorno da função de retorno de chamada **pfnFillTextBuffer.** Se ocorrer um erro, termine o processamento do texto no buffer antes de tratar o erro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -100,10 +100,10 @@ Use o membro **pfnFillTextBuffer** da estrutura **de \_ fonte de texto** para re
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                   |
-| Fim do suporte do cliente<br/>    | Windows XP<br/>                                                                  |
-| Fim do suporte do servidor<br/>    | Windows Server 2003<br/>                                                         |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                   |
+| Fim do suporte ao cliente<br/>    | Windows XP<br/>                                                                  |
+| Fim do suporte ao servidor<br/>    | Windows Server 2003<br/>                                                         |
 | DLL<br/>                      | <dl> <dt>Msir3jp.dll</dt> </dl> |
 
 
@@ -115,10 +115,10 @@ Use o membro **pfnFillTextBuffer** da estrutura **de \_ fonte de texto** para re
 [**IWordInfo**](iwordinfo.md)
 </dt> <dt>
 
-[fonte de texto \_](/previous-versions//ms690919(v=vs.85))
+[FONTE DE \_ TEXTO](/previous-versions//ms690919(v=vs.85))
 </dt> <dt>
 
-[**WordInfo**](wordinfo-coclass.md)
+[**Wordinfo**](wordinfo-coclass.md)
 </dt> <dt>
 
 [WordSink](/previous-versions//ms691570(v=vs.85))

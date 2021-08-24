@@ -1,19 +1,19 @@
 ---
-description: Este artigo descreve como o Gerenciador de gráfico de filtro localiza um filtro de origem, dado um nome de arquivo.
+description: este artigo descreve como o gerenciador de Graph de filtro localiza um filtro de origem, dado um nome de arquivo.
 ms.assetid: bc0d5719-6325-40fe-8261-ad00b91f272c
 title: Registrando um tipo de arquivo personalizado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e98c01555497ac628fff452f464c826475edbb8
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: fd2815748fafaff3e2d20d0de1ab5fa0bcc9dec62f4e65ffbdd8479fec434d99
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105758459"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119697046"
 ---
 # <a name="registering-a-custom-file-type"></a>Registrando um tipo de arquivo personalizado
 
-Este artigo descreve como o Gerenciador de gráfico de filtro localiza um filtro de origem, dado um nome de arquivo. Você pode usar esse mecanismo para registrar seus próprios tipos de arquivo personalizados. Depois que o tipo de arquivo for registrado, o DirectShow carregará automaticamente o filtro de origem correto sempre que um aplicativo chamar [**IGraphBuilder:: RenderFile**](/windows/desktop/api/Strmif/nf-strmif-igraphbuilder-renderfile) ou [**IGraphBuilder:: AddSourceFilter**](/windows/desktop/api/Strmif/nf-strmif-igraphbuilder-addsourcefilter).
+este artigo descreve como o gerenciador de Graph de filtro localiza um filtro de origem, dado um nome de arquivo. Você pode usar esse mecanismo para registrar seus próprios tipos de arquivo personalizados. depois que o tipo de arquivo for registrado, DirectShow carregará automaticamente o filtro de origem correto sempre que um aplicativo chamar [**IGraphBuilder:: renderfile**](/windows/desktop/api/Strmif/nf-strmif-igraphbuilder-renderfile) ou [**IGraphBuilder:: AddSourceFilter**](/windows/desktop/api/Strmif/nf-strmif-igraphbuilder-addsourcefilter).
 
 -   [Visão geral](#overview)
 -   [Protocolos](#protocols)
@@ -25,7 +25,7 @@ Este artigo descreve como o Gerenciador de gráfico de filtro localiza um filtro
 
 ## <a name="overview"></a>Visão geral
 
-Para localizar um filtro de origem de um determinado nome de arquivo, o Gerenciador de gráfico de filtro tenta fazer o seguinte, na ordem:
+para localizar um filtro de origem de um determinado nome de arquivo, o filtro Graph Manager tenta fazer o seguinte, na ordem:
 
 1.  Corresponder ao protocolo, se houver.
 2.  Corresponder à extensão do arquivo.
@@ -51,9 +51,9 @@ HKEY_CLASSES_ROOT
 
 
 
-Se o nome ou a URL do arquivo contiver dois-pontos (': '), o Gerenciador do grafo de filtro tentará usar a parte antes de ': ' como um nome de protocolo. Por exemplo, se o nome for "myprot://myfile.ext", ele pesquisará uma chave do registro chamada **myprot**. Se essa chave existir e contiver uma subchave chamada "Extensions", o Gerenciador do grafo de filtro pesquisará nessa subchave para obter as entradas que correspondam à extensão do arquivo. O valor da chave deve ser um GUID na forma de cadeia de caracteres; por exemplo, " {00000000-0000-0000-0000-000000000000} ". Se o Gerenciador do grafo de filtro não puder corresponder a nada na subchave **extensões** , ele procurará uma subchave chamada **filtro de origem**, que também deve ser um GUID no formato de cadeia de caracteres.
+se o nome do arquivo ou a URL contiver dois-pontos (': '), o filtro Graph Manager tentará usar a parte antes de ': ' como um nome de protocolo. Por exemplo, se o nome for "myprot://myfile.ext", ele pesquisará uma chave do registro chamada **myprot**. se essa chave existir e contiver uma subchave chamada "Extensions", o filtro Graph Manager pesquisará dentro dessa subchave para entradas que correspondam à extensão do arquivo. O valor da chave deve ser um GUID na forma de cadeia de caracteres; por exemplo, " {00000000-0000-0000-0000-000000000000} ". se o filtro Graph gerenciador não puder corresponder a nada dentro da subchave **extensões** , ele procurará uma subchave chamada **filtro de origem**, que também deve ser um GUID no formato de cadeia de caracteres.
 
-Se o Gerenciador do grafo de filtro encontrar um GUID correspondente, ele o usará como o CLSID do filtro de origem e tentará carregar o filtro. Se não encontrar uma correspondência, ela usará o filtro de [origem do arquivo (URL)](file-source--url--filter.md) , que trata o nome do arquivo como uma URL.
+se o filtro Graph Manager encontrar um GUID correspondente, ele o usará como o CLSID do filtro de origem e tentará carregar o filtro. Se não encontrar uma correspondência, ela usará o filtro de [origem do arquivo (URL)](file-source--url--filter.md) , que trata o nome do arquivo como uma URL.
 
 Há duas exceções a esse algoritmo:
 
@@ -62,11 +62,11 @@ Há duas exceções a esse algoritmo:
 
 ## <a name="file-extensions"></a>Extensões de arquivo
 
-Se não houver nenhum protocolo no nome do arquivo, o Gerenciador do grafo de filtro procurará entradas com as **\_ \_ \\ \\ extensões \\ da chave hKey classes do tipo de mídia raiz**.*ext* \\ , em que.*ext* é a extensão de arquivo. Se essa chave existir, o **filtro de origem** de valor conterá o CLSID do filtro de origem, em forma de cadeia de caracteres. Opcionalmente, a chave pode ter valores para **tipo de mídia** e **subtipo**, que fornecem os GUIDs de tipo e subtipo principais.
+se não houver nenhum protocolo no nome do arquivo, o filtro Graph Manager procurará entradas com as **\_ \_ \\ \\ extensões \\ da chave HKEY CLASSES do tipo de mídia raiz**.*ext* \\ , em que.*ext* é a extensão de arquivo. Se essa chave existir, o **filtro de origem** de valor conterá o CLSID do filtro de origem, em forma de cadeia de caracteres. Opcionalmente, a chave pode ter valores para **tipo de mídia** e **subtipo**, que fornecem os GUIDs de tipo e subtipo principais.
 
 ## <a name="check-bytes"></a>Verificar bytes
 
-Alguns tipos de arquivo podem ser identificados por padrões específicos de bits que ocorrem em deslocamentos de byte específicos no arquivo. O Gerenciador de gráfico de filtro procura as chaves no registro com o seguinte formato:
+Alguns tipos de arquivo podem ser identificados por padrões específicos de bits que ocorrem em deslocamentos de byte específicos no arquivo. o filtro Graph Manager procura as chaves no registro com o seguinte formato:
 
 **HKEY \_ \_ \\ MediaType \\ raiz de classes**{ *tipo principal* } \\ { *subtipo* }
 
@@ -74,7 +74,7 @@ onde o *tipo principal* e *SUBtipo* são GUIDs que definem o tipo de mídia para
 
 *offset*, *CB*, *máscara*, *Val*
 
-Para corresponder ao arquivo, o Gerenciador do grafo de filtro lê os bytes de CB, a partir do deslocamento de número de byte. Em seguida, ele executa uma e-bit em relação ao valor em Mask. Se o resultado for igual a Val, o arquivo será uma correspondência para esse Quad. Os valores Mask e Val são fornecidos em Hex. Uma entrada em branco para Mask é tratada como uma cadeia de 1s de comprimento de CB. Um valor negativo para deslocamento indica um deslocamento do final do arquivo. Para corresponder à chave, o arquivo deve corresponder a todos os quatro quádruplos em qualquer uma das subchaves.
+para corresponder ao arquivo, o filtro Graph Manager lê os bytes de cb, começando do deslocamento de número de byte. Em seguida, ele executa uma e-bit em relação ao valor em Mask. Se o resultado for igual a Val, o arquivo será uma correspondência para esse Quad. Os valores Mask e Val são fornecidos em Hex. Uma entrada em branco para Mask é tratada como uma cadeia de 1s de comprimento de CB. Um valor negativo para deslocamento indica um deslocamento do final do arquivo. Para corresponder à chave, o arquivo deve corresponder a todos os quatro quádruplos em qualquer uma das subchaves.
 
 Por exemplo, suponha que o registro contenha as seguintes chaves em **\\ tipo de mídia de HKCR**:
 
@@ -109,19 +109,19 @@ Além disso, pode haver várias entradas listadas em um único tipo de mídia. U
 
 ## <a name="loading-the-source-filter"></a>Carregando o filtro de origem
 
-Supondo que o Gerenciador do grafo de filtro Localize um filtro de origem correspondente para o arquivo, ele adiciona esse filtro ao grafo, consulta o filtro para a interface [**IFileSourceFilter**](/windows/desktop/api/Strmif/nn-strmif-ifilesourcefilter) e chama [**IFileSourceFilter:: Load**](/windows/desktop/api/Strmif/nf-strmif-ifilesourcefilter-load). Os argumentos para o método **Load** são o nome do arquivo e o tipo de mídia, conforme determinado no registro.
+supondo que o filtro Graph Manager localize um filtro de origem correspondente para o arquivo, ele adiciona esse filtro ao grafo, consulta o filtro para a interface [**IFileSourceFilter**](/windows/desktop/api/Strmif/nn-strmif-ifilesourcefilter) e chama [**IFileSourceFilter:: Load**](/windows/desktop/api/Strmif/nf-strmif-ifilesourcefilter-load). Os argumentos para o método **Load** são o nome do arquivo e o tipo de mídia, conforme determinado no registro.
 
-Se o Gerenciador do grafo de filtro não encontrar nada no registro, o padrão será usar o filtro de origem de arquivo assíncrono. Nesse caso, ele define o tipo de mídia para **\_ fluxo de MediaType**, **MEDIASUBTYPE \_ None**.
+se o filtro Graph gerenciador não conseguir localizar nada do registro, o padrão será usar o filtro de origem de arquivo assíncrono. Nesse caso, ele define o tipo de mídia para **\_ fluxo de MediaType**, **MEDIASUBTYPE \_ None**.
 
 ## <a name="custom-file-types-in-windows-media-player"></a>Tipos de arquivo personalizados no Windows Media Player
 
-O Windows Media Player usa um conjunto adicional de entradas de registro. Para obter mais informações, consulte [configurações de registro de extensão de nome de arquivo](../wmp/file-name-extension-registry-settings.md) no SDK do Windows Media Player.
+Windows Media Player usa um conjunto adicional de entradas do registro. para obter mais informações, consulte [registro de extensão de nome de arquivo Configurações](../wmp/file-name-extension-registry-settings.md) no SDK do Windows Media Player.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Gravando filtros do DirectShow](writing-directshow-filters.md)
+[gravando filtros de DirectShow](writing-directshow-filters.md)
 </dt> </dl>
 
  

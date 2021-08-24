@@ -4,12 +4,12 @@ description: Deslocar para a esquerda. | ishl (SM5-ASM)
 ms.assetid: 3EE669BA-252D-4617-85B0-AEBB7F7E4C5E
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 230034e66ca9adfbd6c94cc99351b485c6577fdf
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: d6908d12824c5aa84e04db38fb2462031bb2ae4a198700f98938456ecbd8619a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104298274"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119854206"
 ---
 # <a name="ishl-sm5---asm"></a>ishl (sm5 – asm)
 
@@ -44,7 +44,7 @@ Essa instrução se aplica aos seguintes estágios de sombreador:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 

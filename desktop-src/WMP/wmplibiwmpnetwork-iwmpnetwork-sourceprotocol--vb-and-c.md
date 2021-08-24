@@ -1,11 +1,11 @@
 ---
 title: Propriedade IWMPNetwork sourceProtocol
-description: A propriedade sourceProtocol Obtém o protocolo de origem usado para receber dados.
+description: A propriedade sourceProtocol obtém o protocolo de origem usado para receber dados.
 ms.assetid: db1d7651-3f25-4ac9-a3e1-dc3a8ddf8c40
 keywords:
-- Propriedade sourceProtocol Windows Media Player
-- Propriedade sourceProtocol Windows Media Player, interface IWMPNetwork
-- Interface IWMPNetwork Windows Media Player, Propriedade sourceProtocol
+- propriedade sourceProtocol Windows Media Player
+- propriedade sourceProtocol Windows Media Player , interface IWMPNetwork
+- Interface IWMPNetwork Windows Media Player , propriedade sourceProtocol
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a5017e1a053c124a1f7f50668c6f392eb541d57f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 737bc0a5a4417735c795fc1058a7b821ee52489cf838be9eb934546f0fabacc9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105798403"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119760846"
 ---
-# <a name="iwmpnetworksourceprotocol-property"></a>Propriedade IWMPNetwork:: sourceProtocol
+# <a name="iwmpnetworksourceprotocol-property"></a>Propriedade IWMPNetwork::sourceProtocol
 
-A propriedade **sourceProtocol** Obtém o protocolo de origem usado para receber dados.
+A **propriedade sourceProtocol** obtém o protocolo de origem usado para receber dados.
 
 ## <a name="syntax"></a>Syntax
 
@@ -46,15 +46,15 @@ Public ReadOnly Property sourceProtocol As System.String
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Um **System. String** que é o nome do protocolo de origem.
+Um **System.String** que é o nome do protocolo de origem.
 
 ## <a name="remarks"></a>Comentários
 
-Essa propriedade Obtém uma cadeia de caracteres de comprimento zero ("") ao reproduzir um CD ou DVD.
+Essa propriedade obtém uma cadeia de caracteres de comprimento zero ("") ao tocar um CD ou DVD.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de código a seguir usa **sourceProtocol** para exibir o protocolo de origem usado para receber dados. As informações são exibidas em um rótulo, em resposta ao evento **PlayStateChange** . O objeto **AxWMPLib. AxWindowsMediaPlayer** é representado pela variável chamada Player.
+O exemplo de código a seguir **usa sourceProtocol** para exibir o protocolo de origem usado para receber dados. As informações são exibidas em um rótulo, em resposta ao **Evento PlayStateChange.** O **objeto AxWMPLib.AxWindowsMediaPlayer** é representado pela variável chamada player.
 
 
 ```CSharp
@@ -100,7 +100,7 @@ End Sub
 
 | Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/>   | Windows Media Player 9 Series ou posterior<br/>                                                                      |
+| Versão<br/>   | Windows Media Player série 9 ou posterior<br/>                                                                      |
 | Namespace<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

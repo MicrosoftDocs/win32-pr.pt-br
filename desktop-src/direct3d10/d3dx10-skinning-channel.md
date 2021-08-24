@@ -1,7 +1,7 @@
 ---
-description: O membro da decl de vértice para fazer a subaparência do software. Isso é usado com a API ID3DX10SkinInfo::D oSoftwareSkinning.
+description: O membro da decl de vértice para fazer a criação de software. Isso é usado com a API ID3DX10SkinInfo::D oSoftwareSkinning.
 ms.assetid: 67c817cd-ce78-4e8b-bdc3-7c4d6670dee1
-title: Estrutura de D3DX10_SKINNING_CHANNEL (D3DX10. h)
+title: D3DX10_SKINNING_CHANNEL (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10.h
-ms.openlocfilehash: 79f5807dc2539d770d3caa41bddf7aa4960ce682
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: b8e976ba1aecdeb792ba45fc4f60f25e7feb5a7dde3f7fc845a22962e441bf2b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104173062"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119753526"
 ---
-# <a name="d3dx10_skinning_channel-structure"></a>Estrutura de canal de D3DX10 de \_ aparência \_
+# <a name="d3dx10_skinning_channel-structure"></a>Estrutura D3DX10 \_ CANAL DE PARTIDA \_
 
-O membro da decl de vértice para fazer a subaparência do software. Isso é usado com a API [**ID3DX10SkinInfo::D osoftwareskinning**](id3dx10skininfo-dosoftwareskinning.md) .
+O membro da decl de vértice para fazer a criação de software. Isso é usado com a API [**ID3DX10SkinInfo::D oSoftwareSkinning.**](id3dx10skininfo-dosoftwareskinning.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,10 +41,10 @@ typedef struct D3DX10_SKINNING_CHANNEL {
 
 <dl> <dt>
 
-**SrcOffset**
+**Srcoffset**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -55,7 +55,7 @@ Deslocamento do início de cada vértice de origem.
 **DestOffset**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -66,11 +66,11 @@ Deslocamento do início de cada vértice de destino.
 **IsNormal**
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Determina qual matriz de matrizes usar na API [**ID3DX10SkinInfo::D osoftwareskinning**](id3dx10skininfo-dosoftwareskinning.md) . Se for true, o *pInverseTransposeBoneMatrices* será usado; caso contrário, *pBoneMatrices* será usado.
+Determina qual matriz de matrizes usar na API [**ID3DX10SkinInfo::D oSoftwareSkinning.**](id3dx10skininfo-dosoftwareskinning.md) Se isso for verdadeiro, *o pInverseTransposeBoneMatrices* será usado, caso *contrário, pBoneMatrices* será usado.
 
 </dd> </dl>
 
@@ -80,7 +80,7 @@ Determina qual matriz de matrizes usar na API [**ID3DX10SkinInfo::D osoftwareski
 
 | Requisito | Valor |
 |-------------------|-------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3DX10. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3DX10.h</dt> </dl> |
 
 
 

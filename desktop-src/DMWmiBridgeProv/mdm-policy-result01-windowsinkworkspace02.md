@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_Policy_Result01_WindowsInkWorkspace02
-description: A \_ classe MDM Policy \_ Result01 \_ WindowsInkWorkspace02 representa as políticas de espaço de trabalho de tinta disponíveis.
+title: MDM_Policy_Result01_WindowsInkWorkspace02 classe
+description: A classe MDM \_ Policy \_ Result01 \_ WindowsInkWorkspace02 representa as políticas de workspace de tinta disponíveis.
 ms.assetid: a3bb85e5-554f-4f41-8e65-e221f8adc947
 keywords:
-- Classe MDM_Policy_Result01_WindowsInkWorkspace02
-- Classe MDM_Policy_Result01_WindowsInkWorkspace02, descrita
+- MDM_Policy_Result01_WindowsInkWorkspace02 classe
+- MDM_Policy_Result01_WindowsInkWorkspace02, descrita
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d64100ec0566b7cd996840d012d018b8dbc75aa
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 24a07a4a648ec95258f51fde2bdf61946444ed824938d64015f5ffe25c97d585
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824186"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119833816"
 ---
-# <a name="mdm_policy_result01_windowsinkworkspace02-class"></a>\_Classe MDM \_ Result01 \_ WindowsInkWorkspace02
+# <a name="mdm_policy_result01_windowsinkworkspace02-class"></a>Classe MDM \_ Policy \_ Result01 \_ WindowsInkWorkspace02
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto pré-lançado, que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-A classe [**MDM \_ Policy \_ Result01 \_ WindowsInkWorkspace02**](mdm-policy-config01-windowsinkworkspace02.md) representa as políticas de espaço de trabalho de tinta disponíveis.
+A [**classe MDM \_ Policy \_ Result01 \_ WindowsInkWorkspace02**](mdm-policy-config01-windowsinkworkspace02.md) representa as políticas de workspace de tinta disponíveis.
 
 A sintaxe a seguir é simplificada do código MOF e inclui todas as propriedades herdadas.
 
@@ -47,13 +47,13 @@ class MDM_Policy_Result01_WindowsInkWorkspace02
 
 ## <a name="members"></a>Membros
 
-A **classe \_ \_ Result01 \_ WindowsInkWorkspace02 da política MDM** tem estes tipos de membros:
+A **classe MDM \_ Policy \_ Result01 \_ WindowsInkWorkspace02** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A **classe \_ \_ Result01 \_ WindowsInkWorkspace02 da política MDM** tem essas propriedades.
+A **classe MDM \_ Policy \_ Result01 \_ WindowsInkWorkspace02** tem essas propriedades.
 
 <dl> <dt>
 
@@ -63,7 +63,7 @@ A **classe \_ \_ Result01 \_ WindowsInkWorkspace02 da política MDM** tem essas 
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -74,7 +74,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -95,7 +95,7 @@ Identifica o nome do nó pai. Para essa classe, a cadeia de caracteres é "Windo
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -117,11 +117,11 @@ Descreve o caminho completo para o nó pai. Para essa classe, a cadeia de caract
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                          |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                          |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                            |
-| Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl>       |
-| DLL<br/>                      | <dl> <dt>\\DMWmiBridgeProv.dllMOFs</dt> </dl> |
+| Namespace<br/>                | \\Cimv2 \\ mdm \\ dmmap raiz<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl>       |
+| DLL<br/>                      | <dl> <dt>Mofs \\DMWmiBridgeProv.dll</dt> </dl> |
 
 
 

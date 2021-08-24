@@ -1,11 +1,11 @@
 ---
-title: atributo ms-Exch-Assistant-Name
-description: Contém o nome do assistente para uma conta.
+title: Atributo ms-Exch-Assistant-Name
+description: Contém o nome do assistente de uma conta.
 ms.assetid: 8799d5de-2c73-41b3-b707-b6f8bf5edb6a
 ms.tgt_platform: multiple
 keywords:
-- atributo ms-Exch-Assistant-Name AD Schema
-- Esquema de AD do atributo msExchAssistantName
+- Atributo ms-Exch-Assistant-Name Esquema do AD
+- Esquema do AD do atributo msExchAssistantName
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5eb81eceaed3c22c70fc75ae39b7eccb113013f7
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e8638597e234100e6775618472788761af341bc1138c3fed613173038a26dbc9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103645443"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119763136"
 ---
-# <a name="ms-exch-assistant-name-attribute"></a>atributo ms-Exch-Assistant-Name
+# <a name="ms-exch-assistant-name-attribute"></a>Atributo ms-Exch-Assistant-Name
 
-Contém o nome do assistente para uma conta.
+Contém o nome do assistente de uma conta.
 
 
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | Ms-Exch-Assistant-Name                      |
-| LDAP-Display-Name | msExchAssistantName                         |
+| CN                | ms-Exch-Assistant-Name                      |
+| Ldap-Display-Name | msExchAssistantName                         |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.2.444                      |
-| System-ID-GUID    | a8df7394-c5ea-11d1-bbcb-0080c76670c0        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | a8df7394-c5ea-11d1-ctb-0080c76670c0        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -57,15 +57,15 @@ Contém o nome do assistente para uma conta.
 | ID do link                | \-                                                   |
 | MAPI-Id                | 0x896                                                |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| Tem valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
-| No catálogo global      | Falso                                                |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
+| No Catálogo Global      | Falso                                                |
+| Descritor de segurança NT | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 256                                                  |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000000                                           |
-| Classes usadas em        | [**Destinatário de email**](c-mailrecipient.md)<br/> |
+| Classes usadas em        | [**Destinatário do email**](c-mailrecipient.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Contém o nome do assistente para uma conta.
 | ID do link                | \-                                                   |
 | MAPI-Id                | 0x896                                                |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| Tem valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
-| No catálogo global      | Falso                                                |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
+| No Catálogo Global      | Falso                                                |
+| Descritor de segurança NT | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 256                                                  |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000000                                           |
-| Classes usadas em        | [**Destinatário de email**](c-mailrecipient.md)<br/> |
+| Classes usadas em        | [**Destinatário do email**](c-mailrecipient.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Contém o nome do assistente para uma conta.
 | ID do link                | \-                                                   |
 | MAPI-Id                | 0x896                                                |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| Tem valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
-| No catálogo global      | Falso                                                |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
+| No Catálogo Global      | Falso                                                |
+| Descritor de segurança NT | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 256                                                  |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000000                                           |
-| Classes usadas em        | [**Destinatário de email**](c-mailrecipient.md)<br/> |
+| Classes usadas em        | [**Destinatário do email**](c-mailrecipient.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Contém o nome do assistente para uma conta.
 | ID do link                | \-                                                   |
 | MAPI-Id                | 0x896                                                |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| Tem valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
-| No catálogo global      | Falso                                                |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
+| No Catálogo Global      | Falso                                                |
+| Descritor de segurança NT | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 256                                                  |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000000                                           |
-| Classes usadas em        | [**Destinatário de email**](c-mailrecipient.md)<br/> |
+| Classes usadas em        | [**Destinatário do email**](c-mailrecipient.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Contém o nome do assistente para uma conta.
 | ID do link                | \-                                                   |
 | MAPI-Id                | 0x896                                                |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| Tem valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
-| No catálogo global      | Falso                                                |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
+| No Catálogo Global      | Falso                                                |
+| Descritor de segurança NT | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 256                                                  |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000000                                           |
-| Classes usadas em        | [**Destinatário de email**](c-mailrecipient.md)<br/> |
+| Classes usadas em        | [**Destinatário do email**](c-mailrecipient.md)<br/> |
 
 
 

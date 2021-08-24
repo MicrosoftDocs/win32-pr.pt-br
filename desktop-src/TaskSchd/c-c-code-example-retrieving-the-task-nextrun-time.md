@@ -7,12 +7,12 @@ keywords:
 - Recuperando propriedades do item de trabalho Agendador de Tarefas, hora da próxima execução da tarefa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d57341db57debb0270668c1236e5b353c7f703a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0472f867aea83457bbb4cb77a5a092b8c302f793b0df052e4addb0422adedb5d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104364102"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119738496"
 ---
 # <a name="cc-code-example-retrieving-the-task-nextrun-time"></a>Exemplo de código C/C++: Recuperando o tempo de NextRun da tarefa
 
@@ -123,9 +123,9 @@ int main(int argc, char **argv)
 [Exemplos de Agendador de Tarefas 1,0](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

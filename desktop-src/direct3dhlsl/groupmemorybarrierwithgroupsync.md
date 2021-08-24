@@ -1,9 +1,9 @@
 ---
-title: Função GroupMemoryBarrierWithGroupSync
-description: Bloqueia a execução de todos os threads em um grupo até que todos os acessos compartilhados do grupo tenham sido concluídos e todos os threads do grupo tenham chegado a essa chamada.
+title: Função GroupMemoryBaoryWithGroupSync
+description: Bloqueia a execução de todos os threads em um grupo até que todos os acessos compartilhados de grupo tenham sido concluídos e todos os threads no grupo tenham atingido essa chamada.
 ms.assetid: 64dd78e1-c597-4bd0-8a9b-592123178de5
 keywords:
-- HLSL da função GroupMemoryBarrierWithGroupSync
+- Função GroupMemoryBaoryWithGroupSync HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 07798bb8ad6bd9c4cdfa14bfa57d97818dbd6962
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: bbcfdea451c0cb7ad2b84297c422fa6865b1f45d757612a7b5d220a8829a99b3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104967059"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119854446"
 ---
-# <a name="groupmemorybarrierwithgroupsync-function"></a>Função GroupMemoryBarrierWithGroupSync
+# <a name="groupmemorybarrierwithgroupsync-function"></a>Função GroupMemoryBaoryWithGroupSync
 
-Bloqueia a execução de todos os threads em um grupo até que todos os acessos compartilhados do grupo tenham sido concluídos e todos os threads do grupo tenham chegado a essa chamada.
+Bloqueia a execução de todos os threads em um grupo até que todos os acessos compartilhados de grupo tenham sido concluídos e todos os threads no grupo tenham atingido essa chamada.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -34,37 +34,37 @@ void GroupMemoryBarrierWithGroupSync(void);
 
 Essa função não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa função não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-### <a name="minimum-shader-model"></a>Modelo de sombreamento mínimo
+### <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
 
-Essa função tem suporte nos seguintes modelos de sombreador.
+Essa função tem suporte nos modelos de sombreador a seguir.
 
 
 
 | Modelo de Sombreador                                                                | Com suporte |
 |-----------------------------------------------------------------------------|-----------|
-| [Modelo](d3d11-graphics-reference-sm5.md) de sombreador 5 e modelos de sombreador mais altos | sim       |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md) e modelos de sombreador superior | sim       |
 
 
 
- 
+ 
 
 Essa função tem suporte nos seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          |       | x       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Confira também
 
@@ -76,9 +76,9 @@ Essa função tem suporte nos seguintes tipos de sombreadores:
 [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

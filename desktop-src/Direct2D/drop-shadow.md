@@ -6,19 +6,19 @@ keywords:
 - efeito de sombra
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c42fd8755078dd79f2b01b623b1839785beb3c3e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e5d88924140caac22b688a0ccb6948ee74312411c770bff99360847ef2cd1b4c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104294766"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119833036"
 ---
 # <a name="shadow-effect"></a>Efeito de sombra
 
-Use o efeito de sombra para gerar uma sombra do canal alfa de uma imagem. A sombra é mais opaca para valores Alfa mais altos e mais transparente para valores Alfa inferiores. Você pode definir a quantidade de desfoque e a cor da sombra.
+Use o efeito de sombra para gerar uma sombra do canal alfa de uma imagem. A sombra é mais opaca para valores alfa mais altos e mais transparente para valores alfa inferiores. Você pode definir a quantidade de desfoque e a cor da sombra.
 
 -   [Imagem de exemplo](#example-image)
--   [Propriedades do efeito](#effect-properties)
+-   [Propriedades de efeito](#effect-properties)
 -   [Modos de otimização](#optimization-modes)
 -   [Bitmap de saída](#output-bitmap)
 -   [Requirements](#requirements)
@@ -28,14 +28,14 @@ O CLSID para esse efeito é CLSID \_ D2D1Shadow.
 
 ## <a name="example-image"></a>Imagem de exemplo
 
-O exemplo aqui mostra a saída do efeito de sombra traduzida para baixo e para a direita com a imagem de origem composta por ela no local original. O efeito de sombra só gera a sombra.
+O exemplo aqui mostra a saída do efeito de sombra traduzida para baixo e para a direita com a imagem de origem composta sobre ela no local original. O efeito de sombra só saída a sombra.
 
 
 
 | Antes                                                  |
 |---------------------------------------------------------|
 | ![a imagem antes do efeito.](images/8-crop.png)      |
-| After (após)                                                   |
+| Depois                                                   |
 | ![a imagem após a transformação.](images/25-shadow.png) |
 
 
@@ -78,15 +78,15 @@ m_d2dContext->EndDraw();
 
 
 
-## <a name="effect-properties"></a>Propriedades do efeito
+## <a name="effect-properties"></a>Propriedades de efeito
 
 
 
 | Nome de exibição e enumeração de índice                                                        | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |-------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| BlurStandardDeviation<br/> \_ \_ \_ Desvio padrão de desfoque da d2d1 Shadow prop \_ \_<br/> | A quantidade de desfoque a ser aplicada ao canal alfa da imagem. Você pode calcular o raio de desfoque do kernel multiplicando o desvio padrão por 3. As unidades do desvio padrão e do raio de desfoque são DIPs.<br/> Essa propriedade é igual à propriedade de desvio padrão de [Desfoque Gaussiano](gaussian-blur.md) . <br/> O tipo é FLOAT.<br/> O valor padrão é 3.0 f.<br/> |
-| Cor<br/> \_Cor de \_ prop d2d1 Shadow \_<br/>                                     | A cor da sombra. Essa propriedade é um \_ vetor d2d1 \_ 4F definido como: (R, G, B, a). Você deve especificar essa cor em alfa linear.<br/> O tipo é \_ 4F de vetor d2d1 \_ .<br/> O valor padrão é {0,0 f, 0,0 f, 0,0 f, 1,0 f}.<br/>                                                                                                                                                                     |
-| Optimization<br/> \_Otimização da \_ prop d2d1 Shadow \_<br/>                       | O nível de otimização de desempenho.<br/> O tipo é \_ otimização de sombra d2d1 \_ .<br/> O valor padrão é D2D1 \_ de \_ otimização de sombra \_ .<br/>                                                                                                                                                                                                                                                   |
+| BlurStandardDeviation<br/> DESVIO PADRÃO DE DESFOQUE DE \_ \_ PROP DE SOMBRA \_ \_ \_ D2D1<br/> | A quantidade de desfoque a ser aplicada ao canal alfa da imagem. Você pode calcular o raio de desfoque do kernel multiplicando o desvio padrão por 3. As unidades do desvio padrão e do raio de desfoque são DIPs.<br/> Essa propriedade é a mesma que a propriedade [Desfoque Gaussiano](gaussian-blur.md) desvio padrão. <br/> O tipo é FLOAT.<br/> O valor padrão é 3.0f.<br/> |
+| Color<br/> COR DO PROP DE SOMBRA D2D1 \_ \_ \_<br/>                                     | A cor da sombra. Essa propriedade é um VECTOR 4F D2D1 \_ \_ definido como: (R, G, B, A). Você deve especificar essa cor em alfa reto.<br/> O tipo é D2D1 \_ VECTOR \_ 4F.<br/> O valor padrão é {0.0f, 0.0f, 0.0f, 1.0f}.<br/>                                                                                                                                                                     |
+| Optimization<br/> OTIMIZAÇÃO DE PROP SOMBRA D2D1 \_ \_ \_<br/>                       | O nível de otimização de desempenho.<br/> O tipo é D2D1 \_ SHADOW \_ OPTIMIZATION.<br/> O valor padrão é D2D1 \_ SHADOW \_ OPTIMIZATION \_ BALANCED.<br/>                                                                                                                                                                                                                                                   |
 
 
 
@@ -98,9 +98,9 @@ m_d2dContext->EndDraw();
 
 | Nome                                          | Descrição                                                                                                                           |
 |-----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| Velocidade de otimização do D2D1 \_ DIRECTIONALBLUR \_ \_    | Aplica otimizações internas, como o dimensionamento prévio em raios relativamente pequenos. Usa filtragem linear.                                  |
-| D2D1 \_ DIRECTIONALBLUR de \_ otimização \_ balanceada | Usa os mesmos limites de otimização que o modo de velocidade, mas usa filtragem triline.                                                    |
-| \_Qualidade de \_ otimização de DIRECTIONALBLUR d2d1 \_  | Usa apenas otimizações internas com raios grandes de desfoque, em que as aproximações são menos prováveis de serem visíveis. Usa a filtragem triline. |
+| VELOCIDADE DE OTIMIZAÇÃO D2D1 \_ DIRECTIONALBLUR \_ \_    | Aplica otimizações internas, como pré-dimensionamento em raios relativamente pequenos. Usa filtragem linear.                                  |
+| OTIMIZAÇÃO D2D1 \_ DIRECTIONALBLUR \_ \_ EQUILIBRADA | Usa os mesmos limites de otimização que o modo de velocidade, mas usa filtragem trilinear.                                                    |
+| QUALIDADE DA \_ OTIMIZAÇÃO D2D1 DIRECTIONALBLUR \_ \_  | Usa apenas otimizações internas com raios de desfoque grandes, em que as aproximações têm menor probabilidade de serem visíveis. Usa filtragem trilinear. |
 
 
 
@@ -110,11 +110,11 @@ m_d2dContext->EndDraw();
 
 O tamanho do bitmap de saída é o tamanho da saída de desfoque. A quantidade de crescimento do bitmap de saída em relação ao bitmap original pode ser calculada usando a seguinte equação:
 
-Crescimento do bitmap de saída (X e Y) = BlurStandardDeviation (pixels independentes do dispositivo (DIPs)) \* 6 \* (DPI do usuário)/96
+Crescimento de bitmap de saída (X e Y) = BlurStandardDeviation (DIPs (pixels independentes de dispositivo)) \* 6 \* (DPI do usuário)/96
 
-A saída aumenta igualmente em todas as direções, por exemplo, se o tamanho aumenta por 10 pixels em cada direção, o canto superior esquerdo do bitmap está localizado em (-5,-5) e o direito inferior estará em (105, 105), conforme mostrado no diagrama aqui.
+A saída aumenta igualmente em todas as direções, portanto, por exemplo, se o tamanho aumentar em 10 pixels em cada direção, o canto superior esquerdo do bitmap está localizado em (-5, -5) e o canto inferior direito será em (105, 105) conforme mostrado no diagrama aqui.
 
-![diagrama de crescimento do tamanho de saída do efeito de sombra.](images/drop-shadow-output-growth.png)
+![diagrama de crescimento do tamanho da saída do efeito sombra.](images/drop-shadow-output-growth.png)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -122,10 +122,10 @@ A saída aumenta igualmente em todas as direções, por exemplo, se o tamanho au
 
 | Requisito | Valor |
 |--------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho do Windows 7 \[ \| aplicativos da Windows Store\] |
-| Servidor mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho do Windows 7 \[ \| aplicativos da Windows Store\] |
-| parâmetro                   | d2d1effects. h                                                                      |
-| Biblioteca                  | d2d1. lib, dxguid. lib                                                               |
+| Cliente mínimo com suporte | Windows 8 e Atualização de Plataforma para Windows 7 aplicativos da área de trabalho \[ \| Windows Store\] |
+| Servidor mínimo com suporte | Windows 8 e Atualização de Plataforma para Windows 7 aplicativos da área de trabalho \[ \| Windows Store\] |
+| Cabeçalho                   | d2d1effects.h                                                                      |
+| Biblioteca                  | d2d1.lib, dxguid.lib                                                               |
 
 
 

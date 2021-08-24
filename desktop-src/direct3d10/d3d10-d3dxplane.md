@@ -1,7 +1,7 @@
 ---
-description: Estrutura D3DXPLANE (D3DX10Math. h) – descreve um plano.
+description: Estrutura D3DXPLANE (D3DX10Math.h) – descreve um plano.
 ms.assetid: c6da7343-a4f3-4cac-855b-14bd70c0d3c2
-title: Estrutura D3DXPLANE (D3DX10Math. h)
+title: Estrutura D3DXPLANE (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: 440246fb47a851f9f5339c72a484a2cb59e8f662
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ccdc8644f63bdb048f6caa97ef635165a11a4473f549214410558583c8f807c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108103324"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119754256"
 ---
-# <a name="d3dxplane-structure-d3dx10mathh"></a>Estrutura D3DXPLANE (D3DX10Math. h)
+# <a name="d3dxplane-structure-d3dx10mathh"></a>Estrutura D3DXPLANE (D3DX10Math.h)
 
 Descreve um plano.
 
@@ -42,53 +42,53 @@ typedef struct D3DXPLANE {
 
 <dl> <dt>
 
-**um**
+**Um**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-O coeficiente de recorte na equação do plano geral. Consulte Observações.
+O coeficiente do plano de recorte na equação geral do plano. Consulte Observações.
 
 </dd> <dt>
 
 **b**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-O coeficiente b do plano de recorte na equação do plano geral. Consulte Observações.
+O coeficiente b do plano de recorte na equação geral do plano. Consulte Observações.
 
 </dd> <dt>
 
 **c**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-O coeficiente de c do plano de recorte na equação do plano geral. Consulte Observações.
+O coeficiente c do plano de recorte na equação geral do plano. Consulte Observações.
 
 </dd> <dt>
 
 **d**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-O coeficiente d do plano de recorte na equação do plano geral. Consulte Observações.
+O coeficiente d do plano de recorte na equação geral do plano. Consulte Observações.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Os membros da estrutura **D3DXPLANE** assumem a forma da equação de plano geral. Eles se encaixam na equação do plano geral para que o AX + por + cz + DW = 0.
+Os membros da estrutura **D3DXPLANE** assumirão a forma da equação geral do plano. Eles se encaixam na equação geral do plano para que ax + por + cz + dw = 0.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -96,11 +96,11 @@ Os membros da estrutura **D3DXPLANE** assumem a forma da equação de plano gera
 
 | Requisito | Valor |
 |-------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3DX10Math. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3DX10Math.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

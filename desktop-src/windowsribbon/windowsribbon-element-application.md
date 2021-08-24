@@ -1,9 +1,9 @@
 ---
 title: Elemento Application
-description: Representa o elemento de nível superior na especificação de marcação do Windows Ribbon Framework.
+description: Representa o elemento de nível superior na especificação de marcação da estrutura Windows Faixa de Opções.
 ms.assetid: 05396d8b-fbd1-40bb-8d0f-8ac11506e7db
 keywords:
-- Faixa de das janelas do elemento de aplicativo
+- Elemento Application Windows Ribbon
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9b116879a918ca0437c7f2bdd201ef4ffd6d3c61
-ms.sourcegitcommit: 3d718d8f69d3f86eaecf94c5705d761c5a9ef4a1
+ms.openlocfilehash: 4055e271ecf3313596b73aa36a5cbea37250416d9b517fb4512b89fbc203293a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "103642953"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119810806"
 ---
 # <a name="application-element"></a>Elemento Application
 
-Representa o elemento de nível superior na especificação de marcação do Windows Ribbon Framework.
+Representa o elemento de nível superior na especificação de marcação da estrutura Windows Faixa de Opções.
 
 ## <a name="usage"></a>Uso
 
@@ -39,7 +39,7 @@ Representa o elemento de nível superior na especificação de marcação do Win
 
 | Atributo            | Type                 | Obrigatório       | Descrição                                                                                                                                                                                                       |
 |----------------------|----------------------|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **xmlns**<br/> | xs:string<br/> | Sim<br/> | <dt>`http://schemas.microsoft.com/windows/2009/Ribbon`<br/> </dt> <dd> O URI para a associação de namespace de marcação da faixa de faixas. <br/> </dd> </dl> |
+| **xmlns**<br/> | xs:string<br/> | Sim<br/> | <dt>`http://schemas.microsoft.com/windows/2009/Ribbon`<br/> </dt> <dd> O URI da associação de namespace de marcação da Faixa de Opções. <br/> </dd> </dl> |
 
 
 
@@ -49,8 +49,8 @@ Representa o elemento de nível superior na especificação de marcação do Win
 
 | Elemento                                                                               | Descrição                                    |
 |---------------------------------------------------------------------------------------|------------------------------------------------|
-| [**Application. Commands**](windowsribbon-element-application-commands.md)<br/> | Pode ocorrer no máximo uma vez<br/> <br/>  |
-| [**Application. views**](windowsribbon-element-application-views.md)<br/>       | Deve ocorrer exatamente uma vez<br/> <br/> |
+| [**Application.Commands**](windowsribbon-element-application-commands.md)<br/> | Pode ocorrer no máximo uma vez<br/> <br/>  |
+| [**Application.Views**](windowsribbon-element-application-views.md)<br/>       | Deve ocorrer exatamente uma vez<br/> <br/> |
 
 
 
@@ -62,16 +62,16 @@ Não há elementos pai.
 
 Obrigatórios.
 
-Deve ocorrer exatamente uma vez como o contêiner para toda a marcação da faixa de forma.
+Deve ocorrer exatamente uma vez como o contêiner para toda a marcação da Faixa de Opções.
 
-Os elementos filho do elemento **Application** devem ocorrer na ordem especificada:
+Os elementos filho do **elemento Application** devem ocorrer na ordem especificada:
 
-1.  [**Application. Commands**](windowsribbon-element-application-commands.md)
-2.  [**Application. views**](windowsribbon-element-application-views.md)
+1.  [**Application.Commands**](windowsribbon-element-application-commands.md)
+2.  [**Application.Views**](windowsribbon-element-application-views.md)
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir mostra uma declaração de elemento de **aplicativo** .
+O exemplo a seguir mostra uma **declaração de elemento** Application.
 
 
 ```XML
@@ -97,7 +97,7 @@ O exemplo a seguir mostra uma declaração de elemento de **aplicativo** .
 
 <dl> <dt>
 
-[Declarando comandos e controles com marcação de faixa de medida](windowsribbon-schema.md)
+[Declarando comandos e controles com marcação de faixa de opções](windowsribbon-schema.md)
 </dt> </dl>
 
  

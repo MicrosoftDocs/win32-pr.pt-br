@@ -4,12 +4,12 @@ ms.assetid: 7e153051-a167-4ff7-8178-b290d8a1345e
 title: Atributo MFT_ENUM_HARDWARE_URL_Attribute (Mftransform. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 539aa1ecbf8bf322e7397a50bb16175dbcca806f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7119ea4bde7900087f706cb6fbc77c845721debab54dfa05b48f5c0094b1e29e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104165294"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119722575"
 ---
 # <a name="mft_enum_hardware_url_attribute-attribute"></a>\_Atributo de \_ atributo de URL de hardware de enumeração de \_ MFT \_
 
@@ -17,11 +17,11 @@ Contém o link simbólico para uma transformação de Media Foundation baseada e
 
 ## <a name="data-type"></a>Tipo de dados
 
-**WCHAR \** _
+**WCHAR\***
 
 ## <a name="getset"></a>Obter/definir
 
-Para obter esse atributo, chame [_ *IMFAttributes:: GetString* *](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getstring).
+Para obter esse atributo, chame [**IMFAttributes:: GetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getstring).
 
 Para definir esse atributo, chame [**IMFAttributes:: SetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setstring).
 
@@ -41,9 +41,9 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 7 \| UWP\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Aplicativos UWP para aplicativos da área de trabalho do Windows Server 2008 R2 \|\]<br/>                           |
-| parâmetro<br/>                   | <dl> <dt>Mftransform. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[aplicativos UWP para aplicativos de área de trabalho Windows 7 \|\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Aplicativos de aplicativos de área de trabalho do servidor 2008 R2 \[ \| UWP\]<br/>                           |
+| Cabeçalho<br/>                   | <dl> <dt>Mftransform. h</dt> </dl> |
 
 
 

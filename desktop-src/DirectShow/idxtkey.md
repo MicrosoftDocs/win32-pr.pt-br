@@ -1,7 +1,7 @@
 ---
-description: A interface IDxtKey define propriedades na transição de chave. Essa interface é usada internamente pelos serviços de edição do DirectShow (DES) quando ele renderiza a transição de chave.
+description: A interface IDxtKey define propriedades na transição de chave. Essa interface é usada internamente DirectShow DES (Serviços de Edição) ao renderizar a transição de chave.
 ms.assetid: b929bf0c-8aaf-456e-b692-e23d88e480dd
-title: Interface IDxtKey (QEdit. h)
+title: Interface IDxtKey (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: f4f1bc6a5dd0e89789e098fc4180bfc826f10c93
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d967d15dededf879ffd08671aac00e7892aa8ad2f2c1a39ce478f7f9f3e4db90
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105779526"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119792356"
 ---
 # <a name="idxtkey-interface"></a>Interface IDxtKey
 
@@ -28,36 +28,36 @@ ms.locfileid: "105779526"
 
  
 
-A `IDxtKey` interface define propriedades na transição de [chave](key-transition.md) .
+A `IDxtKey` interface define propriedades na transição [de](key-transition.md) chave.
 
-Essa interface é usada internamente pelos serviços de edição do DirectShow (DES) quando ele renderiza a transição de chave. Os aplicativos DES não precisam usar essa interface. Para definir as propriedades em uma transição em DES, use a interface [**IPropertySetter**](ipropertysetter.md) .
+Essa interface é usada internamente DirectShow DES (Serviços de Edição) ao renderizar a transição de chave. Os aplicativos DES não precisam usar essa interface. Para definir as propriedades em uma transição no DES, use a interface [**IPropertySetter.**](ipropertysetter.md)
 
 ## <a name="members"></a>Membros
 
-A interface **IDxtKey** herda de **IDXEffect**. **IDxtKey** também tem estes tipos de membros:
+A **interface IDxtKey** herda de **IDXEffect.** **IDxtKey** também tem estes tipos de membros:
 
 -   [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-A interface **IDxtKey** tem esses métodos.
+A **interface IDxtKey** tem esses métodos.
 
 
 
 | Método                                            | Descrição                                                                            |
 |:--------------------------------------------------|:---------------------------------------------------------------------------------------|
-| [**obter \_ matiz**](idxtkey-get-hue.md)               | Recupera o valor de matiz para o qual fazer a chave.<br/>                                    |
-| [**obter \_ inverter**](idxtkey-get-invert.md)         | Recupera um valor booliano que indica se a operação de chave está invertida.<br/> |
+| [**obter \_ Hue**](idxtkey-get-hue.md)               | Recupera o valor de matiz no qual a tecla deve ser chave.<br/>                                    |
+| [**get \_ Invert**](idxtkey-get-invert.md)         | Recupera um valor booliana que indica se a operação de chave é invertida.<br/> |
 | [**obter \_ KeyType**](idxtkey-get-keytype.md)       | Recupera o tipo de chave.<br/>                                                  |
-| [**obter \_ luminância**](idxtkey-get-luminance.md)   | Recupera o valor de luminância no qual a chave deve ser Key.<br/>                              |
-| [**obter \_ RGB**](idxtkey-get-rgb.md)               | Recupera a cor RGB para a chave.<br/>                                    |
-| [**obter \_ similaridade**](idxtkey-get-similarity.md) | Recupera o intervalo de dados de cor que se torna transparente.<br/>                 |
-| [**colocar \_ matiz**](idxtkey-put-hue.md)               | Especifica o valor de matiz a ser chaveada.<br/>                                    |
-| [**colocar \_ inverter**](idxtkey-put-invert.md)         | Especifica se a operação de chave está invertida.<br/>                            |
-| [**colocar \_ KeyType**](idxtkey-put-keytype.md)       | Especifica o tipo de chave.<br/>                                                  |
-| [**colocar \_ luminância**](idxtkey-put-luminance.md)   | Especifica o valor de luminância para a chave.<br/>                              |
-| [**colocar \_ RGB**](idxtkey-put-rgb.md)               | Especifica a cor RGB para a chave.<br/>                                    |
-| [**colocar \_ similaridade**](idxtkey-put-similarity.md) | Especifica o intervalo de dados de cor que se torna transparente.<br/>                 |
+| [**obter \_ Luminance**](idxtkey-get-luminance.md)   | Recupera o valor de luminância no qual a chave deve ser obtida.<br/>                              |
+| [**obter \_ RGB**](idxtkey-get-rgb.md)               | Recupera a cor RGB na qual a tecla deve ser chave.<br/>                                    |
+| [**obter \_ similaridade**](idxtkey-get-similarity.md) | Recupera o intervalo de dados de cores que se torna transparente.<br/>                 |
+| [**put \_ Hue**](idxtkey-put-hue.md)               | Especifica o valor de matiz no qual a tecla deve ser chave.<br/>                                    |
+| [**put \_ Invert**](idxtkey-put-invert.md)         | Especifica se a operação de chave é invertida.<br/>                            |
+| [**put \_ KeyType**](idxtkey-put-keytype.md)       | Especifica o tipo de chave.<br/>                                                  |
+| [**put \_ Luminance**](idxtkey-put-luminance.md)   | Especifica o valor de luminância no qual a chave deve ser chave.<br/>                              |
+| [**put \_ RGB**](idxtkey-put-rgb.md)               | Especifica a cor RGB na qual a tecla deve ser chave.<br/>                                    |
+| [**put \_ Similarity**](idxtkey-put-similarity.md) | Especifica o intervalo de dados de cores que se torna transparente.<br/>                 |
 
 
 
@@ -66,12 +66,12 @@ A interface **IDxtKey** tem esses métodos.
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> O arquivo de cabeçalho QEdit. h não é compatível com cabeçalhos do Direct3D posteriores à versão 7.
+> O arquivo de título Qedit.h não é compatível com os headers direct3D posteriores à versão 7.
 
  
 
 > [!Note]  
-> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Para obter o Qedit.h, baixe [o Microsoft Windows SDK Update para Windows Vista e .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O Qedit.h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -81,8 +81,8 @@ A interface **IDxtKey** tem esses métodos.
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>QEdit. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

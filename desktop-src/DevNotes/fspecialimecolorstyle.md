@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Imeshare.dll
-ms.openlocfilehash: af6edf14f4c2167a4609cd8cbb671e85e297368d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7922f60d347a91b461031d1a56cc51b9630389e99fbef778a8f75007b17f1558
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751585"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119795166"
 ---
 # <a name="fspecialimecolorstyle-function"></a>Função FSpecialIMEColorStyle
 
@@ -46,7 +46,7 @@ Uma estrutura **IMECOLORSTY** retornada de uma função [**PColorStyleBackFromIM
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna **true** quando a cor é uma cor especial.
 

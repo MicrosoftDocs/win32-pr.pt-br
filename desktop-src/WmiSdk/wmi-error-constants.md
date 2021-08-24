@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Constantes de erro de WMI (WbemCli. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e95db7220bdc9669716dbe19f5bf2f4e139dfe5c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 679fd0cb9714e2ee202b12195b10e72778564d7549ed4731d905603a11e073db
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105791441"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119794306"
 ---
 # <a name="wmi-error-constants"></a>Constantes de erro WMI
 
@@ -22,7 +22,7 @@ Se ocorrer um erro, o WMI retornará um código de erro como um valor **HRESULT*
 >
 > Se o WMI retornar mensagens de erro, lembre-se de que eles podem não indicar problemas no serviço WMI ou em provedores WMI. As falhas podem se originar em outras partes do sistema operacional e surgir como erros por meio do WMI. Em qualquer circunstância, não exclua o repositório WMI como uma primeira ação, pois a exclusão do repositório pode causar danos ao sistema ou aos aplicativos instalados.
 >
-> Para obter mais informações sobre a origem do problema, você pode baixar e executar a ferramenta de linha de comando de diagnóstico [Utilitário de diagnóstico WMI](https://www.microsoft.com/downloads/en/details.aspx?familyid=d7ba3cd6-18d1-4d05-b11e-4c64192ae97d&displaylang=en) . Essa ferramenta produz um relatório que, em geral, pode isolar a origem do problema e fornecer instruções sobre como corrigi-lo. O relatório também ajuda os serviços de suporte da Microsoft para ajudá-lo. Você pode baixar o Utilitário de Diagnóstico WMI [aqui](https://www.microsoft.com/downloads/details.aspx?FamilyID=d7ba3cd6-18d1-4d05-b11e-4c64192ae97d).
+> para obter mais informações sobre a origem do problema, você pode baixar e executar a ferramenta de linha de comando de diagnóstico [Utilitário de Diagnóstico WMI](https://www.microsoft.com/downloads/en/details.aspx?familyid=d7ba3cd6-18d1-4d05-b11e-4c64192ae97d&displaylang=en) . Essa ferramenta produz um relatório que, em geral, pode isolar a origem do problema e fornecer instruções sobre como corrigi-lo. O relatório também ajuda os serviços de suporte da Microsoft para ajudá-lo. você pode baixar o Utilitário de Diagnóstico WMI [aqui](https://www.microsoft.com/downloads/details.aspx?FamilyID=d7ba3cd6-18d1-4d05-b11e-4c64192ae97d).
 
  
 
@@ -65,7 +65,7 @@ Erro originado de ADSI (Active Directory interfaces de serviço) ou LDAP (Lightw
 
 </dd> </dl>
 
-Alguns métodos em classes WMI podem retornar códigos de erro de sistema e rede (64, por exemplo). Você pode verificar a definição desses tipos de códigos de erro usando o comando **net helpmsg** na janela do prompt de comando. Por exemplo, o comando **net helpmsg 64** retorna a mensagem: o nome de rede especificado não está mais disponível. Em C++, você pode chamar [**FormatMessage**](/windows/desktop/api/winbase/nf-winbase-formatmessage) e especificar **C: \\ Windows \\ System32 \\ WBEM \\wmiutils.dll** como o módulo de mensagem.
+Alguns métodos em classes WMI podem retornar códigos de erro de sistema e rede (64, por exemplo). Você pode verificar a definição desses tipos de códigos de erro usando o comando **net helpmsg** na janela do prompt de comando. Por exemplo, o comando **net helpmsg 64** retorna a mensagem: o nome de rede especificado não está mais disponível. em C++, você pode chamar [**FormatMessage**](/windows/desktop/api/winbase/nf-winbase-formatmessage) e especificar **C: \\ Windows \\ System32 \\ wbem \\wmiutils.dll** como o módulo de mensagem.
 
 <dl> <dt>
 
@@ -696,7 +696,7 @@ Os parâmetros fornecidos para o método não são válidos.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_SYSTEM_PROPERTY"></span><span id="wbem_e_system_property"></span>**\_Propriedade do \_ sistema WBEM E \_**
+<span id="WBEM_E_SYSTEM_PROPERTY"></span><span id="wbem_e_system_property"></span>**PROPRIEDADE DO \_ SISTEMA WBEM E \_ \_**
 </dt> <dd> <dl> <dt>
 
 2147749936 (0x80041030)
@@ -709,7 +709,7 @@ Houve uma tentativa de obter qualificadores em uma propriedade do sistema.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_INVALID_PROPERTY"></span><span id="wbem_e_invalid_property"></span>**Propriedade de WBEM \_ E \_ inválida \_**
+<span id="WBEM_E_INVALID_PROPERTY"></span><span id="wbem_e_invalid_property"></span>**PROPRIEDADE INVÁLIDA WBEM \_ E \_ \_**
 </dt> <dd> <dl> <dt>
 
 2147749937 (0x80041031)
@@ -722,7 +722,7 @@ O tipo de propriedade não é reconhecido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_CALL_CANCELLED"></span><span id="wbem_e_call_cancelled"></span>**chamada de WBEM \_ E \_ \_ cancelada**
+<span id="WBEM_E_CALL_CANCELLED"></span><span id="wbem_e_call_cancelled"></span>**CHAMADA WBEM \_ E \_ \_ CANCELADA**
 </dt> <dd> <dl> <dt>
 
 2147749938 (0x80041032)
@@ -735,7 +735,7 @@ O processo assíncrono foi cancelado internamente ou pelo usuário. Observe que,
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_SHUTTING_DOWN"></span><span id="wbem_e_shutting_down"></span>**WBEM \_ E \_ desligando \_**
+<span id="WBEM_E_SHUTTING_DOWN"></span><span id="wbem_e_shutting_down"></span>**WBEM \_ E \_ \_ DESLIGANDO**
 </dt> <dd> <dl> <dt>
 
 2147749939 (0x80041033)
@@ -748,7 +748,7 @@ O usuário solicitou uma operação enquanto o WMI está em processo de desligam
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_PROPAGATED_METHOD"></span><span id="wbem_e_propagated_method"></span>**\_ \_ método propagado do WBEM E \_**
+<span id="WBEM_E_PROPAGATED_METHOD"></span><span id="wbem_e_propagated_method"></span>**MÉTODO \_ \_ \_ PROPAGADO WBEM E**
 </dt> <dd> <dl> <dt>
 
 2147749940 (0x80041034)
@@ -756,12 +756,12 @@ O usuário solicitou uma operação enquanto o WMI está em processo de desligam
 
 
 
-Foi feita uma tentativa de reutilizar um nome de método existente de uma classe pai e as assinaturas não coincidem.
+Foi feita uma tentativa de reutilizar um nome de método existente de uma classe pai e as assinaturas não corresponderem.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_UNSUPPORTED_PARAMETER"></span><span id="wbem_e_unsupported_parameter"></span>**parâmetro de WBEM \_ E \_ sem suporte \_**
+<span id="WBEM_E_UNSUPPORTED_PARAMETER"></span><span id="wbem_e_unsupported_parameter"></span>**PARÂMETRO WBEM \_ E \_ SEM \_ SUPORTE**
 </dt> <dd> <dl> <dt>
 
 2147749941 (0x80041035)
@@ -774,7 +774,7 @@ Um ou mais valores de parâmetro, como um texto de consulta, são muito complexo
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_MISSING_PARAMETER_ID"></span><span id="wbem_e_missing_parameter_id"></span>**\_ID de \_ \_ parâmetro ausente \_ do WBEM E**
+<span id="WBEM_E_MISSING_PARAMETER_ID"></span><span id="wbem_e_missing_parameter_id"></span>**ID DE PARÂMETRO AUSENTE DO WBEM \_ E \_ \_ \_**
 </dt> <dd> <dl> <dt>
 
 2147749942 (0x80041036)
@@ -782,12 +782,12 @@ Um ou mais valores de parâmetro, como um texto de consulta, são muito complexo
 
 
 
-O parâmetro estava ausente da chamada do método.
+O parâmetro estava ausente na chamada de método.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_INVALID_PARAMETER_ID"></span><span id="wbem_e_invalid_parameter_id"></span>**ID de parâmetro de WBEM \_ E \_ inválido \_ \_**
+<span id="WBEM_E_INVALID_PARAMETER_ID"></span><span id="wbem_e_invalid_parameter_id"></span>**ID DE PARÂMETRO INVÁLIDA DO WBEM \_ E \_ \_ \_**
 </dt> <dd> <dl> <dt>
 
 2147749943 (0x80041037)
@@ -795,12 +795,12 @@ O parâmetro estava ausente da chamada do método.
 
 
 
-O parâmetro do método tem um qualificador de [**ID**](standard-wmi-qualifiers.md) que não é válido.
+O parâmetro method tem [**um qualificador de ID**](standard-wmi-qualifiers.md) que não é válido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_NONCONSECUTIVE_PARAMETER_IDS"></span><span id="wbem_e_nonconsecutive_parameter_ids"></span>**\_IDs de parâmetro WBEM E não \_ consecutivo \_ \_**
+<span id="WBEM_E_NONCONSECUTIVE_PARAMETER_IDS"></span><span id="wbem_e_nonconsecutive_parameter_ids"></span>**IDS DE PARÂMETRO WBEM \_ E NÃOCONSECUTIVE \_ \_ \_**
 </dt> <dd> <dl> <dt>
 
 2147749944 (0x80041038)
@@ -808,12 +808,12 @@ O parâmetro do método tem um qualificador de [**ID**](standard-wmi-qualifiers.
 
 
 
-Um ou mais dos parâmetros de método têm qualificadores de [**ID**](standard-wmi-qualifiers.md) fora de sequência.
+Um ou mais dos parâmetros de método têm [**qualificadores de ID**](standard-wmi-qualifiers.md) que estão fora de sequência.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_PARAMETER_ID_ON_RETVAL"></span><span id="wbem_e_parameter_id_on_retval"></span>**\_ \_ ID do parâmetro WBEM E \_ \_ no \_ RETVAL**
+<span id="WBEM_E_PARAMETER_ID_ON_RETVAL"></span><span id="wbem_e_parameter_id_on_retval"></span>**ID DO PARÂMETRO WBEM \_ \_ E NO \_ \_ \_ RETVAL**
 </dt> <dd> <dl> <dt>
 
 2147749945 (0x80041039)
@@ -821,12 +821,12 @@ Um ou mais dos parâmetros de método têm qualificadores de [**ID**](standard-w
 
 
 
-O valor de retorno para um método tem um qualificador de [**ID**](standard-wmi-qualifiers.md) .
+O valor de retorno para um método tem [**um qualificador de ID.**](standard-wmi-qualifiers.md)
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_INVALID_OBJECT_PATH"></span><span id="wbem_e_invalid_object_path"></span>**caminho de objeto do WBEM \_ E \_ inválido \_ \_**
+<span id="WBEM_E_INVALID_OBJECT_PATH"></span><span id="wbem_e_invalid_object_path"></span>**WBEM \_ E CAMINHO DE OBJETO \_ \_ \_ INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 2147749946 (0x8004103A)
@@ -839,7 +839,7 @@ O caminho do objeto especificado não era válido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_OUT_OF_DISK_SPACE"></span><span id="wbem_e_out_of_disk_space"></span>**WBEM \_ E \_ sem \_ \_ \_ espaço em disco**
+<span id="WBEM_E_OUT_OF_DISK_SPACE"></span><span id="wbem_e_out_of_disk_space"></span>**WBEM \_ E FORA DO ESPAÇO EM \_ \_ \_ \_ DISCO**
 </dt> <dd> <dl> <dt>
 
 2147749947 (0x8004103B)
@@ -847,12 +847,12 @@ O caminho do objeto especificado não era válido.
 
 
 
-O disco está sem espaço ou o limite de 4 GB no repositório do WMI (repositório CIM) foi atingido.
+O disco está sem espaço ou o limite de 4 GB no tamanho do repositório WMI (repositório CIM) é atingido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_BUFFER_TOO_SMALL"></span><span id="wbem_e_buffer_too_small"></span>**o buffer do WBEM E o é \_ \_ \_ muito \_ pequeno**
+<span id="WBEM_E_BUFFER_TOO_SMALL"></span><span id="wbem_e_buffer_too_small"></span>**WBEM \_ E BUFFER MUITO \_ \_ \_ PEQUENO**
 </dt> <dd> <dl> <dt>
 
 2147749948 (0x8004103C)
@@ -860,12 +860,12 @@ O disco está sem espaço ou o limite de 4 GB no repositório do WMI (repositór
 
 
 
-O buffer fornecido era muito pequeno para conter todos os objetos no enumerador ou para ler uma propriedade de cadeia de caracteres.
+O buffer fornecido era muito pequeno para conter todos os objetos no enumerador ou ler uma propriedade de cadeia de caracteres.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_UNSUPPORTED_PUT_EXTENSION"></span><span id="wbem_e_unsupported_put_extension"></span>**\_extensão de \_ Put E sem \_ suporte \_ do WBEM**
+<span id="WBEM_E_UNSUPPORTED_PUT_EXTENSION"></span><span id="wbem_e_unsupported_put_extension"></span>**EXTENSÃO \_ PUT SEM \_ \_ \_ SUPORTE DO WBEM E**
 </dt> <dd> <dl> <dt>
 
 2147749949 (0x8004103D)
@@ -873,12 +873,12 @@ O buffer fornecido era muito pequeno para conter todos os objetos no enumerador 
 
 
 
-O provedor não oferece suporte à operação Put solicitada.
+O provedor não dá suporte à operação put solicitada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_UNKNOWN_OBJECT_TYPE"></span><span id="wbem_e_unknown_object_type"></span>**\_tipo de objeto WBEM E \_ desconhecido \_ \_**
+<span id="WBEM_E_UNKNOWN_OBJECT_TYPE"></span><span id="wbem_e_unknown_object_type"></span>**TIPO DE OBJETO DESCONHECIDO WBEM \_ E \_ \_ \_**
 </dt> <dd> <dl> <dt>
 
 2147749950 (0x8004103E)
@@ -891,7 +891,7 @@ O objeto com um tipo ou versão incorreto foi encontrado durante o marshaling.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_UNKNOWN_PACKET_TYPE"></span><span id="wbem_e_unknown_packet_type"></span>**\_tipo de pacote WBEM E \_ desconhecido \_ \_**
+<span id="WBEM_E_UNKNOWN_PACKET_TYPE"></span><span id="wbem_e_unknown_packet_type"></span>**TIPO DE PACOTE DESCONHECIDO WBEM \_ E \_ \_ \_**
 </dt> <dd> <dl> <dt>
 
 2147749951 (0x8004103F)
@@ -899,12 +899,12 @@ O objeto com um tipo ou versão incorreto foi encontrado durante o marshaling.
 
 
 
-Um pacote com tipo ou versão incorreta foi encontrado durante o marshaling.
+O pacote com um tipo ou versão incorreto foi encontrado durante o marshaling.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_MARSHAL_VERSION_MISMATCH"></span><span id="wbem_e_marshal_version_mismatch"></span>**incompatibilidade de versão do WBEM \_ E \_ Marshal \_ \_**
+<span id="WBEM_E_MARSHAL_VERSION_MISMATCH"></span><span id="wbem_e_marshal_version_mismatch"></span>**INCOMPATIBILIDADE DE VERSÃO DO WBEM \_ E \_ MARSHAL \_ \_**
 </dt> <dd> <dl> <dt>
 
 2147749952 (0x80041040)
@@ -917,7 +917,7 @@ O pacote tem uma versão sem suporte.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_MARSHAL_INVALID_SIGNATURE"></span><span id="wbem_e_marshal_invalid_signature"></span>**assinatura de WBEM \_ E \_ Marshal \_ inválido \_**
+<span id="WBEM_E_MARSHAL_INVALID_SIGNATURE"></span><span id="wbem_e_marshal_invalid_signature"></span>**ASSINATURA INVÁLIDA DO WBEM \_ E \_ MARSHAL \_ \_**
 </dt> <dd> <dl> <dt>
 
 2147749953 (0x80041041)
@@ -930,7 +930,7 @@ O pacote parece estar corrompido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_INVALID_QUALIFIER"></span><span id="wbem_e_invalid_qualifier"></span>**\_qualificador do WBEM E \_ inválido \_**
+<span id="WBEM_E_INVALID_QUALIFIER"></span><span id="wbem_e_invalid_qualifier"></span>**QUALIFICADOR INVÁLIDO DO WBEM \_ E \_ \_**
 </dt> <dd> <dl> <dt>
 
 2147749954 (0x80041042)
@@ -938,12 +938,12 @@ O pacote parece estar corrompido.
 
 
 
-Foi feita uma tentativa de qualificadores incompatíveis, como \[ colocar \] a chave em um objeto em vez de uma propriedade.
+Foi feita uma tentativa de incompatibilidade de qualificadores, como colocar \[ a chave em um objeto em vez de uma \] propriedade.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_INVALID_DUPLICATE_PARAMETER"></span><span id="wbem_e_invalid_duplicate_parameter"></span>**\_ \_ \_ parâmetro duplicado WBEM E inválido \_**
+<span id="WBEM_E_INVALID_DUPLICATE_PARAMETER"></span><span id="wbem_e_invalid_duplicate_parameter"></span>**WBEM \_ E PARÂMETRO \_ \_ DUPLICADO \_ INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 2147749955 (0x80041043)
@@ -951,12 +951,12 @@ Foi feita uma tentativa de qualificadores incompatíveis, como \[ colocar \] a c
 
 
 
-Parâmetro duplicado foi declarado em um método CIM.
+O parâmetro duplicado foi declarado em um método CIM.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_TOO_MUCH_DATA"></span><span id="wbem_e_too_much_data"></span>**WBEM \_ E \_ muito \_ \_ dados**
+<span id="WBEM_E_TOO_MUCH_DATA"></span><span id="wbem_e_too_much_data"></span>**WBEM \_ E \_ DADOS \_ DEMAIS \_**
 </dt> <dd> <dl> <dt>
 
 2147749956 (0x80041044)
@@ -969,7 +969,7 @@ Reservado para uso futuro.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_SERVER_TOO_BUSY"></span><span id="wbem_e_server_too_busy"></span>**WBEM \_ E \_ servidor \_ muito \_ ocupado**
+<span id="WBEM_E_SERVER_TOO_BUSY"></span><span id="wbem_e_server_too_busy"></span>**WBEM \_ E SERVER MUITO \_ \_ \_ OCUPADO**
 </dt> <dd> <dl> <dt>
 
 2147749957 (0x80041045)
@@ -977,12 +977,12 @@ Reservado para uso futuro.
 
 
 
-Falha na chamada para [**IWbemObjectSink:: indication**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjectsink-indicate) . O provedor pode acionar o evento novamente.
+A chamada [**para IWbemObjectSink::Indicate**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjectsink-indicate) falhou. O provedor pode refire o evento.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_INVALID_FLAVOR"></span><span id="wbem_e_invalid_flavor"></span>**tipo de WBEM \_ E \_ inválido \_**
+<span id="WBEM_E_INVALID_FLAVOR"></span><span id="wbem_e_invalid_flavor"></span>**WBEM \_ E \_ SABOR \_ INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 2147749958 (0x80041046)
@@ -990,12 +990,12 @@ Falha na chamada para [**IWbemObjectSink:: indication**](/windows/desktop/api/Wb
 
 
 
-O tipo qualificador especificado não era válido.
+O sabor do qualificador especificado não era válido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_CIRCULAR_REFERENCE"></span><span id="wbem_e_circular_reference"></span>**\_ \_ referência circular E de WBEM \_**
+<span id="WBEM_E_CIRCULAR_REFERENCE"></span><span id="wbem_e_circular_reference"></span>**REFERÊNCIA CIRCULAR DO WBEM \_ E \_ \_**
 </dt> <dd> <dl> <dt>
 
 2147749959 (0x80041047)
@@ -1003,12 +1003,12 @@ O tipo qualificador especificado não era válido.
 
 
 
-Foi feita uma tentativa de criar uma referência que é circular (por exemplo, derivando uma classe a partir dela).
+Foi feita uma tentativa de criar uma referência circular (por exemplo, derivando uma classe de si mesma).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_UNSUPPORTED_CLASS_UPDATE"></span><span id="wbem_e_unsupported_class_update"></span>**\_atualização de classe WBEM E \_ sem suporte \_ \_**
+<span id="WBEM_E_UNSUPPORTED_CLASS_UPDATE"></span><span id="wbem_e_unsupported_class_update"></span>**ATUALIZAÇÃO DE \_ CLASSE SEM \_ \_ \_ SUPORTE DO WBEM E**
 </dt> <dd> <dl> <dt>
 
 2147749960 (0x80041048)
@@ -1021,7 +1021,7 @@ Não há suporte para a classe especificada.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_CANNOT_CHANGE_KEY_INHERITANCE"></span><span id="wbem_e_cannot_change_key_inheritance"></span>**WBEM \_ E \_ não pode \_ alterar a \_ herança de chave \_**
+<span id="WBEM_E_CANNOT_CHANGE_KEY_INHERITANCE"></span><span id="wbem_e_cannot_change_key_inheritance"></span>**O WBEM \_ E NÃO PODE ALTERAR A HERANÇA DE \_ \_ \_ \_ CHAVE**
 </dt> <dd> <dl> <dt>
 
 2147749961 (0x80041049)
@@ -1034,7 +1034,7 @@ Foi feita uma tentativa de alterar uma chave quando instâncias ou subclasses j�
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_CANNOT_CHANGE_INDEX_INHERITANCE"></span><span id="wbem_e_cannot_change_index_inheritance"></span>**WBEM \_ E \_ não é possível \_ alterar a \_ herança do índice \_**
+<span id="WBEM_E_CANNOT_CHANGE_INDEX_INHERITANCE"></span><span id="wbem_e_cannot_change_index_inheritance"></span>**O WBEM \_ E NÃO PODE ALTERAR A HERANÇA DO \_ \_ \_ \_ ÍNDICE**
 </dt> <dd> <dl> <dt>
 
 2147749968 (0x80041050)
@@ -1047,7 +1047,7 @@ Foi feita uma tentativa de alterar um índice quando instâncias ou subclasses j
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_TOO_MANY_PROPERTIES"></span><span id="wbem_e_too_many_properties"></span>**WBEM \_ E \_ \_ muitas \_ Propriedades**
+<span id="WBEM_E_TOO_MANY_PROPERTIES"></span><span id="wbem_e_too_many_properties"></span>**WBEM \_ E \_ MUITAS \_ \_ PROPRIEDADES**
 </dt> <dd> <dl> <dt>
 
 2147749969 (0x80041051)
@@ -1060,7 +1060,7 @@ Foi feita uma tentativa de criar mais propriedades do que a versão atual da cla
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_UPDATE_TYPE_MISMATCH"></span><span id="wbem_e_update_type_mismatch"></span>**incompatibilidade de tipo de atualização WBEM \_ E \_ \_ \_**
+<span id="WBEM_E_UPDATE_TYPE_MISMATCH"></span><span id="wbem_e_update_type_mismatch"></span>**INCOMPATIBILIDADE DE TIPO \_ DE \_ ATUALIZAÇÃO \_ DO \_ WBEM E**
 </dt> <dd> <dl> <dt>
 
 2147749970 (0x80041052)
@@ -1073,7 +1073,7 @@ A propriedade foi redefinida com um tipo conflitante em uma classe derivada.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_UPDATE_OVERRIDE_NOT_ALLOWED"></span><span id="wbem_e_update_override_not_allowed"></span>**substituição de atualização de WBEM \_ E \_ \_ \_ não \_ permitida**
+<span id="WBEM_E_UPDATE_OVERRIDE_NOT_ALLOWED"></span><span id="wbem_e_update_override_not_allowed"></span>**SUBSTITUIÇÃO DO WBEM \_ E \_ UPDATE NÃO \_ \_ \_ PERMITIDA**
 </dt> <dd> <dl> <dt>
 
 2147749971 (0x80041053)
@@ -1086,7 +1086,7 @@ Foi feita uma tentativa em uma classe derivada para substituir um qualificador q
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_UPDATE_PROPAGATED_METHOD"></span><span id="wbem_e_update_propagated_method"></span>**\_ \_ \_ método propagado de atualização de WBEM E \_**
+<span id="WBEM_E_UPDATE_PROPAGATED_METHOD"></span><span id="wbem_e_update_propagated_method"></span>**MÉTODO PROPAGADO WBEM \_ E \_ \_ \_ UPDATE**
 </dt> <dd> <dl> <dt>
 
 2147749972 (0x80041054)
@@ -1094,12 +1094,12 @@ Foi feita uma tentativa em uma classe derivada para substituir um qualificador q
 
 
 
-O método foi declarado novamente com uma assinatura conflitante em uma classe derivada.
+O método foi declarado com uma assinatura conflitante em uma classe derivada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_METHOD_NOT_IMPLEMENTED"></span><span id="wbem_e_method_not_implemented"></span>**\_método WBEM \_ E \_ não \_ implementado**
+<span id="WBEM_E_METHOD_NOT_IMPLEMENTED"></span><span id="wbem_e_method_not_implemented"></span>**MÉTODO WBEM \_ E \_ NÃO \_ \_ IMPLEMENTADO**
 </dt> <dd> <dl> <dt>
 
 2147749973 (0x80041055)
@@ -1107,12 +1107,12 @@ O método foi declarado novamente com uma assinatura conflitante em uma classe d
 
 
 
-Foi feita uma tentativa de executar um método não marcado com \[ implementado \] em nenhuma classe relevante.
+Foi feita uma tentativa de executar um método não marcado com \[ implementado em qualquer classe \] relevante.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_METHOD_DISABLED"></span><span id="wbem_e_method_disabled"></span>**\_método WBEM \_ E \_ desabilitado**
+<span id="WBEM_E_METHOD_DISABLED"></span><span id="wbem_e_method_disabled"></span>**MÉTODO WBEM \_ E \_ \_ DESABILITADO**
 </dt> <dd> <dl> <dt>
 
 
@@ -1458,7 +1458,7 @@ O identificador de objeto está desatualizado.
 
 
 
-Falha na conexão com o banco de dados SQL.
+falha na conexão com o banco de dados SQL.
 
 
 </dt> </dl> </dd> <dt>
@@ -1536,7 +1536,7 @@ O nome do qualificador contém mais de 255 caracteres.
 
 
 
-O comando SQL deve ser executado novamente porque há um deadlock no SQL. Isso pode ser retornado somente quando os dados estão sendo armazenados em um banco de dado SQL.
+o comando SQL deve ser executado novamente porque há um deadlock no SQL. isso pode ser retornado somente quando os dados estão sendo armazenados em um banco de dado SQL.
 
 
 </dt> </dl> </dd> <dt>
@@ -1757,7 +1757,7 @@ Uma cláusula WITHIN não foi usada nesta consulta.
 
 
 
-Este computador não tem as permissões de domínio necessárias para dar suporte às funções de segurança relacionadas à instância de assinatura criada. Contate o administrador de domínio para que este computador seja adicionado ao grupo de acesso de autorização do Windows.
+Este computador não tem as permissões de domínio necessárias para dar suporte às funções de segurança relacionadas à instância de assinatura criada. contate o administrador de domínio para que este computador seja adicionado ao grupo de acesso de autorização Windows.
 
 
 </dt> </dl> </dd> <dt>
@@ -2433,7 +2433,7 @@ A sintaxe para os comandos de pré-processador [ \# pragma deleteinstance](pragm
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                         |
-| parâmetro<br/>                   | <dl> <dt>WbemCli. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>WbemCli. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>WbemCli. idl</dt> </dl> |
 
 

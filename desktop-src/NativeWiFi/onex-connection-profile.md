@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 21e02a1f09d3439c64fb8124cd0cfc8140732be9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 500e714b6f0728104987f53ff0a8c0e7083c1af5996679a78a986b5674d54514
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105761419"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119684886"
 ---
 # <a name="onex_connection_profile-structure"></a>Estrutura de perfil de \_ conexão Onex \_
 
@@ -255,9 +255,9 @@ O tempo, em segundos, para aguardar a conclusão da autenticação 802.1 X antes
 
 O tempo de duração máximo, em segundos, para aguardar uma conexão caso uma caixa de diálogo de interface do usuário que requer entrada do usuário seja exibida durante o SSO por logon.
 
-No Windows Vista com SP1 e posterior, esse valor é codificado para 10 minutos e não é configurável. No Windows Vista versão para fabricação, esse valor usa como padrão 60 segundos em um perfil 802.1 X e foi controlado pelo elemento **maxDelayWithAdditionalDialogs** no esquema.
+no Windows Vista com SP1 e posterior, esse valor é codificado para 10 minutos e não é configurável. na versão Windows Vista para fabricação, esse valor usa como padrão 60 segundos em um perfil 802.1 x e foi controlado pelo elemento **maxDelayWithAdditionalDialogs** no esquema.
 
-No Windows Vista com SP1 e posterior, o elemento **maxDelayWithAdditionalDialogs** no esquema 802.1 x é ignorado e preterido.
+no Windows Vista com SP1 e posterior, o elemento **maxDelayWithAdditionalDialogs** no esquema 802.1 x é ignorado e preterido.
 
 </dd> <dt>
 
@@ -277,7 +277,7 @@ O elemento userBasedVirtualLan no esquema 802.1 X que especifica se a VLAN (LAN 
 
 ## <a name="remarks"></a>Comentários
 
-A estrutura do **\_ \_ perfil de conexão Onex** é usada pelo módulo 802.1 x, um novo componente de configuração sem fio com suporte no Windows Vista e posterior.
+a estrutura do **\_ \_ perfil de conexão ONEX** é usada pelo módulo 802.1 x, um novo componente de configuração sem fio com suporte no Windows Vista e posterior.
 
 Os [**\_ dados de \_ atualização \_ do resultado Onex**](/windows/desktop/api/dot1x/ns-dot1x-onex_result_update_data) contêm informações sobre uma alteração de status para a autenticação 802.1 x. A estrutura de dados de atualização de resultado de Onex é retornada quando o membro de **notificação** da estrutura de [**\_ \_ dados de notificação**](/previous-versions/windows/desktop/legacy/ms706902(v=vs.85)) de WLAN é  **802.1x de origem de notificação de WLAN \_ \_ \_** e o membro NotificationCode da estrutura de **dados de \_ notificação \_ de WLAN** para notificação recebida é OneXNotificationTypeResultUpdate. **\_ \_ \_** Para essa notificação, o membro **pData** da estrutura **de \_ \_ dados de notificação de WLAN** aponta para uma estrutura de **\_ \_ \_ dados de atualização de resultado de Onex** que contém informações sobre a alteração do status de autenticação 802.1 x.
 
@@ -291,8 +291,8 @@ A estrutura do **\_ \_ perfil de conexão Onex** não está definida em um arqui
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 

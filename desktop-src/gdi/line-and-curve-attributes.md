@@ -4,12 +4,12 @@ ms.assetid: 9529b389-85f6-421f-8429-9b61cee56ef1
 title: Atributos de linha e de curva
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c6ec13ea49a72447045c45ea2837ba40e64e6741
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5d5ab8758cf6e77b28568cacafd8c57312c052d9e9415211f034e3d1a70b6c09
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104988800"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119831606"
 ---
 # <a name="line-and-curve-attributes"></a>Atributos de linha e de curva
 
@@ -22,11 +22,11 @@ A posição atual padrão de qualquer DC está localizada no ponto (0, 0) em esp
 
  
 
-O pincel padrão é um pincel branco sólido. Um aplicativo pode criar um novo pincel chamando a função [**CreateBrushIndirect**](/windows/desktop/api/Wingdi/nf-wingdi-createbrushindirect) . Depois de criar um pincel, o aplicativo pode selecioná-lo em seu controlador de domínio chamando a função [**SelectObject**](/windows/desktop/api/Wingdi/nf-wingdi-selectobject) . O Windows fornece um conjunto completo de funções para criar, selecionar e alterar o pincel no DC de um aplicativo. Para obter mais informações sobre essas funções e sobre pincéis em geral, consulte [pincéis](brushes.md).
+O pincel padrão é um pincel branco sólido. Um aplicativo pode criar um novo pincel chamando a função [**CreateBrushIndirect**](/windows/desktop/api/Wingdi/nf-wingdi-createbrushindirect) . Depois de criar um pincel, o aplicativo pode selecioná-lo em seu controlador de domínio chamando a função [**SelectObject**](/windows/desktop/api/Wingdi/nf-wingdi-selectobject) . Windows fornece um conjunto completo de funções para criar, selecionar e alterar o pincel no DC de um aplicativo. Para obter mais informações sobre essas funções e sobre pincéis em geral, consulte [pincéis](brushes.md).
 
-A caneta padrão é uma caneta preta superficial e sólida que tem um pixel de largura. Um aplicativo pode criar uma caneta usando a função [**ExtCreatePen**](/windows/desktop/api/Wingdi/nf-wingdi-extcreatepen) . Depois de criar uma caneta, seu aplicativo pode selecioná-la em seu controlador de domínio chamando a função [**SelectObject**](/windows/desktop/api/Wingdi/nf-wingdi-selectobject) . O Windows fornece um conjunto completo de funções para criar, selecionar e alterar a caneta no DC de um aplicativo. Para obter mais informações sobre essas funções e sobre as canetas em geral, consulte [canetas](pens.md).
+A caneta padrão é uma caneta preta superficial e sólida que tem um pixel de largura. Um aplicativo pode criar uma caneta usando a função [**ExtCreatePen**](/windows/desktop/api/Wingdi/nf-wingdi-extcreatepen) . Depois de criar uma caneta, seu aplicativo pode selecioná-la em seu controlador de domínio chamando a função [**SelectObject**](/windows/desktop/api/Wingdi/nf-wingdi-selectobject) . Windows fornece um conjunto completo de funções para criar, selecionar e alterar a caneta no DC de um aplicativo. Para obter mais informações sobre essas funções e sobre as canetas em geral, consulte [canetas](pens.md).
 
-A transformação padrão é a transformação do Unity (especificada pela matriz de identidade). Um aplicativo pode especificar uma nova transformação chamando a função [**SetWorldTransform**](/windows/desktop/api/Wingdi/nf-wingdi-setworldtransform) . O Windows fornece um conjunto completo de funções para transformar linhas e curvas alterando sua largura, localização e aparência geral. Para obter mais informações sobre essas funções, consulte [espaços de coordenadas e transformações](coordinate-spaces-and-transformations.md).
+A transformação padrão é a transformação do Unity (especificada pela matriz de identidade). Um aplicativo pode especificar uma nova transformação chamando a função [**SetWorldTransform**](/windows/desktop/api/Wingdi/nf-wingdi-setworldtransform) . Windows fornece um conjunto completo de funções para transformar linhas e curvas alterando sua largura, localização e aparência geral. Para obter mais informações sobre essas funções, consulte [espaços de coordenadas e transformações](coordinate-spaces-and-transformations.md).
 
  
 

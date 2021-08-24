@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d101d854650a689679b95282734865ac19f6ced1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 280a8e1e801afd3b27589a1aa35f7d2006556781a6620cdaa9e3a3a2d3878703
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104456165"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119703956"
 ---
 # <a name="usn-intersite-attribute"></a>USN-Intersite atributo
 
@@ -59,8 +59,8 @@ O USN (número de sequência de atualização) para replicação entre sites.
 | ID do link                | \-                              |
 | MAPI-Id                | 0x817A                          |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
-| É indexado             | True                            |
+| É de valor único       | Verdadeiro                            |
+| É indexado             | Verdadeiro                            |
 | No catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
 | Range-Lower            | \-                              |
@@ -80,8 +80,8 @@ O USN (número de sequência de atualização) para replicação entre sites.
 | ID do link                | \-                              |
 | MAPI-Id                | 0x817A                          |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
-| É indexado             | True                            |
+| É de valor único       | Verdadeiro                            |
+| É indexado             | Verdadeiro                            |
 | No catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
 | Range-Lower            | \-                              |
@@ -101,8 +101,8 @@ O USN (número de sequência de atualização) para replicação entre sites.
 | ID do link                | \-                              |
 | MAPI-Id                | 0x817A                          |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
-| É indexado             | True                            |
+| É de valor único       | Verdadeiro                            |
+| É indexado             | Verdadeiro                            |
 | No catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
 | Range-Lower            | \-                              |
@@ -122,8 +122,8 @@ O USN (número de sequência de atualização) para replicação entre sites.
 | ID do link                | \-                              |
 | MAPI-Id                | 0x817A                          |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
-| É indexado             | True                            |
+| É de valor único       | Verdadeiro                            |
+| É indexado             | Verdadeiro                            |
 | No catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
 | Range-Lower            | \-                              |
@@ -143,8 +143,8 @@ O USN (número de sequência de atualização) para replicação entre sites.
 | ID do link                | \-                              |
 | MAPI-Id                | 0x817A                          |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
-| É indexado             | True                            |
+| É de valor único       | Verdadeiro                            |
+| É indexado             | Verdadeiro                            |
 | No catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
 | Range-Lower            | \-                              |
@@ -164,8 +164,8 @@ O USN (número de sequência de atualização) para replicação entre sites.
 | ID do link                | \-                              |
 | MAPI-Id                | 0x817A                          |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
-| É indexado             | True                            |
+| É de valor único       | Verdadeiro                            |
+| É indexado             | Verdadeiro                            |
 | No catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
 | Range-Lower            | \-                              |
@@ -185,8 +185,8 @@ O USN (número de sequência de atualização) para replicação entre sites.
 | ID do link                | \-                              |
 | MAPI-Id                | 0x817A                          |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
-| É indexado             | True                            |
+| É de valor único       | Verdadeiro                            |
+| É indexado             | Verdadeiro                            |
 | No catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
 | Range-Lower            | \-                              |

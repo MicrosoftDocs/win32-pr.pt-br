@@ -1,7 +1,7 @@
 ---
 description: Solicita que a operação de suspensão do aplicativo seja atrasada.
 ms.assetid: 5AB84652-165D-4173-A047-541B05848871
-title: 'Método ISuspendingOperation:: getadiamento (Windows. ApplicationModel. h)'
+title: Método ISuspendingOperation::GetDeferral (Windows. ApplicationModel.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Windows.ApplicationModel.h
-ms.openlocfilehash: 6874eb31e73fa1c20399f68850fc69204d0e0f6d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4a64ed4449c2e11ebeec9194adb7fd69ecc7227efa9df36a6900f4139e44ec4b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827135"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119794986"
 ---
-# <a name="isuspendingoperationgetdeferral-method"></a>Método ISuspendingOperation:: getadiamento
+# <a name="isuspendingoperationgetdeferral-method"></a>Método ISuspendingOperation::GetDeferral
 
 Solicita que a operação de suspensão do aplicativo seja atrasada.
 
@@ -46,9 +46,9 @@ A suspensão de adiamento.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -58,8 +58,8 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                                          |
-| parâmetro<br/>                   | <dl> <dt>Windows. ApplicationModel. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>Windows. ApplicationModel. idl</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Windows. ApplicationModel.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Windows. ApplicationModel.idl</dt> </dl> |
 
 
 

@@ -1,40 +1,40 @@
 ---
-title: Provedores de sistema
-description: Habilita eventos do Provedor de Rastreamento do Sistema com EnableTraceEx2.
+title: Provedores do sistema
+description: Habilite eventos do provedor de rastreamento do sistema com EnableTraceEx2.
 ms.topic: article
 ms.date: 06/02/2021
-ms.openlocfilehash: 48a93ab94b87a43e0eb8a292320536a04ef43477
-ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
+ms.openlocfilehash: 46c141c6449594b8030ce24bb901b0afede33f3f6e2cefcaa36f4df4bf0dde0e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111387784"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119812146"
 ---
-# <a name="system-providers"></a>Provedores de sistema
+# <a name="system-providers"></a>Provedores do sistema
  
-A partir do Windows 10 build 20348 do SDK, os eventos do Provedor de Rastreamento do Sistema podem ser habilitados da mesma maneira que outros provedores ETW, com [EnableTraceEx2](/windows/win32/api/evntrace/nf-evntrace-enabletraceex2).  Os diferentes sinalizadores e máscaras de grupo [associados](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) ao Provedor de Rastreamento do Sistema foram mapeados para novos provedores de rastreamento, chamados Provedores de Sistema, e palavras-chave correspondentes.  
+a partir do Windows 10 SDK build 20348, os eventos do provedor de rastreamento do sistema podem ser habilitados da mesma maneira que outros provedores de ETW, com [EnableTraceEx2](/windows/win32/api/evntrace/nf-evntrace-enabletraceex2).  Os diferentes sinalizadores e [máscaras de grupo](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) associados ao provedor de rastreamento do sistema foram mapeados para novos provedores de rastreamento, chamados de provedores de sistema e palavras-chave correspondentes.  
  
-Assim como habilitar o Provedor de Rastreamento do Sistema diretamente, os Provedores de Sistema só podem ser habilitados por uma sessão com o [EVENT_TRACE_SYSTEM_LOGGER_MODE](/windows/win32/etw/logging-mode-constants) definido.
+Como habilitar o provedor de rastreamento do sistema diretamente, os provedores do sistema só podem ser habilitados por uma sessão com o conjunto de [EVENT_TRACE_SYSTEM_LOGGER_MODE](/windows/win32/etw/logging-mode-constants) .
 
-## <a name="system-provider-reference"></a>Referência do Provedor de Sistema
+## <a name="system-provider-reference"></a>Referência do provedor do sistema
 
 * [Provedor ALPC do sistema](#system-alpc-provider)
-* [Provedor de Configuração do Sistema](#system-config-provider)
+* [Provedor de configuração do sistema](#system-config-provider)
 * [Provedor de CPU do sistema](#system-cpu-provider)
-* [Provedor de Hipervisor do Sistema](#system-hypervisor-provider)
-* [Provedor de Interrupção do Sistema](#system-interrupt-provider)
-* [Provedor de E/S do sistema](#system-io-provider)
-* [Provedor de Filtro de E/S do Sistema](#system-io-filter-provider)
-* [Provedor de Bloqueio do Sistema](#system-lock-provider)
-* [Provedor de Memória do Sistema](#system-memory-provider)
-* [Provedor de Objetos do Sistema](#system-object-provider)
-* [Provedor de Energia do Sistema](#system-power-provider)
-* [Provedor de Processo do Sistema](#system-process-provider)
-* [Provedor de Perfil do Sistema](#system-profile-provider)
-* [Provedor de Registro do Sistema](#system-registry-provider)
-* [Provedor do Agendador do Sistema](#system-scheduler-provider)
-* [Provedor de Syscall do Sistema](#system-syscall-provider)
-* [Provedor de Temporizador do Sistema](#system-timer-provider)
+* [Provedor de hipervisor do sistema](#system-hypervisor-provider)
+* [Provedor de interrupção do sistema](#system-interrupt-provider)
+* [Provedor de e/s do sistema](#system-io-provider)
+* [Provedor de filtro de e/s do sistema](#system-io-filter-provider)
+* [Provedor de bloqueio do sistema](#system-lock-provider)
+* [Provedor de memória do sistema](#system-memory-provider)
+* [Provedor de objeto do sistema](#system-object-provider)
+* [Provedor de energia do sistema](#system-power-provider)
+* [Provedor de processo do sistema](#system-process-provider)
+* [Provedor de perfil do sistema](#system-profile-provider)
+* [Provedor de registro do sistema](#system-registry-provider)
+* [Provedor do Agendador do sistema](#system-scheduler-provider)
+* [Provedor syscall do sistema](#system-syscall-provider)
+* [Provedor de timer do sistema](#system-timer-provider)
  
 ### <a name="system-alpc-provider"></a>Provedor ALPC do sistema
 
@@ -46,7 +46,7 @@ GUID: SystemAlpcProviderGuid {fcb9baaf-e529-4980-92e9-ced1a6aadfdf}
 | ------- | ------------------------------------- |
 | SYSTEM_ALPC_KW_GENERAL | PERF_ALPC, EVENT_TRACE_FLAG_ALPC |
  
-### <a name="system-config-provider"></a>Provedor de Configuração do Sistema 
+### <a name="system-config-provider"></a>Provedor de configuração do sistema 
 
 Fornece eventos de configuração do sistema.
 
@@ -74,7 +74,7 @@ GUID: SystemCpuProviderGuid {c6c5265f-eae8-4650-aae4-9d48603d8510}
 | SYSTEM_CPU_KW_CACHE_FLUSH | PERF_CACHE_FLUSH |
 | SYSTEM_CPU_KW_SPEC_CONTROL | PERF_SPEC_CONTROL |
  
-### <a name="system-hypervisor-provider"></a>Provedor de Hipervisor do Sistema 
+### <a name="system-hypervisor-provider"></a>Provedor de hipervisor do sistema 
 
 Fornece eventos relacionados ao hipervisor.
 
@@ -86,11 +86,11 @@ GUID: SystemHypervisorProviderGuid {bafa072a-918a-4bed-b622-bc152097098f}
 | SYSTEM_HYPERVISOR_KW_CALLOUTS | PERF_HV_CALLOUTS |
 | SYSTEM_HYPERVISOR_KW_VTL_CHANGE | PERF_VTL_CHANGE |
  
-### <a name="system-interrupt-provider"></a>Provedor de Interrupção do Sistema 
+### <a name="system-interrupt-provider"></a>Provedor de interrupção do sistema 
 
 Fornece eventos relacionados a DPCs e interrupções.
 
-GUID: SystemInterruptProviderGuid {d4bbee17-b545-4888-858b-744169015b25}
+GUID: SystemInterruptProviderGuid {d4bbee17-b545-4888-858B-744169015b25}
 
 | Palavra-chave | Sinalizadores e grupos herdados correspondentes |
 | ------- | ------------------------------------- |
@@ -103,9 +103,9 @@ GUID: SystemInterruptProviderGuid {d4bbee17-b545-4888-858b-744169015b25}
 | SYSTEM_INTERRUPT_KW_IPI | PERF_IPI |
  
  
-### <a name="system-io-provider"></a>Provedor de E/S do sistema 
+### <a name="system-io-provider"></a>Provedor de e/s do sistema 
 
-Fornece eventos relacionados a vários tipos de E/S, incluindo disco, cache e rede.
+Fornece eventos relacionados a vários tipos de e/s, incluindo disco, cache e rede.
 
 GUID: SystemIoProviderGuid {3d5c43e3-0f1c-4202-b817-174c0070dc79}
 
@@ -122,7 +122,7 @@ GUID: SystemIoProviderGuid {3d5c43e3-0f1c-4202-b817-174c0070dc79}
 | SYSTEM_IO_KW_CC | PERF_CC |
 | SYSTEM_IO_KW_NETWORK | PERF_NETWORK, EVENT_TRACE_FLAG_NETWORK_TCPIP |
 
-Observação: habilitar SYSTEM_IO_KW_DRIVERS palavra-chave do SYSTEM_IO_KW_FILENAME habilita automaticamente também.  O SYSTEM_IO_KW_FILENAME também é ativado automaticamente quando o Provedor de Memória do Sistema está habilitado com a palavra-chave SYSTEM_MEMORY_KW_MEMORY dados.
+Observação: habilitar a palavra-chave SYSTEM_IO_KW_DRIVERS usuário habilita automaticamente SYSTEM_IO_KW_FILENAME também.  O SYSTEM_IO_KW_FILENAME também é ativado automaticamente quando o Provedor de Memória do Sistema está habilitado com a palavra-chave SYSTEM_MEMORY_KW_MEMORY dados.
  
 ### <a name="system-io-filter-provider"></a>Provedor de Filtro de E/S do Sistema 
 
@@ -174,7 +174,7 @@ GUID: SystemMemoryProviderGuid {82958ca9-b6cd-47f8-a3a8-03ae85a4bc24}
 | SYSTEM_MEMORY_KW_VAMAP | PERF_VAMAP, EVENT_TRACE_FLAG_VAMAP |
 
 Observações: 
-* Habilitar a SYSTEM_MEMORY_KW_MEMORY de usuário habilita automaticamente SYSTEM_IO_KW_FILENAME no Provedor de E/S do Sistema também.
+* Habilitar SYSTEM_MEMORY_KW_MEMORY palavra-chave SYSTEM_IO_KW_FILENAME no Provedor de E/S do Sistema também.
 * Os eventos habilitados pelo SYSTEM_MEMORY_KW_POOL dar suporte a um Filtro de Marca de Pool para gravar eventos seletivamente somente para determinadas marcas de pool.  Isso é configurado como um [Filtro Eschematizado](/windows/win32/api/evntprov/ns-evntprov-event_filter_descriptor) no Provedor de Memória do Sistema.  O filtro PoolTag é construído da seguinte forma:
 
     ```cpp
@@ -186,7 +186,7 @@ Observações:
 
 * O [EVENT_FILTER_HEADER](/windows/win32/api/evntprov/ns-evntprov-event_filter_header) deve ser inicializado com a ID definida como SYSTEM_MEMORY_POOL_FILTER_ID e o campo de tamanho definido como o tamanho de Header mais a parte usada da matriz PoolTags.  
 
-* Cada Marca de Pool é uma cadeia de caracteres de 4 caracteres armazenada como um ULONG no filtro.  
+* Cada Marca de Pool é uma cadeia de caracteres de 4 caracteres que é armazenada como um ULONG no filtro.  
  
  
 ### <a name="system-object-provider"></a>Provedor de Objetos do Sistema 

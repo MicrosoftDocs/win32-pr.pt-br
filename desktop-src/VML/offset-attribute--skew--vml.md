@@ -1,26 +1,26 @@
 ---
-title: Atributo offset (distorção) (VML)
-description: Atributo offset (distorção) (VML)
+title: Atributo Offset (Skew)(VML)
+description: Atributo Offset (Skew)(VML)
 ms.assetid: 3d4b08c5-e29b-4ace-9c3e-75598068ff18
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f6dbabad6429ad82d4a5aa5cb9187fb1326d4900
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: ab3d6012389dfd07a21fd4d6aa0361fd869307427b40e504d42dc1f2ce06e534
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366075"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119680686"
 ---
-# <a name="offset-attribute-skewvml"></a>Atributo offset (distorção) (VML)
+# <a name="offset-attribute-skewvml"></a>Atributo Offset (Skew)(VML)
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Define o deslocamento da distorção. **VgVector2D** de leitura/gravação.
+Define o deslocamento da distorção. Leitura/gravação **VgVector2D.**
 
 **Aplica-se a**
 
@@ -28,20 +28,20 @@ Define o deslocamento da distorção. **VgVector2D** de leitura/gravação.
 
 **Sintaxe de marca**
 
-<o: *elemento* offset = " *expressão* " >
+<o: *elemento* offset=" *expressão* ">
 
 **Sintaxe do script**
 
-*elemento* . Offset = "*expressão*"
+*elemento* .offset="*expression*"
 
-*expressão* = de *elemento*. Offset
+*expressão* = *elemento*.offset
 
 **Comentários**
 
-Determina a quantidade de deslocamento x e y do local original da forma. Os valores são definidos em medição absoluta ou em valores fracionários de uma forma (variando de-0,5 a + 0,5). O padrão é 0, 0.
+Determina a quantidade de deslocamento x e y do local original da forma. Os valores são definidos em medição absoluta ou valores fracionados de uma forma (variando de -0,5 a +0,5). O padrão é 0,0.
 
-*Atributo de extensões de Microsoft Office*
+*Microsoft Office Atributo Extensions*
 
- 
+ 
 
- 
+ 

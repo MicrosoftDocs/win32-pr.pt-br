@@ -1,7 +1,7 @@
 ---
-description: 'O método SetPreroll especifica se este exemplo é uma amostra de preversão. Um exemplo de preroll não deve ser exibido. Esse método implementa o método IMediaSample:: SetPreroll.'
+description: O método SetPreroll especifica se este exemplo é um exemplo de pré-roll. Um exemplo de pré-roll não deve ser exibido. Esse método implementa o método IMediaSample::SetPreroll.
 ms.assetid: 2887e627-5999-407a-88d3-811c803c9a43
-title: Método CMediaSample. SetPreroll (Amfilter. h)
+title: Método CMediaSample.SetPreroll (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 594f26ebb738a986c85a14b88f8896b122b58f47
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 410031ccf60e830c51615d267d3324167169c5de7960f79dc05b8c9e267463bf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105754262"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119832096"
 ---
-# <a name="cmediasamplesetpreroll-method"></a>Método CMediaSample. SetPreroll
+# <a name="cmediasamplesetpreroll-method"></a>Método CMediaSample.SetPreroll
 
-O `SetPreroll` método especifica se este exemplo é uma amostra de preversão. Um exemplo de preroll não deve ser exibido. Esse método implementa o método [**IMediaSample:: SetPreroll**](/windows/desktop/api/Strmif/nf-strmif-imediasample-setpreroll) .
+O `SetPreroll` método especifica se este exemplo é um exemplo de pré-roll. Um exemplo de pré-roll não deve ser exibido. Esse método implementa o [**método IMediaSample::SetPreroll.**](/windows/desktop/api/Strmif/nf-strmif-imediasample-setpreroll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,17 +45,17 @@ HRESULT SetPreroll(
 *bIsPreroll* 
 </dt> <dd>
 
-Valor booliano que especifica se este é um exemplo de preversão. Se for **verdadeiro**, este é um exemplo de preversão.
+Valor booliana que especifica se este é um exemplo de pré-roll. Se **TRUE**, este é um exemplo de pré-roll.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna S \_ OK.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método atualiza a variável de membro [**CMediaSample:: m \_ dwFlags**](cmediasample-m-dwflags.md) , que especifica a propriedade de preversão.
+Esse método atualiza a variável de membro [**CMediaSample::m \_ dwFlags,**](cmediasample-m-dwflags.md) que especifica a propriedade preroll.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Esse método atualiza a variável de membro [**CMediaSample:: m \_ dwFlags**](cm
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amfilter.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

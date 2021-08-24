@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Strmiids.lib
 - Strmiids.dll
-ms.openlocfilehash: a13c8523d45278ad403ee08d0822fb853b301520
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 7c79e81171349e2c481535eeab212717de072b17778b052dac3fc377cea0e094
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104163780"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119792316"
 ---
 # <a name="ikspropertysetquerysupported-method"></a>Método IKsPropertySet:: QuerySupported
 
@@ -74,7 +74,7 @@ Ponteiro para um valor no qual armazenar sinalizadores indicando o suporte forne
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor **HRESULT** . Os possíveis valores incluem os seguintes.
 
@@ -94,7 +94,7 @@ Retorna um valor **HRESULT** . Os possíveis valores incluem os seguintes.
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> Outra interface com esse nome existe no arquivo de cabeçalho dsound. h. As duas interfaces não são compatíveis. A interface **IKsControl** , documentada no DirectShow DDK, agora é a interface recomendada para passar os conjuntos de propriedades entre os drivers WDM e os componentes do modo de usuário.
+> Outra interface com esse nome existe no arquivo de cabeçalho dsound. h. As duas interfaces não são compatíveis. a interface **IKsControl** , documentada no DirectShow DDK, agora é a interface recomendada para passar os conjuntos de propriedades entre os drivers WDM e os componentes do modo de usuário.
 
  
 

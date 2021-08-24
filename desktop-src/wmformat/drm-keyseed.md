@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 698db5fe5a1123af0a7b4623d304bf0569bbf253
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 46766dc5754bde33c00af250f03a54caf3c12c607ec14da858ac638a70f79baf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "105754226"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119658966"
 ---
 # <a name="drm_keyseed"></a>Keysemente DRM \_
 
@@ -48,9 +48,9 @@ Uma nova semente de chave pode ser gerada usando o método [**IWMDRMWriter:: Gen
 [**Propriedades de DRM**](drm-properties.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

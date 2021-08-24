@@ -3,9 +3,9 @@ title: Método IWMPControls fastReverse
 description: O método fastReverse inicia a reprodução rápida do item de mídia na direção inversa.
 ms.assetid: 5c872e8d-2ffc-425f-a4dd-938ddd1426e0
 keywords:
-- método fastReverse Windows Media Player
+- Windows Media Player do método fastReverse
 - método fastReverse Windows Media Player, interface IWMPControls
-- Interface IWMPControls Windows Media Player, método fastReverse
+- Windows Media Player de interface IWMPControls, método fastReverse
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7061481aea13b0ed83c3a3d0eb47ca24b940358b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 88bbc1442ca223765b498560d078879c9a7033011117b7f663d4d40ff26bdd93
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105813020"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119761076"
 ---
 # <a name="iwmpcontrolsfastreverse-method"></a>Método IWMPControls:: fastReverse
 
@@ -49,15 +49,15 @@ Implements IWMPControls.fastReverse
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-O método **fastReverse** examina o clipe de forma inversa em cinco vezes a velocidade normal, exibindo apenas os quadros-chave se for um arquivo de vídeo. Chamar **fastReverse** é equivalente a especificar-5,0 para a taxa, definindo a propriedade **IWMPSettings. Rate** . Se a taxa for alterada posteriormente, ou se **IWMPControls. Play** ou **IWMPControls. Stop** for chamado, o Windows Media Player será interrompido rapidamente.
+O método **fastReverse** examina o clipe de forma inversa em cinco vezes a velocidade normal, exibindo apenas os quadros-chave se for um arquivo de vídeo. Chamar **fastReverse** é equivalente a especificar-5,0 para a taxa, definindo a propriedade **IWMPSettings. Rate** . se a taxa for alterada posteriormente, ou se **IWMPControls. play** ou **IWMPControls. stop** for chamado, Windows Media Player deixará de reverter rapidamente.
 
-Se o item fizer parte de uma lista de reprodução, o **fastReverse** para no início da faixa atual. Por exemplo, se Track 3 estiver em **fastReverse**, quando o início do Track 3 for atingido, o Windows Media Player não vai para o Track 2. A contagem de execuções não é incrementada ao chamar **fastReverse**.
+Se o item fizer parte de uma lista de reprodução, o **fastReverse** para no início da faixa atual. por exemplo, se track 3 estiver em **fastReverse**, quando o início do track 3 for atingido, Windows Media Player não vai para o track 2. A contagem de execuções não é incrementada ao chamar **fastReverse**.
 
 Se você chamar **IWMPControls. Fastforward** enquanto **fastReverse** estiver em execução, **fastReverse** será interrompido e **IWMPControls. Fastforward** será iniciado.
 

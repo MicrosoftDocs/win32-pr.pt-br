@@ -4,12 +4,12 @@ ms.assetid: 3153e3a4-2227-4fdd-b2b0-218763013d2d
 title: QueryAccept (upstream)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7707c52d36c3d065c4a7277939f724aabdb73e46
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 65133e132a0e1c2e6880009eda8b56fde9bf77a8bc7d68a850a6f8963604aecd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103646048"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119747567"
 ---
 # <a name="queryaccept-upstream"></a>QueryAccept (upstream)
 
@@ -27,7 +27,7 @@ Se o filtro upstream aceitar a alteração de formato, ele também deverá ser c
 
 ![QueryAccept (upstream)](images/dynformat4.png)
 
-Os principais exemplos desse tipo de alteração de formato envolvem os processadores de vídeo do DirectShow.
+os principais exemplos desse tipo de alteração de formato envolvem o DirectShow renderizadores de vídeo.
 
 -   O filtro de [processamento de vídeo](video-renderer-filter.md) original pode alternar entre os tipos RGB e YUV durante o streaming. Quando o filtro se conecta, ele requer um formato RGB que corresponda às configurações de exibição atuais. Isso garante que ele possa fazer fallback no GDI se precisar. Após o streaming começar, se o DirectDraw estiver disponível, o processador de vídeo solicitará uma alteração de formato para um tipo YUV. Posteriormente, ele poderá voltar para RGB se perder a superfície do DirectDraw por qualquer motivo.
 -   O filtro de processador de mixagem de vídeo (VMR) mais recente se conectará a qualquer formato com suporte pelo hardware de gráficos, incluindo tipos YUV. No entanto, o hardware de gráficos pode alterar o stride da superfície do DirectDraw subjacente para otimizar o desempenho. O filtro VMR usa `QueryAccept` para relatar o novo Stride, que é especificado no membro de **bilargura** da estrutura **BITMAPINFOHEADER** . Os retângulos de origem e de destino na estrutura **VIDEOINFOHEADER** ou **VIDEOINFOHEADER2** identificam a região onde o vídeo deve ser decodificado.
@@ -42,7 +42,7 @@ Um filtro de cópia/transformação (ou seja, um filtro não trans-in-Place) dev
 
 -   O formato aprovado muda de fluxo e armazena as novas informações de formato quando ele chega. O filtro deve usar um alocador personalizado para que ele possa anexar o formato ao exemplo de upstream.
 -   Execute a conversão de formato dentro do filtro. Isso é provavelmente mais fácil do que passar a alteração de formato upstream. No entanto, pode ser menos eficiente do que permitir que o filtro do decodificador decodifique o formato correto.
--   Como último recurso, basta rejeitar a alteração do formato. (Para obter mais informações, consulte o código-fonte para o método [**CTransInPlaceOutputPin:: CheckMediaType**](ctransinplaceoutputpin-checkmediatype.md) na biblioteca de classes base do DirectShow.) A rejeição de uma alteração de formato pode reduzir o desempenho, no entanto, porque impede que o renderizador de vídeo Use o formato mais eficiente.
+-   Como último recurso, basta rejeitar a alteração do formato. (para obter mais informações, consulte o código-fonte para o método [**CTransInPlaceOutputPin:: CheckMediaType**](ctransinplaceoutputpin-checkmediatype.md) na biblioteca de classes base DirectShow.) A rejeição de uma alteração de formato pode reduzir o desempenho, no entanto, porque impede que o renderizador de vídeo Use o formato mais eficiente.
 
 O pseudocódigo a seguir mostra como você pode implementar um filtro de cópia/transformação (derivado de **CTransformFilter**) que pode alternar entre os tipos de saída YUV e RGB. Este exemplo pressupõe que o filtro faz a conversão em si, em vez de passar a alteração de formato upstream.
 

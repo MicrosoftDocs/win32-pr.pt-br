@@ -1,5 +1,5 @@
 ---
-description: Por meio do modelo de script WIA, a funcionalidade de aquisição de imagem do Windows (WIA) é disponibilizada para linguagens de script, como software de desenvolvimento Microsoft JScript e Microsoft Visual Basic Scripting Edition (VBScript) e linguagens de alto nível, como o sistema de desenvolvimento Microsoft Visual Basic.
+description: por meio do modelo de script wia, a funcionalidade de aquisição de imagem de Windows (WIA) é disponibilizada para linguagens de script, como o software de desenvolvimento da microsoft JScript e o microsoft Visual Basic scripting Edition (VBScript) e linguagens de alto nível, como o sistema de desenvolvimento microsoft Visual Basic.
 ms.assetid: eec5dc91-7b32-4f38-bdfe-c11bddc17ba2
 title: Usando o modelo de script WIA
 ms.topic: article
@@ -9,19 +9,19 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: affa2c4368a83b2d67c1c6219b76040ba043a1f3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6a8b694b35f5b486d3a9d65dfc99f513bf14c8689d1d86fba03c019991e2fcc4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105761200"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119813646"
 ---
 # <a name="using-the-wia-scripting-model"></a>Usando o modelo de script WIA
 
-Por meio do [modelo de script WIA](-wia-wia-scripting-model.md), a funcionalidade de aquisição de imagem do Windows (WIA) é disponibilizada para linguagens de script, como software de desenvolvimento Microsoft JScript e Microsoft Visual Basic Scripting Edition (VBScript) e linguagens de alto nível, como o sistema de desenvolvimento Microsoft Visual Basic.
+por meio do [modelo de script wia](-wia-wia-scripting-model.md), a funcionalidade de aquisição de imagem de Windows (WIA) é disponibilizada para linguagens de script, como o software de desenvolvimento da microsoft JScript e o microsoft Visual Basic scripting Edition (VBScript) e linguagens de alto nível, como o sistema de desenvolvimento microsoft Visual Basic.
 
 > [!Note]  
-> Este sistema de scripts foi substituído pela camada de automação da WIA (aquisição de imagem do Windows). Consulte [camada de automação de aquisição de imagem do Windows](/previous-versions/windows/desktop/wiaaut/-wiaaut-startpage).
+> este sistema de scripts foi substituído pela camada de automação da WIA (Windows Image Acquisition). consulte [Windows camada de automação de aquisição de imagem](/previous-versions/windows/desktop/wiaaut/-wiaaut-startpage).
 
  
 

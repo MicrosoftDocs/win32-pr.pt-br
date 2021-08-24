@@ -4,12 +4,12 @@ ms.assetid: c4afd1d3-6fe4-4e5b-a9bf-81b7dffa9914
 title: 'ITLocalParticipant: método de ut_LocalParticipantTypedInfo de:p (Confpriv. h)'
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 77809a9a3858b6a098fa3ff6a93878cf38518f92
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: acca83d7ad68ed0974aaa2e7d4fb4755c11939d0711473c406cb09d78451ac41
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105792624"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119774896"
 ---
 # <a name="itlocalparticipantput_localparticipanttypedinfo-method"></a>ITLocalParticipant: método UT \_ LocalParticipantTypedInfo:p
 
@@ -45,7 +45,7 @@ HRESULT put_LocalParticipantTypedInfo(
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
@@ -60,7 +60,7 @@ O aplicativo deve usar [SysAllocString](/windows/win32/api/oleauto/nf-oleauto-sy
 | Requisito | Valor |
 |-------------------------|---------------------------------------------------------------------------------------|
 | Versão da TAPI<br/> | Requer TAPI 3,0 ou posterior<br/>                                                 |
-| parâmetro<br/>       | <dl> <dt>Confpriv. h</dt> </dl> |
+| Cabeçalho<br/>       | <dl> <dt>Confpriv. h</dt> </dl> |
 | Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
 | DLL<br/>          | <dl> <dt>Tapi3.dll</dt> </dl>  |
 

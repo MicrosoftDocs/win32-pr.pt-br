@@ -5,7 +5,7 @@ ms.assetid: dba2448a-4f72-4000-8687-4c1be812fc3b
 ms.tgt_platform: multiple
 keywords:
 - Gerenciamento Remoto do Windows do método SessionFlagUseDigest
-- Método SessionFlagUseDigest Gerenciamento Remoto do Windows, objeto WSMan
+- método SessionFlagUseDigest Gerenciamento Remoto do Windows, objeto WSMan
 - Gerenciamento Remoto do Windows de objeto WSMan, método SessionFlagUseDigest
 topic_type:
 - apiref
@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4018428123443836c4f433f3e82f03a93ee9b766
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 888eec55e2c2ec4efc4613c9fa2bdda2713bcfd1761918f00d29816fb6bf43b9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009406"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119795106"
 ---
 # <a name="wsmansessionflagusedigest-method"></a>Método WSMan. SessionFlagUseDigest
 
@@ -52,7 +52,7 @@ O valor da constante.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
@@ -64,7 +64,7 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                 |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                           |
-| parâmetro<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>WSManDisp. idl</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>WSManDisp. tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>WSMAuto.dll</dt> </dl>   |
@@ -78,7 +78,7 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 [**WSMan**](wsman.md)
 </dt> <dt>
 
-[**Session**](session.md)
+[**Sessão**](session.md)
 </dt> </dl>
 
  

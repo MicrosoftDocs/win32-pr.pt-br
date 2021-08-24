@@ -4,12 +4,12 @@ ms.assetid: 2622e2b3-b952-4666-a440-85d73d11c5e0
 title: Trabalhando com localidades personalizadas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ab0e59446496ae2985860c0fd6b1bd5bddde084
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8a969681e685a7044f9c583c907515a51559866d28d997cf43fa639127eee27f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921203"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119680926"
 ---
 # <a name="working-with-custom-locales"></a>Trabalhando com localidades personalizadas
 
@@ -30,7 +30,7 @@ Todas as localidades complementares usam a constante [ \_ \_ não especificada d
 
 ## <a name="handle-replacement-locales"></a>Manipular localidades de substituição
 
-Para preservar a confiabilidade do Windows, lembre-se de que uma localidade de substituição com suporte do seu aplicativo não pode modificar o identificador de localidade da localidade substituída. Nenhuma localidade de substituição pode modificar as propriedades de classificação do Windows.
+para preservar a confiabilidade do Windows, lembre-se de que uma localidade de substituição com suporte do seu aplicativo não pode modificar o identificador de localidade da localidade substituída. Nenhuma localidade de substituição pode modificar as propriedades de classificação de Windows.
 
 Embora uma localidade de substituição possa alterar o calendário padrão, ela deve manter o padrão original em algum lugar na lista de calendários disponíveis. Por exemplo, a localidade tailandesa (Tailândia) usa o calendário budista tailandês como padrão. Um administrador pode criar uma localidade de substituição que usa o calendário gregoriano localizado. No entanto, a lista de calendários disponíveis continua a conter uma entrada para o calendário budista tailandês.
 

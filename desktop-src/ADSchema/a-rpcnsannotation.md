@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3234177476db1006f63ca1d58c36e31ddeaf570c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 6b33889f998b78b7900770ad98c25b2b57783be131eedb9e7846f088e7c94694
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825279"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119704166"
 ---
 # <a name="rpc-ns-annotation-attribute"></a>atributo RPC-NS-Annotation
 
@@ -58,7 +58,7 @@ Uma cadeia de caracteres que describs um determinado elemento de perfil RPC.
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| É de valor único       | True                                                          |
+| É de valor único       | Verdadeiro                                                          |
 | É indexado             | Falso                                                         |
 | No catálogo global      | Falso                                                         |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |
@@ -79,7 +79,7 @@ Uma cadeia de caracteres que describs um determinado elemento de perfil RPC.
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| É de valor único       | True                                                          |
+| É de valor único       | Verdadeiro                                                          |
 | É indexado             | Falso                                                         |
 | No catálogo global      | Falso                                                         |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |
@@ -100,7 +100,7 @@ Uma cadeia de caracteres que describs um determinado elemento de perfil RPC.
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| É de valor único       | True                                                          |
+| É de valor único       | Verdadeiro                                                          |
 | É indexado             | Falso                                                         |
 | No catálogo global      | Falso                                                         |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |
@@ -121,15 +121,15 @@ Uma cadeia de caracteres que describs um determinado elemento de perfil RPC.
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| É de valor único       | True                                                          |
+| Tem valor único       | Verdadeiro                                                          |
 | É indexado             | Falso                                                         |
-| No catálogo global      | Falso                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |
+| No Catálogo Global      | Falso                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classes usadas em        | [**Elemento de perfil RPC**](c-rpcprofileelement.md)<br/> |
+| Classes usadas em        | [**rpc-Profile-Element**](c-rpcprofileelement.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Uma cadeia de caracteres que describs um determinado elemento de perfil RPC.
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| É de valor único       | True                                                          |
+| Tem valor único       | Verdadeiro                                                          |
 | É indexado             | Falso                                                         |
-| No catálogo global      | Falso                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |
+| No Catálogo Global      | Falso                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classes usadas em        | [**Elemento de perfil RPC**](c-rpcprofileelement.md)<br/> |
+| Classes usadas em        | [**rpc-Profile-Element**](c-rpcprofileelement.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Uma cadeia de caracteres que describs um determinado elemento de perfil RPC.
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| É de valor único       | True                                                          |
+| Tem valor único       | Verdadeiro                                                          |
 | É indexado             | Falso                                                         |
-| No catálogo global      | Falso                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |
+| No Catálogo Global      | Falso                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classes usadas em        | [**Elemento de perfil RPC**](c-rpcprofileelement.md)<br/> |
+| Classes usadas em        | [**rpc-Profile-Element**](c-rpcprofileelement.md)<br/> |
 
 
 

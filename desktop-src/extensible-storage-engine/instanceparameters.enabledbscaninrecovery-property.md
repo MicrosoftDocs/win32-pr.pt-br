@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre a propriedade: Instanceparameters. EnableDbScanInRecovery'
-title: Propriedade instanceparameters. EnableDbScanInRecovery
+description: 'Saiba mais sobre: propriedade InstanceParameters.EnableDbScanInRecovery'
+title: Propriedade InstanceParameters.EnableDbScanInRecovery
 TOCTitle: 'EnableDbScanInRecovery property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.InstanceParameters.EnableDbScanInRecovery
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.instanceparameters.enabledbscaninrecovery(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c6d492b2c101305b3038c300c77467d14dc480e2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eeb1fc7b9e9cab89f25f5b17d72b36c95bb73bf7ae2f15a11bee64ece8fbb4cb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829611"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119834386"
 ---
-# <a name="instanceparametersenabledbscaninrecovery-property"></a>Propriedade instanceparameters. EnableDbScanInRecovery
+# <a name="instanceparametersenabledbscaninrecovery-property"></a>Propriedade InstanceParameters.EnableDbScanInRecovery
 
-Obtém ou define um valor que indica se a manutenção do banco de dados deve ser executada durante a recuperação.
+Obtém ou define um valor que indica se a Manutenção do Banco de Dados deve ser executado durante a recuperação.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -62,14 +62,14 @@ public int EnableDbScanInRecovery { get; set; }
 
 #### <a name="property-value"></a>Valor da propriedade
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Classe instanceparameters](./instanceparameters-class.md)
+[Classe InstanceParameters](./instanceparameters-class.md)
 
-[Membros de instanceparameters](./instanceparameters-members.md)
+[Membros instanceParameters](./instanceparameters-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

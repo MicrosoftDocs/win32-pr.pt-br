@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 5b0f4662b4884da227a64768cc29bce4c615f8f7
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: c1cd6d20731e38b9f234d2e4a10e97a68c7cf2521258034663d949131b193faf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104163908"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119759696"
 ---
 # <a name="takeownershipex-method-of-the-win32_pagefile-class"></a>Método TakeOwnerShipEx da classe de \_ arquivo de paginação Win32
 
@@ -70,7 +70,7 @@ Se **for true**, a alteração de propriedade será aplicada recursivamente aos 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor de 0 (zero) em caso de êxito e qualquer outro número para indicar um erro.
 
@@ -121,7 +121,7 @@ O sistema de arquivos não é NTFS.
 **12**
 </dt> <dd>
 
-A plataforma não é o Windows.
+A plataforma não é Windows.
 
 </dd> <dt>
 

@@ -1,21 +1,21 @@
 ---
-description: O WPP (Windows software Trace Processor) fornece um mecanismo eficiente para registrar eventos que ocorrem durante a execução de um aplicativo ou driver. O WPP usa a API do ETW.
+description: O Windows WPP (processador de rastreamento de software) fornece um mecanismo eficiente para registrar eventos que ocorrem durante a execução de um aplicativo ou driver. O WPP usa a API ETW.
 ms.assetid: 3a6f441a-ae36-4cce-aa83-78a4e53c9b1a
-title: Gravando eventos de WPP
+title: Escrevendo eventos WPP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c0f0d4deb580a3f81f3c6c87f6ca5ca4518f735e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: de2b750285db171662ff0fb4f4408be77ad9d78e281e77347715e02bc1a52ee7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967456"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119811686"
 ---
-# <a name="writing-wpp-events"></a>Gravando eventos de WPP
+# <a name="writing-wpp-events"></a>Escrevendo eventos WPP
 
-O WPP (Windows software Trace Processor) fornece um mecanismo eficiente para registrar eventos que ocorrem durante a execução de um aplicativo ou driver. O WPP usa a API do ETW.
+O Windows WPP (processador de rastreamento de software) fornece um mecanismo eficiente para registrar eventos que ocorrem durante a execução de um aplicativo ou driver. O WPP usa a API ETW.
 
-Para obter detalhes sobre como usar o WPP para registrar eventos, consulte [perguntas frequentes](/windows-hardware/drivers/devtest/software-tracing-faq) sobre [rastreamento](/windows-hardware/drivers/devtest/wpp-software-tracing) de software e rastreamento de software no Microsoft Windows Driver Development Kit (DDK).
+Para obter detalhes sobre como usar o WPP para registrar eventos, consulte Perguntas frequentes sobre rastreamento de software e rastreamento de [software](/windows-hardware/drivers/devtest/software-tracing-faq) do [WPP](/windows-hardware/drivers/devtest/wpp-software-tracing) no DDK (Microsoft Windows Driver Development Kit).
 
  
 

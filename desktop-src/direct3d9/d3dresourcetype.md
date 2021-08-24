@@ -1,7 +1,7 @@
 ---
-description: Define os tipos de recursos.
+description: Define tipos de recursos.
 ms.assetid: 6b360fb1-4a5a-47a2-bef9-d8234770bf0c
-title: Enumeração D3DRESOURCETYPE (D3D9Types. h)
+title: Enumeração D3DRESOURCETYPE (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: ecb6b0c84f884df6441f3272a585ee3e09928661
-ms.sourcegitcommit: bfab92e16614d4fa54b044917358261232bda81a
+ms.openlocfilehash: 672fc09f8b35c22711517950e2589bb0ea68232d8243a370c8aae4165724b5a4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "113489680"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119750706"
 ---
 # <a name="d3dresourcetype-enumeration"></a>Enumeração D3DRESOURCETYPE
 
-Define os tipos de recursos.
+Define tipos de recursos.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -46,21 +46,21 @@ typedef enum D3DRESOURCETYPE {
 
 <dl> <dt>
 
-<span id="D3DRTYPE_SURFACE"></span><span id="d3drtype_surface"></span>**\_Superfície D3DRTYPE**
+<span id="D3DRTYPE_SURFACE"></span><span id="d3drtype_surface"></span>**SUPERFÍCIE D3DRTYPE \_**
 </dt> <dd>
 
-Recurso de superfície.
+Recurso do Surface.
 
 </dd> <dt>
 
-<span id="D3DRTYPE_VOLUME"></span><span id="d3drtype_volume"></span>**\_Volume D3DRTYPE**
+<span id="D3DRTYPE_VOLUME"></span><span id="d3drtype_volume"></span>**D3DRTYPE \_ VOLUME**
 </dt> <dd>
 
 Recurso de volume.
 
 </dd> <dt>
 
-<span id="D3DRTYPE_TEXTURE"></span><span id="d3drtype_texture"></span>**\_Textura D3DRTYPE**
+<span id="D3DRTYPE_TEXTURE"></span><span id="d3drtype_texture"></span>**TEXTURA D3DRTYPE \_**
 </dt> <dd>
 
 Recurso de textura.
@@ -95,10 +95,10 @@ Recurso de buffer de índice.
 
 </dd> <dt>
 
-<span id="D3DRTYPE_FORCE_DWORD"></span><span id="d3drtype_force_dword"></span>**D3DRTYPE \_ forçar \_ DWORD**
+<span id="D3DRTYPE_FORCE_DWORD"></span><span id="d3drtype_force_dword"></span>**D3DRTYPE \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Força essa enumeração a compilar a 32 bits de tamanho. Sem esse valor, alguns compiladores permitiriam que essa enumeração fosse compilada em um tamanho diferente de 32 bits. Este valor não é usado.
+Força essa enumeração a compilar para 32 bits de tamanho. Sem esse valor, alguns compiladores permitiriam que essa enumeração fosse compilada para um tamanho diferente de 32 bits. Este valor não é usado.
 
 </dd> </dl>
 
@@ -108,7 +108,7 @@ Força essa enumeração a compilar a 32 bits de tamanho. Sem esse valor, alguns
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 
@@ -116,10 +116,10 @@ Força essa enumeração a compilar a 32 bits de tamanho. Sem esse valor, alguns
 
 <dl> <dt>
 
-[Enumerações do Direct3D](dx9-graphics-reference-d3d-enums.md)
+[Enumerações direct3D](dx9-graphics-reference-d3d-enums.md)
 </dt> <dt>
 
-[**IDirect3DResource9:: GetType**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dresource9-gettype)
+[**IDirect3DResource9::GetType**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dresource9-gettype)
 </dt> </dl>
 
  

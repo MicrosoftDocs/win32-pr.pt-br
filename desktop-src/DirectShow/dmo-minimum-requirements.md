@@ -1,19 +1,19 @@
 ---
-description: Requisitos mínimos do DMO
+description: DMO Requisitos mínimos
 ms.assetid: cd342f0f-a3dc-4623-a18f-c45071795ef4
-title: Requisitos mínimos do DMO
+title: DMO Requisitos mínimos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a1c26267f50619062fb8396f93b7578db4d3d8c4
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 7acc4f664d32112512120f2f20687051a0bff193e00adb7ad595e6975c522fce
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103919976"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119749136"
 ---
-# <a name="dmo-minimum-requirements"></a>Requisitos mínimos do DMO
+# <a name="dmo-minimum-requirements"></a>DMO Requisitos mínimos
 
-Cada DMO deve atender aos seguintes requisitos mínimos:
+cada DMO deve atender aos seguintes requisitos mínimos:
 
 -   Ele deve dar suporte à agregação.
 -   Ele deve expor a interface [**IMediaObject**](/previous-versions/windows/desktop/api/Mediaobj/nn-mediaobj-imediaobject) .
@@ -25,7 +25,7 @@ As interfaces a seguir estão documentadas em outro lugar, mas são úteis para 
 
 -   **ISpecifyPropertyPages**, **IPropertyPage**: essas interfaces permitem que um DMO forneça uma página de propriedades para que o usuário defina propriedades.
 -   **IPersistStream**: essa interface permite que o DMO salve seu estado no armazenamento persistente.
--   [**IAMStreamConfig**](/windows/desktop/api/Strmif/nn-strmif-iamstreamconfig), [**IAMVideoCompression**](/windows/desktop/api/Strmif/nn-strmif-iamvideocompression): essas interfaces permitem que um cliente configure o formato de saída do codificador e as configurações de compactação. (Essas duas interfaces fazem parte da API do DirectShow, mas também são recomendadas para DMOs.)
+-   [**IAMStreamConfig**](/windows/desktop/api/Strmif/nn-strmif-iamstreamconfig), [**IAMVideoCompression**](/windows/desktop/api/Strmif/nn-strmif-iamvideocompression): essas interfaces permitem que um cliente configure o formato de saída do codificador e as configurações de compactação. (essas duas interfaces fazem parte da API do DirectShow, mas também são recomendadas para DMOs.)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

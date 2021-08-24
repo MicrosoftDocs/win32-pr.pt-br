@@ -1,11 +1,11 @@
 ---
-title: atributo MS-TS-Home-Directory
-description: Diretório base dos serviços de terminal especifica o diretório base do usuário.
+title: Atributo ms-TS-Home-Directory
+description: O Diretório Central dos Serviços de Terminal especifica o diretório Home do usuário.
 ms.assetid: 07ee28e2-34c1-4091-a409-ff74001059c3
 ms.tgt_platform: multiple
 keywords:
-- MS-TS-Home-Directory atributo AD Schema
-- Esquema de AD do atributo msTSHomeDirectory
+- Esquema do AD do atributo ms-TS-Home-Directory
+- Esquema do AD do atributo msTSHomeDirectory
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ef0cf3b0e2457c0efc3e14861ece3391551339cf
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 34a8e49da3ba1283a54392253dac67d791a43d08689210f984f8f8176a37f316
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105756083"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119761186"
 ---
-# <a name="ms-ts-home-directory-attribute"></a>atributo MS-TS-Home-Directory
+# <a name="ms-ts-home-directory-attribute"></a>Atributo ms-TS-Home-Directory
 
-Diretório base dos serviços de terminal especifica o diretório base do usuário.
+O Diretório Central dos Serviços de Terminal especifica o diretório Home do usuário.
 
 
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | MS-TS-Home-Directory                        |
-| LDAP-Display-Name | msTSHomeDirectory                           |
+| CN                | ms-TS-Home-Directory                        |
+| Ldap-Display-Name | msTSHomeDirectory                           |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1977                     |
-| System-ID-GUID    | 5d3510f0-c4e7-4122-b91f-a20add90e246        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 5d3510f0-c4e7-4122-b91f-a20add90e246        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,10 +55,10 @@ Diretório base dos serviços de terminal especifica o diretório base do usuár
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 32767                             |
 | Search-Flags           | 0x00000000                        |
@@ -76,10 +76,10 @@ Diretório base dos serviços de terminal especifica o diretório base do usuár
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 32767                             |
 | Search-Flags           | 0x00000000                        |
@@ -97,10 +97,10 @@ Diretório base dos serviços de terminal especifica o diretório base do usuár
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 32767                             |
 | Search-Flags           | 0x00000000                        |

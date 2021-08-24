@@ -4,17 +4,17 @@ ms.assetid: d438deb8-3c6d-49c1-923b-d4c57e236fc9
 title: Propriedade DisableAutoMouseProcessing
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b606392acd4030d68af9590555a40d571d70c581
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: c9728f968e1ce562bc8cc643b5c27b8ac2ace3db1b2d39c45a8ae1fa78b44971
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104456409"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119749146"
 ---
 # <a name="disableautomouseprocessing-property"></a>Propriedade DisableAutoMouseProcessing
 
 > [!Note]  
-> Esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
+> esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
 
  
 

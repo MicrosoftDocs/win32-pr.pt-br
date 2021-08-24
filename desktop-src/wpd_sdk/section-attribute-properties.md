@@ -1,5 +1,5 @@
 ---
-description: Os dispositivos portáteis do Windows oferecem suporte às seguintes propriedades de dados da seção.
+description: Windows Os dispositivos portáteis dão suporte às seguintes propriedades de dados da seção.
 ms.assetid: 8760d963-fc07-4b54-aa24-5725f4b95ed2
 title: Propriedades de atributo de seção (PortableDevice. h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 383e2e50aa5d2a922ad50609e316b3dc9905cc38
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 21c2386175fe2c3117afd722bd9a6762b605acbc51e299d33934d161974db796
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105808233"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119704326"
 ---
 # <a name="section-attribute-properties"></a>Propriedades de atributo de seção
 
-Os dispositivos portáteis do Windows oferecem suporte às seguintes propriedades de dados da seção.
+Windows Os dispositivos portáteis dão suporte às seguintes propriedades de dados da seção.
 
 
 

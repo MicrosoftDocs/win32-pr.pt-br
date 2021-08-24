@@ -1,8 +1,8 @@
 ---
-description: Tenta colocar o serviço referenciado no estado em pausa.
+description: Tenta colocar o serviço referenciado no estado pausado.
 ms.assetid: 57b8ccdd-056a-4bec-a0f8-ecebcf18039e
 ms.tgt_platform: multiple
-title: Método PauseService da classe Win32_BaseService
+title: Método PauseService da classe Win32_BaseService classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 4828b81af5d6d543aaf16a34a08350f09078d623
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 8fc031258cb1eb15b578cc9e32e3b8542d47ae4165003590822f45e13fcd92a0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105762764"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119752736"
 ---
-# <a name="pauseservice-method-of-the-win32_baseservice-class"></a>Método PauseService da classe Win32 \_ BaseService
+# <a name="pauseservice-method-of-the-win32_baseservice-class"></a>Método PauseService da classe BaseService Win32 \_
 
 O método de [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **PauseService** tenta colocar o serviço referenciado no estado pausado.
 
-Este tópico usa a sintaxe formato MOF (MOF). Para obter mais informações sobre como usar esse método, consulte [chamando um método](/windows/desktop/WmiSdk/calling-a-method).
+Este tópico usa sintaxe Managed Object Format (MOF). Para obter mais informações sobre como usar esse método, consulte [Chamando um método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,7 +40,7 @@ uint32 PauseService();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos valores listados na lista a seguir ou qualquer outro valor para indicar um erro.
 
@@ -96,7 +96,7 @@ O código de controle pedido não é válido ou é inaceitável para o serviço.
 
 5
 
-O código de controle solicitado não pode ser enviado ao serviço porque o estado do serviço (Propriedade de [**estado**](win32-baseservice.md) [**\_ BaseService do Win32**](win32-baseservice.md)) é igual a 0, 1 ou 2.
+O código de controle solicitado não pode ser enviado para o serviço porque o estado do serviço ( propriedade [**Win32 \_ BaseService**](win32-baseservice.md)[**State)**](win32-baseservice.md) é igual a 0, 1 ou 2.
 
 </dd> <dt>
 
@@ -109,7 +109,7 @@ O serviço não foi iniciado.
 
 </dd> <dt>
 
-**Tempo limite da solicitação de serviço**
+**Tempo de tempo de solicitação de serviço**
 </dt> <dd>
 
 7
@@ -132,7 +132,7 @@ Processo interativo.
 
 9
 
-O caminho do diretório para o arquivo executável do serviço não foi encontrado.
+O caminho do diretório para o arquivo executável de serviço não foi encontrado.
 
 </dd> <dt>
 
@@ -145,7 +145,7 @@ O serviço já está em execução.
 
 </dd> <dt>
 
-**Banco de dados de serviço bloqueado**
+**Banco de Dados de Serviço Bloqueado**
 </dt> <dd>
 
 11
@@ -163,7 +163,7 @@ Uma dependência da qual esse serviço depende foi removida do sistema.
 
 </dd> <dt>
 
-**Falha na dependência de serviço**
+**Falha de dependência de serviço**
 </dt> <dd>
 
 13
@@ -195,7 +195,7 @@ O serviço não tem a autenticação correta para ser executado no sistema.
 
 16
 
-Este serviço está sendo removido do sistema.
+Esse serviço está sendo removido do sistema.
 
 </dd> <dt>
 
@@ -235,7 +235,7 @@ Há caracteres inválidos no nome do serviço.
 
 </dd> <dt>
 
-**Parâmetro de status inválido**
+**Parâmetro inválido de status**
 </dt> <dd>
 
 21
@@ -253,7 +253,7 @@ A conta na qual esse serviço deve ser executado é inválida ou não tem as per
 
 </dd> <dt>
 
-**O serviço de status existe**
+**O Serviço de Status existe**
 </dt> <dd>
 
 23
@@ -262,7 +262,7 @@ O serviço existe no banco de dados de serviços disponível no sistema.
 
 </dd> <dt>
 
-**O serviço já está em pausa**
+**Serviço já em pausa**
 </dt> <dd>
 
 24
@@ -286,8 +286,8 @@ O serviço está pausado atualmente no sistema.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 

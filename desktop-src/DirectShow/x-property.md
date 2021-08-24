@@ -4,12 +4,12 @@ ms.assetid: 74a2ae05-8e30-41ed-a75e-09e49ae2b331
 title: Propriedade x
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bf878971379096594bfc51975fd005726c30e395
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 00535dc95841a17c8b9ffc2558bc163a94946cca77414a7ec34603a956b596d2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105759005"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119755556"
 ---
 # <a name="x-property"></a>Propriedade x
 
@@ -26,11 +26,11 @@ A `x` propriedade define ou recupera a posição x do canto superior esquerdo do
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retorna a posição X do canto superior esquerdo do retângulo como um inteiro.
+Retorna a posição X do canto superior esquerdo do retângulo como um Inteiro.
 
 ## <a name="remarks"></a>Comentários
 
-Esta propriedade é de leitura/gravação sem valor padrão.
+Essa propriedade é de leitura/gravação sem valor padrão.
 
  
 

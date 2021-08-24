@@ -3,7 +3,7 @@ title: Mensagem de CB_SETITEMHEIGHT (WinUser. h)
 description: Um aplicativo envia uma \_ mensagem de SETITEMHEIGHT CB para definir a altura dos itens de lista ou o campo de seleção em uma caixa de combinação.
 ms.assetid: 25a01170-5ffc-4d86-b696-706f5375570b
 keywords:
-- Controles de CB_SETITEMHEIGHT de mensagens do Windows
+- controles de Windows de mensagem de CB_SETITEMHEIGHT
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e46be007cdea17857e5d8ec42a12228821539d5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b97e83d13e66d0a8252fdc1974c775188f8009958a3f286916b0e46ea4f0e88c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105750944"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119699436"
 ---
 # <a name="cb_setitemheight-message"></a>\_Mensagem de SETITEMHEIGHT CB
 
@@ -45,7 +45,7 @@ Especifica a altura, em pixels, do componente da caixa de combinação identific
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se o índice ou a altura for inválido, o valor de retorno será CB \_ Err.
 
@@ -59,9 +59,9 @@ A altura do campo de seleção em uma caixa de combinação é definida independ
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 
