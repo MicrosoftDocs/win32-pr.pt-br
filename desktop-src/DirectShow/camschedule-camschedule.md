@@ -1,7 +1,7 @@
 ---
-description: Construtor de CAMSchedule. CAMSchedule-método de construtor.
+description: Construtor CAMSchedule.CAMSchedule – método de construtor.
 ms.assetid: ff210374-f394-4267-a67a-1a60a2f9538d
-title: Construtor CAMSchedule. CAMSchedule (Dsschedule. h)
+title: Construtor CAMSchedule.CAMSchedule (Dsschedule.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ce52a296c375f4d6e96f5fa44817a0098da9ae9f
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: c5423b774b265fa205fecd0b01df2c6909f53a4178c57d0ba6883f35b421f051
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108096424"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119757726"
 ---
-# <a name="camschedulecamschedule-constructor"></a>Construtor CAMSchedule. CAMSchedule
+# <a name="camschedulecamschedule-constructor"></a>Construtor CAMSchedule.CAMSchedule
 
-Método de construtor.
+Método do construtor.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,10 +42,10 @@ CAMSchedule(
 
 <dl> <dt>
 
-*hEvent* 
+*Hevent* 
 </dt> <dd>
 
-Identificador para um evento de redefinição automática.
+Lidar com um evento de redefinição automática.
 
 </dd> </dl>
 
@@ -55,12 +55,12 @@ Identificador para um evento de redefinição automática.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Dsschedule. h (incluir fluxos. h)</dt> </dl>                                                                                |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Dsschedule.h (incluir Fluxos.h)</dt> </dl>                                                                                |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -3,7 +3,7 @@ title: Mensagem de LVM_SETITEMCOUNT (commctrl. h)
 description: Faz com que o controle de exibição de lista aloque memória para o número especificado de itens ou define o número virtual de itens em um controle de exibição de lista virtual.
 ms.assetid: 5e794c12-ddcb-44fc-b0d2-677352602503
 keywords:
-- Controles de LVM_SETITEMCOUNT de mensagens do Windows
+- controles de Windows de mensagem de LVM_SETITEMCOUNT
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e390e7ae5913053f91f7f2f8d197af1cf4b7a40
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: be6b35b38c65663d9811a27341cf10d668a9e045641a8ff0871f6b49fe8bcdbe
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085337"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119656276"
 ---
 # <a name="lvm_setitemcount-message"></a>Mensagem do LVM \_ SETitemcount
 
@@ -54,7 +54,7 @@ O número de itens que o controle de exibição de lista contém, em última ins
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará zero se for bem-sucedido ou nenhum outro.
 
@@ -76,9 +76,9 @@ Quando a exibição de lista de controle comum é uma exibição de lista virtua
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

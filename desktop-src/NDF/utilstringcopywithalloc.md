@@ -1,9 +1,9 @@
 ---
-title: Função UtilStringCopyWithAlloc (Ndattributils. h)
+title: Função UtilStringCopyWithAlloc (Ndattributils.h)
 description: Aloca e copia uma cadeia de caracteres de origem.
 ms.assetid: e1400ae1-0edd-4b59-af03-3da1b9d7073b
 keywords:
-- NDF da função UtilStringCopyWithAlloc
+- Função UtilStringCopyWithAlloc NDF
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b68bd1815ff09473f0431dde19a12a87603a9dec
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3654fa5eefd45a51d963325e10fbcba765420afe25a5c47a058bbaf4e4093ef0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105789750"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119801526"
 ---
 # <a name="utilstringcopywithalloc-function"></a>Função UtilStringCopyWithAlloc
 
-A função **UtilStringCopyWithAlloc** aloca e copia uma cadeia de caracteres de origem.
+A **função UtilStringCopyWithAlloc** aloca e copia uma cadeia de caracteres de origem.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,25 +42,25 @@ HRESULT UtilStringCopyWithAlloc(
 
 <dl> <dt>
 
-*Buffer* \[ fora\]
+*Buffer* \[ out\]
 </dt> <dd>
 
-Tipo: **LPWSTR \** _
+Tipo: **LPWSTR \***
 
-O local onde o ponteiro para a memória alocada é armazenado. Quando não for mais necessário, ele deve ser liberado com [_ *CoTaskMemFree* *](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree). Esse buffer é sempre terminado em nulo.
+O local em que o ponteiro para a memória alocada é armazenado. Quando não for mais necessário, ele deverá ser liberado com [**CoTaskMemFree.**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree) Esse buffer é sempre terminado em nulo.
 
 </dd> <dt>
 
-*BufferMax* \[ no\]
+*BufferMax* \[ Em\]
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
-O número máximo de caracteres a serem lidos da *origem*.
+O número máximo de caracteres a ler da *Origem.*
 
 </dd> <dt>
 
-*Origem* \[ do no\]
+*Origem* \[ Em\]
 </dt> <dd>
 
 Tipo: **LPCWSTR**
@@ -69,11 +69,11 @@ A cadeia de caracteres a ser copiada.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
-Os valores de retorno possíveis incluem, mas não se limitam a, o seguinte.
+Os valores de retorno possíveis incluem, mas não estão limitados a, o seguinte.
 
 
 
@@ -92,9 +92,9 @@ Os valores de retorno possíveis incluem, mas não se limitam a, o seguinte.
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                 |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                       |
-| parâmetro<br/>                   | <dl> <dt>Ndattributils. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                 |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                       |
+| Cabeçalho<br/>                   | <dl> <dt>Ndattributils.h</dt> </dl> |
 
 
 
@@ -102,7 +102,7 @@ Os valores de retorno possíveis incluem, mas não se limitam a, o seguinte.
 
 <dl> <dt>
 
-[**CoTaskMemFree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree)
+[**Cotaskmemfree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree)
 </dt> <dt>
 
 [**UtilAssembleStringsWithAlloc**](utilassemblestringswithalloc.md)

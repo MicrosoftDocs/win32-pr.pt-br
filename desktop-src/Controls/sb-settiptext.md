@@ -3,7 +3,7 @@ title: Mensagem de SB_SETTIPTEXT (commctrl. h)
 description: Define o texto da dica de ferramenta para uma parte em uma barra de status. A barra de status deve ter sido criada com o \_ estilo de dicas de ferramenta SBT para habilitar dicas de ferramenta.
 ms.assetid: 8fc3cc00-9742-4861-b2c2-b8aa30f75aaa
 keywords:
-- Controles de SB_SETTIPTEXT de mensagens do Windows
+- controles de Windows de mensagem de SB_SETTIPTEXT
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 52d5ddb3f4fdfe18525e2b444438295f8a926180
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 864ba53066b000f9f7ae65365341238a701b4e70bc4ce8cc70adba923d57a5f9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455606"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119637016"
 ---
 # <a name="sb_settiptext-message"></a>\_Mensagem de SETTIPTEXT SB
 
@@ -45,7 +45,7 @@ Ponteiro para um buffer de caracteres que contém o novo texto de dica de ferram
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno não é usado.
 
@@ -62,9 +62,9 @@ Esse texto de dica de ferramenta é exibido em duas situações:
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 | Nomes Unicode e ANSI<br/>   | **SB \_ SETTIPTEXTW** (Unicode) e **SB \_ SETTIPTEXTA** (ANSI)<br/>               |
 
 

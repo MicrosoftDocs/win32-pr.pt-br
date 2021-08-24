@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - wfdsink.h
-ms.openlocfilehash: dc23416d4d13284862aea652dd71909e71879afc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d72f444d409a7a3d43103967aff671fa7c808e5a37858e79f175db3511960e95
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105750794"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119780076"
 ---
 # <a name="wfd_display_sink_notification_result-structure"></a>\_Estrutura de \_ resultados da notificação do coletor de vídeo WFD \_ \_
 
@@ -112,9 +112,9 @@ Um ponteiro para uma cadeia de caracteres terminada em nulo que descreve o perfi
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 8.1 \[ apenas aplicativos de área de trabalho\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012 R2\]<br/>                              |
-| parâmetro<br/>                   | <dl> <dt>Wfdsink. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8.1 \[ somente aplicativos da área de trabalho\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[Somente aplicativos da área de trabalho R2\]<br/>                              |
+| Cabeçalho<br/>                   | <dl> <dt>Wfdsink. h</dt> </dl> |
 
 
 

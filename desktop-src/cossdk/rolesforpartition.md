@@ -1,5 +1,5 @@
 ---
-description: A coleção RolesForPartition sempre está relacionada a um objeto na coleção de partições. Ele contém um objeto para cada função atribuída à partição à qual ele está relacionado.
+description: A coleção RolesForPartition está sempre relacionada a um objeto na coleção Partitions. Ele contém um objeto para cada função atribuída à partição à qual ela está relacionada.
 ms.assetid: 56985f55-d6e8-4066-b6d5-21c62d4278ce
 title: Coleção RolesForPartition
 ms.topic: reference
@@ -12,29 +12,29 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: c97d524e3fc516086db3a815396d6d59f9369b31
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 6c1e64e314478793a5b421d1f0a6a76c2eb028708410a14ea426f52fbd41dfe4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089049"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119637036"
 ---
 # <a name="rolesforpartition-collection"></a>Coleção RolesForPartition
 
-A coleção **RolesForPartition** sempre está relacionada a um objeto na coleção de [**partições**](partitions.md) . Ele contém um objeto para cada função atribuída à partição à qual ele está relacionado.
+A **coleção RolesForPartition** está sempre relacionada a um objeto na [**coleção Partitions.**](partitions.md) Ele contém um objeto para cada função atribuída à partição à qual ela está relacionada.
 
-Esta coleção não dá suporte aos métodos [**Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) e [**Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) do objeto [**COMAdminCatalogCollection**](comadmincatalogcollection.md) .
+Essa coleção não dá suporte aos [**métodos Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) e [**Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) do [**objeto COMAdminCatalogCollection.**](comadmincatalogcollection.md)
 
 ## <a name="members"></a>Membros
 
-A coleção **RolesForPartition** herda da interface [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) , mas não tem membros adicionais.
+A **coleção RolesForPartition** herda da interface [**IUnknown,**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) mas não tem membros adicionais.
 
 ## <a name="related-collections"></a>Coleções relacionadas
 
 Você pode navegar desta coleção para qualquer uma das seguintes coleções:
 
 -   [**ErrorInfo**](errorinfo.md)
--   [**PropertyInfo**](propertyinfo.md)
+-   [**Propertyinfo**](propertyinfo.md)
 -   [**RelatedCollectionInfo**](relatedcollectioninfo.md)
 -   [**UsersInPartitionRole**](usersinpartitionrole.md)
 
@@ -44,7 +44,7 @@ Você pode navegar até essa coleção das seguintes coleções:
 
 ## <a name="properties"></a>Propriedades
 
-As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) dentro da coleção:
+As propriedades a seguir têm suporte no [**objeto COMAdminCatalogObject**](comadmincatalogobject.md) dentro da coleção:
 
 -   [Descrição](#description)
 -   [Nome](#name)
@@ -71,7 +71,7 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 
 | Entrada | Valor |
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrição    | O nome da função. Espaços extras no início e no final da cadeia de caracteres são removidos. Essa propriedade é retornada quando o método de propriedade de [**chave**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) ou [**nome**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) é chamado em um objeto desta coleção. |
+| Descrição    | O nome da função. Espaços extras no início e no final da cadeia de caracteres são removidos. Essa propriedade é retornada quando [**o método de**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) propriedade Key ou [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) é chamado em um objeto dessa coleção. |
 | Access         | ReadOnly                                                                                                                                                                                                                                                    |
 | Type           | String                                                                                                                                                                                                                                                      |
 | Padrão        | ""                                                                                                                                                                                                                                                          |

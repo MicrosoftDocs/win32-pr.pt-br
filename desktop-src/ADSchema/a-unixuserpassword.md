@@ -1,10 +1,10 @@
 ---
-title: atributo unixUserPassword
-description: Contém uma senha de usuário que é compatível com um sistema UNIX.
+title: Atributo unixUserPassword
+description: Contém uma senha de usuário compatível com um UNIX sistema.
 ms.assetid: 9a5f900f-b4e2-4c95-81e9-e5a9e2823e08
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo unixUserPassword
+- Esquema do AD do atributo unixUserPassword
 topic_type:
 - apiref
 api_name:
@@ -13,29 +13,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b834e9dcddeb8da0295e0fbcd17670c65c4dceb2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4ab37b033fd24a554bff845e811884379ea37c0e07632f626d4f91a649ca5b2d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086978"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119801886"
 ---
-# <a name="unixuserpassword-attribute"></a>atributo unixUserPassword
+# <a name="unixuserpassword-attribute"></a>Atributo unixUserPassword
 
-Contém uma senha de usuário que é compatível com um sistema UNIX.
+Contém uma senha de usuário compatível com um UNIX sistema.
 
 
 
 | Entrada | Valor |
 |-------------------|-------------------------------------------------------|
 | CN                | unixUserPassword                                      |
-| LDAP-Display-Name | unixUserPassword                                      |
+| Ldap-Display-Name | unixUserPassword                                      |
 | Tamanho              | \-                                                    |
 | Privilégio de atualização  | \-                                                    |
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.1910                               |
-| System-ID-GUID    | 612cb747-c0e8-4f92-9221-fdd5f15b550d                  |
-| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| System-Id-Guid    | 612cb747-c0e8-4f92-9221-fdd5f15b550d                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -55,10 +55,10 @@ Contém uma senha de usuário que é compatível com um sistema UNIX.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | Falso        |
+| Tem valor único       | Falso        |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | 1            |
 | Range-Upper            | 128          |
 | Search-Flags           | 0x00000000   |
@@ -76,10 +76,10 @@ Contém uma senha de usuário que é compatível com um sistema UNIX.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | Falso        |
+| Tem valor único       | Falso        |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | 1            |
 | Range-Upper            | 128          |
 | Search-Flags           | 0x00000080   |
@@ -97,10 +97,10 @@ Contém uma senha de usuário que é compatível com um sistema UNIX.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | Falso        |
+| Tem valor único       | Falso        |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | 1            |
 | Range-Upper            | 128          |
 | Search-Flags           | 0x00000080   |
@@ -118,10 +118,10 @@ Contém uma senha de usuário que é compatível com um sistema UNIX.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | Falso        |
+| Tem valor único       | Falso        |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | 1            |
 | Range-Upper            | 128          |
 | Search-Flags           | 0x00000080   |

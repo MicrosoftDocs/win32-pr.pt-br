@@ -1,9 +1,9 @@
 ---
-title: Estrutura de MCI_VD_STEP_PARMS (Mciapi. h)
-description: A \_ estrutura de parâmetros de etapa de VD do MCI \_ \_ contém informações para o \_ comando de etapa MCI para dispositivos VIDEODISC.
+title: MCI_VD_STEP_PARMS (Mciapi.h)
+description: A estrutura \_ MCI VD \_ STEP \_ PARMS contém informações para o comando MCI \_ STEP para dispositivos videodisc.
 ms.assetid: 5345468c-b195-485a-8101-4a076410f26a
 keywords:
-- Multimídia do Windows da estrutura de MCI_VD_STEP_PARMS
+- MCI_VD_STEP_PARMS estrutura Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b8b368046375f87a897d002c362624fed3ea105
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f494c821a1df68b98548c95a10af47b817e00b8bc0ffbd52ee7836bb4d97441f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499386"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119783851"
 ---
-# <a name="mci_vd_step_parms-structure"></a>\_Estrutura de \_ parâmetros da etapa de VD do MCI \_
+# <a name="mci_vd_step_parms-structure"></a>Estrutura \_ MCI VD \_ STEP \_ PARMS
 
-A estrutura de parâmetros de etapa de VD do MCI contém informações para o comando de [**\_ etapa MCI**](mci-step.md) para dispositivos VIDEODISC. **\_ \_ \_**
+A **estrutura \_ MCI VD \_ STEP \_ PARMS** contém informações para o [**comando MCI \_ STEP**](mci-step.md) para dispositivos videodisc.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,23 +41,23 @@ typedef struct {
 
 <dl> <dt>
 
-**dwCallback**
+**Dwcallback**
 </dt> <dd>
 
-A palavra de ordem inferior Especifica um identificador de janela usado para o \_ sinalizador de notificação MCI.
+A palavra de ordem baixa especifica um alça de janela usado para o sinalizador NOTIFY da \_ MCI.
 
 </dd> <dt>
 
 **dwFrames**
 </dt> <dd>
 
-Número de quadros a serem conetapas.
+Número de quadros a ser etapa.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Ao atribuir dados aos membros dessa estrutura, defina os sinalizadores correspondentes no parâmetro *fdwCommand* da função [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para validar os membros.
+Ao atribuir dados aos membros dessa estrutura, defina os sinalizadores correspondentes no parâmetro *fdwCommand* da [**função mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para validar os membros.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,7 +67,7 @@ Ao atribuir dados aos membros dessa estrutura, defina os sinalizadores correspon
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                          |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                |
-| Cabeçalho<br/>                   | <dl> <dt>Mciapi. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Mciapi.h</dt> </dl> |
 
 
 
@@ -75,13 +75,13 @@ Ao atribuir dados aos membros dessa estrutura, defina os sinalizadores correspon
 
 <dl> <dt>
 
-[**MCI**](mci.md)
+[**Mci**](mci.md)
 </dt> <dt>
 
 [**Estruturas MCI**](mci-structures.md)
 </dt> <dt>
 
-[**\_etapa MCI**](mci-step.md)
+[**ETAPA da \_ MCI**](mci-step.md)
 </dt> <dt>
 
 [**mciSendCommand**](/previous-versions//dd757160(v=vs.85))

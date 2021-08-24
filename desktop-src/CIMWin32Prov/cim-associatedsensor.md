@@ -1,8 +1,8 @@
 ---
-description: A \_ classe CIM AssociatedSensor associa um sensor instalado a um dispositivo lógico. O sensor mede as propriedades de entrada e saída críticas e pode ser incluído no dispositivo ou instalado no próximo.
+description: A classe CIM \_ AssociatedSensor associa um sensor instalado a um dispositivo lógico. O sensor mede as propriedades críticas de entrada e saída e pode ser incluído com o dispositivo ou instalado nas proximidades.
 ms.assetid: 8ccaa37f-b95f-4582-a694-23bdc15b8c8b
 ms.tgt_platform: multiple
-title: Classe CIM_AssociatedSensor
+title: CIM_AssociatedSensor classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,19 +16,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 50eac6b8bd933762df0da0213c420f5895b74640
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 4e70ac657cd1bacff2d396cad08253d50bca422dde2044f562dfda179396e18c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826540"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119701126"
 ---
-# <a name="cim_associatedsensor-class"></a>\_Classe CIM AssociatedSensor
+# <a name="cim_associatedsensor-class"></a>Classe CIM \_ AssociatedSensor
 
-A classe **CIM \_ AssociatedSensor** associa um sensor instalado a um dispositivo lógico. O sensor mede as propriedades de entrada e saída críticas e pode ser incluído no dispositivo ou instalado no próximo.
+A **classe CIM \_ AssociatedSensor** associa um sensor instalado a um dispositivo lógico. O sensor mede as propriedades críticas de entrada e saída e pode ser incluído com o dispositivo ou instalado nas proximidades.
 
 > [!IMPORTANT]
-> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> As classes CIM (Distributed Management Task Force) do DMTF (Distributed Management Task Force) modelo CIM são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
@@ -47,55 +47,55 @@ class CIM_AssociatedSensor : CIM_Dependency
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ AssociatedSensor** tem estes tipos de membros:
+A **classe CIM \_ AssociatedSensor** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ AssociatedSensor** tem essas propriedades.
+A **classe CIM \_ AssociatedSensor** tem essas propriedades.
 
 <dl> <dt>
 
-**Antecedent**
+**Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados **: \_ sensor CIM**
+Tipo de dados: **\_ Sensor CIM**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent")
+Qualificadores: [**substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecessor")
 </dt> </dl>
 
 Um [**\_ sensor CIM**](cim-sensor.md) que descreve o sensor.
 
 </dd> <dt>
 
-**Depende**
+**Dependente**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados **: \_ LogicalDevice CIM**
+Tipo de dados: **Cim \_ LogicalDevice**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependente")
+Qualificadores: [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependente")
 </dt> </dl>
 
-Um [**\_ LogicalDevice CIM**](cim-logicaldevice.md) que descreve o dispositivo lógico para o qual as informações são medidas pelo sensor.
+Um [**\_ LogicalDevice cim**](cim-logicaldevice.md) que descreve o dispositivo lógico para o qual as informações são medidas pelo sensor.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-A classe **CIM \_ AssociatedSensor** é derivada da [**\_ dependência CIM**](cim-dependency.md).
+A **classe Cim \_ AssociatedSensor** é derivada da [**\_ Dependência CIM.**](cim-dependency.md)
 
-O WMI não implementa essa classe. Para obter mais informações sobre classes derivadas de **CIM \_ AssociatedSensor**, consulte [classes Win32](win32-provider.md).
+O WMI não implementa essa classe. Para obter mais informações sobre classes derivadas de **CIM \_ AssociatedSensor**, consulte [Classes Win32](win32-provider.md).
 
-Esta documentação é derivada das descrições da classe CIM publicadas pela DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, obedecer aos padrões de documentação do Microsoft SDK ou fornecer mais informações.
+Esta documentação é derivada das descrições da classe CIM publicadas pelo DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, estar em conformidade com os padrões de documentação do SDK da Microsoft ou fornecer mais informações.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -105,8 +105,8 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -115,7 +115,7 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 
 <dl> <dt>
 
-[**\_Dependência CIM**](cim-dependency.md)
+[**Dependência cim \_**](cim-dependency.md)
 </dt> </dl>
 
  

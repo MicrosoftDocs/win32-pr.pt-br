@@ -6,12 +6,12 @@ keywords:
 - COM valor do registro DCOMSCMRemoteCallFlags COM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6fda58975e40ac6ac1633db8aa78f2c7636f9103
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: 81d658b80d347e684aa42aebad936a863b9bca2138b3118508849a730e11878d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104008420"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119678825"
 ---
 # <a name="dcomscmremotecallflags"></a>DCOMSCMRemoteCallFlags
 
@@ -21,7 +21,7 @@ Controla o comportamento de chamadas do Gerenciador de controle de serviço (DCO
 
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Ole
-   DCOMSCMRemoteCallFlags = value
+   DCOMSCMRemoteCallFlags = value
 ```
 
 ## <a name="remarks"></a>Comentários
@@ -40,7 +40,7 @@ Esse é um valor de **reg \_ DWORD** .
 
 
 
- 
+ 
 
 ## <a name="dcomscm_activation_use_all_authnservices-description"></a>DCOMSCM \_ ativação \_ use \_ todas as \_ AUTHNSERVICES descrição
 
@@ -48,7 +48,7 @@ Quando o cliente emite uma solicitação de ativação que usa as configuraçõe
 
 **Windows Server 2003 e Windows XP/2000:** Se a chamada RPC de ativação que usa o serviço de autenticação Negotiate falhar, o DCOMSCM local fará a chamada RPC de ativação usando Kerberos, NTLM ou outros provedores de segurança configurados. Se nenhum provedor de segurança funcionar, o DCOMSCM local fará a chamada RPC de ativação usando sem segurança.
 
-Ao definir esse sinalizador, o DCOMSCM local no Windows Vista ou superior pode ser feito para se comportar como sistemas anteriores ao vista. Não é recomendável definir esse sinalizador, a menos que necessário por motivos de compatibilidade.
+ao definir esse sinalizador, o DCOMSCM local no Windows Vista ou superior pode ser feito para se comportar como sistemas anteriores ao vista. Não é recomendável definir esse sinalizador, a menos que necessário por motivos de compatibilidade.
 
 ## <a name="dcomscm_activation_disallow_unsecure_call-description"></a>\_Descrição da \_ \_ chamada não segura de DCOMSCM Activation inallow \_
 
@@ -62,7 +62,7 @@ Quando o cliente desempacotar uma referência de objeto, o DCOMSCM local usará 
 
 **Windows Server 2003 e Windows XP/2000:** Se a chamada RPC de resolução OXID usando o serviço de autenticação Negotiate falhar, o DCOMSCM local fará a chamada RPC de resolução OXID usando Kerberos, NTLM ou outros provedores de segurança configurados. Se nenhum provedor de segurança funcionar, o DCOMSCM local fará a chamada RPC de resolução OXID usando sem segurança.
 
-Ao definir esse sinalizador, o DCOMSCM local no Windows Vista ou superior pode ser feito para se comportar como sistemas anteriores ao vista. Não é recomendável definir esse sinalizador, a menos que necessário por motivos de compatibilidade.
+ao definir esse sinalizador, o DCOMSCM local no Windows Vista ou superior pode ser feito para se comportar como sistemas anteriores ao vista. Não é recomendável definir esse sinalizador, a menos que necessário por motivos de compatibilidade.
 
 ## <a name="dcomscm_resolve_disallow_unsecure_call-description"></a>DCOMSCM \_ resolver \_ \_ não permitir descrição da chamada não segura \_
 
@@ -74,7 +74,7 @@ O DCOMSCM local usa o serviço de autenticação Negotiate ao fazer a chamada RP
 
 **Windows Server 2003 e Windows XP/2000:** Se a chamada RPC de ping de coleta de lixo usando o serviço de autenticação Negotiate falhar, o DCOMSCM local fará a chamada RPC de ping de coleta de lixo usando Kerberos, NTLM e outros provedores de segurança configurados. Se nenhum provedor de segurança funcionar, o DCOMSCM local fará a chamada RPC de ping de coleta de lixo usando sem segurança.
 
-Ao definir esse sinalizador, o DCOMSCM local no Windows Vista ou superior pode ser feito para se comportar como sistemas anteriores ao vista. Não é recomendável definir o sinalizador **DCOMSCM \_ de \_ uso \_ de \_ AUTHNSERVICE médio** , a menos que necessário por motivos de compatibilidade.
+ao definir esse sinalizador, o DCOMSCM local no Windows Vista ou superior pode ser feito para se comportar como sistemas anteriores ao vista. Não é recomendável definir o sinalizador **DCOMSCM \_ de \_ uso \_ de \_ AUTHNSERVICE médio** , a menos que necessário por motivos de compatibilidade.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -92,6 +92,6 @@ Ao definir esse sinalizador, o DCOMSCM local no Windows Vista ou superior pode s
 [Segurança em COM](security-in-com.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -4,20 +4,20 @@ ms.assetid: b8365c00-2223-4aff-9fb2-422976af4c31
 title: Definindo o nível de compactação JPEG
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 07d2e82dfb21e121609d5e09e5c31e2242ec652f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6dd72762d27f1e9179b8a1f9bd52ea5b4b7df6cf97a6af658f9e603b87a629e5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647101"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119778626"
 ---
 # <a name="setting-jpeg-compression-level"></a>Definindo o nível de compactação JPEG
 
-Para especificar o nível de compactação ao salvar uma imagem JPEG, inicialize um objeto [**EncoderParameters**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-encoderparameters) e passe o endereço desse objeto para o método [Save](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-save(inistream_inconstclsid_inconstencoderparameters)) da classe [**Image**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-image) . Inicialize o objeto **EncoderParameters** para que ele tenha uma matriz que consista em um objeto [**EncoderParameter**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-encoderparameter) . Inicialize esse objeto **EncoderParameter** para que seu membro de **valor** aponte para um valor **ULONG** de 0 a 100. Defina o membro **GUID** do objeto **EncoderParameter** como EncoderQuality.
+Para especificar o nível de compactação ao salvar uma imagem JPEG, inicialize um objeto [**EncoderParameters**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-encoderparameters) e passe o endereço desse objeto para o método [Save](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-save(inistream_inconstclsid_inconstencoderparameters)) da [**classe Image.**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-image) Inicialize o **objeto EncoderParameters** para que ele tenha uma matriz que consiste em um [**objeto EncoderParameter.**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-encoderparameter) Inicialize esse objeto **EncoderParameter** para que seu membro **Value** aponta para um **valor ULONG** de 0 a 100. De definir **o membro** Guid do objeto **EncoderParameter** como EncoderQuality.
 
 O aplicativo de console a seguir salva três imagens JPEG, cada uma com um nível de qualidade diferente. Um nível de qualidade de 0 corresponde a uma compactação maior e um nível de qualidade de 100 corresponde a uma compactação menor.
 
-A função main se baseia na função auxiliar GetEncoderClsid, que é mostrada na [recuperação do identificador de classe de um codificador](-gdiplus-retrieving-the-class-identifier-for-an-encoder-use.md):
+A função principal depende da função auxiliar GetEncoderClsid, que é mostrada em Recuperando o identificador de classe para [um codificador](-gdiplus-retrieving-the-class-identifier-for-an-encoder-use.md):
 
 
 ```

@@ -1,7 +1,7 @@
 ---
-description: Método getbuttonstate da classe Msvm_Ps2Mouse – recupera o estado atual do botão do dispositivo especificado.
+description: Método GetButtonState da classe Msvm_Ps2Mouse - recupera o estado atual do botão de dispositivo especificado.
 ms.assetid: 7772A3AC-1677-44A7-9E5E-D31E90988705
-title: Método getbuttonstate da classe Msvm_Ps2Mouse
+title: Método GetButtonState da classe Msvm_Ps2Mouse classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 160134a2ae48bb23dc525eeded70b483484e0b71
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: dbbd77b87c0df1d12b20958497d145b77ad62ed5b9691b443be2596fd58e4df6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108112194"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119682516"
 ---
-# <a name="getbuttonstate-method-of-the-msvm_ps2mouse-class"></a>Método getbuttonstate da classe Msvm \_ Ps2Mouse
+# <a name="getbuttonstate-method-of-the-msvm_ps2mouse-class"></a>Método GetButtonState da classe Msvm \_ Ps2Mouse
 
 Recupera o estado atual do botão de dispositivo especificado.
 
@@ -40,36 +40,36 @@ uint32 GetButtonState(
 
 <dl> <dt>
 
-*buttonIndex* \[ no\]
+*buttonIndex* \[ Em\]
 </dt> <dd>
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-O índice de base 1 do botão a ser consultado.
+O índice baseado em 1 do botão a ser consultado.
 
 </dd> <dt>
 
-*botão de* \[ fora\]
+*buttonState* \[ out\]
 </dt> <dd>
 
-Tipo: **booliano**
+Tipo: **booliana**
 
-O estado de inatividade atual do botão. Um valor **verdadeiro** significa que o botão está inoperante.
+O estado para baixo atual do botão. Um **valor True** significa que o botão está ino mouse.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-Um valor de retorno igual A zero indica êxito. Um valor diferente de zero indica uma falha de consulta.
+Um valor de retorno de zero indica êxito. Um valor não zero indica uma falha de consulta.
 
 <dl> <dt>
 
 **Concluído sem erro** (0)
 </dt> <dt>
 
-**Parâmetros de método marcados-trabalho iniciado** (4096)
+**Parâmetros de método verificados – Trabalho iniciado** (4096)
 </dt> <dt>
 
 **Falha** (32768)
@@ -81,16 +81,16 @@ Um valor de retorno igual A zero indica êxito. Um valor diferente de zero indic
 **Sem suporte** (32770)
 </dt> <dt>
 
-O **status é desconhecido** (32771)
+**O status é desconhecido** (32771)
 </dt> <dt>
 
-**Tempo limite** (32772)
+**Tempoout** (32772)
 </dt> <dt>
 
 **Parâmetro inválido** (32773)
 </dt> <dt>
 
-O **sistema está em uso** (32774)
+**O sistema está em usado** (32774)
 </dt> <dt>
 
 **Estado inválido para esta operação** (32775)
@@ -99,15 +99,15 @@ O **sistema está em uso** (32774)
 **Tipo de dados incorreto** (32776)
 </dt> <dt>
 
-O **sistema não está disponível** (32777)
+**O sistema não está disponível** (32777)
 </dt> <dt>
 
-**Memória insuficiente** (32778)
+**Memória sem memória** (32778)
 </dt> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-O acesso à classe [**Msvm \_ Ps2Mouse**](msvm-ps2mouse.md) pode ser restringido pela filtragem do UAC. Para obter mais informações, consulte [controle de conta de usuário e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+O acesso à [**classe Msvm \_ Ps2Mouse**](msvm-ps2mouse.md) pode ser restrito pela Filtragem de UAC. Para obter mais informações, consulte [Controle de conta de usuário e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -115,15 +115,15 @@ O acesso à classe [**Msvm \_ Ps2Mouse**](msvm-ps2mouse.md) pode ser restringido
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

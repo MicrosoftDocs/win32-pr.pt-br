@@ -1,11 +1,11 @@
 ---
 title: Site-Server atributo
-description: Licenciando servidor principal para um determinado site.
+description: Licenciamento do servidor principal para um determinado site.
 ms.assetid: bcae8c63-a953-4721-b2d1-96d0376592c6
 ms.tgt_platform: multiple
 keywords:
-- Esquema de Site-Server do atributo AD
-- Esquema de AD do atributo siteServer
+- Site-Server atributo AD Schema
+- Esquema do AD do atributo siteServer
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 785057cd9ea23c05d58541450dc4c92a502877e5
-ms.sourcegitcommit: f10bb95039c20a9de79f21e3fcb93a543f30a00e
+ms.openlocfilehash: 3995d7a1b85acbbef07b93cc035e11434f5c6becaeac82b31b4e669ea1b5ef13
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "104163676"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119802086"
 ---
 # <a name="site-server-attribute"></a>Site-Server atributo
 
-Licenciando servidor principal para um determinado site.
+Licenciamento do servidor principal para um determinado site.
 
 
 
 | Entrada | Valor |
 |-------------------|----------------------------------------------|
 | CN                | Site-Server                                  |
-| LDAP-Display-Name | siteServer                                   |
+| Ldap-Display-Name | siteServer                                   |
 | Tamanho              | \-                                           |
 | Privilégio de atualização  | Administrador de domínio                         |
-| Frequência de atualização  | Sempre que o site de licenciamento precisar ser alterado. |
+| Frequência de atualização  | Sempre que o site de licenciamento precisar ser alterar. |
 | Attribute-Id      | 1.2.840.113556.1.4.494                       |
-| System-ID-GUID    | 1be8f17c-a9ff-11d0-afe2-00c04fd930c9         |
-| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md)      |
+| System-Id-Guid    | 1be8f17c-a9ff-11d0-afe2-00c04fd930c9         |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md)      |
 
 
 
@@ -44,7 +44,7 @@ Licenciando servidor principal para um determinado site.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Licenciando servidor principal para um determinado site.
 | ID do link                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
 | System-Only            | Falso                                                                 |
-| É de valor único       | Falso                                                                 |
+| Tem valor único       | Falso                                                                 |
 | É indexado             | Falso                                                                 |
-| No catálogo global      | Falso                                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                          |
+| No Catálogo Global      | Falso                                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                          |
 | Range-Lower            | \-                                                                    |
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Classes usadas em        | [**Licenciamento – site-Settings**](c-licensingsitesettings.md)<br/> |
+| Classes usadas em        | [**Licensing-Site-Configurações**](c-licensingsitesettings.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Licenciando servidor principal para um determinado site.
 | ID do link                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
 | System-Only            | Falso                                                                 |
-| É de valor único       | Falso                                                                 |
+| Tem valor único       | Falso                                                                 |
 | É indexado             | Falso                                                                 |
-| No catálogo global      | Falso                                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                          |
+| No Catálogo Global      | Falso                                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                          |
 | Range-Lower            | \-                                                                    |
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Classes usadas em        | [**Licenciamento – site-Settings**](c-licensingsitesettings.md)<br/> |
+| Classes usadas em        | [**Licensing-Site-Configurações**](c-licensingsitesettings.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,10 +101,10 @@ Licenciando servidor principal para um determinado site.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | Falso        |
+| Tem valor único       | Falso        |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -122,15 +122,15 @@ Licenciando servidor principal para um determinado site.
 | ID do link                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
 | System-Only            | Falso                                                                 |
-| É de valor único       | Falso                                                                 |
+| Tem valor único       | Falso                                                                 |
 | É indexado             | Falso                                                                 |
-| No catálogo global      | Falso                                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                          |
+| No Catálogo Global      | Falso                                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                          |
 | Range-Lower            | \-                                                                    |
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Classes usadas em        | [**Licenciamento – site-Settings**](c-licensingsitesettings.md)<br/> |
+| Classes usadas em        | [**Licensing-Site-Configurações**](c-licensingsitesettings.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Licenciando servidor principal para um determinado site.
 | ID do link                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
 | System-Only            | Falso                                                                 |
-| É de valor único       | Falso                                                                 |
+| Tem valor único       | Falso                                                                 |
 | É indexado             | Falso                                                                 |
-| No catálogo global      | Falso                                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                          |
+| No Catálogo Global      | Falso                                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                          |
 | Range-Lower            | \-                                                                    |
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Classes usadas em        | [**Licenciamento – site-Settings**](c-licensingsitesettings.md)<br/> |
+| Classes usadas em        | [**Licensing-Site-Configurações**](c-licensingsitesettings.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Licenciando servidor principal para um determinado site.
 | ID do link                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
 | System-Only            | Falso                                                                 |
-| É de valor único       | Falso                                                                 |
+| Tem valor único       | Falso                                                                 |
 | É indexado             | Falso                                                                 |
-| No catálogo global      | Falso                                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                          |
+| No Catálogo Global      | Falso                                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                          |
 | Range-Lower            | \-                                                                    |
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Classes usadas em        | [**Licenciamento – site-Settings**](c-licensingsitesettings.md)<br/> |
+| Classes usadas em        | [**Licensing-Site-Configurações**](c-licensingsitesettings.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Licenciando servidor principal para um determinado site.
 | ID do link                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
 | System-Only            | Falso                                                                 |
-| É de valor único       | Falso                                                                 |
+| Tem valor único       | Falso                                                                 |
 | É indexado             | Falso                                                                 |
-| No catálogo global      | Falso                                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                          |
+| No Catálogo Global      | Falso                                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                          |
 | Range-Lower            | \-                                                                    |
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Classes usadas em        | [**Licenciamento – site-Settings**](c-licensingsitesettings.md)<br/> |
+| Classes usadas em        | [**Licensing-Site-Configurações**](c-licensingsitesettings.md)<br/> |
 
 
 

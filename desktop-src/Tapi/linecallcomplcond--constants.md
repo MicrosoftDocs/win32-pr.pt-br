@@ -1,45 +1,45 @@
 ---
-description: As \_ constantes de sinalizador de bit LINECALLCOMPLCOND descrevem as condições sob as quais uma chamada pode ser concluída.
+description: As constantes de sinalizador de bits LINECALLCOMPLCOND descrevem as condições sob \_ as quais uma chamada pode ser concluída.
 ms.assetid: 0d7b82e8-ce97-410a-a946-30055cd2d558
-title: Constantes de LINECALLCOMPLCOND_ (TAPI. h)
+title: LINECALLCOMPLCOND_ constantes (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 23663b2939761ea8ef1293875bc78d3ed1ccb31d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 515a3def9167624af60f93abfebc47ba56363880bb375dd1f224aceb38bab18c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105761353"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119681996"
 ---
-# <a name="linecallcomplcond_-constants"></a>\_Constantes LINECALLCOMPLCOND
+# <a name="linecallcomplcond_-constants"></a>Constantes LINECALLCOMPLCOND \_
 
-As constantes de sinalizador de bit **LINECALLCOMPLCOND \_** descrevem as condições sob as quais uma chamada pode ser concluída.
+As constantes de sinalizador de bits **LINECALLCOMPLCOND \_** descrevem as condições sob as quais uma chamada pode ser concluída.
 
 <dl> <dt>
 
-<span id="LINECALLCOMPLCOND_BUSY"></span><span id="linecallcomplcond_busy"></span>**LINECALLCOMPLCOND \_ ocupado**
+<span id="LINECALLCOMPLCOND_BUSY"></span><span id="linecallcomplcond_busy"></span>**LINECALLCOMPLCOND \_ OCUPADO**
 </dt> <dd> <dl> <dt>
 
 
 
-Conclusão da chamada sob condições de ocupado.
+Conclusão da chamada em condições ocupadas.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINECALLCOMPLCOND_NOANSWER"></span><span id="linecallcomplcond_noanswer"></span>**LINECALLCOMPLCOND \_ NOresposta**
+<span id="LINECALLCOMPLCOND_NOANSWER"></span><span id="linecallcomplcond_noanswer"></span>**LINECALLCOMPLCOND \_ NOANSWER**
 </dt> <dd> <dl> <dt>
 
 
 
-Conclusão da chamada em retoque sem condições de resposta.
+Conclusão da chamada em ringback sem condições de resposta.
 
 
 </dt> </dl> </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Sem extensibilidade. Todos os 32 bits são reservados.
+Nenhuma extensibilidade. Todos os 32 bits são reservados.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -47,8 +47,8 @@ Sem extensibilidade. Todos os 32 bits são reservados.
 
 | Requisito | Valor |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versão da TAPI<br/> | Requer TAPI 2,0 ou posterior<br/>                                             |
-| parâmetro<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versão do TAPI<br/> | Requer TAPI 2.0 ou posterior<br/>                                             |
+| Cabeçalho<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

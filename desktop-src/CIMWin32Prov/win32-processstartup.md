@@ -1,5 +1,5 @@
 ---
-description: A \_ classe WMI abstrata do Win32 ProcessStartup representa a configuração de inicialização de um processo baseado no Windows.
+description: a \_ classe WMI abstrata do Win32 ProcessStartup representa a configuração de inicialização de um processo baseado em Windows.
 ms.assetid: 78508404-cab2-42fb-a0ed-0e6e7d21408c
 ms.tgt_platform: multiple
 title: Classe Win32_ProcessStartup
@@ -28,16 +28,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: b0be949b106c1fa88b37e0c7764dbddb0546ded7
-ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
+ms.openlocfilehash: 10b0732b89d5240b457152f4bd19f951f69b8ee693baec54daea3bd6bbba9439
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106187915"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119759346"
 ---
 # <a name="win32_processstartup-class"></a>\_Classe Win32 ProcessStartup
 
-A [classe WMI](../wmisdk/retrieving-a-class.md) abstrata do **Win32 \_ ProcessStartup** representa a configuração de inicialização de um processo baseado no Windows. A classe é definida como uma definição de tipo de método, o que significa que ela é usada apenas para passar informações para o método [**Create**](create-method-in-class-win32-process.md) da classe [**\_ process do Win32**](win32-process.md) .
+a [classe WMI](../wmisdk/retrieving-a-class.md) abstrata do **Win32 \_ ProcessStartup** representa a configuração de inicialização de um processo baseado em Windows. A classe é definida como uma definição de tipo de método, o que significa que ela é usada apenas para passar informações para o método [**Create**](create-method-in-class-win32-process.md) da classe [**\_ process do Win32**](win32-process.md) .
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas.
 
@@ -326,53 +326,53 @@ Vermelho em primeiro plano \_
 8
 </dt> <dd>
 
-Intensidade do primeiro plano \_
+Intensidade de primeiro \_ plano
 
 </dd> <dt>
 
 16
 </dt> <dd>
 
-Azul em segundo plano \_
+Tela de \_ fundo azul
 
 </dd> <dt>
 
 32
 </dt> <dd>
 
-Plano de fundo \_ verde
+Verde da \_ tela de fundo
 
 </dd> <dt>
 
 64
 </dt> <dd>
 
-Vermelho em segundo plano \_
+Plano de \_ fundo vermelho
 
 </dd> <dt>
 
 128
 </dt> <dd>
 
-Intensidade do plano de fundo \_
+Intensidade da \_ segundo plano
 
 </dd> </dl>
 
 </dd> <dt>
 
-**PriorityClass**
+**Priorityclass**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| estruturas de processo e thread de win32api \| [**JOBOBJECT \_ \_ \_ informações básicas de limite**](/windows/win32/api/winnt/ns-winnt-jobobject_basic_limit_information) \| PriorityClass")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Process and Thread Structures \| [**JOBOBJECT BASIC LIMIT \_ \_ \_ INFORMATION**](/windows/win32/api/winnt/ns-winnt-jobobject_basic_limit_information) \| PriorityClass")
 </dt> </dl>
 
-Classe de prioridade do novo processo. Use essa propriedade para determinar as prioridades de agendamento dos threads no processo. Se a propriedade for deixada como nula, a classe de prioridade padrão será normal — a menos que a classe de prioridade do processo de criação esteja ociosa ou abaixo do \_ normal. Nesses casos, o processo filho recebe a classe de prioridade padrão do processo de chamada.
+Classe priority do novo processo. Use essa propriedade para determinar as prioridades de agendamento dos threads no processo. Se a propriedade for deixada nula, a classe de prioridade será padrão como Normal, a menos que a classe de prioridade do processo de criação seja Idle ou Below \_ Normal. Nesses casos, o processo filho recebe a classe de prioridade padrão do processo de chamada.
 
 <dt>
 
@@ -383,7 +383,7 @@ Classe de prioridade do novo processo. Use essa propriedade para determinar as p
 
 </dt> <dd>
 
-Indica um processo normal sem necessidade de agendamento especial.
+Indica um processo normal sem necessidades especiais de agendamento.
 
 </dd> <dt>
 
@@ -394,18 +394,18 @@ Indica um processo normal sem necessidade de agendamento especial.
 
 </dt> <dd>
 
-Indica um processo com threads que são executados somente quando o sistema está ocioso e são preempçãos pelos threads de qualquer processo em execução em uma classe de prioridade mais alta. Um exemplo é uma proteção de tela. A classe de prioridade ociosa é herdada por processos filho.
+Indica um processo com threads que são executados somente quando o sistema está ocioso e são preempção pelos threads de qualquer processo em execução em uma classe de prioridade mais alta. Um exemplo é uma economia de tela. A classe de prioridade ociosa é herdada por processos filho.
 
 </dd> <dt>
 
 <span id="High"></span><span id="high"></span><span id="HIGH"></span>
 
-<span id="High"></span><span id="high"></span><span id="HIGH"></span>**Alta** (128)
+<span id="High"></span><span id="high"></span><span id="HIGH"></span>**Alto** (128)
 
 
 </dt> <dd>
 
-Indica um processo que executa tarefas de tempo crítico que devem ser executadas imediatamente para serem executadas corretamente. Os threads de um processo de classe de alta prioridade apropriam os threads de processos de classe de prioridade normal ou de prioridade ociosa. Um exemplo é o Windows Lista de Tarefas, que deve responder rapidamente quando chamado pelo usuário, independentemente da carga no sistema operacional. Use extrema atenção ao usar a classe de alta prioridade, porque um aplicativo associado à CPU de classe de alta prioridade pode usar quase todos os ciclos disponíveis. Somente uma prioridade em tempo real apropria os threads definidos para esse nível.
+Indica um processo que executa tarefas críticas de tempo que devem ser executadas imediatamente para serem executadas corretamente. Os threads de um processo de classe de alta prioridade preempção dos threads de processos de classe de prioridade normal ou de prioridade ociosa. Um exemplo é Windows Lista de Tarefas, que deve responder rapidamente quando chamado pelo usuário, independentemente da carga no sistema operacional. Use muito cuidado ao usar a classe de alta prioridade, pois um aplicativo com limite de CPU de classe de alta prioridade pode usar quase todos os ciclos disponíveis. Somente um thread de prioridade em tempo real preempções definidos para esse nível.
 
 </dd> <dt>
 
@@ -416,7 +416,7 @@ Indica um processo que executa tarefas de tempo crítico que devem ser executada
 
 </dt> <dd>
 
-Indica um processo que tem a maior prioridade possível. Os threads de um processo de classe de prioridade em tempo real apropriam os threads de todos os outros processos, incluindo threads de alta prioridade e processos do sistema operacional executando tarefas importantes. Por exemplo, um processo em tempo real que é executado por mais de um intervalo muito curto pode fazer com que os caches de disco não sejam liberados ou fazer com que um mouse não responda.
+Indica um processo que tem a prioridade mais alta possível. Os threads de um processo de classe de prioridade em tempo real preempção dos threads de todos os outros processos, incluindo threads de alta prioridade e processos do sistema operacional que executam tarefas importantes. Por exemplo, um processo em tempo real que é executado por mais de um intervalo muito breve pode fazer com que os caches de disco não sejam liberados ou fazer com que um mouse não seja responsivo.
 
 </dd> <dt>
 
@@ -427,7 +427,7 @@ Indica um processo que tem a maior prioridade possível. Os threads de um proces
 
 </dt> <dd>
 
-Indica um processo que tem uma prioridade maior que o valor ocioso, mas menor do que o normal.
+Indica um processo que tem uma prioridade maior que Idle, mas menor que Normal.
 
 </dd> <dt>
 
@@ -438,7 +438,7 @@ Indica um processo que tem uma prioridade maior que o valor ocioso, mas menor do
 
 </dt> <dd>
 
-Indica um processo que tem uma prioridade maior que o normal, mas inferior a alta.
+Indica um processo que tem uma prioridade maior que Normal, mas menor que Alta.
 
 </dd> </dl>
 
@@ -447,16 +447,16 @@ Indica um processo que tem uma prioridade maior que o normal, mas inferior a alt
 **ShowWindow**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("win32api \| de processo e estruturas de thread \| [**STARTUPINFO**](/windows/win32/api/processthreadsapi/ns-processthreadsapi-startupinfoa) \| wShowWindow")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Process and Thread Structures \| [**STARTUPINFO**](/windows/win32/api/processthreadsapi/ns-processthreadsapi-startupinfoa) \| wShowWindow")
 </dt> </dl>
 
-Como a janela é exibida para o usuário. Pode ser qualquer um dos valores que podem ser especificados no parâmetro *nCmdShow* para a função de [janela](/windows/desktop/api/winuser/nf-winuser-showwindow) .
+Como a janela é exibida para o usuário. Pode ser qualquer um dos valores que podem ser especificados no parâmetro *nCmdShow* para a [função ShowWindow.](/windows/desktop/api/winuser/nf-winuser-showwindow)
 
 </dd> <dt>
 
@@ -466,13 +466,13 @@ Como a janela é exibida para o usuário. Pode ser qualquer um dos valores que p
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("win32api \| de processo e estruturas de thread \| [**STARTUPINFO**](/windows/win32/api/processthreadsapi/ns-processthreadsapi-startupinfoa) \| lpTitle")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Process and Thread Structures \| [**STARTUPINFO**](/windows/win32/api/processthreadsapi/ns-processthreadsapi-startupinfoa) \| lpTitle")
 </dt> </dl>
 
-Texto exibido na barra de título quando uma nova janela de console é criada; usado para processos de console. Se for **NULL**, o nome do arquivo executável será usado como o título da janela. Essa propriedade deve ser **nula** para processos de GUI ou console que não criem uma nova janela de console.
+Texto exibido na barra de título quando uma nova janela do console é criada; usado para processos de console. Se **NULL**, o nome do arquivo executável será usado como o título da janela. Essa propriedade deve ser **NULL para** processos de GUI ou console que não criam uma nova janela de console.
 
 </dd> <dt>
 
@@ -482,32 +482,32 @@ Texto exibido na barra de título quando uma nova janela de console é criada; u
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("win32api \| de processo e estruturas de thread \| [**STARTUPINFO**](/windows/win32/api/processthreadsapi/ns-processthreadsapi-startupinfoa) \| lpDesktop")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Process and Thread Structures \| [**STARTUPINFO**](/windows/win32/api/processthreadsapi/ns-processthreadsapi-startupinfoa) \| lpDesktop")
 </dt> </dl>
 
-O nome da área de trabalho ou o nome da estação de trabalho e do Windows para o processo. Uma barra invertida na cadeia de caracteres indica que a cadeia de caracteres inclui nomes de estações de trabalho e de janelas. Se **WinstationDesktop** for **nulo**, o novo processo herdará a área de trabalho e a estação de janela de seu processo pai. Se **WinstationDesktop** for uma cadeia de caracteres vazia, o processo não herdará a área de trabalho e a estação de janela do processo pai. O sistema determina se um novo desktop e estação de janela devem ser criados. Uma estação de janela é um objeto seguro que contém uma área de transferência, um conjunto de átomos globais e um grupo de objetos da área de trabalho. A estação de janela interativa que é atribuída à sessão de logon do usuário interativo também contém o teclado, o mouse e o dispositivo de vídeo. Uma área de trabalho é um objeto seguro contido em uma estação de janela. Uma área de trabalho tem uma superfície de exibição lógica e contém janelas, menus e ganchos. Uma estação de janela pode ter várias áreas de trabalho. Somente as áreas de trabalho da estação de janela interativa podem ser visíveis e receber entradas do usuário.
+O nome da área de trabalho ou o nome da área de trabalho e da estação de janela para o processo. Uma faixa invertida na cadeia de caracteres indica que a cadeia de caracteres inclui nomes de estação de área de trabalho e de janela. Se **WinstationDesktop** for **NULL,** o novo processo herdará a área de trabalho e a estação de janela de seu processo pai. Se **WinstationDesktop** for uma cadeia de caracteres vazia, o processo não herdará a área de trabalho e a estação de janela de seu processo pai. O sistema determina se uma nova área de trabalho e uma estação de janela devem ser criadas. Uma estação de janela é um objeto seguro que contém uma área de transferência, um conjunto de átomos globais e um grupo de objetos da área de trabalho. A estação de janela interativa atribuída à sessão de logon do usuário interativo também contém o teclado, o mouse e o dispositivo de exibição. Uma área de trabalho é um objeto seguro contido em uma estação de janela. Uma área de trabalho tem uma superfície de exibição lógica e contém janelas, menus e ganchos. Uma estação de janela pode ter várias áreas de trabalho. Somente as áreas de trabalho da estação de janela interativa podem ser visíveis e receber a entrada do usuário.
 
 </dd> <dt>
 
 **X**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("win32api \| de processo e estruturas de thread \| [**STARTUPINFO**](/windows/win32/api/processthreadsapi/ns-processthreadsapi-startupinfoa) \| dwX")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Process and Thread Structures \| [**STARTUPINFO**](/windows/win32/api/processthreadsapi/ns-processthreadsapi-startupinfoa) \| dwX")
 </dt> </dl>
 
-O deslocamento X do canto superior esquerdo de uma janela se uma nova janela for criada — em pixels. Os deslocamentos são do canto superior esquerdo da tela. Para processos de GUI, a posição especificada é usada na primeira vez que o novo processo chama [**CreateWindow**](/windows/win32/api/winuser/nf-winuser-createwindowa) para criar uma janela sobreposta se o parâmetro *X* de **CreateWindow** for **CW \_ USEDEFAULT**.
+O deslocamento X do canto superior esquerdo de uma janela se uma nova janela for criada, em pixels. Os deslocamentos são do canto superior esquerdo da tela. Para processos de GUI, a posição especificada será usada na primeira vez que o novo processo chamar [**CreateWindow**](/windows/win32/api/winuser/nf-winuser-createwindowa) para criar uma janela sobrecarada se o parâmetro *X* de **CreateWindow** for **CW \_ USEDEFAULT.**
 
 > \[! Observação X\]  
-> e **Y** não pode ser especificado de forma independente.
+> E **Y** não podem ser especificados independentemente.
 
  
 
@@ -516,19 +516,19 @@ O deslocamento X do canto superior esquerdo de uma janela se uma nova janela for
 **XCountChars**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("win32api \| de processo e estruturas de thread \| [**STARTUPINFO**](/windows/win32/api/processthreadsapi/ns-processthreadsapi-startupinfoa) \| XCountChars")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Process and Thread Structures \| [**STARTUPINFO**](/windows/win32/api/processthreadsapi/ns-processthreadsapi-startupinfoa) \| XCountChars")
 </dt> </dl>
 
-Largura do buffer de tela em colunas de caracteres. Essa propriedade é usada para processos que criam uma janela de console e é ignorada em processos de GUI.
+Largura do buffer de tela em colunas de caracteres. Essa propriedade é usada para processos que criam uma janela do console e é ignorada em processos de GUI.
 
 > [!Note]  
-> **XCountChars** e **YCountChars** não podem ser especificados de forma independente.
+> **XCountChars** e **YCountChars** não podem ser especificados independentemente.
 
  
 
@@ -537,19 +537,19 @@ Largura do buffer de tela em colunas de caracteres. Essa propriedade é usada pa
 **XSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("win32api \| de processo e estruturas de thread \| [**STARTUPINFO**](/windows/win32/api/processthreadsapi/ns-processthreadsapi-startupinfoa) \| dwXSize")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Process and Thread Structures \| [**STARTUPINFO**](/windows/win32/api/processthreadsapi/ns-processthreadsapi-startupinfoa) \| dwXSize")
 </dt> </dl>
 
-Largura de pixel de uma janela se uma nova janela for criada. Para processos de GUI, isso é usado apenas na primeira vez que o novo processo chama [**CreateWindow**](/windows/win32/api/winuser/nf-winuser-createwindowa) para criar uma janela sobreposta se o parâmetro NWidth de **CreateWindow** for **\_ USEDEFAULT de peso variável**.
+Largura de pixel de uma janela se uma nova janela for criada. Para processos de GUI, isso só será usado na primeira vez que o novo processo chamar [**CreateWindow**](/windows/win32/api/winuser/nf-winuser-createwindowa) para criar uma janela sobrecarada se o parâmetro nWidth de **CreateWindow** for **CW \_ USEDEFAULT.**
 
 > [!Note]  
-> **XSize** e **YSize** não podem ser especificados de forma independente.
+> **XSize** e **YSize** não podem ser especificados independentemente.
 
  
 
@@ -558,19 +558,19 @@ Largura de pixel de uma janela se uma nova janela for criada. Para processos de 
 **S**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("win32api \| de processo e estruturas de thread \| [**STARTUPINFO**](/windows/win32/api/processthreadsapi/ns-processthreadsapi-startupinfoa) \| dwY")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Process and Thread Structures \| [**STARTUPINFO**](/windows/win32/api/processthreadsapi/ns-processthreadsapi-startupinfoa) \| dwY")
 </dt> </dl>
 
-Deslocamento de pixel do canto superior esquerdo de uma janela se uma nova janela for criada. Os deslocamentos são do canto superior esquerdo da tela. Para processos de GUI, a posição especificada é usada na primeira vez que o novo processo chama [**CreateWindow**](/windows/win32/api/winuser/nf-winuser-createwindowa) para criar uma janela sobreposta se o parâmetro *y* de **CreateWindow** for **CW \_ USEDEFAULT**.
+Deslocamento de pixel do canto superior esquerdo de uma janela se uma nova janela for criada. Os deslocamentos são do canto superior esquerdo da tela. Para processos de GUI, a posição especificada é usada na primeira vez que o novo processo chama [**CreateWindow**](/windows/win32/api/winuser/nf-winuser-createwindowa) para criar uma janela sobrecarada se o parâmetro *y* de **CreateWindow** for **CW \_ USEDEFAULT.**
 
 > \[! Observação X\]  
-> e **Y** não pode ser especificado de forma independente.
+> E **Y** não podem ser especificados independentemente.
 
  
 
@@ -579,10 +579,10 @@ Deslocamento de pixel do canto superior esquerdo de uma janela se uma nova janel
 **YCountChars**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("win32api \| de processo e estruturas de thread \| [**STARTUPINFO**](/windows/win32/api/processthreadsapi/ns-processthreadsapi-startupinfoa) \| YCountChars")
@@ -672,7 +672,7 @@ objProcess.Create "Database.exe", Null, objConfig, intProcessID
 
 
 
-O exemplo de código VBScript a seguir cria um processo do bloco de notas no computador local. **Win32 \_ ProcessStartup** é usado para definir as configurações do processo.
+o exemplo de código VBScript a seguir cria um processo de Bloco de notas no computador local. **Win32 \_ ProcessStartup** é usado para definir as configurações do processo.
 
 
 ```VB

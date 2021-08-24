@@ -1,47 +1,47 @@
 ---
-description: Mostra como usar Wi-Fi funções diretas em aplicativos da área de trabalho.
+description: Mostra como usar funções Wi-Fi Direct em aplicativos da área de trabalho.
 ms.assetid: 50B95B7D-B860-44DF-8E78-1E7D2DC5A9B6
-title: Usando o Wi-Fi funções diretas
+title: Usando as funções Wi-Fi Direct
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8850f5b278a158e32f78118cf5d0d408c123192e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fa9a00a5474632ed54a84a7dc8cc5c64774e7cfe7547e6994acee599df2461ee
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105753254"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119684726"
 ---
-# <a name="using-the-wi-fi-direct-functions"></a>Usando o Wi-Fi funções diretas
+# <a name="using-the-wi-fi-direct-functions"></a>Usando as funções Wi-Fi Direct
 
-Este tópico mostra como usar Wi-Fi funções diretas em aplicativos da área de trabalho. A partir do Windows 8 e do Windows Server 2012, Wi-Fi funções diretas foram adicionadas à API WiFi nativa.
+Este tópico mostra como usar funções Wi-Fi Direct em aplicativos da área de trabalho. A partir Windows 8 e Windows Server 2012, Wi-Fi Funções Diretas foram adicionadas à API Wi-Fi Nativa.
 
-O recurso direto Wi-Fi é baseado no desenvolvimento do Wi-Fi especificação técnica ponto a ponto v 1.1 pela Aliança de Wi-Fi (consulte [especificações publicadas da Wi-Fi Alliance](https://www.wi-fi.org/)). O objetivo do Wi-Fi especificação técnica ponto a ponto é fornecer uma solução para Wi-Fi conectividade de dispositivo para dispositivo sem a necessidade de um ponto de acesso sem fio (AP sem fio) configurar a conexão ou o uso do mecanismo existente Wi-Fi ad hoc (IBSS).
+O Wi-Fi Direct baseia-se no desenvolvimento da especificação técnica ponto a ponto do Wi-Fi v1.1 pela Wi-Fi Alliance (consulte [Especificações publicadas da Wi-Fi Alliance).](https://www.wi-fi.org/) A meta da especificação técnica ponto a ponto do Wi-Fi é fornecer uma solução para Wi-Fi conectividade entre dispositivos sem a necessidade de um ponto de acesso sem fio (AP sem fio) para configurar a conexão ou o uso do mecanismo Wi-Fi Ad hoc (IBSS) existente.
 
 > [!Note]  
-> O modo ad hoc pode não estar disponível em versões futuras do Windows. A partir do Windows 8.1 e do Windows Server 2012 R2, use Wi-Fi Direct em vez disso.
+> O modo ad hoc pode não estar disponível em versões futuras do Windows. Começando com Windows 8.1 e Windows Server 2012 R2, use Wi-Fi Direct.
 
  
 
-As funções a seguir dão suporte ao recurso direto Wi-Fi.
+As funções a seguir suportam o recurso Wi-Fi Direct.
 
--   [**WFDCancelOpenSession**](/windows/desktop/api/wlanapi/nf-wlanapi-wfdcancelopensession) -indica que o aplicativo deseja cancelar uma função [**WFDStartOpenSession**](/windows/desktop/api/wlanapi/nf-wlanapi-wfdstartopensession) pendente que não foi concluída.
--   [**WFDCloseHandle**](/windows/desktop/api/wlanapi/nf-wlanapi-wfdclosehandle) -fecha um identificador para o serviço direto Wi-Fi.
--   [**WFDCloseSession**](/windows/desktop/api/wlanapi/nf-wlanapi-wfdclosesession) -fecha uma sessão após uma chamada bem-sucedida anterior à função [**WFDStartOpenSession**](/windows/desktop/api/wlanapi/nf-wlanapi-wfdstartopensession) .
--   [**WFDOpenHandle**](/windows/desktop/api/wlanapi/nf-wlanapi-wfdopenhandle) -abre um identificador para o serviço Wi-Fi Direct e negocia uma versão da API Wi-Fi Direct a ser usada.
--   [**WFDOpenLegacySession**](/windows/desktop/api/wlanapi/nf-wlanapi-wfdopenlegacysession) – recupera e aplica um perfil armazenado para um Wi-Fi dispositivo herdado direto.
--   [**WFDStartOpenSession**](/windows/desktop/api/wlanapi/nf-wlanapi-wfdstartopensession) -inicia uma conexão sob demanda com um dispositivo específico Wi-Fi Direct, que foi anteriormente emparelhado por meio da experiência de emparelhamento do Windows.
--   [**WFDUpdateDeviceVisibility**](/windows/desktop/api/wlanapi/nf-wlanapi-wfdupdatedevicevisibility) – atualiza a visibilidade do dispositivo para o endereço de dispositivo Wi-Fi direto para um determinado nó de dispositivo Wi-Fi Direct.
--   [**WFD \_ ABRIR \_ sessão \_ de \_ retorno de chamada concluído**](/windows/desktop/api/wlanapi/nc-wlanapi-wfd_open_session_complete_callback) – define a função de retorno de chamada que é chamado pela função [**WFDStartOpenSession**](/windows/desktop/api/wlanapi/nf-wlanapi-wfdstartopensession) quando a operação **WFDStartOpenSession** é concluída
+-   [**WFDCancelOpenSession**](/windows/desktop/api/wlanapi/nf-wlanapi-wfdcancelopensession) – indica que o aplicativo deseja cancelar uma função [**WFDStartOpenSession**](/windows/desktop/api/wlanapi/nf-wlanapi-wfdstartopensession) pendente que não foi concluída.
+-   [**WFDCloseHandle**](/windows/desktop/api/wlanapi/nf-wlanapi-wfdclosehandle) – fecha um handle para o Wi-Fi Direct.
+-   [**WFDCloseSession**](/windows/desktop/api/wlanapi/nf-wlanapi-wfdclosesession) – fecha uma sessão após uma chamada bem-sucedida anteriormente para a [**função WFDStartOpenSession.**](/windows/desktop/api/wlanapi/nf-wlanapi-wfdstartopensession)
+-   [**WFDOpenHandle**](/windows/desktop/api/wlanapi/nf-wlanapi-wfdopenhandle) – abre um handle para o serviço Wi-Fi Direct e negocia uma versão da API Direta de Wi-FI a ser usada.
+-   [**WFDOpenLegacySession**](/windows/desktop/api/wlanapi/nf-wlanapi-wfdopenlegacysession) – recupera e aplica um perfil armazenado para um Wi-Fi herdado direto.
+-   [**WFDStartOpenSession**](/windows/desktop/api/wlanapi/nf-wlanapi-wfdstartopensession) – inicia uma conexão sob demanda para um dispositivo Wi-Fi Direct específico, que foi emparelhado anteriormente por meio da experiência de Windows emparelhamento.
+-   [**WFDUpdateDeviceVisibility**](/windows/desktop/api/wlanapi/nf-wlanapi-wfdupdatedevicevisibility) – atualiza a visibilidade do dispositivo para o endereço do dispositivo Wi-Fi Direct para um determinado nó de dispositivo Wi-Fi Direct.
+-   [**WFD \_ OPEN \_ SESSION \_ COMPLETE \_ CALLBACK**](/windows/desktop/api/wlanapi/nc-wlanapi-wfd_open_session_complete_callback) – define a função de retorno de chamada que é chamada pela função [**WFDStartOpenSession**](/windows/desktop/api/wlanapi/nf-wlanapi-wfdstartopensession) quando a **operação WFDStartOpenSession** é concluída
 
-Para um aplicativo de desktop, o recurso direto Wi-Fi requer que os dispositivos Wi-FI Direct sejam emparelhados anteriormente pelo usuário com a interface do usuário da experiência de emparelhamento do Windows. Após a conclusão desse emparelhamento, é armazenado um perfil que permite que as funções Wi-Fi diretas sejam usadas para iniciar uma sessão Wi-Fi Direct para estabelecer uma conexão entre os dispositivos Wi-Fi Direct.
+Para um aplicativo da área de trabalho, o recurso Wi-Fi Direct exige que os dispositivos Wi-FI Direct sejam emparelhados anteriormente pelo usuário com a interface do usuário Windows experiência de emparelhamento. Depois que esse emparelhamento é concluído, um perfil é armazenado que permite que as funções Wi-Fi Direct sejam usadas para iniciar uma sessão do Wi-Fi Direct para estabelecer uma conexão entre os dispositivos Wi-Fi Direct.
 
-Para usar o Wi-Fi Direct, um aplicativo deve primeiro obter um identificador para o serviço Wi-Fi Direct chamando a função [**WFDOpenHandle**](/windows/desktop/api/wlanapi/nf-wlanapi-wfdopenhandle) . O identificador de Wi-Fi direto (WFD) retornado pela função **WFDOpenHandle** é usado para chamadas de função diretas subsequentes Wi-Fi feitas ao serviço direto Wi-Fi.
+Para usar o Wi-Fi Direct, um aplicativo deve primeiro obter um alçado para o serviço Wi-Fi Direct chamando a [**função WFDOpenHandle.**](/windows/desktop/api/wlanapi/nf-wlanapi-wfdopenhandle) O Wi-Fi do WFD (Direct) retornado pela função **WFDOpenHandle** é usado para chamadas de função Wi-Fi Direct subsequentes feitas ao serviço Wi-Fi Direct.
 
-A função [**WFDStartOpenSession**](/windows/desktop/api/wlanapi/nf-wlanapi-wfdstartopensession) inicia uma operação assíncrona para iniciar uma conexão sob demanda com um dispositivo específico Wi-Fi direto. O dispositivo de Wi-Fi de destino deve ter sido emparelhado anteriormente por meio da experiência de emparelhamento do Windows. Quando a operação assíncrona for concluída, a função de retorno de chamada especificada no parâmetro *pfnCallback* será chamada.
+A [**função WFDStartOpenSession**](/windows/desktop/api/wlanapi/nf-wlanapi-wfdstartopensession) inicia uma operação assíncrona para iniciar uma conexão sob demanda com um dispositivo Wi-Fi Direct específico. O dispositivo Wi-Fi destino deve ter sido emparelhado anteriormente por meio da experiência Windows emparelhamento. Quando a operação assíncrona for concluída, a função de retorno de chamada especificada no *parâmetro pfnCallback* será chamada.
 
-Depois que um aplicativo é feito usando o serviço Wi-Fi Direct, o aplicativo deve chamar a função [**WFDCloseHandle**](/windows/desktop/api/wlanapi/nf-wlanapi-wfdclosehandle) para sinalizar para o serviço Wi-Fi Direct que o aplicativo é feito usando o serviço. Isso permite que o serviço direto do Wi-Fi libere recursos usados pelo aplicativo.
+Depois que um aplicativo for feito usando o serviço Wi-Fi Direct, o aplicativo deverá chamar a função [**WFDCloseHandle**](/windows/desktop/api/wlanapi/nf-wlanapi-wfdclosehandle) para sinalizar ao serviço Wi-Fi Direct que o aplicativo é feito usando o serviço. Isso permite que o Wi-Fi Direct libere recursos usados pelo aplicativo.
 
-Para obter mais informações sobre Wi-Fi Direct para uso em aplicativos da Windows Store, consulte [**PeerFinder**](/uwp/api/Windows.Networking.Proximity.PeerFinder?view=winrt-19041) e classes relacionadas no namespace [**Windows. Networking. Proximity**](/uwp/api/Windows.Networking.Proximity?view=winrt-19041) .
+Para obter mais informações sobre o Wi-Fi Direct para uso em aplicativos da Windows Store, consulte [**Peer Ltda**](/uwp/api/Windows.Networking.Proximity.PeerFinder?view=winrt-19041) e classes relacionadas no [**Windows. Namespace Networking.Proximity.**](/uwp/api/Windows.Networking.Proximity?view=winrt-19041)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -50,10 +50,10 @@ Para obter mais informações sobre Wi-Fi Direct para uso em aplicativos da Wind
 **Outros recursos**
 </dt> <dt>
 
-[Sobre WiFi nativo](about-native-wifi.md)
+[Sobre Wifi nativo](about-native-wifi.md)
 </dt> <dt>
 
-[Sobre a API Wi-Fi nativa](about-the-native-wifi-api.md)
+[Sobre a API wi-fi nativa](about-the-native-wifi-api.md)
 </dt> <dt>
 
 [Sobre o recurso Wi-Fi Direct](about-the-wi-fi-direct-api.md)
@@ -62,10 +62,10 @@ Para obter mais informações sobre Wi-Fi Direct para uso em aplicativos da Wind
 **Referência**
 </dt> <dt>
 
-[**PeerFinder**](/uwp/api/Windows.Networking.Proximity.PeerFinder?view=winrt-19041)
+[**Peer Ltda**](/uwp/api/Windows.Networking.Proximity.PeerFinder?view=winrt-19041)
 </dt> <dt>
 
-[**\_retorno de \_ \_ chamada completo de sessão aberta WFD \_**](/windows/desktop/api/wlanapi/nc-wlanapi-wfd_open_session_complete_callback)
+[**RETORNO DE CHAMADA COMPLETO DA SESSÃO ABERTA \_ \_ \_ \_ DO WFD**](/windows/desktop/api/wlanapi/nc-wlanapi-wfd_open_session_complete_callback)
 </dt> <dt>
 
 [**WFDCancelOpenSession**](/windows/desktop/api/wlanapi/nf-wlanapi-wfdcancelopensession)

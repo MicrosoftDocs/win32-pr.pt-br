@@ -1,19 +1,19 @@
 ---
-title: Funções auxiliares Direct2D
+title: funções auxiliares Direct2D
 description: O namespace D2D1 define as funções a seguir.
 ms.assetid: 8a7c1e7e-9783-4b95-ac4c-4e7cc961f928
 keywords:
 - Namespace D2D1, funções
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e94f20d2fcf5d954cacc62e24948ad2a29aa25cb
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: d2dc903ea53080794d6c249dcc18d76ab7207eabfbb024e78a6f0b14e5299676
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104007901"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119757896"
 ---
-# <a name="direct2d-helper-functions"></a>Funções auxiliares Direct2D
+# <a name="direct2d-helper-functions"></a>funções auxiliares Direct2D
 
 O namespace D2D1 define as funções a seguir.
 
@@ -36,7 +36,7 @@ O namespace D2D1 define as funções a seguir.
 | [**DrawingStateDescription**](/windows/desktop/api/d2d1helper/nf-d2d1helper-drawingstatedescription)<br/>                                                 | Cria uma estrutura de [**\_ Descrição de \_ estado \_ de desenho d2d1**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_drawing_state_description) .<br/>                                                                                                                                    |
 | [**DrawingStateDescription1**](/windows/desktop/api/d2d1_1helper/nf-d2d1_1helper-drawingstatedescription1)<br/>                                               | Cria uma \_ estrutura DESCRIPTION1 de estado de desenho d2d1 \_ \_ .<br/>                                                                                                                                                                             |
 | [**EffectInputDescription**](/windows/desktop/api/D2d1_1helper/nf-d2d1_1helper-effectinputdescription)<br/>                                                   | Cria uma estrutura de [**Descrição de entrada de efeito de d2d1 \_ \_ \_**](/windows/desktop/api/D2D1_1/ns-d2d1_1-d2d1_effect_input_description) .<br/>                                                                                                                                      |
-| [**Ellipse**](/windows/desktop/api/d2d1helper/nf-d2d1helper-ellipse)<br/>                                                                                 | Cria uma estrutura de [**\_ elipse d2d1**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_ellipse) .<br/>                                                                                                                                                                          |
+| [**Elipse**](/windows/desktop/api/d2d1helper/nf-d2d1helper-ellipse)<br/>                                                                                 | Cria uma estrutura de [**\_ elipse d2d1**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_ellipse) .<br/>                                                                                                                                                                          |
 | [**FloatMax**](/windows/desktop/api/d2d1helper/nf-d2d1helper-floatmax)<br/>                                                                               | Retorna o valor máximo de ponto flutuante.<br/>                                                                                                                                                                                           |
 | [**GradientMeshPatch**](/windows/desktop/api/d2d1_3helper/nf-d2d1_3helper-gradientmeshpatch)<br/>                                                             | Cria uma estrutura de [**\_ patch de \_ malha \_ de gradiente d2d1**](/windows/desktop/api/d2d1_3/ns-d2d1_3-d2d1_gradient_mesh_patch) que contém os pontos de controle, as cores e os sinalizadores de limite fornecidos. <br/>                                                                            |
 | [**GradientMeshPatchFromCoonsPatch**](/windows/desktop/api/d2d1_3helper/nf-d2d1_3helper-gradientmeshpatchfromcoonspatch)<br/>                                 | Cria um [**\_ patch de \_ malha \_ de gradiente d2d1**](/windows/desktop/api/d2d1_3/ns-d2d1_3-d2d1_gradient_mesh_patch) de uma descrição de patch de Coons específica. <br/>                                                                                                                    |

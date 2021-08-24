@@ -1,8 +1,8 @@
 ---
-description: A \_ associação CIM PackageCooling representa a relação na qual um dispositivo de resfriamento é instalado em um pacote, como um chassi ou rack, para auxiliar na resfriamento do pacote.
+description: A associação Package Cooling cim representa a relação na qual um dispositivo de resfriamento é instalado em um pacote, como um chassi ou rack, para auxiliar no \_ resfriamento do pacote.
 ms.assetid: 0aaae8e1-6e70-4b26-8e56-dac5657e58c1
 ms.tgt_platform: multiple
-title: Classe CIM_PackageCooling
+title: CIM_PackageCooling classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,19 +16,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 1f88cd3f07983870bed8fd2d740f3bf9051019b4
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 1dcb6727e909936e08ba8506c1a99855136c0a9725c746503dbf7fd7626515df
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104500972"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119820626"
 ---
-# <a name="cim_packagecooling-class"></a>\_Classe CIM PackageCooling
+# <a name="cim_packagecooling-class"></a>Classe Package \_ Cooling cim
 
-A associação **CIM \_ PackageCooling** representa a relação na qual um dispositivo de resfriamento é instalado em um pacote, como um chassi ou rack, para auxiliar na resfriamento do pacote.
+A **associação \_ Package Cooling cim** representa a relação na qual um dispositivo de resfriamento é instalado em um pacote, como um chassi ou rack, para auxiliar no resfriamento do pacote.
 
 > [!IMPORTANT]
-> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> As classes CIM (Distributed Management Task Force) do DMTF (Distributed Management Task Force) modelo CIM são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
@@ -47,55 +47,55 @@ class CIM_PackageCooling : CIM_Dependency
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ PackageCooling** tem estes tipos de membros:
+A **classe \_ Package Cooling cim** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ PackageCooling** tem essas propriedades.
+A **classe \_ Package Cooling cim** tem essas propriedades.
 
 <dl> <dt>
 
-**Antecedent**
+**Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **CIM \_ CoolingDevice**
+Tipo de dados: **Cim \_ CoolingDevice**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent")
+Qualificadores: [**substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecessor")
 </dt> </dl>
 
-Um [**\_ CoolingDevice CIM**](cim-coolingdevice.md) que descreve o dispositivo de resfriamento para o pacote.
+Um [**Cim \_ CoolingDevice**](cim-coolingdevice.md) que descreve o dispositivo de resfriamento para o pacote.
 
 </dd> <dt>
 
-**Depende**
+**Dependente**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **CIM \_ PhysicalPackage**
+Tipo de dados: **Cim \_ PhysicalPackage**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependente")
+Qualificadores: [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependente")
 </dt> </dl>
 
-Um [**\_ PhysicalPackage CIM**](cim-physicalpackage.md) que descreve o pacote físico cujo ambiente é resfriado.
+Um [**\_ PhysicalPackage cim**](cim-physicalpackage.md) que descreve o pacote físico cujo ambiente é resfriado.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-**CIM \_ PackageCooling** é derivado da [**\_ dependência CIM**](cim-dependency.md).
+**CIM \_ Package Cooling** é derivado da Dependência [**\_ CIM.**](cim-dependency.md)
 
 O WMI não implementa essa classe.
 
-Esta documentação é derivada das descrições da classe CIM publicadas pela DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, obedecer aos padrões de documentação do Microsoft SDK ou fornecer mais informações.
+Esta documentação é derivada das descrições da classe CIM publicadas pelo DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, estar em conformidade com os padrões de documentação do SDK da Microsoft ou fornecer mais informações.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -105,8 +105,8 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -115,7 +115,7 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 
 <dl> <dt>
 
-[**\_Dependência CIM**](cim-dependency.md)
+[**Dependência cim \_**](cim-dependency.md)
 </dt> </dl>
 
  

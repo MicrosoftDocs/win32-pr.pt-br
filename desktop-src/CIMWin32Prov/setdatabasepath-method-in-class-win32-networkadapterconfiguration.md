@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: b66a9979ec97d4ceda16acad6488d3b84d5d3a54
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 24fd4802afd29d11c6c5f11a4f86f72cc818a5413cdd8f12f298f46a85a63b9d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501099"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119760126"
 ---
 # <a name="setdatabasepath-method-of-the-win32_networkadapterconfiguration-class"></a>Método DatabasePath da \_ classe Win32 NetworkAdapterConfiguration
 
@@ -45,11 +45,11 @@ uint32 SetDatabasePath(
 *DatabasePath* \[ no\]
 </dt> <dd>
 
-Caminho de arquivo válido para arquivos de banco de dados da Internet padrão (HOSTs, LMHOSTs, redes e protocolos) usados pela interface do Windows Sockets.
+caminho de arquivo válido para arquivos de banco de dados da Internet padrão (hosts, lmhosts, redes e protocolos) usados pela interface de soquetes de Windows.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor de 0 (zero) para uma conclusão bem-sucedida quando nenhuma reinicialização é necessária, 1 (um) para uma conclusão bem-sucedida quando uma reinicialização é necessária, um número diferente se houver um erro. Para obter mais informações sobre códigos de erro, consulte [**WMI Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) or [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obter valores gerais de **HRESULT** , consulte [códigos de erro do sistema](/windows/desktop/Debug/system-error-codes).
 
@@ -321,7 +321,7 @@ Parâmetro fora dos limites.
 
 91
 
-Acesso negado.
+Acesso negado
 
 </dd> <dt>
 
@@ -406,11 +406,11 @@ DHCP não habilitado no adaptador.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método é usado pela interface do Windows Sockets. O caminho padrão é% SystemRoot% \\ System32 \\ drivers \\ .
+esse método é usado pela interface Windows sockets. O caminho padrão é% SystemRoot% \\ System32 \\ drivers \\ .
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de [Modificar o caminho do banco de dados para todos os adaptadores de rede de](https://Gallery.TechNet.Microsoft.Com/94bfa42f-f6a3-482f-8d5a-5445a2475bee) VBScript na galeria do TechNet usa DatabasePath para definir o caminho para os arquivos de banco de dados da Internet padrão (hosts, Lmhosts, redes, protocolos) usados pela interface do Windows Sockets. 
+a amostra [modificar o caminho do banco de dados para todos os adaptadores de rede](https://Gallery.TechNet.Microsoft.Com/94bfa42f-f6a3-482f-8d5a-5445a2475bee) do VBScript na galeria do TechNet usa databasepath para definir o caminho para os arquivos de banco de dados padrão da Internet (hosts, lmhosts, redes, protocolos) usados pela interface de soquetes de Windows. 
 
 ## <a name="requirements"></a>Requisitos
 

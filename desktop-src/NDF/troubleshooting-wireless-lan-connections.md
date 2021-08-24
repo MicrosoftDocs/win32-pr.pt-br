@@ -4,12 +4,12 @@ description: Nesse cenário, um usuário está tentando se conectar a uma LAN se
 ms.assetid: 558dae83-aa16-4751-a497-d7a0da01ce5d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 55878afcee0091634415d4dbc465d1b143f46057
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a3749b3e3a45ef68cb33b7d3658ca346dd4c6e0a8ba8ea11626573f4da6edfbc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005991"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119801807"
 ---
 # <a name="troubleshooting-wireless-lan-connections"></a>Solucionando problemas de conexões de LAN sem fio
 
@@ -31,9 +31,9 @@ Depois que o filtro tiver sido aplicado, você poderá examinar os eventos no re
 
 Expandir os itens em uma ID de atividade no painel esquerdo permitirá que você exiba todos os outros provedores relevantes para a tentativa de conexão. Para exibir os eventos de outros provedores, todos os filtros são removidos clicando em **remover** no painel **filtro de exibição** . Os rastreamentos podem ser analisados rolando o resumo do quadro, selecionando eventos adicionais conforme necessário para coletar mais informações. Nesse caso, o painel detalhes do quadro fornece informações de que a falha ocorre devido a uma falha de troca de chave, provavelmente devido ao usuário entrando na chave de passagem incorreta.
 
- 
+ 
 
- 
+ 
 
 
 

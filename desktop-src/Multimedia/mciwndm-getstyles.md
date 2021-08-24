@@ -3,7 +3,7 @@ title: Mensagem de MCIWNDM_GETSTYLES (VFW. h)
 description: A \_ mensagem GETestilos MCIWNDM recupera os sinalizadores que especificam os estilos de janela MCIWnd atuais usados por uma janela. Você pode enviar essa mensagem explicitamente ou usando a macro MCIWndGetStyles.
 ms.assetid: cd34ba05-47cb-488e-a6c6-4ec1c0d25de8
 keywords:
-- Multimídia do Windows de mensagem MCIWNDM_GETSTYLES
+- mensagem de MCIWNDM_GETSTYLES Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 983e37291977edf2473c2b603cd5b40792fb7989
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 036bd687c5d7828fade23994b9141488354added5ee38d38bafc9c5ce22a954c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105768707"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119783286"
 ---
 # <a name="mciwndm_getstyles-message"></a>\_Mensagem de GETestilizas MCIWNDM
 

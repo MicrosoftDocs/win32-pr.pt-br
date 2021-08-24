@@ -5,12 +5,12 @@ ms.assetid: 345fd6e7-ae14-422f-bcc1-7837b867747e
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 89fa13e2490bb1b0809015842d7565dad1324684
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c91fae358cc343e3ca27942f80bd50aa58539054e6aba2b86df9ff30d8d79c26
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005957"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119737855"
 ---
 # <a name="remote-desktop-protocol-provider-unions"></a>Uniões de provedor de protocolo RDP
 
@@ -41,7 +41,7 @@ Contém diferentes níveis de configurações relacionadas à política para uma
 
 </dd> <dt>
 
-[**UN WTS do \_ cache de \_ estatísticas \_**](/windows/desktop/api/Wtsdefs/ns-wtsdefs-wts_cache_stats_un)
+[**WTS \_ \_desfazer estatísticas do cache \_**](/windows/desktop/api/Wtsdefs/ns-wtsdefs-wts_cache_stats_un)
 </dt> <dd>
 
 Contém estatísticas de cache.
@@ -64,9 +64,9 @@ Contém estatísticas de cache.
 [Estruturas de provedor de protocolo RDP](custom-remote-protocol-structures.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

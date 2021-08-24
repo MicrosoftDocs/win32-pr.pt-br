@@ -1,11 +1,11 @@
 ---
-title: Método IWMPCdromBurn startBurn
-description: O método startBurn grava o CD.
+title: Método startEar IWMPCdrom Ltd
+description: O método start Ltda para o CD.
 ms.assetid: e852c011-5f54-469f-aead-37fa711ef876
 keywords:
-- método startBurn Windows Media Player
-- método startBurn Windows Media Player, interface IWMPCdromBurn
-- Interface IWMPCdromBurn Windows Media Player, método startBurn
+- Método start Ltda Windows Media Player
+- Método startEar Windows Media Player , interface IWMPCdrom Ltd
+- Interface IWMPCdrom Ltda Windows Media Player método , startEar
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fe185d8993286e4be3935b43f6c1e9757623309d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7806501a619d6172d9f1ce0715045c822b30326c2b59c268f432708ea13923ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105787675"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119761066"
 ---
-# <a name="iwmpcdromburnstartburn-method"></a>Método IWMPCdromBurn:: startBurn
+# <a name="iwmpcdromburnstartburn-method"></a>Método IWMPCdrom Ltd::startEar
 
-O método **startBurn** grava o CD.
+O **método start Ltda** para o CD.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -49,15 +49,15 @@ Implements IWMPCdromBurn.startBurn
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-O valor de **burnstate** deve ser WmpbsReady ou wmpbsStopped antes de chamar este método.
+O valor de **burnstate** deve ser wmpbsReady ou wmpbsStopped antes de chamar esse método.
 
-Esse método não funcionará se a unidade de CD não for um gravador ou se o disco na unidade não for gravável. Use **IsAvailable** para determinar se um CD pode ser gravado.
+Esse método não funcionará se a unidade de CD não for um ataque ou se o disco na unidade não for writable. Use **isAvailable para** determinar se um CD pode ser gravado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,16 +75,16 @@ Esse método não funcionará se a unidade de CD não for um gravador ou se o di
 
 <dl> <dt>
 
-[**Interface IWMPCdromBurn (VB e C#)**](iwmpcdromburn--vb-and-c.md)
+[**Interface IWMPCdrom Ltda (VB e C#)**](iwmpcdromburn--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPCdromBurn. burnstate (VB e C#)**](wmplibiwmpcdromburn-iwmpcdromburn-burnstate--vb-and-c.md)
+[**IWMPCdromState.burnState (VB e C#)**](wmplibiwmpcdromburn-iwmpcdromburn-burnstate--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPCdromBurn. IsAvailable (VB e C#)**](wmplibiwmpcdromburn-iwmpcdromburn-isavailable--vb-and-c.md)
+[**IWMPCdrom Deve.isAvailable (VB e C#)**](wmplibiwmpcdromburn-iwmpcdromburn-isavailable--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPCdromBurn. stopBurn (VB e C#)**](wmplibiwmpcdromburn-iwmpcdromburn-stopburn-iwmpcdromburn.md)
+[**IWMPCdrom Ltd.stopEar (VB e C#)**](wmplibiwmpcdromburn-iwmpcdromburn-stopburn-iwmpcdromburn.md)
 </dt> </dl>
 
  

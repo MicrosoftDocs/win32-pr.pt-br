@@ -1,8 +1,8 @@
 ---
-description: A \_ classe CIM CollectionSetting representa a associação entre um CIM \_ CollectionOfMSEs e a classe de configuração definida para eles.
+description: A classe \_ CollectionSetting cim representa a associação entre uma \_ Coleção CIMOfMSEs e a classe de configuração definida para eles.
 ms.assetid: f09bd656-5fdd-4ab1-8ef9-52d431a5117d
 ms.tgt_platform: multiple
-title: Classe CIM_CollectionSetting
+title: CIM_CollectionSetting classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,19 +16,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: c290225ee38008f0345b695af794e57f311f2998
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: d3f8e1c57301c3357ff4d28a056cb92bc4572eb29b62b6414a0064113189173a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826500"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119700886"
 ---
-# <a name="cim_collectionsetting-class"></a>\_Classe CIM CollectionSetting
+# <a name="cim_collectionsetting-class"></a>Classe Cim \_ CollectionSetting
 
-A classe **CIM \_ CollectionSetting** representa a associação entre um [**CIM \_ CollectionOfMSEs**](cim-collectionofmses.md) e a classe de configuração definida para eles.
+A **classe \_ CollectionSetting cim** representa a associação entre uma Coleção [**\_ CIMOfMSEs**](cim-collectionofmses.md) e a classe de configuração definida para eles.
 
 > [!IMPORTANT]
-> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> As classes CIM (Distributed Management Task Force) do DMTF (Distributed Management Task Force) modelo CIM são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
@@ -46,47 +46,47 @@ class CIM_CollectionSetting
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ CollectionSetting** tem estes tipos de membros:
+A **classe Cim \_ CollectionSetting** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ CollectionSetting** tem essas propriedades.
+A **classe \_ CollectionSetting cim** tem essas propriedades.
 
 <dl> <dt>
 
 **Coleção**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **CIM \_ CollectionOfMSEs**
+Tipo de dados: **\_ Coleção CIMOfMSEs**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Referência à classe [**CIM \_ CollectionOfMSEs**](cim-collectionofmses.md) .
+Referência à [**classe CIM \_ CollectionOfMSEs.**](cim-collectionofmses.md)
 
 </dd> <dt>
 
 **Configuração**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados **: \_ configuração de CIM**
+Tipo de dados: **Configuração cim \_**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Referência ao objeto de **configuração** associado à propriedade de **coleção** .
+Referência ao **objeto Setting** associado à **propriedade** Collection.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-O WMI não implementa essa classe. Para obter mais informações sobre classes WMI derivadas do **CIM \_ CollectionSetting**, consulte [classes Win32](win32-provider.md).
+O WMI não implementa essa classe. Para obter mais informações sobre classes WMI derivadas de **\_ CollectionSetting cim**, consulte [Classes Win32](win32-provider.md).
 
-Esta documentação é derivada das descrições da classe CIM publicadas pela DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, obedecer aos padrões de documentação do Microsoft SDK ou fornecer mais informações.
+Esta documentação é derivada das descrições da classe CIM publicadas pelo DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, estar em conformidade com os padrões de documentação do SDK da Microsoft ou fornecer mais informações.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -96,8 +96,8 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 

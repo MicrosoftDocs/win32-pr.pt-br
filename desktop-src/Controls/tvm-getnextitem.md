@@ -3,7 +3,7 @@ title: Mensagem de TVM_GETNEXTITEM (commctrl. h)
 description: Recupera o item de exibição de árvore que possui a relação especificada para um item especificado. Você pode enviar essa mensagem explicitamente usando a \_ macro TreeView GetNextItem.
 ms.assetid: 505c713c-7728-4119-bc0e-482fe7e73193
 keywords:
-- Controles de TVM_GETNEXTITEM de mensagens do Windows
+- controles de Windows de mensagem de TVM_GETNEXTITEM
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3099af5e9abcd3e9c144cfc615a12dd2acb0332b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 84dbbd39ca347bcf1084ddfaa46c997cc5c4e5dd4d52250136a230dd834ac836
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085329"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119698676"
 ---
 # <a name="tvm_getnextitem-message"></a>\_Mensagem TVM GETNEXTITEM
 
@@ -64,7 +64,7 @@ Identificador para um item.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o identificador para o item, se for bem-sucedido. Na maioria dos casos, a mensagem retorna um valor **nulo** para indicar um erro. Consulte a seção comentários para obter detalhes.
 
@@ -100,9 +100,9 @@ Você também pode usar uma destas macros relacionadas:
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

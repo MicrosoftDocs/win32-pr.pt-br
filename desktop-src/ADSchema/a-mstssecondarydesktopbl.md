@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9486aed4897566886722d9f06253cc111be0a4f8
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 630c7c4f917dc5b9bef36b6da72aae7d41e4a918dcf60427edd5e9b36eb69fc9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105811176"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119760896"
 ---
 # <a name="ms-ts-secondary-desktop-bl-attribute"></a>atributo MS-TS-Secondary-desktop-BL
 
@@ -53,7 +53,7 @@ Esse atributo representa o link para trás para um usuário.
 |------------------------|-------------------------------------------|
 | ID do link                | 2173                                      |
 | MAPI-Id                | \-                                        |
-| System-Only            | True                                      |
+| System-Only            | Verdadeiro                                      |
 | É de valor único       | Falso                                     |
 | É indexado             | Falso                                     |
 | No catálogo global      | Falso                                     |
@@ -74,7 +74,7 @@ Esse atributo representa o link para trás para um usuário.
 |------------------------|-------------------------------------------|
 | ID do link                | 2173                                      |
 | MAPI-Id                | \-                                        |
-| System-Only            | True                                      |
+| System-Only            | Verdadeiro                                      |
 | É de valor único       | Falso                                     |
 | É indexado             | Falso                                     |
 | No catálogo global      | Falso                                     |

@@ -7,12 +7,12 @@ keywords:
 - MCI (interface de controle de mídia), sobre
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 808c215f41d6a2c110da6237a84c0943c6ea634c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1c4fbf350fdd778bcdbe2955cb8f0a5147f72c280dd6392225eb010289e1b8a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104363971"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119783476"
 ---
 # <a name="mci"></a>MCI
 
@@ -23,9 +23,9 @@ A MCI (interface de controle de mídia) fornece comandos padrão para a reprodu�
 -   [Usando mensagens de comando do MCI](using-mci-command-messages.md)
 -   [Referência de MCI](mci-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

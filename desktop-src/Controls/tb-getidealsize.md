@@ -1,9 +1,9 @@
 ---
-title: Mensagem de TB_GETIDEALSIZE (commctrl. h)
+title: TB_GETIDEALSIZE mensagem (Commctrl.h)
 description: Obtém o tamanho ideal da barra de ferramentas.
 ms.assetid: d3b5ea4d-fd80-4f07-be4f-89b53a8bdf4d
 keywords:
-- Controles de TB_GETIDEALSIZE de mensagens do Windows
+- TB_GETIDEALSIZE controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a59b8701a4f4debcfb8e43f37068e7e7a4ef4f11
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1844f3ae4200c1120f784c03e5f80d2df4457319cf81e12c88ce0ed84525117d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104008994"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119816306"
 ---
-# <a name="tb_getidealsize-message"></a>TB de \_ mensagem GETIDEALSIZE
+# <a name="tb_getidealsize-message"></a>Mensagem \_ GETIDEALSIZE de TB
 
 Obtém o tamanho ideal da barra de ferramentas.
 
@@ -30,18 +30,18 @@ Obtém o tamanho ideal da barra de ferramentas.
 <dl> <dt>
 
 *wParam* 
-</dt> <dd>Um **bool** que indica se a altura ou a largura ideal da barra de ferramentas é recuperada. Use **true** para recuperar a altura ideal, **false** para recuperar a largura ideal.</dd> <dt>
+</dt> <dd>Um **BOOL** que indica se a altura ideal ou a largura da barra de ferramentas deve ser recuperada. Use **TRUE** para recuperar a altura ideal, **FALSE** para recuperar a largura ideal.</dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Ponteiro para uma estrutura de [**tamanho**](/previous-versions//dd145106(v=vs.85)) que recebe a altura ou largura na qual todos os botões seriam exibidos. Se *wParam* for **true**, somente o membro **CY** (Height) será válido. Se *wParam* for **false**, somente o membro **CX** (Width) será válido.
+Ponteiro para uma [**estrutura SIZE**](/previous-versions//dd145106(v=vs.85)) que recebe a altura ou a largura na qual todos os botões seriam exibidos. Se *wParam* for **TRUE,** somente o **membro cy** (altura) será válido. Se *wParam* for **FALSE,** somente o **membro cx** (largura) será válido.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna **verdadeiro** se for bem-sucedido ou **false** caso contrário.
+Retorna **TRUE se** for bem-sucedido ou FALSE **caso** contrário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,9 +49,9 @@ Retorna **verdadeiro** se for bem-sucedido ou **false** caso contrário.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

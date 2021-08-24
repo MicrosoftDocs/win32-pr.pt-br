@@ -1,5 +1,5 @@
 ---
-description: O método SetIPConnectionMetric é usado para definir a métrica de roteamento associada a este adaptador associado a IP.
+description: O método SetIPConnectionMetric é usado para definir a métrica de roteamento associada a esse adaptador associado a IP.
 ms.assetid: d7f7c0df-51e3-4dc8-8a53-977ecde075df
 ms.tgt_platform: multiple
 title: Método SetIPConnectionMetric da classe Win32_NetworkAdapterConfiguration
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 73d6dde0a8faea2aeaf0982459e3c377bb1ac51d
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 08e27a392ac4b6b31849f0863fa8149730bbfcec5fc4c1fec0e15a4919509f70
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089329"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119759726"
 ---
-# <a name="setipconnectionmetric-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetIPConnectionMetric da classe Win32 \_ NetworkAdapterConfiguration
+# <a name="setipconnectionmetric-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetIPConnectionMetric da classe \_ NetworkAdapterConfiguration do Win32
 
-O método **SetIPConnectionMetric** é usado para definir a métrica de roteamento associada a este adaptador associado a IP.
+O **método SetIPConnectionMetric** é usado para definir a métrica de roteamento associada a esse adaptador associado a IP.
 
-Este tópico usa a sintaxe formato MOF (MOF). Para obter mais informações sobre como usar esse método, consulte [chamando um método](/windows/desktop/WmiSdk/calling-a-method).
+Este tópico usa sintaxe Managed Object Format (MOF). Para obter mais informações sobre como usar esse método, consulte [Chamando um método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,16 +42,16 @@ uint32 SetIPConnectionMetric(
 
 <dl> <dt>
 
-*IPConnectionMetric* \[ no\]
+*IPConnectionMetric* \[ Em\]
 </dt> <dd>
 
-Indica o custo de usar as rotas configuradas para este adaptador associado a IP. O valor é ponderado para essas rotas na tabela de roteamento de IP. Se houver várias rotas para um destino na tabela de roteamento, a rota com a métrica mais baixa será usada. O intervalo de valores válidos é de 1 a 9999. O valor padrão é 1.
+Indica o custo de usar as rotas configuradas para esse adaptador com limite de IP. O valor é ponderado para essas rotas na tabela de roteamento de IP. Se houver várias rotas para um destino na tabela de roteamento, a rota com a métrica mais baixa será usada. O intervalo de valores válidos é de 1 a 9999. O valor padrão é 1.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor de 0 (zero) para uma conclusão bem-sucedida quando nenhuma reinicialização é necessária, 1 (uma) para uma conclusão bem-sucedida quando uma reinicialização é necessária e um número diferente se houver um erro. Para obter mais informações sobre códigos de erro, consulte [**WMI Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) or [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obter valores gerais de **HRESULT** , consulte [códigos de erro do sistema](/windows/desktop/Debug/system-error-codes).
+Retorna um valor de 0 (zero) para uma conclusão bem-sucedida quando nenhuma reinicialização é necessária, 1 (um) para uma conclusão bem-sucedida quando uma reinicialização é necessária e um número diferente se houver um erro. Para obter mais informações sobre códigos de erro, consulte [**Constantes de erro WMI**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para valores **gerais de HRESULT,** consulte [Códigos de erro do sistema.](/windows/desktop/Debug/system-error-codes)
 
 <dl> <dt>
 
@@ -60,7 +60,7 @@ Retorna um valor de 0 (zero) para uma conclusão bem-sucedida quando nenhuma rei
 
 0
 
-Conclusão bem-sucedida, nenhuma reinicialização necessária.
+Conclusão bem-sucedida, sem necessidade de reinicialização.
 
 </dd> <dt>
 
@@ -78,7 +78,7 @@ Conclusão bem-sucedida, reinicialização necessária.
 
 64
 
-Método sem suporte nesta plataforma.
+Não há suporte para o método nesta plataforma.
 
 </dd> <dt>
 
@@ -100,7 +100,7 @@ Máscara de sub-rede inválida.
 
 </dd> <dt>
 
-**Ocorreu um erro ao processar uma instância que foi retornada**
+**Ocorreu um erro ao processar uma Instância que foi retornada**
 </dt> <dd>
 
 67
@@ -136,7 +136,7 @@ Endereço IP inválido.
 
 </dd> <dt>
 
-**Endereço IP de gateway inválido**
+**Endereço IP do gateway inválido**
 </dt> <dd>
 
 71
@@ -145,12 +145,12 @@ Endereço IP do gateway inválido.
 
 </dd> <dt>
 
-**Ocorreu um erro ao acessar o registro para as informações solicitadas**
+**Ocorreu um erro ao acessar o Registro para as informações solicitadas**
 </dt> <dd>
 
 72
 
-Ocorreu um erro ao acessar o registro para obter as informações solicitadas.
+Ocorreu um erro ao acessar o Registro para as informações solicitadas.
 
 </dd> <dt>
 
@@ -190,12 +190,12 @@ Arquivo inválido.
 
 </dd> <dt>
 
-**Caminho de sistema inválido**
+**Caminho do sistema inválido**
 </dt> <dd>
 
 77
 
-Caminho de sistema inválido.
+Caminho do sistema inválido.
 
 </dd> <dt>
 
@@ -235,21 +235,21 @@ Não é possível configurar o serviço DHCP.
 
 </dd> <dt>
 
-**Não é possível renovar a concessão DHCP**
+**Não é possível renovar a concessão de DHCP**
 </dt> <dd>
 
 82
 
-Não é possível renovar a concessão DHCP.
+Não é possível renovar a concessão de DHCP.
 
 </dd> <dt>
 
-**Não é possível liberar a concessão DHCP**
+**Não é possível liberar a concessão de DHCP**
 </dt> <dd>
 
 83
 
-Não é possível liberar a concessão DHCP.
+Não é possível liberar a concessão de DHCP.
 
 </dd> <dt>
 
@@ -258,7 +258,7 @@ Não é possível liberar a concessão DHCP.
 
 84
 
-O IP não está habilitado no adaptador.
+IP não habilitado no adaptador.
 
 </dd> <dt>
 
@@ -276,7 +276,7 @@ IPX não habilitado no adaptador.
 
 86
 
-Erro de limites de número de rede ou quadro.
+Erro de limites de quadro ou número de rede.
 
 </dd> <dt>
 
@@ -321,7 +321,7 @@ Parâmetro fora dos limites.
 
 91
 
-Acesso negado.
+Acesso negado
 
 </dd> <dt>
 
@@ -379,7 +379,7 @@ Interface não configurável.
 
 </dd> <dt>
 
-**Nem todas as concessões DHCP puderam ser liberadas/renovadas**
+**Nem todas as concessões DHCP podem ser liberadas/renovadas**
 </dt> <dd>
 
 98
@@ -393,7 +393,7 @@ Nem todas as concessões DHCP podem ser liberadas ou renovadas.
 
 100
 
-DHCP não habilitado no adaptador.
+O DHCP não está habilitado no adaptador.
 
 </dd> <dt>
 
@@ -406,7 +406,7 @@ DHCP não habilitado no adaptador.
 
 ## <a name="examples"></a>Exemplos
 
-A amostra [Modificar a métrica de conexão de IP para um adaptador de rede](https://Gallery.TechNet.Microsoft.Com/73367c75-7a39-44dc-a8d7-eb2359030969) do VBScript define a métrica de conexão IP para um adaptador de rede como 100.
+O [exemplo Modificar a Métrica de Conexão IP para](https://Gallery.TechNet.Microsoft.Com/73367c75-7a39-44dc-a8d7-eb2359030969) um VBScript do Adaptador de Rede define a métrica de conexão IP para um adaptador de rede como 100.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -416,8 +416,8 @@ A amostra [Modificar a métrica de conexão de IP para um adaptador de rede](htt
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista, Windows Vista<br/>                                                 |
 | Servidor mínimo com suporte<br/> | Windows Server 2008, Windows Server 2008<br/>                                     |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -429,13 +429,13 @@ A amostra [Modificar a métrica de conexão de IP para um adaptador de rede](htt
 [Classes de hardware do sistema de computador](computer-system-hardware-classes.md)
 </dt> <dt>
 
-[**\_NetworkAdapterConfiguration Win32**](win32-networkadapterconfiguration.md)
+[**Win32 \_ NetworkAdapterConfiguration**](win32-networkadapterconfiguration.md)
 </dt> <dt>
 
-[Tarefas do WMI: rede](/windows/desktop/WmiSdk/wmi-tasks--networking)
+[Tarefas WMI: Rede](/windows/desktop/WmiSdk/wmi-tasks--networking)
 </dt> <dt>
 
-[Tarefas do WMI: contas e domínios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
+[Tarefas WMI: contas e domínios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
 </dt> <dt>
 
 [Suporte a IPv6 e IPv4 no WMI](/windows/desktop/WmiSdk/ipv6-and-ipv4-support-in-wmi)

@@ -1,6 +1,6 @@
 ---
 title: Classe MDM_Firewall_PrivateProfile02
-description: A \_ classe PrivateProfile02 do MDM firewall \_ é usada para definir as configurações do Windows Defender firewall.
+description: a \_ classe PrivateProfile02 do MDM firewall \_ é usada para definir as configurações de firewall Windows Defender.
 ms.assetid: 9d25c181-e9a8-4f63-b276-b22676842667
 keywords:
 - Classe MDM_Firewall_PrivateProfile02
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 57812ef7c8550937b009e4ff4855321983391585
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 21c1ce2f2ffd9c06a9c6ba07766e212d1896a6851d3bd1a578acc490b05421df
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105751298"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119815796"
 ---
 # <a name="mdm_firewall_privateprofile02-class"></a>\_ \_ Classe PRIVATEPROFILE02 do MDM firewall
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-A \_ classe PrivateProfile02 do MDM firewall \_ é usada para definir as configurações do Windows Defender firewall.
+a \_ classe PrivateProfile02 do MDM firewall \_ é usada para definir as configurações de firewall Windows Defender.
 
 A sintaxe a seguir é simplificada do código MOF e inclui todas as propriedades herdadas.
 
@@ -233,7 +233,7 @@ Tipo de acesso: leitura/gravação
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                     |
+| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                                     |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                       |
 | Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                              |
 | MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1. mof</dt> </dl> |

@@ -1,6 +1,6 @@
 ---
 title: Fontes
-description: Os usuários interagem com texto mais do que com qualquer outro elemento no Microsoft Windows. Segoe UI (pronunciado \ 0034; SEE-go \ 0034;) é a Windows do sistema. O tamanho da fonte padrão foi aumentado para 9 pontos.
+description: Os usuários interagem com texto mais do que com qualquer outro elemento no Microsoft Windows. Segoe UI (pronuncia-se \ 0034; CONSULTE-go \ 0034;) é a fonte do sistema Windows. O tamanho da fonte padrão foi aumentado para 9 pontos.
 ms.assetid: 6d4f669d-d28c-4585-9bc3-ecda44de6df5
 ms.topic: article
 ms.date: 10/20/2020
@@ -14,90 +14,90 @@ ms.locfileid: "119816445"
 # <a name="fonts"></a>Fontes
 
 > [!NOTE]
-> Este guia de design foi criado para Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte das diretrizes ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais.](/windows/uwp/design/)
+> este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte da orientação ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais](/windows/uwp/design/).
 
-Os usuários interagem com texto mais do que com qualquer outro elemento no Microsoft Windows. Segoe UI (pronuncia-se "SEE-go") é a Windows do sistema. O tamanho da fonte padrão foi aumentado para 9 pontos.
+Os usuários interagem com texto mais do que com qualquer outro elemento no Microsoft Windows. Segoe UI (pronuncia-se "veja-go") é a fonte do sistema Windows. O tamanho da fonte padrão foi aumentado para 9 pontos.
 
-![ilustração do alfabeto na fonte da interface do usuário do segoe ](images/vis-fonts-image1.png)
+![ilustração do alfabeto na fonte da interface do usuário do amsegoe ](images/vis-fonts-image1.png)
 
-A Segoe UI fonte.
+A fonte Segoe UI.
 
-Segoe UI e Segoe não são a mesma fonte. Segoe UI é a fonte Windows para cadeias de caracteres de texto da interface do usuário. Segoe é uma fonte de identidade visual usada pela Microsoft e por parceiros para produzir material para impressão e publicidade.
+Segoe UI e Segoe não são da mesma fonte. Segoe UI é a fonte Windows destinada a cadeias de caracteres de texto da interface do usuário. Segoe é uma fonte de identidade visual usada pela Microsoft e por parceiros para produzir material para impressão e publicidade.
 
-Segoe UI é uma face de tipo acessível, aberta e amigável e, como resultado, tem melhor capacidade de leitura do que Toma, Microsoft Sans Serif e Arial. Ele tem as características de um serif sans humanista: as larguras variáveis de suas maiúsculas (E e S estreitas, por exemplo, em comparação com Helvetica, em que as larguras são mais semelhantes, razoavelmente largas); o estresse e as letras de suas letras minúsculas; e seu verdadeiro itálico (em vez de um "oblique" ou alfaiado, como muitos serifs sans de aparência industrial). A face de tipo deve dar o mesmo efeito visual na tela e na impressão. Ele foi projetado para ser um serif sans humanista sem nenhum caractere forte ou distração.
+Segoe UI é um tipo acessível, aberto e amigável e, como resultado, tem melhor legibilidade do que Tahoma, Microsoft Sans Serif e Arial. Ele tem as características de um Humanist Sans Serif: as larguras variadas de suas letras maiúsculas (e/S estreitas, por exemplo, comparadas com Helvetica, em que as larguras são mais semelhantes, bastante amplas); o estresse e o Letterforms de sua letra minúscula; e seu itálico verdadeiro (em vez de um "oblíquo" ou um romano inclinado, como muitos Sans Serif de aparência industrial). A face de tipos destina-se a dar o mesmo efeito visual na tela e na impressão. Ele foi projetado para ser um Humanist Sans Serif sem caracteres fortes ou atrapalhando a peculiaridade.
 
-Segoe UI é otimizado para ClearType, que está on por padrão no Windows. Com ClearType habilitado, Segoe UI é uma fonte elegante e acessível. Sem ClearType habilitado, Segoe UI é apenas marginalmente aceitável. Esse fator determina quando você deve usar Segoe UI.
+O Segoe UI é otimizado para ClearType, que é ativado por padrão no Windows. Com o ClearType habilitado, Segoe UI é uma fonte elegante e legível. Sem o ClearType habilitado, Segoe UI é apenas marginalmente aceitável. Esse fator determina quando você deve usar Segoe UI.
 
-Segoe UI inclui caracteres latinos, gregos, cirílicos e árabe. Há novas fontes, também otimizadas para ClearType, criadas para outros conjuntos de caracteres e usos. Eles incluem Meiryo para japonês, Malgun Korean para coreano, Microsoft JhengHei para chinês (tradicional), Microsoft YaHei para chinês (simplificado), Gisha para hebraico e Leelawadee para tailandês e as fontes da Coleção ClearType projetadas para uso de documentos.
+Segoe UI inclui caracteres latino, grego, cirílico e árabe. Há novas fontes, também otimizadas para ClearType, criadas para outros conjuntos de caracteres e usos. Isso inclui Meiryo para japonês, Malgun Gothic para coreano, Microsoft JhengHei para chinês (tradicional), Microsoft YaHei para chinês (simplificado), Gisha para Hebraico e Leelawadee para tailandês e as fontes de coleção de ClearType projetadas para uso de documentos.
 
-Meiryo inclui caracteres latinos baseados em Verdana. Malgun Também, Microsoft JhengHei e Microsoft YaHei usam um Segoe UI. O uso de versões itálico dessas fontes não é recomendado. Malgun Também, Microsoft JhengHei e Microsoft YaHei são fornecidos apenas em estilos regulares e em negrito, o que significa que os caracteres itálico são sintetizados com a redução dos estilos de estilo. Embora o Meiryo inclua itálico verdadeiros e itálico em negrito, esses estilos se aplicam somente aos caracteres latinos em que os caracteres japonês permanecem ressíntegros quando o estilo itálico é aplicado.
+Meiryo inclui caracteres latinos com base em Verdana. Malgun Gothic, Microsoft JhengHei e Microsoft YaHei usam um Segoe UI personalizado. O uso de versões em itálico dessas fontes não é recomendado. Malgun Gothic, Microsoft JhengHei e Microsoft YaHei são fornecidos apenas em estilos regulares e em negrito, o que significa que caracteres em itálico são sintetizados inclinando os estilos verticais. Embora Meiryo inclua itálico real e negrito em itálico, esses estilos se aplicam somente aos caracteres latinos que os caracteres japoneses permanecem verticais quando o estilo em itálico é aplicado.
 
-Uma variação do Meiryo, chamada interface do usuário do Meiryo, é preferencial na interface do usuário do comando [ribbons.](cmd-ribbons.md)
+Uma variação de Meiryo, chamada UI de Meiryo, é preferida na interface do usuário do comando de [faixas](cmd-ribbons.md) de as.
 
-Para dar suporte a localidades que usam esses conjuntos de caracteres, Segoe UI é substituído por fontes corretas, dependendo de cada localidade durante o processo [de localização.](glossary.md)
+Para dar suporte a localidades usando esses conjuntos de caracteres, Segoe UI é substituída pelas fontes corretas dependendo de cada localidade durante o processo de [localização](glossary.md) .
 
-Para licenciar Segoe UI e outras fontes da Microsoft para distribuição com um programa baseado em Windows, entre em contato com [Monotype](https://www.monotype.com/).
+para licenciar Segoe UI e outras fontes da Microsoft para distribuição com um programa baseado em Windows, entre em contato com [Monotype](https://www.monotype.com/).
 
-**Observação:** As diretrizes relacionadas [ao estilo e ao tom](text-style-tone.md) e ao texto da interface [do](text-ui.md) usuário são apresentadas em artigos separados.
+**Observação:** As diretrizes relacionadas ao [estilo e](text-style-tone.md) ao [texto da interface do usuário](text-ui.md) e do Tom são apresentadas em artigos separados.
 
 ## <a name="design-concepts"></a>Conceitos de design
 
-### <a name="fonts-typefaces-point-sizes-and-attributes"></a>Fontes, face de tipo, tamanhos de ponto e atributos
+### <a name="fonts-typefaces-point-sizes-and-attributes"></a>Fontes, tipos, tamanhos de pontos e atributos
 
-Na tipografia tradicional, uma fonte descreve uma combinação de uma face de tipo, um tamanho de ponto e atributos. Uma face de tipo é a aparência da fonte. Segoe UI, Tahoma, Verdana e Arial são todas face de tipo. Tamanho do ponto refere-se ao tamanho da fonte, medido da parte superior dos ascendentes para a parte inferior dos descendentes, menos o espaçamento interno (chamado de à frente). Um ponto é de aproximadamente 1/72 polegada. Por fim, uma fonte pode ter atributos de negrito ou itálico.
+Na tipografia tradicional, uma fonte descreve uma combinação de uma face de tipos, um tamanho de ponto e atributos. Uma face de tipos é a aparência da fonte. Segoe UI, Tahoma, Verdana e Arial são todos os tipos. Tamanho do ponto refere-se ao tamanho da fonte, medido a partir da parte superior dos ascendentes até a parte inferior dos descendentes, menos o espaçamento interno (chamado à esquerda). Um ponto é aproximadamente 1/72 polegadas. Por fim, uma fonte pode ter atributos de negrito ou itálico.
 
-Informalmente, as pessoas geralmente usam a fonte no lugar da face de tipo, conforme feito neste artigo, mas tecnicamente, Segoe UI é uma face de tipo, não uma fonte. Cada combinação de atributos é uma fonte exclusiva (por exemplo, 9 pontos Segoe UI regular, 10 pontos Segoe UI negrito e assim por diante).
+Informalmente, as pessoas geralmente usam a fonte no lugar da face de tipos, como feito neste artigo, mas tecnicamente, Segoe UI é uma face de tipos, não uma fonte. Cada combinação de atributos é uma fonte exclusiva (por exemplo, 9 pontos Segoe UI regular, 10 pontos Segoe UI negrito e assim por diante).
 
-### <a name="serif-and-sans-serif"></a>Serif e sans serif
+### <a name="serif-and-sans-serif"></a>Serif e Sans Serif
 
-As faces de tipo são serif ou sans serif. Serif refere-se a pequenos turnos que geralmente terminam os traços de letras em uma fonte. Uma face de tipo sans serif não tem serifs.
+Os tipos de letra são Serif ou sans serif. O serif se refere a pequenas transformações que geralmente finalizam os traços de letras em uma fonte. Um tipo de Sans Serif não tem serifas.
 
-Os leitores geralmente preferem fontes serif usadas como texto do corpo em um documento. Os serifs fornecem uma sensação de formalidade e semelhança para um documento. Para o texto da interface do usuário, a necessidade de uma aparência limpa e a resolução mais baixa de monitores de computador torna o tipo sans serif faces a melhor opção.
+Os leitores geralmente preferem fontes serif usadas como corpo de texto em um documento. As serifas fornecem uma sensação de formalização e elegância a um documento. Para o texto da interface do usuário, a necessidade de uma aparência limpa e a resolução mais baixa dos monitores de computador faz com que os tipos de Sans Serif sejam a melhor opção.
 
 ### <a name="contrast"></a>Contraste
 
-O texto é mais fácil de ler quando há uma grande diferença entre a luminância do texto e a tela de fundo. O texto preto em uma plano de fundo branco fornece o texto escuro de contraste mais alto em um plano de fundo muito claro também pode fornecer alto contraste. Essa combinação é melhor para superfícies de interface do usuário primárias.
+O texto é mais fácil de ler quando há uma grande diferença entre a luminância do texto e o plano de fundo. O texto preto em um plano de fundo branco fornece o texto escuro de contraste mais alto em um plano de fundo muito leve também pode fornecer alto contraste. Essa combinação é melhor para as principais superfícies da interface do usuário.
 
-Texto claro em um plano de fundo escuro oferece bom contraste, mas não tão bom quanto texto escuro em uma plano de fundo claro. Essa combinação funciona bem para superfícies de interface do usuário secundárias, como painéis de tarefas do Explorer, que você deseja des enfatizar em relação às superfícies de interface do usuário primárias.
+O texto claro em um plano de fundo escuro oferece bom contraste, mas não tão bom quanto o texto escuro em um plano de fundo claro. Essa combinação funciona bem para superfícies de interface do usuário secundárias, como painéis de tarefas do Explorer, que você deseja realçar em relação às superfícies da interface do usuário primária.
 
-**Se você quiser garantir que os usuários leiam seu texto, use texto escuro em uma plano de fundo claro.**
+**Se você quiser garantir que os usuários leiam o texto, use o texto escuro em um plano de fundo claro.**
 
-### <a name="affordances"></a>Affordances
+### <a name="affordances"></a>Capacidades
 
-O texto pode usar [as seguintes acessível para](glossary.md) indicar como ele é usado:
+O texto pode usar o seguinte [capacidades](glossary.md) para indicar como ele é usado:
 
--   **Ponteiro.** O ponteiro da barra de I ("seleção de texto") indica que o texto é selecionável, enquanto o ponteiro de seta para a esquerda ("seleção normal") indica que o texto não é.
--   **Cursor.** Quando o texto tem o foco de entrada, o cursor é a barra vertical piscando que indica o ponto de inserção/seleção em texto selecionável ou editável.
--   **Caixa.** Uma caixa em torno do texto que indica que ele é editável. Para reduzir o peso da apresentação, a caixa pode ser exibida dinamicamente somente quando o texto editável é selecionado.
--   **Cor de primeiro plano.** Cinza claro indica que o texto está desabilitado. Cores não cinzas, especialmente azul e roxo, indicam que o texto é um link.
--   **Cor da tela de fundo.** Uma tela de fundo cinza claro sugere fracamente que o texto é somente leitura, mas, na prática, o texto somente leitura pode ter qualquer tela de fundo de cor.
+-   **Refere.** O ponteiro I-bar ("Text Select") indica que o texto é selecionável, enquanto o ponteiro de seta para a esquerda ("Select normal") indica que o texto não é.
+-   **Acento.** Quando o texto tem o foco de entrada, o cursor é a barra vertical piscando que indica o ponto de inserção/seleção em texto selecionável ou editável.
+-   **Quadro.** Uma caixa ao contrário do texto que indica que ele é editável. Para reduzir o peso da apresentação, a caixa poderá ser exibida dinamicamente somente quando o texto editável for selecionado.
+-   **Cor do primeiro plano.** Cinza-claro indica que o texto está desabilitado. Cores não cinzas, especialmente azuis e roxas, indicam que o texto é um link.
+-   **Cor do plano de fundo.** Um plano de fundo cinza claro sugere que o texto é somente leitura, mas na prática, o texto somente leitura pode ter qualquer plano de fundo colorido.
 
-Essas responsabilidades são combinadas para os seguintes significados:
+Esses capacidades são combinados pelos seguintes significados:
 
--   **Editável.** Texto exibido em uma caixa, com um ponteiro de seleção de texto, um cursor (no foco de entrada) e, geralmente, em uma tela de fundo branca.
+-   **Edit.** Texto exibido em uma caixa, com um ponteiro de seleção de texto, um cursor (no foco de entrada) e geralmente em um plano de fundo branco.
 -   **Somente leitura, selecionável.** Texto com um ponteiro de seleção e um cursor (no foco de entrada).
 -   **Somente leitura, não selecionável.** Texto com um ponteiro de seta.
--   **Desabilitado.** Texto cinza claro com um ponteiro de seta, às vezes em uma plano de fundo cinza.
+-   **Desabilitado.** Texto cinza claro com um ponteiro de seta, às vezes em um plano de fundo cinza.
 
-O texto somente leitura tradicionalmente tem uma plano de fundo cinza, mas uma plano de fundo cinza não é necessária. Na verdade, uma tela de fundo cinza pode ser indesejável, especialmente para grandes blocos de texto, porque sugere que o texto está desabilitado e não recomenda a leitura.
+Texto somente leitura tradicionalmente tem um plano de fundo cinza, mas não é necessário um plano de fundo cinza. Na verdade, um plano de fundo cinza pode ser indesejável, especialmente para grandes blocos de texto, porque ele sugere que o texto está desabilitado e não incentiva a leitura.
 
-### <a name="accessibility-and-the-system-font-sizes-and-colors"></a>Acessibilidade e a fonte, tamanhos e cores do sistema
+### <a name="accessibility-and-the-system-font-sizes-and-colors"></a>Acessibilidade e a fonte, os tamanhos e as cores do sistema
 
-As diretrizes para tornar o texto acessível a usuários com deficiências ou deficiências podem ser resumidas a uma regra simples: Respeitar as configurações do usuário sempre usando a fonte, os tamanhos e as cores do sistema.
+As diretrizes para tornar o texto acessível aos usuários com deficiências ou deficiências podem ser preparadas para uma regra simples: respeite as configurações do usuário sempre usando a fonte, os tamanhos e as cores do sistema.
 
 **Se você fizer apenas uma coisa...**
 
-Respeitar as configurações do usuário sempre usando a fonte, os tamanhos e as cores do sistema.
+Respeite as configurações do usuário sempre usando a fonte, os tamanhos e as cores do sistema.
 
-**Desenvolvedores:** No código, você pode determinar as propriedades da fonte do sistema (incluindo seu tamanho) usando a função de API GetThemeFont. Você pode determinar as cores do sistema usando a função de API GetThemeSysColor.
+**Desenvolvedores:** No código, você pode determinar as propriedades de fonte do sistema (incluindo seu tamanho) usando a função de API GetThemeFont. Você pode determinar as cores do sistema usando a função da API GetThemeSysColor.
 
-Como você não pode fazer suposições sobre as configurações de tema do sistema dos usuários, você deve:
+Como não é possível fazer suposições sobre as configurações de tema do sistema dos usuários, você deve:
 
--   Sempre basear as cores da fonte e as plano de fundo das cores do tema do sistema. Nunca faça suas próprias cores com base em valores RGB fixos (vermelho, verde, azul).
--   Sempre corresponda às cores do texto do sistema com suas cores de plano de fundo correspondentes. Por exemplo, se você escolher COLOR STATICTEXT para a cor do texto, também deverá \_ escolher COR ESTÁTICA para a cor da tela de \_ fundo.
--   Sempre crie novas fontes com base em variações proporcionais da fonte do sistema. Considerando as métricas de fonte do sistema, você pode criar variações em negrito, itálico, maiores e menores.
+-   Sempre baseie suas cores de fonte e planos de fundo fora das cores do tema do sistema. Nunca faça suas próprias cores com base em valores RGB (vermelho, verde e azul) fixos.
+-   Sempre corresponder as cores de texto do sistema com suas cores de plano de fundo correspondentes. Por exemplo, se você escolher COLOR \_ STATICTEXT para a cor do texto, você também deverá escolher Color \_ static para a cor do plano de fundo.
+-   Sempre crie novas fontes com base em variações de tamanho proporcional da fonte do sistema. Dadas as métricas de fonte do sistema, você pode criar variações em negrito, itálico, maior e menor.
 
-**Uma maneira simples de garantir que seu programa respeita as configurações dos usuários é testar usando um tamanho de fonte diferente e um esquema de cores de alto contraste.** Todo o texto deve ser reessado e exibido corretamente no esquema de cores escolhido.
+**Uma maneira simples de garantir que o programa respeita as configurações dos usuários é testar usando um tamanho de fonte diferente e um esquema de cores de alto contraste.** Todo o texto deve ser redimensionado e exibido corretamente no esquema de cores escolhido.
 
 ## <a name="usage-patterns"></a>Padrões de uso
 
@@ -156,31 +156,31 @@ O texto tem vários padrões de uso:
 
 
 
-| Tecnologia de interface do usuário | versão de Windows de destino | Fontes a serem usadas e otimizadas para |
+| Tecnologia de interface do usuário | Versão Windows destino | Fontes para usar e otimizar para |
 |--------------------------------------------|-------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Windows Presentation Foundation<br/> | Tudo<br/>                                        | Use as partes do tema do WPF.<br/>                                                                                                                                                                                                                                                                                                                                  |
-| Win32 ou WinForms<br/>               | Windows Vista ou posterior<br/>                     | Use a fonte de Segoe UI apropriada.<br/>                                                                                                                                                                                                                                                                                                                    |
-|                                            | componentes extensíveis ou pré Windows Vista<br/> | para direcionar Windows XP e Windows 2000, use a pseudo-fonte MS Shell de 8 pontos Dlg 2, que é mapeada para Tahoma.<br/> para direcionar versões anteriores do Windows, use 8 pontos MS Shell Dlg pseudo fonte, que é mapeado para Tahoma em Windows 2000 e Windows XP, e para MS Sans Serif no Windows 95, Windows 98, Windows Millennium Edition e Windows NT 4,0.<br/> |
+| Windows Presentation Foundation<br/> | Tudo<br/>                                        | Use partes de tema do WPF.<br/>                                                                                                                                                                                                                                                                                                                                  |
+| Win32 ou WinForms<br/>               | Windows Vista ou posterior<br/>                     | Use a fonte Segoe UI apropriada.<br/>                                                                                                                                                                                                                                                                                                                    |
+|                                            | Componentes extensíveis ou pré-Windows Vista<br/> | Para direcionar Windows XP e Windows 2000, use a pseudo-fonte Dlg 2 do MS Shell de 8 pontos, que mapeia para Toma.<br/> Para direcionar versões anteriores do Windows, use a pseudo-fonte Dlg do MS Shell de 8 pontos, que mapeia para o Toma no Windows 2000 e no Windows XP e para o MS Sans Serif no Windows 95, Windows 98, Windows Edition do Windows e Windows NT 4.0.<br/> |
 
 
 
  
 
--   **Programa**
-    -   para elementos que usam layout fixo (como Windows modelos de diálogo e winforms), codifique a fonte apropriada da tabela anterior.
-    -   para elementos que usam layout dinâmico (como Windows Presentation Foundation), use as fontes de tema. Use APIs de tema como DrawThemeText para desenhar texto com base no símbolo de tema. Certifique-se de ter uma alternativa com base nas métricas do sistema caso o serviço tema não esteja em execução.
--   **Por Segoe UI, use um tamanho de fonte de 9 pontos ou maior.** A fonte Segoe UI é otimizada para esses tamanhos, portanto evite usar tamanhos menores.
--   **Sempre corresponder as cores de texto do sistema com suas cores de plano de fundo correspondentes.** Por exemplo, se você escolher COLOR \_ STATICTEXT para a cor do texto, você também deverá escolher Color \_ static para a cor do plano de fundo.
--   **Sempre crie novas fontes com base em variações de tamanho proporcional da fonte do sistema.** Dadas as métricas de fonte do sistema, você pode criar variações em negrito, itálico, maior e menor.
--   Exibe grandes blocos de texto somente leitura (como termos de licença) em um plano de fundo leve em vez de um plano de fundo cinza. Os planos de fundo em cinza sugerem que o texto está desabilitado e não incentiva a leitura.
+-   **Desenvolvedores:**
+    -   Para elementos que usam layout fixo (como Windows modelos de caixa de diálogo e WinForms), codifica em código a fonte apropriada da tabela anterior.
+    -   Para elementos que usam layout dinâmico (como Windows Presentation Foundation), use as fontes de tema. Use APIs de tema como DrawThemeText para desenhar texto com base no símbolo de tema. Certifique-se de ter uma alternativa com base nas métricas do sistema caso o serviço de tema não seja executado.
+-   **Por Segoe UI, use um tamanho de fonte de 9 pontos ou maior.** A Segoe UI fonte é otimizada para esses tamanhos, portanto, evite usar tamanhos menores.
+-   **Sempre corresponda às cores do texto do sistema com suas cores de plano de fundo correspondentes.** Por exemplo, se você escolher COLOR STATICTEXT para a cor do texto, também deverá \_ escolher COR ESTÁTICA para a cor da tela de \_ fundo.
+-   **Sempre crie novas fontes com base em variações proporcionais da fonte do sistema.** Considerando as métricas de fonte do sistema, você pode criar variações em negrito, itálico, maiores e menores.
+-   Exibir grandes blocos de texto somente leitura (como termos de licença) em uma tela de fundo clara em vez de uma tela de fundo cinza. As plano de fundo cinza sugerem que o texto está desabilitado e não recomenda a leitura.
 -   **Considere um comprimento máximo de linha de 65 caracteres** para facilitar a leitura do texto. (Os caracteres incluem letras, pontuação e espaços.)
 
 ### <a name="attributes"></a>Atributos
 
--   A maior parte do texto da interface do usuário deve ser simples sem nenhum atributo. Os atributos podem ser usados da seguinte maneira:
-    -   **Aplique.** Use em rótulos de controle para facilitar a análise do texto. Use com moderação para chamar a atenção para que os usuários de texto precisem ler. Usar muito mais negrito diminui seu impacto.
-    -   **Colocadas.** Use para fazer referência ao texto literalmente, em vez de aspas. Use com moderação para enfatizar palavras específicas. Use para [prompts](glossary.md) em [caixas de texto](ctrl-text-boxes.md) e [listas suspensas editáveis](/windows/desktop/uxguide/ctrl-drop).
-    -   **Negrito itálico.** Não use.
-    -   **Aplicar.** Não use, exceto para links. Use itálico em vez de ênfase.
--   Nem todas as fontes dão suporte a negrito e itálico, portanto, elas nunca devem ser cruciais para entender o texto.
+-   A maioria dos textos da interface do usuário deve ser simples sem nenhum atributos. Os atributos podem ser usados da seguinte forma:
+    -   **Negrito.** Use em rótulos de controle para facilitar a análise do texto. Use com moderação para chamar a atenção para o texto que os usuários devem ler. O uso de negrito demais diminui seu impacto.
+    -   **Itálico.** Use para se referir ao texto literalmente em vez de aspas. Use com moderação para enfatizar palavras específicas. Use para [prompts](glossary.md) em [caixas de texto](ctrl-text-boxes.md) e listas de listas [listadas editáveis.](/windows/desktop/uxguide/ctrl-drop)
+    -   **Itálico em negrito.** Não use.
+    -   **Sublinhar.** Não use, exceto para links. Use itálico em vez disso para ênfase.
+-   Nem todas as fontes são suportadas em negrito e itálico, portanto, elas nunca devem ser cruciais para entender o texto.
 

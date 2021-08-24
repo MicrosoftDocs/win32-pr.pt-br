@@ -1,8 +1,8 @@
 ---
-description: A \_ associação CIM AdjacentSlots descreve o layout dos slots em uma placa de adaptador ou placa de hospedagem.
+description: A associação \_ AdjacentSlots do CIM descreve o layout de slots em uma placa de hospedagem ou placa de adaptador.
 ms.assetid: d604647f-7b2f-4f99-8d98-adf115ae9dfb
 ms.tgt_platform: multiple
-title: Classe CIM_AdjacentSlots
+title: CIM_AdjacentSlots classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,19 +18,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 695f9c668d6f75864e46026deac9a969993596ff
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a219c2bbe95d8ccf3f89c029b4cb9f417ef8e2f0633a058c736b1339a41d7571
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089407"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119701296"
 ---
-# <a name="cim_adjacentslots-class"></a>\_Classe CIM AdjacentSlots
+# <a name="cim_adjacentslots-class"></a>Classe \_ AdjacentSlots cim
 
-A associação **CIM \_ AdjacentSlots** descreve o layout dos slots em uma placa de adaptador ou placa de hospedagem. Informações, como a distância entre os slots e se elas são "compartilhadas" (se uma for populada, o outro slot não poderá ser usado), será transmitido como propriedades de associação.
+A **associação \_ AdjacentSlots do CIM** descreve o layout de slots em uma placa de hospedagem ou placa de adaptador. Informações, como a distância entre os slots e se eles são "compartilhados" (se um for populado, o outro slot não pode ser usado), são transmitidas como propriedades de associação.
 
 > [!IMPORTANT]
-> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> As classes CIM (Distributed Management Task Force) do DMTF (Distributed Management Task Force) modelo CIM são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
@@ -51,13 +51,13 @@ class CIM_AdjacentSlots
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ AdjacentSlots** tem estes tipos de membros:
+A **classe \_ AdjacentSlots cim** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ AdjacentSlots** tem essas propriedades.
+A **classe \_ AdjacentSlots cim** tem essas propriedades.
 
 <dl> <dt>
 
@@ -73,27 +73,27 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("polegadas")
 </dt> </dl>
 
-Distância, em polegadas, entre os slots adjacentes.
+Distância, em polegadas, entre slots adjacentes.
 
 </dd> <dt>
 
 **SharedSlots**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Se for **true**, um dos slots será preenchido por uma placa de adaptador; o outro slot deve ser deixado vazio.
+Se **TRUE**, um dos slots será populado por uma placa de adaptador; o outro slot deve ser deixado vazio.
 
 </dd> <dt>
 
 **Slota**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados **: \_ slot CIM**
+Tipo de dados: **\_ Slot CIM**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -106,13 +106,13 @@ Referência a um dos slots adjacentes.
 **SlotB**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados **: \_ slot CIM**
+Tipo de dados: **\_ Slot CIM**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Referência ao slot adjacente "other".
+Referência ao slot adjacente "outro".
 
 </dd> </dl>
 
@@ -120,7 +120,7 @@ Referência ao slot adjacente "other".
 
 O WMI não implementa essa classe.
 
-Esta documentação é derivada das descrições da classe CIM publicadas pela DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, obedecer aos padrões de documentação do Microsoft SDK ou fornecer mais informações.
+Esta documentação é derivada das descrições da classe CIM publicadas pelo DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, estar em conformidade com os padrões de documentação do SDK da Microsoft ou fornecer mais informações.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -130,8 +130,8 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -140,7 +140,7 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 
 <dl> <dt>
 
-[Classes CIM](/windows/desktop/WmiSdk/cimclas)
+[CIM Classes](/windows/desktop/WmiSdk/cimclas)
 </dt> </dl>
 
  

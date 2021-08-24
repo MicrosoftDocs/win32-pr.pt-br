@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 12c328f30e56db348b018b73b02aa4320bf99505
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7f994c858b9a2817ac89a5d5c6db794e054652fb2a57c69404030074ad14cd45
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108086054"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119800746"
 ---
 # <a name="takeownership-method-of-the-cim_directory-class"></a>Método TakeOwnerShip da classe de \_ diretório CIM
 
@@ -54,14 +54,14 @@ Retorna um valor de 0 (zero) em caso de êxito e qualquer outro número para ind
 **0**
 </dt> <dd>
 
-Sucesso.
+Êxito.
 
 </dd> <dt>
 
 **2**
 </dt> <dd>
 
-Acesso negado.
+Acesso negado
 
 </dd> <dt>
 
@@ -96,7 +96,7 @@ Sistema de arquivos não NTFS.
 **12**
 </dt> <dd>
 
-A plataforma não é o Windows.
+A plataforma não é Windows.
 
 </dd> <dt>
 
@@ -150,7 +150,7 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 
 ## <a name="examples"></a>Exemplos
 
-O código de script Visual Basic a seguir chama o método **TakeOwnership** para apropriar-se da pasta C: \\ Temp.
+o código de Script Visual Basic a seguir chama o método **TakeOwnerShip** para apropriar-se da pasta C: \\ temp.
 
 
 ```VB
@@ -187,7 +187,7 @@ wscript.echo objOutParams.ReturnValue
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

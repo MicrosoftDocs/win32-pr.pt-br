@@ -4,12 +4,12 @@ description: Visões gerais do controle seletor de data e hora
 ms.assetid: 8f4d9671-601e-42a6-a17e-ea2f2012b83c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e3f6ca222961ff62f9a343e1f231c9d98e969ee3
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 9c481b78a877552c46518042083b84c822b1cf98fda622330455b685e6067188
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104091922"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119699556"
 ---
 # <a name="date-and-time-picker-control-overviews"></a>Visões gerais do controle seletor de data e hora
 

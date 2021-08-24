@@ -4,17 +4,17 @@ description: Com uma caixa de texto, os usuários podem exibir, inserir ou edita
 ms.assetid: fb8ed262-1451-496d-a3f4-a29af39763bb
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 2b5257e9772465f26815abb0f6ecbe0ff357ba4b
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 63418b3f72691e5ac23638291b9ec8aa83bc78d2f89815e093f5a04850a3d9ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "104506321"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119819245"
 ---
 # <a name="text-boxes"></a>Caixas de texto
 
 > [!NOTE]
-> Este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte da orientação ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais](/windows/uwp/design/).
+> Este guia de design foi criado para Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte das diretrizes ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais.](/windows/uwp/design/)
 
 Com uma caixa de texto, os usuários podem exibir, inserir ou editar um texto ou valor numérico.
 
@@ -23,7 +23,7 @@ Com uma caixa de texto, os usuários podem exibir, inserir ou editar um texto ou
 Uma caixa de texto típica.
 
 > [!Note]  
-> As diretrizes relacionadas ao [layout](vis-layout.md), às [fontes](vis-fonts.md)e aos [balões](ctrl-balloons.md) são apresentadas em artigos separados.
+> Diretrizes relacionadas [ao layout,](vis-layout.md) [fontes](vis-fonts.md)e [balão são apresentadas](ctrl-balloons.md) em artigos separados.
 
  
 
@@ -31,24 +31,24 @@ Uma caixa de texto típica.
 
 Para decidir, considere estas perguntas:
 
--   **É prático enumerar todos os valores válidos com eficiência?** Nesse caso, considere uma [lista de seleção única](ctrl-list-boxes.md), [exibição de lista](ctrl-list-views.md), [lista suspensa](/windows/desktop/uxguide/ctrl-drop), lista suspensa editável ou [controle deslizante](ctrl-sliders.md) em vez disso.
--   **Os dados válidos são completamente irrestrito? Ou os dados válidos são restritos apenas por formato (comprimento ou tipos de caracteres restritos)?** Nesse caso, use uma caixa de texto.
--   **O valor representa um tipo de dados que tem um controle comum especializado?** Os exemplos incluem data, hora ou endereço IPv4 ou IPv6. Nesse caso, use o controle apropriado, como um controle de data, em vez de uma caixa de texto.
--   Se os dados forem numéricos:
-    -   **Os usuários percebem a configuração como uma quantidade relativa?** Se sim, use um controle deslizante.
-    -   **O usuário se beneficiaria com um feedback instantâneo sobre o efeito das alterações de configuração?** Nesse caso, use um controle deslizante, possivelmente junto com uma caixa de texto. Por exemplo, os usuários podem escolher facilmente uma cor usando um controle deslizante, pois eles podem ver imediatamente o efeito das alterações nos valores de matiz, saturação ou luminosidade.
+-   **É prático enumerar todos os valores válidos com eficiência?** Em caso afirmaível, considere uma [lista](ctrl-list-boxes.md)de seleção [única,](ctrl-list-views.md)exibição de [lista,](/windows/desktop/uxguide/ctrl-drop)lista de lista, lista de listas listadas editáveis, ou [controle deslizante.](ctrl-sliders.md)
+-   **Os dados válidos não estão totalmente restritos? Ou os dados válidos são restritos somente por formato (tipos de caracteres ou comprimento restritos)?** Se sim, use uma caixa de texto.
+-   **O valor representa um tipo de dados que tem um controle comum especializado?** Os exemplos incluem data, hora ou endereço IPv4 ou IPv6. Nesse caso, use o controle apropriado, como um controle de data em vez de uma caixa de texto.
+-   Se os dados são numéricos:
+    -   **Os usuários percebe a configuração como uma quantidade relativa?** Se sim, use um controle deslizante.
+    -   **O usuário se beneficiaria com um feedback instantâneo sobre o efeito das alterações de configuração?** Nesse caso, use um controle deslizante, possivelmente junto com uma caixa de texto. Por exemplo, os usuários podem escolher facilmente uma cor usando um controle deslizante porque podem ver imediatamente o efeito das alterações nos valores de matiz, saturação ou luminosidade.
 
 ## <a name="design-concepts"></a>Conceitos de design
 
-Embora as caixas de texto tenham o benefício de ser muito flexível, elas têm a desvantagem de ter restrições mínimas. As únicas restrições em uma caixa de texto editável são:
+Embora as caixas de texto tenham o benefício de serem muito flexíveis, elas têm a desvantagem de ter restrições mínimas. As únicas restrições em uma caixa de texto editável são:
 
 -   Opcionalmente, você pode definir o número máximo de caracteres.
--   Opcionalmente, você pode restringir a entrada para caracteres numéricos (0 9).
--   Se você usar um [controle de rotação](ctrl-spin-controls.md), poderá limitar as opções de controle de giro a valores válidos.
+-   Opcionalmente, você pode restringir a entrada somente a caracteres numéricos (0 9).
+-   Se você usar um [controle de rotação](ctrl-spin-controls.md), poderá limitar as opções de controle de rotação a valores válidos.
 
-Além da sua duração e da presença opcional de um controle de rotação, as caixas de texto não têm nenhuma pista visual que sugira os valores válidos ou seu formato. Isso significa depender dos rótulos para transmitir essas informações aos usuários. Se os usuários digitarem texto que não seja válido, você deverá manipular o erro com uma mensagem de erro.
+Além do comprimento e da presença opcional de um controle de rotação, as caixas de texto não têm nenhuma dica visual que sugira os valores válidos ou seu formato. Isso significa contar com rótulos para transmitir essas informações aos usuários. Se os usuários inserirem um texto que não seja válido, você deverá tratar o erro com uma mensagem de erro.
 
-Como regra geral, **você deve usar o controle mais restrito que pode**. Use controles irrestrito como caixas de texto como último recurso. Dito isso, quando você estiver considerando restrições, tenha em mente as necessidades de usuários globais. Por exemplo, um controle que é restrito a Estados Unidos CEPs não é globalizado, mas uma caixa de texto irrestrita que aceita qualquer formato de código postal é.
+Como regra geral, **você deve usar o controle mais restrito que você pode**. Use controles irr pouco restritos, como caixas de texto como último recurso. Dito isso, quando você estiver considerando restrições, tenha em mente as necessidades de usuários globais. Por exemplo, um controle restrito a Estados Unidos ZIP Não é globalizado, mas uma caixa de texto irr pouco restrita que aceita qualquer formato de código postal é.
 
 ## <a name="usage-patterns"></a>Padrões de uso
 
@@ -63,37 +63,37 @@ Uma caixa de texto é um controle flexível com vários usos possíveis.
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><strong>Entrada de dados</strong><br/> Uma caixa de texto de linha única e irrestrita usada para inserir ou editar cadeias de caracteres curtas.<br/></td>
-<td><img src="images/ctrl-text-boxes-image2.png" alt="Screen shot of a text box with Display name label " /><br/> Uma caixa de texto de linha única e irrestrita.<br/></td>
+<td><strong>Entrada de dados</strong><br/> Uma caixa de texto de linha única e irr pouco restrita usada para inserir ou editar cadeias de caracteres curtas.<br/></td>
+<td><img src="images/ctrl-text-boxes-image2.png" alt="Screen shot of a text box with Display name label " /><br/> Uma caixa de texto de linha única e irr pouco restrita.<br/></td>
 </tr>
 <tr class="even">
-<td><strong>Entrada de dados formatados</strong><br/> Um conjunto de caixas de texto de linha simples, com tamanho fixo e curto usado para inserir dados com um formato específico. <br/></td>
-<td><img src="images/ctrl-text-boxes-image3.png" alt="Screen shot of a Product key text box " /><br/> Uma caixa de texto usada para entrada de dados formatados.<br/>
+<td><strong>Entrada de dados formatados</strong><br/> Um conjunto de caixas de texto de linha única de tamanho curto e fixo usado para inserir dados com um formato específico. <br/></td>
+<td><img src="images/ctrl-text-boxes-image3.png" alt="Screen shot of a Product key text box " /><br/> Uma caixa de texto usada para entrada de dados formatada.<br/>
 <blockquote>
 [!Note]<br />
-O recurso de <a href="glossary.md">saída automática</a> avança automaticamente o foco de entrada de uma caixa de texto para a próxima. Uma desvantagem dessa abordagem é que os dados não podem ser copiados ou colados como uma única unidade.
+O <a href="glossary.md">recurso de saída</a> automática avança automaticamente o foco de entrada de uma caixa de texto para a próxima. Uma desvantagem dessa abordagem é que os dados não podem ser copiados ou copiados como uma única unidade.
 </blockquote>
 <br/> <br/></td>
 </tr>
 <tr class="odd">
-<td><strong>Entrada de dados assistida</strong><br/> Uma caixa de texto de linha única e irrestrita usada para inserir ou editar cadeias de caracteres, combinadas com um botão de comando que ajuda os usuários a selecionar valores válidos.<br/></td>
-<td><img src="images/ctrl-text-boxes-image4.png" alt="Screen shot of text box with Browse button" /><br/> Neste exemplo, o comando procurar ajuda os usuários a selecionar valores válidos.<br/></td>
+<td><strong>Entrada de dados assistida</strong><br/> Uma caixa de texto de linha única e irr pouco restrita usada para inserir ou editar cadeias de caracteres, combinada com um botão de comando que ajuda os usuários a selecionar valores válidos.<br/></td>
+<td><img src="images/ctrl-text-boxes-image4.png" alt="Screen shot of text box with Browse button" /><br/> Neste exemplo, o comando Procurar ajuda os usuários a selecionar valores válidos.<br/></td>
 </tr>
 <tr class="even">
-<td><strong>Entrada textual</strong><br/> Uma caixa de texto de várias linhas e irrestrita usada para inserir ou editar cadeias de caracteres longas. <br/></td>
-<td><img src="images/ctrl-text-boxes-image5.png" alt="Screen shot of an Address text box " /><br/> Uma caixa de texto de várias linhas e irrestrita.<br/></td>
+<td><strong>Entrada textual</strong><br/> Uma caixa de texto sem restrição de várias linhas usada para inserir ou editar cadeias de caracteres longas. <br/></td>
+<td><img src="images/ctrl-text-boxes-image5.png" alt="Screen shot of an Address text box " /><br/> Uma caixa de texto sem restrição de várias linhas.<br/></td>
 </tr>
 <tr class="odd">
-<td><strong>Entrada numérica</strong><br/> Uma caixa de texto de linha única, somente numérica, usada para inserir ou editar números, com um <a href="ctrl-spin-controls.md">controle de rotação</a> opcional para facilitar a entrada baseada no mouse. <br/></td>
-<td><img src="images/ctrl-text-boxes-image6.png" alt="Screen shot of a text box for entering a wait time " /><br/> Uma caixa de texto usada para entrada numérica.<br/> A combinação de uma caixa de texto e seu controle de rotação associado é chamada de <a href="ctrl-spin-controls.md">caixa de rotação</a>.<br/></td>
+<td><strong>Entrada numérica</strong><br/> Uma caixa de texto somente numérica de linha única usada <a href="ctrl-spin-controls.md"></a> para inserir ou editar números, com um controle de rotação opcional para facilitar a entrada baseada em mouse. <br/></td>
+<td><img src="images/ctrl-text-boxes-image6.png" alt="Screen shot of a text box for entering a wait time " /><br/> Uma caixa de texto usada para entrada numérica.<br/> A combinação de uma caixa de texto e seu controle de rotação associado é chamada de caixa <a href="ctrl-spin-controls.md">de rotação</a>.<br/></td>
 </tr>
 <tr class="even">
-<td><strong>Senha e PIN de entrada</strong><br/> Uma caixa de texto de linha única e irrestrita usada para inserir senhas e PINs com segurança.<br/></td>
+<td><strong>Senha e entrada de PIN</strong><br/> Uma caixa de texto de linha única e irr pouco restrita usada para inserir senhas e PINs com segurança.<br/></td>
 <td><img src="images/ctrl-text-boxes-image7.png" alt="Screen shot of a Password text box " /><br/> Uma caixa de texto usada para inserir senhas.<br/></td>
 </tr>
 <tr class="odd">
-<td><strong>Saída de dados</strong><br/> Uma caixa de texto de linha única, somente leitura, sempre exibida sem uma borda, usada para exibir cadeias de caracteres curtas. <br/></td>
-<td>Diferentemente do texto estático, os dados exibidos usando uma caixa de texto podem ser rolados (útil se os dados forem mais largos do que o controle), selecionados e copiados.<br/> <img src="images/ctrl-text-boxes-image8.png" alt="Screen shot of a text box showing path to a folder " /><br/> Uma caixa de texto somente leitura de linha única usada para exibir dados.<br/></td>
+<td><strong>Saída de dados</strong><br/> Uma caixa de texto somente leitura de linha única, sempre exibida sem uma borda, usada para exibir cadeias de caracteres curtas. <br/></td>
+<td>Ao contrário do texto estático, os dados exibidos usando uma caixa de texto podem ser rolados (útil se os dados forem maiores do que o controle), selecionados e copiados.<br/> <img src="images/ctrl-text-boxes-image8.png" alt="Screen shot of a text box showing path to a folder " /><br/> Uma caixa de texto somente leitura de linha única usada para exibir dados.<br/></td>
 </tr>
 <tr class="even">
 <td><strong>Saída textual</strong><br/> Uma caixa de texto somente leitura de várias linhas usada para exibir cadeias de caracteres longas. <br/></td>
@@ -110,27 +110,27 @@ O recurso de <a href="glossary.md">saída automática</a> avança automaticament
 
 ### <a name="general"></a>Geral
 
--   **Ao desabilitar uma caixa de texto, também desabilite quaisquer rótulos associados, rótulos de instrução, controles de rotação e botões de comando.**
--   **Use o preenchimento automático para ajudar os usuários a inserir dados que provavelmente serão usados repetidamente**. Os exemplos incluem nomes de usuário, endereços e nomes de arquivo. No entanto, não use o preenchimento automático para caixas de texto que possam conter informações confidenciais, como senhas, PINs, números de cartão de crédito ou informações médicas.
--   **Não faça os usuários rolarem desnecessariamente.** Se você espera que os dados sejam maiores do que a caixa de texto e você pode rapidamente tornar a caixa de texto maior sem prejudicar o layout, dimensione a caixa para eliminar a necessidade de rolagem.
+-   **Ao desabilitar uma caixa de texto, desabilite também quaisquer rótulos associados, rótulos de instrução, controles de rotação e botões de comando.**
+-   **Use o auto-complete para ajudar os usuários a inserir dados que provavelmente serão usados repetidamente.** Os exemplos incluem nomes de usuário, endereços e nomes de arquivo. No entanto, não use a conclusão automática para caixas de texto que podem conter informações confidenciais, como senhas, PINs, números de cartão de crédito ou informações médicas.
+-   **Não faça os usuários rolarem desnecessariamente.** Se você espera que os dados sejam maiores do que a caixa de texto e pode facilmente tornar a caixa de texto maior sem prejudicar o layout, tamanho da caixa para eliminar a necessidade de rolagem.
 
     **Incorreto:**
 
-    ![captura de tela de uma caixa de texto de nome do computador ](images/ctrl-text-boxes-image10.png)
+    ![captura de tela de uma caixa de texto de nome de computador ](images/ctrl-text-boxes-image10.png)
 
-    Neste exemplo, a caixa de texto deve se tornar muito mais demorada para lidar com seus dados.
+    Neste exemplo, a caixa de texto deve ficar muito mais longa para lidar com seus dados.
 
 -   Barras de rolagem:
-    -   **Não coloque barras de rolagem horizontais em caixas de texto de várias linhas.** Em vez disso, use a rolagem vertical e a quebra de linha.
+    -   **Não coloque barras de rolagem horizontais em caixas de texto de várias linhas.** Em vez disso, use rolagem vertical e quebra de linha.
     -   **Não coloque nenhuma barra de rolagem em caixas de texto de linha única.**
--   **Para entrada numérica, você pode usar um controle de rotação.** Para entrada textual, use uma lista suspensa ou lista suspensa editável em vez disso.
--   **Não use o recurso de saída automática, exceto para entrada de dados formatados.** A mudança automática de foco pode surpreender os usuários.
+-   **Para entrada numérica, você pode usar um controle de rotação.** Para entrada textual, use uma lista de listas listadas ou lista de listas listadas editáveis em vez disso.
+-   **Não use o recurso de saída automática, exceto a entrada de dados formatada.** A mudança automática de foco pode surpresar os usuários.
 
 ### <a name="editable-text-boxes"></a>Caixas de texto editáveis
 
--   **Limite o tamanho do texto de entrada quando possível.** Por exemplo, se a entrada válida for um número entre 0 e 999, use uma caixa de texto numérica que esteja limitada a três caracteres. Todas as partes de caixas de texto que usam entrada de dados formatados devem ter um tamanho curto e fixo.
--   **Seja flexível com formatos de dados.** Se for provável que os usuários insiram texto usando uma ampla variedade de formatos, tente lidar com todos os mais comuns. Por exemplo, muitos nomes, números e identificadores podem ser inseridos com espaços e pontuação opcionais, e a capitalização geralmente não importa.
--   Se você não puder lidar com os formatos prováveis, exija um formato específico usando a entrada de dados formatados ou indique os formatos válidos no rótulo.
+-   **Limite o comprimento do texto de entrada quando possível.** Por exemplo, se a entrada válida for um número entre 0 e 999, use uma caixa de texto numérica limitada a três caracteres. Todas as partes das caixas de texto que usam a entrada de dados formatada devem ter um comprimento curto e fixo.
+-   **Seja flexível com formatos de dados.** Se os usuários provavelmente inserirem texto usando uma ampla variedade de formatos, tente lidar com todos os mais comuns. Por exemplo, muitos nomes, números e identificadores podem ser inseridos com espaços opcionais e pontuação, e a capitalização geralmente não importa.
+-   Se você não puder lidar com os formatos prováveis, exigir um formato específico usando a entrada de dados formatada ou indicar os formatos válidos no rótulo.
 
     **Aceitável:**
 
@@ -140,57 +140,57 @@ O recurso de <a href="glossary.md">saída automática</a> avança automaticament
 
     **Melhor:**
 
-    ![captura de tela da caixa de texto de entrada de dados formatados ](images/ctrl-text-boxes-image12.png)
+    ![captura de tela da caixa de texto de entrada de dados formatada ](images/ctrl-text-boxes-image12.png)
 
-    Neste exemplo, o padrão de entrada de dados formatados é usado para exigir um formato específico.
-
-    **Recomendá**
-
-    ![captura de tela de uma caixa de texto irrestrita ](images/ctrl-text-boxes-image13.png)
-
-    Neste exemplo, uma caixa de texto lida com todos os formatos prováveis.
-
--   Considere a flexibilidade de formato ao escolher o comprimento máximo de entrada. Por exemplo, um número de cartão de crédito válido pode usar até 19 caracteres, portanto, limitar o comprimento a algo mais curto dificultaria a inserção de números usando os formatos mais longos.
--   **Não use o padrão de entrada de dados formatado se for mais provável que os usuários colem dados longos e complexos.** Em vez disso, Reserve o padrão de entrada de dados formatado para situações em que os usuários têm mais probabilidade de digitar os dados.
-
-    ![captura de tela de uma caixa de texto com rótulo: endereço IPv6 ](images/ctrl-text-boxes-image14.png)
-
-    Neste exemplo, o padrão de entrada de dados formatado não é usado, para que os usuários possam colar os endereços IPv6.
-
--   **Se for mais provável que os usuários reinsiram o valor inteiro, selecione todo o texto no foco de entrada.** Se for mais provável que os usuários editem, coloque o cursor no final do texto.
-
-    ![captura de tela de uma caixa de texto de senha ](images/ctrl-text-boxes-image15.png)
-
-    Neste exemplo, é mais provável que os usuários substituam de editar, portanto, o valor inteiro é selecionado no foco de entrada.
-
-    ![captura de tela de uma caixa de texto para inserir palavras-chave ](images/ctrl-text-boxes-image16.png)
-
-    Neste exemplo, é mais provável que os usuários adicionem palavras-chave do que substituir o texto, portanto, o cursor é colocado no final do texto.
-
--   **Sempre use uma caixa de texto de várias linhas se os caracteres de nova linha forem de entrada válida.**
--   **Quando a caixa de texto for para um arquivo ou caminho, sempre forneça um botão procurar.**
-
-### <a name="numeric-text-boxes"></a>Caixas de texto numéricas
-
--   **Escolha a unidade mais conveniente e etiquete as unidades.** Por exemplo, considere usar milliliters em vez de litros (ou vice-versa), percentuais em vez de valores diretos (ou vice-versa) e assim por diante.
-
-    **Correto:**
-
-    ![captura de tela da caixa de texto com litros como unidade ](images/ctrl-text-boxes-image17.png)
-
-    Neste exemplo, a unidade é rotulada, mas requer que os usuários insiram números decimais.
+    Neste exemplo, o padrão de entrada de dados formatado é usado para exigir um formato específico.
 
     **Melhor:**
 
-    ![captura de tela da caixa de texto com milliliters como unidade ](images/ctrl-text-boxes-image18.png)
+    ![captura de tela de uma caixa de texto irr pouco restrita ](images/ctrl-text-boxes-image13.png)
+
+    Neste exemplo, uma caixa de texto lida com todos os formatos prováveis.
+
+-   Considere a flexibilidade de formato ao escolher o comprimento máximo de entrada. Por exemplo, um número de cartão de crédito válido pode usar até 19 caracteres, portanto, limitar o comprimento a qualquer coisa mais curta dificultaria a entrada de números usando os formatos mais longos.
+-   **Não use o padrão de entrada de dados formatados se os usuários têm maior probabilidade de colar dados longos e complexos.** Em vez disso, reserve o padrão de entrada de dados formatado para situações em que os usuários têm maior probabilidade de digitar os dados.
+
+    ![captura de tela de uma caixa de texto com rótulo: endereço ipv6 ](images/ctrl-text-boxes-image14.png)
+
+    Neste exemplo, o padrão de entrada de dados formatado não é usado, para que os usuários possam colar endereços IPv6.
+
+-   **Se os usuários provavelmente inserirão o valor inteiro novamente, selecione todo o texto no foco de entrada.** Se os usuários têm maior probabilidade de editar, coloque o ai no final do texto.
+
+    ![captura de tela de uma caixa de texto de senha ](images/ctrl-text-boxes-image15.png)
+
+    Neste exemplo, os usuários têm maior probabilidade de substituir do que editar, portanto, o valor inteiro é selecionado no foco de entrada.
+
+    ![captura de tela de uma caixa de texto para inserir palavras-chave ](images/ctrl-text-boxes-image16.png)
+
+    Neste exemplo, os usuários têm maior probabilidade de adicionar palavras-chave do que substituir o texto, portanto, o acento de acento é colocado no final do texto.
+
+-   **Sempre use uma caixa de texto de várias linhas se caracteres de nova linha são entrada válida.**
+-   **Quando a caixa de texto for para um arquivo ou caminho, sempre forneça um botão Procurar.**
+
+### <a name="numeric-text-boxes"></a>Caixas de texto numéricas
+
+-   **Escolha a unidade mais conveniente e rotule as unidades.** Por exemplo, considere usar mililiters em vez de liters (ou vice-versa), percentuais em vez de valores diretos (ou vice-versa) e assim por diante.
+
+    **Correto:**
+
+    ![captura de tela da caixa de texto com liters como unidade ](images/ctrl-text-boxes-image17.png)
+
+    Neste exemplo, a unidade é rotulada, mas exige que os usuários insiram números decimais.
+
+    **Melhor:**
+
+    ![captura de tela da caixa de texto com mililitros como unidade ](images/ctrl-text-boxes-image18.png)
 
     Neste exemplo, a caixa de texto usa uma unidade mais conveniente.
 
--   **Use um controle de rotação sempre que for útil.** No entanto, às vezes, os controles de rotação não são práticos, como quando os usuários precisam inserir muitos números grandes. Use controles de rotação quando:
-    -   A entrada provavelmente será um número pequeno, normalmente em 100.
+-   **Use um controle de rotação sempre que for útil.** No entanto, às vezes, controles de rotação não são práticos, como quando os usuários precisam inserir muitos números grandes. Use controles de rotação quando:
+    -   A entrada provavelmente será um número pequeno, normalmente abaixo de 100.
     -   É provável que os usuários façam uma pequena alteração em um número existente.
-    -   É mais provável que os usuários estejam usando o mouse do que o teclado.
--   **Alinhar texto numérico à direita sempre que:**
+    -   É mais provável que os usuários usem o mouse do que o teclado.
+-   **Alinhe o texto numérico à direita sempre que:**
 
     -   Há mais de uma caixa de texto numérica.
     -   As caixas de texto são alinhadas verticalmente.
@@ -198,89 +198,89 @@ O recurso de <a href="glossary.md">saída automática</a> avança automaticament
 
     **Correto:**
 
-    ![captura de tela de caixas de texto de despesas (Hotel, etc.) ](images/ctrl-text-boxes-image19.png)
+    ![captura de tela de caixas de texto de despesas (hotel, etc.) ](images/ctrl-text-boxes-image19.png)
 
     Neste exemplo, o texto numérico é alinhado à direita para facilitar a comparação de valores.
 
     **Incorreto:**
 
-    ![captura de tela de caixas de texto para valores RGB ](images/ctrl-text-boxes-image20.png)
+    ![captura de tela de caixas de texto para valores rgb ](images/ctrl-text-boxes-image20.png)
 
-    Neste exemplo, o texto numérico está alinhado à esquerda incorretamente.
+    Neste exemplo, o texto numérico é alinhado incorretamente à esquerda.
 
--   **Sempre alinhar valores monetários à direita.**
--   **Não atribua significados especiais a valores numéricos específicos**, mesmo se esses significados especiais forem usados internamente pelo seu aplicativo. Em vez disso, use caixas de seleção ou botões de opção para uma seleção de usuário explícita.
+-   **Sempre alinhe valores monetários com a direita.**
+-   **Não atribua significados especiais a valores numéricos específicos,** mesmo que esses significados especiais sejam usados internamente pelo seu aplicativo. Em vez disso, use caixas de seleção ou botões de opção para uma seleção explícita de usuário.
 
     **Incorreto:**
 
-    ![captura de tela do rótulo: use-1 para desabilitar o cache ](images/ctrl-text-boxes-image21.png)
+    ![captura de tela do rótulo: use -1 para desabilitar o cache ](images/ctrl-text-boxes-image21.png)
 
-    Neste exemplo, o valor-1 tem um significado especial.
+    Neste exemplo, o valor -1 tem um significado especial.
 
     **Correto:**
 
-    ![captura de tela do rótulo da caixa de seleção: Caching ](images/ctrl-text-boxes-image22.png)
+    ![captura de tela do rótulo da caixa de seleção: cache ](images/ctrl-text-boxes-image22.png)
 
-    Neste exemplo, uma caixa de seleção torna a opção Explicit.
+    Neste exemplo, uma caixa de seleção torna a opção explícita.
 
-### <a name="password-and-pin-input"></a>Senha e PIN de entrada
+### <a name="password-and-pin-input"></a>Senha e entrada de PIN
 
--   **Sempre use o controle comum de senha em vez de criar o seu próprio.** Senhas e PINs exigem tratamento especial para serem manipulados com segurança.
+-   **Sempre use o controle comum de senha em vez de criar seu próprio.** Senhas e PINs exigem tratamento especial para serem tratados com segurança.
 
-Para obter mais diretrizes e exemplos, consulte [balões](ctrl-balloons.md).
+Para obter mais diretrizes e exemplos, consulte [Balão.](ctrl-balloons.md)
 
 ### <a name="textual-output"></a>Saída textual
 
--   **Considere o uso da cor do sistema de plano de fundo branco para texto grande somente leitura de várias linhas.** Um plano de fundo branco torna o texto mais fácil de ler. Muitos textos em um plano de fundo cinza desencorajam a leitura.
+-   **Considere usar a cor do sistema de tela de fundo branca para texto grande e somente leitura de várias linhas.** Uma plano de fundo em branco facilita a leitura do texto. Muito texto em uma plano de fundo cinza não desanimo a leitura.
 
-Para obter mais informações sobre cores de plano de fundo, consulte [fontes](vis-fonts.md).
+Para obter mais informações sobre cores da plano de fundo, consulte [Fontes](vis-fonts.md).
 
 ### <a name="data-output"></a>Saída de dados
 
--   **Não use uma borda para caixas de texto somente leitura de linha única.** A borda é uma pista visual de que o texto é editável.
+-   **Não use uma borda para caixas de texto somente leitura de linha única.** A borda é uma dica visual de que o texto é editável.
 -   **Não desabilite caixas de texto somente leitura de linha única.** Isso impede que os usuários selecionem e copiem o texto para a área de transferência. Ele também impede que os usuários rolem os dados se excederem o tamanho de seus limites.
--   **Não defina uma parada de tabulação na caixa de texto somente leitura de linha única, a menos que o usuário provavelmente precise rolar ou copiar o texto.**
+-   **Não de definir uma parada de tabulação em uma única linha, caixa de texto somente leitura, a menos que o usuário provavelmente precise rolar ou copiar o texto.**
 
-## <a name="input-validation-and-error-handling"></a>Validação de entrada e tratamento de erro
+## <a name="input-validation-and-error-handling"></a>Validação de entrada e tratamento de erros
 
-Como as caixas de texto geralmente não são restritas para aceitar apenas uma entrada válida, talvez seja necessário validar a entrada e lidar com quaisquer problemas. Valide os vários tipos de problemas de entrada da seguinte maneira:
+Como as caixas de texto geralmente não são restritas para aceitar apenas a entrada válida, talvez seja necessário validar a entrada e lidar com problemas. Valide os vários tipos de problemas de entrada da seguinte forma:
 
--   Se o usuário inserir um caractere que não é válido, ignore o caractere e exiba um [balão de problema de entrada](ctrl-balloons.md) que explique os caracteres válidos.
+-   Se o usuário inserir um caractere que não é válido, ignore o caractere e exibe um balão de problema de entrada que explica os caracteres válidos. [](ctrl-balloons.md)
 
-    ![captura de tela da caixa de texto da chave do produto](images/ctrl-text-boxes-image23.png)
+    ![captura de tela da caixa de texto chave do produto (Product Key)](images/ctrl-text-boxes-image23.png)
 
     Neste exemplo, um balão relata um caractere de entrada incorreto.
 
--   Se os dados de entrada tiverem um valor ou formato que não é válido, exiba um balão de problema de entrada quando a caixa de texto perder o foco de entrada.
--   Se os dados de entrada estiverem inconsistentes com outros controles na janela, forneça uma mensagem de erro quando a entrada inteira for concluída, por exemplo, quando os usuários clicarem em OK para uma caixa de diálogo modal.
+-   Se os dados de entrada têm um valor ou formato que não é válido, exibe um balão de problema de entrada quando a caixa de texto perde o foco de entrada.
+-   Se os dados de entrada estão inconsistentes com outros controles na janela, dê uma mensagem de erro quando toda a entrada for concluída, como quando os usuários clicarem em OK para uma caixa de diálogo modal.
 
-**Não limpe dados de entrada inválidos, a menos que os usuários não possam corrigir erros facilmente.** Isso permite que os usuários corrijam os erros sem começar de novo. Por exemplo, você deve limpar senhas e PINs incorretos, pois os usuários não podem corrigi-los facilmente.
+**Não limpe dados de entrada inválidos, a menos que os usuários não sejam capazes de corrigir erros facilmente.** Isso permite que os usuários corrijam erros sem começar de novo. Por exemplo, você deve limpar senhas incorretas e PINs porque os usuários não podem corrigi-las facilmente.
 
-Para obter mais diretrizes e exemplos, consulte [mensagens de erro](mess-error.md) e [balões](ctrl-balloons.md).
+Para obter mais diretrizes e exemplos, consulte [Mensagens de erro](mess-error.md) e [balão.](ctrl-balloons.md)
 
 ## <a name="prompts"></a>Solicitações
 
-Um prompt é um rótulo ou uma instrução curta colocada dentro de uma caixa de texto como seu valor padrão. Ao contrário do texto estático, os prompts desaparecem da tela quando os usuários digitam algo na caixa de texto ou recebem o foco de entrada.
+Um prompt é um rótulo ou uma instrução curta colocada dentro de uma caixa de texto como seu valor padrão. Ao contrário do texto estático, os prompts desaparecem da tela quando os usuários digitam algo na caixa de texto ou ele obtém o foco de entrada.
 
-![captura de tela da caixa de texto de aviso com o rótulo: Pesquisar ](images/ctrl-text-boxes-image24.png)
+![captura de tela da caixa de texto do prompt com rótulo: pesquisa ](images/ctrl-text-boxes-image24.png)
 
 Um prompt típico.
 
 Use um prompt quando:
 
--   O espaço na tela é um tanto que usar um rótulo ou instrução é indesejável, como em uma barra de ferramentas.
--   O prompt destina-se principalmente à identificação da finalidade da caixa de texto de forma compactada. Elas não devem ser informações cruciais que o usuário precisa ver ao usar a caixa de texto.
+-   O espaço na tela é tão premium que usar um rótulo ou instrução é indesejável, como em uma barra de ferramentas.
+-   O prompt serve principalmente para identificar a finalidade da caixa de texto de maneira compacta. Não deve ser informações cruciais que o usuário precisa ver ao usar a caixa de texto.
 
-Não use prompts apenas para direcionar os usuários para digitar algo ou clicar em botões. Por exemplo, não escreva o texto do prompt que diga inserir um nome de arquivo e, em seguida, clique em enviar.
+Não use prompts apenas para direcionar os usuários a digitar algo ou clicar em botões. Por exemplo, não escreva texto de prompt que diz Enter a filename e clique em Enviar.
 
 Ao usar prompts:
 
 -   Desenhe o texto do prompt em cinza itálico e o texto de entrada real em preto normal. O texto do prompt não deve ser confundido com texto real.
 -   Mantenha o texto do prompt conciso. Você pode usar fragmentos em vez de frases completas.
 -   Use a capitalização com estilo de frase.
--   Não use pontuação final ou reticências.
--   O texto do prompt não deve ser editável e deve desaparecer quando os usuários clicarem na guia ou na caixa de texto.
-    -   **Exceção:** Se a caixa de texto tiver o foco de entrada padrão, o prompt será exibido e desaparece quando o usuário começa a digitar.
+-   Não use a pontuação final ou as reticpses.
+-   O texto do prompt não deve ser editável e deve desaparecer depois que os usuários clicarem na guia ou na caixa de texto.
+    -   **Exceção:** Se a caixa de texto tiver o foco de entrada padrão, o prompt será exibido e desaparecerá depois que o usuário começar a digitar.
 -   O texto do prompt será restaurado se a caixa de texto ainda estiver vazia quando perder o foco de entrada.
 
 ## <a name="recommended-sizing-and-spacing"></a>Dimensionamento e espaçamento recomendados
@@ -302,7 +302,7 @@ A largura de uma caixa de texto é uma pista visual do tamanho de entrada espera
 
 -   Todas as caixas de texto precisam de rótulos. Grave o rótulo como uma palavra ou frase, não como uma frase, terminando com dois-pontos e usando [texto estático](glossary.md).
 
-    **Exceção**
+    **Exceções:**
 
     -   Caixas de texto com prompts localizados onde o espaço está em uma parte Premium.
     -   Para rotulagem, um grupo de caixas de texto usado para **entrada de dados formatados** deve ser tratado como uma única caixa de texto.

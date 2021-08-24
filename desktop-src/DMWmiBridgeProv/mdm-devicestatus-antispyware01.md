@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_DeviceStatus_Antispyware01
-description: A \_ classe MDM DeviceStatus \_ Antispyware01 é usada pela empresa para consultar o estado da conformidade de AntiSpyware de dispositivos com suas políticas corporativas.
+title: MDM_DeviceStatus_Antispyware01 classe
+description: A classe \_ DeviceStatus Antispyware01 do MDM é usada pela empresa para consultar o estado de conformidade antispyware dos dispositivos com suas \_ políticas corporativas.
 ms.assetid: 53275aa1-ff7d-4630-b6c5-aedce3f4665a
 keywords:
-- Classe MDM_DeviceStatus_Antispyware01
-- Classe MDM_DeviceStatus_Antispyware01, descrita
+- MDM_DeviceStatus_Antispyware01 classe
+- MDM_DeviceStatus_Antispyware01, descrita
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 91468c98981c93e211b3e3bee99564574f7a56cf
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 55baa82797c415dd60426796885c9e8e368cf34e7afc72af5b074ab323763f9c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824605"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119816256"
 ---
-# <a name="mdm_devicestatus_antispyware01-class"></a>\_ \_ Classe ANTISPYWARE01 do MDM DeviceStatus
+# <a name="mdm_devicestatus_antispyware01-class"></a>Classe \_ DeviceStatus \_ Antispyware01 do MDM
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto pré-lançado, que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-A classe **MDM \_ DeviceStatus \_ Antispyware01** é usada pela empresa para consultar o estado da conformidade de AntiSpyware de dispositivos com suas políticas corporativas.
+A **classe \_ DeviceStatus \_ Antispyware01 do MDM** é usada pela empresa para consultar o estado de conformidade antispyware dos dispositivos com suas políticas corporativas.
 
 A sintaxe a seguir é simplificada do código MOF e inclui todas as propriedades herdadas.
 
@@ -47,13 +47,13 @@ class MDM_DeviceStatus_Antispyware01
 
 ## <a name="members"></a>Membros
 
-A **classe \_ \_ Antispyware01 de MDM DeviceStatus** tem estes tipos de membros:
+A **classe \_ DeviceStatus \_ Antispyware01 do MDM** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A **classe \_ \_ Antispyware01 do MDM DeviceStatus** tem essas propriedades.
+A **classe \_ DeviceStatus \_ Antispyware01 MDM** tem essas propriedades.
 
 <dl> <dt>
 
@@ -69,11 +69,11 @@ Tipo de acesso: Somente leitura
 Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Nó para a consulta de AntiSpyware.
+Nó para a consulta antispyware.
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -95,7 +95,7 @@ Descreve o caminho completo para o nó pai. Para essa classe, a cadeia de caract
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -106,7 +106,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> </dl>
@@ -117,10 +117,10 @@ Tipo de acesso: leitura/gravação
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                      |
-| Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Namespace<br/>                | \\Cimv2 \\ mdm \\ dmmap raiz<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 

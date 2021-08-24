@@ -1,9 +1,9 @@
 ---
-title: Mensagem de LB_GETHORIZONTALEXTENT (WinUser. h)
+title: LB_GETHORIZONTALEXTENT mensagem (Winuser.h)
 description: Obtém a largura, em pixels, que uma caixa de listagem pode ser rolada horizontalmente (a largura rolável) se a caixa de listagem tiver uma barra de rolagem horizontal.
 ms.assetid: 52461724-c06a-436a-ac95-94c5189ba37e
 keywords:
-- Controles de LB_GETHORIZONTALEXTENT de mensagens do Windows
+- LB_GETHORIZONTALEXTENT controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bf10f4f216e0c00fba256c1373fb9aae4f2a4ac7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 01f754b62ad0f51a236662fdfba2304221d58e1288e2756c0330343c63a0699e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103919087"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119799506"
 ---
-# <a name="lb_gethorizontalextent-message"></a>GETHORIZONTALEXTENT de mensagens de LB \_
+# <a name="lb_gethorizontalextent-message"></a>Mensagem \_ LB GETHORIZONTALEXTENT
 
 Obtém a largura, em pixels, que uma caixa de listagem pode ser rolada horizontalmente (a largura rolável) se a caixa de listagem tiver uma barra de rolagem horizontal.
 
@@ -43,15 +43,15 @@ Não usado; deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno é a largura rolável, em pixels, da caixa de listagem.
 
 ## <a name="remarks"></a>Comentários
 
-Para responder à mensagem **\_ GETHORIZONTALEXTENT de lb** , a caixa de listagem deve ter sido definida com o estilo [**WS \_ HSCROLL**](/windows/desktop/winmsg/window-styles) .
+Para responder à **mensagem \_ LB GETHORIZONTALEXTENT,** a caixa de listagem deve ter sido definida com o [**estilo \_ HSCROLL do WS.**](/windows/desktop/winmsg/window-styles)
 
-Se o aplicativo não definir a extensão horizontal da caixa de listagem (usando [**lb \_ SETHORIZONTALEXTENT**](lb-sethorizontalextent.md)), a extensão horizontal padrão será zero. Observe que a caixa de listagem não atualiza sua extensão horizontal dinamicamente.
+Se o aplicativo não definir a extensão horizontal da caixa de listagem (usando [**LB \_ LB LBORIZONTALEXTENT),**](lb-sethorizontalextent.md)a extensão horizontal padrão será zero. Observe que a caixa de listagem não atualiza sua extensão horizontal dinamicamente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,9 +59,9 @@ Se o aplicativo não definir a extensão horizontal da caixa de listagem (usando
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -69,7 +69,7 @@ Se o aplicativo não definir a extensão horizontal da caixa de listagem (usando
 
 <dl> <dt>
 
-[**\_SETHORIZONTALEXTENT lb**](lb-sethorizontalextent.md)
+[**LB \_ LB LBORIZONTALEXTENT**](lb-sethorizontalextent.md)
 </dt> </dl>
 
  

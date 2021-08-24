@@ -15,18 +15,18 @@ api_type:
 - LibDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 657d0faee03ca37b9a5a49b95b978a24b0c8955c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8cfb917e2a74b82b55dc91a507e2c5815fbe83c632c4b3e29eb76941ab07662e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105779429"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119737836"
 ---
 # <a name="extendeddisconnectreasoncode-enumeration"></a>Enumeração ExtendedDisconnectReasonCode
 
 Define informações estendidas sobre o motivo do controle para desconexão.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++

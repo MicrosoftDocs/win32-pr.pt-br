@@ -3,7 +3,7 @@ title: Mensagem de MM_ACM_FORMATCHOOSE (MSACM. h)
 description: A \_ mensagem mm ACM \_ FORMATCHOOSE notifica uma função de gancho de caixa de diálogo acmFormatChoose antes de adicionar um elemento a uma das três caixas de listagem suspensas.
 ms.assetid: f77e41c6-14e9-45c0-971e-4d6325145f1c
 keywords:
-- Multimídia do Windows de mensagem MM_ACM_FORMATCHOOSE
+- mensagem de MM_ACM_FORMATCHOOSE Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 35808e06521cbd83d07f8d6c799779a16f50236b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cceaa67bc0ce4ee922b48d1cff20eb2bf6414f93506dcc70ccd6e0e912211544
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103645255"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119782956"
 ---
 # <a name="mm_acm_formatchoose-message"></a>\_Mensagem mm ACM \_ FORMATCHOOSE
 

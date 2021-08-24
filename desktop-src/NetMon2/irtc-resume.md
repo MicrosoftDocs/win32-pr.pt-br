@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 55e5cb66eecbee96df9573e9347d1f32e3508d2b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: f8b8cebaf14f5e6a42a938a8fe585934137a899f8afaeb2d28533c0c0cfa18b3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108110554"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119742976"
 ---
 # <a name="irtcresume-method"></a>Método IRTC:: resume
 
@@ -49,8 +49,8 @@ Se o método não for bem-sucedido, o valor de retorno será um dos seguintes c�
 | Código de retorno                                                                                                | Descrição                                                                                                                   |
 |------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**captura de NMERR \_ \_ não \_ pausada**</dt> </dl> | A captura não está em pausa. Chame [IRTC::P ause](irtc-pause.md) para pausar a captura.<br/>                                |
-| <dl> <dt>**NMERR \_ não \_ conectado**</dt> </dl>       | O NPP não está conectado à rede. Chame [IRTC:: Connect](irtc-connect.md) para conectar o NPP à rede.<br/> |
-| <dl> <dt>**NMERR \_ não está em \_ tempo real**</dt> </dl>        | O NPP está conectado à rede, mas não com o método [IRTC:: Connect](irtc-connect.md) .<br/>                     |
+| <dl> <dt>**NMERR \_ não \_ conectado**</dt> </dl>       | O NPP não está conectado à rede. chame [IRTC:: Conexão](irtc-connect.md) para conectar o NPP à rede.<br/> |
+| <dl> <dt>**NMERR \_ não está em \_ tempo real**</dt> </dl>        | o NPP está conectado à rede, mas não com o método [IRTC:: Conexão](irtc-connect.md) .<br/>                     |
 
 
 
@@ -77,14 +77,14 @@ Para interromper a captura, chame o método [IRTC:: Stop](irtc-stop.md) .
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
 [IRTC](irtc.md)
 </dt> <dt>
 
-[IRTC:: conectar](irtc-connect.md)
+[IRTC:: Conexão](irtc-connect.md)
 </dt> <dt>
 
 [IRTC::P ause](irtc-pause.md)
