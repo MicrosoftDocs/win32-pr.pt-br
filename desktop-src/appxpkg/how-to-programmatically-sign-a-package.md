@@ -1,41 +1,41 @@
 ---
-title: Como assinar programaticamente um pacote do aplicativo (C++)
-description: Saiba como assinar um pacote de aplicativo usando a função SignerSignEx2.
+title: Como assinar programaticamente um pacote de aplicativos (C++)
+description: Saiba como assinar um pacote de aplicativos usando a função SignerSignEx2.
 ms.assetid: 1183D665-83C9-4BE7-9C8D-834484B8C57F
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0310ba2a934a6986809329a12afa8ee20b2f6591
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 5a91cf2c7b7be674ff14d1ceada59be593a300d7ebf1964ddce4a7a5340ab74c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "103640445"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119130238"
 ---
-# <a name="how-to-programmatically-sign-an-app-package-c"></a>Como assinar programaticamente um pacote do aplicativo (C++)
+# <a name="how-to-programmatically-sign-an-app-package-c"></a>Como assinar programaticamente um pacote de aplicativos (C++)
 
-Saiba como assinar um pacote de aplicativo usando a função [**SignerSignEx2**](/windows/desktop/SecCrypto/signersignex2) .
+Saiba como assinar um pacote de aplicativos usando a [**função SignerSignEx2.**](/windows/desktop/SecCrypto/signersignex2)
 
-Se você quiser criar programaticamente pacotes de aplicativos do Windows usando a [API de empacotamento](interfaces.md), também precisará assinar os pacotes de aplicativos antes que eles possam ser implantados. A API de empacotamento não fornece um método especializado para assinar pacotes de aplicativos. Em vez disso, use as [funções de criptografia](/windows/desktop/SecCrypto/cryptography-functions) padrão para assinar seus pacotes de aplicativos.
+Se você quiser criar programaticamente Windows pacotes de aplicativos usando a [API](interfaces.md)de Empacotamento , também precisará assinar os pacotes de aplicativos antes que eles possam ser implantados. A API de Empacotamento não fornece um método especializado para assinar pacotes de aplicativos. Em vez disso, use as [funções de criptografia padrão](/windows/desktop/SecCrypto/cryptography-functions) para assinar seus pacotes de aplicativos.
 
 ## <a name="what-you-need-to-know"></a>O que você precisa saber
 
 ### <a name="technologies"></a>Tecnologias
 
 -   [Introdução à assinatura de código](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms537361(v=vs.85))
--   [Empacotamento, implantação e consulta de aplicativos do Windows](appx-portal.md)
+-   [Empacotamento, implantação e consulta de Windows aplicativos](appx-portal.md)
 -   [funções de criptografia](/windows/desktop/SecCrypto/cryptography-functions)
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
--   Você precisa ter um aplicativo do Windows empacotado. Para obter informações sobre como criar um pacote de aplicativo, consulte [como criar um pacote de aplicativo](how-to-create-a-package.md).
--   Você precisa ter um certificado de assinatura de código apropriado para assinar o pacote do aplicativo. Para obter informações sobre como criar um certificado de assinatura de código de teste, consulte [como criar um certificado de assinatura de pacote de aplicativo](how-to-create-a-package-signing-certificate.md). Carregue esse certificado de autenticação em uma estrutura de [**\_ contexto de certificado**](/windows/desktop/api/wincrypt/ns-wincrypt-cert_context) . Por exemplo, você pode usar [**PFXImportCertStore**](/windows/desktop/api/wincrypt/nf-wincrypt-pfximportcertstore) e [**CertFindCertificateInStore**](/windows/desktop/api/wincrypt/nf-wincrypt-certfindcertificateinstore) para carregar um certificado de autenticação.
--   O Windows 8 apresenta a função [**SignerSignEx2**](/windows/desktop/SecCrypto/signersignex2) . Use **SignerSignEx2** ao assinar pacotes de aplicativos do Windows.
+-   Você precisa ter um aplicativo Windows empacotado. Para obter informações sobre como criar um pacote de aplicativos, [consulte Como criar um pacote de aplicativos.](how-to-create-a-package.md)
+-   Você precisa ter um certificado de assinatura de código apropriado para assinar o pacote do aplicativo. Para obter informações sobre como criar um certificado de assinatura de código de teste, consulte Como criar um certificado de assinatura [de pacote de aplicativo.](how-to-create-a-package-signing-certificate.md) Carregue esse certificado de assinatura em uma [**estrutura CERT \_ CONTEXT.**](/windows/desktop/api/wincrypt/ns-wincrypt-cert_context) Por exemplo, você pode usar [**PFXImportCertStore**](/windows/desktop/api/wincrypt/nf-wincrypt-pfximportcertstore) e [**CertFindCertificateInStore**](/windows/desktop/api/wincrypt/nf-wincrypt-certfindcertificateinstore) para carregar um certificado de assinatura.
+-   Windows 8 introduz a [**função SignerSignEx2.**](/windows/desktop/SecCrypto/signersignex2) Use **SignerSignEx2** ao assinar Windows de aplicativo.
 
 ## <a name="instructions"></a>Instruções
 
-### <a name="step-1-define-the-required-structures-for-signersignex2"></a>Etapa 1: definir as estruturas necessárias para SignerSignEx2
+### <a name="step-1-define-the-required-structures-for-signersignex2"></a>Etapa 1: Definir as estruturas necessárias para SignerSignEx2
 
-Além do cabeçalho Wincrypt. h, a função [**SignerSignEx2**](/windows/desktop/SecCrypto/signersignex2) depende de muitas estruturas que não estão definidas em nenhum arquivo de cabeçalho do SDK. Para usar o **SignerSignEx2**, você mesmo deve definir essas estruturas:
+Além do header Wincrypt.h, a [**função SignerSignEx2**](/windows/desktop/SecCrypto/signersignex2) depende de muitas estruturas que não estão definidas em nenhum arquivo de título do SDK. Para usar **SignerSignEx2**, você deve definir essas estruturas por você mesmo:
 
 
 ```C++
@@ -188,16 +188,16 @@ typedef struct _APPX_SIP_CLIENT_DATA
 
 
 
-### <a name="step-2-call-signersignex2-to-sign-the-app-package"></a>Etapa 2: chamar SignerSignEx2 para assinar o pacote do aplicativo
+### <a name="step-2-call-signersignex2-to-sign-the-app-package"></a>Etapa 2: Chamar SignerSignEx2 para assinar o pacote do aplicativo
 
-Depois de definir as estruturas necessárias que são especificadas na etapa anterior, você pode usar qualquer uma das opções disponíveis na função [**SignerSignEx2**](/windows/desktop/SecCrypto/signersignex2) para assinar um pacote de aplicativo. Quando você usa o **SignerSignEx2** com pacotes de aplicativos do Windows, essas restrições se aplicam:
+Depois de definir as estruturas necessárias especificadas na etapa anterior, você pode usar qualquer uma das opções disponíveis na [**função SignerSignEx2**](/windows/desktop/SecCrypto/signersignex2) para assinar um pacote de aplicativos. Quando você usa **SignerSignEx2 com Windows** de aplicativos, essas restrições se aplicam:
 
--   Você deve fornecer um ponteiro para uma estrutura de **dados de cliente do Appx \_ \_ \_ SIP** como o parâmetro *pSipData* ao assinar um pacote de aplicativo. Você deve preencher o membro **pSignerParams** dos **\_ \_ \_ dados do cliente do Appx SIP** com os mesmos parâmetros que você usa para assinar o pacote do aplicativo. Para fazer isso, defina os parâmetros desejados na estrutura de **\_ \_ \_ parâmetros de EX2 do assinante** , atribua o endereço dessa estrutura a **pSignerParams** e, em seguida, referencie diretamente os membros da estrutura também ao chamar [**SignerSignEx2**](/windows/desktop/SecCrypto/signersignex2).
--   Depois de chamar [**SignerSignEx2**](/windows/desktop/SecCrypto/signersignex2), você deverá liberar o **pAppxSipState** no *PSipData* chamando [**IUnknown:: Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) em **pAppxSipState** se ele não for **nulo**.
--   O membro **algidHash** da estrutura **de \_ \_ informações de assinatura do signatário** deve ser o mesmo algoritmo de hash que foi usado na criação do pacote do aplicativo. Para obter informações sobre como determinar o algoritmo de hash do pacote do aplicativo, consulte [como assinar um pacote de aplicativo usando Signtool](how-to-sign-a-package-using-signtool.md). O algoritmo padrão do Windows 8 que o [MakeAppx](make-appx-package--makeappx-exe-.md) e o Visual Studio usam para criar pacotes de aplicativos é "ALGIDHASH = CALG \_ Sha \_ 256".
--   Se você quiser carimbar o tempo da assinatura no pacote do aplicativo também, deverá fazê-lo durante a chamada para [**SignerSignEx2**](/windows/desktop/SecCrypto/signersignex2) fornecendo os parâmetros opcionais de carimbo de hora (*dwTimestampFlags*, *pszTimestampAlgorithmOid*, *pwszHttpTimeStamp*, *psRequest*) do **SignerSignEx2**. Não há suporte para a chamada de [**SignerTimeStampEx3**](/windows/desktop/SecCrypto/signertimestampex3) ou suas variantes em um pacote de aplicativo que já esteja assinado.
+-   Você deve fornecer um ponteiro para uma estrutura **APPX \_ SIP CLIENT \_ \_ DATA** como o *parâmetro pSipData* ao assinar um pacote de aplicativos. Você deve preencher o **membro pSignerParams** do **APPX \_ SIP CLIENT \_ \_ DATA** com os mesmos parâmetros que você usa para assinar o pacote do aplicativo. Para fazer isso, defina os parâmetros desejados na estrutura **SIGNER \_ SIGN \_ EX2 \_ PARAMS,** atribua o endereço dessa estrutura a **pSignerParams** e, em seguida, faça referência direta aos membros da estrutura também quando você chamar [**SignerSignEx2**](/windows/desktop/SecCrypto/signersignex2).
+-   Depois de chamar [**SignerSignEx2**](/windows/desktop/SecCrypto/signersignex2), você deverá liberar **o pAppxSipState** no *pSipData* chamando [**IUnknown::Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) em **pAppxSipState** se não for **NULL.**
+-   O **membro algidHash** da estrutura **SIGNER SIGNATURE \_ \_ INFO** deve ser o mesmo algoritmo de hash usado na criação do pacote do aplicativo. Para obter informações sobre como determinar o algoritmo de hash do pacote do aplicativo, consulte Como assinar um pacote [de aplicativos usando o SignTool.](how-to-sign-a-package-using-signtool.md) O Windows 8 padrão que [MakeAppx](make-appx-package--makeappx-exe-.md) e Visual Studio para criar pacotes de aplicativos é "algidHash = CALG \_ SHA \_ 256".
+-   Se você também quiser carimbo de data/hora da assinatura no pacote do aplicativo, deverá fazer isso durante a chamada para [**SignerSignEx2**](/windows/desktop/SecCrypto/signersignex2) fornecendo os parâmetros de carimbo de data/hora opcionais de **SignerSignEx2**(*dwTimestampFlags*, *pszTimestampAlgorithmOid*, *pwszHttpTimeStamp*, *psRequest*). Não [**há suporte para chamar SignerTimeStampEx3**](/windows/desktop/SecCrypto/signertimestampex3) ou suas variantes em um pacote de aplicativos que já está assinado.
 
-Aqui está um código de exemplo que mostra como chamar [**SignerSignEx2**](/windows/desktop/SecCrypto/signersignex2):
+Aqui está um código de exemplo que mostra como chamar [**SignerSignEx2:**](/windows/desktop/SecCrypto/signersignex2)
 
 
 ```C++
@@ -317,7 +317,7 @@ HRESULT SignAppxPackage(
 
 ## <a name="remarks"></a>Comentários
 
-Depois de assinar o pacote do aplicativo, você também pode tentar validar a assinatura programaticamente usando a função [**WinVerifyTrust**](/windows/desktop/api/wintrust/nf-wintrust-winverifytrust) com a **ação de WINTRUST \_ \_ \_ Verify \_ v2**. Não há considerações especiais nesse caso para o uso de **WinVerifyTrust** com pacotes de aplicativos do Windows.
+Depois de assinar o pacote do aplicativo, você também pode tentar validar a assinatura programaticamente usando a [**função WinVerifyTrust**](/windows/desktop/api/wintrust/nf-wintrust-winverifytrust) com **WINTRUST \_ ACTION GENERIC VERIFY \_ \_ \_ V2**. Nesse caso, não há considerações especiais para usar **WinVerifyTrust** com Windows de aplicativo.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -332,6 +332,6 @@ Depois de assinar o pacote do aplicativo, você também pode tentar validar a as
 [funções de criptografia](/windows/desktop/SecCrypto/cryptography-functions)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

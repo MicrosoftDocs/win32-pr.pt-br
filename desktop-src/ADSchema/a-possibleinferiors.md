@@ -1,11 +1,11 @@
 ---
 title: Possible-Inferiors atributo
-description: A lista de objetos que este objeto pode conter.
+description: A lista de objetos que esse objeto pode conter.
 ms.assetid: f5588b24-7e50-4a65-bc70-a6b649b84fcb
 ms.tgt_platform: multiple
 keywords:
-- Esquema de Possible-Inferiors do atributo AD
-- Esquema de AD do atributo possibleInferiors
+- Possible-Inferiors atributo AD Schema
+- Esquema do AD do atributo possibleInferiors
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 24b42808fc3e47eaef66a58b62f2ca2527374a95
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ca86027c138a2556c7c7a0514389c13e82533526a17dcffdde6bec2e530f83d7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919307"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119442076"
 ---
 # <a name="possible-inferiors-attribute"></a>Possible-Inferiors atributo
 
-A lista de objetos que este objeto pode conter.
+A lista de objetos que esse objeto pode conter.
 
 
 
 | Entrada | Valor |
 |-------------------|-----------------------------------------------------------------|
 | CN                | Possible-Inferiors                                              |
-| LDAP-Display-Name | possibleInferiors                                               |
+| Ldap-Display-Name | Possibleinferiors                                               |
 | Tamanho              | \-                                                              |
 | Privilégio de atualização  | Administrador de domínio                                            |
 | Frequência de atualização  | Quando a classe é definida.                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.915                                          |
-| System-ID-GUID    | 9a7ad94c-ca53-11d1-bbd0-0080c76670c0                            |
-| Syntax            | [**Cadeia de caracteres (identificador de objeto)**](s-string-object-identifier.md) |
+| System-Id-Guid    | 9a7ad94c-ca53-11d1-bbd0-0080c76670c0                            |
+| Sintaxe            | [**String(Object-Identifier)**](s-string-object-identifier.md) |
 
 
 
@@ -44,7 +44,7 @@ A lista de objetos que este objeto pode conter.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,10 +59,10 @@ A lista de objetos que este objeto pode conter.
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | True                            |
-| É de valor único       | Falso                           |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -80,10 +80,10 @@ A lista de objetos que este objeto pode conter.
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | True                            |
-| É de valor único       | Falso                           |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -92,7 +92,7 @@ A lista de objetos que este objeto pode conter.
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,10 +101,10 @@ A lista de objetos que este objeto pode conter.
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | True                            |
-| É de valor único       | Falso                           |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

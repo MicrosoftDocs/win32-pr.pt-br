@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre a propriedade: Instanceparameters. CheckpointDepthMax'
-title: Propriedade instanceparameters. CheckpointDepthMax
+description: 'Saiba mais sobre: propriedade InstanceParameters.CheckpointDepthMax'
+title: Propriedade InstanceParameters.CheckpointDepthMax
 TOCTitle: 'CheckpointDepthMax property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.InstanceParameters.CheckpointDepthMax
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.instanceparameters.checkpointdepthmax(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3addab0356206577eda22119ddce81721e9c2bef
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6aacb8f0bf9083ab4f79b101adc583e1b038f9d7c6f4eeb53bc08a571fc72227
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105772644"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119454156"
 ---
-# <a name="instanceparameterscheckpointdepthmax-property"></a>Propriedade instanceparameters. CheckpointDepthMax
+# <a name="instanceparameterscheckpointdepthmax-property"></a>Propriedade InstanceParameters.CheckpointDepthMax
 
-Obtém ou define o limite em bytes para o número de arquivos de log de transações que precisarão ser reproduzidos após uma falha. Se o log circular estiver habilitado usando CircularLog, esse parâmetro também controlará a quantidade aproximada de arquivos de log de transações que serão retidos no disco.
+Obtém ou define o limite em bytes para saber quantos arquivos de log de transações precisarão ser reprodução após uma falha. Se o log circular estiver habilitado usando CircularLog, esse parâmetro também controlará a quantidade aproximada de arquivos de log de transações que serão retidos no disco.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ``` vb
 'Declaration
@@ -62,14 +62,14 @@ public int CheckpointDepthMax { get; set; }
 
 #### <a name="property-value"></a>Valor da propriedade
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Classe instanceparameters](./instanceparameters-class.md)
+[Classe InstanceParameters](./instanceparameters-class.md)
 
-[Membros de instanceparameters](./instanceparameters-members.md)
+[Membros instanceParameters](./instanceparameters-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 20ecab5918d00dc5f189464becc0252f2a8c0569
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 80f408d0516e4caa5f45977e61b8620ea3d8865f5604eea2f3907bd7728f4809
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826693"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119439296"
 ---
 # <a name="settcpipnetbios-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetTcpipNetbios da classe Win32 \_ NetworkAdapterConfiguration
 
@@ -82,7 +82,7 @@ Desabilitar NetBIOS
 
 </dd> </dl> </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor de 0 (zero) para uma conclusão bem-sucedida quando nenhuma reinicialização é necessária, 1 (uma) para uma conclusão bem-sucedida quando uma reinicialização é necessária e um número diferente se houver um erro. Para obter mais informações sobre códigos de erro, consulte [**WMI Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) or [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obter valores gerais de **HRESULT** , consulte [códigos de erro do sistema](/windows/desktop/Debug/system-error-codes).
 
@@ -354,7 +354,7 @@ Parâmetro fora dos limites.
 
 91
 
-Acesso negado.
+Acesso negado
 
 </dd> <dt>
 
@@ -412,7 +412,7 @@ Interface não configurável.
 
 </dd> <dt>
 
-**Nem todas as concessões DHCP puderam ser liberadas/renovadas**
+**Nem todas as concessões DHCP podem ser liberadas/renovadas**
 </dt> <dd>
 
 98
@@ -426,7 +426,7 @@ Nem todas as concessões DHCP podem ser liberadas ou renovadas.
 
 100
 
-DHCP não habilitado no adaptador.
+O DHCP não está habilitado no adaptador.
 
 </dd> <dt>
 
@@ -439,9 +439,9 @@ DHCP não habilitado no adaptador.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de [Modificar o uso de NetBIOS em um adaptador de rede](https://Gallery.TechNet.Microsoft.Com/01d541f7-5c0d-46d3-8619-28aaab154dc0) ativa o NetBIOS para um adaptador de rede.
+O [exemplo Modificar Uso netBIOS em um](https://Gallery.TechNet.Microsoft.Com/01d541f7-5c0d-46d3-8619-28aaab154dc0) adaptador de rede VBScript habilita o NetBIOS para um adaptador de rede.
 
-A amostra do [PowerShell configurar placas de rede iSCSI de acordo com as práticas recomendadas da Microsoft](https://Gallery.TechNet.Microsoft.Com/Configure-iSCSI-Network-81232a5e) automatiza as definições de configuração para uma máquina virtual.
+O exemplo Configurar cartões de [rede iSCSI](https://Gallery.TechNet.Microsoft.Com/Configure-iSCSI-Network-81232a5e) de acordo com as Práticas Recomendadas da Microsoft do PowerShell automatiza as definições de configuração de uma máquina virtual.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -451,8 +451,8 @@ A amostra do [PowerShell configurar placas de rede iSCSI de acordo com as práti
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -464,13 +464,13 @@ A amostra do [PowerShell configurar placas de rede iSCSI de acordo com as práti
 [Classes de hardware do sistema de computador](computer-system-hardware-classes.md)
 </dt> <dt>
 
-[**\_NetworkAdapterConfiguration Win32**](win32-networkadapterconfiguration.md)
+[**Win32 \_ NetworkAdapterConfiguration**](win32-networkadapterconfiguration.md)
 </dt> <dt>
 
-[Tarefas do WMI: rede](/windows/desktop/WmiSdk/wmi-tasks--networking)
+[Tarefas WMI: Rede](/windows/desktop/WmiSdk/wmi-tasks--networking)
 </dt> <dt>
 
-[Tarefas do WMI: contas e domínios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
+[Tarefas WMI: contas e domínios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
 </dt> <dt>
 
 [Suporte a IPv6 e IPv4 no WMI](/windows/desktop/WmiSdk/ipv6-and-ipv4-support-in-wmi)

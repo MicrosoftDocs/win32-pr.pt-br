@@ -1,9 +1,9 @@
 ---
-title: VÍDEO. shrinkToFit
-description: O atributo shrinkToFit especifica ou recupera um valor que indica se o vídeo será reduzido para a largura e a altura definidas para o controle de vídeo.
+title: VIDEO.shrinkToFit
+description: O atributo shrinkToFit especifica ou recupera um valor que indica se o vídeo será redução para a largura e a altura definidas para o controle Vídeo.
 ms.assetid: 94ab33b0-b08c-4063-a3e6-1315bb527e1c
 keywords:
-- VÍDEO. shrinkToFit Windows Media Player
+- VIDEO.shrinkToFit Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0eb049ac8a307b243a7b4b82bdd0f2834f30b315
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 186c43ce664f4da5490168232310a9e4cd640651a035a16097c8875d74270b2e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105763289"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119465656"
 ---
-# <a name="videoshrinktofit"></a>VÍDEO. shrinkToFit
+# <a name="videoshrinktofit"></a>VIDEO.shrinkToFit
 
-O atributo **shrinkToFit** especifica ou recupera um valor que indica se o vídeo será reduzido para a largura e a altura definidas para o controle de vídeo.
+O **atributo shrinkToFit** especifica ou recupera um valor que indica se o vídeo será redução para a largura e a altura definidas para o controle Vídeo.
 
 ``` syntax
         elementID.shrinkToFit
@@ -29,14 +29,14 @@ O atributo **shrinkToFit** especifica ou recupera um valor que indica se o víde
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esse atributo é um **booliano** de leitura/gravação.
+Esse atributo é um booliana **de leitura/gravação.**
 
 
 
 | Valor | Descrição                                        |
 |-------|----------------------------------------------------|
-| true  | Padrão. O vídeo será reduzido para se ajustar ao controle. |
-| false | O vídeo não será reduzido para se ajustar ao controle.      |
+| true  | Padrão. O vídeo será redução para se ajustar ao controle. |
+| false | O vídeo não será redução para se ajustar ao controle.      |
 
 
 
@@ -52,7 +52,7 @@ Se nenhuma largura ou altura for especificada, esse atributo será ignorado.
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior<br/> |
 
 
 

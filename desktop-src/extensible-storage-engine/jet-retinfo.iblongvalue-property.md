@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre a propriedade: JET_RETINFO. ibLongValue'
-title: Propriedade JET_RETINFO. ibLongValue
+description: 'Saiba mais sobre: JET_RETINFO.ibLongValue'
+title: JET_RETINFO.ibLongValue
 TOCTitle: 'ibLongValue property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_RETINFO.ibLongValue
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_retinfo.iblongvalue(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 39b2ed312f7db54ff799ce2aa52554349d020dab
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 755a22e4cb0dbbee9d10ee45224ca54007a782f89f6220489722881dfe8524e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105784618"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119107300"
 ---
-# <a name="jet_retinfoiblongvalue-property"></a>Propriedade JET_RETINFO. ibLongValue
+# <a name="jet_retinfoiblongvalue-property"></a>JET_RETINFO.ibLongValue
 
-Obtém ou define o deslocamento para o primeiro byte a ser recuperado de uma coluna do tipo [LongBinary](./jet-coltyp-enumeration.md)ou [LONGTEXT](./jet-coltyp-enumeration.md).
+Obtém ou define o deslocamento para o primeiro byte a ser recuperado de uma coluna do tipo [LongBinary](./jet-coltyp-enumeration.md)ou [LongText](./jet-coltyp-enumeration.md).
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -62,14 +62,14 @@ public int ibLongValue { get; set; }
 
 #### <a name="property-value"></a>Valor da propriedade
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Classe JET_RETINFO](./jet-retinfo-class.md)
+[JET_RETINFO classe](./jet-retinfo-class.md)
 
-[Membros do JET_RETINFO](./jet-retinfo-members.md)
+[JET_RETINFO membros](./jet-retinfo-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

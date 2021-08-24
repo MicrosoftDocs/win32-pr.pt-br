@@ -1,9 +1,9 @@
 ---
-title: Código de notificação BN_DISABLE (WinUser. h)
+title: BN_DISABLE de notificação (Winuser.h)
 description: Enviado quando um botão é desabilitado.
 ms.assetid: 5e2bb434-f20d-42f1-a9e9-46c4d10b8c7e
 keywords:
-- BN_DISABLE de código de notificação controles do Windows
+- BN_DISABLE código de notificação Windows Controles
 topic_type:
 - apiref
 api_name:
@@ -14,23 +14,23 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: faaba622c056366fe0c49683adc2c020a6302929
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 305515d7735da4528f91a961005ce50e9e1bb63459489947cb2ba5afd4d119e8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918171"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119439136"
 ---
-# <a name="bn_disable-notification-code"></a>BILHÃO \_ desabilitar código de notificação
+# <a name="bn_disable-notification-code"></a>Código de \_ notificação BN DISABLE
 
 Enviado quando um botão é desabilitado.
 
 > [!Note]  
-> Este código de notificação é fornecido somente para compatibilidade com versões de 16 bits do Windows anteriores à versão 3,0. Os aplicativos devem usar o estilo de botão [**\_ OWNERDRAW BS**](button-styles.md) e a estrutura [**DRAWITEMSTRUCT**](/windows/win32/api/winuser/ns-winuser-drawitemstruct) para essa tarefa.
+> Esse código de notificação é fornecido apenas para compatibilidade com versões de 16 bits do Windows anteriores à versão 3.0. Os aplicativos devem usar [**o estilo do botão \_ BS OWNERDRAW**](button-styles.md) e a [**estrutura DRAWITEMSTRUCT**](/windows/win32/api/winuser/ns-winuser-drawitemstruct) para essa tarefa.
 
  
 
-A janela pai do botão recebe esse código de notificação por meio da mensagem de [**\_ comando do WM**](/windows/desktop/menurc/wm-command) .
+A janela pai do botão recebe esse código de notificação por meio da mensagem [**WM \_ COMMAND.**](/windows/desktop/menurc/wm-command)
 
 
 ```C++
@@ -56,7 +56,7 @@ O [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) cont
 *lParam* 
 </dt> <dd>
 
-Manipular para o botão.
+Lidar com o botão.
 
 </dd> </dl>
 
@@ -66,9 +66,9 @@ Manipular para o botão.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                     |
+| parâmetro<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

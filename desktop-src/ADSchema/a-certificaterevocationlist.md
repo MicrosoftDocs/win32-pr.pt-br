@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8ae77265ffeeae76ae07d608845723b1828772f0
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 03d3977093099bb3935db9833ae96f7cc3e689bb6265d679513164c67a1a9e62
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086751"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119509766"
 ---
 # <a name="certificate-revocation-list-attribute"></a>Atributo Certificate-Revocation-List
 
@@ -58,7 +58,7 @@ Representa uma lista de certificados que foram revogados.
 | ID do link                | \-                                                                                                                                         |
 | MAPI-Id                | 0x8016                                                                                                                                     |
 | System-Only            | Falso                                                                                                                                      |
-| É de valor único       | True                                                                                                                                       |
+| É de valor único       | Verdadeiro                                                                                                                                       |
 | É indexado             | Falso                                                                                                                                      |
 | No catálogo global      | Falso                                                                                                                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                               |
@@ -79,7 +79,7 @@ Representa uma lista de certificados que foram revogados.
 | ID do link                | \-                                                                                                                                         |
 | MAPI-Id                | 0x8016                                                                                                                                     |
 | System-Only            | Falso                                                                                                                                      |
-| É de valor único       | True                                                                                                                                       |
+| É de valor único       | Verdadeiro                                                                                                                                       |
 | É indexado             | Falso                                                                                                                                      |
 | No catálogo global      | Falso                                                                                                                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                               |
@@ -100,7 +100,7 @@ Representa uma lista de certificados que foram revogados.
 | ID do link                | \-                                                                                                                                         |
 | MAPI-Id                | 0x8016                                                                                                                                     |
 | System-Only            | Falso                                                                                                                                      |
-| É de valor único       | True                                                                                                                                       |
+| É de valor único       | Verdadeiro                                                                                                                                       |
 | É indexado             | Falso                                                                                                                                      |
 | No catálogo global      | Falso                                                                                                                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                               |
@@ -121,7 +121,7 @@ Representa uma lista de certificados que foram revogados.
 | ID do link                | \-                                                                                                                                         |
 | MAPI-Id                | 0x8016                                                                                                                                     |
 | System-Only            | Falso                                                                                                                                      |
-| É de valor único       | True                                                                                                                                       |
+| É de valor único       | Verdadeiro                                                                                                                                       |
 | É indexado             | Falso                                                                                                                                      |
 | No catálogo global      | Falso                                                                                                                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                               |
@@ -142,7 +142,7 @@ Representa uma lista de certificados que foram revogados.
 | ID do link                | \-                                                                                                                                         |
 | MAPI-Id                | 0x8016                                                                                                                                     |
 | System-Only            | Falso                                                                                                                                      |
-| É de valor único       | True                                                                                                                                       |
+| É de valor único       | Verdadeiro                                                                                                                                       |
 | É indexado             | Falso                                                                                                                                      |
 | No catálogo global      | Falso                                                                                                                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                               |
@@ -163,7 +163,7 @@ Representa uma lista de certificados que foram revogados.
 | ID do link                | \-                                                                                                                                         |
 | MAPI-Id                | 0x8016                                                                                                                                     |
 | System-Only            | Falso                                                                                                                                      |
-| É de valor único       | True                                                                                                                                       |
+| É de valor único       | Verdadeiro                                                                                                                                       |
 | É indexado             | Falso                                                                                                                                      |
 | No catálogo global      | Falso                                                                                                                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                               |

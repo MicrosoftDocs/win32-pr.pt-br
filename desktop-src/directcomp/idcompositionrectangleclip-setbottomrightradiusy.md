@@ -1,9 +1,9 @@
 ---
-title: Métodos IDCompositionRectangleClip SetBottomRightRadiusY (DCOMP. h)
-description: Altera ou anima o valor da propriedade BottomRightRadiusY deste clipe. A propriedade BottomRightRadiusY especifica o raio y da elipse que arredonda o canto inferior direito do clipe.
+title: Métodos IDCompositionRectangleClip SetBottomRightRadiusY (Dcomp.h)
+description: Altera ou anima o valor da propriedade BottomRightRadiusY deste clipe. A propriedade BottomRightRadiusY especifica o raio y da elipse que reboca o canto inferior direito do clipe.
 ms.assetid: A2A3F43E-62C6-43B8-929F-AEDA11620DF1
 keywords:
-- Métodos SetBottomRightRadiusY DirectComposition
+- Métodos DirectComposition de SetBottomRightRadiusY
 topic_type:
 - apiref
 api_location:
@@ -12,16 +12,16 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: ff582a507c82f945684bbe1732f38803a0de1744
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8d1e3ef6b405b4db5439436ad41ce9eb4c419bc2b6c34fee3336b3eb599bccc7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105781119"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119562336"
 ---
-# <a name="idcompositionrectangleclipsetbottomrightradiusy-methods"></a>Métodos IDCompositionRectangleClip:: SetBottomRightRadiusY
+# <a name="idcompositionrectangleclipsetbottomrightradiusy-methods"></a>Métodos IDCompositionRectangleClip::SetBottomRightRadiusY
 
-Altera ou anima o valor da propriedade BottomRightRadiusY deste clipe. A propriedade BottomRightRadiusY especifica o raio y da elipse que arredonda o canto inferior direito do clipe.
+Altera ou anima o valor da propriedade BottomRightRadiusY deste clipe. A propriedade BottomRightRadiusY especifica o raio y da elipse que reboca o canto inferior direito do clipe.
 
 ### <a name="overload-list"></a>Lista de sobrecargas
 
@@ -29,8 +29,8 @@ Altera ou anima o valor da propriedade BottomRightRadiusY deste clipe. A proprie
 
 | Método                                                                                                                             | Descrição                                                                    |
 |:-----------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------|
-| [**SetBottomRightRadiusY (float)**](/windows/win32/api/dcomp/nf-dcomp-idcompositionrectangleclip-setbottomrightradiusy(idcompositionanimation))                                     | Altera o valor da propriedade BottomRightRadiusY deste clipe.<br/>  |
-| [**SetBottomRightRadiusY (IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionrectangleclip-setbottomrightradiusy(idcompositionanimation)) | Anima o valor da propriedade BottomRightRadiusY deste clipe.<br/> |
+| [**SetBottomRightRadiusY(float)**](/windows/win32/api/dcomp/nf-dcomp-idcompositionrectangleclip-setbottomrightradiusy(idcompositionanimation))                                     | Altera o valor da propriedade BottomRightRadiusY deste clipe.<br/>  |
+| [**SetBottomRightRadiusY(IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionrectangleclip-setbottomrightradiusy(idcompositionanimation)) | Anima o valor da propriedade BottomRightRadiusY deste clipe.<br/> |
 
 
 
@@ -40,10 +40,10 @@ Altera ou anima o valor da propriedade BottomRightRadiusY deste clipe. A proprie
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                 |
-| parâmetro<br/>                   | <dl> <dt>DCOMP. h</dt> </dl>   |
-| Biblioteca<br/>                  | <dl> <dt>DCOMP. lib</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ aplicativos da área de trabalho\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2012 \[\]<br/>                                 |
+| Cabeçalho<br/>                   | <dl> <dt>Dcomp.h</dt> </dl>   |
+| Biblioteca<br/>                  | <dl> <dt>Dcomp.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Dcomp.dll</dt> </dl> |
 
 

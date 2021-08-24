@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_Policy_Config01_ApplicationDefaults02
-description: A \_ classe MDM Policy \_ Config01 \_ ApplicationDefaults02 permite que um administrador defina o tipo de arquivo e as associações de protocolo padrão. Quando definido, as associações padrão serão aplicadas ao entrar no computador.
+title: MDM_Policy_Config01_ApplicationDefaults02 classe
+description: A classe \_ \_ ApplicationDefaults02 do MDM Policy Config01 permite que um administrador de definir associações de protocolo e tipo \_ de arquivo padrão. Quando definido, as associações padrão serão aplicadas ao entrar no computador.
 ms.assetid: 01a45151-bce3-47a7-bffe-1a3f5a1348ff
 keywords:
-- Classe MDM_Policy_Config01_ApplicationDefaults02
-- Classe MDM_Policy_Config01_ApplicationDefaults02, descrita
+- MDM_Policy_Config01_ApplicationDefaults02 classe
+- MDM_Policy_Config01_ApplicationDefaults02 classe , descrita
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 246278b1e4185337ebb63d9d23f74e2ff8753615
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 41273712d3443676e5dfc32d20081b00e9c86a42050e776d3a195a2ec1a90535
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454919"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119391356"
 ---
-# <a name="mdm_policy_config01_applicationdefaults02-class"></a>\_Classe MDM \_ Config01 \_ ApplicationDefaults02
+# <a name="mdm_policy_config01_applicationdefaults02-class"></a>Classe \_ \_ ApplicationDefaults02 do MDM Policy Config01 \_
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto pré-lançado, que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-A \_ classe MDM Policy \_ Config01 \_ ApplicationDefaults02 permite que um administrador defina o tipo de arquivo e as associações de protocolo padrão. Quando definido, as associações padrão serão aplicadas ao entrar no computador.
+A classe \_ \_ ApplicationDefaults02 do MDM Policy Config01 permite que um administrador de definir associações de protocolo e tipo \_ de arquivo padrão. Quando definido, as associações padrão serão aplicadas ao entrar no computador.
 
 A sintaxe a seguir é simplificada do código MOF e inclui todas as propriedades herdadas.
 
@@ -46,13 +46,13 @@ class MDM_Policy_Config01_ApplicationDefaults02
 
 ## <a name="members"></a>Membros
 
-A **classe \_ \_ Config01 \_ ApplicationDefaults02 da política MDM** tem estes tipos de membros:
+A **classe \_ \_ \_ ApplicationDefaults02 do MDM Policy Config01** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A **classe \_ \_ Config01 \_ ApplicationDefaults02 da política MDM** tem essas propriedades.
+A **classe \_ \_ \_ ApplicationDefaults02 do MDM Policy Config01** tem essas propriedades.
 
 <dl> <dt>
 
@@ -62,7 +62,7 @@ A **classe \_ \_ Config01 \_ ApplicationDefaults02 da política MDM** tem essas 
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -81,7 +81,7 @@ Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -101,10 +101,10 @@ Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                      |
-| Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Namespace<br/>                | \\Cimv2 \\ mdm \\ dmmap raiz<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 

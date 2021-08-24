@@ -85,7 +85,7 @@
             - name: IMbnConnection
               href: /windows/desktop/api/mbnapi/nn-mbnapi-imbnconnection
               items:
-                - name: Método Connect
+                - name: Conexão Forma
                   href: /windows/desktop/api/mbnapi/nf-mbnapi-imbnconnection-connect
                 - name: Método de desconexão
                   href: /windows/desktop/api/mbnapi/nf-mbnapi-imbnconnection-disconnect
@@ -504,14 +504,14 @@
                   href: /windows/desktop/api/mbnapi/nf-mbnapi-imbnsmsreadmsgpdu-get_message
                 - name: Propriedade PduData
                   href: /windows/desktop/api/mbnapi/nf-mbnapi-imbnsmsreadmsgpdu-get_pdudata
-                - name: Propriedade de status
+                - name: Propriedade Status
                   href: /windows/desktop/api/mbnapi/nf-mbnapi-imbnsmsreadmsgpdu-get_status
             - name: IMbnSmsReadMsgTextCdma
               href: /windows/desktop/api/mbnapi/nn-mbnapi-imbnsmsreadmsgtextcdma
               items:
-                - name: Propriedade de endereço
+                - name: Propriedade Address
                   href: /windows/desktop/api/mbnapi/nf-mbnapi-imbnsmsreadmsgtextcdma-get_address
-                - name: Propriedade encodingid
+                - name: Propriedade EncodingID
                   href: /windows/desktop/api/mbnapi/nf-mbnapi-imbnsmsreadmsgtextcdma-get_encodingid
                 - name: Propriedade Index
                   href: /windows/desktop/api/mbnapi/nf-mbnapi-imbnsmsreadmsgtextcdma-get_index
@@ -521,7 +521,7 @@
                   href: /windows/desktop/api/mbnapi/nf-mbnapi-imbnsmsreadmsgtextcdma-get_message
                 - name: Propriedade SizeInCharacters
                   href: /windows/desktop/api/mbnapi/nf-mbnapi-imbnsmsreadmsgtextcdma-get_sizeincharacters
-                - name: Propriedade de status
+                - name: Propriedade Status
                   href: /windows/desktop/api/mbnapi/nf-mbnapi-imbnsmsreadmsgtextcdma-get_status
                 - name: Propriedade Timestamp
                   href: /windows/desktop/api/mbnapi/nf-mbnapi-imbnsmsreadmsgtextcdma-get_timestamp
@@ -530,7 +530,7 @@
               items:
                 - name: Propriedade SimIccID
                   href: /windows/desktop/api/mbnapi/nf-mbnapi-imbnsubscriberinformation-get_simiccid
-                - name: Propriedade subscriberid
+                - name: Propriedade SubscriberID
                   href: /windows/desktop/api/mbnapi/nf-mbnapi-imbnsubscriberinformation-get_subscriberid
                 - name: Propriedade TelephoneNumbers
                   href: /windows/desktop/api/mbnapi/nf-mbnapi-imbnsubscriberinformation-get_telephonenumbers
@@ -571,10 +571,10 @@
         - name: Esquema de perfil de banda larga móvel v1
           href: mobile-broadband-profile-schema.md
           items:
-            - name: Elementos do esquema do perfil de banda larga móvel v1
+            - name: Elementos do esquema de perfil de banda larga móvel v1
               href: schema-elements.md
               items:
-                - name: Elemento accessstring (contextType)
+                - name: Elemento AccessString (contextType)
                   href: schema-accessstring-contexttype-element.md
                 - name: Elemento AuthProtocol (contextType)
                   href: schema-authprotocol-contexttype-element.md
@@ -608,39 +608,39 @@
                   href: schema-profilecreationtype-mbnprofile-element.md
                 - name: Elemento Provider (DataRoamingPartners)
                   href: schema-provider-dataroamingpartners-element.md
-                - name: Elemento ProviderId (providerType)
+                - name: Elemento ProviderID (providerType)
                   href: schema-providerid-providertype-element.md
                 - name: Elemento ProviderName (providerType)
                   href: schema-providername-providertype-element.md
                 - name: Elemento SimIccID (MBNProfile)
                   href: schema-simiccid-mbnprofile-element.md
-                - name: Elemento subscriberid (MBNProfile)
+                - name: Elemento SubscriberID (MBNProfile)
                   href: schema-subscriberid-mbnprofile-element.md
                 - name: Elemento UserLogonCred (contextType)
                   href: schema-userlogoncred-contexttype-element.md
                 - name: Elemento UserName (UserLogonCred)
                   href: schema-username-userlogoncred-element.md
-            - name: Tipos simples de esquema de perfil de banda larga móvel v1
+            - name: Esquema de perfil de banda larga móvel v1 Tipos simples
               href: schema-simple-types.md
               items:
-                - name: Tipo simples de iconFileType
+                - name: iconFileType Simple Type
                   href: schema-iconfiletype-simpletype.md
-                - name: Tipo simples nametype
+                - name: tipo simples nameType
                   href: schema-nametype-simpletype.md
-                - name: Tipo simples de providerIdType
+                - name: Tipo simples providerIdType
                   href: schema-provideridtype-simpletype.md
-                - name: Tipo simples de providerNametype
+                - name: tipo simples providerNameType
                   href: schema-providernametype-simpletype.md
-                - name: Tipo simples de simIccIDType
+                - name: Tipo simples simIccIDType
                   href: schema-simiccidtype-simpletype.md
-                - name: Tipo simples de subscriberIdType
+                - name: Tipo simples subscriberIdType
                   href: schema-subscriberidtype-simpletype.md
-            - name: Tipos complexos do esquema de perfil de banda larga móvel v1
+            - name: Esquema de perfil de banda larga móvel v1 Tipos complexos
               href: schema-complex-types.md
               items:
-                - name: Tipo complexo contextType
+                - name: tipo complexo contextType
                   href: schema-contexttype-complextype.md
-                - name: Tipo complexo providerType
+                - name: tipo complexo providerType
                   href: schema-providertype-complextype.md
         - name: Esquema de perfil de banda larga móvel v2
           href: mobile-broadband-profile-schema-v2.md
@@ -663,13 +663,13 @@
         - name: Esquema de perfil de banda larga móvel v4
           href: schema-root.md
           items:
-            - name: Elementos v4 do esquema de perfil de banda larga móvel
+            - name: Elementos do esquema de perfil de banda larga móvel v4
               href: root-elements.md
               items:
                 - name: MBNProfileExt
                   href: element-mbnprofileext.md
                   items:
-                    - name: Name
+                    - name: Nome
                       href: element-name.md
                     - name: Descrição
                       href: element-description.md
@@ -679,7 +679,7 @@
                       href: element-isdefault.md
                     - name: ProfileCreationType
                       href: element-profilecreationtype.md
-                    - name: Subscriberid
+                    - name: SubscriberID
                       href: element-subscriberid.md
                     - name: SimIccID
                       href: element-simiccid.md
@@ -724,11 +724,11 @@
                       items:
                         - name: CellularClass
                           href: element-cellularclass.md
-                        - name: RATApplicability
+                        - name: LICAAplicabilidade
                           href: element-ratapplicability.md
                         - name: RoamApplicability
                           href: element-roamapplicability.md
-                        - name: IMSI
+                        - name: Imsi
                           href: element-imsi.md
                         - name: IwlanApplicability
                           href: element-iwlanapplicability.md
@@ -756,7 +756,7 @@
                 - name: ModemDMConfigProfile
                   href: element-modemdmconfigprofile.md
                   items:
-                    - name: Name
+                    - name: Nome
                       href: element-1-name.md
                     - name: SimIccID
                       href: element-1-simiccid.md
@@ -792,14 +792,14 @@
                       href: element-1-adminroamcontrol.md
                     - name: ProfileCreationType
                       href: element-1-profilecreationtype.md
-            - name: Tipos simples de esquema de perfil de banda larga móvel v4
+            - name: Esquema de perfil de banda larga móvel v4 Tipos simples
               href: simple-types.md
               items:
-                - name: Tipo simples de guidtype
+                - name: Tipo simples guidType
                   href: simpletype-guidtype.md
-                - name: Tipo simples de iwlanApplicabilityType
+                - name: Tipo simples iwlanApplicabilityType
                   href: simpletype-iwlanapplicabilitytype.md
-                - name: Tipo simples de roamApplicabilityType
+                - name: Tipo simples roamApplicabilityType
                   href: simpletype-roamapplicabilitytype.md
-                - name: Tipo simples de roamControlType
+                - name: Tipo simples roamControlType
                   href: simpletype-roamcontroltype.md

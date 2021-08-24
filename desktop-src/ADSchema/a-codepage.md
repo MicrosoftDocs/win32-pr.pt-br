@@ -1,11 +1,11 @@
 ---
 title: Code-Page atributo
-description: Especifica a página de código para o idioma de escolha do usuário. Esse valor não é usado pelo Windows 2000.
+description: Especifica a página de código para o idioma de sua escolha. Esse valor não é usado pelo Windows 2000.
 ms.assetid: f98e6fbe-0c9a-4ee0-8158-3eaaca359675
 ms.tgt_platform: multiple
 keywords:
-- Esquema de Code-Page do atributo AD
-- Esquema de anúncio de atributo codePage
+- Code-Page atributo AD Schema
+- Esquema do AD do atributo codePage
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 92c3e9858ba387b98d5556c6010490c024be836b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ff90ba0413288ff09c5793cf582a64d88e1de32ac4a3eeaba3b6ae688bf6f8eb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103645375"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119442706"
 ---
 # <a name="code-page-attribute"></a>Code-Page atributo
 
-Especifica a página de código para o idioma de escolha do usuário. Esse valor não é usado pelo Windows 2000.
+Especifica a página de código para o idioma de sua escolha. Esse valor não é usado pelo Windows 2000.
 
 
 
 | Entrada | Valor |
 |-------------------|-------------------------------------------------------|
 | CN                | Code-Page                                             |
-| LDAP-Display-Name | Código                                              |
+| Ldap-Display-Name | Codepage                                              |
 | Tamanho              | 4 bytes                                               |
 | Privilégio de atualização  | Administrador de domínio                                  |
 | Frequência de atualização  | Quando o usuário desejar alterar o idioma padrão. |
 | Attribute-Id      | 1.2.840.113556.1.4.16                                 |
-| System-ID-GUID    | bf967938-0de6-11d0-a285-00aa003049e2                  |
-| Syntax            | [**Enumeração**](s-enumeration.md)                  |
+| System-Id-Guid    | bf967938-0de6-11d0-a285-00aa003049e2                  |
+| Sintaxe            | [**Enumeração**](s-enumeration.md)                  |
 
 
 
@@ -58,10 +58,10 @@ Especifica a página de código para o idioma de escolha do usuário. Esse valor
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | True                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
@@ -79,10 +79,10 @@ Especifica a página de código para o idioma de escolha do usuário. Esse valor
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | True                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 65535                             |
 | Search-Flags           | 0x00000010                        |
@@ -100,10 +100,10 @@ Especifica a página de código para o idioma de escolha do usuário. Esse valor
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | True                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 65535                             |
 | Search-Flags           | 0x00000010                        |
@@ -121,10 +121,10 @@ Especifica a página de código para o idioma de escolha do usuário. Esse valor
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | True                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 65535                             |
 | Search-Flags           | 0x00000010                        |
@@ -142,10 +142,10 @@ Especifica a página de código para o idioma de escolha do usuário. Esse valor
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | True                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 65535                             |
 | Search-Flags           | 0x00000010                        |
@@ -163,10 +163,10 @@ Especifica a página de código para o idioma de escolha do usuário. Esse valor
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | True                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 65535                             |
 | Search-Flags           | 0x00000010                        |

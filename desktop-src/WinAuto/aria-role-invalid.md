@@ -1,23 +1,23 @@
 ---
-title: Erro de função do ARIA
-description: Erro de função do ARIA
+title: Erro de função ARIA
+description: Erro de função ARIA
 ms.assetid: FEEB4F28-4A71-4417-A2F9-ABCB86B44F0F
 keywords:
 - AriaRoleErrorId
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: df04ad94d68ae1e8e2e8d3352aa349834a2389fa
-ms.sourcegitcommit: 773fa6257ead6c74154ad3cf46d21e49adc900aa
+ms.openlocfilehash: 51c0fcef639a54bcd805bcb3f239e8d42cfeda8c5111d128c5f54157db75d7ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "105760430"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119134009"
 ---
-# <a name="aria-role-error"></a>Erro de função do ARIA
+# <a name="aria-role-error"></a>Erro de função ARIA
 
 ## <a name="text"></a>Texto
 
-O elemento tem uma função WAI-ARIA inválida.
+O elemento tem uma função DED-ARIA inválida.
 
 ## <a name="type"></a>Tipo
 
@@ -25,9 +25,9 @@ Erro
 
 ## <a name="description"></a>Descrição
 
-Esse erro se aplica a todos os elementos que têm o atributo [**role**](https://developer.mozilla.org/docs/Web/HTML/Reference) . Ele indica que o atributo de **função** não é um valor de função de Wai (aplicativos de Internet avançado) acessível para iniciativa de acessibilidade da Web, conforme definido pela especificação WAI-ARIA. Definir uma função válida ajuda a garantir que o elemento seja interpretado corretamente por leitores de tela e por outras ferramentas de tecnologia assistencial.
+Esse erro se aplica a todos os elementos que têm o [**atributo de**](https://developer.mozilla.org/docs/Web/HTML/Reference) função. Indica que o  atributo de função não é uma iniciativa de acessibilidade da Web válida – valor de função DENG-ARIA (Aplicativos de Internet Rich Acessível), conforme definido pela especificação DERIA-ARIA. Definir uma função válida ajuda a garantir que o elemento seja interpretado corretamente por leitores de tela e outras ferramentas de tecnologia adaptativa.
 
-Para corrigir esse erro, defina o atributo [**role**](https://developer.mozilla.org/docs/Web/HTML/Reference) como um valor de função WAI-ARIA válido. Observe que as funções abstratas WAI-ARIA não são válidas.
+Para corrigir esse erro, defina [**o atributo de**](https://developer.mozilla.org/docs/Web/HTML/Reference) função como um valor de função VALID-ARIA. Observe que as funções ABSTRACT-ARIA abstratas não são válidas.
 
 ## <a name="example"></a>Exemplo
 
@@ -49,9 +49,9 @@ Para corrigir esse erro, defina o atributo [**role**](https://developer.mozilla.
 [Erro de função de contêiner do ARIA](aria-container-role.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

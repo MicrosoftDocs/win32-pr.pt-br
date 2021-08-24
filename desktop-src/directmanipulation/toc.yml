@@ -1,11 +1,11 @@
 - name: Manipulação direta
   href: direct-manipulation-portal.md
   items:
-    - name: Visores e conteúdo
+    - name: Viewports e conteúdo
       href: directmanipulation-viewports-and-content.md
     - name: Usando vários viewports no DirectManipulation
       href: directmanipulation-multiple-vieports.md
-    - name: Processando a entrada com DirectManipulation
+    - name: Processamento de entrada com DirectManipulation
       href: directmanipulation-processing-input-with-directmanipulation.md
     - name: Mecanismo de composição
       href: directmanipulation-composition-engine.md
@@ -14,7 +14,7 @@
       items:
         - name: Constantes de manipulação direta
           href: direct-manipulation-constants.md
-        - name: GUIDs de manipulação direta
+        - name: GUIDs de Manipulação Direta
           href: direct-manipulation-guids.md
         - name: Enumerações de manipulação direta
           href: direct-manipulation-enumerations.md
@@ -66,7 +66,7 @@
                   href: /windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationcompositor-flush
                 - name: Método RemoveContent
                   href: /windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationcompositor-removecontent
-                - name: Método setupdatemanager
+                - name: Método SetUpdateManager
                   href: /windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationcompositor-setupdatemanager
             - name: IDirectManipulationCompositor2
               href: /windows/win32/api/DirectManipulation/nn-directmanipulation-idirectmanipulationcompositor2
@@ -84,7 +84,7 @@
                   href: /windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationcontent-getoutputtransform
                 - name: Método GetTag
                   href: /windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationcontent-gettag
-                - name: Método getviewport
+                - name: Método GetViewport
                   href: /windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationcontent-getviewport
                 - name: Método SetContentRect
                   href: /windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationcontent-setcontentrect
@@ -121,20 +121,20 @@
             - name: IDirectManipulationInteractionEventHandler
               href: /windows/win32/api/DirectManipulation/nn-directmanipulation-idirectmanipulationinteractioneventhandler
               items:
-                - name: Método oninterling
+                - name: Método OnInteraction
                   href: /windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationinteractioneventhandler-oninteraction
             - name: IDirectManipulationManager
               href: /windows/win32/api/DirectManipulation/nn-directmanipulation-idirectmanipulationmanager
               items:
                 - name: Método Activate
                   href: /windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationmanager-activate
-                - name: Método createcontent
+                - name: Método CreateContent
                   href: /windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationmanager-createcontent
-                - name: Método createviewport
+                - name: Método CreateViewport
                   href: /windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationmanager-createviewport
                 - name: Método Deactivate
                   href: /windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationmanager-deactivate
-                - name: Método getupdatemanager
+                - name: Método GetUpdateManager
                   href: /windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationmanager-getupdatemanager
                 - name: Método ProcessInput
                   href: /windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationmanager-processinput
@@ -157,7 +157,7 @@
                   href: /windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationprimarycontent-getcenterpoint
                 - name: Método GetInertiaEndTransform
                   href: /windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationprimarycontent-getinertiaendtransform
-                - name: Método sethorizontalalignment
+                - name: Método SetHorizontalAlignment
                   href: /windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationprimarycontent-sethorizontalalignment
                 - name: Método SetSnapCoordinate
                   href: /windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationprimarycontent-setsnapcoordinate
@@ -165,9 +165,9 @@
                   href: /windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationprimarycontent-setsnapinterval
                 - name: Método SetSnapPoints
                   href: /windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationprimarycontent-setsnappoints
-                - name: Método setsnaptype
+                - name: Método SetSnapType
                   href: /windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationprimarycontent-setsnaptype
-                - name: Método setverticalalignment
+                - name: Método SetVerticalAlignment
                   href: /windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationprimarycontent-setverticalalignment
                 - name: Método SetZoomBoundaries
                   href: /windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationprimarycontent-setzoomboundaries
@@ -198,9 +198,9 @@
                   href: /windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-addcontent
                 - name: Método AddEventHandler
                   href: /windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-addeventhandler
-                - name: Desabilitar método
+                - name: Método Disable
                   href: /windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-disable
-                - name: Habilitar método
+                - name: Método Enable
                   href: /windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-enable
                 - name: Método GetPrimaryContent
                   href: /windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-getprimarycontent
@@ -220,19 +220,19 @@
                   href: /windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-removecontent
                 - name: Método RemoveEventHandler
                   href: /windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-removeeventhandler
-                - name: Método setencadeamento
+                - name: Método SetChaining
                   href: /windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-setchaining
-                - name: Método setcontact
+                - name: Método SetContact
                   href: /windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-setcontact
-                - name: Método setinputmode
+                - name: Método SetInputMode
                   href: /windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-setinputmode
                 - name: Método SetManualGesture
                   href: /windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-setmanualgesture
                 - name: Método SetTag
                   href: /windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-settag
-                - name: Método setupdatemode
+                - name: Método SetUpdateMode
                   href: /windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-setupdatemode
-                - name: Método setvisoroptions
+                - name: Método SetViewportOptions
                   href: /windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-setviewportoptions
                 - name: Método SetViewportRect
                   href: /windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-setviewportrect
@@ -247,7 +247,7 @@
             - name: IDirectManipulationViewport2
               href: /windows/win32/api/DirectManipulation/nn-directmanipulation-idirectmanipulationviewport2
               items:
-                - name: Método addbehavior
+                - name: Método AddBehavior
                   href: /windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport2-addbehavior
                 - name: Método RemoveBehavior
                   href: /windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport2-removebehavior

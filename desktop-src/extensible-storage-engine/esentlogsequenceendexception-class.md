@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 78de803d31d8e97f9493d605d688916501edba6d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 535c44bbd9e3d0c16fbebb21a2f1748fb8ef7289131f4c78bed936720d50a774
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104165132"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119115636"
 ---
 # <a name="esentlogsequenceendexception-class"></a>Classe EsentLogSequenceEndException
 
@@ -38,7 +38,7 @@ Classe base para JET_err. LogSequenceEnd exceções.
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Exception](/dotnet/api/system.exception)  
+  [System.Exception](/dotnet/api/system.exception)  
     [Microsoft. ISAM. ESENT. EsentException](./esentexception-class.md)  
       [Microsoft. ISAM. ESENT. Interop. EsentErrorException](./esenterrorexception-class.md)  
         [Microsoft. ISAM. ESENT. Interop. EsentDataException](./esentdataexception-class.md)  

@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: cc1027081cc8713cffd2979e20627c037d0799f9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c98ccf35e41886594a3aab8c3abec6737128d8d7e22f6dfb75d0ac88ac3b7a02
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751678"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119538656"
 ---
 # <a name="csystemclocksetclockdelta-method"></a>Método CSystemClock. SetClockDelta
 
@@ -49,7 +49,7 @@ Especifica o valor pelo qual ajustar o relógio, como um valor [**de \_ tempo de
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna S \_ OK ou um código de erro **HRESULT** .
 
@@ -66,7 +66,7 @@ Os valores de tempo retornados por [**IReferenceClock:: getTime**](/windows/desk
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Versão<br/> | Classe CSystemClock<br/>                                                                                                                                                              |
-| parâmetro<br/>  | <dl> <dt>Sysclock. h (incluir fluxos. h)</dt> </dl>                                                                                  |
+| Cabeçalho<br/>  | <dl> <dt>Sysclock. h (incluir Fluxos. h)</dt> </dl>                                                                                  |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 

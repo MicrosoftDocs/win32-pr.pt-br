@@ -1,4 +1,4 @@
-- name: 'Empacotamento, implantação e consulta de aplicativos do Windows'
+- name: 'empacotamento, implantação e consulta de aplicativos Windows'
   href: appx-portal.md
   items:
     - name: Como criar um pacote de aplicativo
@@ -225,9 +225,9 @@
             - name: IAppxContentGroupMapWriter
               href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxcontentgroupmapwriter
               items:
-                - name: Método autoautomatic
+                - name: Método AddAutomaticGroup
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxcontentgroupmapwriter-addautomaticgroup
-                - name: Método addautomáticofile
+                - name: Método AddAutomaticFile
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxcontentgroupmapwriter-addautomaticfile
             - name: IAppxEncryptionFactory
               href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxencryptionfactory
@@ -397,7 +397,7 @@
               items:
                 - name: Método GetName
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestmainpackagedependency-getname
-                - name: Método getpublisher
+                - name: Método GetPublisher
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestmainpackagedependency-getpublisher
                 - name: Método GetPackageFamilyName
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestmainpackagedependency-getpackagefamilyname
@@ -433,7 +433,7 @@
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestpackagedependency-getminversion
                 - name: Método GetName
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestpackagedependency-getname
-                - name: Método getpublisher
+                - name: Método GetPublisher
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestpackagedependency-getpublisher
             - name: IAppxManifestPackageDependency2
               href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxmanifestpackagedependency2
@@ -445,7 +445,7 @@
               items:
                 - name: Método ComparePublisher
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestpackageid-comparepublisher
-                - name: Método getarchitecture
+                - name: Método GetArchitecture
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestpackageid-getarchitecture
                 - name: Método GetName
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestpackageid-getname
@@ -453,9 +453,9 @@
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestpackageid-getpackagefamilyname
                 - name: Método GetPackageFullName
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestpackageid-getpackagefullname
-                - name: Método getpublisher
+                - name: Método GetPublisher
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestpackageid-getpublisher
-                - name: Método getresourceid
+                - name: Método GetResourceId
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestpackageid-getresourceid
                 - name: Método GetVersion
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestpackageid-getversion
@@ -467,7 +467,7 @@
             - name: IAppxManifestProperties
               href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxmanifestproperties
               items:
-                - name: Método getboolvalue
+                - name: Método GetBoolValue
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestproperties-getboolvalue
                 - name: Método GetStringValue
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestproperties-getstringvalue
@@ -482,13 +482,13 @@
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestreader-getdevicecapabilities
                 - name: Método GetPackageDependencies
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestreader-getpackagedependencies
-                - name: Método getpackageid
+                - name: Método GetPackageId
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestreader-getpackageid
-                - name: Método getrequisite
+                - name: Método GetPrerequisite
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestreader-getprerequisite
                 - name: 'método GetProperties '
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestreader-getproperties
-                - name: Método getResources
+                - name: Método GetResources
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestreader-getresources
                 - name: Método GetStream
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestreader-getstream
@@ -543,18 +543,18 @@
               items:
                 - name: Método GetBlockMap
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxpackagereader-getblockmap
-                - name: Método getocupaçãofile
+                - name: Método GetPrintprintFile
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxpackagereader-getfootprintfile
-                - name: Método getmanifest
+                - name: Método GetManifest
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxpackagereader-getmanifest
-                - name: Método getpayloadfile
+                - name: Método GetPayloadFile
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxpackagereader-getpayloadfile
                 - name: Método GetPayloadFiles
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxpackagereader-getpayloadfiles
             - name: IAppxPackageWriter
               href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxpackagewriter
               items:
-                - name: Método addpayloadfile
+                - name: Método AddPayloadFile
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxpackagewriter-addpayloadfile
                 - name: Método Close
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxpackagewriter-close
@@ -571,7 +571,7 @@
             - name: IAppxSourceContentGroupMapReader
               href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxsourcecontentgroupmapreader
               items:
-                - name: Método requerido
+                - name: Método GetRequiredGroup
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxsourcecontentgroupmapreader-getrequiredgroup
                 - name: Método GetAutomaticGroups
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxsourcecontentgroupmapreader-getautomaticgroups
@@ -648,7 +648,7 @@
               href: /windows/desktop/api/AppModel/nf-appmodel-getpackagefullname
             - name: GetPackageFullNameFromToken
               href: /windows/desktop/api/AppModel/nf-appmodel-getpackagefullnamefromtoken
-            - name: Getpackageid
+            - name: GetPackageId
               href: /windows/desktop/api/AppModel/nf-appmodel-getpackageid
             - name: GetPackageInfo
               href: /windows/desktop/api/AppModel/nf-appmodel-getpackageinfo
@@ -696,14 +696,14 @@
               href: /windows/desktop/api/AppModel/ns-appmodel-package_version
         - name: Glossário
           href: appx-packaging-glossary.md
-        - name: API COM do Gerenciador de pacotes do Windows
+        - name: Gerenciador de Pacotes do Windows API COM
           href: windows-package-manager-com-api.md
     - name: Ferramentas e cmdlets do PowerShell
       href: appx-packaging-tools.md
       items:
         - name: Empacotador de aplicativo (MakeAppx.exe)
           href: make-appx-package--makeappx-exe-.md
-    - name: Exemplos do SDK
+    - name: Amostras do SDK
       href: appx-packaging-samples.md
     - name: Programa de aplicativo da área de trabalho do Windows
       href: windows-desktop-application-program.md

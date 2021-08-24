@@ -5,12 +5,12 @@ ms.assetid: 65DDADC4-C391-4E08-9F24-6A532DB06B23
 title: I (aplicativos isolados e assemblies lado a lado)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 73bcd13e2d2ee41fdb9f2ea9dc6f0111354c1937
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 51bbc8a49abee94e53d4b3fd023f2bb28900c3ca2c511e7343b02d31fcca713d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090210"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119142189"
 ---
 # <a name="i-isolated-applications-and-side-by-side-assemblies"></a>I (aplicativos isolados e assemblies lado a lado)
 

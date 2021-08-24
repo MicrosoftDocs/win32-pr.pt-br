@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: 9a1501008f0235ea303dd1457fc8756c28abc21c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3ba6e372b495c47dd92e61e51ba6487e6d9c2c0aca924bf6ed3a092ba0816820
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170878"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119446986"
 ---
 # <a name="printer_info_4-structure"></a>Estrutura de informações da impressora \_ \_ 4
 
@@ -83,7 +83,7 @@ A **estrutura \_ informações \_ da impressora 4** fornece uma maneira fácil e
 
 Os **atributos** também podem conter valores definidos no campo **atributos** das informações da **impressora \_ \_ 2**.
 
-Algumas configurações de impressora, como conexões de impressora para alguns servidores de impressão não baseados no Windows, podem retornar **o \_ atributo \_ de impressora local** e a **\_ \_ rede de atributos de impressora**.
+algumas configurações de impressora, como conexões de impressora para alguns servidores de impressão não Windows, podem retornar o **atributo de \_ impressora \_ LOCAL** e **a \_ \_ rede de atributos de impressora**.
 
 ## <a name="requirements"></a>Requisitos
 

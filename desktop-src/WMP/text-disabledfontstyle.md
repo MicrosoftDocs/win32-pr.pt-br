@@ -3,7 +3,7 @@ title: TEXT. disabledFontStyle
 description: O atributo disabledFontStyle especifica ou recupera o estilo de fonte usado para o controle de texto quando ele está desabilitado.
 ms.assetid: d0593fe0-f80d-44a3-b989-e85887465d8a
 keywords:
-- TEXT. disabledFontStyle Windows Media Player
+- Windows Media Player TEXT. disabledFontStyle
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 563ab039a5eae00324f3a810c7d32f08729629b3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0119139e481eee6673c61f95425eac0a3918d738c3d18278442ba7713718b7bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105791285"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119507586"
 ---
 # <a name="textdisabledfontstyle"></a>TEXT. disabledFontStyle
 

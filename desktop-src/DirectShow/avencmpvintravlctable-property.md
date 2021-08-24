@@ -1,21 +1,21 @@
 ---
-description: Especifica a tabela de codificação de comprimento variável (VLC) a ser usada para codificação de entropia. Essa propriedade se aplica a codificadores de vídeo MPEG.
+description: Especifica qual tabela de codificação de comprimento variável (VLC) deve ser usada para codificação de entropia. Essa propriedade se aplica a codificadores de vídeo MPEG.
 ms.assetid: caa17027-8f11-47d3-83da-7ca83b27c978
-title: Propriedade AVEncMPVIntraVLCTable (Codecapi. h)
+title: Propriedade AVEncMPVIntraVLCTable (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5391e143f7fe2a57b0a989d77246e46210c72a4c
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 755928278cfd726cf5d963cb339ddf362b0372087289e32fc352894483467d40
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103825931"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119276116"
 ---
 # <a name="avencmpvintravlctable-property"></a>Propriedade AVEncMPVIntraVLCTable
 
-Especifica a tabela de codificação de comprimento variável (VLC) a ser usada para codificação de entropia. Essa propriedade se aplica a codificadores de vídeo MPEG.
+Especifica qual tabela de codificação de comprimento variável (VLC) deve ser usada para codificação de entropia. Essa propriedade se aplica a codificadores de vídeo MPEG.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="data-type"></a>Tipo de dados
 
@@ -27,7 +27,7 @@ Esta propriedade é de leitura/gravação.
 
 ## <a name="property-value"></a>Valor da propriedade
 
-O valor dessa propriedade é um membro da enumeração [**eAVEncMPVIntraVLCTable**](/windows/desktop/api/codecapi/ne-codecapi-eavencmpvintravlctable) .
+O valor dessa propriedade é um membro da enumeração [**eAVEncMPVIntraVLCTable.**](/windows/desktop/api/codecapi/ne-codecapi-eavencmpvintravlctable)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,9 +35,9 @@ O valor dessa propriedade é um membro da enumeração [**eAVEncMPVIntraVLCTable
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos do Windows 2000 Professional \[ Desktop aplicativos \| UWP\]<br/>                     |
-| Servidor mínimo com suporte<br/> | Aplicativos da área de trabalho do Windows 2000 Server aplicativos \[ \| UWP\]<br/>                           |
-| parâmetro<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional \[ aplicativos UWP da área de \| trabalho\]<br/>                     |
+| Servidor mínimo com suporte<br/> | Windows aplicativos da área de trabalho do servidor 2000 \[ \| aplicativos UWP\]<br/>                           |
+| parâmetro<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -45,10 +45,10 @@ O valor dessa propriedade é um membro da enumeração [**eAVEncMPVIntraVLCTable
 
 <dl> <dt>
 
-[Propriedades da API do codec](codec-api-properties.md)
+[Propriedades da API do Codec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interface ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI Interface**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

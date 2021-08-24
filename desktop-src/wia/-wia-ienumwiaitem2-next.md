@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Wia.h
-ms.openlocfilehash: 2e8800ead0c8f0abaddd0f055f31962d4d55d14d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cf884375f504bb801bcebcaad3f75b23c5f82956ce3a1d45dd5a50bfa5f8e53c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164712"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119451136"
 ---
 # <a name="ienumwiaitem2next-method"></a>Método IEnumWiaItem2:: Next
 
@@ -62,13 +62,13 @@ Recebe o endereço de uma matriz de ponteiros de interface [**IWiaItem2**](-wia-
 *pcEltFetched* \[ entrada, saída\]
 </dt> <dd>
 
-Tipo: **ULONG \** _
+Tipo: **ULONG \***
 
-Na saída, esse parâmetro recebe o número de ponteiros de interface realmente armazenados na matriz indicada pelo parâmetro _ppIWiaItem2 *. Quando a enumeração for concluída, esse parâmetro conterá zero.
+Na saída, esse parâmetro recebe o número de ponteiros de interface realmente armazenados na matriz indicada pelo parâmetro *ppIWiaItem2* . Quando a enumeração for concluída, esse parâmetro conterá zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
@@ -76,7 +76,7 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
 ## <a name="remarks"></a>Comentários
 
-O sistema de tempo de execução do WIA (Windows Image Acquisition) 2,0 representa os dispositivos de hardware WIA 2,0 como uma árvore hierárquica de objetos [**IWiaItem2**](-wia-iwiaitem2.md) . Os aplicativos usam o método **IEnumWiaItem2:: Next** para obter um ponteiro de interface **IWiaItem2** para cada item na pasta atual da árvore de objetos **IWiaItem2** de um dispositivo de hardware.
+o sistema de tempo de execução do Windows Image Acquisition (WIA) 2,0 representa os dispositivos de hardware wia 2,0 como uma árvore hierárquica de objetos [**IWiaItem2**](-wia-iwiaitem2.md) . Os aplicativos usam o método **IEnumWiaItem2:: Next** para obter um ponteiro de interface **IWiaItem2** para cada item na pasta atual da árvore de objetos **IWiaItem2** de um dispositivo de hardware.
 
 Para obter a lista de ponteiros, o aplicativo passa uma matriz de ponteiros de interface [**IWiaItem2**](-wia-iwiaitem2.md) que ele aloca. Ele também passa o número de elementos de matriz no parâmetro *cElt*. O método **IEnumWiaItem2:: Next** preenche a matriz com ponteiros para interfaces **IWiaItem2** .
 
@@ -90,8 +90,8 @@ Os aplicativos devem chamar o método [IUnknown:: Release](/windows/win32/api/un
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                               |
 | parâmetro<br/>                   | <dl> <dt>WIA. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>WIA. idl</dt> </dl> |
 

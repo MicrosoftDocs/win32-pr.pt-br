@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 24de3dbc025685cba01efc05a49a2e528165219d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 72650e6dcdaeb4642a4b8d3ef6b4056a94c3a5119469f93a24c9740917d9cfbc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105762797"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119262036"
 ---
 # <a name="acs-max-size-of-rsvp-log-file-attribute"></a>ACS-atributo Max-Size-of-RSVP-log-file
 
@@ -36,7 +36,7 @@ O tamanho máximo, em bytes, de um arquivo de log RSVP.
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.775               |
 | System-ID-GUID    | 1cb3559d-56d0-11d1-a9c6-0000f80367c1 |
-| Syntax            | [**Enumeração**](s-enumeration.md) |
+| Sintaxe            | [**Enumeração**](s-enumeration.md) |
 
 
 
@@ -58,7 +58,7 @@ O tamanho máximo, em bytes, de um arquivo de log RSVP.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
@@ -79,7 +79,7 @@ O tamanho máximo, em bytes, de um arquivo de log RSVP.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
@@ -100,7 +100,7 @@ O tamanho máximo, em bytes, de um arquivo de log RSVP.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
@@ -121,15 +121,15 @@ O tamanho máximo, em bytes, de um arquivo de log RSVP.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**ACS-sub-rede**](c-acssubnet.md)<br/> |
+| Classes usadas em        | [**Sub-rede do ACS**](c-acssubnet.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ O tamanho máximo, em bytes, de um arquivo de log RSVP.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**ACS-sub-rede**](c-acssubnet.md)<br/> |
+| Classes usadas em        | [**Sub-rede do ACS**](c-acssubnet.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ O tamanho máximo, em bytes, de um arquivo de log RSVP.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**ACS-sub-rede**](c-acssubnet.md)<br/> |
+| Classes usadas em        | [**Sub-rede do ACS**](c-acssubnet.md)<br/> |
 
 
 

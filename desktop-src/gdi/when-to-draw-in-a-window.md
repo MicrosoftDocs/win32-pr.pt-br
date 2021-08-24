@@ -4,12 +4,12 @@ ms.assetid: 4b5d6842-5707-4884-a55a-e09e342cea46
 title: Quando desenhar em uma janela
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 42c8c157de5a591be5ad1a6ad3e319cf83220e77
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 832f219ad15fa919715b0f6892b73686237e1c3681e298106db3cefc4a8c3ec0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296676"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119468086"
 ---
 # <a name="when-to-draw-in-a-window"></a>Quando desenhar em uma janela
 

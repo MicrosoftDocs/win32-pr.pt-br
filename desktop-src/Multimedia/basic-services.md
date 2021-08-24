@@ -11,12 +11,12 @@ keywords:
 - função mmioOpen
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 688dc6b96c612d94524758acce5d8c742fc13a36
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: a3ef4ea778ad0c84137aa75d36f46dc30310180c69416a1240078f01e53d6931
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104365975"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119145119"
 ---
 # <a name="basic-services"></a>Serviços básicos
 
@@ -27,7 +27,7 @@ Antes de começar qualquer operação de e/s em um arquivo, você deve abrir o a
 > [!Note]  
 > Um identificador de arquivo **HMMIO** não é um identificador de arquivo padrão. Não use identificadores de arquivo **HMMIO** com funções de e/s de arquivo de tempo de execução do Win32 ou C.
 
- 
+ 
 
 Ao usar o [**mmioOpen**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmioopen) para abrir um arquivo, você usa um sinalizador para especificar se você o está abrindo para leitura, gravação ou ambos. Você também pode especificar sinalizadores que permitem criar ou excluir um arquivo. Use a função [**mmioClose**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmioclose) para fechar um arquivo quando terminar de ler ou gravar nele.
 
@@ -37,6 +37,6 @@ Você também pode alterar a posição atual do arquivo usando a função [**mmi
 
 Há sinalizadores que você pode usar com a função **mmioOpen** para operações além da e/s de arquivo básico. Ao especificar uma estrutura [**MMIOINFO**](/previous-versions//dd757322(v=vs.85)) , por exemplo, você pode abrir arquivos de memória, especificar um procedimento de e/s personalizado ou fornecer um buffer para e/s armazenada em buffer.
 
- 
+ 
 
- 
+ 

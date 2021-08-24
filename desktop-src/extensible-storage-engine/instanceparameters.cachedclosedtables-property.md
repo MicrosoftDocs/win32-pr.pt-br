@@ -26,16 +26,16 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8f2465de2df3d25293f5298d40700512b6a086d8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ae5a15f0e89dd01218690dd1654a24a883e1ef3b7f8d6f44edc359b72d0429e7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103661500"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119112425"
 ---
 # <a name="instanceparameterscachedclosedtables-property"></a>Propriedade instanceparameters. CachedClosedTables
 
-Obtém ou define um valor que concede o número de recursos de árvore B em cache pela instância depois que as tabelas que eles representam foram fechadas pelo aplicativo. Valores grandes para esse parâmetro farão com que o mecanismo de banco de dados use mais memória, mas aumentará a velocidade com que um grande número de tabelas pode ser aberto aleatoriamente pelo aplicativo. Isso é útil para aplicativos que têm um esquema com um número muito grande de tabelas. Com suporte no Windows Vista e em cima. Ignorado no Windows XP e no Windows Server 2003.
+Obtém ou define um valor que concede o número de recursos de árvore B em cache pela instância depois que as tabelas que eles representam foram fechadas pelo aplicativo. Valores grandes para esse parâmetro farão com que o mecanismo de banco de dados use mais memória, mas aumentará a velocidade com que um grande número de tabelas pode ser aberto aleatoriamente pelo aplicativo. Isso é útil para aplicativos que têm um esquema com um número muito grande de tabelas. com suporte no Windows Vista e em cima. ignorado no Windows XP e no Windows Server 2003.
 
 **Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
