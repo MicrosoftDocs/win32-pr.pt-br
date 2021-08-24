@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 935c4f3aa565b291e459d36e067805944b4fd6b2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: be9028db35cb6d74623bde77fac21e32793de436ea2f80d2f513687c15d1b64c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105757699"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118156508"
 ---
 # <a name="cmediasamplesettime-method"></a>Método CMediaSample. setTime
 
@@ -57,7 +57,7 @@ Aponta para a hora do fluxo em que o exemplo termina, em unidades de 100 nanosse
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna S \_ OK.
 
@@ -65,7 +65,7 @@ Retorna S \_ OK.
 
 Esse método define as variáveis de membro final [**CMediaSample:: m \_ Start**](cmediasample-m-start.md) e [**CMediaSample:: m \_**](cmediasample-m-end.md) , que especificam os carimbos de data/hora. Ele também atualiza a variável de membro [**CMediaSample:: m \_ dwFlags**](cmediasample-m-dwflags.md) , que especifica se os carimbos de data/hora são válidos.
 
-Para obter informações sobre carimbos de data/hora, consulte [tempo e relógios no DirectShow](time-and-clocks-in-directshow.md).
+Para obter informações sobre carimbos de data/hora, consulte [tempo e relógios em DirectShow](time-and-clocks-in-directshow.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -73,7 +73,7 @@ Para obter informações sobre carimbos de data/hora, consulte [tempo e relógio
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
+| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir Fluxos. h)</dt> </dl>                                                                                  |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 

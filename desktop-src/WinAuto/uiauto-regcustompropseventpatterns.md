@@ -1,27 +1,27 @@
 ---
-title: Registrar propriedades personalizadas, eventos e padrões de controle
-description: Antes que uma propriedade personalizada, evento ou padrão de controle possa ser usado, o provedor e o cliente devem registrar a propriedade, o evento ou o padrão de controle em tempo de executar.
+title: Registrar Propriedades personalizadas, eventos e padrões de controle
+description: Antes que um padrão de propriedade, evento ou controle personalizado possa ser usado, o provedor e o cliente devem registrar a propriedade, o evento ou o padrão de controle em tempo de execução.
 ms.assetid: ae36e404-8432-46ed-930e-b86dd5a88d6d
 keywords:
-- Automação da Interface do Usuário, propriedades personalizadas
-- Automação da Interface do Usuário,visão geral de eventos
-- Automação da Interface do Usuário,visão geral dos padrões de controle
-- Automação da Interface do Usuário, registrando propriedades personalizadas
-- Automação da Interface do Usuário, registrando eventos
-- Automação da Interface do Usuário, registrando padrões de controle
-- propriedades personalizadas, registrando
+- Automação da interface do usuário, propriedades personalizadas
+- Automação da interface do usuário, visão geral de eventos
+- Visão geral da automação da interface do usuário, padrões de controle
+- Automação da interface do usuário, registrando Propriedades personalizadas
+- Automação da interface do usuário, registro de eventos
+- Automação da interface do usuário, registro de padrões de controle
+- Propriedades personalizadas, registrando
 - eventos, registrando
-- padrões de controle, registrando
-- registro, propriedades personalizadas
-- registrando,eventos
-- registro, padrões de controle
-- padrões de controle, personalizados
+- padrões de controle, registro
+- registrando, propriedades personalizadas
+- registrando, eventos
+- registrando, padrões de controle
+- padrões de controle, personalizado
 - padrões de controle, implementando personalizados
-- implementando padrões de controle personalizados
+- Implementando padrões de controle personalizados
 - padrões de controle personalizados
 - wrappers de cliente
 - manipuladores de padrões
-- implementando manipuladores de padrões
+- Implementando manipuladores de padrão
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 7205d088f76f235b3078d5a053202f3d39b609389ef6adbc5dbdbca18d9b652b
@@ -31,41 +31,41 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118564047"
 ---
-# <a name="register-custom-properties-events-and-control-patterns"></a>Registrar propriedades personalizadas, eventos e padrões de controle
+# <a name="register-custom-properties-events-and-control-patterns"></a>Registrar Propriedades personalizadas, eventos e padrões de controle
 
-Antes que uma propriedade personalizada, evento ou padrão de controle possa ser usado, o provedor e o cliente devem registrar a propriedade, o evento ou o padrão de controle em tempo de executar. O registro é eficaz globalmente em um processo de aplicativo e permanece em vigor até que o processo seja fechado ou o último objeto de elemento do Microsoft Automação da Interface do Usuário ([**IUIAutomation**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomation) ou [**IRawElementProviderSimple**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovidersimple)) seja liberado dentro do processo.
+Antes que um padrão de propriedade, evento ou controle personalizado possa ser usado, o provedor e o cliente devem registrar a propriedade, o evento ou o padrão de controle em tempo de execução. O registro é efetivo globalmente dentro de um processo de aplicativo e permanece em vigor até que o processo seja fechado ou o último objeto de elemento de automação da interface do usuário da Microsoft ([**IUIAutomation**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomation) ou [**IRawElementProviderSimple**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovidersimple)) seja liberado dentro do processo.
 
-A registation envolve passar um GUID para Automação da Interface do Usuário, juntamente com informações detalhadas sobre a propriedade personalizada, evento ou padrão de controle. A tentativa de registrar o mesmo GUID uma segunda vez com as mesmas informações terá êxito, mas a tentativa de registrar o mesmo GUID uma segunda vez, mas com informações diferentes (por exemplo, uma propriedade personalizada de um tipo diferente) falhará. No futuro, se a especificação personalizada for aceita e integrada ao núcleo do Automação da Interface do Usuário, o Automação da Interface do Usuário validará as informações de registro personalizadas e usará o código já registrado em vez da implementação da estrutura "oficial", minimizando os problemas de compatibilidade do aplicativo. Você não pode remover propriedades, eventos ou padrões de controle que já estão registrados.
+O registro envolve a passagem de um GUID para a automação da interface do usuário, juntamente com informações detalhadas sobre a propriedade personalizada, evento ou padrão de controle. A tentativa de registrar o mesmo GUID uma segunda vez com as mesmas informações terá êxito, mas tentar registrar o mesmo GUID uma segunda vez, mas com informações diferentes (por exemplo, uma propriedade personalizada de um tipo diferente) falhará. No futuro, se a especificação personalizada for aceita e integrada ao núcleo de automação da interface do usuário, a automação da interface do usuário validará as informações de registro personalizadas e usará o código já registrado em vez da implementação da estrutura "oficial", minimizando assim os problemas de compatibilidade do aplicativo. Você não pode remover propriedades, eventos ou padrões de controle que já estão registrados.
 
 Este tópico contém as seguintes seções:
 
--   [Registrando propriedades e eventos personalizados](#registering-custom-properties-and-events)
+-   [Registrando Propriedades e eventos personalizados](#registering-custom-properties-and-events)
 -   [Implementando padrões de controle personalizados](#implementing-custom-control-patterns)
-    -   [O wrapper do cliente e o manipulador de padrões](#the-client-wrapper-and-the-pattern-handler)
-    -   [Implementando o Wrapper do Cliente](#implementing-the-client-wrapper)
+    -   [O wrapper do cliente e o manipulador de padrão](#the-client-wrapper-and-the-pattern-handler)
+    -   [Implementando o wrapper do cliente](#implementing-the-client-wrapper)
     -   [Implementando o manipulador de padrões](#implementing-the-pattern-handler)
     -   [Registrando um padrão de controle personalizado](#registering-a-custom-control-pattern)
     -   [Exemplo de implementação de um padrão de controle personalizado](#example-implementation-of-a-custom-control-pattern)
 -   [Tópicos relacionados](#related-topics)
 
-## <a name="registering-custom-properties-and-events"></a>Registrando propriedades e eventos personalizados
+## <a name="registering-custom-properties-and-events"></a>Registrando Propriedades e eventos personalizados
 
-Registrar uma propriedade personalizada ou evento permite que o provedor e o cliente obtenham uma ID para a propriedade ou evento, que pode ser passada para vários métodos de API que levam IDs como parâmetros.
+O registro de uma propriedade ou evento personalizado permite que o provedor e o cliente obtenham uma ID para a propriedade ou evento, que pode ser passada para vários métodos de API que usam IDs como parâmetros.
 
 Para registrar uma propriedade ou evento:
 
 1.  Defina um GUID para a propriedade ou evento personalizado.
-2.  Preencha [**uma estrutura UIAutomationPropertyInfo**](/windows/desktop/api/UIAutomationCore/ns-uiautomationcore-uiautomationpropertyinfo) ou [**UIAutomationEventInfo**](/windows/desktop/api/UIAutomationCore/ns-uiautomationcore-uiautomationeventinfo) com informações sobre a propriedade ou evento, incluindo o GUID e uma cadeia de caracteres não localizável que contém o nome da propriedade ou evento personalizado. As propriedades personalizadas também exigem que o tipo de dados da propriedade seja especificado, por exemplo, se a propriedade contém um inteiro ou uma cadeia de caracteres. O tipo de dados deve ser um dos seguintes tipos especificados pela [**enumeração UIAutomationType.**](/windows/desktop/api/UIAutomationCore/ne-uiautomationcore-uiautomationtype) Nenhum outro tipo de dados tem suporte para propriedades personalizadas.
-    -   **UIAutomationType \_ Bool**
-    -   **UIAutomationType \_ Double**
-    -   **Elemento UIAutomationType \_**
-    -   **UIAutomationType \_ Int**
-    -   **Ponto UIAutomationType \_**
-    -   **Cadeia de caracteres UIAutomationType \_**
-3.  Use a [**função CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) para criar uma instância do objeto [**CUIAutomationRegistrar**](/previous-versions/windows/desktop/legacy/ff384837(v=vs.85)) e recuperar um ponteiro para a interface [**IUIAutomationRegistrar**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iuiautomationregistrar) do objeto.
-4.  Chame o método [**IUIAutomationRegistrar::RegisterProperty**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationregistrar-registerproperty) [**ou RegisterEvent**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationregistrar-registerevent) e passe o endereço da estrutura [**UIAutomationPropertyInfo**](/windows/desktop/api/UIAutomationCore/ns-uiautomationcore-uiautomationpropertyinfo) ou da estrutura [**UIAutomationEventInfo.**](/windows/desktop/api/UIAutomationCore/ns-uiautomationcore-uiautomationeventinfo)
+2.  Preencha uma estrutura [**UIAutomationPropertyInfo**](/windows/desktop/api/UIAutomationCore/ns-uiautomationcore-uiautomationpropertyinfo) ou [**UIAutomationEventInfo**](/windows/desktop/api/UIAutomationCore/ns-uiautomationcore-uiautomationeventinfo) com informações sobre a propriedade ou o evento, incluindo o GUID e uma cadeia de caracteres não localizável que contém o nome da propriedade ou do evento personalizado. As propriedades personalizadas também exigem que o tipo de dados da propriedade seja especificado, por exemplo, se a propriedade contém um inteiro ou uma cadeia de caracteres. O tipo de dados deve ser um dos tipos a seguir especificados pela enumeração [**UIAutomationType**](/windows/desktop/api/UIAutomationCore/ne-uiautomationcore-uiautomationtype) . Nenhum outro tipo de dados tem suporte para propriedades personalizadas.
+    -   **\_Bool UIAutomationType**
+    -   **UIAutomationType \_ duplo**
+    -   **\_Elemento UIAutomationType**
+    -   **UIAutomationType \_ int**
+    -   **Ponto de UIAutomationType \_**
+    -   **\_Cadeia de caracteres UIAutomationType**
+3.  Use a função [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) para criar uma instância do objeto [**CUIAutomationRegistrar**](/previous-versions/windows/desktop/legacy/ff384837(v=vs.85)) e recuperar um ponteiro para a interface [**IUIAutomationRegistrar**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iuiautomationregistrar) do objeto.
+4.  Chame o método [**IUIAutomationRegistrar:: RegisterProperty**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationregistrar-registerproperty) ou [**RegisterEvent**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationregistrar-registerevent) e passe o endereço da estrutura [**UIAutomationPropertyInfo**](/windows/desktop/api/UIAutomationCore/ns-uiautomationcore-uiautomationpropertyinfo) ou da estrutura [**UIAutomationEventInfo**](/windows/desktop/api/UIAutomationCore/ns-uiautomationcore-uiautomationeventinfo) .
 
-O [**método IUIAutomationRegistrar::RegisterProperty**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationregistrar-registerproperty) ou [**RegisterEvent**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationregistrar-registerevent) retorna uma ID de propriedade ou ID de evento que um aplicativo pode passar para qualquer método Automação da Interface do Usuário que aceita esse identificador como um parâmetro. Por exemplo, você pode passar uma ID de propriedade registrada para o método [**IUIAutomationElement::GetCurrentPropertyValue**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-getcurrentpropertyvalue) ou para o método [**IUIAutomation::CreatePropertyCondition.**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-createpropertycondition)
+O método [**IUIAutomationRegistrar:: RegisterProperty**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationregistrar-registerproperty) ou [**REGISTEREVENT**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationregistrar-registerevent) retorna uma ID de propriedade ou ID de evento que um aplicativo pode passar para qualquer método de automação de interface do usuário que usa um identificador como um parâmetro. Por exemplo, você pode passar uma ID de propriedade registrada para o método [**IUIAutomationElement:: GetCurrentPropertyValue**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-getcurrentpropertyvalue) ou para o método [**IUIAutomation:: CreatePropertyCondition**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-createpropertycondition) .
 
 O exemplo a seguir demonstra como registrar uma propriedade personalizada.
 
@@ -106,45 +106,45 @@ HRESULT RegisterProperty()
 
 
 
-Os identificadores de propriedade e evento recuperados pelos métodos [**IUIAutomationRegistrar::RegisterProperty**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationregistrar-registerproperty) e [**RegisterEvent**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationregistrar-registerevent) são válidos somente no contexto do aplicativo que os recupera e somente durante o tempo de vida do aplicativo. Os métodos de registro podem retornar valores inteiros diferentes para o mesmo GUID quando ele é chamado em instâncias de runtime diferentes do mesmo aplicativo.
+Os identificadores de propriedade e evento recuperados pelos métodos [**IUIAutomationRegistrar:: RegisterProperty**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationregistrar-registerproperty) e [**RegisterEvent**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationregistrar-registerevent) são válidos somente no contexto do aplicativo que os recupera e apenas durante o tempo de vida do aplicativo. Os métodos de registro podem retornar valores inteiros diferentes para o mesmo GUID quando ele é chamado em instâncias de tempo de execução diferentes do mesmo aplicativo.
 
-Não há nenhum método que não registrou uma propriedade ou evento personalizado. Em vez disso, eles são implicitamente não registro quando o último objeto Automação da Interface do Usuário é liberado.
+Não há nenhum método que cancele o registro de uma propriedade ou evento personalizado. Em vez disso, eles são implicitamente cancelados no registro quando o último objeto de automação da interface do usuário é liberado.
 
 > [!IMPORTANT]
-> Se o código for um Microsoft Active Accessibility (MSAA), você deverá chamar a função [**NotifyWinEvent**](/windows/desktop/api/Winuser/nf-winuser-notifywinevent) quando alterar o valor de uma propriedade personalizada.
+> Se o seu código for um cliente Microsoft Acessibilidade Ativa (MSAA), você deverá chamar a função [**NotifyWinEvent**](/windows/desktop/api/Winuser/nf-winuser-notifywinevent) quando alterar o valor de uma propriedade personalizada.
 
  
 
 ## <a name="implementing-custom-control-patterns"></a>Implementando padrões de controle personalizados
 
-Um padrão de controle personalizado não está incluído na API Automação da Interface do Usuário, mas é fornecido por terceiros em tempo de executar. Os desenvolvedores de aplicativos de cliente e provedor devem trabalhar juntos para definir um padrão de controle personalizado, incluindo os métodos, propriedades e eventos aos quais o padrão de controle dará suporte. Depois de definir o padrão de controle, o cliente e o provedor devem implementar objetos com suporte Component Object Model (COM), juntamente com o código para registrar o padrão de controle em tempo de execução. Um padrão de controle personalizado requer a implementação de dois objetos COM: um wrapper de cliente e um manipulador de padrões.
+Um padrão de controle personalizado não está incluído na API de automação da interface do usuário, mas é fornecido por terceiros em tempo de execução. Os desenvolvedores de aplicativos cliente e provedor devem trabalhar juntos para definir um padrão de controle personalizado, incluindo os métodos, as propriedades e os eventos que o padrão de controle dará suporte. Depois de definir o padrão de controle, o cliente e o provedor devem implementar o suporte a objetos Component Object Model (COM), juntamente com o código para registrar o padrão de controle em tempo de execução. Um padrão de controle personalizado requer a implementação de dois objetos COM: um wrapper de cliente e um manipulador de padrão.
 
 > [!Note]  
-> Os exemplos nos tópicos a seguir ilustram como implementar um padrão de controle personalizado que duplica a funcionalidade do padrão de controle [Value](uiauto-implementingvalue.md) existente. Esses exemplos são apenas para fins instrucionais. Um padrão de controle personalizado real deve fornecer funcionalidades que não estão disponíveis nos padrões de Automação da Interface do Usuário padrão.
+> Os exemplos nos tópicos a seguir ilustram como implementar um padrão de controle personalizado que duplica a funcionalidade do padrão de controle de [valor](uiauto-implementingvalue.md) existente. Esses exemplos são apenas para fins de instrução. Um padrão de controle personalizado real deve fornecer funcionalidade que não está disponível nos padrões de controle de automação da interface do usuário padrão.
 
  
 
-### <a name="the-client-wrapper-and-the-pattern-handler"></a>O wrapper do cliente e o manipulador de padrões
+### <a name="the-client-wrapper-and-the-pattern-handler"></a>O wrapper do cliente e o manipulador de padrão
 
-O wrapper do cliente implementa a API usada pelo cliente para recuperar propriedades e chamar métodos expostos pelo padrão de controle personalizado. A API é implementada como uma interface COM que passa todas as solicitações de propriedade e chamadas de método para o núcleo Automação da Interface do Usuário, que, em seguida, faz marshal das solicitações e chamadas para o provedor.
+O wrapper do cliente implementa a API que é usada pelo cliente para recuperar propriedades e métodos de chamada expostos pelo padrão de controle personalizado. A API é implementada como uma interface COM que passa todas as solicitações de propriedade e chamadas de método para o núcleo de automação da interface do usuário, que realiza marshaling das solicitações e chamadas para o provedor.
 
-O código que registra um padrão de controle personalizado deve fornecer uma fábrica de classes que Automação da Interface do Usuário pode usar para criar instâncias do objeto wrapper do cliente. Quando um padrão de controle personalizado é registrado com êxito, o Automação da Interface do Usuário retorna um ponteiro de interface [**IUIAutomationPatternInstance**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iuiautomationpatterninstance) que é usado pelo cliente para encaminhar solicitações de propriedade e chamadas de métodos para o Automação da Interface do Usuário núcleo.
+O código que registra um padrão de controle personalizado deve fornecer uma fábrica de classes que a automação da interface do usuário pode usar para criar instâncias do objeto de wrapper do cliente. Quando um padrão de controle personalizado é registrado com êxito, a automação da interface do usuário retorna um ponteiro de interface [**IUIAutomationPatternInstance**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iuiautomationpatterninstance) que é usado pelo cliente para encaminhar solicitações de propriedade e chamadas de métodos para o núcleo de automação da interface do usuário.
 
-No lado do provedor, o núcleo Automação da Interface do Usuário as solicitações de propriedade e as chamadas de método do cliente e as passa para o objeto do manipulador de padrões. Em seguida, o manipulador de padrões chama os métodos apropriados na interface do provedor para o padrão de controle personalizado.
+No lado do provedor, o núcleo de automação da interface do usuário usa as solicitações de propriedade e chamadas de método do cliente e as passa para o objeto de manipulador de padrão. Em seguida, o manipulador de padrões chama os métodos apropriados na interface do provedor para o padrão de controle personalizado.
 
-O código que registra um padrão de controle personalizado cria o objeto do manipulador de padrões e, ao registrar o padrão de controle, fornece Automação da Interface do Usuário com um ponteiro para a interface [**IUIAutomationPatternHandler**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iuiautomationpatternhandler) do objeto.
+O código que registra um padrão de controle personalizado cria o objeto de manipulador de padrão e, ao registrar o padrão de controle, fornece automação de interface do usuário com um ponteiro para a interface [**IUIAutomationPatternHandler**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iuiautomationpatternhandler) do objeto.
 
-O diagrama a seguir mostra como uma solicitação de propriedade do cliente ou chamada de método flui do wrapper do cliente, por meio do Automação da Interface do Usuário principais componentes para o manipulador de padrões e, em seguida, para a interface do provedor.
+O diagrama a seguir mostra como uma solicitação de propriedade de cliente ou uma chamada de método flui do wrapper do cliente, por meio dos componentes principais de automação da interface do usuário para o manipulador de padrões e, em seguida, para a interface do provedor.
 
 ![diagrama mostrando o fluxo do wrapper do cliente para o manipulador de padrões e o provedor](images/custompatternsupport.jpg)
 
-Os objetos que implementam o wrapper do cliente e as interfaces do manipulador de padrões devem ser de thread livre. Além disso, Automação da Interface do Usuário núcleo deve ser capaz de chamar os objetos diretamente sem nenhum código de marshaling intermediário.
+Os objetos que implementam as interfaces do manipulador de padrões e do wrapper do cliente devem ser de thread livre. Além disso, o núcleo de automação da interface do usuário deve ser capaz de chamar os objetos diretamente sem qualquer código de marshaling intermediário.
 
-### <a name="implementing-the-client-wrapper"></a>Implementando o Wrapper do Cliente
+### <a name="implementing-the-client-wrapper"></a>Implementando o wrapper do cliente
 
-O wrapper do cliente é um objeto que expõe uma interface IXxxPattern que o cliente usa para solicitar propriedades e chamar métodos com suporte pelo padrão de controle personalizado. A interface consiste em um par de métodos "getter" para cada propriedade com suporte (obter o método CurrentXxx e obter CachedXxx) e um método \_ "chamador" para cada método com \_ suporte. Quando o objeto é instautado, o construtor de objeto recebe um ponteiro para a interface [**IUIAutomationPatternInstance,**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iuiautomationpatterninstance) que é implementada pelo Automação da Interface do Usuário núcleo. Os métodos da interface IXxxPattern usam os métodos [**IUIAutomationPatternInstance::GetProperty**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationpatterninstance-getproperty) e [**CallMethod**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationpatterninstance-callmethod) para encaminhar solicitações de propriedade e chamadas de método para o Automação da Interface do Usuário núcleo.
+O wrapper do cliente é um objeto que expõe uma interface IXxxPattern que o cliente usa para solicitar Propriedades e chamar métodos com suporte pelo padrão de controle personalizado. A interface consiste em um par de métodos "getter" para cada propriedade com suporte (get \_ CurrentXxx e get \_ CachedXxx Method) e um método "Caller" para cada método com suporte. Quando o objeto é instanciado, o construtor de objeto recebe um ponteiro para a interface [**IUIAutomationPatternInstance**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iuiautomationpatterninstance) , que é implementada pelo núcleo de automação da interface do usuário. Os métodos da interface IXxxPattern usam os métodos [**IUIAutomationPatternInstance:: GetProperty**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationpatterninstance-getproperty) e [**CallMethod**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationpatterninstance-callmethod) para encaminhar solicitações de propriedade e chamadas de método para o núcleo de automação da interface do usuário.
 
-O exemplo a seguir mostra como implementar um objeto wrapper de cliente para um padrão de controle personalizado simples que dá suporte a uma única propriedade. Para obter um exemplo mais complexo, consulte [Exemplo de implementação de um padrão de controle personalizado.](#example-implementation-of-a-custom-control-pattern)
+O exemplo a seguir mostra como implementar um objeto de wrapper de cliente para um padrão de controle personalizado simples que dá suporte a uma única propriedade. Para obter um exemplo mais complexo, consulte [exemplo de implementação de um padrão de controle personalizado](#example-implementation-of-a-custom-control-pattern).
 
 
 ```C++
@@ -194,13 +194,13 @@ public:
 
 ### <a name="implementing-the-pattern-handler"></a>Implementando o manipulador de padrões
 
-O manipulador de padrões é um objeto que implementa a interface [**IUIAutomationPatternHandler.**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iuiautomationpatternhandler) Essa interface tem dois métodos: [**IUIAutomationPatternHandler::CreateClientWrapper**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationpatternhandler-createclientwrapper) e [**Dispatch**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationpatternhandler-dispatch). O **método CreateClientWrapper** é chamado pelo núcleo Automação da Interface do Usuário e recebe um ponteiro para a interface [**IUIAutomationPatternInstance.**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iuiautomationpatterninstance) **CreateClientWrapper** responde instanciando o objeto wrapper do cliente e passando o ponteiro da interface **IUIAutomationPatternInstance** para o construtor de wrapper do cliente.
+O manipulador de padrões é um objeto que implementa a interface [**IUIAutomationPatternHandler**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iuiautomationpatternhandler) . Essa interface tem dois métodos: [**IUIAutomationPatternHandler:: CreateClientWrapper**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationpatternhandler-createclientwrapper) e [**Dispatch**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationpatternhandler-dispatch). O método **CreateClientWrapper** é chamado pelo núcleo de automação da interface do usuário e recebe um ponteiro para a interface [**IUIAutomationPatternInstance**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iuiautomationpatterninstance) . **CreateClientWrapper** responde instanciando o objeto wrapper do cliente e passando o ponteiro de interface **IUIAutomationPatternInstance** para o construtor do wrapper do cliente.
 
-O [**método Dispatch**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationpatternhandler-dispatch) é usado pelo núcleo Automação da Interface do Usuário para passar solicitações de propriedade e chamadas de método para a interface do provedor para o padrão de controle personalizado. Os parâmetros incluem um ponteiro para a interface do provedor, o índice baseado em zero do getter de propriedade ou método que está sendo chamado e uma matriz de estruturas [**UIAutomationParameter**](/windows/desktop/api/UIAutomationCore/ns-uiautomationcore-uiautomationparameter) que contêm os parâmetros a serem aprovados para o provedor. O manipulador de padrões responde verificando o parâmetro de índice para determinar qual método de provedor chamar e, em seguida, chama essa interface de provedor, passando os parâmetros contidos nas estruturas **UIAutomationParameter.**
+O método de [**expedição**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationpatternhandler-dispatch) é usado pelo núcleo de automação da interface do usuário para passar solicitações de propriedade e chamadas de método para a interface do provedor para o padrão de controle personalizado. Os parâmetros incluem um ponteiro para a interface do provedor, o índice de base zero do getter de propriedade ou o método que está sendo chamado e uma matriz de estruturas [**UIAutomationParameter**](/windows/desktop/api/UIAutomationCore/ns-uiautomationcore-uiautomationparameter) que contêm os parâmetros a serem passados para o provedor. O manipulador de padrões responde verificando o parâmetro de índice para determinar qual método de provedor deve ser chamado e, em seguida, chama essa interface de provedor, passando os parâmetros contidos nas estruturas **UIAutomationParameter** .
 
-O objeto do manipulador de padrões é instautado pelo mesmo código que registra o padrão de controle personalizado, antes que o padrão de controle seja registrado. O código deve passar o ponteiro de interface [**IUIAutomationPatternHandler**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iuiautomationpatternhandler) do objeto do manipulador de padrões para o núcleo Automação da Interface do Usuário no momento do registro.
+O objeto de manipulador de padrão é instanciado pelo mesmo código que registra o padrão de controle personalizado, antes de o padrão de controle ser registrado. O código deve passar o ponteiro de interface [**IUIAutomationPatternHandler**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iuiautomationpatternhandler) do objeto de manipulador padrão para o núcleo de automação da interface do usuário no momento do registro.
 
-O exemplo a seguir mostra como implementar um objeto de manipulador de padrões para um padrão de controle personalizado simples que dá suporte a uma única propriedade. Para obter um exemplo mais complexo, consulte [Exemplo de implementação de um padrão de controle personalizado.](#example-implementation-of-a-custom-control-pattern)
+O exemplo a seguir mostra como implementar um objeto de manipulador de padrão para um padrão de controle personalizado simples que dá suporte a uma única propriedade. Para obter um exemplo mais complexo, consulte [exemplo de implementação de um padrão de controle personalizado](#example-implementation-of-a-custom-control-pattern).
 
 
 ```C++

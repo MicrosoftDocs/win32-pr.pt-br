@@ -1,7 +1,7 @@
 ---
-description: 'A interface IResize deve ter suporte de qualquer filtro personalizado de redimensionador de vídeo para os serviços de edição do DirectShow (DES). Para definir um filtro de redimensionador personalizado, chame o método IRenderEngine2:: SetResizerGUID no mecanismo de processamento.'
+description: A interface IResize deve ser suportada por qualquer filtro de resizer de vídeo personalizado para o DES (DirectShow Editing Services). Para definir um filtro de resizer personalizado, chame o método IRenderEngine2::SetResizerGUID no mecanismo de renderização.
 ms.assetid: 4740dbff-0881-45e8-b382-98ed9d055403
-title: Interface IResize (QEdit. h)
+title: Interface IResize (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 1b9684ed6f2d2901159dde5a79bb4563ca0b2bda
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 19aabd7c04cb5350ef3da87e1a20db6b75f6546f0fbcf5af3422c152bcafcf5c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105760736"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117818065"
 ---
 # <a name="iresize-interface"></a>Interface IResize
 
@@ -28,11 +28,11 @@ ms.locfileid: "105760736"
 
  
 
-A `IResize` interface deve ter suporte de qualquer filtro personalizado de redimensionador de vídeo para os serviços de edição do DirectShow (des). Para definir um filtro de redimensionador personalizado, chame o método [**IRenderEngine2:: SetResizerGUID**](irenderengine2-setresizerguid.md) no mecanismo de processamento.
+A interface deve ser suportada por qualquer filtro de resizer de vídeo personalizado `IResize` para DirectShow DES (Serviços de Edição). Para definir um filtro de resizer personalizado, chame o [**método IRenderEngine2::SetResizerGUID**](irenderengine2-setresizerguid.md) no mecanismo de renderização.
 
 ## <a name="members"></a>Membros
 
-A interface **IResize** herda da interface [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) . **IResize** também tem estes tipos de membros:
+A interface **IResize** herda da interface [**IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **IResize** também tem estes tipos de membros:
 
 -   [Métodos](#methods)
 
@@ -44,11 +44,11 @@ A interface **IResize** tem esses métodos.
 
 | Método                                          | Descrição                                                  |
 |:------------------------------------------------|:-------------------------------------------------------------|
-| [**obter \_ Incolocar**](iresize-get-inputsize.md) | Retorna o tamanho de entrada atual do filtro de redimensionador.<br/>  |
-| [**obter \_ MediaType**](iresize-get-mediatype.md) | Retorna o tipo de mídia de saída do filtro de redimensionador.<br/>   |
-| [**obter \_ tamanho**](iresize-get-size.md)           | Retorna o tamanho de saída atual e o modo de ampliação.<br/> |
-| [**colocar \_ MediaType**](iresize-put-mediatype.md) | Define o tipo de mídia de saída.<br/>                       |
-| [**tamanho de Put \_**](iresize-put-size.md)           | Define o tamanho de saída e o modo de ampliação.<br/>            |
+| [**get \_ InputSize**](iresize-get-inputsize.md) | Retorna o tamanho de entrada atual do filtro do resizer.<br/>  |
+| [**obter \_ MediaType**](iresize-get-mediatype.md) | Retorna o tipo de mídia de saída do filtro do resizer.<br/>   |
+| [**obter \_ Tamanho**](iresize-get-size.md)           | Retorna o tamanho da saída atual e o modo de alongamento.<br/> |
+| [**put \_ MediaType**](iresize-put-mediatype.md) | Define o tipo de mídia de saída.<br/>                       |
+| [**put \_ Size**](iresize-put-size.md)           | Define o tamanho da saída e o modo de alongamento.<br/>            |
 
 
 
@@ -57,12 +57,12 @@ A interface **IResize** tem esses métodos.
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> O arquivo de cabeçalho QEdit. h não é compatível com cabeçalhos do Direct3D posteriores à versão 7.
+> O arquivo de título Qedit.h não é compatível com os headers direct3D posteriores à versão 7.
 
  
 
 > [!Note]  
-> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Para obter o Qedit.h, baixe [o Microsoft Windows SDK Update para Windows Vista e .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O Qedit.h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -72,9 +72,9 @@ A interface **IResize** tem esses métodos.
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Versão<br/> | DirectX 9,0 ou posterior<br/>                                                         |
-| parâmetro<br/>  | <dl> <dt>QEdit. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Versão<br/> | DirectX 9.0 ou posterior<br/>                                                         |
+| Cabeçalho<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -82,7 +82,7 @@ A interface **IResize** tem esses métodos.
 
 <dl> <dt>
 
-[Fornecendo um redimensionador de vídeo personalizado](providing-a-custom-video-resizer.md)
+[Fornecendo um resizer de vídeo personalizado](providing-a-custom-video-resizer.md)
 </dt> </dl>
 
  

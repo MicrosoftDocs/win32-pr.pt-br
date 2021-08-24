@@ -1,21 +1,21 @@
 ---
-title: Estruturas (armazenamento estruturado)
+title: estruturas (Armazenamento estruturadas)
 description: Estruturas são basicamente coleções de elementos de dados ou membros que facilitam um esquema organizacional para interpretar dados ou executar operações nele.
 ms.assetid: 5931fbf9-2219-47e3-abd0-c6d6d0389e73
 keywords:
-- Armazenamento estruturado Strctd STG, referência, estruturas
+- estruturada Armazenamento Strctd Stg, referência, estruturas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b592c0331197192c59d11f8d7f57978e7980eb1
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 284cb8a9d80fc3b07efcc85e73653cb9767b9967f081b21dc3385ade65216b7d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104499193"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117959638"
 ---
-# <a name="structures-structured-storage"></a>Estruturas (armazenamento estruturado)
+# <a name="structures-structured-storage"></a>estruturas (Armazenamento estruturadas)
 
-Estruturas são basicamente coleções de elementos de dados ou membros que facilitam um esquema organizacional para interpretar dados ou executar operações nele. As estruturas de armazenamento estruturado são descritas nas seções a seguir:
+Estruturas são basicamente coleções de elementos de dados ou membros que facilitam um esquema organizacional para interpretar dados ou executar operações nele. as estruturas de Armazenamento estruturadas são descritas nas seções a seguir:
 
 -   [**PROPSPEC**](/windows/win32/api/propidlbase/ns-propidlbase-propspec)
 -   [**PROPVARIANT**](/windows/win32/api/propidlbase/ns-propidlbase-propvariant)

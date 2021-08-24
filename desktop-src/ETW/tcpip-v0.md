@@ -1,7 +1,7 @@
 ---
-description: Classe TcpIp_V0-essa classe é a classe pai para eventos TCP/IP. A sintaxe a seguir é simplificada do código MOF.
+description: TcpIp_V0 classe - essa classe é a classe pai para eventos TCP/IP. A sintaxe a seguir é simplificada do código MOF.
 ms.assetid: 8738dc11-f1d4-4c30-b2ea-c34a8fdce9ac
-title: Classe TcpIp_V0
+title: TcpIp_V0 classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -19,7 +19,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117814442"
 ---
-# <a name="tcpip_v0-class"></a>\_Classe tcpip V0
+# <a name="tcpip_v0-class"></a>Classe TcpIp \_ V0
 
 Essa classe é a classe pai para eventos TCP/IP.
 
@@ -36,7 +36,7 @@ class TcpIp_V0 : MSNT_SystemTrace
 
 ## <a name="members"></a>Membros
 
-A classe **tcpip \_ V0** não define nenhum membro.
+A **classe TcpIp \_ V0** não define nenhum membro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -44,7 +44,7 @@ A classe **tcpip \_ V0** não define nenhum membro.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                   |
 
 
@@ -53,16 +53,16 @@ A classe **tcpip \_ V0** não define nenhum membro.
 
 <dl> <dt>
 
-[**MSNT \_ SystemTrace**](msnt-systemtrace.md)
+[**SystemTrace do MSNT \_**](msnt-systemtrace.md)
 </dt> <dt>
 
-[**IP**](tcpip.md)
+[**Tcpip**](tcpip.md)
 </dt> <dt>
 
-[**\_TypeGroup1 V0 \_ tcpip**](tcpip-v0-typegroup1.md)
+[**TcpIp \_ V0 \_ TypeGroup1**](tcpip-v0-typegroup1.md)
 </dt> <dt>
 
-[**TcpIp \_ v1**](tcpip-v1.md)
+[**TcpIp \_ V1**](tcpip-v1.md)
 </dt> </dl>
 
  

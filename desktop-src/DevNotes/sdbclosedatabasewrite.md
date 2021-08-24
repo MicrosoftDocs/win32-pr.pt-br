@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: 24df6f9ce2c4f0fae4dd1c1ef244e006ea00c047
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 0ef1c02731f2875fbdfc910243ed80faa28b6ab029314ea43ef281355a08487a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826322"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118161577"
 ---
 # <a name="sdbclosedatabasewrite-function"></a>Função SdbCloseDatabaseWrite
 
@@ -60,8 +60,8 @@ Essa função chama [**SdbCloseDatabase**](sdbclosedatabase.md); Portanto, essas
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                   |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

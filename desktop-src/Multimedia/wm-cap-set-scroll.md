@@ -1,9 +1,9 @@
 ---
-title: Mensagem de WM_CAP_SET_SCROLL (VFW. h)
-description: A \_ mensagem de \_ rolagem definir limite do WM \_ define a parte do quadro de vídeo a ser exibida na janela de captura.
+title: WM_CAP_SET_SCROLL mensagem (Vfw.h)
+description: A mensagem WM \_ CAP SET SCROLL define a parte do quadro de vídeo a ser exibida na janela de \_ \_ captura.
 ms.assetid: 545605e4-6b1f-403a-a3ab-0fd6750ae776
 keywords:
-- Multimídia do Windows de mensagem WM_CAP_SET_SCROLL
+- WM_CAP_SET_SCROLL mensagem Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 812b76bdcad166b9f766957032f232293d4083c0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 352d65c2ad8e80622f7ff50cca0a8f7d6e523d53ae002a2325327a634b97c931
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455925"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118134980"
 ---
-# <a name="wm_cap_set_scroll-message"></a>\_Mensagem de \_ rolagem de conjunto de Cap do WM \_
+# <a name="wm_cap_set_scroll-message"></a>Mensagem WM \_ CAP \_ SET \_ SCROLL
 
-A mensagem de **\_ \_ \_ rolagem definir limite do WM** define a parte do quadro de vídeo a ser exibida na janela de captura. Essa mensagem define o canto superior esquerdo da área do cliente da janela de captura para as coordenadas de um pixel especificado dentro do quadro de vídeo. Você pode enviar essa mensagem explicitamente ou usando a macro [**capSetScrollPos**](/windows/desktop/api/Vfw/nf-vfw-capsetscrollpos) .
+A **mensagem WM CAP SET \_ \_ \_ SCROLL** define a parte do quadro de vídeo a ser exibida na janela de captura. Essa mensagem define o canto superior esquerdo da área do cliente da janela de captura para as coordenadas de um pixel especificado dentro do quadro de vídeo. Você pode enviar essa mensagem explicitamente ou usando a [**macro capSetScrollPos.**](/windows/desktop/api/Vfw/nf-vfw-capsetscrollpos)
 
 
 ```C++
@@ -38,7 +38,7 @@ lParam = (LPARAM) (LPPOINT) (lpP);
 
 <dl> <dt>
 
-<span id="lpP"></span><span id="lpp"></span><span id="LPP"></span>*lpP*
+<span id="lpP"></span><span id="lpp"></span><span id="LPP"></span>*Lpp*
 </dt> <dd>
 
 Endereço para conter a posição de rolagem desejada.
@@ -47,11 +47,11 @@ Endereço para conter a posição de rolagem desejada.
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retornará **true** se for bem-sucedido ou **false** caso contrário.
+Retornará **TRUE se** for bem-sucedido **ou FALSE** caso contrário.
 
 ## <a name="remarks"></a>Comentários
 
-A posição de rolagem afeta a imagem nos modos de visualização e de sobreposição.
+A posição de rolagem afeta a imagem nos modos de visualização e sobreposição.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,7 +61,7 @@ A posição de rolagem afeta a imagem nos modos de visualização e de sobreposi
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                       |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                             |
-| Cabeçalho<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

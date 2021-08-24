@@ -14,7 +14,7 @@ ms.locfileid: "118362258"
 ---
 # <a name="adding-an-object-to-a-collection"></a>Adicionando um objeto a uma coleção
 
-O código a seguir adiciona uma nova política à coleção de políticas do IAS. A variável pClientsCollection aponta para uma interface [**ISdoCollection**](/windows/desktop/api/sdoias/nn-sdoias-isdocollection) para a coleção. Consulte [recuperando uma coleção](/windows/desktop/Nps/sdo-retrieving-a-collection) para obter informações sobre como recuperar o objeto da coleção.
+O código a seguir adiciona uma nova política à coleção de políticas de IAS. A variável pClientsCollection aponta para uma interface [**ISdoCollection**](/windows/desktop/api/sdoias/nn-sdoias-isdocollection) para a coleção. Consulte [Recuperando uma coleção para](/windows/desktop/Nps/sdo-retrieving-a-collection) obter informações sobre como recuperar o objeto de coleção.
 
 
 ```C++
@@ -111,10 +111,10 @@ O código a seguir adiciona uma nova política à coleção de políticas do IAS
 
 <dl> <dt>
 
-[\_\_t BSTR](/previous-versions/visualstudio/visual-studio-6.0/aa278286(v=vs.60))
+[\_bstr \_ t](/previous-versions/visualstudio/visual-studio-6.0/aa278286(v=vs.60))
 </dt> <dt>
 
-[**ISdoCollection:: Adicionar**](/windows/desktop/api/sdoias/nf-sdoias-isdocollection-add)
+[**ISdoCollection::Add**](/windows/desktop/api/sdoias/nf-sdoias-isdocollection-add)
 </dt> <dt>
 
 [**ISdoCollection::IsNameUnique**](/windows/desktop/api/sdoias/nf-sdoias-isdocollection-isnameunique)
@@ -123,7 +123,7 @@ O código a seguir adiciona uma nova política à coleção de políticas do IAS
 [Recuperando uma coleção](/windows/desktop/Nps/sdo-retrieving-a-collection)
 </dt> <dt>
 
-[**VARIANTE**](/windows/win32/api/oaidl/ns-oaidl-variant)
+[**Variante**](/windows/win32/api/oaidl/ns-oaidl-variant)
 </dt> </dl>
 
  

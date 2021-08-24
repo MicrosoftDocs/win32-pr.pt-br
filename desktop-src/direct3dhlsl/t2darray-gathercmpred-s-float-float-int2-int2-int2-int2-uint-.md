@@ -1,9 +1,9 @@
 ---
-title: 'Função Texture2DArray:: GatherCmpRed (S, float, float, Int2, Int2, Int2, Int2, uint)'
-description: 'Para quatro valores de Texel que seriam usados em uma operação de filtragem de bi linear, o retorna uma comparação de seu componente vermelho em relação a um valor de comparação junto com o status de mapeamento de bloco. | Função Texture2DArray:: GatherCmpRed (S, float, float, Int2, Int2, Int2, Int2, uint)'
+title: Função Texture2DArray::GatherCmpRed(S,float,float,int2,int2, int2,int2,uint)
+description: Para quatro valores de texel que seriam usados em uma operação de filtragem bi-linear, retorna uma comparação de seu componente vermelho em relação a um valor de comparação junto com o status de mapeamento de peça. | Função Texture2DArray::GatherCmpRed(S,float,float,int2,int2, int2,int2,uint)
 ms.assetid: E41E1328-AE31-445E-AF01-1DB201E8A278
 keywords:
-- HLSL da função GatherCmpRed
+- Função GatherCmpRed HLSL
 topic_type:
 - apiref
 api_name:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118507349"
 ---
-# <a name="texture2darraygathercmpredsfloatfloatint2int2int2int2uint-function"></a>Função Texture2DArray:: GatherCmpRed (S, float, float, Int2, Int2, Int2, Int2, uint)
+# <a name="texture2darraygathercmpredsfloatfloatint2int2int2int2uint-function"></a>Função Texture2DArray::GatherCmpRed(S,float,float,int2,int2, int2,int2,uint)
 
-Para quatro valores de Texel que seriam usados em uma operação de filtragem de bi linear, o retorna uma comparação de seu componente vermelho em relação a um valor de comparação junto com o status de mapeamento de bloco.
+Para quatro valores de texel que seriam usados em uma operação de filtragem bi-linear, retorna uma comparação de seu componente vermelho em relação a um valor de comparação junto com o status de mapeamento de peça.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -49,72 +49,72 @@ TemplateType GatherCmpRed(
 *S* \[ em\]
 </dt> <dd>
 
-Tipo: **samplestate**
+Tipo: **SamplerState**
 
 O índice de amostra baseado em zero.
 
 </dd> <dt>
 
-*Local* \[ do no\]
+*Localização* \[ Em\]
 </dt> <dd>
 
 Tipo: **float**
 
-As coordenadas de exemplo (u, v).
+As coordenadas de exemplo (u,v).
 
 </dd> <dt>
 
-*Comparevalue* \[ no\]
+*CompareValue* \[ Em\]
 </dt> <dd>
 
 Tipo: **float**
 
-Um valor para comparar cada valor de amostra.
+Um valor para comparar cada um com cada valor amostrado.
 
 </dd> <dt>
 
-*Offset1* \[ no\]
+*Offset1* \[ Em\]
 </dt> <dd>
 
-Tipo: **Int2**
+Tipo: **int2**
 
 O primeiro componente de deslocamento aplicado às coordenadas de textura antes da amostragem.
 
 </dd> <dt>
 
-*Offset2* \[ no\]
+*Offset2* \[ Em\]
 </dt> <dd>
 
-Tipo: **Int2**
+Tipo: **int2**
 
 O segundo componente de deslocamento aplicado às coordenadas de textura antes da amostragem.
 
 </dd> <dt>
 
-*Offset3* \[ no\]
+*Offset3* \[ Em\]
 </dt> <dd>
 
-Tipo: **Int2**
+Tipo: **int2**
 
 O terceiro componente de deslocamento aplicado às coordenadas de textura antes da amostragem.
 
 </dd> <dt>
 
-*Offset4* \[ no\]
+*Offset4* \[ Em\]
 </dt> <dd>
 
-Tipo: **Int2**
+Tipo: **int2**
 
 O quarto componente de deslocamento aplicado às coordenadas de textura antes da amostragem.
 
 </dd> <dt>
 
-*Status* \[ do fora\]
+*Status* \[ out\]
 </dt> <dd>
 
 Tipo: **uint**
 
-O status da operação. Você não pode acessar o status diretamente; em vez disso, passe o status para a função intrínseca [**CheckAccessFullyMapped**](checkaccessfullymapped.md) . **CheckAccessFullyMapped** retornará **true** se todos os valores da operação de **amostra**, **coleta** ou **carregamento** correspondente acessaram os blocos mapeados em um recurso de bloco ao [lado](/windows/desktop/direct3d11/direct3d-11-2-features). Se qualquer valor tiver sido tirado de um bloco não mapeado, **CheckAccessFullyMapped** retornará **false**.
+O status da operação. Você não pode acessar o status diretamente; Em vez disso, passe o status para a [**função intrínseca CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** retornará **TRUE** se todos os valores  da operação de **Exemplo,** **Coletar** ou Carregar correspondente acessarem blocos mapeados em um recurso lado a [lado.](/windows/desktop/direct3d11/direct3d-11-2-features) Se algum valor tiver sido retirado de um tile não mapeado, **CheckAccessFullyMapped** retornará **FALSE.**
 
 </dd> </dl>
 
@@ -126,13 +126,13 @@ Um valor de quatro componentes cujo tipo é o mesmo que o tipo de modelo.
 
 ## <a name="remarks"></a>Comentários
 
-Os exemplos de textura podem ser usados para interpolação bilinear.
+As amostras de textura podem ser usadas para interpolação bilinear.
 
 Essa função tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 

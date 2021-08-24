@@ -1,6 +1,6 @@
 ---
 title: Win32_TSDeploymentSettings classe
-description: Define as configurações padrão que o Gerenciador RemoteApp usa ao criar protocolo RDP (RDP).
+description: Define as configurações padrão que o Gerenciador RemoteApp usa ao criar arquivos protocolo RDP (RDP).
 ms.assetid: b3eeef86-e6cb-40ea-99f8-200c5993f31e
 ms.tgt_platform: multiple
 keywords:
@@ -48,7 +48,7 @@ ms.locfileid: "118349304"
 ---
 # <a name="win32_tsdeploymentsettings-class"></a>Classe Win32 \_ TSDeploymentSettings
 
-Define as configurações padrão que o Gerenciador RemoteApp usa ao criar protocolo RDP (RDP). Essas configurações não afetam nenhum aplicativo publicado ou áreas de trabalho.
+Define as configurações padrão que o Gerenciador RemoteApp usa ao criar arquivos protocolo RDP (RDP). Essas configurações não afetam nenhum aplicativo publicado ou áreas de trabalho.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -301,7 +301,7 @@ Tipo de dados: **sint32**
 Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Indica se um servidor de Gateway de Área de Trabalho Avançada deve ser usado para se conectar ao servidor Host da Sessão RD de destino em um firewall. Os valores a seguir são possíveis.
+Indica se um servidor de Gateway de Área de Trabalho Avançada deve ser usado para se conectar ao servidor Host da Sessão RD destino em um firewall. Os valores a seguir são possíveis.
 
 <dt>
 
@@ -589,7 +589,7 @@ Se **RequireServerAuth** estiver definido como **TRUE,** considere o seguinte:
 -   Se o programa RemoteApp for para uso na intranet e todos os computadores cliente estão executando o Windows Server 2008 ou o Windows Vista, você não precisa configurar o servidor Host da Sessão RD para usar um certificado SSL. Nesse caso, o Autenticação no Nível da Rede é usado.
 -   Você deve especificar o FQDN do servidor ou farm para o valor da **propriedade FarmName.**
 
-Para se conectar ao namespace "CIMV2 \\ TerminalServices", o nível de autenticação deve incluir a privacidade do pacote. Para chamadas C/C++, esse é um nível de autenticação de **RPC \_ C \_ AUTHN \_ LEVEL \_ PKT \_ PRIVACY**, que pode ser definido usando a função [**COM CoSetProxyBlanket.**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket) Para Visual Basic e scripts, esse é um nível de autenticação **de WbemAuthenticationLevelPktPrivacy** ou "pktPrivacy", com um valor de 6. O exemplo Visual Basic VBScript (Scripting Edition) a seguir mostra como se conectar a um computador remoto com privacidade de pacote.
+Para se conectar ao namespace "CIMV2 \\ TerminalServices", o nível de autenticação deve incluir a privacidade do pacote. Para chamadas C/C++, esse é um nível de autenticação de **RPC \_ C \_ AUTHN \_ LEVEL \_ PKT \_ PRIVACY**, que pode ser definido usando a função [**COM CoSetProxyBlanket.**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket) Para Visual Basic e scripts, esse é um nível de autenticação de **WbemAuthenticationLevelPktPrivacy** ou "pktPrivacy", com um valor de 6. O exemplo Visual Basic VBScript (Scripting Edition) a seguir mostra como se conectar a um computador remoto com privacidade de pacote.
 
 
 ```VB
@@ -600,7 +600,7 @@ Set objServices = GetObject( _
 
 
 
-Managed Object Format (MOF) contêm as definições para classes WMI (Instrumentação de Gerenciamento de Windows). Eles são instalados no computador quando você adiciona a função associada. Para obter mais informações sobre arquivos MOF, [consulte Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
+arquivos Managed Object Format (MOF) contêm as definições para classes WMI (Instrumentação de Gerenciamento de Windows). Eles são instalados no computador quando você adiciona a função associada. Para obter mais informações sobre arquivos MOF, [consulte Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 

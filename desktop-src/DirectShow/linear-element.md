@@ -1,7 +1,7 @@
 ---
 description: O elemento linear define o valor de um elemento param em um momento específico, em relação ao início da transição ou efeito que contém o elemento param.
 ms.assetid: f6af4bf1-fc2d-439c-b1e3-8e095ecad503
-title: Elemento linear (Camerauicontrol. h)
+title: Elemento linear (Camerauicontrol.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 34bff0ef1ef4c9c95752f986aabeddd24b40cc695a8a0f292b1072dfdc1d3d28
@@ -18,13 +18,13 @@ ms.locfileid: "118397140"
 
  
 
-O elemento linear define o valor de um elemento [**param**](param-element.md) em um momento específico, em relação ao início da transição ou efeito que contém o elemento **param** . O `linear` elemento faz com que o parâmetro faça uma transição suave de seu valor anterior para o novo valor. Para um salto instantâneo para um novo valor, use o elemento [**at**](at-element.md) .
+O elemento linear define o valor de um elemento [**param**](param-element.md) em um momento específico, em relação ao início da transição ou efeito que contém o **elemento param.** O `linear` elemento faz com que o parâmetro faça uma transição suave de seu valor anterior para o novo valor. Para um salto instantâneo para um novo valor, use o [**elemento at.**](at-element.md)
 
 ## <a name="attributes"></a>Atributos
 
-[**tempo**](time-attribute.md), [ **valor**](value-attribute.md)
+[**time**](time-attribute.md), [ **value**](value-attribute.md)
 
-## <a name="parentchild-information"></a>Informações de pai/filho
+## <a name="parentchild-information"></a>Informações pai/filho
 
 
 
@@ -52,7 +52,7 @@ O elemento linear define o valor de um elemento [**param**](param-element.md) em
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Camerauicontrol. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Camerauicontrol.h</dt> </dl> |
 
 
 

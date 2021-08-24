@@ -1,29 +1,29 @@
 ---
 title: Módulo SHV
-description: 'Observação: a plataforma de proteção de acesso à rede não está disponível a partir do Windows 10 configura um módulo de validador da integridade do sistema (SHV), incluindo registro e cancelamento de registro com o sistema NAP.'
+description: 'observação: a plataforma de proteção de acesso à rede não está disponível a partir do Windows 10 configura um módulo de validador da integridade do sistema (SHV), incluindo registro e cancelamento de registro com o sistema NAP.'
 ms.assetid: 0f2edd23-d44a-4a01-ae33-f7eef0e4b27f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b95784d05f4bf377f356a91fe5b0c1811fb9671d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 344b3a6d74acee0e06e3d2a9fedd4784b1c9d76ac8ba84c68ed4b7ef8ceebc56
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103635667"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118133421"
 ---
 # <a name="shv-module"></a>Módulo SHV
 
 > [!Note]  
 > A plataforma de proteção de acesso à rede não está disponível a partir do Windows 10
 
- 
+ 
 
 Configura um módulo de validador da integridade do sistema (SHV), incluindo o registro e o cancelamento de registro com o sistema NAP.
 
 > [!Note]  
 > O SDK do NAP também contém um conjunto completo de códigos de exemplo que podem ser encontrados no. \\ .. Exemplos \\ de \\ NAP NetDS... diretório da instalação do SDK. Este conjunto de amostras inclui um SHA (agente de integridade do sistema), SHV e cliente de imposição (EC). Ele tem cenários NAP de trabalho completo Configurando a comunicação entre SHA-SHV e SHA-EC.
 
- 
+ 
 
 
 ```C++
@@ -104,9 +104,9 @@ void FreeComponentRegistration(NapComponentRegistrationInfo *shvInfo)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

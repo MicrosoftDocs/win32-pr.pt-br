@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0e5f074606eda33b8fe0f916aa011583404f5d9b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7ad610e88396042761c71450d23763a264934aa8123ef490a3d70e1926d1db7d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105750724"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117895473"
 ---
 # <a name="instanceparametersenableonlinedefrag-property"></a>Propriedade instanceparameters. EnableOnlineDefrag
 

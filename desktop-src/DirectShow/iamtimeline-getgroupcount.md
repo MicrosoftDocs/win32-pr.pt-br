@@ -1,7 +1,7 @@
 ---
 description: O método GetGroupCount recupera o número de grupos contidos na linha do tempo.
 ms.assetid: 24351e03-3132-4363-8171-eae517fb770a
-title: 'Método IAMTimeline:: GetGroupCount (QEdit. h)'
+title: Método IAMTimeline::GetGroupCount (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,7 +21,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118401077"
 ---
-# <a name="iamtimelinegetgroupcount-method"></a>Método IAMTimeline:: GetGroupCount
+# <a name="iamtimelinegetgroupcount-method"></a>Método IAMTimeline::GetGroupCount
 
 > [!Note]  
 > \[Preterido. Essa API pode ser removida de versões futuras do Windows.\]
@@ -54,17 +54,17 @@ Recebe o número de grupos na linha do tempo.
 
 ## <a name="return-value"></a>Valor retornado
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> O arquivo de cabeçalho QEdit. h não é compatível com cabeçalhos do Direct3D posteriores à versão 7.
+> O arquivo de título Qedit.h não é compatível com os headers direct3D posteriores à versão 7.
 
  
 
 > [!Note]  
-> para obter o Qedit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Para obter o Qedit.h, baixe [o Microsoft Windows SDK Update para Windows Vista e .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O Qedit.h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -74,8 +74,8 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>QEdit. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -83,7 +83,7 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
 <dl> <dt>
 
-[**Interface IAMTimeline**](iamtimeline.md)
+[**IAMTimeline Interface**](iamtimeline.md)
 </dt> <dt>
 
 [Códigos de erro e êxito](error-and-success-codes.md)

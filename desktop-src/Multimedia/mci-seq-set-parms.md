@@ -1,9 +1,9 @@
 ---
-title: Estrutura de MCI_SEQ_SET_PARMS (Mciapi. h)
-description: A estrutura do MCI \_ Seq \_ set \_ parms contém informações para o \_ comando set do MCI para dispositivos do Sequencer MIDI.
+title: MCI_SEQ_SET_PARMS (Mciapi.h)
+description: A estrutura MCI \_ SEQ \_ SET \_ PARMS contém informações para o comando MCI \_ SET para dispositivos de sequenciador MIDI.
 ms.assetid: 71638a92-c1d6-474b-bc97-ea63ca586aaa
 keywords:
-- Multimídia do Windows da estrutura de MCI_SEQ_SET_PARMS
+- MCI_SEQ_SET_PARMS estrutura Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 879dd575918a33676e3ba73bd2a8f6212e3dc412
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ffb96cfd2f652bf989673bad68c95c6765034d2105fa554efee057faf099a9c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918105"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118374964"
 ---
-# <a name="mci_seq_set_parms-structure"></a>\_Estrutura do \_ conjunto de \_ parâmetros do MCI Seq
+# <a name="mci_seq_set_parms-structure"></a>Estrutura MCI \_ SEQ \_ SET \_ PARMS
 
-A estrutura do **MCI \_ Seq \_ set \_ parms** contém informações para o comando [**\_ set do MCI**](mci-set.md) para dispositivos do Sequencer MIDI.
+A **estrutura MCI \_ SEQ SET \_ \_ PARMS** contém informações para o [**comando MCI \_ SET**](mci-set.md) para dispositivos de sequenciador MIDI.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,17 +47,17 @@ typedef struct {
 
 <dl> <dt>
 
-**dwCallback**
+**Dwcallback**
 </dt> <dd>
 
-A palavra de ordem inferior Especifica um identificador de janela usado para o \_ sinalizador de notificação MCI.
+A palavra de ordem baixa especifica um alça de janela usado para o sinalizador NOTIFY da \_ MCI.
 
 </dd> <dt>
 
 **dwTimeFormat**
 </dt> <dd>
 
-Formato de hora do sequenciador.
+Formato de tempo do Sequencer.
 
 </dd> <dt>
 
@@ -71,7 +71,7 @@ Canal de saída de áudio.
 **dwTempo**
 </dt> <dd>
 
-Golpe.
+Tempo.
 
 </dd> <dt>
 
@@ -82,21 +82,21 @@ Porta.
 
 </dd> <dt>
 
-**dwSlave**
+**dw Ltda**
 </dt> <dd>
 
-Tipo de sincronização usado pelo Sequencer para a operação subordinada.
+Tipo de sincronização usado pelo sequenciador para a operação subordinada.
 
 </dd> <dt>
 
 **dwMaster**
 </dt> <dd>
 
-Tipo de sincronização usado pelo Sequencer para a operação mestre.
+Tipo de sincronização usado pelo sequenciador para a operação mestra.
 
 </dd> <dt>
 
-**dwOffset**
+**Dwoffset**
 </dt> <dd>
 
 Deslocamento de dados.
@@ -105,7 +105,7 @@ Deslocamento de dados.
 
 ## <a name="remarks"></a>Comentários
 
-Ao atribuir dados aos membros dessa estrutura, defina os sinalizadores correspondentes no parâmetro *fdwCommand* da função [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para validar os membros.
+Ao atribuir dados aos membros dessa estrutura, defina os sinalizadores correspondentes no parâmetro *fdwCommand* da [**função mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para validar os membros.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -115,7 +115,7 @@ Ao atribuir dados aos membros dessa estrutura, defina os sinalizadores correspon
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                          |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                |
-| Cabeçalho<br/>                   | <dl> <dt>Mciapi. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Mciapi.h</dt> </dl> |
 
 
 
@@ -123,13 +123,13 @@ Ao atribuir dados aos membros dessa estrutura, defina os sinalizadores correspon
 
 <dl> <dt>
 
-[**MCI**](mci.md)
+[**Mci**](mci.md)
 </dt> <dt>
 
 [**Estruturas MCI**](mci-structures.md)
 </dt> <dt>
 
-[**conjunto de MCI \_**](mci-set.md)
+[**MCI \_ SET**](mci-set.md)
 </dt> <dt>
 
 [**mciSendCommand**](/previous-versions//dd757160(v=vs.85))

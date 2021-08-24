@@ -3,7 +3,7 @@ title: Estrutura de MCI_VCR_LIST_PARMS (VCR. h)
 description: A estrutura de parâmetros da \_ lista de videocassetes MCI \_ \_ contém parâmetros para o comando de lista de MCI \_ para gravadores de vídeo-fita.
 ms.assetid: 88725599-8057-4787-96e6-49b4a651c894
 keywords:
-- Multimídia do Windows da estrutura de MCI_VCR_LIST_PARMS
+- estrutura de MCI_VCR_LIST_PARMS Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d3e7a2eae67ebc7148b7ff424361f16554a435c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d8eeb74aeee254ab050d394dbf250c037d00d10d51fe872052dd5d36164b2c3a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104295879"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118137977"
 ---
 # <a name="mci_vcr_list_parms-structure"></a>\_Estrutura de \_ parâmetros da lista de VIDEOCASSETEs MCI \_
 

@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: Método VistaApi.JetOpenTemporaryTable'
-title: Método VistaApi.JetOpenTemporaryTable (Microsoft.Isam.Esent.Interop.Vista)
+description: 'Saiba mais sobre: método VistaApi. JetOpenTemporaryTable'
+title: Método VistaApi. JetOpenTemporaryTable (Microsoft. ISAM. ESENT. Interop. vista)
 TOCTitle: 'JetOpenTemporaryTable method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Vista.VistaApi.JetOpenTemporaryTable(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.Vista.JET_OPENTEMPORARYTABLE)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.vistaapi.jetopentemporarytable(v=EXCHG.10)
@@ -31,12 +31,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118484281"
 ---
-# <a name="vistaapijetopentemporarytable-method"></a>Método VistaApi.JetOpenTemporaryTable
+# <a name="vistaapijetopentemporarytable-method"></a>Método VistaApi. JetOpenTemporaryTable
 
-Cria uma tabela temporária com um único índice. Uma tabela temporária armazena e recupera registros como uma tabela comum criada usando JetCreateTableColumnIndex. No entanto, as tabelas temporárias são muito mais rápidas do que as tabelas comuns devido à sua natureza volátil. Eles também podem ser usados para classificar e executar remoção duplicada muito rapidamente em conjuntos de registros quando acessados de maneira puramente sequencial. Consulte também [JetOpenTempTable(JET_SESID, \[ \] , Int32, TempTableGrbit, JET_TABLEID, \[ \] )](./api.jetopentemptable-method.md), [JetOpenTempTable3(JET_SESID, \[ \] , Int32, JET_UNICODEINDEX, TempTableGrbit, JET_TABLEID, \[ \] )](./api.jetopentemptable3-method.md).
+Cria uma tabela temporária com um único índice. Uma tabela temporária armazena e recupera registros, assim como uma tabela comum criada usando JetCreateTableColumnIndex. No entanto, as tabelas temporárias são muito mais rápidas do que as tabelas comuns devido à sua natureza volátil. Eles também podem ser usados para classificar e executar com muita rapidez a remoção de duplicidades em conjuntos de registros quando acessados de forma puramente sequencial. Consulte também [JetOpenTempTable (JET_SESID, \[ \] Int32, TempTableGrbit, JET_TABLEID, \[ \] )](./api.jetopentemptable-method.md), [JetOpenTempTable3 (JET_SESID, \[ \] Int32, JET_UNICODEINDEX, TempTableGrbit, JET_TABLEID, \[ \] )](./api.jetopentemptable3-method.md).
 
-**Namespace:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -62,20 +62,20 @@ public static void JetOpenTemporaryTable(
 #### <a name="parameters"></a>Parâmetros
 
   - sesid  
-    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)  
     
     A sessão a ser usada.
 
 <!-- end list -->
 
-  - temporarytable  
-    Tipo: [Microsoft.Isam.Esent.Interop.Vista.JET_OPENTEMPORARYTABLE](./jet-opentemporarytable-class.md)  
+  - temporáriotable  
+    Tipo: [Microsoft.ISAM.ESENT.Interop.vista.JET_OPENTEMPORARYTABLE](./jet-opentemporarytable-class.md)  
     
-    Descrição da tabela temporária a ser criado na entrada. Após uma chamada bem-sucedida, a estrutura contém o identificador para as identificações de tabela e coluna temporárias. Use [JetCloseTable(JET_SESID, JET_TABLEID)](./api.jetclosetable-method.md) para liberar a tabela temporária quando terminar.
+    Descrição da tabela temporária a ser criada na entrada. Após uma chamada bem-sucedida, a estrutura contém o identificador para a tabela temporária e as identificações de coluna. Use [JetCloseTable (JET_SESID, JET_TABLEID)](./api.jetclosetable-method.md) para liberar a tabela temporária quando terminar.
 
 ## <a name="remarks"></a>Comentários
 
-Introduzido no Windows Vista. Use [JetOpenTempTable3(JET_SESID, \[ \] , Int32, JET_UNICODEINDEX, TempTableGrbit, JET_TABLEID, \[ \] )](./api.jetopentemptable3-method.md) para versões anteriores do Esent.
+introduzido no Windows Vista. Use [JetOpenTempTable3 (JET_SESID, \[ \] Int32, JET_UNICODEINDEX, TempTableGrbit, JET_TABLEID, \[ \] )](./api.jetopentemptable3-method.md) para versões anteriores do ESENT.
 
 ## <a name="see-also"></a>Confira também
 
@@ -85,4 +85,4 @@ Introduzido no Windows Vista. Use [JetOpenTempTable3(JET_SESID, \[ \] , Int32, J
 
 [Membros do VistaApi](./vistaapi-members.md)
 
-[Namespace Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Namespace Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)

@@ -15,12 +15,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 2b43862169cbe8f192f8fb9db561c2e101f377b3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ac1329c60f38ebfb4597b85ec251e074babd2c1fde7e58fee2423b6a11be92f4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826873"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117814884"
 ---
 # <a name="drivercompletionroutine-class"></a>Classe DriverCompletionRoutine
 
@@ -106,8 +106,8 @@ Identificador que identifica a solicitação de forma exclusiva. Use esse identi
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 

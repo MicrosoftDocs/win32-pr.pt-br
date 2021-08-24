@@ -1,9 +1,9 @@
 ---
 title: Mensagem de ICM_COMPRESS_BEGIN (VFW. h)
-description: A \_ mensagem de início de compactação ICM \_ Notifica um driver de compactação de vídeo para se preparar para compactar dados. Você pode enviar essa mensagem explicitamente ou usando a macro ICCompressBegin.
+description: o ICM \_ compactar \_ mensagem de início notifica um driver de compactação de vídeo para se preparar para compactar dados. Você pode enviar essa mensagem explicitamente ou usando a macro ICCompressBegin.
 ms.assetid: dd1d3a66-c625-4f55-b65a-8545c1c16301
 keywords:
-- Multimídia do Windows de mensagem ICM_COMPRESS_BEGIN
+- mensagem de ICM_COMPRESS_BEGIN Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e358aa3ab589af0be1e4e490c141ed41baeb5874
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 33a6ee9c080e2dfc7a779abd4ae2a788bbe136ddcab1ef529714639065553ad0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009748"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118140944"
 ---
-# <a name="icm_compress_begin-message"></a>\_Mensagem de início de compactação ICM \_
+# <a name="icm_compress_begin-message"></a>ICM \_ COMPACTar \_ mensagem de início
 
-A mensagem de **\_ \_ início de compactação ICM** notifica um driver de compactação de vídeo para se preparar para compactar dados. Você pode enviar essa mensagem explicitamente ou usando a macro [**ICCompressBegin**](/windows/desktop/api/Vfw/nf-vfw-iccompressbegin) .
+o **ICM \_ compactar \_** mensagem de início notifica um driver de compactação de vídeo para se preparar para compactar dados. Você pode enviar essa mensagem explicitamente ou usando a macro [**ICCompressBegin**](/windows/desktop/api/Vfw/nf-vfw-iccompressbegin) .
 
 
 ```C++
@@ -58,9 +58,9 @@ Retornará ICERR \_ OK se o driver der suporte à compactação especificada ou 
 
 ## <a name="remarks"></a>Comentários
 
-O driver deve alocar e inicializar qualquer tabela ou memória necessária para compactar os formatos de dados quando ele recebe a mensagem [**ICM \_ compress**](icm-compress.md) .
+o driver deve alocar e inicializar qualquer tabela ou memória necessária para compactar os formatos de dados quando ele recebe a mensagem [**ICM \_ comprimir**](icm-compress.md) .
 
-VCM salva as configurações da mensagem de **\_ \_ início de compactação ICM** mais recente. As mensagens de término do **ICM \_ compacte \_ begin** e [**ICM \_ compress \_**](icm-compress-end.md) não são aninhadas. Se o driver receber **a \_ compactação de ICM, \_ comece** antes que a compactação seja interrompida com a **\_ \_ extremidade de compactação ICM**, ela deverá reiniciar a compactação com novos parâmetros
+VCM salva as configurações da mensagem de **\_ \_ início ICM compactar** mais recente. o **ICM \_ compactar \_ início** e ICM mensagens de [**\_ \_ término de compactação**](icm-compress-end.md) não são aninhadas. se o seu driver receber **ICM \_ compactar \_ começar** antes que a compactação seja interrompida com **ICM \_ \_ extremidade de compactação**, ela deverá reiniciar a compactação com novos parâmetros.
 
 ## <a name="requirements"></a>Requisitos
 

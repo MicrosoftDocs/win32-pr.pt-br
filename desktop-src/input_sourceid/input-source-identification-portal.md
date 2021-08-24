@@ -1,5 +1,5 @@
 ---
-description: Os tópicos nesta seção fornecem uma visão geral do suporte para a Identificação da Fonte de Entrada no Windows 8.
+description: Os tópicos nesta seção fornecem uma visão geral do suporte para a Identificação da Fonte de Entrada Windows 8.
 ms.assetid: 37E878DC-962F-4E30-8D11-99975BB9EBA4
 title: Identificação da origem de entrada
 ms.topic: article
@@ -15,7 +15,7 @@ ms.locfileid: "118482977"
 
 ## <a name="purpose"></a>Finalidade
 
-Os tópicos nesta seção fornecem uma visão geral do suporte para a Identificação da Fonte de Entrada no Windows 8. A Identificação da Origem de Entrada permite que os aplicativos detectem com precisão e confiança uma fonte de entrada, identifiquem o tipo de entrada e forneçam uma experiência do usuário mais apropriada para o tipo de entrada.
+Os tópicos nesta seção fornecem uma visão geral do suporte para a Identificação da Fonte de Entrada Windows 8. A Identificação da Origem de Entrada permite que os aplicativos detectem de forma precisa e confiável uma fonte de entrada, identifiquem o tipo de entrada e forneçam uma experiência do usuário mais apropriada para o tipo de entrada.
 
 A coleção de tópicos fornecidos aqui descreve como seu aplicativo pode obter essas informações e usá-la melhor para otimizar a experiência do usuário para seu cliente.
 
@@ -23,7 +23,7 @@ A coleção de tópicos fornecidos aqui descreve como seu aplicativo pode obter 
 
 | Tópico | Descrição |
 |---|---|
-| [Referência de identificação da origem de entrada](input-source-identification-reference.md)<br/> | Os tópicos nesta seção fornecem as especificações de referência para Identificação da Fonte de Entrada no Windows 8.<br/> |
+| [Referência de identificação da origem de entrada](input-source-identification-reference.md)<br/> | Os tópicos nesta seção fornecem as especificações de referência para a Identificação da Fonte de Entrada Windows 8.<br/> |
 
 ## <a name="developer-audience"></a>Público de desenvolvedores
 

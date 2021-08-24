@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 2e391e942e581d0f80d46b0f59b9b273d7bff499
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 3893b7acef182005603f4a80a51caf159b54dd31cc2a966d5dc9940a5164681d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105755663"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118418509"
 ---
 # <a name="takeownershipex-method-of-the-win32_directory-class"></a>Método TakeOwnerShipEx da classe do \_ diretório Win32
 
@@ -72,7 +72,7 @@ Se for **true**, a alteração de propriedade será aplicada recursivamente aos 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor inteiro de 0 (zero) em caso de êxito e qualquer outro número para indicar um erro.
 
@@ -123,7 +123,7 @@ O sistema de arquivos não é NTFS.
 **12**
 </dt> <dd>
 
-A plataforma não é o Windows.
+A plataforma não é Windows.
 
 </dd> <dt>
 
@@ -171,7 +171,7 @@ Um parâmetro especificado não é válido.
 
 ## <a name="examples"></a>Exemplos
 
-O código de script Visual Basic a seguir chama o método [**TakeOwnerShipEx**](takeownershipex-method-in-class-cim-directory.md) para apropriar-se da pasta C: \\ Temp.
+o código de Script Visual Basic a seguir chama o método [**TakeOwnerShipEx**](takeownershipex-method-in-class-cim-directory.md) para apropriar-se da pasta C: \\ temp.
 
 
 ```VB

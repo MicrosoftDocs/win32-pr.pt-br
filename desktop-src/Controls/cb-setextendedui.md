@@ -3,7 +3,7 @@ title: CB_SETEXTENDEDUI mensagem (Winuser.h)
 description: Um aplicativo envia uma mensagem CB SETEXTENDEDUI para selecionar a interface do usuário padrão ou a interface do usuário estendida para uma caixa de combinação que tem o estilo \_ CBS DROPDOWN ou \_ CBS \_ DROPDOWNLIST.
 ms.assetid: c489e484-777e-4afa-996b-1ec3eb6552ab
 keywords:
-- CB_SETEXTENDEDUI controles Windows mensagem
+- CB_SETEXTENDEDUI controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -59,7 +59,7 @@ Por padrão, a tecla F4 abre ou fecha a lista e a seta para baixo altera a sele�
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                           |
 | Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

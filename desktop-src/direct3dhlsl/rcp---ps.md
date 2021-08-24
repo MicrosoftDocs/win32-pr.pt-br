@@ -1,6 +1,6 @@
 ---
-title: rcp - ps
-description: Calcula o recíproco do escalar de origem. | rcp - ps
+title: RCP-PS
+description: Computa o recíproco do escalar de origem. | RCP-PS
 ms.assetid: d8dfc2b3-4404-47ec-aeaf-1adb7e7a342e
 ms.topic: reference
 ms.date: 05/31/2018
@@ -16,15 +16,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118510951"
 ---
-# <a name="rcp---ps"></a>rcp - ps
+# <a name="rcp---ps"></a>RCP-PS
 
-Calcula o recíproco do escalar de origem.
+Computa o recíproco do escalar de origem.
 
 ## <a name="syntax"></a>Syntax
 
 
 
-| rcp dst, src |
+| RCP DST, src |
 |--------------|
 
 
@@ -33,14 +33,14 @@ Calcula o recíproco do escalar de origem.
 
 onde
 
--   dst é o registro de destino.
--   src é um registro de origem. O registro de origem requer o uso explícito do swizzle de replicação, ou seja, exatamente um dos componentes .x, .y, .z, .w swizzle (ou os equivalentes .r, .g, .b, .a).
+-   DST é o registro de destino.
+-   src é um registro de origem. O registro de origem requer uso explícito de replicate swizzle, ou seja, exatamente um dos componentes. x,. y,. z,. w swizzle (ou. r,. g,. b,. equivalentes) devem ser especificados.
 
 ## <a name="remarks"></a>Comentários
 
 
 
-| Versões do sombreador de pixel | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
+| Versões do sombreador de pixel | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
 | rcp                   |      |      |      |      | x    | x    | x     | x    | x     |
 
@@ -48,11 +48,11 @@ onde
 
  
 
-A saída deverá ser exatamente 1,0 se a entrada for exatamente 1,0. Uma fonte de 0,0 produz infinito.
+A saída deve ser exatamente 1,0 se a entrada for exatamente 1,0. Uma fonte de 0,0 gera infinitos.
 
 O resultado escalar é replicado para todos os canais na máscara de gravação de destino.
 
-A precisão deve ser pelo menos 1,0/(2 Vezes) erro absoluto no intervalo (1,0, 2,0) porque implementações comuns separarão mantissa e expoente.
+A precisão deve ser pelo menos 1,0/(2 ²) erro absoluto durante o intervalo (1,0, 2,0) porque implementações comuns separam mantissa e expoente.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

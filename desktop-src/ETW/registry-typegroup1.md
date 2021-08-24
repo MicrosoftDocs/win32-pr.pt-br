@@ -1,7 +1,7 @@
 ---
-description: Classe Registry_TypeGroup1-essa classe é a classe de tipo de evento para eventos de registro. A sintaxe a seguir é simplificada do código MOF.
+description: Registry_TypeGroup1 classe - essa classe é a classe de tipo de evento para eventos do Registro. A sintaxe a seguir é simplificada do código MOF.
 ms.assetid: 8d0e9d97-3837-46da-a217-13e943580352
-title: Classe Registry_TypeGroup1
+title: Registry_TypeGroup1 classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -24,9 +24,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118394238"
 ---
-# <a name="registry_typegroup1-class"></a>\_Classe TypeGroup1 do registro
+# <a name="registry_typegroup1-class"></a>Classe \_ TypeGroup1 do Registro
 
-Essa classe é a classe de tipo de evento para eventos de registro.
+Essa classe é a classe de tipo de evento para eventos do Registro.
 
 A sintaxe a seguir é simplificada do código MOF.
 
@@ -46,33 +46,33 @@ class Registry_TypeGroup1 : Registry
 
 ## <a name="members"></a>Membros
 
-A **classe \_ TypeGroup1 do registro** tem estes tipos de membros:
+A **classe \_ TypeGroup1 do** Registro tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A **classe \_ TypeGroup1 do registro** tem essas propriedades.
+A **classe \_ TypeGroup1 do** Registro tem essas propriedades.
 
 <dl> <dt>
 
 Índice
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (3)
+Qualificadores: WmiDataId(3)
 </dt> </dl>
 
-O índice de subchave para a operação de registro (como EnumerateKey).
+O índice de sub-chave para a operação do Registro (como EnumerateKey).
 
 </dd> <dt>
 
-Inicialtime
+InitialTime
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **sint64**
@@ -81,26 +81,26 @@ Tipo de dados: **sint64**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (1)
+Qualificadores: WmiDataId(1)
 </dt> </dl>
 
-Hora inicial da operação de registro.
+Hora inicial da operação do Registro.
 
 </dd> <dt>
 
-Identificador de
+Keyhandle
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (4), ponteiro
+Qualificadores: WmiDataId(4), Pointer
 </dt> </dl>
 
-Identificador para a chave do registro.
+Lidar com a chave do Registro.
 
 </dd> <dt>
 
@@ -113,26 +113,26 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (5), StringTermination ("NullTerminated"), Format ("w")
+Qualificadores: WmiDataId(5), StringTermination("NullTerminated"), Format("w")
 </dt> </dl>
 
-Nome da chave do registro.
+Nome da chave do Registro.
 
 </dd> <dt>
 
 Status
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (2), ponteiro
+Qualificadores: WmiDataId(2), Pointer
 </dt> </dl>
 
-Valor de NTSTATUS da operação de registro.
+Valor NTSTATUS da operação do Registro.
 
 </dd> </dl>
 
@@ -142,8 +142,8 @@ Valor de NTSTATUS da operação de registro.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

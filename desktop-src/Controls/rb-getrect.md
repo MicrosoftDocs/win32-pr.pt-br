@@ -1,9 +1,9 @@
 ---
-title: Mensagem de RB_GETRECT (commctrl. h)
-description: Recupera o retângulo delimitador para uma determinada faixa em um controle rebar.
+title: RB_GETRECT mensagem (Commctrl.h)
+description: Recupera o retângulo delimitado para uma determinada faixa em um controle de barra rebar.
 ms.assetid: e272b090-1e4d-4cff-87f0-557ad8116e7e
 keywords:
-- Controles de RB_GETRECT de mensagens do Windows
+- RB_GETRECT controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 76b9d5de00b638a3767df461595ff01316b23183
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 43d2f085fa7c6f413700156999f1325879f91affc2c8984fb33d08cb6cc90b66
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104163598"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118169292"
 ---
-# <a name="rb_getrect-message"></a>\_Mensagem de GETRECT RB
+# <a name="rb_getrect-message"></a>Mensagem \_ GETRECT do RB
 
-Recupera o retângulo delimitador para uma determinada faixa em um controle rebar.
+Recupera o retângulo delimitado para uma determinada faixa em um controle de barra rebar.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -32,20 +32,20 @@ Recupera o retângulo delimitador para uma determinada faixa em um controle reba
 *wParam* 
 </dt> <dd>
 
-Índice de base zero de uma banda no controle rebar.
+Índice baseado em zero de uma banda no controle de barra de rebar.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Ponteiro para uma estrutura [**Rect**](/previous-versions//dd162897(v=vs.85)) que receberá os limites da faixa Rebar.
+Ponteiro para uma [**estrutura RECT**](/previous-versions//dd162897(v=vs.85)) que receberá os limites da faixa de barra de rebar.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retornará zero se for bem-sucedido ou nenhum outro.
+Retornará diferente de zero se for bem-sucedido ou zero caso contrário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ Retornará zero se for bem-sucedido ou nenhum outro.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

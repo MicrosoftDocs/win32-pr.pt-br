@@ -13,9 +13,9 @@ ms.locfileid: "118566823"
 ---
 # <a name="retrieving-the-connection-name"></a>Recuperando o nome da conexão
 
-Para recuperar o nome do recurso de rede associado a um dispositivo local, um aplicativo pode chamar a função [**WNetGetConnection**](/windows/win32/api/winnetwk/nf-winnetwk-wnetgetconnectiona) , conforme mostrado no exemplo a seguir.
+Para recuperar o nome do recurso de rede associado a um dispositivo local, um aplicativo pode chamar a [**função WNetGetConnection,**](/windows/win32/api/winnetwk/nf-winnetwk-wnetgetconnectiona) conforme mostrado no exemplo a seguir.
 
-O exemplo a seguir chama um manipulador de erro definido pelo aplicativo para processar erros e a função [**TextOut**](/windows/desktop/api/wingdi/nf-wingdi-textouta) para impressão.
+O exemplo a seguir chama um manipulador de erros definido pelo aplicativo para processar erros e a [**função TextOut**](/windows/desktop/api/wingdi/nf-wingdi-textouta) para impressão.
 
 
 ```C++
@@ -58,7 +58,7 @@ switch (dwResult)
 
 
 
-Para obter mais informações sobre como usar um manipulador de erro definido pelo aplicativo, consulte [recuperando erros de rede](retrieving-network-errors.md).
+Para obter mais informações sobre como usar um manipulador de erros definido pelo aplicativo, consulte [Recuperando erros de rede](retrieving-network-errors.md).
 
  
 

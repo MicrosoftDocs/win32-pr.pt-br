@@ -1,9 +1,9 @@
 ---
-title: Código de notificação de NM_KILLFOCUS (exibição em árvore) (commctrl. h)
-description: Notifica uma janela pai do controle de exibição de árvore que o controle perdeu o foco de entrada. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
+title: NM_KILLFOCUS de notificação (exibição de árvore) (Commctrl.h)
+description: Notifica a janela pai de um controle de exibição de árvore de que o controle perdeu o foco de entrada. Esse código de notificação é enviado na forma de uma mensagem WM \_ NOTIFY.
 ms.assetid: f6646a39-6480-4417-9c1c-ffd2417ca7dd
 keywords:
-- código de notificação de NM_KILLFOCUS (exibição em árvore) Windows controles
+- NM_KILLFOCUS (exibição de árvore) de código de notificação Windows Controles
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118410941"
 ---
-# <a name="nm_killfocus-tree-view-notification-code"></a>\_Código de notificação nm KILLFOCUS (exibição em árvore)
+# <a name="nm_killfocus-tree-view-notification-code"></a>Código de \_ notificação KILLFOCUS (exibição de árvore) NM
 
-Notifica uma janela pai do controle de exibição de árvore que o controle perdeu o foco de entrada. Esse código de notificação é enviado na forma de uma mensagem de [**\_ notificação do WM**](wm-notify.md) .
+Notifica a janela pai de um controle de exibição de árvore de que o controle perdeu o foco de entrada. Esse código de notificação é enviado na forma de uma mensagem [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,7 +41,7 @@ NM_KILLFOCUS
 *lParam* 
 </dt> <dd>
 
-Ponteiro para uma estrutura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contém informações adicionais sobre esta notificação.
+Ponteiro para uma [**estrutura NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contém informações adicionais sobre essa notificação.
 
 </dd> </dl>
 
@@ -55,9 +55,9 @@ O valor de retorno é ignorado.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

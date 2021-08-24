@@ -15,12 +15,12 @@ keywords:
 - interfaces, IDockProvider
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 87381669889ca7dd33811a030a718448f4b79cb5
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: adb0afd6a291a9e26c43d1aff957c7b7e9cd8c752040a661551b8eaf5b12b86e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822555"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118115091"
 ---
 # <a name="dock-control-pattern"></a>Padrão de controle Dock
 
@@ -58,7 +58,7 @@ As propriedades e os métodos a seguir são necessários para implementar a inte
 
 
 
- 
+ 
 
 Este padrão de controle não tem eventos associados.
 
@@ -75,9 +75,9 @@ Este padrão de controle não tem eventos associados.
 [Visão geral da árvore de automação de interface do usuário](uiauto-treeoverview.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

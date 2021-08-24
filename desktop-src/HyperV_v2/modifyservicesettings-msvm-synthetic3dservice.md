@@ -1,7 +1,7 @@
 ---
 description: Modifica os dados de configuração para o serviço 3D sintético.
 ms.assetid: 951ba829-2821-4621-800f-4e1a967b41f5
-title: Método ModifyServiceSettings da Msvm_Synthetic3DService classe
+title: Método ModifyServiceSettings da classe Msvm_Synthetic3DService
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:

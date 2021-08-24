@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c2a7b1e9e1dc24417a916ef5ae537590c4ebd388
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 95bfbf0b5442d767f9c86031ddba4e9291f73cc5249cfc06cb13ca594acdb0c7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105812238"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117894018"
 ---
 # <a name="jet_lstostring-method"></a>JET_LS. Método ToString
 
 Gere uma representação de cadeia de caracteres da estrutura.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -50,19 +50,19 @@ returnValue = instance.ToString()
 public override string ToString()
 ```
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
-Tipo: [System. String](/dotnet/api/system.string)  
+Tipo: [System.String](/dotnet/api/system.string)  
 A estrutura como uma cadeia de caracteres.  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Estrutura de JET_LS](./jet-ls-structure.md)
+[JET_LS estrutura](./jet-ls-structure.md)
 
-[Membros do JET_LS](./jet-ls-members.md)
+[JET_LS membros](./jet-ls-members.md)
 
-[Sobrecarga de ToString](./jet-ls.tostring-method2.md)
+[Sobrecarga toString](./jet-ls.tostring-method2.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

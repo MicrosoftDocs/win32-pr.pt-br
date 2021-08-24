@@ -4,12 +4,12 @@ description: A configuração da instalação requer privilégios de administrad
 ms.assetid: 96e9c069-829b-4615-b94b-3761bc541440
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b43b543bfc81f963341d7b5f690f4b40312ee420
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 36d59065ff34e7998d9df0503f6ae7503d9d402def6053f8176ba5af5b6a9efa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104498609"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117996113"
 ---
 # <a name="setup-configuration"></a>Configuração da instalação
 
@@ -19,9 +19,9 @@ A configuração da instalação requer privilégios de administrador e é persi
 -   Configurando SSL. Para configurar o SSL, o administrador chama a função [**HttpSetServiceConfiguration**](/windows/desktop/api/Http/nf-http-httpsetserviceconfiguration) com o parâmetro *configid* definido como **HttpServiceConfigSSLCertInfo** e passa um ponteiro no parâmetro *pConfigInformation* para uma estrutura de conjunto de [**SSL de \_ configuração de serviço \_ \_ \_ http**](/windows/desktop/api/Http/ns-http-http_service_config_ssl_set) que contém as informações do certificado SSL.
 -   Definir outras configurações persistentes de servidor HTTP, como os endereços IP nos quais o servidor HTTP escutará e o valor de tempo limite de todo o servidor. Consulte [lista de escuta de IP](ip-listen-list.md) e [**\_ \_ \_ tempo limite \_ de configuração do serviço http definido**](/windows/desktop/api/Http/ns-http-http_service_config_timeout_set).
 
- 
+ 
 
- 
+ 
 
 
 

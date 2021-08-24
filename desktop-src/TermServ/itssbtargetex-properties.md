@@ -14,7 +14,7 @@ ms.locfileid: "118351027"
 ---
 # <a name="itssbtargetex-properties"></a>Propriedades de ITsSbTargetEx
 
-A interface [**ITsSbTargetEx**](/windows/desktop/TermServ/itssbtargetex) expõe as [propriedades ITsSbTarget,](itssbtarget-properties.md) bem como as propriedades a seguir.
+A interface [**ITsSbTargetEx**](/windows/desktop/TermServ/itssbtargetex) expõe as [Propriedades ITsSbTarget](itssbtarget-properties.md) , bem como as propriedades a seguir.
 
 ## <a name="in-this-section"></a>Nesta seção
 

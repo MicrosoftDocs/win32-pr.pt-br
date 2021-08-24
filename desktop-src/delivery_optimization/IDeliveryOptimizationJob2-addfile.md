@@ -96,7 +96,7 @@ Esse método retorna S_OK em caso de êxito ou um dos valores de HRESULT padrão
 |---------------------------|---------------------------------------------------------------------------------|
 | Cliente mínimo com suporte  | Windows 10, \[ somente aplicativos da área de trabalho da versão 1803\]                                  |
 | Servidor mínimo com suporte  | Windows Servidor, versão 1709 \[ aplicativos da área de trabalho\]                              |
-| parâmetro                    | Deliveryoptimization. h                                                          |
+| Cabeçalho                    | Deliveryoptimization. h                                                          |
 | INSERI                       | DeliveryOptimization. idl                                                        |
 | Biblioteca                   | Dosvc. lib                                                                       |
 | DLL                       | Dosvc.dll                                                                       |

@@ -1,11 +1,11 @@
 ---
-title: Método WebHelp do IWMPError
-description: O método WebHelp inicia a página de ajuda da Web do Windows Media Player para exibir mais informações sobre o primeiro erro na fila de erros (índice zero). | Método WebHelp do IWMPError
+title: Método webHelp IWMPError
+description: O método webHelp inicia a página Windows Media Player Web Help para exibir mais informações sobre o primeiro erro na fila de erros (índice zero). | Método webHelp IWMPError
 ms.assetid: 30fc765a-04b2-44e5-99d8-0b4720ccbb25
 keywords:
-- método WebHelp do Windows Media Player
-- método WebHelp do Windows Media Player, interface IWMPError
-- Interface IWMPError Windows Media Player, método Webhelp
+- Método webHelp Windows Media Player
+- método webHelp Windows Media Player interface , IWMPError
+- Interface IWMPError Windows Media Player , método webHelp
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c9b0cd48d45ac5e5e5d77d0150b8acdf13347e2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 50d4b404988e8b317ec7b090adcb96aac8e26a5a82590aa1138848dc797e3e79
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105764524"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118115819"
 ---
-# <a name="iwmperrorwebhelp-method"></a>Método IWMPError:: Webhelp
+# <a name="iwmperrorwebhelp-method"></a>Método IWMPError::webHelp
 
-O método **WebHelp** inicia a página de ajuda da Web do Windows Media Player para exibir mais informações sobre o primeiro erro na fila de erros (índice zero).
+O **método webHelp** inicia a página Windows Media Player Web Help para exibir mais informações sobre o primeiro erro na fila de erros (índice zero).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -49,22 +49,22 @@ Implements IWMPError.webHelp
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-As páginas de ajuda da Web sempre contêm as informações mais recentes e mais detalhadas sobre erros do Windows Media Player. Esse método transfere automaticamente as outras informações necessárias pela ajuda da Web, como a versão do sistema operacional que está sendo usada.
+As páginas da Ajuda da Web sempre contêm as informações mais recentes e detalhadas sobre Windows Media Player erros. Esse método transfere automaticamente as outras informações necessárias para a Ajuda da Web, como a versão do sistema operacional que está sendo usada.
 
-Para acessar as páginas de ajuda da Web diretamente, use os seguintes links de código de erro e centro de suporte:
+Para acessar as páginas da Ajuda da Web diretamente, use o seguinte código de erro e links do centro de suporte:
 
--   [Informações de código de erro do Windows Media Player](https://support.microsoft.com/kb/886273)
--   [Centro de soluções do Windows Media Player](https://support.microsoft.com/ph/7763#tab0)
+-   [Windows Media Player Informações de código de erro](https://support.microsoft.com/kb/886273)
+-   [Windows Media Player Centro de Soluções](https://support.microsoft.com/ph/7763#tab0)
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir cria um botão que inicia a página de ajuda da Web do Microsoft Windows Media Player no navegador. O objeto AxWMPLib. AxWindowsMediaPlayer é representado pela variável chamada Player.
+O exemplo a seguir cria um botão que inicia a página Windows Media Player Ajuda da Web da Microsoft no navegador. O objeto AxWMPLib.AxWindowsMediaPlayer é representado pela variável chamada player.
 
 
 ```CSharp
@@ -96,7 +96,7 @@ End Sub
 
 | Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/>   | Windows Media Player 9 Series ou posterior<br/>                                                                      |
+| Versão<br/>   | Windows Media Player série 9 ou posterior<br/>                                                                      |
 | Namespace<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

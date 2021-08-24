@@ -1,9 +1,9 @@
 ---
-title: TDN_VERIFICATION_CLICKED código de notificação (commctrl. h)
-description: Enviado por um diálogo de tarefa quando o usuário clica na caixa de seleção de verificação da tarefa. Esse código de notificação é recebido somente por meio da função de retorno de chamada da caixa de diálogo de tarefa, que pode ser registrada usando o método TaskDialogIndirect.
+title: TDN_VERIFICATION_CLICKED de notificação (Commctrl.h)
+description: Enviado por uma caixa de diálogo de tarefa quando o usuário clica na caixa de seleção de verificação da caixa de diálogo de tarefa. Esse código de notificação é recebido somente por meio da função de retorno de chamada da caixa de diálogo de tarefa, que pode ser registrada usando o método TaskDialogIndirect.
 ms.assetid: cd7bc07a-9a70-4361-abfa-986a5a2e13e0
 keywords:
-- TDN_VERIFICATION_CLICKED de código de notificação controles do Windows
+- TDN_VERIFICATION_CLICKED código de notificação Windows Controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7887a4d696f5294ebffc6fc6cc7183ff2c0aed8d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 642d247e95e77c797a5dbd8c2c5ecaf4c9b083261ea848479395f8bb22fa325d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103919158"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118166639"
 ---
-# <a name="tdn_verification_clicked-notification-code"></a>A \_ verificação de TDN \_ clicou no código de notificação
+# <a name="tdn_verification_clicked-notification-code"></a>Código de notificação CLICADO EM VERIFICAÇÃO DE TDN \_ \_
 
-Enviado por um diálogo de tarefa quando o usuário clica na caixa de seleção de verificação da tarefa. Esse código de notificação é recebido somente por meio da função de retorno de chamada da caixa de diálogo de tarefa, que pode ser registrada usando o método [**TaskDialogIndirect**](/windows/desktop/api/Commctrl/nf-commctrl-taskdialogindirect) .
+Enviado por uma caixa de diálogo de tarefa quando o usuário clica na caixa de seleção de verificação da caixa de diálogo de tarefa. Esse código de notificação é recebido somente por meio da função de retorno de chamada da caixa de diálogo de tarefa, que pode ser registrada usando o [**método TaskDialogIndirect.**](/windows/desktop/api/Commctrl/nf-commctrl-taskdialogindirect)
 
 
 ```C++
@@ -42,7 +42,7 @@ TDN_VERIFICATION_CLICKED
 *wParam* 
 </dt> <dd>
 
-Um **bool** que especifica o status da caixa de seleção de verificação. Será **true** se a caixa de seleção de verificação estiver marcada ou **false** se estiver desmarcada.
+Um **BOOL** que especifica o status da caixa de seleção de verificação. Será **TRUE se** a caixa de seleção de verificação estiver marcada ou **FALSE** se ela estiver desmarcada.
 
 </dd> <dt>
 
@@ -53,7 +53,7 @@ Deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno é ignorado.
 
@@ -63,9 +63,9 @@ O valor de retorno é ignorado.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

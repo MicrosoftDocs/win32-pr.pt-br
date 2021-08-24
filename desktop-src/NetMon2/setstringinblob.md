@@ -1,7 +1,7 @@
 ---
 description: Define uma cadeia de caracteres em um determinado local dentro de um BLOB.
 ms.assetid: 645e6b8b-aaaf-429f-ad2f-bf4364ef4e80
-title: Função SetStringInBlob (Netmon. h)
+title: Função SetStringInBlob (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: 37278b9111818957e6d5fb3032f1bf33ad3a6ec3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 293aabf86769a8cfa678df79a04b5158b9c1d19c80d660b144c4a33cbf32c56f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164619"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118363675"
 ---
 # <a name="setstringinblob-function"></a>Função SetStringInBlob
 
-A função **SetStringInBlob** define uma cadeia de caracteres em um determinado local dentro de um blob.
+A **função SetStringInBlob** define uma cadeia de caracteres em um determinado local dentro de um BLOB.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,48 +43,48 @@ DWORD SetStringInBlob(
 
 <dl> <dt>
 
-*hBlob* \[ no\]
+*hBlob* \[ Em\]
 </dt> <dd>
 
-Um identificador para o BLOB.
+Um alça para o BLOB.
 
 </dd> <dt>
 
-*pOwnerName* \[ no\]
+*pOwnerName* \[ Em\]
 </dt> <dd>
 
-Um ponteiro para a seção de **proprietário** do blob, em que a cadeia de caracteres é definida.
+Um ponteiro para a **seção Proprietário** do BLOB, em que a cadeia de caracteres está definida.
 
 </dd> <dt>
 
-*pCategoryName* \[ no\]
+*pCategoryName* \[ Em\]
 </dt> <dd>
 
-Um ponteiro para a seção de **categoria** do blob, em que a cadeia de caracteres é definida.
+Um ponteiro para a **seção Categoria** do BLOB, em que a cadeia de caracteres está definida.
 
 </dd> <dt>
 
-*pTagName* \[ no\]
+*pTagName* \[ Em\]
 </dt> <dd>
 
-Um ponteiro para a **marca** da cadeia de caracteres solicitada.
+Um ponteiro para a **Marca da** cadeia de caracteres solicitada.
 
 </dd> <dt>
 
-*pString* \[ no\]
+*pString* \[ Em\]
 </dt> <dd>
 
 Um ponteiro para a variável em que um ponteiro para a cadeia de caracteres será retornado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se a função for bem-sucedida, o valor de retorno será NMERR com \_ êxito.
+Se a função for bem-sucedida, o valor de retorno será NMERR \_ SUCCESS.
 
 Se a função não for bem-sucedida, o valor de retorno será um valor NMERR que indica o problema.
 
-Se as informações de **proprietário**, **categoria** ou **marca** especificadas não existirem, o valor de retorno será \_ NMERR \_ blob \_ \_ \_ inexistente.
+Se as informações **de Proprietário,** **Categoria** ou Marca especificadas não existirem, o valor de retorno será NMERR  \_ BLOB ENTRY NÃO \_ \_ \_ \_ EXISTE.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -94,8 +94,8 @@ Se as informações de **proprietário**, **categoria** ou **marca** especificad
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                    |
-| Cabeçalho<br/>                   | <dl> <dt>Netmon. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Npptools. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Netmon.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Npptools.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Npptools.dll</dt> </dl> |
 
 

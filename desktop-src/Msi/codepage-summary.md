@@ -4,12 +4,12 @@ ms.assetid: eea6cb12-7ec9-4ea4-b2b2-9c812dc4b4d9
 title: Propriedade de resumo da página de código
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 08b83b60bb6aaabadb2ee0dcd201000ea32eccef
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 01f9f33a0ba1a6423fc91a8cf5ae1ec7988ec537b5b20071ddb7534ad0655cc9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750621"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118145585"
 ---
 # <a name="codepage-summary-property"></a>Propriedade de resumo da página de código
 
@@ -21,7 +21,7 @@ A propriedade de **Resumo CodePage** é o valor numérico da página de código 
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou no Windows Vista. Windows Installer no Windows Server 2003 ou no Windows XP<br/> |
+| Versão<br/> | Windows instalador 5,0 em Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou Windows Vista. Windows instalador no Windows Server 2003 ou Windows XP<br/> |
 
 
 

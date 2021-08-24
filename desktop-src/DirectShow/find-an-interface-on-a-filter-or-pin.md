@@ -4,18 +4,18 @@ ms.assetid: 546f5b7d-3bcd-4e97-a012-daca6ae7bca1
 title: Localizar uma interface em um filtro ou PIN
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9d264a35e0c33ba53f6a8df7f69113f3358a9737
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 17314f7e44e4b2c4f412dd0d152e038203268c29d585cd684ddde9eb34992a2e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104163694"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117819558"
 ---
 # <a name="find-an-interface-on-a-filter-or-pin"></a>Localizar uma interface em um filtro ou PIN
 
-Para muitas operações no DirectShow, o aplicativo chama métodos no Gerenciador do grafo de filtro. Em algumas situações, no entanto, o aplicativo deve chamar um método diretamente em um filtro ou PIN. Por exemplo, muitos filtros expõem interfaces especializadas que são usadas para configurar o filtro.
+para muitas operações no DirectShow, o aplicativo chama métodos no gerenciador de Graph de filtro. Em algumas situações, no entanto, o aplicativo deve chamar um método diretamente em um filtro ou PIN. Por exemplo, muitos filtros expõem interfaces especializadas que são usadas para configurar o filtro.
 
-No caso de uma interface de filtro, talvez você já tenha um ponteiro para a interface [**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter) do filtro. Nesse caso, basta usar **QueryInterface** para obter a outra interface. Mas alguns filtros podem ser adicionados ao grafo pelo Gerenciador do grafo de filtro. (Para obter detalhes, consulte [conexão inteligente](intelligent-connect.md).) Nesse caso, use a interface [**IEnumFilters**](/windows/desktop/api/Strmif/nn-strmif-ienumfilters) para executar um loop por todos os filtros no grafo e consulte cada um deles por vez. A função a seguir demonstra isso:
+No caso de uma interface de filtro, talvez você já tenha um ponteiro para a interface [**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter) do filtro. Nesse caso, basta usar **QueryInterface** para obter a outra interface. mas alguns filtros podem ser adicionados ao grafo pelo filtro Graph Manager. (para obter detalhes, consulte [Conexão inteligentes](intelligent-connect.md).) Nesse caso, use a interface [**IEnumFilters**](/windows/desktop/api/Strmif/nn-strmif-ienumfilters) para executar um loop por todos os filtros no grafo e consulte cada um deles por vez. A função a seguir demonstra isso:
 
 
 ```C++

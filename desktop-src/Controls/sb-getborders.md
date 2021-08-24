@@ -3,7 +3,7 @@ title: Mensagem de SB_GETBORDERS (commctrl. h)
 description: Recupera as larguras atuais das bordas horizontais e verticais de uma janela de status.
 ms.assetid: 120c1e0d-6f42-424e-94e0-a080d216d39d
 keywords:
-- Controles de SB_GETBORDERS de mensagens do Windows
+- controles de Windows de mensagem de SB_GETBORDERS
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 854df2cd367a852a2e6a0e638b470187efabe58c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dafa7a8c27b5c274a981e43edc5c55ec0cade67cac08a1d09a898916d792795c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086023"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118169049"
 ---
 # <a name="sb_getborders-message"></a>Mensagem da SB \_ GETborders
 
@@ -39,7 +39,7 @@ Ponteiro para uma matriz de inteiros que tem três elementos. O primeiro element
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna **verdadeiro** se for bem-sucedido ou **false** caso contrário.
 
@@ -53,9 +53,9 @@ As bordas determinam o espaçamento entre a borda externa da janela e os retâng
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

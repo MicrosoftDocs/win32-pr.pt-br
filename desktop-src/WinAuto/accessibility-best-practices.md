@@ -141,17 +141,17 @@ Elementos sem texto abrangem uma ampla variedade de elementos da interface do us
 
 ### <a name="use-color-but-also-provide-alternatives-to-color"></a>Usar cor, mas também fornecer alternativas à cor
 
-Use a cor para aprimorar, enfatizar ou reter informações mostradas por outros meios, mas não comunicar informações usando apenas cores. Os usuários que têm cores cegas ou têm um monitor monocromático precisam de alternativas para cores.
+Use a cor para aprimorar, enfatizar ou reter informações mostradas por outros meios, mas não comunicar informações usando apenas cores. Os usuários que não têm cor ou têm uma exibição monocromática precisam de alternativas para cores.
 
-### <a name="use-standard-input-apis-with-device-independent-calls"></a>Usar APIs de entrada padrão com chamadas de Device-Independent
+### <a name="use-standard-input-apis-with-device-independent-calls"></a>Usar APIs de Entrada Padrão com Device-Independent Chamadas
 
-As chamadas independentes de dispositivo garantem que todos os dispositivos de entrada sejam tratados igualmente, ao mesmo tempo em que fornecem produtos de tecnologia assistencial com as informações necessárias sobre a interface do usuário.
+As chamadas independentes de dispositivo garantem que todos os dispositivos de entrada sejam tratados igualmente, fornecendo aos produtos de tecnologia adaptativa as informações necessárias sobre a interface do usuário.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Windows Visão geral da API de automação](windows-automation-api-overview.md)
+[Windows Visão geral da API de Automação](windows-automation-api-overview.md)
 </dt> </dl>
 
  

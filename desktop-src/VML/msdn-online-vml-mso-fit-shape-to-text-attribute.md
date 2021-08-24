@@ -1,6 +1,6 @@
 ---
-title: Atributo MSO-Fit-Shape-to-Text do VML
-description: Atributo MSO-Fit-Shape-to-Text do VML
+title: Atributo VML MSO-Fit-Shape-to-Text
+description: Atributo VML MSO-Fit-Shape-to-Text
 ms.assetid: 32618276-7b2d-401b-a3f9-a19d53b2cccc
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,16 +11,16 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118346314"
 ---
-# <a name="vml-mso-fit-shape-to-text-attribute"></a>Atributo MSO-Fit-Shape-to-Text do VML
+# <a name="vml-mso-fit-shape-to-text-attribute"></a>Atributo VML MSO-Fit-Shape-to-Text
 
-Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). para obter informações, recomendações e orientações sobre a versão atual do Windows Internet explorer, consulte [internet explorer developer Center](https://msdn.microsoft.com/ie/).
 
  
 
-Define se a forma será alongada para se ajustar ao texto na caixa de texto. Leitura/gravação. **VgTriState.**
+Define se a forma será alongada para ajustar o texto na caixa de texto. Leitura/gravação. **VgTriState**.
 
 **Aplica-se a**
 
@@ -28,13 +28,13 @@ Define se a forma será alongada para se ajustar ao texto na caixa de texto. Lei
 
 **Sintaxe de marca**
 
-<v: *element* style="mso-fit-shape-to-text: expression ">
+<v: *elemento* Style = "mso-ajuste-forma-a-texto: expressão" >
 
 **Comentários**
 
-Se **True**, a forma será alongada para se ajustar ao texto. O padrão é **False**.
+Se **for true**, a forma será ampliada para se ajustar ao texto. O padrão é **False**.
 
-*Microsoft Office Atributo Extensions*
+*Microsoft Office Atributo de extensões*
 
  
 

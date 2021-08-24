@@ -1,6 +1,6 @@
 ---
-title: APIs de cliente do DVC
-description: As APIs de cliente de canal virtual dinâmico (DVC) são implementadas especificamente para o cliente de Conexão de Área de Trabalho Remota (RDC) da conexão.
+title: APIs de cliente DVC
+description: As APIs de cliente DVC (canal virtual dinâmico) são implementadas especificamente para o cliente RDC (Conexão de Área de Trabalho Remota) da conexão.
 ms.assetid: 976a6cc2-7bbe-4ecc-91b4-b7c659eca5ba
 ms.tgt_platform: multiple
 ms.topic: article
@@ -12,9 +12,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118130812"
 ---
-# <a name="dvc-client-apis"></a>APIs de cliente do DVC
+# <a name="dvc-client-apis"></a>APIs de cliente DVC
 
-As APIs de cliente de canal virtual dinâmico (DVC) são implementadas especificamente para o cliente de Conexão de Área de Trabalho Remota (RDC) da conexão. Algumas das APIs são implementadas pela estrutura DVC e algumas são implementadas pelo desenvolvedor de plug-ins. Algumas das APIs são usadas para dar suporte ao plug-in de cliente Conexão de Área de Trabalho Remota (RDC) e não estão diretamente relacionadas ao transporte de dados.
+As APIs de cliente DVC (canal virtual dinâmico) são implementadas especificamente para o cliente RDC (Conexão de Área de Trabalho Remota) da conexão. Algumas das APIs são implementadas pela estrutura DVC e outras são implementadas pelo desenvolvedor de plug-in. Algumas das APIs são usadas para dar suporte ao plug-in de cliente RDC (Conexão de Área de Trabalho Remota) e não estão diretamente relacionadas ao transporte de dados.
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -23,42 +23,42 @@ As APIs de cliente de canal virtual dinâmico (DVC) são implementadas especific
 [**IWTSPlugin**](/windows/desktop/api/TsVirtualChannels/nn-tsvirtualchannels-iwtsplugin)
 </dt> <dd>
 
-Permite que o plug-in do cliente Conexão de Área de Trabalho Remota (RDC) seja carregado pelo cliente Conexão de Área de Trabalho Remota (RDC).
+Permite que o plug-in Conexão de Área de Trabalho Remota (RDC) seja carregado pelo cliente RDC (Conexão de Área de Trabalho Remota).
 
 </dd> <dt>
 
 [**IWTSListener**](/windows/desktop/api/TsVirtualChannels/nn-tsvirtualchannels-iwtslistener)
 </dt> <dd>
 
-Gerencia definições de configuração para cada ouvinte para a conexão de canal virtual dinâmico (DVC).
+Gerencia as definições de configuração para cada ouvinte para a conexão DVC (canal virtual dinâmico).
 
 </dd> <dt>
 
 [**IWTSListenerCallback**](/windows/desktop/api/TsVirtualChannels/nn-tsvirtualchannels-iwtslistenercallback)
 </dt> <dd>
 
-Usado para notificar o plug-in do cliente Conexão de Área de Trabalho Remota (RDC) sobre solicitações de entrada em um ouvinte específico.
+Usado para notificar o plug-in do cliente RDC (Conexão de Área de Trabalho Remota) sobre solicitações de entrada em um ouvinte específico.
 
 </dd> <dt>
 
 [**IWTSVirtualChannelManager**](/windows/desktop/api/TsVirtualChannels/nn-tsvirtualchannels-iwtsvirtualchannelmanager)
 </dt> <dd>
 
-Gerencia todos os plug-ins de cliente Conexão de Área de Trabalho Remota (RDC) e ouvintes de canal virtual dinâmico (DVC).
+Gerencia todos os plug-ins de cliente RDC (Conexão de Área de Trabalho Remota) e ouvintes DVC (canal virtual dinâmico).
 
 </dd> <dt>
 
 [**IWTSVirtualChannel**](/windows/desktop/api/TsVirtualChannels/nn-tsvirtualchannels-iwtsvirtualchannel)
 </dt> <dd>
 
-Usado para controlar o estado do canal e grava no canal.
+Usado para controlar o estado do canal e gravações no canal.
 
 </dd> <dt>
 
 [**IWTSVirtualChannelCallback**](/windows/desktop/api/TsVirtualChannels/nn-tsvirtualchannels-iwtsvirtualchannelcallback)
 </dt> <dd>
 
-Recebe notificações sobre alterações de estado de canal ou dados recebidos.
+Recebe notificações sobre alterações de estado do canal ou dados recebidos.
 
 </dd> <dt>
 
@@ -72,7 +72,7 @@ Não há suporte para essa interface.
 [**VirtualChannelGetInstance**](virtualchannelgetinstance.md)
 </dt> <dd>
 
-Chamado para que o plug-in crie uma instância da interface [**IWTSPlugin**](/windows/desktop/api/TsVirtualChannels/nn-tsvirtualchannels-iwtsplugin) para todos os plug-ins implementados pela dll.
+Chamado para fazer com que o plug-in crie uma instância da interface [**IWTSPlugin**](/windows/desktop/api/TsVirtualChannels/nn-tsvirtualchannels-iwtsplugin) para todos os plug-ins implementados pela DLL.
 
 </dd> </dl>
 

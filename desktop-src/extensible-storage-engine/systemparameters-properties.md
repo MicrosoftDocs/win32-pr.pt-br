@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.syst
 ms:contentKeyID: 55104035
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 12e18b6c045758c8e9fd7ffb91f728c78dcf2e24
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 13b2735f699fe2943dcb63bf262c8c708e61df754ed6799f2fb948119755d2e4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104569199"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117890674"
 ---
 # <a name="systemparameters-properties"></a>Propriedades do SystemParameters
 
@@ -60,7 +60,7 @@ O tipo [SystemParameters](./systemparameters-class.md) expõe os membros a segui
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
 <td><a href="dn351218(v=exchg.10).md">Configuration</a></td>
-<td>Obtém ou define um valor que especifica os valores padrão para o conjunto inteiro de parâmetros do sistema. Quando esse parâmetro é definido como uma configuração específica, todos os valores de parâmetro do sistema são redefinidos para seus valores padrão para essa configuração. Se a configuração for definida para uma instância específica, os parâmetros do sistema global não serão redefinidos para seus valores padrão. Configuração pequena (0): o mecanismo de banco de dados é otimizado para uso de memória. Configuração herdada (1): o mecanismo de banco de dados tem seus padrões tradicionais. Com suporte no Windows Vista e em cima. Ignorado no Windows XP e no Windows Server 2003.</td>
+<td>Obtém ou define um valor que especifica os valores padrão para o conjunto inteiro de parâmetros do sistema. Quando esse parâmetro é definido como uma configuração específica, todos os valores de parâmetro do sistema são redefinidos para seus valores padrão para essa configuração. Se a configuração for definida para uma instância específica, os parâmetros do sistema global não serão redefinidos para seus valores padrão. Configuração pequena (0): o mecanismo de banco de dados é otimizado para uso de memória. Configuração herdada (1): o mecanismo de banco de dados tem seus padrões tradicionais. com suporte no Windows Vista e em cima. ignorado no Windows XP e no Windows Server 2003.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
@@ -70,7 +70,7 @@ O tipo [SystemParameters](./systemparameters-class.md) expõe os membros a segui
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
 <td><a href="dn351221(v=exchg.10).md">EnableAdvanced</a></td>
-<td>Obtém ou define um valor que indica se o mecanismo de banco de dados aceita ou rejeita alterações em um subconjunto dos parâmetros do sistema. Esse parâmetro é usado em conjunto com a <a href="dn351218(v=exchg.10).md">configuração</a> para impedir que alguns parâmetros do sistema sejam definidos fora dos padrões da configuração selecionada. Com suporte no Windows Vista e em cima. Ignorado no Windows XP e no Windows Server 2003.</td>
+<td>Obtém ou define um valor que indica se o mecanismo de banco de dados aceita ou rejeita alterações em um subconjunto dos parâmetros do sistema. Esse parâmetro é usado em conjunto com a <a href="dn351218(v=exchg.10).md">configuração</a> para impedir que alguns parâmetros do sistema sejam definidos fora dos padrões da configuração selecionada. com suporte no Windows Vista e em cima. ignorado no Windows XP e no Windows Server 2003.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>

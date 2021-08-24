@@ -78,7 +78,7 @@ Além do nome, o chamador pode especificar um handle para o arquivo usado para v
 |-------------------------------------|-----------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                        |
 | Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                              |
-| parâmetro<br/>                   | <dl> <dt>Wldp.h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Wldp.h</dt> </dl> |
 
 
 

@@ -81,7 +81,7 @@ Wend
 
 
 
-O exemplo de código VBScript a seguir mostra como monitorar a alteração nos valores de uma chave registrando-se para o tipo de evento do provedor de Registro [**RegistryKeyChangeEvent**](/previous-versions/windows/desktop/regprov/registrykeychangeevent). O script chama um método assíncrono, [**SWbemServices.ExecNotificationQueryAsync**](swbemservices-execnotificationqueryasync.md). Para obter mais informações sobre chamadas assíncronas e segurança, consulte Fazendo uma [chamada assíncrona com o VBScript.](making-an-asynchronous-call-with-vbscript.md)
+O exemplo de código VBScript a seguir mostra como monitorar a alteração nos valores de uma chave registrando-se para o tipo de evento do provedor de Registro [**RegistryKeyChangeEvent**](/previous-versions/windows/desktop/regprov/registrykeychangeevent). O script chama um método assíncrono, [**SWbemServices.ExecNotificationQueryAsync.**](swbemservices-execnotificationqueryasync.md) Para obter mais informações sobre chamadas assíncronas e segurança, consulte Fazendo uma [chamada assíncrona com o VBScript.](making-an-asynchronous-call-with-vbscript.md)
 
 O script a seguir é executado indefinidamente até que o computador seja reinicializado, o WMI seja interrompido ou o script seja interrompido. Para interromper o script manualmente, use Gerenciador de Tarefas para interromper o processo. Para interromper programaticamente, use o [**método Terminate**](/windows/desktop/CIMWin32Prov/terminate-method-in-class-win32-process) na classe Processo Win32. \_
 

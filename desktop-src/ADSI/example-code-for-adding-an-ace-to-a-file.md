@@ -1,10 +1,10 @@
 ---
-title: Código de exemplo para adicionar uma ACE a um arquivo
+title: Exemplo de código para adicionar uma ACE a um arquivo
 description: O exemplo de código a seguir mostra como usar a interface IADsSecurityUtility para adicionar uma ACE a um arquivo.
 ms.assetid: d47d3ebe-cc14-412d-be27-841e25b43c3a
 ms.tgt_platform: multiple
 keywords:
-- Código de exemplo para adicionar uma ACE a um ADSI de arquivo
+- Exemplo de código para adicionar uma ACE a um arquivo ADSI
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: f90c47892a75ea49b8e9b598b4cf07b02c1e22ed378f9a211175c74335199e5f
@@ -14,7 +14,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118428419"
 ---
-# <a name="example-code-for-adding-an-ace-to-a-file"></a>Código de exemplo para adicionar uma ACE a um arquivo
+# <a name="example-code-for-adding-an-ace-to-a-file"></a>Exemplo de código para adicionar uma ACE a um arquivo
 
 O exemplo de código a seguir mostra como usar a interface [**IADsSecurityUtility**](/windows/desktop/api/Iads/nn-iads-iadssecurityutility) para adicionar uma ACE a um arquivo.
 

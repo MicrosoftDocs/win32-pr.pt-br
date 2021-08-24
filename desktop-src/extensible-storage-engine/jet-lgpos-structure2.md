@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e757f71de04e15c77bab141acb0442fc61d5af0c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9984f6fc6e269f89166011cc7159c9dd164ea919a5aa6951a5f4e18c03951eff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105782390"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117894457"
 ---
 # <a name="jet_lgpos-structure"></a>Estrutura de JET_LGPOS
 
@@ -38,7 +38,7 @@ Descreve um deslocamento na sequência de log.
 **Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration

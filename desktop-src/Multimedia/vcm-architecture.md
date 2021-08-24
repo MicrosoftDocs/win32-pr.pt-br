@@ -3,16 +3,16 @@ title: Arquitetura do VCM
 description: Arquitetura do VCM
 ms.assetid: cb0b036d-b8b1-4611-965f-08f932dbddb7
 keywords:
-- Vídeo para Windows (VFW), arquitetura VCM
-- VFW (vídeo para Windows), arquitetura de VCM
+- vídeo para Windows (VFW), arquitetura VCM
+- VFW (vídeo para Windows), arquitetura VCM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 89b672c86053086f63127aae586517fac4906326
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7676fe7786b8674ddca957a75c33336294b65a9df18d53fe4b9c7f493092b66f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292453"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118135594"
 ---
 # <a name="vcm-architecture"></a>Arquitetura do VCM
 
@@ -22,9 +22,9 @@ Quando um aplicativo faz uma chamada para VCM, o VCM converte a chamada em uma m
 
 Se uma macro for definida para uma mensagem, a macro se expandirá para uma chamada de função **ICSendMessage** fornecendo os parâmetros apropriados para essa mensagem. Se uma macro for definida para uma mensagem, seu aplicativo deverá usá-la em vez da mensagem. Nesta visão geral, essas macros seguem mensagens entre parênteses.
 
- 
+ 
 
- 
+ 
 
 
 

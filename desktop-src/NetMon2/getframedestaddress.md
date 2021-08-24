@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: afec32f0e0fc66ccd5a1d78cc9769b0e742f1e6f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d7719392794027567521ce3e9c1bd1caf8ecbf76110f76ad0e54e0dd6549aae4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920702"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118366621"
 ---
 # <a name="getframedestaddress-function"></a>Função GetFrameDestAddress
 
@@ -81,7 +81,7 @@ Os sinalizadores usados para modificar os dados de endereço de destino retornad
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for bem-sucedida, o valor de *lpAddress* será válido e o valor de retorno será BHERR com \_ êxito.
 

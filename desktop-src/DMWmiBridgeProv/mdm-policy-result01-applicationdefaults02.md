@@ -17,16 +17,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 10592ceb4e4f401ce9f64c24ef207a4e2e033e9c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 842a80517234ba0aa2bdfbca5330c9b4b22cd98024651bdd650b2e43d847cae6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085624"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118164806"
 ---
 # <a name="mdm_policy_result01_applicationdefaults02-class"></a>\_Classe MDM \_ Result01 \_ ApplicationDefaults02
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
 A \_ classe MDM Policy \_ Result01 \_ ApplicationDefaults02 representa as políticas de padrões de aplicativo disponíveis.
 
@@ -101,7 +101,7 @@ Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                      |
 | Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                             |
 | MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |

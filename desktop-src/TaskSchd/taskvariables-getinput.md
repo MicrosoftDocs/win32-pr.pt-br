@@ -1,11 +1,11 @@
 ---
-title: Método TaskVariables. getinput
+title: Método TaskVariables.GetInput
 description: Para scripts, obtém as variáveis de entrada para uma tarefa.
 ms.assetid: 6e4cb7a2-5bd9-4384-8b9e-931b70018544
 keywords:
-- Método getinput Agendador de Tarefas
-- Método getinput Agendador de Tarefas, objeto TaskVariables
-- Objeto TaskVariables Agendador de Tarefas, método getinput
+- Método GetInput Agendador de Tarefas
+- Método GetInput Agendador de Tarefas objeto , TaskVariables
+- Objeto TaskVariables Agendador de Tarefas , método GetInput
 topic_type:
 - apiref
 api_name:
@@ -23,7 +23,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118354731"
 ---
-# <a name="taskvariablesgetinput-method"></a>Método TaskVariables. getinput
+# <a name="taskvariablesgetinput-method"></a>Método TaskVariables.GetInput
 
 Para scripts, obtém as variáveis de entrada para uma tarefa. Este método não está implementado.
 
@@ -42,7 +42,7 @@ TaskVariables.GetInput( _
 
 <dl> <dt>
 
-*entrada* \[ do fora\]
+*entrada* \[ out\]
 </dt> <dd>
 
 As variáveis de entrada para uma tarefa.
@@ -59,9 +59,9 @@ Esse método não retorna um valor.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

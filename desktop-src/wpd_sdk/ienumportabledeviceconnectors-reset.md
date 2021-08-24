@@ -60,7 +60,7 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                                                                                                             |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                                                                              |
-| parâmetro<br/>                   | <dl> <dt>Devpkey. h; </dt> <dt>Portabledeviceconnectapi. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Devpkey. h; </dt> <dt>Portabledeviceconnectapi. h</dt> </dl> |
 | INSERI<br/>                      | <dl> <dt>Portabledeviceconnectapi. idl</dt> </dl>                                                                |
 | Biblioteca<br/>                  | <dl> <dt>PortableDeviceGuids. lib</dt> </dl>                                                                     |
 

@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: c381ce3d1bf07c03ff4bdcb687cca239ec715b17
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ba591ab8565390514e8fe6f8f7d5182184d1372b824d5262f87bd9ad4b412035
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750813"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118144184"
 ---
 # <a name="configurableitemattributes-property"></a>Propriedade ConfigurableItem. Attributes
 
@@ -49,7 +49,7 @@ Confira a função [**obter \_ atributos**](/windows/desktop/api/Mergemod/nf-mer
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
 | Versão<br/> | Mergemod.dll 2,0 ou posterior<br/>                                                    |
-| parâmetro<br/>  | <dl> <dt>Mergemod. h</dt> </dl>   |
+| Cabeçalho<br/>  | <dl> <dt>Mergemod. h</dt> </dl>   |
 | DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

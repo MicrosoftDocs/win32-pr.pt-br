@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: classe EsentTooManySortsException'
+description: 'Saiba mais sobre: Classe EsentTooManySortsException'
 title: Classe EsentTooManySortsException
 TOCTitle: EsentTooManySortsException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentTooManySortsException
@@ -24,32 +24,32 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b9048d2c7c65906ba6f093f21c604f25adfcf16c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a822b9a40a1aff4ff4284b62c0d889ae5d2e83916fd20ac73c84237cb9a7e7b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296537"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118488150"
 ---
 # <a name="esenttoomanysortsexception-class"></a>Classe EsentTooManySortsException
 
-Classe base para JET_err. TooManySorts exceções.
+Classe base para JET_err. Exceções TooManySorts.
 
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. ESENT. EsentException](./esentexception-class.md)  
-      [Microsoft. ISAM. ESENT. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft. ISAM. ESENT. Interop. EsentOperationException](./esentoperationexception-class.md)  
-          [Microsoft. ISAM. ESENT. Interop. EsentResourceException](./esentresourceexception-class.md)  
-            [Microsoft. ISAM. ESENT. Interop. EsentMemoryException](./esentmemoryexception-class.md)  
-              Microsoft. ISAM. ESENT. Interop. EsentTooManySortsException  
+  [System.Exception](/dotnet/api/system.exception)  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentOperationException](./esentoperationexception-class.md)  
+          [Microsoft.Isam.Esent.Interop.EsentResourceException](./esentresourceexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentMemoryException](./esentmemoryexception-class.md)  
+              Microsoft.Isam.Esent.Interop.EsentTooManySortsException  
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -73,6 +73,6 @@ Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro
 
 #### <a name="reference"></a>Referência
 
-[Membros do EsentTooManySortsException](./esenttoomanysortsexception-members.md)
+[Membros EsentTooManySortsException](./esenttoomanysortsexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

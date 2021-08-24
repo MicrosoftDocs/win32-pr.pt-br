@@ -1,9 +1,9 @@
 ---
-title: Função de tipo Point2 (D2d1helper. h)
+title: Função de tipo Point2 (D2d1helper.h)
 description: Cria um ponto que armazena suas coordenadas usando o tipo de dados especificado.
 ms.assetid: 59a631ae-d70e-4ee2-9546-2d19da40aa9b
 keywords:
-- Função de tipo point2 Direct2D
+- Função de tipo Point2 Direct2D
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f614f49077ed198c5e85d17b9ee3c84a5e300670
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d925cc5676e6f0c9a8fb27a3ba2a12591ee87a5a72d5937e365fa57179e47ce1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105751289"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118160372"
 ---
-# <a name="point2type-function"></a><Type>Função point2
+# <a name="point2type-function"></a>Função <Type> Point2
 
 Cria um ponto que armazena suas coordenadas usando o tipo de dados especificado.
 
@@ -60,7 +60,7 @@ typename TypeTraits<Type>::Point Point2(
 
 ## <a name="return-value"></a>Valor Retornado
 
-Um ponto que contém a coordenada x e a coordenada y especificados.
+Um ponto que contém a coordenada x e a coordenada y especificadas.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,11 +68,11 @@ Um ponto que contém a coordenada x e a coordenada y especificados.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 7, Windows Vista com SP2 e atualização de plataforma para aplicativos UWP do Windows Vista \[ Desktop apps \|\]<br/>                          |
-| Servidor mínimo com suporte<br/> | Windows Server 2008 R2, Windows Server 2008 com SP2 e atualização de plataforma para aplicativos de aplicativos de desktop do Windows Server 2008 \[ \| UWP\]<br/> |
-| Número mínimo de telefone com suporte<br/>  | Windows Phone 8,1 \[ Windows Phone Silverlight 8,1 e aplicativos de Windows Runtime\]<br/>                                                  |
-| parâmetro<br/>                   | <dl> <dt>D2d1helper. h</dt> </dl>                                                  |
-| Biblioteca<br/>                  | <dl> <dt>D2d1. lib</dt> </dl>                                                      |
+| Cliente mínimo com suporte<br/> | Windows 7, Windows Vista com SP2 e Atualização de Plataforma para Windows aplicativos \[ UWP da área de trabalho do Vista \|\]<br/>                          |
+| Servidor mínimo com suporte<br/> | Windows Server 2008 R2, Windows Server 2008 com SP2 e Atualização de Plataforma para aplicativos \[ UWP do Windows Server 2008 \|\]<br/> |
+| Telefone mínimo com suporte<br/>  | Windows Phone 8.1 \[ Windows Phone Silverlight 8.1 e Windows runtime\]<br/>                                                  |
+| Cabeçalho<br/>                   | <dl> <dt>D2d1helper.h</dt> </dl>                                                  |
+| Biblioteca<br/>                  | <dl> <dt>D2d1.lib</dt> </dl>                                                      |
 | DLL<br/>                      | <dl> <dt>D2d1.dll</dt> </dl>                                                      |
 
 

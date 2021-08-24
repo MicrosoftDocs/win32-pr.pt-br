@@ -33,8 +33,8 @@ ms.locfileid: "118487966"
 ---
 # <a name="floatcolumnvalue-constructor"></a>Construtor FloatColumnValue
 
-**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -56,6 +56,6 @@ public FloatColumnValue()
 
 [Classe FloatColumnValue](./floatcolumnvalue-class.md)
 
-[Membros FloatColumnValue](./floatcolumnvalue-members.md)
+[Membros do FloatColumnValue](./floatcolumnvalue-members.md)
 
-[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)

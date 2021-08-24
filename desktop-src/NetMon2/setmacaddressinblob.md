@@ -1,7 +1,7 @@
 ---
 description: A função SetMacAddressInBlob define o endereço MAC solicitado de um BLOB.
 ms.assetid: f44d0cec-ced7-4d2a-a58e-aeb476bfe800
-title: Função SetMacAddressInBlob (Netmon. h)
+title: Função SetMacAddressInBlob (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: 2183f5635dcdb15362a86a77ae2b3c109c71dbd5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 20ed4a0358bc0aecada66858f9814bce94252ff9d705c971be947ca5af788ab3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829179"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118364054"
 ---
 # <a name="setmacaddressinblob-function"></a>Função SetMacAddressInBlob
 
-A função **SetMacAddressInBlob** define o endereço MAC solicitado de um blob.
+A **função SetMacAddressInBlob** define o endereço MAC solicitado de um BLOB.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,44 +43,44 @@ DWORD SetMacAddressInBlob(
 
 <dl> <dt>
 
-*hBlob* \[ no\]
+*hBlob* \[ Em\]
 </dt> <dd>
 
-Identificador para o BLOB que está sendo definido.
+Lidar com o BLOB que está sendo definido.
 
 </dd> <dt>
 
-*pOwnerName* \[ no\]
+*pOwnerName* \[ Em\]
 </dt> <dd>
 
-Ponteiro para o nome do **proprietário** do blob que está sendo definido.
+Ponteiro para o nome do **Proprietário do** BLOB que está sendo definido.
 
 </dd> <dt>
 
-*pCategoryName* \[ no\]
+*pCategoryName* \[ Em\]
 </dt> <dd>
 
-Ponteiro para o nome da **categoria** de BLOB que está sendo definido.
+Ponteiro para o nome da **Categoria** BLOB que está sendo definido.
 
 </dd> <dt>
 
-*pTagName* \[ no\]
+*pTagName* \[ Em\]
 </dt> <dd>
 
-Ponteiro para o nome da **marca** de BLOB que está sendo definido.
+Ponteiro para o nome da **marca** BLOB que está sendo definido.
 
 </dd> <dt>
 
-*pMacAddress* \[ no\]
+*pMacAddress* \[ Em\]
 </dt> <dd>
 
 Ponteiro para o endereço MAC do BLOB que está sendo definido.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se a função for bem-sucedida, o valor de retorno será NMERR com \_ êxito.
+Se a função for bem-sucedida, o valor de retorno será NMERR \_ SUCCESS.
 
 Se a função não for bem-sucedida, o valor de retorno será um valor NMERR que indica o erro.
 
@@ -92,8 +92,8 @@ Se a função não for bem-sucedida, o valor de retorno será um valor NMERR que
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                    |
-| Cabeçalho<br/>                   | <dl> <dt>Netmon. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Npptools. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Netmon.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Npptools.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Npptools.dll</dt> </dl> |
 
 

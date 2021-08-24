@@ -3,7 +3,7 @@ title: Mensagem de TB_SETBITMAPSIZE (commctrl. h)
 description: Define o tamanho das imagens de bitmap a serem adicionadas a uma barra de ferramentas.
 ms.assetid: 20b99cd8-6ef1-4037-92d2-c64a1003b5fe
 keywords:
-- Controles de TB_SETBITMAPSIZE de mensagens do Windows
+- controles de Windows de mensagem de TB_SETBITMAPSIZE
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d9c8a717151041fb83b7a0206acf570a6ad7f76
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: db2a26dacd63c00d1dd793163facce0ab4a45302e85dde11522f8844977eb0ff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454620"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118167969"
 ---
 # <a name="tb_setbitmapsize-message"></a>TB de \_ mensagem SETBITMAPSIZE
 
@@ -43,7 +43,7 @@ O [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) espe
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna **verdadeiro** se for bem-sucedido ou **false** caso contrário.
 
@@ -57,9 +57,9 @@ O tamanho pode ser definido somente antes de adicionar qualquer bitmap à barra 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

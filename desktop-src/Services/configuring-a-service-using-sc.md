@@ -1,19 +1,19 @@
 ---
-description: 'O SDK do Windows contém um utilitário de linha de comando, Sc.exe, que pode ser usado para consultar ou modificar o banco de dados dos serviços instalados. Seus comandos correspondem às funções fornecidas pelo SCM. A sintaxe é a seguinte:'
+description: 'o SDK do Windows contém um utilitário de linha de comando, Sc.exe, que pode ser usado para consultar ou modificar o banco de dados dos serviços instalados. Seus comandos correspondem às funções fornecidas pelo SCM. A sintaxe é a seguinte:'
 ms.assetid: d304922c-86fb-4c62-9bfa-c827df4aecd8
 title: Configurando um serviço usando SC
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f65669a3a7daa7e0d02731e6423adfbb3806f11
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 976eb5fb8e9a462e4d1de38413593343dd1d8624985593f6ecb9c691ae9670da
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105756370"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117968223"
 ---
 # <a name="configuring-a-service-using-sc"></a>Configurando um serviço usando SC
 
-O SDK do Windows contém um utilitário de linha de comando, Sc.exe, que pode ser usado para consultar ou modificar o banco de dados dos serviços instalados. Seus comandos correspondem às funções fornecidas pelo SCM. A sintaxe é a seguinte:
+o SDK do Windows contém um utilitário de linha de comando, Sc.exe, que pode ser usado para consultar ou modificar o banco de dados dos serviços instalados. Seus comandos correspondem às funções fornecidas pelo SCM. A sintaxe é a seguinte:
 
 ## <a name="syntax"></a>Syntax
 
@@ -66,7 +66,7 @@ Para ver a sintaxe completa de um comando, use o seguinte comando:
 
 <dl> <dt>
 
-[Configuração do serviço](service-configuration.md)
+[Configuração de serviço](service-configuration.md)
 </dt> <dt>
 
 [Instalação, remoção e enumeração de serviço](service-installation-removal-and-enumeration.md)

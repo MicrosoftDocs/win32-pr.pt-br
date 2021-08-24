@@ -349,7 +349,7 @@ Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsys
 
 </dd> <dt>
 
-**Terminalname**
+**TerminalName**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -360,15 +360,15 @@ Tipo de acesso: Somente leitura
 
 O nome do terminal.
 
-Esta propriedade é herdada do [**Win32 \_ TerminalSetting**](win32-terminalsetting.md).
+Essa propriedade é herdada de [**\_ TerminalSetting do Win32.**](win32-terminalsetting.md)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Lembre-se de que o WinStations associado à sessão de console não pode acessar os métodos e as propriedades dessa classe. Se for feita uma tentativa de fazer isso especificando "console" como o valor da propriedade Terminalname, os métodos desse objeto retornam **WBEM \_ E \_ sem \_ suporte**. Esse código de erro também será retornado se uma estação de janela tentar chamar métodos desse objeto para adicionar ou modificar as propriedades de segurança das contas LocalSystem, LocalService ou NetworkService.
+Esteja ciente de que as winstations associadas à sessão de console não podem acessar os métodos e as propriedades dessa classe. Se for feita uma tentativa de fazer isso especificando "Console" como o valor da propriedade TerminalName, os métodos desse objeto retornarão **WBEM \_ E \_ NOT \_ SUPPORTED**. Esse código de erro também será retornado se uma estação de janela tentar chamar métodos desse objeto para adicionar ou modificar as propriedades de segurança das contas LocalSystem, LocalService ou NetworkService.
 
-Para se conectar ao namespace " \\ \\ terminal cimv2" raiz, o nível de autenticação deve incluir a privacidade do pacote. Para chamadas C/C++, esse é um nível de autenticação **da \_ \_ privacidade do \_ PCT no \_ nível \_ do autenticação RPC C**. para chamadas de script e de Visual Basic, esse é um nível de autenticação de **WbemAuthenticationLevelPktPrivacy** ou "pktPrivacy", com um valor de 6. o exemplo a seguir Visual Basic scripting Edition (VBScript) mostra como se conectar a um computador remoto com privacidade de pacote.
+Para se conectar ao namespace "Root \\ CIMV2 \\ TerminalServices", o nível de autenticação deve incluir a privacidade do pacote. Para chamadas C/C++, esse é um nível de autenticação de **RPC \_ C \_ AUTHN \_ LEVEL \_ PKT \_ PRIVACY**. Para Visual Basic e scripts, esse é um nível de autenticação de **WbemAuthenticationLevelPktPrivacy** ou "pktPrivacy", com um valor de 6. O exemplo Visual Basic VBScript (Scripting Edition) a seguir mostra como se conectar a um computador remoto com privacidade de pacote.
 
 
 ```VB
@@ -379,7 +379,7 @@ Set objServices = GetObject( _
 
 
 
-os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). os arquivos MOF não são instalados como parte do SDK (Software Development Kit) do Microsoft Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+arquivos Managed Object Format (MOF) contêm as definições para classes WMI (Instrumentação de Gerenciamento de Windows). Os arquivos MOF não são instalados como parte do Microsoft Windows Software Development Kit (SDK). Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, [consulte Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -389,8 +389,8 @@ os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | \\TerminalServices da CIMv2 raiz \\<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| Namespace<br/>                | \\CiMv2 \\ TerminalServices raiz<br/>                                                |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
@@ -399,16 +399,16 @@ os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 
 <dl> <dt>
 
-[**\_Adaptador Win32**](/windows/desktop/CIMWin32Prov/win32-networkadapter)
+[**Win32 \_ NetworkAdapter**](/windows/desktop/CIMWin32Prov/win32-networkadapter)
 </dt> <dt>
 
-[**\_NetworkAdapterConfiguration Win32**](/windows/desktop/CIMWin32Prov/win32-networkadapterconfiguration)
+[**Win32 \_ NetworkAdapterConfiguration**](/windows/desktop/CIMWin32Prov/win32-networkadapterconfiguration)
 </dt> <dt>
 
-[**\_TerminalSetting Win32**](win32-terminalsetting.md)
+[**Win32 \_ TerminalSetting**](win32-terminalsetting.md)
 </dt> <dt>
 
-[**\_TSNetworkAdapterListSetting Win32**](win32-tsnetworkadapterlistsetting.md)
+[**Win32 \_ TSNetworkAdapterListSetting**](win32-tsnetworkadapterlistsetting.md)
 </dt> </dl>
 
  

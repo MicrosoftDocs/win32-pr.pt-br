@@ -3,23 +3,23 @@ title: CBEM_SETCOMBOFOCUS mensagem
 description: Define o foco na caixa de combinação especificada.
 ms.assetid: 156cc6ac-2cc6-457f-b57a-55372eb9fadb
 keywords:
-- Controles de CBEM_SETCOMBOFOCUS de mensagens do Windows
+- CBEM_SETCOMBOFOCUS controles de Windows mensagem
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1c908228d53c5b64842a3626d06e1fd69373eecb
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 405869c4c508e361cd79cbbe296dc2ea3c351abc8c0f12f9b8b22fd42f4b5851
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103638348"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118414103"
 ---
-# <a name="cbem_setcombofocus-message"></a>\_Mensagem CBEM SETCOMBOFOCUS
+# <a name="cbem_setcombofocus-message"></a>Mensagem CBEM \_ SETCOMBOFOCUS
 
-Esta mensagem não está implementada.
+Essa mensagem não está implementada.
 
- 
+ 
 
- 
+ 
 
 
 

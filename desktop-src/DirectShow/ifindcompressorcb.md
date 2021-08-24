@@ -30,13 +30,13 @@ A interface do `IFindCompressorCB` não tem suporte.
 
 ## <a name="members"></a>Membros
 
-A interface **IFindCompressorCB** herda da interface [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) , mas não tem membros adicionais.
+A interface **IFindCompressorCB** herda da interface [**IUnknown,**](/windows/win32/api/unknwn/nn-unknwn-iunknown) mas não tem membros adicionais.
 
 ## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[DirectShow Referência de serviços de edição C++](directshow-editing-services-c---reference.md)
+[DirectShow Referência do C++ dos Serviços de Edição](directshow-editing-services-c---reference.md)
 </dt> </dl>
 
  

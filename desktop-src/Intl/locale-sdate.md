@@ -1,5 +1,5 @@
 ---
-description: LOCALE \_ SDATE
+description: SDATE de localidade \_
 ms.assetid: 18b62bee-b167-4499-aae4-21e215cb6377
 title: LOCALE_SDATE
 ms.topic: article
@@ -11,11 +11,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118391532"
 ---
-# <a name="locale_sdate"></a>LOCALE \_ SDATE
+# <a name="locale_sdate"></a>SDATE de localidade \_
 
-Caracteres para o separador de data. O número máximo de caracteres permitidos para essa cadeia de caracteres é quatro, incluindo um caractere nulo de terminação.
+Caractere (s) para o separador de data. O número máximo de caracteres permitido para essa cadeia de caracteres é quatro, incluindo um caractere nulo de terminação.
 
-**Windows Vista e posterior:** Essa constante foi preterida. Em vez disso, use [LOCALE \_ SSHORTDATE.](locale-sshortdate.md) Uma localidade personalizada pode não ter um único caractere separador uniforme. Por exemplo, um formato como "31/12, 2006" é válido.
+**Windows Vista e posterior:** Essa constante foi preterida. Em vez disso, use a [localidade \_ SSHORTDATE](locale-sshortdate.md) . Uma localidade personalizada pode não ter um único caractere separador uniforme. Por exemplo, um formato como "12/31, 2006" é válido.
 
  
 

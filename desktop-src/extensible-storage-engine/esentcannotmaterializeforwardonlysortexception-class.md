@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: af0f56012c462ecb3b82a7b44006e93e0de4d3f3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3f34b0f45ff3b3b552b3272827a237e71d1c1eebe571a3d56b2a587bf24eaf45
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297249"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118497322"
 ---
 # <a name="esentcannotmaterializeforwardonlysortexception-class"></a>Classe EsentCannotMaterializeForwardOnlySortException
 
@@ -38,7 +38,7 @@ Classe base para JET_err. CannotMaterializeForwardOnlySort exceções.
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Exception](/dotnet/api/system.exception)  
+  [System.Exception](/dotnet/api/system.exception)  
     [Microsoft. ISAM. ESENT. EsentException](./esentexception-class.md)  
       [Microsoft. ISAM. ESENT. Interop. EsentErrorException](./esenterrorexception-class.md)  
         [Microsoft. ISAM. ESENT. Interop. EsentApiException](./esentapiexception-class.md)  
@@ -48,7 +48,7 @@ Classe base para JET_err. CannotMaterializeForwardOnlySort exceções.
 **Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration

@@ -1,9 +1,9 @@
 ---
-title: Transação de XTYP_ADVREQ (ddeml. h)
-description: A \_ transação XTYP ADVREQ informa ao servidor que uma transação de aviso está pendente no nome do tópico e no par do nome do item especificados e que os dados correspondentes ao nome do tópico e ao par do nome do item foram alterados.
+title: XTYP_ADVREQ transações (Ddeml.h)
+description: A transação XTYP ADVREQ informa ao servidor que uma transação de consultoria está pendente no nome do tópico e no par de nomes de item especificados e que os dados correspondentes ao nome do tópico e ao par de nomes de \_ item foram alterados.
 ms.assetid: 9bd43e61-cbd6-4d53-bab3-90e85819b16b
 keywords:
-- XTYP_ADVREQ de dados de transação Exchange
+- XTYP_ADVREQ dados da transação Exchange
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118544881"
 ---
-# <a name="xtyp_advreq-transaction"></a>\_Transação XTYP ADVREQ
+# <a name="xtyp_advreq-transaction"></a>Transação do XTYP \_ ADVREQ
 
-A transação **XTYP \_ ADVREQ** informa ao servidor que uma transação de aviso está pendente no nome do tópico e no par do nome do item especificados e que os dados correspondentes ao nome do tópico e ao par do nome do item foram alterados. o sistema envia essa transação para a função de retorno de chamada troca dinâmica de dados (DDE), [*DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), depois que o servidor chama a função [**DdePostAdvise**](/windows/desktop/api/Ddeml/nf-ddeml-ddepostadvise) .
+A **transação XTYP \_ ADVREQ** informa ao servidor que uma transação de consultoria está pendente no nome do tópico e no par de nomes de item especificados e que os dados correspondentes ao nome do tópico e ao par de nomes de item foram alterados. O sistema envia essa transação para a função de retorno de chamada Dados Dinâmicos Exchange (DDE), [*DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), depois que o servidor chama a [**função DdePostAdvise.**](/windows/desktop/api/Ddeml/nf-ddeml-ddepostadvise)
 
 
 ```C++
@@ -38,7 +38,7 @@ A transação **XTYP \_ ADVREQ** informa ao servidor que uma transação de avis
 
 <dl> <dt>
 
-*uType* 
+*Utype* 
 </dt> <dd>
 
 O tipo de transação.
@@ -55,21 +55,21 @@ O formato no qual os dados devem ser enviados ao cliente.
 *hconv* 
 </dt> <dd>
 
-Um identificador para a conversa.
+Um alça para a conversa.
 
 </dd> <dt>
 
 *hsz1* 
 </dt> <dd>
 
-Um identificador para o nome do tópico.
+Um handle para o nome do tópico.
 
 </dd> <dt>
 
 *hsz2* 
 </dt> <dd>
 
-Um identificador para o nome do item que foi alterado.
+Um alça para o nome do item que foi alterado.
 
 </dd> <dt>
 
@@ -83,11 +83,11 @@ Não usado.
 *dwData1* 
 </dt> <dd>
 
-A contagem, na palavra de ordem inferior, das transações **XTYP \_ ADVREQ** que permanecem para ser processada no mesmo tópico, item e nome de formato definido no contexto da chamada atual para a função [**DdePostAdvise**](/windows/desktop/api/Ddeml/nf-ddeml-ddepostadvise) . A contagem será zero se a transação **XTYP \_ ADVREQ** atual for a última. Um servidor pode usar essa contagem para determinar se deve criar um identificador de dados **HDATA \_ APPOWNED** para os dados de aviso.
+A contagem, na palavra de ordem baixa, de transações **\_ ADVREQ XTYP** que permanecem a ser processadas no mesmo tópico, item e nome de formato definidos no contexto da chamada atual para a [**função DdePostAdvise.**](/windows/desktop/api/Ddeml/nf-ddeml-ddepostadvise) A contagem será zero se a transação **atual do XTYP \_ ADVREQ** for a última. Um servidor pode usar essa contagem para determinar se um lidar com **dados \_ HDATA APPOWNED** deve ser criado para os dados de consultoria.
 
-A palavra de ordem inferior é definida como **CADV \_ LATEACK** se o ddeml emitiu a transação **\_ ADVREQ do XTYP** devido a uma mensagem de ACK DDE de chegada \_ de um cliente que está sendo OutRun pelo servidor.
+A palavra de ordem baixa será definida como **CADV \_ LATEACK** se o DDEML emitiu a transação **\_ XTYP ADVREQ** devido a uma mensagem de ACK de DDE de chegada tardia de um cliente que está sendo ultrapassado pelo \_ servidor.
 
-A palavra de ordem superior não é usada.
+A palavra de ordem alta não é usada.
 
 </dd> <dt>
 
@@ -100,11 +100,11 @@ Não usado.
 
 ## <a name="return-value"></a>Valor retornado
 
-O servidor deve primeiro chamar a função [**DdeCreateDataHandle**](/windows/desktop/api/Ddeml/nf-ddeml-ddecreatedatahandle) para criar um identificador de dados que identifica os dados alterados e, em seguida, retornar o identificador. O servidor deverá retornar **NULL** se não for possível concluir a transação.
+O servidor deve primeiro chamar a [**função DdeCreateDataHandle**](/windows/desktop/api/Ddeml/nf-ddeml-ddecreatedatahandle) para criar um identificador de dados que identifica os dados alterados e, em seguida, retornar o identificador. O servidor deverá retornar **NULL** se não for possível concluir a transação.
 
 ## <a name="remarks"></a>Comentários
 
-Um servidor não pode bloquear esse tipo de transação; o código de retorno de **\_ bloco CBR** é ignorado.
+Um servidor não pode bloquear esse tipo de transação; o **código de retorno \_ CBR BLOCK** é ignorado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -114,7 +114,7 @@ Um servidor não pode bloquear esse tipo de transação; o código de retorno de
 |-------------------------------------|--------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                             |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                   |
-| Cabeçalho<br/>                   | <dl> <dt>Ddeml. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Ddeml.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -134,10 +134,10 @@ Um servidor não pode bloquear esse tipo de transação; o código de retorno de
 [**DdePostAdvise**](/windows/desktop/api/Ddeml/nf-ddeml-ddepostadvise)
 </dt> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
-[troca dinâmica de dados biblioteca de gerenciamento](dynamic-data-exchange-management-library.md)
+[biblioteca de Dados Dinâmicos Exchange gerenciamento do Dados Dinâmicos Exchange](dynamic-data-exchange-management-library.md)
 </dt> </dl>
 
  

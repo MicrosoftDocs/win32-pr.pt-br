@@ -7,16 +7,16 @@ keywords:
 - BITS de erros, códigos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b9086de1d55bbdc9695876bd06368ab28dbbb161
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: eb7c6795572a2f81324e287c385a78e22e0b195dbbc3af061585fc847c464a95
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103917550"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118173825"
 ---
 # <a name="bits-return-values"></a>Valores de retorno de BITS
 
-O arquivo Bitsmsg. h contém as seguintes constantes de valor de retorno. As constantes representam valores de retorno que o BITS gera e valores de retorno HTTP que o BITS captura. Todos os outros valores de retorno que você pode receber são COM, RPC ou valores de retorno do Windows convertidos (o BITS usa o [HRESULT \_ da macro \_ Win32](/windows/win32/api/winerror/nf-winerror-hresult_from_win32) para converter os valores de retorno do Windows em valores HRESULT).
+O arquivo Bitsmsg. h contém as seguintes constantes de valor de retorno. As constantes representam valores de retorno que o BITS gera e valores de retorno HTTP que o BITS captura. todos os outros valores de retorno que você pode receber são COM, RPC ou convertidos Windows valores de retorno (o BITS usa o [HRESULT \_ da macro \_ WIN32](/windows/win32/api/winerror/nf-winerror-hresult_from_win32) para converter os valores de retorno de Windows em valores HRESULT).
 
 Observe que o arquivo Bitsmsg. h contém valores de retorno adicionais não listados abaixo.
 
@@ -53,7 +53,7 @@ O trabalho solicitado não foi encontrado.
 <span id="BG_E_INVALID_STATE__0x80200002_"></span><span id="bg_e_invalid_state__0x80200002_"></span><span id="BG_E_INVALID_STATE__0X80200002_"></span>\_Estado BG E \_ inválido \_ (0x80200002)
 </dt> <dd>
 
-A ação solicitada não é permitida no estado do trabalho atual.
+A operação solicitada não é permitida no estado de trabalho atual.
 
 </dd> <dt>
 
@@ -326,7 +326,7 @@ A contagem de intervalos para o arquivo excedeu o limite por intervalo de arquiv
 <span id="BG_E_VALIDATION_FAILED__0x80200053_"></span><span id="bg_e_validation_failed__0x80200053_"></span><span id="BG_E_VALIDATION_FAILED__0X80200053_"></span>\_ \_ \_ Falha na validação de BG E (0x80200053)
 </dt> <dd>
 
-O aplicativo solicitou dados de um site, mas a resposta não era válida. Para obter detalhes, use Visualizador de Eventos para exibir os logs de aplicativo \\ \\ \\ log operacional Microsoft Windows bits-cliente \\ .
+O aplicativo solicitou dados de um site, mas a resposta não era válida. para obter detalhes, use Visualizador de Eventos para exibir logs do aplicativo \\ Microsoft \\ Windows \\ bits- \\ operacional do cliente.
 
 </dd> <dt>
 
@@ -407,6 +407,6 @@ O servidor não oferece suporte à versão do protocolo HTTP especificada no nom
 
 O arquivo de cabeçalho Bitsmsg. h contém valores adicionais de retorno de HTTP não listados acima que os BITS usam internamente. Para obter informações sobre esses e outros valores de retorno de HTTP que você pode receber, consulte a especificação RFC 2616 da força de tarefas de engenharia da Internet em [https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html\#sec10](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10) .
 
- 
+ 
 
- 
+ 

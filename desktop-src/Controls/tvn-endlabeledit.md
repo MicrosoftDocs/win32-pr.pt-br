@@ -3,7 +3,7 @@ title: TVN_ENDLABELEDIT de notificação (Commctrl.h)
 description: Notifica a janela pai de um controle de exibição de árvore sobre o final da edição de rótulo para um item. Esse código de notificação é enviado na forma de uma mensagem WM \_ NOTIFY.
 ms.assetid: 82eb9fcd-de10-4efb-8501-78c5af5e089e
 keywords:
-- TVN_ENDLABELEDIT código de notificação Windows Controles
+- TVN_ENDLABELEDIT de notificação Windows Controles
 topic_type:
 - apiref
 api_name:
@@ -65,7 +65,7 @@ Se você especificou o valor LPSTR TEXTCALLBACK para este item e o membro \_ **p
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
 | Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nomes Unicode e ANSI<br/>   | **TVN \_ ENDLABELEDITW** (Unicode) e **TVN \_ ENDLABELEDITA** (ANSI)<br/>         |
 
 

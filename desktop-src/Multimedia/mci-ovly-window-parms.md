@@ -3,7 +3,7 @@ title: Estrutura de MCI_OVLY_WINDOW_PARMS (Mciapi. h)
 description: A \_ estrutura de parâmetros da janela MCI OVLY \_ \_ contém informações de exibição de janela para o \_ comando de janela MCI para dispositivos de sobreposição de vídeo.
 ms.assetid: 1189f31e-6e54-4279-a23d-b4e21c6cd276
 keywords:
-- Multimídia do Windows da estrutura de MCI_OVLY_WINDOW_PARMS
+- estrutura de MCI_OVLY_WINDOW_PARMS Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a554c9ed4e4869eab333b93736a0400ef93053cc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bd19580dacdc819f35bc36ed8f0070a5fc1b9fc4b745c78711c4fc312611e3c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103917971"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118138274"
 ---
 # <a name="mci_ovly_window_parms-structure"></a>\_Estrutura de \_ parâmetros da janela OVLY MCI \_
 
