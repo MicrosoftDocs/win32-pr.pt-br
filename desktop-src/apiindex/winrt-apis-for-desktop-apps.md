@@ -1,19 +1,19 @@
 ---
-description: O subconjunto de classes de Windows Runtime a seguir pode ser usado em aplicativos de área de trabalho.
+description: o subconjunto de classes de Windows Runtime a seguir pode ser usado em aplicativos de área de trabalho.
 ms.assetid: F9113BEA-E383-48BE-BD17-72DC1D20DF47
 title: APIs do Windows Runtime 8.x para aplicativos da área de trabalho
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a962950f7bc936c25d94c4cdaed44bfd16a26091
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: c810195a2ff33547a431b357eca94a7f8468e6c0d44e1f009b1646e475ceb7f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105789672"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119130278"
 ---
 # <a name="windows-runtime-8x-apis-for-desktop-apps"></a>APIs do Windows Runtime 8.x para aplicativos da área de trabalho
 
-O subconjunto de classes de Windows Runtime a seguir pode ser usado em aplicativos de área de trabalho.
+o subconjunto de classes de Windows Runtime a seguir pode ser usado em aplicativos de área de trabalho.
 
 -   [**Classe acelerômetro**](/uwp/api/Windows.Devices.Sensors.Accelerometer?view=winrt-19041)
 -   [**Classe AccelerometerReading**](/uwp/api/Windows.Devices.Sensors.AccelerometerReading?view=winrt-19041)
@@ -29,7 +29,7 @@ O subconjunto de classes de Windows Runtime a seguir pode ser usado em aplicativ
 -   [**Classe AudioEffect**](/uwp/api/Windows.Media.Effects.AudioEffect?view=winrt-19041)
 -   [**Classe AudioEncodingProperties**](/uwp/api/Windows.Media.MediaProperties.AudioEncodingProperties?view=winrt-19041)
 -   [**Classe AudioStreamDescriptor**](/uwp/api/Windows.Media.Core.AudioStreamDescriptor?view=winrt-19041)
--   [**Classe do calendário**](/uwp/api/Windows.Globalization.Calendar?view=winrt-19041)
+-   [**Classe Calendar**](/uwp/api/Windows.Globalization.Calendar?view=winrt-19041)
 -   [**Classe CalendarIdentifiers**](/uwp/api/Windows.Globalization.CalendarIdentifiers?view=winrt-19041)
 -   [**Classe CallControl**](/uwp/api/Windows.Media.Devices.CallControl?view=winrt-19041)
 -   [**Classe CapturedFrame**](/uwp/api/Windows.Media.Capture.CapturedFrame?view=winrt-19041)
@@ -113,10 +113,10 @@ O subconjunto de classes de Windows Runtime a seguir pode ser usado em aplicativ
 -   [**Classe GattValueChangedEventArgs**](/uwp/api/Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs?view=winrt-19041)
 -   [**Classe GeographicRegion**](/uwp/api/Windows.Globalization.GeographicRegion?view=winrt-19041)
 -   [**Classe GlobalizationPreferences**](/uwp/api/Windows.System.UserProfile.GlobalizationPreferences?view=winrt-19041)
--   [**Classe girômetro**](/uwp/api/Windows.Devices.Sensors.Gyrometer?view=winrt-19041)
+-   [**Classe de girométrico**](/uwp/api/Windows.Devices.Sensors.Gyrometer?view=winrt-19041)
 -   [**Classe GyrometerReading**](/uwp/api/Windows.Devices.Sensors.GyrometerReading?view=winrt-19041)
--   [**Classe HashAlgorithmnames**](/uwp/api/Windows.Security.Cryptography.Core.HashAlgorithmNames?view=winrt-19041)
--   [**Classe HashAlgorithmprovider**](/uwp/api/Windows.Security.Cryptography.Core.HashAlgorithmProvider?view=winrt-19041)
+-   [**Classe HashAlgorithmNames**](/uwp/api/Windows.Security.Cryptography.Core.HashAlgorithmNames?view=winrt-19041)
+-   [**Classe HashAlgorithmProvider**](/uwp/api/Windows.Security.Cryptography.Core.HashAlgorithmProvider?view=winrt-19041)
 -   [**Classe HidBooleanControl**](/uwp/api/Windows.Devices.HumanInterfaceDevice.HidBooleanControl?view=winrt-19041)
 -   [**Classe HidBooleanControlDescription**](/uwp/api/Windows.Devices.HumanInterfaceDevice.HidBooleanControlDescription?view=winrt-19041)
 -   [**Classe HidCollection**](/uwp/api/Windows.Devices.HumanInterfaceDevice.HidCollection?view=winrt-19041)
@@ -147,8 +147,8 @@ O subconjunto de classes de Windows Runtime a seguir pode ser usado em aplicativ
 -   [**Classe HttpContentHeaderCollection**](/uwp/api/Windows.Web.Http.Headers.HttpContentHeaderCollection?view=winrt-19041)
 -   [**Classe HttpContentRangeHeaderValue**](/uwp/api/Windows.Web.Http.Headers.HttpContentRangeHeaderValue?view=winrt-19041)
 -   [**Classe HttpCookie**](/uwp/api/Windows.Web.Http.HttpCookie?view=winrt-19041)
--   [**Classe HttpCookiecollection**](/uwp/api/Windows.Web.Http.HttpCookieCollection?view=winrt-19041)
--   [**Classe HttpCookiemanager**](/uwp/api/Windows.Web.Http.HttpCookieManager?view=winrt-19041)
+-   [**Classe HttpCookieCollection**](/uwp/api/Windows.Web.Http.HttpCookieCollection?view=winrt-19041)
+-   [**Classe HttpCookieManager**](/uwp/api/Windows.Web.Http.HttpCookieManager?view=winrt-19041)
 -   [**Classe HttpCookiePairHeaderValue**](/uwp/api/Windows.Web.Http.Headers.HttpCookiePairHeaderValue?view=winrt-19041)
 -   [**Classe HttpCookiePairHeaderValueCollection**](/uwp/api/Windows.Web.Http.Headers.HttpCookiePairHeaderValueCollection?view=winrt-19041)
 -   [**Classe HttpCredentialsHeaderValue**](/uwp/api/Windows.Web.Http.Headers.HttpCredentialsHeaderValue?view=winrt-19041)
@@ -186,30 +186,30 @@ O subconjunto de classes de Windows Runtime a seguir pode ser usado em aplicativ
 -   [**Classe ImageScannerFlatbedConfiguration**](/uwp/api/Windows.Devices.Scanners.ImageScannerFlatbedConfiguration?view=winrt-19041)
 -   [**Classe ImageScannerPreviewResult**](/uwp/api/Windows.Devices.Scanners.ImageScannerPreviewResult?view=winrt-19041)
 -   [**Classe ImageScannerScanResult**](/uwp/api/Windows.Devices.Scanners.ImageScannerScanResult?view=winrt-19041)
--   [**Classe inclinômetro**](/uwp/api/Windows.Devices.Sensors.Inclinometer?view=winrt-19041)
--   [**Classe InclinometerReading**](/uwp/api/Windows.Devices.Sensors.InclinometerReading?view=winrt-19041)
+-   [**Classe Demostômetro**](/uwp/api/Windows.Devices.Sensors.Inclinometer?view=winrt-19041)
+-   [**Classe MagnetometerReading**](/uwp/api/Windows.Devices.Sensors.InclinometerReading?view=winrt-19041)
 -   [**Classe IncrementNumberRounder**](/uwp/api/Windows.Globalization.NumberFormatting.IncrementNumberRounder?view=winrt-19041)
 -   [**Classe InkDrawingAttributes**](/uwp/api/Windows.UI.Input.Inking.InkDrawingAttributes?view=winrt-19041)
 -   [**Classe InkManager**](/uwp/api/Windows.UI.Input.Inking.InkManager?view=winrt-19041)
 -   [**Classe InkRecognitionResult**](/uwp/api/Windows.UI.Input.Inking.InkRecognitionResult?view=winrt-19041)
 -   [**Classe InkRecognizer**](/uwp/api/Windows.UI.Input.Inking.InkRecognizer?view=winrt-19041)
 -   [**Classe InkRecognizerContainer**](/uwp/api/Windows.UI.Input.Inking.InkRecognizerContainer?view=winrt-19041)
--   [**Classe InkStroke**](/uwp/api/Windows.UI.Input.Inking.InkStroke?view=winrt-19041)
--   [**Classe InkStrokeBuilder**](/uwp/api/Windows.UI.Input.Inking.InkStrokeBuilder?view=winrt-19041)
--   [**Classe InkStrokeContainer**](/uwp/api/Windows.UI.Input.Inking.InkStrokeContainer?view=winrt-19041)
--   [**Classe InkStrokeRenderingSegment**](/uwp/api/Windows.UI.Input.Inking.InkStrokeRenderingSegment?view=winrt-19041)
+-   [**Classe InkStrke**](/uwp/api/Windows.UI.Input.Inking.InkStroke?view=winrt-19041)
+-   [**Classe InkStrkeBuilder**](/uwp/api/Windows.UI.Input.Inking.InkStrokeBuilder?view=winrt-19041)
+-   [**Classe InkStrkeContainer**](/uwp/api/Windows.UI.Input.Inking.InkStrokeContainer?view=winrt-19041)
+-   [**Classe InkStrkeRenderingSegment**](/uwp/api/Windows.UI.Input.Inking.InkStrokeRenderingSegment?view=winrt-19041)
 -   [**Classe IOControlCode**](/uwp/api/Windows.Devices.Custom.IOControlCode?view=winrt-19041)
 -   [**Classe IPInformation**](/uwp/api/Windows.Networking.Connectivity.IPInformation?view=winrt-19041)
 -   [**Classe IsoSpeedControl**](/uwp/api/Windows.Media.Devices.IsoSpeedControl?view=winrt-19041)
 -   [**Classe JsonArray**](/uwp/api/Windows.Data.Json.JsonArray?view=winrt-19041)
 -   [**Classe JsonError**](/uwp/api/Windows.Data.Json.JsonError?view=winrt-19041)
--   [**Classe jsonobject**](/uwp/api/Windows.Data.Json.JsonObject?view=winrt-19041)
--   [**Classe jsonvalue**](/uwp/api/Windows.Data.Json.JsonValue?view=winrt-19041)
--   [**Classe keyalgorithmnames**](/uwp/api/Windows.Security.Cryptography.Certificates.KeyAlgorithmNames?view=winrt-19041)
+-   [**Classe JsonObject**](/uwp/api/Windows.Data.Json.JsonObject?view=winrt-19041)
+-   [**Classe JsonValue**](/uwp/api/Windows.Data.Json.JsonValue?view=winrt-19041)
+-   [**Classe KeyAlgorithmNames**](/uwp/api/Windows.Security.Cryptography.Certificates.KeyAlgorithmNames?view=winrt-19041)
 -   [**Classe KeyAttestationHelper**](/uwp/api/Windows.Security.Cryptography.Certificates.KeyAttestationHelper?view=winrt-19041)
 -   [**Classe KeyDerivationAlgorithmNames**](/uwp/api/Windows.Security.Cryptography.Core.KeyDerivationAlgorithmNames?view=winrt-19041)
 -   [**Classe KeyDerivationAlgorithmProvider**](/uwp/api/Windows.Security.Cryptography.Core.KeyDerivationAlgorithmProvider?view=winrt-19041)
--   [**Classe keyderivation**](/uwp/api/Windows.Security.Cryptography.Core.KeyDerivationParameters?view=winrt-19041)
+-   [**Classe KeyDerivationParameters**](/uwp/api/Windows.Security.Cryptography.Core.KeyDerivationParameters?view=winrt-19041)
 -   [**Classe KeyStorageProviderNames**](/uwp/api/Windows.Security.Cryptography.Certificates.KeyStorageProviderNames?view=winrt-19041)
 -   [**Classe de linguagem**](/uwp/api/Windows.Globalization.Language?view=winrt-19041)
 -   [**Classe LanguageFont**](/uwp/api/Windows.Globalization.Fonts.LanguageFont?view=winrt-19041)
@@ -218,7 +218,7 @@ O subconjunto de classes de Windows Runtime a seguir pode ser usado em aplicativ
 -   [**Classe LanIdentifierData**](/uwp/api/Windows.Networking.Connectivity.LanIdentifierData?view=winrt-19041)
 -   [**Classe LightSensor**](/uwp/api/Windows.Devices.Sensors.LightSensor?view=winrt-19041)
 -   [**Classe LightSensorReading**](/uwp/api/Windows.Devices.Sensors.LightSensorReading?view=winrt-19041)
--   [**Classe de tela de bloqueio**](/uwp/api/Windows.System.UserProfile.LockScreen?view=winrt-19041)
+-   [**Classe LockScreen**](/uwp/api/Windows.System.UserProfile.LockScreen?view=winrt-19041)
 -   [**Classe LowLagMediaRecording**](/uwp/api/Windows.Media.Capture.LowLagMediaRecording?view=winrt-19041)
 -   [**Classe LowLagPhotoCapture**](/uwp/api/Windows.Media.Capture.LowLagPhotoCapture?view=winrt-19041)
 -   [**Classe LowLagPhotoSequenceCapture**](/uwp/api/Windows.Media.Capture.LowLagPhotoSequenceCapture?view=winrt-19041)
@@ -256,9 +256,9 @@ O subconjunto de classes de Windows Runtime a seguir pode ser usado em aplicativ
 -   [**Classe MobileBroadbandAccountWatcher**](/uwp/api/Windows.Networking.NetworkOperators.MobileBroadbandAccountWatcher?view=winrt-19041)
 -   [**Classe MobileBroadbandDeviceInformation**](/uwp/api/Windows.Networking.NetworkOperators.MobileBroadbandDeviceInformation?view=winrt-19041)
 -   [**Classe MobileBroadbandNetwork**](/uwp/api/Windows.Networking.NetworkOperators.MobileBroadbandNetwork?view=winrt-19041)
--   [**Classe adaptador**](/uwp/api/Windows.Networking.Connectivity.NetworkAdapter?view=winrt-19041)
+-   [**Classe NetworkAdapter**](/uwp/api/Windows.Networking.Connectivity.NetworkAdapter?view=winrt-19041)
 -   [**Classe NetworkInformation**](/uwp/api/Windows.Networking.Connectivity.NetworkInformation?view=winrt-19041)
--   [**Classe networkitem**](/uwp/api/Windows.Networking.Connectivity.NetworkItem?view=winrt-19041)
+-   [**Classe NetworkItem**](/uwp/api/Windows.Networking.Connectivity.NetworkItem?view=winrt-19041)
 -   [**Classe NetworkOperatorNotificationEventDetails**](/uwp/api/Windows.Networking.NetworkOperators.NetworkOperatorNotificationEventDetails?view=winrt-19041)
 -   [**Classe NetworkOperatorTetheringAccessPointConfiguration**](/uwp/api/Windows.Networking.NetworkOperators.NetworkOperatorTetheringAccessPointConfiguration?view=winrt-19041)
 -   [**Classe NetworkOperatorTetheringManager**](/uwp/api/Windows.Networking.NetworkOperators.NetworkOperatorTetheringManager?view=winrt-19041)
@@ -272,15 +272,15 @@ O subconjunto de classes de Windows Runtime a seguir pode ser usado em aplicativ
 -   [**Classe OperationCompletedEventArgs**](/uwp/api/Windows.ApplicationModel.DataTransfer.OperationCompletedEventArgs?view=winrt-19041)
 -   [**Classe OrientationSensor**](/uwp/api/Windows.Devices.Sensors.OrientationSensor?view=winrt-19041)
 -   [**Classe OrientationSensorReading**](/uwp/api/Windows.Devices.Sensors.OrientationSensorReading?view=winrt-19041)
--   [**Classe de pacote**](/uwp/api/Windows.ApplicationModel.Package?view=winrt-19041)
--   [**Classe PackageID**](/uwp/api/Windows.ApplicationModel.PackageId?view=winrt-19041)
+-   [**Classe package**](/uwp/api/Windows.ApplicationModel.Package?view=winrt-19041)
+-   [**Classe PackageId**](/uwp/api/Windows.ApplicationModel.PackageId?view=winrt-19041)
 -   [**Classe PasswordCredential**](/uwp/api/Windows.Security.Credentials.PasswordCredential?view=winrt-19041)
 -   [**Classe PasswordCredentialPropertyStore**](/uwp/api/Windows.Security.Credentials.PasswordCredentialPropertyStore?view=winrt-19041)
 -   [**Classe PasswordVault**](/uwp/api/Windows.Security.Credentials.PasswordVault?view=winrt-19041)
 -   [**Classe PercentFormatter**](/uwp/api/Windows.Globalization.NumberFormatting.PercentFormatter?view=winrt-19041)
--   [**Classe PermilleFormatter**](/uwp/api/Windows.Globalization.NumberFormatting.PermilleFormatter?view=winrt-19041)
+-   [**Classe PermilaFormatter**](/uwp/api/Windows.Globalization.NumberFormatting.PermilleFormatter?view=winrt-19041)
 -   [**Classe PersistedKeyProvider**](/uwp/api/Windows.Security.Cryptography.Core.PersistedKeyProvider?view=winrt-19041)
--   [**Classe de defaultcaptureeventargs**](/uwp/api/Windows.Media.Capture.PhotoCapturedEventArgs?view=winrt-19041)
+-   [**Classe PhotoCapturedEventArgs**](/uwp/api/Windows.Media.Capture.PhotoCapturedEventArgs?view=winrt-19041)
 -   [**Classe playlist**](/uwp/api/Windows.Media.Playlists.Playlist?view=winrt-19041)
 -   [**Classe PnpObject**](/uwp/api/Windows.Devices.Enumeration.Pnp.PnpObject?view=winrt-19041)
 -   [**Classe PnpObjectCollection**](/uwp/api/Windows.Devices.Enumeration.Pnp.PnpObjectCollection?view=winrt-19041)
@@ -298,7 +298,7 @@ O subconjunto de classes de Windows Runtime a seguir pode ser usado em aplicativ
 -   [**Classe ProxyConfiguration**](/uwp/api/Windows.Networking.Connectivity.ProxyConfiguration?view=winrt-19041)
 -   [**Classe RegionOfInterest**](/uwp/api/Windows.Media.Devices.RegionOfInterest?view=winrt-19041)
 -   [**Classe RegionsOfInterestControl**](/uwp/api/Windows.Media.Devices.RegionsOfInterestControl?view=winrt-19041)
--   [**Classe resourcecollection**](/uwp/api/Windows.Web.AtomPub.ResourceCollection?view=winrt-19041)
+-   [**Classe ResourceCollection**](/uwp/api/Windows.Web.AtomPub.ResourceCollection?view=winrt-19041)
 -   [**Classe RfcommDeviceService**](/uwp/api/Windows.Devices.Bluetooth.Rfcomm.RfcommDeviceService?view=winrt-19041)
 -   [**Classe RfcommServiceId**](/uwp/api/windows.devices.bluetooth.rfcomm.rfcommserviceid?view=winrt-19041)
 -   [**Classe RfcommServiceProvider**](/uwp/api/Windows.Devices.Bluetooth.Rfcomm.RfcommServiceProvider?view=winrt-19041)

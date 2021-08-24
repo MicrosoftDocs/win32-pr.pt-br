@@ -4,16 +4,16 @@ ms.assetid: b2f9ec6a-4b5b-e618-759b-d7dbc0d97ac4
 title: 'Como: Adicionar ou remover dinamicamente vozes de um gráfico de áudio'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fdb26150b5614ec53e4cc4de5af74e9a14ee2a94
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b1a49cfc88e89884b63484b7bd58f7f5d96020cd21f8d1147794b840f00258fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090680"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119082930"
 ---
 # <a name="how-to-dynamically-add-or-remove-voices-from-an-audio-graph"></a>Como: Adicionar ou remover dinamicamente vozes de um gráfico de áudio
 
-Você pode alterar grafos de áudio a qualquer momento para adicionar ou remover vozes ou subgrafos inteiros. Este tópico mostra como adicionar ou remover vozes submix de um grafo criado seguindo as etapas em [como compilar um grafo básico de processamento de áudio](how-to--build-a-basic-audio-processing-graph.md). Uma única voz pode enviar sua saída para várias vozes ou para uma cadeia de vozes longa. Remover ou adicionar uma única voz pode ter um grande efeito em um grafo de áudio.
+Você pode alterar grafos de áudio a qualquer momento para adicionar ou remover vozes ou subgrafos inteiros. Este tópico mostra como adicionar ou remover vozes submix de um grafo criado seguindo as etapas em [como criar um Graph de processamento básico de áudio](how-to--build-a-basic-audio-processing-graph.md). Uma única voz pode enviar sua saída para várias vozes ou para uma cadeia de vozes longa. Remover ou adicionar uma única voz pode ter um grande efeito em um grafo de áudio.
 
 ## <a name="to-dynamically-change-an-audio-graph"></a>Para alterar dinamicamente um grafo de áudio
 

@@ -13,12 +13,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d37551293f5444e5194083bb6c9a8f620f2ee6bd
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 42238d1571a15632b8b436c646d0c5697b8360b03a46db67dbf7ddd2dc36a1e9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105811178"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081550"
 ---
 # <a name="msrassavedframedipaddress-attribute"></a>atributo msRASSavedFramedIPAddress
 
@@ -57,7 +57,7 @@ O atributo **msRASSavedFramedIPAddress** é usado internamente. Não modifique e
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| É de valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
 | No catálogo global      | Falso                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
@@ -78,7 +78,7 @@ O atributo **msRASSavedFramedIPAddress** é usado internamente. Não modifique e
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| É de valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
 | No catálogo global      | Falso                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
@@ -99,7 +99,7 @@ O atributo **msRASSavedFramedIPAddress** é usado internamente. Não modifique e
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| É de valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
 | No catálogo global      | Falso                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
@@ -120,10 +120,10 @@ O atributo **msRASSavedFramedIPAddress** é usado internamente. Não modifique e
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
@@ -141,10 +141,10 @@ O atributo **msRASSavedFramedIPAddress** é usado internamente. Não modifique e
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
@@ -162,10 +162,10 @@ O atributo **msRASSavedFramedIPAddress** é usado internamente. Não modifique e
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
@@ -178,7 +178,7 @@ O atributo **msRASSavedFramedIPAddress** é usado internamente. Não modifique e
 
 <dl> <dt>
 
-[Funções de administração de RAS](/windows/desktop/RRAS/ras-administration-functions)
+[Funções de administração ras](/windows/desktop/RRAS/ras-administration-functions)
 </dt> </dl>
 
  

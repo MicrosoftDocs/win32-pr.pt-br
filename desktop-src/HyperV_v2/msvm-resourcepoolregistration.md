@@ -1,7 +1,7 @@
 ---
 description: Registra um serviço que fornece objetos relacionados ao pool de recursos globais.
 ms.assetid: B602F6E1-2889-43CF-AAF1-40F339231DB4
-title: Classe Msvm_ResourcePoolRegistration
+title: Msvm_ResourcePoolRegistration classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,18 +15,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 6eecfefc8c542eeb3a06c509533060f8036d447e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bbcb0f2e3d5b0dfad884572c90f889d28e47fcffaf328b39d78f02d4c2baa3a6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104091716"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119535458"
 ---
-# <a name="msvm_resourcepoolregistration-class"></a>\_Classe Msvm ResourcePoolRegistration
+# <a name="msvm_resourcepoolregistration-class"></a>Classe Msvm \_ ResourcePoolRegistration
 
 Registra um serviço que fornece objetos relacionados ao pool de recursos globais.
 
-A sintaxe a seguir é simplificada formato MOF código (MOF) e inclui todas as propriedades herdadas.
+A sintaxe a seguir é simplificada Managed Object Format código MOF e inclui todas as propriedades herdadas.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,13 +40,13 @@ class Msvm_ResourcePoolRegistration : Msvm_VirtualizationComponentRegistration
 
 ## <a name="members"></a>Membros
 
-A classe **Msvm \_ ResourcePoolRegistration** tem estes tipos de membros:
+A **classe Msvm \_ ResourcePoolRegistration** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Msvm \_ ResourcePoolRegistration** tem essas propriedades.
+A **classe Msvm \_ ResourcePoolRegistration** tem essas propriedades.
 
 <dl> <dt>
 
@@ -72,13 +72,13 @@ Tipo de dados: **[ **Msvm \_ ResourceTypeDefinition**](msvm-resourcetypedefiniti
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma referência a uma instância que descreve um tipo de recurso com suporte pelo serviço. Esta propriedade é herdada de [**Msvm \_ VirtualizationComponentRegistration**](msvm-virtualizationcomponentregistration.md).
+Uma referência a uma instância que descreve um tipo de recurso com suporte pelo serviço. Essa propriedade é herdada [**de Msvm \_ VirtualizationComponentRegistration**](msvm-virtualizationcomponentregistration.md).
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-O acesso à classe **Msvm \_ ResourcePoolRegistration** pode ser restringido pela filtragem do UAC. Para obter mais informações, consulte [controle de conta de usuário e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+O acesso à **classe Msvm \_ ResourcePoolRegistration** pode ser restrito pela Filtragem de UAC. Para obter mais informações, consulte [Controle de conta de usuário e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -86,12 +86,12 @@ O acesso à classe **Msvm \_ ResourcePoolRegistration** pode ser restringido pel
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
-| Fim do suporte do cliente<br/>    | Windows 8.1<br/>                                                                                  |
-| Fim do suporte do servidor<br/>    | Windows Server 2012 R2<br/>                                                                       |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Fim do suporte ao cliente<br/>    | Windows 8.1<br/>                                                                                  |
+| Fim do suporte ao servidor<br/>    | Windows Server 2012 R2<br/>                                                                       |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

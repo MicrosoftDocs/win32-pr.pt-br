@@ -1,19 +1,19 @@
 ---
-description: Repositório de notificações do dispositivo.
+description: Armazenamento de notificações do dispositivo.
 ms.assetid: e26910d3-b111-4a55-bc82-0db5e2fe1f34
-title: System. Devices. NotificationStore
+title: System.Devices.NotificationStore
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d0e2dd794619eca7a8ecc24f0d93898bb52a436
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f3ddce014c10cf4851df9341892f8f63ce9ef0f9e8ab222ac0af0c49af8e4416
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105814520"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119097525"
 ---
-# <a name="systemdevicesnotificationstore"></a>System. Devices. NotificationStore
+# <a name="systemdevicesnotificationstore"></a>System.Devices.NotificationStore
 
-Repositório de notificações do dispositivo.
+Armazenamento de notificações do dispositivo.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versão 1703, Windows 10, versão 1607, Windows 10, versão 1511, Windows 10, versão 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -33,13 +33,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-Os valores de PKEY são definidos em Propkey. h.
+Os valores PKEY são definidos em Propkey.h.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[Propertydescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -48,19 +48,19 @@ Os valores de PKEY são definidos em Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[numberFormat](./propdesc-schema-numberformat.md)
+[Numberformat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -75,7 +75,7 @@ Os valores de PKEY são definidos em Propkey. h.
 [editControl](./propdesc-schema-editcontrol.md)
 </dt> <dt>
 
-[filterControl](./propdesc-schema-filtercontrol.md)
+[Filtercontrol](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
 [queryControl](./propdesc-schema-querycontrol.md)

@@ -4,12 +4,12 @@ ms.assetid: 889dd0d8-1933-4901-9bbc-06c3caa26d3e
 title: Transformações de espaço da câmera (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e621fa8318fa45023cee13ffc6fcfc65abcf8f5b
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: effb7af72decad711d9fc392e53f7aba05f48b3c69394dbfb3ae5f9f06e2def7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089238"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119241846"
 ---
 # <a name="camera-space-transformations-direct3d-9"></a>Transformações de espaço da câmera (Direct3D 9)
 

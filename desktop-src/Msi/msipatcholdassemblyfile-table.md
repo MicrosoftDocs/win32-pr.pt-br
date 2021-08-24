@@ -4,12 +4,12 @@ ms.assetid: a3c1e7fb-5f97-41db-bdc8-bd3ddb695c42
 title: Tabela MsiPatchOldAssemblyFile
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c995e4f6d6622dd3d7d1c96c9ef1297a787b66d6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c4570b862773d2dc1d5b9c7458dbc1ccd8825ce77bf504d5e0fb2bf116d7a095
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105780510"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119559076"
 ---
 # <a name="msipatcholdassemblyfile-table"></a>Tabela MsiPatchOldAssemblyFile
 
@@ -21,8 +21,8 @@ A tabela MsiPatchOldAssemblyFile tem as colunas a seguir.
 
 | Coluna     | Tipo                         | Chave | Nullable |
 |------------|------------------------------|-----|----------|
-| Arquivo\_     | [Identificador](identifier.md) | S   | N        |
-| Assembly\_ | [Identificador](identifier.md) | S   | N        |
+| Arquivo\_     | [Identificador](identifier.md) | Y   | N        |
+| Assembly\_ | [Identificador](identifier.md) | Y   | N        |
 
 
 
@@ -48,7 +48,7 @@ Chave estrangeira para a [tabela MsiPatchOldAssemblyName](msipatcholdassemblynam
 
 ## <a name="remarks"></a>Comentários
 
-Windows Installer usa a tabela MsiPatchOldAssemblyFile e a [tabela MsiPatchOldAssemblyName](msipatcholdassemblyname-table.md) ao corrigir assemblies instalados no GAC (cache de assembly global). Ao liberar uma versão mais recente de um assembly, o nome forte do assembly é alterado. Juntas, as duas tabelas identificam o nome antigo do assembly para um assembly atualizado. Isso permite que o instalador use o nome antigo do assembly para localizar o arquivo original no GAC e aplicar um patch binário. Sem essas informações, o instalador pode ter que acessar a fonte de instalação original para corrigir um assembly instalado no GAC.
+Windows O instalador usa a tabela MsiPatchOldAssemblyFile e a [tabela MsiPatchOldAssemblyName](msipatcholdassemblyname-table.md) ao corrigir assemblies instalados no GAC (cache de assembly global). Ao liberar uma versão mais recente de um assembly, o nome forte do assembly é alterado. Juntas, as duas tabelas identificam o nome antigo do assembly para um assembly atualizado. Isso permite que o instalador use o nome antigo do assembly para localizar o arquivo original no GAC e aplicar um patch binário. Sem essas informações, o instalador pode ter que acessar a fonte de instalação original para corrigir um assembly instalado no GAC.
 
 A tabela MsiPatchOldAssemblyFile e a [tabela MsiPatchOldAssemblyName](msipatcholdassemblyname-table.md) não são geradas automaticamente pelo [PatchWiz](patchwiz-dll.md). O pacote de atualização especificado na [tabela UpgradedImages](upgradedimages-table-patchwiz-dll-.md) é necessário para conter essas tabelas para que o patch tenha essas informações.
 

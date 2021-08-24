@@ -1,12 +1,12 @@
 ---
 title: Método CanAccessLicenseServer da classe Win32_TerminalServiceSetting
-description: O CanAccessLicenseServer não está mais disponível.
+description: CanAccessLicenseServer não está mais disponível.
 ms.assetid: b09fa901-8ae1-431e-8d97-27ee84a84779
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota do método CanAccessLicenseServer
-- Método CanAccessLicenseServer Serviços de Área de Trabalho Remota, classe Win32_TerminalServiceSetting
-- Classe Win32_TerminalServiceSetting Serviços de Área de Trabalho Remota, método CanAccessLicenseServer
+- Método CanAccessLicenseServer Serviços de Área de Trabalho Remota
+- Método CanAccessLicenseServer Serviços de Área de Trabalho Remota , Win32_TerminalServiceSetting classe
+- Win32_TerminalServiceSetting classe Serviços de Área de Trabalho Remota , método CanAccessLicenseServer
 topic_type:
 - apiref
 api_name:
@@ -17,23 +17,23 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ffa5bd0e108c0ccceed6890adedea7901834804
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0f0512f42d0d814793f4ecd62fda2dd84005a4183e8db736bd16919799b4570a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085310"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119139139"
 ---
 # <a name="canaccesslicenseserver-method-of-the-win32_terminalservicesetting-class"></a>Método CanAccessLicenseServer da classe Win32 \_ TerminalServiceSetting
 
-\[O **CanAccessLicenseServer** não está mais disponível para uso a partir do Windows Server 2008 R2.\]
+\[**CanAccessLicenseServer** não está mais disponível para uso a partir Windows Server 2008 R2.\]
 
-* * Windows Server 2008: * *
+**Windows Server 2008: **
 
-Determina se o servidor de Host da Sessão da Área de Trabalho Remota (Host da Sessão RD) tem permissão para solicitar Serviços de Área de Trabalho Remota CALs (licenças de acesso para cliente) de um servidor de licença Área de Trabalho Remota com base no seguinte:
+Determina se o servidor Host da Sessão da Área de Trabalho Remota (Host da Sessão RD Serviços de Área de Trabalho Remota) tem permissão para solicitar licenças de acesso do cliente (RDS CALs) de um servidor de licença do Área de Trabalho Remota com base no seguinte:
 
--   A configuração da política de grupo "grupo de segurança do servidor de licenças" no servidor de licença Área de Trabalho Remota.
--   Associação no grupo local computadores Terminal Server no servidor de licença.
+-   A configuração de política de grupo "grupo de segurança do servidor de licença" no servidor Área de Trabalho Remota licença.
+-   Associação ao grupo local Computadores do Servidor de Terminal no servidor de licença.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -51,17 +51,17 @@ uint32 CanAccessLicenseServer(
 
 <dl> <dt>
 
-*Nome do Server* \[ no\]
+*ServerName* \[ Em\]
 </dt> <dd>
 
-O nome do servidor de licença de Área de Trabalho Remota.
+O nome do servidor de Área de Trabalho Remota licença.
 
 </dd> <dt>
 
-*AccessAllowed* \[ fora\]
+*AccessAllowed* \[ out\]
 </dt> <dd>
 
-Se o servidor de Host da Sessão RD tem permissão para solicitar RDS CALs do servidor de licença.
+Se o Host da Sessão RD servidor pode solicitar CALs RDS do servidor de licença.
 
 <dt>
 
@@ -79,15 +79,15 @@ A solicitação não é permitida.
 
 </dd> </dl> </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retornará **S \_ OK** se o servidor de host da Sessão RD tiver acesso ao servidor de licença. Retornará **S \_ false** se o servidor de host da Sessão RD não tiver acesso ao servidor de licença.
+Retornará **S \_ OK** se o Host da Sessão RD servidor tiver acesso ao servidor de licença. Retornará **S \_ FALSE** se o Host da Sessão RD servidor não tiver acesso ao servidor de licença.
 
 ## <a name="remarks"></a>Comentários
 
-A configuração de política "grupo de segurança de servidor de licenças" permite que você especifique os servidores de Host da Sessão RD que têm permissão para contatar o servidor de licença para obter RDS CALs. Se a configuração de política estiver habilitada no servidor de licença, o servidor de licença responderá apenas às solicitações de RDS CAL de Host da Sessão RD servidores cujas contas de computador são membros do grupo local de computadores Terminal Server no servidor de licença.
+A configuração de política "grupo de segurança do servidor de licença" permite que você especifique os servidores Host da Sessão RD que têm permissão para entrar em contato com o servidor de licença para obter CALs de RDS. Se a configuração de política estiver habilitada no servidor de licença, o servidor de licença responderá apenas a solicitações de CAL RDS de servidores Host da Sessão RD cujas contas de computador são membros do grupo local Computadores do Servidor terminal no servidor de licença.
 
-Para se conectar ao \\ \\ \\ namespace TerminalServices de cimv2 raiz, o nível de autenticação deve incluir a privacidade do pacote. Para chamadas C/C++, esse é um nível de autenticação **da \_ \_ privacidade do \_ PCT no \_ nível \_ do autenticação RPC C**. Para chamadas de script e de Visual Basic, esse é um nível de autenticação de **WbemAuthenticationLevelPktPrivacy** ou "PktPrivacy", com um valor de 6. O exemplo a seguir Visual Basic Scripting Edition (VBScript) mostra como se conectar a um computador remoto com privacidade de pacote.
+Para se conectar ao \\ \\ namespace raiz CIMV2 \\ TerminalServices, o nível de autenticação deve incluir a privacidade do pacote. Para chamadas C/C++, esse é um nível de autenticação de **RPC \_ C \_ AUTHN \_ LEVEL \_ PKT \_ PRIVACY**. Para Visual Basic e chamadas de script, esse é um nível de autenticação de **WbemAuthenticationLevelPktPrivacy** ou "pktPrivacy", com um valor de 6. O exemplo Visual Basic VBScript (Scripting Edition) a seguir mostra como se conectar a um computador remoto com privacidade de pacote.
 
 
 ```VB
@@ -98,7 +98,7 @@ Set objServices = GetObject( _
 
 
 
-Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). Os arquivos MOF não são instalados como parte do SDK (Software Development Kit) do Microsoft Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+arquivos Managed Object Format (MOF) contêm as definições para classes WMI (Instrumentação de Gerenciamento de Windows). Os arquivos MOF não são instalados como parte do Microsoft Windows Software Development Kit (SDK). Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, [consulte Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -108,10 +108,10 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                               |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Fim do suporte do cliente<br/>    | Nenhum compatível<br/>                                                               |
-| Fim do suporte do servidor<br/>    | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | \\TerminalServices da CIMv2 raiz \\<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| Fim do suporte ao cliente<br/>    | Nenhum compatível<br/>                                                               |
+| Fim do suporte ao servidor<br/>    | Windows Server 2008<br/>                                                          |
+| Namespace<br/>                | \\CiMv2 \\ TerminalServices raiz<br/>                                                |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
@@ -120,7 +120,7 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 
 <dl> <dt>
 
-[**\_TerminalServiceSetting Win32**](win32-terminalservicesetting.md)
+[**Win32 \_ TerminalServiceSetting**](win32-terminalservicesetting.md)
 </dt> </dl>
 
  

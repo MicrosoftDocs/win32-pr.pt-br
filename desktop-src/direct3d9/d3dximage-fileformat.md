@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9tex.h
-ms.openlocfilehash: 3b1195e7503ff32e92cdbafde941b811dcf86427
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 715b9f0f6d8c56153d51c9c19b70ba253e508619229f52201a28f23c1902d26e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298615"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119123162"
 ---
 # <a name="d3dximage_fileformat-enumeration"></a>\_Enumeração de FILEformat D3DXIMAGE
 
@@ -51,7 +51,7 @@ typedef enum D3DXIMAGE_FILEFORMAT {
 <span id="D3DXIFF_BMP"></span><span id="d3dxiff_bmp"></span>**D3DXIFF \_ BMP**
 </dt> <dd>
 
-Formato de arquivo de bitmap do Windows (BMP).
+formato de arquivo de bitmap Windows (BMP).
 
 </dd> <dt>
 
@@ -83,17 +83,17 @@ Formato de arquivo da superfície do DirectDraw (DDS).
 
 </dd> <dt>
 
-<span id="D3DXIFF_PPM"></span><span id="d3dxiff_ppm"></span>**D3DXIFF \_ ppm**
+<span id="D3DXIFF_PPM"></span><span id="d3dxiff_ppm"></span>**\_Ppm D3DXIFF**
 </dt> <dd>
 
-Formato de arquivo pixmap portátil (PPM).
+formato de arquivo pixmap (PPM portátil).
 
 </dd> <dt>
 
 <span id="D3DXIFF_DIB"></span><span id="d3dxiff_dib"></span>**\_DIB D3DXIFF**
 </dt> <dd>
 
-Formato de arquivo DIB (bitmap independente de dispositivo) do Windows.
+Windows formato de arquivo DIB (bitmap independente de dispositivo).
 
 </dd> <dt>
 
@@ -128,9 +128,9 @@ A tabela a seguir lista os formatos de entrada e saída disponíveis.
 
 | Extensão do arquivo | Descrição                                                                                                                                                                                                                                                                                                                                        |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| .bmp           | Formato de bitmap do Windows. Contém um cabeçalho que descreve a resolução do dispositivo no qual o retângulo de pixels foi criado, as dimensões do retângulo, o tamanho da matriz de bits, uma paleta lógica e uma matriz de bits que define a relação entre os pixels na imagem de bitmap e as entradas na paleta lógica. |
+| .bmp           | Windows formato de bitmap. Contém um cabeçalho que descreve a resolução do dispositivo no qual o retângulo de pixels foi criado, as dimensões do retângulo, o tamanho da matriz de bits, uma paleta lógica e uma matriz de bits que define a relação entre os pixels na imagem de bitmap e as entradas na paleta lógica. |
 | .dds           | Formato do arquivo de superfície do DirectDraw. Armazena texturas, texturas de volume e mapas de ambiente cúbico, com ou sem os níveis de mipmap, e com ou sem a compactação de pixel. Consulte [DDS](../direct3ddds/dx-graphics-dds.md).                                                                                                                                       |
-| .dib           | DIB do Windows. Contém uma matriz de bits combinada com estruturas que especificam a largura e a altura da imagem de bitmap, o formato de cor do dispositivo no qual a imagem foi criada e a resolução do dispositivo usado para criar essa imagem.                                                                                                              |
+| .dib           | Windows DIB. Contém uma matriz de bits combinada com estruturas que especificam a largura e a altura da imagem de bitmap, o formato de cor do dispositivo no qual a imagem foi criada e a resolução do dispositivo usado para criar essa imagem.                                                                                                              |
 | . HDR           | Formato HDR. Codifica cada pixel como uma cor de RGBE de 32 bits, com 8 bits de mantissa para vermelho, verde e azul, e um expoente de 8 bits compartilhado. Cada canal é compactado separadamente com RLE (codificação de comprimento de execução).                                                                                                                                       |
 | .jpg           | Padrão JPEG. Especifica a compactação de variável de cores RGB de 24 bits e arquivos de documento de imagem TIFF de escala cinza de 8 bits.                                                                                                                                                                                                       |
 | . PFM           | Formato de mapa float portátil. Um formato de imagem de ponto flutuante não processado, sem nenhuma compactação. O cabeçalho do arquivo especifica a largura da imagem, a altura, o monocromático ou a cor e a ordem das palavras do computador. Os dados de pixel são armazenados como valores de ponto flutuante de 32 bits, com 3 valores por pixel para cor e um valor por pixel para monocromático.                                |

@@ -1,5 +1,5 @@
 ---
-description: Inclui opções que podem ser definidas ou recuperadas para a sessão atual do WinHTTP (Microsoft Windows HTTP Services).
+description: inclui opções que podem ser definidas ou recuperadas para a sessão atual do WinHTTP (Microsoft Windows HTTP Services).
 ms.assetid: 8464d794-b4a8-4c83-9e26-69257000102a
 title: Enumeração WinHttpRequestOption
 ms.topic: reference
@@ -13,18 +13,18 @@ api_type:
 - IDLDef
 api_location:
 - HttpRequest.idl
-ms.openlocfilehash: 32ae65f43cd04027027e43d29c49ed0f68f29c9f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ff4112538aff4c76c02e251f45e9dc78e6778633de6a5d93f6892dd87ff70c43
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501717"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119051874"
 ---
 # <a name="winhttprequestoption-enumeration"></a>Enumeração WinHttpRequestOption
 
-A enumeração **WinHttpRequestOption** inclui opções que podem ser definidas ou recuperadas para a sessão atual do WinHTTP (Microsoft Windows http Services).
+a enumeração **WinHttpRequestOption** inclui opções que podem ser definidas ou recuperadas para a sessão atual do WinHTTP (Microsoft Windows HTTP Services).
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -159,7 +159,7 @@ O valor padrão dessa opção é 0x0028, que indica que o SSL 2,0 ou SSL 3,0 pod
 <span id="WinHttpRequestOption_EnableTracing"></span><span id="winhttprequestoption_enabletracing"></span><span id="WINHTTPREQUESTOPTION_ENABLETRACING"></span>**WinHttpRequestOption \_ EnableTracing**
 </dt> <dd>
 
-Define ou recupera uma **variante** que indica se o rastreamento está habilitado no momento. Para obter mais informações sobre o recurso de rastreamento no Microsoft Windows HTTP Services (WinHTTP), consulte [recursos de rastreamento do WinHTTP](winhttptracecfg-exe--a-trace-configuration-tool.md).
+Define ou recupera uma **variante** que indica se o rastreamento está habilitado no momento. para obter mais informações sobre o recurso de rastreamento no Microsoft Windows serviços HTTP (WinHTTP), consulte [recursos de rastreamento do winhttp](winhttptracecfg-exe--a-trace-configuration-tool.md).
 
 </dd> <dt>
 
@@ -189,7 +189,7 @@ Habilita ou desabilita o suporte para autenticação do Passport. Por padrão, o
 
 Define ou recupera o número máximo de redirecionamentos que o WinHTTP segue; o padrão é 10. Esse limite impede que sites não autorizados tornem a parada do cliente WinHTTP após um grande número de redirecionamentos.
 
-**Windows XP com SP1 e windows 2000 com SP3:** Não há suporte para esse valor de enumeração.
+**Windows XP com SP1 e Windows 2000 com SP3:** Não há suporte para esse valor de enumeração.
 
 </dd> <dt>
 
@@ -198,7 +198,7 @@ Define ou recupera o número máximo de redirecionamentos que o WinHTTP segue; o
 
 Define ou recupera um conjunto associado no tamanho máximo da parte do cabeçalho da resposta do servidor. Essa ligação protege o cliente de um servidor mal-intencionado tentando paralisar o cliente enviando uma resposta com uma quantidade infinita de dados de cabeçalho. O valor padrão é 64 KB.
 
-**Windows XP com SP1 e windows 2000 com SP3:** Não há suporte para esse valor de enumeração.
+**Windows XP com SP1 e Windows 2000 com SP3:** Não há suporte para esse valor de enumeração.
 
 </dd> <dt>
 
@@ -207,7 +207,7 @@ Define ou recupera um conjunto associado no tamanho máximo da parte do cabeçal
 
 Define ou recupera um limite na quantidade de dados que será descarregada de respostas para reutilizar uma conexão. O padrão é 1 MB.
 
-**Windows XP com SP1 e windows 2000 com SP3:** Não há suporte para esse valor de enumeração.
+**Windows XP com SP1 e Windows 2000 com SP3:** Não há suporte para esse valor de enumeração.
 
 </dd> <dt>
 
@@ -216,7 +216,7 @@ Define ou recupera um limite na quantidade de dados que será descarregada de re
 
 Define ou recupera um valor booliano que indica se HTTP/1.1 ou HTTP/1.0 devem ser usados. O padrão é **true**, para que http/1.1 seja usado por padrão.
 
-**Windows XP com SP1 e windows 2000 com SP3:** Não há suporte para esse valor de enumeração.
+**Windows XP com SP1 e Windows 2000 com SP3:** Não há suporte para esse valor de enumeração.
 
 </dd> <dt>
 
@@ -225,16 +225,16 @@ Define ou recupera um valor booliano que indica se HTTP/1.1 ou HTTP/1.0 devem se
 
 Habilita a verificação de revogação de certificado do servidor durante a negociação SSL. Quando o servidor apresenta um certificado, uma verificação é executada para determinar se o certificado foi revogado pelo emissor. Se o certificado for realmente revogado ou a verificação de revogação falhar porque a CRL (lista de certificados revogados) não pode ser baixada, a solicitação falhará; esses erros de revogação não podem ser suprimidos.
 
-**Windows XP com SP1 e windows 2000 com SP3:** Não há suporte para esse valor de enumeração.
+**Windows XP com SP1 e Windows 2000 com SP3:** Não há suporte para esse valor de enumeração.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Defina uma opção especificando uma das constantes anteriores como o parâmetro da propriedade [**Option**](iwinhttprequest-option.md) .
+De definir uma opção especificando uma das constantes anteriores como o parâmetro da [**propriedade Option.**](iwinhttprequest-option.md)
 
 > [!Note]  
-> Para o Windows XP e o Windows 2000, consulte a seção [requisitos de tempo de execução](winhttp-start-page.md) da página inicial do WinHTTP.
+> Para Windows XP e Windows 2000, consulte [](winhttp-start-page.md) a seção Requisitos de tempo de executar da página inicial do WinHttp.
 
  
 
@@ -244,10 +244,10 @@ Defina uma opção especificando uma das constantes anteriores como o parâmetro
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente Windows XP, Windows 2000 Professional com \[ aplicativos de área de trabalho do SP3\]<br/>            |
-| Servidor mínimo com suporte<br/> | Windows Server 2003, Windows 2000 Server com aplicativos de área de trabalho do SP3 \[ somente\]<br/>         |
-| Redistribuível<br/>          | WinHTTP 5,0 e Internet Explorer 5, 1 ou posterior no Windows XP e no Windows 2000.<br/> |
-| INSERI<br/>                      | <dl> <dt>HttpRequest. idl</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows XP, Windows 2000 Professional somente com aplicativos da área de trabalho SP3 \[\]<br/>            |
+| Servidor mínimo com suporte<br/> | Windows Server 2003, Windows 2000 Server com somente aplicativos da área de trabalho SP3 \[\]<br/>         |
+| Redistribuível<br/>          | WinHTTP 5.0 e Internet Explorer 5.01 ou posterior no Windows XP e Windows 2000.<br/> |
+| Idl<br/>                      | <dl> <dt>HttpRequest.idl</dt> </dl> |
 
 
 

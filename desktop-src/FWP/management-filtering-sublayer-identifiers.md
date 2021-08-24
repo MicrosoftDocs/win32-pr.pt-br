@@ -22,16 +22,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e015d590c19395987bbd47d1c3c4b918296ab5f3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d597fa1b75f6c965da9cf8d71bcc3e729d0b0b2f4f4220c984a1be8c94c09d39
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824658"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119068876"
 ---
 # <a name="filtering-sublayer-identifiers"></a>Filtrando identificadores de subcamadas
 
-Os identificadores de subcamadas da WFP (plataforma de filtragem do Windows) são representados por um GUID.
+os identificadores de subcamadas da WFP (plataforma de filtragem de Windows) são representados por um GUID.
 
 Esses identificadores são definidos da seguinte maneira.
 
@@ -45,7 +45,7 @@ Esses identificadores são definidos da seguinte maneira.
 Os filtros de percurso de borda são adicionados a essa subcamada.
 
 > [!Note]  
-> Para o Windows 7 e posterior, use a **\_ travessia de \_ borda \_ da subcamada FWPM**.
+> para o Windows 7 e posterior, use a **\_ travessia de \_ borda \_ da subcamada FWPM**.
 
  
 
@@ -70,7 +70,7 @@ Esta é a subcamada com o menor peso. Ele é usado somente para filtros de inspe
 Os filtros de proteção de DoS IPsec são adicionados a essa subcamada.
 
 > [!Note]  
-> Disponível apenas no Windows Vista com SP1, Windows Server 2008 e posterior.
+> disponível somente no Windows Vista com SP1, Windows Server 2008 e posterior.
 
  
 
@@ -85,7 +85,7 @@ Os filtros de proteção de DoS IPsec são adicionados a essa subcamada.
 Os filtros de túnel de saída de encaminhamento IPsec são adicionados a essa subcamada.
 
 > [!Note]  
-> Disponível apenas no Windows 7, Windows Server 2008 R2 e posterior.
+> disponível somente no Windows 7, Windows Server 2008 R2 e posterior.
 
  
 
@@ -150,7 +150,7 @@ Os filtros de descarregamento TCP Chimney são adicionados a essa subcamada.
 Os filtros de modelo TCP são adicionados a essa subcamada.
 
 > [!Note]  
-> Disponível somente no Windows 8, Windows Server 2012 e posterior.
+> disponível somente em Windows 8, Windows Server 2012 e posterior.
 
  
 
@@ -173,9 +173,9 @@ Essa subcamada hospeda todos os filtros que não estão atribuídos a nenhuma da
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Fwpmu. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Fwpmu. h</dt> </dl> |
 
 
 

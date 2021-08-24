@@ -1,19 +1,19 @@
 ---
-description: Mostra como recodificar um arquivo de mídia para o formato de mídia do Windows.
+description: Mostra como recodificar um arquivo de mídia para Windows mídia.
 ms.assetid: 1e958f26-3ac1-4b20-abf5-d8a65ba38112
-title: Exemplo de transcodificação
+title: Exemplo de transcódigo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 528ef8dbed6d6ae18f534210caa5a2cc57516c75
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3b2d185d5a486493053d0b85ae48257cc6a7a2640aea9cd5cfc839616cd7e690
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104165287"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119034614"
 ---
-# <a name="transcode-sample"></a>Exemplo de transcodificação
+# <a name="transcode-sample"></a>Exemplo de transcódigo
 
-Mostra como recodificar um arquivo de mídia para o formato de mídia do Windows.
+Mostra como recodificar um arquivo de mídia para Windows mídia.
 
 ## <a name="apis-demonstrated"></a>APIs demonstradas
 
@@ -38,13 +38,13 @@ Este exemplo demonstra as APIs a seguir.
 
 ## <a name="downloading-the-sample"></a>Baixando o exemplo
 
-Este exemplo está disponível no [repositório GitHub de exemplos clássicos do Windows](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/mediafoundation/Transcode).
+Este exemplo está disponível no repositório [Windows github de exemplos clássicos.](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/mediafoundation/Transcode)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[API de transcodificação](transcode-api.md)
+[API de transcodificar](transcode-api.md)
 </dt> <dt>
 
 [Exemplos de SDK do Media Foundation](media-foundation-sdk-samples.md)

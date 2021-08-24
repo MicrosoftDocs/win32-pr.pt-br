@@ -1,23 +1,23 @@
 ---
-description: A partir do Windows 8.1, o codec JPEG do Windows Imaging Component (WIC) dá suporte à leitura e gravação de dados de imagem em seu formato YCbCr nativo.
+description: a partir do Windows 8.1, o codec JPEG do componente de Windows Imaging (WIC) dá suporte à leitura e gravação de dados de imagem em seu formato YCbCr nativo.
 ms.assetid: 50B89A96-72E8-4771-9109-207F4CDD06CB
 title: Suporte a JPEG YCbCr
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b6a8f05fe55e724a12513f24fc7401d277ebf097
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9f2f8548a458f70265d248e1d686ad3bc300d7cfee2bc1e0ab2262ee652f0d9b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921797"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119086762"
 ---
 # <a name="jpeg-ycbcr-support"></a>Suporte a JPEG YCbCr
 
-A partir do Windows 8.1, o codec JPEG do [Windows Imaging Component (WIC)](-wic-about-windows-imaging-codec.md) dá suporte à leitura e gravação de dados de imagem em seu formulário YC<sub>b</sub>C<sub>r</sub> nativo. O suporte do WIC YC<sub>b</sub>c<sub>r</sub> pode ser usado em conjunto com [Direct2D](../direct2d/direct2d-portal.md) para renderizar dados do YC<sub>b</sub>C<sub>r</sub> pixel com um efeito de imagem. Além disso, o codec JPEG WIC pode consumir dados YC<sub>b</sub>C<sub>r</sub> pixel produzidos por determinados drivers de câmera por meio de Media Foundation.
+a partir do Windows 8.1, o codec JPEG do [componente de Windows Imaging (WIC)](-wic-about-windows-imaging-codec.md) dá suporte à leitura e gravação de dados de imagem em seu formulário YC<sub>b</sub>C<sub>r</sub> nativo. o suporte do WIC YC<sub>b</sub>c<sub>r</sub> pode ser usado em conjunto com [Direct2D](../direct2d/direct2d-portal.md) para renderizar dados do YC<sub>b</sub>C<sub>r</sub> pixel com um efeito de imagem. Além disso, o codec JPEG WIC pode consumir dados YC<sub>b</sub>C<sub>r</sub> pixel produzidos por determinados drivers de câmera por meio de Media Foundation.
 
-Os dados YC<sub>b</sub>C<sub>r</sub> pixel consumem significativamente menos memória do que os formatos de pixel BGRA padrão. Além disso, o acesso<sub>aos dados da</sub> YC<sub>b</sub>C permite descarregar alguns estágios do pipeline de decodificação/codificação JPEG em Direct2D que é acelerado por GPU. Usando o YC<sub>b</sub>C<sub>r</sub>, seu aplicativo pode reduzir o consumo de memória JPEG e tempos de carregamento para as mesmas imagens de tamanho e qualidade. Ou, seu aplicativo pode usar imagens JPEG mais de resolução mais alta sem sofrer penalidades de desempenho.
+Os dados YC<sub>b</sub>C<sub>r</sub> pixel consumem significativamente menos memória do que os formatos de pixel BGRA padrão. além disso, o acesso<sub>aos dados de</sub> YC<sub>b</sub>C permite descarregar alguns estágios do pipeline de decodificação/codificação JPEG para Direct2D que é acelerada por GPU. Usando o YC<sub>b</sub>C<sub>r</sub>, seu aplicativo pode reduzir o consumo de memória JPEG e tempos de carregamento para as mesmas imagens de tamanho e qualidade. Ou, seu aplicativo pode usar imagens JPEG mais de resolução mais alta sem sofrer penalidades de desempenho.
 
-Este tópico descreve como os dados YC<sub>b</sub>C<sub>r</sub> funcionam e como usá-los no WIC e no Direct2D.
+Este tópico descreve como os dados YC<sub>b</sub>C<sub>r</sub> funcionam e como usá-los em WIC e Direct2D.
 
 -   [Sobre dados JPEG YC<sub>b</sub>C<sub>r</sub>](#about-jpeg-ycbcr-data)
     -   [Modelo de cor do YC<sub>b</sub>C<sub>r</sub>](#ycbcr-color-model)
@@ -26,13 +26,13 @@ Este tópico descreve como os dados YC<sub>b</sub>C<sub>r</sub> funcionam e como
     -   [Uso de JPEG de YC<sub>b</sub>C<sub>r</sub>](#jpeg-usage-of-ycbcr)
 -   [Usando dados JPEG YC<sub>b</sub>C<sub>r</sub>](#using-jpeg-ycbcr-data)
     -   [Usando imagens YC<sub>b</sub>C<sub>r</sub> JPEG](#using-ycbcr-jpeg-images)
-    -   [APIs do Windows Imaging Component](#windows-imaging-component-apis)
-    -   [APIs do Direct2D](#direct2d-apis)
+    -   [Windows APIs do componente de geração de imagens](#windows-imaging-component-apis)
+    -   [Direct2D API](#direct2d-apis)
     -   [Determinando se há suporte para a configuração YC<sub>b</sub>C<sub>r</sub>](#determining-if-the-ycbcr-configuration-is-supported)
     -   [Decodificando dados de YC<sub>b</sub>C<sub>r</sub> pixel](#decoding-ycbcr-pixel-data)
     -   [Transformando dados de pixel YC<sub>b</sub>C<sub>r</sub>](#transforming-ycbcr-pixel-data)
     -   [Codificando dados de YC<sub>b</sub>C<sub>r</sub> pixel](#encoding-ycbcr-pixel-data)
-    -   [Decodificando dados do YC<sub>b</sub>C<sub>r</sub> pixel no Windows 10](#decoding-ycbcr-pixel-data-in-windows-10)
+    -   [Decodificando dados de YC<sub>b</sub>C<sub>r</sub> pixel no Windows 10](#decoding-ycbcr-pixel-data-in-windows-10)
 -   [Tópicos relacionados](#related-topics)
 
 ## <a name="about-jpeg-ycsubbsubcsubrsub-data"></a>Sobre dados JPEG YC<sub>b</sub>C<sub>r</sub>
@@ -41,7 +41,7 @@ Esta seção explica alguns dos principais conceitos necessários para entender 
 
 ### <a name="ycsubbsubcsubrsub-color-model"></a>Modelo de cor do YC<sub>b</sub>C<sub>r</sub>
 
-O WIC no Windows 8 e versões anteriores oferecem suporte a quatro [modelos de cores](-wic-codec-native-pixel-formats.md)diferentes, o mais comum deles é o RGB/BGR. Esse modelo de cores define os dados de cores usando componentes vermelhos, verdes e azuis; um quarto componente alfa também pode ser usado.
+o WIC no Windows 8 e versões anteriores oferecem suporte a quatro [modelos de cores](-wic-codec-native-pixel-formats.md)diferentes, o mais comum deles é o RGB/BGR. Esse modelo de cores define os dados de cores usando componentes vermelhos, verdes e azuis; um quarto componente alfa também pode ser usado.
 
 Aqui está uma imagem decomposta em seus componentes vermelho, verde e azul.
 
@@ -71,9 +71,9 @@ Veja a seguir uma figura que mostra dados de pixels de x<sub>b</sub>c<sub>r</sub
 
 ![uma figura que mostra dados de pixel CbCr e intercalados do planar, um layout de memória YCbCr comum.](graphics/ycbcr4.png)
 
-Tanto no WIC quanto no Direct2D, cada plano de cores é tratado como seu próprio objeto distinto (um [IWICBitmapSource](-wic-imp-iwicbitmapsource.md) ou [**ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap)) e, coletivamente, esses planos formam os dados de backup de uma imagem do YC <sub>b</sub>C <sub>r</sub> .
+tanto no WIC quanto no Direct2D, cada plano de cores é tratado como seu próprio objeto distinto (um [IWICBitmapSource](-wic-imp-iwicbitmapsource.md) ou [**ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap)) e, coletivamente, esses planos formam os dados de backup de uma imagem do YC <sub>b</sub>C <sub>r</sub> .
 
-Embora o WIC dê suporte ao acesso a dados de YC<sub>b</sub>C<sub>r</sub> nas configurações de 2 e 3 planos, o Direct2D dá suporte apenas ao primeiro (s e c<sub>b</sub><sub>r</sub>). Portanto, ao usar o WIC e o Direct2D juntos, você sempre deve usar a configuração de 2 planos YC<sub>b</sub>C<sub>r</sub> .
+embora o WIC dê suporte ao acesso a dados de YC<sub>b</sub>C<sub>r</sub> nas configurações de 2 e 3 planos, Direct2D dá suporte apenas para o primeiro (s e c<sub>b</sub><sub>r</sub>). portanto, ao usar o WIC e Direct2D juntos, você sempre deve usar a configuração de 2 planos YC<sub>b</sub>C<sub>r</sub> .
 
 ### <a name="chroma-subsampling"></a>Subamostragem croma
 
@@ -112,63 +112,63 @@ Fazendo com que o codec JPEG produza dados YC<sub>b</sub>C<sub>r</sub> , podemos
 
 ## <a name="using-jpeg-ycsubbsubcsubrsub-data"></a>Usando dados JPEG YC<sub>b</sub>C<sub>r</sub>
 
-Esta seção explica como usar o WIC e o Direct2D para operar em dados do YC<sub>b</sub>C<sub>r</sub> .
+esta seção explica como usar o WIC e Direct2D para operar em dados de YC<sub>b</sub>C<sub>r</sub> .
 
-Para ver as diretrizes deste documento usadas na prática, consulte o [exemplo de otimizações do JPEG YCbCr no Direct2D e o WIC](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/JPEG%20YCbCr%20optimizations%20in%20Direct2D%20and%20WIC%20sample) , que demonstra todas as etapas necessárias para decodificar e renderizar o conteúdo do YC<sub>b</sub>C<sub>r</sub> em um aplicativo Direct2D.
+para ver as diretrizes deste documento usadas na prática, confira o [exemplo de otimizações do JPEG YCbCr no Direct2D e no WIC](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/JPEG%20YCbCr%20optimizations%20in%20Direct2D%20and%20WIC%20sample) , que demonstra todas as etapas necessárias para decodificar e renderizar o conteúdo<sub>do YC C</sub><sub>r</sub> em um aplicativo de Direct2D.
 
 ### <a name="using-ycsubbsubcsubrsub-jpeg-images"></a>Usando imagens YC<sub>b</sub>C<sub>r</sub> JPEG
 
 A grande maioria das imagens JPEG é armazenada como YC<sub>b</sub>C<sub>r</sub>. Alguns JPEGs contêm dados CMYK ou tons de cinza e não usam YC<sub>b</sub>C<sub>r</sub>. Isso significa que você normalmente, mas nem sempre, pode usar diretamente conteúdo JPEG pré-existente sem nenhuma modificação.
 
-O WIC e o Direct2D não dão suporte a todas as configurações de YC<sub>b</sub>c<sub>r</sub> possíveis e o suporte a YC<sub>b</sub>c<sub>r</sub> no Direct2D depende do driver e hardware de gráficos subjacentes. Por isso, um pipeline de geração de imagens de uso geral precisa ser robusto para imagens que não usam YC<sub>b</sub>C<sub>r</sub> (incluindo outros formatos de imagem comuns, como png ou bmp), ou para casos em que o suporte a C<sub>r</sub> do YC<sub>b</sub>não está disponível. Recomendamos que você mantenha seu pipeline de imagens baseado em BGRA existente e habilite o YC<sub>b</sub>C<sub>r</sub> como uma otimização de desempenho, quando disponível.
+O WIC e Direct2D não suportam todas as configurações possíveis do YC<sub>b</sub>C<sub>r,</sub> e o suporte a YC<sub>b</sub>C<sub>r</sub> no Direct2D depende do hardware e driver de gráficos subjacentes. Por isso, um pipeline de imagens de uso geral precisa ser robusto para imagens que não usam YC<sub>b</sub>C<sub>r</sub> (incluindo outros formatos de imagem comuns, como PNG ou BMP) ou para casos em que o suporte a YC<sub>b</sub>C<sub>r</sub> não está disponível. Recomendamos que você mantenha seu pipeline de imagens baseado em BGRA existente e habilita o YC<sub>b</sub>C<sub>r</sub> como uma otimização de desempenho quando disponível.
 
-### <a name="windows-imaging-component-apis"></a>APIs do Windows Imaging Component
+### <a name="windows-imaging-component-apis"></a>Windows APIs de componente de imagens
 
-O WIC no Windows 8.1 adiciona três novas interfaces para fornecer acesso aos dados JPEG YC<sub>b</sub>C<sub>r</sub> .
+O WIC Windows 8.1 adiciona três novas interfaces para fornecer acesso aos dados JPEG YC<sub>b</sub>C<sub>r.</sub>
 
 ### <a name="iwicplanarbitmapsourcetransform"></a>IWICPlanarBitmapSourceTransform
 
-[**IWICPlanarBitmapSourceTransform**](/windows/desktop/api/Wincodec/nn-wincodec-iwicplanarbitmapsourcetransform) é análogo a [**IWICBitmapSourceTransform**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsourcetransform), exceto pelo fato de que ele produz pixels em uma configuração de planar, incluindo dados de YC <sub>b</sub>C <sub>r</sub> . Você pode obter essa interface chamando QueryInterface em uma implementação de [**IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) que dá suporte ao acesso planar. Isso inclui a implementação do codec JPEG de [**IWICBitmapFrameDecode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode) , bem como [**IWICBitmapScaler**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapscaler), [**IWICBitmapFlipRotator**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapfliprotator)e [**IWICColorTransform**](/windows/desktop/api/Wincodec/nn-wincodec-iwiccolortransform).
+[**IWICPlanarBitmapSourceTransform**](/windows/desktop/api/Wincodec/nn-wincodec-iwicplanarbitmapsourcetransform) é análogo a [**IWICBitmapSourceTransform**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsourcetransform), exceto pelo fato de que ele produz pixels em uma configuração planar, incluindo dados de YC <sub>b</sub>C <sub>r.</sub> Você pode obter essa interface chamando QueryInterface em uma implementação [**de IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) que dá suporte ao acesso planar. Isso inclui a implementação do codec JPEG de [**IWICBitmapFrameDecode,**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode) bem como [**IWICBitmapScaler,**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapscaler) [**IWICBitmapFlipRotator**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapfliprotator)e [**IWICColorTransform.**](/windows/desktop/api/Wincodec/nn-wincodec-iwiccolortransform)
 
 ### <a name="iwicplanarbitmapframeencode"></a>IWICPlanarBitmapFrameEncode
 
-O [**IWICPlanarBitmapFrameEncode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicplanarbitmapframeencode) fornece a capacidade de codificar dados de pixel planar, incluindo dados do YC <sub>b</sub>C <sub>r</sub> . Você pode obter essa interface chamando QueryInterface na implementação do codec JPEG do [**IWICBitmapFrameEncode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode).
+[**IWICPlanarBitmapFrameEncode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicplanarbitmapframeencode) fornece a capacidade de codificar dados de pixel planar, incluindo dados de YC <sub>b</sub>C <sub>r.</sub> Você pode obter essa interface chamando QueryInterface na implementação do codec JPEG [**de IWICBitmapFrameEncode.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode)
 
 ### <a name="iwicplanarformatconverter"></a>IWICPlanarFormatConverter
 
-[**IWICPlanarFormatConverter**](/windows/desktop/api/Wincodec/nn-wincodec-iwicplanarformatconverter) permite que o [**IWICFormatConverter**](/windows/desktop/api/Wincodec/nn-wincodec-iwicformatconverter) consuma dados de pixel planar, incluindo YC <sub>b</sub>C <sub>r</sub>, e converta-o em um formato de pixel intercalado. Ele não expõe a capacidade de converter dados de pixel intercalados em um formato planar. Você pode obter essa interface chamando QueryInterface na implementação fornecida pelo Windows do **IWICFormatConverter**.
+[**IWICPlanarFormatConverter**](/windows/desktop/api/Wincodec/nn-wincodec-iwicplanarformatconverter) permite que [**IWICFormatConverter**](/windows/desktop/api/Wincodec/nn-wincodec-iwicformatconverter) consuma dados de pixel planar, incluindo YC <sub>b</sub>C <sub>r e</sub>converta-os em um formato de pixel intercalado. Ele não expõe a capacidade de converter dados de pixel intercalados em um formato planar. Você pode obter essa interface chamando QueryInterface no Windows implementação fornecida de **IWICFormatConverter**.
 
-### <a name="direct2d-apis"></a>APIs do Direct2D
+### <a name="direct2d-apis"></a>Direct2D Apis
 
-Direct2D em Windows 8.1 dá suporte a dados de pixel do YC<sub>b</sub>c<sub>r</sub> com o novo efeito de imagem do YC<sub>b</sub>c<sub>r</sub> . Esse efeito fornece a capacidade de renderizar dados de YC<sub>b</sub>C<sub>r</sub> . O efeito usa como entrada duas interfaces [**ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap) : uma contendo dados Y planar no formato \_ UNORM de R8 de formato dxgi \_ \_ e uma contendo dados intercalados de CbCr no formato \_ dxgi \_ R8G8 \_ UNORM. Normalmente, você usa esse efeito no lugar do **ID2D1Bitmap** que teria contido nos dados do BGRA pixel.
+Direct2D em Windows 8.1 dá suporte a dados de pixel planar de YC<sub>b</sub>C<sub>r</sub> com o novo efeito de imagem R<sub>R</sub> do YC<sub>b</sub>C . Esse efeito fornece a capacidade de renderizar dados YC<sub>b</sub>C<sub>r.</sub> O efeito assume como entrada duas interfaces [**ID2D1Bitmap:**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap) uma contendo dados Y planar no formato UNORM DXGI FORMAT R8 e outra contendo dados CbCr intercalados no formato \_ \_ \_ DXGI \_ FORMAT \_ R8G8 \_ UNORM. Normalmente, você usa esse efeito no lugar do **ID2D1Bitmap** que teria contido dados de pixel BGRA.
 
-O efeito de imagem YC<sub>b</sub>c<sub>r</sub> deve ser usado em conjunto com as APIs do WIC YC<sub>b</sub>c<sub>r</sub> que fornecem os dados de YC<sub>b</sub>c<sub>r</sub> . Isso efetivamente atua para descarregar parte do trabalho de decodificação da CPU para a GPU, onde ela pode ser processada muito mais rapidamente e em paralelo.
+O efeito de imagem YC<sub>b</sub>C<sub>r</sub> destina-se a ser usado em conjunto com as APIs do WIC YC<sub>b</sub>C<sub>r</sub> que fornecem os dados do AC<sub>b</sub>C<sub>r.</sub> Isso atua efetivamente para descarregar parte do trabalho de decodificar da CPU para a GPU, em que ela pode ser processada muito mais rapidamente e em paralelo.
 
-### <a name="determining-if-the-ycsubbsubcsubrsub-configuration-is-supported"></a>Determinando se há suporte para a configuração YC<sub>b</sub>C<sub>r</sub>
+### <a name="determining-if-the-ycsubbsubcsubrsub-configuration-is-supported"></a>Determinando se há suporte para a configuração do<sub>AC</sub> <sub>b</sub>C r
 
-Conforme observado anteriormente, seu aplicativo deve ser robusto para casos em que o suporte a YC<sub>b</sub>C<sub>r</sub> não está disponível. Esta seção aborda as condições que seu aplicativo deve verificar. Se qualquer uma das verificações a seguir falhar, seu aplicativo deverá retornar a um pipeline padrão baseado em BGRA.
+Conforme visto anteriormente, seu aplicativo deve ser robusto para casos em que o suporte a YC<sub>b</sub>C<sub>r</sub> não está disponível. Esta seção discute as condições que seu aplicativo deve verificar. Se qualquer uma das verificações a seguir falhar, seu aplicativo deverá voltar para um pipeline padrão baseado em BGRA.
 
-### <a name="does-the-wic-component-support-ycsubbsubcsubrsub-data-access"></a>O componente do WIC dá suporte ao acesso a dados do YC<sub>b</sub>C<sub>r</sub> ?
+### <a name="does-the-wic-component-support-ycsubbsubcsubrsub-data-access"></a>O componente WIC dá suporte ao acesso a dados YC<sub>b</sub>C<sub>r?</sub>
 
-Somente o codec JPEG fornecido pelo Windows e determinadas transformações de WIC dão suporte ao acesso a dados YC<sub>b</sub>C<sub>r</sub> . Para obter uma lista completa, consulte a seção [Windows Imaging Component APIs](#windows-imaging-component-apis) .
+Somente o Windows codec JPEG fornecido e determinadas transformaçãos WIC suportam acesso a dados YC<sub>b</sub>C<sub>r.</sub> Para ver uma lista completa, consulte a [seção APIs Windows componente de imagens.](#windows-imaging-component-apis)
 
-Para obter uma das interfaces planar YC<sub>b</sub>C<sub>r</sub> , chame QueryInterface na interface original. Isso falhará se o componente não oferecer suporte ao acesso a dados YC<sub>b</sub>C<sub>r</sub> .
+Para obter uma das interfaces do YC<sub>b</sub>C<sub>r</sub> planar, chame QueryInterface na interface original. Isso falhará se o componente não dá suporte ao acesso a dados YC<sub>b</sub>C<sub>r.</sub>
 
-### <a name="is-the-requested-wic-transform-supported-for-ycsubbsubcsubrsub"></a>A transformação de WIC solicitada tem suporte para o YC<sub>b</sub>C<sub>r</sub>?
+### <a name="is-the-requested-wic-transform-supported-for-ycsubbsubcsubrsub"></a>A transformação WIC solicitada tem suporte para YC<sub>b</sub>C<sub>r</sub>?
 
-Depois de obter um [**IWICPlanarBitmapSourceTransform**](/windows/desktop/api/Wincodec/nn-wincodec-iwicplanarbitmapsourcetransform), você deve primeiro chamar [**DoesSupportTransform**](/windows/desktop/api/Wincodec/nf-wincodec-iwicplanarbitmapsourcetransform-doessupporttransform). Esse método usa como parâmetros de entrada o conjunto completo de transformações que você deseja aplicar<sub>aos dados planar</sub> YC<sub>b</sub>C e retorna um valor booleano que indica suporte, bem como as dimensões mais próximas para o tamanho solicitado que pode ser retornado. Você deve verificar todos os três valores antes de acessar os dados de pixel com [**IWICPlanarBitmapSourceTransform:: CopyPixels**](/windows/desktop/api/Wincodec/nf-wincodec-iwicplanarbitmapsourcetransform-copypixels).
+Depois de obter [**um IWICPlanarBitmapSourceTransform,**](/windows/desktop/api/Wincodec/nn-wincodec-iwicplanarbitmapsourcetransform)primeiro você deve chamar [**DoesSupportTransform**](/windows/desktop/api/Wincodec/nf-wincodec-iwicplanarbitmapsourcetransform-doessupporttransform). Esse método assume como parâmetros de entrada o conjunto completo de transformaçãos que você deseja aplicar aos dados planar YC<sub>b</sub>C<sub>r</sub> e retorna um booliana indicando suporte, bem como as dimensões mais próximas ao tamanho solicitado que pode ser retornado. Você deve verificar todos os três valores antes de acessar os dados de pixel [**com IWICPlanarBitmapSourceTransform::CopyPixels**](/windows/desktop/api/Wincodec/nf-wincodec-iwicplanarbitmapsourcetransform-copypixels).
 
-Esse padrão é semelhante a como o [**IWICBitmapSourceTransform**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsourcetransform) é usado.
+Esse padrão é semelhante a [**como IWICBitmapSourceTransform**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsourcetransform) é usado.
 
-### <a name="does-the-graphics-driver-support-the-features-necessary-to-use-ycsubbsubcsubrsub-with-direct2d"></a>O driver de gráficos dá suporte aos recursos necessários para usar o YC<sub>b</sub>C<sub>r</sub> com Direct2D?
+### <a name="does-the-graphics-driver-support-the-features-necessary-to-use-ycsubbsubcsubrsub-with-direct2d"></a>O driver de elementos gráficos dá suporte aos recursos necessários para usar o YC<sub>b</sub>C<sub>r</sub> com Direct2D?
 
-Essa verificação só será necessária se você estiver usando o efeito Direct2D YC<sub>b</sub>c<sub>r</sub> para renderizar o conteúdo do YC<sub>b</sub>c<sub>r</sub> . O Direct2D armazena dados de YC<sub>b</sub>C<sub>r</sub> usando os formatos de de \_ R8 de formato dxgi \_ \_ UNORM e dxgi \_ \_ R8G8 \_ UNORM de pixel, que não estão disponíveis em todos os drivers gráficos.
+Essa verificação só será necessária se você estiver usando o efeito Direct2D YC<sub>b</sub>C<sub>r para</sub> renderizar o conteúdo de YC<sub>b</sub>C<sub>r.</sub> Direct2D armazena dados YC<sub>b</sub>C<sub>r</sub> usando os formatos de pixel UNORM DXGI \_ FORMAT \_ R8 E \_ DXGI \_ \_ R8G8 \_ UNORM, que não estão disponíveis em todos os drivers gráficos.
 
-Antes de usar o efeito de imagem YC <sub>b</sub>C <sub>r</sub> , você deve chamar [**ID2D1DeviceContext:: IsDxgiFormatSupported**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-isdxgiformatsupported) para garantir que os dois formatos tenham suporte do driver.
+Antes de usar o efeito de imagem YC <sub>b</sub>C <sub>r,</sub> você deve chamar [**ID2D1DeviceContext::IsDxgiFormatSupported**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-isdxgiformatsupported) para garantir que ambos os formatos sejam compatíveis com o driver.
 
 ### <a name="sample-code"></a>Código de exemplo
 
-Veja abaixo um exemplo de código que demonstra as verificações recomendadas. Este exemplo foi tirado das [otimizações JPEG YCbCr no exemplo de Direct2D e WIC](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/JPEG%20YCbCr%20optimizations%20in%20Direct2D%20and%20WIC%20sample).
+Veja abaixo um exemplo de código que demonstra as verificações recomendadas. Este exemplo foi retirado das [otimizações JPEG YCbCr no exemplo Direct2D e WIC](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/JPEG%20YCbCr%20optimizations%20in%20Direct2D%20and%20WIC%20sample).
 
 
 ```C++
@@ -218,17 +218,17 @@ bool DirectXSampleRenderer::DoesDriverSupportYCbCr()
 
 
 
-### <a name="decoding-ycsubbsubcsubrsub-pixel-data"></a>Decodificando dados de YC<sub>b</sub>C<sub>r</sub> pixel
+### <a name="decoding-ycsubbsubcsubrsub-pixel-data"></a>Decodificação de dados de pixel YC<sub>b</sub><sub>c r</sub>
 
-Se você quiser obter dados de YC <sub>b</sub>C <sub>r</sub> pixel, deverá chamar [**IWICPlanarBitmapSourceTransform:: CopyPixels**](/windows/desktop/api/Wincodec/nf-wincodec-iwicplanarbitmapsourcetransform-copypixels). Esse método copia dados de pixel em uma matriz de estruturas [**WICBitmapPlane**](/windows/desktop/api/Wincodec/ns-wincodec-wicbitmapplane) preenchidas, uma para cada plano de dados desejado (por exemplo, Y e c <sub>b</sub><sub>r</sub>). Um **WICBitmapPlane** contém informações sobre os dados de pixel e aponta para o buffer de memória que receberá os dados.
+Se você quiser obter dados de pixel YC <sub>b</sub>C <sub>r,</sub> chame [**IWICPlanarBitmapSourceTransform::CopyPixels**](/windows/desktop/api/Wincodec/nf-wincodec-iwicplanarbitmapsourcetransform-copypixels). Esse método copia dados de pixel em uma matriz de estruturas [**WICBitmapPlane**](/windows/desktop/api/Wincodec/ns-wincodec-wicbitmapplane) preenchidas, uma para cada plano de dados que você deseja (por exemplo, Y e C <sub>b</sub>C <sub>r</sub>). Um **WICBitmapPlane** contém informações sobre os dados de pixel e aponta para o buffer de memória que receberá os dados.
 
-Se você quiser usar os dados do YC <sub>b</sub>C <sub>r</sub> pixel com outras APIs do WIC, você deve criar um [**IWICBitmap**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmap)configurado adequadamente, chamar [**Lock**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmap-lock) para obter o buffer de memória subjacente e associar o buffer ao [**WICBitmapPlane**](/windows/desktop/api/Wincodec/ns-wincodec-wicbitmapplane) usado para receber os dados do YC <sub>b</sub>C <sub>r</sub> pixel. Em seguida, você pode usar o [IWICBitmap](-wic-imp-iwicbitmapdecoder.md) normalmente.
+Se você quiser usar os dados de pixel do YC <sub>b</sub>C <sub>r</sub> com outras APIs do WIC, deverá criar um [**IWICBitmap**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmap)configurado adequadamente, chamar [**Lock**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmap-lock) para obter o buffer de memória subjacente e associar o buffer ao [**WICBitmapPlane**](/windows/desktop/api/Wincodec/ns-wincodec-wicbitmapplane) usado para receber os dados de pixel do YC <sub>b</sub>C <sub>r.</sub> Em seguida, você pode usar [o IWICBitmap](-wic-imp-iwicbitmapdecoder.md) normalmente.
 
-Por fim, se você quiser renderizar os dados YC <sub>b</sub>C <sub>r</sub> em Direct2D, deverá criar um [**ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap) de cada [**IWICBitmap**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmap) e usá-los como fonte para o efeito de imagem do YC <sub>b</sub>C <sub>r</sub> . O WIC permite que você solicite várias configurações de planar. Ao interoperar com o Direct2D, você deve solicitar dois planos, um usando \_ o GUID WICPixelFormat8bppY e o outro usando o GUID \_ WICPixelFormat16bppCbCr, pois essa é a configuração esperada por Direct2D.
+Por fim, se você quiser renderizar os dados do YC <sub>b</sub>C <sub>r</sub> no Direct2D, deverá criar um [**ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap) de cada [**IWICBitmap**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmap) e usá-los como origem para o efeito de imagem YC <sub>b</sub>C <sub>r.</sub> O WIC permite que você solicite várias configurações de plano. Ao interoperar com o Direct2D você deve solicitar dois planos, um usando GUID \_ WICPixelFormat8bppY e o outro usando GUID WICPixelFormat16bppCbCr, pois essa é a configuração esperada pelo \_ Direct2D.
 
 ### <a name="code-sample"></a>Exemplo de código
 
-Veja abaixo um exemplo de código que demonstra as etapas para decodificar e renderizar dados YC<sub>b</sub>C<sub>r</sub> em Direct2D. Este exemplo foi tirado das [otimizações JPEG YCbCr no exemplo de Direct2D e WIC](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/JPEG%20YCbCr%20optimizations%20in%20Direct2D%20and%20WIC%20sample).
+Veja abaixo um exemplo de código que demonstra as etapas para decodificar e renderizar dados do YC<sub>b</sub>C<sub>r</sub> Direct2D. Este exemplo foi retirado das [otimizações JPEG YCbCr no exemplo Direct2D e WIC](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/JPEG%20YCbCr%20optimizations%20in%20Direct2D%20and%20WIC%20sample).
 
 
 ```C++
@@ -307,46 +307,46 @@ void DirectXSampleRenderer::LockBitmap(
 
 
 
-### <a name="transforming-ycsubbsubcsubrsub-pixel-data"></a>Transformando dados de pixel YC<sub>b</sub>C<sub>r</sub>
+### <a name="transforming-ycsubbsubcsubrsub-pixel-data"></a>Transformando dados de pixel YC<sub>b</sub><sub>c r</sub>
 
-A transformação de dados YC <sub>b</sub>C <sub>r</sub> é quase idêntica à decodificação, pois ambos envolvem [**IWICPlanarBitmapSourceTransform**](/windows/desktop/api/Wincodec/nn-wincodec-iwicplanarbitmapsourcetransform). A única diferença é o objeto WIC do qual você obteve a interface. O dimensionador fornecido pelo Windows, o flip rotação e a transformação de cor dão suporte ao acesso de YC<sub>b</sub>C<sub>r</sub> .
+Transformar dados YC <sub>b</sub>C <sub>r</sub> é quase idêntico à decodificação, pois ambos envolvem [**IWICPlanarBitmapSourceTransform.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicplanarbitmapsourcetransform) A única diferença é de qual objeto WIC você obteve a interface. O Windows dimensionador fornecido, o rotator de invasão e a transformação de cores são todos os suportes ao acesso de YC<sub>b</sub>C<sub>r.</sub>
 
-### <a name="chaining-transforms-together"></a>Encadeamento de transformações em conjunto
+### <a name="chaining-transforms-together"></a>Encadeamento de transformaçãos em conjunto
 
-O WIC dá suporte à noção de encadear várias transformações. Por exemplo, você pode criar o seguinte pipeline de WIC:
+O WIC dá suporte à noção de encadeamento de várias transformaçãos. Por exemplo, você pode criar o seguinte pipeline do WIC:
 
-![um diagrama de um pipeline de WIC começando com um decodificador JPEG.](graphics/ycbcr5.png)
+![um diagrama de um pipeline wic começando com um decodificador jpeg.](graphics/ycbcr5.png)
 
-Em seguida, você pode chamar QueryInterface no [**IWICColorTransform**](/windows/desktop/api/Wincodec/nn-wincodec-iwiccolortransform) para obter [**IWICPlanarBitmapSourceTransform**](/windows/desktop/api/Wincodec/nn-wincodec-iwicplanarbitmapsourcetransform). A transformação de cor pode se comunicar com as transformações anteriores e pode expor os recursos agregados de cada estágio no pipeline. O WIC garante que os dados YC<sub>b</sub>C<sub>r</sub> sejam preservados por todo o processo. Esse encadeamento só funciona ao usar componentes que dão suporte ao acesso a YC<sub>b</sub>C<sub>r</sub> .
+Em seguida, você pode chamar QueryInterface no [**IWICColorTransform para**](/windows/desktop/api/Wincodec/nn-wincodec-iwiccolortransform) obter [**IWICPlanarBitmapSourceTransform.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicplanarbitmapsourcetransform) A transformação de cor pode se comunicar com as transformação anteriores e pode expor os recursos de agregação de cada estágio no pipeline. O WIC garante que os dados YC<sub>b</sub>C<sub>r</sub> são preservados durante todo o processo. Esse encadeamento só funciona ao usar componentes que suportam acesso AC<sub>b</sub><sub>C r.</sub>
 
 ### <a name="jpeg-codec-optimizations"></a>Otimizações de codec JPEG
 
-Semelhante à implementação de decodificação de quadros JPEG de [**IWICBitmapSourceTransform**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsourcetransform), a implementação de decodificação de quadros JPEG do [**IWICPlanarBitmapSourceTransform**](/windows/desktop/api/Wincodec/nn-wincodec-iwicplanarbitmapsourcetransform) dá suporte ao dimensionamento e à rotação de domínio JPEG DCT nativo. Você pode solicitar uma potência de dois diminuir ou uma rotação diretamente do decodificador JPEG. Isso normalmente resulta em maior qualidade e desempenho do que o uso de transformações discretas.
+Semelhante à implementação de decodificador de quadro JPEG de [**IWICBitmapSourceTransform**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsourcetransform), a implementação de decodificação de quadro JPEG [**de IWICPlanarBitmapSourceTransform**](/windows/desktop/api/Wincodec/nn-wincodec-iwicplanarbitmapsourcetransform) dá suporte à escala e à rotação de domínio nativo jpeg DCT. Você pode solicitar uma potência de dois downscale ou uma rotação diretamente do decodificador JPEG. Isso normalmente resulta em maior qualidade e desempenho do que usar as transformação discretas.
 
-Além disso, quando você encadea uma ou mais transformações de WIC após o decodificador JPEG, ela pode aproveitar a escala e a rotação de JPEG nativa para atender à operação de agregação solicitada.
+Além disso, quando você encadeia uma ou mais transformaçãos WIC após o decodificador JPEG, ele pode aproveitar o dimensionamento e a rotação JPEG nativos para atender à operação de agregação solicitada.
 
 ### <a name="format-conversions"></a>Conversões de formato
 
-Use [**IWICPlanarFormatConverter**](/windows/desktop/api/Wincodec/nn-wincodec-iwicplanarformatconverter) para converter dados de pixel planar YC <sub>b</sub>C <sub>r</sub> em um formato de pixel intercalado, como GUID \_ WICPixelFormat32bppPBGRA. O WIC no Windows 8.1 não fornece a capacidade de converter em um formato planar YC<sub>b</sub>C<sub>r</sub> pixel.
+Use [**IWICPlanarFormatConverter**](/windows/desktop/api/Wincodec/nn-wincodec-iwicplanarformatconverter) para converter dados de pixel YC <sub>b</sub><sub>C r</sub> planar em um formato de pixel intercalado, como GUID \_ WICPixelFormat32bppPBGRA. O WIC Windows 8.1 fornece a capacidade de converter em um formato de pixel YC<sub>b</sub>R<sub>r</sub> planar.
 
-### <a name="encoding-ycsubbsubcsubrsub-pixel-data"></a>Codificando dados de YC<sub>b</sub>C<sub>r</sub> pixel
+### <a name="encoding-ycsubbsubcsubrsub-pixel-data"></a>Codificando dados de pixel YC<sub>b</sub>c<sub>r</sub>
 
-Use [**IWICPlanarBitmapFrameEncode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicplanarbitmapframeencode) para codificar os dados do YC <sub>b</sub>C <sub>r</sub> pixel para o codificador JPEG. A codificação YC <sub>b</sub>C <sub>r</sub> data **IWICPlanarBitmapFrameEncode** é semelhante, mas não é idêntica à codificação de dados intercalados usando [**IWICBitmapFrameEncode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode). A interface planar só expõe a capacidade de gravar dados de imagem de quadro planar, e você deve continuar usando a interface de codificação de quadros para definir metadados ou uma miniatura e para confirmar no final da operação.
+Use [**IWICPlanarBitmapFrameEncode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicplanarbitmapframeencode) para codificar dados <sub>de</sub>pixel YC b C <sub>r</sub> no codificador JPEG. A codificação de dados de YC <sub>b</sub>C <sub>r</sub> **IWICPlanarBitmapFrameEncode** é semelhante, mas não idêntica à codificação de dados intercalados usando [**IWICBitmapFrameEncode.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode) A interface planar expõe apenas a capacidade de gravar dados de imagem de quadro planar e você deve continuar a usar a interface de codificação de quadro para definir metadados ou uma miniatura e fazer commit no final da operação.
 
 Para o caso típico, você deve seguir estas etapas:
 
-1.  Obtenha o [**IWICBitmapFrameEncode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode) como normal. Se você quiser configurar a subamostragem croma, defina a opção de codificador [**JpegYCrCbSubsampling**](/windows/desktop/api/Wincodec/ne-wincodec-wicjpegycrcbsubsamplingoption) ao criar o quadro.
-2.  Se você precisar definir metadados ou uma miniatura, faça isso usando [**IWICBitmapFrameEncode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode) como normal.
-3.  QueryInterface para o [**IWICPlanarBitmapFrameEncode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicplanarbitmapframeencode).
-4.  Defina os dados do YC <sub>b</sub>C <sub>r</sub> pixel usando [**IWICPlanarBitmapFrameEncode:: WriteName**](/windows/desktop/api/Wincodec/nf-wincodec-iwicplanarbitmapframeencode-writesource) ou [**IWICPlanarBitmapFrameEncode:: WritePixels**](/windows/desktop/api/Wincodec/nf-wincodec-iwicplanarbitmapframeencode-writepixels). Ao contrário de suas contrapartes de [**IWICBitmapFrameEncode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode) , você fornece esses métodos com uma matriz de [**IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) ou [**WICBitmapPlane**](/windows/desktop/api/Wincodec/ns-wincodec-wicbitmapplane) que contêm os planos de pixels de YC <sub>b</sub>C <sub>r</sub> .
-5.  Quando tiver terminado, chame [**IWICBitmapFrameEncode:: Commit**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-commit).
+1.  Obtenha [**o IWICBitmapFrameEncode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode) normalmente. Se você quiser configurar a subampling chroma, de definir a opção de codificador [**JpegYCrCbSubsampling**](/windows/desktop/api/Wincodec/ne-wincodec-wicjpegycrcbsubsamplingoption) ao criar o quadro.
+2.  Se você precisar definir metadados ou uma miniatura, faça isso usando [**IWICBitmapFrameEncode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode) normalmente.
+3.  QueryInterface para [**o IWICPlanarBitmapFrameEncode.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicplanarbitmapframeencode)
+4.  De definir os dados de pixel do YC <sub>b</sub>C <sub>r</sub> usando [**IWICPlanarBitmapFrameEncode::WriteSource**](/windows/desktop/api/Wincodec/nf-wincodec-iwicplanarbitmapframeencode-writesource) ou [**IWICPlanarBitmapFrameEncode::WritePixels**](/windows/desktop/api/Wincodec/nf-wincodec-iwicplanarbitmapframeencode-writepixels). Ao contrário de suas contrapartes [**IWICBitmapFrameEncode,**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode) você fornece esses métodos com uma matriz [**de IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) ou [**WICBitmapPlane**](/windows/desktop/api/Wincodec/ns-wincodec-wicbitmapplane) que contém os planos de <sub>pixel</sub> R do YC <sub>b</sub>C.
+5.  Quando terminar, chame [**IWICBitmapFrameEncode::Commit.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-commit)
 
-### <a name="decoding-ycsubbsubcsubrsub-pixel-data-in-windows-10"></a>Decodificando dados do YC<sub>b</sub>C<sub>r</sub> pixel no Windows 10
+### <a name="decoding-ycsubbsubcsubrsub-pixel-data-in-windows-10"></a>Decodificação de dados de pixel YC<sub>b</sub><sub>C r</sub> Windows 10
 
-A partir do Windows 10 Build 1507, o Direct2D fornece o [**ID2D1ImageSourceFromWic**](/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1imagesourcefromwic), uma maneira mais simples de DEcodificar jpegs em Direct2D ao mesmo tempo em que aproveita as otimizações de YC <sub>b</sub>C <sub>r</sub> . O **ID2D1ImageSourceFromWic** executa automaticamente todas as verificações de funcionalidade do YC <sub>b</sub>C <sub>r</sub> necessárias para você; Ele usa o codepath otimizado quando possível e usa um fallback de outra forma. Ele também permite novas otimizações, como armazenar somente as subregiãos de cache da imagem que são necessárias por vez.
+A partir do Windows 10 build 1507, o Direct2D fornece [**ID2D1ImageSourceFromWic**](/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1imagesourcefromwic), uma maneira mais simples de decodificar JPEGs em Direct2D ao aproveitar as otimizações do YC <sub>b</sub>C <sub>r.</sub> **ID2D1ImageSourceFromWic** executa automaticamente todas as verificações de funcionalidade necessárias do AC <sub>b</sub>C <sub>para</sub> você; ele usa o codepath otimizado quando possível e usa um fallback caso contrário. Ele também permite novas otimizações, como apenas o cache de sub-regiões da imagem que são necessárias por vez.
 
-Para obter mais informações sobre como usar o [**ID2D1ImageSourceFromWic**](/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1imagesourcefromwic), consulte o [exemplo](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/D2DPhotoAdjustment)de SDK de ajuste de foto do Direct2D.
+Para obter mais informações sobre como usar [**ID2D1ImageSourceFromWic**](/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1imagesourcefromwic), consulte o exemplo de SDK Direct2D De ajuste de [foto.](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/D2DPhotoAdjustment)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-* [Otimizações de YCbCr JPEG no exemplo de Direct2D e WIC](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/JPEG%20YCbCr%20optimizations%20in%20Direct2D%20and%20WIC%20sample)
+* [Otimizações jpeg de YCbCr Direct2D exemplo de WIC](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/JPEG%20YCbCr%20optimizations%20in%20Direct2D%20and%20WIC%20sample)

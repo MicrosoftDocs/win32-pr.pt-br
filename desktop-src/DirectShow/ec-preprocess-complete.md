@@ -1,25 +1,25 @@
 ---
-description: Enviado pelo filtro do gravador ASF do WM quando ele conclui o pré-processamento para codificação de passagem.
+description: Enviado pelo filtro Wm ASF Writer quando ele conclui o pré-processamento para codificação multipasso.
 ms.assetid: 2029afc4-419c-494a-ae52-1f84b08bcb35
-title: EC_PREPROCESS_COMPLETE (DShow. h)
+title: EC_PREPROCESS_COMPLETE (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ba13938ac848ef37f1a2a2826372d97ff5a5d716
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: df07444c501ea89ec0d19f3f727e8325953e3c06f740562f7ec058eafa987fee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105768648"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119536996"
 ---
-# <a name="ec_preprocess_complete"></a>pré-processamento de EC \_ \_ concluído
+# <a name="ec_preprocess_complete"></a>\_PRÉ-PROCESSAMENTO DE \_ EC CONCLUÍDO
 
-Enviado pelo filtro do [gravador ASF do WM](wm-asf-writer-filter.md) quando ele conclui o pré-processamento para codificação de passagem.
+Enviado pelo [filtro Wm ASF Writer](wm-asf-writer-filter.md) quando ele conclui o pré-processamento para codificação multipasso.
 
 ## <a name="parameters"></a>Parâmetros
 
 <dl> <dt>
 
-<span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
+<span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*Lparam1*
 </dt> <dd>
 
 Zero.
@@ -43,7 +43,7 @@ Nenhum.
 
 | Requisito | Valor |
 |-------------------|------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>DShow. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 
@@ -54,7 +54,7 @@ Nenhum.
 [Códigos de notificação de eventos](event-notification-codes.md)
 </dt> <dt>
 
-[Notificação de eventos no DirectShow](event-notification-in-directshow.md)
+[Notificação de eventos DirectShow](event-notification-in-directshow.md)
 </dt> </dl>
 
  

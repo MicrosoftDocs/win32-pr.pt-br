@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: cacddb3cc19051dc4cf74e5ba6aa7f049ac09ea4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dee418c5932551c1877dae65adf0aa678554d98373e5c2e0cd04f8153d687ca9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105813453"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119110041"
 ---
 # <a name="jet_indexcreateszindexname-property"></a>Propriedade JET_INDEXCREATE. szIndexName
 
@@ -40,7 +40,7 @@ Obtém ou define o nome do índice a ser criado.
 **Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration

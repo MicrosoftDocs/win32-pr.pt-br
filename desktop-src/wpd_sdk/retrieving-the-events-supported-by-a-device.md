@@ -1,19 +1,19 @@
 ---
-description: Recuperando os eventos com suporte de um dispositivo
+description: Recuperando os eventos com suporte por um dispositivo
 ms.assetid: 951b300f-03de-4a3d-9356-e3a7b5b17fdb
-title: Recuperando os eventos com suporte de um dispositivo
+title: Recuperando os eventos com suporte por um dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a542a34d0938c7e2ff86118818714f18b1224f7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a4e0e24b5a4424d03c916ca73fd0192f9b6de0a80b6a2e2e67a129deb832f7bd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104506260"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119263116"
 ---
-# <a name="retrieving-the-events-supported-by-a-device"></a>Recuperando os eventos com suporte de um dispositivo
+# <a name="retrieving-the-events-supported-by-a-device"></a>Recuperando os eventos com suporte por um dispositivo
 
-Alguns drivers WPD dão suporte à notificação de eventos. Isso significa que um aplicativo pode se registrar no driver para receber uma notificação quando ocorrer uma ação específica. Por exemplo, um aplicativo pode se registrar para receber uma notificação quando um objeto é adicionado ou removido.
+Alguns drivers WPD são suportados pela notificação de eventos. Isso significa que um aplicativo pode se registrar com o driver para receber uma notificação quando ocorre uma ação específica. Por exemplo, um aplicativo pode se registrar para receber uma notificação quando um objeto é adicionado ou removido.
 
 Há dez eventos predefinidos que um aplicativo pode monitorar. Eles são descritos na tabela a seguir.
 
@@ -21,37 +21,37 @@ Há dez eventos predefinidos que um aplicativo pode monitorar. Eles são descrit
 
 | Evento                       | Descrição                                                                                                                            |
 |-----------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| Recursos do dispositivo atualizados | Ocorre quando os recursos do dispositivo foram alterados.                                                                                      |
-| Dispositivo removido              | Ocorre quando o dispositivo está desconectado.                                                                                                   |
-| Redefinição do dispositivo                | Ocorre quando o dispositivo é redefinido.                                                                                                 |
-| Objeto adicionado                | Ocorre depois que um novo objeto é disponibilizado no dispositivo.                                                                             |
-| Objeto removido              | Ocorre depois que um objeto é removido do dispositivo.                                                                               |
-| Transferência de objeto solicitada   | Indica que uma solicitação foi feita para transferir um objeto.                                                                          |
-| Objeto atualizado              | Ocorre após a atualização de um objeto ou de seus filhos. (Os clientes conectados devem atualizar sua exibição do objeto fornecido.) |
-| Formato de armazenamento em andamento  | Ocorre quando o armazenamento do dispositivo está sendo formatado.                                                                                     |
+| Funcionalidades do dispositivo atualizadas | Ocorre quando as funcionalidades do dispositivo foram alteradas.                                                                                      |
+| Dispositivo removido              | Ocorre quando o dispositivo é desconectado.                                                                                                   |
+| Redefinição do dispositivo                | Ocorre quando o dispositivo foi redefinido.                                                                                                 |
+| Objeto adicionado                | Ocorre depois que um novo objeto fica disponível no dispositivo.                                                                             |
+| Objeto removido              | Ocorre depois que um objeto foi removido do dispositivo.                                                                               |
+| Transferência de objeto solicitada   | Indica que foi feita uma solicitação para transferir um objeto .                                                                          |
+| Objeto atualizado              | Ocorre depois que um objeto ou seus filhos foram atualizados. (Os clientes conectados devem atualizar a exibição do objeto determinado.) |
+| Armazenamento formato em andamento  | Ocorre quando o armazenamento do dispositivo está sendo formatado.                                                                                     |
 
 
 
  
 
-Para obter uma lista das constantes associadas a esses eventos, consulte o tópico [constantes do evento](event-constants.md) .
+Para ver uma lista das constantes associadas a esses eventos, consulte o [tópico Constantes de](event-constants.md) Evento.
 
-A função ListSupportedEvents no módulo DeviceCapabilities. cpp demonstra a recuperação de eventos com suporte em um determinado dispositivo.
+A função ListSupportedEvents no módulo DeviceCapabilities.cpp demonstra a recuperação de eventos com suporte por um determinado dispositivo.
 
-Seu aplicativo pode recuperar os identificadores para eventos com suporte de um dispositivo usando as interfaces descritas na tabela a seguir.
+Seu aplicativo pode recuperar os identificadores de eventos com suporte por um dispositivo usando as interfaces descritas na tabela a seguir.
 
 
 
 | Interface                                                                                      | Descrição                                               |
 |------------------------------------------------------------------------------------------------|-----------------------------------------------------------|
-| [**Interface IPortableDeviceCapabilities**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecapabilities)                   | Fornece acesso aos métodos de recuperação de evento com suporte. |
-| [**Interface IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) | Usado para enumerar e armazenar dados de categoria funcional.     |
+| [**IPortableDeviceCapabilities Interface**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecapabilities)                   | Fornece acesso aos métodos de recuperação de eventos com suporte. |
+| [**IPortableDevicePropVariantCollection Interface**](iportabledevicepropvariantcollection.md) | Usado para enumerar e armazenar dados de categoria funcional.     |
 
 
 
  
 
-A primeira tarefa realizada pelo aplicativo de exemplo é a recuperação de um objeto [**IPortableDeviceCapabilities**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecapabilities) , que é usado para recuperar os eventos com suporte pelo dispositivo especificado.
+A primeira tarefa realizada pelo aplicativo de exemplo é a recuperação de um objeto [**IPortableDeviceCapabilities,**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecapabilities) que é usado para recuperar os eventos com suporte pelo dispositivo determinado.
 
 
 ```C++
@@ -78,7 +78,7 @@ if (FAILED(hr))
 
 
 
-Os eventos com suporte são recuperados chamando o método [**IPortableDeviceCapabilities:: GetSupportedEvents**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicecapabilities-getsupportedevents) . Esse método recupera uma coleção de identificadores de eventos para o dispositivo fornecido e os armazena em um objeto [**IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) apontado pelo argumento pEvents.
+Os eventos com suporte são recuperados chamando o [**método IPortableDeviceCapabilities::GetSupportedEvents.**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicecapabilities-getsupportedevents) Esse método recupera uma coleção de identificadores de evento para o dispositivo determinado e os armazena em um [**objeto IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) apontado pelo argumento pEvents.
 
 
 ```C++
@@ -94,7 +94,7 @@ if (SUCCEEDED(hr))
 
 
 
-A próxima etapa é recuperar a contagem de eventos com suporte para que o aplicativo possa iterar por meio do objeto [**IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) e recuperar o identificador de cada um.
+A próxima etapa é recuperar a contagem de eventos com suporte para que o aplicativo possa iterar pelo objeto [**IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) e recuperar o identificador de cada um.
 
 
 ```C++
@@ -147,13 +147,13 @@ if (SUCCEEDED(hr))
 [**Constantes de evento**](event-constants.md)
 </dt> <dt>
 
-[**Interface IPortableDevice**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevice)
+[**IPortableDevice Interface**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevice)
 </dt> <dt>
 
-[**Interface IPortableDeviceCapabilities**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecapabilities)
+[**IPortableDeviceCapabilities Interface**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecapabilities)
 </dt> <dt>
 
-[**Interface IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md)
+[**IPortableDevicePropVariantCollection Interface**](iportabledevicepropvariantcollection.md)
 </dt> <dt>
 
 [**Guia de programação**](programming-guide.md)

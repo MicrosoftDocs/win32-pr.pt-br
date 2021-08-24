@@ -1,9 +1,9 @@
 ---
-title: atributo Ncalrpc
-description: A palavra-chave Ncalrpc identifica a comunicação entre processos local como a família de protocolos para o ponto de extremidade. Essa palavra-chave é um dos nomes de família de protocolos válidos que devem ser usados com o atributo \ Endpoint \.
+title: Atributo ncalrpc
+description: A palavra-chave ncalrpc identifica a comunicação entre processos local como a família de protocolos para o ponto de extremidade. Essa palavra-chave é um dos nomes de família de protocolo válidos que devem ser usados com o atributo \ endpoint\.
 ms.assetid: 0009f794-5c14-4484-9023-cb20c7030dc5
 keywords:
-- Ncalrpc do atributo MIDL
+- Atributo ncalrpc MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f5d22b572eb9ad2f2e46b029ec242b48d5cd684
-ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
+ms.openlocfilehash: 481f005a741c6a815572f5861755f52d5921bae89e8bb2d8a3ef757a0fc42d9e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111386875"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119066996"
 ---
-# <a name="ncalrpc-attribute"></a>atributo Ncalrpc
+# <a name="ncalrpc-attribute"></a>Atributo ncalrpc
 
-A palavra-chave **Ncalrpc** identifica a comunicação entre processos local como a família de protocolos para o ponto de extremidade. Essa palavra-chave é um dos nomes de família de protocolos válidos que devem ser usados com o atributo de **\[** [**ponto de extremidade**](endpoint.md) **\]** .
+A **palavra-chave ncalrpc** identifica a comunicação entre processos local como a família de protocolos para o ponto de extremidade. Essa palavra-chave é um dos nomes de família de protocolo válidos que devem ser usados com o atributo **\[** [**de ponto de**](endpoint.md) **\]** extremidade.
 
 ``` syntax
 endpoint("ncalrpc:[port-name]")
@@ -31,16 +31,16 @@ endpoint("ncalrpc:[port-name]")
 
 <dl> <dt>
 
-*nome da porta* 
+*port-name* 
 </dt> <dd>
 
-Uma cadeia de caracteres que especifica a porta de comunicação (um aplicativo, um serviço ou uma instância de um serviço) que um cliente usa para fazer chamadas entre processos em um servidor. A cadeia de caracteres pode conter até 53 caracteres e não deve conter nenhum caractere de barra invertida ( \\ ). O nome do computador não deve ser usado com a palavra-chave **Ncalrpc** .
+Uma cadeia de caracteres que especifica a porta de comunicação (um aplicativo, um serviço ou uma instância de um serviço) que um cliente usa para fazer chamadas de interprocessamento para um servidor. A cadeia de caracteres pode conter até 53 caracteres e não deve conter nenhum caractere de invertida ( \\ ). O nome do computador não deve ser usado com a palavra-chave **ncalrpc.**
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-A sintaxe da cadeia de caracteres da porta de comunicação entre processos local, como todas as cadeias de porta, é definida pela implementação do transporte e é independente da especificação de IDL. O compilador MIDL executa uma verificação de sintaxe limitada, mas não garante que a especificação do ponto de extremidade esteja correta. Algumas classes de erros podem ser relatadas em tempo de execução em vez de em tempo de compilação.
+A sintaxe da cadeia de caracteres da porta interprocess-communication local, como todas as cadeias de caracteres de porta, é definida pela implementação de transporte e é independente da especificação de IDL. O compilador MIDL executa verificação de sintaxe limitada, mas não garante que a especificação do ponto de extremidade está correta. Algumas classes de erros podem ser relatadas em tempo de run em vez de em tempo de compilação.
 
 ## <a name="examples"></a>Exemplos
 
@@ -60,43 +60,43 @@ interface iface
 
 <dl> <dt>
 
-[**extremidade**](endpoint.md)
+[**Extremidade**](endpoint.md)
 </dt> <dt>
 
-[Arquivo de definição de interface (IDL)](interface-definition-idl-file.md)
+[Arquivo IDL (definição de interface)](interface-definition-idl-file.md)
 </dt> <dt>
 
-[**ncacn \_ no \_ DSP**](ncacn-at-dsp.md)
+[**ncacn \_ em \_ dsp**](ncacn-at-dsp.md)
 </dt> <dt>
 
-[**ncacn \_ dnet \_ NSP**](ncacn-dnet-nsp.md)
+[**ncacn \_ dnet \_ nsp**](ncacn-dnet-nsp.md)
 </dt> <dt>
 
-[**\_TCP IP \_ ncacn**](ncacn-ip-tcp.md)
+[**ncacn \_ ip \_ tcp**](ncacn-ip-tcp.md)
 </dt> <dt>
 
-[**IPX do ncacn \_ NB \_**](ncacn-nb-ipx.md)
+[**ncacn \_ nb \_ ipx**](ncacn-nb-ipx.md)
 </dt> <dt>
 
-[**ncacn \_ SPX**](ncacn-spx.md)
+[**ncacn \_ spx**](ncacn-spx.md)
 </dt> <dt>
 
-[**ncacn \_ NB NB \_**](ncacn-nb-nb.md)
+[**ncacn \_ nb \_ nb**](ncacn-nb-nb.md)
 </dt> <dt>
 
-[**ncacn \_ NB \_ TCP**](ncacn-nb-tcp.md)
+[**ncacn \_ nb \_ tcp**](ncacn-nb-tcp.md)
 </dt> <dt>
 
-[**ncacn \_ NP**](ncacn-np.md)
+[**ncacn \_ np**](ncacn-np.md)
 </dt> <dt>
 
-[**ncacn \_ VNS \_ spp**](ncacn-vns-spp.md)
+[**ncacn \_ vns \_ spp**](ncacn-vns-spp.md)
 </dt> <dt>
 
-[**\_UDP IP \_ ncadg**](ncadg-ip-udp.md)
+[**ncadg \_ ip \_ udp**](ncadg-ip-udp.md)
 </dt> <dt>
 
-[**ncadg \_ IPX**](ncadg-ipx.md)
+[**ncadg \_ ipx**](ncadg-ipx.md)
 </dt> <dt>
 
 [Associação de cadeia de caracteres](/windows/desktop/Rpc/string-binding)

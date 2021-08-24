@@ -1,9 +1,9 @@
 ---
-title: Mensagem de STM_SETIMAGE (WinUser. h)
-description: Um aplicativo envia uma \_ mensagem STM SetImage para associar uma nova imagem a um controle estático.
+title: STM_SETIMAGE mensagem (Winuser.h)
+description: Um aplicativo envia uma mensagem \_ STM SETIMAGE para associar uma nova imagem a um controle estático.
 ms.assetid: d3e7c5d4-f621-40f6-9558-7fb699e8b489
 keywords:
-- Controles de STM_SETIMAGE de mensagens do Windows
+- STM_SETIMAGE controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 27c4f9c216d2e987727a1e2fa9bc6de12a823d52
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d48cc8aeb5e28ac67a6bbe25636be1a2f6f9b89f225568be02e517e1ad04dc55
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918118"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119078450"
 ---
-# <a name="stm_setimage-message"></a>\_Mensagem de imagem STM
+# <a name="stm_setimage-message"></a>Mensagem STM \_ SETIMAGE
 
-Um aplicativo envia uma mensagem **STM \_ SetImage** para associar uma nova imagem a um controle estático.
+Um aplicativo envia uma **mensagem \_ STM SETIMAGE** para associar uma nova imagem a um controle estático.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -38,10 +38,10 @@ Especifica o tipo de imagem a ser associado ao controle estático. Esse parâmet
 
 | Valor                                                                                                                                                                     | Significado                       |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|
-| <span id="IMAGE_BITMAP"></span><span id="image_bitmap"></span><dl> <dt>**BITMAP de imagem \_**</dt> </dl>                | Bitmap.<br/>            |
-| <span id="IMAGE_CURSOR"></span><span id="image_cursor"></span><dl> <dt>**CURSOR de imagem \_**</dt> </dl>                | Posição.<br/>            |
-| <span id="IMAGE_ENHMETAFILE"></span><span id="image_enhmetafile"></span><dl> <dt>**ENHMETAFILE de imagem \_**</dt> </dl> | Metarquivo avançado.<br/> |
-| <span id="IMAGE_ICON"></span><span id="image_icon"></span><dl> <dt>**ícone de imagem \_**</dt> </dl>                      | Cone.<br/>              |
+| <span id="IMAGE_BITMAP"></span><span id="image_bitmap"></span><dl> <dt>**BITMAP \_ DE IMAGEM**</dt> </dl>                | Bitmap.<br/>            |
+| <span id="IMAGE_CURSOR"></span><span id="image_cursor"></span><dl> <dt>**CURSOR \_ DE IMAGEM**</dt> </dl>                | Cursor.<br/>            |
+| <span id="IMAGE_ENHMETAFILE"></span><span id="image_enhmetafile"></span><dl> <dt>**IMAGE \_ EN LTDAFILE**</dt> </dl> | Metadados aprimorados.<br/> |
+| <span id="IMAGE_ICON"></span><span id="image_icon"></span><dl> <dt>**ÍCONE DE \_ IMAGEM**</dt> </dl>                      | Ícone.<br/>              |
 
 
 
@@ -52,13 +52,13 @@ Especifica o tipo de imagem a ser associado ao controle estático. Esse parâmet
 *lParam* 
 </dt> <dd>
 
-Manipule a imagem a ser associada ao controle estático.
+Lidar com a imagem a ser associada ao controle estático.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O valor de retorno é um identificador para a imagem associada anteriormente ao controle estático, se houver; caso contrário, será **nulo**.
+O valor de retorno é um lidar com a imagem associada anteriormente ao controle estático, se for o caso; caso contrário, será **NULL.**
 
 ## <a name="remarks"></a>Comentários
 
@@ -68,10 +68,10 @@ Para associar uma imagem a um controle estático, o controle deve ter o estilo a
 
 | Tipo de imagem         | Estilo de controle estático |
 |--------------------|----------------------|
-| BITMAP de imagem \_      | \_bitmap SS           |
-| CURSOR de imagem \_      | \_ícone SS             |
-| ENHMETAFILE de imagem \_ | \_ENHMETAFILE SS      |
-| ícone de imagem \_        | \_ícone SS             |
+| BITMAP \_ DE IMAGEM      | SS \_ BITMAP           |
+| CURSOR \_ DE IMAGEM      | ÍCONE DO \_ SS             |
+| IMAGE \_ EN LTDAFILE | SS \_ EN LTDAFILE      |
+| ÍCONE DE \_ IMAGEM        | ÍCONE DO \_ SS             |
 
 
 
@@ -79,9 +79,9 @@ Para associar uma imagem a um controle estático, o controle deve ter o estilo a
 
 > [!IMPORTANT]
 >
-> Na versão 6 dos controles Microsoft Win32, um bitmap passado para um controle estático usando a mensagem **STM \_ SetImage** era o mesmo bitmap retornado por uma mensagem **STM \_ SetImage** subsequente. O cliente é responsável por excluir qualquer bitmap enviado para um controle estático.
+> Na versão 6 dos controles do Microsoft Win32, um bitmap passado para um controle estático usando a mensagem **\_ STM SETIMAGE** era o mesmo bitmap retornado por uma mensagem **\_ SETIMAGE stm** subsequente. O cliente é responsável por excluir qualquer bitmap enviado a um controle estático.
 >
-> Com o Windows XP, se o bitmap passado na mensagem **STM \_ SetImage** contiver pixels com alfa diferente de zero, o controle estático usará uma cópia do bitmap. Esse bitmap copiado é retornado pela próxima mensagem do **STM \_ SetImage** . O código do cliente pode rastrear de forma independente os bitmaps passados para o controle estático, mas se ele não verificar e liberar os bitmaps retornados de mensagens **\_ SetImage de STM** , os bitmaps serão vazados.
+> Com Windows XP, se o bitmap passado na mensagem **\_ STM SETIMAGE** contiver pixels com alfa diferente de zero, o controle estático recebe uma cópia do bitmap. Esse bitmap copiado é retornado pela próxima **mensagem \_ SETIMAGE do STM.** O código do cliente pode controlar independentemente os bitmaps passados para o controle estático, mas se ele não verificar e liberar os bitmaps retornados das mensagens **\_ STM SETIMAGE,** os bitmaps serão vazados.
 
  
 
@@ -91,9 +91,9 @@ Para associar uma imagem a um controle estático, o controle deve ter o estilo a
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -101,7 +101,7 @@ Para associar uma imagem a um controle estático, o controle deve ter o estilo a
 
 <dl> <dt>
 
-[**STM \_ GETimage**](stm-getimage.md)
+[**STM \_ GETIMAGE**](stm-getimage.md)
 </dt> </dl>
 
  

@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0f23a4cd375eb959c0e5cf3860818040a561ece3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 60a0e8589dc45b3173107be9719816a8ee112071b2d4cb23d090542da1f836b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104502131"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119112385"
 ---
 # <a name="jet_columndefdeepclone-method"></a>JET_COLUMNDEF. Método DeepClone
 
-Retorna uma cópia profunda do objeto.
+Retorna uma cópia profunda do objeto .
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -54,21 +54,21 @@ returnValue = instance.DeepClone()
 public JET_COLUMNDEF DeepClone()
 ```
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
-Tipo: [Microsoft.ISAM.ESENT.Interop.JET_COLUMNDEF](./jet-columndef-class.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_COLUMNDEF](./jet-columndef-class.md)  
 Uma cópia profunda do objeto.  
 
 #### <a name="implements"></a>Implementações
 
-[IDeepCloneable \<T\> . DeepClone()](./ideepcloneable-t-.deepclone-method.md)  
+[IDeepCloneable. \<T\> DeepClone()](./ideepcloneable-t-.deepclone-method.md)  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Classe JET_COLUMNDEF](./jet-columndef-class.md)
+[JET_COLUMNDEF classe](./jet-columndef-class.md)
 
-[Membros do JET_COLUMNDEF](./jet-columndef-members.md)
+[JET_COLUMNDEF membros](./jet-columndef-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

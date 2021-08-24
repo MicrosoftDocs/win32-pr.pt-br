@@ -1,5 +1,5 @@
 ---
-description: Define o número de rede virtual de intercâmbio de pacotes entre redes (IPX) no sistema de computador de destino.
+description: Define o número da rede virtual IPX (Internetworking Packet Exchange) no sistema de computador de destino.
 ms.assetid: 52064250-b94f-4dc0-bf1a-8601cd135a90
 ms.tgt_platform: multiple
 title: Método SetIPXVirtualNetworkNumber da classe Win32_NetworkAdapterConfiguration
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - cimwin32.dll
-ms.openlocfilehash: ed6e6802a17ef6ec4393d2ae0c5ec43f0e21d247
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 37af763450eab2fdba373fe21bfde5c0b4e1e38fda1f42aff59c425ba6b10000
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105762760"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119079770"
 ---
-# <a name="setipxvirtualnetworknumber-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetIPXVirtualNetworkNumber da classe Win32 \_ NetworkAdapterConfiguration
+# <a name="setipxvirtualnetworknumber-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetIPXVirtualNetworkNumber da classe \_ NetworkAdapterConfiguration do Win32
 
-Define o número de rede virtual de intercâmbio de pacotes entre redes (IPX) no sistema de computador de destino. O Windows 2000 e o Windows NT 3,51 ou superior usam um número de rede interno para roteamento interno. O número de rede interno também é conhecido como um número de rede virtual. Ele identifica exclusivamente o sistema de computador na rede. O método retorna um valor inteiro que pode ser interpretado da seguinte maneira:
+Define o número da rede virtual IPX (Internetworking Packet Exchange) no sistema de computador de destino. Windows 2000 e Windows NT 3,51 ou superior usa um número de rede interno para roteamento interno. O número de rede interno também é conhecido como um número de rede virtual. Ele identifica exclusivamente o sistema de computador na rede. O método retorna um valor inteiro que pode ser interpretado da seguinte maneira:
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,18 +40,18 @@ uint32 SetIPXVirtualNetworkNumber(
 
 <dl> <dt>
 
-*IPXVirtualNetNumber* \[ no\]
+*IPXVirtualNetNumber* \[ Em\]
 </dt> <dd>
 
-O número da rede virtual para este sistema.
+O número da rede virtual para esse sistema.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 <dl> <dt>
 
-**Conclusão bem-sucedida, nenhuma reinicialização necessária** (0)
+**Conclusão bem-sucedida, sem reinicialização** necessária (0)
 </dt> <dt>
 
 **Conclusão bem-sucedida, reinicialização necessária** (1)
@@ -66,7 +66,7 @@ O número da rede virtual para este sistema.
 **Máscara de sub-rede inválida** (66)
 </dt> <dt>
 
-**Ocorreu um erro ao processar uma instância que foi retornada** (67)
+**Ocorreu um erro ao processar uma Instância que foi retornada** (67)
 </dt> <dt>
 
 **Parâmetro de entrada inválido** (68)
@@ -78,10 +78,10 @@ O número da rede virtual para este sistema.
 **Endereço IP inválido** (70)
 </dt> <dt>
 
-**Endereço IP de gateway inválido** (71)
+**Endereço IP do gateway inválido** (71)
 </dt> <dt>
 
-**Ocorreu um erro ao acessar o registro para as informações solicitadas** (72)
+**Ocorreu um erro ao acessar o Registro para as informações solicitadas** (72)
 </dt> <dt>
 
 **Nome de domínio inválido** (73)
@@ -96,10 +96,10 @@ O número da rede virtual para este sistema.
 **Arquivo inválido** (76)
 </dt> <dt>
 
-**Caminho de sistema inválido** (77)
+**Caminho do sistema inválido** (77)
 </dt> <dt>
 
-**Falha na cópia do arquivo** (78)
+**Falha na cópia do** arquivo (78)
 </dt> <dt>
 
 **Parâmetro de segurança inválido** (79)
@@ -141,7 +141,7 @@ O número da rede virtual para este sistema.
 **Acesso negado** (91)
 </dt> <dt>
 
-**Memória insuficiente** (92)
+**Memória sem memória** (92)
 </dt> <dt>
 
 **Já existe** (93)
@@ -150,7 +150,7 @@ O número da rede virtual para este sistema.
 **Caminho, arquivo ou objeto não encontrado** (94)
 </dt> <dt>
 
-**Não é possível notificar o serviço** (95)
+**Não é possível notificar o** serviço (95)
 </dt> <dt>
 
 **Não é possível notificar o serviço DNS** (96)
@@ -159,13 +159,13 @@ O número da rede virtual para este sistema.
 **Interface não configurável** (97)
 </dt> <dt>
 
-**Nem todas as concessões DHCP puderam ser liberadas/renovadas** (98)
+**Nem todas as concessões DHCP podem ser liberadas/renovadas** (98)
 </dt> <dt>
 
 **DHCP não habilitado no adaptador** (100)
 </dt> <dt>
 
-**Outro** (101 – 4294967295)
+**Outros** (101 4294967295)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -176,8 +176,8 @@ O número da rede virtual para este sistema.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CimWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CimWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Cimwin32.dll</dt> </dl> |
 
 
@@ -186,7 +186,7 @@ O número da rede virtual para este sistema.
 
 <dl> <dt>
 
-[**\_NetworkAdapterConfiguration Win32**](win32-networkadapterconfiguration.md)
+[**Win32 \_ NetworkAdapterConfiguration**](win32-networkadapterconfiguration.md)
 </dt> </dl>
 
  

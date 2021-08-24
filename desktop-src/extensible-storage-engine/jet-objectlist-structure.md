@@ -15,17 +15,17 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a7a66bb3b7f7dfbbfd1087d1fe0ce32c4144a8bf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b746a16677fd9d064eef62735f7529d3652acea95fa95e1beefe4a052aec1c01
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297152"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119107725"
 ---
 # <a name="jet_objectlist-structure"></a>Estrutura JET_OBJECTLIST
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jet_objectlist-structure"></a>Estrutura JET_OBJECTLIST
 
@@ -130,11 +130,11 @@ Atualmente, somente as informações sobre tabelas estarão na tabela temporári
 <tbody>
 <tr class="odd">
 <td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista, o Windows XP ou o Windows 2000 Professional.</p></td>
+<td><p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008, o Windows Server 2003 ou o Windows 2000 Server.</p></td>
+<td><p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Cabeçalho</strong></p></td>

@@ -6,12 +6,12 @@ keywords:
 - COM valor de registro serviceparameters COM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 235de1052df72e88e2093647928ed68ab67451cd
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 103b55269b700beaf5c85e3408e3597e63fb9140e4dc79fe4bb895ff6767bfc9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292230"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119129958"
 ---
 # <a name="serviceparameters"></a>Serviceparameters
 
@@ -21,8 +21,8 @@ Especifica os parâmetros de linha de comando a serem passados para um objeto in
 
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID
-   {AppID_GUID}
-      ServiceParameters = parameter
+   {AppID_GUID}
+      ServiceParameters = parameter
 ```
 
 ## <a name="remarks"></a>Comentários
@@ -39,9 +39,9 @@ Este é um valor de **\_ sz do reg** . Essa cadeia de caracteres é passada para
 [Registrando servidores COM](registering-com-servers.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

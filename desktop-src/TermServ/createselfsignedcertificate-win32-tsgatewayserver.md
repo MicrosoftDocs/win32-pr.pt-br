@@ -1,12 +1,12 @@
 ---
 title: Método CreateSelfSignedCertificate da classe Win32_TSGatewayServer
-description: Cria um certificado autoassinado e retorna o hash de certificado como um \ 0034; out \ 0034; meter.
+description: Cria um certificado auto-assinado e retorna o hash do certificado como um \ 0034;out \ 0034; Parâmetro.
 ms.assetid: 2a5b8dee-50b8-44b7-9e29-25aff1c40f5d
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota do método CreateSelfSignedCertificate
-- Método CreateSelfSignedCertificate Serviços de Área de Trabalho Remota, classe Win32_TSGatewayServer
-- Classe Win32_TSGatewayServer Serviços de Área de Trabalho Remota, método CreateSelfSignedCertificate
+- Método CreateSelfSignedCertificate Serviços de Área de Trabalho Remota
+- Método CreateSelfSignedCertificate Serviços de Área de Trabalho Remota , Win32_TSGatewayServer classe
+- Win32_TSGatewayServer classe Serviços de Área de Trabalho Remota , método CreateSelfSignedCertificate
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4258566856a5fbc277053b65afe972751855d831
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 200b08da8d5eea9f31405a357650384081c407df4eb76820cd47a111e6b66aab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454787"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119139049"
 ---
-# <a name="createselfsignedcertificate-method-of-the-win32_tsgatewayserver-class"></a>Método CreateSelfSignedCertificate da classe Win32 \_ TSGatewayServer
+# <a name="createselfsignedcertificate-method-of-the-win32_tsgatewayserver-class"></a>Método CreateSelfSignedCertificate da classe \_ TSGatewayServer do Win32
 
-Cria um certificado autoassinado e retorna o hash de certificado como um parâmetro "out". Além disso, o adiciona o texto \_ " \_ \_ certificado autoassinado de Gateway TS \_ " à propriedade de contexto de certificado para que o certificado seja reconhecido como um certificado de gateway de área de trabalho remota (gateway de área de trabalho remota). Esse método usa um contêiner de chave específico do gateway de área de trabalho remota para criar o certificado.
+Cria um certificado auto-assinado e retorna o hash do certificado como um parâmetro "out". Além disso, adiciona o texto "TS GATEWAY SELF SIGNED CERTIFICATE" à propriedade de contexto do certificado para que o certificado seja reconhecido como um certificado Área de Trabalho Remota Gateway de Área de Trabalho Remota \_ \_ \_ \_ (Gateway de RD). Esse método usa um contêiner de chave específico do Gateway de Área de Trabalho Digital para criar o certificado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,14 +44,14 @@ uint32 CreateSelfSignedCertificate(
 
 <dl> <dt>
 
-*SubjectName* \[ no\]
+*SubjectName* \[ Em\]
 </dt> <dd>
 
-Nome da entidade do certificado autoassinado.
+Nome da assunto do certificado auto-assinado.
 
 </dd> <dt>
 
-*CertHash* \[ fora\]
+*CertHash* \[ out\]
 </dt> <dd>
 
 O hash do certificado.
@@ -62,7 +62,7 @@ O hash do certificado.
 
 Você deve ser um membro do grupo Administradores para chamar esse método.
 
-Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). Os arquivos MOF não são instalados como parte do SDK (Software Development Kit) do Microsoft Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+arquivos Managed Object Format (MOF) contêm as definições para classes WMI (Instrumentação de Gerenciamento de Windows). Os arquivos MOF não são instalados como parte do Microsoft Windows Software Development Kit (SDK). Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, [consulte Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -72,8 +72,8 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                           |
-| Namespace<br/>                | \\TerminalServices da CIMv2 raiz \\<br/>                                                 |
-| MOF<br/>                      | <dl> <dt>TS. mof</dt> </dl> |
+| Namespace<br/>                | \\CiMv2 \\ TerminalServices raiz<br/>                                                 |
+| MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 
 
@@ -82,7 +82,7 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 
 <dl> <dt>
 
-[**\_TSGatewayServer Win32**](win32-tsgatewayserver.md)
+[**Win32 \_ TSGatewayServer**](win32-tsgatewayserver.md)
 </dt> </dl>
 
  

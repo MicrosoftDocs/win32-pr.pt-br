@@ -1,9 +1,9 @@
 ---
-title: Mensagem de WM_QUERYUISTATE (WinUser. h)
-description: Um aplicativo envia a mensagem do WM \_ QUERYUISTATE para recuperar o estado da interface do usuário para uma janela.
+title: WM_QUERYUISTATE mensagem (Winuser.h)
+description: Um aplicativo envia a mensagem WM \_ QUERYUISTATE para recuperar o estado da interface do usuário de uma janela.
 ms.assetid: 3a9e3477-b5d7-4c55-b6d4-8a479451fee8
 keywords:
-- WM_QUERYUISTATE menus de mensagens e outros recursos
+- WM_QUERYUISTATE menus de mensagem e outros recursos
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f1574fe0dab2a0885c8012bf19eed50facfd6cce
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e62fc33fb79594f3e07c0d44d4b25fd16e980ef3a4a89b3079c69ef6eb5d1b89
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105763871"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119267906"
 ---
-# <a name="wm_queryuistate-message"></a>Mensagem do WM \_ QUERYUISTATE
+# <a name="wm_queryuistate-message"></a>Mensagem WM \_ QUERYUISTATE
 
-Um aplicativo envia a mensagem do **WM \_ QUERYUISTATE** para recuperar o estado da interface do usuário para uma janela.
+Um aplicativo envia a **mensagem WM \_ QUERYUISTATE** para recuperar o estado da interface do usuário de uma janela.
 
 
 ```C++
@@ -50,16 +50,16 @@ Esse parâmetro não é usado e deve ser 0.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O valor de retorno será **nulo** se os indicadores de foco e os aceleradores de teclado estiverem visíveis. Caso contrário, o valor de retorno poderá ser um ou mais dos valores a seguir.
+O valor de retorno será **NULL se** os indicadores de foco e os aceleradores de teclado estão visíveis. Caso contrário, o valor de retorno pode ser um ou mais dos valores a seguir.
 
 
 
-| Código/valor de retorno                                                                                                                                       | Descrição                                                                 |
+| Valor/código de retorno                                                                                                                                       | Descrição                                                                 |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| <dl> <dt>**UISF \_ ATIVO**</dt> <dt>0x4</dt> </dl>    | Um controle deve ser desenhado no estilo usado para controles ativos.<br/> |
-| <dl> <dt>**UISF \_**</dt> <dt>0x2</dt> HIDEACCEL </dl> | Os aceleradores de teclado estão ocultos.<br/>                                |
+| <dl> <dt>**UISF \_ ACTIVE**</dt> <dt>0x4</dt> </dl>    | Um controle deve ser desenhado no estilo usado para controles ativos.<br/> |
+| <dl> <dt>**UISF \_ HIDEACCEL**</dt> <dt>0x2</dt> </dl> | Os aceleradores de teclado estão ocultos.<br/>                                |
 | <dl> <dt>**UISF \_ HIDEFOCUS**</dt> <dt>0x1</dt> </dl> | Os indicadores de foco estão ocultos.<br/>                                     |
 
 
@@ -74,7 +74,7 @@ O valor de retorno será **nulo** se os indicadores de foco e os aceleradores de
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -85,13 +85,13 @@ O valor de retorno será **nulo** se os indicadores de foco e os aceleradores de
 **Referência**
 </dt> <dt>
 
-[**CHANGEUISTATE do WM \_**](wm-changeuistate.md)
+[**WM \_ CHANGEUISTATE**](wm-changeuistate.md)
 </dt> <dt>
 
-[**UPDATEUISTATE do WM \_**](wm-updateuistate.md)
+[**WM \_ UPDATEUISTATE**](wm-updateuistate.md)
 </dt> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
 [Aceleradores de teclado](keyboard-accelerators.md)

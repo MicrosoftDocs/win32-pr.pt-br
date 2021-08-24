@@ -1,11 +1,11 @@
 ---
-title: atributo ms-PKI-Certificate-Policy
+title: Atributo ms-PKI-Certificate-Policy
 description: Contém a lista de OIDs de política e seus CSPs opcionais no certificado emitido.
 ms.assetid: bc84c5ff-9cb1-406c-825c-97fa479d52eb
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo ms-PKI-Certificate-Policy
-- Esquema de msPKI de atributo de política de certificado
+- Atributo AD MS-PKI-Certificate-Policy
+- Atributo AD msPKI-Certificate-Policy
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d2d6857b6035cc72271c7276b679b8a497aaab9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8abe92cda39428e397f06105a0ca8c5b151f84989615e06ec2f6c8371f87fc75
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825155"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081680"
 ---
-# <a name="ms-pki-certificate-policy-attribute"></a>atributo ms-PKI-Certificate-Policy
+# <a name="ms-pki-certificate-policy-attribute"></a>Atributo ms-PKI-Certificate-Policy
 
 Contém a lista de OIDs de política e seus CSPs opcionais no certificado emitido.
 
@@ -29,14 +29,14 @@ Contém a lista de OIDs de política e seus CSPs opcionais no certificado emitid
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------------------------------------------------------------|
-| CN                | MS-PKI-Certificate-Policy                                                                         |
-| LDAP-Display-Name | msPKI-certificado-política                                                                          |
+| CN                | ms-PKI-Certificate-Policy                                                                         |
+| Ldap-Display-Name | msPKI-Certificate-Policy                                                                          |
 | Tamanho              | 64 bytes vezes o número de entradas.                                                             |
 | Privilégio de atualização  | Administrador de domínio                                                                              |
-| Frequência de atualização  | Quando o modelo de certificado (MS-PKI-Certificate-template) é editado, criado ou clonado. |
+| Frequência de atualização  | Quando o objeto de modelo de certificado (ms-PKI-Certificate-Template) é editado, criado ou clonado. |
 | Attribute-Id      | 1.2.840.113556.1.4.1439                                                                           |
-| System-ID-GUID    | 38942346-cc5b-424b-a7d8-6ffd12029c5f                                                              |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                                                       |
+| System-Id-Guid    | 38942346-cc5b-424b-a7d8-6ffd12029c5f                                                              |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                                                       |
 
 
 
@@ -57,15 +57,15 @@ Contém a lista de OIDs de política e seus CSPs opcionais no certificado emitid
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | Falso                                                                   |
+| Tem valor único       | Falso                                                                   |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | Falso                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
+| No Catálogo Global      | Falso                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**PKI-certificado-modelo**](c-pkicertificatetemplate.md)<br/> |
+| Classes usadas em        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Contém a lista de OIDs de política e seus CSPs opcionais no certificado emitid
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | Falso                                                                   |
+| Tem valor único       | Falso                                                                   |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | Falso                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
+| No Catálogo Global      | Falso                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**PKI-certificado-modelo**](c-pkicertificatetemplate.md)<br/> |
+| Classes usadas em        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Contém a lista de OIDs de política e seus CSPs opcionais no certificado emitid
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | Falso                                                                   |
+| Tem valor único       | Falso                                                                   |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | Falso                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
+| No Catálogo Global      | Falso                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**PKI-certificado-modelo**](c-pkicertificatetemplate.md)<br/> |
+| Classes usadas em        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Contém a lista de OIDs de política e seus CSPs opcionais no certificado emitid
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | Falso                                                                   |
+| Tem valor único       | Falso                                                                   |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | Falso                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
+| No Catálogo Global      | Falso                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**PKI-certificado-modelo**](c-pkicertificatetemplate.md)<br/> |
+| Classes usadas em        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Contém a lista de OIDs de política e seus CSPs opcionais no certificado emitid
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | Falso                                                                   |
+| Tem valor único       | Falso                                                                   |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | Falso                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
+| No Catálogo Global      | Falso                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**PKI-certificado-modelo**](c-pkicertificatetemplate.md)<br/> |
+| Classes usadas em        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 

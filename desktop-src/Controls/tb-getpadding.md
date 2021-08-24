@@ -3,7 +3,7 @@ title: Mensagem de TB_GETPADDING (commctrl. h)
 description: Recupera o preenchimento de um controle ToolBar.
 ms.assetid: dde0f44d-5d22-4cab-a7f8-48d84b8995d3
 keywords:
-- Controles de TB_GETPADDING de mensagens do Windows
+- controles de Windows de mensagem de TB_GETPADDING
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b15babf2fd5d97377991d1827ea8947e9d794600
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f342e3322c0db60f46b0de353c2bbd2f6abe28717aa8ee23db8a3a9f26473113
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009710"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119078320"
 ---
 # <a name="tb_getpadding-message"></a>\_Mensagem de GETpadding de TB
 
@@ -35,7 +35,7 @@ Recupera o preenchimento de um controle ToolBar.
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor **DWORD** que contém o preenchimento horizontal na palavra inferior e o preenchimento vertical na palavra alta, em pixels.
 
@@ -45,9 +45,9 @@ Retorna um valor **DWORD** que contém o preenchimento horizontal na palavra inf
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

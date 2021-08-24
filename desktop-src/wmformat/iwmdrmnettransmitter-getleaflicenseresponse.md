@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1bf2374966abfae4353a72755313c1cbbdfb7287
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: aff470341c3227782d0d34cbdd2ca2a4a51a4cb1b6214b81ea2ea9a384b29ee2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105785316"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119084826"
 ---
 # <a name="iwmdrmnettransmittergetleaflicenseresponse-method"></a>Método IWMDRMNetTransmitter:: GetLeafLicenseResponse
 
@@ -81,7 +81,7 @@ Endereço de uma variável que recebe o tamanho da resposta de licença, em byte
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 

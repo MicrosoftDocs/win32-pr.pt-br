@@ -4,12 +4,12 @@ ms.assetid: 3151c369-9d2b-4f03-9a4a-9b9267314dc1
 title: Atributo MF_SD_SAMI_LANGUAGE (Mfidl. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cfd476c86ddde7d369265c5302192e4a7c01295f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e70436244779dddf97ef8277c5c1e2cd8c74cfaa25a90e63472d07d32c36b56d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105761702"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119102322"
 ---
 # <a name="mf_sd_sami_language-attribute"></a>\_Atributo de \_ idioma de Sami SD MF \_
 
@@ -33,9 +33,9 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
 
 
 

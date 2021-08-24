@@ -4,12 +4,12 @@ ms.assetid: fd5c12ec-3a3d-4b75-a573-0b27ae7a890b
 title: Funções de log de eventos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 437899684861c5fc7ddbfe98c2499dc07bd9da8a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bf6ba5e43286a65b9d3456edc9cd80e8812bd9a32975ec63158c0717b41c6894
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105787119"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119069586"
 ---
 # <a name="event-logging-functions"></a>Funções de log de eventos
 

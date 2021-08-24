@@ -1,6 +1,6 @@
 ---
-title: Códigos de erro COM (interface do usuário, áudio, DirectX, codec) (Winerror. h)
-description: A tabela a seguir fornece uma lista de códigos de erro usados por APIs baseadas em COM. | Códigos de erro COM (interface do usuário, áudio, DirectX, codec) (Winerror. h)
+title: Códigos de erro COM (interface do usuário, áudio, DirectX, Codec) (Winerror.h)
+description: A tabela a seguir fornece uma lista de códigos de erro usados por APIs baseadas em COM. | Códigos de erro COM (interface do usuário, áudio, DirectX, Codec) (Winerror.h)
 ms.assetid: 259BE370-305A-47C8-A4F8-AAAAC687A1B4
 topic_type:
 - apiref
@@ -172,22 +172,22 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 25a5d9f33a9658b917d787f326d2daec8124bc36
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4490a6738d5b732ba62d2a7337fb8a01bd0b98cc9e14ae3b079873769af4b985
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105812378"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119048644"
 ---
-# <a name="com-error-codes-ui-audio-directx-codec"></a>Códigos de erro COM (interface do usuário, áudio, DirectX, codec)
+# <a name="com-error-codes-ui-audio-directx-codec"></a>Códigos de erro COM (interface do usuário, áudio, DirectX, Codec)
 
 A tabela a seguir fornece uma lista de códigos de erro usados por APIs baseadas em COM.
 
-Se você estiver tendo dificuldades com um aplicativo que está instalando ou em execução, entre em contato com o suporte ao cliente para o software que está exibindo a mensagem de erro. Para obter suporte para um produto da Microsoft, acesse [https://support.microsoft.com](https://support.microsoft.com) .
+Se você estiver tendo dificuldades com um aplicativo que está instalando ou em execução, entre em contato com o atendimento ao cliente para o software que está exibindo a mensagem de erro. Para obter suporte para um produto da Microsoft, acesse [https://support.microsoft.com](https://support.microsoft.com) .
 
 <dl> <dt>
 
-<span id="UI_E_CREATE_FAILED"></span><span id="ui_e_create_failed"></span>**\_ \_ falha na criação da interface do usuário \_**
+<span id="UI_E_CREATE_FAILED"></span><span id="ui_e_create_failed"></span>**FALHA NA \_ CRIAÇÃO DE INTERFACE DO \_ \_ USUÁRIO**
 </dt> <dd> <dl> <dt>
 
 0x802A0001
@@ -200,7 +200,7 @@ Não foi possível criar o objeto.
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_SHUTDOWN_CALLED"></span><span id="ui_e_shutdown_called"></span>**interface de usuário \_ E \_ desligamento \_ chamada**
+<span id="UI_E_SHUTDOWN_CALLED"></span><span id="ui_e_shutdown_called"></span>**INTERFACE DO \_ USUÁRIO E \_ DESLIGAMENTO \_ CHAMADO**
 </dt> <dd> <dl> <dt>
 
 0x802A0002
@@ -208,12 +208,12 @@ Não foi possível criar o objeto.
 
 
 
-O desligamento já foi chamado neste objeto ou o objeto que o possui.
+O desligamento já foi chamado nesse objeto ou no objeto que o possui.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_ILLEGAL_REENTRANCY"></span><span id="ui_e_illegal_reentrancy"></span>**IU \_ E \_ \_ reentrância ilegal**
+<span id="UI_E_ILLEGAL_REENTRANCY"></span><span id="ui_e_illegal_reentrancy"></span>**INTERFACE DO \_ USUÁRIO E \_ \_ REENTRAÇÃO ILEGAL**
 </dt> <dd> <dl> <dt>
 
 0x802A0003
@@ -221,12 +221,12 @@ O desligamento já foi chamado neste objeto ou o objeto que o possui.
 
 
 
-Este método não pode ser chamado durante esse tipo de retorno de chamada.
+Esse método não pode ser chamado durante esse tipo de retorno de chamada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_OBJECT_SEALED"></span><span id="ui_e_object_sealed"></span>**UI \_ E \_ objeto \_ lacrado**
+<span id="UI_E_OBJECT_SEALED"></span><span id="ui_e_object_sealed"></span>**OBJETO E \_ DA INTERFACE DO USUÁRIO \_ \_ LACRADO**
 </dt> <dd> <dl> <dt>
 
 0x802A0004
@@ -234,12 +234,12 @@ Este método não pode ser chamado durante esse tipo de retorno de chamada.
 
 
 
-Este objeto foi lacrado, portanto, essa alteração não é mais permitida.
+Esse objeto foi lacrado, portanto, essa alteração não é mais permitida.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_VALUE_NOT_SET"></span><span id="ui_e_value_not_set"></span>**valor de IU \_ E \_ \_ não \_ definido**
+<span id="UI_E_VALUE_NOT_SET"></span><span id="ui_e_value_not_set"></span>**VALOR DA \_ INTERFACE DO USUÁRIO E NÃO \_ \_ \_ DEFINIDO**
 </dt> <dd> <dl> <dt>
 
 0x802A0005
@@ -252,7 +252,7 @@ O valor solicitado nunca foi definido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_VALUE_NOT_DETERMINED"></span><span id="ui_e_value_not_determined"></span>**valor de IU \_ E \_ \_ não \_ determinado**
+<span id="UI_E_VALUE_NOT_DETERMINED"></span><span id="ui_e_value_not_determined"></span>**VALOR DA \_ INTERFACE DO USUÁRIO E NÃO \_ \_ \_ DETERMINADO**
 </dt> <dd> <dl> <dt>
 
 0x802A0006
@@ -265,7 +265,7 @@ O valor solicitado não pode ser determinado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_INVALID_OUTPUT"></span><span id="ui_e_invalid_output"></span>**saída de interface de usuário \_ E \_ inválida \_**
+<span id="UI_E_INVALID_OUTPUT"></span><span id="ui_e_invalid_output"></span>**INTERFACE DO \_ USUÁRIO E \_ SAÍDA \_ INVÁLIDA**
 </dt> <dd> <dl> <dt>
 
 0x802A0007
@@ -278,7 +278,7 @@ Um retorno de chamada retornou um parâmetro de saída inválido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_BOOLEAN_EXPECTED"></span><span id="ui_e_boolean_expected"></span>**interface do usuário \_ E \_ booliano \_ esperado**
+<span id="UI_E_BOOLEAN_EXPECTED"></span><span id="ui_e_boolean_expected"></span>**INTERFACE DO \_ USUÁRIO E \_ BOOLIANA \_ ESPERADA**
 </dt> <dd> <dl> <dt>
 
 0x802A0008
@@ -286,12 +286,12 @@ Um retorno de chamada retornou um parâmetro de saída inválido.
 
 
 
-Um retorno de chamada retornou um código de êxito diferente de S \_ OK ou s \_ false.
+Um retorno de chamada retornou um código de êxito diferente de S \_ OK ou S \_ FALSE.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_DIFFERENT_OWNER"></span><span id="ui_e_different_owner"></span>**IU \_ E \_ \_ proprietário diferente**
+<span id="UI_E_DIFFERENT_OWNER"></span><span id="ui_e_different_owner"></span>**INTERFACE DO \_ USUÁRIO E \_ PROPRIETÁRIO \_ DIFERENTE**
 </dt> <dd> <dl> <dt>
 
 0x802A0009
@@ -299,12 +299,12 @@ Um retorno de chamada retornou um código de êxito diferente de S \_ OK ou s \_
 
 
 
-Um parâmetro que deve pertencer a esse objeto pertence a um objeto diferente.
+Um parâmetro que deve ser de propriedade desse objeto pertence a um objeto diferente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_AMBIGUOUS_MATCH"></span><span id="ui_e_ambiguous_match"></span>**\_ \_ correspondência ambígua E de interface do usuário \_**
+<span id="UI_E_AMBIGUOUS_MATCH"></span><span id="ui_e_ambiguous_match"></span>**INTERFACE DO \_ USUÁRIO E \_ AMBÍGUO \_ MATCH**
 </dt> <dd> <dl> <dt>
 
 0x802A000A
@@ -312,12 +312,12 @@ Um parâmetro que deve pertencer a esse objeto pertence a um objeto diferente.
 
 
 
-Mais de um item correspondeu aos critérios de pesquisa.
+Mais de um item corresponderam aos critérios de pesquisa.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_FP_OVERFLOW"></span><span id="ui_e_fp_overflow"></span>**estouro de IU \_ E \_ FP \_**
+<span id="UI_E_FP_OVERFLOW"></span><span id="ui_e_fp_overflow"></span>**ESTOURO \_ DE INTERFACE DO USUÁRIO E \_ FP \_**
 </dt> <dd> <dl> <dt>
 
 0x802A000B
@@ -330,7 +330,7 @@ Ocorreu um estouro de ponto flutuante.
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_WRONG_THREAD"></span><span id="ui_e_wrong_thread"></span>**interface de usuário \_ E \_ thread incorreto \_**
+<span id="UI_E_WRONG_THREAD"></span><span id="ui_e_wrong_thread"></span>**INTERFACE DO \_ USUÁRIO E \_ THREAD \_ ERRADO**
 </dt> <dd> <dl> <dt>
 
 0x802A000C
@@ -338,12 +338,12 @@ Ocorreu um estouro de ponto flutuante.
 
 
 
-Esse método só pode ser chamado a partir do thread que criou o objeto.
+Esse método só pode ser chamado do thread que criou o objeto .
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_STORYBOARD_ACTIVE"></span><span id="ui_e_storyboard_active"></span>**interface do usuário \_ E \_ storyboard \_ ativa**
+<span id="UI_E_STORYBOARD_ACTIVE"></span><span id="ui_e_storyboard_active"></span>**INTERFACE DO \_ USUÁRIO E \_ STORYBOARD \_ ATIVO**
 </dt> <dd> <dl> <dt>
 
 0x802A0101
@@ -356,7 +356,7 @@ O storyboard está atualmente na agenda.
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_STORYBOARD_NOT_PLAYING"></span><span id="ui_e_storyboard_not_playing"></span>**a interface do usuário \_ E o \_ Storyboard não estão em \_ \_ execução**
+<span id="UI_E_STORYBOARD_NOT_PLAYING"></span><span id="ui_e_storyboard_not_playing"></span>**O \_ STORYBOARD DA INTERFACE DO \_ USUÁRIO E NÃO ESTÁ EM \_ \_ REPRODUÇÃO**
 </dt> <dd> <dl> <dt>
 
 0x802A0102
@@ -364,12 +364,12 @@ O storyboard está atualmente na agenda.
 
 
 
-O storyboard não está sendo reproduzido.
+O storyboard não está em reprodução.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_START_KEYFRAME_AFTER_END"></span><span id="ui_e_start_keyframe_after_end"></span>**IU \_ E \_ \_ quadro-chave inicial após o \_ \_ final**
+<span id="UI_E_START_KEYFRAME_AFTER_END"></span><span id="ui_e_start_keyframe_after_end"></span>**UI \_ E \_ START \_ KEYFRAME \_ AFTER \_ END**
 </dt> <dd> <dl> <dt>
 
 0x802A0103
@@ -377,12 +377,12 @@ O storyboard não está sendo reproduzido.
 
 
 
-O quadro-chave inicial pode ocorrer após o quadro-chave final.
+O keyframe inicial pode ocorrer após o keyframe final.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_END_KEYFRAME_NOT_DETERMINED"></span><span id="ui_e_end_keyframe_not_determined"></span>**quadro-chave de término da interface do usuário \_ \_ \_ \_ não \_ determinado**
+<span id="UI_E_END_KEYFRAME_NOT_DETERMINED"></span><span id="ui_e_end_keyframe_not_determined"></span>**UI \_ E \_ END \_ KEYFRAME NÃO \_ \_ DETERMINADO**
 </dt> <dd> <dl> <dt>
 
 0x802A0104
@@ -390,12 +390,12 @@ O quadro-chave inicial pode ocorrer após o quadro-chave final.
 
 
 
-Pode não ser possível determinar a hora do quadro-chave final quando o quadro chave inicial é atingido.
+Talvez não seja possível determinar a hora do keyframe final quando o keyframe inicial for atingido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_LOOPS_OVERLAP"></span><span id="ui_e_loops_overlap"></span>**sobreposição de \_ \_ loops E de interface do usuário \_**
+<span id="UI_E_LOOPS_OVERLAP"></span><span id="ui_e_loops_overlap"></span>**SOBREPOSIÇÃO \_ DE LOOPS E \_ DA INTERFACE DO \_ USUÁRIO**
 </dt> <dd> <dl> <dt>
 
 0x802A0105
@@ -408,7 +408,7 @@ Duas partes repetidas de um storyboard podem se sobrepor.
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_TRANSITION_ALREADY_USED"></span><span id="ui_e_transition_already_used"></span>**interface do usuário \_ E \_ transição \_ já \_ usada**
+<span id="UI_E_TRANSITION_ALREADY_USED"></span><span id="ui_e_transition_already_used"></span>**INTERFACE DO \_ USUÁRIO E TRANSIÇÃO JÁ \_ \_ \_ USADA**
 </dt> <dd> <dl> <dt>
 
 0x802A0106
@@ -416,12 +416,12 @@ Duas partes repetidas de um storyboard podem se sobrepor.
 
 
 
-A transição já foi adicionada a um Storyboard.
+A transição já foi adicionada a um storyboard.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_TRANSITION_NOT_IN_STORYBOARD"></span><span id="ui_e_transition_not_in_storyboard"></span>**a \_ transição de interface do usuário E \_ não está \_ \_ no \_ storyboard**
+<span id="UI_E_TRANSITION_NOT_IN_STORYBOARD"></span><span id="ui_e_transition_not_in_storyboard"></span>**A INTERFACE \_ DO USUÁRIO E A TRANSIÇÃO NÃO ESTÃO NO \_ \_ \_ \_ STORYBOARD**
 </dt> <dd> <dl> <dt>
 
 0x802A0107
@@ -429,12 +429,12 @@ A transição já foi adicionada a um Storyboard.
 
 
 
-A transição não foi adicionada a um Storyboard.
+A transição não foi adicionada a um storyboard.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_TRANSITION_ECLIPSED"></span><span id="ui_e_transition_eclipsed"></span>**transição de interface do usuário \_ E \_ \_ Eclipse**
+<span id="UI_E_TRANSITION_ECLIPSED"></span><span id="ui_e_transition_eclipsed"></span>**INTERFACE DO \_ USUÁRIO E \_ TRANSIÇÃO \_ ECLIPSED**
 </dt> <dd> <dl> <dt>
 
 0x802A0108
@@ -442,12 +442,12 @@ A transição não foi adicionada a um Storyboard.
 
 
 
-A transição pode ocultar o início de outra transição no storyboard.
+A transição pode eclipsar o início de outra transição no storyboard.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_TIME_BEFORE_LAST_UPDATE"></span><span id="ui_e_time_before_last_update"></span>**\_tempo E \_ hora da IU antes da \_ \_ última \_ atualização**
+<span id="UI_E_TIME_BEFORE_LAST_UPDATE"></span><span id="ui_e_time_before_last_update"></span>**TEMPO DE \_ INTERFACE DO USUÁRIO ANTES DA ÚLTIMA \_ \_ \_ \_ ATUALIZAÇÃO**
 </dt> <dd> <dl> <dt>
 
 0x802A0109
@@ -455,12 +455,12 @@ A transição pode ocultar o início de outra transição no storyboard.
 
 
 
-A hora determinada é anterior à hora passada para a última atualização.
+O tempo determinado é anterior ao tempo passado para a última atualização.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_TIMER_CLIENT_ALREADY_CONNECTED"></span><span id="ui_e_timer_client_already_connected"></span>**\_cliente do temporizador E de interface do usuário \_ \_ \_ já \_ conectado**
+<span id="UI_E_TIMER_CLIENT_ALREADY_CONNECTED"></span><span id="ui_e_timer_client_already_connected"></span>**CLIENTE DE \_ TEMPORIZADOR DE INTERFACE DO USUÁRIO JÁ \_ \_ \_ \_ CONECTADO**
 </dt> <dd> <dl> <dt>
 
 0x802A010A
@@ -468,12 +468,12 @@ A hora determinada é anterior à hora passada para a última atualização.
 
 
 
-Este cliente já está conectado a um temporizador.
+Esse cliente já está conectado a um temporizador.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_INVALID_DIMENSION"></span><span id="ui_e_invalid_dimension"></span>**dimensão de interface do usuário \_ E \_ inválida \_**
+<span id="UI_E_INVALID_DIMENSION"></span><span id="ui_e_invalid_dimension"></span>**INTERFACE DO \_ USUÁRIO E \_ DIMENSÃO \_ INVÁLIDA**
 </dt> <dd> <dl> <dt>
 
 0x802A010B
@@ -481,12 +481,12 @@ Este cliente já está conectado a um temporizador.
 
 
 
-A dimensão passada é inválida ou não corresponde à dimensão do objeto.
+A dimensão passada é inválida ou não combina com a dimensão do objeto.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_PRIMITIVE_OUT_OF_BOUNDS"></span><span id="ui_e_primitive_out_of_bounds"></span>**interface do usuário \_ E \_ primitiva \_ \_ de \_ limites**
+<span id="UI_E_PRIMITIVE_OUT_OF_BOUNDS"></span><span id="ui_e_primitive_out_of_bounds"></span>**INTERFACE DO \_ USUÁRIO E PRIMITIVO FORA DOS \_ \_ \_ \_ LIMITES**
 </dt> <dd> <dl> <dt>
 
 0x802A010C
@@ -499,7 +499,7 @@ O primitivo adicionado começa em ou além da duração do interpolador.
 
 </dt> </dl> </dd> <dt>
 
-<span id="UI_E_WINDOW_CLOSED"></span><span id="ui_e_window_closed"></span>**janela E da interface do usuário \_ \_ \_ fechada**
+<span id="UI_E_WINDOW_CLOSED"></span><span id="ui_e_window_closed"></span>**JANELA \_ DA INTERFACE DO \_ USUÁRIO \_ FECHADA**
 </dt> <dd> <dl> <dt>
 
 0x802A0201
@@ -512,7 +512,7 @@ A operação não pode ser concluída porque a janela está sendo fechada.
 
 </dt> </dl> </dd> <dt>
 
-<span id="E_AUDIO_ENGINE_NODE_NOT_FOUND"></span><span id="e_audio_engine_node_not_found"></span>**o \_ nó do mecanismo de áudio E \_ \_ \_ não \_ foi encontrado**
+<span id="E_AUDIO_ENGINE_NODE_NOT_FOUND"></span><span id="e_audio_engine_node_not_found"></span>**NÓ \_ DO MECANISMO DE ÁUDIO E NÃO \_ \_ \_ \_ ENCONTRADO**
 </dt> <dd> <dl> <dt>
 
 0x80660001
@@ -520,12 +520,12 @@ A operação não pode ser concluída porque a janela está sendo fechada.
 
 
 
-PortCls não pôde localizar um nó de mecanismo de áudio exposto por um driver de miniporta que alega suporte para IMiniportAudioEngineNode.
+PortCls não pôde encontrar um nó do mecanismo de áudio exposto por um driver de miniporte que reivindicava suporte para IMiniportAudioEngineNode.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DXGI_STATUS_OCCLUDED"></span><span id="dxgi_status_occluded"></span>**\_obstruído de status de dxgi \_**
+<span id="DXGI_STATUS_OCCLUDED"></span><span id="dxgi_status_occluded"></span>**STATUS DO DXGI \_ \_ OCLUÍDO**
 </dt> <dd> <dl> <dt>
 
 0x087A0001
@@ -533,12 +533,12 @@ PortCls não pôde localizar um nó de mecanismo de áudio exposto por um driver
 
 
 
-A operação atual era invisível para o usuário.
+A operação Present era invisível para o usuário.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DXGI_STATUS_CLIPPED"></span><span id="dxgi_status_clipped"></span>**STATUS de DXGI \_ \_ recortado**
+<span id="DXGI_STATUS_CLIPPED"></span><span id="dxgi_status_clipped"></span>**STATUS DO DXGI \_ \_ RECORTADO**
 </dt> <dd> <dl> <dt>
 
 0x087A0002
@@ -546,12 +546,12 @@ A operação atual era invisível para o usuário.
 
 
 
-A operação atual foi parcialmente invisível para o usuário.
+A operação Present era parcialmente invisível para o usuário.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DXGI_STATUS_NO_REDIRECTION"></span><span id="dxgi_status_no_redirection"></span>**STATUS de DXGI \_ \_ sem \_ redirecionamento**
+<span id="DXGI_STATUS_NO_REDIRECTION"></span><span id="dxgi_status_no_redirection"></span>**STATUS DO DXGI \_ \_ SEM \_ REDIRECIONAMENTO**
 </dt> <dd> <dl> <dt>
 
 0x087A0004
@@ -559,12 +559,12 @@ A operação atual foi parcialmente invisível para o usuário.
 
 
 
-O driver está solicitando que o tempo de execução de DXGI não use recursos compartilhados para se comunicar com o Gerenciador de Janelas da Área de Trabalho.
+O driver está solicitando que o runtime do DXGI não use recursos compartilhados para se comunicar com o Gerenciador de Janelas da Área de Trabalho.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DXGI_STATUS_NO_DESKTOP_ACCESS"></span><span id="dxgi_status_no_desktop_access"></span>**STATUS de DXGI \_ \_ sem \_ acesso à área de trabalho \_**
+<span id="DXGI_STATUS_NO_DESKTOP_ACCESS"></span><span id="dxgi_status_no_desktop_access"></span>**STATUS DO DXGI \_ SEM ACESSO À ÁREA DE \_ \_ \_ TRABALHO**
 </dt> <dd> <dl> <dt>
 
 0x087A0005
@@ -572,12 +572,12 @@ O driver está solicitando que o tempo de execução de DXGI não use recursos c
 
 
 
-A operação atual não estava visível porque a sessão do Windows mudou para outra área de trabalho (por exemplo, Ctrl-Alt-Del).
+A operação Present não estava visível porque a Windows foi alternada para outra área de trabalho (por exemplo, ctrl-alt-del).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DXGI_STATUS_GRAPHICS_VIDPN_SOURCE_IN_USE"></span><span id="dxgi_status_graphics_vidpn_source_in_use"></span>**\_ \_ gráficos de status \_ dxgi \_ fonte VIDPN \_ em \_ uso**
+<span id="DXGI_STATUS_GRAPHICS_VIDPN_SOURCE_IN_USE"></span><span id="dxgi_status_graphics_vidpn_source_in_use"></span>**FONTE \_ \_ VIDPN DE GRÁFICOS DE STATUS DO DXGI \_ \_ EM \_ \_ USO**
 </dt> <dd> <dl> <dt>
 
 0x087A0006
@@ -585,7 +585,7 @@ A operação atual não estava visível porque a sessão do Windows mudou para o
 
 
 
-A operação atual não estava visível porque o monitor de destino estava sendo usado para alguma outra finalidade.
+A operação Present não estava visível porque o monitor de destino estava sendo usado para alguma outra finalidade.
 
 
 </dt> </dl> </dd> <dt>
@@ -845,7 +845,7 @@ O valor de tempo limite foi decorrido e o recurso ainda não está disponível.
 
 
 
-A duplicação de saída foi desativada porque a sessão do Windows foi encerrada ou desconectada. Isso acontece quando um usuário remoto se desconecta ou quando "Alternar usuário" é usado localmente.
+a duplicação de saída foi desativada porque a sessão de Windows foi encerrada ou desconectada. Isso acontece quando um usuário remoto se desconecta ou quando "Alternar usuário" é usado localmente.
 
 
 </dt> </dl> </dd> <dt>
@@ -967,7 +967,7 @@ O contador de GPU estava em uso por outro processo ou dispositivo D3D quando o a
 
 </dt> </dl> </dd> <dt>
 
-<span id="D3D10_ERROR_TOO_MANY_UNIQUE_STATE_OBJECTS"></span><span id="d3d10_error_too_many_unique_state_objects"></span>**Erro D3D10 em \_ \_ excesso de \_ \_ \_ objetos de estado exclusivos \_**
+<span id="D3D10_ERROR_TOO_MANY_UNIQUE_STATE_OBJECTS"></span><span id="d3d10_error_too_many_unique_state_objects"></span>**ERRO D3D10 \_ MUITOS OBJETOS DE ESTADO \_ \_ \_ \_ \_ EXCLUSIVOS**
 </dt> <dd> <dl> <dt>
 
 0x88790001
@@ -975,12 +975,12 @@ O contador de GPU estava em uso por outro processo ou dispositivo D3D quando o a
 
 
 
-O aplicativo excedeu o número máximo de objetos de estado exclusivo por dispositivo Direct3D. O limite é 4096 para níveis de recurso de até 11,1.
+O aplicativo excedeu o número máximo de objetos de estado exclusivos por dispositivo Direct3D. O limite é 4096 para níveis de recurso até 11,1.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="D3D10_ERROR_FILE_NOT_FOUND"></span><span id="d3d10_error_file_not_found"></span>**\_Arquivo de erro d3d10 \_ \_ não \_ encontrado**
+<span id="D3D10_ERROR_FILE_NOT_FOUND"></span><span id="d3d10_error_file_not_found"></span>**ARQUIVO DE ERRO D3D10 \_ \_ NÃO \_ \_ ENCONTRADO**
 </dt> <dd> <dl> <dt>
 
 0x88790002
@@ -993,7 +993,7 @@ O arquivo especificado não foi encontrado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="D3D11_ERROR_TOO_MANY_UNIQUE_STATE_OBJECTS"></span><span id="d3d11_error_too_many_unique_state_objects"></span>**Erro D3D11 em \_ \_ excesso de \_ \_ \_ objetos de estado exclusivos \_**
+<span id="D3D11_ERROR_TOO_MANY_UNIQUE_STATE_OBJECTS"></span><span id="d3d11_error_too_many_unique_state_objects"></span>**ERRO D3D11 \_ MUITOS OBJETOS DE ESTADO \_ \_ \_ \_ \_ EXCLUSIVOS**
 </dt> <dd> <dl> <dt>
 
 0x887C0001
@@ -1001,12 +1001,12 @@ O arquivo especificado não foi encontrado.
 
 
 
-O aplicativo excedeu o número máximo de objetos de estado exclusivo por dispositivo Direct3D. O limite é 4096 para níveis de recurso de até 11,1.
+O aplicativo excedeu o número máximo de objetos de estado exclusivos por dispositivo Direct3D. O limite é 4096 para níveis de recurso até 11,1.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="D3D11_ERROR_FILE_NOT_FOUND"></span><span id="d3d11_error_file_not_found"></span>**\_Arquivo de erro D3D11 \_ \_ não \_ encontrado**
+<span id="D3D11_ERROR_FILE_NOT_FOUND"></span><span id="d3d11_error_file_not_found"></span>**ARQUIVO DE ERRO D3D11 \_ \_ NÃO \_ \_ ENCONTRADO**
 </dt> <dd> <dl> <dt>
 
 0x887C0002
@@ -1019,7 +1019,7 @@ O arquivo especificado não foi encontrado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="D3D11_ERROR_TOO_MANY_UNIQUE_VIEW_OBJECTS"></span><span id="d3d11_error_too_many_unique_view_objects"></span>**Erro D3D11 em excesso de \_ \_ \_ objetos de \_ \_ exibição exclusivos \_**
+<span id="D3D11_ERROR_TOO_MANY_UNIQUE_VIEW_OBJECTS"></span><span id="d3d11_error_too_many_unique_view_objects"></span>**ERRO D3D11 \_ MUITOS \_ OBJETOS DE \_ \_ \_ EXIBIÇÃO \_ EXCLUSIVOS**
 </dt> <dd> <dl> <dt>
 
 0x887C0003
@@ -1027,12 +1027,12 @@ O arquivo especificado não foi encontrado.
 
 
 
-O aplicativo excedeu o número máximo de objetos de exibição exclusivos por dispositivo Direct3D. O limite é 2 ^ 20 para níveis de recurso de até 11,1.
+O aplicativo excedeu o número máximo de objetos de exibição exclusivos por dispositivo Direct3D. O limite é 2^20 para níveis de recurso até 11,1.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="D3D11_ERROR_DEFERRED_CONTEXT_MAP_WITHOUT_INITIAL_DISCARD"></span><span id="d3d11_error_deferred_context_map_without_initial_discard"></span>**Erro D3D11 de \_ \_ mapeamento de contexto adiado \_ \_ \_ sem \_ \_ descarte inicial**
+<span id="D3D11_ERROR_DEFERRED_CONTEXT_MAP_WITHOUT_INITIAL_DISCARD"></span><span id="d3d11_error_deferred_context_map_without_initial_discard"></span>**ERRO D3D11 \_ MAPA \_ DE CONTEXTO \_ \_ ADIADO SEM DESCARTE \_ \_ \_ INICIAL**
 </dt> <dd> <dl> <dt>
 
 0x887C0004
@@ -1040,12 +1040,12 @@ O aplicativo excedeu o número máximo de objetos de exibição exclusivos por d
 
 
 
-A primeira chamada do aplicativo por lista de comandos para mapear um contexto adiado não usou o \_ descarte de gravação do mapa D3D11 \_ \_ .
+A primeira chamada por lista de comandos do aplicativo para Mapear em um contexto adiado não usou D3D11 \_ MAP \_ WRITE \_ DISCARD.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="D2DERR_WRONG_STATE"></span><span id="d2derr_wrong_state"></span>**D2DERR \_ estado incorreto \_**
+<span id="D2DERR_WRONG_STATE"></span><span id="d2derr_wrong_state"></span>**ESTADO ERRADO DE D2DERR \_ \_**
 </dt> <dd> <dl> <dt>
 
 0x88990001
@@ -1058,7 +1058,7 @@ O objeto não estava no estado correto para processar o método.
 
 </dt> </dl> </dd> <dt>
 
-<span id="D2DERR_NOT_INITIALIZED"></span><span id="d2derr_not_initialized"></span>**D2DERR \_ não \_ inicializado**
+<span id="D2DERR_NOT_INITIALIZED"></span><span id="d2derr_not_initialized"></span>**D2DERR \_ NÃO \_ INICIALIZADO**
 </dt> <dd> <dl> <dt>
 
 0x88990002
@@ -1071,7 +1071,7 @@ O objeto ainda não foi inicializado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="D2DERR_UNSUPPORTED_OPERATION"></span><span id="d2derr_unsupported_operation"></span>**\_Operação sem suporte do \_ D2DERR**
+<span id="D2DERR_UNSUPPORTED_OPERATION"></span><span id="d2derr_unsupported_operation"></span>**OPERAÇÃO SEM SUPORTE DE D2DERR \_ \_**
 </dt> <dd> <dl> <dt>
 
 0x88990003
@@ -1084,7 +1084,7 @@ Não há suporte para a operação solicitada.
 
 </dt> </dl> </dd> <dt>
 
-<span id="D2DERR_SCANNER_FAILED"></span><span id="d2derr_scanner_failed"></span>**\_ \_ Falha no scanner D2DERR**
+<span id="D2DERR_SCANNER_FAILED"></span><span id="d2derr_scanner_failed"></span>**FALHA NO SCANNER D2DERR \_ \_**
 </dt> <dd> <dl> <dt>
 
 0x88990004
@@ -1092,12 +1092,12 @@ Não há suporte para a operação solicitada.
 
 
 
-Falha do verificador de geometria ao processar os dados.
+O scanner de geometria não conseguiu processar os dados.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="D2DERR_SCREEN_ACCESS_DENIED"></span><span id="d2derr_screen_access_denied"></span>**\_ \_ Acesso à tela D2DERR \_ negado**
+<span id="D2DERR_SCREEN_ACCESS_DENIED"></span><span id="d2derr_screen_access_denied"></span>**ACESSO À TELA D2DERR \_ \_ \_ NEGADO**
 </dt> <dd> <dl> <dt>
 
 0x88990005
@@ -1105,12 +1105,12 @@ Falha do verificador de geometria ao processar os dados.
 
 
 
-Direct2D não pôde acessar a tela.
+Direct2D não foi possível acessar a tela.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="D2DERR_DISPLAY_STATE_INVALID"></span><span id="d2derr_display_state_invalid"></span>**Estado de exibição do D2DERR \_ \_ \_ inválido**
+<span id="D2DERR_DISPLAY_STATE_INVALID"></span><span id="d2derr_display_state_invalid"></span>**ESTADO DE EXIBIÇÃO D2DERR \_ \_ \_ INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 0x88990006
@@ -1123,7 +1123,7 @@ Não foi possível determinar um estado de exibição válido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="D2DERR_ZERO_VECTOR"></span><span id="d2derr_zero_vector"></span>**D2DERR \_ de \_ vetor zero**
+<span id="D2DERR_ZERO_VECTOR"></span><span id="d2derr_zero_vector"></span>**D2DERR \_ ZERO \_ VECTOR**
 </dt> <dd> <dl> <dt>
 
 0x88990007
@@ -1136,7 +1136,7 @@ O vetor fornecido é zero.
 
 </dt> </dl> </dd> <dt>
 
-<span id="D2DERR_INTERNAL_ERROR"></span><span id="d2derr_internal_error"></span>**\_Erro interno de D2DERR \_**
+<span id="D2DERR_INTERNAL_ERROR"></span><span id="d2derr_internal_error"></span>**ERRO INTERNO \_ D2DERR \_**
 </dt> <dd> <dl> <dt>
 
 0x88990008
@@ -1144,12 +1144,12 @@ O vetor fornecido é zero.
 
 
 
-Ocorreu um erro interno (bug Direct2D). Em compilações marcadas, declaramos. O aplicativo deve fechar essa instância do Direct2D e deve considerar reiniciar seu processo.
+Ocorreu um erro interno (Direct2D bug). Em builds verificados, declararíamos. O aplicativo deve fechar essa instância do Direct2D e deve considerar reiniciar seu processo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="D2DERR_DISPLAY_FORMAT_NOT_SUPPORTED"></span><span id="d2derr_display_format_not_supported"></span>**\_Formato de exibição D2DERR \_ \_ não \_ suportado**
+<span id="D2DERR_DISPLAY_FORMAT_NOT_SUPPORTED"></span><span id="d2derr_display_format_not_supported"></span>**FORMATO DE EXIBIÇÃO D2DERR \_ \_ SEM \_ \_ SUPORTE**
 </dt> <dd> <dl> <dt>
 
 0x88990009
@@ -1157,12 +1157,12 @@ Ocorreu um erro interno (bug Direct2D). Em compilações marcadas, declaramos. O
 
 
 
-O formato de exibição Direct2D precisa de renderização não é suportado pelo dispositivo de hardware.
+O formato de exibição Direct2D que o dispositivo de hardware precisa renderizar não tem suporte.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="D2DERR_INVALID_CALL"></span><span id="d2derr_invalid_call"></span>**D2DERR \_ chamada inválida \_**
+<span id="D2DERR_INVALID_CALL"></span><span id="d2derr_invalid_call"></span>**CHAMADA INVÁLIDA DE D2DERR \_ \_**
 </dt> <dd> <dl> <dt>
 
 0x8899000A
@@ -1170,12 +1170,12 @@ O formato de exibição Direct2D precisa de renderização não é suportado pel
 
 
 
-Uma chamada para este método é inválida.
+Uma chamada para esse método é inválida.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="D2DERR_NO_HARDWARE_DEVICE"></span><span id="d2derr_no_hardware_device"></span>**D2DERR \_ nenhum \_ dispositivo de hardware \_**
+<span id="D2DERR_NO_HARDWARE_DEVICE"></span><span id="d2derr_no_hardware_device"></span>**D2DERR \_ NENHUM DISPOSITIVO DE \_ \_ HARDWARE**
 </dt> <dd> <dl> <dt>
 
 0x8899000B
@@ -1183,12 +1183,12 @@ Uma chamada para este método é inválida.
 
 
 
-Nenhum dispositivo de renderização de hardware está disponível para esta operação.
+Nenhum dispositivo de renderização de hardware está disponível para essa operação.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="D2DERR_RECREATE_TARGET"></span><span id="d2derr_recreate_target"></span>**D2DERR \_ recriar \_ destino**
+<span id="D2DERR_RECREATE_TARGET"></span><span id="d2derr_recreate_target"></span>**DESTINO DE RECRIAÇÃO DE D2DERR \_ \_**
 </dt> <dd> <dl> <dt>
 
 0x8899000C
@@ -1196,12 +1196,12 @@ Nenhum dispositivo de renderização de hardware está disponível para esta ope
 
 
 
-Houve um erro de apresentação que pode ser recuperável. O chamador precisa recriar, reprocessar o quadro inteiro e tentar novamente apresentar.
+Houve um erro de apresentação que pode ser recuperável. O chamador precisa recriar, recriá-lo e reattempt presente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="D2DERR_TOO_MANY_SHADER_ELEMENTS"></span><span id="d2derr_too_many_shader_elements"></span>**D2DERR \_ \_ muitos \_ elementos de sombreador \_**
+<span id="D2DERR_TOO_MANY_SHADER_ELEMENTS"></span><span id="d2derr_too_many_shader_elements"></span>**D2DERR \_ MUITOS ELEMENTOS DE \_ \_ \_ SOMBREADOR**
 </dt> <dd> <dl> <dt>
 
 0x8899000D
@@ -1209,12 +1209,12 @@ Houve um erro de apresentação que pode ser recuperável. O chamador precisa re
 
 
 
-Falha na construção do sombreador porque ele era muito complexo.
+Falha na construção do sombreador porque ela era muito complexa.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="D2DERR_SHADER_COMPILE_FAILED"></span><span id="d2derr_shader_compile_failed"></span>**\_ \_ Falha na compilação do SOMBREAdor D2DERR \_**
+<span id="D2DERR_SHADER_COMPILE_FAILED"></span><span id="d2derr_shader_compile_failed"></span>**FALHA NO \_ COMPILADOR DO SOMBREADOR D2DERR \_ \_**
 </dt> <dd> <dl> <dt>
 
 0x8899000E
@@ -1227,7 +1227,7 @@ Falha na compilação do sombreador.
 
 </dt> </dl> </dd> <dt>
 
-<span id="D2DERR_MAX_TEXTURE_SIZE_EXCEEDED"></span><span id="d2derr_max_texture_size_exceeded"></span>**\_Tamanho máximo de \_ textura D2DERR \_ \_ excedido**
+<span id="D2DERR_MAX_TEXTURE_SIZE_EXCEEDED"></span><span id="d2derr_max_texture_size_exceeded"></span>**TAMANHO MÁXIMO DA TEXTURA D2DERR \_ \_ \_ \_ EXCEDIDO**
 </dt> <dd> <dl> <dt>
 
 0x8899000F
@@ -1235,12 +1235,12 @@ Falha na compilação do sombreador.
 
 
 
-O tamanho da superfície do DirectX solicitado excedeu o tamanho máximo da textura.
+O tamanho da superfície DirectX solicitado excedeu o tamanho máximo da textura.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="D2DERR_UNSUPPORTED_VERSION"></span><span id="d2derr_unsupported_version"></span>**D2DERR \_ versão sem suporte \_**
+<span id="D2DERR_UNSUPPORTED_VERSION"></span><span id="d2derr_unsupported_version"></span>**VERSÃO SEM SUPORTE DO D2DERR \_ \_**
 </dt> <dd> <dl> <dt>
 
 0x88990010
@@ -1248,12 +1248,12 @@ O tamanho da superfície do DirectX solicitado excedeu o tamanho máximo da text
 
 
 
-Não há suporte para a versão solicitada do Direct2D.
+A versão Direct2D solicitada não tem suporte.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="D2DERR_BAD_NUMBER"></span><span id="d2derr_bad_number"></span>**\_Número inadequado de D2DERR \_**
+<span id="D2DERR_BAD_NUMBER"></span><span id="d2derr_bad_number"></span>**D2DERR \_ NÚMERO \_ RUIM**
 </dt> <dd> <dl> <dt>
 
 0x88990011
@@ -1266,7 +1266,7 @@ Número inválido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="D2DERR_WRONG_FACTORY"></span><span id="d2derr_wrong_factory"></span>**\_Fábrica incorreta D2DERR \_**
+<span id="D2DERR_WRONG_FACTORY"></span><span id="d2derr_wrong_factory"></span>**D2DERR \_ WRONG \_ FACTORY**
 </dt> <dd> <dl> <dt>
 
 0x88990012
@@ -1279,7 +1279,7 @@ Os objetos usados juntos devem ser criados na mesma instância de fábrica.
 
 </dt> </dl> </dd> <dt>
 
-<span id="D2DERR_LAYER_ALREADY_IN_USE"></span><span id="d2derr_layer_already_in_use"></span>**A \_ camada D2DERR \_ já está \_ em \_ uso**
+<span id="D2DERR_LAYER_ALREADY_IN_USE"></span><span id="d2derr_layer_already_in_use"></span>**CAMADA D2DERR \_ \_ JÁ EM \_ \_ USO**
 </dt> <dd> <dl> <dt>
 
 0x88990013
@@ -1287,12 +1287,12 @@ Os objetos usados juntos devem ser criados na mesma instância de fábrica.
 
 
 
-Um recurso de camada só pode ser usado uma vez em qualquer momento.
+Um recurso de camada só pode ser usado uma vez em qualquer ponto no tempo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="D2DERR_POP_CALL_DID_NOT_MATCH_PUSH"></span><span id="d2derr_pop_call_did_not_match_push"></span>**A \_ \_ chamada pop \_ D2DERR \_ não \_ correspondia ao \_ push**
+<span id="D2DERR_POP_CALL_DID_NOT_MATCH_PUSH"></span><span id="d2derr_pop_call_did_not_match_push"></span>**A CHAMADA POP D2DERR \_ \_ NÃO CORRESPONDER AO \_ \_ \_ \_ PUSH**
 </dt> <dd> <dl> <dt>
 
 0x88990014
@@ -1300,12 +1300,12 @@ Um recurso de camada só pode ser usado uma vez em qualquer momento.
 
 
 
-A chamada pop não correspondeu à chamada Push correspondente.
+A chamada pop não correspondeu à chamada push correspondente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="D2DERR_WRONG_RESOURCE_DOMAIN"></span><span id="d2derr_wrong_resource_domain"></span>**D2DERR \_ \_ domínio de recurso incorreto \_**
+<span id="D2DERR_WRONG_RESOURCE_DOMAIN"></span><span id="d2derr_wrong_resource_domain"></span>**DOMÍNIO DE RECURSO ERRADO D2DERR \_ \_ \_**
 </dt> <dd> <dl> <dt>
 
 0x88990015
@@ -1313,12 +1313,12 @@ A chamada pop não correspondeu à chamada Push correspondente.
 
 
 
-O recurso foi percebido no destino de renderização errado.
+O recurso foi realizado no destino de renderização errado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="D2DERR_PUSH_POP_UNBALANCED"></span><span id="d2derr_push_pop_unbalanced"></span>**D2DERR \_ Push \_ pop \_ desbalanceado**
+<span id="D2DERR_PUSH_POP_UNBALANCED"></span><span id="d2derr_push_pop_unbalanced"></span>**D2DERR \_ PUSH \_ POP \_ DESBALANCEADO**
 </dt> <dd> <dl> <dt>
 
 0x88990016
@@ -1326,12 +1326,12 @@ O recurso foi percebido no destino de renderização errado.
 
 
 
-As chamadas push e pop foram desbalanceadas.
+As chamadas push e pop foram desbalanceados.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="D2DERR_RENDER_TARGET_HAS_LAYER_OR_CLIPRECT"></span><span id="d2derr_render_target_has_layer_or_cliprect"></span>**O \_ \_ destino de renderização D2DERR \_ tem \_ camada \_ ou \_ CLIPRECT**
+<span id="D2DERR_RENDER_TARGET_HAS_LAYER_OR_CLIPRECT"></span><span id="d2derr_render_target_has_layer_or_cliprect"></span>**O DESTINO DE RENDERIZAÇÃO D2DERR \_ \_ TEM CAMADA OU \_ \_ \_ \_ CLIPRECT**
 </dt> <dd> <dl> <dt>
 
 0x88990017
@@ -1339,12 +1339,12 @@ As chamadas push e pop foram desbalanceadas.
 
 
 
-Tentativa de copiar de um destino de renderização enquanto uma camada ou um clip RECT é aplicado.
+Tente copiar de um destino de renderização enquanto uma rect de camada ou clipe é aplicada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="D2DERR_INCOMPATIBLE_BRUSH_TYPES"></span><span id="d2derr_incompatible_brush_types"></span>**\_Tipos de pincel incompatíveis com D2DERR \_ \_**
+<span id="D2DERR_INCOMPATIBLE_BRUSH_TYPES"></span><span id="d2derr_incompatible_brush_types"></span>**TIPOS DE PINCEL \_ INCOMPATÍVEIS COM D2DERR \_ \_**
 </dt> <dd> <dl> <dt>
 
 0x88990018
@@ -1357,7 +1357,7 @@ Os tipos de pincel são incompatíveis para a chamada.
 
 </dt> </dl> </dd> <dt>
 
-<span id="D2DERR_WIN32_ERROR"></span><span id="d2derr_win32_error"></span>**Erro do D2DERR \_ Win32 \_**
+<span id="D2DERR_WIN32_ERROR"></span><span id="d2derr_win32_error"></span>**ERRO D2DERR \_ WIN32 \_**
 </dt> <dd> <dl> <dt>
 
 0x88990019
@@ -1365,12 +1365,12 @@ Os tipos de pincel são incompatíveis para a chamada.
 
 
 
-Ocorreu uma falha desconhecida do Win32.
+Ocorreu uma falha win32 desconhecida.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="D2DERR_TARGET_NOT_GDI_COMPATIBLE"></span><span id="d2derr_target_not_gdi_compatible"></span>**\_Destino D2DERR \_ não \_ \_ compatível com GDI**
+<span id="D2DERR_TARGET_NOT_GDI_COMPATIBLE"></span><span id="d2derr_target_not_gdi_compatible"></span>**DESTINO D2DERR \_ \_ NÃO \_ COMPATÍVEL COM \_ GDI**
 </dt> <dd> <dl> <dt>
 
 0x8899001A
@@ -1378,12 +1378,12 @@ Ocorreu uma falha desconhecida do Win32.
 
 
 
-O destino de renderização não é compatível com GDI.
+O destino de renderização não é compatível com o GDI.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="D2DERR_TEXT_EFFECT_IS_WRONG_TYPE"></span><span id="d2derr_text_effect_is_wrong_type"></span>**O \_ efeito de texto de D2DERR \_ é um \_ \_ tipo incorreto \_**
+<span id="D2DERR_TEXT_EFFECT_IS_WRONG_TYPE"></span><span id="d2derr_text_effect_is_wrong_type"></span>**O EFEITO DE TEXTO D2DERR \_ \_ É UM TIPO \_ \_ \_ ERRADO**
 </dt> <dd> <dl> <dt>
 
 0x8899001B
@@ -1391,12 +1391,12 @@ O destino de renderização não é compatível com GDI.
 
 
 
-Um objeto de efeito de desenho de cliente de texto é do tipo errado.
+Um objeto de efeito de desenho do cliente de texto é do tipo errado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="D2DERR_TEXT_RENDERER_NOT_RELEASED"></span><span id="d2derr_text_renderer_not_released"></span>**\_Renderizador de texto D2DERR \_ \_ não \_ liberado**
+<span id="D2DERR_TEXT_RENDERER_NOT_RELEASED"></span><span id="d2derr_text_renderer_not_released"></span>**RENDERIZAÇÃO DE TEXTO D2DERR \_ \_ NÃO \_ \_ LANÇADA**
 </dt> <dd> <dl> <dt>
 
 0x8899001C
@@ -1404,12 +1404,12 @@ Um objeto de efeito de desenho de cliente de texto é do tipo errado.
 
 
 
-O aplicativo está mantendo uma referência à interface IDWriteTextRenderer depois que a chamada DrawText ou DrawTextLayout correspondente foi retornada. A instância de IDWriteTextRenderer será inválida.
+O aplicativo mantém uma referência à interface IDWriteTextRenderer depois que a chamada DrawText ou DrawTextLayout correspondente é retornada. A instância IDWriteTextRenderer será inválida.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="D2DERR_EXCEEDS_MAX_BITMAP_SIZE"></span><span id="d2derr_exceeds_max_bitmap_size"></span>**D2DERR \_ excede \_ o \_ tamanho máximo do bitmap \_**
+<span id="D2DERR_EXCEEDS_MAX_BITMAP_SIZE"></span><span id="d2derr_exceeds_max_bitmap_size"></span>**D2DERR \_ EXCEDE O TAMANHO MÁXIMO DO \_ \_ BITMAP \_**
 </dt> <dd> <dl> <dt>
 
 0x8899001D
@@ -1417,12 +1417,12 @@ O aplicativo está mantendo uma referência à interface IDWriteTextRenderer dep
 
 
 
-O tamanho solicitado é maior do que o tamanho de textura com suporte garantido no nível de recurso atual do dispositivo Direct3D.
+O tamanho solicitado é maior que o tamanho da textura com suporte garantido no nível atual do recurso do dispositivo Direct3D.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="D2DERR_INVALID_GRAPH_CONFIGURATION"></span><span id="d2derr_invalid_graph_configuration"></span>**D2DERR \_ \_ configuração de grafo inválida \_**
+<span id="D2DERR_INVALID_GRAPH_CONFIGURATION"></span><span id="d2derr_invalid_graph_configuration"></span>**D2DERR \_ CONFIGURAÇÃO DE \_ \_ GRAFO INVÁLIDA**
 </dt> <dd> <dl> <dt>
 
 0x8899001E
@@ -1430,12 +1430,12 @@ O tamanho solicitado é maior do que o tamanho de textura com suporte garantido 
 
 
 
-Ocorreu um erro de configuração no grafo.
+Houve um erro de configuração no grafo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="D2DERR_INVALID_INTERNAL_GRAPH_CONFIGURATION"></span><span id="d2derr_invalid_internal_graph_configuration"></span>**\_Configuração de \_ \_ grafo interno INválida do D2DERR \_**
+<span id="D2DERR_INVALID_INTERNAL_GRAPH_CONFIGURATION"></span><span id="d2derr_invalid_internal_graph_configuration"></span>**D2DERR \_ CONFIGURAÇÃO DE \_ GRAFO \_ INTERNA \_ INVÁLIDA**
 </dt> <dd> <dl> <dt>
 
 0x8899001F
@@ -1443,12 +1443,12 @@ Ocorreu um erro de configuração no grafo.
 
 
 
-Ocorreu um erro de configuração interna no grafo.
+Houve um erro de configuração interna no grafo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="D2DERR_CYCLIC_GRAPH"></span><span id="d2derr_cyclic_graph"></span>**\_Grafo cíclico \_ D2DERR**
+<span id="D2DERR_CYCLIC_GRAPH"></span><span id="d2derr_cyclic_graph"></span>**GRAFO \_ CÍCLICO D2DERR \_**
 </dt> <dd> <dl> <dt>
 
 0x88990020
@@ -1456,12 +1456,12 @@ Ocorreu um erro de configuração interna no grafo.
 
 
 
-Houve um ciclo no grafo.
+Havia um ciclo no grafo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="D2DERR_BITMAP_CANNOT_DRAW"></span><span id="d2derr_bitmap_cannot_draw"></span>**O \_ bitmap D2DERR \_ não pode \_ desenhar**
+<span id="D2DERR_BITMAP_CANNOT_DRAW"></span><span id="d2derr_bitmap_cannot_draw"></span>**O BITMAP D2DERR \_ \_ NÃO PODE \_ DESENHAR**
 </dt> <dd> <dl> <dt>
 
 0x88990021
@@ -1469,12 +1469,12 @@ Houve um ciclo no grafo.
 
 
 
-Não é possível desenhar com um bitmap que tem as \_ Opções de bitmap d2d1 \_ \_ não podem \_ desenhar a opção.
+Não é possível desenhar com um bitmap que tenha a opção D2D1 \_ BITMAP \_ OPTIONS CANNOT \_ \_ DRAW.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="D2DERR_OUTSTANDING_BITMAP_REFERENCES"></span><span id="d2derr_outstanding_bitmap_references"></span>**D2DERR \_ \_ referências de bitmap pendentes \_**
+<span id="D2DERR_OUTSTANDING_BITMAP_REFERENCES"></span><span id="d2derr_outstanding_bitmap_references"></span>**REFERÊNCIAS DE \_ \_ BITMAP \_ PENDENTES D2DERR**
 </dt> <dd> <dl> <dt>
 
 0x88990022
@@ -1482,12 +1482,12 @@ Não é possível desenhar com um bitmap que tem as \_ Opções de bitmap d2d1 \
 
 
 
-A operação não pode ser concluída enquanto houver referências pendentes para o bitmap de destino.
+A operação não pode ser concluída enquanto há referências pendentes ao bitmap de destino.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="D2DERR_ORIGINAL_TARGET_NOT_BOUND"></span><span id="d2derr_original_target_not_bound"></span>**D2DERR \_ \_ destino original \_ não \_ associado**
+<span id="D2DERR_ORIGINAL_TARGET_NOT_BOUND"></span><span id="d2derr_original_target_not_bound"></span>**DESTINO ORIGINAL D2DERR \_ \_ NÃO \_ \_ VINCULADO**
 </dt> <dd> <dl> <dt>
 
 0x88990023
@@ -1495,12 +1495,12 @@ A operação não pode ser concluída enquanto houver referências pendentes par
 
 
 
-A operação falhou porque o destino original não está associado no momento como um destino.
+A operação falhou porque o destino original não está atualmente vinculado como um destino.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="D2DERR_INVALID_TARGET"></span><span id="d2derr_invalid_target"></span>**D2DERR \_ \_ destino inválido**
+<span id="D2DERR_INVALID_TARGET"></span><span id="d2derr_invalid_target"></span>**DESTINO INVÁLIDO \_ D2DERR \_**
 </dt> <dd> <dl> <dt>
 
 0x88990024
@@ -1508,12 +1508,12 @@ A operação falhou porque o destino original não está associado no momento co
 
 
 
-Não é possível definir a imagem como um destino porque ela é um efeito ou é um bitmap que não tem o \_ sinalizador de destino de opções de bitmap d2d1 \_ \_ definido.
+Não é possível definir a imagem como um destino porque ela é um efeito ou é um bitmap que não tem o sinalizador D2D1 \_ BITMAP \_ OPTIONS TARGET \_ definido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="D2DERR_BITMAP_BOUND_AS_TARGET"></span><span id="d2derr_bitmap_bound_as_target"></span>**\_Bitmap D2DERR \_ associado \_ como \_ destino**
+<span id="D2DERR_BITMAP_BOUND_AS_TARGET"></span><span id="d2derr_bitmap_bound_as_target"></span>**D2DERR \_ BITMAP \_ LIMITADO COMO \_ \_ DESTINO**
 </dt> <dd> <dl> <dt>
 
 0x88990025
@@ -1521,12 +1521,12 @@ Não é possível definir a imagem como um destino porque ela é um efeito ou é
 
 
 
-Não é possível desenhar com um bitmap atualmente associado como bitmap de destino.
+Não é possível desenhar com um bitmap que está atualmente vinculado como o bitmap de destino.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="D2DERR_INSUFFICIENT_DEVICE_CAPABILITIES"></span><span id="d2derr_insufficient_device_capabilities"></span>**D2DERR \_ \_ recursos de dispositivo insuficientes \_**
+<span id="D2DERR_INSUFFICIENT_DEVICE_CAPABILITIES"></span><span id="d2derr_insufficient_device_capabilities"></span>**FUNCIONALIDADES DE DISPOSITIVO INSUFICIENTES DO D2DERR \_ \_ \_**
 </dt> <dd> <dl> <dt>
 
 0x88990026
@@ -1539,7 +1539,7 @@ O dispositivo D3D não tem recursos suficientes para executar a ação solicitad
 
 </dt> </dl> </dd> <dt>
 
-<span id="D2DERR_INTERMEDIATE_TOO_LARGE"></span><span id="d2derr_intermediate_too_large"></span>**D2DERR \_ intermediário \_ muito \_ grande**
+<span id="D2DERR_INTERMEDIATE_TOO_LARGE"></span><span id="d2derr_intermediate_too_large"></span>**D2DERR \_ INTERMEDIÁRIO \_ MUITO \_ GRANDE**
 </dt> <dd> <dl> <dt>
 
 0x88990027
@@ -1547,12 +1547,12 @@ O dispositivo D3D não tem recursos suficientes para executar a ação solicitad
 
 
 
-Não foi possível renderizar o grafo com as configurações de divisão atual do contexto.
+O grafo não pôde ser renderizado com as configurações de bloco atuais do contexto.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="D2DERR_EFFECT_IS_NOT_REGISTERED"></span><span id="d2derr_effect_is_not_registered"></span>**O \_ efeito de D2DERR \_ \_ não está \_ registrado**
+<span id="D2DERR_EFFECT_IS_NOT_REGISTERED"></span><span id="d2derr_effect_is_not_registered"></span>**O EFEITO D2DERR \_ \_ NÃO ESTÁ \_ \_ REGISTRADO**
 </dt> <dd> <dl> <dt>
 
 0x88990028
@@ -1560,12 +1560,12 @@ Não foi possível renderizar o grafo com as configurações de divisão atual d
 
 
 
-O CLSID fornecido para cancelar o registro não correspondeu a um efeito registrado.
+O CLSID fornecido para o registro não correspondeu a um efeito registrado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="D2DERR_INVALID_PROPERTY"></span><span id="d2derr_invalid_property"></span>**\_Propriedade inválida D2DERR \_**
+<span id="D2DERR_INVALID_PROPERTY"></span><span id="d2derr_invalid_property"></span>**PROPRIEDADE INVÁLIDA \_ D2DERR \_**
 </dt> <dd> <dl> <dt>
 
 0x88990029
@@ -1578,7 +1578,7 @@ A propriedade especificada não existe.
 
 </dt> </dl> </dd> <dt>
 
-<span id="D2DERR_NO_SUBPROPERTIES"></span><span id="d2derr_no_subproperties"></span>**D2DERR \_ sem \_ subpropriedades**
+<span id="D2DERR_NO_SUBPROPERTIES"></span><span id="d2derr_no_subproperties"></span>**D2DERR \_ SEM \_ SUBPROPRIEDADES**
 </dt> <dd> <dl> <dt>
 
 0x8899002A
@@ -1586,12 +1586,12 @@ A propriedade especificada não existe.
 
 
 
-A subpropriedade especificada não existe.
+A sub-propriedade especificada não existe.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="D2DERR_PRINT_JOB_CLOSED"></span><span id="d2derr_print_job_closed"></span>**\_Trabalho de impressão D2DERR \_ \_ fechado**
+<span id="D2DERR_PRINT_JOB_CLOSED"></span><span id="d2derr_print_job_closed"></span>**TRABALHO DE IMPRESSÃO D2DERR \_ \_ \_ FECHADO**
 </dt> <dd> <dl> <dt>
 
 0x8899002B
@@ -1599,12 +1599,12 @@ A subpropriedade especificada não existe.
 
 
 
-AddPage ou fechar chamado depois que o trabalho de impressão já está fechado.
+AddPage ou Close chamado depois que o trabalho de impressão já está fechado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="D2DERR_PRINT_FORMAT_NOT_SUPPORTED"></span><span id="d2derr_print_format_not_supported"></span>**\_Formato de impressão D2DERR \_ \_ sem \_ suporte**
+<span id="D2DERR_PRINT_FORMAT_NOT_SUPPORTED"></span><span id="d2derr_print_format_not_supported"></span>**FORMATO DE IMPRESSÃO D2DERR \_ \_ SEM \_ \_ SUPORTE**
 </dt> <dd> <dl> <dt>
 
 0x8899002C
@@ -1612,12 +1612,12 @@ AddPage ou fechar chamado depois que o trabalho de impressão já está fechado.
 
 
 
-Erro durante a criação do controle de impressão. Indica que nenhum dos tipos de destino do pacote (representando formatos de impressora) tem suporte pelo controle de impressão Direct2D.
+Erro durante a criação do controle de impressão. Indica que nenhum dos tipos de destino do pacote (que representam formatos de impressora) tem suporte Direct2D de impressão.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="D2DERR_TOO_MANY_TRANSFORM_INPUTS"></span><span id="d2derr_too_many_transform_inputs"></span>**D2DERR \_ número \_ excessivo \_ de \_ entradas de transformação**
+<span id="D2DERR_TOO_MANY_TRANSFORM_INPUTS"></span><span id="d2derr_too_many_transform_inputs"></span>**D2DERR \_ MUITAS ENTRADAS DE \_ \_ \_ TRANSFORMAÇÃO**
 </dt> <dd> <dl> <dt>
 
 0x8899002D
@@ -1630,7 +1630,7 @@ Um efeito tentou usar uma transformação com muitas entradas.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DWRITE_E_FILEFORMAT"></span><span id="dwrite_e_fileformat"></span>**DWRITE \_ E \_ FileFormat**
+<span id="DWRITE_E_FILEFORMAT"></span><span id="dwrite_e_fileformat"></span>**DWRITE \_ E \_ FILEFORMAT**
 </dt> <dd> <dl> <dt>
 
 0x88985000
@@ -1643,7 +1643,7 @@ Indica um erro em um arquivo de entrada, como um arquivo de fonte.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DWRITE_E_UNEXPECTED"></span><span id="dwrite_e_unexpected"></span>**DWRITE \_ E \_ inesperado**
+<span id="DWRITE_E_UNEXPECTED"></span><span id="dwrite_e_unexpected"></span>**DWRITE \_ E \_ UNEXPECTED**
 </dt> <dd> <dl> <dt>
 
 0x88985001
@@ -1651,12 +1651,12 @@ Indica um erro em um arquivo de entrada, como um arquivo de fonte.
 
 
 
-Indica um erro originado no código DirectWrite, que não deve ocorrer, mas é seguro de se recuperar do.
+Indica um erro originado em DirectWrite código, que não deve ocorrer, mas é seguro se recuperar.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DWRITE_E_NOFONT"></span><span id="dwrite_e_nofont"></span>**DWRITE \_ E \_ nofont**
+<span id="DWRITE_E_NOFONT"></span><span id="dwrite_e_nofont"></span>**DWRITE \_ E \_ NOFONT**
 </dt> <dd> <dl> <dt>
 
 0x88985002
@@ -1677,7 +1677,7 @@ Indica que a fonte especificada não existe.
 
 
 
-Não foi possível abrir um arquivo de fonte porque o arquivo, diretório, local de rede, unidade ou outro local de armazenamento não existe ou está indisponível.
+Não foi possível abrir um arquivo de fonte porque o arquivo, diretório, local de rede, unidade ou outro local de armazenamento não existe ou não está disponível.
 
 
 </dt> </dl> </dd> <dt>
@@ -1690,7 +1690,7 @@ Não foi possível abrir um arquivo de fonte porque o arquivo, diretório, local
 
 
 
-Um arquivo de fonte existe, mas não pôde ser aberto devido a acesso negado, violação de compartilhamento ou erro semelhante.
+Existe um arquivo de fonte, mas não pôde ser aberto devido ao acesso negado, violação de compartilhamento ou erro semelhante.
 
 
 </dt> </dl> </dd> <dt>
@@ -1716,7 +1716,7 @@ Uma coleção de fontes está obsoleta devido a alterações no sistema.
 
 
 
-A interface fornecida já está registrada.
+A interface determinada já está registrada.
 
 
 </dt> </dl> </dd> <dt>
@@ -1729,7 +1729,7 @@ A interface fornecida já está registrada.
 
 
 
-O cache de fontes contém dados inválidos.
+O cache de fonte contém dados inválidos.
 
 
 </dt> </dl> </dd> <dt>
@@ -1755,12 +1755,12 @@ Um arquivo de cache de fonte corresponde a uma versão diferente do DirectWrite.
 
 
 
-Não há suporte para a operação para este tipo de fonte.
+Não há suporte para a operação para esse tipo de fonte.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINCODEC_ERR_WRONGSTATE"></span><span id="wincodec_err_wrongstate"></span>**WINCODEC \_ errstate \_**
+<span id="WINCODEC_ERR_WRONGSTATE"></span><span id="wincodec_err_wrongstate"></span>**WINCODEC \_ ERR \_ WRONGSTATE**
 </dt> <dd> <dl> <dt>
 
 0x88982F04
@@ -1768,12 +1768,12 @@ Não há suporte para a operação para este tipo de fonte.
 
 
 
-O codec está no estado incorreto.
+O codec está no estado errado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINCODEC_ERR_VALUEOUTOFRANGE"></span><span id="wincodec_err_valueoutofrange"></span>**WINCODEC \_ Err \_ VALUEOUTOFRANGE**
+<span id="WINCODEC_ERR_VALUEOUTOFRANGE"></span><span id="wincodec_err_valueoutofrange"></span>**WINCODEC \_ ERR \_ VALUEOUTOFRANGE**
 </dt> <dd> <dl> <dt>
 
 0x88982F05
@@ -1786,7 +1786,7 @@ O valor está fora do intervalo.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINCODEC_ERR_UNKNOWNIMAGEFORMAT"></span><span id="wincodec_err_unknownimageformat"></span>**WINCODEC \_ Err \_ UNKNOWNIMAGEFORMAT**
+<span id="WINCODEC_ERR_UNKNOWNIMAGEFORMAT"></span><span id="wincodec_err_unknownimageformat"></span>**WINCODEC \_ ERR \_ UNKNOWNIMAGEFORMAT**
 </dt> <dd> <dl> <dt>
 
 0x88982F07
@@ -1794,12 +1794,12 @@ O valor está fora do intervalo.
 
 
 
-O formato da imagem é desconhecido.
+O formato de imagem é desconhecido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINCODEC_ERR_UNSUPPORTEDVERSION"></span><span id="wincodec_err_unsupportedversion"></span>**WINCODEC \_ Err \_ UNSUPPORTEDVERSION**
+<span id="WINCODEC_ERR_UNSUPPORTEDVERSION"></span><span id="wincodec_err_unsupportedversion"></span>**WINCODEC \_ ERR \_ UNSUPPORTEDVERSION**
 </dt> <dd> <dl> <dt>
 
 0x88982F0B
@@ -1812,7 +1812,7 @@ Não há suporte para a versão do SDK.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINCODEC_ERR_NOTINITIALIZED"></span><span id="wincodec_err_notinitialized"></span>**WINCODEC \_ Err não \_ inicializado**
+<span id="WINCODEC_ERR_NOTINITIALIZED"></span><span id="wincodec_err_notinitialized"></span>**WINCODEC \_ ERR \_ NOTINITIALIZED**
 </dt> <dd> <dl> <dt>
 
 0x88982F0C
@@ -1820,12 +1820,12 @@ Não há suporte para a versão do SDK.
 
 
 
-O componente não foi inicializado.
+O componente não é inicializado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINCODEC_ERR_ALREADYLOCKED"></span><span id="wincodec_err_alreadylocked"></span>**WINCODEC \_ Err \_ ALREADYLOCKED**
+<span id="WINCODEC_ERR_ALREADYLOCKED"></span><span id="wincodec_err_alreadylocked"></span>**WINCODEC \_ ERR \_ ALREADYLOCKED**
 </dt> <dd> <dl> <dt>
 
 0x88982F0D
@@ -1833,12 +1833,12 @@ O componente não foi inicializado.
 
 
 
-Já existe um bloqueio de leitura ou gravação pendente.
+Já há um bloqueio de leitura ou gravação pendente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINCODEC_ERR_PROPERTYNOTFOUND"></span><span id="wincodec_err_propertynotfound"></span>**WINCODEC \_ Err \_ PROPERTYNOTFOUND**
+<span id="WINCODEC_ERR_PROPERTYNOTFOUND"></span><span id="wincodec_err_propertynotfound"></span>**WINCODEC \_ ERR \_ PROPERTYNOTFOUND**
 </dt> <dd> <dl> <dt>
 
 0x88982F40
@@ -1851,7 +1851,7 @@ A propriedade de bitmap especificada não pode ser encontrada.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINCODEC_ERR_PROPERTYNOTSUPPORTED"></span><span id="wincodec_err_propertynotsupported"></span>**WINCODEC \_ Err \_ PROPERTYNOTSUPPORTED**
+<span id="WINCODEC_ERR_PROPERTYNOTSUPPORTED"></span><span id="wincodec_err_propertynotsupported"></span>**WINCODEC \_ ERR \_ PROPERTYNOTSUPPORTED**
 </dt> <dd> <dl> <dt>
 
 0x88982F41
@@ -1859,12 +1859,12 @@ A propriedade de bitmap especificada não pode ser encontrada.
 
 
 
-O codec de bitmap não oferece suporte à propriedade bitmap.
+O codec de bitmap não dá suporte à propriedade bitmap.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINCODEC_ERR_PROPERTYSIZE"></span><span id="wincodec_err_propertysize"></span>**WINCODEC \_ Err \_ PROPERTYSIZE**
+<span id="WINCODEC_ERR_PROPERTYSIZE"></span><span id="wincodec_err_propertysize"></span>**WINCODEC \_ ERR \_ PROPERTYSIZE**
 </dt> <dd> <dl> <dt>
 
 0x88982F42
@@ -1872,12 +1872,12 @@ O codec de bitmap não oferece suporte à propriedade bitmap.
 
 
 
-O tamanho da propriedade de bitmap é inválido.
+O tamanho da propriedade bitmap é inválido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINCODEC_ERR_CODECPRESENT"></span><span id="wincodec_err_codecpresent"></span>**WINCODEC \_ Err \_ CODECPRESENT**
+<span id="WINCODEC_ERR_CODECPRESENT"></span><span id="wincodec_err_codecpresent"></span>**WINCODEC \_ ERR \_ CODECPRESENT**
 </dt> <dd> <dl> <dt>
 
 0x88982F43
@@ -1890,7 +1890,7 @@ Ocorreu um erro desconhecido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINCODEC_ERR_CODECNOTHUMBNAIL"></span><span id="wincodec_err_codecnothumbnail"></span>**WINCODEC \_ Err \_ CODECNOTHUMBNAIL**
+<span id="WINCODEC_ERR_CODECNOTHUMBNAIL"></span><span id="wincodec_err_codecnothumbnail"></span>**CÓDIGO DE \_ ERRO DO WINCODECNOTHUMBNAIL \_**
 </dt> <dd> <dl> <dt>
 
 0x88982F44
@@ -1898,12 +1898,12 @@ Ocorreu um erro desconhecido.
 
 
 
-O codec de bitmap não oferece suporte a uma miniatura.
+O codec de bitmap não dá suporte a uma miniatura.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINCODEC_ERR_PALETTEUNAVAILABLE"></span><span id="wincodec_err_paletteunavailable"></span>**WINCODEC \_ Err \_ PALETTEUNAVAILABLE**
+<span id="WINCODEC_ERR_PALETTEUNAVAILABLE"></span><span id="wincodec_err_paletteunavailable"></span>**WINCODEC \_ ERR \_ PALETTEUNAVAILABLE**
 </dt> <dd> <dl> <dt>
 
 0x88982F45
@@ -1911,12 +1911,12 @@ O codec de bitmap não oferece suporte a uma miniatura.
 
 
 
-A paleta de bitmaps não está disponível.
+A paleta de bitmap não está disponível.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINCODEC_ERR_CODECTOOMANYSCANLINES"></span><span id="wincodec_err_codectoomanyscanlines"></span>**WINCODEC \_ Err \_ CODECTOOMANYSCANLINES**
+<span id="WINCODEC_ERR_CODECTOOMANYSCANLINES"></span><span id="wincodec_err_codectoomanyscanlines"></span>**WINCODEC \_ ERR \_ CODECTOOMANYSCANLINES**
 </dt> <dd> <dl> <dt>
 
 0x88982F46
@@ -1924,12 +1924,12 @@ A paleta de bitmaps não está disponível.
 
 
 
-Muitas verificações de linhas foram solicitadas.
+Muitas linhas de verificação foram solicitadas.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINCODEC_ERR_INTERNALERROR"></span><span id="wincodec_err_internalerror"></span>**WINCODEC \_ Err \_ INTERNALERROR**
+<span id="WINCODEC_ERR_INTERNALERROR"></span><span id="wincodec_err_internalerror"></span>**WINCODEC \_ ERR \_ INTERNALERROR**
 </dt> <dd> <dl> <dt>
 
 0x88982F48
@@ -1942,7 +1942,7 @@ Ocorreu um erro interno.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINCODEC_ERR_SOURCERECTDOESNOTMATCHDIMENSIONS"></span><span id="wincodec_err_sourcerectdoesnotmatchdimensions"></span>**WINCODEC \_ Err \_ SOURCERECTDOESNOTMATCHDIMENSIONS**
+<span id="WINCODEC_ERR_SOURCERECTDOESNOTMATCHDIMENSIONS"></span><span id="wincodec_err_sourcerectdoesnotmatchdimensions"></span>**WINCODEC \_ ERR \_ SOURCERECTDOESNOTMATCHDIMENSIONS**
 </dt> <dd> <dl> <dt>
 
 0x88982F49
@@ -1950,12 +1950,12 @@ Ocorreu um erro interno.
 
 
 
-Os limites de bitmap não correspondem às dimensões de bitmap.
+Os limites de bitmap não corresponderão às dimensões do bitmap.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINCODEC_ERR_COMPONENTNOTFOUND"></span><span id="wincodec_err_componentnotfound"></span>**WINCODEC \_ Err \_ COMPONENTNOTFOUND**
+<span id="WINCODEC_ERR_COMPONENTNOTFOUND"></span><span id="wincodec_err_componentnotfound"></span>**WINCODEC \_ ERR \_ COMPONENTNOTFOUND**
 </dt> <dd> <dl> <dt>
 
 0x88982F50
@@ -1963,12 +1963,12 @@ Os limites de bitmap não correspondem às dimensões de bitmap.
 
 
 
-Não é possível encontrar o componente.
+O componente não pode ser encontrado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINCODEC_ERR_IMAGESIZEOUTOFRANGE"></span><span id="wincodec_err_imagesizeoutofrange"></span>**WINCODEC \_ Err \_ IMAGESIZEOUTOFRANGE**
+<span id="WINCODEC_ERR_IMAGESIZEOUTOFRANGE"></span><span id="wincodec_err_imagesizeoutofrange"></span>**WINCODEC \_ ERR \_ IMAGESIZEOUTOFRANGE**
 </dt> <dd> <dl> <dt>
 
 0x88982F51
@@ -1981,7 +1981,7 @@ O tamanho do bitmap está fora do intervalo válido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINCODEC_ERR_TOOMUCHMETADATA"></span><span id="wincodec_err_toomuchmetadata"></span>**WINCODEC \_ Err \_ TOOMUCHMETADATA**
+<span id="WINCODEC_ERR_TOOMUCHMETADATA"></span><span id="wincodec_err_toomuchmetadata"></span>**WINCODEC \_ ERR \_ TOOMUCHMETADATA**
 </dt> <dd> <dl> <dt>
 
 0x88982F52
@@ -1994,7 +1994,7 @@ Há muitos metadados a serem gravados no bitmap.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINCODEC_ERR_BADIMAGE"></span><span id="wincodec_err_badimage"></span>**WINCODEC \_ Err \_ BADIMAGE**
+<span id="WINCODEC_ERR_BADIMAGE"></span><span id="wincodec_err_badimage"></span>**WINCODEC \_ ERR \_ BADIMAGE**
 </dt> <dd> <dl> <dt>
 
 0x88982F60
@@ -2002,12 +2002,12 @@ Há muitos metadados a serem gravados no bitmap.
 
 
 
-A imagem não é reconhecida.
+A imagem não é recogizada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINCODEC_ERR_BADHEADER"></span><span id="wincodec_err_badheader"></span>**WINCODEC \_ Err \_ BADHEADER**
+<span id="WINCODEC_ERR_BADHEADER"></span><span id="wincodec_err_badheader"></span>**WINCODEC \_ ERR \_ BADHEADER**
 </dt> <dd> <dl> <dt>
 
 0x88982F61
@@ -2015,12 +2015,12 @@ A imagem não é reconhecida.
 
 
 
-O cabeçalho da imagem não é reconhecido.
+O título da imagem não foi recogizado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINCODEC_ERR_FRAMEMISSING"></span><span id="wincodec_err_framemissing"></span>**WINCODEC \_ Err \_ FRAMEMISSING**
+<span id="WINCODEC_ERR_FRAMEMISSING"></span><span id="wincodec_err_framemissing"></span>**WINCODEC \_ ERR \_ FRAMEMISSING**
 </dt> <dd> <dl> <dt>
 
 0x88982F62
@@ -2033,7 +2033,7 @@ O quadro de bitmap está ausente.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINCODEC_ERR_BADMETADATAHEADER"></span><span id="wincodec_err_badmetadataheader"></span>**WINCODEC \_ Err \_ BADMETADATAHEADER**
+<span id="WINCODEC_ERR_BADMETADATAHEADER"></span><span id="wincodec_err_badmetadataheader"></span>**WINCODEC \_ ERR \_ BADMETADATAHEADER**
 </dt> <dd> <dl> <dt>
 
 0x88982F63
@@ -2041,12 +2041,12 @@ O quadro de bitmap está ausente.
 
 
 
-O cabeçalho de metadados da imagem não é reconhecido.
+O header de metadados de imagem não é recognizado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINCODEC_ERR_BADSTREAMDATA"></span><span id="wincodec_err_badstreamdata"></span>**WINCODEC \_ Err \_ BADSTREAMDATA**
+<span id="WINCODEC_ERR_BADSTREAMDATA"></span><span id="wincodec_err_badstreamdata"></span>**WINCODEC \_ ERR \_ BADSTREAMDATA**
 </dt> <dd> <dl> <dt>
 
 0x88982F70
@@ -2054,12 +2054,12 @@ O cabeçalho de metadados da imagem não é reconhecido.
 
 
 
-Os dados do fluxo não são reconhecidos.
+Os dados de fluxo não são recognizados.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINCODEC_ERR_STREAMWRITE"></span><span id="wincodec_err_streamwrite"></span>**WINCODEC \_ Err \_**
+<span id="WINCODEC_ERR_STREAMWRITE"></span><span id="wincodec_err_streamwrite"></span>**WINCODEC \_ ERR \_ STREAMWRITE**
 </dt> <dd> <dl> <dt>
 
 0x88982F71
@@ -2072,7 +2072,7 @@ Falha ao gravar no fluxo.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINCODEC_ERR_STREAMREAD"></span><span id="wincodec_err_streamread"></span>**WINCODEC \_ Err \_ STREAMREAD**
+<span id="WINCODEC_ERR_STREAMREAD"></span><span id="wincodec_err_streamread"></span>**WINCODEC \_ ERR \_ STREAMREAD**
 </dt> <dd> <dl> <dt>
 
 0x88982F72
@@ -2085,7 +2085,7 @@ Falha ao ler do fluxo.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINCODEC_ERR_STREAMNOTAVAILABLE"></span><span id="wincodec_err_streamnotavailable"></span>**WINCODEC \_ Err \_ STREAMNOTAVAILABLE**
+<span id="WINCODEC_ERR_STREAMNOTAVAILABLE"></span><span id="wincodec_err_streamnotavailable"></span>**WINCODEC \_ ERR \_ STREAMNOTAVAILABLE**
 </dt> <dd> <dl> <dt>
 
 0x88982F73
@@ -2098,7 +2098,7 @@ O fluxo não está disponível.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINCODEC_ERR_UNSUPPORTEDPIXELFORMAT"></span><span id="wincodec_err_unsupportedpixelformat"></span>**WINCODEC \_ Err \_ UNSUPPORTEDPIXELFORMAT**
+<span id="WINCODEC_ERR_UNSUPPORTEDPIXELFORMAT"></span><span id="wincodec_err_unsupportedpixelformat"></span>**WINCODEC \_ ERR \_ UNSUPPORTEDPIXELFORMAT**
 </dt> <dd> <dl> <dt>
 
 0x88982F80
@@ -2106,12 +2106,12 @@ O fluxo não está disponível.
 
 
 
-Não há suporte para o formato de pixel de bitmap.
+Não há suporte para o formato de pixel bitmap.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINCODEC_ERR_UNSUPPORTEDOPERATION"></span><span id="wincodec_err_unsupportedoperation"></span>**WINCODEC \_ Err \_ UNSUPPORTEDOPERATION**
+<span id="WINCODEC_ERR_UNSUPPORTEDOPERATION"></span><span id="wincodec_err_unsupportedoperation"></span>**WINCODEC \_ ERR \_ UNSUPPORTEDOPERATION**
 </dt> <dd> <dl> <dt>
 
 0x88982F81
@@ -2124,7 +2124,7 @@ Não há suporte para a operação.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINCODEC_ERR_INVALIDREGISTRATION"></span><span id="wincodec_err_invalidregistration"></span>**WINCODEC \_ Err \_ INVALIDREGISTRATION**
+<span id="WINCODEC_ERR_INVALIDREGISTRATION"></span><span id="wincodec_err_invalidregistration"></span>**WINCODEC \_ ERR \_ INVALIDREGISTRATION**
 </dt> <dd> <dl> <dt>
 
 0x88982F8A
@@ -2137,7 +2137,7 @@ O registro do componente é inválido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINCODEC_ERR_COMPONENTINITIALIZEFAILURE"></span><span id="wincodec_err_componentinitializefailure"></span>**WINCODEC \_ Err \_ COMPONENTINITIALIZEFAILURE**
+<span id="WINCODEC_ERR_COMPONENTINITIALIZEFAILURE"></span><span id="wincodec_err_componentinitializefailure"></span>**WINCODEC \_ ERR \_ COMPONENTINITIALIZEFAILURE**
 </dt> <dd> <dl> <dt>
 
 0x88982F8B
@@ -2150,7 +2150,7 @@ Falha na inicialização do componente.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINCODEC_ERR_INSUFFICIENTBUFFER"></span><span id="wincodec_err_insufficientbuffer"></span>**WINCODEC \_ Err \_ INSUFFICIENTBUFFER**
+<span id="WINCODEC_ERR_INSUFFICIENTBUFFER"></span><span id="wincodec_err_insufficientbuffer"></span>**WINCODEC \_ ERR \_ INSUFFICIENTBUFFER**
 </dt> <dd> <dl> <dt>
 
 0x88982F8C
@@ -2163,7 +2163,7 @@ O buffer alocado é insuficiente.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINCODEC_ERR_DUPLICATEMETADATAPRESENT"></span><span id="wincodec_err_duplicatemetadatapresent"></span>**WINCODEC \_ Err \_ DUPLICATEMETADATAPRESENT**
+<span id="WINCODEC_ERR_DUPLICATEMETADATAPRESENT"></span><span id="wincodec_err_duplicatemetadatapresent"></span>**WINCODEC \_ ERR \_ DUPLICATEMETADATAPRESENT**
 </dt> <dd> <dl> <dt>
 
 0x88982F8D
@@ -2171,12 +2171,12 @@ O buffer alocado é insuficiente.
 
 
 
-Há metadados duplicados presentes.
+Metadados duplicados estão presentes.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINCODEC_ERR_PROPERTYUNEXPECTEDTYPE"></span><span id="wincodec_err_propertyunexpectedtype"></span>**WINCODEC \_ Err \_ PROPERTYUNEXPECTEDTYPE**
+<span id="WINCODEC_ERR_PROPERTYUNEXPECTEDTYPE"></span><span id="wincodec_err_propertyunexpectedtype"></span>**WINCODEC \_ ERR \_ PROPERTYUNEXPECTEDTYPE**
 </dt> <dd> <dl> <dt>
 
 0x88982F8E
@@ -2184,12 +2184,12 @@ Há metadados duplicados presentes.
 
 
 
-O tipo de propriedade de bitmap é inesperado.
+O tipo de propriedade bitmap é inesperado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINCODEC_ERR_UNEXPECTEDSIZE"></span><span id="wincodec_err_unexpectedsize"></span>**WINCODEC \_ Err \_ UNEXPECTEDSIZE**
+<span id="WINCODEC_ERR_UNEXPECTEDSIZE"></span><span id="wincodec_err_unexpectedsize"></span>**WINCODEC \_ ERR \_ UNEXPECTEDSIZE**
 </dt> <dd> <dl> <dt>
 
 0x88982F8F
@@ -2202,7 +2202,7 @@ O tamanho é inesperado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINCODEC_ERR_INVALIDQUERYREQUEST"></span><span id="wincodec_err_invalidqueryrequest"></span>**WINCODEC \_ Err \_ INVALIDQUERYREQUEST**
+<span id="WINCODEC_ERR_INVALIDQUERYREQUEST"></span><span id="wincodec_err_invalidqueryrequest"></span>**WINCODEC \_ ERR \_ INVALIDQUERYREQUEST**
 </dt> <dd> <dl> <dt>
 
 0x88982F90
@@ -2215,7 +2215,7 @@ A consulta de propriedade é inválida.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINCODEC_ERR_UNEXPECTEDMETADATATYPE"></span><span id="wincodec_err_unexpectedmetadatatype"></span>**WINCODEC \_ Err \_ UNEXPECTEDMETADATATYPE**
+<span id="WINCODEC_ERR_UNEXPECTEDMETADATATYPE"></span><span id="wincodec_err_unexpectedmetadatatype"></span>**WINCODEC \_ ERR \_ UNEXPECTEDMETADATATYPE**
 </dt> <dd> <dl> <dt>
 
 0x88982F91
@@ -2228,7 +2228,7 @@ O tipo de metadados é inesperado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINCODEC_ERR_REQUESTONLYVALIDATMETADATAROOT"></span><span id="wincodec_err_requestonlyvalidatmetadataroot"></span>**WINCODEC \_ Err \_ REQUESTONLYVALIDATMETADATAROOT**
+<span id="WINCODEC_ERR_REQUESTONLYVALIDATMETADATAROOT"></span><span id="wincodec_err_requestonlyvalidatmetadataroot"></span>**WINCODEC \_ ERR \_ REQUESTONLYVALIDATMETADATAROOT**
 </dt> <dd> <dl> <dt>
 
 0x88982F92
@@ -2262,7 +2262,7 @@ A cadeia de caracteres de consulta contém um caractere inválido.
 
 
 
-Os codecs do Windows receberam um erro do sistema Win32.
+Windows Os codecs receberam um erro do sistema Win32.
 
 
 </dt> </dl> </dd> <dt>

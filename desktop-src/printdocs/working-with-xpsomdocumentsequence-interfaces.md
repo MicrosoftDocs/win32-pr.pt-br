@@ -4,12 +4,12 @@ ms.assetid: e7d01f21-0b5d-4385-89e8-14021800e234
 title: Trabalhando com interfaces IXpsOMDocumentSequence
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f108cbadf735b334f758102915abbda239a4e974
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: edac74809de63c1ae4e688bb99214d11b091ee4e877c921e9280abc9c6868121
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105811471"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119098658"
 ---
 # <a name="working-with-ixpsomdocumentsequence-interfaces"></a>Trabalhando com interfaces IXpsOMDocumentSequence
 
@@ -19,8 +19,8 @@ Este tópico descreve como usar as interfaces que fornecem acesso ao FixedDocume
 
 | Nome da interface                                                          | Interfaces filho lógicas                            | Descrição                                                              |
 |-------------------------------------------------------------------------|-----------------------------------------------------|--------------------------------------------------------------------------|
-| [**IXpsOMDocumentSequence**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomdocumentsequence)<br/>     | [**IXpsOMDocument**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomdocument)<br/> | Agrupa um conjunto de FixedDocuments em uma lista ordenada.<br/>          |
-| [**IXpsOMDocumentCollection**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomdocumentcollection)<br/> | Nenhum<br/>                                     | A coleção de FixedDocuments em uma sequência de documento XPS.<br/> |
+| [**IXpsOMDocumentSequence**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomdocumentsequence)<br/>     | [**IXpsOMDocument**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomdocument)<br/> | Grupos de um conjunto de FixedDocuments em uma lista ordenada.<br/>          |
+| [**IXpsOMDocumentCollection**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomdocumentcollection)<br/> | Nenhum<br/>                                     | A coleção de FixedDocuments em uma sequência de documentos XPS.<br/> |
 
 
 
@@ -28,7 +28,7 @@ Este tópico descreve como usar as interfaces que fornecem acesso ao FixedDocume
 
 ## <a name="code-example"></a>Exemplo de código
 
-O exemplo de código a seguir obtém um ponteiro para a interface [**IXpsOMDocumentSequence**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomdocumentsequence) que contém a sequência de documento do OM XPS representado por *xpsPackage*. Em seguida, o exemplo enumera os documentos na coleção.
+O exemplo de código a seguir obtém um ponteiro para a interface [**IXpsOMDocumentSequence**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomdocumentsequence) que contém a sequência de documentos do OM XPS representada por *xpsPackage*. Em seguida, o exemplo enumera os documentos na coleção.
 
 
 ```C++

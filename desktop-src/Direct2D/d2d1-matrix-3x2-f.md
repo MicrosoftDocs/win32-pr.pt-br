@@ -6,12 +6,12 @@ keywords:
 - D2D1_MATRIX_3X2_F
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: beb252e35508c48570c96f251205fc8a54755687
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6d4e8a50e17c4c740c427d21df27e3c1d9cf8226df5edc1b98f15cbe920c401c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105759153"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119260486"
 ---
 # <a name="d2d1_matrix_3x2_f"></a>D2D1 \_ matriz \_ 3x2 \_ F
 
@@ -28,7 +28,7 @@ typedef D2D_MATRIX_3X2_F D2D1_MATRIX_3X2_F;
 
 **D2d1 \_ MATRIZ \_ 3x2** é um novo nome para a estrutura [**D2D \_ Matrix \_ 3x2 \_ F**](/windows/desktop/api/dcommon/ns-dcommon-d2d_matrix_3x2_f) . Para obter uma lista de campos fornecidos pela matriz, consulte [**D2D \_ Matrix \_ 3x2 \_ F**](/windows/desktop/api/dcommon/ns-dcommon-d2d_matrix_3x2_f).
 
-Para simplificar as operações comuns de matriz, o Direct2D fornece a classe [**d2d1:: Matrix3x2F**](/windows/win32/api/d2d1helper/nl-d2d1helper-matrix3x2f) , que é derivada da estrutura [**\_ \_ 3x2 da matriz d2d1**](/windows/desktop/api/dcommon/ns-dcommon-d2d_matrix_3x2_f) . A classe **Matrix3x2F** fornece um conjunto de métodos auxiliares para executar tarefas comuns, como a criação de uma translação ou matriz de distorção.
+para simplificar as operações comuns de matriz, Direct2D fornece a classe [**D2D1:: Matrix3x2F**](/windows/win32/api/d2d1helper/nl-d2d1helper-matrix3x2f) , que é derivada da estrutura [**D2D1 \_ matriz \_ 3X2**](/windows/desktop/api/dcommon/ns-dcommon-d2d_matrix_3x2_f) . A classe **Matrix3x2F** fornece um conjunto de métodos auxiliares para executar tarefas comuns, como a criação de uma translação ou matriz de distorção.
 
 ## <a name="examples"></a>Exemplos
 
@@ -76,8 +76,8 @@ O código foi omitido neste exemplo. Para obter mais informações sobre transfo
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 7, Windows Vista com SP2 e atualização de plataforma para aplicativos UWP do Windows Vista \[ Desktop apps \|\]<br/>                          |
-| Servidor mínimo com suporte<br/> | Windows Server 2008 R2, Windows Server 2008 com SP2 e atualização de plataforma para aplicativos de aplicativos de desktop do Windows Server 2008 \[ \| UWP\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows 7, Windows vista com SP2 e atualização de plataforma para aplicativos UWP do Windows Vista \[ desktop apps \|\]<br/>                          |
+| Servidor mínimo com suporte<br/> | Windows server 2008 R2, Windows Server 2008 com SP2 e atualização de plataforma para aplicativos do Windows Server 2008 \[ desktop aplicativos \| UWP\]<br/> |
 | Número mínimo de telefone com suporte<br/>  | Windows Phone 8,1 \[ Windows Phone Silverlight 8,1 e aplicativos de Windows Runtime\]<br/>                                                  |
 | parâmetro<br/>                   | <dl> <dt>D2d1. h</dt> </dl>                                                        |
 

@@ -4,12 +4,12 @@ ms.assetid: a37d9371-0d9f-44a8-b8b3-9fbfcfad1a51
 title: Atributo MF_MT_DV_AAUX_SRC_PACK_0 (Mfapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 19f37f7f6110f6a04f025864e95488782b855128
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 34161ac9c5fbc21249fc15c4f97de6390e62581666b28001acc2fd621f5377e3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105750345"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119035214"
 ---
 # <a name="mf_mt_dv_aaux_src_pack_0-attribute"></a>\_Atributo MF MT \_ DV \_ AAUX \_ src \_ Pack \_ 0
 
@@ -21,7 +21,7 @@ Pacote de origem do AAUX (audio auxiliar) para o primeiro bloco de áudio em um 
 
 ## <a name="remarks"></a>Comentários
 
-Esse atributo corresponde ao membro **dwDVAAuxSrc** da estrutura [**DVINFO**](/windows/win32/api/strmif/ns-strmif-dvinfo) do DirectShow.
+esse atributo corresponde ao membro **dwDVAAuxSrc** da estrutura do DirectShow [**DVINFO**](/windows/win32/api/strmif/ns-strmif-dvinfo) .
 
 A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
@@ -31,9 +31,9 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos \| UWP do Windows Vista desktop\]<br/>                              |
-| Servidor mínimo com suporte<br/> | Aplicativos do Windows Server 2008 \[ Desktop aplicativos \| UWP\]<br/>                        |
-| parâmetro<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Aplicativos de aplicativos UWP do vista desktop \|\]<br/>                              |
+| Servidor mínimo com suporte<br/> | Windows \[Aplicativos da área de trabalho do servidor 2008 \| aplicativo UWP\]<br/>                        |
+| Cabeçalho<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
 
 
 

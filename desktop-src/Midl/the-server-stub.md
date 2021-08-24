@@ -6,12 +6,12 @@ keywords:
 - MIDL do compilador MIDL, MIDL e prc RPC, interfaces, stub de servidor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b351c53fa9e1d1716e1240ddf4febdccdadda46
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ddfc940ebbd90e4e028ce96dc3b5c47eb15179d41cfbd064cd235e87192822f6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005952"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119559896"
 ---
 # <a name="the-server-stub"></a>O stub do servidor
 
@@ -25,9 +25,9 @@ Quando uma rotina de stub de servidor é invocada pela biblioteca de tempo de ex
 
 O compilador MIDL alterna a opção [**/Server**](-server.md), [**/sstub**](-sstub.md)e [**/out**](-out.md) afeta o arquivo stub do servidor.
 
- 
+ 
 
- 
+ 
 
 
 

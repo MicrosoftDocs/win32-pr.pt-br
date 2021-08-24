@@ -4,12 +4,12 @@ ms.assetid: 8ce8b3b8-dd91-41e1-a4ba-b0c2d9d0edd2
 title: Propriedade AVEncVideoEncodeOffsetOrigin (Codecapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7db4d685942b8c21f2d5047003f2172c54b1d50d
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: a5fdc4ffd1f168fa98ce71937b5ddc22d429c573481575432e94964fdfc5205b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104087508"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119275756"
 ---
 # <a name="avencvideoencodeoffsetorigin-property"></a>Propriedade AVEncVideoEncodeOffsetOrigin
 
@@ -39,9 +39,9 @@ Os aplicativos podem definir essa propriedade para cortar o vídeo de entrada. U
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos do Windows 2000 Professional \[ Desktop aplicativos \| UWP\]<br/>                     |
-| Servidor mínimo com suporte<br/> | Aplicativos da área de trabalho do Windows 2000 Server aplicativos \[ \| UWP\]<br/>                           |
-| parâmetro<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | aplicativos Windows 2000 Professional \[ desktop aplicativos \| UWP\]<br/>                     |
+| Servidor mínimo com suporte<br/> | Windows \[ aplicativos da área de trabalho do servidor 2000 \| aplicativo UWP\]<br/>                           |
+| Cabeçalho<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: O qualificador PerfDetail nas \_ classes Win32 PerfRawData não é usado. Ele sempre contém 100.
+description: O qualificador PerfDetail nas classes Win32 \_ PerfRawData não é usado. Ele sempre contém 100.
 ms.assetid: 020a78cc-7f6c-4940-a528-b159f1f34dd3
 ms.tgt_platform: multiple
 title: Qualificador PerfDetail
@@ -13,16 +13,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 905683bdaa6e143f4280e72593982715012d7d8f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6e9622955a0a01a813638f14364fdc774beb46c0d755a3b232d47fe698316b33
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164858"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119050544"
 ---
 # <a name="perfdetail-qualifier"></a>Qualificador PerfDetail
 
-O qualificador **PerfDetail** nas classes [**Win32 \_ PerfRawData**](/windows/desktop/CIMWin32Prov/win32-perfrawdata) não é usado. Ele sempre contém 100.
+O **qualificador PerfDetail** nas classes [**Win32 \_ PerfRawData**](/windows/desktop/CIMWin32Prov/win32-perfrawdata) não é usado. Ele sempre contém 100.
 
 ## <a name="requirements"></a>Requisitos
 

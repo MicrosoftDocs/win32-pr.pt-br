@@ -1,10 +1,10 @@
 ---
-title: Métodos de propriedade IADsDomain (IADs. h)
-description: Os métodos de interface IADsDomain lêem e gravam as propriedades descritas neste tópico. Para obter mais informações, consulte interface Property Methods.
+title: Métodos de propriedade IADsDomain (Iads.h)
+description: Os métodos de interface IADsDomain leem e escrevem as propriedades descritas neste tópico. Para obter mais informações, consulte Métodos de propriedade de interface.
 ms.assetid: ff2c4cbc-a8d5-4db5-85d4-da3367f27fa0
 ms.tgt_platform: multiple
 keywords:
-- ADSI de métodos de propriedade IADsDomain
+- ADSI (métodos de propriedade IADsDomain)
 topic_type:
 - apiref
 api_name:
@@ -41,16 +41,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a10c6377c7e97f83046f60d46312a03db68cadb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 90769faec8bc5e05f1aa590dd3211125665a4b07228b920e622fc5b33754e322
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918893"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119082490"
 ---
 # <a name="iadsdomain-property-methods"></a>Métodos de propriedade IADsDomain
 
-Os métodos de interface [**IADsDomain**](/windows/desktop/api/Iads/nn-iads-iadsdomain) lêem e gravam as propriedades descritas neste tópico. Para obter mais informações, consulte [interface Property Methods](interface-property-methods.md).
+Os métodos de interface [**IADsDomain**](/windows/desktop/api/Iads/nn-iads-iadsdomain) leem e escrevem as propriedades descritas neste tópico. Para obter mais informações, consulte [Métodos de propriedade de interface](interface-property-methods.md).
 
 ## <a name="properties"></a>Propriedades
 
@@ -59,14 +59,14 @@ Os métodos de interface [**IADsDomain**](/windows/desktop/api/Iads/nn-iads-iads
 **AutoUnlockInterval**
 </dt> <dd> <dl>
 
-Indica o tempo mínimo que deve decorrer antes que a conta seja reabilitada automaticamente.
+Indica o tempo mínimo que deve passar antes que a conta seja automaticamente reativada.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Tipo de dados de script: **longo**
+Tipo de dados de script: **LONG**
 </dt> <dt>
 
 
@@ -84,17 +84,17 @@ HRESULT put_AutoUnlockInterval(
 
 </dt> </dl> </dd> <dt>
 
-**Grupo de trabalho**
+**IsWorkgroup**
 </dt> <dd> <dl>
 
-Esta propriedade não é mais implementada.
+Essa propriedade não é mais implementada.
 
 <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Tipo de dados Scripting: **Variant \_ bool**
+Tipo de dados de script: **VARIANT \_ BOOL**
 </dt> <dt>
 
 
@@ -112,14 +112,14 @@ HRESULT get_IsWorkgroup(
 **LockoutObservationInterval**
 </dt> <dd> <dl>
 
-Indica a janela de tempo durante a qual a contagem de senha inadequada é monitorada e acumulada antes de determinar se a conta precisa ser bloqueada. Por exemplo, se o número de tentativas de senha incorretas em uma conta exceder o limite (máximo de senhas incorretas permitidas) durante o período de tempo especificado (intervalo de observação de bloqueio), a conta será bloqueada definindo a propriedade apropriada no conjunto de propriedades de parâmetro de logon.
+Indica a janela de tempo durante a qual a contagem de senhas incorretas é monitorada e acumulada antes de determinar se a conta precisa ser bloqueada. Por exemplo, se o número de tentativas de senha incorreta em uma conta exceder o limite (Máximo de Senhas Incorretas Permitidas) durante o período de tempo especificado (Intervalo de Observação de Bloqueio), a conta será bloqueada definindo a propriedade apropriada no conjunto de propriedades Parâmetro de Logon.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Tipo de dados de script: **longo**
+Tipo de dados de script: **LONG**
 </dt> <dt>
 
 
@@ -140,14 +140,14 @@ HRESULT put_LockoutObservationInterval(
 **MaxBadPasswordsAllowed**
 </dt> <dd> <dl>
 
-Indica o número máximo de logons de senha inválidos permitidos antes de um bloqueio de conta.
+Indica o número máximo de logons de senha inválido permitidos antes de um bloqueio de conta.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Tipo de dados de script: **longo**
+Tipo de dados de script: **LONG**
 </dt> <dt>
 
 
@@ -172,10 +172,10 @@ Indica o intervalo de tempo máximo, em segundos, após o qual a senha deve ser 
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Tipo de dados de script: **longo**
+Tipo de dados de script: **LONG**
 </dt> <dt>
 
 
@@ -200,10 +200,10 @@ Indica o intervalo de tempo mínimo, em segundos, antes que a senha possa ser al
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Tipo de dados de script: **longo**
+Tipo de dados de script: **LONG**
 </dt> <dt>
 
 
@@ -228,10 +228,10 @@ Indica o número mínimo de caracteres que devem ser usados para uma senha.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Tipo de dados de script: **longo**
+Tipo de dados de script: **LONG**
 </dt> <dt>
 
 
@@ -249,13 +249,13 @@ HRESULT put_MinPasswordLength(
 
 </dt> </dl> </dd> <dt>
 
-**Senhaattributes**
+**PasswordAttributes**
 </dt> <dd> <dl>
 
 Indica restrições em senhas, conforme definido pela lista de atributos e valores a seguir.
 
 > [!Note]  
-> Para \_ a atributo de senha \_ complexo, a senha deve incluir pelo menos uma marca de pontuação ou um caractere não imprimível.
+> Para PASSWORD ATTR COMPLEX, a senha deve incluir pelo menos uma marca de \_ \_ pontuação ou caractere não imprimível.
 
  
 
@@ -263,29 +263,29 @@ Indica restrições em senhas, conforme definido pela lista de atributos e valor
 
 <span id="PASSWORD_ATTR_NONE"></span><span id="password_attr_none"></span>
 
-**Senha \_ do ATTR \_ None** (0x00000000)
+**SENHA \_ ATTR \_ NONE** (0x00000000)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="PASSWORD_ATTR_MIXED_CASE"></span><span id="password_attr_mixed_case"></span>
 
-**Senha \_ do \_ \_ Diferenciar maiúsculas de minúsculas** (0x00000001)
+**SENHA \_ ATTR \_ MIXED \_ CASE** (0x00000001)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="PASSWORD_ATTR_COMPLEX"></span><span id="password_attr_complex"></span>
 
-**Senha \_ do ATTR \_ complexo** (0x00000002)
+**SENHA \_ ATTR \_ COMPLEX** (0x00000002)
 
 
 </dt> <dd></dd> </dl> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Tipo de dados de script: **longo**
+Tipo de dados de script: **LONG**
 </dt> <dt>
 
 
@@ -310,10 +310,10 @@ Indica o número de senhas anteriores salvas na lista de histórico. O usuário 
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Tipo de dados de script: **longo**
+Tipo de dados de script: **LONG**
 </dt> <dt>
 
 
@@ -335,7 +335,7 @@ HRESULT put_PasswordHistoryLength(
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de código a seguir exibe o valor da propriedade **PasswordHistoryLength** .
+O exemplo de código a seguir exibe o valor da **propriedade PasswordHistoryLength.**
 
 
 ```VB
@@ -349,7 +349,7 @@ debug.print "PasswordHistoryLength" & dom.PasswordHistoryLength
 
 
 
-O exemplo de código a seguir exibe o valor da propriedade **PasswordHistoryLength** .
+O exemplo de código a seguir exibe o valor da **propriedade PasswordHistoryLength.**
 
 
 ```C++
@@ -378,9 +378,9 @@ Cleanup:
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>IADs. h</dt> </dl>       |
+| Cabeçalho<br/>                   | <dl> <dt>Iads.h</dt> </dl>       |
 | DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IADsDomain é definido como 00E4C220-FD16-11CE-ABC4-02608C9E7553<br/>           |
+| IID<br/>                      | IID IADsDomain é definido como \_ 00E4C220-FD16-11CE-ABC4-02608C9E7553<br/>           |
 
 
 
@@ -391,7 +391,7 @@ Cleanup:
 [**IADsDomain**](/windows/desktop/api/Iads/nn-iads-iadsdomain)
 </dt> <dt>
 
-[Métodos de propriedade de interface](interface-property-methods.md)
+[Métodos de propriedade interface](interface-property-methods.md)
 </dt> </dl>
 
  

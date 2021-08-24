@@ -1,19 +1,19 @@
 ---
-description: 'Versão remota do método IMFSourceResolver:: BeginCreateObjectFromByteStream.'
+description: Versão remota do método IMFSourceResolver::BeginCreateObjectFromByteStream.
 ms.assetid: 960b5c51-b9b1-4956-a270-abfb7eedd482
-title: RemoteBeginCreateObjectFromByteStream (Mfobjects. h)
+title: RemoteBeginCreateObjectFromByteStream (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ac2cf089f0b80e83373c36731de4bd9a36d8835b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 01ac0365da83ec3f6bedc3ab45b9aef1458ed04c97ccdbfc1e00484824de47e5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105797981"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119268976"
 ---
 # <a name="remotebegincreateobjectfrombytestream"></a>RemoteBeginCreateObjectFromByteStream
 
-Versão remota do método [**IMFSourceResolver:: BeginCreateObjectFromByteStream**](/windows/desktop/api/mfidl/nf-mfidl-imfsourceresolver-begincreateobjectfrombytestream) .
+Versão remota do método [**IMFSourceResolver::BeginCreateObjectFromByteStream.**](/windows/desktop/api/mfidl/nf-mfidl-imfsourceresolver-begincreateobjectfrombytestream)
 
 ``` syntax
 [call_as(BeginCreateObjectFromByteStream)]
@@ -28,7 +28,7 @@ HRESULT RemoteBeginCreateObjectFromByteStream(
 
 ## <a name="remarks"></a>Comentários
 
-Os aplicativos não podem chamar esse método diretamente e os objetos não implementam esse método. O método não aparece no vtable para a interface. Se [**BeginCreateObjectFromByteStream**](/windows/desktop/api/mfidl/nf-mfidl-imfsourceresolver-begincreateobjectfrombytestream) for chamado entre limites de processo, a dll Media Foundation proxy/stub converterá a chamada em uma chamada para o método remoto e a converterá de volta.
+Os aplicativos não podem chamar esse método diretamente e os objetos não implementam esse método. O método não aparece na vtable para a interface . Se [**BeginCreateObjectFromByteStream**](/windows/desktop/api/mfidl/nf-mfidl-imfsourceresolver-begincreateobjectfrombytestream) for chamado entre limites de processo, a DLL de proxy/stub do Media Foundation converterá a chamada em uma chamada para o método remoto e a converterá de volta.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -36,10 +36,10 @@ Os aplicativos não podem chamar esse método diretamente e os objetos não impl
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos \| UWP do Windows Vista desktop\]<br/>                                                    |
-| Servidor mínimo com suporte<br/> | Aplicativos do Windows Server 2008 \[ Desktop aplicativos \| UWP\]<br/>                                              |
-| parâmetro<br/>                   | <dl> <dt>Mfobjects. h (incluir Mfidl. h)</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Mfuuid. lib</dt> </dl>                    |
+| Cliente mínimo com suporte<br/> | Windows \[Aplicativos \| UWP de aplicativos da área de trabalho do Vista\]<br/>                                                    |
+| Servidor mínimo com suporte<br/> | Windows Aplicativos \[ UWP do Server 2008 Desktop \|\]<br/>                                              |
+| parâmetro<br/>                   | <dl> <dt>Mfobjects.h (inclua Mfidl.h)</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Mfuuid.lib</dt> </dl>                    |
 
 
 

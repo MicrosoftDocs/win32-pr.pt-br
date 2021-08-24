@@ -1,28 +1,28 @@
 ---
-title: Esquema do WinSAT
-description: Você pode usar o esquema do WinSAT (ferramenta de avaliação de sistema do Windows) para determinar as consultas XPath válidas a serem executadas.
+title: Esquema WinSAT
+description: Você pode usar o Windows WinSAT (System Assessment Tool) para determinar consultas XPath válidas a executar.
 ms.assetid: da497f3b-f5a2-401e-8230-937362ecf4f2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 55e18cd775d8dab59bbe9b7f23392242f7eca1e5
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 57e3096e9ad514740c409933ce60418def7e5704d0e284b2ad83ef6502fdee6d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822447"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119412216"
 ---
-# <a name="winsat-schema"></a>Esquema do WinSAT
+# <a name="winsat-schema"></a>Esquema WinSAT
 
-\[As enumerações do WinSAT podem ser alteradas ou indisponíveis para versões após a Windows 8.1.\]
+\[As enumerações winSAT podem ser alteradas ou não disponíveis para versões após Windows 8.1.\]
 
-Você pode usar o esquema do WinSAT (ferramenta de avaliação de sistema do Windows) para determinar as consultas XPath válidas a serem executadas. Para executar uma consulta XPath, consulte um dos seguintes métodos:
+Você pode usar o Windows WinSAT (System Assessment Tool) para determinar consultas XPath válidas a executar. Para executar uma consulta XPath, consulte um dos seguintes métodos:
 
--   [**IQueryAllWinSATAssessments:: obter \_ AllXML**](/windows/desktop/api/Winsatcominterfacei/nf-winsatcominterfacei-iqueryallwinsatassessments-get_allxml)
--   [**IQueryRecentWinSATAssessment:: obter \_ XML**](/windows/desktop/api/Winsatcominterfacei/nf-winsatcominterfacei-iqueryrecentwinsatassessment-get_xml)
+-   [**IQueryAllWinSATAssessments::get \_ AllXML**](/windows/desktop/api/Winsatcominterfacei/nf-winsatcominterfacei-iqueryallwinsatassessments-get_allxml)
+-   [**IQueryRecentWinSATAssessment::get \_ XML**](/windows/desktop/api/Winsatcominterfacei/nf-winsatcominterfacei-iqueryrecentwinsatassessment-get_xml)
 
-O elemento **WinSAT** pode ter um elemento **WinsatAssessments** como um elemento pai quando você chama o método [**Get \_ AllXML**](/windows/desktop/api/Winsatcominterfacei/nf-winsatcominterfacei-iqueryallwinsatassessments-get_allxml) .
+O **elemento WinSAT** pode ter **um elemento WinsatAssessments** como um elemento pai quando você chama o [**método get \_ AllXML.**](/windows/desktop/api/Winsatcominterfacei/nf-winsatcominterfacei-iqueryallwinsatassessments-get_allxml)
 
-Veja a seguir o esquema do WinSAT que você pode usar para determinar o XPath.
+A seguir está o esquema WinSAT que você pode usar para determinar o XPath.
 
 
 ```xsd
@@ -1235,9 +1235,9 @@ Veja a seguir o esquema do WinSAT que você pode usar para determinar o XPath.
 
 
 
- 
+ 
 
- 
+ 
 
 
 

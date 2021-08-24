@@ -1,7 +1,7 @@
 ---
-description: Classe Thread_V1-essa classe é a classe pai para eventos de thread. A sintaxe a seguir é simplificada do código MOF.
+description: Thread_V1 classe - essa classe é a classe pai para eventos de thread. A sintaxe a seguir é simplificada do código MOF.
 ms.assetid: a434938d-032f-46c6-a94b-3936e56e2db9
-title: Classe Thread_V1
+title: Thread_V1 classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,14 +12,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 65b92ce6924b56a015fbc580cd478122688e474d
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 42cc51f7d20cb5e37d10c90d342ca301cce5c0435709abcc08834029d16881e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105674"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119069426"
 ---
-# <a name="thread_v1-class"></a>Classe de thread \_ v1
+# <a name="thread_v1-class"></a>Classe Thread \_ V1
 
 Essa classe é a classe pai para eventos de thread.
 
@@ -36,7 +36,7 @@ class Thread_V1 : MSNT_SystemTrace
 
 ## <a name="members"></a>Membros
 
-A classe **thread \_ v1** não define nenhum membro.
+A **classe Thread \_ V1** não define nenhum membro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -44,16 +44,16 @@ A classe **thread \_ v1** não define nenhum membro.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>          |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[**MSNT \_ SystemTrace**](msnt-systemtrace.md)
+[**SystemTrace do MSNT \_**](msnt-systemtrace.md)
 </dt> <dt>
 
 [**Thread**](thread.md)
@@ -62,10 +62,10 @@ A classe **thread \_ v1** não define nenhum membro.
 [**Thread \_ V0**](thread-v0.md)
 </dt> <dt>
 
-[**Thread \_ v1 \_ TypeGroup1**](thread-v1-typegroup1.md)
+[**Thread \_ V1 \_ TypeGroup1**](thread-v1-typegroup1.md)
 </dt> <dt>
 
-[**Thread \_ v1 \_ TypeGroup2**](thread-v1-typegroup2.md)
+[**Thread \_ V1 \_ TypeGroup2**](thread-v1-typegroup2.md)
 </dt> </dl>
 
  

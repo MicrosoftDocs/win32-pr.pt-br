@@ -13,25 +13,25 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 522f7b3e7f5691e9552dce15b958fdb635fcae06
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 86fad829bf1b2391a9bc97d5c6281a67cadae7d03672e8a6eb8093b7ff6152b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104091788"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119131668"
 ---
 # <a name="cimtype-qualifier"></a>Qualificador CIMType
 
-O qualificador **CIMType** contém texto que descreve o tipo de uma propriedade.
+O **qualificador CIMType** contém texto que descreve o tipo de uma propriedade.
 
-Esse texto pode ser o tipo MOF, como "String" e "sint32" ou o tipo CIM, como " \_ cadeia de caracteres CIM" e "CIM \_ sint32". Há uma correspondência um-para-um entre o qualificador **CIMType** e o tipo da propriedade usada no parâmetro *PvtType* do método [**IWbemClassObject:: Get**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-get) .
+Esse texto pode ser o tipo MOF, como "string" e "sint32" ou o tipo CIM, como "CIM \_ STRING" e "CIM \_ SINT32". Há uma correspondência um-para-um entre o qualificador **CIMType** e o tipo da propriedade usada no parâmetro *pvtType* do método [**IWbemClassObject::Get.**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-get)
 
 As duas exceções são:
 
--   [*Propriedades de referência*](gloss-r.md), que têm a **\_ referência** de tipo CIM, que contém o valor "Ref: ClassName". O valor de ClassName descreve o tipo de classe da propriedade de referência.
--   Propriedades de objeto inserido, que têm o tipo de **\_ objeto CIM** .
+-   [*Propriedades de*](gloss-r.md)referência , que têm o tipo **CIM \_ REFERENCE**, que contém o valor "REF:classname". O valor classname descreve o tipo de classe da propriedade de referência.
+-   Propriedades do objeto inserido, que têm o **tipo DE \_ OBJETO CIM.**
 
-Observe, no entanto, que o qualificador **CIMType** pode e deve ser usado para digitar uma propriedade de referência com mais precisão. Por exemplo, se a propriedade sempre se referir a instâncias da classe do disco [**\_ lógico do Win32**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) , seu qualificador **CIMType** deverá ser definido como:
+No entanto, observe que o qualificador **CIMType** pode e deve ser usado para digitar uma propriedade de referência mais exatamente. Por exemplo, se a propriedade sempre se referir a instâncias da classe [**\_ LogicalDisk win32,**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) seu qualificador **CIMType** deverá ser definido como:
 
 
 ```mof
@@ -40,7 +40,7 @@ Observe, no entanto, que o qualificador **CIMType** pode e deve ser usado para d
 
 
 
-Por padrão, o qualificador **CIMType** de uma propriedade de referência tem o tipo **ref**.
+Por padrão, o **qualificador CIMType** de uma propriedade de referência tem o tipo **ref**.
 
 Assim como nas propriedades de referência, o qualificador **CIMType** deve ser usado para digitar uma propriedade de objeto inserido mais exatamente com a seguinte sintaxe:
 
@@ -51,7 +51,7 @@ Assim como nas propriedades de referência, o qualificador **CIMType** deve ser 
 
 
 
-Como o WMI permite mais tipos do que podem ser expressos por constantes padrão com o \_ prefixo VT, o qualificador **CIMType** pode ajudar a interpretar valores de tipo. O qualificador **CIMType** é adicionado automaticamente. Para obter mais informações, consulte [MOF Data Types](mof-data-types.md).
+Como o WMI permite mais tipos do que pode ser expresso por constantes padrão com o prefixo de VT, o qualificador CIMType pode ajudar a \_ interpretar valores de tipo.  O **qualificador CIMType** é adicionado automaticamente. Para obter mais informações, consulte [Tipos de dados MOF](mof-data-types.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,7 +68,7 @@ Como o WMI permite mais tipos do que podem ser expressos por constantes padrão 
 
 <dl> <dt>
 
-[**Qualificadores WMI padrão**](standard-wmi-qualifiers.md)
+[**Qualificadores WMI Padrão**](standard-wmi-qualifiers.md)
 </dt> <dt>
 
 [Qualificadores WMI](wmi-qualifiers.md)

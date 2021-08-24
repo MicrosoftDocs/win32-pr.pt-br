@@ -4,16 +4,16 @@ ms.assetid: ad33b2cd-8409-4782-8eb9-5f12aca8405b
 title: JobPrimaryBannerSheetSource
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 366266576fca98762fd7d3dcb7e491a6cc94f529
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: ee9ff7caa2bb25bb9a22bc556c666545b26befdf134f35a2f9f7e0016499b41b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112408709"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119099608"
 ---
 # <a name="jobprimarybannersheetsource"></a>JobPrimaryBannerSheetSource
 
-Este tópico não é atual. Para obter as informações mais atuais, consulte a [especificação do esquema de impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tópico não é atual. Para obter as informações mais atuais, consulte a [Especificação de Esquema de Impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Especifica a origem de uma folha de faixa personalizada primária para o trabalho.
 
@@ -24,10 +24,10 @@ Especifica a origem de uma folha de faixa personalizada primária para o trabalh
 
 
 
-| Name | Valor |
+| Nome | Valor |
 |----------------------------|---------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                     |
-| Prefixo de escopo <br/> | Trabalho<br/>                              |
+| Prefixo de definição de scoping <br/> | Trabalho<br/>                              |
 | Observações <br/>          | Vinculado ao elemento JobBannerSheet<br/> |
 
 
@@ -73,9 +73,9 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 | Tipo de dados<br/>     | string<br/>  | xs:string<br/>       |
 | DefaultValue<br/> | string<br/>  | não definido<br/>       |
 | MaxLength<br/>    | Número inteiro<br/> | não definido<br/>       |
-| MinLength<br/>    | integer<br/> | 1<br/>               |
-| Obrigatório<br/>    | string<br/>  | PSK: condicional<br/> |
-| UnitType<br/>     | string<br/>  | characters<br/>      |
+| Minlength<br/>    | integer<br/> | 1<br/>               |
+| Obrigatório<br/>    | string<br/>  | psk:Conditional<br/> |
+| Unittype<br/>     | string<br/>  | characters<br/>      |
 
 
 

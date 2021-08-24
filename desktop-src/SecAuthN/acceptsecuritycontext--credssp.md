@@ -4,16 +4,16 @@ ms.assetid: a53f733e-b646-4431-b021-a2c446308849
 title: Função AcceptSecurityContext (CredSSP)
 ms.topic: article
 ms.date: 07/25/2019
-ms.openlocfilehash: 681e03ea15729cc8726d63551e8b7b0a2b39ecac
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: df4c87274c3a19d9e4a028cde813801688ce1927d1a0b89dbe3a7e8633ce8b57
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105790427"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119141689"
 ---
 # <a name="acceptsecuritycontext-credssp-function"></a>Função AcceptSecurityContext (CredSSP)
 
-A função **AcceptSecurityContext (CredSSP)** permite que o componente de servidor de um aplicativo de transporte estabeleça um contexto de segurança entre o servidor e um cliente remoto. O cliente remoto chama a função [**InitializeSecurityContext (CredSSP)**](initializesecuritycontext--credssp.md) para iniciar o processo de estabelecimento de um contexto de segurança. O servidor pode exigir um ou mais tokens de resposta do cliente remoto para concluir o estabelecimento do contexto de segurança.
+A **função AcceptSecurityContext (CredSSP)** permite que o componente de servidor de um aplicativo de transporte estabeleça um contexto de segurança entre o servidor e um cliente remoto. O cliente remoto chama a [**função InitializeSecurityContext (CredSSP)**](initializesecuritycontext--credssp.md) para iniciar o processo de estabelecimento de um contexto de segurança. O servidor pode exigir um ou mais tokens de resposta do cliente remoto para concluir o estabelecimento do contexto de segurança.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,76 +33,76 @@ SECURITY_STATUS SEC_ENTRY AcceptSecurityContext(
 
 ## <a name="parameters"></a>Parâmetros
 
-*phCredential* \[ em, opcional\]
+*phCredential* \[ in, opcional\]
 
-Um identificador para as credenciais do servidor. Para recuperar esse identificador, o servidor chama a função [**falha AcquireCredentialsHandle (CredSSP)**](acquirecredentialshandle--credssp.md) com o sinalizador de \_ entrada SECPKG cred \_ ou SECPKG \_ creds \_ .
+Um handle para as credenciais do servidor. Para recuperar esse identificador, o servidor chama a função [**AcquireCredentialsHandle (CredSSP)**](acquirecredentialshandle--credssp.md) com o conjunto de sinalizadores SECPKG \_ CRED INBOUND ou \_ SECPKG \_ CRED \_ BOTH.
 
-*phContext* \[ em, opcional\]
+*phContext* \[ in, opcional\]
 
-Um ponteiro para uma estrutura [CtxtHandle](sspi-handles.md) . Na primeira chamada para **AcceptSecurityContext (CredSSP)**, esse ponteiro é **nulo**. Nas chamadas subsequentes, *phContext* especifica o contexto parcialmente formado retornado no parâmetro *phNewContext* pela primeira chamada.
+Um ponteiro para uma [estrutura CtxtHandle.](sspi-handles.md) Na primeira chamada para **AcceptSecurityContext (CredSSP),** esse ponteiro é **NULL.** Em chamadas subsequentes, *phContext* especifica o contexto parcialmente formado retornado no parâmetro *phNewContext* pela primeira chamada.
 
-*pInput* \[ em, opcional\]
+*pInput* \[ in, opcional\]
 
-Um ponteiro para uma estrutura [**SecBufferDesc**](/windows/win32/api/sspi/ns-sspi-secbufferdesc) gerada por uma chamada de cliente para [**InitializeSecurityContext (CredSSP)**](initializesecuritycontext--credssp.md). A estrutura contém o descritor de buffer de entrada.
+Um ponteiro para uma [**estrutura SecBufferDesc**](/windows/win32/api/sspi/ns-sspi-secbufferdesc) gerada por uma chamada do cliente para [**InitializeSecurityContext (CredSSP)**](initializesecuritycontext--credssp.md). A estrutura contém o descritor de buffer de entrada.
 
-O primeiro buffer deve ser do tipo **\_ token SECBUFFER** e conter o token de segurança recebido do cliente. O segundo buffer deve ser do tipo **SECBUFFER \_ vazio**.
+O primeiro buffer deve ser do **tipo SECBUFFER \_ TOKEN** e conter o token de segurança recebido do cliente. O segundo buffer deve ser do **tipo SECBUFFER \_ EMPTY.**
 
-*fContextReq* \[ no\]
+*fContextReq* \[ Em\]
 
-– Sinalizadores de bits que especificam os atributos exigidos pelo servidor para estabelecer o contexto. Os sinalizadores de bits podem ser combinados usando operações de bit-a-**ou** . Esse parâmetro pode ser um ou mais dos valores a seguir.
+Sinalizadores de bits que especificam os atributos exigidos pelo servidor para estabelecer o contexto. Os sinalizadores de bit podem ser combinados usando operações **OR** bit a bit. Esse parâmetro pode ser um ou mais dos valores a seguir.
 
 | Valor                          | Significado                                                                                                                                                                                                        |
 |--------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **memória de alocação do ASC \_ req \_ \_** | O CredSSP (provedor de suporte à segurança de credencial) alocará buffers de saída. Quando você terminar de usar os buffers de saída, libere-os chamando a função [**FreeContextBuffer**](/windows/win32/api/sspi/nf-sspi-freecontextbuffer) . |
-| **\_conexão de req. asc \_**       | O contexto de segurança não tratará mensagens de formatação.                                                                                                                                                      |
-| **\_delegado de req ASC \_**         | O servidor tem permissão para representar o cliente. Ignore este sinalizador para delegação restrita.                                                         |
-| **\_ \_ erro estendido de req. asc \_**  | Quando ocorrerem erros, a parte remota será notificada.                                                                                                                                                          |
-| **\_detecção de \_ Replay de req do ASC \_**   | Detectar pacotes reproduzidos.                                                                                                                                                                                       |
-| **\_detecção de \_ sequência de req do ASC \_** | Detecte mensagens recebidas fora de sequência.                                                                                                                                                                      |
-| **\_fluxo de req. asc \_**           | Suporte a uma conexão orientada a fluxo.                                                                                                                                                                          |
+| **ASC \_ REQ \_ ALLOCATE \_ MEMORY** | O CredSSP (Provedor de Suporte de Segurança de Credencial) alocará buffers de saída. Quando terminar de usar os buffers de saída, livre-os chamando a [**função FreeContextBuffer.**](/windows/win32/api/sspi/nf-sspi-freecontextbuffer) |
+| **CONEXÃO ASC \_ REQ \_**       | O contexto de segurança não manipulará mensagens de formatação.                                                                                                                                                      |
+| **ASC \_ REQ \_ DELEGATE**         | O servidor tem permissão para representar o cliente. Ignore esse sinalizador para delegação restrita.                                                         |
+| **ERRO ESTENDIDO DO ASC \_ REQ \_ \_**  | Quando ocorrerem erros, a parte remota será notificada.                                                                                                                                                          |
+| **ASC \_ REQ \_ REPLAY \_ DETECT**   | Detectar pacotes replayed.                                                                                                                                                                                       |
+| **ASC \_ REQ \_ SEQUENCE \_ DETECT** | Detectar mensagens recebidas fora de sequência.                                                                                                                                                                      |
+| **FLUXO DE REQ DO ASC \_ \_**           | Dar suporte a uma conexão orientada a fluxo.                                                                                                                                                                          |
 
-Para possíveis sinalizadores de atributo e seus significados, consulte [requisitos de contexto](context-requirements.md). Os sinalizadores usados para esse parâmetro são prefixados com o ASC \_ req, por exemplo, o \_ delegado de req ASC \_ .
+Para possíveis sinalizadores de atributo e seus significados, consulte [Requisitos de contexto.](context-requirements.md) Sinalizadores usados para esse parâmetro são prefixados com ASC \_ REQ, por exemplo, ASC \_ REQ \_ DELEGATE.
 
-Os atributos solicitados podem não ter suporte do cliente. Para obter mais informações, consulte o parâmetro *pfContextAttr* .
+Os atributos solicitados podem não ser suportados pelo cliente. Para obter mais informações, consulte o *parâmetro pfContextAttr.*
 
-*TargetDataRep* \[ no\]
+*TargetDataRep* \[ Em\]
 
-A representação de dados, como ordenação de bytes, no destino. Esse parâmetro pode ser **segurança \_ nativa \_ DREP** ou segurança de **\_ rede \_ DREP**.
+A representação de dados, como ordenação de byte, no destino. Esse parâmetro pode ser **SECURITY \_ NATIVE \_ DREP** ou **SECURITY NETWORK \_ \_ DREP**.
 
-*phNewContext* \[ entrada, saída, opcional\]
+*phNewContext* \[ in, out, opcional\]
 
-Um ponteiro para uma estrutura [CtxtHandle](sspi-handles.md) . Na primeira chamada para **AcceptSecurityContext (CredSSP)**, esse ponteiro recebe o novo identificador de contexto. Nas chamadas subsequentes, *phNewContext* pode ser o mesmo que o identificador especificado no parâmetro *phContext* .
+Um ponteiro para uma [estrutura CtxtHandle.](sspi-handles.md) Na primeira chamada para **AcceptSecurityContext (CredSSP),** esse ponteiro recebe o novo indicador de contexto. Em chamadas subsequentes, *phNewContext* pode ser o mesmo que o handle especificado no *parâmetro phContext.*
 
-*pOutput* \[ entrada, saída, opcional\]
+*pOutput* \[ in, out, opcional\]
 
-Um ponteiro para uma estrutura [**SecBufferDesc**](/windows/win32/api/sspi/ns-sspi-secbufferdesc) que contém o descritor de buffer de saída. Esse buffer é enviado ao cliente para entrada em chamadas adicionais para [**InitializeSecurityContext (CredSSP)**](initializesecuritycontext--credssp.md). Um buffer de saída pode ser gerado mesmo que a função retorne s \_ E \_ OK. Qualquer buffer gerado deve ser enviado de volta para o aplicativo cliente.
+Um ponteiro para uma [**estrutura SecBufferDesc**](/windows/win32/api/sspi/ns-sspi-secbufferdesc) que contém o descritor de buffer de saída. Esse buffer é enviado ao cliente para entrada em chamadas adicionais para [**InitializeSecurityContext (CredSSP)**](initializesecuritycontext--credssp.md). Um buffer de saída pode ser gerado mesmo que a função retorne SEC \_ E \_ OK. Qualquer buffer gerado deve ser enviado de volta para o aplicativo cliente.
 
-Na saída, esse buffer recebe um token para o contexto de segurança. O token deve ser enviado ao cliente. A função também pode retornar um buffer do tipo SECBUFFER \_ extra.
+Na saída, esse buffer recebe um token para o contexto de segurança. O token deve ser enviado ao cliente. A função também pode retornar um buffer do tipo SECBUFFER \_ EXTRA.
 
-*pfContextAttr* \[ fora\]
+*pfContextAttr* \[ out\]
 
-Um ponteiro para um conjunto de sinalizadores de bit que indicam os atributos do contexto estabelecido. Para obter uma descrição dos vários atributos, consulte [requisitos de contexto](context-requirements.md). Os sinalizadores usados para esse parâmetro são prefixados com ASC \_ RET, por exemplo, o delegado de ASC \_ RET \_ .
+Um ponteiro para um conjunto de sinalizadores de bits que indicam os atributos do contexto estabelecido. Para ver uma descrição dos vários atributos, confira [Requisitos de contexto.](context-requirements.md) Os sinalizadores usados para esse parâmetro são prefixados com ASC \_ RET, por exemplo, ASC \_ RET \_ DELEGATE.
 
-Não verifique os atributos relacionados à segurança até que a chamada de função final seja retornada com êxito. Os sinalizadores de atributo não relacionados à segurança, como o \_ \_ sinalizador de memória alocada de ASC RET \_ , podem ser verificados antes do retorno final.
+Não verifique se há atributos relacionados à segurança até que a chamada de função final retorne com êxito. Sinalizadores de atributo não relacionados à segurança, como o sinalizador ASC \_ RET ALLOCATED MEMORY, podem ser verificados \_ antes do retorno \_ final.
 
 *ptsExpiry* \[ out, opcional\]
 
-Um ponteiro para uma estrutura de [**carimbo de data/**](timestamp.md) hora que recebe o tempo de expiração do contexto. É recomendável que o pacote de segurança sempre retorne esse valor na hora local.
+Um ponteiro para uma [**estrutura TimeStamp**](timestamp.md) que recebe a hora de expiração do contexto. Recomendamos que o pacote de segurança sempre retorne esse valor no horário local.
 
 > [!Note]  
-> Até a última chamada do processo de autenticação, o tempo de expiração do contexto pode estar incorreto, pois mais informações serão fornecidas durante os estágios posteriores da negociação. Portanto, *ptsTimeStamp* deve ser **nulo** até a última chamada para a função.
+> Até a última chamada do processo de autenticação, o tempo de expiração do contexto pode estar incorreto porque mais informações serão fornecidas durante os estágios posteriores da negociação. Portanto, *ptsTimeStamp* deve ser **NULL** até a última chamada para a função.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa função retorna um dos valores a seguir.
 
-| Código/valor de retorno                                   | Descrição                                                                                                                                                                 |
+| Valor/código de retorno                                   | Descrição                                                                                                                                                                 |
 |-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | SEC_E_INCOMPLETE_MESSAGE <br/> 0x80090318L          | A função foi bem-sucedida. Os dados no buffer de entrada estão incompletos. O aplicativo deve ler dados adicionais do cliente e chamar [<strong>AcceptSecurityContext (CredSSP)</strong>](acceptsecuritycontext--credssp.md) novamente. |
-| SEC_E_INSUFFICIENT_MEMORY <br/> 0x80090300L         | A função falhou. Não há memória suficiente disponível para concluir a ação solicitada.                                                                                 |
-| SEC_E_INTERNAL_ERROR <br/> 0x80090304L              | A função falhou. Ocorreu um erro que não foi mapeado para um código de erro SSPI.                                                                                              |
-| SEC_E_INVALID_HANDLE <br/> 0x80100003L              | A função falhou. O identificador passado para a função não é válido.                                                                                                        |
-| SEC_E_INVALID_TOKEN <br/> 0x80090308L               | A função falhou. O token passado para a função não é válido.                                                                                                         |
+| SEC_E_INSUFFICIENT_MEMORY <br/> 0x80090300L         | Falha na função. Não há memória suficiente disponível para concluir a ação solicitada.                                                                                 |
+| SEC_E_INTERNAL_ERROR <br/> 0x80090304L              | Falha na função. Ocorreu um erro que não mapeou para um código de erro SSPI.                                                                                              |
+| SEC_E_INVALID_HANDLE <br/> 0x80100003L              | Falha na função. O alça passado para a função não é válido.                                                                                                        |
+| SEC_E_INVALID_TOKEN <br/> 0x80090308L               | Falha na função. O token passado para a função não é válido.                                                                                                         |
 | SEC_E_LOGON_DENIED <br/> 0x8009030CL                | Falha no logon.                                                                                                                                                           |
 | SEC_E_NO_AUTHENTICATING_AUTHORITY <br/> 0x80090311L | A função falhou. Nenhuma autoridade pode ser contatada para autenticação. Isso pode ser devido às seguintes condições:<br/><ul><li>O nome de domínio da parte de autenticação está incorreto.</li><li>O domínio não está disponível.</li><li>Falha na relação de confiança. |
 | SEC_E_NO_CREDENTIALS <br/>0x8009030EL               | A função falhou. O identificador de credenciais especificado no parâmetro *phCredential* não é válido.                            |
@@ -132,9 +132,9 @@ Depois que o contexto de segurança tiver sido estabelecido, o aplicativo de ser
 
 | Requisito | Valor |
 |--------------------------|-------------------------------------------|
-| Cliente mínimo com suporte | \[Somente aplicativos da área de trabalho do Windows Vista\]       |
-| Servidor mínimo com suporte | \[Somente aplicativos da área de trabalho do Windows Server 2008\] |
-| parâmetro                   | SSPI. h (incluir Security. h)               |
+| Cliente mínimo com suporte | \[somente aplicativos da área de trabalho do Windows Vista\]       |
+| Servidor mínimo com suporte | Windows \[Somente aplicativos da área de trabalho do servidor 2008\] |
+| Cabeçalho                   | SSPI. h (incluir Security. h)               |
 | Biblioteca                  | Secur32. lib                               |
 | DLL                      | Secur32.dll                               |
 
