@@ -1,7 +1,7 @@
 ---
-description: O método de trocador é chamado quando a taxa de reprodução é alterada.
+description: O método ChangeRate é chamado quando a taxa de reprodução é muda.
 ms.assetid: c4f1f9d0-6c09-4cab-8a37-dd1ff3f5619f
-title: Método CSourceSeeking. Disqueteiraize (Ctlutil. h)
+title: Método CSourceSeeking.ChangeRate (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 02fab05d65929233b97f7d53e497bae6593c472a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ee74c8eb39fbebab1e58442c3b12f8342610ed792f4eb80ee70e5f44c3cca236
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105782852"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119633936"
 ---
-# <a name="csourceseekingchangerate-method"></a>Método CSourceSeeking. peralterador
+# <a name="csourceseekingchangerate-method"></a>Método CSourceSeeking.ChangeRate
 
-O `ChangeRate` método é chamado quando a taxa de reprodução é alterada.
+O `ChangeRate` método é chamado quando a taxa de reprodução é muda.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,15 +40,15 @@ virtual HRESULT ChangeRate() = 0;
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor **HRESULT** .
+Retorna um **valor HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
-O método [**CSourceSeeking:: SetRate**](csourceseeking-setrate.md) chama esse método, que a classe derivada deve implementar. O método **SetRate** atualiza a variável de membro [**CSourceSeeking:: m \_ dRateSeeking**](csourceseeking-m-drateseeking.md) , mas não valida o novo valor. Uma taxa de zero sempre deve ser rejeitada. Taxas menores que zero indicam reprodução negativa. A maioria dos filtros não oferece suporte a taxas negativas.
+O [**método CSourceSeeking::SetRate**](csourceseeking-setrate.md) chama esse método, que a classe derivada deve implementar. O **método SetRate** atualiza a variável de membro [**CSourceSeeking::m \_ dRateSeeking,**](csourceseeking-m-drateseeking.md) mas não valida o novo valor. Uma taxa de zero sempre deve ser rejeitada. Taxas menores que zero indicam reprodução negativa. A maioria dos filtros não é suportada por taxas negativas.
 
-O exemplo a seguir mostra uma possível implementação:
+O exemplo a seguir mostra uma implementação possível:
 
 
 ```C++
@@ -74,8 +74,8 @@ HRESULT CMyStream::ChangeRate( )
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Ctlutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

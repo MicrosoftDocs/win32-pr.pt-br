@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Spoolss.dll
-ms.openlocfilehash: 45e8ce005953e07f10ec621660ed38e68d50c62b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9a152716a295650575fce0fefe5299ca4a214c322afa6570760c988182f9ba65
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104091595"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119711856"
 ---
 # <a name="endpageprinter-function"></a>Função EndPagePrinter
 
@@ -46,7 +46,7 @@ Identificador para a impressora para a qual a página será concluída. Use a fu
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for realizada com sucesso, o valor de retorno será um valor diferente de zero.
 

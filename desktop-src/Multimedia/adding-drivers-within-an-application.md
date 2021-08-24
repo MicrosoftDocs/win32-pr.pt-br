@@ -16,12 +16,12 @@ keywords:
 - ACM (Gerenciador de compactação de áudio), drivers locais
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 000bf7bded89b778f271599d5ce0f8d7f7bd5f72
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9c4cce1310a487e772ac6f65680221f065335951d7d1d6c6dd22c4178c0d985f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005534"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119692326"
 ---
 # <a name="adding-drivers-within-an-application"></a>Adicionando drivers dentro de um aplicativo
 
@@ -32,9 +32,9 @@ O ACM trata os drivers como global ou local. Um aplicativo especifica se um driv
 -   Drivers adicionados como drivers globais não são compartilhados com outros aplicativos.
 -   Um aplicativo pode alterar diretamente a prioridade de um driver global (mas não de um driver local) chamando a função [**acmDriverPriority**](/windows/desktop/api/Msacm/nf-msacm-acmdriverpriority) . O ACM realiza uma pesquisa priorizada ao procurar um driver apropriado para fornecer uma implementação de uma chamada de função. O ACM sempre fornece aos drivers locais prioridade mais alta do que os drivers globais. O driver local adicionado mais recentemente tem a prioridade mais alta.
 
- 
+ 
 
- 
+ 
 
 
 

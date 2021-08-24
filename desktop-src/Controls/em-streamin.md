@@ -1,9 +1,9 @@
 ---
-title: Mensagem de EM_STREAMIN (RichEdit. h)
-description: Substitui o conteúdo de um controle de edição rico por um fluxo de dados fornecidos por um aplicativo definido \ 8211; Função de retorno de chamada EditStreamCallback.
+title: EM_STREAMIN mensagem (Richedit.h)
+description: Substitui o conteúdo de um controle de edição rico por um fluxo de dados fornecidos por um aplicativo definido como \ 8211; Função de retorno de chamada EditStreamCallback.
 ms.assetid: b8d3a108-b415-4f5e-99e7-0e0e7a82a778
 keywords:
-- Controles de EM_STREAMIN de mensagens do Windows
+- EM_STREAMIN controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 40fdcf844cce09cf5c49085a9fcf08a38ad988ae
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 597d6483ef02f0c9f6f4e4459cd6780b91e04c39160c8057e88fc537fde3b173
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455666"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119576336"
 ---
-# <a name="em_streamin-message"></a>Mensagem de fluxo em em \_
+# <a name="em_streamin-message"></a>Mensagem EM \_ STREAMIN
 
-Substitui o conteúdo de um controle de edição rico por um fluxo de dados fornecidos por uma função de retorno de chamada [*EditStreamCallback*](/windows/desktop/api/Richedit/nc-richedit-editstreamcallback) definida pelo aplicativo.
+Substitui o conteúdo de um controle de edição avançada por um fluxo de dados fornecidos por uma função de retorno de chamada [*EditStreamCallback*](/windows/desktop/api/Richedit/nc-richedit-editstreamcallback) definida pelo aplicativo.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -32,14 +32,14 @@ Substitui o conteúdo de um controle de edição rico por um fluxo de dados forn
 *wParam* 
 </dt> <dd>
 
-Especifica o formato de dados e as opções de substituição. Esse valor deve ser um dos valores a seguir.
+Especifica as opções de substituição e formato de dados. Esse valor deve ser um dos valores a seguir.
 
 
 
 | Valor                                                                                                                                       | Significado         |
 |---------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
-| <span id="SF_RTF"></span><span id="sf_rtf"></span><dl> <dt>**It \_ RTF**</dt> </dl>    | RTF<br/>  |
-| <span id="SF_TEXT"></span><span id="sf_text"></span><dl> <dt>**texto de it \_**</dt> </dl> | Texto<br/> |
+| <span id="SF_RTF"></span><span id="sf_rtf"></span><dl> <dt>**SF \_ RTF**</dt> </dl>    | RTF<br/>  |
+| <span id="SF_TEXT"></span><span id="sf_text"></span><dl> <dt>**SF \_ TEXT**</dt> </dl> | Texto<br/> |
 
 
 
@@ -51,9 +51,9 @@ Além disso, você pode especificar os sinalizadores a seguir.
 
 | Valor                                                                                                                                                         | Significado                                                                                                                                                                                                                                        |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="SFF_PLAINRTF"></span><span id="sff_plainrtf"></span><dl> <dt>**\_PLAINRTF SFF**</dt> </dl>    | Se especificado, somente palavras-chave comuns a todos os idiomas serão transmitidas em fluxo. Palavras-chave RTF específicas do idioma no fluxo são ignoradas. Se não for especificado, todas as palavras-chave serão transmitidas. Você pode combinar esse sinalizador com o sinalizador **it \_ RTF** .<br/> |
-| <span id="SFF_SELECTION"></span><span id="sff_selection"></span><dl> <dt>**seleção de SFF \_**</dt> </dl> | Se especificado, o fluxo de dados substituirá o conteúdo da seleção atual. Se não for especificado, o fluxo de dados substituirá todo o conteúdo do controle. Você pode combinar esse sinalizador com os sinalizadores de **\_ texto** de it ou **it \_ RTF** .<br/>  |
-| <span id="SF_UNICODE"></span><span id="sf_unicode"></span><dl> <dt>**\_Unicode it**</dt> </dl>          | **Microsoft Rich Edit 2,0 e posterior:** Indica texto Unicode. Você pode combinar esse sinalizador com o sinalizador de **\_ texto it** . <br/>                                                                                                               |
+| <span id="SFF_PLAINRTF"></span><span id="sff_plainrtf"></span><dl> <dt>**SFF \_ PLAINRTF**</dt> </dl>    | Se especificado, somente palavras-chave comuns a todos os idiomas serão transmitidas. Palavras-chave RTF específicas de linguagem no fluxo são ignoradas. Se não for especificado, todas as palavras-chave serão transmitidas. Você pode combinar esse sinalizador com o **sinalizador \_ RTF SF.**<br/> |
+| <span id="SFF_SELECTION"></span><span id="sff_selection"></span><dl> <dt>**SELEÇÃO \_ DE SFF**</dt> </dl> | Se especificado, o fluxo de dados substituirá o conteúdo da seleção atual. Se não for especificado, o fluxo de dados substituirá todo o conteúdo do controle. Você pode combinar esse sinalizador com os **sinalizadores SF \_ TEXT** ou **SF \_ RTF.**<br/>  |
+| <span id="SF_UNICODE"></span><span id="sf_unicode"></span><dl> <dt>**SF \_ UNICODE**</dt> </dl>          | **Microsoft Rich Edit 2.0 e posterior:** Indica o texto Unicode. Você pode combinar esse sinalizador com o **sinalizador SF \_ TEXT.** <br/>                                                                                                               |
 
 
 
@@ -64,17 +64,17 @@ Além disso, você pode especificar os sinalizadores a seguir.
 *lParam* 
 </dt> <dd>
 
-Ponteiro para uma estrutura [**EDITSTREAM**](/windows/desktop/api/Richedit/ns-richedit-editstream) . Na entrada, o membro **pfnCallback** dessa estrutura deve apontar para uma função [*EditStreamCallback*](/windows/desktop/api/Richedit/nc-richedit-editstreamcallback) definida pelo aplicativo. Na saída, o membro **dwError** poderá conter um código de erro diferente de zero se ocorrer um erro.
+Ponteiro para uma [**estrutura EDITSTREAM.**](/windows/desktop/api/Richedit/ns-richedit-editstream) Na entrada, o **membro pfnCallback** dessa estrutura deve apontar para uma [*função EditStreamCallback definida pelo*](/windows/desktop/api/Richedit/nc-richedit-editstreamcallback) aplicativo. Na saída, o **membro dwError** poderá conter um código de erro que não seja zero se ocorrer um erro.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa mensagem retorna o número de caracteres lidos.
 
 ## <a name="remarks"></a>Comentários
 
-Quando você envia uma mensagem de **\_ fluxo** em em, o controle de edição rico faz chamadas repetidas para a função [*EditStreamCallback*](/windows/desktop/api/Richedit/nc-richedit-editstreamcallback) especificada pelo membro **pfnCallback** da estrutura [**EDITSTREAM**](/windows/desktop/api/Richedit/ns-richedit-editstream) . Cada vez que a função de retorno de chamada é chamada, ela preenche um buffer com dados para ler no controle. Isso continuará até que a função de retorno de chamada indique que a operação de entrada de fluxo foi concluída ou ocorrerá um erro.
+Quando você envia uma **mensagem EM \_ STREAMIN,** o controle de edição avançada faz chamadas repetidas para a função [*EditStreamCallback*](/windows/desktop/api/Richedit/nc-richedit-editstreamcallback) especificada pelo **membro pfnCallback** da estrutura [**EDITSTREAM.**](/windows/desktop/api/Richedit/ns-richedit-editstream) Sempre que a função de retorno de chamada é chamada, ela preenche um buffer com dados para ler no controle. Isso continuará até que a função de retorno de chamada indique que a operação de stream-in foi concluída ou ocorre um erro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -82,9 +82,9 @@ Quando você envia uma mensagem de **\_ fluxo** em em, o controle de edição ri
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -95,13 +95,13 @@ Quando você envia uma mensagem de **\_ fluxo** em em, o controle de edição ri
 **Referência**
 </dt> <dt>
 
-[**EDITSTREAM**](/windows/desktop/api/Richedit/ns-richedit-editstream)
+[**Editstream**](/windows/desktop/api/Richedit/ns-richedit-editstream)
 </dt> <dt>
 
-[*EditStreamCallback*](/windows/desktop/api/Richedit/nc-richedit-editstreamcallback)
+[*Editstreamcallback*](/windows/desktop/api/Richedit/nc-richedit-editstreamcallback)
 </dt> <dt>
 
-[**em \_ fluxo contínuo**](em-streamout.md)
+[**EM \_ STREAMOUT**](em-streamout.md)
 </dt> </dl>
 
  

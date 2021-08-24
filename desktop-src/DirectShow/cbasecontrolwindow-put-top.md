@@ -1,7 +1,7 @@
 ---
-description: O \_ método Put Top define a coordenada da janela superior.
+description: O método put \_ Top define a coordenada da janela superior.
 ms.assetid: cd39807f-363d-4b5b-8279-9dfb992dca10
-title: Método de CBaseControlWindow.put_Top (Ctlutil. h)
+title: CBaseControlWindow.put_Top método (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: fdbce19c3caf4129b1f224a740b27209b855a1f8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d3332bcf90ac5e2ee776fe7110c958e50b838bcbdbc6bb4abb23850ced12cc28
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750075"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119635826"
 ---
-# <a name="cbasecontrolwindowput_top-method"></a>Método CBaseControlWindow. put \_ Top
+# <a name="cbasecontrolwindowput_top-method"></a>Método CBaseControlWindow.put \_ Top
 
 O `put_Top` método define a coordenada da janela superior.
 
@@ -49,15 +49,15 @@ Nova coordenada superior, em pixels.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor **HRESULT** .
+Retorna um **valor HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
-A janela tem uma posição na área de trabalho. Isso é expresso em pixels por quatro coordenadas (esquerda, superior, direita e inferior). As interfaces automatizadas por OLE normalmente expressam essa posição por meio da esquerda, da parte superior, da largura e da altura; Essa é a convenção usada no DirectShow. Todas as coordenadas são expressas em pixels e a alteração de qualquer coordenada atualizará a janela imediatamente.
+A janela tem uma posição na área de trabalho. Isso é expresso em pixels por quatro coordenadas (esquerda, superior, direita e inferior). As interfaces automatizadas pelo OLE normalmente expressam essa posição por meio da esquerda, da parte superior, da largura e da altura; essa é a convenção usada em DirectShow. Todas as coordenadas são expressas em pixels e alterar qualquer coordenada atualizará a janela imediatamente.
 
-Definir as coordenadas esquerda ou superior move a janela para a esquerda ou para cima, respectivamente; essas coordenadas não têm efeito sobre a largura e a altura da janela. Da mesma forma, definir a largura e a altura não afeta as coordenadas esquerda e superior.
+Definir as coordenadas esquerda ou superior move a janela para a esquerda ou para cima, respectivamente; essas coordenadas não têm nenhum efeito sobre a largura e a altura da janela. Da mesma forma, definir a largura e a altura não afeta as coordenadas esquerda e superior.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,8 +65,8 @@ Definir as coordenadas esquerda ou superior move a janela para a esquerda ou par
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Ctlutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

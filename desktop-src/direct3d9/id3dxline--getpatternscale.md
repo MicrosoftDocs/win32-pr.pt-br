@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 14a9919ede81eb64b844e1882725e37359ad6738
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3799901d071da08ee1bb0de4994ed330fabe2d8fedf3b59ce556105f0a280e3f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104371022"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119675136"
 ---
 # <a name="id3dxlinegetpatternscale-method"></a>Método ID3DXLine:: GetPatternScale
 
@@ -38,7 +38,7 @@ FLOAT GetPatternScale();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **float**](../winprog/windows-data-types.md)**
 

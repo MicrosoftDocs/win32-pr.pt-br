@@ -1,7 +1,7 @@
 ---
-description: 'O método SetActualDataLength define o comprimento dos dados válidos no buffer. Esse método implementa o método IMediaSample:: SetActualDataLength.'
+description: O método SetActualDataLength define o comprimento dos dados válidos no buffer. Esse método implementa o método IMediaSample::SetActualDataLength.
 ms.assetid: a80a67ef-e490-4874-a123-f2d193cec4d7
-title: Método CMediaSample. SetActualDataLength (Amfilter. h)
+title: Método CMediaSample.SetActualDataLength (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 825b02f43195424f9ceb5ecd23c4dcf26727ef8f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: db090ad96f6c53f725aef7864e729b8083bfd1a02b30f0d699d30b5c6f8f71aa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105811327"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119634366"
 ---
-# <a name="cmediasamplesetactualdatalength-method"></a>Método CMediaSample. SetActualDataLength
+# <a name="cmediasamplesetactualdatalength-method"></a>Método CMediaSample.SetActualDataLength
 
-O `SetActualDataLength` método define o comprimento dos dados válidos no buffer. Esse método implementa o método [**IMediaSample:: SetActualDataLength**](/windows/desktop/api/Strmif/nf-strmif-imediasample-setactualdatalength) .
+O `SetActualDataLength` método define o comprimento dos dados válidos no buffer. Esse método implementa o [**método IMediaSample::SetActualDataLength.**](/windows/desktop/api/Strmif/nf-strmif-imediasample-setactualdatalength)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -49,16 +49,16 @@ Comprimento dos dados válidos, em bytes.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um dos valores **HRESULT** mostrados na tabela a seguir.
+Retorna um dos **valores HRESULT** mostrados na tabela a seguir.
 
 
 
 | Código de retorno                                                                                             | Descrição                                                 |
 |---------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                    | Êxito.<br/>                                         |
-| <dl> <dt>**\_estouro de \_ buffer VFW E \_**</dt> </dl> | *llen* é maior do que o tamanho do buffer alocado.<br/> |
+| <dl> <dt>**ESTOURO DE BUFFER DO VFW \_ E \_ \_**</dt> </dl> | *lLen* é maior que o tamanho do buffer alocado.<br/> |
 
 
 
@@ -66,7 +66,7 @@ Retorna um dos valores **HRESULT** mostrados na tabela a seguir.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método define a variável de membro [**CMediaSample:: m \_ lActual**](cmediasample-m-lactual.md) .
+Esse método define a [**variável de membro CMediaSample::m \_ lActual.**](cmediasample-m-lactual.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -74,8 +74,8 @@ Esse método define a variável de membro [**CMediaSample:: m \_ lActual**](cmed
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amfilter.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

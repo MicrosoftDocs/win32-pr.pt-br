@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: c89553abf9cd9839ba6583dbf60b510278f6cfd6
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 5fcf840f2a95cb3c2ef80fc93760439202968e3183b14e6b2ab588ce60d84d07
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104006906"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119673756"
 ---
 # <a name="d3dcompiler-constants"></a>Constantes D3DCompiler
 
@@ -29,7 +29,7 @@ Esta seção contém informações sobre as seguintes constantes do compilador H
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -38,9 +38,9 @@ Esta seção contém informações sobre as seguintes constantes do compilador H
 [Referência de D3DCompiler](dx-graphics-d3dcompiler-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

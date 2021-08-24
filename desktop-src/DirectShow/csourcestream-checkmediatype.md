@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 62f8b6c18613f5c187fc637febd08b74260a1e44
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4cb900d4de448b59eadb4cfd4de28aebf3ac07845fff6a2769c003d37cac846a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751681"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119633926"
 ---
 # <a name="csourcestreamcheckmediatype-method"></a>Método CSourceStream. CheckMediaType
 
@@ -49,7 +49,7 @@ Ponteiro para um objeto [**CMediaType**](cmediatype.md) que contém o tipo de m�
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos valores **HRESULT** mostrados na tabela a seguir.
 
@@ -74,7 +74,7 @@ Por padrão, o PIN dá suporte a um único tipo de mídia. Esse método recupera
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Source. h (incluir fluxos. h)</dt> </dl>                                                                                    |
+| parâmetro<br/>  | <dl> <dt>Source. h (incluir Fluxos. h)</dt> </dl>                                                                                    |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 

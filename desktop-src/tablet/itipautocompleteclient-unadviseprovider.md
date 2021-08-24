@@ -1,7 +1,7 @@
 ---
-description: Cancela o registro do provedor associado.
+description: Não registrou o provedor associado.
 ms.assetid: b5edc33d-dfd0-4350-b8cd-eaa30b726771
-title: 'Método ITipAutocompleteClient:: unaconselheprovider (TipAutoComplete. h)'
+title: Método ITipAutocompleteClient::UnadviseProvider (TipAutoComplete.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - tiptsf.dll
-ms.openlocfilehash: 1100ebb700ef2fb769a13f9b62aacf5c1d007e0d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d4f573e1dab88e8556dc8c6011173cd3a2284a87d9f98ac6d05cea13cef65ab8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103828740"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119712096"
 ---
-# <a name="itipautocompleteclientunadviseprovider-method"></a>Método ITipAutocompleteClient:: unaconselheprovider
+# <a name="itipautocompleteclientunadviseprovider-method"></a>Método ITipAutocompleteClient::UnadviseProvider
 
-Cancela o registro do provedor associado.
+Não registrou o provedor associado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,21 +40,21 @@ HRESULT UnadviseProvider(
 
 <dl> <dt>
 
-*hwndfield* \[ no\]
+*hWndField* \[ Em\]
 </dt> <dd>
 
-Identificador de janela do campo que fornece o recurso de preenchimento automático.
+Alça de janela do campo que fornece o recurso de conclusão automática.
 
 </dd> <dt>
 
-*pIACProvider* \[ no\]
+*pIACProvider* \[ Em\]
 </dt> <dd>
 
-Ponteiro de interface para o cancelamento do registro da interface do provedor de preenchimento automático.
+Ponteiro de interface para a interface de provedor de conclusão automática a ser não contada.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
@@ -63,7 +63,7 @@ Esse método pode retornar um desses valores.
 | Código de retorno                                                                            | Descrição                               |
 |----------------------------------------------------------------------------------------|-------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>   | Êxito.<br/>                       |
-| <dl> <dt>**E \_ falha**</dt> </dl> | Ocorreu um erro não especificado.<br/> |
+| <dl> <dt>**E \_ FAIL**</dt> </dl> | Ocorreu um erro não especificado.<br/> |
 
 
 
@@ -75,9 +75,9 @@ Esse método pode retornar um desses valores.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                                                                   |
+| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/>                                                                   |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                                       |
-| parâmetro<br/>                   | <dl> <dt>TipAutoComplete. h (também requer PenInputPanel \_ i. c)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>TipAutoComplete.h (também requer Peninputpanel \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Tiptsf.dll</dt> </dl>                                           |
 
 
@@ -86,7 +86,7 @@ Esse método pode retornar um desses valores.
 
 <dl> <dt>
 
-[**Interface ITipAutocompleteClient**](itipautocompleteclient.md)
+[**ITipAutocompleteClient Interface**](itipautocompleteclient.md)
 </dt> <dt>
 
 [Referência do painel de entrada de texto](text-input-panel-reference.md)

@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Pdh.dll
-ms.openlocfilehash: bef484846507bf68d8ccfc0ad3ea10a250b83133
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6471fe3baee14fa1853810b66a804974b05ca84d0db9bc4e7dd805085ad5c0c4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828388"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119775546"
 ---
 # <a name="pdhvbcreatecounterpathlist-function"></a>Função PdhVbCreateCounterPathList
 
@@ -60,7 +60,7 @@ Variável de cadeia de caracteres que contém o texto que será exibido na barra
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 A função retorna o número de caminhos do contador que o usuário selecionou.
 
@@ -70,8 +70,8 @@ A função retorna o número de caminhos do contador que o usuário selecionou.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                               |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                               |
 | Biblioteca<br/>                  | <dl> <dt>PDH. lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Pdh.dll</dt> </dl> |
 

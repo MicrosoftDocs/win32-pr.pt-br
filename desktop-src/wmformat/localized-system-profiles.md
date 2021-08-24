@@ -3,26 +3,26 @@ title: Perfis de sistema localizados
 description: Perfis de sistema localizados
 ms.assetid: 2c218ab4-ecdb-414c-aa42-b71a42e340e5
 keywords:
-- SDK do Windows Media Format, perfis do sistema
+- Windows SDK de formato de mídia, perfis de sistema
 - ASF (Advanced Systems Format), perfis de sistema
 - ASF (formato de sistemas avançados), perfis de sistema
-- SDK do Windows Media Format, perfis de sistema localizados
+- Windows SDK do formato de mídia, perfis de sistema localizados
 - ASF (Advanced Systems Format), perfis de sistema localizados
 - ASF (formato de sistemas avançados), perfis de sistema localizados
 - perfis de sistema, localizados
 - perfis de sistema localizados, lista de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8aaeecdf1d1d62d78df18e0ac1c5bffbf39f9778
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: dbe3ca0abbe0e5b92645f6adaa1f6ebfdc44d52064d6fb8e1389420d19651b7c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104007068"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119707706"
 ---
 # <a name="localized-system-profiles"></a>Perfis de sistema localizados
 
-A tabela a seguir lista os arquivos de perfil do sistema localizados incluídos no Windows Media Format SDK e os idiomas associados a cada um. Esses arquivos são instalados na \[ pasta SDKRoot \] \\ WMSDK \\ WMFSDK9 \\ LocalizedProfiles. Para acessar um arquivo específico com os métodos **IWMProfileManagerLanguage** , você deve movê-lo para o diretório raiz do sistema junto com os arquivos de perfil do sistema padrão.
+a tabela a seguir lista os arquivos de perfil do sistema localizados incluídos com o SDK do formato de mídia Windows e os idiomas associados a cada um. Esses arquivos são instalados na \[ pasta SDKRoot \] \\ WMSDK \\ WMFSDK9 \\ LocalizedProfiles. Para acessar um arquivo específico com os métodos **IWMProfileManagerLanguage** , você deve movê-lo para o diretório raiz do sistema junto com os arquivos de perfil do sistema padrão.
 
 
 
@@ -56,7 +56,7 @@ A tabela a seguir lista os arquivos de perfil do sistema localizados incluídos 
 
 
 
- 
+ 
 
 Você pode definir o idioma para o objeto do Gerenciador de perfis chamando o método [**IWMProfileManagerLanguage:: SetUserLanguageID**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmprofilemanagerlanguage-setuserlanguageid) . Para a maioria dos idiomas, apenas o identificador de idioma primário no LANGid é examinado. As exceções são para os idiomas chinês e Português, em que o identificador de idioma secundário também é usado. A tabela a seguir mostra como criar um LANGid para especificar no método **SetUserLanguageID** .
 
@@ -71,7 +71,7 @@ Você pode definir o idioma para o objeto do Gerenciador de perfis chamando o m�
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -83,9 +83,9 @@ Você pode definir o idioma para o objeto do Gerenciador de perfis chamando o m�
 [**Perfis de sistema**](system-profiles.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

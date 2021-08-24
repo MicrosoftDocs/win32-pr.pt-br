@@ -1,7 +1,7 @@
 ---
-description: Propriedade LocationDisp. CivicAddressReportFactory. DesiredAccuracy-o valor de precisão desejado atual.
+description: Propriedade LocationDisp.CivicAddressReportFactory.DesiredAccuracy – o valor de precisão desejada atual.
 ms.assetid: 296164cf-a8ed-4277-bb4c-83ac09e63291
-title: Propriedade LocationDisp. CivicAddressReportFactory. DesiredAccuracy
+title: Propriedade LocationDisp.CivicAddressReportFactory.DesiredAccuracy
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,22 +12,22 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 3a18a363c2f24e9b17e16064b7375a4f075a1a8e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ca2d4f4a7be4afa800cfe81b5df7396be579197e7f997019f4ece3a39598c975
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108110914"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119693126"
 ---
-# <a name="locationdispcivicaddressreportfactorydesiredaccuracy-property"></a>Propriedade LocationDisp. CivicAddressReportFactory. DesiredAccuracy
+# <a name="locationdispcivicaddressreportfactorydesiredaccuracy-property"></a>Propriedade LocationDisp.CivicAddressReportFactory.DesiredAccuracy
 
-\[O modelo de objeto de API de localização está disponível para uso nos sistemas operacionais especificados na seção requisitos. Ele poderá ser alterado ou ficar indisponível em versões subsequentes. Em vez disso, para acessar o local de um site, use a [API de localização geográfica do W3C](/previous-versions/windows/internet-explorer/ie-developer/samples/gg589513(v=vs.85)). Para acessar o local de um aplicativo de área de trabalho, use a API [**Windows. Devices. geolocalização**](/uwp/api/Windows.Devices.Geolocation) .\]
+\[O modelo de objeto da API de Localização está disponível para uso nos sistemas operacionais especificados na seção Requisitos. Ele poderá ser alterado ou ficar indisponível em versões subsequentes. Em vez disso, para acessar o local de um site, use a [API de Geolocalização do W3C](/previous-versions/windows/internet-explorer/ie-developer/samples/gg589513(v=vs.85)). Para acessar o local de um aplicativo da área de trabalho, use o [**Windows. Devices.Geolocation**](/uwp/api/Windows.Devices.Geolocation) API.\]
 
-O valor de precisão desejado atual.
+O valor de precisão desejada atual.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```JScript
@@ -39,7 +39,7 @@ LocationDisp.CivicAddressReportFactory.DesiredAccuracy = DesiredAccuracy
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Esta propriedade é um **ULONG** de leitura/gravação.
+Essa propriedade é um ULONG de **leitura/gravação.**
 
 
 
@@ -54,7 +54,7 @@ Esta propriedade é um **ULONG** de leitura/gravação.
 
 ## <a name="remarks"></a>Comentários
 
-Esse valor é uma solicitação para o provedor de localização. O provedor de localização não é necessário para fornecer a precisão solicitada. Leia o valor dessa propriedade para descobrir a configuração de precisão real.
+Esse valor é uma solicitação para o provedor de localização. O provedor de localização não é necessário para fornecer a precisão solicitada. Leia o valor dessa propriedade para descobrir a configuração de precisão verdadeira.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -62,7 +62,7 @@ Esse valor é uma solicitação para o provedor de localização. O provedor de 
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                  |
 
 

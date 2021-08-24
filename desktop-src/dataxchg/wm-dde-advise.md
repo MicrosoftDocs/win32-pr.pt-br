@@ -1,9 +1,9 @@
 ---
 title: Mensagem de WM_DDE_ADVISE (DDE. h)
-description: Um aplicativo cliente troca dinâmica de dados (DDE) posta a mensagem de aviso de DDE do WM \_ \_ em um aplicativo de servidor DDE para solicitar que o servidor forneça uma atualização para um item de dados sempre que o item for alterado.
+description: um aplicativo cliente troca dinâmica de dados (DDE) posta a mensagem de aviso de dde do WM \_ \_ em um aplicativo de servidor DDE para solicitar que o servidor forneça uma atualização para um item de dados sempre que o item for alterado.
 ms.assetid: b00db740-36a7-4487-abbf-d74b12f5212a
 keywords:
-- Troca de dados de mensagem WM_DDE_ADVISE
+- WM_DDE_ADVISE Exchange de dados da mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 832c6991169b71955c0ab21b59d2b55b0b54fc9a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c651144b4f09cf53f07c0f1860625cab8277e5c8a9532ee864b9ec1b1c927323
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085482"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119636216"
 ---
 # <a name="wm_dde_advise-message"></a>Mensagem de aviso de \_ DDE do WM \_
 
-Um aplicativo cliente troca dinâmica de dados (DDE) posta a mensagem de **\_ \_ aviso de DDE do WM** em um aplicativo de servidor DDE para solicitar que o servidor forneça uma atualização para um item de dados sempre que o item for alterado.
+um aplicativo cliente troca dinâmica de dados (DDE) posta a mensagem de **\_ \_ aviso de dde do WM** em um aplicativo de servidor DDE para solicitar que o servidor forneça uma atualização para um item de dados sempre que o item for alterado.
 
 Para postar essa mensagem, chame a função [**CreateMessage**](/windows/desktop/api/winuser/nf-winuser-postmessagea) com os parâmetros a seguir.
 
@@ -84,7 +84,7 @@ O servidor deve criar ou reutilizar o parâmetro de *lParam* [**\_ DDE \_ ACK do
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                           |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                 |
-| Cabeçalho<br/>                   | <dl> <dt>DDE. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Dde. h (incluir Windows. h)</dt> </dl> |
 
 
 

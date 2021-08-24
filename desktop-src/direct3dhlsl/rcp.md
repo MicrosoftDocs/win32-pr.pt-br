@@ -1,9 +1,9 @@
 ---
 title: rcp
-description: Calcula um recíproco rápido, aproximado e por componente.
+description: Calcula um recíproco rápido, aproximado por componente.
 ms.assetid: c8d451e4-717e-45b3-a0fe-da55feb8f443
 keywords:
-- HLSL de RCP
+- rcp HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,79 +13,79 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2a857c897def08f31e18ef19466daa2b4584740a
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: eb66fd2edf543dfb8beaf23dd2105925d15d169ee1b134019fb54da8fdf889e3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641323"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119672216"
 ---
 # <a name="rcp"></a>rcp
 
-Calcula um recíproco rápido, aproximado e por componente.
+Calcula um recíproco rápido, aproximado por componente.
 
 
 
-| *RET* RCP (*x*) |
+| *ret* rcp(*x*) |
 |----------------|
 
 
 
- 
+ 
 
 ## <a name="parameters"></a>Parâmetros
 
 <dl> <dt>
 
-<span id="x"></span><span id="X"></span>*w.x.y.*
+<span id="x"></span><span id="X"></span>*X*
 </dt> <dd>
 
-\[no \] valor de entrada.
+\[em \] O valor de entrada.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor Retornado
 
-O recíproco do parâmetro *x* .
+O recíproco do *parâmetro x.*
 
 ## <a name="type-description"></a>Descrição do tipo
 
 
 
-| Name  | [**Tipo de modelo**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md)                      | Tamanho                           |
+| Nome  | [**Tipo de modelo**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md)                      | Tamanho                           |
 |-------|----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|--------------------------------|
-| *x*   | [**escalar**](dx-graphics-hlsl-intrinsic-functions.md), **vetor** ou **matriz** | [**float**](/windows/desktop/WinProg/windows-data-types) ou [ **Double**](/windows/desktop/WinProg/windows-data-types) | any                            |
-| *RET* | igual ao *x* de entrada                                                                                              | [**float**](/windows/desktop/WinProg/windows-data-types) ou [ **Double**](/windows/desktop/WinProg/windows-data-types) | mesmas dimensões como entrada *x* |
+| *x*   | [**escalar,**](dx-graphics-hlsl-intrinsic-functions.md) **vetor** ou **matriz** | [**float**](/windows/desktop/WinProg/windows-data-types) ou [ **double**](/windows/desktop/WinProg/windows-data-types) | any                            |
+| *Ret* | mesmo que a entrada *x*                                                                                              | [**float**](/windows/desktop/WinProg/windows-data-types) ou [ **double**](/windows/desktop/WinProg/windows-data-types) | mesmas dimensões que a entrada *x* |
 
 
 
- 
+ 
 
-## <a name="minimum-shader-model"></a>Modelo de sombreamento mínimo
+## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
 
-Essa função tem suporte nos seguintes modelos de sombreador.
+Essa função tem suporte nos modelos de sombreador a seguir.
 
 
 
 | Modelo de Sombreador                                                                | Com suporte |
 |-----------------------------------------------------------------------------|-----------|
-| [Modelo](d3d11-graphics-reference-sm5.md) de sombreador 5 e modelos de sombreador mais altos | sim       |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md) e modelos de sombreador superior | sim       |
 
 
 
- 
+ 
 
 Essa função tem suporte nos seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Confira também
 
@@ -97,6 +97,6 @@ Essa função tem suporte nos seguintes tipos de sombreadores:
 [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

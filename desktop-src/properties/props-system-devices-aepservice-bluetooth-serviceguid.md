@@ -1,19 +1,19 @@
 ---
-description: Saiba mais sobre o GUID do serviço Bluetooth. Esta página de referência descreve a propriedade System. Devices. AepService. Bluetooth. perguid.
+description: saiba mais sobre o GUID do serviço de Bluetooth. Esta página de referência descreve o System. Devices. AepService. Bluetooth. Propriedade do perguid.
 ms.assetid: b623c597-3cf3-4c46-a1df-3a15425a41c6
-title: System. Devices. AepService. Bluetooth. perguid
+title: System. Devices. AepService. Bluetooth. Próprio GUID
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b1f71d58b9661bdbbb7a531d6ce5d1364f79e19a
-ms.sourcegitcommit: d0eb44d0a95f5e5efbfec3d3e9c143f5cba25bc3
+ms.openlocfilehash: fb0f3be7b9fec56fc7830f981e64f8a25f84463400d1ac5d3cf800405f8199cb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112262558"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119775806"
 ---
-# <a name="systemdevicesaepservicebluetoothserviceguid"></a>System. Devices. AepService. Bluetooth. perguid
+# <a name="systemdevicesaepservicebluetoothserviceguid"></a>System. Devices. AepService. Bluetooth. Próprio GUID
 
-GUID do serviço Bluetooth.
+GUID de serviço Bluetooth.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607"></a>Windows 10, versão 1703, Windows 10, versão 1607
 

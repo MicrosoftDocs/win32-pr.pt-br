@@ -4,12 +4,12 @@ ms.assetid: 6102593C-C6D5-4BDB-A0EF-067AF91DE00B
 title: Visão geral dos metadados do evento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c16853ef2639fd560f5b5da30447556119ec877
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 931b8adbdb22cdbf2e0806e2d69c367e64ad92926390825a48a2fa51d50605ed
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104460970"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119755056"
 ---
 # <a name="event-metadata-overview"></a>Visão geral dos metadados do evento
 

@@ -17,16 +17,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f1ece3790bf5a6a6ac51310d04661366bbe9e2a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f5e54b9581bfcc38936d253f92c39693394891956c407a6e44d4e2440b8ef905
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009252"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119574706"
 ---
 # <a name="mdm_policy_result01_localpoliciessecurityoptions02-class"></a>\_Classe MDM \_ Result01 \_ LocalPoliciesSecurityOptions02
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
 A \_ classe MDM Policy \_ Result01 \_ LocalPoliciesSecurityOptions02 representa as opções de segurança de políticas locais.
 
@@ -398,95 +398,95 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
 
-[BehaviorOfTheElevationPromptForStandardUsers de UserAccountControl \_](/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-useraccountcontrol-behavioroftheelevationpromptforstandardusers)
+[UserAccountControl \_ BehaviorOfTheElevationPromptForStandardUsers](/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-useraccountcontrol-behavioroftheelevationpromptforstandardusers)
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
 
-[DetectApplicationInstallationsAndPromptForElevation de UserAccountControl \_](/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-useraccountcontrol-detectapplicationinstallationsandpromptforelevation)
+[UserAccountControl \_ DetectApplicationInstallationsAndPromptForElevation](/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-useraccountcontrol-detectapplicationinstallationsandpromptforelevation)
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
 
-[OnlyElevateExecutableFilesThatAreSignedAndValidated de UserAccountControl \_](/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-useraccountcontrol-onlyelevateexecutablefilesthataresignedandvalidated)
+[UserAccountControl \_ OnlyElevateExecutableFilesThatAreSignedAndValidated](/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-useraccountcontrol-onlyelevateexecutablefilesthataresignedandvalidated)
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
 
-[OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations de UserAccountControl \_](/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-useraccountcontrol-onlyelevateuiaccessapplicationsthatareinstalledinsecurelocations)
+[UserAccountControl \_ OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations](/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-useraccountcontrol-onlyelevateuiaccessapplicationsthatareinstalledinsecurelocations)
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
 
-[RunAllAdministratorsInAdminApprovalMode de UserAccountControl \_](/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-useraccountcontrol-runalladministratorsinadminapprovalmode)
+[UserAccountControl \_ RunAllAdministratorsInAdminApprovalMode](/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-useraccountcontrol-runalladministratorsinadminapprovalmode)
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
 
-[SwitchToTheSecureDesktopWhenPromptingForElevation de UserAccountControl \_](/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-useraccountcontrol-switchtothesecuredesktopwhenpromptingforelevation)
+[UserAccountControl \_ SwitchToTheSecureDesktopWhenPromptingForElevation](/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-useraccountcontrol-switchtothesecuredesktopwhenpromptingforelevation)
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
 
-[UseAdminApprovalMode de UserAccountControl \_](/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-useraccountcontrol-useadminapprovalmode)
+[UserAccountControl \_ UseAdminApprovalMode](/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-useraccountcontrol-useadminapprovalmode)
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
 
-[VirtualizeFileAndRegistryWriteFailuresToPerUserLocations de UserAccountControl \_](/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-useraccountcontrol-virtualizefileandregistrywritefailurestoperuserlocations)
+[UserAccountControl \_ VirtualizeFileAndRegistryWriteFailuresToPerUserLocations](/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-useraccountcontrol-virtualizefileandregistrywritefailurestoperuserlocations)
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> </dl>
@@ -497,10 +497,10 @@ Tipo de acesso: leitura/gravação
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                      |
-| Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Namespace<br/>                | \\Cimv2 \\ mdm \\ dmmap raiz<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 

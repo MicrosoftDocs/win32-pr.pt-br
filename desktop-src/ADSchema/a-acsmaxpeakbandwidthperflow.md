@@ -1,10 +1,10 @@
 ---
-title: ACS-Max-pico-largura de banda-atributo por fluxo
+title: ACS – atributo Max-pico-largura de banda por Flow
 description: A largura de banda de pico que qualquer fluxo pode consumir.
 ms.assetid: 7506a90f-d968-4b69-a8fe-a1515418a1d4
 ms.tgt_platform: multiple
 keywords:
-- ACS-Max-pico-largura de banda-esquema de atributos por fluxo do AD
+- ACS-Max-pico-largura de banda por Flow esquema do AD do atributo
 - Esquema de AD do atributo aCSMaxPeakBandwidthPerFlow
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 828ac63dc64dad00edf26922e554c71b9be79227
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: bcb9f06ea1f8b71229bcc379805771544e75bda1736a9284b4cbe3c3aa904efc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104009812"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119753936"
 ---
-# <a name="acs-max-peak-bandwidth-per-flow-attribute"></a>ACS-Max-pico-largura de banda-atributo por fluxo
+# <a name="acs-max-peak-bandwidth-per-flow-attribute"></a>ACS – atributo Max-pico-largura de banda por Flow
 
 A largura de banda de pico que qualquer fluxo pode consumir.
 
@@ -29,7 +29,7 @@ A largura de banda de pico que qualquer fluxo pode consumir.
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | ACS-Max-pico-largura de banda por fluxo      |
+| CN                | ACS-Max-pico-largura de banda por Flow      |
 | LDAP-Display-Name | aCSMaxPeakBandwidthPerFlow           |
 | Tamanho              | 8 bytes                              |
 | Privilégio de atualização  | \-                                   |
@@ -58,7 +58,7 @@ A largura de banda de pico que qualquer fluxo pode consumir.
 | ID do link                | \-                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                      |
 | System-Only            | Falso                                                                                                                                                   |
-| É de valor único       | True                                                                                                                                                    |
+| É de valor único       | Verdadeiro                                                                                                                                                    |
 | É indexado             | Falso                                                                                                                                                   |
 | No catálogo global      | Falso                                                                                                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                            |
@@ -79,7 +79,7 @@ A largura de banda de pico que qualquer fluxo pode consumir.
 | ID do link                | \-                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                      |
 | System-Only            | Falso                                                                                                                                                   |
-| É de valor único       | True                                                                                                                                                    |
+| É de valor único       | Verdadeiro                                                                                                                                                    |
 | É indexado             | Falso                                                                                                                                                   |
 | No catálogo global      | Falso                                                                                                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                            |
@@ -100,7 +100,7 @@ A largura de banda de pico que qualquer fluxo pode consumir.
 | ID do link                | \-                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                      |
 | System-Only            | Falso                                                                                                                                                   |
-| É de valor único       | True                                                                                                                                                    |
+| É de valor único       | Verdadeiro                                                                                                                                                    |
 | É indexado             | Falso                                                                                                                                                   |
 | No catálogo global      | Falso                                                                                                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                            |
@@ -121,7 +121,7 @@ A largura de banda de pico que qualquer fluxo pode consumir.
 | ID do link                | \-                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                      |
 | System-Only            | Falso                                                                                                                                                   |
-| É de valor único       | True                                                                                                                                                    |
+| É de valor único       | Verdadeiro                                                                                                                                                    |
 | É indexado             | Falso                                                                                                                                                   |
 | No catálogo global      | Falso                                                                                                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                            |
@@ -142,7 +142,7 @@ A largura de banda de pico que qualquer fluxo pode consumir.
 | ID do link                | \-                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                      |
 | System-Only            | Falso                                                                                                                                                   |
-| É de valor único       | True                                                                                                                                                    |
+| É de valor único       | Verdadeiro                                                                                                                                                    |
 | É indexado             | Falso                                                                                                                                                   |
 | No catálogo global      | Falso                                                                                                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                            |
@@ -163,7 +163,7 @@ A largura de banda de pico que qualquer fluxo pode consumir.
 | ID do link                | \-                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                      |
 | System-Only            | Falso                                                                                                                                                   |
-| É de valor único       | True                                                                                                                                                    |
+| É de valor único       | Verdadeiro                                                                                                                                                    |
 | É indexado             | Falso                                                                                                                                                   |
 | No catálogo global      | Falso                                                                                                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                            |

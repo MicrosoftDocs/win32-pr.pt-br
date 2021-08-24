@@ -1,5 +1,5 @@
 ---
-description: Determina se o Terminal Server está no modo de instalação (somente no Windows Terminal Server 4,0).
+description: determina se o Terminal Server está no modo de instalação (somente no Terminal do Windows Server 4,0).
 ms.assetid: f6cb7971-d4f5-49ca-938a-9c280028764a
 title: Função CtxGetIniMapping
 ms.topic: reference
@@ -13,18 +13,18 @@ api_type:
 - DllExport
 api_location:
 - Kernel32.dll
-ms.openlocfilehash: 17093303cf0ea74e7efc6a3070c48660083bc491
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7085e595b1f9c1fb8ea36e59aae4a90c816b508c92bcd33a99fe5051f2b722d9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749737"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119654206"
 ---
 # <a name="ctxgetinimapping-function"></a>Função CtxGetIniMapping
 
 \[Essa função não tem suporte e não deve ser usada. Ele pode mudar ou desaparecer completamente sem aviso prévio. Em vez disso, use **VerifyVersionInfo**.\]
 
-Determina se o Terminal Server está no modo de instalação (somente no Windows Terminal Server 4,0).
+determina se o Terminal Server está no modo de instalação (somente no Terminal do Windows Server 4,0).
 
 ## <a name="syntax"></a>Sintaxe
 

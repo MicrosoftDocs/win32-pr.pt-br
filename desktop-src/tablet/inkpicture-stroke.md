@@ -4,12 +4,12 @@ ms.assetid: 2829b65a-6120-402e-91e3-5587d1f456f9
 title: Evento InkPicture. Stroke (Msinkaut. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5b181c8dc46348c76bd9c2d015d4a97c1f6911ff
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 706406ee4f29106fade395a86e9786dd76dec7f51ff2dd77047c2ae395088f89
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108113694"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119712496"
 ---
 # <a name="inkpicturestroke-event"></a>Evento InkPicture. Stroke
 
@@ -74,14 +74,14 @@ O evento **Stroke** ocorre no modo de seleção ou apagamento, não apenas ao in
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/>                                                       |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                           |
-| parâmetro<br/>                   | <dl> <dt>Msinkaut. h (também requer Msinkaut \_ i. c)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Msinkaut. h (também requer Msinkaut \_ i. c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

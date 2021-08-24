@@ -25,12 +25,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: fdb12fac8b2b902f21258fd4c7cfe9846d0456eb
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1bfa7b994bfe0950ccc7a97b19fbd705838950d7461712b114a16f62e7ad0aec
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105954"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119754756"
 ---
 # <a name="systemconfig_v0_phydisk-class"></a>\_Classe SystemConfig V0 \_ PhyDisk
 
@@ -287,11 +287,11 @@ True se o cache de gravação estiver habilitado.
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/> |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

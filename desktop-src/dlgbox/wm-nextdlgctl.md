@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fc6b70dbaf010b839a0069513f97de8fdab1c0a1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1a14de889e614aaba28757716326bcd1cf843aed64fe2dc58ca86430d65db628
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499563"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119606216"
 ---
 # <a name="wm_nextdlgctl-message"></a>Mensagem do WM \_ NEXTDLGCTL
 
@@ -50,7 +50,7 @@ A palavra de ordem inferior indica como o sistema usa *wParam*. Se a palavra de 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Um aplicativo deve retornar zero se ele processar essa mensagem.
 
@@ -68,7 +68,7 @@ Não use a função [**SendMessage**](/windows/desktop/api/winuser/nf-winuser-se
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

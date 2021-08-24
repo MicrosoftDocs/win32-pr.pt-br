@@ -4,12 +4,12 @@ description: Depois que um cliente é registrado, o cliente pode obter uma lista
 ms.assetid: d94de573-7c1e-4179-a41f-5836d2c5d44a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ac92ccf89336d3fbca378209b9e79877d9b426a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 5d1d67a810806c1bc29f8f18c4cdea9f3a36e5b5a95922e8f66a943a99923ac5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005569"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119674156"
 ---
 # <a name="enumerating-registered-entities"></a>Enumerando entidades registradas
 
@@ -21,9 +21,9 @@ Se o cliente do Gerenciador de tabela de roteamento forneceu uma função de ret
 
 Para obter um exemplo de código que mostra como usar essas funções, consulte [enumerar as entidades registradas](enumerate-the-registered-entities.md) e [usar o retorno de chamada de notificação de evento](use-the-event-notification-callback.md).
 
- 
+ 
 
- 
+ 
 
 
 

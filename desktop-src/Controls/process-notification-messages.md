@@ -4,12 +4,12 @@ description: Uma folha de propriedades envia \_ mensagens de notificação do WM
 ms.assetid: 82768E43-97BA-451A-9373-D5B8FD06ABED
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e2c544910e44e0c865e738427285d7488147b9c1
-ms.sourcegitcommit: f0ca63c18dc52c357d3398af7be766d2bdd40be7
+ms.openlocfilehash: 9baf0c58fdbcbe5378dd46e828a2d29a7c91832174c9564660a82c5ab70997a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "103640343"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119575476"
 ---
 # <a name="how-to-process-notification-messages"></a>Como processar mensagens de notificação
 
@@ -21,12 +21,12 @@ O parâmetro *lParam* da mensagem é o endereço de uma estrutura [**NMHDR**](/w
 
 ### <a name="technologies"></a>Tecnologias
 
--   [Controles do Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
 -   C/C++
--   Programação da interface do usuário do Windows
+-   Windows Programação de interface do usuário
 
 ## <a name="instructions"></a>Instruções
 
@@ -67,12 +67,12 @@ case WM_NOTIFY:
 [Usando folhas de propriedades](using-property-sheets.md)
 </dt> <dt>
 
-[Demonstração de controles comuns do Windows (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
+[Windows de demonstração de controles comuns (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

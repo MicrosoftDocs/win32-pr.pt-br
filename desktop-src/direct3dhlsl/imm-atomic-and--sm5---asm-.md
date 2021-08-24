@@ -4,12 +4,12 @@ description: De e/bit a imediata atômica para memória. Retorna o valor na mem�
 ms.assetid: DA2A70C3-57BD-41F0-865C-235AA4DF1A52
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1567d3b4eb16a46b1be9badb8db7b39cc03b4b32
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 53992096dccf4d4f0c4e8e98cbafd08f65ce852e28389c8c725f7f2594c7ec4a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104967117"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119672796"
 ---
 # <a name="imm_atomic_and-sm5---asm"></a>IMM \_ Atomic \_ e (SM5-ASM)
 
@@ -61,7 +61,7 @@ Essa instrução se aplica aos seguintes estágios de sombreador:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | X     | X       |
 
@@ -73,7 +73,7 @@ Como UAVs estão disponíveis em todos os estágios do sombreador para o Direct3
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 

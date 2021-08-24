@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: ca3cf26d54d37ab3e3a2141ba7c3e4ea9fdd533f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 69ecdcbae7c7efc7002caae3bd8b8679d535c66e4b999512b10fe0d39a5d4754
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103663980"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119634646"
 ---
 # <a name="d3dx10createshaderresourceviewfrommemory-function"></a>Função D3DX10CreateShaderResourceViewFromMemory
 
@@ -109,7 +109,7 @@ Um ponteiro para o valor de retorno. Pode ser **NULL**. Se *pPump* não for **NU
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

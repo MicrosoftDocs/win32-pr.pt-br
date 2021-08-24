@@ -1,9 +1,9 @@
 ---
-title: Propriedade Command. TooltipTitle
+title: Propriedade Command.TooltipTitle
 description: Representa um título de dica de ferramenta.
 ms.assetid: b06a7a6a-fbdd-464b-b804-e62912d6e176
 keywords:
-- Faixa de das propriedades do Windows de Propriedade Command. TooltipTitle
+- Propriedade Command.TooltipTitle Windows Faixa de Opções
 topic_type:
 - apiref
 api_name:
@@ -12,14 +12,14 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c60f4ddea77fbf88a15d5d27e90ca5660bc0edb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9f9050c97980b0ffa2c2c4828a8ac1d85dfbd1a40ed8330d144db2c0d3802524
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455780"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119710546"
 ---
-# <a name="commandtooltiptitle-property"></a>Propriedade Command. TooltipTitle
+# <a name="commandtooltiptitle-property"></a>Propriedade Command.TooltipTitle
 
 Representa um título de dica de ferramenta.
 
@@ -41,7 +41,7 @@ Não há atributos.
 
 | Elemento                                                   | Descrição                                   |
 |-----------------------------------------------------------|-----------------------------------------------|
-| [**Strings**](windowsribbon-element-string.md)<br/> | Pode ocorrer no máximo uma vez<br/> <br/> |
+| [**String**](windowsribbon-element-string.md)<br/> | Pode ocorrer no máximo uma vez<br/> <br/> |
 
 
 
@@ -59,29 +59,29 @@ Não há atributos.
 
 Opcional.
 
-Pode ocorrer no máximo uma vez para cada [**comando**](windowsribbon-element-command.md).
+Pode ocorrer no máximo uma vez para cada [**Comando**](windowsribbon-element-command.md).
 
-**Command. TooltipTitle** pode conter um valor do tipo *xs: String* restrito a qualquer sequência de caracteres, incluindo espaços em branco e caracteres de quebra de linha.
+**Command.TooltipTitle** pode conter um valor do tipo *xs:string* restrito a qualquer sequência de caracteres, incluindo espaços em branco e caracteres de quebra de linha.
 
 > [!Note]  
-> Use a referência de caractere XML UCS (conjunto de caracteres universal) `&#xA;` para especificar uma quebra de linha.
+> Use a referência de caractere XML do Conjunto de Caracteres Universal (UCS) `&#xA;` para especificar uma quebra de linha.
 
  
 
-O comprimento máximo é não associado.
+O comprimento máximo não é desaconsudido.
 
-Se nenhum valor for fornecido para **Command. TooltipTitle**, o elemento filho da [**cadeia de caracteres**](windowsribbon-element-string.md) será necessário.
+Se nenhum valor for fornecido para **Command.TooltipTitle,** o elemento [**filho String**](windowsribbon-element-string.md) será necessário.
 
 > [!Note]  
-> Se **Command. TooltipTitle** contiver um valor e um elemento filho de [**cadeia**](windowsribbon-element-string.md) de caracteres, a **cadeia de caracteres** terá precedência.
+> Se **Command.TooltipTitle** contiver um valor e um elemento [**filho String,**](windowsribbon-element-string.md) String **tem** precedência.
 
  
 
-O **comando. TooltipTitle** só dá suporte ao alinhamento à esquerda.
+**Command.TooltipTitle dá** suporte apenas ao alinhamento à esquerda.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir demonstra a marcação para um elemento [**Command**](windowsribbon-element-command.md) com uma declaração **Command. TooltipTitle** .
+O exemplo a seguir demonstra a marcação para um [**elemento Command**](windowsribbon-element-command.md) com uma **declaração Command.TooltipTitle.**
 
 
 ```XML
@@ -111,8 +111,8 @@ O exemplo a seguir demonstra a marcação para um elemento [**Command**](windows
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>              |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/> |
 
 
 
@@ -120,7 +120,7 @@ O exemplo a seguir demonstra a marcação para um elemento [**Command**](windows
 
 <dl> <dt>
 
-[\_TooltipTitle PKEY \_ UI](windowsribbon-reference-properties-uipkey-tooltiptitle.md)
+[Dica de \_ ferramenta PKEY \_ da interface do usuário](windowsribbon-reference-properties-uipkey-tooltiptitle.md)
 </dt> </dl>
 
  

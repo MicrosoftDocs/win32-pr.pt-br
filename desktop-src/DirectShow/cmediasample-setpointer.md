@@ -1,7 +1,7 @@
 ---
 description: O método SetPointer define o ponteiro para o buffer de memória.
 ms.assetid: 60627600-c982-462e-b540-327a58e57615
-title: Método CMediaSample. setpointr (Amfilter. h)
+title: Método CMediaSample.SetPointer (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 67d9fc5d260cc627919a458593328c36f0de9a94
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: af6747eb9ed39a973d795d8701fd9d7afd1b88e9d0b0db577de6a8e963b840bd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105779553"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119634346"
 ---
-# <a name="cmediasamplesetpointer-method"></a>Método CMediaSample. setpointr
+# <a name="cmediasamplesetpointer-method"></a>Método CMediaSample.SetPointer
 
 O `SetPointer` método define o ponteiro para o buffer de memória.
 
@@ -57,15 +57,15 @@ Comprimento do buffer, em bytes.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna S \_ OK.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método permite que o alocador defina um novo ponteiro para o exemplo.
+Esse método permite que o alocador de definir um novo ponteiro para o exemplo.
 
-Esse método não está disponível por meio da interface [**IMediaSample**](/windows/desktop/api/Strmif/nn-strmif-imediasample) . O objeto que cria o exemplo pode acessar esse método (por meio de **CMediaSample**), mas outros objetos não podem.
+Esse método não está disponível por meio da interface [**IMediaSample.**](/windows/desktop/api/Strmif/nn-strmif-imediasample) O objeto que cria o exemplo pode acessar esse método (por **meio de CMediaSample**), mas outros objetos não podem.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -73,8 +73,8 @@ Esse método não está disponível por meio da interface [**IMediaSample**](/wi
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amfilter.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

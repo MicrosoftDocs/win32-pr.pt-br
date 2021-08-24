@@ -16,12 +16,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7e46e94139a0c82e6c5b45f9397d76de8b4fdb43
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c6cf97975d583a99145e32482bc097ebd6ce3cc052e62560a34f7f78c1f88ae6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105772522"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119635676"
 ---
 # <a name="ienumbackgroundcopyfiles-interface"></a>Interface IEnumBackgroundCopyFiles
 
@@ -43,7 +43,7 @@ A interface **IEnumBackgroundCopyFiles** tem esses métodos.
 |:------------------------------------------------------|:------------------------------------------------------------------------------|
 | [**GetCount**](ienumbackgroundcopyfiles-getcount.md) | Recupera o número de itens na enumeração.<br/>                  |
 | [**Avançar**](ienumbackgroundcopyfiles-next.md)         | Recupera um número especificado de itens na sequência de enumeração.<br/> |
-| [**Redefinir**](ienumbackgroundcopyfiles-reset.md)       | Redefine a sequência de enumeração para o início.<br/>                  |
+| [**Definido**](ienumbackgroundcopyfiles-reset.md)       | Redefine a sequência de enumeração para o início.<br/>                  |
 | [**Ignorar**](ienumbackgroundcopyfiles-skip.md)         | Ignora um número especificado de itens na sequência de enumeração.<br/>     |
 
 
@@ -56,9 +56,9 @@ A interface **IEnumBackgroundCopyFiles** tem esses métodos.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10, versão 1709\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | Windows Server, \[ somente aplicativos da área de trabalho da versão 1709\]<br/>                                       |
-| parâmetro<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl>   |
+| Cliente mínimo com suporte<br/> | Windows 10, \[ somente aplicativos da área de trabalho da versão 1709\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows Servidor, versão 1709 \[ aplicativos da área de trabalho\]<br/>                                       |
+| Cabeçalho<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>DeliveryOptimization. idl</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Dosvc. lib</dt> </dl>                |
 | DLL<br/>                      | <dl> <dt>Dosvc.dll</dt> </dl>                |

@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - BEvtCol.exe
-ms.openlocfilehash: 44453f647d55f29a9a6cfc5622e29dcc88ad2446
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: ff71086703e409331e420fd064f73ff2406ec4e5167ea97da78b2afc498bf244
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104088886"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119579846"
 ---
 # <a name="checkpoint-method-of-the-control-class"></a>Método Checkpoint da classe Control
 
@@ -157,10 +157,10 @@ Sucesso
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                          |
+| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                                          |
 | Servidor mínimo com suporte<br/> | Windows Server 2016<br/>                                                                       |
-| Namespace<br/>                | Raiz \\ do Microsoft \\ Windows \\ BootEventCollector<br/>                                              |
-| parâmetro<br/>                   | <dl> <dt>Srrestoreptapi. h</dt> </dl>          |
+| Namespace<br/>                | raiz \\ do Microsoft \\ Windows \\ BootEventCollector<br/>                                              |
+| Cabeçalho<br/>                   | <dl> <dt>Srrestoreptapi. h</dt> </dl>          |
 | MOF<br/>                      | <dl> <dt>BootEventCollectorWMI. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>BEvtCol.exe</dt> </dl>               |
 
@@ -170,7 +170,7 @@ Sucesso
 
 <dl> <dt>
 
-[**Controlo**](control.md)
+[**Control**](control.md)
 </dt> </dl>
 
  

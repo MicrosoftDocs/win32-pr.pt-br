@@ -1,27 +1,27 @@
 ---
-description: As propriedades de Windows Installer são variáveis globais que o instalador usa durante uma instalação.
+description: Windows As propriedades do instalador são variáveis globais que o instalador usa durante uma instalação.
 ms.assetid: 1c59939b-de0f-4bf4-ab1f-4f1aa2488bfa
 title: Especificando propriedades
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9cd4294f35595e723491398172dc4c73337a1416
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8f538bb354ef793a54f3eb60ddfe7b75b2aa96310abdd8a7331813d887433816
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105752634"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119627796"
 ---
 # <a name="specifying-properties"></a>Especificando propriedades
 
-As propriedades de Windows Installer são variáveis globais que o instalador usa durante uma instalação. Consulte as seções em [Propriedades](properties.md). Se na seção [importando um banco de dados em branco](importing-a-blank-database.md) que você usou uisample.msi do SDK do Windows Installer, a [tabela de propriedades](property-table.md) em sua cópia do MNP2000.msi já contém muitas propriedades que são usadas pela interface do usuário. Nesta seção, você adiciona informações adicionais à tabela de propriedades específica à instalação do exemplo do bloco de notas. Consulte também o [grupo tabelas de informações do programa](program-information-tables-group.md).
+Windows As propriedades do instalador são variáveis globais que o instalador usa durante uma instalação. Consulte as seções em [Propriedades](properties.md). se na seção [importando um banco de dados em branco](importing-a-blank-database.md) que você usou uisample.msi do SDK do Windows Installer, a [tabela de propriedades](property-table.md) em sua cópia do MNP2000.msi já contém muitas propriedades que são usadas pela interface do usuário. nesta seção, você adiciona informações adicionais à tabela de propriedades específica à instalação do exemplo de Bloco de notas. Consulte também o [grupo tabelas de informações do programa](program-information-tables-group.md).
 
-Há cinco propriedades que são necessárias em todos os pacotes de instalação, e elas devem ser atualizadas para o exemplo do bloco de notas na [tabela de propriedades](property-table.md) de MNP2000.msi:
+há cinco propriedades que são necessárias em todos os pacotes de instalação, e elas devem ser atualizadas para o Bloco de notas exemplo na [tabela de propriedades](property-table.md) de MNP2000.msi:
 
 -   [**ProductCode**](productcode.md)
 -   [**ProductLanguage**](productlanguage.md)
 -   [**Manufacturer**](manufacturer.md)
 -   [**ProductVersion**](productversion.md)
--   [**ProductName**](productname.md)
+-   [**NomeDoProduto**](productname.md)
 
 Embora não seja exigido por todos os pacotes de instalação, os aplicativos que podem, no futuro, receber uma atualização também devem ter uma propriedade [**UpgradeCode**](upgradecode.md) . Consulte [preparando um aplicativo para atualizações importantes futuras](preparing-an-application-for-future-major-upgrades.md).
 
@@ -60,7 +60,7 @@ Use o editor de banco de dados para abrir MNP2000.msi e insira os dados a seguir
 | ErrorDialog                                      | ErrorDlg                                  |
 | ExclamationIcon                                  | exclamated                                  |
 | Falso                                            | 0                                         |
-| Iagree                                           | No                                        |
+| Iagree                                           | Não                                        |
 | InfoIcon                                         | informações                                      |
 | InstallerIcon                                    | insticon                                  |
 | [**INSTALLLEVEL**](installlevel.md)             | 3                                         |
@@ -70,7 +70,7 @@ Use o editor de banco de dados para abrir MNP2000.msi e insira os dados a seguir
 | [**ProductCode**](productcode.md)               | {18A9233C-0B34-4127-A966-C257386270BC}    |
 | [**ProductID**](productid.md)                   | nenhum                                      |
 | [**ProductLanguage**](productlanguage.md)       | 1046                                      |
-| [**ProductName**](productname.md)               | MNP2000                                   |
+| [**NomeDoProduto**](productname.md)               | MNP2000                                   |
 | [**ProductVersion**](productversion.md)         | 01.40.0000                                |
 | Progress1                                        | Instalando                                |
 | Progress2                                        | installs                                  |

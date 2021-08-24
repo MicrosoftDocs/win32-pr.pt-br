@@ -1,10 +1,10 @@
 ---
-title: Estrutura de RAS_PORT_0 (Rassapi. h)
-description: A \_ estrutura da porta 0 do RAS \_ contém informações que descrevem uma porta RAS.
+title: RAS_PORT_0 estrutura (Rassapi.h)
+description: A estrutura RAS \_ PORT \_ 0 contém informações que descrevem uma porta RAS.
 ms.assetid: 750fc705-0770-427b-b7d6-7876b8b9118a
 keywords:
-- RAS da estrutura de RAS_PORT_0
-- RAS de ponteiro de estrutura de PRAS_PORT_0
+- ras RAS_PORT_0 estrutura de RAS_PORT_0
+- PRAS_PORT_0 RAS do ponteiro de estrutura
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 80d66725415d86aea44138f23fb3748e3187820f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 67891ccd65aaa56fc41dd077ae46bd4bf61f816cdc02afeb65964886cbaf9562
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499409"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119673126"
 ---
-# <a name="ras_port_0-structure"></a>Estrutura da porta do RAS \_ \_ 0
+# <a name="ras_port_0-structure"></a>Estrutura RAS \_ PORT \_ 0
 
-\[Não há suporte para esta versão da estrutura de **\_ porta \_ 0 do RAS** a partir do Windows Vista. Em vez disso, use a [**porta do RAS \_ \_ 0**](/windows/desktop/api/Mprapi/ns-mprapi-ras_port_0) mais recente definida em mprapi. h.\]
+\[Esta versão da estrutura **RAS \_ PORT \_ 0** não tem suporte desde Windows Vista. Em vez disso, [**use a PORTA RAS \_ \_ 0**](/windows/desktop/api/Mprapi/ns-mprapi-ras_port_0) mais nova definida em mprapi.h.\]
 
-A estrutura da **\_ porta \_ 0 do RAS** contém informações que descrevem uma porta RAS.
+A **estrutura RAS PORT \_ \_ 0** contém informações que descrevem uma porta RAS.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -63,25 +63,25 @@ Uma cadeia de caracteres Unicode terminada em nulo que especifica o nome da port
 **wszDeviceType**
 </dt> <dd>
 
-Uma cadeia de caracteres Unicode terminada em nulo que especifica o tipo do dispositivo no qual a conexão foi feita, como modem ou ISDN. A lista de tipos de dispositivos que podem ser especificados nesse membro inclui todos os tipos de dispositivos instalados no servidor, incluindo dispositivos de terceiros.
+Uma cadeia de caracteres Unicode terminada em nulo que especifica o tipo do dispositivo no qual a conexão foi feita, como Modem ou ISDN. A lista de tipos de dispositivo que podem ser especificados neste membro inclui todos os tipos de dispositivo instalados no servidor, incluindo dispositivos de terceiros.
 
 </dd> <dt>
 
 **wszDeviceName**
 </dt> <dd>
 
-Uma cadeia de caracteres Unicode terminada em nulo que especifica o nome do dispositivo no qual a conexão foi feita, como "Hayes 9600" ou "PCIMACISDN1".
+Uma cadeia de caracteres Unicode terminada em nulo que especifica o nome do dispositivo no qual a conexão foi feita, como "Andy 9600" ou "PCIMACISDN1".
 
 </dd> <dt>
 
 **wszMediaName**
 </dt> <dd>
 
-Especifica uma cadeia de caracteres Unicode terminada em nulo que especifica o nome da mídia usada para a conexão, como *rasser* ou *RASTAPI*.
+Especifica uma cadeia de caracteres Unicode terminada em nulo que especifica o nome da mídia usada para a conexão, como *rasser* ou *rastapi.*
 
 </dd> <dt>
 
-**reservado**
+**Reservados**
 </dt> <dd>
 
 Reservado.
@@ -97,25 +97,25 @@ Especifica um conjunto de sinalizadores de bits que especificam a natureza da co
 
 | Valor                                                                                                                                                                        | Significado                                                                                                                                                                                                                                                                                                                                                                                    |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="GATEWAY_ACTIVE"></span><span id="gateway_active"></span><dl> <dt>**GATEWAY \_ ativo**</dt> </dl>             | Se esse sinalizador for definido, o gateway NetBIOS estará ativo no servidor.<br/>                                                                                                                                                                                                                                                                                                               |
-| <span id="MESSENGER_PRESENT"></span><span id="messenger_present"></span><dl> <dt>**MESSENGER \_ presente**</dt> </dl>    | Se esse sinalizador for definido, o serviço de mensageiro será executado no cliente remoto.<br/>                                                                                                                                                                                                                                                                                                     |
-| <span id="PORT_MULTILINKED"></span><span id="port_multilinked"></span><dl> <dt>**PORTA \_ MULTIlink**</dt> </dl>       | Se esse sinalizador for definido, a porta será vinculada com outras portas. Use essas informações para exibir o status da conexão como uma porta com conexões múltiplas. <br/> Para uma porta com múltiplas conexões, a estrutura de [**\_ \_ Estatísticas de porta de Ras**](ras-port-statistics-str.md) contém dois conjuntos de estatísticas: um para a porta sozinha e outro para as portas combinadas na conexão de vínculos múltiplos.<br/> |
-| <span id="PPP_CLIENT"></span><span id="ppp_client"></span><dl> <dt>**\_cliente PPP**</dt> </dl>                         | Se esse sinalizador estiver definido, o cliente remoto conectado usando o PPP. Se esse sinalizador não for definido, o cliente remoto será conectado usando o protocolo AMB.<br/>                                                                                                                                                                                                                                        |
-| <span id="REMOTE_LISTEN"></span><span id="remote_listen"></span><dl> <dt>**\_escuta remota**</dt> </dl>                | Se esse sinalizador for definido, o parâmetro RemoteListen do gateway NetBIOS será definido como 1 no servidor.<br/>                                                                                                                                                                                                                                                                               |
-| <span id="USER_AUTHENTICATED"></span><span id="user_authenticated"></span><dl> <dt>**USUÁRIO \_ autenticado**</dt> </dl> | Se esse sinalizador for definido, um cliente remoto será conectado ao servidor e o usuário foi autenticado. Marque esse sinalizador para garantir que um cliente esteja realmente conectado a uma porta.<br/>                                                                                                                                                                                                   |
+| <span id="GATEWAY_ACTIVE"></span><span id="gateway_active"></span><dl> <dt>**GATEWAY \_ ATIVO**</dt> </dl>             | Se esse sinalizador estiver definido, o gateway NetBIOS será ativo no servidor.<br/>                                                                                                                                                                                                                                                                                                               |
+| <span id="MESSENGER_PRESENT"></span><span id="messenger_present"></span><dl> <dt>**MESSENGER \_ PRESENTE**</dt> </dl>    | Se esse sinalizador estiver definido, o serviço messenger será executado no cliente remoto.<br/>                                                                                                                                                                                                                                                                                                     |
+| <span id="PORT_MULTILINKED"></span><span id="port_multilinked"></span><dl> <dt>**PORTA \_ MULTILINKED**</dt> </dl>       | Se esse sinalizador for definido, a porta será multilinkada com outras portas. Use essas informações para exibir o status da conexão como uma porta multilink. <br/> Para uma porta multilink, a estrutura [**RAS \_ PORT \_ STATISTICS**](ras-port-statistics-str.md) contém dois conjuntos de estatísticas: um para a porta sozinho e outro para as portas combinadas na conexão multilink.<br/> |
+| <span id="PPP_CLIENT"></span><span id="ppp_client"></span><dl> <dt>**CLIENTE \_ PPP**</dt> </dl>                         | Se esse sinalizador estiver definido, o cliente remoto será conectado usando PPP. Se esse sinalizador não estiver definido, o cliente remoto será conectado usando o protocolo AMB.<br/>                                                                                                                                                                                                                                        |
+| <span id="REMOTE_LISTEN"></span><span id="remote_listen"></span><dl> <dt>**REMOTE \_ LISTEN**</dt> </dl>                | Se esse sinalizador for definido, o parâmetro RemoteListen do gateway NetBIOS será definido como 1 no servidor.<br/>                                                                                                                                                                                                                                                                               |
+| <span id="USER_AUTHENTICATED"></span><span id="user_authenticated"></span><dl> <dt>**AUTENTICADO \_ PELO USUÁRIO**</dt> </dl> | Se esse sinalizador estiver definido, um cliente remoto será conectado ao servidor e o usuário será autenticado. Verifique esse sinalizador para garantir que um cliente esteja realmente conectado a uma porta.<br/>                                                                                                                                                                                                   |
 
 
 
  
 
-Se o MESSENGER \_ presente, o gateway \_ ativo e os \_ sinalizadores de escuta remota estiverem definidos, use o serviço mensageiro para enviar uma mensagem administrativa ao cliente remoto. Se \_ o Messenger presente e a \_ escuta remota estiverem definidos, mas o gateway \_ ativo não estiver, envie mensagens para o cliente somente do servidor RAS ao qual o cliente está conectado.
+Se os sinalizadores MESSENGER PRESENT, GATEWAY ACTIVE e REMOTE LISTEN estão definidos, use o serviço messenger para enviar uma mensagem administrativa \_ \_ para o cliente \_ remoto. Se MESSENGER PRESENT e REMOTE LISTEN estão definidos, mas o GATEWAY ACTIVE não está, envie mensagens para o cliente somente do servidor RAS ao qual \_ \_ o cliente está \_ conectado.
 
 </dd> <dt>
 
 **wszUserName**
 </dt> <dd>
 
-Uma cadeia de caracteres Unicode terminada em nulo que especifica o nome do usuário remoto conectado a esta porta.
+Uma cadeia de caracteres Unicode terminada em nulo que especifica o nome do usuário remoto conectado a essa porta.
 
 </dd> <dt>
 
@@ -129,21 +129,21 @@ Uma cadeia de caracteres Unicode terminada em nulo que especifica o nome do comp
 **dwStartSessionTime**
 </dt> <dd>
 
-Especifica o tempo, em segundos, de 1º de janeiro de 1970, que o cliente conectou ao servidor RAS nesta porta. Use as funções de hora padrão para formatar esse valor para exibição.
+Especifica a hora, em segundos a partir de 1º de janeiro de 1970, em que o cliente se conectou ao servidor RAS nessa porta. Use as funções de tempo padrão para formatar esse valor para exibição.
 
 </dd> <dt>
 
 **wszLogonDomain**
 </dt> <dd>
 
-Especifica uma cadeia de caracteres Unicode terminada em nulo que especifica o nome do domínio no qual o usuário remoto foi autenticado. Essa cadeia de caracteres é apenas o nome de domínio, sem o \\ \\ prefixo "".
+Especifica uma cadeia de caracteres Unicode terminada em nulo que especifica o nome do domínio no qual o usuário remoto foi autenticado. Essa cadeia de caracteres é apenas o nome de domínio, sem nenhum \\ \\ prefixo ".
 
 </dd> <dt>
 
 **fAdvancedServer**
 </dt> <dd>
 
-Especifica um sinalizador que será diferente de zero se o servidor RAS associado a essa porta for um servidor avançado, como o Windows 2000 Advanced Server. Use essas informações para determinar o nome do servidor que tem o banco de dados da conta de usuário. Se o servidor RAS for um servidor avançado, obtenha o nome do servidor de conta de usuário concatenando o prefixo " \\ \\ " para o nome retornado no membro **wszLogonDomain** . Isso ocorre porque, para um servidor avançado, o nome de domínio de logon local é o mesmo que o nome do servidor. Se o servidor RAS for uma estação de trabalho, use a função [**RasAdminGetUserAccountServer**](rasadmingetuseraccountserver.md) para obter o nome do servidor de conta de usuário.
+Especifica um sinalizador que não é zero se o servidor RAS associado a essa porta for um servidor avançado, como o Windows 2000 Advanced Server. Use essas informações para determinar o nome do servidor que tem o banco de dados da conta de usuário. Se o servidor RAS for um servidor avançado, obter o nome do servidor de conta de usuário concatenando o prefixo " " para o nome retornado no \\ \\ **membro wszLogonDomain.** Isso porque, para um servidor avançado, o nome de domínio de logon local é o mesmo que o nome do servidor. Se o servidor RAS for uma estação de trabalho, use a [**função RasAdminGetUserAccountServer**](rasadmingetuseraccountserver.md) para obter o nome do servidor de conta de usuário.
 
 </dd> </dl>
 
@@ -155,9 +155,9 @@ Especifica um sinalizador que será diferente de zero se o servidor RAS associad
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                           |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                 |
-| Fim do suporte do cliente<br/>    | Windows XP<br/>                                                                |
-| Fim do suporte do servidor<br/>    | Windows Server 2003<br/>                                                       |
-| parâmetro<br/>                   | <dl> <dt>Rassapi. h</dt> </dl> |
+| Fim do suporte ao cliente<br/>    | Windows XP<br/>                                                                |
+| Fim do suporte ao servidor<br/>    | Windows Server 2003<br/>                                                       |
+| Cabeçalho<br/>                   | <dl> <dt>Rassapi.h</dt> </dl> |
 
 
 
@@ -165,16 +165,16 @@ Especifica um sinalizador que será diferente de zero se o servidor RAS associad
 
 <dl> <dt>
 
-[Visão geral do serviço de acesso remoto (RAS)](about-remote-access-service.md)
+[Visão geral do RAS (Serviço de Acesso Remoto)](about-remote-access-service.md)
 </dt> <dt>
 
-[Estruturas de administração do servidor RAS](ras-server-administration-structures.md)
+[Estruturas de administração de servidor RAS](ras-server-administration-structures.md)
 </dt> <dt>
 
-[**\_Porta RAS \_ 1**](ras-port-1-str.md)
+[**PORTA RAS \_ \_ 1**](ras-port-1-str.md)
 </dt> <dt>
 
-[**\_Estatísticas de porta RAS \_**](ras-port-statistics-str.md)
+[**ESTATÍSTICAS \_ DE \_ PORTA RAS**](ras-port-statistics-str.md)
 </dt> <dt>
 
 [**RasAdminGetUserAccountServer**](rasadmingetuseraccountserver.md)

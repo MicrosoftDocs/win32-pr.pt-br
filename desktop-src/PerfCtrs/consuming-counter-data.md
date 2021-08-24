@@ -4,16 +4,16 @@ ms.assetid: a42f6cdd-47e9-4f43-aeaf-37a5abb0fa36
 title: Consumindo dados do contador
 ms.topic: article
 ms.date: 08/17/2020
-ms.openlocfilehash: c8c50b29d8f898f544b021f7fe3f3fd0d4a2094e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f3abcc6dd5a385ebffdc887516613efb76b53359e5f8995bc28ba7f6239187b0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105753243"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119775676"
 ---
 # <a name="consuming-counter-data"></a>Consumindo dados do contador
 
-Os programas que desejam ler e usar os dados do contador de desempenho do Windows podem usar uma das várias interfaces conforme apropriado para o cenário.
+os programas que desejam ler e usar Windows dados do contador de desempenho podem usar uma das várias interfaces conforme apropriado para o cenário.
 
 - Os scripts podem usar as [classes do contador de desempenho WMI](/windows/desktop/WmiSdk/monitoring-performance-data) ou a ferramenta [TypePerf](/windows-server/administration/windows-commands/typeperf) .
 - Os programas .NET podem usar a [classe PerformanceCounter](/dotnet/api/system.diagnostics.performancecounter).

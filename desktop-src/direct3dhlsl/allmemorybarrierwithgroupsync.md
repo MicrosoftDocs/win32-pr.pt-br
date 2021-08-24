@@ -1,9 +1,9 @@
 ---
-title: Função AllMemoryBarrierWithGroupSync
-description: Bloqueia a execução de todos os threads em um grupo até que todos os acessos à memória tenham sido concluídos e que todos os threads do grupo tenham atingido essa chamada.
+title: Função AllMemoryBaoryWithGroupSync
+description: Bloqueia a execução de todos os threads em um grupo até que todos os acessos de memória tenham sido concluídos e todos os threads no grupo tenham atingido essa chamada.
 ms.assetid: 831830e7-19ce-41d0-b555-44a083b67cdc
 keywords:
-- HLSL da função AllMemoryBarrierWithGroupSync
+- Função AllMemoryBaoryWithGroupSync HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1fc005545485b7f894729ab6c7d7975acfd5b6d4
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 69d3c146ff04597b7eca13dd5cbef93dc1c79f81709353bf5b4fa1a993a8da22
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104006698"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119626686"
 ---
-# <a name="allmemorybarrierwithgroupsync-function"></a>Função AllMemoryBarrierWithGroupSync
+# <a name="allmemorybarrierwithgroupsync-function"></a>Função AllMemoryBaoryWithGroupSync
 
-Bloqueia a execução de todos os threads em um grupo até que todos os acessos à memória tenham sido concluídos e que todos os threads do grupo tenham atingido essa chamada.
+Bloqueia a execução de todos os threads em um grupo até que todos os acessos de memória tenham sido concluídos e todos os threads no grupo tenham atingido essa chamada.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -34,39 +34,39 @@ void AllMemoryBarrierWithGroupSync(void);
 
 Essa função não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa função não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Uma barreira de memória garante que as operações de memória pendentes tenham sido concluídas. Os threads são sincronizados em barreiras de GroupSync. Isso pode paralisar um thread ou threads se as operações de memória estiverem em andamento.
+Uma barreira de memória garante que as operações de memória pendentes tenham sido concluídas. Os threads são sincronizados em barreiras groupSync. Isso pode parar um thread ou threads se as operações de memória estão em andamento.
 
-### <a name="minimum-shader-model"></a>Modelo de sombreamento mínimo
+### <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
 
-Essa função tem suporte nos seguintes modelos de sombreador.
+Essa função tem suporte nos modelos de sombreador a seguir.
 
 
 
 | Modelo de Sombreador                                                                | Com suporte |
 |-----------------------------------------------------------------------------|-----------|
-| [Modelo](d3d11-graphics-reference-sm5.md) de sombreador 5 e modelos de sombreador mais altos | sim       |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md) e modelos de sombreador superior | sim       |
 
 
 
- 
+ 
 
 Essa função tem suporte nos seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          |       | x       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Confira também
 
@@ -78,9 +78,9 @@ Essa função tem suporte nos seguintes tipos de sombreadores:
 [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

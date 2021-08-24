@@ -1,7 +1,7 @@
 ---
 description: Obtém o número de patches na malha.
 ms.assetid: c081711a-9fbb-4993-b073-fbce53105165
-title: 'Método ID3DXPatchMesh:: GetNumPatches (D3DX9Mesh. h)'
+title: Método ID3DXPatchMesh::GetNumPatches (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 6a507062491aefc24bae68e538353bb04d22d1f3
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: d132cf12e160b7812f63ad06df29d64d25af7c5ca36ca6f76045fd857619cfa2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103837980"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119675096"
 ---
-# <a name="id3dxpatchmeshgetnumpatches-method"></a>Método ID3DXPatchMesh:: GetNumPatches
+# <a name="id3dxpatchmeshgetnumpatches-method"></a>Método ID3DXPatchMesh::GetNumPatches
 
 Obtém o número de patches na malha.
 
@@ -38,7 +38,7 @@ DWORD GetNumPatches();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
@@ -50,8 +50,8 @@ O número de patches.
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

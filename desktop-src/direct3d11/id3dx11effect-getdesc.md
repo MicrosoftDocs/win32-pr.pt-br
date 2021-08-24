@@ -1,11 +1,11 @@
 ---
-title: Método GetDesc de ID3DX11Effect (D3dx11effect. h)
-description: Obtenha uma descrição de efeito.
+title: Método ID3DX11Effect GetDesc (D3dx11effect.h)
+description: Obter uma descrição de efeito.
 ms.assetid: ca684786-c813-48d1-acad-e78aafd1c0db
 keywords:
 - Método GetDesc Direct3D 11
-- Método GetDesc do Direct3D 11, interface ID3DX11Effect
-- Interface ID3DX11Effect Direct3D 11, método GetDesc
+- Método GetDesc Direct3D 11 , interface ID3DX11Effect
+- ID3DX11 Interface de efeito Direct3D 11 , método GetDesc
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 587cde43ec2d9136bab5884691c99321d1492835
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: b9461dafb6b8da66ffa2a84e0d9d61c119a67c33bd967ae5183252e875fb6192
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104989377"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119676946"
 ---
-# <a name="id3dx11effectgetdesc-method"></a>Método ID3DX11Effect:: GetDesc
+# <a name="id3dx11effectgetdesc-method"></a>Método ID3DX11Effect::GetDesc
 
-Obtenha uma descrição de efeito.
+Obter uma descrição de efeito.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,24 +46,24 @@ HRESULT GetDesc(
 *pDesc* 
 </dt> <dd>
 
-Tipo: **[ **D3DX11 \_ efeito \_ desc**](d3dx11-effect-desc.md)\***
+Tipo: **[ **D3DX11 \_ EFFECT \_ DESC**](d3dx11-effect-desc.md)\***
 
-Um ponteiro para uma descrição de efeito (consulte o [**\_ efeito \_ desc de D3DX11**](d3dx11-effect-desc.md)).
+Um ponteiro para uma descrição de efeito (consulte [**D3DX11 \_ EFFECT \_ DESC**](d3dx11-effect-desc.md)).
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Retorna um dos seguintes [códigos de retorno do Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Retorna um dos códigos de [retorno do Direct3D 11 a seguir.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Comentários
 
-Uma descrição de efeito contém informações básicas sobre um efeito, como as técnicas que ele contém e os recursos de buffer constantes necessários.
+Uma descrição de efeito contém informações básicas sobre um efeito, como as técnicas que ela contém e os recursos de buffer constante necessários.
 
 > [!Note]  
-> O SDK do DirectX não fornece nenhum binário compilado para efeitos. Você deve usar a fonte Effects 11 para criar seu aplicativo de tipo de efeitos. Para obter mais informações sobre como usar a fonte Effects 11, consulte [diferenças entre os efeitos 10 e os efeitos 11](d3d11-graphics-programming-guide-effects-differences.md).
+> O SDK do DirectX não fornece binários compilados para efeitos. Você deve usar a origem efeitos 11 para criar seu aplicativo do tipo efeitos. Para obter mais informações sobre como usar a origem dos Efeitos 11, consulte [Diferenças entre efeitos 10 e efeitos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -73,8 +73,8 @@ Uma descrição de efeito contém informações básicas sobre um efeito, como a
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (uma biblioteca Effects 11 está disponível online como fonte compartilhada.)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (uma biblioteca effects 11 está disponível online como fonte compartilhada.)</dt> </dl> |
 
 
 

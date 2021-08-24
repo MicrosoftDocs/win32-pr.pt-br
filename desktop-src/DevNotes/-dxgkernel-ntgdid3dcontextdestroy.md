@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Ntgdi.h
-ms.openlocfilehash: 19799c3895072011dd104deec18664d1ffc52b9d
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 46397237cd775fb28dd7b3b50e55fdc598fd4cff46eeffd69755b35fa87b9f44
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104500946"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119636596"
 ---
 # <a name="ntgdid3dcontextdestroy-function"></a>Função NtGdiD3DContextDestroy
 
@@ -48,7 +48,7 @@ Ponteiro para uma estrutura [**D3DNTHAL \_ CONTEXTDESTROYDATA**](/windows-hardwa
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 **NtGdiD3DContextDestroy** retorna um dos seguintes códigos de retorno de chamada.
 

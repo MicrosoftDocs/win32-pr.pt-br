@@ -6,12 +6,12 @@ keywords:
 - enumerações, Direct3D 11 Core
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b012ae34367ef849bebf3fb25780310fcb924ba9
-ms.sourcegitcommit: 73417d55867c804274a55abe5ca71bcba7006119
+ms.openlocfilehash: 67454f6137dd9305cdab16b5136a01964d638ec8b5e4d4b0b9adb2f51d0f975f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "104366890"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119633656"
 ---
 # <a name="direct3d-11-core-enumerations"></a>Enumerações de núcleo do Direct3D 11
 
@@ -71,7 +71,7 @@ Esta seção contém informações sobre as enumerações principais.
 <td><a href="/windows/win32/api/D3D11_1/ne-d3d11_1-d3d11_copy_flags"><strong>D3D11_COPY_FLAGS</strong></a><br/></td>
 <td><blockquote>
 [!Note]<br />
-Essa enumeração tem suporte do tempo de execução do Direct3D 11,1, que está disponível no Windows 8 e sistemas operacionais posteriores.
+essa enumeração tem suporte do tempo de execução do Direct3D 11,1, que está disponível em Windows 8 e em sistemas operacionais posteriores.
 </blockquote>
 <br/> Especifica como lidar com o conteúdo existente de um recurso durante uma operação de cópia ou atualização de uma região dentro desse recurso.<br/></td>
 </tr>
@@ -143,7 +143,7 @@ Essa enumeração tem suporte do tempo de execução do Direct3D 11,1, que está
 <td><a href="/windows/win32/api/D3D11_1/ne-d3d11_1-d3d11_logic_op"><strong>D3D11_LOGIC_OP</strong></a><br/></td>
 <td><blockquote>
 [!Note]<br />
-Essa enumeração tem suporte do tempo de execução do Direct3D 11,1, que está disponível no Windows 8 e sistemas operacionais posteriores.
+essa enumeração tem suporte do tempo de execução do Direct3D 11,1, que está disponível em Windows 8 e em sistemas operacionais posteriores.
 </blockquote>
 <br/> Especifica operações lógicas a serem configuradas para um destino de renderização.<br/></td>
 </tr>
@@ -175,7 +175,7 @@ Essa enumeração tem suporte do tempo de execução do Direct3D 11,1, que está
 <td><a href="/windows/win32/api/D3D11/ne-d3d11-d3d11_shader_min_precision_support"><strong>D3D11_SHADER_MIN_PRECISION_SUPPORT</strong></a><br/></td>
 <td><blockquote>
 [!Note]<br />
-Essa enumeração tem suporte do tempo de execução do Direct3D 11,1, que está disponível no Windows 8 e sistemas operacionais posteriores.
+essa enumeração tem suporte do tempo de execução do Direct3D 11,1, que está disponível em Windows 8 e em sistemas operacionais posteriores.
 </blockquote>
 <br/> Valores que especificam níveis mínimos de precisão em estágios de sombreador.<br/></td>
 </tr>
