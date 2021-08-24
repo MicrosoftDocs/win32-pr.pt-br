@@ -4,22 +4,22 @@ ms.assetid: 3b1adef5-40e9-4527-aa79-5a71f201fdfc
 title: Audio-Tapered controles de volume
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0cca0879d27d0eba3d49ca22b019442f882bf917
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 9fb4856b4f25ad33ae61e9cb250a6b84f0e8799bb9d11d33c1770593bcf3714a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646384"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119750777"
 ---
 # <a name="audio-tapered-volume-controls"></a>Audio-Tapered controles de volume
 
-A interface [**IAudioEndpointVolume**](/windows/desktop/api/Endpointvolume/nn-endpointvolume-iaudioendpointvolume) gerencia os controles de volume que estão com um áudio cônico. Esses controles são adequados para aplicativos do Windows que exibem controles deslizantes de volume. Para um controle deslizante de volume que esteja vinculado a um controle de volume de áudio cônico, cada alteração na posição do controle deslizante produz uma alteração na intensidade percebida que é proporcional à distância percorrida pelo controle deslizante. Para uma distância de viagem específica, o valor pelo qual a intensidade percebida aumenta ou diminui é aproximadamente o mesmo, independentemente de a movimentação do controle deslizante ocorrer na parte inferior, superior ou intermediária do intervalo de movimento do controle deslizante. A intensidade percebida varia aproximadamente de forma linear com o logaritmo da potência do sinal de áudio.
+A interface [**IAudioEndpointVolume**](/windows/desktop/api/Endpointvolume/nn-endpointvolume-iaudioendpointvolume) gerencia os controles de volume que estão com um áudio cônico. esses controles são adequados para Windows aplicativos que exibem controles deslizantes de volume. Para um controle deslizante de volume que esteja vinculado a um controle de volume de áudio cônico, cada alteração na posição do controle deslizante produz uma alteração na intensidade percebida que é proporcional à distância percorrida pelo controle deslizante. Para uma distância de viagem específica, o valor pelo qual a intensidade percebida aumenta ou diminui é aproximadamente o mesmo, independentemente de a movimentação do controle deslizante ocorrer na parte inferior, superior ou intermediária do intervalo de movimento do controle deslizante. A intensidade percebida varia aproximadamente de forma linear com o logaritmo da potência do sinal de áudio.
 
 O termo de *áudio cônico* originalmente referido à forma cônico do elemento resistive em um potentiometer que é usado como um controle de volume em um dispositivo de eletrônicos de áudio. Um elemento resistive cônico por áudio é mais largo na posição do volume zero e mais estreito na posição de volume máximo. O potentiometer controla o nível de tensão do sinal de áudio que o dispositivo desempenha por meio de seus alto-falantes. O cônico é projetado para produzir uma relação aproximadamente linear entre a posição do brisas potentiometer e a intensidade percebida nos alto-falantes. A relação entre a posição de brisas e a voltagem nos alto-falantes é não linear.
 
 Por outro lado, um elemento resistive com um cônico linear tem uma largura uniforme sobre o intervalo de movimentação de potentiometer brisas. Como resultado, a tensão nos alto-falantes varia linearmente com a posição brisas. A relação entre a posição de brisas e a intensidade é não linear.
 
-Da mesma forma, um aplicativo do Windows que exibe um controle deslizante de volume define uma relação entre a posição do slider e o nível de sinal de saída nos alto-falantes. A relação pode, na verdade, ser linear cônico ou um áudio cônico.
+da mesma forma, um aplicativo Windows que exibe um controle deslizante de volume define uma relação entre a posição do controle deslizante e o nível de sinal de saída nos alto-falantes. A relação pode, na verdade, ser linear cônico ou um áudio cônico.
 
 O diagrama a seguir mostra o mapeamento da posição do controle deslizante para a tensão de saída e para a intensidade percebida de um controle de volume cônico linear.
 
@@ -57,7 +57,7 @@ Por outro lado, as configurações de volume para os métodos a seguir na interf
 -   [**IAudioEndpointVolume::VolumeStepDown**](/windows/desktop/api/Endpointvolume/nf-endpointvolume-iaudioendpointvolume-volumestepdown)
 -   [**IAudioEndpointVolume::VolumeStepUp**](/windows/desktop/api/Endpointvolume/nf-endpointvolume-iaudioendpointvolume-volumestepup)
 
-No Windows Vista, esses métodos usam uma curva intermediária entre a curva cônica de áudio mostrada no diagrama anterior e uma curva cônico linear. Observe que a forma da curva pode mudar em versões futuras do Windows. Os quatro primeiros métodos na lista anterior expressam os níveis de volume como valores normalizados no intervalo de 0,0 (volume mínimo) a 1,0 (volume máximo). Para os dois últimos métodos na lista, chame o método [**IAudioEndpointVolume:: GetVolumeStepInfo**](/windows/desktop/api/Endpointvolume/nf-endpointvolume-iaudioendpointvolume-getvolumestepinfo) para obter o número de etapas no intervalo de volumes.
+no Windows Vista, esses métodos usam uma curva intermediária entre a curva cônica de áudio mostrada no diagrama anterior e uma curva cônico linear. Observe que a forma da curva pode ser alterada em versões futuras do Windows. Os quatro primeiros métodos na lista anterior expressam os níveis de volume como valores normalizados no intervalo de 0,0 (volume mínimo) a 1,0 (volume máximo). Para os dois últimos métodos na lista, chame o método [**IAudioEndpointVolume:: GetVolumeStepInfo**](/windows/desktop/api/Endpointvolume/nf-endpointvolume-iaudioendpointvolume-getvolumestepinfo) para obter o número de etapas no intervalo de volumes.
 
 As interfaces a seguir usam curvas com cônico linear para suas configurações de volume:
 
@@ -65,7 +65,7 @@ As interfaces a seguir usam curvas com cônico linear para suas configurações 
 -   [**IChannelAudioVolume**](/windows/desktop/api/Audioclient/nn-audioclient-ichannelaudiovolume)
 -   [**IAudioStreamVolume**](/windows/desktop/api/Audioclient/nn-audioclient-iaudiostreamvolume)
 
-Para obter mais informações sobre essas interfaces, consulte [controles de volume de sessão](session-volume-controls.md). E para obter informações sobre os intervalos de volume e os níveis de volume padrão nas várias versões do Windows, consulte [configurações de volume de áudio padrão](/windows-hardware/drivers/audio/default-audio-volume-settings).
+Para obter mais informações sobre essas interfaces, consulte [controles de volume de sessão](session-volume-controls.md). e para obter informações sobre os intervalos de volume e os níveis de volume padrão nas várias versões do Windows, consulte o [volume de áudio padrão Configurações](/windows-hardware/drivers/audio/default-audio-volume-settings).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

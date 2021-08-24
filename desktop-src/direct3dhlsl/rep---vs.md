@@ -1,5 +1,5 @@
 ---
-title: Rep-vs
+title: rep - vs
 description: Iniciar um representante... bloco endrep.
 ms.assetid: vs|directx_sdk|~\rep___vs.htm
 ms.topic: reference
@@ -9,47 +9,47 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 5441d5d134ee2d60e14db9f273ec374323f93902
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 6e800f2ef313cd5c9a4fc90d7205502db5532ae24f51ec0f1255d05cc9a589bb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104365217"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119853786"
 ---
-# <a name="rep---vs"></a>Rep-vs
+# <a name="rep---vs"></a>rep - vs
 
-Iniciar um representante... bloco [endrep](endrep---vs.md) .
+Iniciar um representante... [bloco endrep.](endrep---vs.md)
 
 ## <a name="syntax"></a>Syntax
 
 
 
-| representante i\# |
+| rep i\# |
 |---------|
 
 
 
- 
+ 
 
-onde eu \# é um registro de número inteiro que especifica a contagem de repetições no componente. x. Consulte [o registro de inteiro constante](dx9-graphics-reference-asm-vs-registers-constant-integer.md).
+em que i \# é um registro inteiro que especifica a contagem de repetição no componente .x. Consulte [Registro de inteiro constante.](dx9-graphics-reference-asm-vs-registers-constant-integer.md)
 
 ## <a name="remarks"></a>Comentários
 
 
 
-| Versões do sombreador de vértice | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versões do sombreador de vértice | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|------|-------|------|-------|
-| representante                    |      | x    | x    | x     | x    | x     |
+| Representante                    |      | x    | x    | x     | x    | x     |
 
 
 
- 
+ 
 
--   i \# . x especifica a contagem de iteração. O intervalo legal é \[ 0, 255 \] . Observe que essa instrução não incrementa nem Decrementa o valor de i \# . x.
--   i \# . yzw não são usadas pelo bloco REPEAT.
--   Os blocos de repetição podem ser aninhados. Consulte [limites de aninhamento de controle de fluxo](dx9-graphics-reference-asm-vs-instructions-flow-control.md).
--   Os blocos de repetição podem estar completamente dentro de um \* bloco If ou completamente em torno dele. Não é permitido ampliar.
--   O uso do mesmo i \# para instruções de representante diferentes ou aninhadas é bem-cada loop será iterado com base na contagem especificada.
+-   i \# .x especifica a contagem de iteração. O intervalo legal é \[ 0, 255 \] . Observe que essa instrução não incrementa nem diminui o valor de i \# .x.
+-   i \# .yzw não são usados pelo bloco de repetição.
+-   Blocos de repetição podem ser aninhados. Consulte [Flow limites de aninhamento de controle.](dx9-graphics-reference-asm-vs-instructions-flow-control.md)
+-   Blocos de repetição podem estar completamente dentro de um bloco if \* ou completamente ao redor dele. Não é permitido nenhum retardo.
+-   Usar o mesmo i para instruções de representante diferentes ou aninhados é bom – cada loop iterará com \# base na contagem especificada.
 
 ## <a name="example"></a>Exemplo
 
@@ -69,9 +69,9 @@ endrep
 [Instruções do sombreador de vértice](dx9-graphics-reference-asm-vs-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: 59bb7a86-e874-45ce-abd6-cafd18802c4d
 title: Considerações de segurança para gravadores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ea6f88243adbd62d928170a86ed57b91cbebe134
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 601b981613636a571c204acdfac78ada778bb19b16a3d2677c4e56ff3ee099cb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105770544"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119767676"
 ---
 # <a name="security-considerations-for-writers"></a>Considerações de segurança para gravadores
 
@@ -39,7 +39,7 @@ Os gravadores podem fazer o seguinte explicitamente:
 
 -   Permitir que todos os processos acessem para chamar o processo do gravador.
 
-    Essa opção pode ser adequada para muitos gravadores e é usada por outros servidores COM — por exemplo, todos os serviços do Windows baseados em SVCHOST já estão usando essa opção, assim como todos os serviços COM+ por padrão.
+    essa opção pode ser adequada para muitos gravadores e é usada por outros servidores com — por exemplo, todos os serviços de Windows baseados em SVCHOST já estão usando essa opção, assim como todos os serviços COM+ por padrão.
 
     Permitir que todos os processos executem chamadas COM de entrada não é necessariamente uma vulnerabilidade de segurança. Um gravador agindo como um servidor COM, como todos os outros servidores COM, sempre retém a opção de autorizar seus clientes em cada método COM implementado em seu processo.
 

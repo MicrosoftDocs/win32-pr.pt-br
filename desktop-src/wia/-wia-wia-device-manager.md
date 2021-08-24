@@ -1,26 +1,26 @@
 ---
-description: O WIA (Windows Image Acquisition) Gerenciador de Dispositivos é uma extensão do monitor de eventos de imagem ainda (STI).
+description: O Windows wia (aquisição de imagem) Gerenciador de Dispositivos é uma extensão do Monitor de Eventos de Imagem Ainda (CHROME).
 ms.assetid: 27c4b304-68c2-406f-9de1-818e427af504
-title: Gerenciador de Dispositivos WIA
+title: WiA Gerenciador de Dispositivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d8c1bfda04f58a0a42a6f2453f1a2ae0252ebd7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9adb766dbe71aca0ab4b16c2b47f0041e398372cfaf5555d6383166bbd3ce26f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164519"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119813226"
 ---
-# <a name="wia-device-manager"></a>Gerenciador de Dispositivos WIA
+# <a name="wia-device-manager"></a>WiA Gerenciador de Dispositivos
 
-O WIA (Windows Image Acquisition) Gerenciador de Dispositivos é uma extensão do monitor de eventos de imagem ainda (STI). O Gerenciador de Dispositivos WIA fornece objetos, métodos e interfaces para o seguinte:
+O Windows wia (aquisição de imagem) Gerenciador de Dispositivos é uma extensão do Monitor de Eventos de Imagem Ainda (CHROME). O wi-Gerenciador de Dispositivos fornece objetos, métodos e interfaces para o seguinte:
 
 -   Instalando dispositivos
 -   Enumerando dispositivos
--   Consultando Propriedades de dispositivos instalados
+-   Consultar propriedades de dispositivos instalados
 -   Criando objetos de dispositivo
 -   Monitorando eventos de dispositivo
--   Adquirindo imagens
+-   Adquirir imagens
 -   Registrando aplicativos de destino.
 
  

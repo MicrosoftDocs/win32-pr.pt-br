@@ -4,12 +4,12 @@ ms.assetid: 4ce30b40-2d5d-449b-9314-45eabad16cce
 title: Japão
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e4c22f880802c2242865633c4d23aaa0ae43598
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: f058443498dba2d0ba2f796f2e687182d34d6255ddc6e88daa97d22b298512a5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103645774"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119766976"
 ---
 # <a name="japan"></a>Japão
 
@@ -216,7 +216,7 @@ Os índices de frequência nas tabelas do Japão são adequados para uso como n�
 
 ## <a name="revised-channel-assignments"></a>Atribuições de canal revisadas
 
-A tabela a seguir lista as atribuições de canal de cabo que exigem o Windows XP Media Center Edition 1,1 e posterior.
+a tabela a seguir lista as atribuições de canal de cabo que exigem Windows XP Media Center Edition 1,1 e posterior.
 
 Os índices de frequência nesta tabela do Japão são adequados para uso como números de canal.
 

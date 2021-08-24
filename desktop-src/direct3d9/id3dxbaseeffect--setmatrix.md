@@ -1,7 +1,7 @@
 ---
-description: 'Método ID3DXBaseEffect:: setmatrix – define uma matriz não transposeda.'
+description: Método ID3DXBaseEffect::SetMatrix – define uma matriz não transposta.
 ms.assetid: 90329460-756e-4b3e-9ff3-be9dc556eb9f
-title: 'Método ID3DXBaseEffect:: setmatrix (D3DX9Shader. h)'
+title: Método ID3DXBaseEffect::SetMatrix (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 7af7dc0daa3dcd29e7b15c4fe435b9626ea41746
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 77aad0573aed5e7dcb37ea82052b535badf8ee77d438393ad8d45e4963b79609
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108097494"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119749006"
 ---
-# <a name="id3dxbaseeffectsetmatrix-method"></a>Método ID3DXBaseEffect:: setmatrix
+# <a name="id3dxbaseeffectsetmatrix-method"></a>Método ID3DXBaseEffect::SetMatrix
 
-Define uma matriz não transposeda.
+Define uma matriz não transposta.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,7 +41,7 @@ HRESULT SetMatrix(
 
 <dl> <dt>
 
-*hParameter* \[ no\]
+*hParameter* \[ Em\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
@@ -50,12 +50,12 @@ Identificador exclusivo. Consulte [Handles (Direct3D 9)](handles.md).
 
 </dd> <dt>
 
-*pMatrix* \[ no\]
+*pMatrix* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Ponteiro para uma matriz nontransposed. Consulte [**D3DXMATRIX**](d3dxmatrix.md).
+Ponteiro para uma matriz não transposta. Consulte [**D3DXMATRIX**](d3dxmatrix.md).
 
 </dd> </dl>
 
@@ -63,13 +63,13 @@ Ponteiro para uma matriz nontransposed. Consulte [**D3DXMATRIX**](d3dxmatrix.md)
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se o método for bem sucedido, o valor de retorno será D3D \_ OK. Se o método falhar, o valor de retorno poderá ser D3DERR \_ INVALIDCALL.
+Se o método for bem-sucedido, o valor de retorno será D3D \_ OK. Se o método falhar, o valor de retorno poderá ser D3DERR \_ INVALIDCALL.
 
 ## <a name="remarks"></a>Comentários
 
-Uma matriz não transposed contém dados de linha principal. Em outras palavras, cada vetor está contido em uma linha.
+Uma matriz não transposta contém dados de linha principal. Em outras palavras, cada vetor está contido em uma linha.
 
-Se a matriz de destino for menor do que a matriz de origem, os componentes adicionais da matriz de origem serão ignorados.
+Se a matriz de destino for menor que a matriz de origem, os componentes adicionais da matriz de origem serão ignorados.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -77,19 +77,19 @@ Se a matriz de destino for menor do que a matriz de origem, os componentes adici
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| parâmetro<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
 [ID3DXBaseEffect](id3dxbaseeffect.md)
 </dt> <dt>
 
-[**Getmatrix**](id3dxbaseeffect--getmatrix.md)
+[**GetMatrix**](id3dxbaseeffect--getmatrix.md)
 </dt> </dl>
 
  

@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 464e105d2f8f0c80126e6b9ca5e5a383b2d17628
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 19e042b51c7060e4d4c2a8302a87b2d27ee2cf89608a9831cb3497fd0566689a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105757937"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119871736"
 ---
 # <a name="enableuservhd-method-of-the-win32_tssessiondirectory-class"></a>Método EnableUserVhd da classe Win32 \_ TSSessionDirectory
 

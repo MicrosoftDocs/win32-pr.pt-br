@@ -4,12 +4,12 @@ ms.assetid: 276f37b3-f981-4a01-bb37-1ee77248668f
 title: EC_VIDEO_SIZE_CHANGED (DShow. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b29a70ceab583d8dfc51b417fb701a2988b2e96f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: da9fc430b8d36a61b90f567f082c7224765a702549d050f11555c8e55c387a86
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105754765"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119792376"
 ---
 # <a name="ec_video_size_changed"></a>tamanho de vídeo do EC \_ \_ \_ alterado
 

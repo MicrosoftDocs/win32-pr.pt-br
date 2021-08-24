@@ -1,55 +1,55 @@
 ---
 title: Entender o pipeline de renderização do Direct3D 11
-description: Anteriormente, você examinou como criar uma janela que pode ser usada para desenhar em funcionamento com recursos de dispositivo do DirectX. Agora, você aprende como criar o pipeline de gráficos e onde pode conectá-lo.
+description: Anteriormente, você viu como criar uma janela que pode ser usada para desenhar em Trabalhar com recursos de dispositivo DirectX. Agora, você aprenderá a criar o pipeline de gráficos e onde você pode se conectar a ele.
 ms.assetid: 73cf62d0-7e4f-4e93-aa65-12741588d4fb
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e50f9a387b2d44fe750abcf5a8856f75e6d0110e
-ms.sourcegitcommit: 07b756a2f350efa5cfd5024a723ef392274ac3d9
+ms.openlocfilehash: 41a3e0fa7e3f7775c5cd51d49f9867864e7a204975fd982565491a63db829aa7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "105772738"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119727516"
 ---
 # <a name="understand-the-direct3d-11-rendering-pipeline"></a>Entender o pipeline de renderização do Direct3D 11
 
-Anteriormente, você examinou como criar uma janela que pode ser usada para desenhar em [funcionamento com recursos de dispositivo do DirectX](work-with-dxgi.md). Agora, você aprende como criar o pipeline de gráficos e onde pode conectá-lo.
+Anteriormente, você analisou como criar uma janela que pode ser usada para desenhar em [Trabalhar com recursos do dispositivo DirectX.](work-with-dxgi.md) Agora, você aprenderá a criar o pipeline de gráficos e onde você pode se conectar a ele.
 
-Você se lembrará de que há duas interfaces Direct3D que definem o pipeline de gráficos: [**ID3D11Device**](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11device2), que fornece uma representação virtual da GPU e seus recursos; e [**ID3D11DeviceContext**](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11devicecontext2), que representa o processamento de gráficos para o pipeline. Normalmente, você usa uma instância de **ID3D11Device** para configurar e obter os recursos de GPU necessários para começar a processar os gráficos em uma cena, e você usa o **ID3D11DeviceContext** para processar esses recursos em cada estágio de sombreador apropriado no pipeline de gráficos. Normalmente, você chama métodos **ID3D11Device** com pouca frequência — ou seja, somente quando você configura uma cena ou quando o dispositivo é alterado. Por outro lado, você chamará **ID3D11DeviceContext** toda vez que processar um quadro para exibição.
+Você se lembrará de que há duas interfaces Direct3D que definem o pipeline de gráficos: [**ID3D11Device,**](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11device2)que fornece uma representação virtual da GPU e seus recursos; e [**ID3D11DeviceContext**](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11devicecontext2), que representa o processamento de gráficos para o pipeline. Normalmente, você usa uma instância de **ID3D11Device** para configurar e obter os recursos de GPU necessários para começar a processar os gráficos em uma cena e usa **ID3D11DeviceContext** para processar esses recursos em cada estágio de sombreador apropriado no pipeline de gráficos. Normalmente, você chama **métodos ID3D11Device** com pouca pouca segurança, ou seja, somente quando você configura uma cena ou quando o dispositivo muda. Por outro lado, você chamará **ID3D11DeviceContext** sempre que processar um quadro para exibição.
 
-Este exemplo cria e configura um pipeline de gráficos mínimo adequado para exibir um cubo simples de rotação de vértices. Ele demonstra aproximadamente o menor conjunto de recursos necessário para a exibição. Ao ler as informações aqui, observe as limitações do exemplo fornecido, em que você pode precisar estendê-las para dar suporte à cena que deseja renderizar.
+Este exemplo cria e configura um pipeline de gráficos mínimo adequado para exibir um cubo simples com sombreamento de vértice. Ele demonstra aproximadamente o menor conjunto de recursos necessários para exibição. Conforme você lê as informações aqui, observe as limitações do exemplo determinado em que talvez seja necessário estendá-lo para dar suporte à cena que deseja renderizar.
 
-Este exemplo aborda duas classes C++ para gráficos: uma classe do Gerenciador de recursos de dispositivo e uma classe de renderizador de cena 3D. Este tópico se concentra especificamente no renderizador de cena 3D.
+Este exemplo aborda duas classes C++ para gráficos: uma classe do gerenciador de recursos de dispositivo e uma classe de renderização de cena 3D. Este tópico se concentra especificamente no renderador de cena 3D.
 
-## <a name="what-does-the-cube-renderer-do"></a>O que o renderizador de cubo faz?
+## <a name="what-does-the-cube-renderer-do"></a>O que o renderador de cubo faz?
 
-O pipeline de gráficos é definido pela classe renderizador de cena 3D. O renderizador de cena é capaz de:
+O pipeline de gráficos é definido pela classe de renderização de cena 3D. O renderdor de cena é capaz de:
 
--   Defina buffers de constantes para armazenar seus dados uniformes.
--   Defina os buffers de vértice para manter os dados de vértice do objeto e os buffers de índice correspondentes para habilitar o sombreador de vértice para percorrer os triângulos corretamente.
--   Criar recursos de textura e exibições de recursos.
--   Carregue os objetos do sombreador.
+-   Defina buffers constantes para armazenar seus dados uniformes.
+-   Defina buffers de vértice para manter os dados de vértice do objeto e buffers de índice correspondentes para permitir que o sombreador de vértice ande corretamente nos triângulos.
+-   Crie recursos de textura e exibições de recursos.
+-   Carregue seus objetos de sombreador.
 -   Atualize os dados gráficos para exibir cada quadro.
 -   Renderizar (desenhar) os gráficos para a cadeia de permuta.
 
-Os quatro primeiros processos normalmente usam os métodos de interface [**ID3D11Device**](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11device2) para inicializar e gerenciar recursos gráficos, e os dois últimos usam os métodos de interface [**ID3D11DeviceContext**](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11devicecontext2) para gerenciar e executar o pipeline de gráficos.
+Os primeiros quatro processos normalmente usam os métodos de interface [**ID3D11Device**](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11device2) para inicializar e gerenciar recursos gráficos, e os dois últimos usam os métodos de interface [**ID3D11DeviceContext**](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11devicecontext2) para gerenciar e executar o pipeline gráfico.
 
-Uma instância da classe **Renderer** é criada e gerenciada como uma variável de membro na classe de projeto principal. A instância de **DeviceResources** é gerenciada como um ponteiro compartilhado entre várias classes, incluindo a classe do projeto principal, a classe do provedor de exibição do **aplicativo** e o **processador**. Se você substituir o **renderizador** pela sua própria classe, considere declarar e atribuir a instância **DeviceResources** como um membro de ponteiro compartilhado também:
+Uma instância da classe **Renderer** é criada e gerenciada como uma variável de membro na classe de projeto principal. A **instância DeviceResources** é gerenciada como um ponteiro compartilhado em várias classes, incluindo a classe de projeto principal, a classe **App** view-provider e **o Renderer**. Se você substituir **Renderer** por sua própria classe, considere declarar e atribuir a instância **DeviceResources** como um membro de ponteiro compartilhado também:
 
 `std::shared_ptr<DX::DeviceResources> m_deviceResources;`
 
-Basta passar o ponteiro para o construtor da classe (ou outro método de inicialização) depois que a instância **DeviceResources** for criada no método **Initialize** da classe **app** . Você também pode passar uma referência de **\_ PTR de fraco** se, em vez disso, deseja que sua classe principal seja completamente proprietária da instância de **DeviceResources** .
+Basta passar o ponteiro para o construtor de classe (ou outro método de inicialização) depois que a instância **DeviceResources** for criada no método **Initialize** da **classe App.** Você também pode passar uma **referência \_ ptr** fraca se, em vez disso, você quiser que sua classe principal seja completamente a propriedade da **instância DeviceResources.**
 
-## <a name="create-the-cube-renderer"></a>Criar o renderizador de cubo
+## <a name="create-the-cube-renderer"></a>Criar o renderador de cubo
 
-Neste exemplo, organizamos a classe de renderização de cena com os seguintes métodos:
+Neste exemplo, organizamos a classe do renderador de cena com os seguintes métodos:
 
--   **CreateDeviceDependentResources**: chamado sempre que a cena deve ser inicializada ou reiniciada. Esse método carrega os dados iniciais do vértice, as texturas, os sombreadores e outros recursos e constrói a constante e os buffers de vértice iniciais. Normalmente, a maior parte do trabalho aqui é feita com métodos [**ID3D11Device**](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11device2) , não métodos [**ID3D11DeviceContext**](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11devicecontext2) .
--   **CreateWindowSizeDependentResources**: chamado sempre que o estado da janela é alterado, como quando o redimensionamento ocorre ou quando a orientação é alterada. Esse método recria as matrizes de transformação, como as de sua câmera.
--   **Atualização**: normalmente chamado a partir da parte do programa que gerencia o estado de jogo imediato; Neste exemplo, basta chamá-lo da classe **principal** . Esse método leu de qualquer informação de estado de jogo que afete a renderização, como atualizações de posição de objeto ou quadros de animação, além de quaisquer dados de jogos globais, como níveis de luz ou alterações na física do jogo. Essas entradas são usadas para atualizar os buffers de constante por quadro e os dados de objeto.
--   **Render**: normalmente chamado a partir da parte do programa que gerencia o loop de jogo; Nesse caso, ele é chamado a partir da classe **principal** . Esse método constrói o pipeline de gráficos: ele associa sombreadores, associa buffers e recursos a estágios de sombreador e invoca o desenho para o quadro atual.
+-   **CreateDeviceDependentResources:** chamado sempre que a cena deve ser inicializada ou reiniciada. Esse método carrega seus dados iniciais de vértice, texturas, sombreadores e outros recursos e constrói a constante inicial e os buffers de vértice. Normalmente, a maioria do trabalho aqui é feita com métodos [**ID3D11Device,**](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11device2) não métodos [**ID3D11DeviceContext.**](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11devicecontext2)
+-   **CreateWindowSizeDependentResources:** chamado sempre que o estado da janela muda, como quando ocorre o resizing ou quando a orientação é muda. Esse método recria matrizes de transformação, como aquelas para sua câmera.
+-   **Atualização:** normalmente chamado da parte do programa que gerencia o estado imediato do jogo; neste exemplo, basta chamá-lo da **classe** Main. Fazer com que esse método leia de qualquer informação de estado do jogo que afete a renderização, como atualizações para a posição do objeto ou quadros de animação, além de quaisquer dados globais do jogo, como níveis de luz ou alterações na física do jogo. Essas entradas são usadas para atualizar os buffers constantes por quadro e os dados do objeto.
+-   **Renderizar**: normalmente chamado da parte do programa que gerencia o loop do jogo; nesse caso, ele é chamado da **classe Main.** Esse método constrói o pipeline gráfico: ele vincula sombreadores, vincula buffers e recursos aos estágios do sombreador e invoca o desenho para o quadro atual.
 
-Esses métodos incluem o corpo de comportamentos para renderizar uma cena com o Direct3D usando seus ativos. Se você estender este exemplo com uma nova classe de renderização, declare-a na classe de projeto principal. Portanto, isso:
+Esses métodos compõem o corpo dos comportamentos para renderizar uma cena com o Direct3D usando seus ativos. Se você estender este exemplo com uma nova classe de renderização, declare-o na classe de projeto principal. Portanto, isso:
 
 `std::unique_ptr<Sample3DSceneRenderer> m_sceneRenderer;`
 
@@ -57,15 +57,15 @@ se torna isso:
 
 `std::unique_ptr<MyAwesomeNewSceneRenderer> m_sceneRenderer;`
 
-Novamente, observe que este exemplo pressupõe que os métodos tenham as mesmas assinaturas em sua implementação. Se as assinaturas tiverem sido alteradas, examine o loop **principal** e faça as alterações de acordo.
+Novamente, observe que este exemplo presume que os métodos têm as mesmas assinaturas em sua implementação. Se as assinaturas foram alteradas, revise o loop **Principal** e faça as alterações de acordo.
 
-Vamos dar uma olhada nos métodos de renderização de cena em mais detalhes.
+Vamos dar uma olhada nos métodos de renderização de cena mais detalhadamente.
 
 ## <a name="create-device-dependent-resources"></a>Criar recursos dependentes do dispositivo
 
-O **CreateDeviceDependentResources** consolida todas as operações para inicializar a cena e seus recursos usando chamadas [**ID3D11Device**](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11device2) . Esse método pressupõe que o dispositivo Direct3D acabou de ser inicializado (ou foi recriado) para uma cena. Ele recria ou recarrega todos os recursos gráficos específicos da cena, como os sombreadores de vértice e pixel, os buffers de vértice e de índice para objetos e quaisquer outros recursos (por exemplo, como texturas e suas exibições correspondentes).
+**CreateDeviceDependentResources** consolida todas as operações para inicializar a cena e seus recursos usando [**chamadas ID3D11Device.**](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11device2) Esse método presume que o dispositivo Direct3D acabou de ser inicializado (ou foi recriado) para uma cena. Ele recria ou recarrega todos os recursos gráficos específicos da cena, como os sombreadores de vértice e pixel, o vértice e os buffers de índice para objetos e quaisquer outros recursos (por exemplo, como texturas e suas exibições correspondentes).
 
-Veja o exemplo de código para **CreateDeviceDependentResources**:
+Aqui está o código de exemplo **para CreateDeviceDependentResources:**
 
 
 ```C++
@@ -97,9 +97,9 @@ void Renderer::CreateWindowSizeDependentResources()
 
 
 
-Sempre que você carregar recursos do disco — recursos como objetos de sombreador compilado (CSO ou. CSO) ou texturas, faça isso de forma assíncrona. Isso permite que você mantenha o trabalho em andamento ao mesmo tempo (como outras tarefas de instalação) e, como o loop principal não é bloqueado, você pode continuar a exibir algo visualmente interessante para o usuário (como uma animação de carregamento para seu jogo). Este exemplo usa a API Concurrency:: Tasks que está disponível a partir do Windows 8; Observe a sintaxe lambda usada para encapsular tarefas de carregamento assíncronas. Essas lambdas representam as funções chamadas off-thread, portanto, um ponteiro para o objeto de classe atual (**this**) é explicitamente capturado.
+Sempre que você carregar recursos do disco , recursos como arquivos ou texturas do objeto de sombreador compilado (CSO ou .cso), faça isso de forma assíncrona. Isso permite que você mantenha outros trabalhos ao mesmo tempo (como outras tarefas de instalação) e, como o loop principal não está bloqueado, você pode continuar exibindo algo visualmente interessante para o usuário (como uma animação de carregamento para seu jogo). Este exemplo usa a API Concurrency::Tasks que está disponível a partir do Windows 8; observe a sintaxe lambda usada para encapsular tarefas de carregamento assíncrono. Esses lambdas representam as funções chamadas off-thread, portanto, um ponteiro para o objeto de classe atual (**este**) é capturado explicitamente.
 
-Aqui está um exemplo de como você pode carregar o código de bytes do sombreador:
+Aqui está um exemplo de como você pode carregar o código de byte do sombreador:
 
 
 ```C++
@@ -176,7 +176,7 @@ fclose(pShader);
 
 
 
-Veja um exemplo de como criar um vértice e buffers de índice:
+Veja um exemplo de como criar buffers de vértice e índice:
 
 
 ```C++
@@ -267,19 +267,19 @@ HRESULT Renderer::CreateCube()
 
 
 
-Este exemplo não carrega malhas nem texturas. Você deve criar os métodos para carregar os tipos de malha e de textura que são específicos para seu jogo e chamá-los de forma assíncrona.
+Este exemplo não carrega malhas ou texturas. Você deve criar os métodos para carregar os tipos de malha e textura específicos ao seu jogo e chamá-los de forma assíncrona.
 
-Preencha os valores iniciais para seus buffers de constante por cena aqui também. Exemplos de buffer de constante por cena incluem luzes fixas ou outros dados e elementos de cena estáticos.
+Preencha os valores iniciais para seus buffers constantes por cena aqui também. Exemplos de buffer constante por cena incluem luzes fixas ou outros elementos e dados de cena estáticos.
 
 ## <a name="implement-the-createwindowsizedependentresources-method"></a>Implementar o método CreateWindowSizeDependentResources
 
-Os métodos **CreateWindowSizeDependentResources** são chamados toda vez que o tamanho da janela, a orientação ou as alterações de resolução.
+**Os métodos CreateWindowSizeDependentResources** são chamados sempre que o tamanho da janela, a orientação ou a resolução são alterações.
 
-Os recursos de tamanho de janela são atualizados da seguinte forma: o procedimento de mensagem estática Obtém um dos vários eventos possíveis indicando uma alteração no estado da janela. O loop principal é então informado sobre o evento e chama **CreateWindowSizeDependentResources** na instância da classe principal, que chama a implementação de **CreateWindowSizeDependentResources** na classe do renderizador de cena.
+Os recursos de tamanho da janela são atualizados da seguinte forma: o proc de mensagem estática obtém um dos vários eventos possíveis que indicam uma alteração no estado da janela. Em seguida, o loop principal é informado sobre o evento e chama **CreateWindowSizeDependentResources** na instância da classe principal, que chama a implementação **CreateWindowSizeDependentResources** na classe do renderador de cena.
 
-O principal trabalho desse método é verificar se os objetos visuais não ficaram confusos ou se tornaram inválidos devido a uma alteração nas propriedades da janela. Neste exemplo, atualizamos as matrizes de projeto com um novo campo de exibição (FOV) para a janela redimensionada ou reorientada.
+O principal trabalho desse método é verificar se os objetos visuais não ficaram confusos ou se tornaram inválidos devido a uma alteração nas propriedades da janela. Neste exemplo, atualizamos as matrizes do projeto com um novo FOV (campo de exibição) para a janela ressalvada ou reorientada.
 
-Já vimos o código para a criação de recursos de janela em **DeviceResources** – que era a cadeia de permuta (com buffer de fundo) e a exibição de destino de renderização. Veja como o renderizador cria transformações dependentes de taxa de proporção:
+Já vimos o código para criar recursos de janela em **DeviceResources** – que era a cadeia de permuta (com buffer de fundo) e a exibição de destino de renderização. Veja como o renderista cria as transformação dependentes da taxa de proporção:
 
 
 ```C++
@@ -321,11 +321,11 @@ void Renderer::CreateViewAndPerspective()
 
 
 
-Se sua cena tiver um layout específico de componentes que depende da taxa de proporção, esse é o lugar para reorganizá-los para corresponder a essa taxa de proporção. Você também pode querer alterar a configuração do comportamento de pós-processamento aqui.
+Se sua cena tiver um layout específico de componentes que dependem da taxa de proporção, esse é o lugar para reorganizar para corresponder a essa taxa de proporção. Talvez você queira alterar a configuração do comportamento pós-processamento aqui também.
 
 ## <a name="implement-the-update-method"></a>Implementar o método Update
 
-O método **Update** é chamado uma vez por loop de jogo – neste exemplo, ele é chamado pelo método da classe principal do mesmo nome. Ele tem uma finalidade simples: atualizar a geometria da cena e o estado do jogo com base na quantidade de tempo decorrido (ou etapas de tempo decorrido) desde o quadro anterior. Neste exemplo, simplesmente giramos o cubo uma vez por quadro. Em uma cena de jogo real, esse método contém muito mais código para verificar o estado do jogo, atualizar os buffers de constantes por quadro (ou outros), buffers de geometria e outros ativos na memória de acordo. Como a comunicação entre a CPU e a GPU incorre em sobrecarga, certifique-se de atualizar somente os buffers que foram realmente alterados desde o último quadro-seus buffers de constante podem ser agrupados ou divididos, conforme necessário para tornar isso mais eficiente.
+O **método Update** é chamado uma vez por loop de jogo – neste exemplo, ele é chamado pelo método da classe principal com o mesmo nome. Ele tem uma finalidade simples: atualizar a geometria da cena e o estado do jogo com base na quantidade de tempo decorrido (ou etapas de tempo decorrido) desde o quadro anterior. Neste exemplo, simplesmente giramos o cubo uma vez por quadro. Em uma cena de jogo real, esse método contém muito mais código para verificar o estado do jogo, atualizar buffers constantes por quadro (ou outros dinâmicos), buffers geometry e outros ativos na memória de acordo. Como a comunicação entre a CPU e a GPU incorre em sobrecarga, certifique-se de atualizar apenas os buffers que realmente foram alterados desde o último quadro– seus buffers constantes podem ser agrupados ou divididos, conforme necessário para tornar isso mais eficiente.
 
 
 ```C++
@@ -349,11 +349,11 @@ void Renderer::Update()
 
 
 
-Nesse caso, a **rotação** atualiza o buffer constante com uma nova matriz de transformação para o cubo. A matriz será multiplicada por vértice durante o estágio do sombreador de vértice. Como esse método é chamado com cada quadro, esse é um bom local para agregar todos os métodos que atualizam seus buffers de constantes e de vértice dinâmicos, ou para executar outras operações que preparam os objetos na cena para transformação pelo pipeline de gráficos.
+Nesse **caso,** Girar atualiza o buffer constante com uma nova matriz de transformação para o cubo. A matriz será multiplicada por vértice durante o estágio do sombreador de vértice. Como esse método é chamado a cada quadro, esse é um bom lugar para agregar quaisquer métodos que atualizem sua constante dinâmica e buffers de vértice ou para executar qualquer outra operação que prepare os objetos na cena para transformação pelo pipeline de gráficos.
 
 ## <a name="implement-the-render-method"></a>Implementar o método Render
 
-Esse método é chamado uma vez por loop de jogo depois de chamar **Update**. Como **Update**, o método **render** também é chamado a partir da classe principal. Esse é o método em que o pipeline de gráficos é construído e processado para o quadro usando métodos na instância [**ID3D11DeviceContext**](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11devicecontext2) . Isso culmina em uma chamada final para [**ID3D11DeviceContext::D rawindexed**](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-drawindexed). É importante entender que essa chamada (ou outras **chamadas Draw _ semelhantes \* *definidas em _* ID3D11DeviceContext**) realmente executa o pipeline. Especificamente, isso ocorre quando o Direct3D se comunica com a GPU para definir o estado do desenho, executa cada estágio do pipeline e grava os resultados do pixel no recurso de buffer de destino de renderização para exibição pela cadeia de permuta. Como a comunicação entre a CPU e a GPU incorre em sobrecarga, combine várias chamadas de desenho em uma única se você puder, especialmente se sua cena tiver muitos objetos renderizados.
+Esse método é chamado uma vez por loop de jogo depois de chamar **Atualizar**. Como **Update**, o **método Render** também é chamado da classe principal. Esse é o método em que o pipeline de gráficos é construído e processado para o quadro usando métodos na [**instância ID3D11DeviceContext.**](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11devicecontext2) Isso desinteia em uma chamada final [**para ID3D11DeviceContext::D rawIndexed.**](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-drawindexed) É importante entender que essa chamada (ou outras chamadas draw _ semelhantes definidas em **\* *_* ID3D11DeviceContext**) realmente executa o pipeline. Especificamente, é quando o Direct3D se comunica com a GPU para definir o estado de desenho, executa cada estágio de pipeline e grava os resultados de pixel no recurso de buffer de destino de renderização para exibição pela cadeia de permuta. Como a comunicação entre a CPU e a GPU incorre em sobrecarga, combine várias chamadas de desenho em uma única, se possível, especialmente se a cena tiver muitos objetos renderizados.
 
 
 ```C++
@@ -448,15 +448,15 @@ void Renderer::Render()
 
 
 
-É uma boa prática definir os vários estágios de pipeline de gráficos no contexto na ordem. Normalmente, a ordem é:
+É uma boa prática definir os vários estágios de pipeline de gráficos no contexto em ordem. Normalmente, a ordem é:
 
--   Atualize os recursos de buffer constante com novos dados conforme necessário (usando dados da **atualização**).
--   Assembly de entrada (IA): é aqui que anexamos os buffers de vértice e de índice que definem a geometria da cena. Você precisa anexar cada vértice e buffer de índice para cada objeto na cena. Como este exemplo tem apenas o cubo, ele é muito simples.
--   Sombreador de vértice (VS): Anexe qualquer sombreador de vértice que transforme os dados nos buffers de vértice e anexe buffers de constantes para o sombreador de vértice.
--   Sombreador de pixel (PS): Anexe qualquer sombreador de pixel que executará operações por pixel na cena rasterizada e anexe recursos de dispositivo para o sombreador de pixel (buffers de constantes, texturas e assim por diante).
--   Fusão de saída (OM): esse é o estágio em que os pixels são mesclados, depois que os sombreadores são concluídos. Essa é uma exceção à regra, pois você anexa seus estênceis de profundidade e renderiza destinos antes de definir qualquer uma das outras etapas. Você poderá ter vários estênceis e destinos se tiver um vértice adicional e sombreadores de pixel que gerem texturas como mapas de sombra, mapas de altura ou outras técnicas de amostragem. nesse caso, cada passagem de desenho precisará do conjunto de destino apropriado antes de chamar uma função de desenho.
+-   Atualize os recursos de buffer constante com novos dados conforme necessário (usando dados de **Atualização**).
+-   IA (assembly de entrada): é aqui que anexamos o vértice e os buffers de índice que definem a geometria da cena. Você precisa anexar cada vértice e buffer de índice para cada objeto na cena. Como este exemplo tem apenas o cubo, é muito simples.
+-   VS (sombreador de vértice): anexe todos os sombreadores de vértice que transformarão os dados nos buffers de vértice e anexam buffers constantes para o sombreador de vértice.
+-   Sombreador de pixel (PS): anexe todos os sombreadores de pixel que executarão operações por pixel na cena rasterizada e anexe recursos do dispositivo para o sombreador de pixel (buffers constantes, texturas e assim por diante).
+-   OM (fusão de saída): esse é o estágio em que os pixels são mesclados, depois que os sombreadores são concluídos. Essa é uma exceção à regra, pois você anexa seus estênciles de profundidade e renderiza destinos antes de definir qualquer um dos outros estágios. Você poderá ter vários estêncils e destinos se tiver sombreadores de vértice e pixel adicionais que geram texturas como mapas de sombra, mapas de altura ou outras técnicas de amostragem– nesse caso, cada passagem de desenho precisará dos destinos apropriados definidos antes de chamar uma função de desenho.
 
-Em seguida, na seção final ([trabalhar com sombreadores e recursos de sombreador](work-with-shaders-and-shader-resources.md)), vamos examinar os sombreadores e discutir como o Direct3D os executa.
+Em seguida, na seção final[(](work-with-shaders-and-shader-resources.md)Trabalhar com sombreadores e recursos de sombreador ), vamos ver os sombreadores e discutir como o Direct3D os executa.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

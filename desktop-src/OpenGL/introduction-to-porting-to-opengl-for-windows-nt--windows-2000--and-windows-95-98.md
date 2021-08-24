@@ -3,20 +3,20 @@ title: Introdução à portabilidade para OpenGL para Windows
 description: Introdução à portabilidade para OpenGL para Windows
 ms.assetid: d23edcf7-d673-42b6-831b-edb3a76754e1
 keywords:
-- OpenGL, portando para o Windows
+- OpenGL, portando para Windows
 - portando para OpenGL OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b9b9cc013d57a6e14cc318c4f254b5369193286
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f41e690186d4bd44501efa59f5ee92b2507dbd46b273e4847e0b83a15060e786
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103635644"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119777396"
 ---
 # <a name="introduction-to-porting-to-opengl-for-windows"></a>Introdução à portabilidade para OpenGL para Windows
 
-Os tópicos a seguir descrevem como portar seus aplicativos de cada uma dessas plataformas. Os tópicos abordam a portabilidade do OpenGL e do código de gerenciamento do Windows apenas; Não há nenhuma discussão sobre outros problemas de porta do sistema operacional, como ler arquivos, mensagens, criação de threads e assim por diante. Este guia de portador concentra-se em problemas específicos de portabilidade e pressupõe que você compreenda o OpenGL e a programação do Windows.
+Os tópicos a seguir descrevem como portar seus aplicativos de cada uma dessas plataformas. Os tópicos abordam a portabilidade do OpenGL e do código de gerenciamento do Windows apenas; Não há nenhuma discussão sobre outros problemas de porta do sistema operacional, como ler arquivos, mensagens, criação de threads e assim por diante. este guia de portador concentra-se em problemas específicos de portabilidade e pressupõe que você tenha uma compreensão da programação OpenGL e Windows.
 
 -   [Portando X aplicativos do sistema de janelas](porting-x-window-system-applications.md)
 -   [Convertendo a biblioteca GLX](translating-the-glx-library.md)
@@ -28,9 +28,9 @@ Os tópicos a seguir descrevem como portar seus aplicativos de cada uma dessas p
 -   [Portando aplicativos do íris GL](porting-applications-from-iris-gl.md)
 -   [Problemas especiais de portabilidade do íris GL](special-iris-gl-porting-issues.md)
 
- 
+ 
 
- 
+ 
 
 
 

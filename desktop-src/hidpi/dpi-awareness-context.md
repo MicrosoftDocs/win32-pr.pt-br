@@ -1,19 +1,19 @@
 ---
-title: Identificador de DPI_AWARENESS_CONTEXT (windef. h)
-description: Identifica o contexto de conscientização de uma janela.
+title: DPI_AWARENESS_CONTEXT de DPI_AWARENESS_CONTEXT (windef.h)
+description: Identifica o contexto de reconhecimento de uma janela.
 ms.assetid: BFD54A9F-642B-4A3A-BBB9-F3A80779251D
 ms.topic: article
 ms.date: 10/04/2018
-ms.openlocfilehash: 1663fad828a2fb29aa0d65ef58ae79616f64edcd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 25e270f59af32b33fdb5ad3f511b693b3eebad71407d48b80a72aff5996edf14
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104295798"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119727176"
 ---
-# <a name="dpi_awareness_context-handle"></a>Identificador de contexto de \_ reconhecimento de DPI \_
+# <a name="dpi_awareness_context-handle"></a>Alça de \_ CONTEXTO DE RECONHECIMENTO DE DPI \_
 
-Identifica o contexto de conscientização de uma janela.
+Identifica o contexto de reconhecimento de uma janela.
 
 ## <a name="syntax"></a>Syntax
 
@@ -27,45 +27,45 @@ Identifica o contexto de conscientização de uma janela.
 
 ## <a name="constants"></a>Constantes
 
-**contexto de reconhecimento de DPI sem \_ \_ \_ reconhecimento**<dl> Sem reconhecimento de DPI. Essa janela não é dimensionada para alterações de DPI e sempre é presumido ter um fator de escala de 100% (96 DPI). Ele será dimensionado automaticamente pelo sistema em qualquer outra configuração de DPI.  
+**CONTEXTO DE RECONHECIMENTO DE DPI \_ \_ SEM \_ RECONHECIMENTO**<dl> DPI sem conhecimento. Essa janela não é dimensionado para alterações de DPI e sempre é presumida como ter um fator de escala de 100% (96 DPI). Ele será dimensionado automaticamente pelo sistema em qualquer outra configuração de DPI.  
 </dl>
 
-**\_reconhecimento do \_ sistema de contexto de reconhecimento de DPI \_ \_**<dl> Reconhecimento de DPI do sistema. Essa janela não é dimensionada para alterações de DPI. Ele consultará o DPI uma vez e usará esse valor durante o tempo de vida do processo. Se o DPI for alterado, o processo não será ajustado para o novo valor de DPI. Ele será dimensionado ou reduzido automaticamente pelo sistema quando o DPI for alterado do valor do sistema.  
+**RECONHECIMENTO DO SISTEMA \_ DE CONTEXTO DE RECONHECIMENTO \_ \_ DE \_ DPI**<dl> Ciente de DPI do sistema. Essa janela não é dimensiona para alterações de DPI. Ele consultará o DPI uma vez e usará esse valor durante o tempo de vida do processo. Se o DPI mudar, o processo não será ajustado para o novo valor de DPI. Ele será automaticamente escalado ou rebaixado pelo sistema quando o DPI mudar do valor do sistema.  
 </dl>
 
-**contexto de reconhecimento de DPI \_ \_ \_ por \_ reconhecimento de monitor \_**<dl> Reconhecimento de DPI por monitor. Essa janela verifica o DPI quando ele é criado e ajusta o fator de escala sempre que o DPI é alterado. Esses processos não são dimensionados automaticamente pelo sistema.  
+**CONTEXTO DE RECONHECIMENTO DE DPI \_ \_ POR MONITOR \_ \_ \_ CIENTE**<dl> Por monitor com conhecimento de DPI. Essa janela verifica o DPI quando ele é criado e ajusta o fator de escala sempre que o DPI muda. Esses processos não são dimensionados automaticamente pelo sistema.  
 </dl>
 
-**Contexto de reconhecimento de DPI \_ \_ \_ por \_ reconhecimento de monitor \_ \_ v2**<dl> Também conhecido como **por monitor v2**. Um avanço sobre o modo de reconhecimento de DPI original por monitor, que permite que os aplicativos acessem novos comportamentos de dimensionamento relacionados a DPI de acordo com cada janela de nível superior.  
-Por monitor v2 foi disponibilizado na atualização de criadores do Windows 10 e não está disponível em versões anteriores do sistema operacional.  
-Os comportamentos adicionais introduzidos são os seguintes:
+**CONTEXTO DE RECONHECIMENTO DE DPI \_ POR MONITOR COM RECONHECIMENTO \_ \_ \_ \_ \_ V2**<dl> Também conhecido como **Por Monitor v2**. Um avanço sobre o modo de reconhecimento de DPI original por monitor, que permite que os aplicativos acessem novos comportamentos de dimensionamento relacionados ao DPI por janela de nível superior.  
+Por Monitor v2 foi disponibilizado na Atualização para Criadores do Windows 10 e não está disponível em versões anteriores do sistema operacional.  
+Os comportamentos adicionais introduzidos são os seguinte:
 
--   **Notificações de alteração de dpi de janela filho** – em contextos de monitor v2, toda a árvore de janela é notificada sobre qualquer alteração de dpi que ocorrer.
--   **Dimensionamento de área de não-cliente** – todas as janelas terão automaticamente sua área que não seja de cliente desenhada de maneira sensível a dpi. Chamadas para [**EnableNonClientDpiScaling**](/windows/desktop/api/Winuser/nf-winuser-enablenonclientdpiscaling) são desnecessárias.
--   **Dimensionamento de menus do Win32** – todos os menus do Ntuser criados nos contextos de acordo com o monitor v2 serão dimensionados de acordo com o monitor.
--   **Dimensionamento de caixa de diálogo** -caixas de diálogo do Win32 criadas nos contextos de por monitor v2 responderão automaticamente às alterações de DPI.
--   **Dimensionamento aprimorado de controles comctl32** – vários controles comctl32 melhoraram o comportamento de dimensionamento de DPI nos contextos v2 do monitor.
--   **Comportamento aprimorado-os** identificadores de Uxtheme abertos no contexto de uma janela por monitor v2 funcionarão em termos do dpi associado a essa janela.
+-   **Notificações de alteração de DPI** da janela filho – em contextos por monitor v2, toda a árvore de janelas é notificada sobre as alterações de DPI que ocorrem.
+-   **Dimensionamento de área não cliente** – todas as janelas terão automaticamente sua área não cliente desenhada de maneira sensível ao DPI. Chamadas para [**EnableNonClientDpiScaling**](/windows/desktop/api/Winuser/nf-winuser-enablenonclientdpiscaling) são desnecessárias.
+-   **Dimensionamento de menus Win32** – Todos os menus NTUSER criados em Contextos por Monitor v2 serão dimensionados de forma por monitor.
+-   **Dimensionamento de caixa de** diálogo – Caixas de diálogo Win32 criadas em contextos por Monitor v2 responderão automaticamente às alterações de DPI.
+-   **Dimensionamento aprimorado** de controles comctl32 – vários controles comctl32 melhoraram o comportamento de dimensionamento de DPI em contextos por monitor v2.
+-   **Comportamento de temas** aprimorado – os handles de UxTheme abertos no contexto de uma janela Por Monitor v2 operarão em termos do DPI associado a essa janela.
 
   
 </dl>
 
 **DPI_AWARENESS_CONTEXT_UNAWARE_GDISCALED**
 
-DPI sem reconhecimento com qualidade aprimorada de conteúdo baseado em GDI. Esse modo se comporta de forma semelhante à DPI_AWARENESS_CONTEXT_UNAWARE, mas também permite que o sistema aprimore automaticamente a qualidade de renderização do texto e outros primitivos baseados em GDI quando a janela é exibida em um monitor de DPI alto.
+DPI sem conhecimento da qualidade aprimorada do conteúdo baseado em GDI. Esse modo se comporta de modo semelhante ao DPI_AWARENESS_CONTEXT_UNAWARE, mas também permite que o sistema melhore automaticamente a qualidade de renderização de texto e outros primitivos baseados em GDI quando a janela é exibida em um monitor de alto DPI.
 
-Para obter mais detalhes, consulte [aprimorando a experiência de alto DPI em aplicativos de área de trabalho baseados em GDI](https://blogs.windows.com/buildingapps/2017/05/19/improving-high-dpi-experience-gdi-based-desktop-apps/#Uwv9gY1SvpbgQ4dK.97).
+Para obter mais detalhes, consulte [Melhorando a experiência de alto DPI em aplicativos](https://blogs.windows.com/buildingapps/2017/05/19/improving-high-dpi-experience-gdi-based-desktop-apps/#Uwv9gY1SvpbgQ4dK.97)da Área de Trabalho baseados em GDI.
 
-DPI_AWARENESS_CONTEXT_UNAWARE_GDISCALED foi introduzido na atualização de outubro de 2018 do Windows 10 (também conhecido como versão 1809).
+DPI_AWARENESS_CONTEXT_UNAWARE_GDISCALED foi introduzido na atualização de outubro de 2018 do Windows 10 (também conhecida como versão 1809).
 
 
 ## <a name="requirements"></a>Requisitos
 
 | Requisito | Valor |
 |----|-----------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10, versão 1607\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows 10, versão 1607 somente \[ aplicativos da área de trabalho\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível <br/>  |
-| parâmetro<br/>                   | <dl> <dt>windef. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>windef.h</dt> </dl> |
 
 ## <a name="see-also"></a>Confira também
 

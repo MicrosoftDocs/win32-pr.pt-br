@@ -1,6 +1,6 @@
 ---
 title: Atributo Other-logon-workstations
-description: Não é \ 8211; Estações de trabalho do Windows NT ou LAN Manager das quais um usuário pode fazer logon.
+description: Não é \ 8211; as estações de trabalho Windows NT ou LAN Manager das quais um usuário pode fazer logon.
 ms.assetid: feaa1ade-f340-4bca-8787-5ae5aa10d51c
 ms.tgt_platform: multiple
 keywords:
@@ -14,16 +14,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b71032e96de9ac8d323da8a94e4c50c5cace27c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e0cad2ce47be17ff969b237cf48255d3a668bbfc4c64f6144ec9d630fc938593
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825108"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119704466"
 ---
 # <a name="other-login-workstations-attribute"></a>Atributo Other-logon-workstations
 
-Estações de trabalho não Windows NT ou LAN Manager das quais um usuário pode fazer logon.
+estações de trabalho não Windows NT ou LAN Manager das quais um usuário pode fazer logon.
 
 > [!Note]  
 > Active Directory não usa nem preenche esse campo.
@@ -126,10 +126,10 @@ Estações de trabalho não Windows NT ou LAN Manager das quais um usuário pode
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | Falso                             |
+| Tem valor único       | Falso                             |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 1024                              |
 | Search-Flags           | 0x00000010                        |
@@ -147,10 +147,10 @@ Estações de trabalho não Windows NT ou LAN Manager das quais um usuário pode
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | Falso                             |
+| Tem valor único       | Falso                             |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 1024                              |
 | Search-Flags           | 0x00000010                        |
@@ -168,10 +168,10 @@ Estações de trabalho não Windows NT ou LAN Manager das quais um usuário pode
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | Falso                             |
+| Tem valor único       | Falso                             |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 1024                              |
 | Search-Flags           | 0x00000010                        |

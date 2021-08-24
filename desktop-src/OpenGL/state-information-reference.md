@@ -1,23 +1,23 @@
 ---
 title: Referência de informações de estado
-description: A lista a seguir contém as funções que obtêm informações de estado.
+description: A lista a seguir contém as funções que obterão informações de estado.
 ms.assetid: 8ff75690-41ed-43cf-a000-1893755163f4
 keywords:
 - OpenGL, referência de informações de estado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 885e1e7b4d8704eb43dda2cc85b870ede7e53a22
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4ed923cd645300c27395b78c50f019217edf8b41e34905e670236410e89a9ce6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292702"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119776616"
 ---
 # <a name="state-information-reference"></a>Referência de informações de estado
 
-A lista a seguir contém as funções que obtêm informações de estado.
+A lista a seguir contém as funções que obterão informações de estado.
 
-Para obter uma lista das páginas de referência para as variáveis de estado, consulte [variáveis de estado OpenGL](opengl-state-variables.md).
+Para ver uma lista das páginas de referência para as variáveis de estado, consulte [Variáveis de estado OpenGL](opengl-state-variables.md).
 
 -   [**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md)
 -   [**glGetBooleanv**](glgetbooleanv.md)
@@ -41,9 +41,9 @@ Para obter uma lista das páginas de referência para as variáveis de estado, c
 -   [**glPopAttrib**](glpopattrib.md)
 -   [**glPushAttrib**](glpushattrib.md)
 
- 
+ 
 
- 
+ 
 
 
 

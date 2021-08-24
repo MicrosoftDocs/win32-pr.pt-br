@@ -1,10 +1,10 @@
 ---
-title: Criar-entrada-floresta-confiança estendida à direita
-description: Direito de acesso de controle estendido que permite aos usuários criar uma confiança somente de entrada entre florestas adicionando-as ao grupo apropriado.
+title: Direito estendido Create-Inbound-Forest-Trust
+description: Direito de acesso de controle estendido que permite que os usuários criem uma relação de confiança somente de entrada entre florestas adicionando-as ao grupo apropriado.
 ms.assetid: 69723545-84bd-406a-b909-49bcd778e4dc
 ms.tgt_platform: multiple
 keywords:
-- Criar-entrada-floresta-confiar no esquema do AD estendido à direita
+- Esquema estendido do AD Create-Inbound-Forest-Trust
 topic_type:
 - apiref
 api_name:
@@ -13,24 +13,24 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: be400dd2a93f9c9e238cd0106d9124b1ad80d80c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2b454e90d13e747157cb4eac11c0571df034778d335c9c89c1d566767f4c9201
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104087145"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119702866"
 ---
-# <a name="create-inbound-forest-trust-extended-right"></a>Criar-entrada-floresta-confiança estendida à direita
+# <a name="create-inbound-forest-trust-extended-right"></a>Direito estendido Create-Inbound-Forest-Trust
 
-Direito de acesso de controle estendido que permite aos usuários criar uma confiança somente de entrada entre florestas adicionando-as ao grupo apropriado.
+Direito de acesso de controle estendido que permite que os usuários criem uma relação de confiança somente de entrada entre florestas adicionando-as ao grupo apropriado.
 
 
 
 | Entrada | Valor |
 |--------------|--------------------------------------|
-| CN           | Criar-entrada-floresta-confiança          |
-| Display-Name | Criar relação de confiança de floresta de entrada          |
-| GUID de direitos  | e2a36dc9-ae17-47c3-b58b-be34c55ba633 |
+| CN           | Create-Inbound-Forest-Trust          |
+| Display-Name | Criar confiança de floresta de entrada          |
+| RIGHTS-GUID  | e2a36dc9-ae17-47c3-b58b-be34c55ba6333 |
 
 
 
@@ -48,8 +48,8 @@ Direito de acesso de controle estendido que permite aos usuários criar uma conf
 
 | Entrada | Valor |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Domínio-DNS**](c-domaindns.md)<br/> |
-| Localização-exibição-ID | 61                                           |
+| Applies-To              | [**DNS de domínio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 61                                           |
 
 
 
@@ -59,8 +59,8 @@ Direito de acesso de controle estendido que permite aos usuários criar uma conf
 
 | Entrada | Valor |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Domínio-DNS**](c-domaindns.md)<br/> |
-| Localização-exibição-ID | 61                                           |
+| Applies-To              | [**DNS de domínio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 61                                           |
 
 
 
@@ -70,8 +70,8 @@ Direito de acesso de controle estendido que permite aos usuários criar uma conf
 
 | Entrada | Valor |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Domínio-DNS**](c-domaindns.md)<br/> |
-| Localização-exibição-ID | 61                                           |
+| Applies-To              | [**DNS de domínio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 61                                           |
 
 
 
@@ -81,8 +81,8 @@ Direito de acesso de controle estendido que permite aos usuários criar uma conf
 
 | Entrada | Valor |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Domínio-DNS**](c-domaindns.md)<br/> |
-| Localização-exibição-ID | 61                                           |
+| Applies-To              | [**DNS de domínio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 61                                           |
 
 
 
@@ -92,8 +92,8 @@ Direito de acesso de controle estendido que permite aos usuários criar uma conf
 
 | Entrada | Valor |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Domínio-DNS**](c-domaindns.md)<br/> |
-| Localização-exibição-ID | 61                                           |
+| Applies-To              | [**DNS de domínio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 61                                           |
 
 
 

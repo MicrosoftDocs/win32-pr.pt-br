@@ -4,12 +4,12 @@ ms.assetid: 1d91bdc8-5a09-487d-b45e-80d57a44cd0e
 title: Propriedade MFPKEY_WMAAECMA_MICARRAY_DESCPTR (Wmcodecdsp. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e433f50d9d7640575f1314c5acc13d7751fde0cd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7b2bf0b495e7b57ba60cf5cc993b85a143836c8666e06d6b849ece3693b2a334
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105813266"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119722940"
 ---
 # <a name="mfpkey_wmaaecma_micarray_descptr-property"></a>\_Propriedade MFPKEY WMAAECMA \_ MICARRAY \_ DESCPTR
 
@@ -29,7 +29,7 @@ Disponível apenas usando [**IPropertyStore**](/windows/win32/api/propsys/nn-pro
 
 ## <a name="remarks"></a>Comentários
 
-O valor dessa propriedade é uma estrutura [**de \_ \_ \_ geometria da matriz do MIC KSAUDIO**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_mic_array_geometry) . Essa estrutura é definida no arquivo de cabeçalho KsMedia. h. Para obter a geometria da matriz do microfone, consulte o dispositivo de áudio para obter a \_ propriedade de geometria da matriz do MIC de áudio KSPROPERTY \_ \_ \_ chamando o método **IKsControl:: KSPROPERTY** no dispositivo. Para obter mais informações sobre matrizes de microfone, baixe o white paper [como criar e usar matrizes de microfone para o Windows Vista](/windows-hardware/drivers/audio/microphone-array-geometry-descriptor-format).
+O valor dessa propriedade é uma estrutura [**de \_ \_ \_ geometria da matriz do MIC KSAUDIO**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_mic_array_geometry) . Essa estrutura é definida no arquivo de cabeçalho KsMedia. h. Para obter a geometria da matriz do microfone, consulte o dispositivo de áudio para obter a \_ propriedade de geometria da matriz do MIC de áudio KSPROPERTY \_ \_ \_ chamando o método **IKsControl:: KSPROPERTY** no dispositivo. para obter mais informações sobre matrizes de microfone, baixe o white paper [como criar e usar matrizes de microfone para o Windows Vista](/windows-hardware/drivers/audio/microphone-array-geometry-descriptor-format).
 
 Defina essa propriedade se você estiver usando o DSP no modo de filtro e o processamento da matriz de microfone estiver habilitado. Se você estiver usando o DSP no modo de origem, o DSP consultará automaticamente o dispositivo para obter as informações de geometria.
 
@@ -39,9 +39,9 @@ Defina essa propriedade se você estiver usando o DSP no modo de filtro e o proc
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                    |
-| parâmetro<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                    |
+| Cabeçalho<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
 
 
 

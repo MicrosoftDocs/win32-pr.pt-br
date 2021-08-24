@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: de0dc6037ccf1b027755d5508dbf8569d8716945
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c6fccd6ee3ca7c9f65e08babd831084421b1d073653ce5b53db021a1056744b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297044"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119832706"
 ---
 # <a name="jet_tableidequals-method-object"></a>JET_TABLEID. Método Equals (Object)
 
 Retorna um valor que indica se essa instância é igual a outra instância.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,23 +58,23 @@ public override bool Equals(
 #### <a name="parameters"></a>Parâmetros
 
   - obj  
-    Tipo: [System. Object](/dotnet/api/system.object)  
+    Tipo: [System.Object](/dotnet/api/system.object)  
     
     Um objeto a ser comparado com essa instância.
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
-True se as duas instâncias forem iguais.  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
+True se as duas instâncias são iguais.  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Estrutura de JET_TABLEID](./jet-tableid-structure.md)
+[JET_TABLEID estrutura](./jet-tableid-structure.md)
 
-[Membros do JET_TABLEID](./jet-tableid-members.md)
+[JET_TABLEID membros](./jet-tableid-members.md)
 
-[Sobrecarga de Equals](./jet-tableid.equals-method.md)
+[Sobrecarga igual a](./jet-tableid.equals-method.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

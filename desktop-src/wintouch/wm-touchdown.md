@@ -3,7 +3,7 @@ title: Mensagem de WM_TOUCH (WinUser. h)
 description: Notifica a janela quando um ou mais pontos de toque, como um dedo ou uma caneta, toca uma superfície digitalizadora sensível ao toque.
 ms.assetid: 5dee8bab-34fa-4dd9-a65b-35883757ec80
 keywords:
-- WM_TOUCH a mensagem Windows Touch
+- WM_TOUCH Windows toque de mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b6242d43b661240d946d2883237640d1bc92b3f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ec1034a229dbb1f3895726fcb3c1551e2dd0f390be0fd7bc2eb81d8331e582eb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369755"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119810096"
 ---
 # <a name="wm_touch-message"></a>Mensagem de toque do WM \_
 
@@ -51,7 +51,7 @@ Observe também que o identificador de entrada por toque nesse parâmetro não �
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se um aplicativo processar essa mensagem, ele deverá retornar zero.
 
@@ -103,9 +103,9 @@ return DefWindowProc(hWnd, message, wParam, lParam);
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                               |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                                                  |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                                               |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/>                                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 
@@ -119,7 +119,7 @@ return DefWindowProc(hWnd, message, wParam, lParam);
 [Manipulações e guia de programação inércia](manipulation-and-inertia.md)
 </dt> <dt>
 
-[Guia de programação de entrada do Windows Touch](guide-multi-touch-input.md)
+[Windows Guia de programação de entrada por toque](guide-multi-touch-input.md)
 </dt> </dl>
 
  

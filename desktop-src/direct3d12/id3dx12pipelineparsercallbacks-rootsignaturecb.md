@@ -17,12 +17,12 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 78160ff1e61432a0711876934215ff15afb918de
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 52b284a1f44ae1f77c80788b1af21cf29ba480881e82feac38bfccdba6e8e8ad
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105815601"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119792146"
 ---
 # <a name="id3dx12pipelineparsercallbacksrootsignaturecb-method"></a>Método ID3DX12PipelineParserCallbacks:: RootSignatureCb
 
@@ -52,7 +52,7 @@ Detalhes do subobjeto de assinatura raiz analisado a partir de um fluxo de estad
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Não retorna nada.
 

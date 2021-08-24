@@ -4,12 +4,12 @@ description: Retorno condicional.
 ms.assetid: D936099D-4A75-4AE2-9FE3-70ED213DF4D9
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e394bc6b947d91fafb09dbfdc075b0c60be2cf8
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 2d68d65cf64c3c1fb7945f93053f280be3eb3bd9d5fe76e34f30102316b1f1e8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104967123"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119853736"
 ---
 # <a name="retc-sm4---asm"></a>retc (sm4-ASM)
 

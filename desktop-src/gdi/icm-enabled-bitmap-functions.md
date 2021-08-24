@@ -1,31 +1,31 @@
 ---
-description: O Microsoft Image Color Management (ICM) garante que uma imagem colorida, um objeto gráfico ou um objeto de texto seja renderizado o mais próximo possível de sua intenção original em qualquer dispositivo, apesar das diferenças nas tecnologias de geração de imagens e funcionalidades de cores entre os dispositivos.
+description: O ICM (Gerenciamento de Cores de Imagem da Microsoft) garante que uma imagem de cor, objeto gráfico ou objeto de texto seja renderizado o mais próximo possível de sua intenção original em qualquer dispositivo, apesar das diferenças nas tecnologias de geração de imagens e nas funcionalidades de cores entre os dispositivos.
 ms.assetid: 7b3cb9a4-ffd2-4867-85bd-0e663fdde6e3
-title: ICM-Enabled funções de bitmap
+title: funções ICM-Enabled Bitmap
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b4b89dac569aafad1ef94b066bc97f588bac62c4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d38341851eb9ba2aed25cc93afbf7b869909430a30ecb626bf3a452883fdea97
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827649"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119831966"
 ---
-# <a name="icm-enabled-bitmap-functions"></a>ICM-Enabled funções de bitmap
+# <a name="icm-enabled-bitmap-functions"></a>funções ICM-Enabled Bitmap
 
-O Microsoft Image Color Management (ICM) garante que uma imagem colorida, um objeto gráfico ou um objeto de texto seja renderizado o mais próximo possível de sua intenção original em qualquer dispositivo, apesar das diferenças nas tecnologias de geração de imagens e funcionalidades de cores entre os dispositivos. Quer você esteja verificando uma imagem ou outro gráfico em um scanner de cor, baixando-o pela Internet, exibindo ou editando-o na tela ou imprimindo-o em papel, filme ou outra mídia, o ICM 2,0 ajuda a manter as cores consistentes e precisas. Para obter mais informações sobre o ICM, consulte [sistema de cores do Windows](/previous-versions//dd372446(v=vs.85)).
+O ICM (Gerenciamento de Cores de Imagem da Microsoft) garante que uma imagem de cor, objeto gráfico ou objeto de texto seja renderizado o mais próximo possível de sua intenção original em qualquer dispositivo, apesar das diferenças nas tecnologias de geração de imagens e nas funcionalidades de cores entre os dispositivos. Se você está digitalizando uma imagem ou outro gráfico em um verificador de cores, baixando-a pela Internet, exibindo ou editando-a na tela ou imprimindo-a em papel, filme ou outra mídia, o ICM 2.0 ajuda a manter as cores consistentes e precisas. Para obter mais informações sobre ICM, [consulte Windows Color System](/previous-versions//dd372446(v=vs.85)).
 
-Há várias funções na interface gráfica de dispositivo (GDI) que usam ou operam em dados de cores. As seguintes funções de bitmap estão habilitadas para uso com o ICM:
+Há várias funções na GDI (interface de dispositivo gráfico) que usam ou operam em dados de cores. As seguintes funções de bitmap estão habilitadas para uso com ICM:
 
--   [**BitBlt**](/windows/desktop/api/Wingdi/nf-wingdi-bitblt)
--   [**CreateDIBitmap**](/windows/desktop/api/Wingdi/nf-wingdi-createdibitmap)
--   [**CreateDIBSection**](/windows/desktop/api/Wingdi/nf-wingdi-createdibsection)
--   [**MaskBlt**](/windows/desktop/api/Wingdi/nf-wingdi-maskblt)
+-   [**Bitblt**](/windows/desktop/api/Wingdi/nf-wingdi-bitblt)
+-   [**Createdibitmap**](/windows/desktop/api/Wingdi/nf-wingdi-createdibitmap)
+-   [**Createdibsection**](/windows/desktop/api/Wingdi/nf-wingdi-createdibsection)
+-   [**Maskblt**](/windows/desktop/api/Wingdi/nf-wingdi-maskblt)
 -   [**SetDIBColorTable**](/windows/desktop/api/Wingdi/nf-wingdi-setdibcolortable)
--   [**StretchBlt**](/windows/desktop/api/Wingdi/nf-wingdi-stretchblt)
--   [**SetDIBits**](/windows/desktop/api/Wingdi/nf-wingdi-setdibits)
--   [**SetDIBitsToDevice**](/windows/desktop/api/Wingdi/nf-wingdi-setdibitstodevice)
--   [**StretchDIBits**](/windows/desktop/api/Wingdi/nf-wingdi-stretchdibits)
+-   [**Stretchblt**](/windows/desktop/api/Wingdi/nf-wingdi-stretchblt)
+-   [**Setdibits**](/windows/desktop/api/Wingdi/nf-wingdi-setdibits)
+-   [**Setdibitstodevice**](/windows/desktop/api/Wingdi/nf-wingdi-setdibitstodevice)
+-   [**Stretchdibits**](/windows/desktop/api/Wingdi/nf-wingdi-stretchdibits)
 
  
 

@@ -1,10 +1,10 @@
-- name: Otimização de entrega (DO)
+- name: Otimização de Entrega (DO)
   href: delivery-optimization-portal.md
   items:
-    - name: FAZER referência
+    - name: Referência do DO
       href: do-reference.md
       items:
-        - name: FAZER enumerações
+        - name: Enumerações DO
           href: do-enumerations.md
           items:
             - name: BG_ERROR_CONTEXT
@@ -25,17 +25,17 @@
               href: deliveryoptimizationfileproperty.md
             - name: DODownloadCostPolicy
               href: ./deliveryoptimizationdownloadtypes/ne-deliveryoptimizationdownloadtypes-dodownloadcostpolicy.md
-            - name: Dobaixeproperty
+            - name: DODownloadProperty
               href: ./deliveryoptimizationdownloadtypes/ne-deliveryoptimizationdownloadtypes-dodownloadproperty.md
             - name: DODownloadPropertyEx
               href: ./dodownloadinternal/ne-dodownloadinternal-dodownloadpropertyex.md
-            - name: Dodownloadstate
+            - name: DODownloadState
               href: ./deliveryoptimizationdownloadtypes/ne-deliveryoptimizationdownloadtypes-dodownloadstate.md
             - name: DownloadMode
               href: downloadmode.md
             - name: SwarmStatus
               href: swarmstatus.md
-        - name: FAZER interfaces
+        - name: Interfaces DO
           href: do-interfaces.md
           items:
             - name: IBackgroundCopyCallback
@@ -66,11 +66,11 @@
                 - name: Métodos IBackgroundCopyFile
                   href: ibackgroundcopyfile-methods.md
                   items:
-                    - name: Método getlocalname
+                    - name: Método GetLocalName
                       href: ibackgroundcopyfile-getlocalname-method.md
                     - name: Método GetProgress
                       href: ibackgroundcopyfile-getprogress-method.md
-                    - name: Método getremotename
+                    - name: Método GetRemoteName
                       href: ibackgroundcopyfile-getremotename-method.md
             - name: IBackgroundCopyFile2
               href: ibackgroundcopyfile2.md
@@ -80,7 +80,7 @@
                   items:
                     - name: Método GetFileRanges
                       href: ibackgroundcopyfile2-getfileranges-method.md
-                    - name: Método setremotename
+                    - name: Método SetRemoteName
                       href: ibackgroundcopyfile2-setremotename-method.md
             - name: IBackgroundCopyFile5
               href: ibackgroundcopyfile5.md
@@ -92,15 +92,15 @@
                       href: ibackgroundcopyfile5-getproperty.md
                     - name: Método SetProperty
                       href: ibackgroundcopyfile5-setproperty.md
-            - name: Método ibackgroundcopyjob
+            - name: IBackgroundCopyJob
               href: ibackgroundcopyjob-.md
               items:
-                - name: Métodos método ibackgroundcopyjob
+                - name: Métodos IBackgroundCopyJob
                   href: ibackgroundcopyjob-methods.md
                   items:
                     - name: Método Cancel
                       href: ibackgroundcopyjob-cancel.md
-                    - name: Método Complete
+                    - name: Método completo
                       href: ibackgroundcopyjob-complete.md
                     - name: Método EnumFiles
                       href: ibackgroundcopyjob-enumfiles.md
@@ -116,13 +116,13 @@
                       href: ibackgroundcopyjob-getnotifyflags.md
                     - name: Método GetNotifyInterface
                       href: ibackgroundcopyjob-getnotifyinterface.md
-                    - name: Método getanteriority
+                    - name: Método GetPriority
                       href: ibackgroundcopyjob-getpriority.md
                     - name: Método GetProgress
                       href: ibackgroundcopyjob-getprogress.md
                     - name: Método GetState
                       href: ibackgroundcopyjob-getstate.md
-                    - name: Método gettimeies
+                    - name: Método GetTimes
                       href: ibackgroundcopyjob-gettimes.md
                     - name: Método GetType
                       href: ibackgroundcopyjob-gettype.md
@@ -134,7 +134,7 @@
                       href: ibackgroundcopyjob-setnotifyflags.md
                     - name: Método SetNotifyInterface
                       href: ibackgroundcopyjob-setnotifyinterface.md
-                    - name: Método setanteriority
+                    - name: Método SetPriority
                       href: ibackgroundcopyjob-setpriority.md
                     - name: Método Suspend
                       href: ibackgroundcopyjob-suspend.md

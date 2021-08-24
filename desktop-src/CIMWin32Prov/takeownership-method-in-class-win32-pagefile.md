@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 3aa0b2ec9f3805f1877f86bdf86d72b921d53ac9
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 3e76a30e42ca8c8d1a9a757a6b2d9d399187b7fdf2d25c607f19c572721a7d83
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108086014"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119751666"
 ---
 # <a name="takeownership-method-of-the-win32_pagefile-class"></a>Método TakeOwnerShip da classe de \_ arquivo de paginação Win32
 
@@ -91,7 +91,7 @@ O sistema de arquivos não é NTFS.
 **12**
 </dt> <dd>
 
-A plataforma não é o Windows.
+A plataforma não é Windows.
 
 </dd> <dt>
 
@@ -151,7 +151,7 @@ Um parâmetro especificado não é válido.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

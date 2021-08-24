@@ -1,8 +1,8 @@
 ---
-description: Método TakeOwnerShip da classe Win32_Directory-o método de classe WMI TakeOwnerShip Obtém a propriedade do arquivo lógico especificado no caminho do objeto.
+description: Método TakeOwnerShip da classe Win32_Directory - O método de classe WMI TakeOwnerShip obtém a propriedade do arquivo lógico especificado no caminho do objeto.
 ms.assetid: 1112823b-0bb6-4dc0-a5c4-8d3839a47a3a
 ms.tgt_platform: multiple
-title: Método TakeOwnerShip da classe Win32_Directory
+title: Método TakeOwnerShip da Win32_Directory classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 178f1bf523d939883a7fc18b5bdbd7142cc4f824
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 32644632e7abe15190837244116f04f647537f987d5d6f3286930d8e26d2e230
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108086024"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119751676"
 ---
-# <a name="takeownership-method-of-the-win32_directory-class"></a>Método TakeOwnerShip da classe do \_ diretório Win32
+# <a name="takeownership-method-of-the-win32_directory-class"></a>Método TakeOwnerShip da classe De diretório \_ Win32
 
-O método de [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **TakeOwnership** Obtém a propriedade do arquivo lógico especificado no caminho do objeto. Se o arquivo lógico for realmente um diretório, o **TakeOwnership** agirá recursivamente, assumindo a propriedade de todos os arquivos e subdiretórios contidos no diretório.
+O método de classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **TakeOwnerShip** obtém a propriedade do arquivo lógico especificado no caminho do objeto. Se o arquivo lógico for realmente um diretório, **TakeOwnerShip** atuará recursivamente, assumindo a propriedade de todos os arquivos e subdiretivos que o diretório contém.
 
-Este tópico usa a sintaxe formato MOF (MOF). Para obter mais informações sobre como usar esse método, consulte [chamando um método](/windows/desktop/WmiSdk/calling-a-method).
+Este tópico usa sintaxe Managed Object Format (MOF). Para obter mais informações sobre como usar esse método, consulte [Chamando um método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -56,7 +56,7 @@ A solicitação foi bem-sucedida.
 **2**
 </dt> <dd>
 
-Acesso negado.
+O acesso foi negado.
 
 </dd> <dt>
 
@@ -91,7 +91,7 @@ O sistema de arquivos não é NTFS.
 **12**
 </dt> <dd>
 
-A plataforma não é o Windows.
+A plataforma não é Windows.
 
 </dd> <dt>
 
@@ -119,7 +119,7 @@ Houve uma violação de compartilhamento.
 **16**
 </dt> <dd>
 
-O arquivo de inicialização especificado não era válido.
+O arquivo inicial especificado não era válido.
 
 </dd> <dt>
 
@@ -130,7 +130,7 @@ Um privilégio necessário para a operação não é mantido.
 
 </dd> <dt>
 
-**Abril**
+**21**
 </dt> <dd>
 
 Um parâmetro especificado não é válido.
@@ -139,7 +139,7 @@ Um parâmetro especificado não é válido.
 
 ## <a name="examples"></a>Exemplos
 
-O código de script Visual Basic a seguir chama o método [**TakeOwnership**](takeownership-method-in-class-cim-directory.md) para apropriar-se da pasta C: \\ Temp.
+O código Visual Basic Script a seguir chama o [**método TakeOwnerShip**](takeownership-method-in-class-cim-directory.md) para assumir a propriedade da pasta \\ temporária C: .
 
 
 ```VB
@@ -170,20 +170,20 @@ wscript.echo objOutParams.ReturnValue
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
 [Classes do sistema operacional](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_Diretório Win32**](win32-directory.md)
+[**Diretório \_ Win32**](win32-directory.md)
 </dt> </dl>
 
  

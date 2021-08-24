@@ -1,27 +1,27 @@
 ---
-description: Carregando um grafo a partir de um processo externo
+description: carregando um Graph de um processo externo
 ms.assetid: 1c657c7f-46d7-4feb-88a7-4a3227c9070b
-title: Carregando um grafo a partir de um processo externo
+title: carregando um Graph de um processo externo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eac42db3a87b00b1cb8f3a9ae5297215ae9bd3fa
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 1e92fdaebb9ce3cb6615153daf66a8991477bf76e16ac3298e8e8b2fb59d74b4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104570489"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119831047"
 ---
-# <a name="loading-a-graph-from-an-external-process"></a>Carregando um grafo a partir de um processo externo
+# <a name="loading-a-graph-from-an-external-process"></a>carregando um Graph de um processo externo
 
 GraphEdit pode carregar um grafo de filtro criado por um processo externo. Com esse recurso, você pode ver exatamente qual grafo de filtro seu aplicativo cria, com apenas uma quantidade mínima de código adicional em seu aplicativo.
 
 > [!Note]  
-> Esse recurso requer o Windows 2000, o Windows XP ou posterior.
+> esse recurso requer o Windows 2000, Windows XP ou posterior.
 
  
 
 > [!Note]  
-> A partir do Windows Vista, você deve registrar proppage.dll para habilitar esse recurso. Proppage.dll está incluído no SDK do Windows.
+> a partir do Windows Vista, você deve registrar proppage.dll para habilitar esse recurso. Proppage.dll está incluído no SDK do Windows.
 
  
 
@@ -34,7 +34,7 @@ O aplicativo deve registrar a instância do grafo de filtro na corrompidos (tabe
 
 
 
-em que *X* é o endereço hexadecimal do Gerenciador de gráfico de filtro, e *Y* é a ID do processo, também em hexadecimal.
+em que *X* é o endereço hexadecimal do filtro Graph Manager e *Y* é a id do processo, também em hexadecimal.
 
 Quando o aplicativo criar primeiro o grafo de filtro, chame a seguinte função:
 
@@ -116,14 +116,14 @@ pGraph->Release();
 
 
 
-Para exibir o gráfico de filtro no GraphEdit, execute o aplicativo e GraphEdit ao mesmo tempo. No menu **arquivo** GraphEdit, clique em **conectar ao grafo remoto...** Na caixa de diálogo **conectar ao grafo** , selecione a ID do processo (PID) do seu aplicativo e clique em **OK**. GraphEdit carrega o gráfico de filtro e o exibe. Não use nenhum outro recurso do GraphEdit nesse grafo — isso pode causar resultados inesperados. Por exemplo, não adicione ou remova filtros, ou pare e inicie o grafo. Feche o GraphEdit antes de sair do aplicativo.
+Para exibir o gráfico de filtro no GraphEdit, execute o aplicativo e GraphEdit ao mesmo tempo. no menu **arquivo** GraphEdit, clique em **Conexão para Graph remota...** na caixa de diálogo **Conexão Graph** , selecione a id do processo (pid) do seu aplicativo e clique em **OK**. GraphEdit carrega o gráfico de filtro e o exibe. Não use nenhum outro recurso do GraphEdit nesse grafo — isso pode causar resultados inesperados. Por exemplo, não adicione ou remova filtros, ou pare e inicie o grafo. Feche o GraphEdit antes de sair do aplicativo.
 
 > [!Note]  
 > Seu aplicativo pode atingir várias declarações quando ele é encerrado. Você pode ignorá-los.
 
  
 
-A ilustração a seguir mostra a caixa de diálogo **conectar ao grafo** .
+a ilustração a seguir mostra a **Conexão Graph** caixa de diálogo.
 
 ![conectar ao grafo](images/gedit-spy.png)
 
@@ -131,7 +131,7 @@ Quando o GraphEdit carrega o grafo, ele é executado no contexto do aplicativo d
 
 Esse recurso deve ser usado somente em compilações de depuração do seu aplicativo, não compilações de varejo, pois permite que outros aplicativos exibam ou controlem o grafo de filtro.
 
-## <a name="connecting-to-a-remote-graph-from-the-command-line"></a>Conectando-se a um grafo remoto na linha de comando
+## <a name="connecting-to-a-remote-graph-from-the-command-line"></a>conectando-se a um Graph remoto a partir da linha de comando
 
 O GraphEdit dá suporte a uma opção de linha de comando para carregar automaticamente um grafo remoto na inicialização. A sintaxe do é:
 
@@ -148,7 +148,7 @@ em que *moniker* é um moniker criado usando a função AddToRot, descrito anter
 
 <dl> <dt>
 
-[Simulando a criação de gráficos com o GraphEdit](simulating-graph-building-with-graphedit.md)
+[simulando Graph compilando com GraphEdit](simulating-graph-building-with-graphedit.md)
 </dt> </dl>
 
  

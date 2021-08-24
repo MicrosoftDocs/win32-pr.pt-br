@@ -1,31 +1,31 @@
 ---
-description: 'Quando um aplicativo executa uma operação IPropertyStorage:: WriteMultiple em qualquer propriedade de aquisição de imagem do Windows (WIA) gravável, o driver WIA executa uma validação no novo valor da propriedade.'
+description: Quando um aplicativo executa uma operação IPropertyStorage::WriteMultiple em qualquer propriedade WIA (Aquisição de Imagem) que pode ser Windows, o driver WIA executa uma validação no novo valor da propriedade.
 ms.assetid: 61ab2b8b-4c0a-40f4-87f0-2dd3ceea70ab
 title: Validação da propriedade WIA
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a60d9e64122e19249c19bc47564631162d783920
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6e1aca5879dbcb789b7e94a780c8fc99e53b703f6aea74498ae455e8e2ec6b98
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164517"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119813046"
 ---
 # <a name="wia-property-validation"></a>Validação da propriedade WIA
 
-Quando um aplicativo executa uma operação [IPropertyStorage:: WriteMultiple](/windows/win32/api/propidlbase/nf-propidlbase-ipropertystorage-writemultiple) em qualquer propriedade de aquisição de imagem do Windows (WIA) gravável, o driver WIA executa uma validação no novo valor da propriedade. A gravação de uma propriedade pode ter efeitos colaterais que alteram outros valores de propriedade. Cabe ao aplicativo ler todos os valores de propriedade após uma operação de gravação para determinar que todas as propriedades são definidas para os valores que o aplicativo deseja.
+Quando um aplicativo executa uma [operação IPropertyStorage::WriteMultiple](/windows/win32/api/propidlbase/nf-propidlbase-ipropertystorage-writemultiple) em qualquer propriedade WIA (Aquisição de Imagem) Windows writeable, o driver WIA executa uma validação no novo valor da propriedade. Escrever uma propriedade pode ter efeitos colaterais que alteram outros valores de propriedade. O aplicativo deve ler todos os valores de propriedade após uma operação de gravação para determinar que todas as propriedades são definidas como valores que o aplicativo deseja.
 
-Várias propriedades podem ser gravadas simultaneamente usando a operação [IPropertyStorage:: WriteMultiple](/windows/win32/api/propidlbase/nf-propidlbase-ipropertystorage-writemultiple) . Pode haver casos em que algumas atribuições de propriedade entram em conflito. Nesses casos, a prioridade usada para resolver conflitos é a seguinte:
+Várias propriedades podem ser escritas simultaneamente usando a [operação IPropertyStorage::WriteMultiple.](/windows/win32/api/propidlbase/nf-propidlbase-ipropertystorage-writemultiple) Pode haver casos em que algumas atribuições de propriedade estão em conflito. Nesses casos, a prioridade usada para resolver conflitos é a seguinte:
 
-1.  \_tentativa de \_ atual de IPS WIA \_
-2.  \_tipo de \_ dados IPA WIA
-3.  \_profundidade de IPA WIA \_
-4.  \_XRES IPS \_ WIA
-5.  \_YRES IPS \_ WIA
-6.  \_XPos IPS \_ WIA
-7.  \_YPos IPS \_ WIA
-8.  \_XEXTENT IPS \_ WIA
-9.  \_YEXTENT IPS \_ WIA
+1.  INTENÇÃO CUR \_ DO IPS \_ DO WIA \_
+2.  WIA \_ IPA \_ DATATYPE
+3.  PROFUNDIDADE DO \_ WIA IPA \_
+4.  WIA \_ IPS \_ XRES
+5.  WIA \_ IPS \_ YRES
+6.  WIA \_ IPS \_ XPOS
+7.  WIA \_ IPS \_ YPOS
+8.  WIA \_ IPS \_ XEXTENT
+9.  WIA \_ IPS \_ YEXTENT
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

@@ -1,25 +1,25 @@
 ---
-description: 'Saiba mais sobre: Propriedades de EsentNoCurrentRecordException'
-title: Propriedades de EsentNoCurrentRecordException
+description: 'Saiba mais sobre: propriedades EsentNoCurrentRecordException'
+title: Propriedades EsentNoCurrentRecordException
 TOCTitle: EsentNoCurrentRecordException properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.EsentNoCurrentRecordException
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentnocurrentrecordexception_properties(v=EXCHG.10)
 ms:contentKeyID: 55102365
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 35f4468c8743caf16c26136cef0a43f7904e19b6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f2e3854506c6e04c88228c69158798f238148f7c0c47a6fd37974b530cd92bf9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103837371"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119722823"
 ---
-# <a name="esentnocurrentrecordexception-properties"></a>Propriedades de EsentNoCurrentRecordException
+# <a name="esentnocurrentrecordexception-properties"></a>Propriedades EsentNoCurrentRecordException
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo [EsentNoCurrentRecordException](./esentnocurrentrecordexception-class.md) expõe os membros a seguir.
+O [tipo EsentNoCurrentRecordException](./esentnocurrentrecordexception-class.md) expõe os membros a seguir.
 
 ## <a name="properties"></a>Propriedades
 
@@ -40,16 +40,16 @@ O tipo [EsentNoCurrentRecordException](./esentnocurrentrecordexception-class.md)
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn274313(v=exchg.10).md">Erro</a></td>
-<td>Obtém o erro de ESENT subjacente para esta exceção. (Herdado de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.)</td>
+<td>Obtém o erro Esent subjacente para essa exceção. (Herdado de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">HelpLink</a></td>
+<td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">Helplink</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.protproperty(exchg.10).gif" title="Propriedade protegida" alt="Protected property" /></td>
-<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">Resultado</a></td>
+<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">HResult</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
@@ -69,7 +69,7 @@ O tipo [EsentNoCurrentRecordException](./esentnocurrentrecordexception-class.md)
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">Pilha</a></td>
+<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">StackTrace</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
@@ -89,4 +89,4 @@ Parte superior
 
 [Classe EsentNoCurrentRecordException](./esentnocurrentrecordexception-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

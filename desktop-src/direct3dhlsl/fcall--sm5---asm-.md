@@ -4,12 +4,12 @@ description: Chamada de função de interface.
 ms.assetid: C21784A0-D2F4-4DDE-9AC4-4F21351BCA6E
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c57ea40fec51cf4155b0932f6ce4a7b80d3180dd
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: e7781fc0a2fc7bbd715084d3c0e9682a433ddf16e4492724df8fdb2e31c84689
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104365279"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119854506"
 ---
 # <a name="fcall-sm5---asm"></a>fcall (SM5-ASM)
 
@@ -55,7 +55,7 @@ Essa instrução se aplica aos seguintes estágios de sombreador:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 

@@ -1,7 +1,7 @@
 ---
-description: Função de proxy para o método CreateEncoder.
+description: Função proxy para o método CreateEncoder.
 ms.assetid: e3ffad7f-eb0e-481d-81ee-caf18e14ba59
-title: Função IWICImagingFactory_CreateEncoder_Proxy
+title: IWICImagingFactory_CreateEncoder_Proxy função
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 38e5dd19ddc07de42f8be9e8c887a4f412a853b5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 20e1a95253c0943383842b9667d93e4fc98c48ab2abf229bae7c0b3ad3f3fe63
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105814110"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119812276"
 ---
-# <a name="iwicimagingfactory_createencoder_proxy-function"></a>\_Função de proxy Createencoderr IWICImagingFactory \_
+# <a name="iwicimagingfactory_createencoder_proxy-function"></a>Função proxy IWICImagingFactory \_ CreateEncoder \_
 
-Função de proxy para o método [**CreateEncoder**](/windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createencoder) .
+Função proxy para o [**método CreateEncoder.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createencoder)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,14 +43,14 @@ HRESULT IWICImagingFactory_CreateEncoder_Proxy(
 
 <dl> <dt>
 
-*pFactory* \[ no\]
+*pFactory* \[ Em\]
 </dt> <dd>
 
-Tipo: **[**IWICImagingFactory**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory) \** _
+Tipo: **[ **IWICImagingFactory**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory)\***
 
 </dd> <dt>
 
-_guidContainerFormat * \[ in\]
+*guidContainerFormat* \[ Em\]
 </dt> <dd>
 
 Tipo: **REFGUID**
@@ -59,29 +59,29 @@ O GUID para o formato de contêiner desejado.
 
 </dd> <dt>
 
-*pguidVendor* \[ em, opcional\]
+*pguidVendor* \[ in, opcional\]
 </dt> <dd>
 
-Tipo: **const GUID \** _
+Tipo: **const \* GUID**
 
 O GUID do fornecedor para o codificador.
 
 </dd> <dt>
 
-_ppIEncoder * \[ out\]
+*ppIEncoder* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **IWICBitmapEncoder**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapencoder)\*\***
 
-Um ponteiro que recebe um ponteiro para um novo [**IWICBitmapDecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder).
+Um ponteiro que recebe um ponteiro para um [**novo IWICBitmapDecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder).
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
-Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se essa função for bem-sucedida, ela retornará **S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
@@ -91,9 +91,9 @@ Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows XP com SP2, \[ somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                                                                             |
-| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows XP com SP2, Windows aplicativos da área de trabalho do Vista \[\]<br/>                                                                                              |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                                                                                             |
+| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

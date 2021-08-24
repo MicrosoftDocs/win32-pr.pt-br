@@ -13,12 +13,12 @@ keywords:
 - coletores de gravador, adicionando
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 886a6630a02d1fea56ce387077484f173ddf4dd3
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: aca64b412dd83e9bbba1d8de66b2aef335573c9e50073c2afe898fed0c34761b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104365575"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119810016"
 ---
 # <a name="adding-sinks-to-the-writer"></a>Adicionando coletores ao gravador
 
@@ -73,9 +73,9 @@ Exit:
 [**Trabalhando com coletores de gravador**](working-with-writer-sinks.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

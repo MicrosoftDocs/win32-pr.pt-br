@@ -3,7 +3,7 @@ title: Transação de XTYP_CONNECT (ddeml. h)
 description: Um cliente usa a \_ transação XTYP Connect para estabelecer uma conversa.
 ms.assetid: 74f43b10-f7ac-4370-9caa-7b9ddf3413ed
 keywords:
-- Troca de dados de transação XTYP_CONNECT
+- XTYP_CONNECT de dados de transação Exchange
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e2268994f1be000373691d6c25dbb7220d3e109e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c1ff7a7a79d8b61deef6b5f19b829e5c8dd8f4603c5f60c3b47d0a84b0603736
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085688"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119793416"
 ---
 # <a name="xtyp_connect-transaction"></a>Transação do XTYP \_ Connect
 
-Um cliente usa a transação **XTYP \_ Connect** para estabelecer uma conversa. Uma função de retorno de chamada de servidor troca dinâmica de dados (DDE), [*DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), recebe essa transação quando um cliente especifica um nome de serviço ao qual o servidor dá suporte (e um nome de tópico que não é **nulo**) em uma chamada para a função [**DdeConnect**](/windows/desktop/api/Ddeml/nf-ddeml-ddeconnect) .
+Um cliente usa a transação **XTYP \_ Connect** para estabelecer uma conversa. uma função de retorno de chamada de servidor troca dinâmica de dados (DDE), [*DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), recebe essa transação quando um cliente especifica um nome de serviço ao qual o servidor dá suporte (e um nome de tópico que não é **nulo**) em uma chamada para a função [**DdeConnect**](/windows/desktop/api/Ddeml/nf-ddeml-ddeconnect) .
 
 
 ```C++
@@ -94,7 +94,7 @@ Especifica se o cliente é a mesma instância de aplicativo que o servidor. Se o
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Uma função de retorno de chamada de servidor deve retornar **true** para permitir que o cliente estabeleça uma conversa no nome do serviço especificado e no par do nome do tópico, ou a função deve retornar **false** para negar a conversa. Se a função de retorno de chamada retornar **true** e uma conversa for estabelecida com êxito, o sistema passará o identificador de conversa para o servidor emitindo uma transação [**XTYP \_ Connect \_ Confirm**](xtyp-connect-confirm.md) para a função de retorno de chamada do servidor (a menos que o servidor tenha especificado o sinalizador **CBF \_ Skip \_ Connect \_ confirmations** na função [**DdeInitialize**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea) ).
 

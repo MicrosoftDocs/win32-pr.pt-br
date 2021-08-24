@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: d252b1586ccea7d1c8134af53bd71a624bde13e1
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: d2ba005dec2584c5b9b581bff1d4eb465a78ff3301cf4c2d17528f92dbe740c7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103919902"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119792336"
 ---
 # <a name="igrfcache-interface"></a>Interface IGrfCache
 
@@ -30,13 +30,13 @@ A interface do `IGrfCache` não tem suporte.
 
 ## <a name="members"></a>Membros
 
-A interface **IGrfCache** herda da interface [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) , mas não tem membros adicionais.
+A interface **IGrfCache** herda da interface [**IUnknown,**](/windows/win32/api/unknwn/nn-unknwn-iunknown) mas não tem membros adicionais.
 
 ## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[Referência de C++ dos serviços de edição do DirectShow](directshow-editing-services-c---reference.md)
+[DirectShow Referência do C++ dos Serviços de Edição](directshow-editing-services-c---reference.md)
 </dt> </dl>
 
  

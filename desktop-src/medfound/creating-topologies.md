@@ -4,12 +4,12 @@ ms.assetid: afd1e646-9bb6-4265-a225-6aaaf1a7bb2a
 title: Criando topologias
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a9ec738c82ea2b85bcae7d4c05627b81ad939db
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e4048200055066a601f9044ff109f173cb00fc4449a71ea1331b29c8be1a59b8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104370538"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119777616"
 ---
 # <a name="creating-topologies"></a>Criando topologias
 
@@ -33,7 +33,7 @@ As etapas gerais para criar uma topologia são as seguintes:
 
 4.  Adicione cada nó à topologia chamando [**IMFTopology:: AddNode**](/windows/desktop/api/mfidl/nf-mfidl-imftopology-addnode).
 
-5.  Conecte os nós. Para conectar um nó, chame [**IMFTopologyNode:: ConnectOutput**](/windows/desktop/api/mfidl/nf-mfidl-imftopologynode-connectoutput) no nó upstream e passe um ponteiro para o nó downstream.
+5.  Conexão os nós. Para conectar um nó, chame [**IMFTopologyNode:: ConnectOutput**](/windows/desktop/api/mfidl/nf-mfidl-imftopologynode-connectoutput) no nó upstream e passe um ponteiro para o nó downstream.
 
 Os tópicos a seguir fornecem as etapas específicas para cada tipo de nó.
 

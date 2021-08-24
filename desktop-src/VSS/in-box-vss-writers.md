@@ -4,26 +4,26 @@ ms.assetid: e20a303d-9440-42be-b383-85f6fad89157
 title: Gravadores do VSS In-Box
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ddc256cfe72f3653d4af282148c87c2b45bcac51
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0e34591cb046a8cc702d32452c159e5b8877f2e66603cbd1b048a0841a04e3bc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105763415"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119767795"
 ---
 # <a name="in-box-vss-writers"></a>Gravadores do VSS In-Box
 
 O sistema operacional Windows inclui um conjunto de gravadores do VSS responsáveis por enumerar os dados exigidos por vários recursos do Windows. Eles são chamados de gravadores "in-box".
 
 > [!Note]  
-> O gravador in-box do MSDE não está disponível no Windows Vista, no Windows Server 2008 e posterior. Em vez disso, o gravador do SQL deve ser usado para fazer backup de bancos de dados do SQL Server. Somente SQL Server 2005 SP2 e posterior têm suporte no Windows Vista, no Windows Server 2008 e posterior.
+> o gravador in-box do MSDE não está disponível no Windows Vista, no Windows Server 2008 e posterior. em vez disso, o gravador de SQL deve ser usado para fazer backup de bancos de dados do SQL Server. somente SQL Server 2005 SP2 e versões posteriores têm suporte no Windows Vista, Windows Server 2008 e posterior.
 
  
 
 -   [Gravador VSS do Active Directory Domain Services (NTDS)](#active-directory-domain-services-ntds-vss-writer)
 -   [Gravador de Serviços de Federação do Active Directory (AD FS)](#active-directory-federation-services-writer)
 -   [Gravador VSS do serviços AD LDS (LDS)](#active-directory-lightweight-directory-services-lds-vss-writer)
--   [Gravador de Active Directory Rights Management Services (AD RMS)](#active-directory-rights-management-services-ad-rms-writer)
+-   [gravador de Active Directory Rights Management Services (AD RMS)](#active-directory-rights-management-services-ad-rms-writer)
 -   [Gravador ASR (recuperação automatizada do sistema)](#automated-system-recovery-asr-writer)
 -   [Gravador de Serviço de Transferência Inteligente em Segundo Plano (BITS)](#background-intelligent-transfer-service-bits-writer)
 -   [Gravador de autoridade de certificação](#certificate-authority-writer)
@@ -50,9 +50,9 @@ O sistema operacional Windows inclui um conjunto de gravadores do VSS responsáv
 -   [Gravador do sistema](#system-writer)
 -   [Gravador de Agendador de Tarefas](#task-scheduler-writer)
 -   [Gravador de repositório de metadados do VSS](#vss-metadata-store-writer)
--   [Gravador do WDS (serviços de implantação do Windows)](#windows-deployment-services-wds-writer)
--   [Gravador do banco de dados interno do Windows (WID)](#windows-internal-database-wid-writer)
--   [Gravador WINS (serviço de cadastramento na Internet do Windows)](#windows-internet-name-service-wins-writer)
+-   [Windows Gravador do WDS (serviços de implantação)](#windows-deployment-services-wds-writer)
+-   [gravador do Banco de Dados Interno do Windows (WID)](#windows-internal-database-wid-writer)
+-   [Windows Gravador do serviço de cadastramento na Internet (WINS)](#windows-internet-name-service-wins-writer)
 -   [Gravador WMI](#wmi-writer)
 
 ## <a name="active-directory-domain-services-ntds-vss-writer"></a>Gravador VSS do Active Directory Domain Services (NTDS)
@@ -146,7 +146,7 @@ A cadeia de caracteres do nome do gravador para esse gravador é "ADAM (Instance
 
 A ID do gravador para este gravador é DD846AAA-A1B6-42A8-AAF8-03DCB6114BFD. Essa ID de gravador é a mesma para todas as instâncias.
 
-## <a name="active-directory-rights-management-services-ad-rms-writer"></a>Gravador de Active Directory Rights Management Services (AD RMS)
+## <a name="active-directory-rights-management-services-ad-rms-writer"></a>gravador de Active Directory Rights Management Services (AD RMS)
 
 Esse gravador relata os arquivos de dados do AD RMS (serviço de Active Directory Rights Management).
 
@@ -194,11 +194,11 @@ A ID do gravador para o gravador é 6F5B15B5-DA24-4D88-B737-63063E3A1F86.
 
 O gravador VSS do serviço de cluster está documentado na documentação da API do [serviço de cluster](/previous-versions/windows/desktop/mscs/backing-up-and-restoring-the-failover-cluster-configuration-using-vss) .
 
-**Windows Vista, Windows Server 2003 e Windows XP:** Esse gravador não tem suporte até o Windows Vista com Service Pack 1 (SP1) e o Windows Server 2008.
+**Windows Vista, Windows Server 2003 e Windows XP:** esse gravador não tem suporte até Windows Vista com Service Pack 1 (SP1) e Windows Server 2008.
 
 ## <a name="cluster-shared-volume-csv-vss-writer"></a>Gravador VSS de Volume Compartilhado Clusterizado (CSV)
 
-Esse gravador relata os arquivos de dados de Volume Compartilhado Clusterizado (CSV). Esse gravador é um gravador in-box para versões do sistema operacional Windows Server; Ele não é fornecido no Windows Client.
+Esse gravador relata os arquivos de dados de Volume Compartilhado Clusterizado (CSV). esse gravador é um gravador in-box para versões do sistema operacional Windows Server; ele não é fornecido no Windows Client.
 
 **Windows server 2008 R2, Windows server 2008 e Windows server 2003:** Não há suporte para esse gravador.
 
@@ -222,7 +222,7 @@ A ID do gravador do gravador de banco de dados de registro de classe COM+ é 542
 
 ## <a name="data-deduplication-writer"></a>Gravador de eliminação de duplicação de dados
 
-O gravador VSS de eliminação de duplicação de dados está documentado na documentação da API de [eliminação de duplicação de dados](/previous-versions/windows/desktop/dedup/backup-and-restore-of-data-deduplication-enabled-volumes) . Esse gravador é um gravador in-box para versões do sistema operacional Windows Server; Ele não é fornecido no Windows Client.
+O gravador VSS de eliminação de duplicação de dados está documentado na documentação da API de [eliminação de duplicação de dados](/previous-versions/windows/desktop/dedup/backup-and-restore-of-data-deduplication-enabled-volumes) . esse gravador é um gravador in-box para versões do sistema operacional Windows Server; ele não é fornecido no Windows Client.
 
 **Windows server 2008 R2, Windows server 2008 e Windows server 2003:** Não há suporte para esse gravador.
 
@@ -230,11 +230,11 @@ O gravador VSS de eliminação de duplicação de dados está documentado na doc
 
 O componente a seguir inclui um gravador VSS: [replicação de sistema de arquivos distribuído (DFSR)](/previous-versions/windows/desktop/dfsr/dfsr-replicated-folders)
 
-**Windows Vista, Windows Server 2003 e Windows XP:** Esse gravador não tem suporte até o Windows Vista com SP1 e o Windows Server 2008.
+**Windows Vista, Windows Server 2003 e Windows XP:** esse gravador não tem suporte até o Windows Vista com SP1 e o Windows Server 2008.
 
 ## <a name="dynamic-host-configuration-protocol-dhcp-writer"></a>Gravador DHCP (protocolo de configuração dinâmica de hosts)
 
-Esse gravador é responsável por enumerar os arquivos necessários para a função de servidor DHCP. Esse gravador é um gravador in-box para versões do sistema operacional Windows Server; Ele não é fornecido no Windows Client.
+Esse gravador é responsável por enumerar os arquivos necessários para a função de servidor DHCP. esse gravador é um gravador in-box para versões do sistema operacional Windows Server; ele não é fornecido no Windows Client.
 
 A cadeia de caracteres do nome do gravador para este gravador é "gravador Jet do DHCP".
 
@@ -244,13 +244,13 @@ A ID do gravador para este gravador é BE9AC81E-3619-421F-920F-4C6FEA9E93AD.
 
 O gravador do serviço de replicação de arquivo está documentado em [backup e restauração de uma pasta FRS-Replicated SYSVOL](backing-up-and-restoring-an-frs-replicated-sysvol-folder.md).
 
-**Windows Vista, Windows Server 2003 e Windows XP:** Esse gravador não tem suporte até o Windows Vista com SP1 e o Windows Server 2008.
+**Windows Vista, Windows Server 2003 e Windows XP:** esse gravador não tem suporte até o Windows Vista com SP1 e o Windows Server 2008.
 
 ## <a name="file-server-resource-manager-fsrm-writer"></a>Gravador FSRM (Gerenciador de recursos de servidor de arquivos)
 
-Esse gravador enumera os arquivos de configuração do FSRM que são usados para o backup do estado do sistema. Durante as operações de restauração, ela impede alterações na configuração do FSRM e interrompe temporariamente a imposição de cotas e de triagens de arquivos. Depois que a restauração for concluída, o gravador atualizará o FSRM com a configuração restaurada. Esse gravador só está presente quando o FSRM (parte da função de serviços de arquivos) está instalado e em execução. Esse gravador é um gravador in-box para versões do sistema operacional Windows Server; Ele não é fornecido no Windows Client.
+Esse gravador enumera os arquivos de configuração do FSRM que são usados para o backup do estado do sistema. Durante as operações de restauração, ela impede alterações na configuração do FSRM e interrompe temporariamente a imposição de cotas e de triagens de arquivos. Depois que a restauração for concluída, o gravador atualizará o FSRM com a configuração restaurada. Esse gravador só está presente quando o FSRM (parte da função de serviços de arquivos) está instalado e em execução. esse gravador é um gravador in-box para versões do sistema operacional Windows Server; ele não é fornecido no Windows Client.
 
-**Windows Server 2003:** Esse gravador não tem suporte até o Windows Server 2003 R2.
+**Windows Server 2003:** esse gravador não tem suporte até o Windows Server 2003 R2.
 
 A cadeia de caracteres do nome do gravador para esse gravador é "gravador FSRM".
 
@@ -258,17 +258,17 @@ A ID do gravador para este gravador é 12CE4370-5BB7-4C58-A76A-E5D5097E3674.
 
 ## <a name="hyper-v-writer"></a>Gravador do Hyper-V
 
-O gravador VSS do Hyper-V está documentado na documentação da API do [Hyper-v](/previous-versions/windows/desktop/virtual/backing-up-and-restoring-virtual-machines) . Esse gravador é um gravador in-box para versões do sistema operacional Windows Server; Ele não é fornecido no Windows Client.
+O gravador VSS do Hyper-V está documentado na documentação da API do [Hyper-v](/previous-versions/windows/desktop/virtual/backing-up-and-restoring-virtual-machines) . esse gravador é um gravador in-box para versões do sistema operacional Windows Server; ele não é fornecido no Windows Client.
 
-**Windows Server 2003:** Esse gravador não tem suporte até o Windows Server 2008.
+**Windows Server 2003:** este gravador não tem suporte até o Windows Server 2008.
 
 ## <a name="iis-configuration-writer"></a>Gravador de configuração do IIS
 
 O gravador de configuração do IIS é responsável por enumerar os arquivos de configuração do IIS.
 
-**Windows Vista, Windows Server 2003 e Windows XP:** Esse gravador não tem suporte até o Windows Vista com SP1 e o Windows Server 2008. Os solicitantes são necessários para fazer backup dos arquivos de configuração do IIS, incluindo o arquivo de machine.config do .NET FX ou o arquivo de web.config raiz do ASP.NET.
+**Windows Vista, Windows Server 2003 e Windows XP:** esse gravador não tem suporte até o Windows Vista com SP1 e o Windows Server 2008. os solicitantes são necessários para fazer backup dos arquivos de configuração do IIS, incluindo o arquivo de machine.config do .net FX ou o arquivo de web.config de ASP.NET raiz.
 
-Esse gravador não faz backup do arquivo de machine.config do .NET FX ou do arquivo de web.config raiz ASP.NET porque esses arquivos são enumerados pelo gravador do sistema.
+esse gravador não faz backup do arquivo de machine.config do .net FX ou do arquivo de web.config de ASP.NET raiz porque esses arquivos são enumerados pelo gravador do sistema.
 
 Esse gravador faz backup de todos os arquivos que estão nos diretórios de configuração% windir% \\ System32 \\ inetsrv \\ \\ e% WINDIR% \\ System32 \\ inetsrv \\ , exceto pelos arquivos enumerados pelo gravador do sistema.
 
@@ -278,7 +278,7 @@ A ID do gravador para o gravador de configuração do IIS é 2A40FD15-DFCA-4aa8-
 
 O gravador de metabase do IIS (servidor de informações da Internet) é responsável por enumerar o arquivo de metabase do IIS.
 
-**Windows Vista, Windows Server 2003 e Windows XP:** Esse gravador não tem suporte até o Windows Vista com SP1 e o Windows Server 2008. Os solicitantes são necessários para fazer backup do arquivo da metabase do IIS.
+**Windows Vista, Windows Server 2003 e Windows XP:** esse gravador não tem suporte até o Windows Vista com SP1 e o Windows Server 2008. Os solicitantes são necessários para fazer backup do arquivo da metabase do IIS.
 
 A ID do gravador para o gravador da metabase do IIS é 59B1f0CF-90EF-465F-9609-6CA8B2938366.
 
@@ -298,7 +298,7 @@ Esse gravador existe para excluir arquivos de índice de pesquisa de cópias de 
 
 **Windows Server 2003:** Não há suporte para esse gravador.
 
-Para instalar esse gravador no servidor, você deve instalar a função serviços de arquivo e habilitar a Serviço de Pesquisa do Windows.
+para instalar esse gravador no servidor, você deve instalar a função serviços de arquivo e habilitar o Serviço de Pesquisa de Windows.
 
 A cadeia de caracteres do nome do gravador para esse gravador é "gravador de serviço MSSearch".
 
@@ -306,9 +306,9 @@ A ID do gravador para o gravador de serviço MSSearch é CD3F2362-8BEF-46C7-9181
 
 ## <a name="nps-vss-writer"></a>Gravador VSS do NPS
 
-O gravador do NPS é responsável por enumerar os arquivos de configuração do NPS (servidor de diretivas de rede) para servidores que têm a função de serviços de acesso e política de rede instalada.
+o gravador nps é responsável por enumerar os arquivos de configuração do NPS (servidor de diretivas de rede) para servidores que têm a diretiva de rede e a função de Serviços do Access instaladas.
 
-**Windows Vista, Windows Server 2003 e Windows XP:** Esse gravador não tem suporte até o Windows Vista com SP1 e o Windows Server 2008.
+**Windows Vista, Windows Server 2003 e Windows XP:** esse gravador não tem suporte até o Windows Vista com SP1 e o Windows Server 2008.
 
 A cadeia de caracteres do nome do gravador para esse gravador é "gravador VSS do NPS".
 
@@ -318,7 +318,7 @@ A ID do gravador para o gravador VSS do NPS é 0x35E81631-13E1-48DB-97FC-D5BC721
 
 Esse gravador relata os arquivos de configuração do contador de desempenho. Esses arquivos são modificados apenas durante a instalação do aplicativo e devem ser armazenados em backup e restaurados durante as restaurações e backups de estado do sistema.
 
-**Windows server 2008, Windows Vista, Windows server 2003 e Windows XP:** Não há suporte para esse gravador. Os solicitantes são necessários para fazer backup desses arquivos manualmente. (Consulte [fazendo backup e restaurando o estado do sistema](locating-additional-system-files.md).)
+**Windows server 2008, Windows Vista, Windows Server 2003 e Windows XP:** Não há suporte para esse gravador. Os solicitantes são necessários para fazer backup desses arquivos manualmente. (Consulte [fazendo backup e restaurando o estado do sistema](locating-additional-system-files.md).)
 
 A cadeia de caracteres do nome do gravador para esse gravador é "gravador de contadores de desempenho".
 
@@ -326,9 +326,9 @@ A ID do gravador para o gravador de contadores de desempenho é 0BADA1DE-01A9-46
 
 ## <a name="registry-writer"></a>Gravador do registro
 
-O gravador do registro informa os arquivos de registro do Windows para habilitar backups in-loco e restaurações do registro. Ele não relata hives de usuário.
+o gravador do registro informa o Windows arquivos do registro para habilitar backups e restaurações in-loco do registro. Ele não relata hives de usuário.
 
-**Windows Server 2003:** No Windows Server 2003, esse gravador usa um arquivo de repositório intermediário (às vezes chamado de "arquivo saliva") para armazenar os dados do registro. (Consulte [operações de backup e restauração do registro em VSS](registry-backup-and-restore-operations-under-vss.md).)
+**Windows Server 2003:** no Windows Server 2003, esse gravador usa um arquivo de repositório intermediário (às vezes chamado de "arquivo saliva") para armazenar os dados do registro. (Consulte [operações de backup e restauração do registro em VSS](registry-backup-and-restore-operations-under-vss.md).)
 
 **Windows XP:** Não há suporte para esse gravador. (Consulte [operações de backup e restauração do registro em VSS](registry-backup-and-restore-operations-under-vss.md).)
 
@@ -342,7 +342,7 @@ Esse gravador é responsável por enumerar os arquivos de gateway de Serviços d
 
 **Windows Server 2003:** Não há suporte para esse gravador.
 
-Esse gravador é um gravador in-box para versões do sistema operacional Windows Server; Ele não é fornecido no Windows Client.
+esse gravador é um gravador in-box para versões do sistema operacional Windows Server; ele não é fornecido no Windows Client.
 
 O gateway de Serviços de Área de Trabalho Remota depende de várias chaves do registro cujo backup está sendo feito e, portanto, precisa de backup e restauração junto com o registro.
 
@@ -356,7 +356,7 @@ Esse gravador é responsável por enumerar os arquivos de licenciamento de Servi
 
 **Windows Server 2003:** Não há suporte para esse gravador.
 
-Esse gravador é um gravador in-box para versões do sistema operacional Windows Server; Ele não é fornecido no Windows Client.
+esse gravador é um gravador in-box para versões do sistema operacional Windows Server; ele não é fornecido no Windows Client.
 
 Serviços de Área de Trabalho Remota licenciamento depende de várias chaves do registro cujo backup está sendo feito e, portanto, precisa de backup e restauração junto com o registro.
 
@@ -376,7 +376,7 @@ A ID do gravador para o gravador de otimização de cópia de sombra é 4DC3BDD4
 
 ## <a name="sync-share-service-writer"></a>Gravador do serviço de compartilhamento de sincronização
 
-**Windows Server 2012 R2:** Esse gravador está incluído no Windows Server 2012 R2 e nas versões mais recentes do servidor. Ele não é compatível com as versões da área de trabalho.
+**Windows Server 2012 R2:** esse gravador está incluído com o Windows Server 2012 R2 e versões mais recentes do servidor. Ele não é compatível com as versões da área de trabalho.
 
 Esse gravador é responsável por enumerar os compartilhamentos de sincronização em servidores que têm o serviço de compartilhamento de sincronização instalado e para garantir que seus metadados e dados permaneçam consistentes durante o backup e a restauração.
 
@@ -396,8 +396,8 @@ O gravador do sistema enumera todos os binários do sistema operacional e do dri
 
 Esse gravador é executado como parte do serviço de serviços de criptografia (CryptSvc). O gravador do sistema gera uma lista de arquivos que contém os seguintes arquivos:
 
--   Todos os arquivos estáticos que foram instalados. Um arquivo estático é um arquivo listado no manifesto do componente com o atributo de arquivo **writeableType** definido como "Static" ou "". Os arquivos estáticos incluem todos os arquivos protegidos pelo Proteção de Recursos do Windows (WRP). No entanto, nem todos os arquivos estáticos são arquivos protegidos por WRP. Por exemplo, os arquivos de jogos são estáticos, mas não protegidos por WRP para que os administradores possam alterar as configurações de controle dos pais.
--   O conteúdo do diretório do Windows lado a lado (WinSxS), incluindo todos os manifestos, componentes opcionais e arquivos Win32 de terceiros.
+-   Todos os arquivos estáticos que foram instalados. Um arquivo estático é um arquivo listado no manifesto do componente com o atributo de arquivo **writeableType** definido como "Static" ou "". os arquivos estáticos incluem todos os arquivos protegidos pelo Proteção de Recursos do Windows (WRP). No entanto, nem todos os arquivos estáticos são arquivos protegidos por WRP. Por exemplo, os arquivos de jogos são estáticos, mas não protegidos por WRP para que os administradores possam alterar as configurações de controle dos pais.
+-   o conteúdo do Windows diretório lado a lado (WinSxS), incluindo todos os manifestos, componentes opcionais e arquivos Win32 de terceiros.
     > [!Note]  
     > Muitos dos arquivos no diretório% windir% \\ System32 são links físicos para arquivos no diretório WinSxS.
 
@@ -417,7 +417,7 @@ A ID do gravador para o gravador do sistema é E8132975-6F93-4464-A53E-1050253AE
 
 Esse gravador relata os arquivos de tarefa do Agendador de tarefas.
 
-**Windows server 2008, Windows Vista, Windows server 2003 e Windows XP:** Não há suporte para esse gravador. Os solicitantes são necessários para fazer backup desses arquivos manualmente. (Consulte [fazendo backup e restaurando o estado do sistema](locating-additional-system-files.md).)
+**Windows server 2008, Windows Vista, Windows Server 2003 e Windows XP:** Não há suporte para esse gravador. Os solicitantes são necessários para fazer backup desses arquivos manualmente. (Consulte [fazendo backup e restaurando o estado do sistema](locating-additional-system-files.md).)
 
 A cadeia de caracteres do nome do gravador para este gravador é "gravador de Agendador de Tarefas".
 
@@ -427,25 +427,25 @@ A ID do gravador para o gravador é D61D61C8-D73A-4EEE-8CDD-F6F9786B7124.
 
 Esse gravador relata os arquivos de metadados do gravador para todos os gravadores Express do VSS.
 
-**Windows server 2008, Windows Vista, Windows server 2003 e Windows XP:** Não há suporte para esse gravador.
+**Windows server 2008, Windows Vista, Windows Server 2003 e Windows XP:** Não há suporte para esse gravador.
 
 A cadeia de caracteres do nome do gravador para esse gravador é "gravador do repositório de metadados do VSS Express Writer".
 
 A ID do gravador para o gravador é 75DFB225-E2E4-4D39-9AC9-FFAFF65DDF06.
 
-## <a name="windows-deployment-services-wds-writer"></a>Gravador do WDS (serviços de implantação do Windows)
+## <a name="windows-deployment-services-wds-writer"></a>Windows Gravador do WDS (serviços de implantação)
 
-Esse gravador relata os arquivos de dados do WDS (serviços de implantação do Windows).
+esse gravador relata os arquivos de dados do WDS (serviços de implantação de Windows).
 
-**Windows server 2008, Windows Vista, Windows server 2003 e Windows XP:** Não há suporte para esse gravador.
+**Windows server 2008, Windows Vista, Windows Server 2003 e Windows XP:** Não há suporte para esse gravador.
 
 A cadeia de caracteres do nome do gravador para esse gravador é "gravador VSS do WDS".
 
 A ID do gravador para este gravador é 82CB5521-68DB-4626-83A4-7FC6F88853E9.
 
-## <a name="windows-internal-database-wid-writer"></a>Gravador do banco de dados interno do Windows (WID)
+## <a name="windows-internal-database-wid-writer"></a>gravador do Banco de Dados Interno do Windows (WID)
 
-Esse gravador relata os arquivos de dados do banco de dados interno do Windows (WID).
+esse gravador relata os arquivos de dados de Banco de Dados Interno do Windows (WID).
 
 **Windows server 2008 R2, Windows 7, Windows server 2008, Windows Vista, Windows Server 2003 e Windows XP:** Não há suporte para esse gravador.
 
@@ -453,7 +453,7 @@ A cadeia de caracteres do nome do gravador para este gravador é "WIDWriter".
 
 A ID do gravador para este gravador é 8D5194E1-E455-434A-B2E5-51296CCE67DF.
 
-## <a name="windows-internet-name-service-wins-writer"></a>Gravador WINS (serviço de cadastramento na Internet do Windows)
+## <a name="windows-internet-name-service-wins-writer"></a>Windows Gravador do serviço de cadastramento na Internet (WINS)
 
 Esse gravador é responsável por enumerar os arquivos necessários para o WINS.
 

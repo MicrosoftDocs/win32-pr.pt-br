@@ -1,7 +1,7 @@
 ---
-description: O \_ tipo de enumeração de tipos de taxa de bits WPD \_ descreve um tipo de compactação arquivos de áudio.
+description: O tipo de enumeração WPD \_ BITRATE TYPES descreve um tipo de compactação de \_ arquivos de áudio.
 ms.assetid: 9905b189-00c5-469b-ae48-10c79b9ac903
-title: Enumeração de WPD_BITRATE_TYPES (PortableDevice. h)
+title: WPD_BITRATE_TYPES enumeração (PortableDevice.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 2597af21c5655c3c12c0ca29f097d0eba2bb8d54
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5b50b56222014119a50c9d4ecb0fd7eb96694b30f35fbcbb72dc6550fdf88606
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105791599"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119704046"
 ---
-# <a name="wpd_bitrate_types-enumeration"></a>\_Enumeração de tipos de taxa de bits WPD \_
+# <a name="wpd_bitrate_types-enumeration"></a>Enumeração WPD \_ BITRATE \_ TYPES
 
-O tipo de enumeração de **\_ \_ tipos de taxa de bits WPD** descreve o tipo de compactação de um arquivo de áudio.
+O **tipo de enumeração WPD \_ BITRATE \_ TYPES** descreve o tipo de compactação de um arquivo de áudio.
 
 ## <a name="syntax"></a>Syntax
 
@@ -42,31 +42,31 @@ typedef enum WPD_BITRATE_TYPES {
 
 <dl> <dt>
 
-<span id="WPD_BITRATE_TYPE_UNUSED"></span><span id="wpd_bitrate_type_unused"></span>**\_tipo de taxa de bits WPD \_ \_ não utilizado**
+<span id="WPD_BITRATE_TYPE_UNUSED"></span><span id="wpd_bitrate_type_unused"></span>**TIPO DE TAXA DE BITS WPD \_ \_ \_ NÃOUSADO**
 </dt> <dd>
 
-Este valor não foi especificado.
+Esse valor não foi especificado.
 
 </dd> <dt>
 
-<span id="WPD_BITRATE_TYPE_DISCRETE"></span><span id="wpd_bitrate_type_discrete"></span>**\_tipo de taxa de bits WPD \_ \_ discreto**
+<span id="WPD_BITRATE_TYPE_DISCRETE"></span><span id="wpd_bitrate_type_discrete"></span>**TIPO DE TAXA DE BITS WPD \_ \_ \_ DISCRETO**
 </dt> <dd>
 
 Compactação de taxa de bits constante.
 
 </dd> <dt>
 
-<span id="WPD_BITRATE_TYPE_VARIABLE"></span><span id="wpd_bitrate_type_variable"></span>**variável de tipo de taxa de \_ bits WPD \_ \_**
+<span id="WPD_BITRATE_TYPE_VARIABLE"></span><span id="wpd_bitrate_type_variable"></span>**VARIÁVEL DE TIPO \_ DE TAXA \_ DE BITS WPD \_**
 </dt> <dd>
 
 Compactação de taxa de bits variável.
 
 </dd> <dt>
 
-<span id="WPD_BITRATE_TYPE_FREE"></span><span id="wpd_bitrate_type_free"></span>**\_tipo de taxa de bits WPD \_ \_ gratuito**
+<span id="WPD_BITRATE_TYPE_FREE"></span><span id="wpd_bitrate_type_free"></span>**TIPO DE TAXA DE BITS WPD \_ \_ \_ LIVRE**
 </dt> <dd>
 
-Taxa de bits de formato livre. Essa é uma taxa de bits constante inferior à taxa máxima de bits permitida.
+Taxa de bits de formato livre. Essa é uma taxa de bits constante que é menor que a taxa de bits máxima permitida.
 
 </dd> </dl>
 
@@ -76,7 +76,7 @@ Taxa de bits de formato livre. Essa é uma taxa de bits constante inferior à ta
 
 | Requisito | Valor |
 |-------------------|---------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>PortableDevice. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>PortableDevice.h</dt> </dl> |
 
 
 

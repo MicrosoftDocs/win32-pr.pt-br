@@ -4,12 +4,12 @@ ms.assetid: 23afdb2e-93b0-4a74-94bd-e38eb82a5995
 title: Entregando o fim do fluxo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e2bd80d186bd62e6360fa1600f4ba970281315aa
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 3eebae0fe3238f32f630c0a2ecd0787f6bd9b75a9aed6342e202f187d3fe8dac
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103825551"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119831346"
 ---
 # <a name="delivering-the-end-of-stream"></a>Entregando o fim do fluxo
 

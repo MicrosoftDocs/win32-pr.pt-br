@@ -1,23 +1,23 @@
 ---
-title: DMín (SM5-ASM)
-description: Mínimo de precisão de componente.
+title: dmin (sm5 – asm)
+description: Mínimo de precisão dupla por componente.
 ms.assetid: 77331B4D-C4B5-49B2-BB6A-77BD5050B575
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e199b01c68acca6609123425438f309af872fb4
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 20977a24113db111e85bc644ed68eccaa7e75db91c18bf71d80ac89f5ee19547
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104006894"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119855116"
 ---
-# <a name="dmin-sm5---asm"></a>DMín (SM5-ASM)
+# <a name="dmin-sm5---asm"></a>dmin (sm5 – asm)
 
-Mínimo de precisão de componente.
+Mínimo de precisão dupla por componente.
 
 
 
-| DMín \[ \_ SAT \] dest \[ . Mask \] , \[ - \] src0 \[ \_ ABS \] \[ . swizzle \] , \[ - \] src1 \[ \_ ABS \] \[ . swizzle\] |
+| dmin \[ \_ sat \] dest \[ .mask \] , \[ - \] src0 \[ \_ abs \] \[ .swizzle, \] \[ - \] src1 \[ \_ abs \] \[ .swizzle\] |
 |---------------------------------------------------------------------------------------------|
 
 
@@ -28,9 +28,9 @@ Mínimo de precisão de componente.
 
 | Item                                                            | Descrição                                                                                                                                                                                                  |
 |-----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="dest"></span><span id="DEST"></span>*dest*<br/> | \[no \] endereço dos resultados da operação.<br/> *dest*  =  *src0*  <  *src1* ? *src0* : *src1*<br/> < é usado em vez de <= para que se mín (x, y) = x, em seguida, máx. (x, y) = y. <br/> |
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[nos \] componentes para comparar com *src1*.<br/>                                                                                                                                                     |
-| <span id="src1"></span><span id="SRC1"></span>*src1*<br/> | \[nos \] componentes para comparar com *src0*.<br/>                                                                                                                                                     |
+| <span id="dest"></span><span id="DEST"></span>*Dest*<br/> | \[em \] O endereço dos resultados da operação.<br/> *dest*  =  *src0*  <  *src1* ? *src0* : *src1*<br/> < é usado em vez de <= para que se min(x,y) = x, max(x,y) = y. <br/> |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[em \] Os componentes a comparar com *src1*.<br/>                                                                                                                                                     |
+| <span id="src1"></span><span id="SRC1"></span>*src1*<br/> | \[em \] Os componentes a comparar com *src0*.<br/>                                                                                                                                                     |
 
 
 
@@ -38,19 +38,19 @@ Mínimo de precisão de componente.
 
 ## <a name="remarks"></a>Comentários
 
-NaN tem tratamento especial. Se um operando de origem for NaN, o outro operando de origem será retornado. A escolha é feita por componente. Se ambos forem NaN, qualquer representação NaN será retornada.
+O NaN tem tratamento especial. Se um operand de origem for NaN, o outro operand de origem será retornado. A escolha é feita por componente. Se ambos são NaN, qualquer representação NaN é retornada.
 
-O swizzles válido para os parâmetros de origem são. xyzw,. xyxy,. zwxy,. zwzw. As máscaras de *destino* válidas são. XY,. zw e. xyzw. Os seguintes mapeamentos *src* são swizzle:
+Os swizzles válidos para os parâmetros de origem são .xyzw, .xyxy, .zwxy, .zwzw. As máscaras *de dest* válidas são .xy, .zw e .xyzw. Os seguintes *mapeamentos de src* são pós-swizzle:
 
--   *dest* é um vec2 duplo entre (x 32LSB, y 32MSB) e (z 32LSB, w 32MSB).
--   *src0* é um vec2 duplo entre (x 32LSB, y 32MSB) e (z 32LSB, w 32MSB).
--   *src1* é um vec2 duplo entre (x 32LSB, y 32MSB) e (z 32LSB, w 32MSB).
+-   *dest* é um vec2 duplo em (x 32LSB, y 32MSB) e (z 32LSB, w 32MSB).
+-   *src0* é um vec2 duplo em (x 32LSB, y 32MSB) e (z 32LSB, w 32MSB).
+-   *src1* é um vec2 duplo em (x 32LSB, y 32MSB) e (z 32LSB, w 32MSB).
 
-Essa instrução se aplica aos seguintes estágios de sombreador:
+Essa instrução se aplica aos seguintes estágios do sombreador:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 
@@ -58,7 +58,7 @@ Essa instrução se aplica aos seguintes estágios de sombreador:
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreamento mínimo
+## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
 
 Essa instrução tem suporte nos seguintes modelos de sombreador:
 
@@ -67,7 +67,7 @@ Essa instrução tem suporte nos seguintes modelos de sombreador:
 | Modelo de Sombreador                                              | Com suporte |
 |-----------------------------------------------------------|-----------|
 | [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sim       |
-| [Modelo do sombreador 4,1](dx-graphics-hlsl-sm4.md)              | não        |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | não        |
 | [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | não        |
 | [Modelo de sombreador 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | não        |
 | [Modelo de sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | não        |
@@ -81,7 +81,7 @@ Essa instrução tem suporte nos seguintes modelos de sombreador:
 
 <dl> <dt>
 
-[Assembly do Shader Model 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
+[Assembly do modelo de sombreador 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
 </dt> </dl>
 
  

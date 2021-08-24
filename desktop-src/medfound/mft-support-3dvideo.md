@@ -1,29 +1,29 @@
 ---
-description: Especifica se uma Media Foundation transformação (MFT) dá suporte ao vídeo 3D estereoscópico.
+description: Especifica se uma transformação Media Foundation (MFT) dá suporte a vídeo estéreo 3D.
 ms.assetid: DE96FD14-5C7E-4560-99AC-B1EBDA1EBB2B
-title: Atributo MFT_SUPPORT_3DVIDEO (Mftransform. h)
+title: MFT_SUPPORT_3DVIDEO atributo (Mftransform.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fdbc7208f9bbcf2c638ae83e988c6e541a4be2f3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: da60bac92d1274f9d9a6624e247fc24d122ec26eabc103ad2d43477ae8f6b64b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105810843"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119776986"
 ---
-# <a name="mft_support_3dvideo-attribute"></a>Suporte de MFT \_ \_ atributo 3DVIDEO
+# <a name="mft_support_3dvideo-attribute"></a>Atributo \_ MFT SUPPORT \_ 3DVIDEO
 
-Especifica se uma Media Foundation transformação (MFT) dá suporte ao vídeo 3D estereoscópico.
+Especifica se uma transformação Media Foundation (MFT) dá suporte a vídeo estéreo 3D.
 
 ## <a name="data-type"></a>Tipo de dados
 
-**Bool** armazenado como **UINT32**
+**BOOL** armazenado como **UINT32**
 
 ## <a name="remarks"></a>Comentários
 
-Para consultar esse atributo, chame [**IMFTransform:: GetAttributes**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getattributes) para obter o repositório de atributo global do MFT. Se **GetAttributes** tiver sucesso, chame [**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
+Para consultar esse atributo, chame [**IMFTransform::GetAttributes**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getattributes) para obter o armazenamento de atributo global do MFT. Se **GetAttributes for** bem-sucedido, chame [**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
 
-O valor padrão desse atributo é **false**. Trate este atributo como somente leitura. Não altere o valor; o MFT ignorará as alterações no valor.
+O valor padrão desse atributo é **FALSE.** Trate esse atributo como somente leitura. Não altere o valor; O MFT ignorará as alterações no valor.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -31,9 +31,9 @@ O valor padrão desse atributo é **false**. Trate este atributo como somente le
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 8 \| UWP\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | Aplicativos do Windows Server 2012 \[ Desktop aplicativos \| UWP\]<br/>                              |
-| parâmetro<br/>                   | <dl> <dt>Mftransform. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 aplicativos UWP de aplicativos da área \| de trabalho\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 aplicativos UWP de aplicativos da área \| de trabalho\]<br/>                              |
+| Cabeçalho<br/>                   | <dl> <dt>Mftransform.h</dt> </dl> |
 
 
 
@@ -41,7 +41,7 @@ O valor padrão desse atributo é **false**. Trate este atributo como somente le
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

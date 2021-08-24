@@ -1,7 +1,7 @@
 ---
 description: O método SetProps define as propriedades do objeto de destino para o estado apropriado para o tempo especificado.
 ms.assetid: 65e701c9-d3a1-4396-9cba-a7830757701f
-title: 'Método IPropertySetter:: SetProps (QEdit. h)'
+title: Método IPropertySetter::SetProps (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 6a36b1735ea5b8261c37bee66ac90b9a186a55f0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b3b5a1832897b52d21c57e26595b7d66c4fc9a53f2bcbee0090c53d00f8fe832
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105778434"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119767206"
 ---
-# <a name="ipropertysettersetprops-method"></a>Método IPropertySetter:: SetProps
+# <a name="ipropertysettersetprops-method"></a>Método IPropertySetter::SetProps
 
 > [!Note]  
 > \[Preterido. Essa API pode ser removida de versões futuras do Windows.\]
@@ -46,37 +46,37 @@ HRESULT SetProps(
 
 <dl> <dt>
 
-*pTarget* \[ no\]
+*pTarget* \[ Em\]
 </dt> <dd>
 
 Ponteiro para o objeto de destino para o qual definir as propriedades.
 
 </dd> <dt>
 
-*rtNow* \[ no\]
+*rtNow* \[ Em\]
 </dt> <dd>
 
-Hora na qual definir as propriedades, em unidades de 100 a nanossegundos ou – 1 para definir propriedades estáticas (aquelas que não variam ao longo do tempo).
+Hora em que definir as propriedades, em unidades de 100 nanossegundos ou –1 para definir propriedades estáticas (aquelas que não variam ao longo do tempo).
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
-Esse método é chamado pelo DES para definir as propriedades em uma transição ou efeito. Normalmente, um aplicativo não chamará esse método.
+Esse método é chamado pelo DES para definir as propriedades em uma transição ou efeito. Um aplicativo normalmente não chamará esse método.
 
-O objeto especificado por *pTarget* deve implementar a interface **IDispatch** .
+O objeto especificado por *pTarget* deve implementar a interface **IDispatch.**
 
 > [!Note]  
-> O arquivo de cabeçalho QEdit. h não é compatível com cabeçalhos do Direct3D posteriores à versão 7.
+> O arquivo de título Qedit.h não é compatível com os headers direct3D posteriores à versão 7.
 
  
 
 > [!Note]  
-> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Para obter o Qedit.h, baixe [o Microsoft Windows SDK Update para Windows Vista e .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O Qedit.h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -86,8 +86,8 @@ O objeto especificado por *pTarget* deve implementar a interface **IDispatch** .
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>QEdit. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -95,7 +95,7 @@ O objeto especificado por *pTarget* deve implementar a interface **IDispatch** .
 
 <dl> <dt>
 
-[**Interface IPropertySetter**](ipropertysetter.md)
+[**IPropertySetter Interface**](ipropertysetter.md)
 </dt> <dt>
 
 [Códigos de erro e êxito](error-and-success-codes.md)

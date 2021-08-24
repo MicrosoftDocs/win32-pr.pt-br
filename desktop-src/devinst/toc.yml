@@ -317,7 +317,7 @@
               href: /previous-versions/windows/hardware/difxapi/installerinfo
             - name: SetDifxLogCallback
               href: /previous-versions/windows/hardware/difxapi/setdifxlogcallback
-        - name: Newdev. h
+        - name: Newdev.h
           href: newdev-h.md
           items:
             - name: DiInstallDevice
@@ -332,7 +332,7 @@
               href: /windows/desktop/api/Newdev/nf-newdev-diuninstalldevice
             - name: UpdateDriverForPlugAndPlayDevices
               href: /windows/desktop/api/Newdev/nf-newdev-updatedriverforplugandplaydevicesa
-        - name: Setupapi. h
+        - name: Setupapi.h
           href: setupapi-h.md
           items:
             - name: SetupDiAskForOEMDisk
@@ -507,7 +507,7 @@
               href: /windows/desktop/api/Setupapi/nf-setupapi-setupdiremovedeviceinterface
             - name: SetupDiRestartDevices
               href: /windows/desktop/api/Setupapi/nf-setupapi-setupdirestartdevices
-            - name: SetupDiSelectBestCompatDrv
+            - name: SetupDiSelectHomeCompatDrv
               href: /windows/desktop/api/Setupapi/nf-setupapi-setupdiselectbestcompatdrv
             - name: SetupDiSelectDevice
               href: /windows/desktop/api/Setupapi/nf-setupapi-setupdiselectdevice

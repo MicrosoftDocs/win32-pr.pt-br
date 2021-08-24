@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3a651822378b6a3c0754ecbd5ace4a5e464f014f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fdf38c9c873dd8d95ae60341fc2f7dba02abff1f8b34fd89d0d1f720dc59b55f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759562"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119831536"
 ---
 # <a name="cpullpinreceive-method"></a>Método CPullPin. Receive
 
@@ -49,7 +49,7 @@ Ponteiro para a interface [**IMediaSample**](/windows/desktop/api/Strmif/nn-strm
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor **HRESULT** . Retornar um valor diferente de S \_ OK irá parar o thread de extração de dados.
 

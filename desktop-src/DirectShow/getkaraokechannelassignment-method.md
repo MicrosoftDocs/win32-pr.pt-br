@@ -1,24 +1,24 @@
 ---
-description: O método GetKaraokeChannelAssignment recupera um valor que indica como os canais do karaokê são atribuídos aos alto-falantes.
+description: O método GetTifokeChannelAssignment recupera um valor que indica como os canais de sinal são atribuídos aos alto-falantes.
 ms.assetid: 08e35fa6-fa1b-4f9f-8f56-d953c4422226
-title: Método GetKaraokeChannelAssignment
+title: Método GetChannelAssignment
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dafe1217e08f3dc4f55aeec42424b1ebf9d86d22
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 010e8112ece9b3fc66831055995ebf46657d4216942ac3b9dee05b1b68d18761
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103826060"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119812546"
 ---
-# <a name="getkaraokechannelassignment-method"></a>Método GetKaraokeChannelAssignment
+# <a name="getkaraokechannelassignment-method"></a>Método GetChannelAssignment
 
 > [!Note]  
 > Esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
 
  
 
-O `GetKaraokeChannelAssignment` método recupera um valor que indica como os canais do karaokê são atribuídos aos alto-falantes.
+O `GetKaraokeChannelAssignment` método recupera um valor que indica como os canais de ltda são atribuídos aos alto-falantes.
 
 ``` syntax
 [ iAssignment = ] MSWebDVD.GetKaraokeChannelAssignment(iStream)
@@ -28,16 +28,16 @@ O `GetKaraokeChannelAssignment` método recupera um valor que indica como os can
 
 <dl> <dt>
 
-<span id="iStream"></span><span id="istream"></span><span id="ISTREAM"></span>*iStream*
+<span id="iStream"></span><span id="istream"></span><span id="ISTREAM"></span>*Istream*
 </dt> <dd>
 
-Especifica o fluxo de áudio como um inteiro.
+Especifica o fluxo de áudio como um Inteiro.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retorna um inteiro que indica a atribuição de viva-voz para o fluxo especificado.
+Retorna um inteiro que indica a atribuição do locutor para o fluxo especificado.
 
 
 
@@ -45,10 +45,10 @@ Retorna um inteiro que indica a atribuição de viva-voz para o fluxo especifica
 |-------------|-------------------------------------------------------------------------|
 | 2           | O fluxo é atribuído aos alto-falantes esquerdo e direito.                  |
 | 3           | O fluxo é atribuído aos alto-falantes esquerdo, direito e intermediário.         |
-| 4           | O fluxo é atribuído aos alto-falantes esquerdo, direito e Audio1.         |
-| 5           | O fluxo é atribuído aos alto-falantes esquerdo, direito, médio e Audio1. |
-| 6           | O fluxo é atribuído aos alto-falantes esquerdo, direito e Audio2.         |
-| 7           | O fluxo é atribuído aos alto-falantes esquerdo, direito, médio e Audio2. |
+| 4           | O fluxo é atribuído aos alto-falantes esquerdo, direito e audio1.         |
+| 5           | O fluxo é atribuído aos alto-falantes esquerdo, direito, intermediário e audio1. |
+| 6           | O fluxo é atribuído aos alto-falantes esquerdo, direito e audio2.         |
+| 7           | O fluxo é atribuído aos alto-falantes esquerdo, direito, intermediário e audio2. |
 
 
 
@@ -58,7 +58,7 @@ Retorna um inteiro que indica a atribuição de viva-voz para o fluxo especifica
 
 <dl> <dt>
 
-[**KaraokeAudioPresentationMode**](karaokeaudiopresentationmode-property.md)
+[**LtdeAudioPresentationMode**](karaokeaudiopresentationmode-property.md)
 </dt> </dl>
 
  

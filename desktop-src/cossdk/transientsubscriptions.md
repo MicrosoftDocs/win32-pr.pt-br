@@ -1,5 +1,5 @@
 ---
-description: Contém um objeto para cada assinatura transitória. Assinaturas transitórias podem ser criadas instantaneamente para execução de instâncias de objeto e desaparecem quando o objeto é destruído.
+description: Contém um objeto para cada assinatura transitória. As assinaturas transitórias podem ser criadas em tempo real para executar instâncias de objeto e desaparecerem quando o objeto for destruído.
 ms.assetid: beee291c-e03f-4ee0-b1f2-99dcf113c46e
 title: Coleção TransientSubscriptions
 ms.topic: reference
@@ -12,51 +12,51 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 6421cff326f4c33f0c77ae47d00e17c79c971443
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 5053a4fd488ed38a637b4296f94caf20887f3ed924ae6d11b8f6a242669eccad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826472"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119853926"
 ---
 # <a name="transientsubscriptions-collection"></a>Coleção TransientSubscriptions
 
-Contém um objeto para cada assinatura transitória. Assinaturas transitórias podem ser criadas instantaneamente para execução de instâncias de objeto e desaparecem quando o objeto é destruído.
+Contém um objeto para cada assinatura transitória. As assinaturas transitórias podem ser criadas em tempo real para executar instâncias de objeto e desaparecerem quando o objeto for destruído.
 
-Esta coleção dá suporte aos métodos [**Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) e [**Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) do objeto [**COMAdminCatalogCollection**](comadmincatalogcollection.md) .
+Essa coleção dá suporte [**aos métodos Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) e [**Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) do [**objeto COMAdminCatalogCollection.**](comadmincatalogcollection.md)
 
 ## <a name="members"></a>Membros
 
-A coleção **TransientSubscriptions** herda da interface [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) , mas não tem membros adicionais.
+A **coleção TransientSubscriptions** herda da interface [**IUnknown,**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) mas não tem membros adicionais.
 
 ## <a name="related-collections"></a>Coleções relacionadas
 
 Você pode navegar desta coleção para qualquer uma das seguintes coleções:
 
 -   [**ErrorInfo**](errorinfo.md)
--   [**PropertyInfo**](propertyinfo.md)
+-   [**Propertyinfo**](propertyinfo.md)
 -   [**RelatedCollectionInfo**](relatedcollectioninfo.md)
 -   [**TransientPublisherProperties**](transientpublisherproperties.md)
 -   [**TransientSubscriberProperties**](transientsubscriberproperties.md)
 
 Você pode navegar até essa coleção das seguintes coleções:
 
--   [**Básica**](root.md)
+-   [**Raiz**](root.md)
 
 ## <a name="properties"></a>Propriedades
 
-As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) dentro da coleção:
+As propriedades a seguir têm suporte no [**objeto COMAdminCatalogObject**](comadmincatalogobject.md) dentro da coleção:
 
 -   [Descrição](#description)
--   [Enabled](#enabled)
+-   [Habilitada](#enabled)
 -   [EventClassPartitionID](#eventclasspartitionid)
 -   [EventCLSID](#eventclsid)
--   [FilterCriteria](#filtercriteria)
+-   [Filtercriteria](#filtercriteria)
 -   [ID](#transientsubscriptions-collection)
--   [InterfaceID](#interfaceid)
+-   [Interfaceid](#interfaceid)
 -   [MethodName](#methodname)
 -   [Nome](#methodname)
--   [Peruser](#peruser)
+-   [PerUser](#peruser)
 -   [PublisherID](#publisherid)
 -   [SubscriberInterface](#subscriberinterface)
 -   [SubscriberPartitionID](#subscriberpartitionid)
@@ -87,7 +87,7 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 | Descrição    | Indica se a assinatura está habilitada no momento. |
 | Access         | ReadWrite                                                |
 | Tipo           | Bool                                                     |
-| Padrão        | True                                                     |
+| Padrão        | Verdadeiro                                                     |
 | Sistema mínimo | Windows 2000                                             |
 
 
@@ -100,7 +100,7 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 
 | Entrada | Valor |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrição    | Ao assinar uma classe de evento, usada para representar o GUID da ID de partição que contém a classe de evento. Ao assinar as classes de evento, o Assinante tem a opção de assinar uma classe de evento na mesma partição ou em outra. |
+| Descrição    | Ao assinar uma classe de evento, usado para representar o GUID da ID de partição que contém a classe de evento. Ao assinar classes de evento, o assinante tem a opção de assinar uma classe de evento na mesma partição ou em uma partição diferente. |
 | Access         | ReadWrite                                                                                                                                                                                                                                          |
 | Type           | String                                                                                                                                                                                                                                             |
 | Padrão        | NULO                                                                                                                                                                                                                                               |
@@ -126,13 +126,13 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 
  
 
-### <a name="filtercriteria"></a>FilterCriteria
+### <a name="filtercriteria"></a>Filtercriteria
 
 
 
 | Entrada | Valor |
 |----------------|----------------------------------------------------------------------------------------------------------------------|
-| Descrição    | Uma cadeia de caracteres que indica os critérios de filtro. Pode ser um CLSID para uma classe [**PublisherFilter**](/windows/desktop/api/EventSys/nn-eventsys-ipublisherfilter) . |
+| Descrição    | Uma cadeia de caracteres que indica os critérios de filtro. Pode ser um CLSID para uma [**classe PublisherFilter.**](/windows/desktop/api/EventSys/nn-eventsys-ipublisherfilter) |
 | Access         | ReadWrite                                                                                                            |
 | Type           | String                                                                                                               |
 | Padrão        | N/D                                                                                                                  |
@@ -276,7 +276,7 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 
 | Entrada | Valor |
 |----------------|-------------------------------------------------------------------------|
-| Descrição    | O nome do usuário ao qual a assinatura se aplica quando o Peruser é verdadeiro. |
+| Descrição    | O nome do usuário ao que a assinatura se aplica quando PerUser é True. |
 | Access         | ReadWrite                                                               |
 | Type           | String                                                                  |
 | Padrão        | N/D                                                                     |

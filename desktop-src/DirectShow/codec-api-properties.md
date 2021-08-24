@@ -4,12 +4,12 @@ ms.assetid: 5d527af7-07cf-42e2-99bb-d56c856cc1bc
 title: Propriedades da API do codec
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 06269591c8ddf087b83146ed72a62f4565b8340a
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 91346b6595944b8e95da5e9e43023052119e49a8b88809fce08b6fca780beba1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104456491"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119792906"
 ---
 # <a name="codec-api-properties"></a>Propriedades da API do codec
 
@@ -107,9 +107,9 @@ Essas propriedades se aplicam a codificadores de áudio e codificadores de víde
 | [**AVDecVideoImageSize**](avdecvideoimagesize.md)                                      | Obtém o tamanho da imagem decodificada, em pixels.                                  |
 | [**AVDecVideoInputScanType**](avdecvideoinputscantype-property.md)                     | Especifica como o fluxo de vídeo decodificado é entrelaçado.                           |
 | [**AVDecVideoPixelAspectRatio**](avdecvideopixelaspectratio-property.md)               | Especifica a taxa de proporção de pixel do fluxo de vídeo decodificado.                   |
-| [**AVDecVideoSoftwareDeinterlaceMode**](avdecvideosoftwaredeinterlacemode-property.md) | Especifica o modo de desentrelaçamento de software do decodificador.                              |
+| [**AVDecVideoSoftwareDeintermodMode**](avdecvideosoftwaredeinterlacemode-property.md) | Especifica o modo de desinteressação de software do decodificador.                              |
 | [**AVDecVideoSWPowerLevel**](avdecvideoswpowerlevel-property.md)                       | Especifica o nível de economia de energia.                                               |
-| [**AVDecVideoThumbnailGenerationMode**](avdecvideothumbnailgenerationmode-property.md) | Habilita ou desabilita o modo de geração de miniatura.                                  |
+| [**AVDecVideoThumbnailGenerationMode**](avdecvideothumbnailgenerationmode-property.md) | Habilita ou desabilita o modo de geração de miniaturas.                                  |
 
 
 
@@ -121,9 +121,9 @@ Essas propriedades se aplicam a codificadores de áudio e codificadores de víde
 
 | Propriedade                                                                        | Descrição                                                                                                            |
 |---------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| [**AVDecAACDownmixMode**](avdecaacdownmixmode-property.md)                     | Especifica se um decodificador AAC usa equações de downmix estéreo MPEG-2/MPEG-4 ou usa um downmix não padrão. |
+| [**AVDecAACDownmixMode**](avdecaacdownmixmode-property.md)                     | Especifica se um decodificador AAC usa equações downmix estéreo MPEG-2/MPEG-4 padrão ou usa um downmix não padrão. |
 | [**AVDecAudioDualMono**](avdecaudiodualmono-property.md)                       | Especifica se o áudio de 2 canais é codificado como estéreo ou mono duplo.                                                   |
-| [**AVDecAudioDualMonoReproMode**](avdecaudiodualmonorepromode-property.md)     | Especifica como o decodificador Reproduz áudio mono duplo.                                                                  |
+| [**AVDecAudioDualMonoReproMode**](avdecaudiodualmonorepromode-property.md)     | Especifica como o decodificador reproduz áudio mono duplo.                                                                  |
 | [**AVDecHEAACDynamicRangeControl**](avdecheaacdynamicrangecontrol-property.md) | Habilita ou desabilita o controle de intervalo dinâmico em um decodificador AAC.                                                           |
 
 
@@ -139,42 +139,42 @@ Essas propriedades se aplicam a codificadores de áudio e codificadores de víde
 | [**AVEncInputVideoSystem**](avencinputvideosystem-property.md)                                 | Especifica o sistema de vídeo do conteúdo de origem.                                                                     |
 | [**AVEncStatVideoCodedFrames**](avencstatvideocodedframes-property.md)                         | Retorna o número de quadros de vídeo que foram codificados.                                                                 |
 | [**AVEncStatVideoOutputFrameRate**](avencstatvideooutputframerate-property.md)                 | Retorna a taxa média de quadros do conteúdo do vídeo.                                                                  |
-| [**AVEncStatVideoTotalFrames**](avencstatvideototalframes-property.md)                         | Retorna o número de quadros de vídeo recebidos pelo codificador.                                                         |
-| [**AVEncVideoCBRMotionTradeoff**](avencvideocbrmotiontradeoff-property.md)                     | Especifica a compensação entre o movimento e as imagens ainda.                                                               |
-| [**AVEncVideoCodedVideoAccessUnitSize**](avencvideocodedvideoaccessunitsize-property.md)       | Especifica o tamanho das unidades de acesso ao vídeo.                                                                         |
+| [**AVEncStatVideoTotalFrames**](avencstatvideototalframes-property.md)                         | Retorna o número de quadros de vídeo que o codificador recebeu.                                                         |
+| [**AVEncVideoCBRMotionMotionMotionOff**](avencvideocbrmotiontradeoff-property.md)                     | Especifica a troca entre imagens de movimento e ainda.                                                               |
+| [**AVEncVideoCodedVideoAccessUnitSize**](avencvideocodedvideoaccessunitsize-property.md)       | Especifica o tamanho das unidades de acesso de vídeo.                                                                         |
 | [**AVEncVideoDefaultUpperFieldDominant**](avencvideodefaultupperfielddominant-property.md)     | Especifica qual campo é exibido primeiro.                                                                             |
 | [**AVEncVideoDisplayDimension**](avencvideodisplaydimension-property.md)                       | Especifica o tamanho do fluxo de vídeo quando ele é decodificado.                                                            |
 | [**AVEncVideoEncodeDimension**](avencvideoencodedimension-property.md)                         | Especifica a largura e a altura do vídeo codificado, se o vídeo for cortado.                                         |
 | [**AVEncVideoEncodeOffsetOrigin**](avencvideoencodeoffsetorigin-property.md)                   | Especifica os cantos esquerdo e superior do retângulo de recorte, se o vídeo for cortado.                                |
 | [**AVEncVideoFieldSwap**](avencvideofieldswap-property.md)                                     | Inverte a ordem dos campos entrelaçados no vídeo de origem.                                                      |
 | [**AVEncVideoForceSourceScanType**](avencvideoforcesourcescantype-property.md)                 | Especifica se os quadros de entrada são progressivos ou entrelaçados.                                                     |
-| [**AVEncVideoHeaderDropFrame**](avencvideoheaderdropframe-property.md)                         | Especifica o valor do sinalizador de descarte de quadros no cabeçalho GOP.                                                             |
-| [**AVEncVideoHeaderFrames**](avencvideoheaderframes-property.md)                               | Especifica o número do quadro inicial no cabeçalho GOP.                                                                |
-| [**AVEncVideoHeaderHours**](avencvideoheaderhours-property.md)                                 | Especifica o número de hora inicial no cabeçalho GOP.                                                                 |
-| [**AVEncVideoHeaderMinutes**](avencvideoheaderminutes-property.md)                             | Especifica o número de minutos inicial no cabeçalho GOP.                                                               |
-| [**AVEncVideoHeaderSeconds**](avencvideoheaderseconds-property.md)                             | Especifica o segundo número inicial no cabeçalho GOP.                                                               |
-| [**AVEncVideoInputChromaResolution**](avencvideoinputchromaresolution-property.md)             | Especifica a resolução de croma do vídeo de entrada.                                                                   |
-| [**AVEncVideoInputChromaSubsampling**](avencvideoinputchromasubsampling-property.md)           | Especifica o croma localizando para o vídeo de entrada.                                                                      |
-| [**AVEncVideoInputColorLighting**](avencvideoinputcolorlighting-property.md)                   | Especifica as condições de iluminação pretendidas para exibir o vídeo de entrada.                                               |
+| [**AVEncVideoHeaderDropFrame**](avencvideoheaderdropframe-property.md)                         | Especifica o valor do sinalizador de quadro-soltar no header do GOP.                                                             |
+| [**AVEncVideoHeaderFrames**](avencvideoheaderframes-property.md)                               | Especifica o número do quadro inicial no header do GOP.                                                                |
+| [**AVEncVideoHeaderHours**](avencvideoheaderhours-property.md)                                 | Especifica o número da hora inicial no header do GOP.                                                                 |
+| [**AVEncVideoHeaderMinutes**](avencvideoheaderminutes-property.md)                             | Especifica o número do minuto inicial no header do GOP.                                                               |
+| [**AVEncVideoHeaderSeconds**](avencvideoheaderseconds-property.md)                             | Especifica o segundo número inicial no header do GOP.                                                               |
+| [**AVEncVideoInputChromaResolution**](avencvideoinputchromaresolution-property.md)             | Especifica a resolução de chroma do vídeo de entrada.                                                                   |
+| [**AVEncVideoInputChromaSubsampling**](avencvideoinputchromasubsampling-property.md)           | Especifica a chroma que fica para o vídeo de entrada.                                                                      |
+| [**AVEncVideoInputColorLighting**](avencvideoinputcolorlighting-property.md)                   | Especifica as condições de iluminação pretendido para exibir o vídeo de entrada.                                               |
 | [**AVEncVideoInputColorNominalRange**](avencvideoinputcolornominalrange-property.md)           | Especifica o intervalo nominal para o vídeo de entrada.                                                                      |
-| [**AVEncVideoInputColorPrimaries**](avencvideoinputcolorprimaries-property.md)                 | Especifica os primários de cor para o vídeo de entrada.                                                                    |
-| [**AVEncVideoInputColorTransferFunction**](avencvideoinputcolortransferfunction-property.md)   | Especifica a função de conversão de RGB para R'G'B ' para vídeo de entrada                                                  |
-| [**AVEncVideoInputColorTransferMatrix**](avencvideoinputcolortransfermatrix-property.md)       | Especifica a matriz de conversão do espaço de cores Y'Cb'Cr para o espaço de cores R'G'B para o vídeo de entrada.         |
-| [**AVEncVideoInverseTelecineEnable**](avencvideoinversetelecineenable-property.md)             | Especifica se o codificador executa o telecineon inverso.                                                              |
-| [**AVEncVideoInverseTelecineThreshold**](avencvideoinversetelecinethreshold-property.md)       | Define o limite no qual o codificador considera um campo de vídeo redundante.                                            |
+| [**AVEncVideoInputColorPrimaries**](avencvideoinputcolorprimaries-property.md)                 | Especifica os primários de cores para o vídeo de entrada.                                                                    |
+| [**AVEncVideoInputColorTransferFunction**](avencvideoinputcolortransferfunction-property.md)   | Especifica a função de conversão de RGB para R'G'B' para vídeo de entrada                                                  |
+| [**AVEncVideoInputColorTransferMatrix**](avencvideoinputcolortransfermatrix-property.md)       | Especifica a matriz de conversão do espaço de cores Y'Cb'Cr' para o espaço de cores R'G'B' para o vídeo de entrada.         |
+| [**AVEncVideoInverseTeleariaEnable**](avencvideoinversetelecineenable-property.md)             | Especifica se o codificador executa teletração inversa.                                                              |
+| [**AVEncVideoInverseTeleariaThreshold**](avencvideoinversetelecinethreshold-property.md)       | Define o limite no qual o codificador considera um campo de vídeo redundante.                                            |
 | [**AVEncVideoMaxKeyframeDistance**](avencvideomaxkeyframedistance-property.md)                 | Especifica o número máximo de quadros entre quadros-chave.                                                            |
-| [**AVEncVideoNoOfFieldsToEncode**](avencvideonooffieldstoencode-property.md)                   | Especifica o número de campos a serem codificados.                                                                             |
-| [**AVEncVideoNoOfFieldsToSkip**](avencvideonooffieldstoskip-property.md)                       | Especifica o número de campos a serem ignorados durante a codificação.                                                               |
-| [**AVEncVideoOutputChromaResolution**](avencvideooutputchromaresolution-property.md)           | Especifica a resolução de croma do vídeo codificado.                                                                 |
-| [**AVEncVideoOutputChromaSubsampling**](avencvideooutputchromasubsampling-property.md)         | Especifica o croma localizando para o vídeo codificado.                                                                    |
-| [**AVEncVideoOutputColorLighting**](avencvideooutputcolorlighting-property.md)                 | Especifica as condições de iluminação pretendidas para exibir o vídeo codificado.                                             |
+| [**AVEncVideoNoOfFieldsToEncode**](avencvideonooffieldstoencode-property.md)                   | Especifica o número de campos a codificar.                                                                             |
+| [**AVEncVideoNoOfFieldsToSkip**](avencvideonooffieldstoskip-property.md)                       | Especifica o número de campos a ignorar durante a codificação.                                                               |
+| [**AVEncVideoOutputChromaResolution**](avencvideooutputchromaresolution-property.md)           | Especifica a resolução de chroma do vídeo codificado.                                                                 |
+| [**AVEncVideoOutputChromaSubsampling**](avencvideooutputchromasubsampling-property.md)         | Especifica a chroma que fica para o vídeo codificado.                                                                    |
+| [**AVEncVideoOutputColorLighting**](avencvideooutputcolorlighting-property.md)                 | Especifica as condições de iluminação pretendido para exibir o vídeo codificado.                                             |
 | [**AVEncVideoOutputColorNominalRange**](avencvideooutputcolornominalrange-property.md)         | Especifica o intervalo nominal para o vídeo codificado.                                                                    |
-| [**AVEncVideoOutputColorPrimaries**](avencvideooutputcolorprimaries-property.md)               | Especifica os primários de cor para o vídeo codificado.                                                                  |
-| [**AVEncVideoOutputColorTransferFunction**](avencvideooutputcolortransferfunction-property.md) | Especifica a função de conversão de RGB para R'G'B ' para vídeo codificado.                                               |
-| [**AVEncVideoOutputColorTransferMatrix**](avencvideooutputcolortransfermatrix-property.md)     | Especifica a matriz de conversão do espaço de cores Y'Cb'Cr para o espaço de cores R'G'B para o vídeo codificado.       |
+| [**AVEncVideoOutputColorPrimaries**](avencvideooutputcolorprimaries-property.md)               | Especifica as primárias de cores para o vídeo codificado.                                                                  |
+| [**AVEncVideoOutputColorTransferFunction**](avencvideooutputcolortransferfunction-property.md) | Especifica a função de conversão de RGB para R'G'B' para vídeo codificado.                                               |
+| [**AVEncVideoOutputColorTransferMatrix**](avencvideooutputcolortransfermatrix-property.md)     | Especifica a matriz de conversão do espaço de cores Y'Cb'Cr' para o espaço de cores R'G'B' para o vídeo codificado.       |
 | [**AVEncVideoOutputFrameRate**](avencvideooutputframerate-property.md)                         | Especifica a taxa de quadros no fluxo de saída do codificador, em quadros por segundo.                                        |
-| [**AVEncVideoOutputFrameRateConversion**](avencvideooutputframerateconversion-property.md)     | Especifica se o codificador converte a taxa de quadros quando a taxa de quadros de saída não corresponde à taxa de quadros de entrada. |
-| [**AVEncVideoOutputScanType**](avencvideooutputscantype-property.md)                           | Especifica como o codificador entrelaça o vídeo de saída.                                                                |
+| [**AVEncVideoOutputFrameRateConversion**](avencvideooutputframerateconversion-property.md)     | Especifica se o codificador converte a taxa de quadros quando a taxa de quadros de saída não corresponder à taxa de quadros de entrada. |
+| [**AVEncVideoOutputScanType**](avencvideooutputscantype-property.md)                           | Especifica como o codificador intercala o vídeo de saída.                                                                |
 | [**AVEncVideoPixelAspectRatio**](avencvideopixelaspectratio-property.md)                       | Especifica a taxa de proporção de pixel.                                                                                     |
 | [**AVEncVideoSourceFilmContent**](avencvideosourcefilmcontent-property.md)                     | Especifica se a origem original do vídeo de entrada foi filme ou vídeo.                                           |
 | [**AVEncVideoSourceIsBW**](avencvideosourceisbw-property.md)                                   | Especifica se o vídeo é monocromático (preto e branco) ou contém a cor.                                        |
@@ -269,50 +269,50 @@ Essas propriedades se aplicam a codificadores de áudio e codificadores de víde
 
  
 
-### <a name="dolby-digital-audio-encoder-properties"></a>Propriedades do codificador de áudio Dolby Digital
+### <a name="dolby-digital-audio-encoder-properties"></a>Propriedades do codificador de áudio digital do Dolby
 
 
 
 | Propriedade                                                                                        | Descrição                                                                               |
 |-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| [**AVEncDDAtoDConverterType**](avencddatodconvertertype-property.md)                           | Especifica o tipo de conversão de analógico para digital (A/D).                                 |
-| [**AVEncDDCentreDownMixLevel**](avencddcentredownmixlevel-property.md)                         | Especifica o nível de downmix Center.                                                       |
+| [**AVEncDDAtoDConverterType**](avencddatodconvertertype-property.md)                           | Especifica o tipo de conversão análoga a digital (A/D).                                 |
+| [**AVEncDDCentreDownMixLevel**](avencddcentredownmixlevel-property.md)                         | Especifica o nível de downmix central.                                                       |
 | [**AVEncDDChannelBWLowPassFilter**](avencddchannelbwlowpassfilter-property.md)                 | Especifica se um filtro de passagem baixa é aplicado aos canais de entrada principais.                |
 | [**AVEncDDCopyright**](avencddcopyright-property.md)                                           | Especifica o sinalizador de direitos autorais.                                                             |
-| [**AVEncDDDCHighPassFilter**](avencdddchighpassfilter-property.md)                             | Especifica se um filtro de alta passagem de bloqueio de DC é aplicado.                              |
+| [**AVEncDDDCHighPassFilter**](avencdddchighpassfilter-property.md)                             | Especifica se um filtro de passagem alta com bloqueio de DC é aplicado.                              |
 | [**AVEncDDDialogNormalization**](avencdddialognormalization-property.md)                       | Especifica o nível de normalização da caixa de diálogo.                                                 |
-| [**AVEncDDDigitalDeemphasis**](avencdddigitaldeemphasis-property.md)                           | Especifica se a remoção de ênfase digital.                                                    |
+| [**AVEncDDDigitalDeemphasis**](avencdddigitaldeemphasis-property.md)                           | Especifica se a des ênfase digital.                                                    |
 | [**AVEncDDDynamicRangeCompressionControl**](avencdddynamicrangecompressioncontrol-property.md) | Especifica o perfil de controle de intervalo dinâmico.                                              |
 | [**AVEncDDHeadphoneMode**](avencddheadphonemode-property.md)                                   | Especifica o modo de fone de ouvido.                                                             |
-| [**AVEncDDLFELowPassFilter**](avencddlfelowpassfilter-property.md)                             | Especifica se um filtro de passagem baixa é aplicado ao canal de baixo efeito de frequência (LFE). |
-| [**AVEncDDLoRoCenterMixLvl \_ x**](avencddlorocentermixlvl-x10-property.md)                    | Especifica a mudança de nível que é aplicada ao canal central para downmixing de lo/ro.     |
-| [**AVEncDDLoRoSurroundMixLvl \_ x**](avencddlorosurroundmixlvl-x10-property.md)                | Especifica a mudança de nível que é aplicada aos canais surround para downmixing de lo/ro.  |
-| [**AVEncDDLtRtCenterMixLvl \_ x**](avencddltrtcentermixlvl-x10-property.md)                    | Especifica a mudança de nível que é aplicada ao canal central para lt/RT downmixing.     |
-| [**AVEncDDLtRtSurroundMixLvl \_ x**](avencddltrtsurroundmixlvl-x10-property.md)                | Especifica a mudança de nível que é aplicada aos canais surround para lt/RT downmixing.  |
-| [**AVEncDDOriginalBitstream**](avencddoriginalbitstream-property.md)                           | Especifica o sinalizador fragmentado original.                                                    |
-| [**AVEncDDPreferredStereoDownMixMode**](avencddpreferredstereodownmixmode-property.md)         | Especifica o modo de downmix de estéreo preferencial.                                              |
+| [**AVEncDDLFELowPassFilter**](avencddlfelowpassfilter-property.md)                             | Especifica se um filtro de passagem baixa é aplicado ao canal LFE (efeito de baixa frequência). |
+| [**AVEncDDLoRoCenterMixLvl \_ x10**](avencddlorocentermixlvl-x10-property.md)                    | Especifica a mudança de nível que é aplicada ao canal central para o downmixing Lo/Ro.     |
+| [**AVEncDDLoRoSurroundMixLvl \_ x10**](avencddlorosurroundmixlvl-x10-property.md)                | Especifica a mudança de nível que é aplicada aos canais Surround para o downmixing Lo/Ro.  |
+| [**AVEncDDLtRtCenterMixLvl \_ x10**](avencddltrtcentermixlvl-x10-property.md)                    | Especifica a mudança de nível que é aplicada ao canal central para a contramixagem Lt/Rt.     |
+| [**AVEncDDLtRtSurroundMixLvl \_ x10**](avencddltrtsurroundmixlvl-x10-property.md)                | Especifica a mudança de nível que é aplicada aos canais Surround para a contramixagem Lt/Rt.  |
+| [**AVEncDDOriginalBitstream**](avencddoriginalbitstream-property.md)                           | Especifica o sinalizador de bitstream original.                                                    |
+| [**AVEncDDPreferredStereoDownMixMode**](avencddpreferredstereodownmixmode-property.md)         | Especifica o modo downmix estéreo preferencial.                                              |
 | [**AVEncDDProductionInfoExists**](avencddproductioninfoexists-property.md)                     | Especifica o sinalizador de informações de produção de áudio.                                          |
 | [**AVEncDDProductionMixLevel**](avencddproductionmixlevel-property.md)                         | Especifica o nível de combinação.                                                               |
 | [**AVEncDDProductionRoomType**](avencddproductionroomtype-property.md)                         | Especifica o tipo de sala.                                                                  |
-| [**AVEncDDRFPreEmphasisFilter**](avencddrfpreemphasisfilter-property.md)                       | Especifica a configuração de proteção de sobremodulação RF.                                       |
+| [**AVEncDDRFPreEmphasisFilter**](avencddrfpreemphasisfilter-property.md)                       | Especifica a configuração de proteção de overmodulação de RF.                                       |
 | [**AVEncDDService**](avencddservice-property.md)                                               | Especifica o serviço de áudio.                                                              |
-| [**AVEncDDSurround3dBAttenuation**](avencddsurround3dbattenuation-property.md)                 | Especifica se os canais surround são atenuados antes da codificação.                   |
-| [**AVEncDDSurround90DegreeePhaseShift**](avencddsurround90degreeephaseshift-property.md)       | Especifica se uma mudança de fase de 90 graus é aplicada aos canais surround.            |
-| [**AVEncDDSurroundDownMixLevel**](avencddsurrounddownmixlevel-property.md)                     | Especifica o nível de combinação subjacente.                                                    |
-| [**AVEncDDSurroundExMode**](avencddsurroundexmode-property.md)                                 | Especifica se o fluxo de áudio é codificado em surround EX.                             |
+| [**AVEncDDSurround3dBAttenuation**](avencddsurround3dbattenuation-property.md)                 | Especifica se os canais Surround são atenuados antes da codificação.                   |
+| [**AVEncDDSurround90DegreeePhaseShift**](avencddsurround90degreeephaseshift-property.md)       | Especifica se uma mudança de fase de 90 graus é aplicada aos canais Surround.            |
+| [**AVEncDDSurroundDownMixLevel**](avencddsurrounddownmixlevel-property.md)                     | Especifica o nível de combinação Cercar para baixo.                                                    |
+| [**AVEncDDSurroundExMode**](avencddsurroundexmode-property.md)                                 | Especifica se o fluxo de áudio é codificado no Surround EX.                             |
 
 
 
  
 
-### <a name="digital-signal-processing-dsp-properties"></a>Propriedades do DSP (processamento de sinal digital)
+### <a name="digital-signal-processing-dsp-properties"></a>Propriedades do DSP (Processamento de Sinal Digital)
 
 
 
 | Propriedade                                                                | Descrição                               |
 |-------------------------------------------------------------------------|-------------------------------------------|
 | [**AVDSPLoudnessEqualization**](avdsploudnessequalization-property.md) | Habilita ou desabilita a equalização de intensidade |
-| [**AVDSPSpeakerFill**](avdspspeakerfill-property.md)                   | Habilita ou desabilita o preenchimento do alto-falante          |
+| [**AVDSPSpeakerFill**](avdspspeakerfill-property.md)                   | Habilita ou desabilita o preenchimento do locutor          |
 
 
 
@@ -322,7 +322,7 @@ Essas propriedades se aplicam a codificadores de áudio e codificadores de víde
 
 <dl> <dt>
 
-[Referência de API de codec](codec-api-reference.md)
+[Referência da API do Codec](codec-api-reference.md)
 </dt> </dl>
 
  

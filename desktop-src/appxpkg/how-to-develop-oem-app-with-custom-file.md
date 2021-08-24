@@ -4,12 +4,12 @@ description: Saiba como desenvolver um aplicativo que usa um arquivo personaliza
 ms.assetid: BCDB4B13-3644-44E4-9A70-04D8E90500EE
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4cf60364138a80317e6db8ac4c5d028c36ff540f
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 4780e930d057c325038c94dc86fc375c70bdb1cc8dca34ac6169436bc0f0e323
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "105763318"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119855316"
 ---
 # <a name="how-to-develop-an-oem-app-that-uses-a-custom-file"></a>Como desenvolver um aplicativo OEM que usa um arquivo personalizado
 
@@ -40,11 +40,11 @@ Você pode especificar qualquer tipo de arquivo com qualquer nome de arquivo par
 > [!Note]  
 > O arquivo de dados personalizado não pode ser modificado pelo aplicativo. É um recurso somente leitura.
 
- 
+ 
 
 ### <a name="step-2-access-the-custom-data-file-for-an-app"></a>Etapa 2: acessar o arquivo de dados personalizado para um aplicativo
 
-Você pode acessar o arquivo. Data personalizado para um aplicativo do seu código usando as APIs do Windows para obter informações para o pacote atual. Por exemplo:
+você pode acessar o arquivo. data personalizado para um aplicativo do seu código usando Windows APIs para obter informações para o pacote atual. Por exemplo:
 
 ``` syntax
 Windows.ApplicationModel.Package.current.installedLocation.getFileAsync(
@@ -62,6 +62,6 @@ Para obter mais informações sobre como acessar o arquivo Custom. Data por meio
 [Início rápido: consultar informações de manifesto do pacote de aplicativo](how-to-query-package-identity-information.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

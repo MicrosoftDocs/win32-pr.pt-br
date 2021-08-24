@@ -4,8 +4,8 @@ description: O endereço TCP/IP de um segmento de rede. Também chamado de ender
 ms.assetid: caccb00f-8418-43b8-87c7-7ccb7e2ee51d
 ms.tgt_platform: multiple
 keywords:
-- Esquema de Network-Address do atributo AD
-- Esquema de AD do atributo networkAddress
+- Network-Address atributo AD Schema
+- networkAddress attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e869a176b2122ccb0a03c9e0920ca3dbd45f5664
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: aecb62701350c0a954a23dc403a314331920810b0b6778f90099c600ca738a60
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103645521"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119704756"
 ---
 # <a name="network-address-attribute"></a>Network-Address atributo
 
@@ -30,13 +30,13 @@ O endereço TCP/IP de um segmento de rede. Também chamado de endereço de sub-r
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | Network-Address                             |
-| LDAP-Display-Name | networkAddress                              |
+| Ldap-Display-Name | networkAddress                              |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.2.459                      |
-| System-ID-GUID    | bf9679d9-0de6-11d0-a285-00aa003049e2        |
-| Syntax            | [**Cadeia de caracteres (Teletex)**](s-string-teletex.md) |
+| System-Id-Guid    | bf9679d9-0de6-11d0-a285-00aa003049e2        |
+| Syntax            | [**String(Teletex)**](s-string-teletex.md) |
 
 
 
@@ -44,7 +44,7 @@ O endereço TCP/IP de um segmento de rede. Também chamado de endereço de sub-r
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,10 +59,10 @@ O endereço TCP/IP de um segmento de rede. Também chamado de endereço de sub-r
 | ID do link                | \-                                                                                                                                                                |
 | MAPI-Id                | 0x8170                                                                                                                                                            |
 | System-Only            | Falso                                                                                                                                                             |
-| É de valor único       | Falso                                                                                                                                                             |
+| Tem valor único       | Falso                                                                                                                                                             |
 | É indexado             | Falso                                                                                                                                                             |
-| No catálogo global      | Falso                                                                                                                                                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                      |
+| No Catálogo Global      | Falso                                                                                                                                                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                      |
 | Range-Lower            | 0                                                                                                                                                                 |
 | Range-Upper            | 256                                                                                                                                                               |
 | Search-Flags           | 0x00000000                                                                                                                                                        |
@@ -80,10 +80,10 @@ O endereço TCP/IP de um segmento de rede. Também chamado de endereço de sub-r
 | ID do link                | \-                                                                                                                                                                |
 | MAPI-Id                | 0x8170                                                                                                                                                            |
 | System-Only            | Falso                                                                                                                                                             |
-| É de valor único       | Falso                                                                                                                                                             |
+| Tem valor único       | Falso                                                                                                                                                             |
 | É indexado             | Falso                                                                                                                                                             |
-| No catálogo global      | Falso                                                                                                                                                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                      |
+| No Catálogo Global      | Falso                                                                                                                                                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                      |
 | Range-Lower            | 0                                                                                                                                                                 |
 | Range-Upper            | 256                                                                                                                                                               |
 | Search-Flags           | 0x00000000                                                                                                                                                        |
@@ -92,7 +92,7 @@ O endereço TCP/IP de um segmento de rede. Também chamado de endereço de sub-r
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,7 +101,7 @@ O endereço TCP/IP de um segmento de rede. Também chamado de endereço de sub-r
 | ID do link                | \-                                       |
 | MAPI-Id                | 0x8170                                   |
 | System-Only            | Falso                                    |
-| É de valor único       | Falso                                    |
+| Tem valor único       | Falso                                    |
 | É indexado             | Falso                                    |
 | No catálogo global      | Falso                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                             |

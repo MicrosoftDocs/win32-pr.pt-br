@@ -4,18 +4,18 @@ ms.assetid: 371f91b9-d60b-477e-8f8c-a7fb01121aed
 title: NTSC (Estados Unidos)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ae84c864ec1b22f375ceb7e8059edbcec815df7
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: fa44b17d571df33405b9d0e4418c531d017329a6e15a39fbc3d558f4b2873225
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104456381"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119830956"
 ---
 # <a name="ntsc-united-states"></a>NTSC (Estados Unidos)
 
-Para obter uma explicação das tabelas a seguir, consulte [tabelas e atribuições](tables-and-assignments.md).
+Para uma explicação das tabelas a seguir, consulte [Tabelas e Atribuições](tables-and-assignments.md).
 
-As tabelas NTSC são apropriadas para qualquer localidade usando as linhas de alimentação de canal padrão NTSC. As separações de difusão e de cabos são padronizadas e estáveis. Além disso, os índices de frequência são adequados para uso como números de canal.
+As tabelas NTSC são apropriadas para qualquer localidade usando as linhas de canal padrão do NTSC. Os cabos de transmissão e cabo são padronizados e estáveis. Além disso, os índices de frequência são adequados para uso como números de canal.
 
 ### <a name="ntsc-broadcast-assignments"></a>Atribuições de difusão NTSC
 
@@ -271,7 +271,7 @@ As tabelas NTSC são apropriadas para qualquer localidade usando as linhas de al
 
 <dl> <dt>
 
-[Ajuste de TV analógica internacional](international-analog-tv-tuning.md)
+[Ajuste de TV análogo internacional](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

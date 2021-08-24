@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 5396c70c1c4286223d9f45fb8ab9b73a019becb1
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 9cb1adacadb92cf3a2f9a3e041e4a94a840994db3244233509350448008bd675
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105793836"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119748776"
 ---
 # <a name="id3dxconstanttablegetconstantelement-method"></a>Método ID3DXConstantTable:: getconstantelement
 
@@ -59,7 +59,7 @@ Tipo: **[ **uint**](../winprog/windows-data-types.md)**
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 

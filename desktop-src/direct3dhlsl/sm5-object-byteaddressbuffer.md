@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 03e89f56522d941db4447b33b55cbedc7c73303f
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: bdb7a22570e92945df8ab599f8c95bdffa1d03dd9ac83e35dfc7bb849bd42d99
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104967219"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119853326"
 ---
 # <a name="byteaddressbuffer"></a>ByteAddressBuffer
 
@@ -29,7 +29,7 @@ Um buffer somente leitura que é indexado em bytes.
 | Método                                                              | Descrição                   |
 |---------------------------------------------------------------------|-------------------------------|
 | [**GetDimensions**](sm5-object-byteaddressbuffer-getdimensions.md) | Obtém as dimensões do recurso. |
-| [**Carregamento**](byteaddressbuffer-load.md)                              | Obtém um valor.               |
+| [**Carregar**](byteaddressbuffer-load.md)                              | Obtém um valor.               |
 | [**Load2**](byteaddressbuffer-load2.md)                            | Obtém dois valores.              |
 | [**Load3**](byteaddressbuffer-load3.md)                            | Obtém três valores.            |
 | [**Load4**](byteaddressbuffer-load4.md)                            | Obtém quatro valores.             |
@@ -38,27 +38,27 @@ Um buffer somente leitura que é indexado em bytes.
 
  
 
-Você pode usar o tipo de objeto **ByteAddressBuffer** ao trabalhar com buffers brutos. Para obter mais informações sobre a exibição bruta de buffers, consulte [exibições brutas de buffers](/windows/desktop/direct3d11/overviews-direct3d-11-resources-intro).
+Você pode usar o **tipo de objeto ByteAddressBuffer** ao trabalhar com buffers brutos. Para obter mais informações sobre a exibição bruta de buffers, consulte [Exibições brutas de buffers](/windows/desktop/direct3d11/overviews-direct3d-11-resources-intro).
 
-## <a name="minimum-shader-model"></a>Modelo de sombreamento mínimo
+## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
 
-Esse objeto tem suporte nos seguintes modelos de sombreador.
+Esse objeto tem suporte nos modelos de sombreador a seguir.
 
 
 
 | Modelo de Sombreador                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | Com suporte |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
-| O [Shader Model 5](d3d11-graphics-reference-sm5.md) e os modelos de sombreador superiores modelo de sombreador [4](dx-graphics-hlsl-sm4.md) (disponível por meio da API do Direct3D 11 usando o nível de recurso 10,0 ou 10,1 ([**\_ \_ nível**](/windows/desktop/api/d3dcommon/ne-d3dcommon-d3d_feature_level)de recurso do D3D \_ 10 \_ X) em dispositivos que dão suporte a sombreadores de computação. Para obter mais informações sobre o suporte de sombreador de computação em hardware de nível inferior, consulte [sombreadores de computação em hardware de nível inferior](/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-compute-shaders).)<br/> | sim       |
+| Modelo de sombreador [5](d3d11-graphics-reference-sm5.md) e modelos de sombreador superior Modelo [4](dx-graphics-hlsl-sm4.md) (disponível por meio da API do Direct3D 11 usando o nível de recurso 10.0 ou 10.1 ([**D3D \_ FEATURE \_ LEVEL**](/windows/desktop/api/d3dcommon/ne-d3dcommon-d3d_feature_level) \_ 10 X) em dispositivos que suportam sombreadores \_ de computação. Para obter mais informações sobre o suporte ao sombreador de computação em hardware de nível baixo, consulte [Sombreadores](/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-compute-shaders)de computação no hardware de nível baixo .)<br/> | sim       |
 
 
 
  
 
-Este objeto tem suporte para os seguintes tipos de sombreadores:
+Esse objeto tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -66,15 +66,15 @@ Este objeto tem suporte para os seguintes tipos de sombreadores:
 
  
 
-Para obter mais informações sobre um buffer de endereço de byte, consulte o [tipo de recurso de byte endereçável](/windows/desktop/direct3d11/direct3d-11-advanced-stages-cs-resources).
+Para obter mais informações sobre um buffer de endereço de byte, consulte o [tipo de recurso acessível por byte](/windows/desktop/direct3d11/direct3d-11-advanced-stages-cs-resources).
 
-O Shader Model 5 também implementa um [buffer de endereço de byte de leitura/gravação](sm5-object-rwbyteaddressbuffer.md).
+O Modelo 5 do Sombreador também implementa um buffer [de endereço de byte de leitura/gravação.](sm5-object-rwbyteaddressbuffer.md)
 
 ## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[Objetos do Shader Model 5](d3d11-graphics-reference-sm5-objects.md)
+[Objetos do Modelo de Sombreador 5](d3d11-graphics-reference-sm5-objects.md)
 </dt> </dl>
 
  
