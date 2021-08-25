@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - wlantypes.h
-ms.openlocfilehash: fcbd61476458b5ed906ee57af6ab22b35f0378d2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c99ef5b648c5503743de6f51ce7d035d75dbe1f3e5593d473a374813f4000566
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105759193"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119780236"
 ---
 # <a name="dot11_cipher_algorithm-enumeration"></a>Enumeração de algoritmo de \_ codificação DOT11 \_
 
@@ -124,10 +124,10 @@ Especifica o final do intervalo que é usado para definir algoritmos de codifica
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente Windows Vista, Windows XP com \[ aplicativos de área de trabalho do SP3\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                        |
+| Cliente mínimo com suporte<br/> | Windows Vista, somente Windows XP com \[ aplicativos de área de trabalho do SP3\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                                        |
 | Redistribuível<br/>          | API de LAN sem fio para Windows XP com SP2<br/>                                                         |
-| parâmetro<br/>                   | <dl> <dt>Wlantypes. h (incluir Windot11. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Wlantypes. h (incluir Windot11. h)</dt> </dl> |
 
 
 

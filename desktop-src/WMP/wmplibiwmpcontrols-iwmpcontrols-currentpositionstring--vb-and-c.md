@@ -1,11 +1,11 @@
 ---
-title: Propriedade IWMPControls currentPositionString
-description: A propriedade currentPositionString Obtém a posição atual no item de mídia como uma cadeia de caracteres formatada como HH MM SS (horas, minutos e segundos).
+title: Propriedade currentPositionString de IWMPControls
+description: A propriedade currentPositionString obtém a posição atual no item de mídia como uma cadeia de caracteres formatada como HH MM SS (horas, minutos e segundos).
 ms.assetid: cd28dafa-b6a4-4bed-aa5d-7e7be6af1426
 keywords:
-- Propriedade currentPositionString Windows Media Player
-- Propriedade currentPositionString Windows Media Player, interface IWMPControls
-- Interface IWMPControls Windows Media Player, Propriedade currentPositionString
+- propriedade currentPositionString Windows Media Player
+- propriedade currentPositionString Windows Media Player interface , IWMPControls
+- Interface IWMPControls Windows Media Player , propriedade currentPositionString
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 85e941fceb61e4f00393b05f96489ec7ac8e950f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 61e3c98937a12c145742895979ccccb8118f8349f82b2840c902dfe625ad0472
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105767716"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119861906"
 ---
-# <a name="iwmpcontrolscurrentpositionstring-property"></a>Propriedade IWMPControls:: currentPositionString
+# <a name="iwmpcontrolscurrentpositionstring-property"></a>Propriedade IWMPControls::currentPositionString
 
-A propriedade **currentPositionString** Obtém a posição atual no item de mídia como uma cadeia de caracteres formatada como hh: mm: SS (horas, minutos e segundos).
+A **propriedade currentPositionString** obtém a posição atual no item de mídia como uma cadeia de caracteres formatada como HH:MM:SS (horas, minutos e segundos).
 
 Esta propriedade é somente para leitura.
 
@@ -49,15 +49,15 @@ Public ReadOnly Property currentPositionString As System.String
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Um **System. String** formatado que é a posição atual.
+Um **System.String formatado** que é a posição atual.
 
 ## <a name="remarks"></a>Comentários
 
-Se o item de mídia tiver menos de uma hora, a posição atual será formatada como MM: SS (minutos e segundos).
+Se o item de mídia tiver menos de uma hora, a posição atual será formatada como MM:SS (minutos e segundos).
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir inicia um temporizador que dispara um evento em intervalos de um segundo. No manipulador de eventos do temporizador, um rótulo é atualizado com o **currentPositionString**. O objeto **AxWMPLib. AxWindowsMediaPlayer** é representado pela variável chamada Player.
+O exemplo a seguir inicia um temporizador que dispara um evento em intervalos de um segundo. No manipulador de eventos do temporizador, um rótulo é atualizado com **o currentPositionString.** O **objeto AxWMPLib.AxWindowsMediaPlayer** é representado pela variável chamada player.
 
 
 ```CSharp
@@ -103,7 +103,7 @@ End Sub
 
 | Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/>   | Windows Media Player 9 Series ou posterior<br/>                                                                      |
+| Versão<br/>   | Windows Media Player série 9 ou posterior<br/>                                                                      |
 | Namespace<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -116,7 +116,7 @@ End Sub
 [**Interface IWMPControls (VB e C#)**](iwmpcontrols--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPControls. currentPosition (VB e C#)**](wmplibiwmpcontrols-iwmpcontrols-currentposition--vb-and-c.md)
+[**IWMPControls.currentPosition (VB e C#)**](wmplibiwmpcontrols-iwmpcontrols-currentposition--vb-and-c.md)
 </dt> </dl>
 
  

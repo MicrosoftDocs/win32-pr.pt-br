@@ -1,19 +1,19 @@
 ---
-description: Lista de interfaces que estão disponíveis para este serviço.
+description: Lista de interfaces disponíveis para esse serviço.
 ms.assetid: 9f8268e8-4144-4dcc-adef-82c6dea2e10e
-title: System. Devices. AepService. IoT. createinterfaces
+title: System.Devices.AepService.IoT.ServiceInterfaces
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 26552154c05adbf2496e438fc0336c6534a57a20
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8fd0ff990d50c919205594417e668a6e35a58527fbacc5526237139aef1290f9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104461328"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119775826"
 ---
-# <a name="systemdevicesaepserviceiotserviceinterfaces"></a>System. Devices. AepService. IoT. createinterfaces
+# <a name="systemdevicesaepserviceiotserviceinterfaces"></a>System.Devices.AepService.IoT.ServiceInterfaces
 
-Lista de interfaces que estão disponíveis para este serviço.
+Lista de interfaces disponíveis para esse serviço.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607"></a>Windows 10, versão 1703, Windows 10, versão 1607
 
@@ -33,13 +33,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-Os valores de PKEY são definidos em Propkey. h.
+Os valores PKEY são definidos em Propkey.h.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[Propertydescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -48,19 +48,19 @@ Os valores de PKEY são definidos em Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[numberFormat](./propdesc-schema-numberformat.md)
+[Numberformat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -75,7 +75,7 @@ Os valores de PKEY são definidos em Propkey. h.
 [editControl](./propdesc-schema-editcontrol.md)
 </dt> <dt>
 
-[filterControl](./propdesc-schema-filtercontrol.md)
+[Filtercontrol](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
 [queryControl](./propdesc-schema-querycontrol.md)

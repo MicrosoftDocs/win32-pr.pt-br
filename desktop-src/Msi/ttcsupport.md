@@ -4,12 +4,12 @@ ms.assetid: 016a6d5a-84b7-415e-88ee-7a533bfeaad2
 title: Propriedade TTCSupport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 71a75d91b324c2509b64851efa61c5a33ca4f023
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8c021aba01366e6b7002fc836e8caf0df3d6d81c7728d68ee96a28ef5a007822
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105779621"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119810546"
 ---
 # <a name="ttcsupport-property"></a>Propriedade TTCSupport
 
@@ -17,7 +17,7 @@ O instalador define a propriedade **TTCSupport** para indicar se o sistema opera
 
 ## <a name="remarks"></a>Comentários
 
-Essa propriedade será definida se o instalador detectar o Windows 2000 ou qualquer um dos seguintes sistemas operacionais:
+essa propriedade será definida se o instalador detectar Windows 2000 ou qualquer um dos seguintes sistemas operacionais:
 
 -   Japão-932
 -   China-936
@@ -31,7 +31,7 @@ Essa propriedade será definida se o instalador detectar o Windows 2000 ou qualq
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou no Windows Vista. Windows Installer no Windows Server 2003 ou no Windows XP. Consulte os [requisitos de Run-Time Windows Installer](windows-installer-portal.md) para obter informações sobre a Service Pack mínima do Windows exigida por uma versão Windows Installer.<br/> |
+| Versão<br/> | Windows instalador 5,0 em Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou Windows Vista. Windows instalador no Windows Server 2003 ou Windows XP. consulte os [requisitos de Run-Time Windows Installer](windows-installer-portal.md) para obter informações sobre o service pack mínimo Windows exigido por uma versão Windows Installer.<br/> |
 
 
 

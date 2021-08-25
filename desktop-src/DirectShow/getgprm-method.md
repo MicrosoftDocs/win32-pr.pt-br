@@ -4,12 +4,12 @@ ms.assetid: 66afd2a5-6aa1-4280-93cf-dd3cfed2499d
 title: Método GetGPRM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d82522f834a6f3bda8abefb492d5cc8b568872e
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 33c46307f1cbec49b4916cdbd528c2b22cfb42bf89a06285c5c779339786599d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104500615"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119812556"
 ---
 # <a name="getgprm-method"></a>Método GetGPRM
 
@@ -28,10 +28,10 @@ O `GetGPRM` método recupera o registro de parâmetro geral especificado.
 
 <dl> <dt>
 
-<span id="iIndex"></span><span id="iindex"></span><span id="IINDEX"></span>*iIndex*
+<span id="iIndex"></span><span id="iindex"></span><span id="IINDEX"></span>*Iindex*
 </dt> <dd>
 
-Especifica o registro a ser recuperado como um inteiro. O valor deve variar de 0 a 15.
+Especifica o registro a ser recuperado como um Inteiro. O valor deve variar de 0 a 15.
 
 </dd> </dl>
 
@@ -41,7 +41,7 @@ Retorna um valor inteiro que representa o registro especificado.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método não é necessário para qualquer funcionalidade de navegação ou reprodução de DVD usando o objeto **MSWebDVD** . Ele é fornecido para aqueles com uma compreensão completa da especificação de DVD que desejam implementar recursos avançados. GPRMs pode ser usado para armazenar quaisquer valores, para que possam ser configurados e lidos livremente. Mas como GPRMs também são usadas para armazenar comandos de disco, alterar seus valores usando [**SetGPRM**](setgprm-method.md) pode resultar em um comportamento imprevisível.
+Esse método não é necessário para nenhuma funcionalidade de navegação ou reprodução de DVD usando o **objeto MSWebDVD.** Ele é fornecido para aqueles com uma compreensão completa da especificação de DVD que deseja implementar recursos avançados. Os GPRMs podem ser usados para manter quaisquer valores, de modo que possam ser definidos e lidos livremente. Mas como os GPRMs também são usados para armazenar comandos de disco, alterar seus valores usando [**SetGPRM**](setgprm-method.md) pode resultar em comportamento imprevisível.
 
 ## <a name="see-also"></a>Confira também
 

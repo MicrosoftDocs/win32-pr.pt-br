@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6330849a433787dd09fad536f005d91f60376013
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2eab2067d3d16c3ae0864ba7ddf04b5666efa0186d0a7d55ebd5eddaa7533790
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644861"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119829896"
 ---
 # <a name="wm_ncxbuttonup-message"></a>Mensagem do WM \_ NCXBUTTONUP
 
@@ -65,7 +65,7 @@ Um ponteiro para uma estrutura de [**pontos**](/previous-versions//dd162808(v=vs
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se um aplicativo processar essa mensagem, ele deverá retornar **true**. Para obter mais informações sobre como processar o valor de retorno, consulte a seção comentários.
 
@@ -98,7 +98,7 @@ yPos = GET_Y_LPARAM(lParam);
 
 Por padrão, a função [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) testa o ponto especificado para obter a posição do cursor e executa a ação apropriada. Se apropriado, ele envia a [**mensagem \_ SYSCOMMAND do WM**](/windows/desktop/menurc/wm-syscommand) para a janela.
 
-Ao contrário das mensagens do [**WM \_ NCLBUTTONUP**](wm-nclbuttonup.md), do [**WM \_ NCMBUTTONUP**](wm-ncmbuttonup.md)e do [**WM \_ NCRBUTTONUP**](wm-ncrbuttonup.md) , um aplicativo deve retornar **true** dessa mensagem se a processar. Isso permitirá que o software que simula essa mensagem em sistemas Windows anteriores ao Windows 2000 determine se o procedimento de janela processou a mensagem ou chamou [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) para processá-la.
+Ao contrário das mensagens do [**WM \_ NCLBUTTONUP**](wm-nclbuttonup.md), do [**WM \_ NCMBUTTONUP**](wm-ncmbuttonup.md)e do [**WM \_ NCRBUTTONUP**](wm-ncrbuttonup.md) , um aplicativo deve retornar **true** dessa mensagem se a processar. isso permitirá que o software que simula essa mensagem em sistemas Windows anteriores a Windows 2000 para determinar se o procedimento de janela processou a mensagem ou se chamou [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) para processá-la.
 
 ## <a name="requirements"></a>Requisitos
 

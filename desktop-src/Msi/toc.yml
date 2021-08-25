@@ -1,34 +1,34 @@
 - name: Windows Installer
   href: windows-installer-portal.md
   items:
-    - name: Roteiro para Windows Installer documentação
+    - name: Roteiro para a documentação Windows instalador
       href: roadmap-to-windows-installer-documentation.md
       items:
-        - name: Guia baseado em função para Windows Installer documentação
+        - name: Guia baseado em função para Windows do Instalador
           href: role-based-guide-to-windows-installer-documentation.md
-        - name: Outras fontes de informações de Windows Installer
+        - name: Outras fontes de Windows informações do instalador
           href: other-sources-of-windows-installer-information.md
-        - name: Práticas recomendadas de Windows Installer
+        - name: Windows Práticas recomendadas do instalador
           href: windows-installer-best-practices.md
-    - name: O que há de novo no Windows Installer
+    - name: Novidades no Windows Instalador
       href: what-s-new-in-windows-installer.md
       items:
-        - name: 'O que há de novo no Windows Installer 5,0'
+        - name: Novidades no Windows 5.0
           href: what-s-new-in-windows-installer-5-0.md
-        - name: 'Sem suporte no Windows Installer 4,5'
+        - name: Sem suporte no Windows 4.5
           href: not-supported-in-windows-installer-4-5.md
-        - name: 'Sem suporte no Windows Installer 4,0'
+        - name: Sem suporte no Windows 4.0
           href: not-supported-in-windows-installer-4-0.md
-        - name: 'Sem suporte no Windows Installer 3,1'
+        - name: Sem suporte no Windows 3.1
           href: not-supported-in-windows-installer-version-3-1.md
-        - name: 'Sem suporte no Windows Installer 3,0'
+        - name: Sem suporte no Windows 3.0
           href: not-supported-in-windows-installer-version-3-0.md
-        - name: 'Sem suporte no Windows Installer 2,0'
+        - name: Sem suporte no Windows 2.0
           href: not-supported-in-windows-installer-version-2-0.md
-    - name: Sobre Windows Installer
+    - name: Sobre Windows Instalador
       href: about-windows-installer.md
       items:
-        - name: Visão geral do Windows Installer
+        - name: Visão geral do Windows Instalador
           href: overview-of-windows-installer.md
           items:
             - name: Pacote de instalação
@@ -36,9 +36,9 @@
             - name: Componentes e recursos
               href: components-and-features.md
               items:
-                - name: Componentes do Windows Installer
+                - name: Windows Componentes do instalador
                   href: windows-installer-components.md
-                - name: Recursos de Windows Installer
+                - name: Windows Recursos do instalador
                   href: windows-installer-features.md
             - name: Mecanismo de instalação
               href: installation-mechanism.md
@@ -47,7 +47,7 @@
             - name: Anúncio
               href: advertisement.md
               items:
-                - name: Suporte de plataforma do anúncio
+                - name: Suporte à plataforma de anúncio
                   href: platform-support-of-advertisement.md
             - name: Instalação sob demanda
               href: installation-on-demand.md
@@ -57,11 +57,11 @@
               href: customization.md
         - name: Instalação administrativa
           href: administrative-installation.md
-        - name: Reverter instalação
+        - name: Instalação de reação
           href: rollback-installation.md
         - name: Instalação de manutenção
           href: maintenance-installation.md
-        - name: Extensões de nome de arquivo Windows Installer
+        - name: Windows Extensões de nome de arquivo do instalador
           href: windows-installer-file-extensions.md
         - name: Opções de linha de comando
           href: command-line-options.md
@@ -85,11 +85,11 @@
                   href: disablemedia.md
                 - name: DisableRollback
                   href: disablerollback.md
-                - name: SearchOrder
+                - name: Searchorder
                   href: searchorder.md
-                - name: Política de TransformsAtSource
+                - name: TransformsAtSource Policy
                   href: transformsatsource-policy.md
-            - name: Políticas do computador
+            - name: Políticas de computador
               href: machine-policies.md
               items:
                 - name: AllowLockdownBrowse
@@ -128,7 +128,7 @@
                   href: enforceupgradecomponentrules.md
                 - name: LimitSystemRestoreCheckpointing
                   href: limitsystemrestorecheckpointing.md
-                - name: Log
+                - name: Registro em log
                   href: logging.md
                 - name: MaxPatchCacheSize
                   href: maxpatchcachesize.md
@@ -136,7 +136,7 @@
                   href: msidisableembeddedui.md
                 - name: SafeForScripting
                   href: safeforscripting.md
-                - name: Política de TransformsSecure
+                - name: TransformsSecure Policy
                   href: transformssecure-policy.md
                 - name: WinHttpAutoLogonLevel
                   href: winhttpautologonlevel.md
@@ -145,14 +145,14 @@
           items:
             - name: Política de resiliência de origem
               href: source-resiliency-policy-windows-installer-version-2-0.md
-        - name: Usando Windows Installer e Proteção de Recursos do Windows
+        - name: Usando Windows instalador e proteção Windows recursos
           href: windows-resource-protection-on-windows-vista.md
-        - name: Pontos de restauração do sistema e o Windows Installer
+        - name: Restauração do Sistema pontos e o instalador Windows aplicativo
           href: system-restore-points-and-the-windows-installer.md
-        - name: Regras de controle de versão de arquivo
+        - name: Regras de versão de arquivo
           href: file-versioning-rules.md
           items:
-            - name: Controle de versão de arquivo padrão
+            - name: Versão do arquivo padrão
               href: default-file-versioning.md
               items:
                 - name: Ambos os arquivos têm uma versão
@@ -167,22 +167,22 @@
           href: product-codes.md
         - name: Códigos de pacote
           href: package-codes.md
-        - name: Mesclagens e transformações
+        - name: Mesclagem e transformação
           href: merges-and-transforms.md
         - name: Componentes qualificados
           href: qualified-components.md
-        - name: Log de Windows Installer
+        - name: Windows Registro em log do instalador
           href: windows-installer-logging.md
           items:
-            - name: Log normal
+            - name: Registro em log normal
               href: normal-logging.md
             - name: Log de eventos
               href: event-logging.md
-            - name: Registro de valores de retorno de ação
+            - name: Registro em log de valores de retorno de ação
               href: logging-of-action-return-values.md
-            - name: Impedir que informações confidenciais sejam gravadas no arquivo de log
+            - name: Impedindo que informações confidenciais são escritas no arquivo de log
               href: preventing-confidential-information-from-being-written-into-the-log-file.md
-        - name: Arquivos complementares
+        - name: Arquivos de adoção
           href: companion-files.md
         - name: Componentes isolados
           href: isolated-components.md
@@ -195,7 +195,7 @@
               href: removal-of-isolated-components.md
         - name: Contexto de instalação
           href: installation-context.md
-    - name: Usando Windows Installer
+    - name: Usando Windows instalador
       href: using-windows-installer.md
       items:
         - name: Organizando aplicativos em componentes
@@ -203,13 +203,13 @@
           items:
             - name: Alterando o código do componente
               href: changing-the-component-code.md
-            - name: O que acontece se as regras de componente forem interrompidas?
+            - name: O que acontece se as regras do componente são interrompidas?
               href: what-happens-if-the-component-rules-are-broken.md
             - name: Definindo componentes do instalador
               href: defining-installer-components.md
         - name: Baixando uma instalação da Internet
           href: downloading-an-installation-from-the-internet.md
-        - name: Instalações do Multiple-Package
+        - name: Multiple-Package instalação do Multiple-Package
           href: multiple-package-installations.md
         - name: Instalações simultâneas
           href: concurrent-installations.md
@@ -224,61 +224,61 @@
               href: ice11.md
             - name: _MSIExecute mutex
               href: '-msiexecute-mutex.md'
-            - name: __MsiPromptForCD mutex
+            - name: __MsiPromptForCD Mutex
               href: '--msipromptforcd-mutex.md'
-        - name: Configurando adicionar/remover programas com Windows Installer
+        - name: Configurando Adicionar/Remover Programas com Windows Instalador
           href: configuring-add-remove-programs-with-windows-installer.md
         - name: Usando gabinetes e fontes compactadas
           href: using-cabinets-and-compressed-sources.md
           items:
-            - name: Fontes compactadas e descompactadas
+            - name: Fontes compactadas e descompactados
               href: compressed-and-uncompressed-sources.md
             - name: Arquivos de gabinete
               href: cabinet-files.md
             - name: Incluindo um arquivo de gabinete em uma instalação
               href: including-a-cabinet-file-in-an-installation.md
-            - name: 'Ordenando números de sequência de arquivos em um gabinete, tabela de arquivos e tabelas de mídia'
+            - name: 'Ordenando números de sequência de arquivos em um gabinete, tabela de arquivos e tabela de mídia'
               href: ordering-file-sequence-numbers-in-a-cabinet-file-table-and-media-table.md
         - name: Usando componentes qualificados
           href: using-qualified-components.md
         - name: Usando componentes transitivos
           href: using-transitive-components.md
-        - name: Localizando um pacote de Windows Installer
+        - name: Localizando um pacote Windows instalador
           href: localizing-a-windows-installer-package.md
           items:
-            - name: Manipulação de página de código (Windows Installer)
+            - name: Manipulação de página de código (Windows instalador)
               href: code-page-handling-windows-installer-.md
               items:
                 - name: Manipulação de página de código de tabelas importadas e exportadas
                   href: code-page-handling-of-imported-and-exported-tables.md
-                - name: Manipulação de página de código de cadeias de caracteres de parâmetro
+                - name: Tratamento de página de código de cadeias de caracteres de parâmetro
                   href: code-page-handling-of-parameter-strings.md
-            - name: Criando um banco de dados com uma página de código neutra
+            - name: Criando um banco de dados com uma página de código neutro
               href: creating-a-database-with-a-neutral-code-page.md
             - name: Localizando as tabelas Error e ActionText
               href: localizing-the-error-and-actiontext-tables.md
             - name: Determinando a página de código de um banco de dados de instalação
               href: determining-an-installation-database-s-code-page.md
-            - name: Localizando o idioma exibido por caixas de diálogo
+            - name: Localizando o idioma exibido por diálogos
               href: localizing-the-language-displayed-by-dialogs.md
-            - name: Configurando a página de código de um banco de dados
+            - name: Definindo a página de código de um banco de dados
               href: setting-the-code-page-of-a-database.md
-            - name: Preparando um pacote de Windows Installer para localização
+            - name: Preparando um pacote Windows instalador para localização
               href: preparing-a-windows-installer-package-for-localization.md
-        - name: 'Pesquisando aplicativos, arquivos, entradas de registro ou entradas de arquivo. ini existentes'
+        - name: 'Pesquisando aplicativos, arquivos, entradas do Registro ou .ini de arquivo existentes'
           href: searching-for-existing-applications-files-registry-entries-or--ini-file-entries.md
           items:
-            - name: Pesquisando todas as unidades fixas de um arquivo
+            - name: Pesquisando todas as unidades fixas para um arquivo
               href: searching-all-fixed-drives-for-a-file.md
             - name: Procurando um arquivo em um local específico
               href: searching-for-a-file-in-a-specific-location.md
-            - name: Procurando um diretório e um arquivo no diretório
+            - name: Pesquisando um diretório e um arquivo no diretório
               href: searching-for-a-directory-and-a-file-in-the-directory.md
-            - name: Procurando um arquivo e criando uma propriedade que contém o caminho do arquivo
+            - name: Pesquisando um arquivo e criando uma propriedade que mantém o caminho do arquivo
               href: searching-for-a-file-and-creating-a-property-holding-the-file-s-path.md
-            - name: Procurando uma entrada de registro e criando uma propriedade que contém o valor do registro
+            - name: Pesquisando uma entrada do Registro e criando uma propriedade que mantém o valor do Registro
               href: searching-for-a-registry-entry-and-creating-a-property-holding-the-value-of-the-registry.md
-        - name: Criando um pacote grande
+        - name: Como autor de um pacote grande
           href: authoring-a-large-package.md
         - name: Determinando o contexto de instalação
           href: determining-installation-context.md
@@ -286,11 +286,11 @@
           href: checking-the-installation-of-features-components-files.md
         - name: Verificação de CRC durante uma instalação
           href: crc-checking-during-an-installation.md
-        - name: 'Instalando componentes, arquivos, fontes e chaves do registro permanentes'
+        - name: 'Instalando componentes permanentes, arquivos, fontes, chaves do Registro'
           href: installing-permanent-components-files-fonts-registry-keys.md
-        - name: Removendo arquivos perdidos
+        - name: Removendo arquivos desaparados
           href: removing-stranded-files.md
-        - name: Pesquisando um componente ou recurso desfeito
+        - name: Procurando um recurso ou componente desfeito
           href: searching-for-a-broken-feature-or-component.md
         - name: Substituindo arquivos existentes
           href: replacing-existing-files.md
@@ -299,22 +299,22 @@
         - name: Instalando várias instâncias de produtos e patches
           href: installing-multiple-instances-of-products-and-patches.md
           items:
-            - name: Criando várias instâncias com transformações de instância
+            - name: Como autor de várias instâncias com transformações de instância
               href: authoring-multiple-instances-with-instance-transforms.md
             - name: Instalando várias instâncias com transformações de instância
               href: installing-multiple-instances-with-instance-transforms.md
-        - name: Usando Windows Installer com um Terminal Server
+        - name: Usando Windows instalador com um servidor de terminal
           href: using-windows-installer-with-a-terminal-server.md
-        - name: Controlando Estados de seleção de recursos
+        - name: Controlando estados de seleção de recursos
           href: controlling-feature-selection-states.md
-        - name: Diretrizes para a criação de instalações seguras
+        - name: Diretrizes para a autorização de instalações seguras
           href: guidelines-for-authoring-secure-installations.md
           items:
             - name: Diretrizes para proteger ações personalizadas
               href: guidelines-for-securing-custom-actions.md
             - name: Diretrizes para proteger pacotes em computadores bloqueados
               href: guidelines-for-securing-packages-on-locked-down-computers.md
-            - name: Protegendo recursos
+            - name: Proteger recursos
               href: securing-resources-.md
         - name: Usando componentes isolados
           href: using-isolated-components.md
@@ -325,60 +325,60 @@
               href: installing-a-non-com-component-to-a-private-location.md
             - name: Tornar um componente COM em um pacote existente privado
               href: make-a-com-component-in-an-existing-package-private.md
-            - name: Tornar um componente não-COM em um pacote particular existente
+            - name: Tornar um componente não COM em um pacote existente privado
               href: make-a-non-com-component-in-an-existing-package-private.md
-        - name: Determinando a versão de Windows Installer
+        - name: Determinando a versão Windows do instalador
           href: determining-the-windows-installer-version.md
-        - name: Instalando um aplicativo COM+ com o Windows Installer
+        - name: Instalando um aplicativo COM+ com o Windows Instalador
           href: installing-a-com--application-with-the-windows-installer.md
-        - name: Adicionando ou removendo chaves do registro na instalação ou remoção de componentes
+        - name: Adicionando ou removendo chaves do Registro na instalação ou remoção de componentes
           href: adding-or-removing-registry-keys-on-the-installation-or-removal-of-components.md
-        - name: Adicionando e removendo um aplicativo e não deixando nenhum rastreamento no registro
+        - name: Adicionando e removendo um aplicativo e não deixando nenhum rastreamento no Registro
           href: adding-and-removing-an-application-and-leaving-no-trace-in-the-registry.md
-        - name: Reduzindo o tamanho de um arquivo. msi
+        - name: Reduzindo o tamanho de um arquivo .msi dados
           href: reducing-the-size-of-an--msi-file.md
         - name: Alterando o local de destino de um diretório
           href: changing-the-target-location-for-a-directory.md
         - name: Ocultando o botão Cancelar durante uma instalação
           href: hiding-the-cancel-button-during-an-installation.md
-        - name: Usando Windows Installer com o UAC
+        - name: Usando Windows instalador com UAC
           href: using-windows-installer-with-uac.md
           items:
             - name: Diretrizes para pacotes
               href: guidelines-for-packages.md
-            - name: Criando pacotes sem a caixa de diálogo UAC
+            - name: Caixa de diálogo De autor de pacotes sem o UAC
               href: authoring-packages-without-the-uac-dialog-box.md
             - name: Instalando um pacote com privilégios elevados para um não administrador
               href: installing-a-package-with-elevated-privileges-for-a-non-admin.md
-            - name: Anunciando um aplicativo Per-User para ser instalado com privilégios elevados
+            - name: Anunciando um Per-User aplicativo a ser instalado com privilégios elevados
               href: advertising-a-per-user-application-to-be-installed-with-elevated-privileges.md
-        - name: Usando Windows Installer com o Gerenciador de reinicialização
+        - name: Usando Windows instalador com o Gerenciador de Reinicialização
           href: using-windows-installer-with-restart-manager.md
           items:
-            - name: Usando o Gerenciador de reinicialização com uma interface do usuário externa
+            - name: Usando o Gerenciador de Reinicialização com uma interface do usuário externa
               href: using-restart-manager-with-an-external-ui-.md
-        - name: Usando Windows Installer com WMI
+        - name: Usando Windows instalador com WMI
           href: using-windows-installer-with-wmi.md
         - name: Enumerando componentes
           href: enumerating-components-.md
         - name: Usando a configuração de serviços
           href: using-services-configuration.md
-        - name: Criação de pacote único
+        - name: Autorização de pacote único
           href: single-package-authoring.md
-    - name: Guia de Windows Installer
+    - name: Windows Guia do instalador
       href: windows-installer-guide.md
       items:
-        - name: Assinaturas digitais e Windows Installer
+        - name: Assinaturas digitais e Windows Instalador
           href: digital-signatures-and-windows-installer.md
           items:
-            - name: Assinaturas digitais e arquivos de gabinete externo
+            - name: Assinaturas digitais e arquivos de gabinete externos
               href: digital-signatures-and-external-cabinet-files.md
-            - name: Windows Installer e política de restrição de software
+            - name: Windows Política de instalação e restrição de software
               href: windows-installer-and-software-restriction-policy.md
-            - name: Criando uma instalação assinada totalmente verificada
+            - name: Como autor de uma instalação assinada totalmente verificada
               href: authoring-a-fully-verified-signed-installation.md
               items:
-                - name: Criando uma instalação assinada totalmente verificada usando a automação
+                - name: Como autor de uma instalação assinada totalmente verificada usando a automação
                   href: authoring-a-fully-verified-signed-installation-using-automation.md
         - name: Assemblies
           href: assemblies.md
@@ -397,16 +397,16 @@
                       href: private-assemblies.md
                     - name: Assemblies lado a lado
                       href: side-by-side-assemblies.md
-                    - name: Instalando assemblies do Win32 para compartilhamento lado a lado no Windows XP
+                    - name: Instalando assemblies win32 para compartilhamento lado a lado no Windows XP
                       href: installing-win32-assemblies-for-side-by-side-sharing-on-windows-xp.md
-                    - name: Instalando assemblies do Win32 para o uso particular de um aplicativo no Windows XP
+                    - name: Instalando assemblies Win32 para o uso privado de um aplicativo no Windows XP
                       href: installing-win32-assemblies-for-the-private-use-of-an-application-on-windows-xp.md
                 - name: Instalação de assemblies do Common Language Runtime
                   href: installation-of-common-language-runtime-assemblies.md
                   items:
-                    - name: Instalação de assemblies no cache de assembly global
+                    - name: Instalação de assemblies no Cache de Assembly Global
                       href: installation-of-assemblies-to-the-global-assembly-cache.md
-                    - name: Reversão de assemblies no cache de assembly global
+                    - name: Reação de assemblies no cache de assembly global
                       href: rollback-of-assemblies-in-the-global-assembly-cache.md
                     - name: Remoção de assemblies do cache de assembly global
                       href: removal-of-assemblies-from-the-global-assembly-cache.md
@@ -414,80 +414,80 @@
               href: updating-assemblies.md
             - name: Modos de reinstalação de assemblies do Common Language Runtime
               href: reinstallation-modes-of-common-language-runtime-assemblies.md
-            - name: Chaves do registro de assembly gravadas por Windows Installer
+            - name: Chaves do Registro de Assembly escritas pelo Windows Instalador
               href: assembly-registry-keys-written-by-windows-installer-.md
         - name: Interface do Usuário
           href: user-interface.md
           items:
-            - name: Sobre a interface do usuário
+            - name: Sobre o Interface do Usuário
               href: about-the-user-interface.md
               items:
-                - name: Esquema da interface do usuário
+                - name: Interface do Usuário esquema
                   href: user-interface-schema.md
                 - name: Visão geral da caixa de diálogo
                   href: dialog-box-overview.md
                 - name: Visão geral dos controles
                   href: controls-overview.md
-                - name: 'Visão geral do ControlEvent,'
+                - name: Visão geral de ControlEvent
                   href: controlevent-overview.md
                 - name: Acessibilidade
                   href: accessibility.md
                   items:
-                    - name: Adicionando texto extra a botões de opção
+                    - name: Adicionando texto extra aos botões de rádio
                       href: adding-extra-text-to-radio-buttons.md
-                - name: Comportamento do assistente de interface do usuário
+                - name: Comportamento Interface do Usuário Assistente do Interface do Usuário
                   href: user-interface-wizard-behavior.md
-                - name: Níveis de interface do usuário
+                - name: Interface do Usuário níveis
                   href: user-interface-levels.md
             - name: Usando a interface do usuário
               href: using-the-user-interface.md
               items:
                 - name: Adicionando controles e texto
                   href: adding-controls-and-text.md
-                - name: Criando um controle ProgressBar
+                - name: Como autor de um controle ProgressBar
                   href: authoring-a-progressbar-control.md
-                - name: Criando mensagens de prompt de disco
+                - name: Como autorar mensagens de prompt de disco
                   href: authoring-disk-prompt-messages.md
-                - name: 'Criando um condicional, aguarde... Caixa de mensagem'
+                - name: 'Como fazer uma condicional, aguarde... Caixa de mensagem'
                   href: authoring-a-conditional-please-wait-------message-box.md
                 - name: Adicionando texto armazenado em uma propriedade
                   href: adding-text-stored-in-a-property.md
-                - name: Visualizando a interface do usuário
+                - name: Visualizando o Interface do Usuário
                   href: previewing-the-user-interface.md
-                - name: Monitorando uma instalação usando o MsiSetExternalUIRecord
+                - name: Monitorando uma instalação usando MsiSetExternalUIRecord
                   href: monitoring-an-installation-using-msisetexternaluirecord.md
-                - name: Monitorando uma instalação usando o MsiSetExternalUI
+                - name: Monitorando uma instalação usando MsiSetExternalUI
                   href: monitoring-an-installation-using-msisetexternalui.md
                   items:
                     - name: Manipulando mensagens de progresso usando MsiSetExternalUI
                       href: handling-progress-messages-using-msisetexternalui.md
-                    - name: Retornando valores de um manipulador de interface do usuário externo
+                    - name: Retornando valores de um manipulador de Interface do Usuário externo
                       href: returning-values-from-an-external-user-interface-handler.md
-                    - name: Analisando mensagens de Windows Installer
+                    - name: Análise de Windows do Instalador
                       href: parsing-windows-installer-messages.md
-                - name: Enviando mensagens para Windows Installer usando o MsiProcessMessage
+                - name: Enviando mensagens para Windows instalador usando MsiProcessMessage
                   href: sending-messages-to-windows-installer-using-msiprocessmessage.md
-                - name: Exibindo os murals em uma caixa de diálogo sem janela restrita
+                - name: Exibindo cartazes em uma caixa de diálogo sem modo
                   href: displaying-billboards-on-a-modeless-dialog.md
                 - name: Usando uma interface do usuário inserida
                   href: using-an-embedded-ui.md
             - name: Referência da Interface do Usuário
               href: user-interface-reference.md
               items:
-                - name: Unidades do instalador
+                - name: Unidades do Instalador
                   href: installer-units.md
                 - name: Caixas de diálogo
                   href: dialog-boxes.md
                   items:
-                    - name: Procurar caixa de diálogo
+                    - name: Caixa de diálogo Procurar
                       href: browse-dialog.md
-                    - name: Cancelar caixa de diálogo
+                    - name: Caixa de diálogo Cancelar
                       href: cancel-dialog.md
                     - name: Caixa de diálogo DiskCost
                       href: diskcost-dialog.md
-                    - name: Diálogo de erro
+                    - name: Caixa de diálogo De erro
                       href: error-dialog.md
-                    - name: Sair da caixa de diálogo
+                    - name: Caixa de diálogo Sair
                       href: exit-dialog.md
                     - name: Caixa de diálogo FatalError
                       href: fatalerror-dialog.md
@@ -499,7 +499,7 @@
                       href: licenseagreement-dialog.md
                     - name: Caixa de diálogo MsiRMFilesInUse
                       href: msirmfilesinuse-dialog.md
-                    - name: Caixa de diálogo de seleção
+                    - name: Caixa de diálogo Seleção
                       href: selection-dialog.md
                     - name: Caixa de diálogo UserExit
                       href: userexit-dialog.md
@@ -514,7 +514,7 @@
                       href: keepmodeless-dialog-style-bit.md
                     - name: Bit de estilo de caixa de diálogo LeftScroll
                       href: leftscroll-dialog-style-bit.md
-                    - name: Minimizar o bit do estilo de caixa de diálogo
+                    - name: Minimizar o bit de estilo da caixa de diálogo
                       href: minimize-dialog-style-bit.md
                     - name: Bit de estilo de caixa de diálogo modal
                       href: modal-dialog-style-bit.md
@@ -533,9 +533,9 @@
                 - name: Controles
                   href: controls.md
                   items:
-                    - name: Controle de mural
+                    - name: Controle De mamão
                       href: billboard-control.md
-                    - name: Controle de bitmap
+                    - name: Controle Bitmap
                       href: bitmap-control.md
                     - name: Controle de CheckBox
                       href: checkbox-control.md
@@ -543,9 +543,9 @@
                       href: combobox-control.md
                     - name: Controle DirectoryCombo
                       href: directorycombo-control.md
-                    - name: Controle directorylist
+                    - name: Controle DirectoryList
                       href: directorylist-control.md
-                    - name: Controle de edição
+                    - name: Editar Controle
                       href: edit-control.md
                     - name: Controle GroupBox
                       href: groupbox-control.md
@@ -553,7 +553,7 @@
                       href: hyperlink-control.md
                     - name: Controle de ícone
                       href: icon-control.md
-                    - name: Controle linha
+                    - name: Controle de linha
                       href: line-control.md
                     - name: Controle ListBox
                       href: listbox-control.md
@@ -565,9 +565,9 @@
                       href: pathedit-control.md
                     - name: Controle ProgressBar
                       href: progressbar-control.md
-                    - name: Controle de supressão
+                    - name: Controle PushButton
                       href: pushbutton-control.md
-                    - name: Controle de botão de opção
+                    - name: Controle RadioButtonGroup
                       href: radiobuttongroup-control.md
                     - name: Controle ScrollableText
                       href: scrollabletext-control.md
@@ -584,13 +584,13 @@
                   items:
                     - name: Atributo de controle BiDi
                       href: bidi-control-attribute.md
-                    - name: Atributo de controle do muralname
+                    - name: Atributo de controleName
                       href: billboardname-control-attribute.md
-                    - name: Atributo de controle de bitmap
+                    - name: Atributo de controle bitmap
                       href: bitmap-control-attribute.md
                     - name: Atributo de controle CDROMVolume
                       href: cdromvolume-control-attribute.md
-                    - name: Atributo de controle de combinação de combinações
+                    - name: Atributo de controle ComboList
                       href: combolist-control-attribute.md
                     - name: Atributo de controle ControlShowRollbackCost
                       href: controlshowrollbackcost-control-attribute.md
@@ -604,23 +604,23 @@
                       href: fixedvolume-control-attribute.md
                     - name: Atributo de controle FloppyVolume
                       href: floppyvolume-control-attribute.md
-                    - name: Formatar atributo de controle
+                    - name: Atributo de controle FormatSize
                       href: formatsize-control-attribute.md
                     - name: Atributo de controle HasBorder
                       href: hasborder-control-attribute.md
                     - name: Atributo de controle de ícone
                       href: icon-control-attribute.md
-                    - name: Atributo de controle de ícones
+                    - name: IconSize Control Attribute
                       href: iconsize-control-attribute.md
                     - name: Atributo de controle indireto
                       href: indirect-control-attribute.md
                     - name: Atributo de controle IndirectPropertyName
                       href: indirectpropertyname-control-attribute.md
-                    - name: Atributo de controle de inteiro
+                    - name: Atributo de controle Integer
                       href: integer-control-attribute.md
                     - name: Atributo de controle LeftScroll
                       href: leftscroll-control-attribute.md
-                    - name: Atributo de controle de várias linhas
+                    - name: Atributo de controle multilinha
                       href: multiline-control-attribute.md
                     - name: Atributo de controle NoPrefix
                       href: noprefix-control-attribute.md
@@ -1071,7 +1071,7 @@
                   href: custom-action-return-processing-options.md
                 - name: Valores de retorno de ação personalizada
                   href: custom-action-return-values.md
-                - name: Valores de retorno de ações personalizadas do JScript e do VBScript
+                - name: valores de retorno de ações personalizadas de JScript e VBScript
                   href: return-values-of-jscript-and-vbscript-custom-actions.md
         - name: Propriedades
           href: properties.md
@@ -1473,7 +1473,7 @@
                   href: terminalserver.md
                 - name: TextHeight
                   href: textheight.md
-                - name: Hora
+                - name: Tempo
                   href: time.md
                 - name: TRANSFORMAÇÕES
                   href: transforms.md
@@ -1909,12 +1909,12 @@
                       href: ice-104.md
                     - name: ICE 105
                       href: ice-105.md
-            - name: Automação de validação
+            - name: Automação de Validação
               href: validation-automation.md
               items:
                 - name: Usando Evalcom2
                   href: using-evalcom2.md
-                - name: Interfaces EvalCom2
+                - name: EvalCom2 Interfaces
                   href: evalcom2-interfaces.md
                   items:
                     - name: IValidate
@@ -1928,7 +1928,7 @@
                           href: /windows/desktop/api/evalcom2/nf-evalcom2-ivalidate-closedatabase
                         - name: Método CloseCUB
                           href: /windows/desktop/api/evalcom2/nf-evalcom2-ivalidate-closecub
-                        - name: Método setdisplay
+                        - name: Método SetDisplay
                           href: /windows/desktop/api/evalcom2/nf-evalcom2-ivalidate-setdisplay
                         - name: Método SetStatus
                           href: /windows/desktop/api/evalcom2/nf-evalcom2-ivalidate-setstatus
@@ -1947,62 +1947,62 @@
             - name: Sobre módulos de mesclagem
               href: about-merge-modules.md
               items:
-                - name: Mesclar banco de dados do módulo
+                - name: Mesclar banco de dados de módulo
                   href: merge-module-database.md
                 - name: MergeModule.CABinet
                   href: mergemodule-cabinet.md
-                - name: Vários módulos de mesclagem de idioma
+                - name: Módulos de mesclagem de vários idiomas
                   href: multiple-language-merge-modules.md
                 - name: Módulos de mesclagem configuráveis
                   href: configurable-merge-modules.md
             - name: Usando módulos de mesclagem
               href: using-merge-modules.md
               items:
-                - name: Criando módulos de mesclagem
+                - name: Como autorar módulos de mesclagem
                   href: authoring-merge-modules.md
                   items:
-                    - name: Obtendo ferramentas de criação de módulo de mesclagem
+                    - name: Obtendo ferramentas de autor de módulo de mesclagem
                       href: obtaining-merge-module-authoring-tools.md
                     - name: Obtendo bancos de dados de módulo de mesclagem em branco
                       href: obtaining-blank-merge-module-databases.md
-                    - name: Nomeando chaves primárias em bancos de dados do módulo de mesclagem
+                    - name: Nomeando chaves primárias em bancos de dados de módulo de mesclagem
                       href: naming-primary-keys-in-merge-module-databases.md
-                    - name: Criando tabelas de componentes do módulo de mesclagem
+                    - name: Como autorar tabelas de componentes do módulo de mesclagem
                       href: authoring-merge-module-component-tables.md
                     - name: Referenciando recursos em módulos de mesclagem
                       href: referencing-features-in-merge-modules.md
-                    - name: Criando tabelas de diretório do módulo de mesclagem
+                    - name: Como autorar tabelas de diretório do módulo de mesclagem
                       href: authoring-merge-module-directory-tables.md
-                    - name: Criando tabelas FeatureComponents do módulo de mesclagem
+                    - name: Recursos do módulo de mesclagem de autor
                       href: authoring-merge-module-featurecomponents-tables.md
-                    - name: Gerando MergeModule.CABarquivos de gabinete inet
+                    - name: Gerando arquivos de gabinete MergeModule.CABinet
                       href: generating-mergemodule-cabinet-cabinet-files.md
-                    - name: Criando tabelas de arquivos do módulo de mesclagem
+                    - name: Como autorar tabelas de arquivos de módulo de mesclagem
                       href: authoring-merge-module-file-tables.md
-                    - name: Criando tabelas ModuleSignature
+                    - name: Módulo de AutorArmaculas de Design
                       href: authoring-modulesignature-tables.md
-                    - name: Criando tabelas ModuleComponents
+                    - name: Módulo de AutorComando Tabelas deComponentes
                       href: authoring-modulecomponents-tables.md
-                    - name: Criando tabelas de sequências do módulo de mesclagem
+                    - name: Como autorar tabelas de sequência de módulo de mesclagem
                       href: authoring-merge-module-sequence-tables.md
-                    - name: Criando interfaces de usuário em módulos de mesclagem
+                    - name: Como fazer interfaces do usuário em módulos de mesclagem
                       href: authoring-user-interfaces-in-merge-modules.md
-                    - name: Criando tabelas de registro do módulo de mesclagem
+                    - name: Como autorar tabelas de registro de módulo de mesclagem
                       href: authoring-merge-module-registry-tables.md
-                    - name: Criando fluxos de informações de resumo do módulo de mesclagem
+                    - name: Informações de resumo do módulo de mesclagem de Fluxos
                       href: authoring-merge-module-summary-information-streams.md
                     - name: Validando módulos de mesclagem
                       href: validating-merge-modules.md
-                    - name: Adicionando fluxos de informações do Leiame a módulos de mesclagem
+                    - name: Adicionando informações do Leiame Fluxos módulos de mesclagem
                       href: adding-readme-information-streams-to-merge-modules.md
                 - name: Usando módulos de mesclagem de 64 bits
                   href: using-64-bit-merge-modules.md
-                - name: Criando módulos de mesclagem de vários idiomas
+                - name: Como autor de vários módulos de mesclagem de idioma
                   href: authoring-multiple-language-merge-modules.md
                   items:
                     - name: Escolhendo o idioma padrão de um módulo de mesclagem de vários idiomas
                       href: choosing-the-default-language-of-a-multiple-language-merge-module.md
-                    - name: Criando uma transformação de idioma para um módulo de mesclagem de vários idiomas
+                    - name: Como fazer uma transformação de linguagem para um módulo de mesclagem de vários idiomas
                       href: authoring-a-language-transform-for-a-multiple-language-merge-module.md
                     - name: Ordenando a sequência de arquivos no CAB de um módulo de mesclagem de vários idiomas
                       href: ordering-the-file-sequence-in-the-cab-of-a-multiple-language-merge-module.md
@@ -2013,9 +2013,9 @@
                       href: using-automation-to-merge-a-merge-module-into-a-database.md
                     - name: Usando a API para mesclar um módulo de mesclagem em um banco de dados
                       href: using-the-api-to-merge-a-merge-module-into-a-database.md
-                    - name: Abrindo um módulo de mesclagem Multiple-Language em um idioma específico
+                    - name: Abrindo um Multiple-Language de mesclagem em um idioma específico
                       href: opening-a-multiple-language-merge-module-in-a-specific-language.md
-                    - name: Mesclar um módulo de vários idiomas no mesmo pacote várias vezes
+                    - name: Mesclando um módulo de vários idiomas no mesmo pacote várias vezes
                       href: merging-a-multiple-language-module-into-the-same-package-multiple-times.md
                     - name: Conectando um módulo de mesclagem a vários recursos
                       href: connecting-a-merge-module-to-multiple-features.md
@@ -2026,17 +2026,17 @@
                       href: creating-a-merge-module-that-can-be-configured-by-the-end-user.md
                     - name: Aplicando um módulo de mesclagem configurável com personalizações
                       href: applying-a-configurable-merge-module-with-customizations.md
-                    - name: Adicionando a funcionalidade de configuração de módulo a uma ferramenta de mesclagem
+                    - name: Adicionando funcionalidade de configuração de módulo a uma ferramenta de mesclagem
                       href: adding-module-configuration-capability-to-a-merge-tool.md
             - name: Referência de módulo de mesclagem
               href: merge-module-reference.md
               items:
-                - name: Mesclar automação de módulo
+                - name: Automação de Módulo de Mesclagem
                   href: merge-module-automation.md
                   items:
-                    - name: 'Modelo de objeto para Mergemod.dll versão 1,0'
+                    - name: Modelo de objeto para Mergemod.dll versão 1.0
                       href: object-model-for-mergemod-dll-version-1-0.md
-                    - name: 'Modelo de objeto para Mergemod.dll versão 2,0'
+                    - name: Modelo de objeto Mergemod.dll versão 2.0
                       href: object-model-for-mergemod-dll-version-2-0.md
                     - name: Objetos Mergemod
                       href: mergemod-objects.md
@@ -2054,7 +2054,7 @@
                               href: configurableitem-description.md
                             - name: Propriedade DisplayName
                               href: configurableitem-displayname.md
-                            - name: Propriedade de formato
+                            - name: Propriedade Format
                               href: configurableitem-format.md
                             - name: Propriedade HelpLocation
                               href: configurableitem-helplocation.md
@@ -2071,31 +2071,31 @@
                               href: configuremodule-providetextdata.md
                             - name: Método ProvideIntegerData
                               href: configuremodule-provideintegerdata.md
-                        - name: Objeto de dependência
+                        - name: Objeto dependency
                           href: dependency-object.md
                           items:
-                            - name: Propriedade Language (objeto Dependency)
+                            - name: Propriedade Language (Objeto de Dependência)
                               href: dependency-language.md
-                            - name: Propriedade do módulo
+                            - name: Propriedade Module
                               href: dependency-module.md
-                            - name: Propriedade Version (objeto Dependency)
+                            - name: Propriedade Version (Objeto de Dependência)
                               href: dependency-version.md
                         - name: Objeto Error
                           href: error-object.md
                           items:
                             - name: Propriedade DatabaseKeys
                               href: error-databasekeys.md
-                            - name: Propriedade databasetable
+                            - name: Propriedade DatabaseTable
                               href: error-databasetable.md
-                            - name: Propriedade Language (objeto Error)
+                            - name: Propriedade Language (Objeto de Erro)
                               href: error-language.md
                             - name: Propriedade ModuleKeys
                               href: error-modulekeys.md
-                            - name: Propriedade moduletable
+                            - name: Propriedade ModuleTable
                               href: error-moduletable.md
                             - name: Propriedade Path
                               href: error-path.md
-                            - name: Propriedade Type (objeto Error)
+                            - name: Propriedade Type (Objeto de Erro)
                               href: error-type.md
                         - name: Objeto GetFiles
                           href: getfiles-object.md
@@ -2113,7 +2113,7 @@
                               href: merge-closemodule.md
                             - name: Propriedade ConfigurableItems
                               href: merge-configurableitems.md
-                            - name: Método Connect
+                            - name: Conexão Forma
                               href: merge-connect.md
                             - name: Método CreateSourceImage
                               href: merge-createsourceimage.md
@@ -2214,7 +2214,7 @@
                               href: /windows/desktop/api/mergemod/nf-mergemod-imsmmerge-closelog
                             - name: Método CloseModule
                               href: /windows/desktop/api/mergemod/nf-mergemod-imsmmerge-closemodule
-                            - name: Método Connect
+                            - name: Conexão Forma
                               href: /windows/desktop/api/mergemod/nf-mergemod-imsmmerge-connect
                             - name: Método CreateSourceImage
                               href: /windows/desktop/api/Mergemod/nf-mergemod-imsmmerge2-createsourceimage
@@ -2349,31 +2349,31 @@
                           href: arbitrary-bitfield-type.md
                 - name: Exemplo de componente configurável
                   href: configurable-component-example.md
-        - name: Inicialização de Windows Installer
+        - name: Windows Inicialização do instalador
           href: windows-installer-bootstrapping.md
           items:
             - name: Inicialização
               href: bootstrapping.md
             - name: Inicialização de download da Internet
               href: internet-download-bootstrapping.md
-        - name: Windows Installer em sistemas operacionais de 64 bits
+        - name: Windows Instalador em sistemas operacionais de 64 bits
           href: windows-installer-on-64-bit-operating-systems.md
           items:
-            - name: Sobre Windows Installer em sistemas operacionais de 64 bits
+            - name: sobre Windows Installer em sistemas operacionais de 64 bits
               href: about-windows-installer-on-64-bit-operating-systems.md
               items:
-                - name: Pacotes de Windows Installer de 32 bits
+                - name: pacotes de Windows Installer de 32 bits
                   href: 32-bit-windows-installer-packages.md
-                - name: Pacotes de Windows Installer de 64 bits
+                - name: pacotes de Windows Installer de 64 bits
                   href: 64-bit-windows-installer-packages.md
-            - name: Usando pacotes de Windows Installer de 64 bits
+            - name: usando pacotes de Windows Installer de 64 bits
               href: using-64-bit-windows-installer-packages.md
               items:
                 - name: Ações personalizadas de 64 bits
                   href: 64-bit-custom-actions.md
-        - name: Requisitos de Windows Installer e logotipo
+        - name: Windows Requisitos de instalação e logotipo
           href: windows-installer-and-logo-requirements.md
-    - name: Exemplos de Windows Installer
+    - name: Windows Exemplos de instalador
       href: windows-installer-examples.md
       items:
         - name: Um exemplo de instalação
@@ -2496,7 +2496,7 @@
               href: sign-setup-exe-and-mysetup-msi.md
             - name: Estabelecer uma referência HTML para Setup.exe
               href: establish-an-html-reference-to-setup-exe.md
-        - name: Exemplos de script de Windows Installer
+        - name: Windows Exemplos de script do instalador
           href: windows-installer-scripting-examples.md
           items:
             - name: 'Listar produtos, propriedades, recursos e componentes'
@@ -2507,7 +2507,7 @@
               href: export-files.md
             - name: Gerenciar subarmazenamentos
               href: manage-substorages.md
-            - name: Gerenciar fluxos binários
+            - name: gerenciar Fluxos binários
               href: manage-binary-streams.md
             - name: Mesclar dois bancos de dados
               href: merge-two-databases.md
@@ -2533,7 +2533,7 @@
               href: manage-file-sizes-and-versions.md
             - name: Gerar gabinete de arquivo
               href: generate-file-cabinet.md
-            - name: Instruções SQL execute
+            - name: instruções Execute SQL
               href: execute-sql-statements.md
             - name: Copiar arquivo ANSI em um campo de banco de dados
               href: copy-ansi-file-into-a-database-field.md
@@ -2545,7 +2545,7 @@
               href: preview-user-interface.md
         - name: Exemplo de criação de pacote único
           href: single-package-authoring-example.md
-    - name: Referência de Windows Installer
+    - name: Windows Referência do instalador
       href: windows-installer-reference.md
       items:
         - name: Interface de automação
@@ -3223,12 +3223,12 @@
                   items:
                     - name: Nomes de tabela
                       href: table-names.md
-                - name: Limitações de OLE em fluxos
+                - name: limitações de OLE no Fluxos
                   href: ole-limitations-on-streams.md
                 - name: Trabalhando com consultas
                   href: working-with-queries.md
                   items:
-                    - name: Exemplos de consultas de banco de dados usando SQL e script
+                    - name: exemplos de consultas de banco de dados usando SQL e Script
                       href: examples-of-database-queries-using-sql-and-script.md
                 - name: Trabalhando com registros
                   href: working-with-records.md
@@ -3259,7 +3259,7 @@
                   items:
                     - name: Sintaxe SQL
                       href: sql-syntax.md
-                    - name: Passando NULL como o argumento das funções Windows Installer
+                    - name: passando null como o argumento das funções Windows Installer
                       href: passing-null-as-the-argument-of-windows-installer-functions.md
                     - name: MsiCreateRecord
                       href: /windows/desktop/api/Msiquery/nf-msiquery-msicreaterecord
@@ -3654,13 +3654,13 @@
         - name: 'Versões, ferramentas e redistribuíveis liberados'
           href: released-versions-tools-and-redistributables.md
           items:
-            - name: SDK do Windows componentes para desenvolvedores de Windows Installer
+            - name: Windows componentes do SDK para desenvolvedores de Windows Installer
               href: platform-sdk-components-for-windows-installer-developers.md
             - name: Redistribuíveis do Windows Installer
               href: windows-installer-redistributables.md
-            - name: Versões lançadas do Windows Installer
+            - name: versões lançadas do Windows Installer
               href: released-versions-of-windows-installer.md
-            - name: Ferramentas de desenvolvimento Windows Installer
+            - name: Windows Ferramentas de desenvolvimento do instalador
               href: windows-installer-development-tools.md
               items:
                 - name: Instmsi.exe
@@ -3692,7 +3692,7 @@
                 - name: PATCHWIZ.DLL
                   href: patchwiz-dll.md
                   items:
-                    - name: Cache de informações de patch (PATCHWIZ.DLL)
+                    - name: Caching de informações de Patch (PATCHWIZ.DLL)
                       href: patch-information-caching-patchwiz-dll-.md
                     - name: Usando símbolos para reduzir o tamanho do patch binário
                       href: using-symbols-to-reduce-binary-patch-size.md
@@ -3733,7 +3733,7 @@
         - name: Referência de erros
           href: errors-reference.md
           items:
-            - name: Windows Installer mensagens de erro
+            - name: Windows Mensagens de erro do instalador
               href: windows-installer-error-messages.md
             - name: MsiExec.exe e InstMsi.exe mensagens de erro
               href: error-codes.md

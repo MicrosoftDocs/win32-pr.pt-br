@@ -13,12 +13,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 3bf8980fa29841d3c5341daeeccf26cea05db80c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 58f95a62d17ccafd308666a5632a1f7a42ebfda6ca0a54dfb6dfa9d9eda9b684
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501435"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119715476"
 ---
 # <a name="cpl_getcount-message"></a>\_Mensagem de SQLcount do CPL
 
@@ -34,7 +34,7 @@ Enviado para a função [**CPlApplet**](/windows/win32/api/cpl/nc-cpl-applet_pro
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 A função [**CPlApplet**](/windows/win32/api/cpl/nc-cpl-applet_proc) retorna o número de caixas de diálogo que o aplicativo do painel de controle suporta.
 
@@ -48,7 +48,7 @@ Essa mensagem é enviada imediatamente após a mensagem de [**\_ init de CPL**](
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                      |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                      |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                             |
 | Cabeçalho<br/>                   | <dl> <dt>CPL. h</dt> </dl> |
 

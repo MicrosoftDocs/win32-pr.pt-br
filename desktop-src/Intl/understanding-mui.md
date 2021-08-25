@@ -1,27 +1,27 @@
 ---
-description: Esta seção fornece uma visão inicial da tecnologia MUI (Multilingual User interface), parte de seu histórico e seus benefícios.
+description: Esta seção fornece uma análise inicial da tecnologia Interface de Usuário Multilíngue (MUI), alguns de seu histórico e seus benefícios.
 ms.assetid: 15114b14-bd7a-49b0-9719-8c28eeb12bb3
-title: Entendendo o MUI
+title: Noções básicas sobre a MUI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c314fddd2aeeb9a1a05f6829f01566ce0d2620d1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 28e6f90914274297067b1a00a4b476b14d4cc082695377c5c5ca7d8d5685fc1a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104169721"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119811746"
 ---
-# <a name="understanding-mui"></a>Entendendo o MUI
+# <a name="understanding-mui"></a>Noções básicas sobre a MUI
 
-Esta seção fornece uma visão inicial da tecnologia MUI (Multilingual User interface), parte de seu histórico e seus benefícios.
+Esta seção fornece uma análise inicial da tecnologia Interface de Usuário Multilíngue (MUI), alguns de seu histórico e seus benefícios.
 
 Esta seção contém os seguintes tópicos:
 
--   [Visão geral do MUI](overview-of-mui.md)
--   [Conceitos fundamentais do MUI explicados](mui-fundamental-concepts-explained.md)
--   [Evolução do suporte do MUI em versões do Windows](evolution-of-mui-support-across-windows-versions.md)
--   [Benefícios do MUI explicado](benefits-of-mui-explained.md)
--   [Glossário para entender o MUI](glossary-for-understanding-mui.md)
+-   [Visão geral da MUI](overview-of-mui.md)
+-   [Conceitos fundamentais da MUI explicados](mui-fundamental-concepts-explained.md)
+-   [Evolução do suporte à MUI em Windows versões](evolution-of-mui-support-across-windows-versions.md)
+-   [Benefícios da MUI explicada](benefits-of-mui-explained.md)
+-   [Glossário para entender a MUI](glossary-for-understanding-mui.md)
 
  
 

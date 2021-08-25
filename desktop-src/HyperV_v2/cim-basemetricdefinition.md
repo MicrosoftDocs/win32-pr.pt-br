@@ -24,12 +24,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: cac965ed1eae59f1c269d897a12e9aa116183eb4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0614b14f3033da5cf97dfb293f0e9cc130025dbb534331f8ec3386513d8796c6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105757552"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119829706"
 ---
 # <a name="cim_basemetricdefinition-class"></a>\_Classe CIM BaseMetricDefinition
 
@@ -443,20 +443,20 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-As unidades específicas de um valor. O valor dessa propriedade deve ser um valor válido do qualificador de unidades programáticas, conforme definido no Apêndice C. 1 de DSP0004 V 2.4 ou posterior.
+As unidades específicas de um valor. O valor dessa propriedade deve ser um valor legal do qualificador unidades programáticas, conforme definido no Apêndice C.1 de DSP0004 V2.4 ou posterior.
 
 </dd> <dt>
 
-**Timescope**
+**TimeScope**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ BaseMetricValue**](cim-basemetricvalue.md).**TimeStamp**","**CIM \_ BaseMetricValue**.**Duração**")
+Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ BaseMetricValue**](cim-basemetricvalue.md).**TimeStamp**", "**CIM \_ BaseMetricValue**.**Duração**")
 </dt> </dl>
 
 O escopo de tempo que se aplica ao designer de métrica.
@@ -481,7 +481,7 @@ Indica que o escopo de tempo não foi qualificado pelo designer de métrica ou �
 
 </dt> <dd>
 
-Indica que a métrica se aplica a um ponto no tempo. Nas instâncias BaseMetricValue correspondentes, TimeStamp especifica o ponto no tempo e a duração é sempre 0.
+Indica que a métrica se aplica a um ponto no tempo. Nas instâncias BaseMetricValue correspondentes, TimeStamp especifica o ponto no tempo e Duração é sempre 0.
 
 </dd> <dt>
 
@@ -492,7 +492,7 @@ Indica que a métrica se aplica a um ponto no tempo. Nas instâncias BaseMetricV
 
 </dt> <dd>
 
-Indica que a métrica se aplica a um intervalo de tempo. Nas instâncias BaseMetricValue correspondentes, TimeStamp especifica o final do intervalo de tempo e a duração especifica sua duração
+Indica que a métrica se aplica a um intervalo de tempo. Nas instâncias BaseMetricValue correspondentes, TimeStamp especifica o fim do intervalo de tempo e Duração especifica sua duração
 
 </dd> <dt>
 
@@ -503,20 +503,20 @@ Indica que a métrica se aplica a um intervalo de tempo. Nas instâncias BaseMet
 
 </dt> <dd>
 
-Indica que a métrica se aplica a um intervalo de tempo que começou na inicialização do recurso medido (ou seja, o Managedelement associado por MetricDefForMe). Nas instâncias BaseMetricValue correspondentes, TimeStamp especifica o final do intervalo de tempo. Se Duration for 0, isso indica que o tempo de inicialização do recurso medido é desconhecido. Caso contrário, a duração especifica a duração entre a inicialização do recurso e o carimbo de data/hora.
+Indica que a métrica se aplica a um intervalo de tempo que começou na inicialização do recurso medido (ou seja, o ManagedElement associado por MetricDefForMe). Nas instâncias BaseMetricValue correspondentes, TimeStamp especifica o final do intervalo de tempo. Se Duration for 0, isso indicará que o tempo de inicialização do recurso medido é desconhecido. Caso afirma, Duration especifica a duração entre a inicialização do recurso e o TimeStamp.
 
 </dd> <dt>
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF reservado** (5.. 32767)
+<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF Reservado** (5..32767)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-<span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>**Fornecedor reservado** (32768.. 65535)
+<span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>**Fornecedor Reservado** (32768..65535)
 
 
 </dt> <dd></dd> </dl>
@@ -532,7 +532,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-As unidades da métrica. Os exemplos são bytes, pacotes, trabalhos, arquivos, milissegundos e amps.
+As unidades da métrica. Exemplos são bytes, pacotes, trabalhos, arquivos, milissegundos e amps.
 
 </dd> </dl>
 
@@ -544,8 +544,8 @@ As unidades da métrica. Os exemplos são bytes, pacotes, trabalhos, arquivos, m
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                                          |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -554,7 +554,7 @@ As unidades da métrica. Os exemplos são bytes, pacotes, trabalhos, arquivos, m
 
 <dl> <dt>
 
-[**\_Managedelement do CIM**](cim-managedelement.md)
+[**ManagedElement do CIM \_**](cim-managedelement.md)
 </dt> </dl>
 
  

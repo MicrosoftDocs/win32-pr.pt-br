@@ -4,16 +4,16 @@ description: Saiba mais sobre a propriedade Voice do objeto Commands, que retorn
 ms.assetid: 1feb5597-7971-4778-8221-2eb3a6e5e1ee
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7403075d8ec0b2d16c66130fc9534edf4fc391df
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: 5af651532894537f58d35f860b781d3be42bfacf89b9be01d7caa26aa40102ce
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112396151"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119715806"
 ---
 # <a name="voice-property-commands-object"></a>Propriedade Voice (objeto Commands)
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 <dl> <dt>
 

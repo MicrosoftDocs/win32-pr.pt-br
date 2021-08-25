@@ -1,21 +1,21 @@
 ---
-description: Um conjunto de entregas especifica os protocolos que seguem um protocolo. O analisador usa um conjunto de entrega somente quando o analisador pode identificar o próximo protocolo dos dados em uma instância de protocolo.
+description: Um conjunto de entrega especifica os protocolos que seguem um protocolo. O analisador usa um conjunto de entrega somente quando o analisador pode identificar o próximo protocolo dos dados em uma instância de protocolo.
 ms.assetid: d1f44646-98ee-4e3a-a81a-83d6c87c23f4
 title: Especificando um conjunto de entrega
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e9acb421963bea3ffaa70b6165c6ffceee138e38
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3c2f3f7d559c83e3c56bc6ea202b3a0e339dbc1b76d93fc2af1b73f5a2c60c4e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105780199"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119778346"
 ---
 # <a name="specifying-a-handoff-set"></a>Especificando um conjunto de entrega
 
-Um conjunto de entregas especifica os protocolos que seguem um protocolo. O analisador usa um conjunto de entrega somente quando o analisador pode identificar o próximo protocolo dos dados em uma instância de protocolo.
+Um conjunto de entrega especifica os protocolos que seguem um protocolo. O analisador usa um conjunto de entrega somente quando o analisador pode identificar o próximo protocolo dos dados em uma instância de protocolo.
 
-Por exemplo, o protocolo TCP tem uma propriedade Port que identifica o protocolo que segue o protocolo TCP. Um valor de propriedade de 20 indica que o próximo protocolo é FTP. Um valor de propriedade de 53 indica que o próximo protocolo é DNS. Como a propriedade Port identifica o protocolo a seguir, o analisador TCP pode usar o seguinte conjunto de entrega para obter um identificador para o protocolo que a propriedade Port especifica.
+Por exemplo, o protocolo TCP tem uma propriedade de porta que identifica o protocolo que segue o protocolo TCP. Um valor da propriedade 20 indica que o próximo protocolo é FTP. Um valor da propriedade 53 indica que o próximo protocolo é DNS. Como a propriedade de porta identifica o protocolo a seguir, o analisador TCP pode usar o conjunto de entrega a seguir para obter um identificador para o protocolo especificado pela propriedade de porta.
 
 ``` syntax
 [TCP_HandoffSet]
@@ -47,13 +47,13 @@ Por exemplo, o protocolo TCP tem uma propriedade Port que identifica o protocolo
   5678  = PPTP
 ```
 
-Os conjuntos de entrega são armazenados no arquivo INI do analisador. Por exemplo, o conjunto de entrega TCP anterior está localizado no arquivo tcpip.ini. Observe que, se uma DLL do analisador der suporte a vários protocolos, cada analisador que usa um conjunto de entrega terá seu próprio local no arquivo INI.
+Os conjuntos de entrega são armazenados no arquivo INI do analisador. Por exemplo, o conjunto de entrega TCP anterior está localizado tcpip.ini arquivo. Observe que, se uma DLL do analisador for compatível com vários protocolos, cada analisador que usa um conjunto de entrega terá seu próprio local no arquivo INI.
 
-As informações do conjunto de entrega são especificadas durante a implementação da função [**ParserAutoInstallInfo**](parserautoinstallinfo.md) . O analisador pode especificar os protocolos que precedem o protocolo do analisador e os protocolos que seguem o protocolo do analisador. Monitor de Rede usa todos os protocolos precedidos e adiciona o protocolo analisador às seções do conjunto de acompanhamento a seguir do arquivo INI do analisador — para cada protocolo anterior. Monitor de Rede armazena a lista de protocolos que seguem na seção conjunto de entrega do arquivo INI do analisador.
+As informações do conjunto de entrega são especificadas durante a implementação da [**função ParserAutoInstallInfo.**](parserautoinstallinfo.md) O analisador pode especificar os protocolos que precedem o protocolo do analisador e os protocolos que seguem o protocolo do analisador. Monitor de Rede aceita todos os protocolos que precedem e adiciona o protocolo de analisador às seções do conjunto a seguir do arquivo INI do analisador – para cada protocolo anterior. Monitor de Rede armazena a lista de protocolos a seguir na seção conjunto de entrega do arquivo INI do analisador.
 
-O Monitor de Rede armazena as informações de conjunto de entrega no arquivo INI do analisador, mas o analisador não acessa os arquivos INI diretamente. Para usar as informações no conjunto de entrega, o analisador chama a função [**Createentregatable**](createhandofftable.md) para criar uma tabela de entrega. Normalmente, a tabela de entrega é criada quando o analisador registra o protocolo. Depois que o protocolo é registrado, o Monitor de Rede cria uma tabela de conjunto de entrega que o analisador pode usar.
+Monitor de Rede armazena as informações do conjunto de entrega no arquivo INI do analisador, mas o analisador não acessa os arquivos INI diretamente. Para usar as informações no conjunto de entrega, o analisador chama a [**função CreateHandoffTable**](createhandofftable.md) para criar uma tabela de entrega. Normalmente, a tabela de entrega é criada quando o analisador registra o protocolo. Depois que o protocolo é registrado, Monitor de Rede cria uma tabela de conjunto de entrega que o analisador pode usar.
 
-O analisador usa seu conjunto de entregas ao reconhecer dados. Primeiro, o analisador lê o valor da propriedade que identifica o próximo protocolo. Em seguida, o analisador chama o [**GetProtocolFromTable**](getprotocolfromtable.md) para obter um identificador para o próximo protocolo. Por fim, o analisador retorna um ponteiro para o identificador no parâmetro *phNextProtocol* de [**RecognizeFrame**](recognizeframe.md).
+O analisador usa seu conjunto de entrega ao reconhecer dados. Primeiro, o analisador lê o valor da propriedade que identifica o próximo protocolo. Em seguida, o analisador chama [**GetProtocolFromTable**](getprotocolfromtable.md) para obter um handle para o próximo protocolo. Por fim, o analisador retorna um ponteiro para o ponteiro no *parâmetro phNextProtocol* de [**RecognizeFrame.**](recognizeframe.md)
 
  
 

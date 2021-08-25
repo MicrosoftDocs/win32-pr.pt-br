@@ -4,12 +4,12 @@ ms.assetid: 8946adb5-da47-4711-8800-86f323081c4c
 title: Movimentação de um buffer de registros de diário de alterações
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9384316e38c23951849006efc259268a7bdf33df
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9242d671cedfb5c9ef2b5fa836e29c455d09a9e1287b1ed035712f49c6c7d627
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105755120"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119830146"
 ---
 # <a name="walking-a-buffer-of-change-journal-records"></a>Movimentação de um buffer de registros de diário de alterações
 

@@ -1,23 +1,23 @@
 ---
-description: As \_ constantes LINEOPENOPTION listam as opções disponíveis para abrir uma linha.
+description: As constantes LINEOPENOPTION \_ listam as opções disponíveis para abrir uma linha.
 ms.assetid: 361ae90c-a2cf-4107-a2da-80f561a82c56
-title: Constantes de LINEOPENOPTION_ (TAPI. h)
+title: LINEOPENOPTION_ constantes (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dee9182ff7a28627eebd695ce5d9c0877460b15e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c0dc6a4780b366b2dce08110ecce40c7140ab1d0956d788dce5a67d5d0501b6d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105779453"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119739246"
 ---
-# <a name="lineopenoption_-constants"></a>\_Constantes LINEOPENOPTION
+# <a name="lineopenoption_-constants"></a>Constantes LINEOPENOPTION \_
 
 As **\_ constantes LINEOPENOPTION** listam as opções disponíveis para abrir uma linha.
 
 <dl> <dt>
 
-<span id="LINEOPENOPTION_PROXY"></span><span id="lineopenoption_proxy"></span>**\_proxy LINEOPENOPTION**
+<span id="LINEOPENOPTION_PROXY"></span><span id="lineopenoption_proxy"></span>**LINEOPENOPTION \_ PROXY**
 </dt> <dd> <dl> <dt>
 
 
@@ -32,7 +32,7 @@ O aplicativo está disposto a lidar com solicitações de outros aplicativos que
 
 
 
-O aplicativo deve ser informado sobre novas chamadas criadas no dispositivo de linha somente se essas chamadas aparecerem no endereço especificado no membro **dwAddressID** na estrutura [**LINECALLPARAMS**](/windows/desktop/api/Tapi/ns-tapi-linecallparams) apontada pelo parâmetro *lpCallParams* .
+O aplicativo deverá ser informado sobre novas chamadas criadas no dispositivo de linha somente se essas chamadas aparecerem no endereço especificado no membro **dwAddressID** na estrutura [**LINECALLPARAMS**](/windows/desktop/api/Tapi/ns-tapi-linecallparams) apontada pelo parâmetro *lpCallParams.*
 
 
 </dt> </dl> </dd> </dl>
@@ -47,8 +47,8 @@ Consulte [**lineOpen**](/windows/desktop/api/Tapi/nf-tapi-lineopen) para obter m
 
 | Requisito | Valor |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versão da TAPI<br/> | Requer TAPI 2,0 ou posterior<br/>                                             |
-| parâmetro<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versão do TAPI<br/> | Requer TAPI 2.0 ou posterior<br/>                                             |
+| Cabeçalho<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

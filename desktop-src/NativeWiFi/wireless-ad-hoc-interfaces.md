@@ -4,12 +4,12 @@ ms.assetid: 8e975750-cfcc-4e36-a3d1-539b7c077459
 title: Interfaces ad hoc sem fio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bcc4fe481a5be1ff428396e5fd9b199f5a291fbe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6c486da50a922a893f4378c4d139741953705f0500cfb78484548db933bb285c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105810301"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119800276"
 ---
 # <a name="wireless-ad-hoc-interfaces"></a>Interfaces ad hoc sem fio
 
@@ -35,7 +35,7 @@ A interface de programação ad hoc sem fio é composta pelas seguintes interfac
  
 
 > [!Note]  
-> O modo ad hoc pode não estar disponível em versões futuras do Windows. A partir do Windows 8.1 e do Windows Server 2012 R2, use [Wi-Fi Direct](about-the-wi-fi-direct-api.md) .
+> O modo ad hoc pode não estar disponível em versões futuras do Windows. a partir do Windows 8.1 e do Windows Server 2012 R2, use [Wi-Fi Direct](about-the-wi-fi-direct-api.md) em vez disso.
 
  
 

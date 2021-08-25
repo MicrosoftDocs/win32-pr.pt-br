@@ -3,19 +3,19 @@ title: Fonte de imagem secundária enviada por push
 description: Fonte de imagem secundária enviada por push
 ms.assetid: f2a2380d-c876-456b-837b-01b3997d81f2
 keywords:
-- Aparências móveis do Windows Media Player, origem da imagem do botão
+- Windows Media Player Aparência móvel, origem da imagem do botão
 - aparência, origem da imagem do botão
 - referência para capas, botões
 - botões em capas, origem da imagem
 - origem da imagem para capas, botões
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6de50f72c8af34fa4f3e44507e172cae6890dc47
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 37045da71b8417856ec72ac7e57a6a787426ba486993b9fef03910b4d32e663d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005593"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119861826"
 ---
 # <a name="pushed-secondary-image-source"></a>Fonte de imagem secundária enviada por push
 
@@ -42,9 +42,9 @@ Os Estados secundários não podem ter uma imagem desabilitada. As imagens secun
 [**Botões**](buttons.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

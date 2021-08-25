@@ -1,7 +1,7 @@
 ---
-description: O método isqueueed determina se o objeto está usando um thread de trabalho para fornecer exemplos.
+description: O método IsQueued determina se o objeto está usando um thread de trabalho para fornecer amostras.
 ms.assetid: 8d26661f-6cd7-42ea-bc4b-8746d22a7ca0
-title: Método COutputQueue. isqueueed (Outputq. h)
+title: Método COutputQueue.IsQueued (Outputq.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 47093acedb3a28d633ea2c8b0bbdbba3c1493de7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5e261127e16cd1190fb711d81a9f5fd5606738b7f9a3f8697902170662b99f04
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105756591"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119813576"
 ---
-# <a name="coutputqueueisqueued-method"></a>Método COutputQueue. isqueueed
+# <a name="coutputqueueisqueued-method"></a>Método COutputQueue.IsQueued
 
-O `IsQueued` método determina se o objeto está usando um thread de trabalho para fornecer exemplos.
+O `IsQueued` método determina se o objeto está usando um thread de trabalho para fornecer amostras.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,9 +40,9 @@ BOOL IsQueued();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retornará **true** se o objeto estiver usando um thread de trabalho ou **false** caso contrário.
+Retornará **TRUE** se o objeto estiver usando um thread de trabalho ou **FALSE** caso contrário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Retornará **true** se o objeto estiver usando um thread de trabalho ou **false*
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Outputq. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Outputq.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

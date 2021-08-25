@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: da814c8321e35189594bc350bd1e278a219bac59
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 96ff327e84d3a5b6c66011506c162810f0fcc91d0cafe4053266aa8928f6e5a2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104457085"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119925106"
 ---
 # <a name="change-method-of-the-win32_systemdriver-class"></a>Alterar o método da \_ classe systemdrive do Win32
 
@@ -182,7 +182,7 @@ O sistema tenta reiniciar com uma configuração adequada.
 *StartMode* \[ no\]
 </dt> <dd>
 
-O modo de início do serviço base do Windows.
+o modo de início do serviço base de Windows.
 
 <dt>
 
@@ -303,9 +303,9 @@ A lista que contém os nomes dos serviços que devem iniciar antes do início de
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor de zero (0) se o serviço tiver sido modificado com êxito, 1 (um) se a solicitação não tiver suporte e qualquer outro número para indicar um erro.
+Retornará um valor de zero (0) se o serviço tiver sido modificado com êxito, 1 (um) se a solicitação não tiver suporte e qualquer outro número para indicar um erro.
 
 <dl> <dt>
 
@@ -318,19 +318,19 @@ Retorna um valor de zero (0) se o serviço tiver sido modificado com êxito, 1 (
 **Acesso negado** (2)
 </dt> <dt>
 
-**Serviços dependentes em execução** (3)
+**Serviços dependentes em** execução (3)
 </dt> <dt>
 
 **Controle de serviço inválido** (4)
 </dt> <dt>
 
-O **serviço não pode aceitar o controle** (5)
+**O serviço não pode aceitar o** controle (5)
 </dt> <dt>
 
 **Serviço não ativo** (6)
 </dt> <dt>
 
-**Tempo limite da solicitação de serviço** (7)
+**Tempo de tempo de solicitação** de serviço (7)
 </dt> <dt>
 
 **Falha desconhecida** (8)
@@ -339,16 +339,16 @@ O **serviço não pode aceitar o controle** (5)
 **Caminho não encontrado** (9)
 </dt> <dt>
 
-**Serviço já em execução** (10)
+**Serviço já em** execução (10)
 </dt> <dt>
 
-**Banco de dados de serviço bloqueado** (11)
+**Banco de Dados de Serviço** Bloqueado (11)
 </dt> <dt>
 
 **Dependência de serviço excluída** (12)
 </dt> <dt>
 
-**Falha de dependência de serviço** (13)
+**Falha de dependência do serviço** (13)
 </dt> <dt>
 
 **Serviço desabilitado** (14)
@@ -360,7 +360,7 @@ O **serviço não pode aceitar o controle** (5)
 **Serviço marcado para exclusão** (16)
 </dt> <dt>
 
-**Serviço sem thread** (17)
+**Service No Thread** (17)
 </dt> <dt>
 
 **Dependência circular de status** (18)
@@ -372,24 +372,24 @@ O **serviço não pode aceitar o controle** (5)
 **Nome inválido do status** (20)
 </dt> <dt>
 
-**Parâmetro de status inválido** (21)
+**Parâmetro inválido de status** (21)
 </dt> <dt>
 
 **Conta de serviço inválida de status** (22)
 </dt> <dt>
 
-O **serviço de status existe** (23)
+**Serviço de Status Existe** (23)
 </dt> <dt>
 
-**Serviço já pausado** (24)
+**Serviço já em pausa** (24)
 </dt> <dt>
 
-**Outro** (25 4294967295)
+**Outros** (25 4294967295)
 </dt> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Para alterar um serviço de um serviço de rede para o sistema local, use os seguintes valores para os parâmetros *StartName* e *StartPassword* :
+Para alterar um serviço de um serviço de rede para o sistema local, use os seguintes valores para os parâmetros *StartName* e *StartPassword:*
 
 
 ```C++
@@ -399,7 +399,7 @@ StartPassword = "" // - empty string, not NULL
 
 
 
-Para alterar um serviço de um serviço do sistema local para um serviço de rede, use os seguintes valores para os parâmetros *StartName* e *StartPassword* :
+Para alterar um serviço de um serviço de sistema local para um serviço de rede, use os seguintes valores para os parâmetros *StartName* e *StartPassword:*
 
 
 ```C++
@@ -417,9 +417,9 @@ StartPassword = "" // - empty string, not NULL
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| parâmetro<br/>                   | <dl> <dt>Mbnapi. h</dt> </dl>     |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Mbnapi.h</dt> </dl>     |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -431,7 +431,7 @@ StartPassword = "" // - empty string, not NULL
 [Classes do sistema operacional](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**Systemdrive do Win32 \_**](win32-systemdriver.md)
+[**Win32 \_ SystemDriver**](win32-systemdriver.md)
 </dt> </dl>
 
  

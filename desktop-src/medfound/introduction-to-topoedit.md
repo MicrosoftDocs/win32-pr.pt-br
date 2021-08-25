@@ -4,12 +4,12 @@ ms.assetid: 9223309c-5ee0-4059-9480-4f54252fdd39
 title: Introdução ao TopoEdit
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c244705446568ccfac439e636ebcbb3d2763ae9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 799c6ab3fe30c0c51d7246939be7436d025220e690a380db91dad41d4c2b216a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105761518"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119827556"
 ---
 # <a name="introduction-to-topoedit"></a>Introdução ao TopoEdit
 
@@ -21,7 +21,7 @@ TopoEdit é uma ferramenta Visual para compilar e testar topologias. Com o TopoE
 
 -   Crie uma topologia adicionando vários nós de topologia, como origem, transformação e nós de saída.
 
--   Conecte e resolva a topologia.
+-   Conexão e resolver a topologia.
 
 -   Teste a funcionalidade da topologia por meio da reprodução.
 

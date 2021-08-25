@@ -1,7 +1,7 @@
 ---
-description: Interface ID3DXMATRIXStack – os aplicativos usam os métodos da interface ID3DXMATRIXStack para manipular uma pilha de matriz.
+description: Interface ID3DXMATRIXStack – os aplicativos usam os métodos da interface ID3DXMATRIXStack para manipular uma pilha de matrizes.
 ms.assetid: 4d382d39-a9da-4a3b-b7b6-d6890357d467
-title: Interface ID3DXMATRIXStack (D3dx9math. h)
+title: Interface ID3DXMATRIXStack (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,20 +14,20 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 62681c468fa7e78e6fd08c458798d98b467b992e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b8fa483be72d29cc869b2bd468cff25033a80187bef69317af4894fc05b096dc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108093314"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119856446"
 ---
 # <a name="id3dxmatrixstack-interface"></a>Interface ID3DXMATRIXStack
 
-Os aplicativos usam os métodos da interface ID3DXMATRIXStack para manipular uma pilha de matriz.
+Os aplicativos usam os métodos da interface ID3DXMATRIXStack para manipular uma pilha de matrizes.
 
 ## <a name="members"></a>Membros
 
-A interface **ID3DXMATRIXStack** herda da interface [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) . **ID3DXMATRIXStack** também tem estes tipos de membros:
+A interface **ID3DXMATRIXStack** herda da interface [**IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **ID3DXMATRIXStack** também tem estes tipos de membros:
 
 -   [Métodos](#methods)
 
@@ -40,20 +40,20 @@ A interface **ID3DXMATRIXStack** tem esses métodos.
 | Método                                                                       | Descrição                                                                                                                                |
 |:-----------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------|
 | [**GetTop**](id3dxmatrixstack--gettop.md)                                   | Recupera a matriz atual na parte superior da pilha.<br/>                                                                           |
-| [**Loadidentity**](id3dxmatrixstack--loadidentity.md)                       | Carrega a identidade na matriz atual.<br/>                                                                                           |
-| [**Loadmatrix**](id3dxmatrixstack--loadmatrix.md)                           | Carrega a matriz determinada na matriz atual.<br/>                                                                                 |
-| [**MultMatrix**](id3dxmatrixstack--multmatrix.md)                           | Determina o produto da matriz atual e a matriz especificada.<br/>                                                              |
-| [**MultMatrixLocal**](id3dxmatrixstack--multmatrixlocal.md)                 | Determina o produto da matriz e da matriz atual.<br/>                                                              |
+| [**LoadIdentity**](id3dxmatrixstack--loadidentity.md)                       | Carrega a identidade na matriz atual.<br/>                                                                                           |
+| [**LoadMatrix**](id3dxmatrixstack--loadmatrix.md)                           | Carrega a matriz determinada na matriz atual.<br/>                                                                                 |
+| [**MultMatrix**](id3dxmatrixstack--multmatrix.md)                           | Determina o produto da matriz atual e a matriz determinada.<br/>                                                              |
+| [**MultMatrixLocal**](id3dxmatrixstack--multmatrixlocal.md)                 | Determina o produto da matriz determinada e a matriz atual.<br/>                                                              |
 | [**Pop**](id3dxmatrixstack--pop.md)                                         | Remove a matriz atual da parte superior da pilha.<br/>                                                                           |
-| [**Push**](id3dxmatrixstack--push.md)                                       | Adiciona uma matriz à pilha.<br/>                                                                                                     |
-| [**RotateAxis**](id3dxmatrixstack--rotateaxis.md)                           | Gira (em relação ao espaço de coordenadas mundiais) em um eixo arbitrário.<br/>                                                          |
-| [**RotateAxisLocal**](id3dxmatrixstack--rotateaxislocal.md)                 | Gira (em relação ao espaço de coordenadas local do objeto) em um eixo arbitrário.<br/>                                             |
-| [**RotateYawPitchRoll**](id3dxmatrixstack--rotateyawpitchroll.md)           | Gira (em relação ao espaço de coordenadas mundiais) em um eixo arbitrário.<br/>                                                          |
-| [**RotateYawPitchRollLocal**](id3dxmatrixstack--rotateyawpitchrolllocal.md) | Gira (em relação ao espaço de coordenadas local do objeto) em um eixo arbitrário.<br/>                                             |
-| [**Escala**](id3dxmatrixstack--scale.md)                                     | Dimensione a matriz atual sobre a origem da coordenada mundial.<br/>                                                                     |
+| [**Empurrar**](id3dxmatrixstack--push.md)                                       | Adiciona uma matriz à pilha.<br/>                                                                                                     |
+| [**RotateAxis**](id3dxmatrixstack--rotateaxis.md)                           | Gira (em relação ao espaço de coordenadas do mundo) em torno de um eixo arbitrário.<br/>                                                          |
+| [**RotateAxisLocal**](id3dxmatrixstack--rotateaxislocal.md)                 | Gira (em relação ao espaço de coordenadas local do objeto) em torno de um eixo arbitrário.<br/>                                             |
+| [**RotateYawPitchRoll**](id3dxmatrixstack--rotateyawpitchroll.md)           | Gira (em relação ao espaço de coordenadas do mundo) em torno de um eixo arbitrário.<br/>                                                          |
+| [**RotateYawPitchRollLocal**](id3dxmatrixstack--rotateyawpitchrolllocal.md) | Gira (em relação ao espaço de coordenadas local do objeto) em torno de um eixo arbitrário.<br/>                                             |
+| [**Escala**](id3dxmatrixstack--scale.md)                                     | Dimensione a matriz atual sobre a origem da coordenada do mundo.<br/>                                                                     |
 | [**ScaleLocal**](id3dxmatrixstack--scalelocal.md)                           | Dimensione a matriz atual sobre a origem do objeto.<br/>                                                                               |
-| [**Traduzir**](id3dxmatrixstack--translate.md)                             | Determina o produto da matriz atual e a matriz de conversão computada determinada pelos fatores especificados (x, y e z).<br/> |
-| [**TranslateLocal**](id3dxmatrixstack--translatelocal.md)                   | Determina o produto da matriz de conversão computada determinada pelos fatores especificados (x, y e z) e a matriz atual.<br/> |
+| [**Traduzir**](id3dxmatrixstack--translate.md)                             | Determina o produto da matriz atual e a matriz de tradução computada determinada pelos fatores determinados (x, y e z).<br/> |
+| [**TranslateLocal**](id3dxmatrixstack--translatelocal.md)                   | Determina o produto da matriz de tradução computada determinada pelos fatores determinados (x, y e z) e a matriz atual.<br/> |
 
 
 
@@ -61,9 +61,9 @@ A interface **ID3DXMATRIXStack** tem esses métodos.
 
 ## <a name="remarks"></a>Comentários
 
-A interface **ID3DXMATRIXStack** é obtida chamando a função [**D3DXCreateMatrixStack**](d3dxcreatematrixstack.md) .
+A interface **ID3DXMATRIXStack** é obtida chamando a [**função D3DXCreateMatrixStack.**](d3dxcreatematrixstack.md)
 
-O tipo LPD3DXMATRIXSTACK é definido como um ponteiro para a interface **ID3DXMATRIXStack** .
+O tipo LPD3DXMATRIXSTACK é definido como um ponteiro para a interface **ID3DXMATRIXStack.**
 
 
 ```
@@ -79,16 +79,16 @@ typedef interface ID3DXMATRIXStack *LPD3DXMATRIXSTACK;
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[Interfaces D3DX](dx9-graphics-reference-d3dx-interfaces.md)
+[D3DX Interfaces](dx9-graphics-reference-d3dx-interfaces.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: O método GetBitmapBits recupera um quadro de vídeo no tempo de mídia especificado. O quadro retornado sempre está no formato RGB de 24 bits.
+description: O método GetBitmapBits recupera um quadro de vídeo no momento da mídia especificado. O quadro retornado está sempre no formato RGB de 24 bits.
 ms.assetid: b51df9d1-9c54-41bd-b0f8-ec290525deca
-title: 'Método IMediaDet:: GetBitmapBits (QEdit. h)'
+title: Método IMediaDet::GetBitmapBits (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 95aea5281f77b32868e0f0856bc63063e4f08639
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5c4a7332580d4e9a9fece5a66d390753566fbf54c615699663256c463cb401b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105760741"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119791996"
 ---
-# <a name="imediadetgetbitmapbits-method"></a>Método IMediaDet:: GetBitmapBits
+# <a name="imediadetgetbitmapbits-method"></a>Método IMediaDet::GetBitmapBits
 
 > [!Note]  
 > \[Preterido. Essa API pode ser removida de versões futuras do Windows.\]
 
  
 
-O `GetBitmapBits` método recupera um quadro de vídeo no tempo de mídia especificado. O quadro retornado sempre está no formato RGB de 24 bits.
+O `GetBitmapBits` método recupera um quadro de vídeo no momento da mídia especificado. O quadro retornado está sempre no formato RGB de 24 bits.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -49,17 +49,17 @@ HRESULT GetBitmapBits(
 
 <dl> <dt>
 
-*Fluxo de transmissão* 
+*StreamTime* 
 </dt> <dd>
 
-Hora na qual recuperar o quadro de vídeo, em segundos.
+Tempo no qual recuperar o quadro de vídeo, em segundos.
 
 </dd> <dt>
 
 *pBufferSize* 
 </dt> <dd>
 
-Recebe o tamanho de buffer necessário. Se *pBuffer* for **NULL**, a variável receberá o tamanho do buffer necessário para recuperar o quadro. Se *pBuffer* não for **NULL**, esse parâmetro será ignorado.
+Recebe o tamanho do buffer necessário. Se *pBuffer* for **NULL,** a variável receberá o tamanho do buffer necessário para recuperar o quadro. Se *pBuffer* não for **NULL,** esse parâmetro será ignorado.
 
 </dd> <dt>
 
@@ -84,19 +84,19 @@ Altura da imagem de vídeo, em pixels.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor **HRESULT** . Os possíveis valores incluem os seguintes:
+Retorna um **valor HRESULT.** Os possíveis valores incluem os seguintes:
 
 
 
 | Código de retorno                                                                                             | Descrição                                                                                       |
 |---------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                    | Êxito.<br/>                                                                               |
-| <dl> <dt>**E \_ NOinterface**</dt> </dl>           | Não foi possível adicionar o filtro de [**apoio de exemplo**](sample-grabber-filter.md) ao grafo.<br/> |
+| <dl> <dt>**E \_ NOINTERFACE**</dt> </dl>           | Não foi possível adicionar o [**filtro Grabber de**](sample-grabber-filter.md) Exemplo ao grafo.<br/> |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>           | Memória insuficiente.<br/>                                                                   |
-| <dl> <dt>**\_ponteiro E**</dt> </dl>               | Erro de ponteiro **nulo** .<br/>                                                                |
-| <dl> <dt>**E \_ inesperado**</dt> </dl>            | Erro inesperado.<br/>                                                                      |
+| <dl> <dt>**PONTEIRO \_ E**</dt> </dl>               | Erro de ponteiro **NULL.**<br/>                                                                |
+| <dl> <dt>**E \_ UNEXPECTED**</dt> </dl>            | Erro inesperado.<br/>                                                                      |
 | <dl> <dt>**VFW \_ E \_ INVALIDMEDIATYPE**</dt> </dl> | Tipo de mídia inválido.<br/>                                                                    |
 
 
@@ -105,25 +105,25 @@ Retorna um valor **HRESULT** . Os possíveis valores incluem os seguintes:
 
 ## <a name="remarks"></a>Comentários
 
-Antes de chamar esse método, defina o nome do arquivo e o fluxo chamando [**IMediaDet::p UT \_ filename**](imediadet-put-filename.md) e [**IMediaDet::p UT \_ CurrentStream**](imediadet-put-currentstream.md).
+Antes de chamar esse método, de definir o nome do arquivo e o fluxo chamando [**IMediaDet::p ut \_ Filename**](imediadet-put-filename.md) e [**IMediaDet::p ut \_ CurrentStream.**](imediadet-put-currentstream.md)
 
-Para determinar o tamanho do buffer que é necessário, chame esse método com *pBuffer* igual a **NULL**. O tamanho é retornado na variável apontada por *pBufferSize*. Em seguida, crie o buffer e chame o método novamente, com *pBuffer* igual ao endereço do buffer. Quando o método retorna, o buffer contém uma estrutura **BITMAPINFOHEADER** seguida pelo bitmap. O bitmap é dimensionado para as dimensões especificadas nos parâmetros *Width* e *Height* .
+Para determinar o tamanho do buffer necessário, chame esse método com *pBuffer* igual a **NULL.** O tamanho é retornado na variável apontada por *pBufferSize*. Em seguida, crie o buffer e chame o método novamente, com *pBuffer* igual ao endereço do buffer. Quando o método retorna, o buffer contém uma **estrutura BITMAPINFOHEADER** seguida pelo bitmap. O bitmap é dimensionado para as dimensões especificadas nos parâmetros *Width* e *Height.*
 
 Esse método coloca o detector de mídia no modo de captura de bitmap. Depois que esse método for chamado, os vários métodos de informações de fluxo no **IMediaDet** não funcionarão, a menos que você crie uma nova instância do detector de mídia.
 
 > [!Note]  
-> O arquivo de cabeçalho QEdit. h não é compatível com cabeçalhos do Direct3D posteriores à versão 7.
+> O arquivo de título Qedit.h não é compatível com os headers direct3D posteriores à versão 7.
 
  
 
 > [!Note]  
-> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Para obter o Qedit.h, baixe [o Microsoft Windows SDK Update para Windows Vista e .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O Qedit.h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
 ## <a name="examples"></a>Exemplos
 
-O código a seguir usa o `GetBitmapBits` método para criar um bitmap independente de dispositivo.
+O código a seguir usa `GetBitmapBits` o método para criar um bitmap independente do dispositivo.
 
 
 ```C++
@@ -172,8 +172,8 @@ if (SUCCEEDED(hr))
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>QEdit. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -181,7 +181,7 @@ if (SUCCEEDED(hr))
 
 <dl> <dt>
 
-[**Interface IMediaDet**](imediadet.md)
+[**IMediaDet Interface**](imediadet.md)
 </dt> <dt>
 
 [Códigos de erro e êxito](error-and-success-codes.md)

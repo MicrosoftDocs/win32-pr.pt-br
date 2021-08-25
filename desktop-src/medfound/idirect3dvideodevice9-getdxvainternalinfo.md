@@ -1,7 +1,7 @@
 ---
-description: Consulta a quantidade de memória temporária que a HAL (camada de abstração de hardware) alocará para seu uso particular.
+description: Consultas para a quantidade de memória de rascunho que a CAMADA de abstração de hardware (HAL) alocará para seu uso privado.
 ms.assetid: 20e3dbef-daf5-487a-8d50-e2ebdb712cc0
-title: 'Método IDirect3DVideoDevice9:: GetDXVAInternalInfo (DXVA. h)'
+title: Método IDirect3DVideoDevice9::GetDXVAInternalInfo (Dxva.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - dxva.h
-ms.openlocfilehash: aa512130b622d192acc37d8c309f462f8ecc87e4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dd15dfdbd35db56262487482e811210970852dcee4e791d710e0551b84e9e620
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105780400"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119777206"
 ---
-# <a name="idirect3dvideodevice9getdxvainternalinfo-method"></a>Método IDirect3DVideoDevice9:: GetDXVAInternalInfo
+# <a name="idirect3dvideodevice9getdxvainternalinfo-method"></a>Método IDirect3DVideoDevice9::GetDXVAInternalInfo
 
-Consulta a quantidade de memória temporária que a HAL (camada de abstração de hardware) alocará para seu uso particular.
+Consultas para a quantidade de memória de rascunho que a CAMADA de abstração de hardware (HAL) alocará para seu uso privado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,30 +41,30 @@ HRESULT GetDXVAInternalInfo(
 
 <dl> <dt>
 
-*pGuid* 
+*Pguid* 
 </dt> <dd>
 
-Ponteiro para um GUID que especifica o perfil de DXVA. Para obter uma lista de perfis com suporte, chame [**IDirect3DVideoDevice9:: GetDXVAGuids**](idirect3dvideodevice9-getdxvaguids.md).
+Ponteiro para um GUID que especifica o perfil DXVA. Para obter uma lista de perfis com suporte, chame [**IDirect3DVideoDevice9::GetDXVAGuids**](idirect3dvideodevice9-getdxvaguids.md).
 
 </dd> <dt>
 
 *pUncompData* 
 </dt> <dd>
 
-Ponteiro para uma estrutura [**DXVAUncompDataInfo**](/windows/desktop/api/dxva9typ/ns-dxva9typ-dxvauncompdatainfo) que especifica o tamanho e o formato de pixel dos dados descompactados.
+Ponteiro para uma [**estrutura DXVAUncompDataInfo**](/windows/desktop/api/dxva9typ/ns-dxva9typ-dxvauncompdatainfo) que especifica o tamanho e o formato de pixel dos dados descompactados.
 
 </dd> <dt>
 
 *pMemoryUsed* 
 </dt> <dd>
 
-Recebe a quantidade de memória temporária que o HAL alocará, em bytes.
+Recebe a quantidade de memória de rascunho que o HAL alocará, em bytes.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -72,9 +72,9 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                    |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                              |
-| parâmetro<br/>                   | <dl> <dt>DXVA. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                    |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                              |
+| Cabeçalho<br/>                   | <dl> <dt>Dxva.h</dt> </dl> |
 
 
 

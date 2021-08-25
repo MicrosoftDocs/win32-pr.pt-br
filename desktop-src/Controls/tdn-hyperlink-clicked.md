@@ -3,7 +3,7 @@ title: TDN_HYPERLINK_CLICKED código de notificação (commctrl. h)
 description: Enviado por uma caixa de diálogo de tarefa quando o usuário clica em um hiperlink no conteúdo da caixa de diálogo da tarefa. Esse código de notificação é recebido somente por meio da função de retorno de chamada da caixa de diálogo de tarefa, que pode ser registrada usando o método TaskDialogIndirect.
 ms.assetid: b769af31-32d0-463e-be15-6abf5dcb425c
 keywords:
-- TDN_HYPERLINK_CLICKED de código de notificação controles do Windows
+- TDN_HYPERLINK_CLICKED código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: edd79406eb59f9bafd93269f8982db6213ef882c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0adaf5ecf05b22e3ff33aa88e28cb3f8f8c8b78f0b06d2127792b7639942bf7f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086407"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119875766"
 ---
 # <a name="tdn_hyperlink_clicked-notification-code"></a>\_Código de \_ notificação clicado no hiperlink TDN
 
@@ -53,7 +53,7 @@ Ponteiro para uma cadeia de caracteres largos que contém a URL do hiperlink.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno é ignorado.
 
@@ -63,9 +63,9 @@ O valor de retorno é ignorado.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

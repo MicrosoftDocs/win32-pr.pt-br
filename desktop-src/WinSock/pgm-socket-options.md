@@ -4,12 +4,12 @@ ms.assetid: 91f5b051-cc42-46ba-88d9-680bd0367aff
 title: Opções de soquete PGM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b5e2ec257043f86fabeafdc55ee0e7a828d495cb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 15e8df8050146774ac79d45594adcccf53a93d295ce42b9f00834aa0d699e83a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827102"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119860816"
 ---
 # <a name="pgm-socket-options"></a>Opções de soquete PGM
 

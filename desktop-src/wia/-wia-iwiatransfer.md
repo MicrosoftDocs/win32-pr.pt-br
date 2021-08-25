@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Wiaguid.lib
 - Wiaguid.dll
-ms.openlocfilehash: 623cc21591289f4c1fff33cabe1d504b3682708c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ff19619b1f0ab46658d0876792248befd6940c525d5c7da1b3331f6ca1a8c12e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164528"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119813896"
 ---
 # <a name="iwiatransfer-interface"></a>Interface IWiaTransfer
 
@@ -70,9 +70,9 @@ A interface **IWiaTransfer** , como todas as interfaces de Component Object Mode
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                   |
-| parâmetro<br/>                   | <dl> <dt>WIA. h</dt> </dl>       |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                   |
+| Cabeçalho<br/>                   | <dl> <dt>WIA. h</dt> </dl>       |
 | INSERI<br/>                      | <dl> <dt>WIA. idl</dt> </dl>     |
 | Biblioteca<br/>                  | <dl> <dt>Wiaguid. lib</dt> </dl> |
 

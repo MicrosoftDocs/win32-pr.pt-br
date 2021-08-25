@@ -4,12 +4,12 @@ ms.assetid: f0729dc5-6b5f-4f24-85d6-47c45f1bf9be
 title: Estruturas NPP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b514bded37450f6a7c33a016b231bb38f0c1812
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 79f80532e3e95743ee08f93d44961018e2154bcdc4bce292789ae0968c3d9200
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105761414"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119778696"
 ---
 # <a name="npp-structures"></a>Estruturas NPP
 

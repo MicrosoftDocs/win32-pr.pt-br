@@ -4,12 +4,12 @@ ms.assetid: 8f0c2129-6841-4793-a404-bb6ee8f41683
 title: Enumerando protocolos com suporte
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c76976da7e3ab59e299d6ef0a8e9bcabce601c0b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 54d7236fe20901e9feb48e844deceea47e8f5936b9685580a653f1480b3b667c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105811799"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119874426"
 ---
 # <a name="enumerating-supported-protocols"></a>Enumerando protocolos com suporte
 
