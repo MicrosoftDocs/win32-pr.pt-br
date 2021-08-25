@@ -17,12 +17,12 @@ keywords:
 - controle avançado de estéreo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b1d65bb2a14a0e7dc527fab0e628035839855934
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 336d2e23c5e6438fbc19208e3366283147462c2451a12e3ccdcae6c13fcd93d2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103823706"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119805076"
 ---
 # <a name="switches"></a>Comutadores
 
@@ -42,8 +42,8 @@ Os controles switch são opções de dois Estados. Esses controles usam a [**est
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 

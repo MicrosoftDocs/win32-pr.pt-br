@@ -1,7 +1,7 @@
 ---
-description: Usando scripts de regra de negócio no script para fornecer lógica de tempo de execução para verificar o acesso.
+description: Usando scripts de regra de negócio no Script para fornecer lógica de tempo de executar para verificar o acesso.
 ms.assetid: 10c28ecb-3f36-45a8-b037-7038e8927b6b
-title: Qualificando o acesso com a lógica de negócios no script
+title: Qualificando o acesso com lógica de negócios no script
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -9,26 +9,26 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 65ee69e0572c0f480cded2930ea81ac6da710b6c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5b77ff1d6d520780d30efab5619c3e9bc3c896ad88315fba56e3a19e05d3ae97
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105756383"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119907546"
 ---
-# <a name="qualifying-access-with-business-logic-in-script"></a>Qualificando o acesso com a lógica de negócios no script
+# <a name="qualifying-access-with-business-logic-in-script"></a>Qualificando o acesso com lógica de negócios no script
 
-Use scripts de regra de negócio para fornecer lógica de tempo de execução para verificar o acesso. Para obter mais informações sobre regras de negócio, consulte [regras de negócio](business-rules.md).
+Use scripts de regra de negócio para fornecer lógica de tempo de executar para verificar o acesso. Para obter mais informações sobre regras de negócio, [consulte Business Rules](business-rules.md).
 
-Para atribuir uma regra de negócio a uma tarefa, primeiro defina a propriedade [**BizRuleLanguage**](/windows/desktop/api/Azroles/nf-azroles-iaztask-get_bizrulelanguage) do objeto [**IAzTask**](/windows/desktop/api/Azroles/nn-azroles-iaztask) que representa a tarefa. O script deve ser escrito usando a linguagem de programação Visual Basic Scripting Edition (VBScript) ou o software de desenvolvimento JScript. Depois de especificar a linguagem de script, defina a propriedade [**BizRule**](/windows/desktop/api/Azroles/nf-azroles-iaztask-get_bizrule) do objeto **IAzTask** com uma representação de cadeia de caracteres do script.
+Para atribuir uma regra de negócio a uma tarefa, primeiro de definir a propriedade [**BizRuleLanguage**](/windows/desktop/api/Azroles/nf-azroles-iaztask-get_bizrulelanguage) do objeto [**IAzTask**](/windows/desktop/api/Azroles/nn-azroles-iaztask) que representa a tarefa. O script deve ser escrito usando a linguagem de programação Visual Basic Scripting Edition (VBScript) ou JScript software de desenvolvimento. Depois de especificar a linguagem de script, de definir a propriedade [**BizRule**](/windows/desktop/api/Azroles/nf-azroles-iaztask-get_bizrule) do objeto **IAzTask** com uma representação de cadeia de caracteres do script.
 
-Ao verificar o acesso de uma operação contida em uma tarefa que tem uma regra de negócio associada, o aplicativo deve criar duas matrizes do mesmo tamanho a serem passadas como os parâmetros *varParameterNames* e *VarParameterValues* do método [**AccessCheck**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-accesscheck) de um objeto [**IAzClientContext**](/windows/desktop/api/Azroles/nn-azroles-iazclientcontext) . Para obter informações sobre como criar um contexto de cliente, consulte [estabelecendo um contexto de cliente no script](establishing-a-client-context-in-script.md).
+Ao verificar o acesso para uma operação contida por uma tarefa que tem uma regra de negócio associada, o aplicativo deve criar duas matrizes do mesmo tamanho a serem passadas como os *parâmetros varParameterNames* e *varParameterValues* do [**método AccessCheck**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-accesscheck) de um objeto [**IAzClientContext.**](/windows/desktop/api/Azroles/nn-azroles-iazclientcontext) Para obter informações sobre como criar um contexto de cliente, consulte [Estabelecendo um contexto de cliente no script](establishing-a-client-context-in-script.md).
 
-O método [**AccessCheck**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-accesscheck) cria um objeto [**AzBizRuleContext**](/windows/desktop/api/Azroles/nn-azroles-iazbizrulecontext) que é passado para o script de regra de negócio. Em seguida, o script define a propriedade [**BusinessRuleResult**](/windows/desktop/api/Azroles/nf-azroles-iazbizrulecontext-put_businessruleresult) do objeto **AzBizRuleContext** . Um valor **true** indica que o acesso é concedido e um valor **false** indica que o acesso foi negado.
+O [**método AccessCheck**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-accesscheck) cria um [**objeto AzBizRuleContext**](/windows/desktop/api/Azroles/nn-azroles-iazbizrulecontext) que é passado para o script de regra de negócios. Em seguida, o script define a [**propriedade BusinessRuleResult**](/windows/desktop/api/Azroles/nf-azroles-iazbizrulecontext-put_businessruleresult) do **objeto AzBizRuleContext.** Um valor **true** indica que o acesso é concedido e um valor **false** indica que o acesso é negado.
 
-Um script de regra de negócio não pode ser atribuído a um objeto [**IAzTask**](/windows/desktop/api/Azroles/nn-azroles-iaztask) contido por um objeto [**IAzScope**](/windows/desktop/api/Azroles/nn-azroles-iazscope) delegado.
+Um script de regra de negócio não pode ser atribuído a um [**objeto IAzTask**](/windows/desktop/api/Azroles/nn-azroles-iaztask) contido por um [**objeto IAzScope**](/windows/desktop/api/Azroles/nn-azroles-iazscope) delegado.
 
-O exemplo a seguir mostra como usar um script de regra de negócio para verificar o acesso de um cliente a uma operação. O exemplo supõe que haja um repositório de política XML existente chamado MyStore.xml no diretório raiz da unidade C e que esse repositório contenha um aplicativo chamado despesas, uma tarefa chamada enviar despesa e uma operação chamada UseFormControl.
+O exemplo a seguir mostra como usar um script de regra de negócio para verificar o acesso de um cliente a uma operação. O exemplo supõe que haja um armazenamento de políticas XML existente chamado MyStore.xml no diretório raiz da unidade C e que esse armazenamento contém um aplicativo chamado Expense, uma tarefa chamada Enviar Despesas e uma operação chamada UseFormControl.
 
 
 ```VB

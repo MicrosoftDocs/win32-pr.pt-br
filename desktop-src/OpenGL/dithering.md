@@ -1,26 +1,26 @@
 ---
-title: Pontilhado
-description: Se o pontilhamento estiver habilitado, um algoritmo de pontilhamento será aplicado à cor do fragmento ou ao valor do índice de cor. Esse algoritmo depende apenas do valor do fragmento e de suas coordenadas de janela x e y.
+title: Pontilhamento
+description: Se a dithering estiver habilitada, um algoritmo de dithering será aplicado à cor ou ao valor de índice de cor do fragmento. Esse algoritmo depende apenas do valor do fragmento e de suas coordenadas de janela x e y.
 ms.assetid: a975910c-3a14-4cf5-92fc-6e98fd128477
 keywords:
-- Pipeline de processamento OpenGL, pontilhamento
-- pontilhamento OpenGL
+- Pipeline de processamento openGL, dithering
+- dithering OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 014fb027c2b6b4e2b92200d4be8162e68d6645d7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 18a9367f8927c38b84e0098420e71b98e196bd5cd9dfd9dd2f82c54bafa78a47
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104364374"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119889036"
 ---
-# <a name="dithering"></a>Pontilhado
+# <a name="dithering"></a>Pontilhamento
 
-Se o pontilhamento estiver habilitado, um algoritmo de pontilhamento será aplicado à cor do fragmento ou ao valor do índice de cor. Esse algoritmo depende apenas do valor do fragmento e de suas coordenadas de janela x e y.
+Se a dithering estiver habilitada, um algoritmo de dithering será aplicado à cor ou ao valor de índice de cor do fragmento. Esse algoritmo depende apenas do valor do fragmento e de suas coordenadas de janela x e y.
 
- 
+ 
 
- 
+ 
 
 
 

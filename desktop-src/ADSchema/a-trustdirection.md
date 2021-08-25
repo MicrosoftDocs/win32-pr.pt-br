@@ -1,11 +1,11 @@
 ---
 title: Trust-Direction atributo
-description: A direção de uma relação de confiança.
+description: A direção de uma confiança.
 ms.assetid: 29ee19c6-a6c5-40e6-ad70-bfa0a16e3a84
 ms.tgt_platform: multiple
 keywords:
-- Esquema de Trust-Direction do atributo AD
-- Esquema de AD do atributo trustDirection
+- Trust-Direction atributo AD Schema
+- Atributo trustDirection Esquema do AD
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f54feb80079ea4ac8f1b68fee7d223275313b64b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 315a52d7bc8a905915d286cea1985348610858c9ae0674e12cda98cb53978cdf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104456169"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119835486"
 ---
 # <a name="trust-direction-attribute"></a>Trust-Direction atributo
 
-A direção de uma relação de confiança.
+A direção de uma confiança.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | Trust-Direction                      |
-| LDAP-Display-Name | trustDirection                       |
+| Ldap-Display-Name | Trustdirection                       |
 | Tamanho              | 4 bytes                              |
 | Privilégio de atualização  | Esse valor é definido pelo sistema.     |
-| Frequência de atualização  | Quando uma nova relação de confiança é criada.         |
+| Frequência de atualização  | Quando uma nova confiança é criada.         |
 | Attribute-Id      | 1.2.840.113556.1.4.132               |
-| System-ID-GUID    | bf967a5c-0de6-11d0-a285-00aa003049e2 |
+| System-Id-Guid    | bf967a5c-0de6-11d0-a285-00aa003049e2 |
 | Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
@@ -58,10 +58,10 @@ A direção de uma relação de confiança.
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| Tem valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
-| No catálogo global      | Falso                                                |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
+| No Catálogo Global      | Falso                                                |
+| Descritor de segurança NT | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
@@ -79,10 +79,10 @@ A direção de uma relação de confiança.
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| Tem valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
-| No catálogo global      | True                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
+| No Catálogo Global      | Verdadeiro                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
@@ -100,10 +100,10 @@ A direção de uma relação de confiança.
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| Tem valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
-| No catálogo global      | True                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
+| No Catálogo Global      | Verdadeiro                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
@@ -121,10 +121,10 @@ A direção de uma relação de confiança.
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| Tem valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
-| No catálogo global      | True                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
+| No Catálogo Global      | Verdadeiro                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
@@ -142,10 +142,10 @@ A direção de uma relação de confiança.
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| Tem valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
-| No catálogo global      | True                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
+| No Catálogo Global      | Verdadeiro                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
@@ -163,10 +163,10 @@ A direção de uma relação de confiança.
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| Tem valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
-| No catálogo global      | True                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
+| No Catálogo Global      | Verdadeiro                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |

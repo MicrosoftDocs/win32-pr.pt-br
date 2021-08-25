@@ -1,5 +1,5 @@
 ---
-title: Métodos ID2D1RenderTarget PushLayer (D2d1 \_ 1. h)
+title: Métodos PushLayer ID2D1RenderTarget (D2d1 \_ 1.h)
 description: Adiciona a camada especificada ao destino de renderização para que ele receba todas as operações de desenho subsequentes até que PopLayer seja chamado.
 ms.assetid: 9336662c-e94e-40ba-adbe-066d704958bc
 keywords:
@@ -12,14 +12,14 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 6a5609192162ae0b0c0e2af8f1b84429d8710509
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e1f4f5ddeace0144f6314ee7eae8a640e489d99c43f4e21f6e6c260fd003dd0f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105796278"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119874026"
 ---
-# <a name="id2d1rendertargetpushlayer-methods"></a>ID2D1RenderTarget: métodos de ushLayer de:P
+# <a name="id2d1rendertargetpushlayer-methods"></a>Métodos ID2D1RenderTarget::P layer
 
 Adiciona a camada especificada ao destino de renderização para que ele receba todas as operações de desenho subsequentes até que [**PopLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-poplayer) seja chamado.
 
@@ -29,26 +29,26 @@ Adiciona a camada especificada ao destino de renderização para que ele receba 
 
 | Método                                                                                                                            | Descrição                                                                                                                                                                     |
 |:----------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**PushLayer ( \_ parâmetros de camada D2D1 \_&, ID2D1Layer \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-pushlayer(constd2d1_layer_parameters__id2d1layer))  | Adiciona a camada especificada ao destino de renderização para que ele receba todas as operações de desenho subsequentes até que [**PopLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-poplayer) seja chamado. <br/> |
-| [**PushLayer ( \_ parâmetros da camada d2d1 \_ \* , ID2D1Layer \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-pushlayer(constd2d1_layer_parameters_id2d1layer)) | Adiciona a camada especificada ao destino de renderização para que ele receba todas as operações de desenho subsequentes até que [**PopLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-poplayer) seja chamado. <br/> |
+| [**PushLayer(D2D1 \_ LAYER \_ PARAMETERS&,ID2D1Layer \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-pushlayer(constd2d1_layer_parameters__id2d1layer))  | Adiciona a camada especificada ao destino de renderização para que ele receba todas as operações de desenho subsequentes até que [**PopLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-poplayer) seja chamado. <br/> |
+| [**PushLayer(D2D1 \_ LAYER \_ \* PARAMETERS, ID2D1Layer \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-pushlayer(constd2d1_layer_parameters_id2d1layer)) | Adiciona a camada especificada ao destino de renderização para que ele receba todas as operações de desenho subsequentes até que [**PopLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-poplayer) seja chamado. <br/> |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-O método [**PushLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-pushlayer(constd2d1_layer_parameters__id2d1layer)) permite que um chamador comece a redirecionar a renderização para uma camada. Todas as operações de renderização são válidas em uma camada. O local da camada é afetado pelo conjunto de transformação mundial no destino de renderização.
+O [**método PushLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-pushlayer(constd2d1_layer_parameters__id2d1layer)) permite que um chamador comece a redirecionar a renderização para uma camada. Todas as operações de renderização são válidas em uma camada. O local da camada é afetado pelo conjunto de transformação do mundo no destino de renderização.
 
-Cada **PushLayer** deve ter uma chamada [**PopLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-poplayer) correspondente. Se houver mais chamadas **PopLayer** que chamadas **PushLayer** , o destino de renderização será colocado em um estado de erro. Se a [**liberação**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush) for chamada antes que todas as camadas pendentes sejam retiradas, o destino de renderização será colocado em um estado de erro e um erro será retornado. O estado de erro pode ser limpo por uma chamada para [**EndDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw).
+Cada **PushLayer** deve ter uma chamada [**PopLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-poplayer) correspondente. Se houver mais chamadas **PopLayer** do que **chamadas pushLayer,** o destino de renderização será colocado em um estado de erro. Se [**Flush**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush) for chamado antes que todas as camadas pendentes sejam cortadas, o destino de renderização será colocado em um estado de erro e um erro será retornado. O estado do erro pode ser limpo por uma chamada para [**EndDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw).
 
-Um recurso [**ID2D1Layer**](/windows/win32/api/d2d1/nn-d2d1-id2d1layer) específico pode estar ativo apenas uma vez. Em outras palavras, você não pode chamar um método [**PushLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-pushlayer(constd2d1_layer_parameters__id2d1layer)) e, em seguida, seguir imediatamente com outro método **PushLayer** com o mesmo recurso de camada. Em vez disso, você deve chamar o segundo método **PushLayer** com recursos de camada diferentes.
+Um recurso [**ID2D1Layer**](/windows/win32/api/d2d1/nn-d2d1-id2d1layer) específico pode estar ativo apenas por vez. Em outras palavras, você não pode chamar um [**método PushLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-pushlayer(constd2d1_layer_parameters__id2d1layer)) e, em seguida, seguir imediatamente com outro **método PushLayer** com o mesmo recurso de camada. Em vez disso, você deve chamar o segundo **método PushLayer** com diferentes recursos de camada.
 
-Para obter um exemplo, consulte [como cortar uma região com camadas](how-to-clip-with-layers.md).
+Para ver um exemplo, [consulte Como cortar uma região com camadas](how-to-clip-with-layers.md).
 
-Esse método não retornará um código de erro se ele falhar. Para determinar se uma operação de desenho (como **PushLayer**) falhou, verifique o resultado retornado pelos métodos [**ID2D1RenderTarget:: EndDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw) ou [**ID2D1RenderTarget:: flush**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush) .
+Esse método não retornará um código de erro se ele falhar. Para determinar se uma operação de desenho (como **PushLayer**) falhou, verifique o resultado retornado pelos métodos [**ID2D1RenderTarget::EndDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw) ou [**ID2D1RenderTarget::Flush.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush)
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir usa uma camada para recortar um bitmap para uma máscara geométrica. Para obter o exemplo completo, consulte [como recortar para uma máscara geométrica](how-to-clip-with-layers.md).
+O exemplo a seguir usa uma camada para cortar um bitmap em uma máscara geométrica. Para ver o exemplo completo, [consulte How to Clip to a Geometric Mask](how-to-clip-with-layers.md).
 
 
 ```C++
@@ -97,8 +97,8 @@ HRESULT DemoApp::RenderWithLayer(ID2D1RenderTarget *pRT)
 
 | Requisito | Valor |
 |--------------------|-------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D2d1 \_ 1. h (inclui D2d1. h)</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D2d1. lib</dt> </dl>                   |
+| parâmetro<br/>  | <dl> <dt>D2d1 \_ 1.h (inclua D2d1.h)</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D2d1.lib</dt> </dl>                   |
 | DLL<br/>     | <dl> <dt>D2d1.dll</dt> </dl>                   |
 
 
@@ -110,7 +110,7 @@ HRESULT DemoApp::RenderWithLayer(ID2D1RenderTarget *pRT)
 [**ID2D1RenderTarget**](/windows/win32/api/d2d1/nn-d2d1-id2d1rendertarget)
 </dt> <dt>
 
-[Visão geral de camadas](direct2d-layers-overview.md)
+[Visão geral das camadas](direct2d-layers-overview.md)
 </dt> </dl>
 
 �

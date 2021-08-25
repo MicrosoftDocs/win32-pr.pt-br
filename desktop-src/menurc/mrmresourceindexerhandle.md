@@ -1,6 +1,6 @@
 ---
-title: Estrutura MrmResourceIndexerHandle (MrmResourceIndexer. h)
-description: Representa um identificador opaco para um objeto indexador de recursos. O identificador é gerenciado pelo sistema operacional. Para obter mais informações e orientações baseadas em cenários de como usar essas APIs, consulte APIs de PRI (indexação de recursos de pacote) e sistemas de compilação personalizados.
+title: Estrutura MrmResourceIndexerHandle (MrmResourceIndexer.h)
+description: Representa um identificador opaco para um objeto de indexador de recursos. O handle é gerenciado pelo sistema operacional. Para obter mais informações e passo a passo baseado em cenário de como usar essas APIs, consulte APIs de PRI (indexação de recursos de pacote) e sistemas de build personalizados.
 ms.assetid: E3ED8AB8-39B8-419C-9570-1CC6B2CFE8D0
 keywords:
 - Menus de estrutura MrmResourceIndexerHandle e outros recursos
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a5786585597b5d23a6f6c0cd6842b655727c3ffe
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c5c9cd18d6c828d5f9b5187f866d8ab637dfd4d58c3da0a8569bd8c910c7e872
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369912"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119825686"
 ---
 # <a name="mrmresourceindexerhandle-structure"></a>Estrutura MrmResourceIndexerHandle
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto pré-lançado, que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-Representa um identificador opaco para um objeto indexador de recursos. O identificador é gerenciado pelo sistema operacional. Para obter mais informações e orientações baseadas em cenários de como usar essas APIs, consulte APIs de [Pri (indexação de recursos de pacote) e sistemas de compilação personalizados](/windows/uwp/app-resources/pri-apis-custom-build-systems).
+Representa um identificador opaco para um objeto de indexador de recursos. O handle é gerenciado pelo sistema operacional. Para obter mais informações e passo a passo baseado em cenário de como usar essas APIs, consulte [APIs de PRI (indexação](/windows/uwp/app-resources/pri-apis-custom-build-systems)de recursos de pacote) e sistemas de build personalizados .
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,14 +43,14 @@ typedef struct _MrmResourceIndexerHandle {
 
 <dl> <dt>
 
-**processamento**
+**Lidar com**
 </dt> <dd>
 
-Tipo: **pVoid**
+Tipo: **PVOID**
 
 </dd> <dd>
 
-Um identificador opaco para um objeto de indexador de recurso.
+Um identificador opaco para um objeto de indexador de recursos.
 
 </dd> </dl>
 
@@ -60,9 +60,9 @@ Um identificador opaco para um objeto de indexador de recurso.
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10, versão 1803\]<br/>                                       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server\]<br/>                                                 |
-| parâmetro<br/>                   | <dl> <dt>MrmResourceIndexer. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 10, versão 1803 somente \[ aplicativos da área de trabalho\]<br/>                                       |
+| Servidor mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do servidor\]<br/>                                                 |
+| Cabeçalho<br/>                   | <dl> <dt>MrmResourceIndexer.h</dt> </dl> |
 
 
 

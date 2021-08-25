@@ -3,7 +3,7 @@ title: PSN_QUERYCANCEL código de notificação (Prsht. h)
 description: Indica que o usuário cancelou a folha de propriedades. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
 ms.assetid: 4a789e08-065a-485c-87e3-f7958e2dc544
 keywords:
-- PSN_QUERYCANCEL de código de notificação controles do Windows
+- PSN_QUERYCANCEL código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f27d39a7a02d80235db5f8fbe31809dcc913d51c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bff5ed6203d255a18c40044febb2f7afd9ab42e15c5a9d8ae9fa1a1a56518693
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918340"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119798616"
 ---
 # <a name="psn_querycancel-notification-code"></a>Código de notificação do PSN \_ QUERYCANCEL
 
@@ -45,7 +45,7 @@ Ponteiro para uma estrutura [**PSHNOTIFY**](/windows/desktop/api/Prsht/ns-prsht-
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna **true** para impedir a operação de cancelamento ou **false** para permiti-la.
 
@@ -61,9 +61,9 @@ Para definir um valor de retorno, o procedimento da caixa de diálogo para a pá
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Prsht. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Prsht. h</dt> </dl> |
 
 
 

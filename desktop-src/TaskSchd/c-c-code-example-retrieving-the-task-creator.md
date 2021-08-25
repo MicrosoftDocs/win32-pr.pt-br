@@ -1,22 +1,22 @@
 ---
-title: Exemplo de código do C/C++ recuperando o criador da tarefa
-description: Este exemplo recupera o nome do criador da tarefa e o exibe na tela. Este exemplo supõe que a tarefa e a tarefa de teste já existam no computador local.
+title: Exemplo de código C/C++ recuperando o Criador da Tarefa
+description: Este exemplo recupera o nome do criador da tarefa e o exibe na tela. Este exemplo presume que a tarefa e a tarefa de teste já existem no computador local.
 ms.assetid: 02554ce1-2d52-48e9-95f1-d5d480519035
 keywords:
-- Recuperando Agendador de Tarefas do criador da tarefa
-- Recuperando propriedades de item de trabalho Agendador de Tarefas, criador de tarefa
+- recuperando o criador da tarefa Agendador de Tarefas
+- recuperando propriedades de item de trabalho Agendador de Tarefas , criador de tarefas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3546d676a5f1ac4b99595e47f2514b84e38f4c08
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: baa756fbb10e2d0cd68cce8953dd38cf2d31ab0242d74faea07423292908665b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005418"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119872486"
 ---
-# <a name="cc-code-example-retrieving-the-task-creator"></a>Exemplo de código do C/C++: Recuperando o criador da tarefa
+# <a name="cc-code-example-retrieving-the-task-creator"></a>Exemplo de código C/C++: Recuperando o Criador da Tarefa
 
-Este exemplo recupera o nome do criador da tarefa e o exibe na tela. Este exemplo supõe que a tarefa e a tarefa de teste já existam no computador local.
+Este exemplo recupera o nome do criador da tarefa e o exibe na tela. Este exemplo presume que a tarefa e a tarefa de teste já existem no computador local.
 
 
 ```C++
@@ -118,12 +118,12 @@ int main(int argc, char **argv)
 
 <dl> <dt>
 
-[Exemplos de Agendador de Tarefas 1,0](task-scheduler-1-0-examples.md)
+[Agendador de Tarefas exemplos 1.0](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

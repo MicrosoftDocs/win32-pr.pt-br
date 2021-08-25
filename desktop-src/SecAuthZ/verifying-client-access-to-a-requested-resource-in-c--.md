@@ -1,25 +1,25 @@
 ---
 description: Chame o método AccessCheck da interface IAzClientContext para verificar se o cliente tem acesso a uma ou mais operações.
 ms.assetid: 7c8a63c5-2eab-4414-9a3d-c99a92b67a62
-title: Verificando o acesso do cliente a um recurso solicitado em C++
+title: Verificando o acesso do cliente a um recurso solicitado no C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eeffe9cb3312e33a283c1701b58356cdf5ea9b3a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 363490e3636f5ad5229dd4234eba3bf38b9dfc54a4564bda775b143a249fe640
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171994"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119906726"
 ---
-# <a name="verifying-client-access-to-a-requested-resource-in-c"></a>Verificando o acesso do cliente a um recurso solicitado em C++
+# <a name="verifying-client-access-to-a-requested-resource-in-c"></a>Verificando o acesso do cliente a um recurso solicitado no C++
 
-Chame o método [**AccessCheck**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-accesscheck) da interface [**IAzClientContext**](/windows/desktop/api/Azroles/nn-azroles-iazclientcontext) para verificar se o cliente tem acesso a uma ou mais operações. Um cliente pode ter associação em mais de uma função e uma operação pode ser atribuída a mais de uma tarefa, portanto, o Gerenciador de autorização verifica todas as funções e tarefas. Se qualquer função à qual o cliente pertence contiver qualquer tarefa que contenha uma operação, o acesso a essa operação será concedido.
+Chame o [**método AccessCheck**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-accesscheck) da interface [**IAzClientContext**](/windows/desktop/api/Azroles/nn-azroles-iazclientcontext) para verificar se o cliente tem acesso a uma ou mais operações. Um cliente pode ter associação em mais de uma função e uma operação pode ser atribuída a mais de uma tarefa, portanto, o Gerenciador de Autorização verifica todas as funções e tarefas. Se qualquer função à qual o cliente pertence contiver qualquer tarefa que contenha uma operação, o acesso a essa operação será concedido.
 
-Para verificar o acesso apenas a uma única função à qual o cliente pertence, defina a propriedade [**RoleForAccessCheck**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-get_roleforaccesscheck) da interface [**IAzClientContext**](/windows/desktop/api/Azroles/nn-azroles-iazclientcontext) .
+Para verificar o acesso de apenas uma única função à qual o cliente pertence, de definido a propriedade [**RoleForAccessCheck**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-get_roleforaccesscheck) da interface [**IAzClientContext.**](/windows/desktop/api/Azroles/nn-azroles-iazclientcontext)
 
-Ao inicializar o repositório de política de autorização para verificação de acesso, você deve passar zero como o valor do parâmetro *lFlags* do método [**IAzAuthorizationStore:: Initialize**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-initialize) .
+Ao inicializar o repositório de políticas de autorização para verificação de acesso, você deve passar zero como o valor do parâmetro *lFlags* do [**método IAzAuthorizationStore::Initialize.**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-initialize)
 
-O exemplo a seguir mostra como verificar o acesso de um cliente a uma operação. O exemplo supõe que haja um repositório de política XML existente chamado MyStore.xml no diretório raiz da unidade C, que esse armazenamento contém um aplicativo chamado despesas e uma operação chamada UseFormControl, e que a variável hToken contém um token de cliente válido.
+O exemplo a seguir mostra como verificar o acesso de um cliente a uma operação. O exemplo supõe que haja um armazenamento de políticas XML existente chamado MyStore.xml no diretório raiz da unidade C, que esse armazenamento contém um aplicativo chamado Expense e uma operação chamada UseFormControl e que a variável hToken contém um token de cliente válido.
 
 
 ```C++

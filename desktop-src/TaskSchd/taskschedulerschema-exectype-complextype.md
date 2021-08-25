@@ -1,9 +1,9 @@
 ---
-title: Tipo complexo exectype
-description: Define os elementos filho e as informações de sequenciamento do elemento exec (actionproperty).
+title: tipo complexo execType
+description: Define os elementos filho e informações de sequenciamento do elemento Exec (actionGroup).
 ms.assetid: ab23801a-453d-4fab-8584-30c5c9d57dff
 keywords:
-- tipo complexo de exectype Agendador de Tarefas
+- tipo complexo execType Agendador de Tarefas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8f6186c15e8bbe059abaa6cc33580fca45286cda
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6e0726930f902ec0458f42fff9cdce39026cf63ddab92982bc30da33ca671712
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454791"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119796626"
 ---
-# <a name="exectype-complex-type"></a>Tipo complexo exectype
+# <a name="exectype-complex-type"></a>tipo complexo execType
 
-Define os elementos filho e as informações de sequenciamento do elemento [**exec (actionproperty)**](taskschedulerschema-exec-actiongroup-element.md) .
+Define os elementos filho e informações de sequenciamento do elemento [**Exec (actionGroup).**](taskschedulerschema-exec-actiongroup-element.md)
 
 ``` syntax
 <xs:complexType name="execType">
@@ -55,8 +55,8 @@ Define os elementos filho e as informações de sequenciamento do elemento [**ex
 | Elemento                                                                           | Type                                                        | Descrição                                                                                                  |
 |-----------------------------------------------------------------------------------|-------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
 | [**Argumentos**](taskschedulerschema-arguments-exectype-element.md)               | **cadeia de caracteres**                                                  | Especifica os argumentos associados à operação de linha de comando. <br/>                              |
-| [**Comando**](taskschedulerschema-command-exectype-element.md)                   | [**caminhotype**](taskschedulerschema-pathtype-simpletype.md) | Especifica o arquivo ou documento executável a ser executado.<br/>                                              |
-| [**WorkingDirectory**](taskschedulerschema-workingdirectory-exectype-element.md) | [**caminhotype**](taskschedulerschema-pathtype-simpletype.md) | Especifica o diretório em que o executável ou os arquivos usados pelo executável existem.<br/> |
+| [**Comando**](taskschedulerschema-command-exectype-element.md)                   | [**Pathtype**](taskschedulerschema-pathtype-simpletype.md) | Especifica o arquivo executável ou o documento a ser executado.<br/>                                              |
+| [**WorkingDirectory**](taskschedulerschema-workingdirectory-exectype-element.md) | [**Pathtype**](taskschedulerschema-pathtype-simpletype.md) | Especifica o diretório em que o executável ou os arquivos usados pelo executável existem.<br/> |
 
 
 
@@ -66,8 +66,8 @@ Define os elementos filho e as informações de sequenciamento do elemento [**ex
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
@@ -75,7 +75,7 @@ Define os elementos filho e as informações de sequenciamento do elemento [**ex
 
 <dl> <dt>
 
-[Tipos complexos de esquema de Agendador de Tarefas](task-scheduler-schema-complex-types.md)
+[Agendador de Tarefas complexos de esquema](task-scheduler-schema-complex-types.md)
 </dt> <dt>
 
 [Agendador de Tarefas](task-scheduler-start-page.md)

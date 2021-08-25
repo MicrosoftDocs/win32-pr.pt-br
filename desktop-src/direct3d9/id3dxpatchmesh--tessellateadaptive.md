@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: e4cc6c6b7ff7b0cdb99e56386df49529f26c9166
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: d6365cfcf50debfeeb28fd493b76ac60943ee14f27a2dadec168b3dd4d31ace1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105749421"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119856286"
 ---
 # <a name="id3dxpatchmeshtessellateadaptive-method"></a>Método ID3DXPatchMesh:: TessellateAdaptive
 
@@ -79,7 +79,7 @@ Malha mosaico resultante. Consulte [**ID3DXMesh**](id3dxmesh.md).
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

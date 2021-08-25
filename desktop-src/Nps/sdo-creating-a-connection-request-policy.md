@@ -5,21 +5,21 @@ ms.assetid: 659e7d1e-d985-4cb1-95ad-355c5b44d55a
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 78f2ff388cf3448a4482d304fabf90fdbaa83d5d
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 69c12a8969e4e16495881a08a67550cb2052862126baecf5cc07c2ad6b129c23
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104084866"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119889326"
 ---
 # <a name="creating-a-connection-request-policy"></a>Criando uma política de solicitação de conexão
 
-O código de Visual Basic a seguir cria uma política de solicitação de conexão. Ele adiciona uma condição à política que corresponde ao nome do usuário que está solicitando o acesso. Ele vincula a política a um perfil. Ele configura esse perfil para usar o RADIUS para autenticação e contabilidade e especifica os grupos de servidores que o perfil deve usar para autenticação e contabilidade.
+o código de Visual Basic a seguir cria uma política de solicitação de conexão. Ele adiciona uma condição à política que corresponde ao nome do usuário que está solicitando o acesso. Ele vincula a política a um perfil. Ele configura esse perfil para usar o RADIUS para autenticação e contabilidade e especifica os grupos de servidores que o perfil deve usar para autenticação e contabilidade.
 
 > [!Note]  
 > Este exemplo de código embutido foi criado em Visual Basic gerenciados.
 
- 
+ 
 
 
 ```VB
@@ -360,6 +360,6 @@ End Module
 [**Profileproperties**](/windows/desktop/api/sdoias/ne-sdoias-profileproperties)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

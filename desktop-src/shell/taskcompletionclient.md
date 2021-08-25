@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - ExecModelClient.dll
-ms.openlocfilehash: a823dc528ea189c70f44689ab69795eb3a430e67
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d03e52a15e6689b7f1ea98a2f1021874cab6a8967dd148b7eaf685ff3984e8cf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171172"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119773646"
 ---
 # <a name="taskcompletionclient-interface"></a>Interface TaskCompletionClient
 
@@ -49,7 +49,7 @@ A interface **TaskCompletionClient** tem esses métodos.
 
 O GUID desta interface é "E97D552D-9AE9-46AA-9151-D2DA4BBB5E96".
 
-Essa API foi preterida e pode não estar disponível em versões futuras do Windows. Os aplicativos devem usar as APIs no namespace [**Windows. ApplicationModel. ExtendedExecution**](/uwp/api/Windows.ApplicationModel.ExtendedExecution?view=winrt-19041) em vez disso.
+Essa API foi preterida e pode não estar disponível em versões futuras do Windows. Os aplicativos devem usar as APIs no [**Windows.**](/uwp/api/Windows.ApplicationModel.ExtendedExecution?view=winrt-19041)Em vez disso, o namespace ApplicationModel. ExtendedExecution.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,8 +57,8 @@ Essa API foi preterida e pode não estar disponível em versões futuras do Wind
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                    |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2016\]<br/>                                           |
+| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                                    |
+| Servidor mínimo com suporte<br/> | Windows Server 2016 \[ somente aplicativos da área de trabalho\]<br/>                                           |
 | DLL<br/>                      | <dl> <dt>ExecModelClient.dll</dt> </dl> |
 
 

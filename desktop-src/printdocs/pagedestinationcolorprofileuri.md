@@ -4,12 +4,12 @@ ms.assetid: b2a4a4d2-a8bc-48dc-ad56-20380f5f91c9
 title: PageDestinationColorProfileURI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c3cf719a97f8f8086e88425c1667199815efbbb
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: d861d7e7f1493c481f19c775895b367c3a94007f97c2ad40dc61663ccd510d40
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112396671"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119776506"
 ---
 # <a name="pagedestinationcolorprofileuri"></a>PageDestinationColorProfileURI
 
@@ -24,7 +24,7 @@ Especifica uma referência de URI relativa a um perfil ICC contido em um documen
 
 
 
-| Name | Valor |
+| Nome | Valor |
 |----------------------------|----------------------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                                  |
 | Prefixo de definição de scoping <br/> | ?<br/>                                          |

@@ -1,5 +1,5 @@
 ---
-title: Métodos ID2D1RenderTarget DrawRoundedRectangle (D2d1. h)
+title: Métodos ID2D1RenderTarget DrawRoundedRectangle (D2d1.h)
 description: Desenha o contorno do retângulo arredondado especificado usando o estilo de traço especificado.
 ms.assetid: d718c355-ffd8-4a7f-90f3-9a10d37a19c8
 keywords:
@@ -12,14 +12,14 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 1cc42449bd2e2db7ec6637a7c405228fd3b51c1d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9db4da23faaea274a105dcfabdd33254223eb3b23e6395fd6d7cd9113134af74
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759462"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119874356"
 ---
-# <a name="id2d1rendertargetdrawroundedrectangle-methods"></a>ID2D1RenderTarget: métodos de rawRoundedRectangle de:D
+# <a name="id2d1rendertargetdrawroundedrectangle-methods"></a>Métodos ID2D1RenderTarget::D rawRoundedRectangle
 
 Desenha o contorno do retângulo arredondado especificado usando o estilo de traço especificado.
 
@@ -29,20 +29,20 @@ Desenha o contorno do retângulo arredondado especificado usando o estilo de tra
 
 | Método                                                                                                                                                                                              | Descrição                                                                                       |
 |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------|
-| [**DrawRoundedRectangle (D2D1 \_ arredondado \_ retangular&, ID2D1Brush \* , float, ID2D1StrokeStyle \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawroundedrectangle(constd2d1_rounded_rect__id2d1brush_float_id2d1strokestyle))  | Desenha o contorno do retângulo arredondado especificado usando o estilo de traço especificado.<br/> |
-| [**DrawRoundedRectangle (D2D1 \_ arredondado \_ retangular \* , ID2D1Brush \* , float, ID2D1StrokeStyle \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawroundedrectangle(constd2d1_rounded_rect__id2d1brush_float_id2d1strokestyle)) | Desenha o contorno do retângulo arredondado especificado usando o estilo de traço especificado.<br/> |
+| [**DrawRoundedRectangle(D2D1 \_ ROUNDED \_ RECT&,ID2D1Brush \* , FLOAT,ID2D1StrkeStyle \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawroundedrectangle(constd2d1_rounded_rect__id2d1brush_float_id2d1strokestyle))  | Desenha o contorno do retângulo arredondado especificado usando o estilo de traço especificado.<br/> |
+| [**DrawRoundedRectangle(D2D1 \_ ROUNDED \_ RECT \* , ID2D1Brush, \* FLOAT, ID2D1StrkeStyle \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawroundedrectangle(constd2d1_rounded_rect__id2d1brush_float_id2d1strokestyle)) | Desenha o contorno do retângulo arredondado especificado usando o estilo de traço especificado.<br/> |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-Esse método não retornará um código de erro se ele falhar. Para determinar se uma operação de desenho (como **DrawRoundedRectangle**) falhou, verifique o resultado retornado pelos métodos [**ID2D1RenderTarget:: EndDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw) ou [**ID2D1RenderTarget:: flush**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush) .
+Esse método não retornará um código de erro se ele falhar. Para determinar se uma operação de desenho (como **DrawRoundedRectangle**) falhou, verifique o resultado retornado pelos métodos [**ID2D1RenderTarget::EndDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw) ou [**ID2D1RenderTarget::Flush.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush)
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir usa os métodos **DrawRoundedRectangle** e [**FillRoundedRectangle**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillroundedrectangle(constd2d1_rounded_rect_id2d1brush)) para descrever e preencher um retângulo arredondado. Este exemplo produz a saída mostrada na ilustração a seguir.
+O exemplo a seguir usa os **métodos DrawRoundedRectangle** e [**FillRoundedRectangle**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillroundedrectangle(constd2d1_rounded_rect_id2d1brush)) para delinear e preencher um retângulo arredondado. Este exemplo produz a saída mostrada na ilustração a seguir.
 
-![ilustração de quatro retângulos arredondados com diferentes estilos de traço e preenchimentos](images/drawroundedrectangle-scr.png)
+![ilustração de quatro retângulos arredondados com estilos de traço e preenchimentos diferentes](images/drawroundedrectangle-scr.png)
 
 
 ```C++
@@ -122,8 +122,8 @@ HRESULT DrawAndFillRoundedRectangleExample::OnRender()
 
 | Requisito | Valor |
 |--------------------|-------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D2d1. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D2d1. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>D2d1.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D2d1.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>D2d1.dll</dt> </dl> |
 
 

@@ -4,18 +4,18 @@ ms.assetid: 1c34faa0-936a-433a-9280-a94033f3f815
 title: Comitê
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 90084a0b6bfc7f63db12b7f47eba335adc87239a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d4e79bc49a4ffc93c87b040327a2c7626bc7d816e060cf4bfcd42a6bcab0d024
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104172157"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119906956"
 ---
 # <a name="trustees"></a>Comitê
 
 Um confiável é a conta de usuário, a conta de grupo ou a [*sessão de logon*](/windows/desktop/SecGloss/l-gly) à qual se aplica uma ACE (entrada de [*controle de acesso*](/windows/desktop/SecGloss/a-gly) ). Cada ACE em uma ACL ( [*lista de controle de acesso*](/windows/desktop/SecGloss/a-gly) ) tem um SID (identificador de [*segurança*](/windows/desktop/SecGloss/s-gly) ) que identifica um confiável.
 
-As contas de usuário incluem contas que os usuários ou programas humanos, como os serviços do Windows, usam para fazer logon no computador local.
+as contas de usuário incluem contas que os usuários ou programas humanos, como Windows Services, usam para fazer logon no computador local.
 
 As contas de grupo não podem ser usadas para fazer logon em um computador, mas elas são úteis em ACEs para permitir ou negar um conjunto de direitos de acesso a uma ou mais contas de usuário.
 

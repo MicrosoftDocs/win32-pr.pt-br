@@ -1,5 +1,5 @@
 ---
-description: Grava dados binários do arquivo especificado no banco de dado especificado.
+description: Grava dados binários do arquivo especificado no banco de dados especificado.
 ms.assetid: 960633a8-5cec-462b-b7dc-72eb3e4fd0a2
 title: Função SdbWriteBinaryTagFromFile
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: 75b45a935fd9630afcefe8f7d30338a6ad6b10a3
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: ec2acf733a870d3dcff57ceb7cdea996c6b6dc1e5d950ec85944285e6ba6cc35
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920261"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119815136"
 ---
 # <a name="sdbwritebinarytagfromfile-function"></a>Função SdbWriteBinaryTagFromFile
 
-Grava dados binários do arquivo especificado no banco de dado especificado.
+Grava dados binários do arquivo especificado no banco de dados especificado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,30 +41,30 @@ BOOL WINAPI SdbWriteBinaryTagFromFile(
 
 <dl> <dt>
 
-*PDB* \[ no\]
+*pdb* \[ Em\]
 </dt> <dd>
 
-Um identificador para o banco de dados de Shim.
+Um alça para o banco de dados shim.
 
 </dd> <dt>
 
-*tTag* \[ no\]
+*tTag* \[ Em\]
 </dt> <dd>
 
-A marca para a entrada. Essa marca deve ser do tipo **tipo de marca \_ \_ Binary**.
+A TAG para a entrada. Essa TAG deve ser do tipo **TAG \_ TYPE \_ BINARY**.
 
 </dd> <dt>
 
-*pwszPath* \[ no\]
+*pwszPath* \[ Em\]
 </dt> <dd>
 
-O caminho para o arquivo que contém os dados. Este parâmetro não pode ser **nulo**.
+O caminho para o arquivo que contém os dados. Esse parâmetro não pode ser **NULL.**
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-A função retorna **true** em caso de êxito ou **false** em caso de falha.
+A função retorna **TRUE em** caso de êxito **ou FALSE** em caso de falha.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -72,8 +72,8 @@ A função retorna **true** em caso de êxito ou **false** em caso de falha.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                   |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

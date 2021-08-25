@@ -3,7 +3,7 @@ title: Métodos ID2D1RenderTarget PushAxisAlignedClip (D2d1 \_ 1. h)
 description: Especifica um retângulo para o qual todas as operações de desenho subsequentes são recortadas.
 ms.assetid: 8b777425-07b1-4494-889a-0c947fb61315
 keywords:
-- Métodos PushAxisAlignedClip Direct2D
+- Direct2D métodos de PushAxisAlignedClip
 topic_type:
 - apiref
 api_location:
@@ -12,12 +12,12 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: d7e6d59f1c4cbffcde74ecb7b5adb5b12eff06bd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3ce76db0608ccd79ecd8ea1be716f8cbdf4313f95bfdda9cfac7b63474e3f412
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105754274"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119873986"
 ---
 # <a name="id2d1rendertargetpushaxisalignedclip-methods"></a>ID2D1RenderTarget: métodos de ushAxisAlignedClip de:P
 

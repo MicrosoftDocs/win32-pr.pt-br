@@ -11,12 +11,12 @@ keywords:
 - ajustando os níveis de saída
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d39566a10ca909030b60ff197f009b6afe05ce51
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a7710e8e3ceb8079f04ac97bfcce8c91c6c74aa60452c220166e358a87939848
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104006177"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119804937"
 ---
 # <a name="the-volume-scalar"></a>O volume escalar
 
@@ -26,9 +26,9 @@ O volume escalar especifica um valor percentual para alterar todas as mensagens 
 
 ![imagem do Mapeador MIDI](images/mmap-a04.gif)
 
- 
+ 
 
- 
+ 
 
 
 

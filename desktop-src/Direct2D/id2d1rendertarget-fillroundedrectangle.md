@@ -3,7 +3,7 @@ title: Métodos ID2D1RenderTarget FillRoundedRectangle (D2d1. h)
 description: Pinta o interior do retângulo arredondado especificado.
 ms.assetid: 9c4765b0-858f-4a20-b044-0acf87a1f131
 keywords:
-- Métodos FillRoundedRectangle Direct2D
+- Direct2D métodos de FillRoundedRectangle
 topic_type:
 - apiref
 api_location:
@@ -12,12 +12,12 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 2abc39ed364de0653813aab14ee5777ccf3c4e08
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8da1a154e7ca0b0b91b23cf067b529281ffa2b96f08f1315c9e8513cb43cb2e6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750920"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119874087"
 ---
 # <a name="id2d1rendertargetfillroundedrectangle-methods"></a>Métodos ID2D1RenderTarget:: FillRoundedRectangle
 

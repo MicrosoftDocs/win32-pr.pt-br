@@ -1,7 +1,7 @@
 ---
-description: A função LoadTCHAR é chamada por monitores para definir uma variável de cadeia de caracteres para uma cadeia de caracteres Obtida de uma cadeia de caracteres de configuração HTML.
+description: A função LoadTCHAR é chamada pelos monitores para definir uma variável de cadeia de caracteres como uma cadeia de caracteres retirada de uma cadeia de caracteres de configuração HTML.
 ms.assetid: 515a1053-d575-4b7c-92a7-4a8039f1b2ac
-title: Função LoadTCHAR (Netmon. h)
+title: Função LoadTCHAR (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: 25437ae5ad6c23209540194f8c658e275c7041b2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2d85419485e2442f82c94948b832914fa30e44396f266eed10cd1545b4cc28ad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105790011"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119890282"
 ---
 # <a name="loadtchar-function"></a>Função LoadTCHAR
 
-A função **LoadTCHAR** é chamada por monitores para definir uma variável de cadeia de caracteres para uma cadeia de caracteres Obtida de uma cadeia de caracteres de configuração html.
+A **função LoadTCHAR é** chamada pelos monitores para definir uma variável de cadeia de caracteres como uma cadeia de caracteres retirada de uma cadeia de caracteres de configuração HTML.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,32 +41,32 @@ BOOL LoadTCHAR(
 
 <dl> <dt>
 
-*pConfig* \[ no\]
+*pConfig* \[ Em\]
 </dt> <dd>
 
-Ponteiro para a cadeia de caracteres de configuração HTML passado para o monitor pelo método [Imonitor::D oconfigure](imonitor-doconfigure.md) .
+Ponteiro para a cadeia de caracteres de configuração HTML passada para o monitor pelo [método IMonitor::D oConfigure.](imonitor-doconfigure.md)
 
 </dd> <dt>
 
-*pVarName* \[ no\]
+*pVarName* \[ Em\]
 </dt> <dd>
 
 Ponteiro para o nome da variável na cadeia de caracteres de configuração.
 
 </dd> <dt>
 
-*ppszString* \[ fora\]
+*ppszString* \[ out\]
 </dt> <dd>
 
-Ponteiro para um ponteiro de cadeia de caracteres. Se o nome de variável solicitado for encontrado, a cadeia de caracteres será alocada e atribuída a esse ponteiro. É responsabilidade do usuário liberar a memória associada à cadeia de caracteres.
+Ponteiro para um ponteiro de cadeia de caracteres. Se o nome da variável solicitada for encontrado, a cadeia de caracteres será alocada e atribuída a esse ponteiro. É responsabilidade do usuário liberar a memória associada à cadeia de caracteres.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se a função for bem-sucedida (se o nome da variável tiver sido encontrado e tiver uma cadeia de caracteres que não seja de comprimento zero), o valor de retorno será **true**.
+Se a função for bem-sucedida (se o nome da variável tiver sido encontrado e tiver uma cadeia de caracteres de comprimento diferente de zero), o valor de retorno será **TRUE.**
 
-Se a função não for bem-sucedida, o valor de retorno será **false**.
+Se a função não for bem-sucedida, o valor de retorno será **FALSE.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -76,8 +76,8 @@ Se a função não for bem-sucedida, o valor de retorno será **false**.
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                           |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                 |
-| Cabeçalho<br/>                   | <dl> <dt>Netmon. h</dt> </dl>  |
-| Biblioteca<br/>                  | <dl> <dt>Nmapi. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Netmon.h</dt> </dl>  |
+| Biblioteca<br/>                  | <dl> <dt>Nmapi.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Nmapi.dll</dt> </dl> |
 
 

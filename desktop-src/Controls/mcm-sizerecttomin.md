@@ -3,7 +3,7 @@ title: Mensagem de MCM_SIZERECTTOMIN (commctrl. h)
 description: Calcula quantos calendários serão ajustados no retângulo fornecido e, em seguida, retorna o tamanho mínimo que um retângulo precisa para ajustar esse número de calendários. Você pode enviar essa mensagem explicitamente ou usando a macro calendário mensal \_ SizeRectToMin.
 ms.assetid: d52a7f68-e0c9-4646-a4aa-97129dffeb5d
 keywords:
-- Controles de MCM_SIZERECTTOMIN de mensagens do Windows
+- controles de Windows de mensagem de MCM_SIZERECTTOMIN
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f525f4cca9280b92fab0b9b86aa1d950ed990ef4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 547b8e401f270cbca1ff666ba0f1eb263ab3f9245f8a51e6874a7627597b9bfb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086323"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119799226"
 ---
 # <a name="mcm_sizerecttomin-message"></a>\_Mensagem MCM SIZERECTTOMIN
 
@@ -43,7 +43,7 @@ Na entrada, contém um ponteiro para uma estrutura [**Rect**](/previous-versions
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Não utilizado.
 
@@ -53,9 +53,9 @@ Não utilizado.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

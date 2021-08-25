@@ -3,16 +3,16 @@ title: Referência do Gerenciador de compactação de vídeo
 description: Referência do Gerenciador de compactação de vídeo
 ms.assetid: dd678b24-62af-495f-bdd6-3082c1a753dd
 keywords:
-- Video for Windows (VFW), Gerenciador de compactação de vídeo (VCM)
-- VFW (vídeo para Windows), Gerenciador de compactação de vídeo (VCM)
+- vídeo para Windows (VFW), gerenciador de compactação de vídeo (VCM)
+- VFW (vídeo para Windows), gerenciador de compactação de vídeo (VCM)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c801df7ecdf0f6468762c2742235d4ef627f5aee
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: adffe57bd731736ed434dfdfa3c4ded4e643c66a0b5f9ea1c6085a71285e45c4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104159505"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119804266"
 ---
 # <a name="video-compression-manager-reference"></a>Referência do Gerenciador de compactação de vídeo
 
@@ -44,19 +44,19 @@ Esta seção descreve as funções, estruturas, mensagens e macros, associadas a
 
 ## <a name="configuring-compressors"></a>Configurando compactadores
 
--   [**\_Configurar ICM**](icm-configure.md)
--   [**ICM \_ GETstate**](icm-getstate.md)
--   [**Autostate do ICM \_**](icm-setstate.md)
+-   [**ICM \_ CONFIGURAR**](icm-configure.md)
+-   [**ICM \_ GETSTATE**](icm-getstate.md)
+-   [**ICM \_ SETSTATE**](icm-setstate.md)
 -   [**ICSendMessage**](/windows/desktop/api/Vfw/nf-vfw-icsendmessage)
 
 ## <a name="compressor-information"></a>Informações de compressor
 
 -   [**ICGetInfo**](/windows/desktop/api/Vfw/nf-vfw-icgetinfo)
 -   [**ICINFO**](/windows/desktop/api/Vfw/ns-vfw-icinfo)
--   [**GETDEFAULTKEYFRAMERATE de ICM \_**](icm-getdefaultkeyframerate.md)
+-   [**ICM \_ GETDEFAULTKEYFRAMERATE**](icm-getdefaultkeyframerate.md)
 -   [**ICGetDisplayFormat**](/windows/desktop/api/Vfw/nf-vfw-icgetdisplayformat)
--   [**GETDEFAULTQUALITY de ICM \_**](icm-getdefaultquality.md)
--   [**sobre o ICM \_**](icm-about.md)
+-   [**ICM \_ GETDEFAULTQUALITY**](icm-getdefaultquality.md)
+-   [**ICM \_ PENSAR**](icm-about.md)
 
 ## <a name="single-image-compression"></a>Compactação de imagem única
 
@@ -75,11 +75,11 @@ Esta seção descreve as funções, estruturas, mensagens e macros, associadas a
 ## <a name="image-data-compression"></a>Compactação de dados de imagem
 
 -   [**ICCOMPRESS**](/windows/desktop/api/Vfw/ns-vfw-iccompress)
--   [**\_formato de obtenção de compactação ICM \_ \_**](icm-compress-get-format.md)
--   [**\_consulta de compactação ICM \_**](icm-compress-query.md)
--   [**\_tamanho de obtenção de compactação ICM \_ \_**](icm-compress-get-size.md)
--   [**\_início de compactação de ICM \_**](icm-compress-begin.md)
--   [**\_fim da compactação ICM \_**](icm-compress-end.md)
+-   [**ICM \_ COMPACTar \_ obter \_ formato**](icm-compress-get-format.md)
+-   [**ICM \_ COMPACTar \_ consulta**](icm-compress-query.md)
+-   [**ICM \_ COMPACTar \_ obter \_ tamanho**](icm-compress-get-size.md)
+-   [**ICM \_ início da COMPACTação \_**](icm-compress-begin.md)
+-   [**ICM \_ fim da COMPACTação \_**](icm-compress-end.md)
 
 ## <a name="compressor-monitoring"></a>Monitoramento de compactador
 
@@ -93,35 +93,35 @@ Esta seção descreve as funções, estruturas, mensagens e macros, associadas a
 
 -   [**ICDECOMPRESSEX**](/windows/desktop/api/Vfw/ns-vfw-icdecompressex)
 -   [**ICDecompressExBegin**](/windows/desktop/api/Vfw/nf-vfw-icdecompressexbegin)
--   [**\_fim do DECOMPRESSEX de ICM \_**](icm-decompressex-end.md)
--   [**\_formato de obtenção de DEScompactação de ICM \_ \_**](icm-decompress-get-format.md)
--   [**\_ \_ extrair paleta descompactar \_**](icm-decompress-get-palette.md)
+-   [**ICM \_ DECOMPRESSEX \_ fim**](icm-decompressex-end.md)
+-   [**ICM \_ descompactar \_ obter \_ formato**](icm-decompress-get-format.md)
+-   [**ICM \_ descompactar \_ obter \_ paleta**](icm-decompress-get-palette.md)
 -   [**ICDecompressExQuery**](/windows/desktop/api/Vfw/nf-vfw-icdecompressexquery)
 -   [**ICDECOMPRESS**](/windows/desktop/api/Vfw/ns-vfw-icdecompress)
--   [**\_início de DEScompactação de ICM \_**](icm-decompress-begin.md)
--   [**\_fim da DEScompactação de ICM \_**](icm-decompress-end.md)
--   [**\_consulta de DEScompactação ICM \_**](icm-decompress-query.md)
+-   [**ICM \_ descompactar \_ início**](icm-decompress-begin.md)
+-   [**ICM \_ descompactar \_ fim**](icm-decompress-end.md)
+-   [**ICM \_ descompactar \_ consulta**](icm-decompress-query.md)
 
 ## <a name="using-hardware-drawing-capabilities"></a>Usando recursos de Hardware-Drawing
 
 -   [**ICGetInfo**](/windows/desktop/api/Vfw/nf-vfw-icgetinfo)
 -   [**ICDRAWBEGIN**](/windows/desktop/api/Vfw/ns-vfw-icdrawbegin)
--   [**\_final do desenho ICM \_**](icm-draw-end.md)
--   [**\_liberação de desenho ICM \_**](icm-draw-flush.md)
--   [**\_consulta de desenho ICM \_**](icm-draw-query.md)
+-   [**ICM \_ fim do desenho \_**](icm-draw-end.md)
+-   [**ICM \_ liberação de desenho \_**](icm-draw-flush.md)
+-   [**ICM \_ DESENHAR \_ consulta**](icm-draw-query.md)
 -   [**ICDrawSuggestFormat**](/windows/desktop/api/Vfw/nf-vfw-icdrawsuggestformat)
--   [**\_início do desenho do ICM \_**](icm-draw-start.md)
--   [**\_parada de desenho de ICM \_**](icm-draw-stop.md)
--   [**GETBUFFERSWANTED de ICM \_**](icm-getbufferswanted.md)
--   [**compreender o ICM \_ \_**](icm-draw-realize.md)
+-   [**ICM \_ \_iniciar início**](icm-draw-start.md)
+-   [**ICM \_ DESENHO de \_ parada**](icm-draw-stop.md)
+-   [**ICM \_ GETBUFFERSWANTED**](icm-getbufferswanted.md)
+-   [**ICM \_ desempate \_**](icm-draw-realize.md)
 -   [**ICDrawOpen**](/windows/desktop/api/Vfw/nf-vfw-icdrawopen)
 -   [**ICDRAW**](/windows/desktop/api/Vfw/ns-vfw-icdraw)
--   [**\_extrair \_ getTime do ICM**](icm-draw-gettime.md)
--   [**ICM de \_ desenhar \_ setTime**](icm-draw-settime.md)
--   [**\_janela de desenho do ICM \_**](icm-draw-window.md)
--   [**compreender o ICM \_ \_**](icm-draw-realize.md)
--   [**\_CHANGEPALETTE desenhar de ICM \_**](icm-draw-changepalette.md)
--   [**\_RENDERBUFFER desenhar de ICM \_**](icm-draw-renderbuffer.md)
+-   [**ICM \_ DESENHAR \_ GETtime**](icm-draw-gettime.md)
+-   [**ICM \_ DESENHAR \_ SETtime**](icm-draw-settime.md)
+-   [**ICM \_ DESENHAR \_ janela**](icm-draw-window.md)
+-   [**ICM \_ desempate \_**](icm-draw-realize.md)
+-   [**ICM \_ DESENHAR \_ CHANGEPALETTE**](icm-draw-changepalette.md)
+-   [**ICM \_ DESENHAR \_ RENDERBUFFER**](icm-draw-renderbuffer.md)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -130,9 +130,9 @@ Esta seção descreve as funções, estruturas, mensagens e macros, associadas a
 [Gerenciador de compactação de vídeo](video-compression-manager.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

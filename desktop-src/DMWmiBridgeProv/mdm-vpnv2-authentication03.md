@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_VPNv2_Authentication03
-description: A \_ classe MDM VPNv2 \_ Authentication03 contém informações de autenticação para o perfil VPN nativo.
+title: MDM_VPNv2_Authentication03 classe
+description: A classe MDM \_ VPNv2 \_ Authentication03 contém informações de autenticação para o perfil VPN nativo.
 ms.assetid: 931752a9-6de5-46d4-b9d9-2c59c49e8ed9
 keywords:
-- Classe MDM_VPNv2_Authentication03
-- Classe MDM_VPNv2_Authentication03, descrita
+- MDM_VPNv2_Authentication03 classe
+- MDM_VPNv2_Authentication03 classe , descrita
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ca50bcc83df01b4aa5e7ec900985cf15f7e67d1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: efe1bda3b1b2448ae409e07605d2f8439e37872b78c161eac5051d0603269047
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009386"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119874976"
 ---
-# <a name="mdm_vpnv2_authentication03-class"></a>\_ \_ Classe AUTHENTICATION03 do MDM VPNv2
+# <a name="mdm_vpnv2_authentication03-class"></a>Classe MDM \_ VPNv2 \_ Authentication03
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto pré-lançado, que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-A classe [**MDM \_ VPNv2 \_ Authentication03**](mdm-vpnv2-01.md) contém informações de autenticação para o perfil VPN nativo.
+A [**classe MDM \_ VPNv2 \_ Authentication03**](mdm-vpnv2-01.md) contém informações de autenticação para o perfil VPN nativo.
 
 A sintaxe a seguir é simplificada do código MOF e inclui todas as propriedades herdadas.
 
@@ -47,13 +47,13 @@ class MDM_VPNv2_Authentication03
 
 ## <a name="members"></a>Membros
 
-A **classe \_ \_ Authentication03 de MDM VPNv2** tem estes tipos de membros:
+A **classe MDM \_ VPNv2 \_ Authentication03** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A **classe \_ \_ Authentication03 do MDM VPNv2** tem essas propriedades.
+A **classe MDM \_ VPNv2 \_ Authentication03** tem essas propriedades.
 
 <dl> <dt>
 
@@ -79,12 +79,12 @@ Identifica o nome do nó pai.
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -100,13 +100,13 @@ Descreve o caminho completo para o nó pai. Para essa classe, a cadeia de caract
 
 </dd> <dt>
 
-[Usermethod](/windows/client-management/mdm/vpnv2-csp#vpnv2-profilename-nativeprofile-authentication-usermethod)
+[UserMethod](/windows/client-management/mdm/vpnv2-csp#vpnv2-profilename-nativeprofile-authentication-usermethod)
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> </dl>
@@ -117,10 +117,10 @@ Tipo de acesso: leitura/gravação
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                      |
-| Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Namespace<br/>                | \\Cimv2 \\ mdm \\ dmmap raiz<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 

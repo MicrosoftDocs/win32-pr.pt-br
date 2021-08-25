@@ -1,7 +1,7 @@
 ---
-description: Método CTransformFilter. GetMediaType – o método GetMediaType recupera um tipo de mídia preferencial para o pino de saída.
+description: Método CTransformFilter.GetMediaType – o método GetMediaType recupera um tipo de mídia preferencial para o pino de saída.
 ms.assetid: 9a1b123b-aa8a-4bf0-a926-466ded24e506
-title: Método CTransformFilter. GetMediaType (Transfrm. h)
+title: Método CTransformFilter.GetMediaType (Transfrm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6415b8e3d8ae4e292b7e2592b123120927081ea8
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 9b471ac42ceb44f5e65a2ac08365bf97ab0e3157816b772b331cde0fa0b13bde
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108095114"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119907526"
 ---
-# <a name="ctransformfiltergetmediatype-method"></a>Método CTransformFilter. GetMediaType
+# <a name="ctransformfiltergetmediatype-method"></a>Método CTransformFilter.GetMediaType
 
 O `GetMediaType` método recupera um tipo de mídia preferencial para o pino de saída.
 
@@ -53,20 +53,20 @@ Valor de índice baseado em zero.
 *pMediaType* 
 </dt> <dd>
 
-Ponteiro para um objeto [**CMediaType**](cmediatype.md) que recebe o tipo de mídia.
+Ponteiro para um [**objeto CMediaType**](cmediatype.md) que recebe o tipo de mídia.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Retorna um valor **HRESULT** . Os valores possíveis incluem os mostrados na tabela a seguir.
+Retorna um **valor HRESULT.** Os valores possíveis incluem aqueles mostrados na tabela a seguir.
 
 
 
 | Código de retorno                                                                                            | Descrição                      |
 |--------------------------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>                   | Sucesso.<br/>              |
-| <dl> <dt>**VFW \_ S \_ não há \_ mais \_ itens**</dt> </dl> | Índice fora do intervalo.<br/>   |
+| <dl> <dt>**S \_ OK**</dt> </dl>                   | Êxito.<br/>              |
+| <dl> <dt>**VFW \_ NÃO TEM MAIS \_ \_ \_ ITENS**</dt> </dl> | Índice fora do intervalo.<br/>   |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>           | Índice menor que zero.<br/> |
 
 
@@ -75,7 +75,7 @@ Retorna um valor **HRESULT** . Os valores possíveis incluem os mostrados na tab
 
 ## <a name="remarks"></a>Comentários
 
-O método [**CTransformOutputPin:: GetMediaType**](ctransformoutputpin-getmediatype.md) do pino de saída chama esse método. A classe derivada deve implementar esse método. Para obter mais informações, consulte [**CBasePin:: GetMediaType**](cbasepin-getmediatype.md).
+O método [**CTransformOutputPin::GetMediaType**](ctransformoutputpin-getmediatype.md) do pino de saída chama esse método. A classe derivada deve implementar esse método. Para obter mais informações, [**consulte CBasePin::GetMediaType**](cbasepin-getmediatype.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -83,12 +83,12 @@ O método [**CTransformOutputPin:: GetMediaType**](ctransformoutputpin-getmediat
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Transfrm. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Transfrm.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

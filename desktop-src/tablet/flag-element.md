@@ -4,12 +4,12 @@ ms.assetid: 612f8814-ab3c-4a3e-9791-525788d4cc72
 title: Elemento Flag
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 46508f9821379fbedb3291ba45d16dbdd0fb316f
-ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
+ms.openlocfilehash: df40874178ba998ae9c864036b7befbf85179680de92cb68595f394e370e4404
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111432310"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119774076"
 ---
 # <a name="flag-element"></a>Elemento Flag
 
@@ -23,7 +23,7 @@ Contém um bitmap codificado em Base64 de um sinalizador associado à seção de
 
 ## <a name="parent-elements"></a>Elementos pai
 
-[**Disputa**](content-element--journal-reader.md)
+[**Conteúdo**](content-element--journal-reader.md)
 
 [**GroupNode**](groupnode-element.md)
 

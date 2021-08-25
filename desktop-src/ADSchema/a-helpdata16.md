@@ -1,11 +1,11 @@
 ---
 title: Help-Data16 atributo
-description: Esse atributo foi usado para o formato de arquivo de ajuda Win16 para o Exchange 4,0. Ele não é usado para nenhuma outra versão do Exchange.
+description: Esse atributo foi usado para o formato de arquivo de ajuda win16 para Exchange 4.0. Ele não é usado para nenhuma outra versão do Exchange.
 ms.assetid: cdddb064-72b1-43bb-9d91-8d723b9131f8
 ms.tgt_platform: multiple
 keywords:
-- Esquema de Help-Data16 do atributo AD
-- Esquema de AD do atributo helpData16
+- Help-Data16 atributo AD Schema
+- Esquema do AD do atributo helpData16
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 76ce3dbf6d2f64b3f87d5344bbbd6bed2dac43e5
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 3aeeda7634e0e01e6628ef7df8bd65230f24910f8dfac5431d4914047a36f820
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104500014"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119804406"
 ---
 # <a name="help-data16-attribute"></a>Help-Data16 atributo
 
-Esse atributo foi usado para o formato de arquivo de ajuda Win16 para o Exchange 4,0. Ele não é usado para nenhuma outra versão do Exchange.
+Esse atributo foi usado para o formato de arquivo de ajuda win16 para Exchange 4.0. Ele não é usado para nenhuma outra versão do Exchange.
 
 
 
 | Entrada | Valor |
 |-------------------|-------------------------------------------------------|
 | CN                | Help-Data16                                           |
-| LDAP-Display-Name | helpData16                                            |
+| Ldap-Display-Name | helpData16                                            |
 | Tamanho              | \-                                                    |
 | Privilégio de atualização  | Isso é usado pelo sistema.                           |
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.2.402                                |
-| System-ID-GUID    | 5fd424a7-1262-11d0-a060-00aa006c33ed                  |
-| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| System-Id-Guid    | 5fd424a7-1262-11d0-a060-00aa006c33ed                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -58,15 +58,15 @@ Esse atributo foi usado para o formato de arquivo de ajuda Win16 para o Exchange
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x803A                                                   |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| Tem valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | Falso                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Falso                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32768                                                    |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**Display-template**](c-displaytemplate.md)<br/> |
+| Classes usadas em        | [**Exibir modelo**](c-displaytemplate.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Esse atributo foi usado para o formato de arquivo de ajuda Win16 para o Exchange
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x803A                                                   |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| Tem valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | Falso                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Falso                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32768                                                    |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**Display-template**](c-displaytemplate.md)<br/> |
+| Classes usadas em        | [**Exibir modelo**](c-displaytemplate.md)<br/> |
 
 
 
@@ -100,10 +100,10 @@ Esse atributo foi usado para o formato de arquivo de ajuda Win16 para o Exchange
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x803A                                                   |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| Tem valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | Falso                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Falso                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32768                                                    |
 | Search-Flags           | 0x00000000                                               |
@@ -121,7 +121,7 @@ Esse atributo foi usado para o formato de arquivo de ajuda Win16 para o Exchange
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x803A                                                   |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| É de valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
 | No catálogo global      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
@@ -142,7 +142,7 @@ Esse atributo foi usado para o formato de arquivo de ajuda Win16 para o Exchange
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x803A                                                   |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| É de valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
 | No catálogo global      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
@@ -163,7 +163,7 @@ Esse atributo foi usado para o formato de arquivo de ajuda Win16 para o Exchange
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x803A                                                   |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| É de valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
 | No catálogo global      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |

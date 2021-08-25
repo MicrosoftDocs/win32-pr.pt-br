@@ -1,21 +1,21 @@
 ---
-description: O método SetQOSApplicationID define o identificador de QOS para o aplicativo.
+description: O método SetQOSApplicationID define o identificador QOS para o aplicativo.
 ms.assetid: e25cf749-6673-47eb-b843-4066f475b8f1
-title: 'Método ITQOSApplicationID:: SetQOSApplicationID (Ipmsp. h)'
+title: Método ITQOSApplicationID::SetQOSApplicationID (Ipmsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7893c8038fd7a47fc1978a20e5aba5cc8293d9a3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 10e7783efaf8ec30ea8f70fec634eefff0acd2f5df99453fc1958258a5a26597
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105753542"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119774586"
 ---
-# <a name="itqosapplicationidsetqosapplicationid-method"></a>Método ITQOSApplicationID:: SetQOSApplicationID
+# <a name="itqosapplicationidsetqosapplicationid-method"></a>Método ITQOSApplicationID::SetQOSApplicationID
 
-\[ Esse método não está disponível para uso no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
+\[Esse método não está disponível para uso no Windows Vista, Windows Server 2008 e versões subsequentes do sistema operacional. A API do Cliente RTC fornece funcionalidade semelhante.\]
 
-O método **SetQOSApplicationID** define o identificador de QoS para o aplicativo.
+O **método SetQOSApplicationID** define o identificador QOS para o aplicativo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -34,28 +34,28 @@ HRESULT SetQOSApplicationID(
 
 <dl> <dt>
 
-*pApplicationID* \[ no\]
+*pApplicationID* \[ Em\]
 </dt> <dd>
 
 Identificador exclusivo para o processo do aplicativo.
 
 </dd> <dt>
 
-*pApplicationGUID* \[ no\]
+*pApplicationGUID* \[ Em\]
 </dt> <dd>
 
 GUID do aplicativo.
 
 </dd> <dt>
 
-*pSubIDs* \[ no\]
+*pSubIDs* \[ Em\]
 </dt> <dd>
 
 Sub-IDs associado à chamada atual.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
@@ -76,9 +76,9 @@ Esse método pode retornar um desses valores.
 
 | Requisito | Valor |
 |-------------------------|--------------------------------------------------------------------------------------|
-| Versão da TAPI<br/> | Requer TAPI 3,1<br/>                                                         |
-| parâmetro<br/>       | <dl> <dt>Ipmsp. h</dt> </dl>   |
-| Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>  |
+| Versão do TAPI<br/> | Requer TAPI 3.1<br/>                                                         |
+| Cabeçalho<br/>       | <dl> <dt>Ipmsp.h</dt> </dl>   |
+| Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>  |
 | DLL<br/>          | <dl> <dt>Tapi3.dll</dt> </dl> |
 
 

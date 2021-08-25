@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: f7e1275e7a7ec894601dc67503e25e1fa82545f0
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 349aa7a5b9442076dad64212cca74241238b8c1ad32f890e6e07f84c3256019c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108093654"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119856566"
 ---
 # <a name="id3dxlineonresetdevice-method"></a>Método ID3DXLine:: OnResetDevice
 
@@ -59,7 +59,7 @@ Se o método for bem sucedido, o valor de retorno será S \_ OK. Se o método fa
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

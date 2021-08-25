@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_Policy_User_Result01_EnterpriseCloudPrint02
-description: A \_ classe Result01 EnterpriseCloudPrint02 do usuário da política de MDM \_ \_ \_ representa as políticas de impressão em nuvem disponíveis.
+title: MDM_Policy_User_Result01_EnterpriseCloudPrint02 classe
+description: A classe MDM \_ Policy \_ User \_ Result01 \_ EnterpriseCloudPrint02 representa as políticas de impressão de nuvem disponíveis.
 ms.assetid: cf830cb5-2477-4b21-9d98-9fa9989daa7f
 keywords:
-- Classe MDM_Policy_User_Result01_EnterpriseCloudPrint02
-- Classe MDM_Policy_User_Result01_EnterpriseCloudPrint02, descrita
+- MDM_Policy_User_Result01_EnterpriseCloudPrint02 classe
+- MDM_Policy_User_Result01_EnterpriseCloudPrint02, descrita
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2dfa75d102da3a61ff0a9f2094d31e0ba5b4abca
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 233bd4dcabb827a064126852768992f5126446aabe5907376434216e4fb38798
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455203"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119874986"
 ---
-# <a name="mdm_policy_user_result01_enterprisecloudprint02-class"></a>Result01 de usuário de política de MDM- \_ \_ \_ \_ classe EnterpriseCloudPrint02
+# <a name="mdm_policy_user_result01_enterprisecloudprint02-class"></a>Classe MDM \_ Policy \_ User \_ Result01 \_ EnterpriseCloudPrint02
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto pré-lançado, que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-A \_ classe Result01 EnterpriseCloudPrint02 do usuário da política de MDM \_ \_ \_ representa as políticas de impressão em nuvem disponíveis.
+A classe MDM \_ Policy \_ User \_ Result01 \_ EnterpriseCloudPrint02 representa as políticas de impressão de nuvem disponíveis.
 
 A sintaxe a seguir é simplificada do código MOF e inclui todas as propriedades herdadas.
 
@@ -51,13 +51,13 @@ class MDM_Policy_User_Result01_EnterpriseCloudPrint02
 
 ## <a name="members"></a>Membros
 
-A **classe \_ \_ \_ Result01 \_ EnterpriseCloudPrint02 do usuário da política MDM** tem estes tipos de membros:
+A **classe MDM \_ Policy User \_ \_ Result01 \_ EnterpriseCloudPrint02** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A **classe \_ \_ \_ Result01 \_ EnterpriseCloudPrint02 do usuário da política MDM** tem essas propriedades.
+A **classe User \_ \_ \_ Result01 \_ EnterpriseCloudPrint02 da Política de MDM** tem essas propriedades.
 
 <dl> <dt>
 
@@ -67,7 +67,7 @@ A **classe \_ \_ \_ Result01 \_ EnterpriseCloudPrint02 do usuário da política 
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -78,7 +78,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -89,7 +89,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -100,7 +100,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -111,7 +111,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -130,18 +130,18 @@ Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
 
 </dd> <dt>
 
-[MopriaDiscoveryResourceId](/windows/client-management/mdm/policy-csp-enterprisecloudprint#enterprisecloudprint-mopriadiscoveryresourceid)
+[QueriaDiscoveryResourceId](/windows/client-management/mdm/policy-csp-enterprisecloudprint#enterprisecloudprint-mopriadiscoveryresourceid)
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -161,10 +161,10 @@ Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                      |
-| Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Namespace<br/>                | \\Cimv2 \\ mdm \\ dmmap raiz<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 

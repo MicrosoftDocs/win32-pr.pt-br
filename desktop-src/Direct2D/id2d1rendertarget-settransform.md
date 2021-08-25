@@ -1,5 +1,5 @@
 ---
-title: Métodos SetTransform ID2D1RenderTarget
+title: Métodos ID2D1RenderTarget SetTransform
 description: Aplica a transformação especificada ao destino de renderização, substituindo a transformação existente. Todas as operações de desenho subsequentes ocorrem no espaço transformado.
 ms.assetid: 04799366-6458-40ff-a2fb-5d227eab041d
 keywords:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
-ms.openlocfilehash: 8310bf9e5c97beb3ea3cf3b2a9a513f606079a18
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f23ffcd8d64df02b0be2287a33eff63a6a680200c0e051a15c77958dafd81438
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105756003"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119873956"
 ---
-# <a name="id2d1rendertargetsettransform-methods"></a>Métodos ID2D1RenderTarget:: SetTransform
+# <a name="id2d1rendertargetsettransform-methods"></a>Métodos ID2D1RenderTarget::SetTransform
 
 Aplica a transformação especificada ao destino de renderização, substituindo a transformação existente. Todas as operações de desenho subsequentes ocorrem no espaço transformado.
 
@@ -30,14 +30,14 @@ Aplica a transformação especificada ao destino de renderização, substituindo
 
 | Método                                                                                              | Descrição                                                                                                                                                                |
 |:----------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**SetTransform (D2D1 \_ Matrix \_ 3X2 \_ F&)**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-settransform(constd2d1_matrix_3x2_f_))  | Aplica a transformação especificada ao destino de renderização, substituindo a transformação existente. Todas as operações de desenho subsequentes ocorrem no espaço transformado. <br/> |
-| [**SetTransform ( \_ matriz d2d1 \_ 3x2 \_ F \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-settransform(constd2d1_matrix_3x2_f)) | Aplica a transformação especificada ao destino de renderização, substituindo a transformação existente. Todas as operações de desenho subsequentes ocorrem no espaço transformado.<br/>  |
+| [**SetTransform(D2D1 \_ MATRIX \_ 3X2 \_ F&)**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-settransform(constd2d1_matrix_3x2_f_))  | Aplica a transformação especificada ao destino de renderização, substituindo a transformação existente. Todas as operações de desenho subsequentes ocorrem no espaço transformado. <br/> |
+| [**SetTransform(D2D1 \_ MATRIX \_ 3X2 \_ F \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-settransform(constd2d1_matrix_3x2_f)) | Aplica a transformação especificada ao destino de renderização, substituindo a transformação existente. Todas as operações de desenho subsequentes ocorrem no espaço transformado.<br/>  |
 
 
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir usa o método **SetTransform** para aplicar uma rotação ao destino de renderização. Para obter o exemplo completo, consulte [como girar um objeto](how-to-rotate.md).
+O exemplo a seguir usa o **método SetTransform** para aplicar uma rotação ao destino de renderização. Para ver o exemplo completo, [consulte Como girar um objeto](how-to-rotate.md).
 
 
 ```C++
@@ -51,7 +51,7 @@ m_pRenderTarget->SetTransform(
 
 
 
-Para obter exemplos adicionais mostrando como transformar um destino de renderização, consulte [como dimensionar um objeto](how-to-scale.md), [como distorcer um objeto](how-to-skew.md)e [como converter um objeto](how-to-translate.md).
+Para obter exemplos adicionais que mostram como transformar um destino de renderização, consulte [How to Scale an Object](how-to-scale.md), How to Skew an [Object](how-to-skew.md)e How to Translate [an Object](how-to-translate.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,7 +59,7 @@ Para obter exemplos adicionais mostrando como transformar um destino de renderiz
 
 | Requisito | Valor |
 |--------------------|-------------------------------------------------------------------------------------|
-| Biblioteca<br/> | <dl> <dt>D2d1. lib</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D2d1.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>D2d1.dll</dt> </dl> |
 
 
@@ -71,7 +71,7 @@ Para obter exemplos adicionais mostrando como transformar um destino de renderiz
 [**ID2D1RenderTarget**](/windows/win32/api/d2d1/nn-d2d1-id2d1rendertarget)
 </dt> <dt>
 
-[Visão geral das transformações](direct2d-transforms-overview.md)
+[Visão geral de transformaçãos](direct2d-transforms-overview.md)
 </dt> <dt>
 
 [Como girar um objeto](how-to-rotate.md)
@@ -86,7 +86,7 @@ Para obter exemplos adicionais mostrando como transformar um destino de renderiz
 [Como converter um objeto](how-to-translate.md)
 </dt> <dt>
 
-[Como aplicar várias transformações a um objeto](how-to-apply-multiple-transforms.md)
+[Como aplicar várias transformaçãos a um objeto](how-to-apply-multiple-transforms.md)
 </dt> </dl>
 
  

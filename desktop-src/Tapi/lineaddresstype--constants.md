@@ -1,19 +1,19 @@
 ---
-description: O tipo de endereço identifica o formato de endereço, como número de telefone padrão ou endereço de email. Somente os aplicativos que negociam a TAPI versão 3,0 ou superior podem usar tipos de endereço.
+description: O tipo de endereço identifica o formato de endereço, como número de telefone padrão ou endereço de email. Somente aplicativos que negociam TAPI versão 3.0 ou superior podem usar tipos de endereço.
 ms.assetid: 2c32eda1-e510-40eb-ae75-fc7b9e9953cd
-title: Constantes de LINEADDRESSTYPE_ (TAPI. h)
+title: LINEADDRESSTYPE_ constantes (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c6d0a46eff2a7a0c38fa17aed4b831ef8701c565
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f6555ff934ffb8c1b40b8f35d279a2071cad32b80b754af19672108f5e318a17
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105758403"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119873326"
 ---
-# <a name="lineaddresstype_-constants"></a>\_Constantes LINEADDRESSTYPE
+# <a name="lineaddresstype_-constants"></a>Constantes LINEADDRESSTYPE \_
 
-O tipo de endereço identifica o formato de endereço, como número de telefone padrão ou endereço de email. Somente os aplicativos que negociam a TAPI versão 3,0 ou superior podem usar tipos de endereço.
+O tipo de endereço identifica o formato de endereço, como número de telefone padrão ou endereço de email. Somente aplicativos que negociam TAPI versão 3.0 ou superior podem usar tipos de endereço.
 
 <dl> <dt>
 
@@ -30,7 +30,7 @@ O tipo de endereço é um número de telefone padrão.
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEADDRESSTYPE_SDP"></span><span id="lineaddresstype_sdp"></span>**SDP de LINEADDRESSTYPE \_**
+<span id="LINEADDRESSTYPE_SDP"></span><span id="lineaddresstype_sdp"></span>**LINEADDRESSTYPE \_ SDP**
 </dt> <dd> <dl> <dt>
 
 0x00000002
@@ -38,12 +38,12 @@ O tipo de endereço é um número de telefone padrão.
 
 
 
-O tipo de endereço é a conferência SDP (Session description Protocol).
+O tipo de endereço é a conferência SDP (Protocolo de Descrição da Sessão).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEADDRESSTYPE_EMAILNAME"></span><span id="lineaddresstype_emailname"></span>**LINEADDRESSTYPE \_ EmailName**
+<span id="LINEADDRESSTYPE_EMAILNAME"></span><span id="lineaddresstype_emailname"></span>**LINEADDRESSTYPE \_ EMAILNAME**
 </dt> <dd> <dl> <dt>
 
 0x00000004
@@ -51,12 +51,12 @@ O tipo de endereço é a conferência SDP (Session description Protocol).
 
 
 
-O tipo de endereço é um nome de email.
+Tipo de endereço é um nome de email.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEADDRESSTYPE_DOMAINNAME"></span><span id="lineaddresstype_domainname"></span>**LINEADDRESSTYPE \_ nome_do_domínio**
+<span id="LINEADDRESSTYPE_DOMAINNAME"></span><span id="lineaddresstype_domainname"></span>**LINEADDRESSTYPE \_ DOMAINNAME**
 </dt> <dd> <dl> <dt>
 
 0x00000008
@@ -69,7 +69,7 @@ O tipo de endereço é um nome de domínio.
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEADDRESSTYPE_IPADDRESS"></span><span id="lineaddresstype_ipaddress"></span>**\_IPAddress LINEADDRESSTYPE**
+<span id="LINEADDRESSTYPE_IPADDRESS"></span><span id="lineaddresstype_ipaddress"></span>**LINEADDRESSTYPE \_ IPADDRESS**
 </dt> <dd> <dl> <dt>
 
 0x00000010
@@ -88,8 +88,8 @@ O tipo de endereço é um endereço IP.
 
 | Requisito | Valor |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versão da TAPI<br/> | Requer TAPI 3,0 ou posterior<br/>                                             |
-| parâmetro<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versão do TAPI<br/> | Requer TAPI 3.0 ou posterior<br/>                                             |
+| Cabeçalho<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

@@ -1,56 +1,56 @@
 ---
-description: Os monitores de rede chamam a função RecognizeFrame de um analisador para determinar se o analisador reconhece os dados não reivindicados de um quadro.
+description: Monitores de Rede chama a função RecognizeFrame de um analisador para determinar que o analisador reconhece os dados não confirmados de um quadro.
 ms.assetid: 6d0574da-f0ec-4ed9-bfb0-023dff2ac6fe
 title: Implementando RecognizeFrame
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d970eee80a04168b3fa06b117c2c219c506da7ea
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 39d3f9a79325c0c75a7a83cfb99a34ff3de1f073573dee13d39a846b575f6285
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297438"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119890487"
 ---
 # <a name="implementing-recognizeframe"></a>Implementando RecognizeFrame
 
-Os monitores de rede chamam a função [**RecognizeFrame**](recognizeframe.md) de um analisador para determinar se o analisador reconhece os dados não reivindicados de um quadro. Os dados não reivindicados podem estar no início de um quadro, mas normalmente os dados não reivindicados estão localizados no meio de um quadro. A ilustração a seguir mostra os dados não reivindicados localizados no meio de um quadro.
+Monitores de Rede chama a [**função RecognizeFrame**](recognizeframe.md) de um analisador para determinar que o analisador reconhece os dados não confirmados de um quadro. Os dados não confirmados podem estar no início de um quadro, mas normalmente, os dados não confirmados estão localizados no meio de um quadro. A ilustração a seguir mostra dados não confirmados localizados no meio de um quadro.
 
-![dados não reivindicados localizados no meio de um quadro](images/recognizeframe1.png)
+![dados não confirmados localizados no meio de um quadro](images/recognizeframe1.png)
 
-Monitor de Rede fornece as seguintes informações ao chamar a função [**RecognizeFrame**](recognizeframe.md) :
+Monitor de Rede fornece as seguintes informações quando chama a [**função RecognizeFrame:**](recognizeframe.md)
 
--   Um identificador para o quadro.
+-   Um alça para o quadro.
 -   Um ponteiro para o início do quadro.
--   Um ponteiro para o início dos dados não reivindicados.
+-   Um ponteiro para o início dos dados não confirmados.
 -   O valor MAC do primeiro protocolo no quadro.
--   O número de bytes nos dados não reivindicados; ou seja, os bytes restantes no quadro.
--   Um identificador para o protocolo anterior.
+-   O número de bytes nos dados não confirmados; ou seja, os bytes restantes no quadro.
+-   Um alça para o protocolo anterior.
 -   O deslocamento do protocolo anterior.
 
-Quando a DLL do analisador determina que os dados não reivindicados começam com o protocolo do analisador, a DLL do analisador determina o local em que o próximo protocolo começa e o seguinte protocolo. A DLL do analisador funciona nas seguintes maneiras condicionais:
+Quando a DLL do analisador determina que os dados não confirmados começam com o protocolo do analisador, a DLL do analisador determina onde o próximo protocolo é iniciado e qual protocolo segue. A DLL do analisador funciona das seguintes maneiras condicionais:
 
--   Se a DLL do analisador reconhecer dados não reivindicados, a DLL do analisador definirá o parâmetro *pProtocolStatus* e retornará um ponteiro para o próximo protocolo no quadro, ou **NULL**. **NULL** será retornado se o protocolo atual for o último protocolo no quadro.
--   Se a DLL do analisador reconhecer dados não reivindicados e identificar o protocolo a seguir (das informações fornecidas no protocolo), a DLL do analisador retornará um ponteiro para o identificador do próximo protocolo no parâmetro *phNextProtocol* da função.
--   Se a DLL do analisador não reconhecer dados não reivindicados, a DLL do analisador retornará o ponteiro para o início de dados não reivindicados e Monitor de Rede continuará tentando analisar os dados não reivindicados.
+-   Se a DLL do analisador reconhecer dados não confirmados, a DLL do analisador define o parâmetro *pProtocolStatus* e retorna um ponteiro para o próximo protocolo no quadro ou **NULL.** **NULL** será retornado se o protocolo atual for o último protocolo no quadro.
+-   Se a DLL do analisador reconhecer dados não confirmados e identificar o protocolo a seguir (das informações fornecidas no protocolo), a DLL do analisador retornará um ponteiro para o identificador do próximo protocolo no parâmetro *phNextProtocol* da função.
+-   Se a DLL do analisador não reconhecer dados não confirmados, a DLL do analisador retornará o ponteiro para o início dos dados não Monitor de Rede continuará tentando analisar os dados não confirmados.
 
 **Para implementar o RecognizeFrame**
 
 1.  Teste para determinar se você reconhece o protocolo.
-2.  Se você reconhece dados não reivindicados e sabe qual protocolo segue, defina *pProtocolStatus* como protocolo do \_ próximo protocolo do status \_ \_ , defina *phNextProtocol* como um ponteiro que aponte para o identificador do próximo protocolo e, em seguida, retorne um ponteiro para o próximo protocolo.
+2.  Se você reconhecer dados não confirmados e sabe qual protocolo segue, desmarque *pProtocolStatus* como PROTOCOLO STATUS NEXT PROTOCOL, desmarque \_ \_ \_ *phNextProtocol* como um ponteiro que aponta para o ponteiro para o próximo protocolo e, em seguida, retorne um ponteiro para o próximo protocolo.
 
     –ou–
 
-    Se você reconhece dados não reivindicados e não sabe qual protocolo segue, defina *pProtocolStatus* para status de protocolo \_ \_ reconhecido e, em seguida, retorne um ponteiro para o próximo protocolo.
+    Se você reconhecer dados não confirmados e não sabe qual protocolo segue, desmarque *pProtocolStatus* como STATUS DE PROTOCOLO RECONHECIDO e, em seguida, retorne um ponteiro para o \_ \_ próximo protocolo.
 
     –ou–
 
-    Se você reconhece dados não reivindicados e seu protocolo é o último protocolo em um quadro, defina *pProtocolStatus* para status de protocolo \_ \_ declarado e, em seguida, retorne **nulo**.
+    Se você reconhecer dados não reivindicados e seu protocolo for o último protocolo em um quadro, demarque *pProtocolStatus* como STATUS DO PROTOCOLO \_ REIVINDICADO e, em seguida, retorne \_ **NULL**.
 
     –ou–
 
-    Se você não reconhecer dados não reivindicados, defina *pProtocolStatus* como status de \_ protocolo \_ não \_ reconhecido e, em seguida, retorne o ponteiro que é passado para você em *pProtocol*.
+    Se você não reconhecer dados não confirmados, demarque *pProtocolStatus* como STATUS DE PROTOCOLO NÃO RECONHECIDO e, em seguida, retorne o ponteiro que é passado para você \_ \_ em \_ *pProtocol*.
 
-Veja a seguir uma implementação básica do [**RecognizeFrame**](recognizeframe.md).
+A seguir está uma implementação básica do [**RecognizeFrame.**](recognizeframe.md)
 
 ``` syntax
 #include <windows.h>

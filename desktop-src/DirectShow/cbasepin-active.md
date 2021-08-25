@@ -1,7 +1,7 @@
 ---
-description: Método CBasePin. active – o método ativo notifica o PIN de que o filtro está ativo agora.
+description: Método CBasePin.Active – o método Ativo notifica o pino de que o filtro agora está ativo.
 ms.assetid: 1054f8cf-a5fb-4de6-abf2-c3740ce47787
-title: Método CBasePin. Active (Amfilter. h)
+title: Método CBasePin.Active (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8ccee76dbf89cf82abcd8d4758305ddec91f1afa
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: a1d651c58693789945af34d266aa8541679d1226d655530b90c542c8b0fc88b0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108096096"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119872536"
 ---
-# <a name="cbasepinactive-method"></a>Método CBasePin. active
+# <a name="cbasepinactive-method"></a>Método CBasePin.Active
 
-O `Active` método notifica o PIN de que o filtro está ativo agora.
+O `Active` método notifica o pino de que o filtro agora está ativo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,11 +46,11 @@ Retorna S \_ OK.
 
 ## <a name="remarks"></a>Comentários
 
-Quando o filtro vai de parado para em pausa, a classe [**CBaseFilter**](cbasefilter.md) chama esse método em todos os Pins conectados do filtro.
+Quando o filtro passa de parado para pausado, a [**classe CBaseFilter**](cbasefilter.md) chama esse método em todos os pinos conectados do filtro.
 
-Esse método não faz nada na classe base. Classes derivadas podem substituir esse método; por exemplo, um PIN pode confirmar os alocadores ou obter recursos de hardware.
+Esse método não faz nada na classe base. Classes derivadas podem substituir esse método; por exemplo, um pin pode comprometer alocadores ou obter recursos de hardware.
 
-O estado interno do Gerenciador de grafo de filtro não é atualizado até que essa função de membro retorne, portanto, não teste o estado desse método.
+O estado interno do gerenciador de grafo de filtro não é atualizado até que essa função membro retorne, portanto, não teste o estado desse método.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -58,12 +58,12 @@ O estado interno do Gerenciador de grafo de filtro não é atualizado até que e
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amfilter.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -3,17 +3,17 @@ title: Referência de captura de vídeo
 description: Referência de captura de vídeo
 ms.assetid: 5356c575-2a59-4459-b4eb-76967deb6877
 keywords:
-- Video for Windows (VFW), referência de captura de vídeo
+- vídeo para Windows (VFW), referência de captura de vídeo
 - VFW (vídeo para Windows), referência de captura de vídeo
 - AVICap, referência
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cef19834e244f6070a1d8bb3383dcac017e4d161
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 166bdcf06e700023a197334b0e63f612398485affe21dc9ffbc6e7ac0800926a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005116"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119804306"
 ---
 # <a name="video-capture-reference"></a>Referência de captura de vídeo
 
@@ -27,7 +27,7 @@ Esta seção descreve as funções, estruturas, mensagens e macros associadas à
 -   [**\_sequência de Cap do WM \_**](wm-cap-sequence.md)
 -   [**\_parada da Cap do WM \_**](wm-cap-stop.md)
 
-## <a name="capture-windows"></a>Capturar janelas
+## <a name="capture-windows"></a>Capturar Windows
 
 -   [**CAPSTATUS**](/windows/win32/api/vfw/ns-vfw-capstatus)
 -   [**capGetDriverDescription**](/windows/desktop/api/Vfw/nf-vfw-capgetdriverdescriptiona)
@@ -145,9 +145,9 @@ Esta seção descreve as funções, estruturas, mensagens e macros associadas à
 [Captura de vídeo](video-capture.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

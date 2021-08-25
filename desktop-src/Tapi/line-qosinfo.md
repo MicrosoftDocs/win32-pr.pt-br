@@ -1,19 +1,19 @@
 ---
-description: A mensagem TSPI LINE \_ QOSINFO faz com que a TAPI dispare um evento de QoS. Consulte ITQOSEvent para obter informações adicionais.
+description: A mensagem \_ QOSINFO TSPI LINE faz com que a TAPI a fire um evento QOS. Consulte ITQOSEvent para obter informações adicionais.
 ms.assetid: b2844d12-c524-42ab-aeb9-8daf4e07a436
-title: Mensagem de LINE_QOSINFO (TSPI. h)
+title: LINE_QOSINFO mensagem (Tspi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d35ff19601ab6acd9a3d8e8aebf1e59b06a4f17e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9f0e6273eb31447f0e0c9543dfa191a25869fa08f05be8a5c639ceb101deff47
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105783364"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119873316"
 ---
-# <a name="line_qosinfo-message"></a>Mensagem de QOSINFO de linha \_
+# <a name="line_qosinfo-message"></a>Mensagem \_ LINE QOSINFO
 
-A mensagem TSPI **line \_ QOSINFO** faz com que a TAPI dispare um evento de QoS. Consulte [**ITQOSEvent**](/windows/win32/api/tapi3if/nn-tapi3if-itqosevent) para obter informações adicionais.
+A mensagem **\_ QOSINFO TSPI LINE** faz com que a TAPI a fire um evento QOS. Consulte [**ITQOSEvent para**](/windows/win32/api/tapi3if/nn-tapi3if-itqosevent) obter informações adicionais.
 
 
 ```C++
@@ -29,35 +29,35 @@ A mensagem TSPI **line \_ QOSINFO** faz com que a TAPI dispare um evento de QoS.
 *htLine* 
 </dt> <dd>
 
-O identificador TAPI para a linha.
+O alça tapi para a linha.
 
 </dd> <dt>
 
-*htCall* 
+*Htcall* 
 </dt> <dd>
 
-O identificador TAPI para a chamada.
+O alça tapi para a chamada.
 
 </dd> <dt>
 
 *dwMsg* 
 </dt> <dd>
 
-A linha de valor \_ QOSINFO.
+O valor LINE \_ QOSINFO.
 
 </dd> <dt>
 
-*dwParam1* 
+*Dwparam1* 
 </dt> <dd>
 
-Um membro do enumerador de [**\_ eventos de QoS**](/windows/win32/api/tapi3if/ne-tapi3if-qos_event) que identifica o tipo de evento.
+Um membro do [**enumerador \_ QOS EVENT**](/windows/win32/api/tapi3if/ne-tapi3if-qos_event) que identifica o tipo de evento.
 
 </dd> <dt>
 
-*dwParam2* 
+*Dwparam2* 
 </dt> <dd>
 
-Uma constante de [tipo de mídia](./tapiprotocol--constants.md) que identifica a mídia da chamada associada a esse evento.
+Uma [constante de tipo](./tapiprotocol--constants.md) de mídia que identifica a mídia da chamada associada a esse evento.
 
 </dd> <dt>
 
@@ -74,8 +74,8 @@ Não utilizado.
 
 | Requisito | Valor |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versão da TAPI<br/> | Requer TAPI 2,2<br/>                                                      |
-| parâmetro<br/>       | <dl> <dt>TSPI. h</dt> </dl> |
+| Versão do TAPI<br/> | Requer TAPI 2.2<br/>                                                      |
+| Cabeçalho<br/>       | <dl> <dt>Tspi.h</dt> </dl> |
 
 
 
@@ -83,7 +83,7 @@ Não utilizado.
 
 <dl> <dt>
 
-[**evento de QOS \_**](/windows/win32/api/tapi3if/ne-tapi3if-qos_event)
+[**EVENTO \_ QOS**](/windows/win32/api/tapi3if/ne-tapi3if-qos_event)
 </dt> <dt>
 
 [**ITQOSEvent**](/windows/win32/api/tapi3if/nn-tapi3if-itqosevent)

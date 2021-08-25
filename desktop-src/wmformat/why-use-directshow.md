@@ -1,46 +1,46 @@
 ---
-title: Por que usar o DirectShow
-description: Por que usar o DirectShow
+title: Por que usar DirectShow
+description: Por que usar DirectShow
 ms.assetid: 0ab33526-73d0-425e-a03f-29c74555f578
 keywords:
-- SDK do Windows Media Format, DirectShow
-- SDK do Windows Media Format, hardware
-- SDK do Windows Media Format, Windows Driver Model (WDM)
+- Windows SDK de formato de mídia, DirectShow
+- Windows SDK de Formato de Mídia, hardware
+- Windows SDK de formato de mídia,Windows modelo de driver (WDM)
 - ASF (Advanced Systems Format), DirectShow
 - ASF (formato de sistemas avançados), DirectShow
 - ASF (Advanced Systems Format), hardware
-- ASF (formato de sistemas avançados), hardware
-- ASF (Advanced Systems Format), Windows Driver Model (WDM)
-- ASF (formato de sistemas avançados), Windows Driver Model (WDM)
+- ASF (Formato de Sistemas Avançados), hardware
+- ASF (Advanced Systems Format), Windows WDM (Driver Model)
+- ASF (formato de sistemas avançados), Windows WDM (Driver Model)
 - DirectShow, sobre
 - DirectShow, hardware
-- DirectShow, Windows Driver Model (WDM)
-- Windows Driver Model (WDM)
-- WDM (Windows Driver Model)
+- DirectShow,Windows modelo de driver (WDM)
+- Windows Modelo de driver (WDM)
+- WDM (Windows driver)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f90fa1de01a7b136b938f9b09cc7fb2b3c229fad
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 8a5edce48be7a806011ba59ab5a2c5328840a18399f6f7eea65d649d52c62402
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103635859"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119839416"
 ---
-# <a name="why-use-directshow"></a>Por que usar o DirectShow?
+# <a name="why-use-directshow"></a>Por que usar DirectShow?
 
-Há dois motivos principais pelos quais um aplicativo pode usar o DirectShow em vez do SDK do Windows Media Format diretamente: para a conveniência da arquitetura de streaming do DirectShow e para acesso ao hardware.
+Há dois motivos principais pelos quais um aplicativo pode usar o DirectShow em vez do SDK de Formato de Mídia do Windows diretamente: para a conveniência da arquitetura de streaming DirectShow e para acesso ao hardware.
 
 ## <a name="convenience"></a>Conveniência
 
-Com a arquitetura de streaming do DirectShow, é necessário apenas algumas chamadas de método para reproduzir arquivos de vídeo do Windows Media Audio ou Windows Media. A criação de arquivos também é simplificada. Você simplesmente especifica um perfil usando a interface **IConfigAsfWriter** no filtro, e o DirectShow carrega automaticamente os componentes necessários para renderizar ou gravar os fluxos e fornece os mecanismos para transferir e sincronizar o fluxo de dados de mídia. O DirectShow é especialmente útil ao converter o conteúdo de formatos variados no formato de mídia do Windows. Você pode criar gráficos de filtro do DirectShow que decodifiquem uma ampla variedade de tipos de arquivo e compactação e, em seguida, alimentar os fluxos decodificados no filtro de [gravador ASF do WM](wm-asf-writer-filter.md) . Por comparação, o exemplo de UncompAVItoWMV neste SDK funciona apenas com arquivos AVI não compactados. Fluxos de texto e fluxos de dados arbitrários também podem ser criados e/ou renderizados por meio do DirectShow, mas isso pode exigir que você crie filtros personalizados do DirectShow para processar esses fluxos.
+Com DirectShow de streaming, são necessários apenas algumas chamadas de método para reproduzir Windows áudio de mídia ou Windows de vídeo de mídia. A criação de arquivos também é simplificada. Basta especificar um perfil usando a interface **IConfigAsfWriter** no filtro e o DirectShow carregar automaticamente os componentes necessários para renderizar ou escrever os fluxos e fornece os mecanismos para transferir e sincronizar o fluxo de dados de mídia. DirectShow é especialmente útil ao converter conteúdo de formatos variados em Windows Formato de Mídia. Você pode criar DirectShow de filtro que decodificam uma ampla variedade de tipos de arquivo e compactação e, em seguida, alimentar os fluxos decodificados no filtro [Wm ASF Writer.](wm-asf-writer-filter.md) Por comparação, o exemplo UncompAVItoWMV neste SDK funciona apenas com arquivos AVI descompactados. Fluxos de texto e fluxos de dados arbitrários também podem ser criados e/ou renderizados por meio de DirectShow, mas isso pode exigir que você crie filtros de DirectShow personalizados para processar esses fluxos.
 
 ## <a name="access-to-hardware"></a>Acesso ao hardware
 
-O DirectShow é a única maneira de o código do aplicativo acessar dispositivos de hardware baseados em Windows Driver Model (WDM), como câmeras de vídeo 1394, sintonizadores de TV e webcams USB. Se seu aplicativo precisar capturar dados diretamente de um dispositivo de hardware baseado em WDM e transcodificar para o Windows Media Format, e o SDK do Windows Media Encoder não atender às suas necessidades, o DirectShow será a única alternativa. O DirectShow também pode ser usado para acessar dispositivos herdados com base em vídeo para Windows.
+DirectShow é a única maneira de o código do aplicativo acessar dispositivos de hardware baseados em WDM (modelo de driver) baseados em Windows, como câmeras DV 1394, tuners de TV e webcams USB. Se o aplicativo precisar capturar dados diretamente de um dispositivo de hardware baseado em WDM e transcodificá-los para o Formato de Mídia do Windows e o SDK do Codificador de Mídia do Windows não atender às suas necessidades, DirectShow será a única alternativa. DirectShow também pode ser usado para acessar dispositivos herdados com base em Vídeo para Windows.
 
- 
+ 
 
- 
+ 
 
 
 
