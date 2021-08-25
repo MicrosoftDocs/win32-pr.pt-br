@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 61c8f2c88fc7d0f070bce55f43e1ca2aad553c59
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 58a0ef3af6f0496773561d65e37d661ed70b8e1770828d2410820b095362ec42
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103836920"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119891616"
 ---
 # <a name="esenttempfileopenerrorexception-constructor"></a>Construtor EsentTempFileOpenErrorException
 
 Inicializa uma nova instância da classe EsentTempFileOpenErrorException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentTempFileOpenErrorException()
 
 [Classe EsentTempFileOpenErrorException](./esenttempfileopenerrorexception-class.md)
 
-[Membros do EsentTempFileOpenErrorException](./esenttempfileopenerrorexception-members.md)
+[Membros EsentTempFileOpenErrorException](./esenttempfileopenerrorexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

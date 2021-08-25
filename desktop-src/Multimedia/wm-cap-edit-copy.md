@@ -3,7 +3,7 @@ title: Mensagem de WM_CAP_EDIT_COPY (VFW. h)
 description: A mensagem de cópia de edição da Cap do WM \_ \_ \_ copia o conteúdo do buffer de quadros de vídeo e a paleta associada para a área de transferência. Você pode enviar essa mensagem explicitamente ou usando a macro capEditCopy.
 ms.assetid: 16f1dd7d-af4d-4096-add8-eec5f0a0607f
 keywords:
-- Multimídia do Windows de mensagem WM_CAP_EDIT_COPY
+- mensagem de WM_CAP_EDIT_COPY Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bb81c21fc10846adaa113c02b6250bbb35cfff50
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e944273ff8519aefa52803b2072199760a480e0fcb2a76dd314b578dcbcfdf4d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085896"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119892076"
 ---
 # <a name="wm_cap_edit_copy-message"></a>\_Mensagem de \_ cópia de edição do WM Cap \_
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 8ce81fbfe0a116c309ce7650933575112dbf05f8
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f7361197c1f6ddf97de41ac01615ebab664ce87bdc8667e922c4c87a08357cfa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105752332"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119893286"
 ---
 # <a name="id3dxskininfogetnumbones-method"></a>Método ID3DXSkinInfo:: GetNumBones
 
@@ -38,7 +38,7 @@ DWORD GetNumBones();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
