@@ -1,7 +1,7 @@
 ---
-description: 'O método EndFlush termina uma operação de liberação. Esse método substitui o método CBaseInputPin:: EndFlush.'
+description: O método EndFlush encerra uma operação de liberação. Esse método substitui o método CBaseInputPin::EndFlush.
 ms.assetid: 1955a923-e912-44bd-b032-3689e5810d6f
-title: Método CRendererInputPin. EndFlush (Renbase. h)
+title: Método CRendererInputPin.EndFlush (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e5d2bf23da1c3b501a7b53370df70e9cf3716608
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 02d52c28d224ff39b5dbec8681c1ac7a87e04507217a8f16ee39bf2a433ae914
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751684"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119908356"
 ---
-# <a name="crendererinputpinendflush-method"></a>Método CRendererInputPin. EndFlush
+# <a name="crendererinputpinendflush-method"></a>Método CRendererInputPin.EndFlush
 
-O `EndFlush` método encerra uma operação de liberação. Esse método substitui o método [**CBaseInputPin:: EndFlush**](cbaseinputpin-endflush.md) .
+O `EndFlush` método encerra uma operação de liberação. Esse método substitui o [**método CBaseInputPin::EndFlush.**](cbaseinputpin-endflush.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,9 +40,9 @@ HRESULT EndFlush();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor **HRESULT** .
+Retorna um **valor HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Retorna um valor **HRESULT** .
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Renbase. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Renbase.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

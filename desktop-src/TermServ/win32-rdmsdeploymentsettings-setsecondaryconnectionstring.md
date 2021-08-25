@@ -1,12 +1,12 @@
 ---
-title: Método SetSecondaryConnectionString da classe Win32_RDMSDeploymentSettings
+title: Método SetSecondaryConnectionString da classe Win32_RDMSDeploymentSettings dados
 description: Define a cadeia de conexão secundária do banco de dados de nível de implantação.
 ms.assetid: 154c495e-564e-4d90-a4ff-de683d41aa73
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota do método SetSecondaryConnectionString
-- Método SetSecondaryConnectionString Serviços de Área de Trabalho Remota, classe Win32_RDMSDeploymentSettings
-- Classe Win32_RDMSDeploymentSettings Serviços de Área de Trabalho Remota, método SetSecondaryConnectionString
+- Método SetSecondaryConnectionString Serviços de Área de Trabalho Remota
+- Método SetSecondaryConnectionString Serviços de Área de Trabalho Remota , Win32_RDMSDeploymentSettings classe
+- Win32_RDMSDeploymentSettings classe Serviços de Área de Trabalho Remota , método SetSecondaryConnectionString
 topic_type:
 - apiref
 api_name:
@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8f8060a6f2676b5599bf44672e79ebf48e64e354
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: aeb43f0317f4a31733cf0c0f7b5b578234e14b50dc8976df096e5b9b0b3426d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644550"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119868246"
 ---
 # <a name="setsecondaryconnectionstring-method-of-the-win32_rdmsdeploymentsettings-class"></a>Método SetSecondaryConnectionString da classe Win32 \_ RDMSDeploymentSettings
 
@@ -43,14 +43,14 @@ uint32 SetSecondaryConnectionString(
 
 <dl> <dt>
 
-*SecondaryConnectionString* \[ no\]
+*SecondaryConnectionString* \[ Em\]
 </dt> <dd>
 
 A cadeia de conexão a ser definida
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI.
 
@@ -62,8 +62,8 @@ Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI.
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                                   |
 | Servidor mínimo com suporte<br/> | Windows Server 2016<br/>                                                              |
-| Namespace<br/>                | \\RDMs cimv2 \\ raiz<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Namespace<br/>                | Raiz \\ cimv2 \\ rdms<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -72,7 +72,7 @@ Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI.
 
 <dl> <dt>
 
-[**\_RDMSDeploymentSettings Win32**](win32-rdmsdeploymentsettings.md)
+[**Win32 \_ RDMSDeploymentSettings**](win32-rdmsdeploymentsettings.md)
 </dt> </dl>
 
  

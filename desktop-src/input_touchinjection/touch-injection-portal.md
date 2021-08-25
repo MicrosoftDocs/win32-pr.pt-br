@@ -1,6 +1,6 @@
 ---
 title: Injeção de toque
-description: Os tópicos nesta seção fornecem uma visão geral da injeção de toque no Windows 8. A injeção de toque permite que os desenvolvedores do Windows simulem por programação a entrada por toque.
+description: Os tópicos nesta seção fornecem uma visão geral da Injeção de Toque Windows 8. A Injeção de Toque permite Windows desenvolvedores simulam programaticamente a entrada por toque.
 ms.assetid: 9B82898C-92DF-4F12-9440-D3D5CFD4D0A0
 keywords:
 - interação do usuário
@@ -9,18 +9,18 @@ keywords:
 - touch
 ms.topic: article
 ms.date: 02/06/2020
-ms.openlocfilehash: 4889777d7a6beca662dc40a90f89f06e62a04169
-ms.sourcegitcommit: 6fa693874869558b8ee53335e421bdd1233444e5
+ms.openlocfilehash: 6cb7aa3234d657c6291535a9654c572da030f67e4f2a94dc4b9d043a4cfc2ad8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "104084332"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119830116"
 ---
 # <a name="touch-injection"></a>Injeção de toque
 
 ## <a name="purpose"></a>Finalidade
 
-Os tópicos nesta seção fornecem uma visão geral da injeção de toque para aplicativos do Windows. As APIs de [injeção de toque](/windows/win32/api/_input_touchinjection/) permitem que os desenvolvedores do Windows simulem por programação a entrada por toque.
+Os tópicos nesta seção fornecem uma visão geral da Injeção de Toque para Windows aplicativos. As APIs [de Injeção](/windows/win32/api/_input_touchinjection/) de Toque Windows os desenvolvedores simulam programaticamente a entrada por toque.
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -30,7 +30,7 @@ Os tópicos nesta seção fornecem uma visão geral da injeção de toque para a
 
 ## <a name="developer-audience"></a>Público de desenvolvedores
 
-As APIs de injeção de toque são projetadas para desenvolvedores que estão criando estruturas de teste e de automação de entrada por toque usando C++.
+As APIs de Injeção de Toque são projetadas para desenvolvedores que estão criando estruturas de teste e automação de entrada de toque usando C++.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

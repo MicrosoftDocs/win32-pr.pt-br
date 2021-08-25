@@ -1,34 +1,34 @@
 ---
-description: Mostra como usar o processamento de vídeo DXVA.
+description: Mostra como usar o Processamento de Vídeo DXVA.
 ms.assetid: 1465bd41-94f9-4e19-8236-00e7a2d6f54a
-title: Exemplo de DXVA2_VideoProc
+title: DXVA2_VideoProc exemplo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8497a241baf07b76148a5bc2e7ddb4dd5e878e86
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 160fda9829398b97e7670bb2d1f8cc076c00cda77e1ad06131603603f6f49191
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296148"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119828277"
 ---
-# <a name="dxva2_videoproc-sample"></a>Exemplo de VideoProc de DXVA2 \_
+# <a name="dxva2_videoproc-sample"></a>Exemplo de VideoProc DXVA2 \_
 
-Mostra como usar o [processamento de vídeo DXVA](dxva-video-processing.md).
+Mostra como usar o [Processamento de Vídeo DXVA.](dxva-video-processing.md)
 
-Este exemplo gera por meio de programação um vídeo com um fluxo primário e um subfluxo. O fluxo primário exibe as barras de cores SMPTE e o Subfluxo é um retângulo semitransparente. O vídeo é então processado e exibido usando um processador de vídeo DXVA. O usuário pode alterar os valores alfa planar, retângulos de origem e de destino, ajustes de cor e espaço de cores.
+Este exemplo gera programaticamente um vídeo com um fluxo primário e um substream. O fluxo primário exibe barras de cores SMPTE e o substream é um retângulo semi-transparente. Em seguida, o vídeo é processado e exibido usando um processador de vídeo DXVA. O usuário pode alterar os valores alfa planar, os retângulos de origem e de destino, os ajustes de cor e o espaço de cores.
 
-![captura de tela do \- exemplo de videoproc de dxva2](images/dxva2-videoproc.png)
+![captura de tela do exemplo de \- videoproc dxva2](images/dxva2-videoproc.png)
 
 ## <a name="apis-demonstrated"></a>APIs demonstradas
 
-Este exemplo demonstra as seguintes interfaces de DXVA:
+Este exemplo demonstra as seguintes interfaces DXVA:
 
 -   [**IDirectXVideoProcessorService**](/windows/desktop/api/dxva2api/nn-dxva2api-idirectxvideoprocessorservice)
 -   [**IDirectXVideoProcessor**](/windows/desktop/api/dxva2api/nn-dxva2api-idirectxvideoprocessor)
 
 ## <a name="usage"></a>Uso
 
-O exemplo de VideoProc de DXVA2 \_ cria um aplicativo do Windows.
+O exemplo DXVA2 \_ VideoProc cria um Windows aplicativo.
 
 Opções de linha de comando:
 
@@ -36,9 +36,9 @@ Opções de linha de comando:
 
 | Opção | Descrição                                                                          |
 |--------|--------------------------------------------------------------------------------------|
-| -hh    | Força o aplicativo a usar um dispositivo Direct3D de hardware e um dispositivo de hardware DXVA. |
-| -HS    | Força o aplicativo a usar um dispositivo Direct3D de hardware e um dispositivo de DXVA de software. |
-| -ss    | Força o aplicativo a usar um dispositivo Direct3D de software e um dispositivo de DXVA de software. |
+| -hh    | Força o aplicativo a usar um dispositivo Direct3D de hardware e um dispositivo DXVA de hardware. |
+| -hs    | Força o aplicativo a usar um dispositivo Direct3D de hardware e um dispositivo DXVA de software. |
+| -ss    | Força o aplicativo a usar um dispositivo Direct3D de software e um dispositivo DXVA de software. |
 
 
 
@@ -51,15 +51,15 @@ Comandos de teclado:
 | Chave       | Descrição                                             |
 |-----------|---------------------------------------------------------|
 | ALT+ENTER | Alternar entre o modo de janela e o modo de tela inteira.      |
-| F1 – F8     | Insira um dos modos mostrados na tabela a seguir.    |
-| END       | Habilitar ou desabilitar o registro em log de depuração de quadros descartados. |
-| HOME      | Redefina um parâmetro para seu valor inicial.                 |
+| F1 –F8     | Insira um dos modos mostrados na tabela a seguir.    |
+| END       | Habilitar ou desabilitar o log de depuração para quadros descartados. |
+| HOME      | Redefinir um parâmetro para seu valor inicial.                 |
 
 
 
  
 
-Cada uma das teclas de função F1 a F8 alterna para um modo no qual as teclas de seta podem ser usadas para ajustar um determinado parâmetro de renderização. Além disso, a cor do Subfluxo é alterada.
+Cada uma das teclas de função F1 a F8 muda para um modo no qual as teclas de direção podem ser usadas para ajustar um parâmetro de renderização específico. Além disso, a cor do substream muda.
 
 
 
@@ -77,89 +77,89 @@ Cada uma das teclas de função F1 a F8 alterna para um modo no qual as teclas d
 <tbody>
 <tr class="odd">
 <td>F1</td>
-<td>Ajuste os valores Alfa.<br/>
+<td>Ajuste os valores alfa.<br/>
 <ul>
-<li>UP: aumentar o planar de ambos os fluxos.</li>
-<li>Para baixo: diminua a alfa do planar de ambos os fluxos.</li>
-<li>RIGHT: aumentar o pixel alfa do Subfluxo.</li>
-<li>ESQUERDA: diminuir o pixel alfa do Subfluxo.</li>
+<li>UP: aumente o alfa planar de ambos os fluxos.</li>
+<li>DOWN: diminua o alfa planar de ambos os fluxos.</li>
+<li>RIGHT: aumente o pixel alfa do substream.</li>
+<li>LEFT: diminua o alfa de pixel do substream.</li>
 </ul>
-Cor do Subfluxo: branco<br/></td>
+Cor do substream: Branco<br/></td>
 </tr>
 <tr class="even">
 <td>F2</td>
 <td>Ajuste a área de origem do fluxo primário (zoom).<br/>
 <ul>
-<li>UP: aumentar verticalmente (ampliar).</li>
-<li>Para baixo: diminuir verticalmente (reduzir).</li>
+<li>UP: aumente verticalmente (ampliar).</li>
+<li>DOWN: diminua verticalmente (reduzir).</li>
 <li>DIREITA: aumentar horizontalmente (ampliar).</li>
-<li>ESQUERDA: diminuir horizontalmente (reduzir).</li>
+<li>LEFT: diminua horizontalmente (reduzir).</li>
 </ul>
-Cor do Subfluxo: vermelho<br/></td>
+Cor do substream: Vermelho<br/></td>
 </tr>
 <tr class="odd">
 <td>F3</td>
 <td>Mova a área de origem do fluxo primário.<br/>
 <ul>
-<li>UP: mover para cima.</li>
-<li>Para baixo: mover para baixo.</li>
-<li>DIREITA: mover para a direita.</li>
-<li>ESQUERDA: mover para a esquerda.</li>
+<li>UP: mova para cima.</li>
+<li>DOWN: mova para baixo.</li>
+<li>DIREITA: mova para a direita.</li>
+<li>LEFT: mova para a esquerda.</li>
 </ul>
-Cor do Subfluxo: amarelo<br/></td>
+Cor do substream: amarelo<br/></td>
 </tr>
 <tr class="even">
 <td>F4</td>
-<td>Ajuste a área de destino do fluxo principal.<br/>
+<td>Ajuste a área de destino do fluxo primário.<br/>
 <ul>
-<li>UP: aumentar verticalmente.</li>
-<li>Para baixo: diminuir verticalmente.</li>
-<li>DIREITA: aumentar horizontalmente.</li>
-<li>ESQUERDA: diminuir horizontalmente.</li>
+<li>UP: aumente verticalmente.</li>
+<li>DOWN: diminua verticalmente.</li>
+<li>DIREITA: aumente horizontalmente.</li>
+<li>LEFT: diminua horizontalmente.</li>
 </ul>
-Cor do Subfluxo: verde<br/></td>
+Cor do substream: Verde<br/></td>
 </tr>
 <tr class="odd">
 <td>F5</td>
 <td>Mova a área de destino do fluxo primário.<br/>
 <ul>
-<li>UP: mover para cima.</li>
-<li>Para baixo: mover para baixo.</li>
-<li>DIREITA: mover para a direita.</li>
-<li>ESQUERDA: mover para a esquerda.</li>
+<li>UP: mova para cima.</li>
+<li>DOWN: mova para baixo.</li>
+<li>DIREITA: mova para a direita.</li>
+<li>LEFT: mova para a esquerda.</li>
 </ul>
-Cor do Subfluxo: ciano<br/></td>
+Cor do substream: Ciano<br/></td>
 </tr>
 <tr class="even">
 <td>F6</td>
-<td>Alterar a cor do plano de fundo ou o espaço de cores.<br/>
+<td>Altere a cor da tela de fundo ou o espaço de cor.<br/>
 <ul>
-<li>Para cima, para baixo: Percorra os espaços de cores.</li>
-<li>DIREITA, esquerda: percorrer as cores do plano de fundo.</li>
+<li>UP, DOWN: ciclo pelos espaços de cores.</li>
+<li>RIGHT, LEFT: passa pelas cores da plano de fundo.</li>
 </ul>
-Cor do Subfluxo: azul<br/></td>
+Cor do substream: azul<br/></td>
 </tr>
 <tr class="odd">
 <td>F7</td>
-<td>Ajustar o brilho e o contraste.<br/>
+<td>Ajuste o brilho e o contraste.<br/>
 <ul>
 <li>UP: aumentar o brilho.</li>
-<li>Para baixo: diminuir o brilho.</li>
-<li>DIREITA: aumentar contraste.</li>
-<li>ESQUERDA: diminuir contraste.</li>
+<li>DOWN: diminua o brilho.</li>
+<li>RIGHT: aumentar o contraste.</li>
+<li>LEFT: diminua o contraste.</li>
 </ul>
-Cor do Subfluxo: magenta<br/></td>
+Cor do substream: Magenta<br/></td>
 </tr>
 <tr class="even">
 <td>F8</td>
-<td>Ajuste o matiz e a saturação.<br/>
+<td>Ajuste matiz e saturação.<br/>
 <ul>
-<li>UP: aumentar o matiz.</li>
-<li>Para baixo: diminuir o matiz.</li>
-<li>DIREITA: aumentar a saturação.</li>
-<li>ESQUERDA: diminuir a saturação.</li>
+<li>UP: aumente o matiz.</li>
+<li>DOWN: diminua o matiz.</li>
+<li>RIGHT: aumente a saturação.</li>
+<li>LEFT: diminua a saturação.</li>
 </ul>
-Cor do Subfluxo: preto<br/></td>
+Cor do substream: Preto<br/></td>
 </tr>
 </tbody>
 </table>
@@ -168,7 +168,7 @@ Cor do Subfluxo: preto<br/></td>
 
  
 
-Em cada modo, pressionar a tecla HOME redefine os parâmetros para esse modo para seus valores iniciais.
+Em cada modo, pressionar a tecla HOME redefine os parâmetros desse modo para seus valores iniciais.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -184,16 +184,16 @@ Em cada modo, pressionar a tecla HOME redefine os parâmetros para esse modo par
 
 ## <a name="downloading-the-sample"></a>Baixando o exemplo
 
-Este exemplo está disponível no [repositório GitHub de exemplos clássicos do Windows](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/mediafoundation/evrpresenter).
+Este exemplo está disponível no repositório [Windows github de exemplos clássicos.](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/mediafoundation/evrpresenter)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Aceleração de vídeo do DirectX 2,0](directx-video-acceleration-2-0.md)
+[Aceleração de vídeo do DirectX 2.0](directx-video-acceleration-2-0.md)
 </dt> <dt>
 
-[Processamento de vídeo de DXVA](dxva-video-processing.md)
+[Processamento de vídeo DXVA](dxva-video-processing.md)
 </dt> <dt>
 
 [Exemplos de SDK do Media Foundation](media-foundation-sdk-samples.md)

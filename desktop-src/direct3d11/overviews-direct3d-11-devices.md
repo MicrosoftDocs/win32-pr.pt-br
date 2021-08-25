@@ -4,12 +4,12 @@ description: Esta seção descreve os objetos do dispositivo e do contexto do di
 ms.assetid: 61d1ea92-e657-4931-8475-74a3123c72f7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8dda010b3801952e90514fac6307556f8f6fbaff
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 9e77cfd255c43cc902f2583fe22575bef2567609f43b6f893984e99dec713532
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104988732"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119851116"
 ---
 # <a name="devices-direct3d-11-graphics"></a>Dispositivos (gráficos do Direct3D 11)
 

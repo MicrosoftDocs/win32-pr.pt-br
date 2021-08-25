@@ -1,9 +1,9 @@
 ---
-title: Elemento messagetable (MetadataType)
-description: Contém referências a cadeias de caracteres que são usadas na seção de metadados do manifesto de instrumentação de eventos. As cadeias de caracteres são armazenadas em um grupo de elementos de mensagem e IDs emparelhados juntos.
+title: Elemento messageTable (MetadataType)
+description: Contém referências a cadeias de caracteres que são usadas na seção de metadados do manifesto de instrumentação de eventos. As cadeias de caracteres são armazenadas em um grupo de elementos de mensagem e IDs emparelhadas.
 ms.assetid: 868af191-0f9c-435b-878f-ef0584e097d1
 keywords:
-- EventLog do elemento messagetable
+- Elemento messageTable EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: eb5efc261a2c055a95f71ba556c9acbc0ad45373
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f7c614210a22bc6c6d160a7c161c5b5a89aab85116285822465b43ba75e63095
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085264"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119865656"
 ---
-# <a name="messagetable-metadatatype-element"></a>Elemento messagetable (MetadataType)
+# <a name="messagetable-metadatatype-element"></a>Elemento messageTable (MetadataType)
 
-Contém referências a cadeias de caracteres que são usadas na seção de metadados do manifesto de instrumentação de eventos. As cadeias de caracteres são armazenadas em um grupo de elementos de [**mensagem**](eventmanifestschema-message-messagetable-element.md) e IDs emparelhados juntos.
+Contém referências a cadeias de caracteres que são usadas na seção de metadados do manifesto de instrumentação de eventos. As cadeias de caracteres são armazenadas em um grupo de elementos [**de**](eventmanifestschema-message-messagetable-element.md) mensagem e IDs emparelhadas.
 
 ``` syntax
 <xs:element name="messageTable">
@@ -56,7 +56,7 @@ Contém referências a cadeias de caracteres que são usadas na seção de metad
 </xs:element>
 ```
 
-O elemento **messagetable** é definido pelo tipo complexo [**MetadataType**](eventmanifestschema-metadatatype-complextype.md) .
+O **elemento messageTable** é definido pelo tipo complexo [**MetadataType.**](eventmanifestschema-metadatatype-complextype.md)
 
 ## <a name="child-elements"></a>Elementos filho
 
@@ -64,7 +64,7 @@ O elemento **messagetable** é definido pelo tipo complexo [**MetadataType**](ev
 
 | Elemento                                                             | Type | Descrição                                                                               |
 |---------------------------------------------------------------------|------|-------------------------------------------------------------------------------------------|
-| [**message**](eventmanifestschema-message-messagetable-element.md) |      | Especifica uma referência a uma cadeia de caracteres na seção de localização do manifesto.<br/> |
+| [**Mensagem**](eventmanifestschema-message-messagetable-element.md) |      | Especifica uma referência a uma cadeia de caracteres na seção de localização do manifesto.<br/> |
 
 
 
@@ -76,8 +76,8 @@ O elemento **messagetable** é definido pelo tipo complexo [**MetadataType**](ev
 |---------|--------|--------------------------------------------------------------------------|
 | message | string | Uma referência à cadeia de caracteres localizada na tabela de cadeia de caracteres.<br/>      |
 | mid     | string | Não usado.<br/>                                                     |
-| símbolo  | string | O símbolo usado para fazer referência à mensagem.<br/>                     |
-| value   | string | O número a ser usado como o identificador da mensagem para esta mensagem.<br/> |
+| símbolo  | string | O símbolo usado para referenciar a mensagem.<br/>                     |
+| value   | string | O número a ser usado como o identificador de mensagem para esta mensagem.<br/> |
 
 
 
@@ -87,8 +87,8 @@ O elemento **messagetable** é definido pelo tipo complexo [**MetadataType**](ev
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

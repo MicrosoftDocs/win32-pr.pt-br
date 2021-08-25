@@ -1,5 +1,5 @@
 ---
-description: O \_ fuso horário do Win32&\# 8194; A classe WMI representa as informações de fuso horário de um sistema de computador executando o Windows, que inclui as alterações necessárias para fazer a transição para a transição de horário de verão.
+description: O \_ fuso horário do Win32&\# 8194; a classe WMI representa as informações de fuso horário de um sistema de computador executando Windows, que inclui as alterações necessárias para fazer a transição para a transição de horário de verão.
 ms.assetid: c1c7731e-768f-42ea-a36c-57b00df6848e
 ms.tgt_platform: multiple
 title: Classe Win32_TimeZone
@@ -38,16 +38,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 433682f045ca7fb127c7dc69e3a26ed8356371ed
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 02b6d9d5c6100a652cf50096f5ef513fc164cfcfd2d8036e8444adc702459d1e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826338"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119827656"
 ---
 # <a name="win32_timezone-class"></a>\_Classe de fuso horário Win32
 
-A  [classe WMI](../wmisdk/retrieving-a-class.md) de **\_ fuso** horário do Win32 representa as informações de fuso horário de um sistema de computador executando o Windows, que inclui as alterações necessárias para fazer a transição para a transição de horário de verão.
+a  [classe WMI](../wmisdk/retrieving-a-class.md) de **\_ fuso** horário do Win32 representa as informações de fuso horário de um sistema de computador executando Windows, que inclui as alterações necessárias para fazer a transição para a transição de horário de verão.
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas. As propriedades e os métodos estão em ordem alfabética, não em ordem de MOF.
 
@@ -426,13 +426,13 @@ Exemplo: 59
 **DaylightYear**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| estruturas de tempo win32api \| [**\_ \_ informações de fuso horário**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| datadohoráriodeverão \| Wano")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Time Structures TIME ZONE \| [**\_ \_ INFORMATION**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| DaylightDate \| wYear")
 </dt> </dl>
 
 Ano em que o horário de verão está em vigor. Essa propriedade não é necessária.
@@ -452,11 +452,11 @@ Tipo de acesso: Somente leitura
 
 Descrição textual do objeto atual.
 
-Essa propriedade é herdada [**da \_ configuração de CIM**](cim-setting.md).
+Essa propriedade é herdada da [**Configuração cim \_**](cim-setting.md).
 
 </dd> <dt>
 
-**SettingID**
+**Settingid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -465,28 +465,28 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](../wmisdk/standard-qualifiers.md) (256)
+Qualificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
 </dt> </dl>
 
 Identificador pelo qual o objeto atual é conhecido.
 
-Essa propriedade é herdada [**da \_ configuração de CIM**](cim-setting.md).
+Essa propriedade é herdada da [**Configuração cim \_**](cim-setting.md).
 
 </dd> <dt>
 
-**Diferençapadrão**
+**Standardbias**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| estruturas de tempo win32api \| [**\_ \_ informações de fuso horário**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| diferençapadrão"), [**unidades**](../wmisdk/standard-qualifiers.md) ("minutos")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Time Structures TIME ZONE \| [**\_ \_ INFORMATION**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| StandardBias"), [**Units**](../wmisdk/standard-qualifiers.md) ("minutes")
 </dt> </dl>
 
-O valor de tendência a ser usado quando o horário de verão não está em vigor. Essa propriedade será ignorada se um valor de **StandardDay** não for fornecido. O valor dessa propriedade é adicionado à propriedade **Bias** para formar a tendência durante o horário padrão.
+Valor de desvio a ser usado quando o horário de verão não está em vigor. Essa propriedade será ignorada se um valor para **StandardDay** não for fornecido. O valor dessa propriedade é adicionado à propriedade **Bias** para formar o desvio durante o tempo padrão.
 
 Exemplo: 0
 
@@ -495,18 +495,18 @@ Exemplo: 0
 **StandardDay**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| estruturas de tempo win32api \| [**\_ \_ informações de fuso horário**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| datapadrão \| WDIA")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Time Structures TIME ZONE \| [**\_ \_ INFORMATION**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| StandardDate \| wDay")
 </dt> </dl>
 
-**StandardDayOfWeek** **StandardMonth** quando a transição do horário de verão para o horário padrão ocorre em um sistema operacional.
+**StandardDayOfWeek** do **StandardMonth quando** a transição do horário de verão para o horário padrão ocorre em um sistema operacional.
 
-Se o dia de transição (**StandardDayOfWeek**) ocorrer em um domingo, o valor "1" indicará o primeiro domingo do **StandardMonth**, "2" indica o segundo domingo e assim por diante. O valor "5" indica o último **StandardDayOfWeek** no mês.
+Se o dia de transição (**StandardDayOfWeek**) ocorrer em um domingo, o valor "1" indicará o primeiro domingo do **StandardMonth**, "2" indicará o segundo domingo e assim por diante. O valor "5" indica a última **StandardDayOfWeek** no mês.
 
 </dd> <dt>
 
@@ -519,7 +519,7 @@ Tipo de dados: **uint8**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| estruturas de tempo win32api \| [**\_ \_ informações de fuso horário**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| datapadrão \| wdiadasemana")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Time Structures TIME ZONE \| [**\_ \_ INFORMATION**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| StandardDate \| wDayOfWeek")
 </dt> </dl>
 
 Dia da semana em que a transição do horário de verão para o horário padrão ocorre em um sistema operacional.
@@ -535,7 +535,7 @@ Dia da semana em que a transição do horário de verão para o horário padrão
 
 <span id="Monday"></span><span id="monday"></span><span id="MONDAY"></span>
 
-**Segunda** (1)
+**Segunda-feira** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -580,13 +580,13 @@ Dia da semana em que a transição do horário de verão para o horário padrão
 **StandardHour**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| estruturas de tempo win32api \| [**\_ \_ informações de fuso horário**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| datapadrão \| Whora")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Time Structures TIME ZONE \| [**\_ \_ INFORMATION**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| StandardDate \| wHour")
 </dt> </dl>
 
 Hora do dia em que a transição do horário de verão para o horário padrão ocorre em um sistema operacional.
@@ -598,32 +598,32 @@ Exemplo: 11
 **StandardMillisecond**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| estruturas de tempo win32api \| [**\_ \_ informações de fuso horário**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| datapadrão \| wmilissegundos")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Time Structures TIME ZONE \| [**\_ \_ INFORMATION**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| StandardDate \| wMilliseconds")
 </dt> </dl>
 
-Milissegundo do **StandardSecond** quando a transição do horário de verão para o horário padrão ocorre em um sistema operacional.
+Milissegundos do **StandardSecond quando** a transição do horário de verão para o horário padrão ocorre em um sistema operacional.
 
 </dd> <dt>
 
 **StandardMinute**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| estruturas de tempo win32api \| [**\_ \_ informações de fuso horário**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| datapadrão \| wminuto")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Time Structures TIME ZONE \| [**\_ \_ INFORMATION**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| StandardDate \| wMinute")
 </dt> </dl>
 
-Minuto do **StandardDay** quando a transição do horário de verão para o horário padrão ocorre em um sistema operacional.
+Minuto do **StandardDay quando** a transição do horário de verão para o horário padrão ocorre em um sistema operacional.
 
 Exemplo: 59
 
@@ -632,13 +632,13 @@ Exemplo: 59
 **StandardMonth**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| estruturas de tempo win32api \| [**\_ \_ informações de fuso horário**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| datapadrão \| wmês")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Time Structures TIME ZONE \| [**\_ \_ INFORMATION**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| StandardDate \| wMonth")
 </dt> </dl>
 
 Mês em que a transição do horário de verão para o horário padrão ocorre em um sistema operacional.
@@ -731,7 +731,7 @@ Mês em que a transição do horário de verão para o horário padrão ocorre e
 
 </dd> <dt>
 
-**Nomepadrão**
+**Standardname**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -740,28 +740,28 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**chave**](../wmisdk/key-qualifier.md), [**maxlen**](../wmisdk/standard-qualifiers.md) (256), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("win32api \| estruturas de tempo \| [**hora do \_ fuso \_ horário**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| StandardName")
+Qualificadores: [**key**](../wmisdk/key-qualifier.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Time Structures TIME ZONE \| [**\_ \_ INFORMATION**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| StandardName")
 </dt> </dl>
 
-Nome do fuso horário que está sendo representado quando o horário padrão está em vigor.
+Nome do fuso horário que está sendo representado quando a hora padrão está em vigor.
 
-Exemplo: "EST" (hora padrão do leste)
+Exemplo: "EST" (Hora Padrão do Leste)
 
 </dd> <dt>
 
 **StandardSecond**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| estruturas de tempo win32api \| [**\_ \_ informações de fuso horário**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| datapadrão \| wsegundo")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Time Structures TIME ZONE \| [**\_ \_ INFORMATION**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| StandardDate \| wSecond")
 </dt> </dl>
 
-Segundo **StandardMinute** quando a transição do horário de verão para o horário padrão ocorre em um sistema operacional.
+Segundo do **StandardMinute quando** a transição do horário de verão para o horário padrão ocorre em um sistema operacional.
 
 Exemplo: 59
 
@@ -770,13 +770,13 @@ Exemplo: 59
 **StandardYear**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| estruturas de tempo win32api \| [**\_ \_ informações de fuso horário**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| datapadrão \| Wano")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Time Structures TIME ZONE \| [**\_ \_ INFORMATION**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) \| StandardDate \| wYear")
 </dt> </dl>
 
 Ano em que a hora padrão está em vigor. Essa propriedade não é necessária.
@@ -787,7 +787,7 @@ Exemplo: 1997
 
 ## <a name="remarks"></a>Comentários
 
-A classe de **\_ fuso horário Win32** é derivada da [**\_ configuração CIM**](cim-setting.md).
+A **classe Win32 \_ TimeZone** é derivada da [**configuração cim \_**](cim-setting.md).
 
 Você não pode usar formatos de data e hora padrão, como 10/18/2002, ao gravar consultas WMI. Em vez disso, você precisa converter todas as datas usadas em suas consultas para o formato UTC. Isso requer duas etapas: 1) você deve determinar o deslocamento (diferença em minutos) entre o fuso horário e o horário de Greenwich e 2) você deve converter 10/18/2002 em um valor UTC.
 

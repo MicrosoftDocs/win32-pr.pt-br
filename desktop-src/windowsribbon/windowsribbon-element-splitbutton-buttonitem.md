@@ -1,9 +1,9 @@
 ---
-title: Propriedade SplitButton. ButtonItem
-description: Representa um contêiner de botão ou botão de alternância que expõe o comando padrão de um botão de divisão.
+title: Propriedade SplitButton.ButtonItem
+description: Representa um contêiner para um botão ou botão de alternância que expõe o comando padrão de um botão de divisão.
 ms.assetid: 3d46d606-238d-46d4-b92e-dfd759951770
 keywords:
-- Faixa de das propriedades do Windows de SplitButton. ButtonItem
+- Propriedade SplitButton.ButtonItem Windows Ribbon
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2bf1e1cb908ce9a86f23f75d17bf2e76797997db
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f49f316f7c740b434f761bbe4c00906c8f76b5027af9fcc87317af2a51960dab
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454829"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119840686"
 ---
-# <a name="splitbuttonbuttonitem-property"></a>Propriedade SplitButton. ButtonItem
+# <a name="splitbuttonbuttonitem-property"></a>Propriedade SplitButton.ButtonItem
 
-Representa um contêiner de [botão](windowsribbon-controls-button.md) ou [botão de alternância](windowsribbon-controls-togglebutton.md) que expõe o comando padrão de um [botão de divisão](windowsribbon-controls-splitbutton.md).
+Representa um contêiner para um [botão ou](windowsribbon-controls-button.md) botão [de alternância](windowsribbon-controls-togglebutton.md) que expõe o comando padrão de um [botão dividir](windowsribbon-controls-splitbutton.md).
 
 ## <a name="usage"></a>Uso
 
@@ -60,15 +60,15 @@ Não há atributos.
 
 Opcional.
 
-Pode ocorrer no máximo uma vez para cada [**SplitButton**](windowsribbon-element-splitbutton.md).
+Pode ocorrer no máximo uma vez para cada [**SplitButton.**](windowsribbon-element-splitbutton.md)
 
-Cada **SplitButton. ButtonItem** pode conter apenas um elemento filho [**Button**](windowsribbon-element-button.md) ou [**ToggleButton**](windowsribbon-element-togglebutton.md) .
+Cada **SplitButton.ButtonItem** pode conter apenas um [**elemento filho Button**](windowsribbon-element-button.md) ou [**ToggleButton.**](windowsribbon-element-togglebutton.md)
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir demonstra a marcação básica para o [botão de divisão](windowsribbon-controls-splitbutton.md).
+O exemplo a seguir demonstra a marcação básica para o [botão Dividir](windowsribbon-controls-splitbutton.md).
 
-Esta seção de código mostra as declarações de comando [**SplitButton**](windowsribbon-element-splitbutton.md) e **SplitButton. ButtonItem** , com um [**grupo**](windowsribbon-element-group.md) associado que funciona como o contêiner pai para o elemento **SplitButton** .
+Esta seção de código mostra as declarações de comando [**SplitButton**](windowsribbon-element-splitbutton.md) e **SplitButton.ButtonItem,** com um Grupo associado que funciona como o contêiner pai para o **elemento SplitButton.** [](windowsribbon-element-group.md)
 
 
 ```XML
@@ -112,7 +112,7 @@ Esta seção de código mostra as declarações de comando [**SplitButton**](win
 
 
 
-Esta seção de código mostra as declarações de controle [**SplitButton**](windowsribbon-element-splitbutton.md) e **SplitButton. ButtonItem** .
+Esta seção de código mostra as declarações de controle [**SplitButton**](windowsribbon-element-splitbutton.md) e **SplitButton.ButtonItem.**
 
 
 ```XML
@@ -149,8 +149,8 @@ Esta seção de código mostra as declarações de controle [**SplitButton**](wi
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>              |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/> |
 
 
 
@@ -158,7 +158,7 @@ Esta seção de código mostra as declarações de controle [**SplitButton**](wi
 
 <dl> <dt>
 
-[Controle de botão de divisão](windowsribbon-controls-splitbutton.md)
+[Controle Dividir Botão](windowsribbon-controls-splitbutton.md)
 </dt> </dl>
 
  

@@ -4,12 +4,12 @@ ms.assetid: e6f6d6a5-bdb0-4866-8d2c-56313d92c94c
 title: Regras de controle de versão de arquivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 67c6f8e59b4f15774f898217690dbb1c4d57b1bf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c8dfda6a909450ba45cc213016a159bbbc8f9a54b958c7d4e37d051fd86935ad
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105766399"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119828976"
 ---
 # <a name="file-versioning-rules"></a>Regras de controle de versão de arquivo
 
@@ -19,7 +19,7 @@ No núcleo de qualquer instalador está a instalação real dos arquivos. Determ
 -   Data
 -   Idioma
 
-O instalador usa essas regras apenas ao tentar instalar um arquivo em um local que já contém um arquivo com o mesmo nome. Nesse caso, o Windows Installer usa as regras a seguir, todas as outras coisas sendo iguais para determinar se deseja instalar o.
+O instalador usa essas regras apenas ao tentar instalar um arquivo em um local que já contém um arquivo com o mesmo nome. nesse caso, o Windows Installer usa as regras a seguir, todas as outras coisas sendo iguais para determinar se deseja instalar o.
 
 Versão mais alta vence — todas as outras coisas são iguais, o arquivo com a versão mais alta vence, mesmo que o arquivo no computador tenha a versão mais alta.
 

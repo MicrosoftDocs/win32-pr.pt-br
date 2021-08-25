@@ -1,7 +1,7 @@
 ---
-description: Recupera o identificador de classe deste filtro.
+description: Recupera o identificador de classe para esse filtro.
 ms.assetid: f0559437-5d0d-4522-a3dc-947e3494b576
-title: Método CPersistStream. GetClassID (pStream. h)
+title: Método CPersistStream.GetClassID (Pstream.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7603541eae4f431327a91777488a740afb7f628b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e500b91453bd7c9d76f243939a98b0779f1873ed7b5f79128e639173710e62de
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105757691"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119915556"
 ---
-# <a name="cpersiststreamgetclassid-method"></a>Método CPersistStream. GetClassID
+# <a name="cpersiststreamgetclassid-method"></a>Método CPersistStream.GetClassID
 
-Recupera o identificador de classe deste filtro.
+Recupera o identificador de classe para esse filtro.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,16 +42,16 @@ HRESULT GetClassID(
 
 <dl> <dt>
 
-*pClsID* 
+*Pclsid* 
 </dt> <dd>
 
 Ponteiro para uma estrutura CLSID. Copie sua ID de classe para aqui.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor **HRESULT** .
+Retorna um **valor HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,8 +59,8 @@ Retorna um valor **HRESULT** .
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>PStream. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Pstream.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

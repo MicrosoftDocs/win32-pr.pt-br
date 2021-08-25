@@ -4,12 +4,12 @@ ms.assetid: e7983732-b206-4e9e-8446-9412832f4712
 title: Configurando o atributo de sincronização
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bc93ad435b1a2fb19d4a73e4aae806b6cda1b241
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: e5b965ea5fe3a671b3245335327168ad4d6eb3e667fd135626eae7ea6251f40f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296085"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119858856"
 ---
 # <a name="setting-the-synchronization-attribute"></a>Configurando o atributo de sincronização
 

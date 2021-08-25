@@ -3,26 +3,26 @@ title: Alterando predefinições
 description: Alterando predefinições
 ms.assetid: f8a5565d-676b-4679-a4cb-4bd7551cf41c
 keywords:
-- visualizações, exemplo de brilho
-- visualizações personalizadas, exemplo de brilho
-- Guia de programação, visualizações
-- amostras, visualização de brilho
+- visualizações, exemplo de Brilho
+- visualizações personalizadas, amostra de Brilho
+- guia de programação, visualizações
+- exemplos, visualização do Brilho
 - Exemplo de visualização de brilho
 - visualizações, predefinições
 - visualizações personalizadas, predefinições
-- predefinições em visualizações, exemplo de brilho
+- predefinições em visualizações, amostra de brilho
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 95d24841c95c3fc1029aa0c405e90b329799fdbe
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 03828614093836c5f9a3b422167b62f11b8f2489eb30556d42a2d80495935ec5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105759735"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119863906"
 ---
 # <a name="changing-presets"></a>Alterando predefinições
 
-As seções de código predefinida a seguir foram alteradas para permitir três predefinições:
+As seções de código predefinidas a seguir foram alteradas para permitir três predefinições:
 
 ## <a name="getpresettitle"></a>GetPresetTitle
 
@@ -51,7 +51,7 @@ Esse código foi inserido no lugar do código predefinido gerado:
 
 ## <a name="enumerations"></a>Enumerações
 
-A seguinte enumeração em brilho. h foi alterada para permitir três predefinições:
+A enumeração a seguir em Brilho.h foi alterada para permitir três predefinições:
 
 
 ```C++
@@ -66,9 +66,9 @@ enum {
 
 
 
-## <a name="resource-header"></a>Cabeçalho do recurso
+## <a name="resource-header"></a>Header de recurso
 
-Os recursos a seguir foram definidos em Resource. h para permitir três predefinições:
+Os seguintes recursos foram definidos em Resource.h para permitir três predefinições:
 
 
 ```C++
@@ -80,11 +80,11 @@ Os recursos a seguir foram definidos em Resource. h para permitir três predefin
 
 
 
-Observe que você também deve alterar o número do recurso do **\_ APS \_ próximo \_ \_ valor SYMED** para 106.
+Observe que você também deve alterar o número de recursos **\_ APS NEXT \_ \_ SYMED \_ VALUE** para 106.
 
 ## <a name="resource-file"></a>Arquivo de recurso
 
-As cadeias de caracteres a seguir devem ser alteradas no arquivo Glowdll. rc para permitir três predefinições e dar a eles nomes:
+As seguintes cadeias de caracteres devem ser alteradas no arquivo Brilhodll.rc para permitir três predefinições e dar a eles nomes:
 
 
 ```C++
@@ -103,9 +103,9 @@ As cadeias de caracteres a seguir devem ser alteradas no arquivo Glowdll. rc par
 [**O exemplo de brilho**](the-glow-sample.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

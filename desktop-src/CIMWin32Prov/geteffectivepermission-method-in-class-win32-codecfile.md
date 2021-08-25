@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: cc2f24071d5ab864e06686f094707d9111ea07ab
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 2c3740d1c87b5d74968d0bc4eb92ed8246c9a3c2a0a42a3b0c434c74f306a203
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826304"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119878976"
 ---
 # <a name="geteffectivepermission-method-of-the-win32_codecfile-class"></a>Método GetEffectivePermission da classe de um codec do Win32 \_
 
@@ -203,7 +203,7 @@ Sincroniza o acesso e permite que um processo Aguarde um objeto para entrar no e
 
 </dd> </dl> </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna **true** quando o chamador tem as permissões especificadas e **false** quando o chamador não tem as permissões especificadas.
 
@@ -216,7 +216,7 @@ Retorna **true** quando o chamador tem as permissões especificadas e **false** 
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
 | Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| parâmetro<br/>                   | <dl> <dt>Aclui. h</dt> </dl>      |
+| Cabeçalho<br/>                   | <dl> <dt>Aclui. h</dt> </dl>      |
 | MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 

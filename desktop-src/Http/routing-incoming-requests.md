@@ -4,12 +4,12 @@ description: A API do servidor HTTP mantém um banco de dados de roteamento para
 ms.assetid: 7c613137-66bd-4375-93cb-b5562823bc12
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: da483030441f3a9239eef153da59212166bce9eb
-ms.sourcegitcommit: 73417d55867c804274a55abe5ca71bcba7006119
+ms.openlocfilehash: e40feab96a913da895633bddd8e53697b6aeef959162da054da22aeeedef652a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "104366886"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119829956"
 ---
 # <a name="routing-incoming-requests"></a>Roteamento de solicitações de entrada
 
@@ -45,9 +45,9 @@ Se a melhor correspondência for uma entrada de reserva, isso significa que o ap
 
 Uma solicitação de entrada para `https://adatum.com:80/vroot/file.htm/` o não é entregue ao aplicativo 1 porque a melhor correspondência leva à entrada de reserva para o usuário B. As regras de precedência são aplicadas nesse caso à reserva que tem uma prioridade mais alta. Se nenhum processo estiver ativo que seja autorizado e registrado para solicitações de serviço para a URL recebida, a solicitação será rejeitada com um código de status 400 (solicitação inadequada).
 
- 
+ 
 
- 
+ 
 
 
 

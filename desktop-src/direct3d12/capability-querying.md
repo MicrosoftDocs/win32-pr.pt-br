@@ -5,22 +5,22 @@ ms.assetid: ECBAF8EF-5D91-46D8-9D6E-A7FA4203B9F8
 ms.date: 11/26/2018
 ms.localizationpriority: high
 ms.topic: article
-ms.openlocfilehash: eaf451f91d51cfa6e900f328898c3418f0974a2d
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: a99174515883f8995167a7b866ab1ef8b77b56f7a0be2bb83f960abd06e47713
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104548230"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119851396"
 ---
 # <a name="capability-querying"></a>Consulta de funcionalidade
 
-Seu aplicativo pode descobrir o nível de suporte para a ligação de recursos (bem como o nível de suporte para muitos outros recursos), com uma chamada para [**ID3D12Device:: CheckFeatureSupport**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-checkfeaturesupport).
+Seu aplicativo pode descobrir o nível de suporte para associação de recursos (bem como o nível de suporte para muitos outros recursos), com uma chamada para [**ID3D12Device::CheckFeatureSupport**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-checkfeaturesupport).
 
 ## <a name="how-to-query-for-the-resource-binding-tier"></a>Como consultar a camada de associação de recursos
 
-Este primeiro exemplo se concentra na associação de recursos. Cada camada de associação de recurso é um superconjunto de camadas inferiores na funcionalidade, de modo que o código que funciona em uma determinada camada funciona inalterado em qualquer camada superior.
+Este primeiro exemplo se concentra na associação de recursos. Cada camada de associação de recursos é um superconjunto de camadas inferiores na funcionalidade, portanto, o código que funciona em uma determinada camada funciona inalterado em qualquer camada superior.
 
-As camadas de associação de recurso são constantes na enumeração de [**D3D12_RESOURCE_BINDING_TIER**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_resource_binding_tier) .
+As camadas de associação de recursos são constantes na [**enumeração D3D12_RESOURCE_BINDING_TIER**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_resource_binding_tier) dados.
 
 Para consultar a camada de associação de recursos, use um código como este. Este exemplo de código demonstra o padrão geral para consultar qualquer um dos vários tipos de suporte a recursos.
 
@@ -51,11 +51,11 @@ D3D12_RESOURCE_BINDING_TIER get_resource_binding_tier(::ID3D12Device* pIDevice)
 }
 ```
 
-Observe que qualquer constante enumerada que você passa ([**D3D12_FEATURE_D3D12_OPTIONS**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_feature), nesse caso) tem uma estrutura de dados correspondente que recebe informações sobre esse recurso ou conjunto de recursos ([**D3D12_FEATURE_DATA_D3D12_OPTIONS**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_feature_data_d3d12_options), nesse caso). Sempre passe um ponteiro para a estrutura que corresponde à constante enumerada que você passa.
+Observe que qualquer constante enumerada que você passar ([**D3D12_FEATURE_D3D12_OPTIONS**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_feature), nesse caso) tem uma estrutura de dados correspondente que recebe informações sobre esse recurso ou conjunto de recursos ([**D3D12_FEATURE_DATA_D3D12_OPTIONS**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_feature_data_d3d12_options), nesse caso). Sempre passe um ponteiro para a estrutura que corresponde à constante enumerada que você passa.
 
 ## <a name="how-to-query-for-any-feature-level"></a>Como consultar qualquer nível de recurso
 
-Além da camada de associação de recursos, há muitos outros recursos cujo nível de suporte você pode consultar usando o mesmo padrão mostrado no exemplo de código acima. Basta passar uma constante diferente da enumeração [**D3D12_FEATURE**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_feature) para [**ID3D12Device:: CheckFeatureSupport**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-checkfeaturesupport) (para informar à API a qual recurso solicitar informações de suporte) e passar um ponteiro para uma instância da estrutura correspondente (na qual as informações solicitadas são recebidas).
+Além da camada de associação de recursos, há muitos outros recursos cujo nível de suporte você pode consultar para usar o mesmo padrão mostrado no exemplo de código acima. Basta passar uma constante diferente da enumeração [**D3D12_FEATURE**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_feature) para [**ID3D12Device::CheckFeatureSupport**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-checkfeaturesupport) (para dizer à API em qual recurso solicitar informações de suporte) e passar um ponteiro para uma instância da estrutura correspondente (na qual receber as informações solicitadas).
 
 - Passe **D3D12_FEATURE_ARCHITECTURE** e [**D3D12_FEATURE_DATA_ARCHITECTURE**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_feature_data_architecture).
 - Passe **D3D12_FEATURE_ARCHITECTURE1** e [**D3D12_FEATURE_DATA_ARCHITECTURE1**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_feature_data_architecture1).
@@ -81,14 +81,14 @@ Além da camada de associação de recursos, há muitos outros recursos cujo ní
 
 ## <a name="hardware-support-for-dxgi-formats"></a>Suporte de hardware para formatos DXGI
 
-Para exibir tabelas de formatos de DXGI e recursos de hardware, consulte estes tópicos.
+Para exibir tabelas de formatos DXGI e recursos de hardware, consulte estes tópicos.
 
-- [Suporte ao formato DXGI para hardware 12,1 de nível de recurso Direct3D](/windows/desktop/direct3ddxgi/hardware-support-for-direct3d-12-1-formats)
-- [Suporte ao formato DXGI para hardware 12,0 de nível de recurso Direct3D](/windows/desktop/direct3ddxgi/hardware-support-for-direct3d-12-0-formats)
-- [Suporte ao formato DXGI para hardware 11,1 de nível de recurso Direct3D](/windows/desktop/direct3ddxgi/format-support-for-direct3d-11-1-feature-level-hardware)
-- [Suporte ao formato DXGI para hardware 11,0 de nível de recurso Direct3D](/windows/desktop/direct3ddxgi/format-support-for-direct3d-11-0-feature-level-hardware)
+- [Suporte ao formato DXGI para hardware de nível de recurso 12.1 do Direct3D](/windows/desktop/direct3ddxgi/hardware-support-for-direct3d-12-1-formats)
+- [Suporte ao formato DXGI para hardware de nível de recurso 12.0 do Direct3D](/windows/desktop/direct3ddxgi/hardware-support-for-direct3d-12-0-formats)
+- [Suporte ao formato DXGI para hardware de nível de recurso 11.1 do Direct3D](/windows/desktop/direct3ddxgi/format-support-for-direct3d-11-1-feature-level-hardware)
+- [Suporte ao formato DXGI para hardware de nível de recurso 11.0 do Direct3D](/windows/desktop/direct3ddxgi/format-support-for-direct3d-11-0-feature-level-hardware)
 - [Suporte de hardware para formatos Direct3D 10Level9](/previous-versions//ff471324(v=vs.85))
-- [Suporte de hardware para formatos Direct3D 10,1](/previous-versions//cc627091(v=vs.85))
+- [Suporte de hardware para formatos Direct3D 10.1](/previous-versions//cc627091(v=vs.85))
 - [Suporte de hardware para formatos Direct3D 10](/previous-versions//cc627090(v=vs.85))
 
 ## <a name="related-topics"></a>Tópicos relacionados

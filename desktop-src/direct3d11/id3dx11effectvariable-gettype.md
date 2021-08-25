@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 06a6a654dd815770da8913660b22215dfbecc36b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f0eae9da797ee22f85234383e2e54d97f4cb1045bcdd0216e70899b294b42378
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298498"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119894546"
 ---
 # <a name="id3dx11effectvariablegettype-method"></a>Método ID3DX11EffectVariable:: GetType
 
@@ -41,7 +41,7 @@ ID3DX11EffectType* GetType();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **ID3DX11EffectType**](id3dx11effecttype.md)\***
 

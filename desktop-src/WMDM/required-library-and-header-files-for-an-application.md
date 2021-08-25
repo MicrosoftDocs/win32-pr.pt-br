@@ -1,51 +1,51 @@
 ---
-title: Arquivos de biblioteca e de cabeçalho necessários para um aplicativo
-description: Arquivos de biblioteca e de cabeçalho necessários para um aplicativo
+title: Arquivos de biblioteca e de header necessários para um aplicativo
+description: Arquivos de biblioteca e de header necessários para um aplicativo
 ms.assetid: 922627d5-03a8-4b5b-be00-6f2c3500dd66
 keywords:
-- Gerenciador de Dispositivos de mídia do Windows, bibliotecas
+- Windows Bibliotecas Gerenciador de Dispositivos mídia
 - Gerenciador de Dispositivos, bibliotecas
-- Guia de programação, bibliotecas
-- aplicativos de área de trabalho, bibliotecas
-- Criando aplicativos do Windows Media Gerenciador de Dispositivos, bibliotecas
+- guia de programação, bibliotecas
+- aplicativos da área de trabalho, bibliotecas
+- criando Windows aplicativos de Gerenciador de Dispositivos mídia, bibliotecas
 - bibliotecas
-- Windows Media Gerenciador de Dispositivos, arquivos de cabeçalho
-- Gerenciador de Dispositivos, arquivos de cabeçalho
-- Guia de programação, arquivos de cabeçalho
-- aplicativos de área de trabalho, arquivos de cabeçalho
-- Criando aplicativos do Windows Media Gerenciador de Dispositivos, arquivos de cabeçalho
+- Windows Arquivos Gerenciador de Dispositivos mídia, arquivos de header
+- Gerenciador de Dispositivos, arquivos de header
+- guia de programação, arquivos de header
+- aplicativos da área de trabalho, arquivos de header
+- criando Windows mídia Gerenciador de Dispositivos aplicativos, arquivos de header
 - arquivos de cabeçalho
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a4a8a04ee6c3fe603d52139e83f81a49d78dc45
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 8b6630f4ff752b53ed69633d1e63a62093e4a4fbd16f65ccb1cc709aae120a07
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005647"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119863066"
 ---
-# <a name="required-library-and-header-files-for-an-application"></a>Arquivos de biblioteca e de cabeçalho necessários para um aplicativo
+# <a name="required-library-and-header-files-for-an-application"></a>Arquivos de biblioteca e de header necessários para um aplicativo
 
-Esta seção lista as bibliotecas, os arquivos de cabeçalho ou os arquivos IDL que você precisará incluir para desenvolver um aplicativo de Gerenciador de Dispositivos de mídia do Windows ou um plug-in. Conforme mencionado na [compilação dos arquivos IDL fornecidos com o SDK](compiling-the-idl-files-supplied-with-the-sdk.md), o SDK inclui arquivos IDL e arquivos de cabeçalho predefinidos, e seu aplicativo pode usar qualquer um deles. (Observe que alguns arquivos de cabeçalho não têm arquivos IDL correspondentes e você não pode criá-los por conta própria.) Se você estiver criando seus próprios arquivos IDL, inclua as dependências listadas em compilando os arquivos IDL fornecidos com o SDK.
+Esta seção lista as bibliotecas, arquivos de header ou arquivos IDL que você precisará incluir para desenvolver um aplicativo ou plug-in Windows Media Gerenciador de Dispositivos. Conforme mencionado em Compilando os arquivos IDL fornecidos com o SDK , o [SDK](compiling-the-idl-files-supplied-with-the-sdk.md)inclui arquivos IDL e arquivos de header pré-compilados, e seu aplicativo pode usar qualquer um deles. (Observe que alguns arquivos de header não têm arquivos IDL correspondentes e você não pode criar eles por conta própria.) Se estiver criando seus próprios arquivos IDL, inclua as dependências listadas em Compilando os arquivos IDL fornecidos com o SDK.
 
-Nem todos os aplicativos precisarão de todos os arquivos; Leia a descrição para saber se seu aplicativo requer um arquivo.
+Nem todos os aplicativos exigirão todos os arquivos; leia a descrição para saber se seu aplicativo requer um arquivo.
 
 
 
-| Cabeçalho ou biblioteca predefinida       | IDL equivalente                                | Descrição                                                                                                                                                                                                                                               |
+| Biblioteca ou header pré-construído       | IDL equivalente                                | Descrição                                                                                                                                                                                                                                               |
 |----------------------------------|-----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| mssachlp. lib                     | nenhum                                          | Exigido por todos os aplicativos. Contém os objetos do Windows Media Gerenciador de Dispositivos.                                                                                                                                                                              |
-| WMVCORE. lib                      | nenhum                                          | Exigido por aplicativos que usam funções ou objetos do Windows Media Format SDK.                                                                                                                                                                          |
-| Initguid. h                       | Nenhum (cabeçalho SDK da plataforma)                    | Exigido por todos os aplicativos para definir os valores de **GUID** usando o arquivo predefinido Mswmdm. h. Você deve incluir Initguid. h apenas uma vez no seu projeto. Esse cabeçalho redefine a macro **definir \_ GUID** para evitar problemas de nomenclatura de **GUID** externo. |
-| Mmreg. h                          | Nenhum (cabeçalho SDK da plataforma)                    | Exigido por aplicativos que fazem referência a várias definições padrão de formato de mídia do Windows, como **WAVEFORMATEX**.                                                                                                                                      |
-| mswmdm. h                         | WMDM. idlicomponentauthenticate. idl<br/> | Exigido por todos os aplicativos. Define todas as interfaces de aplicativo, bem como estruturas, metadados, erros e outras constantes.                                                                                                                        |
-| SAC. h                            | nenhum                                          | Exigido por todos os aplicativos. Define os protocolos SAC.                                                                                                                                                                                                      |
-| scclient. h                       | nenhum                                          | Exigido por todos os aplicativos. Declara a classe [CSecureChannelClient](csecurechannelclient-class.md) .                                                                                                                                                  |
-| wmdmlog. hwmdmlog \_ i. c<br/> | Wmdmlog. idl                                   | Exigido por aplicativos que usam a interface [**IWMDMLogger**](/windows/desktop/api/wmdmlog/nn-wmdmlog-iwmdmlogger) .                                                                                                                                                                       |
-| wmdrmdeviceapp. h                 | WMDRMDeviceApp. idl                            | Exigido por aplicativos ou plug-ins que atualizam os componentes DRM ou as contagens de planos de execução em dispositivos.                                                                                                                                                          |
-| WMSDK. h                          | Nenhum (fornecido pelo SDK do Windows Media Format)   | Necessário para aplicativos que usam os métodos do SDK do Windows Media Format.                                                                                                                                                                                      |
-| MtpExt. h                         | nenhum                                          | Necessário para aplicativos que chamam [**IWMDMDevice3::D eviceiocontrol**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevice3-deviceiocontrol) em dispositivos MTP. Define várias constantes e estruturas padrão do MTP.                                                                          |
-| Chave. c                            | nenhum                                          | Define uma chave e um certificado da Microsoft. A versão fornecida com o SDK inclui uma chave fictícia de teste que permitirá o uso de arquivos de mídia do Windows não protegidos por DRM.                                                                                |
+| mssachlp.lib                     | nenhum                                          | Exigido por todos os aplicativos. Contém Windows mídia Gerenciador de Dispositivos objetos.                                                                                                                                                                              |
+| wmvcore.lib                      | nenhum                                          | Exigido por aplicativos que usam Windows objetos ou funções do SDK de Formato de Mídia.                                                                                                                                                                          |
+| initguid.h                       | none (header do SDK da Plataforma)                    | Exigido por todos os aplicativos para definir **os valores guid** usando o arquivo Mswmdm.h pré-construído. Você deve incluir initguid.h uma vez e apenas uma vez em seu projeto. Esse header redefine a macro **DEFINE \_ GUID** para evitar problemas externos de nomeação de **GUID.** |
+| mmreg.h                          | none (header do SDK da Plataforma)                    | Exigido por aplicativos que referenciam várias definições Windows formato de mídia padrão, como **WAVEFORMATEX.**                                                                                                                                      |
+| mswmdm.h                         | WMDM.idlicomponentauthenticate.idl<br/> | Exigido por todos os aplicativos. Define todas as interfaces do aplicativo, bem como estruturas, metadados, erro e outras constantes.                                                                                                                        |
+| sac.h                            | nenhum                                          | Exigido por todos os aplicativos. Define protocolos SAC.                                                                                                                                                                                                      |
+| scclient.h                       | nenhum                                          | Exigido por todos os aplicativos. Declara a [classe CSecureChannelClient.](csecurechannelclient-class.md)                                                                                                                                                  |
+| wmdmlog.hwmdmlog \_ i.c<br/> | Wmdmlog.idl                                   | Exigido por aplicativos que usam a interface [**IWMDMLogger.**](/windows/desktop/api/wmdmlog/nn-wmdmlog-iwmdmlogger)                                                                                                                                                                       |
+| wmdrmdeviceapp.h                 | WMDRMDeviceApp.idl                            | Exigido por aplicativos ou plug-ins que atualizem componentes DRM ou contagens de reprodução de medidor em dispositivos.                                                                                                                                                          |
+| wmsdk.h                          | none (fornecido pelo Windows SDK de Formato de Mídia)   | Necessário para aplicativos que usam Windows SDK de Formato de Mídia.                                                                                                                                                                                      |
+| MtpExt.h                         | nenhum                                          | Necessário para aplicativos que chamam [**IWMDMDevice3::D eviceIoControl**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevice3-deviceiocontrol) em dispositivos MTP. Define várias constantes e estruturas MTP padrão.                                                                          |
+| Key.c                            | nenhum                                          | Define uma chave e um certificado da Microsoft. A versão enviada com o SDK inclui uma chave fiada de teste que permitirá o uso de arquivos de mídia não Windows DRM.                                                                                |
 
 
 

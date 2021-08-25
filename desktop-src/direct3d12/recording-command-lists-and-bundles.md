@@ -1,18 +1,18 @@
 ---
-title: Criação e gravação de listas de comandos e pacotes
+title: Criando e gravando listas de comandos e pacotes
 description: Este tópico descreve a gravação de listas de comandos e pacotes em aplicativos Direct3D 12. As listas de comandos e os pacotes permitem que os aplicativos registrem chamadas de desenho ou alteração de estado para execução posterior na GPU (unidade de processamento gráfico).
 ms.assetid: 0074B796-33A4-4AA1-A4E7-48A2A63F25B7
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d5ef2b54138cf3a08b85e3e8cc31f97cbe66abf6
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 480819cbd421b30cbf54a58578c02056d37d7e36bf2ead845c19e438df54cbb7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104548283"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119850703"
 ---
-# <a name="creating-and-recording-command-lists-and-bundles"></a>Criação e gravação de listas de comandos e pacotes
+# <a name="creating-and-recording-command-lists-and-bundles"></a>Criando e gravando listas de comandos e pacotes
 
 Este tópico descreve a gravação de listas de comandos e pacotes em aplicativos Direct3D 12. As listas de comandos e os pacotes permitem que os aplicativos registrem chamadas de desenho ou alteração de estado para execução posterior na GPU (unidade de processamento gráfico).
 
@@ -227,7 +227,7 @@ Algumas APIs de lista de comandos só podem ser chamadas em determinados tipos d
 | BuildRaytracingAccelerationStructure             | ✓        | ✓       |      |        |                |
 | ClearDepthStencilView                            | ✓        |         |      |        |                |
 | ClearRenderTargetView                            | ✓        |         |      |        |                |
-| Clearstate                                       | ✓        | ✓       |      |        |                |
+| ClearState                                       | ✓        | ✓       |      |        |                |
 | ClearUnorderedAccessViewFloat                    | ✓        | ✓       |      |        |                |
 | ClearUnorderedAccessViewUint                     | ✓        | ✓       |      |        |                |
 | CopyBufferRegion                                 | ✓        | ✓       | ✓    |        |                |
@@ -241,7 +241,7 @@ Algumas APIs de lista de comandos só podem ser chamadas em determinados tipos d
 | DrawIndexedInstanced                             | ✓        |         |      | ✓      | ✓              |
 | DrawInstanced                                    | ✓        |         |      | ✓      | ✓              |
 | EmitRaytracingAccelerationStructurePostbuildInfo | ✓        | ✓       |      |        |                |
-| Endquery                                         | ✓        | ✓       | ✓    |        | ✓              |
+| EndQuery                                         | ✓        | ✓       | ✓    |        | ✓              |
 | EndRenderPass                                    | ✓        |         |      |        | ✓              |
 | ExecuteBundle                                    | ✓        |         |      |        | ✓              |
 | ExecuteIndirect                                  | ✓        | ✓       |      | ✓      | ✓              |
@@ -277,7 +277,7 @@ Algumas APIs de lista de comandos só podem ser chamadas em determinados tipos d
 | SetGraphicsRootShaderResourceView                | ✓        |         |      | ✓      | ✓              |
 | SetGraphicsRootSignature                         | ✓        |         |      | ✓      | ✓              |
 | SetGraphicsRootUnorderedAccessView               | ✓        |         |      | ✓      | ✓              |
-| Setpipelinestate                                 | ✓        | ✓       |      | ✓      | ✓              |
+| SetPipelineState                                 | ✓        | ✓       |      | ✓      | ✓              |
 | SetPipelineState1                                | ✓        | ✓       |      | ✓      |                |
 | SetPredication                                   | ✓        | ✓       |      |        | ✓              |
 | SetProtectedResourceSession                      | ✓        | ✓       | ✓    |        |                |
@@ -300,7 +300,7 @@ As seguintes chamadas à API de lista de comandos não são permitidas em listas
 -   [**ResolveSubresource**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resolvesubresource)
 -   [**SetPredication**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setpredication)
 -   [**BeginQuery**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-beginquery)
--   [**Endquery**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-endquery)
+-   [**EndQuery**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-endquery)
 -   [**SOSetTargets**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-sosettargets)
 -   [**OMSetRenderTargets**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-omsetrendertargets)
 -   [**RSSetViewports**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-rssetviewports)

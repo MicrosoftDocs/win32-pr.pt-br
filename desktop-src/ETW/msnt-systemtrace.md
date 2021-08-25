@@ -13,12 +13,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 2eb0044029761a93a353a08a955d39d76c267f9a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c083f7a2336a374e8009af2ba8094d57d9826197e16b7577aaf3b00a4c035173
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967467"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119829616"
 ---
 # <a name="msnt_systemtrace-class"></a>\_Classe MSNT SystemTrace
 
@@ -57,7 +57,7 @@ Tipo de dados: **UInt32**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **DefineValues {" \_ \_ \_ processo de sinalizador de rastreamento de eventos", " \_ thread de sinalizador de rastreamento de eventos \_ \_ ", " \_ \_ carregamento de imagem do sinalizador de rastreamento de eventos", "contadores de processo de sinalizador de rastreamento de eventos" \_ \_ \_ \_ \_ \_ , " \_ sinalizador de rastreamento de eventos \_ \_ CSWITCH", " \_ \_ sinal de rastreamento de eventos \_ DPC", " \_ \_ \_ interrupção de sinalizador de rastreamento de eventos", " \_ sinalizador de rastreamento de evento \_ \_ SYSTEMCALL", "sinalizador de rastreamento de eventos \_ \_ \_ \_ e/s de disco", "sinalizador de rastreamento de eventos \_ \_ \_ \_ \_ e/s de arquivo de disco", "sinalizador de rastreamento de eventos, e/s de disco", "Dispatcher de sinalizador de rastreamento de eventos", "falha de página de sinalizador de rastreamento de eventos", \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ registro de sinalizador de rastreamento de evento "," \_ sinalizador de rastreamento de evento \_ \_ ALPC "," sinalizador de rastreamento de eventos \_ \_ \_ dividir \_ e/s "," \_ Driver de sinalizador de rastreamento de eventos " \_ \_ ," \_ \_ \_ perfil de sinalizador de rastreamento de eventos "," \_ \_ \_ \_ e/s de arquivo de sinalizador de rastreamento de eventos ", \_ \_ Flag \_ File \_ Io \_ init"}**, **ValueMap {"0x00000001", "0x00000002", "0x00000004", "0x00000008", "0x00000010", "0x00000020", "0x00000040", "0x00000080", "0x00000100" , "0x00000200", "0x00000400", "0x00000800", "0x00001000", "0x00002000", "0x00004000", "0x00010000", "0x00020000", "0x00100000", "0x00200000", "0x00800000", "0x01000000", "0x02000000", "0x04000000"}**
+Qualificadores: **DefineValues {" \_ \_ processo de sinalizador de rastreamento de eventos", "thread de sinalizador de rastreamento de eventos", "carga de imagem do sinalizador de rastreamento de eventos", "contadores de processo de sinalizador de rastreamento de eventos", "sinalizador de rastreamento de eventos SYSTEMCALL", "sinalizador de rastreamento de eventos \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ e e/s de disco", " \_ sinalizador de rastreamento de eventos \_ \_ \_ \_ e/s de arquivo de disco", "sinalizador de rastreamento de eventos \_ \_ \_ \_ init de e/s de disco", "Dispatcher de sinalizador de rastreamento de eventos", "falha de página de sinalizador de rastreamento de evento", "tcpip de rastreamento de eventos", " \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ registro de sinalizador de rastreamento de eventos", " \_ sinalizador de rastreamento de eventos \_ \_ ALPC", " \_ \_ Sinalizador de rastreamento \_ de eventos dividir \_ e/s "," \_ Driver de \_ sinalizador \_ de rastreamento de eventos "," \_ perfil de \_ sinalizador de rastreamento de eventos \_ "," \_ e/s de arquivo de sinalizador de rastreamento de eventos \_ \_ \_ "," arquivo de sinalizador de rastreamento de eventos, \_ \_ \_ \_ e/ \_** SS "," **0x00000008 "," 0x00000010 "," 0x00000020 "," 0x00000040 "," 0x00000080 "," 0x00000100 "," 0x00000200 "," 0x00000400 "," 0x00000800 "," 0x00001000 "," 0x00002000 "," 0x00004000 "," 0x00010000 "," 0x00020000 "," 0x00100000 "," 0x00200000 "," 0x00800000 "," 0x01000000 "," 0x02000000 "," 0x04000000 "}**
 </dt> </dl>
 
 Habilite o sinalizador que indica os provedores de kernel habilitados.

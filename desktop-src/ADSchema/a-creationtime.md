@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f4a695495d33e47a3597db9954f3b563245eab05
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 64f5dc7c772ab71ef062077c2ab7de7f6039c6fcb18d238e90f82d54c7a58fdb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104500106"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119926086"
 ---
 # <a name="creation-time-attribute"></a>Creation-Time atributo
 
@@ -58,7 +58,7 @@ A data e a hora em que o objeto foi criado.
 | ID do link                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
 | System-Only            | Falso                                                                                              |
-| É de valor único       | True                                                                                               |
+| É de valor único       | Verdadeiro                                                                                               |
 | É indexado             | Falso                                                                                              |
 | No catálogo global      | Falso                                                                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                       |
@@ -79,7 +79,7 @@ A data e a hora em que o objeto foi criado.
 | ID do link                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
 | System-Only            | Falso                                                                                              |
-| É de valor único       | True                                                                                               |
+| É de valor único       | Verdadeiro                                                                                               |
 | É indexado             | Falso                                                                                              |
 | No catálogo global      | Falso                                                                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                       |
@@ -100,7 +100,7 @@ A data e a hora em que o objeto foi criado.
 | ID do link                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
 | System-Only            | Falso                                                                                              |
-| É de valor único       | True                                                                                               |
+| É de valor único       | Verdadeiro                                                                                               |
 | É indexado             | Falso                                                                                              |
 | No catálogo global      | Falso                                                                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                       |
@@ -121,7 +121,7 @@ A data e a hora em que o objeto foi criado.
 | ID do link                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
 | System-Only            | Falso                                                                                              |
-| É de valor único       | True                                                                                               |
+| É de valor único       | Verdadeiro                                                                                               |
 | É indexado             | Falso                                                                                              |
 | No catálogo global      | Falso                                                                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                       |
@@ -142,7 +142,7 @@ A data e a hora em que o objeto foi criado.
 | ID do link                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
 | System-Only            | Falso                                                                                              |
-| É de valor único       | True                                                                                               |
+| É de valor único       | Verdadeiro                                                                                               |
 | É indexado             | Falso                                                                                              |
 | No catálogo global      | Falso                                                                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                       |
@@ -163,7 +163,7 @@ A data e a hora em que o objeto foi criado.
 | ID do link                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
 | System-Only            | Falso                                                                                              |
-| É de valor único       | True                                                                                               |
+| É de valor único       | Verdadeiro                                                                                               |
 | É indexado             | Falso                                                                                              |
 | No catálogo global      | Falso                                                                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                       |

@@ -16,12 +16,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 06f33d3b55c2c35526495d492b0f063fee9c1a0c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 6ba5e6a3dd95fb4db74435f0bc38c03563117bfebe4fb8b1ef6a6e247dc24106
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920433"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119925026"
 ---
 # <a name="cim_collectionofsensors-class"></a>\_Classe CIM CollectionOfSensors
 

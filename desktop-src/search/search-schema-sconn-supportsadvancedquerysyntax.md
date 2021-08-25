@@ -1,19 +1,19 @@
 ---
-description: O elemento booliano <supportsAdvancedQuerySyntax> especifica se o provedor de pesquisa dá suporte à sintaxe de consulta avançada. O padrão é falso. Esse elemento é opcional e não tem nenhum elemento filho e nenhum atributo.
+description: O elemento <supportsAdvancedQuerySyntax> booliana especifica se o provedor de pesquisa dá suporte à Sintaxe de Consulta Avançada. O padrão é falso. Esse elemento é opcional e não tem nenhum elemento filho e nenhum atributos.
 ms.assetid: d4aef1f1-63c8-4e9a-9e22-5efbb8c523b2
 title: Elemento supportsAdvancedQuerySyntax (esquema do conector de pesquisa)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 39d31eb96615c952f703729fd9d22f2e5d27f38b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a8235c1021ae04cbbce65500ebf008f645ef74c1f2bb6ea7f3a9edfe4253e035
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105763152"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119844506"
 ---
 # <a name="supportsadvancedquerysyntax-element-search-connector-schema"></a>Elemento supportsAdvancedQuerySyntax (esquema do conector de pesquisa)
 
-O elemento booliano <supportsAdvancedQuerySyntax> especifica se o provedor de pesquisa dá suporte à [sintaxe de consulta avançada](-search-3x-advancedquerysyntax.md). O padrão é falso. Esse elemento é opcional e não tem nenhum elemento filho e nenhum atributo.
+O elemento <supportsAdvancedQuerySyntax> booliana especifica se o provedor de pesquisa dá suporte à [Sintaxe de Consulta Avançada](-search-3x-advancedquerysyntax.md). O padrão é falso. Esse elemento é opcional e não tem nenhum elemento filho e nenhum atributos.
 
 ## <a name="syntax"></a>Syntax
 
@@ -47,7 +47,7 @@ O elemento booliano <supportsAdvancedQuerySyntax> especifica se o provedor de pe
 
 ## <a name="remarks"></a>Comentários
 
-O valor `true` indica que o provedor de pesquisa dá suporte à sintaxe de consulta avançada enviada em consultas de pesquisa.
+O valor indica que o provedor de pesquisa dá `true` suporte à Sintaxe de Consulta Avançada enviada em consultas de pesquisa.
 
 ## <a name="example"></a>Exemplo
 

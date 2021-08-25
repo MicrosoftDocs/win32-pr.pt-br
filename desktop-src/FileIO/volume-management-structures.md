@@ -4,12 +4,12 @@ ms.assetid: bbde9dfb-c205-4432-be71-250d73b881f1
 title: Estruturas de gerenciamento de volume
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7fcadb770f702861d4c3d347e1c2018cc0086ac4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e80416e238658ba728a2813f1b1b67a5c47521e0f6e73a2c0a6bf2e1413a1d64
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501604"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119914306"
 ---
 # <a name="volume-management-structures"></a>Estruturas de gerenciamento de volume
 
@@ -66,9 +66,9 @@ Estruturas usadas no gerenciamento de volume.
 | [**\_Registro USN \_ v3**](/windows/desktop/api/WinIoCtl/ns-winioctl-usn_record_v3)<br/>                                                     | Contém as informações de um registro de alteração de USN (número de sequência de atualização) da versão 3,0.<br/>                                                                                                                                                                                                              |
 | [**\_Registro USN \_ v4**](/windows/desktop/api/WinIoCtl/ns-winioctl-usn_record_v4)<br/>                                                     | Contém as informações de um registro de alteração de USN (número de sequência de atualização) da versão 4,0. Os registros da versão 2,0 e 3,0 são definidos pelo [**\_ registro USN \_ v2**](/windows/desktop/api/WinIoCtl/ns-winioctl-usn_record_v2) (também chamado **de \_ registro USN**) e estruturas [**\_ \_ v3 de registro USN**](/windows/desktop/api/WinIoCtl/ns-winioctl-usn_record_v3) , respectivamente.<br/>             |
 | [**\_ \_ intervalos modificados de faixa USN \_**](/windows/desktop/api/WinIoCtl/ns-winioctl-usn_track_modified_ranges)<br/>                            | Contém informações sobre parâmetros de controle de intervalo para um diário de alterações de USN (número de sequência de atualização) usando o código de controle de [**\_ \_ \_ \_ intervalos modificados**](/windows/win32/api/winioctl/ni-winioctl-fsctl_usn_track_modified_ranges) de faixas de fsctl USN.<br/>                                                                                                  |
-| [**\_buffer de bitmap de volume \_**](/windows/desktop/api/WinIoCtl/ns-winioctl-volume_bitmap_buffer)<br/>                                   | Representa os clusters ocupados e disponíveis em um disco.<br/>                                                                                                                                                                                                                                                    |
-| [**\_extensões de disco de volume \_**](/windows/desktop/api/WinIoCtl/ns-winioctl-volume_disk_extents)<br/>                                     | Representa um local físico em um disco.<br/>                                                                                                                                                                                                                                                                    |
-| [**informações de atributos de obtenção de VOLUME do \_ \_ GPT \_ \_**](/windows/desktop/api/WinIoCtl/ns-winioctl-volume_get_gpt_attributes_information)<br/>   | Contém os atributos de volume recuperados com o volume IOCTL obter o código de controle de [**\_ \_ \_ \_ atributos GPT**](/windows/desktop/api/WinIoCtl/ni-winioctl-ioctl_volume_get_gpt_attributes) .<br/>                                                                                                                                                                   |
+| [**BUFFER \_ DE BITMAP \_ DE VOLUME**](/windows/desktop/api/WinIoCtl/ns-winioctl-volume_bitmap_buffer)<br/>                                   | Representa os clusters ocupados e disponíveis em um disco.<br/>                                                                                                                                                                                                                                                    |
+| [**EXTENSÃO \_ DE DISCO DE \_ VOLUME**](/windows/desktop/api/WinIoCtl/ns-winioctl-volume_disk_extents)<br/>                                     | Representa um local físico em um disco.<br/>                                                                                                                                                                                                                                                                    |
+| [**INFORMAÇÕES \_ DE ATRIBUTOS DE \_ GPT DE OBTER \_ \_ VOLUME**](/windows/desktop/api/WinIoCtl/ns-winioctl-volume_get_gpt_attributes_information)<br/>   | Contém atributos de volume recuperados com o código de controle [**\_ IOCTL VOLUME GET \_ \_ GPT \_ ATTRIBUTES.**](/windows/desktop/api/WinIoCtl/ni-winioctl-ioctl_volume_get_gpt_attributes)<br/>                                                                                                                                                                   |
 
 
 

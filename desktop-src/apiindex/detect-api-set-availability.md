@@ -3,16 +3,16 @@ description: Descreve como detectar se um conjunto de API específico está disp
 title: Detectar disponibilidade do conjunto de API
 ms.topic: article
 ms.date: 10/14/2020
-ms.openlocfilehash: 7117ae82f142315a3e5f28065583381ef6af67f3
-ms.sourcegitcommit: 0c786b1682063d0cae0fc43180945183fa2c7981
+ms.openlocfilehash: cc4e26c6e59cfa0af095b297efb72a52d0be30a89a23d42d169e3bf45e72fd13
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "104084996"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119896526"
 ---
 # <a name="detect-api-set-availability"></a>Detectar disponibilidade do conjunto de API
 
-Em alguns casos, um determinado nome de contrato de conjunto de API pode ser mapeado intencionalmente para um nome de módulo vazio em alguns dispositivos Windows 10. Os motivos para isso variam, mas um exemplo comum é que um recurso caro em termos de recursos do sistema pode ser removido do sistema operacional Windows quando configurado para um dispositivo com restrição de recursos. Isso representa um desafio para que os aplicativos manipulem normalmente recursos opcionais no nível da API.
+em alguns casos, um determinado nome de contrato de conjunto de API pode ser mapeado intencionalmente para um nome de módulo vazio em alguns dispositivos Windows 10. os motivos para isso variam, mas um exemplo comum é que um recurso caro em termos de recursos do sistema pode ser removido do sistema operacional Windows quando configurado para um dispositivo com restrição de recursos. Isso representa um desafio para que os aplicativos manipulem normalmente recursos opcionais no nível da API.
 
 A abordagem tradicional para testar se uma API Win32 está disponível é usar [LoadLibrary](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) ou [GetProcAddress](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress). No entanto, esses não são meios confiáveis para testar os conjuntos de API devido ao suporte de [encaminhamento reverso](api-set-loader-operation.md#reverse-forwarding) no Windows 10. Quando o encaminhamento reverso é aplicado a uma determinada API, **LoadLibrary** ou **GetProcAddress** pode resolver para um ponteiro de função válido mesmo nos casos em que a implementação interna foi removida. Nesse caso, o ponteiro de função estará apontando para uma função de stub que simplesmente retorna um erro.
 

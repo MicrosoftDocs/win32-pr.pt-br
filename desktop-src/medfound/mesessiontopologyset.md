@@ -1,30 +1,30 @@
 ---
-description: 'Gerado depois que o método IMFMediaSession:: settopology é concluído de forma assíncrona. A sessão de mídia gera esse evento depois que resolve a topologia em uma topologia completa e enfileira a topologia para reprodução.'
+description: Gerado após o método IMFMediaSession::SetTopology ser concluído de forma assíncrona. A Sessão de Mídia acionará esse evento depois de resolver a topologia em uma topologia completa e enfilfilar a topologia para reprodução.
 ms.assetid: 22a298b7-d32b-44ed-b0a1-4e0398ecfe04
-title: Evento MESessionTopologySet (Mfobjects. h)
+title: Evento MESessionTopologySet (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 338668b0ec9b4dd81140edfb55a823a5a595459b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ba2b5454309855ff472c633388cddabe0c12fab09e2ae462aacd2de49c3c9bba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921281"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119957396"
 ---
 # <a name="mesessiontopologyset-event"></a>Evento MESessionTopologySet
 
-Gerado depois que o método [**IMFMediaSession:: settopology**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-settopology) é concluído de forma assíncrona. A sessão de mídia gera esse evento depois que resolve a topologia em uma topologia completa e enfileira a topologia para reprodução.
+Gerado após o [**método IMFMediaSession::SetTopology**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-settopology) ser concluído de forma assíncrona. A Sessão de Mídia acionará esse evento depois de resolver a topologia em uma topologia completa e enfilfilar a topologia para reprodução.
 
 ## <a name="event-values"></a>Valores de evento
 
-Os valores possíveis recuperados de [**IMFMediaEvent:: GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) incluem o seguinte.
+Os valores possíveis recuperados [**de IMFMediaEvent::GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) incluem o seguinte.
 
 
 
-| VARTYPE                | Descrição                                                                                              |
+| Vartype                | Descrição                                                                                              |
 |------------------------|----------------------------------------------------------------------------------------------------------|
-| VT \_ vazio<br/>   | Nenhum dado do evento.<br/> <br/>                                                                    |
-| VT \_ desconhecido<br/> | Ponteiro para a interface [**IMFTopology**](/windows/desktop/api/mfidl/nn-mfidl-imftopology) da topologia completa.<br/> <br/> |
+| VT \_ VAZIO<br/>   | Nenhum dado do evento.<br/> <br/>                                                                    |
+| VT \_ UNKNOWN<br/> | Ponteiro para a interface [**IMFTopology**](/windows/desktop/api/mfidl/nn-mfidl-imftopology) da topologia completa.<br/> <br/> |
 
 
 
@@ -65,9 +65,9 @@ HRESULT GetTopologyFromEvent(IMFMediaEvent *pEvent, IMFTopology **ppTopology)
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>Mfobjects. h (incluir Mfidl. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Mfobjects.h (inclua Mfidl.h)</dt> </dl> |
 
 
 
@@ -75,7 +75,7 @@ HRESULT GetTopologyFromEvent(IMFMediaEvent *pEvent, IMFTopology **ppTopology)
 
 <dl> <dt>
 
-[Eventos de Media Foundation](media-foundation-events.md)
+[Media Foundation eventos](media-foundation-events.md)
 </dt> </dl>
 
  

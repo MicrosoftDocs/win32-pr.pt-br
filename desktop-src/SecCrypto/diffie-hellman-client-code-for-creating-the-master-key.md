@@ -4,12 +4,12 @@ ms.assetid: 37b35cd6-b3c9-4a75-83a9-129bcf7a84a3
 title: Diffie-Hellman o código de cliente para criar a chave mestra
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 16ca234b34bdafa41000a702f31264c6b1a0b180
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 885e105596734925b1e84a1b7bf5c08e42fcf09ce1f694843615a53ab9a38406
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297679"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119875546"
 ---
 # <a name="diffie-hellman-client-code-for-creating-the-master-key"></a>Diffie-Hellman o código de cliente para criar a chave mestra
 

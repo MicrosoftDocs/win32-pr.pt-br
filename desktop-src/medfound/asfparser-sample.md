@@ -4,12 +4,12 @@ ms.assetid: 6be1e12f-7d4a-4564-88ae-14fd71fd2cf9
 title: Exemplo de ASFParser
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c159b481e22d77b0bee9adccbbb74073398c12b3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 50db441be45d28899bc8f2ace68b8f09af40e679449d26aec7adf25ab4fb9e2f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164221"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119959546"
 ---
 # <a name="asfparser-sample"></a>Exemplo de ASFParser
 
@@ -54,7 +54,7 @@ Este exemplo demonstra as seguintes interfaces de Microsoft Media Foundation:
 
 ## <a name="downloading-the-sample"></a>Baixando o exemplo
 
-Este exemplo está disponível no [repositório GitHub de exemplos clássicos do Windows](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/mediafoundation/asfparser).
+este exemplo está disponível no [repositório github de amostras clássicas do Windows](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/mediafoundation/asfparser).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

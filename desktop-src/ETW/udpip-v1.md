@@ -1,7 +1,7 @@
 ---
-description: Classe UdpIp_V1-essa classe é a classe pai para eventos UDP/IP. A sintaxe a seguir é simplificada do código MOF.
+description: UdpIp_V1 classe - essa classe é a classe pai para eventos UDP/IP. A sintaxe a seguir é simplificada do código MOF.
 ms.assetid: 31672a5a-05b2-4382-b793-7a793d985951
-title: Classe UdpIp_V1
+title: UdpIp_V1 classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,14 +12,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 5035cd764c1b3a7eb0943622897d97684ec8bd61
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: f7eca611161e049b3704a37cec5b9324df6348e30fb457d0053c4cbb4085ca3e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105394"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119914326"
 ---
-# <a name="udpip_v1-class"></a>\_Classe UdpIp v1
+# <a name="udpip_v1-class"></a>Classe UdpIp \_ V1
 
 Essa classe é a classe pai para eventos UDP/IP.
 
@@ -36,11 +36,11 @@ class UdpIp_V1 : MSNT_SystemTrace
 
 ## <a name="members"></a>Membros
 
-A classe **UdpIp \_ v1** não define nenhum membro.
+A **classe UdpIp \_ V1** não define nenhum membro.
 
 ## <a name="remarks"></a>Comentários
 
-**Windows Server 2003:** Contém o qualificador de classe EventVersion (1).
+**Windows Server 2003:** Contém o qualificador de classe EventVersion(1).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -48,16 +48,16 @@ A classe **UdpIp \_ v1** não define nenhum membro.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>          |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[**MSNT \_ SystemTrace**](msnt-systemtrace.md)
+[**SystemTrace do MSNT \_**](msnt-systemtrace.md)
 </dt> <dt>
 
 [**UdpIp**](udpip.md)
@@ -66,7 +66,7 @@ A classe **UdpIp \_ v1** não define nenhum membro.
 [**UdpIp \_ V0**](udpip-v0.md)
 </dt> <dt>
 
-[**UdpIp \_ v1 \_ TypeGroup1**](udpip-v1-typegroup1.md)
+[**UdpIp \_ V1 \_ TypeGroup1**](udpip-v1-typegroup1.md)
 </dt> </dl>
 
  

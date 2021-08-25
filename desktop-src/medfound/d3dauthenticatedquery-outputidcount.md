@@ -1,7 +1,7 @@
 ---
-description: Retorna o número de identificadores de saída associados a uma sessão criptográfica especificada e ao dispositivo Direct3D.
+description: Retorna o número de identificadores de saída associados a uma sessão de criptografia especificada e ao dispositivo Direct3D.
 ms.assetid: a5b17250-6a40-40a9-93b6-3b98b56b09d6
-title: D3DAUTHENTICATEDQUERY_OUTPUTIDCOUNT (D3d9types. h)
+title: D3DAUTHENTICATEDQUERY_OUTPUTIDCOUNT (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,24 +13,24 @@ api_type:
 - HeaderDef
 api_location:
 - d3d9types.h
-ms.openlocfilehash: 624b9ca0ee96f71fb9d3cb655aa9c10030a40efe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c6a3da90d467701decfe5f96383e06026325e86c2622ec0f05f4703b06e2cbe8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646597"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119828506"
 ---
 # <a name="d3dauthenticatedquery_outputidcount"></a>D3DAUTHENTICATEDQUERY \_ OUTPUTIDCOUNT
 
-Retorna o número de identificadores de saída associados a uma sessão criptográfica especificada e ao dispositivo Direct3D.
+Retorna o número de identificadores de saída associados a uma sessão de criptografia especificada e ao dispositivo Direct3D.
 
 
 
 | Requisito | Valor |
 |-------------|------------------------------------------------------------------------------------------------------------------|
-| GUID de consulta  | **D3DAUTHENTICATEDQUERY \_ OUTPUTIDCOUNT**                                                                         |
-| Dados de entrada  | [**\_Entrada D3DAUTHENTICATEDCHANNEL QUERYOUTPUTIDCOUNT \_**](d3dauthenticatedchannel-queryoutputidcount-input.md)   |
-| Retornar dados | [**\_Saída D3DAUTHENTICATEDCHANNEL QUERYOUTPUTIDCOUNT \_**](d3dauthenticatedchannel-queryoutputidcount-output.md) |
+| GUID de Consulta  | **D3DAUTHENTICATEDQUERY \_ OUTPUTIDCOUNT**                                                                         |
+| Dados de entrada  | [**ENTRADA D3DAUTHENTICATEDCHANNEL \_ QUERYOUTPUTIDCOUNT \_**](d3dauthenticatedchannel-queryoutputidcount-input.md)   |
+| Retornar dados | [**SAÍDA D3DAUTHENTICATEDCHANNEL \_ QUERYOUTPUTIDCOUNT \_**](d3dauthenticatedchannel-queryoutputidcount-output.md) |
 
 
 
@@ -38,10 +38,10 @@ Retorna o número de identificadores de saída associados a uma sessão criptogr
 
 ## <a name="remarks"></a>Comentários
 
-Os seguintes tipos de canal dão suporte a esta consulta:
+Os seguintes tipos de canal são suportados por esta consulta:
 
--   **\_Hardware do driver D3DAUTHENTICATEDCHANNEL \_**
--   **\_Software de driver D3DAUTHENTICATEDCHANNEL \_**
+-   **HARDWARE DO DRIVER D3DAUTHENTICATEDCHANNEL \_ \_**
+-   **SOFTWARE DO DRIVER D3DAUTHENTICATEDCHANNEL \_ \_**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,9 +49,9 @@ Os seguintes tipos de canal dão suporte a esta consulta:
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                                |
-| parâmetro<br/>                   | <dl> <dt>D3d9types. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/>                                |
+| Cabeçalho<br/>                   | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 
@@ -59,13 +59,13 @@ Os seguintes tipos de canal dão suporte a esta consulta:
 
 <dl> <dt>
 
-[Consultas de Proteção de Conteúdo](content-protection-queries.md)
+[Proteção de Conteúdo consultas](content-protection-queries.md)
 </dt> <dt>
 
-[Proteção de Conteúdo baseado em GPU](gpu-based-content-protection.md)
+[Dados baseados em GPU Proteção de Conteúdo](gpu-based-content-protection.md)
 </dt> <dt>
 
-[**IDirect3DAuthenticatedChannel9:: Query**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-query)
+[**IDirect3DAuthenticatedChannel9::Query**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-query)
 </dt> </dl>
 
  

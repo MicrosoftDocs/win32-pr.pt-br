@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1fecaa174659248d08a8bfd6433a505a77386dd1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 1cc9157730bce827c51a8705385afa61a92abc1d0d8f874844ac74d57fc31557
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105755449"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119925986"
 ---
 # <a name="desktop-profile-attribute"></a>Desktop-Profile atributo
 
@@ -59,7 +59,7 @@ O local do perfil de área de trabalho para um usuário ou grupo de usuários. N
 | ID do link                | \-                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                |
 | System-Only            | Falso                                                                                                                                                                             |
-| É de valor único       | True                                                                                                                                                                              |
+| É de valor único       | Verdadeiro                                                                                                                                                                              |
 | É indexado             | Falso                                                                                                                                                                             |
 | No catálogo global      | Falso                                                                                                                                                                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                      |
@@ -80,7 +80,7 @@ O local do perfil de área de trabalho para um usuário ou grupo de usuários. N
 | ID do link                | \-                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                |
 | System-Only            | Falso                                                                                                                                                                             |
-| É de valor único       | True                                                                                                                                                                              |
+| É de valor único       | Verdadeiro                                                                                                                                                                              |
 | É indexado             | Falso                                                                                                                                                                             |
 | No catálogo global      | Falso                                                                                                                                                                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                      |
@@ -101,7 +101,7 @@ O local do perfil de área de trabalho para um usuário ou grupo de usuários. N
 | ID do link                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
 | System-Only            | Falso                                                                                              |
-| É de valor único       | True                                                                                               |
+| É de valor único       | Verdadeiro                                                                                               |
 | É indexado             | Falso                                                                                              |
 | No catálogo global      | Falso                                                                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                       |
@@ -122,15 +122,15 @@ O local do perfil de área de trabalho para um usuário ou grupo de usuários. N
 | ID do link                | \-                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                |
 | System-Only            | Falso                                                                                                                                                                             |
-| É de valor único       | True                                                                                                                                                                              |
+| Tem valor único       | Verdadeiro                                                                                                                                                                              |
 | É indexado             | Falso                                                                                                                                                                             |
-| No catálogo global      | Falso                                                                                                                                                                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                      |
+| No Catálogo Global      | Falso                                                                                                                                                                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                      |
 | Range-Lower            | \-                                                                                                                                                                                |
 | Range-Upper            | \-                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                                                                                        |
-| Classes usadas em        | [**Grupo**](c-group.md)<br/> [**Unidade organizacional**](c-organizationalunit.md)<br/> [**Sam-domínio**](c-samdomain.md)<br/> [**Usuário**](c-user.md)<br/> |
+| Classes usadas em        | [**Grupo**](c-group.md)<br/> [**Unidade organizacional**](c-organizationalunit.md)<br/> [**Domínio Sam**](c-samdomain.md)<br/> [**Usuário**](c-user.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ O local do perfil de área de trabalho para um usuário ou grupo de usuários. N
 | ID do link                | \-                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                |
 | System-Only            | Falso                                                                                                                                                                             |
-| É de valor único       | True                                                                                                                                                                              |
+| Tem valor único       | Verdadeiro                                                                                                                                                                              |
 | É indexado             | Falso                                                                                                                                                                             |
-| No catálogo global      | Falso                                                                                                                                                                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                      |
+| No Catálogo Global      | Falso                                                                                                                                                                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                      |
 | Range-Lower            | \-                                                                                                                                                                                |
 | Range-Upper            | \-                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                                                                                        |
-| Classes usadas em        | [**Grupo**](c-group.md)<br/> [**Unidade organizacional**](c-organizationalunit.md)<br/> [**Sam-domínio**](c-samdomain.md)<br/> [**Usuário**](c-user.md)<br/> |
+| Classes usadas em        | [**Grupo**](c-group.md)<br/> [**Unidade organizacional**](c-organizationalunit.md)<br/> [**Domínio Sam**](c-samdomain.md)<br/> [**Usuário**](c-user.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ O local do perfil de área de trabalho para um usuário ou grupo de usuários. N
 | ID do link                | \-                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                |
 | System-Only            | Falso                                                                                                                                                                             |
-| É de valor único       | True                                                                                                                                                                              |
+| Tem valor único       | Verdadeiro                                                                                                                                                                              |
 | É indexado             | Falso                                                                                                                                                                             |
-| No catálogo global      | Falso                                                                                                                                                                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                      |
+| No Catálogo Global      | Falso                                                                                                                                                                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                      |
 | Range-Lower            | \-                                                                                                                                                                                |
 | Range-Upper            | \-                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                                                                                        |
-| Classes usadas em        | [**Grupo**](c-group.md)<br/> [**Unidade organizacional**](c-organizationalunit.md)<br/> [**Sam-domínio**](c-samdomain.md)<br/> [**Usuário**](c-user.md)<br/> |
+| Classes usadas em        | [**Grupo**](c-group.md)<br/> [**Unidade organizacional**](c-organizationalunit.md)<br/> [**Domínio Sam**](c-samdomain.md)<br/> [**Usuário**](c-user.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ O local do perfil de área de trabalho para um usuário ou grupo de usuários. N
 | ID do link                | \-                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                |
 | System-Only            | Falso                                                                                                                                                                             |
-| É de valor único       | True                                                                                                                                                                              |
+| Tem valor único       | Verdadeiro                                                                                                                                                                              |
 | É indexado             | Falso                                                                                                                                                                             |
-| No catálogo global      | Falso                                                                                                                                                                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                      |
+| No Catálogo Global      | Falso                                                                                                                                                                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                      |
 | Range-Lower            | \-                                                                                                                                                                                |
 | Range-Upper            | \-                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                                                                                        |
-| Classes usadas em        | [**Grupo**](c-group.md)<br/> [**Unidade organizacional**](c-organizationalunit.md)<br/> [**Sam-domínio**](c-samdomain.md)<br/> [**Usuário**](c-user.md)<br/> |
+| Classes usadas em        | [**Grupo**](c-group.md)<br/> [**Unidade organizacional**](c-organizationalunit.md)<br/> [**Domínio Sam**](c-samdomain.md)<br/> [**Usuário**](c-user.md)<br/> |
 
 
 

@@ -1,20 +1,20 @@
 ---
 title: ODJ_POLICY_DNS_DOMAIN_INFO
-description: Definição de IDL de ODJ_POLICY_DNS_DOMAIN_INFO
+description: ODJ_POLICY_DNS_DOMAIN_INFO IDL Definition
 ms.assetid: 44b1145f-3bdd-42cd-a88f-9b41888cc644
 ms.topic: reference
 ms.date: 10/12/2020
 ms.reviewer: jsimmons
-ms.openlocfilehash: 36b7759451811844a91b3ee66ff3460fa4c4db34
-ms.sourcegitcommit: 1e64562147b11f90de802c2431173582d066fae6
+ms.openlocfilehash: d0a83ccade72a11449ca0cc9b35b9fc58e9c53d48f8248a9f6074cdb087cc0c7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "103642947"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119911587"
 ---
-# <a name="odj_policy_dns_domain_info-structure"></a>Estrutura de ODJ_POLICY_DNS_DOMAIN_INFO
+# <a name="odj_policy_dns_domain_info-structure"></a>ODJ_POLICY_DNS_DOMAIN_INFO estrutura
 
-Contém informações sobre o domínio e a floresta para os quais um cliente deve ser associado.
+Contém informações sobre o domínio e a floresta aos que um cliente deve ser ingressado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,7 +33,7 @@ typedef struct _ODJ_POLICY_DNS_DOMAIN_INFO
 
 ### <a name="name"></a>Nome
 
-Deve ser definido como um nome de domínio NetBIOS.
+Deve ser definido como um nome de domínio Netbios.
 
 ### <a name="dnsdomainname"></a>DnsDomainName
 
@@ -45,16 +45,16 @@ Deve ser definido como um nome de floresta no formato DNS.
 
 ### <a name="domainguid"></a>DomainGuid
 
-Deve ser definido como o GUID de domínio.
+Deve ser definido como o guid de domínio.
 
 ### <a name="sid"></a>Sid
 
-Deve ser definido como o SID do domínio.
+Deve ser definido como o sid de domínio.
 
 ## <a name="see-also"></a>Confira também
 
-[**Definições de IDL de ingresso no domínio offline**](odj-idl.md)
+[**Definições de IDL de Junção de Domínio Offline**](odj-idl.md)
 
-[**\_cadeia de \_ caracteres Unicode ODJ**](odj-odj_unicode_string.md)
+[**CADEIA DE \_ CARACTERES UNICODE ODJ \_**](odj-odj_unicode_string.md)
 
-[**ODJ \_ Sid**](odj-odj_sid.md)
+[**SID do ODJ \_**](odj-odj_sid.md)

@@ -3,7 +3,7 @@ title: Interface IWMPClosedCaption2 (VB e C) (Wmp.h)
 description: Fornece propriedades e métodos para legendas fechadas que complementam a interface IWMPClosedCaption. Além das propriedades herdadas de IWMPClosedCaption, a interface IWMPClosedCaption2 expõe as propriedades a seguir.
 ms.assetid: e34ea819-dc1a-48f3-9e55-cf2217379ddb
 keywords:
-- Interface IWMPClosedCaption2 (VB e C) Windows Media Player
+- Interface IWMPClosedCaption2 (VB e C ) Windows Media Player
 - Interface IWMPClosedCaption2 (VB e C ) Windows Media Player , descrita
 topic_type:
 - apiref

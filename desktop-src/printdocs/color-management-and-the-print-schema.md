@@ -4,18 +4,18 @@ ms.assetid: 296255b8-fe5c-46dd-b717-487aaae0db80
 title: Gerenciamento de cores e o esquema de impressão
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9258d9dcc59ab24f9cfca8e170bf3f3f62841b21
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: c3e7e5a86b9f598183a4b3765e1cc38836b4ee7bb62e1835e06575392771dc5a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112409669"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119846377"
 ---
 # <a name="color-management-and-the-print-schema"></a>Gerenciamento de cores e o esquema de impressão
 
 Este tópico não é atual. Para obter as informações mais atuais, consulte a [especificação do esquema de impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-As palavras-chave do elemento configurável pelo usuário podem ser específicas de XPS ou específicas não-XPS. No caso em que eles não são específicos do XPS, a palavra-chave pode ser usada para impressão baseada em GDI herdada. Se um aplicativo decidir definir essas palavras-chave em um PrintTicket, cabe ao driver determinar a ação e o comportamento adequados a serem tomadas com base nas definições apresentadas no esquema de impressão. Qualquer uma dessas palavras-chave pode ser usada no contexto de ICM. Para obter mais informações, consulte o SDK do Windows Vista.
+As palavras-chave do elemento configurável pelo usuário podem ser específicas de XPS ou específicas não-XPS. No caso em que eles não são específicos do XPS, a palavra-chave pode ser usada para impressão baseada em GDI herdada. Se um aplicativo decidir definir essas palavras-chave em um PrintTicket, cabe ao driver determinar a ação e o comportamento adequados a serem tomadas com base nas definições apresentadas no esquema de impressão. Qualquer uma dessas palavras-chave pode ser usada no contexto de ICM. para obter mais informações, consulte o SDK do Windows Vista.
 
 
 
@@ -36,7 +36,7 @@ As palavras-chave do elemento configurável pelo usuário podem ser específicas
 
 ## <a name="pagecolormanagement-system-handling"></a>Manipulação do sistema PageColorManagement
 
-Para PageColorManagement, o sistema fornece manipulação automática de PrintTicket para DEVMODE ou DEVMODE para conversão de PrintTicket, se necessário. Isso depende do caminho de impressão específico entre o aplicativo (Win32 ou WPF) e o driver (baseado em GDI ou XPSDrv). No caso de impressão de um aplicativo Windows Presentation Foundation para um driver de impressão XPSDrv da Microsoft, uma opção pública PageColorManagement do sistema não deve ser anunciada no documento PrintTicket ou PrintCapabilities; Nesse caso, o gerenciamento de cores não pode ser manipulado automaticamente pelo sistema. A impressão de um aplicativo Win32 para um driver de impressão XPSDrv da Microsoft pode resultar em gerenciamento de cores entre o aplicativo e o GDI, no entanto, após a conversão para o formato XPS, não haverá manipulação automática do sistema de gerenciamento de cores entre o documento XPS e o driver e/ou o dispositivo, pois o formato XPS marca cada elemento com informações de cores completas e cabe ao driver ou dispositivo processar essas informações.
+Para PageColorManagement, o sistema fornece manipulação automática de PrintTicket para DEVMODE ou DEVMODE para conversão de PrintTicket, se necessário. Isso depende do caminho de impressão específico entre o aplicativo (Win32 ou WPF) e o driver (baseado em GDI ou XPSDrv). no caso de impressão de um aplicativo Windows Presentation Foundation para um driver de impressão XPSDrv da Microsoft, uma opção pública PageColorManagement do sistema não deve ser anunciada no documento PrintTicket ou printcapabilities; Nesse caso, o gerenciamento de cores não pode ser manipulado automaticamente pelo sistema. A impressão de um aplicativo Win32 para um driver de impressão XPSDrv da Microsoft pode resultar em gerenciamento de cores entre o aplicativo e o GDI, no entanto, após a conversão para o formato XPS, não haverá manipulação automática do sistema de gerenciamento de cores entre o documento XPS e o driver e/ou o dispositivo, pois o formato XPS marca cada elemento com informações de cores completas e cabe ao driver ou dispositivo processar essas informações.
 
 
 
@@ -53,7 +53,7 @@ Para PageColorManagement, o sistema fornece manipulação automática de PrintTi
 
 ## <a name="pageicmrenderingintent-system-handling"></a>Manipulação do sistema PageICMRenderingIntent
 
-Para PageICMRenderingIntent, o sistema fornece manipulação automática de PrintTicket para DEVMODE ou DEVMODE para conversão de PrintTicket, se necessário. Isso depende do caminho de impressão específico entre o aplicativo (Win32 ou Windows Presentation Foundation) e o driver (baseado em GDI ou XPSDrv).
+Para PageICMRenderingIntent, o sistema fornece manipulação automática de PrintTicket para DEVMODE ou DEVMODE para conversão de PrintTicket, se necessário. isso depende do caminho de impressão específico entre o aplicativo (Win32 ou Windows Presentation Foundation) e o driver (baseado em GDI ou XPSDrv).
 
 
 
@@ -82,7 +82,7 @@ Para PageSourceColorProfile, um aplicativo pode especificar um perfil de cor de 
 
 PageDeviceColorSpaceUsage é um elemento que pode ser configurado pelo usuário específico do XPS que é definido pelo aplicativo. Ele fornece instruções para o dispositivo definindo a opção apropriada no PrintTicket, para o tratamento de perfil de espaço de cores associado em um documento XPS. O aplicativo e/ou PrintTicket existente podem especificar essa palavra-chave em um PrintTicket enviado ao dispositivo. Independentemente de estar presente ou não, cabe ao driver decidir o comportamento de cada caso, com base nas definições apresentadas no esquema de impressão.
 
-## <a name="print-schema-color-management-example-flow"></a>Fluxo de exemplo de gerenciamento de cores do esquema de impressão
+## <a name="print-schema-color-management-example-flow"></a>Exemplo de gerenciamento de cores do esquema de impressão Flow
 
 O diagrama a seguir ilustra o Flow para os cenários mais prováveis para usar o gerenciamento de cores e o esquema de impressão. Para simplificar e facilitar a legibilidade, somente as seguintes palavras-chave de esquema de impressão configuráveis pelo usuário foram usadas para demonstrar seu uso: PageColorManagement, JobOptimalDestinaionColorProfile, PageSourceColorProfile e PageDestinationColorProfile. Uma linha sólida representa uma ação que deve ocorrer e uma linha tracejada representa uma ação que pode ocorrer. O cenário a seguir não é a interação garantida que resultará entre o aplicativo, o driver e o sistema, no entanto, representa o caso de uso mais comum que ocorrerá.
 

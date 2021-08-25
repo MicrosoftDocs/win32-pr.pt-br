@@ -1,15 +1,15 @@
 ---
-description: O método PlayChaptersAutoStop inicia a reprodução no capítulo especificado no título especificado e o número de capítulos especificado.
+description: O método PlayChaptersAutoStop inicia a reprodução no capítulo especificado no título especificado e no número de capítulos especificados.
 ms.assetid: ede19f02-6eda-42da-a108-06d78dc2e8a9
 title: Método PlayChaptersAutoStop
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 00f542f890a54c755c9ea041c46f7cef3b4b7fd9
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 58c518496f81f4ca4e662bf8dbc821f2378cd38d27c7546356144910c0c5ba72
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104163763"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119830736"
 ---
 # <a name="playchaptersautostop-method"></a>Método PlayChaptersAutoStop
 
@@ -18,7 +18,7 @@ ms.locfileid: "104163763"
 
  
 
-O `PlayChaptersAutoStop` método inicia a reprodução no capítulo especificado no título especificado e o número de capítulos especificado.
+O método inicia a reprodução no capítulo especificado no título especificado e no `PlayChaptersAutoStop` número de capítulos especificados.
 
 ``` syntax
 MSWebDVD.PlayChaptersAutoStop(iTitle, iChapter, iChapterCount)
@@ -31,21 +31,21 @@ MSWebDVD.PlayChaptersAutoStop(iTitle, iChapter, iChapterCount)
 <span id="iTitle"></span><span id="ititle"></span><span id="ITITLE"></span>*iTitle*
 </dt> <dd>
 
-Especifica o título como um valor inteiro.
+Especifica o título como um valor Inteiro.
 
 </dd> <dt>
 
 <span id="iChapter"></span><span id="ichapter"></span><span id="ICHAPTER"></span>*iChapter*
 </dt> <dd>
 
-Especifica o capítulo inicial como um valor inteiro.
+Especifica o capítulo inicial como um valor Inteiro.
 
 </dd> <dt>
 
 <span id="iChapterCount"></span><span id="ichaptercount"></span><span id="ICHAPTERCOUNT"></span>*iChapterCount*
 </dt> <dd>
 
-Especifica o número de capítulos a serem reproduzidos como um valor inteiro.
+Especifica o número de capítulos a reproduzir como um valor Inteiro.
 
 </dd> </dl>
 
@@ -55,7 +55,7 @@ Sem valor de retorno.
 
 ## <a name="remarks"></a>Comentários
 
-Quando o último capítulo foi reproduzido, esse método faz com que uma notificação de evento do [**\_ \_ capítulo \_ autostop**](ec-dvd-chapter-autostop.md) de um DVD do EC seja enviada para o aplicativo.
+Quando o último capítulo tiver sido interpretado, esse método faz com que uma notificação de evento [**EC \_ DVD CHAPTER \_ \_ AUTOSTOP**](ec-dvd-chapter-autostop.md) seja enviada ao aplicativo.
 
  
 

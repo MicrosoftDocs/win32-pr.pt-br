@@ -1,17 +1,17 @@
 ---
 description: Quando a função CreateFile abre um identificador para um recurso de comunicações serial, o sistema inicializa e configura o recurso de acordo com os valores configurados na última vez em que o recurso foi aberto.
 ms.assetid: a39881d8-32af-4846-a2d3-508f1945b666
-title: Modificação das configurações de recursos de comunicação
+title: modificação do Configurações de recursos de comunicação
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8658029470fae9ee2d70ffb1459312c3c4d80ecf
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 02a4658c58c07dfbd7ffe8ba7977db587211d3422359677999db312d05bd2c79
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010190"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119911977"
 ---
-# <a name="modification-of-communications-resource-settings"></a>Modificação das configurações de recursos de comunicação
+# <a name="modification-of-communications-resource-settings"></a>modificação do Configurações de recursos de comunicação
 
 Quando a função [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea) abre um identificador para um recurso de comunicações serial, o sistema inicializa e configura o recurso de acordo com os valores configurados na última vez em que o recurso foi aberto. Preservar as configurações anteriores permite que o usuário retenha as configurações especificadas por meio de um comando de **modo** quando o dispositivo é reaberto. Os valores herdados da operação de abertura anterior incluem as definições de configuração do bloco de controle de dispositivo (uma estrutura [**DCB**](/windows/desktop/api/Winbase/ns-winbase-dcb) ) e os valores de tempo limite usados em operações de e/s. Se o dispositivo nunca tiver sido aberto, ele será configurado com os padrões do sistema.
 

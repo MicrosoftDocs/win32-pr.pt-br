@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 967bd9674cb28363804b8c8af12c541bcb8675ff
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ad24ad2557401509c1bc1e076a545f05d1c03dd79fbcf73a05d3efccfdfb8886
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108110804"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119910666"
 ---
 # <a name="idelaydcdisconnect-method"></a>Método IDelaydC::D isconnect
 
@@ -50,7 +50,7 @@ Se o método não for bem-sucedido, o valor de retorno será um dos seguintes c�
 |------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**captura de NMERR \_**</dt> </dl>      | O NPP está capturando dados. Não é possível desconectar o NPP da rede durante uma captura.<br/>            |
 | <dl> <dt>**NMERR \_ não \_ conectado**</dt> </dl> | O NPP não está conectado à rede.<br/>                                                               |
-| <dl> <dt>**NMERR \_ não \_ atrasada**</dt> </dl>   | O NPP está conectado à rede, mas não com o método [IDelaydC:: Connect](idelaydc-connect.md) .<br/> |
+| <dl> <dt>**NMERR \_ não \_ atrasada**</dt> </dl>   | o NPP está conectado à rede, mas não com o método [IDelaydC:: Conexão](idelaydc-connect.md) .<br/> |
 
 
 
@@ -73,14 +73,14 @@ Este método não pode ser chamado quando o NPP está capturando dados. Você de
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
 [IDelaydC](idelaydc.md)
 </dt> <dt>
 
-[IDelaydC:: conectar](idelaydc-connect.md)
+[IDelaydC:: Conexão](idelaydc-connect.md)
 </dt> <dt>
 
 [IDelaydC:: Stop](idelaydc-stop.md)

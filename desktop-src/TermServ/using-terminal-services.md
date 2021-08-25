@@ -7,21 +7,21 @@ keywords:
 - Serviços de Área de Trabalho Remota Serviços de Área de Trabalho Remota, usando
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ac575a89d1ae8c7c065199aca136f2f0e5fc7459
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d7d0af90aef8eed3c8b9dc397f86cb6940a79e8e399af201ff854cbfaba3ff3b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105761796"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119868766"
 ---
 # <a name="using-remote-desktop-services"></a>Usando Serviços de Área de Trabalho Remota
 
-As seções a seguir descrevem como programar no ambiente de Serviços de Área de Trabalho Remota e como estender a tecnologia Serviços de Área de Trabalho Remota (anteriormente conhecida como serviços de terminal) para a Web usando Conexão Web de Área de Trabalho Remota. Se você estiver procurando informações do usuário para Área de Trabalho Remota conexões, consulte [conectar-se a outro computador usando conexão de área de trabalho remota](https://windows.microsoft.com/windows/connect-using-remote-desktop-connection#connect-using-remote-desktop-connection=windows-7).
+As seções a seguir descrevem como programar no ambiente de Serviços de Área de Trabalho Remota e como estender a tecnologia Serviços de Área de Trabalho Remota (anteriormente conhecida como serviços de terminal) para a Web usando Conexão Web de Área de Trabalho Remota. se você estiver procurando informações do usuário para Área de Trabalho Remota conexões, consulte [Conexão para outro computador usando Conexão de Área de Trabalho Remota](https://windows.microsoft.com/windows/connect-using-remote-desktop-connection#connect-using-remote-desktop-connection=windows-7).
 
 > [!Note]  
 > Este tópico destina-se a desenvolvedores de software.
 
- 
+ 
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -30,7 +30,7 @@ As seções a seguir descrevem como programar no ambiente de Serviços de Área 
 [Detectando se a função de Serviços de Área de Trabalho Remota está instalada](detecting-whether-terminal-services-is-installed.md)
 </dt> <dd>
 
-Exemplo de código C# que mostra um método que retorna **true** se a função de servidor serviços de área de trabalho remota estiver instalada e em execução ou **false** caso contrário, começando com o Windows Server 2008.
+exemplo de código C# que mostra um método que retorna **True** se a função de servidor Serviços de Área de Trabalho Remota estiver instalada e em execução ou **false** caso contrário, começando com Windows server 2008.
 
 </dd> <dt>
 
@@ -44,7 +44,7 @@ Você pode estender o agente de Sessão TS usando a interface com do [**IWTSSBPl
 [Implementando um enumerador de ponto de extremidade de áudio personalizado](implementing-an-audio-endpoint-enumerator.md)
 </dt> <dd>
 
-A partir do Windows Server 2008 R2, você pode implementar um enumerador personalizado de ponto de extremidade de áudio remoto como parte de um provedor de protocolo Área de Trabalho Remota.
+a partir do Windows Server 2008 R2, você pode implementar um enumerador personalizado de ponto de extremidade de áudio remoto como parte de um provedor de protocolo de Área de Trabalho Remota.
 
 </dd> <dt>
 
@@ -95,9 +95,9 @@ Para obter mais informações, consulte [diretrizes de programação de serviço
 [Detectando o ambiente de Serviços de Área de Trabalho Remota](detecting-the-terminal-services-environment.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

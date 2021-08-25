@@ -3,7 +3,7 @@ title: Mensagem de LVM_GETGROUPINFOBYINDEX (commctrl. h)
 description: Obtém informações sobre um grupo especificado. Envie essa mensagem explicitamente ou usando a \_ macro GetGroupInfoByIndex do ListView.
 ms.assetid: vs|controls|~\controls\listview\messages\lvm_getgroupinfobyindex.htm
 keywords:
-- Controles de LVM_GETGROUPINFOBYINDEX de mensagens do Windows
+- controles de Windows de mensagem de LVM_GETGROUPINFOBYINDEX
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cff801eae55ab4b4194ef23e624ff6eff75fbc25
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 482683e9d1026c1deed17bf1f05310d63ac2127a6a2a6f32b5b5d95a0fbbea3e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085815"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119877396"
 ---
 # <a name="lvm_getgroupinfobyindex-message"></a>\_Mensagem GETGROUPINFOBYINDEX LVM
 
@@ -45,7 +45,7 @@ O receptor da mensagem é responsável por definir os membros da estrutura com i
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna **verdadeiro** se for bem-sucedido ou **false** caso contrário.
 
@@ -55,9 +55,9 @@ Retorna **verdadeiro** se for bem-sucedido ou **false** caso contrário.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

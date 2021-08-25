@@ -1,44 +1,44 @@
 ---
-title: Como criar um controle de List-View
-description: Este tópico demonstra como criar um controle de exibição de lista. Para criar um controle de exibição de lista, use a função CreateWindow ou CreateWindowEx e especifique a \_ classe da janela ListView do WC.
+title: Como criar um controle List-View dados
+description: Este tópico demonstra como criar um controle de exibição de lista. Para criar um controle de exibição de lista, use a função CreateWindow ou CreateWindowEx e especifique a classe de janela \_ LISTVIEW do WC.
 ms.assetid: FEAA0ACA-A086-46DF-9DD2-A3E32F2CCDA3
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3050498b87aaf701249a06cfe2c3ad18afdc1d84
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: d71eddfb60a2ea035a5afe62423289da40a47b61841d3ba58c4cafa2824a65b2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104454464"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119826606"
 ---
-# <a name="how-to-create-a-list-view-control"></a>Como criar um controle de List-View
+# <a name="how-to-create-a-list-view-control"></a>Como criar um controle List-View dados
 
-Este tópico demonstra como criar um controle de exibição de lista. Para criar um controle de exibição de lista, use a função [**CreateWindow**](/windows/desktop/api/winuser/nf-winuser-createwindowa) ou [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) e especifique a classe da janela [**\_ ListView do WC**](common-control-window-classes.md) .
+Este tópico demonstra como criar um controle de exibição de lista. Para criar um controle de exibição de lista, use a [**função CreateWindow**](/windows/desktop/api/winuser/nf-winuser-createwindowa) ou [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) e especifique a classe de janela [**\_ LISTVIEW do WC.**](common-control-window-classes.md)
 
-Um controle de exibição de lista também pode ser criado como parte de um modelo de caixa de diálogo. Você deve especificar [**\_ ListView WC**](common-control-window-classes.md) como o nome da classe. Para usar um controle de exibição de lista como parte de um modelo de caixa de diálogo, você deve chamar [**InitCommonControls**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrols) ou [**InitCommonControlsEx**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrolsex) antes de criar uma instância da caixa de diálogo.
+Um controle de exibição de lista também pode ser criado como parte de um modelo de caixa de diálogo. Você deve especificar [**WC \_ LISTVIEW**](common-control-window-classes.md) como o nome da classe. Para usar um controle de exibição de lista como parte de um modelo de caixa de diálogo, você deve chamar [**InitCommonControls**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrols) ou [**InitCommonControlsEx**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrolsex) antes de criar uma instância da caixa de diálogo.
 
 ## <a name="what-you-need-to-know"></a>O que você precisa saber
 
 ### <a name="technologies"></a>Tecnologias
 
--   [Controles do Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
 -   C/C++
--   Programação da interface do usuário do Windows
+-   Windows Interface do Usuário programação
 
 ## <a name="instructions"></a>Instruções
 
 
-Primeiro, registre a classe Window chamando a função [**InitCommonControlsEx**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrolsex) e especificando o bit de [**\_ \_ classes ListView do ICC**](/windows/win32/api/commctrl/ns-commctrl-initcommoncontrolsex) na estrutura **InitCommonControlsEx** que acompanha. Isso garante que a DLL de controles comuns seja carregada. Em seguida, use a função [**CreateWindow**](/windows/desktop/api/winuser/nf-winuser-createwindowa) ou [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) e especifique a classe da janela [**\_ ListView do WC**](common-control-window-classes.md) .
+Primeiro, registre a classe de janela chamando a função [**InitCommonControlsEx**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrolsex) e especificando o bit [**ICC \_ LISTVIEW \_ CLASSES**](/windows/win32/api/commctrl/ns-commctrl-initcommoncontrolsex) na estrutura **INITCOMMONCONTROLSEX** que o acompanha. Isso garante que a DLL de controles comuns seja carregada. Em seguida, use [**a função CreateWindow**](/windows/desktop/api/winuser/nf-winuser-createwindowa) ou [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) e especifique a classe de janela [**\_ LISTVIEW do WC.**](common-control-window-classes.md)
 
 > [!Note]  
-> Por padrão, um controle de exibição de lista usa a fonte do título do ícone. No entanto, você pode usar uma mensagem de [**\_ fonte do WM**](/windows/desktop/winmsg/wm-setfont) para especificar a fonte a ser usada para o texto. Você deve enviar esta mensagem antes de inserir qualquer item. O controle usa as dimensões da fonte que é especificada pela mensagem do **WM \_ SetFont** para determinar o espaçamento e o layout. Você também pode personalizar a fonte de cada item. Para obter mais informações, consulte [desenho personalizado](custom-draw.md).
+> Por padrão, um controle de exibição de lista usa a fonte de título do ícone. No entanto, você pode usar [**uma mensagem WM \_ SETFONT**](/windows/desktop/winmsg/wm-setfont) para especificar a fonte a ser usada para o texto. Você deve enviar essa mensagem antes de inserir qualquer item. O controle usa as dimensões da fonte especificada pela mensagem **WM \_ SETFONT** para determinar o espaçamento e o layout. Você também pode personalizar a fonte para cada item. Para obter mais informações, consulte [Desenho personalizado.](custom-draw.md)
 
  
 
-O exemplo de código C++ a seguir cria um controle de exibição de lista no modo de exibição de relatório.
+O exemplo de código C++ a seguir cria um controle de exibição de lista na exibição de relatório.
 
 
 ```C++
@@ -82,7 +82,7 @@ HWND CreateListView (HWND hwndParent)
 
 Normalmente, os aplicativos de exibição de lista permitem que o usuário altere de uma exibição para outra.
 
-O exemplo de código C++ a seguir altera o estilo de janela do modo de exibição de lista, que, por sua vez, altera a exibição.
+O exemplo de código C++ a seguir altera o estilo da janela da exibição de lista, que, por sua vez, altera a exibição.
 
 
 ```C++
@@ -116,10 +116,10 @@ VOID SetView(HWND hWndListView, DWORD dwView)
 [Referência de controle de exibição de lista](bumper-list-view-list-view-control-reference.md)
 </dt> <dt>
 
-[Sobre controles de List-View](list-view-controls-overview.md)
+[Sobre List-View controles](list-view-controls-overview.md)
 </dt> <dt>
 
-[Usando controles de List-View](using-list-view-controls.md)
+[Usando List-View controles](using-list-view-controls.md)
 </dt> </dl>
 
  

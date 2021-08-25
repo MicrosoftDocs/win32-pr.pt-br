@@ -1,11 +1,11 @@
 ---
-title: Classe Win32_RDCentralPublishedDeploymentSettings
+title: Win32_RDCentralPublishedDeploymentSettings classe
 description: Contém as configurações de implantação usadas para gerar arquivos RDP para recursos publicados de um farm.
 ms.assetid: 6d1be0b2-e070-4c60-8068-b59ba121bf9f
 ms.tgt_platform: multiple
 keywords:
-- Classe de Win32_RDCentralPublishedDeploymentSettings Serviços de Área de Trabalho Remota
-- Serviços de Área de Trabalho Remota de Win32_RDCentralPublishedDeploymentSettings classe, descrita
+- Win32_RDCentralPublishedDeploymentSettings classe Serviços de Área de Trabalho Remota
+- Win32_RDCentralPublishedDeploymentSettings classe Serviços de Área de Trabalho Remota , descrita
 topic_type:
 - apiref
 api_name:
@@ -36,14 +36,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dd4dd1b118f2fabf22f10e47c0b8467b0ddf6388
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ee16b557ab58a11b5994236137ddfd549a0eb0294f04c619f5245de78e379029
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369868"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119868496"
 ---
-# <a name="win32_rdcentralpublisheddeploymentsettings-class"></a>\_Classe Win32 RDCentralPublishedDeploymentSettings
+# <a name="win32_rdcentralpublisheddeploymentsettings-class"></a>Classe Win32 \_ RDCentralPublishedDeploymentSettings
 
 Contém as configurações de implantação usadas para gerar arquivos RDP para recursos publicados de um farm.
 
@@ -80,26 +80,26 @@ class Win32_RDCentralPublishedDeploymentSettings : CIM_LogicalElement
 
 ## <a name="members"></a>Membros
 
-A classe **Win32 \_ RDCentralPublishedDeploymentSettings** tem estes tipos de membros:
+A **classe Win32 \_ RDCentralPublishedDeploymentSettings** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Win32 \_ RDCentralPublishedDeploymentSettings** tem essas propriedades.
+A **classe Win32 \_ RDCentralPublishedDeploymentSettings** tem essas propriedades.
 
 <dl> <dt>
 
 **AllowFontSmoothing**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-**true** para permitir a suavização de fontes; caso contrário, **false**.
+**true** para permitir a suavização de fonte; caso contrário, **false.**
 
 </dd> <dt>
 
@@ -112,22 +112,22 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Breve descrição (cadeia de caracteres de uma linha) do objeto.
+Descrição curta (cadeia de caracteres de uma linha) do objeto.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **CertificateHash**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz **uint8**
+Tipo de dados: **matriz uint8**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 O certificado usado para assinar os arquivos RDP; necessariamente somente se *HasCertificate* for true.
@@ -140,10 +140,10 @@ O certificado usado para assinar os arquivos RDP; necessariamente somente se *Ha
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Contém a profundidade de bits de cor:
+Contém a profundidade do bit de cor:
 
 <dt>
 
@@ -197,10 +197,10 @@ Contém a profundidade de bits de cor:
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Contém o conteúdo do arquivo RDP correspondente às configurações personalizadas de RDP.
+Contém o conteúdo do arquivo RDP correspondente às configurações personalizadas do RDP.
 
 </dd> <dt>
 
@@ -210,7 +210,7 @@ Contém o conteúdo do arquivo RDP correspondente às configurações personaliz
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 Contém o conteúdo do arquivo RDP correspondente às configurações de implantação. Se esse parâmetro for definido, o sistema usará esse arquivo RDP e ignorará as outras configurações de RDP nesta chamada.
@@ -228,17 +228,17 @@ Tipo de acesso: Somente leitura
 
 Descrição do objeto.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
-**Farmname**
+**FarmName**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 O nome do farm.
@@ -251,30 +251,30 @@ O nome do farm.
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Contém o modo de autenticação do gateway:
+Contém o modo de autenticação de gateway:
 
 <dt>
 
 <span id="Password_0_"></span><span id="password_0_"></span><span id="PASSWORD_0_"></span>
 
-<span id="Password_0_"></span><span id="password_0_"></span><span id="PASSWORD_0_"></span>**Senha (0)** (0)
+<span id="Password_0_"></span><span id="password_0_"></span><span id="PASSWORD_0_"></span>**Password(0)** (0)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Smartcard_1_"></span><span id="smartcard_1_"></span><span id="SMARTCARD_1_"></span>
 
-<span id="Smartcard_1_"></span><span id="smartcard_1_"></span><span id="SMARTCARD_1_"></span>**Cartão inteligente (1)** (1)
+<span id="Smartcard_1_"></span><span id="smartcard_1_"></span><span id="SMARTCARD_1_"></span>**Cartão inteligente(1)** (1)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Allow_User_to_Choose_4_"></span><span id="allow_user_to_choose_4_"></span><span id="ALLOW_USER_TO_CHOOSE_4_"></span>
 
-<span id="Allow_User_to_Choose_4_"></span><span id="allow_user_to_choose_4_"></span><span id="ALLOW_USER_TO_CHOOSE_4_"></span>**Permitir que o usuário escolha (4)** (4)
+<span id="Allow_User_to_Choose_4_"></span><span id="allow_user_to_choose_4_"></span><span id="ALLOW_USER_TO_CHOOSE_4_"></span>**Permitir que o usuário escolha(4)** (4)
 
 
 </dt> <dd></dd> </dl>
@@ -287,7 +287,7 @@ Contém o modo de autenticação do gateway:
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 O nome do gateway.
@@ -300,7 +300,7 @@ O nome do gateway.
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 Descreve como o gateway é usado:
@@ -309,12 +309,12 @@ Descreve como o gateway é usado:
 
 <span id="NoGateway"></span><span id="nogateway"></span><span id="NOGATEWAY"></span>
 
-<span id="NoGateway"></span><span id="nogateway"></span><span id="NOGATEWAY"></span>**Nogateway** (0)
+<span id="NoGateway"></span><span id="nogateway"></span><span id="NOGATEWAY"></span>**NoGateway** (0)
 
 
 </dt> <dd>
 
-Sem gateway.
+Nenhum gateway.
 
 </dd> <dt>
 
@@ -356,44 +356,44 @@ Detectar gateway.
 **GatewayUseCachedCreds**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-**true** para usar as mesmas credenciais de usuário para Gateway TS e servidor TS, quando possível; caso contrário, **false**.
+**true** para usar as mesmas credenciais de usuário para gateway TS e servidor TS quando possível; caso contrário, **false.**
 
 </dd> <dt>
 
 **HasCertificate**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-**true** para usar um certificado para assinar os arquivos RDP; caso contrário, **false**.
+**true** para usar um certificado para assinar os arquivos RDP; caso contrário, **false.**
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Componente DMTF \| 1,5 ")
+Qualificadores: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5")
 </dt> </dl>
 
 A data em que o objeto foi instalado. A falta de um valor não indica que o objeto não está instalado.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -408,7 +408,7 @@ Tipo de acesso: Somente leitura
 
 O nome do objeto.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 

@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: bb644bec98944cb535fb1c9b7f3d9669ade64396
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6266026525b7a6c9ef3465b1d70634da3f287dc076ee084adbbb559a5a876786
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103663072"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119851876"
 ---
 # <a name="esentobjectnotfoundexception-constructor"></a>Construtor EsentObjectNotFoundException
 
 Inicializa uma nova instância da classe EsentObjectNotFoundException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentObjectNotFoundException()
 
 [Classe EsentObjectNotFoundException](./esentobjectnotfoundexception-class.md)
 
-[Membros do EsentObjectNotFoundException](./esentobjectnotfoundexception-members.md)
+[Membros EsentObjectNotFoundException](./esentobjectnotfoundexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

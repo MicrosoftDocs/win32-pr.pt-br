@@ -3,7 +3,7 @@ title: LVN_BEGINSCROLL código de notificação (commctrl. h)
 description: Notifica uma janela pai do controle de exibição de lista quando uma operação de rolagem é iniciada. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
 ms.assetid: 67123db1-118c-43d7-8511-12a3c4413958
 keywords:
-- LVN_BEGINSCROLL de código de notificação controles do Windows
+- LVN_BEGINSCROLL código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ae09a05525ac6e9f08d8cc7a0b7de6ef51329baa
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e416aee093ed6526d85d81361e2774b963572de73ce84c21105f19d1675968f4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454695"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119915216"
 ---
 # <a name="lvn_beginscroll-notification-code"></a>Código de notificação do LVN \_ BEGINSCROLL
 
@@ -45,7 +45,7 @@ Ponteiro para uma estrutura [**NMLVSCROLL**](/windows/win32/api/commctrl/ns-comm
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Valor de retorno não usado.
 
@@ -62,9 +62,9 @@ Valor de retorno não usado.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

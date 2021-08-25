@@ -4,18 +4,18 @@ description: Definindo a imagem do cursor
 ms.assetid: FB223131-19AE-41DD-87DE-73992AE2A0CA
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fe3bc993b7566dee1fa47bd2b53c270ad0e4f64b
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 4723289155bc7898f6f49e188ad972ca152332c82994b57c79af493c8fe6b572
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104454009"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119896906"
 ---
 # <a name="setting-the-cursor-image"></a>Definindo a imagem do cursor
 
 O *cursor* é a imagem pequena que mostra o local do mouse ou outro dispositivo apontador. Muitos aplicativos alteram a imagem do cursor para fornecer comentários ao usuário. Embora não seja necessário, ele adiciona um pouco de polonês ao seu aplicativo.
 
-O Windows fornece um conjunto de imagens de cursor padrão, chamadas *cursores do sistema*. Isso inclui a seta, a mão, o I-feixe, a ampulheta (que agora é um círculo girando) e outros. Esta seção descreve como usar os cursores do sistema. Para tarefas mais avançadas, como a criação de cursores personalizados, consulte [cursores](/windows/desktop/menurc/cursors).
+Windows fornece um conjunto de imagens de cursor padrão, chamadas *cursores do sistema*. Isso inclui a seta, a mão, o I-feixe, a ampulheta (que agora é um círculo girando) e outros. Esta seção descreve como usar os cursores do sistema. Para tarefas mais avançadas, como a criação de cursores personalizados, consulte [cursores](/windows/desktop/menurc/cursors).
 
 Você pode associar um cursor a uma classe de janela definindo o membro **hCursor** da estrutura [**WNDCLASS**](/windows/win32/api/winuser/ns-winuser-wndclassa) ou [**WNDCLASSEX**](/windows/win32/api/winuser/ns-winuser-wndclassexa) . Caso contrário, o cursor padrão será a seta. Quando o mouse se move sobre uma janela, a janela recebe uma mensagem do [**WM \_ SetCursor**](/windows/desktop/menurc/wm-setcursor) (a menos que outra janela tenha capturado o mouse). Neste ponto, ocorre um dos seguintes eventos:
 
@@ -58,12 +58,12 @@ Se você alterar o cursor, a imagem do cursor será redefinida na próxima movim
 
 
 
-Esse código primeiro verifica os 16 bits inferiores de *lParam*. Se for `LOWORD(lParam)` igual a **HTCLIENT**, significa que o cursor está sobre a área do cliente da janela. Caso contrário, o cursor está sobre a área que não é do cliente. Normalmente, você só deve definir o cursor para a área do cliente e deixar o Windows definir o cursor para a área não cliente.
+Esse código primeiro verifica os 16 bits inferiores de *lParam*. Se for `LOWORD(lParam)` igual a **HTCLIENT**, significa que o cursor está sobre a área do cliente da janela. Caso contrário, o cursor está sobre a área que não é do cliente. normalmente, você só deve definir o cursor para a área do cliente e deixar Windows definir o cursor para a área que não seja cliente.
 
 ## <a name="next"></a>Avançar
 
 [Entrada do usuário: exemplo estendido](user-input--extended-example.md)
 
- 
+ 
 
- 
+ 

@@ -1,9 +1,9 @@
 ---
-title: Comando close (Corecrt \_ io.h)
-description: O comando close fecha o dispositivo ou o arquivo e todos os recursos associados. A MCI descarrega um dispositivo quando todas as instâncias do dispositivo ou todos os arquivos são fechados. Todos os dispositivos MCI reconhecem esse comando.
+title: comando fechar (Corecrt \_ Io. h)
+description: O comando fechar fecha o dispositivo ou arquivo e todos os recursos associados. O MCI descarrega um dispositivo quando todas as instâncias do dispositivo ou todos os arquivos são fechados. Todos os dispositivos MCI reconhecem este comando.
 ms.assetid: 0fd7b271-b29e-4170-9a14-81b14dc8a5ee
 keywords:
-- Fechar comando Windows Multimídia
+- fechar o comando Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -21,11 +21,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119807955"
 ---
-# <a name="close-command"></a>Comando close
+# <a name="close-command"></a>comando fechar
 
-O comando close fecha o dispositivo ou o arquivo e todos os recursos associados. A MCI descarrega um dispositivo quando todas as instâncias do dispositivo ou todos os arquivos são fechados. Todos os dispositivos MCI reconhecem esse comando.
+O comando fechar fecha o dispositivo ou arquivo e todos os recursos associados. O MCI descarrega um dispositivo quando todas as instâncias do dispositivo ou todos os arquivos são fechados. Todos os dispositivos MCI reconhecem este comando.
 
-Para enviar esse comando, chame a [**função mciSendString**](/previous-versions//dd757161(v=vs.85)) com *o parâmetro lpszCommand* definido da seguinte forma.
+Para enviar esse comando, chame a função [**mciSendString**](/previous-versions//dd757161(v=vs.85)) com o parâmetro *lpszCommand* definido da seguinte maneira.
 
 ``` syntax
 _stprintf_s(
@@ -50,21 +50,21 @@ Identificador de um dispositivo MCI. Esse identificador ou alias é atribuído q
 <span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*
 </dt> <dd>
 
-Pode ser "wait", "notify" ou ambos. Para obter mais informações sobre esses sinalizadores, consulte [Os sinalizadores de espera, notificação e teste.](the-wait-notify-and-test-flags.md)
+Pode ser "Wait", "notificar" ou ambos. Para obter mais informações sobre esses sinalizadores, consulte [os sinalizadores aguardar, notificar e testar](the-wait-notify-and-test-flags.md).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retornará zero se for bem-sucedido ou um erro, caso contrário.
+Retornará zero se for bem-sucedido ou um erro de outra forma.
 
 ## <a name="remarks"></a>Comentários
 
-Para fechar todos os dispositivos abertos pelo seu aplicativo, especifique o identificador de dispositivo "all" para *o parâmetro lpszDeviceID.*
+Para fechar todos os dispositivos abertos pelo seu aplicativo, especifique o identificador de dispositivo "todos" para o parâmetro *lpszDeviceID* .
 
-Fechar o **dispositivo cdaudio** interrompe a reprodução de áudio.
+Fechar o dispositivo **cdaudio** para a reprodução de áudio.
 
-**Windows 2000/XP:** Se o **dispositivo cdaudio** estiver sendo acionado, fechar o **dispositivo cdaudio** não faz com que o áudio pare de tocar. Envie o [comando stop](stop.md) primeiro.
+**Windows 2000/XP:** Se o dispositivo **cdaudio** estiver em execução, fechar o dispositivo **cdaudio** não fará com que o áudio pare de ser executado. Envie o comando [Stop](stop.md) primeiro.
 
 ## <a name="examples"></a>Exemplos
 
@@ -82,7 +82,7 @@ close mysound
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                     |
-| Cabeçalho<br/>                   | <dl> <dt>Corecrt \_ io.h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Corecrt \_ Io. h</dt> </dl> |
 
 
 
@@ -90,7 +90,7 @@ close mysound
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Cadeias de caracteres de comando MCI](mci-command-strings.md)

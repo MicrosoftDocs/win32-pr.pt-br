@@ -1,7 +1,7 @@
 ---
-description: IDelaydC::P método ause-o método pause pausa a captura atual.
+description: Método IDelaydC::P ause – o método Pause pausa a captura atual.
 ms.assetid: 9d5e11d1-8c45-4cf5-9fea-10c9e7a6fe86
-title: 'IDelaydC: método ause de:P (Netmon. h)'
+title: Método IDelaydC::P ause (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 21b4cd7b6cb921f7bd71b8670a37da12b2239b92
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: dfe48afce1e8fd2350f1d1b696eb426a326ade1b30151e872afee30c0ed997f2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108098494"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119910506"
 ---
-# <a name="idelaydcpause-method"></a>IDelaydC: método ause de:P
+# <a name="idelaydcpause-method"></a>Método IDelaydC::P ause
 
-O método **Pause** pausa a captura atual.
+O **método Pause** pausa a captura atual.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,7 +40,7 @@ Esse método não tem parâmetros.
 
 ## <a name="return-value"></a>Valor retornado
 
-Se o método for bem-sucedido, o valor de retorno será NMERR com \_ êxito.
+Se o método for bem-sucedido, o valor de retorno será NMERR \_ SUCCESS.
 
 Se o método não for bem-sucedido, o valor de retorno será um dos seguintes códigos de erro:
 
@@ -48,10 +48,10 @@ Se o método não for bem-sucedido, o valor de retorno será um dos seguintes c�
 
 | Código de retorno                                                                                           | Descrição                                                                                                                           |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**captura de NMERR \_ \_ pausada**</dt> </dl> | A captura já está em um estado de pausa.<br/>                                                                                  |
-| <dl> <dt>**NMERR \_ não \_ capturando**</dt> </dl>  | O NPP não está capturando dados. Chame [IDelaydC:: Start](idelaydc-start.md) para iniciar a captura.<br/>                            |
-| <dl> <dt>**NMERR \_ não \_ conectado**</dt> </dl>  | O NPP não está conectado à rede. Chame [IDelaydC:: Connect](idelaydc-connect.md) para conectar o NPP à rede.<br/> |
-| <dl> <dt>**NMERR \_ não \_ atrasada**</dt> </dl>    | O NPP está conectado à rede, mas não com o método [IDelaydC:: Connect](idelaydc-connect.md) .<br/>                     |
+| <dl> <dt>**CAPTURA NMERR \_ \_ PAUSADA**</dt> </dl> | A captura já está em um estado de pausa.<br/>                                                                                  |
+| <dl> <dt>**NMERR \_ NÃO CAPTURA \_**</dt> </dl>  | O NPP não está capturando dados. Chame [IDelaydC::Start](idelaydc-start.md) para iniciar a captura.<br/>                            |
+| <dl> <dt>**NMERR \_ NÃO \_ CONECTADO**</dt> </dl>  | O NPP não está conectado à rede. Chame [IDelaydC::Conexão](idelaydc-connect.md) para conectar o NPP à rede.<br/> |
+| <dl> <dt>**NMERR \_ NÃO \_ ATRASADO**</dt> </dl>    | O NPP está conectado à rede, mas não ao [método IDelaydC::Conexão.](idelaydc-connect.md)<br/>                     |
 
 
 
@@ -59,13 +59,13 @@ Se o método não for bem-sucedido, o valor de retorno será um dos seguintes c�
 
 ## <a name="remarks"></a>Comentários
 
-Enquanto a captura está em um estado de pausa, novos dados não são adicionados ao arquivo de [*captura*](c.md) atual até que o método **IDelaydC:: resume** seja chamado para reiniciar a captura. Quando **Pause** e **resume** são usados para parar e reiniciar a captura, todas as informações capturadas são colocadas no mesmo arquivo de captura.
+Enquanto a captura estiver em um estado de pausa, [](c.md) novos dados não serão adicionados ao arquivo de captura atual até que o método **IDelaydC::Resume** seja chamado para reiniciar a captura. Quando **Pausar** **e Retomar** são usados para parar e reiniciar a captura, todas as informações capturadas são colocadas no mesmo arquivo de captura.
 
-Ao usar **IDelaydC::P ause** e **IDelaydC:: retomar** para controlar a captura, monitor de rede continuará a adicionar [*Estatísticas de conversa*](c.md) sempre que a captura estiver em execução.
+Ao usar **IDelaydC::P ause** e **IDelaydC::Resume** para controlar a captura, Monitor de Rede continua adicionando estatísticas de [*conversa*](c.md) sempre que a captura estiver em execução.
 
-Para reiniciar a captura, chame [IDelaydC:: resume](idelaydc-resume.md).
+Para reiniciar a captura, chame [IDelaydC::Resume](idelaydc-resume.md).
 
-Para interromper a captura, chame [IDelaydC:: Stop](idelaydc-stop.md).
+Para interromper a captura, chame [IDelaydC::Stop](idelaydc-stop.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,28 +75,28 @@ Para interromper a captura, chame [IDelaydC:: Stop](idelaydc-stop.md).
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                                                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>Netmon. h</dt> </dl>                                                                      |
+| Cabeçalho<br/>                   | <dl> <dt>Netmon.h</dt> </dl>                                                                      |
 | DLL<br/>                      | <dl> <dt>Ndisnpp.dll; </dt> <dt>Rmtnpp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
 [IDelaydC](idelaydc.md)
 </dt> <dt>
 
-[IDelaydC:: conectar](idelaydc-connect.md)
+[IDelaydC::Conexão](idelaydc-connect.md)
 </dt> <dt>
 
-[IDelaydC:: retomar](idelaydc-resume.md)
+[IDelaydC::Resume](idelaydc-resume.md)
 </dt> <dt>
 
-[IDelaydC:: iniciar](idelaydc-start.md)
+[IDelaydC::Start](idelaydc-start.md)
 </dt> <dt>
 
-[IDelaydC:: Stop](idelaydc-stop.md)
+[IDelaydC::Stop](idelaydc-stop.md)
 </dt> </dl>
 
  
