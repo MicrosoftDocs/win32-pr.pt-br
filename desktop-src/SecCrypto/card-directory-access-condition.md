@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Cardmod.h
-ms.openlocfilehash: 9879fa73f6bb45b56f433d7bca7765ab5fc0daef
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8038179c7337edaff0138fc46c34191f99821250808c4ace16dc76cdfafd3b19
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164405"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119878956"
 ---
 # <a name="card_directory_access_condition-enumeration"></a>\_Enumeração de \_ condição de acesso ao diretório de cartão \_
 
@@ -68,9 +68,9 @@ Os administradores podem ler, gravar e excluir o diretório.
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP, Windows XP\]<br/>                              |
-| Servidor mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows Server 2003, Windows Server 2003 \[\]<br/>            |
-| parâmetro<br/>                   | <dl> <dt>Cardmod. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows xp, \[ somente aplicativos da área de trabalho do Windows xp\]<br/>                              |
+| Servidor mínimo com suporte<br/> | Windows servidor 2003, Windows server 2003 \[ somente aplicativos da área de trabalho\]<br/>            |
+| Cabeçalho<br/>                   | <dl> <dt>Cardmod. h</dt> </dl> |
 
 
 

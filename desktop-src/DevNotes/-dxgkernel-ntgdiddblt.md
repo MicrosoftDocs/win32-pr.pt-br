@@ -16,12 +16,12 @@ api_location:
 - Ext-MS-Win-GDI-Internal-Desktop-L1-1-0.dll
 - GDI32.dll
 - GDI32Full.dll
-ms.openlocfilehash: 86249a8ff1069bc0875aad3fcca576ef78b9db68
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: f0f4ae51663e9d1c398c34708520047f43288c1f571458a879e262ec9fca025d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089192"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119911947"
 ---
 # <a name="ntgdiddblt-function"></a>Função NtGdiDdBlt
 
@@ -67,7 +67,7 @@ Ponteiro para uma [**estrutura \_ BLTDATA do DD**](/windows/win32/api/ddrawint/n
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 **NtGdiDdBlt** retorna um dos seguintes códigos de retorno de chamada.
 

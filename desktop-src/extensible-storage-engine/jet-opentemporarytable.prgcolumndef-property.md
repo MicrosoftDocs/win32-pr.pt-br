@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre a propriedade: JET_OPENTEMPORARYTABLE. prgcolumndef'
-title: Propriedade JET_OPENTEMPORARYTABLE. prgcolumndef (Microsoft. ISAM. ESENT. Interop. vista)
+description: 'Saiba mais sobre: JET_OPENTEMPORARYTABLE.prgcolumndef'
+title: JET_OPENTEMPORARYTABLE.prgcolumndef (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: 'prgcolumndef property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.Vista.JET_OPENTEMPORARYTABLE.prgcolumndef
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.jet_opentemporarytable.prgcolumndef(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 871cf1ba669717b9e2917a3e9012c6c16df5f97c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8a0889e35d35c7296755fae3a6772f30546d3937b4c0f2c840f796d66c8a2aa8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104169787"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119945726"
 ---
-# <a name="jet_opentemporarytableprgcolumndef-property"></a>Propriedade JET_OPENTEMPORARYTABLE. prgcolumndef
+# <a name="jet_opentemporarytableprgcolumndef-property"></a>JET_OPENTEMPORARYTABLE.prgcolumndef
 
 Obtém ou define as definições de coluna para as colunas criadas na tabela temporária.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -62,14 +62,14 @@ public JET_COLUMNDEF[] prgcolumndef { get; set; }
 
 #### <a name="property-value"></a>Valor da propriedade
 
-Escreva \[\]  
+Tipo: \[\]  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Classe JET_OPENTEMPORARYTABLE](./jet-opentemporarytable-class.md)
+[JET_OPENTEMPORARYTABLE classe](./jet-opentemporarytable-class.md)
 
-[Membros do JET_OPENTEMPORARYTABLE](./jet-opentemporarytable-members.md)
+[JET_OPENTEMPORARYTABLE membros](./jet-opentemporarytable-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

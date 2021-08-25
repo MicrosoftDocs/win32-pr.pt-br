@@ -4,12 +4,12 @@ ms.assetid: 94524636-c7f2-4de2-b35e-644c0c171193
 title: Propriedade UserID
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 49fab01b3f87c654a306bfe3633adf0973ed58aa
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b26185c886117b39355241151ffef6d8615bd5f8d10a7f50bd5937a301f7b398
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747314"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119809156"
 ---
 # <a name="usersid-property"></a>Propriedade UserID
 
@@ -21,7 +21,7 @@ Nenhum.
 
 ## <a name="remarks"></a>Comentários
 
-O Windows Installer definir essa propriedade no Windows 2000, Windows XP e Windows Vista. Essa propriedade não está definida em todos os outros sistemas operacionais.
+o Windows Installer definir essa propriedade em Windows 2000, Windows XP e Windows Vista. Essa propriedade não está definida em todos os outros sistemas operacionais.
 
 Observe que essa propriedade tem o atributo especial que pode ser recuperado de uma ação personalizada adiada. Uma ação personalizada em execução com privilégios elevados ainda pode retornar o SID do usuário na propriedade **userid** . Para obter informações, consulte [obtendo informações de contexto para ações personalizadas de execução adiada](obtaining-context-information-for-deferred-execution-custom-actions.md).
 
@@ -31,7 +31,7 @@ Observe que essa propriedade tem o atributo especial que pode ser recuperado de 
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou no Windows Vista. Windows Installer no Windows Server 2003 ou no Windows XP. Consulte os [requisitos de Run-Time Windows Installer](windows-installer-portal.md) para obter informações sobre a Service Pack mínima do Windows exigida por uma versão Windows Installer.<br/> |
+| Versão<br/> | Windows instalador 5,0 em Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou Windows Vista. Windows instalador no Windows Server 2003 ou Windows XP. consulte os [requisitos de Run-Time Windows Installer](windows-installer-portal.md) para obter informações sobre o service pack mínimo Windows exigido por uma versão Windows Installer.<br/> |
 
 
 

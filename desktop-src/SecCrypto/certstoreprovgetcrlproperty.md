@@ -12,16 +12,16 @@ api_name:
 api_type:
 - UserDefined
 api_location: ''
-ms.openlocfilehash: bcf69653f03ccfbb52c8247c9ea459000db55e2a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2662c29ede9feec90b10869a4dc21277a8c6bdc6243e60ce894819e4b27dce5e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105760391"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119877046"
 ---
 # <a name="certstoreprovgetcrlproperty-callback-function"></a>Função de retorno de chamada CertStoreProvGetCRLProperty
 
-A função de retorno de chamada **CertStoreProvGetCRLProperty** recupera uma propriedade especificada de uma [*CRL*](../secgloss/c-gly.md).
+A função de retorno de chamada **CertStoreProvGetCRLProperty** recupera uma propriedade especificada de uma [*CRL.*](../secgloss/c-gly.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,51 +43,51 @@ BOOL WINAPI CertStoreProvGetCRLProperty(
 
 <dl> <dt>
 
-*hStoreProv* \[ no\]
+*hStoreProv* \[ Em\]
 </dt> <dd>
 
-Identificador de **HCERTSTOREPROV** para um [*repositório de certificados*](../secgloss/c-gly.md).
+**Alça HCERTSTOREPROV** para um repositório [*de certificados*](../secgloss/c-gly.md).
 
 </dd> <dt>
 
-*pCrlContext* \[ no\]
+*pCrlContext* \[ Em\]
 </dt> <dd>
 
-Um ponteiro para uma estrutura de [**\_ contexto de CRL**](/windows/desktop/api/Wincrypt/ns-wincrypt-crl_context) .
+Um ponteiro para uma [**estrutura CONTEXT \_ da CRL.**](/windows/desktop/api/Wincrypt/ns-wincrypt-crl_context)
 
 </dd> <dt>
 
-*dwPropId* \[ no\]
+*dwPropId* \[ Em\]
 </dt> <dd>
 
 Indica um identificador de propriedade.
 
 </dd> <dt>
 
-*dwFlags* \[ no\]
+*dwFlags* \[ Em\]
 </dt> <dd>
 
 Quaisquer valores de sinalizador necessários.
 
 </dd> <dt>
 
-*pvData* \[ fora\]
+*pvData* \[ out\]
 </dt> <dd>
 
-Um ponteiro para um buffer que contém o ponteiro para uma estrutura de [**\_ contexto de CRL**](/windows/desktop/api/Wincrypt/ns-wincrypt-crl_context) a ser retornada pela função. Pode ser definido como **NULL** em uma primeira chamada para a função para obter o valor de *pcbData* antes de alocar memória para o buffer.
+Um ponteiro para um buffer para conter o ponteiro para uma estrutura [**CONTEXT da CRL \_**](/windows/desktop/api/Wincrypt/ns-wincrypt-crl_context) a ser retornada pela função. Pode ser definido como **NULL** em uma primeira chamada para a função para obter o valor *de pcbData* antes de alocar memória para o buffer.
 
 </dd> <dt>
 
-*pcbData* \[ entrada, saída\]
+*pcbData* \[ in, out\]
 </dt> <dd>
 
-Um ponteiro para um **DWORD** que indica o comprimento do buffer *pvData* .
+Um ponteiro para um **DWORD** que indica o comprimento do buffer *pvData.*
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retornará **true** se a função for bem-sucedida ou **false** se falhar.
+Retornará **TRUE** se a função for bem-sucedida **ou FALSE** se falhar.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -95,8 +95,8 @@ Retornará **true** se a função for bem-sucedida ou **false** se falhar.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>          |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/> |
 
 
 
@@ -104,7 +104,7 @@ Retornará **true** se a função for bem-sucedida ou **false** se falhar.
 
 <dl> <dt>
 
-[**contexto de CRL \_**](/windows/desktop/api/Wincrypt/ns-wincrypt-crl_context)
+[**CONTEXTO \_ DE CRL**](/windows/desktop/api/Wincrypt/ns-wincrypt-crl_context)
 </dt> </dl>
 
  

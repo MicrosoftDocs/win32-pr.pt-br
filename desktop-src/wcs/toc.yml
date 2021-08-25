@@ -1,7 +1,7 @@
 - name: Sistema de cores do Windows
   href: windows-color-system.md
   items:
-    - name: 'Considerações de segurança: sistema de cores do Windows'
+    - name: 'Considerações sobre segurança: Windows de cores'
       href: security-considerations--windows-color-system.md
     - name: Conceitos básicos de gerenciamento de cores
       href: basic-color-management-concepts.md
@@ -39,9 +39,9 @@
     - name: Algoritmos e esquemas do sistema de cores do Windows
       href: windows-color-system-schemas-and-algorithms.md
       items:
-        - name: 'Estratégias de tipo de perfil comum de esquema, controle de versão e localização'
+        - name: 'Esquema, estratégias de localização e de tipos de perfil comuns do WCS'
           href: windows-color-system-common-profile-types-schema--versioning-and-localization-strategies.md
-        - name: Esquema e algoritmos de perfil do modelo de aparência de cores WCS
+        - name: Esquema e algoritmos do perfil do modelo de aparência de cor do WCS
           href: wcs-color-appearance-model-profile-schema-and-algorithm.md
         - name: Esquema de calibração do WCS
           href: wcs-calibration-schema.md
@@ -54,7 +54,7 @@
     - name: Sobre o sistema de cores do Windows versão 1.0
       href: about-windows-color-system-version-1-0.md
       items:
-        - name: O que há de novo no WCS para Windows Vista
+        - name: Novidades no WCS para Windows Vista
           href: what-s-new-in-windows-vista.md
         - name: Novidades da versão 1.0 do WCS
           href: what-s-new-in-version-1-0-of-wcs.md
@@ -76,7 +76,7 @@
         - name: Uso de gerenciamento de cores na Internet
           href: using-color-management-on-the-internet.md
           items:
-            - name: 'sRGB: um espaço de cores padrão'
+            - name: 'sRGB: um espaço de cor padrão'
               href: srgb--a-standard-color-space.md
         - name: Uso de funções GDI com WCS
           href: using-gdi-functions-with-wcs.md
@@ -161,7 +161,7 @@
                   href: /windows/win32/api/icm/nf-icm-cmtranslatecolors
                 - name: CMTranslateRGB
                   href: /windows/win32/api/icm/nf-icm-cmtranslatergb
-                - name: CMTranslateRGBs
+                - name: 'CMTranslateRGBs '
                   href: /windows/win32/api/icm/nf-icm-cmtranslatergbs
                 - name: 'CMTranslateRGBsExt '
                   href: /windows/win32/api/icm/nf-icm-cmtranslatergbsext
@@ -263,7 +263,7 @@
                   href: /windows/win32/api/icm/nf-icm-opencolorprofilew
                 - name: RegisterCMMA
                   href: /windows/win32/api/icm/nf-icm-registercmma
-                - name: RegisterCMMW
+                - name: RegistrarCMMW
                   href: /windows/win32/api/icm/nf-icm-registercmmw
                 - name: 'SelectCMM '
                   href: /windows/win32/api/icm/nf-icm-selectcmm
@@ -405,11 +405,11 @@
               href: /windows/win32/api/wingdi/ns-wingdi-tagicexyztriple
             - name: 'CMYKCOLOR '
               href: /windows/win32/api/icm/ns-icm-cmykcolor
-            - name: Cor
+            - name: COR
               href: /windows/win32/api/icm/ns-icm-color
-            - name: COLORMATCHSETUPA
+            - name: 'COLORMATCHSETUPA '
               href: /windows/win32/api/icm/ns-icm-colormatchsetupw
-            - name: COLORMATCHSETUPW
+            - name: 'COLORMATCHSETUPW '
               href: /windows/win32/api/icm/ns-icm-colormatchsetupw
             - name: 'ENUMTYPEA '
               href: /windows/win32/api/icm/ns-icm-enumtypea
@@ -427,7 +427,7 @@
               href: /windows/win32/api/icm/ns-icm-graycolor
             - name: 'HiFiCOLOR '
               href: /windows/win32/api/icm/ns-icm-hificolor
-            - name: JabColorF
+            - name: ColorColorF
               href: /windows/win32/api/wcsplugin/ns-wcsplugin-jabcolorf
             - name: JChColorF
               href: /windows/win32/api/wcsplugin/ns-wcsplugin-jchcolorf
@@ -458,7 +458,7 @@
         - name: Macros para valores CMYK e cores
           href: macros-for-cmyk-values-and-colors.md
           items:
-            - name: CMYK
+            - name: Cmyk
               href: /windows/win32/api/wingdi/nf-wingdi-cmyk
             - name: GetCValue
               href: /windows/win32/api/wingdi/nf-wingdi-getcvalue

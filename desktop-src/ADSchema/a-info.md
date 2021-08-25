@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2bd84674fce08f75c3162628b32f67a75fb8c026
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 739203abd9cfbeb383ca4365bdc8b19135010830c4c23305aff18d86d9b03be3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103645327"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119925486"
 ---
 # <a name="comment-attribute-ad-schema"></a>Atributo de comentário (esquema do AD)
 
@@ -58,7 +58,7 @@ Os comentários do usuário. Essa cadeia de caracteres pode ser uma cadeia de ca
 | ID do link                | \-                                                   |
 | MAPI-Id                | 0x3004                                               |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| É de valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
 | No catálogo global      | Falso                                                |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
@@ -79,7 +79,7 @@ Os comentários do usuário. Essa cadeia de caracteres pode ser uma cadeia de ca
 | ID do link                | \-                                                   |
 | MAPI-Id                | 0x3004                                               |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| É de valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
 | No catálogo global      | Falso                                                |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
@@ -100,7 +100,7 @@ Os comentários do usuário. Essa cadeia de caracteres pode ser uma cadeia de ca
 | ID do link                | \-                                                   |
 | MAPI-Id                | 0x3004                                               |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| É de valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
 | No catálogo global      | Falso                                                |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
@@ -108,7 +108,7 @@ Os comentários do usuário. Essa cadeia de caracteres pode ser uma cadeia de ca
 | Range-Upper            | 1024                                                 |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000010                                           |
-| Classes usadas em        | [**Destinatário de email**](c-mailrecipient.md)<br/> |
+| Classes usadas em        | [**Destinatário do email**](c-mailrecipient.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Os comentários do usuário. Essa cadeia de caracteres pode ser uma cadeia de ca
 | ID do link                | \-                                                   |
 | MAPI-Id                | 0x3004                                               |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| Tem valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
-| No catálogo global      | Falso                                                |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
+| No Catálogo Global      | Falso                                                |
+| Descritor de segurança NT | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 1024                                                 |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000010                                           |
-| Classes usadas em        | [**Destinatário de email**](c-mailrecipient.md)<br/> |
+| Classes usadas em        | [**Destinatário do email**](c-mailrecipient.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Os comentários do usuário. Essa cadeia de caracteres pode ser uma cadeia de ca
 | ID do link                | \-                                                   |
 | MAPI-Id                | 0x3004                                               |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| Tem valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
-| No catálogo global      | Falso                                                |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
+| No Catálogo Global      | Falso                                                |
+| Descritor de segurança NT | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 1024                                                 |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000010                                           |
-| Classes usadas em        | [**Destinatário de email**](c-mailrecipient.md)<br/> |
+| Classes usadas em        | [**Destinatário do email**](c-mailrecipient.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Os comentários do usuário. Essa cadeia de caracteres pode ser uma cadeia de ca
 | ID do link                | \-                                                   |
 | MAPI-Id                | 0x3004                                               |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| Tem valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
-| No catálogo global      | Falso                                                |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
+| No Catálogo Global      | Falso                                                |
+| Descritor de segurança NT | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 1024                                                 |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000010                                           |
-| Classes usadas em        | [**Destinatário de email**](c-mailrecipient.md)<br/> |
+| Classes usadas em        | [**Destinatário do email**](c-mailrecipient.md)<br/> |
 
 
 

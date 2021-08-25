@@ -4,12 +4,12 @@ ms.assetid: 397ae29c-f81c-410e-9670-db69c099a321
 title: WPD_COMMAND_MTP_EXT_GET_SUPPORTED_VENDOR_OPCODES comando (WpdMtpExtensions. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f8713c739da98c179ecc2b7bf042905e4fd06ad7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 45b0ab00fc3ada963e56dced49f97d3c1dbca578dfc5c1cded4735f9df947ff1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105763064"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119927966"
 ---
 # <a name="wpd_command_mtp_ext_get_supported_vendor_opcodes-command"></a>Comando WPD de \_ \_ MTP \_ ext de \_ \_ fornecedor com suporte \_ \_
 

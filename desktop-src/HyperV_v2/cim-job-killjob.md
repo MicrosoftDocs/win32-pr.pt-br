@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 967e5e8510d4456a085f393291f8c41afb5be446
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 681d6a878f90f29708812fce2c39f27024ed588deb5f3b8066cc4833487fd91f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921543"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119900326"
 ---
 # <a name="killjob-method-of-the-cim_job-class"></a>Método KillJob da classe de \_ trabalho CIM
 
@@ -46,7 +46,7 @@ Indica se o trabalho deve ou não ser excluído automaticamente após o encerram
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um 0 em caso de êxito; caso contrário, retornará um erro.
 

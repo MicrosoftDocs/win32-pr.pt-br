@@ -1,7 +1,7 @@
 ---
 description: Usado para indicar que ocorreu um erro com o buffer de origem.
 ms.assetid: a7187b7a-0090-4380-82bb-a7f72d54232e
-title: 'Método IMFSourceBufferNotify:: OnError'
+title: Método IMFSourceBufferNotify::OnError
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - mfmediaengine.h
-ms.openlocfilehash: 8b5f48c3517eb62b0a70acb9cbb28a5ecf7c90cc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0602340011bae5af974a3441b42d62d392394b79854015acc68da0b1c2fcf538
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105782548"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119957796"
 ---
-# <a name="imfsourcebuffernotifyonerror-method"></a>Método IMFSourceBufferNotify:: OnError
+# <a name="imfsourcebuffernotifyonerror-method"></a>Método IMFSourceBufferNotify::OnError
 
 Usado para indicar que ocorreu um erro com o buffer de origem.
 
@@ -39,10 +39,10 @@ void OnError(
 
 <dl> <dt>
 
-*HR* \[ no\]
+*hr* \[ Em\]
 </dt> <dd></dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
@@ -52,9 +52,9 @@ Esse método não retorna um valor.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 8.1 \[ apenas aplicativos de área de trabalho\]<br/>                                                 |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012 R2\]<br/>                                      |
-| INSERI<br/>                      | <dl> <dt>Mfmediaengine. idl</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8.1 somente aplicativos da área de trabalho\]<br/>                                                 |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 Somente \[ aplicativos da área de trabalho R2\]<br/>                                      |
+| Idl<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
 
 
 

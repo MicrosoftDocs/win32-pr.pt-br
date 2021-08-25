@@ -4,12 +4,12 @@ ms.assetid: 00ed6b0d-0b59-43b4-a9ce-f5964f9268a3
 title: System. Contact. HomeAddressCity
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a44e4d986339fa5448534a28f615c1b9c0cb242
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 67f526c283f023237409863c93587d216db2e33bebe3ee17c41c65262ddade65
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105782680"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119845806"
 ---
 # <a name="systemcontacthomeaddresscity"></a>System. Contact. HomeAddressCity
 

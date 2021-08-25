@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
-ms.openlocfilehash: 346e44e3ce0b59e40577d3207f45faafdc33b367
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4e4e0c9843752af0799901537c5ee6d682d895a5ada22843ad2c406e9bda32b0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105754782"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119928946"
 ---
-# <a name="id2d1rendertargetclear-methods"></a>Métodos ID2D1RenderTarget:: Clear
+# <a name="id2d1rendertargetclear-methods"></a>Métodos ID2D1RenderTarget::Clear
 
 Limpa a área de desenho para a cor especificada.
 
@@ -30,20 +30,20 @@ Limpa a área de desenho para a cor especificada.
 
 | Método                                                                 | Descrição                                                 |
 |:-----------------------------------------------------------------------|:------------------------------------------------------------|
-| [**Clear (D2D1 \_ Color \_ F \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-clear(constd2d1_color_f)) | Limpa a área de desenho para a cor especificada. <br/> |
-| [**Clear (D2D1 \_ Color \_ F&)**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-clear(constd2d1_color_f_))  | Limpa a área de desenho para a cor especificada. <br/> |
+| [**Clear(D2D1 \_ COLOR \_ F \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-clear(constd2d1_color_f)) | Limpa a área de desenho para a cor especificada. <br/> |
+| [**Clear(D2D1 \_ COLOR \_ F&)**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-clear(constd2d1_color_f_))  | Limpa a área de desenho para a cor especificada. <br/> |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-Direct2D interpreta o *clearColor* como alfa reto (não premultiplicado). Se o modo alfa do destino de renderização [**for \_ d2d1 \_ modo alfa \_ ignorar**](/windows/desktop/api/dcommon/ne-dcommon-d2d1_alpha_mode), o canal alfa de *clearColor* será ignorado e substituído por 1,0 f (totalmente opaco).
+Direct2D interpreta *clearColor* como alfa reta (não pré-ultido). Se o modo alfa do destino de renderização for [**D2D1 \_ MODO ALFA \_ \_ IGNORAR**](/windows/desktop/api/dcommon/ne-dcommon-d2d1_alpha_mode), o canal alfa de *clearColor* será ignorado e substituído por 1.0f (totalmente opaco).
 
-Se o destino de renderização tiver um clipe ativo (especificado por [**PushAxisAlignedClip**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-pushaxisalignedclip(constd2d1_rect_f__d2d1_antialias_mode))), o comando limpar só será aplicado à área dentro da região do clipe.
+Se o destino de renderização tiver um clipe ativo (especificado por [**PushAxisAlignedClip),**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-pushaxisalignedclip(constd2d1_rect_f__d2d1_antialias_mode))o comando clear só será aplicado à área dentro da região do clipe.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir usa o método **Clear** para criar um plano de fundo branco antes de renderizar outro conteúdo.
+O exemplo a seguir usa o **método Clear** para criar uma plano de fundo em branco antes de renderizar outro conteúdo.
 
 
 ```C++
@@ -103,7 +103,7 @@ HRESULT DemoApp::OnRender()
 
 | Requisito | Valor |
 |--------------------|-------------------------------------------------------------------------------------|
-| Biblioteca<br/> | <dl> <dt>D2d1. lib</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D2d1.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>D2d1.dll</dt> </dl> |
 
 

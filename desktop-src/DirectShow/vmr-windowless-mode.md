@@ -1,62 +1,62 @@
 ---
-description: Modo sem janela do VMR
+description: Modo sem janela da VMR
 ms.assetid: 0dc871d2-79c4-4bf8-96ef-13c4d1ab4497
-title: Modo sem janela do VMR
+title: Modo sem janela da VMR
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b137fbc1351f2bbe5ed38673b681e45558675d9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 193f672e0fc1e3dced4bdff16da0e85123079eb94f2ac3c5fdb302b67c9432b0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296523"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119830576"
 ---
-# <a name="vmr-windowless-mode"></a>Modo sem janela do VMR
+# <a name="vmr-windowless-mode"></a>Modo sem janela da VMR
 
-O modo sem janela é a maneira preferida para os aplicativos renderizarem o vídeo dentro de uma janela de aplicativo. No modo sem janela, o processador de mixagem de vídeo não carrega o componente do Gerenciador de janelas e, portanto, não oferece suporte às interfaces [**IBasicVideo**](/windows/desktop/api/Control/nn-control-ibasicvideo) ou [**IVideoWindow**](/windows/desktop/api/Control/nn-control-ivideowindow) . Em vez disso, o aplicativo fornece a janela de reprodução e define um retângulo de destino na área do cliente para o VMR desenhar o vídeo. O VMR usa um objeto Clipper do DirectDraw para garantir que o vídeo seja recortado na janela do aplicativo e não apareça em outras janelas. O VMR não faz a subclasse da janela do aplicativo nem instala quaisquer ganchos de sistema/processo.
+O modo sem janelas é a maneira preferencial para os aplicativos renderizarem vídeo dentro de uma janela do aplicativo. No modo sem janelas, o Renderização de Combinação de Vídeo não carrega seu componente do Gerenciador de Janelas e, portanto, não dá suporte às interfaces [**IBasicVideo**](/windows/desktop/api/Control/nn-control-ibasicvideo) ou [**IVideoWindow.**](/windows/desktop/api/Control/nn-control-ivideowindow) Em vez disso, o aplicativo fornece a janela de reprodução e define um retângulo de destino na área do cliente para a VMR desenhar o vídeo. A VMR usa um objeto clipper directDraw para garantir que o vídeo seja recortado na janela do aplicativo e não apareça em nenhuma outra janela. A VMR não subclasse a janela do aplicativo nem instala nenhum gancho de sistema/processo.
 
-No modo sem janela, a sequência de eventos durante a conexão e a transição para o estado de execução é a seguinte:
+No modo sem janelas, a sequência de eventos durante a conexão e a transição para o estado de run é a seguinte:
 
--   O filtro upstream propõe um tipo de mídia, que o VMR aceita ou rejeita.
--   Se o tipo de mídia for aceito, o VMR chamará o alocador-Presenter para obter uma superfície do DirectDraw. Se a superfície for criada com êxito, os PINs se conectarão e o VMR estará pronto para fazer a transição para o estado de execução.
--   Quando o grafo de filtro é executado, o decodificador chama **GetBuffer** para obter um exemplo de mídia do alocador. O VMR consulta o alocador-apresentador para garantir que a profundidade de pixels, o tamanho do retângulo e outros parâmetros em sua superfície do DirectDraw sejam compatíveis com o vídeo de entrada. Se forem compatíveis, o VMR retornará a superfície do DirectDraw para o decodificador. Depois que o decodificador for decodificado na superfície, a unidade de sincronização principal do VMR validará os carimbos de data/hora. Essa unidade bloqueia a chamada de **recebimento** até que o tempo de apresentação chegue. Nesse ponto, o VMR chama **PresentImage** no apresentador de alocador, que apresenta a superfície para a placa gráfica.
+-   O filtro upstream propõe um tipo de mídia, que a VMR aceita ou rejeita.
+-   Se o tipo de mídia for aceito, a VMR chamará o allocator-presenter para obter uma superfície directDraw. Se a superfície for criada com êxito, os pinos se conectarão e a VMR estará pronta para fazer a transição para o estado de executar.
+-   Quando o grafo de filtro é executado, o decodificador chama **GetBuffer** para obter um exemplo de mídia do alocador. A VMR consulta o allocator-presenter para garantir que a profundidade do pixel, o tamanho do retângulo e outros parâmetros em sua superfície do DirectDraw sejam compatíveis com o vídeo de entrada. Se eles são compatíveis, a VMR retorna a superfície directDraw para o decodificador. Depois que o decodificador tiver sido decodificado na superfície, a Unidade de Sincronização Principal da VMR validará os carimbos de data/hora. Esta unidade bloqueia a **chamada De** recebimento até a hora da apresentação chegar. Nesse ponto, a VMR chama **PresentImage** no allocator-presenter, que apresenta a superfície para a placa gráfica.
 
-A ilustração a seguir mostra o VMR no modo sem janela com vários fluxos de entrada.
+A ilustração a seguir mostra a VMR no modo sem janelas com vários fluxos de entrada.
 
-![VMR no modo sem janela](images/vmr-windowless-mult-streams.png)
+![vmr no modo sem janelas](images/vmr-windowless-mult-streams.png)
 
-**Configurando o VMR-7 para o modo sem janela**
+**Configurando a VMR-7 para o modo sem janelas**
 
-Para configurar o VMR-7 para o modo sem janela, execute todas as etapas a seguir antes de conectar qualquer um dos Pins de entrada do VMR:
+Para configurar a VMR-7 para o modo sem janela, execute todas as seguintes etapas antes de conectar qualquer um dos pinos de entrada da VMR:
 
 1.  Crie o filtro e adicione-o ao grafo.
-2.  Chame o método [**IVMRFilterConfig:: Setrenderizamode**](/windows/desktop/api/Strmif/nf-strmif-ivmrfilterconfig-setrenderingmode) com o \_ sinalizador VMRMode sem janela.
-3.  Opcionalmente, configure o VMR para vários fluxos de entrada chamando [**IVMRFilterConfig:: SetNumberOfStreams**](/windows/desktop/api/Strmif/nf-strmif-ivmrfilterconfig-setnumberofstreams). O VMR cria um PIN de entrada para cada fluxo. Use a interface [**IVMRMixerControl**](/windows/desktop/api/Strmif/nn-strmif-ivmrmixercontrol) para definir a ordem Z e outros parâmetros para o fluxo. Para obter mais informações, consulte [VMR com vários fluxos (modo de combinação)](vmr-with-multiple-streams--mixing-mode.md).
+2.  Chame o [**método IVMRFilterConfig::SetRenderingMode**](/windows/desktop/api/Strmif/nf-strmif-ivmrfilterconfig-setrenderingmode) com o sinalizador sem janela VMRMode. \_
+3.  Opcionalmente, configure a VMR para vários fluxos de entrada chamando [**IVMRFilterConfig::SetNumberOfStreams**](/windows/desktop/api/Strmif/nf-strmif-ivmrfilterconfig-setnumberofstreams). A VMR cria um pino de entrada para cada fluxo. Use a interface [**IVMRMixerControl**](/windows/desktop/api/Strmif/nn-strmif-ivmrmixercontrol) para definir a ordem Z e outros parâmetros para o fluxo. Para obter mais informações, [consulte VMR com vários Fluxos (modo de combinação).](vmr-with-multiple-streams--mixing-mode.md)
 
-    Se você não chamar **SetNumberOfStreams**, o VMR-7 usa como padrão um PIN de entrada. Depois que os Pins de entrada estiverem conectados, o número de Pins não poderá ser alterado.
+    Se você não chamar **SetNumberOfStreams,** a VMR-7 assume como padrão um pino de entrada. Depois que os pinos de entrada são conectados, o número de pinos não pode ser alterado.
 
-4.  Chame [**IVMRWindowlessControl:: SetVideoClippingWindow**](/windows/desktop/api/Strmif/nf-strmif-ivmrwindowlesscontrol-setvideoclippingwindow) para especificar a janela na qual o vídeo renderizado será exibido.
+4.  Chame [**IVMRWindowlessControl::SetVideoClippingWindow**](/windows/desktop/api/Strmif/nf-strmif-ivmrwindowlesscontrol-setvideoclippingwindow) para especificar a janela na qual o vídeo renderizado será exibido.
 
-Depois que essas etapas forem concluídas, você poderá conectar os Pins de entrada do filtro do VMR. Há várias maneiras de criar o grafo, como conectar Pins diretamente, usando métodos de conexão inteligente, como [**IGraphBuilder:: RenderFile**](/windows/desktop/api/Strmif/nf-strmif-igraphbuilder-renderfile), ou usando o método [**ICaptureGraphBuilder2:: MessageRenderStream**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-renderstream) do construtor de grafo de captura. Para obter mais informações, consulte [General Graph-Building Techniques](general-graph-building-techniques.md).
+Depois que essas etapas são concluídas, você pode conectar os pinos de entrada do filtro VMR. Há várias maneiras de criar o grafo, como conectar pinos diretamente, usando métodos de Conexão inteligentes, como [**IGraphBuilder::RenderFile**](/windows/desktop/api/Strmif/nf-strmif-igraphbuilder-renderfile)ou usando o método [**ICaptureGraphBuilder2::RenderStream**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-renderstream) do Construtor de Captura do Graph. Para obter mais informações, consulte [Técnicas Graph-Building geral.](general-graph-building-techniques.md)
 
-Para definir a posição do vídeo dentro da janela do aplicativo, chame o método [**IVMRWindowlessControl:: SetVideoPosition**](/windows/desktop/api/Strmif/nf-strmif-ivmrwindowlesscontrol-setvideoposition) . O método [**IVMRWindowlessControl:: GetNativeVideoSize**](/windows/desktop/api/Strmif/nf-strmif-ivmrwindowlesscontrol-getnativevideosize) retorna o tamanho do vídeo nativo. Durante a reprodução, o aplicativo deve notificar o VMR das seguintes mensagens do Windows:
+Para definir a posição do vídeo dentro da janela do aplicativo, chame o [**método IVMRWindowlessControl::SetVideoPosition.**](/windows/desktop/api/Strmif/nf-strmif-ivmrwindowlesscontrol-setvideoposition) O [**método IVMRWindowlessControl::GetNativeVideoSize**](/windows/desktop/api/Strmif/nf-strmif-ivmrwindowlesscontrol-getnativevideosize) retorna o tamanho do vídeo nativo. Durante a reprodução, o aplicativo deve notificar a VMR das seguintes Windows mensagens:
 
--   WM \_ Paint: chame [**IVMRWindowlessControl:: RepaintVideo**](/windows/desktop/api/Strmif/nf-strmif-ivmrwindowlesscontrol-repaintvideo) para redesenhar a imagem.
--   WM \_ DISPLAYCHANGE: chamar [**IVMRWindowlessControl::D isplaymodechanged**](/windows/desktop/api/Strmif/nf-strmif-ivmrwindowlesscontrol-displaymodechanged). O VMR usa todas as ações necessárias para exibir o vídeo na nova resolução ou profundidade de cor.
--   \_Tamanho do WM: recalcule a posição do vídeo e chame [**SetVideoPosition**](/windows/desktop/api/Strmif/nf-strmif-ivmrwindowlesscontrol-setvideoposition) novamente, se necessário.
+-   WM \_ PAINT: chame [**IVMRWindowlessControl::RepaintVideo**](/windows/desktop/api/Strmif/nf-strmif-ivmrwindowlesscontrol-repaintvideo) para repintar a imagem.
+-   WM \_ DISPLAYCHANGE: chame [**IVMRWindowlessControl::D isplayModeChanged.**](/windows/desktop/api/Strmif/nf-strmif-ivmrwindowlesscontrol-displaymodechanged) A VMR toma todas as ações necessárias para exibir o vídeo na nova resolução ou profundidade de cor.
+-   WM \_ SIZE: recalcula a posição do vídeo e chame [**SetVideoPosition**](/windows/desktop/api/Strmif/nf-strmif-ivmrwindowlesscontrol-setvideoposition) novamente, se necessário.
 
 > [!Note]  
-> Os aplicativos MFC devem definir um \_ manipulador de mensagens ERASEBKGND do WM vazio ou a área de exibição do vídeo não será redesenhada corretamente.
+> Os aplicativos MFC devem definir um manipulador de mensagens WM ERASEBKGND vazio ou a área de exibição de vídeo \_ não será reintint corretamente.
 
  
 
-**Configurando o VMR-9 para o modo sem janela**
+**Configurando a VMR-9 para o modo sem janelas**
 
-Para configurar o VMR-9 para o modo sem janela, use as etapas descritas para o VMR-7 para o modo sem janela, mas use as interfaces [**IVMRFilterConfig9**](/previous-versions/windows/desktop/api/Vmr9/nn-vmr9-ivmrfilterconfig9) e [**IVMRWindowlessControl9**](/previous-versions/windows/desktop/api/Vmr9/nn-vmr9-ivmrwindowlesscontrol9) . A única diferença significativa é que o VMR-9 cria quatro Pins de entrada por padrão, em vez de um PIN de entrada. Portanto, você só precisa chamar **SetNumberOfStreams** se estiver misturando mais de quatro fluxos de vídeo.
+Para configurar a VMR-9 para o modo sem janela, use as etapas descritas para a VMR-7 para o modo sem janela, mas use as interfaces [**IVMRFilterConfig9**](/previous-versions/windows/desktop/api/Vmr9/nn-vmr9-ivmrfilterconfig9) e [**IVMRWindowlessControl9.**](/previous-versions/windows/desktop/api/Vmr9/nn-vmr9-ivmrwindowlesscontrol9) A única diferença significativa é que a VMR-9 cria quatro pinos de entrada por padrão, em vez de um pino de entrada. Portanto, você só precisará chamar **SetNumberOfStreams** se estiver combinando mais de quatro fluxos de vídeo.
 
 **Código de exemplo**
 
-O código a seguir mostra como criar um filtro do VMR-7, adicioná-lo ao grafo de filtro do DirectShow e, em seguida, colocar o VMR no modo sem janela. Para o VMR-9, use CLSID \_ VideoMixingRenderer9 em **CoCreateInstance** e as interfaces do VMR-9 correspondentes.
+O código a seguir mostra como criar um filtro VMR-7, adicioná-lo ao grafo de filtro DirectShow e, em seguida, colocar a VMR no modo sem janelas. Para a VMR-9, use CLSID \_ VideoMixingRenderer9 em **CoCreateInstance** e as interfaces VMR-9 correspondentes.
 
 
 ```C++
@@ -122,7 +122,7 @@ HRESULT InitializeWindowlessVMR(
 
 <dl> <dt>
 
-[Usando o modo sem janela](using-windowless-mode.md)
+[Usando o modo sem janelas](using-windowless-mode.md)
 </dt> </dl>
 
  

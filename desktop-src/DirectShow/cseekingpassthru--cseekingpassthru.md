@@ -1,7 +1,7 @@
 ---
-description: CSeekingPassThru. ~ CSeekingPassThru destruidor-método Destruitor.
+description: Destruidor CSeekingPassThru.~CSeekingPassThru – método destruidor.
 ms.assetid: 98e00ff2-0175-4c44-9a7f-c5c1b23f8fce
-title: CSeekingPassThru. ~ CSeekingPassThru Destruitor (Seekpt. h)
+title: Destruidor CSeekingPassThru.~CSeekingPassThru (Seekpt.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b6ed17cf4fd57f3470a57b22daafa9858ba97f79
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 28b871224528581c3127553654dd57b7b991692c32f2c71cb99afa9b41443a0c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108085384"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119908046"
 ---
-# <a name="cseekingpassthrucseekingpassthru-destructor"></a>Destruidor CSeekingPassThru. ~ CSeekingPassThru
+# <a name="cseekingpassthrucseekingpassthru-destructor"></a>Destruidor CSeekingPassThru.~CSeekingPassThru
 
 Método destruidor.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -42,12 +42,12 @@ Método destruidor.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Seekpt. h (incluir fluxos. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Seekpt.h (incluir Fluxos.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

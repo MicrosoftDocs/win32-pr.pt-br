@@ -4,34 +4,34 @@ ms.assetid: 6e548f2a-77cd-460e-9ffd-c098f6ee75eb
 title: Criando nós de saída
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4388258c82c12f8473dc07df83ba3b9467eed7e6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6af2842458fb360374d34583b15bfbf5005b2f2bbdd8b32332bc6756ca4e8157
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826737"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119943016"
 ---
 # <a name="creating-output-nodes"></a>Criando nós de saída
 
-Um nó de saída representa um coletor de fluxo em um coletor de mídia. Há duas maneiras de inicializar um nó de saída:
+Um nó de saída representa um sink de fluxo em um sink de mídia. Há duas maneiras de inicializar um nó de saída:
 
--   De um ponteiro para o coletor de fluxo.
--   De um ponteiro para um objeto de ativação para o coletor de mídia.
+-   De um ponteiro para o sink de fluxo.
+-   De um ponteiro para um objeto de ativação para o sink de mídia.
 
-Se você pretende carregar a topologia dentro do caminho de mídia protegido (PMP), deve usar um objeto de ativação para que o coletor de mídia possa ser criado dentro do processo protegido. A primeira abordagem (usando um ponteiro para o coletor de fluxo) não funciona com o PMP.
+Se você for carregar a topologia dentro do caminho de mídia protegido (PMP), deverá usar um objeto de ativação para que o sink de mídia possa ser criado dentro do processo protegido. A primeira abordagem (usando um ponteiro para o sink de fluxo) não funciona com o PMP.
 
-## <a name="creating-an-output-node-from-a-stream-sink"></a>Criando um nó de saída de um coletor de fluxo
+## <a name="creating-an-output-node-from-a-stream-sink"></a>Criando um nó de saída de um sink de fluxo
 
-Para criar um nó de saída de um coletor de fluxo, faça o seguinte:
+Para criar um nó de saída de um sink de fluxo, faça o seguinte:
 
-1.  Crie uma instância do coletor de mídia.
-2.  Use a interface [**IMFMediaSink**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasink) do coletor de mídia para obter um ponteiro para o coletor de fluxo desejado. (A interface **IMFMediaSink** tem vários métodos que retornam ponteiros para um coletor de fluxo.)
-3.  Chame [**MFCreateTopologyNode**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatetopologynode) com o sinalizador de **\_ nó de \_ saída \_ da topologia MF** para criar o nó de saída.
-4.  Chame [**IMFTopologyNode:: setObject**](/windows/desktop/api/mfidl/nf-mfidl-imftopologynode-setobject) e transmita um ponteiro para a interface [**IMFStreamSink**](/windows/desktop/api/mfidl/nn-mfidl-imfstreamsink) do coletor de fluxo.
-5.  Defina o [**\_ TOPONODE MF \_ parashutdown \_ no atributo \_ Remove**](mf-toponode-noshutdown-on-remove-attribute.md) como **false** (opcional, mas recomendado).
-6.  Chame [**IMFTopology:: AddNode**](/windows/desktop/api/mfidl/nf-mfidl-imftopology-addnode) para adicionar o nó à topologia.
+1.  Crie uma instância do sink de mídia.
+2.  Use a interface [**IMFMediaSink**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasink) do sink de mídia para obter um ponteiro para o sink de fluxo desejado. (A interface **IMFMediaSink** tem vários métodos que retornam ponteiros para um sink de fluxo.)
+3.  Chame [**MFCreateTopologyNode com o**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatetopologynode) sinalizador **MF \_ TOPOLOGY OUTPUT \_ \_ NODE** para criar o nó de saída.
+4.  Chame [**IMFTopologyNode::SetObject**](/windows/desktop/api/mfidl/nf-mfidl-imftopologynode-setobject) e passe um ponteiro para a interface [**IMFStreamSink**](/windows/desktop/api/mfidl/nn-mfidl-imfstreamsink) do fluxo.
+5.  De definir [**o \_ atributo MF TOPNODE \_ NOSHUTDOWN \_ ON \_ REMOVE**](mf-toponode-noshutdown-on-remove-attribute.md) **como FALSE** (opcional, mas recomendado).
+6.  Chame [**IMFTopology::AddNode**](/windows/desktop/api/mfidl/nf-mfidl-imftopology-addnode) para adicionar o nó à topologia.
 
-O exemplo a seguir cria e inicializa um nó de saída de um coletor de fluxo.
+O exemplo a seguir cria e inicializa um nó de saída de um sink de fluxo.
 
 
 ```C++
@@ -81,20 +81,20 @@ HRESULT AddOutputNode(
 
 
 
-Quando o aplicativo desliga a sessão de mídia, a sessão de mídia desliga automaticamente o coletor de mídia. Portanto, você não pode usar novamente o coletor de mídia com outra instância da sessão de mídia.
+Quando o aplicativo desliga a Sessão de Mídia, a Sessão de Mídia desliga automaticamente o sink de mídia. Portanto, você não pode usar o sink de mídia com outra instância da Sessão de Mídia.
 
 ## <a name="creating-an-output-node-from-an-activation-object"></a>Criando um nó de saída de um objeto de ativação
 
-Qualquer coletor de mídia confiável deve fornecer um objeto de ativação, para que o coletor de mídia possa ser criado dentro do processo protegido. Para obter mais informações, consulte [objetos de ativação](activation-objects.md). A função específica que cria o objeto de ativação dependerá do coletor de mídia.
+Qualquer sink de mídia confiável deve fornecer um objeto de ativação para que o sink de mídia possa ser criado dentro do processo protegido. Para obter mais informações, consulte [Objetos de ativação](activation-objects.md). A função específica que cria o objeto de ativação dependerá do sink de mídia.
 
 Para criar um nó de saída de um objeto de ativação, faça o seguinte:
 
-1.  Crie o objeto de ativação e obtenha um ponteiro para a interface [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) do objeto de ativação.
-2.  Chame [**MFCreateTopologyNode**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatetopologynode) com o sinalizador de **\_ nó de \_ saída \_ da topologia MF** para criar o nó de saída.
-3.  Opcionalmente, defina o atributo [**MF \_ TOPONODE \_ streamid**](mf-toponode-streamid-attribute.md) no nó para especificar o identificador de fluxo do coletor de fluxo. Se você omitir esse atributo, o nó usará como padrão o coletor de fluxo 0.
-4.  Defina o [**\_ TOPONODE MF \_ parashutdown \_ no atributo \_ Remove**](mf-toponode-noshutdown-on-remove-attribute.md) como **true** (opcional, mas recomendado).
-5.  Chame [**IMFTopologyNode:: setObject**](/windows/desktop/api/mfidl/nf-mfidl-imftopologynode-setobject) e passe o ponteiro [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) .
-6.  Chame [**IMFTopology:: AddNode**](/windows/desktop/api/mfidl/nf-mfidl-imftopology-addnode) para adicionar o nó à topologia.
+1.  Crie o objeto de ativação e receba um ponteiro para a interface [**IMFActivate do**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) objeto de ativação.
+2.  Chame [**MFCreateTopologyNode com o**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatetopologynode) sinalizador **MF \_ TOPOLOGY OUTPUT \_ \_ NODE** para criar o nó de saída.
+3.  Opcionalmente, de definir [**o atributo \_ STREAMID TOPONODE \_ MF**](mf-toponode-streamid-attribute.md) no nó para especificar o identificador de fluxo do sink de fluxo. Se você omitir esse atributo, o nó assume como padrão o uso do sink 0 do fluxo.
+4.  De acordo [**com o \_ atributo \_ NOSHUTDOWN \_ ON \_ REMOVE do MF TOPNODE COMO**](mf-toponode-noshutdown-on-remove-attribute.md) **TRUE** (opcional, mas recomendado).
+5.  Chame [**IMFTopologyNode::SetObject**](/windows/desktop/api/mfidl/nf-mfidl-imftopologynode-setobject) e passe o [**ponteiro IMFActivate.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate)
+6.  Chame [**IMFTopology::AddNode**](/windows/desktop/api/mfidl/nf-mfidl-imftopology-addnode) para adicionar o nó à topologia.
 
 O exemplo a seguir cria e inicializa um nó de saída de um objeto de ativação.
 
@@ -165,7 +165,7 @@ done:
 [Criando topologias](creating-topologies.md)
 </dt> <dt>
 
-[Coletores de mídia](media-sinks.md)
+[Sinks de mídia](media-sinks.md)
 </dt> <dt>
 
 [Topologias](topologies.md)

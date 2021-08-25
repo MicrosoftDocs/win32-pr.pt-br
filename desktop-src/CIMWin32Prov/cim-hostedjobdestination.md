@@ -1,8 +1,8 @@
 ---
-description: A \_ classe CIM HostedJobDestination representa uma associação entre um destino de trabalho e o sistema no qual ele reside. Um sistema pode hospedar muitas filas de trabalho. Destinos de trabalho adiados para o sistema de hospedagem.
+description: A classe Cim HostedJobDestination representa uma associação entre um destino de trabalho e o sistema \_ no qual ele reside. Um sistema pode hospedar muitas filas de trabalho. Destinos de trabalho adiam para o sistema de hospedagem.
 ms.assetid: 5d853826-1f27-417b-a053-5e0ee9816376
 ms.tgt_platform: multiple
-title: Classe CIM_HostedJobDestination
+title: CIM_HostedJobDestination classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,19 +16,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: c22e911c6b0adcc38de11fd2410e4797c9381a25
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 072e911471fe6220a7135f45787f5ea8bf9c79279212ed6215a971ff8c1d95cd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164066"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119923526"
 ---
-# <a name="cim_hostedjobdestination-class"></a>\_Classe CIM HostedJobDestination
+# <a name="cim_hostedjobdestination-class"></a>Classe Cim \_ HostedJobDestination
 
-A classe **CIM \_ HostedJobDestination** representa uma associação entre um destino de trabalho e o sistema no qual ele reside. Um sistema pode hospedar muitas filas de trabalho. Destinos de trabalho adiados para o sistema de hospedagem.
+A **classe \_ Cim HostedJobDestination** representa uma associação entre um destino de trabalho e o sistema no qual ele reside. Um sistema pode hospedar muitas filas de trabalho. Destinos de trabalho adiam para o sistema de hospedagem.
 
 > [!IMPORTANT]
-> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> As classes CIM (Distributed Management Task Force) do DMTF (Distributed Management Task Force) modelo CIM são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
@@ -47,55 +47,55 @@ class CIM_HostedJobDestination : CIM_Dependency
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ HostedJobDestination** tem estes tipos de membros:
+A **classe \_ Cim HostedJobDestination** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ HostedJobDestination** tem essas propriedades.
+A **classe \_ HostedJobDestination cim** tem essas propriedades.
 
 <dl> <dt>
 
-**Antecedent**
+**Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados **: \_ sistema CIM**
+Tipo de dados: **Sistema CIM \_**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**min**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent")
+Qualificadores: [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Min**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent")
 </dt> </dl>
 
-Um [**\_ sistema CIM**](cim-system.md) que descreve o sistema de hospedagem.
+Um [**sistema CIM \_ que**](cim-system.md) descreve o sistema de hospedagem.
 
 </dd> <dt>
 
-**Depende**
+**Dependente**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **CIM \_ JobDestination**
+Tipo de dados: **\_ JobDestination do CIM**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependente"), [**fraco**](/windows/desktop/WmiSdk/standard-qualifiers)
+Qualificadores: [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependente"), [**Fraco**](/windows/desktop/WmiSdk/standard-qualifiers)
 </dt> </dl>
 
-Um [**\_ JobDestination CIM**](cim-jobdestination.md) que descreve o destino do trabalho hospedado no sistema.
+Um [**\_ JobDestination cim que**](cim-jobdestination.md) descreve o destino do trabalho hospedado no sistema.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-**CIM \_ HostedJobDestination** é derivado da [**\_ dependência CIM**](cim-dependency.md).
+**CIM \_ HostedJobDestination** é derivado da Dependência [**CIM \_**](cim-dependency.md).
 
 O WMI não implementa essa classe.
 
-Esta documentação é derivada das descrições da classe CIM publicadas pela DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, obedecer aos padrões de documentação do Microsoft SDK ou fornecer mais informações.
+Esta documentação é derivada das descrições da classe CIM publicadas pelo DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, estar em conformidade com os padrões de documentação do SDK da Microsoft ou fornecer mais informações.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -105,8 +105,8 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -115,7 +115,7 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 
 <dl> <dt>
 
-[**\_Dependência CIM**](cim-dependency.md)
+[**Dependência cim \_**](cim-dependency.md)
 </dt> </dl>
 
  

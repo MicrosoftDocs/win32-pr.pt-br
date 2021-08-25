@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 9c71db4063f5de6b48b2e8213f21ca1320a880fe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 51f4b1b22849fc5a6ae22f49c5c30411563efb9d133cf2440c301eabfde18e0f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171970"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119898066"
 ---
 # <a name="swbemproperty-object"></a>Objeto SWbemProperty
 
@@ -44,7 +44,7 @@ O objeto **SWbemProperty** tem essas propriedades.
 | [**IsArray**](swbemproperty-isarray.md)<br/>          | Somente leitura<br/>  | Valor booliano que indica se essa propriedade tem um tipo de matriz.<br/>                                                   |
 | [**IsLocal**](swbemproperty-islocal.md)<br/>          | Somente leitura<br/>  | Valor booliano que indica se essa propriedade é local.<br/>                                                            |
 | [**Nome**](swbemproperty-name.md)<br/>                | Somente leitura<br/>  | Nome dessa propriedade WMI.<br/>                                                                                         |
-| [**Ter**](swbemproperty-origin.md)<br/>            | Somente leitura<br/>  | Contém a classe de origem desta propriedade.<br/>                                                                   |
+| [**Origem**](swbemproperty-origin.md)<br/>            | Somente leitura<br/>  | Contém a classe de origem desta propriedade.<br/>                                                                   |
 | [**Qualificadores\_**](swbemproperty-qualifiers-.md)<br/> | Somente leitura<br/>  | Um objeto [**SWbemQualifierSet**](swbemqualifierset.md) , que é a coleção de qualificadores para essa propriedade.<br/> |
 | [**Valor**](swbemproperty-value.md)<br/>              | Leitura/gravação<br/> | Valor real dessa propriedade. Esta é a propriedade de automação padrão deste objeto.<br/>                             |
 
@@ -60,7 +60,7 @@ O objeto **SWbemProperty** tem essas propriedades.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | \_SWBEMPROPERTY CLSID<br/>                                                         |

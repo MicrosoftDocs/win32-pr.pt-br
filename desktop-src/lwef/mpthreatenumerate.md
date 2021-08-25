@@ -3,7 +3,7 @@ title: Função MpThreatEnumerate (MpClient. h)
 description: Retorna informações sobre a próxima ameaça na lista de enumeração. Essa função pode ser chamada repetidamente até que a enumeração de todas as ameaças seja concluída.
 ms.assetid: 33244F4F-4FB7-4FA7-BC56-B9A30ABC3644
 keywords:
-- Recursos do ambiente Windows herdado da função MpThreatEnumerate
+- recursos de ambiente de Windows herdado da função MpThreatEnumerate
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: acdbb7971371015a401c1a951ace8c55869fd405
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9525ad44901bd62044721e634559e1c803b88b05e9250097d939b3a5a04d229a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918816"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119943826"
 ---
 # <a name="mpthreatenumerate-function"></a>Função MpThreatEnumerate
 
@@ -53,13 +53,13 @@ Identificador para um contexto de enumeração de ameaça retornado por [**MpThr
 *ppThreatInfo* \[ fora\]
 </dt> <dd>
 
-Tipo: **PMPTHREAT \_ info \** _
+Tipo: **\_ \* informações de PMPTHREAT**
 
-Retorna um ponteiro para uma estrutura de informações de ameaça, [_ *MPTHREAT \_ info* *](mpthreat-info.md). A estrutura contém informações como ID de ameaça, nome e severidade.
+Retorna um ponteiro para uma estrutura de informações de ameaça, [**MPTHREAT \_ info**](mpthreat-info.md). A estrutura contém informações como ID de ameaça, nome e severidade.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
@@ -75,9 +75,9 @@ Se a função falhar, o valor de retorno será um código **HRESULT** com falha.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                    |
-| parâmetro<br/>                   | <dl> <dt>MpClient. h</dt> </dl>   |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                              |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                    |
+| Cabeçalho<br/>                   | <dl> <dt>MpClient. h</dt> </dl>   |
 | DLL<br/>                      | <dl> <dt>MpClient.dll</dt> </dl> |
 
 

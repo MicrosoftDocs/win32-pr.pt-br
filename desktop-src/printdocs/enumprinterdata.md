@@ -1,7 +1,7 @@
 ---
 description: A função EnumPrinterData enumera dados de configuração para uma impressora especificada.
 ms.assetid: 0a4c8436-46fe-4e21-8d55-c5031a3d1b38
-title: Função EnumPrinterData (winspool. h)
+title: Função EnumPrinterData (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,18 +15,18 @@ api_type:
 - DllExport
 api_location:
 - Winspool.drv
-ms.openlocfilehash: d7c175b0c90853a592e0ff979095d41432c16b38
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a542b6a0432ccf7065d94eeb8ebb3acbd8e2ace22044f2cc8984a1f4b2404299
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104169343"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119846076"
 ---
 # <a name="enumprinterdata-function"></a>Função EnumPrinterData
 
-A função **EnumPrinterData** enumera dados de configuração para uma impressora especificada.
+A **função EnumPrinterData** enumera dados de configuração para uma impressora especificada.
 
-Para recuperar os dados de configuração em uma única chamada, use a função [**EnumPrinterDataEx**](enumprinterdataex.md) .
+Para recuperar os dados de configuração em uma única chamada, use a [**função EnumPrinterDataEx.**](enumprinterdataex.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -51,103 +51,103 @@ DWORD EnumPrinterData(
 
 <dl> <dt>
 
-*hPrinter* \[ no\]
+*hPrinter* \[ Em\]
 </dt> <dd>
 
-Um identificador para a impressora cujos dados de configuração serão obtidos. Use a função [**OpenPrinter**](openprinter.md) ou [**addprintr**](addprinter.md) para recuperar um identificador de impressora.
+Um alça para a impressora cujos dados de configuração devem ser obtidos. Use a [**função OpenPrinter**](openprinter.md) [**ou AddPrinter**](addprinter.md) para recuperar um alça de impressora.
 
 </dd> <dt>
 
-*dwIndex* \[ no\]
+*dwIndex* \[ Em\]
 </dt> <dd>
 
-Um valor de índice que especifica o valor dos dados de configuração a recuperar.
+Um valor de índice que especifica o valor de dados de configuração a ser recuperado.
 
-Defina esse parâmetro como zero para a primeira chamada para **EnumPrinterData** para um identificador de impressora especificado. Em seguida, aumente o parâmetro por um para chamadas subsequentes que envolvam a mesma impressora, até que a função retorne um erro \_ sem \_ mais \_ itens. Consulte a seção de comentários a seguir para obter mais informações.
+De definir esse parâmetro como zero para a primeira chamada para **EnumPrinterData para** um alça de impressora especificado. Em seguida, incremente o parâmetro em um para chamadas subsequentes que envolvem a mesma impressora, até que a função retorne ERROR \_ NO \_ MORE \_ ITEMS. Consulte a seção Comentários a seguir para obter mais informações.
 
-Se você usar a técnica mencionada nas descrições dos parâmetros *cbValueName* e *cbData* para obter valores de tamanho de buffer adequados, definindo esses parâmetros como zero em uma primeira chamada para **EnumPrinterData** para um identificador de impressora especificado, o valor de *dwIndex* não é importante para essa chamada. Defina *dwIndex* como zero na próxima chamada para **EnumPrinterData** para iniciar o processo de enumeração real.
+Se você usar a técnica mencionada nas descrições dos parâmetros *cbValueName* e *cbData* para obter valores de tamanho de buffer adequados, definir esses parâmetros como zero em uma primeira chamada para **EnumPrinterData** para um alça de impressora especificado, o valor *de dwIndex* não importará para essa chamada. De *definir dwIndex* como zero na próxima chamada para **EnumPrinterData** para iniciar o processo de enumeração real.
 
-Os valores dos dados de configuração não são ordenados. Os novos valores terão um índice arbitrário. Isso significa que a função **EnumPrinterData** pode retornar valores em qualquer ordem.
+Os valores de dados de configuração não são ordenados. Novos valores terão um índice arbitrário. Isso significa que a **função EnumPrinterData** pode retornar valores em qualquer ordem.
 
 </dd> <dt>
 
-*valores principais* \[ fora\]
+*pValueName* \[ out\]
 </dt> <dd>
 
-Um ponteiro para um buffer que recebe o nome do valor dos dados de configuração, incluindo um caractere nulo de terminação.
+Um ponteiro para um buffer que recebe o nome do valor de dados de configuração, incluindo um caractere nulo de terminação.
 
 </dd> <dt>
 
-*cbValueName* \[ no\]
+*cbValueName* \[ Em\]
 </dt> <dd>
 
-O tamanho, em bytes, do buffer apontado por *valores* de datas.
+O tamanho, em bytes, do buffer apontado por *pValueName.*
 
-Se você quiser que o sistema operacional forneça um tamanho de buffer adequado, defina esse parâmetro e o parâmetro *cbData* como zero para a primeira chamada para **EnumPrinterData** para um identificador de impressora especificado. Quando a função retornar, a variável apontada por *pcbValueName* conterá um tamanho de buffer grande o suficiente para enumerar com êxito todos os nomes de valor dos dados de configuração da impressora.
+Se você quiser que o sistema operacional fornece um tamanho de buffer adequado, de definir esse parâmetro e o parâmetro *cbData* como zero para a primeira chamada para **EnumPrinterData** para um alça de impressora especificado. Quando a função for retornada, a variável apontada por *pcbValueName* conterá um tamanho de buffer grande o suficiente para enumerar com êxito todos os nomes de valor de dados de configuração da impressora.
 
 </dd> <dt>
 
-*pcbValueName* \[ fora\]
+*pcbValueName* \[ out\]
 </dt> <dd>
 
-Um ponteiro para uma variável que recebe o número de bytes armazenados no buffer apontado por *valores* de número.
+Um ponteiro para uma variável que recebe o número de bytes armazenados no buffer apontado por *pValueName.*
 
 </dd> <dt>
 
-*pType* \[ fora\]
+*pType* \[ out\]
 </dt> <dd>
 
-Um ponteiro para uma variável que recebe um código que indica o tipo de dados armazenados no valor especificado. Para obter uma lista dos possíveis códigos de tipo, consulte [tipos de valor do registro](/windows/desktop/SysInfo/registry-value-types). O parâmetro *pType* poderá ser **nulo** se o código de tipo não for necessário.
+Um ponteiro para uma variável que recebe um código que indica o tipo de dados armazenados no valor especificado. Para ver uma lista dos códigos de tipo possíveis, consulte [Tipos de valor do Registro](/windows/desktop/SysInfo/registry-value-types). O *parâmetro pType* poderá ser **NULL se** o código de tipo não for necessário.
 
 </dd> <dt>
 
-*pData* \[ fora\]
+*pData* \[ out\]
 </dt> <dd>
 
 Um ponteiro para um buffer que recebe o valor dos dados de configuração.
 
-Esse parâmetro poderá ser **nulo** se o valor dos dados de configuração não for necessário.
+Esse parâmetro poderá ser **NULL se** o valor dos dados de configuração não for necessário.
 
 </dd> <dt>
 
-*cbData* \[ no\]
+*cbData* \[ Em\]
 </dt> <dd>
 
-O tamanho, em bytes, do buffer apontado por *pData*.
+O tamanho, em bytes, do buffer apontado por *pData.*
 
-Se você quiser que o sistema operacional forneça um tamanho de buffer adequado, defina esse parâmetro e o parâmetro *cbValueName* como zero para a primeira chamada para **EnumPrinterData** para um identificador de impressora especificado. Quando a função retornar, a variável apontada por *pcbData* conterá um tamanho de buffer grande o suficiente para enumerar com êxito todos os nomes de valor dos dados de configuração da impressora.
+Se você quiser que o sistema operacional fornecer um tamanho de buffer adequado, de definir esse parâmetro e o parâmetro *cbValueName* como zero para a primeira chamada para **EnumPrinterData** para um alça de impressora especificado. Quando a função retorna, a variável apontada por *pcbData* conterá um tamanho de buffer grande o suficiente para enumerar com êxito todos os nomes de valor de dados de configuração da impressora.
 
 </dd> <dt>
 
-*pcbData* \[ fora\]
+*pcbData* \[ out\]
 </dt> <dd>
 
 Um ponteiro para uma variável que recebe o número de bytes armazenados no buffer apontado por *pData*.
 
-Esse parâmetro poderá ser **nulo** se *pData* for **nulo**.
+Esse parâmetro poderá ser **NULL se** *pData* for **NULL.**
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se a função for bem-sucedida, o valor de retorno será \_ êxito no erro.
+Se a função for bem-sucedida, o valor de retorno será ERROR \_ SUCCESS.
 
 Se a função falhar, o valor de retorno será um código de erro do sistema.
 
-A função retorna \_ um erro sem \_ mais itens quando não há \_ mais valores de dados de configuração a serem recuperados para um identificador de impressora especificado.
+A função retorna ERROR NO MORE ITEMS quando não há mais valores de dados de configuração \_ a recuperar para um alça de impressora \_ \_ especificado.
 
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> Essa é uma função de bloqueio ou síncrona e pode não retornar imediatamente. A rapidez com que essa função retorna depende de fatores de tempo de execução, como status de rede, configuração de servidor de impressão e fatores de implementação de driver de impressora que são difíceis de prever ao escrever um aplicativo. Chamar essa função de um thread que gerencia a interação com a interface do usuário pode fazer com que o aplicativo pareça não responder.
+> Essa é uma função de bloqueio ou síncrona e pode não retornar imediatamente. A rapidez com que essa função retorna depende de fatores de tempo de execução, como status de rede, configuração do servidor de impressão e fatores de implementação de driver de impressora que são difíceis de prever ao escrever um aplicativo. Chamar essa função de um thread que gerencia a interação com a interface do usuário pode fazer com que o aplicativo pareça não responder.
 
  
 
-**EnumPrinterData** recupera os dados de configuração da impressora definidos pela função [**SetPrinterData**](setprinterdata.md) . Os dados de configuração de uma impressora consistem em um conjunto de valores nomeados e digitados. A função **EnumPrinterData** Obtém um desses valores, e seu nome e um código de tipo, cada vez que você o chama. Chame a função **EnumPrinterData** várias vezes em sucessão para obter todos os valores de dados de configuração de uma impressora.
+**EnumPrinterData** recupera dados de configuração de impressora definidos pela [**função SetPrinterData.**](setprinterdata.md) Os dados de configuração de uma impressora consistem em um conjunto de valores nomeados e digitados. A **função EnumPrinterData** obtém um desses valores e seu nome e um código de tipo, cada vez que você o chama. Chame a **função EnumPrinterData** várias vezes em sucessão para obter todos os valores de dados de configuração de uma impressora.
 
-Os dados de configuração da impressora são armazenados no registro. Ao enumerar os dados de configuração da impressora, você deve evitar chamar funções de registro que podem alterar esses dados.
+Os dados de configuração da impressora são armazenados no Registro. Ao enumerar dados de configuração da impressora, você deve evitar chamar funções do Registro que podem alterar esses dados.
 
-Se você quiser que o sistema operacional forneça um tamanho de buffer adequado, primeiro chame **EnumPrinterData** com os parâmetros *cbValueName* e *cbData* definidos como zero, conforme observado anteriormente na seção parâmetros. O valor de *dwIndex* não importa para essa chamada. Quando a função retornar, \* *pcbValueName* e \* *pcbData* conterá tamanhos de buffer grandes o suficiente para enumerar todos os nomes e valores de valores de dados de configuração da impressora. Na próxima chamada, aloque o nome do valor e os buffers de dados, defina *cbValueName* e *cbData* para os tamanhos em bytes dos buffers alocados e defina *dwIndex* como zero. Depois disso, continue a chamar a função **EnumPrinterData** , incrementando *dwIndex* por um a cada vez, até que a função retorne \_ um erro sem \_ mais \_ itens.
+Se você quiser que o sistema operacional fornecer um tamanho de buffer adequado, primeiro chame **EnumPrinterData** com os parâmetros *cbValueName* e *cbData* definidos como zero, conforme foi feito anteriormente na seção Parâmetros. O valor *de dwIndex* não importa para essa chamada. Quando a função for retornada, \* *pcbValueName* e \* *pcbData* conterão tamanhos de buffer grandes o suficiente para enumerar todos os valores e nomes de valor de dados de configuração da impressora. Na próxima chamada, aloque o nome do valor e os buffers de dados, de definir *cbValueName* e *cbData* para os tamanhos em bytes dos buffers alocados e de definir *dwIndex* como zero. Depois disso, continue a chamar a função **EnumPrinterData,** incrementando *dwIndex* em um a cada vez, até que a função retorne ERROR \_ NO MORE \_ \_ ITEMS.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -157,10 +157,10 @@ Se você quiser que o sistema operacional forneça um tamanho de buffer adequado
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                                |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                      |
-| Cabeçalho<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Winspool. lib</dt> </dl>                   |
-| DLL<br/>                      | <dl> <dt>Winspool. drv</dt> </dl>                   |
-| Nomes Unicode e ANSI<br/>   | **EnumPrinterDataW** (Unicode) e **EnumPrinterDataA** (ANSI)<br/>                                 |
+| Cabeçalho<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Winspool.lib</dt> </dl>                   |
+| DLL<br/>                      | <dl> <dt>Winspool.drv</dt> </dl>                   |
+| Nomes Unicode e ANSI<br/>   | **EnumPrinterDataW** (Unicode) **e EnumPrinterDataA** (ANSI)<br/>                                 |
 
 
 
@@ -186,7 +186,7 @@ Se você quiser que o sistema operacional forneça um tamanho de buffer adequado
 [**OpenPrinter**](openprinter.md)
 </dt> <dt>
 
-[**Setprinter**](setprinter.md)
+[**SetPrinter**](setprinter.md)
 </dt> <dt>
 
 [**SetPrinterData**](setprinterdata.md)

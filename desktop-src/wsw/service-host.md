@@ -8,12 +8,12 @@ keywords:
 - WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0170f7dc0dfda99887b7d11d68d073517e0eb85f
-ms.sourcegitcommit: 5b98bf8c68922f8f03c14f793fbe17504900559c
+ms.openlocfilehash: ff3a09a41714ce80402c5430e6849988ae86163770af7ae3eb060fdd7925e861
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "105784653"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119838657"
 ---
 # <a name="service-host"></a>Host de serviço
 
@@ -120,7 +120,7 @@ Além disso, as seguintes considerações de design de aplicativo devem ser aval
 
 Os seguintes elementos de API são usados com o host de serviço.
 
-| Callback                                                                             | Description                                                                     |
+| Callback                                                                             | Descrição                                                                     |
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
 | [**\_retorno de \_ chamada de canal de aceitação de serviço WS \_ \_**](/windows/desktop/api/WebServices/nc-webservices-ws_service_accept_channel_callback) | Chamado quando um canal é aceito em um ouvinte de ponto de extremidade pelo host de serviço. |
 | [**\_retorno de \_ chamada de canal de fechamento de serviço WS \_ \_**](/windows/desktop/api/WebServices/nc-webservices-ws_service_close_channel_callback)   | Chamado quando um canal é fechado ou anulado em um ponto de extremidade.                     |
@@ -159,7 +159,7 @@ Os seguintes elementos de API são usados com o host de serviço.
 
 
 
-| Handle                                       | Description                                      |
+| Handle                                       | Descrição                                      |
 |----------------------------------------------|--------------------------------------------------|
 | [**\_host de serviço WS \_**](ws-service-host.md) | Um tipo opaco usado para fazer referência a um host de serviço. |
 
@@ -169,7 +169,7 @@ Os seguintes elementos de API são usados com o host de serviço.
 
 
 
-| Estrutura                                                                              | Description                                                                     |
+| Estrutura                                                                              | Descrição                                                                     |
 |----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
 | [**ponto de extremidade de \_ serviço WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_service_endpoint)                                   | Representa um ponto de extremidade individual em um host de serviço.                            |
 | [**\_propriedade de \_ ponto de extremidade de serviço WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_service_endpoint_property)                | Especifica uma configuração específica do serviço.                                           |

@@ -1,9 +1,9 @@
 ---
-title: Código de notificação BN_SETFOCUS (WinUser. h)
-description: Enviado quando um botão recebe o foco do teclado. O botão deve ter o estilo de notificação de BS \_ para enviar esse código. A janela pai do botão recebe esse código de notificação por meio da \_ mensagem de comando do WM.
+title: BN_SETFOCUS de notificação (Winuser.h)
+description: Enviado quando um botão recebe o foco do teclado. O botão deve ter o estilo BS \_ NOTIFY para enviar esse código de notificação. A janela pai do botão recebe esse código de notificação por meio da mensagem WM \_ COMMAND.
 ms.assetid: 6b8d9bde-67f9-454f-ba2c-e5c8d9ff2709
 keywords:
-- BN_SETFOCUS de código de notificação controles do Windows
+- BN_SETFOCUS código de notificação Windows Controles
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3eb9204f5b23b62b6cee9fb2652a16d546f6ef62
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2a10cb9b728d6f98f984ff6b70fb76c42102d8414d486cdba3db27b3ac6fbe99
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105754381"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119827586"
 ---
-# <a name="bn_setfocus-notification-code"></a>\_Código de notificação bilhão SETFOCUS
+# <a name="bn_setfocus-notification-code"></a>Código de \_ notificação BN SETFOCUS
 
-Enviado quando um botão recebe o foco do teclado. O botão deve ter o estilo de notificação de [**BS \_**](button-styles.md) para enviar esse código.
+Enviado quando um botão recebe o foco do teclado. O botão deve ter o estilo [**BS \_ NOTIFY**](button-styles.md) para enviar esse código de notificação.
 
-A janela pai do botão recebe esse código de notificação por meio da mensagem de [**\_ comando do WM**](/windows/desktop/menurc/wm-command) .
+A janela pai do botão recebe esse código de notificação por meio da mensagem [**WM \_ COMMAND.**](/windows/desktop/menurc/wm-command)
 
 
 ```C++
@@ -51,7 +51,7 @@ O [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) cont
 *lParam* 
 </dt> <dd>
 
-Um identificador para o botão.
+Um alça para o botão.
 
 </dd> </dl>
 
@@ -61,9 +61,9 @@ Um identificador para o botão.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -71,7 +71,7 @@ Um identificador para o botão.
 
 <dl> <dt>
 
-[BILHÃO \_ KILLFOCUS](bn-killfocus.md)
+[BN \_ KILLFOCUS](bn-killfocus.md)
 </dt> </dl>
 
  

@@ -1,5 +1,5 @@
 ---
-description: Indica se a autenticação 802.1 X é usada.
+description: Indica se a autenticação 802.1X é usada.
 ms.assetid: dbddaf5a-7574-4282-ab4d-f6f697ed94ab
 title: Elemento useOneX (authEncryption)
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: cb327be4006e8da0074815a74e49d3ccdc5d3c84
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 961f1b6be52da97ada2c230579ac281652a07fcbae67ac32d2399eb2968b1946
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105759190"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119912566"
 ---
 # <a name="useonex-authencryption-element"></a>Elemento useOneX (authEncryption)
 
-O elemento useOneX (authEncryption) indica se a autenticação 802.1 X é usada.
+O elemento useOneX (authEncryption) indica se a autenticação 802.1X é usada.
 
 ``` syntax
 <xs:element name="useOneX"
@@ -30,11 +30,11 @@ O elemento useOneX (authEncryption) indica se a autenticação 802.1 X é usada.
  />
 ```
 
-O elemento é definido pelo elemento [**authEncryption**](wlan-profileschema-authencryption-security-element.md) .
+O elemento é definido pelo [**elemento authEncryption.**](wlan-profileschema-authencryption-security-element.md)
 
 ## <a name="examples"></a>Exemplos
 
-Para exibir perfis de exemplo que usam o elemento **useOneX** , consulte [amostras de perfil sem fio](wireless-profile-samples.md).
+Para exibir perfis de exemplo que usam **o elemento useOneX,** consulte [Exemplos de perfil sem fio.](wireless-profile-samples.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -42,8 +42,8 @@ Para exibir perfis de exemplo que usam o elemento **useOneX** , consulte [amostr
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente Windows Vista, Windows XP com \[ aplicativos de área de trabalho do SP3\]<br/> |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                |
+| Cliente mínimo com suporte<br/> | Windows Vista, Windows XP somente com aplicativos da área de trabalho SP3 \[\]<br/> |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                |
 | Redistribuível<br/>          | API de LAN sem fio para Windows XP com SP2<br/>                 |
 
 

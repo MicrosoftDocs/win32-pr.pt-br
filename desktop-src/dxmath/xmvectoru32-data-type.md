@@ -4,12 +4,12 @@ ms.assetid: 1ac1f48a-cd7f-7741-933f-c341fc42a21c
 title: Tipo de dados XMVECTORU32 (Directxmath. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 90c7a64d42bc4638573b987642c0cd77c37cc12d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f13d37a5630df37021637bed978943a48a665db16301f2067c82f050a8231bbb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105786202"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119891676"
 ---
 # <a name="xmvectoru32-data-type"></a>Tipo de dados XMVECTORU32
 
@@ -42,7 +42,7 @@ data = uintVector;
 
 ### <a name="platform-requirements"></a>Requisitos de plataforma
 
-Microsoft Visual Studio 2010 ou Microsoft Visual Studio 2012 com o SDK do Windows para Windows 8. Com suporte para aplicativos de área de trabalho Win32, aplicativos da Windows Store e aplicativos Windows Phone 8.
+Microsoft Visual Studio 2010 ou Microsoft Visual Studio 2012 com o SDK do Windows para Windows 8. com suporte para aplicativos de área de trabalho do Win32, aplicativos da Windows store e aplicativos Windows Phone 8.
 
 ## <a name="requirements"></a>Requisitos
 

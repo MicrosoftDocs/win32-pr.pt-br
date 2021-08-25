@@ -4,18 +4,18 @@ ms.assetid: dbf7016b-09ac-4ca7-9b47-38b0dd763462
 title: Usando um manipulador de exceção em vetor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 09c766d6695ebebdcb65f2895356866233117d87
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 1a74fa8d603997afcd5b2700a052c924315f2514651d588539a68f9bbc0e2068
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826397"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119929226"
 ---
 # <a name="using-a-vectored-exception-handler"></a>Usando um manipulador de exceção em vetor
 
 O código de exemplo a seguir demonstra como usar a manipulação de exceção em vetor. Ele usa a função [**AddVectoredExceptionHandler**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-addvectoredexceptionhandler) para adicionar vários manipuladores, testa os manipuladores e, em seguida, usa a função [**RemoveVectoredExceptionHandler**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-removevectoredexceptionhandler) para remover os manipuladores.
 
-**Windows de 64 bits:** Esse código não é adequado para o Windows de 64 bits.
+**Windows de 64 bits:** Este código não é adequado para Windows de 64 bits.
 
 
 ```C++

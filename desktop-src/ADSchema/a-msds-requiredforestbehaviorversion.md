@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 287541b2eeeb37a3c45c7249c3661017bb580536
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 24ea90bbaf51e69200764278b4cf64721505b1da435726720abe44bdaf7ff78b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105753648"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119925706"
 ---
 # <a name="ms-ds-required-forest-behavior-version-attribute"></a>atributo ms-DS-Required-floresta-Behavior-Version
 
@@ -53,8 +53,8 @@ Nível de função de floresta necessário para este recurso.
 |------------------------|---------------------------------------------------------------------|
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | True                                                                |
-| É de valor único       | True                                                                |
+| System-Only            | Verdadeiro                                                                |
+| É de valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
 | No catálogo global      | Falso                                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
@@ -74,8 +74,8 @@ Nível de função de floresta necessário para este recurso.
 |------------------------|---------------------------------------------------------------------|
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | True                                                                |
-| É de valor único       | True                                                                |
+| System-Only            | Verdadeiro                                                                |
+| É de valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
 | No catálogo global      | Falso                                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |

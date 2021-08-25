@@ -4,18 +4,18 @@ description: Referência de AVIFile
 ms.assetid: 73532d83-89c2-4911-8558-ce110e9f0f95
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0291d0ac5864a9b370e79a98fa061770d05bca03
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 19b4bbda5374f5b1418c166aae5efcc06168b522b2cae0f3b6d2c8fe3c069c36
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104006071"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119808316"
 ---
 # <a name="avifile-reference"></a>Referência de AVIFile
 
-Esta seção descreve as funções, as estruturas e as macros para aplicativos que usam os serviços AVIFiles. Esses elementos são agrupados da seguinte maneira:
+Esta seção descreve as funções, estruturas e macros para aplicativos que usam os serviços AVIFile. Esses elementos são agrupados da seguinte forma:
 
-## <a name="avifile-library-operations"></a>Operações de biblioteca AVIFile
+## <a name="avifile-library-operations"></a>Operações da biblioteca AVIFile
 
 -   [**AVIFileInit**](/windows/desktop/api/Vfw/nf-vfw-avifileinit)
 -   [**AVIFileExit**](/windows/desktop/api/Vfw/nf-vfw-avifileexit)
@@ -33,7 +33,7 @@ Esta seção descreve as funções, as estruturas e as macros para aplicativos q
 -   [**AVIFILEINFO**](/windows/desktop/api/Vfw/ns-vfw-avifileinfoa)
 -   [**AVIFileReadData**](/windows/desktop/api/Vfw/nf-vfw-avifilereaddata)
 
-## <a name="writing-to-a-file"></a>Gravando em um arquivo
+## <a name="writing-to-a-file"></a>Escrevendo em um arquivo
 
 -   [**AVIFileWriteData**](/windows/desktop/api/Vfw/nf-vfw-avifilewritedata)
 
@@ -43,7 +43,7 @@ Esta seção descreve as funções, as estruturas e as macros para aplicativos q
 -   [**AVIGetFromClipboard**](/windows/desktop/api/Vfw/nf-vfw-avigetfromclipboard)
 -   [**AVIClearClipboard**](/windows/desktop/api/Vfw/nf-vfw-aviclearclipboard)
 
-## <a name="opening-and-closing-streams"></a>Abrindo e fechando fluxos
+## <a name="opening-and-closing-streams"></a>Abrir e fechar Fluxos
 
 -   [**AVIFileGetStream**](/windows/desktop/api/Vfw/nf-vfw-avifilegetstream)
 -   [**AVIStreamOpenFromFile**](/windows/desktop/api/Vfw/nf-vfw-avistreamopenfromfilea)
@@ -68,7 +68,7 @@ Esta seção descreve as funções, as estruturas e as macros para aplicativos q
 -   [**AVIStreamGetFrame**](/windows/desktop/api/Vfw/nf-vfw-avistreamgetframe)
 -   [**AVIStreamGetFrameClose**](/windows/desktop/api/Vfw/nf-vfw-avistreamgetframeclose)
 
-## <a name="creating-a-file-from-existing-streams"></a>Criando um arquivo de fluxos existentes
+## <a name="creating-a-file-from-existing-streams"></a>Criando um arquivo com Fluxos
 
 -   [**AVISave**](/windows/desktop/api/Vfw/nf-vfw-avisavea)
 -   [**AVISaveV**](/windows/desktop/api/Vfw/nf-vfw-avisaveva)
@@ -76,7 +76,7 @@ Esta seção descreve as funções, as estruturas e as macros para aplicativos q
 -   [**GetSaveFileNamePreview**](/windows/desktop/api/Vfw/nf-vfw-getsavefilenamepreviewa)
 -   [**AVIMakeFileFromStreams**](/windows/desktop/api/Vfw/nf-vfw-avimakefilefromstreams)
 
-## <a name="writing-individual-streams"></a>Gravando fluxos individuais
+## <a name="writing-individual-streams"></a>Escrevendo textos individuais Fluxos
 
 -   [**AVIFileCreateStream**](/windows/desktop/api/Vfw/nf-vfw-avifilecreatestream)
 -   [**AVIStreamSetFormat**](/windows/desktop/api/Vfw/nf-vfw-avistreamsetformat)
@@ -85,7 +85,7 @@ Esta seção descreve as funções, as estruturas e as macros para aplicativos q
 -   [**AVIStreamWriteData**](/windows/desktop/api/Vfw/nf-vfw-avistreamwritedata)
 -   [**AVIStreamRelease**](/windows/desktop/api/Vfw/nf-vfw-avistreamrelease)
 
-## <a name="finding-the-starting-position-in-a-stream"></a>Localizando a posição inicial em um fluxo
+## <a name="finding-the-starting-position-in-a-stream"></a>Localizar a posição inicial em um fluxo
 
 -   [**AVIStreamStart**](/windows/desktop/api/Vfw/nf-vfw-avistreamstart)
 -   [**AVIStreamStartTime**](/windows/desktop/api/Vfw/nf-vfw-avistreamstarttime)
@@ -95,14 +95,14 @@ Esta seção descreve as funções, as estruturas e as macros para aplicativos q
 -   [**AVIStreamEnd**](/windows/desktop/api/Vfw/nf-vfw-avistreamend)
 -   [**AVIStreamEndTime**](/windows/desktop/api/Vfw/nf-vfw-avistreamendtime)
 
-## <a name="finding-sample-and-key-frames"></a>Localizando amostras e quadros-chave
+## <a name="finding-sample-and-key-frames"></a>Localizar exemplos e quadros-chave
 
 -   [**AVIStreamFindSample**](/windows/desktop/api/Vfw/nf-vfw-avistreamfindsample)
 -   [**AVIStreamIsKeyFrame**](/windows/desktop/api/Vfw/nf-vfw-avistreamiskeyframe)
--   [**AVIStreamNearestKeyFrame**](/windows/desktop/api/Vfw/nf-vfw-avistreamnearestkeyframe)
--   [**AVIStreamNearestKeyFrameTime**](/windows/desktop/api/Vfw/nf-vfw-avistreamnearestkeyframetime)
--   [**AVIStreamNearestSample**](/windows/desktop/api/Vfw/nf-vfw-avistreamnearestsample)
--   [**AVIStreamNearestSampleTime**](/windows/desktop/api/Vfw/nf-vfw-avistreamnearestsampletime)
+-   [**AVIStreamNekeyFrame**](/windows/desktop/api/Vfw/nf-vfw-avistreamnearestkeyframe)
+-   [**AVIStreamNekeyFrameTime**](/windows/desktop/api/Vfw/nf-vfw-avistreamnearestkeyframetime)
+-   [**AVIStreamNestreamSample**](/windows/desktop/api/Vfw/nf-vfw-avistreamnearestsample)
+-   [**AVIStreamNestreamSampleTime**](/windows/desktop/api/Vfw/nf-vfw-avistreamnearestsampletime)
 -   [**AVIStreamNextKeyFrame**](/windows/desktop/api/Vfw/nf-vfw-avistreamnextkeyframe)
 -   [**AVIStreamNextKeyFrameTime**](/windows/desktop/api/Vfw/nf-vfw-avistreamnextkeyframetime)
 -   [**AVIStreamNextSample**](/windows/desktop/api/Vfw/nf-vfw-avistreamnextsample)
@@ -113,18 +113,18 @@ Esta seção descreve as funções, as estruturas e as macros para aplicativos q
 -   [**AVIStreamPrevSampleTime**](/windows/desktop/api/Vfw/nf-vfw-avistreamprevsampletime)
 -   [**AVIStreamSampleToSample**](/windows/desktop/api/Vfw/nf-vfw-avistreamsampletosample)
 
-## <a name="switching-between-samples-and-time"></a>Alternando entre exemplos e hora
+## <a name="switching-between-samples-and-time"></a>Alternando entre exemplos e tempo
 
 -   [**AVIStreamSampleToTime**](/windows/desktop/api/Vfw/nf-vfw-avistreamsampletotime)
 -   [**AVIStreamTimeToSample**](/windows/desktop/api/Vfw/nf-vfw-avistreamtimetosample)
 
-## <a name="creating-temporary-streams"></a>Criando fluxos temporários
+## <a name="creating-temporary-streams"></a>Criando um Fluxos
 
--   [**AVIStreamCreate**](/windows/desktop/api/Vfw/nf-vfw-avistreamcreate)
+-   [**AVIStreamCriar**](/windows/desktop/api/Vfw/nf-vfw-avistreamcreate)
 -   [**AVIMakeCompressedStream**](/windows/desktop/api/Vfw/nf-vfw-avimakecompressedstream)
 -   [**AVIStreamRelease**](/windows/desktop/api/Vfw/nf-vfw-avistreamrelease)
 
-## <a name="editing-avi-streams"></a>Editando fluxos AVI
+## <a name="editing-avi-streams"></a>Editando o arquivo AVI Fluxos
 
 -   [**CreateEditableStream**](/windows/desktop/api/Vfw/nf-vfw-createeditablestream)
 -   [**EditStreamCut**](/windows/desktop/api/Vfw/nf-vfw-editstreamcut)
@@ -138,12 +138,12 @@ Esta seção descreve as funções, as estruturas e as macros para aplicativos q
 
 <dl> <dt>
 
-[Funções e macros do AVIFile](avifile-functions-and-macros.md)
+[Funções e macros AVIFile](avifile-functions-and-macros.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

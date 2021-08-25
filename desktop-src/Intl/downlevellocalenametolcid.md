@@ -13,19 +13,19 @@ api_type:
 - DllExport
 api_location:
 - NlsMap.dll
-ms.openlocfilehash: c41b82c59b63a5b324e15f89c1f77118d454e428
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 39a0a6b274ba141553d2ddda927f71754cc9639ff5fc3a0d3870a974e46526a2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105748607"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119898726"
 ---
 # <a name="downlevellocalenametolcid-function"></a>Função DownlevelLocaleNameToLCID
 
 Converte um [nome de localidade](locale-names.md) em um [identificador de localidade](locale-identifiers.md) que pode ser usado para obter informações do sistema operacional.
 
 > [!Note]  
-> Essa função é usada somente por aplicativos que são executados em sistemas operacionais anteriores ao Windows Vista. Seu uso requer um pacote de download. Os aplicativos que só são executados no Windows Vista e posterior devem chamar [**LocaleNameToLCID**](/windows/desktop/api/Winnls/nf-winnls-localenametolcid) para recuperar um identificador de localidade.
+> essa função é usada somente por aplicativos que são executados em sistemas operacionais anteriores ao Windows Vista. Seu uso requer um pacote de download. os aplicativos que só são executados no Windows Vista e posterior devem chamar [**LocaleNameToLCID**](/windows/desktop/api/Winnls/nf-winnls-localenametolcid) para recuperar um identificador de localidade.
 
  
 
@@ -59,7 +59,7 @@ Sinalizadores que especificam o tipo de nome. O padrão é nome de localidade de
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o identificador de localidade que corresponde ao nome da localidade, se for bem-sucedido.
 
@@ -71,7 +71,7 @@ A função retornará 0 se não tiver sucesso. Para obter informações de erro 
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> Esta função não oferece suporte a localidades neutras. A função [**LocaleNameToLCID**](/windows/desktop/api/Winnls/nf-winnls-localenametolcid) equivalente dá suporte a [localidades personalizadas](custom-locales.md), mas apenas para o Windows Vista e posterior.
+> Esta função não oferece suporte a localidades neutras. a função [**LocaleNameToLCID**](/windows/desktop/api/Winnls/nf-winnls-localenametolcid) equivalente dá suporte a [localidades personalizadas](custom-locales.md), mas somente para Windows Vista e posterior.
 
  
 
@@ -83,10 +83,10 @@ O arquivo de cabeçalho e a DLL necessários fazem parte do download "APIs de ma
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                                         |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                |
 | Redistribuível<br/>          | APIs de mapeamento de dados de nível inferior do Microsoft NLS onwindows XP com SP2 e laterorWindows vista<br/> |
-| parâmetro<br/>                   | <dl> <dt>Nlsdl. h</dt> </dl>                  |
+| Cabeçalho<br/>                   | <dl> <dt>Nlsdl. h</dt> </dl>                  |
 | DLL<br/>                      | <dl> <dt>NlsMap.dll</dt> </dl>               |
 
 

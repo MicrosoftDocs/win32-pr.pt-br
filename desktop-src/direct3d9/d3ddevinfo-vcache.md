@@ -1,7 +1,7 @@
 ---
-description: Dicas de otimização do cache de vértice.
+description: Dicas de otimização de cache de vértice.
 ms.assetid: 891624cd-03dd-4ddd-93f5-4899e1470325
-title: Estrutura de D3DDEVINFO_VCACHE (D3D9Types. h)
+title: D3DDEVINFO_VCACHE (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 80870c330adf185a869ac5e3543055c82fc7115c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3e065c981cc42db6adbad8cfa7a14e415712aae74942e9f3aab3ecb0b353f5ef
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105769372"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119894496"
 ---
-# <a name="d3ddevinfo_vcache-structure"></a>\_Estrutura D3DDEVINFO VCACHE
+# <a name="d3ddevinfo_vcache-structure"></a>Estrutura VCACHE D3DDEVINFO \_
 
-Dicas de otimização do cache de vértice.
+Dicas de otimização de cache de vértice.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -49,7 +49,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Padrão de bits. O valor de retorno deve ser o FOURCC (' C', ' A ', ' C', ' H ').
+Padrão de bit. O valor de retorno deve ser FOURCC ('C', 'A', 'C', 'H').
 
 </dd> <dt>
 
@@ -71,7 +71,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Tamanho do cache usado como um destino para otimização. Isso será necessário somente se OptMethod for 1.
+Tamanho do cache usado como um destino para otimização. Isso só será necessário se OptMethod for 1.
 
 </dd> <dt>
 
@@ -82,7 +82,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Usado por métodos de otimização internos para determinar quando reiniciar as faixas. Isso não pode ser definido ou modificado por um usuário. Isso será necessário somente se OptMethod for 1.
+Usado por métodos de otimização internos para determinar quando reiniciar faixas. Isso não pode ser definido ou modificado por um usuário. Isso só será necessário se OptMethod for 1.
 
 </dd> </dl>
 
@@ -92,7 +92,7 @@ Usado por métodos de otimização internos para determinar quando reiniciar as 
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 
@@ -100,7 +100,7 @@ Usado por métodos de otimização internos para determinar quando reiniciar as 
 
 <dl> <dt>
 
-[Estruturas do Direct3D](dx9-graphics-reference-d3d-structures.md)
+[Estruturas Direct3D](dx9-graphics-reference-d3d-structures.md)
 </dt> <dt>
 
 [**GetData**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-getdata)

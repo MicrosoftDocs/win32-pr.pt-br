@@ -1,6 +1,6 @@
 ---
 title: Método IWMDRMDevice IsWMDRMDevice
-description: O método IsWMDRMDevice determina se o dispositivo dá suporte ao Windows Media DRM 10 para dispositivos portáteis.
+description: o método IsWMDRMDevice determina se o dispositivo dá suporte a Windows mídia DRM 10 para dispositivos portáteis.
 ms.assetid: 247e7a77-e805-4848-893f-f5522c161232
 keywords:
 - Método IsWMDRMDevice Windows Media Gerenciador de Dispositivos
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ca9cb79598ea41a996748e383c8fdfc63364dd6c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 60ee225267ce2301e9a2dad392d72ce72b0e698872cd3fd54ab3e50a07043477
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105763392"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119957256"
 ---
 # <a name="iwmdrmdeviceiswmdrmdevice-method"></a>Método IWMDRMDevice:: IsWMDRMDevice
 
-O método **IsWMDRMDevice** determina se o dispositivo dá suporte ao Windows Media DRM 10 para dispositivos portáteis.
+o método **IsWMDRMDevice** determina se o dispositivo dá suporte a Windows mídia DRM 10 para dispositivos portáteis.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,11 +46,11 @@ HRESULT IsWMDRMDevice(
 *pdwVersion* \[ fora\]
 </dt> <dd>
 
-Versão do Windows Media DRM 10 para dispositivos portáteis, que tem o valor de 0x00010000.
+versão do Windows Media DRM 10 para dispositivos portáteis, que tem o valor de 0x00010000.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 

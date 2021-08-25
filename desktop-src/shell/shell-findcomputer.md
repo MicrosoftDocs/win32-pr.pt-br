@@ -45,9 +45,9 @@ Esse método não retorna um valor.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir mostra **FindComputer** em uso. O resultado desse código é o mesmo que pressionar o botão **Iniciar** , clicar em **Pesquisar**, clicar na opção **impressoras, computadores ou pessoas** e clicar em **um computador na rede**. O uso adequado é mostrado para JScript, VBScript e Visual Basic.
+O exemplo a seguir mostra **FindComputer** em uso. O resultado desse código é o mesmo que pressionar o botão **Iniciar** , clicar em **Pesquisar**, clicar na opção **impressoras, computadores ou pessoas** e clicar em **um computador na rede**. o uso adequado é mostrado para JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -105,9 +105,9 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos de área de trabalho do Windows XP\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
-| parâmetro<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
+| Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
 | INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
 | DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4,71 ou posterior)</dt> </dl> |
 

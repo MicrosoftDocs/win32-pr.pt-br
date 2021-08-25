@@ -1,7 +1,7 @@
 ---
 description: O método QueueSample enfileira um exemplo.
 ms.assetid: f34c0689-5afb-4941-bc3a-e4765fbbe525
-title: Método COutputQueue. QueueSample (Outputq. h)
+title: Método COutputQueue.QueueSample (Outputq.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8efe0ec3b2326d1af0d0075770bdc6443ab9dcad
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 3770029f732629f12d94c9304d144226d873f38cc1b8452036d39ca2abdd757a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107910064"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119909586"
 ---
-# <a name="coutputqueuequeuesample-method"></a>Método COutputQueue. QueueSample
+# <a name="coutputqueuequeuesample-method"></a>Método COutputQueue.QueueSample
 
-O `QueueSample` método enfileira um exemplo.
+O `QueueSample` método enfilfilia um exemplo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,35 +45,35 @@ void QueueSample(
 *pSample* 
 </dt> <dd>
 
-Ponteiro para a interface [**IMediaSample**](/windows/desktop/api/Strmif/nn-strmif-imediasample) do exemplo.
+Ponteiro para a interface [**IMediaSample do**](/windows/desktop/api/Strmif/nn-strmif-imediasample) exemplo.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método adiciona um exemplo à parte final da fila. Mantenha a seção crítica antes de chamar esse método e chame-a somente quando o objeto estiver usando um thread para fornecer exemplos. Para determinar se o objeto está usando um thread, chame o método [**COutputQueue:: IsQueued**](coutputqueue-isqueued.md) .
+Esse método adiciona um exemplo à parte final da fila. Mantenha a seção crítica antes de chamar esse método e chame-a somente quando o objeto estiver usando um thread para fornecer exemplos. Para determinar se o objeto está usando um thread, chame o [**método COutputQueue::IsQueued.**](coutputqueue-isqueued.md)
 
-Esse método também pode ser usado para colocar as mensagens de controle na fila. Uma mensagem de controle é uma constante definida (conversão para um \_ tipo PTR longo) que instrui o thread a executar alguma ação. A classe **COutputQueue** define as mensagens de controle mostradas na tabela a seguir.
+Esse método também pode ser usado para colocar mensagens de controle na fila. Uma mensagem de controle é uma constante definida (cast em um tipo PTR LONG) que instrui o thread a \_ executar alguma ação. A **classe COutputQueue** define as mensagens de controle mostradas na tabela a seguir.
 
 
 
-| Label | Valor |
+| Rótulo | Valor |
 |---------------|----------------------------------------|
 | Mensagem       | Ação                                 |
-| \_pacote EOS   | Fornecer uma notificação de fim de fluxo. |
-| NOVO \_ segmento  | Entregar um novo segmento.                 |
-| REDEFINIR \_ pacote | Redefina o estado da fila.          |
-| Enviar \_ pacote  | Envie um lote parcial de exemplos.       |
+| PACOTE \_ EOS   | Entregar uma notificação de fim de fluxo. |
+| NOVO \_ SEGMENTO  | Entregar um novo segmento.                 |
+| REDEFINIR \_ PACOTE | Redefina o estado da fila.          |
+| ENVIAR \_ PACOTE  | Enviar um lote parcial de exemplos.       |
 
 
 
  
 
-Esse é um método protegido, que a classe **COutputQueue** usa internamente.
+Esse é um método protegido, que a **classe COutputQueue** usa internamente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -81,8 +81,8 @@ Esse é um método protegido, que a classe **COutputQueue** usa internamente.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Outputq. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Outputq.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

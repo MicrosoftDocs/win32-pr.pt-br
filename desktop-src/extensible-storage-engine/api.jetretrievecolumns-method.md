@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: método API. JetRetrieveColumns'
-title: Método API. JetRetrieveColumns
+description: 'Saiba mais sobre: Método Api.JetRetrieveColumns'
+title: Método Api.JetRetrieveColumns
 TOCTitle: 'JetRetrieveColumns method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetRetrieveColumns(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,Microsoft.Isam.Esent.Interop.JET_RETRIEVECOLUMN[],System.Int32)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetretrievecolumns(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d3fd4db2ce8cbcad5f74db7d4c95363aa68e9b38
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: be958a40b4d5617d7c972933e472d911c96d481d7d020f082c5b063281e7d879
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105765736"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119840696"
 ---
-# <a name="apijetretrievecolumns-method"></a>Método API. JetRetrieveColumns
+# <a name="apijetretrievecolumns-method"></a>Método Api.JetRetrieveColumns
 
-Recupera vários valores de coluna do registro atual em uma única operação. Uma matriz de estruturas de JET_RETRIEVECOLUMN é usada para descrever o conjunto de valores de coluna a serem recuperados e para descrever os buffers de saída para cada valor de coluna a ser recuperado.
+Recupera vários valores de coluna do registro atual em uma única operação. Uma matriz de JET_RETRIEVECOLUMN estruturas é usada para descrever o conjunto de valores de coluna a serem recuperados e para descrever buffers de saída para cada valor de coluna a ser recuperado.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -71,35 +71,35 @@ public static JET_wrn JetRetrieveColumns(
 #### <a name="parameters"></a>Parâmetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
     A sessão a ser usada.
 
 <!-- end list -->
 
-  - TableID  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - Tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
-    O cursor do qual recuperar os dados.
+    O cursor do onde recuperar os dados.
 
 <!-- end list -->
 
   - retrievecolumns  
-    Escreva \[\]  
+    Tipo: \[\]  
     
-    Uma matriz de um ou mais objetos de [JET_RETRIEVECOLUMN](./jet-retrievecolumn-class.md) que descrevem os dados a serem recuperados.
+    Uma matriz de um ou [mais JET_RETRIEVECOLUMN](./jet-retrievecolumn-class.md) objetos que descrevem os dados a serem recuperados.
 
 <!-- end list -->
 
   - numColumns  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     O número de entradas na matriz de colunas.
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
-Tipo: [Microsoft.ISAM.ESENT.Interop.JET_wrn](./jet-wrn-enumeration.md)  
-Se qualquer coluna recuperada for truncada devido a um buffer de comprimento insuficiente, a API retornará [BufferTruncated](./jet-wrn-enumeration.md). No entanto, outros erros JET_wrnColumnNull são retornados somente no campo de erro do objeto [JET_RETRIEVECOLUMN](./jet-retrievecolumn-class.md) .  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_wrn](./jet-wrn-enumeration.md)  
+Se qualquer coluna recuperada for truncada devido a um buffer de comprimento insuficiente, a API retornará [BufferTruncado.](./jet-wrn-enumeration.md) No entanto, outros JET_wrnColumnNull são retornados somente no campo de erro do [objeto JET_RETRIEVECOLUMN](./jet-retrievecolumn-class.md) objeto .  
 
 ## <a name="see-also"></a>Confira também
 
@@ -109,4 +109,4 @@ Se qualquer coluna recuperada for truncada devido a um buffer de comprimento ins
 
 [Membros da API](./api-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

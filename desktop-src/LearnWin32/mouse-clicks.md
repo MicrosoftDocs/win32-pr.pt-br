@@ -4,12 +4,12 @@ description: Respondendo a cliques do mouse
 ms.assetid: FED1CA3B-94C6-4780-B82D-C10171F36D98
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 32c37903264ca638aeca1c0b28fb2ea7fa792660
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 947b50726e79fbf29c4f013d4ac0a449c009c1817b74b1a8063e63a68c4dd6c5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104084533"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119897206"
 ---
 # <a name="responding-to-mouse-clicks"></a>Respondendo a cliques do mouse
 
@@ -30,7 +30,7 @@ Se o usuário clicar em um botão do mouse enquanto o cursor estiver sobre a ár
 
 
 
- 
+ 
 
 Lembre-se de que a área do cliente é a parte da janela que exclui o quadro. Para obter mais informações sobre áreas de cliente, consulte [o que é uma janela?](what-is-a-window-.md)
 
@@ -48,7 +48,7 @@ int yPos = GET_Y_LPARAM(lParam);
 
 Essas macros são definidas no arquivo de cabeçalho WindowsX. h.
 
-No Windows de 64 bits, *lParam* é um valor de 64 bits. Os 32 bits superiores de *lParam* não são usados. A documentação do MSDN menciona a "palavra de ordem inferior" e "palavra de ordem superior" do *lParam*. No caso de 64 bits, isso significa as palavras de ordem inferior e superior dos bits inferiores de 32. As macros extraem os valores certos, portanto, se você usá-las, será seguro.
+no Windows de 64 bits, *lParam* é um valor de 64 bits. Os 32 bits superiores de *lParam* não são usados. A documentação do MSDN menciona a "palavra de ordem inferior" e "palavra de ordem superior" do *lParam*. No caso de 64 bits, isso significa as palavras de ordem inferior e superior dos bits inferiores de 32. As macros extraem os valores certos, portanto, se você usá-las, será seguro.
 
 As coordenadas do mouse são dadas em pixels, não nos DIPs (pixels independentes do dispositivo) e são medidos em relação à área do cliente da janela. As coordenadas são valores assinados. As posições acima e à esquerda da área do cliente têm coordenadas negativas, o que é importante se você rastrear a posição do mouse fora da janela. Veremos como fazer isso em um tópico posterior, [capturando o movimento do mouse fora da janela](mouse-movement.md).
 
@@ -70,7 +70,7 @@ O parâmetro *wParam* contém um **ou** mais bits de sinalizadores, indicando o 
 
 
 
- 
+ 
 
 A ausência de um sinalizador significa que o botão ou a chave correspondente não foi pressionado. Por exemplo, para testar se a tecla CTRL está inoperante:
 
@@ -129,7 +129,7 @@ Se você definir o sinalizador **cs \_ DBLCLKS** conforme mostrado, a janela rec
 
 Na verdade, a segunda mensagem do [**WM \_ LBUTTONDOWN**](/windows/desktop/inputdev/wm-lbuttondown) que normalmente seria gerada se torna uma mensagem do [**WM \_ LBUTTONDBLCLK**](/windows/desktop/inputdev/wm-lbuttondblclk) . As mensagens equivalentes são definidas para os botões direito, meio e XBUTTON.
 
-Até que você receba a mensagem de clique duplo, não há como dizer que o primeiro clique do mouse é o início de um clique duplo. Portanto, uma ação de clique duplo deve continuar em uma ação que começa com o primeiro clique do mouse. Por exemplo, no Shell do Windows, um único clique seleciona uma pasta, enquanto um clique duplo abre a pasta.
+Até que você receba a mensagem de clique duplo, não há como dizer que o primeiro clique do mouse é o início de um clique duplo. Portanto, uma ação de clique duplo deve continuar em uma ação que começa com o primeiro clique do mouse. por exemplo, no Shell Windows, um único clique seleciona uma pasta, enquanto um clique duplo abre a pasta.
 
 ## <a name="non-client-mouse-messages"></a>Mensagens de mouse não cliente
 
@@ -139,6 +139,6 @@ Um conjunto separado de mensagens é definido para eventos de mouse que ocorrem 
 
 [Movimento do mouse](mouse-movement.md)
 
- 
+ 
 
- 
+ 

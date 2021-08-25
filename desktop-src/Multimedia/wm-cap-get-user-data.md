@@ -3,7 +3,7 @@ title: Mensagem de WM_CAP_GET_USER_DATA (VFW. h)
 description: A mensagem de obtenção de dados do usuário do WM \_ Cap \_ \_ \_ recupera um \_ valor de dados PTR longo associado a uma janela de captura. Você pode enviar essa mensagem explicitamente ou usando a macro capGetUserData.
 ms.assetid: f7c121ba-44a1-4916-b602-c53d8332c2af
 keywords:
-- Multimídia do Windows de mensagem WM_CAP_GET_USER_DATA
+- mensagem de WM_CAP_GET_USER_DATA Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 02951667600acba115f506a610b167b72b69ea99
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0a79a513d415d166ab2715a181a6d8fc366b60480caf2982f6bbc53eadf90d96
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499660"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119892026"
 ---
 # <a name="wm_cap_get_user_data-message"></a>\_Mensagem de \_ obtenção \_ de \_ dados do usuário do WM Cap
 

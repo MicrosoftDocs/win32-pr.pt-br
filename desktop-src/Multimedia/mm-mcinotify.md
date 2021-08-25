@@ -1,9 +1,9 @@
 ---
-title: Mensagem de MM_MCINOTIFY (mmsystem. h)
-description: A \_ mensagem mm MCINOTIFY notifica um aplicativo de que um dispositivo MCI concluiu uma operação. Os dispositivos MCI enviam essa mensagem somente quando o \_ sinalizador de notificação MCI é usado.
+title: MM_MCINOTIFY mensagem (Mmsystem.h)
+description: A mensagem MM \_ MCINOTIFY notifica um aplicativo de que um dispositivo MCI concluiu uma operação. Os dispositivos MCI enviam essa mensagem somente quando o sinalizador NOTIFY da MCI \_ é usado.
 ms.assetid: a0840130-2969-4ce5-b098-3e45401eebb1
 keywords:
-- Multimídia do Windows de mensagem MM_MCINOTIFY
+- MM_MCINOTIFY mensagem Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 96ee62c4a2b6e17bf5ad6d719dcb7d6e992a2f2e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fc03ab0406542472871f35ca3ff619d4d9a6f35725b9322a4c11bc73bc29a5aa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085899"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119807506"
 ---
-# <a name="mm_mcinotify-message"></a>\_Mensagem mm MCINOTIFY
+# <a name="mm_mcinotify-message"></a>Mensagem MM \_ MCINOTIFY
 
-A mensagem **mm \_ MCINOTIFY** notifica um aplicativo de que um dispositivo MCI concluiu uma operação. Os dispositivos MCI enviam essa mensagem somente quando o \_ sinalizador de notificação MCI é usado.
+A **mensagem MM \_ MCINOTIFY** notifica um aplicativo de que um dispositivo MCI concluiu uma operação. Os dispositivos MCI enviam essa mensagem somente quando o sinalizador NOTIFY da MCI \_ é usado.
 
 
 ```C++
@@ -38,7 +38,7 @@ lParam = (LONG) lDevID
 
 <dl> <dt>
 
-<span id="wFlags"></span><span id="wflags"></span><span id="WFLAGS"></span>*wFlags*
+<span id="wFlags"></span><span id="wflags"></span><span id="WFLAGS"></span>*Wflags*
 </dt> <dd>
 
 Motivo da notificação. Os seguintes valores são definidos:
@@ -47,10 +47,10 @@ Motivo da notificação. Os seguintes valores são definidos:
 
 | Requisito | Valor |
 |-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_notificação MCI \_ anulada    | O dispositivo recebeu um comando que impediu que as condições atuais para iniciar a função de retorno de chamada fossem atendidas. Se um novo comando interromper o comando atual e ele também solicitar notificação, o dispositivo enviará essa mensagem somente e não a \_ notificação MCI será \_ substituída |
-| \_falha na notificação do MCI \_    | Ocorreu um erro de dispositivo enquanto o dispositivo estava executando o comando.                                                                                                                                                                                                            |
-| \_notificação MCI \_ bem-sucedida | As condições que iniciam a função de retorno de chamada foram atendidas.                                                                                                                                                                                                                 |
-| \_notificação MCI \_ substituída | O dispositivo recebeu outro comando com o sinalizador "notificar" definido e as condições atuais para iniciar a função de retorno de chamada foram substituídas.                                                                                                                           |
+| NOTIFICAÇÃO DE MCI \_ \_ ANULADA    | O dispositivo recebeu um comando que impedia que as condições atuais para iniciar a função de retorno de chamada fosse atendidas. Se um novo comando interromper o comando atual e também solicitar notificação, o dispositivo enviará essa mensagem somente e não MCI \_ NOTIFY \_ SUPERSEDED |
+| FALHA DE \_ NOTIFICAÇÃO DA MCI \_    | Ocorreu um erro de dispositivo enquanto o dispositivo estava executando o comando.                                                                                                                                                                                                            |
+| NOTIFICAÇÃO DE MCI \_ \_ BEM-SUCEDIDA | As condições que iniciam a função de retorno de chamada foram atendidas.                                                                                                                                                                                                                 |
+| NOTIFICAÇÃO DA MCI \_ \_ SOBRESEDIDA | O dispositivo recebeu outro comando com o sinalizador "notify" definido e as condições atuais para iniciar a função de retorno de chamada foram superadas.                                                                                                                           |
 
 
 
@@ -67,17 +67,17 @@ Identificador do dispositivo que inicia a função de retorno de chamada.
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retornará zero se for bem-sucedido ou um erro de outra forma.
+Retornará zero se for bem-sucedido ou um erro, caso contrário.
 
 ## <a name="remarks"></a>Comentários
 
-Para obter mais informações sobre o \_ sinalizador de notificação MCI, consulte [o sinalizador notificar](the-notify-flag.md).
+Para obter mais informações sobre o sinalizador NOTIFY da \_ MCI, consulte O sinalizador de [notificação](the-notify-flag.md).
 
-Um dispositivo retorna o sinalizador de notificação MCI com \_ \_ êxito com **mm \_ MCINOTIFY** quando a ação de um comando é concluída. Por exemplo, um dispositivo de áudio de CD usa esse sinalizador para notificação para o comando [**Play**](play.md) ( [**\_ reprodução MCI**](mci-play.md)) quando o dispositivo termina de ser reproduzido. O comando **Play** é bem-sucedido somente quando atinge a posição final especificada ou atinge o final da mídia. Da mesma forma, os comandos [**Seek**](seek.md) ( [**MCI \_ Seek**](mci-seek.md)) e [**Record**](record.md) ( [**\_ registro MCI**](mci-record.md)) não retornam \_ \_ a notificação de MCI com êxito até atingirem a posição final especificada ou atingirem o final da mídia.
+Um dispositivo retorna o sinalizador MCI \_ NOTIFY SUCCESSFUL com MM \_ **\_ MCINOTIFY** quando a ação de um comando é final. Por exemplo, um dispositivo de áudio cd usa esse sinalizador para notificação para o comando [**play**](play.md) ( [**MCI \_ PLAY**](mci-play.md)) quando o dispositivo termina de reproduzir. O **comando play** é bem-sucedido somente quando atinge a posição final especificada ou atinge o final da mídia. Da mesma forma, os comandos [**seek**](seek.md) ( [**MCI \_ SEEK**](mci-seek.md)) e [**record**](record.md) ( [**MCI \_ RECORD**](mci-record.md)) não retornam MCI NOTIFY SUCCESSFUL até que atinjam a posição final especificada ou cheguem ao final da \_ \_ mídia.
 
-Um dispositivo retorna o \_ sinalizador de notificação MCI \_ abortado com **mm \_ MCINOTIFY** somente quando recebe um comando que impede que ele atenda às condições de notificação. Por exemplo, o comando [**Play**](play.md) não anulará a notificação para um comando de **reprodução** anterior, desde que o novo comando não altere a direção da reprodução nem altere a posição final. Os comandos de [**busca**](seek.md) e [**registro**](record.md) se comportam da mesma forma. O MCI também não envia \_ uma notificação MCI \_ abortada quando a reprodução ou a gravação é pausada com o comando [**Pause**](pause.md) ( [**MCI \_ Pause**](mci-pause.md)). Enviar o comando [**retomar**](resume.md) ( [**MCI \_ resume**](mci-resume.md)) permite que eles continuem a atender às condições de retorno de chamada.
+Um dispositivo retorna o sinalizador MCI NOTIFY ABORTED com \_ \_ MM **\_ MCINOTIFY** somente quando recebe um comando que o impede de atender às condições de notificação. Por exemplo, o [**comando play**](play.md) não  anularia a notificação para um comando de reprodução anterior, desde que o novo comando não altere a direção da reprodução nem altere a posição final. Os [**comandos seek**](seek.md) e record [**se**](record.md) comportam da mesma forma. A MCI também não envia MCI NOTIFY ABORTED quando a reprodução ou gravação é pausada com o comando \_ \_ [**pause**](pause.md) [**(MCI \_ PAUSE).**](mci-pause.md) Enviar o [**comando resume**](resume.md) ( [**MCI \_ RESUME**](mci-resume.md)) permite que eles continuem a atender às condições de retorno de chamada.
 
-Quando o aplicativo solicitar uma notificação para um comando, verifique o retorno de erro das funções [**mciSendString**](/previous-versions//dd757161(v=vs.85)) ou [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) . Se essas funções encontrarem um erro e retornarem um valor diferente de zero, o MCI não definirá a notificação para o comando.
+Quando o aplicativo solicitar notificação para um comando, verifique o retorno de erro das funções [**mciSendString**](/previous-versions//dd757161(v=vs.85)) ou [**mciSendCommand.**](/previous-versions//dd757160(v=vs.85)) Se essas funções encontrarem um erro e retornarem um valor não zero, a MCI não definirá a notificação para o comando.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -87,7 +87,7 @@ Quando o aplicativo solicitar uma notificação para um comando, verifique o ret
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                                |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                      |
-| Cabeçalho<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -95,25 +95,25 @@ Quando o aplicativo solicitar uma notificação para um comando, verifique o ret
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
 [Mensagens MCI](mci-messages.md)
 </dt> <dt>
 
-[**temporariamente**](pause.md)
+[**Pausa**](pause.md)
 </dt> <dt>
 
-[**reproduzir**](play.md)
+[**Jogar**](play.md)
 </dt> <dt>
 
-[**gravável**](record.md)
+[**Registro**](record.md)
 </dt> <dt>
 
-[**Volte**](resume.md)
+[**Currículo**](resume.md)
 </dt> <dt>
 
-[**Procure**](seek.md)
+[**Procurar**](seek.md)
 </dt> </dl>
 
  

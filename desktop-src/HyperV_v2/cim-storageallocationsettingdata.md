@@ -26,14 +26,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: e66322f20987e2d1f99042430f0f57cdc2e399d4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fe380b03daced6ca98a44c189c52b5842862aa2e033bf66a04f8dd1466968449
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103662195"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119899666"
 ---
-# <a name="cim_storageallocationsettingdata-class"></a>\_Classe CIM StorageAllocationSettingData
+# <a name="cim_storageallocationsettingdata-class"></a>Classe CIM \_ StorageAllocationSettingData
 
 Representa as configurações para a alocação do armazenamento virtual.
 
@@ -61,20 +61,20 @@ class CIM_StorageAllocationSettingData : CIM_ResourceAllocationSettingData
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ StorageAllocationSettingData** tem estes tipos de membros:
+A **classe CIM \_ StorageAllocationSettingData** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ StorageAllocationSettingData** tem essas propriedades.
+A **classe CIM \_ StorageAllocationSettingData** tem essas propriedades.
 
 <dl> <dt>
 
 **Acesso**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -96,28 +96,28 @@ O suporte de leitura/gravação da alocação de armazenamento.
 
 <span id="Readable"></span><span id="readable"></span><span id="READABLE"></span>
 
-**Legível** (1)
+**Acessível** (1)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Writeable"></span><span id="writeable"></span><span id="WRITEABLE"></span>
 
-**Gravável** (2)
+**Writeable** (2)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Read_Write_Supported"></span><span id="read_write_supported"></span><span id="READ_WRITE_SUPPORTED"></span>
 
-**Suporte de leitura/gravação** (3)
+**Leitura/gravação com suporte** (3)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DMTF reservado** (..)
+**DMTF Reservado** (..)
 
 
 </dt> <dd></dd> </dl>
@@ -133,7 +133,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("**CIM \_ StorageAllocationSettingData**.**HostExtentNameFormat**","**CIM \_ StorageAllocationSettingData**.**HostExtentNameNamespace**","[**CIM \_ StorageExtent**](cim-storageextent.md).**Nome**")
+Qualificadores: [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("**CIM \_ StorageAllocationSettingData**.**HostExtentNameFormat**", "**Cim \_ StorageAllocationSettingData**.**HostExtentNameNamespace**", "[**CIM \_ StorageExtent**](cim-storageextent.md).**Nome**")
 </dt> </dl>
 
 Um identificador exclusivo da extensão de armazenamento do host.
@@ -143,16 +143,16 @@ Um identificador exclusivo da extensão de armazenamento do host.
 **HostExtentNameFormat**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("**CIM \_ StorageAllocationSettingData**.**HostExtentName**","**CIM \_ StorageAllocationSettingData**.**OtherHostExtentNameFormat**","[**CIM \_ StorageExtent**](cim-storageextent.md).**NameFormat**")
+Qualificadores: [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("**CIM \_ StorageAllocationSettingData**.**HostExtentName**", "**Cim \_ StorageAllocationSettingData**.**OtherHostExtentNameFormat**", "[**CIM \_ StorageExtent**](cim-storageextent.md).**NameFormat**")
 </dt> </dl>
 
-O formato do valor da propriedade **HostExtentName** .
+O formato do valor da **propriedade HostExtentName.**
 
 <dt>
 
@@ -165,7 +165,7 @@ O formato do valor da propriedade **HostExtentName** .
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outro** (1)
+<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -177,24 +177,24 @@ O formato do valor da propriedade **HostExtentName** .
 
 </dt> <dd>
 
-O número de série/fornecedor/modelo (SNVM) SNVM é 3 cadeias de caracteres que representam o nome do fornecedor, o nome do produto dentro do namespace do fornecedor e o número de série no namespace do modelo. As cadeias de caracteres são delimitadas por um ' + '. Os espaços podem ser incluídos e são significativos. O número de série é a representação de texto do número de série em maiúsculas hexadecimais. Isso representa o fornecedor e a ID do modelo de dados de consulta SCSI; o campo fornecedor deve ter 8 caracteres de largura e o campo produto deve ter 16 caracteres de largura. Por exemplo,
+SNVM (Número de Série/Fornecedor/Modelo) SNVM são três cadeias de caracteres que representam o nome do fornecedor, o nome do produto no namespace do fornecedor e o número de série dentro do namespace do modelo. As cadeias de caracteres são delimitadas por um '+'. Os espaços podem ser incluídos e são significativos. O número de série é a representação de texto do número de série em letras maiúsculas hexadecimais. Isso representa o fornecedor e a ID do modelo dos dados de Consulta SCSI; O campo fornecedor DEVE ter 8 caracteres de largura e o campo do produto DEVE ter 16 caracteres de largura. Por exemplo,
 
-' Acme \_ \_ \_ \_ + super Disk \_ \_ \_ \_ \_ \_ + 124437458 ' ( \_ é um caractere de espaço)
+'ACME \_ \_ \_ \_ +SUPER DISK \_ \_ \_ \_ \_ \_ +124437458' ( \_ é um caractere de espaço)
 
 </dd> <dt>
 
 <span id="NAA"></span><span id="naa"></span>
 
-<span id="NAA"></span><span id="naa"></span>**Naa** (9)
+<span id="NAA"></span><span id="naa"></span>**NAA** (9)
 
 
 </dt> <dd>
 
 9 = NAA como um formato genérico. Consulte
 
-https://standards.ieee.org/regauth/oui/tutorials/fibrecomp\_id.html. Formatado como 16 ou 32 caracteres hexadecimais maiúsculos não separados (2 por byte binário).
+https://standards.ieee.org/regauth/oui/tutorials/fibrecomp\_id.html. Formatado como 16 ou 32 caracteres hexadados em maiúsculas não separados (2 por byte binário).
 
-Por exemplo, ' 21000020372D3C73 '
+Por exemplo'21000020372D3C73'
 
 </dd> <dt>
 
@@ -205,7 +205,7 @@ Por exemplo, ' 21000020372D3C73 '
 
 </dt> <dd>
 
-EUI como um formato genérico (EUI64) consulte
+EUI como um formato genérico (EUI64) Consulte
 
 https://standards.ieee.org/content/dam/ieee-standards/standards/web/documents/tutorials/eui.pdf.
 
@@ -218,24 +218,24 @@ https://standards.ieee.org/content/dam/ieee-standards/standards/web/documents/tu
 
 </dt> <dd>
 
-T10 formato do identificador do fornecedor como retornado pela consulta SCSI página VPD 83, identificador tipo 1. Consulte especificação T10 SPC-3. Esta é a ID do fornecedor ASCII de 8 bytes do registro T10 seguido por um identificador ASCII específico do fornecedor; os espaços são permitidos. Para volumes não SCSI, ' SNVM ' pode ser a opção mais apropriada.
+Formato do identificador de fornecedor T10 conforme retornado pela VPD de Consulta SCSI página 83, tipo de identificador 1. Consulte Especificação do SPC-3 T10. Essa é a ID do fornecedor ASCII de 8 byte do registro T10 seguida por um identificador ASCII específico do fornecedor; espaços são permitidos. Para volumes não SCSI, 'SNVM' pode ser a opção mais apropriada.
 
 </dd> <dt>
 
 <span id="OS_Device_Name"></span><span id="os_device_name"></span><span id="OS_DEVICE_NAME"></span>
 
-<span id="OS_Device_Name"></span><span id="os_device_name"></span><span id="OS_DEVICE_NAME"></span>**Nome do dispositivo do so** (12)
+<span id="OS_Device_Name"></span><span id="os_device_name"></span><span id="OS_DEVICE_NAME"></span>**Nome do dispositivo do** sistema operacional (12)
 
 
 </dt> <dd>
 
-Nome do dispositivo do so (para LogicalDisks). Consulte Descrição do nome do LogicalDisk para obter detalhes.
+Nome do dispositivo do sistema operacional (para LogicalDisks). Consulte LogicalDisk Name description para obter detalhes.
 
 </dd> <dt>
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF reservado** (..)
+<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF Reservado** (..)
 
 
 </dt> <dd></dd> </dl>
@@ -245,16 +245,16 @@ Nome do dispositivo do so (para LogicalDisks). Consulte Descrição do nome do L
 **HostExtentNameNamespace**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("**CIM \_ StorageAllocationSettingData**.**HostExtentName**","**CIM \_ StorageAllocationSettingData**.**OtherHostExtentNameNamespace**","**CIM \_ StorageAllocationSettingData**.**HostExtentNameFormat**","[**CIM \_ StorageExtent**](cim-storageextent.md).**Namespace**")
+Qualificadores: [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("**CIM \_ StorageAllocationSettingData**.**HostExtentName**", "**Cim \_ StorageAllocationSettingData**.**OtherHostExtentNameNamespace**", "**CIM \_ StorageAllocationSettingData**.**HostExtentNameFormat**", "[**CIM \_ StorageExtent**](cim-storageextent.md).**Namespace**")
 </dt> </dl>
 
-O formato de nomenclatura para a propriedade **Name** .
+O formato de nomen por nome da **propriedade** Name.
 
 <dt>
 
@@ -267,7 +267,7 @@ O formato de nomenclatura para a propriedade **Name** .
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Outro** (1)
+**Outros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -316,14 +316,14 @@ O formato de nomenclatura para a propriedade **Name** .
 
 <span id="OS_Device_Namespace"></span><span id="os_device_namespace"></span><span id="OS_DEVICE_NAMESPACE"></span>
 
-**Namespace de dispositivo do so** (8)
+**Namespace do dispositivo do sistema** operacional (8)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DMTF reservado** (..)
+**DMTF Reservado** (..)
 
 
 </dt> <dd></dd> </dl>
@@ -333,48 +333,48 @@ O formato de nomenclatura para a propriedade **Name** .
 **HostExtentStartingAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("**CIM \_ StorageAllocationSettingData**.**HostResourceBlockSize**","[**\_ baseado em CIM**](cim-basedon.md).**StartingAddress**")
+Qualificadores: [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("**CIM \_ StorageAllocationSettingData**.**HostResourceBlockSize**", "[**Cim \_ BasedOn**](cim-basedon.md).**StartingAddress**")
 </dt> </dl>
 
-O endereço inicial na extensão de armazenamento do host. Um Val nulo; UE indica que não há mapeamento direto entre a extensão de armazenamento virtual e a extensão de armazenamento do host.
+O endereço inicial na extensão de armazenamento do host. Um valor NULL val;ue indica que não há mapeamento direto entre a extensão de armazenamento virtual e a extensão de armazenamento do host.
 
 </dd> <dt>
 
 **HostResourceBlockSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ StorageExtent**](cim-storageextent.md).**BlockSize**"), **PUnit** (" byte ")
+Qualificadores: [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ StorageExtent**](cim-storageextent.md).**BlockSize**"), **PUnit** ("byte")
 </dt> </dl>
 
-O tamanho, em bytes, dos blocos que são alocados no host para a alocação de armazenamento. Se o tamanho do bloco for variável, o tamanho máximo do bloco em bytes deverá ser especificado. Se o tamanho do bloco for desconhecido ou se um conceito de bloco não se aplicar, o valor "1" (desconhecido) deverá ser usado.
+O tamanho, em bytes, dos blocos alocados no host para a alocação de armazenamento. Se o tamanho do bloco for variável, o tamanho máximo do bloco em bytes deverá ser especificado. Se o tamanho do bloco for desconhecido ou se um conceito de bloco não se aplicar, o valor "1" (desconhecido) deverá ser usado.
 
 </dd> <dt>
 
 **Limite**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**substituem**](../wmisdk/standard-qualifiers.md) ("Limit"), [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) (**" \_ CIM StorageAllocationSettingData**.**HostResourceBlockSize**")
+Qualificadores: [**Substituir**](../wmisdk/standard-qualifiers.md) ("Limite"), [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("**Cim \_ StorageAllocationSettingData**.**HostResourceBlockSize**")
 </dt> </dl>
 
-A quantidade máxima de blocos que será concedida para a alocação de recursos de armazenamento no host. O tamanho do bloco é especificado pela propriedade **HostResourceBlockSize** .
+A quantidade máxima de blocos que serão concedidos para a alocação de recursos de armazenamento no host. O tamanho do bloco é especificado pela **propriedade HostResourceBlockSize.**
 
 </dd> <dt>
 
@@ -390,7 +390,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("**CIM \_ StorageAllocationSettingData**.**HostExtentNameFormat**")
 </dt> </dl>
 
-O formato da propriedade **HostExtentName** se a propriedade for definida como "1" (outra).
+O formato da **propriedade HostExtentName** se a propriedade estiver definida como "1" (outro).
 
 </dd> <dt>
 

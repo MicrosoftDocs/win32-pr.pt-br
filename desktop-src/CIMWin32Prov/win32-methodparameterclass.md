@@ -1,8 +1,8 @@
 ---
-description: O \_ abstrato MethodParameterClass do Win32, a classe base WMI deriva qualquer classe definida como um contêiner de valores de parâmetro que serão passados para um método.
+description: A classe WMI abstrata MethodParameterClass do Win32 deriva qualquer classe definida como um contêiner de valores de parâmetro que serão \_ passados para um método.
 ms.assetid: 293fa378-432d-4e97-a8ab-8dc4917d5476
 ms.tgt_platform: multiple
-title: Classe Win32_MethodParameterClass
+title: Win32_MethodParameterClass classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,22 +14,22 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 4e791941df681b2e46c4de6f0714b1290baecfde
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 90a6477235b6046fad2767cad35fe7aaad3fa4ae7003106b619e9d8b33150d2b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105754818"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119973017"
 ---
-# <a name="win32_methodparameterclass-class"></a>\_Classe Win32 MethodParameterClass
+# <a name="win32_methodparameterclass-class"></a>Classe MethodParameterClass do Win32 \_
 
-O **abstrato \_ MethodParameterClass do Win32** , a [classe base WMI](/windows/desktop/WmiSdk/retrieving-a-class) deriva qualquer classe definida como um contêiner de valores de parâmetro que serão passados para um método. Sem Propriedades próprias, essa classe serve como um nó de classificação. Um exemplo semelhante é o [**CIM \_ físicoelement**](cim-physicalelement.md). A derivação de **CIM \_ físicoelement** indica que a classe descreve uma entidade física em vez de lógica. No caso do **Win32 \_ MethodParameterClass**, as classes derivadas dele são criadas especificamente para passar parâmetros para um método.
+A classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) abstrata **\_ MethodParameterClass do Win32** deriva qualquer classe definida como um contêiner de valores de parâmetro que serão passados para um método. Sem propriedades próprias, essa classe serve como um nó de classificação. Um exemplo semelhante é [**Cim \_ PhysicalElement.**](cim-physicalelement.md) Derivação de **Cim \_ PhysicalElement** indica que a classe descreve uma entidade física em vez de lógica. No caso de **\_ MethodParameterClass do Win32,** as classes derivadas dele são criadas especificamente para passar parâmetros para um método .
 
 ## <a name="syntax"></a>Sintaxe
 
 ## <a name="members"></a>Membros
 
-A classe **Win32 \_ MethodParameterClass** não define nenhum membro.
+A **classe \_ MethodParameterClass do Win32** não define nenhum membro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -39,8 +39,8 @@ A classe **Win32 \_ MethodParameterClass** não define nenhum membro.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 

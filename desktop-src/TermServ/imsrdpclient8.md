@@ -1,11 +1,11 @@
 ---
 title: Interface IMsRdpClient8
-description: Fornece os métodos e as propriedades necessários para configurar e usar o controle de cliente. Deriva da interface IMsRdpClient7.
+description: Fornece os métodos e propriedades necessários para configurar e usar o controle de cliente. Deriva da interface IMsRdpClient7.
 ms.assetid: 5ff54392-48f2-49a9-a264-88db08ec1770
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient8
-- Serviços de Área de Trabalho Remota da interface IMsRdpClient8, descrita
+- Interface IMsRdpClient8 Serviços de Área de Trabalho Remota
+- Interface IMsRdpClient8 Serviços de Área de Trabalho Remota , descrita
 topic_type:
 - apiref
 api_name:
@@ -16,20 +16,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6575e50bd85cfe96888f6c5924d1875b48d544ea
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 63dbdffbad87f9860bc063ab7f83883e0f902ea1ef7e4d2e91d452b2b832a699
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369238"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119871355"
 ---
 # <a name="imsrdpclient8-interface"></a>Interface IMsRdpClient8
 
-Fornece os métodos e as propriedades necessários para configurar e usar o controle de cliente. Deriva da interface [**IMsRdpClient7**](imsrdpclient7.md) .
+Fornece os métodos e propriedades necessários para configurar e usar o controle de cliente. Deriva da interface [**IMsRdpClient7.**](imsrdpclient7.md)
 
 ## <a name="members"></a>Membros
 
-A interface **IMsRdpClient8** herda de [**IMsRdpClient7**](imsrdpclient7.md). **IMsRdpClient8** também tem estes tipos de membros:
+A interface **IMsRdpClient8** herda de [**IMsRdpClient7.**](imsrdpclient7.md) **IMsRdpClient8** também tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
@@ -42,17 +42,17 @@ A interface **IMsRdpClient8** tem esses métodos.
 
 | Método                                                                    | Descrição                                                                                                                                                                                 |
 |:--------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Connect**](imstscax-connect.md)                                       | Inicia uma conexão usando as propriedades atualmente definidas no controle.<br/>                                                                                                        |
+| [**Conectar**](imstscax-connect.md)                                       | Inicia uma conexão usando as propriedades atualmente definidas no controle .<br/>                                                                                                        |
 | [**CreateVirtualChannels**](imstscax-createvirtualchannels.md)           | Cria um objeto de canal virtual do lado do cliente para cada nome de canal virtual especificado.<br/>                                                                                            |
 | [**Desconectar**](imstscax-disconnect.md)                                 | Desconecta a conexão ativa.<br/>                                                                                                                                               |
-| [**GetErrorDescription**](imsrdpclient5-geterrordescription.md)          | Recupera a descrição do erro para os eventos de desconexão de sessão.<br/>                                                                                                               |
-| [**GetStatusText**](imsrdpclient7-getstatustext.md)                      | Recupera o texto de status do código de status especificado.<br/>                                                                                                                         |
+| [**GetErrorDescription**](imsrdpclient5-geterrordescription.md)          | Recupera a descrição do erro para os eventos de desconexão da sessão.<br/>                                                                                                               |
+| [**GetStatusText**](imsrdpclient7-getstatustext.md)                      | Recupera o texto de status para o código de status especificado.<br/>                                                                                                                         |
 | [**GetVirtualChannelOptions**](imsrdpclient-getvirtualchanneloptions.md) | Recupera as opções definidas para um canal virtual.<br/>                                                                                                                                 |
 | [**Reconectar**](imsrdpclient8-reconnect.md)                              | Reconecta-se à sessão remota com a nova largura e altura da área de trabalho.<br/>                                                                                                          |
-| [**RequestClose**](imsrdpclient-requestclose.md)                         | Solicita um desligamento normal do Área de Trabalho Remota controle ActiveX.<br/>                                                                                                              |
-| [**SendOnVirtualChannel**](imstscax-sendonvirtualchannel.md)             | Envia dados para o servidor de Host da Sessão RD por meio de um canal virtual que foi criado anteriormente usando o método [**CreateVirtualChannels**](imstscax-createvirtualchannels.md) .<br/> |
+| [**RequestClose**](imsrdpclient-requestclose.md)                         | Solicita um desligamento normalmente do Área de Trabalho Remota ActiveX controle.<br/>                                                                                                              |
+| [**SendOnVirtualChannel**](imstscax-sendonvirtualchannel.md)             | Envia dados para o servidor Host da Sessão RD em um canal virtual criado anteriormente usando o [**método CreateVirtualChannels.**](imstscax-createvirtualchannels.md)<br/> |
 | [**SendRemoteAction**](imsrdpclient8-sendremoteaction.md)                | Faz com que uma ação seja executada na sessão remota.<br/>                                                                                                                          |
-| [**SetVirtualChannelOptions**](imsrdpclient-setvirtualchanneloptions.md) | Define as opções de canal virtual para o controle ActiveX Área de Trabalho Remota.<br/>                                                                                                         |
+| [**SetVirtualChannelOptions**](imsrdpclient-setvirtualchanneloptions.md) | Define as opções de canal virtual para o Área de Trabalho Remota ActiveX controle.<br/>                                                                                                         |
 
 
 
@@ -66,24 +66,24 @@ A interface **IMsRdpClient8** tem essas propriedades.
 
 | Propriedade                                                                             | Tipo de acesso           | Descrição                                                                                                                                                                                                                                            |
 |:-------------------------------------------------------------------------------------|:----------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**AdvancedSettings**](imstscax-advancedsettings.md)<br/>                     | Somente leitura<br/>  | Recupera um ponteiro de interface [**IMsTscAdvancedSettings**](imstscadvancedsettings-interface.md) .<br/>                                                                                                                                          |
-| [**AdvancedSettings2**](imsrdpclient-advancedsettings2.md)<br/>               | Somente leitura<br/>  | Recupera um ponteiro para a interface [**IMsRdpClientAdvancedSettings**](imsrdpclientadvancedsettings-interface.md) . A interface pode ser usada para definir configurações avançadas para o controle de cliente.<br/>                                             |
-| [**AdvancedSettings3**](imsrdpclient2-advancedsettings3.md)<br/>              | Somente leitura<br/>  | Recupera um ponteiro para a interface [**IMsRdpClientAdvancedSettings2**](imsrdpclientadvancedsettings2.md) . A interface pode ser usada para definir configurações avançadas para o controle de cliente.<br/>                                                     |
-| [**AdvancedSettings4**](imsrdpclient3-advancedsettings4.md)<br/>              | Somente leitura<br/>  | Recupera um ponteiro para a interface [**IMsRdpClientAdvancedSettings3**](imsrdpclientadvancedsettings3.md) .<br/>                                                                                                                                |
-| [**AdvancedSettings5**](imsrdpclient4-advancedsettings5.md)<br/>              | Somente leitura<br/>  | Recupera um ponteiro para uma interface [**IMsRdpClientAdvancedSettings4**](imsrdpclientadvancedsettings4.md) .<br/>                                                                                                                                 |
-| [**AdvancedSettings6**](imsrdpclient5-advancedsettings6.md)<br/>              | Somente leitura<br/>  | Recupera a interface [**IMsRdpClientAdvancedSettings5**](imsrdpclientadvancedsettings5.md) .<br/>                                                                                                                                             |
-| [**AdvancedSettings7**](imsrdpclient6-advancedsettings7.md)<br/>              | Somente leitura<br/>  | Recupera a interface [**IMsRdpClientAdvancedSettings6**](imsrdpclientadvancedsettings5.md) .<br/>                                                                                                                                             |
-| [**AdvancedSettings8**](imsrdpclient7-advancedsettings8.md)<br/>              | Somente leitura<br/>  | Recupera um objeto que dá suporte à interface [**IMsRdpClientAdvancedSettings7**](imsrdpclientadvancedsettings7.md) .<br/>                                                                                                                     |
-| [**AdvancedSettings9**](imsrdpclient8-advancedsettings9.md)<br/>              | Somente leitura<br/>  | Contém um objeto que dá suporte à interface [**IMsRdpClientAdvancedSettings8**](imsrdpclientadvancedsettings8.md) .<br/>                                                                                                                      |
+| [**AdvancedSettings**](imstscax-advancedsettings.md)<br/>                     | Somente leitura<br/>  | Recupera um ponteiro de interface [**IMsTscAdvancedSettings.**](imstscadvancedsettings-interface.md)<br/>                                                                                                                                          |
+| [**AdvancedSettings2**](imsrdpclient-advancedsettings2.md)<br/>               | Somente leitura<br/>  | Recupera um ponteiro para a interface [**IMsRdpClientAdvancedSettings.**](imsrdpclientadvancedsettings-interface.md) A interface pode ser usada para definir configurações avançadas para o controle do cliente.<br/>                                             |
+| [**AdvancedSettings3**](imsrdpclient2-advancedsettings3.md)<br/>              | Somente leitura<br/>  | Recupera um ponteiro para a interface [**IMsRdpClientAdvancedSettings2.**](imsrdpclientadvancedsettings2.md) A interface pode ser usada para definir configurações avançadas para o controle do cliente.<br/>                                                     |
+| [**AdvancedSettings4**](imsrdpclient3-advancedsettings4.md)<br/>              | Somente leitura<br/>  | Recupera um ponteiro para a interface [**IMsRdpClientAdvancedSettings3.**](imsrdpclientadvancedsettings3.md)<br/>                                                                                                                                |
+| [**AdvancedSettings5**](imsrdpclient4-advancedsettings5.md)<br/>              | Somente leitura<br/>  | Recupera um ponteiro para uma interface [**IMsRdpClientAdvancedSettings4.**](imsrdpclientadvancedsettings4.md)<br/>                                                                                                                                 |
+| [**AdvancedSettings6**](imsrdpclient5-advancedsettings6.md)<br/>              | Somente leitura<br/>  | Recupera a interface [**IMsRdpClientAdvancedSettings5.**](imsrdpclientadvancedsettings5.md)<br/>                                                                                                                                             |
+| [**AdvancedSettings7**](imsrdpclient6-advancedsettings7.md)<br/>              | Somente leitura<br/>  | Recupera a interface [**IMsRdpClientAdvancedSettings6.**](imsrdpclientadvancedsettings5.md)<br/>                                                                                                                                             |
+| [**AdvancedSettings8**](imsrdpclient7-advancedsettings8.md)<br/>              | Somente leitura<br/>  | Recupera um objeto que dá suporte à interface [**IMsRdpClientAdvancedSettings7.**](imsrdpclientadvancedsettings7.md)<br/>                                                                                                                     |
+| [**AdvancedSettings9**](imsrdpclient8-advancedsettings9.md)<br/>              | Somente leitura<br/>  | Contém um objeto que dá suporte à interface [**IMsRdpClientAdvancedSettings8.**](imsrdpclientadvancedsettings8.md)<br/>                                                                                                                      |
 | [**CipherStrength**](imstscax-cipherstrength.md)<br/>                         | Somente leitura<br/>  | Recupera a intensidade máxima de criptografia do controle atual.<br/>                                                                                                                                                                           |
-| [**ColorDepth**](imsrdpclient-colordepth.md)<br/>                             | Leitura/gravação<br/> | A profundidade de cor (em bits por pixel) para a conexão do controle.<br/>                                                                                                                                                                           |
+| [**Colordepth**](imsrdpclient-colordepth.md)<br/>                             | Leitura/gravação<br/> | A profundidade da cor (em bits por pixel) para a conexão do controle.<br/>                                                                                                                                                                           |
 | [**Conectado**](imstscax-connected.md)<br/>                                   | Somente leitura<br/>  | Recupera o estado de conexão do controle atual.<br/>                                                                                                                                                                                      |
-| [**ConnectedStatusText**](imsrdpclient2-connectedstatustext.md)<br/>          | Leitura/gravação<br/> | Contém o texto que é exibido na área do cliente do controle enquanto o controle está no estado conectado.<br/>                                                                                                                          |
+| [**ConnectedStatusText**](imsrdpclient2-connectedstatustext.md)<br/>          | Leitura/gravação<br/> | Contém o texto exibido na área de cliente do controle enquanto o controle está no estado conectado.<br/>                                                                                                                          |
 | [**ConnectingText**](imstscax-connectingtext.md)<br/>                         | Leitura/gravação<br/> | Especifica o texto que aparece centralizado no controle enquanto o controle está se conectando.<br/>                                                                                                                                                    |
 | [**DesktopHeight**](imstscax-desktopheight.md)<br/>                           | Leitura/gravação<br/> | Especifica a altura do controle atual, em pixels, na área de trabalho remota inicial.<br/>                                                                                                                                                           |
 | [**DesktopWidth**](imstscax-desktopwidth.md)<br/>                             | Leitura/gravação<br/> | Especifica a largura do controle atual, em pixels, na área de trabalho remota inicial.<br/>                                                                                                                                                            |
 | [**DisconnectedText**](imstscax-disconnectedtext.md)<br/>                     | Leitura/gravação<br/> | Especifica o texto que aparece centralizado no controle antes que uma conexão seja encerrada.<br/>                                                                                                                                                  |
-| [**Controlador**](imstscax-domain.md)<br/>                                         | Leitura/gravação<br/> | Especifica o domínio no qual o usuário atual faz logon.<br/>                                                                                                                                                                                     |
+| [**Domínio**](imstscax-domain.md)<br/>                                         | Leitura/gravação<br/> | Especifica o domínio no qual o usuário atual faz o login.<br/>                                                                                                                                                                                     |
 | [**ExtendedDisconnectReason**](imsrdpclient-extendeddisconnectreason.md)<br/> | Somente leitura<br/>  | Contém informações estendidas sobre o motivo do controle para desconexão.<br/>                                                                                                                                                                 |
 | [**FullScreen**](imsrdpclient-fullscreen.md)<br/>                             | Leitura/gravação<br/> | Determina se o controle de cliente está no modo de tela inteira.<br/>                                                                                                                                                                               |
 | [**FullScreenTitle**](imstscax-fullscreentitle.md)<br/>                       | Somente gravação<br/> | Especifica o título da janela exibido quando o controle está no modo de tela inteira.<br/>                                                                                                                                                               |

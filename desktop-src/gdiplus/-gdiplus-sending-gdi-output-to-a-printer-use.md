@@ -1,19 +1,19 @@
 ---
-description: Usar o Windows GDI+ para desenhar em uma impressora é semelhante a usar o GDI+ para desenhar em uma tela de computador. Para desenhar em uma impressora, obtenha um identificador de contexto de dispositivo para a impressora e, em seguida, passe esse identificador para um construtor de gráficos.
+description: usar Windows GDI+ para desenhar em uma impressora é semelhante ao uso de GDI+ para desenhar em uma tela de computador. Para desenhar em uma impressora, obtenha um identificador de contexto de dispositivo para a impressora e, em seguida, passe esse identificador para um construtor de gráficos.
 ms.assetid: a76cca57-6ed8-44cd-a9f6-f2692d14b68a
 title: Envio da saída GDI+ para uma impressora
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 96c1c4f6c05e4918663284e6d7747952040dcddf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 51116e27f3ef4e457d2d3cf8d39b26c1a5e2275da4b964bd4de58ec273db1e2b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010863"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119943776"
 ---
 # <a name="sending-gdi-output-to-a-printer"></a>Envio da saída GDI+ para uma impressora
 
-Usar o Windows GDI+ para desenhar em uma impressora é semelhante a usar o GDI+ para desenhar em uma tela de computador. Para desenhar em uma impressora, obtenha um identificador de contexto de dispositivo para a impressora e, em seguida, passe esse identificador para um construtor de [**gráficos**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) .
+usar Windows GDI+ para desenhar em uma impressora é semelhante ao uso de GDI+ para desenhar em uma tela de computador. Para desenhar em uma impressora, obtenha um identificador de contexto de dispositivo para a impressora e, em seguida, passe esse identificador para um construtor de [**gráficos**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) .
 
 O aplicativo de console a seguir desenha uma linha, um retângulo e uma elipse em uma impressora chamada Myprinter:
 
@@ -59,7 +59,7 @@ INT main()
 
 
 
-No código anterior, os três comandos de desenho GDI+ estão entre chamadas para as funções [StartDoc](/windows/win32/api/wingdi/nf-wingdi-startdocw) e [EndDoc](/windows/win32/api/wingdi/nf-wingdi-enddoc) , sendo que cada uma recebe o identificador de contexto do dispositivo de impressora. Todos os comandos gráficos entre StartDoc e EndDoc são roteados para um metarquivo temporário. Após a chamada para EndDoc, o driver de impressora converte os dados no metarquivo no formato exigido pela impressora específica que está sendo usada.
+no código anterior, os três GDI+ comandos de desenho estão entre chamadas para as funções [StartDoc](/windows/win32/api/wingdi/nf-wingdi-startdocw) e [EndDoc](/windows/win32/api/wingdi/nf-wingdi-enddoc) , sendo que cada uma recebe o identificador de contexto do dispositivo de impressora. Todos os comandos gráficos entre StartDoc e EndDoc são roteados para um metarquivo temporário. Após a chamada para EndDoc, o driver de impressora converte os dados no metarquivo no formato exigido pela impressora específica que está sendo usada.
 
 > [!Note]  
 > Se o spooling não estiver habilitado para a impressora que está sendo usada, a saída de gráficos não será roteada para um metarquivo. Em vez disso, comandos de gráficos individuais são processados pelo driver de impressora e enviados para a impressora.
@@ -69,7 +69,7 @@ No código anterior, os três comandos de desenho GDI+ estão entre chamadas par
 Em geral, você não desejará embutir o nome de uma impressora como foi feito no aplicativo de console anterior. Uma alternativa para embutir o nome no código é chamar [GetDefaultPrinter](../printdocs/getdefaultprinter.md) para obter o nome da impressora padrão. Antes de chamar GetDefaultPrinter, você deve alocar um buffer grande o suficiente para conter o nome da impressora. Você pode determinar o tamanho do buffer necessário chamando GetDefaultPrinter, passando **NULL** como o primeiro argumento.
 
 > [!Note]  
-> A função [GetDefaultPrinter](../printdocs/getdefaultprinter.md) tem suporte apenas no Windows 2000 e posterior.
+> a função [GetDefaultPrinter](../printdocs/getdefaultprinter.md) tem suporte apenas no Windows 2000 e posterior.
 
  
 

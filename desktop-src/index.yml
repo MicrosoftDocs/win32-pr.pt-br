@@ -1,19 +1,19 @@
 ### YamlMime:Landing
-title: Crie aplicativos do Windows para desktop usando a API do Win32
-summary: Saiba como criar aplicativos de área de trabalho para computadores Windows usando C++ e a API do Win32.
+title: Criar aplicativos Windows área de trabalho usando a API do Win32
+summary: Saiba como criar aplicativos da área de trabalho Windows computadores usando C++ e a API do Win32.
 metadata:
   author: mcleanbyron
-  description: Saiba como criar aplicativos de área de trabalho para computadores Windows usando C++ e a API do Win32.
+  description: Saiba como criar aplicativos da área de trabalho Windows computadores usando C++ e a API do Win32.
   manager: jken
   ms.author: mcleans
   ms.date: 09/15/2019
   ms.topic: landing-page
-  ms.openlocfilehash: 99090d109a717c1008a11e6a9c9e6cf7a31f2b7c
-  ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+  ms.openlocfilehash: cc2d2b66adddba0b164f5f3eccae1e076fd91d451d9857ba901ec4a81ac6e9f0
+  ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 08/19/2020
-  ms.locfileid: "104007386"
+  ms.lasthandoff: 08/11/2021
+  ms.locfileid: "119848946"
 landingContent:
 - title: Introdução
   linkLists:
@@ -23,27 +23,27 @@ landingContent:
       url: /windows/desktop/desktop-programming
   - linkListType: tutorial
     links:
-    - text: Criar seu primeiro aplicativo com o Win32 e o C++
+    - text: Criar seu primeiro aplicativo com Win32 e C++
       url: ./learnwin32/learn-to-program-for-windows.md
   - linkListType: download
     links:
     - text: Ferramentas de desenvolvimento
       url: https://developer.microsoft.com/windows/downloads
-    - text: Exemplos de código do Windows
+    - text: Windows exemplos de código
       url: https://developer.microsoft.com/windows/samples
 - title: Desenvolver
   linkLists:
   - linkListType: overview
     links:
-    - text: Recursos e tecnologias do Windows
+    - text: Windows recursos e tecnologias
       url: desktop-app-technologies.md
     - text: Modernizar aplicativos para Windows 10
       url: /windows/apps/desktop/modernize
   - linkListType: reference
     links:
-    - text: Referência de API do Win32 por recurso
+    - text: Referência da API do Win32 por recurso
       url: ./apiindex/windows-api-list.md
-    - text: Referência da API do Win32 por cabeçalho
+    - text: Referência da API do Win32 por header
       url: /windows/win32/api/
 - title: Recursos e comunidade
   linkLists:

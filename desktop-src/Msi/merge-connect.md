@@ -1,7 +1,7 @@
 ---
-description: O método Connect do objeto de mesclagem conecta um módulo a um recurso adicional. O módulo já deve ter sido mesclado no banco de dados ou será mesclado no banco de dados. O recurso deve existir antes de chamar essa função.
+description: o método Conexão do objeto de mesclagem conecta um módulo a um recurso adicional. O módulo já deve ter sido mesclado no banco de dados ou será mesclado no banco de dados. O recurso deve existir antes de chamar essa função.
 ms.assetid: 1c1ef664-792c-4cdc-b468-1ffe0b7810a5
-title: Método Merge. Connect (Mergemod. h)
+title: Mescle. método de Conexão (Mergemod. h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: da66f7dfe4203e80d4778ae9b39c665a66164384
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c28aafaac9f8224ea4f622b2e63f81d9dc458d72e98c6e22c348087794e9e7a5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105757120"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119926666"
 ---
-# <a name="mergeconnect-method"></a>Método Merge. Connect
+# <a name="mergeconnect-method"></a>Mescle. método de Conexão
 
-O método **Connect** do objeto de [**mesclagem**](merge-object.md) conecta um módulo a um recurso adicional. O módulo já deve ter sido mesclado no banco de dados ou será mesclado no banco de dados. O recurso deve existir antes de chamar essa função.
+o método **Conexão** do objeto de [**mesclagem**](merge-object.md) conecta um módulo a um recurso adicional. O módulo já deve ter sido mesclado no banco de dados ou será mesclado no banco de dados. O recurso deve existir antes de chamar essa função.
 
 As alterações feitas no banco de dados não são salvas no disco, a menos que o método [**CloseDatabase**](merge-closedatabase.md) seja chamado com *BCommit* definido como **true**.
 
@@ -49,7 +49,7 @@ O nome de um recurso já existente no banco de dados.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
@@ -59,7 +59,7 @@ Os erros podem ser recuperados por meio da propriedade [**Errors**](merge-errors
 
 ### <a name="c"></a>C++
 
-Consulte [**conectar**](/windows/win32/api/mergemod/nf-mergemod-imsmmerge-connect) função.
+consulte [**Conexão**](/windows/win32/api/mergemod/nf-mergemod-imsmmerge-connect) função.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,7 +68,7 @@ Consulte [**conectar**](/windows/win32/api/mergemod/nf-mergemod-imsmmerge-connec
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
 | Versão<br/> | Mergemod.dll 1,0 ou posterior<br/>                                                    |
-| parâmetro<br/>  | <dl> <dt>Mergemod. h</dt> </dl>   |
+| Cabeçalho<br/>  | <dl> <dt>Mergemod. h</dt> </dl>   |
 | DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

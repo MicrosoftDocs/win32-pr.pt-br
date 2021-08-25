@@ -4,12 +4,12 @@ ms.assetid: bfc068e1-eced-4ab2-80a3-acc2ed07c841
 title: Localizando símbolos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f65830032cf363771b14f779726c59d976e8d30
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a90aae9d2894ca8abc7470b2068b508655a50bcb76e1a122f2307f81273abec2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104088838"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119912689"
 ---
 # <a name="finding-symbols"></a>Localizando símbolos
 

@@ -4,12 +4,12 @@ ms.assetid: ef8982dc-bbbc-466a-9afe-dd0425c23f1d
 title: Dados codificados e decodificados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c8b130232ac67503c6a20835c4c9b4e728b36f8b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 063f18a4f58f2989e2bd0b890fd11a7ab6022a3de255385b1cf529afb5493485
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920817"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119874937"
 ---
 # <a name="encoded-and-decoded-data"></a>Dados codificados e decodificados
 
@@ -23,7 +23,7 @@ Um princípio de design de software aceito é usar *abstração*, ou seja, o pro
 
 A maioria dos [*protocolos de comunicação*](../secgloss/c-gly.md) envolve uma boa dose de abstração. Os objetos em camadas mais altas são definidos de abstração e devem ser implementados usando objetos em camadas inferiores. Por exemplo, um serviço em uma camada pode exigir a transferência de determinados objetos abstratos entre computadores. Uma camada de nível inferior pode usar regras de codificação para transformar os objetos abstratos em cadeias de caracteres e zeros.
 
-Um método comum de especificar objetos abstratos destinados a serem transmitidos em série [*é chamado de*](../secgloss/a-gly.md) ASN. 1). O ASN. 1 é definido na recomendação de CCITT [*X. 208*](../secgloss/x-gly.md). Um conjunto de regras de ASN. 1 para representar esses objetos como cadeias de caracteres e zeros é chamado de [*Distinguished Encoding Rules*](../secgloss/d-gly.md) (der) e é definido na recomendação de CCITT [*X. 509*](../secgloss/x-gly.md), seção 8,7. Esses são os métodos de codificação usados atualmente pelo CryptoAPI.
+Um método comum de especificar objetos abstratos destinados a serem transmitidos em série [*é chamado de*](../secgloss/a-gly.md) ASN. 1). O ASN. 1 é definido na recomendação de CCITT [*X. 208*](../secgloss/x-gly.md). um conjunto de regras de ASN. 1 para representar esses objetos como cadeias de caracteres e zeros é chamado de [*Distinguished Encoding Rules*](../secgloss/d-gly.md) (DER) e é definido na recomendação de CCITT [*X. 509*](../secgloss/x-gly.md), seção 8,7. Esses são os métodos de codificação usados atualmente pelo CryptoAPI.
 
 Para obter mais informações sobre as funções de codificação/decodificação, consulte [codificando objetos e funções de decodificação](cryptography-functions.md).
 

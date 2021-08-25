@@ -1,108 +1,108 @@
 ---
 title: Camadas ALE
-description: A ALE (aplicação de camada de aplicativo) consiste em várias camadas de filtragem e muitas camadas de descarte correspondentes.
+description: A ALE (Imposição de Camada de Aplicativo) consiste em várias camadas de filtragem e muitas camadas de descarte correspondentes.
 ms.assetid: 3ac71787-2350-4a60-b0bf-b00b52d30b83
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a96e3b2ae5092bf8cca014eb3603eea5efe8f71
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: f2c9d13c7b5493171caa7216e8f2991e0350b79dd46dca612f241c9446cafa39
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104293922"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119901006"
 ---
 # <a name="ale-layers"></a>Camadas ALE
 
-A ALE (aplicação da camada de aplicativo) consiste em várias camadas de filtragem e muitas camadas de descarte correspondentes. Todas as camadas do mecanismo de filtragem da WFP (plataforma de filtragem do Windows), incluindo a EPA, são descritas em [**identificadores de camada**](management-filtering-layer-identifiers-.md)de filtragem. Este tópico contém uma descrição mais detalhada das camadas de filtragem que fazem parte da EPA.
+A ALE (Imposição de Camada de Aplicativo) consiste em várias camadas de filtragem e muitas camadas de descarte correspondentes. Todas as camadas do mecanismo de filtragem Windows WFP (Plataforma de Filtragem de Dados), incluindo a ALE, são descritas em Identificadores de Camada [**de Filtragem**](management-filtering-layer-identifiers-.md). Este tópico contém uma descrição mais detalhada das camadas de filtragem que fazem parte do ALE.
 
-## <a name="resource_assignment"></a>atribuição de recursos \_
+## <a name="resource_assignment"></a>ATRIBUIÇÃO DE \_ RECURSOS
 
-Um filtro na camada [**de \_ atribuição de recurso Ale da camada FWPM \_ \_ \_ \_ V {4 \| 6}**](management-filtering-layer-identifiers-.md) é correspondido para operações de ligação de rede, explícita ou implícita.
+Um filtro na camada [**FWPM \_ LAYER \_ ALE \_ RESOURCE ASSIGNMENT \_ \_ \| V{4 6}**](management-filtering-layer-identifiers-.md) é corresponder a operações de vinculação de rede, explícitas ou implícitas.
 
-Se um filtro nessa camada for correspondido para autorizar a criação de soquetes brutos, o sinalizador de condição fwp será definido como sinalizador de [**\_ ponto de \_ \_ \_ \_ extremidade bruto**](filtering-condition-flags-.md) .
+Se um filtro nessa camada for corresponder para autorizar a criação de soquete bruto, o sinalizador [**FWP \_ CONDITION IS RAW \_ \_ \_ \_ ENDPOINT**](filtering-condition-flags-.md) será definido.
 
-Se um filtro nessa camada for correspondido para autorizar o recebimento do modo promíscuo, o campo de [**\_ \_ \_ \_ modo promíscuo de Ale da condição fwp**](filtering-condition-identifiers-.md) será definido como sio \_ RCVALL. Para obter uma descrição de SIO \_ RCVALL, consulte [**WSAIoctl**](/windows/desktop/api/winsock2/nf-winsock2-wsaioctl).
-
-> [!Note]  
-> Essa é a única camada em que o modo promíscuo pode ser filtrado.
-
- 
-
-Se nenhuma porta for especificada durante a **ligação ()**, ou seja, a porta for definida como 0 (zero), a pilha TCP/IP selecionará uma porta do intervalo de portas dinâmicas (19152 – 65535). A porta selecionada será classificada nesta camada junto com o [**sinalizador de condição fwp é um sinalizador de \_ \_ \_ \_ \_ ligação curinga**](filtering-condition-flags-.md) .
-
-Se o endereço local não for especificado na chamada [**BIND ()**](/windows/desktop/api/winsock/nf-winsock-bind) , o campo endereço local será definido como [**fwp \_ vazio**](/windows/desktop/api/Fwptypes/ne-fwptypes-fwp_data_type).
-
-## <a name="auth_listen"></a>Escuta de autenticação \_
-
-Um filtro na camada [**\_ \_ \_ \_ \_ V {4 \| 6} da autenticação Ale da camada FWPM**](management-filtering-layer-identifiers-.md) é correspondido para chamadas TCP [**() de escuta**](/windows/desktop/api/winsock2/nf-winsock2-listen) .
-
-## <a name="auth_recv_accept"></a>\_aceitação de recv de autenticação \_
-
-Um filtro na camada de [**FWPM de \_ autenticação Ale de camada de \_ \_ \_ recepção \_ \_ V {4 \| 6}**](management-filtering-layer-identifiers-.md) é correspondido para chamadas de [**aceitação TCP ()**](/windows/desktop/api/winsock2/nf-winsock2-accept) , para os primeiros pacotes UDP (unicast) de uma tupla de endereço/porta remoto exclusiva e para as primeiras mensagens ICMP de não erro de entrada (unicast) com um tipo de ICMP, código e ID exclusivos.
+Se um filtro nessa camada for corresponder para autorizar o recebimento do modo promiscuo, o campo [**FWP \_ CONDITION \_ ALE \_ PROMISCUOUS \_ MODE**](filtering-condition-identifiers-.md) será definido como SIO \_ RC LTDA. Para ver uma descrição de SIO \_ RC LTDA, [**consulte WSAIoctl**](/windows/desktop/api/winsock2/nf-winsock2-wsaioctl).
 
 > [!Note]  
-> Protocolos que não são TCP ou ICMP são tratados como UDP.
+> Essa é a única camada em que o modo promiscuo pode ser filtrado.
 
- 
+ 
 
-Os pacotes TCP recebidos por soquetes brutos são tratados de forma semelhante ao tráfego UDP. Ou seja, somente o primeiro TCP [**Send ()**](/windows/desktop/api/winsock2/nf-winsock2-send) e o primeiro TCP [**recv ()**](/windows/desktop/api/winsock/nf-winsock-recv) sobre soquetes brutos serão filtrados.
+Se nenhuma porta for especificada durante **bind(),** ou seja, a porta for definida como 0 (zero), a pilha TCP/IP selecionará uma porta do intervalo de portas dinâmico (19152–65535). A porta selecionada será classificada nessa camada junto com o sinalizador [**FWP \_ CONDITION \_ IS \_ \_ WILDCARD \_ BIND.**](filtering-condition-flags-.md)
 
-## <a name="auth_connect"></a>conexão de autenticação \_
+Se o endereço local não for especificado na chamada [**bind(),**](/windows/desktop/api/winsock/nf-winsock-bind) o campo de endereço local será definido como [**FWP \_ EMPTY.**](/windows/desktop/api/Fwptypes/ne-fwptypes-fwp_data_type)
 
-Um filtro na camada [**\_ \_ \_ \_ \_ V {4 \| 6} da autenticação Ale da camada FWPM**](management-filtering-layer-identifiers-.md) é correspondido para chamadas de [**conexão TCP ()**](/windows/desktop/api/winsock2/nf-winsock2-connect) , para os primeiros pacotes UDP enviados a uma tupla de porta e um endereço remoto exclusivo, e para as primeiras mensagens ICMP de não erro de saída com um tipo ICMP, código e ID exclusivos.
+## <a name="auth_listen"></a>AUTH \_ LISTEN
+
+Um filtro na camada [**FWPM \_ LAYER \_ \_ ALE AUTH \_ LISTEN \_ V{4 \| 6}**](management-filtering-layer-identifiers-.md) é corresponder a chamadas TCP [**listen().**](/windows/desktop/api/winsock2/nf-winsock2-listen)
+
+## <a name="auth_recv_accept"></a>ACEITAR \_ RECV DE AUTH \_
+
+Um filtro na camada RECV ACCEPT [**V{4 6} do FWPM \_ LAYER \_ \_ ALE AUTH \_ ACEITA \_ \_ \| V{4 6}**](management-filtering-layer-identifiers-.md) é corresponder a chamadas TCP [**accept(),**](/windows/desktop/api/winsock2/nf-winsock2-accept) para os primeiros pacotes UDP (unicast) de um endereço remoto/tupla de porta exclusivo e para as primeiras mensagens ICMP sem erro de entrada (unicast) com um tipo, código e ID icMP exclusivos.
 
 > [!Note]  
 > Protocolos que não são TCP ou ICMP são tratados como UDP.
 
- 
+ 
 
-Os pacotes TCP enviados por soquetes brutos são tratados de forma semelhante ao tráfego UDP. Ou seja, somente o primeiro TCP [**Send ()**](/windows/desktop/api/winsock2/nf-winsock2-send) e o primeiro TCP [**recv ()**](/windows/desktop/api/winsock/nf-winsock-recv) sobre soquetes brutos serão filtrados.
+Os pacotes TCP recebidos por soquetes brutos são tratados da mesma forma que o tráfego UDP. Ou seja, somente o primeiro TCP [**send()**](/windows/desktop/api/winsock2/nf-winsock2-send) e o primeiro TCP [**recv()**](/windows/desktop/api/winsock/nf-winsock-recv) em soquetes brutos serão filtrados.
 
-## <a name="flow_established"></a>FLUXO \_ estabelecido
+## <a name="auth_connect"></a>AUTH \_ CONNECT
 
-Um filtro no [**\_ fluxo Ale da camada de FWPM \_ estabeleceu uma camada \_ \_ \_ V {4 \| 6}**](management-filtering-layer-identifiers-.md) correspondente depois que um handshake de três vias TCP for concluído com êxito. Para o tráfego não TCP, o filtro é correspondido imediatamente após os filtros das camadas de **\_ \_ aceitação de recv de autenticação** ou de **\_ conexão de autenticação** serem correspondidos.
+Um filtro na camada [**FWPM \_ LAYER \_ \_ ALE AUTH \_ CONNECT \_ V{4 \| 6}**](management-filtering-layer-identifiers-.md) é corresponder a chamadas TCP [**connect(),**](/windows/desktop/api/winsock2/nf-winsock2-connect) para os primeiros pacotes UDP enviados para um endereço remoto exclusivo e uma tupla de porta e para as primeiras mensagens ICMP sem erro de saída com um tipo, código e ID icMP exclusivos.
 
-Um filtro nesta camada não deve retornar o bloco ou a permissão.
+> [!Note]  
+> Protocolos que não são TCP ou ICMP são tratados como UDP.
 
-Essa camada é usada por drivers de texto explicativo para acompanhar o estado de conexão, descrito em detalhes na documentação do [Kit de driver do Windows](/windows-hardware/drivers/network/windows-filtering-platform-callout-drivers2) .
+ 
 
-## <a name="resource_release"></a>versão do recurso \_
+Os pacotes TCP enviados por soquetes brutos são tratados da mesma forma que o tráfego UDP. Ou seja, somente o primeiro TCP [**send()**](/windows/desktop/api/winsock2/nf-winsock2-send) e o primeiro TCP [**recv()**](/windows/desktop/api/winsock/nf-winsock-recv) em soquetes brutos serão filtrados.
 
-Um filtro na camada [**do \_ recurso Ale da camada FWPM da \_ \_ \_ versão \_ V {4 \| 6}**](management-filtering-layer-identifiers-.md) é correspondido depois que os recursos alocados por meio da **\_ atribuição de recursos** foram liberados.
+## <a name="flow_established"></a>FLOW \_ ESTABLISHED
 
-## <a name="endpoint_closure"></a>encerramento do ponto de extremidade \_
+Um filtro na camada [**FWPM \_ LAYER \_ ALE \_ FLOW ESTABLISHED \_ \_ \| V{4 6}**](management-filtering-layer-identifiers-.md) é corresponder após a conclusão bem-sucedida de um handshake TCP de três vias. Para o tráfego não TCP, o filtro é corresponder imediatamente depois que os filtros das camadas **AUTH \_ RECV \_ ACCEPT** ou **AUTH \_ CONNECT** são corresponderem.
 
-Um filtro na camada de [**fechamento de ponto de extremidade da camada FWPM do \_ \_ \_ \_ encerramento \_ V {4 \| 6}**](management-filtering-layer-identifiers-.md) é correspondido quando um fluxo TCP conectado ou um ponto de extremidade de soquetes UDP é fechado.
+Um filtro nessa camada não deve retornar Bloquear ou Permitir.
 
-## <a name="connect_redirect"></a>redirecionamento de conexão \_
+Essa camada é usada por drivers de texto explicação para controlar o estado da conexão, descrita em detalhes na [documentação Windows Driver Kit.](/windows-hardware/drivers/network/windows-filtering-platform-callout-drivers2)
 
-Um filtro na camada [**\_ \_ \_ \_ redirecionamento Ale Connect \_ V {4 \| 6} da camada FWPM**](management-filtering-layer-identifiers-.md) permite a modificação de endereços e portas remotos. A conexão de saída será redirecionada pela duração dessa conexão.
+## <a name="resource_release"></a>VERSÃO DO \_ RECURSO
 
-## <a name="bind_redirect"></a>redirecionamento de associação \_
+Um filtro na camada [**FWPM \_ LAYER \_ ALE \_ RESOURCE RELEASE \_ \_ V{4 \| 6}**](management-filtering-layer-identifiers-.md) **é \_** corresponder depois que os recursos alocados por meio da ATRIBUIÇÃO DE RECURSOS foram liberados.
 
-Um filtro na camada [**\_ \_ \_ \_ redirecionamento Ale BIND \_ V {4 \| 6} da camada FWPM**](management-filtering-layer-identifiers-.md) permite a modificação do endereço local e das portas do soquete subjacente. O soquete local será redirecionado durante o tempo de vida do soquete
+## <a name="endpoint_closure"></a>FECHAMENTO DO \_ PONTO DE EXTREMIDADE
 
-## <a name="ale-discard-layers"></a>Camadas de descarte ALE
+Um filtro na camada [**FWPM \_ LAYER \_ ALE \_ ENDPOINT \_ CLOSURE \_ \| V{4 6}**](management-filtering-layer-identifiers-.md) é corresponder quando um fluxo TCP conectado ou o ponto de extremidade de soquetes UDP é fechado.
 
-Para cada uma das camadas ALE descritas acima, o mecanismo de filtragem contém uma camada de descarte correspondente. As camadas de descarte ALE são usadas por textos explicativos para fins de log. Os pacotes e as indicações que foram descartadas em uma das camadas de filtragem ALE são indicados para a camada de descarte ALE correspondente.
+## <a name="connect_redirect"></a>REDIRECIONAMENTO \_ DE CONEXÃO
+
+Um filtro na camada [**FWPM \_ LAYER \_ ALE \_ CONNECT REDIRECT \_ \_ V{4 \| 6}**](management-filtering-layer-identifiers-.md) permite a modificação de portas e endereços remotos. A conexão de saída será redirecionada durante essa conexão.
+
+## <a name="bind_redirect"></a>REDIRECIONAMENTO \_ DE VINCULAÇÃO
+
+Um filtro na camada [**FWPM \_ LAYER \_ ALE \_ BIND REDIRECT \_ \_ V{4 \| 6}**](management-filtering-layer-identifiers-.md) permite a modificação do endereço local e das portas do soquete subjacente. O soquete local será redirecionado durante o tempo de vida do soquete
+
+## <a name="ale-discard-layers"></a>Camadas ALE DISCARD
+
+Para cada uma das camadas ALE descritas acima, o mecanismo de filtragem contém uma camada de descarte correspondente. As camadas de descarte ALE são usadas por callouts para fins de registro em log. Pacotes e indicações que foram descartados em uma das camadas de filtragem ALE são indicados para a camada de descarte ALE correspondente.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Aplicação da camada de aplicativo (EPA)](application-layer-enforcement--ale-.md)
+[Imposição de camada de aplicativo (ALE)](application-layer-enforcement--ale-.md)
 </dt> <dt>
 
-[Filtragem de estado de ALE](ale-stateful-filtering.md)
+[Filtragem com estado ALE](ale-stateful-filtering.md)
 </dt> <dt>
 
-[Tráfego de difusão/multicast ALE](ale-multicast-broadcast-traffic.md)
+[Tráfego multicast/difusão ALE](ale-multicast-broadcast-traffic.md)
 </dt> <dt>
 
 [Reautorização de ALE](ale-re-authorization.md)
 </dt> <dt>
 
-[Personalização de fluxo ALE](ale-flow-customization.md)
+[Personalização de Flow ALE](ale-flow-customization.md)
 </dt> <dt>
 
 [Fluxos de pacotes TCP](tcp-packet-flows.md)
@@ -111,7 +111,7 @@ Para cada uma das camadas ALE descritas acima, o mecanismo de filtragem contém 
 [Fluxos de pacotes UDP](udp-packet-flows.md)
 </dt> <dt>
 
-[Funções do Winsock](/windows/desktop/WinSock/winsock-functions)
+[Funções Winsock](/windows/desktop/WinSock/winsock-functions)
 </dt> <dt>
 
 [**Filtrando sinalizadores de condição**](filtering-condition-flags-.md)
@@ -120,6 +120,6 @@ Para cada uma das camadas ALE descritas acima, o mecanismo de filtragem contém 
 [**Condições de filtragem disponíveis em cada camada de filtragem**](filtering-conditions-available-at-each-filtering-layer.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

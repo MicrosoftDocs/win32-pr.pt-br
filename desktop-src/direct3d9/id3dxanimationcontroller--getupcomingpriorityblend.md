@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 72f9b8854041094d43d9e8250ab61b5f59a67848
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 4c58bf5e2a8736db98e0461988f984709e756d269d09c74dd673356676702ff9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104370918"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119849076"
 ---
 # <a name="id3dxanimationcontrollergetupcomingpriorityblend-method"></a>Método ID3DXAnimationController:: GetUpcomingPriorityBlend
 
@@ -49,7 +49,7 @@ Identificador de evento para um evento especificado após o qual procurar um eve
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXEVENTHANDLE**](id3dxanimationcontroller.md)**
 

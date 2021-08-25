@@ -4,12 +4,12 @@ ms.assetid: 7b28f70b-2d97-4cc2-8064-dfb806f9cffa
 title: Funções DbgHelp
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: db65e46fe407b26b1a6ec9ae3cb8d5d7301d5821
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 8afacd44409004034ed727920c98487a0e2e34ad03e7af4ef5a2e5e13ab5303c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501055"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119912766"
 ---
 # <a name="dbghelp-functions"></a>Funções DbgHelp
 
@@ -17,7 +17,7 @@ A seguir estão as funções DbgHelp.
 
 ## <a name="general"></a>Geral
 
-Veja a seguir as funções auxiliares gerais:
+A seguir estão as funções auxiliares gerais:
 
 <dl>
 
@@ -30,7 +30,7 @@ Veja a seguir as funções auxiliares gerais:
 
 ## <a name="debugger"></a>Depurador
 
-As funções de serviço de depuração são as funções mais adequadas para uso por um depurador ou pelo código de depuração em um aplicativo. Essas funções podem ser usadas em conjunto com as funções de manipulador de símbolo para facilitar o uso.
+As funções de serviço de depuração são as funções mais adequadas para uso por um depurador ou o código de depuração em um aplicativo. Essas funções podem ser usadas em conjunto com as funções do manipulador de símbolos para facilitar o uso.
 
 <dl>
 
@@ -59,9 +59,9 @@ As funções de acesso à imagem acessam os dados em uma imagem executável. As 
 [**ImageRvaToVa**](/windows/desktop/api/Dbghelp/nf-dbghelp-imagervatova)  
 </dl>
 
-## <a name="symbol-handler"></a>Manipulador de símbolo
+## <a name="symbol-handler"></a>Manipulador de símbolos
 
-As funções de [manipulador de símbolo](symbol-handling.md) fornecem aos aplicativos acesso fácil e portátil às informações de depuração simbólicas de uma imagem. Essas funções devem ser usadas exclusivamente para garantir o acesso a informações simbólicas. Isso é necessário porque essas funções isolam o aplicativo do formato de símbolo.
+As [funções do manipulador](symbol-handling.md) de símbolos dão aos aplicativos acesso fácil e portátil às informações de depuração simbólicas de uma imagem. Essas funções devem ser usadas exclusivamente para garantir o acesso a informações simbólicas. Isso é necessário porque essas funções isolam o aplicativo do formato de símbolo.
 
 <dl>
 
@@ -125,7 +125,7 @@ As funções de [manipulador de símbolo](symbol-handling.md) fornecem aos aplic
 
 ## <a name="symbol-server"></a>Servidor de símbolos
 
-O [servidor de símbolos](symbol-servers-and-symbol-stores.md) permite que os depuradores recuperem automaticamente os arquivos de símbolo corretos sem nomes de produtos, versões ou números de Build. As funções a seguir são usadas com o servidor de símbolos.
+O [servidor de símbolos](symbol-servers-and-symbol-stores.md) permite que os depurador recuperem automaticamente os arquivos de símbolo corretos sem nomes de produtos, versões ou números de build. As funções a seguir são usadas com o servidor de símbolos.
 
 <dl>
 

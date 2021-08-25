@@ -1,19 +1,19 @@
 ---
-title: Gravando fluxos em um arquivo
-description: Gravando fluxos em um arquivo
+title: gravando Fluxos em um arquivo
+description: gravando Fluxos em um arquivo
 ms.assetid: a3766f8c-aaa6-4fc5-a306-54aee71018f1
 keywords:
 - Função AVIFileCreateStream
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 370df08534bbdde870f6d28c828d47935abd80db
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: baaedd4103d2141ecaccde78462b2290cf5d5d37813b224c20101eacbe580d70
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103640660"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119891756"
 ---
-# <a name="writing-streams-to-a-file"></a>Gravando fluxos em um arquivo
+# <a name="writing-streams-to-a-file"></a>gravando Fluxos em um arquivo
 
 Você também pode criar um arquivo que contém fluxos de dados gravando um novo fluxo de dados em um arquivo.
 
@@ -34,6 +34,6 @@ Você pode fechar o fluxo depois de concluir a gravação no novo fluxo usando a
 [Operações de fluxo](stream-operations.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

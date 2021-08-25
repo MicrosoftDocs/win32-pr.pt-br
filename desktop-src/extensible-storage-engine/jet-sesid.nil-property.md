@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: JET_SESID. Propriedade nil'
-title: JET_SESID. Propriedade nil
+description: 'Saiba mais sobre: JET_SESID. Propriedade Nil'
+title: JET_SESID. Propriedade Nil
 TOCTitle: 'Nil property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_SESID.Nil
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_sesid.nil(v=EXCHG.10)
@@ -25,19 +25,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b381e902e88ec9a065c83e0f89a87a8e8ab46c4f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 50b6b81aeaab2edc24a4277ec4818b48988760005d04ba7007035d6a2947dd73
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920780"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119945286"
 ---
-# <a name="jet_sesidnil-property"></a>JET_SESID. Propriedade nil
+# <a name="jet_sesidnil-property"></a>JET_SESID. Propriedade Nil
 
-Obtém um JET_SESID nulo.
+Obtém um valor nulo JET_SESID.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -57,14 +57,14 @@ public static JET_SESID Nil { get; }
 
 #### <a name="property-value"></a>Valor da propriedade
 
-Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Estrutura de JET_SESID](./jet-sesid-structure.md)
+[JET_SESID estrutura](./jet-sesid-structure.md)
 
-[Membros do JET_SESID](./jet-sesid-members.md)
+[JET_SESID membros](./jet-sesid-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
