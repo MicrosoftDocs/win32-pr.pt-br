@@ -1,8 +1,8 @@
 ---
-description: Método GetSecurityDescriptor da classe Win32_Service (provedores WMI CIMWin32) – retorna o descritor de segurança que controla o acesso ao serviço.
+description: Método GetSecurityDescriptor da classe Win32_Service (Provedores WMI CIMWin32) – retorna o descritor de segurança que controla o acesso ao serviço.
 ms.assetid: 99c8346e-e8d6-4f3c-bbdc-437dcf852b2a
 ms.tgt_platform: multiple
-title: Método GetSecurityDescriptor da classe Win32_Service (provedores WMI CIMWin32)
+title: Método GetSecurityDescriptor da classe Win32_Service (Provedores WMI CIMWin32)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 44c19f22cf57a811a7caebfbcc9bf4202c8d2ad7
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e3d48974ecfae4cd932ed58718dded4b54b382317d269fea30ac450d8b05ef75
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108096984"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119878776"
 ---
-# <a name="getsecuritydescriptor-method-of-the-win32_service-class-cimwin32-wmi-providers"></a>Método GetSecurityDescriptor da classe Win32_Service (provedores WMI CIMWin32)
+# <a name="getsecuritydescriptor-method-of-the-win32_service-class-cimwin32-wmi-providers"></a>Método GetSecurityDescriptor da classe Win32_Service (Provedores WMI CIMWin32)
 
-O método **GetSecurityDescriptor** retorna o descritor de segurança que controla o acesso ao serviço. O descritor é retornado como uma instância do [**Win32 \_ SecurityDescriptor**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor).
+O **método GetSecurityDescriptor** retorna o descritor de segurança que controla o acesso ao serviço. O descritor é retornado como uma instância de [**\_ SecurityDescriptor do Win32.**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,7 +40,7 @@ uint32 GetSecurityDescriptor(
 
 <dl> <dt>
 
-*Descritor* \[ fora\]
+*Descritor* \[ out\]
 </dt> <dd>
 
 O descritor de segurança associado ao serviço.
@@ -49,7 +49,7 @@ O descritor de segurança associado ao serviço.
 
 ## <a name="return-value"></a>Valor retornado
 
-Retorna um dos valores listados na lista a seguir ou um valor diferente para indicar um erro. Para obter códigos de erro adicionais, consulte [**constantes de erro WMI**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obter valores gerais de **HRESULT** , consulte [códigos de erro do sistema](/windows/desktop/Debug/system-error-codes).
+Retorna um dos valores listados na lista a seguir ou um valor diferente para indicar um erro. Para obter códigos de erro adicionais, [**consulte Constantes de erro WMI**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para valores **gerais de HRESULT,** consulte [Códigos de erro do sistema.](/windows/desktop/Debug/system-error-codes)
 
 <dl> <dt>
 
@@ -103,7 +103,7 @@ O código de controle pedido não é válido ou é inaceitável para o serviço.
 
 5
 
-O código de controle solicitado não pode ser enviado ao serviço porque o estado do serviço ([**Win32 \_ BaseService**](win32-baseservice.md).**** A propriedade State) é igual a 0, 1 ou 2.
+O código de controle solicitado não pode ser enviado para o serviço porque o estado do serviço ([**Win32 \_ BaseService**](win32-baseservice.md).**A** propriedade State) é igual a 0, 1 ou 2.
 
 </dd> <dt>
 
@@ -139,7 +139,7 @@ Falha desconhecida ao iniciar o serviço.
 
 9
 
-O caminho do diretório para o arquivo executável do serviço não foi encontrado.
+O caminho do diretório para o arquivo executável de serviço não foi encontrado.
 
 </dd> <dt>
 
@@ -166,7 +166,7 @@ O banco de dados para adicionar um serviço novo está bloqueado.
 
 12
 
-Uma dependência da qual esse serviço depende foi removida do sistema.
+Uma dependência de que esse serviço depende foi removida do sistema.
 
 </dd> <dt>
 
@@ -202,7 +202,7 @@ O serviço não tem a autenticação correta para ser executado no sistema.
 
 16
 
-Este serviço está sendo removido do sistema.
+Esse serviço está sendo removido do sistema.
 
 </dd> <dt>
 
@@ -220,7 +220,7 @@ O serviço não tem nenhum thread de execução.
 
 18
 
-O serviço tem dependências circulares quando é iniciado.
+O serviço tem dependências circulares quando ele é iniciado.
 
 </dd> <dt>
 
@@ -229,7 +229,7 @@ O serviço tem dependências circulares quando é iniciado.
 
 19
 
-Um serviço está sendo executado com o mesmo nome.
+Um serviço está em execução com o mesmo nome.
 
 </dd> <dt>
 
@@ -256,7 +256,7 @@ Parâmetros inválidos foram passados para o serviço.
 
 22
 
-A conta sob a qual este serviço é executado é inválida ou não tem as permissões para executar o serviço.
+A conta na qual esse serviço é executado é inválida ou não tem as permissões para executar o serviço.
 
 </dd> <dt>
 
@@ -278,7 +278,7 @@ O serviço está pausado atualmente no sistema.
 
 </dd> <dt>
 
-**Outros**
+**Outras**
 </dt> <dd>
 
 22 4294967295
@@ -287,13 +287,13 @@ O serviço está pausado atualmente no sistema.
 
 ## <a name="remarks"></a>Comentários
 
-A instância do [**Win32 \_ SecurityDescriptor**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) representa um tipo de dados de [**\_ \_ controle do descritor de segurança**](/windows/desktop/SecAuthZ/security-descriptor-control) e contém uma DACL ( [*lista de controle de acesso discricionário*](/windows/desktop/SecGloss/d-gly) ) e uma SACL ( [*lista de controle de acesso*](/windows/desktop/SecGloss/s-gly) ) do sistema. Para obter mais informações, consulte [listas de controle de acesso](/windows/desktop/SecAuthZ/access-control-lists).
+A [**instância \_ securityDescriptor do Win32**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) representa um tipo de dados [**SECURITY \_ DESCRIPTOR \_ CONTROL**](/windows/desktop/SecAuthZ/security-descriptor-control) e contém uma DACL [*(lista*](/windows/desktop/SecGloss/d-gly) de controle de acesso discricionário) e uma SACL [*(lista*](/windows/desktop/SecGloss/s-gly) de controle de acesso do sistema). Para obter mais informações, consulte [Listas de controle de acesso](/windows/desktop/SecAuthZ/access-control-lists).
 
-Se **SeSecurityPrivilege** não for concedido ou habilitado ao obter um descritor de segurança, somente a DACL será retornada no descritor de segurança retornado. Para obter mais informações, consulte [**constantes de privilégio**](/windows/desktop/WmiSdk/privilege-constants) e [executando operações privilegiadas](/windows/desktop/WmiSdk/executing-privileged-operations).
+Se **o SeSecurityPrivilege** não for concedido ou habilitado ao obter um descritor de segurança, somente a DACL será retornada no descritor de segurança retornado. Para obter mais informações, consulte [**Constantes de privilégio**](/windows/desktop/WmiSdk/privilege-constants) [e Executando operações privilegiadas](/windows/desktop/WmiSdk/executing-privileged-operations).
 
 ## <a name="examples"></a>Exemplos
 
-Ao recuperar um descritor de segurança no VBScript, certifique-se de "segurança" e execute como administrador, conforme mostrado no trecho de código a seguir. Caso contrário, seu código pode gerar um erro de permissões.
+Ao recuperar um descritor de segurança no VBScript, certifique-se de "Segurança" e execute como Administrador, conforme mostrado no snippet de código a seguir. Caso contrário, seu código poderá lançar um erro de permissões.
 
 
 ```VB
@@ -303,7 +303,7 @@ Set objWMIService = GetObject("winmgmts:" _
 
 
 
-Da mesma forma, em VB.NET, certifique-se de definir "EnablePrivileges = true" e executar o aplicativo como administrador.
+Da mesma forma, VB.NET, certifique-se de definir "EnablePrivileges = True" e executar o Aplicativo como Administrador.
 
 
 ```VB
@@ -321,26 +321,26 @@ Scope.Options.EnablePrivileges = True
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[**\_Serviço Win32**](win32-service.md)
+[**Serviço \_ Win32**](win32-service.md)
 </dt> <dt>
 
 [**Constantes de privilégio**](/windows/desktop/WmiSdk/privilege-constants)
 </dt> <dt>
 
-[Objetos do descritor de segurança do WMI](/windows/desktop/WmiSdk/wmi-security-descriptor-objects)
+[Objetos do descritor de segurança WMI](/windows/desktop/WmiSdk/wmi-security-descriptor-objects)
 </dt> <dt>
 
-[Alterando a segurança de acesso em objetos protegíveis](/windows/desktop/WmiSdk/changing-access-security-on-securable-objects)
+[Alterando a segurança de acesso em objetos securáveis](/windows/desktop/WmiSdk/changing-access-security-on-securable-objects)
 </dt> <dt>
 
 [Controle de conta de usuário e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi)

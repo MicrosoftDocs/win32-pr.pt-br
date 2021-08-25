@@ -1,5 +1,5 @@
 ---
-title: Controles deslizantes (multimídia do Windows)
+title: controles deslizantes (Windows multimídia)
 description: Controles deslizantes
 ms.assetid: cfd82672-5b22-4b59-82b5-15ca68a451fc
 keywords:
@@ -13,14 +13,14 @@ keywords:
 - Controle de Pan QSound
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d1d7644255e2fa9ee6384cbb5102df81c2a1eb0
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 6e902e3ead0416cb4b2a7d56d289f91779563109cb9494784635affc75069dfe
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104369102"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119805346"
 ---
-# <a name="sliders-windows-multimedia"></a>Controles deslizantes (multimídia do Windows)
+# <a name="sliders-windows-multimedia"></a>controles deslizantes (Windows multimídia)
 
 Os controles deslizantes geralmente são controles horizontais que podem ser ajustados para a esquerda ou para a direita. Esses controles usam a [**estrutura \_ assinada MIXERCONTROLDETAILS**](/previous-versions//dd757297(v=vs.85)) para recuperar e definir propriedades de controle. A tabela a seguir descreve os tipos de controles deslizantes.
 

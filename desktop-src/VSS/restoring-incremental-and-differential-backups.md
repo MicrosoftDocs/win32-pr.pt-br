@@ -4,12 +4,12 @@ ms.assetid: 67143f6f-0bb8-4740-9289-8bbfeb7caadf
 title: Restaurando backups incrementais e diferenciais
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 639919ea24f12fbc036116bd89b1630321cbae54
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fcc0c2df57e2f7c0f21436248ddaa46231c7bf6440c76a38f4d1c92ab2adf97f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104505744"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119864046"
 ---
 # <a name="restoring-incremental-and-differential-backups"></a>Restaurando backups incrementais e diferenciais
 

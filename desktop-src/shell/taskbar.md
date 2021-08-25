@@ -1,22 +1,22 @@
 ---
-description: A interface do Windows inclui uma barra de ferramentas de área de trabalho de aplicativo especial chamada barra de tarefas. Você pode usar a barra de tarefas do para essa tarefa, como alternar entre janelas abertas e iniciar novos aplicativos.
+description: A Windows interface inclui uma barra de ferramentas especial da área de trabalho do aplicativo chamada barra de tarefas. Você pode usar a barra de tarefas para tarefas como alternar entre janelas abertas e iniciar novos aplicativos.
 ms.assetid: 14d520e7-7c15-441d-9662-24b972d208ac
-title: A barra de tarefas
+title: A Barra de Tarefas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cce37991c6265f02ab92ece62dbae341031d272a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f8a4943c242b0b3f0993a4cf542c8625e19cf25c32b71cb01e4ef8581d12d64c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104989055"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119773716"
 ---
-# <a name="the-taskbar"></a>A barra de tarefas
+# <a name="the-taskbar"></a>A Barra de Tarefas
 
-A interface do Windows inclui uma [barra de ferramentas de área de trabalho de aplicativo](application-desktop-toolbars.md) especial chamada barra de *tarefas*. Você pode usar a barra de tarefas do para essa tarefa, como alternar entre janelas abertas e iniciar novos aplicativos.
+A Windows interface inclui uma barra de ferramentas especial da área de trabalho [do](application-desktop-toolbars.md) aplicativo chamada barra *de tarefas*. Você pode usar a barra de tarefas para tarefas como alternar entre janelas abertas e iniciar novos aplicativos.
 
 > [!Note]  
-> Para obter informações sobre as alterações feitas na barra de tarefas a partir do Windows 7, consulte [extensões da barra de tarefas](taskbar-extensions.md).
+> Para obter informações sobre as alterações feitas na barra de tarefas a partir Windows 7, consulte [Extensões da barra de tarefas](taskbar-extensions.md).
 
  
 
@@ -24,7 +24,7 @@ Este tópico inclui as seções a seguir.
 
 -   [Sobre a barra de tarefas](#about-the-taskbar)
     -   [Opções de exibição da barra de tarefas](#taskbar-display-options)
-    -   [Adicionando atalhos ao menu iniciar](#adding-shortcuts-to-the-start-menu)
+    -   [Adicionando atalhos ao menu Iniciar](#adding-shortcuts-to-the-start-menu)
     -   [Gerenciando botões da barra de tarefas](#managing-taskbar-buttons)
     -   [Adicionando, modificando e excluindo ícones na área de notificação](#adding-modifying-and-deleting-icons-in-the-notification-area)
     -   [Notificação de criação da barra de tarefas](#taskbar-creation-notification)
@@ -37,69 +37,69 @@ Este tópico inclui as seções a seguir.
 A barra de tarefas inclui o seguinte:
 
 -   Menu **Iniciar**
--   Barra de início rápido (somente Windows Vista e anterior)
+-   Início Rápido barra (somente Windows Vista e anterior)
 -   Botões da barra de tarefas
 -   Barras de ferramentas (opcional)
 -   Área de notificação
 
-O menu **Iniciar** contém comandos que podem acessar programas, documentos e configurações. Esses comandos incluem **todos os programas**, **documentos**, **painel de controle**, **jogos**, **ajuda e suporte**, **desligamento** e **pesquisa de programas e arquivos**.
+O  menu Iniciar contém comandos que podem acessar programas, documentos e configurações. Esses comandos **incluem Todos os Programas,** **Documentos,** **Painel de Controle,** **Jogos,** **Ajuda** e Suporte, **Desligar** e Pesquisar programas **e arquivos**.
 
-O **início** em versões anteriores do Windows continha itens como **Localizar** e **executar**, a funcionalidade do que foi incluída em **Pesquisar programas e arquivos** no Windows Vista e versões posteriores.
+A **guia** Iniciar em versões anteriores do  Windows continha itens como Encontrar e  Executar **,** a funcionalidade da qual foi incluída em Pesquisar programas e arquivos no Windows Vista e posterior.
 
-A barra de início rápido, disponível em versões do Windows anteriores ao Windows 7, contém atalhos para aplicativos. O Windows fornece entradas padrão, como o Windows Internet Explorer, e o usuário pode adicionar outros atalhos que escolherem. Os ícones nessa área respondem a um único clique. No Windows 7 e posterior, essa funcionalidade está incluída nos botões da barra de tarefas.
+A Início Rápido, disponível em versões do Windows anteriores ao Windows 7, contém atalhos para aplicativos. Windows fornece entradas padrão, como Windows Internet Explorer, e o usuário pode adicionar outros atalhos que escolher. Os ícones nessa área respondem a um único clique. No Windows 7 e posteriores, essa funcionalidade é incluída nos botões da barra de tarefas.
 
-O Shell coloca um botão na barra de tarefas sempre que um aplicativo cria uma janela sem proprietário, ou seja, uma janela que não tem um pai e que tem os bits de estilo estendido apropriados (consulte [Gerenciando botões da barra de tarefas](#managing-taskbar-buttons), abaixo). Para alternar para uma janela, o usuário clica em seu botão de janela. Essa funcionalidade foi bastante expandida a partir do Windows 7. Para obter mais informações, consulte [extensões da barra de tarefas](taskbar-extensions.md).
+O Shell coloca um botão na barra de tarefas sempre que um aplicativo cria uma janela sem proprietário , ou seja, uma janela que não tem um pai e que tem os bits de estilo estendido [apropriados](#managing-taskbar-buttons)(consulte Gerenciando botões da barra de tarefas, abaixo). Para alternar para uma janela, o usuário clica no botão de janela. Essa funcionalidade foi muito expandida a partir do Windows 7. Para obter mais informações, consulte [Extensões da barra de tarefas](taskbar-extensions.md).
 
-Os aplicativos podem colocar ícones na área de notificação para indicar o status de uma operação ou para notificar o usuário sobre um evento. Por exemplo, um aplicativo pode colocar um ícone de impressora na área de notificação para mostrar que um trabalho de impressão está em caminho. No entanto, no Windows 7 e posterior, algumas das informações fornecidas anteriormente pela área de notificação devem ser fornecidas por meio do botão da barra de tarefas de um aplicativo. A área de notificação está localizada na borda direita da barra de tarefas (se a barra de tarefas for horizontal) ou na parte inferior (se a barra de tarefas for vertical). Para obter mais informações, consulte [notificações e a área de notificação](notification-area.md).
+Os aplicativos podem colocar ícones na área de notificação para indicar o status de uma operação ou notificar o usuário sobre um evento. Por exemplo, um aplicativo pode colocar um ícone de impressora na área de notificação para mostrar que um trabalho de impressão está em andamento. No entanto, Windows 7 e posteriores, algumas das informações fornecidas anteriormente pela área de notificação devem ser fornecidas por meio do botão de barra de tarefas de um aplicativo. A área de notificação está localizada na borda direita da barra de tarefas (se a barra de tarefas for horizontal) ou na parte inferior (se a barra de tarefas for vertical). Para obter mais informações, consulte [Notificações e a Área de Notificação](notification-area.md).
 
 A área de notificação também exibirá a hora atual se essa opção estiver selecionada. A opção é encontrada como:
 
--   **Windows 7 e posterior**: a lista suspensa **relógio** na página **Ativar ou desativar ícones do sistema** do aplicativo do painel de controle **ícones da área de notificação** (também acessível por meio das propriedades da área de notificação).
--   **Windows Vista**: a caixa de seleção de **relógio** na página **área de notificação** da barra de tarefas e da janela Propriedades do **menu iniciar** .
--   **Windows XP**: a caixa de seleção **mostrar o relógio** na **barra de tarefas e** na janela Propriedades do menu iniciar.
+-   **Windows 7** e posteriores:  a lista de **menus** do Relógio na página Ativar ou desativar ícones do sistema do aplicativo **ícones** de área de notificação Painel de Controle (também acessível por meio das propriedades da área de notificação).
+-   **Windows Vista:** a **caixa de seleção** Relógio na **página** Área de Notificação da janela de propriedades Barra de Tarefas e **Menu** Iniciar.
+-   **Windows XP:** a **caixa de seleção** Mostrar o relógio na janela **de propriedades Barra** de Tarefas e Menu Iniciar.
 
-O usuário pode clicar com o botão direito do mouse na barra de tarefas para exibir o menu de atalho. O menu de atalho inclui comandos para janelas em cascata, janelas de pilha, mostrar janelas lado a lado, mostrar a área de trabalho, iniciar o Gerenciador de tarefas e definir propriedades da barra de tarefas. O menu de atalho também fornece a opção de adicionar ou remover um conjunto de barras de ferramentas da barra de tarefas. Você pode adicionar novas barras de ferramentas a esse menu registrando-as na \_ categoria DeskBand de CATID. Para obter mais informações, consulte [implementando objetos de banda](band-objects.md). Observe que, a partir do Windows 7, a barra de tarefas e a área de notificação têm menus de atalho separados. Esses menus de atalho compartilham algumas opções, como a disposição da janela e adicionam outras.
+O usuário pode clicar com o botão direito do mouse na barra de tarefas para exibir o menu de atalho. O menu de atalho inclui comandos para janelas em cascata, janelas de pilha, mostrar janelas lado a lado, mostrar a área de trabalho, iniciar Gerenciador de Tarefas e definir propriedades da barra de tarefas. O menu de atalho também fornece a opção de adicionar ou remover um conjunto de barras de ferramentas da barra de tarefas. Você pode adicionar novas barras de ferramentas a esse menu registrando-as na categoria \_ DeskBand CATID. Para obter mais informações, consulte [Implementando objetos de banda](band-objects.md). Observe que, a partir Windows 7, a barra de tarefas e a área de notificação têm menus de atalho separados. Esses menus de atalho compartilham algumas opções, como disposição da janela e adicionam outras.
 
 ### <a name="taskbar-display-options"></a>Opções de exibição da barra de tarefas
 
-A barra de tarefas dá suporte a duas opções de exibição: Ocultar automaticamente e, no Windows Vista e versões anteriores, Always On superior (a barra de tarefas sempre está nesse modo no Windows 7 e posterior). Para definir essas opções, o usuário deve abrir o menu de atalho da barra de tarefas, clicar em **Propriedades** e marcar ou desmarcar a caixa de seleção **ocultar automaticamente a barra** de tarefas ou a caixa de seleção **manter a barra de tarefas no topo de outras janelas** . Para recuperar o estado dessas opções de exibição, use a [**mensagem \_ GetState do ABM**](abm-getstate.md) . Se você quiser ser notificado quando o estado dessas opções de exibição for alterado, processe a mensagem de notificação do [**ABN \_ STATECHANGE**](abn-statechange.md) em seu procedimento de janela. Para alterar o estado dessas opções de exibição, use a [**mensagem \_ SetState do ABM**](abm-setstate.md) .
+A barra de tarefas dá suporte a duas opções de exibição: Ocultar automaticamente e, no Windows Vista e apenas anteriormente, Always On Top (a barra de tarefas está sempre nesse modo no Windows 7 e posterior). Para definir essas opções, o usuário deve abrir o menu de  atalho da barra de tarefas,  clicar em Propriedades e marcar ou limpar a caixa de seleção Ocultar automaticamente a barra de tarefas ou a caixa de seleção Manter a barra de tarefas sobre outras janelas.  Para recuperar o estado dessas opções de exibição, use a [**mensagem \_ GETSTATE do ABM.**](abm-getstate.md) Se você quiser ser notificado quando o estado dessas opções de exibição mudar, processe a mensagem de notificação [**ABN \_ STATECHANGE**](abn-statechange.md) em seu procedimento de janela. Para alterar o estado dessas opções de exibição, use a [**mensagem ABM \_ SETSTATE.**](abm-setstate.md)
 
-A *área de trabalho* é a parte da tela não obscurecida pela barra de tarefas. Para recuperar o tamanho da área de trabalho, chame a função [**SystemParametersInfo**](/windows/win32/api/winuser/nf-winuser-systemparametersinfoa) com o valor de **SPI \_ GETWORKAREA** definido. Para recuperar as coordenadas de retângulo que descrevem o local da barra de tarefas, use a mensagem [**ABM \_ GETTASKBARPOS**](abm-gettaskbarpos.md) .
+A *área de* trabalho é a parte da tela não obscurecida pela barra de tarefas. Para recuperar o tamanho da área de trabalho, chame a [**função SystemParametersInfo**](/windows/win32/api/winuser/nf-winuser-systemparametersinfoa) com o **valor SPI \_ GETWORKAREA** definido. Para recuperar as coordenadas de retângulo que descrevem o local da barra de tarefas, use a mensagem [**\_ ABM GETTASKBARPOS.**](abm-gettaskbarpos.md)
 
-É possível cobrir a barra de tarefas definindo explicitamente o tamanho do retângulo da janela igual ao tamanho da tela com [**SetWindowPos**](/windows/win32/api/winuser/nf-winuser-setwindowpos). Para sistemas Windows 2000 ou posterior, a janela deve ter a opção [**WS \_ Caption**](../winmsg/window-styles.md) ou [**WS \_ THICKFRAME**](../winmsg/window-styles.md), ou a janela deve ser dimensionada para que a área do cliente cubra toda a tela. Além desses sistemas, se a barra de tarefas for definida como Always On superior, ela permanecerá oculta somente quando o aplicativo for o aplicativo em primeiro plano.
+É possível cobrir a barra de tarefas definindo explicitamente o tamanho do retângulo da janela igual ao tamanho da tela com [**SetWindowPos**](/windows/win32/api/winuser/nf-winuser-setwindowpos). Para Windows 2000 sistemas ou posteriores, a janela deve não ter [**WS \_ CAPTION**](../winmsg/window-styles.md) ou [**WS \_ THICKFRAME**](../winmsg/window-styles.md)ou então a janela deve ser dimensionada para que a área do cliente cobre toda a tela. Também específico para esses sistemas, se a barra de tarefas estiver definida como Always On Superior, ela permanecerá oculta somente enquanto o aplicativo for o aplicativo em primeiro plano.
 
-### <a name="adding-shortcuts-to-the-start-menu"></a>Adicionando atalhos ao menu iniciar
+### <a name="adding-shortcuts-to-the-start-menu"></a>Adicionando atalhos ao menu Iniciar
 
-Para adicionar um item ao submenu **programas** no Microsoft Windows NT 4,0, Windows 2000 e posterior ou Windows 95 ou posterior, siga estas etapas.
+Para adicionar um  item ao submenu Programas no Microsoft Windows NT 4.0, Windows 2000 e posterior ou Windows 95 ou posterior, siga estas etapas.
 
-1.  Crie um [link do Shell](./links.md) usando a interface [**IShellLink**](/windows/desktop/api/Shobjidl_core/nn-shobjidl_core-ishelllinka) .
-2.  Obtenha o PIDL da pasta Programs usando [**SHGetSpecialFolderLocation**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetspecialfolderlocation), passando [**\_ programas de CSIDL**](csidl.md).
-3.  Adicione o link do Shell à pasta programas. Você também pode criar uma pasta na pasta programas e adicionar o link a essa pasta.
+1.  Crie um [link de shell](./links.md) usando a interface [**IShellLink.**](/windows/desktop/api/Shobjidl_core/nn-shobjidl_core-ishelllinka)
+2.  Obtenha o PIDL da pasta Programas usando [**SHGetSpecialFolderLocation,**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetspecialfolderlocation)passando [**PROGRAMAS CSIDL \_**](csidl.md).
+3.  Adicione o link do Shell à pasta Programas. Você também pode criar uma pasta na pasta Programas e adicionar o link a essa pasta.
 
 ### <a name="managing-taskbar-buttons"></a>Gerenciando botões da barra de tarefas
 
-O Shell cria um botão na barra de tarefas sempre que um aplicativo cria uma janela que não é de propriedade. Para garantir que o botão de janela seja colocado na barra de tarefas, crie uma janela sem proprietário com o estilo estendido [**WS \_ ex \_ APPWINDOW**](../winmsg/extended-window-styles.md) . Para impedir que o botão de janela seja colocado na barra de tarefas, crie a janela sem proprietário com o estilo estendido [**WS \_ ex \_ TOOLWINDOW**](../winmsg/extended-window-styles.md) . Como alternativa, você pode criar uma janela oculta e tornar essa janela oculta o proprietário da janela visível.
+O Shell cria um botão na barra de tarefas sempre que um aplicativo cria uma janela que não pertence. Para garantir que o botão de janela seja colocado na barra de tarefas, crie uma janela sem proprietário com o estilo estendido [**\_ \_ APPWINDOW do WS EX.**](../winmsg/extended-window-styles.md) Para impedir que o botão de janela seja colocado na barra de tarefas, crie a janela sem proprietário com o estilo estendido [**\_ \_ TOOLWINDOW do WS EX.**](../winmsg/extended-window-styles.md) Como alternativa, você pode criar uma janela oculta e tornar essa janela oculta o proprietário da janela visível.
 
-O Shell removerá o botão de uma janela da barra de tarefas somente se o estilo da janela der suporte a botões visíveis da barra de tarefas. Se você quiser alterar dinamicamente o estilo de uma janela para uma que não dê suporte a botões da barra de tarefas visíveis, deverá ocultar a janela primeiro (chamando [**a janela de apresentação com o**](/windows/win32/api/winuser/nf-winuser-showwindow) **SW \_ Hide**), alterar o estilo da janela e mostrar a janela.
+O Shell removerá o botão de uma janela da barra de tarefas somente se o estilo da janela for compatível com botões visíveis da barra de tarefas. Se você quiser alterar dinamicamente o estilo de uma janela para uma que não dá suporte a botões visíveis da barra de tarefas, você deve ocultar a janela primeiro (chamando [**ShowWindow**](/windows/win32/api/winuser/nf-winuser-showwindow) com **SW \_ HIDE**), altere o estilo da janela e, em seguida, mostre a janela.
 
-O botão janela normalmente contém o ícone do aplicativo e o título. No entanto, se o aplicativo não contiver um menu do sistema, o botão janela será criado sem o ícone.
+O botão de janela normalmente contém o ícone e o título do aplicativo. No entanto, se o aplicativo não contém um menu do sistema, o botão de janela é criado sem o ícone.
 
-Se você quiser que seu aplicativo obtenha a atenção do usuário quando a janela não estiver ativa, use a função [**FlashWindow**](/windows/win32/api/winuser/nf-winuser-flashwindow) para permitir que o usuário saiba que uma mensagem está aguardando. Essa função pisca o botão de janela. Depois que o usuário clicar no botão de janela para ativar a janela, seu aplicativo poderá exibir a mensagem.
+Se você quiser que seu aplicativo receba a atenção do usuário quando a janela não estiver ativa, use a [**função FlashWindow**](/windows/win32/api/winuser/nf-winuser-flashwindow) para permitir que o usuário saiba que uma mensagem está aguardando. Essa função pisca o botão de janela. Depois que o usuário clicar no botão de janela para ativar a janela, seu aplicativo poderá exibir a mensagem.
 
 ### <a name="modifying-the-contents-of-the-taskbar"></a>Modificando o conteúdo da barra de tarefas
 
-A [versão 4,71 e posterior](versions.md) do Shell32.dll adiciona a capacidade de modificar o conteúdo da barra de tarefas. Em um aplicativo, agora você pode adicionar, remover e ativar botões da barra de tarefas. Ativar o item não ativa a janela; Ele mostra o item conforme pressionado na barra de tarefas.
+[A versão 4.71 e](versions.md) posterior do Shell32.dll adiciona a capacidade de modificar o conteúdo da barra de tarefas. Em um aplicativo, agora você pode adicionar, remover e ativar botões da barra de tarefas. A ativação do item não ativa a janela; ele mostra o item como pressionado na barra de tarefas.
 
-Os recursos de modificação da barra de tarefas são implementados em um objeto de Component Object Model (COM) (CLSIDlist \_ ) que expõe a interface [**ITASKBARLIST**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-itaskbarlist) (IID \_ ITaskbarList). Você deve chamar o método [**ITaskbarList:: HrInit**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-itaskbarlist-hrinit) para inicializar o objeto. Em seguida, você pode usar os métodos da interface [**ITaskbarList**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-itaskbarlist) para modificar o conteúdo da barra de tarefas.
+Os recursos de modificação da barra de tarefas são implementados em um objeto COM (COMPONENT OBJECT MODEL) (CLSID TaskbarList ) que expõe a \_ interface [**ITaskbarList**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-itaskbarlist) (IID \_ ITaskbarList). Você deve chamar o [**método ITaskbarList::HrInit**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-itaskbarlist-hrinit) para inicializar o objeto. Em seguida, você pode usar os métodos da interface [**ITaskbarList**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-itaskbarlist) para modificar o conteúdo da barra de tarefas.
 
 ### <a name="adding-modifying-and-deleting-icons-in-the-notification-area"></a>Adicionando, modificando e excluindo ícones na área de notificação
 
-Use a [**função \_ NotifyIcon do Shell**](/windows/desktop/api/Shellapi/nf-shellapi-shell_notifyicona) para adicionar, modificar ou excluir ícones da área de notificação. O parâmetro *dwMessage* do **shell \_ NotifyIcon** é uma mensagem para a barra de tarefas que especifica a ação a ser executada. O parâmetro *pnid* é um ponteiro para uma estrutura [**NOTIFYICONDATA**](/windows/desktop/api/Shellapi/ns-shellapi-notifyicondataa) que é usada para identificar o ícone e passar quaisquer informações adicionais necessárias para o sistema processar a mensagem.
+Use a [**função \_ NotifyIcon do Shell**](/windows/desktop/api/Shellapi/nf-shellapi-shell_notifyicona) para adicionar, modificar ou excluir ícones da área de notificação. O *parâmetro dwMessage* do **Shell \_ NotifyIcon** é uma mensagem para a barra de tarefas que especifica a ação a ser tomada. O *parâmetro pnid* é um ponteiro para uma estrutura [**NOTIFYICONDATA**](/windows/desktop/api/Shellapi/ns-shellapi-notifyicondataa) usada para identificar o ícone e passar informações adicionais necessárias para o sistema processar a mensagem.
 
-Você pode executar as seguintes ações com ícones da área de notificação.
+Você pode executar as seguintes ações com ícones de área de notificação.
 
--   Para adicionar um ícone à área de notificação da barra de tarefas, chame o [**shell \_ NotifyIcon**](/windows/desktop/api/Shellapi/nf-shellapi-shell_notifyicona) com o parâmetro *dwMessage* definido como Nim \_ Add. A estrutura [**NOTIFYICONDATA**](/windows/desktop/api/Shellapi/ns-shellapi-notifyicondataa) é usada para especificar a alça e o identificador do ícone e qualquer texto de dica de ferramenta. Se o usuário tiver selecionado a caixa de seleção **Mostrar relógio** nas propriedades da barra de tarefas, o sistema colocará o ícone à esquerda imediata do relógio. Caso contrário, o ícone será exibido no lado direito ou na parte inferior da barra de tarefas. Todos os ícones existentes são deslocados para a esquerda para liberar espaço para o novo ícone.
--   Para modificar as informações de um ícone, incluindo o identificador de ícone, o texto da dica de ferramenta e a mensagem de retorno de chamada, chame o [**shell \_ NotifyIcon**](/windows/desktop/api/Shellapi/nf-shellapi-shell_notifyicona) com *dwMessage* definido como Nim \_ Modify.
+-   Para adicionar um ícone à área de notificação da barra de tarefas, chame [**Shell \_ NotifyIcon**](/windows/desktop/api/Shellapi/nf-shellapi-shell_notifyicona) com o *parâmetro dwMessage* definido como NIM \_ ADD. A [**estrutura NOTIFYICONDATA**](/windows/desktop/api/Shellapi/ns-shellapi-notifyicondataa) é usada para especificar o identificador e o identificador do ícone e qualquer texto de dica de ferramenta. Se o usuário tiver selecionado a **caixa** de seleção Mostrar Relógio nas propriedades da barra de tarefas, o sistema coloca o ícone à esquerda imediata do relógio. Caso contrário, o ícone aparecerá no lado direito ou na parte inferior da barra de tarefas. Todos os ícones existentes são deslocados para a esquerda para dar espaço ao novo ícone.
+-   Para modificar as informações de um ícone, incluindo seu identificador de ícone, texto da dica de ferramenta e identificador de mensagem de retorno de chamada, chame [**\_ NotifyIcon**](/windows/desktop/api/Shellapi/nf-shellapi-shell_notifyicona) do Shell com *dwMessage* definido como NIM \_ MODIFY.
 -   Para excluir um ícone da área de notificação, chame o [**shell \_ NotifyIcon**](/windows/desktop/api/Shellapi/nf-shellapi-shell_notifyicona) com o parâmetro *dwMessage* definido como Nim \_ Delete.
 
 Quando você tiver concluído uma operação de interface do usuário, retorne o foco para a área de notificação chamando o [**shell \_ NotifyIcon**](/windows/desktop/api/Shellapi/nf-shellapi-shell_notifyicona) com *dwMessage* definido como Nim \_ SETFOCUS. Por exemplo, você pode fazer isso quando um ícone da barra de tarefas exibe um menu de atalho, mas o usuário o cancela pressionando a tecla ESCAPE.
@@ -123,12 +123,12 @@ Normalmente, clicar no ícone faz com que o aplicativo exiba uma janela com info
 
 Para obter um exemplo de como alterar o texto da dica de ferramenta associado a um ícone da área de notificação, consulte [Tooltips de balão para ícones da barra de status](../controls/tooltip-controls.md).
 
-As versões 5,0 e posteriores do Shell tratam eventos de mouse e teclado do [**shell \_**](/windows/desktop/api/Shellapi/nf-shellapi-shell_notifyicona) , de maneiras diferentes das versões anteriores do Shell encontradas no Windows NT 4,0, Windows 95 e Windows 98. As diferenças são:
+as versões 5,0 e posteriores do shell tratam eventos de mouse e teclado do [**shell \_**](/windows/desktop/api/Shellapi/nf-shellapi-shell_notifyicona) que são diferentes maneiras das versões anteriores do shell encontradas em Windows NT 4,0, Windows 95 e Windows 98. As diferenças são:
 
 -   Se um usuário solicitar o menu de atalho de um ícone de notificação com o teclado, o Shell da versão 5,0 enviará ao aplicativo associado uma mensagem de [**\_ CONTEXTMENU do WM**](../menurc/wm-contextmenu.md) . As versões anteriores enviam as mensagens do [**WM \_ RBUTTONDOWN**](../inputdev/wm-rbuttondown.md) e do [**WM \_ RBUTTONUP**](../inputdev/wm-rbuttonup.md) .
 -   Se um usuário selecionar um ícone de notificação com o teclado e ativá-lo com a barra de espaço ou Inserir chave, a versão 5,0 do Shell enviará ao aplicativo associado uma notificação de **\_ seleção de Nin** . As versões anteriores enviam as mensagens do [**WM \_ RBUTTONDOWN**](../inputdev/wm-rbuttondown.md) e do [**WM \_ RBUTTONUP**](../inputdev/wm-rbuttonup.md) .
 -   Se um usuário selecionar um ícone de notificação com o mouse e ativá-lo com a tecla ENTER, a versão 5,0 do Shell enviará ao aplicativo associado uma notificação de **\_ seleção do NIN** . As versões anteriores enviam as mensagens do [**WM \_ RBUTTONDOWN**](../inputdev/wm-rbuttondown.md) e do [**WM \_ RBUTTONUP**](../inputdev/wm-rbuttonup.md) .
--   Se um usuário passar o ponteiro do mouse sobre um ícone com o qual uma dica de ferramenta de balão está associada, o Shell da versão 6,0 (Windows XP) enviará as mensagens a seguir.
+-   se um usuário passar o ponteiro do mouse sobre um ícone com o qual uma dica de ferramenta de balão está associada, o Shell da versão 6,0 (Windows XP) enviará as mensagens a seguir.
     -   -   **Nin \_ BALLOONSHOW** -enviado quando o balão é mostrado (os balões são colocados na fila).
         -   **Nin \_ BALLOONHIDE** -enviado quando o balão desaparece — por exemplo, quando o ícone é excluído. Essa mensagem não será enviada se o balão for descartado devido a um tempo limite ou a um clique do mouse.
         -   **Nin \_ BALLOONTIMEOUT** -enviado quando o balão é Descartado devido a um tempo limite.
@@ -140,7 +140,7 @@ Você pode selecionar a maneira como o Shell deve se comportar chamando o [**she
 
 Com o Microsoft Internet Explorer 4,0 e posterior, o Shell notifica os aplicativos que a barra de tarefas foi criada. Quando a barra de tarefas é criada, ela registra uma mensagem com a cadeia de caracteres TaskbarCreated e, em seguida, transmite essa mensagem para todas as janelas de nível superior. Quando o aplicativo da barra de tarefas recebe essa mensagem, ele deve assumir que os ícones da barra de tarefas adicionados foram removidos e adicioná-los novamente. Esse recurso geralmente se aplica apenas a serviços que já estão em execução quando o Shell é iniciado. O exemplo a seguir mostra um método muito simplificado para lidar com esse caso.
 
-No Windows 10, a barra de tarefas também transmite essa mensagem quando o DPI da exibição primária é alterado.
+na Windows 10, a barra de tarefas também transmite essa mensagem quando o DPI da exibição primária é alterado.
 
 ```
 LRESULT CALLBACK WndProc(HWND hWnd, 

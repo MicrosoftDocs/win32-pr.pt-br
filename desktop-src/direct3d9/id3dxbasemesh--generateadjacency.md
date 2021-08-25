@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 783ed7ad61337e606793b9b467e4b17fddd7ecd2
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: d51070b5b67b50859338943a60e44cbb224e572ab9e5704e56940328a65479f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115454"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119848526"
 ---
 # <a name="id3dxbasemeshgenerateadjacency-method"></a>Método ID3DXBaseMesh:: GenerateAdjacency
 
@@ -82,7 +82,7 @@ A ordem das entradas no buffer de adjacência é determinada pela ordem dos índ
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

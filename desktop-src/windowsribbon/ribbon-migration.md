@@ -1,23 +1,23 @@
 ---
-title: Migrando para o Windows Ribbon Framework
-description: Um aplicativo que se baseia em menus, barras de ferramentas e caixas de diálogo tradicionais pode ser migrado para a interface do usuário rica, dinâmica e controlada por contexto do sistema de comando da estrutura da faixa de ferramentas do Windows.
+title: migrando para a estrutura da faixa de Windows
+description: um aplicativo que se baseia em menus, barras de ferramentas e caixas de diálogo tradicionais pode ser migrado para a interface do usuário rica, dinâmica e controlada por contexto do sistema de comando Windows Ribbon framework.
 ms.assetid: 3a8ca41e-18b3-4c9d-865b-5f4c5fcf7ceb
 keywords:
-- Faixa de-se do Windows, migrando para o
+- Windows Faixa de faixas, migrando para o
 - Faixa de faixas, migrando para o
-- migrando para a faixa de para do Windows
+- migrando para a faixa de Windows
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a74822781f891815c6eb30d9e15a7f7efaa983fe
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 8a011e9b5dad52f6f71fab272f0fded39ec59eb71cc7311ab9cf5ffccb4dfbca
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104454184"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119841116"
 ---
-# <a name="migrating-to-the-windows-ribbon-framework"></a>Migrando para o Windows Ribbon Framework
+# <a name="migrating-to-the-windows-ribbon-framework"></a>migrando para a estrutura da faixa de Windows
 
-Um aplicativo que se baseia em menus, barras de ferramentas e caixas de diálogo tradicionais pode ser migrado para a interface do usuário rica, dinâmica e controlada por contexto do sistema de comando da estrutura da faixa de ferramentas do Windows. Essa é uma maneira fácil e eficaz de modernizar e revitalize o aplicativo ao mesmo tempo em que também melhora a acessibilidade, a usabilidade e a capacidade de descoberta de sua funcionalidade.
+um aplicativo que se baseia em menus, barras de ferramentas e caixas de diálogo tradicionais pode ser migrado para a interface do usuário rica, dinâmica e controlada por contexto do sistema de comando Windows Ribbon framework. Essa é uma maneira fácil e eficaz de modernizar e revitalize o aplicativo ao mesmo tempo em que também melhora a acessibilidade, a usabilidade e a capacidade de descoberta de sua funcionalidade.
 
 ## <a name="introduction"></a>Introdução
 
@@ -30,7 +30,7 @@ Em geral, a migração de um aplicativo existente para a estrutura da faixa de o
 > [!Note]  
 > As [diretrizes de experiência do usuário da faixa](https://msdn.microsoft.com/library/cc872782.aspx) de ver devem ser revisadas para determinar se o aplicativo é um candidato adequado para uma interface do usuário da faixa de faixas.
 
- 
+ 
 
 ## <a name="design-the-ribbon-layout"></a>Criar o layout da faixa de opção
 
@@ -64,7 +64,7 @@ A tabela a seguir lista um conjunto de comandos básicos para um aplicativo de e
 
 
 
- 
+ 
 
 Olhe além dos menus e barras de ferramentas existentes ao criar um inventário de comandos. Considere todas as maneiras como um usuário pode interagir com o espaço de trabalho. Embora nem todos os comandos sejam adequados para inclusão na faixa de faixas, esse exercício pode expor comandos que foram anteriormente obscurecidos por camadas de interface do usuário.
 
@@ -77,7 +77,7 @@ Por outro lado, algumas funcionalidades podem não ser consideradas como um coma
 > [!Note]  
 > Anote a ID numérica que pode ser atribuída a cada comando. Algumas estruturas de interface do usuário, como MFC (MFC), definem IDs para comandos como o menu arquivo e editar (0xE100 para 0xE200).
 
- 
+ 
 
 ### <a name="organize"></a>Organizar
 
@@ -108,7 +108,7 @@ A lista de comandos, bem como sua organização e layout, são declarados por me
 > [!Note]  
 > Muitas das etapas necessárias para adaptar um aplicativo existente são semelhantes às necessárias para iniciar um novo aplicativo da faixa de tipos. Para obter mais informações, consulte o tutorial [criando um aplicativo da faixa de Ribbon](windowsribbon-stepbystep.md) para um novo aplicativo da faixa de faixas.
 
- 
+ 
 
 Há duas seções principais para a marcação da faixa de faixas. A primeira seção é um manifesto de comandos e seus recursos associados (cadeias de caracteres e imagens). A segunda seção especifica a estrutura e o posicionamento dos controles na faixa de faixas.
 
@@ -117,7 +117,7 @@ A marcação para o editor de texto simples pode ser semelhante ao exemplo a seg
 > [!Note]  
 > Os recursos de imagem e de cadeia de caracteres são abordados posteriormente neste artigo.
 
- 
+ 
 
 
 ```C++
@@ -227,23 +227,23 @@ LANGUAGE 9, 1
 
 
 
-### <a name="replace-legacy-menus-and-toolbars"></a>Substituir menus herdados e barras de ferramentas
+### <a name="replace-legacy-menus-and-toolbars"></a>Substituir menus herddos e barras de ferramentas
 
-Substituir menus e barras de ferramentas padrão por uma faixa de opções em um aplicativo herdado requer o seguinte:
+A substituição de menus e barras de ferramentas padrão por uma faixa de opções em um aplicativo herdados requer o seguinte:
 
-1.  Remova as referências de recurso de barra de ferramentas e de menu do arquivo de recurso do aplicativo.
-2.  Excluir toda a barra de ferramentas e o código de inicialização da barra de menus.
-3.  Exclui qualquer código usado para anexar uma barra de ferramentas ou barra de menus à janela de nível superior do aplicativo.
-4.  Crie uma instância da estrutura da faixa de faixas.
-5.  Anexe a faixa de bits à janela de nível superior do aplicativo.
-6.  Carregar a marcação compilada.
+1.  Remova referências de recursos de barra de ferramentas e menu do arquivo de recurso do aplicativo.
+2.  Exclua todo o código de inicialização da barra de ferramentas e da barra de menus.
+3.  Exclua qualquer código usado para anexar uma barra de ferramentas ou barra de menus à janela de nível superior do aplicativo.
+4.  Insinue a estrutura da Faixa de Opções.
+5.  Anexe a faixa de opções à janela de nível superior do aplicativo.
+6.  Carregue a marcação compilada.
 
 > [!IMPORTANT]
-> As tabelas de atalho de teclado e barra de status existentes devem ser preservadas, pois a estrutura da faixa de faixas não substitui esses recursos.
+> As tabelas de atalho de teclado e barra de status existentes devem ser preservadas, pois a estrutura da Faixa de Opções não substitui esses recursos.
 
- 
+ 
 
-O exemplo a seguir demonstra como inicializar a estrutura usando [**IUIFramework:: Initialize**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-initialize):
+O exemplo a seguir demonstra como inicializar a estrutura usando [**IUIFramework::Initialize**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-initialize):
 
 
 ```C++
@@ -267,7 +267,7 @@ int CMainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 
 
 
-O exemplo a seguir demonstra como usar [**IUIFramework:: LoadUI**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-loadui) para carregar a marcação compilada:
+O exemplo a seguir demonstra como usar [**IUIFramework::LoadUI**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-loadui) para carregar a marcação compilada:
 
 
 ```C++
@@ -309,13 +309,13 @@ HRESULT InitRibbon(CMainFrame* pMainFrame, IUnknown** ppFramework)
 
 
 
-A classe CApplication, mencionada acima, deve implementar um par de interfaces COM (Component Object Model) definidas pela estrutura da faixa de opções: [**IUIApplication**](/windows/desktop/api/uiribbon/nn-uiribbon-iuiapplication) e [**IUICommandHandler**](/windows/desktop/api/uiribbon/nn-uiribbon-iuicommandhandler).
+A classe CApplication, mencionada acima, deve implementar um par de interfaces COM (Component Object Model) definidas pela estrutura ribbon: [**IUIApplication**](/windows/desktop/api/uiribbon/nn-uiribbon-iuiapplication) e [**IUICommandHandler**](/windows/desktop/api/uiribbon/nn-uiribbon-iuicommandhandler).
 
-O [**IUIApplication**](/windows/desktop/api/uiribbon/nn-uiribbon-iuiapplication) fornece a interface de retorno de chamada principal entre a estrutura e o aplicativo (por exemplo, a altura da faixa de faixas é comunicada por meio de [**IUIApplication:: OnViewChanged**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiapplication-onviewchanged)), enquanto os retornos de chamada para comandos individuais são fornecidos em resposta a [**IUIApplication:: OnCreateUICommand**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiapplication-oncreateuicommand).
+[**IUIApplication**](/windows/desktop/api/uiribbon/nn-uiribbon-iuiapplication) fornece a interface de retorno de chamada principal entre a estrutura e o aplicativo (por exemplo, a altura da faixa de opções é comunicada por meio de [**IUIApplication::OnViewChanged**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiapplication-onviewchanged)) enquanto os retornos de chamada para comandos individuais são fornecidos em resposta a [**IUIApplication::OnCreateUICommand**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiapplication-oncreateuicommand).
 
-**Dica:** Algumas estruturas de aplicativo, como MFC, exigem que a altura da barra de faixa de faixas seja levada em conta ao renderizar o espaço de documento do aplicativo. Nesses casos, a adição de uma janela oculta para sobrepor a barra da faixa de faixas e forçar o espaço do documento para a altura desejada é necessária. Para obter um exemplo dessa abordagem, em que uma função de layout é chamada com base na altura da faixa de opção retornada pelo método [**IUIRibbon:: GetHeight**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiribbon-getheight) , consulte o [exemplo HTMLEditRibbon](windowsribbon-htmleditribbonsample.md).
+**Dica:** Algumas estruturas de aplicativo, como MFC, exigem que a altura da barra de faixa de opções seja levada em conta ao renderizar o espaço do documento do aplicativo. Nesses casos, a adição de uma janela oculta para sobrepor a barra de faixa de opções e forçar o espaço do documento à altura desejada é necessária. Para obter um exemplo dessa abordagem, em que uma função de layout é chamada com base na altura da faixa de opções retornada pelo método [**IUIRibbon::GetHeight,**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiribbon-getheight) consulte [HtmlEditRibbon Sample](windowsribbon-htmleditribbonsample.md).
 
-O exemplo de código a seguir demonstra uma implementação [**IUIApplication:: OnViewChanged**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiapplication-onviewchanged) :
+O exemplo de código a seguir demonstra uma [**implementação IUIApplication::OnViewChanged:**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiapplication-onviewchanged)
 
 
 ```C++
@@ -397,9 +397,9 @@ private:
 
 ### <a name="implement-an-iuicommandhandler-adapter"></a>Implementar um adaptador IUICommandHandler
 
-Dependendo do design do aplicativo original, pode ser mais fácil ter várias implementações de manipulador de comandos ou um único manipulador de comando de ponte que invoque a lógica de comando de aplicativo existente. Muitos aplicativos usam \_ mensagens de comando do WM para essa finalidade, em que é suficiente fornecer um único manipulador de comandos de finalidade única que simplesmente encaminhe \_ as mensagens de comando do WM para a janela de nível superior.
+Dependendo do design do aplicativo original, pode ser mais fácil ter várias implementações de manipulador de comando ou um único manipulador de comando de ponte que invoca a lógica de comando existing-application. Muitos aplicativos usam mensagens WM COMMAND para essa finalidade, em que é suficiente fornecer um único manipulador de comandos de finalidade geral que simplesmente encaminha mensagens WM COMMAND para a janela de nível \_ \_ superior.
 
-No entanto, essa abordagem requer tratamento especial para comandos como **Exit** ou **Close**. Como a faixa de opções não pode ser destruída enquanto está processando uma mensagem de janela, a mensagem de fechamento do WM \_ deve ser postada no thread da interface do usuário do aplicativo e não deve ser processada de forma síncrona, conforme mostrado no exemplo a seguir:
+No entanto, essa abordagem requer tratamento especial para comandos como **Sair** ou **Fechar**. Como a Faixa de Opções não pode ser destruída durante o processamento de uma mensagem de janela, a mensagem WM CLOSE deve ser postada no thread da interface do usuário do aplicativo e não deve ser processada de forma síncrona, conforme mostrado no exemplo a \_ seguir:
 
 
 ```C++
@@ -435,53 +435,53 @@ No entanto, essa abordagem requer tratamento especial para comandos como **Exit*
 
 ## <a name="migrating-resources"></a>Migrando recursos
 
-Quando o manifesto de comandos tiver sido definido, a estrutura da faixa de faixas foi declarada e o código do aplicativo adaptado para hospedar a estrutura da faixa de faixas, a etapa final é a especificação dos recursos de cadeia de caracteres e de imagem para cada comando.
+Quando o manifesto de comandos tiver sido definido, a estrutura da Faixa de Opções tiver sido declarada e o código do aplicativo for adaptado para hospedar a estrutura da Faixa de Opções, a etapa final será a especificação de recursos de cadeia de caracteres e imagem para cada comando.
 
 > [!Note]  
-> Os recursos de cadeia de caracteres e de imagem normalmente são fornecidos no arquivo de marcação. No entanto, eles podem ser gerados ou substituídos programaticamente implementando o método de retorno de chamada [**IUICommandHandler:: updateproperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty) .
+> Recursos de cadeia de caracteres e imagem normalmente são fornecidos no arquivo de marcação. No entanto, eles podem ser gerados ou substituídos programaticamente implementando o método de retorno de chamada [**IUICommandHandler::UpdateProperty.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty)
 
- 
+ 
 
 ### <a name="string-resources"></a>Recursos de cadeia de caracteres
 
-[**Command. LabelTitle**](windowsribbon-element-command-labeltitle.md) é a propriedade de cadeia de caracteres mais comum definida para um comando. Eles são renderizados como rótulos de texto para guias, grupos e controles individuais. Uma cadeia de caracteres de rótulo de um item de menu herdado geralmente pode ser reutilizada para um **Command. LabelTitle** sem muita edição.
+[**Command.LabelTitle**](windowsribbon-element-command-labeltitle.md) é a propriedade de cadeia de caracteres mais comum definida para um Comando. Eles são renderizados como rótulos de texto para guias, grupos e controles individuais. Uma cadeia de caracteres de rótulo de um item de menu herdado normalmente pode ser rea usada para **um Command.LabelTitle** sem muita edição.
 
-No entanto, as seguintes convenções foram alteradas com o advento da faixa de opções:
+No entanto, as convenções a seguir foram alteradas com o advento da Faixa de Opções:
 
--   O sufixo de reticências (...), usado para indicar um comando de inicialização de caixa de diálogo, não é mais necessário.
--   O e comercial (&) ainda pode ser usado para indicar um atalho de teclado para um comando que aparece em um menu, mas a propriedade [**Command. KeyTip**](windowsribbon-element-command-keytip.md) com suporte da estrutura atende a uma finalidade semelhante.
+-   O sufixo de reellips (...), usado para indicar um comando de início de caixa de diálogo, não é mais necessário.
+-   O e ampersand (&) ainda pode ser usado para indicar um atalho de teclado para um Comando que aparece em um menu, mas a propriedade [**Command.Keytip**](windowsribbon-element-command-keytip.md) com suporte pela estrutura atende a uma finalidade semelhante.
 
-Referindo-se ao exemplo do editor de texto, as seguintes cadeias de caracteres para LabelTitle e KeyTip podem ser especificadas:
+Fazendo referência ao exemplo do editor de texto, as seguintes cadeias de caracteres para LabelTitle e Keytip podem ser especificadas:
 
 
 
-| Símbolo           | Cadeia de caracteres original | Cadeia de caracteres LabelTitle | Cadeia de caracteres KeyTip |
+| Símbolo           | Cadeia de caracteres original | Cadeia de caracteres LabelTitle | Cadeia de caracteres de dica de chave |
 |------------------|-----------------|-------------------|---------------|
-| \_novo arquivo de ID \_    | &novo            | &novo              | N             |
-| \_salvar arquivo de ID \_   | &salvar           | &salvar             | S             |
-| \_salvar arquivo de ID \_ | Salvar &como...       | Salvar &como          | Um             |
-| arquivo de ID \_ \_ aberto   | &abrir...          | &amp;Open             | O             |
-| \_saída do arquivo de ID \_   | Sa&ir           | Sa&ir             | X             |
-| \_desfazer edição de ID \_   | &desfazer           | Desfazer              | Z             |
-| edição de ID \_ \_ recortada    | Cu&t            | Cu&t              | X             |
-| ID \_ Editar \_ cópia   | &cópia           | &cópia             | C             |
-| \_Editar \_ colar ID  | Colar &          | Colar &            | V             |
-| edição de ID \_ \_ limpar  | &excluir         | &excluir           | D             |
-| \_zoom da exibição de ID \_   | &zoom...          | Zoom              | Z             |
+| ARQUIVO DE ID \_ \_ NOVO    | &novo            | &novo              | N             |
+| ID \_ FILE \_ SAVE   | &salvar           | &salvar             | S             |
+| ARQUIVO DE ID \_ \_ SAVEAS | Salvar &como...       | Salvar &como          | Um             |
+| ARQUIVO DE ID \_ \_ ABERTO   | &Abrir...          | &amp;Open             | O             |
+| SAÍDA DO ARQUIVO DE ID \_ \_   | Sa&ir           | Sa&ir             | X             |
+| ID \_ EDIT \_ UNDO   | &Desfazer           | Desfazer              | Z             |
+| ID \_ EDIT \_ CUT    | Cu&t            | Cu&t              | X             |
+| ID \_ EDITAR \_ CÓPIA   | &cópia           | &cópia             | C             |
+| ID \_ EDITAR \_ COLAR  | &colar          | &colar            | V             |
+| ID \_ EDIT \_ CLEAR  | &excluir         | &excluir           | D             |
+| ZOOM DE \_ EXIBIÇÃO DE ID \_   | &Zoom...          | Zoom              | Z             |
 
 
 
- 
+ 
 
-A seguir está uma lista de outras propriedades de cadeia de caracteres que devem ser definidas na maioria dos comandos:
+Veja a seguir uma lista de outras propriedades de cadeia de caracteres que devem ser definidas na maioria dos Comandos:
 
--   [**Comando. LabelDescription**](windowsribbon-element-command-labeldescription.md)
--   [**Comando. TooltipTitle**](windowsribbon-element-command-tooltiptitle.md)
--   [**Comando. TooltipDescription**](windowsribbon-element-command-tooltipdescription.md)
+-   [**Command.LabelDescription**](windowsribbon-element-command-labeldescription.md)
+-   [**Command.TooltipTitle**](windowsribbon-element-command-tooltiptitle.md)
+-   [**Command.TooltipDescription**](windowsribbon-element-command-tooltipdescription.md)
 
-Guias, grupos e outros recursos da interface do usuário da faixa de tipos agora podem ser declarados com todos os recursos de cadeia de caracteres e imagem especificados.
+Guias, Grupos e outros recursos de interface do usuário da Faixa de Opções agora podem ser declarados com todos os recursos de cadeia de caracteres e imagem especificados.
 
-O exemplo de marcação de faixa de opções a seguir demonstra vários recursos de cadeia de caracteres:
+O exemplo de marcação faixa de opções a seguir demonstra vários recursos de cadeia de caracteres:
 
 
 ```C++
@@ -523,20 +523,20 @@ O exemplo de marcação de faixa de opções a seguir demonstra vários recursos
 
 ### <a name="image-resources"></a>Recursos de imagem
 
-A estrutura da faixa de ferramentas dá suporte a formatos de imagem que fornecem uma aparência muito mais rica do que os formatos de imagem com suporte no menu anterior e nos componentes da barra de ferramentas.
+A estrutura da Faixa de Opções dá suporte a formatos de imagem que fornecem uma aparência muito mais rica do que os formatos de imagem compatíveis com os componentes anteriores do menu e da barra de ferramentas.
 
-Para o Windows 8 e posterior, a estrutura da faixa de opções dá suporte aos seguintes formatos de gráficos: arquivos BMP (bitmap ARGB) de 32 bits e arquivos PNG (Portable Network Graphics) com transparência.
+Para Windows 8 posteriores, a estrutura ribbon dá suporte aos seguintes formatos gráficos: arquivos BMP (bitmap ARGB) de 32 bits e arquivos PNG (Gráficos de Rede Portátil) com transparência.
 
-Para o Windows 7 e versões anteriores, os recursos de imagem devem estar em conformidade com o formato gráfico BMP padrão usado no Windows.
+Por Windows 7 e anteriores, os recursos de imagem devem estar em conformidade com o formato gráfico BMP padrão usado Windows.
 
 > [!Note]  
-> Os arquivos de imagem existentes podem ser convertidos em qualquer formato. No entanto, os resultados podem ser menos satisfatórios se os arquivos de imagem não oferecerem suporte à suavização e transparência.
+> Arquivos de imagem existentes podem ser convertidos em qualquer formato. No entanto, os resultados poderão ser menores que satisfatórios se os arquivos de imagem não deem suporte a antialiasing e transparência.
 
- 
+ 
 
-Não é possível especificar um único tamanho padrão para recursos de imagem na estrutura da faixa de faixas. No entanto, para dar suporte ao [layout adaptável](windowsribbon-templates.md) de controles, as imagens podem ser especificadas em dois tamanhos (grandes e pequenas). Todas as imagens na estrutura da faixa de opção são dimensionadas de acordo com a resolução de pontos por polegada (DPI) da exibição com o tamanho exato renderizado dependente dessa configuração de DPI. Consulte [especificando recursos de imagem da faixa](windowsribbon-imageformats.md) de visualização para obter mais informações.
+Não é possível especificar um único tamanho padrão para recursos de imagem na estrutura da Faixa de Opções. No entanto, para dar [suporte ao layout adaptável](windowsribbon-templates.md) de controles, as imagens podem ser especificadas em dois tamanhos (grande e pequeno). Todas as imagens na estrutura da Faixa de Opções são dimensionadas de acordo com a resolução dpi (pontos por polegada) da exibição com o tamanho renderizado exato dependendo dessa configuração de dpi. Consulte [Especificando recursos de imagem da faixa de opções](windowsribbon-imageformats.md) para obter mais informações.
 
-O exemplo a seguir demonstra como um conjunto de imagens específicas de DPI é referenciado na marcação:
+O exemplo a seguir demonstra como um conjunto de imagens específicas de dpi é referenciado na marcação:
 
 
 ```C++
@@ -564,9 +564,9 @@ O exemplo a seguir demonstra como um conjunto de imagens específicas de DPI é 
 
 <dl> <dt>
 
-[Especificando recursos de imagem da faixa de uma](windowsribbon-imageformats.md)
+[Especificando recursos de imagem da faixa de opções](windowsribbon-imageformats.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

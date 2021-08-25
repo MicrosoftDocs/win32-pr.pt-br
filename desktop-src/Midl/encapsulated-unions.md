@@ -1,27 +1,27 @@
 ---
 title: Uniões encapsuladas
-description: Uma União que está contida com seu discriminante em uma estrutura dentro do é uma União encapsulada.
+description: Uma união contida com seu discriminante em uma estrutura dentro é uma união encapsulada.
 ms.assetid: d32c18b4-b2f6-4ce2-94fe-a495a3c15d14
 keywords:
 - tipos de dados MIDL, uniões encapsuladas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4489a043ff3690ddb31a8acccf359dcd76940aa7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6bc8f8f830d49430551af7d6450b0174742b9436afcdba764e9fa6494c957d9c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105789783"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119895356"
 ---
 # <a name="encapsulated-unions"></a>Uniões encapsuladas
 
-Uma União que está contida com seu discriminante em uma estrutura dentro do é uma União encapsulada. A União encapsulada é indicada pela presença da palavra-chave [**switch**](switch.md) . Esse tipo de União é tão nomeado porque o compilador MIDL encapsula automaticamente a União e seu discriminante em uma estrutura para transmissão durante uma chamada de procedimento remoto.
+Uma união contida com seu discriminante em uma estrutura dentro é uma união encapsulada. A união encapsulada é indicada pela presença da palavra-chave [**switch.**](switch.md) Esse tipo de união é chamado porque o compilador MIDL encapsula automaticamente a união e seu discriminante em uma estrutura para transmissão durante uma chamada de procedimento remoto.
 
-Se a marca Union estiver ausente (U1 \_ Type no exemplo acima), o compilador irá gerar a estrutura com o campo Union chamado *\_ Union marcada*.
+Se a marca de união estiver ausente (U1 TYPE no exemplo acima), o compilador gerará a estrutura com o campo de união \_ chamado *união \_ marcada*.
 
 A forma de uniões deve ser a mesma entre plataformas para garantir a interconectividade.
 
-Para obter uma descrição da forma de uma União encapsulada, consulte [**Union**](union.md).
+Para ver uma descrição da forma de uma união encapsulada, consulte [**union**](union.md).
 
 ## <a name="examples"></a>Exemplos
 
@@ -46,11 +46,11 @@ typedef struct _S1_TYPE
 } S1_TYPE;
 ```
 
-Para obter informações relacionadas, consulte [tipos base de MIDL](midl-base-types.md), [**Char**](char-idl.md), **\[** [**\_ identificador de contexto**](context-handle.md) **\]** , [**enum**](enum.md), **\[** [**primeiro \_ é**](first-is.md) **\]** , **\[** [**identificador**](handle.md) **\]** , **\[** [**ignorar**](ignore.md) **\]** , [**int**](int.md), **\[** [**ignorar**](ignore.md) **\]** , **\[** [**último \_ é**](last-is.md) **\]** , **\[** [**comprimento \_ é**](length-is.md) **\]** , **\[** [**máximo \_ é**](max-is.md), **\]** **\[** [**MS \_ Union**](ms-union-attrib.md) **\]** , [unencapsulated Unions](nonencapsulated-unions.md), **\[** [**PTR**](ptr.md) **\]** , **\[** [**ref**](ref.md) **\]** , **\[** [**Size \_ is**](size-is.md) **\]** , **\[** [**String**](string.md) **\]** , [**struct**](struct.md), [**switch**](switch.md), **\[** [**switch \_ is**](switch-is.md) **\]** , **\[** [**\_ tipo switch**](switch-type.md) **\]** , **\[** [**Transmit \_ as**](transmit-as.md) **\]** , [**Union**](union.md)e **\[** [**Unique**](unique.md)**\]**
+Para obter informações relacionadas, consulte [MidL Base Types](midl-base-types.md), [**char**](char-idl.md), context handle , enum , first is **\[** [**\_**](context-handle.md), **\]** [](enum.md) **\[** [**\_**](first-is.md) **\]** **\[** [](handle.md) **\]** handle , **\[** [](ignore.md) **\]** ignore , [**int**](int.md), **\[** [**ignore**](ignore.md), **\]** last **\[** [**\_ is**](last-is.md) **\]** , length **\[** [**\_ is**](length-is.md) **\]** , max **\[** [**\_ is**](max-is.md) **\]** , **\[** [**ms \_ union**](ms-union-attrib.md) **\]** , [Nonencapsulated Unions](nonencapsulated-unions.md), **\[** [**ptr**](ptr.md) **\]** , ref , **\[** [**size**](ref.md) **\]** **\[** [**\_ is**](size-is.md) **\]** , **\[** [**string**](string.md) **\]** , [**struct**](struct.md), [**switch**](switch.md) **\[** [**\_**](switch-is.md) **\]** **\[** [**\_**](switch-type.md) **\]** **\[** [**\_**](transmit-as.md) **\]** [](union.md) **\[** [](unique.md) is , switch is , switch type , transmit as , union e unique **\]**
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,19 +1,19 @@
 ---
-title: Macros de serviços Web do Windows
-description: A API do Windows Web Services inclui as macros WS \_ String \_ EMPTYWS \_ String \_ VALUEWS \_ XML \_ String \_ Dictionary \_ VALUEWS XML String \_ \_ \_ NULLWS \_ XML \_ String \_ VALUEWsCountOfWsOffsetOf.
+title: Windows Macros de serviços Web
+description: a API de serviços Web do Windows inclui as macros WS \_ string \_ EMPTYWS \_ string \_ VALUEWS \_ xml \_ string \_ DICTIONARY \_ VALUEWS \_ xml string \_ \_ NULLWS \_ xml \_ string \_ VALUEWsCountOfWsOffsetOf.
 ms.assetid: 21be7332-130e-4f8a-b883-1a27674c0d30
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ca5532269f0b2a894c672cf451f479f6083a7d23
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 8eacd7c2e42aabd7fddfb759638be607d065414aa4b7d994b320198da77156a6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105780667"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119926816"
 ---
-# <a name="windows-web-services-macros"></a>Macros de serviços Web do Windows
+# <a name="windows-web-services-macros"></a>Windows Macros de serviços Web
 
-A API dos serviços Web do Windows inclui as seguintes macros:
+a API de serviços Web do Windows inclui as seguintes macros:
 
 -   [**\_cadeia de caracteres WS \_ vazia**](/previous-versions/windows/desktop/legacy/dd323449(v=vs.85))
 -   [**\_valor da cadeia de caracteres WS \_**](/windows/desktop/api/WebServices/nf-webservices-ws_string_value)
@@ -23,6 +23,6 @@ A API dos serviços Web do Windows inclui as seguintes macros:
 -   [**WsCountOf**](/windows/desktop/api/WebServices/nf-webservices-wscountof)
 -   [**WsOffsetOf**](/windows/desktop/api/WebServices/nf-webservices-wsoffsetof)
 
- 
+ 
 
- 
+ 

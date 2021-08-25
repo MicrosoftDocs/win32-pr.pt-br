@@ -3,9 +3,9 @@ title: Método Pause IWMPControls
 description: O método pause pausa a reprodução do item de mídia. | Método Pause IWMPControls
 ms.assetid: 1d9ebaf3-84b4-458d-a393-2b685cd0dbfb
 keywords:
-- Método Pause Windows Media Player
-- Método Pause Windows Media Player, interface IWMPControls
-- Interface IWMPControls do Windows Media Player, método pause
+- Pausar método Windows Media Player
+- método pause Windows Media Player, interface IWMPControls
+- Windows Media Player de interface IWMPControls, método pause
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5cf89cfef66c84be76a529d9c0cef6ec3ae6ac40
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 49950b5d2c5588e27755f3845e65f0a79ce0aae6ccc4a05dd4e5af3186b879de
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105761318"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119861876"
 ---
 # <a name="iwmpcontrolspause-method"></a>IWMPControls: método ause de:p
 
@@ -49,13 +49,13 @@ Implements IWMPControls.pause
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Quando um arquivo é pausado, o Windows Media Player não fornece nenhum recurso do sistema, como o dispositivo de áudio.
+quando um arquivo é pausado, o Windows Media Player não fornece nenhum recurso do sistema, como o dispositivo de áudio.
 
 Para determinar se um determinado tipo de mídia pode ser pausado, passe o valor de **System. String** "Pause" para a propriedade **IWMPControls. IsAvailable** (o método **IWMPControls. get \_ IsAvailable** em C#).
 

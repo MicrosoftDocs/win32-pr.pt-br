@@ -1,11 +1,11 @@
 ---
-title: atributo ms-DS-revelated-DSAs
-description: Link para trás para MS-DS-revelated-users. Identifica qual RODC mantém o segredo dos usuários.
+title: Atributo ms-DS-Revealed-DSAs
+description: Link para trás para ms-DS-Revealed-Users. Identifica qual RODC mantém esse segredo dos usuários.
 ms.assetid: cd84db75-d961-4290-8aa7-2805febbd842
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo ms-DS-revelado-DSAs
-- atributo msDS-RevealedDSAs do AD Schema
+- Esquema do AD do atributo ms-DS-Revealed-DSAs
+- Esquema do AD do atributo msDS-RevealedDSAs
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e77dfd69fafffc3286f0ff9419965d7ae9daaa0
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 5b8cd94e5cde7c5ea021558088852f551fcdcf733eab131216d663d363c5a544
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104456211"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119925496"
 ---
-# <a name="ms-ds-revealed-dsas-attribute"></a>atributo ms-DS-revelated-DSAs
+# <a name="ms-ds-revealed-dsas-attribute"></a>Atributo ms-DS-Revealed-DSAs
 
-Link para trás para [**MS-DS-revelated-Users**](a-msds-revealedusers.md). Identifica qual RODC mantém o segredo do usuário.
+Link para trás [**para ms-DS-Revealed-Users.**](a-msds-revealedusers.md) Identifica qual RODC contém o segredo do usuário.
 
 
 
 | Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | ms-DS-revelados-DSAs                     |
-| LDAP-Display-Name | msDS-RevealedDSAs                       |
+| CN                | ms-DS-Revealed-DSAs                     |
+| Ldap-Display-Name | msDS-RevealedDSAs                       |
 | Tamanho              | \-                                      |
 | Privilégio de atualização  | \-                                      |
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1930                 |
-| System-ID-GUID    | 94f6f2ac-c76d-4b5e-b71f-f332c3e93c22    |
-| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | 94f6f2ac-c76d-4b5e-b71f-f332c3e93c22    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -54,11 +54,11 @@ Link para trás para [**MS-DS-revelated-Users**](a-msds-revealedusers.md). Ident
 |------------------------|---------------------------------|
 | ID do link                | 2103                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | Falso                           |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -75,11 +75,11 @@ Link para trás para [**MS-DS-revelated-Users**](a-msds-revealedusers.md). Ident
 |------------------------|---------------------------------|
 | ID do link                | 2103                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | Falso                           |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -96,11 +96,11 @@ Link para trás para [**MS-DS-revelated-Users**](a-msds-revealedusers.md). Ident
 |------------------------|---------------------------------|
 | ID do link                | 2103                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | Falso                           |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

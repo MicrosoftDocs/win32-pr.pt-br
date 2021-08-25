@@ -17,16 +17,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: c069f5c7186d08f01b54fe02c0568dbb4ff43d26
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: c6df2338d46438bf3e1af371ebbce8b36f1a337f26a4785064119cca45bece46
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646425"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119924926"
 ---
 # <a name="cim_configuration-class"></a>\_Classe de configuração CIM
 
-O objeto de **\_ configuração CIM** permite o agrupamento de conjuntos de parâmetros (definidos em objetos de [**\_ configuração CIM**](cim-setting.md) ) e dependências para um ou mais elementos do sistema gerenciado. Esse objeto representa um determinado comportamento ou um estado funcional desejado para os elementos do sistema gerenciado. O estado funcional desejado geralmente é controlado por requisitos externos, como hora ou local. Por exemplo, para se conectar a um sistema de email de casa, existe uma dependência em um modem; enquanto que uma dependência em um adaptador de rede existe no trabalho. As configurações para os dispositivos lógicos pertinentes (neste exemplo, o adaptador de rede e o modem POTS) podem ser definidas e agregadas pela **\_ configuração de CIM**. Portanto, duas configurações de "conexão com o email" podem ser definidas agrupando as dependências relevantes e os objetos de [**\_ configuração CIM**](cim-setting.md) .
+O objeto de **\_ configuração CIM** permite o agrupamento de conjuntos de parâmetros (definidos em objetos de [**\_ configuração CIM**](cim-setting.md) ) e dependências para um ou mais elementos do sistema gerenciado. Esse objeto representa um determinado comportamento ou um estado funcional desejado para os elementos do sistema gerenciado. O estado funcional desejado geralmente é controlado por requisitos externos, como hora ou local. Por exemplo, para se conectar a um sistema de email de casa, existe uma dependência em um modem; enquanto que uma dependência em um adaptador de rede existe no trabalho. Configurações para os dispositivos lógicos pertinentes (neste exemplo, adaptador de rede e modem POTS) podem ser definidos e agregados pela **\_ configuração de CIM**. portanto, duas configurações de "Conexão para email" podem ser definidas agrupando as dependências relevantes e os objetos de [**\_ configuração CIM**](cim-setting.md) .
 
 > [!IMPORTANT]
 > As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).

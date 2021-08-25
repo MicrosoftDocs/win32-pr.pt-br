@@ -1,9 +1,9 @@
 ---
 title: DRM_ActionAllowed_Backup
-description: O \_ atributo de backup ActionAllowed do DRM \_ indica se é permitido fazer backup da licença.
+description: O atributo ActionAllowed Backup do DRM indica se a licença tem permissão para \_ \_ fazer backup.
 ms.assetid: 49b503ff-a2ca-405c-a8ac-49653c62e13e
 keywords:
-- DRM_ActionAllowed_Backup o formato Windows Media
+- DRM_ActionAllowed_Backup formato de mídia do Windows
 topic_type:
 - apiref
 api_name:
@@ -12,39 +12,39 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cb580d69d804c30dbbeb9b574422fb4055cc1a37
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: e9f2597cee7bd4464a151bd2174cd24b2122d97bfd35cfbed0f450893dfaf98d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104498986"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119881156"
 ---
-# <a name="drm_actionallowed_backup"></a>\_Backup ACTIONALLOWED \_ DRM
+# <a name="drm_actionallowed_backup"></a>Ação do DRM \_ Backup \_ permitido
 
-O atributo de **\_ \_ backup ActionAllowed do DRM** indica se é permitido fazer backup da licença.
+O **atributo \_ ActionAllowed \_ Backup** do DRM indica se a licença tem permissão para fazer backup.
 
 ## <a name="global-constant"></a>Constante global
 
-Backup do g \_ wszWMDRM \_ ActionAllowed \_
+g \_ wszWMDRM \_ ActionAllowed \_ Backup
 
 ## <a name="data-type"></a>Tipo de Dados
 
-**WMT \_ tipo \_ bool**
+**TIPO WMT \_ \_ BOOL**
 
 ## <a name="remarks"></a>Comentários
 
-Esta é uma propriedade somente leitura que é recuperada usando [**IWMDRMReader:: GetDRMProperty**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmreader-getdrmproperty).
+Essa é uma propriedade somente leitura que é recuperada usando [**IWMDRMReader::GetDRMProperty**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmreader-getdrmproperty).
 
 ## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[**Propriedades de DRM**](drm-properties.md)
+[**Propriedades do DRM**](drm-properties.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

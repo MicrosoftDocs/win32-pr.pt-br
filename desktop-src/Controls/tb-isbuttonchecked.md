@@ -1,9 +1,9 @@
 ---
-title: Mensagem de TB_ISBUTTONCHECKED (commctrl. h)
+title: TB_ISBUTTONCHECKED mensagem (Commctrl.h)
 description: Determina se o botão especificado em uma barra de ferramentas está marcado.
 ms.assetid: ce576951-8db6-4854-8457-211ece018ce8
 keywords:
-- Controles de TB_ISBUTTONCHECKED de mensagens do Windows
+- TB_ISBUTTONCHECKED controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8cb9bc573478ea55ce8e0bda48ff16679b135fc2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 26d93340668e926f99271e9acd450eed5d51aa454571e779601744dc4d283b1d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499312"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119876986"
 ---
-# <a name="tb_isbuttonchecked-message"></a>TB de \_ mensagem ISBUTTONCHECKED
+# <a name="tb_isbuttonchecked-message"></a>Mensagem \_ ISBUTTONCHECKED de TB
 
 Determina se o botão especificado em uma barra de ferramentas está marcado.
 
@@ -39,9 +39,9 @@ Identificador de comando do botão.
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retornará zero se o botão estiver marcado, caso contrário, zero.
+Retornará diferente de zero se o botão estiver marcado ou zero, caso contrário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,9 +49,9 @@ Retornará zero se o botão estiver marcado, caso contrário, zero.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

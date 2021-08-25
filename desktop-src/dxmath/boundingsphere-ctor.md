@@ -1,7 +1,7 @@
 ---
 description: Cria uma instância da classe BoundingSphere.
 ms.assetid: c733c15d-034f-4c95-bd10-f5757fc4e813
-title: Construtores DirectX. BoundingSphere
+title: Construtores DirectX.BoundingSphere
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -11,14 +11,14 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 7d33ba964a43063cfcfc3ffcac10a525b9087474
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7098cf6159321d3572b4d7898e1c265d187adec370a940a41c79feddc9735a08
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104091119"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119841656"
 ---
-# <a name="directxboundingsphere-constructors"></a>Construtores DirectX. BoundingSphere
+# <a name="directxboundingsphere-constructors"></a>Construtores DirectX.BoundingSphere
 
 Cria uma instância da classe BoundingSphere.
 
@@ -28,9 +28,9 @@ Cria uma instância da classe BoundingSphere.
 
 | Construtor                                                                     | Descrição                                                 |
 |:--------------------------------------------------------------------------------|:------------------------------------------------------------|
-| [**DirectX. BoundingSphere ()**](/windows/win32/api/appmgmt/ns-appmgmt-appcategoryinfo)                      | Cria uma instância da classe BoundingSphere.<br/> |
-| [**DirectX. BoundingSphere (const XMFLOAT3&, float)**](/windows/win32/api/directxcollision/nf-directxcollision-boundingsphere-boundingsphere(constxmfloat3__float)) | Cria uma instância da classe BoundingSphere.<br/> |
-| [**DirectX. BoundingSphere (const BoundingSphere&)**](/windows/win32/api/directxcollision/nf-directxcollision-boundingsphere-boundingsphere(constboundingsphere_)) | Cria uma instância da classe BoundingSphere.<br/> |
+| [**DirectX.BoundingSphere ()**](/windows/win32/api/appmgmt/ns-appmgmt-appcategoryinfo)                      | Cria uma instância da classe BoundingSphere.<br/> |
+| [**DirectX.BoundingSphere (const XMFLOAT3&,float)**](/windows/win32/api/directxcollision/nf-directxcollision-boundingsphere-boundingsphere(constxmfloat3__float)) | Cria uma instância da classe BoundingSphere.<br/> |
+| [**DirectX.BoundingSphere (const BoundingSphere&)**](/windows/win32/api/directxcollision/nf-directxcollision-boundingsphere-boundingsphere(constboundingsphere_)) | Cria uma instância da classe BoundingSphere.<br/> |
 
 
 

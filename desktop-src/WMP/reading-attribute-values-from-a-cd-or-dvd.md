@@ -3,29 +3,29 @@ title: Lendo valores de atributo de um CD ou DVD
 description: Lendo valores de atributo de um CD ou DVD
 ms.assetid: 441916fb-f66d-4a12-a95c-b47561c93e64
 keywords:
-- Windows Media Player, atributos para itens de mídia
-- Modelo de objeto do Windows Media Player, atributos para itens de mídia
+- Windows Media Player atributos para itens de mídia
+- Windows Media Player modelo de objeto, atributos para itens de mídia
 - modelo de objeto, atributos para itens de mídia
-- Windows Media Player Mobile, atributos para itens de mídia
-- Controle ActiveX do Windows Media Player, atributos para itens de mídia
-- Controle ActiveX móvel do Windows Media Player, atributos para itens de mídia
-- Controle ActiveX, atributos para itens de mídia
-- Biblioteca do Windows Media Player, atributos para itens de mídia
+- Windows Media Player Dispositivo móvel, atributos para itens de mídia
+- Windows Media Player ActiveX controle,atributos para itens de mídia
+- Windows Media Player Controle ActiveX dispositivo móvel, atributos para itens de mídia
+- ActiveX controle,atributos para itens de mídia
+- Windows Media Player biblioteca, atributos para itens de mídia
 - biblioteca, atributos para itens de mídia
-- atributos, lendo valores
+- atributos, valores de leitura
 - lendo valores de atributo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8909a752e9a974e4959be8ecd933d4bb3f1bfd4a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 800fda1bf3002f015873b69e29503ecba637a978bac1b167724c04f5f15228b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292596"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119861766"
 ---
 # <a name="reading-attribute-values-from-a-cd-or-dvd"></a>Lendo valores de atributo de um CD ou DVD
 
-Ao longo deste tópico, o objeto **Player** foi definido da seguinte maneira:
+Ao longo deste tópico, o **objeto Player** foi definido da seguinte maneira:
 
 
 ```C++
@@ -116,9 +116,9 @@ private void logDiscAttributes()
 [**Objeto de mídia**](media-object.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

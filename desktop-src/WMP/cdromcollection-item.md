@@ -4,8 +4,8 @@ description: O método item recupera o objeto cdrom no índice fornecido.
 ms.assetid: c1efa972-736d-4fa0-9835-14ee594ae719
 keywords:
 - método de item Windows Media Player
-- método de item Windows Media Player, classe cdromCollection
-- Classe cdromCollection Windows Media Player, método de item
+- método item Windows Media Player, cdromcollection classe
+- classe cdromcollection Windows Media Player, método de item
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a67dc58ae75819fa42940346b4f588b23a2f645a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a5f700a17c29c382e96a5601bd9bbfabf3c4ede1b253d9f271b1d37ab1106ee2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105796438"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119864076"
 ---
 # <a name="cdromcollectionitem-method"></a>Método cdromCollection. Item
 
@@ -49,7 +49,7 @@ retVal = CdromCollection.item(
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um objeto de **cdrom** .
 
@@ -61,7 +61,7 @@ Para usar esse método, é necessário ter acesso de leitura à biblioteca. Para
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de JScript a seguir usa *cdromCollection*. **Item** para imprimir o nome da playlist de cada CD disponível no computador. Se a unidade realmente contiver conteúdo de DVD, o Windows XP ou posterior será necessário. Um elemento de TextArea HTML foi criado com ID = "playlists". O objeto de **jogador** foi criado com ID = "Player".
+o exemplo a seguir JScript usa *cdromcollection*. **Item** para imprimir o nome da playlist de cada CD disponível no computador. se a unidade realmente contiver conteúdo de DVD, Windows XP ou posterior será necessário. Um elemento de TextArea HTML foi criado com ID = "playlists". O objeto de **jogador** foi criado com ID = "Player".
 
 
 ```JScript
@@ -112,10 +112,10 @@ for (var i = 0; i < Player.cdromCollection.count; i++){
 [**Playlist.name**](playlist-name.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Configurações. mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Configurações. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

@@ -4,12 +4,12 @@ description: Os desenvolvedores de servidor precisam garantir que os WinEvents a
 ms.assetid: 253e0162-20e6-4e89-b563-aae9cf7e53a9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: af6273411115e908303e863a34908e15ef91b19c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f7e148578f55f59d2827fd13a637baf5139c3f934ddf24059e437185c15349b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104160218"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119860386"
 ---
 # <a name="generating-appropriate-winevents"></a>Gerando WinEvents apropriado
 
@@ -21,7 +21,7 @@ Para enviar um evento, os servidores chamam [**NotifyWinEvent**](/windows/deskto
 
 ## <a name="general-events"></a>Eventos gerais
 
-WinEvents geral podem ser enviados para todos os elementos da interface do usuário. Estão incluídos:
+WinEvents geral podem ser enviados para todos os elementos da interface do usuário. Elas incluem:
 
 -   [**Evento \_ de \_Criação de objeto**](event-constants.md) (quando um objeto é criado)
 -   [**Evento \_ de \_Destruição de objeto**](event-constants.md) (quando um objeto é destruído)
@@ -38,9 +38,9 @@ Para obter mais informações sobre quais eventos são esperados para um tipo es
 -   [Constantes de evento](event-constants.md). Este tópico inclui informações sobre eventos gerados pelo sistema operacional e pelos aplicativos de servidor.
 -   Inspetor de eventos acessível (AccEvent.exe). Essa ferramenta mostra quais eventos o usuário envia para um determinado elemento de interface de usuário. Você pode usar essa ferramenta para saber quais eventos você pode esperar para um elemento de interface do usuário. Para obter mais informações, consulte [Inspetor de eventos acessível](accessible-event-watcher.md).
 
- 
+ 
 
- 
+ 
 
 
 

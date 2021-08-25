@@ -17,12 +17,12 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 913dbddef0c509174d3600798a6e1380d6098808
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a1086156fcaa6b8736c049c93bacc5dfd1f5e915ba8a7006b3c71e654ba65f52
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105763496"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119894576"
 ---
 # <a name="id3dx12pipelineparsercallbacks-depthstencilstatecb-method-d3dx12h"></a>Método ID3DX12PipelineParserCallbacks DepthStencilStateCb (D3DX12. h)
 
@@ -52,7 +52,7 @@ Detalhes do subobjeto de estado de estêncil de profundidade analisado de um flu
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Não retorna nada.
 

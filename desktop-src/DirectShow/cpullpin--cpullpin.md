@@ -1,7 +1,7 @@
 ---
-description: CPullPin. ~ CPullPin destruidor-método Destruitor.
+description: Destruidor CPullPin.~CPullPin – método destruidor.
 ms.assetid: 06167630-3b75-4433-8b2f-2127ffb4d389
-title: CPullPin. ~ CPullPin Destruitor (Pullpin. h)
+title: Destruidor CPullPin.~CPullPin (Pullpin.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e8f0b72716dcbfb438a84eb1ce852f8fc07f2898
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: d17d98903a48b995cfe3c82ac746dfe7b8f0268beb03f34ae8228f50f5022920
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108085484"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119908926"
 ---
-# <a name="cpullpincpullpin-destructor"></a>Destruidor CPullPin. ~ CPullPin
+# <a name="cpullpincpullpin-destructor"></a>Destruidor CPullPin.~CPullPin
 
 Método destruidor.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -42,12 +42,12 @@ Método destruidor.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Pullpin. h</dt> </dl>                                                                                                       |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Pullpin.h</dt> </dl>                                                                                                       |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

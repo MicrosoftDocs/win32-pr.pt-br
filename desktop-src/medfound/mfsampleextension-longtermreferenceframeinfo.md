@@ -4,12 +4,12 @@ ms.assetid: 0632D780-C56B-4FDB-8A76-B7A7DE414242
 title: Atributo MFSampleExtension_LongTermReferenceFrameInfo (Mfapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3af85ffa5876cdf58a21a6933c46f460c23e7456
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 5642c246adf0e5e1c10249085201fba3dc430b6547516b79fe4929e9de4b998a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105767800"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119848116"
 ---
 # <a name="mfsampleextension_longtermreferenceframeinfo-attribute"></a>\_Atributo MFSampleExtension LongTermReferenceFrameInfo
 
@@ -37,9 +37,9 @@ O segundo campo, bits \[ 16.. 31 \] , é um bitmap que consiste em *MaxNumLTRFra
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos Windows 8.1 aplicativos de \[ área de trabalho \| UWP\]<br/>                                |
-| Servidor mínimo com suporte<br/> | \[Aplicativos UWP para aplicativos da área de trabalho do Windows Server 2012 R2 \|\]<br/>                     |
-| parâmetro<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8.1 \[ aplicativos UWP de aplicativos de desktop \|\]<br/>                                |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[Aplicativos de aplicativos UWP da área de trabalho R2 \|\]<br/>                     |
+| Cabeçalho<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
 
 
 

@@ -3,7 +3,7 @@ title: Propriedade ContextPopup. ContextMaps
 description: Representa um contêiner para elementos ContextMap.
 ms.assetid: 06dfd4ba-a1d8-48bb-b185-d265e007a820
 keywords:
-- Faixa de ContextPopup de propriedades do Windows. ContextMaps
+- propriedade ContextPopup. ContextMaps Windows Ribbon
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 034381c4af840219ff1d6dd4d7a73aa34f528915
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 05b6f6e2f1533553c33949b300213c1957cb47b8606d811f1b6f1f8f6cf33b9a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105765260"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119840826"
 ---
 # <a name="contextpopupcontextmaps-property"></a>Propriedade ContextPopup. ContextMaps
 
@@ -158,8 +158,8 @@ Esta seção de código mostra uma declaração de controle **ContextPopup. Cont
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/> |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>              |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/> |
 
 
 

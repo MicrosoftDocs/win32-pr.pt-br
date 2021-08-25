@@ -1,30 +1,30 @@
 ---
-title: Escrevendo uma função de retorno de chamada do temporizador
-description: Escrevendo uma função de retorno de chamada do temporizador
+title: Escrevendo uma função de retorno de chamada de temporizador
+description: Escrevendo uma função de retorno de chamada de temporizador
 ms.assetid: 85260b6b-42de-43f4-83b7-94edbf660006
 keywords:
 - temporizadores de multimídia, funções de retorno de chamada
 - temporizadores, funções de retorno de chamada
-- gravando funções de retorno de chamada do timer
-- temporizadores de multimídia, gravando funções de retorno de chamada
-- temporizadores, gravando funções de retorno de chamada
+- escrevendo funções de retorno de chamada de temporizador
+- temporizadores multimídia, escrevendo funções de retorno de chamada
+- temporizadores, escrevendo funções de retorno de chamada
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 609cf2dda455897fb6cae0f3c48252016ba54cb9
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: f5b8680fc4d697c33514276276daaa2a4d75577bfbd78fa3caffc7f426ca9d70
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103917212"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119891776"
 ---
-# <a name="writing-a-timer-callback-function"></a>Escrevendo uma função de retorno de chamada do temporizador
+# <a name="writing-a-timer-callback-function"></a>Escrevendo uma função de retorno de chamada de temporizador
 
 > [!Note]  
-> Este tópico descreve uma função obsoleta. Os novos aplicativos devem usar a função [**CreateTimerQueueTimer**](/windows/desktop/api/threadpoollegacyapiset/nf-threadpoollegacyapiset-createtimerqueuetimer) para criar temporizadores.
+> Este tópico descreve uma função obsoleta. Novos aplicativos devem usar a [**função CreateTimerQueueTimer**](/windows/desktop/api/threadpoollegacyapiset/nf-threadpoollegacyapiset-createtimerqueuetimer) para criar temporizadores.
 
- 
+ 
 
-A seguinte função de retorno de chamada, OneShotTimer, invalida o identificador para o evento de temporizador único e chama uma rotina de temporizador para manipular as tarefas específicas do aplicativo. Para obter mais informações, consulte [**timeproc**](/previous-versions//dd757631(v=vs.85)).
+A função de retorno de chamada a seguir, OneShotTimer, invalida o identificador do evento de temporizador único e chama uma rotina de temporizador para lidar com as tarefas específicas do aplicativo. Para obter mais informações, consulte [**TimeProc**](/previous-versions//dd757631(v=vs.85)).
 
 
 ```C++
@@ -44,9 +44,9 @@ void CALLBACK OneShotTimer(UINT wTimerID, UINT msg,
 
 <dl> <dt>
 
-[Usando temporizadores de multimídia](using-multimedia-timers.md)
+[Usando temporizadores multimídia](using-multimedia-timers.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,7 +1,7 @@
 ---
 description: Ponteiro para uma seção crítica.
 ms.assetid: 7d949b7f-a6a7-4ab5-b651-f85b70d55065
-title: 'Membro CBaseMediaFilter:: m_pLock (Amfilter. h)'
+title: Membro CBaseMediaFilter::m_pLock (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 126aa213004dd032eea43b28198b6f8b49fe7f3e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ad92cf07cc096c50ffa50f862c26f6133fc8dbb9b9b059419bb516e07cbd5daa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752906"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119910786"
 ---
-# <a name="cbasemediafilterm_plock-member"></a>Membro de CBaseMediaFilter:: m \_ pLock
+# <a name="cbasemediafilterm_plock-member"></a>Membro CBaseMediaFilter::m \_ pLock
 
 Ponteiro para uma seção crítica.
 
@@ -38,7 +38,7 @@ CCritSec *m_pLock;
 
 ## <a name="remarks"></a>Comentários
 
-A seção crítica é mantida durante as transições de estado ([**CBaseMediaFilter:: Run**](cbasemediafilter-run.md), [**CBaseMediaFilter::P ause**](cbasemediafilter-pause.md), [**CBaseMediaFilter:: Stop**](cbasemediafilter-stop.md)), ao acessar o relógio de referência ([**CBaseMediaFilter:: setsyncname**](cbasemediafilter-setsyncsource.md), [**CBaseMediaFilter:: getsyncname**](cbasemediafilter-getsyncsource.md)) e no método [**CBaseMediaFilter:: IsActive**](cbasemediafilter-isactive.md) .
+A seção crítica é mantida durante transições de estado ([**CBaseMediaFilter::Run**](cbasemediafilter-run.md), [**CBaseMediaFilter::P ause**](cbasemediafilter-pause.md), [**CBaseMediaFilter::Stop**](cbasemediafilter-stop.md)), ao acessar o relógio de referência ([**CBaseMediaFilter::SetSyncSource**](cbasemediafilter-setsyncsource.md), [**CBaseMediaFilter::GetSyncSource**](cbasemediafilter-getsyncsource.md)) e no [**método CBaseMediaFilter::IsActive.**](cbasemediafilter-isactive.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,8 +46,8 @@ A seção crítica é mantida durante as transições de estado ([**CBaseMediaFi
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amfilter.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

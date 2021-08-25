@@ -1,7 +1,7 @@
 ---
 description: Contém várias configurações de segurança.
 ms.assetid: 1d912fb1-8fb4-4761-8991-5a50ffb0399e
-title: Elemento Security (MSM) (LAN_policy) (WLAN)
+title: Elemento security (MSM) (LAN_policy) (WLAN)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: f6ea42a83d39c328db88e992555e5d593cc778b6
-ms.sourcegitcommit: 4570ac533e129ff88b23f2c2b69e0140ead3a4a4
+ms.openlocfilehash: c885f330538177cddca40c47cf6a5ad910030c6c5f4c3429ca7bd92c3b437b20
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "105779976"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119912686"
 ---
 # <a name="security-msm-element-lan_policy-for-wlan"></a>Elemento Security (MSM) (LAN_policy) para WLAN
 
-O elemento Security (MSM) contém várias configurações de segurança.
+O elemento de segurança (MSM) contém várias configurações de segurança.
 
 ``` syntax
 <xs:element name="security"
@@ -232,7 +232,7 @@ O elemento Security (MSM) contém várias configurações de segurança.
 </xs:element>
 ```
 
-O elemento é definido pelo elemento [**msm**](wlan-profileschema-msm-wlanprofile-element.md) .
+O elemento é definido pelo [**elemento MSM.**](wlan-profileschema-msm-wlanprofile-element.md)
 
 ## <a name="child-elements"></a>Elementos filho
 
@@ -240,30 +240,30 @@ O elemento é definido pelo elemento [**msm**](wlan-profileschema-msm-wlanprofil
 
 | Elemento                                                                            | Type                                                              | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**authEncryption**](wlan-profileschema-authencryption-security-element.md)       |                                                                   | Especifica o par de autenticação e criptografia a ser usado para este perfil.<br/>                                                                                                                                                                                                                                                                                                                                     |
-| [**Authentication**](wlan-profileschema-authentication-authencryption-element.md) |                                                                   | Especifica o par de autenticação e criptografia a ser usado para este perfil.<br/>                                                                                                                                                                                                                                                                                                                                     |
-| [**encripta**](wlan-profileschema-encryption-authencryption-element.md)         |                                                                   | Define a criptografia de dados a ser usada para se conectar à LAN sem fio.<br/>                                                                                                                                                                                                                                                                                                                                                   |
-| [**keyIndex**](wlan-profileschema-keyindex-security-element.md)                   |                                                                   | Especifica qual índice de chave deve ser usado para criptografar o tráfego sem fio. Isso só é usado quando KeyType está definido como networkKey.<br/>                                                                                                                                                                                                                                                                                          |
-| [**keyMaterial**](wlan-profileschema-keymaterial-sharedkey-element.md)            | [cadeia de caracteres](/dotnet/api/system.string)   | Contém a chave de rede ou frase secreta.<br/>                                                                                                                                                                                                                                                                                                                                                                           |
-| [**keyType**](wlan-profileschema-keytype-sharedkey-element.md)                    |                                                                   | Tipo de chave.<br/>                                                                                                                                                                                                                                                                                                                                                                                                      |
-| [**PMKCacheMode**](wlan-profileschema-pmkcachemode-security-element.md)           |                                                                   | Indica se o cache PMK será usado. Esse elemento é válido somente para redes definidas por WPA2.<br/> **Windows XP com SP3 e API de LAN sem fio para Windows XP com SP2:** Não há suporte para este elemento.<br/>                                                                                                                                                                                                 |
-| [**PMKCacheSize**](wlan-profileschema-pmkcachesize-security-element.md)           |                                                                   | Especifica o número de entradas no cache OMK no cliente. Esse elemento é válido somente para redes definidas por WPA2 com o modo PMKCache definido como habilitado. Se o modo PMKCache estiver habilitado e esse elemento estiver ausente, o tamanho do cache será padronizado para 128 entradas.<br/> **Windows XP com SP3 e API de LAN sem fio para Windows XP com SP2:** Não há suporte para este elemento.<br/>                                   |
-| [**PMKCacheTTL**](wlan-profileschema-pmkcachettl-security-element.md)             |                                                                   | Indica o período de tempo, em minutos, que um cache de PMK será mantido. Esse elemento é válido somente para redes definidas por WPA2 com o modo PMKCache definido como habilitado.<br/> **Windows XP com SP3 e API de LAN sem fio para Windows XP com SP2:** Não há suporte para este elemento.<br/>                                                                                                                                  |
-| [**preAuthMode**](wlan-profileschema-preauthmode-security-element.md)             |                                                                   | Determina se a pré-autenticação será usada pelo cliente. A pré-autenticação habilita o roaming rápido seguro de WPA2. Esse elemento é válido somente para redes definidas por WPA2 com o modo PMKCache definido como habilitado. Se o modo PMKCache estiver habilitado e esse elemento estiver ausente, o valor padrão será desabilitado.<br/> **Windows XP com SP3 e API de LAN sem fio para Windows XP com SP2:** Não há suporte para este elemento.<br/> |
-| [**preAuthThrottle**](wlan-profileschema-preauththrottle-security-element.md)     |                                                                   | Indica o número de tentativas ao se autenticar em APs vizinhos. Esse elemento é válido somente para redes definidas por WPA2 com o modo PMKCache definido como habilitado. Se o modo PMKCache estiver habilitado e esse elemento estiver ausente, o número de tentativas padrão será 3.<br/> **Windows XP com SP3 e API de LAN sem fio para Windows XP com SP2:** Não há suporte para este elemento.<br/>                                      |
-| [**protected**](wlan-profileschema-protected-sharedkey-element.md)                | [booleano](/dotnet/api/system.boolean) | Indica se a chave está criptografada.<br/> **Windows XP com SP3 e API de LAN sem fio para Windows XP com SP2:** Esse elemento deve ter um valor de **false**.<br/>                                                                                                                                                                                                                                             |
-| [**sharedKey**](wlan-profileschema-sharedkey-security-element.md)                 |                                                                   | Contém as informações de chave compartilhada. Esse elemento só será necessário se as chaves WEP ou PSK forem necessárias para o par de autenticação e criptografia.<br/>                                                                                                                                                                                                                                                                    |
-| [**useOneX**](wlan-profileschema-useonex-authencryption-element.md)               | [booleano](/dotnet/api/system.boolean) | Indica se 802.1 X é usado. Esse sinalizador é opcional.<br/>                                                                                                                                                                                                                                                                                                                                                          |
+| [**authEncryption**](wlan-profileschema-authencryption-security-element.md)       |                                                                   | Especifica o par de autenticação e criptografia a ser usado para esse perfil.<br/>                                                                                                                                                                                                                                                                                                                                     |
+| [**Autenticação**](wlan-profileschema-authentication-authencryption-element.md) |                                                                   | Especifica o par de autenticação e criptografia a ser usado para esse perfil.<br/>                                                                                                                                                                                                                                                                                                                                     |
+| [**Criptografia**](wlan-profileschema-encryption-authencryption-element.md)         |                                                                   | Define a criptografia de dados a ser usada para se conectar à LAN sem fio.<br/>                                                                                                                                                                                                                                                                                                                                                   |
+| [**keyIndex**](wlan-profileschema-keyindex-security-element.md)                   |                                                                   | Especifica qual índice de chave deve ser usado para criptografar o tráfego sem fio. Isso só é usado quando keyType é definido como networkKey.<br/>                                                                                                                                                                                                                                                                                          |
+| [**keyMaterial**](wlan-profileschema-keymaterial-sharedkey-element.md)            | [cadeia de caracteres](/dotnet/api/system.string)   | Contém a chave de rede ou a frase-senha.<br/>                                                                                                                                                                                                                                                                                                                                                                           |
+| [**Keytype**](wlan-profileschema-keytype-sharedkey-element.md)                    |                                                                   | Tipo de chave.<br/>                                                                                                                                                                                                                                                                                                                                                                                                      |
+| [**PMKCacheMode**](wlan-profileschema-pmkcachemode-security-element.md)           |                                                                   | Indica se o cache PMK será usado. Esse elemento é válido somente para redes definidas pelo WPA2.<br/> **Windows XP com SP3 e API de LAN sem fio para Windows XP com SP2:** Não há suporte para esse elemento.<br/>                                                                                                                                                                                                 |
+| [**PMKCacheSize**](wlan-profileschema-pmkcachesize-security-element.md)           |                                                                   | Especifica o número de entradas no cache do OMK no cliente. Esse elemento é válido somente para redes definidas pelo WPA2 com o modo PMKCache definido como habilitado. Se o modo PMKCache estiver habilitado e esse elemento estiver ausente, o tamanho do cache será padrão para 128 entradas.<br/> **Windows XP com SP3 e API de LAN sem fio para Windows XP com SP2:** Não há suporte para esse elemento.<br/>                                   |
+| [**PMKCacheTTL**](wlan-profileschema-pmkcachettl-security-element.md)             |                                                                   | Indica o período de tempo, em minutos, que um cache PMK será mantido. Esse elemento é válido somente para redes definidas pelo WPA2 com o modo PMKCache definido como habilitado.<br/> **Windows XP com SP3 e API de LAN sem fio para Windows XP com SP2:** Não há suporte para esse elemento.<br/>                                                                                                                                  |
+| [**preAuthMode**](wlan-profileschema-preauthmode-security-element.md)             |                                                                   | Determina se a pré-autenticação será usada pelo cliente. A pré-autenticação habilita o roaming rápido seguro do WPA2. Esse elemento é válido somente para redes definidas pelo WPA2 com o modo PMKCache definido como habilitado. Se o modo PMKCache estiver habilitado e esse elemento estiver ausente, o valor padrão será desabilitado.<br/> **Windows XP com SP3 e API de LAN sem fio para Windows XP com SP2:** Não há suporte para esse elemento.<br/> |
+| [**preAuthThrottle**](wlan-profileschema-preauththrottle-security-element.md)     |                                                                   | Indica o número de tentativas ao pré-autenticar para APs vizinhos. Esse elemento é válido somente para redes definidas pelo WPA2 com o modo PMKCache definido como habilitado. Se o modo PMKCache estiver habilitado e esse elemento estiver ausente, o número de tentativas será padrão como 3.<br/> **Windows XP com SP3 e API de LAN sem fio para Windows XP com SP2:** Não há suporte para esse elemento.<br/>                                      |
+| [**protected**](wlan-profileschema-protected-sharedkey-element.md)                | [booleano](/dotnet/api/system.boolean) | Indica se a chave está criptografada.<br/> **Windows XP com SP3 e API de LAN sem fio para Windows XP com SP2:** Esse elemento deve ter um valor **false.**<br/>                                                                                                                                                                                                                                             |
+| [**sharedKey**](wlan-profileschema-sharedkey-security-element.md)                 |                                                                   | Contém as informações de chave compartilhada. Esse elemento só será necessário se as chaves WEP ou PSK são necessárias para o par de autenticação e criptografia.<br/>                                                                                                                                                                                                                                                                    |
+| [**useOneX**](wlan-profileschema-useonex-authencryption-element.md)               | [booleano](/dotnet/api/system.boolean) | Indica se 802.1X é usado. Esse sinalizador é opcional.<br/>                                                                                                                                                                                                                                                                                                                                                          |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-O elemento [**fipsmode**](wlan-profileschema-fipsmode-authencryption-element.md) pode ser inserido como um filho do elemento [**authEncryption**](wlan-profileschema-authencryption-security-element.md) . O elemento [**Onex**](onexschema-onex-element.md) pode ser inserido como um filho do elemento **Security (MSM)** .
+O [**elemento FIPSMode**](wlan-profileschema-fipsmode-authencryption-element.md) pode ser inserido como um filho do [**elemento authEncryption.**](wlan-profileschema-authencryption-security-element.md) O [**elemento OneX**](onexschema-onex-element.md) pode ser inserido como um filho do **elemento de segurança (MSM).**
 
 ## <a name="examples"></a>Exemplos
 
-Para exibir perfis de exemplo que usam o elemento de **segurança** , consulte [exemplos de perfil sem fio](wireless-profile-samples.md).
+Para exibir perfis de exemplo que usam o elemento **de** segurança, consulte [Exemplos de perfil sem fio](wireless-profile-samples.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -271,8 +271,8 @@ Para exibir perfis de exemplo que usam o elemento de **segurança** , consulte [
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente Windows Vista, Windows XP com \[ aplicativos de área de trabalho do SP3\]<br/> |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                |
+| Cliente mínimo com suporte<br/> | Windows Vista, Windows XP somente com aplicativos da área de trabalho SP3 \[\]<br/> |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                |
 | Redistribuível<br/>          | API de LAN sem fio para Windows XP com SP2<br/>                 |
 
 
@@ -287,7 +287,7 @@ Para exibir perfis de exemplo que usam o elemento de **segurança** , consulte [
 **Contexto de definição do elemento no esquema**
 </dt> <dt>
 
-[**MSM**](wlan-profileschema-msm-wlanprofile-element.md)
+[**Msm**](wlan-profileschema-msm-wlanprofile-element.md)
 </dt> <dt>
 
 **Possível elemento pai imediato na instância de esquema**

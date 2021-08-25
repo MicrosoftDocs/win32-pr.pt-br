@@ -2,7 +2,7 @@
 description: É uma classe base para todos os eventos intrínsecos relacionados a uma classe.
 ms.assetid: 554bbabd-2639-40f5-8786-6df2188db0ec
 ms.tgt_platform: multiple
-title: Classe __ClassOperationEvent
+title: __ClassOperationEvent classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,16 +17,16 @@ api_type:
 - Schema
 api_location:
 - All
-ms.openlocfilehash: 0c7a78219cec5c014e289dad4bf1cc29f0466a06
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 52ff5854d5510b22eaf264bcdbbfd39bbb02c7d2a2766eb3fbd8f336bd0b8074
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105782673"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119860606"
 ---
 # <a name="__classoperationevent-class"></a>\_\_Classe ClassOperationEvent
 
-A classe de sistema **\_ \_ ClassOperationEvent** é uma classe base para todos os eventos intrínsecos relacionados a uma classe.
+A **\_ \_ classe de sistema ClassOperationEvent** é uma classe base para todos os eventos intrínsecos relacionados a uma classe.
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas. As propriedades são listadas em ordem alfabética, não em ordem MOF.
 
@@ -43,26 +43,26 @@ class __ClassOperationEvent : __Event
 
 ## <a name="members"></a>Membros
 
-A classe **\_ \_ ClassOperationEvent** tem estes tipos de membros:
+A **\_ \_ classe ClassOperationEvent** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **\_ \_ ClassOperationEvent** tem essas propriedades.
+A **\_ \_ classe ClassOperationEvent** tem essas propriedades.
 
 <dl> <dt>
 
-**\_descritor de segurança**
+**DESCRITOR \_ DE SEGURANÇA**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz **uint8**
+Tipo de dados: **matriz uint8**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Descritor usado pelo provedor de eventos para determinar quais usuários podem receber o evento. Esta propriedade é herdada do [**\_ \_ evento**](--event.md).
+Descritor usado pelo provedor de eventos para determinar quais usuários podem receber o evento. Essa propriedade é herdada do [**\_ \_ Evento**](--event.md).
 
 </dd> <dt>
 
@@ -75,30 +75,30 @@ Tipo de dados: **objeto**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Classe afetada pelo evento. Para eventos de criação, essa é a classe recém-criada. Para eventos de modificação, esta é a nova versão da classe alterada. Para eventos de exclusão, essa é a classe excluída.
+Classe afetada pelo evento. Para eventos de criação, essa é a classe recém-criada. Para eventos de modificação, essa é a nova versão da classe alterada. Para eventos de exclusão, essa é a classe excluída.
 
 </dd> <dt>
 
-**HORA da \_ criação**
+**TEMPO \_ CRIADO**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Valor exclusivo que indica a hora em que o evento foi gerado. Este é um valor de 64 bits que representa o número de intervalos de 100 nanossegundos após 1º de janeiro de 1601. As informações estão no formato UTC (tempo Universal Coordenado). Esta propriedade é herdada do [**\_ \_ evento**](--event.md).
+Valor exclusivo que indica a hora em que o evento foi gerado. Esse é um valor de 64 bits que representa o número de intervalos de 100 nanossegundos após 1º de janeiro de 1601. As informações estão no formato UTC (Tempos Universais Coordenados). Essa propriedade é herdada do [**\_ \_ Evento**](--event.md).
 
-Para obter mais informações sobre como usar valores de **UInt64** em scripts, consulte [scripts no WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obter mais informações sobre como **usar valores uint64** em scripts, consulte [Scripts no WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-A classe **\_ \_ ClassOperationEvent** é derivada de [**\_ \_ Event**](--event.md).
+A **\_ \_ classe ClassOperationEvent** é derivada de [**\_ \_ Event**](--event.md).
 
-As instâncias de **\_ \_ ClassOperationEvent** não são criadas; apenas instâncias de suas subclasses são criadas. As classes a seguir derivam de **\_ \_ ClassOperationEvent**:
+Instâncias de **\_ \_ ClassOperationEvent** não são criadas; somente instâncias de suas subclasses são criadas. As classes a seguir derivam **\_ \_ de ClassOperationEvent**:
 
 [**\_\_ClassCreationEvent**](--classcreationevent.md)
 
@@ -114,7 +114,7 @@ As instâncias de **\_ \_ ClassOperationEvent** não são criadas; apenas instâ
 |-------------------------------------|--------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>       |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/> |
-| Namespace<br/>                | Todos os namespaces do WMI<br/>  |
+| Namespace<br/>                | Todos os namespaces WMI<br/>  |
 
 
 

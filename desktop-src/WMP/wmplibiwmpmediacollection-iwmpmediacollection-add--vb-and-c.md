@@ -4,8 +4,8 @@ description: O método add adiciona um novo item de mídia ou lista de reproduç
 ms.assetid: a3539646-797b-4481-a31e-86771f3633a9
 keywords:
 - Adicionar método Windows Media Player
-- Adicionar método Windows Media Player, interface IWMPMediaCollection
-- Interface IWMPMediaCollection Windows Media Player, Adicionar método
+- adicionar método Windows Media Player, interface IWMPMediaCollection
+- Windows Media Player de interface IWMPMediaCollection, método add
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7953067281e394df71a1a53c874cb80837a5f35d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 778850da4094d8ac745018b115248de9008d15339b7ffee75de177cf957d3fc2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105753383"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119861147"
 ---
 # <a name="iwmpmediacollectionadd-method"></a>Método IWMPMediaCollection:: Add
 
@@ -60,7 +60,7 @@ Um **System. String** que é a URL que especifica o local do item de mídia ou d
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 A interface **WMPLib. IWMPMedia** para o item adicionado ou a lista de reprodução.
 
@@ -74,7 +74,7 @@ Antes de chamar esse método, você deve ter acesso completo à biblioteca. Para
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir adiciona três objetos de mídia à coleção de mídia do Windows Media Player. O objeto AxWMPLib. AxWindowsMediaPlayer é representado pela variável chamada Player.
+o exemplo a seguir adiciona três objetos de mídia à coleção de mídia Windows Media Player. O objeto AxWMPLib. AxWindowsMediaPlayer é representado pela variável chamada Player.
 
 
 ```CSharp

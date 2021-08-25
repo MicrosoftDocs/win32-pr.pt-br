@@ -1,19 +1,19 @@
 ---
-description: Permite que o processador de vídeo avançado (EVR) aprimore o desempenho ignorando o segundo campo de cada quadro entrelaçado.
+description: Permite que o EVR (Renderização de Vídeo Aprimorado) melhore o desempenho ignorando o segundo campo de cada quadro entrelaçado.
 ms.assetid: de7efc6a-19ae-4f3a-8675-38fda3c979e2
-title: Atributo EVRConfig_AllowDropToHalfInterlace (UUIDs. h)
+title: EVRConfig_AllowDropToHalfInterlace atributo (Uuids.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c9989fe833ea763166ba870c331add5c18bcb45
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5cfae2bf47e71d1c6cb7dbed60069a79f56cee3249c362acf6c0efc99dc06f55
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164187"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119828146"
 ---
-# <a name="evrconfig_allowdroptohalfinterlace-attribute"></a>\_Atributo EVRConfig AllowDropToHalfInterlace
+# <a name="evrconfig_allowdroptohalfinterlace-attribute"></a>Atributo \_ AllowDropToHalfInterdrop EVRConfig
 
-Permite que o processador de vídeo avançado (EVR) aprimore o desempenho ignorando o segundo campo de cada quadro entrelaçado.
+Permite que o EVR (Renderização de Vídeo Aprimorado) melhore o desempenho ignorando o segundo campo de cada quadro entrelaçado.
 
 ## <a name="data-type"></a>Tipo de dados
 
@@ -21,17 +21,17 @@ Permite que o processador de vídeo avançado (EVR) aprimore o desempenho ignora
 
 ## <a name="getset"></a>Obter/definir
 
-Para obter esse atributo, chame [**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
+Para obter esse atributo, chame [**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
 
-Para definir esse atributo, chame [**IMFAttributes:: setuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
+Para definir esse atributo, chame [**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
 
 ## <a name="remarks"></a>Comentários
 
-Esse atributo pode ser definido no coletor de mídia do EVR. Para definir o atributo, use **QueryInterface** para consultar o coletor de mídia do EVR para a interface [**IMFAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) .
+Esse atributo pode ser definido no sink de mídia EVR. Para definir o atributo, use **QueryInterface** para consultar o sink de mídia EVR para a interface [**IMFAttributes.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes)
 
-Definir esse atributo tem o mesmo efeito que definir o sinalizador **MFVideoMixPrefs \_ ALLOWDROPTOHALFINTERLACE** no EVR. Consulte [**MFVideoMixPrefs**](/windows/desktop/api/evr/ne-evr-mfvideomixprefs) para obter uma descrição desse sinalizador.
+Definir esse atributo tem o mesmo efeito que definir o sinalizador **\_ AllowDropToHalfInternix MFVideoMixPrefs** no EVR. Consulte [**MFVideoMixPrefs**](/windows/desktop/api/evr/ne-evr-mfvideomixprefs) para ver uma descrição desse sinalizador.
 
-A constante de GUID para esse atributo é exportada de strmiids. lib.
+A constante GUID para esse atributo é exportada de strmiids.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -39,9 +39,9 @@ A constante de GUID para esse atributo é exportada de strmiids. lib.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                            |
-| parâmetro<br/>                   | <dl> <dt>UUIDs. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/>                            |
+| Cabeçalho<br/>                   | <dl> <dt>Uuids.h</dt> </dl> |
 
 
 
@@ -49,7 +49,7 @@ A constante de GUID para esse atributo é exportada de strmiids. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Atributos EVR](enhanced-video-renderer-attributes.md)

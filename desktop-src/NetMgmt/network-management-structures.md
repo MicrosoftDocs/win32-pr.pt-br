@@ -4,12 +4,12 @@ description: As estruturas de gerenciamento de rede podem ser agrupadas da segui
 ms.assetid: a4b05054-bef2-4cab-89f6-725d92ee75b8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 247dd9afc6fb38cbede332e90f2b648a0e2bbc26
-ms.sourcegitcommit: 1e64562147b11f90de802c2431173582d066fae6
+ms.openlocfilehash: e71d5e6b8244d8177d013653d4e102fece0eba8c18baa4a9918c3e6280eb8bdb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "104294584"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119891226"
 ---
 # <a name="network-management-structures"></a>Estruturas de gerenciamento de rede
 
@@ -26,7 +26,7 @@ As estruturas de gerenciamento de rede podem ser agrupadas da seguinte maneira.
 [**\_outras \_ informações do usuário**](/windows/desktop/api/Lmalert/ns-lmalert-user_other_info)  
 </dl>
 
-## <a name="azure-active-directory-join-information-structures"></a>Estruturas de informações de Azure Active Directory junção
+## <a name="azure-active-directory-join-information-structures"></a>Azure Active Directory Estruturas de informações de junção
 
 <dl>
 
@@ -144,121 +144,121 @@ As estruturas de gerenciamento de rede podem ser agrupadas da seguinte maneira.
 [**Informações do servidor \_ \_ 1542**](/windows/desktop/api/Lmserver/ns-lmserver-server_info_1542)  
 [**Informações do servidor \_ \_ 1544**](/windows/desktop/api/Lmserver/ns-lmserver-server_info_1544)  
 [**Informações do servidor \_ \_ 1550**](/windows/desktop/api/Lmserver/ns-lmserver-server_info_1550)  
-[**Informações do servidor \_ \_ 1552**](/windows/desktop/api/Lmserver/ns-lmserver-server_info_1552)  
+[**INFORMAÇÕES \_ DO \_ SERVIDOR 1552**](/windows/desktop/api/Lmserver/ns-lmserver-server_info_1552)  
 </dl>
 
 ## <a name="server-and-workstation-transport-structures"></a>Estruturas de transporte de servidor e estação de trabalho
 
 <dl>
 
-[**Informações de transporte do servidor \_ \_ \_ 0**](/windows/desktop/api/Lmserver/ns-lmserver-server_transport_info_0)  
-[**Informações de transporte do servidor \_ \_ \_ 1**](/windows/desktop/api/Lmserver/ns-lmserver-server_transport_info_1)  
-[**Informações de transporte do servidor \_ \_ \_ 2**](/windows/desktop/api/Lmserver/ns-lmserver-server_transport_info_2)  
-[**Informações de transporte do servidor \_ \_ \_ 3**](/windows/desktop/api/Lmserver/ns-lmserver-server_transport_info_3)  
-[**\_Informações de transporte WKSTA \_ \_ 0**](/windows/desktop/api/Lmwksta/ns-lmwksta-wksta_transport_info_0)  
+[**INFORMAÇÕES \_ DE TRANSPORTE DO SERVIDOR \_ \_ 0**](/windows/desktop/api/Lmserver/ns-lmserver-server_transport_info_0)  
+[**INFORMAÇÕES \_ DE TRANSPORTE DO SERVIDOR \_ \_ 1**](/windows/desktop/api/Lmserver/ns-lmserver-server_transport_info_1)  
+[**INFORMAÇÕES \_ DE TRANSPORTE DO SERVIDOR \_ \_ 2**](/windows/desktop/api/Lmserver/ns-lmserver-server_transport_info_2)  
+[**INFORMAÇÕES \_ DE TRANSPORTE DO SERVIDOR \_ \_ 3**](/windows/desktop/api/Lmserver/ns-lmserver-server_transport_info_3)  
+[**INFORMAÇÕES DE TRANSPORTE DO WKSTA \_ \_ \_ 0**](/windows/desktop/api/Lmwksta/ns-lmwksta-wksta_transport_info_0)  
 </dl>
 
-## <a name="share-structures"></a>Compartilhar estruturas
+## <a name="share-structures"></a>Estruturas de compartilhamento
 
 <dl>
 
-[**Informações de compartilhamento \_ \_ 0**](/windows/desktop/api/lmshare/ns-lmshare-share_info_0)  
-[**Informações de compartilhamento \_ \_ 1**](/windows/desktop/api/lmshare/ns-lmshare-share_info_1)  
-[**Informações de compartilhamento \_ \_ 2**](/windows/desktop/api/lmshare/ns-lmshare-share_info_2)  
-[**Informações de compartilhamento \_ \_ 501**](/windows/desktop/api/lmshare/ns-lmshare-share_info_501)  
-[**Informações de compartilhamento \_ \_ 502**](/windows/desktop/api/lmshare/ns-lmshare-share_info_502)  
-[**Informações de compartilhamento \_ \_ 1004**](/windows/desktop/api/lmshare/ns-lmshare-share_info_1004)  
-[**Informações de compartilhamento \_ \_ 1005**](/windows/desktop/api/lmshare/ns-lmshare-share_info_1005)  
-[**Informações de compartilhamento \_ \_ 1006**](/windows/desktop/api/lmshare/ns-lmshare-share_info_1006)  
-[**Informações de compartilhamento \_ \_ 1501**](/windows/desktop/api/lmshare/ns-lmshare-share_info_1501)  
+[**COMPARTILHAR \_ INFORMAÇÕES \_ 0**](/windows/desktop/api/lmshare/ns-lmshare-share_info_0)  
+[**COMPARTILHAR \_ INFORMAÇÕES \_ 1**](/windows/desktop/api/lmshare/ns-lmshare-share_info_1)  
+[**COMPARTILHAR \_ INFORMAÇÕES \_ 2**](/windows/desktop/api/lmshare/ns-lmshare-share_info_2)  
+[**INFORMAÇÕES \_ DE \_ COMPARTILHAMENTO 501**](/windows/desktop/api/lmshare/ns-lmshare-share_info_501)  
+[**INFORMAÇÕES \_ DE \_ COMPARTILHAMENTO 502**](/windows/desktop/api/lmshare/ns-lmshare-share_info_502)  
+[**INFORMAÇÕES \_ DE \_ COMPARTILHAMENTO 1004**](/windows/desktop/api/lmshare/ns-lmshare-share_info_1004)  
+[**INFORMAÇÕES \_ DE \_ COMPARTILHAMENTO 1005**](/windows/desktop/api/lmshare/ns-lmshare-share_info_1005)  
+[**INFORMAÇÕES \_ DE \_ COMPARTILHAMENTO 1006**](/windows/desktop/api/lmshare/ns-lmshare-share_info_1006)  
+[**INFORMAÇÕES \_ DE \_ COMPARTILHAMENTO 1501**](/windows/desktop/api/lmshare/ns-lmshare-share_info_1501)  
 </dl>
 
 ## <a name="use-structures"></a>Usar estruturas
 
 <dl>
 
-[**USAR \_ informações \_ 0**](/windows/desktop/api/Lmuse/ns-lmuse-use_info_0)  
-[**USAR \_ informações \_ 1**](/windows/desktop/api/Lmuse/ns-lmuse-use_info_1)  
-[**USAR \_ informações \_ 2**](/windows/desktop/api/Lmuse/ns-lmuse-use_info_2)  
-[**USAR \_ informações \_ 3**](/windows/desktop/api/Lmuse/ns-lmuse-use_info_3)  
+[**USAR \_ INFORMAÇÕES \_ 0**](/windows/desktop/api/Lmuse/ns-lmuse-use_info_0)  
+[**USAR \_ INFORMAÇÕES \_ 1**](/windows/desktop/api/Lmuse/ns-lmuse-use_info_1)  
+[**USAR \_ INFORMAÇÕES \_ 2**](/windows/desktop/api/Lmuse/ns-lmuse-use_info_2)  
+[**USAR \_ INFORMAÇÕES \_ 3**](/windows/desktop/api/Lmuse/ns-lmuse-use_info_3)  
 </dl>
 
-## <a name="user-structures"></a>Estruturas do usuário
+## <a name="user-structures"></a>Estruturas de usuário
 
 <dl>
 
-[**Informações do usuário \_ \_ 0**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_0)  
-[**Informações do usuário \_ \_ 1**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1)  
-[**Informações do usuário \_ \_ 2**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_2)  
-[**Informações do usuário \_ \_ 3**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_3)  
-[**Informações do usuário \_ \_ 4**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_4)  
-[**Informações do usuário \_ \_ 10**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_10)  
-[**Informações do usuário \_ \_ 11**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_11)  
-[**Informações do usuário \_ \_ 20**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_20)  
-[**Informações do usuário \_ \_ 21**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_21)  
-[**Informações do usuário \_ \_ 22**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_22)  
-[**Informações do usuário \_ \_ 23**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_23)  
-[**Informações do usuário \_ \_ 24**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_24)  
-[**Informações do usuário \_ \_ 1003**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1003)  
-[**Informações do usuário \_ \_ 1005**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1005)  
-[**Informações do usuário \_ \_ 1006**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1006)  
-[**Informações do usuário \_ \_ 1007**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1007)  
-[**Informações do usuário \_ \_ 1008**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1008)  
-[**Informações do usuário \_ \_ 1009**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1009)  
-[**Informações do usuário \_ \_ 1010**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1010)  
-[**Informações do usuário \_ \_ 1011**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1011)  
-[**Informações do usuário \_ \_ 1012**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1012)  
-[**Informações do usuário \_ \_ 1013**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1013)  
-[**Informações do usuário \_ \_ 1014**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1014)  
-[**Informações do usuário \_ \_ 1017**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1017)  
-[**Informações do usuário \_ \_ 1018**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1018)  
-[**Informações do usuário \_ \_ 1020**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1020)  
-[**Informações do usuário \_ \_ 1023**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1023)  
-[**Informações do usuário \_ \_ 1024**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1024)  
-[**Informações do usuário \_ \_ 1025**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1025)  
-[**Informações do usuário \_ \_ 1051**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1051)  
-[**Informações do usuário \_ \_ 1052**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1052)  
-[**Informações do usuário \_ \_ 1053**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1053)  
+[**INFORMAÇÕES \_ DO \_ USUÁRIO 0**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_0)  
+[**INFORMAÇÕES \_ DO USUÁRIO \_ 1**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1)  
+[**INFORMAÇÕES \_ DO USUÁRIO \_ 2**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_2)  
+[**INFORMAÇÕES \_ DO USUÁRIO \_ 3**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_3)  
+[**INFORMAÇÕES \_ DO USUÁRIO \_ 4**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_4)  
+[**INFORMAÇÕES \_ DO \_ USUÁRIO 10**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_10)  
+[**INFORMAÇÕES \_ DO \_ USUÁRIO 11**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_11)  
+[**INFORMAÇÕES \_ DO \_ USUÁRIO 20**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_20)  
+[**INFORMAÇÕES \_ DO USUÁRIO \_ 21**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_21)  
+[**INFORMAÇÕES \_ DO \_ USUÁRIO 22**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_22)  
+[**INFORMAÇÕES \_ DO USUÁRIO \_ 23**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_23)  
+[**INFORMAÇÕES \_ DO USUÁRIO \_ 24**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_24)  
+[**INFORMAÇÕES \_ DO \_ USUÁRIO 1003**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1003)  
+[**INFORMAÇÕES \_ DO \_ USUÁRIO 1005**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1005)  
+[**INFORMAÇÕES \_ DO \_ USUÁRIO 1006**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1006)  
+[**INFORMAÇÕES \_ DO \_ USUÁRIO 1007**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1007)  
+[**INFORMAÇÕES \_ DO \_ USUÁRIO 1008**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1008)  
+[**INFORMAÇÕES \_ DO \_ USUÁRIO 1009**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1009)  
+[**INFORMAÇÕES \_ DO \_ USUÁRIO 1010**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1010)  
+[**INFORMAÇÕES \_ DO \_ USUÁRIO 1011**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1011)  
+[**INFORMAÇÕES \_ DO \_ USUÁRIO 1012**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1012)  
+[**INFORMAÇÕES \_ DO \_ USUÁRIO 1013**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1013)  
+[**INFORMAÇÕES \_ DO \_ USUÁRIO 1014**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1014)  
+[**INFORMAÇÕES \_ DO \_ USUÁRIO 1017**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1017)  
+[**INFORMAÇÕES \_ DO \_ USUÁRIO 1018**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1018)  
+[**INFORMAÇÕES \_ DO \_ USUÁRIO 1020**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1020)  
+[**INFORMAÇÕES \_ DO \_ USUÁRIO 1023**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1023)  
+[**INFORMAÇÕES \_ DO \_ USUÁRIO 1024**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1024)  
+[**INFORMAÇÕES \_ DO \_ USUÁRIO 1025**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1025)  
+[**INFORMAÇÕES \_ DO \_ USUÁRIO 1051**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1051)  
+[**INFORMAÇÕES \_ DO \_ USUÁRIO 1052**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1052)  
+[**INFORMAÇÕES \_ DO \_ USUÁRIO 1053**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1053)  
 </dl>
 
 ## <a name="user-modal-structures"></a>Estruturas modais do usuário
 
 <dl>
 
-[**Informações de modal do usuário \_ \_ \_ 0**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_modals_info_0)  
-[**Informações de modal do usuário \_ \_ \_ 1**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_modals_info_1)  
-[**Informações de modal do usuário \_ \_ \_ 2**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_modals_info_2)  
-[**Informações de modal do usuário \_ \_ \_ 3**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_modals_info_3)  
-[**Informações de modal do usuário \_ \_ \_ 1001**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_modals_info_1001)  
-[**Informações de modal do usuário \_ \_ \_ 1002**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_modals_info_1002)  
-[**Informações de modal do usuário \_ \_ \_ 1003**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_modals_info_1003)  
-[**Informações de modal do usuário \_ \_ \_ 1004**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_modals_info_1004)  
-[**Informações de modal do usuário \_ \_ \_ 1005**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_modals_info_1005)  
-[**Informações de modal do usuário \_ \_ \_ 1006**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_modals_info_1006)  
-[**Informações de modal do usuário \_ \_ \_ 1007**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_modals_info_1007)  
+[**INFORMAÇÕES \_ DE MODALS \_ DO USUÁRIO \_ 0**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_modals_info_0)  
+[**USER \_ MODALS \_ INFO \_ 1**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_modals_info_1)  
+[**INFORMAÇÕES \_ SOBRE MODAIS \_ DO USUÁRIO \_ 2**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_modals_info_2)  
+[**INFORMAÇÕES \_ DE MODALS \_ DO USUÁRIO \_ 3**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_modals_info_3)  
+[**USER \_ MODALS \_ INFO \_ 1001**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_modals_info_1001)  
+[**INFORMAÇÕES \_ SOBRE MODAIS \_ DO USUÁRIO \_ 1002**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_modals_info_1002)  
+[**INFORMAÇÕES \_ SOBRE MODAIS \_ DO USUÁRIO \_ 1003**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_modals_info_1003)  
+[**USER \_ MODALS \_ INFO \_ 1004**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_modals_info_1004)  
+[**INFORMAÇÕES \_ SOBRE MODAIS \_ DO USUÁRIO \_ 1005**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_modals_info_1005)  
+[**USER \_ MODALS \_ INFO \_ 1006**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_modals_info_1006)  
+[**INFORMAÇÕES \_ SOBRE MODAIS \_ DO USUÁRIO \_ 1007**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_modals_info_1007)  
 </dl>
 
 ## <a name="validation-structures"></a>Estruturas de validação
 
--   [**ARG. de entrada de autenticação NET \_ Validate \_ \_ \_**](/windows/desktop/api/Lmaccess/ns-lmaccess-net_validate_authentication_input_arg)
--   [**ARG. de saída de validação de rede \_ \_ \_**](/windows/desktop/api/Lmaccess/ns-lmaccess-net_validate_output_arg)
--   [**ARG. de entrada de alteração de senha do NET \_ Validate \_ \_ \_ \_**](/windows/desktop/api/Lmaccess/ns-lmaccess-net_validate_password_change_input_arg)
--   [**HASH de senha do NET \_ Validate \_ \_**](/windows/desktop/api/Lmaccess/ns-lmaccess-net_validate_password_hash)
--   [**ARG. de \_ \_ \_ entrada de redefinição de senha \_ \_ do NET Validate**](/windows/desktop/api/Lmaccess/ns-lmaccess-net_validate_password_reset_input_arg)
--   [**campos do NET \_ Validate \_ PERSISTED \_**](/windows/desktop/api/Lmaccess/ns-lmaccess-net_validate_persisted_fields)
+-   [**NET \_ VALIDATE \_ AUTHENTICATION \_ INPUT \_ ARG**](/windows/desktop/api/Lmaccess/ns-lmaccess-net_validate_authentication_input_arg)
+-   [**NET \_ VALIDATE \_ OUTPUT \_ ARG**](/windows/desktop/api/Lmaccess/ns-lmaccess-net_validate_output_arg)
+-   [**NET \_ VALIDATE \_ PASSWORD \_ CHANGE \_ INPUT \_ ARG**](/windows/desktop/api/Lmaccess/ns-lmaccess-net_validate_password_change_input_arg)
+-   [**NET \_ VALIDATE \_ PASSWORD \_ HASH**](/windows/desktop/api/Lmaccess/ns-lmaccess-net_validate_password_hash)
+-   [**NET \_ VALIDATE \_ PASSWORD \_ RESET \_ INPUT \_ ARG**](/windows/desktop/api/Lmaccess/ns-lmaccess-net_validate_password_reset_input_arg)
+-   [**VALIDAR \_ CAMPOS \_ \_ PERSISTENTES DO NET**](/windows/desktop/api/Lmaccess/ns-lmaccess-net_validate_persisted_fields)
 
 ## <a name="workstation-and-workstation-user-structures"></a>Estruturas de usuário de estação de trabalho e estação de trabalho
 
 <dl>
 
-[**Informações de WKSTA \_ \_ 100**](/windows/desktop/api/Lmwksta/ns-lmwksta-wksta_info_100)  
-[**Informações de WKSTA \_ \_ 101**](/windows/desktop/api/Lmwksta/ns-lmwksta-wksta_info_101)  
-[**Informações de WKSTA \_ \_ 102**](/windows/desktop/api/Lmwksta/ns-lmwksta-wksta_info_102)  
-[**Informações do usuário do WKSTA \_ \_ \_ 0**](/windows/desktop/api/Lmwksta/ns-lmwksta-wksta_user_info_0)  
-[**Informações de usuário do WKSTA \_ \_ \_ 1**](/windows/desktop/api/Lmwksta/ns-lmwksta-wksta_user_info_1)  
-[**Informações do usuário do WKSTA \_ \_ \_ 1101**](/windows/desktop/api/Lmwksta/ns-lmwksta-wksta_user_info_1101)  
+[**INFORMAÇÕES DO WKSTA \_ \_ 100**](/windows/desktop/api/Lmwksta/ns-lmwksta-wksta_info_100)  
+[**INFORMAÇÕES DO WKSTA \_ \_ 101**](/windows/desktop/api/Lmwksta/ns-lmwksta-wksta_info_101)  
+[**INFORMAÇÕES DO WKSTA \_ \_ 102**](/windows/desktop/api/Lmwksta/ns-lmwksta-wksta_info_102)  
+[**INFORMAÇÕES DO USUÁRIO DO WKSTA \_ \_ \_ 0**](/windows/desktop/api/Lmwksta/ns-lmwksta-wksta_user_info_0)  
+[**INFORMAÇÕES DO USUÁRIO DO WKSTA \_ \_ \_ 1**](/windows/desktop/api/Lmwksta/ns-lmwksta-wksta_user_info_1)  
+[**INFORMAÇÕES DO USUÁRIO DO WKSTA \_ \_ \_ 1101**](/windows/desktop/api/Lmwksta/ns-lmwksta-wksta_user_info_1101)  
 </dl>
 
- 
+ 
 
- 
+ 

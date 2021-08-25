@@ -14,12 +14,12 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: c246fabe7ced72a5aad6d30101df8035a159a923
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0f648020ddb82db2a619f75bb125e94c7679f8dd3061ac282fcc0f911a498a77
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105791490"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119839386"
 ---
 # <a name="iportabledevicekeycollection-interface"></a>Interface IPortableDeviceKeyCollection
 
@@ -40,7 +40,7 @@ A interface **IPortableDeviceKeyCollection** tem esses métodos.
 | Método                                                    | Descrição                                                                         |
 |:----------------------------------------------------------|:------------------------------------------------------------------------------------|
 | [**Agrega**](iportabledevicekeycollection-add.md)           | Adiciona uma chave de propriedade à coleção.<br/>                                   |
-| [**Formatação**](iportabledevicekeycollection-clear.md)       | Exclui todos os itens da coleção.<br/>                                   |
+| [**Limpar**](iportabledevicekeycollection-clear.md)       | Exclui todos os itens da coleção.<br/>                                   |
 | [**GetAt**](iportabledevicekeycollection-getat.md)       | Recupera um **PROPERTYKEY** da coleção por índice.<br/>                |
 | [**GetCount**](iportabledevicekeycollection-getcount.md) | Recupera o número de chaves nesta coleção.<br/>                         |
 | [**RemoveAt**](iportabledevicekeycollection-removeat.md) | Remove o elemento armazenado no local especificado pelo índice fornecido.<br/> |

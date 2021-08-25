@@ -13,65 +13,65 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 1360b197f0d7f5e0579a5378a37047e6a117a9c9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b6c19acc094426f99599b9e4aa9ea3968414c7de1d99377b2ce0bd2e8e3fde05
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105758018"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119877986"
 ---
 # <a name="certificate-object"></a>Objeto de certificado
 
-\[O CAPICOM é um componente somente de 32 bits que está disponível para uso nos seguintes sistemas operacionais: Windows Server 2008, Windows Vista e Windows XP. Em vez disso, use a [**classe X509Certificate2**](/previous-versions/windows/embedded/hh424017(v=msdn.10)) no namespace [**System. Security. Cryptography. X509Certificates**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1) .\]
+\[CAPICOM é um componente somente de 32 bits que está disponível para uso nos seguintes sistemas operacionais: Windows Server 2008, Windows Vista e Windows XP. Em vez disso, [**use a Classe X509Certificate2**](/previous-versions/windows/embedded/hh424017(v=msdn.10)) no namespace [**System.Security.Cryptography.X509Certificates.**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1)\]
 
-O objeto de **certificado** representa um único [*certificado digital*](../secgloss/d-gly.md).
+O **objeto** Certificate representa um único [*certificado digital.*](../secgloss/d-gly.md)
 
-O objeto de **certificado** expõe as seguintes interfaces:
+O **objeto** Certificate expõe as seguintes interfaces:
 
--   **ICertificate** — introduzido no capicom 1,0.
--   **ICertificate2** — introduzido no capicom 2,0.
+-   **ICertificate** – introduzido no CAPICOM 1.0.
+-   **ICertificate2** – introduzido no CAPICOM 2.0.
 
 ## <a name="when-to-use"></a>Quando usar
 
-O objeto de **certificado** é usado para executar as seguintes tarefas:
+O **objeto** Certificate é usado para executar as seguintes tarefas:
 
--   Carregue os dados do certificado, incluindo a chave privada, de um arquivo.
+-   Carregar dados de certificado, incluindo a chave privada, de um arquivo.
 -   Obter informações do certificado.
 -   Retornar restrições básicas, EKU, propriedades estendidas, extensões, uso de chave, chave pública e objetos de modelo associados ao certificado.
 -   Determine se o certificado é válido e verifique a disponibilidade de acesso da chave privada da entidade do certificado.
 -   Exibir o certificado.
 -   Importe e exporte o certificado.
 -   Salve o certificado em um arquivo.
--   Recupere ou defina as propriedades que descrevem o certificado.
+-   Recuperar ou definir propriedades que descrevem o certificado.
 
 ## <a name="members"></a>Membros
 
-O objeto de **certificado** tem estes tipos de membros:
+O **objeto** Certificate tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-O objeto de **certificado** tem esses métodos.
+O **objeto** Certificate tem esses métodos.
 
 
 
 | Método                                                       | Descrição                                                                                                                                                                                                                                              |
 |:-------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**BasicConstraints**](certificate-basicconstraints.md)     | Retorna um objeto [**BasicConstraints**](basicconstraints.md) que representa a extensão de restrições básicas do certificado.<br/> (Herdado de **CertificateICertificate2ICertificate**)                                                   |
-| [**Monitor**](certificate-display.md)                       | Exibe um certificado.<br/> (Herdado de **CertificateICertificate2ICertificate**)                                                                                                                                                             |
-| [**Exportação**](certificate-export.md)                         | Copia um certificado para uma cadeia de caracteres codificada. A cadeia de caracteres codificada pode ser gravada em um arquivo ou importada para um novo objeto de **certificado** .<br/> (Herdado de **CertificateICertificate2ICertificate**)                                               |
-| [**ExtendedKeyUsage**](certificate-extendedkeyusage.md)     | Retorna um objeto [**ExtendedKeyUsage**](extendedkeyusage.md) que indica os usos válidos de chave estendida do certificado.<br/> (Herdado de **CertificateICertificate2ICertificate**)                                                       |
-| [**ExtendedProperties**](certificate-extendedproperties.md) | Retorna uma coleção das propriedades estendidas do certificado.<br/> (Herdado de **CertificateICertificate2**)                                                                                                                             |
+| [**BasicConstraints**](certificate-basicconstraints.md)     | Retorna um [**objeto BasicConstraints**](basicconstraints.md) que representa a extensão de restrições básicas do certificado.<br/> (Herdado **de CertificateICertificate2ICertificate**)                                                   |
+| [**Exibir**](certificate-display.md)                       | Exibe um certificado.<br/> (Herdado **de CertificateICertificate2ICertificate**)                                                                                                                                                             |
+| [**Exportação**](certificate-export.md)                         | Copia um certificado para uma cadeia de caracteres codificada. A cadeia de caracteres codificada pode ser escrita em um arquivo ou importada em um novo **objeto Certificate.**<br/> (Herdado **de CertificateICertificate2ICertificate**)                                               |
+| [**ExtendedKeyUsage**](certificate-extendedkeyusage.md)     | Retorna um [**objeto ExtendedKeyUsage**](extendedkeyusage.md) que indica os usos válidos de chave estendida do certificado.<br/> (Herdado **de CertificateICertificate2ICertificate**)                                                       |
+| [**Extendedproperties**](certificate-extendedproperties.md) | Retorna uma coleção das propriedades estendidas do certificado.<br/> (Herdado de **CertificateICertificate2**)                                                                                                                             |
 | [**Extensões**](certificate-extensions.md)                 | Retorna uma coleção das extensões associadas ao certificado.<br/> (Herdado de **CertificateICertificate2**)                                                                                                                         |
-| [**GetInfo**](certificate-getinfo.md)                       | Recupera informações do certificado.<br/> (Herdado de **CertificateICertificate2ICertificate**)                                                                                                                                         |
-| [**HasPrivateKey**](certificate-hasprivatekey.md)           | Determina se o certificado tem uma [*chave privada*](../secgloss/p-gly.md) associada a ele.<br/> (Herdado de **CertificateICertificate2ICertificate**)                                    |
-| [**Importar**](certificate-import.md)                         | Importa um certificado codificado anteriormente de uma cadeia de caracteres para o objeto de **certificado** .<br/> (Herdado de **CertificateICertificate2ICertificate**)                                                                                             |
-| [**IsValid**](certificate-isvalid.md)                       | Cria uma cadeia de verificação de certificado para um certificado e retorna um objeto [**CertificateStatus**](certificatestatus.md) que contém o status de validade do certificado.<br/> (Herdado de **CertificateICertificate2ICertificate**) |
-| [**Uso de**](certificate-keyusage.md)                     | Retorna um objeto [**KeyUsage**](keyusage.md) que indica o uso de chave válido do certificado.<br/> (Herdado de **CertificateICertificate2ICertificate**)                                                                                |
+| [**GetInfo**](certificate-getinfo.md)                       | Recupera informações do certificado.<br/> (Herdado **de CertificateICertificate2ICertificate**)                                                                                                                                         |
+| [**HasPrivateKey**](certificate-hasprivatekey.md)           | Determina se o certificado tem [*uma chave privada*](../secgloss/p-gly.md) associada a ele.<br/> (Herdado **de CertificateICertificate2ICertificate**)                                    |
+| [**Importar**](certificate-import.md)                         | Importa um certificado codificado anteriormente de uma cadeia de caracteres para o **objeto Certificate.**<br/> (Herdado **de CertificateICertificate2ICertificate**)                                                                                             |
+| [**IsValid**](certificate-isvalid.md)                       | Cria uma cadeia de verificação de certificado para um certificado e retorna um [**objeto CertificateStatus**](certificatestatus.md) que contém o status de validade do certificado.<br/> (Herdado **de CertificateICertificate2ICertificate**) |
+| [**KeyUsage**](certificate-keyusage.md)                     | Retorna um [**objeto KeyUsage**](keyusage.md) que indica o uso de chave válido do certificado.<br/> (Herdado **de CertificateICertificate2ICertificate**)                                                                                |
 | [**Carregar**](certificate-load.md)                             | Importa um certificado de um arquivo.<br/> (Herdado de **CertificateICertificate2**)                                                                                                                                                              |
-| [**PublicKey**](certificate-publickey.md)                   | Retorna um objeto [**PublicKey**](publickey.md) .<br/> (Herdado de **CertificateICertificate2**)                                                                                                                                                |
+| [**Publickey**](certificate-publickey.md)                   | Retorna um [**objeto PublicKey.**](publickey.md)<br/> (Herdado de **CertificateICertificate2**)                                                                                                                                                |
 | [**Salvar**](certificate-save.md)                             | Salva o certificado em um arquivo.<br/> (Herdado de **CertificateICertificate2**)                                                                                                                                                                |
 | [**Modelo**](certificate-template.md)                     | Retorna o modelo associado ao certificado.<br/> (Herdado de **CertificateICertificate2**)                                                                                                                                           |
 
@@ -81,21 +81,21 @@ O objeto de **certificado** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-O objeto de **certificado** tem essas propriedades.
+O **objeto Certificate** tem essas propriedades.
 
 
 
 | Propriedade                                                      | Tipo de acesso           | Descrição                                                                                                                                          |
 |:--------------------------------------------------------------|:----------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Arquivado**](certificate-archived.md)<br/>           | Leitura/gravação<br/> | Define ou recupera um valor booliano que indica se o certificado está arquivado.<br/> (Herdado de **CertificateICertificate2**)       |
-| [**IssuerName**](certificate-issuername.md)<br/>       | Somente leitura<br/>  | Recupera uma cadeia de caracteres que contém o nome do emissor do certificado.<br/> (Herdado de **CertificateICertificate2ICertificate**)            |
-| [**PrivateKey**](certificate-privatekey.md)<br/>       | Leitura/gravação<br/> | Define ou recupera a chave privada associada ao certificado.<br/> (Herdado de **CertificateICertificate2**)                          |
-| [**SerialNumber**](certificate-serialnumber.md)<br/>   | Somente leitura<br/>  | Recupera uma cadeia de caracteres que contém o número de série do certificado.<br/> (Herdado de **CertificateICertificate2ICertificate**)                 |
-| [**SubjectName**](certificate-subjectname.md)<br/>     | Somente leitura<br/>  | Recupera uma cadeia de caracteres que contém o nome da entidade do certificado.<br/> (Herdado de **CertificateICertificate2ICertificate**)           |
-| [**Impressão digital**](certificate-thumbprint.md)<br/>       | Somente leitura<br/>  | Recupera uma cadeia de caracteres hexadecimal que contém o hash SHA-1 do certificado.<br/> (Herdado de **CertificateICertificate2ICertificate**) |
-| [**ValidFromDate**](certificate-validfromdate.md)<br/> | Somente leitura<br/>  | Recupera a data de início da validade do certificado.<br/> (Herdado de **CertificateICertificate2ICertificate**)               |
-| [**ValidToDate**](certificate-validtodate.md)<br/>     | Somente leitura<br/>  | Recupera a data de término da validade do certificado.<br/> (Herdado de **CertificateICertificate2ICertificate**)                  |
-| [**Versão**](certificate-version.md)<br/>             | Somente leitura<br/>  | Recupera o número de versão do certificado.<br/> (Herdado de **CertificateICertificate2ICertificate**)                                |
+| [**Arquivado**](certificate-archived.md)<br/>           | Leitura/gravação<br/> | Define ou recupera um valor booliana que indica se o certificado está arquivado.<br/> (Herdado de **CertificateICertificate2**)       |
+| [**IssuerName**](certificate-issuername.md)<br/>       | Somente leitura<br/>  | Recupera uma cadeia de caracteres que contém o nome do emissor do certificado.<br/> (Herdado **de CertificateICertificate2ICertificate**)            |
+| [**Privatekey**](certificate-privatekey.md)<br/>       | Leitura/gravação<br/> | Define ou recupera a chave privada associada ao certificado.<br/> (Herdado de **CertificateICertificate2**)                          |
+| [**Serialnumber**](certificate-serialnumber.md)<br/>   | Somente leitura<br/>  | Recupera uma cadeia de caracteres que contém o número de série do certificado.<br/> (Herdado **de CertificateICertificate2ICertificate**)                 |
+| [**SubjectName**](certificate-subjectname.md)<br/>     | Somente leitura<br/>  | Recupera uma cadeia de caracteres que contém o nome da pessoa do certificado.<br/> (Herdado **de CertificateICertificate2ICertificate**)           |
+| [**Impressão Digital**](certificate-thumbprint.md)<br/>       | Somente leitura<br/>  | Recupera uma cadeia de caracteres hexadecimal que contém o hash SHA-1 do certificado.<br/> (Herdado **de CertificateICertificate2ICertificate**) |
+| [**ValidFromDate**](certificate-validfromdate.md)<br/> | Somente leitura<br/>  | Recupera a data de início para a validade do certificado.<br/> (Herdado **de CertificateICertificate2ICertificate**)               |
+| [**ValidToDate**](certificate-validtodate.md)<br/>     | Somente leitura<br/>  | Recupera a data de término para a validade do certificado.<br/> (Herdado **de CertificateICertificate2ICertificate**)                  |
+| [**Versão**](certificate-version.md)<br/>             | Somente leitura<br/>  | Recupera o número de versão do certificado.<br/> (Herdado **de CertificateICertificate2ICertificate**)                                |
 
 
 
@@ -103,9 +103,9 @@ O objeto de **certificado** tem essas propriedades.
 
 ## <a name="remarks"></a>Comentários
 
-O objeto de **certificado** pode ser criado e é seguro para scripts. O ProgID do objeto de **certificado** é "CAPICOM. Certificado. 2 ".
+O **objeto** Certificate pode ser criado e é seguro para scripts. O ProgID para o **objeto Certificate** é "CAPICOM. Certificate.2".
 
-**CAPICOM 1. *x*:** o ProgID para o objeto de **certificado** é "CAPICOM. Certificate. 1 ".
+**CAPICOM 1. *x*:** o ProgID para o **objeto Certificate** é "CAPICOM. Certificate.1".
 
 ## <a name="requirements"></a>Requisitos
 
@@ -113,9 +113,9 @@ O objeto de **certificado** pode ser criado e é seguro para scripts. O ProgID d
 
 | Requisito | Valor |
 |----------------------------------|----------------------------------------------------------------------------------------|
-| Fim do suporte do cliente<br/> | Windows Vista<br/>                                                               |
-| Fim do suporte do servidor<br/> | Windows Server 2008<br/>                                                         |
-| Redistribuível<br/>       | CAPICOM 2,0 ou posterior no Windows Server 2003 e no Windows XP<br/>                  |
+| Fim do suporte ao cliente<br/> | Windows Vista<br/>                                                               |
+| Fim do suporte ao servidor<br/> | Windows Server 2008<br/>                                                         |
+| Redistribuível<br/>       | CAPICOM 2.0 ou posterior no Windows Server 2003 e Windows XP<br/>                  |
 | DLL<br/>                   | <dl> <dt>Capicom.dll</dt> </dl> |
 
 

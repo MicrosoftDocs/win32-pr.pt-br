@@ -4,12 +4,12 @@ ms.assetid: 27ee8caa-8f5e-46dc-b55d-afde5471507e
 title: Fazendo backup e restaurando a chave privada dos serviços de certificados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 891794f36e87b2aa4b6a5d5c8dde55304da20601
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a65b8c25e627e516d92b8dc8219db9c7933bd8d9902b1f75bea204d723edd61f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105753229"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119879776"
 ---
 # <a name="backing-up-and-restoring-the-certificate-services-private-key"></a>Fazendo backup e restaurando a chave privada dos serviços de certificados
 

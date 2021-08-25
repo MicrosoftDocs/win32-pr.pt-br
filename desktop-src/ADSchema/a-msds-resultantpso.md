@@ -1,11 +1,11 @@
 ---
-title: ms-DS-resulted-atributo PSO
-description: Objeto de configurações de senha resultante aplicado a este objeto.
+title: Atributo ms-DS-Resultant-PSO
+description: Objeto de configurações de senha resultante aplicado a esse objeto.
 ms.assetid: c7f66047-0cd7-460d-92f3-efdfca14b281
 ms.tgt_platform: multiple
 keywords:
-- ms-DS-Resultd-atributo PSO AD Schema
-- atributo msDS-ResultantPSO do AD Schema
+- Esquema do AD do atributo ms-DS-Resultant-PSO
+- Esquema do AD do atributo msDS-ResultantPSO
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 25dc02d85c8b741a3fd38d06b8f25a78f3a54bff
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 47807c13b796e2c9bac9d33b07c63ba3b5083c7a57f7a5405591f1caa9fe1fdb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104456212"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119925686"
 ---
-# <a name="ms-ds-resultant-pso-attribute"></a>ms-DS-resulted-atributo PSO
+# <a name="ms-ds-resultant-pso-attribute"></a>Atributo ms-DS-Resultant-PSO
 
-Objeto de configurações de senha resultante aplicado a este objeto.
+Objeto de configurações de senha resultante aplicado a esse objeto.
 
 
 
 | Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | ms-DS-resulted-PSO                     |
-| LDAP-Display-Name | msDS-ResultantPSO                       |
+| CN                | ms-DS-Resultant-PSO                     |
+| Ldap-Display-Name | msDS-ResultantPSO                       |
 | Tamanho              | \-                                      |
 | Privilégio de atualização  | \-                                      |
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.2022                 |
-| System-ID-GUID    | b77ea093-88d0-4780-9a98-911f8e8b1dca    |
-| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | b77ea093-88d0-4780-9a98-911f8e8b1dca    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -54,11 +54,11 @@ Objeto de configurações de senha resultante aplicado a este objeto.
 |------------------------|-----------------------------------|
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | True                              |
-| É de valor único       | True                              |
+| System-Only            | Verdadeiro                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
@@ -75,11 +75,11 @@ Objeto de configurações de senha resultante aplicado a este objeto.
 |------------------------|-----------------------------------|
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | True                              |
-| É de valor único       | True                              |
+| System-Only            | Verdadeiro                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
@@ -96,11 +96,11 @@ Objeto de configurações de senha resultante aplicado a este objeto.
 |------------------------|-----------------------------------|
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | True                              |
-| É de valor único       | True                              |
+| System-Only            | Verdadeiro                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |

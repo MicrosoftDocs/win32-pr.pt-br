@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: 131b5ecf874554c3642808570a53ee8b20ad0e68
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d057914ef9a77c7a545817b205f919afa66fdd3bc154363f7e33a9a5ba43c446
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105796103"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119824786"
 ---
 # <a name="printprocessor_caps_1-structure"></a>Estrutura de Caps-PROCESSer \_ \_ 1
 
@@ -72,7 +72,7 @@ O número máximo de cópias que a impressora pode manipular.
 
 ## <a name="remarks"></a>Comentários
 
-Os valores para todos os membros da estrutura são fornecidos pela função [**GetPrintProcessorCapabilities**](/windows-hardware/drivers/ddi/content/winsplp/nf-winsplp-getprintprocessorcapabilities) , que está documentada no WDK (Kit de driver do Windows).
+os valores para todos os membros da estrutura são fornecidos pela função [**GetPrintProcessorCapabilities**](/windows-hardware/drivers/ddi/content/winsplp/nf-winsplp-getprintprocessorcapabilities) , que está documentada no Kit de Driver do Windows (WDK).
 
 O spooler chama uma função [**GetPrintProcessorCapabilities**](/windows-hardware/drivers/ddi/content/winsplp/nf-winsplp-getprintprocessorcapabilities) do processador de impressão quando um aplicativo chama [**GetPrinterData**](getprinterdata.md), especificando um nome de valor com um formato de \_ *DataType* PrintProcCaps, em que *DataType* é o nome de um tipo de dados de entrada.
 

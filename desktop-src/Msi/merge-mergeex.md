@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: 12accfcbc87877300b803ae90d8c924802410e9f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7e683597d78e568e6bfec9b59241fe45f922c5346ef83f427598ad0a7c59dcac
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105757387"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119926526"
 ---
 # <a name="mergemergeex-method"></a>Método Merge. MergeEx
 
@@ -65,13 +65,13 @@ O argumento *pConfiguration* é uma interface implementada pelo cliente. O argum
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Quando a mesclagem for concluída, os componentes no módulo serão anexados ao recurso identificado pelo *recurso*. Esse recurso não é criado e deve ser um recurso existente. O módulo pode ser anexado a recursos adicionais usando o método [**Connect**](merge-connect.md) .
+Quando a mesclagem for concluída, os componentes no módulo serão anexados ao recurso identificado pelo *recurso*. Esse recurso não é criado e deve ser um recurso existente. o módulo pode ser anexado a recursos adicionais usando o método [**Conexão**](merge-connect.md) .
 
 As alterações feitas no banco de dados são salvas se e somente se o método [**CloseDatabase**](merge-closedatabase.md) for chamado com *BCommit* definido como **true**.
 
@@ -90,7 +90,7 @@ Consulte a função [**MergeEx**](/windows/desktop/api/Mergemod/nf-mergemod-imsm
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
 | Versão<br/> | Mergemod.dll 2,0 ou posterior<br/>                                                    |
-| parâmetro<br/>  | <dl> <dt>Mergemod. h</dt> </dl>   |
+| Cabeçalho<br/>  | <dl> <dt>Mergemod. h</dt> </dl>   |
 | DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

@@ -1,19 +1,19 @@
 ---
-description: Este tópico fornece um exemplo de como usar gradientes em um OM XPS.
+description: Este tópico fornece um exemplo de uso de gradientes em um OM XPS.
 ms.assetid: c58c9e5a-c871-4b44-a1be-0aceafa2f805
 title: Gradientes de OM XPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b5aac5fcce4ebd662d834705d1e8d84140f09000
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 267d053ef0e9b98408119870cb723ceb1170d4905aab81b0dc3db7969c356c32
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105780671"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119823606"
 ---
 # <a name="xps-om-gradients"></a>Gradientes de OM XPS
 
-Este tópico fornece um exemplo de como usar gradientes em um OM XPS.
+Este tópico fornece um exemplo de uso de gradientes em um OM XPS.
 
 ## <a name="add-a-new-stop-to-an-existing-gradient"></a>Adicionar uma nova parada a um gradiente existente
 
@@ -113,10 +113,10 @@ O exemplo de código a seguir adiciona uma nova parada ao gradiente de um pincel
 
 <dl> <dt>
 
-[**Interface IXpsOMGradientStop**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomgradientstop)
+[**IXpsOMGradientStop Interface**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomgradientstop)
 </dt> <dt>
 
-[**Interface IXpsOMGradientStopCollection**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomgradientstopcollection)
+[**IXpsOMGradientStopCollection Interface**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomgradientstopcollection)
 </dt> </dl>
 
  

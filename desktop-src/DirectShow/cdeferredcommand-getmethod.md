@@ -1,7 +1,7 @@
 ---
 description: O método GetMethod recupera o DISPID (identificador de expedição) do método a ser executado.
 ms.assetid: 93b48e04-7a47-4112-ae9d-dfda6adf100a
-title: Método CDeferredCommand. GetMethod (Ctlutil. h)
+title: Método CDeferredCommand.GetMethod (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2dcbf42f7216aa72faf578d80ec47b0877be78c8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 16d6f3ae7a116d59eef60b440a7423f57cf0012375e261a9943714523db9259f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749253"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119910066"
 ---
-# <a name="cdeferredcommandgetmethod-method"></a>Método CDeferredCommand. GetMethod
+# <a name="cdeferredcommandgetmethod-method"></a>Método CDeferredCommand.GetMethod
 
 O `GetMethod` método recupera o DISPID (identificador de expedição) do método a ser executado.
 
@@ -40,7 +40,7 @@ long GetMethod();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o DISPID do método a ser executado.
 
@@ -50,8 +50,8 @@ Retorna o DISPID do método a ser executado.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Ctlutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

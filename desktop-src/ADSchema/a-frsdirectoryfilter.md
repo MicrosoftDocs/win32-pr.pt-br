@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b547cd431d7f51af698a137b7edd7dd299a3ec2f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f031bf577d2d1e7efcba3593000b3c5d32fb3254982eccc44b9e5e4e70764018
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104456118"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119925646"
 ---
 # <a name="frs-directory-filter-attribute"></a>Atributo FRS-Directory-Filter
 
@@ -58,7 +58,7 @@ A lista de diretórios excluídos da replicação de arquivo, por exemplo, Temp 
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| É de valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
 | No catálogo global      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
@@ -79,7 +79,7 @@ A lista de diretórios excluídos da replicação de arquivo, por exemplo, Temp 
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| É de valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
 | No catálogo global      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
@@ -100,7 +100,7 @@ A lista de diretórios excluídos da replicação de arquivo, por exemplo, Temp 
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| É de valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
 | No catálogo global      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
@@ -121,7 +121,7 @@ A lista de diretórios excluídos da replicação de arquivo, por exemplo, Temp 
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| É de valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
 | No catálogo global      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
@@ -142,7 +142,7 @@ A lista de diretórios excluídos da replicação de arquivo, por exemplo, Temp 
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| É de valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
 | No catálogo global      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
@@ -163,7 +163,7 @@ A lista de diretórios excluídos da replicação de arquivo, por exemplo, Temp 
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| É de valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
 | No catálogo global      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |

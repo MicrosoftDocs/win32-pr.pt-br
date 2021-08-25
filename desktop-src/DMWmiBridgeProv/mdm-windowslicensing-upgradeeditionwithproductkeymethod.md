@@ -1,6 +1,6 @@
 ---
 title: Método UpgradeEditionWithProductKeyMethod da classe MDM_WindowsLicensing
-description: Insere uma chave do produto (Product Key) para uma atualização de edição de dispositivos Windows 10 desktop. Consulte também UpgradeEditionWithProductKey.
+description: insere uma chave do produto para uma atualização de edição de dispositivos de área de trabalho Windows 10. Consulte também UpgradeEditionWithProductKey.
 ms.assetid: 6576fb5c-210c-4979-8c01-ed8f78e72c2c
 keywords:
 - Método UpgradeEditionWithProductKeyMethod
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 85824fc6fac9e5a15bf2bc890215afcbd0958680
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a44293701c5a18f20b7e286530446c662778999f3ffa5ed8edffb5819dda8a91
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455588"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119913236"
 ---
 # <a name="upgradeeditionwithproductkeymethod-method-of-the-mdm_windowslicensing-class"></a>Método UpgradeEditionWithProductKeyMethod da classe MDM \_ WindowsLicensing
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-Insere uma chave do produto (Product Key) para uma atualização de edição de dispositivos Windows 10 desktop. Consulte também [UpgradeEditionWithProductKey](/windows/client-management/mdm/windowslicensing-csp).
+insere uma chave do produto para uma atualização de edição de dispositivos de área de trabalho Windows 10. Consulte também [UpgradeEditionWithProductKey](/windows/client-management/mdm/windowslicensing-csp).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -57,7 +57,7 @@ A chave do produto.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                      |
 | Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                             |
 | MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |

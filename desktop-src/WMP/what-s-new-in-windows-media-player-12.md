@@ -1,13 +1,13 @@
 ---
 title: Novidades no Windows Media Player 12
-description: Este tópico lista os recursos que são novos no Windows Media Player 12.
+description: este tópico lista os recursos que são novos no Windows Media Player 12.
 ms.assetid: 17f76963-c96d-46c9-82c0-3ed2d8a4e892
 keywords:
 - Windows Media Player, o que há de novo
 - Windows Media Player, novos recursos
 - Software Development Kit (SDK), Windows Media Player 12
 - SDK (Software Development Kit), Windows Media Player 12
-- documentação, SDK do Windows Media Player 12
+- documentação, Windows Media Player 12 SDK
 - o que há de novo, Windows Media Player 12
 - novos recursos, Windows Media Player 12
 - interfaces, novos recursos no Windows Media Player 12
@@ -20,16 +20,16 @@ keywords:
 - versões do Windows Media Player, novos recursos na versão 12
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d16b21077df1f4a9c11edbfa20032ed473f872a0
-ms.sourcegitcommit: c2a1c4314550ea9bd202d28adfcc7bfe6180932f
+ms.openlocfilehash: 976c9b0995188f9d6c6db6e7394ec0019047ff18b51940ada202c8c7ea713f39
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "104084409"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119862276"
 ---
 # <a name="whats-new-in-windows-media-player-12"></a>Novidades no Windows Media Player 12
 
-Este tópico lista os recursos que são novos no Windows Media Player 12.
+este tópico lista os recursos que são novos no Windows Media Player 12.
 
 ## <a name="new-interfaces"></a>Novas interfaces
 
@@ -87,7 +87,7 @@ A interface a seguir foi preterida.
 
 ## <a name="methods-that-are-no-longer-deprecated"></a>Métodos que não são mais preteridos
 
-Os métodos a seguir foram preteridos no SDK do Windows Media Player 11, mas não são mais preteridos.
+os métodos a seguir foram preteridos no SDK do Windows Media Player 11, mas não são mais preteridos.
 
 -   [**IWMPGraphCreation::GraphCreationPreRender**](/previous-versions/windows/desktop/api/wmpservices/nf-wmpservices-iwmpgraphcreation-graphcreationprerender)
 -   [**IWMPGraphCreation::GraphCreationPostRender**](/previous-versions/windows/desktop/api/wmpservices/nf-wmpservices-iwmpgraphcreation-graphcreationpostrender)
@@ -96,12 +96,12 @@ Os métodos a seguir foram preteridos no SDK do Windows Media Player 11, mas nã
 
 <dl> <dt>
 
-[Sobre o SDK do Windows Media Player](about-the-windows-media-player-sdk.md)
+[sobre o SDK do Windows Media Player](about-the-windows-media-player-sdk.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

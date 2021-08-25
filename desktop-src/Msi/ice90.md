@@ -4,12 +4,12 @@ ms.assetid: 47565d9b-c3c2-4a5c-8f91-2b3912a63b47
 title: ICE90
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a7b4063d06aa5a0a8688e2a411040d4b64f58f75
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4fba38ba074bf939431f497e8aab73ec0640d7bbc66fb0998498ce190d99fd92
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827942"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119894946"
 ---
 # <a name="ice90"></a>ICE90
 
@@ -23,7 +23,7 @@ ICE90 posta o aviso a seguir.
 
 
 
-| Erro de ICE90                                                                                                                                                                                                                    | Description                                                     |
+| Erro de ICE90                                                                                                                                                                                                                    | Descrição                                                     |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
 | O atalho ' \[ 1 \] ' tem um diretório que é uma propriedade pública (All Caps) e está no diretório de perfil do usuário. Isso resultará em um problema se o valor da propriedade [**AllUsers**](allusers.md) for alterado na sequência da interface do usuário. | O diretório de um atalho foi especificado como uma propriedade pública. |
 

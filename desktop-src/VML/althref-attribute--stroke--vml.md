@@ -1,50 +1,50 @@
 ---
-title: Atributo AltHRef (Stroke) (VML)
-description: Atributo AltHRef (Stroke) (VML)
+title: Atributo AltHRef (traço)(VML)
+description: Atributo AltHRef (traço)(VML)
 ms.assetid: ee7c1710-1f8e-42c4-895f-d0f3d15ca6db
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 021e89e87f70910561e55406e282920cdbed2963
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: c0cbdbe82330d154675b135f7e9f35869c8f47e25715680d97df05e5511a01e9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105810654"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119867436"
 ---
-# <a name="althref-attribute-strokevml"></a>Atributo AltHRef (Stroke) (VML)
+# <a name="althref-attribute-strokevml"></a>Atributo AltHRef (traço)(VML)
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
 Especifica uma referência alternativa para uma imagem. Leitura/gravação. **Cadeia de caracteres**.
 
 **Aplica-se a**
 
-[Pincel](msdn-online-vml-stroke-element.md)
+[Curso](msdn-online-vml-stroke-element.md)
 
 **Sintaxe de marca**
 
-<v: *Element* o:althref = " *expressão* " >
+<v: *elemento* o:althref=" *expressão* ">
 
 **Sintaxe do script**
 
-*Element* . althref = "*expressão*"
+*elemento* .althref="*expression*"
 
-*expressão* = de *elemento*. althref
+*expressão* = *elemento*.althref
 
 **Comentários**
 
-Dá suporte à preservação de dados PICT por meio de roundtripping HTML. Na gravação em HTML, a representação alternativa (ou seja, os dados originais do PICT, se o arquivo foi originado do Macintosh) é salvo. Em HTML Read, **AltHRef** é favorecedo sobre **src**.
+Dá suporte à preservação de dados DE PICT por meio de arredondamento HTML. Na gravação HTML, a representação alternativa (ou seja, os dados ORIGINAL DO PICT se o arquivo originado do Macintosh) for salvo. Na leitura html, **AltHRef** é favorecido em relação **ao Src**.
 
-*Atributo de extensões de Microsoft Office*
+*Microsoft Office Atributo Extensions*
 
 **Exemplo**
 
-O traço da forma tem um **AltHRef** que aponta para um arquivo chamado myimage.gif.
+O traço da forma tem uma **AltHRef** que aponta para um arquivo chamado myimage.gif.
 
 
 ```HTML
@@ -58,6 +58,6 @@ O traço da forma tem um **AltHRef** que aponta para um arquivo chamado myimage.
 
 
 
- 
+ 
 
- 
+ 

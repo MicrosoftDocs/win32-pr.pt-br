@@ -1,7 +1,7 @@
 ---
 description: A função CreatePosPassThru cria um objeto CPosPassThru ou um objeto CRendererPosPassThru.
 ms.assetid: d6fccfb4-b256-40aa-b927-84c7a886f631
-title: Função CreatePosPassThru (Ctlutil. h)
+title: Função CreatePosPassThru (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 08735a0bac2cc5aa8f5bb61461f10097435ad9c7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0118299bd328d09d77ccbb8d5258b25c0ac57bdc21fc7a47f642374e8be12357
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105789698"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119908746"
 ---
 # <a name="createpospassthru-function"></a>Função CreatePosPassThru
 
-A `CreatePosPassThru` função cria um objeto [**CPosPassThru**](cpospassthru.md) ou um objeto [**CRendererPosPassThru**](crendererpospassthru.md) .
+A `CreatePosPassThru` função cria um objeto [**CPosPassThru**](cpospassthru.md) ou [**um objeto CRendererPosPassThru.**](crendererpospassthru.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -48,14 +48,14 @@ STDAPI CreatePosPassThru(
 *pAgg* 
 </dt> <dd>
 
-Ponteiro para o proprietário deste objeto. Se o objeto for agregado, passe um ponteiro para a interface **IUnknown** do objeto de agregação. Caso contrário, defina esse parâmetro como **NULL**.
+Ponteiro para o proprietário desse objeto. Se o objeto for agregado, passe um ponteiro para a interface **IUnknown** do objeto de agregação. Caso contrário, de definido esse parâmetro como **NULL.**
 
 </dd> <dt>
 
 *bRenderer* 
 </dt> <dd>
 
-Valor booliano que especifica se o filtro é um renderizador. Use o valor **true** se o filtro for um renderizador ou **false** caso contrário. Se o valor for **true**, esse método criará uma instância da classe [**CRendererPosPassThru**](crendererpospassthru.md) . Se o valor for **false**, o método criará uma instância da classe **CPosPassThru** .
+Valor booliana que especifica se o filtro é um renderdor. Use o valor **TRUE** se o filtro for um renderdor ou **FALSE** caso contrário. Se o valor for **TRUE,** esse método criará uma instância da [**classe CRendererPosPassThru.**](crendererpospassthru.md) Se o valor for **FALSE,** o método criará uma instância da **classe CPosPassThru.**
 
 </dd> <dt>
 
@@ -69,19 +69,19 @@ Ponteiro para a interface [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin)
 *ppPassThru* 
 </dt> <dd>
 
-Endereço de uma variável que recebe um ponteiro para a interface **IUnknown** do objeto.
+Endereço de uma variável que recebe um ponteiro para a interface **IUnknown do** objeto.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retornará S \_ OK se for bem-sucedido. Caso contrário, retorna um valor **HRESULT** que indica a causa do erro.
+Retornará S \_ OK se for bem-sucedido. Caso contrário, retornará **um valor HRESULT** indicando a causa do erro.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método usa a interface [**ISeekingPassThru**](/windows/desktop/api/Strmif/nn-strmif-iseekingpassthru) para criar o objeto. O objeto é carregado dinamicamente do Quartz.dll.
+Esse método usa a interface [**ISeekingPassThru**](/windows/desktop/api/Strmif/nn-strmif-iseekingpassthru) para criar o objeto . O objeto é carregado dinamicamente do Quartz.dll.
 
-Se a função for realizada com sucesso, a interface **IUnknown** retornada terá uma contagem de referência pendente. O chamador deve liberar a interface.
+Se a função for bem-sucedida, a interface **IUnknown** retornada terá uma contagem de referência pendente. O chamador deve liberar a interface.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -89,8 +89,8 @@ Se a função for realizada com sucesso, a interface **IUnknown** retornada ter�
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Ctlutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

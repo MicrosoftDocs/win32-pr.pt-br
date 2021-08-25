@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1cc9496797d31f8c7338b172e9cea003e2e387f1
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 1f6a347ed978c3f42dba9d372f834c87a8607882dfdd444d6dcf5b38edafd3dc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105755467"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119880216"
 ---
 # <a name="ms-ds-claims-transformation-policy-type-class"></a>classe ms-DS-Claims-Transformation-Policy-Type
 
@@ -64,9 +64,9 @@ Um objeto dessa classe contém um conjunto de política de transformação de de
 
 
 
-## <a name="windows-server-2012-attributes"></a>Atributos do Windows Server 2012
+## <a name="windows-server-2012-attributes"></a>Windows Server 2012 Atributos
 
-Essa classe contém os seguintes atributos para o Windows Server 2012:
+Essa classe contém os seguintes atributos para Windows Server 2012:
 
 
 
@@ -93,7 +93,7 @@ Essa classe contém os seguintes atributos para o Windows Server 2012:
 | [**FRS-Computer-Reference-BL**](a-frscomputerreferencebl.md)                                | Falso     | [**Início**](c-top.md)<br/>             |
 | [**FRS-member-Reference-BL**](a-frsmemberreferencebl.md)                                    | Falso     | [**Início**](c-top.md)<br/>             |
 | [**FSMO-função-proprietário**](a-fsmoroleowner.md)                                                   | Falso     | [**Início**](c-top.md)<br/>             |
-| [**Tipo de instância**](a-instancetype.md)                                                      | True      | [**Início**](c-top.md)<br/>             |
+| [**Tipo de instância**](a-instancetype.md)                                                      | Verdadeiro      | [**Início**](c-top.md)<br/>             |
 | [**É-crítico-System-Object**](a-iscriticalsystemobject.md)                                | Falso     | [**Início**](c-top.md)<br/>             |
 | [**É excluído**](a-isdeleted.md)                                                            | Falso     | [**Início**](c-top.md)<br/>             |
 | [**Is-member-of-DL**](a-memberof.md)                                                        | Falso     | [**Início**](c-top.md)<br/>             |
@@ -143,7 +143,7 @@ Essa classe contém os seguintes atributos para o Windows Server 2012:
 | [**ms-DS-revelado-List-BL**](a-msds-revealedlistbl.md)                                      | Falso     | [**Início**](c-top.md)<br/>             |
 | [**ms-DS-Tasks-for-AZ-role-BL**](a-msds-tasksforazrolebl.md)                                | Falso     | [**Início**](c-top.md)<br/>             |
 | [**ms-DS-Tasks-for-AZ-Task-BL**](a-msds-tasksforaztaskbl.md)                                | Falso     | [**Início**](c-top.md)<br/>             |
-| [**ms-DS-TDO-egresso-BL**](a-msds-tdoegressbl.md)                                            | Falso     | [**Início**](c-top.md)<br/>             |
+| [**ms-DS-TDO-Egress-BL**](a-msds-tdoegressbl.md)                                            | Falso     | [**Início**](c-top.md)<br/>             |
 | [**ms-DS-TDO-ingress-BL**](a-msds-tdoingressbl.md)                                          | Falso     | [**Início**](c-top.md)<br/>             |
 | [**ms-DS-Transformation-Rules**](a-msds-transformationrules.md)                             | Falso     | **ms-DS-Claims-Transformation-Policy-Type** |
 | [**ms-DS-Transformation-regras-compiladas**](a-msds-transformationrulescompiled.md)            | Falso     | **ms-DS-Claims-Transformation-Policy-Type** |
@@ -152,10 +152,10 @@ Essa classe contém os seguintes atributos para o Windows Server 2012:
 | [**msSFU-30-POSIX-membro de**](a-mssfu30posixmemberof.md)                                   | Falso     | [**Início**](c-top.md)<br/>             |
 | [**netboot-SCP-BL**](a-netbootscpbl.md)                                                     | Falso     | [**Início**](c-top.md)<br/>             |
 | [**Não Security-Member-BL**](a-nonsecuritymemberbl.md)                                      | Falso     | [**Início**](c-top.md)<br/>             |
-| [**NT-Security-Descriptor**](a-ntsecuritydescriptor.md)                                     | True      | [**Início**](c-top.md)<br/>             |
+| [**NT-Security-Descriptor**](a-ntsecuritydescriptor.md)                                     | Verdadeiro      | [**Início**](c-top.md)<br/>             |
 | [**Obj-dist-Name**](a-distinguishedname.md)                                                 | Falso     | [**Início**](c-top.md)<br/>             |
-| [**Objeto-categoria**](a-objectcategory.md)                                                  | True      | [**Início**](c-top.md)<br/>             |
-| [**Classe de objeto**](a-objectclass.md)                                                        | True      | [**Início**](c-top.md)<br/>             |
+| [**Objeto-categoria**](a-objectcategory.md)                                                  | Verdadeiro      | [**Início**](c-top.md)<br/>             |
+| [**Classe de objeto**](a-objectclass.md)                                                        | Verdadeiro      | [**Início**](c-top.md)<br/>             |
 | [**GUID do objeto**](a-objectguid.md)                                                          | Falso     | [**Início**](c-top.md)<br/>             |
 | [**Versão do objeto**](a-objectversion.md)                                                    | Falso     | [**Início**](c-top.md)<br/>             |
 | [**Outros objetos bem conhecidos**](a-otherwellknownobjects.md)                                  | Falso     | [**Início**](c-top.md)<br/>             |

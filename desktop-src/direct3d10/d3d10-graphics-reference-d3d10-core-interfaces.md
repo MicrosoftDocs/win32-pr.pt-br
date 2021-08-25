@@ -4,12 +4,12 @@ ms.assetid: f5ad2db8-da90-4bcd-83a7-7466723a9c3c
 title: Principais interfaces do Direct3D 10
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c241def4bb0ab1064d924a7457c52e7197bc9199
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 3810f7d6de2562ad3c712fab4baa22bf75a252f752c8611eca84043913c2917a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104370454"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119895236"
 ---
 # <a name="direct3d-10-core-interfaces"></a>Principais interfaces do Direct3D 10
 

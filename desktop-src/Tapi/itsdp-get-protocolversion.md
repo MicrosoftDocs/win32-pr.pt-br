@@ -1,21 +1,21 @@
 ---
-description: O \_ método Get ProtocolVersion Obtém o protocolo de descritor de sessão (SDP; consulte a versão do protocolo RFC 2327).
+description: O método get ProtocolVersion obtém a versão do protocolo \_ SDP (Session Descriptor Protocol; consulte Versão do protocolo RFC 2327).
 ms.assetid: 7c62357c-427f-40f9-a9d2-c4e1a8400e97
-title: 'Método ITSdp:: get_ProtocolVersion (Sdpblb. h)'
+title: Método ITSdp::get_ProtocolVersion (Sdpblb.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 652c6c3d6723a10cfe474376cf8b9f1342321db8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b54bd664a2a1147b341d46a83c4a2fa72c66585a11fc8eaef154aa213cab8945
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105768576"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119774486"
 ---
-# <a name="itsdpget_protocolversion-method"></a>Método ITSdp:: get \_ ProtocolVersion
+# <a name="itsdpget_protocolversion-method"></a>Método ITSdp::get \_ ProtocolVersion
 
-\[ Os controles e as interfaces da conferência de telefonia IP de reunião não estão disponíveis para uso no Windows Vista, no Windows Server 2008 e nas versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
+\[As interfaces e controles de conferência de telefonia IP de reunião não estão disponíveis para uso no Windows Vista, Windows Server 2008 e versões subsequentes do sistema operacional. A API do Cliente RTC fornece funcionalidade semelhante.\]
 
-O método **Get \_ ProtocolVersion** Obtém o protocolo de descritor de sessão (SDP; consulte a versão do protocolo RFC 2327).
+O **método \_ get ProtocolVersion** obtém a versão do protocolo SDP (Session Descriptor Protocol; consulte Versão do protocolo RFC 2327).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -32,14 +32,14 @@ HRESULT get_ProtocolVersion(
 
 <dl> <dt>
 
-*pProtocolVersion* \[ fora\]
+*pProtocolVersion* \[ out\]
 </dt> <dd>
 
 Ponteiro para a versão do protocolo.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
@@ -48,9 +48,9 @@ Esse método pode retornar um desses valores.
 | Código de retorno                                                                                   | Descrição                                                         |
 |-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>          | O método foi bem-sucedido.<br/>                                        |
-| <dl> <dt>**\_ponteiro E**</dt> </dl>     | O parâmetro *pProtocolVersion* não é um ponteiro válido.<br/> |
+| <dl> <dt>**PONTEIRO \_ E**</dt> </dl>     | O *parâmetro pProtocolVersion* não é um ponteiro válido.<br/> |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Há memória insuficiente para executar a operação.<br/>     |
-| <dl> <dt>**E \_ falha**</dt> </dl>        | Erro não especificado.<br/>                                       |
+| <dl> <dt>**E \_ FAIL**</dt> </dl>        | Erro não especificado.<br/>                                       |
 | <dl> <dt>**E \_ NOTIMPL**</dt> </dl>     | Este método ainda não foi implementado.<br/>                      |
 
 
@@ -63,9 +63,9 @@ Esse método pode retornar um desses valores.
 
 | Requisito | Valor |
 |-------------------------|---------------------------------------------------------------------------------------|
-| Versão da TAPI<br/> | Requer TAPI 3,0 ou posterior<br/>                                                 |
-| parâmetro<br/>       | <dl> <dt>Sdpblb. h</dt> </dl>   |
-| Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
+| Versão do TAPI<br/> | Requer TAPI 3.0 ou posterior<br/>                                                 |
+| Cabeçalho<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
+| Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | DLL<br/>          | <dl> <dt>Sdpblb.dll</dt> </dl> |
 
 

@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 109e4953b310f9465c4523a9e80ca401c225f885
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: c11ab70c3239252d2e385a1abfa8a6d19e1ed9cbf27baa0c8b062375dcce7fc1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105756253"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119879036"
 ---
 # <a name="geteffectivepermission-method-of-the-cim_datafile-class"></a>Método GetEffectivePermission da classe de \_ datafilefiles CIM
 
@@ -208,7 +208,7 @@ Sincroniza o acesso e permite que um processo Aguarde um objeto para entrar no e
 
 </dd> </dl> </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará **true** se a chamada tiver a permissão necessária; caso contrário, retornará **false**.
 
@@ -227,7 +227,7 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
 | Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| parâmetro<br/>                   | <dl> <dt>Aclui. h</dt> </dl>      |
+| Cabeçalho<br/>                   | <dl> <dt>Aclui. h</dt> </dl>      |
 | MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 

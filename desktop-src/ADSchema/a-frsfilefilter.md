@@ -4,8 +4,8 @@ description: Uma lista de extensões de nome de arquivo excluídas da replicaç�
 ms.assetid: 094a393a-9e1a-4da8-a38a-161102f164fd
 ms.tgt_platform: multiple
 keywords:
-- FRS-arquivo-filtro de atributo do AD esquema
-- Esquema de AD do atributo fRSFileFilter
+- Esquema do AD do atributo FRS-File-Filter
+- Esquema do AD do atributo fRSFileFilter
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 234cf7d6e56e84c2ed9578fc56036e581a2f0ad2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e3733167ac69f43df0d3bc3dcde9e4a46a5e55795bee882ecbcb82f66e60bc8e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105752977"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119925626"
 ---
 # <a name="frs-file-filter-attribute"></a>Atributo FRS-File-Filter
 
@@ -29,14 +29,14 @@ Uma lista de extensões de nome de arquivo excluídas da replicação de arquivo
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | FRS-filtro de arquivo                             |
-| LDAP-Display-Name | fRSFileFilter                               |
+| CN                | FrS-File-Filter                             |
+| Ldap-Display-Name | fRSFileFilter                               |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | Administrador de domínio                        |
 | Frequência de atualização  | Quando a replicação é configurada.                  |
 | Attribute-Id      | 1.2.840.113556.1.4.483                      |
-| System-ID-GUID    | 1be8f170-a9ff-11d0-afe2-00c04fd930c9        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 1be8f170-a9ff-11d0-afe2-00c04fd930c9        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -58,15 +58,15 @@ Uma lista de extensões de nome de arquivo excluídas da replicação de arquivo
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| Tem valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
-| No catálogo global      | Falso                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
+| No Catálogo Global      | Falso                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                              |
 | Range-Lower            | 0                                                         |
 | Range-Upper            | 2.048                                                      |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classes usadas em        | [**NTFRS-conjunto de réplicas**](c-ntfrsreplicaset.md)<br/> |
+| Classes usadas em        | [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Uma lista de extensões de nome de arquivo excluídas da replicação de arquivo
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| Tem valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
-| No catálogo global      | Falso                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
+| No Catálogo Global      | Falso                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                              |
 | Range-Lower            | 0                                                         |
 | Range-Upper            | 2.048                                                      |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classes usadas em        | [**NTFRS-conjunto de réplicas**](c-ntfrsreplicaset.md)<br/> |
+| Classes usadas em        | [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Uma lista de extensões de nome de arquivo excluídas da replicação de arquivo
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| Tem valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
-| No catálogo global      | Falso                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
+| No Catálogo Global      | Falso                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                              |
 | Range-Lower            | 0                                                         |
 | Range-Upper            | 2.048                                                      |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classes usadas em        | [**NTFRS-conjunto de réplicas**](c-ntfrsreplicaset.md)<br/> |
+| Classes usadas em        | [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Uma lista de extensões de nome de arquivo excluídas da replicação de arquivo
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| Tem valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
-| No catálogo global      | Falso                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
+| No Catálogo Global      | Falso                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                              |
 | Range-Lower            | 0                                                         |
 | Range-Upper            | 2.048                                                      |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classes usadas em        | [**NTFRS-conjunto de réplicas**](c-ntfrsreplicaset.md)<br/> |
+| Classes usadas em        | [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Uma lista de extensões de nome de arquivo excluídas da replicação de arquivo
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| Tem valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
-| No catálogo global      | Falso                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
+| No Catálogo Global      | Falso                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                              |
 | Range-Lower            | 0                                                         |
 | Range-Upper            | 2.048                                                      |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classes usadas em        | [**NTFRS-conjunto de réplicas**](c-ntfrsreplicaset.md)<br/> |
+| Classes usadas em        | [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Uma lista de extensões de nome de arquivo excluídas da replicação de arquivo
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| Tem valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
-| No catálogo global      | Falso                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
+| No Catálogo Global      | Falso                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                              |
 | Range-Lower            | 0                                                         |
 | Range-Upper            | 2.048                                                      |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classes usadas em        | [**NTFRS-conjunto de réplicas**](c-ntfrsreplicaset.md)<br/> |
+| Classes usadas em        | [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> |
 
 
 

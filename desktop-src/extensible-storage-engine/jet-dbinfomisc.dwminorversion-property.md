@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre a propriedade: JET_DBINFOMISC. dwMinorVersion'
-title: Propriedade JET_DBINFOMISC. dwMinorVersion
+description: 'Saiba mais sobre: JET_DBINFOMISC.dwMinorVersion'
+title: JET_DBINFOMISC.dwMinorVersion
 TOCTitle: 'dwMinorVersion property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_DBINFOMISC.dwMinorVersion
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_dbinfomisc.dwminorversion(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e539407bea7b8d6cb83c7dfe2bc8a3b7530d4f02
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dcebb644d3d095155d4958aab6bc666900e6274a54dc68cef29994f4a288fa10
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090342"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119891426"
 ---
-# <a name="jet_dbinfomiscdwminorversion-property"></a>Propriedade JET_DBINFOMISC. dwMinorVersion
+# <a name="jet_dbinfomiscdwminorversion-property"></a>JET_DBINFOMISC.dwMinorVersion
 
 Obtém a versão secundária do sistema operacional da última anexação.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -60,14 +60,14 @@ public int dwMinorVersion { get; internal set; }
 
 #### <a name="property-value"></a>Valor da propriedade
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Classe JET_DBINFOMISC](./jet-dbinfomisc-class.md)
+[JET_DBINFOMISC classe](./jet-dbinfomisc-class.md)
 
-[Membros do JET_DBINFOMISC](./jet-dbinfomisc-members.md)
+[JET_DBINFOMISC membros](./jet-dbinfomisc-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

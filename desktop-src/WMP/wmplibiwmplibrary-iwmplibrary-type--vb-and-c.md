@@ -1,11 +1,11 @@
 ---
-title: Propriedade do tipo IWMPLibrary
-description: A propriedade Type Obtém um valor que indica o tipo de biblioteca.
+title: Propriedade de tipo IWMPLibrary
+description: A propriedade type obtém um valor que indica o tipo de biblioteca.
 ms.assetid: 869eab74-e793-4b04-b634-079feac8cf7b
 keywords:
-- Propriedade de tipo Windows Media Player
-- Propriedade de tipo Windows Media Player, interface IWMPLibrary
-- Interface IWMPLibrary Windows Media Player, Propriedade Type
+- tipo de propriedade Windows Media Player
+- propriedade type Windows Media Player interface IWMPLibrary
+- Interface IWMPLibrary Windows Media Player , propriedade type
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c47aa4069b9886d79fd77a6816eede4eb4ad81e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 44cb7aaf892d6f73a498d5d880c41ab2df3fa8e028039ea39966b6547b11d9b1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105780910"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119861785"
 ---
-# <a name="iwmplibrarytype-property"></a>Propriedade IWMPLibrary:: Type
+# <a name="iwmplibrarytype-property"></a>Propriedade IWMPLibrary::type
 
-A propriedade **Type** Obtém um valor que indica o tipo de biblioteca.
+A **propriedade type** obtém um valor que indica o tipo de biblioteca.
 
 ## <a name="syntax"></a>Syntax
 
@@ -46,7 +46,7 @@ Public ReadOnly Property type As WMPLibraryType
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Um **WMPLib. WMPLibraryType** que é um valor da enumeração **WMPLibraryType** que indica o tipo de biblioteca.
+Um **WMPLib.WMPLibraryType** que é um valor da enumeração **WMPLibraryType** que indica o tipo de biblioteca.
 
 ## <a name="requirements"></a>Requisitos
 

@@ -8,16 +8,16 @@ keywords:
 - Função EditStreamCut
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 533f2165afdb3173ea0f8c603764f25d0fa625fe
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6a2f3ad09b882d9df6d9b7603e6f5596789ba32157f6050916ae9212f52395a7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103916071"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119804526"
 ---
 # <a name="using-the-editing-functions-and-putting-a-file-on-the-clipboard"></a>Usando as funções de edição e colocando um arquivo na área de transferência
 
-O exemplo a seguir recorta, copia ou exclui segmentos de uma matriz de fluxos. Os fluxos recortados e copiados são mesclados em um novo arquivo e colocados na área de transferência. As funções usadas incluem [**EditStreamClone**](/windows/desktop/api/Vfw/nf-vfw-editstreamclone), [**EditStreamCopy**](/windows/desktop/api/Vfw/nf-vfw-editstreamcopy)e [**EditStreamCut**](/windows/desktop/api/Vfw/nf-vfw-editstreamcut).
+O exemplo a seguir corta, copia ou exclui segmentos de uma matriz de fluxos. Os fluxos cortados e copiados são mesclados em um novo arquivo e colocados na área de transferência. As funções usadas incluem [**EditStreamClone,**](/windows/desktop/api/Vfw/nf-vfw-editstreamclone) [**EditStreamCopy**](/windows/desktop/api/Vfw/nf-vfw-editstreamcopy)e [**EditStreamCut.**](/windows/desktop/api/Vfw/nf-vfw-editstreamcut)
 
 
 ```C++
@@ -94,9 +94,9 @@ case MENU_DELETE:
 
 
 
- 
+ 
 
- 
+ 
 
 
 
