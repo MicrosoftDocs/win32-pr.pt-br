@@ -3,7 +3,7 @@ title: Atributo ProviderLogoURL
 description: O atributo ProviderLogoURL é o endereço do logotipo do provedor dos valores de atributo.
 ms.assetid: 4f50faf5-1a6f-4f14-b849-265dcf412d3e
 keywords:
-- Atributo ProviderLogoURL Windows Media Player
+- Windows Media Player de atributo ProviderLogoURL
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a7fb479cc12775b87167fdae35d20d59f8b60a07
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8c86154aba55d83d7fd6aca5910ec41456127b6205515c8563c31f805378006c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105786210"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119861896"
 ---
 # <a name="providerlogourl-attribute"></a>Atributo ProviderLogoURL
 

@@ -1,6 +1,6 @@
 ---
 title: Classe MDM_Firewall_App04
-description: A \_ classe App04 do MDM firewall \_ é usada para definir as configurações do Windows Defender firewall.
+description: a \_ classe App04 do MDM firewall \_ é usada para definir as configurações de firewall Windows Defender.
 ms.assetid: d7844d89-97d3-43b4-85af-c9464d475167
 keywords:
 - Classe MDM_Firewall_App04
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 00a8558fb2834ba9b0143d644cf4922aa9a710d2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2fd76cef258eaf7695278ce5bf5851f2433089773e980b5c4241282acc728372
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085391"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119875276"
 ---
 # <a name="mdm_firewall_app04-class"></a>\_ \_ Classe APP04 do MDM firewall
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-A \_ classe App04 do MDM firewall \_ é usada para definir as configurações do Windows Defender firewall.
+a \_ classe App04 do MDM firewall \_ é usada para definir as configurações de firewall Windows Defender.
 
 A sintaxe a seguir é simplificada do código MOF e inclui todas as propriedades herdadas.
 
@@ -137,7 +137,7 @@ Tipo de acesso: leitura/gravação
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                     |
+| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                                     |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                       |
 | Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                              |
 | MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1. mof</dt> </dl> |

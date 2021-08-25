@@ -1,8 +1,8 @@
 ---
-description: A \_ classe CIM LinkHasConnector associa cabos e links usados como conectores físicos, que conectam os elementos físicos. Essa associação define explicitamente a relação de conectores para \_ PHYSICALLINK CIM.
+description: A classe CIM LinkHasConnector associa cabos e links usados como \_ conectores físicos, que conectam os elementos físicos. Essa associação define explicitamente a relação de conectores para CIM \_ PhysicalLink.
 ms.assetid: c8244b93-749a-424a-ab40-ce5ce79c8b02
 ms.tgt_platform: multiple
-title: Classe CIM_LinkHasConnector
+title: CIM_LinkHasConnector classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,19 +16,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: daeb9d07fefc4c52c7b630dcc69099c1cae429a2
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: ed60389736c95fdf9d3375a9a04892fa8a98991e3a410840ecbcceeb0e5d52b1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826449"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119923356"
 ---
-# <a name="cim_linkhasconnector-class"></a>\_Classe CIM LinkHasConnector
+# <a name="cim_linkhasconnector-class"></a>Classe Cim \_ LinkHasConnector
 
-A classe **CIM \_ LinkHasConnector** associa cabos e links usados como conectores físicos, que conectam os elementos físicos. Essa associação define explicitamente a relação de conectores [**para \_ PhysicalLink CIM**](cim-physicallink.md).
+A **classe CIM \_ LinkHasConnector** associa cabos e links usados como conectores físicos, que conectam os elementos físicos. Essa associação define explicitamente a relação de conectores para [**CIM \_ PhysicalLink.**](cim-physicallink.md)
 
 > [!IMPORTANT]
-> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> As classes CIM (Distributed Management Task Force) do DMTF (Distributed Management Task Force) modelo CIM são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
@@ -47,17 +47,17 @@ class CIM_LinkHasConnector : CIM_Component
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ LinkHasConnector** tem estes tipos de membros:
+A **classe CIM \_ LinkHasConnector** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ LinkHasConnector** tem essas propriedades.
+A **classe Cim \_ LinkHasConnector** tem essas propriedades.
 
 <dl> <dt>
 
-**GroupComponent**
+**Groupcomponent**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **CIM \_ PhysicalLink**
@@ -66,26 +66,26 @@ Tipo de dados: **CIM \_ PhysicalLink**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent"), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
+Qualificadores: [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent"), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
-Um [**\_ PhysicalLink CIM**](cim-physicallink.md) que descreve o link físico que tem um conector.
+Um [**\_ PhysicalLink cim**](cim-physicallink.md) que descreve o link físico que tem um conector.
 
 </dd> <dt>
 
 **PartComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **CIM \_ PhysicalConnector**
+Tipo de dados: **Cim \_ PhysicalConnector**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent")
+Qualificadores: [**substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent")
 </dt> </dl>
 
-Um [**\_ PhysicalConnector CIM**](cim-physicalconnector.md) que descreve o conector físico.
+Um [**\_ PhysicalConnector cim**](cim-physicalconnector.md) que descreve o conector físico.
 
 </dd> </dl>
 
@@ -93,7 +93,7 @@ Um [**\_ PhysicalConnector CIM**](cim-physicalconnector.md) que descreve o conec
 
 O WMI não implementa essa classe.
 
-Esta documentação é derivada das descrições da classe CIM publicadas pela DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, obedecer aos padrões de documentação do Microsoft SDK ou fornecer mais informações.
+Esta documentação é derivada das descrições da classe CIM publicadas pelo DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, estar em conformidade com os padrões de documentação do SDK da Microsoft ou fornecer mais informações.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -103,8 +103,8 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -113,7 +113,7 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 
 <dl> <dt>
 
-[**\_Componente CIM**](cim-component.md)
+[**Componente \_ CIM**](cim-component.md)
 </dt> </dl>
 
  

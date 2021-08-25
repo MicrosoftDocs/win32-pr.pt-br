@@ -1,11 +1,11 @@
 ---
-title: atributo ms-DS-ReplicationEpoch
-description: Isso é usado para manter a época sob a qual todos os DCs estão replicando. Uma época é o período de tempo em que um domínio tem um nome específico. Uma nova época começa quando ocorre uma alteração no nome de domínio.
+title: Atributo ms-DS-ReplicationEpoch
+description: Isso é usado para manter a época sob a qual todos os DCs estão replicando. Uma época é o período em que um domínio tem um nome específico. Uma nova época é iniciada quando ocorre uma alteração de nome de domínio.
 ms.assetid: d8a3c4fd-f416-483f-820f-7b3182d0bfc3
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo ms-DS-ReplicationEpoch
-- atributo msDS-ReplicationEpoch do AD Schema
+- Atributo ms-DS-ReplicationEpoch Esquema do AD
+- Esquema do AD do atributo msDS-ReplicationEpoch
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ef9aaefefe5cd1ae269508390ae13f67037fdb8a
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c428176145965d8b1698301c5585ac0e4ad8b3f8fc6d78da8cdfb8932f25e799
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104499988"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119925736"
 ---
-# <a name="ms-ds-replicationepoch-attribute"></a>atributo ms-DS-ReplicationEpoch
+# <a name="ms-ds-replicationepoch-attribute"></a>Atributo ms-DS-ReplicationEpoch
 
-Isso é usado para manter a época sob a qual todos os DCs estão replicando. Uma época é o período de tempo em que um domínio tem um nome específico. Uma nova época começa quando ocorre uma alteração no nome de domínio.
+Isso é usado para manter a época sob a qual todos os DCs estão replicando. Uma época é o período em que um domínio tem um nome específico. Uma nova época é iniciada quando ocorre uma alteração de nome de domínio.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | ms-DS-ReplicationEpoch               |
-| LDAP-Display-Name | msDS-ReplicationEpoch                |
+| Ldap-Display-Name | msDS-ReplicationEpoch                |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | Esse valor é definido pelo sistema.     |
 | Frequência de atualização  | Somente durante a reestruturação do domínio.      |
 | Attribute-Id      | 1.2.840.113556.1.4.1720              |
-| System-ID-GUID    | 08e3aa79-eb1c-45b5-af7b-8f94246c8e41 |
+| System-Id-Guid    | 08e3aa79-eb1c-45b5-af7b-8f94246c8e41 |
 | Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
@@ -43,7 +43,7 @@ Isso é usado para manter a época sob a qual todos os DCs estão replicando. Um
 ## <a name="implementations"></a>Implementações
 
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -58,10 +58,10 @@ Isso é usado para manter a época sob a qual todos os DCs estão replicando. Um
 | ID do link                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| É de valor único       | True                                     |
+| Tem valor único       | Verdadeiro                                     |
 | É indexado             | Falso                                    |
-| No catálogo global      | Falso                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                             |
+| No Catálogo Global      | Falso                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
@@ -70,7 +70,7 @@ Isso é usado para manter a época sob a qual todos os DCs estão replicando. Um
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -79,10 +79,10 @@ Isso é usado para manter a época sob a qual todos os DCs estão replicando. Um
 | ID do link                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| É de valor único       | True                                     |
+| Tem valor único       | Verdadeiro                                     |
 | É indexado             | Falso                                    |
-| No catálogo global      | Falso                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                             |
+| No Catálogo Global      | Falso                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
@@ -100,10 +100,10 @@ Isso é usado para manter a época sob a qual todos os DCs estão replicando. Um
 | ID do link                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| É de valor único       | True                                     |
+| Tem valor único       | Verdadeiro                                     |
 | É indexado             | Falso                                    |
-| No catálogo global      | Falso                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                             |
+| No Catálogo Global      | Falso                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
@@ -121,10 +121,10 @@ Isso é usado para manter a época sob a qual todos os DCs estão replicando. Um
 | ID do link                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| É de valor único       | True                                     |
+| Tem valor único       | Verdadeiro                                     |
 | É indexado             | Falso                                    |
-| No catálogo global      | Falso                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                             |
+| No Catálogo Global      | Falso                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
@@ -142,10 +142,10 @@ Isso é usado para manter a época sob a qual todos os DCs estão replicando. Um
 | ID do link                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| É de valor único       | True                                     |
+| Tem valor único       | Verdadeiro                                     |
 | É indexado             | Falso                                    |
-| No catálogo global      | Falso                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                             |
+| No Catálogo Global      | Falso                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
@@ -163,10 +163,10 @@ Isso é usado para manter a época sob a qual todos os DCs estão replicando. Um
 | ID do link                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| É de valor único       | True                                     |
+| Tem valor único       | Verdadeiro                                     |
 | É indexado             | Falso                                    |
-| No catálogo global      | Falso                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                             |
+| No Catálogo Global      | Falso                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |

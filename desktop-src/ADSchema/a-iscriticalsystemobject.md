@@ -1,11 +1,11 @@
 ---
-title: É-atributo-crítico-System-Object
-description: Se for TRUE, o objeto que hospeda esse atributo deverá ser replicado durante a instalação de uma nova réplica.
+title: Atributo Is-Critical-System-Object
+description: Se TRUE, o objeto que hospeda esse atributo deverá ser replicado durante a instalação de uma nova réplica.
 ms.assetid: 736c8b25-0f82-4b3c-a4fc-4643cd71474e
 ms.tgt_platform: multiple
 keywords:
-- É-crítico-System-atributo do AD Schema
-- Esquema de AD do atributo isCriticalSystemObject
+- Esquema do AD do atributo Is-Critical-System-Object
+- Esquema do AD do atributo isCriticalSystemObject
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c6030da908fe96a4bea5267872e8bae928a6555e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f7a37e438d67400a285708f4f222821e42fd6e0490bf2cad12301e5c58b7fff3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104456113"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119924876"
 ---
-# <a name="is-critical-system-object-attribute"></a>É-atributo-crítico-System-Object
+# <a name="is-critical-system-object-attribute"></a>Atributo Is-Critical-System-Object
 
-Se **for true**, o objeto que hospeda esse atributo deverá ser replicado durante a instalação de uma nova réplica.
+Se **TRUE**, o objeto que hospeda esse atributo deverá ser replicado durante a instalação de uma nova réplica.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | É-crítico-System-Object            |
-| LDAP-Display-Name | isCriticalSystemObject               |
+| CN                | Is-Critical-System-Object            |
+| Ldap-Display-Name | isCriticalSystemObject               |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.868               |
-| System-ID-GUID    | 00fbf30d-91fe-11d1-aebc-0000f80367c1 |
+| System-Id-Guid    | 00fbf30d-91fe-11d1-aebc-0000f80367c1 |
 | Syntax            | [**Boolean**](s-boolean.md)         |
 
 
@@ -44,7 +44,7 @@ Se **for true**, o objeto que hospeda esse atributo deverá ser replicado durant
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,10 +59,10 @@ Se **for true**, o objeto que hospeda esse atributo deverá ser replicado durant
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -80,10 +80,10 @@ Se **for true**, o objeto que hospeda esse atributo deverá ser replicado durant
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -92,7 +92,7 @@ Se **for true**, o objeto que hospeda esse atributo deverá ser replicado durant
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,10 +101,10 @@ Se **for true**, o objeto que hospeda esse atributo deverá ser replicado durant
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -122,10 +122,10 @@ Se **for true**, o objeto que hospeda esse atributo deverá ser replicado durant
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -143,10 +143,10 @@ Se **for true**, o objeto que hospeda esse atributo deverá ser replicado durant
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -164,10 +164,10 @@ Se **for true**, o objeto que hospeda esse atributo deverá ser replicado durant
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -185,10 +185,10 @@ Se **for true**, o objeto que hospeda esse atributo deverá ser replicado durant
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

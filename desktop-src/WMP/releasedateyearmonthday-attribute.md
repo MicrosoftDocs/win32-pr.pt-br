@@ -3,7 +3,7 @@ title: Atributo ReleaseDateYearMonthDay
 description: O atributo ReleaseDateYearMonthDay é o ano, o mês e a parte do dia da data da versão original do item.
 ms.assetid: dc10af60-b30f-4ad6-88ad-9af646eccdce
 keywords:
-- Atributo ReleaseDateYearMonthDay Windows Media Player
+- Windows Media Player de atributo ReleaseDateYearMonthDay
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e2d6d5d2bdc88f2118ccb7c1e6683ac819f1ea7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ce3b8f8773f0439c7f507ed3a75ee3cab76e99161b49eb4e40e1c0a11e733e97
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750156"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119861466"
 ---
 # <a name="releasedateyearmonthday-attribute"></a>Atributo ReleaseDateYearMonthDay
 

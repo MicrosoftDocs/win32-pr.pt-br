@@ -1,6 +1,6 @@
 ---
-title: Enumeração MrmDumpType (MrmResourceIndexer. h)
-description: Define constantes que especificam o tipo de despejo de arquivo PRI a ser produzido. Para obter mais informações e orientações baseadas em cenários de como usar essas APIs, consulte APIs de PRI (indexação de recursos de pacote) e sistemas de compilação personalizados.
+title: Enumeração MrmDumpType (MrmResourceIndexer.h)
+description: Define constantes que especificam o tipo de despejo de arquivo PRI a ser produzido. Para obter mais informações e passo a passo baseado em cenário de como usar essas APIs, consulte APIs de PRI (indexação de recursos de pacote) e sistemas de build personalizados.
 ms.assetid: 71E49F35-4B79-478A-A26A-C0D9A9FC2D11
 keywords:
 - Menus de enumeração MrmDumpType e outros recursos
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ff693f933af299d042b97de319fb221ac133a5c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6950156797661bacd5bf66487b1bfb4fb5889d34a1e20805647a225ce73a2a51
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455291"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119847316"
 ---
 # <a name="mrmdumptype-enumeration"></a>Enumeração MrmDumpType
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto pré-lançado, que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-Define constantes que especificam o tipo de despejo de arquivo PRI a ser produzido. Para obter mais informações e orientações baseadas em cenários de como usar essas APIs, consulte APIs de [Pri (indexação de recursos de pacote) e sistemas de compilação personalizados](/windows/uwp/app-resources/pri-apis-custom-build-systems).
+Define constantes que especificam o tipo de despejo de arquivo PRI a ser produzido. Para obter mais informações e passo a passo baseado em cenário de como usar essas APIs, consulte [APIs de PRI (indexação](/windows/uwp/app-resources/pri-apis-custom-build-systems)de recursos de pacote) e sistemas de build personalizados .
 
 ## <a name="syntax"></a>Syntax
 
@@ -44,7 +44,7 @@ typedef enum _MrmDumpType {
 
 <dl> <dt>
 
-<span id="MrmDumpType_Basic"></span><span id="mrmdumptype_basic"></span><span id="MRMDUMPTYPE_BASIC"></span>**MrmDumpType \_ básico**
+<span id="MrmDumpType_Basic"></span><span id="mrmdumptype_basic"></span><span id="MRMDUMPTYPE_BASIC"></span>**MrmDumpType \_ Basic**
 </dt> <dd>
 
 Especifica que o despejo deve ser básico.
@@ -58,7 +58,7 @@ Especifica que o despejo deve ser detalhado.
 
 </dd> <dt>
 
-<span id="MrmDumpType_Schema"></span><span id="mrmdumptype_schema"></span><span id="MRMDUMPTYPE_SCHEMA"></span>**\_Esquema MrmDumpType**
+<span id="MrmDumpType_Schema"></span><span id="mrmdumptype_schema"></span><span id="MRMDUMPTYPE_SCHEMA"></span>**Esquema MrmDumpType \_**
 </dt> <dd>
 
 Especifica que o despejo deve ser um esquema.
@@ -71,9 +71,9 @@ Especifica que o despejo deve ser um esquema.
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10, versão 1803\]<br/>                                       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server\]<br/>                                                 |
-| parâmetro<br/>                   | <dl> <dt>MrmResourceIndexer. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 10, versão 1803 somente \[ aplicativos da área de trabalho\]<br/>                                       |
+| Servidor mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do servidor\]<br/>                                                 |
+| Cabeçalho<br/>                   | <dl> <dt>MrmResourceIndexer.h</dt> </dl> |
 
 
 

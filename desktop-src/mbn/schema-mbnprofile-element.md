@@ -1,5 +1,5 @@
 ---
-description: É o elemento raiz que identifica um perfil de banda larga móvel.
+description: É o elemento raiz que identifica um perfil de Banda Larga Móvel.
 ms.assetid: 08302e7f-3024-439b-a2ad-a4ae9487b82b
 title: Elemento MBNProfile
 ms.topic: reference
@@ -11,18 +11,18 @@ api_name:
 - MBNProfile
 api_type:
 - Schema
-ms.openlocfilehash: 7016d492a70192a7d6accdcb3aaa57a9c564960e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 049ec22c170afda3a46620e2e94e2a16ae2708b4d6a69fcd0262baa69352a0a3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105785243"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119943356"
 ---
 # <a name="mbnprofile-element"></a>Elemento MBNProfile
 
-O elemento **MBNProfile** é o elemento raiz que identifica um perfil de banda larga móvel.
+O **elemento MBNProfile** é o elemento raiz que identifica um perfil de Banda Larga Móvel.
 
-Só pode haver um elemento desse tipo por documento.
+Pode haver apenas um elemento desse tipo por documento.
 
 ``` syntax
 <xs:element name="MBNProfile">
@@ -122,18 +122,18 @@ Só pode haver um elemento desse tipo por documento.
 
 | Elemento                                                                          | Type                                                           | Descrição                                               |
 |----------------------------------------------------------------------------------|----------------------------------------------------------------|-----------------------------------------------------------|
-| [**AutoConnectOnInternet**](schema-autoconnectoninternet-mbnprofile-element.md) | booleano                                                        | Se o dispositivo será conectado automaticamente.<br/> |
+| [**AutoConnectOnInternet**](schema-autoconnectoninternet-mbnprofile-element.md) | booleano                                                        | Se o dispositivo se conectará automaticamente.<br/> |
 | [**ConnectionMode**](schema-connectionmode-mbnprofile-element.md)               |                                                                | As configurações de conexão automática do dispositivo.<br/>           |
 | [**Contexto**](schema-context-mbnprofile-element.md)                             | [**contextType**](schema-contexttype-complextype.md)          | Parâmetros de configuração de conexão de dados.<br/>              |
 | [**DataRoamingPartners**](schema-dataroamingpartners-mbnprofile-element.md)     |                                                                | Provedores de rede preferenciais para roaming.<br/>       |
-| [**Descrição**](schema-description-mbnprofile-element.md)                     | [**nometype**](schema-nametype-simpletype.md)                 | Descrição do perfil.<br/>                    |
-| [**HomeProviderName**](schema-homeprovidername-mbnprofile-element.md)           | [**providerNametype**](schema-providernametype-simpletype.md) | Nome do provedor de início.<br/>                     |
+| [**Descrição**](schema-description-mbnprofile-element.md)                     | [**nameType**](schema-nametype-simpletype.md)                 | Descrição do perfil.<br/>                    |
+| [**HomeProviderName**](schema-homeprovidername-mbnprofile-element.md)           | [**providerNameType**](schema-providernametype-simpletype.md) | Nome do provedor de home.<br/>                     |
 | [**ICONFilePath**](schema-iconfilepath-mbnprofile-element.md)                   | [**iconFileType**](schema-iconfiletype-simpletype.md)         | Caminho para o arquivo de ícone.<br/>                         |
 | [**IsDefault**](schema-isdefault-mbnprofile-element.md)                         | booleano                                                        | Se o perfil é o padrão.<br/>            |
-| [**Nome**](schema-name-mbnprofile-element.md)                                   | [**nometype**](schema-nametype-simpletype.md)                 | Nome do perfil.<br/>                           |
-| [**ProfileCreationType**](schema-profilecreationtype-mbnprofile-element.md)     |                                                                | Informações sobre o criador do perfil.<br/>         |
+| [**Nome**](schema-name-mbnprofile-element.md)                                   | [**nameType**](schema-nametype-simpletype.md)                 | Nome do perfil.<br/>                           |
+| [**ProfileCreationType**](schema-profilecreationtype-mbnprofile-element.md)     |                                                                | Informações sobre o criador de perfil.<br/>         |
 | [**SimIccID**](schema-simiccid-mbnprofile-element.md)                           | [**simIccIDType**](schema-simiccidtype-simpletype.md)         | Número de identificação do SIM para dispositivos GSM.<br/>     |
-| [**Subscriberid**](schema-subscriberid-mbnprofile-element.md)                   | [**subscriberIdType**](schema-subscriberidtype-simpletype.md) | Identificador exclusivo do perfil.<br/>              |
+| [**SubscriberID**](schema-subscriberid-mbnprofile-element.md)                   | [**subscriberIdType**](schema-subscriberidtype-simpletype.md) | Identificador exclusivo do perfil.<br/>              |
 
 
 
@@ -143,7 +143,7 @@ Só pode haver um elemento desse tipo por documento.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 7 \| UWP\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows aplicativos UWP de 7 \[ \| áreas de trabalho\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                         |
 
 

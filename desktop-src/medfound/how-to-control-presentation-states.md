@@ -4,12 +4,12 @@ ms.assetid: 978373ef-b2a4-4035-b889-e28a037c0ab5
 title: Como controlar os Estados de apresentação
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e7a82fe0363a27b9c6f5c054b73ca409835a3dff
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fa2148410527ecf966b10e605bbe4d6beb0ac3d515acd6895e4fc03e73564a72
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105763426"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119942416"
 ---
 # <a name="how-to-control-presentation-states"></a>Como controlar os Estados de apresentação
 

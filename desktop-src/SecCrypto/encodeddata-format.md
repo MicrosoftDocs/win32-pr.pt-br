@@ -1,7 +1,7 @@
 ---
 description: Retorna uma representação de cadeia de caracteres dos dados codificados.
 ms.assetid: d1231e6d-57d7-4b5a-ab37-d4ee1b29cf25
-title: Método EncodedData. Format
+title: Método EncodedData.Format
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 435d0fdcd6e2bbd8c446c38f97012d820dbe5c7b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1b3d4316a2de24410a14d496b71e46746ea580109f8d6ede10c4c1a0f57fc22f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750498"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119874866"
 ---
-# <a name="encodeddataformat-method"></a>Método EncodedData. Format
+# <a name="encodeddataformat-method"></a>Método EncodedData.Format
 
-\[O CAPICOM é um componente somente de 32 bits que está disponível para uso nos seguintes sistemas operacionais: Windows Server 2008, Windows Vista e Windows XP. Em vez disso, use a [**classe AsnEncodedData**](/dotnet/api/system.security.cryptography.asnencodeddata?view=netcore-3.1) no namespace [**System. Security. Cryptography**](/dotnet/api/system.security.cryptography?view=dotnet-plat-ext-3.1&preserve-view=true) .\]
+\[CAPICOM é um componente somente de 32 bits que está disponível para uso nos seguintes sistemas operacionais: Windows Server 2008, Windows Vista e Windows XP. Em vez disso, use [**a Classe AsnEncodedData**](/dotnet/api/system.security.cryptography.asnencodeddata?view=netcore-3.1) no namespace [**System.Security.Cryptography.**](/dotnet/api/system.security.cryptography?view=dotnet-plat-ext-3.1&preserve-view=true)\]
 
-O método **Format** retorna uma representação de cadeia de caracteres dos dados codificados.
+O **método Format** retorna uma representação de cadeia de caracteres dos dados codificados.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,16 +41,16 @@ EncodedData.Format( _
 
 <dl> <dt>
 
-*bMultiLines* \[ em, opcional\]
+*bMultiLines* \[ in, opcional\]
 </dt> <dd>
 
-Valor booliano que indica se a cadeia de caracteres retornada contém várias linhas. Se **for true**, a cadeia de caracteres retornada poderá conter várias linhas separadas por **vbCrLf**. O valor padrão é **Falso**.
+Valor booliana que indica se a cadeia de caracteres retornada contém várias linhas. Se **True**, a cadeia de caracteres retornada poderá conter várias linhas separadas por **vbCrLf.** O valor padrão é **Falso**.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Uma cadeia de caracteres legível que representa os dados codificados. Se o CAPICOM não entender os dados codificados, uma representação hexadecimal dos dados será retornada.
+Uma cadeia de caracteres acessível por humanos que representa os dados codificados. Se CAPICOM não entender os dados codificados, uma representação hexadecimal dos dados será retornada.
 
 ## <a name="remarks"></a>Comentários
 
@@ -62,9 +62,9 @@ O formato da cadeia de caracteres retornada pode mudar entre versões diferentes
 
 | Requisito | Valor |
 |----------------------------------|----------------------------------------------------------------------------------------|
-| Fim do suporte do cliente<br/> | Windows Vista<br/>                                                               |
-| Fim do suporte do servidor<br/> | Windows Server 2008<br/>                                                         |
-| Redistribuível<br/>       | CAPICOM 2,0 ou posterior no Windows Server 2003 e no Windows XP<br/>                  |
+| Fim do suporte ao cliente<br/> | Windows Vista<br/>                                                               |
+| Fim do suporte ao servidor<br/> | Windows Server 2008<br/>                                                         |
+| Redistribuível<br/>       | CAPICOM 2.0 ou posterior no Windows Server 2003 e Windows XP<br/>                  |
 | DLL<br/>                   | <dl> <dt>Capicom.dll</dt> </dl> |
 
 

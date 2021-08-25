@@ -1,19 +1,19 @@
 ---
-title: Visões gerais de controle de animação
-description: Visões gerais de controle de animação
+title: Visão geral do controle de animação
+description: Visão geral do controle de animação
 ms.assetid: 73083685-ff0e-478f-842f-ec03ccaaf064
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ea87ec83ef469f43d16cb9ee4925e38a29440a20
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 2003444d091ce858ab12b1029ebb94551d3ed4a7a273d18f585e2e9e0fefeef8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104012042"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119827406"
 ---
-# <a name="animation-control-overviews"></a>Visões gerais de controle de animação
+# <a name="animation-control-overviews"></a>Visão geral do controle de animação
 
--   [Sobre os controles de animação](animation-control-overview.md)
+-   [Sobre controles de animação](animation-control-overview.md)
 -   [Usando controles de animação](using-animation-control.md)
 
  

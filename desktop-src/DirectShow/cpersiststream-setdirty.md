@@ -1,7 +1,7 @@
 ---
 description: Altera o sinalizador sujo para o fluxo atual.
 ms.assetid: 65fa7fbe-4fa7-45a3-91a4-4a3547b035b9
-title: Método CPersistStream. SetDirty (pStream. h)
+title: Método CPersistStream.SetDirty (Pstream.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 382b74f6314beb586b1e51c02a257cad8904c188
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 31a00de873f33cedd1451ebebd0ec21f1dfaa83690923712d867ec4a8d34d502
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759306"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119909296"
 ---
-# <a name="cpersiststreamsetdirty-method"></a>Método CPersistStream. SetDirty
+# <a name="cpersiststreamsetdirty-method"></a>Método CPersistStream.SetDirty
 
 Altera o sinalizador sujo para o fluxo atual.
 
@@ -45,13 +45,13 @@ HRESULT SetDirty(
 *fDirty* 
 </dt> <dd>
 
-Novo sinalizador sujo para este fluxo. **Verdadeiro** significa que os dados não foram salvos.
+Novo sinalizador sujo para esse fluxo. **TRUE** significa que os dados não foram salvos.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor **HRESULT** .
+Retorna um **valor HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,8 +59,8 @@ Retorna um valor **HRESULT** .
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>PStream. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Pstream.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

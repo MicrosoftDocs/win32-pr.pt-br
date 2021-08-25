@@ -1,7 +1,7 @@
 ---
-description: Retorna uma coleção de OIDs que representa os OIDs de política de certificado válidos para a cadeia.
+description: Retorna uma coleção de OIDs que representa as OIDs de política de certificado válidas para a cadeia.
 ms.assetid: 18200003-f4f1-4cf3-af9a-bc223151ff68
-title: 'Método IChain2:: CertificatePolicies'
+title: Método IChain2::CertificatePolicies
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: e37abce9ea1aec5eb8adaf1d8eceeb3fac284fa3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 92e8081a772c70860b819679e1b67e307822e2e498b326e36dec857f0b14720d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105758014"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119876976"
 ---
-# <a name="ichain2certificatepolicies-method"></a>Método IChain2:: CertificatePolicies
+# <a name="ichain2certificatepolicies-method"></a>Método IChain2::CertificatePolicies
 
-\[O CAPICOM é um componente somente de 32 bits que está disponível para uso nos seguintes sistemas operacionais: Windows Server 2008, Windows Vista e Windows XP. Em vez disso, use a [**classe X509Chain**](/dotnet/api/system.security.cryptography.x509certificates.x509chain?view=netcore-3.1) no namespace [**System. Security. Cryptography. X509Certificates**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1) .\]
+\[CAPICOM é um componente somente de 32 bits que está disponível para uso nos seguintes sistemas operacionais: Windows Server 2008, Windows Vista e Windows XP. Em vez disso, [**use a Classe X509Chain**](/dotnet/api/system.security.cryptography.x509certificates.x509chain?view=netcore-3.1) no namespace [**System.Security.Cryptography.X509Certificates.**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1)\]
 
-O método **CertificatePolicies** retorna uma coleção de [**OIDs**](oids.md) que representa os OIDs de política de certificado válidos para a cadeia.
+O **método CertificatePolicies** retorna uma [**coleção OIDs**](oids.md) que representa as OIDs de política de certificado válidas para a cadeia.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,9 +46,9 @@ Esse método não tem parâmetros.
 
 | Requisito | Valor |
 |----------------------------------|----------------------------------------------------------------------------------------|
-| Fim do suporte do cliente<br/> | Windows Vista<br/>                                                               |
-| Fim do suporte do servidor<br/> | Windows Server 2008<br/>                                                         |
-| Redistribuível<br/>       | CAPICOM 2,0 ou posterior no Windows Server 2003 e no Windows XP<br/>                  |
+| Fim do suporte ao cliente<br/> | Windows Vista<br/>                                                               |
+| Fim do suporte ao servidor<br/> | Windows Server 2008<br/>                                                         |
+| Redistribuível<br/>       | CAPICOM 2.0 ou posterior no Windows Server 2003 e Windows XP<br/>                  |
 | DLL<br/>                   | <dl> <dt>Capicom.dll</dt> </dl> |
 
 

@@ -3,16 +3,16 @@ title: Acessando uma exibição alternativa do registro
 description: Por padrão, um aplicativo de 32 bits em execução no WOW64 acessa a exibição do registro de 32 bits e um aplicativo de 64 bits acessa a exibição do registro de 64 bits.
 ms.assetid: 2c5fd3de-998c-44ab-863e-8e0e90d56e5d
 keywords:
-- o registro exibe a programação de 64 bits do Windows
-- Programação WOW64 de 64 bits do Windows, exibições do registro
+- exibições do registro 64-bit Windows programação
+- programação de Windows de 64 bits do WOW64, exibições do registro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ad3bca57367394e1b2fffc6486065e93c966f224
-ms.sourcegitcommit: 35bb565804eaeed7ac5503595753f59d120076dd
+ms.openlocfilehash: 1642de971a2342ab26114803689b8de21dd66194618a8db23f97170bc8da576a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "105797650"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119859076"
 ---
 # <a name="accessing-an-alternate-registry-view"></a>Acessando uma exibição alternativa do registro
 
@@ -37,7 +37,7 @@ Esses sinalizadores podem ser especificados no parâmetro *samDesired* das segui
 
 O \_ \_ 32KEY de WOW64 de chave ou 64KEY de WOW64 de chave \_ \_ podem ser especificados. Se ambos os sinalizadores forem especificados, a função falhará com o parâmetro de erro \_ inválido \_ .
 
-**Windows server 2008, Windows Vista, Windows server 2003 e Windows XP:** Se ambos os sinalizadores forem especificados, o comportamento da função s será indefinido.
+**Windows server 2008, Windows Vista, Windows Server 2003 e Windows XP:** Se ambos os sinalizadores forem especificados, o comportamento da função s será indefinido.
 
 A função [**RegDeleteKey**](/windows/desktop/api/winreg/nf-winreg-regdeletekeya) não pode ser usada para acessar uma exibição de registro alternativa.
 

@@ -1,11 +1,11 @@
 ---
-title: SD-atributo de efetivação de direitos
-description: Esse atributo construído retorna um único valor DWORD que pode ter até três bits definir segurança do \_ proprietário \_ INFORMATIONDACL \_ segurança \_ INFORMATIONSACL \_ informações de segurança \_ se um bit for definido, o usuário terá acesso de gravação à parte correspondente do descritor de segurança. Proprietário significa proprietário e grupo.
+title: Atributo SD-Rights-Effective
+description: Esse atributo construído retorna um único valor DWORD que pode ter até três bits definidoS INFORMAÇÕES DE SEGURANÇA DO PROPRIETÁRIO INFORMAÇÕES DE \_ \_ \_ \_ SEGURANÇASACL INFORMAÇÕES DE SEGURANÇA Se um bit estiver \_ definido, o usuário terá acesso de gravação à parte correspondente do descritor \_ de segurança. Proprietário significa proprietário e grupo.
 ms.assetid: 66d1aefb-49be-42fc-b144-3fb95c59dd0f
 ms.tgt_platform: multiple
 keywords:
-- SD-esquema do atributo do AD com direitos efetivos
-- Esquema de AD do atributo sDRightsEffective
+- Esquema do AD do atributo SD-Rights-Effective
+- Esquema do AD do atributo sDRightsEffective
 topic_type:
 - apiref
 api_name:
@@ -14,20 +14,20 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ac449cd18b3fb75a61f04fffc266c290b7763295
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d65591c935955133ca004c066249e9c6ec4a2effa102ad8b0e2650e6e5155749
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825089"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119923216"
 ---
-# <a name="sd-rights-effective-attribute"></a>SD-atributo de efetivação de direitos
+# <a name="sd-rights-effective-attribute"></a>Atributo SD-Rights-Effective
 
-Esse atributo construído retorna um único valor **DWORD** que pode ter até três bits definidos:
+Esse atributo construído retorna um único **valor DWORD** que pode ter até três bits definidos:
 
--   \_informações de segurança do proprietário \_
--   \_informações de segurança da DACL \_
--   \_informações de segurança da SACL \_
+-   INFORMAÇÕES DE \_ SEGURANÇA \_ DO PROPRIETÁRIO
+-   INFORMAÇÕES DE SEGURANÇA \_ DACL \_
+-   INFORMAÇÕES DE \_ SEGURANÇA \_ SACL
 
 Se um bit for definido, o usuário terá acesso de gravação à parte correspondente do descritor de segurança. Proprietário significa proprietário e grupo.
 
@@ -35,13 +35,13 @@ Se um bit for definido, o usuário terá acesso de gravação à parte correspon
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | SD-direitos-efetivos                  |
-| LDAP-Display-Name | sDRightsEffective                    |
+| CN                | SD-Rights-Effective                  |
+| Ldap-Display-Name | sDRightsEffective                    |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1304              |
-| System-ID-GUID    | c3dbafa6-33df-11d2-98b2-0000f87a57d4 |
+| System-Id-Guid    | c3dbafa6-33df-11d2-98b2-0000f87a57d4 |
 | Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
@@ -50,7 +50,7 @@ Se um bit for definido, o usuário terá acesso de gravação à parte correspon
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -65,10 +65,10 @@ Se um bit for definido, o usuário terá acesso de gravação à parte correspon
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -86,10 +86,10 @@ Se um bit for definido, o usuário terá acesso de gravação à parte correspon
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -98,7 +98,7 @@ Se um bit for definido, o usuário terá acesso de gravação à parte correspon
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -107,10 +107,10 @@ Se um bit for definido, o usuário terá acesso de gravação à parte correspon
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -128,7 +128,7 @@ Se um bit for definido, o usuário terá acesso de gravação à parte correspon
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| É de valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
@@ -149,7 +149,7 @@ Se um bit for definido, o usuário terá acesso de gravação à parte correspon
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| É de valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
@@ -170,7 +170,7 @@ Se um bit for definido, o usuário terá acesso de gravação à parte correspon
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| É de valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
@@ -191,7 +191,7 @@ Se um bit for definido, o usuário terá acesso de gravação à parte correspon
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| É de valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |

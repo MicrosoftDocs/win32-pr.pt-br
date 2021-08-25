@@ -4,12 +4,12 @@ ms.assetid: 85c4e003-b531-4283-83aa-dd5cc53f35b1
 title: Função de gravador em backups incrementais e diferenciais do VSS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f2cda57d907bed4572f0c0f71f9ee829bee18299
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0d3c84245c21a47ba5535eccdfcbf10e988cf72b30ea99ee92086a9ca8f65647
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501723"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119863866"
 ---
 # <a name="writer-role-in-vss-incremental-and-differential-backups"></a>Função de gravador em backups incrementais e diferenciais do VSS
 

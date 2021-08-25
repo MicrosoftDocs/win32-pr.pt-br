@@ -14,12 +14,12 @@ api_type:
 - DllExport
 api_location:
 - Winspool.drv
-ms.openlocfilehash: b0a9d2bfe7827a2c0e3db9fff9e8249b73bf5102
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e5217ee8445ce8ccae5f22d7c85a4a88dd33f31a1a714aad4899b539ce4edced
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171714"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119846006"
 ---
 # <a name="getprinterdriver2-function"></a>Função GetPrinterDriver2
 
@@ -63,7 +63,7 @@ Um identificador para a impressora para a qual os dados do driver devem ser recu
 *pEnvironment* \[ em, opcional\]
 </dt> <dd>
 
-Um ponteiro para uma cadeia de caracteres terminada em nulo que especifica o ambiente (por exemplo, Windows x86, Windows IA64 ou Windows x64). Se esse parâmetro for **NULL**, o ambiente atual do aplicativo de chamada e do computador cliente (não do aplicativo de destino e do servidor de impressão) será usado.
+um ponteiro para uma cadeia de caracteres terminada em nulo que especifica o ambiente (por exemplo, Windows x86, Windows IA64 ou Windows x64). Se esse parâmetro for **NULL**, o ambiente atual do aplicativo de chamada e do computador cliente (não do aplicativo de destino e do servidor de impressão) será usado.
 
 </dd> <dt>
 
@@ -79,8 +79,8 @@ A estrutura de driver de impressora retornada no buffer *pDriverInfo* . Esse par
 | <span id="1"></span><dl> <dt>**1**</dt> </dl> | [**Informações do DRIVER \_ \_ 1**](driver-info-1.md)<br/> |
 | <span id="2"></span><dl> <dt>**2**</dt> </dl> | [**Informações do DRIVER \_ \_ 2**](driver-info-2.md)<br/> |
 | <span id="3"></span><dl> <dt>**3**</dt> </dl> | [**Informações do DRIVER \_ \_ 3**](driver-info-3.md)<br/> |
-| <span id="4"></span><dl> <dt>**quatro**</dt> </dl> | [**Informações do DRIVER \_ \_ 4**](driver-info-4.md)<br/> |
-| <span id="5"></span><dl> <dt>**05**</dt> </dl> | [**Informações do DRIVER \_ \_ 5**](driver-info-5.md)<br/> |
+| <span id="4"></span><dl> <dt>**4**</dt> </dl> | [**Informações do DRIVER \_ \_ 4**](driver-info-4.md)<br/> |
+| <span id="5"></span><dl> <dt>**5**</dt> </dl> | [**Informações do DRIVER \_ \_ 5**](driver-info-5.md)<br/> |
 | <span id="6"></span><dl> <dt>**6**</dt> </dl> | [**Informações do DRIVER \_ \_ 6**](driver-info-6.md)<br/> |
 | <span id="8"></span><dl> <dt>**8**</dt> </dl> | [**Informações do DRIVER \_ \_ 8**](driver-info-8.md)<br/> |
 
@@ -113,7 +113,7 @@ Um ponteiro para um valor que recebe o número de bytes copiados se a função f
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for realizada com sucesso, o valor de retorno será um valor diferente de zero.
 
@@ -131,9 +131,9 @@ Não há suporte para a versão ANSI dessa função, **GetPrinterDriver2A** e **
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                      |
-| parâmetro<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                            |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                                      |
+| Cabeçalho<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Winspool. lib</dt> </dl>                   |
 | DLL<br/>                      | <dl> <dt>Winspool. drv</dt> </dl>                   |
 | Nomes Unicode e ANSI<br/>   | **GetPrinterDriver2W** (Unicode)<br/>                                                               |

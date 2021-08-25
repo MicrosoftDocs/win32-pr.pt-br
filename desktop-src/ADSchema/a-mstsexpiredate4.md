@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 94a6d002d59c4f2794716dd8e2f7ad46bf5325a2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 49a1cd0cd332e702f5a8dbf637a8cdbad462b1691988cf70d01edfe36e16d412
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104087039"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119924396"
 ---
 # <a name="ms-ts-expiredate4-attribute"></a>Atributo MS-TS-ExpireDate4
 
@@ -55,8 +55,8 @@ Data de validade da quarta CAL de TS por usuário.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
-| É indexado             | True         |
+| É de valor único       | Verdadeiro         |
+| É indexado             | Verdadeiro         |
 | No catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
 | Range-Lower            | \-           |
@@ -76,8 +76,8 @@ Data de validade da quarta CAL de TS por usuário.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
-| É indexado             | True         |
+| É de valor único       | Verdadeiro         |
+| É indexado             | Verdadeiro         |
 | No catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
 | Range-Lower            | \-           |
@@ -97,8 +97,8 @@ Data de validade da quarta CAL de TS por usuário.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
-| É indexado             | True         |
+| É de valor único       | Verdadeiro         |
+| É indexado             | Verdadeiro         |
 | No catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
 | Range-Lower            | \-           |

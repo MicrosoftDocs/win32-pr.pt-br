@@ -4,12 +4,12 @@ ms.assetid: 5cce27ff-1143-4fe6-b4bd-727581431c07
 title: Erros de inicialização
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ee6730a0578579a5b52c30ba2d59436820381f22
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9494a560f8ec211da042736e767fc79371aeffcc4435a8fb554989ac625c2b3e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104169186"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119894086"
 ---
 # <a name="initialization-errors"></a>Erros de inicialização
 
@@ -39,7 +39,7 @@ Esta tabela descreve os códigos e valores de erro de inicialização.
 | ERRO \_ de \_ linha de comando inválida \_         | 1639  | Sintaxe de linha de comando inválida                                                                                                                                                                                                                                                   |
 | ERRO ao \_ instalar \_ remoto não \_ permitido    | 1640  | A instalação de uma sessão de cliente dos serviços de terminal não é permitida para o usuário atual.                                                                                                                                                                                          |
 | ERRO \_ de \_ destino de patch \_ não \_ encontrado      | 1642  | O instalador não pode instalar o patch de atualização porque o programa que está sendo atualizado pode estar ausente ou o patch de atualização atualiza uma versão diferente do programa. Verifique se o programa a ser atualizado existe no computador e se você tem o patch de atualização correto. |
-| instalação de erro \_ \_ rejeitada              | 1654  | O aplicativo que você está tentando executar não tem suporte nesta versão do Windows. Um pacote Windows Installer, patch ou transformação que não foi assinado pela Microsoft não pode ser instalado em um computador ARM.                                                                |
+| instalação de erro \_ \_ rejeitada              | 1654  | O aplicativo que você está tentando executar não tem suporte nesta versão do Windows. um pacote Windows Installer, patch ou transformação que não foi assinado pela Microsoft não pode ser instalado em um computador ARM.                                                                |
 
 
 

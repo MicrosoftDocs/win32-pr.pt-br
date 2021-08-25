@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 9927f3cd79d7950a94e62881089fb06c67395bac
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 0d098bfd706e7fbdd063f049ff8dff1735e385e437d1ee82cd75232744d3dabd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104172919"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119848596"
 ---
 # <a name="id3dxbaseeffectsetfloatarray-method"></a>Método ID3DXBaseEffect:: SetFloatArray
 
@@ -69,7 +69,7 @@ Número de valores de ponto flutuante na matriz.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

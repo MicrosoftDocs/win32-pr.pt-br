@@ -1,5 +1,5 @@
 ---
-title: Sinalizadores de acesso (AccCtrl. h)
+title: Sinalizadores de acesso (AccCtrl.h)
 description: Esses valores indicam se uma entrada na lista de acesso descreve os direitos permitidos ou negados.
 ms.assetid: 460d2c72-3315-4b4c-928e-4bb0640acbe5
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5972bf95efc675d6dd9c2e58c0b7d25c8c305371
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fc1e25fe090661bda40e8063c1d4d711c5a040f343408507756889a64bf96990
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086436"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119859556"
 ---
 # <a name="access-flags"></a>Sinalizadores de acesso
 
@@ -28,8 +28,8 @@ Esses valores indicam se uma entrada na lista de acesso descreve os direitos per
 
 | Constante/valor                                                                                                                                                                                                                                      | Descrição                                   |
 |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------|
-| <span id="ACTRL_ACCESS_ALLOWED"></span><span id="actrl_access_allowed"></span><dl> <dt>**ACTRL \_ ACESSO \_ permitido**</dt> <dt>0x00000000</dt> </dl> | Indica uma entrada permitida pelo Access.<br/> |
-| <span id="ACTRL_ACCESS_DENIED"></span><span id="actrl_access_denied"></span><dl> <dt>**ACTRL \_ ACESSO \_ negado**</dt> <dt>0x10000000</dt> </dl>    | Indica uma entrada com acesso negado.<br/>  |
+| <span id="ACTRL_ACCESS_ALLOWED"></span><span id="actrl_access_allowed"></span><dl> <dt>**ACTRL \_ ACESSO \_ PERMITIDO**</dt> <dt>0X00000000</dt> </dl> | Indica uma entrada permitida para acesso.<br/> |
+| <span id="ACTRL_ACCESS_DENIED"></span><span id="actrl_access_denied"></span><dl> <dt>**ACTRL \_ ACESSO \_ NEGADO**</dt> <dt>0X10000000</dt> </dl>    | Indica uma entrada de acesso negado.<br/>  |
 
 
 
@@ -41,7 +41,7 @@ Esses valores indicam se uma entrada na lista de acesso descreve os direitos per
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                           |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                 |
-| Cabeçalho<br/>                   | <dl> <dt>AccCtrl. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>AccCtrl.h</dt> </dl> |
 
 
 
@@ -49,7 +49,7 @@ Esses valores indicam se uma entrada na lista de acesso descreve os direitos per
 
 <dl> <dt>
 
-[**\_entrada de acesso ACTRL \_**](/windows/desktop/api/AccCtrl/ns-accctrl-actrl_access_entrya)
+[**ENTRADA DE ACESSO DO ACTRL \_ \_**](/windows/desktop/api/AccCtrl/ns-accctrl-actrl_access_entrya)
 </dt> </dl>
 
  

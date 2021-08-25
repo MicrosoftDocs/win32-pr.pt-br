@@ -1,5 +1,5 @@
 ---
-description: Mapeia índices no intervalo de 0 a 255 para os Estados de transformação correspondentes.
+description: Mapas índices no intervalo de 0 a 255 para os estados de transformação correspondentes.
 ms.assetid: b0a1548c-de5d-4eff-baf9-4aecb5e13443
 title: Macro D3DTS_WORLDMATRIX (D3d9types. h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3d9types.h
-ms.openlocfilehash: f80996a37e2fb48bf8ca7ea73f714b04e711b263
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 03a93753790378a7066f4a3ffa6bc6b7fb8139b77f9096886161013653312bba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104506468"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119850056"
 ---
 # <a name="d3dts_worldmatrix-macro"></a>\_Macro D3DTS WORLDMATRIX
 
-Mapeia índices no intervalo de 0 a 255 para os Estados de transformação correspondentes.
+Mapas índices no intervalo de 0 a 255 para os estados de transformação correspondentes.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,7 +46,7 @@ Um valor de índice no intervalo de 0 a 255.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O [**D3DTRANSFORMSTATETYPE**](./d3dtransformstatetype.md) que mapeia para o *índice* fornecido.
 

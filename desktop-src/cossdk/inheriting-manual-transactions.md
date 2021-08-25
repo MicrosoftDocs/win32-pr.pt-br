@@ -4,12 +4,12 @@ ms.assetid: 3616275c-1e2d-4f9d-8adf-11ac9be132f1
 title: Herdando transações manuais
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a802bb392223742e0116d34a81a25fe9be54f220
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 3a0042b7bb1e1545c44c44149c4605c9aabcbcc12fecebb974eb97f95da087b3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105811641"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119896006"
 ---
 # <a name="inheriting-manual-transactions"></a>Herdando transações manuais
 

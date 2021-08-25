@@ -11,12 +11,12 @@ keywords:
 - Função DrawDibChangePalette
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f5935831d8996c424a386f86082282f9cf7c1c12
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 3db474a9e983c442f21fd479342ac8b0786719f36f1494e307154c6cc0a0bd50
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103917260"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119893016"
 ---
 # <a name="palettes"></a>Paletas
 
@@ -33,7 +33,7 @@ Você pode preparar o DrawDib para receber novos valores de cor para sua paleta 
 > [!Note]  
 > Se você liberar a paleta DrawDib enquanto ela estiver selecionada por um controlador de domínio, um erro de GDI (interface de dispositivo gráfico) poderá resultar quando o DC usar a paleta. Em vez disso, seu aplicativo deve usar [**DrawDibSetPalette**](/windows/desktop/api/Vfw/nf-vfw-drawdibsetpalette) para alterar o controlador de domínio DrawDib para usar a paleta padrão ou outra paleta.
 
- 
+ 
 
 As funções [**DrawDibEnd**](/windows/desktop/api/Vfw/nf-vfw-drawdibend), [**DrawDibClose**](/windows/desktop/api/Vfw/nf-vfw-drawdibclose)e [**DrawDibBegin**](/windows/desktop/api/Vfw/nf-vfw-drawdibbegin) podem liberar a paleta DrawDib. No entanto, essas funções devem ser usadas somente quando a paleta não tiver sido selecionada pelo controlador de domínio. A função DrawDibDraw também pode liberar a paleta quando ela usa o mesmo controlador de domínio DrawDib, mas especifica parâmetros de desenho diferentes (*lpbi*, *dxDst*, *dyDst*, *dxSrc* ou *dySrc*) ou um formato diferente.
 
@@ -44,6 +44,6 @@ As funções [**DrawDibEnd**](/windows/desktop/api/Vfw/nf-vfw-drawdibend), [**Dr
 [Renderização de imagem](image-rendering.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

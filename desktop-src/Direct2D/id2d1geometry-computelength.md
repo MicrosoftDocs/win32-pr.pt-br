@@ -1,6 +1,6 @@
 ---
 title: Métodos ID2D1Geometry ComputeLength
-description: Calcula o comprimento da geometria como se cada segmento fosse revertido em uma linha.
+description: Calcula o comprimento da geometria como se cada segmento fosse unrolled em uma linha.
 ms.assetid: 4659d880-0aa3-485d-ac71-044d9ace6759
 keywords:
 - Métodos ComputeLength Direct2D
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
-ms.openlocfilehash: b49b1beb0525d95967ad903b0f0fb3c464edf4d7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3181803698dfa439127cbb8121e670e907c08421f725a935833b7ad58bbb206f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747624"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119874386"
 ---
-# <a name="id2d1geometrycomputelength-methods"></a>Métodos ID2D1Geometry:: ComputeLength
+# <a name="id2d1geometrycomputelength-methods"></a>Métodos ID2D1Geometry::ComputeLength
 
-Calcula o comprimento da geometria como se cada segmento fosse revertido em uma linha.
+Calcula o comprimento da geometria como se cada segmento fosse unrolled em uma linha.
 
 ### <a name="overload-list"></a>Lista de sobrecargas
 
@@ -30,10 +30,10 @@ Calcula o comprimento da geometria como se cada segmento fosse revertido em uma 
 
 | Método                                                                                                                          | Descrição                                                                                         |
 |:--------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------|
-| [**ComputeLength ( \_ matriz d2d1 \_ 3X2 \_ F&, float \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-computelength(constd2d1_matrix_3x2_f_float))              | Calcula o comprimento da geometria como se cada segmento fosse revertido em uma linha.<br/>  |
-| [**ComputeLength ( \_ matriz d2d1 \_ 3x2 \_ F \* , float \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-computelength(constd2d1_matrix_3x2_f_float))             | Calcula o comprimento da geometria como se cada segmento fosse revertido em uma linha.<br/>  |
-| [**ComputeLength ( \_ matriz d2d1 \_ 3X2 \_ F&, float, float \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-computelength(constd2d1_matrix_3x2_f__float_float))  | Calcula o comprimento da geometria como se cada segmento fosse revertido em uma linha.<br/>  |
-| [**ComputeLength ( \_ matriz d2d1 \_ 3x2 \_ F \* , float, float \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-computelength(constd2d1_matrix_3x2_f_float)) | Calcula o comprimento da geometria como se cada segmento fosse revertido em uma linha. <br/> |
+| [**ComputeLength(D2D1 \_ MATRIX \_ 3X2 \_ F&,FLOAT \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-computelength(constd2d1_matrix_3x2_f_float))              | Calcula o comprimento da geometria como se cada segmento fosse unrolled em uma linha.<br/>  |
+| [**ComputeLength(D2D1 \_ MATRIX \_ 3X2 \_ \* F, FLOAT \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-computelength(constd2d1_matrix_3x2_f_float))             | Calcula o comprimento da geometria como se cada segmento fosse unrolled em uma linha.<br/>  |
+| [**ComputeLength(D2D1 \_ MATRIX \_ 3X2 \_ F&,FLOAT,FLOAT \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-computelength(constd2d1_matrix_3x2_f__float_float))  | Calcula o comprimento da geometria como se cada segmento fosse unrolled em uma linha.<br/>  |
+| [**ComputeLength(D2D1 \_ MATRIX \_ 3X2 \_ \* F, FLOAT, FLOAT \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-computelength(constd2d1_matrix_3x2_f_float)) | Calcula o comprimento da geometria como se cada segmento fosse unrolled em uma linha. <br/> |
 
 
 
@@ -82,7 +82,7 @@ if (SUCCEEDED(hr))
 
 | Requisito | Valor |
 |--------------------|-------------------------------------------------------------------------------------|
-| Biblioteca<br/> | <dl> <dt>D2d1. lib</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D2d1.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>D2d1.dll</dt> </dl> |
 
 

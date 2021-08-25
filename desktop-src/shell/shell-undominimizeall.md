@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 4a5010e4ac6b4fca42689f7c80db50c55ab2cb4a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5e2342bda1059e2bcb00893afb182e415840a4e650392fc3e1d3df4756cb2d03
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170083"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119941566"
 ---
 # <a name="shellundominimizeall-method"></a>Método Shell. UndoMinimizeALL
 
-Restaura todas as janelas da área de trabalho para o mesmo estado em que estavam antes do último comando [**MinimizeAll**](shell-minimizeall.md) . Esse método tem o mesmo efeito que clicar com o botão direito do mouse na barra de tarefas e selecionar **desfazer minimizar todas as janelas** em sistemas mais antigos ou um segundo clique no ícone **Mostrar área de trabalho** na área início rápido da barra de tarefas no Windows 2000 ou no Windows XP.
+Restaura todas as janelas da área de trabalho para o mesmo estado em que estavam antes do último comando [**MinimizeAll**](shell-minimizeall.md) . esse método tem o mesmo efeito que clicar com o botão direito do mouse na barra de tarefas e selecionar **desfazer minimizar todos os Windows** em sistemas mais antigos ou um segundo clique no ícone **mostrar área de trabalho** na área início rápido da barra de tarefas no Windows 2000 ou Windows XP.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,9 +47,9 @@ Esse método não tem parâmetros.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir mostra **UndoMinimizeALL** em uso. O uso adequado é mostrado para JScript, VBScript e Visual Basic.
+O exemplo a seguir mostra **UndoMinimizeALL** em uso. o uso adequado é mostrado para JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -105,7 +105,7 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos de área de trabalho do Windows XP\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
 | Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
 | INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |

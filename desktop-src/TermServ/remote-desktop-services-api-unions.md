@@ -1,35 +1,35 @@
 ---
-title: Serviços de Área de Trabalho Remota uniões de API
-description: As seguintes uniões são usadas com a API de Serviços de Área de Trabalho Remota.
+title: uniões Serviços de Área de Trabalho Remota API do Serviços de Área de Trabalho Remota
+description: As uniões a seguir são usadas com a API Serviços de Área de Trabalho Remota dados.
 ms.assetid: 31c763f1-72e7-49a0-a87d-749a5b718ac4
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c192ff7dc880c8206f5b7d32eb07ba73ed62d4b7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3d5e09574bc01e81f355d8f690935378049be09fab8a0fcfc45149994b5f7009
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104363718"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119865936"
 ---
-# <a name="remote-desktop-services-api-unions"></a>Serviços de Área de Trabalho Remota uniões de API
+# <a name="remote-desktop-services-api-unions"></a>uniões Serviços de Área de Trabalho Remota API do Serviços de Área de Trabalho Remota
 
-As seguintes uniões são usadas com a API de Serviços de Área de Trabalho Remota.
+As uniões a seguir são usadas com a API Serviços de Área de Trabalho Remota dados.
 
 ## <a name="in-this-section"></a>Nesta seção
 
 <dl> <dt>
 
-[**nível de WTSINFOEX \_**](/windows/desktop/api/Wtsapi32/ns-wtsapi32-wtsinfoex_level_a)
+[**WTSINFOEX \_ LEVEL**](/windows/desktop/api/Wtsapi32/ns-wtsapi32-wtsinfoex_level_a)
 </dt> <dd>
 
-Contém uma estrutura [**WTSINFOEX \_ LEVEL1**](/windows/desktop/api/Wtsapi32/ns-wtsapi32-wtsinfoex_level1_a) que contém informações estendidas sobre uma sessão de serviços de área de trabalho remota.
+Contém uma [**estrutura WTSINFOEX \_ LEVEL1**](/windows/desktop/api/Wtsapi32/ns-wtsapi32-wtsinfoex_level1_a) que contém informações estendidas sobre uma Serviços de Área de Trabalho Remota sessão.
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

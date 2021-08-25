@@ -1,6 +1,6 @@
 ---
 title: Atributo Privilege-Display-Name
-description: Nome de exibição para um privilégio do Windows NT.
+description: nome de exibição para um privilégio de Windows NT.
 ms.assetid: 9509b342-c7ff-48c8-adfc-351abf9beaf2
 ms.tgt_platform: multiple
 keywords:
@@ -14,16 +14,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e41666264a0b0900765531c8afb38f16e2ffacb
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b1f9fe2e87001621f962078cb33c4990dd4619791323552e66f84a404f3dac17
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103645415"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119923296"
 ---
 # <a name="privilege-display-name-attribute"></a>Atributo Privilege-Display-Name
 
-Nome de exibição para um privilégio do Windows NT.
+nome de exibição para um privilégio de Windows NT.
 
 
 
@@ -58,7 +58,7 @@ Nome de exibição para um privilégio do Windows NT.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
+| É de valor único       | Verdadeiro         |
 | É indexado             | Falso        |
 | No catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
@@ -79,7 +79,7 @@ Nome de exibição para um privilégio do Windows NT.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
+| É de valor único       | Verdadeiro         |
 | É indexado             | Falso        |
 | No catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
@@ -100,7 +100,7 @@ Nome de exibição para um privilégio do Windows NT.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
+| É de valor único       | Verdadeiro         |
 | É indexado             | Falso        |
 | No catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
@@ -121,7 +121,7 @@ Nome de exibição para um privilégio do Windows NT.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
+| É de valor único       | Verdadeiro         |
 | É indexado             | Falso        |
 | No catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
@@ -142,7 +142,7 @@ Nome de exibição para um privilégio do Windows NT.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
+| É de valor único       | Verdadeiro         |
 | É indexado             | Falso        |
 | No catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
@@ -163,7 +163,7 @@ Nome de exibição para um privilégio do Windows NT.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
+| É de valor único       | Verdadeiro         |
 | É indexado             | Falso        |
 | No catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S: |

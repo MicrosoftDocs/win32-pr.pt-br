@@ -4,12 +4,12 @@ ms.assetid: c0bcebe3-f7eb-471f-a21d-5840d2e26729
 title: Modelo de serviço do sistema operacional
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ce545c60da8e480247c8fc8b02cfc01e4487340
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: af797a7baad8390b1b4bc79fd7723a518c587ed58cc2dab27ab2898845335ca3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922120"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119907796"
 ---
 # <a name="operating-system-service-model"></a>Modelo de serviço do sistema operacional
 

@@ -3,7 +3,7 @@ title: comando Reserve
 description: O comando Reserve aloca espaço em disco contíguo para o espaço de trabalho da instância do dispositivo. Dispositivos de vídeo digital reconhecem este comando.
 ms.assetid: ac4fc75e-82d0-4817-a5cf-a77996bc69e2
 keywords:
-- comando de reserva de multimídia do Windows
+- comando de reserva Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f71889af552b9040777394047a0facfc6c81366
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 83f4573f5a630bbf1243b7126867c2d6c6beef61810210624fe87958e12b02ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918012"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119892916"
 ---
 # <a name="reserve-command"></a>comando Reserve
 
