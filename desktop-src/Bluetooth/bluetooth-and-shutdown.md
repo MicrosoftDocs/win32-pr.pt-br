@@ -1,6 +1,6 @@
 ---
 title: Bluetooth e desligar
-description: O Bluetooth usa a função de desligamento para se desconectar do rádio remoto. O Bluetooth não tem suporte de nível de protocolo para os mesmos fechamentos normais ou semifechamentos que o TCP/IP fornece.
+description: Bluetooth usa a função de desligamento para se desconectar do rádio remoto. o Bluetooth não tem suporte no nível de protocolo para os mesmos fechamentos normais ou meio-fechamento que o TCP/IP fornece.
 ms.assetid: 8b89ed57-7713-4e7d-b4f5-41837c7e560e
 keywords:
 - Bluetooth
@@ -8,16 +8,16 @@ keywords:
 - Bluetooth e desligar
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 88d60b0b5e79c0f781cea5ca877df961ee363433
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 3b1d45f59a2b25edce456ed43e906bfddef0dc6abd93cd295823b317fa633945
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104294128"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120004316"
 ---
 # <a name="bluetooth-and-shutdown"></a>Bluetooth e desligar
 
-O Bluetooth usa a função de [**desligamento**](/windows/desktop/api/winsock/nf-winsock-shutdown) para se desconectar do rádio remoto. O Bluetooth não tem suporte de nível de protocolo para os mesmos fechamentos normais ou semifechamentos que o TCP/IP fornece.
+Bluetooth usa a função de [**desligamento**](/windows/desktop/api/winsock/nf-winsock-shutdown) para se desconectar do rádio remoto. o Bluetooth não tem suporte no nível de protocolo para os mesmos fechamentos normais ou meio-fechamento que o TCP/IP fornece.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -29,6 +29,6 @@ O Bluetooth usa a função de [**desligamento**](/windows/desktop/api/winsock/nf
 [**desligar**](/windows/desktop/api/winsock/nf-winsock-shutdown)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

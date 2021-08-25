@@ -4,12 +4,12 @@ ms.assetid: f7d1bdcb-8e4f-493f-ad3c-9d4b9d21436b
 title: Valores de retorno de certificado e de confiança
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e17f170c7c3aa1ac0839323b9a52767a101dd3c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bf575df785160682c132f38ccc280bb8b9377b15b64ed3efda163c68c1ef52e0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647043"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120127236"
 ---
 # <a name="certificate-and-trust-return-values"></a>Valores de retorno de certificado e de confiança
 

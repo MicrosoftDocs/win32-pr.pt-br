@@ -4,12 +4,12 @@ description: Um controle de pager é um contêiner de janela que é usado com um
 ms.assetid: VS|Controls|~\controls\pager\pager.htm
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 28d0b5aa01b72ca5feb8170d6d9fd218a433509b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 12b2e4c4dab20647fcb8e4f1ba79a3a7c860a15d7aa2e639f3bbf719320d1ff4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103635380"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119798966"
 ---
 # <a name="about-pager-controls"></a>Sobre os controles de pager
 
@@ -30,11 +30,11 @@ A captura de tela a seguir mostra uma barra de ferramentas contida dentro de um 
 > [!Note]  
 > O controle de pager é implementado na versão 4,71 e posterior do Comctl32.dll.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

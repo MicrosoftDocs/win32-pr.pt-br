@@ -1,26 +1,26 @@
 ---
 title: Criando o objeto CUIAutomation
-description: Esta seção descreve como começar a escrever um aplicativo cliente de automação da interface do usuário da Microsoft instanciando um objeto que implementa o IUIAutomation.
+description: Esta seção descreve como começar a escrever um aplicativo cliente microsoft Automação da Interface do Usuário, instando um objeto que implementa IUIAutomation.
 ms.assetid: 9b90da60-0204-48c1-bb16-ff4a843bac67
 keywords:
-- clientes, criando objeto CUIAutomation
-- clientes, objeto CUIAutomation
-- Automação da interface do usuário, objeto CUIAutomation
-- Automação da interface do usuário, criando objeto CUIAutomation
-- Criando objeto CUIAutomation
+- clientes, criando o objeto CUIAutomation
+- clients, objeto CUIAutomation
+- Automação da Interface do Usuário,objeto CUIAutomation
+- Automação da Interface do Usuário, criando o objeto CUIAutomation
+- criando o objeto CUIAutomation
 - Objeto CUIAutomation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8162dac5276bbb22d00413276482cca34334fda5
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: c8b9720ce31f883c4561ae3f82372d902a0dcc3fbfca4bae6de998ce438a6d22
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103917362"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119795486"
 ---
 # <a name="creating-the-cuiautomation-object"></a>Criando o objeto CUIAutomation
 
-Esta seção descreve como começar a escrever um aplicativo cliente de automação da interface do usuário da Microsoft instanciando um objeto que implementa o [**IUIAutomation**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomation).
+Esta seção descreve como começar a escrever um aplicativo cliente microsoft Automação da Interface do Usuário, instando um objeto que implementa [**IUIAutomation**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomation).
 
 Este tópico inclui as seções a seguir.
 
@@ -30,24 +30,24 @@ Este tópico inclui as seções a seguir.
 
 ## <a name="the-cuiautomation-object"></a>O objeto CUIAutomation
 
-A primeira etapa no uso da automação da interface do usuário é criar um objeto da classe [**CUIAutomation**](/previous-versions/windows/desktop/legacy/ff384838(v=vs.85)) . Esse objeto expõe a interface [**IUIAutomation**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomation) , que é o gateway para todos os outros objetos e interfaces que são usados por aplicativos cliente. Entre outras coisas, o **IUIAutomation** é usado para as seguintes tarefas:
+A primeira etapa no uso Automação da Interface do Usuário é criar um objeto da [**classe CUIAutomation.**](/previous-versions/windows/desktop/legacy/ff384838(v=vs.85)) Esse objeto expõe a interface [**IUIAutomation,**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomation) que é o gateway para todos os outros objetos e interfaces usados por aplicativos cliente. Entre outras coisas, **IUIAutomation** é usado para as seguintes tarefas:
 
--   Inscrevendo-se em eventos.
--   Criando condições. Condições são objetos usados para restringir o escopo de pesquisas para elementos de automação da interface do usuário.
--   Obter elementos de automação da interface do usuário diretamente da área de trabalho (o elemento raiz) ou de coordenadas de tela ou identificadores de janela.
--   Criação de objetos Tree Walker que podem ser usados para navegar pela hierarquia de elementos de automação da interface do usuário.
+-   Assinando eventos.
+-   Criando condições. As condições são objetos usados para restringir o escopo de pesquisas Automação da Interface do Usuário elementos.
+-   Obter Automação da Interface do Usuário diretamente da área de trabalho (o elemento raiz) ou de coordenadas de tela ou alças de janela.
+-   Criando objetos de árvore que podem ser usados para navegar na hierarquia de Automação da Interface do Usuário elementos.
 -   Convertendo tipos de dados.
 
 ## <a name="creating-the-object"></a>Criando o objeto
 
-Para começar a usar a automação de interface do usuário em seu aplicativo, execute as seguintes etapas:
+Para começar a usar Automação da Interface do Usuário em seu aplicativo, tome as seguintes etapas:
 
--   Inclua automação da IU. h em seus cabeçalhos de projeto. Automação da IU. h traz os outros cabeçalhos que definem a API.
--   Declare um ponteiro para [**IUIAutomation**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomation).
--   Inicialize a Component Object Model (COM).
+-   Inclua UIAutomation.h em seus headers de projeto. UIAutomation.h traz os outros headers que definem a API.
+-   Declare um ponteiro para [**IUIAutomation.**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomation)
+-   Inicialize o Component Object Model (COM).
 -   Crie uma instância de [**CUIAutomation**](/previous-versions/windows/desktop/legacy/ff384838(v=vs.85)) e recupere a interface [**IUIAutomation**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomation) em seu ponteiro.
 
-A função de exemplo a seguir inicializa COM e, em seguida, cria o objeto [**CUIAutomation**](/previous-versions/windows/desktop/legacy/ff384838(v=vs.85)) , recuperando a interface [**IUIAutomation**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomation) no ponteiro *ppAutomation* .
+A função de exemplo a seguir inicializa COM e, em seguida, cria o objeto [**CUIAutomation,**](/previous-versions/windows/desktop/legacy/ff384838(v=vs.85)) recuperando a interface [**IUIAutomation**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomation) no *ponteiro ppAutomation.*
 
 
 ```C++
@@ -70,7 +70,7 @@ HRESULT InitializeUIAutomation(IUIAutomation **ppAutomation)
 
 <dl> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
 [Visão geral sobre eventos de automação de interface do usuário](uiauto-eventsoverview.md)
@@ -79,6 +79,6 @@ HRESULT InitializeUIAutomation(IUIAutomation **ppAutomation)
 [Obtendo elementos da automação interface do usuário](uiauto-obtainingelements.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

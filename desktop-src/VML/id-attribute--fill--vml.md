@@ -4,21 +4,21 @@ description: Atributo de ID (Fill) (VML)
 ms.assetid: 56865772-51bd-4729-8e56-6b00e3c6bed0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4820c4f7a23cf940c199f27243d8ad5601390a84
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 22f317cef4d588444f5c01770dafd5b56af0d2bca48ee228ff789a11b46348bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104007822"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120007866"
 ---
 # <a name="id-attribute-fillvml"></a>Atributo de ID (Fill) (VML)
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). para obter informações, recomendações e orientações sobre a versão atual do Windows Internet explorer, consulte [internet explorer developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
 Um nome que fornece um identificador exclusivo para um preenchimento. Leitura/gravação. **Cadeia de caracteres**.
 
@@ -59,6 +59,6 @@ A forma tem uma ID de preenchimento chamada "myfill".
 
 
 
- 
+ 
 
- 
+ 

@@ -6,18 +6,18 @@ keywords:
 - AriaContainerKeyboardAccessibilityErrorId
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 085591e4f4834e8088b5ca199918d621f518e678
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 591098ba6e38836f1f39d13e72495bc1d7a3d5f9fe088873661e3dd3a7e65d4a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292425"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120122396"
 ---
 # <a name="aria-container-role-keyboard-accessibility-error"></a>Erro de acessibilidade do teclado da função de contêiner do ARIA
 
 ## <a name="text"></a>Texto
 
-O elemento é um contêiner com o descendente ativo e a funcionalidade personalizada do mouse, mas sem a funcionalidade de teclado correspondente: manipuladores de eventos JavaScript para **OnKeyDown** ou **OnKeyPress**.
+O elemento é um contêiner com funcionalidade ativa descendente e personalizada do mouse, mas sem a funcionalidade de teclado correspondente: manipuladores de eventos JavaScript para **OnKeyDown** ou **OnKeyPress**.
 
 ## <a name="type"></a>Tipo
 
@@ -25,7 +25,7 @@ Erro
 
 ## <a name="description"></a>Descrição
 
-Esse erro se aplica a elementos que têm o atributo **Aria-activedescendant** . Esses elementos têm um ou mais manipuladores de eventos do mouse (**MouseMove**, **MouseDown** ou **MouseUp**), mas estão faltando os manipuladores de eventos de teclado equivalentes (**KeyDown**, **KeyUp** ou **KeyPress**). Os manipuladores de eventos de teclado são necessários para garantir que o usuário possa invocar a funcionalidade do elemento usando o teclado e para garantir que o elemento Mantenha o atributo **Aria-activedescendant** .
+Esse erro se aplica a elementos que têm o atributo **aria-activedescendant.** Esses elementos têm um ou mais manipuladores de eventos do mouse (**mousemove,** **mousedown** ou **mouseup**), mas não têm os manipuladores de eventos de teclado equivalentes **(keydown,** **keyup** ou **keypress).** Os manipuladores de eventos de teclado são necessários para garantir que o usuário possa invocar a funcionalidade do elemento usando o teclado e garantir que o elemento mantenha o atributo **aria-activedescendant.**
 
 Para corrigir esse erro, implemente um dos manipuladores de eventos de teclado.
 
@@ -72,12 +72,12 @@ Para corrigir esse erro, implemente um dos manipuladores de eventos de teclado.
 
 <dl> <dt>
 
-[Erro de acessibilidade do teclado (sem o descendente ativo) da função de contêiner do ARIA](aria-container--no-active-descendants--keyboard-events.md)
+[Erro de acessibilidade do teclado da Função de Contêiner do ARIA (sem descendente ativo)](aria-container--no-active-descendants--keyboard-events.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: O método Advise despacha todas as solicitações agendadas para um período especificado ou anterior.
+description: O método Advise expedi todas as solicitações agendadas para um horário especificado ou anterior.
 ms.assetid: 09ea84b7-517a-4ea6-9e03-0d9cd8f72e1f
-title: Método CAMSchedule. Advise (Dsschedule. h)
+title: Método CAMSchedule.Advise (Dsschedule.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 70880243cef294ebe747463cd11737027faf9277
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a0943479aaa7fe2e6d699bba147977a73f48fc31186fb64ea26a211e2ea31d8d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105758884"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119757786"
 ---
-# <a name="camscheduleadvise-method"></a>Método CAMSchedule. Advise
+# <a name="camscheduleadvise-method"></a>Método CAMSchedule.Advise
 
-O `Advise` método despacha todas as solicitações agendadas para um período especificado ou anterior.
+O `Advise` método expedi todas as solicitações agendadas para um horário especificado ou anterior.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,22 +42,22 @@ REFERENCE_TIME Advise(
 
 <dl> <dt>
 
-*rtTime* \[ referência\]
+*rtTime* \[ Ref\]
 </dt> <dd>
 
-Valor que especifica o tempo de referência atual.
+Valor que especifica a hora de referência atual.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna o tempo de referência da próxima solicitação de aviso agendada ou o \_ tempo máximo se não houver nenhum restante.
+Retorna o tempo de referência da próxima solicitação de consultoria agendada ou MAX \_ TIME se não houver mais nenhuma.
 
 ## <a name="remarks"></a>Comentários
 
-Quando o relógio chama esse método, ele especifica o tempo de referência atual. O Agendador determina quais solicitações de aviso expiraram, se houver, e as expedem. Se uma solicitação de uma única expirar, o Agendador a excluirá. Se uma solicitação periódica expirar, o Agendador o agendará novamente para o próximo horário de aviso. O método retorna a hora da próxima solicitação pendente.
+Quando o relógio chama esse método, ele especifica a hora de referência atual. O agendador determina qual solicitação de consultoria expirou, se há, e as envia. Se uma solicitação única expirar, o agendador a excluirá. Se uma solicitação periódica expirar, o agendador a agendará para a próxima hora de consultoria. O método retorna a hora da próxima solicitação pendente.
 
-Para distribuir uma solicitação de aviso, o Agendador sinaliza o evento ou o semáforo fornecido no parâmetro *hNotify* do método [**CAMSchedule:: AddAdvisePacket**](camschedule-addadvisepacket.md) .
+Para expedir uma solicitação de consultoria, o agendador sinaliza o evento ou semáforo dado no parâmetro *hNotify* do [**método CAMSchedule::AddAdvisePacket.**](camschedule-addadvisepacket.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,8 +65,8 @@ Para distribuir uma solicitação de aviso, o Agendador sinaliza o evento ou o s
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Dsschedule. h (incluir fluxos. h)</dt> </dl>                                                                                |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Dsschedule.h (incluir Fluxos.h)</dt> </dl>                                                                                |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

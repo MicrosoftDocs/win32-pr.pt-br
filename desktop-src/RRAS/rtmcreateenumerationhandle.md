@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 14086639db299038139e0e7d02eb12bb892042bd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 635bc169b1f68e2ef29e85e9e7ef800868453dd7221d08eda7953eda277ae423
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085281"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120035906"
 ---
 # <a name="rtmcreateenumerationhandle-function"></a>Função RtmCreateEnumerationHandle
 
-\[Essa API foi substituída pela API do [Gerenciador de tabela de roteamento versão 2](about-routing-table-manager-version-2.md) e não estará disponível além do Windows Server 2003. Os aplicativos devem usar a API da versão 2 do Gerenciador de tabela de roteamento.\]
+\[esta api foi substituída pela api do [gerenciador de tabela de roteamento versão 2](about-routing-table-manager-version-2.md) e não estará disponível além do Windows Server 2003. Os aplicativos devem usar a API da versão 2 do Gerenciador de tabela de roteamento.\]
 
 A função **RtmCreateEnumerationHandle** retorna um identificador a ser usado com [**RtmEnumerateGetNextRoute**](rtmenumerategetnextroute.md) para examinar todas as rotas ou um subconjunto de rotas, conhecido pelo Gerenciador de tabelas de roteamento.
 
@@ -78,7 +78,7 @@ Ponteiro para uma estrutura de rota específica da família de protocolos [**( \
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for realizada com sucesso, o valor de retorno será um **identificador** a ser usado com as chamadas de enumeração subsequentes.
 
@@ -106,7 +106,7 @@ Se a função falhar ou não houver rotas com os critérios especificados, o val
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                          |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                               |
 | Fim do suporte do servidor<br/>    | Windows Server 2003<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>RTM. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>RTM. h</dt> </dl>   |
 | Biblioteca<br/>                  | <dl> <dt>RTM. lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Rtm.dll</dt> </dl> |
 

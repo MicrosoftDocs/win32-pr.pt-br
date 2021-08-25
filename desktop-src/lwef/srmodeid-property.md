@@ -4,16 +4,16 @@ description: Propriedade SRModeID
 ms.assetid: 4c784fc5-d2c2-4e5b-ba5f-f59b4507f40f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 898f90a70c29d409eaa12df3d3fde845e35bd5ff
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: bb2ea6664230f9b2446cbe10a31a0129abb8bc52f0679bb6fdec0a1f0a8be211
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105786259"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119960856"
 ---
 # <a name="srmodeid-property"></a>Propriedade SRModeID
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 <dl> <dt>
 
@@ -27,7 +27,7 @@ Retorna ou define o mecanismo de reconhecimento de fala usado pelo caractere.
 <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintaxe**
 </dt> <dd>
 
-*agente do ***. Caracteres ("*** characterid * * *").* *  \[  =  *Modeid* SRModeID\]
+*Agente ***. Caracteres ("**_characterid_*_")._ *  \[  =  *Modeid* SRModeID\]
 
 
 
@@ -37,7 +37,7 @@ Retorna ou define o mecanismo de reconhecimento de fala usado pelo caractere.
 
 
 
- 
+ 
 
 </dd> </dl>
 
@@ -58,21 +58,21 @@ Os requisitos do mecanismo de fala do Microsoft Agent são baseados no Microsoft
 > [!Note]  
 > Essa propriedade também retornará a cadeia de caracteres vazia se você não tiver nenhum suporte de som compatível instalado no sistema.
 
- 
+ 
 
 > [!Note]  
 > A consulta dessa propriedade normalmente não retorna um erro. No entanto, se o mecanismo de fala demorar muito tempo para ser carregado, você poderá receber um erro indicando que a consulta atingiu o tempo limite.
 
- 
+ 
 
 ## <a name="see-also"></a>Consulte Também
 
 [**Propriedade LanguageID**](languageid-property.md)
 
 
- 
+ 
 
- 
+ 
 
 
 

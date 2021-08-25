@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4883eb8beaac67c0e1dc8c8ab42d5d7961b1c2f5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 67a76d6a55bba37b0cf7849671a6c0e8e5b176f6387a4d757fb2b4af48c17273
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090116"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119945256"
 ---
 # <a name="jet_setinfotostring-method"></a>JET_SETINFO. Método ToString
 
@@ -54,7 +54,7 @@ returnValue = instance.ToString()
 public override string ToString()
 ```
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
 Tipo: [System. String](/dotnet/api/system.string)  
 Uma [cadeia de caracteres](/dotnet/api/system.string) que representa a [JET_SETINFO](./jet-setinfo-class.md)atual.  

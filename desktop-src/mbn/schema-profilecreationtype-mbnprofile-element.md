@@ -11,12 +11,12 @@ api_name:
 - ProfileCreationType
 api_type:
 - Schema
-ms.openlocfilehash: 661306cf53b1ae4c7c9cd49a295afe5b84dabd67
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ddf3e70607cedbaed45da19651ec73736a54bfafab197e95d2cd634d8e3833f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090581"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119959836"
 ---
 # <a name="profilecreationtype-mbnprofile-element"></a>Elemento ProfileCreationType (MBNProfile)
 
@@ -70,7 +70,7 @@ O elemento **ProfileCreationType** é definido pelo elemento [**MBNProfile**](sc
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 7 \| UWP\]<br/> |
+| Cliente mínimo com suporte<br/> | \[aplicativos UWP para aplicativos de área de trabalho Windows 7 \|\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                         |
 
 

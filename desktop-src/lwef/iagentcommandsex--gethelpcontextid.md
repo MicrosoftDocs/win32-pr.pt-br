@@ -1,19 +1,19 @@
 ---
-title: IAgentCommandsEx getidentificaçãodocontextodaajuda
-description: IAgentCommandsEx getidentificaçãodocontextodaajuda
+title: IAgentCommandsEx GetHelpContextID
+description: IAgentCommandsEx GetHelpContextID
 ms.assetid: db5f93e9-8cd3-4147-94b4-50cfe12033c4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a49a633a66622626973e450b9566033b1ad96e7
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: f8e15088eae1025daf7c98695dcf7fd610a04c30089028af0887107228de84b4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104007466"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119961826"
 ---
-# <a name="iagentcommandsexgethelpcontextid"></a>IAgentCommandsEx:: getidentificaçãodocontextodaajuda
+# <a name="iagentcommandsexgethelpcontextid"></a>IAgentCommandsEx::GetHelpContextID
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[O Microsoft Agent foi preterido a partir Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 ``` syntax
 HRESULT GetHelpContextID(
@@ -21,7 +21,7 @@ HRESULT GetHelpContextID(
 );
 ```
 
-Recupera o [**HelpContextId**](helpcontextid-property.md) para um objeto de [**comando**](/windows/desktop/lwef/the-command-object) .
+Recupera o [**HelpContextID para**](helpcontextid-property.md) um [**objeto Command.**](/windows/desktop/lwef/the-command-object)
 
 -   Retorna S \_ OK para indicar que a operação foi bem-sucedida.
 
@@ -30,24 +30,24 @@ Recupera o [**HelpContextId**](helpcontextid-property.md) para um objeto de [**c
 <span id="pulHelpID"></span><span id="pulhelpid"></span><span id="PULHELPID"></span>*pulHelpID*
 </dt> <dd>
 
-Endereço de uma variável que recebe o número de contexto do tópico da ajuda para o objeto de [**comando**](/windows/desktop/lwef/the-command-object) .
+Endereço de uma variável que recebe o número de contexto do tópico de ajuda para o [**objeto Command.**](/windows/desktop/lwef/the-command-object)
 
 </dd> </dl>
 
-Se você criou um arquivo de ajuda do Windows para seu aplicativo e definiu a propriedade [**HelpFile**](helpfile-property.md) do caractere, o Microsoft Agent chama automaticamente Help quando [**HelpModeOn**](helpmodeon-property.md) está definido como **true** e o usuário seleciona o objeto [**Command**](/windows/desktop/lwef/the-command-object) . Se houver um número de contexto em [**HelpContextId**](helpcontextid-property.md), o Agent chamará ajuda e procurará o tópico identificado pelo número de contexto atual. O número de contexto atual é o valor de **HelpContextId** para o objeto de **comando** .
+Se você tiver criado um arquivo de Ajuda Windows para seu aplicativo e definido a propriedade [**HelpFile**](helpfile-property.md) do caractere, o Microsoft Agent chamará automaticamente a Ajuda quando [**HelpModeOn**](helpmodeon-property.md) estiver definido como **True** e o usuário selecionar o objeto [**Command.**](/windows/desktop/lwef/the-command-object) Se houver um número de contexto no [**HelpContextID,**](helpcontextid-property.md)o Agent chamará a Ajuda e procurará o tópico identificado pelo número de contexto atual. O número de contexto atual é o valor **de HelpContextID** para o **objeto Command.**
 
-Essa propriedade aplica-se somente ao uso do caractere do aplicativo cliente; a configuração não afeta outros clientes do caractere ou outros caracteres do seu aplicativo cliente.
+Essa propriedade se aplica somente ao uso do caractere pelo aplicativo cliente; A configuração não afeta outros clientes do caractere ou outros caracteres do aplicativo cliente.
 
 > [!Note]  
-> A criação de um arquivo de ajuda requer o compilador de ajuda do Microsoft Windows.
+> A criação de um arquivo de Ajuda requer o Compilador Windows Ajuda da Microsoft.
 
- 
+ 
 
 ## <a name="see-also"></a>Consulte Também
 
-[**IAgentCommandsEx:: setidentificaçãodocontextodaajuda**](iagentcommandsex--sethelpcontextid.md), [**IAgentCharacterEx:: SetHelpModeOn**](iagentcharacterex--sethelpmodeon.md), [**IAgentCharacterEx:: setarquivodeajudaname**](iagentcharacterex--sethelpfilename.md)
+[**IAgentCommandsEx::SetHelpContextID**](iagentcommandsex--sethelpcontextid.md), [**IAgentCharacterEx::SetHelpModeOn**](iagentcharacterex--sethelpmodeon.md), [**IAgentCharacterEx::SetHelpFileName**](iagentcharacterex--sethelpfilename.md)
 
 
- 
+ 
 
- 
+ 

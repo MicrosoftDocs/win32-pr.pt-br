@@ -1,11 +1,11 @@
 ---
 title: Repl-Interval atributo
-description: O atributo de objetos Site-Link que define o intervalo, em minutos, entre os ciclos de replicação entre os sites na lista de sites.
+description: O atributo de Site-Link que define o intervalo, em minutos, entre os ciclos de replicação entre os sites na Lista de Sites.
 ms.assetid: ef4cbf75-7283-4930-9f98-1ffd6eb05669
 ms.tgt_platform: multiple
 keywords:
-- Esquema de Repl-Interval do atributo AD
-- Esquema de AD do atributo replInterval
+- Repl-Interval atributo AD Schema
+- Esquema do AD do atributo replInterval
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e681b01fbc60b775b0cb947007056dc1d3d3adbb
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: fb5cd02d3458684f6d70cff84435c7809fcd4c912befd65373a264f961cefd72
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086859"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119837436"
 ---
 # <a name="repl-interval-attribute"></a>Repl-Interval atributo
 
-O atributo de objetos Site-Link que define o intervalo, em minutos, entre os ciclos de replicação entre os sites na lista de sites. Deve ser um múltiplo de 15 minutos (a granularidade da replicação de DS entre sites), um mínimo de 15 minutos e um máximo de 10.080 minutos (uma semana).
+O atributo de Site-Link que define o intervalo, em minutos, entre os ciclos de replicação entre os sites na Lista de Sites. Deve ser um múltiplo de 15 minutos (a granularidade da replicação de DS entre sites), um mínimo de 15 minutos e um máximo de 10.080 minutos (uma semana).
 
 
 
 | Entrada | Valor |
 |-------------------|------------------------------------------------|
 | CN                | Repl-Interval                                  |
-| LDAP-Display-Name | replInterval                                   |
+| Ldap-Display-Name | replInterval                                   |
 | Tamanho              | 4 bytes                                        |
 | Privilégio de atualização  | Administrador corporativo                       |
 | Frequência de atualização  | Quando o intervalo de replicação precisa ser alterado. |
 | Attribute-Id      | 1.2.840.113556.1.4.1336                        |
-| System-ID-GUID    | 45ba9d1a-56fa-11d2-90d0-00c04fd91ab1           |
+| System-Id-Guid    | 45ba9d1a-56fa-11d2-90d0-00c04fd91ab1           |
 | Syntax            | [**Enumeração**](s-enumeration.md)           |
 
 
@@ -44,7 +44,7 @@ O atributo de objetos Site-Link que define o intervalo, em minutos, entre os cic
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ O atributo de objetos Site-Link que define o intervalo, em minutos, entre os cic
 | ID do link                | \-                                                                                                         |
 | MAPI-Id                | \-                                                                                                         |
 | System-Only            | Falso                                                                                                      |
-| É de valor único       | True                                                                                                       |
+| Tem valor único       | Verdadeiro                                                                                                       |
 | É indexado             | Falso                                                                                                      |
-| No catálogo global      | Falso                                                                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                               |
+| No Catálogo Global      | Falso                                                                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                               |
 | Range-Lower            | \-                                                                                                         |
 | Range-Upper            | \-                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                 |
-| Classes usadas em        | [**Transporte entre sites**](c-intersitetransport.md)<br/> [**Link de site**](c-sitelink.md)<br/> |
+| Classes usadas em        | [**Transporte entre sites**](c-intersitetransport.md)<br/> [**Link do site**](c-sitelink.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ O atributo de objetos Site-Link que define o intervalo, em minutos, entre os cic
 | ID do link                | \-                                                                                                         |
 | MAPI-Id                | \-                                                                                                         |
 | System-Only            | Falso                                                                                                      |
-| É de valor único       | True                                                                                                       |
+| Tem valor único       | Verdadeiro                                                                                                       |
 | É indexado             | Falso                                                                                                      |
-| No catálogo global      | Falso                                                                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                               |
+| No Catálogo Global      | Falso                                                                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                               |
 | Range-Lower            | \-                                                                                                         |
 | Range-Upper            | \-                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                 |
-| Classes usadas em        | [**Transporte entre sites**](c-intersitetransport.md)<br/> [**Link de site**](c-sitelink.md)<br/> |
+| Classes usadas em        | [**Transporte entre sites**](c-intersitetransport.md)<br/> [**Link do site**](c-sitelink.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,10 +101,10 @@ O atributo de objetos Site-Link que define o intervalo, em minutos, entre os cic
 | ID do link                | \-                                                                                                         |
 | MAPI-Id                | \-                                                                                                         |
 | System-Only            | Falso                                                                                                      |
-| É de valor único       | True                                                                                                       |
+| Tem valor único       | Verdadeiro                                                                                                       |
 | É indexado             | Falso                                                                                                      |
-| No catálogo global      | Falso                                                                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                               |
+| No Catálogo Global      | Falso                                                                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                               |
 | Range-Lower            | \-                                                                                                         |
 | Range-Upper            | \-                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                 |
@@ -122,7 +122,7 @@ O atributo de objetos Site-Link que define o intervalo, em minutos, entre os cic
 | ID do link                | \-                                                                                                         |
 | MAPI-Id                | \-                                                                                                         |
 | System-Only            | Falso                                                                                                      |
-| É de valor único       | True                                                                                                       |
+| É de valor único       | Verdadeiro                                                                                                       |
 | É indexado             | Falso                                                                                                      |
 | No catálogo global      | Falso                                                                                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                               |
@@ -143,7 +143,7 @@ O atributo de objetos Site-Link que define o intervalo, em minutos, entre os cic
 | ID do link                | \-                                                                                                         |
 | MAPI-Id                | \-                                                                                                         |
 | System-Only            | Falso                                                                                                      |
-| É de valor único       | True                                                                                                       |
+| É de valor único       | Verdadeiro                                                                                                       |
 | É indexado             | Falso                                                                                                      |
 | No catálogo global      | Falso                                                                                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                               |
@@ -164,7 +164,7 @@ O atributo de objetos Site-Link que define o intervalo, em minutos, entre os cic
 | ID do link                | \-                                                                                                         |
 | MAPI-Id                | \-                                                                                                         |
 | System-Only            | Falso                                                                                                      |
-| É de valor único       | True                                                                                                       |
+| É de valor único       | Verdadeiro                                                                                                       |
 | É indexado             | Falso                                                                                                      |
 | No catálogo global      | Falso                                                                                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                               |
@@ -185,7 +185,7 @@ O atributo de objetos Site-Link que define o intervalo, em minutos, entre os cic
 | ID do link                | \-                                                                                                         |
 | MAPI-Id                | \-                                                                                                         |
 | System-Only            | Falso                                                                                                      |
-| É de valor único       | True                                                                                                       |
+| É de valor único       | Verdadeiro                                                                                                       |
 | É indexado             | Falso                                                                                                      |
 | No catálogo global      | Falso                                                                                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                               |
@@ -193,7 +193,7 @@ O atributo de objetos Site-Link que define o intervalo, em minutos, entre os cic
 | Range-Upper            | \-                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                 |
-| Classes usadas em        | [**Transporte entre sites**](c-intersitetransport.md)<br/> [**Link de site**](c-sitelink.md)<br/> |
+| Classes usadas em        | [**Transporte entre sites**](c-intersitetransport.md)<br/> [**Link do site**](c-sitelink.md)<br/> |
 
 
 

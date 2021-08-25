@@ -1,12 +1,12 @@
 ---
-title: Método IMsTscAxEvents OnRequestContainerMinimize
-description: Chamado quando o usuário pressiona o botão minimizar na barra de conexão no modo de tela inteira. O acionamento desse evento é uma solicitação que o aplicativo de contêiner minimiza em si mesmo.
+title: Método OnRequestContainerMinimize de IMsTscAxEvents
+description: Chamado quando o usuário pressiona o botão Minimizar na barra de conexão no modo de tela inteira. O acionamento desse evento é uma solicitação que o aplicativo de contêiner se minimiza.
 ms.assetid: fc052f9b-cf59-4d5a-ba39-571627b72f2a
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota do método OnRequestContainerMinimize
-- Método OnRequestContainerMinimize Serviços de Área de Trabalho Remota, interface IMsTscAxEvents
-- Serviços de Área de Trabalho Remota de interface IMsTscAxEvents, método OnRequestContainerMinimize
+- Método OnRequestContainerMinimize Serviços de Área de Trabalho Remota
+- Método OnRequestContainerMinimize Serviços de Área de Trabalho Remota interface , IMsTscAxEvents
+- Interface IMsTscAxEvents Serviços de Área de Trabalho Remota método , OnRequestContainerMinimize
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 85387e3b156eed29dc7068eac84280be521a934e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 344bd85d8d224a5901517c55c8e0a95c854ed246e74a9d0c8def1eebae515305
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369726"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120125056"
 ---
-# <a name="imstscaxeventsonrequestcontainerminimize-method"></a>Método IMsTscAxEvents:: OnRequestContainerMinimize
+# <a name="imstscaxeventsonrequestcontainerminimize-method"></a>Método IMsTscAxEvents::OnRequestContainerMinimize
 
-Chamado quando o usuário pressiona o botão **minimizar** na barra de conexão no modo de tela inteira. O acionamento desse evento é uma solicitação que o aplicativo de contêiner minimiza em si mesmo.
+Chamado quando o usuário pressiona o **botão Minimizar** na barra de conexão no modo de tela inteira. O acionamento desse evento é uma solicitação que o aplicativo de contêiner se minimiza.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,13 +41,13 @@ void OnRequestContainerMinimize();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método só será chamado se o modo de tela inteira manipulado por contêiner estiver habilitado-consulte [**IMsTscAdvancedSettings::p UT \_ ContainerHandledFullScreen**](imstscadvancedsettings-containerhandledfullscreen.md) para obter mais informações.
+Esse método só será chamado se o modo de tela inteira manipulado pelo contêiner estiver habilitado – consulte [**IMsTscAdvancedSettings::p ut \_ ContainerHandledFullScreen**](imstscadvancedsettings-containerhandledfullscreen.md) para obter mais informações.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,7 +67,7 @@ Esse método só será chamado se o modo de tela inteira manipulado por contêin
 
 <dl> <dt>
 
-[**IMsTscAxEvents**](imstscaxevents-interface.md)
+[**Imstscaxevents**](imstscaxevents-interface.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Recupera o identificador exclusivo do botão da caneta.
+description: Recupera o identificador exclusivo do botão de caneta.
 ms.assetid: 06bd6a84-46cd-4c62-92d6-50caae359e43
-title: 'Método ITabletCursorButton:: GetGuid'
+title: Método ITabletCursorButton::GetGuid
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: 21d63ef0c934e96bc93b5384cab1e67f9dd452d8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f4492aa98630491730435080981172bc60a1eeccfe0c84ed76e3b4d504a79ad1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011477"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119844276"
 ---
-# <a name="itabletcursorbuttongetguid-method"></a>Método ITabletCursorButton:: GetGuid
+# <a name="itabletcursorbuttongetguid-method"></a>Método ITabletCursorButton::GetGuid
 
-Recupera o identificador exclusivo do botão da caneta.
+Recupera o identificador exclusivo do botão de caneta.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,14 +40,14 @@ HRESULT GetGuid(
 
 <dl> <dt>
 
-*pguidBtn* \[ fora\]
+*pguidBtn* \[ out\]
 </dt> <dd>
 
-Um valor exclusivo que identifica o botão da caneta.
+Um valor exclusivo que identifica o botão de caneta.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
@@ -56,7 +56,7 @@ Esse método pode retornar um desses valores.
 | Código de retorno                                                                            | Descrição                               |
 |----------------------------------------------------------------------------------------|-------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>   | Êxito.<br/>                       |
-| <dl> <dt>**E \_ falha**</dt> </dl> | Ocorreu um erro não especificado.<br/> |
+| <dl> <dt>**E \_ FAIL**</dt> </dl> | Ocorreu um erro não especificado.<br/> |
 
 
 
@@ -68,7 +68,7 @@ Esse método pode retornar um desses valores.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                          |
+| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/>                          |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                              |
 | Biblioteca<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 
@@ -78,7 +78,7 @@ Esse método pode retornar um desses valores.
 
 <dl> <dt>
 
-[**Interface ITabletCursorButton**](itabletcursorbutton.md)
+[**ITabletCursorButton Interface**](itabletcursorbutton.md)
 </dt> </dl>
 
  

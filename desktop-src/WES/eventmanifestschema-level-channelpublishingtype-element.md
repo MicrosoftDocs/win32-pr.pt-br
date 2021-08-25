@@ -1,9 +1,9 @@
 ---
-title: Elemento Level (ChannelPublishingType)
-description: O nível de severidade dos eventos a serem gravados no canal.
+title: Elemento level (ChannelPublishingType)
+description: O nível de severidade dos eventos a gravar no canal.
 ms.assetid: 1d5e9a35-5e6a-45ee-aa2c-0bbeee18db36
 keywords:
-- Log de elemento de nível
+- elemento level EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 15ec49b6d8b65636b40991cd9949d2770adea71e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a6cd7d7994210e45e655815e1a8fcf43977bee7e2c8f66b0d23e551d051e768e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103919182"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120124326"
 ---
-# <a name="level-channelpublishingtype-element"></a>Elemento Level (ChannelPublishingType)
+# <a name="level-channelpublishingtype-element"></a>Elemento level (ChannelPublishingType)
 
-O nível de severidade dos eventos a serem gravados no canal.
+O nível de severidade dos eventos a gravar no canal.
 
 ``` syntax
 <xs:element name="level"
@@ -30,7 +30,7 @@ O nível de severidade dos eventos a serem gravados no canal.
  />
 ```
 
-O elemento **Level** é definido pelo tipo complexo [**ChannelPublishingType**](eventmanifestschema-channelpublishingtype-complextype.md) .
+O **elemento level** é definido pelo tipo complexo [**ChannelPublishingType.**](eventmanifestschema-channelpublishingtype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ O elemento **Level** é definido pelo tipo complexo [**ChannelPublishingType**](
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
@@ -50,7 +50,7 @@ O elemento **Level** é definido pelo tipo complexo [**ChannelPublishingType**](
 **Elemento pai**
 </dt> <dt>
 
-[**publicando (channelType)**](eventmanifestschema-publishing-channeltype-element.md)
+[**publicação (ChannelType)**](eventmanifestschema-publishing-channeltype-element.md)
 </dt> </dl>
 
  

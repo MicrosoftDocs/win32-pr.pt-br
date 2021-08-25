@@ -1,11 +1,11 @@
 ---
-title: Método AxWindowsMediaPlayer. launchURL
-description: O método launchURL envia uma URL para o navegador padrão do usuário a ser renderizado. | Método AxWindowsMediaPlayer. launchURL
+title: Método AxWindowsMediaPlayer.launchURL
+description: O método launchURL envia uma URL para o navegador padrão do usuário a ser renderizado. | Método AxWindowsMediaPlayer.launchURL
 ms.assetid: 3e8dfdbb-b5ad-44ea-97a6-e860386b7fb4
 keywords:
-- método launchURL Windows Media Player
-- método launchURL Windows Media Player, classe AxWindowsMediaPlayer
-- Classe AxWindowsMediaPlayer Windows Media Player, método launchURL
+- Método launchURL Windows Media Player
+- Método launchURL Windows Media Player , classe AxWindowsMediaPlayer
+- Classe AxWindowsMediaPlayer Windows Media Player , método launchURL
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 27fe8e544bb14b119785b26b9cb5be5cdad48015
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3b4f3ad10a6defe4e7db252a1703888550ff5a89fe2a0d0618dd9886fc5f74bf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105781060"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120123986"
 ---
-# <a name="axwindowsmediaplayerlaunchurl-method"></a>Método AxWindowsMediaPlayer. launchURL
+# <a name="axwindowsmediaplayerlaunchurl-method"></a>Método AxWindowsMediaPlayer.launchURL
 
 O método launchURL envia uma URL para o navegador padrão do usuário a ser renderizado.
 
@@ -52,24 +52,24 @@ Public Sub launchURL( _
 
 <dl> <dt>
 
-*bstrURL* 
+*Bstrurl* 
 </dt> <dd>
 
-O **System. String** que é a URL a ser iniciada.
+O **System.String que** é a URL a ser lançada.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método abre apenas as páginas da Web usando os protocolos HTTP ou HTTPS.
+Esse método abre apenas páginas da Web usando os protocolos HTTP ou HTTPS.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir cria um botão que, quando clicado, exibe o site da Microsoft em uma nova janela do navegador. O objeto AxWMPLib. AxWindowsMediaPlayer é representado pela variável chamada Player.
+O exemplo a seguir cria um botão que, quando clicado, exibe o site da Microsoft em uma nova janela do navegador. O objeto AxWMPLib.AxWindowsMediaPlayer é representado pela variável chamada player.
 
 
 ```CSharp
@@ -101,7 +101,7 @@ End Sub
 
 | Requisito | Valor |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/>   | Windows Media Player 9 Series ou posterior<br/>                                                                          |
+| Versão<br/>   | Windows Media Player série 9 ou posterior<br/>                                                                          |
 | Namespace<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Assembly<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 

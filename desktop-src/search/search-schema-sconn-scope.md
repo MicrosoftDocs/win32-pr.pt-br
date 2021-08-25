@@ -1,19 +1,19 @@
 ---
-description: O <scope> elemento opcional especifica uma coleção de <scopeItem> elementos que definem as inclusões e exclusões de escopo para esse conector de pesquisa específico.
+description: O elemento opcional especifica uma coleção de elementos que definem as inclusões e exclusões de escopo <scope> para esse conector de pesquisa <scopeItem> específico.
 ms.assetid: 9e92e3db-3d5e-4f86-8d67-90eb5469b04b
-title: Elemento Scope (esquema do conector de pesquisa)
+title: Elemento scope (Esquema do Conector de Pesquisa)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3f49041170db80de48d312596249d5c4dca835e8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 18d5fcdb3908f495d07199c61a2005a4f97ba5a01c641fb4e854961489e7abe0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105810617"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119944296"
 ---
-# <a name="scope-element-search-connector-schema"></a>Elemento Scope (esquema do conector de pesquisa)
+# <a name="scope-element-search-connector-schema"></a>Elemento scope (Esquema do Conector de Pesquisa)
 
-O <scope> elemento opcional especifica uma coleção de <scopeItem> elementos que definem as inclusões e exclusões de escopo para esse conector de pesquisa específico. Se <scope> estiver presente, ele deve conter pelo menos um <scopeItem> elemento. Esse elemento não tem atributos.
+O elemento opcional especifica uma coleção de elementos que definem as inclusões e exclusões de escopo <scope> para esse conector de pesquisa <scopeItem> específico. Se <scope> estiver presente, ele DEVERÁ conter pelo menos um <scopeItem> elemento. Esse elemento não tem atributos.
 
 ## <a name="syntax"></a>Syntax
 
@@ -47,7 +47,7 @@ O <scope> elemento opcional especifica uma coleção de <scopeItem> elementos qu
 
 | Elemento pai                                                                                                   | Elementos filho                                                                    |
 |------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| [Elemento searchConnectorDescriptionType (esquema do conector de pesquisa)](search-schema-searchconnectordescription.md) | [elemento scopeItem (esquema do conector de pesquisa)](search-schema-sconn-scopeitem.md). |
+| [Elemento searchConnectorDescriptionType (esquema do conector de pesquisa)](search-schema-searchconnectordescription.md) | [Elemento scopeItem (esquema do conector de pesquisa)](search-schema-sconn-scopeitem.md). |
 
 
 
@@ -55,11 +55,11 @@ O <scope> elemento opcional especifica uma coleção de <scopeItem> elementos qu
 
 ## <a name="remarks"></a>Comentários
 
-Use os <scope> <scopeItem> elementos e para identificar quais locais devem ser pesquisados e quais locais devem ser excluídos da pesquisa.
+Use os <scope> elementos e para identificar quais locais devem ser <scopeItem> pesquisados e quais locais devem ser excluídos da pesquisa.
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir mostra um escopo de pesquisa que inclui C: \\ ExampleFolder e todas as suas pastas filho, exceto c: \\ ExampleFolder \\ ExcludeMe.
+O exemplo a seguir mostra um escopo de pesquisa que inclui C: ExampleFolder e todas as suas pastas filho, exceto \\ C: \\ ExampleFolder \\ ExcludeMe.
 
 
 ```

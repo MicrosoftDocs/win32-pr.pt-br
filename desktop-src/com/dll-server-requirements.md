@@ -4,12 +4,12 @@ description: Embora a maioria das DLLs possa ser executada em um substituto, alg
 ms.assetid: f89dabe6-f65f-4d90-ad0e-c680d4b08ba5
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae82aa44771d398d80169c56976df7b0e209ea6e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 624b516f4b6c9deb00e3a093bd3531d3453e631450a1e5ec3b0810569580961a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104006172"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119993236"
 ---
 # <a name="dll-server-requirements"></a>Requisitos do servidor DLL
 
@@ -28,9 +28,9 @@ Os servidores DLL serão carregados somente em um processo substituto em execuç
 [Substitutos de DLL](dll-surrogates.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

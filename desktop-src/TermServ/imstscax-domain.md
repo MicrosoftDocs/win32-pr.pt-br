@@ -64,12 +64,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: faf95c02de10fe8db38a53b75d4d20cf796020f8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 498098b57ef5ecb19958f6ef0e082022a92f15bab7f1fbfc74bef62d928e8726
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103919044"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120125426"
 ---
 # <a name="imstscaxdomain-property"></a>IMsTscAx: Propriedade omain de:D
 
@@ -102,9 +102,9 @@ Retornar **S \_ OK** se for bem-sucedido.
 
 ## <a name="remarks"></a>Comentários
 
-A definição da propriedade **Domain** é opcional. Se não estiver definido, o usuário poderá escolher um domínio quando a caixa de diálogo de logon do Windows aparecer durante a conexão.
+A definição da propriedade **Domain** é opcional. se não estiver definido, o usuário poderá escolher um domínio quando a caixa de diálogo Windows Logon for exibida durante a conexão.
 
-O método **obter \_ domínio** aloca a memória necessária para o buffer apontado pelo parâmetro *pDomain* . Chamar aplicativos C/C++ deve liberar a memória com uma chamada para a função [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) . Isso não é necessário para clientes de Visual Basic e de script.
+O método **obter \_ domínio** aloca a memória necessária para o buffer apontado pelo parâmetro *pDomain* . Chamar aplicativos C/C++ deve liberar a memória com uma chamada para a função [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) . isso não é necessário para clientes de Visual Basic e de script.
 
 Essa propriedade só poderá ser definida se o controle não estiver no estado conectado. Retornará **E \_ falhará** se for chamado quando o controle estiver conectado. Você pode verificar se o controle está conectado respondendo a eventos de conexão em [**IMsTscAxEvents**](imstscaxevents-interface.md) ou examinando a propriedade [**Connected**](imstscax-connected.md) .
 

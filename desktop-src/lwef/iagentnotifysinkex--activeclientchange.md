@@ -4,16 +4,16 @@ description: IAgentNotifySinkEx ActiveClientChange
 ms.assetid: e953e803-c898-4c07-adc0-8b895b5e8473
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b96988f80d8a1799bf46f12bd38906e9357453f3
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 50549c4b091a39614fd7ff6b15af0bc1436113dfd2e9b3d31ca86e6995a0e94d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105763019"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119961496"
 ---
 # <a name="iagentnotifysinkexactiveclientchange"></a>IAgentNotifySinkEx::ActiveClientChange
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[O Microsoft Agent foi preterido a partir Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 ``` syntax
 HRESULT ActiveClientChange(
@@ -31,7 +31,7 @@ Notifica um aplicativo cliente se seu cliente ativo não for mais o cliente ativ
 <span id="dwCharID"></span><span id="dwcharid"></span><span id="DWCHARID"></span>*dwCharID*
 </dt> <dd>
 
-Identificador do caractere para o qual o status do cliente ativo foi alterado.
+Identificador do caractere para o qual o status ativo do cliente foi alterado.
 
 </dd> <dt>
 
@@ -44,9 +44,9 @@ Alteração de estado ativo do cliente, que pode ser uma combinação de qualque
 
 | Valor                                                              | Descrição                                                           |
 |--------------------------------------------------------------------|-----------------------------------------------------------------------|
-| **const não assinada curto ativar não** **\_ ativo = 0;**<br/>   | O cliente não é o cliente ativo do caractere.                |
-| **const não assinada curto** **Ativar \_ ativa = 1;**<br/>      | O cliente é o cliente ativo do caractere.                    |
-| **const não assinada curto** **Ativar \_ INPUTACTIVE = 2;**<br/> | O cliente está em entrada-ativo (cliente ativo do caractere superior). |
+| **const unsigned short** **ACTIVATE \_ NOTACTIVE = 0;**<br/>   | Seu cliente não é o cliente ativo do caractere.                |
+| **const unsigned short** **ACTIVATE ACTIVE = \_ 1;**<br/>      | Seu cliente é o cliente ativo do caractere.                    |
+| **const unsigned short** **ACTIVATE \_ INPUTACTIVE = 2;**<br/> | Seu cliente está ativo de entrada (cliente ativo do caractere mais alto). |
 
 
 
@@ -54,17 +54,17 @@ Alteração de estado ativo do cliente, que pode ser uma combinação de qualque
 
 </dd> </dl>
 
-Quando vários aplicativos cliente compartilham o mesmo caractere, o cliente ativo do caractere recebe a entrada do mouse (por exemplo, o controle do Microsoft Agent clica ou arrasta eventos). Da mesma forma, quando vários caracteres são exibidos, o cliente ativo do caractere superior (também conhecido como o cliente de entrada-ativo) recebe eventos de [**comando IAgentNotifySink::**](iagentnotifysink--command.md) .
+Quando vários aplicativos cliente compartilham o mesmo caractere, o cliente ativo do caractere recebe entrada do mouse (por exemplo, eventos de clique ou arrastar do controle do Microsoft Agent). Da mesma forma, quando vários caracteres são exibidos, o cliente ativo do caractere mais alto (também conhecido como cliente ativo de entrada) recebe eventos [**IAgentNotifySink::Command.**](iagentnotifysink--command.md)
 
-Quando o cliente ativo de um caractere é alterado, esse evento retorna a ID desse caractere e **true** se o aplicativo se tornou o cliente ativo do caractere ou **false** se não for mais o cliente ativo do caractere.
+Quando o cliente ativo de um caractere muda, esse evento passa a ID desse caractere e **True** se o aplicativo se tornou o cliente ativo do caractere ou **False** se ele não for mais o cliente ativo do caractere.
 
-Um aplicativo cliente pode receber esse evento quando o usuário seleciona a entrada de outro aplicativo cliente no menu pop-up do caractere ou por comando de voz, o aplicativo cliente altera seu status ativo ou outro aplicativo cliente encerra sua conexão com o Microsoft Agent. O Agent envia esse evento somente para os aplicativos cliente que são diretamente afetados – aqueles que se tornam o cliente ativo ou que param de ser o cliente ativo.
+Um aplicativo cliente pode receber esse evento quando o usuário seleciona a entrada de outro aplicativo cliente no menu pop-up do caractere ou por comando de voz, o aplicativo cliente altera seu status ativo ou outro aplicativo cliente sai de sua conexão com o Microsoft Agent. O Agent envia esse evento somente para os aplicativos cliente que são afetados diretamente– aqueles que se tornam o cliente ativo ou param de ser o cliente ativo.
 
-Você pode usar o método [**Activate**](iagentcharacter--activate.md) para definir se seu aplicativo é o cliente ativo do caractere ou para tornar seu aplicativo o cliente de entrada-ativo (o que também torna o caractere mais alto).
+Você pode usar o método [**Activate**](iagentcharacter--activate.md) para definir se seu aplicativo é o cliente ativo do caractere ou para tornar seu aplicativo o cliente ativo de entrada (que também torna o caractere mais alto).
 
 ## <a name="see-also"></a>Consulte Também
 
-[**IAgentCharacter:: ativar**](iagentcharacter--activate.md), [**IAgentCharacterEx:: getactive**](iagentcharacterex--getactive.md), [**IAgentNotifySink:: ActivateInputState**](iagentnotifysink--activateinputstate.md)
+[**IAgentCharacter::Activate**](iagentcharacter--activate.md), [**IAgentCharacterEx::GetActive,**](iagentcharacterex--getactive.md) [**IAgentNotifySink::ActivateInputState**](iagentnotifysink--activateinputstate.md)
 
 
  

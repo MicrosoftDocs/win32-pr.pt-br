@@ -1,9 +1,9 @@
 ---
-title: Mensagem de EM_GETWORDBREAKPROCEX (RichEdit. h)
-description: Recupera o endereço do procedimento de quebra de palavra estendido atualmente registrado para um controle de edição rico.
+title: EM_GETWORDBREAKPROCEX mensagem (Richedit.h)
+description: Recupera o endereço do procedimento de quebra de palavras estendida registrado no momento para um controle de edição rich.
 ms.assetid: 391681b6-fba9-4fc8-8778-3b3bd45ee5d6
 keywords:
-- Controles de EM_GETWORDBREAKPROCEX de mensagens do Windows
+- EM_GETWORDBREAKPROCEX controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 890ef921a33dc387b17fddaa504bd15fa61ac505
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 08e03818ae36946192ed35fee508bacb1c7cc2cbb22dc43e77ee9ee48eac8509
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824626"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119799976"
 ---
-# <a name="em_getwordbreakprocex-message"></a>\_Mensagem em GETWORDBREAKPROCEX
+# <a name="em_getwordbreakprocex-message"></a>Mensagem EM \_ GETWORDBREAKPROCEX
 
-Recupera o endereço do procedimento de quebra de palavra estendido atualmente registrado para um controle de edição rico.
+Recupera o endereço do procedimento de quebra de palavras estendida registrado no momento para um controle de edição rich.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -43,7 +43,7 @@ Não usado; deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 A mensagem retorna o endereço do procedimento atual.
 
@@ -53,9 +53,9 @@ A mensagem retorna o endereço do procedimento atual.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: 50eced73-3917-4d7e-96cc-2d793b448738
 title: Erros e Vetações do gravador
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c24c15ad10766fc6ec395ed058ab3cb72a689d9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0835775aec21da9aa69e81b4f7af63f98d765b5c72763cb52af706c4e7a720e6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164491"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120124456"
 ---
 # <a name="writer-errors-and-vetoes"></a>Erros e Vetações do gravador
 
@@ -26,7 +26,7 @@ Por exemplo, suponha que [**GetWriterStatus**](/windows/desktop/api/VsBackup/nf-
 -   **VSS \_ E \_ WRITERERROR \_ INCONSISTENTSNAPSHOT** sugere que um solicitante pode adicionar volumes adicionais à cópia de sombra
 -   **VSS \_ E \_ WRITERERROR com \_ nova tentativa** indica que tentar novamente sem reconfiguração pode funcionar. Se o gravador continuar a retornar o erro após várias tentativas, tente reiniciar o serviço que hospeda o gravador. Os seguintes gravadores estão hospedados no serviço VSS: gravador de registro, gravador de banco de dados de registro de classe COM+, gravador de otimização de cópia de sombra e gravador ASR (recuperação automatizada do sistema). Se o gravador pertencer a um aplicativo que hospeda o gravador em seu próprio processo, tente reiniciar o aplicativo.
 
-    **Windows Server 2003 e Windows XP:** Os seguintes gravadores estão hospedados no serviço VSS: gravador de registro, gravador de banco de dados de registro de classe COM+, gravador de log de eventos de aplicativo e Microsoft SQL Server gravador do mecanismo de área de trabalho 2000 (MSDE).
+    **Windows Server 2003 e Windows XP:** os seguintes gravadores estão hospedados no serviço VSS: gravador de registro, gravador de banco de dados de registro de classe COM+, gravador de log de eventos de aplicativo e Microsoft SQL Server gravador do mecanismo de área de trabalho 2000 (MSDE).
 
 -   \_ \_ O status do VSS e do gravador \_ \_ não \_ disponível indica que um gravador pode ter atingido o número máximo de sessões de backup e restauração disponíveis e tentar novamente pode funcionar quando o sistema está menos ocupado.
 -   **VSS \_ E \_ WRITERERROR \_ OUTOFRESOURCES** ou **VSS \_ e \_ WRITERERROR \_ Timeout** podem sugerir que a carga do sistema seja reduzida antes de tentar novamente

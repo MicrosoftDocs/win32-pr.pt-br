@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5460467dc28803ef2f225fb049f6ff4a9d8c0b47
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2916656551a016140463b611573ae5ae5f4b1654e40ec1b191c221a25007d86e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086745"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119925996"
 ---
 # <a name="crl-object-attribute"></a>CRL-Object atributo
 
@@ -58,7 +58,7 @@ Referência ao objeto da lista de certificados revogados associado a uma autorid
 | ID do link                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| É de valor único       | True                                                                   |
+| É de valor único       | Verdadeiro                                                                   |
 | É indexado             | Falso                                                                  |
 | No catálogo global      | Falso                                                                  |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                           |
@@ -79,7 +79,7 @@ Referência ao objeto da lista de certificados revogados associado a uma autorid
 | ID do link                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| É de valor único       | True                                                                   |
+| É de valor único       | Verdadeiro                                                                   |
 | É indexado             | Falso                                                                  |
 | No catálogo global      | Falso                                                                  |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                           |
@@ -100,7 +100,7 @@ Referência ao objeto da lista de certificados revogados associado a uma autorid
 | ID do link                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| É de valor único       | True                                                                   |
+| É de valor único       | Verdadeiro                                                                   |
 | É indexado             | Falso                                                                  |
 | No catálogo global      | Falso                                                                  |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                           |
@@ -121,15 +121,15 @@ Referência ao objeto da lista de certificados revogados associado a uma autorid
 | ID do link                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| É de valor único       | True                                                                   |
+| Tem valor único       | Verdadeiro                                                                   |
 | É indexado             | Falso                                                                  |
-| No catálogo global      | Falso                                                                  |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                           |
+| No Catálogo Global      | Falso                                                                  |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
 | System-Flags           | 0x00000010                                                             |
-| Classes usadas em        | [**Autoridade de certificação**](c-certificationauthority.md)<br/> |
+| Classes usadas em        | [**Autoridade de Certificação**](c-certificationauthority.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Referência ao objeto da lista de certificados revogados associado a uma autorid
 | ID do link                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| É de valor único       | True                                                                   |
+| Tem valor único       | Verdadeiro                                                                   |
 | É indexado             | Falso                                                                  |
-| No catálogo global      | Falso                                                                  |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                           |
+| No Catálogo Global      | Falso                                                                  |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
 | System-Flags           | 0x00000010                                                             |
-| Classes usadas em        | [**Autoridade de certificação**](c-certificationauthority.md)<br/> |
+| Classes usadas em        | [**Autoridade de Certificação**](c-certificationauthority.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Referência ao objeto da lista de certificados revogados associado a uma autorid
 | ID do link                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| É de valor único       | True                                                                   |
+| Tem valor único       | Verdadeiro                                                                   |
 | É indexado             | Falso                                                                  |
-| No catálogo global      | Falso                                                                  |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                           |
+| No Catálogo Global      | Falso                                                                  |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
 | System-Flags           | 0x00000010                                                             |
-| Classes usadas em        | [**Autoridade de certificação**](c-certificationauthority.md)<br/> |
+| Classes usadas em        | [**Autoridade de Certificação**](c-certificationauthority.md)<br/> |
 
 
 

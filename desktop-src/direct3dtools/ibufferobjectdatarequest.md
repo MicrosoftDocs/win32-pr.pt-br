@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 090e8287e28daef0798a29fce337f60b0272c8f2
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 7f695e1a5079f37b44fbd370b8eebd38a771eb58
+ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105784682"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122787372"
 ---
 # <a name="span-idvspixengineibufferobjectdatarequestspanibufferobjectdatarequest-interface"></a><span id="vspixengine.ibufferobjectdatarequest"></span>Interface IBufferObjectDataRequest
 
@@ -38,13 +38,13 @@ A interface **IBufferObjectDataRequest** herda da interface [**IUnknown**](/wind
 
 A interface **IBufferObjectDataRequest** tem esses métodos.
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descrição</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/ibufferobjectdatarequest-requestasync-eventid-dword-bstr-bstr-ibufferobjectdatacallback-ptr-dword-dword"><strong>RequestAsync</strong></a></td><td style="text-align: left;"><p>Solicitações para obter o conteúdo bruto de um objeto (buffer, textura, exibição de destino de renderização, etc.)</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th >Método</th><th >Descrição</th></tr></thead><tbody><tr class="odd"><td ><a href="/windows/desktop/direct3dtools/ibufferobjectdatarequest-requestasync-eventid-dword-bstr-bstr-ibufferobjectdatacallback-ptr-dword-dword"><strong>RequestAsync</strong></a></td><td ><p>Solicitações para obter o conteúdo bruto de um objeto (buffer, textura, exibição de destino de renderização, etc.)</p></td></tr></tbody></table>
 
  
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>parâmetro</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine. h</td></tr></tbody></table>
 
  
 

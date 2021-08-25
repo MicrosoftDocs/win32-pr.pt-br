@@ -1,11 +1,11 @@
 ---
-title: Atributo Create-Wizard-ext
-description: GUID de extensões do assistente para criar objeto associado.
+title: Atributo Create-Wizard-Ext
+description: GUID de extensões de assistente para criar o objeto associado.
 ms.assetid: a07bdd0b-7c6f-4177-9c95-e9aefa64f354
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo Create-Wizard-ext
-- Esquema de AD do atributo createWizardExt
+- Esquema do AD do atributo Create-Wizard-Ext
+- Esquema do AD do atributo createWizardExt
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9419d6d2a58b63c43a7bd2ebe4ed2835d1b568a4
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2d6bcb8706f9e46476624f54d0e62549ceb2c895baa6eaf037230b4d62897d1f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086747"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119926096"
 ---
-# <a name="create-wizard-ext-attribute"></a>Atributo Create-Wizard-ext
+# <a name="create-wizard-ext-attribute"></a>Atributo Create-Wizard-Ext
 
-GUID de extensões do assistente para criar objeto associado.
+GUID de extensões de assistente para criar o objeto associado.
 
 
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | Criar-assistente-ext                           |
-| LDAP-Display-Name | createWizardExt                             |
+| CN                | Create-Wizard-Ext                           |
+| Ldap-Display-Name | createWizardExt                             |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.812                      |
-| System-ID-GUID    | 2b09958b-8931-11d1-aebc-0000f80367c1        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 2b09958b-8931-11d1-aebc-0000f80367c1        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -58,10 +58,10 @@ GUID de extensões do assistente para criar objeto associado.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | Falso                                                      |
+| Tem valor único       | Falso                                                      |
 | É indexado             | Falso                                                      |
-| No catálogo global      | Falso                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
+| No Catálogo Global      | Falso                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
@@ -79,10 +79,10 @@ GUID de extensões do assistente para criar objeto associado.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | Falso                                                      |
+| Tem valor único       | Falso                                                      |
 | É indexado             | Falso                                                      |
-| No catálogo global      | Falso                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
+| No Catálogo Global      | Falso                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
@@ -100,10 +100,10 @@ GUID de extensões do assistente para criar objeto associado.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | Falso                                                      |
+| Tem valor único       | Falso                                                      |
 | É indexado             | Falso                                                      |
-| No catálogo global      | Falso                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
+| No Catálogo Global      | Falso                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |

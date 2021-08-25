@@ -1,11 +1,11 @@
 ---
-title: Último-conjunto-atributo de tempo
+title: Atributo Last-Set-Time
 description: A última vez em que o segredo foi alterado.
 ms.assetid: 71245cd4-90d8-4aa1-ad96-d46d6b3a7ad0
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo de tempo Last-set-time
-- Esquema de AD do atributo lastSetTime
+- Esquema do AD do atributo Last-Set-Time
+- Esquema do AD do atributo lastSetTime
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ce123377fac6e67de1ba84b906c9498d0a064936
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7349535f4fbf17624b9cfc353627676988cdf4af63c742ad4c764f2d28e8e29b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104369994"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119804246"
 ---
-# <a name="last-set-time-attribute"></a>Último-conjunto-atributo de tempo
+# <a name="last-set-time-attribute"></a>Atributo Last-Set-Time
 
-A última vez em que o segredo foi alterado. Esse valor é armazenado como um inteiro grande que representa o número de intervalos de 100 a nanossegundos desde 1º de janeiro de 1601 (UTC).
+A última vez em que o segredo foi alterado. Esse valor é armazenado como um inteiro grande que representa o número de intervalos de 100 nanossegundos desde 1º de janeiro de 1601 (UTC).
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | Hora do último conjunto                        |
-| LDAP-Display-Name | lastSetTime                          |
+| CN                | Hora da última definição                        |
+| Ldap-Display-Name | lastSetTime                          |
 | Tamanho              | 8 bytes                              |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.53                |
-| System-ID-GUID    | bf967998-0de6-11d0-a285-00aa003049e2 |
+| System-Id-Guid    | bf967998-0de6-11d0-a285-00aa003049e2 |
 | Syntax            | [**Intervalo**](s-interval.md)       |
 
 
@@ -58,15 +58,15 @@ A última vez em que o segredo foi alterado. Esse valor é armazenado como um in
 | ID do link                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| É de valor único       | True                                  |
+| Tem valor único       | Verdadeiro                                  |
 | É indexado             | Falso                                 |
-| No catálogo global      | Falso                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                          |
+| No Catálogo Global      | Falso                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000010                            |
-| Classes usadas em        | [**RADIUS**](c-secret.md)<br/> |
+| Classes usadas em        | [**Segredo**](c-secret.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ A última vez em que o segredo foi alterado. Esse valor é armazenado como um in
 | ID do link                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| É de valor único       | True                                  |
+| Tem valor único       | Verdadeiro                                  |
 | É indexado             | Falso                                 |
-| No catálogo global      | Falso                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                          |
+| No Catálogo Global      | Falso                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000010                            |
-| Classes usadas em        | [**RADIUS**](c-secret.md)<br/> |
+| Classes usadas em        | [**Segredo**](c-secret.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ A última vez em que o segredo foi alterado. Esse valor é armazenado como um in
 | ID do link                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| É de valor único       | True                                  |
+| Tem valor único       | Verdadeiro                                  |
 | É indexado             | Falso                                 |
-| No catálogo global      | Falso                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                          |
+| No Catálogo Global      | Falso                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000010                            |
-| Classes usadas em        | [**RADIUS**](c-secret.md)<br/> |
+| Classes usadas em        | [**Segredo**](c-secret.md)<br/> |
 
 
 
@@ -121,7 +121,7 @@ A última vez em que o segredo foi alterado. Esse valor é armazenado como um in
 | ID do link                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| É de valor único       | True                                  |
+| É de valor único       | Verdadeiro                                  |
 | É indexado             | Falso                                 |
 | No catálogo global      | Falso                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                          |
@@ -129,7 +129,7 @@ A última vez em que o segredo foi alterado. Esse valor é armazenado como um in
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000010                            |
-| Classes usadas em        | [**RADIUS**](c-secret.md)<br/> |
+| Classes usadas em        | [**Segredo**](c-secret.md)<br/> |
 
 
 
@@ -142,7 +142,7 @@ A última vez em que o segredo foi alterado. Esse valor é armazenado como um in
 | ID do link                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| É de valor único       | True                                  |
+| É de valor único       | Verdadeiro                                  |
 | É indexado             | Falso                                 |
 | No catálogo global      | Falso                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                          |
@@ -150,7 +150,7 @@ A última vez em que o segredo foi alterado. Esse valor é armazenado como um in
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000010                            |
-| Classes usadas em        | [**RADIUS**](c-secret.md)<br/> |
+| Classes usadas em        | [**Segredo**](c-secret.md)<br/> |
 
 
 
@@ -163,7 +163,7 @@ A última vez em que o segredo foi alterado. Esse valor é armazenado como um in
 | ID do link                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| É de valor único       | True                                  |
+| É de valor único       | Verdadeiro                                  |
 | É indexado             | Falso                                 |
 | No catálogo global      | Falso                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                          |
@@ -171,7 +171,7 @@ A última vez em que o segredo foi alterado. Esse valor é armazenado como um in
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000010                            |
-| Classes usadas em        | [**RADIUS**](c-secret.md)<br/> |
+| Classes usadas em        | [**Segredo**](c-secret.md)<br/> |
 
 
 

@@ -3,7 +3,7 @@ title: Atributo WM/MediaOriginalBroadcastDateTime
 description: O atributo WM/MediaOriginalBroadcastDateTime especifica a data e a hora em que uma determinada apresentação foi transmitida pela primeira vez.
 ms.assetid: bf63679d-2840-4fa0-97a7-3cbc8a97ce90
 keywords:
-- Atributo WM/MediaOriginalBroadcastDateTime do Windows Media Player
+- Windows Media Player do atributo WM/MediaOriginalBroadcastDateTime
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: da45ff8f3da29e7ddf51078d5f143ffb7db76f56
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0229e33567896d322b4c5b041056345cfc6833397996d3d1e393c9a1cd7bda58
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105812193"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120122626"
 ---
 # <a name="wmmediaoriginalbroadcastdatetime-attribute"></a>Atributo WM/MediaOriginalBroadcastDateTime
 
@@ -29,7 +29,7 @@ O atributo **WM/MediaOriginalBroadcastDateTime** especifica a data e a hora em q
 
 ## <a name="remarks"></a>Comentários
 
-A constante do Windows Media Format SDK para esse atributo é g \_ wszWMMediaOriginalBroadcastDateTime.
+a constante do SDK do formato de mídia Windows para esse atributo é g \_ wszWMMediaOriginalBroadcastDateTime.
 
 Para determinar se você pode alterar o valor desse atributo, use o método [Media. isReadOnlyItem](media-isreadonlyitem.md) .
 

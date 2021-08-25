@@ -6,7 +6,7 @@ ms.tgt_platform: multiple
 keywords:
 - Gerenciamento Remoto do Windows da propriedade BatchItems
 - Gerenciamento Remoto do Windows da propriedade BatchItems, objeto Session
-- Objeto de sessão Gerenciamento Remoto do Windows, Propriedade BatchItems
+- objeto de sessão Gerenciamento Remoto do Windows, propriedade BatchItems
 topic_type:
 - apiref
 api_name:
@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fb668b80a2fea8ec5c8683a7a85a20cfbb217a7f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 59e395eb27be2b922cf9d53e40f1d8cea0fc13a5dcf7b62b95ac606ec8f3f96f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105791308"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119795336"
 ---
 # <a name="sessionbatchitems-property"></a>Session.BatPropriedade chItems
 
@@ -30,7 +30,7 @@ Define e Obtém o número de itens em cada lote de enumeração. Esse valor não
 
 Esta propriedade é de leitura/gravação.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -55,7 +55,7 @@ Esse é um recurso de otimização que controla a frequência com que as chamada
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                 |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                           |
-| parâmetro<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>WSManDisp. idl</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>WSManDisp. tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>WSMAuto.dll</dt> </dl>   |
@@ -66,7 +66,7 @@ Esse é um recurso de otimização que controla a frequência com que as chamada
 
 <dl> <dt>
 
-[**Session**](session.md)
+[**Sessão**](session.md)
 </dt> <dt>
 
 [**Enumerar**](session-enumerate.md)

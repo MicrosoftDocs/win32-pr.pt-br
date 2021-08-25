@@ -1,8 +1,8 @@
 ---
-description: Método StartService da classe Win32_Service (provedores WMI CIMWin32) – tenta posicionar o serviço referenciado em seu estado de inicialização.
+description: Método StartService da classe Win32_Service (Provedores WMI CIMWin32) – tenta colocar o serviço referenciado em seu estado de inicialização.
 ms.assetid: b7a815a2-7bf6-436f-b3b4-de55eeb2de0e
 ms.tgt_platform: multiple
-title: Método StartService da classe Win32_Service (provedores WMI CIMWin32)
+title: Método StartService da classe Win32_Service (Provedores WMI CIMWin32)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: a630b9d926ff5377312f1c67630a20816ab38b6c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: c88588ec506d24726b99eaa7a1c3f8316bee8e44d6270efb0c51b165ac01a14f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108086154"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119752386"
 ---
-# <a name="startservice-method-of-the-win32_service-class-cimwin32-wmi-providers"></a>Método StartService da classe Win32_Service (provedores WMI CIMWin32)
+# <a name="startservice-method-of-the-win32_service-class-cimwin32-wmi-providers"></a>Método StartService da classe Win32_Service (Provedores WMI CIMWin32)
 
-O método **StartService** tenta posicionar o serviço referenciado em seu estado de inicialização.
+O **método StartService** tenta colocar o serviço referenciado em seu estado de inicialização.
 
-Este tópico usa a sintaxe formato MOF (MOF). Para obter mais informações sobre como usar esse método, consulte [chamando um método](/windows/desktop/WmiSdk/calling-a-method).
+Este tópico usa sintaxe Managed Object Format (MOF). Para obter mais informações sobre como usar esse método, consulte [Chamando um método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,7 +42,7 @@ Esse método não tem parâmetros.
 
 ## <a name="return-value"></a>Valor retornado
 
-Retorna um dos valores listados na lista a seguir ou qualquer outro valor para indicar um erro. Para obter códigos de erro adicionais, consulte [**constantes de erro WMI**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obter valores gerais de **HRESULT** , consulte [códigos de erro do sistema](/windows/desktop/Debug/system-error-codes).
+Retorna um dos valores listados na lista a seguir ou qualquer outro valor para indicar um erro. Para obter códigos de erro adicionais, [**consulte Constantes de erro WMI**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para valores **gerais de HRESULT,** consulte [Códigos de erro do sistema.](/windows/desktop/Debug/system-error-codes)
 
 <dl> <dt>
 
@@ -84,7 +84,7 @@ O código de controle pedido não é válido ou é inaceitável para o serviço.
 **5**
 </dt> <dd>
 
-O código de controle solicitado não pode ser enviado ao serviço porque o estado do serviço ([**Win32 \_ BaseService**](win32-baseservice.md).**** A propriedade State) é igual a 0, 1 ou 2.
+O código de controle solicitado não pode ser enviado para o serviço porque o estado do serviço ([**Win32 \_ BaseService**](win32-baseservice.md).**A** propriedade State) é igual a 0, 1 ou 2.
 
 </dd> <dt>
 
@@ -112,7 +112,7 @@ Falha desconhecida ao iniciar o serviço.
 **9**
 </dt> <dd>
 
-O caminho do diretório para o arquivo executável do serviço não foi encontrado.
+O caminho do diretório para o arquivo executável de serviço não foi encontrado.
 
 </dd> <dt>
 
@@ -133,7 +133,7 @@ O banco de dados para adicionar um serviço novo está bloqueado.
 **12**
 </dt> <dd>
 
-Uma dependência da qual esse serviço depende foi removida do sistema.
+Uma dependência de que esse serviço depende foi removida do sistema.
 
 </dd> <dt>
 
@@ -161,7 +161,7 @@ O serviço não tem a autenticação correta para ser executado no sistema.
 **16**
 </dt> <dd>
 
-Este serviço está sendo removido do sistema.
+Esse serviço está sendo removido do sistema.
 
 </dd> <dt>
 
@@ -172,17 +172,17 @@ O serviço não tem nenhum thread de execução.
 
 </dd> <dt>
 
-**anos**
+**18**
 </dt> <dd>
 
-O serviço tem dependências circulares quando é iniciado.
+O serviço tem dependências circulares quando ele é iniciado.
 
 </dd> <dt>
 
-**aprimora**
+**19**
 </dt> <dd>
 
-Um serviço está sendo executado com o mesmo nome.
+Um serviço está em execução com o mesmo nome.
 
 </dd> <dt>
 
@@ -193,7 +193,7 @@ O nome do serviço tem caracteres inválidos.
 
 </dd> <dt>
 
-**Abril**
+**21**
 </dt> <dd>
 
 Parâmetros inválidos foram passados para o serviço.
@@ -203,7 +203,7 @@ Parâmetros inválidos foram passados para o serviço.
 **22**
 </dt> <dd>
 
-A conta sob a qual este serviço é executado é inválida ou não tem as permissões para executar o serviço.
+A conta na qual esse serviço é executado é inválida ou não tem as permissões para executar o serviço.
 
 </dd> <dt>
 
@@ -223,22 +223,22 @@ O serviço está pausado atualmente no sistema.
 
 ## <a name="remarks"></a>Comentários
 
-Embora possa parecer não ser uma diferença prática entre um serviço que é interrompido e um serviço em pausa, os dois Estados aparecem de forma diferente para o SCM. Um serviço parado é um serviço que não está em execução e deve passar pelo procedimento de início do serviço inteiro. Um serviço em pausa, no entanto, ainda está em execução, mas teve seu funcionamento suspenso. Por isso, um serviço em pausa não precisa passar pelo procedimento de início do serviço inteiro, mas precisa de um procedimento diferente para retomar o funcionamento.
+Embora possa parecer não haver nenhuma diferença prática entre um serviço que está parado e um serviço que está em pausa, os dois estados aparecem de forma diferente para o SCM. Um serviço parado é um serviço que não está em execução e deve passar por todo o procedimento de início do serviço. Um serviço em pausa, no entanto, ainda está em execução, mas teve seu funcionamento suspenso. Por isso, um serviço em pausa não precisa passar por todo o procedimento de início do serviço, mas precisa de um procedimento diferente para retomar o funcionamento.
 
-Você deve usar o método apropriado para iniciar um serviço que foi interrompido ou para retomar um serviço que tenha sido pausado. Os métodos de [**\_ serviço do Win32**](win32-service.md) **StartService** e [**ResumeService**](resumeservice-method-in-class-win32-service.md) devem ser usados nas seguintes situações:
+Você deve usar o método adequado para iniciar um serviço que foi interrompido ou para retomar um serviço que foi pausado. Os [**métodos do \_ Serviço Win32**](win32-service.md) **StartService** e [**ResumeService**](resumeservice-method-in-class-win32-service.md) devem ser usados nas seguintes situações:
 
--   Se um serviço estiver parado no momento, você deverá usar o método **StartService** para reiniciá-lo; [**ResumeService**](resumeservice-method-in-class-win32-service.md) não pode iniciar um serviço que está parado no momento.
--   Se um serviço estiver em pausa, você deverá usar [**ResumeService**](resumeservice-method-in-class-win32-service.md). Se você usar o método **StartService** em um serviço em pausa, receberá a mensagem "o serviço já está em execução". No entanto, o serviço permanece em pausa até que o código de controle retome o serviço seja enviado a ele.
+-   Se um serviço estiver parado no momento, você deverá usar o **método StartService** para reiniciá-lo; [**ResumeService**](resumeservice-method-in-class-win32-service.md) não pode iniciar um serviço que está parado no momento.
+-   Se um serviço estiver em pausa, você deverá usar [**ResumeService**](resumeservice-method-in-class-win32-service.md). Se você usar o **método StartService** em um serviço em pausa, receberá a mensagem "O serviço já está em execução". No entanto, o serviço permanece em pausa até que o código de controle de serviço de retomada seja enviado a ele.
 
-Se você iniciar um serviço interrompido que depende de outro serviço, ambos os serviços serão iniciados. Quando um serviço é iniciado com esse método, os serviços dependentes não são iniciados automaticamente. Você deve usar a classe de associação [**Win32 \_ DependentService**](win32-dependentservice.md) e os [ASSOCIADORES de](/windows/desktop/WmiSdk/associators-of-statement) consulta para localizar os dependentes e iniciá-los separadamente.
+Se você iniciar um serviço parado que depende de outro serviço, ambos os serviços serão iniciados. Quando um serviço é iniciado com esse método, os serviços dependentes não são iniciados automaticamente. Você deve usar a classe de associação [**Win32 \_ DependentService**](win32-dependentservice.md) e a consulta [Associators Of](/windows/desktop/WmiSdk/associators-of-statement) para localizar os dependentes e inciá-los separadamente.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo [habilitar remotamente](https://Gallery.TechNet.Microsoft.Com/Remotely-Enable-RDP-855c3842) o PowerShell do RDP habilita remotamente o serviço de área de trabalho remota.
+O [exemplo Habilitar Remotamente rDP](https://Gallery.TechNet.Microsoft.Com/Remotely-Enable-RDP-855c3842) do PowerShell habilita remotamente o Área de Trabalho Remota serviço.
 
-O exemplo de [parar, iniciar, habilitar ou desabilitar](https://Gallery.TechNet.Microsoft.Com/212e68f0-5279-4499-8e9e-6aa1807719c0) o PowerShell de serviço inicia, interrompe, habilita ou desabilita um serviço.
+O [exemplo Parar, Iniciar, Habilitar ou](https://Gallery.TechNet.Microsoft.Com/212e68f0-5279-4499-8e9e-6aa1807719c0) Desabilitar Serviço do PowerShell inicia, para, habilita ou desabilita um serviço.
 
-O exemplo de código VBSScript a seguir demonstra como iniciar um serviço específico de instâncias [**do \_ serviço Win32**](win32-service.md).
+O exemplo de código VBSScript a seguir demonstra como iniciar um serviço específico de instâncias do [**Serviço Win32. \_**](win32-service.md)
 
 
 ```VB
@@ -253,7 +253,7 @@ next
 
 
 
-O exemplo de código Perl a seguir demonstra como iniciar um serviço específico de instâncias [**do \_ serviço Win32**](win32-service.md).
+O exemplo de código Perl a seguir demonstra como iniciar um serviço específico de instâncias do [**Serviço Win32. \_**](win32-service.md)
 
 
 ```
@@ -289,7 +289,7 @@ else
 
 
 
-O exemplo de código VBScript a seguir, NetDDE, depende do serviço NetDDEDSDM. O script localiza a classe na qual o NetDDE depende e inicia, o que não inicia automaticamente o NetDDE.
+O exemplo de código VBScript a seguir, NetDDE, depende do serviço NetDDEDSDM. O script localiza a classe da qual o NetDDE depende e a inicia, o que não inicia automaticamente o NetDDE.
 
 
 ```VB
@@ -331,20 +331,20 @@ WScript.Echo "Dependent NetDDE service is " & objNetDDEService.State
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
 [Classes do sistema operacional](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_Serviço Win32**](win32-service.md)
+[**Serviço \_ Win32**](win32-service.md)
 </dt> <dt>
 
 [Tarefas do WMI: serviços](/windows/desktop/WmiSdk/wmi-tasks--services)

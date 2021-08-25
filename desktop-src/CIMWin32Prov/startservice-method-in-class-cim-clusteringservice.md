@@ -1,5 +1,5 @@
 ---
-description: Método StartService da classe CIM_ClusteringService-o método StartService coloca o serviço em um estado iniciado.
+description: Método StartService da classe CIM_ClusteringService - O método StartService coloca o serviço em um estado iniciado.
 ms.assetid: 2efd2a06-a03c-4f4c-b2fa-889f84faac0f
 ms.tgt_platform: multiple
 title: Método StartService da classe CIM_ClusteringService
@@ -14,23 +14,23 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: dcd18af37da9302256776cfee844fd83f989c9b7
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 32782b8716496335c341ced96fbc36012410d13e1cc658d9584c5506d1c6c8ae
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108086184"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119752426"
 ---
-# <a name="startservice-method-of-the-cim_clusteringservice-class"></a>Método StartService da \_ classe ClusteringService do CIM
+# <a name="startservice-method-of-the-cim_clusteringservice-class"></a>Método StartService da classe CIM \_ ClusteringService
 
-O método **StartService** coloca o serviço em um estado iniciado. Em uma subclasse, o conjunto de códigos de retorno possíveis pode ser especificado usando um qualificador **ValueMap** no método. As cadeias de caracteres nas quais os conteúdos de **ValueMap** são convertidos também podem ser especificadas na subclasse como um qualificador de matriz de **valores** . Esse método é herdado [**do \_ serviço CIM**](cim-service.md).
+O **método StartService** coloca o serviço em um estado iniciado. Em uma subclasse, o conjunto de códigos de retorno possíveis pode ser especificado usando um qualificador **ValueMap** no método . As cadeias de caracteres para as quais o conteúdo **valueMap** são convertidos também podem ser especificadas na subclasse como um qualificador de matriz **Valores.** Esse método é herdado do [**Serviço CIM. \_**](cim-service.md)
 
 > [!IMPORTANT]
-> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> As classes CIM (Distributed Management Task Force) do DMTF (Distributed Management Task Force) modelo CIM são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
-Este tópico usa a sintaxe formato MOF (MOF). Para obter mais informações sobre como usar esse método, consulte [chamando um método](/windows/desktop/WmiSdk/calling-a-method).
+Este tópico usa sintaxe Managed Object Format (MOF). Para obter mais informações sobre como usar esse método, consulte [Chamando um método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,13 +47,13 @@ Esse método não tem parâmetros.
 
 ## <a name="return-value"></a>Valor retornado
 
-Retorna um valor de 0 (zero) se o serviço foi iniciado com êxito, 1 (um) se a solicitação não tiver suporte e qualquer outro número para indicar um erro.
+Retornará um valor de 0 (zero) se o serviço tiver sido iniciado com êxito, 1 (um) se a solicitação não tiver suporte e qualquer outro número para indicar um erro.
 
 ## <a name="remarks"></a>Comentários
 
-Este método não está implementado no momento pelo WMI. Para usar esse método, você deve implementá-lo em seu próprio provedor.
+Atualmente, esse método não é implementado pelo WMI. Para usar esse método, você deve implementá-lo em seu próprio provedor.
 
-Esta documentação é derivada das descrições da classe CIM publicadas pela DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, obedecer aos padrões de documentação do Microsoft SDK ou fornecer mais informações.
+Esta documentação é derivada das descrições da classe CIM publicadas pelo DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, estar em conformidade com os padrões de documentação do SDK da Microsoft ou fornecer mais informações.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,20 +63,20 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[\_CLUSTERINGSERVICE CIM](startservice-method-in-class-cim-clusteringservice.md)
+[CIM \_ ClusteringService](startservice-method-in-class-cim-clusteringservice.md)
 </dt> <dt>
 
-[**\_CLUSTERINGSERVICE CIM**](cim-clusteringservice.md)
+[**CIM \_ ClusteringService**](cim-clusteringservice.md)
 </dt> </dl>
 
  

@@ -1,26 +1,26 @@
 ---
 title: Propriedade IMsRdpClientNonScriptable3 EnableCredSspSupport
-description: Especifica ou recupera se o provedor de serviços de segurança de credencial (CredSSP) está habilitado para esta conexão.
+description: Especifica ou recupera se o CredSSP (Provedor de Serviços de Segurança de Credencial) está habilitado para essa conexão.
 ms.assetid: 770da50b-2a93-4274-9b6f-c24c13f08549
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota da propriedade EnableCredSspSupport
-- Propriedade EnableCredSspSupport Serviços de Área de Trabalho Remota, interface IMsRdpClientNonScriptable3
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientNonScriptable3, Propriedade EnableCredSspSupport
-- Propriedade EnableCredSspSupport Serviços de Área de Trabalho Remota, interface IMsRdpClientNonScriptable4
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientNonScriptable4, Propriedade EnableCredSspSupport
-- Propriedade EnableCredSspSupport Serviços de Área de Trabalho Remota, interface IMsRdpClientNonScriptable5
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientNonScriptable5, Propriedade EnableCredSspSupport
-- Propriedade EnableCredSspSupport Serviços de Área de Trabalho Remota, objeto MsRdpClient5
-- Objeto MsRdpClient5 Serviços de Área de Trabalho Remota, Propriedade EnableCredSspSupport
-- Propriedade EnableCredSspSupport Serviços de Área de Trabalho Remota, objeto MsRdpClient6
-- Objeto MsRdpClient6 Serviços de Área de Trabalho Remota, Propriedade EnableCredSspSupport
-- Propriedade EnableCredSspSupport Serviços de Área de Trabalho Remota, objeto MsRdpClient7
-- Objeto MsRdpClient7 Serviços de Área de Trabalho Remota, Propriedade EnableCredSspSupport
-- Propriedade EnableCredSspSupport Serviços de Área de Trabalho Remota, objeto MsRdpClient8
-- Objeto MsRdpClient8 Serviços de Área de Trabalho Remota, Propriedade EnableCredSspSupport
-- Propriedade EnableCredSspSupport Serviços de Área de Trabalho Remota, objeto MsRdpClient9
-- Objeto MsRdpClient9 Serviços de Área de Trabalho Remota, Propriedade EnableCredSspSupport
+- Propriedade EnableCredSspSupport Serviços de Área de Trabalho Remota
+- Propriedade EnableCredSspSupport Serviços de Área de Trabalho Remota , interface IMsRdpClientNonScriptable3
+- Interface IMsRdpClientNonScriptable3 Serviços de Área de Trabalho Remota , propriedade EnableCredSspSupport
+- Propriedade EnableCredSspSupport Serviços de Área de Trabalho Remota , interface IMsRdpClientNonScriptable4
+- Interface IMsRdpClientNonScriptable4 Serviços de Área de Trabalho Remota , propriedade EnableCredSspSupport
+- Propriedade EnableCredSspSupport Serviços de Área de Trabalho Remota , interface IMsRdpClientNonScriptable5
+- Interface IMsRdpClientNonScriptable5 Serviços de Área de Trabalho Remota , propriedade EnableCredSspSupport
+- Propriedade EnableCredSspSupport Serviços de Área de Trabalho Remota objeto , MsRdpClient5
+- Objeto MsRdpClient5 Serviços de Área de Trabalho Remota propriedade , EnableCredSspSupport
+- Propriedade EnableCredSspSupport Serviços de Área de Trabalho Remota objeto , MsRdpClient6
+- Objeto MsRdpClient6 Serviços de Área de Trabalho Remota propriedade , EnableCredSspSupport
+- Propriedade EnableCredSspSupport Serviços de Área de Trabalho Remota objeto , MsRdpClient7
+- Objeto MsRdpClient7 Serviços de Área de Trabalho Remota propriedade , EnableCredSspSupport
+- Propriedade EnableCredSspSupport Serviços de Área de Trabalho Remota objeto , MsRdpClient8
+- Objeto MsRdpClient8 Serviços de Área de Trabalho Remota propriedade , EnableCredSspSupport
+- Propriedade EnableCredSspSupport Serviços de Área de Trabalho Remota objeto , MsRdpClient9
+- Objeto MsRdpClient9 Serviços de Área de Trabalho Remota propriedade , EnableCredSspSupport
 topic_type:
 - apiref
 api_name:
@@ -44,18 +44,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e2330b800d15f95a7b59a01735de971dd4b212d6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2f682fe85de22bcffad42d5da80c2f565f4690373629a804c7bbb4fefafa23b2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085490"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120125686"
 ---
-# <a name="imsrdpclientnonscriptable3enablecredsspsupport-property"></a>Propriedade IMsRdpClientNonScriptable3:: EnableCredSspSupport
+# <a name="imsrdpclientnonscriptable3enablecredsspsupport-property"></a>Propriedade IMsRdpClientNonScriptable3::EnableCredSspSupport
 
-Especifica ou recupera se o provedor de serviços de segurança de credencial (CredSSP) está habilitado para esta conexão.
+Especifica ou recupera se o CredSSP (Provedor de Serviços de Segurança de Credencial) está habilitado para essa conexão.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="syntax"></a>Syntax
 
@@ -74,7 +74,7 @@ HRESULT get_EnableCredSspSupport(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Especifica se o CredSSP está habilitado para esta conexão.
+Especifica se CredSSP está habilitado para essa conexão.
 
 ## <a name="requirements"></a>Requisitos
 

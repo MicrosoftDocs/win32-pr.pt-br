@@ -1,30 +1,30 @@
 ---
-title: Propriedade IMsTscAx VerticalScrollBarVisible
+title: Propriedade VerticalScrollBarVisible de IMsTscAx
 description: Indica se o controle exibe uma barra de rolagem vertical.
 ms.assetid: b31e2db3-b367-4900-a2c6-51fd794341c2
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota da propriedade VerticalScrollBarVisible
-- Propriedade VerticalScrollBarVisible Serviços de Área de Trabalho Remota, interface IMsTscAx
-- Serviços de Área de Trabalho Remota de interface IMsTscAx, Propriedade VerticalScrollBarVisible
-- Propriedade VerticalScrollBarVisible Serviços de Área de Trabalho Remota, interface IMsRdpClient
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient, Propriedade VerticalScrollBarVisible
-- Propriedade VerticalScrollBarVisible Serviços de Área de Trabalho Remota, interface IMsRdpClient2
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient2, Propriedade VerticalScrollBarVisible
-- Propriedade VerticalScrollBarVisible Serviços de Área de Trabalho Remota, interface IMsRdpClient3
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient3, Propriedade VerticalScrollBarVisible
-- Propriedade VerticalScrollBarVisible Serviços de Área de Trabalho Remota, interface IMsRdpClient4
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient4, Propriedade VerticalScrollBarVisible
-- Propriedade VerticalScrollBarVisible Serviços de Área de Trabalho Remota, interface IMsRdpClient5
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient5, Propriedade VerticalScrollBarVisible
-- Propriedade VerticalScrollBarVisible Serviços de Área de Trabalho Remota, interface IMsRdpClient6
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient6, Propriedade VerticalScrollBarVisible
-- Propriedade VerticalScrollBarVisible Serviços de Área de Trabalho Remota, interface IMsRdpClient7
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient7, Propriedade VerticalScrollBarVisible
-- Propriedade VerticalScrollBarVisible Serviços de Área de Trabalho Remota, interface IMsRdpClient8
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient8, Propriedade VerticalScrollBarVisible
-- Propriedade VerticalScrollBarVisible Serviços de Área de Trabalho Remota, interface IMsRdpClient9
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient9, Propriedade VerticalScrollBarVisible
+- Propriedade VerticalScrollBarVisible Serviços de Área de Trabalho Remota
+- Propriedade VerticalScrollBarVisible Serviços de Área de Trabalho Remota , interface IMsTscAx
+- Interface IMsTscAx Serviços de Área de Trabalho Remota , propriedade VerticalScrollBarVisible
+- Propriedade VerticalScrollBarVisible Serviços de Área de Trabalho Remota , interface IMsRdpClient
+- Interface IMsRdpClient Serviços de Área de Trabalho Remota propriedade VerticalScrollBarVisible
+- Propriedade VerticalScrollBarVisible Serviços de Área de Trabalho Remota interface , IMsRdpClient2
+- Interface IMsRdpClient2 Serviços de Área de Trabalho Remota , propriedade VerticalScrollBarVisible
+- Propriedade VerticalScrollBarVisible Serviços de Área de Trabalho Remota , interface IMsRdpClient3
+- Interface IMsRdpClient3 Serviços de Área de Trabalho Remota , propriedade VerticalScrollBarVisible
+- Propriedade VerticalScrollBarVisible Serviços de Área de Trabalho Remota , interface IMsRdpClient4
+- Interface IMsRdpClient4 Serviços de Área de Trabalho Remota , propriedade VerticalScrollBarVisible
+- Propriedade VerticalScrollBarVisible Serviços de Área de Trabalho Remota , interface IMsRdpClient5
+- Interface IMsRdpClient5 Serviços de Área de Trabalho Remota , propriedade VerticalScrollBarVisible
+- Propriedade VerticalScrollBarVisible Serviços de Área de Trabalho Remota , interface IMsRdpClient6
+- Interface IMsRdpClient6 Serviços de Área de Trabalho Remota , propriedade VerticalScrollBarVisible
+- Propriedade VerticalScrollBarVisible Serviços de Área de Trabalho Remota , interface IMsRdpClient7
+- Interface IMsRdpClient7 Serviços de Área de Trabalho Remota , propriedade VerticalScrollBarVisible
+- Propriedade VerticalScrollBarVisible Serviços de Área de Trabalho Remota , interface IMsRdpClient8
+- Interface IMsRdpClient8 Serviços de Área de Trabalho Remota , propriedade VerticalScrollBarVisible
+- Propriedade VerticalScrollBarVisible Serviços de Área de Trabalho Remota , interface IMsRdpClient9
+- Interface IMsRdpClient9 Serviços de Área de Trabalho Remota , propriedade VerticalScrollBarVisible
 topic_type:
 - apiref
 api_name:
@@ -54,14 +54,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1365a0ab6d4a1411d78496cf157f3bc49fe5db15
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b09cf6c50c4724cc7374163998af7b7bab77d61f4c16177fedddcc9b1e8de055
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454833"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120125256"
 ---
-# <a name="imstscaxverticalscrollbarvisible-property"></a>Propriedade IMsTscAx:: VerticalScrollBarVisible
+# <a name="imstscaxverticalscrollbarvisible-property"></a>Propriedade IMsTscAx::VerticalScrollBarVisible
 
 Indica se o controle exibe uma barra de rolagem vertical.
 
@@ -80,17 +80,17 @@ HRESULT get_VerticalScrollBarVisible(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-O valor desse parâmetro será **true** se a barra de rolagem vertical estiver visível e **false** caso contrário.
+O valor desse parâmetro será **TRUE se** a barra de rolagem vertical estiver visível, caso contrário, **FALSE.**
 
 ## <a name="error-codes"></a>Códigos do Erro
 
-Retornar **S \_ OK** se for bem-sucedido.
+Retornar **S \_ OK se** for bem-sucedido.
 
 ## <a name="remarks"></a>Comentários
 
 O controle exibirá automaticamente uma barra de rolagem vertical se a altura do controle atual for menor que a altura da área de trabalho.
 
-Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for conexão Web de área de trabalho remota](requirements-for-remote-desktop-web-connection.md).
+Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for Conexão Web de Área de Trabalho Remota](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -102,7 +102,7 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                         |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IMsTscAx é definido como 8C11EFAE-92C3-11D1-BC1E-00C04FA31489<br/>            |
+| IID<br/>                      | IID IMsTscAx é definido como \_ 8C11EFAE-92C3-11D1-BC1E-00C04FA31489<br/>            |
 
 
 
@@ -110,7 +110,7 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 
 <dl> <dt>
 
-[**IMsRdpClient**](imsrdpclient-interface.md)
+[**Imsrdpclient**](imsrdpclient-interface.md)
 </dt> <dt>
 
 [**IMsRdpClient2**](imsrdpclient2.md)
@@ -140,7 +140,7 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 [**HorizontalScrollBarVisible**](imstscax-horizontalscrollbarvisible.md)
 </dt> <dt>
 
-[**IMsTscAx**](imstscax-interface.md)
+[**Imstscax**](imstscax-interface.md)
 </dt> </dl>
 
  

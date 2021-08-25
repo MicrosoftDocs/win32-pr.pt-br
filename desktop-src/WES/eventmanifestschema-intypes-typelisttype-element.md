@@ -1,9 +1,9 @@
 ---
-title: Elemento Intypes (TypeListType)
+title: Elemento inTypes (TypeListType)
 description: Contém uma lista de definições de tipo de entrada.
 ms.assetid: b7be90bf-460a-4883-9d33-962c1fa47dff
 keywords:
-- Log de elementos de tipos
+- Elemento InTypes EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2eb931ceadf2f60f790696b37d67d8c79c4d208e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7a9dde4e4204aac5c9d5c1f78797f2f594bcd7fddc9de95a5f4d709246b9443e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369300"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120124426"
 ---
-# <a name="intypes-typelisttype-element"></a>Elemento Intypes (TypeListType)
+# <a name="intypes-typelisttype-element"></a>Elemento inTypes (TypeListType)
 
 Contém uma lista de definições de tipo de entrada.
 
@@ -30,7 +30,7 @@ Contém uma lista de definições de tipo de entrada.
  />
 ```
 
-O elemento **Intypes** é definido pelo tipo complexo [**TypeListType**](eventmanifestschema-typelisttype-complextype.md) .
+O **elemento inTypes** é definido pelo tipo complexo [**TypeListType.**](eventmanifestschema-typelisttype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ O elemento **Intypes** é definido pelo tipo complexo [**TypeListType**](eventma
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
@@ -50,7 +50,7 @@ O elemento **Intypes** é definido pelo tipo complexo [**TypeListType**](eventma
 **Elemento pai**
 </dt> <dt>
 
-[**tipos (MetadataType)**](eventmanifestschema-types-metadatatype-element.md)
+[**types (MetadataType)**](eventmanifestschema-types-metadatatype-element.md)
 </dt> </dl>
 
  

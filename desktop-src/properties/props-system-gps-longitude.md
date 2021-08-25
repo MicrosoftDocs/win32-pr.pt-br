@@ -4,12 +4,12 @@ ms.assetid: ef28141f-1b63-4694-b6df-fcc11ce7e50b
 title: System. GPS. longitude
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e65431412b0d46ad7b68100febd4d6e8efd31a17
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cf12d65c2776c3740360c4cb298048621a877d58999eaddd6e219c682e5a0c9a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104091821"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120010336"
 ---
 # <a name="systemgpslongitude"></a>System. GPS. longitude
 
@@ -51,7 +51,7 @@ propertyDescription
 
 Os valores de PKEY são definidos em Propkey. h.
 
-O requisito de uma referência de cadeia de caracteres indireta específica para o `label` atributo de **labelInfo** foi adicionado ao Windows Vista com Service Pack 1 (SP1).
+o requisito de uma referência de cadeia de caracteres indireta específica para o `label` atributo de **labelInfo** foi adicionado para o Windows Vista com Service Pack 1 (SP1).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

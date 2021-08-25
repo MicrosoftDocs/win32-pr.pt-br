@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c7ffa25777ec4b5139a41ba9e56d8d5f0a9a3d92
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: fd089ab917cc8f96e04171bc868acd012726ac4431c756e4dd055354b276953d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104163638"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119804256"
 ---
 # <a name="ldap-display-name-attribute"></a>Atributo LDAP-Display-Name
 
@@ -59,9 +59,9 @@ O nome usado por clientes LDAP, como o provedor de LDAP ADSI, para ler e gravar 
 | ID do link                | \-                                                                                                        |
 | MAPI-Id                | 0x8171                                                                                                    |
 | System-Only            | Falso                                                                                                     |
-| É de valor único       | True                                                                                                      |
-| É indexado             | True                                                                                                      |
-| No catálogo global      | True                                                                                                      |
+| É de valor único       | Verdadeiro                                                                                                      |
+| É indexado             | Verdadeiro                                                                                                      |
+| No catálogo global      | Verdadeiro                                                                                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                              |
 | Range-Lower            | 1                                                                                                         |
 | Range-Upper            | 256                                                                                                       |
@@ -80,9 +80,9 @@ O nome usado por clientes LDAP, como o provedor de LDAP ADSI, para ler e gravar 
 | ID do link                | \-                                                                                                        |
 | MAPI-Id                | 0x8171                                                                                                    |
 | System-Only            | Falso                                                                                                     |
-| É de valor único       | True                                                                                                      |
-| É indexado             | True                                                                                                      |
-| No catálogo global      | True                                                                                                      |
+| É de valor único       | Verdadeiro                                                                                                      |
+| É indexado             | Verdadeiro                                                                                                      |
+| No catálogo global      | Verdadeiro                                                                                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                              |
 | Range-Lower            | 1                                                                                                         |
 | Range-Upper            | 256                                                                                                       |
@@ -101,9 +101,9 @@ O nome usado por clientes LDAP, como o provedor de LDAP ADSI, para ler e gravar 
 | ID do link                | \-                                                                                                        |
 | MAPI-Id                | 0x8171                                                                                                    |
 | System-Only            | Falso                                                                                                     |
-| É de valor único       | True                                                                                                      |
-| É indexado             | True                                                                                                      |
-| No catálogo global      | True                                                                                                      |
+| É de valor único       | Verdadeiro                                                                                                      |
+| É indexado             | Verdadeiro                                                                                                      |
+| No catálogo global      | Verdadeiro                                                                                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                              |
 | Range-Lower            | 1                                                                                                         |
 | Range-Upper            | 256                                                                                                       |
@@ -122,9 +122,9 @@ O nome usado por clientes LDAP, como o provedor de LDAP ADSI, para ler e gravar 
 | ID do link                | \-                                                                                                        |
 | MAPI-Id                | 0x8171                                                                                                    |
 | System-Only            | Falso                                                                                                     |
-| É de valor único       | True                                                                                                      |
-| É indexado             | True                                                                                                      |
-| No catálogo global      | True                                                                                                      |
+| É de valor único       | Verdadeiro                                                                                                      |
+| É indexado             | Verdadeiro                                                                                                      |
+| No catálogo global      | Verdadeiro                                                                                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                              |
 | Range-Lower            | 1                                                                                                         |
 | Range-Upper            | 256                                                                                                       |
@@ -143,9 +143,9 @@ O nome usado por clientes LDAP, como o provedor de LDAP ADSI, para ler e gravar 
 | ID do link                | \-                                                                                                        |
 | MAPI-Id                | 0x8171                                                                                                    |
 | System-Only            | Falso                                                                                                     |
-| É de valor único       | True                                                                                                      |
-| É indexado             | True                                                                                                      |
-| No catálogo global      | True                                                                                                      |
+| É de valor único       | Verdadeiro                                                                                                      |
+| É indexado             | Verdadeiro                                                                                                      |
+| No catálogo global      | Verdadeiro                                                                                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                              |
 | Range-Lower            | 1                                                                                                         |
 | Range-Upper            | 256                                                                                                       |
@@ -164,9 +164,9 @@ O nome usado por clientes LDAP, como o provedor de LDAP ADSI, para ler e gravar 
 | ID do link                | \-                                                                                                        |
 | MAPI-Id                | 0x8171                                                                                                    |
 | System-Only            | Falso                                                                                                     |
-| É de valor único       | True                                                                                                      |
-| É indexado             | True                                                                                                      |
-| No catálogo global      | True                                                                                                      |
+| É de valor único       | Verdadeiro                                                                                                      |
+| É indexado             | Verdadeiro                                                                                                      |
+| No catálogo global      | Verdadeiro                                                                                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                              |
 | Range-Lower            | 1                                                                                                         |
 | Range-Upper            | 256                                                                                                       |
@@ -185,9 +185,9 @@ O nome usado por clientes LDAP, como o provedor de LDAP ADSI, para ler e gravar 
 | ID do link                | \-                                                                                                        |
 | MAPI-Id                | 0x8171                                                                                                    |
 | System-Only            | Falso                                                                                                     |
-| É de valor único       | True                                                                                                      |
-| É indexado             | True                                                                                                      |
-| No catálogo global      | True                                                                                                      |
+| É de valor único       | Verdadeiro                                                                                                      |
+| É indexado             | Verdadeiro                                                                                                      |
+| No catálogo global      | Verdadeiro                                                                                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                              |
 | Range-Lower            | 1                                                                                                         |
 | Range-Upper            | 256                                                                                                       |

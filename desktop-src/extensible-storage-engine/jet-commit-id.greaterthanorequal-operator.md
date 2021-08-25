@@ -25,12 +25,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3e531168d2c0656c465d8eace46d00181375bc4c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 54c9500c34f095fcb8da65ea85712a7610c166444b70f7e80fb81af9633bf179
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105782583"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119968316"
 ---
 # <a name="jet_commit_idgreaterthanorequal-operator"></a>Operador JET_COMMIT_ID. GreaterThanOrEqual
 
@@ -76,7 +76,7 @@ public static bool operator >=(
     
     A segunda confirmação de comparação a ser comparada.
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
 Tipo: [System. Boolean](/dotnet/api/system.boolean)  
 True se o LHS vier após ou igual ao RHS.  

@@ -4,17 +4,17 @@ ms.assetid: 36f28e4c-2baf-4618-9935-5d4615f6bc77
 title: Campo de restrições de uso
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b16f57de7642fa789a08c886a32bf906faffb72b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0ccfb5b7c0923bdea117371a3b6af2669bf903fb3af996f754be43d5665c1ee1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296143"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119942658"
 ---
 # <a name="field-of-use-restrictions"></a>Campo de restrições de uso
 
 > [!Note]  
-> Este tópico aplica-se ao Windows 7 ou posterior.
+> este tópico aplica-se ao Windows 7 ou posterior.
 
  
 

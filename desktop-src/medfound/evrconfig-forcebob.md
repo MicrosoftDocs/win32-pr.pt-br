@@ -4,12 +4,12 @@ ms.assetid: 56f808b3-c2eb-46e4-84a1-c478a5db78e7
 title: Atributo EVRConfig_ForceBob (UUIDs. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: afeeb1e7fb57f956d378e71ac4452ea2e4f168be
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 41248eb48f089cf88ecd66dcf823cc83c243b3a2f637aef7633d13ac755c9584
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105782467"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119958343"
 ---
 # <a name="evrconfig_forcebob-attribute"></a>\_Atributo EVRConfig ForceBob
 
@@ -39,9 +39,9 @@ A constante de GUID para esse atributo é exportada de strmiids. lib.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                            |
-| parâmetro<br/>                   | <dl> <dt>UUIDs. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/>                            |
+| Cabeçalho<br/>                   | <dl> <dt>UUIDs. h</dt> </dl> |
 
 
 
