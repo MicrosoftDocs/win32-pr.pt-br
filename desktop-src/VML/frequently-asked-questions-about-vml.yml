@@ -29,14 +29,14 @@ metadata:
   - Macromedia Flash
   ms.topic: article
   ms.date: 05/31/2018
-  ms.openlocfilehash: 367b92f2478a621829e5add9f7b063fce8085ea4
-  ms.sourcegitcommit: 78ce1d1e3f12ee3e08390868e5b93c034f437657
+  ms.openlocfilehash: f607869e2b08f2386489c475dbe4a31d492bcf371d00a243d6c3a83349d5547a
+  ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 06/10/2021
-  ms.locfileid: "111911894"
+  ms.lasthandoff: 08/11/2021
+  ms.locfileid: "119681056"
 title: Perguntas frequentes sobre a VML
-summary: "Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.\n\n> [!Note]  \n> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).\n\n \n"
+summary: "este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.\n\n> [!Note]  \n> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). para obter informações, recomendações e orientações sobre a versão atual do Windows Internet explorer, consulte [internet explorer developer Center](https://msdn.microsoft.com/ie/).\n\n \n"
 sections:
 - name: Ignored
   questions:
@@ -53,14 +53,14 @@ sections:
   - question: >
       Por que a Microsoft dá suporte a outro padrão baseado em XML quando o XML dificilmente está em uso e é jovem o suficiente como é?
     answer: >
-      O XML é uma maneira poderosa, mas simples, de representar dados estruturados na Web e complementa totalmente o HTML para exibição. A VML é um exemplo dos muitos formatos baseados em XML, específicos do aplicativo que serão desenvolvidos e implementados nos próximos meses. Por exemplo, na próxima versão do Office, a VML será usada para anotar documentos HTML – para preservar as informações de formatação dos gráficos de arte do Office entre o formato de arquivo nativo do Office e o HTML, permitindo que os usuários do Office alternem diretamente entre os dois formatos.
+      O XML é uma maneira poderosa, mas simples, de representar dados estruturados na Web e complementa totalmente o HTML para exibição. A VML é um exemplo dos muitos formatos baseados em XML, específicos do aplicativo que serão desenvolvidos e implementados nos próximos meses. por exemplo, na próxima versão do Office, a VML será usada para anotar documentos HTML – para preservar as informações de formatação de Office gráficos de arte entre o formato de arquivo nativo Office e HTML, permitindo que Office usuários alternem diretamente entre os dois formatos.
 
 
       [![voltar ao início ](images/top.gif) para cima](#top)
   - question: >
-      Quem dará suporte a VML?
+      Who dará suporte a VML?
     answer: >
-      Esperamos que muitos fornecedores ofereçam suporte a VML. Por exemplo, Autodesk, Hewlett-Packard, Macromedia e VISIO têm suporte de VML em versões futuras de seus produtos. A Microsoft penhorou o suporte para VML em versões futuras de suas plataformas, como o Internet Explorer. Além disso, o VML será usado na próxima geração do Office para habilitar "ida e volta" entre o formato do Office e o HTML.
+      Esperamos que muitos fornecedores ofereçam suporte a VML. Por exemplo, Autodesk, Hewlett-Packard, Macromedia e VISIO têm suporte de VML em versões futuras de seus produtos. A Microsoft penhorou o suporte para VML em versões futuras de suas plataformas, como o Internet Explorer. além disso, a VML será usada na próxima geração de Office para habilitar "ida e volta" entre o formato de Office e o HTML.
 
 
       [![voltar ao início ](images/top.gif) para cima](#top)

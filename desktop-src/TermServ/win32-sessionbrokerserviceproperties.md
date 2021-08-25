@@ -19,12 +19,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 507c4211b9506e0635966e9541167d24495735ef
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3f095272ee0d836e77542e20badbe5bb1169206cc6b0e87d742e3fbd235acd52
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499775"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119656176"
 ---
 # <a name="win32_sessionbrokerserviceproperties-class"></a>\_Classe Win32 SessionBrokerServiceProperties
 
@@ -59,12 +59,12 @@ A classe **Win32 \_ SessionBrokerServiceProperties** tem esses métodos.
 
 | Método                                                                                                | Descrição                                                                                                                                                                                                                          |
 |:------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**DeleteSBDbConnectionString**](win32-sessionbrokerserviceproperties-deletesbdbconnectionstring.md) | Exclui cadeias de conexão de BD (primária e secundária) do registro.<br/> **Windows server 2012 R2, Windows server 2012 e Windows server 2008 R2:** Este método não está disponível antes do Windows Server 2016<br/> |
+| [**DeleteSBDbConnectionString**](win32-sessionbrokerserviceproperties-deletesbdbconnectionstring.md) | Exclui cadeias de conexão de BD (primária e secundária) do registro.<br/> **Windows Server 2012 r2, Windows Server 2012 e Windows Server 2008 r2:** Este método não está disponível antes de Windows Server 2016<br/> |
 | [**InstallBrokerDatabase**](win32-sessionbrokerserviceproperties-installbrokerdatabase.md)           | Instala o BD do agente de conexão RD no SQL Server central<br/>                                                                                                                                                                    |
 | [**IsDbReachable**](win32-sessionbrokerserviceproperties-isdbreachable.md)                           | Verifica se o BD está acessível<br/>                                                                                                                                                                                                 |
-| [**SetBrokerHAMode**](win32-sessionbrokerserviceproperties-setbrokerhamode.md)                       | Migra dados do BD de WID local para o novo SQL Server DB baseado. Ele também configura o servidor do agente para usar o SQL Server central<br/>                                                                                        |
-| [**SetBrokerNonHAMode**](win32-sessionbrokerserviceproperties-setbrokernonhamode.md)                 | Migra dados do SQL Server central para o local DB. Ele também configura o servidor do agente para usar o BD local.<br/>                                                                                                              |
-| [**SetSBDbConnectionStrings**](win32-sessionbrokerserviceproperties-setsbdbconnectionstrings.md)     | Salva as cadeias de conexão do BD (primária e secundária) no registro.<br/> **Windows server 2012 R2, Windows server 2012 e Windows server 2008 R2:** Este método não está disponível antes do Windows Server 2016<br/>     |
+| [**SetBrokerHAMode**](win32-sessionbrokerserviceproperties-setbrokerhamode.md)                       | migra dados do bd de WID local para o novo SQL Server db baseado. Ele também configura o servidor do agente para usar o SQL Server central<br/>                                                                                        |
+| [**SetBrokerNonHAMode**](win32-sessionbrokerserviceproperties-setbrokernonhamode.md)                 | migra dados do SQL Server central para o local DB. Ele também configura o servidor do agente para usar o BD local.<br/>                                                                                                              |
+| [**SetSBDbConnectionStrings**](win32-sessionbrokerserviceproperties-setsbdbconnectionstrings.md)     | Salva as cadeias de conexão do BD (primária e secundária) no registro.<br/> **Windows Server 2012 r2, Windows Server 2012 e Windows Server 2008 r2:** Este método não está disponível antes de Windows Server 2016<br/>     |
 
 
 
@@ -87,7 +87,7 @@ Tipo de acesso: leitura/gravação
 
 Cadeia de conexão de banco de dados usada pelo serviço de agente de sessão.
 
-**Windows Server 2008 R2:** Essa propriedade não está disponível antes do Windows Server 2012
+**Windows Server 2008 R2:** Esta propriedade não está disponível antes de Windows Server 2012
 
 </dd> <dt>
 
@@ -102,7 +102,7 @@ Tipo de acesso: leitura/gravação
 
 Opcional. Cadeia de conexão de banco de dados secundária usada pelo serviço de agente de sessão para dar suporte à expiração da senha.
 
-**Windows server 2012 R2, Windows server 2012 e Windows server 2008 R2:** Essa propriedade não está disponível antes do Windows Server 2016
+**Windows Server 2012 r2, Windows Server 2012 e Windows Server 2008 r2:** Esta propriedade não está disponível antes de Windows Server 2016
 
 </dd> <dt>
 

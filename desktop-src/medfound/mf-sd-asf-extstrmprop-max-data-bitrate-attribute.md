@@ -1,19 +1,19 @@
 ---
-description: Especifica a taxa máxima de bits de dados, em bits por segundo, de um fluxo em um arquivo de formato de sistema avançado (ASF).
+description: Especifica a taxa máxima de bits de dados, em bits por segundo, de um fluxo em um arquivo ASF (Advanced Systems Format).
 ms.assetid: d20d374a-a259-4e89-8eeb-942bbe53e959
-title: Atributo MF_SD_ASF_EXTSTRMPROP_MAX_DATA_BITRATE (Wmcontainer. h)
+title: MF_SD_ASF_EXTSTRMPROP_MAX_DATA_BITRATE atributo (Wmcontainer.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 85626be11afe2e9413852e8aec3533f987538473
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: daa9bb445724c15604ab30e353315769f78a71c0d6dd94291392e4c34ee05a70
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105812335"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119714356"
 ---
-# <a name="mf_sd_asf_extstrmprop_max_data_bitrate-attribute"></a>\_Atributo MF SD \_ ASF \_ EXTSTRMPROP \_ Max \_ Data taxa de \_ bits
+# <a name="mf_sd_asf_extstrmprop_max_data_bitrate-attribute"></a>Atributo MF \_ SD \_ ASF \_ EXTSTRMPROP \_ MAX DATA \_ \_ BITRATE
 
-Especifica a taxa máxima de bits de dados, em bits por segundo, de um fluxo em um arquivo de formato de sistema avançado (ASF).
+Especifica a taxa máxima de bits de dados, em bits por segundo, de um fluxo em um arquivo ASF (Advanced Systems Format).
 
 ## <a name="data-type"></a>Tipo de dados
 
@@ -21,9 +21,9 @@ Especifica a taxa máxima de bits de dados, em bits por segundo, de um fluxo em 
 
 ## <a name="remarks"></a>Comentários
 
-Esse atributo se aplica a descritores de fluxo para conteúdo ASF. Ele corresponde ao campo de taxa de bits de dados alternativa no objeto de propriedades de fluxo estendido. Para obter mais informações, consulte a especificação do ASF.
+Esse atributo se aplica a descritores de fluxo para conteúdo ASF. Ele corresponde ao campo Taxa de Bits de Dados Alternativa no objeto Propriedades de Fluxo Estendido. Para obter mais informações, consulte a especificação do ASF.
 
-O método [**IMFASFContentInfo:: GeneratePresentationDescriptor**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-generatepresentationdescriptor) gera esse atributo dos metadados do ASF. O aplicativo pode criar o descritor de fluxo para o fluxo do descritor de apresentação chamando [**IMFPresentationDescriptor:: GetStreamDescriptorByIndex**](/windows/desktop/api/mfidl/nf-mfidl-imfpresentationdescriptor-getstreamdescriptorbyindex).
+O [**método IMFASFContentInfo::GeneratePresentationDescriptor**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-generatepresentationdescriptor) gera esse atributo dos metadados do ASF. O aplicativo pode criar o descritor de fluxo para o fluxo do descritor de apresentação chamando [**IMFPresentationDescriptor::GetStreamDescriptorByIndex.**](/windows/desktop/api/mfidl/nf-mfidl-imfpresentationdescriptor-getstreamdescriptorbyindex)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -31,9 +31,9 @@ O método [**IMFASFContentInfo:: GeneratePresentationDescriptor**](/windows/desk
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                     |
-| parâmetro<br/>                   | <dl> <dt>Wmcontainer. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Wmcontainer.h</dt> </dl> |
 
 
 
@@ -41,13 +41,13 @@ O método [**IMFASFContentInfo:: GeneratePresentationDescriptor**](/windows/desk
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: setuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
 [**IMFStreamDescriptor**](/windows/desktop/api/mfidl/nn-mfidl-imfstreamdescriptor)
@@ -56,7 +56,7 @@ O método [**IMFASFContentInfo:: GeneratePresentationDescriptor**](/windows/desk
 [Atributos do descritor de fluxo](stream-descriptor-attributes.md)
 </dt> <dt>
 
-[Objeto de cabeçalho ASF](asf-file-structure.md)
+[Objeto de header ASF](asf-file-structure.md)
 </dt> </dl>
 
  

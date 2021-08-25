@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Ctl3d32.dll
-ms.openlocfilehash: 85f4c85d1d608ff97147a935806b090162f5a78a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5edc8bafb00d5444f18b61e0600fb075b6a7367c315c2ab1cfe38f911e9a84d9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748498"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119654606"
 ---
 # <a name="ctl3dautosubclass-function"></a>Função Ctl3dAutoSubclass
 
@@ -46,11 +46,11 @@ Um identificador para o aplicativo a ser registrado como um cliente.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna **true** , a menos que uma das condições a seguir exista, caso em que ela retorna **false**:
 
--   O CTL3D está em execução no Windows versão 3,0 ou anterior.
+-   o CTL3D está em execução no Windows versão 3,0 ou anterior.
 -   CTL3D não tem espaço disponível em suas tabelas para o aplicativo atual. O CTL3D pode atender até 32 aplicativos ao mesmo tempo.
 -   CTL3D não pode instalar seu gancho de CBT.
 

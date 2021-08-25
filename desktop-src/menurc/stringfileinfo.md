@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: f252077a5536194e635281d4b4178a457f7a82cb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5e130090c7281f6ef61ed0a3a82b822863bb5c12ff1194e26b07a70467db82cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918122"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119720826"
 ---
 # <a name="stringfileinfo-structure"></a>Estrutura StringFileInfo
 
@@ -112,7 +112,7 @@ Uma matriz de uma ou mais estruturas [**STRINGTABLE**](stringtable.md) . Cada me
 
 ## <a name="remarks"></a>Comentários
 
-Essa estrutura não é uma estrutura verdadeira de linguagem C porque contém membros de comprimento variável. Essa estrutura foi criada exclusivamente para representar a organização de dados em um recurso de versão e não aparece em nenhum dos arquivos de cabeçalho fornecidos com o SDK (Software Development Kit) do Windows.
+Essa estrutura não é uma estrutura verdadeira de linguagem C porque contém membros de comprimento variável. essa estrutura foi criada exclusivamente para representar a organização de dados em um recurso de versão e não aparece em nenhum dos arquivos de cabeçalho fornecidos com o SDK (Software Development Kit) Windows.
 
 O membro **filho** da estrutura do [**vs \_ VERSIONINFO**](vs-versioninfo.md) pode conter zero ou mais estruturas **StringFileInfo** .
 
@@ -137,7 +137,7 @@ O membro **filho** da estrutura do [**vs \_ VERSIONINFO**](vs-versioninfo.md) po
 [**StringTable**](stringtable.md)
 </dt> <dt>
 
-[**Strings**](string-str.md)
+[**String**](string-str.md)
 </dt> <dt>
 
 [**VS \_ VERSIONINFO**](vs-versioninfo.md)

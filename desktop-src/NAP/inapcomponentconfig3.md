@@ -1,10 +1,10 @@
 ---
-title: Interface INapComponentConfig3 (NapCommon. h)
-description: Fornece métodos de configuração do sistema NAP para SHVs (validadores da integridade do sistema) para definir e modificar dados de configuração para uma ID de configuração específica.
+title: Interface INapComponentConfig3 (NapCommon.h)
+description: Fornece métodos de configuração do sistema NAP para shVs (validadores de saúde do sistema) definirem e modificarem dados de configuração para uma ID de configuração específica.
 ms.assetid: dbb78f7a-7c6b-4bf1-b471-374857d5dafe
 keywords:
-- INapComponentConfig3 da interface NAP
-- INapComponentConfig3 interface NAP, descrita
+- INapComponentConfig3 interface NAP
+- NAP da interface INapComponentConfig3, descrita
 topic_type:
 - apiref
 api_name:
@@ -15,30 +15,30 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ac0cfead891da106a1a950ba83b9108b5950a738
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fea8ab7b42589fa548439b03c04ade56db498750ccd47841b806dcb6b506d3d3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105782308"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119803076"
 ---
 # <a name="inapcomponentconfig3-interface"></a>Interface INapComponentConfig3
 
 > [!Note]  
-> A plataforma de proteção de acesso à rede não está disponível a partir do Windows 10
+> A plataforma de Proteção de Acesso à Rede não está disponível a partir do Windows 10
 
  
 
-A interface **INapComponentConfig3** fornece métodos de configuração do sistema NAP para SHVs (validadores da integridade do sistema) para definir e modificar dados de configuração para uma ID de configuração específica.
+A interface **INapComponentConfig3** fornece métodos de configuração do sistema NAP para shVs (validadores de saúde do sistema) definirem e modificarem dados de configuração para uma ID de configuração específica.
 
 > [!Note]  
-> Essa interface herda todos os métodos de [**INapComponentConfig2**](inapcomponentconfig2.md) e deve ser usada em seu lugar.
+> Essa interface herda todos os métodos de [**INapComponentConfig2**](inapcomponentconfig2.md) e deve ser usada em vez disso.
 
  
 
 ## <a name="members"></a>Membros
 
-A interface **INapComponentConfig3** herda de [**INapComponentConfig2**](inapcomponentconfig2.md). **INapComponentConfig3** também tem estes tipos de membros:
+A interface **INapComponentConfig3** herda [**de INapComponentConfig2.**](inapcomponentconfig2.md) **INapComponentConfig3** também tem estes tipos de membros:
 
 -   [Métodos](#methods)
 
@@ -53,7 +53,7 @@ A interface **INapComponentConfig3** tem esses métodos.
 | [**INapComponentConfig3::D eleteAllConfig**](inapcomponentconfig3-deleteallconfig.md) | Implementado por SHVs para fornecer uma maneira de redefinir o armazenamento SHV para seu estado original após a instalação.<br/>      |
 | [**INapComponentConfig3::D eleteConfig**](inapcomponentconfig3-deleteconfig.md)       | Implementado por SHVs para fornecer uma maneira de excluir dados de configuração para uma ID de configuração específica.<br/>  |
 | [**INapComponentConfig3::GetConfigFromID**](inapcomponentconfig3-getconfigfromid.md) | Implementado por SHVs para fornecer uma maneira de obter dados de configuração para uma ID de configuração específica.<br/>  |
-| [**INapComponentConfig3:: NewConfig**](inapcomponentconfig3-newconfig.md)             | Implementado por SHVs para fornecer uma maneira de criar dados de configuração para uma ID de configuração específica.<br/>  |
+| [**INapComponentConfig3::NewConfig**](inapcomponentconfig3-newconfig.md)             | Implementado por SHVs para fornecer uma maneira de criar dados de configuração para uma ID de configuração específica.<br/>  |
 | [**INapComponentConfig3::SetConfigToID**](inapcomponentconfig3-setconfigtoid.md)     | Implementado por SHVs para fornecer uma maneira de definir os dados de configuração para uma ID de configuração específica.<br/> |
 
 
@@ -62,7 +62,7 @@ A interface **INapComponentConfig3** tem esses métodos.
 
 ## <a name="remarks"></a>Comentários
 
-Essa interface não deve ser implementada por agentes de integridade do sistema (SHAs) ou clientes de imposição de quarentena (QECs).
+Essa interface não deve ser implementada por SHAs (agentes de saúde do sistema) ou QECs (clientes de imposição de quarentena).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,9 +71,9 @@ Essa interface não deve ser implementada por agentes de integridade do sistema 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                                |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>NapCommon. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>NapCommon. idl</dt> </dl> |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>NapCommon.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapCommon.idl</dt> </dl> |
 
 
 
@@ -84,10 +84,10 @@ Essa interface não deve ser implementada por agentes de integridade do sistema 
 [**INapComponentConfig2**](inapcomponentconfig2.md)
 </dt> <dt>
 
-[Interfaces NAP](nap-interfaces.md)
+[NAP Interfaces](nap-interfaces.md)
 </dt> <dt>
 
-[Referência de NAP](nap-reference.md)
+[Referência nap](nap-reference.md)
 </dt> </dl>
 
  

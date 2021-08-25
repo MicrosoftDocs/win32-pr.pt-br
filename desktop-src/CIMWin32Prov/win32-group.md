@@ -23,12 +23,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: a8849ba149e0de570150682d3afbad3a4ee33f36
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 1f5c6a7feda436129e910b4db21cd3b7457f5a3d6a737e6a99b1c43244659495
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089461"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119699796"
 ---
 # <a name="win32_group-class"></a>\_Classe de grupo Win32
 
@@ -69,7 +69,7 @@ A classe de **\_ grupo Win32** tem esses métodos.
 
 | Método                                               | Descrição                        |
 |:-----------------------------------------------------|:-----------------------------------|
-| [**Renomear**](rename-method-in-class-win32-group.md) | Altera o nome do grupo.<br/> |
+| [**Nome**](rename-method-in-class-win32-group.md) | Altera o nome do grupo.<br/> |
 
 
 
@@ -129,7 +129,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Domain"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("win32api \| Network Management Functions \| nomedodomínio")
 </dt> </dl>
 
-Nome do domínio do Windows ao qual a conta do grupo pertence.
+nome do domínio de Windows ao qual a conta de grupo pertence.
 
 Exemplo: "NA-SALEs"
 
@@ -183,7 +183,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("win32api \| Network Management estruturas \| name")
 </dt> </dl>
 
-Nome da conta de grupo do Windows no domínio especificado pela propriedade de **domínio** dessa classe.
+nome da conta de grupo de Windows no domínio especificado pela propriedade de **domínio** dessa classe.
 
 </dd> <dt>
 
@@ -199,7 +199,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**fixos**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) (" \| identificadores de segurança do win32api (SIDs)")
 </dt> </dl>
 
-SID (identificador de segurança) desta conta. Um SID é um valor de cadeia de caracteres de comprimento variável usado para identificar um confiável. Cada conta tem um SID exclusivo emitido por uma autoridade (como um domínio do Windows), armazenado em um banco de dados de segurança. Quando um usuário faz logon, o sistema recupera o SID do usuário do banco de dados e o coloca no token de acesso do usuário. O sistema usa o SID no token de acesso do usuário para identificar o usuário em todas as interações subsequentes com a segurança do Windows. Quando um SID é usado como o identificador exclusivo para um usuário ou grupo, ele não pode ser usado novamente para identificar outro usuário ou grupo.
+SID (identificador de segurança) desta conta. Um SID é um valor de cadeia de caracteres de comprimento variável usado para identificar um confiável. cada conta tem um SID exclusivo emitido por uma autoridade (como um domínio Windows), armazenado em um banco de dados de segurança. Quando um usuário faz logon, o sistema recupera o SID do usuário do banco de dados e o coloca no token de acesso do usuário. o sistema usa o SID no token de acesso do usuário para identificar o usuário em todas as interações subsequentes com segurança Windows. Quando um SID é usado como o identificador exclusivo para um usuário ou grupo, ele não pode ser usado novamente para identificar outro usuário ou grupo.
 
 Essa propriedade é herdada [**da \_ conta Win32**](win32-account.md).
 
@@ -333,14 +333,14 @@ Os valores incluem o seguinte:
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconhecido** ("desconhecido")
+**Desconhecido** ("Desconhecido")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Falha de Pred** ("Pred Fail")
+**Pred Fail** ("Pred Fail")
 
 
 </dt> <dd></dd> <dt>
@@ -354,42 +354,42 @@ Os valores incluem o seguinte:
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Parando** ("parando")
+**Parando** ("Parando")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Service"></span><span id="service"></span><span id="SERVICE"></span>
 
-**Serviço** ("serviço")
+**Serviço** ("Serviço")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>
 
-**Sob estresse** ("sob estresse")
+**Stressed** ("Stressed")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NonRecover"></span><span id="nonrecover"></span><span id="NONRECOVER"></span>
 
-Não **recuperar** ("Recover")
+**NonRecover** ("NonRecover")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>
 
-**Sem contato** ("sem contato")
+**Sem contato** ("Sem contato")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lost_Comm"></span><span id="lost_comm"></span><span id="LOST_COMM"></span>
 
-**Perda de comunicação** ("perda de comunicação")
+**Perda de vírgula** ("comm perdida")
 
 
 </dt> <dd></dd> </dl>
@@ -398,11 +398,11 @@ Não **recuperar** ("Recover")
 
 ## <a name="remarks"></a>Comentários
 
-A classe do **\_ grupo Win32** é derivada [**da \_ conta Win32**](win32-account.md).
+A **classe \_ Grupo Win32** é derivada da [**Conta do Win32. \_**](win32-account.md)
 
 ## <a name="examples"></a>Exemplos
 
-O código a seguir, extraído da [lista de grupos locais usando](https://Gallery.TechNet.Microsoft.Com/4474e390-776d-428e-906d-20668ce5933f) o exemplo de código do WMI VBScript na galeria do TechNet, usa o **\_ grupo Win32** para retornar informações sobre os grupos locais encontrados em um computador.
+O código a seguir, retirado do exemplo de código Listar Grupos Locais Usando [WMI](https://Gallery.TechNet.Microsoft.Com/4474e390-776d-428e-906d-20668ce5933f) VBScript na Galeria do TechNet, usa o **Grupo \_ Win32** para retornar informações sobre os grupos locais encontrados em um computador.
 
 
 ```VB
@@ -437,8 +437,8 @@ Next
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -447,7 +447,7 @@ Next
 
 <dl> <dt>
 
-[**\_Conta Win32**](win32-account.md)
+[**Conta do \_ Win32**](win32-account.md)
 </dt> <dt>
 
 [Classes do sistema operacional](/previous-versions//aa392727(v=vs.85))

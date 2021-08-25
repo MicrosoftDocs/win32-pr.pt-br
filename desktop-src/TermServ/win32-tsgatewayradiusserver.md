@@ -19,12 +19,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4157d89dc942a1c2f8ff7d778f9f8048971902ba
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9997494f9e93980ac4d6e4b1dcb9c95b0d7665a70226f77d1cd4c7ca3ad751d7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455036"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119769836"
 ---
 # <a name="win32_tsgatewayradiusserver-class"></a>\_Classe Win32 TSGatewayRADIUSServer
 
@@ -65,7 +65,7 @@ A classe **Win32 \_ TSGatewayRADIUSServer** tem esses métodos.
 | [**Remover**](win32-tsgatewayradiusserver-remove.md)                   | Remove o servidor RADIUS atual.<br/>                                |
 | [**SetName**](setname-win32-tsgatewayradiusserver.md)                 | Define a propriedade **Name** para este servidor RADIUS.<br/>                |
 | [**SetSharedSecret**](setsharedsecret-win32-tsgatewayradiusserver.md) | Define a propriedade **SharedSecret** para esse servidor RADIUS.<br/>        |
-| [**Cumulativo**](update-win32-tsgatewayradiusserver.md)                   | Atualiza o servidor RADIUS atual.<br/>                                |
+| [**Atualizar**](update-win32-tsgatewayradiusserver.md)                   | Atualiza o servidor RADIUS atual.<br/>                                |
 
 
 
@@ -123,7 +123,7 @@ Segredo compartilhado para o servidor RADIUS. Essa propriedade pode ser alterada
 
 Você deve ser um membro do grupo Administradores para usar essa classe.
 
-Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). Os arquivos MOF não são instalados como parte do SDK (Software Development Kit) do Microsoft Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). os arquivos MOF não são instalados como parte do SDK (Software Development Kit) do Microsoft Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
 
 ## <a name="requirements"></a>Requisitos
 

@@ -15,12 +15,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e948e3c7b3a1c00c7a3fb5fe6a758849f060545a
-ms.sourcegitcommit: 4f5016b1fbfd703dbf769c508db464c2518c0fa5
+ms.openlocfilehash: dc3995464a71412bbd098d68a2cb4e19d65a570f35973f528b5bd2efbad5b478
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "104293435"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119720946"
 ---
 # <a name="mediarendererisaudiosupported-property"></a>Propriedade MediaRenderer. IsAudioSupported
 
@@ -33,7 +33,7 @@ Esta propriedade é somente para leitura.
 
 ```C++
 HRESULT get_IsAudioSupported(
-  [out] boolean *value
+  [out] boolean *value
 );
 ```
 
@@ -50,9 +50,9 @@ Um valor booliano que será **true** se o DMR for capaz de reproduzir o conteúd
 [**MediaRenderer**](mediarenderer.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

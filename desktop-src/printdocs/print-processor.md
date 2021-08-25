@@ -1,19 +1,19 @@
 ---
-description: O spooler de impressão monitora os trabalhos de impressão atuais e a impressora de destino para determinar um horário apropriado para imprimir um trabalho.
+description: O spooler de impressão monitora os trabalhos de impressão atuais e a impressora de destino para determinar um tempo apropriado para imprimir um trabalho.
 ms.assetid: c3ce7c63-b72d-4e91-9509-5189f2ccac8a
 title: Processador de impressão
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0bcb7ed062b4e03069201d3ec1faa0ee427f0973
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1250c617706b8e11309ffaf151fb09820ba1acbdb9f09d5cf44086e2153f8c5b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105752814"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119718616"
 ---
 # <a name="print-processor"></a>Processador de impressão
 
-O spooler de impressão monitora os trabalhos de impressão atuais e a impressora de destino para determinar um horário apropriado para imprimir um trabalho. Depois que o spooler determina que um trabalho deve ser impresso, ele chama o processador de impressão. O processador de impressão é um plug-in que processa os dados do trabalho de impressão.
+O spooler de impressão monitora os trabalhos de impressão atuais e a impressora de destino para determinar um tempo apropriado para imprimir um trabalho. Depois que o spooler determina que um trabalho deve ser impresso, ele chama o processador de impressão. O processador de impressão é um plug-in que processa dados de trabalho de impressão.
 
 Use as funções a seguir para trabalhar com processadores de impressão.
 

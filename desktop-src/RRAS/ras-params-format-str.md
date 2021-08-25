@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 00065f3781fd2ada420f67367e84e0863fe3b446
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 92b798ef8a5257afcb4e4ad653801bda0d21691057abad970d6e8158f592146e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085793"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119673176"
 ---
 # <a name="ras_params_format-enumeration"></a>Enumeração de formato de \_ parâmetros RAS \_
 
-\[A enumeração de **\_ \_ formato de parâmetros RAS** não tem suporte no Windows Vista.\]
+\[a enumeração de **\_ \_ formato de parâmetros RAS** não tem suporte a partir do Windows Vista.\]
 
 O tipo de enumeração de **\_ \_ formato RAS params** é usado na estrutura de [**\_ parâmetros de Ras**](ras-parameters-str.md) para indicar o tipo de dados associado a uma chave específica de mídia.
 
@@ -67,7 +67,7 @@ Indica que os dados associados à chave são uma cadeia de caracteres.
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                 |
 | Fim do suporte do cliente<br/>    | Windows XP<br/>                                                                |
 | Fim do suporte do servidor<br/>    | Windows Server 2003<br/>                                                       |
-| parâmetro<br/>                   | <dl> <dt>Rassapi. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Rassapi. h</dt> </dl> |
 
 
 

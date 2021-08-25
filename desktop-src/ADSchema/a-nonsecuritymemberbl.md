@@ -1,6 +1,6 @@
 ---
 title: Atributo não Security-Member-BL
-description: Lista de não-segurança-Membros de uma lista de distribuição do Exchange.
+description: lista de não-segurança-membros para uma lista de distribuição Exchange.
 ms.assetid: 6f5044f5-3cab-4b92-9055-2d431efdd0f0
 ms.tgt_platform: multiple
 keywords:
@@ -14,16 +14,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c2478b887e25bcdcb2ecfcb6b13b06feb50994fa
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 81b663f0f1acb546a4fbfac4fc90660ca1299fdb8e28c4d4ef7eef96e60a9bbb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104456193"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119703116"
 ---
 # <a name="non-security-member-bl-attribute"></a>Atributo não Security-Member-BL
 
-Lista de não-segurança-Membros de uma lista de distribuição do Exchange.
+lista de não-segurança-membros para uma lista de distribuição Exchange.
 
 
 
@@ -57,7 +57,7 @@ Lista de não-segurança-Membros de uma lista de distribuição do Exchange.
 |------------------------|---------------------------------|
 | ID do link                | 51                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
+| System-Only            | Verdadeiro                            |
 | É de valor único       | Falso                           |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
@@ -78,7 +78,7 @@ Lista de não-segurança-Membros de uma lista de distribuição do Exchange.
 |------------------------|---------------------------------|
 | ID do link                | 51                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
+| System-Only            | Verdadeiro                            |
 | É de valor único       | Falso                           |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
@@ -99,7 +99,7 @@ Lista de não-segurança-Membros de uma lista de distribuição do Exchange.
 |------------------------|---------------------------------|
 | ID do link                | 51                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
+| System-Only            | Verdadeiro                            |
 | É de valor único       | Falso                           |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
@@ -120,7 +120,7 @@ Lista de não-segurança-Membros de uma lista de distribuição do Exchange.
 |------------------------|---------------------------------|
 | ID do link                | 51                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
+| System-Only            | Verdadeiro                            |
 | É de valor único       | Falso                           |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
@@ -141,7 +141,7 @@ Lista de não-segurança-Membros de uma lista de distribuição do Exchange.
 |------------------------|---------------------------------|
 | ID do link                | 51                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
+| System-Only            | Verdadeiro                            |
 | É de valor único       | Falso                           |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
@@ -162,7 +162,7 @@ Lista de não-segurança-Membros de uma lista de distribuição do Exchange.
 |------------------------|---------------------------------|
 | ID do link                | 51                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
+| System-Only            | Verdadeiro                            |
 | É de valor único       | Falso                           |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |

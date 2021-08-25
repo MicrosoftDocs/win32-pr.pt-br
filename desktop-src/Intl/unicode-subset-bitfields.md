@@ -4,12 +4,12 @@ ms.assetid: f897dfc7-3e78-48dc-8d3d-6929e2f4ec4d
 title: Subconjunto Unicode bitfields
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fced251b1bf8e04dd4c0d7d7cb0dca15c8bdfa6b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 06f0fa4791e62f397e62a99a78d41dbcdc67c55299a650b1bc78bea685205399
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105752668"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119787986"
 ---
 # <a name="unicode-subset-bitfields"></a>Subconjunto Unicode bitfields
 
@@ -202,77 +202,77 @@ Os subconjuntos Unicode bitfields (USBs) são usados nas estruturas [**fontSigna
 <td>Lao</td>
 </tr>
 <tr class="odd">
-<td rowspan="2">26 $ {REMOVER} $<br />
+<td rowspan="2">26${REMOVE}$<br />
 </td>
 <td>10A0 - 10FF</td>
 <td>Georgiano</td>
 </tr>
 <tr class="even">
-<td>2D00 - 2D2F</td>
-<td>Suplemento georgiano</td>
+<td>2D00 – 2D2F</td>
+<td>Suplemento DeMenter</td>
 
 </tr>
 <tr class="odd">
 <td>27</td>
-<td>1B00 - 1B7F</td>
+<td>1B00 – 1B7F</td>
 <td>Balinês</td>
 </tr>
 <tr class="even">
 <td>28</td>
 <td>1100 - 11FF</td>
-<td>Jamo Hangul</td>
+<td>Hangul Jamo</td>
 </tr>
 <tr class="odd">
-<td rowspan="3">29 $ {REMOVER} $<br />
+<td rowspan="3">29${REMOVE}$<br />
 </td>
 <td>1E00 - 1EFF</td>
-<td>Latim estendido adicional</td>
+<td>Latin Extended Additional</td>
 </tr>
 <tr class="even">
-<td>2C60 - 2C7F</td>
-<td>Latim estendido-C</td>
+<td>2C60 – 2C7F</td>
+<td>Latin Extended-C</td>
 
 </tr>
 <tr class="odd">
-<td>A720 - A7FF</td>
-<td>Latim estendido-D</td>
+<td>A720 – A7FF</td>
+<td>Latin Extended-D</td>
 
 </tr>
 <tr class="even">
 <td>30</td>
 <td>1F00 - 1FFF</td>
-<td>Grego estendido</td>
+<td>Grego Estendido</td>
 </tr>
 <tr class="odd">
-<td rowspan="2">31 $ {REMOVER} $<br />
+<td rowspan="2">31${REMOVE}$<br />
 </td>
 <td>2000 - 206F</td>
 <td>Pontuação geral</td>
 </tr>
 <tr class="even">
-<td>2E00 - 2E7F</td>
+<td>2E00 – 2E7F</td>
 <td>Pontuação suplementar</td>
 
 </tr>
 <tr class="odd">
 <td>32</td>
 <td>2070 - 209F</td>
-<td>Sobrescritos e subscritos</td>
+<td>Subscritos e subscritos</td>
 </tr>
 <tr class="even">
 <td>33</td>
 <td>20A0 - 20CF</td>
-<td>Símbolos de moeda</td>
+<td>Conversor de Moedas Símbolos</td>
 </tr>
 <tr class="odd">
 <td>34</td>
 <td>20D0 - 20FF</td>
-<td>Combinando marcas de sinais diacríticos para símbolos</td>
+<td>Combinando marcas diacríticas para símbolos</td>
 </tr>
 <tr class="even">
 <td>35</td>
 <td>2100 - 214F</td>
-<td>Símbolos Letterlike</td>
+<td>Símbolos letterlike</td>
 </tr>
 <tr class="odd">
 <td>36</td>
@@ -280,19 +280,19 @@ Os subconjuntos Unicode bitfields (USBs) são usados nas estruturas [**fontSigna
 <td>Formulários de número</td>
 </tr>
 <tr class="even">
-<td rowspan="4">37 $ {REMOVER} $<br />
+<td rowspan="4">37${REMOVE}$<br />
 </td>
 <td>2190 - 21FF</td>
 <td>Setas</td>
 </tr>
 <tr class="odd">
 <td>27F0 - 27FF</td>
-<td>Setas suplementares-A</td>
+<td>Setas complementares -A</td>
 
 </tr>
 <tr class="even">
 <td>2900 - 297F</td>
-<td>Setas suplementares-B</td>
+<td>Setas complementares -B</td>
 
 </tr>
 <tr class="odd">
@@ -301,19 +301,19 @@ Os subconjuntos Unicode bitfields (USBs) são usados nas estruturas [**fontSigna
 
 </tr>
 <tr class="even">
-<td rowspan="4">38 $ {REMOVER} $<br />
+<td rowspan="4">38${REMOVE}$<br />
 </td>
 <td>2200 - 22FF</td>
 <td>Operadores matemáticos</td>
 </tr>
 <tr class="odd">
 <td>27C0 - 27EF</td>
-<td>Símbolos matemáticos diversos-A</td>
+<td>Símbolos matemáticos diversos – A</td>
 
 </tr>
 <tr class="even">
 <td>2980 - 29FF</td>
-<td>Símbolos matemáticos diversos-B</td>
+<td>Símbolos matemáticos diversos -B</td>
 
 </tr>
 <tr class="odd">
@@ -324,7 +324,7 @@ Os subconjuntos Unicode bitfields (USBs) são usados nas estruturas [**fontSigna
 <tr class="even">
 <td>39</td>
 <td>2300 - 23FF</td>
-<td>Técnicos diversos</td>
+<td>Diversos técnicos</td>
 </tr>
 <tr class="odd">
 <td>40</td>
@@ -339,7 +339,7 @@ Os subconjuntos Unicode bitfields (USBs) são usados nas estruturas [**fontSigna
 <tr class="odd">
 <td>42</td>
 <td>2460 - 24FF</td>
-<td>Alfanuméricos embutidos</td>
+<td>Alfanuméricos delimitados</td>
 </tr>
 <tr class="even">
 <td>43</td>
@@ -369,7 +369,7 @@ Os subconjuntos Unicode bitfields (USBs) são usados nas estruturas [**fontSigna
 <tr class="odd">
 <td>48</td>
 <td>3000 - 303F</td>
-<td>Símbolos CJK e Pontuação</td>
+<td>Símbolos CJK e pontuação</td>
 </tr>
 <tr class="even">
 <td>49</td>
@@ -377,76 +377,76 @@ Os subconjuntos Unicode bitfields (USBs) são usados nas estruturas [**fontSigna
 <td>Hiragana</td>
 </tr>
 <tr class="odd">
-<td rowspan="2">50 $ {REMOVER} $<br />
+<td rowspan="2">50${REMOVE}$<br />
 </td>
 <td>30A0 - 30FF</td>
 <td>Katakana</td>
 </tr>
 <tr class="even">
 <td>31F0 - 31FF</td>
-<td>Extensões fonéticas em katakana</td>
+<td>Extensões phoneáticas katakana</td>
 
 </tr>
 <tr class="odd">
-<td rowspan="2">51 $ {REMOVER} $<br />
+<td rowspan="2">51${REMOVE}$<br />
 </td>
 <td>3100 - 312F</td>
 <td>Bopomofo</td>
 </tr>
 <tr class="even">
 <td>31A0 - 31BF</td>
-<td>Bopomofo estendido</td>
+<td>Bopomofo Estendido</td>
 
 </tr>
 <tr class="odd">
 <td>52</td>
 <td>3130 - 318F</td>
-<td>Hangul de compatibilidade com Jamo</td>
+<td>Hangul Compatibility Jamo</td>
 </tr>
 <tr class="even">
 <td>53</td>
-<td>A840 - A87F</td>
-<td>Phags-Pa</td>
+<td>A840 – A87F</td>
+<td>Phags-pa</td>
 </tr>
 <tr class="odd">
 <td>54</td>
 <td>3200 - 32FF</td>
-<td>Letras e meses CJK incluídos</td>
+<td>Letras CJK e meses incluídos</td>
 </tr>
 <tr class="even">
 <td>55</td>
 <td>3300 - 33FF</td>
-<td>Compatibilidade com CJK</td>
+<td>Compatibilidade do CJK</td>
 </tr>
 <tr class="odd">
 <td>56</td>
 <td>AC00 - D7AF</td>
-<td>Sílabas Hangul</td>
+<td>Hangul Syllables</td>
 </tr>
 <tr class="even">
 <td>57</td>
-<td>D800-DFFF</td>
-<td>Não plano 0. Observe que a configuração desse bit implica que há pelo menos um ponto de código suplementar além do BMP (plano multilíngue) básico que é suportado por essa fonte. Consulte <a href="surrogates-and-supplementary-characters.md">substitutos e caracteres suplementares</a>.</td>
+<td>D800 – DFFF</td>
+<td>Não Plano 0. Observe que definir esse bit implica que há pelo menos um ponto de código suplementar além do BMP (Plano Multilíngue Básico) que é suportado por essa fonte. Consulte <a href="surrogates-and-supplementary-characters.md">Substitutos e caracteres suplementares.</a></td>
 </tr>
 <tr class="odd">
 <td>58</td>
-<td>10900-1091F</td>
-<td>Fenícia</td>
+<td>10900 – 1091F</td>
+<td>Fenício</td>
 </tr>
 <tr class="even">
-<td rowspan="7">59 $ {REMOVER} $<br />
+<td rowspan="7">59${REMOVE}$<br />
 </td>
 <td>2E80 - 2EFF</td>
-<td>Suplemento de radicais CJK</td>
+<td>Suplemento de CJK Radicals</td>
 </tr>
 <tr class="odd">
 <td>2F00 - 2FDF</td>
-<td>Radicais da Kangxi</td>
+<td>Radicales Demáxi</td>
 
 </tr>
 <tr class="even">
 <td>2FF0 - 2FFF</td>
-<td>Caracteres de descrição ideográfica</td>
+<td>Caracteres de descrição idegráfica</td>
 
 </tr>
 <tr class="odd">
@@ -456,38 +456,38 @@ Os subconjuntos Unicode bitfields (USBs) são usados nas estruturas [**fontSigna
 </tr>
 <tr class="even">
 <td>3400 - 4DBF</td>
-<td>Extensão A de ideogramas unificadas CJK</td>
+<td>Extensão A de Ideographs Unificados do CJK</td>
 
 </tr>
 <tr class="odd">
 <td>4E00 - 9FFF</td>
-<td>Ideogramas unificadas CJK</td>
+<td>Ideographs unificados do CJK</td>
 
 </tr>
 <tr class="even">
-<td>20000-2A6DF</td>
-<td>Extensão de ideogramas unificadas CJK B</td>
+<td>20000 – 2A6DF</td>
+<td>Extensão B de Ideographs Unificados do CJK</td>
 
 </tr>
 <tr class="odd">
 <td>60</td>
 <td>E000 - F8FF</td>
-<td>Área de uso particular</td>
+<td>Área de uso privado</td>
 </tr>
 <tr class="even">
-<td rowspan="3">61 $ {REMOVER} $<br />
+<td rowspan="3">61${REMOVE}$<br />
 </td>
-<td>31C0 - 31EF</td>
+<td>31C0 – 31EF</td>
 <td>Traços CJK</td>
 </tr>
 <tr class="odd">
 <td>F900 - FAFF</td>
-<td>Ideogramas de compatibilidade CJK</td>
+<td>Ideographs de compatibilidade do CJK</td>
 
 </tr>
 <tr class="even">
-<td>2F800 - 2FA1F</td>
-<td>Suplementos de ideogramas de compatibilidade CJK</td>
+<td>2F800 – 2FA1F</td>
+<td>Suplemento de Ideographs de compatibilidade do CJK</td>
 
 </tr>
 <tr class="odd">
@@ -498,43 +498,43 @@ Os subconjuntos Unicode bitfields (USBs) são usados nas estruturas [**fontSigna
 <tr class="even">
 <td>63</td>
 <td>FB50 - FDFF</td>
-<td>Formulários de apresentação em árabe – A</td>
+<td>Formulários de apresentação árabe -A</td>
 </tr>
 <tr class="odd">
 <td>64</td>
 <td>FE20 - FE2F</td>
-<td>Combinando metades das marcas</td>
+<td>Combinando marcas de metade</td>
 </tr>
 <tr class="even">
-<td rowspan="2">65 $ {REMOVER} $<br />
+<td rowspan="2">65${REMOVE}$<br />
 </td>
-<td>FE10 - FE1F</td>
+<td>FE10 – FE1F</td>
 <td>Formulários verticais</td>
 </tr>
 <tr class="odd">
 <td>FE30 - FE4F</td>
-<td>Formulários de compatibilidade CJK</td>
+<td>Formulários de compatibilidade do CJK</td>
 
 </tr>
 <tr class="even">
 <td>66</td>
 <td>FE50 - FE6F</td>
-<td>Variantes de forma pequena</td>
+<td>Variantes de formulário pequeno</td>
 </tr>
 <tr class="odd">
 <td>67</td>
 <td>FE70 - FEFF</td>
-<td>Formulários de apresentação em árabe-B</td>
+<td>Formulários de apresentação árabe -B</td>
 </tr>
 <tr class="even">
 <td>68</td>
 <td>FF00 - FFEF</td>
-<td>Formas de largura e largura total</td>
+<td>Halfwidth e Fullwidth Forms</td>
 </tr>
 <tr class="odd">
 <td>69</td>
 <td>FFF0 - FFFF</td>
-<td>Especialidades</td>
+<td>Especiais</td>
 </tr>
 <tr class="even">
 <td>70</td>
@@ -562,19 +562,19 @@ Os subconjuntos Unicode bitfields (USBs) são usados nas estruturas [**fontSigna
 <td>Myanmar</td>
 </tr>
 <tr class="odd">
-<td rowspan="3">75 $ {REMOVER} $<br />
+<td rowspan="3">75${REMOVE}$<br />
 </td>
 <td>1200 - 137F</td>
 <td>Etíope</td>
 </tr>
 <tr class="even">
-<td>1380-139F</td>
-<td>Suplemento Etíope</td>
+<td>1380 - 139F</td>
+<td>Suplemento Ethiopic</td>
 
 </tr>
 <tr class="odd">
-<td>2D80 - 2DDF</td>
-<td>Etíope estendido</td>
+<td>2D80 – 2DDF</td>
+<td>Ethiopic Estendido</td>
 
 </tr>
 <tr class="even">
@@ -711,7 +711,7 @@ Os subconjuntos Unicode bitfields (USBs) são usados nas estruturas [**fontSigna
 <tr class="odd">
 <td>92</td>
 <td>E0000 - E007F</td>
-<td>Marcações</td>
+<td>Marcas</td>
 </tr>
 <tr class="even">
 <td>93</td>
@@ -771,151 +771,151 @@ Os subconjuntos Unicode bitfields (USBs) são usados nas estruturas [**fontSigna
 </tr>
 <tr class="odd">
 <td>102</td>
-<td>10140-1018F</td>
-<td>Números gregos antigo</td>
+<td>10140 – 1018F</td>
+<td>Números gregos gregos in gregos</td>
 </tr>
 <tr class="even">
 <td>103</td>
-<td>10380-1039F</td>
+<td>10380 – 1039F</td>
 <td>Ugarítico</td>
 </tr>
 <tr class="odd">
 <td>104</td>
-<td>103A0 - 103DF</td>
-<td>Persa antigo</td>
+<td>103A0 – 103DF</td>
+<td>Antigo wiki</td>
 </tr>
 <tr class="even">
 <td>105</td>
-<td>10450-1047F</td>
-<td>Shavian</td>
+<td>10450 – 1047F</td>
+<td>Sha xiiano</td>
 </tr>
 <tr class="odd">
 <td>106</td>
-<td>10480-104AF</td>
+<td>10480 – 104AF</td>
 <td>Osmanya</td>
 </tr>
 <tr class="even">
 <td>107</td>
-<td>10800-1083F</td>
-<td>Cypriot Syllabary</td>
+<td>10800 – 1083F</td>
+<td>Syllabary DeIaot</td>
 </tr>
 <tr class="odd">
 <td>108</td>
-<td>10A00 - 10A5F</td>
-<td>Kharoshthi</td>
+<td>10A00 – 10A5F</td>
+<td>Rossroshthi</td>
 </tr>
 <tr class="even">
 <td>109</td>
-<td>1D300 - 1D35F</td>
-<td>Símbolos Jing de Xuan Tai</td>
+<td>1D300 – 1D35F</td>
+<td>Símbolos de Jing do Tai X tai X tai</td>
 </tr>
 <tr class="odd">
-<td rowspan="2">110 $ {REMOVER} $<br />
+<td rowspan="2">110${REMOVE}$<br />
 </td>
-<td>12000-123FF</td>
-<td>Cuneiform</td>
+<td>12000 – 123FF</td>
+<td>Cuneiforme</td>
 </tr>
 <tr class="even">
-<td>12400-1247F</td>
-<td>Cuneiform números e Pontuação</td>
+<td>12400 - 1247F</td>
+<td>Pontuação e números de Mioeiform</td>
 
 </tr>
 <tr class="odd">
 <td>111</td>
-<td>1D360 - 1D37F</td>
-<td>Numeração de metros de contagem</td>
+<td>1D360 – 1D37F</td>
+<td>Numerais de rod de contagem</td>
 </tr>
 <tr class="even">
 <td>112</td>
-<td>1B80 - 1BBF</td>
+<td>1B80 – 1BBF</td>
 <td>Sundanês</td>
 </tr>
 <tr class="odd">
 <td>113</td>
-<td>1C00 - 1C4F</td>
+<td>1C00 – 1C4F</td>
 <td>Lepcha</td>
 </tr>
 <tr class="even">
 <td>114</td>
-<td>1C50 - 1C7F</td>
+<td>1C50 – 1C7F</td>
 <td>Ol Chiki</td>
 </tr>
 <tr class="odd">
 <td>115</td>
-<td>A880 - A8DF</td>
+<td>A880 – A8DF</td>
 <td>Saurashtra</td>
 </tr>
 <tr class="even">
 <td>116</td>
-<td>A900 - A92F</td>
+<td>A900 – A92F</td>
 <td>Kayah Li</td>
 </tr>
 <tr class="odd">
 <td>117</td>
-<td>A930 - A95F</td>
+<td>A930 – A95F</td>
 <td>Rejang</td>
 </tr>
 <tr class="even">
 <td>118</td>
-<td>AA00 - AA5F</td>
+<td>AA00 – AA5F</td>
 <td>Cham</td>
 </tr>
 <tr class="odd">
 <td>119</td>
-<td>10190-101CF</td>
-<td>Símbolos antigo</td>
+<td>10190 – 101CF</td>
+<td>Símbolos de símbolos de símbolo de símbolo</td>
 </tr>
 <tr class="even">
 <td>120</td>
-<td>101D0 - 101FF</td>
-<td>Disco Phaistos</td>
+<td>101D0 – 101FF</td>
+<td>Disco De Phaistos</td>
 </tr>
 <tr class="odd">
-<td rowspan="3">121 $ {REMOVER} $<br />
+<td rowspan="3">121${REMOVE}$<br />
 </td>
-<td>10280-1029F</td>
+<td>10280 – 1029F</td>
 <td>Lício</td>
 </tr>
 <tr class="even">
-<td>102A0 - 102DF</td>
+<td>102A0 – 102DF</td>
 <td>Cariano</td>
 
 </tr>
 <tr class="odd">
-<td>10920-1093F</td>
+<td>10920 – 1093F</td>
 <td>Lídio</td>
 
 </tr>
 <tr class="even">
-<td rowspan="2">122 $ {REMOVER} $<br />
+<td rowspan="2">122${REMOVE}$<br />
 </td>
-<td>1F000 - 1F02F</td>
-<td>Blocos do mahjong</td>
+<td>1F000 – 1F02F</td>
+<td>Blocos do Mahjong</td>
 </tr>
 <tr class="odd">
-<td>1F030 - 1F09F</td>
-<td>Blocos do Domino</td>
+<td>1F030 – 1F09F</td>
+<td>Blocos Domino</td>
 
 </tr>
 <tr class="even">
 <td>123</td>
 
-<td><strong>Windows 2000 e posterior:</strong> Progresso do layout, horizontal da direita para a esquerda</td>
+<td><strong>Windows 2000 e posteriores:</strong> Progresso do layout, horizontal da direita para a esquerda</td>
 </tr>
 <tr class="odd">
 <td>124</td>
 
-<td><strong>Windows 2000 e posterior:</strong> Progresso do layout, vertical antes da horizontal</td>
+<td><strong>Windows 2000 e posteriores:</strong> Progresso do layout, vertical antes da horizontal</td>
 </tr>
 <tr class="even">
 <td>125</td>
 
-<td><strong>Windows 2000 e posterior:</strong> Progresso do layout, vertical inferior ao início</td>
+<td><strong>Windows 2000 e posteriores:</strong> Progresso do layout, vertical de baixo para cima</td>
 </tr>
 <tr class="odd">
 <td>126-127</td>
 
-<td>Reservado para o uso interno de processo</td>
+<td>Reservado para uso interno do processo</td>
 </tr>
 </tbody>
 </table>

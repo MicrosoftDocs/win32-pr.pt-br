@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ce1b0ca7e1c7b3716be1a3029c5478f96e261ce5
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 492e0b5e400adc4e5c847f12880a668fb5e3b98f683a0f64dbe32ec98f28a93c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104007938"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119789856"
 ---
 # <a name="asint"></a>asent
 
@@ -53,10 +53,10 @@ A entrada interpretada como um inteiro.
 
 
 
-| Name  | [**Tipo de modelo**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md)                  | Tamanho                           |
+| Nome  | [**Tipo de modelo**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md)                  | Tamanho                           |
 |-------|----------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|--------------------------------|
 | *x*   | [**escalar**](dx-graphics-hlsl-intrinsic-functions.md), **vetor** ou **matriz** | [**float**](/windows/desktop/WinProg/windows-data-types), [ **uint**](/windows/desktop/WinProg/windows-data-types) | any                            |
-| *RET* | igual ao *x* de entrada                                                                                              | [**int**](/windows/desktop/WinProg/windows-data-types)                                           | mesmas dimensões como entrada *x* |
+| *RET* | igual ao *x* de entrada                                                                                              | [**INT**](/windows/desktop/WinProg/windows-data-types)                                           | mesmas dimensões como entrada *x* |
 
 
 

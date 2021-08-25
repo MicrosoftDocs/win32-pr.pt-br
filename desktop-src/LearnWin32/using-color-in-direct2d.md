@@ -4,16 +4,16 @@ description: Usando a cor em Direct2D
 ms.assetid: 74b1f12c-b1de-4df1-85ba-0cf7a0009499
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bb195a4ad0bdd9ff32f1123a8a57ff2ce0aadbde
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: efe6ded6d181ebcbca402161fe6af0b8fb8dd65f7d082632474136a9bd1ff551
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104293956"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119631508"
 ---
 # <a name="using-color-in-direct2d"></a>Usando a cor em Direct2D
 
-O Direct2D usa o modelo de cores RGB, no qual as cores são formadas combinando valores diferentes de vermelho, verde e azul. Um quarto componente, alfa, mede a transparência de um pixel. No Direct2D, cada um desses componentes é um valor de ponto flutuante com um intervalo de \[ 0,0 1,0 \] . Para os três componentes de cor, o valor mede a intensidade da cor. Para o componente alfa, 0,0 significa completamente transparente e 1,0 significa completamente opaco. A tabela a seguir mostra as cores que resultam de várias combinações de intensidade de 100%.
+Direct2D usa o modelo de cores RGB, no qual as cores são formadas combinando valores diferentes de vermelho, verde e azul. Um quarto componente, alfa, mede a transparência de um pixel. em Direct2D, cada um desses componentes é um valor de ponto flutuante com um intervalo de \[ 0,0 1,0 \] . Para os três componentes de cor, o valor mede a intensidade da cor. Para o componente alfa, 0,0 significa completamente transparente e 1,0 significa completamente opaco. A tabela a seguir mostra as cores que resultam de várias combinações de intensidade de 100%.
 
 
 
@@ -34,7 +34,7 @@ O Direct2D usa o modelo de cores RGB, no qual as cores são formadas combinando 
 
 ![uma imagem que mostra as cores RGB.](images/graphics13.png)
 
-Os valores de cor entre 0 e 1 resultam em tons diferentes dessas cores puras. Direct2D usa a [**estrutura \_ \_ F de cor d2d1**](/windows/desktop/Direct2D/d2d1-color-f) para representar cores. Por exemplo, o código a seguir especifica magenta.
+Os valores de cor entre 0 e 1 resultam em tons diferentes dessas cores puras. Direct2D usa a [**estrutura \_ \_ F de cor D2D1**](/windows/desktop/Direct2D/d2d1-color-f) para representar as cores. Por exemplo, o código a seguir especifica magenta.
 
 
 ```C++
@@ -79,7 +79,7 @@ A imagem a seguir mostra o resultado dessa operação de mesclagem.
 
 ## <a name="pixel-formats"></a>Formatos de pixel
 
-A [**estrutura \_ \_ F de cor d2d1**](/windows/desktop/Direct2D/d2d1-color-f) não descreve como um pixel é representado na memória. Na maioria dos casos, isso não importa. Direct2D lida com todos os detalhes internos da tradução de informações de cores em pixels. Mas talvez você precise saber o formato de pixel se estiver trabalhando diretamente com um bitmap na memória ou se combinar Direct2D com Direct3D ou GDI.
+A [**estrutura \_ \_ F de cor d2d1**](/windows/desktop/Direct2D/d2d1-color-f) não descreve como um pixel é representado na memória. Na maioria dos casos, isso não importa. Direct2D lida com todos os detalhes internos da tradução de informações de cores em pixels. mas talvez você precise saber o formato de pixel se estiver trabalhando diretamente com um bitmap na memória ou se combinar Direct2D com Direct3D ou GDI.
 
 A enumeração de [**\_ formato dxgi**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) define uma lista de formatos de pixel. A lista é razoavelmente longa, mas apenas algumas delas são relevantes para Direct2D. (Os outros são usados pelo Direct3D).
 
@@ -89,7 +89,7 @@ A enumeração de [**\_ formato dxgi**](/windows/desktop/api/dxgiformat/ne-dxgif
 |----------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="DXGI_FORMAT_B8G8R8A8_UNORM"></span><span id="dxgi_format_b8g8r8a8_unorm"></span>**\_Formato dxgi \_ B8G8R8A8 \_ UNORM**<br/> | Esse é o formato de pixel mais comum. Todos os componentes de pixel (vermelho, verde, azul e alfa) são inteiros sem sinal de 8 bits. Os componentes são organizados em ordem de *BGRA* na memória. (Veja a ilustração a seguir.)<br/>                                          |
 | <span id="DXGI_FORMAT_R8G8B8A8_UNORM"></span><span id="dxgi_format_r8g8b8a8_unorm"></span>**\_Formato dxgi \_ R8G8B8A8 \_ UNORM**<br/> | Os componentes de pixel são inteiros sem sinal de 8 bits, em ordem *RGBA* . Em outras palavras, os componentes vermelho e azul são trocados em relação ao **\_ formato dxgi \_ B8G8R8A8 \_ UNORM**. Esse formato tem suporte apenas para dispositivos de hardware.<br/>                             |
-| <span id="DXGI_FORMAT_A8_UNORM"></span><span id="dxgi_format_a8_unorm"></span>**\_Formato dxgi \_ a8 \_ UNORM**<br/>                   | Este formato contém um componente alfa de 8 bits, sem componentes RGB. É útil para criar máscaras de opacidade. Para ler mais sobre como usar máscaras de opacidade em Direct2D, consulte [visão geral de destinos de renderização A8 compatíveis](/windows/desktop/Direct2D/compatible-a8-rendertargets).<br/> |
+| <span id="DXGI_FORMAT_A8_UNORM"></span><span id="dxgi_format_a8_unorm"></span>**\_Formato dxgi \_ a8 \_ UNORM**<br/>                   | Este formato contém um componente alfa de 8 bits, sem componentes RGB. É útil para criar máscaras de opacidade. para ler mais sobre como usar máscaras de opacidade em Direct2D, consulte [visão geral de destinos de renderização A8 compatíveis](/windows/desktop/Direct2D/compatible-a8-rendertargets).<br/> |
 
 
 
@@ -117,11 +117,11 @@ Um destino de renderização também tem um modo alfa, que define como os valore
 
  
 
-Aqui está um exemplo da diferença entre alfa linear e semimultiplicado alfa. Suponha que a cor desejada seja vermelha pura (intensidade de 100%) com 50% alfa. Como um tipo Direct2D, essa cor seria representada como (1, 0, 0, 0,5). Usando o Straight Alpha e supondo componentes de cor de 8 bits, o componente vermelho do pixel é 0xFF. Usando alfa precalculado, o componente vermelho é dimensionado por 50% para 0x80 igual a.
+Aqui está um exemplo da diferença entre alfa linear e semimultiplicado alfa. Suponha que a cor desejada seja vermelha pura (intensidade de 100%) com 50% alfa. como um tipo de Direct2D, essa cor seria representada como (1, 0, 0, 0,5). Usando o Straight Alpha e supondo componentes de cor de 8 bits, o componente vermelho do pixel é 0xFF. Usando alfa precalculado, o componente vermelho é dimensionado por 50% para 0x80 igual a.
 
 O tipo de dados [**d2d1 \_ Color \_ F**](/windows/desktop/Direct2D/d2d1-color-f) sempre representa as cores usando alfa linear. Direct2D converte pixels em formato alfa premultiplicado, se necessário.
 
-Se você souber que seu programa não executará nenhuma mistura alfa, crie o destino de renderização com o **modo \_ alfa \_ d2d1 \_ ignore** o modo alfa. Esse modo pode melhorar o desempenho, pois Direct2D pode ignorar os cálculos alfa. Para obter mais informações, consulte [melhorando o desempenho de aplicativos Direct2D](/windows/desktop/Direct2D/improving-direct2d-performance).
+Se você souber que seu programa não executará nenhuma mistura alfa, crie o destino de renderização com o **modo \_ alfa \_ d2d1 \_ ignore** o modo alfa. esse modo pode melhorar o desempenho, pois Direct2D pode ignorar os cálculos alfa. para obter mais informações, consulte [melhorando o desempenho de aplicativos de Direct2D](/windows/desktop/Direct2D/improving-direct2d-performance).
 
 ## <a name="next"></a>Avançar
 

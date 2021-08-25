@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 38246e80b0e79cbab32d617d8051dbec340cf502
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0fe6f8a2bb6745c8fb43d390be5d4fb8c477f189a204dc3d62201ac6fc88403f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105761126"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119765556"
 ---
 # <a name="acquisitiontimeday-attribute"></a>Atributo AcquisitionTimeDay
 
-O atributo **AcquisitionTimeDay** é a parte do dia da data e hora em que o item foi adicionado à biblioteca.
+O **atributo AcquisitionTimeDay** é a parte do dia da data e hora em que o item foi adicionado à biblioteca.
 
 ## <a name="applies-to"></a>Aplica-se A
 
@@ -34,9 +34,9 @@ O atributo **AcquisitionTimeDay** é a parte do dia da data e hora em que o item
 
 ## <a name="remarks"></a>Comentários
 
-Esse atributo é armazenado somente na biblioteca do.
+Esse atributo é armazenado somente na biblioteca.
 
-Para determinar se você pode alterar o valor desse atributo, use o método [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar se você pode alterar o valor desse atributo, use o [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 

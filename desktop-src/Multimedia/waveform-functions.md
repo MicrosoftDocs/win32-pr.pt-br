@@ -1,34 +1,34 @@
 ---
-title: Funções de formato de onda
-description: Funções de formato de onda
+title: Funções waveform
+description: Funções waveform
 ms.assetid: 6c8aaa54-0477-484f-91e1-d2152aa9c185
 keywords:
-- áudio multimídia, funções de formato de onda
-- funções de áudio, de formato de onda
-- áudio de onda, funções
-- referência de áudio de onda, funções
+- áudio multimídia, funções waveform
+- áudio, funções waveform
+- waveform audio,functions
+- referência de áudio waveform, funções
 - referência para áudio wavefore, funções
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e9b6568bdf0f92409d8dca8d68cad3c97bfbc26
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 7bf5b5f5fabbeeee50b3ecfa76a8540bd2f3ec96dda818eb3f7c77cbc4361f0e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104007543"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119781476"
 ---
-# <a name="waveform-functions"></a>Funções de formato de onda
+# <a name="waveform-functions"></a>Funções waveform
 
-As funções a seguir são usadas com áudio de formato de onda.
+As funções a seguir são usadas com áudio de forma de onda.
 
 -   [**auxGetDevCaps**](/windows/win32/api/mmeapi/nf-mmeapi-auxgetdevcaps)
 -   [**auxGetNumDevs**](/windows/win32/api/mmeapi/nf-mmeapi-auxgetnumdevs)
 -   [**auxGetVolume**](/windows/win32/api/mmeapi/nf-mmeapi-auxgetvolume)
 -   [**auxOutMessage**](/windows/win32/api/mmeapi/nf-mmeapi-auxoutmessage)
 -   [**auxSetVolume**](/windows/win32/api/mmeapi/nf-mmeapi-auxsetvolume)
--   [**PlaySound**](/previous-versions//dd743680(v=vs.85))
--   [**sndPlaySound**](/previous-versions//dd798676(v=vs.85))
--   [**waveInAddBuffer**](/windows/win32/api/mmeapi/nf-mmeapi-waveinaddbuffer)
+-   [**Playsound**](/previous-versions//dd743680(v=vs.85))
+-   [**Sndplaysound**](/previous-versions//dd798676(v=vs.85))
+-   [**Waveinaddbuffer**](/windows/win32/api/mmeapi/nf-mmeapi-waveinaddbuffer)
 -   [**waveInClose**](/windows/win32/api/mmeapi/nf-mmeapi-waveinclose)
 -   [**waveInGetDevCaps**](/windows/win32/api/mmeapi/nf-mmeapi-waveingetdevcaps)
 -   [**waveInGetErrorText**](/windows/win32/api/mmeapi/nf-mmeapi-waveingeterrortext)
@@ -36,16 +36,16 @@ As funções a seguir são usadas com áudio de formato de onda.
 -   [**waveInGetNumDevs**](/windows/win32/api/mmeapi/nf-mmeapi-waveingetnumdevs)
 -   [**waveInGetPosition**](/windows/win32/api/mmeapi/nf-mmeapi-waveingetposition)
 -   [**waveInMessage**](/windows/win32/api/mmeapi/nf-mmeapi-waveinmessage)
--   [**waveInOpen**](/windows/win32/api/mmeapi/nf-mmeapi-waveinopen)
--   [**waveInPrepareHeader**](/windows/win32/api/mmeapi/nf-mmeapi-waveinprepareheader)
+-   [**Waveinopen**](/windows/win32/api/mmeapi/nf-mmeapi-waveinopen)
+-   [**Waveinprepareheader**](/windows/win32/api/mmeapi/nf-mmeapi-waveinprepareheader)
 -   [**waveInProc**](/previous-versions//dd743849(v=vs.85))
--   [**waveInReset**](/windows/win32/api/mmeapi/nf-mmeapi-waveinreset)
+-   [**Waveinreset**](/windows/win32/api/mmeapi/nf-mmeapi-waveinreset)
 -   [**waveInStart**](/windows/win32/api/mmeapi/nf-mmeapi-waveinstart)
 -   [**waveInStop**](/windows/win32/api/mmeapi/nf-mmeapi-waveinstop)
 -   [**waveInUnprepareHeader**](/windows/win32/api/mmeapi/nf-mmeapi-waveinunprepareheader)
 -   [**waveOutBreakLoop**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutbreakloop)
 -   [**waveOutClose**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutclose)
--   [**waveOutGetDevCaps**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutgetdevcaps)
+-   [**Waveoutgetdevcaps**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutgetdevcaps)
 -   [**waveOutGetErrorText**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutgeterrortext)
 -   [**waveOutGetID**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutgetid)
 -   [**waveOutGetNumDevs**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutgetnumdevs)
@@ -54,9 +54,9 @@ As funções a seguir são usadas com áudio de formato de onda.
 -   [**waveOutGetPosition**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutgetposition)
 -   [**waveOutGetVolume**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutgetvolume)
 -   [**waveOutMessage**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutmessage)
--   [**waveOutOpen**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutopen)
+-   [**Waveoutopen**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutopen)
 -   [**waveOutPause**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutpause)
--   [**waveOutPrepareHeader**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutprepareheader)
+-   [**Waveoutprepareheader**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutprepareheader)
 -   [**waveOutProc**](/previous-versions//dd743869(v=vs.85))
 -   [**waveOutReset**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutreset)
 -   [**waveOutRestart**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutrestart)
@@ -64,7 +64,7 @@ As funções a seguir são usadas com áudio de formato de onda.
 -   [**waveOutSetPlaybackRate**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutsetplaybackrate)
 -   [**waveOutSetVolume**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutsetvolume)
 -   [**waveOutUnprepareHeader**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutunprepareheader)
--   [**waveOutWrite**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutwrite)
+-   [**Waveoutwrite**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutwrite)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -73,6 +73,6 @@ As funções a seguir são usadas com áudio de formato de onda.
 [Referência de áudio de onda](waveform-audio-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

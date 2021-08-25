@@ -4,27 +4,27 @@ description: Especifica o número de versão do controle atual.
 ms.assetid: 91ddeb4c-9d61-41e7-af96-95b0c4884682
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota de propriedade de versão
-- Serviços de Área de Trabalho Remota da Propriedade Version, interface IMsTscAx
-- Serviços de Área de Trabalho Remota de interface IMsTscAx, Propriedade Version
-- Serviços de Área de Trabalho Remota da Propriedade Version, interface IMsRdpClient
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient, Propriedade Version
-- Serviços de Área de Trabalho Remota da Propriedade Version, interface IMsRdpClient2
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient2, Propriedade Version
-- Serviços de Área de Trabalho Remota da Propriedade Version, interface IMsRdpClient3
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient3, Propriedade Version
-- Serviços de Área de Trabalho Remota da Propriedade Version, interface IMsRdpClient4
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient4, Propriedade Version
-- Serviços de Área de Trabalho Remota da Propriedade Version, interface IMsRdpClient5
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient5, Propriedade Version
-- Serviços de Área de Trabalho Remota da Propriedade Version, interface IMsRdpClient6
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient6, Propriedade Version
-- Serviços de Área de Trabalho Remota da Propriedade Version, interface IMsRdpClient7
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient7, Propriedade Version
-- Serviços de Área de Trabalho Remota da Propriedade Version, interface IMsRdpClient8
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient8, Propriedade Version
-- Serviços de Área de Trabalho Remota da Propriedade Version, interface IMsRdpClient9
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient9, Propriedade Version
+- Propriedade version Serviços de Área de Trabalho Remota
+- Propriedade version Serviços de Área de Trabalho Remota , interface IMsTscAx
+- Interface IMsTscAx Serviços de Área de Trabalho Remota , propriedade Version
+- A propriedade version Serviços de Área de Trabalho Remota , interface IMsRdpClient
+- Interface IMsRdpClient Serviços de Área de Trabalho Remota propriedade , Versão
+- A propriedade version Serviços de Área de Trabalho Remota interface , IMsRdpClient2
+- Interface IMsRdpClient2 Serviços de Área de Trabalho Remota propriedade , Versão
+- A propriedade version Serviços de Área de Trabalho Remota , interface IMsRdpClient3
+- Interface IMsRdpClient3 Serviços de Área de Trabalho Remota propriedade , Versão
+- A propriedade version Serviços de Área de Trabalho Remota interface , IMsRdpClient4
+- Interface IMsRdpClient4 Serviços de Área de Trabalho Remota , propriedade Version
+- A propriedade version Serviços de Área de Trabalho Remota , interface IMsRdpClient5
+- Interface IMsRdpClient5 Serviços de Área de Trabalho Remota propriedade , Versão
+- A propriedade version Serviços de Área de Trabalho Remota interface , IMsRdpClient6
+- Interface IMsRdpClient6 Serviços de Área de Trabalho Remota , propriedade Version
+- A propriedade version Serviços de Área de Trabalho Remota , interface IMsRdpClient7
+- Interface IMsRdpClient7 Serviços de Área de Trabalho Remota , propriedade Version
+- A propriedade version Serviços de Área de Trabalho Remota , interface IMsRdpClient8
+- Interface IMsRdpClient8 Serviços de Área de Trabalho Remota , propriedade Version
+- A propriedade version Serviços de Área de Trabalho Remota , interface IMsRdpClient9
+- Interface IMsRdpClient9 Serviços de Área de Trabalho Remota , propriedade Version
 topic_type:
 - apiref
 api_name:
@@ -54,14 +54,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ff25f274d1f076c9c4119648ccb9cc6d82f43b33
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a8911eaaf8af95e0f3ca1fde254250bcc781e71450b7d96ce8dc342b36298d88
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455153"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119770846"
 ---
-# <a name="imstscaxversion-property"></a>Propriedade IMsTscAx:: Version
+# <a name="imstscaxversion-property"></a>Propriedade IMsTscAx::Version
 
 Especifica o número de versão do controle atual.
 
@@ -84,13 +84,13 @@ O número de versão.
 
 ## <a name="error-codes"></a>Códigos do Erro
 
-Retornar **S \_ OK** se for bem-sucedido.
+Retornar **S \_ OK se** for bem-sucedido.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método aloca a memória necessária para o buffer apontado pelo parâmetro *pVersion* . Chamar aplicativos C/C++ deve liberar a memória com uma chamada para a função [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) . Isso não é necessário para clientes de Visual Basic e de script.
+Esse método aloca a memória necessária para o buffer apontado pelo *parâmetro pVersion.* Chamar aplicativos C/C++ deve liberar a memória com uma chamada para a [**função SysFreeString.**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) Isso não é necessário para clientes Visual Basic e scripts.
 
-Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for conexão Web de área de trabalho remota](requirements-for-remote-desktop-web-connection.md).
+Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for Conexão Web de Área de Trabalho Remota](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -102,7 +102,7 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                         |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IMsTscAx é definido como 8C11EFAE-92C3-11D1-BC1E-00C04FA31489<br/>            |
+| IID<br/>                      | IID IMsTscAx é definido como \_ 8C11EFAE-92C3-11D1-BC1E-00C04FA31489<br/>            |
 
 
 
@@ -110,7 +110,7 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 
 <dl> <dt>
 
-[**IMsRdpClient**](imsrdpclient-interface.md)
+[**Imsrdpclient**](imsrdpclient-interface.md)
 </dt> <dt>
 
 [**IMsRdpClient2**](imsrdpclient2.md)
@@ -137,7 +137,7 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 [**IMsRdpClient9**](imsrdpclient9.md)
 </dt> <dt>
 
-[**IMsTscAx**](imstscax-interface.md)
+[**Imstscax**](imstscax-interface.md)
 </dt> </dl>
 
  

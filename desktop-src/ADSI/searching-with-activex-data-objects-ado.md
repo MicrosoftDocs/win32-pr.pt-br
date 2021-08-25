@@ -1,23 +1,23 @@
 ---
-title: Pesquisando com ActiveX Data Objects (ADO)
-description: O modelo ADO (ActiveX Data Object) consiste em objetos listados na tabela a seguir.
+title: pesquisando com ActiveX Data Objects (ADO)
+description: o modelo ADO (ActiveX Data Object) consiste em objetos listados na tabela a seguir.
 ms.assetid: 27298f53-a652-49f2-a6e6-d92c7c6022af
 ms.tgt_platform: multiple
 keywords:
-- ActiveX Data Objects ADSI, pesquisando com ADO
-- Pesquisando com ActiveX Data Objects ADSI
+- ActiveX ADSI de objetos de dados, pesquisando com ADO
+- pesquisando com ActiveX Data Objects ADSI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e9e73f630892169c7086daf9bb1e7b6c13bfdf0a
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 52eba3dd5bc9013500aa4def7a31104d1408d4818b78a35ff75f09f2454f4d21
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "105755452"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119770446"
 ---
-# <a name="searching-with-activex-data-objects-ado"></a>Pesquisando com ActiveX Data Objects (ADO)
+# <a name="searching-with-activex-data-objects-ado"></a>pesquisando com ActiveX Data Objects (ADO)
 
-O modelo ADO (ActiveX Data Object) consiste em objetos listados na tabela a seguir.
+o modelo ADO (ActiveX Data Object) consiste em objetos listados na tabela a seguir.
 
 
 
@@ -26,7 +26,7 @@ O modelo ADO (ActiveX Data Object) consiste em objetos listados na tabela a segu
 | **Conexão** | Uma conexão aberta com uma fonte de dados OLE DB como ADSI.                                                                          |
 | **Comando**    | Define um comando específico a ser executado na fonte de dados.                                                                         |
 | **Parâmetro**  | Uma coleção opcional para quaisquer parâmetros a serem fornecidos ao objeto de comando.                                                        |
-| **Registros**  | Um conjunto de registros de uma tabela, objeto de comando ou sintaxe SQL. Um conjunto de registros pode ser criado sem nenhum objeto de conexão subjacente. |
+| **Registros**  | um conjunto de registros de uma tabela, objeto de comando ou sintaxe de SQL. Um conjunto de registros pode ser criado sem nenhum objeto de conexão subjacente. |
 | **Campo**      | Uma única coluna de dados em um conjunto de registros.                                                                                            |
 | **Propriedade**   | Uma coleção de valores fornecidos pelo provedor para ADO.                                                                           |
 | **Erro**      | Contém dados sobre erros de acesso a dados. Atualizado quando ocorre um erro em uma única operação.                                      |
@@ -37,7 +37,7 @@ O modelo ADO (ActiveX Data Object) consiste em objetos listados na tabela a segu
 
 Para que o ADO se comunique com a ADSI, deve haver, pelo menos, dois objetos ADO: **Connection** e **Recordset**. Esses objetos ADO servem para autenticar usuários e enumerar resultados, respectivamente. Normalmente, você também usará um objeto de **comando** para manter uma conexão ativa, especificar parâmetros de consulta, como o tamanho da página e o escopo da pesquisa, e executar uma consulta. Para obter mais informações sobre a sintaxe do filtro de pesquisa, consulte [sintaxe do filtro de pesquisa](search-filter-syntax.md).
 
-O objeto de **conexão** carrega o provedor de OLE DB e valida as credenciais do usuário. Em Visual Basic, chame a função **CreateObject** com "ADODB. Conexão "para criar uma instância de um objeto de **conexão** e, em seguida, defina a propriedade do **provedor** do objeto de **conexão** como" ADsDSOObject ". ActiveX. Conexão "é o ProgID do objeto de **conexão** e" ADsDSOObject "é o nome do provedor de OLE DB no ADSI. Se nenhuma credencial for especificada, as credenciais do usuário conectado no momento serão usadas.
+O objeto de **conexão** carrega o provedor de OLE DB e valida as credenciais do usuário. em Visual Basic, chame a função **CreateObject** com "ADODB. Conexão "para criar uma instância de um objeto de **conexão** e, em seguida, defina a propriedade do **provedor** do objeto de **conexão** como" ADsDSOObject ". ActiveX. Conexão "é o ProgID do objeto de **conexão** e" ADsDSOObject "é o nome do provedor de OLE DB no ADSI. Se nenhuma credencial for especificada, as credenciais do usuário conectado no momento serão usadas.
 
 O exemplo de código a seguir mostra como criar uma instância de um objeto de **conexão** .
 
@@ -61,7 +61,7 @@ con.Provider = "ADsDSOObject"
 
 
 
-O exemplo de código a seguir mostra como criar uma instância de um objeto de **conexão** . Lembre-se de que você deve incluir a biblioteca de tipos do ADO (msadoXX.dll) como uma das referências no projeto Visual Basic.
+O exemplo de código a seguir mostra como criar uma instância de um objeto de **conexão** . lembre-se de que você deve incluir a biblioteca de tipos do ADO (msadoXX.dll) como uma das referências no projeto Visual Basic.
 
 
 ```VB
@@ -100,7 +100,7 @@ oConnect.Open "DS Query", stUser, stPass
 
 
 
-O segundo objeto ADO é o objeto **Command** . O ProgID do objeto de **comando** é "ADODB. Command". Esse objeto permite que você emita instruções de consulta e outros comandos para a ADSI usando a conexão ativa. O objeto **Command** usa sua propriedade **ActiveConnection** para manter uma conexão ativa. Ele também mantém a propriedade **CommandText** para manter instruções de consulta emitidas por um usuário. As instruções de consulta são expressas no [dialeto SQL](sql-dialect.md) ou no [dialeto LDAP](ldap-dialect.md).
+O segundo objeto ADO é o objeto **Command** . O ProgID do objeto de **comando** é "ADODB. Command". Esse objeto permite que você emita instruções de consulta e outros comandos para a ADSI usando a conexão ativa. O objeto **Command** usa sua propriedade **ActiveConnection** para manter uma conexão ativa. Ele também mantém a propriedade **CommandText** para manter instruções de consulta emitidas por um usuário. as instruções de consulta são expressas no [dialeto SQL](sql-dialect.md) ou no [dialeto LDAP](ldap-dialect.md).
 
 Os exemplos de código a seguir mostram como criar um objeto de **comando** .
 
@@ -139,9 +139,9 @@ As opções de pesquisa para o objeto de **comando** são especificadas definind
 | "Tamanho da página"         | Um valor inteiro que ativa a paginação e especifica o número máximo de objetos a serem retornados em um conjunto de resultados. O padrão é nenhum tamanho de página. Para obter mais informações, consulte [recuperando conjuntos de resultados grandes](retrieving-large-results-sets.md).                                                                                                                                                                       |
 | SearchScope       | Um valor da enumeração [**\_ SCOPEENUM ADS**](/windows/win32/api/iads/ne-iads-ads_scopeenum) que especifica o escopo da pesquisa. O padrão é **a \_ \_ subárvore de escopo ADS**.                                                                                                                                                                                                                                                                  |
 | "Limite de tamanho"        | Um valor inteiro que especifica o limite de tamanho para a pesquisa. Por Active Directory, o limite de tamanho especifica o número máximo de objetos retornados. O servidor para de Pesquisar quando o limite de tamanho é atingido e retorna os resultados acumulados. O padrão é sem limite.                                                                                                                                  |
-| "Classificar em"           | Uma cadeia de caracteres que especifica uma lista separada por vírgulas de atributos a serem usados como chaves de classificação. Essa propriedade funciona somente para servidores de diretório que dão suporte ao controle LDAP para classificação no lado do servidor. O Active Directory dá suporte ao controle de classificação, mas pode afetar o desempenho do servidor, especialmente se o conjunto de resultados for grande. Lembre-se de que Active Directory dá suporte apenas a uma única chave de classificação. O padrão é sem classificação. |
-| "Limite de tempo"        | Um valor inteiro que especifica o limite de tempo, em segundos, para a pesquisa. Quando o limite de tempo é atingido, o servidor para de Pesquisar e retorna os resultados acumulados. O padrão é sem limite de tempo.                                                                                                                                                                                                      |
-| Cedido           | Um valor inteiro que especifica o valor de tempo limite do lado do cliente, em segundos. Esse valor indica a hora em que o cliente aguarda os resultados do servidor antes de parar a pesquisa. O padrão não é tempo limite.                                                                                                                                                                                                  |
+| "Classificar em"           | Uma cadeia de caracteres que especifica uma lista separada por vírgulas de atributos a serem usados como chaves de classificação. Essa propriedade funciona somente para servidores de diretório que dão suporte ao controle LDAP para classificação no lado do servidor. O Active Directory dá suporte ao controle de classificação, mas pode afetar o desempenho do servidor, especialmente se o conjunto de resultados for grande. Lembre-se de que Active Directory dá suporte apenas a uma única chave de classificação. O padrão é nenhuma classificação. |
+| "Limite de tempo"        | Um valor inteiro que especifica o limite de tempo, em segundos, para a pesquisa. Quando o limite de tempo é atingido, o servidor para de pesquisar e retorna os resultados acumulados. O padrão não é nenhum limite de tempo.                                                                                                                                                                                                      |
+| "Tempoout"           | Um valor inteiro que especifica o valor de tempoout do lado do cliente, em segundos. Esse valor indica o tempo que o cliente aguarda os resultados do servidor antes de interromper a pesquisa. O padrão é nenhum tempo-out.                                                                                                                                                                                                  |
 
 
 
@@ -165,7 +165,7 @@ Com.Properties("Cache Results") = False     ' Do not cache the result set.
 
 
 
-O terceiro objeto ADO é **Recordset**. Você obtém esse objeto ao invocar o método **Execute** em um objeto **Command** . A função principal do objeto **Recordset** é enumerar o conjunto de resultados e obter os dados. O conjunto de resultados pode conter valores para atributos que têm valores únicos ou múltiplos. Obter um atributo de valor único é simples, semelhante a obter o valor da coluna no banco de dados relacional, por exemplo:
+O terceiro objeto ADO é **RecordSet.** Você obtém esse objeto quando invoca **o método Execute** em um objeto **Command.** A função principal do objeto **RecordSet** é enumerar o conjunto de resultados e obter os dados. O conjunto de resultados pode conter valores para atributos que têm valores individuais ou múltiplos. Obter um atributo de valor único é simples, semelhante a obter o valor da coluna no banco de dados relacional, por exemplo:
 
 
 ```VB
@@ -174,7 +174,7 @@ Fields('name').Value
 
 
 
-No entanto, obter um atributo com vários valores é mais desafiador. Nesse caso, o **campo. Value** é uma matriz e você deve verificar o limite inferior e superior da matriz, conforme mostrado no exemplo de código a seguir.
+No entanto, obter um atributo com vários valores é mais desafiador. Nesse caso, **Field.Value** é uma matriz e você deve verificar o limite inferior e superior da matriz, conforme mostrado no exemplo de código a seguir.
 
 
 ```VB

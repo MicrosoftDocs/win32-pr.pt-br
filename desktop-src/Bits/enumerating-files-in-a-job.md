@@ -9,12 +9,12 @@ keywords:
 - BITS de transferência de arquivo, enumerando
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f0db704e47a0e075801de2434ed30ba6fb8d8c91
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 01a986b8a8869008db34e97c1cc7e0cd733c301f5cdc57ce4ef6e313ff382479
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103635114"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119801456"
 ---
 # <a name="enumerating-files-in-a-job"></a>Enumerando arquivos em um trabalho
 
@@ -88,9 +88,9 @@ if (SUCCEEDED(hr))
 
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -16,22 +16,22 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: be5ca9b8319eeddf777cbf0071c1930f21524369
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1f9fbc76fe65e1f1136fb44d22db36500c4d8870f97befa8e36fa08a108ada71
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747594"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119697616"
 ---
 # <a name="cfactorytemplate-class"></a>Classe CFactoryTemplate
 
 Fornece um modelo para criar fábricas de classes.
 
-No DirectShow, as fábricas de classes são especializadas usando a classe **CFactoryTemplate** , também chamada de *modelo de fábrica*. Cada fábrica de classe mantém um ponteiro para um modelo de fábrica. O modelo de fábrica contém informações sobre um objeto COM, incluindo o identificador de classe do objeto (CLSID) e um ponteiro para uma função que cria o objeto.
+no DirectShow, as fábricas de classe são especializadas usando a classe **CFactoryTemplate** , também chamada de *modelo de fábrica*. Cada fábrica de classe mantém um ponteiro para um modelo de fábrica. O modelo de fábrica contém informações sobre um objeto COM, incluindo o identificador de classe do objeto (CLSID) e um ponteiro para uma função que cria o objeto.
 
 Em sua DLL, declare uma matriz global de modelos de fábrica chamada *g \_ templates*. Inclua um modelo de fábrica para cada objeto na DLL. Quando a função [**DllGetClassObject**](/windows/desktop/api/combaseapi/nf-combaseapi-dllgetclassobject) cria uma nova fábrica de classes, ela pesquisa a matriz em busca de um modelo com um CLSID correspondente. Supondo que ele encontre um, ele cria uma fábrica de classes que mantém um ponteiro para o modelo correspondente. Quando o cliente chama **IClassFactory:: CreateInstance**, a fábrica de classes chama a função de instanciação definida no modelo.
 
-Para obter mais informações, consulte [como criar uma DLL de filtro do DirectShow](how-to-create-a-dll.md).
+para obter mais informações, consulte [como criar uma DLL de filtro de DirectShow](how-to-create-a-dll.md).
 
 
 
@@ -56,7 +56,7 @@ Para obter mais informações, consulte [como criar uma DLL de filtro do DirectS
 
 | Requisito | Valor |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Combase. h (incluir fluxos. h)</dt> </dl>                                                    |
+| parâmetro<br/>  | <dl> <dt>combase. h (incluir Fluxos. h)</dt> </dl>                                                    |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib; </dt> <dt>Strmbasd. lib</dt> </dl> |
 
 

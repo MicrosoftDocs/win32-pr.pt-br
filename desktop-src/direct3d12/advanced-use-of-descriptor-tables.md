@@ -5,12 +5,12 @@ ms.assetid: BB0CA29C-65CB-48B1-8351-EE13CC470B54
 ms.date: 05/31/2018
 ms.localizationpriority: high
 ms.topic: article
-ms.openlocfilehash: 79dad6914cff07726c2d40ed2ee27cccb6a0cf1e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 044c02b87591f7ad53212ce37d7549ade68308a648092a260a67c97395959c98
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "74103854"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119632586"
 ---
 # <a name="advanced-use-of-descriptor-tables"></a>Uso avançado de tabelas de descritores
 
@@ -39,11 +39,11 @@ A capacidade de associar várias tabelas de descritores à assinatura raiz (e, a
 
 ## <a name="out-of-bounds-indexing"></a>Indexação fora de limites
 
-A indexação fora dos limites de qualquer tabela de descritores do sombreador resulta em um acesso de memória amplamente indefinido, incluindo a possibilidade de ler memória arbitrária em processo como se fosse um descritor de estado de hardware e viver com a conseqüência do que o hardware faz com ele. Isso pode produzir uma redefinição de dispositivo, mas não causará falhas no Windows.
+A indexação fora dos limites de qualquer tabela de descritores do sombreador resulta em um acesso de memória amplamente indefinido, incluindo a possibilidade de ler memória arbitrária em processo como se fosse um descritor de estado de hardware e viver com a conseqüência do que o hardware faz com ele. Isso pode produzir uma redefinição de dispositivo, mas não falhará Windows.
 
 ## <a name="shader-derivatives-and-divergent-indexing"></a>Derivações de sombreador e indexação divergente
 
-Se invocações de sombreador de pixel que estão sendo executadas em um carimbo 2x2 (para dar suporte a cálculos derivados), escolha índices de textura diferentes para amostrar de uma tabela de descritor e, se a configuração de amostra e a textura selecionadas para qualquer pixel especificado exigir um cálculo de LOD de derivações de coordenadas de textura, o processo de amostragem de LOD e de textura será feito pelo hardware , o que afetará o desempenho.
+Se invocações de sombreador de pixel que estão sendo executadas em um carimbo 2x2 (para dar suporte a cálculos derivados), escolha índices de textura diferentes para amostrar de uma tabela de descritor e, se a configuração de amostra e a textura selecionadas para qualquer pixel especificado exigir um cálculo de LOD de derivações de coordenadas de textura, o processo de amostragem de LOD e de textura será feito pelo hardware  o que afetará o desempenho.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -52,9 +52,9 @@ Se invocações de sombreador de pixel que estão sendo executadas em um carimbo
 [Tabelas de descritores](descriptor-tables.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

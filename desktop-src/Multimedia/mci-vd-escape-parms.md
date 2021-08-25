@@ -3,7 +3,7 @@ title: Estrutura de MCI_VD_ESCAPE_PARMS (Mciapi. h)
 description: A estrutura de parâmetros de escape de VD do MCI \_ \_ \_ contém o comando enviado a um dispositivo para o \_ comando de escape MCI para dispositivos VIDEODISC.
 ms.assetid: 7c735943-b67a-4be5-82b5-6a058349623e
 keywords:
-- Multimídia do Windows da estrutura de MCI_VD_ESCAPE_PARMS
+- estrutura de MCI_VD_ESCAPE_PARMS Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a80712cd693e2c7ebe290be6b9827c1e051dd86a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2f9a0fef0e60168d4539756c741527d751fd726ab3d2472cdbaf3b080784e70c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105778548"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119783841"
 ---
 # <a name="mci_vd_escape_parms-structure"></a>\_Estrutura de \_ parâmetros de escape de VD do MCI \_
 

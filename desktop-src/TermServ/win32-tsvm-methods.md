@@ -10,12 +10,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: cf160e796749bd6379ae82c7b11b716f7c2771d1
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9a95f1e826932fea41d797ca10024fba32f5345e2cccc51960c1bf7f7969f97f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103635040"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119769016"
 ---
 # <a name="win32_tsvm-methods"></a>\_Métodos TSVm do Win32
 
@@ -46,9 +46,9 @@ Recupera as informações de monitoramento da sessão de máquina virtual.
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

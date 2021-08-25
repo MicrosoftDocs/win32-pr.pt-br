@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 95b839a2abdd546842ef0d33d45a31428af840f7
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 57c176c9a246329b6193c97ca5ce356c2b433cb421b77b374e103778df1b79dd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105758319"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119822026"
 ---
 # <a name="unique-attribute"></a>atributo exclusivo
 
@@ -95,7 +95,7 @@ Especifica pelo menos um Declarador de ponteiro ao qual o atributo **\[ exclusiv
 
 </dd> <dt>
 
-*nome da função* 
+*Nome da função* 
 </dt> <dd>
 
 Especifica o nome do procedimento remoto.
@@ -145,7 +145,7 @@ typedef [unique, string] unsigned char * MY_STRING_TYPE;
 
 <dl> <dt>
 
-[**Storage**](arrays-1.md)
+[**matrizes**](arrays-1.md)
 </dt> <dt>
 
 [Matrizes e ponteiros](/windows/desktop/Rpc/arrays-and-pointers)
@@ -214,7 +214,7 @@ typedef [unique, string] unsigned char * MY_STRING_TYPE;
 [**o tamanho \_ é**](size-is.md)
 </dt> <dt>
 
-[**string**](string.md)
+[**Strings**](string.md)
 </dt> <dt>
 
 [**struct**](struct.md)
@@ -229,6 +229,6 @@ typedef [unique, string] unsigned char * MY_STRING_TYPE;
 [**unida**](union.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

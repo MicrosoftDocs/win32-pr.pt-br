@@ -1,9 +1,9 @@
 ---
-title: MCI_UNDO comando (mmsystem. h)
-description: O \_ comando MCI desfazer reverte o \_ comando de colar, cópia MCI, exclusão de MCI ou de colagem MCI bem-sucedido mais recente \_ \_ \_ . Dispositivos de vídeo digital reconhecem este comando.
+title: MCI_UNDO comando (Mmsystem.h)
+description: O comando MCI UNDO inverte o comando \_ MCI \_ CUT, MCI \_ COPY, MCI \_ DELETE ou MCI PASTE mais \_ recente. Os dispositivos de vídeo digital reconhecem esse comando.
 ms.assetid: 1593457a-e680-4732-a89e-00f4eff7605a
 keywords:
-- Multimídia do Windows de comando MCI_UNDO
+- MCI_UNDO comando Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d099d95159afee8d91acb77eb64e8e80bee5425d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 44f69d39c7980cca3deb2c65226af8e95ce3e40f86e651356abd9f4b47410d64
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104008981"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119784178"
 ---
-# <a name="mci_undo-command"></a>\_Comando de desfazer MCI
+# <a name="mci_undo-command"></a>Comando MCI \_ UNDO
 
-O \_ comando MCI desfazer reverte o comando de colar, [ \_ cópia MCI](mci-copy.md), [ \_ exclusão](mci-delete.md)de MCI ou de [ \_ colagem](mci-paste.md) MCI bem-sucedido mais recente. [ \_ ](mci-cut.md) Dispositivos de vídeo digital reconhecem este comando.
+O comando MCI UNDO inverte o comando \_ [MCI \_ CUT, MCI](mci-cut.md) [ \_ COPY,](mci-copy.md) [MCI \_ DELETE](mci-delete.md)ou [MCI \_ PASTE](mci-paste.md) mais recente. Os dispositivos de vídeo digital reconhecem esse comando.
 
-Para enviar esse comando, chame a função [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) com os parâmetros a seguir.
+Para enviar esse comando, chame a [**função mciSendCommand**](/previous-versions//dd757160(v=vs.85)) com os parâmetros a seguir.
 
 
 ```C++
@@ -50,23 +50,23 @@ Identificador de dispositivo do dispositivo MCI que deve receber a mensagem de c
 
 </dd> <dt>
 
-<span id="dwFlags"></span><span id="dwflags"></span><span id="DWFLAGS"></span>*dwFlags*
+<span id="dwFlags"></span><span id="dwflags"></span><span id="DWFLAGS"></span>*Dwflags*
 </dt> <dd>
 
-\_Notificação MCI, \_ espera MCI ou teste MCI \_ . Para obter informações sobre esses sinalizadores, consulte [os sinalizadores aguardar, notificar e testar](the-wait-notify-and-test-flags.md).
+MCI \_ NOTIFY, MCI \_ WAIT ou MCI \_ TEST. Para obter informações sobre esses sinalizadores, consulte [Os sinalizadores de espera, notificação e teste.](the-wait-notify-and-test-flags.md)
 
 </dd> <dt>
 
 <span id="lpUndo"></span><span id="lpundo"></span><span id="LPUNDO"></span>*lpUndo*
 </dt> <dd>
 
-Ponteiro para uma estrutura de [**\_ \_ parâmetros genéricos do MCI**](mci-generic-parms.md) . (Dispositivos com conjuntos de comandos estendidos podem substituir essa estrutura por uma estrutura específica do dispositivo.)
+Ponteiro para uma [**estrutura \_ \_ PARMS GENÉRICA da MCI.**](mci-generic-parms.md) (Dispositivos com conjuntos de comandos estendidos podem substituir essa estrutura por uma estrutura específica do dispositivo.)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retornará zero se for bem-sucedido ou um erro de outra forma.
+Retornará zero se for bem-sucedido ou um erro, caso contrário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -76,7 +76,7 @@ Retornará zero se for bem-sucedido ou um erro de outra forma.
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                                |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                      |
-| Cabeçalho<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -84,7 +84,7 @@ Retornará zero se for bem-sucedido ou um erro de outra forma.
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
 [Comandos MCI](mci-commands.md)

@@ -15,12 +15,12 @@ api_type:
 - DllExport
 api_location:
 - Winspool.drv
-ms.openlocfilehash: da8754add6e3f5997354c940c303c41d4588c7b8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2451f8e0668e0064566511bbf5eeb05e65094967486142719629400cf8d97348
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103663175"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119720266"
 ---
 # <a name="advanceddocumentproperties-function"></a>Função AdvancedDocumentProperties
 
@@ -82,7 +82,7 @@ Um ponteiro para uma estrutura [**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função [**DocumentProperties**](documentproperties.md) com esses parâmetros for bem-sucedida, o valor de retorno de **AdvancedDocumentProperties** será 1. Caso contrário, o valor de retorno será zero.
 

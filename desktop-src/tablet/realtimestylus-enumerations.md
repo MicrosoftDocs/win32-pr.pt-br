@@ -1,19 +1,19 @@
 ---
-description: Esta seção contém enumerações que pertencem à classe RealTimeStylus.
+description: Esta seção contém enumerações que pertencem à Classe RealTimeStylus.
 ms.assetid: d7df269a-2b08-4bc2-ad7e-9b69d8f2f2a5
-title: Enumerações do RealTimeStylus
+title: Enumerações RealTimeStylus
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b334ee297ae863060c3cde100eb683f5e85320b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 844f2522cfa933d36e48b39bd00037c96cb84b7ae20bf31f48b7d1b21b0c5a79
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104296869"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119820335"
 ---
-# <a name="realtimestylus-enumerations"></a>Enumerações do RealTimeStylus
+# <a name="realtimestylus-enumerations"></a>Enumerações RealTimeStylus
 
-Esta seção contém enumerações que pertencem à [**classe RealTimeStylus**](realtimestylus-class.md).
+Esta seção contém enumerações que pertencem à [**Classe RealTimeStylus**](realtimestylus-class.md).
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -21,9 +21,9 @@ Esta seção contém enumerações que pertencem à [**classe RealTimeStylus**](
 
 | Enumeração                                                                  | Descrição                                                                                                                                                                                        |
 |------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Enumeração StylusQueue**](/windows/desktop/api/RTSCom/ne-rtscom-stylusqueue)                               | Especifica qual fila adicionar dados da caneta.<br/>                                                                                                                                               |
-| [**Enumeração RealTimeStylusLockType**](/windows/desktop/api/RTSCom/ne-rtscom-realtimestyluslocktype)         | Especifica os bloqueios dentro do objeto da [**classe RealTimeStylus**](realtimestylus-class.md) que protege os membros e as propriedades do objeto de **classe RealTimeStylus** da modificação.<br/> |
-| [**Enumeração RealTimeStylusDataInterest**](/windows/desktop/api/RTSCom/ne-rtscom-realtimestylusdatainterest) | Define os valores usados pelos plug-ins para especificar quais notificações de evento são recebidas pelos plug-ins.<br/>                                                                                          |
+| [**Enumeração StylusQueue**](/windows/desktop/api/RTSCom/ne-rtscom-stylusqueue)                               | Especifica qual fila adicionar dados de caneta.<br/>                                                                                                                                               |
+| [**Enumeração RealTimeStylusLockType**](/windows/desktop/api/RTSCom/ne-rtscom-realtimestyluslocktype)         | Especifica os bloqueios dentro do [**objeto Classe RealTimeStylus**](realtimestylus-class.md) que protegem os membros e as propriedades do objeto da Classe **RealTimeStylus** contra modificação.<br/> |
+| [**Enumeração RealTimeStylusDataInterest**](/windows/desktop/api/RTSCom/ne-rtscom-realtimestylusdatainterest) | Define os valores usados por plug-ins para especificar quais notificações de eventos os plug-ins recebem.<br/>                                                                                          |
 
 
 
@@ -33,10 +33,10 @@ Esta seção contém enumerações que pertencem à [**classe RealTimeStylus**](
 
 <dl> <dt>
 
-[**IStylusPlugin: método ataInterest de:D**](/windows/desktop/api/RTSCom/nf-rtscom-istylusplugin-datainterest)
+[**Método IStylusPlugin::D ataInterest**](/windows/desktop/api/RTSCom/nf-rtscom-istylusplugin-datainterest)
 </dt> <dt>
 
-[**Interface IStylusPlugin**](/windows/desktop/api/RTSCom/nn-rtscom-istylusplugin)
+[**IStylusPlugin Interface**](/windows/desktop/api/RTSCom/nn-rtscom-istylusplugin)
 </dt> <dt>
 
 [**Classe RealTimeStylus**](realtimestylus-class.md)

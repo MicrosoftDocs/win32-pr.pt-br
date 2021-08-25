@@ -1,6 +1,6 @@
 ---
-description: 'Método IPrivateIdentityManager2:: CreateIdentity2'
-title: 'Método IPrivateIdentityManager2:: CreateIdentity2'
+description: Método IPrivateIdentityManager2::CreateIdentity2
+title: Método IPrivateIdentityManager2::CreateIdentity2
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -9,14 +9,14 @@ api_name: ''
 api_type: ''
 api_location: ''
 ms.assetid: 485f99ac-eec2-4037-9462-6b264fa8d8df
-ms.openlocfilehash: 2613c1195cf4bd44458593f35fc282021685d30a
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 9a04dd1a54b10a8b73b14e447bd6ef174cf1336999b7ce42b89af0f982a58c56
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842897"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119710446"
 ---
-# <a name="iprivateidentitymanager2createidentity2-method"></a>Método IPrivateIdentityManager2:: CreateIdentity2
+# <a name="iprivateidentitymanager2createidentity2-method"></a>Método IPrivateIdentityManager2::CreateIdentity2
 
 Não há suporte para o método.
 

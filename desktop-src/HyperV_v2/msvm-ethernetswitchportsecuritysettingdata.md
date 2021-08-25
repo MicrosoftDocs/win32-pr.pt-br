@@ -1,7 +1,7 @@
 ---
 description: Representa os dados de configuração do recurso de segurança.
 ms.assetid: 98e0de24-ccdc-4fc7-86a5-b68d454fde9d
-title: Classe Msvm_EthernetSwitchPortSecuritySettingData
+title: Msvm_EthernetSwitchPortSecuritySettingData classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -31,18 +31,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 8d37913f015a3ffbfaa751a7bbb10f79cea2fb39
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 214a86513462e70025f0bcb6403faecc3b6663463dbef8c4cb9d1ea60a9c8f33
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103837514"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119681436"
 ---
-# <a name="msvm_ethernetswitchportsecuritysettingdata-class"></a>\_Classe Msvm EthernetSwitchPortSecuritySettingData
+# <a name="msvm_ethernetswitchportsecuritysettingdata-class"></a>Classe Msvm \_ EthernetSwitchPortSecuritySettingData
 
 Representa os dados de configuração do recurso de segurança.
 
-A sintaxe a seguir é simplificada formato MOF código (MOF) e inclui todas as propriedades herdadas.
+A sintaxe a seguir é simplificada Managed Object Format código MOF e inclui todas as propriedades herdadas.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -73,61 +73,61 @@ class Msvm_EthernetSwitchPortSecuritySettingData : Msvm_EthernetSwitchPortFeatur
 
 ## <a name="members"></a>Membros
 
-A classe **Msvm \_ EthernetSwitchPortSecuritySettingData** tem estes tipos de membros:
+A **classe Msvm \_ EthernetSwitchPortSecuritySettingData** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Msvm \_ EthernetSwitchPortSecuritySettingData** tem essas propriedades.
+A **classe Msvm \_ EthernetSwitchPortSecuritySettingData** tem essas propriedades.
 
 <dl> <dt>
 
 **AllowIeeePriorityTag**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Qualificadores: **WmiDataId** (6), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Especifica se o tráfego de/para a porta retém informações de 802.1 P. Conterá **true** se o tráfego de/para a porta mantiver informações 802.1 p ou **false** caso contrário. O valor padrão é **Falso**.
+Especifica se o tráfego de/para a porta retém informações 802.1P. Conterá **True** se o tráfego de/para a porta reter informações 802.1P ou **False** caso contrário. O valor padrão é **Falso**.
 
 </dd> <dt>
 
 **AllowMacSpoofing**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Qualificadores: **WmiDataId** (1), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Indica se a porta permitirá a falsificação de MAC. Se essa propriedade for **true**, a porta permitirá que os endereços MAC sejam falsificados. Todos os valores válidos de endereço MAC de unicast são permitidos. Se essa propriedade for **falsa**, a porta só permitirá que os endereços MAC configurados no gerenciamento do Hyper-V sejam usados. O valor padrão é **Falso**.
+Indica se a porta permitirá a spoofing do MAC. Se essa propriedade for **True**, a porta permitirá que os endereços MAC sejam falsos. Todos os valores de endereço MAC unicast válidos são permitidos. Se essa propriedade for **False**, a porta permitirá que apenas os endereços MAC configurados no gerenciamento do Hyper-V sejam usados. O valor padrão é **Falso**.
 
 </dd> <dt>
 
 **AllowTeaming**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Qualificadores: **WmiDataId** (8), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Indica se as NICs conectadas à porta podem fazer parte de uma equipe. Isso se aplica somente a NICs conectadas a máquinas virtuais. Contém **true** se o agrupamento NIC for permitido ou **false** caso contrário. O valor padrão é **Falso**.
+Indica se as NICs conectadas à porta podem fazer parte de uma equipe. Isso se aplica somente a NICs conectadas a máquinas virtuais. Conterá **True se** o teaming NIC for permitido ou **False caso** contrário. O valor padrão é **Falso**.
 
 </dd> <dt>
 
@@ -140,7 +140,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma breve descrição do objeto. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como "configurações de segurança de porta do comutador Ethernet".
+Uma breve descrição do objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e sempre é definida como "Segurança de Porta do Comutamento Ethernet Configurações".
 
 </dd> <dt>
 
@@ -153,17 +153,17 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma descrição do objeto . Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como "representa os dados de configuração do recurso de segurança.".
+Uma descrição do objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e sempre é definida como "Representa os dados de configuração do recurso de segurança".
 
 </dd> <dt>
 
 **DynamicIPAddressLimit**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Qualificadores: **WmiDataId** (12), **InterfaceVersion** (2), **InterfaceRevision** (0)
@@ -182,42 +182,42 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Um nome de exibição para o objeto. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como "configurações de segurança de porta do comutador Ethernet".
+Um nome de exibição para o objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e sempre é definida como "Segurança de Porta do Comutamento Ethernet Configurações".
 
 </dd> <dt>
 
 **EnableDhcpGuard**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Qualificadores: **WmiDataId** (2), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Especifica se as ofertas DHCP estão bloqueadas da porta. Contém **true** se as ofertas DHCP forem bloqueadas da porta ou **false** caso contrário. O valor padrão é **Falso**.
+Especifica se as ofertas DHCP estão bloqueadas da porta. Conterá **True** se as ofertas DHCP são bloqueadas da porta ou **False caso** contrário. O valor padrão é **Falso**.
 
 </dd> <dt>
 
 **EnableFixSpeed10G**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Qualificadores: **WmiDataId** (14), **InterfaceVersion** (3), **InterfaceRevision** (0)
 </dt> </dl>
 
-Defina como TRUE se a velocidade fixa 10G estiver habilitada, caso contrário, FALSE. O valor padrão é FALSE.
+Definido como TRUE se a Velocidade Fixa 10G estiver habilitada, caso afirmando FALSE. O valor padrão é FALSE.
 
 > [!Note]  
-> Propriedade adicionada no Windows 10.
+> Propriedade adicionada em Windows 10.
 
  
 
@@ -226,16 +226,16 @@ Defina como TRUE se a velocidade fixa 10G estiver habilitada, caso contrário, F
 **EnableRouterGuard**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Qualificadores: **WmiDataId** (3), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Especifica se anúncios de roteador e redirecionamentos de roteador estão bloqueados da porta. Conterá **true** se anúncios de roteador e redirecionamentos de roteador forem bloqueados da porta ou **false** caso contrário. O valor padrão é **Falso**.
+Especifica se anúncios de roteador e redirecionamentos de roteador são bloqueados da porta. Conterá **True se** anúncios de roteador e redirecionamentos de roteador são bloqueados da porta ou **False caso** contrário. O valor padrão é **Falso**.
 
 </dd> <dt>
 
@@ -248,20 +248,20 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **chave**
+Qualificadores: **Chave**
 </dt> </dl>
 
-Identifica exclusivamente uma instância dessa classe. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Identifica exclusivamente uma instância dessa classe. Essa propriedade é herdada de [**\_ ManagedElement do CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
-**Monitormode**
+**MonitorMode**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **uint8**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Qualificadores: **WmiDataId** (4), **InterfaceVersion** (1), **InterfaceRevision** (0)
@@ -300,32 +300,32 @@ Isso indica o modo de monitor da porta.
 Tipo de dados: **uint8**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Qualificadores: **WmiDataId** (5), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Especifica o identificador da sessão de monitor à qual esta porta pertence.
+Especifica o identificador da sessão de monitor à que essa porta pertence.
 
 </dd> <dt>
 
 **Reserved**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Qualificadores: [**preteridos**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("sem valor"), **WmiDataId** (13), **InterfaceVersion** (3), **InterfaceRevision** (0)
+Qualificadores: [**preterido**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("Sem valor"), **WmiDataId** (13), **InterfaceVersion** (3), **InterfaceRevision** (0)
 </dt> </dl>
 
 Reservado
 
 > [!Note]  
-> Propriedade adicionada no Windows 10.
+> Propriedade adicionada em Windows 10.
 
  
 
@@ -401,8 +401,8 @@ Especifica o identificador da sub-rede virtual da qual a porta é membro. O padr
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                                    |
 | Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |

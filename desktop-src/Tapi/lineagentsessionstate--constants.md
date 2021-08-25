@@ -1,19 +1,19 @@
 ---
-description: As \_ constantes LINEAGENTSESSIONSTATE descrevem vários Estados de sessão do agente.
+description: As constantes LINEAGENTSESSIONSTATE \_ descrevem vários estados de sessão do agente.
 ms.assetid: 8a0d06bb-51ba-4eaf-8719-120aed817f63
-title: Constantes de LINEAGENTSESSIONSTATE_ (TAPI. h)
+title: LINEAGENTSESSIONSTATE_ constantes (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bdfd1be8cf846d0e23828f0a3540960a86a83ef1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 702c9820fb6c2157a386241b13ea0593c4156195bc74bcfa7655c76db171083d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105769408"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119682196"
 ---
-# <a name="lineagentsessionstate_-constants"></a>\_Constantes LINEAGENTSESSIONSTATE
+# <a name="lineagentsessionstate_-constants"></a>Constantes LINEAGENTSESSIONSTATE \_
 
-As **\_ constantes LINEAGENTSESSIONSTATE** descrevem vários Estados de sessão do agente.
+As **\_ constantes LINEAGENTSESSIONSTATE descrevem** vários estados de sessão do agente.
 
 <dl> <dt>
 
@@ -32,32 +32,32 @@ O agente está ocupado tratando uma chamada.
 
 
 
-O agente está ocupado tratando o encapsulamento da chamada.
+O agente está ocupado tratando a quebra da chamada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEAGENTSESSIONSTATE_ENDED"></span><span id="lineagentsessionstate_ended"></span>**LINEAGENTSESSIONSTATE \_ finalizado**
+<span id="LINEAGENTSESSIONSTATE_ENDED"></span><span id="lineagentsessionstate_ended"></span>**LINEAGENTSESSIONSTATE \_ ENCERRADO**
 </dt> <dd> <dl> <dt>
 
 
 
-A sessão do agente terminou.
+A sessão do agente foi encerrada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEAGENTSESSIONSTATE_NOTREADY"></span><span id="lineagentsessionstate_notready"></span>**LINEAGENTSESSIONSTATE \_ ilegível**
+<span id="LINEAGENTSESSIONSTATE_NOTREADY"></span><span id="lineagentsessionstate_notready"></span>**LINEAGENTSESSIONSTATE \_ NOTREADY**
 </dt> <dd> <dl> <dt>
 
 
 
-O agente está conectado, mas ocupado com uma tarefa que não atende a uma chamada (como em uma interrupção). Nenhuma chamada adicional deve ser roteada para o agente.
+O agente está conectado, mas ocupado com uma tarefa diferente de atender a uma chamada (como em uma pausa). Nenhuma chamada adicional deve ser roteada para o agente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEAGENTSESSIONSTATE_READY"></span><span id="lineagentsessionstate_ready"></span>**LINEAGENTSESSIONSTATE \_ pronto**
+<span id="LINEAGENTSESSIONSTATE_READY"></span><span id="lineagentsessionstate_ready"></span>**LINEAGENTSESSIONSTATE \_ PRONTO**
 </dt> <dd> <dl> <dt>
 
 
@@ -67,7 +67,7 @@ O agente está pronto para aceitar chamadas.
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEAGENTSESSIONSTATE_RELEASED"></span><span id="lineagentsessionstate_released"></span>**LINEAGENTSESSIONSTATE \_ liberada**
+<span id="LINEAGENTSESSIONSTATE_RELEASED"></span><span id="lineagentsessionstate_released"></span>**LINEAGENTSESSIONSTATE \_ LANÇADO**
 </dt> <dd> <dl> <dt>
 
 
@@ -83,8 +83,8 @@ A sessão do agente foi liberada.
 
 | Requisito | Valor |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versão da TAPI<br/> | Requer TAPI 2,2<br/>                                                      |
-| parâmetro<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versão do TAPI<br/> | Requer TAPI 2.2<br/>                                                      |
+| Cabeçalho<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

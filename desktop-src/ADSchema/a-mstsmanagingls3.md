@@ -1,11 +1,11 @@
 ---
 title: Atributo MS-TS-ManagingLS3
-description: Nome do emissor do terceiro servidor de terminal por CAL de usuário.
+description: Nome do emissor do terceiro servidor de terminal por cal de usuário.
 ms.assetid: bc03d162-d039-424a-8c67-cd58c1d1ac2b
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo MS-TS-ManagingLS3
-- Esquema de AD do atributo msTSManagingLS3
+- Esquema do AD do atributo MS-TS-ManagingLS3
+- Esquema do AD do atributo msTSManagingLS3
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: df9b0c92ca5f5eac822d5a62bd23af813842cdf6
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4ea6cbd68b4925a23de66abdd03c29b9763fe405ad1608c67b01c113e3028d92
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103645527"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119802656"
 ---
 # <a name="ms-ts-managingls3-attribute"></a>Atributo MS-TS-ManagingLS3
 
-Nome do emissor do terceiro servidor de terminal por CAL de usuário.
+Nome do emissor do terceiro servidor de terminal por cal de usuário.
 
 
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | MS-TS-ManagingLS3                           |
-| LDAP-Display-Name | msTSManagingLS3                             |
+| Ldap-Display-Name | msTSManagingLS3                             |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.2005                     |
-| System-ID-GUID    | fad5dcc1-2130-4c87-a118-75322cd67050        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | fad5dcc1-2130-4c87-a118-75322cd67050        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,10 +55,10 @@ Nome do emissor do terceiro servidor de terminal por CAL de usuário.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
-| É indexado             | True         |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| Tem valor único       | Verdadeiro         |
+| É indexado             | Verdadeiro         |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | 0            |
 | Range-Upper            | 255          |
 | Search-Flags           | 0x00000001   |
@@ -76,10 +76,10 @@ Nome do emissor do terceiro servidor de terminal por CAL de usuário.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
-| É indexado             | True         |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| Tem valor único       | Verdadeiro         |
+| É indexado             | Verdadeiro         |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | 0            |
 | Range-Upper            | 255          |
 | Search-Flags           | 0x00000001   |
@@ -97,10 +97,10 @@ Nome do emissor do terceiro servidor de terminal por CAL de usuário.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
-| É indexado             | True         |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| Tem valor único       | Verdadeiro         |
+| É indexado             | Verdadeiro         |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | 0            |
 | Range-Upper            | 255          |
 | Search-Flags           | 0x00000001   |

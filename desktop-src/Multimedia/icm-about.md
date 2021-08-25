@@ -1,9 +1,9 @@
 ---
 title: Mensagem de ICM_ABOUT (VFW. h)
-description: O ICM \_ sobre Message notifica um driver de compactação de vídeo para exibir sua caixa de diálogo about ou consulta um driver de compactação de vídeo para determinar se ele tem uma caixa de diálogo about. Você pode enviar essa mensagem explicitamente ou usando a macro ICAbout.
+description: a ICM \_ sobre a mensagem notifica um driver de compactação de vídeo para exibir sua caixa de diálogo about ou consulta um driver de compactação de vídeo para determinar se ele tem uma caixa de diálogo about. Você pode enviar essa mensagem explicitamente ou usando a macro ICAbout.
 ms.assetid: 6eca69a3-0463-48e6-befb-5003b7515e7d
 keywords:
-- Multimídia do Windows de mensagem ICM_ABOUT
+- mensagem de ICM_ABOUT Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d1e03e88993ba1e345a3ea32a9de7adb2d63abe9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5bf47ff93ef1986d805b2cb37697fdf4d86876c5552fe6aeffb00ff172673018
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104008839"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119785066"
 ---
-# <a name="icm_about-message"></a>ICM \_ sobre a mensagem
+# <a name="icm_about-message"></a>ICM \_ SOBRE a mensagem
 
-O **ICM \_ sobre** Message notifica um driver de compactação de vídeo para exibir sua caixa de diálogo about ou consulta um driver de compactação de vídeo para determinar se ele tem uma caixa de diálogo about. Você pode enviar essa mensagem explicitamente ou usando a macro [**ICAbout**](/windows/desktop/api/Vfw/nf-vfw-icabout) .
+a **ICM \_ sobre** a mensagem notifica um driver de compactação de vídeo para exibir sua caixa de diálogo about ou consulta um driver de compactação de vídeo para determinar se ele tem uma caixa de diálogo about. Você pode enviar essa mensagem explicitamente ou usando a macro [**ICAbout**](/windows/desktop/api/Vfw/nf-vfw-icabout) .
 
 
 ```C++

@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - wlantypes.h
-ms.openlocfilehash: fd1a8ef03d5c5cb897d95b768f8ab48705098d74
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 84e4abde6192cf1be92b21df0c6a79125a198e0fde28e304cf583d76ea91689f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105758183"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119801476"
 ---
 # <a name="dot11_auth_cipher_pair-structure"></a>\_Estrutura de \_ par de codificação de DOT11 auth \_
 
@@ -64,10 +64,10 @@ A estrutura de par de codificação de DOT11 \_ auth \_ \_ define um algoritmo d
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente Windows Vista, Windows XP com \[ aplicativos de área de trabalho do SP3\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                        |
+| Cliente mínimo com suporte<br/> | Windows Vista, somente Windows XP com \[ aplicativos de área de trabalho do SP3\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                                        |
 | Redistribuível<br/>          | API de LAN sem fio para Windows XP com SP2<br/>                                                         |
-| parâmetro<br/>                   | <dl> <dt>Wlantypes. h (incluir Windot11. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Wlantypes. h (incluir Windot11. h)</dt> </dl> |
 
 
 

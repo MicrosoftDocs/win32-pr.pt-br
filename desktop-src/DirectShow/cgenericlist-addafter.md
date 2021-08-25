@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: fbb9553310a8ba817f90464d90226eb36371505e
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: 6de0037d76e63049294b0455c8ec1fbac82963d94febb35f7c9400ec8eae9ab5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "104298880"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119697526"
 ---
 # <a name="cgenericlistaddafter-method-wxlisth---p-pobj-parameters"></a>Método CGenericList. AddAfter (Wxlist. h)-p, pObj parâmetros
 
@@ -57,7 +57,7 @@ Ponteiro para um objeto do tipo **Object** (o tipo de modelo).
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o indicador de posição do item inserido.
 
@@ -65,7 +65,7 @@ Retorna o indicador de posição do item inserido.
 
 | Requisito | Valor |
 |-|-|
-| parâmetro | Wxlist. h (incluir fluxos. h) |
+| parâmetro | Wxlist. h (incluir Fluxos. h) |
 | Biblioteca| Strmbase. lib (compilações de varejo); Strmbasd. lib (compilações de depuração) |
 
 ## <a name="see-also"></a>Confira também

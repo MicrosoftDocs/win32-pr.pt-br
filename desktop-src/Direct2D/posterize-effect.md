@@ -1,25 +1,25 @@
 ---
-title: Posterização do efeito
-description: O efeito de Posterização reduz o número de cores exclusivas em uma imagem.
+title: Efeito de cartaz
+description: O efeito de cartaz reduz o número de cores exclusivas em uma imagem.
 ms.assetid: e6686998-1246-b3b7-6f4f-212568c3191c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c98c55154300f7b29c23c24e97570335c6e930f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 21372ee43935441168609cc81ef053ac96fd3fdbbd7cd3c16578f13d1a47fda1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009541"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119636096"
 ---
-# <a name="posterize-effect"></a>Posterização do efeito
+# <a name="posterize-effect"></a>Efeito de cartaz
 
-O efeito de Posterização reduz o número de cores exclusivas em uma imagem.
+O efeito de cartaz reduz o número de cores exclusivas em uma imagem.
 
 O CLSID para esse efeito é CLSID \_ D2D1Posterize.
 
 -   [Imagem de exemplo](#example-image)
 -   [Código de exemplo](#sample-code)
--   [Propriedades do efeito](#effect-properties)
+-   [Propriedades de efeito](#effect-properties)
 -   [Requirements](#requirements)
 -   [Tópicos relacionados](#related-topics)
 
@@ -48,9 +48,9 @@ m_d2dContext->EndDraw();
 
 
 
-## <a name="effect-properties"></a>Propriedades do efeito
+## <a name="effect-properties"></a>Propriedades de efeito
 
-As propriedades do efeito de Posterização são definidas pela enumeração [**d2d1 \_ poster \_ prop**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_posterize_prop) .
+As propriedades para o efeito de posterização são definidas pela enumeração [**D2D1 \_ POSTERIZE \_ PROP.**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_posterize_prop)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -58,10 +58,10 @@ As propriedades do efeito de Posterização são definidas pela enumeração [**
 
 | Requisito | Valor |
 |--------------------------|---------------------------------------------------|
-| Cliente mínimo com suporte | Aplicativos do Windows 10 \[ Desktop aplicativos da \| Windows Store\] |
-| Servidor mínimo com suporte | Aplicativos do Windows 10 \[ Desktop aplicativos da \| Windows Store\] |
-| parâmetro                   | d2d1effects \_ 2. h                                  |
-| Biblioteca                  | d2d1. lib, dxguid. lib                              |
+| Cliente mínimo com suporte | \[Windows 10 aplicativos da \| área Windows Aplicativos da Store\] |
+| Servidor mínimo com suporte | \[Windows 10 aplicativos da \| área Windows Aplicativos da Store\] |
+| Cabeçalho                   | d2d1effects \_ 2.h                                  |
+| Biblioteca                  | d2d1.lib, dxguid.lib                              |
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

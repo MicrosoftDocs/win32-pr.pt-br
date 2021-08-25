@@ -16,12 +16,12 @@ ms.topic: article
 ms.date: 02/11/2020
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 44eb44a83175cf8f735abfeb8cfec4de83f46bd2
-ms.sourcegitcommit: 01a4383738056cf3de4f45f36d98ef73d4dc694d
+ms.openlocfilehash: f279972c3b716f111fa37fc2dd01ef9184b2f804f07106f6b971358daf290c44
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "105792890"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119635346"
 ---
 # <a name="ideviceaccesspolicycheckdeviceinterfaceclassaccesscheckwithcallingthread-method"></a>IDeviceAccessPolicyCheck: método eviceInterfaceClassAccessCheckWithCallingThread de:D
 
@@ -34,8 +34,8 @@ Essa API determinará se o token para o contexto atual tem acesso à classe de i
 
 ```C++
 HRESULT DeviceInterfaceClassAccessCheckWithCallingThread(
-  [in] PCWSTR pszDeviceInterfaceClassGuid,
-  [in] DWORD  dwClientThreadId
+  [in] PCWSTR pszDeviceInterfaceClassGuid,
+  [in] DWORD  dwClientThreadId
 );
 ```
 
@@ -57,6 +57,6 @@ ID de thread do cliente em que qualquer interface do usuário associada deve ser
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se essa função for realizada com sucesso, ela retornará S_OK. Caso contrário, ele retorna um código de erro HRESULT.
+Se essa função for realizada com sucesso, ela retornará S_OK. Caso contrário, ela retornará um código de erro HRESULT.

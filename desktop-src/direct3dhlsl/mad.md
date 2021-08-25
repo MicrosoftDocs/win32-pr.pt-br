@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 208b1bbc87c430ca5a58a70fb3c86f9edae762bf
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 52e0e4819e4c78f092ee99c78403ace5d0205037db3096dfe45865c2216d486d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104453787"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119788816"
 ---
 # <a name="mad-function"></a>Função mad
 
@@ -28,9 +28,9 @@ Executa uma operação aritmética de multiplicar/adicionar em três valores.
 
 ``` syntax
 numeric mad(
-  in numeric mvalue,
-  in numeric avalue,
-  in numeric bvalue
+  in numeric mvalue,
+  in numeric avalue,
+  in numeric bvalue
 );
 ```
 
@@ -65,7 +65,7 @@ O segundo valor de adição.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **numérico**
 
@@ -85,19 +85,19 @@ Essa função tem suporte nos seguintes modelos de sombreador.
 
 
 
- 
+ 
 
 Essa função tem suporte nos seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
 
 
- 
+ 
 
 Os autores de sombreador podem usar o **Mad** instrinsic para direcionar explicitamente a instrução de hardware **Mad** na saída do sombreador compilado, que é particularmente útil com sombreadores que marcam os resultados com a palavra-chave [precisa](dx-graphics-hlsl-appendix-keywords.md) . A instrução **Mad** pode ser implementada no hardware como "fundido", que oferece maior precisão do que a implementação de uma instrução **Mul** seguida por uma instrução **Add** , ou como uma adição de **Mul**  +  .
 
@@ -113,9 +113,9 @@ Se os autores de sombreador usarem o **Mad** instrinsic para calcular um resulta
 [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

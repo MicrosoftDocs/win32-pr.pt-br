@@ -3,7 +3,7 @@ title: MCI (interface de controle de mídia)
 description: MCI (interface de controle de mídia)
 ms.assetid: e22f23b5-0fa6-4957-bbbf-b1b3a4c8bd31
 keywords:
-- Multimídia do Windows, MCI (interface de controle de mídia)
+- Windows multimídia, MCI (Interface de controle de mídia)
 - multimídia, MCI (interface de controle de mídia)
 - áudio de multimídia, MCI (interface de controle de mídia)
 - áudio, interface de controle de mídia (MCI)
@@ -16,12 +16,12 @@ keywords:
 - Sequenciador MIDI MCI, sobre
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 00aaf582f625c4411a2400ee381ec5c17d4d8ae7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c4c8d21588754d0f66dbed97c74bbaabe4c005335059dace2997012691a24c8f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005443"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119782976"
 ---
 # <a name="media-control-interface-mci"></a>MCI (interface de controle de mídia)
 
@@ -38,9 +38,9 @@ Embora atualmente existam três tipos de arquivos MIDI padrão, o sequenciador M
 
 Para obter mais informações sobre como controlar dispositivos multimídia (incluindo sequenciais) usando comandos MCI, consulte [MCI](mci.md).
 
- 
+ 
 
- 
+ 
 
 
 

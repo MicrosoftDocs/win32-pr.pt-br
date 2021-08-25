@@ -14,12 +14,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: f314be4b8da98ff80bd7404c270479855e13fb6e
-ms.sourcegitcommit: 7e4322a6ec1f964d5ad26e2e5e06cc8ce840030e
+ms.openlocfilehash: b2a6b2ffa9168e870aeb405badb6ff71b0a4a59b23d76947e56a9c085ed0107a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113129955"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119726546"
 ---
 # <a name="shader-constants-hlsl"></a>Constantes de sombreador (HLSL)
 
@@ -31,7 +31,7 @@ Declarar um buffer constante ou um buffer de textura se parece muito com uma dec
 
 |                                                                                                                         |
 |-------------------------------------------------------------------------------------------------------------------------|
-| *BufferType* \[ *Nome* \] \[: **register**(b \# ) { \] *VariableDeclaration* \[ : **packoffset**(c \# .xyzw) \] ;      ... }; |
+| *BufferType* \[ *Nome* \] \[: **register**(b \# ) { \] *VariableDeclaration:* \[ **packoffset**(c \# .xyzw) \] ;      ... }; |
 
 
 
@@ -101,13 +101,13 @@ Para obter mais informações sobre como usar buffers constantes em um aplicativ
 
 Para obter mais informações sobre como usar buffers constantes em um aplicativo D3D11, consulte Introdução aos buffers no [Direct3D 11](/windows/desktop/direct3d11/overviews-direct3d-11-resources-buffers-intro) e [Como criar um buffer constante.](/windows/desktop/direct3d11/overviews-direct3d-11-resources-buffers-constant-how-to)
 
-Um buffer constante não exige que uma [exibição](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-access-views) seja vinculada ao pipeline. No entanto, um buffer de textura requer uma exibição e deve ser vinculado a um slot de textura (ou deve ser vinculado a [**SetTextureBuffer**](/windows/desktop/api/d3d10effect/nf-d3d10effect-id3d10effectconstantbuffer-settexturebuffer) ao usar um efeito).
+Um buffer constante não exige que uma [exibição](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-access-views) seja vinculada ao pipeline. No entanto, um buffer de textura requer uma exibição e deve ser vinculado a um slot de textura (ou deve ser vinculado com [**SetTextureBuffer**](/windows/desktop/api/d3d10effect/nf-d3d10effect-id3d10effectconstantbuffer-settexturebuffer) ao usar um efeito).
 
 Há duas maneiras de empacotar dados de constantes: usando as palavras-chave [register (DirectX HLSL)](dx-graphics-hlsl-variable-register.md) e [packoffset (DirectX HLSL).](dx-graphics-hlsl-variable-packoffset.md)
 
 Diferenças entre o Direct3D 9 e o Direct3D 10 e 11:
 
-- Ao contrário da alocação automática de constantes no Direct3D 9, que não realizou o empacotamento e atribuiu cada variável a um conjunto de registros float4, as variáveis de constante HLSL seguem regras de empacotamento no Direct3D 10 e 11.
+- Ao contrário da alocação automática de constantes no Direct3D 9, que não realizou o empacotamento e, em vez disso, atribuiu cada variável a um conjunto de registros float4, as variáveis de constante HLSL seguem regras de empacotamento no Direct3D 10 e 11.
 
 
 
@@ -140,11 +140,11 @@ cbuffer myScene
 
 ### <a name="default-constant-buffers"></a>Buffers constantes padrão
 
-Há dois buffers constantes padrão disponíveis, $Global e $Param. As variáveis colocadas no escopo global são adicionadas implicitamente ao $Global cbuffer, usando o mesmo método de empacotamento usado para cbuffers. Parâmetros uniformes na lista de parâmetros de uma função aparecem no buffer constante $Param quando um sombreador é compilado fora da estrutura de efeitos. Quando compilados dentro da estrutura de efeitos, todos os uniformes devem resolver para as variáveis definidas no escopo global.
+Há dois buffers constantes padrão disponíveis, $Global e $Param. As variáveis colocadas no escopo global são adicionadas implicitamente ao $Global cbuffer, usando o mesmo método de empacotamento usado para cbuffers. Parâmetros uniformes na lista de parâmetros de uma função aparecem no buffer $Param constante quando um sombreador é compilado fora da estrutura de efeitos. Quando compilados dentro da estrutura de efeitos, todos os uniformes devem resolver para as variáveis definidas no escopo global.
 
 ## <a name="examples"></a>Exemplos
 
-Aqui está um exemplo de [Amostra Desalocar10](https://msdn.microsoft.com/library/Ee416429(v=VS.85).aspx) que é um buffer de textura com uma matriz de matrizes.
+Aqui está um exemplo de [Amostra Deslinhada10](https://msdn.microsoft.com/library/Ee416429(v=VS.85).aspx) que é um buffer de textura com uma matriz de matrizes.
 
 
 ```

@@ -1,7 +1,7 @@
 ---
-description: Interface ID3DXLoadUserData – essa interface é implementada pelo aplicativo para salvar os dados de usuário adicionais inseridos nos arquivos. x.
+description: Interface ID3DXLoadUserData – essa interface é implementada pelo aplicativo para salvar quaisquer dados de usuário adicionais inseridos em arquivos .x.
 ms.assetid: 0d656f99-c24c-4326-bc6f-c0e7874c0fb2
-title: Interface ID3DXLoadUserData (D3dx9anim. h)
+title: Interface ID3DXLoadUserData (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,20 +14,20 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 83d603d2ec5fde00ef0b29d84368e04a1276f992
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 9ede66e7250a1dec095bd03a72ea69e58afb59a60b43647fd49adfc958689cfd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108093624"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119748116"
 ---
 # <a name="id3dxloaduserdata-interface"></a>Interface ID3DXLoadUserData
 
-Essa interface é implementada pelo aplicativo para salvar os dados de usuário adicionais inseridos nos arquivos. x. Uma instância dessa interface é passada para [**D3DXLoadMeshHierarchyFromX**](d3dxloadmeshhierarchyfromx.md)e D3DX chama o método apropriado nessa interface sempre que os dados apropriados são encontrados. Por exemplo, para cada objeto de quadro no arquivo. x, [**ID3DXLoadUserData:: LoadFrameChildData**](id3dxloaduserdata--loadframechilddata.md) é chamado e passado os dados filho.
+Essa interface é implementada pelo aplicativo para salvar quaisquer dados de usuário adicionais inseridos em arquivos .x. Uma instância dessa interface é passada para [**D3DXLoadMeshHierarchyFromX**](d3dxloadmeshhierarchyfromx.md)e D3DX chama o método apropriado nessa interface sempre que os dados apropriados são encontrados. Por exemplo, para cada objeto de quadro no arquivo .x, [**ID3DXLoadUserData::LoadFrameChildData**](id3dxloaduserdata--loadframechilddata.md) é chamado e passa os dados filho.
 
 ## <a name="members"></a>Membros
 
-A interface **ID3DXLoadUserData** herda da interface [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) . **ID3DXLoadUserData** também tem estes tipos de membros:
+A interface **ID3DXLoadUserData** herda da interface [**IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **ID3DXLoadUserData** também tem estes tipos de membros:
 
 -   [Métodos](#methods)
 
@@ -39,9 +39,9 @@ A interface **ID3DXLoadUserData** tem esses métodos.
 
 | Método                                                              | Descrição                                      |
 |:--------------------------------------------------------------------|:-------------------------------------------------|
-| [**LoadFrameChildData**](id3dxloaduserdata--loadframechilddata.md) | Carregar dados filho do quadro de um arquivo. x.<br/> |
-| [**LoadMeshChildData**](id3dxloaduserdata--loadmeshchilddata.md)   | Carregar dados filho de malha de um arquivo. x.<br/>  |
-| [**LoadTopLevelData**](id3dxloaduserdata--loadtopleveldata.md)     | Carregar dados de nível superior de um arquivo. x.<br/>   |
+| [**LoadFrameChildData**](id3dxloaduserdata--loadframechilddata.md) | Carregar dados filho de quadro de um arquivo .x.<br/> |
+| [**LoadMeshChildData**](id3dxloaduserdata--loadmeshchilddata.md)   | Carregar dados filho de malha de um arquivo .x.<br/>  |
+| [**LoadTopLevelData**](id3dxloaduserdata--loadtopleveldata.md)     | Carregar dados de nível superior de um arquivo .x.<br/>   |
 
 
 
@@ -65,16 +65,16 @@ typedef interface ID3DXLoadUserData *LPD3DXLOADUSERDATA;
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[Interfaces D3DX](dx9-graphics-reference-d3dx-interfaces.md)
+[D3DX Interfaces](dx9-graphics-reference-d3dx-interfaces.md)
 </dt> </dl>
 
  

@@ -1,19 +1,19 @@
 ---
-description: Especifica se uma Media Foundation de transformação (MFT) executa o processamento assíncrono.
+description: Especifica se uma transformação Media Foundation (MFT) executa o processamento assíncrono.
 ms.assetid: fcc70282-cfac-487c-b9ff-39e62c836f8b
-title: Atributo MF_TRANSFORM_ASYNC (Mftransform. h)
+title: MF_TRANSFORM_ASYNC atributo (Mftransform.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 89622bd7bb7fa3e8306c94b02f90217b6367d21b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e92a647ca122c138f2ef7e90670798200fc3fa629be48d6242b4e71dbc93151e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647562"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119714343"
 ---
-# <a name="mf_transform_async-attribute"></a>\_Atributo assíncrono de transformação MF \_
+# <a name="mf_transform_async-attribute"></a>Atributo \_ ASYNC MF TRANSFORM \_
 
-Especifica se uma Media Foundation de transformação (MFT) executa o processamento assíncrono.
+Especifica se uma transformação Media Foundation (MFT) executa o processamento assíncrono.
 
 ## <a name="data-type"></a>Tipo de dados
 
@@ -21,26 +21,26 @@ Especifica se uma Media Foundation de transformação (MFT) executa o processame
 
 ## <a name="getset"></a>Obter/definir
 
-Para obter esse atributo, chame [**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
+Para obter esse atributo, chame [**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
 
-Para definir esse atributo, chame [**IMFAttributes:: setuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
+Para definir esse atributo, chame [**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
 
 ## <a name="remarks"></a>Comentários
 
-O atributo é um valor booliano:
+O atributo é um valor booliana:
 
--   Se o atributo for diferente de zero, o MFT executará o processamento assíncrono.
--   Se o atributo for 0 ou não definido, o MFT será síncrono.
+-   Se o atributo for não zero, o MFT executará o processamento assíncrono.
+-   Se o atributo for 0 ou não for definido, o MFT será síncrono.
 
-Para obter esse atributo, primeiro chame [**IMFTransform:: GetAttributes**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getattributes) para obter o repositório de atributos da MFT. Se esse método tiver sucesso, chame [**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32) para obter o valor do atributo. Se um dos dois métodos falhar, o MFT será síncrono.
+Para obter esse atributo, primeiro chame [**IMFTransform::GetAttributes**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getattributes) para obter o armazenamento de atributos do MFT. Se esse método for bem-sucedido, chame [**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32) para obter o valor do atributo. Se um dos dois métodos falhar, o MFT será síncrono.
 
-Para MFTs assíncronas, esse atributo deve ser definido como um valor diferente de zero. Para MFTs síncronos, esse atributo é opcional, mas deve ser definido como 0, se estiver presente.
+Para MFTs assíncronos, esse atributo deve ser definido como um valor não zero. Para MFTs síncronos, esse atributo é opcional, mas deve ser definido como 0 se estiver presente.
 
-MFTs assíncronas não são compatíveis com versões anteriores do Media Foundation. Para usar uma MFT assíncrona, o cliente deve definir o atributo de [**\_ \_ \_ desbloqueio do MF Transform Async**](mf-transform-async-unlock.md) no MFT. (O pipeline de Microsoft Media Foundation executa essa etapa automaticamente.)
+Os MFTs assíncronos não são compatíveis com versões anteriores do Media Foundation. Para usar um MFT assíncrono, o cliente deve definir o atributo [**MF \_ TRANSFORM \_ ASYNC \_ UNLOCK**](mf-transform-async-unlock.md) no MFT. (O Microsoft Media Foundation pipeline executa essa etapa automaticamente.)
 
 ## <a name="examples"></a>Exemplos
 
-O código a seguir testa se uma MFT executa o processamento assíncrono.
+O código a seguir testa se um MFT executa o processamento assíncrono.
 
 
 ```C++
@@ -68,9 +68,9 @@ BOOL IsTransformAsync(IMFTransform *pMFT)
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 7 \| UWP\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Aplicativos UWP para aplicativos da área de trabalho do Windows Server 2008 R2 \|\]<br/>                           |
-| parâmetro<br/>                   | <dl> <dt>Mftransform. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos UWP da área \| de trabalho\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Aplicativos \[ UWP de aplicativos da área de trabalho do Server 2008 R2 \|\]<br/>                           |
+| Cabeçalho<br/>                   | <dl> <dt>Mftransform.h</dt> </dl> |
 
 
 
@@ -78,16 +78,16 @@ BOOL IsTransformAsync(IMFTransform *pMFT)
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[MFTs assíncrona](asynchronous-mfts.md)
+[MFTs assíncronos](asynchronous-mfts.md)
 </dt> <dt>
 
-[Atributos de transformação](transform-attributes.md)
+[Transformar atributos](transform-attributes.md)
 </dt> <dt>
 
-[**\_desbloqueio assíncrono de transformação MF \_ \_**](mf-transform-async-unlock.md)
+[**DESBLOQUEIO \_ \_ ASSÍNCRONO DE TRANSFORMAÇÃO MF \_**](mf-transform-async-unlock.md)
 </dt> </dl>
 
  

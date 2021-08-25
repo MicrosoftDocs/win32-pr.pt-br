@@ -4,12 +4,12 @@ ms.assetid: 27ccaab7-ec89-489b-80dc-df9beb7969bc
 title: Desfragmentando arquivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b2d079f58ec98f320356a477531616788f84ccb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2f04c0a3c961854b7e3ecab50d67db608178393113ca259b916db9623058e2f3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827772"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119696286"
 ---
 # <a name="defragmenting-files"></a>Desfragmentando arquivos
 
@@ -84,7 +84,7 @@ Tipos de fluxo com suporte para qualquer arquivo ou diretório.
 -   :: $EA
 -   :: $LOGGED \_ o \_ fluxo do utilitário
 
-* * Windows 7, Windows Server 2008 R2, Windows Server 2008, Windows Vista, Windows Server 2003 e Windows XP: * *: $EA: \_ \_ não há suporte para o fluxo do utilitário de $logged antes do Windows 8 e do windows Server 2012
+* * Windows 7, Windows server 2008 R2, Windows server 2008, Windows Vista, Windows Server 2003 e Windows XP: * *:: $EA e:: $LOGGED \_ o \_ fluxo do utilitário não tem suporte antes Windows 8 e Windows Server 2012
 
 Tipos de fluxo com suporte para qualquer diretório.
 
@@ -123,24 +123,24 @@ A seguir estão os tipos de arquivo do sistema, fluxo e fluxo com suporte do [**
 -   $Extend \\ $Reparse: $R: alocação de $index \_
 -   $Extend \\ $Reparse:: $attribute \_ lista
 -   $Extend \\ $Reparse: $R: $bitmap
--   $Extend \\ $RmMetadata: $I 30: alocação de $index \_
--   $Extend \\ $RmMetadata: $I 30: $bitmap
--   $Extend \\ $RmMetadata:: $attribute \_ lista
--   $Extend \\ $RmMetadata \\ $Repair:: $data
--   $Extend \\ $RmMetadata \\ $Repair:: lista de $Attribute \_
--   $Extend \\ $RmMetadata \\ $Repair: $Config: $data
--   $Extend \\ $RmMetadata \\ $Txf: $I 30: $index \_ alocação
--   $Extend \\ $RmMetadata \\ $TxF:: lista de $Attribute \_
--   $Extend \\ $RmMetadata \\ $Txf: $I 30: $bitmap
--   $Extend \\ $RmMetadata \\ $Txf: $TxF \_ dados: $logged \_ o \_ fluxo do utilitário
--   $Extend \\ $RmMetadata \\ $TxfLog: $I 30: $index \_ alocação
--   $Extend \\ $RmMetadata \\ $TxfLog:: lista de $Attribute \_
--   $Extend \\ $RmMetadata \\ $TxfLog: $I 30: $bitmap
--   $Extend \\ $RmMetadata \\ $TxfLog \\ $Tops:: $data
--   $Extend \\ $RmMetadata \\ $TxfLog \\ $tops:: lista de $Attribute \_
--   $Extend \\ $RmMetadata \\ $TxfLog \\ $tops: $T: $data
--   $Extend \\ $RmMetadata \\ $TxfLog \\ $TxfLog. blf:: $data
--   $Extend \\ $RmMetadata \\ $TxfLog \\ $TxfLog. blf:: lista de $Attribute \_
+-   $Extend \\ $RmMetadata:$I 30:$INDEX \_ ALLOCATION
+-   $Extend \\ $RmMetadata:$I 30:$BITMAP
+-   $Extend \\ $RmMetadata::$ATTRIBUTE \_ LIST
+-   $Extend $RmMetadata \\ \\ $Repair::$DATA
+-   $Extend $RmMetadata \\ \\ $Repair::$ATTRIBUTE \_ LIST
+-   $Extend $RmMetadata \\ \\ $Repair:$Config:$DATA
+-   $Extend $RmMetadata \\ \\ $Txf:$I 30:$INDEX \_ ALLOCATION
+-   $Extend $RmMetadata \\ \\ $Txf::$ATTRIBUTE \_ LIST
+-   $Extend $RmMetadata \\ \\ $Txf:$I 30:$BITMAP
+-   $Extend \\ $RmMetadata \\ $Txf:$TXF FLUXO DO UTILITÁRIO \_ DATA:$LOGGED \_ \_
+-   $Extend $RmMetadata \\ \\ $TxfLog:$I 30:$INDEX \_ ALLOCATION
+-   $Extend \\ $RmMetadata \\ $TxfLog::$ATTRIBUTE \_ LIST
+-   $Extend \\ $RmMetadata \\ $TxfLog:$I 30:$BITMAP
+-   $Extend $RmMetadata \\ \\ $TxfLog \\ $Tops::$DATA
+-   $Extend $RmMetadata \\ \\ $TxfLog \\ $Tops::$ATTRIBUTE \_ LIST
+-   $Extend \\ $RmMetadata \\ $TxfLog \\ $Tops:$T:$DATA
+-   $Extend $RmMetadata \\ \\ $TxfLog \\ $TxfLog.blf::$DATA
+-   $Extend $RmMetadata \\ \\ $TxfLog \\ $TxfLog.blf::$ATTRIBUTE \_ LIST
 
  
 

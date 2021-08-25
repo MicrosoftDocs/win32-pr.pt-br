@@ -19,12 +19,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4212dd03d5fb217753e14c2869973bda87476367
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2833962f66fb6fab2597629877c5990c9234eb5b2dfe076073bedc2ceab9fd65
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369368"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119770686"
 ---
 # <a name="imsrdpclienttransportsettings2gatewaysupporturl-property"></a>Propriedade IMsRdpClientTransportSettings2:: GatewaySupportUrl
 

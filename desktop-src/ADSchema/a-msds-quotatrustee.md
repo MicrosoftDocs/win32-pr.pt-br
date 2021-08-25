@@ -1,11 +1,11 @@
 ---
-title: atributo ms-DS-quota-Trustee
+title: Atributo ms-DS-Quota-Trustee
 description: O SID da entidade de segurança para a qual a cota está sendo atribuída.
 ms.assetid: 4da8f731-0a8f-4d8a-a4e7-81ed881a30b5
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo ms-DS-quota-Trustee
-- atributo msDS-QuotaTrustee do AD Schema
+- Atributo AD ms-DS-Quota-Trustee
+- Esquema do AD do atributo msDS-QuotaTrustee
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7733e74c2f5d381aa6f52ea58bb03c377fab7cbe
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 5b453a3f48da5af7564fdb79f81d22a15a5b72450a68f22112c59ebfb2a749ef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105754835"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119803616"
 ---
-# <a name="ms-ds-quota-trustee-attribute"></a>atributo ms-DS-quota-Trustee
+# <a name="ms-ds-quota-trustee-attribute"></a>Atributo ms-DS-Quota-Trustee
 
 O SID da entidade de segurança para a qual a cota está sendo atribuída.
 
@@ -29,21 +29,21 @@ O SID da entidade de segurança para a qual a cota está sendo atribuída.
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | ms-DS-quota-Trustee                  |
-| LDAP-Display-Name | msDS-QuotaTrustee                    |
+| CN                | ms-DS-Quota-Trustee                  |
+| Ldap-Display-Name | msDS-QuotaTrustee                    |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1844              |
-| System-ID-GUID    | 16378906-4ea5-49be-a8d1-bfd41dff4f65 |
-| Sintaxe            | [**Cadeia de caracteres (SID)**](s-string-sid.md)  |
+| System-Id-Guid    | 16378906-4ea5-49be-a8d1-bfd41dff4f65 |
+| Syntax            | [**String(Sid)**](s-string-sid.md)  |
 
 
 
 ## <a name="implementations"></a>Implementações
 
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -58,19 +58,19 @@ O SID da entidade de segurança para a qual a cota está sendo atribuída.
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| É de valor único       | True                                                          |
+| Tem valor único       | Verdadeiro                                                          |
 | É indexado             | Falso                                                         |
-| No catálogo global      | Falso                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |
+| No Catálogo Global      | Falso                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                  |
 | Range-Lower            | 0                                                             |
 | Range-Upper            | 28                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classes usadas em        | [**ms-DS-quota-control**](c-msds-quotacontrol.md)<br/> |
+| Classes usadas em        | [**ms-DS-Quota-Control**](c-msds-quotacontrol.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -79,15 +79,15 @@ O SID da entidade de segurança para a qual a cota está sendo atribuída.
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| É de valor único       | True                                                          |
+| Tem valor único       | Verdadeiro                                                          |
 | É indexado             | Falso                                                         |
-| No catálogo global      | Falso                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |
+| No Catálogo Global      | Falso                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                  |
 | Range-Lower            | 0                                                             |
 | Range-Upper            | 28                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classes usadas em        | [**ms-DS-quota-control**](c-msds-quotacontrol.md)<br/> |
+| Classes usadas em        | [**ms-DS-Quota-Control**](c-msds-quotacontrol.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ O SID da entidade de segurança para a qual a cota está sendo atribuída.
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| É de valor único       | True                                                          |
+| Tem valor único       | Verdadeiro                                                          |
 | É indexado             | Falso                                                         |
-| No catálogo global      | Falso                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |
+| No Catálogo Global      | Falso                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                  |
 | Range-Lower            | 0                                                             |
 | Range-Upper            | 28                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classes usadas em        | [**ms-DS-quota-control**](c-msds-quotacontrol.md)<br/> |
+| Classes usadas em        | [**ms-DS-Quota-Control**](c-msds-quotacontrol.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ O SID da entidade de segurança para a qual a cota está sendo atribuída.
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| É de valor único       | True                                                          |
+| Tem valor único       | Verdadeiro                                                          |
 | É indexado             | Falso                                                         |
-| No catálogo global      | Falso                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |
+| No Catálogo Global      | Falso                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                  |
 | Range-Lower            | 0                                                             |
 | Range-Upper            | 28                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classes usadas em        | [**ms-DS-quota-control**](c-msds-quotacontrol.md)<br/> |
+| Classes usadas em        | [**ms-DS-Quota-Control**](c-msds-quotacontrol.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ O SID da entidade de segurança para a qual a cota está sendo atribuída.
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| É de valor único       | True                                                          |
+| Tem valor único       | Verdadeiro                                                          |
 | É indexado             | Falso                                                         |
-| No catálogo global      | Falso                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |
+| No Catálogo Global      | Falso                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                  |
 | Range-Lower            | 0                                                             |
 | Range-Upper            | 28                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classes usadas em        | [**ms-DS-quota-control**](c-msds-quotacontrol.md)<br/> |
+| Classes usadas em        | [**ms-DS-Quota-Control**](c-msds-quotacontrol.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ O SID da entidade de segurança para a qual a cota está sendo atribuída.
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| É de valor único       | True                                                          |
+| Tem valor único       | Verdadeiro                                                          |
 | É indexado             | Falso                                                         |
-| No catálogo global      | Falso                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |
+| No Catálogo Global      | Falso                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                  |
 | Range-Lower            | 0                                                             |
 | Range-Upper            | 28                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classes usadas em        | [**ms-DS-quota-control**](c-msds-quotacontrol.md)<br/> |
+| Classes usadas em        | [**ms-DS-Quota-Control**](c-msds-quotacontrol.md)<br/> |
 
 
 

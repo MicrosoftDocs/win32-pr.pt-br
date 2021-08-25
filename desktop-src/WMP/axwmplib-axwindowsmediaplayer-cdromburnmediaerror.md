@@ -1,9 +1,9 @@
 ---
-title: Evento CdromBurnMediaError do objeto AxWindowsMediaPlayer
-description: O evento CdromBurnMediaError ocorre quando um erro ocorre durante a gravação de um item de mídia individual em um CD.
+title: Evento CdromErrorMediaError do objeto AxWindowsMediaPlayer
+description: O evento CdromErrorMediaError ocorre quando ocorre um erro ao gravar um item de mídia individual em um CD.
 ms.assetid: 0847a8a2-1fef-41a0-affb-9fa6bd10b925
 keywords:
-- Evento CdromBurnMediaError do objeto AxWindowsMediaPlayer do Windows Media Player
+- Evento CdromErrorMediaError do objeto AxWindowsMediaPlayer Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9d9fac8902fe8700171d2c909e8140c74c8cc3c8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ba161945edcda7409b842987ab97768c30a6e1f0ba011772cf7f3757d3f61c33
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105789584"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119765259"
 ---
-# <a name="cdromburnmediaerror-event-of-the-axwindowsmediaplayer-object"></a>Evento CdromBurnMediaError do objeto AxWindowsMediaPlayer
+# <a name="cdromburnmediaerror-event-of-the-axwindowsmediaplayer-object"></a>Evento CdromErrorMediaError do objeto AxWindowsMediaPlayer
 
-O evento CdromBurnMediaError ocorre quando um erro ocorre durante a gravação de um item de mídia individual em um CD.
+O evento CdromErrorMediaError ocorre quando ocorre um erro ao gravar um item de mídia individual em um CD.
 
 ``` syntax
 [C#]
@@ -41,14 +41,14 @@ Private Sub player_CdromBurnMediaError(
 
 ## <a name="event-data"></a>Dados de evento
 
-O manipulador associado a esse evento é do tipo **AxWMPLib. \_ WMPOCXEvents \_ CdromBurnMediaErrorEventHandler**. Esse manipulador recebe um argumento do tipo **AxWMPLib. \_ WMPOCXEvents \_ CdromBurnMediaErrorEvent**, que contém as propriedades a seguir relacionadas a esse evento.
+O manipulador associado a esse evento é do tipo **AxWMPLib. \_ WMPOCXEvents \_ CdromErrorMediaErrorEventHandler**. Esse manipulador recebe um argumento do tipo **AxWMPLib. \_ WMPOCXEvents \_ CdromErrorErrorEvent**, que contém as propriedades a seguir relacionadas a esse evento.
 
 
 
 | Propriedade   | Descrição                                                                                                             |
 |------------|-------------------------------------------------------------------------------------------------------------------------|
-| pCdromBurn | A interface WMPLib. IWMPCdromBurnThe que representa a operação de gravação que gerou o erro.<br/>               |
-| pMedia     | O item de mídia System. ObjectThe que gerou o erro. Você pode convertê-lo em uma interface IWMPMedia para acessá-lo.<br/> |
+| pCdrom Ltda | WMPLib.IWMPCdromRomThe interface que representa a operação de gravação que gerou o erro.<br/>               |
+| pMedia     | System.ObjectO item de mídia que gerou o erro. Você pode castiá-lo em uma interface IWMPMedia para acessá-la.<br/> |
 
 
 
@@ -56,7 +56,7 @@ O manipulador associado a esse evento é do tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 
 ## <a name="remarks"></a>Comentários
 
-Para capturar erros genéricos, manipule o AxWMPLib. \_ \_Evento WMPOCXEvents CdromBurnError.
+Para capturar erros genéricos, manipular o AxWMPLib. \_ Evento WMPOCXEvents \_ CdromError.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -77,10 +77,10 @@ Para capturar erros genéricos, manipule o AxWMPLib. \_ \_Evento WMPOCXEvents Cd
 [**Objeto AxWindowsMediaPlayer (VB e C#)**](axwindowsmediaplayer-object--vb-and-c.md)
 </dt> <dt>
 
-[**Evento AxWindowsMediaPlayer. CdromBurnError (VB e C#)**](axwmplib-axwindowsmediaplayer-cdromburnerror.md)
+[**Evento AxWindowsMediaPlayer.CdromError (VB e C#)**](axwmplib-axwindowsmediaplayer-cdromburnerror.md)
 </dt> <dt>
 
-[**Interface IWMPCdromBurn (VB e C#)**](iwmpcdromburn--vb-and-c.md)
+[**Interface IWMPCdrom Ltda (VB e C#)**](iwmpcdromburn--vb-and-c.md)
 </dt> <dt>
 
 [**Interface IWMPMedia (VB e C#)**](iwmpmedia--vb-and-c.md)

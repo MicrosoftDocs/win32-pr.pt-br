@@ -3,7 +3,7 @@ title: Mensagem de RB_INSERTBAND (commctrl. h)
 description: Insere uma nova faixa em um controle rebar.
 ms.assetid: ac621f65-b8ab-41d6-928d-a48fbea572e7
 keywords:
-- Controles de RB_INSERTBAND de mensagens do Windows
+- controles de Windows de mensagem de RB_INSERTBAND
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c39b45eb662fb4c2058b87837352339c84762188
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e0e21020302e4dcbfeb75f4a57d37be4b5c5703668231e8ec8e9dd9bd9577cbb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824850"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119770156"
 ---
 # <a name="rb_insertband-message"></a>\_Mensagem INSERTBAND RB
 
@@ -45,7 +45,7 @@ Ponteiro para uma estrutura [**REBARBANDINFO**](/windows/win32/api/commctrl/ns-c
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará zero se for bem-sucedido ou nenhum outro.
 
@@ -55,9 +55,9 @@ Retornará zero se for bem-sucedido ou nenhum outro.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 | Nomes Unicode e ANSI<br/>   | **RB \_ INSERTBANDW** (Unicode) e **RB \_ INSERTBANDA** (ANSI)<br/>               |
 
 

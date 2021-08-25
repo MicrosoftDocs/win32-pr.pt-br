@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 50b972f3ca61c108f96a4e3115438506e5fec2ce
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 53b603afa6909efea53897788fa554a5ddffa193bea4ad9dc75425e4b3fe3269
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825351"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119803646"
 ---
 # <a name="ms-ds-pso-applies-to-attribute"></a>ms-DS-PSO-atributo-aplica-se a
 
@@ -63,7 +63,7 @@ Links para objetos aos quais este objeto de configurações de senha se aplica.
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Classes usadas em        | [**ms-DS-password-Settings**](c-msds-passwordsettings.md)<br/> |
+| Classes usadas em        | [**ms-DS-Password-Configurações**](c-msds-passwordsettings.md)<br/> |
 
 
 
@@ -84,7 +84,7 @@ Links para objetos aos quais este objeto de configurações de senha se aplica.
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Classes usadas em        | [**ms-DS-password-Settings**](c-msds-passwordsettings.md)<br/> |
+| Classes usadas em        | [**ms-DS-Password-Configurações**](c-msds-passwordsettings.md)<br/> |
 
 
 
@@ -105,7 +105,7 @@ Links para objetos aos quais este objeto de configurações de senha se aplica.
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Classes usadas em        | [**ms-DS-password-Settings**](c-msds-passwordsettings.md)<br/> |
+| Classes usadas em        | [**ms-DS-Password-Configurações**](c-msds-passwordsettings.md)<br/> |
 
 
 

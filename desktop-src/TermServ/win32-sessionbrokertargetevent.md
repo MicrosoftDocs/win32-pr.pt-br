@@ -1,11 +1,11 @@
 ---
-title: Classe Win32_SessionBrokerTargetEvent
-description: Representa uma alteração em um destino de agente de sessão.
+title: Win32_SessionBrokerTargetEvent classe
+description: Representa uma alteração em um destino do agente de sessão.
 ms.assetid: ee3ae0ed-eb8b-4777-9b9e-0e50722cf52a
 ms.tgt_platform: multiple
 keywords:
-- Classe de Win32_SessionBrokerTargetEvent Serviços de Área de Trabalho Remota
-- Serviços de Área de Trabalho Remota de Win32_SessionBrokerTargetEvent classe, descrita
+- Win32_SessionBrokerTargetEvent classe Serviços de Área de Trabalho Remota
+- Win32_SessionBrokerTargetEvent classe Serviços de Área de Trabalho Remota , descrito
 topic_type:
 - apiref
 api_name:
@@ -24,16 +24,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d7f1cf6aab1c4497ce85cb93318c9ca79368853
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 92fcd6cb93e3ac7abaa5fef33e1557008eb29b46940fae6d5165809d9252fa16
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644450"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119769966"
 ---
-# <a name="win32_sessionbrokertargetevent-class"></a>\_Classe Win32 SessionBrokerTargetEvent
+# <a name="win32_sessionbrokertargetevent-class"></a>Classe \_ SessionBrokerTargetEvent do Win32
 
-Representa uma alteração em um destino de agente de sessão.
+Representa uma alteração em um destino do agente de sessão.
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas.
 
@@ -56,33 +56,33 @@ class Win32_SessionBrokerTargetEvent : __ExtrinsicEvent
 
 ## <a name="members"></a>Membros
 
-A classe **Win32 \_ SessionBrokerTargetEvent** tem estes tipos de membros:
+A **classe \_ SessionBrokerTargetEvent do Win32** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Win32 \_ SessionBrokerTargetEvent** tem essas propriedades.
+A **classe \_ SessionBrokerTargetEvent do Win32** tem essas propriedades.
 
 <dl> <dt>
 
-**ChangeType**
+**Changetype**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Especifica a alteração que ocorreu. Isso pode ser um dos valores a seguir.
+Especifica a alteração que ocorreu. Esse pode ser um dos valores a seguir.
 
 <dt>
 
 1 (0x1)
 </dt> <dd>
 
-O tipo de alteração não foi especificado.
+O tipo de alteração não é especificado.
 
 </dd> <dt>
 
@@ -103,7 +103,7 @@ O endereço IP interno foi alterado.
 8 (0x8)
 </dt> <dd>
 
-O destino foi Unido.
+O destino foi unido.
 
 </dd> <dt>
 
@@ -139,13 +139,13 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O nome do ambiente. No caso de um destino de máquina virtual (VM), esse pode ser o nome do host da VM.
+O nome do ambiente. No caso de um destino de VM (máquina virtual), esse pode ser o nome do host da VM.
 
-**Windows Server 2008 R2:** Esta propriedade não está disponível antes do Windows Server 2012
+**Windows Server 2008 R2:** Essa propriedade não está disponível antes Windows Server 2012
 
 </dd> <dt>
 
-**Farmname**
+**FarmName**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -154,13 +154,13 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O nome do farm ao qual o destino pertence.
+O nome do farm ao que o destino pertence.
 
-**Windows Server 2008 R2:** Esta propriedade não está disponível antes do Windows Server 2012
+**Windows Server 2008 R2:** Essa propriedade não está disponível antes Windows Server 2012
 
 </dd> <dt>
 
-**Volume**
+**Guid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -171,7 +171,7 @@ Tipo de acesso: Somente leitura
 
 O GUID do destino.
 
-**Windows Server 2008 R2:** Esta propriedade não está disponível antes do Windows Server 2012
+**Windows Server 2008 R2:** Essa propriedade não está disponível antes Windows Server 2012
 
 </dd> <dt>
 
@@ -186,24 +186,24 @@ Tipo de acesso: Somente leitura
 
 O nome do plug-in.
 
-**Windows Server 2008 R2:** Esta propriedade não está disponível antes do Windows Server 2012
+**Windows Server 2008 R2:** Essa propriedade não está disponível antes Windows Server 2012
 
 </dd> <dt>
 
-**\_descritor de segurança**
+**DESCRITOR \_ DE SEGURANÇA**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz **uint8**
+Tipo de dados: **matriz uint8**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Descritor usado pelo provedor de eventos para determinar quais usuários podem receber o evento. Esta propriedade é herdada do [**\_ \_ evento**](/windows/desktop/WmiSdk/--event). Para obter mais informações sobre constantes usadas para definir esse descritor de segurança, consulte [constantes de segurança do WMI](/windows/desktop/WmiSdk/wmi-security-constants).
+Descritor usado pelo provedor de eventos para determinar quais usuários podem receber o evento. Essa propriedade é herdada do [**\_ \_ Evento**](/windows/desktop/WmiSdk/--event). Para obter mais informações sobre constantes usadas para definir esse descritor de segurança, consulte [Constantes de segurança WMI](/windows/desktop/WmiSdk/wmi-security-constants).
 
 </dd> <dt>
 
-**TargetName**
+**Targetname**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -214,22 +214,22 @@ Tipo de acesso: Somente leitura
 
 O nome do destino.
 
-**Windows Server 2008 R2:** Esta propriedade não está disponível antes do Windows Server 2012
+**Windows Server 2008 R2:** Essa propriedade não está disponível antes Windows Server 2012
 
 </dd> <dt>
 
-**HORA da \_ criação**
+**TEMPO \_ CRIADO**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Valor exclusivo que indica a hora em que o evento foi gerado. Este é um valor de 64 bits que representa o número de intervalos de 100 nanossegundos após 1º de janeiro de 1601. As informações estão no formato UTC (tempo Universal Coordenado). Esta propriedade é herdada do [**\_ \_ evento**](/windows/desktop/WmiSdk/--event).
+Valor exclusivo que indica a hora em que o evento foi gerado. Esse é um valor de 64 bits que representa o número de intervalos de 100 nanossegundos após 1º de janeiro de 1601. As informações estão no formato UTC (Tempos Universais Coordenados). Essa propriedade é herdada do [**\_ \_ Evento**](/windows/desktop/WmiSdk/--event).
 
-Para obter mais informações sobre como usar valores de **UInt64** em scripts, consulte [scripts no WMI](/previous-versions//aa393262(v=vs.85)).
+Para obter mais informações sobre como **usar valores uint64** em scripts, consulte [Scripts no WMI](/previous-versions//aa393262(v=vs.85)).
 
 </dd> </dl>
 
@@ -241,8 +241,8 @@ Para obter mais informações sobre como usar valores de **UInt64** em scripts, 
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                              |
 | Servidor mínimo com suporte<br/> | Windows Server 2008 R2<br/>                                                      |
-| Namespace<br/>                | \\TerminalServices da CIMv2 raiz \\<br/>                                               |
-| MOF<br/>                      | <dl> <dt>TssdWmi. mof</dt> </dl> |
+| Namespace<br/>                | \\CiMv2 \\ TerminalServices raiz<br/>                                               |
+| MOF<br/>                      | <dl> <dt>TssdWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TssdWmi.dll</dt> </dl> |
 
 

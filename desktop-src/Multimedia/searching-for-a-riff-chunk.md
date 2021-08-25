@@ -1,29 +1,29 @@
 ---
-title: Pesquisando uma parte do RIFF
-description: Pesquisando uma parte do RIFF
+title: Pesquisando uma parte DE HASH
+description: Pesquisando uma parte DE HASH
 ms.assetid: ce974fb3-3af0-4400-8f55-65d63627592a
 keywords:
-- e/s de arquivo multimídia, pesquisando a parte do RIFF
-- e/s de arquivo, pesquisando a parte do RIFF
-- entrada e saída (e/s), pesquisando a parte do RIFF
-- E/s (entrada e saída), pesquisando a parte do RIFF
-- pesquisando a parte do RIFF
-- formato de arquivo de intercâmbio de recursos (RIFF)
-- RIFF (formato de arquivo de intercâmbio de recursos)
-- E/S DO RIFF
-- Parte do RIFF
+- E/S de arquivo multimídia, pesquisando a parte DEIS
+- E/S de arquivo, pesquisando a parte DEIS
+- entrada e saída (E/S), pesquisando por parte de HASH
+- E/S (entrada e saída), pesquisando por parte de HASH
+- pesquisando a parte DEIS
+- formato de arquivo de intercâmbio de recursos (PDF)
+- CHANG (formato de arquivo de intercâmbio de recursos)
+- E/S DO BLUES
+- Parte DE HASH
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b45b2182e44ac84423c29a79fe29e96820d5bf2
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: acbb09c7777cf675ceb0f11ae84fb50a3b9deaa73910ca9e15280c3fb88c42cd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104366018"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119782086"
 ---
-# <a name="searching-for-a-riff-chunk"></a>Pesquisando uma parte do RIFF
+# <a name="searching-for-a-riff-chunk"></a>Pesquisando uma parte DE HASH
 
-O exemplo a seguir usa a função [**mmioDescend**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmiodescend) para pesquisar uma parte "riff" com um tipo de formulário de "onda" para verificar se o arquivo que acabou de ser aberto é um arquivo de forma de onda.
+O exemplo a seguir usa a [**função mmioDescend**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmiodescend) para pesquisar uma parte "DIGIT" com um tipo de formulário "WAVE" para verificar se o arquivo que acabou de ser aberto é um arquivo waveform-audio.
 
 
 ```C++
@@ -46,6 +46,6 @@ else
 
 
 
- 
+ 
 
- 
+ 

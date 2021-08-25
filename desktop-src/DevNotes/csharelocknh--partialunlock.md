@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Rwnh.dll
-ms.openlocfilehash: 930c0f51e199c1668a70f2dd017b0280939b0710
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7b06285cf03315296a78cda000d281ba674ae6778c6d11102aac463546befd87
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752172"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119691676"
 ---
 # <a name="csharelocknhpartialunlock-method"></a>CShareLockNH: método artialUnlock de:P
 
@@ -37,7 +37,7 @@ void PartialUnlock();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 

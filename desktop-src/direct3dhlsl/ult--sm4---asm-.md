@@ -4,12 +4,12 @@ description: Comparação de inteiros não assinados de vetor sem sinal de compo
 ms.assetid: DB10F654-4A98-4ED8-A3B4-CA9FE1DFE6CD
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 624c09d182e9ecfd4d1b603f6fd2c34b83d768ed
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: a92fca937a083d4dc454b19549710790e186fc4b57a8ea7aa4a904fc85fb5378
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104988571"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119742346"
 ---
 # <a name="ult-sm4---asm"></a>ultados (sm4-ASM)
 

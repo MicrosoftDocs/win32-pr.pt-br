@@ -8,16 +8,16 @@ keywords:
 - Funções strsafe
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f9b993ccff6d085f3b1eb14c1920c4c633661df
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: fb5d50a6921e2775c64fd4db53393332c667aba975ffa366fb2eb49881b6beaf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105810882"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119720586"
 ---
 # <a name="about-strsafeh"></a>Sobre o strsafe. h
 
-A manipulação de buffer insatisfatório é incomplicada em muitos problemas de segurança que envolvem saturações de buffer. As funções definidas em strsafe. h fornecem processamento adicional para a manipulação de buffer adequada em seu código. Por esse motivo, eles devem substituir suas contrapartes C/C++ internas, bem como implementações específicas do Windows. O strsafe. h está disponível na SDK do Windows a partir do Windows XP com Service Pack 2 (SP2).
+A manipulação de buffer insatisfatório é incomplicada em muitos problemas de segurança que envolvem saturações de buffer. As funções definidas em strsafe. h fornecem processamento adicional para a manipulação de buffer adequada em seu código. por esse motivo, eles destinam-se a substituir suas contrapartes C/C++ internas, bem como implementações Windows específicas. o Strsafe. h está disponível na SDK do Windows a partir do Windows XP com Service Pack 2 (SP2).
 
 As vantagens das funções strsafe incluem:
 
@@ -57,7 +57,7 @@ As funções a seguir usam uma contagem de caracteres, em vez de uma contagem de
 
 
 
- 
+ 
 
 ## <a name="byte-count-functions"></a>Funções de contagem de bytes
 
@@ -78,7 +78,7 @@ As funções a seguir usam uma contagem de bytes em vez de uma contagem de carac
 
 
 
- 
+ 
 
 ## <a name="using-strsafeh"></a>Usando strsafe. h
 
@@ -93,7 +93,7 @@ As funções a seguir usam uma contagem de bytes em vez de uma contagem de carac
     > [!Note]  
     > : As funções a seguir devem ser usadas como funções embutidas: [**StringCbGets**](/windows/desktop/api/Strsafe/nf-strsafe-stringcbgetsa), [**StringCbGetsEx**](/windows/desktop/api/Strsafe/nf-strsafe-stringcbgetsexa), [**StringCchGets**](/windows/desktop/api/Strsafe/nf-strsafe-stringcchgetsa)e [**StringCchGetsEx**](/windows/desktop/api/Strsafe/nf-strsafe-stringcchgetsexa).
 
-     
+     
 
 -   Quando você incluir strsafe. h em seu arquivo, as funções mais antigas substituídas pelas funções strsafe. h serão preteridas. As tentativas de usar essas funções mais antigas resultarão em um erro de compilador informando que você deve usar as funções mais recentes. Se você quiser substituir esse comportamento, inclua a seguinte instrução antes de incluir strsafe. h.
 
@@ -110,7 +110,7 @@ As funções a seguir usam uma contagem de bytes em vez de uma contagem de carac
     > [!Note]  
     > Você pode definir **STRSAFE \_ nenhuma \_ \_ função CB** ou **STRSAFE \_ nenhuma \_ \_ função cch**, mas não ambos.
 
-     
+     
 
 -   Algumas funções do strsafe têm versões com reconhecimento de localidade. Por padrão, o cabeçalho não declara essas funções. Para habilitar essas declarações, inclua a seguinte instrução de macro antes de incluir strsafe. h.
 
@@ -125,6 +125,6 @@ As funções a seguir usam uma contagem de bytes em vez de uma contagem de carac
 [Funções strsafe](string-overviews.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

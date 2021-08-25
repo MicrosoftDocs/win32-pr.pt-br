@@ -1,11 +1,11 @@
 ---
-title: Método Modify da classe MicrosoftDNS_RTType
-description: O método Modify atualiza um registro de recurso de rota a (RT).
+title: Modificar o método da MicrosoftDNS_RTType classe
+description: O método Modify atualiza um Registro de Recurso de Rota por (RT).
 ms.assetid: 80053ae6-8ce8-4aa1-be2b-aac9daa5dae3
 keywords:
 - Modificar o método DNS
 - Modificar o método DNS, MicrosoftDNS_RTType classe
-- MicrosoftDNS_RTType classe de DNS, método Modify
+- MicrosoftDNS_RTType classe DNS, método Modify
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8267bf1dc256ec95a456978643226ab5c01af93f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2003f8e2840a2684f91a7a01b0341e2e8dcdf0ca88b6bf31fcf58b3a3c6f79bb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499428"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119692396"
 ---
-# <a name="modify-method-of-the-microsoftdns_rttype-class"></a>Método Modify da classe MicrosoftDNS \_ RTType
+# <a name="modify-method-of-the-microsoftdns_rttype-class"></a>Modificar método da classe RTType do MicrosoftDNS \_
 
-O método **Modify** atualiza um registro de recurso de rota a (RT).
+O **método Modify** atualiza um Registro de Recurso de Rota por (RT).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,41 +45,41 @@ void Modify(
 
 <dl> <dt>
 
-*TTL* \[ em, opcional\]
+*TTL* \[ in, opcional\]
 </dt> <dd>
 
-Tempo, em segundos, que o RR pode ser armazenado em cache por um resolvedor de DNS.
+Tempo, em segundos, em que o RR pode ser armazenado em cache por um resolvedor de DNS.
 
 </dd> <dt>
 
-*Preferência* \[ em, opcional\]
+*Preferência* \[ in, opcional\]
 </dt> <dd>
 
-Preferência dada a esse RR entre outros no mesmo proprietário. Os valores mais baixos são preferenciais.
+Preferência dada a esse RR entre outros no mesmo proprietário. Valores inferiores são preferenciais.
 
 </dd> <dt>
 
-*IntermediateHost* \[ em, opcional\]
+*IntermediateHost* \[ in, opcional\]
 </dt> <dd>
 
-FQDN que especifica um host para servir como intermediário para atingir o host especificado pelo proprietário.
+FQDN especificando um host para servir como intermediário para alcançar o host especificado pelo proprietário.
 
 </dd> <dt>
 
 *RR* \[ out, ref\]
 </dt> <dd>
 
-Referência ao novo objeto.
+Referência ao novo objeto .
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Qualquer parâmetro não especificado permanece inalterado no registro modificado.
+Qualquer parâmetro não especificado é deixado inalterado no registro modificado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -90,7 +90,7 @@ Qualquer parâmetro não especificado permanece inalterado no registro modificad
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                   |
 | Namespace<br/>                | \\MicrosoftDNS raiz<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -101,7 +101,7 @@ Qualquer parâmetro não especificado permanece inalterado no registro modificad
 [**MicrosoftDNS \_ RTType**](microsoftdns-rttype.md)
 </dt> <dt>
 
-[**Método CreateInstanceFromPropertyData da \_ classe RTType MicrosoftDNS**](microsoftdns-rttype-createinstancefrompropertydata.md)
+[**Método CreateInstanceFromPropertyData da classe RTType do MicrosoftDNS \_**](microsoftdns-rttype-createinstancefrompropertydata.md)
 </dt> <dt>
 
 [**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)
