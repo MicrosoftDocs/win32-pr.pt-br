@@ -4,12 +4,12 @@ ms.assetid: 375823c5-22c2-4010-bfb4-5b8b46141c72
 title: Mensagem de LINE_GENERATE (TAPI. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b916dc95d1a6343b0f8ebc0eef9e589b04aa2112
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bd3ab0d503d7515fec2cdbd1676eed235cced88e2adfa9fcc1dd354663929e95
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105757963"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119774236"
 ---
 # <a name="line_generate-message"></a>Mensagem de geração de linha \_
 
@@ -57,11 +57,11 @@ Não utilizado.
 *dwParam3* 
 </dt> <dd>
 
-A "contagem de tiques" (número de milissegundos desde o início do Windows) em que a geração de dígitos ou tons foi concluída. Para versões de API anteriores a 2,0, esse parâmetro não é usado.
+a "contagem de tiques" (número de milissegundos desde Windows iniciado) em que a geração de dígitos ou tons foi concluída. Para versões de API anteriores a 2,0, esse parâmetro não é usado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sem valor de retorno.
 
@@ -80,7 +80,7 @@ Se o provedor de serviços não gerar o carimbo de data/hora (por exemplo, se el
 | Requisito | Valor |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versão da TAPI<br/> | Requer TAPI 2,0 ou posterior<br/>                                             |
-| parâmetro<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Cabeçalho<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
 
 
 

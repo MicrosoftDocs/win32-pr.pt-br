@@ -7,16 +7,16 @@ keywords:
 - Gerenciamento de hardware remoto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 68bbb470d513b49d2158865c4c42051cc16856ed
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: db94c1f50b05f5180504ecef68bf10b1a5a596c9a9f88b96e7c5efb9faaa89bc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641123"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119858726"
 ---
 # <a name="remote-hardware-management"></a>Gerenciamento de hardware remoto
 
-Gerenciamento Remoto do Windows o gerenciamento de hardware destina-se a reduzir os custos gerais de administração de ti, fornecendo monitoramento e controle de componentes de hardware remotos, especialmente antes de o sistema ser iniciado e após uma falha do sistema operacional.
+Windows O gerenciamento remoto de hardware é destinado a reduzir os custos gerais de administração de ti, fornecendo monitoramento e controle de componentes de hardware remotos, especialmente antes de o sistema ser iniciado e após uma falha do sistema operacional.
 
 Os OEMs (fabricantes originais de equipamento) desenvolveram uma arquitetura comum para atender à necessidade de gerenciamento de hardware. Uma parte importante dessa arquitetura é o [*Baseboard Management Controller*](windows-remote-management-glossary.md) (BMC). Um BMC é um dispositivo especializado que monitora o estado do computador do servidor. O BMC fornece controle remoto de hardware de servidor, recupera dados de status e recebe notificações sobre erros críticos e outras alterações de status de hardware. Um script ou aplicativo que está monitorando um servidor remoto pode obter dados do servidor [*em banda*](windows-remote-management-glossary.md), por meio do sistema operacional remoto, ou [*fora de banda*](windows-remote-management-glossary.md), diretamente do BMC.
 
@@ -33,9 +33,9 @@ O BMC também tem um banco de dados de eventos chamado de SEL (log de eventos do
 [Protocolo WS-Management](ws-management-protocol.md)
 </dt> <dt>
 
-[Sobre Gerenciamento Remoto do Windows](about-windows-remote-management.md)
+[sobre Gerenciamento Remoto do Windows](about-windows-remote-management.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

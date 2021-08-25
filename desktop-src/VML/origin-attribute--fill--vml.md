@@ -1,26 +1,26 @@
 ---
-title: Atributo de origem (preenchimento) (VML)
-description: Atributo de origem (preenchimento) (VML)
+title: Atributo De origem (Preenchimento)(VML)
+description: Atributo De origem (Preenchimento)(VML)
 ms.assetid: 7ebb70eb-e8f2-4749-88fd-935562da0b74
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bb1d26f5e544ffa19b347ceec1549885c1ff6b90
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: fc33ae1f4cf7c588ae9b3f40ff8c445be88192bae1dfc86a3593eea931befb25
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366666"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119959216"
 ---
-# <a name="origin-attribute-fillvml"></a>Atributo de origem (preenchimento) (VML)
+# <a name="origin-attribute-fillvml"></a>Atributo De origem (Preenchimento)(VML)
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Define o centro de uma imagem de preenchimento. Leitura/gravação. [VgVector2D](msdn-online-vml-ivgvector2d-data-type.md) .
+Define o centro de uma imagem de preenchimento. Leitura/gravação. [VgVector2D.](msdn-online-vml-ivgvector2d-data-type.md)
 
 **Aplica-se a**
 
@@ -28,23 +28,23 @@ Define o centro de uma imagem de preenchimento. Leitura/gravação. [VgVector2D]
 
 **Sintaxe de marca**
 
-<v: *elemento* Origin = " *expressão* " >
+<v: *element* origin=" *expressão* ">
 
 **Sintaxe do script**
 
-*elemento* . Origin = "*expressão*"
+*element* .origin="*expression*"
 
-*expressão* = de *elemento*. Origin
+*expressão* = *elemento*.origin
 
 **Comentários**
 
-Especifica um ponto relativo ao canto superior esquerdo da imagem; esse ponto é tratado como a origem da imagem. O padrão é o centro da imagem. O vetor é uma fração da largura e da altura da imagem.
+Especifica um ponto relativo ao canto superior esquerdo da imagem; esse ponto é tratado como a origem da imagem. O padrão é o centro da imagem. O vetor é uma fração da largura e altura da imagem.
 
-*Atributo padrão da VML*
+*Atributo padrão VML*
 
 **Exemplo**
 
-A imagem do preenchimento é deslocada para a esquerda para um ponto de 50% da largura da forma.
+A imagem do preenchimento é deslocada para a esquerda para um ponto de 50% da largura da forma .
 
 
 ```HTML
@@ -59,6 +59,6 @@ A imagem do preenchimento é deslocada para a esquerda para um ponto de 50% da l
 
 
 
- 
+ 
 
- 
+ 

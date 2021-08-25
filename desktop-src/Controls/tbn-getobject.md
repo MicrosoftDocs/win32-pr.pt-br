@@ -3,7 +3,7 @@ title: TBN_GETOBJECT código de notificação (commctrl. h)
 description: Enviado por um controle ToolBar que usa o \_ estilo TBSTYLE REGISTERDROP para solicitar um objeto de destino drop quando o ponteiro passa sobre um de seus botões. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
 ms.assetid: 9fd8516d-fe2e-4f84-9035-e2246aba369a
 keywords:
-- TBN_GETOBJECT de código de notificação controles do Windows
+- TBN_GETOBJECT código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ed144245e351ca4e872128e68fe658bde7c0066
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c50f3d403089ca7db42ab89232e57d68121424c066914c534ba13a826adb8ea3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085153"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119876726"
 ---
 # <a name="tbn_getobject-notification-code"></a>\_Código de notificação GETobject do tbn
 
@@ -45,7 +45,7 @@ Ponteiro para uma estrutura [**NMOBJECTNOTIFY**](/windows/win32/api/commctrl/ns-
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O aplicativo que processa esse código de notificação deve retornar zero.
 
@@ -61,9 +61,9 @@ Se um aplicativo não fornecer um objeto, ele deverá definir **pObject** como *
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

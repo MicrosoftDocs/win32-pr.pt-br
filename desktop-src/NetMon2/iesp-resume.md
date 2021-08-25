@@ -1,7 +1,7 @@
 ---
-description: 'Método IESP:: resume-o método retomar reinicia uma captura pausada.'
+description: Método I LTD::Resume – o método Resume reinicia uma captura em pausa.
 ms.assetid: 047ea5f8-de3d-40db-ada3-fc0ef4deccef
-title: 'Método IESP:: resume (Netmon. h)'
+title: Método I LTD::Resume (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 498beda4f2f6c61af918d542542c4ed7b789ba1a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: dd39cb83c90c566f0022679e70680e916daeb2a43a4d62e993e096930ee2f14e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108084244"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119890466"
 ---
-# <a name="iespresume-method"></a>Método IESP:: resume
+# <a name="iespresume-method"></a>Método I LTD::Resume
 
-O método **retomar** reinicia uma captura pausada.
+O **método Resume** reinicia uma captura em pausa.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,7 +40,7 @@ Esse método não tem parâmetros.
 
 ## <a name="return-value"></a>Valor retornado
 
-Se o método for bem-sucedido, o valor de retorno será NMERR com \_ êxito.
+Se o método for bem-sucedido, o valor de retorno será NMERR \_ SUCCESS.
 
 Se o método não for bem-sucedido, o valor de retorno será um dos seguintes códigos de erro:
 
@@ -48,9 +48,9 @@ Se o método não for bem-sucedido, o valor de retorno será um dos seguintes c�
 
 | Código de retorno                                                                                                | Descrição                                                                                                               |
 |------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**captura de NMERR \_ \_ não \_ pausada**</dt> </dl> | A captura não está em pausa. Chame [**IESP::P ause**](iesp-pause.md) para pausar a captura.<br/>                        |
-| <dl> <dt>**NMERR \_ não \_ conectado**</dt> </dl>       | O NPP não está conectado à rede. Chame [**IESP:: Connect**](iesp-connect.md) para conectar-se à rede.<br/> |
-| <dl> <dt>**NMERR \_ não \_ ESP**</dt> </dl>             | O NPP está conectado à rede, mas não com o método [**IESP:: Connect**](iesp-connect.md) .<br/>            |
+| <dl> <dt>**CAPTURA NMERR \_ \_ NÃO \_ PAUSADA**</dt> </dl> | A captura não está em pausa. Chame [**I LTD::P ause para**](iesp-pause.md) pausar a captura.<br/>                        |
+| <dl> <dt>**NMERR \_ NÃO \_ CONECTADO**</dt> </dl>       | O NPP não está conectado à rede. Chame [**I LTD::Conexão**](iesp-connect.md) para se conectar à rede.<br/> |
+| <dl> <dt>**NMERR \_ NOT \_ ESP**</dt> </dl>             | O NPP está conectado à rede, mas não ao [**método I LTD::Conexão.**](iesp-connect.md)<br/>            |
 
 
 
@@ -58,11 +58,11 @@ Se o método não for bem-sucedido, o valor de retorno será um dos seguintes c�
 
 ## <a name="remarks"></a>Comentários
 
-Enquanto a captura está em um estado de pausa, novos dados não são adicionados ao arquivo de [*captura*](c.md) atual até que **IESP:: resume** seja chamado para reiniciar a captura. Quando **Pause** e **resume** são usados para parar e reiniciar a captura, todas as informações capturadas são colocadas no mesmo arquivo de captura.
+Enquanto a captura estiver em um estado de pausa, [](c.md) novos dados não serão adicionados ao arquivo de captura atual até que **I REBOOT::Resume** seja chamado para reiniciar a captura. Quando **Pausar** **e Retomar** são usados para parar e reiniciar a captura, todas as informações capturadas são colocadas no mesmo arquivo de captura.
 
-Ao usar **Pause** e **resume** para controlar a captura, monitor de rede continua a adicionar [*Estatísticas de conversa*](c.md) às estatísticas existentes para a captura atual.
+Ao usar **Pausar** **e Retomar** para controlar a [](c.md) captura, Monitor de Rede continua adicionando estatísticas de conversa às estatísticas existentes para a captura atual.
 
-Para interromper a captura, chame [**IESP:: Stop**](iesp-stop.md).
+Para interromper a captura, chame [**I LTD::Stop**](iesp-stop.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -72,25 +72,25 @@ Para interromper a captura, chame [**IESP:: Stop**](iesp-stop.md).
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                                                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>Netmon. h</dt> </dl>                                                                      |
+| Cabeçalho<br/>                   | <dl> <dt>Netmon.h</dt> </dl>                                                                      |
 | DLL<br/>                      | <dl> <dt>Ndisnpp.dll; </dt> <dt>Rmtnpp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[IESP](iesp.md)
+[I LTDA](iesp.md)
 </dt> <dt>
 
-[**IESP:: conectar**](iesp-connect.md)
+[**I LTD::Conexão**](iesp-connect.md)
 </dt> <dt>
 
-[**IESP::P ause**](iesp-pause.md)
+[**I LTD::P ause**](iesp-pause.md)
 </dt> <dt>
 
-[**IESP:: Stop**](iesp-stop.md)
+[**IRIA::Stop**](iesp-stop.md)
 </dt> </dl>
 
  

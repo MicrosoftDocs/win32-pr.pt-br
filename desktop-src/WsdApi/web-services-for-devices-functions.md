@@ -1,23 +1,23 @@
 ---
-description: 'A interface de programação de serviços Web em dispositivos define e usa as seguintes funções:'
+description: 'A interface de programação Serviços Web em Dispositivos define e usa as seguintes funções:'
 ms.assetid: d45c714a-4ac4-4a62-92a6-9460a2fffe6e
-title: Serviços Web em funções de dispositivos
+title: Funções de Serviços Web em Dispositivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4eee9388d834d793087b3fecf0b67c901edcbe1e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f4dff9fde0413f10bbb15079fdb945558da73a26a141985003e33caf7e0644bf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104505911"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119856056"
 ---
-# <a name="web-services-on-devices-functions"></a>Serviços Web em funções de dispositivos
+# <a name="web-services-on-devices-functions"></a>Funções de Serviços Web em Dispositivos
 
-A interface de programação de serviços Web em dispositivos define e usa as seguintes funções:
+A interface de programação Serviços Web em Dispositivos define e usa as seguintes funções:
 
--   [**\_manipulador de \_ mensagens \_ SOAP PWSD**](/windows/win32/api/wsdtypes/nc-wsdtypes-pwsd_soap_message_handler)
--   [**\_função de stub WSD \_**](/windows/win32/api/wsdtypes/nc-wsdtypes-wsd_stub_function)
--   [**WSDAllocateLinkedMemory**](/windows/desktop/api/WsdUtil/nf-wsdutil-wsdallocatelinkedmemory)
+-   [**MANIPULADOR DE MENSAGENS SOAP PWSD \_ \_ \_**](/windows/win32/api/wsdtypes/nc-wsdtypes-pwsd_soap_message_handler)
+-   [**FUNÇÃO \_ STUB do WSD \_**](/windows/win32/api/wsdtypes/nc-wsdtypes-wsd_stub_function)
+-   [**Wsdallocatelinkedmemory**](/windows/desktop/api/WsdUtil/nf-wsdutil-wsdallocatelinkedmemory)
 -   [**WSDAttachLinkedMemory**](/windows/desktop/api/WsdUtil/nf-wsdutil-wsdattachlinkedmemory)
 -   [**WSDCreateDeviceHost**](/windows/desktop/api/WsdHost/nf-wsdhost-wsdcreatedevicehost)
 -   [**WSDCreateDeviceHostAdvanced**](/windows/desktop/api/WsdHost/nf-wsdhost-wsdcreatedevicehostadvanced)
@@ -33,7 +33,7 @@ A interface de programação de serviços Web em dispositivos define e usa as se
 -   [**WSDCreateUdpAddress**](/windows/desktop/api/Wsdbase/nf-wsdbase-wsdcreateudpaddress)
 -   [**WSDCreateUdpMessageParameters**](/windows/desktop/api/Wsdbase/nf-wsdbase-wsdcreateudpmessageparameters)
 -   [**WSDDetachLinkedMemory**](/windows/desktop/api/WsdUtil/nf-wsdutil-wsddetachlinkedmemory)
--   [**WSDFreeLinkedMemory**](/windows/desktop/api/WsdUtil/nf-wsdutil-wsdfreelinkedmemory)
+-   [**Wsdfreelinkedmemory**](/windows/desktop/api/WsdUtil/nf-wsdutil-wsdfreelinkedmemory)
 -   [**WSDGenerateFault**](/windows/desktop/api/WsdUtil/nf-wsdutil-wsdgeneratefault)
 -   [**WSDGenerateFaultEx**](/windows/desktop/api/WsdUtil/nf-wsdutil-wsdgeneratefaultex)
 -   [**WSDGetConfigurationOption**](/windows/desktop/api/WsdUtil/nf-wsdutil-wsdgetconfigurationoption)

@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 63e31cb241cde4deb40d5978594b4354fbcc564b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 1df1ab9721643edec3e03e91475c74e63dde94dcb982e0a84aad3cdf7c63b806
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086691"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119925846"
 ---
 # <a name="force-logoff-attribute"></a>Force-Logoff atributo
 
@@ -58,7 +58,7 @@ Usado na computação do tempo de lançamento no SamIGetAccountRestrictions. Tem
 | ID do link                | \-                                                                                                       |
 | MAPI-Id                | \-                                                                                                       |
 | System-Only            | Falso                                                                                                    |
-| É de valor único       | True                                                                                                     |
+| É de valor único       | Verdadeiro                                                                                                     |
 | É indexado             | Falso                                                                                                    |
 | No catálogo global      | Falso                                                                                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                             |
@@ -79,7 +79,7 @@ Usado na computação do tempo de lançamento no SamIGetAccountRestrictions. Tem
 | ID do link                | \-                                                                                                       |
 | MAPI-Id                | \-                                                                                                       |
 | System-Only            | Falso                                                                                                    |
-| É de valor único       | True                                                                                                     |
+| É de valor único       | Verdadeiro                                                                                                     |
 | É indexado             | Falso                                                                                                    |
 | No catálogo global      | Falso                                                                                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                             |
@@ -100,7 +100,7 @@ Usado na computação do tempo de lançamento no SamIGetAccountRestrictions. Tem
 | ID do link                | \-                                                                                                       |
 | MAPI-Id                | \-                                                                                                       |
 | System-Only            | Falso                                                                                                    |
-| É de valor único       | True                                                                                                     |
+| É de valor único       | Verdadeiro                                                                                                     |
 | É indexado             | Falso                                                                                                    |
 | No catálogo global      | Falso                                                                                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                             |
@@ -121,7 +121,7 @@ Usado na computação do tempo de lançamento no SamIGetAccountRestrictions. Tem
 | ID do link                | \-                                                                                                       |
 | MAPI-Id                | \-                                                                                                       |
 | System-Only            | Falso                                                                                                    |
-| É de valor único       | True                                                                                                     |
+| É de valor único       | Verdadeiro                                                                                                     |
 | É indexado             | Falso                                                                                                    |
 | No catálogo global      | Falso                                                                                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                             |
@@ -142,7 +142,7 @@ Usado na computação do tempo de lançamento no SamIGetAccountRestrictions. Tem
 | ID do link                | \-                                                                                                       |
 | MAPI-Id                | \-                                                                                                       |
 | System-Only            | Falso                                                                                                    |
-| É de valor único       | True                                                                                                     |
+| É de valor único       | Verdadeiro                                                                                                     |
 | É indexado             | Falso                                                                                                    |
 | No catálogo global      | Falso                                                                                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                             |
@@ -163,7 +163,7 @@ Usado na computação do tempo de lançamento no SamIGetAccountRestrictions. Tem
 | ID do link                | \-                                                                                                       |
 | MAPI-Id                | \-                                                                                                       |
 | System-Only            | Falso                                                                                                    |
-| É de valor único       | True                                                                                                     |
+| É de valor único       | Verdadeiro                                                                                                     |
 | É indexado             | Falso                                                                                                    |
 | No catálogo global      | Falso                                                                                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                             |

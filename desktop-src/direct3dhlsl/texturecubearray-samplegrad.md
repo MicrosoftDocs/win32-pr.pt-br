@@ -1,6 +1,6 @@
 ---
-title: 'Métodos TextureCubeArray:: TextureCubeArray SampleGrad'
-description: 'Amostra uma textura usando um gradiente para influenciar a maneira como o local de exemplo é calculado. | Métodos TextureCubeArray:: TextureCubeArray SampleGrad'
+title: Métodos TextureCubeArray::TextureCubeArray SampleGrad
+description: Amostra uma textura usando um gradiente para influenciar a maneira como o local de exemplo é calculado. | Métodos TextureCubeArray::TextureCubeArray SampleGrad
 ms.assetid: AA9F7778-F719-460F-86FC-652E1D7CD156
 keywords:
 - Métodos SampleGrad HLSL
@@ -12,14 +12,14 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 7e3e770c7127ee8b791feedbe1a8c63051229fd3
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
-ms.translationtype: HT
+ms.openlocfilehash: 1f2ae90d04414e9ffdd727b65d04c31d85144bf4dead6afd055b25e77aded221
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104968332"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119892436"
 ---
-# <a name="texturecubearraysamplegrad-methods"></a>Métodos TextureCubeArray:: SampleGrad
+# <a name="texturecubearraysamplegrad-methods"></a>Métodos TextureCubeArray::SampleGrad
 
 Amostra uma textura usando um gradiente para influenciar a maneira como o local de exemplo é calculado.
 
@@ -29,9 +29,9 @@ Amostra uma textura usando um gradiente para influenciar a maneira como o local 
 
 | Método                                                                                                      | Descrição                                                                                                                                                                                                        |
 |:------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**SampleGrad (S, float, float, float)**](dx-graphics-hlsl-to-samplegrad.md)                                   | Exemplifica uma textura, usando um gradiente para influenciar a maneira como o local de exemplo é calculado.<br/>                                                                                                             |
-| [**SampleGrad (S, float, float, float, float)**](tcubearray-samplegrad-s-float-float-float-float-.md)           | Exemplifica uma textura, usando um gradiente para influenciar a maneira como o local de exemplo é calculado, com um valor opcional para fixe os valores de nível de detalhe (LOD) de exemplo para.<br/>                                     |
-| [**SampleGrad (S, float, float, float, float, uint)**](tcubearray-samplegrad-s-float-float-float-float-uint-.md) | Exemplifica uma textura, usando um gradiente para influenciar a maneira como o local de exemplo é calculado, com um valor opcional para fixe os valores de nível de detalhe (LOD) de exemplo para. Retorna o status sobre a operação.<br/> |
+| [**SampleGrad(S,float, float,float)**](dx-graphics-hlsl-to-samplegrad.md)                                   | Amostra uma textura, usando um gradiente para influenciar a maneira como o local de exemplo é calculado.<br/>                                                                                                             |
+| [**SampleGrad(S,float,float,float,float)**](tcubearray-samplegrad-s-float-float-float-float-.md)           | Amostra uma textura, usando um gradiente para influenciar a maneira como o local de exemplo é calculado, com um valor opcional para fixar valores lod (nível de detalhes) de exemplo.<br/>                                     |
+| [**SampleGrad(S,float,float,float, float,uint)**](tcubearray-samplegrad-s-float-float-float-float-uint-.md) | Amostra uma textura, usando um gradiente para influenciar a maneira como o local de exemplo é calculado, com um valor opcional para fixar valores lod (nível de detalhes) de exemplo. Retorna o status sobre a operação.<br/> |
 
 
 
@@ -42,7 +42,7 @@ Amostra uma textura usando um gradiente para influenciar a maneira como o local 
 [**TextureCubeArray**](texturecubearray.md)
 </dt> <dt>
 
-[Textura-objeto](dx-graphics-hlsl-to-type.md)
+[Objeto de textura](dx-graphics-hlsl-to-type.md)
 </dt> </dl>
 
  

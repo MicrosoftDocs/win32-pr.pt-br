@@ -1,19 +1,19 @@
 ---
-description: A WMI (infraestrutura de gerenciamento do Windows), a MI (Instrumentação de gerenciamento) e a OMI (infraestrutura de gerenciamento aberta) usam arquivos MOF (Management Object Format) para descrever as informações disponibilizadas por meio de seus respectivos provedores.
+description: Windows WMI (infraestrutura de gerenciamento), MI (Instrumentação de gerenciamento) e OMI (infraestrutura de gerenciamento aberta) todos usam arquivos MOF (Management Object Format) para descrever as informações disponibilizadas por meio de seus respectivos provedores.
 ms.assetid: 5ec3c6a2-df23-446d-a4da-b8e207eeb6f6
 title: Provedores WMI/MI/OMI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 505a0853d9df7d9cf6f2371f6342b77f61f536b4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 682629f72da94cd2210fb781284a7cb4cf7f85868ff405f22727e619d128ae65
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105753705"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119992407"
 ---
 # <a name="wmimiomi-providers"></a>Provedores WMI/MI/OMI
 
-A WMI (infraestrutura de gerenciamento do Windows), a MI (Instrumentação de gerenciamento) e a OMI (infraestrutura de gerenciamento aberta) usam arquivos MOF (Management Object Format) para descrever as informações disponibilizadas por meio de seus respectivos provedores.
+Windows WMI (infraestrutura de gerenciamento), MI (Instrumentação de gerenciamento) e OMI (infraestrutura de gerenciamento aberta) todos usam arquivos MOF (Management Object Format) para descrever as informações disponibilizadas por meio de seus respectivos provedores.
 
 <dl> <dt>
 
@@ -27,7 +27,7 @@ O provedor de Active Directory, também conhecido como provedor de serviços de 
 <span id="Application_Inventory"></span><span id="application_inventory"></span><span id="APPLICATION_INVENTORY"></span>[Inventário de aplicativos](/previous-versions/windows/desktop/appdevinvprov/applicationanddeviceinventory-portal)
 </dt> <dd>
 
-As classes WMI para o inventário de aplicativos habilitam a descoberta dos aplicativos Win32 instalados e dos aplicativos da Windows Store em um sistema Windows.
+as classes WMI para o inventário de aplicativos habilitam a descoberta dos aplicativos Win32 instalados e Windows aplicativos de armazenamento em um sistema Windows.
 
 </dd> <dt>
 
@@ -48,7 +48,7 @@ Fornece configuração e gerenciamento de uma área de armazenamento em uma unid
 <span id="BITS"></span><span id="bits"></span>[BITS](/previous-versions/windows/desktop/bitsprov/bits-provider)
 </dt> <dd>
 
-O Serviço de Transferência Inteligente em Segundo Plano (BITS) Compact Server com gerenciamento remoto de BITS permite que os administradores autenticados ou aplicativos de controlador criem, modifiquem e gerenciem trabalhos de transferência de BITS remotamente sem usar o serviço de Serviços de Informações da Internet (IIS).
+o Serviço de Transferência Inteligente em Segundo Plano (BITS) Compact Server com gerenciamento remoto de bits permite que os administradores autenticados ou aplicativos de controlador criem, modifiquem e gerenciem trabalhos de transferência de bits remotamente sem usar o serviço de Serviços de Informações da Internet (IIS).
 
 </dd> <dt>
 
@@ -69,7 +69,7 @@ O provedor de Dados de Configuração da Inicialização (BCD) fornece um reposi
 <span id="Boot_Event_Collector"></span><span id="boot_event_collector"></span><span id="BOOT_EVENT_COLLECTOR"></span>[Coletor de eventos de inicialização](/windows/desktop/BEvtColProv/boot-event-collector-wmi-provider-portal)
 </dt> <dd>
 
-O provedor WMI do coletor de eventos de inicialização fornece acesso a informações de conexão e configuração para o recurso de coleta de eventos de instalação e inicialização no Windows Server.
+o provedor WMI do coletor de eventos de inicialização fornece acesso a informações de conexão e configuração para o recurso de coleta de eventos de instalação e inicialização no Windows Server.
 
 </dd> <dt>
 
@@ -125,7 +125,7 @@ O provedor [DhcpServerPSProvider](/previous-versions/windows/desktop/dhcpserverp
 <span id="Disk_Quota"></span><span id="disk_quota"></span><span id="DISK_QUOTA"></span>[Cota de disco](/previous-versions/windows/desktop/wmipdskq/disk-quota-provider)
 </dt> <dd>
 
-O provedor de cota de disco do Windows permite que os administradores controlem a quantidade de dados que cada usuário armazena em um sistema de arquivos NTFS.
+o provedor de cota de disco Windows permite que os administradores controlem a quantidade de dados que cada usuário armazena em um sistema de arquivos NTFS.
 
 </dd> <dt>
 
@@ -174,7 +174,7 @@ O provedor de [log de eventos](/previous-versions/windows/desktop/eventlogprov/e
 <span id="Event_Tracing_Management"></span><span id="event_tracing_management"></span><span id="EVENT_TRACING_MANAGEMENT"></span>[Gerenciamento de rastreamento de eventos](/previous-versions/windows/desktop/etwmgmt/event-tracing-management-wmi-provider-portal)
 </dt> <dd>
 
-O provedor de gerenciamento de rastreamento de eventos fornece acesso a eventos de rastreamento e configurações de sessão do ETW (rastreamento de eventos para Windows).
+o provedor de gerenciamento de rastreamento de eventos fornece acesso a eventos de rastreamento e configurações de sessão do ETW (rastreamento de eventos para Windows).
 
 </dd> <dt>
 
@@ -192,10 +192,10 @@ O provedor de clustering de failover do Hyper-V fornece gerenciamento e relatór
 
 </dd> <dt>
 
-<span id="Failover_Clustering_Storage_QoS"></span><span id="failover_clustering_storage_qos"></span><span id="FAILOVER_CLUSTERING_STORAGE_QOS"></span>[QoS de armazenamento de clustering de failover](/previous-versions/windows/desktop/clusstorageqosprov/failover-clustering-storage-qos-mi-provider-portal)
+<span id="Failover_Clustering_Storage_QoS"></span><span id="failover_clustering_storage_qos"></span><span id="FAILOVER_CLUSTERING_STORAGE_QOS"></span>[clustering de Failover Armazenamento QoS](/previous-versions/windows/desktop/clusstorageqosprov/failover-clustering-storage-qos-mi-provider-portal)
 </dt> <dd>
 
-O provedor de QoS (qualidade de serviço) de armazenamento de clustering de failover fornece gerenciamento e relatórios das políticas de QoS de armazenamento de clustering.
+o clustering de Failover Armazenamento provedor de qos (qualidade de serviço) fornece gerenciamento e relatórios das políticas de qos de armazenamento de clustering.
 
 </dd> <dt>
 
@@ -213,10 +213,10 @@ O provedor de extensões de cluster de failover fornece gerenciamento adicional 
 
 </dd> <dt>
 
-<span id="Gateway_Health_Monitor"></span><span id="gateway_health_monitor"></span><span id="GATEWAY_HEALTH_MONITOR"></span>[Monitor de integridade do gateway](/previous-versions/windows/desktop/gatewayhealthmonprov/gateway-health-monitor-wmi-provider-portal)
+<span id="Gateway_Health_Monitor"></span><span id="gateway_health_monitor"></span><span id="GATEWAY_HEALTH_MONITOR"></span>[Health Monitor de gateway](/previous-versions/windows/desktop/gatewayhealthmonprov/gateway-health-monitor-wmi-provider-portal)
 </dt> <dd>
 
-O provedor do monitor de integridade do gateway gerencia informações e eventos de monitoramento da integridade do gateway.
+o provedor de Health Monitor do gateway gerencia informações e eventos de monitoramento da integridade do gateway.
 
 </dd> <dt>
 
@@ -255,10 +255,10 @@ Expõe interfaces de programação que podem ser usadas para consultar e configu
 
 </dd> <dt>
 
-<span id="Internet_Protocol_Address_Management__IPAM__Server"></span><span id="internet_protocol_address_management__ipam__server"></span><span id="INTERNET_PROTOCOL_ADDRESS_MANAGEMENT__IPAM__SERVER"></span>[Servidor de gerenciamento de endereços de protocolo de Internet (IPAM)](/previous-versions/windows/desktop/ipamserverpsprov/internet-protocol-address-management-server-wmi-provider-portal)
+<span id="Internet_Protocol_Address_Management__IPAM__Server"></span><span id="internet_protocol_address_management__ipam__server"></span><span id="INTERNET_PROTOCOL_ADDRESS_MANAGEMENT__IPAM__SERVER"></span>[servidor de gerenciamento de endereços de protocolo de Internet (IPAM)](/previous-versions/windows/desktop/ipamserverpsprov/internet-protocol-address-management-server-wmi-provider-portal)
 </dt> <dd>
 
-O provedor do servidor IPAM permite que os desenvolvedores gerenciem o IPAM por meio do WMI.
+o provedor do IPAM Server permite que os desenvolvedores gerenciem IPAM por meio do WMI.
 
 </dd> <dt>
 
@@ -276,10 +276,10 @@ Fornece dados de IPMI das operações do controlador BMC.
 
 </dd> <dt>
 
-<span id="iSCSI_Target_Server"></span><span id="iscsi_target_server"></span><span id="ISCSI_TARGET_SERVER"></span>[Servidor de destino iSCSI](/previous-versions/windows/desktop/iscsitarg/iscsi-software-target-api-portal)
+<span id="iSCSI_Target_Server"></span><span id="iscsi_target_server"></span><span id="ISCSI_TARGET_SERVER"></span>[Servidor de Destino iSCSI](/previous-versions/windows/desktop/iscsitarg/iscsi-software-target-api-portal)
 </dt> <dd>
 
-O provedor do servidor de destino iSCSI dá suporte a uma interface WMI para gerenciar o servidor de destino Microsoft iSCSI, como a criação de discos virtuais e para apresentá-los ao cliente.
+o provedor de Servidor de Destino iSCSI dá suporte a uma interface WMI para gerenciar o Servidor de Destino iSCSI da Microsoft, como a criação de discos virtuais e para apresentá-los ao cliente.
 
 </dd> <dt>
 
@@ -332,185 +332,185 @@ O provedor de ponte do MDM habilita o gerenciamento de MDM de uma ponte de rede.
 
 </dd> <dt>
 
-<span id="MDM_Settings"></span><span id="mdm_settings"></span><span id="MDM_SETTINGS"></span>[Configurações do MDM](/previous-versions/windows/desktop/mdmsettingsprov/mobile-device-management-settings-provider-portal)
+<span id="MDM_Settings"></span><span id="mdm_settings"></span><span id="MDM_SETTINGS"></span>[Configurações MDM](/previous-versions/windows/desktop/mdmsettingsprov/mobile-device-management-settings-provider-portal)
 </dt> <dd>
 
-O provedor de configurações do MDM permite o gerenciamento de configurações em dispositivos registrados com um serviço MDM.
+o provedor de Configurações de MDM permite o gerenciamento de configurações em dispositivos registrados com um serviço MDM.
 
 </dd> <dt>
 
 <span id="MSFT_PCSVDevice"></span><span id="msft_pcsvdevice"></span><span id="MSFT_PCSVDEVICE"></span>[\_PCSVDEVICE MSFT](/previous-versions/windows/desktop/pcsvdeviceprov/device-management-classes)
 </dt> <dd>
 
-O provedor [MSFT \_ PCSVDevice](/previous-versions/windows/desktop/pcsvdeviceprov/device-management-classes) expõe uma classe que define uma classe de exibição para um sistema de computador físico.
+O [provedor \_ MSFT PCSVDevice](/previous-versions/windows/desktop/pcsvdeviceprov/device-management-classes) expõe uma classe que define uma classe de exibição para um sistema de computador físico.
 
 </dd> <dt>
 
 <span id="MsNetImPlatform"></span><span id="msnetimplatform"></span><span id="MSNETIMPLATFORM"></span>[MsNetImPlatform](/previous-versions/windows/desktop/ndisimplatcimprov/lbfo-classes)
 </dt> <dd>
 
-A seção provedor [MsNetImPlatform](/previous-versions/windows/desktop/ndisimplatcimprov/lbfo-classes) fornece informações de referência para classes de provedor MsNetImPlatform implementadas no NdisIMPlatCim.dll.
+A [seção provedor MsNetImPlatform](/previous-versions/windows/desktop/ndisimplatcimprov/lbfo-classes) fornece informações de referência para classes de provedor MsNetImPlatform implementadas NdisIMPlatCim.dll.
 
 </dd> <dt>
 
 <span id="NetAdapterCim"></span><span id="netadaptercim"></span><span id="NETADAPTERCIM"></span>[NetAdapterCim](/previous-versions/windows/desktop/netadaptercimprov/network-adapter-classes)
 </dt> <dd>
 
-O provedor [NetAdapterCim](/previous-versions/windows/desktop/netadaptercimprov/network-adapter-classes) dá suporte a classes que acessam adaptadores de rede.
+O [provedor NetAdapterCim](/previous-versions/windows/desktop/netadaptercimprov/network-adapter-classes) dá suporte a classes que acessam adaptadores de rede.
 
 </dd> <dt>
 
 <span id="NetDaCim"></span><span id="netdacim"></span><span id="NETDACIM"></span>[NetDaCim](/previous-versions/windows/desktop/netdacimprov/direct-access-client-components-classes)
 </dt> <dd>
 
-Esta seção fornece informações de referência para classes de provedor [NetDaCim](/previous-versions/windows/desktop/netdacimprov/direct-access-client-components-classes) .
+Esta seção fornece informações de referência para [classes do Provedor NetDaCim.](/previous-versions/windows/desktop/netdacimprov/direct-access-client-components-classes)
 
 </dd> <dt>
 
 <span id="NetNcCim"></span><span id="netnccim"></span><span id="NETNCCIM"></span>[NetNcCim](/previous-versions/windows/desktop/netnccimprov/network-connectivity-status)
 </dt> <dd>
 
-Fornece informações de referência para classes de provedor [NetNcCim](/previous-versions/windows/desktop/netnccimprov/network-connectivity-status) .
+Fornece informações de referência para [classes de provedor NetNcCim.](/previous-versions/windows/desktop/netnccimprov/network-connectivity-status)
 
 </dd> <dt>
 
 <span id="NetPeerDist"></span><span id="netpeerdist"></span><span id="NETPEERDIST"></span>[NetPeerDist](/previous-versions/windows/desktop/netpeerdistcimprov/branch-cache)
 </dt> <dd>
 
-O provedor [NetPeerDist](/previous-versions/windows/desktop/netpeerdistcimprov/branch-cache) dá suporte a classes que interagem com a infraestrutura de cache de ramificação.
+O [provedor NetPeerDist dá](/previous-versions/windows/desktop/netpeerdistcimprov/branch-cache) suporte a classes que interagem com a infraestrutura do Cache de Branch.
 
 </dd> <dt>
 
 <span id="NetQosCim"></span><span id="netqoscim"></span><span id="NETQOSCIM"></span>[NetQosCim](/previous-versions/windows/desktop/qoswmiprov/net-qos-classes)
 </dt> <dd>
 
-O provedor [NetQosCim](/previous-versions/windows/desktop/qoswmiprov/net-qos-classes) fornece dados para a qualidade de serviço de rede (QoS) e dados de configuração de QoS.
+O [provedor NetQosCim](/previous-versions/windows/desktop/qoswmiprov/net-qos-classes) fornece dados para dados de configuração de QoS (qualidade de serviço de rede) e QoS.
 
 </dd> <dt>
 
 <span id="NetSwitchTeam"></span><span id="netswitchteam"></span><span id="NETSWITCHTEAM"></span>[NetSwitchTeam](/previous-versions/windows/desktop/netswitchteamprov/network-switch-team-classes)
 </dt> <dd>
 
-Esta seção fornece informações de referência para classes de provedor NetSwitchTeam declaradas em NetSwitchTeam. mof e implementadas no NetSwitchTeamCim.dll.
+Esta seção fornece informações de referência para classes de provedor NetSwitchTeam declaradas em NetSwitchTeam.mof e implementadas em NetSwitchTeamCim.dll.
 
 </dd> <dt>
 
-<span id="NetTCPIP"></span><span id="nettcpip"></span><span id="NETTCPIP"></span>[Nettcpip](/previous-versions/windows/desktop/nettcpipprov/net-tcpip-classes)
+<span id="NetTCPIP"></span><span id="nettcpip"></span><span id="NETTCPIP"></span>[NetTCPIP](/previous-versions/windows/desktop/nettcpipprov/net-tcpip-classes)
 </dt> <dd>
 
-O provedor nettcpip dá suporte a classes que interagem com conexões TCPIP.
+O provedor NetTCPIP dá suporte a classes que interagem com conexões TCPIP.
 
 </dd> <dt>
 
 <span id="NetTtCim"></span><span id="netttcim"></span><span id="NETTTCIM"></span>[NetTtCim](/previous-versions/windows/desktop/netttcimprov/network-transition-classes)
 </dt> <dd>
 
-Esta seção fornece informações de referência para as classes de provedor NetTtCim definidas em NetTtCim. mof e implementadas no NetTtCim.dll.
+Esta seção fornece informações de referência para classes de provedor NetTtCim definidas em NetTtCim.mof e implementadas NetTtCim.dll.
 
 </dd> <dt>
 
 <span id="NetWNV"></span><span id="netwnv"></span><span id="NETWNV"></span>[NetWNV](/previous-versions/windows/desktop/netwnvprov/net-virtualization-classes)
 </dt> <dd>
 
-O provedor NetWNV dá suporte a classes que interagem com as tecnologias de virtualização .net.
+O provedor NetWNV dá suporte a classes que interagem com tecnologias de virtualização de rede.
 
 </dd> <dt>
 
-<span id="Network_Access_Protection"></span><span id="network_access_protection"></span><span id="NETWORK_ACCESS_PROTECTION"></span>[Proteção de acesso à rede](/previous-versions/windows/desktop/napprov/network-access-protection-wmi-provider-portal)
+<span id="Network_Access_Protection"></span><span id="network_access_protection"></span><span id="NETWORK_ACCESS_PROTECTION"></span>[Proteção de Acesso à Rede](/previous-versions/windows/desktop/napprov/network-access-protection-wmi-provider-portal)
 </dt> <dd>
 
-O provedor de proteção de acesso à rede expõe uma plataforma para acesso protegido a redes privadas.
+O provedor de Proteção de Acesso à Rede expõe uma plataforma para acesso protegido a redes privadas.
 
 </dd> <dt>
 
 <span id="Network_Load_Balancing"></span><span id="network_load_balancing"></span><span id="NETWORK_LOAD_BALANCING"></span>[Balanceamento de carga de rede](/previous-versions/windows/desktop/wlbsprov/network-load-balancing-provider-portal)
 </dt> <dd>
 
-O provedor NLB (balanceamento de carga de rede) permite o gerenciamento de um cluster NLB.
+O provedor NLB (Balanceamento de Carga de Rede) permite o gerenciamento de um cluster NLB.
 
 </dd> <dt>
 
 <span id="NetworkController_Server"></span><span id="networkcontroller_server"></span><span id="NETWORKCONTROLLER_SERVER"></span>[Servidor NetworkController](/previous-versions/windows/desktop/ncserverpsprov/networkcontroller-server-wmi-provider-portal)
 </dt> <dd>
 
-O provedor habilita o gerenciamento de um servidor do controlador de rede.
+O provedor permite o gerenciamento de um servidor de controlador de rede.
 
 </dd> <dt>
 
-<span id="NFS"></span><span id="nfs"></span>[-](/previous-versions/windows/desktop/nfswmi/wmi-provider-for-nfs-portal)
+<span id="NFS"></span><span id="nfs"></span>[Nfs](/previous-versions/windows/desktop/nfswmi/wmi-provider-for-nfs-portal)
 </dt> <dd>
 
-O provedor de NFS permite que você crie ferramentas e scripts para configurar e monitorar o sistema de arquivos de rede do Windows.
+O provedor para NFS permite que você crie ferramentas e scripts para configurar e monitorar o Windows de Arquivos de Rede.
 
 </dd> <dt>
 
-<span id="Ping"></span><span id="ping"></span><span id="PING"></span>[Executar](/previous-versions/windows/desktop/wmipicmp/ping-provider)
+<span id="Ping"></span><span id="ping"></span><span id="PING"></span>[Ping](/previous-versions/windows/desktop/wmipicmp/ping-provider)
 </dt> <dd>
 
-O provedor de ping fornece acesso às informações de status fornecidas pelo comando ping padrão.
+O provedor ping fornece acesso às informações de status fornecidas pelo comando ping padrão.
 
 </dd> <dt>
 
-<span id="Policy"></span><span id="policy"></span><span id="POLICY"></span>[Regras](/previous-versions/windows/desktop/policmanprov/policy-provider)
+<span id="Policy"></span><span id="policy"></span><span id="POLICY"></span>[Política](/previous-versions/windows/desktop/policmanprov/policy-provider)
 </dt> <dd>
 
-Fornece extensões para a diretiva de grupo e permite refinamentos na aplicação da política.
+Fornece extensões para a política de grupo e permite refinamentos na aplicação da política.
 
 </dd> <dt>
 
 <span id="Power_Meter"></span><span id="power_meter"></span><span id="POWER_METER"></span>[Medidor de energia](/previous-versions/windows/desktop/powermeterprov/power-meter-provider-)
 </dt> <dd>
 
-O provedor do medidor de energia dá suporte à interface de medição de energia e orçamento (PMB). Essas classes são a interface primária para a consulta de informações de PMI (interface do Power medidor) de medidores de energia subjacentes no sistema.
+O provedor do Power Meter dá suporte à interface PMB (Medição e Orçamento de Energia). Essas classes são a interface primária para a consulta de informações de PMI (Interface do Power Meter) de medidores de energia subjacentes no sistema.
 
 </dd> <dt>
 
 <span id="Power_Policy"></span><span id="power_policy"></span><span id="POWER_POLICY"></span>[Política de energia](/previous-versions/windows/desktop/powerwmiprov/power-policy-provider-)
 </dt> <dd>
 
-O provedor de política de energia fornece às classes a capacidade de gerenciar remotamente toda a infraestrutura de diretiva de energia.
+O provedor do Power Policy fornece às classes a capacidade de gerenciar remotamente toda a infraestrutura de política de energia.
 
 </dd> <dt>
 
 <span id="RAMgmtPSProvider"></span><span id="ramgmtpsprovider"></span><span id="RAMGMTPSPROVIDER"></span>[RAMgmtPSProvider](/previous-versions/windows/desktop/ramgmtpsprov/remote-access-management)
 </dt> <dd>
 
-O provedor [RAMgmtPSProvider](/previous-versions/windows/desktop/ramgmtpsprov/remote-access-management) fornece classes para gerenciar o acesso remoto.
+O [provedor RAMgmtPSProvider](/previous-versions/windows/desktop/ramgmtpsprov/remote-access-management) fornece classes para gerenciar o Acesso Remoto.
 
 </dd> <dt>
 
 <span id="RAServerPSProvider"></span><span id="raserverpsprovider"></span><span id="RASERVERPSPROVIDER"></span>[RAServerPSProvider](/previous-versions/windows/desktop/raserverpsprov/remote-access-server)
 </dt> <dd>
 
-O provedor [RAServerPSProvider](/previous-versions/windows/desktop/raserverpsprov/remote-access-server) fornece classes para gerenciar o servidor de acesso remoto.
+O [provedor RAServerPSProvider](/previous-versions/windows/desktop/raserverpsprov/remote-access-server) fornece classes para gerenciar o Servidor de Acesso Remoto.
 
 </dd> <dt>
 
 <span id="ReliabilityMetricsProvider"></span><span id="reliabilitymetricsprovider"></span><span id="RELIABILITYMETRICSPROVIDER"></span>[ReliabilityMetricsProvider](/previous-versions/windows/desktop/racwmiprov/reliabilitymetricsprovider-provider-classes)
 </dt> <dd>
 
-O provedor [ReliabilityMetricsProvider](/previous-versions/windows/desktop/racwmiprov/reliabilitymetricsprovider-provider-classes) expõe as métricas de confiabilidade do log de eventos do sistema e do Windows.
+O [provedor ReliabilityMetricsProvider expõe o](/previous-versions/windows/desktop/racwmiprov/reliabilitymetricsprovider-provider-classes) sistema e Windows métricas de confiabilidade do Log de Eventos.
 
 </dd> <dt>
 
 <span id="Remote_Desktop_Services"></span><span id="remote_desktop_services"></span><span id="REMOTE_DESKTOP_SERVICES"></span>[Serviços de Área de Trabalho Remota](/windows/desktop/TermServ/terminal-services-wmi-provider)
 </dt> <dd>
 
-Habilita a administração de servidor consistente em um ambiente Serviços de Área de Trabalho Remota.
+Habilita a administração consistente do servidor em um Serviços de Área de Trabalho Remota ambiente.
 
 </dd> <dt>
 
 <span id="Reporting_Services"></span><span id="reporting_services"></span><span id="REPORTING_SERVICES"></span>[Reporting Services](https://msdn.microsoft.com/library/Aa226200.aspx)
 </dt> <dd>
 
-Define classes que permitem que você escreva scripts e código para modificar as configurações do servidor de relatório e o Gerenciador de Relatórios.
+Define classes que permitem escrever scripts e código para modificar as configurações do servidor de relatório e do Report Manager.
 
 </dd> <dt>
 
-<span id="Resultant_Set_of_Policy__RSoP_"></span><span id="resultant_set_of_policy__rsop_"></span><span id="RESULTANT_SET_OF_POLICY__RSOP_"></span>[Conjunto de políticas resultante (RSoP)](/previous-versions/windows/desktop/Policy/reporting-group-policy)
+<span id="Resultant_Set_of_Policy__RSoP_"></span><span id="resultant_set_of_policy__rsop_"></span><span id="RESULTANT_SET_OF_POLICY__RSOP_"></span>[Conjunto de Políticas Resultante (RSoP)](/previous-versions/windows/desktop/Policy/reporting-group-policy)
 </dt> <dd>
 
-Fornece métodos para planejar e depurar configurações de política em uma situação de hipóteses. Esses métodos permitem que os administradores determinem facilmente a combinação de configurações de diretiva que se aplicam ao, ou aplicam-se a um usuário ou computador. Isso é conhecido como conjunto de diretivas resultante (RSoP). Para obter mais informações, consulte [sobre o provedor de método do WMI do RSoP](/previous-versions/windows/desktop/Policy/about-the-rsop-wmi-method-provider) e [classes WMI do RSoP](/previous-versions/windows/desktop/Policy/rsop-wmi-classes).
+Fornece métodos para planejar e depurar configurações de política em uma situação de what-if. Esses métodos permitem que os administradores determinem facilmente a combinação de configurações de política que se aplicam a um usuário ou computador ou a um computador. Isso é conhecido como O Conjunto de Políticas Resultante (RSoP). Para obter mais informações, [consulte About the RSoP WMI Method Provider and](/previous-versions/windows/desktop/Policy/about-the-rsop-wmi-method-provider) [RSoP WMI Classes](/previous-versions/windows/desktop/Policy/rsop-wmi-classes).
 
 </dd> <dt>
 
@@ -521,10 +521,10 @@ Recupera ou altera as configurações de segurança que controlam a propriedade,
 
 </dd> <dt>
 
-<span id="ServerManager.DeploymentProvider"></span><span id="servermanager.deploymentprovider"></span><span id="SERVERMANAGER.DEPLOYMENTPROVIDER"></span>[ServerManager. deploymentProvider](/previous-versions/windows/desktop/srvmgrdeployprov/server-manager-deployment)
+<span id="ServerManager.DeploymentProvider"></span><span id="servermanager.deploymentprovider"></span><span id="SERVERMANAGER.DEPLOYMENTPROVIDER"></span>[ServerManager.DeploymentProvider](/previous-versions/windows/desktop/srvmgrdeployprov/server-manager-deployment)
 </dt> <dd>
 
-O [ServerManager. deploymentProvider](/previous-versions/windows/desktop/srvmgrdeployprov/server-manager-deployment) expõe a funcionalidade de implantação.
+O [ServerManager.DeploymentProvider expõe](/previous-versions/windows/desktop/srvmgrdeployprov/server-manager-deployment) a funcionalidade de implantação.
 
 </dd> <dt>
 
@@ -538,18 +538,18 @@ Gerencia sessões de rede e conexões.
 <span id="Shadow_Copy"></span><span id="shadow_copy"></span><span id="SHADOW_COPY"></span>[Cópia de sombra](/previous-versions/windows/desktop/vsswmi/shadow-copy-provider)
 </dt> <dd>
 
-Fornece funções de gerenciamento para as cópias de sombra do recurso de pastas compartilhadas.
+Fornece funções de gerenciamento para as Cópias de Sombra do recurso Pastas Compartilhadas.
 
 </dd> <dt>
 
 <span id="Shielded_VM_Provisioning"></span><span id="shielded_vm_provisioning"></span><span id="SHIELDED_VM_PROVISIONING"></span>[Provisionamento de VM blindada](/previous-versions/windows/desktop/mspsprov/shielded-vm-provisioning-wmi-provider-portal)
 </dt> <dd>
 
-O provedor de provisionamento de VM blindada permite que um controlador de malha inicie o provisionamento seguro de uma VM blindada em um host Hyper-V.
+O provedor de Provisionamento de VM blindada permite que um controlador de malha inicie o provisionamento seguro de uma VM blindada em um host Hyper-V.
 
 </dd> <dt>
 
-<span id="Shielded_VM_Provisioning_Service"></span><span id="shielded_vm_provisioning_service"></span><span id="SHIELDED_VM_PROVISIONING_SERVICE"></span>[Serviço de provisionamento de VM blindada](/previous-versions/windows/desktop/mspsserviceprov/shielded-vm-provisioning-service-wmi-provider-portal)
+<span id="Shielded_VM_Provisioning_Service"></span><span id="shielded_vm_provisioning_service"></span><span id="SHIELDED_VM_PROVISIONING_SERVICE"></span>[Serviço de Provisionamento de VM blindada](/previous-versions/windows/desktop/mspsserviceprov/shielded-vm-provisioning-service-wmi-provider-portal)
 </dt> <dd>
 
 O provedor habilita o provisionamento de uma máquina virtual blindada.
@@ -559,102 +559,102 @@ O provedor habilita o provisionamento de uma máquina virtual blindada.
 <span id="SMB_Management"></span><span id="smb_management"></span><span id="SMB_MANAGEMENT"></span>[Gerenciamento de SMB](/previous-versions/windows/desktop/smb/smb-management-api-portal)
 </dt> <dd>
 
-A API de gerenciamento de SMB fornece classes e métodos para gerenciar compartilhamentos e compartilhar o acesso.
+O SMB API de Gerenciamento fornece classes e métodos para gerenciar compartilhamentos e compartilhar acesso.
 
 </dd> <dt>
 
-<span id="SNMP"></span><span id="snmp"></span>[Gets](/windows/desktop/WmiSdk/snmp-provider)
+<span id="SNMP"></span><span id="snmp"></span>[Snmp](/windows/desktop/WmiSdk/snmp-provider)
 </dt> <dd>
 
-Mapeia objetos SNMP (Simple Network Management Protocol) que são definidos em objetos de esquema da MIB (base de informações de gerenciamento) para classes. Para obter mais informações, consulte [Configurando o ambiente WMI SNMP](/windows/desktop/WmiSdk/setting-up-the-wmi-snmp-environment).
+Mapas Objetos SNMP (Protocolo SNMP) que são definidos em objetos de esquema MIB (Base de Informações de Gerenciamento) para classes. Para obter mais informações, [consulte Configurando o ambiente WMI SNMP](/windows/desktop/WmiSdk/setting-up-the-wmi-snmp-environment).
 
 </dd> <dt>
 
 <span id="Software_Inventory_Logging"></span><span id="software_inventory_logging"></span><span id="SOFTWARE_INVENTORY_LOGGING"></span>[Log de inventário de software](/previous-versions/windows/desktop/sil/software-inventory-logging-portal)
 </dt> <dd>
 
-O provedor de log de inventário de software coleta dados de licenciamento sobre o software instalado em um servidor Windows e fornece acesso remoto aos dados para que eles possam ser agregados facilmente por um datacenter.
+O provedor de Log de Inventário de Software coleta dados de licenciamento sobre o software instalado em um servidor Windows e fornece acesso remoto aos dados para que eles possam ser agregados facilmente por um datacenter.
 
 </dd> <dt>
 
 <span id="Software_Licensing_for_"></span><span id="software_licensing_for_"></span><span id="SOFTWARE_LICENSING_FOR_"></span>[Licenciamento de software para Windows Vista](/previous-versions/windows/desktop/slwmiprov/software-licensing-classes-for-windows-vista)
 </dt> <dd>
 
-[Classes de licenciamento de software](/previous-versions/windows/desktop/sppwmi/software-license-provider-) usadas para o Windows Vista.
+[Classes de licenciamento de](/previous-versions/windows/desktop/sppwmi/software-license-provider-) software usadas para Windows Vista.
 
 </dd> <dt>
 
 <span id="Software_License"></span><span id="software_license"></span><span id="SOFTWARE_LICENSE"></span>[Licença de software](/previous-versions/windows/desktop/sppwmi/software-license-provider-)
 </dt> <dd>
 
-O provedor de licenciamento de software recupera dados de licenciamento de software.
+O provedor de Licenciamento de Software recupera dados de licenciamento de software.
 
 </dd> <dt>
 
-<span id="Storage_Volume"></span><span id="storage_volume"></span><span id="STORAGE_VOLUME"></span>[Volume de armazenamento](/previous-versions/windows/desktop/vdswmi/storage-volume-provider)
+<span id="Storage_Volume"></span><span id="storage_volume"></span><span id="STORAGE_VOLUME"></span>[Armazenamento Volume](/previous-versions/windows/desktop/vdswmi/storage-volume-provider)
 </dt> <dd>
 
-O provedor de volume de armazenamento fornece funções de gerenciamento de volume.
+O provedor Armazenamento Volume fornece funções de gerenciamento de volume.
 
 </dd> <dt>
 
-<span id="Storage_Replica"></span><span id="storage_replica"></span><span id="STORAGE_REPLICA"></span>[Réplica de armazenamento](/previous-versions/windows/desktop/wvrcimprov/storage-replica-mi-provider-portal)
+<span id="Storage_Replica"></span><span id="storage_replica"></span><span id="STORAGE_REPLICA"></span>[Armazenamento Réplica](/previous-versions/windows/desktop/wvrcimprov/storage-replica-mi-provider-portal)
 </dt> <dd>
 
-O provedor habilita o gerenciamento de uma réplica de armazenamento.
+O provedor permite o gerenciamento de uma réplica de armazenamento.
 
 </dd> <dt>
 
 <span id="System_Registry"></span><span id="system_registry"></span><span id="SYSTEM_REGISTRY"></span>[Registro do sistema](/previous-versions/windows/desktop/regprov/system-registry-provider)
 </dt> <dd>
 
-O provedor de registro do sistema permite que os aplicativos de gerenciamento recuperem e modifiquem dados no registro do sistema e recebam notificações quando ocorrerem alterações.
+O provedor do Registro do Sistema permite que os aplicativos de gerenciamento recuperem e modifiquem dados no registro do sistema e recebam notificações quando ocorrerem alterações.
 
 </dd> <dt>
 
-<span id="System_Restore"></span><span id="system_restore"></span><span id="SYSTEM_RESTORE"></span>[Restauração do sistema](/windows/desktop/sr/system-restore-portal)
+<span id="System_Restore"></span><span id="system_restore"></span><span id="SYSTEM_RESTORE"></span>[Restauração do Sistema](/windows/desktop/sr/system-restore-portal)
 </dt> <dd>
 
-Fornece classes que configuram e usam a funcionalidade de restauração do sistema. Para obter mais informações, consulte [Configurando a restauração do sistema](/windows/desktop/sr/configuring-system-restore) e as [classes WMI de restauração do sistema](/windows/desktop/sr/system-restore-wmi-classes).
+Fornece classes que configuram e usam Restauração do Sistema funcionalidade. Para obter mais informações, [consulte Configuring Restauração do Sistema](/windows/desktop/sr/configuring-system-restore) and [the Restauração do Sistema WMI Classes](/windows/desktop/sr/system-restore-wmi-classes).
 
 </dd> <dt>
 
 <span id="Trusted_Platform_Module"></span><span id="trusted_platform_module"></span><span id="TRUSTED_PLATFORM_MODULE"></span>[Trusted Platform Module](/windows/desktop/SecProv/trusted-platform-module-provider)
 </dt> <dd>
 
-Fornece acesso a dados sobre um dispositivo de segurança, representado por uma instância [**do \_ TPM do Win32**](/windows/desktop/SecProv/win32-tpm), que é a raiz de confiança para um sistema de computador da plataforma confiável do Microsoft Windows.
+Fornece acesso aos dados sobre um dispositivo de segurança, representado por uma instância do [**Win32 \_ TPM,**](/windows/desktop/SecProv/win32-tpm)que é a raiz de confiança para um sistema de computador de plataforma confiável do Microsoft Windows.
 
 </dd> <dt>
 
 <span id="Trustmon"></span><span id="trustmon"></span><span id="TRUSTMON"></span>[Trustmon](/previous-versions/windows/desktop/trustmonprov/trustmon-provider)
 </dt> <dd>
 
-O provedor [TrustMon](/previous-versions/windows/desktop/trustmonprov/trustmon-provider) é um provedor de instância que cria classes com informações sobre as relações de confiança entre domínios.
+O [provedor Trustmon](/previous-versions/windows/desktop/trustmonprov/trustmon-provider) é um provedor de instância que cria classes com informações sobre as relações de confiança entre domínios.
 
 </dd> <dt>
 
 <span id="User_Access_Logging"></span><span id="user_access_logging"></span><span id="USER_ACCESS_LOGGING"></span>[Log de acesso do usuário](/previous-versions/windows/desktop/ual/user-access-logging)
 </dt> <dd>
 
-O registro de acesso do usuário (UAL) é uma estrutura comum para funções do Windows Server para relatar suas respectivas métricas de consumo.
+O UAL (Log de Acesso do Usuário) é uma estrutura comum para que Windows Server reportem suas respectivas métricas de consumo.
 
 </dd> <dt>
 
-<span id="UserProfileProvider"></span><span id="userprofileprovider"></span><span id="USERPROFILEPROVIDER"></span>[Userprofileprovider](/previous-versions/windows/desktop/userprofileprov/userprofileprovider-provider-classes)
+<span id="UserProfileProvider"></span><span id="userprofileprovider"></span><span id="USERPROFILEPROVIDER"></span>[UserProfileProvider](/previous-versions/windows/desktop/userprofileprov/userprofileprovider-provider-classes)
 </dt> <dd>
 
-O provedor [Userprofileprovider](/previous-versions/windows/desktop/userprofileprov/userprofileprovider-provider-classes) expõe classes que fornecem informações sobre um perfil de usuário em um sistema Windows, bem como o status de integridade de uma pasta de usuário redirecionada.
+O [provedor UserProfileProvider](/previous-versions/windows/desktop/userprofileprov/userprofileprovider-provider-classes) expõe classes que fornecem informações sobre um perfil de usuário em um sistema Windows, bem como o status de saúde de uma pasta de usuário redirecionada.
 
 </dd> <dt>
 
-<span id="User_State_Management"></span><span id="user_state_management"></span><span id="USER_STATE_MANAGEMENT"></span>[Gerenciamento de estado do usuário](/previous-versions/windows/desktop/usm/user-state-management-api-portal)
+<span id="User_State_Management"></span><span id="user_state_management"></span><span id="USER_STATE_MANAGEMENT"></span>[Gerenciamento de Estado do Usuário](/previous-versions/windows/desktop/usm/user-state-management-api-portal)
 </dt> <dd>
 
-O provedor de gerenciamento de estado do usuário expõe uma API de gerenciamento e relatórios para cenários empresariais.
+O provedor de Gerenciamento de Estado do Usuário expõe uma API de gerenciamento e relatório para cenários corporativos.
 
 </dd> <dt>
 
-<span id="View"></span><span id="view"></span><span id="VIEW"></span>[Exibição](/windows/desktop/WmiSdk/view-provider)
+<span id="View"></span><span id="view"></span><span id="VIEW"></span>[Ver](/windows/desktop/WmiSdk/view-provider)
 </dt> <dd>
 
 Cria novas instâncias e métodos com base em instâncias de outras classes. Duas versões do provedor de exibição estão disponíveis em plataformas de 64 bits.
@@ -664,14 +664,14 @@ Cria novas instâncias e métodos com base em instâncias de outras classes. Dua
 <span id="VPNClientPSProvider"></span><span id="vpnclientpsprovider"></span><span id="VPNCLIENTPSPROVIDER"></span>[VPNClientPSProvider](/previous-versions/windows/desktop/vpnclientpsprov/remote-access-client)
 </dt> <dd>
 
-O provedor [VPNClientPSProvider](/previous-versions/windows/desktop/vpnclientpsprov/remote-access-client) expõe uma plataforma para automatizar a conectividade a um cliente de rede virtual privada.
+O [provedor VPNClientPSProvider](/previous-versions/windows/desktop/vpnclientpsprov/remote-access-client) expõe uma plataforma para automatizar a conectividade com um cliente de rede virtual privada.
 
 </dd> <dt>
 
 <span id="WDM"></span><span id="wdm"></span>[WDM](/windows/desktop/WmiCoreProv/wdm-provider)
 </dt> <dd>
 
-Fornece acesso às classes, instâncias, métodos e eventos de drivers de hardware que estão em conformidade com o Windows Driver Model (WDM).
+fornece acesso às classes, instâncias, métodos e eventos de drivers de hardware que estão em conformidade com o Windows Driver Model (WDM).
 
 </dd> <dt>
 
@@ -696,7 +696,7 @@ O provedor [Win32ClockProvider](/previous-versions/windows/desktop/wmitimepprov/
 
 </dd> <dt>
 
-<span id="Windows_Data_Access_Components__WDAC_"></span><span id="windows_data_access_components__wdac_"></span><span id="WINDOWS_DATA_ACCESS_COMPONENTS__WDAC_"></span>[Componentes de acesso a dados do Windows (WDAC)](/previous-versions/windows/desktop/wdacwmiprov/windows-data-access-components-wmi-provider-portal)
+<span id="Windows_Data_Access_Components__WDAC_"></span><span id="windows_data_access_components__wdac_"></span><span id="WINDOWS_DATA_ACCESS_COMPONENTS__WDAC_"></span>[Windows Componentes de acesso a dados (WDAC)](/previous-versions/windows/desktop/wdacwmiprov/windows-data-access-components-wmi-provider-portal)
 </dt> <dd>
 
 Fornece gerenciamento de WDAC.
@@ -706,49 +706,49 @@ Fornece gerenciamento de WDAC.
 <span id="Windows_Defender"></span><span id="windows_defender"></span><span id="WINDOWS_DEFENDER"></span>[Windows Defender](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 </dt> <dd>
 
-O provedor do Windows Defender expõe os recursos de segurança do Windows Defender.
+o provedor de Windows Defender expõe Windows Defender recursos de segurança.
 
 </dd> <dt>
 
-<span id="Windows_Installer"></span><span id="windows_installer"></span><span id="WINDOWS_INSTALLER"></span>[Windows Installer](/previous-versions/windows/desktop/msiprov/windows-installer-provider)
+<span id="Windows_Installer"></span><span id="windows_installer"></span><span id="WINDOWS_INSTALLER"></span>[Windows Instalador](/previous-versions/windows/desktop/msiprov/windows-installer-provider)
 </dt> <dd>
 
-O provedor de Windows Installer, também conhecido como o provedor MSI, permite que os aplicativos acessem informações coletadas de Windows Installer aplicativos compatíveis.
+o provedor de Windows Installer, também conhecido como o provedor MSI, permite que os aplicativos acessem informações coletadas de Windows Installer aplicativos compatíveis.
 
 </dd> <dt>
 
-<span id="Windows_Product_Activation"></span><span id="windows_product_activation"></span><span id="WINDOWS_PRODUCT_ACTIVATION"></span>[Ativação do produto Windows](/previous-versions/windows/desktop/licwmiprov/windows-product-activation-provider)
+<span id="Windows_Product_Activation"></span><span id="windows_product_activation"></span><span id="WINDOWS_PRODUCT_ACTIVATION"></span>[Windows Ativação do produto](/previous-versions/windows/desktop/licwmiprov/windows-product-activation-provider)
 </dt> <dd>
 
-O provedor de ativação de produto do Windows (WPA) é uma tecnologia antipirataria que visa reduzir a cópia casual do software.
+o provedor de ativação do produto (WPA) Windows é uma tecnologia antipirataria que visa reduzir a cópia casual do software.
 
 </dd> <dt>
 
-<span id="Windows_Server_Manager"></span><span id="windows_server_manager"></span><span id="WINDOWS_SERVER_MANAGER"></span>[Gerenciador do Servidor do Windows](/previous-versions/windows/desktop/mgmtprovider/windows-server-manager-wmi-provider-portal)
+<span id="Windows_Server_Manager"></span><span id="windows_server_manager"></span><span id="WINDOWS_SERVER_MANAGER"></span>[Windows Gerenciador do Servidor](/previous-versions/windows/desktop/mgmtprovider/windows-server-manager-wmi-provider-portal)
 </dt> <dd>
 
 O provedor permite o acesso e o gerenciamento da configuração controlada pelo aplicativo Gerenciador do Servidor.
 
 </dd> <dt>
 
-<span id="Windows_Server_Storage_Management__MsftStrgMan_"></span><span id="windows_server_storage_management__msftstrgman_"></span><span id="WINDOWS_SERVER_STORAGE_MANAGEMENT__MSFTSTRGMAN_"></span>[MsftStrgMan (gerenciamento de armazenamento do Windows Server)](/previous-versions/windows/desktop/msftstrgmanprov/windows-storage-management-wmi-provider-portal)
+<span id="Windows_Server_Storage_Management__MsftStrgMan_"></span><span id="windows_server_storage_management__msftstrgman_"></span><span id="WINDOWS_SERVER_STORAGE_MANAGEMENT__MSFTSTRGMAN_"></span>[Windows MsftStrgMan (gerenciamento de Armazenamento de servidor)](/previous-versions/windows/desktop/msftstrgmanprov/windows-storage-management-wmi-provider-portal)
 </dt> <dd>
 
-O provedor MsftStrgMan fornece gerenciamento para sistemas de armazenamento em produtos Windows Server.
+o provedor MsftStrgMan fornece gerenciamento para sistemas de armazenamento em produtos Windows Server.
 
 </dd> <dt>
 
-<span id="Windows_Storage_Management__StrgMgmt_"></span><span id="windows_storage_management__strgmgmt_"></span><span id="WINDOWS_STORAGE_MANAGEMENT__STRGMGMT_"></span>[StrgMgmt (gerenciamento de armazenamento do Windows)](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal)
+<span id="Windows_Storage_Management__StrgMgmt_"></span><span id="windows_storage_management__strgmgmt_"></span><span id="WINDOWS_STORAGE_MANAGEMENT__STRGMGMT_"></span>[StrgMgmt (gerenciamento de Armazenamento de Windows)](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal)
 </dt> <dd>
 
 O provedor StrgMgmt pode ser usado para gerenciar uma ampla gama de configurações de armazenamento, de tablets a matrizes de armazenamento externo em servidores.
 
 </dd> <dt>
 
-<span id="Windows_System_Assessment_Tool"></span><span id="windows_system_assessment_tool"></span><span id="WINDOWS_SYSTEM_ASSESSMENT_TOOL"></span>[Ferramenta de avaliação do sistema do Windows](/windows/desktop/WinSAT/winsat-mof-classes)
+<span id="Windows_System_Assessment_Tool"></span><span id="windows_system_assessment_tool"></span><span id="WINDOWS_SYSTEM_ASSESSMENT_TOOL"></span>[Windows Ferramenta de avaliação do sistema](/windows/desktop/WinSAT/winsat-mof-classes)
 </dt> <dd>
 
-A ferramenta de avaliação de sistema do Windows (WinSAT) expõe várias classes que avaliam as características e os recursos de desempenho de um computador.
+o Windows WinSAT (ferramenta de avaliação do sistema) expõe várias classes que avaliam as características e os recursos de desempenho de um computador.
 
 </dd> <dt>
 

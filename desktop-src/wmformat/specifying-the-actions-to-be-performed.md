@@ -9,12 +9,12 @@ keywords:
 - DRM (gerenciamento de direitos digitais), especificando ações
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d2bd39a04d9ac87c4492749ca5e250d587c0e25
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: b2d27df2904aee061deb252e08b59e1e88e4d1cd9e151290cd940fc48a650404
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104365597"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119807796"
 ---
 # <a name="specifying-the-actions-to-be-performed"></a>Especificando as ações a serem executadas
 
@@ -32,7 +32,7 @@ p_WMDRMReader->SetDRMProperty(g_wszWMDRM_Rights, WMT_TYPE_STRING,
 > [!Note]  
 > Não confunda a [**propriedade \_ direitos de DRM**](drm-rights.md) com a propriedade de [**\_ sinalizadores DRM**](drm-flags.md) , que é uma **DWORD** usada para especificar quais direitos aplicar a uma licença local do DRM versão 1 ao copiar o conteúdo de um CD.
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -41,9 +41,9 @@ p_WMDRMReader->SetDRMProperty(g_wszWMDRM_Rights, WMT_TYPE_STRING,
 [**Lendo arquivos protegidos**](reading-protected-files.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,7 @@ title: Mensagem de DTM_SETMCCOLOR (commctrl. h)
 description: Define a cor de uma determinada parte do calendário mensal dentro de um controle do seletor de data e hora (DTP). Você pode enviar essa mensagem explicitamente ou usar a \_ macro DateTime SetMonthCalColor.
 ms.assetid: cee72c1d-58da-4ee5-850e-a615ec6ad079
 keywords:
-- Controles de DTM_SETMCCOLOR de mensagens do Windows
+- controles de Windows de mensagem de DTM_SETMCCOLOR
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e496abb4dd28b040dd4a8035073ffa32a3f3847
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5154c2e450f5ef3c12c85fe3307f37958fea807226ab436241038c9ad639d4dd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644915"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119877816"
 ---
 # <a name="dtm_setmccolor-message"></a>\_Mensagem DTM SETMCCOLOR
 
@@ -58,7 +58,7 @@ Um valor de **COLORREF** que representa a cor que será definida para a área es
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor **COLORREF** que representa a configuração de cor anterior para a parte especificada do controle de calendário mensal se for bem-sucedida. Caso contrário, a mensagem retornará-1.
 
@@ -72,9 +72,9 @@ Quando os estilos visuais são habilitados, essa mensagem não tem nenhum efeito
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

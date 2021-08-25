@@ -1,6 +1,6 @@
 ---
 title: Classe MDM_WindowsAdvancedThreatProtection_HealthState01
-description: A \_ classe MDM WindowsAdvancedThreatProtection \_ HealthState01 é usada para determinar o status de integridade dos pontos de extremidade do WDATP (proteção avançada contra ameaças) do Windows Defender.
+description: a \_ classe MDM WindowsAdvancedThreatProtection \_ HealthState01 é usada para determinar o status de integridade dos pontos de extremidade de WDATP (proteção avançada contra ameaças) Windows Defender.
 ms.assetid: 8d630b95-9895-4cb8-99f2-8f869c4dfd18
 keywords:
 - Classe MDM_WindowsAdvancedThreatProtection_HealthState01
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5519b731cf54a633a659ec865e7a1f0e12deda75
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9fa8638aaa4aa99c22a67c8b3d680bb6a90a4b9aa0d37eb43cd2199e7b64f977
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918838"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119913376"
 ---
 # <a name="mdm_windowsadvancedthreatprotection_healthstate01-class"></a>\_ \_ Classe HEALTHSTATE01 do MDM WindowsAdvancedThreatProtection
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-A classe **MDM \_ WindowsAdvancedThreatProtection \_ HealthState01** é usada para determinar o status de integridade dos pontos de extremidade do WDATP (proteção avançada contra ameaças) do Windows Defender.
+a classe **MDM \_ WindowsAdvancedThreatProtection \_ HealthState01** é usada para determinar o status de integridade dos pontos de extremidade de WDATP (proteção avançada contra ameaças) Windows Defender.
 
 A sintaxe a seguir é simplificada do código MOF e inclui todas as propriedades herdadas.
 
@@ -141,7 +141,7 @@ Tipo de acesso: leitura/gravação
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                          |
+| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                                          |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                            |
 | Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                                   |
 | MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1. mof</dt> </dl>      |

@@ -34,12 +34,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9shader.h
-ms.openlocfilehash: 6f5d35f8c3bdf556e188c2cab8ff2684449b226f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 031ae23301b78a9cced683551c9d7220aa66f7e0a48b504fe1a93721fd8d6a38
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105751921"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119849776"
 ---
 # <a name="d3dxshader-flags"></a>Sinalizadores de D3DXSHADER
 
@@ -66,7 +66,7 @@ A tabela a seguir fornece detalhes dos sinalizadores disponíveis no Direct3D 9 
 
 
 
-| Constante/valor                                                                                                                                                                                                                                                                                                | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Constante/valor                                                                                                                                                                                                                                                                                                | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="D3DXSHADER_AVOID_FLOW_CONTROL"></span><span id="d3dxshader_avoid_flow_control"></span><dl> <dt>**D3DXSHADER \_ EVITAR \_ \_**</dt> <dt>/GFA</dt> de controle de fluxo </dl>                                     | Essa é uma dica ao compilador para evitar o uso de instruções de controle de fluxo.<br/> Direct3D 9-Sim<br/> Direct3D 10-Sim<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | <span id="D3DXSHADER_DEBUG"></span><span id="d3dxshader_debug"></span><dl> <dt>**D3DXSHADER \_ Depurar**</dt> <dt>/Zi</dt> </dl>                                                                               | Insira o nome de arquivo de depuração, números de linha e informações de tipo e símbolo durante a compilação do sombreador.<br/> Direct3D 9-Sim<br/> Direct3D 10-Sim<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
@@ -83,51 +83,51 @@ A tabela a seguir fornece detalhes dos sinalizadores disponíveis no Direct3D 9 
 | <span id="D3DXSHADER_PREFER_FLOW_CONTROL"></span><span id="d3dxshader_prefer_flow_control"></span><dl> <dt>**D3DXSHADER \_ PREFERIR \_ \_**</dt> <dt>/GFP,</dt> de controle de fluxo </dl>                                  | Essa é uma dica ao compilador para preferir o uso de instruções de controle de fluxo.<br/> Direct3D 9-Sim<br/> Direct3D 10-Sim<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | <span id="D3DXSHADER_SKIPOPTIMIZATION"></span><span id="d3dxshader_skipoptimization"></span><dl> <dt>**D3DXSHADER \_ SKIPOPTIMIZATION**</dt> <dt>/OD</dt> </dl>                                              | Instrua o compilador a ignorar as etapas de otimização durante a geração de código. A menos que você esteja tentando isolar um problema em seu código e suspeitar do compilador, não é recomendável usar essa opção.<br/> Direct3D 9-Sim<br/> Direct3D 10-Sim<br/>                                                                                                                                                                                                                                                                                                                                                                               |
 | <span id="D3DXSHADER_SKIPVALIDATION"></span><span id="d3dxshader_skipvalidation"></span><dl> <dt>**D3DXSHADER \_ SKIPVALIDATION**</dt> <dt>/VD</dt> </dl>                                                    | Não valide o código gerado em relação a funcionalidades e restrições conhecidas. Essa opção é recomendada somente ao compilar sombreadores que são conhecidos como trabalho (ou seja, sombreadores que foram compilados antes sem essa opção). Os sombreadores sempre são validados pelo tempo de execução antes de serem definidos para o dispositivo.<br/> Direct3D 9-Sim<br/> Direct3D 10-Sim<br/>                                                                                                                                                                                                                                                                      |
-| <span id="D3DXSHADER_USE_LEGACY_D3DX9_31_DLL"></span><span id="d3dxshader_use_legacy_d3dx9_31_dll"></span><dl> <dt>**D3DXSHADER \_ USAR \_ D3DX9 de/LD herdado de \_ \_ 31 \_ dll**</dt> <dt></dt> </dl>                     | Habilite o uso do compilador HLSL do Direct3D 9 original. OCT2006 \_ d3dx9 \_ 31 \_x86.cab ou OCT2006 \_ d3dx9 \_ 31 \_x64.cab deve ser incluído como parte do Redist de aplicativos. Esse sinalizador é necessário para compilar \_ \_ sombreadores PS 1 x sem usar o sinalizador promocional para o PS \_ 2 \_ 0. Especificar esse sinalizador ao obter uma interface [**ID3DXEffectCompiler**](id3dxeffectcompiler.md) faz com que as chamadas subsequentes para [**CompileEffect**](id3dxeffectcompiler--compileeffect.md) e [**CompileShader**](id3dxeffectcompiler--compileshader.md) por meio desse objeto usem o compilador herdado.<br/> Direct3D 9-Sim<br/> Direct3D 10-não<br/> |
+| <span id="D3DXSHADER_USE_LEGACY_D3DX9_31_DLL"></span><span id="d3dxshader_use_legacy_d3dx9_31_dll"></span><dl> <dt>**D3DXSHADER \_ USAR \_ D3DX9 de/LD herdado de \_ \_ 31 \_ dll**</dt> <dt></dt> </dl>                     | Habilite o uso do compilador HLSL do Direct3D 9 original. OCT2006 \_ d3dx9 \_ 31 \_x86.cab ou OCT2006 \_ d3dx9 \_ 31 \_x64.cab deve ser incluído como parte do Redist de aplicativos. Esse sinalizador é necessário para compilar \_ \_ sombreadores PS 1 x sem usar o sinalizador promocional para o PS \_ 2 \_ 0. Especificar esse sinalizador ao obter uma interface [**ID3DXEffectCompiler**](id3dxeffectcompiler.md) faz com que as chamadas subsequentes para [**CompileEffect**](id3dxeffectcompiler--compileeffect.md) e [**CompileShader**](id3dxeffectcompiler--compileshader.md) por meio desse objeto usem o compilador herdado.<br/> Direct3D 9 – sim<br/> Direct3D 10 – não<br/> |
 
 
 
 **Sinalizadores do Assembler**
 
-Os sinalizadores do assembler são usados pelo sistema de efeitos para otimizar o sombreador e o código do assembly de efeito.
+Os sinalizadores assembler são usados pelo sistema de efeito para otimizar o sombreador e o código do assembly de efeito.
 
 
 
 | Constante                                                                                                                                                                                                                        | Descrição                                                                                                                                                                                                                                                                                                              |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="D3DXSHADER_DEBUG"></span><span id="d3dxshader_debug"></span><dl> <dt>**\_Depuração D3DXSHADER**</dt> </dl>                                                          | Insira o nome de arquivo de depuração, números de linha e informações de tipo e símbolo durante a compilação do sombreador.<br/>                                                                                                                                                                                                                   |
-| <span id="D3DXSHADER_FORCE_PS_SOFTWARE_NOOPT"></span><span id="d3dxshader_force_ps_software_noopt"></span><dl> <dt>**D3DXSHADER \_ Force \_ PS \_ software \_ NOOPT**</dt> </dl> | Force o compilador a Compilar no próximo destino de software mais alto disponível para sombreadores de pixel. Esse sinalizador também desativa as otimizações e a depuração.<br/>                                                                                                                                                  |
-| <span id="D3DXSHADER_FORCE_VS_SOFTWARE_NOOPT"></span><span id="d3dxshader_force_vs_software_noopt"></span><dl> <dt>**D3DXSHADER \_ Force \_ vs \_ software \_ NOOPT**</dt> </dl> | Force o compilador a Compilar no próximo destino de software mais alto disponível para os sombreadores de vértice. Esse sinalizador também desativa as otimizações e a depuração.<br/>                                                                                                                                                 |
-| <span id="D3DXSHADER_SKIPVALIDATION"></span><span id="d3dxshader_skipvalidation"></span><dl> <dt>**D3DXSHADER \_ SKIPVALIDATION**</dt> </dl>                               | Não valide o código gerado em relação a funcionalidades e restrições conhecidas. Essa opção é recomendada somente ao compilar sombreadores que são conhecidos como trabalho (ou seja, sombreadores que foram compilados antes sem essa opção). Os sombreadores sempre são validados pelo tempo de execução antes de serem definidos para o dispositivo.<br/> |
+| <span id="D3DXSHADER_DEBUG"></span><span id="d3dxshader_debug"></span><dl> <dt>**DEPURAÇÃO D3DXSHADER \_**</dt> </dl>                                                          | Insira o nome do arquivo de depuração, os números de linha e as informações de tipo e símbolo durante a compilação do sombreador.<br/>                                                                                                                                                                                                                   |
+| <span id="D3DXSHADER_FORCE_PS_SOFTWARE_NOOPT"></span><span id="d3dxshader_force_ps_software_noopt"></span><dl> <dt>**D3DXSHADER \_ FORCE \_ PS \_ SOFTWARE \_ NOOPT**</dt> </dl> | Force o compilador a compilar em relação ao próximo destino de software mais alto disponível para sombreadores de pixel. Esse sinalizador também desliga as otimizações e a depuração.<br/>                                                                                                                                                  |
+| <span id="D3DXSHADER_FORCE_VS_SOFTWARE_NOOPT"></span><span id="d3dxshader_force_vs_software_noopt"></span><dl> <dt>**D3DXSHADER \_ FORCE \_ VS \_ SOFTWARE \_ NOOPT**</dt> </dl> | Force o compilador a compilar em relação ao próximo destino de software mais alto disponível para sombreadores de vértice. Esse sinalizador também desliga as otimizações e a depuração.<br/>                                                                                                                                                 |
+| <span id="D3DXSHADER_SKIPVALIDATION"></span><span id="d3dxshader_skipvalidation"></span><dl> <dt>**D3DXSHADER \_ SKIPVALIDATION**</dt> </dl>                               | Não valide o código gerado em relação a funcionalidades e restrições conhecidas. Essa opção é recomendada somente ao compilar sombreadores que são conhecidos por funcionar (ou seja, sombreadores que foram compilados antes sem essa opção). Os sombreadores são sempre validados pelo runtime antes que eles sejam definidos para o dispositivo.<br/> |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-O sistema de efeitos usará **sinalizadores do analisador** quando chamado pelas seguintes funções:
+O sistema de efeito usará **sinalizadores de analisador** quando chamado pelas seguintes funções:
 
 -   [**D3DXCompileShader**](d3dxcompileshader.md)
 -   [**D3DXCompileShaderFromFile**](d3dxcompileshaderfromfile.md)
 -   [**D3DXCompileShaderFromResource**](d3dxcompileshaderfromresource.md)
 -   [**CompileEffect**](id3dxeffectcompiler--compileeffect.md)
 
-O sistema de efeitos usará os **sinalizadores do compilador** quando chamado pelas seguintes funções:
+O sistema de efeito usará **sinalizadores do compilador** quando chamado pelas seguintes funções:
 
--   [**D3DXCompileShader**](d3dxcompileshader.md) (ou [**D3DXCompileShaderFromFile**](d3dxcompileshaderfromfile.md) ou [**D3DXCompileShaderFromResource**](d3dxcompileshaderfromresource.md))
+-   [**D3DXCompileShader**](d3dxcompileshader.md) [**(ou D3DXCompileShaderFromFile**](d3dxcompileshaderfromfile.md) ou [**D3DXCompileShaderFromResource**](d3dxcompileshaderfromresource.md))
 -   [**CompileEffect**](id3dxeffectcompiler--compileeffect.md) (ou [**CompileShader**](id3dxeffectcompiler--compileshader.md))
 
-Além disso, você pode usar os **sinalizadores do compilador** ao criar um efeito chamando [**D3DXCreateEffect**](d3dxcreateeffect.md) (ou [**D3DXCreateEffectFromFile**](d3dxcreateeffectfromfile.md) ou [**D3DXCreateEffectFromResource**](d3dxcreateeffectfromresource.md)).
+Além disso, você pode usar **sinalizadores do compilador** ao criar um efeito chamando [**D3DXCreateEffect**](d3dxcreateeffect.md) (ou [**D3DXCreateEffectFromFile**](d3dxcreateeffectfromfile.md) ou [**D3DXCreateEffectFromResource**](d3dxcreateeffectfromresource.md)).
 
--   Se você passar um arquivo. FX não compilado, o sistema de efeitos usará o parâmetro de entrada de sinalizador durante a compilação.
--   Se você passar um efeito compilado, o sistema de efeitos ignorará os sinalizadores do compilador, pois eles não são necessários para carregar o efeito.
+-   Se você passar um arquivo .fx não compilado, o sistema de efeito usará o parâmetro de entrada do sinalizador durante a compilação.
+-   Se você passar um efeito compilado, o sistema de efeito ignorará os sinalizadores do compilador, pois eles não são necessários para carregar o efeito.
 
-O sistema de efeitos usará **sinalizadores do assembler** quando chamado pelas seguintes funções:
+O sistema de efeito usará **sinalizadores assembler** quando chamado pelas seguintes funções:
 
 -   [**D3DXAssembleShader**](d3dxassembleshader.md)
 -   [**D3DXAssembleShaderFromFile**](d3dxassembleshaderfromfile.md)
 -   [**D3DXAssembleShaderFromResource**](d3dxassembleshaderfromresource.md)
 
-A aplicação de sinalizadores do **compilador** ou **sinalizadores do ASSEMBLEr** à API incorreta falhará na validação do sombreador. Verifique o valor de retorno do código de erro do Direct3D da função com a ferramenta de pesquisa de erros do DirectX (DXErr.exe) para ajudar a rastrear esse erro. Você pode obter DXErr.exe e aprender sobre ele no SDK do DirectX. Para obter informações sobre o SDK do DirectX, consulte [onde está o SDK do DirectX?](../directx-sdk--august-2009-.md).
+Aplicar **sinalizadores de compilador** ou **sinalizadores de assembler** à API incorreta falhará na validação do sombreador. Verifique o valor de retorno do código de erro Direct3D da função com a Ferramenta de Pesquisa de Erros do DirectX (DXErr.exe) para ajudar a rastrear esse erro. Você pode obter DXErr.exe e saber mais sobre ele no SDK do DirectX. Para obter informações sobre o SDK do DirectX, consulte [Onde está o SDK do DirectX?](../directx-sdk--august-2009-.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -135,7 +135,7 @@ A aplicação de sinalizadores do **compilador** ou **sinalizadores do ASSEMBLEr
 
 | Requisito | Valor |
 |-------------------|------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3dx9shader. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3dx9shader.h</dt> </dl> |
 
 
 

@@ -3,9 +3,9 @@ title: Reprodução de áudio multicanal no DirectShow
 description: Reprodução de áudio multicanal no DirectShow
 ms.assetid: 5123854a-0f1f-40f4-bf57-47622b91103f
 keywords:
-- SDK do Windows Media Format, DirectShow
-- Windows Media Format SDK, reprodução de áudio multicanal
-- SDK do Windows Media Format, reprodução de áudio
+- Windows SDK do formato de mídia, DirectShow
+- Windows SDK do formato de mídia, reprodução de áudio multicanal
+- Windows SDK de formato de mídia, reprodução de áudio
 - ASF (Advanced Systems Format), DirectShow
 - ASF (formato de sistemas avançados), DirectShow
 - ASF (Advanced Systems Format), reprodução de áudio multicanal
@@ -18,26 +18,26 @@ keywords:
 - reprodução de áudio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d44c6eec473c8bbbff81d35f4127d5d132d0b6cd
-ms.sourcegitcommit: 3e70ae762629e244028b437420ed50b5850db4e3
+ms.openlocfilehash: 99734ddf32be6e0340e26fafef0f22f1127ec3652cc0db0a9d2e94ce2f694b96
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "104365639"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119808156"
 ---
 # <a name="multichannel-audio-playback-in-directshow"></a>Reprodução de áudio multicanal no DirectShow
 
-Para reproduzir um arquivo Multichannel de áudio do Windows Media no DirectShow, você deve definir a \_ Propriedade "HIRESOUTPUT" diretamente no decodificador após ele ter sido conectado ao leitor ASF do WM. Nenhuma configuração do objeto leitor é necessária. No entanto, para trabalhar diretamente com o DMO, você precisa de wmcodecconst. h do [código de exemplo para usar o pacote de download das interfaces de áudio e vídeo do Windows Media](https://www.microsoft.com/downloads/details.aspx?FamilyId=92490D8A-4F2E-46F1-8835-B1D987B3C985&displaylang=en) .
+para reproduzir um arquivo de áudio de mídia Windows multichannel no DirectShow, você deve definir a \_ propriedade "HIRESOUTPUT" diretamente no decodificador depois que ele tiver sido conectado ao leitor ASF do WM. Nenhuma configuração do objeto leitor é necessária. no entanto, para trabalhar com o DMO diretamente, você precisa de wmcodecconst. h do [código de exemplo para usar o pacote de download de Interfaces de áudio de mídia e vídeo Windows Media](https://www.microsoft.com/downloads/details.aspx?FamilyId=92490D8A-4F2E-46F1-8835-B1D987B3C985&displaylang=en) .
 
 **Observação** Esse procedimento de configuração tem suporte apenas para arquivos que não são protegidos pelo Rights Management digital.
 
 As etapas básicas para habilitar a saída de multicanal são as seguintes:
 
 1.  Chame RenderFile para criar o gráfico de filtro.
-2.  Obter um ponteiro para o filtro de invólucro do DMO
-3.  Desconecte o invólucro de DMO do processador de áudio
+2.  obter um ponteiro para o filtro de invólucro de DMO
+3.  desconecte o Wrapper de DMO do processador de áudio
 4.  Defina a \_ Propriedade "HIRESOUTPUT" no decodificador.
-5.  Reconecte o invólucro de DMO e o processador de áudio.
+5.  reconecte o Wrapper de DMO e o processador de áudio.
 6.  Execute o grafo.
 
 Os trechos de código a seguir demonstram essas etapas. (Toda a verificação de erros foi omitida por questões de simplicidade. Você deve adicionar rotinas de tratamento de erro adequadas se usar esse código em um aplicativo.)
@@ -141,9 +141,9 @@ HRESULT GetPin(IBaseFilter *pFilter, PIN_DIRECTION PinDir, IPin** ppPin)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

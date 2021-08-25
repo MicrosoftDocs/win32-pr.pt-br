@@ -1,29 +1,29 @@
 ---
-description: A propriedade SOURCElist é uma lista delimitada por ponto-e-vírgula de caminhos de origem de rede ou URL para o pacote de instalação do aplicativo.
+description: A propriedade SOURCELIST é uma lista delimitada por ponto e vírgula de caminhos de origem de rede ou URL para o pacote de instalação do aplicativo.
 ms.assetid: 9dc1e195-a108-4f8f-b008-e08fc7658fc0
-title: Propriedade SOURCElist
+title: Propriedade SOURCELIST
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f5384504c337aeb9f1848f59efb2c6abaee5887b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dd0ab879d55481f71c663e4375a305232be576d0c923f67fa419530012d1ce89
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748568"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119893746"
 ---
-# <a name="sourcelist-property"></a>Propriedade SOURCElist
+# <a name="sourcelist-property"></a>Propriedade SOURCELIST
 
-A propriedade **SourceList** é uma lista delimitada por ponto-e-vírgula de caminhos de origem de rede ou URL para o pacote de instalação do aplicativo. Essa lista é anexada ao final da lista de origem existente de cada usuário para o aplicativo. O instalador localiza uma fonte enumerando a lista de caminhos de origem e usa o primeiro local acessível encontrado. Somente essa fonte pode ser usada para o restante da instalação. Cada caminho especificado na lista de origem deve, portanto, ser um local que tenha uma origem completa para o aplicativo. A árvore de diretórios inteira em cada local de origem deve ser a mesma e deve incluir todos os arquivos de origem necessários, incluindo todos os gabinetes. Cada local deve ter um arquivo. msi com o mesmo nome de arquivo e código de produto.
+A **propriedade SOURCELIST** é uma lista delimitada por ponto e vírgula de caminhos de origem de rede ou URL para o pacote de instalação do aplicativo. Essa lista é anexada ao final da lista de origem existente de cada usuário para o aplicativo. O instalador localiza uma origem enumerando a lista de caminhos de origem e usa o primeiro local acessível encontrado. Somente essa origem pode ser usada para o restante da instalação. Cada caminho especificado na lista de origem deve, portanto, estar em um local que tenha uma origem completa para o aplicativo. Toda a árvore de diretórios em cada local de origem deve ser a mesma e deve incluir todos os arquivos de origem necessários, incluindo os gabinetes. Cada local deve ter um arquivo .msi com o mesmo nome de arquivo e código do produto.
 
 ## <a name="default-value"></a>Valor padrão
 
-O instalador só verificará a propriedade **SourceList** se o produto ainda não tiver sido anunciado ou instalado. Em todos os outros casos, o instalador usa a lista de origem existente que está no registro.
+O instalador verifica apenas a **propriedade SOURCELIST** se o produto ainda não foi anunciado ou instalado. Em todos os outros casos, o instalador usa a lista de origem existente que está no Registro.
 
 ## <a name="remarks"></a>Comentários
 
-As fontes adicionadas usando a propriedade **SourceList** são adicionadas diretamente ao final da lista para cada tipo de origem e sempre vêm após a origem padrão especificada pela propriedade [**SourceDir**](sourcedir.md) .
+As fontes adicionadas usando a propriedade **SOURCELIST** são adicionadas diretamente ao final da lista para cada tipo de origem e sempre vêm após a origem padrão especificada pela [**propriedade SourceDir.**](sourcedir.md)
 
-Por Windows Installer o número de fontes na propriedade **SourceList** é ilimitado. [**MsiSourceListAddSource**](/windows/desktop/api/Msi/nf-msi-msisourcelistaddsourcea) pode ser usado para adicionar fontes de rede.
+Por Windows Instalador, o número de fontes na **propriedade SOURCELIST** é ilimitado. [**MsiSourceListAddSource**](/windows/desktop/api/Msi/nf-msi-msisourcelistaddsourcea) pode ser usado para adicionar fontes de rede.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -31,7 +31,7 @@ Por Windows Installer o número de fontes na propriedade **SourceList** é ilimi
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou no Windows Vista. Windows Installer no Windows Server 2003 ou no Windows XP. Consulte os [requisitos de Run-Time Windows Installer](windows-installer-portal.md) para obter informações sobre a Service Pack mínima do Windows exigida por uma versão Windows Installer.<br/> |
+| Versão<br/> | Windows Instalador 5.0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Instalador 4.0 ou Windows Instalador 4.5 no Windows Server 2008 ou Windows Vista. Windows Instalador no Windows Server 2003 ou Windows XP. Consulte o [Windows instalador Run-Time para](windows-installer-portal.md) obter informações sobre o Windows service pack mínimo exigido por uma versão Windows Installer.<br/> |
 
 
 

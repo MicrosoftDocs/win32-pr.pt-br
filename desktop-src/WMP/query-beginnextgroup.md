@@ -3,9 +3,9 @@ title: Método Query. beginNextGroup
 description: O método beginNextGroup inicia um novo grupo de condição. | Método Query. beginNextGroup
 ms.assetid: e0c59bd0-0789-413e-ade8-8d53c6f3e19b
 keywords:
-- método beginNextGroup Windows Media Player
-- método beginNextGroup Windows Media Player, classe de consulta
-- Classe de consulta Windows Media Player, método beginNextGroup
+- Windows Media Player do método beginNextGroup
+- Windows Media Player do método beginNextGroup, classe de consulta
+- classe de consulta Windows Media Player, método beginNextGroup
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 46c043b9a0ea506e054877b4d8122304ced75e28
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1d12f8e37c32b83afb3e518deda09643033c7f396d8c52a2898893a01dc930d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105814084"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119861846"
 ---
 # <a name="querybeginnextgroup-method"></a>Método Query. beginNextGroup
 
@@ -40,7 +40,7 @@ Query.beginNextGroup()
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 8a9d6b69e64e0e1eca5d4350125e0955254b6127
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 397dc9ade32222dd98e050110811464f6544a1d0af52729417c61fbc3367bdbd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104173173"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119893306"
 ---
 # <a name="id3dxsaveuserdataaddmeshchilddata-method"></a>Método ID3DXSaveUserData:: AddMeshChildData
 
@@ -69,7 +69,7 @@ Ponteiro para um nó de dados de arquivo. x. Use o ponteiro para chamar [**ID3DX
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

@@ -1,9 +1,9 @@
 ---
-title: Função D3DX_INT_to_FLOAT
+title: D3DX_INT_to_FLOAT função
 description: Converte um valor INT em FLOAT.
 ms.assetid: bee2fb3e-ffde-4013-a321-275d6beb5f77
 keywords:
-- Função D3DX_INT_to_FLOAT HLSL
+- D3DX_INT_to_FLOAT função HLSL
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 06a4d588661b1b2f5ddc14c7564699c7d2b47b4e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 97d49320c2b7bfd53b2fa4e0303a7d2e9bf6c22427557ee3827aed31f5915d1f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104968678"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119855486"
 ---
-# <a name="d3dx_int_to_float-function"></a>D3DX \_ int \_ para a \_ função float
+# <a name="d3dx_int_to_float-function"></a>Função D3DX \_ INT \_ to \_ FLOAT
 
 Converte um valor INT em FLOAT.
 
@@ -38,7 +38,7 @@ FLOAT D3DX_INT_to_FLOAT(
 
 <dl> <dt>
 
-*\_L* 
+*\_V* 
 </dt> <dd>
 
 O valor v.
@@ -52,7 +52,7 @@ O valor de escala.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor int convertido.
 
@@ -62,7 +62,7 @@ O valor int convertido.
 
 | Requisito | Valor |
 |-------------------|--------------------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3DX \_ DXGIFormatConvert. inl</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3DX \_ DXGIFormatConvert.inl</dt> </dl> |
 
 
 
@@ -73,7 +73,7 @@ O valor int convertido.
 [Funções](format-conversion-functions.md)
 </dt> <dt>
 
-[Descompactando e empacotando o \_ formato dxgi para a edição de imagem In-Place](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
+[Desempacotar e empacotar formato DXGI \_ para In-Place edição de imagem](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
 </dt> </dl>
 
  

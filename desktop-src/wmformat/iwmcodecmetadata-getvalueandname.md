@@ -1,6 +1,6 @@
 ---
 title: GetValueAndName
-description: Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte codec de áudio e vídeo do Windows Media e APIs do DSP. | GetValueAndName
+description: Para ver a documentação atual sobre Windows de mídia e processadores de sinal digital, consulte Windows codec de áudio e vídeo de mídia e APIs DSP. | GetValueAndName
 ms.assetid: 8f685fd7-95ac-4e20-b050-b080006d7954
 keywords:
 - Formato de mídia do Windows GetValueAndName
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 717b8258b9acc0a2fae5b0905a37de3c869e1ee4
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 57334ab94a27cbf618fe9bc77c3437af7fc7dc2fdb3de2eb40496c64f20889bd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105815495"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119839717"
 ---
 # <a name="getvalueandname"></a>GetValueAndName
 
-Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte [codec de áudio e vídeo do Windows Media e APIs do DSP.](/previous-versions//dd464626(v=vs.85))
+Para ver a documentação atual Windows codecs de mídia e processadores de sinal digital, consulte Windows codec de áudio e vídeo de mídia e [APIs DSP.](/previous-versions//dd464626(v=vs.85))
 
  
 

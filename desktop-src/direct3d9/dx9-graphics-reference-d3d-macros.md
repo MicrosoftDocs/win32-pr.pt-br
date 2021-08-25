@@ -4,12 +4,12 @@ ms.assetid: cabb715a-2a6a-4d56-8113-5e5ed26fc107
 title: Macros (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 99a957ca9d15784e995ec3bd145cc55387151797
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 02c6c1cec7688ad78f5047529cdf4e41951f7160a177c5509e99a0d4842e1145
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105748886"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119849445"
 ---
 # <a name="macros-direct3d-9"></a>Macros (Direct3D 9)
 

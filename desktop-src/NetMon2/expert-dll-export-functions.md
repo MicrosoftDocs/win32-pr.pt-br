@@ -1,43 +1,43 @@
 ---
-description: As funções a seguir são os pontos de entrada para DLLs de especialistas e chamadas do sistema operacional e Monitor de Rede.
+description: As funções a seguir são os pontos de entrada para DLLs especializadas e para chamadas do sistema operacional e Monitor de Rede.
 ms.assetid: 1c0dcf6f-7f80-424b-9e6a-5a8b6a5b176f
-title: Funções de exportação de DLL de especialista
+title: Funções de exportação de DLL especialista
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 923611521b98619b357eb2de93ee2269caf9c838
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4327b36990ac377595b31b55ebc0ed57157fd8d411f690aff3378293f35e39e6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920711"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119911126"
 ---
-# <a name="expert-dll-export-functions"></a>Funções de exportação de DLL de especialista
+# <a name="expert-dll-export-functions"></a>Funções de exportação de DLL especialista
 
-As funções a seguir são os pontos de entrada para DLLs de especialistas e chamadas do sistema operacional e Monitor de Rede.
+As funções a seguir são os pontos de entrada para DLLs especializadas e para chamadas do sistema operacional e Monitor de Rede.
 
 
 
 | Função                                   | Descrição                                                                                                                                                              |
 |--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Especialista em DllMain**](dllmain-expert.md)   | Indica que a DLL de especialista foi carregada ou descarregada. Quando um processo carrega ou descarrega a DLL, o sistema operacional chama a função [**DllMain**](/windows/desktop/Dlls/dllmain) . |
-| [**Registrar especialista**](register-expert.md) | Determina as informações básicas sobre o especialista dentro da DLL. Monitor de Rede chama a função de **registro** .                                                           |
-| [**Configurar**](configure.md)             | Configura o especialista dentro da DLL. Monitor de Rede chama a função [**Configurar**](configure.md) .                                                                 |
-| [**Executar**](run.md)                         | Inicia o especialista na DLL. Monitor de Rede chama a função [**Run**](run.md) .                                                                                 |
+| [**Especialista em DllMain**](dllmain-expert.md)   | Indica que a DLL especializada foi carregada ou descarregada. Quando um processo carrega ou descarrega a DLL, o sistema operacional chama a [**função DllMain.**](/windows/desktop/Dlls/dllmain) |
+| [**Registrar Especialista**](register-expert.md) | Determina informações básicas sobre o especialista na DLL. Monitor de Rede chama a **função Register.**                                                           |
+| [**Configurar**](configure.md)             | Configura o especialista na DLL. Monitor de Rede chama a [**função Configurar.**](configure.md)                                                                 |
+| [**Executar**](run.md)                         | Inicia o especialista dentro da DLL. Monitor de Rede chama a [**função**](run.md) Executar.                                                                                 |
 
 
 
  
 
-O Monitor de Rede também fornece estruturas, enumerações e funções auxiliares que o especialista pode chamar.
+Monitor de Rede também fornece estruturas, enumerações e funções auxiliares que o especialista pode chamar.
 
 
 
 | Para obter informações sobre                                      | Consulte                                                                          |
 |------------------------------------------------------------|------------------------------------------------------------------------------|
-| Funções auxiliares que podem ser chamadas por especialistas e analisadores | [Funções comuns de expert e parser](expert-and-parser-common-functions.md) |
-| Funções auxiliares que são chamadas apenas por especialistas           | [Funções de especialista](expert-functions.md)                                     |
-| Estruturas que são usadas por funções de especialista               | [Estruturas de especialistas](expert-structures.md)                                   |
-| Enumerações usadas por estruturas e funções de especialistas       | [Enumerações de especialistas](expert-enumerations.md)                               |
+| Funções auxiliares que podem ser chamadas por especialistas e analisadores | [Funções comuns de especialista e analisador](expert-and-parser-common-functions.md) |
+| Funções auxiliares que são chamadas somente por especialistas           | [Funções de especialista](expert-functions.md)                                     |
+| Estruturas que são usadas por funções especializadas               | [Estruturas de especialistas](expert-structures.md)                                   |
+| Enumerações usadas por estruturas e funções especializadas       | [Enumerações de especialistas](expert-enumerations.md)                               |
 
 
 

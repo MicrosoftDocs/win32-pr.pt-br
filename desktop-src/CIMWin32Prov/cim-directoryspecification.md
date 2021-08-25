@@ -25,12 +25,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 6a7eb6ae627c8ed9b5639e573e1d2d89132698ff
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 2464636b717d320c592cc007a8f0e688a9e3dfcd27e0eb49ae29e391b2a05cb0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089389"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119924206"
 ---
 # <a name="cim_directoryspecification-class"></a>\_Classe CIM DirectorySpecification
 
@@ -78,7 +78,7 @@ A classe **CIM \_ DirectorySpecification** tem esses métodos.
 
 | Método                                                              | Descrição                                                                     |
 |:--------------------------------------------------------------------|:--------------------------------------------------------------------------------|
-| [**Chame**](invoke-method-in-class-cim-directoryspecification.md) | Avalia uma verificação específica. Esse método não é implementado pelo WMI.<br/> |
+| [**Invoke**](invoke-method-in-class-cim-directoryspecification.md) | Avalia uma verificação específica. Esse método não é implementado pelo WMI.<br/> |
 
 
 
@@ -401,18 +401,18 @@ Descreve os detalhes necessários para a instalação bem-sucedida e os detalhes
 
 </dt> <dd>
 
-Descreve os detalhes necessários para a execução bem-sucedida e os detalhes (condições e ações) necessários para criar um elemento de software no estado em execução (ou seja, o próximo estado).
+Descreve os detalhes necessários para a execução bem-sucedida e os detalhes (condições e ações) necessários para criar um elemento de software no estado de execução (ou seja, o próximo estado).
 
 </dd> <dt>
 
 <span id="Running"></span><span id="running"></span><span id="RUNNING"></span>
 
-<span id="Running"></span><span id="running"></span><span id="RUNNING"></span>**Em execução** (3)
+<span id="Running"></span><span id="running"></span><span id="RUNNING"></span>**Executando** (3)
 
 
 </dt> <dd>
 
-Descreve os detalhes necessários para monitorar e operar em um elemento inicial.
+Descreve os detalhes necessários para monitorar e operar em um elemento start.
 
 </dd> </dl>
 
@@ -421,18 +421,18 @@ Descreve os detalhes necessários para monitorar e operar em um elemento inicial
 **TargetOperatingSystem**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ softwareelement**](cim-softwareelement.md).**TargetOperatingSystem**"), [**\_ chave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) (" MIF. \|Informações do componente de software DMTF \| 2,5 ")
+Qualificadores: [**Propagado**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**TargetOperatingSystem**"), [**chave CIM, \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Informações do componente de software DMTF \| \| 002.5")
 </dt> </dl>
 
 Sistema operacional de destino do elemento de software.
 
-Essa propriedade é herdada [**da \_ verificação CIM**](cim-check.md).
+Essa propriedade é herdada de [**CIM \_ Check**](cim-check.md).
 
 <dt>
 
@@ -445,7 +445,7 @@ Essa propriedade é herdada [**da \_ verificação CIM**](cim-check.md).
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outro** (1)
+<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -468,7 +468,7 @@ Mac OS
 
 </dt> <dd>
 
-ATT UNIX
+AtT UNIX
 
 </dd> <dt>
 
@@ -488,7 +488,7 @@ ATT UNIX
 
 <span id="Digital_Unix"></span><span id="digital_unix"></span><span id="DIGITAL_UNIX"></span>
 
-<span id="Digital_Unix"></span><span id="digital_unix"></span><span id="DIGITAL_UNIX"></span>**Unix Digital** (6)
+<span id="Digital_Unix"></span><span id="digital_unix"></span><span id="DIGITAL_UNIX"></span>**Digital Unix** (6)
 
 
 </dt> <dd></dd> <dt>
@@ -500,13 +500,13 @@ ATT UNIX
 
 </dt> <dd>
 
-Abrir VMS
+Abrir VMs
 
 </dd> <dt>
 
 <span id="HPUX"></span><span id="hpux"></span>
 
-<span id="HPUX"></span><span id="hpux"></span>HP **(8** )
+<span id="HPUX"></span><span id="hpux"></span>**HPUX** (8)
 
 
 </dt> <dd>
@@ -538,7 +538,7 @@ HP-UX
 
 <span id="OS_2"></span><span id="os_2"></span>
 
-<span id="OS_2"></span><span id="os_2"></span>**Sistema operacional/2** (12)
+<span id="OS_2"></span><span id="os_2"></span>**SO/2** (12)
 
 
 </dt> <dd></dd> <dt>
@@ -550,7 +550,7 @@ HP-UX
 
 </dt> <dd>
 
-VM (máquina virtual) da Microsoft para Java
+VM (Máquina Virtual) da Microsoft para Java
 
 </dd> <dt>
 
@@ -568,13 +568,13 @@ VM (máquina virtual) da Microsoft para Java
 
 </dt> <dd>
 
-Windows 3. x
+Windows 3.x
 
 </dd> <dt>
 
 <span id="WIN95"></span><span id="win95"></span>
 
-<span id="WIN95"></span><span id="win95"></span>**Win95** (16)
+<span id="WIN95"></span><span id="win95"></span>**WIN95** (16)
 
 
 </dt> <dd>
@@ -585,7 +585,7 @@ Windows 95
 
 <span id="WIN98"></span><span id="win98"></span>
 
-<span id="WIN98"></span><span id="win98"></span>**Win98** (17)
+<span id="WIN98"></span><span id="win98"></span>**WIN98** (17)
 
 
 </dt> <dd>
@@ -596,7 +596,7 @@ Windows 98
 
 <span id="WINNT"></span><span id="winnt"></span>
 
-<span id="WINNT"></span><span id="winnt"></span>**WinNT** (18)
+<span id="WINNT"></span><span id="winnt"></span>**WINNT** (18)
 
 
 </dt> <dd>
@@ -607,7 +607,7 @@ Windows NT
 
 <span id="WINCE"></span><span id="wince"></span>
 
-<span id="WINCE"></span><span id="wince"></span>**WinCE** (19)
+<span id="WINCE"></span><span id="wince"></span>**WINCE** (19)
 
 
 </dt> <dd>
@@ -636,21 +636,21 @@ NCR 3000
 
 <span id="OSF"></span><span id="osf"></span>
 
-<span id="OSF"></span><span id="osf"></span>**Uso** (22)
+<span id="OSF"></span><span id="osf"></span>**OSF** (22)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="DC_OS"></span><span id="dc_os"></span>
 
-<span id="DC_OS"></span><span id="dc_os"></span>**DC/os** (23)
+<span id="DC_OS"></span><span id="dc_os"></span>**DC/SO** (23)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Reliant_UNIX"></span><span id="reliant_unix"></span><span id="RELIANT_UNIX"></span>
 
-<span id="Reliant_UNIX"></span><span id="reliant_unix"></span><span id="RELIANT_UNIX"></span>**Unix dependente** (24)
+<span id="Reliant_UNIX"></span><span id="reliant_unix"></span><span id="RELIANT_UNIX"></span>**Reliant UNIX** (24)
 
 
 </dt> <dd></dd> <dt>
@@ -671,14 +671,14 @@ NCR 3000
 
 <span id="Sequent"></span><span id="sequent"></span><span id="SEQUENT"></span>
 
-<span id="Sequent"></span><span id="sequent"></span><span id="SEQUENT"></span>**Subsequentes** (27)
+<span id="Sequent"></span><span id="sequent"></span><span id="SEQUENT"></span>**Sequenciado** (27)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="IRIX"></span><span id="irix"></span>
 
-<span id="IRIX"></span><span id="irix"></span>**IRIX** (28)
+<span id="IRIX"></span><span id="irix"></span>**I LTDA** (28)
 
 
 </dt> <dd></dd> <dt>
@@ -706,7 +706,7 @@ NCR 3000
 
 <span id="ASERIES"></span><span id="aseries"></span>
 
-<span id="ASERIES"></span><span id="aseries"></span>**ASeries** (32)
+<span id="ASERIES"></span><span id="aseries"></span>**ASERIES** (32)
 
 
 </dt> <dd>
@@ -722,7 +722,7 @@ Uma série
 
 </dt> <dd>
 
-NSK tandem
+Tandem NSK
 
 </dd> <dt>
 
@@ -733,7 +733,7 @@ NSK tandem
 
 </dt> <dd>
 
-NT em tandem
+Tandem NT
 
 </dd> <dt>
 
@@ -750,7 +750,7 @@ BS2000/OSD
 
 <span id="LINUX"></span><span id="linux"></span>
 
-<span id="LINUX"></span><span id="linux"></span>**Linux** (36)
+<span id="LINUX"></span><span id="linux"></span>**LINUX** (36)
 
 
 </dt> <dd></dd> <dt>
@@ -764,7 +764,7 @@ BS2000/OSD
 
 <span id="XENIX"></span><span id="xenix"></span>
 
-<span id="XENIX"></span><span id="xenix"></span>**Xenix** (38)
+<span id="XENIX"></span><span id="xenix"></span>**XENIX** (38)
 
 
 </dt> <dd></dd> <dt>
@@ -778,7 +778,7 @@ BS2000/OSD
 
 <span id="Interactive_UNIX"></span><span id="interactive_unix"></span><span id="INTERACTIVE_UNIX"></span>
 
-<span id="Interactive_UNIX"></span><span id="interactive_unix"></span><span id="INTERACTIVE_UNIX"></span>**Unix interativo** (40)
+<span id="Interactive_UNIX"></span><span id="interactive_unix"></span><span id="INTERACTIVE_UNIX"></span>**Interactive UNIX** (40)
 
 
 </dt> <dd></dd> <dt>
@@ -810,7 +810,7 @@ BSD UNIX
 
 <span id="GNU_Hurd"></span><span id="gnu_hurd"></span><span id="GNU_HURD"></span>
 
-<span id="GNU_Hurd"></span><span id="gnu_hurd"></span><span id="GNU_HURD"></span>**GNU Hurd** (44)
+<span id="GNU_Hurd"></span><span id="gnu_hurd"></span><span id="GNU_HURD"></span>**GNU – Obstáculos** (44)
 
 
 </dt> <dd></dd> <dt>
@@ -828,14 +828,14 @@ Mac OS 9
 
 <span id="MACH_Kernel"></span><span id="mach_kernel"></span><span id="MACH_KERNEL"></span>
 
-<span id="MACH_Kernel"></span><span id="mach_kernel"></span><span id="MACH_KERNEL"></span>**Kernel Mach** (46)
+<span id="MACH_Kernel"></span><span id="mach_kernel"></span><span id="MACH_KERNEL"></span>**Kernel DE NUM** (46)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Inferno"></span><span id="inferno"></span><span id="INFERNO"></span>
 
-<span id="Inferno"></span><span id="inferno"></span><span id="INFERNO"></span>**Inferno** (47)
+<span id="Inferno"></span><span id="inferno"></span><span id="INFERNO"></span>**Ela** (47)
 
 
 </dt> <dd></dd> <dt>
@@ -870,7 +870,7 @@ Mac OS 9
 
 <span id="MiNT"></span><span id="mint"></span><span id="MINT"></span>
 
-<span id="MiNT"></span><span id="mint"></span><span id="MINT"></span>**Menta** (52)
+<span id="MiNT"></span><span id="mint"></span><span id="MINT"></span>**MiNT** (52)
 
 
 </dt> <dd></dd> <dt>
@@ -891,7 +891,7 @@ Mac OS 9
 
 <span id="NextStep"></span><span id="nextstep"></span><span id="NEXTSTEP"></span>
 
-<span id="NextStep"></span><span id="nextstep"></span><span id="NEXTSTEP"></span>**NEXTSTEP** (55)
+<span id="NextStep"></span><span id="nextstep"></span><span id="NEXTSTEP"></span>**NextStep** (55)
 
 
 </dt> <dd></dd> <dt>
@@ -903,7 +903,7 @@ Mac OS 9
 
 </dt> <dd>
 
-Sistema operacional Palm
+So da Mão
 
 </dd> <dt>
 
@@ -953,17 +953,17 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ softwareelement**](cim-softwareelement.md).**Version**"), [**CIM \_ Key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) (" MIF. \|Componente DMTF \| 1,3 ")
+Qualificadores: [**Propagado**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**Version**"), [**cim \_ key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.3")
 </dt> </dl>
 
 Versão da operação.
 
-A versão da operação deve estar em um dos seguintes formatos:
+A versão da operação deve estar em uma das seguintes formas:
 
 -   <major>.<minor>.<revision>
 -   <major>.<minor><letter><revision>
 
-Essa propriedade é herdada [**da \_ verificação CIM**](cim-check.md).
+Essa propriedade é herdada de [**CIM \_ Check**](cim-check.md).
 
 </dd> </dl>
 

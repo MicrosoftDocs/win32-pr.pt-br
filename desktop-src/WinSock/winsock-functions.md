@@ -1,70 +1,70 @@
 ---
-description: A lista a seguir fornece descrições concisas de cada função do Winsock. Para obter informações adicionais sobre qualquer função, clique no nome da função.
+description: A lista a seguir fornece descrições concisas de cada função Winsock. Para obter informações adicionais sobre qualquer função, clique no nome da função.
 ms.assetid: edafb5f9-09fe-4f8e-9651-4002b6f622f4
 title: Funções do Winsock
 ms.topic: article
 ms.date: 10/01/2019
-ms.openlocfilehash: 9bf2205c970eeaaf4e64867565d58680b28298c8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5057a2fa7ff113da3c8e5f9077f9dfb1df83c3a390546b9d49d2d4b94db3625e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105772602"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119860716"
 ---
 # <a name="winsock-functions"></a>Funções do Winsock
 
-A lista a seguir fornece descrições concisas de cada função do Winsock. Para obter informações adicionais sobre qualquer função, clique no nome da função.
+A lista a seguir fornece descrições concisas de cada função Winsock. Para obter informações adicionais sobre qualquer função, clique no nome da função.
 
 | Função | Descrição |
 |-|-|
-| [**aceitar**](/windows/win32/api/Winsock2/nf-winsock2-accept) | Permite uma tentativa de conexão de entrada em um soquete. |
-| [**AcceptEx**](/windows/win32/api/mswsock/nf-mswsock-acceptex) | Aceita uma nova conexão, retorna o endereço local e remoto e recebe o primeiro bloco de dados enviados pelo aplicativo cliente. |
-| [**associa**](/windows/win32/api/winsock/nf-winsock-bind) | Associa um endereço local a um soquete. |
-| [**fechamento**](/windows/win32/api/winsock/nf-winsock-closesocket) | Fecha um soquete existente. |
-| [**Connect**](/windows/win32/api/Winsock2/nf-winsock2-connect) | Estabelece uma conexão com um soquete especificado. |
+| [**Aceitar**](/windows/win32/api/Winsock2/nf-winsock2-accept) | Permite uma tentativa de conexão de entrada em um soquete. |
+| [**AcceptEx**](/windows/win32/api/mswsock/nf-mswsock-acceptex) | Aceita uma nova conexão, retorna o endereço local e remoto e recebe o primeiro bloco de dados enviado pelo aplicativo cliente. |
+| [**Ligar**](/windows/win32/api/winsock/nf-winsock-bind) | Associa um endereço local a um soquete. |
+| [**Closesocket**](/windows/win32/api/winsock/nf-winsock-closesocket) | Fecha um soquete existente. |
+| [**Conectar**](/windows/win32/api/Winsock2/nf-winsock2-connect) | Estabelece uma conexão com um soquete especificado. |
 | [**ConnectEx**](/windows/win32/api/Mswsock/nc-mswsock-lpfn_connectex) | Estabelece uma conexão com um soquete especificado e, opcionalmente, envia dados depois que a conexão é estabelecida. Com suporte apenas em soquetes orientados a conexão. |
-| [**DisconnectEx**](/previous-versions/windows/desktop/legacy/ms737757(v=vs.85)) | Fecha uma conexão em um soquete e permite que o identificador de soquete seja reutilizado. |
+| [**DisconnectEx**](/previous-versions/windows/desktop/legacy/ms737757(v=vs.85)) | Fecha uma conexão em um soquete e permite que o alça de soquete seja reutilizado. |
 | [**EnumProtocols**](/windows/win32/api/Nspapi/nf-nspapi-enumprotocolsa) | Recupera informações sobre um conjunto especificado de protocolos de rede que estão ativos em um host local. |
-| [**freeaddrinfo**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-freeaddrinfo) | Libera informações de endereço que a função [**Getaddrinfo**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-getaddrinfo) aloca dinamicamente em estruturas [**addrinfo**](/windows/win32/api/ws2def/ns-ws2def-addrinfoa) . |
-| [**FreeAddrInfoEx**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-freeaddrinfoex) | Libera informações de endereço que a função [**GetAddrInfoEx**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-getaddrinfoexa) aloca dinamicamente em estruturas [**addrinfoex**](/windows/win32/api/Ws2def/ns-ws2def-addrinfoexw) . |
-| [**FreeAddrInfoW**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-freeaddrinfow) | Libera informações de endereço que a função [**GetAddrInfoW**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-getaddrinfow) aloca dinamicamente em estruturas [**addrinfoW**](/windows/win32/api/Ws2def/ns-ws2def-addrinfow) . |
-| [**Gai \_ strerror**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-gai_strerrora) | Ajuda na impressão de mensagens de erro com base nos erros de EAI \_ \* retornados pela função [**Getaddrinfo**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-getaddrinfo) . |
-| [**GetAcceptExSockaddrs**](/windows/win32/api/mswsock/nf-mswsock-getacceptexsockaddrs) | Analisa os dados obtidos de uma chamada para a função [**AcceptEx**](/windows/win32/api/mswsock/nf-mswsock-acceptex) . |
-| [**GetAddressByName**](/windows/win32/api/Nspapi/nf-nspapi-getaddressbynamea) | Consulta um namespace, ou um conjunto de namespaces padrão, para recuperar informações de endereço de rede para um serviço de rede especificado. Esse processo é conhecido como resolução de nome de serviço. Um serviço de rede também pode usar a função para obter informações de endereço local que ele pode usar com a função [**BIND**](/windows/win32/api/winsock/nf-winsock-bind) . |
-| [**getaddrinfo**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-getaddrinfo) | Fornece conversão independente de protocolo de um nome de host ANSI para um endereço. |
-| [**GetAddrInfoEx**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-getaddrinfoexa) | Fornece resolução de nomes independente de protocolo com parâmetros adicionais para qualificar quais provedores de espaço de nome devem tratar a solicitação. |
-| [**GetAddrInfoExCancel**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-getaddrinfoexcancel) | Cancela uma operação assíncrona pela função [**GetAddrInfoEx**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-getaddrinfoexa) . |
-| [**GetAddrInfoExOverlappedResult**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-getaddrinfoexoverlappedresult) | Obtém o código de retorno para uma estrutura **sobreposta** usada por uma operação assíncrona para a função [**GetAddrInfoEx**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-getaddrinfoexa) . |
-| [**GetAddrInfoW**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-getaddrinfow) | Fornece conversão independente de protocolo de um nome de host Unicode para um endereço. |
-| [**gethostbyaddr**](/windows/win32/api/wsipv6ok/nf-wsipv6ok-gethostbyaddr) | Recupera as informações do host correspondentes a um endereço de rede. |
-| [**gethostbyname**](/windows/win32/api/wsipv6ok/nf-wsipv6ok-gethostbyname) | Recupera informações do host correspondentes a um nome de host de um banco de dados de host. Preterido: use [**Getaddrinfo**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-getaddrinfo) em vez disso. |
-| [**GetHostName**](/windows/win32/api/winsock/nf-winsock-gethostname) | Recupera o nome de host padrão para o computador local. |
-| [**GetHostNameW**](/windows/win32/api/Winsock2/nf-winsock2-gethostnamew) | Recupera o nome de host padrão para o computador local como uma cadeia de caracteres Unicode. |
+| [**freeaddrinfo**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-freeaddrinfo) | Libera informações de endereço que a [**função getaddrinfo**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-getaddrinfo) aloca dinamicamente em estruturas [**addrinfo.**](/windows/win32/api/ws2def/ns-ws2def-addrinfoa) |
+| [**FreeAddrInfoEx**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-freeaddrinfoex) | Libera informações de endereço que a [**função GetAddrInfoEx**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-getaddrinfoexa) aloca dinamicamente em [**estruturas addrinfoex.**](/windows/win32/api/Ws2def/ns-ws2def-addrinfoexw) |
+| [**FreeAddrInfoW**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-freeaddrinfow) | Libera informações de endereço que a [**função GetAddrInfoW**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-getaddrinfow) aloca dinamicamente em estruturas [**addrinfoW.**](/windows/win32/api/Ws2def/ns-ws2def-addrinfow) |
+| [**\_strerror de strerror**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-gai_strerrora) | Auxilia na impressão de mensagens de erro com base nos erros de EAI \_ \* retornados pela [**função getaddrinfo.**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-getaddrinfo) |
+| [**GetAcceptExSockaddrs**](/windows/win32/api/mswsock/nf-mswsock-getacceptexsockaddrs) | Analisar os dados obtidos de uma chamada para a [**função AcceptEx.**](/windows/win32/api/mswsock/nf-mswsock-acceptex) |
+| [**GetAddressByName**](/windows/win32/api/Nspapi/nf-nspapi-getaddressbynamea) | Consulta um namespace ou um conjunto de namespaces padrão para recuperar informações de endereço de rede para um serviço de rede especificado. Esse processo é conhecido como resolução de nome de serviço. Um serviço de rede também pode usar a função para obter informações de endereço local que ele pode usar com a [**função bind.**](/windows/win32/api/winsock/nf-winsock-bind) |
+| [**Getaddrinfo**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-getaddrinfo) | Fornece tradução independente de protocolo de um nome de host ANSI para um endereço. |
+| [**GetAddrInfoEx**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-getaddrinfoexa) | Fornece resolução de nomes independentes de protocolo com parâmetros adicionais para qualificar quais provedores de espaço de nome devem lidar com a solicitação. |
+| [**GetAddrInfoExCancel**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-getaddrinfoexcancel) | Cancela uma operação assíncrona pela [**função GetAddrInfoEx.**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-getaddrinfoexa) |
+| [**GetAddrInfoExOverlappedResult**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-getaddrinfoexoverlappedresult) | Obtém o código de retorno para uma estrutura **OVERLAPPED** usada por uma operação assíncrona para a [**função GetAddrInfoEx.**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-getaddrinfoexa) |
+| [**GetAddrInfoW**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-getaddrinfow) | Fornece tradução independente de protocolo de um nome de host Unicode para um endereço. |
+| [**Gethostbyaddr**](/windows/win32/api/wsipv6ok/nf-wsipv6ok-gethostbyaddr) | Recupera as informações do host correspondentes a um endereço de rede. |
+| [**Gethostbyname**](/windows/win32/api/wsipv6ok/nf-wsipv6ok-gethostbyname) | Recupera informações de host correspondentes a um nome de host de um banco de dados host. Preterido: use [**getaddrinfo**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-getaddrinfo) em vez disso. |
+| [**Gethostname**](/windows/win32/api/winsock/nf-winsock-gethostname) | Recupera o nome do host padrão para o computador local. |
+| [**GetHostNameW**](/windows/win32/api/Winsock2/nf-winsock2-gethostnamew) | Recupera o nome do host padrão para o computador local como uma cadeia de caracteres Unicode. |
 | [**getipv4sourcefilter**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-getipv4sourcefilter) | Recupera o estado do filtro multicast para um soquete IPv4. |
 | [**GetNameByType**](/windows/win32/api/Nspapi/nf-nspapi-getnamebytypea) | Recupera o nome de um serviço de rede para o tipo de serviço especificado. |
-| [**getnameinfo**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-getnameinfo) | Fornece resolução de nomes de um endereço IPv4 ou IPv6 para um nome de host ANSI e de um número de porta para o nome do serviço ANSI. |
+| [**Getnameinfo**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-getnameinfo) | Fornece resolução de nomes de um endereço IPv4 ou IPv6 para um nome de host ANSI e de um número da porta para o nome do serviço ANSI. |
 | [**GetNameInfoW**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-getnameinfow) | Fornece resolução de nomes de um endereço IPv4 ou IPv6 para um nome de host Unicode e de um número de porta para o nome do serviço Unicode. |
-| [**getemparelhaname**](/windows/win32/api/winsock/nf-winsock-getpeername) | Recupera o endereço do par ao qual um soquete está conectado. |
+| [**Getpeername**](/windows/win32/api/winsock/nf-winsock-getpeername) | Recupera o endereço do par ao qual um soquete está conectado. |
 | [**getprotobyname**](/windows/win32/api/winsock/nf-winsock-getprotobyname) | Recupera as informações de protocolo correspondentes a um nome de protocolo. |
 | [**getprotobynumber**](/windows/win32/api/winsock/nf-winsock-getprotobynumber) | Recupera informações de protocolo correspondentes a um número de protocolo. |
 | [**getservbyname**](/windows/win32/api/winsock/nf-winsock-getservbyname) | Recupera informações de serviço correspondentes a um nome de serviço e protocolo. |
-| [**getservbyport**](/windows/win32/api/winsock/nf-winsock-getservbyport) | Recupera informações de serviço correspondentes a uma porta e um protocolo. |
+| [**getservbyport**](/windows/win32/api/winsock/nf-winsock-getservbyport) | Recupera informações de serviço correspondentes a uma porta e protocolo. |
 | [**GetService**](/windows/win32/api/Nspapi/nf-nspapi-getservicea) | Recupera informações sobre um serviço de rede no contexto de um conjunto de namespaces padrão ou um namespace especificado. |
-| [**getsockname**](/windows/win32/api/winsock/nf-winsock-getsockname) | Recupera o nome local de um soquete. |
-| [**getsockopt**](/windows/win32/api/winsock/nf-winsock-getsockopt) | Recupera uma opção de soquete. |
+| [**Getsockname**](/windows/win32/api/winsock/nf-winsock-getsockname) | Recupera o nome local de um soquete. |
+| [**Getsockopt**](/windows/win32/api/winsock/nf-winsock-getsockopt) | Recupera uma opção de soquete. |
 | [**getsourcefilter**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-getsourcefilter) | Recupera o estado do filtro multicast para um soquete IPv4 ou IPv6. |
 | [**GetTypeByName**](/windows/win32/api/Nspapi/nf-nspapi-gettypebynamea) | Recupera um GUID de tipo de serviço para um serviço de rede especificado pelo nome. |
-| [**htond**](/windows/win32/api/Winsock2/nf-winsock2-htond) | Converte um **Double** do host em uma ordem de bytes de rede TCP/IP (que é big-endian). |
-| [**htonf**](/windows/win32/api/Winsock2/nf-winsock2-htonf) | Converte um **float** do host para a ordem de bytes de rede TCP/IP (que é big-endian). |
-| [**htonl**](/windows/win32/api/winsock/nf-winsock-htonl) | Converte um **u \_ longo** do host para a ordem de bytes de rede TCP/IP (que é big-endian). |
-| [**htonll**](/windows/win32/api/Winsock2/nf-winsock2-htonll) | Converte um **\_ \_ Int64 não assinado** do host para a ordem de bytes de rede TCP/IP (que é big-endian). |
-| [**htons**](/windows/win32/api/winsock/nf-winsock-htons) | Converte um **u \_ curto** do host em uma ordem de bytes de rede TCP/IP (que é big-endian). |
-| [**\_endereço inet**](/windows/win32/api/winsock2/nf-winsock2-inet_addr) | Converte uma cadeia de caracteres que contém um endereço de protocolo de Internet (IPv4) pontilhado em um endereço apropriado para a estrutura [**de \_**](/windows/win32/api/winsock2/ns-winsock2-in_addr) endereço. |
-| [**\_NTOA inet**](/windows/win32/api/winsock2/nf-winsock2-inet_ntoa) | Converte um endereço de rede da Internet (IPv4) em uma cadeia de caracteres no formato pontilhado padrão da Internet. |
+| [**htond**](/windows/win32/api/Winsock2/nf-winsock2-htond) | Converte um double **de** host em ordem de byte de rede TCP/IP (que é big-endian). |
+| [**htonf**](/windows/win32/api/Winsock2/nf-winsock2-htonf) | Converte um **float do** host em ordem de byte de rede TCP/IP (que é big-endian). |
+| [**Htonl**](/windows/win32/api/winsock/nf-winsock-htonl) | Converte um **u \_ long do** host em ordem de byte de rede TCP/IP (que é big-endian). |
+| [**htonll**](/windows/win32/api/Winsock2/nf-winsock2-htonll) | Converte um **\_ \_ int64 sem** assinatura do host para a ordem de byte de rede TCP/IP (que é big-endian). |
+| [**Htons**](/windows/win32/api/winsock/nf-winsock-htons) | Converte um **u \_ short do** host em ordem de byte de rede TCP/IP (que é big-endian). |
+| [**inet \_ addr**](/windows/win32/api/winsock2/nf-winsock2-inet_addr) | Converte uma cadeia de caracteres que contém um endereço pontilhado do protocolo Ipv4 em um endereço adequado para o [**na \_ estrutura do adador.**](/windows/win32/api/winsock2/ns-winsock2-in_addr) |
+| [**inet \_ ntoa**](/windows/win32/api/winsock2/nf-winsock2-inet_ntoa) | Converte um endereço de rede da Internet (IPv4) em uma cadeia de caracteres no formato pontilhado padrão da Internet. |
 | [**InetNtop**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-inetntopw) | Converte um endereço de rede de Internet IPv4 ou IPv6 em uma cadeia de caracteres no formato padrão da Internet. A versão ANSI dessa função é [**inet \_ ntop**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-inetntopw). |
 | [**InetPton**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-inetptonw) | Converte um endereço de rede de Internet IPv4 ou IPv6 em seu formulário de apresentação de texto padrão em seu formato binário numérico. A versão ANSI dessa função é [**inet \_ pton**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-inetptonw). |
 | [**ioctlsocket**](/windows/win32/api/winsock/nf-winsock-ioctlsocket) | Controla o modo de e/s de um soquete. |
-| [**ouvir**](/windows/win32/api/Winsock2/nf-winsock2-listen) | Coloca um soquete em um estado em que está escutando uma conexão de entrada. |
+| [**listen**](/windows/win32/api/Winsock2/nf-winsock2-listen) | Coloca um soquete em um estado em que está escutando uma conexão de entrada. |
 | [**ntohd**](/windows/win32/api/Winsock2/nf-winsock2-ntohd) | Converte um **\_ \_ Int64 não assinado** da ordem da rede TCP/IP para hospedar a ordem de bytes (que é little-endian em processadores Intel) e retorna um **Double**. |
 | [**ntohf**](/windows/win32/api/Winsock2/nf-winsock2-ntohf) | Converte um **\_ \_ Int32 não assinado** de uma ordem de rede TCP/IP para hospedar a ordem de bytes (que é little-endian em processadores Intel) e retorna um **float**. |
 | [**ntohl**](/windows/win32/api/winsock/nf-winsock-ntohl) | Converte um u \_ longo da ordem da rede TCP/IP para hospedar a ordem de bytes (que é little-endian em processadores Intel). |
@@ -106,7 +106,7 @@ A lista a seguir fornece descrições concisas de cada função do Winsock. Para
 | [**WSAAsyncGetProtoByNumber**](/windows/win32/api/winsock/nf-winsock-wsaasyncgetprotobynumber) | Recupera de forma assíncrona as informações de protocolo que correspondem a um número de protocolo. |
 | [**WSAAsyncGetServByName**](/windows/win32/api/winsock/nf-winsock-wsaasyncgetservbyname) | Recupera de forma assíncrona as informações de serviço que correspondem a um nome de serviço e a uma porta. |
 | [**WSAAsyncGetServByPort**](/windows/win32/api/winsock/nf-winsock-wsaasyncgetservbyport) | Recupera de forma assíncrona as informações de serviço que correspondem a uma porta e um protocolo. |
-| [**WSAAsyncSelect**](/windows/win32/api/winsock/nf-winsock-wsaasyncselect) | Solicita notificação baseada em mensagem do Windows de eventos de rede para um soquete. |
+| [**WSAAsyncSelect**](/windows/win32/api/winsock/nf-winsock-wsaasyncselect) | solicitações Windows notificação baseada em mensagem de eventos de rede para um soquete. |
 | [**WSACancelAsyncRequest**](/windows/win32/api/winsock/nf-winsock-wsacancelasyncrequest) | Cancela uma operação assíncrona incompleta. |
 | [**WSACleanup**](/windows/win32/api/winsock/nf-winsock-wsacleanup) | Encerra o uso do32.DLL Ws2 \_ . |
 | [**WSACloseEvent**](/windows/win32/api/Winsock2/nf-winsock2-wsacloseevent) | Fecha um identificador de objeto de evento aberto. |
@@ -159,16 +159,16 @@ A lista a seguir fornece descrições concisas de cada função do Winsock. Para
 | [**WSASendDisconnect**](/windows/win32/api/Winsock2/nf-winsock2-wsasenddisconnect) | Inicia o encerramento da conexão para o soquete e envia dados de desconexão. |
 | [**WSASendMsg**](/windows/win32/api/winsock2/nf-winsock2-wsasendmsg) | Envia dados e informações de controle opcional de soquetes conectados e desconectados. |
 | [**WSASendTo**](/windows/win32/api/Winsock2/nf-winsock2-wsasendto) | Envia dados para um destino específico, usando e/s sobreposta, quando aplicável. |
-| [**WSASetEvent**](/windows/win32/api/Winsock2/nf-winsock2-wsasetevent) | Define o estado do objeto de evento especificado a ser sinalizado. |
-| [**WSASetFailConnectOnIcmpError**](/windows/win32/api/ws2tcpip/nf-ws2tcpip-wsasetfailconnectonicmperror) | Define o estado da opção de soquete [**TCP_FAIL_CONNECT_ON_ICMP_ERROR**](./ipproto-tcp-socket-options.md) . |
-| [**WSASetIPUserMtu**](/windows/win32/api/ws2tcpip/nf-ws2tcpip-wsasetipusermtu) | Define a MTU da camada de IP definida pelo usuário em um soquete. |
+| [**WSASetEvent**](/windows/win32/api/Winsock2/nf-winsock2-wsasetevent) | Define o estado do objeto de evento especificado como sinalizado. |
+| [**WSASetFailConnectOnIcmpError**](/windows/win32/api/ws2tcpip/nf-ws2tcpip-wsasetfailconnectonicmperror) | Define o estado da opção [**TCP_FAIL_CONNECT_ON_ICMP_ERROR**](./ipproto-tcp-socket-options.md) soquete. |
+| [**WSASetIPUserMtu**](/windows/win32/api/ws2tcpip/nf-ws2tcpip-wsasetipusermtu) | Define a MTU da camada IP definida pelo usuário em um soquete. |
 | [**WSASetLastError**](/windows/win32/api/winsock/nf-winsock-wsasetlasterror) | Define o código de erro. |
-| [**WSASetService**](/windows/win32/api/Winsock2/nf-winsock2-wsasetservicea) | Registra ou remove do registro uma instância de serviço em um ou mais namespaces. |
-| [**WSASetSocketPeerTargetName**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-wsasetsocketpeertargetname) | Usado para especificar o nome de destino par (SPN) que corresponde a um endereço IP par. Esse nome de destino deve ser especificado por aplicativos cliente para identificar com segurança o par que deve ser autenticado. |
-| [**WSASetSocketSecurity**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-wsasetsocketsecurity) | Habilita e aplica a segurança de um soquete. |
-| [**WSASetUdpRecvMaxCoalescedSize**](/windows/win32/api/ws2tcpip/nf-ws2tcpip-wsasetudprecvmaxcoalescedsize) | Define o tamanho máximo de uma mensagem agrupada definida em um soquete UDP. |
+| [**Wsasetservice**](/windows/win32/api/Winsock2/nf-winsock2-wsasetservicea) | Registra ou remove do Registro uma instância de serviço em um ou mais namespaces. |
+| [**WSASetSocketPeerTargetName**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-wsasetsocketpeertargetname) | Usado para especificar o SPN (nome de destino par) que corresponde a um endereço IP par. Esse nome de destino deve ser especificado por aplicativos cliente para identificar com segurança o par que deve ser autenticado. |
+| [**WSASetSocketSecurity**](/windows/win32/api/Ws2tcpip/nf-ws2tcpip-wsasetsocketsecurity) | Habilita e aplica a segurança para um soquete. |
+| [**WSASetUdpRecvMaxCoalescedSize**](/windows/win32/api/ws2tcpip/nf-ws2tcpip-wsasetudprecvmaxcoalescedsize) | Define o tamanho máximo de um conjunto de mensagens coalesced em um soquete UDP. |
 | [**WSASetUdpSendMessageSize**](/windows/win32/api/ws2tcpip/nf-ws2tcpip-wsasetudpsendmessagesize) | Define o tamanho da mensagem de segmentação em um soquete UDP. |
-| [**WSASocket**](/windows/win32/api/Winsock2/nf-winsock2-wsasocketa) | Cria um soquete que está associado a um provedor de serviço de transporte específico. |
-| [**WSAStartup**](/windows/win32/api/winsock/nf-winsock-wsastartup) | Inicia o uso de WS2 \_32.DLL por um processo. |
-| [**WSAStringToAddress**](/windows/win32/api/Winsock2/nf-winsock2-wsastringtoaddressa) | Converte uma cadeia de caracteres numérica em uma estrutura [**SOCKADDR**](sockaddr-2.md) . |
-| [**WSAWaitForMultipleEvents**](/windows/win32/api/Winsock2/nf-winsock2-wsawaitformultipleevents) | Retorna quando um ou todos os objetos de evento especificados estão no estado sinalizado ou quando o intervalo de tempo limite expira. |
+| [**Wsasocket**](/windows/win32/api/Winsock2/nf-winsock2-wsasocketa) | Cria um soquete que está vinculado a um provedor de serviço de transporte específico. |
+| [**Wsastartup**](/windows/win32/api/winsock/nf-winsock-wsastartup) | Inicia o uso do WS2 \_32.DLL por um processo. |
+| [**WSAStringToAddress**](/windows/win32/api/Winsock2/nf-winsock2-wsastringtoaddressa) | Converte uma cadeia de caracteres numérica em uma [**estrutura sockaddr.**](sockaddr-2.md) |
+| [**WSAWaitForMultipleEvents**](/windows/win32/api/Winsock2/nf-winsock2-wsawaitformultipleevents) | Retorna quando um ou todos os objetos de evento especificados estão no estado sinalizado ou quando o intervalo de tempo-expira. |

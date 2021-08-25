@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b916cc9ee9ad3914ef0b7e826fe0d0c390a8f11
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: fa5dc7a5574598254d01e7309fa98f6c0b7e163c10dcf6e6265bc0c3bc7149df
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105754001"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119803906"
 ---
 # <a name="ms-ds-operations-for-az-role-attribute"></a>ms-DS-Operations-for-AZ-role Attribute
 
@@ -107,7 +107,7 @@ Lista de operações vinculadas a AZ-Role.
 | Range-Upper            | \-                                                |
 | Search-Flags           | 0x00000000                                        |
 | System-Flags           | 0x00000010                                        |
-| Classes usadas em        | [**ms-DS-AZ-role**](c-msds-azrole.md)<br/> |
+| Classes usadas em        | [**ms-DS-Az-Role**](c-msds-azrole.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Lista de operações vinculadas a AZ-Role.
 | ID do link                | 2022                                              |
 | MAPI-Id                | \-                                                |
 | System-Only            | Falso                                             |
-| É de valor único       | Falso                                             |
+| Tem valor único       | Falso                                             |
 | É indexado             | Falso                                             |
-| No catálogo global      | Falso                                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                      |
+| No Catálogo Global      | Falso                                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                                      |
 | Range-Lower            | \-                                                |
 | Range-Upper            | \-                                                |
 | Search-Flags           | 0x00000000                                        |
 | System-Flags           | 0x00000010                                        |
-| Classes usadas em        | [**ms-DS-AZ-role**](c-msds-azrole.md)<br/> |
+| Classes usadas em        | [**ms-DS-Az-Role**](c-msds-azrole.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Lista de operações vinculadas a AZ-Role.
 | ID do link                | 2022                                              |
 | MAPI-Id                | \-                                                |
 | System-Only            | Falso                                             |
-| É de valor único       | Falso                                             |
+| Tem valor único       | Falso                                             |
 | É indexado             | Falso                                             |
-| No catálogo global      | Falso                                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                      |
+| No Catálogo Global      | Falso                                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                                      |
 | Range-Lower            | \-                                                |
 | Range-Upper            | \-                                                |
 | Search-Flags           | 0x00000000                                        |
 | System-Flags           | 0x00000010                                        |
-| Classes usadas em        | [**ms-DS-AZ-role**](c-msds-azrole.md)<br/> |
+| Classes usadas em        | [**ms-DS-Az-Role**](c-msds-azrole.md)<br/> |
 
 
 

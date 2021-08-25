@@ -1,19 +1,19 @@
 ---
-description: O ETW define as seguintes macros de conveniência que você pode usar para acessar membros da \_ estrutura do descritor de eventos.
+description: O ETW define as macros de conveniência a seguir que você pode usar para acessar membros da estrutura \_ EVENT DESCRIPTOR.
 ms.assetid: ce5439cb-8bb7-4d71-8908-d4ccf6086811
-title: Macros de rastreamento de eventos
+title: Macros de Rastreamento de Eventos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a5017973627fc18b153b3b9eaed52dcb4b71c18
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8601293e958e2931d45fcade8f1e7840788d40c2ede818d6301ada745267166e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501387"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119914426"
 ---
-# <a name="event-tracing-macros"></a>Macros de rastreamento de eventos
+# <a name="event-tracing-macros"></a>Macros de Rastreamento de Eventos
 
-O ETW define as seguintes macros de conveniência que você pode usar para acessar membros da \_ estrutura do descritor de eventos.
+O ETW define as macros de conveniência a seguir que você pode usar para acessar membros da estrutura \_ EVENT DESCRIPTOR.
 
 <dl>
 

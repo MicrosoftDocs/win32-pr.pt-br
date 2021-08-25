@@ -20,12 +20,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: d022023142b38905067e30a4c1be3b133e49a86f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5b3a30b6df2b4fea50022f047df42f04e3635b37d015e16fed50e2d971827b61
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105758991"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119829646"
 ---
 # <a name="cim_allocationcapabilities-class"></a>\_Classe CIM AllocationCapabilities
 
@@ -301,14 +301,14 @@ O tipo de recurso atribuído a essa configuração de alocação.
 
 <span id="Storage_Extent"></span><span id="storage_extent"></span><span id="STORAGE_EXTENT"></span>
 
-**Extensão de armazenamento** (19)
+**extensão de Armazenamento** (19)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Other_Storage_Device"></span><span id="other_storage_device"></span><span id="OTHER_STORAGE_DEVICE"></span>
 
-**Outro dispositivo de armazenamento** (20)
+**outro dispositivo de Armazenamento** (20)
 
 
 </dt> <dd></dd> <dt>
@@ -392,7 +392,7 @@ O tipo de recurso atribuído a essa configuração de alocação.
 
 <span id="Storage_Volume"></span><span id="storage_volume"></span><span id="STORAGE_VOLUME"></span>
 
-**Volume de armazenamento** (32)
+**Armazenamento Volume** (32)
 
 
 </dt> <dd></dd> <dt>
@@ -568,7 +568,7 @@ O sistema declara que tem suporte quando um novo recurso é criado.
 
 <span id="Paused"></span><span id="paused"></span><span id="PAUSED"></span>
 
-Em **pausa** (11)
+**Pausado** (11)
 
 
 </dt> <dd></dd> <dt>
@@ -582,14 +582,14 @@ Em **pausa** (11)
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DMTF reservado** (..)
+**DMTF Reservado** (..)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Fornecedor reservado** (0x8000.. 0xFFFF
+**Vendor Reserved** (0x8000.. 0xFFFF)
 
 
 </dt> <dd></dd> </dl>
@@ -599,16 +599,16 @@ Em **pausa** (11)
 **SupportedRemoveStates**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: a matriz **UInt16**
+Tipo de dados: **matriz uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ EnabledLogicalElement**](cim-enabledlogicalelement.md).**Enabledstate**")
+Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ EnabledLogicalElement**](cim-enabledlogicalelement.md).**EnabledState**")
 </dt> </dl>
 
-Os Estados do sistema têm suporte quando um recurso é removido.
+O sistema declara que há suporte quando um recurso é removido.
 
 <dt>
 
@@ -656,7 +656,7 @@ Os Estados do sistema têm suporte quando um recurso é removido.
 
 <span id="In_Test"></span><span id="in_test"></span><span id="IN_TEST"></span>
 
-**Em teste** (7)
+**Em Teste** (7)
 
 
 </dt> <dd></dd> <dt>
@@ -670,7 +670,7 @@ Os Estados do sistema têm suporte quando um recurso é removido.
 
 <span id="Quiesce"></span><span id="quiesce"></span><span id="QUIESCE"></span>
 
-**Desativar** (9)
+**Quiesce** (9)
 
 
 </dt> <dd></dd> <dt>
@@ -684,7 +684,7 @@ Os Estados do sistema têm suporte quando um recurso é removido.
 
 <span id="Paused"></span><span id="paused"></span><span id="PAUSED"></span>
 
-Em **pausa** (11)
+**Pausado** (11)
 
 
 </dt> <dd></dd> <dt>
@@ -698,14 +698,14 @@ Em **pausa** (11)
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DMTF reservado** (..)
+**DMTF Reservado** (..)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Fornecedor reservado** (0x8000.. 0xFFFF
+**Vendor Reserved** (0x8000.. 0xFFFF)
 
 
 </dt> <dd></dd> </dl>
@@ -720,8 +720,8 @@ Em **pausa** (11)
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                                          |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -730,7 +730,7 @@ Em **pausa** (11)
 
 <dl> <dt>
 
-[**Recursos de CIM \_**](cim-capabilities.md)
+[**Funcionalidades cim \_**](cim-capabilities.md)
 </dt> </dl>
 
  

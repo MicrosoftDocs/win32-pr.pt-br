@@ -1,6 +1,6 @@
 ---
-title: Função AllocCountedString (NapUtil. h)
-description: Aloca memória para uma cadeia de caracteres terminada em nulo e a retorna em uma estrutura de conta.
+title: Função AllocCountedString (NapUtil.h)
+description: Aloca memória para uma cadeia de caracteres terminada em nulo e a retorna em uma estrutura CountedString.
 ms.assetid: 6dd503bf-8853-499b-adcd-54de696f01d6
 keywords:
 - Função AllocCountedString NAP
@@ -14,21 +14,21 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ab2980ce5eefdd7743907bdcc947cdce1c74823
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ef205cf7211f25253a3e6ba0cb7cd84ac37dbdb49848b36e844595d632552331
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105757769"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119891736"
 ---
 # <a name="alloccountedstring-function"></a>Função AllocCountedString
 
 > [!Note]  
-> A plataforma de proteção de acesso à rede não está disponível a partir do Windows 10
+> A plataforma de Proteção de Acesso à Rede não está disponível a partir do Windows 10
 
  
 
-A função **AllocCountedString** aloca memória para uma cadeia de caracteres terminada em nulo e a retorna em uma estrutura de [**conta**](/windows/win32/api/naptypes/ns-naptypes-countedstring) .
+A **função AllocCountedString** aloca memória para uma cadeia de caracteres terminada em nulo e a retorna em uma estrutura [**CountedString.**](/windows/win32/api/naptypes/ns-naptypes-countedstring)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,21 +46,21 @@ NAPAPI HRESULT WINAPI AllocCountedString(
 
 <dl> <dt>
 
-*contado* \[ entrada, saída\]
+*countedString* \[ in, out\]
 </dt> <dd>
 
-Um ponteiro para o endereço de uma estrutura de [**contadostring**](/windows/win32/api/naptypes/ns-naptypes-countedstring) alocada recentemente.
+Um ponteiro para o endereço de uma estrutura [**CountedString**](/windows/win32/api/naptypes/ns-naptypes-countedstring) recém-alocada.
 
 </dd> <dt>
 
-*cadeia de caracteres* \[ no\]
+*cadeia de caracteres* \[ Em\]
 </dt> <dd>
 
-Um ponteiro para a cadeia de caracteres terminada em nulo que será retornado em *contadostring*.
+Um ponteiro para a cadeia de caracteres terminada em nulo que deve ser retornada em *countedString.*
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 
 
@@ -76,11 +76,11 @@ Um ponteiro para a cadeia de caracteres terminada em nulo que será retornado em
 
 ## <a name="remarks"></a>Comentários
 
-Todas as interfaces COM com suporte do sistema NAP usam regras de gerenciamento de memória COM padrão e os alocadores de memória COM (**CoTaskMemAlloc** e **CoTaskMemFree**):
+Todas as interfaces COM com suporte pelo sistema NAP usam regras de gerenciamento de memória COM padrão e alocadores de memória COM (**CoTaskMemAlloc** e **CoTaskMemFree**):
 
--   **Em** parâmetros são alocados e liberados pelo chamador.
--   Os parâmetros de **saída** são alocados pelo receptor e liberados pelo chamador usando **CoTaskMem**.
--   Os parâmetros **in/out** são alocados pelo chamador, liberados e realocados pelo receptor e, por fim, liberados pelo chamador, usando **CoTaskMem**.
+-   **Em,** os parâmetros são alocados e liberados pelo chamador.
+-   **Os** parâmetros out são alocados pelo chamador e liberados pelo chamador usando **CoTaskMem.**
+-   **Os parâmetros** de saída são alocados pelo chamador, liberados e realocados pelo chamador e, por fim, liberados pelo chamador, usando **CoTaskMem.**
 
 Todas as funções NAP para liberar memória também liberam todos os ponteiros inseridos.
 
@@ -90,9 +90,9 @@ Todas as funções NAP para liberar memória também liberam todos os ponteiros 
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                 |
-| parâmetro<br/>                   | <dl> <dt>NapUtil. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                 |
+| Cabeçalho<br/>                   | <dl> <dt>NapUtil.h</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qutil.dll</dt> </dl> |
 
 

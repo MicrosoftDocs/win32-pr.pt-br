@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a041375ba9e00539c51d1022b0f053b79c6eae1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 3cc52a1476ec365d18266ff1197d019dff7983819217df18fb443434a8f016c3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105755245"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119835366"
 ---
 # <a name="user-cert-attribute"></a>User-Cert atributo
 
@@ -58,9 +58,9 @@ Certificados Nortel v1 ou DMS.
 | ID do link                | \-                                                   |
 | MAPI-Id                | 0x3A22                                               |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| É de valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
-| No catálogo global      | True                                                 |
+| No catálogo global      | Verdadeiro                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
 | Range-Lower            | 0                                                    |
 | Range-Upper            | 32767                                                |
@@ -79,9 +79,9 @@ Certificados Nortel v1 ou DMS.
 | ID do link                | \-                                                   |
 | MAPI-Id                | 0x3A22                                               |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| É de valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
-| No catálogo global      | True                                                 |
+| No catálogo global      | Verdadeiro                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
 | Range-Lower            | 0                                                    |
 | Range-Upper            | 32767                                                |
@@ -100,9 +100,9 @@ Certificados Nortel v1 ou DMS.
 | ID do link                | \-                                                   |
 | MAPI-Id                | 0x3A22                                               |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| É de valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
-| No catálogo global      | True                                                 |
+| No catálogo global      | Verdadeiro                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
 | Range-Lower            | 0                                                    |
 | Range-Upper            | 32767                                                |
@@ -121,9 +121,9 @@ Certificados Nortel v1 ou DMS.
 | ID do link                | \-                                                   |
 | MAPI-Id                | 0x3A22                                               |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| É de valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
-| No catálogo global      | True                                                 |
+| No catálogo global      | Verdadeiro                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
 | Range-Lower            | 0                                                    |
 | Range-Upper            | 32767                                                |
@@ -142,9 +142,9 @@ Certificados Nortel v1 ou DMS.
 | ID do link                | \-                                                   |
 | MAPI-Id                | 0x3A22                                               |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| É de valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
-| No catálogo global      | True                                                 |
+| No catálogo global      | Verdadeiro                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
 | Range-Lower            | 0                                                    |
 | Range-Upper            | 32767                                                |
@@ -163,9 +163,9 @@ Certificados Nortel v1 ou DMS.
 | ID do link                | \-                                                   |
 | MAPI-Id                | 0x3A22                                               |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| É de valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
-| No catálogo global      | True                                                 |
+| No catálogo global      | Verdadeiro                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
 | Range-Lower            | 0                                                    |
 | Range-Upper            | 32767                                                |

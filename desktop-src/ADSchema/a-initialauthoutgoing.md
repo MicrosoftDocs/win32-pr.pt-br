@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e84faaa443c9589e04f4998dc41d72fe870b5f2e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 9d6b904249224b5c861216f5913637ab18458b9d6b11d1b354d46311e1861558
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086677"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119925386"
 ---
 # <a name="initial-auth-outgoing-attribute"></a>Autenticação inicial – atributo de saída
 
@@ -58,7 +58,7 @@ Contém informações sobre uma autenticação de saída inicial enviada pelo se
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| É de valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
 | No catálogo global      | Falso                                                |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
@@ -79,7 +79,7 @@ Contém informações sobre uma autenticação de saída inicial enviada pelo se
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| É de valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
 | No catálogo global      | Falso                                                |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
@@ -100,7 +100,7 @@ Contém informações sobre uma autenticação de saída inicial enviada pelo se
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| É de valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
 | No catálogo global      | Falso                                                |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
@@ -121,7 +121,7 @@ Contém informações sobre uma autenticação de saída inicial enviada pelo se
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| É de valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
 | No catálogo global      | Falso                                                |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
@@ -142,7 +142,7 @@ Contém informações sobre uma autenticação de saída inicial enviada pelo se
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| É de valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
 | No catálogo global      | Falso                                                |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
@@ -163,7 +163,7 @@ Contém informações sobre uma autenticação de saída inicial enviada pelo se
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| É de valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
 | No catálogo global      | Falso                                                |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |

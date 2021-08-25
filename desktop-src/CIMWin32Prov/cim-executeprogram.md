@@ -25,12 +25,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 76743d255bc50d213a4ce3f44057d97830078ccd
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: beaea36c40083e4305cf2304dd7a60dadc55e9eee3315288525ffcfdf056a192
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089289"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119924006"
 ---
 # <a name="cim_executeprogram-class"></a>\_Classe CIM ExecuteProgram
 
@@ -78,7 +78,7 @@ A classe **CIM \_ ExecuteProgram** tem esses métodos.
 
 | Método                                                      | Descrição                                                   |
 |:------------------------------------------------------------|:--------------------------------------------------------------|
-| [**Chame**](invoke-method-in-class-cim-executeprogram.md) | Executa uma ação específica. Não implementado pelo WMI.<br/> |
+| [**Invoke**](invoke-method-in-class-cim-executeprogram.md) | Executa uma ação específica. Não implementado pelo WMI.<br/> |
 
 
 
@@ -447,7 +447,7 @@ VM (máquina virtual) da Microsoft para Java
 
 </dt> <dd>
 
-Windows 3. x
+Windows Win
 
 </dd> <dt>
 
@@ -529,7 +529,7 @@ NCR 3000
 
 <span id="Reliant_UNIX"></span><span id="reliant_unix"></span><span id="RELIANT_UNIX"></span>
 
-<span id="Reliant_UNIX"></span><span id="reliant_unix"></span><span id="RELIANT_UNIX"></span>**Unix dependente** (24)
+<span id="Reliant_UNIX"></span><span id="reliant_unix"></span><span id="RELIANT_UNIX"></span>**UNIX dependentes** (24)
 
 
 </dt> <dd></dd> <dt>
@@ -657,7 +657,7 @@ BS2000/OSD
 
 <span id="Interactive_UNIX"></span><span id="interactive_unix"></span><span id="INTERACTIVE_UNIX"></span>
 
-<span id="Interactive_UNIX"></span><span id="interactive_unix"></span><span id="INTERACTIVE_UNIX"></span>**Unix interativo** (40)
+<span id="Interactive_UNIX"></span><span id="interactive_unix"></span><span id="INTERACTIVE_UNIX"></span>**UNIX interativos** (40)
 
 
 </dt> <dd></dd> <dt>
@@ -669,7 +669,7 @@ BS2000/OSD
 
 </dt> <dd>
 
-BSD UNIX
+UNIX BSD
 
 </dd> <dt>
 

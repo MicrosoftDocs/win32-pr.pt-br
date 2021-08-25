@@ -1,7 +1,7 @@
 ---
 description: O método Receive fornece um exemplo de mídia para o pino de entrada.
 ms.assetid: a8ee0988-8955-48d0-be1b-24eea72d560d
-title: Método COutputQueue. Receive (Outputq. h)
+title: Método COutputQueue.Receive (Outputq.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0ce8a0d44730fa35b38cf6d738edd26168284a46
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8fb896429e53c16b30dbc4301f2e54fca5a2087dc1c89635fa33395f68ba0f5b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105770279"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119871496"
 ---
-# <a name="coutputqueuereceive-method"></a>Método COutputQueue. Receive
+# <a name="coutputqueuereceive-method"></a>Método COutputQueue.Receive
 
-O `Receive` método entrega um exemplo de mídia para o pino de entrada.
+O `Receive` método fornece um exemplo de mídia para o pino de entrada.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,19 +45,19 @@ HRESULT Receive(
 *pSample* 
 </dt> <dd>
 
-Ponteiro para a interface [**IMediaSample**](/windows/desktop/api/Strmif/nn-strmif-imediasample) do exemplo.
+Ponteiro para a interface [**IMediaSample do**](/windows/desktop/api/Strmif/nn-strmif-imediasample) exemplo.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor **HRESULT** . Os valores possíveis incluem os mostrados na tabela a seguir.
+Retorna um **valor HRESULT.** Os valores possíveis incluem aqueles mostrados na tabela a seguir.
 
 
 
 | Código de retorno                                                                             | Descrição                                                                   |
 |-----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-| <dl> <dt>**\_falso**</dt> </dl> | Notificação de fim de fluxo recebida antes do processamento deste exemplo.<br/> |
+| <dl> <dt>**S \_ FALSE**</dt> </dl> | Notificação de fim de fluxo recebida antes de processar este exemplo.<br/> |
 | <dl> <dt>**S \_ OK**</dt> </dl>    | Êxito.<br/>                                                           |
 
 
@@ -66,7 +66,7 @@ Retorna um valor **HRESULT** . Os valores possíveis incluem os mostrados na tab
 
 ## <a name="remarks"></a>Comentários
 
-Esse método chama o método [**COutputQueue:: ReceiveMultiple**](coutputqueue-receivemultiple.md) .
+Esse método chama o [**método COutputQueue::ReceiveMultiple.**](coutputqueue-receivemultiple.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -74,8 +74,8 @@ Esse método chama o método [**COutputQueue:: ReceiveMultiple**](coutputqueue-r
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Outputq. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Outputq.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

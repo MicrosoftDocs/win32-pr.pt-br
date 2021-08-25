@@ -5,14 +5,14 @@ ms.assetid: 26C41948-9625-4786-BBDF-552D1F8A2437
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 47725702676d385d607fa87533680b9ffe0fc0df
-ms.sourcegitcommit: 294c5ab750c46b5100bb2c84ef6c33ef7266c54b
+ms.openlocfilehash: 2624a300811b4d4a1eef70873a31af89b0546224fd9b4f3ba06ecb1fbd2fac42
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "104548273"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119894666"
 ---
-# <a name="uma-optimizations-cpu-accessible-textures-and-standard-swizzle"></a>Otimizações de uma: texturas acessíveis de CPU e swizzle padrão
+# <a name="uma-optimizations-cpu-accessible-textures-and-standard-swizzle"></a>Otimizações de UMA: texturas acessíveis por CPU e swizzling padrão
 
 As GPUs da arquitetura de memória universal (a) oferecem algumas vantagens de eficiência em relação a GPUs discretas, especialmente ao otimizar para dispositivos móveis. Conceder acesso à CPU de recursos quando a GPU é uma pode reduzir a quantidade de cópia que ocorre entre a CPU e a GPU. Embora não recomendemos que os aplicativos ofereçam acesso cego à CPU a todos os recursos em designs de uma, há oportunidades de melhorar a eficiência fornecendo o acesso à CPU dos recursos corretos. Ao contrário de GPUs discretas, a CPU pode tecnicamente ter um ponteiro para todos os recursos que a GPU pode acessar.
 
@@ -111,9 +111,9 @@ Normalmente, para criar recursos dinâmicos, crie um buffer grande em um heap de
 [Associação de recursos](resource-binding.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

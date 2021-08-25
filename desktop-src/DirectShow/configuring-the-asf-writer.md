@@ -4,18 +4,18 @@ ms.assetid: 5708c4a0-6197-4a42-adfd-01c6dfe86302
 title: Configurando o gravador ASF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 62a6dfc1827743dce946188ebf9e050226b5c484
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 5e3d28b3b6178a383909f53a98fef98a5c3e69297f71615010f505d28b77375a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105757026"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119871696"
 ---
 # <a name="configuring-the-asf-writer"></a>Configurando o gravador ASF
 
-Quando o filtro do [gravador ASF do WM](wm-asf-writer-filter.md) é criado, ele é configurado automaticamente com o \_ perfil WMProfile V80 \_ 256Video. Esse perfil usa os codecs de áudio do Windows Media e Windows Media Video versão 8, que não são tão recentes quanto os codecs do Windows Media 9 Series. É recomendável criar um perfil personalizado que usa os codecs da série Windows Media 9 e configurar o gravador ASF do WM com o perfil personalizado, conforme descrito em [Configurando perfis e outras propriedades de arquivo ASF](configuring-profiles-and-other-asf-file-properties.md). Você deve adicionar o filtro do gravador ASF do WM ao grafo de filtro antes de configurar o filtro e configurar o filtro antes de conectá-lo a qualquer outro filtro.
+Quando o filtro do [gravador ASF do WM](wm-asf-writer-filter.md) é criado, ele é configurado automaticamente com o \_ perfil WMProfile V80 \_ 256Video. esse perfil usa os codecs Windows mídia de áudio e Windows vídeo da mídia 8, que não são tão recentes quanto os codecs da série Windows Media 9. é recomendável criar um perfil personalizado que usa os codecs da série Windows Media 9 e configurar o gravador ASF do WM com o perfil personalizado, conforme descrito em [configurando perfis e outras propriedades de arquivo asf](configuring-profiles-and-other-asf-file-properties.md). Você deve adicionar o filtro do gravador ASF do WM ao grafo de filtro antes de configurar o filtro e configurar o filtro antes de conectá-lo a qualquer outro filtro.
 
-Todos os dados de entrada devem ter carimbo de data/hora e todos os Pins de entrada devem ser conectados antes que o filtro possa ser executado ou pausado. Portanto, se você configurar o filtro com um perfil que tenha um fluxo de áudio e um fluxo de vídeo, o filtro criará um áudio e um pino de entrada de vídeo, e ambos os Pins deverão ser conectados antes que o filtro possa ser executado. Como o SDK do Windows Media format requer um fluxo de áudio para funcionar, o gravador ASF do WM sempre deve ter um PIN de áudio de entrada, mesmo se for para um fluxo fictício, ou seja, um fluxo de áudio com baixa taxa de bits sem áudio.
+Todos os dados de entrada devem ter carimbo de data/hora e todos os Pins de entrada devem ser conectados antes que o filtro possa ser executado ou pausado. Portanto, se você configurar o filtro com um perfil que tenha um fluxo de áudio e um fluxo de vídeo, o filtro criará um áudio e um pino de entrada de vídeo, e ambos os Pins deverão ser conectados antes que o filtro possa ser executado. como o SDK do formato de mídia Windows requer um fluxo de áudio para funcionar, o gravador ASF do WM sempre deve ter um pin de áudio de entrada, mesmo se for para um fluxo fictício, ou seja, um fluxo de áudio sem taxa de baixa de bits, com áudio.
 
 Adicionando extensões de unidade de dados
 

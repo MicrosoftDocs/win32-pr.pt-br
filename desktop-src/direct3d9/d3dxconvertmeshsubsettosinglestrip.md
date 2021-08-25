@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: c76aa52b08a21faf9bc2a6ef35745513063cc3b4
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 53d3ec4a0362ec923fdbeaa1d880188039e866292897d3fe5518ae34d4e2622d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105756118"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119857366"
 ---
 # <a name="d3dxconvertmeshsubsettosinglestrip-function"></a>Função D3DXConvertMeshSubsetToSingleStrip
 
@@ -89,7 +89,7 @@ Número de índices no buffer retornado no parâmetro *ppIndexBuffer* .
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

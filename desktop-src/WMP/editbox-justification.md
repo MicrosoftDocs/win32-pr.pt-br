@@ -1,9 +1,9 @@
 ---
-title: Paminhar. justificativa
-description: O atributo de justificativa especifica ou recupera o alinhamento do texto no controle de admy.
+title: EDITBOX.justification
+description: O atributo de justificativa especifica ou recupera o alinhamento do texto dentro do controle de caixa de edição.
 ms.assetid: e1b62381-3975-45d9-8c9c-1e30770cebdb
 keywords:
-- Admy. Justification Windows Media Player
+- EditBOX.justification Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c230f8a2527a1a66ed7bfd3b42bfff8c686fa2b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5fcb9a9b2fd2722e0d36b285b606d42fb8299531c6119816b7dd2e1ad1e63cdf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105796430"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119863106"
 ---
-# <a name="editboxjustification"></a>Paminhar. justificativa
+# <a name="editboxjustification"></a>EDITBOX.justification
 
-O atributo de **justificativa** especifica ou recupera o alinhamento do texto no controle de admy.
+O **atributo de** justificativa especifica ou recupera o alinhamento do texto dentro do controle de caixa de edição.
 
 ``` syntax
         elementID.justification
@@ -29,15 +29,15 @@ O atributo de **justificativa** especifica ou recupera o alinhamento do texto no
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esse atributo é uma **cadeia de caracteres** de leitura/gravação que contém um dos valores a seguir.
+Esse atributo é uma cadeia de **caracteres** de leitura/gravação que contém um dos valores a seguir.
 
 
 
 | Valor  | Descrição                                                        |
 |--------|--------------------------------------------------------------------|
-| Esquerda   | Padrão. Alinha o texto à borda esquerda do controle da caixa de edição. |
-| Direita  | Alinha o texto à borda direita do controle caixa de edição.         |
-| Centro | Alinha o texto ao centro horizontal do controle caixa de edição.  |
+| Esquerda   | Padrão. Alinha o texto à borda esquerda do controle de caixa de edição. |
+| Direita  | Alinha o texto à borda direita do controle de caixa de edição.         |
+| Centro | Alinha o texto ao centro horizontal do controle de caixa de edição.  |
 
 
 
@@ -61,7 +61,7 @@ Há uma margem de dois pixels.
 
 <dl> <dt>
 
-[**Elemento admy**](editbox-element.md)
+[**Elemento EDITBOX**](editbox-element.md)
 </dt> </dl>
 
  

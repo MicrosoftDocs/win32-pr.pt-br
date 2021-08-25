@@ -4,12 +4,12 @@ description: A interface IBackgroundCopyManager expõe os métodos a seguir. | M
 ms.assetid: DF517077-4775-473C-B16B-7EFB0AD9D169
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 600e09447cb471e19b03c7ed842af2befbc43191
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 90f79ef83b8a74dc9f23838bec899abf9d9308626a3cdbe05001a578a341c9f4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104172646"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119895686"
 ---
 # <a name="ibackgroundcopymanager-methods-do"></a>Métodos IBackgroundCopyManager (DO)
 

@@ -3,7 +3,7 @@ title: Mensagem de TCM_SETITEMSIZE (commctrl. h)
 description: Define a largura e a altura das guias em um controle de tabulação de largura fixa ou de desenho proprietário. Você pode enviar essa mensagem explicitamente ou usando a \_ macro Setitems TabCtrl.
 ms.assetid: 3935d686-f8bc-41fb-b025-04120cf03f02
 keywords:
-- Controles de TCM_SETITEMSIZE de mensagens do Windows
+- controles de Windows de mensagem de TCM_SETITEMSIZE
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e306af3f6462507a181de91104169c5ac7d6ce14
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8845aa54cd3cca413f31ee01f4a9583e24dc875a876d1aff691f574214f6f793
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824146"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119876226"
 ---
 # <a name="tcm_setitemsize-message"></a>\_Mensagem de SETitems TCM
 
@@ -39,7 +39,7 @@ O [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) é u
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna a largura e a altura antigas. A largura está em [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) do valor de retorno e a altura está no [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)).
 
@@ -53,9 +53,9 @@ Se a largura for definida como um valor menor que a largura da imagem definida p
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

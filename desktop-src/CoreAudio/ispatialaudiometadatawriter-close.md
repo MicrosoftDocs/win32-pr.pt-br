@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - spatialaudiometadata.h
-ms.openlocfilehash: 719c0d156c616c623d3e9a0d8a78620b735a7151
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 4b29efb38cf11ba718a631f676323eb3db93aab042c70691dfb89ce957266e86
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089452"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119875416"
 ---
 # <a name="ispatialaudiometadatawriterclose-method"></a>Método ISpatialAudioMetadataWriter:: Close
 
@@ -37,7 +37,7 @@ HRESULT Close();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se o método for bem sucedido, ele retornará S \_ OK. Se falhar, os códigos de retorno possíveis incluem, mas não se limitam a, os valores mostrados na tabela a seguir.
 

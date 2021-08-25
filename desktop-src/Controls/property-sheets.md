@@ -1,17 +1,17 @@
 ---
-title: Sobre folhas de propriedades
+title: Sobre as folhas de propriedades
 description: Uma folha de propriedades é uma janela que permite ao usuário exibir e editar as propriedades de um item.
 ms.assetid: 93676a64-7980-48cd-8615-23b14a118e1c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3256959b588e2109740033692c0c528889fc939f
-ms.sourcegitcommit: 11f52354f570aacaf1ba2a266b2e507abd73352a
+ms.openlocfilehash: 241d5ed4299a0771d9f2b4df6f17929474c7f4868edf7bcaf1ade5baa7e572b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "105748715"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119914688"
 ---
-# <a name="about-property-sheets"></a>Sobre folhas de propriedades
+# <a name="about-property-sheets"></a>Sobre as folhas de propriedades
 
 Uma *folha de propriedades* é uma janela que permite ao usuário exibir e editar as propriedades de um item. Por exemplo, um aplicativo de planilha pode usar uma folha de propriedades para permitir que o usuário defina as propriedades de fonte e borda de uma célula ou exiba e defina as propriedades de um dispositivo, como uma unidade de disco, impressora ou mouse.
 
@@ -54,7 +54,7 @@ Alguns códigos de notificação exigem uma página para retornar **true** ou **
 
 ## <a name="pages"></a>Pages (Páginas)
 
-Uma folha de propriedades deve conter pelo menos uma página, mas não pode conter mais do que o valor de **MAXPROPPAGES** , conforme definido nos arquivos de cabeçalho do Windows. Cada página tem um índice de base zero que a folha de propriedades atribui de acordo com a ordem na qual a página é adicionada à folha de propriedades. Os índices são usados em mensagens que você envia para a folha de propriedades.
+uma folha de propriedades deve conter pelo menos uma página, mas não pode conter mais do que o valor de **MAXPROPPAGES** , conforme definido nos arquivos de cabeçalho de Windows. Cada página tem um índice de base zero que a folha de propriedades atribui de acordo com a ordem na qual a página é adicionada à folha de propriedades. Os índices são usados em mensagens que você envia para a folha de propriedades.
 
 Uma página de propriedades pode conter uma caixa de diálogo aninhada. Se tiver, você deverá incluir o estilo [**WS \_ ex \_ CONTROLPARENT**](/windows/desktop/winmsg/extended-window-styles) para a caixa de diálogo de nível superior e chamar a função [**IsDialogMessage**](/windows/desktop/api/winuser/nf-winuser-isdialogmessagea) com o identificador para a caixa de diálogo pai. Isso garante que o usuário possa usar mnemônicos e as teclas de navegação da caixa de diálogo para mover o foco para controles na caixa de diálogo aninhada.
 
@@ -73,9 +73,9 @@ O tamanho mínimo de uma página de folha de propriedades é de 212 unidades de 
 | **PROP \_ LG \_ CXDLG**  | Largura, em unidades de diálogo, de uma página de folha de propriedades grande.         |
 | **PROP \_ LG \_ CYDLG**  | Altura, em unidades de diálogo, de uma página de folha de propriedades grande.        |
 
-Usar esses tamanhos recomendados ajudará a garantir a consistência visual entre seu aplicativo e outros aplicativos do Microsoft Windows.
+usar esses tamanhos recomendados ajudará a garantir a consistência visual entre seu aplicativo e outros aplicativos Windows da Microsoft.
 
-No editor de recursos Microsoft Visual Studio, você pode criar uma página do tamanho apropriado na caixa de diálogo **Adicionar recurso** . Expanda o nó da caixa de diálogo e selecione **IDD \_ PROPPAGE \_ grande**, **IDD \_ PROPPAGE \_ médio** ou **IDD \_ PROPPAGE \_ Small**.
+no editor de recursos Microsoft Visual Studio, você pode criar uma página do tamanho apropriado na caixa de diálogo **adicionar recurso** . Expanda o nó da caixa de diálogo e selecione **IDD \_ PROPPAGE \_ grande**, **IDD \_ PROPPAGE \_ médio** ou **IDD \_ PROPPAGE \_ Small**.
 
 A folha de propriedades é dimensionada automaticamente para acomodar a maior página.
 
@@ -105,7 +105,7 @@ Depois de criar uma folha de propriedades, um aplicativo pode adicionar uma pág
 Ao definir uma página, você pode especificar o endereço de uma função de retorno de chamada [*PropSheetPageProc*](/windows/win32/api/prsht/nc-prsht-lpfnpspcallbacka) que a folha de propriedades chama quando está criando ou removendo a página. Usar o *PropSheetPageProc* oferece a oportunidade de executar operações de inicialização e limpeza para páginas individuais.
 
 > [!NOTE]  
-> Várias mensagens e uma chamada de função ocorrem enquanto a folha de propriedades está manipulando a lista de páginas. Enquanto essa ação está ocorrendo, a tentativa de modificar a lista de páginas terá resultados imprevisíveis. Não adicione, insira ou remova páginas em sua implementação do [*PropSheetPageProc*](/windows/win32/api/prsht/nc-prsht-lpfnpspcallbacka), ou ao lidar com as notificações e mensagens do Windows a seguir.
+> Várias mensagens e uma chamada de função ocorrem enquanto a folha de propriedades está manipulando a lista de páginas. Enquanto essa ação está ocorrendo, a tentativa de modificar a lista de páginas terá resultados imprevisíveis. não adicione, insira ou remova páginas em sua implementação do [*PropSheetPageProc*](/windows/win32/api/prsht/nc-prsht-lpfnpspcallbacka), ou ao manipular as notificações e Windows mensagens a seguir.
 >
 > -   [PSN \_ aplicar](psn-apply.md)
 > -   [PSN \_ KILLACTIVE](psn-killactive.md)
@@ -116,7 +116,7 @@ Ao definir uma página, você pode especificar o endereço de uma função de re
 > -   [**INITDIALOG do WM \_**](/windows/desktop/dlgbox/wm-initdialog)
 > -   [**destruição do WM \_**](/windows/desktop/winmsg/wm-destroy)
 
-Se houver necessidade de modificar uma página de folha de propriedades enquanto você estiver manipulando uma dessas mensagens ou enquanto [*PropSheetPageProc*](/windows/win32/api/prsht/nc-prsht-lpfnpspcallbacka) estiver em operação, poste uma mensagem privada do Windows. Seu aplicativo não receberá essa mensagem até que o Gerenciador de folhas de propriedades tenha concluído suas tarefas. nesse ponto, será seguro modificar a lista de páginas.
+se houver necessidade de modificar uma página de folha de propriedades enquanto você estiver manipulando uma dessas mensagens ou enquanto [*PropSheetPageProc*](/windows/win32/api/prsht/nc-prsht-lpfnpspcallbacka) estiver em operação, poste uma mensagem de Windows privada. Seu aplicativo não receberá essa mensagem até que o Gerenciador de folhas de propriedades tenha concluído suas tarefas. nesse ponto, será seguro modificar a lista de páginas.
 
 Quando uma folha de propriedades é destruída, ela destrói automaticamente todas as páginas que foram adicionadas a ela. As páginas são destruídas na ordem inversa da especificada na matriz usada para criar as páginas. Para destruir uma página que foi criada pela função [**CreatePropertySheetPage**](/windows/desktop/api/Prsht/nf-prsht-createpropertysheetpagea) , mas não foi adicionada à folha de propriedades, use a função [**DestroyPropertySheetPage**](/windows/desktop/api/Prsht/nf-prsht-destroypropertysheetpage) .
 
@@ -223,7 +223,7 @@ O botão **aplicar** inicialmente é desabilitado quando uma página se torna at
 
 Às vezes, o botão **aplicar** faz com que uma página faça uma alteração em uma folha de propriedades, e a alteração não pode ser desfeita. Quando isso acontece, a página deve enviar a mensagem de [**PSM \_ CANCELTOCLOSE**](psm-canceltoclose.md) para a folha de propriedades. A mensagem faz com que a folha de propriedades altere o texto do botão **OK** para "fechar", indicando que as alterações aplicadas não podem ser canceladas.
 
-Às vezes, uma página faz uma alteração na configuração do sistema que requer que o Windows seja reiniciado ou o sistema seja reinicializado antes que a alteração entre em vigor. Depois de fazer essa alteração, uma página deve enviar a mensagem [**PSM \_ RESTARTWINDOWS**](psm-restartwindows.md) ou [**PSM \_ REBOOTSYSTEM**](psm-rebootsystem.md) para a folha de propriedades. Essas mensagens fazem com que a função [**folha**](/windows/desktop/api/Prsht/nf-prsht-propertysheeta) retorne o valor da **ID \_ PSRESTARTWINDOWS** ou **ID \_ PSREBOOTSYSTEM** após a destruição da folha de propriedades.
+às vezes, uma página faz uma alteração na configuração do sistema que requer que Windows seja reiniciada ou o sistema seja reinicializado antes que a alteração entre em vigor. Depois de fazer essa alteração, uma página deve enviar a mensagem [**PSM \_ RESTARTWINDOWS**](psm-restartwindows.md) ou [**PSM \_ REBOOTSYSTEM**](psm-rebootsystem.md) para a folha de propriedades. Essas mensagens fazem com que a função [**folha**](/windows/desktop/api/Prsht/nf-prsht-propertysheeta) retorne o valor da **ID \_ PSRESTARTWINDOWS** ou **ID \_ PSREBOOTSYSTEM** após a destruição da folha de propriedades.
 
 Quando um usuário clica no botão **Cancelar** , a folha de propriedades envia o código de notificação de [ \_ redefinição de PSN](psn-reset.md) para todas as páginas, indicando que a folha de propriedades está prestes a ser destruída. Uma página deve usar a notificação para executar operações de limpeza.
 
@@ -233,7 +233,7 @@ Um assistente é um tipo especial de folha de propriedades. Os assistentes são 
 
 ![captura de tela da página inicial de um assistente](images/wizard97.png)
 
-A captura de tela a seguir mostra a primeira página de um assistente Aero, o novo estilo introduzido no Windows Vista.
+a captura de tela a seguir mostra a primeira página de um assistente Aero, o novo estilo introduzido no Windows Vista.
 
 ![captura de tela da primeira página de um assistente Aero](images/wizardaero.png)
 
