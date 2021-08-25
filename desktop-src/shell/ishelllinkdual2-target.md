@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 8e5f29623cf94ef5f17f06e52337928c0c345e42
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3319e84abc32887d7cf7a9126ea9ae0f57b9607f937256b8377030fdd9dd75cc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967489"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119884316"
 ---
 # <a name="ishelllinkdual2target-property"></a>Propriedade IShellLinkDual2. Target
 
@@ -41,9 +41,9 @@ Uma expressão de objeto que é avaliada como o objeto [**FolderItem**](folderit
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir usa o **destino** para recuperar o destino de um atalho para o Internet Explorer. O uso adequado é mostrado para JScript, VBScript e Visual Basic.
+O exemplo a seguir usa o **destino** para recuperar o destino de um atalho para o Internet Explorer. o uso adequado é mostrado para JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -174,9 +174,9 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos de área de trabalho do Windows XP\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                          |
+| Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
 | INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
 | DLL<br/>                      | <dl> <dt>Shell32.dll (versão 5,0 ou posterior)</dt> </dl> |
 

@@ -3,7 +3,7 @@ title: PSN_TRANSLATEACCELERATOR código de notificação (Prsht. h)
 description: Notifica uma folha de propriedades de que uma mensagem do teclado foi recebida. Ele fornece à página uma oportunidade de fazer a tradução do acelerador de teclado privado. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
 ms.assetid: 04d67326-92f9-4b92-a27e-354815f3c1a8
 keywords:
-- PSN_TRANSLATEACCELERATOR de código de notificação controles do Windows
+- PSN_TRANSLATEACCELERATOR código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9dc86866be1154bbd0ef1cf76b3535b7b02496e8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7ca25ed7dd2a2fa2b11e0854f7fe9e4bb4afb9aa47ec52c21bc1c6e346ebf16d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105811139"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119914486"
 ---
 # <a name="psn_translateaccelerator-notification-code"></a>\_Código de notificação PSN TRANSLATEACCELERATOR
 
@@ -45,7 +45,7 @@ Um ponteiro para uma estrutura [**PSHNOTIFY**](/windows/desktop/api/Prsht/ns-prs
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna PSNRET \_ MESSAGEHANDLED para indicar que nenhum processamento adicional é necessário. Retorna PSNRET \_ NOERROR para solicitar o processamento normal.
 
@@ -59,9 +59,9 @@ Para definir o valor de retorno, o procedimento da caixa de diálogo para a pág
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Prsht. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Prsht. h</dt> </dl> |
 
 
 

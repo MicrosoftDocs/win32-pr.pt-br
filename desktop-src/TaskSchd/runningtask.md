@@ -15,12 +15,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 261be07f71d0d35f5d3140de1b39574b635a531e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b0dea9d0810c12af383092e4cad7f77be601927f2a440efbbbb424f822159a31
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499518"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119866866"
 ---
 # <a name="runningtask-object"></a>Objeto RunningTask
 
@@ -61,7 +61,7 @@ O objeto **RunningTask** tem essas propriedades.
 | [**InstanceGuid**](runningtask-instanceguid.md)<br/>   | Somente leitura<br/> | Obtém o identificador de GUID para esta instância da tarefa.<br/>                  |
 | [**Nome**](runningtask-name.md)<br/>                   | Somente leitura<br/> | Obtém o nome da tarefa.<br/>                                               |
 | [**Caminho**](runningtask-path.md)<br/>                   | Somente leitura<br/> | Obtém o caminho para onde a tarefa é armazenada.<br/>                               |
-| [**Status**](runningtask-state.md)<br/>                 | Somente leitura<br/> | Obtém o estado da tarefa em execução. <br/>                                     |
+| [**Estado**](runningtask-state.md)<br/>                 | Somente leitura<br/> | Obtém o estado da tarefa em execução. <br/>                                     |
 
 
 
@@ -73,8 +73,8 @@ O objeto **RunningTask** tem essas propriedades.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                    |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                    |
 | Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 

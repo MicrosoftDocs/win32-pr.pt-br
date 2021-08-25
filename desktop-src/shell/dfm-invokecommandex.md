@@ -13,12 +13,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: dc96e9d0e4c27be8dee3ed7742874de4a3fb97e5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2b8a7fd63aa4269ee265a4ae147c99fe394e8aad725f7134f8d62daf8ee9984b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501425"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119943166"
 ---
 # <a name="dfm_invokecommandex-message"></a>\_Mensagem DFM INVOKECOMMANDEX
 
@@ -163,9 +163,9 @@ Os itens nos quais o comando está sendo invocado são fornecidos em um objeto d
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                      |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                |
-| parâmetro<br/>                   | <dl> <dt>Shlobj. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                      |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                |
+| Cabeçalho<br/>                   | <dl> <dt>Shlobj. h</dt> </dl> |
 
 
 

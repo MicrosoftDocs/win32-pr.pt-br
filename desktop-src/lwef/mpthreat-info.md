@@ -3,8 +3,8 @@ title: Estrutura de MPTHREAT_INFO (MpClient. h)
 description: Contém informações sobre uma ameaça.
 ms.assetid: ED2A0BDB-0E7C-479D-ADA1-95B9A259F57E
 keywords:
-- Recursos do ambiente Windows herdado da estrutura de MPTHREAT_INFO
-- Ponteiro de estrutura de PMPTHREAT_INFO recursos de ambiente herdados do Windows
+- recursos de ambiente de Windows herdado da estrutura de MPTHREAT_INFO
+- Windows recursos de ambiente herdados do ponteiro de estrutura do PMPTHREAT_INFO
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dfa850a4293006a2f4b107a3f2579fdc14c1ea6e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b7be9b1f38a2771d7c6e4831e7716552de34492b30429084f3e087e0a3b49602
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455820"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119943916"
 ---
 # <a name="mpthreat_info-structure"></a>Estrutura de informações do MPTHREAT \_
 
@@ -220,11 +220,11 @@ Contagem de recursos na **resourceList**.
 **ResourceList**
 </dt> <dd>
 
-Tipo: **PMPRESOURCE \_ info \** _
+Tipo: **\_ \* informações de PMPRESOURCE**
 
 </dd> <dd>
 
-Lista de recursos identificados com a ameaça. Consulte [_ *MPRESOURCE \_ info* *](mpresource-info.md).
+Lista de recursos identificados com a ameaça. Consulte [**MPRESOURCE \_ info**](mpresource-info.md).
 
 </dd> <dt>
 
@@ -359,7 +359,7 @@ O estado atual da detecção. Consulte [**\_ estado MPDETECTION**](mpdetection-s
 **DetectionUser**
 </dt> <dd>
 
-Tipo: **PG \_ MIDL \_ String LPWSTR**
+Tipo: **MP \_ MIDL STRING \_ LPWSTR**
 
 </dd> <dd>
 
@@ -367,7 +367,7 @@ O usuário associado à detecção, no formato "domínio/usuário".
 
 </dd> <dt>
 
-**Detecção de**
+**DetectionSource**
 </dt> <dd>
 
 Tipo: **[ **MPSOURCE**](mpsource.md)**
@@ -381,7 +381,7 @@ A origem da detecção. Consulte [**MPSOURCE**](mpsource.md).
 **ProcessName**
 </dt> <dd>
 
-Tipo: **PG \_ MIDL \_ String LPWSTR**
+Tipo: **MP \_ MIDL STRING \_ LPWSTR**
 
 </dd> <dd>
 
@@ -392,15 +392,15 @@ Nome do processo associado à detecção.
 **DetectionOrigin**
 </dt> <dd>
 
-Tipo: **[ **\_ origem do MPDETECTION**](mpdetection-origin.md)**
+Tipo: **[ **MPDETECTION \_ ORIGIN**](mpdetection-origin.md)**
 
 </dd> <dd>
 
-A origem da detecção, como local ou rede. Consulte [**MPDETECTION \_ Origin**](mpdetection-origin.md).
+A origem da detecção, como local ou rede. Consulte [**MPDETECTION \_ ORIGIN**](mpdetection-origin.md).
 
 </dd> <dt>
 
-**reserved1**
+**reservado1**
 </dt> <dd>
 
 Tipo: **DWORD**
@@ -411,10 +411,10 @@ Metadados reservados sobre a detecção.
 
 </dd> <dt>
 
-**Detecçãotime**
+**DetectionTime**
 </dt> <dd>
 
-Tipo: **ULARGE \_ inteiro**
+Tipo: **ULARGE \_ INTEGER**
 
 </dd> <dd>
 
@@ -425,18 +425,18 @@ A hora da detecção inicial.
 **PreExecutionStatus**
 </dt> <dd>
 
-Tipo: **[ **MPEXECUTION \_ status**](mpexecution-status.md)**
+Tipo: **[ **STATUS DE \_ MPEXECUTION**](mpexecution-status.md)**
 
 </dd> <dd>
 
-Status de execução logo antes da correção. Consulte [**\_ status do MPEXECUTION**](mpexecution-status.md).
+Status de execução logo antes da correção. Consulte [**STATUS DE MPEXECUTION \_**](mpexecution-status.md).
 
 </dd> <dt>
 
-**Remediatime**
+**Tempo de correção**
 </dt> <dd>
 
-Tipo: **ULARGE \_ inteiro**
+Tipo: **ULARGE \_ INTEGER**
 
 </dd> <dd>
 
@@ -447,18 +447,18 @@ A correção de tempo ocorreu.
 **PostExecutionStatus**
 </dt> <dd>
 
-Tipo: **[ **MPEXECUTION \_ status**](mpexecution-status.md)**
+Tipo: **[ **STATUS DE \_ MPEXECUTION**](mpexecution-status.md)**
 
 </dd> <dd>
 
-Status da execução após a correção. Consulte [**\_ status do MPEXECUTION**](mpexecution-status.md).
+Status da execução após a correção. Consulte [**STATUS DE MPEXECUTION \_**](mpexecution-status.md).
 
 </dd> <dt>
 
 **CriticalFailure**
 </dt> <dd>
 
-Tipo: **bool**
+Tipo: **BOOL**
 
 </dd> <dd>
 
@@ -473,14 +473,14 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-O motivo pelo qual a falha de correção não é crítica. Não há garantia de que haja suporte para isso no futuro.
+O motivo pelo qual a falha de correção não é crítica. Não há garantia de que isso seja suportado no futuro.
 
 </dd> <dt>
 
-**RemediationUser**
+**CorreçãoUser**
 </dt> <dd>
 
-Tipo: **PG \_ MIDL \_ String LPWSTR**
+Tipo: **MP \_ MIDL STRING \_ LPWSTR**
 
 </dd> <dd>
 
@@ -495,40 +495,40 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Contagem de recursos no **RemediationResourceList**.
+Contagem de recursos em **RemediationResourceList**.
 
 </dd> <dt>
 
 **RemediationResourceList**
 </dt> <dd>
 
-Tipo: **PMPRESOURCE \_ info \[ RemediationResourceCount \]**
+Tipo: **PMPRESOURCE \_ INFO \[ RemediationResourceCount \]**
 
 </dd> <dd>
 
-Lista de recursos que falharam durante a correção. Consulte [**MPRESOURCE \_ info**](mpresource-info.md).
+Lista de recursos que falharam durante a correção. Consulte [**INFORMAÇÕES DO MPRESOURCE. \_**](mpresource-info.md)
 
 </dd> <dt>
 
 **FailureResolved**
 </dt> <dd>
 
-Tipo: **bool**
+Tipo: **BOOL**
 
 </dd> <dd>
 
-True se a falha de correção tiver sido resolvida. Isso moverá o Bucket para uma ação completa ou adicional.
+True se a falha de correção tiver sido resolvida. Isso move o bucket para concluir ou uma ação adicional.
 
 </dd> <dt>
 
 **ResolvedReason**
 </dt> <dd>
 
-Tipo: **[ **MPRESOLVED \_ motivo**](mpresolved-reason.md)**
+Tipo: **[ **MPRESOLVED \_ REASON**](mpresolved-reason.md)**
 
 </dd> <dd>
 
-Motivo para a falha de correção ser resolvida. Esse é o motivo pelo qual a detecção foi movida de falha para uma ação adicional ou foi concluída. Consulte [**o \_ motivo do MPRESOLVED**](mpresolved-reason.md).
+Motivo para a falha de correção ser resolvida. Esse é o motivo pelo qual a detecção foi movida de falha para ação adicional ou concluída. Consulte [**MPRESOLVED \_ REASON**](mpresolved-reason.md).
 
 </dd> <dt>
 
@@ -550,7 +550,7 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Qualquer ação adicional que tenha sido executada.
+Quaisquer ações adicionais que foram executadas.
 
 </dd> <dt>
 
@@ -571,9 +571,9 @@ Informações adicionais sobre a detecção de ameaças.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 
@@ -590,49 +590,49 @@ Informações adicionais sobre a detecção de ameaças.
 [**MpThreatQuery**](mpthreatquery.md)
 </dt> <dt>
 
-[**origem do MPDETECTION \_**](mpdetection-origin.md)
+[**MPDETECTION \_ ORIGIN**](mpdetection-origin.md)
 </dt> <dt>
 
-[**\_estado MPDETECTION**](mpdetection-state.md)
+[**ESTADO DE \_ MPDETECTION**](mpdetection-state.md)
 </dt> <dt>
 
-[**STATUS do MPEXECUTION \_**](mpexecution-status.md)
+[**STATUS DE MPEXECUTION \_**](mpexecution-status.md)
 </dt> <dt>
 
-[**motivo do MPRESOLVED \_**](mpresolved-reason.md)
+[**MPRESOLVED \_ REASON**](mpresolved-reason.md)
 </dt> <dt>
 
-[**informações de MPRESOURCE \_**](mpresource-info.md)
+[**INFORMAÇÕES DO MPRESOURCE \_**](mpresource-info.md)
 </dt> <dt>
 
 [**MPSOURCE**](mpsource.md)
 </dt> <dt>
 
-[**\_ação MPTHREAT**](mpthreat-action.md)
+[**AÇÃO \_ MPTHREAT**](mpthreat-action.md)
 </dt> <dt>
 
-[**\_categoria MPTHREAT**](mpthreat-category.md)
+[**CATEGORIA \_ MPTHREAT**](mpthreat-category.md)
 </dt> <dt>
 
-[**detecção de MPTHREAT \_**](mpthreat-detection.md)
+[**DETECÇÃO DE \_ MPTHREAT**](mpthreat-detection.md)
 </dt> <dt>
 
-[**\_comportamento MPTHREAT INFOEX \_**](mpthreat-infoex-behavior.md)
+[**COMPORTAMENTO DO \_ INFOEX \_ MPTHREAT**](mpthreat-infoex-behavior.md)
 </dt> <dt>
 
 [**MPTHREAT \_ INFOEX \_ NIS**](mpthreat-infoex-nis.md)
 </dt> <dt>
 
-[**MPTHREAT \_ INFOEX \_ não usado**](mpthreat-infoex-unused.md)
+[**MPTHREAT \_ INFOEX \_ UNUSED**](mpthreat-infoex-unused.md)
 </dt> <dt>
 
-[**severidade de MPTHREAT \_**](mpthreat-severity.md)
+[**SEVERIDADE DE \_ MPTHREAT**](mpthreat-severity.md)
 </dt> <dt>
 
-[**STATUS do MPTHREAT \_**](mpthreat-status.md)
+[**MPTHREAT \_ STATUS**](mpthreat-status.md)
 </dt> <dt>
 
-[**tipo de MPTHREAT \_**](mpthreat-type.md)
+[**TIPO \_ MPTHREAT**](mpthreat-type.md)
 </dt> </dl>
 
  

@@ -12,12 +12,12 @@ keywords:
 - Funções de MIDI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fd900afd6b839ed5fed7afffb34c40aee8a07618
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: d61af940dd52c0fe067eed930fdac6421d6ac19c5e4b3c04de23c0125f8b678b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104084523"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119807546"
 ---
 # <a name="midi-functions"></a>Funções de MIDI
 
@@ -72,6 +72,6 @@ As funções a seguir são usadas com MIDI.
 [Referência de MIDI](midi-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

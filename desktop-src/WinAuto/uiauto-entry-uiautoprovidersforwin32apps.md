@@ -4,12 +4,12 @@ description: Esta seção descreve as interfaces e funções para não gerenciad
 ms.assetid: 10e0e642-2839-48cb-a2e6-9a2292cd97bf
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f0811d82ae539afe08e183b24067f79401c99600
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: de9d1f17d8dbd0d6a2470b1760e530d4876e895be0e88c478f104876ce6292dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105758903"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119859586"
 ---
 # <a name="ui-automation-providers"></a>Provedores de automação da interface do usuário
 
@@ -31,9 +31,9 @@ Esta seção descreve as interfaces e funções para provedores de automação d
 [Referência](entry-uiautocore-ref.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

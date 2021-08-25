@@ -1,7 +1,7 @@
 ---
 description: Retornará TRUE se o thread atual for o proprietário da seção crítica especificada.
 ms.assetid: 96158f08-07a0-42a9-b173-0a05456a5f3a
-title: Função CritCheckIn (Wxutil. h)
+title: Função CritCheckIn (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ff31707dc409db1e72c36866150c5a0b24c53f9a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4f4e9ff0078f6efe8dee9b060e61858c24aea0a64e7e35b9fb867125b8612ed3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752890"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119908076"
 ---
 # <a name="critcheckin-function"></a>Função CritCheckIn
 
-Retornará **true** se o thread atual for o proprietário da seção crítica especificada.
+Retornará **TRUE** se o thread atual for o proprietário da seção crítica especificada.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,17 +45,17 @@ BOOL WINAPI CritCheckIn(
 *pcCrit* 
 </dt> <dd>
 
-Ponteiro para uma seção crítica [**CCritSec**](ccritsec.md) .
+Ponteiro para uma [**seção crítica CCritSec.**](ccritsec.md)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Em builds de depuração, retornará **true** se o thread atual for o proprietário desta seção crítica ou **false** caso contrário. Em compilações de varejo, sempre retorna **true**.
+Em builds de depuração, **retornará TRUE** se o thread atual for o proprietário desta seção crítica ou **FALSE** caso contrário. Em builds de varejo, sempre retorna **TRUE.**
 
 ## <a name="remarks"></a>Comentários
 
-Essa função é especialmente útil na macro [**Assert**](assert.md) , para testar se um thread possui um determinado bloqueio.
+Essa função é especialmente útil dentro da macro [**ASSERT,**](assert.md) para testar se um thread possui um determinado bloqueio.
 
 ## <a name="examples"></a>Exemplos
 
@@ -84,8 +84,8 @@ O exemplo de código a seguir mostra como usar essa função:
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Wxutil. h (incluir fluxos. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Wxutil.h (incluir Fluxos.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 
@@ -93,7 +93,7 @@ O exemplo de código a seguir mostra como usar essa função:
 
 <dl> <dt>
 
-[Funções de depuração de seção crítica](critical-section-debugging-functions.md)
+[Funções críticas de depuração de seção](critical-section-debugging-functions.md)
 </dt> </dl>
 
  

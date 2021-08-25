@@ -6,49 +6,49 @@ keywords:
 - entrada do usuário, entrada do mouse
 - capturando entrada do usuário, entrada do mouse
 - entrada do mouse
-- cursores, entrada de mouse
+- cursores, entrada do mouse
 - cursor do mouse
-- Clique duas vezes em processamento de mensagens
+- clique duas vezes em processamento de mensagens
 - roda do mouse
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 50b34f180aad6aec6120bf4e3ffa997eba13e760
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: bc38105da1fbbe3bee1be9ca280f1f5573dbb41ba4b7b6aa2013d9c600b8ad00
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104293996"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119829966"
 ---
 # <a name="using-mouse-input"></a>Usando a entrada do mouse
 
 Esta seção aborda as tarefas associadas à entrada do mouse.
 
 -   [Acompanhando o cursor do mouse](#tracking-the-mouse-cursor)
--   [Linhas de desenho com o mouse](#drawing-lines-with-the-mouse)
--   [Processando uma mensagem de clique duplo](#processing-a-double-click-message)
+-   [Desenhando linhas com o mouse](#drawing-lines-with-the-mouse)
+-   [Processamento de uma mensagem de clique duplo](#processing-a-double-click-message)
 -   [Selecionando uma linha de texto](#selecting-a-line-of-text)
 -   [Usando uma roda do mouse em um documento com objetos inseridos](#using-a-mouse-wheel-in-a-document-with-embedded-objects)
--   [Recuperando o número de linhas de rolagem de roda do mouse](#retrieving-the-number-of-mouse-wheel-scroll-lines)
+-   [Recuperando o número de linhas de rolagem da roda do mouse](#retrieving-the-number-of-mouse-wheel-scroll-lines)
 
 ## <a name="tracking-the-mouse-cursor"></a>Acompanhando o cursor do mouse
 
-Os aplicativos geralmente executam tarefas que envolvem o rastreamento da posição do cursor do mouse. A maioria dos aplicativos de desenho, por exemplo, rastreia a posição do cursor do mouse durante as operações de desenho, permitindo que o usuário desenhe em uma área do cliente da janela arrastando o mouse. Os aplicativos de processamento de texto também acompanham o cursor, permitindo que o usuário selecione uma palavra ou bloco de texto clicando e arrastando o mouse.
+Os aplicativos geralmente executam tarefas que envolvem o acompanhamento da posição do cursor do mouse. A maioria dos aplicativos de desenho, por exemplo, rastreia a posição do cursor do mouse durante operações de desenho, permitindo que o usuário desenhe na área do cliente de uma janela arrastando o mouse. Os aplicativos de processamento de palavras também acompanham o cursor, permitindo que o usuário selecione uma palavra ou bloco de texto clicando e arrastando o mouse.
 
-O controle do cursor geralmente envolve o processamento das mensagens do [**WM \_ LBUTTONDOWN**](wm-lbuttondown.md), do [**WM \_ MOUSEMOVE**](wm-mousemove.md)e do [**WM \_ LBUTTONUP**](wm-lbuttonup.md) . Uma janela determina quando começar a controlar o cursor verificando a posição do cursor fornecida no parâmetro *lParam* da mensagem **\_ LBUTTONDOWN do WM** . Por exemplo, um aplicativo de processamento de texto começaria a rastrear o cursor somente se a mensagem de **\_ LBUTTONDOWN do WM** ocorreu enquanto o cursor estava em uma linha de texto, mas não se ele ultrapassasse o final do documento.
+O acompanhamento do cursor normalmente envolve o processamento das mensagens [**WM \_ LBUTTONDOWN,**](wm-lbuttondown.md) [**WM \_ MOUSEMOVE**](wm-mousemove.md)e [**WM \_ LBUTTONUP.**](wm-lbuttonup.md) Uma janela determina quando começar a acompanhar o cursor verificando a posição do cursor fornecida no parâmetro *lParam* da mensagem **WM \_ LBUTTONDOWN.** Por exemplo, um aplicativo de processamento de palavras começaria a acompanhar o cursor somente se a mensagem **WM \_ LBUTTONDOWN** ocorresse enquanto o cursor estava em uma linha de texto, mas não se ele tivesse passado do final do documento.
 
-Uma janela rastreia a posição do cursor processando o fluxo de mensagens [**\_ MOUSEMOVE do WM**](wm-mousemove.md) postadas na janela à medida que o mouse se move. O processamento da mensagem **\_ MOUSEMOVE do WM** normalmente envolve uma operação de pintura ou de desenho repetitiva na área do cliente. Por exemplo, um aplicativo de desenho pode redesenhar uma linha repetidamente à medida que o mouse se move. Uma janela usa a mensagem do [**WM \_ LBUTTONUP**](wm-lbuttonup.md) como um sinal para parar o acompanhamento do cursor.
+Uma janela rastreia a posição do cursor processando o fluxo de mensagens [**WM \_ MOUSEMOVE**](wm-mousemove.md) postadas na janela conforme o mouse se move. O processamento da **mensagem WM \_ MOUSEMOVE** normalmente envolve uma operação repetitiva de pintura ou desenho na área do cliente. Por exemplo, um aplicativo de desenho pode redesenhar uma linha repetidamente à medida que o mouse se move. Uma janela usa a [**mensagem WM \_ LBUTTONUP**](wm-lbuttonup.md) como um sinal para interromper o acompanhamento do cursor.
 
-Além disso, um aplicativo pode chamar a função [**TrackMouseEvent**](/windows/win32/api/winuser/nf-winuser-trackmouseevent) para que o sistema envie outras mensagens que são úteis para acompanhar o cursor. O sistema posta a mensagem do [**WM \_ MOUSEHOVER**](wm-mousehover.md) quando o cursor passa sobre a área do cliente por um determinado período de tempo. Ele posta a mensagem do [**WM \_ MOUSELEAVE**](wm-mouseleave.md) quando o cursor sai da área do cliente. As mensagens do [**WM \_ NCMOUSEHOVER**](wm-ncmousehover.md) e do [**WM \_ NCMOUSELEAVE**](wm-ncmouseleave.md) são as mensagens correspondentes para as áreas que não são do cliente.
+Além disso, um aplicativo pode chamar a [**função TrackMouseEvent**](/windows/win32/api/winuser/nf-winuser-trackmouseevent) para que o sistema envie outras mensagens úteis para acompanhar o cursor. O sistema posta a [**mensagem WM \_ MOUSEHOVER**](wm-mousehover.md) quando o cursor passar o mouse sobre a área do cliente por um determinado período de tempo. Ele posta a [**mensagem WM \_ MOUSELEAVE**](wm-mouseleave.md) quando o cursor sai da área do cliente. As [**mensagens WM \_ NCMOUSEHOVER**](wm-ncmousehover.md) e [**WM \_ NCMOUSELEAVE**](wm-ncmouseleave.md) são as mensagens correspondentes para as áreas não dependentes.
 
-## <a name="drawing-lines-with-the-mouse"></a>Linhas de desenho com o mouse
+## <a name="drawing-lines-with-the-mouse"></a>Desenhando linhas com o mouse
 
-O exemplo nesta seção demonstra como rastrear o cursor do mouse. Ele contém partes de um procedimento de janela que permite ao usuário desenhar linhas na área do cliente de uma janela arrastando o mouse.
+O exemplo nesta seção demonstra como acompanhar o cursor do mouse. Ele contém partes de um procedimento de janela que permite que o usuário desenhe linhas na área do cliente de uma janela arrastando o mouse.
 
-Quando o procedimento de janela recebe uma mensagem de [**\_ LBUTTONDOWN do WM**](wm-lbuttondown.md) , ele captura o mouse e salva as coordenadas do cursor, usando as coordenadas como o ponto de partida da linha. Ele também usa a função [**ClipCursor**](/windows/desktop/api/winuser/nf-winuser-clipcursor) para restringir o cursor à área do cliente durante a operação de desenho de linha.
+Quando o procedimento de janela recebe uma mensagem [**WM \_ LBUTTONDOWN,**](wm-lbuttondown.md) ele captura o mouse e salva as coordenadas do cursor, usando as coordenadas como o ponto inicial da linha. Ele também usa a [**função ClipCursor**](/windows/desktop/api/winuser/nf-winuser-clipcursor) para limitar o cursor à área do cliente durante a operação de desenho de linha.
 
-Durante a primeira [**mensagem \_ MOUSEMOVE do WM**](wm-mousemove.md) , o procedimento de janela desenha uma linha do ponto inicial até a posição atual do cursor. Durante as **mensagens \_ MOUSEMOVE** posteriores do WM, o procedimento de janela apaga a linha anterior, desenhando-a com uma cor de caneta invertida. Em seguida, ele desenha uma nova linha do ponto inicial até a nova posição do cursor.
+Durante a primeira [**mensagem WM \_ MOUSEMOVE,**](wm-mousemove.md) o procedimento de janela desenha uma linha do ponto inicial para a posição atual do cursor. Durante as **mensagens WM \_ MOUSEMOVE** subsequentes, o procedimento de janela apaga a linha anterior desenhando sobre ela com uma cor de caneta invertida. Em seguida, ele desenha uma nova linha do ponto de partida para a nova posição do cursor.
 
-A mensagem do [**WM \_ LBUTTONUP**](wm-lbuttonup.md) sinaliza o fim da operação de desenho. O procedimento de janela libera a captura do mouse e libera o mouse da área do cliente.
+A [**mensagem WM \_ LBUTTONUP**](wm-lbuttonup.md) sinaliza o final da operação de desenho. O procedimento de janela libera a captura do mouse e libera o mouse da área do cliente.
 
 
 ```
@@ -169,9 +169,9 @@ LRESULT APIENTRY MainWndProc(HWND hwndMain, UINT uMsg, WPARAM wParam, LPARAM lPa
 
 
 
-## <a name="processing-a-double-click-message"></a>Processando uma mensagem de clique duplo
+## <a name="processing-a-double-click-message"></a>Processamento de uma mensagem de clique duplo
 
-Para receber mensagens de clique duplo, uma janela deve pertencer a uma classe de janela que tem o estilo de classe [**cs \_ DBLCLKS**](/windows/desktop/winmsg/about-window-classes) . Você define esse estilo ao registrar a classe Window, conforme mostrado no exemplo a seguir.
+Para receber mensagens de clique duplo, uma janela deve pertencer a uma classe de janela que tenha o estilo de classe [**\_ DBLCLKS do CS.**](/windows/desktop/winmsg/about-window-classes) Você definirá esse estilo ao registrar a classe de janela, conforme mostrado no exemplo a seguir.
 
 
 ```
@@ -196,11 +196,11 @@ BOOL InitApplication(HINSTANCE hInstance)
 
 
 
-Uma mensagem de clique duplo é sempre precedida por uma mensagem de botão para baixo. Por esse motivo, os aplicativos normalmente usam uma mensagem de clique duplo para estender uma tarefa que começou durante uma mensagem de botão para baixo.
+Uma mensagem de clique duplo sempre é precedida por uma mensagem de botão para baixo. Por esse motivo, os aplicativos normalmente usam uma mensagem de clique duplo para estender uma tarefa que começou durante uma mensagem de botão para baixo.
 
 ## <a name="selecting-a-line-of-text"></a>Selecionando uma linha de texto
 
-O exemplo nesta seção é tirado de um aplicativo simples de processamento de texto. Ele inclui um código que permite ao usuário definir a posição do cursor clicando em qualquer lugar em uma linha de texto e selecionar (realçar) uma linha de texto clicando duas vezes em qualquer lugar da linha.
+O exemplo nesta seção é retirado de um aplicativo de processamento de palavras simples. Ele inclui código que permite ao usuário definir a posição do aro clicando em qualquer lugar em uma linha de texto e selecionando (realça) uma linha de texto clicando duas vezes em qualquer lugar da linha.
 
 
 ```
@@ -441,27 +441,27 @@ LRESULT APIENTRY MainWndProc(HWND hwndMain, UINT uMsg, WPARAM wParam, LPARAM lPa
 
 ## <a name="using-a-mouse-wheel-in-a-document-with-embedded-objects"></a>Usando uma roda do mouse em um documento com objetos inseridos
 
-Este exemplo pressupõe um documento do Microsoft Word com vários objetos inseridos:
+Este exemplo pressupõe um Microsoft Word com vários objetos inseridos:
 
--   Uma planilha do Microsoft Excel
+-   Uma planilha Microsoft Excel dados
 -   Um controle de caixa de listagem inserido que rola em resposta à roda
 -   Um controle de caixa de texto inserido que não responde à roda
 
-A mensagem [MSH \_ MOUSEWHEEL](about-mouse-input.md) é sempre enviada para a janela principal no Microsoft Word. Isso é verdadeiro mesmo se a planilha inserida estiver ativa. A tabela a seguir explica como a \_ mensagem MSH MOUSEWHEEL é tratada de acordo com o foco.
+A [mensagem MSH \_ MOUSEWHEEL](about-mouse-input.md) sempre é enviada para a janela principal no Microsoft Word. Isso é verdadeiro mesmo se a planilha inserida estiver ativa. A tabela a seguir explica como a mensagem \_ MSH MOUSEWHEEL é tratada de acordo com o foco.
 
 
 
 | O foco está em                | A manipulação é a seguinte                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 |----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Documento do Word              | O Word rola a janela do documento.                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| Planilha do Excel inserida | O Word posta a mensagem no Excel. Você deve decidir se o aplicativo inserido deve responder à mensagem ou não.                                                                                                                                                                                                                                                                                                                                                            |
-| Controle inserido           | Cabe ao aplicativo enviar a mensagem a um controle inserido que tenha o foco e verificar o código de retorno para ver se o controle o tratou. Se o controle não o tratar, o aplicativo deverá rolar a janela do documento. Por exemplo, se o usuário clicou em uma caixa de listagem e, em seguida, transferiu a roda, esse controle rolaria em resposta a uma rotação de roda. Se o usuário clicou em uma caixa de texto e, em seguida, giráu a roda, o documento inteiro será rolado. |
+| Planilha Excel inserida | O Word posta a mensagem Excel. Você deve decidir se o aplicativo inserido deve responder à mensagem ou não.                                                                                                                                                                                                                                                                                                                                                            |
+| Controle inserido           | É responsabilidade do aplicativo enviar a mensagem para um controle inserido que tem o foco e verificar o código de retorno para ver se o controle o tratou. Se o controle não o tiver controlado, o aplicativo deverá rolar a janela do documento. Por exemplo, se o usuário clicasse em uma caixa de listagem e rolasse a roda, esse controle rolaria em resposta a uma rotação de roda. Se o usuário clicasse em uma caixa de texto e girasse a roda, o documento inteiro rolaria. |
 
 
 
- 
+ 
 
-Este exemplo a seguir mostra como um aplicativo pode lidar com as duas mensagens de roda.
+Este exemplo a seguir mostra como um aplicativo pode lidar com as mensagens de duas roda.
 
 
 ```
@@ -589,9 +589,9 @@ LONG APIENTRY MainWndProc(
 
 
 
-## <a name="retrieving-the-number-of-mouse-wheel-scroll-lines"></a>Recuperando o número de linhas de rolagem de roda do mouse
+## <a name="retrieving-the-number-of-mouse-wheel-scroll-lines"></a>Recuperando o número de linhas de rolagem da roda do mouse
 
-O código a seguir permite que um aplicativo recupere o número de linhas de rolagem usando a função [**SystemParametersInfo**](/windows/desktop/api/winuser/nf-winuser-systemparametersinfoa) .
+O código a seguir permite que um aplicativo recupere o número de linhas de rolagem usando a [**função SystemParametersInfo.**](/windows/desktop/api/winuser/nf-winuser-systemparametersinfoa)
 
 
 ```
@@ -652,6 +652,6 @@ UINT GetNumScrollLines(void)
 
 
 
- 
+ 
 
- 
+ 

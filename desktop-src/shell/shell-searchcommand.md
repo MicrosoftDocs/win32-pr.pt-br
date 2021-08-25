@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shldisp.h
 ms.assetid: 5E789607-AEB6-48F9-A9D7-8D27263DBA77
-ms.openlocfilehash: ba0399051e71598a219d6425efa1a82cf6ccba3c
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 52d75423cab32fc819bbf4590d1e01de8917c9d6854cac4396bceaf5c096197f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109841817"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119941616"
 ---
 # <a name="shellsearchcommand-method"></a>Método Shell. SearchCommand
 
@@ -45,7 +45,7 @@ Shell.SearchCommand()
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 ### <a name="jscript"></a>JScript
 
@@ -61,9 +61,9 @@ Esse método não retorna um valor.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                   |
-| parâmetro<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>   |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                   |
+| Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl> |
 
 

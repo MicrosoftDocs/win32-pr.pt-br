@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aaf4b46997a7e3cf50dbf50c2828de78a814a513
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 769ef3f462fa542e9afc6859b564e1a32ed87578894df4008fb6a19ad8aadad8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918180"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119858666"
 ---
 # <a name="sessiondelete-method"></a>Método Session. Delete
 
@@ -58,7 +58,7 @@ Reservado para uso futuro. Deve ser definido como 0.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
@@ -96,7 +96,7 @@ objSession.Delete(strResource)
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                 |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                           |
-| parâmetro<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>WSManDisp. idl</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>WSManDisp. tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>WSMAuto.dll</dt> </dl>   |
@@ -107,7 +107,7 @@ objSession.Delete(strResource)
 
 <dl> <dt>
 
-[**Session**](session.md)
+[**Sessão**](session.md)
 </dt> </dl>
 
  

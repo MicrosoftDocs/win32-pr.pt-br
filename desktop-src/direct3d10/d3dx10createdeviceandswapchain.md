@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Core.h
-ms.openlocfilehash: fe71aeae91f8c43966e0fda2d2f430c7908f2855
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: aa92b0fd7efb9c6f457fd035fad28992d965a4cf2f6fdad39936292f7a70a996
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298759"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119852366"
 ---
 # <a name="d3dx10createdeviceandswapchain-function"></a>Função D3DX10CreateDeviceAndSwapChain
 
@@ -72,7 +72,7 @@ Um identificador para a DLL que implementa um rasterizador de software. Deve ser
 
 </dd> <dt>
 
-*Flags* \[in\]
+*Sinalizadores* \[ de no\]
 </dt> <dd>
 
 Tipo: **[ **uint**](../winprog/windows-data-types.md)**
@@ -108,7 +108,7 @@ Endereço de um ponteiro para uma [**interface ID3D10Device**](/windows/desktop/
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -121,7 +121,7 @@ Para criar o melhor dispositivo, esse método implementa mais de uma opção de 
 -   Use [**D3D10CreateDeviceAndSwapChain**](/windows/desktop/api/D3D10Misc/nf-d3d10misc-d3d10createdeviceandswapchain) para criar um dispositivo Direct3D 10,0 (somente) e uma cadeia de permuta.
 -   Use [**D3D10CreateDeviceAndSwapChain1**](/windows/desktop/api/D3D10_1/nf-d3d10_1-d3d10createdeviceandswapchain1) para criar um dispositivo Direct3D 10,1 (somente) e uma cadeia de permuta.
 
-Esse método requer o Windows Vista Service Pack 1.
+este método requer o Windows Vista Service Pack 1.
 
 ## <a name="requirements"></a>Requisitos
 

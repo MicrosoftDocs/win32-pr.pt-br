@@ -26,12 +26,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: eb0ad959d637a38a03b77bd8d7a812ff608ddc04
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 42b17cf31dcb3830cd35f046a7fcbad1858f8ae4f728fc1417339962a4be4441
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105974"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119927516"
 ---
 # <a name="systemconfig_v0_logdisk-class"></a>\_Classe SystemConfig V0 \_ LogDisk
 
@@ -140,7 +140,7 @@ Tipo de unidade de disco. Os valores possíveis são:
 
 | Valor                                                                        | Significado                                         |
 |------------------------------------------------------------------------------|-------------------------------------------------|
-| <dl> <dt>1</dt> </dl> | Partição<br/>                            |
+| <dl> <dt>1</dt> </dl> | Partition<br/>                            |
 | <dl> <dt>2</dt> </dl> | Volume<br/>                               |
 | <dl> <dt>3</dt> </dl> | Partição estendida em vários discos<br/> |
 
@@ -150,7 +150,7 @@ Tipo de unidade de disco. Os valores possíveis são:
 
 </dd> <dt>
 
-**WPD**
+**FileSystem**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **char16**
@@ -182,7 +182,7 @@ Número de clusters livres no volume especificado.
 
 </dd> <dt>
 
-**Bloco**
+**Pad**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **UInt32**
@@ -317,11 +317,11 @@ Reservado.
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/> |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

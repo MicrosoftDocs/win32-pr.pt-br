@@ -3,40 +3,40 @@ title: Para enumerar formatos de entrada
 description: Para enumerar formatos de entrada
 ms.assetid: 482adfc4-d9ed-403d-912b-1a5a70baf04c
 keywords:
-- Formato de sistema avançado (ASF), enumerando formatos de entrada
-- ASF (formato de sistemas avançados), enumerando formatos de entrada
+- ASF (Advanced Systems Format), enumerando formatos de entrada
+- ASF (Formato de Sistemas Avançados), enumerando formatos de entrada
 - perfis, enumerando formatos de entrada
 - codecs, enumerando formatos de entrada
-- ASF (Advanced Systems Format), enumerações de formato de entrada
-- ASF (formato de sistemas avançados), enumerações de formato de entrada
+- FORMATO DE SISTEMAS Avançados (ASF), enumerações de formato de entrada
+- ASF (Formato de Sistemas Avançados), enumerações de formato de entrada
 - perfis, enumerações de formato de entrada
 - codecs, enumerações de formato de entrada
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 18360d3172af785fd1c00648ba0c9e869fb7fbc6
-ms.sourcegitcommit: ad672d3a10192c5ccac619ad2524407109266e93
+ms.openlocfilehash: 09e1583c9331e9cfab26e7ac64064224111ea58858d32b876ece843b83df0d2e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2020
-ms.locfileid: "104007243"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119929246"
 ---
 # <a name="to-enumerate-input-formats"></a>Para enumerar formatos de entrada
 
-Cada um dos codecs de mídia do Windows aceita um ou mais tipos de mídia de entrada para compactação. O Windows Media Format SDK permite que você insira uma variedade maior de formatos do que aqueles com suporte nos codecs. O SDK faz isso executando transformações de pré-processamento nas entradas quando necessário, como redimensionar quadros de vídeo ou reamostrar áudio. Em qualquer caso, você deve garantir que os formatos de entrada para os arquivos gravados correspondam aos dados enviados para o gravador. Cada codec tem um formato de mídia de entrada padrão definido no gravador quando o perfil é carregado. Você pode examinar o formato de entrada padrão chamando [**IWMWriter:: GetInputProps**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriter-getinputprops).
+Cada um dos codecs Windows Media aceita um ou mais tipos de mídia de entrada para compactação. O Windows SDK de Formato de Mídia permite que você instale uma variedade maior de formatos do que os com suporte dos codecs. O SDK faz isso executando transformações de pré-processamento nas entradas quando necessário, como reizing video frames ou resampling audio. Em qualquer caso, você deve garantir que os formatos de entrada para os arquivos que você escreve corresponderem aos dados que você envia para o autor. Cada codec tem um formato de mídia de entrada padrão definido no autor quando o perfil é carregado. Você pode examinar o formato de entrada padrão chamando [**IWMWriter::GetInputProps.**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriter-getinputprops)
 
-Os codecs de vídeo dão suporte aos seguintes formatos: IYUV, I420, YV12, YUY2, UYVY, YVYU, YVU9, RGB 32, RGB 24, RGB 565, RGB 555 e RGB 8. Os codecs de áudio dão suporte a áudio PCM.
+Os codecs de vídeo são suportados nos seguintes formatos: IYUV, I420, YV12, YUY2, UYVY, YVYU, Y LTD9, RGB 32, RGB 24, RGB 565, RGB 555 e RGB 8. Os codecs de áudio são suportados por áudio PCM.
 
-Para enumerar os formatos de entrada com suporte por um codec, execute as seguintes etapas:
+Para enumerar os formatos de entrada com suporte de um codec, execute as seguintes etapas:
 
-1.  Crie um objeto do gravador e defina um perfil a ser usado. Para obter mais informações sobre como configurar perfis no gravador, consulte [para usar perfis com o gravador](to-use-profiles-with-the-writer.md).
-2.  Identifique o número de entrada para o qual você deseja verificar os formatos. Para obter mais informações sobre como identificar números de entrada, consulte [para identificar entradas por número](to-identify-inputs-by-number.md).
-3.  Recupere o número total de formatos de entrada com suporte pela entrada desejada chamando [**IWMWriter:: GetInputFormatCount**](/previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmwriter-getinputformatcount).
-4.  Execute o loop por todos os formatos de entrada com suporte, executando as etapas a seguir para cada um.
-    -   Recupere a interface [**IWMInputMediaProps**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwminputmediaprops) para o formato de entrada chamando [**IWMWriter:: GetInputFormat**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriter-getinputformat).
-    -   Recupere a estrutura do [**\_ \_ tipo de mídia do WM**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_media_type) para o formato de entrada. Chame [**IWMMediaProps:: GetMediaType**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmmediaprops-getmediatype), passando **NULL** para o parâmetro *pType* para obter o tamanho da estrutura. Em seguida, aloque memória para manter a estrutura e chamar **GetMediaType** novamente para obter a estrutura. [**IWMInputMediaProps**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwminputmediaprops) herda de [**IWMMediaProps**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmmediaprops), para que você possa fazer as chamadas para **GetMediaType** da instância do **IWMInputMediaProps** recuperada na etapa anterior.
-    -   O formato descrito na estrutura [**do \_ \_ tipo de mídia do WM**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_media_type) contém todas as informações pertinentes sobre o formato de entrada. O formato básico da mídia é identificado pela **mídia do \_ WM \_ tipo. subtipo**. Para fluxos de vídeo, o membro **pbFormat** aponta para uma estrutura de [**WMVIDEOINFOHEADER**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wmvideoinfoheader) alocada dinamicamente que contém mais detalhes sobre o fluxo, incluindo o tamanho do retângulo. O tamanho dos quadros de entrada não é necessário para corresponder exatamente a um tamanho suportado pelo codec. Se eles não corresponderem, os componentes de tempo de execução do SDK, em muitos casos, redimensionarão automaticamente os quadros de vídeo de entrada para algo que o codec possa aceitar.
+1.  Criar um objeto writer e definir um perfil a ser usado. Para obter mais informações sobre como definir perfis no autor, consulte [Para usar perfis com o Writer](to-use-profiles-with-the-writer.md).
+2.  Identifique o número de entrada para o qual você deseja verificar os formatos. Para obter mais informações sobre como identificar números de entrada, [consulte Para identificar entradas por número](to-identify-inputs-by-number.md).
+3.  Recupere o número total de formatos de entrada com suporte pela entrada desejada chamando [**IWMWriter::GetInputFormatCount**](/previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmwriter-getinputformatcount).
+4.  Executar um loop em todos os formatos de entrada com suporte, executando as etapas a seguir para cada um.
+    -   Recupere a interface [**IWMInputMediaProps**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwminputmediaprops) para o formato de entrada chamando [**IWMWriter::GetInputFormat**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriter-getinputformat).
+    -   Recupere a [**estrutura WM \_ MEDIA \_ TYPE**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_media_type) para o formato de entrada. Chame [**IWMMediaProps::GetMediaType,**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmmediaprops-getmediatype)passando **NULL** para o *parâmetro pType* para obter o tamanho da estrutura. Em seguida, aloce a memória para manter a estrutura e chame **GetMediaType** novamente para obter a estrutura. [**IWMInputMediaProps**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwminputmediaprops) herda de [**IWMMediaProps,**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmmediaprops)portanto, você pode fazer as chamadas para **GetMediaType** da instância de **IWMInputMediaProps** recuperadas na etapa anterior.
+    -   O formato descrito na estrutura [**WM \_ MEDIA \_ TYPE**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_media_type) contém todas as informações pertinentes sobre o formato de entrada. O formato básico da mídia é identificado por **WM \_ MEDIA \_ TYPE.subtype**. Para fluxos de vídeo, o membro **pbFormat** aponta para uma estrutura [**WMVIDEOINFOHEADER**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wmvideoinfoheader) alocada dinamicamente que contém mais detalhes sobre o fluxo, incluindo o tamanho do retângulo. O tamanho dos quadros de entrada não é necessário para corresponder exatamente a um tamanho com suporte do codec. Se eles não corresponderem, os componentes de tempo de run-time do SDK, em muitos casos, reorganizarão automaticamente os quadros de vídeo de entrada para algo que o codec possa aceitar.
 
-O código de exemplo a seguir localiza o formato de entrada do subtipo passado como um parâmetro. Para obter mais informações sobre como usar esse código, consulte [usando os exemplos de código](using-the-code-examples.md).
+O código de exemplo a seguir localiza o formato de entrada do subtipo passado como um parâmetro. Para obter mais informações sobre como usar esse código, [consulte Usando os exemplos de código](using-the-code-examples.md).
 
 
 ```C++
@@ -120,15 +120,15 @@ Exit:
 
 <dl> <dt>
 
-[**Interface IWMWriter**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmwriter)
+[**IWMWriter Interface**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmwriter)
 </dt> <dt>
 
-[**Gravando arquivos ASF**](writing-asf-files.md)
+[**Escrevendo arquivos ASF**](writing-asf-files.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

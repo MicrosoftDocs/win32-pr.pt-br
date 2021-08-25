@@ -14,12 +14,12 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: ecdfd91c9ea4ab5202a72015f579d560b37fbffd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7f7aaceff66cd817666dd05b92243239f860b2f59a993e4afca1831fc8085de0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105810615"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119929996"
 ---
 # <a name="iportabledevicevalues-interface"></a>Interface IPortableDeviceValues
 
@@ -47,7 +47,7 @@ A interface **IPortableDeviceValues** tem esses métodos.
 
 | Método                                                                                                                     | Descrição                                                                                                            |
 |:---------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------|
-| [**Formatação**](iportabledevicevalues-clear.md)                                                                               | Exclui todos os itens da coleção.<br/>                                                                      |
+| [**Limpar**](iportabledevicevalues-clear.md)                                                                               | Exclui todos os itens da coleção.<br/>                                                                      |
 | [**CopyValuesFromPropertyStore**](iportabledevicevalues-copyvaluesfrompropertystore.md)                                   | Copia o conteúdo de um **IPropertyStore** na coleção.<br/>                                           |
 | [**CopyValuesToPropertyStore**](iportabledevicevalues-copyvaluestopropertystore.md)                                       | Copia todos os valores de uma coleção para uma interface **IPropertyStore** .<br/>                               |
 | [**GetAt**](iportabledevicevalues-getat.md)                                                                               | Recupera um valor da coleção usando o índice de base zero fornecido.<br/>                                  |
@@ -86,7 +86,7 @@ A interface **IPortableDeviceValues** tem esses métodos.
 | [**SetStringValue**](iportabledevicevalues-setstringvalue.md)                                                             | Adiciona um novo valor de cadeia de caracteres (tipo VT \_ LPWSTR) ou substitui um existente.<br/>                                    |
 | [**SetUnsignedIntegerValue**](iportabledevicevalues-setunsignedintegervalue.md)                                           | Adiciona um novo valor **ULONG** (tipo VT \_ UI4) ou substitui um existente.<br/>                                    |
 | [**SetUnsignedLargeIntegerValue**](iportabledevicevalues-setunsignedlargeintegervalue.md)                                 | Adiciona um novo valor **ULONGLONG** (tipo VT \_ UI8) ou substitui um existente.<br/>                                |
-| [**SetValue**](iportabledevicevalues-setvalue.md)                                                                         | Adiciona um novo valor de **PROPVARIANT** ou substitui um existente.<br/>                                             |
+| [**SetValue**](iportabledevicevalues-setvalue.md)                                                                         | Adiciona um **novo valor PROPVARIANT** ou substitui um existente.<br/>                                             |
 
 
 
@@ -98,8 +98,8 @@ A interface **IPortableDeviceValues** tem esses métodos.
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
 
 
 

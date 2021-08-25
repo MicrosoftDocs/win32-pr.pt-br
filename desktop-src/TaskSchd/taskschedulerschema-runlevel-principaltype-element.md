@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9d374f5b9ad388f3ad0a626e1b99ecae96eeef1a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 143db96de30e647c67abadc2a9fb4384ae9784604b9c679efd9de5fd2157f923
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104295909"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119991085"
 ---
 # <a name="runlevel-runleveltype-element"></a>Elemento RunLevel (runLevelType)
 
@@ -38,7 +38,7 @@ O elemento **runlevel** é definido pelo tipo simples [**runLevelType**](tasksch
 
 | Elemento                                                                                  | Derivado de                                                           | Descrição                                                                                                                           |
 |------------------------------------------------------------------------------------------|------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| [**Entidade de segurança (PrincipalType)**](taskschedulerschema-principal-principaltype-element.md) | [**principalType**](taskschedulerschema-principaltype-complextype.md) | Especifica as credenciais de segurança para uma entidade. Essas credenciais definem o contexto de segurança em que uma tarefa é executada. <br/> |
+| [**Entidade de segurança (PrincipalType)**](taskschedulerschema-principal-principaltype-element.md) | [**PrincipalType**](taskschedulerschema-principaltype-complextype.md) | Especifica as credenciais de segurança para uma entidade. Essas credenciais definem o contexto de segurança em que uma tarefa é executada. <br/> |
 
 
 
@@ -58,8 +58,8 @@ Se uma tarefa for registrada usando o grupo **Administradores** para o contexto 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 

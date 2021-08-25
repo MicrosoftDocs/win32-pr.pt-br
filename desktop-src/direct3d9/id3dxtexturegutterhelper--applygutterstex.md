@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: c15bbc981bad3a670923e24e7d0745e91d0d9fcf
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a289eede9b55a3560408caf71a20aaf1811bb82780488b886cade8aaa5e96d75
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103930632"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119893236"
 ---
 # <a name="id3dxtexturegutterhelperapplygutterstex-method"></a>Método ID3DXTextureGutterHelper:: ApplyGuttersTex
 
@@ -49,7 +49,7 @@ Ponteiro para um objeto de textura [**IDirect3DTexture9**](/windows/win32/api/d3
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

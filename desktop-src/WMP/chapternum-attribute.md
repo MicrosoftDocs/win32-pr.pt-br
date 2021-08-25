@@ -3,7 +3,7 @@ title: Atributo chapterNum
 description: O atributo chapterNum é o número do capítulo de DVD.
 ms.assetid: 0938a553-a368-4155-963d-174d8ef1d1cd
 keywords:
-- Atributo chapterNum Windows Media Player
+- Windows Media Player de atributo chapterNum
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cf1b3103b2f4baf3def6eb111111b443022949cc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bb017fb17024f5877e158653c93f260add7be114cc0c655497a633b1e21f8cde
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105783623"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119863896"
 ---
 # <a name="chapternum-attribute"></a>Atributo chapterNum
 

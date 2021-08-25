@@ -4,12 +4,12 @@ ms.assetid: 6a509ed5-cea3-4318-ad17-9d20425a6e80
 title: Estruturas de metarquivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 33dfad6180b0b30c6bcb3786ec3870493c5b9839
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 370fa42f935a99183e9132c652368d102af83bc4ea908e4ae9733e346ae41cb5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104165067"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119965626"
 ---
 # <a name="metafile-structures"></a>Estruturas de metarquivo
 
@@ -125,11 +125,11 @@ Observe que a estrutura [**EMR**](/windows/win32/api/wingdi/ns-wingdi-emr) é us
 [**EMRSETMAPMODE**](/windows/win32/api/wingdi/ns-wingdi-emrselectclippath)  
 [**EMRSETMAPPERFLAGS**](/windows/win32/api/wingdi/ns-wingdi-emrsetmapperflags)  
 [**EMRSETMETARGN**](/windows/win32/api/wingdi/ns-wingdi-emrabortpath)  
-[**EMRSETMITERLIMIT**](/windows/win32/api/wingdi/ns-wingdi-emrsetmiterlimit)  
+[**EMRSETMITEMITEMITEIT**](/windows/win32/api/wingdi/ns-wingdi-emrsetmiterlimit)  
 [**EMRSETPALETTEENTRIES**](/windows/win32/api/wingdi/ns-wingdi-emrsetpaletteentries)  
 [**EMRSETPIXELV**](/windows/win32/api/wingdi/ns-wingdi-emrsetpixelv)  
 [**EMRSETPOLYFILLMODE**](/windows/win32/api/wingdi/ns-wingdi-emrselectclippath)  
-[**EMRSETROP2**](/windows/win32/api/wingdi/ns-wingdi-emrselectclippath)  
+[**EMRSE LTD2**](/windows/win32/api/wingdi/ns-wingdi-emrselectclippath)  
 [**EMRSETSTRETCHBLTMODE**](/windows/win32/api/wingdi/ns-wingdi-emrselectclippath)  
 [**EMRSETTEXTALIGN**](/windows/win32/api/wingdi/ns-wingdi-emrselectclippath)  
 [**EMRSETTEXTCOLOR**](/windows/win32/api/wingdi/ns-wingdi-emrsetbkcolor)  
@@ -140,15 +140,15 @@ Observe que a estrutura [**EMR**](/windows/win32/api/wingdi/ns-wingdi-emr) é us
 [**EMRSETWORLDTRANSFORM**](/windows/win32/api/wingdi/ns-wingdi-emrsetworldtransform)  
 [**EMRSTRETCHBLT**](/windows/win32/api/wingdi/ns-wingdi-emrstretchblt)  
 [**EMRSTRETCHDIBITS**](/windows/win32/api/wingdi/ns-wingdi-emrstretchdibits)  
-[**EMRSTROKEANDFILLPATH**](/windows/win32/api/wingdi/ns-wingdi-emrfillpath)  
+[**EMRROGKEANDFILLPATH**](/windows/win32/api/wingdi/ns-wingdi-emrfillpath)  
 [**EMRSTROKEPATH**](/windows/win32/api/wingdi/ns-wingdi-emrfillpath)  
 </dl>
 
 ## <a name="obsolete-structures"></a>Estruturas obsoletas
 
-As seguintes estruturas são obsoletas. Os são fornecidos para compatibilidade com os metaarquivos de formato do Windows:
+As estruturas a seguir estão obsoletas. Os são fornecidos para compatibilidade com Windows metarquivos de formato de Windows:
 
-metaregistro do [**METAHEADER**](/windows/win32/api/wingdi/ns-wingdi-metaheader)[](/windows/win32/api/wingdi/ns-wingdi-metarecord)
+[**METARECORD**](/windows/win32/api/wingdi/ns-wingdi-metaheader)[**METAHEADER**](/windows/win32/api/wingdi/ns-wingdi-metarecord)
 
  
 

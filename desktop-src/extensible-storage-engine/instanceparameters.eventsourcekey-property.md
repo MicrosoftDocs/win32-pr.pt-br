@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre a propriedade: Instanceparameters. EventSourceKey'
-title: Propriedade instanceparameters. EventSourceKey
+description: 'Saiba mais sobre: propriedade InstanceParameters.EventSourceKey'
+title: Propriedade InstanceParameters.EventSourceKey
 TOCTitle: 'EventSourceKey property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.InstanceParameters.EventSourceKey
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.instanceparameters.eventsourcekey(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d1dc80943095611737d0c9704bcc0e82ffee506f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 84d39ada06b0155c350da062eed6fffd23fa07b4866e7b94079019703247fef8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921224"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119850266"
 ---
-# <a name="instanceparameterseventsourcekey-property"></a>Propriedade instanceparameters. EventSourceKey
+# <a name="instanceparameterseventsourcekey-property"></a>Propriedade InstanceParameters.EventSourceKey
 
-Obtém ou define o nome do log de eventos que o mecanismo de banco de dados usa para suas mensagens de log de eventos. Por padrão, todas as mensagens de log de eventos vão para o log de eventos do aplicativo. Se o nome da chave do registro para outro log de eventos estiver configurado, as mensagens do log de eventos entrarão em seu lugar.
+Obtém ou define o nome do log de eventos que o mecanismo de banco de dados usa para suas mensagens de log de eventos. Por padrão, todas as mensagens do log de eventos serão enviadas para o log de eventos do aplicativo. Se o nome da chave do Registro para outro log de eventos estiver configurado, as mensagens do log de eventos serão enviadas para lá.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -62,14 +62,14 @@ public string EventSourceKey { get; set; }
 
 #### <a name="property-value"></a>Valor da propriedade
 
-Tipo: [System. String](/dotnet/api/system.string)  
+Tipo: [System.String](/dotnet/api/system.string)  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Classe instanceparameters](./instanceparameters-class.md)
+[Classe InstanceParameters](./instanceparameters-class.md)
 
-[Membros de instanceparameters](./instanceparameters-members.md)
+[Membros instanceParameters](./instanceparameters-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

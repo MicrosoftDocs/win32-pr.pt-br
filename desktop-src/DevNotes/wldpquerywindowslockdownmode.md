@@ -1,7 +1,7 @@
 ---
-description: Recupera o modo de segurança atual do Windows. O Windows pode estar no modo bloqueado, no modo normal desbloqueado ou no modo de avaliação.
+description: Recupera a versão atual Windows modo seguro. Windows pode estar no modo bloqueado, no modo normal desbloqueado ou no modo de avaliação.
 ms.assetid: FD280818-C6DE-4CEA-A772-E239A8DB891F
-title: Função WldpQueryWindowsLockdownMode (Wldp. h)
+title: Função WldpQueryWindowsLockdownMode (Wldp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - wldp.dll
-ms.openlocfilehash: fc746270a0634525154417cfba7e1529bee7edfb
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 94dc1665dcfa98b27fc15f68a799792b57f428875fefb88c6d35de57bad71b5f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164119"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119911286"
 ---
 # <a name="wldpquerywindowslockdownmode-function"></a>Função WldpQueryWindowsLockdownMode
 
-Recupera o modo de segurança atual do Windows. O Windows pode estar no modo bloqueado, no modo normal desbloqueado ou no modo de avaliação.
+Recupera a versão atual Windows modo seguro. Windows pode estar no modo bloqueado, no modo normal desbloqueado ou no modo de avaliação.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,16 +39,16 @@ Recupera o modo de segurança atual do Windows. O Windows pode estar no modo blo
 
 <dl> <dt>
 
-*lockdownmode* \[ fora\]
+*lockdownMode* \[ out\]
 </dt> <dd>
 
-Em caso de sucesso, retorna um [**\_ modo de \_ bloqueio \_ do Windows PWLDP**](wldp-windows-lockdown-mode.md) que indica o modo de segurança para o dispositivo atual do Windows 10.
+Em caso de êxito, retorna um MODO DE BLOQUEIO DO [**\_ WINDOWS \_ \_ PWLDP**](wldp-windows-lockdown-mode.md) que indica o modo de segurança para o dispositivo Windows 10 atual.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Esse método retornará **S \_ OK** , se for bem-sucedido ou um código de falha.
+Esse método retornará **S \_ OK se** for bem-sucedido ou um código de falha, caso contrário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,9 +56,9 @@ Esse método retornará **S \_ OK** , se for bem-sucedido ou um código de falha
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10, versão 1803\]<br/>                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2016\]<br/>                                |
-| parâmetro<br/>                   | <dl> <dt>Wldp. h</dt> </dl>   |
+| Cliente mínimo com suporte<br/> | Windows 10, versão 1803 somente \[ aplicativos da área de trabalho\]<br/>                           |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2016 somente aplicativos da área de trabalho\]<br/>                                |
+| Cabeçalho<br/>                   | <dl> <dt>Wldp.h</dt> </dl>   |
 | DLL<br/>                      | <dl> <dt>Wldp.dll</dt> </dl> |
 
 

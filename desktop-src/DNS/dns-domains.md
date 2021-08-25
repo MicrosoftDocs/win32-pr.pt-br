@@ -6,20 +6,20 @@ keywords:
 - Domínios DNS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 121ce61bb29505b4e15c9b42c3833638550a8b41
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 05244e58c4539b24b461b1907bb318db7f22f1d264b38f0b96b41641b8109abb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822746"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119913196"
 ---
 # <a name="dns-domains"></a>Domínios DNS
 
 Os domínios DNS são familiares para a maioria dos profissionais de computador que usam a Internet; os domínios são nós no espaço do nome da hierarquia DNS e os domínios podem ser divididos em subdomínios. Os domínios na hierarquia fictícia gadgets.widgets.microsoft.com, por exemplo, incluem os gadgets, widgets, Microsoft e domínios com.
 
- 
+ 
 
- 
+ 
 
 
 

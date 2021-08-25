@@ -1,10 +1,10 @@
-- name: APIs do XInput Game Controller
+- name: APIs do Controlador de Jogo XInput
   href: xinput-game-controller-apis-portal.md
   items:
     - name: Guia de Programação
       href: programming-guide.md
       items:
-        - name: Introdução com XInput
+        - name: Ponto de Partida com XInput
           href: getting-started-with-xinput.md
         - name: Versões do XInput
           href: xinput-versions.md
@@ -12,7 +12,7 @@
           href: xinput-and-directinput.md
         - name: Dispositivos DirectInput e XUSB
           href: directinput-and-xusb-devices.md
-        - name: XINPUT e subtipos de controlador
+        - name: Subtipos de controlador e XINPUT
           href: xinput-and-controller-subtypes.md
     - name: Referência de programação
       href: programming-reference.md
@@ -30,7 +30,7 @@
               href: /windows/desktop/api/XInput/nf-xinput-xinputgetcapabilities
             - name: XInputGetDSoundAudioDeviceGuids
               href: /windows/desktop/api/XInput/nf-xinput-xinputgetdsoundaudiodeviceguids
-            - name: XInputGetKeystroke
+            - name: XInputGetKeygonke
               href: /windows/desktop/api/XInput/nf-xinput-xinputgetkeystroke
             - name: XInputGetState
               href: /windows/desktop/api/XInput/nf-xinput-xinputgetstate

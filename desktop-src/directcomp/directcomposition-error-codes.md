@@ -1,5 +1,5 @@
 ---
-title: Códigos de erro DirectComposition (DCOMP. h)
+title: Códigos de erro DirectComposition (Dcomp.h)
 description: Esta seção descreve os códigos de erro específicos do DirectComposition.
 ms.assetid: 8DFBFC34-DBD0-4731-8305-B33E90C96C54
 topic_type:
@@ -15,20 +15,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 96a76a7527bacf8caa756a0fad75ca70f4bf9a77
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7d86ab61574af84e0b4b51223c69b181697dc0ebbdd7995c1bff112e286cc3ba
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085960"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119891976"
 ---
-# <a name="directcomposition-error-codes"></a>Códigos de erro DirectComposition
+# <a name="directcomposition-error-codes"></a>Códigos de erro directComposition
 
-Se ocorrer um erro, o Microsoft DirectComposition retornará um código como um valor **HRESULT** . Esta seção descreve os códigos de erro específicos do DirectComposition. Para obter uma lista de códigos de erro de Component Object Model geral (COM), consulte [códigos de erro com](/windows/desktop/com/com-error-codes).
+Se ocorrer um erro, o Microsoft DirectComposition retornará um código como **um valor HRESULT.** Esta seção descreve os códigos de erro específicos do DirectComposition. Para ver uma lista de códigos de Component Object Model (COM), consulte [Códigos de erro COM](/windows/desktop/com/com-error-codes).
 
 <dl> <dt>
 
-<span id="DCOMPOSITION_ERROR_ACCESS_DENIED"></span><span id="dcomposition_error_access_denied"></span>**\_ \_ acesso \_ negado ao erro DCOMPOSITION**
+<span id="DCOMPOSITION_ERROR_ACCESS_DENIED"></span><span id="dcomposition_error_access_denied"></span>**ACESSO DE ERRO DCOMPOSITION \_ \_ \_ NEGADO**
 </dt> <dd> <dl> <dt>
 
 
@@ -36,12 +36,12 @@ Se ocorrer um erro, o Microsoft DirectComposition retornará um código como um 
 
 
 
-O identificador de janela que foi especificado em uma chamada para o método [**IDCompositionDevice:: CreateTargetForHwnd**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createtargetforhwnd) pertence a um processo diferente daquele que criou o objeto Device.
+O identificador de janela especificado em uma chamada para o método [**IDCompositionDevice::CreateTargetForHwnd**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createtargetforhwnd) pertence a um processo diferente do que criou o objeto do dispositivo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DCOMPOSITION_ERROR_SURFACE_BEING_RENDERED"></span><span id="dcomposition_error_surface_being_rendered"></span>**\_superfície de erro DCOMPOSITION \_ \_ sendo \_ processada**
+<span id="DCOMPOSITION_ERROR_SURFACE_BEING_RENDERED"></span><span id="dcomposition_error_surface_being_rendered"></span>**SUPERFÍCIE DE ERRO DCOMPOSITION \_ \_ SENDO \_ \_ RENDERIZADA**
 </dt> <dd> <dl> <dt>
 
 
@@ -49,12 +49,12 @@ O identificador de janela que foi especificado em uma chamada para o método [**
 
 
 
-A superfície já estava sendo renderizada quando o aplicativo chamou o método [**IDCompositionSurface:: BeginDraw**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-begindraw), [**IDCompositionSurface:: SuspendDraw**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-suspenddraw)ou [**IDCompositionSurface:: ResumeDraw**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-resumedraw) . Para obter mais informações, consulte Comentários.
+A superfície já estava sendo renderizada quando o aplicativo chamou o método [**IDCompositionSurface::BeginDraw**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-begindraw), [**IDCompositionSurface::SuspendDraw**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-suspenddraw)ou [**IDCompositionSurface::ResumeDraw.**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-resumedraw) Para obter mais informações, consulte Comentários.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DCOMPOSITION_ERROR_SURFACE_NOT_BEING_RENDERED"></span><span id="dcomposition_error_surface_not_being_rendered"></span>**\_superfície de erro DCOMPOSITION \_ \_ não \_ está sendo \_ renderizada**
+<span id="DCOMPOSITION_ERROR_SURFACE_NOT_BEING_RENDERED"></span><span id="dcomposition_error_surface_not_being_rendered"></span>**A SUPERFÍCIE DE \_ ERRO DCOMPOSITION NÃO ESTÁ SENDO \_ \_ \_ \_ RENDERIZADA**
 </dt> <dd> <dl> <dt>
 
 
@@ -62,12 +62,12 @@ A superfície já estava sendo renderizada quando o aplicativo chamou o método 
 
 
 
-O aplicativo chamou o método [**IDCompositionSurface:: SuspendDraw**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-suspenddraw), [**IDCompositionSurface:: ResumeDraw**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-resumedraw)ou [**IDCompositionSurface:: EndDraw**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-enddraw) para uma superfície que não está sendo renderizada. Para obter mais informações, consulte Comentários.
+O aplicativo chamou o método [**IDCompositionSurface::SuspendDraw**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-suspenddraw), [**IDCompositionSurface::ResumeDraw**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-resumedraw)ou [**IDCompositionSurface::EndDraw**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-enddraw) para uma superfície que não está sendo renderizada. Para obter mais informações, consulte Comentários.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DCOMPOSITION_ERROR_WINDOW_ALREADY_COMPOSED"></span><span id="dcomposition_error_window_already_composed"></span>**\_janela de erro DCOMPOSITION \_ \_ já \_ composta**
+<span id="DCOMPOSITION_ERROR_WINDOW_ALREADY_COMPOSED"></span><span id="dcomposition_error_window_already_composed"></span>**JANELA DE ERRO \_ DCOMPOSITION \_ JÁ \_ \_ COMPOSTA**
 </dt> <dd> <dl> <dt>
 
 
@@ -75,68 +75,68 @@ O aplicativo chamou o método [**IDCompositionSurface:: SuspendDraw**](/windows/
 
 
 
-O método [**IDCompositionDevice:: CreateTargetForHwnd**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createtargetforhwnd) foi chamado com *HWND* e parâmetros mais *altos* para os quais uma árvore visual já existe.
+O [**método IDCompositionDevice::CreateTargetForHwnd**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createtargetforhwnd) foi chamado com *os parâmetros hwnd* e *topmost* para os quais uma árvore visual já existe.
 
 
 </dt> </dl> </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Se uma chamada para o [**IDCompositionSurface:: BeginDraw**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-begindraw) foi a ação mais recente:
+Se uma chamada para [**O IDCompositionSurface::BeginDraw**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-begindraw) foi a ação mais recente:
 
 
 
 | Chamando este método:                                    | Retorna este valor:                               |
 |---------------------------------------------------------|---------------------------------------------------|
-| [**BeginDraw**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-begindraw)     | **\_superfície de erro DCOMPOSITION \_ \_ sendo \_ processada** |
+| [**BeginDraw**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-begindraw)     | **SUPERFÍCIE DE ERRO DCOMPOSITION \_ \_ SENDO \_ \_ RENDERIZADA** |
 | [**EndDraw**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-enddraw)         | S \_ OK                                             |
 | [**SuspendDraw**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-suspenddraw) | S \_ OK                                             |
-| [**ResumeDraw**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-resumedraw)   | **\_superfície de erro DCOMPOSITION \_ \_ sendo \_ processada** |
+| [**ResumeDraw**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-resumedraw)   | **SUPERFÍCIE DE ERRO DCOMPOSITION \_ \_ SENDO \_ \_ RENDERIZADA** |
 
 
 
  
 
-Se uma chamada para o [**IDCompositionSurface:: SuspendDraw**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-suspenddraw) foi a ação mais recente:
+Se uma chamada para [**O IDCompositionSurface::SuspendDraw**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-suspenddraw) foi a ação mais recente:
 
 
 
 | Chamando este método:                                    | Retorna este valor:                               |
 |---------------------------------------------------------|---------------------------------------------------|
-| [**BeginDraw**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-begindraw)     | **\_superfície de erro DCOMPOSITION \_ \_ sendo \_ processada** |
+| [**BeginDraw**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-begindraw)     | **SUPERFÍCIE DE ERRO DCOMPOSITION \_ \_ SENDO \_ \_ RENDERIZADA** |
 | [**EndDraw**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-enddraw)         | S \_ OK                                             |
-| [**SuspendDraw**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-suspenddraw) | **\_superfície de erro DCOMPOSITION \_ \_ sendo \_ processada** |
+| [**SuspendDraw**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-suspenddraw) | **SUPERFÍCIE DE ERRO DCOMPOSITION \_ \_ SENDO \_ \_ RENDERIZADA** |
 | [**ResumeDraw**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-resumedraw)   | S \_ OK                                             |
 
 
 
  
 
-Se uma chamada para o [**IDCompositionSurface:: ResumeDraw**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-resumedraw) foi a ação mais recente:
+Se uma chamada para [**IDCompositionSurface::ResumeDraw**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-resumedraw) foi a ação mais recente:
 
 
 
 | Chamando este método:                                    | Retorna este valor:                                |
 |---------------------------------------------------------|----------------------------------------------------|
-| [**BeginDraw**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-begindraw)     | **\_superfície de erro DCOMPOSITION \_ \_ sendo \_ processada**  |
+| [**BeginDraw**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-begindraw)     | **SUPERFÍCIE DE ERRO DCOMPOSITION \_ \_ SENDO \_ \_ RENDERIZADA**  |
 | [**EndDraw**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-enddraw)         | S \_ OK                                              |
 | [**SuspendDraw**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-suspenddraw) | S \_ OK                                              |
-| [**ResumeDraw**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-resumedraw)   | **\_superfície de erro DCOMPOSITION \_ \_ que está sendo \_ renderizada.** |
+| [**ResumeDraw**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-resumedraw)   | **SUPERFÍCIE DE ERRO DCOMPOSITION \_ \_ SENDO \_ \_ RENDERIZADA.** |
 
 
 
  
 
-Se uma chamada para [**IDCompositionSurface:: EndDraw**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-enddraw) foi a ação mais recente:
+Se uma chamada para [**IDCompositionSurface::EndDraw**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-enddraw) foi a ação mais recente:
 
 
 
 | Chamando este método:                                    | Retorna este valor:                                     |
 |---------------------------------------------------------|---------------------------------------------------------|
 | [**BeginDraw**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-begindraw)     | S \_ OK                                                   |
-| [**EndDraw**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-enddraw)         | **a \_ superfície de erro DCOMPOSITION \_ \_ não \_ está sendo \_ renderizada.** |
-| [**SuspendDraw**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-suspenddraw) | **a \_ superfície de erro DCOMPOSITION \_ \_ não \_ está sendo \_ renderizada.** |
-| [**ResumeDraw**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-resumedraw)   | **a \_ superfície de erro DCOMPOSITION \_ \_ não \_ está sendo \_ renderizada.** |
+| [**EndDraw**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-enddraw)         | **A SUPERFÍCIE DE \_ ERRO DCOMPOSITION NÃO ESTÁ SENDO \_ \_ \_ \_ RENDERIZADA.** |
+| [**SuspendDraw**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-suspenddraw) | **A SUPERFÍCIE DE \_ ERRO DCOMPOSITION NÃO ESTÁ SENDO \_ \_ \_ \_ RENDERIZADA.** |
+| [**ResumeDraw**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsurface-resumedraw)   | **A SUPERFÍCIE DE \_ ERRO DCOMPOSITION NÃO ESTÁ SENDO \_ \_ \_ \_ RENDERIZADA.** |
 
 
 
@@ -148,9 +148,9 @@ Se uma chamada para [**IDCompositionSurface:: EndDraw**](/windows/win32/api/dcom
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>DCOMP. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Dcomp.h</dt> </dl> |
 
 
 
@@ -158,7 +158,7 @@ Se uma chamada para [**IDCompositionSurface:: EndDraw**](/windows/win32/api/dcom
 
 <dl> <dt>
 
-[Referência de DirectComposition](reference.md)
+[Referência do DirectComposition](reference.md)
 </dt> </dl>
 
  

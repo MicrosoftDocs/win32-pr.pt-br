@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 81a3f42eb94d14506d96348b803c8b1bc41737d1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 85cbbeaa5d911b1ef9677c79980167a66cdf410c7aa63597b02b007795dfbd81
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105758102"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119991206"
 ---
 # <a name="logontriggertype-complex-type"></a>Tipo complexo logonTriggerType
 
@@ -52,7 +52,7 @@ Define os elementos filho e as informações de sequenciamento para o elemento [
 
 | Elemento                                                               | Type                                                                    | Descrição                                                                                   |
 |-----------------------------------------------------------------------|-------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| [**Retardo**](taskschedulerschema-delay-logontriggertype-element.md)   | duration                                                                | Quantidade de tempo entre quando o usuário faz logon e quando a tarefa é iniciada.<br/>         |
+| [**Atrasar**](taskschedulerschema-delay-logontriggertype-element.md)   | duration                                                                | Quantidade de tempo entre quando o usuário faz logon e quando a tarefa é iniciada.<br/>         |
 | [**ID**](taskschedulerschema-userid-logontriggertype-element.md) | [**não vazio**](taskschedulerschema-nonemptystring-simpletype.md) | Identificador do usuário. A tarefa é iniciada quando esse usuário faz logon no computador.<br/> |
 
 
@@ -67,8 +67,8 @@ Além dos elementos filho definidos aqui, o elemento [**LogonTrigger**](tasksche
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 

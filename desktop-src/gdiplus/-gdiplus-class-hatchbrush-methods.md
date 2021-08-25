@@ -4,18 +4,18 @@ ms.assetid: 83ee176e-7917-4a4b-81e5-192bf217175c
 title: Métodos HatchBrush
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d54c112e88d30fd6565ea4a85240aae29ba3a37
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f3f580038ee50f4e43ada96fa678295b794bb859fab00e85877de887f9b0228c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967812"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119888316"
 ---
 # <a name="hatchbrush-methods"></a>Métodos HatchBrush
 
 Este tópico lista os métodos da classe [**HatchBrush**](/windows/desktop/api/gdiplusbrush/nl-gdiplusbrush-hatchbrush) . Para obter uma listagem de classe completa, consulte **classe HatchBrush**.
 
--   [**8i**](/windows/desktop/api/Gdiplusbrush/nf-gdiplusbrush-brush-clone)
+-   [**Clone**](/windows/desktop/api/Gdiplusbrush/nf-gdiplusbrush-brush-clone)
 -   [**GetBackgroundColor**](/windows/desktop/api/Gdiplusbrush/nf-gdiplusbrush-hatchbrush-getbackgroundcolor)
 -   [**GetForegroundColor**](/windows/desktop/api/Gdiplusbrush/nf-gdiplusbrush-hatchbrush-getforegroundcolor)
 -   [**Gethachurastyle**](/windows/desktop/api/Gdiplusbrush/nf-gdiplusbrush-hatchbrush-gethatchstyle)

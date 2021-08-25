@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 644cff9c94876fab11bc9fbe181ac0375d9444fb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3a48c9ce3a276f060ac90dd15100ca8612e35116e124588e27f4ee36c1a0b8a4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105760650"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119930736"
 ---
 # <a name="wmt_rights-enumeration"></a>Enumeração de direitos de WMT \_
 
@@ -95,7 +95,7 @@ Especifica o direito de salvar o conteúdo de um servidor.
 <span id="WMT_RIGHT_COPY"></span><span id="wmt_right_copy"></span>**WMT \_ a \_ cópia direita**
 </dt> <dd>
 
-Especifica o direito de copiar o conteúdo. O Windows Media DRM 10 regula os dispositivos nos quais o conteúdo pode ser copiado usando os níveis de proteção de saída (OPLs).
+Especifica o direito de copiar o conteúdo. Windows O DRM 10 de mídia regula os dispositivos nos quais o conteúdo pode ser copiado usando os níveis de proteção de saída (OPLs).
 
 </dd> <dt>
 
@@ -124,7 +124,7 @@ Reservado para uso futuro. Não use.
 
 Esses valores são sinalizadores de bits, de modo que um ou mais podem ser definidos combinando-os com **o operador OR** .
 
-Ao usar o Windows Media DRM 10, o **WMT \_ Right \_ Copie \_ para um \_ \_ \_ dispositivo não SDMI**, **\_ a cópia do WMT Right \_ para o \_ \_ \_ dispositivo SDMI** e **\_ a cópia do WMT à direita \_ para o \_ \_ CD** são substituídas pela **cópia de WMT \_ à direita \_**. As limitações nos dispositivos nos quais o conteúdo pode ser copiado são especificadas usando os níveis de proteção de saída (OPLs).
+ao usar Windows mídia DRM 10, **WMT \_ à \_ direita \_ copiar \_ para \_ \_ dispositivo não SDMI**, **WMT \_ à direita \_ copiar \_ para \_ \_ dispositivo SDMI** e **WMT \_ a cópia à direita \_ \_ para \_ CD** são substituídas pela **cópia de WMT \_ à direita \_**. As limitações nos dispositivos nos quais o conteúdo pode ser copiado são especificadas usando os níveis de proteção de saída (OPLs).
 
 ## <a name="requirements"></a>Requisitos
 

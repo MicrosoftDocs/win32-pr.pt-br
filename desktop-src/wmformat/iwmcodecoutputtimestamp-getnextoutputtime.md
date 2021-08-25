@@ -1,6 +1,6 @@
 ---
 title: GetNextOutputTime
-description: Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte codec de áudio e vídeo do Windows Media e APIs do DSP. | GetNextOutputTime
+description: Para ver a documentação atual sobre Windows de mídia e processadores de sinal digital, consulte Windows codec de áudio e vídeo de mídia e APIs DSP. | GetNextOutputTime
 ms.assetid: b8b835e3-7317-42fc-a998-2933fa50ddd2
 keywords:
 - Formato de mídia do Windows GetNextOutputTime
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d0ce26a64120d8ab17f1ab2627126fdfd5ea6fb
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 57632be104e96c0d529d088bf6044936c51b450b3089242e74f49efaf07938cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105771358"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119808686"
 ---
 # <a name="getnextoutputtime"></a>GetNextOutputTime
 
-Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte [codec de áudio e vídeo do Windows Media e APIs do DSP.](/previous-versions//dd464626(v=vs.85))
+Para ver a documentação atual Windows codecs de mídia e processadores de sinal digital, consulte Windows codec de áudio e vídeo de mídia e [APIs DSP.](/previous-versions//dd464626(v=vs.85))
 
  
 

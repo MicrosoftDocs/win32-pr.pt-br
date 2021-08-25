@@ -4,27 +4,27 @@ ms.assetid: 8015682c-d84d-44e2-995d-dca68053c4fa
 title: Tratamento de erros em componentes na fila
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 95752adf82d74e39a9c93f1ae54584e72007f1ce
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 314ff367e656043746bb34bcb28b6c5a3dc8db9b86b58a482af45f684fb658c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501005"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119991076"
 ---
 # <a name="handling-errors-in-queued-components"></a>Tratamento de erros em componentes na fila
 
-Ocasionalmente, ocorre uma situação em que uma mensagem não pode ser entregue com êxito ao destino pretendido, geralmente devido a um problema com o sistema ou a configuração. Por exemplo, a mensagem pode ser direcionada para uma fila que não existe ou a fila de destino pode não estar em um estado para receber. O motor da mensagem é uma ferramenta que move todas as mensagens com falha do [serviço de enfileiramento](/previous-versions/windows/desktop/legacy/ms711472(v=vs.85)) de uma fila para outra para que elas possam ser repetidas. O utilitário de movimentação de mensagens é um objeto de automação que pode ser invocado com um VBScript.
+Ocasionalmente, ocorre uma situação em que uma mensagem não pode ser entregue com êxito ao destino pretendido, geralmente devido a um problema com o sistema ou a configuração. Por exemplo, a mensagem pode ser direcionada para uma fila que não existe ou a fila de destino pode não estar em um estado a ser recebido. O mover de mensagem é [](/previous-versions/windows/desktop/legacy/ms711472(v=vs.85)) uma ferramenta que move todas as mensagens com falha no Enfiling de Mensagens de uma fila para outra para que possam ser recuperadas. O utilitário de movimentação de mensagens é um objeto de Automação que pode ser invocado com um VBScript.
 
-## <a name="components-services-administrative-tool"></a>Ferramenta administrativa serviços de componentes
+## <a name="components-services-administrative-tool"></a>Ferramenta Administrativa dos Serviços de Componentes
 
 Não se aplica.
 
 ## <a name="visual-basic"></a>Visual Basic
 
-O código de exemplo a seguir mostra como criar um objeto MessageMover, definir as propriedades necessárias e iniciar a transferência. Para usá-lo de Visual Basic, adicione uma referência à biblioteca de tipos de serviços COM+.
+O código de exemplo a seguir mostra como criar um objeto MessageMover, definir as propriedades necessárias e iniciar a transferência. Para usá-lo do Visual Basic, adicione uma referência à Biblioteca de Tipos de Serviços COM+.
 
 > [!Note]  
-> Para usar o objeto MessageMover, você deve ter o enfileiramento de mensagens instalado no computador e o aplicativo especificado por AppName deve ter o enfileiramento habilitado. Para obter informações sobre como instalar o enfileiramento de mensagens, consulte ajuda e suporte no menu **Iniciar** .
+> Para usar o objeto MessageMover, você deve ter o En enrosco de mensagens instalado em seu computador e o aplicativo especificado por AppName deve ter a fila habilitada. Para obter informações sobre como instalar o Enluamento de Mensagens, consulte Ajuda e suporte **no** menu Iniciar.
 
  
 
@@ -63,7 +63,7 @@ End Function
 
 
 
-O código de Visual Basic a seguir mostra como chamar a função MyMessageMover.
+O código Visual Basic a seguir mostra como chamar a função MyMessageMover.
 
 
 ```VB
@@ -78,18 +78,18 @@ End Sub
 
 
 
-O caminho de origem da mensagem é a fila de repouso final. É a fila inativa, que é uma fila de enfileiramento de mensagens particular e é chamada de AppName \_ deadqueue. As mensagens serão movidas aqui se a transação for anulada repetidamente quando for tentada na quinta fila de repetição. Com a ferramenta de movimentação de mensagem, você pode mover a mensagem de volta para a primeira fila, que é chamada de AppName. Para obter mais informações sobre as filas de repetição, consulte [erros do lado do servidor](server-side-errors.md).
+O caminho de origem da mensagem é a fila final da fila de fila. É a fila inominática, que é uma fila privada do Enfileiramento de Mensagens e é chamada \_ de fila inome do AppName. As mensagens serão movidas para aqui se a transação for anulada repetidamente quando tentada na quinta fila de novas tentativas. Com a ferramenta de movimentação de mensagens, você pode mover a mensagem de volta para a primeira fila, que é chamada AppName. Para obter mais informações sobre filas de repetir, consulte [Erros do lado do servidor.](server-side-errors.md)
 
-Se os atributos de fila permitirem, o movimentador de mensagem moverá as mensagens de modo transitivo para que as mensagens não sejam perdidas ou duplicadas em caso de falha durante a movimentação. A ferramenta preserva todas as propriedades de mensagem que podem ser mantidas ao mover mensagens de uma fila para outra.
+Se os atributos de fila permitirem, o mover da mensagem move as mensagens em transição para que as mensagens não sejam perdidas ou duplicadas em caso de falha durante a movimentação. A ferramenta preserva todas as propriedades de mensagem que podem ser preservadas ao mover mensagens de uma fila para outra.
 
-Se as mensagens forem geradas por chamadas de componentes em fila do COM+, o utilitário de movimentação de mensagens preservará o identificador de segurança do chamador original à medida que ele move mensagens entre filas. Se as filas de destino e de origem forem transacionais, toda a operação será feita em transição. Se as filas de origem ou de destino não forem transacionais, a operação não será executada em uma transação. Uma falha inesperada (como uma falha) e o reinício de uma movimentação não transacional pode duplicar a mensagem que está sendo movida no momento da falha.
+Se as mensagens são geradas por chamadas de Componentes Em Fila COM+, o utilitário de movimentação de mensagem preserva o identificador de segurança do chamador original à medida que move mensagens entre filas. Se as filas de destino e de origem são transacionais, toda a operação é feita em transição. Se as filas de origem ou de destino não são transacionais, a operação não é executado em uma transação. Uma falha inesperada (como uma falha) e a reinicialização de uma movimentação não transacional podem duplicar a mensagem que está sendo movida no momento da falha.
 
 ## <a name="cc"></a>C/C++
 
-O código de exemplo a seguir mostra como criar um objeto MessageMover, definir as propriedades necessárias e iniciar a transferência. O método ErrorDescription é descrito em [interpretando códigos de erro](interpreting-error-codes.md).
+O código de exemplo a seguir mostra como criar um objeto MessageMover, definir as propriedades necessárias e iniciar a transferência. O método ErrorDescription é descrito em [Interpretando códigos de erro.](interpreting-error-codes.md)
 
 > [!Note]  
-> Para usar o objeto MessageMover, você deve ter o enfileiramento de mensagens instalado no computador e o aplicativo especificado por AppName deve ter o enfileiramento habilitado. Para obter informações sobre como instalar o enfileiramento de mensagens, consulte ajuda e suporte no menu **Iniciar** .
+> Para usar o objeto MessageMover, você deve ter o En enrosco de mensagens instalado em seu computador e o aplicativo especificado por AppName deve ter a fila habilitada. Para obter informações sobre como instalar o Enluamento de Mensagens, consulte Ajuda e suporte **no** menu Iniciar.
 
  
 
@@ -197,15 +197,15 @@ void main()
 
 
 
-O caminho de origem da mensagem é a fila de repouso final. É a fila inativa, que é uma fila de enfileiramento de mensagens particular e é chamada de AppName \_ deadqueue. As mensagens serão movidas aqui se a transação for anulada repetidamente quando for tentada na quinta fila de repetição. Com a ferramenta de movimentação de mensagem, você pode mover a mensagem de volta para a primeira fila, que é chamada de AppName. Para obter mais informações sobre as filas de repetição, consulte [erros do lado do servidor](server-side-errors.md).
+O caminho de origem da mensagem é a fila final da fila de fila. É a fila inominática, que é uma fila privada do Enfileiramento de Mensagens e é chamada \_ de fila inome do AppName. As mensagens serão movidas para aqui se a transação for anulada repetidamente quando tentada na quinta fila de novas tentativas. Com a ferramenta de movimentação de mensagens, você pode mover a mensagem de volta para a primeira fila, que é chamada AppName. Para obter mais informações sobre filas de repetir, consulte [Erros do lado do servidor.](server-side-errors.md)
 
-Se os atributos de fila permitirem, o movimentador de mensagem moverá as mensagens de modo transitivo para que as mensagens não sejam perdidas ou duplicadas em caso de falha durante a movimentação. A ferramenta preserva todas as propriedades de mensagem que podem ser mantidas ao mover mensagens de uma fila para outra.
+Se os atributos de fila permitirem, o mover da mensagem move as mensagens em transição para que as mensagens não sejam perdidas ou duplicadas em caso de falha durante a movimentação. A ferramenta preserva todas as propriedades de mensagem que podem ser preservadas ao mover mensagens de uma fila para outra.
 
-Se as mensagens forem geradas por chamadas de componentes em fila do COM+, o utilitário de movimentação de mensagens preservará o identificador de segurança do chamador original à medida que ele move mensagens entre filas. Se as filas de destino e de origem forem transacionais, toda a operação será feita em transição. Se as filas de origem ou de destino não forem transacionais, a operação não será executada em uma transação. Uma falha inesperada (como uma falha) e o reinício de uma movimentação não transacional pode duplicar a mensagem que está sendo movida no momento da falha.
+Se as mensagens são geradas por chamadas de Componentes Em Fila COM+, o utilitário de movimentação de mensagem preserva o identificador de segurança do chamador original à medida que move mensagens entre filas. Se as filas de destino e de origem são transacionais, toda a operação é feita em transição. Se as filas de origem ou de destino não são transacionais, a operação não é executado em uma transação. Uma falha inesperada (como uma falha) e a reinicialização de uma movimentação não transacional podem duplicar a mensagem que está sendo movida no momento da falha.
 
 ## <a name="remarks"></a>Comentários
 
-O COM+ manipula as anulações de servidor (Player) movendo a mensagem que está falhando em uma fila diferente de "repouso final", para desfazê-la. O ouvinte e o Player não podem fazer loop continuamente em uma mensagem anulada. Em muitos casos, a transação anulada pode ser corrigida executando uma ação no servidor.
+O COM+ lida com anulações do lado do servidor (player) movendo a mensagem que está falhando em uma fila "final final" diferente, para que ela saia do caminho. O ouvinte e o player não podem fazer loop continuamente em uma mensagem anulada. Em muitos casos, a transação anulada pode ser corrigida por meio da ação no servidor.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

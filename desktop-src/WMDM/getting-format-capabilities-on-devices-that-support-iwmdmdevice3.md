@@ -3,27 +3,27 @@ title: Obtendo recursos de formato por meio de IWMDMDevice3
 description: Obtendo recursos de formato em dispositivos que dão suporte a IWMDMDevice3
 ms.assetid: a431c3cb-e722-4d68-a82d-385fff067ea6
 keywords:
-- Windows Media Gerenciador de Dispositivos, recursos do dispositivo
+- Windows Gerenciador de Dispositivos de mídia, recursos do dispositivo
 - Gerenciador de Dispositivos, recursos do dispositivo
 - Guia de programação, recursos do dispositivo
 - aplicativos de desktop, recursos de dispositivo
-- Criando aplicativos de Gerenciador de Dispositivos de mídia do Windows, recursos do dispositivo
+- criação de aplicativos de Gerenciador de Dispositivos de mídia Windows, recursos de dispositivo
 - gravando arquivos em dispositivos, recursos do dispositivo
 - Método IWMDMDevice3
-- Windows Media Gerenciador de Dispositivos, método IWMDMDevice3
+- Windows Gerenciador de Dispositivos de mídia, método IWMDMDevice3
 - Gerenciador de Dispositivos, método IWMDMDevice3
 - Guia de programação, método IWMDMDevice3
 - aplicativos de área de trabalho, método IWMDMDevice3
-- Criando aplicativos de Gerenciador de Dispositivos de mídia do Windows, método IWMDMDevice3
+- criando Windows aplicativos de Gerenciador de Dispositivos de mídia, método IWMDMDevice3
 - gravando arquivos em dispositivos, método IWMDMDevice3
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 734f674a5fc54aaec0df10d4db613fa067f9b505
-ms.sourcegitcommit: b95a94ffffda33f9ebbdd41787c01866444b4cf4
+ms.openlocfilehash: 1eadde80f957573563468375ea06cd64b95cf83815491a3f21775fb1ebcefc7d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "104006962"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119957516"
 ---
 # <a name="getting-format-capabilities-through-iwmdmdevice3"></a>Obtendo recursos de formato por meio de IWMDMDevice3
 
@@ -37,7 +37,7 @@ ms.locfileid: "104006962"
     -   Um único valor, WMDM \_ enum \_ prop \_ \_ valores válidos \_ , indicando suporte para quaisquer valores dessa propriedade.
     -   Um intervalo de valores, definido por um valor máximo, valor mínimo e intervalo.
     -   Uma lista de valores discretos.
-6.  Limpe os valores armazenados. A memória para esses valores é alocada pelo Windows Media Gerenciador de Dispositivos; seu dispositivo é responsável por liberar a memória. Como fazer isso é descrito no final deste tópico.
+6.  Limpe os valores armazenados. a memória para esses valores é alocada pelo Gerenciador de Dispositivos de mídia Windows; seu dispositivo é responsável por liberar a memória. Como fazer isso é descrito no final deste tópico.
 
 Ao responder a **GetFormatCapability**, um dispositivo pode reportar \_ \_ \_ valores válidos de prop Enumerate para o \_ \_ **recurso de \_ formato WMDM \_ . configuração de prop do WMDM \_ \_ . WMDM \_ prop \_ desc. ValidValuesForm** para solicitar suporte para quaisquer valores de taxa de bits, canais e assim por diante. No entanto, você deve tratar essa declaração com cautela, pois os dispositivos podem, às vezes, relatar suporte para quaisquer valores quando, na verdade, não dão suporte a todas as taxas de bits ou tamanhos de imagem. Você pode considerar que o aplicativo transcodificará arquivos extremamente grandes ou de alta taxa de bits para versões menores ou para versões com uso intensivo de CPU e uso intensivo de memória ao enviá-los para dispositivos que se destinam a reproduzir esses arquivos.
 
@@ -224,9 +224,9 @@ e_Exit:
 [**Descobrindo recursos de formato de dispositivo**](discovering-device-format-capabilities.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

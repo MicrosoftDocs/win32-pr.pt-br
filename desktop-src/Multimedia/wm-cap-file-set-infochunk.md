@@ -3,7 +3,7 @@ title: Mensagem de WM_CAP_FILE_SET_INFOCHUNK (VFW. h)
 description: O arquivo do WM \_ Cap \_ \_ set \_ INFOCHUNK Message define e limpa as partes de informações.
 ms.assetid: 67d11a05-a2b4-45d2-ba66-83a198745303
 keywords:
-- Multimídia do Windows de mensagem WM_CAP_FILE_SET_INFOCHUNK
+- mensagem de WM_CAP_FILE_SET_INFOCHUNK Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 067ba00563a5ca511f13b23615fc4542090ba397
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 06d64f88a87af63e5afc513e0e2cf2df53d64570bec099a2f8f2846d781fc0b0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104008894"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119892066"
 ---
 # <a name="wm_cap_file_set_infochunk-message"></a>\_Mensagem de \_ INFOCHUNK do conjunto de arquivos \_ \_ do WM Cap
 

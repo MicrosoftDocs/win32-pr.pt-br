@@ -1,9 +1,9 @@
 ---
-title: Elemento Provider (EventType)
-description: Define um provedor e os metadados que ele usa para definir seus eventos. | Elemento Provider (EventType)
+title: Elemento provider (EventsType)
+description: Define um provedor e os metadados que ele usa para definir seus eventos. | Elemento provider (EventsType)
 ms.assetid: 607f077f-5ad4-4a32-b58a-23ba030bdbf7
 keywords:
-- o elemento do provedor EventLog
+- elemento provider EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 76d3271211128a62e2b43a909e50cd9bb91f31cb
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 5793738c80ec6c7298b29d286f65719cc0ff30b9e82bf4364fdfe1450ea415ec
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104298371"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119958266"
 ---
-# <a name="provider-eventstype-element"></a>Elemento Provider (EventType)
+# <a name="provider-eventstype-element"></a>Elemento provider (EventsType)
 
 Define um provedor e os metadados que ele usa para definir seus eventos.
 
@@ -30,7 +30,7 @@ Define um provedor e os metadados que ele usa para definir seus eventos.
  />
 ```
 
-O elemento **Provider** é definido pelo tipo complexo [**EventType**](eventmanifestschema-eventstype-complextype.md) .
+O **elemento** de provedor é definido pelo [**tipo complexo EventsType.**](eventmanifestschema-eventstype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ O elemento **Provider** é definido pelo tipo complexo [**EventType**](eventmani
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

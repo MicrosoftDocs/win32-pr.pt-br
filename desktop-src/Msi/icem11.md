@@ -4,18 +4,18 @@ ms.assetid: f0199137-0a40-40ca-b3cf-ff8eef4309cc
 title: ICEM11
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 403a36435ce2367fc356934740e6d022f5457698
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 157248d62f43a0b1a791220e2aeb917ba8273d31b93de69078f9876cddbd2748
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170428"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119894426"
 ---
 # <a name="icem11"></a>ICEM11
 
 ICEM11 verifica se um módulo de mesclagem configurável lista a [Tabela ModuleConfiguration](moduleconfiguration-table.md) e a [tabela ModuleSubstitution](modulesubstitution-table.md) na [tabela ModuleIgnoreTable](moduleignoretable-table.md) do módulo. Isso garante que as ferramentas de mesclagem que não reconheçam módulos de mesclagem configuráveis (menos que a versão 2,0) não copiem essas tabelas no banco de dados de destino.
 
-Esse ICEM está disponível no arquivo Mergemod. Cub fornecido no SDK do Windows Installer 2,0 e posterior. Para obter detalhes, consulte [SDK do Windows components for Windows Installer Developers](platform-sdk-components-for-windows-installer-developers.md).
+esse ICEM está disponível no arquivo Mergemod. cub fornecido no SDK do Windows Installer 2,0 e posterior. para obter detalhes, consulte [SDK do Windows components for Windows Installer developers](platform-sdk-components-for-windows-installer-developers.md).
 
 ## <a name="result"></a>Resultado
 

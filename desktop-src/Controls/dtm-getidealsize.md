@@ -3,7 +3,7 @@ title: Mensagem de DTM_GETIDEALSIZE (commctrl. h)
 description: Obtém o tamanho necessário para exibir o controle sem recorte. Envie essa mensagem explicitamente ou usando a macro DateTime \_ GetIdealSize.
 ms.assetid: 15ec26a1-645b-4a96-af66-1031e1a46c6c
 keywords:
-- Controles de DTM_GETIDEALSIZE de mensagens do Windows
+- controles de Windows de mensagem de DTM_GETIDEALSIZE
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a979883f431fea4627f52fe19c3716341e3f2328
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 639fbbb25fbf61695f83b54f106f45ff3dd421f528807120be52edd7031e4f66
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104163585"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119878226"
 ---
 # <a name="dtm_getidealsize-message"></a>\_Mensagem DTM GETIDEALSIZE
 
@@ -43,7 +43,7 @@ Um ponteiro para uma estrutura de [**tamanho**](/previous-versions//dd145106(v=v
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna **true**.
 
@@ -53,9 +53,9 @@ Retorna **true**.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Tipo simples de counttype
-description: Define um tipo de contagem que é usado para especificar o número de elementos em uma matriz.
+title: Tipo simples CountType
+description: Define um tipo de contagem usado para especificar o número de elementos em uma matriz.
 ms.assetid: 84f819d7-5c42-475b-9144-aaa5e2d215c8
 keywords:
-- EventLog de tipo simples de counttype
+- Tipo simples CountType EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8f91b19df4182f5cff305de0429a308d0c5db234
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 63476d70a9bb5b336449a65707664c05c56a20b4c2c9fa4888c0c3125f129d90
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103645234"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119863616"
 ---
-# <a name="counttype-simple-type"></a>Tipo simples de counttype
+# <a name="counttype-simple-type"></a>Tipo simples CountType
 
-Define um tipo de contagem que é usado para especificar o número de elementos em uma matriz. O valor pode ser especificado como um valor xs: unsignedShort ou como uma cadeia de caracteres que faz referência ao nome do nó de item de dados que contém o valor curto de unsiged.
+Define um tipo de contagem usado para especificar o número de elementos em uma matriz. O valor pode ser especificado como um valor xs:unsignedShort ou como uma cadeia de caracteres que faz referência ao nome do nó do item de dados que contém o valor curto não assinado.
 
 ``` syntax
 <xs:simpleType name="CountType">
@@ -38,8 +38,8 @@ Define um tipo de contagem que é usado para especificar o número de elementos 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

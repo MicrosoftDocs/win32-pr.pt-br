@@ -1,74 +1,74 @@
 ---
 title: Como personalizar barras de ferramentas
-description: A maioria dos aplicativos baseados no Windows usa controles da barra de ferramentas para fornecer aos usuários acesso conveniente à funcionalidade do programa.
+description: A maioria Windows aplicativos baseados em ferramentas usam controles de barra de ferramentas para fornecer aos usuários acesso conveniente à funcionalidade do programa.
 ms.assetid: 0CE2988E-D887-433B-BFB2-5F3442E8E1B7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 091451a139cf846b1106916f28c165d6640699eb
-ms.sourcegitcommit: f0ca63c18dc52c357d3398af7be766d2bdd40be7
+ms.openlocfilehash: f098880676fc0404df2a68694dc80b8601c21926d94ff594029321bafb1528a9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "104007264"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119929537"
 ---
 # <a name="how-to-customize-toolbars"></a>Como personalizar barras de ferramentas
 
-A maioria dos aplicativos baseados no Windows usa controles da barra de ferramentas para fornecer aos usuários acesso conveniente à funcionalidade do programa. No entanto, as barras de ferramentas estáticas têm algumas deficiências — por exemplo, pouco espaço para exibir efetivamente todas as ferramentas disponíveis. A solução para esse problema é tornar as barras de ferramentas do aplicativo personalizáveis pelo usuário. Em seguida, os usuários podem optar por exibir apenas as ferramentas de que precisam e podem organizá-los de uma forma que se adaptem ao seu organizador de trabalho pessoal.
+A maioria Windows aplicativos baseados em ferramentas usam controles de barra de ferramentas para fornecer aos usuários acesso conveniente à funcionalidade do programa. No entanto, as barras de ferramentas estáticas têm algumas deficiências, como muito pouco espaço para exibir efetivamente todas as ferramentas disponíveis. A solução para esse problema é tornar as barras de ferramentas do aplicativo personalizáveis pelo usuário. Em seguida, os usuários podem optar por exibir apenas as ferramentas necessárias e organizá-las de uma maneira que se adapte ao estilo de trabalho pessoal.
 
 > [!Note]  
 > As barras de ferramentas nas caixas de diálogo não podem ser personalizadas.
 
- 
+ 
 
-Para habilitar a personalização, inclua o sinalizador estilo de controles comuns de [**ccs \_ ajustável**](common-control-styles.md) ao criar o controle da barra de ferramentas. Há duas abordagens básicas para a personalização:
+Para habilitar a personalização, inclua o sinalizador de estilo de controles comuns [**CCS \_ ADJUSTABLE**](common-control-styles.md) ao criar o controle de barra de ferramentas. Há duas abordagens básicas para personalização:
 
--   A caixa de diálogo personalização. Essa caixa de diálogo fornecida pelo sistema é a abordagem mais simples. Ele fornece aos usuários uma interface gráfica do usuário que permite adicionar, excluir ou mover ícones.
--   Ferramentas de arrastar e soltar. A implementação da funcionalidade de arrastar e soltar permite aos usuários mover ferramentas para outro local na barra de ferramentas ou excluí-las arrastando-as para fora da barra de ferramentas. Ele fornece aos usuários uma maneira rápida e fácil de organizar sua barra de ferramentas, mas não permite que elas adicionem ferramentas.
+-   A caixa de diálogo de personalização. Essa caixa de diálogo fornecida pelo sistema é a abordagem mais simples. Ele fornece aos usuários uma interface gráfica do usuário que permite adicionar, excluir ou mover ícones.
+-   Arrastando e soltando ferramentas. Implementar a funcionalidade do tipo "arrastar e soltar" permite que os usuários movam ferramentas para outro local na barra de ferramentas ou as excluam arrastando para fora da barra de ferramentas. Ele fornece aos usuários uma maneira rápida e fácil de organizar sua barra de ferramentas, mas não permite que eles adicionem ferramentas.
 
-Você pode implementar uma das abordagens ou ambas, dependendo das necessidades do aplicativo. Nenhuma dessas duas abordagens à personalização fornece um mecanismo interno, como um botão cancelar ou desfazer, para retornar a barra de ferramentas ao estado anterior. Você deve usar explicitamente a API de controle da barra de ferramentas para armazenar o estado de prepersonalização da barra de ferramentas. Se necessário, você pode usar essas informações armazenadas posteriormente para restaurar a barra de ferramentas ao seu estado original.
+Você pode implementar uma abordagem ou ambas, dependendo das necessidades do aplicativo. Nenhuma dessas duas abordagens de personalização fornece um mecanismo integrado, como um botão Cancelar ou Desfazer, para retornar a barra de ferramentas para seu estado anterior. Você deve usar explicitamente a API de controle da barra de ferramentas para armazenar o estado de pré-customização da barra de ferramentas. Se necessário, você pode usar essas informações armazenadas posteriormente para restaurar a barra de ferramentas para seu estado original.
 
 ## <a name="what-you-need-to-know"></a>O que você precisa saber
 
 ### <a name="technologies"></a>Tecnologias
 
--   [Controles do Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
 -   C/C++
--   Programação da interface do usuário do Windows
+-   Windows Interface do Usuário programação
 
 ## <a name="instructions"></a>Instruções
 
-### <a name="customization-dialog-box"></a>Caixa de diálogo personalização
+### <a name="customization-dialog-box"></a>Caixa de diálogo Personalização
 
-A caixa de diálogo personalização é fornecida pelo controle barra de ferramentas para fornecer aos usuários uma maneira simples de adicionar, mover ou excluir ferramentas. Os usuários podem iniciá-lo clicando duas vezes na barra de ferramentas. Os aplicativos podem iniciar a caixa de diálogo de personalização programaticamente enviando o controle Toolbar a uma mensagem de [**\_ personalização de TB**](tb-customize.md) .
+A caixa de diálogo personalização é fornecida pelo controle da barra de ferramentas para dar aos usuários uma maneira simples de adicionar, mover ou excluir ferramentas. Os usuários podem inocioná-lo clicando duas vezes na barra de ferramentas. Os aplicativos podem iniciar a caixa de diálogo de personalização programaticamente enviando ao controle da barra de ferramentas uma [**mensagem TB \_ CUSTOMIZE.**](tb-customize.md)
 
-A ilustração a seguir mostra um exemplo da caixa de diálogo personalização da barra de ferramentas.
+A ilustração a seguir mostra um exemplo da caixa de diálogo de personalização da barra de ferramentas.
 
-![captura de tela de uma janela com uma barra de ferramentas de três itens e uma caixa de diálogo com listas dos botões da barra de ferramentas disponível e atual](images/tb-customdlg.png)
+![captura de tela de uma janela com uma barra de ferramentas de três itens e uma caixa de diálogo com listas dos botões de barra de ferramentas disponíveis e atuais](images/tb-customdlg.png)
 
-As ferramentas na caixa de listagem à direita são aquelas atualmente na barra de ferramentas. Inicialmente, essa lista conterá as ferramentas que você especificar ao criar a barra de ferramentas. A caixa de listagem à esquerda contém as ferramentas que estão disponíveis para adicionar à barra de ferramentas. Seu aplicativo é responsável por preencher essa lista (diferente de com o separador, que aparece automaticamente).
+As ferramentas na caixa de listagem à direita são aquelas atualmente na barra de ferramentas. Inicialmente, essa lista conterá as ferramentas que você especificar ao criar a barra de ferramentas. A caixa de listagem à esquerda contém as ferramentas disponíveis para adicionar à barra de ferramentas. Seu aplicativo é responsável por preencher essa lista (diferente do separador, que aparece automaticamente).
 
-O controle Toolbar notifica seu aplicativo de que ele está iniciando uma caixa de diálogo de personalização enviando a janela pai um código de notificação [tbn \_ BEGINADJUST](tbn-beginadjust.md) seguido por um código de notificação [tbn \_ INITCUSTOMIZE](tbn-initcustomize.md) . Na maioria dos casos, o aplicativo não precisa responder a esses códigos de notificação. No entanto, se você não quiser que a caixa de diálogo Personalizar barra de ferramentas exiba um botão ajuda, manipule TBN \_ INITCUSTOMIZE retornando TBNRF \_ HIDEHELP.
+O controle da barra de ferramentas notifica seu aplicativo de que ele está iniciando uma caixa de diálogo de personalização enviando à janela pai um código de notificação [TBN \_ BEGINADJUST](tbn-beginadjust.md) seguido por um código de notificação [TBN \_ INITCUSTOMIZE.](tbn-initcustomize.md) Na maioria dos casos, o aplicativo não precisa responder a esses códigos de notificação. No entanto, se você não quiser que a caixa de diálogo Personalizar Barra de Ferramentas exibir um botão Ajuda, manipular TBN \_ INITCUSTOMIZE retornando TBNRF \_ HIDEHELP.
 
-O controle ToolBar, em seguida, coleta as informações necessárias para inicializar a caixa de diálogo enviando três séries de códigos de notificação, na seguinte ordem:
+Em seguida, o controle da barra de ferramentas coleta as informações necessárias para inicializar a caixa de diálogo enviando três séries de códigos de notificação, na seguinte ordem:
 
--   Um código de notificação [tbn \_ QUERYINSERT](tbn-queryinsert.md) para cada botão na barra de ferramentas para determinar onde os botões podem ser inseridos. Retorne **false** para impedir que um botão seja inserido à esquerda do botão especificado na mensagem de notificação. Se você retornar **false** para todos os \_ códigos de notificação tbn QUERYINSERT, a caixa de diálogo não será exibida.
--   Um código de notificação [tbn \_ QUERYDELETE](tbn-querydelete.md) para cada ferramenta que está atualmente na barra de ferramentas. Retorna **true** se uma ferramenta puder ser excluída ou **false** se não.
--   Uma série de códigos de notificação [tbn \_ GETBUTTONINFO](tbn-getbuttoninfo.md) para popular a lista de botões disponíveis. Para adicionar um botão à lista, preencha a estrutura [**NMTOOLBAR**](/windows/win32/api/commctrl/ns-commctrl-nmtoolbara) que é passada com o código de notificação e retorna **true**. Quando você não tiver mais ferramentas para adicionar, retorne **false**. Observe que você pode retornar informações para botões que já estão na barra de ferramentas; esses botões não serão adicionados à lista.
+-   Um [código de \_ notificação TBN QUERYINSERT](tbn-queryinsert.md) para cada botão na barra de ferramentas para determinar onde os botões podem ser inseridos. Retorne **FALSE** para impedir que um botão seja inserido à esquerda do botão especificado na mensagem de notificação. Se você retornar **FALSE para** todos os códigos de notificação TBN \_ QUERYINSERT, a caixa de diálogo não será exibida.
+-   Um [código de \_ notificação TBN QUERYDELETE](tbn-querydelete.md) para cada ferramenta que está atualmente na barra de ferramentas. Retornar **TRUE** se uma ferramenta puder ser excluída ou **FALSE** se não.
+-   Uma série de [códigos de \_ notificação TBN GETBUTTONINFO](tbn-getbuttoninfo.md) para preencher a lista de botões disponíveis. Para adicionar um botão à lista, preencha a estrutura [**NMTOOLBAR**](/windows/win32/api/commctrl/ns-commctrl-nmtoolbara) passada com o código de notificação e retorne **TRUE.** Quando você não tiver mais ferramentas para adicionar, retorne **FALSE.** Observe que você pode retornar informações para botões que já estão na barra de ferramentas; esses botões não serão adicionados à lista.
 
 A caixa de diálogo é exibida e o usuário pode começar a personalizar a barra de ferramentas.
 
 Quando a caixa de diálogo estiver aberta, seu aplicativo poderá receber uma variedade de códigos de notificação, dependendo das ações do usuário:
 
--   [Tbn \_ QUERYINSERT](tbn-queryinsert.md). O usuário alterou o local de uma ferramenta na barra de ferramentas ou adicionou uma ferramenta. Retorne **false** para impedir que a ferramenta seja inserida nesse local.
--   [Tbn \_ DELETINGBUTTON](tbn-deletingbutton.md). O usuário está prestes a remover uma ferramenta da barra de ferramentas.
--   [Tbn \_ CUSTHELP](tbn-custhelp.md). O usuário clicou no botão ajuda.
--   [Tbn \_ TOOLBARCHANGE](tbn-toolbarchange.md). O usuário adicionou, moveu ou excluiu uma ferramenta.
--   [Tbn \_ REDEFINIR](tbn-reset.md). O usuário clicou no botão redefinir.
+-   [TBN \_ QUERYINSERT.](tbn-queryinsert.md) O usuário alterou o local de uma ferramenta na barra de ferramentas ou adicionou uma ferramenta. Retorne **FALSE** para impedir que a ferramenta seja inserida nesse local.
+-   [TBN \_ DELETINGBUTTON](tbn-deletingbutton.md). O usuário está prestes a remover uma ferramenta da barra de ferramentas.
+-   [TBN \_ CUSTHELP](tbn-custhelp.md). O usuário clicou no botão Ajuda.
+-   [TBN \_ TOOLBARCHANGE](tbn-toolbarchange.md). O usuário adicionou, moveu ou excluiu uma ferramenta.
+-   [TBN \_ RESET](tbn-reset.md). O usuário clicou no botão Redefinir.
 
-Depois que a caixa de diálogo for destruída, seu aplicativo receberá um código de notificação [tbn \_ endadjust](tbn-endadjust.md) .
+Depois que a caixa de diálogo for destruída, seu aplicativo receberá um código de notificação [ \_ TBN ENDADJUST.](tbn-endadjust.md)
 
 O exemplo de código a seguir mostra uma maneira de implementar a personalização da barra de ferramentas.
 
@@ -133,29 +133,29 @@ case WM_NOTIFY:
 
 
 
-### <a name="dragging-and-dropping-tools"></a>Ferramentas de arrastar e soltar
+### <a name="dragging-and-dropping-tools"></a>Arrastando e soltando ferramentas
 
-Os usuários também podem reorganizar os botões em uma barra de ferramentas pressionando a tecla SHIFT e arrastando o botão para outro local. O processo de arrastar e soltar é manipulado automaticamente pelo controle da barra de ferramentas. Ele exibe uma imagem fantasma do botão conforme ele é arrastado e reorganiza a barra de ferramentas depois que ela é descartada. Os usuários não podem adicionar botões dessa maneira, mas eles podem excluir um botão, removendo-o da barra de ferramentas.
+Os usuários também podem reorganizar os botões em uma barra de ferramentas pressionando a tecla SHIFT e arrastando o botão para outro local. O processo do "arrastar e soltar" é tratado automaticamente pelo controle da barra de ferramentas. Ele exibe uma imagem fantasma do botão enquanto ele é arrastado e reorganiza a barra de ferramentas depois de ser descartado. Os usuários não podem adicionar botões dessa maneira, mas podem excluir um botão soltando-o da barra de ferramentas.
 
-Embora o controle Toolbar normalmente faça essa operação automaticamente, ele também envia os dois códigos de notificação do seu aplicativo: [tbn \_ QUERYDELETE](tbn-querydelete.md) e [tbn \_ QUERYINSERT](tbn-queryinsert.md). Para controlar o processo de arrastar e soltar, manipule esses códigos de notificação da seguinte maneira:
+Embora o controle de barra de ferramentas normalmente faça essa operação automaticamente, ele também envia ao aplicativo dois códigos de notificação: [TBN \_ QUERYDELETE](tbn-querydelete.md) e [TBN \_ QUERYINSERT](tbn-queryinsert.md). Para controlar o processo do tipo "arrastar e soltar", processe esses códigos de notificação da seguinte forma:
 
--   O código de notificação [tbn \_ QUERYDELETE](tbn-querydelete.md) é enviado assim que o usuário tenta mover o botão, antes que o botão fantasma seja exibido. Retorne **false** para impedir que o botão seja movido. Se você retornar **true**, o usuário poderá mover a ferramenta ou excluí-la removendo-a da barra de ferramentas. Se uma ferramenta puder ser movida, ela poderá ser excluída. No entanto, se o usuário excluir uma ferramenta, o controle Toolbar enviará ao seu aplicativo um código de notificação [tbn \_ DELETINGBUTTON](tbn-deletingbutton.md) , no ponto em que você pode optar por reinserir o botão em seu local original, cancelando assim a exclusão.
--   O código de notificação [tbn \_ QUERYINSERT](tbn-queryinsert.md) é enviado quando o usuário tenta soltar o botão na barra de ferramentas. Para impedir que o botão que está sendo movido seja Descartado à esquerda do botão especificado na notificação, retorne **false**. Esse código de notificação não será enviado se o usuário descartar a ferramenta para fora da barra de ferramentas.
+-   O [código de \_ notificação TBN QUERYDELETE](tbn-querydelete.md) é enviado assim que o usuário tenta mover o botão antes que o botão fantasma seja exibido. Retorne **FALSE** para impedir que o botão seja movido. Se você retornar **TRUE,** o usuário poderá mover a ferramenta ou excluí-la soltando-a da barra de ferramentas. Se uma ferramenta puder ser movida, ela poderá ser excluída. No entanto, se o usuário excluir uma ferramenta, o controle da barra de ferramentas enviará ao seu aplicativo um código de notificação [TBN \_ DELETINGBUTTON,](tbn-deletingbutton.md) momento em que você poderá optar por reinserir o botão em seu local original, cancelando a exclusão.
+-   O [código de \_ notificação TBN QUERYINSERT](tbn-queryinsert.md) é enviado quando o usuário tenta soltar o botão na barra de ferramentas. Para impedir que o botão que está sendo movido seja descartado à esquerda do botão especificado na notificação, retorne **FALSE.** Esse código de notificação não será enviado se o usuário tirar a ferramenta da barra de ferramentas.
 
-Se o usuário tentar arrastar um botão sem também pressionar a tecla SHIFT, o controle Toolbar não tratará a operação de arrastar e soltar. No entanto, ele enviará ao seu aplicativo um código de notificação [tbn \_ BEGINDRAG](tbn-begindrag.md) para indicar o início de uma operação de arrastar e um código de notificação do [tbn \_ endarraste](tbn-enddrag.md) para indicar o final. Se você quiser habilitar essa forma de arrastar e soltar, seu aplicativo deverá lidar com esses códigos de notificação, fornecer a interface do usuário necessária e modificar a barra de ferramentas para refletir as alterações.
+Se o usuário tentar arrastar um botão sem pressionar também a tecla SHIFT, o controle da barra de ferramentas não manipulará a operação do tipo "arrastar e soltar". No entanto, ele enviará ao seu aplicativo um código de notificação [TBN \_ BEGINDRAG](tbn-begindrag.md) para indicar o início de uma operação de arrastar e um código de notificação [ \_ TBN ENDDRAG](tbn-enddrag.md) para indicar o final. Se você quiser habilitar essa forma de arrastar e soltar, seu aplicativo deverá manipular esses códigos de notificação, fornecer a interface do usuário necessária e modificar a barra de ferramentas para refletir as alterações.
 
 ### <a name="saving-and-restoring-toolbars"></a>Salvando e restaurando barras de ferramentas
 
-No processo de personalização de uma barra de ferramentas, seu aplicativo pode precisar salvar informações para que você possa restaurar a barra de ferramentas para seu estado original. Para iniciar o salvamento ou a restauração de um estado de barra de ferramentas, envie a barra de ferramentas para uma mensagem [**\_ SAVERESTORE TB**](tb-saverestore.md) com o *lParam* definido como **true**. O valor de *lParam* dessa mensagem Especifica se você está solicitando uma operação de salvamento ou de restauração. Depois que a mensagem é enviada, há duas maneiras de lidar com a operação de salvar/restaurar:
+No processo de personalização de uma barra de ferramentas, seu aplicativo pode precisar salvar informações para que você possa restaurar a barra de ferramentas para seu estado original. Para iniciar o salvar ou restaurar um estado da barra de ferramentas, envie ao controle da barra de ferramentas uma mensagem [**\_ SAVERESTORE de TB**](tb-saverestore.md) com *o lParam definido* como **TRUE.** O *valor lParam* dessa mensagem especifica se você está solicitando uma operação de salvar ou restaurar. Depois que a mensagem é enviada, há duas maneiras de lidar com a operação de salvar/restaurar:
 
--   Com os controles comuns [versão 4,72](common-control-versions.md) e anteriores, você deve implementar um manipulador [tbn \_ GETBUTTONINFO](tbn-getbuttoninfo.md) . O controle Toolbar envia esse código de notificação para solicitar informações sobre cada botão à medida que ele é restaurado.
--   A versão 5,80 inclui uma opção salvar/restaurar. No início do processo e, como cada botão é salvo ou restaurado, seu aplicativo receberá um código de notificação [tbn \_ Save](tbn-save.md) ou [tbn \_ Restore](tbn-restore.md) . Para usar essa opção, você deve implementar manipuladores de notificação para fornecer as informações de bitmap e estado necessárias para salvar ou restaurar com êxito o estado da barra de ferramentas.
+-   Com controles [comuns versão 4.72](common-control-versions.md) e anteriores, você deve implementar um manipulador [ \_ GETBUTTONINFO TBN.](tbn-getbuttoninfo.md) O controle da barra de ferramentas envia esse código de notificação para solicitar informações sobre cada botão conforme ele é restaurado.
+-   A versão 5.80 inclui uma opção de salvar/restaurar. No início do processo e conforme cada botão é salvo ou restaurado, seu aplicativo receberá um código de notificação [TBN \_ SAVE](tbn-save.md) ou [TBN \_ RESTORE.](tbn-restore.md) Para usar essa opção, você deve implementar manipuladores de notificação para fornecer o bitmap e as informações de estado necessárias para salvar ou restaurar com êxito o estado da barra de ferramentas.
 
-Os Estados da barra de ferramentas são salvos em um fluxo de dados que consiste em blocos de dados definidos por shell alternando com blocos de dados definidos pelo aplicativo. Um bloco de dados de cada tipo é armazenado para cada botão, juntamente com um bloco opcional de dados globais que os aplicativos podem posicionar no início do fluxo. Durante o processo de salvamento, o manipulador de [ \_ salvamento do tbn](tbn-save.md) adiciona os blocos definidos pelo aplicativo ao fluxo de dados. Durante o processo de restauração, o manipulador de [ \_ restauração tbn](tbn-restore.md) lê cada bloco e fornece ao shell as informações necessárias para reconstruir a barra de ferramentas.
+Os estados da barra de ferramentas são salvos em um fluxo de dados que consiste em blocos de dados definidos pelo Shell alternando com blocos de dados definidos pelo aplicativo. Um bloco de dados de cada tipo é armazenado para cada botão, juntamente com um bloco opcional de dados globais que os aplicativos podem colocar no início do fluxo. Durante o processo de salvar, o manipulador [TBN \_ SAVE](tbn-save.md) adiciona os blocos definidos pelo aplicativo ao fluxo de dados. Durante o processo de restauração, o manipulador [TBN \_ RESTORE](tbn-restore.md) lê cada bloco e fornece ao Shell as informações necessárias para reconstruir a barra de ferramentas.
 
-### <a name="how-to-handle-a-tbn_save-notification"></a>Como lidar com uma notificação de salvamento de TBN \_
+### <a name="how-to-handle-a-tbn_save-notification"></a>Como lidar com uma notificação TBN \_ SAVE
 
-O primeiro código de notificação [tbn \_ Save](tbn-save.md) é enviado no início do processo de salvamento. Antes que todos os botões sejam salvos, os membros da estrutura [**NMTBSAVE**](/windows/win32/api/commctrl/ns-commctrl-nmtbsave) são definidos conforme mostrado na tabela a seguir.
+O primeiro [código de notificação \_ TBN SAVE](tbn-save.md) é enviado no início do processo de salvar. Antes que todos os botões sejam salvos, os membros da estrutura [**NMTBSAVE**](/windows/win32/api/commctrl/ns-commctrl-nmtbsave) são definidos conforme mostrado na tabela a seguir.
 
 
 
@@ -169,7 +169,7 @@ O primeiro código de notificação [tbn \_ Save](tbn-save.md) é enviado no in�
 
 
 
- 
+ 
 
 Se você quiser adicionar algumas informações globais da barra de ferramentas, coloque-as no início do fluxo de dados. Avance **pCurrent** até o final dos dados globais para que ele aponte para o início da parte não utilizada do fluxo de dados e retorne.
 
@@ -187,7 +187,7 @@ Depois que cada botão é salvo, um código de notificação [tbn \_ Save](tbn-s
 
 
 
- 
+ 
 
 Ao receber o código de notificação, você deve extrair as informações específicas de cada botão de que precisa do [**TBBUTTON**](/windows/desktop/api/Commctrl/ns-commctrl-tbbutton). Lembre-se de que, ao adicionar um botão, você pode usar o membro **dwData** de **TBBUTTON** para armazenar dados específicos do aplicativo. Carregue seus dados no fluxo de dados em **pCurrent**. Avance **pCurrent** até o final de seus dados, apontando novamente para o início da parte não utilizada do fluxo e retorne.
 
@@ -277,12 +277,12 @@ switch( lpnmhdr->code)
 [**Valores de índice da imagem do botão padrão da barra de ferramentas**](toolbar-standard-button-image-index-values.md)
 </dt> <dt>
 
-[Demonstração de controles comuns do Windows (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
+[Windows de demonstração de controles comuns (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

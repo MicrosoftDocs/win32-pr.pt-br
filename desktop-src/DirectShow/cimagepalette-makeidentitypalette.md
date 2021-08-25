@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8e105652108e74907375408f0bd8946c69194202
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cb6e9a4e2c6adc411b7b043e35dc6dacf45dbb6a6ee4cf326a1c1953c559c16f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748445"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119916126"
 ---
 # <a name="cimagepalettemakeidentitypalette-method"></a>Método CImagePalette. MakeIdentityPalette
 
@@ -65,7 +65,7 @@ Ponteiro para uma cadeia de caracteres que contém o nome do dispositivo de víd
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará S \_ OK se for bem-sucedido ou S \_ false se for malsucedido.
 
@@ -81,7 +81,7 @@ O método [**CImagePalette:: MakePalette**](cimagepalette-makepalette.md) chama 
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
+| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir Fluxos. h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 
