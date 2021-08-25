@@ -1,39 +1,39 @@
 ---
-description: Especifica como o DSP de captura de voz executa o processamento de matriz de microfone.
+description: Especifica como o DSP de Captura de Voz executa o processamento de matriz de microfone.
 ms.assetid: 5e04fe50-d764-4497-9999-37279e156204
-title: Propriedade MFPKEY_WMAAECMA_FEATR_MICARR_MODE (Wmcodecdsp. h)
+title: MFPKEY_WMAAECMA_FEATR_MICARR_MODE propriedade (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 25bf8ffcae465e8abfddedb3e6d6dded683bb2bf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eb948ff15655ccbdc0bf647194b2f6d3d7d1a40c36da32f6d65479152c76c3e3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164924"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119953516"
 ---
-# <a name="mfpkey_wmaaecma_featr_micarr_mode-property"></a>\_Propriedade do \_ \_ \_ modo MICARR do MFPKEY WMAAECMA
+# <a name="mfpkey_wmaaecma_featr_micarr_mode-property"></a>Propriedade MFPKEY \_ WMAAECMA \_ \_ MICARR \_ MODE
 
-Especifica como o DSP de captura de voz executa o processamento de matriz de microfone.
+Especifica como o DSP de Captura de Voz executa o processamento de matriz de microfone.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
-Disponível apenas usando [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).
+Disponível somente usando [**IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore)
 
 ## <a name="data-type"></a>Tipo de Dados
 
-\_I4 VT
+VT \_ I4
 
 ## <a name="default-value"></a>Valor padrão
 
-MICARRAY \_ \_ feixe único
+MICARRAY \_ SINGLE \_ BEAM
 
 ## <a name="applies-to"></a>Aplica-se A
 
--   [DSP de captura de voz](voicecapturedmo.md)
+-   [DSP de Captura de Voz](voicecapturedmo.md)
 
 ## <a name="remarks"></a>Comentários
 
-O valor dessa propriedade é um membro da enumeração do [ \_ \_ modo de matriz MIC](/windows/desktop/api/wmcodecdsp/ne-wmcodecdsp-mic_array_mode) . O valor padrão é MICARRAY \_ Single \_ feixe. Antes de definir essa propriedade, você deve definir a propriedade [ \_ modo de \_ recurso \_ MFPKEY WMAAECMA](mfpkey-wmaaecma-feature-modeproperty.md) como Variant \_ true.
+O valor dessa propriedade é um membro da [enumeração MIC \_ ARRAY \_ MODE.](/windows/desktop/api/wmcodecdsp/ne-wmcodecdsp-mic_array_mode) O valor padrão é MICARRAY \_ SINGLE \_ BEAM. Antes de definir essa propriedade, você deve definir a [propriedade \_ MFPKEY WMAAECMA \_ FEATURE \_ MODE](mfpkey-wmaaecma-feature-modeproperty.md) como VARIANT \_ TRUE.
 
 O DSP usa essa propriedade somente quando o processamento da matriz de microfone está habilitado.
 
@@ -43,9 +43,9 @@ O DSP usa essa propriedade somente quando o processamento da matriz de microfone
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                    |
-| parâmetro<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                    |
+| Cabeçalho<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -53,10 +53,10 @@ O DSP usa essa propriedade somente quando o processamento da matriz de microfone
 
 <dl> <dt>
 
-[Propriedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propriedades](media-foundation-properties.md)
 </dt> <dt>
 
-[DSP de captura de voz](voicecapturedmo.md)
+[DSP de Captura de Voz](voicecapturedmo.md)
 </dt> </dl>
 
  

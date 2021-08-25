@@ -1,6 +1,6 @@
 ---
-title: Macros de controle de cabeçalho
-description: Macros de controle de cabeçalho
+title: Macros de controle de cabeça
+description: Macros de controle de cabeça
 ms.assetid: 5ef52add-f796-48e5-83a8-e7d2c07e202d
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,38 +11,38 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119916806"
 ---
-# <a name="header-control-macros"></a>Macros de controle de cabeçalho
+# <a name="header-control-macros"></a>Macros de controle de cabeça
 
 ## <a name="in-this-section"></a>Nesta seção
 
--   [**ClearAllFilters de cabeçalho \_**](/windows/desktop/api/Commctrl/nf-commctrl-header_clearallfilters)
--   [**ClearFilter de cabeçalho \_**](/windows/desktop/api/Commctrl/nf-commctrl-header_clearfilter)
--   [**CreateDragImage de cabeçalho \_**](/windows/desktop/api/Commctrl/nf-commctrl-header_createdragimage)
--   [**DeleteItem de cabeçalho \_**](/windows/desktop/api/Commctrl/nf-commctrl-header_deleteitem)
--   [**EditFilter de cabeçalho \_**](/windows/desktop/api/Commctrl/nf-commctrl-header_editfilter)
--   [**GetBitmapMargin de cabeçalho \_**](/windows/desktop/api/Commctrl/nf-commctrl-header_getbitmapmargin)
--   [**GetFocusedItem de cabeçalho \_**](/windows/desktop/api/Commctrl/nf-commctrl-header_getfocuseditem)
--   [**Cabeçalho \_ GetImageList**](/windows/desktop/api/Commctrl/nf-commctrl-header_getimagelist)
--   [**GetItem de cabeçalho \_**](/windows/desktop/api/Commctrl/nf-commctrl-header_getitem)
--   [**Cabeçalho \_ GetItemCount**](/windows/desktop/api/Commctrl/nf-commctrl-header_getitemcount)
--   [**GetItemDropDownRect de cabeçalho \_**](/windows/desktop/api/Commctrl/nf-commctrl-header_getitemdropdownrect)
--   [**GetItemRect de cabeçalho \_**](/windows/desktop/api/Commctrl/nf-commctrl-header_getitemrect)
--   [**GetOrderArray de cabeçalho \_**](/windows/desktop/api/Commctrl/nf-commctrl-header_getorderarray)
--   [**GetOverflowRect de cabeçalho \_**](/windows/desktop/api/Commctrl/nf-commctrl-header_getoverflowrect)
--   [**GetStateImageList de cabeçalho \_**](/windows/desktop/api/Commctrl/nf-commctrl-header_getstateimagelist)
--   [**GetUnicodeFormat de cabeçalho \_**](/windows/desktop/api/Commctrl/nf-commctrl-header_getunicodeformat)
--   [**InsertItem de cabeçalho \_**](/windows/desktop/api/Commctrl/nf-commctrl-header_insertitem)
--   [**Layout do cabeçalho \_**](/windows/desktop/api/Commctrl/nf-commctrl-header_layout)
--   [**OrderToIndex de cabeçalho \_**](/windows/desktop/api/Commctrl/nf-commctrl-header_ordertoindex)
--   [**SetBitmapMargin de cabeçalho \_**](/windows/desktop/api/Commctrl/nf-commctrl-header_setbitmapmargin)
--   [**SetFilterChangeTimeout de cabeçalho \_**](/windows/desktop/api/Commctrl/nf-commctrl-header_setfilterchangetimeout)
--   [**SetFocusedItem de cabeçalho \_**](/windows/desktop/api/Commctrl/nf-commctrl-header_setfocuseditem)
--   [**SetHotDivider de cabeçalho \_**](/windows/desktop/api/Commctrl/nf-commctrl-header_sethotdivider)
--   [**Cabeçalho \_ SetImageList**](/windows/desktop/api/Commctrl/nf-commctrl-header_setimagelist)
--   [**SetItem de cabeçalho \_**](/windows/desktop/api/Commctrl/nf-commctrl-header_setitem)
--   [**SetOrderArray de cabeçalho \_**](/windows/desktop/api/Commctrl/nf-commctrl-header_setorderarray)
--   [**SetStateImageList de cabeçalho \_**](/windows/desktop/api/Commctrl/nf-commctrl-header_setstateimagelist)
--   [**SetUnicodeFormat de cabeçalho \_**](/windows/desktop/api/Commctrl/nf-commctrl-header_setunicodeformat)
+-   [**Header \_ ClearAllFilters**](/windows/desktop/api/Commctrl/nf-commctrl-header_clearallfilters)
+-   [**ClearFilter \_ do header**](/windows/desktop/api/Commctrl/nf-commctrl-header_clearfilter)
+-   [**Header \_ CreateDragImage**](/windows/desktop/api/Commctrl/nf-commctrl-header_createdragimage)
+-   [**\_DeleteItem do header**](/windows/desktop/api/Commctrl/nf-commctrl-header_deleteitem)
+-   [**EditFilter \_ do header**](/windows/desktop/api/Commctrl/nf-commctrl-header_editfilter)
+-   [**Header \_ GetBitmapMargin**](/windows/desktop/api/Commctrl/nf-commctrl-header_getbitmapmargin)
+-   [**Header \_ GetFocusedItem**](/windows/desktop/api/Commctrl/nf-commctrl-header_getfocuseditem)
+-   [**Header \_ GetImageList**](/windows/desktop/api/Commctrl/nf-commctrl-header_getimagelist)
+-   [**Header \_ GetItem**](/windows/desktop/api/Commctrl/nf-commctrl-header_getitem)
+-   [**Header \_ GetItemCount**](/windows/desktop/api/Commctrl/nf-commctrl-header_getitemcount)
+-   [**Header \_ GetItemDropDownRect**](/windows/desktop/api/Commctrl/nf-commctrl-header_getitemdropdownrect)
+-   [**Header \_ GetItemRect**](/windows/desktop/api/Commctrl/nf-commctrl-header_getitemrect)
+-   [**Header \_ GetOrderArray**](/windows/desktop/api/Commctrl/nf-commctrl-header_getorderarray)
+-   [**Header \_ GetOverflowRect**](/windows/desktop/api/Commctrl/nf-commctrl-header_getoverflowrect)
+-   [**Header \_ GetStateImageList**](/windows/desktop/api/Commctrl/nf-commctrl-header_getstateimagelist)
+-   [**Header \_ GetUnicodeFormat**](/windows/desktop/api/Commctrl/nf-commctrl-header_getunicodeformat)
+-   [**Header \_ InsertItem**](/windows/desktop/api/Commctrl/nf-commctrl-header_insertitem)
+-   [**Layout do \_ header**](/windows/desktop/api/Commctrl/nf-commctrl-header_layout)
+-   [**\_OrderToIndex do header**](/windows/desktop/api/Commctrl/nf-commctrl-header_ordertoindex)
+-   [**Header \_ SetBitmapMargin**](/windows/desktop/api/Commctrl/nf-commctrl-header_setbitmapmargin)
+-   [**Header \_ SetFilterChangeTimeout**](/windows/desktop/api/Commctrl/nf-commctrl-header_setfilterchangetimeout)
+-   [**Header \_ SetFocusedItem**](/windows/desktop/api/Commctrl/nf-commctrl-header_setfocuseditem)
+-   [**Header \_ SetHotDivider**](/windows/desktop/api/Commctrl/nf-commctrl-header_sethotdivider)
+-   [**Header \_ SetImageList**](/windows/desktop/api/Commctrl/nf-commctrl-header_setimagelist)
+-   [**Header \_ SetItem**](/windows/desktop/api/Commctrl/nf-commctrl-header_setitem)
+-   [**Header \_ SetOrderArray**](/windows/desktop/api/Commctrl/nf-commctrl-header_setorderarray)
+-   [**Header \_ SetStateImageList**](/windows/desktop/api/Commctrl/nf-commctrl-header_setstateimagelist)
+-   [**Header \_ SetUnicodeFormat**](/windows/desktop/api/Commctrl/nf-commctrl-header_setunicodeformat)
 
  
 

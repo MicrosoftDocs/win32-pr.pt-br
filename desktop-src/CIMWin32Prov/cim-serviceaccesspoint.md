@@ -1,8 +1,8 @@
 ---
-description: A classe \_ ServiceAccessPoint cim representa a capacidade de usar ou invocar um serviço. Os pontos de acesso representam serviços que estão disponíveis para uso por outras entidades.
+description: A \_ classe CIM ServiceAccessPoint representa a capacidade de usar ou invocar um serviço. Os pontos de acesso representam serviços que estão disponíveis para uso por outras entidades.
 ms.assetid: caf828a1-c9a7-4ae8-9734-d77e4ba90b09
 ms.tgt_platform: multiple
-title: CIM_ServiceAccessPoint classe (Provedores WMI CIMWin32)
+title: Classe CIM_ServiceAccessPoint (provedores WMI CIMWin32)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -30,12 +30,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119919636"
 ---
-# <a name="cim_serviceaccesspoint-class-cimwin32-wmi-providers"></a>CIM_ServiceAccessPoint classe (Provedores WMI CIMWin32)
+# <a name="cim_serviceaccesspoint-class-cimwin32-wmi-providers"></a>Classe CIM_ServiceAccessPoint (provedores WMI CIMWin32)
 
-A **classe \_ ServiceAccessPoint cim** representa a capacidade de usar ou invocar um serviço. Os pontos de acesso representam serviços que estão disponíveis para uso por outras entidades.
+A classe **CIM \_ ServiceAccessPoint** representa a capacidade de usar ou invocar um serviço. Os pontos de acesso representam serviços que estão disponíveis para uso por outras entidades.
 
 > [!IMPORTANT]
-> As classes CIM (Distributed Management Task Force) do DMTF (Distributed Management Task Force) modelo CIM são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
+> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -61,13 +61,13 @@ class CIM_ServiceAccessPoint : CIM_LogicalElement
 
 ## <a name="members"></a>Membros
 
-A **classe \_ Cim ServiceAccessPoint** tem estes tipos de membros:
+A classe **CIM \_ ServiceAccessPoint** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A **classe \_ ServiceAccessPoint cim** tem essas propriedades.
+A classe **CIM \_ ServiceAccessPoint** tem essas propriedades.
 
 <dl> <dt>
 
@@ -80,12 +80,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Legenda")
+Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Caption")
 </dt> </dl>
 
-Uma breve descrição textual do objeto .
+Uma breve descrição textual do objeto.
 
-Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
+Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
 
 </dd> <dt>
 
@@ -98,10 +98,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**\_ Chave CIM,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificadores: [**\_ chave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Nome da classe ou subclasse usada na criação de uma instância. Quando usada com outras propriedades de chave da classe , essa propriedade permite que todas as instâncias da classe e suas subclasses sejam identificadas exclusivamente.
+Nome da classe ou subclasse usada na criação de uma instância. Quando usado com outras propriedades de chave da classe, essa propriedade permite que todas as instâncias da classe e suas subclasses sejam identificadas exclusivamente.
 
 </dd> <dt>
 
@@ -117,27 +117,27 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Descrição")
 </dt> </dl>
 
-Uma descrição textual do objeto .
+Uma descrição textual do objeto.
 
-Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
+Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **datetime**
+Tipo de dados: **DateTime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Data de instalação")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Componente DMTF \| 1,5 "), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) (" data de instalação ")
 </dt> </dl>
 
 Indica quando o objeto foi instalado. A falta de um valor não indica que o objeto não está instalado.
 
-Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
+Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
 
 </dd> <dt>
 
@@ -150,10 +150,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nome"), [**Chave**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name"), [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Identifica exclusivamente o ponto de acesso do serviço e fornece uma indicação da funcionalidade gerenciada. Essa funcionalidade é descrita em mais detalhes na propriedade Description do objeto.
+Identifica exclusivamente o ponto de acesso de serviço e fornece uma indicação da funcionalidade que é gerenciada. Essa funcionalidade é descrita mais detalhadamente na propriedade Description do objeto.
 
 </dd> <dt>
 
@@ -166,14 +166,14 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Status")
+Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("status")
 </dt> </dl>
 
-Cadeia de caracteres que indica o status atual do objeto. O status operacional e não operacional pode ser definido. O status operacional pode incluir "OK", "Degradado" e "Pred Fail". "Pred Fail" indica que um elemento está funcionando corretamente, mas está prevendo uma falha (por exemplo, uma unidade de disco rígido habilitada para SMART).
+Cadeia de caracteres que indica o status atual do objeto. O status operacional e não operacional pode ser definido. O status operacional pode incluir "OK", "degradado" e "Pred falha". "Pred Fail" indica que um elemento está funcionando corretamente, mas está prevendo uma falha (por exemplo, uma unidade de disco rígido habilitada para inteligente).
 
-O status não operacional pode incluir "Erro", "Iniciando", "Parando" e "Serviço". O "Serviço" pode ser aplicado durante a resilvering de espelhamento de disco, o recarregamento de uma lista de permissões de usuário ou outro trabalho administrativo. Nem todo esse trabalho está online, mas o elemento gerenciado não é "OK" nem em um dos outros estados.
+O status não operacional pode incluir "erro", "Iniciando", "parando" e "serviço". O "serviço" pode ser aplicado durante o espelhamento de disco – reprateando, recarregando uma lista de permissões de usuário ou outro trabalho administrativo. Nem todo esse trabalho está online, mas o elemento gerenciado não é "OK" nem em um dos outros Estados.
 
-Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
+Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
 
 Os valores incluem o seguinte:
 
@@ -188,28 +188,28 @@ Os valores incluem o seguinte:
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Erro** ("Erro")
+**Erro** ("erro")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-**Degradado** ("Degradado")
+**Degradado** ("degradado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconhecido** ("Desconhecido")
+**Desconhecido** ("desconhecido")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Pred Fail** ("Pred Fail")
+**Falha de Pred** ("Pred Fail")
 
 
 </dt> <dd></dd> <dt>
@@ -223,42 +223,42 @@ Os valores incluem o seguinte:
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Parando** ("Parando")
+**Parando** ("parando")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Service"></span><span id="service"></span><span id="SERVICE"></span>
 
-**Serviço** ("Serviço")
+**Serviço** ("serviço")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>
 
-**Stressed** ("Stressed")
+**Sob estresse** ("sob estresse")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NonRecover"></span><span id="nonrecover"></span><span id="NONRECOVER"></span>
 
-**NonRecover** ("NonRecover")
+Não **recuperar** ("Recover")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>
 
-**Sem contato** ("Sem contato")
+**Sem contato** ("sem contato")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lost_Comm"></span><span id="lost_comm"></span><span id="LOST_COMM"></span>
 
-**Perda de vírgula** ("comm perdida")
+**Perda de comunicação** ("perda de comunicação")
 
 
 </dt> <dd></dd> </dl>
@@ -274,14 +274,14 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Sistema CIM \_**](cim-system.md).**CreationClassName**"), [**CIM \_ Key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ([**" \_ sistema CIM**](cim-system.md).**CreationClassName**"), [**\_ chave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-O nome da classe de criação do sistema de scoping.
+O nome da classe de criação do sistema de escopo.
 
 </dd> <dt>
 
-**Systemname**
+**SystemName**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -290,17 +290,17 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Sistema CIM \_**](cim-system.md).**Name**"), [**CIM \_ Key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ([**" \_ sistema CIM**](cim-system.md).**Name**"), [**\_ chave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-O nome do sistema de scoping.
+O nome do sistema de escopo.
 
 </dd> <dt>
 
 **Tipo**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **uint32**
+Tipo de dados: **UInt32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -309,7 +309,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32")
 </dt> </dl>
 
-Tipo de SAP, como anexado ou redirecionado.
+Tipo de SAP, como anexado ou Redirecionado.
 
 <dt>
 
@@ -352,11 +352,11 @@ Tipo de SAP, como anexado ou redirecionado.
 
 ## <a name="remarks"></a>Comentários
 
-A **classe \_ Cim ServiceAccessPoint** é derivada de [**CIM \_ LogicalElement.**](cim-logicalelement.md)
+A classe **CIM \_ ServiceAccessPoint** é derivada de [**CIM \_ LogicalElement**](cim-logicalelement.md).
 
-O WMI não implementa essa classe. Para classes WMI derivadas de **\_ ServiceAccessPoint cim**, consulte [Classes Win32](win32-provider.md).
+O WMI não implementa essa classe. Para classes WMI derivadas do **CIM \_ ServiceAccessPoint**, consulte [classes Win32](win32-provider.md).
 
-Esta documentação é derivada das descrições da classe CIM publicadas pelo DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, estar em conformidade com os padrões de documentação do SDK da Microsoft ou fornecer mais informações.
+Esta documentação é derivada das descrições da classe CIM publicadas pela DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, obedecer aos padrões de documentação do Microsoft SDK ou fornecer mais informações.
 
 ## <a name="requirements"></a>Requisitos
 

@@ -1,6 +1,6 @@
 ---
 title: Elemento RequireCryptoBinding (EapType)
-description: Indica se é para autenticar com servidores que dão suporte a cryptobinding.
+description: Indica se é necessário autenticar com servidores que suportam a criptografia.
 ms.assetid: 6b6a131d-8fce-4a5c-a649-891c4617b0f2
 keywords:
 - Elemento RequireCryptoBinding EAPHost
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 63ee456f87205346a935ad047cb8db9828febba6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1c4f4169e6ac0af123085795374b06de854b261b5f22004bd726ad47488bc11d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369829"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120067216"
 ---
 # <a name="requirecryptobinding-eaptype-element"></a>Elemento RequireCryptoBinding (EapType)
 
-O elemento **RequireCryptoBinding (EapType)** indica se deve ser autenticado com servidores que dão suporte a cryptobinding.
+O **elemento RequireCryptoBinding (EapType)** indica se é necessário autenticar com servidores que suportam criptografia.
 
 ``` syntax
 <xs:element name="RequireCryptoBinding"
@@ -31,11 +31,11 @@ O elemento **RequireCryptoBinding (EapType)** indica se deve ser autenticado com
  />
 ```
 
-O elemento **RequireCryptoBinding** é definido pelo elemento [**EapType**](mspeapconnectionpropertiesv1schema-eaptype-element.md) .
+O **elemento RequireCryptoBinding** é definido pelo [**elemento EapType.**](mspeapconnectionpropertiesv1schema-eaptype-element.md)
 
 ## <a name="remarks"></a>Comentários
 
-Se o elemento **RequireCryptoBinding** for true, o PEAP será autenticado com servidores que não dão suporte a cryptobinding; Se for FALSE, o PEAP será autenticado somente com servidores que dão suporte a cryptobinding. O elemento **RequireCryptoBinding** é opcional.
+Se o **elemento RequireCryptoBinding** for TRUE, o PEAP será autenticado com servidores que não têm suporte para criptografia. se FALSE, o PEAP só será autenticado com servidores que deem suporte à criptografia. O **elemento RequireCryptoBinding** é opcional.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,8 +43,8 @@ Se o elemento **RequireCryptoBinding** for true, o PEAP será autenticado com se
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
@@ -73,7 +73,7 @@ Se o elemento **RequireCryptoBinding** for true, o PEAP será autenticado com se
 [Esquema mspeapconnectionpropertiesv1](mspeapconnectionpropertiesv1schema-schema.md)
 </dt> <dt>
 
-[Elementos do esquema mspeapconnectionpropertiesv1](mspeapconnectionpropertiesv1schema-elements.md)
+[Elementos de esquema mspeapconnectionpropertiesv1](mspeapconnectionpropertiesv1schema-elements.md)
 </dt> </dl>
 
  

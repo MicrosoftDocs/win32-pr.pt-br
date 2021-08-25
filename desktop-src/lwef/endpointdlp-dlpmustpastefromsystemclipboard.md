@@ -1,6 +1,6 @@
 ---
-description: Determina se o aplicativo deve extrair os dados da área de transferência do sistema em vez de retirá-los de seu cache interno.
-title: Função DlpMustPasteFromSystemClipboard (endpointdlp. h)
+description: Determina se o aplicativo deve receber os dados da área de transferência do sistema em vez de replicação de seu cache interno.
+title: Função DlpMustPasteFromSystemClipboard (endpointdlp.h)
 ms.topic: reference
 ms.date: 03/18/2021
 topic_type:
@@ -12,16 +12,16 @@ api_type:
 - DllExport
 api_location:
 - EndpointDlp.dll
-ms.openlocfilehash: 5863173b02cb5c63a2de46653c2d268464e82e65
-ms.sourcegitcommit: 91110c16e4713ed82d7fb80562d3ddf40b5d76b2
+ms.openlocfilehash: e111cb85c6eada6f84f7bc10eb240e89447a173e741b26b316b232d742f8de48
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "107495349"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119888576"
 ---
 # <a name="dlpmustpastefromsystemclipboard-function"></a>Função DlpMustPasteFromSystemClipboard
 
-Determina se o aplicativo deve extrair os dados da área de transferência do sistema em vez de retirá-los de seu cache interno.
+Determina se o aplicativo deve receber os dados da área de transferência do sistema em vez de replicação de seu cache interno.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -31,9 +31,9 @@ BOOL WINAPI DlpMustPasteFromSystemClipboard();
 ```
 
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-TRUE se a chamada para a área de transferência do sistema operacional for obrigatória; caso contrário, FALSE.
+TRUE se chamar na área de transferência do sistema operacional for obrigatório; caso contrário, FALSE.
 
 ## <a name="remarks"></a>Comentários
 
@@ -44,5 +44,5 @@ TRUE se a chamada para a área de transferência do sistema operacional for obri
 
 | Requisito          |    Valor                   |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 10, versão 1809 (10,0; Build 17763)           |
+| Cliente mínimo com suporte<br/> | Windows 10, versão 1809 (10.0; Build 17763)           |
 | DLL<br/>                      | EndpointDlp.dll |

@@ -1,8 +1,8 @@
 ---
-description: O método Invoke da classe CIM \_ MemoryCheck avalia uma verificação específica. Os detalhes de como o método avalia uma verificação específica em um contexto CIM são descritos pelas subclasses de verificação CIM não abstratas \_ . Esse método é herdado da \_ verificação CIM.
+description: O método Invoke da classe CIM \_ MemoryCheck avalia uma verificação específica. Detalhes de como o método avalia uma verificação específica em um contexto CIM são descritos pelas \_ subclasses cim check não abstratas. Esse método é herdado da Verificação \_ cim.
 ms.assetid: 264a7690-b066-4024-8cb1-d988b829dc72
 ms.tgt_platform: multiple
-title: Método Invoke da classe CIM_MemoryCheck
+title: Invocar o método da CIM_MemoryCheck classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,23 +14,23 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: d8788b8e910e0a5b7debd9990c18dfb4edef140e
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 1607d6b6db173b79db19584444b6928fc0e87b9ecf11e39b9e67e34acdb29496
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089094"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120003656"
 ---
 # <a name="invoke-method-of-the-cim_memorycheck-class"></a>Método Invoke da classe CIM \_ MemoryCheck
 
-O método **Invoke** da classe [**CIM \_ MemoryCheck**](cim-memorycheck.md) avalia uma verificação específica. Os detalhes de como o método avalia uma verificação específica em um contexto CIM são descritos pelas subclasses de [**\_ verificação CIM**](cim-check.md) não abstratas. Esse método é herdado **da \_ verificação CIM**.
+O **método Invoke** da classe CIM [**\_ MemoryCheck**](cim-memorycheck.md) avalia uma verificação específica. Detalhes de como o método avalia uma verificação específica em um contexto CIM são descritos pelas subclasses [**cim \_ check**](cim-check.md) não abstratas. Esse método é herdado de **CIM \_ Check**.
 
 > [!IMPORTANT]
-> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> As classes CIM (Distributed Management Task Force) do DMTF (Distributed Management Task Force) modelo CIM são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
-Este tópico usa a sintaxe formato MOF (MOF). Para obter mais informações sobre como usar esse método, consulte [chamando um método](/windows/desktop/WmiSdk/calling-a-method).
+Este tópico usa sintaxe Managed Object Format (MOF). Para obter mais informações sobre como usar esse método, consulte [Chamando um método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,15 +45,15 @@ uint32 Invoke();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor de 0 (zero) em caso de êxito e qualquer outro número para indicar um erro.
 
 ## <a name="remarks"></a>Comentários
 
-Este método não está implementado no momento pelo WMI. Para usar esse método, você deve implementá-lo em seu próprio provedor.
+Atualmente, esse método não é implementado pelo WMI. Para usar esse método, você deve implementá-lo em seu próprio provedor.
 
-Esta documentação é derivada das descrições da classe CIM publicadas pela DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, obedecer aos padrões de documentação do Microsoft SDK ou fornecer mais informações.
+Esta documentação é derivada das descrições da classe CIM publicadas pelo DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, estar em conformidade com os padrões de documentação do SDK da Microsoft ou fornecer mais informações.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -73,10 +73,10 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 
 <dl> <dt>
 
-[\_MEMORYCHECK CIM](invoke-method-in-class-cim-memorycheck.md)
+[CIM \_ MemoryCheck](invoke-method-in-class-cim-memorycheck.md)
 </dt> <dt>
 
-[**\_MEMORYCHECK CIM**](cim-memorycheck.md)
+[**CIM \_ MemoryCheck**](cim-memorycheck.md)
 </dt> </dl>
 
  

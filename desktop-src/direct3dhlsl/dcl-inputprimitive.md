@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 76c131b7c4225c0b30ad1183e4da1fe6c0561754
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 0660fe4da14a20f074e4f04de8891fc0848f2597
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "103916887"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122479892"
 ---
 # <a name="dcl_inputprimitive-sm4---asm"></a>DCL \_ inputPrimitive (sm4-ASM)
 
@@ -31,31 +31,11 @@ Declara o tipo primitivo para entradas Geometry-Shader.
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Item</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span id="type"></span><span id="TYPE"></span><em>Escreva</em><br/></td>
-<td>no Tipo primitivo de dados de entrada, que é um dos seguintes: <br/>
-<ul>
-<li><em>ponto</em> - lista de pontos</li>
-<li><em>linha</em> - lista de linhas</li>
-<li><em>triângulo</em> - lista de triângulos</li>
-<li><em>line_adj</em> - lista de linhas com dados de adjacência</li>
-<li><em>triangle_adj</em> - lista de triângulos com dados de adjacência</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Item | Descrição | 
+|------|-------------|
+| <span id="type"></span><span id="TYPE"></span><em>Escreva</em><br /> | no Tipo primitivo de dados de entrada, que é um dos seguintes: <br /><ul><li>lista de pontos de <em>extremidade</em></li><li>lista de linhas de <em>linha</em></li><li><em>triângulo</em> – lista de triângulo</li><li>lista de linhas de <em>line_adj</em> com dados de adjacência</li><li>lista de <em>triangle_adj</em> de triângulo com dados de adjacência</li></ul> | 
+
 
 
 

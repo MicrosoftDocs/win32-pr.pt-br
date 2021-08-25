@@ -4,12 +4,12 @@ ms.assetid: cd05d4da-ca65-471b-bb97-82885f22e6f9
 title: Funções de API de gráfico
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e343f3f5ff1e53180cced98cbebbd66af1d28e64
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b26c40770e8fcbc18b08ccb73dcfea5f1f6c4eab65be615ed76d8088ddc90954
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828413"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119776216"
 ---
 # <a name="graphing-api-functions"></a>Funções de API de gráfico
 
@@ -28,7 +28,7 @@ A API de grafo de pares usa as seguintes funções:
 
  
 
-## <a name="graph-creation-and-access-functions"></a>Funções de criação e acesso do grafo
+## <a name="graph-creation-and-access-functions"></a>Graph Funções de criação e acesso
 
 
 
@@ -44,7 +44,7 @@ A API de grafo de pares usa as seguintes funções:
 
  
 
-## <a name="graph-and-node-information-functions"></a>Funções de informações de gráfico e de nó
+## <a name="graph-and-node-information-functions"></a>funções de informações de Graph e nó
 
 
 
@@ -132,9 +132,9 @@ A API de grafo de pares usa as seguintes funções:
 
 | Função                                                     | Descrição                                                                                                  |
 |--------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| [**PeerGraphGetEventData**](/windows/desktop/api/P2P/nf-p2p-peergraphgeteventdata)       | Recupera eventos de mesmo nível.                                                                                       |
-| [**PeerGraphRegisterEvent**](/windows/desktop/api/P2P/nf-p2p-peergraphregisterevent)     | Registra a solicitação de um par para ser notificado das alterações associadas a um grafo de mesmo nível e tipo de evento.            |
-| [**PeerGraphUnregisterEvent**](/windows/desktop/api/P2P/nf-p2p-peergraphunregisterevent) | Solicita que o aplicativo não seja mais notificado sobre as alterações associadas a um grafo par e tipo de registro. |
+| [**PeerGraphGetEventData**](/windows/desktop/api/P2P/nf-p2p-peergraphgeteventdata)       | Recupera eventos de pares.                                                                                       |
+| [**PeerGraphRegisterEvent**](/windows/desktop/api/P2P/nf-p2p-peergraphregisterevent)     | Registra a solicitação de um par para ser notificado sobre as alterações associadas a um grafo de pares e ao tipo de evento.            |
+| [**PeerGraphUnregisterEvent**](/windows/desktop/api/P2P/nf-p2p-peergraphunregisterevent) | Solicita que o aplicativo não seja mais notificado das alterações associadas a um grafo par e ao tipo de registro. |
 
 
 

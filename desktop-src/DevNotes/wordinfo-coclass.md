@@ -1,21 +1,21 @@
 ---
-description: Quebra o texto em Japonês em palavras ou formulários de dicionário.
+description: Divide o texto japonês em palavras ou formulários de dicionário.
 ms.assetid: f51ff969-c13c-4584-9795-1e4748eeb91d
-title: WordInfo
+title: Wordinfo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e439c408c84a126a5e26babb07700a91e9590b10
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 5c1e3f6dce116e41550c12327d0c7c3d82ee4d6a41cb409c4b2791246df81dd7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105749403"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120079656"
 ---
-# <a name="wordinfo"></a>WordInfo
+# <a name="wordinfo"></a>Wordinfo
 
 \[Essa classe é obsoleta e não tem suporte no Windows Vista.\]
 
-Quebra o texto em Japonês em palavras ou formulários de dicionário.
+Divide o texto japonês em palavras ou formulários de dicionário.
 
 ## <a name="clsid"></a>CLSID
 
@@ -23,9 +23,9 @@ Quebra o texto em Japonês em palavras ou formulários de dicionário.
 
 ## <a name="progid"></a>ProgID
 
-NLG. Informações do Word em Japonês. 1
+Nlg. Japanese Word Info.1
 
-## <a name="inproc-server"></a>Servidor InProc
+## <a name="inproc-server"></a>Servidor Inproc
 
 Msir3jp.dll
 
@@ -39,7 +39,7 @@ Ambos
 
 ## <a name="remarks"></a>Comentários
 
-A forma de dicionário da palavra é a raiz ou a forma base da palavra com qualquer terminação de inflexão removida.
+A forma de dicionário da palavra é a forma raiz ou base da palavra com todas as terminações inflecionais removidas.
 
  
 

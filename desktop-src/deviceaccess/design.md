@@ -4,12 +4,12 @@ description: Este tópico descreve as considerações de design que podem ajudá
 ms.assetid: 8AADE304-4841-41E2-968B-DFCB5B954FF1
 ms.topic: article
 ms.date: 02/11/2020
-ms.openlocfilehash: f503ae556009f3b4b9b88d9f895936218f402fc6
-ms.sourcegitcommit: 3d718d8f69d3f86eaecf94c5705d761c5a9ef4a1
+ms.openlocfilehash: 5639cf9fd51eeadc2dfb3ba84556ce6c339b6eb699e0cfa364bdee0bb03d3867
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "103642954"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120029086"
 ---
 # <a name="design-considerations-for-custom-devices"></a>Considerações de design para dispositivos personalizados
 
@@ -21,21 +21,21 @@ Este tópico descreve as considerações de design que podem ajudá-lo a determi
 
 ## <a name="determining-the-type-of-driver-to-implement"></a>Determinando o tipo de driver a ser implementado
 
-Esta tabela descreve quando você deve desenvolver um driver personalizado para seu dispositivo e se comunicar com ele usando a API de acesso do dispositivo e quando você deve usar pilhas de dispositivo fornecidas pelo Windows.
+Esta tabela descreve quando você deve desenvolver um driver personalizado para seu dispositivo e se comunicar com ele usando o API de Acesso a Dispositivo e quando você deve usar Windows de dispositivo fornecidos.
 
-| Para dar suporte a | Implementação |
+| Para dar suporte | Implementação |
 |:---|:---|
-| Dispositivos bem conhecidos, incluindo: <ul><li>Sensor</li><li>Local</li><li>Webcam</li><li>Proximidade</li><li>SMS (serviço de mensagens curtas)</li><li>Banda larga móvel</li></ul><br/> | Para muitos tipos de dispositivos bem conhecidos, você não precisa de um driver personalizado, pois o Windows inclui APIs e DDIs (interfaces de driver de dispositivo) de extensão de classe que gerenciam a comunicação entre o driver e o Windows. Os dispositivos sensor, local e dispositivo portátil do Windows (WPD) são alguns exemplos de classes de dispositivo que têm esse suporte. Se você criar um driver que usa um desses DDIs fornecidos pelo Windows para enviar e receber dados e comandos, não há necessidade de que seu aplicativo da Windows Store use a API de acesso do dispositivo para o agente de acesso ou envie códigos de controle de entrada/saída (e/s) diretamente para o driver. <br/> Quando um aplicativo da Windows Store solicita acesso a um dispositivo conhecido usando a API de Windows Runtime para sua classe de dispositivo, o Windows 8 manipulará o acesso ao dispositivo com base no tipo de dispositivo. Os aplicativos sempre terão acesso a alguns tipos conhecidos de dispositivos (como acelerômetros) que não revelam nenhuma informação de identificação pessoal. Outros tipos de dispositivos bem conhecidos devem ser declarados no manifesto do aplicativo antes que um aplicativo possa acessá-los. O usuário deve conceder permissão para que um aplicativo acesse dispositivos que revelem informações confidenciais, como dispositivos de localização, webcam e microfone, ou pode custar dinheiro ao usuário, como dispositivos de banda larga móvel. <br/> |
-| Um dispositivo WPD que implementa serviços MTP.<br/> | Você pode usar o driver de classe MTP ou pode criar um driver usando a DDI WPD.<br/> O Windows 8 oferece suporte para serviços de dispositivo MTP. E um aplicativo pode usar a API do [Windows. Devices. Portable](/uwp/api/Windows.Devices.Portable) Windows Runtime, a API do dispositivo portátil Component Object Model (com) ou a automação WPD para acessar o dispositivo. Seu aplicativo não precisa usar a API de acesso do dispositivo.<br/> |
-| Um dispositivo que não tem uma extensão de classe ou driver de classe fornecidos pelo Windows.<br/>  | Nesse caso, consulte os [aplicativos de dispositivo UWP para dispositivos internos](/windows-hardware/drivers/devapps/uwp-device-apps-for-specialized-devices) para dispositivos especializados para determinar se você deve implementar o acesso de driver personalizado usando a API de acesso do dispositivo.<br/> |
+| Dispositivos conhecidos, incluindo: <ul><li>Sensor</li><li>Localização</li><li>Webcam</li><li>Proximidade</li><li>SMS (Serviço de Mensagem Curta)</li><li>Banda larga móvel</li></ul><br/> | Para muitos tipos de dispositivos conhecidos, você não precisa de um driver personalizado, pois o Windows inclui APIs e DDIs (interfaces de driver de dispositivo de extensão de classe) que gerenciam a comunicação entre o driver e o Windows. Sensor, local e Windows wpd (dispositivo portátil) são alguns exemplos de classes de dispositivo que têm esse suporte. Se você criar um driver que usa um desses DDIs fornecidos pelo Windows para enviar e receber dados e comandos, não será necessário que o aplicativo Windows Store use o API de Acesso a Dispositivo para acessar o agente ou enviar códigos de controle de E/S (entrada/saída) diretamente para o driver. <br/> Quando um aplicativo Windows Store solicita acesso a um dispositivo conhecido usando a API de Runtime do Windows para sua classe de dispositivo, Windows 8 manipulará o acesso ao dispositivo com base no tipo de dispositivo. Os aplicativos sempre terão acesso a alguns tipos conhecidos de dispositivos (como acelerômetros) que não revelam nenhuma informação de identificação pessoal. Outros tipos de dispositivos conhecidos devem ser declarados no manifesto do aplicativo antes que um aplicativo possa acessá-los. O usuário deve conceder permissão para um aplicativo acessar dispositivos que revelam informações confidenciais, como dispositivos de localização, webcam e microfone, ou pode custar o dinheiro do usuário, como dispositivos de banda larga móvel. <br/> |
+| Um dispositivo WPD que implementa serviços MTP.<br/> | Você pode usar o driver de classe MTP ou pode criar um driver usando a DDI WPD.<br/> Windows 8 dá suporte para serviços de dispositivo MTP. E um aplicativo pode usar o [Windows. Devices.Portable](/uwp/api/Windows.Devices.Portable) Windows RUNtime, a API COM (Portable Device Component Object Model) ou a Automação WPD para acessar o dispositivo. Seu aplicativo não precisa usar o API de Acesso a Dispositivo.<br/> |
+| Um dispositivo que não tem uma extensão de classe Windows ou driver de classe fornecido.<br/>  | Nesse caso, consulte os aplicativos de dispositivo [UWP](/windows-hardware/drivers/devapps/uwp-device-apps-for-specialized-devices) para dispositivos internos para dispositivos especializados para determinar se você deve implementar o acesso de driver personalizado usando o API de Acesso a Dispositivo.<br/> |
 
-## <a name="security-considerations"></a>Considerações de segurança
+## <a name="security-considerations"></a>Considerações sobre segurança
 
-Os artigos a seguir fornecem orientação para escrever código C++ seguro:
+Os artigos a seguir fornecem diretrizes para escrever código C++ seguro:
 
 - [Práticas recomendadas de segurança para C++](/cpp/security/security-best-practices-for-cpp)
-- [Patterns & Practices security guidance for Applications]/Previous-Versions/MSP-n-p/ff650760 (v = PandP. 10))
+- [Padrões & diretrizes de segurança para aplicativos]/previous-versions/msp-n-p/ff650760(v=pandp.10))
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-[Exemplo de acesso de driver personalizado](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/411c271e537727d737a53fa2cbe99eaecac00cc0/Official%20Windows%20Platform%20Sample/Custom%20driver%20access%20sample), [aplicativos de dispositivo UWP para dispositivos internos](/windows-hardware/drivers/devapps/uwp-device-apps-for-specialized-devices), [centro de desenvolvimento de hardware](/windows-hardware/drivers/)
+[Exemplo de acesso de driver personalizado,](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/411c271e537727d737a53fa2cbe99eaecac00cc0/Official%20Windows%20Platform%20Sample/Custom%20driver%20access%20sample)aplicativos de dispositivo [UWP para dispositivos internos,](/windows-hardware/drivers/devapps/uwp-device-apps-for-specialized-devices) [Centro de Desenvolvimento de Hardware](/windows-hardware/drivers/)

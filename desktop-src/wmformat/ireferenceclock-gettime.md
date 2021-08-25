@@ -1,11 +1,11 @@
 ---
-title: Método getTime IReferenceClock
-description: O método getTime recupera o tempo de referência atual.
+title: Método GetTime IReferenceClock
+description: O método GetTime recupera a hora de referência atual.
 ms.assetid: 9bf5050a-ae09-4a72-a3f2-3df8339d99b9
 keywords:
-- Método getTime Windows Media Format
-- Método getTime Windows Media Format, interface IReferenceClock
-- IReferenceClock Interface formato Windows Media, método getTime
+- Formato de mídia do windows do método GetTime
+- Formato de mídia do windows do método GetTime, interface IReferenceClock
+- Formato de mídia da interface IReferenceClock, método GetTime
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c679ce0adbbc6cc7ddc014c12f1b0ace4be6b4b0
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: f7756240e8987199e1f1b5d79e3f0b676d4808520781fbac18dfa18dd75e88d4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104365035"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120055436"
 ---
-# <a name="ireferenceclockgettime-method"></a>Método IReferenceClock:: getTime
+# <a name="ireferenceclockgettime-method"></a>Método IReferenceClock::GetTime
 
-O método **getTime** recupera o tempo de referência atual.
+O **método GetTime** recupera a hora de referência atual.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,23 +41,23 @@ HRESULT GetTime(
 
 <dl> <dt>
 
-*pTime* \[ fora\]
+*pTime* \[ out\]
 </dt> <dd>
 
-Ponteiro para uma variável que recebe a hora atual, em unidades de 100 a nanossegundos.
+Ponteiro para uma variável que recebe a hora atual, em unidades de 100 nanossegundos.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 
 | Código de retorno                                                                               | Descrição                                   |
 |-------------------------------------------------------------------------------------------|-----------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>      | O método foi bem-sucedido.<br/>              |
-| <dl> <dt>**\_ponteiro E**</dt> </dl> | O parâmetro *pTime* é **nulo**.<br/> |
+| <dl> <dt>**PONTEIRO \_ E**</dt> </dl> | O *parâmetro pTime* é **NULL.**<br/> |
 
 
 
@@ -67,7 +67,7 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 
 <dl> <dt>
 
-[**Interface IReferenceClock**](ireferenceclock.md)
+[**IReferenceClock Interface**](ireferenceclock.md)
 </dt> </dl>
 
  

@@ -13,12 +13,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fa97b49bd55e0d509784eee744ee5cd032941df6
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 5e0bc2207571865a8c0b7683c94de79c93866d1070e480e7c764580af3b5c12f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086838"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119836556"
 ---
 # <a name="shadowmax-attribute"></a>atributo shadowMax
 
@@ -55,7 +55,7 @@ Contém o número máximo de dias que uma senha pode ser válida.
 | ID do link                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| É de valor único       | True                                                |
+| É de valor único       | Verdadeiro                                                |
 | É indexado             | Falso                                               |
 | No catálogo global      | Falso                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                        |
@@ -76,7 +76,7 @@ Contém o número máximo de dias que uma senha pode ser válida.
 | ID do link                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| É de valor único       | True                                                |
+| É de valor único       | Verdadeiro                                                |
 | É indexado             | Falso                                               |
 | No catálogo global      | Falso                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                        |
@@ -97,7 +97,7 @@ Contém o número máximo de dias que uma senha pode ser válida.
 | ID do link                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| É de valor único       | True                                                |
+| É de valor único       | Verdadeiro                                                |
 | É indexado             | Falso                                               |
 | No catálogo global      | Falso                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                        |
@@ -118,7 +118,7 @@ Contém o número máximo de dias que uma senha pode ser válida.
 | ID do link                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| É de valor único       | True                                                |
+| É de valor único       | Verdadeiro                                                |
 | É indexado             | Falso                                               |
 | No catálogo global      | Falso                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                        |

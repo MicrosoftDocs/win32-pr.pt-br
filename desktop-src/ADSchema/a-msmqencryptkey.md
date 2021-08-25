@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bf2c4453deede78620cb76acfec062206812aa87
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 12fec50e216412184de658e5e4500d5e418c70843689512497e2e4a1d32ed87b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825337"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120066706"
 ---
 # <a name="msmq-encrypt-key-attribute"></a>Atributo MSMQ-Encrypt-Key
 
@@ -58,9 +58,9 @@ A chave de criptografia pública do computador.
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | True                                                         |
+| É de valor único       | Verdadeiro                                                         |
 | É indexado             | Falso                                                        |
-| No catálogo global      | True                                                         |
+| No catálogo global      | Verdadeiro                                                         |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
@@ -79,9 +79,9 @@ A chave de criptografia pública do computador.
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | True                                                         |
+| É de valor único       | Verdadeiro                                                         |
 | É indexado             | Falso                                                        |
-| No catálogo global      | True                                                         |
+| No catálogo global      | Verdadeiro                                                         |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
@@ -100,9 +100,9 @@ A chave de criptografia pública do computador.
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | True                                                         |
+| É de valor único       | Verdadeiro                                                         |
 | É indexado             | Falso                                                        |
-| No catálogo global      | True                                                         |
+| No catálogo global      | Verdadeiro                                                         |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
@@ -121,15 +121,15 @@ A chave de criptografia pública do computador.
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | True                                                         |
+| Tem valor único       | Verdadeiro                                                         |
 | É indexado             | Falso                                                        |
-| No catálogo global      | True                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
+| No Catálogo Global      | Verdadeiro                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classes usadas em        | [**Configuração do MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classes usadas em        | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ A chave de criptografia pública do computador.
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | True                                                         |
+| Tem valor único       | Verdadeiro                                                         |
 | É indexado             | Falso                                                        |
-| No catálogo global      | True                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
+| No Catálogo Global      | Verdadeiro                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classes usadas em        | [**Configuração do MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classes usadas em        | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ A chave de criptografia pública do computador.
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | True                                                         |
+| Tem valor único       | Verdadeiro                                                         |
 | É indexado             | Falso                                                        |
-| No catálogo global      | True                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
+| No Catálogo Global      | Verdadeiro                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classes usadas em        | [**Configuração do MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classes usadas em        | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
 
 
 

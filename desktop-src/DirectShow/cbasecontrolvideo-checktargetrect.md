@@ -1,7 +1,7 @@
 ---
 description: O método CheckTargetRect determina se um retângulo de destino é válido.
 ms.assetid: a16e7faf-6421-4f78-bbb1-40d38f1a5525
-title: Método CBaseControlVideo. CheckTargetRect (Ctlutil. h)
+title: Método CBaseControlVideo.CheckTargetRect (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 94f8d50aea58f556634e7f20b3880aecad72cc39
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c8444764af729f9536471a6a9df221cc118edb7d043112eb0b5351f45982d87f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759917"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120057316"
 ---
-# <a name="cbasecontrolvideochecktargetrect-method"></a>Método CBaseControlVideo. CheckTargetRect
+# <a name="cbasecontrolvideochecktargetrect-method"></a>Método CBaseControlVideo.CheckTargetRect
 
 O `CheckTargetRect` método determina se um retângulo de destino é válido.
 
@@ -45,17 +45,17 @@ virtual HRESULT CheckTargetRect(
 *pTargetRect* 
 </dt> <dd>
 
-Ponteiro para o retângulo de destino a ser verificado.
+Ponteiro para o retângulo de destino a ser verificar.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna E \_ INVALIDARG se não for válido; caso contrário, retornará NOERROR (S \_ OK).
+Retorna E \_ INVALIDARG se não for válido; caso contrário, retorna NOERROR (S \_ OK).
 
 ## <a name="remarks"></a>Comentários
 
-Essa função de membro determina se o retângulo de destino solicitado é válido. Como o retângulo de destino especifica uma posição no cliente lógico da janela, as coordenadas podem ser negativas, embora a largura e a altura gerais não possam ser zero ou um valor negativo.
+Essa função membro determina se o retângulo de destino solicitado é válido. Como o retângulo de destino especifica uma posição no cliente lógico da janela, as coordenadas podem ser negativas, embora a largura e a altura gerais não possam ser zero ou um valor negativo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Essa função de membro determina se o retângulo de destino solicitado é váli
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Ctlutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

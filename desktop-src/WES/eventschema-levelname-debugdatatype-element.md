@@ -1,9 +1,9 @@
 ---
 title: Elemento LevelName (DebugDataType)
-description: O valor de nível passado ao provedor quando ele foi habilitado.
+description: O valor de nível passado para o provedor quando ele foi habilitado.
 ms.assetid: 0daa1b2e-10b2-4516-ac06-b6763a0768a4
 keywords:
-- EventLog do elemento LevelName
+- Elemento LevelName EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0cc046965c067b95b5fae425863bb08f7a750f34
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 41c26e2aff825213bf5a61be687ff5f0170176123d6299b424f1fa9203a740d5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009022"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119904656"
 ---
 # <a name="levelname-debugdatatype-element"></a>Elemento LevelName (DebugDataType)
 
-O valor de nível passado ao provedor quando ele foi habilitado.
+O valor de nível passado para o provedor quando ele foi habilitado.
 
 ``` syntax
 <xs:element name="LevelName"
@@ -30,7 +30,7 @@ O valor de nível passado ao provedor quando ele foi habilitado.
  />
 ```
 
-O elemento **LevelName** é definido pelo tipo complexo [**DebugDataType**](eventschema-debugdatatype-complextype.md) .
+O **elemento LevelName** é definido pelo tipo complexo [**DebugDataType.**](eventschema-debugdatatype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ O elemento **LevelName** é definido pelo tipo complexo [**DebugDataType**](even
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

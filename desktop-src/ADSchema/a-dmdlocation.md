@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: faed299a0b89be2726b3111262bcc0450d7c90dc
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d801a2aac5c3b8bbeb9a9d20219346a4dca68449ad918c041eaad99aa3d4fcc9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105748288"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120085986"
 ---
 # <a name="dmd-location-attribute"></a>DMD-Location atributo
 
@@ -58,8 +58,8 @@ O nome distinto para a partição de esquema.
 |------------------------|------------------------------------------|
 | ID do link                | \-                                       |
 | MAPI-Id                | \-                                       |
-| System-Only            | True                                     |
-| É de valor único       | True                                     |
+| System-Only            | Verdadeiro                                     |
+| É de valor único       | Verdadeiro                                     |
 | É indexado             | Falso                                    |
 | No catálogo global      | Falso                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                             |
@@ -79,8 +79,8 @@ O nome distinto para a partição de esquema.
 |------------------------|------------------------------------------|
 | ID do link                | \-                                       |
 | MAPI-Id                | \-                                       |
-| System-Only            | True                                     |
-| É de valor único       | True                                     |
+| System-Only            | Verdadeiro                                     |
+| É de valor único       | Verdadeiro                                     |
 | É indexado             | Falso                                    |
 | No catálogo global      | Falso                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                             |
@@ -100,8 +100,8 @@ O nome distinto para a partição de esquema.
 |------------------------|------------------------------------------|
 | ID do link                | \-                                       |
 | MAPI-Id                | \-                                       |
-| System-Only            | True                                     |
-| É de valor único       | True                                     |
+| System-Only            | Verdadeiro                                     |
+| É de valor único       | Verdadeiro                                     |
 | É indexado             | Falso                                    |
 | No catálogo global      | Falso                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                             |
@@ -121,11 +121,11 @@ O nome distinto para a partição de esquema.
 |------------------------|------------------------------------------|
 | ID do link                | \-                                       |
 | MAPI-Id                | \-                                       |
-| System-Only            | True                                     |
-| É de valor único       | True                                     |
+| System-Only            | Verdadeiro                                     |
+| Tem valor único       | Verdadeiro                                     |
 | É indexado             | Falso                                    |
-| No catálogo global      | Falso                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                             |
+| No Catálogo Global      | Falso                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
@@ -142,11 +142,11 @@ O nome distinto para a partição de esquema.
 |------------------------|------------------------------------------|
 | ID do link                | \-                                       |
 | MAPI-Id                | \-                                       |
-| System-Only            | True                                     |
-| É de valor único       | True                                     |
+| System-Only            | Verdadeiro                                     |
+| Tem valor único       | Verdadeiro                                     |
 | É indexado             | Falso                                    |
-| No catálogo global      | Falso                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                             |
+| No Catálogo Global      | Falso                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
@@ -163,11 +163,11 @@ O nome distinto para a partição de esquema.
 |------------------------|------------------------------------------|
 | ID do link                | \-                                       |
 | MAPI-Id                | \-                                       |
-| System-Only            | True                                     |
-| É de valor único       | True                                     |
+| System-Only            | Verdadeiro                                     |
+| Tem valor único       | Verdadeiro                                     |
 | É indexado             | Falso                                    |
-| No catálogo global      | Falso                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                             |
+| No Catálogo Global      | Falso                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
@@ -184,11 +184,11 @@ O nome distinto para a partição de esquema.
 |------------------------|------------------------------------------|
 | ID do link                | \-                                       |
 | MAPI-Id                | \-                                       |
-| System-Only            | True                                     |
-| É de valor único       | True                                     |
+| System-Only            | Verdadeiro                                     |
+| Tem valor único       | Verdadeiro                                     |
 | É indexado             | Falso                                    |
-| No catálogo global      | Falso                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                             |
+| No Catálogo Global      | Falso                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |

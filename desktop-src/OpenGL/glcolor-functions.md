@@ -13,12 +13,12 @@ keywords:
 - funções de cor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bc6c77e1201dec2fdd42d56871a95bf5d3fce359
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 37ab97a7cdefb482b0a401b8291839513637484ecfd75ccbaace556c5e2b1d79
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104498699"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120082036"
 ---
 # <a name="glcolor-functions"></a>Funções glColor
 
@@ -57,9 +57,9 @@ Essas funções definem a cor atual:
 -   [**glColor4uiv**](glcolor4uiv.md)
 -   [**glColor4usv**](glcolor4usv.md)
 
- 
+ 
 
- 
+ 
 
 
 

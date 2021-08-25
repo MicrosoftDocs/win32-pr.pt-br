@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c9394fca14c3e07eb1f867c7b8ac473b2b61a9a2
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 99e0d5cc430b0580c6719d212d664d8c19ddc65eee64e5877a8e6aba80d94a6d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103638599"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119839436"
 ---
 # <a name="wmcontainerformat"></a>WM/ContainerFormat
 
@@ -37,7 +37,7 @@ Esse atributo é usado em vez de **IWMProfile3:: GetStorageFormat** e **IWMProfi
 
 Este é um atributo codificado.
 
-Este atributo não pode ser duplicado no nível do arquivo. Se esse atributo for usado para um fluxo individual, ele será tratado como metadados personalizados e não transmitirá seu significado normal para os objetos do SDK do Windows Media Format.
+Este atributo não pode ser duplicado no nível do arquivo. se esse atributo for usado para um fluxo individual, ele será tratado como metadados personalizados e não transmitirá seu significado normal para os objetos do SDK do formato de mídia Windows.
 
 ## <a name="see-also"></a>Confira também
 
@@ -46,9 +46,9 @@ Este atributo não pode ser duplicado no nível do arquivo. Se esse atributo for
 [**Lista de Atributos**](attribute-list.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

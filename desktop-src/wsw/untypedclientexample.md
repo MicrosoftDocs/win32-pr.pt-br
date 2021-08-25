@@ -1,11 +1,11 @@
 ---
 title: UnTypedClientExample
-description: Revise um exemplo de cliente sem tipo que usa a API Windows Web Services (WWSAPI). Este exemplo mostra um cliente HTTP que envia mensagens de solicitação-resposta.
+description: examine um exemplo de cliente não tipado que usa a API de serviços Web do Windows (WWSAPI). Este exemplo mostra um cliente HTTP que envia mensagens de solicitação-resposta.
 ms.assetid: ea6d8696-fd43-4d3c-bfec-3602658a08a7
 keywords:
-- UnTypedClientExample Native-Web-Services
+- UnTypedClientExample nativo – Web-Services
 - WWSAPI
-- Wws
+- WWS
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 72c7a7148705eba20485c852ea7dcaa45e820e1efb06af067dc8a64ac1cf251a
@@ -19,11 +19,11 @@ ms.locfileid: "120109806"
 
 Este exemplo mostra um cliente HTTP que envia mensagens de solicitação-resposta.
 
--   [UnTypedClient.cpp](#untypedclientcpp)
--   [PurchaseOrder.wsdl](#purchaseorderwsdl)
+-   [UnTypedClient. cpp](#untypedclientcpp)
+-   [PurchaseOrder. WSDL](#purchaseorderwsdl)
 -   [Makefile](#makefile)
 
-## <a name="untypedclientcpp"></a>UnTypedClient.cpp
+## <a name="untypedclientcpp"></a>UnTypedClient. cpp
 
 
 ```C++
@@ -274,7 +274,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a>PurchaseOrder.wsdl
+## <a name="purchaseorderwsdl"></a>PurchaseOrder. WSDL
 
 ``` syntax
 <wsdl:definitions 

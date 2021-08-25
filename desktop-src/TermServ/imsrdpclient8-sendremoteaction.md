@@ -23,12 +23,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a28fc9695686402e0a8e98ed17fc1bc6a47939d8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c41cdc5c5d164a0154f00d6fa4e8130d0860bfecbf77db7639272cbdd60f401f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104456008"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120080016"
 ---
 # <a name="imsrdpclient8sendremoteaction-method"></a>Método IMsRdpClient8:: SendRemoteAction
 
@@ -56,7 +56,7 @@ Um valor da enumeração [**RemoteSessionActionType**](remotesessionactiontype.m
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 

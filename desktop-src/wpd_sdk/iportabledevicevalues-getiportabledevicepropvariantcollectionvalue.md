@@ -14,12 +14,12 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 7deb73d10f2e2daa5d06d6cb4394c43778af2ad4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d0ca7f2350fee8ba5d7cea85eb19c874eb5893f86f0e17fa1b4f0e97087e7c34
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105765662"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120055186"
 ---
 # <a name="iportabledevicevaluesgetiportabledevicepropvariantcollectionvalue-method"></a>Método IPortableDeviceValues:: GetIPortableDevicePropVariantCollectionValue
 
@@ -55,7 +55,7 @@ Endereço de uma variável que recebe um ponteiro para a interface [**IPortableD
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 

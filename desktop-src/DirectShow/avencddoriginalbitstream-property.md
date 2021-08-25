@@ -1,7 +1,7 @@
 ---
-description: Especifica o sinalizador de fluxo de bits original em um fluxo de áudio Dolby Digital. Essa propriedade se aplica aos codificadores Dolby Digital Audio. \\ Esta propriedade é de leitura/gravação.
+description: Especifica o sinalizador de fluxo de bits original em um fluxo de áudio Dolby Digital. Essa propriedade se aplica a codificadores de áudio Dolby Digital. \\ Essa propriedade é leitura/gravação.
 ms.assetid: 247bdd95-c432-462f-a57a-b5ab8a2e3c70
-title: Propriedade AVEncDDOriginalBitstream (Codecapi. h)
+title: Propriedade AVEncDDOriginalBitstream (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 2d64669411f4ad8f340ab6a4203dc970938b3196f900aadefc780d510b3961d2
@@ -13,15 +13,15 @@ ms.locfileid: "120000016"
 ---
 # <a name="avencddoriginalbitstream-property"></a>Propriedade AVEncDDOriginalBitstream
 
-Especifica o sinalizador de fluxo de bits original em um fluxo de áudio Dolby Digital. Essa propriedade se aplica aos codificadores Dolby Digital Audio.
+Especifica o sinalizador de fluxo de bits original em um fluxo de áudio Dolby Digital. Essa propriedade se aplica a codificadores de áudio Dolby Digital.
 
 \\
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="data-type"></a>Tipo de dados
 
-**Variante \_ BOOL** (**VT \_ bool**)
+**VARIANT \_ BOOL** (**VT \_ BOOL**)
 
 ## <a name="property-guid"></a>GUID da propriedade
 
@@ -33,9 +33,9 @@ Esta propriedade é de leitura/gravação.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | aplicativos Windows 2000 Professional \[ desktop aplicativos \| UWP\]<br/>                     |
-| Servidor mínimo com suporte<br/> | Windows \[ aplicativos da área de trabalho do servidor 2000 \| aplicativo UWP\]<br/>                           |
-| Cabeçalho<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional aplicativos \[ UWP da área de \| trabalho\]<br/>                     |
+| Servidor mínimo com suporte<br/> | Windows aplicativos da área de trabalho do servidor 2000 \[ \| aplicativos UWP\]<br/>                           |
+| Cabeçalho<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -43,10 +43,10 @@ Esta propriedade é de leitura/gravação.
 
 <dl> <dt>
 
-[Propriedades da API do codec](codec-api-properties.md)
+[Propriedades da API do Codec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interface ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI Interface**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

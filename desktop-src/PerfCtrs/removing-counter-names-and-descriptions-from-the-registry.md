@@ -1,25 +1,25 @@
 ---
-description: A ferramenta Unlodctr remove as entradas do registro criadas por Lodctr.
+description: A ferramenta unlodctr remove as entradas do Registro criadas pelo lodctr.
 ms.assetid: 83c0fb91-857c-40d9-8fb8-8734c1b573c4
-title: Removendo nomes e descrições de contadores do registro
+title: Removendo nomes de contadores e descrições do Registro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 04ea8c0a8efbe9a798f980a061c6cfc65745b89b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c086520f1fb261a0b9850c03f2aee28065a03ee514df277fbf1cae602deed6a4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105780485"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119962346"
 ---
-# <a name="removing-counter-names-and-descriptions-from-the-registry"></a>Removendo nomes e descrições de contadores do registro
+# <a name="removing-counter-names-and-descriptions-from-the-registry"></a>Removendo nomes de contadores e descrições do Registro
 
-A ferramenta **Unlodctr** remove as entradas do registro criadas por **lodctr**. O nome do aplicativo que você passa para **Unlodctr** deve corresponder ao [nome da chave do aplicativo](creating-the-applications-performance-key.md) que você criou na chave de **Serviços** . Para obter detalhes sobre como executar o **Unlodctr** , consulte o centro de ajuda e suporte.
+A **ferramenta unlodctr** remove as entradas do Registro criadas por **lodctr**. O nome do aplicativo que você passa para **unlodctr deve** corresponder ao nome da chave do aplicativo [que](creating-the-applications-performance-key.md) você criou na chave **Serviços.** Para obter detalhes sobre como **executar unlodctr,** consulte, Centro de Ajuda e Suporte.
 
-## <a name="using-unlodctr"></a>Usando o Unlodctr
+## <a name="using-unlodctr"></a>Usando unlodctr
 
-A ferramenta **Unlodctr** pesquisa o primeiro e último contador e os valores de índice da ajuda usando os valores de registro nomeados na chave de **desempenho** do seu aplicativo. A ferramenta **Unlodctr** usa o intervalo de valores de índice para remover o texto dos **contadores** e os valores de **ajuda** para cada identificador de idioma.
+A **ferramenta unlodctr** procura o primeiro e o último contador e ajuda a indexar valores usando os valores de registro nomeados como na chave de desempenho **do** aplicativo. A **ferramenta unlodctr** usa o intervalo de valores de índice para remover o texto dos valores de **Contadores** e **Ajuda** para cada identificador de idioma.
 
-Usando os valores de índice, o **Unlodctr** faz as seguintes alterações no registro.
+Usando os valores de índice, **unlodctr** faz as seguintes alterações no Registro.
 
 ```
 HKEY_LOCAL_MACHINE
@@ -38,10 +38,10 @@ HKEY_LOCAL_MACHINE
                      Help = application text removed
 ```
 
-A ferramenta **Unlodctr** também remove os valores do **primeiro contador**, **último contador**, **primeiro ajuda**, **última ajuda** e **lista de objetos** da chave de **desempenho** do aplicativo localizada em **HKEY \_ local \_ Machine** \\ **System** \\ **CurrentControlSet** \\ **Services** \\ *Application-Name* \\ **performance**.
+A **ferramenta unlodctr** também remove os valores First **Counter**, Last **Counter**, First  **Help**, **Last Help** e **Object List** da chave de desempenho do aplicativo localizada em **HKEY LOCAL \_ \_ MACHINE** \\ **SYSTEM** \\ **CurrentControlSet** \\ **Services** \\ *application-name* \\ **Performance**.
 
 > [!Note]  
-> A função de descarregamento de **Unlodctr**, [**UnloadPerfCounterTextStrings**](/windows/desktop/api/Loadperf/nf-loadperf-unloadperfcountertextstringsa), é declarada em LoadPerf. h e exportada de Loadperf.dll. Isso permite que você chame essa função diretamente do seu programa de desinstalação.
+> A função de descarregamento **de unlodctr,** [**UnloadPerfCounterTextStrings**](/windows/desktop/api/Loadperf/nf-loadperf-unloadperfcountertextstringsa), é declarada em Loadperf.h e exportada de Loadperf.dll. Isso permite que você chame essa função diretamente do programa de desinstalação.
 
  
 

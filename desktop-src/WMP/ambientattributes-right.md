@@ -3,7 +3,7 @@ title: Ambienteattributes. à direita
 description: O atributo Right especifica ou recupera a coordenada direita do controle.
 ms.assetid: 32f6c9ff-9b2f-4e24-abbb-548a0601d3d7
 keywords:
-- Ambiente. Windows Media Player à direita
+- Windows Media Player de ambiente ambiental. direita
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 17a1df57e95072329eb3420189297e83821f1501
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2575286ebc912f3bde6489d43b411dd48b2faef640784bd64c52ab47c3950042
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105794528"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119902816"
 ---
 # <a name="ambientattributesright"></a>Ambienteattributes. à direita
 

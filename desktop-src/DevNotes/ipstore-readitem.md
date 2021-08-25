@@ -1,7 +1,7 @@
 ---
 description: Lê o item de dados especificado do armazenamento protegido.
 ms.assetid: e565a0ea-5d8e-4706-a176-2305a95f0d67
-title: 'Método IPStore:: ReadItem (Pstore. h)'
+title: Método IPStore::ReadItem (Pstore.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Pstorec.dll
-ms.openlocfilehash: 0464ef06bc7c2842d0c8f9ff76e8174f05338919
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 516eb55772e375d09d3b134dee456c090cf11d6ef0d10905f99a822b1df0d9e5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105755279"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120001485"
 ---
-# <a name="ipstorereaditem-method"></a>Método IPStore:: ReadItem
+# <a name="ipstorereaditem-method"></a>Método IPStore::ReadItem
 
-\[O armazenamento protegido (Pstore) está disponível para uso no Windows Server 2003 e no Windows XP. Ele só está disponível para operações somente leitura no Windows Server 2008 e no Windows Vista, mas pode estar indisponível nas versões subsequentes. A Pstore usa uma implementação mais antiga da proteção de dados. Os desenvolvedores são altamente incentivados a aproveitar a proteção de dados mais forte fornecida pelas funções [**CryptProtectData**](/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata) e [**CryptUnprotectData**](/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata) .\]
+\[O Armazenamento (Pstore) está disponível para uso no Windows Server 2003 e Windows XP. Ele só está disponível para operações somente leitura no Windows Server 2008 e Windows Vista, mas pode não estar disponível nas versões subsequentes. O Pstore usa uma implementação mais antiga da proteção de dados. Os desenvolvedores são incentivados a aproveitar a proteção de dados mais forte fornecida pelas funções [**CryptProtectData**](/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata) e [**CryptUnprotectData.**](/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata)\]
 
 Lê o item de dados especificado do armazenamento protegido.
 
@@ -48,7 +48,7 @@ HRESULT ReadItem(
 
 <dl> <dt>
 
-*Chave* \[ no\]
+*Chave* \[ Em\]
 </dt> <dd>
 
 A área de armazenamento do provedor.
@@ -57,8 +57,8 @@ A área de armazenamento do provedor.
 
 | Valor                                                                                                                                                                                                                                                   | Significado                                                                            |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| <span id="PST_KEY_CURRENT_USER"></span><span id="pst_key_current_user"></span><dl> <dt>**PST \_ CHAVE \_ do \_ usuário atual**</dt> <dt>0x00000000</dt> </dl>    | O armazenamento é mantido na seção usuário atual do registro.<br/>  |
-| <span id="PST_KEY_LOCAL_MACHINE"></span><span id="pst_key_local_machine"></span><dl> <dt>**PST \_ \_ \_ Computador local da chave**</dt> <dt>0x00000001</dt> </dl> | O armazenamento é mantido na seção máquina local do registro.<br/> |
+| <span id="PST_KEY_CURRENT_USER"></span><span id="pst_key_current_user"></span><dl> <dt>**PST \_ CHAVE \_ ATUAL \_ DO USUÁRIO**</dt> <dt>0X00000000</dt> </dl>    | O armazenamento é mantido na seção de usuário atual do Registro.<br/>  |
+| <span id="PST_KEY_LOCAL_MACHINE"></span><span id="pst_key_local_machine"></span><dl> <dt>**PST \_ CHAVE \_ DO \_ COMPUTADOR LOCAL**</dt> <dt>0X00000001</dt> </dl> | O armazenamento é mantido na seção computador local do Registro.<br/> |
 
 
 
@@ -66,49 +66,49 @@ A área de armazenamento do provedor.
 
 </dd> <dt>
 
-*pItemType* \[ no\]
+*pItemType* \[ Em\]
 </dt> <dd>
 
 Um ponteiro para um GUID que identifica o tipo de dados do item a ser lido.
 
 </dd> <dt>
 
-*pItemSubtype* \[ no\]
+*pItemSubtype* \[ Em\]
 </dt> <dd>
 
 Um ponteiro para um GUID que identifica o subtipo de dados do item a ser lido.
 
 </dd> <dt>
 
-*szItemName* \[ no\]
+*szItemName* \[ Em\]
 </dt> <dd>
 
-Um ponteiro para uma cadeia de caracteres que contém o nome atribuído ao item de dados armazenado.
+Um ponteiro para uma cadeia de caracteres que contém o nome atribuído ao item de dados armazenados.
 
 </dd> <dt>
 
-*cbData* \[ no\]
+*cbData* \[ Em\]
 </dt> <dd>
 
-Um **DWORD** que indica o tamanho do buffer que contém o item de dados armazenado.
+Um **DWORD** que indica o tamanho do buffer que contém o item de dados armazenados.
 
 </dd> <dt>
 
-*pbData* \[ no\]
+*pbData* \[ Em\]
 </dt> <dd>
 
-Um ponteiro para um buffer que contém o item de dados armazenado.
+Um ponteiro para um buffer que contém o item de dados armazenados.
 
 </dd> <dt>
 
-*pPromptInfo* \[ no\]
+*pPromptInfo* \[ Em\]
 </dt> <dd>
 
-Um ponteiro para uma [**estrutura \_ PROMPTINFO de PST**](pst-promptinfo.md) .
+Um ponteiro para uma [**estrutura \_ PST PROMPTINFO.**](pst-promptinfo.md)
 
 </dd> <dt>
 
-*dwFlags* \[ no\]
+*dwFlags* \[ Em\]
 </dt> <dd>
 
 Especifica a interface do usuário e os comportamentos de segurança para a operação de leitura.
@@ -119,9 +119,9 @@ Os valores de sinalizador podem ser combinados com um OR lógico.
 
 | Valor                                                                                                                                                                                                                                                              | Significado                                                                                                                                                                                                                                |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="PST_UNRESTRICTED_ITEMDATA"></span><span id="pst_unrestricted_itemdata"></span><dl> <dt>**PST \_ \_Dados não restritos**</dt> <dt>0x00000004</dt> </dl> | Especifica que o fluxo de dados não é seguro. Por padrão, as chamadas de item são seguras.<br/>                                                                                                                                             |
-| <span id="PST_PROMPT_QUERY"></span><span id="pst_prompt_query"></span><dl> <dt>**PST \_ 0x00000008 de \_ consulta de prompt**</dt> <dt></dt> </dl>                            | Especifica que a confirmação será retornada após o êxito. Se a interface do usuário estiver habilitada, um sucesso do **PST \_ E \_ OK** será retornado. Se a interface do usuário não estiver habilitada, um valor de **PST \_ E \_ item \_ existente** será retornado.<br/> |
-| <span id="PST_NO_UI_MIGRATION"></span><span id="pst_no_ui_migration"></span><dl> <dt>**PST \_ NENHUMA \_ \_ migração de interface do usuário**</dt> <dt>0x00000010</dt> </dl>                  | Não mostrar interface do usuário, a menos que uma senha personalizada seja necessária.<br/>                                                                                                                                                            |
+| <span id="PST_UNRESTRICTED_ITEMDATA"></span><span id="pst_unrestricted_itemdata"></span><dl> <dt>**PST \_ ITEMDATA \_ IRRESTRITO**</dt> <dt>0X00000004</dt> </dl> | Especifica que o fluxo de dados não é sesecure. Por padrão, as chamadas de item são seguras.<br/>                                                                                                                                             |
+| <span id="PST_PROMPT_QUERY"></span><span id="pst_prompt_query"></span><dl> <dt>**PST \_ SOLICITAÇÃO \_ DE CONSULTA**</dt> <dt>0X00000008</dt> </dl>                            | Especifica que a confirmação será retornada após o sucesso. Se a interface do usuário estiver habilitada, um êxito de **PST \_ E \_ OK** será retornado. Se a interface do usuário não estiver habilitada, um valor de **PST \_ E ITEM \_ \_ EXISTS** será retornado.<br/> |
+| <span id="PST_NO_UI_MIGRATION"></span><span id="pst_no_ui_migration"></span><dl> <dt>**PST \_ NENHUMA \_ MIGRAÇÃO \_ DE**</dt> <dt>INTERFACE DO USUÁRIO 0X00000010</dt> </dl>                  | Não mostre a interface do usuário, a menos que uma senha personalizada seja necessária.<br/>                                                                                                                                                            |
 
 
 
@@ -129,13 +129,13 @@ Os valores de sinalizador podem ser combinados com um OR lógico.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O valor de retorno é um valor **HRESULT** . Um valor de **PST \_ E \_ OK** indica que a função foi bem-sucedida.
+O valor de retorno é um **valor HRESULT.** Um valor de **PST \_ E OK \_ indica** que a função foi bem-sucedida.
 
 ## <a name="remarks"></a>Comentários
 
-Se o **ReadItem** for concluído com êxito, o aplicativo será responsável por liberar o buffer de dados retornado usando a função [**CoTaskMemFree**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree) .
+Se **ReadItem** for concluído com êxito, o aplicativo será responsável por liberar o buffer de dados retornado usando a [**função CoTaskMemFree.**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -143,7 +143,7 @@ Se o **ReadItem** for concluído com êxito, o aplicativo será responsável por
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Pstore. h</dt> </dl>    |
+| parâmetro<br/> | <dl> <dt>Pstore.h</dt> </dl>    |
 | DLL<br/>    | <dl> <dt>Pstorec.dll</dt> </dl> |
 
 
@@ -155,7 +155,7 @@ Se o **ReadItem** for concluído com êxito, o aplicativo será responsável por
 [**IPStore**](ipstore.md)
 </dt> <dt>
 
-[**\_PROMPTINFO PST**](pst-promptinfo.md)
+[**PST \_ PROMPTINFO**](pst-promptinfo.md)
 </dt> </dl>
 
  

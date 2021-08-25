@@ -1,7 +1,7 @@
 ---
-description: Método de construtor. O construtor obtém acesso ao PIN especificado.
+description: Método do construtor. O construtor obtém acesso ao pino especificado.
 ms.assetid: 518d41aa-8361-4769-aa9b-14676b676d6f
-title: Construtor CAutoUsingOutputPin. CAutoUsingOutputPin (Amfilter. h)
+title: Construtor CAutoUsingOutputPin.CAutoUsingOutputPin (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 94bafcdcb6e44a07afdccea382d783c20a9ad2ca
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c0594eed7f253f7e540f843dfc3c3de6481d7dbede3f25d1534e52181ef0585b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105756210"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120057516"
 ---
-# <a name="cautousingoutputpincautousingoutputpin-constructor"></a>Construtor CAutoUsingOutputPin. CAutoUsingOutputPin
+# <a name="cautousingoutputpincautousingoutputpin-constructor"></a>Construtor CAutoUsingOutputPin.CAutoUsingOutputPin
 
-Método de construtor. O construtor obtém acesso ao PIN especificado.
+Método do construtor. O construtor obtém acesso ao pino especificado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,20 +46,20 @@ CAutoUsingOutputPin(
 *pOutputPin* 
 </dt> <dd>
 
-Ponteiro para um objeto [**CDynamicOutputPin**](cdynamicoutputpin.md) .
+Ponteiro para um [**objeto CDynamicOutputPin.**](cdynamicoutputpin.md)
 
 </dd> <dt>
 
-*phr* 
+*Phr* 
 </dt> <dd>
 
-Ponteiro para uma variável que contém um valor **HRESULT** . O valor deve ser S \_ OK.
+Ponteiro para uma variável que contém um **valor HRESULT.** O valor deve ser S \_ OK.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Quando o método retorna, o valor de *\* PHR* indica o êxito ou a falha do método.
+Quando o método retorna, o valor *\* de phr* indica o êxito ou a falha do método.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,8 +67,8 @@ Quando o método retorna, o valor de *\* PHR* indica o êxito ou a falha do mét
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amfilter.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

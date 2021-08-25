@@ -15,12 +15,12 @@ api_type:
 - DllExport
 api_location:
 - msdelta.dll
-ms.openlocfilehash: 15885cfa3e879ed6a1e85b2f9553af92d436ca71
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 606b8d91d20c74f7dd56ff4e09986abec3eef547989990a38bd8b4e3a27382c2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105795508"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120079726"
 ---
 # <a name="deltafree-function"></a>Função DeltaFree
 
@@ -40,7 +40,7 @@ BOOL  WINAPI  DeltaFree(
 
 no Bloco de memória a ser liberado.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa função retornará **true** se tiver sucesso; caso contrário, retornará **false**. Quando a função retorna **false**, você pode chamar [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) para obter o código de erro do sistema Win32 correspondente.
 
@@ -50,7 +50,7 @@ Essa função retornará **true** se tiver sucesso; caso contrário, retornará 
 |----------------|---------------------------------------------------------------------------------------|
 | parâmetro | msdelta. h |
 | DLL | msdelta.dll |
-| Unicode | Não aplicável |
+| Unicode | Não se aplica |
 
 ## <a name="see-also"></a>Confira também
 

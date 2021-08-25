@@ -3,20 +3,20 @@ title: Lendo arquivos do dispositivo
 description: Lendo arquivos do dispositivo
 ms.assetid: adb87b53-39e2-4f83-ab6d-7e2f7c0bd5d3
 keywords:
-- Windows Media Gerenciador de Dispositivos, lendo arquivos de dispositivos
+- Windows Mídia Gerenciador de Dispositivos, lendo arquivos de dispositivos
 - Gerenciador de Dispositivos, lendo arquivos de dispositivos
 - Guia de programação, lendo arquivos de dispositivos
 - aplicativos de área de trabalho, lendo arquivos de dispositivos
-- Criando aplicativos de Gerenciador de Dispositivos de mídia do Windows, lendo arquivos de dispositivos
+- criando Windows mídia Gerenciador de Dispositivos aplicativos, lendo arquivos de dispositivos
 - lendo arquivos de dispositivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b0b80cf820e889b29e612206f90b07e1cb02c4c7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4352be59a335461f46bfc722146e4c51d31f72c1559e9ad8631e80cb6752c241
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104159455"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119903996"
 ---
 # <a name="reading-files-from-the-device"></a>Lendo arquivos do dispositivo
 
@@ -28,13 +28,13 @@ As etapas a seguir mostram a maneira básica de copiar um arquivo de um disposit
 2.  Determine se o armazenamento é um arquivo ou uma pasta. Somente os arquivos podem ser copiados do dispositivo. Chame [**IWMDMStorage:: GetAttributes**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorage-getattributes) para obter atributos de armazenamento, o que informará se o armazenamento é um arquivo ou uma pasta.
 3.  Consulte **IWMDMStorage** para [**IWMDMStorageControl**](/windows/desktop/api/mswmdm/nn-mswmdm-iwmdmstoragecontrol)e chame [**IWMDMStorageControl:: Read**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstoragecontrol-read) para ler o arquivo do dispositivo e salvá-lo em um local especificado.
 
-Se, em vez disso, você quiser ler o bloco de arquivo por bloco do dispositivo, deverá implementar a interface de retorno de chamada [**IWMDMOperation**](/windows/desktop/api/mswmdm/nn-mswmdm-iwmdmoperation) . Passe essa interface para a chamada **IWMDMStorageControl:: Read** e o Windows Media Gerenciador de dispositivos enviará partes de dados de arquivo sequencialmente para seu retorno de chamada. As etapas a seguir mostram como ler um bloco de arquivos do dispositivo por bloco:
+Se, em vez disso, você quiser ler o bloco de arquivo por bloco do dispositivo, deverá implementar a interface de retorno de chamada [**IWMDMOperation**](/windows/desktop/api/mswmdm/nn-mswmdm-iwmdmoperation) . passe essa interface para a chamada **IWMDMStorageControl:: Read** e Windows Media Gerenciador de Dispositivos enviará partes de dados de arquivo sequencialmente para seu retorno de chamada. As etapas a seguir mostram como ler um bloco de arquivos do dispositivo por bloco:
 
 1.  Obtenha a interface **IWMDMStorage** para o armazenamento e determine se ele é um arquivo, conforme descrito anteriormente.
 2.  Prepare quaisquer identificadores de arquivo ou outros identificadores necessários para manter os dados recebidos.
 3.  Consulta para a interface **IWMDMStorageControl** do armazenamento
 4.  Chame **IWMDMStorageControl:: Read** para iniciar a operação de leitura, passando a interface **IWMDMOperation** que você implementou.
-5.  O Windows Media Gerenciador de Dispositivos enviará o bloco de dados por bloco para seu dispositivo, conforme descrito em [manipulando transferências de arquivo manualmente](handling-file-transfers-manually.md).
+5.  Windows A mídia Gerenciador de Dispositivos enviará o bloco de dados por bloco para seu dispositivo, conforme descrito em [manipulando transferências de arquivo manualmente](handling-file-transfers-manually.md).
 
 A seguinte função de exemplo C++ lê um objeto de armazenamento de um dispositivo. A função aceita um ponteiro de interface **IWMDMOperation** opcional; Se for enviado, a função criará um arquivo explicitamente e manipulará a gravação dos dados no arquivo em sua implementação de **IWMDMOperation:: TransferObjectData**; caso contrário, ele lerá o arquivo e salvará no destino especificado por *pwszDestName*.
 
@@ -121,12 +121,12 @@ HRESULT myFileRead(IWMDMStorage pStorage, LPWSTR pwszDestName, IWMDMOperation* p
 
 <dl> <dt>
 
-[**Criando um aplicativo de Gerenciador de Dispositivos de mídia do Windows**](creating-a-windows-media-device-manager-application.md)
+[**criando um aplicativo de Gerenciador de Dispositivos de mídia Windows**](creating-a-windows-media-device-manager-application.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

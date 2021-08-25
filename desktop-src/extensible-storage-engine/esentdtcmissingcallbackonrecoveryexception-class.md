@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5dc8e2a33a3482afff5f492a3886ea1aa13256e4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d71baf2c5b82dd59bd06ffdc02b11a747111a6c88fb2c9e123c9e6e6b10d5059
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922410"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119839499"
 ---
 # <a name="esentdtcmissingcallbackonrecoveryexception-class"></a>Classe EsentDTCMissingCallbackOnRecoveryException
 
@@ -38,7 +38,7 @@ Classe base para JET_err. DTCMissingCallbackOnRecovery exceções.
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Exception](/dotnet/api/system.exception)  
+  [System.Exception](/dotnet/api/system.exception)  
     [Microsoft. ISAM. ESENT. EsentException](./esentexception-class.md)  
       [Microsoft. ISAM. ESENT. Interop. EsentErrorException](./esenterrorexception-class.md)  
         [Microsoft. ISAM. ESENT. Interop. EsentApiException](./esentapiexception-class.md)  

@@ -4,12 +4,12 @@ ms.assetid: acda4cf3-39a6-4bd2-91a0-db1f191b57b5
 title: Função falha AcquireCredentialsHandle (geral) (SSPI. h)
 ms.topic: reference
 ms.date: 07/25/2019
-ms.openlocfilehash: 9c1202d8b482eee45697cec35ff6a7e8ba6ef354
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0fcac88d1dcf31da19a15ab8a4834ae628d4e98e45ab777ec3da0db14092c75d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105769655"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120101456"
 ---
 # <a name="acquirecredentialshandle-general-function"></a>Função falha AcquireCredentialsHandle (geral)
 
@@ -96,11 +96,11 @@ Um sinalizador que indica como essas credenciais serão usadas. Esse parâmetro 
 
 | Valor                                                                                                                                                                                                                                                                                    | Significado                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="SECPKG_CRED_AUTOLOGON_RESTRICTED"></span><span id="secpkg_cred_autologon_restricted"></span><dl> <dt>**SECPKG \_ Credenciais \_ \_ restritas de logon automático do cred**</dt> <dt></dt> </dl> | A segurança não usa credenciais de logon padrão ou credenciais do [Gerenciador de credenciais](credential-manager.md).<br/> Esse valor só tem suporte pela [*delegação restrita*](../secgloss/s-gly.md)de Negotiate.<br/> **Windows server 2008, Windows Vista, Windows server 2003 e Windows XP:** Não há suporte para esse valor.<br/>                                                                                                                                 |
+| <span id="SECPKG_CRED_AUTOLOGON_RESTRICTED"></span><span id="secpkg_cred_autologon_restricted"></span><dl> <dt>**SECPKG \_ Credenciais \_ \_ restritas de logon automático do cred**</dt> <dt></dt> </dl> | A segurança não usa credenciais de logon padrão ou credenciais do [Gerenciador de credenciais](credential-manager.md).<br/> Esse valor só tem suporte pela [*delegação restrita*](../secgloss/s-gly.md)de Negotiate.<br/> **Windows server 2008, Windows Vista, Windows Server 2003 e Windows XP:** Não há suporte para esse valor.<br/>                                                                                                                                 |
 | <span id="SECPKG_CRED_BOTH"></span><span id="secpkg_cred_both"></span><dl> <dt>**SECPKG \_ cred \_**</dt> </dl>                                                                                                                  | Valide uma credencial de entrada ou use uma credencial local para preparar um token de saída. Esse sinalizador habilita ambos os outros sinalizadores. Esse sinalizador não é válido com o Digest e o Schannel SSPs.<br/>                                                                                                                                                                                                                                                                |
 | <span id="SECPKG_CRED_INBOUND"></span><span id="secpkg_cred_inbound"></span><dl> <dt>**\_entrada de credenciais SECPKG \_**</dt> </dl>                                                                                                         | Valide uma credencial de servidor de entrada. As credenciais de entrada podem ser validadas usando uma autoridade de autenticação quando [**InitializeSecurityContext (geral)**](initializesecuritycontext--general.md) ou [**AcceptSecurityContext (geral)**](acceptsecuritycontext--general.md) é chamado. Se essa autoridade não estiver disponível, a função falhará e retornará s \_ e \_ nenhuma autoridade de \_ autenticação \_ . A validação é específica do pacote.<br/> |
 | <span id="SECPKG_CRED_OUTBOUND"></span><span id="secpkg_cred_outbound"></span><dl> <dt>**\_saída de credenciais SECPKG \_**</dt> </dl>                                                                                                      | Permitir que uma credencial de cliente local Prepare um token de saída.<br/>                                                                                                                                                                                                                                                                                                                                                                                        |
-| <span id="SECPKG_CRED_PROCESS_POLICY_ONLY"></span><span id="secpkg_cred_process_policy_only"></span><dl> <dt>**SECPKG \_ Política de processo de credenciais \_ \_ \_ apenas**</dt> <dt>0x00000020</dt> </dl>   | A função processa a política de servidor e retorna **s \_ e \_ nenhuma \_ credencial**, indicando que o aplicativo deve solicitar credenciais.<br/> Esse valor só tem suporte pela [*delegação restrita*](../secgloss/s-gly.md)de Negotiate.<br/> **Windows server 2008, Windows Vista, Windows server 2003 e Windows XP:** Não há suporte para esse valor.<br/>                                                                                                          |
+| <span id="SECPKG_CRED_PROCESS_POLICY_ONLY"></span><span id="secpkg_cred_process_policy_only"></span><dl> <dt>**SECPKG \_ Política de processo de credenciais \_ \_ \_ apenas**</dt> <dt>0x00000020</dt> </dl>   | A função processa a política de servidor e retorna **s \_ e \_ nenhuma \_ credencial**, indicando que o aplicativo deve solicitar credenciais.<br/> Esse valor só tem suporte pela [*delegação restrita*](../secgloss/s-gly.md)de Negotiate.<br/> **Windows server 2008, Windows Vista, Windows Server 2003 e Windows XP:** Não há suporte para esse valor.<br/>                                                                                                          |
 
 
 
@@ -162,7 +162,7 @@ Ao usar o SSP do Schannel, esse parâmetro é opcional. Quando a credencial a se
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for realizada com sucesso, a função retornará s \_ E \_ OK.
 
@@ -176,8 +176,8 @@ Se a função falhar, ela retornará um dos seguintes códigos de erro.
 | <dl> <dt>**s \_ E \_ \_ erro interno**</dt> </dl>      | Ocorreu um erro que não foi mapeado para um código de erro SSPI.<br/>                                                                               |
 | <dl> <dt>**s \_ E \_ sem \_ credenciais**</dt> </dl>      | Não há credenciais disponíveis na [*delegação restrita*](../secgloss/s-gly.md).<br/> |
 | <dl> <dt>**s \_ E \_ não \_ proprietário**</dt> </dl>           | O chamador da função não tem as credenciais necessárias.<br/>                                                                     |
-| <dl> <dt>**s \_ E \_ SECPKG \_ não \_ encontrados**</dt> </dl>   | O [*pacote de segurança*](../secgloss/s-gly.md) solicitado não existe.<br/>                                                                                          |
-| <dl> <dt>**s \_ E \_ credenciais desconhecidas \_**</dt> </dl> | As credenciais fornecidas para o pacote não foram reconhecidas.<br/>                                                                            |
+| <dl> <dt>**SEC \_ E \_ SECPKG \_ NÃO \_ ENCONTRADO**</dt> </dl>   | O pacote de [*segurança solicitado*](../secgloss/s-gly.md) não existe.<br/>                                                                                          |
+| <dl> <dt>**S \_ E \_ CREDENCIAIS \_ DESCONHECIDAS**</dt> </dl> | As credenciais fornecidas ao pacote não foram reconhecidas.<br/>                                                                            |
 
 
 
@@ -185,18 +185,18 @@ Se a função falhar, ela retornará um dos seguintes códigos de erro.
 
 ## <a name="remarks"></a>Comentários
 
-A função **falha AcquireCredentialsHandle (geral)** retorna um identificador para as credenciais de uma entidade de segurança, como um usuário ou cliente, conforme usado por uma [*delegação restrita*](../secgloss/s-gly.md)específica. Isso pode ser o identificador para credenciais preexistentes ou a função pode criar um novo conjunto de credenciais e retorná-la. Esse identificador pode ser usado em chamadas subsequentes para as funções [**AcceptSecurityContext (geral)**](acceptsecuritycontext--general.md) e [**InitializeSecurityContext (geral)**](initializesecuritycontext--general.md) .
+A **função AcquireCredentialsHandle (Geral)** retorna um identificador para as credenciais de uma entidade de serviço, como um usuário ou cliente, conforme usado por uma delegação restrita [*específica.*](../secgloss/s-gly.md) Esse pode ser o lidar com credenciais preexistência ou a função pode criar um novo conjunto de credenciais e devolvê-lo. Esse handle pode ser usado em chamadas subsequentes para as funções [**AcceptSecurityContext (Geral)**](acceptsecuritycontext--general.md) e [**InitializeSecurityContext (Geral).**](initializesecuritycontext--general.md)
 
-Em geral, **falha AcquireCredentialsHandle (geral)** não permite que um processo obtenha um identificador para as credenciais de outros usuários conectados ao mesmo computador. No entanto, um \_ \_ [*privilégio*](../secgloss/s-gly.md) de nome do chamador com o Name TCB tem a opção de especificar o [*identificador de logon*](../secgloss/l-gly.md) (LUID) de qualquer token de sessão de logon existente para obter um identificador para as credenciais dessa sessão. Normalmente, isso é usado por módulos de modo kernel que devem agir em nome de um usuário conectado.
+Em geral, **AcquireCredentialsHandle (Geral)** não permite que um processo obtenha um identificador para as credenciais de outros usuários conectados ao mesmo computador. No entanto, um chamador com ES privilégio TCB NAME tem a opção de especificar o \_ \_ LUID (identificador de [*logon)*](../secgloss/l-gly.md) [](../secgloss/s-gly.md) de qualquer token de sessão de logon existente para obter um identificador para as credenciais dessa sessão. Normalmente, isso é usado por módulos de modo kernel que devem agir em nome de um usuário conectado.
 
-Um pacote pode chamar a função no *pGetKeyFn* fornecido pelo transporte de tempo de execução RPC. Se o transporte não oferecer suporte à noção de retorno de chamada para recuperar credenciais, esse parâmetro deverá ser **nulo**.
+Um pacote pode chamar a função em *pGetKeyFn* fornecida pelo transporte em tempo de executar RPC. Se o transporte não dá suporte à noção de retorno de chamada para recuperar credenciais, esse parâmetro deve ser **NULL.**
 
-Para chamadores de modo kernel, as seguintes diferenças devem ser observadas:
+Para chamadores de modo kernel, as seguintes diferenças devem ser notadas:
 
--   Os dois parâmetros String devem ser cadeias de caracteres [*Unicode*](../secgloss/u-gly.md) .
--   Os valores do buffer devem ser alocados na memória virtual do processo, não no pool.
+-   Os dois parâmetros de cadeia de caracteres devem ser [*cadeias de caracteres Unicode.*](../secgloss/u-gly.md)
+-   Os valores de buffer devem ser alocados na memória virtual do processo, não no pool.
 
-Quando você terminar de usar as credenciais retornadas, libere a memória usada pelas credenciais chamando a função [**FreeCredentialsHandle**](/windows/win32/api/sspi/nf-sspi-freecredentialshandle) .
+Quando terminar de usar as credenciais retornadas, livre a memória usada pelas credenciais chamando a [**função FreeCredentialsHandle.**](/windows/win32/api/sspi/nf-sspi-freecredentialshandle)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -204,10 +204,10 @@ Quando você terminar de usar as credenciais retornadas, libere a memória usada
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                   |
-| parâmetro<br/>                   | <dl> <dt>SSPI. h (incluir Security. h)</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Secur32. lib</dt> </dl>                 |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                                            |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                   |
+| Cabeçalho<br/>                   | <dl> <dt>Sspi.h (inclua Security.h)</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Secur32.lib</dt> </dl>                 |
 | DLL<br/>                      | <dl> <dt>Secur32.dll</dt> </dl>                 |
 | Nomes Unicode e ANSI<br/>   | **AcquireCredentialsHandleW** (Unicode) e **AcquireCredentialsHandleA** (ANSI)<br/>            |
 
@@ -220,10 +220,10 @@ Quando você terminar de usar as credenciais retornadas, libere a memória usada
 [Funções SSPI](authentication-functions.md#sspi-functions)
 </dt> <dt>
 
-[**AcceptSecurityContext (geral)**](acceptsecuritycontext--general.md)
+[**AcceptSecurityContext (Geral)**](acceptsecuritycontext--general.md)
 </dt> <dt>
 
-[**InitializeSecurityContext (geral)**](initializesecuritycontext--general.md)
+[**InitializeSecurityContext (Geral)**](initializesecuritycontext--general.md)
 </dt> <dt>
 
 [**FreeCredentialsHandle**](/windows/win32/api/sspi/nf-sspi-freecredentialshandle)

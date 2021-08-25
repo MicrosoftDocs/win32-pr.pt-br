@@ -3,7 +3,7 @@ title: Mensagem de CB_GETCUEBANNER (WinUser. h)
 description: Obtém o texto da faixa de indicação exibido no controle de edição de uma caixa de combinação. Envie essa mensagem explicitamente ou usando a \_ macro GetCueBannerText da ComboBox.
 ms.assetid: 38959228-9f07-4636-a1ea-681efe77b9ec
 keywords:
-- Controles de CB_GETCUEBANNER de mensagens do Windows
+- controles de Windows de mensagem de CB_GETCUEBANNER
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 866f51df0083c4cd72c3f34bb3ce045e0f577a24
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c81ddcd8123f28317726f412255f440d47f53310aa035ab34d25190658550163
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824533"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120089266"
 ---
 # <a name="cb_getcuebanner-message"></a>\_Mensagem de GETCUEBANNER CB
 
@@ -43,7 +43,7 @@ O tamanho do buffer apontado por *lpcwText* em **WCHAR**.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará 1 se for bem-sucedido ou um valor de erro de outra forma.
 
@@ -55,9 +55,9 @@ Se não houver nenhum texto de faixa de indicação a ser obtido, o valor de ret
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>CommCtrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>CommCtrl. h</dt> </dl> |
 
 
 

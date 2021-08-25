@@ -1,25 +1,25 @@
 ---
-description: Exibindo legendas ocultas
+description: Exibindo legendas fechadas
 ms.assetid: 86c0c553-af35-4ad1-8918-63d9e4577c73
-title: Exibindo legendas ocultas
+title: Exibindo legendas fechadas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 82ff2d6d213259ccce6e9b02272d0c9db3ad7b71
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f52288b1c4fa5c43f7e0419d81bd9727a4db86848d368b600e1d713c53dc1593
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104562614"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119903418"
 ---
-# <a name="viewing-closed-captions"></a>Exibindo legendas ocultas
+# <a name="viewing-closed-captions"></a>Exibindo legendas fechadas
 
-Para dar suporte a legendas codificadas na televisão analógica, o filtro de captura expõe um PIN que fornece dados de VBI ou de legenda oculta. O PIN terá uma das seguintes categorias de PIN:
+Para dar suporte a legendas fechadas na tv anapáloga, o filtro de captura expõe um pino que fornece dados de VBI ou legenda fechada. O pino terá uma das seguintes categorias de pino:
 
--   VBI PIN (fixar \_ categoria \_ VBI). Fornece um fluxo de exemplos de formato de onda VBI. Eles são passados para um filtro de decodificador que extrai os dados de legenda codificada.
--   PIN CC (fixar \_ categoria \_ CC). Entrega pares de bytes de legenda fechada, extraídos dos dados de linha-21.
--   PIN do CC de fatia de hardware ( \_ captura de vídeo CC do PINNAME \_ \_ ).
+-   Pin da VBI (PIN \_ CATEGORY \_ VBI). Fornece um fluxo de amostras de forma de onda da VBI. Eles são passados para um filtro de decodificador que extrai os dados de legenda fechado.
+-   Pino CC (PIN \_ CATEGORIA \_ CC). Fornece pares de byte de legenda fechada, extraídos dos dados de linha 21.
+-   Pino CC de fatia de hardware (PINNAME \_ VIDEO \_ CC \_ CAPTURE).
 
-Para visualizar legendas ocultas, chame [**ICaptureGraphBuilder2:: RenderStream**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-renderstream) com a categoria VBI PIN e, se isso falhar, chame-a novamente com a categoria CC.
+Para visualizar legendas fechadas, chame [**ICaptureGraphBuilder2::RenderStream**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-renderstream) com a categoria de pino da VBI e, se isso falhar, chame-a novamente com a categoria CC.
 
 
 ```C++
@@ -32,35 +32,35 @@ if (FAILED(hr))
 
 
 
-O diagrama a seguir mostra um grafo de filtro típico para exibir legendas ocultas.
+O diagrama a seguir mostra um grafo de filtro típico para exibir legendas fechadas.
 
-![Grafo de visualização de legendagem oculta](images/vidcap08.png)
+![gráfico de visualização de legendas fechadas](images/vidcap08.png)
 
-Este grafo usa os seguintes filtros para exibição de legenda oculta:
+Esse grafo usa os seguintes filtros para exibição de legenda fechada:
 
--   [Conversor de t/coletor de alto-para-coletor](tee-sink-to-sink-converter.md). Aceita as informações de VBI do filtro de captura e divide-as em fluxos separados para cada um dos serviços de dados presentes no sinal. A Microsoft fornece codecs VBI para legendas codificadas, NABTS e teletextos padrão mundiais (WST).
--   [Decodificador CC](cc-decoder-filter.md). Decodifica os dados do CC das amostras de onda de VBI amostradas fornecidas pelo filtro de captura.
--   [Decodificador de linha 21](line-21-decoder-filter.md). Traduz os pares de bytes de CC e desenha o texto da legenda em bitmaps. O filtro downstream (nesse caso, o mixer de sobreposição) sobrepõe os bitmaps no vídeo.
+-   [Tee/Sink-to-Sink Converter](tee-sink-to-sink-converter.md). Aceita as informações da VBI do filtro de captura e as divide em fluxos separados para cada um dos serviços de dados presentes no sinal. A Microsoft fornece codecs de VBI para Legenda Fechada, NABTS e WST (World Standard Teletext).
+-   [Decodificador CC](cc-decoder-filter.md). Decodifica dados cc das formações de onda de VBI amostradas fornecidas pelo filtro de captura.
+-   [Decodificador de linha 21](line-21-decoder-filter.md). Converte os pares de byte CC e desenha o texto da legenda em bitmaps. O filtro downstream (nesse caso, o Mixer sobreposição) sobrepõe os bitmaps no vídeo.
 
-O método [**RenderStream**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-renderstream) do construtor do grafo de captura adiciona esses filtros automaticamente. Se o filtro de captura tiver um PIN de CC em vez de um PIN de VBI, o PIN de CC será conectado diretamente ao filtro de decodificador de linha 21.
+O método [**RenderStream**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-renderstream) do Construtor Graph Capture adiciona esses filtros automaticamente. Se o filtro de captura tiver um pino CC em vez de um pino de VBI, o pino CC será conectado diretamente ao filtro de Decodificador de Linha 21.
 
 > [!Note]  
-> Se você estiver usando o filtro de processador de mixagem de vídeo (VMR) para renderização, use o filtro de decodificador de linha 21 2. Esse filtro tem a mesma funcionalidade que o decodificador de linha 21, mas o CLSID é CLSID \_ Line21Decoder2.
+> Se você estiver usando o filtro VMR (Video Mixing Renderer) para renderização, use o Filtro de Decodificador de Linha 21. Esse filtro tem a mesma funcionalidade que o Decodificador de Linha 21, mas o CLSID é CLSID \_ Line21Decoder2.
 
  
 
 > [!Note]  
-> O filtro de decodificador de CC foi removido do Windows Vista. Os novos aplicativos devem usar o filtro VBICodec, documentado na documentação das tecnologias de TV da Microsoft.
+> O filtro do Decodificador CC foi removido Windows Vista. Novos aplicativos devem usar o filtro VBICodec, que está documentado na documentação da Microsoft TV Technologies.
 
  
 
-Se o dispositivo de captura usar uma porta de vídeo, o filtro de captura poderá ter uma porta de vídeo VBI PIN (PIN \_ Category \_ VIDEOPORT \_ VBI). Esse PIN deve ser conectado ao filtro de [alocador de superfície VBI](vbi-surface-allocator.md) , que aloca superfícies para manter os dados VBI capturados. O método [**RenderStream**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-renderstream) adicionará esse filtro se for necessário. O diagrama a seguir mostra um gráfico de filtro com o alocador de superfície VBI.
+Se o dispositivo de captura usar uma porta de vídeo, o filtro de captura poderá ter um pino de VBI de porta de vídeo (PIN \_ CATEGORY \_ VIDEOPORT \_ VBI). Esse pino deve ser conectado ao filtro alocador de superfície da [VBI,](vbi-surface-allocator.md) que aloca superfícies para manter os dados de VBI capturados. O [**método RenderStream**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-renderstream) adiciona esse filtro se for necessário. O diagrama a seguir mostra um grafo de filtro com o Alocador de Superfície de VBI.
 
-![Grafo de visualização de legenda codificada com alocador de superfície VBI](images/vidcap09.png)
+![grafo de visualização de legenda fechada com alocador de superfície de vbi](images/vidcap09.png)
 
 ### <a name="enabling-and-disabling-the-captions"></a>Habilitando e desabilitando as legendas
 
-Para controlar a exibição de legendas, use a interface [**IAMLine21Decoder**](/previous-versions/windows/desktop/api/il21dec/nn-il21dec-iamline21decoder) no filtro linha 21 de decodificador. Por exemplo, você pode desativar a exibição de legendas usando o método [**IAMLine21Decoder:: Setservicestate**](/previous-versions/windows/desktop/api/il21dec/nf-il21dec-iamline21decoder-setservicestate) , da seguinte maneira:
+Para controlar a exibição de legenda, use a interface [**IAMLine21Decoder**](/previous-versions/windows/desktop/api/il21dec/nn-il21dec-iamline21decoder) no filtro Decodificador de Linha 21. Por exemplo, você pode desativar a exibição de legenda usando o [**método IAMLine21Decoder::SetServiceState,**](/previous-versions/windows/desktop/api/il21dec/nf-il21dec-iamline21decoder-setservicestate) da seguinte forma:
 
 
 ```C++
@@ -81,11 +81,11 @@ if (SUCCEEDED(hr))
 
 
 
-Este exemplo usa o método [**ICaptureGraphBuilder2:: FindInterface**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-findinterface) para localizar a interface [**IAMLine21Decoder**](/previous-versions/windows/desktop/api/il21dec/nn-il21dec-iamline21decoder) . O primeiro parâmetro para **FindInterface** é **&parecer \_ \_ somente DOWNSTREAM**, que especifica a pesquisa downstream do filtro de captura (*pcap*).
+Este exemplo usa o [**método ICaptureGraphBuilder2::FindInterface**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-findinterface) para localizar a interface [**IAMLine21Decoder.**](/previous-versions/windows/desktop/api/il21dec/nn-il21dec-iamline21decoder) O primeiro parâmetro para **FindInterface** é **&LOOK DOWNSTREAM \_ \_ ONLY**, que especifica a pesquisa downstream do filtro de captura (*pCap*).
 
-### <a name="capturing-closed-caption-bitmaps"></a>Capturando bitmaps de legenda oculta
+### <a name="capturing-closed-caption-bitmaps"></a>Capturando bitmaps de legendas fechadas
 
-Você pode capturar os bitmaps de legenda em um arquivo. Para fazer isso, adicione a seção de gravação de arquivo do gráfico de filtro, conforme descrito em [capturando vídeo em um arquivo](capturing-video-to-a-file.md). Em seguida, processe o PIN CC ou VBI para o filtro Mux:
+Você pode capturar os bitmaps de legenda em um arquivo. Para fazer isso, adicione a seção de gravação de arquivo do grafo de filtro, conforme descrito em [Capturando vídeo em um arquivo](capturing-video-to-a-file.md). Em seguida, renderizar o pino CC ou VBI para o filtro mux:
 
 
 ```C++
@@ -98,13 +98,13 @@ if (FAILED(hr))
 
 
 
-Se você também estiver capturando o vídeo, isso criará um arquivo com dois fluxos de vídeo separados. Ele não capturará vídeo com legendas sobrepostas sobre a imagem.
+Se você também estiver capturando o vídeo, isso criará um arquivo com dois fluxos de vídeo separados. Ele não capturará o vídeo com legendas sobressprovidas na parte superior da imagem.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Legendas e teletextos codificados](closed-captions-and-teletext.md)
+[Legendas fechadas e teletexto](closed-captions-and-teletext.md)
 </dt> </dl>
 
  

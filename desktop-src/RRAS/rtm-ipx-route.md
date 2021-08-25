@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d32333dd6a6b53ee4600dda388a318bdf9404b6d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1e3d14de623fe8d0b3a85118b39d764baa00d2ca5930cfe711be21a91057b6db
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918224"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120101826"
 ---
 # <a name="rtm_ipx_route-structure"></a>\_Estrutura de rota IPX do RTM \_
 
-\[Essa API foi substituída pela API do [Gerenciador de tabela de roteamento versão 2](about-routing-table-manager-version-2.md) e não estará disponível além do Windows Server 2003. Os aplicativos devem usar a API da versão 2 do Gerenciador de tabela de roteamento.\]
+\[esta api foi substituída pela api do [gerenciador de tabela de roteamento versão 2](about-routing-table-manager-version-2.md) e não estará disponível além do Windows Server 2003. Os aplicativos devem usar a API da versão 2 do Gerenciador de tabela de roteamento.\]
 
 A estrutura de **\_ \_ rota IPX do RTM** contém informações que descrevem uma rota para a família de protocolos IPX.
 
@@ -111,7 +111,7 @@ Os membros da estrutura **de \_ \_ rota IPX do RTM** são todos alinhados em **D
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                        |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                             |
 | Fim do suporte do servidor<br/>    | Windows Server 2003<br/>                                                   |
-| parâmetro<br/>                   | <dl> <dt>RTM. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>RTM. h</dt> </dl> |
 
 
 

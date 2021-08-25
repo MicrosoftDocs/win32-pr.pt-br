@@ -3,58 +3,58 @@ title: Identificadores de interface
 description: Identificadores de interface
 ms.assetid: 009edcc0-34db-40a1-ae76-17492b11604a
 keywords:
-- Windows Media Format SDK, IID (identificadores de interface)
-- Formato de sistema avançado (ASF), identificadores de interface (IID)
-- ASF (formato de sistemas avançados), identificadores de interface (IID)
-- identificadores de interface (IID)
+- Windows SDK de Formato de Mídia, identificadores de interface (IID)
+- ASF (Advanced Systems Format), identificadores de interface (IID)
+- ASF (Formato de Sistemas Avançados), identificadores de interface (IID)
+- IID (identificadores de interface)
 - IID (identificadores de interface)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 253ca5b4110536c2207f7e18ab0f28067789df71
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 63d32dc097e251c7fd82ff3b7ae5320d6bc1bfc628d32d436256a8a5c15bd7e3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292589"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119808916"
 ---
 # <a name="interface-identifiers"></a>Identificadores de interface
 
-Você deve usar um IID (identificador de interface) ao fazer chamadas para o método **QueryInterface** . Um IID é um valor de GUID (identificador global exclusivo). No Windows Media Format SDK, a constante atribuída ao IID para uma determinada interface é o nome da interface precedido por ' IID \_ '.
+Você deve usar um IID (identificador de interface) ao fazer chamadas para o **método QueryInterface.** Um IID é um valor guid (identificador global exclusivo). No SDK Windows Formato de Mídia, a constante atribuída ao IID para uma determinada interface é o nome da interface precedido por 'IID \_ '.
 
 A tabela a seguir lista os identificadores de interface e as constantes associadas para as interfaces neste SDK.
 
 
 
-| Interface                       | Constante de IID                     | GUID                                 |
+| Interface                       | Constante IID                     | GUID                                 |
 |---------------------------------|----------------------------------|--------------------------------------|
-| **INSSBuffer**                  | INSSBuffer de IID \_                  | E1CD3524-03D7-11d2-9EED-006097D2D7CF |
-| **INSSBuffer2**                 | INSSBuffer2 de IID \_                 | 4f528693-1035-43fe-b428-757561ad3a68 |
-| **INSSBuffer3**                 | INSSBuffer3 de IID \_                 | c87ceaaf-75be-4bc4-84eb-ac2798507672 |
-| **INSSBuffer4**                 | INSSBuffer4 de IID \_                 | b6b8fd5a-32e2-49d4-a910-c26cc85465ed |
-| **IWMAddressAccess**            | IWMAddressAccess de IID \_            | BB3C6389-1633-4E92-AF14-9F3173BA39D0 |
-| **IWMAddressAccess2**           | IWMAddressAccess2 de IID \_           | 65A83FC2-3E98-4D4D-81B5-2A742886B33D |
-| **IWMBackupRestoreProps**       | IWMBackupRestoreProps de IID \_       | 3C8E0DA6-996F-4ff3-A1AF-4838F9377e2e |
-| **IWMBandwidthSharing**         | IWMBandwidthSharing de IID \_         | ad694af1-f8d9-42f8-bc47-70311b0c4f9e |
-| **IWMClientConnections**        | IWMClientConnections de IID \_        | 73c66010-a299-41df-b1f0-ccf03b09c1c6 |
-| **IWMClientConnections2**       | IWMClientConnections2 de IID \_       | 4091571e-4701-4593-bb3d-d5f5f0c74246 |
-| **IWMCodecInfo**                | IWMCodecInfo de IID \_                | a970f41e-34de-4a98-b3ba-e4b3ca7528f0 |
-| **IWMCodecInfo2**               | IWMCodecInfo2 de IID \_               | aa65e273-b686-4056-91ec-dd768d4df710 |
-| **IWMCodecInfo3**               | IWMCodecInfo3 de IID \_               | 7e51f487-4d93-4f98-8ab4-27d0565adc51 |
-| **IWMCredentialCallback**       | IWMCredentialCallback de IID \_       | 342e0eb7-e651-450c-975b-2ace2c90c48e |
-| **IWMDeviceRegistration**       | IWMDeviceRegistration de IID \_       | f6211f03-8d21-4e94-93e6-8510805f2d99 |
-| **IWMDRMEditor**                | IWMDRMEditor de IID \_                | FF130EBC-A6C3-42A6-B401-C3382C3E08B3 |
-| **IWMDRMMessageParser**         | IWMDRMMessageParser de IID \_         | a73a0072-25a0-4c99-b4a5-ede8101a6c39 |
-| **IWMDRMReader**                | IWMDRMReader de IID \_                | d2827540-3ee7-432c-b14c-dc17f085d3b3 |
-| **IWMDRMReader2**               | IWMDRMReader2 de IID \_               | befe7a75-9f1d-4075-b9d9-a3c37bda49a0 |
-| **IWMDRMReader3**               | IWMDRMReader3 de IID \_               | f28c0300-9baa-4477-a846-1744d9cbf533 |
-| **IWMDRMTranscryptor**          | IWMDRMTranscryptor de IID \_          | 69059850-6e6f-4bb2-806f-71863ddfc471 |
-| **IWMDRMWriter**                | IWMDRMWriter de IID \_                | D6EA5DD0-12A0-43F4-90AB-A3FD451E6A07 |
-| **IWMDRMWriter2**               | IWMDRMWriter2 de IID \_               | 38ee7a94-40e2-4e10-aa3f-33fd3210ed5b |
-| **IWMDRMWriter3**               | IWMDRMWriter3 de IID \_               | a7184082-a4aa-4dde-ac9c-e75dbd1117ce |
-| **IWMHeaderInfo**               | IWMHeaderInfo de IID \_               | 96406bda-2b2b-11d3-b36b-00c04f6108ff |
-| **IWMHeaderInfo2**              | IWMHeaderInfo2 de IID \_              | 15cf9781-454e-482e-b393-85fae487a810 |
-| **IWMHeaderInfo3**              | IWMHeaderInfo3 de IID \_              | 15CC68E3-27CC-4ecd-B222-3F5D02D80BD5 |
-| **IWMImageInfo**                | IWMImageInfo de IID \_                | 9F0AA3B6-7267-4D89-88F2-BA915AA5C4C6 |
+| **INSSBuffer**                  | IID \_ INSSBuffer                  | E1CD3524-03D7-11d2-9EED-006097D2D7CF |
+| **INSSBuffer2**                 | IID \_ INSSBuffer2                 | 4f528693-1035-43fe-b428-757561ad3a68 |
+| **INSSBuffer3**                 | IID \_ INSSBuffer3                 | c87ceaaf-75be-4bc4-84eb-ac2798507672 |
+| **INSSBuffer4**                 | IID \_ INSSBuffer4                 | b6b8fd5a-32e2-49d4-a910-c26cc85465ed |
+| **IWMAddressAccess**            | IID \_ IWMAddressAccess            | BB3C6389-1633-4E92-AF14-9F3173BA39D0 |
+| **IWMAddressAccess2**           | IID \_ IWMAddressAccess2           | 65A83FC2-3E98-4D4D-81B5-2A742886B33D |
+| **IWMBackupRestoreProps**       | IID \_ IWMBackupRestoreProps       | 3C8E0DA6-996F-4ff3-A1AF-4838F9377e2e |
+| **IWMBandwidthSharing**         | IID \_ IWMBandwidthSharing         | ad694af1-f8d9-42f8-bc47-70311b0c4f9e |
+| **IWMClientConnections**        | IID \_ IWMClientConnections        | 73c66010-a299-41df-b1f0-ccf03b09c1c6 |
+| **IWMClientConnections2**       | IID \_ IWMClientConnections2       | 4091571e-4701-4593-bb3d-d5f5f0c74246 |
+| **IWMCodecInfo**                | IID \_ IWMCodecInfo                | a970f41e-34de-4a98-b3ba-e4b3ca7528f0 |
+| **IWMCodecInfo2**               | IID \_ IWMCodecInfo2               | aa65e273-b686-4056-91ec-dd768d4df710 |
+| **IWMCodecInfo3**               | IID \_ IWMCodecInfo3               | 7e51f487-4d93-4f98-8ab4-27d0565adc51 |
+| **IWMCredentialCallback**       | IID \_ IWMCredentialCallback       | 342e0eb7-e651-450c-975b-2ace2c90c48e |
+| **IWMDeviceRegistration**       | IID \_ IWMDeviceRegistration       | f6211f03-8d21-4e94-93e6-8510805f2d99 |
+| **IWMDRMEditor**                | IID \_ IWMDRMEditor                | FF130EBC-A6C3-42A6-B401-C3382C3E08B3 |
+| **IWMDRMMessageParser**         | IID \_ IWMDRMMessageParser         | a73a0072-25a0-4c99-b4a5-ede8101a6c39 |
+| **IWMDRMReader**                | IID \_ IWMDRMReader                | d2827540-3ee7-432c-b14c-dc17f085d3b3 |
+| **IWMDRMReader2**               | IID \_ IWMDRMReader2               | befe7a75-9f1d-4075-b9d9-a3c37bda49a0 |
+| **IWMDRMReader3**               | IID \_ IWMDRMReader3               | f28c0300-9baa-4477-a846-1744d9cbf533 |
+| **IWMDRMTranscryptor**          | IID \_ IWMDRMTranscryptor          | 69059850-6e6f-4bb2-806f-71863dddfc471 |
+| **IWMDRMWriter**                | IID \_ IWMDRMWriter                | D6EA5DD0-12A0-43F4-90AB-A3FD451E6A07 |
+| **IWMDRMWriter2**               | IID \_ IWMDRMWriter2               | 38ee7a94-40e2-4e10-aa3f-33fd3210ed5b |
+| **IWMDRMWriter3**               | IID \_ IWMDRMWriter3               | a7184082-a4aa-4dde-ac9c-e75dbd1117ce |
+| **IWMHeaderInfo**               | IID \_ IWMHeaderInfo               | 96406bda-2b2b-11d3-b36b-00c04f6108ff |
+| **IWMHeaderInfo2**              | IID \_ IWMHeaderInfo2              | 15cf9781-454e-482e-b393-85fae487a810 |
+| **IWMHeaderInfo3**              | IID \_ IWMHeaderInfo3              | 15CC68E3-27CC-4ecd-B222-3F5D02D80BD5 |
+| **IWMImageInfo**                | IID \_ IWMImageInfo                | 9F0AA3B6-7267-4D89-88F2-BA915AA5C4C6 |
 | **IWMIndexer**                  | IWMIndexer de IID \_                  | 6d7cdc71-9888-11d3-8edc-00c04f6109cf |
 | **IWMIndexer2**                 | IWMIndexer2 de IID \_                 | b70f1e42-6255-4df0-a6b9-02b212d9e2bb |
 | **IWMInputMediaProps**          | IWMInputMediaProps de IID \_          | 96406bd5-2b2b-11d3-b36b-00c04f6108ff |
@@ -89,59 +89,59 @@ A tabela a seguir lista os identificadores de interface e as constantes associad
 | **IWMReaderAdvanced5**          | IWMReaderAdvanced5 de IID \_          | 24c44db0-55d1-49ae-a5cc-f13815e36363 |
 | **IWMReaderAdvanced6**          | IWMReaderAdvanced6 de IID \_          | 18a2e7f8-428f-4acd-8a00-e64639bc93de |
 | **IWMReaderAllocatorEx**        | IWMReaderAllocatorEx de IID \_        | 9f762fa7-a22e-428d-93c9-ac82f3aafe5a |
-| **IWMReaderCallback**           | IWMReaderCallback de IID \_           | 96406bd8-2b2b-11d3-b36b-00c04f6108ff |
-| **IWMReaderCallbackAdvanced**   | IWMReaderCallbackAdvanced de IID \_   | 96406beb-2b2b-11d3-b36b-00c04f6108ff |
-| **IWMReaderNetworkConfig**      | IWMReaderNetworkConfig de IID \_      | 96406bec-2b2b-11d3-b36b-00c04f6108ff |
-| **IWMReaderNetworkConfig2**     | IWMReaderNetworkConfig2 de IID \_     | d979a853-042b-4050-8387-c939db22013f |
-| **IWMReaderPlaylistBurn**       | IWMReaderPlaylistBurn de IID \_       | f28c0300-9baa-4477-a846-1744d9cbf533 |
-| **IWMReaderStreamClock**        | IWMReaderStreamClock de IID \_        | 96406bed-2b2b-11d3-b36b-00c04f6108ff |
-| **IWMReaderTimecode**           | IWMReaderTimecode de IID \_           | F369E2F0-E081-4FE6-8450-B810B2F410D1 |
-| **IWMReaderTypeNegotiation**    | IWMReaderTypeNegotiation de IID \_    | fdbe5592-81a1-41ea-93bd-735cad1adc5? |
-| **IWMRegisterCallback**         | IWMRegisterCallback de IID \_         | cf4b1f99-4de2-4e49-a363-252740d99bc1 |
-| **IWMRegisteredDevice**         | IWMRegisteredDevice de IID \_         | a4503bec-5508-4148-97ac-bfa75760a70d |
-| **IWMSBufferAllocator**         | IWMSBufferAllocator de IID \_         | 61103CA4-2033-11d2-9EF1-006097D2D7CF |
-| **IWMSInternalAdminNetSource**  | IWMSInternalAdminNetSource de IID \_  | 8BB23E5F-D127-4afb-8D02-AE5B66D54C78 |
-| **IWMSInternalAdminNetSource2** | IWMSInternalAdminNetSource2 de IID \_ | E74D58C3-CF77-4b51-AF17-744687C43EAE |
-| **IWMSInternalAdminNetSource3** | IWMSInternalAdminNetSource3 de IID \_ | 6b63d08e-4590-44af-9eb3-57ff1e73bf80 |
-| **IWMStatusCallback**           | IWMStatusCallback de IID \_           | 6d7cdc70-9888-11d3-8edc-00c04f6109cf |
-| **IWMStreamConfig**             | IWMStreamConfig de IID \_             | 96406bdc-2b2b-11d3-b36b-00c04f6108ff |
-| **IWMStreamConfig2**            | IWMStreamConfig2 de IID \_            | 7688d8cb-fc0d-43bd-9459-5a8dec200cfa |
-| **IWMStreamConfig3**            | IWMStreamConfig3 de IID \_            | cb164104-3aa9-45a7-9ac9-4daee131d6e1 |
-| **IWMStreamList**               | IWMStreamList de IID \_               | 96406bdd-2b2b-11d3-b36b-00c04f6108ff |
-| **IWMStreamPrioritization**     | IWMStreamPrioritization de IID \_     | 8c1c6090-f9a8-4748-8ec3-dd1108ba1e77 |
-| **IWMSyncReader**               | IWMSyncReader de IID \_               | 9397f121-7705-4dc9-b049-98b698188414 |
-| **IWMSyncReader2**              | IWMSyncReader2 de IID \_              | faed3d21-1b6b-4af7-8cb6-3e189bbc187b |
-| **IWMVideoMediaProps**          | IWMVideoMediaProps de IID \_          | 96406bcf-2b2b-11d3-b36b-00c04f6108ff |
-| **IWMWatermarkInfo**            | IWMWatermarkInfo de IID \_            | 6F497062-F2E2-4624-8EA7-9DD40D81FC8D |
-| **IWMWriter**                   | IWMWriter de IID \_                   | 96406bd4-2b2b-11d3-b36b-00c04f6108ff |
-| **IWMWriterAdvanced**           | IWMWriterAdvanced de IID \_           | 96406be3-2b2b-11d3-b36b-00c04f6108ff |
-| **IWMWriterAdvanced2**          | IWMWriterAdvanced2 de IID \_          | 962dc1ec-c046-4db8-9cc7-26ceae500817 |
-| **IWMWriterAdvanced3**          | IWMWriterAdvanced3 de IID \_          | 2cd6492d-7c37-4e76-9d3b-59261183a22e |
-| **IWMWriterFileSink**           | IWMWriterFileSink de IID \_           | 96406be5-2b2b-11d3-b36b-00c04f6108ff |
-| **IWMWriterFileSink2**          | IWMWriterFileSink2 de IID \_          | 14282ba7-4aef-4205-8ce5-c229035a05bc |
-| **IWMWriterFileSink3**          | IWMWriterFileSink3 de IID \_          | 3fea4feb-2945-47a7-a1dd-c53a8fc4c45c |
-| **IWMWriterFileSinkDataUnit**   | IWMWriterFileSinkDataUnit de IID \_   | 633392f0-be5c-486b-a09c-10669c7a6c27 |
-| **IWMWriterNetworkSink**        | IWMWriterNetworkSink de IID \_        | 96406be7-2b2b-11d3-b36b-00c04f6108ff |
-| **IWMWriterPostView**           | IWMWriterPostView de IID \_           | 81e20ce4-75ef-491a-8004-fc53c45bdc3e |
-| **IWMWriterPostViewCallback**   | IWMWriterPostViewCallback de IID \_   | d9d6549d-a193-4f24-b308-03123d9b7f8d |
-| **IWMWriterPreprocess**         | IWMWriterPreprocess de IID \_         | fc54a285-38c4-45b5-aa23-85b9f7cb424b |
-| **IWMWriterPushSink**           | IWMWriterPushSink de IID \_           | DC10E6A5-072C-467D-BF57-6330A9DDE12A |
-| **IWMWriterSink**               | IWMWriterSink de IID \_               | 96406be4-2b2b-11d3-b36b-00c04f6108ff |
+| **IWMReaderCallback**           | IID \_ IWMReaderCallback           | 96406bd8-2b2b-11d3-b36b-00c04f6108ff |
+| **IWMReaderCallbackAdvanced**   | IID \_ IWMReaderCallbackAdvanced   | 96406beb-2b2b-11d3-b36b-00c04f6108ff |
+| **IWMReaderNetworkConfig**      | IID \_ IWMReaderNetworkConfig      | 96406bec-2b2b-11d3-b36b-00c04f6108ff |
+| **IWMReaderNetworkConfig2**     | IID \_ IWMReaderNetworkConfig2     | d979a853-042b-4050-8387-c939db22013f |
+| **IWMReaderPlaylist Ltda**       | IID \_ IWMReaderPlaylist Ltda       | f28c0300-9baa-4477-a846-1744d9cbf533 |
+| **IWMReaderStreamClock**        | IID \_ IWMReaderStreamClock        | 96406bed-2b2b-11d3-b36b-00c04f6108ff |
+| **IWMReaderTimecode**           | IID \_ IWMReaderTimecode           | F369E2F0-E081-4FE6-8450-B810B2F410D1 |
+| **IWMReaderTypeNegotiation**    | IID \_ IWMReaderTypeNegotiation    | fdbe5592-81a1-41ea-93bd-735cad1adc5? |
+| **IWMRegisterCallback**         | IID \_ IWMRegisterCallback         | cf4b1f99-4de2-4e49-a363-252740d99bc1 |
+| **IWMRegisteredDevice**         | IID \_ IWMRegisteredDevice         | a4503bec-5508-4148-97ac-bfa75760a70d |
+| **IWMSBufferAllocator**         | IID \_ IWMSBufferAllocator         | 61103CA4-2033-11d2-9EF1-006097D2D7CF |
+| **IWMSInternalAdminNetSource**  | IID \_ IWMSInternalAdminNetSource  | 8BB23E5F-D127-4afb-8D02-AE5B66D54C78 |
+| **IWMSInternalAdminNetSource2** | IID \_ IWMSInternalAdminNetSource2 | E74D58C3-CF77-4b51-AF17-744687C43EAE |
+| **IWMSInternalAdminNetSource3** | IID \_ IWMSInternalAdminNetSource3 | 6b63d08e-4590-44af-9eb3-57ff1e73bf80 |
+| **IWMStatusCallback**           | IID \_ IWMStatusCallback           | 6d7cdc70-9888-11d3-8edc-00c04f6109cf |
+| **IWMStreamConfig**             | IID \_ IWMStreamConfig             | 96406bdc-2b2b-11d3-b36b-00c04f6108ff |
+| **IWMStreamConfig2**            | IID \_ IWMStreamConfig2            | 7688d8cb-fc0d-43bd-9459-5a8dec200cfa |
+| **IWMStreamConfig3**            | IID \_ IWMStreamConfig3            | cb164104-3aa9-45a7-9ac9-4daee131d6e1 |
+| **IWMStreamList**               | IID \_ IWMStreamList               | 96406bdd-2b2b-11d3-b36b-00c04f6108ff |
+| **IWMStreamPrioritization**     | IID \_ IWMStreamPrioritization     | 8c1c6090-f9a8-4748-8ec3-dd1108ba1e77 |
+| **IWMSyncReader**               | IID \_ IWMSyncReader               | 9397f121-7705-4dc9-b049-98b698188414 |
+| **IWMSyncReader2**              | IID \_ IWMSyncReader2              | faed3d21-1b6b-4af7-8cb6-3e189bbc187b |
+| **IWMVideoMediaProps**          | IID \_ IWMVideoMediaProps          | 96406bcf-2b2b-11d3-b36b-00c04f6108ff |
+| **IWMWatermarkInfo**            | IID \_ IWMWatermarkInfo            | 6F497062-F2E2-4624-8EA7-9DD40D81FC8D |
+| **IWMWriter**                   | IID \_ IWMWriter                   | 96406bd4-2b2b-11d3-b36b-00c04f6108ff |
+| **IWMWriterAdvanced**           | IID \_ IWMWriterAdvanced           | 96406be3-2b2b-11d3-b36b-00c04f6108ff |
+| **IWMWriterAdvanced2**          | IID \_ IWMWriterAdvanced2          | 962dc1ec-c046-4db8-9cc7-26ceae500817 |
+| **IWMWriterAdvanced3**          | IID \_ IWMWriterAdvanced3          | 2cd6492d-7c37-4e76-9d3b-59261183a22e |
+| **IWMWriterFileSink**           | IID \_ IWMWriterFileSink           | 96406be5-2b2b-11d3-b36b-00c04f6108ff |
+| **IWMWriterFileSink2**          | IID \_ IWMWriterFileSink2          | 14282ba7-4aef-4205-8ce5-c229035a05bc |
+| **IWMWriterFileSink3**          | IID \_ IWMWriterFileSink3          | 3fea4feb-2945-47a7-a1dd-c53a8fc4c45c |
+| **IWMWriterFileSinkDataUnit**   | IID \_ IWMWriterFileSinkDataUnit   | 633392f0-be5c-486b-a09c-10669c7a6c27 |
+| **IWMWriterNetworkSink**        | IID \_ IWMWriterNetworkSink        | 96406be7-2b2b-11d3-b36b-00c04f6108ff |
+| **IWMWriterPostView**           | IID \_ IWMWriterPostView           | 81e20ce4-75ef-491a-8004-fc53c45bdc3e |
+| **IWMWriterPostViewCallback**   | IID \_ IWMWriterPostViewCallback   | d9d6549d-a193-4f24-b308-03123d9b7f8d |
+| **IWMWriterPreprocess**         | IID \_ IWMWriterPreprocess         | fc54a285-38c4-45b5-aa23-85b9f7cb424b |
+| **IWMWriterPushSink**           | IID \_ IWMWriterPushSink           | DC10E6A5-072C-467D-BF57-6330A9DDE12A |
+| **IWMWriterSink**               | IID \_ IWMWriterSink               | 96406be4-2b2b-11d3-b36b-00c04f6108ff |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[**Valores GUID**](guid-values.md)
+[**Valores de GUID**](guid-values.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

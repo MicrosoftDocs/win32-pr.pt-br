@@ -1,8 +1,8 @@
 ---
-description: Método Delete da classe CIM_DeviceFile – o método Delete exclui o arquivo lógico (ou diretório) especificado no caminho do objeto. Esse método é herdado do \_ LogicalFile CIM.
+description: Método Delete da classe CIM_DeviceFile - O método Delete exclui o arquivo lógico (ou diretório) especificado no caminho do objeto. Esse método é herdado de CIM \_ LogicalFile.
 ms.assetid: 490d0578-a545-423b-9640-ec09f4ef8d96
 ms.tgt_platform: multiple
-title: Método Delete da classe CIM_DeviceFile
+title: Método Delete da classe CIM_DeviceFile dados
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,23 +14,23 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 5e96ba9837252158510c306a622df86c09bbfd96
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1bcc7830de0fe750684181dd8565075841befff9b7413e95e0878c49440045ed
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108089624"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120003776"
 ---
-# <a name="delete-method-of-the-cim_devicefile-class"></a>Método Delete da classe CIM \_ devicefile
+# <a name="delete-method-of-the-cim_devicefile-class"></a>Método Delete da classe \_ DeviceFile CIM
 
-O método **delete** exclui o arquivo lógico (ou diretório) especificado no caminho do objeto. Esse método é herdado [**do \_ LogicalFile CIM**](cim-logicalfile.md).
+O **método Delete** exclui o arquivo lógico (ou diretório) especificado no caminho do objeto. Esse método é herdado de [**CIM \_ LogicalFile.**](cim-logicalfile.md)
 
 > [!IMPORTANT]
-> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> As classes CIM (Distributed Management Task Force) do DMTF (Distributed Management Task Force) modelo CIM são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
-Este tópico usa a sintaxe formato MOF (MOF). Para obter mais informações sobre como usar esse método, consulte [chamando um método](/windows/desktop/WmiSdk/calling-a-method).
+Este tópico usa sintaxe Managed Object Format (MOF). Para obter mais informações sobre como usar esse método, consulte [Chamando um método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -54,14 +54,14 @@ Retorna um valor de 0 (zero) em caso de êxito e qualquer outro número para ind
 **0**
 </dt> <dd>
 
-Sucesso.
+Êxito.
 
 </dd> <dt>
 
 **2**
 </dt> <dd>
 
-Acesso negado.
+Acesso negado
 
 </dd> <dt>
 
@@ -135,7 +135,7 @@ Privilégio não mantido.
 
 </dd> <dt>
 
-**Abril**
+**21**
 </dt> <dd>
 
 Parâmetro inválido.
@@ -144,9 +144,9 @@ Parâmetro inválido.
 
 ## <a name="remarks"></a>Comentários
 
-Este método não está implementado no momento pelo WMI. Para usar esse método, você deve implementá-lo em seu próprio provedor.
+Atualmente, esse método não é implementado pelo WMI. Para usar esse método, você deve implementá-lo em seu próprio provedor.
 
-Esta documentação é derivada das descrições da classe CIM publicadas pela DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, obedecer aos padrões de documentação do Microsoft SDK ou fornecer mais informações.
+Esta documentação é derivada das descrições da classe CIM publicadas pelo DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, estar em conformidade com os padrões de documentação do SDK da Microsoft ou fornecer mais informações.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -156,20 +156,20 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[\_Dispositivo CIM](delete-method-in-class-cim-devicefile.md)
+[CIM \_ DeviceFile](delete-method-in-class-cim-devicefile.md)
 </dt> <dt>
 
-[**\_Dispositivo CIM**](cim-devicefile.md)
+[**CIM \_ DeviceFile**](cim-devicefile.md)
 </dt> </dl>
 
  

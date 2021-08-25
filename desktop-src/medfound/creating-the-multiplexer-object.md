@@ -4,12 +4,12 @@ ms.assetid: a5adc40c-abb4-4012-b6f2-eb871eaed7b9
 title: Criando o objeto Multiplexador
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b28dd7933bdd7c3a8587c96cb490c4e4122ecc04
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aedf314a63e9475342a7a2091e1d8531bc5bb2839f8c53ae71fa760cdd58b32e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164208"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119942936"
 ---
 # <a name="creating-the-multiplexer-object"></a>Criando o objeto Multiplexador
 
@@ -17,7 +17,7 @@ O multiplexador de ASF é um objeto de camada WMContainer que funciona com o [ob
 
 O objeto multiplexador expõe a interface [**IMFASFMultiplexer**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfmultiplexer) . Para criar o multiplexador, chame [**MFCreateASFMultiplexer**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreateasfmultiplexer). Essa função retorna um ponteiro para um objeto vazio. Se o aplicativo estiver gravando um novo arquivo ASF, o aplicativo deverá inicializar o multiplexador com um objeto ContentInfo. Para fazer isso, chame [**IMFASFMultiplexer:: Initialize**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfmultiplexer-initialize). O objeto ContentInfo especificado representa o objeto de cabeçalho ASF do novo arquivo. Para obter informações sobre como criar e inicializar o objeto ContentInfo para um novo arquivo, consulte [inicializando o objeto ContentInfo de um novo arquivo ASF](initializing-the-contentinfo-object-of-a-new-asf-file.md).
 
-O método [**Initialize**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfmultiplexer-initialize) analisa o objeto ContentInfo para coletar informações de configuração de fluxo, como o número de fluxos, o tamanho do pacote, a preversão. Opcionalmente, o multiplexador também pode precisar de parâmetros de Bucket de vazamento e das unidades de extensão de carga. Essas informações são necessárias para gerar pacotes de dados que correspondam aos requisitos definidos no objeto de cabeçalho ASF. O método **Initialize** configura o multiplexador com base no tipo de mídia e nas definições de configuração dos fluxos. Por exemplo, se um fluxo estiver configurado para ter extensões de carga (consulte [criando e configurando fluxos ASF](creating-and-configuring-asf-streams.md)) e, em seguida, o multiplexador será configurado para adicionar esses valores aos pacotes de dados gerados.
+O método [**Initialize**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfmultiplexer-initialize) analisa o objeto ContentInfo para coletar informações de configuração de fluxo, como o número de fluxos, o tamanho do pacote, a preversão. Opcionalmente, o multiplexador também pode precisar de parâmetros de Bucket de vazamento e das unidades de extensão de carga. Essas informações são necessárias para gerar pacotes de dados que correspondam aos requisitos definidos no objeto de cabeçalho ASF. O método **Initialize** configura o multiplexador com base no tipo de mídia e nas definições de configuração dos fluxos. por exemplo, se um fluxo estiver configurado para ter extensões de carga (consulte [criando e configurando o ASF Fluxos](creating-and-configuring-asf-streams.md)) e, em seguida, o multiplexador será configurado para adicionar esses valores aos pacotes de dados gerados.
 
 O método [**Initialize**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfmultiplexer-initialize) também obtém um identificador para o objeto de dados inicial que foi criado durante a criação do objeto ContentInfo para gravação. Durante a geração de pacotes de dados, o multiplexador adiciona pacotes ao objeto de dados e os atualiza adequadamente. Depois que o multiplexador gera todos os pacotes de dados, ele atualiza o objeto ContentInfo fornecido para que determinados valores, como o número de pacotes de dados, sejam atualizados.
 
@@ -80,9 +80,9 @@ HRESULT CreateOutputGenerators(
 
 
 
-Para ver essa função usada em um aplicativo completo, consulte [tutorial: copiando fluxos ASF de um arquivo para outro](tutorial--copying-asf-streams-from-one-file-to-another.md).
+para ver essa função usada em um aplicativo completo, consulte [Tutorial: copiando Fluxos ASF de um arquivo para outro](tutorial--copying-asf-streams-from-one-file-to-another.md).
 
-## <a name="multiplexer-initialization-and-leaky-bucket-settings"></a>Inicialização do Multiplexador e configurações de Bucket de vazamento
+## <a name="multiplexer-initialization-and-leaky-bucket-settings"></a>inicialização do multiplexador e Bucket de vazamento Configurações
 
 O método [**IMFASFMultiplexer:: Initialize**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfmultiplexer-initialize) configura o multiplexador para determinar o fluxo de dados do Bucket de vazamento. Para configurar esses parâmetros, verifique se os valores de propriedade a seguir estão definidos no objeto ContentInfo especificado. Para obter informações sobre como definir essas propriedades, consulte [definindo propriedades no objeto ContentInfo](setting-properties-in-the-contentinfo-object.md).
 

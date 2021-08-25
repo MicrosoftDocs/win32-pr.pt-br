@@ -1,11 +1,11 @@
 ---
-title: Método IVMVirtualMachine AddNetworkAdapter (VPCCOMInterfaces. h)
-description: Adiciona uma interface de rede à máquina virtual.
+title: Método IVMVirtualMachine AddNetworkAdapter (VPCCOMInterfaces.h)
+description: Adiciona um interface de rede à máquina virtual.
 ms.assetid: 1fa39d2c-4a5a-42cb-afa4-520bf19b8cc8
 keywords:
-- AddNetworkAdapter do método virtual PC
-- Método AddNetworkAdapter Virtual PC, interface IVMVirtualMachine
-- IVMVirtualMachine interface virtual PC, método AddNetworkAdapter
+- Computador Virtual do método AddNetworkAdapter
+- Método AddNetworkAdapter Pc Virtual , interface IVMVirtualMachine
+- INTERFACE IVMVirtualMachine pc virtual , método AddNetworkAdapter
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b8d24351e5f5a32aff08e755329ac12baaaaf546
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 799aa859ab8cd2bea4da29154af00c6537bfd180b0719f6d0252b1b0ddea8bd7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105763806"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119866726"
 ---
-# <a name="ivmvirtualmachineaddnetworkadapter-method"></a>Método IVMVirtualMachine:: AddNetworkAdapter
+# <a name="ivmvirtualmachineaddnetworkadapter-method"></a>Método IVMVirtualMachine::AddNetworkAdapter
 
-\[O Windows Virtual PC não está mais disponível para uso a partir do Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows O PC virtual não está mais disponível para uso a partir Windows 8. Em vez disso, use o provedor WMI do [Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
 
-Adiciona uma interface de rede à máquina virtual.
+Adiciona um interface de rede à máquina virtual.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,27 +44,27 @@ HRESULT AddNetworkAdapter(
 
 <dl> <dt>
 
-*adaptador* \[ out, retval\]
+*networkAdapter* \[ out, retval\]
 </dt> <dd>
 
-Um objeto [**IVMNetworkAdapter**](ivmnetworkadapter.md) .
+Um [**objeto IVMNetworkAdapter.**](ivmnetworkadapter.md)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
 
 
-| Código/valor de retorno                                                                                                                                                            | Descrição                                                     |
+| Valor/código de retorno                                                                                                                                                            | Descrição                                                     |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> <dt>0</dt> </dl>                                  | A operação foi bem-sucedida.<br/>                        |
-| <dl> <dt>**E \_**</dt> <dt>0X80004003</dt> de ponteiro </dl>                    | O parâmetro *adaptador* é **nulo**.<br/>          |
-| <dl> <dt>**VM \_ E 0xA0040207 de \_ VM \_ desconhecido**</dt> <dt></dt> </dl>            | A configuração é desconhecida.<br/>                        |
-| <dl> <dt>**VM \_ E \_ pref \_ \_ valor ilegal**</dt> <dt>0xA0040301</dt> </dl>   | Não é possível adicionar mais de quatro (4) adaptadores de rede.<br/> |
-| <dl> <dt>**VM \_ E \_ VM \_ em execução \_ ou \_ salvas**</dt> <dt>0xA004020B</dt> </dl> | A máquina virtual está em um estado em execução ou salvo.<br/>  |
-| <dl> <dt>**DISP \_ E \_**</dt> <dt>0x80020009</dt> de exceção </dl>            | Ocorreu um erro inesperado.<br/>                    |
+| <dl> <dt>**E \_ PONTEIRO**</dt> <dt>0x80004003</dt> </dl>                    | O *parâmetro networkAdapter* é **NULL.**<br/>          |
+| <dl> <dt>**VM \_ E \_ VM \_ UNKNOWN**</dt> <dt>0xA0040207</dt> </dl>            | A configuração é desconhecida.<br/>                        |
+| <dl> <dt>**VM \_ E \_ PREF \_ ILLEGAL VALUE \_ 0XA0040301**</dt> <dt></dt> </dl>   | Não é possível adicionar mais de quatro (4) adaptadores de rede.<br/> |
+| <dl> <dt>**VM \_ VM \_ E EM EXECUÇÃO OU SALVA \_ \_ \_ 0XA004020B**</dt> <dt></dt> </dl> | A máquina virtual está em um estado de execução ou salvo.<br/>  |
+| <dl> <dt>**DISP \_ E \_ EXCEPTION**</dt> <dt>0x80020009</dt> </dl>            | Ocorreu um erro inesperado.<br/>                    |
 
 
 
@@ -72,7 +72,7 @@ Esse método pode retornar um desses valores.
 
 ## <a name="remarks"></a>Comentários
 
-Você só pode adicionar uma nova interface de rede a uma máquina virtual parada. O adaptador de rede recém-criado não está conectado a uma rede virtual.
+Você só pode adicionar um novo interface de rede a uma máquina virtual interrompida. O adaptador de rede recém-criado não está conectado a uma rede virtual.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -80,11 +80,11 @@ Você só pode adicionar uma nova interface de rede a uma máquina virtual parad
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                     |
-| Fim do suporte do cliente<br/>    | Windows 7<br/>                                                                          |
+| Fim do suporte ao cliente<br/>    | Windows 7<br/>                                                                          |
 | Produto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| parâmetro<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
 | IID<br/>                      | IID \_ IVMVirtualMachine é definido como f7092aa1-33ed-4f78-a59f-c00adfc2edd7<br/>          |
 
 

@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4edcdfe7ddefadd993ef9c96e6dcc1416080b413
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9a4c0713a17751afe1d0ab7cb05ea4ed5051ec1ad6529e618f8a049f81040f03
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501236"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120067166"
 ---
 # <a name="apigetbookmark-method"></a>Método API. GetBookmark
 
@@ -76,7 +76,7 @@ public static byte[] GetBookmark(
     
     O cursor do qual recuperar o indicador.
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
 Escreva \[\]  
 O indicador do registro.  

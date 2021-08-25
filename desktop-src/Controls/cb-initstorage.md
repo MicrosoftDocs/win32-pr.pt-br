@@ -3,7 +3,7 @@ title: Mensagem de CB_INITSTORAGE (WinUser. h)
 description: Um aplicativo envia a \_ mensagem CB INITSTORAGE antes de adicionar um grande número de itens à parte da caixa de listagem de uma caixa de combinação. Essa mensagem aloca memória para armazenar itens da caixa de listagem.
 ms.assetid: fb289968-a95b-4ca0-977d-b8651166f357
 keywords:
-- Controles de CB_INITSTORAGE de mensagens do Windows
+- controles de Windows de mensagem de CB_INITSTORAGE
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e78c2ae2592d89ba7a0f6392666dac0404d52e39
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1be1aeccdde2c81c87956a42e72440732ff9eb2732cbd066f51308816c01f64a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085537"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120089086"
 ---
 # <a name="cb_initstorage-message"></a>\_Mensagem de INITSTORAGE CB
 
@@ -43,7 +43,7 @@ A quantidade de memória a ser alocada para cadeias de caracteres de item, em by
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a mensagem for bem-sucedida, o valor de retorno será o número total de itens para os quais a memória foi alocada previamente, ou seja, o número total de itens adicionados por todas as mensagens do **CB \_ INITSTORAGE** bem-sucedidas.
 
@@ -61,9 +61,9 @@ A mensagem **CB \_ INITSTORAGE** ajuda a acelerar a inicialização de caixas de
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

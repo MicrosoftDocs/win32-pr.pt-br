@@ -1,23 +1,23 @@
 ---
-description: Esta seção da documentação sobre a infraestrutura de pares descreve as APIs de agrupamento de pares.
+description: Esta seção da documentação infraestrutura de pares descreve as APIs de grupo de pares.
 ms.assetid: cad66729-1e4c-4f96-98ef-51f544ad1c2e
-title: API de agrupamento
+title: Grouping API
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5942040bd142514b7c9c59592d5b634b3a04fb48
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 691901c25dbddabca4ede70a4d212adbe200f474976529a794f581b03e7ddc11
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828408"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119776116"
 ---
-# <a name="grouping-api"></a>API de agrupamento
+# <a name="grouping-api"></a>Grouping API
 
-Esta seção da documentação sobre a infraestrutura de pares descreve as APIs de agrupamento de pares. A documentação é dividida em três seções:
+Esta seção da documentação infraestrutura de pares descreve as APIs de grupo de pares. A documentação é dividida em três seções:
 
--   [Sobre a API de agrupamento](about-the-grouping-api.md)
--   [Usando a API de agrupamento](using-the-grouping-api.md)
--   [Referência de API de agrupamento](the-grouping-api-reference.md)
+-   [Sobre a API de Agrupação](about-the-grouping-api.md)
+-   [Usando a API de Agrupação](using-the-grouping-api.md)
+-   [Referência da API de Agrupação](the-grouping-api-reference.md)
 
  
 

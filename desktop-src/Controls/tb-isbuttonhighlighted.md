@@ -1,9 +1,9 @@
 ---
-title: Mensagem de TB_ISBUTTONHIGHLIGHTED (commctrl. h)
-description: Verifica o estado de realce de um botão da barra de ferramentas.
+title: TB_ISBUTTONHIGHLIGHTED mensagem (Commctrl.h)
+description: Verifica o estado de realça de um botão de barra de ferramentas.
 ms.assetid: d5aab670-a989-46f2-b4f8-d8a8968cbe07
 keywords:
-- Controles de TB_ISBUTTONHIGHLIGHTED de mensagens do Windows
+- TB_ISBUTTONHIGHLIGHTED controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f53e25058fee8fa5dcac218a641277ac46aed4e7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 903932fddb7bf356a89adda0513a045d099a22c459add6401818eec54a3f0657
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009124"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119918366"
 ---
-# <a name="tb_isbuttonhighlighted-message"></a>TB de \_ mensagem ISBUTTONHIGHLIGHTED
+# <a name="tb_isbuttonhighlighted-message"></a>Mensagem \_ ISBUTTONHIGHLIGHTED de TB
 
-Verifica o estado de realce de um botão da barra de ferramentas.
+Verifica o estado de realça de um botão de barra de ferramentas.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -32,16 +32,16 @@ Verifica o estado de realce de um botão da barra de ferramentas.
 *wParam* 
 </dt> <dd>
 
-Identificador de comando para um botão da barra de ferramentas.
+Identificador de comando para um botão de barra de ferramentas.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retornará um valor diferente de zero se o botão for realçado ou nenhum outro.
+Retornará diferente de zero se o botão estiver realçado ou zero, caso contrário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,9 +49,9 @@ Retornará um valor diferente de zero se o botão for realçado ou nenhum outro.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

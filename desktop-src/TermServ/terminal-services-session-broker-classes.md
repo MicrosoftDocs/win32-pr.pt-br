@@ -1,89 +1,89 @@
 ---
-title: Classes do agente de Conexão de Área de Trabalho Remota
-description: O provedor WMI do agente de Conexão de Área de Trabalho Remota (agente de conexão RD) fornece as seguintes classes.
+title: Conexão de Área de Trabalho Remota broker
+description: O provedor WMI Conexão de Área de Trabalho Remota Broker (Agente de Conexão de RD) fornece as classes a seguir.
 ms.assetid: cabec269-b8e5-406e-a608-5f3313c4e874
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a573898a21727c53f4586d483b58492573485f4
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1cae14a57e8b8fedec45b261e142bfdbdbd1691f8df424b9076160f31baa287a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005825"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119869986"
 ---
-# <a name="remote-desktop-connection-broker-classes"></a>Classes do agente de Conexão de Área de Trabalho Remota
+# <a name="remote-desktop-connection-broker-classes"></a>Conexão de Área de Trabalho Remota broker
 
-O provedor WMI do agente de Conexão de Área de Trabalho Remota (agente de conexão RD) fornece as seguintes classes.
+O provedor WMI Conexão de Área de Trabalho Remota Broker (Agente de Conexão de RD) fornece as classes a seguir.
 
 ## <a name="in-this-section"></a>Nesta seção
 
 <dl> <dt>
 
-[**\_SessionBrokerFarm Win32**](win32-sessionbrokerfarm.md)
+[**Win32 \_ SessionBrokerFarm**](win32-sessionbrokerfarm.md)
 </dt> <dd>
 
-Define a consulta para um farm de agente de sessão.
+Define a consulta para um farm do agente de sessão.
 
 </dd> <dt>
 
-[**\_SessionBrokerFarmAccount Win32**](win32-sessionbrokerfarmaccount.md)
+[**Win32 \_ SessionBrokerFarmAccount**](win32-sessionbrokerfarmaccount.md)
 </dt> <dd>
 
-A classe [**Win32 \_ SessionBrokerFarmAccount**](win32-sessionbrokerfarmaccount.md) não está mais disponível para uso a partir do Windows Server 2012.
+A [**classe \_ SessionBrokerFarmAccount do Win32**](win32-sessionbrokerfarmaccount.md) não está mais disponível para uso desde Windows Server 2012.
 
 </dd> <dt>
 
-[**\_SessionBrokerServiceProperties Win32**](win32-sessionbrokerserviceproperties.md)
+[**Win32 \_ SessionBrokerServiceProperties**](win32-sessionbrokerserviceproperties.md)
 </dt> <dd>
 
-Define a consulta para um serviço de agente de sessão.
+Define a consulta para um serviço do agente de sessão.
 
 </dd> <dt>
 
-[**\_SessionBrokerTarget Win32**](win32-sessionbrokertarget.md)
+[**Win32 \_ SessionBrokerTarget**](win32-sessionbrokertarget.md)
 </dt> <dd>
 
-Define a consulta para um destino de agente de sessão.
+Define a consulta para um destino do agente de sessão.
 
 </dd> <dt>
 
-[**\_SessionBrokerTargetEvent Win32**](win32-sessionbrokertargetevent.md)
+[**Win32 \_ SessionBrokerTargetEvent**](win32-sessionbrokertargetevent.md)
 </dt> <dd>
 
-Representa uma alteração em um destino de agente de sessão.
+Representa uma alteração em um destino do agente de sessão.
 
 </dd> <dt>
 
-[**\_SessionDirectoryCluster Win32**](win32-sessiondirectorycluster.md)
+[**Win32 \_ SessionDirectoryCluster**](win32-sessiondirectorycluster.md)
 </dt> <dd>
 
-Fornece propriedades para exibir as propriedades de um farm no agente de conexão de área de trabalho remota.
+Fornece propriedades para exibir as propriedades de um farm no Agente de Conexão de Área de Trabalho Remota.
 
 </dd> <dt>
 
-[**\_SessionDirectoryServer Win32**](win32-sessiondirectoryserver.md)
+[**Win32 \_ SessionDirectoryServer**](win32-sessiondirectoryserver.md)
 </dt> <dd>
 
-Fornece propriedades para exibir as propriedades de um servidor do agente de conexão RD.
+Fornece propriedades para exibir as propriedades de um servidor do Agente de Conexão de Área de Trabalho Remota.
 
 </dd> <dt>
 
-[**\_SessionDirectorySession Win32**](win32-sessiondirectorysession.md)
+[**SessionDirectorySession do Win32 \_**](win32-sessiondirectorysession.md)
 </dt> <dd>
 
-Fornece propriedades para exibir as propriedades de uma sessão do agente de conexão de área de trabalho remota.
+Fornece propriedades para exibir as propriedades de uma sessão do Agente de Conexão de Área de Trabalho Remota.
 
 </dd> <dt>
 
-[**\_SessionDirectoryVirtualDesktopServer Win32**](win32-sessiondirectoryvirtualdesktopserver.md)
+[**Win32 \_ SessionDirectoryVirtualDesktopServer**](win32-sessiondirectoryvirtualdesktopserver.md)
 </dt> <dd>
 
-Representa um servidor de Host de Virtualização de Área de Trabalho Remota (host de Virtualização RD) que ingressou em um agente de sessão.
+Representa um Área de Trabalho Remota host de virtualização (Host de Virtualização de RD) ingressado em um agente de sessão.
 
 </dd> <dt>
 
-[**\_SessionDirectoryVMMPlugin Win32**](win32-sessiondirectoryvmmplugin.md)
+[**\_SessionDirectoryVMMPlugin do Win32**](win32-sessiondirectoryvmmplugin.md)
 </dt> <dd>
 
 Representa um plug-in do VMM (Virtual Machine Manager) registrado com um agente de sessão.
@@ -91,13 +91,13 @@ Representa um plug-in do VMM (Virtual Machine Manager) registrado com um agente 
 </dd> </dl>
 
 > [!Note]  
-> No Windows Server 2008 R2, o nome do agente de sessão dos serviços de terminal (agente de Sessão TS) foi alterado para o agente de conexão RD.
+> No Windows Server 2008 R2, o nome do Agente de Sessão dos Serviços de Terminal (Agente de Sessão TS) foi alterado para Agente de Conexão de Área de Trabalho Remoto.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

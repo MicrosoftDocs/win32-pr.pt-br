@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - ComAdmin.Idl
-ms.openlocfilehash: 985a6b947708542ec3ce1dc6ecc835c94259b315
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 3656e65b89ae02b0cfe8ea3b1dbe9784d679c5eb40e11edbfe2951e08893e1aa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646440"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120029476"
 ---
 # <a name="comadmincatalogcollection-class"></a>Classe COMAdminCatalogCollection
 
@@ -65,7 +65,7 @@ Você não pode criar diretamente um objeto **COMAdminCatalogCollection** . Para
 
 
 
-Para usar essa classe do Microsoft Visual Basic, adicione uma referência à biblioteca de tipos de administrador do COM+. Um objeto COMAdminCatalogCollection pode ser criado chamando [**GetCollection**](/windows/desktop/api/ComAdmin/nf-comadmin-icomadmincatalog-getcollection) em um objeto [**COMAdminCatalog**](comadmincatalog.md) . Isso é mostrado no exemplo a seguir, em que "TopCollection" deve ser substituído pelo nome de uma das coleções de administração COM+ de nível superior.
+para usar essa classe do Microsoft Visual Basic, adicione uma referência à biblioteca de tipos de administrador do COM+. Um objeto COMAdminCatalogCollection pode ser criado chamando [**GetCollection**](/windows/desktop/api/ComAdmin/nf-comadmin-icomadmincatalog-getcollection) em um objeto [**COMAdminCatalog**](comadmincatalog.md) . Isso é mostrado no exemplo a seguir, em que "TopCollection" deve ser substituído pelo nome de uma das coleções de administração COM+ de nível superior.
 
 
 ```VB

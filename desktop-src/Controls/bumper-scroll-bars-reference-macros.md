@@ -15,12 +15,12 @@ ms.locfileid: "119970216"
 
 ## <a name="in-this-section"></a>Nesta seção
 
--   [**Habilitar ScrollBar \_**](/windows/desktop/api/Windowsx/nf-windowsx-scrollbar_enable)
--   [**ScrollBar \_ GetPos**](/windows/desktop/api/Windowsx/nf-windowsx-scrollbar_getpos)
+-   [**Habilitar barra de rolagem \_**](/windows/desktop/api/Windowsx/nf-windowsx-scrollbar_enable)
+-   [**GetPos da barra de rolagem \_**](/windows/desktop/api/Windowsx/nf-windowsx-scrollbar_getpos)
 -   [**ScrollBar \_ GetRange**](/windows/desktop/api/Windowsx/nf-windowsx-scrollbar_getrange)
--   [**ScrollBar \_ SetPos**](/windows/desktop/api/Windowsx/nf-windowsx-scrollbar_setpos)
+-   [**SetPos da barra de rolagem \_**](/windows/desktop/api/Windowsx/nf-windowsx-scrollbar_setpos)
 -   [**ScrollBar \_ SetRange**](/windows/desktop/api/Windowsx/nf-windowsx-scrollbar_setrange)
--   [**ScrollBar \_ Show**](/windows/desktop/api/Windowsx/nf-windowsx-scrollbar_show)
+-   [**Mostrar barra de rolagem \_**](/windows/desktop/api/Windowsx/nf-windowsx-scrollbar_show)
 
  
 

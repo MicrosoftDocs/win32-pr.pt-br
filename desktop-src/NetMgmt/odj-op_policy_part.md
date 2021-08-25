@@ -1,20 +1,20 @@
 ---
 title: OP_POLICY_PART
-description: Definição de IDL de OP_POLICY_PART
+description: OP_POLICY_PART IDL Definition
 ms.assetid: 3988b298-b21d-4476-bfa5-ac606bcbd6c8
 ms.topic: reference
 ms.date: 10/12/2020
 ms.reviewer: jsimmons
-ms.openlocfilehash: ef0e3b96ce564ed7ff8e2ce0886e33ca474a1cf8
-ms.sourcegitcommit: 1e64562147b11f90de802c2431173582d066fae6
+ms.openlocfilehash: 8ad479c2e24d8c38e87a2100658be2afcf37d70d321e99433e3b05a3af35fa60
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "104366869"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119911476"
 ---
-# <a name="op_policy_part-structure"></a>Estrutura de OP_POLICY_PART
+# <a name="op_policy_part-structure"></a>OP_POLICY_PART estrutura
 
-Contém uma matriz de estruturas de OP_POLICY_ELEMENT_LIST.
+Contém uma matriz de OP_POLICY_ELEMENT_LIST estruturas.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -36,7 +36,7 @@ Contém o número de elementos em pElementLists.
 
 ### <a name="pelementlists"></a>pElementLists
 
-Contém uma matriz de estruturas de OP_POLICY_ELEMENT_LIST.
+Contém uma matriz de OP_POLICY_ELEMENT_LIST estruturas.
 
 ### <a name="extension"></a>Extensão
 
@@ -44,6 +44,6 @@ Reservado para uso futuro e deve conter todos os zeros.
 
 ## <a name="see-also"></a>Confira também
 
-[**Definições de IDL de ingresso no domínio offline**](odj-idl.md)
+[**Definições de IDL de Junção de Domínio Offline**](odj-idl.md)
 
-[**\_lista de \_ elementos de política op \_**](odj-op_policy_element_list.md)
+[**LISTA DE \_ ELEMENTOS \_ DE POLÍTICA \_ OP**](odj-op_policy_element_list.md)

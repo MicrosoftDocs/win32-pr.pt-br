@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 11324cc6aeb1b7480481c5e2f1ae13aab550f1f1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d79fd070a28649773c658f4566aa2c465086d49a61cb4497daaf7a0c74fcb130
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921307"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119947626"
 ---
 # <a name="esentdatabasestreamingfilemismatchexception-constructor"></a>Construtor EsentDatabaseStreamingFileMismatchException
 
 Inicializa uma nova instância da classe EsentDatabaseStreamingFileMismatchException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentDatabaseStreamingFileMismatchException()
 
 [Classe EsentDatabaseStreamingFileMismatchException](./esentdatabasestreamingfilemismatchexception-class.md)
 
-[Membros do EsentDatabaseStreamingFileMismatchException](./esentdatabasestreamingfilemismatchexception-members.md)
+[Membros EsentDatabaseStreamingFileMismatchException](./esentdatabasestreamingfilemismatchexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

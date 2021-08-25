@@ -1,9 +1,9 @@
 ---
-title: Mensagem de EM_EXLINEFROMCHAR (RichEdit. h)
+title: EM_EXLINEFROMCHAR mensagem (Richedit.h)
 description: Determina qual linha contém o caractere especificado em um controle de edição rico.
 ms.assetid: 497482fb-9640-4063-a9f5-e0691b65225d
 keywords:
-- controles de Windows de mensagem de EM_EXLINEFROMCHAR
+- EM_EXLINEFROMCHAR controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119915636"
 ---
-# <a name="em_exlinefromchar-message"></a>\_Mensagem em EXLINEFROMCHAR
+# <a name="em_exlinefromchar-message"></a>Mensagem EM \_ EXLINEFROMCHAR
 
 Determina qual linha contém o caractere especificado em um controle de edição rico.
 
@@ -32,20 +32,20 @@ Determina qual linha contém o caractere especificado em um controle de edição
 *wParam* 
 </dt> <dd>
 
-Esse parâmetro não é usado; Ele deve ser zero.
+Esse parâmetro não é usado; ele deve ser zero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Índice de base zero do caractere.
+Índice baseado em zero do caractere.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Essa mensagem retorna o índice de base zero da linha.
+Essa mensagem retorna o índice baseado em zero da linha.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ Essa mensagem retorna o índice de base zero da linha.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
-| Cabeçalho<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 

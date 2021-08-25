@@ -3,7 +3,7 @@ title: Mensagem de TB_GETINSERTMARKCOLOR (commctrl. h)
 description: Recupera a cor usada para desenhar a marca de inserção para a barra de ferramentas.
 ms.assetid: 52915dc6-a45c-4f3b-aa9b-99a23d423e59
 keywords:
-- Controles de TB_GETINSERTMARKCOLOR de mensagens do Windows
+- controles de Windows de mensagem de TB_GETINSERTMARKCOLOR
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 104ceebd5f3989ed870cf70ccad819300d85c05d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bd87c27252f9838001d10320b3b9783ef598eea654d384deaa383ad5c5f6cddf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824426"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119918716"
 ---
 # <a name="tb_getinsertmarkcolor-message"></a>TB de \_ mensagem GETINSERTMARKCOLOR
 
@@ -35,7 +35,7 @@ Recupera a cor usada para desenhar a marca de inserção para a barra de ferrame
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor [**COLORREF**](/windows/desktop/gdi/colorref) que contém a cor da marca de inserção atual.
 
@@ -45,9 +45,9 @@ Retorna um valor [**COLORREF**](/windows/desktop/gdi/colorref) que contém a cor
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

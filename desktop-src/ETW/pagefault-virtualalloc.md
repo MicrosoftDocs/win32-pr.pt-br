@@ -1,7 +1,7 @@
 ---
 description: Essa classe é a classe de tipo de evento para eventos de alocação virtual. A sintaxe a seguir é simplificada do código MOF.
 ms.assetid: 037d33e0-da94-4834-bc02-814c1cae1d8d
-title: Classe PageFault_VirtualAlloc
+title: PageFault_VirtualAlloc classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: f9e754bc3dc09f492682d5a522a6489cfde27ceb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fa3dd8eb53e9c1a79cf38edde0d9c4dba93ea85b0994bfb316b97064f211f26e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296449"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119927566"
 ---
-# <a name="pagefault_virtualalloc-class"></a>\_Classe falhadepágina VirtualAlloc
+# <a name="pagefault_virtualalloc-class"></a>Classe PageFault \_ VirtualAlloc
 
 Essa classe é a classe de tipo de evento para eventos de alocação virtual.
 
@@ -44,26 +44,26 @@ class PageFault_VirtualAlloc : PageFault_V2
 
 ## <a name="members"></a>Membros
 
-A classe **falhadepágina \_ VirtualAlloc** tem estes tipos de membros:
+A **classe PageFault \_ VirtualAlloc** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **falhadepágina \_ VirtualAlloc** tem essas propriedades.
+A **classe PageFault \_ VirtualAlloc** tem essas propriedades.
 
 <dl> <dt>
 
-**BaseAddress**
+**Baseaddress**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (1), ponteiro
+Qualificadores: WmiDataId(1), Pointer
 </dt> </dl>
 
 O endereço inicial no qual a memória foi alocada ou liberada.
@@ -73,36 +73,36 @@ O endereço inicial no qual a memória foi alocada ou liberada.
 **Sinalizadores**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (4), formato ("x")
+Qualificadores: WmiDataId(4), Format("x")
 </dt> </dl>
 
-O tipo de alocação de memória que foi executado. Para obter os valores possíveis, consulte o parâmetro *flAllocationType* da função [**VirtualAllocEx**](/windows/win32/api/memoryapi/nf-memoryapi-virtualallocex) .
+O tipo de alocação de memória que foi executada. Para valores possíveis, consulte *o parâmetro flAllocationType* da [**função VirtualAllocEx.**](/windows/win32/api/memoryapi/nf-memoryapi-virtualallocex)
 
 </dd> <dt>
 
-**ProcessId**
+**Processid**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (3)
+Qualificadores: WmiDataId(3)
 </dt> </dl>
 
 O processo que possui a memória (pode ser diferente do thread que realizou a alocação).
 
 </dd> <dt>
 
-**Regiõesize**
+**RegionSize**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **objeto**
@@ -111,7 +111,7 @@ Tipo de dados: **objeto**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (2), extensão ("Tamanhot")
+Qualificadores: WmiDataId(2), Extension("SizeT")
 </dt> </dl>
 
 O tamanho, em bytes, da memória que foi alocada ou liberada.
@@ -124,8 +124,8 @@ O tamanho, em bytes, da memória que foi alocada ou liberada.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>              |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/> |
 
 
 
@@ -133,7 +133,7 @@ O tamanho, em bytes, da memória que foi alocada ou liberada.
 
 <dl> <dt>
 
-[**Falhadepágina \_ v2**](pagefault-v2.md)
+[**PageFault \_ V2**](pagefault-v2.md)
 </dt> </dl>
 
  

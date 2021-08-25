@@ -4,12 +4,12 @@ ms.assetid: 416d1a2d-a9cf-45a6-bcf5-523d055b4240
 title: System. SensitivityText
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 90ab87c6894c9470cc2fa0849c08025b37a88450
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f3f25e5514388742813bb477f5170580853635161721164fe3eda103430e3682
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011385"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119885496"
 ---
 # <a name="systemsensitivitytext"></a>System. SensitivityText
 

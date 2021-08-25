@@ -1,9 +1,9 @@
 ---
-title: Mensagem de CB_GETHORIZONTALEXTENT (WinUser. h)
+title: CB_GETHORIZONTALEXTENT mensagem (Winuser.h)
 description: Obtém a largura, em pixels, que a caixa de listagem pode ser rolada horizontalmente (a largura rolável). Isso será aplicável somente se a caixa de listagem tiver uma barra de rolagem horizontal.
 ms.assetid: 7c9fff88-2750-4c94-b7f6-6bdd81c224e9
 keywords:
-- Controles de CB_GETHORIZONTALEXTENT de mensagens do Windows
+- CB_GETHORIZONTALEXTENT controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a2b1fb7c8fe7549360801516364528c9a2ef1f1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 928561b812dd3a09909d8d89c7dda1dc67b63f9177769d80db2d16ac78cbbf72
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009363"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120089206"
 ---
-# <a name="cb_gethorizontalextent-message"></a>\_Mensagem de GETHORIZONTALEXTENT CB
+# <a name="cb_gethorizontalextent-message"></a>Mensagem \_ CB GETHORIZONTALEXTENT
 
 Obtém a largura, em pixels, que a caixa de listagem pode ser rolada horizontalmente (a largura rolável). Isso será aplicável somente se a caixa de listagem tiver uma barra de rolagem horizontal.
 
@@ -43,7 +43,7 @@ Não usado; deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno é a largura rolável, em pixels.
 
@@ -53,9 +53,9 @@ O valor de retorno é a largura rolável, em pixels.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ O valor de retorno é a largura rolável, em pixels.
 
 <dl> <dt>
 
-[**\_SETHORIZONTALEXTENT CB**](cb-sethorizontalextent.md)
+[**CB \_ SETHORIZONTALEXTENT**](cb-sethorizontalextent.md)
 </dt> </dl>
 
  

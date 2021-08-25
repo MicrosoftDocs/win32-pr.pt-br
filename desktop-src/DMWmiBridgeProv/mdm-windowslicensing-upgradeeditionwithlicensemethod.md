@@ -1,6 +1,6 @@
 ---
 title: Método UpgradeEditionWithLicenseMethod da classe MDM_WindowsLicensing
-description: Método para fornecer uma licença para uma atualização de edição de dispositivos Windows 10 Mobile. Consulte também UpgradeEditionWithLicense.
+description: método para fornecer uma licença para uma atualização de edição de dispositivos móveis Windows 10. Consulte também UpgradeEditionWithLicense.
 ms.assetid: 1a57fb71-eea6-41bf-bc44-6d3a816096a4
 keywords:
 - Método UpgradeEditionWithLicenseMethod
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b336ee4128aa520ecd463c3607254526c7c3dc7d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 26329c98bc73919d374787deea21841a2912a9df3fded8fdcde0637d8798c92f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918836"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119913256"
 ---
 # <a name="upgradeeditionwithlicensemethod-method-of-the-mdm_windowslicensing-class"></a>Método UpgradeEditionWithLicenseMethod da classe MDM \_ WindowsLicensing
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-Método para fornecer uma licença para uma atualização de edição de dispositivos Windows 10 Mobile. Consulte também [UpgradeEditionWithLicense](/windows/client-management/mdm/windowslicensing-csp).
+método para fornecer uma licença para uma atualização de edição de dispositivos móveis Windows 10. Consulte também [UpgradeEditionWithLicense](/windows/client-management/mdm/windowslicensing-csp).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -53,7 +53,7 @@ uint32 UpgradeEditionWithLicenseMethod(
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                      |
 | Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                             |
 | MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |

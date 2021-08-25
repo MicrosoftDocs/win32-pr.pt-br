@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: métodos EsentIndexTuplesInvalidLimitsException'
+description: 'Saiba mais sobre: Métodos EsentIndexTuplesInvalidLimitsException'
 title: 'Métodos EsentIndexTuplesInvalidLimitsException '
 TOCTitle: EsentIndexTuplesInvalidLimitsException methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.EsentIndexTuplesInvalidLimitsException
@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101781
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 4121ce073b951845e0d623fccf48ca9027f2904b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eeefdc5efb97941325412bb8fa9b00b62cfbbef69302b281a61b165fd5633855
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104565672"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119837984"
 ---
 # <a name="esentindextuplesinvalidlimitsexception-methods"></a>Métodos EsentIndexTuplesInvalidLimitsException 
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo [EsentIndexTuplesInvalidLimitsException](./esentindextuplesinvalidlimitsexception-class.md) expõe os membros a seguir.
+O [tipo EsentIndexTuplesInvalidLimitsException](./esentindextuplesinvalidlimitsexception-class.md) expõe os membros a seguir.
 
 ## <a name="methods"></a>Métodos
 
@@ -44,7 +44,7 @@ O tipo [EsentIndexTuplesInvalidLimitsException](./esentindextuplesinvalidlimitse
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">GetBaseException</a></td>
+<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">Getbaseexception</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
@@ -59,12 +59,12 @@ O tipo [EsentIndexTuplesInvalidLimitsException](./esentindextuplesinvalidlimitse
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">Gettype</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></td>
+<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Memberwiseclone</a></td>
 <td>(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</td>
 </tr>
 <tr class="even">
@@ -84,4 +84,4 @@ Parte superior
 
 [Classe EsentIndexTuplesInvalidLimitsException](./esentindextuplesinvalidlimitsexception-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,6 +1,6 @@
 ---
 title: Classe MDM_PassportForWork_PINComplexity03
-description: A \_ classe MDM PassportForWork \_ PINComplexity03 define a complexidade do PIN para as credenciais de logon do Windows Hello para empresas.
+description: a \_ classe MDM PassportForWork \_ PINComplexity03 define a complexidade do PIN para as credenciais de logon do Windows Hello for Business.
 ms.assetid: 83dcf859-03da-4508-b809-bafd24dc8bd4
 keywords:
 - Classe MDM_PassportForWork_PINComplexity03
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a9d01cd152935a1daa0a9b0721ea27129e21934
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 360e7bf11de79b1f81135e4fa92572bde84050176e726e37c00374fed53791a0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918256"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120084916"
 ---
 # <a name="mdm_passportforwork_pincomplexity03-class"></a>\_ \_ Classe PINCOMPLEXITY03 do MDM PassportForWork
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-A classe **MDM \_ PassportForWork \_ PINComplexity03** define a complexidade do PIN para as credenciais de logon do Windows Hello para empresas.
+a classe **MDM \_ PassportForWork \_ PINComplexity03** define a complexidade do PIN para as credenciais de logon do Windows Hello for Business.
 
 A sintaxe a seguir é simplificada do código MOF e inclui todas as propriedades herdadas.
 
@@ -189,7 +189,7 @@ Tipo de acesso: leitura/gravação
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                      |
 | Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                             |
 | MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |

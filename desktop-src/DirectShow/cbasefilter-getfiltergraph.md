@@ -1,7 +1,7 @@
 ---
-description: O método GetFilterGraph recupera um ponteiro para o Gerenciador do grafo de filtro.
+description: O método GetFilterGraph recupera um ponteiro para o gerenciador de grafo de filtro.
 ms.assetid: 80b41272-2ca1-40db-8624-0d99d66f3c34
-title: Método CBaseFilter. GetFilterGraph (Amfilter. h)
+title: Método CBaseFilter.GetFilterGraph (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c0843c7789afc1500565d2737d863cbc8af114d4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6f35b40febff058d5bbd9f48c5ac6d10168d48d6e587b51ab2730704724e48c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752519"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120056646"
 ---
-# <a name="cbasefiltergetfiltergraph-method"></a>Método CBaseFilter. GetFilterGraph
+# <a name="cbasefiltergetfiltergraph-method"></a>Método CBaseFilter.GetFilterGraph
 
-O `GetFilterGraph` método recupera um ponteiro para o Gerenciador de gráfico de filtro.
+O `GetFilterGraph` método recupera um ponteiro para o gerenciador de grafo de filtro.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,9 +40,9 @@ IFilterGraph* GetFilterGraph();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna o valor de [**CBaseFilter:: m \_ pGraph**](cbasefilter-m-pgraph.md).
+Retorna o valor de [**CBaseFilter::m \_ pGraph.**](cbasefilter-m-pgraph.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Retorna o valor de [**CBaseFilter:: m \_ pGraph**](cbasefilter-m-pgraph.md).
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amfilter.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

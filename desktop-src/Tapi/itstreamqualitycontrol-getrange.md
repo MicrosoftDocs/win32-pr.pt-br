@@ -1,21 +1,21 @@
 ---
-description: O método GetRange Obtém o intervalo de valores válidos para uma determinada propriedade de qualidade de fluxo.
+description: O método GetRange obtém o intervalo de valores válidos para uma determinada propriedade de qualidade de fluxo.
 ms.assetid: 8c5e4652-1a40-4d7d-aa89-606e979dc03d
-title: 'Método ITStreamQualityControl:: GetRange (Ipmsp. h)'
+title: Método ITStreamQualityControl::GetRange (Ipmsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bea8b20c2617eb0fe54ccc4603997464fca25f48
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e13d07b848ef3be744f40ec1ba4bb4a73514f88204fa1918db661e00d36019ba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105792621"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119774466"
 ---
-# <a name="itstreamqualitycontrolgetrange-method"></a>Método ITStreamQualityControl:: GetRange
+# <a name="itstreamqualitycontrolgetrange-method"></a>Método ITStreamQualityControl::GetRange
 
-\[ Esse método não está disponível para uso no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
+\[Esse método não está disponível para uso no Windows Vista, Windows Server 2008 e versões subsequentes do sistema operacional. A API do Cliente RTC fornece funcionalidade semelhante.\]
 
-O método **GetRange** Obtém o intervalo de valores válidos para uma determinada [**propriedade de qualidade de fluxo**](streamqualityproperty.md).
+O **método GetRange** obtém o intervalo de valores válidos para uma determinada propriedade [**de qualidade de fluxo**](streamqualityproperty.md).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -37,49 +37,49 @@ HRESULT GetRange(
 
 <dl> <dt>
 
-*Propriedade* \[ no\]
+*Propriedade* \[ Em\]
 </dt> <dd>
 
-Membro da enumeração [**StreamQualityProperty**](streamqualityproperty.md) .
+Membro da [**enum StreamQualityProperty.**](streamqualityproperty.md)
 
 </dd> <dt>
 
-*plMin* \[ fora\]
+*plMin* \[ out\]
 </dt> <dd>
 
 Valor mínimo válido para a propriedade de entrada.
 
 </dd> <dt>
 
-*plMax* \[ fora\]
+*plMax* \[ out\]
 </dt> <dd>
 
 Valor máximo válido para a propriedade de entrada.
 
 </dd> <dt>
 
-*plSteppingDelta* \[ fora\]
+*plSteppingDelta* \[ out\]
 </dt> <dd>
 
-Incremento pelo qual o valor da propriedade pode ser aumentado ou diminuído.
+Incremente pelo qual o valor da propriedade pode ser aumentado ou reduzido.
 
 </dd> <dt>
 
-*plDefault* \[ fora\]
+*plDefault* \[ out\]
 </dt> <dd>
 
-Valor padrão para o parâmetro *Property* .
+Valor padrão para o *parâmetro* Property.
 
 </dd> <dt>
 
-*plFlags* \[ fora\]
+*plFlags* \[ out\]
 </dt> <dd>
 
-Valor da enumeração [**TAPIControlFlags**](tapicontrolflags.md) indicando como o valor da *Propriedade* é controlado.
+Valor da [**enum TAPIControlFlags**](tapicontrolflags.md) que indica como o *valor property* é controlado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
@@ -100,9 +100,9 @@ Esse método pode retornar um desses valores.
 
 | Requisito | Valor |
 |-------------------------|--------------------------------------------------------------------------------------|
-| Versão da TAPI<br/> | Requer TAPI 3,1<br/>                                                         |
-| parâmetro<br/>       | <dl> <dt>Ipmsp. h</dt> </dl>   |
-| Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>  |
+| Versão do TAPI<br/> | Requer TAPI 3.1<br/>                                                         |
+| Cabeçalho<br/>       | <dl> <dt>Ipmsp.h</dt> </dl>   |
+| Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>  |
 | DLL<br/>          | <dl> <dt>Tapi3.dll</dt> </dl> |
 
 

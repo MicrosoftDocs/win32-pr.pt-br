@@ -1,7 +1,7 @@
 ---
-description: O método CopyPalette copia a paleta de qualquer estrutura VIDEOINFO para qualquer estrutura palettized VIDEOINFO.
+description: O método CopyPalette copia a paleta de qualquer estrutura VIDEOINFO para qualquer estrutura VIDEOINFO palettizada.
 ms.assetid: ea06b40b-3f96-4c11-921c-52f3a44e0a30
-title: Método CImagePalette. CopyPalette (Winutil. h)
+title: Método CImagePalette.CopyPalette (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b429c5fd4d3d0e0e28cd0662fbee0a1ac926ddc5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5c6f645d134ccf5fa786ff59cf0bc6cd37211af0cb2571bbc9955e5bb6367a97
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105754157"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120055446"
 ---
-# <a name="cimagepalettecopypalette-method"></a>Método CImagePalette. CopyPalette
+# <a name="cimagepalettecopypalette-method"></a>Método CImagePalette.CopyPalette
 
-O `CopyPalette` método copia a paleta de qualquer estrutura [**VIDEOINFO**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfo) para qualquer estrutura **VIDEOINFO** palettized.
+O `CopyPalette` método copia a paleta de qualquer estrutura [**VIDEOINFO**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfo) para qualquer estrutura **VIDEOINFO palettizada.**
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,7 +43,7 @@ HRESULT CopyPalette(
 
 <dl> <dt>
 
-*pSrc* 
+*Psrc* 
 </dt> <dd>
 
 Ponteiro para o tipo de mídia de origem.
@@ -57,13 +57,13 @@ Ponteiro para o tipo de mídia de destino.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retornará S \_ OK se a paleta tiver sido copiada. Retornará S \_ false se o tipo de mídia de origem ou de destino não tiver uma paleta.
+Retornará S \_ OK se a paleta tiver sido copiada. Retornará S FALSE se o tipo de mídia de origem ou \_ de destino não tiver uma paleta.
 
 ## <a name="remarks"></a>Comentários
 
-O tipo de mídia *pDest* deve ser um formato palettized com uma intensidade de cor de 8 bits ou menos. O tipo de mídia *pSrc* pode ser qualquer tipo de [**VIDEOINFOHEADER**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) com uma paleta, incluindo formatos YUV e true-color com entradas de paleta. O método copia as entradas da paleta de *pSrc* em uma nova paleta e anexa a nova paleta a *pDest*.
+O *tipo de mídia pDest* deve ser um formato palettizado com uma profundidade de cor de 8 bits ou menos. O *tipo de mídia pSrc* pode ser qualquer tipo [**VIDEOINFOHEADER**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) com uma paleta, incluindo formatos YUV e de cor verdadeira com entradas de paleta. O método copia as entradas da paleta do *pSrc* em uma nova paleta e anexa a nova paleta ao *pDest*.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ O tipo de mídia *pDest* deve ser um formato palettized com uma intensidade de c
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Winutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

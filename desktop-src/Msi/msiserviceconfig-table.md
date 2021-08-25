@@ -4,18 +4,18 @@ ms.assetid: 0d9fd005-9326-4a18-8496-35b5d1927f47
 title: Tabela MsiServiceConfig
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 357b6787e56d52a893dd1a118a3e2fcbc13379e2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e3b72e21fdfecd59780b862d3bfe7d68ef829b59b847dbceb0e9c13befae9d4a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105780509"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119828586"
 ---
 # <a name="msiserviceconfig-table"></a>Tabela MsiServiceConfig
 
 A tabela MsiServiceConfig configura um serviço que está instalado ou sendo instalado pelo pacote atual.
 
-**[Windows Installer 4,5 ou anterior](not-supported-in-windows-installer-4-5.md):** Sem suporte. Esta tabela está disponível a partir do Windows Installer 5,0.
+**[Windows Installer 4,5 ou anterior](not-supported-in-windows-installer-4-5.md):** Sem suporte. esta tabela está disponível a partir do Windows Installer 5,0.
 
 A tabela MsiServiceConfig tem as colunas a seguir.
 
@@ -23,11 +23,11 @@ A tabela MsiServiceConfig tem as colunas a seguir.
 
 | Coluna           | Tipo                         | Chave | Nullable |
 |------------------|------------------------------|-----|----------|
-| MsiServiceConfig | [Identificador](identifier.md) | S   | N        |
+| MsiServiceConfig | [Identificador](identifier.md) | Y   | N        |
 | Nome             | [Binário](formatted.md)   | N   | N        |
 | Evento            | [Inteiro](integer.md)       | N   | N        |
 | ConfigType       | [Inteiro](integer.md)       | N   | N        |
-| Argumento         | [Binário](formatted.md)   | N   | S        |
+| Argumento         | [Binário](formatted.md)   | N   | Y        |
 | Componente\_      | [Identificador](identifier.md) | N   | N        |
 
 

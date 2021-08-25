@@ -1,11 +1,11 @@
 ---
-title: Método de altura de IDeviceIcon
+title: Método height IDeviceIcon
 description: Recupera a altura do ícone em pixels.
 ms.assetid: 06E1B3AD-FF49-4BC9-AC67-E2E00954475F
 keywords:
-- API de streaming de mídia do método de altura
-- Método Height API de streaming de mídia, interface IDeviceIcon
-- API de streaming de mídia da interface IDeviceIcon, método Height
+- API de Streaming de Mídia do método Height
+- API de Streaming de Mídia do método height, interface IDeviceIcon
+- API de Streaming de Mídia da interface IDeviceIcon, método Height
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: bdba8d107cc844a29d215e5da49949595a8cd27a
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 8d813c572b0fc9e562d40326d830c5ef3530857601811df78c3acd541314b402
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104007537"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120060286"
 ---
-# <a name="ideviceiconheight-method"></a>Método IDeviceIcon:: Height
+# <a name="ideviceiconheight-method"></a>Método IDeviceIcon::Height
 
 Recupera a altura do ícone em pixels.
 
@@ -41,16 +41,16 @@ HRESULT Height(
 
 <dl> <dt>
 
-*valor* \[ do fora\]
+*value* \[ out\]
 </dt> <dd>
 
 Recebe um ponteiro para a altura do ícone em pixels.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 

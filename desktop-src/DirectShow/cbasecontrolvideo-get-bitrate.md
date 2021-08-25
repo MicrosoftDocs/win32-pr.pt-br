@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 62f1feaed786b397801bbd17d2d2d41c0ccb813d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b33e3584bb0460b798101d8062c3647b983841c77653adcffd18580eade25c6b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105810951"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120057266"
 ---
 # <a name="cbasecontrolvideoget_bitrate-method"></a>Método de taxa de bits CBaseControlVideo. get \_
 
@@ -49,7 +49,7 @@ Ponteiro para a taxa de bits, em bits por segundo.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna NOERROR se for successful ou E \_ OUTOFMEMORY se não houver memória suficiente disponível.
 
@@ -63,7 +63,7 @@ Essa função de membro implementa o método [**IBasicVideo:: get \_ taxa de bit
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
+| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir Fluxos. h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 

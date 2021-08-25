@@ -1,19 +1,19 @@
 ---
-description: O suporte a páginas grandes permite que aplicativos de servidor estabeleçam regiões de memória de página grande, o que é particularmente útil em janelas de 64 bits.
+description: O suporte a páginas grandes permite que aplicativos de servidor estabeleçam regiões de memória de página grande, o que é particularmente útil em Windows de 64 bits.
 ms.assetid: 060115af-38d1-499c-b30c-47cd0cf42d20
 title: Suporte a Large-Page
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ef4578b5127e6613f2ff4b6e0b8a7cffcc53c9e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ad61873c80d2d3fe8de6a915f5eb93f527049a437860deabedbe232cdf9cb885
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105758424"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119869676"
 ---
 # <a name="large-page-support"></a>Suporte a Large-Page
 
-O suporte a páginas grandes permite que aplicativos de servidor estabeleçam regiões de memória de página grande, o que é particularmente útil em janelas de 64 bits. Cada conversão de página grande usa um único buffer de conversão dentro da CPU. O tamanho desse buffer normalmente é de três ordens de magnitude maiores do que o tamanho da página nativa; Isso aumenta a eficiência do buffer de conversão, o que pode aumentar o desempenho da memória acessada com frequência.
+O suporte a páginas grandes permite que aplicativos de servidor estabeleçam regiões de memória de página grande, o que é particularmente útil em Windows de 64 bits. Cada conversão de página grande usa um único buffer de conversão dentro da CPU. O tamanho desse buffer normalmente é de três ordens de magnitude maiores do que o tamanho da página nativa; Isso aumenta a eficiência do buffer de conversão, o que pode aumentar o desempenho da memória acessada com frequência.
 
 O procedimento a seguir descreve como usar o suporte a páginas grandes.
 

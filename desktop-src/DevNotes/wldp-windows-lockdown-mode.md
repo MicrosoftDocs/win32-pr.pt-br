@@ -1,7 +1,7 @@
 ---
-description: Descreve os modos seguros (S) para um dispositivo Windows.
+description: Descreve os modos de segurança (modos S) para um Windows dispositivo.
 ms.assetid: CE50AC56-0295-477C-93CB-ABAB92482A59
-title: Enumeração de WLDP_WINDOWS_LOCKDOWN_MODE (Wldp. h)
+title: WLDP_WINDOWS_LOCKDOWN_MODE enumeração (Wldp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - wldp.h
-ms.openlocfilehash: 438a44bec0745ea67b2b40c3f8aa9c0dd6bd0072
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 93a3ae8ef00c306d93995a3a97236fc9086185147144c4314726c507d8b52e57
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105755273"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119911336"
 ---
-# <a name="wldp_windows_lockdown_mode-enumeration"></a>\_Enumeração do \_ modo de bloqueio do Windows WLDP \_
+# <a name="wldp_windows_lockdown_mode-enumeration"></a>Enumeração WLDP \_ DO MODO DE BLOQUEIO \_ DO WINDOWS \_
 
-Descreve os modos seguros (S) para um dispositivo Windows. Usado principalmente em [**WldpQueryWindowsLockdownMode**](wldpquerywindowslockdownmode.md).
+Descreve os modos de segurança (modos S) para um Windows dispositivo. Usado principalmente no [**WldpQueryWindowsLockdownMode.**](wldpquerywindowslockdownmode.md)
 
 ## <a name="syntax"></a>Syntax
 
@@ -42,28 +42,28 @@ typedef enum _WLDP_WINDOWS_LOCKDOWN_MODE {
 
 <dl> <dt>
 
-<span id="WLDP_WINDOWS_LOCKDOWN_MODE_UNLOCKED"></span><span id="wldp_windows_lockdown_mode_unlocked"></span>**\_modo de bloqueio do Windows WLDP \_ \_ \_ desbloqueado**
+<span id="WLDP_WINDOWS_LOCKDOWN_MODE_UNLOCKED"></span><span id="wldp_windows_lockdown_mode_unlocked"></span>**MODO DE BLOQUEIO DO WINDOWS WLDP \_ \_ \_ \_ DESBLOQUEADO**
 </dt> <dd>
 
-Sala. Usado principalmente para dispositivos Windows sem o modo S.
+Desbloqueado. Usado principalmente para Windows dispositivos sem o modo S.
 
 </dd> <dt>
 
-<span id="WLDP_WINDOWS_LOCKDOWN_MODE_TRIAL"></span><span id="wldp_windows_lockdown_mode_trial"></span>**\_avaliação do \_ modo de bloqueio do Windows WLDP \_ \_**
+<span id="WLDP_WINDOWS_LOCKDOWN_MODE_TRIAL"></span><span id="wldp_windows_lockdown_mode_trial"></span>**AVALIAÇÃO DO MODO \_ DE BLOQUEIO DO WINDOWS WLDP \_ \_ \_**
 </dt> <dd>
 
-Avaliação. Usado principalmente para um dispositivo de avaliação do Windows 10 com o modo S. O modo de avaliação é um caso especial para dispositivos Windows 10 com o modo S: as políticas são impostas, mas não há nenhuma proteção de proversão para a imposição da política.
+Julgamento. Usado principalmente para um Windows 10 de avaliação com o modo S. O modo de avaliação é um caso especial para Windows 10 dispositivos com o modo S: as políticas são impostas, mas não há proteção anti-replicação para a imposição da política.
 
 </dd> <dt>
 
-<span id="WLDP_WINDOWS_LOCKDOWN_MODE_LOCKED"></span><span id="wldp_windows_lockdown_mode_locked"></span>**\_modo de bloqueio do Windows WLDP \_ \_ \_ bloqueado**
+<span id="WLDP_WINDOWS_LOCKDOWN_MODE_LOCKED"></span><span id="wldp_windows_lockdown_mode_locked"></span>**MODO DE BLOQUEIO DO WINDOWS WLDP \_ \_ \_ \_ BLOQUEADO**
 </dt> <dd>
 
-Bloqueadas. Usado principalmente para um dispositivo Windows 10 com o modo S. Um dispositivo bloqueado imporá as políticas de proteção de dispositivo assinadas enviadas com a imagem do sistema operacional do Windows 10 com o modo S.
+Bloqueadas. Usado principalmente para um Windows 10 com o modo S. Um dispositivo bloqueado imporá as políticas assinadas do Device Guard fornecidas com a imagem Windows 10 do sistema operacional com o modo S.
 
 </dd> <dt>
 
-<span id="WLDP_WINDOWS_LOCKDOWN_MODE_MAX"></span><span id="wldp_windows_lockdown_mode_max"></span>**\_modo de bloqueio do Windows WLDP \_ \_ \_ Max**
+<span id="WLDP_WINDOWS_LOCKDOWN_MODE_MAX"></span><span id="wldp_windows_lockdown_mode_max"></span>**MODO DE BLOQUEIO MÁXIMO DO WINDOWS WLDP \_ \_ \_ \_**
 </dt> <dd>
 
 O valor máximo de enumeração.
@@ -76,7 +76,7 @@ O valor máximo de enumeração.
 
 | Requisito | Valor |
 |-------------------|-----------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Wldp. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Wldp.h</dt> </dl> |
 
 
 

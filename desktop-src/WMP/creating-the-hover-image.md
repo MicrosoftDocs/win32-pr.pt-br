@@ -4,21 +4,21 @@ description: Criando a imagem em foco
 ms.assetid: 169a99ba-96a0-4487-aa1c-07c83c0bc237
 keywords:
 - Criando capas, imagens em foco
-- Capas do Windows Media Player, arquivos de arte
+- Windows Media Player capas, arquivos de arte
 - capas, arquivos de arte
 - arquivos para capas, arte
 - arquivos de arte para capas, imagens em foco
-- Capas do Windows Media Player, imagens em foco
+- Windows Media Player capas, imagens em foco
 - capas, imagens em foco
 - imagens em foco em capas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 00d7f5bbb8b57820c2805b9b9d6ea79762933035
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 88eff91123a28dae94425d7ea6e7591462545a2d7da0372b088eeec6bd67ed60
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104291817"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119902276"
 ---
 # <a name="creating-the-hover-image"></a>Criando a imagem em foco
 
@@ -27,7 +27,7 @@ A imagem principal dessa capa é de dois botões em uma elipse. Para dar ao usu�
 Para criar a imagem em foco, você precisará usar os dois botões criados para o arquivo de arte principal, copiá-los para novas camadas e adicionar mais camadas ao texto. Use as seguintes etapas:
 
 1.  Copie a camada de botão fechar e renomeie-a "fechar mouse".
-2.  Use o seletor de cores para criar uma cor de primeiro plano de um amarelo claro ( \# CCFF33). Isso foi escolhido para contraste com as cores do botão. Em seguida, use a ferramenta Lata de Tinta para preencher o interior do círculo na camada fechar foco.
+2.  Use o seletor de cores para criar uma cor de primeiro plano de um amarelo claro ( \# CCFF33). Isso foi escolhido para contraste com as cores do botão. em seguida, use a ferramenta Lata de Tinta para preencher o interior do círculo na camada fechar foco.
 3.  Copie a camada do botão Play e renomeie-a "Play hover".
 4.  Use a ferramenta Lata de Tinta para preencher o interior do círculo na camada reproduzir foco com a mesma cor do círculo de fechamento de foco.
 5.  Crie uma nova camada e nomeie-a como "fechar quadrado". Use o seletor de cores para criar uma cor de primeiro plano de azul escuro. Use a ferramenta caneta para desenhar um quadrado, transformá-lo em uma seleção, preenchê-lo e excluir o caminho. Usando a ferramenta mover, mova o quadrado e centralize-o sobre o botão de fechamento em foco.
@@ -60,9 +60,9 @@ Quando você salvar o arquivo, o nome de arquivo escolhido será usado posterior
 [**Criando sua primeira capa**](building-your-first-skin.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

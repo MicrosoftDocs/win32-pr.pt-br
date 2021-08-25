@@ -1,21 +1,21 @@
 ---
-description: O exemplo a seguir demonstra como criar, agendar e excluir fibras.
+description: O exemplo a seguir demonstra como criar, agendar e excluir fibra.
 ms.assetid: b09c00ae-a498-499b-ba2b-735028e9fd8f
-title: Usando fibras
+title: Usando fibra
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c25c8d9d258853990bd200a01c77be85c1fdfaf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6ce5d33cfbe7e54d297366290587d14c282a2e8f2d008a92eba4427cfdd7a139
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828353"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120101906"
 ---
-# <a name="using-fibers"></a>Usando fibras
+# <a name="using-fibers"></a>Usando fibra
 
-A função [**CreateFiber**](/windows/desktop/api/WinBase/nf-winbase-createfiber) cria uma nova fibra para um thread. O thread de criação deve especificar o endereço inicial do código que a nova fibra será executada. Normalmente, o endereço inicial é o nome de uma função fornecida pelo usuário. Várias fibras podem executar a mesma função.
+A [**função CreateFiber**](/windows/desktop/api/WinBase/nf-winbase-createfiber) cria uma fibra para um thread. O thread de criação deve especificar o endereço inicial do código que a nova fibra deve executar. Normalmente, o endereço inicial é o nome de uma função fornecida pelo usuário. Várias fibra podem executar a mesma função.
 
-O exemplo a seguir demonstra como criar, agendar e excluir fibras. As fibras executam as funções definidas localmente ReadFiberFunc e WriteFiberFunc. Este exemplo implementa uma operação de cópia de arquivo baseada em fibra. Ao executar o exemplo, você deve especificar os arquivos de origem e de destino. Observe que há muitas outras maneiras de copiar o arquivo programaticamente; Este exemplo existe principalmente para ilustrar o uso das funções de fibra.
+O exemplo a seguir demonstra como criar, agendar e excluir fibra. As fibra executam as funções ReadFiberFunc e WriteFiberFunc definidas localmente. Este exemplo implementa uma operação de cópia de arquivo baseada em fibra. Ao executar o exemplo, você deve especificar os arquivos de origem e de destino. Observe que há muitas outras maneiras de copiar o arquivo programaticamente; este exemplo existe principalmente para ilustrar o uso das funções de fibra.
 
 
 ```C++
@@ -373,13 +373,13 @@ DisplayFiberInfo(
 
 
 
-Este exemplo usa uma estrutura de dados de fibra que é usada para determinar o comportamento e o estado da fibra. Existe uma estrutura de dados para cada fibra; o ponteiro para a estrutura de dados é passado para a fibra no momento da criação de fibra usando o parâmetro da função [*FiberProc*](/windows/win32/api/winbase/nc-winbase-pfiber_start_routine) .
+Este exemplo usa uma estrutura de dados de fibra que é usada para determinar o comportamento e o estado da fibra. Existe uma estrutura de dados para cada fibra; o ponteiro para a estrutura de dados é passado para a fibra no momento da criação da fibra usando o parâmetro da [*função FiberProc.*](/windows/win32/api/winbase/nc-winbase-pfiber_start_routine)
 
-O thread de chamada chama a função [**ConvertThreadToFiber**](/windows/desktop/api/WinBase/nf-winbase-convertthreadtofiber) , que permite que fibras sejam agendadas pelo chamador. Isso também permite que a fibra seja agendada por outra fibra. Em seguida, o thread cria dois fibras adicionais, um que executa operações de leitura em um arquivo especificado e outro que executa as operações de gravação em um arquivo especificado.
+O thread de chamada chama [**a função ConvertThreadToFiber,**](/windows/desktop/api/WinBase/nf-winbase-convertthreadtofiber) que permite que as fibra sejam agendadas pelo chamador. Isso também permite que a fibra seja agendada por outra fibra. Em seguida, o thread cria duas fibra adicionais, uma que executa operações de leitura em um arquivo especificado e outra que executa as operações de gravação em um arquivo especificado.
 
-A fibra primária chama a função [**SwitchToFiber**](/windows/desktop/api/WinBase/nf-winbase-switchtofiber) para agendar a fibra de leitura. Após uma leitura bem-sucedida, a fibra de leitura agenda a fibra de gravação. Após uma gravação bem-sucedida na fibra de gravação, a fibra de gravação agenda a fibra de leitura. Quando o ciclo de leitura/gravação for concluído, a fibra primária será agendada, o que resultará na exibição do status de leitura/gravação. Se ocorrer um erro durante as operações de leitura ou gravação, a fibra primária será agendada e o exemplo exibirá o status da operação.
+A fibra primária chama a [**função SwitchToFiber**](/windows/desktop/api/WinBase/nf-winbase-switchtofiber) para agendar a fibra de leitura. Após uma leitura bem-sucedida, a fibra de leitura agenda a fibra de gravação. Após uma gravação bem-sucedida na fibra de gravação, a fibra de gravação agenda a fibra de leitura. Quando o ciclo de leitura/gravação for concluído, a fibra primária será agendada, o que resulta na exibição do status de leitura/gravação. Se ocorrer um erro durante as operações de leitura ou gravação, a fibra primária será agendada e o exemplo exibirá o status da operação.
 
-Antes do encerramento do processo, o processo libera os fibras usando a função [**DeleteFiber**](/windows/desktop/api/WinBase/nf-winbase-deletefiber) , fecha os identificadores de arquivo e libera a memória alocada.
+Antes do término do processo, o processo libera as fibra usando a função [**DeleteFiber,**](/windows/desktop/api/WinBase/nf-winbase-deletefiber) fecha os alças de arquivo e libera a memória alocada.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

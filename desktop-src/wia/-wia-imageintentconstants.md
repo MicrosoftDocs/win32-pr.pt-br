@@ -18,12 +18,12 @@ api_type:
 - HeaderDef
 api_location:
 - wiadef.h
-ms.openlocfilehash: f35c1f7436c8cc5110215a6ccf0383960ec3fb87
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 78130128a26057ed521512dd21acc5a1bd7e98c47ed689eaabc250a972c2a003
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921072"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119814116"
 ---
 # <a name="image-intent-constants"></a>Constantes da intenção de imagem
 
@@ -79,9 +79,9 @@ A lista a seguir mostra o nome da constante C/C++ seguido pelo nome corresponden
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                |
-| parâmetro<br/>                   | <dl> <dt>Wiadef. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos de área de trabalho do Windows XP\]<br/>              |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                |
+| Cabeçalho<br/>                   | <dl> <dt>Wiadef. h</dt> </dl> |
 
 
 

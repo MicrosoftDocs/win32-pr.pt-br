@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 31a09788b2f407673f57dad8a71792a5b02b7613
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: ba7783575ac5782c63bc1ec3ca5f56f6ffe9a1bc7483f3f01ccbcf8adac5e23f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104988619"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120068516"
 ---
 # <a name="dcl_maxoutputvertexcount-sm4---asm"></a>DCL \_ maxOutputVertexCount (sm4-ASM)
 
@@ -63,7 +63,7 @@ Essa instrução está incluída para auxiliar na depuração de um sombreador n
 
 ## <a name="example"></a>Exemplo
 
-Aqui estão alguns exemplos.
+Veja alguns exemplos.
 
 Suponha que os dados de entrada sejam compostos de posição (. xyzw) e cor (. RGB). Cada componente consome um byte; dadas 7 bytes, o número máximo de vértices que o sombreador pode gerar seria 1024/(4 + 3) = 146.
 

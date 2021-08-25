@@ -1,19 +1,19 @@
 ---
-description: Os desenvolvedores de Windows Installer pacotes podem optar por usar um tipo de ação personalizada 5 quando as ações padrão são insuficientes para executar a instalação.
+description: os desenvolvedores de Windows Installer pacotes podem optar por usar um tipo de ação personalizada 5 quando as ações padrão são insuficientes para executar a instalação.
 ms.assetid: 32b10271-44b1-4c5d-9c8b-eed1b4cd31e2
 title: Tipo de ação personalizada 5
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 85460c9a41dca060ca2634c013999c2c340ddfa1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a7e5d6ea37d8efcc5a5d9517b36fb3ae5620830ae1a84173cb9a5488c57cc24e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105770379"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120086216"
 ---
 # <a name="custom-action-type-5"></a>Tipo de ação personalizada 5
 
-Essa ação personalizada é escrita em JScript, como ECMA 262. Windows Installer não dá suporte a JScript 1,0. Para obter mais informações, consulte [scripts](scripts.md).
+essa ação personalizada é escrita em JScript, como ECMA 262. Windows o instalador não dá suporte ao JScript 1,0. Para obter mais informações, consulte [scripts](scripts.md).
 
 ## <a name="source"></a>Fonte
 
@@ -35,7 +35,7 @@ Inclua o seguinte valor na coluna tipo da [tabela CustomAction](customaction-tab
 
  
 
-Windows Installer pode usar ações personalizadas de 64 bits em sistemas operacionais de 64 bits. Uma ação personalizada de 64 bits baseada em scripts deve incluir o bit **msidbCustomActionType64BitScript** em seu tipo numérico. Para obter informações [, consulte ações personalizadas de 64 bits](64-bit-custom-actions.md). Inclua o seguinte valor na coluna Type da [tabela CustomAction](customaction-table.md) para especificar o tipo numérico básico de uma ação personalizada de 64 bits.
+Windows O instalador pode usar ações personalizadas de 64 bits em sistemas operacionais de 64 bits. Uma ação personalizada de 64 bits baseada em scripts deve incluir o bit **msidbCustomActionType64BitScript** em seu tipo numérico. Para obter informações [, consulte ações personalizadas de 64 bits](64-bit-custom-actions.md). Inclua o seguinte valor na coluna Type da [tabela CustomAction](customaction-table.md) para especificar o tipo numérico básico de uma ação personalizada de 64 bits.
 
 
 
@@ -65,11 +65,11 @@ Inclua bits de sinalizador opcionais na coluna Type da [tabela CustomAction](cus
 
 ## <a name="return-values"></a>Valores de retorno
 
-Funções opcionais escritas em script devem retornar um dos valores descritos em [valores de retorno de ações personalizadas JScript e VBScript](return-values-of-jscript-and-vbscript-custom-actions.md).
+funções opcionais escritas em script devem retornar um dos valores descritos em [valores de retorno de JScript e ações personalizadas do VBScript](return-values-of-jscript-and-vbscript-custom-actions.md).
 
 ## <a name="remarks"></a>Comentários
 
-Uma ação personalizada escrita em JScript ou VBScript requer a instalação do objeto de [**sessão**](session-object.md). O instalador anexa o objeto de **sessão** ao script com a *sessão* de nome. Como o objeto de **sessão** pode não existir durante uma reversão de instalação, uma ação personalizada adiada escrita em script deve usar um dos métodos ou propriedades do objeto de **sessão** descrito na seção [obtendo informações de contexto para ações personalizadas de execução adiada](obtaining-context-information-for-deferred-execution-custom-actions.md) para recuperar seu contexto.
+uma ação personalizada escrita em JScript ou VBScript requer a instalação do objeto de [**sessão**](session-object.md). O instalador anexa o objeto de **sessão** ao script com a *sessão* de nome. Como o objeto de **sessão** pode não existir durante uma reversão de instalação, uma ação personalizada adiada escrita em script deve usar um dos métodos ou propriedades do objeto de **sessão** descrito na seção [obtendo informações de contexto para ações personalizadas de execução adiada](obtaining-context-information-for-deferred-execution-custom-actions.md) para recuperar seu contexto.
 
 Quando uma tabela de banco de dados é exportada, cada fluxo é gravado como um arquivo separado na subpasta nomeada após a tabela, usando a chave primária como o nome do arquivo (coluna de nome para a tabela binária), com uma extensão padrão de ". IBD". O nome deve usar o formato de nome de arquivo 8,3 se o sistema de arquivos ou o sistema de controle de versão não oferecer suporte a nomes de arquivo longos. O arquivo morto persistente substitui os dados de fluxo pelo nome de arquivo usado, para que os dados possam ser localizados quando a tabela for importada.
 

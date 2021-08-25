@@ -1,10 +1,10 @@
 ---
-title: Enumeração de MPEXECUTION_STATUS (MpClient. h)
-description: Possível status de execução de ameaça.
+title: MPEXECUTION_STATUS enumeração (MpClient.h)
+description: Possível status de execução de ameaças.
 ms.assetid: 89D6BD9F-4A4C-48F5-BFD1-D09A240EB253
 keywords:
-- Recursos do ambiente Windows herdado de enumeração de MPEXECUTION_STATUS
-- PMPEXECUTION_STATUS recursos de ambiente herdados do ponteiro de enumeração do Windows
+- MPEXECUTION_STATUS de enumeração herdada Windows recursos de ambiente
+- PMPEXECUTION_STATUS de enumeração herdado Windows recursos de ambiente
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d5cc21a0d8ec45d0715a7b1af8fb81a25e260711
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6e4748b6d97e1b7ee05db8044837b89e2653a14fd1e6f87068a40107cdd9ee60
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824306"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119943906"
 ---
-# <a name="mpexecution_status-enumeration"></a>\_Enumeração de status MPEXECUTION
+# <a name="mpexecution_status-enumeration"></a>Enumeração MPEXECUTION \_ STATUS
 
-Possível status de execução de ameaça.
+Possível status de execução de ameaças.
 
 ## <a name="syntax"></a>Syntax
 
@@ -45,35 +45,35 @@ typedef enum tagMPEXECUTION_STATUS {
 
 <dl> <dt>
 
-<span id="MP_EXECUTION_STATUS_UNKNOWN"></span><span id="mp_execution_status_unknown"></span>**STATUS de execução do MP \_ \_ \_ desconhecido**
+<span id="MP_EXECUTION_STATUS_UNKNOWN"></span><span id="mp_execution_status_unknown"></span>**STATUS \_ DE EXECUÇÃO DO MP \_ \_ DESCONHECIDO**
 </dt> <dd>
 
 O status de execução não é conhecido.
 
 </dd> <dt>
 
-<span id="MP_EXECUTION_STATUS_BLOCKED"></span><span id="mp_execution_status_blocked"></span>**STATUS de execução do MP \_ \_ \_ bloqueado**
+<span id="MP_EXECUTION_STATUS_BLOCKED"></span><span id="mp_execution_status_blocked"></span>**STATUS \_ DE EXECUÇÃO DO MP \_ \_ BLOQUEADO**
 </dt> <dd>
 
-Bloqueado da execução por mini-Filter.
+Bloqueado da execução por mini-filtro.
 
 </dd> <dt>
 
-<span id="MP_EXECUTION_STATUS_ALLOWED"></span><span id="mp_execution_status_allowed"></span>**STATUS de execução do MP \_ \_ \_ permitido**
+<span id="MP_EXECUTION_STATUS_ALLOWED"></span><span id="mp_execution_status_allowed"></span>**STATUS \_ DE EXECUÇÃO DO MP \_ \_ PERMITIDO**
 </dt> <dd>
 
 Permissão para executar por mini-filtro.
 
 </dd> <dt>
 
-<span id="MP_EXECUTION_STATUS_EXECUTING"></span><span id="mp_execution_status_executing"></span>**execuções do status de execução do MP \_ \_ \_**
+<span id="MP_EXECUTION_STATUS_EXECUTING"></span><span id="mp_execution_status_executing"></span>**STATUS \_ DE EXECUÇÃO DO MP EM \_ \_ EXECUÇÃO**
 </dt> <dd>
 
 A ameaça está em execução.
 
 </dd> <dt>
 
-<span id="MP_EXECUTION_STATUS_NOT_EXECUTING"></span><span id="mp_execution_status_not_executing"></span>**o status de execução do MP não está em \_ \_ \_ \_ execução**
+<span id="MP_EXECUTION_STATUS_NOT_EXECUTING"></span><span id="mp_execution_status_not_executing"></span>**STATUS \_ DE EXECUÇÃO DO MP NÃO EM \_ \_ \_ EXECUÇÃO**
 </dt> <dd>
 
 A ameaça não está em execução e só está disponível no mecanismo durante a correção.
@@ -86,9 +86,9 @@ A ameaça não está em execução e só está disponível no mecanismo durante 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

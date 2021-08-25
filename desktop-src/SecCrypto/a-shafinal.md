@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - ntdll.dll
-ms.openlocfilehash: 2a206005a686d02891a593243bc0ef3a4ad7db23
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 42a22cfca32409fdfa02586bb90c76f8e8f2489b22cfe2769b50d928d2564af7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105756158"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119960285"
 ---
 # <a name="a_shafinal-function"></a>Uma \_ função SHAFinal
 
@@ -60,7 +60,7 @@ Essa função não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Essa função é muito semelhante a SHAFinal, mas é chamada diretamente da biblioteca, em vez de ser roteada pela infraestrutura de criptografia. Para obter mais informações, consulte [provedores do Windows NTCryptographic](/previous-versions/tn-archive/cc723484(v=technet.10)).
+Essa função é muito semelhante a SHAFinal, mas é chamada diretamente da biblioteca, em vez de ser roteada pela infraestrutura de criptografia. para obter mais informações, consulte [Windows provedores de NTCryptographic](/previous-versions/tn-archive/cc723484(v=technet.10)).
 
 ## <a name="requirements"></a>Requisitos
 
