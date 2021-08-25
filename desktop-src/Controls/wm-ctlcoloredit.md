@@ -3,7 +3,7 @@ title: Mensagem de WM_CTLCOLOREDIT (WinUser. h)
 description: Um controle de edição que não é somente leitura ou desabilitado envia a \_ mensagem do WM CTLCOLOREDIT para sua janela pai quando o controle está prestes a ser desenhado.
 ms.assetid: 2294e3b8-00a7-43ef-b20a-fe0e46764055
 keywords:
-- Controles de WM_CTLCOLOREDIT de mensagens do Windows
+- controles de Windows de mensagem de WM_CTLCOLOREDIT
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e100367f37018424fad33dc7cea30700183a0a2c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: da7f1fd27c51cabc699cf945fd4701c36d2e9709d1654de45859777333b9b4bb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454611"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120053896"
 ---
 # <a name="wm_ctlcoloredit-message"></a>Mensagem do WM \_ CTLCOLOREDIT
 
@@ -53,7 +53,7 @@ Um identificador para o controle de edição.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se um aplicativo processar essa mensagem, ele deverá retornar o identificador de um pincel. O sistema usa o pincel para pintar o plano de fundo do controle de edição.
 
@@ -77,9 +77,9 @@ Se um procedimento de caixa de diálogo tratar essa mensagem, ele deverá conver
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

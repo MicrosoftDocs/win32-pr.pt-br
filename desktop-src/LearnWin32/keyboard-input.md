@@ -1,17 +1,17 @@
 ---
-title: Entrada de teclado (introdução ao Win32 e ao C++)
+title: entrada de teclado (Introdução com Win32 e C++)
 description: Entrada de teclado
 ms.assetid: FC682E8B-8360-4D58-AC42-4CEFD9CB750F
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 82065d4024428b48d4d3061da31a5384cab417d2
-ms.sourcegitcommit: 35bb565804eaeed7ac5503595753f59d120076dd
+ms.openlocfilehash: e3ed8ac1e8d7cd8e6ea35c9e9f58c10fd516cca010b5e5dce667817b32028c5d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "105759488"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119822346"
 ---
-# <a name="keyboard-input-get-started-with-win32-and-c"></a>Entrada de teclado (introdução ao Win32 e ao C++)
+# <a name="keyboard-input-get-started-with-win32-and-c"></a>entrada de teclado (Introdução com Win32 e C++)
 
 O teclado é usado para vários tipos distintos de entrada, incluindo:
 
@@ -106,9 +106,9 @@ Os usuários também podem instalar um IME (editor de método de entrada) para i
 **WM \_ KEYUP**: VK \_ Return  
 
 
-Algumas combinações de teclas CTRL são convertidas em caracteres de controle ASCII. Por exemplo, CTRL + A é convertido para o caractere ASCII CTRL-A (SOH) (valor ASCII 0x01). Para entrada de texto, você geralmente deve filtrar os caracteres de controle. Além disso, evite usar o [**WM \_ Char**](/windows/desktop/inputdev/wm-char) para implementar atalhos de teclado. Em vez disso, use as mensagens do [**WM \_ KEYDOWN**](/windows/desktop/inputdev/wm-keydown) ; ou ainda melhor, use uma tabela de acelerador. As tabelas do acelerador são descritas no próximo tópico, [tabelas de aceleração](accelerator-tables.md).
+Algumas combinações de teclas CTRL são convertidas em caracteres de controle ASCII. Por exemplo, CTRL + A é convertido para o caractere ASCII CTRL-A (SOH) (valor ASCII 0x01). Para entrada de texto, você geralmente deve filtrar os caracteres de controle. Além disso, evite usar o [**WM \_ Char**](/windows/desktop/inputdev/wm-char) para implementar atalhos de teclado. Em vez disso, [**use mensagens WM \_ KEYDOWN;**](/windows/desktop/inputdev/wm-keydown) ou ainda melhor, use uma tabela de aceleradores. As tabelas de acelerador são descritas no próximo tópico, [Tabelas de Acelerador.](accelerator-tables.md)
 
-O código a seguir exibe as principais mensagens do teclado no depurador. Tente reproduzir com combinações de teclas diferentes e ver quais mensagens são geradas.
+O código a seguir exibe as mensagens de teclado principais no depurador. Tente jogar com combinações de teclas diferentes e ver quais mensagens são geradas.
 
 
 ```C++
@@ -156,19 +156,19 @@ LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 
 
 
-## <a name="miscellaneous-keyboard-messages"></a>Diversas mensagens do teclado
+## <a name="miscellaneous-keyboard-messages"></a>Mensagens de teclado diversas
 
 Algumas outras mensagens de teclado podem ser ignoradas com segurança pela maioria dos aplicativos.
 
--   A mensagem do [**WM \_ DEADCHAR**](/windows/desktop/inputdev/wm-deadchar) é enviada para uma chave de combinação, como um diacrítico. Por exemplo, em um teclado de idioma espanhol, digitar acentos (') seguido de E produz o caractere. O **\_ DEADCHAR do WM** é enviado para o caractere de acento.
--   A mensagem do [**WM \_ UNICHAR**](/windows/desktop/inputdev/wm-unichar) é obsoleta. Ele permite que programas ANSI recebam entrada de caracteres Unicode.
--   O caractere de caracteres [**\_ \_ IME do WM**](/windows/desktop/Intl/wm-ime-char) é enviado quando um IME converte uma sequência de pressionamento de teclas em caracteres. Ele é enviado além da mensagem comum do [**WM \_ Char**](/windows/desktop/inputdev/wm-char) .
+-   A [**mensagem \_ WM DEADCHAR**](/windows/desktop/inputdev/wm-deadchar) é enviada para uma chave de combinação, como um diacrítico. Por exemplo, em um teclado de idioma espanhol, digitar acento (') seguido por E produz o caractere é. O **WM \_ DEADCHAR é** enviado para o caractere de destaque.
+-   A [**mensagem WM \_ UNICHAR**](/windows/desktop/inputdev/wm-unichar) está obsoleta. Ele permite que programas ANSI recebam entrada de caractere Unicode.
+-   O [**caractere CHAR do WM \_ IME \_**](/windows/desktop/Intl/wm-ime-char) é enviado quando um IME converte uma sequência de teclas em caracteres. Ele é enviado além da mensagem [**CHAR \_ DO WM**](/windows/desktop/inputdev/wm-char) normal.
 
 ## <a name="keyboard-state"></a>Estado do teclado
 
-As mensagens do teclado são controladas por evento. Ou seja, você recebe uma mensagem quando algo interessante acontece, como um pressionamento de tecla, e a mensagem informa o que acabou de acontecer. Mas você também pode testar o estado de uma chave a qualquer momento, chamando a função [**GetKeyState**](/windows/desktop/api/winuser/nf-winuser-getkeystate) .
+As mensagens de teclado são controladas por eventos. Ou seja, você obterá uma mensagem quando algo interessante acontecer, como uma tecla pressionada, e a mensagem informa o que acabou de acontecer. Mas você também pode testar o estado de uma chave a qualquer momento, chamando a [**função GetKeyState.**](/windows/desktop/api/winuser/nf-winuser-getkeystate)
 
-Por exemplo, considere como você detectaria a combinação de clicar com o botão esquerdo do mouse + ALT tecla. Você pode acompanhar o estado da tecla ALT ouvindo mensagens de traço de chave e armazenando um sinalizador, mas [**GetKeyState**](/windows/desktop/api/winuser/nf-winuser-getkeystate) poupa o problema. Quando você receber a [**mensagem \_ LBUTTONDOWN do WM**](/windows/desktop/inputdev/wm-lbuttondown) , basta chamar **GetKeyState** da seguinte maneira:
+Por exemplo, considere como você detectaria a combinação de clique do mouse esquerdo + tecla ALT. Você pode acompanhar o estado da tecla ALT escutando mensagens de traço de chave e armazenar um sinalizador, mas [**GetKeyState**](/windows/desktop/api/winuser/nf-winuser-getkeystate) salva o problema. Quando você receber a [**mensagem WM \_ LBUTTONDOWN,**](/windows/desktop/inputdev/wm-lbuttondown) basta chamar **GetKeyState** da seguinte forma:
 
 
 ```C++
@@ -180,9 +180,9 @@ if (GetKeyState(VK_MENU) & 0x8000))
 
 
 
-A mensagem [**GetKeyState**](/windows/desktop/api/winuser/nf-winuser-getkeystate) usa um código de chave virtual como entrada e retorna um conjunto de sinalizadores de bit (na verdade, apenas dois sinalizadores). O valor 0x8000 contém o sinalizador de bit que testa se a chave está pressionada no momento.
+A [**mensagem GetKeyState**](/windows/desktop/api/winuser/nf-winuser-getkeystate) aceita um código de chave virtual como entrada e retorna um conjunto de sinalizadores de bits (na verdade, apenas dois sinalizadores). O valor 0x8000 contém o sinalizador de bit que testa se a chave está pressionada no momento.
 
-A maioria dos teclados tem duas teclas ALT, esquerda e direita. O exemplo anterior testa se um deles foi pressionado. Você também pode usar [**GetKeyState**](/windows/desktop/api/winuser/nf-winuser-getkeystate) para distinguir entre as instâncias esquerda e direita das teclas ALT, Shift ou CTRL. Por exemplo, o código a seguir testará se a tecla ALT direita for pressionada.
+A maioria dos teclados tem duas teclas ALT, esquerda e direita. O exemplo anterior testa se um deles foi pressionado. Você também pode usar [**GetKeyState**](/windows/desktop/api/winuser/nf-winuser-getkeystate) para distinguir entre as instâncias esquerda e direita das teclas ALT, SHIFT ou CTRL. Por exemplo, o código a seguir testa se a tecla ALT correta é pressionada.
 
 
 ```C++
@@ -194,13 +194,13 @@ if (GetKeyState(VK_RMENU) & 0x8000))
 
 
 
-A função [**GetKeyState**](/windows/desktop/api/winuser/nf-winuser-getkeystate) é interessante porque relata um estado de teclado *virtual* . Esse estado virtual se baseia no conteúdo da fila de mensagens e é atualizado à medida que você remove mensagens da fila. À medida que o programa processa mensagens de janela, o **GetKeyState** fornece um instantâneo do teclado no momento em que cada mensagem foi enfileirada. Por exemplo, se a última mensagem na fila foi o [**WM \_ LBUTTONDOWN**](/windows/desktop/inputdev/wm-lbuttondown), o **GetKeyState** relatará o estado do teclado no momento em que o usuário clicou no botão do mouse.
+A [**função GetKeyState**](/windows/desktop/api/winuser/nf-winuser-getkeystate) é interessante porque relata um *estado de teclado virtual.* Esse estado virtual é baseado no conteúdo da fila de mensagens e é atualizado conforme você remove mensagens da fila. À medida que o programa processa mensagens de janela, **GetKeyState** fornece um instantâneo do teclado no momento em que cada mensagem foi enxuada. Por exemplo, se a última mensagem na fila for [**WM \_ LBUTTONDOWN**](/windows/desktop/inputdev/wm-lbuttondown), **GetKeyState** relata o estado do teclado no momento em que o usuário clicou no botão do mouse.
 
-Como o [**GetKeyState**](/windows/desktop/api/winuser/nf-winuser-getkeystate) é baseado em sua fila de mensagens, ele também ignora a entrada do teclado que foi enviada para outro programa. Se o usuário alternar para outro programa, quaisquer pressionamentos de tecla enviados para esse programa serão ignorados por **GetKeyState**. Se você realmente deseja saber o estado físico imediato do teclado, há uma função para isso: [**GetAsyncKeyState**](/windows/desktop/api/winuser/nf-winuser-getasynckeystate). No entanto, para a maioria dos códigos de interface do usuário, a função correta é **GetKeyState**.
+Como [**GetKeyState**](/windows/desktop/api/winuser/nf-winuser-getkeystate) é baseado em sua fila de mensagens, ele também ignora a entrada do teclado que foi enviada para outro programa. Se o usuário alternar para outro programa, qualquer tecla pressionada enviada para esse programa será ignorada por **GetKeyState.** Se você realmente quiser saber o estado físico imediato do teclado, há uma função para isso: [**GetAsyncKeyState**](/windows/desktop/api/winuser/nf-winuser-getasynckeystate). No entanto, para a maioria dos códigos de interface do usuário, a função correta **é GetKeyState.**
 
 ## <a name="next"></a>Avançar
 
-[Tabelas do acelerador](accelerator-tables.md)
+[Tabelas de acelerador](accelerator-tables.md)
 
  
 

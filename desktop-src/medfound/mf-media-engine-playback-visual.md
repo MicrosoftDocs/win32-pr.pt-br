@@ -4,12 +4,12 @@ ms.assetid: C381D28E-B7A1-4A1A-9F8D-42A4ABB1C633
 title: Atributo MF_MEDIA_ENGINE_PLAYBACK_VISUAL (Mfmediaengine. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 25e9c7366bd0fbf4bf36523cf7a68f2d6da70bc3
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: d0e3c41d337fa198b2ab8b6f2e914d1dad53d180920f14860e5cc18faeb21117
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105752326"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120113906"
 ---
 # <a name="mf_media_engine_playback_visual-attribute"></a>\_ \_ \_ Atributo Visual de reprodução do mecanismo de mídia MF \_
 
@@ -37,9 +37,9 @@ Esse atributo é usado com o método [**IMFMediaEngineClassFactory:: CreateInsta
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 8 \| UWP\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | Aplicativos do Windows Server 2012 \[ Desktop aplicativos \| UWP\]<br/>                                |
-| parâmetro<br/>                   | <dl> <dt>Mfmediaengine. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ aplicativos UWP de aplicativos de desktop \|\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ aplicativos UWP de aplicativos de desktop \|\]<br/>                                |
+| Cabeçalho<br/>                   | <dl> <dt>Mfmediaengine. h</dt> </dl> |
 
 
 

@@ -1,25 +1,25 @@
 ---
-description: A ação RegisterProgIdInfo gerencia o registro de informações de ProgId de OLE com o sistema.
+description: A ação RegisterProgIdInfo gerencia o registro de informações do OLE ProgId com o sistema.
 ms.assetid: f6fd4d0d-d2dc-4953-9402-314c7932746b
 title: Ação RegisterProgIdInfo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c4c7d53ca4c4125c6ebfc4d089c1c5a0934f9a58
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 84cebf5ddb3bf8b9c98ebea0364b685016d343afa283b937400360f31bbcebd9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105749987"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119912826"
 ---
 # <a name="registerprogidinfo-action"></a>Ação RegisterProgIdInfo
 
-A ação RegisterProgIdInfo gerencia o registro de informações de ProgId de OLE com o sistema.
+A ação RegisterProgIdInfo gerencia o registro de informações do OLE ProgId com o sistema.
 
 ## <a name="sequence-restrictions"></a>Restrições de sequência
 
-A ação RegisterProgIdInfo deve vir após a ação [InstallFiles](installfiles-action.md) , a ação [UnregisterProgIdInfo](unregisterprogidinfo-action.md) , a ação [RegisterClassInfo](registerclassinfo-action.md) e a ação [RegisterExtensionInfo](registerextensioninfo-action.md) .
+A ação RegisterProgIdInfo deve vir após a ação [InstallFiles,](installfiles-action.md) a ação [UnregisterProgIdInfo,](unregisterprogidinfo-action.md) a ação [RegisterClassInfo](registerclassinfo-action.md) e a [ação RegisterExtensionInfo.](registerextensioninfo-action.md)
 
-O sequenciamento das ações no grupo a seguir é restrito. Se qualquer subconjunto dessas ações ocorrer em conjunto em uma tabela de sequência, eles deverão ter a mesma ordem de sequência relativa mostrada:
+O sequenciamento das ações no grupo a seguir é restrito. Se qualquer subconjunto dessas ações ocorrerem juntos em uma tabela de sequência, eles deverão ter a mesma ordem de sequência relativa, conforme mostrado:
 
 -   [UnregisterClassInfo](unregisterclassinfo-action.md)
 -   [UnregisterExtensionInfo](unregisterextensioninfo-action.md)
@@ -36,9 +36,9 @@ Por exemplo, RegisterProgIdInfo deve vir após [RegisterExtensionInfo](registere
 
 
 
-| Campo | Descrição dos dados da ação                |
+| Campo | Descrição dos dados de ação                |
 |-------|-------------------------------------------|
-| \[1\] | Identificador de programa do programa registrado. |
+| \[1\] | Identificador do programa registrado. |
 
 
 
@@ -46,7 +46,7 @@ Por exemplo, RegisterProgIdInfo deve vir após [RegisterExtensionInfo](registere
 
 ## <a name="remarks"></a>Comentários
 
-A ação RegisterProgIdInfo registra todas as informações de ProgId para servidores especificados na [tabela ProgID](progid-table.md) e para os quais o servidor de classe ou servidor de extensão correspondente foi selecionado para instalação.
+A ação RegisterProgIdInfo registra todas as informações de ProgId para servidores especificados na tabela [ProgId](progid-table.md) e para os quais o servidor de classe ou servidor de extensão correspondente foi selecionado para ser instalado.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

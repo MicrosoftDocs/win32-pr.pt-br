@@ -1,15 +1,15 @@
 ---
-description: A propriedade CurrentCCService define ou recupera o serviço de legendagem oculta atual.
+description: A propriedade CurrentCCService define ou recupera o serviço de legenda fechada atual.
 ms.assetid: 094cf812-3122-4d5f-af8a-afd1c2264a2b
 title: Propriedade CurrentCCService
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bb5c1ddf243b0ec943be1f22930a8802d28d1bda
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: d836e852d1a144abb5422f71d0127eb9c37b8f333dce0723db2c2b3b1889ec50
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103825860"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120075956"
 ---
 # <a name="currentccservice-property"></a>Propriedade CurrentCCService
 
@@ -18,7 +18,7 @@ ms.locfileid: "103825860"
 
  
 
-A `CurrentCCService` propriedade define ou recupera o serviço de legendagem oculta atual.
+A `CurrentCCService` propriedade define ou recupera o serviço de legenda fechada atual.
 
 ``` syntax
 [ iService = ] MSWebDVD.CurrentCCService
@@ -26,7 +26,7 @@ A `CurrentCCService` propriedade define ou recupera o serviço de legendagem ocu
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retorna um valor inteiro que indica o tipo de serviço de legendagem oculta habilitado.
+Retorna um valor inteiro que indica o tipo de serviço de legenda fechado habilitado.
 
 ## <a name="remarks"></a>Comentários
 
@@ -38,13 +38,13 @@ Os valores possíveis dessa propriedade são:
 |-------|----------------------------------------------------------------------|
 | 0x0   | Nenhum serviço atual. Esse é o valor padrão.                       |
 | 0x1   | Legenda verdadeira, primeiro campo. Serviço padrão.                       |
-| 0x2   | Legenda do idioma secundário, segundo campo. Geralmente não usado. |
+| 0x2   | Legenda para idioma secundário, segundo campo. Geralmente não usado. |
 
 
 
  
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="see-also"></a>Confira também
 

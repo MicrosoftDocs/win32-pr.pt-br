@@ -1,9 +1,9 @@
 ---
-title: Mensagem de EM_GETIMESTATUS (WinUser. h)
-description: Obtém um conjunto de sinalizadores de status que indicam como o controle de edição interage com o IME (editor de método de entrada).
+title: EM_GETIMESTATUS mensagem (Winuser.h)
+description: Obtém um conjunto de sinalizadores de status que indicam como o controle de edição interage com o IME (Editor de Método de Entrada).
 ms.assetid: 56705aed-afab-4f4d-9e0b-dc533b516a15
 keywords:
-- Controles de EM_GETIMESTATUS de mensagens do Windows
+- EM_GETIMESTATUS controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a9b449053972db8101db7f5c01d1a03611cae67
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 01a8251a62aa9cf48bcc6476af27e4c3a5dbbb82dd0ce76ca21ae094225a3e46
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086036"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120048986"
 ---
-# <a name="em_getimestatus-message"></a>\_Mensagem em GETIMESTATUS
+# <a name="em_getimestatus-message"></a>Mensagem EM \_ GETIMESTATUS
 
-Obtém um conjunto de sinalizadores de status que indicam como o controle de edição interage com o IME (editor de método de entrada).
+Obtém um conjunto de sinalizadores de status que indicam como o controle de edição interage com o IME (Editor de Método de Entrada).
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -38,7 +38,7 @@ O tipo de status a ser recuperado. Esse parâmetro pode ser o valor a seguir.
 
 | Valor                                                                                                                                                                                       | Significado                                                       |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
-| <span id="EMSIS_COMPOSITIONSTRING"></span><span id="emsis_compositionstring"></span><dl> <dt>**\_COMposicionastring EMSIS**</dt> </dl> | Define o comportamento para manipular a cadeia de caracteres de composição.<br/> |
+| <span id="EMSIS_COMPOSITIONSTRING"></span><span id="emsis_compositionstring"></span><dl> <dt>**EMSIS \_ COMPOSITIONSTRING**</dt> </dl> | Define o comportamento para lidar com a cadeia de caracteres de composição.<br/> |
 
 
 
@@ -53,17 +53,17 @@ Este parâmetro não é usado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Dados específicos do tipo de status a recuperar. Com o valor **EMSIS \_ CompositionString** para *status*, esse valor de retorno é um ou mais dos valores a seguir.
+Dados específicos para o tipo de status a ser recuperado. Com o **valor EMSIS \_ COMPOSITIONSTRING** *para status*, esse valor de retorno é um ou mais dos valores a seguir.
 
 
 
 | Código de retorno                                                                                                    | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**EIMES \_ GETCOMPSTRATONCE**</dt> </dl>         | Se esse sinalizador for definido, o controle de edição acoplará a mensagem de [**\_ \_ composição IME do WM**](/windows/desktop/Intl/wm-ime-composition) com *fFlags* definido como GCS \_ RESULTSTR e retornará a cadeia de caracteres de resultado imediatamente. Se esse sinalizador não for definido, o controle de edição passará a mensagem de **\_ \_ composição IME do WM** para o procedimento de janela padrão e processará a cadeia de caracteres de resultado da mensagem do [**WM \_ Char**](/windows/desktop/inputdev/wm-char) ; esse é o comportamento padrão do controle de edição.<br/> |
-| <dl> <dt>**EIMES \_ CANCELCOMPSTRINFOCUS**</dt> </dl>     | Se esse sinalizador for definido, o controle de edição cancelará a cadeia de caracteres de composição quando receber a mensagem do [**WM \_ SETFOCUS**](/windows/desktop/inputdev/wm-setfocus) . Se esse sinalizador não for definido, o controle de edição não cancelará a cadeia de caracteres de composição; Esse é o comportamento padrão do controle de edição.<br/>                                                                                                                                                                       |
-| <dl> <dt>**EIMES \_ COMPLETECOMPSTRKILLFOCUS**</dt> </dl> | Se esse sinalizador for definido, o controle de edição concluirá a cadeia de caracteres de composição após receber a mensagem [**\_ KILLFOCUS do WM**](/windows/desktop/inputdev/wm-killfocus) . Se esse sinalizador não for definido, o controle de edição não concluirá a cadeia de caracteres de composição; Esse é o comportamento padrão do controle de edição.<br/>                                                                                                                                                                   |
+| <dl> <dt>**EIMES \_ GETCOMPSTRATONCE**</dt> </dl>         | Se esse sinalizador for definido, o controle de edição conectará a mensagem [**WM \_ IME \_ COMPOSITION**](/windows/desktop/Intl/wm-ime-composition) com *fFlags* definido como GCS RESULTSTR e retornará a cadeia de caracteres \_ de resultado imediatamente. Se esse sinalizador não estiver definido, o controle de edição passará a mensagem **WM \_ IME \_ COMPOSITION** para o procedimento de janela padrão e processa a cadeia de caracteres de resultado da mensagem [**WM \_ CHAR;**](/windows/desktop/inputdev/wm-char) esse é o comportamento padrão do controle de edição.<br/> |
+| <dl> <dt>**EIMES \_ CANCELCOMPSTRINFOCUS**</dt> </dl>     | Se esse sinalizador for definido, o controle de edição cancelará a cadeia de caracteres de composição quando receber a [**mensagem WM \_ SETFOCUS.**](/windows/desktop/inputdev/wm-setfocus) Se esse sinalizador não estiver definido, o controle de edição não cancelará a cadeia de caracteres de composição; esse é o comportamento padrão do controle de edição.<br/>                                                                                                                                                                       |
+| <dl> <dt>**EIMES \_ COMPLETECOMPSTRKILLFOCUS**</dt> </dl> | Se esse sinalizador for definido, o controle de edição concluirá a cadeia de caracteres de composição ao receber a mensagem [**WM \_ KILLFOCUS.**](/windows/desktop/inputdev/wm-killfocus) Se esse sinalizador não estiver definido, o controle de edição não concluirá a cadeia de caracteres de composição; esse é o comportamento padrão do controle de edição.<br/>                                                                                                                                                                   |
 
 
 
@@ -71,7 +71,7 @@ Dados específicos do tipo de status a recuperar. Com o valor **EMSIS \_ Composi
 
 ## <a name="remarks"></a>Comentários
 
-**Edição avançada:** Não há suporte para a mensagem em **\_ GETIMESTATUS** .
+**Edição rica:** Não há suporte para a mensagem **EM \_ GETIMESTATUS.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -79,9 +79,9 @@ Dados específicos do tipo de status a recuperar. Com o valor **EMSIS \_ Composi
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -89,7 +89,7 @@ Dados específicos do tipo de status a recuperar. Com o valor **EMSIS \_ Composi
 
 <dl> <dt>
 
-[**em \_ SETIMESTATUS**](em-setimestatus.md)
+[**EM \_ SETIMESTATUS**](em-setimestatus.md)
 </dt> </dl>
 
  

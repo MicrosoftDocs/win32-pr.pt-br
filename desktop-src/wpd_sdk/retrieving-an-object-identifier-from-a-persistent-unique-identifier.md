@@ -4,12 +4,12 @@ ms.assetid: 146f8943-d4e1-4b87-a812-e534082a4f14
 title: Recuperando uma ID de objeto de uma ID exclusiva persistente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c4f997f0faf586a374e5a83c6f96b6508f02eb41
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b6d4f08d496c7c03101602c945e6c27e7a2624fe84957eda932ead806f964d3f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105791416"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120054766"
 ---
 # <a name="retrieving-an-object-id-from-a-persistent-unique-id"></a>Recuperando uma ID de objeto de uma ID exclusiva persistente
 

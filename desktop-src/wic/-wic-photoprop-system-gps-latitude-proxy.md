@@ -4,12 +4,12 @@ ms.assetid: bf4f8a8a-ca59-4cd5-bbe9-64f8a003a7dc
 title: Proxy System. GPS. latitude
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fbb04967cc51f142ed3083a0a0e5f07707ef2450
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0682152e9d6fb8eb3f2d59b4d5f9d004af25702e47c96198c7d3f562f57d008a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297619"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120056456"
 ---
 # <a name="systemgpslatitude-proxy"></a>Proxy System. GPS. latitude
 
@@ -25,7 +25,7 @@ JPEG, TIFF
 
 ### <a name="read-only"></a>Somente leitura
 
-Yes
+Sim
 
 ### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de saída
 

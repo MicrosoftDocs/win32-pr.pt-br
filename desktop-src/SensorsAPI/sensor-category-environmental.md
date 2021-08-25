@@ -4,12 +4,12 @@ ms.assetid: 4a29d44b-8949-474d-a2bf-0c6e1d30b198
 title: SENSOR_CATEGORY_ENVIRONMENTAL (sensores. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b5c41d4c117dc27a3303210a485b2233cf24cde
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f7cc2a6ca1d2832045a77f0a2ffa1902732e484700afaacd757719e99d667c55
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826962"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120126606"
 ---
 # <a name="sensor_category_environmental"></a>\_ambiente da categoria do sensor \_
 
@@ -57,9 +57,9 @@ Essa categoria inclui os seguintes campos de dados definidos pela plataforma.
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                           |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                           |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                            |
-| parâmetro<br/>                   | <dl> <dt>Sensores. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Sensores. h</dt> </dl> |
 
 
 

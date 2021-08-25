@@ -1,24 +1,24 @@
 ---
-title: Inverter efeito
+title: Efeito Invert
 description: Inverte as cores de uma imagem.
 ms.assetid: aa859cd4-0fb0-9902-3add-748d0cca63ce
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ba6a39a273417cb479f2f99a1e08cf20c16e1398
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8dd718d5a6f23dc1e1ab0bae0cbe9b39411379af43e56097aee106409826c635
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644687"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120076706"
 ---
-# <a name="invert-effect"></a>Inverter efeito
+# <a name="invert-effect"></a>Efeito Invert
 
 Inverte as cores de uma imagem.
 
 O CLSID para esse efeito é CLSID \_ D2D1Invert.
 
 -   [Imagem de exemplo](#example-image)
--   [Propriedades do efeito](#effect-properties)
+-   [Propriedades de efeito](#effect-properties)
 -   [Requirements](#requirements)
 -   [Tópicos relacionados](#related-topics)
 
@@ -26,7 +26,7 @@ O CLSID para esse efeito é CLSID \_ D2D1Invert.
 
 ![exemplo de saída de efeito](images/invert-effect.png)
 
-## <a name="effect-properties"></a>Propriedades do efeito
+## <a name="effect-properties"></a>Propriedades de efeito
 
 Esse efeito não tem propriedades.
 
@@ -36,10 +36,10 @@ Esse efeito não tem propriedades.
 
 | Requisito | Valor |
 |--------------------------|---------------------------------------------------|
-| Cliente mínimo com suporte | Aplicativos do Windows 10 \[ Desktop aplicativos da \| Windows Store\] |
-| Servidor mínimo com suporte | Aplicativos do Windows 10 \[ Desktop aplicativos da \| Windows Store\] |
-| parâmetro                   | d2d1effects \_ 2. h                                  |
-| Biblioteca                  | d2d1. lib, dxguid. lib                              |
+| Cliente mínimo com suporte | \[Windows 10 aplicativos da \| área Windows Aplicativos da Store\] |
+| Servidor mínimo com suporte | \[Windows 10 aplicativos da \| área Windows Aplicativos da Store\] |
+| Cabeçalho                   | d2d1effects \_ 2.h                                  |
+| Biblioteca                  | d2d1.lib, dxguid.lib                              |
 
 
 ## <a name="related-topics"></a>Tópicos relacionados

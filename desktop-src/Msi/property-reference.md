@@ -4,12 +4,12 @@ ms.assetid: c91119b9-59d5-4a33-91cd-d3ba63659d12
 title: Referência de propriedade
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 18958c09c3a0c4c42363d725f61b03b9de00782049928c7f03cf43d4e89043b8
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e38f952632609090c69b85786c6aef64243d420b
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119828466"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122481562"
 ---
 # <a name="property-reference"></a>Referência de propriedade
 
@@ -86,25 +86,25 @@ A lista a seguir fornece links para mais informações sobre outras propriedades
 | [**MEDIAPACKAGEPATH**](mediapackagepath.md)<br/>                                 | Essa propriedade deve ser definida como o caminho relativo se o pacote de instalação não estiver localizado na raiz do CD-ROM.<br/>                                                                                                                                                                                                                                                               |
 | [**MSIARPSETTINGSIDENTIFIER**](msiarpsettingsidentifier.md)<br/>                 | Essa propriedade opcional contém uma lista delimitada por ponto e vírgula dos locais do registro onde o aplicativo armazena as configurações e preferências de um usuário. disponível com Windows Installer 4,0.<br/>                                                                                                                                                                                        |
 | [**MSIDISABLEEEUI**](msidisableeeui.md)<br/>                                     | Desabilite a interface do usuário inserida para a instalação.<br/> **[Windows Installer 4,0 e anteriores](not-supported-in-windows-installer-4-0.md):** Sem suporte.<br/>                                                                                                                                                                                                           |
-| [**MSIFASTINSTALL**](msifastinstall.md)<br/>                                     | reduza o tempo necessário para instalar um pacote de Windows Installer grande.<br/> **[Windows Installer 4,5 e anteriores](not-supported-in-windows-installer-4-5.md):** Sem suporte.<br/>                                                                                                                                                                                              |
-| [**MSIINSTALLPERUSER**](msiinstallperuser.md)<br/>                               | solicita que o Windows Installer instale o pacote somente para o usuário atual.<br/> **[Windows Installer 4,5 e anteriores](not-supported-in-windows-installer-4-5.md):** Sem suporte.<br/>                                                                                                                                                                                  |
-| [**MSINODISABLEMEDIA**](msinodisablemedia.md)<br/>                               | Defina essa propriedade para impedir que o instalador defina a propriedade [**DISABLEMEDIA**](-disablemedia.md) .<br/>                                                                                                                                                                                                                                                                        |
-| [**MSIENFORCEUPGRADECOMPONENTRULES**](msienforceupgradecomponentrules.md)<br/>   | Defina essa propriedade como 1 (uma) na linha de comando ou na [tabela de propriedades](property-table.md) para aplicar as regras de componente de atualização durante [pequenas atualizações](small-updates.md) [e pequenas atualizações de](minor-upgrades.md) um produto específico. disponível a partir do Windows Installer 3,0.<br/>                                                                                     |
-| [**MSIUNINSTALLSUPERSEDEDCOMPONENTS**](msiuninstallsupersededcomponents.md)<br/> | Quando essa propriedade tiver sido definida como 1, o instalador poderá cancelar o registro e desinstalar componentes redundantes para evitar deixar por trás dos componentes órfãos no computador.<br/> **[Windows Installer 4,0 e anteriores](not-supported-in-windows-installer-4-0.md):** Sem suporte.<br/>                                                                                                  |
-| [**PRIMARYFOLDER**](primaryfolder.md)<br/>                                       | Permite que o autor designe uma pasta principal para uma instalação. Usado para determinar os valores para as propriedades [**PrimaryVolumePath**](primaryvolumepath.md), [**PrimaryVolumeSpaceAvailable**](primaryvolumespaceavailable.md), [**PrimaryVolumeSpaceRequired**](primaryvolumespacerequired.md)e [**PrimaryVolumeSpaceRemaining**](primaryvolumespaceremaining.md) .<br/> |
+| [**MSIFASTINSTALL**](msifastinstall.md)<br/>                                     | reduza o tempo necessário para instalar um pacote de Windows Installer grande.<br/> **[Windows Instalador 4.5 e anteriores:](not-supported-in-windows-installer-4-5.md)** Sem suporte.<br/>                                                                                                                                                                                              |
+| [**MSIINSTALLPERUSER**](msiinstallperuser.md)<br/>                               | Solicita que o Windows instalador instale o pacote somente para o usuário atual.<br/> **[Windows Instalador 4.5 e anteriores:](not-supported-in-windows-installer-4-5.md)** Sem suporte.<br/>                                                                                                                                                                                  |
+| [**MSINODISABLEMEDIA**](msinodisablemedia.md)<br/>                               | De definir essa propriedade para impedir que o instalador de configurar a [**propriedade DISABLEMEDIA.**](-disablemedia.md)<br/>                                                                                                                                                                                                                                                                        |
+| [**MSFORCEUPGRADECOMPONENTRULES**](msienforceupgradecomponentrules.md)<br/>   | De definir essa propriedade como 1 (um) na linha de comando [](small-updates.md) ou na [](minor-upgrades.md) Tabela de Propriedades para aplicar as regras de componente de atualização durante pequenas atualizações e pequenas atualizações de um produto específico. [](property-table.md) Disponível a partir do Windows Instalador 3.0.<br/>                                                                                     |
+| [**MSIUNINSTALLSUPERSEDEDCOMPONENTS**](msiuninstallsupersededcomponents.md)<br/> | Quando essa propriedade tiver sido definida como 1, o instalador poderá desinstalar e desinstalar componentes redundantes para evitar deixar para trás componentes órfãos no computador.<br/> **[Windows Instalador 4.0 e anterior:](not-supported-in-windows-installer-4-0.md)** Sem suporte.<br/>                                                                                                  |
+| [**PRIMARYFOLDER**](primaryfolder.md)<br/>                                       | Permite que o autor designe uma pasta primária para uma instalação. Usado para determinar os valores das propriedades [**PrimaryVolumePath,**](primaryvolumepath.md) [**PrimaryVolumeSpaceAvailable,**](primaryvolumespaceavailable.md) [**PrimaryVolumeSpaceRequired**](primaryvolumespacerequired.md)e [**PrimaryVolumeSpaceRemaining.**](primaryvolumespaceremaining.md)<br/> |
 | [**Com privilégios**](privileged.md)<br/>                                             | Executa uma instalação com privilégios elevados.<br/>                                                                                                                                                                                                                                                                                                                                     |
 | [**PROMPTROLLBACKCOST**](promptrollbackcost.md)<br/>                             | Ação se não houver espaço em disco suficiente para a instalação.<br/>                                                                                                                                                                                                                                                                                                                   |
-| [**Inicialize**](reboot.md)<br/>                                                     | Força ou suprime uma reinicialização.<br/>                                                                                                                                                                                                                                                                                                                                                    |
-| [**REBOOTPROMPT**](rebootprompt.md)<br/>                                         | Suprime a exibição de prompts para reinicializações para o usuário. Todas as reinicializações necessárias ocorrem automaticamente.<br/>                                                                                                                                                                                                                                                                     |
+| [**REINICIAR**](reboot.md)<br/>                                                     | Força ou suprime uma reinicialização.<br/>                                                                                                                                                                                                                                                                                                                                                    |
+| [**REBOOTPROMPT**](rebootprompt.md)<br/>                                         | Suprime a exibição de prompts de reinicializações para o usuário. Todas as reinicializações necessárias ocorrem automaticamente.<br/>                                                                                                                                                                                                                                                                     |
 | [**ROOTDRIVE**](rootdrive.md)<br/>                                               | Unidade padrão para uma instalação.<br/>                                                                                                                                                                                                                                                                                                                                                 |
-| [**ORDEM**](sequence.md)<br/>                                                 | Uma tabela que tem o esquema de tabela de sequência.<br/>                                                                                                                                                                                                                                                                                                                                        |
+| [**SEQUENCE**](sequence.md)<br/>                                                 | Uma tabela que tem o esquema de tabela de sequência.<br/>                                                                                                                                                                                                                                                                                                                                        |
 | [**SHORTFILENAMES**](shortfilenames.md)<br/>                                     | Faz com que nomes de arquivo curtos sejam usados.<br/>                                                                                                                                                                                                                                                                                                                                                |
-| [**TRANSFORMAÇÕES**](transforms.md)<br/>                                             | Lista de transformações a serem aplicadas a um banco de dados.<br/>                                                                                                                                                                                                                                                                                                                                    |
-| [**TRANSFORMSATSOURCE**](transformsatsource.md)<br/>                             | Informa o instalador de que as transformações de um produto residem na origem.<br/>                                                                                                                                                                                                                                                                                                      |
-| [**TRANSFORMSSECURE**](transformssecure.md)<br/>                                 | Definir a propriedade [**TRANSFORMSECURE**](transformssecure.md) como 1 (uma) informa ao instalador que as transformações devem ser armazenadas em cache localmente no computador do usuário em um local em que o usuário não tem acesso de gravação.<br/>                                                                                                                                                           |
-| [**MsiLogFileLocation**](msilogfilelocation.md)<br/>                             | O instalador define o valor dessa propriedade como o caminho completo do arquivo de log, quando o log foi habilitado. essa propriedade está disponível a partir do Windows Installer 4,0.<br/>                                                                                                                                                                                                     |
-| [**MsiLogging**](msilogging.md)<br/>                                             | define o modo de log padrão para o pacote de Windows Installer. essa propriedade está disponível a partir do Windows Installer 4,0.<br/>                                                                                                                                                                                                                                                   |
-| [**MSIUSEREALADMINDETECTION**](msiuserealadmindetection.md)<br/>                 | Defina essa propriedade como 1 para solicitar que o instalador Use informações reais do usuário ao definir a propriedade [**AdminUser**](adminuser.md) . essa propriedade está disponível a partir do Windows Installer 4,0.<br/>                                                                                                                                                                         |
+| [**TRANSFORMA**](transforms.md)<br/>                                             | Lista de transformaçãos a serem aplicadas a um banco de dados.<br/>                                                                                                                                                                                                                                                                                                                                    |
+| [**TRANSFORMSATSOURCE**](transformsatsource.md)<br/>                             | Informa ao instalador que as transformação de um produto residem na origem.<br/>                                                                                                                                                                                                                                                                                                      |
+| [**TRANSFORMSSECURE**](transformssecure.md)<br/>                                 | Definir a propriedade [**TRANSFORMSECURE**](transformssecure.md) como 1 (um) informa ao instalador que as transformaçãos devem ser armazenadas em cache localmente no computador do usuário em um local em que o usuário não tenha acesso de gravação.<br/>                                                                                                                                                           |
+| [**MsiLogFileLocation**](msilogfilelocation.md)<br/>                             | O instalador define o valor dessa propriedade como o caminho completo do arquivo de log, quando o registro em log foi habilitado. Essa propriedade está disponível a partir do Windows Installer 4.0.<br/>                                                                                                                                                                                                     |
+| [**MsiLogging**](msilogging.md)<br/>                                             | Define o modo de registro em log padrão para o Windows do Instalador. Essa propriedade está disponível a partir do Windows Installer 4.0.<br/>                                                                                                                                                                                                                                                   |
+| [**MSIUSEREALADMINDETECTION**](msiuserealadmindetection.md)<br/>                 | De definir essa propriedade como 1 para solicitar que o instalador use informações reais do usuário ao definir a [**propriedade AdminUser.**](adminuser.md) Essa propriedade está disponível a partir do Windows Installer 4.0.<br/>                                                                                                                                                                         |
 
 
 
@@ -112,7 +112,7 @@ A lista a seguir fornece links para mais informações sobre outras propriedades
 
 ## <a name="date-time-properties"></a>Propriedades de data, hora
 
-As propriedades de [**Data**](date.md) e [**hora**](time.md) são propriedades dinâmicas que o instalador define quando os dados são extraídos.
+As [**propriedades Data**](date.md) [**e**](time.md) Hora são propriedades ao vivo que o instalador define quando os dados são extraídos.
 
 
 
@@ -125,9 +125,9 @@ As propriedades de [**Data**](date.md) e [**hora**](time.md) são propriedades d
 
  
 
-## <a name="feature-installation-options-properties"></a>Propriedades de opções de instalação de recurso
+## <a name="feature-installation-options-properties"></a>Propriedades das opções de instalação do recurso
 
-A lista a seguir fornece links para mais informações sobre as propriedades de opções de instalação de recursos.
+A lista a seguir fornece links para obter mais informações sobre as propriedades das opções de instalação do recurso.
 
 
 
@@ -135,24 +135,24 @@ A lista a seguir fornece links para mais informações sobre as propriedades de 
 |-------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**ADDDEFAULT**](adddefault.md)<br/>                             | Lista de recursos a serem instalados na configuração padrão.<br/>                                                                                                         |
 | [**ADDLOCAL**](addlocal.md)<br/>                                 | Lista de recursos a serem instalados localmente.<br/>                                                                                                                              |
-| [**Addsource**](addsource.md)<br/>                               | Lista de recursos a serem executados da origem.<br/>                                                                                                                                |
-| [**ANUNCI**](advertise.md)<br/>                               | Lista de recursos a serem anunciados.<br/>                                                                                                                                     |
+| [**ADDSOURCE**](addsource.md)<br/>                               | Lista de recursos a serem executados da origem.<br/>                                                                                                                                |
+| [**ANUNCIAR**](advertise.md)<br/>                               | Lista de recursos a serem anunciados.<br/>                                                                                                                                     |
 | [**COMPADDDEFAULT**](compadddefault.md)<br/>                     | Lista de componentes a serem instalados na configuração padrão.<br/>                                                                                                       |
-| [**COMPADDLOCAL**](compaddlocal.md)<br/>                         | Lista de IDs de componentes a serem instalados localmente.<br/>                                                                                                                         |
-| [**COMPADDSOURCE**](compaddsource.md)<br/>                       | Lista de IDs de componentes a serem executados da mídia de origem.<br/>                                                                                                                        |
-| [**FILEADDDEFAULT**](fileadddefault.md)<br/>                     | Lista de chaves de arquivo para os arquivos a serem instalados na configuração padrão.<br/>                                                                                              |
-| [**FILEADDLOCAL**](fileaddlocal.md)<br/>                         | Lista de chaves de arquivo para os arquivos a serem executados localmente.<br/>                                                                                                                         |
-| [**FILEADDSOURCE**](fileaddsource.md)<br/>                       | Lista de chaves de arquivo a serem executadas na mídia de origem.<br/>                                                                                                                     |
-| [**MSIDISABLELUAPATCHING**](msidisableluapatching.md)<br/>       | Definir essa propriedade impede a aplicação de patches de LUA (usuário menos privilegiado) de um aplicativo.<br/>                                                                                 |
+| [**COMPADDLOCAL**](compaddlocal.md)<br/>                         | Lista de IDs de componente a serem instaladas localmente.<br/>                                                                                                                         |
+| [**COMPADDSOURCE**](compaddsource.md)<br/>                       | Lista de IDs de componente a ser executado da mídia de origem.<br/>                                                                                                                        |
+| [**FILEADDDEFAULT**](fileadddefault.md)<br/>                     | Lista de chaves de arquivo para arquivos a serem instalados na configuração padrão.<br/>                                                                                              |
+| [**FILEADDLOCAL**](fileaddlocal.md)<br/>                         | Lista de chaves de arquivo para arquivos a serem executados localmente.<br/>                                                                                                                         |
+| [**FILEADDSOURCE**](fileaddsource.md)<br/>                       | Lista de chaves de arquivo a serem executados na mídia de origem.<br/>                                                                                                                     |
+| [**MSIDISABLELUAPATCHING**](msidisableluapatching.md)<br/>       | Definir essa propriedade impede a aplicação de patch de LUA (Usuário Menos Privilegiado) de um aplicativo.<br/>                                                                                 |
 | [**MsiPatchRemovalList**](msipatchremovallist.md)<br/>           | Lista de patches a serem removidos durante a instalação.<br/>                                                                                                                 |
-| [**MSIRESTARTMANAGERCONTROL**](msirestartmanagercontrol.md)<br/> | Especifica se o pacote usa o [Gerenciador de reinicialização](../rstmgr/restart-manager-portal.md) ou a funcionalidade [FilesInUse](filesinuse-dialog.md) .<br/>                                          |
-| [**MSIDISABLERMRESTART**](msidisablermrestart.md)<br/>           | Especifica como os aplicativos ou serviços que estão usando atualmente arquivos afetados por uma atualização devem ser desligados e reiniciados para habilitar a instalação da atualização.<br/> |
-| [**MSIRMSHUTDOWN**](msirmshutdown.md)<br/>                       | Especifica como os aplicativos ou serviços que estão usando atualmente arquivos afetados por uma atualização devem ser desligados para habilitar a instalação da atualização.<br/>               |
-| [**MSIPATCHREMOVE**](msipatchremove.md)<br/>                     | Definir essa propriedade Remove patches.<br/>                                                                                                                                 |
-| [**DISTRIBUÍDO**](patch.md)<br/>                                       | A definição dessa propriedade aplica um patch.<br/>                                                                                                                                 |
-| [**Install**](reinstall.md)<br/>                               | Lista de recursos a serem reinstalados.<br/>                                                                                                                                    |
-| [**REINSTALLMODE**](reinstallmode.md)<br/>                       | Uma cadeia de caracteres que contém letras que especificam o tipo de reinstalação a ser executado.<br/>                                                                                          |
-| [**EXCLU**](remove.md)<br/>                                     | Lista de recursos a serem removidos.<br/>                                                                                                                                        |
+| [**MSIRESTARTMANAGERCONTROL**](msirestartmanagercontrol.md)<br/> | Especifica se o pacote usa a funcionalidade [Gerenciador de Reinicialização](../rstmgr/restart-manager-portal.md) [ou FilesInUse.](filesinuse-dialog.md)<br/>                                          |
+| [**MSIDISABLERMRESTART**](msidisablermrestart.md)<br/>           | Especifica como os aplicativos ou serviços que estão usando arquivos afetados por uma atualização devem ser desligados e reiniciados para habilitar a instalação da atualização.<br/> |
+| [**MSIRMSHUTDOWN**](msirmshutdown.md)<br/>                       | Especifica como os aplicativos ou serviços que estão usando arquivos afetados por uma atualização devem ser desligados para habilitar a instalação da atualização.<br/>               |
+| [**MSIPATCHREMOVE**](msipatchremove.md)<br/>                     | Definir essa propriedade remove patches.<br/>                                                                                                                                 |
+| [**PATCH**](patch.md)<br/>                                       | Definir essa propriedade aplica um patch.<br/>                                                                                                                                 |
+| [**REINSTALAR**](reinstall.md)<br/>                               | Lista de recursos a serem reinstalados.<br/>                                                                                                                                    |
+| [**REINSTALLMODE**](reinstallmode.md)<br/>                       | Uma cadeia de caracteres que contém letras que especificam o tipo de reinstalação a ser executar.<br/>                                                                                          |
+| [**REMOVER**](remove.md)<br/>                                     | Lista de recursos a serem removidos.<br/>                                                                                                                                        |
 
 
 
@@ -160,81 +160,27 @@ A lista a seguir fornece links para mais informações sobre as propriedades de 
 
 ## <a name="hardware-properties"></a>Propriedades de hardware
 
-a lista a seguir identifica as propriedades de hardware que o Windows Installer define na inicialização.
+A lista a seguir identifica as propriedades de hardware que o instalador Windows configura na inicialização.
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Propriedade</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="alpha.md"><strong>Alpha</strong></a><br/></td>
-<td>O nível numérico do processador quando executado em um processador Alpha.<br/>
-<blockquote>
-[!Note]<br />
-esta propriedade é obsoleta, a plataforma alfa não tem suporte pelo Windows Installer.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td><a href="borderside.md"><strong>BorderSide</strong></a><br/></td>
-<td>A largura das bordas da janela, em pixels.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="bordertop.md"><strong>BorderTop</strong></a><br/></td>
-<td>A altura das bordas da janela, em pixels.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="captionheight.md"><strong>CaptionHeight</strong></a><br/></td>
-<td>A altura da área de legenda normal, em pixels.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="colorbits.md"><strong>ColorBits</strong></a><br/></td>
-<td>O número de bits de cor adjacentes para cada pixel.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="intel.md"><strong>Intel</strong></a><br/></td>
-<td>O nível numérico do processador quando executado em um processador Intel.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="intel64.md"><strong>Intel64</strong></a><br/></td>
-<td>O nível numérico do processador quando executado em um processador Itanium.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="msix64.md"><strong>Msix64</strong></a><br/></td>
-<td>O nível numérico do processador quando executado em um processador x64.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="physicalmemory.md"><strong>PhysicalMemory</strong></a><br/></td>
-<td>O tamanho da RAM instalada, em megabytes.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="screenx.md"><strong>ScreenX</strong></a><br/></td>
-<td>A largura da tela, em pixels.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="screeny.md"><strong>Tela</strong></a><br/></td>
-<td>A altura da tela, em pixels.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="textheight.md"><strong>TextHeight</strong></a><br/></td>
-<td>A altura dos caracteres, em unidades lógicas.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="virtualmemory.md"><strong>VirtualMemory</strong></a><br/></td>
-<td>A quantidade de espaço de arquivo de paginação disponível, em megabytes.<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Propriedade | Descrição | 
+|----------|-------------|
+| <a href="alpha.md"><strong>Alpha</strong></a><br /> | O nível de processador numérico ao ser executado em um processador Alfa.<br /><blockquote>[!Note]<br />Essa propriedade está obsoleta, não há suporte para a plataforma Alfa Windows Installer.</blockquote><br /> | 
+| <a href="borderside.md"><strong>BorderSide</strong></a><br /> | A largura das bordas da janela, em pixels.<br /> | 
+| <a href="bordertop.md"><strong>BorderTop</strong></a><br /> | A altura das bordas da janela, em pixels.<br /> | 
+| <a href="captionheight.md"><strong>Captionheight</strong></a><br /> | A altura da área de legenda normal, em pixels.<br /> | 
+| <a href="colorbits.md"><strong>ColorBits</strong></a><br /> | O número de bits de cores adjacentes para cada pixel.<br /> | 
+| <a href="intel.md"><strong>Intel</strong></a><br /> | O nível de processador numérico ao ser executado em um processador Intel.<br /> | 
+| <a href="intel64.md"><strong>Intel64</strong></a><br /> | O nível numérico do processador ao executar em um processador Itanium.<br /> | 
+| <a href="msix64.md"><strong>Msix64</strong></a><br /> | O nível de processador numérico ao ser executado em um processador x64.<br /> | 
+| <a href="physicalmemory.md"><strong>PhysicalMemory</strong></a><br /> | O tamanho da RAM instalada, em megabytes.<br /> | 
+| <a href="screenx.md"><strong>ScreenX</strong></a><br /> | A largura da tela, em pixels.<br /> | 
+| <a href="screeny.md"><strong>ScreenY</strong></a><br /> | A altura da tela, em pixels.<br /> | 
+| <a href="textheight.md"><strong>Textheight</strong></a><br /> | A altura dos caracteres, em unidades lógicas.<br /> | 
+| <a href="virtualmemory.md"><strong>VirtualMemory</strong></a><br /> | A quantidade de espaço de arquivo de página disponível, em megabytes.<br /> | 
+
 
 
 
@@ -242,39 +188,39 @@ esta propriedade é obsoleta, a plataforma alfa não tem suporte pelo Windows In
 
 ## <a name="installation-status-properties"></a>Propriedades de status da instalação
 
-A lista a seguir fornece links para mais informações sobre as propriedades de status que são atualizadas pelo instalador durante a instalação.
+A lista a seguir fornece links para obter mais informações sobre as propriedades de status que são atualizadas pelo instalador durante a instalação.
 
 
 
 | Propriedade                                                                      | Descrição                                                                                                                                                                                                                                                              |
 |-------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**AFTERREBOOT**](afterreboot.md)<br/>                                 | Indica que a instalação atual segue uma reinicialização que a [ação ForceReboot](forcereboot-action.md) invoca.<br/>                                                                                                                                                |
-| [**CostingComplete**](costingcomplete.md)<br/>                         | Indica se o custo do espaço em disco foi concluído.<br/>                                                                                                                                                                                                             |
+| [**AFTERREBOOT**](afterreboot.md)<br/>                                 | Indica que a instalação atual segue uma reinicialização invocada [pela ação ForceReboot.](forcereboot-action.md)<br/>                                                                                                                                                |
+| [**CostingComplete**](costingcomplete.md)<br/>                         | Indica se o custo do espaço em disco está concluído.<br/>                                                                                                                                                                                                             |
 | [**Instalado**](installed.md)<br/>                                     | Indica que um produto já está instalado.<br/>                                                                                                                                                                                                                |
-| [**MSICHECKCRCS**](msicheckcrcs.md)<br/>                               | O instalador fará um CRC nos arquivos somente se a propriedade [**MSICHECKCRCS**](msicheckcrcs.md) estiver definida.<br/>                                                                                                                                                           |
-| [**MsiRestartManagerSessionKey**](msirestartmanagersessionkey.md)<br/> | O instalador define essa propriedade como a chave de sessão para a sessão do [Gerenciador de reinicialização](../rstmgr/restart-manager-portal.md) .<br/>                                                                                                                                                         |
-| [**MsiRunningElevated**](msirunningelevated-.md)<br/>                  | O instalador define o valor dessa propriedade como 1 quando o instalador está sendo executado com privilégios [*elevados*](e-gly.md) .<br/>                                                                                                                   |
-| [**MsiSystemRebootPending**](msisystemrebootpending.md)<br/>           | O instalador definirá essa propriedade como 1 se uma reinicialização do sistema operacional estiver pendente no momento.<br/>                                                                                                                                                              |
-| [**MsiUIHideCancel**](msiuihidecancel.md)<br/>                         | O instalador define [**MsiUIHideCancel**](msiuihidecancel.md) como 1 quando o nível de instalação interno inclui **INSTALLUILEVEL \_ HIDECANCEL**.<br/>                                                                                                                   |
-| [**MsiUIProgressOnly**](msiuiprogressonly.md)<br/>                     | O instalador define [**MsiUIProgressOnly**](msiuiprogressonly.md) como 1 quando o nível de instalação interno inclui **INSTALLUILEVEL \_ PROGRESSONLY**.<br/>                                                                                                             |
-| [**MsiUISourceResOnly**](msiuisourceresonly.md)<br/>                   | [**MsiUISourceResOnly**](msiuisourceresonly.md) para 1 (um) quando o nível de instalação interno inclui **INSTALLUILEVEL \_ SOURCERESONLY**.<br/>                                                                                                                       |
-| [**Nocompanyname**](nocompanyname.md)<br/>                             | Suprime a configuração automática da propriedade [**CompanyName**](companyname.md) .<br/>                                                                                                                                                                          |
-| [**NOUSERNAME**](nousername.md)<br/>                                   | Suprime a configuração automática da propriedade [**username**](username.md) .<br/>                                                                                                                                                                                |
+| [**MSICHECKCRCS**](msicheckcrcs.md)<br/>                               | O Instalador faz um CRC em arquivos somente se a [**propriedade MSICHECKCRCS**](msicheckcrcs.md) estiver definida.<br/>                                                                                                                                                           |
+| [**MsiRestartManagerSessionKey**](msirestartmanagersessionkey.md)<br/> | O Instalador define essa propriedade como a chave de sessão para a [sessão do Gerenciador de Reinicialização.](../rstmgr/restart-manager-portal.md)<br/>                                                                                                                                                         |
+| [**MsiRunningElevated**](msirunningelevated-.md)<br/>                  | O Instalador define o valor dessa propriedade como 1 quando o instalador está em execução com [*privilégios elevados.*](e-gly.md)<br/>                                                                                                                   |
+| [**MsiSystemRebootPending**](msisystemrebootpending.md)<br/>           | O Instalador define essa propriedade como 1 se uma reinicialização do sistema operacional estiver pendente no momento.<br/>                                                                                                                                                              |
+| [**MsiUIHideCancel**](msiuihidecancel.md)<br/>                         | O Instalador define [**MsiUIHideCancel**](msiuihidecancel.md) como 1 quando o nível de instalação interno inclui **INSTALLUILEVEL \_ HIDECANCEL**.<br/>                                                                                                                   |
+| [**MsiUIProgressOnly**](msiuiprogressonly.md)<br/>                     | O Instalador define [**MsiUIProgressOnly**](msiuiprogressonly.md) como 1 quando o nível de instalação interno inclui **INSTALLUILEVEL \_ PROGRESSONLY.**<br/>                                                                                                             |
+| [**MsiUISourceResOnly**](msiuisourceresonly.md)<br/>                   | [**MsiUISourceResOnly**](msiuisourceresonly.md) a 1 (um) quando o nível de instalação interno inclui **INSTALLUILEVEL \_ SOURCERESONLY**.<br/>                                                                                                                       |
+| [**NOCOMPANYNAME**](nocompanyname.md)<br/>                             | Suprime a configuração automática da [**propriedade COMPANYNAME.**](companyname.md)<br/>                                                                                                                                                                          |
+| [**NOUSERNAME**](nousername.md)<br/>                                   | Suprime a configuração automática da propriedade [**USERNAME.**](username.md)<br/>                                                                                                                                                                                |
 | [**OutOfDiskSpace**](outofdiskspace.md)<br/>                           | Espaço em disco insuficiente para acomodar a instalação.<br/>                                                                                                                                                                                                      |
-| [**OutOfNoRbDiskSpace**](outofnorbdiskspace.md)<br/>                   | Espaço em disco insuficiente com reversão desativada.<br/>                                                                                                                                                                                                             |
+| [**OutOfNoRbDiskSpace**](outofnorbdiskspace.md)<br/>                   | Espaço em disco insuficiente com reação desligada.<br/>                                                                                                                                                                                                             |
 | [**Pré-selecionados**](preselected.md)<br/>                                 | Os recursos já estão selecionados.<br/>                                                                                                                                                                                                                                |
-| [**PrimaryVolumePath**](primaryvolumepath.md)<br/>                     | O instalador define o valor dessa propriedade como o caminho do volume que a propriedade [**PRIMARYFOLDER**](primaryfolder.md) designa.<br/>                                                                                                                  |
-| [**PrimaryVolumeSpaceAvailable**](primaryvolumespaceavailable.md)<br/> | O instalador define o valor dessa propriedade como uma cadeia de caracteres que representa o número total de bytes disponíveis no volume que a propriedade [**PrimaryVolumePath**](primaryvolumepath.md) faz referência.<br/>                                                      |
-| [**PrimaryVolumeSpaceRemaining**](primaryvolumespaceremaining.md)<br/> | O instalador define o valor dessa propriedade como uma cadeia de caracteres que representa o número total de bytes restantes no volume que a propriedade [**PrimaryVolumePath**](primaryvolumepath.md) faz referência se todos os recursos selecionados no momento estiverem instalados.<br/> |
-| [**PrimaryVolumeSpaceRequired**](primaryvolumespacerequired.md)<br/>   | O instalador define o valor dessa propriedade como uma cadeia de caracteres que representa o número total de bytes exigidos por todos os recursos atualmente selecionados no volume ao qual a propriedade [**PrimaryVolumePath**](primaryvolumepath.md) faz referência.<br/>                    |
-| [**ProductLanguage**](productlanguage.md)<br/>                         | Identificador de idioma numérico (LANGid) para o banco de dados. NECESSÁRIA<br/>                                                                                                                                                                                             |
-| [**ReplacedInUseFiles**](replacedinusefiles.md)<br/>                   | Defina se o instalador é instalado em um arquivo que está sendo mantido em uso.<br/>                                                                                                                                                                                          |
-| [**Volte**](resume.md)<br/>                                           | Instalação retomada.<br/>                                                                                                                                                                                                                                         |
-| [**RollbackDisabled**](rollbackdisabled.md)<br/>                       | O instalador define essa propriedade quando a reversão está desabilitada.<br/>                                                                                                                                                                                                   |
+| [**PrimaryVolumePath**](primaryvolumepath.md)<br/>                     | O Instalador define o valor dessa propriedade para o caminho do volume designado pela propriedade [**PRIMARYFOLDER.**](primaryfolder.md)<br/>                                                                                                                  |
+| [**PrimaryVolumeSpaceAvailable**](primaryvolumespaceavailable.md)<br/> | O Instalador define o valor dessa propriedade como uma cadeia de caracteres que representa o número total de bytes disponíveis no volume referenciado pela propriedade [**PrimaryVolumePath.**](primaryvolumepath.md)<br/>                                                      |
+| [**PrimaryVolumeSpaceRemaining**](primaryvolumespaceremaining.md)<br/> | O Instalador define o valor dessa propriedade como uma cadeia de caracteres que representa o número total de bytes restantes no volume referenciado pela propriedade [**PrimaryVolumePath**](primaryvolumepath.md) se todos os recursos selecionados no momento estão instalados.<br/> |
+| [**PrimaryVolumeSpaceRequired**](primaryvolumespacerequired.md)<br/>   | O Instalador define o valor dessa propriedade como uma cadeia de caracteres que representa o número total de bytes necessários para todos os recursos selecionados no momento no volume referenciado pela propriedade [**PrimaryVolumePath.**](primaryvolumepath.md)<br/>                    |
+| [**ProductLanguage**](productlanguage.md)<br/>                         | LANGID (identificador de idioma numérico) para o banco de dados. (OBRIGATÓRIO)<br/>                                                                                                                                                                                             |
+| [**ReplacedInUseFiles**](replacedinusefiles.md)<br/>                   | Definir se o instalador for instalado em um arquivo que está sendo mantido em uso.<br/>                                                                                                                                                                                          |
+| [**CURRÍCULO**](resume.md)<br/>                                           | Instalação retomada.<br/>                                                                                                                                                                                                                                         |
+| [**RollbackDisabled**](rollbackdisabled.md)<br/>                       | O instalador define essa propriedade quando a reação é desabilitada.<br/>                                                                                                                                                                                                   |
 | [**UILevel**](uilevel.md)<br/>                                         | Indica o nível da interface do usuário.<br/>                                                                                                                                                                                                                           |
-| [**UpdateStarted**](updatestarted.md)<br/>                             | Defina quando as alterações no sistema começaram para esta instalação.<br/>                                                                                                                                                                                              |
+| [**UpdateStarted**](updatestarted.md)<br/>                             | Definir quando as alterações no sistema foram iniciadas para esta instalação.<br/>                                                                                                                                                                                              |
 | [**UPGRADINGPRODUCTCODE**](upgradingproductcode.md)<br/>               | Definido pelo instalador quando uma atualização remove um aplicativo.<br/>                                                                                                                                                                                                  |
-| [**VersionMsi**](versionmsi.md)<br/>                                   | o instalador define essa propriedade para a versão do Windows Installer que é executada durante a instalação.<br/>                                                                                                                                                     |
+| [**VersionMsi**](versionmsi.md)<br/>                                   | O instalador define essa propriedade como a versão do Windows Instalador que é executado durante a instalação.<br/>                                                                                                                                                     |
 
 
 
@@ -282,18 +228,18 @@ A lista a seguir fornece links para mais informações sobre as propriedades de 
 
 ## <a name="operating-system-properties"></a>Propriedades do sistema operacional
 
-A lista a seguir fornece links para mais informações sobre as propriedades do sistema operacional que o instalador define na inicialização.
+A lista a seguir fornece links para obter mais informações sobre as propriedades do sistema operacional que o Instalador define na inicialização.
 
 
 
 | Nome da Propriedade                                                                             | Breve descrição                                                                                                                                                                                                                                                                               |
 |-------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**AdminUser**](adminuser.md)<br/>                                                 | defina em Windows 2000 se o usuário tiver privilégios de administrador.<br/>                                                                                                                                                                                                                        |
-| [**ComputerName**](computername.md)<br/>                                           | Nome do computador do sistema atual.<br/>                                                                                                                                                                                                                                                 |
-| [**MsiNetAssemblySupport**](msinetassemblysupport.md)<br/>                         | Em sistemas que dão suporte a assemblies de Common Language Runtime, o instalador define o valor dessa propriedade como a versão de arquivo do fusion.dll. O instalador não definirá essa propriedade se o sistema operacional não oferecer suporte a assemblies Common Language Runtime.<br/>                   |
-| [**MsiNTProductType**](msintproducttype.md)<br/>                                   | indica o tipo de produto Windows.<br/>                                                                                                                                                                                                                                                  |
+| [**Adminuser**](adminuser.md)<br/>                                                 | De acordo Windows 2000 se o usuário tiver privilégios de administrador.<br/>                                                                                                                                                                                                                        |
+| [**Computername**](computername.md)<br/>                                           | Nome do computador do sistema atual.<br/>                                                                                                                                                                                                                                                 |
+| [**MsiNetAssemblySupport**](msinetassemblysupport.md)<br/>                         | Em sistemas que suportam assemblies do Common Language Runtime, o Instalador define o valor dessa propriedade para a versão do arquivo fusion.dll. O Instalador não definirá essa propriedade se o sistema operacional não dá suporte a assemblies do Common Language Runtime.<br/>                   |
+| [**MsiNTProductType**](msintproducttype.md)<br/>                                   | Indica o tipo Windows produto.<br/>                                                                                                                                                                                                                                                  |
 | [**MsiNTSuiteBackOffice**](msintsuitebackoffice.md)<br/>                           | No Windows 2000 e sistemas operacionais posteriores, o Instalador define essa propriedade como 1 (um) somente se os componentes do Microsoft BackOffice estão instalados.<br/>                                                                                                                                      |
-| [**MsiNTSuiteDataCenter**](msintsuitedatacenter.md)<br/>                           | No Windows 2000 e sistemas operacionais posteriores, o Instalador define essa propriedade como 1 (um) somente se Windows Datacenter Server 2000 estiver instalado.<br/>                                                                                                                                        |
+| [**MsiNTSuiteDataCenter**](msintsuitedatacenter.md)<br/>                           | No Windows 2000 e sistemas operacionais posteriores, o Instalador define essa propriedade como 1 (um) somente se Windows 2000 Datacenter Server estiver instalado.<br/>                                                                                                                                        |
 | [**MsiNTSuiteEnterprise**](msintsuiteenterprise.md)<br/>                           | No Windows 2000 e sistemas operacionais posteriores, o Instalador define essa propriedade como 1 (um) somente se Windows 2000 Advanced Server estiver instalado.<br/>                                                                                                                                          |
 | [**MsiNTSuitePersonal**](msintsuitepersonal.md)<br/>                               | No Windows XP e sistemas operacionais posteriores, o Instalador define essa propriedade como 1 (um) somente se o sistema operacional for Home (não Professional).<br/>                                                                                                                                      |
 | [**MsiNTSuiteSmallBusiness**](msintsuitesmallbusiness.md)<br/>                     | No Windows 2000 e sistemas operacionais posteriores, o Instalador define essa propriedade como 1 (um) somente se o Microsoft Small Business Server estiver instalado.<br/>                                                                                                                                       |

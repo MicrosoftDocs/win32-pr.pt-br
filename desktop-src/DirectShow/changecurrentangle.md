@@ -1,15 +1,15 @@
 ---
 description: O evento ChangeCurrentAngle é enviado quando o disco habilita ou desabilita a alteração do ângulo.
 ms.assetid: 432e532f-a7af-4134-b01d-46d617c76974
-title: ChangeCurrentAngle (Segment. h)
+title: ChangeCurrentAngle (Segment.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 90369bbd785950819a2f8a5a34b7690966ddd64c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dd7d2d77eff056c3e6bff5d82fded2b6ed9f84253367e8b8f8ba657575f55d30
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105758856"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120055556"
 ---
 # <a name="changecurrentangle"></a>ChangeCurrentAngle
 
@@ -31,7 +31,7 @@ ChangeCurrentAngle(bEnabled)
 <span id="bEnabled"></span><span id="benabled"></span><span id="BENABLED"></span>*bEnabled*
 </dt> <dd>
 
-Especifica se a operação está habilitada ou desabilitada como um booliano.
+Especifica se a operação está habilitada ou desabilitada como booliana.
 
 </dd> </dl>
 
@@ -41,7 +41,7 @@ Especifica se a operação está habilitada ou desabilitada como um booliano.
 
 | Requisito | Valor |
 |-------------------|--------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Segment. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Segment.h</dt> </dl> |
 
 
 

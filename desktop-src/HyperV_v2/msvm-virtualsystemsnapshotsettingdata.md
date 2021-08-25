@@ -1,7 +1,7 @@
 ---
-description: Fornece informações adicionais a serem usadas com o método createsnapshot da classe Msvm \_ VirtualSystemSnapshotService.
+description: Fornece informações adicionais a serem usadas com o método CreateSnapshot da classe Msvm \_ VirtualSystemSnapshotService.
 ms.assetid: d4a025c4-6a3c-4ae0-8f2c-421c1aa1eb23
-title: Classe Msvm_VirtualSystemSnapshotSettingData
+title: Msvm_VirtualSystemSnapshotSettingData classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 32ab52da97e9fcc943c3a70548bb6b1a6d7994a0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d112e4109ed6d0ab899aadf59f0e991f52259eaf2c514c6d9215b04a8cafcab8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104370600"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120046246"
 ---
-# <a name="msvm_virtualsystemsnapshotsettingdata-class"></a>\_Classe Msvm VirtualSystemSnapshotSettingData
+# <a name="msvm_virtualsystemsnapshotsettingdata-class"></a>Classe Msvm \_ VirtualSystemSnapshotSettingData
 
-Fornece informações adicionais a serem usadas com o método [**createsnapshot**](cim-virtualsystemsnapshotservice-createsnapshot.md) da classe [**Msvm \_ VirtualSystemSnapshotService**](msvm-virtualsystemsnapshotservice.md) .
+Fornece informações adicionais a serem usadas com [**o método CreateSnapshot**](cim-virtualsystemsnapshotservice-createsnapshot.md) da [**classe Msvm \_ VirtualSystemSnapshotService.**](msvm-virtualsystemsnapshotservice.md)
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas.
 
@@ -43,13 +43,13 @@ class Msvm_VirtualSystemSnapshotSettingData : CIM_SettingData
 
 ## <a name="members"></a>Membros
 
-A classe **Msvm \_ VirtualSystemSnapshotSettingData** tem estes tipos de membros:
+A **classe Msvm \_ VirtualSystemSnapshotSettingData** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Msvm \_ VirtualSystemSnapshotSettingData** tem essas propriedades.
+A **classe Msvm \_ VirtualSystemSnapshotSettingData** tem essas propriedades.
 
 <dl> <dt>
 
@@ -75,14 +75,14 @@ O nível de consistência do instantâneo.
 
 <span id="Application_Consistent"></span><span id="application_consistent"></span><span id="APPLICATION_CONSISTENT"></span>
 
-**Consistente** com o aplicativo (1)
+**Consistente com o** aplicativo (1)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Crash_Consistent"></span><span id="crash_consistent"></span><span id="CRASH_CONSISTENT"></span>
 
-**Falha consistente** (2)
+**Consistente com falhas** (2)
 
 
 </dt> <dd></dd> </dl>
@@ -123,7 +123,7 @@ Tipo de backup a ser usado dentro do convidado.
 
 <span id="Copy"></span><span id="copy"></span><span id="COPY"></span>
 
-**Cópia** (2)
+**Copiar** (2)
 
 
 </dt> <dd></dd> </dl>
@@ -133,13 +133,13 @@ Tipo de backup a ser usado dentro do convidado.
 **IgnoreNonSnapshottableDisks**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Especifica se discos não-instantâneos, como discos de passagem e discos de Fibre Channel, devem ser ignorados durante a criação do instantâneo.
+Especifica se discos não snapshottable, como discos de passagem e Fibre Channel discos, devem ser ignorados durante a criação do instantâneo.
 
 </dd> </dl>
 
@@ -149,10 +149,10 @@ Especifica se discos não-instantâneos, como discos de passagem e discos de Fib
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                             |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                             |
 | Servidor mínimo com suporte<br/> | Windows Server 2016<br/>                                                                          |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -161,7 +161,7 @@ Especifica se discos não-instantâneos, como discos de passagem e discos de Fib
 
 <dl> <dt>
 
-[**CIM \_ SettingData**](cim-settingdata.md)
+[**Configuração \_ cimData**](cim-settingdata.md)
 </dt> </dl>
 
  

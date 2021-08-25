@@ -3,7 +3,7 @@ title: Mensagem de LM_SETITEM (commctrl. h)
 description: Define os Estados e atributos de um item.
 ms.assetid: 02a68a31-2541-480e-b768-449d40e5e9e0
 keywords:
-- Controles de LM_SETITEM de mensagens do Windows
+- controles de Windows de mensagem de LM_SETITEM
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 11888a76b11ccec7e8e659ca3a33bb23a71667ee
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e8dccdb37536352c8783f7dd6af6a9475f5bea69111e2f7f09e5395b0ebf25b4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085181"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120062796"
 ---
 # <a name="lm_setitem-message"></a>\_Mensagem SETITEM de LM
 
@@ -35,7 +35,7 @@ Define os Estados e atributos de um item.
 *lParam* 
 </dt> <dd>Ponteiro para uma estrutura <a href="/windows/win32/api/commctrl/ns-commctrl-litem">litem</a> que contém os novos Estados e atributos desejados para o link. </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará **true** se a mensagem tiver sucesso na definição dos valores e atributos especificados.
 
@@ -54,9 +54,9 @@ Com a [**mensagem \_ GETITEM do LM**](lm-getitem.md) , os links só podem ser ac
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

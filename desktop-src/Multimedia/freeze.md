@@ -3,7 +3,7 @@ title: congelar comando
 description: O comando Freeze congela a entrada de vídeo ou a saída de vídeo em um videocassete ou desabilita a aquisição de vídeo para o buffer de quadros. Dispositivos de vídeo digital, de sobreposição de vídeo e VCR reconhecem este comando.
 ms.assetid: 49f3ab98-e893-402a-be78-6140af3b81df
 keywords:
-- congelar multimídia do Windows de comando
+- congelar o comando Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f7b63fbb2d888fc1ca315c0b511bcb18224c8168
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1261cc75575a5b59d200ff965a5325caef9fa966
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104008840"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122481552"
 ---
 # <a name="freeze-command"></a>congelar comando
 
@@ -53,43 +53,13 @@ Sinalizador que identifica o que congelar. A tabela a seguir lista os tipos de d
 
 
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Valor</th>
-<th>Significado</th>
-<th>Significado</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>digitalvideo</td>
-<td>no <em>retângulo</em></td>
-<td>exterior</td>
-</tr>
-<tr class="even">
-<td>overlay</td>
-<td>no <em>retângulo</em></td>
 
-</tr>
-<tr class="odd">
-<td>videocassete</td>
-<td><ul>
-<li>field</li>
-<li>frame</li>
-</ul></td>
-<td><ul>
-<li>input</li>
-<li>output</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+| Valor | Significado | Significado | 
+|-------|---------|---------|
+| digitalvideo | no <em>retângulo</em> | exterior | 
+| overlay | no <em>retângulo</em> | 
+| videocassete | <ul><li>field</li><li>frame</li></ul> | <ul><li>input</li><li>output</li></ul> | 
+
 
 
 

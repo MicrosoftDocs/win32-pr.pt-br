@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: métodos EsentRedoAbruptEndedException'
+description: 'Saiba mais sobre: Métodos EsentRedoAbruptEndedException'
 title: 'Métodos EsentRedoAbruptEndedException '
 TOCTitle: EsentRedoAbruptEndedException methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.EsentRedoAbruptEndedException
@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102595
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 77791d314b32aae7c512e074d8bfc886581f7ccf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4925a98b830a9460d5ce582b4956087efa3d9bd8f6797b255214b5f6f4bcc81d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104563758"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119971141"
 ---
 # <a name="esentredoabruptendedexception-methods"></a>Métodos EsentRedoAbruptEndedException 
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo [EsentRedoAbruptEndedException](./esentredoabruptendedexception-class.md) expõe os membros a seguir.
+O [tipo EsentRedoAbruptEndedException](./esentredoabruptendedexception-class.md) expõe os membros a seguir.
 
 ## <a name="methods"></a>Métodos
 
@@ -44,7 +44,7 @@ O tipo [EsentRedoAbruptEndedException](./esentredoabruptendedexception-class.md)
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">GetBaseException</a></td>
+<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">Getbaseexception</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
@@ -59,12 +59,12 @@ O tipo [EsentRedoAbruptEndedException](./esentredoabruptendedexception-class.md)
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">Gettype</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></td>
+<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Memberwiseclone</a></td>
 <td>(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</td>
 </tr>
 <tr class="even">
@@ -84,4 +84,4 @@ Parte superior
 
 [Classe EsentRedoAbruptEndedException](./esentredoabruptendedexception-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

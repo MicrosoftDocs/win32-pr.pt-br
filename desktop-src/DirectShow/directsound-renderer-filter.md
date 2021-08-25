@@ -4,12 +4,12 @@ ms.assetid: ec6cc790-8c1f-4de4-a7ca-a7073894380e
 title: Filtro do renderador DirectSound
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e754c81ba9ac6d22141735ac1488218461d9ea63ef81f7bb947cb3e72fd81d6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8b601c0e85169857cd628b3b3e55b5c00af8ea11
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119966316"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122481572"
 ---
 # <a name="directsound-renderer-filter"></a>Filtro do renderador DirectSound
 
@@ -19,63 +19,9 @@ Além de seus recursos básicos de renderização de som, esse filtro pode proce
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Interfaces de filtro</td>
-<td><a href="/windows/desktop/api/Strmif/nn-strmif-iamaudiorendererstats"><strong>IAMAudioRendererStats,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-iamclockslave"><strong>IAMClockKinge,</strong></a> <a href="/previous-versions/windows/desktop/api/Amaudio/nn-amaudio-iamdirectsound"><strong>IAMDirectSound,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-iamresourcecontrol"><strong>IAMResourceControl</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-ibasefilter"><strong>IBaseFilter,</strong></a> <a href="/windows/desktop/api/Control/nn-control-ibasicaudio"><strong>IBasicAudio,</strong></a> <strong>IDirectSound3DBuffer,</strong> <strong>IDirectSound3dListener,</strong> <a href="/windows/desktop/api/Control/nn-control-imediaposition"><strong>IMediaPosition,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-imediaseeking"><strong>IMediaSeeking,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"><strong>IQualityControl,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-ireferenceclock"><strong>IReferenceClock</strong></a></td>
-</tr>
-<tr class="even">
-<td>Tipos de mídia de pino de entrada</td>
-<td>Tipo principal: MEDIATYPE_AudioSubtypes:<br/>
-<ul>
-<li>MEDIASUBTYPE_PCM</li>
-<li>MEDIASUBTYPE_IEEE_FLOAT</li>
-<li>MEDIASUBTYPE_DOLBY_AC3_SPDIF</li>
-<li>MEDIASUBTYPE_RAW_SPORT</li>
-<li>MEDIASUBTYPE_SPDIF_TAG_241h</li>
-<li>MEDIASUBTYPE_DRM_Audio</li>
-</ul>
-Tipo de formato: FORMAT_WaveFormatEx<br/></td>
-</tr>
-<tr class="odd">
-<td>Interfaces de pino de entrada</td>
-<td><a href="/windows/desktop/api/Strmif/nn-strmif-imeminputpin"><strong>IMemInputPin,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-ipinconnection"><strong>IPinConnection,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"><strong>IQualityControl</strong></a></td>
-</tr>
-<tr class="even">
-<td>Tipos de mídia de pino de saída</td>
-<td>Não aplicável.</td>
-</tr>
-<tr class="odd">
-<td>Interfaces de pino de saída</td>
-<td>Não aplicável.</td>
-</tr>
-<tr class="even">
-<td>Filtrar CLSID</td>
-<td>CLSID_DSoundRender</td>
-</tr>
-<tr class="odd">
-<td>CLSID da página de propriedades</td>
-<td>CLSID_AudioProperties, CLSID_AudioRendererAdvancedProperties</td>
-</tr>
-<tr class="even">
-<td>Executável</td>
-<td>quartz.dll</td>
-</tr>
-<tr class="odd">
-<td><a href="merit.md">Mérito</a></td>
-<td>MERIT_PREFERRED</td>
-</tr>
-<tr class="even">
-<td><a href="filter-categories.md">Categoria de filtro</a></td>
-<td>CLSID_AudioRendererCategory</td>
-</tr>
-</tbody>
-</table>
+
+| | | Interfaces de filtro | <a href="/windows/desktop/api/Strmif/nn-strmif-iamaudiorendererstats"><strong>IAMAudioRendererStats</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-iamclockslave"><strong>IAMClockKingE,</strong></a> <a href="/previous-versions/windows/desktop/api/Amaudio/nn-amaudio-iamdirectsound"><strong>IAMDirectSound,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-iamresourcecontrol"><strong>IAMResourceControl</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-ibasefilter"><strong>IBaseFilter,</strong></a> <a href="/windows/desktop/api/Control/nn-control-ibasicaudio"><strong>IBasicAudio</strong></a>, <strong>IDirectSound3DBuffer,</strong> <strong>IDirectSound3dListener,</strong> <a href="/windows/desktop/api/Control/nn-control-imediaposition"><strong>IMediaPosition,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-imediaseeking"><strong>IMediaSeeking,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"><strong>IQualityControl,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-ireferenceclock"><strong>IReferenceClock</strong></a> | | Tipos de mídia de pino de entrada | Tipo principal: MEDIATYPE_AudioSubtypes:<br /><ul><li>MEDIASUBTYPE_PCM</li><li>MEDIASUBTYPE_IEEE_FLOAT</li><li>MEDIASUBTYPE_DOLBY_AC3_SPDIF</li><li>MEDIASUBTYPE_RAW_SPORT</li><li>MEDIASUBTYPE_SPDIF_TAG_241h</li><li>MEDIASUBTYPE_DRM_Audio</li></ul>Tipo de formato: FORMAT_WaveFormatEx<br /> | | Interfaces de pino de entrada | <a href="/windows/desktop/api/Strmif/nn-strmif-imeminputpin"><strong>IMemInputPin,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-ipinconnection"><strong>IPinConnection,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"><strong>IQualityControl</strong></a> | | Tipos de mídia de pino de | Não aplicável. | | Interfaces de pino de | Não aplicável. | | Filtrar CLSID | CLSID_DSoundRender | | ClSID da página de propriedades | CLSID_AudioProperties, CLSID_AudioRendererAdvancedProperties | | Arquivo executável | quartz.dll | | <a href="merit.md">|</a> MERIT_PREFERRED | | <a href="filter-categories.md">Categoria de</a> filtro | CLSID_AudioRendererCategory | 
+
 
 
 

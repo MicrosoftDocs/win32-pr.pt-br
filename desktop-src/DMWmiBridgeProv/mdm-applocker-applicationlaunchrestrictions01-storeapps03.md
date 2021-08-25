@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_AppLocker_ApplicationLaunchRestrictions01_StoreApps03
-description: A \_ classe MDM AppLocker \_ ApplicationLaunchRestrictions01 \_ StoreApps03 permite que você ESPECIFIQUE quais aplicativos exe são permitidos ou despermitidos para a proteção de dados empresariais.
+title: MDM_AppLocker_ApplicationLaunchRestrictions01_StoreApps03 classe
+description: A classe MDM \_ AppLocker \_ ApplicationLaunchRestrictions01 StoreApps03 permite que você especifique quais aplicativos EXE são permitidos ou não permitidos para Enterprise \_ Data Protection.
 ms.assetid: de5ceaea-589a-4ed7-8dd6-eb9477d68e0e
 keywords:
-- Classe MDM_AppLocker_ApplicationLaunchRestrictions01_StoreApps03
-- Classe MDM_AppLocker_ApplicationLaunchRestrictions01_StoreApps03, descrita
+- MDM_AppLocker_ApplicationLaunchRestrictions01_StoreApps03 classe
+- MDM_AppLocker_ApplicationLaunchRestrictions01_StoreApps03 classe, descrita
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 54c58610c10e672a6fbc1406b2d022b8ce211871
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dace54d1e34559b0e1f5bdf55d86528b83d8d8f5f9810caa9370a799a5b3b30c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105769024"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120077086"
 ---
-# <a name="mdm_applocker_applicationlaunchrestrictions01_storeapps03-class"></a>\_Classe StoreApps03 do MDM AppLocker \_ ApplicationLaunchRestrictions01 \_
+# <a name="mdm_applocker_applicationlaunchrestrictions01_storeapps03-class"></a>Classe MDM \_ AppLocker \_ ApplicationLaunchRestrictions01 \_ StoreApps03
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto pré-lançado, que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-A classe **MDM \_ AppLocker \_ ApplicationLaunchRestrictions01 \_ StoreApps03** permite que você especifique quais aplicativos exe são permitidos ou despermitidos para a proteção de dados empresariais.
+A classe **MDM \_ AppLocker \_ ApplicationLaunchRestrictions01 \_ StoreApps03** permite que você especifique quais aplicativos EXE são permitidos ou não permitidos para Enterprise Data Protection.
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas.
 
@@ -47,23 +47,23 @@ class MDM_AppLocker_ApplicationLaunchRestrictions01_StoreApps03
 
 ## <a name="members"></a>Membros
 
-A classe **StoreApps03 do MDM \_ AppLocker \_ ApplicationLaunchRestrictions01 \_** tem estes tipos de membros:
+A **classe \_ MDM AppLocker \_ ApplicationLaunchRestrictions01 \_ StoreApps03** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **StoreApps03 do MDM \_ AppLocker \_ ApplicationLaunchRestrictions01 \_** tem essas propriedades.
+A **classe \_ MDM AppLocker \_ ApplicationLaunchRestrictions01 \_ StoreApps03** tem essas propriedades.
 
 <dl> <dt>
 
-[**Imposiçãomode**](/windows/client-management/mdm/applocker-csp)
+[**EnforcementMode**](/windows/client-management/mdm/applocker-csp)
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -80,11 +80,11 @@ Tipo de acesso: Somente leitura
 Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Define as restrições para a execução de aplicativos da Windows Store.
+Define restrições para executar aplicativos da Windows Store.
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -96,7 +96,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Descreve o caminho completo para o nó pai. Para essa classe, a cadeia de caracteres é "./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/*GROUPING*"
+Descreve o caminho completo para o nó pai. Para essa classe, a cadeia de caracteres é "./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/Grouping"
 
 </dd> <dt>
 
@@ -106,7 +106,7 @@ Descreve o caminho completo para o nó pai. Para essa classe, a cadeia de caract
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> </dl>
@@ -117,10 +117,10 @@ Tipo de acesso: leitura/gravação
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                      |
-| Namespace<br/>                | \\DMMap de \\ MDM \\ CIMv2 raiz<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Namespace<br/>                | \\DMMap de \\ MDM cimv2 \\ raiz<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 

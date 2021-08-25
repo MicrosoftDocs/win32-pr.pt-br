@@ -1,7 +1,7 @@
 ---
-description: O método CountSetBits retorna o número de bits definido como 1 em um campo de bit especificado.
+description: O método CountSetBits retorna o número de bits definido como 1 em um campo de bits especificado.
 ms.assetid: fc5701b8-88ff-4c23-9d26-854bb65cc55c
-title: Método CImageDisplay. CountSetBits (Winutil. h)
+title: Método CImageDisplay.CountSetBits (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: cb425b08b524b1d36b622bcfffcc9f311dccbbdf
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d334111c18c2c94c79a8b49ed7c0601efabb2bd13922a68c292970d4d2c379bd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105810252"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119824066"
 ---
-# <a name="cimagedisplaycountsetbits-method"></a>Método CImageDisplay. CountSetBits
+# <a name="cimagedisplaycountsetbits-method"></a>Método CImageDisplay.CountSetBits
 
-O `CountSetBits` método retorna o número de bits definido como 1 em um campo de bit especificado.
+O `CountSetBits` método retorna o número de bits definido como 1 em um campo de bits especificado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,13 +45,13 @@ DWORD CountSetBits(
 *Campo* 
 </dt> <dd>
 
-Especifica um campo de bits como um valor **DWORD** .
+Especifica um campo de bits como um **valor DWORD.**
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna o número de bits que são definidos como 1.
+Retorna o número de bits definidos como 1.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,8 +59,8 @@ Retorna o número de bits que são definidos como 1.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Winutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

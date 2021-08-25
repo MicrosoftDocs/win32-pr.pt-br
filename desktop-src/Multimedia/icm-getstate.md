@@ -1,9 +1,9 @@
 ---
 title: Mensagem de ICM_GETSTATE (VFW. h)
-description: A \_ mensagem ICM GetState consulta um driver de compactação de vídeo para retornar sua configuração atual em um bloco de memória ou para determinar a quantidade de memória necessária para recuperar as informações de configuração.
+description: a ICM \_ mensagem getstate consulta um driver de compactação de vídeo para retornar sua configuração atual em um bloco de memória ou para determinar a quantidade de memória necessária para recuperar as informações de configuração.
 ms.assetid: 4b77e294-f3aa-45f9-a4f4-f103b83eae8d
 keywords:
-- Multimídia do Windows de mensagem ICM_GETSTATE
+- mensagem de ICM_GETSTATE Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b6a45dcde627a02c1a4a402ea9a2a725f0429a7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c9bf21d808752b8a3ac3ba71a8593cd6dc577b3af4f34f421682d126c73b3578
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086512"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119784946"
 ---
-# <a name="icm_getstate-message"></a>\_Mensagem de GETstate do ICM
+# <a name="icm_getstate-message"></a>ICM \_ Mensagem GetState
 
-A mensagem **ICM \_ GetState** consulta um driver de compactação de vídeo para retornar sua configuração atual em um bloco de memória ou para determinar a quantidade de memória necessária para recuperar as informações de configuração. Você pode enviar essa mensagem explicitamente ou usando a macro [**ICGetState**](/windows/desktop/api/Vfw/nf-vfw-icgetstate) .
+a **ICM mensagem \_ getstate** consulta um driver de compactação de vídeo para retornar sua configuração atual em um bloco de memória ou para determinar a quantidade de memória necessária para recuperar as informações de configuração. Você pode enviar essa mensagem explicitamente ou usando a macro [**ICGetState**](/windows/desktop/api/Vfw/nf-vfw-icgetstate) .
 
 
 ```C++

@@ -3,7 +3,7 @@ title: MCI_STATUS comando (mmsystem. h)
 description: O \_ comando status do MCI recupera informações sobre um dispositivo MCI. Todos os dispositivos reconhecem este comando. As informações são retornadas no membro dwReturn da estrutura identificada pelo parâmetro lpStatus.
 ms.assetid: d1c3dff9-c66f-4525-aac1-4a15b43083e7
 keywords:
-- Multimídia do Windows de comando MCI_STATUS
+- MCI_STATUS comando Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 86553ac759a362c1ea4abb53a47d0e9376cbc526
-ms.sourcegitcommit: 8276af9231bdbf5a7334299f0d13fc8ff069a065
+ms.openlocfilehash: 9905000c718ff70435ec91bf86bf7a77d14379ed7ca557eaa85fb0df594196c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "104297787"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119784276"
 ---
 # <a name="mci_status-command"></a>Comando de status do MCI \_
 
@@ -490,544 +490,544 @@ A entrada é a origem.
 
 O membro **dwReturn** retorna uma constante indicando o método usado para o monitoramento de entrada. As seguintes constantes são definidas:
 
-\_método MCI \_ DGV \_ direto
+MÉTODO \_ DGV DE MCI \_ \_ DIRETO
 
-Monitoramento de entrada direto.
+Monitoramento de entrada direta.
 
-\_post do \_ método MCI DGV \_
+POSTAGEM DO \_ MÉTODO DGV \_ \_ da MCI
 
-Monitoramento de pós-entrada.
+Monitoramento pós-entrada.
 
-\_método MCI \_ DGV \_ pre
+MÉTODO \_ DGV DA MCI \_ \_ PRE
 
 Monitoramento de pré-entrada.
 
 </dd> <dt>
 
-<span id="MCI_DGV_STATUS_PAUSE_MODE"></span><span id="mci_dgv_status_pause_mode"></span>\_modo de \_ pausa de status \_ \_ do MCI DGV
+<span id="MCI_DGV_STATUS_PAUSE_MODE"></span><span id="mci_dgv_status_pause_mode"></span>MODO DE \_ PAUSA DO STATUS DGV DA MCI \_ \_ \_
 </dt> <dd>
 
-O membro **dwReturn** retorna o \_ modo MCI \_ Play se o dispositivo foi pausado durante a reprodução e \_ retorna \_ o registro do modo MCI se o dispositivo foi pausado durante a gravação. O comando retornará MCIERR \_ \_ função não aplicável como um erro retornado se o dispositivo não estiver em pausa.
+O **membro dwReturn** retornará MCI MODE PLAY se o dispositivo tiver sido pausado durante a reprodução e retornar o REGISTRO de MODO MCI se o dispositivo tiver sido pausado durante \_ a \_ \_ \_ gravação. O comando retornará MCIERR NONAPPLICABLE FUNCTION como um retorno de erro \_ se o dispositivo não estiver em \_ pausa.
 
 </dd> <dt>
 
-<span id="MCI_DGV_STATUS_SAMPLESPERSECOND"></span><span id="mci_dgv_status_samplespersecond"></span>SAMPLESPERSECOND de status do MCI \_ DGV \_ \_
+<span id="MCI_DGV_STATUS_SAMPLESPERSECOND"></span><span id="mci_dgv_status_samplespersecond"></span>EXEMPLOS \_ DE STATUS DE DGV DA MCIPERSECOND \_ \_
 </dt> <dd>
 
-O membro **dwReturn** retorna o número de amostras por segundo registradas.
+O **membro dwReturn** retorna o número de amostras por segundo registradas.
 
 </dd> <dt>
 
-<span id="MCI_DGV_STATUS_SEEK_EXACTLY"></span><span id="mci_dgv_status_seek_exactly"></span>STATUS do MCI \_ DGV \_ \_ Seek \_ exactly
+<span id="MCI_DGV_STATUS_SEEK_EXACTLY"></span><span id="mci_dgv_status_seek_exactly"></span>MCI \_ DGV \_ STATUS SEEK \_ \_ EXATAMENTE
 </dt> <dd>
 
-O membro **dwReturn** retorna **true** ou **false** indicando se o formato de busca exata está definido ou não. (Os aplicativos podem definir esse formato usando o comando [MCI \_ set](mci-set.md) com o \_ sinalizador MCI DGV \_ set \_ Seek \_ Exact.)
+O **membro dwReturn** retorna **TRUE** ou **FALSE** indicando se o formato de busca está definido ou não. (Os aplicativos podem definir esse formato usando o [comando MCI \_ SET](mci-set.md) com o sinalizador MCI \_ DGV \_ SET SEEK \_ \_ EXACTLY.)
 
 </dd> <dt>
 
-<span id="MCI_DGV_STATUS_SHARPNESS"></span><span id="mci_dgv_status_sharpness"></span>\_nitidez do \_ status do DGV MCI \_
+<span id="MCI_DGV_STATUS_SHARPNESS"></span><span id="mci_dgv_status_sharpness"></span>SHARPNESS DO \_ STATUS DE DGV DA MCI \_ \_
 </dt> <dd>
 
-O membro **dwReturn** retorna o nível de nitidez atual. Use \_ \_ o status do DGV MCI \_ nominal com esse sinalizador para obter o nível nominal.
+O **membro dwReturn** retorna o nível de sharpness atual. Use STATUS \_ NOMINAL de DGV da MCI \_ com esse sinalizador para obter o nível \_ nominal.
 
 </dd> <dt>
 
-<span id="MCI_DGV_STATUS_SIZE"></span><span id="mci_dgv_status_size"></span>\_tamanho do \_ status do DGV MCI \_
+<span id="MCI_DGV_STATUS_SIZE"></span><span id="mci_dgv_status_size"></span>TAMANHO DO \_ STATUS DE DGV DA MCI \_ \_
 </dt> <dd>
 
-O membro **dwReturn** retorna a duração de reprodução aproximada dos dados compactados que o espaço de trabalho reservado irá manter. As unidades de duração estão no formato de hora atual. Ele retornará zero se não houver espaço reservado em disco. O tamanho retornado é aproximado, pois o espaço em disco preciso para dados compactados não pode, em geral, ser previsto até que os dados tenham sido compactados.
+O **membro dwReturn** retorna a duração aproximada da reprodução dos dados compactados que o workspace reservado conterá. As unidades de duração estão no formato de hora atual. Ele retornará zero se não houver espaço em disco reservado. O tamanho retornado é aproximado, pois o espaço em disco preciso para dados compactados não pode, em geral, ser previsto até que os dados sejam compactados.
 
 </dd> <dt>
 
-<span id="MCI_DGV_STATUS_SMPTE"></span><span id="mci_dgv_status_smpte"></span>STATUS do MCI \_ DGV \_ \_ SMPTE
+<span id="MCI_DGV_STATUS_SMPTE"></span><span id="mci_dgv_status_smpte"></span>\_SMPTE DE STATUS de DGV \_ da MCI \_
 </dt> <dd>
 
-O membro **dwReturn** retorna o código de tempo SMPTE associado à posição atual no espaço de trabalho.
+O **membro dwReturn** retorna o código de tempo SMPTE associado à posição atual no workspace.
 
 </dd> <dt>
 
-<span id="MCI_DGV_STATUS_SPEED"></span><span id="mci_dgv_status_speed"></span>\_velocidade de \_ status do DGV MCI \_
+<span id="MCI_DGV_STATUS_SPEED"></span><span id="mci_dgv_status_speed"></span>VELOCIDADE DE \_ STATUS DE DGV DA MCI \_ \_
 </dt> <dd>
 
-O membro **dwReturn** retorna a velocidade de reprodução atual.
+O **membro dwReturn** retorna a velocidade de reprodução atual.
 
 </dd> <dt>
 
-<span id="MCI_DGV_STATUS_STILL_FILEFORMAT"></span><span id="mci_dgv_status_still_fileformat"></span>o \_ status do MCI DGV \_ ainda é \_ \_ FileFormat
+<span id="MCI_DGV_STATUS_STILL_FILEFORMAT"></span><span id="mci_dgv_status_still_fileformat"></span>STATUS \_ DE DGV DA MCI \_ \_ AINDA \_ FILEFORMAT
 </dt> <dd>
 
-O membro **dwReturn** retorna o formato de arquivo atual para o comando de [ \_ captura MCI](mci-capture.md) .
+O **membro dwReturn** retorna o formato de arquivo atual para o [comando MCI \_ CAPTURE.](mci-capture.md)
 
 </dd> <dt>
 
-<span id="MCI_DGV_STATUS_TINT"></span><span id="mci_dgv_status_tint"></span>\_tonalidade de \_ status MCI DGV \_
+<span id="MCI_DGV_STATUS_TINT"></span><span id="mci_dgv_status_tint"></span>TINT \_ DE STATUS DGV \_ \_ da MCI
 </dt> <dd>
 
-O membro **dwReturn** retorna o nível de tonalidade de vídeo atual. Use \_ \_ o status do DGV MCI \_ nominal com esse sinalizador para obter o nível nominal.
+O **membro dwReturn** retorna o nível de tonalidade de vídeo atual. Use STATUS \_ NOMINAL de DGV da MCI \_ com esse sinalizador para obter o nível \_ nominal.
 
 </dd> <dt>
 
-<span id="MCI_DGV_STATUS_TREBLE"></span><span id="mci_dgv_status_treble"></span>STATUS do MCI \_ DGV \_ \_ agudo
+<span id="MCI_DGV_STATUS_TREBLE"></span><span id="mci_dgv_status_treble"></span>STATUS \_ DE DGV DA MCI \_ \_ TREBLE
 </dt> <dd>
 
-O membro **dwReturn** retorna o nível de agudos de áudio atual. Use \_ \_ o status do DGV MCI \_ nominal com esse sinalizador para obter o nível nominal.
+O **membro dwReturn** retorna o nível atual de treble de áudio. Use STATUS \_ NOMINAL de DGV da MCI \_ com esse sinalizador para obter o nível \_ nominal.
 
 </dd> <dt>
 
-<span id="MCI_DGV_STATUS_UNSAVED"></span><span id="mci_dgv_status_unsaved"></span>\_status de DGV MCI \_ \_ não salvo
+<span id="MCI_DGV_STATUS_UNSAVED"></span><span id="mci_dgv_status_unsaved"></span>STATUS \_ DE DGV DA MCI \_ \_ NÃO SAVED
 </dt> <dd>
 
-O membro **dwReturn** retornará **true** se houver dados gravados no espaço de trabalho que podem ser perdidos como resultado de um [ \_ fechamento MCI](mci-close.md), [ \_ carregamento de MCI](mci-load.md), [ \_ registro MCI](mci-record.md), [ \_ reserva de MCI](mci-reserve.md), [ \_ recorte de MCI](mci-cut.md), [ \_ exclusão](mci-delete.md)de MCI ou comando de [ \_ colar MCI](mci-paste.md) . Caso contrário, o membro retornará **false** .
+O membro **dwReturn** retornará **TRUE** se houver dados gravados no workspace que podem ser perdidos como resultado de um comando [MCI \_ CLOSE,](mci-close.md) [MCI \_ LOAD, MCI](mci-load.md) [ \_ RECORD,](mci-record.md) [MCI \_ RESERVE,](mci-reserve.md) [MCI \_ CUT,](mci-cut.md) [MCI \_ DELETE](mci-delete.md)ou [MCI \_ PASTE.](mci-paste.md) Caso contrário, o **membro retornará FALSE.**
 
 </dd> <dt>
 
-<span id="MCI_DGV_STATUS_VIDEO"></span><span id="mci_dgv_status_video"></span>vídeo de status do MCI \_ DGV \_ \_
+<span id="MCI_DGV_STATUS_VIDEO"></span><span id="mci_dgv_status_video"></span>VÍDEO DE \_ STATUS DE DGV DA MCI \_ \_
 </dt> <dd>
 
-O membro **dwReturn** retornará o MCI se o \_ vídeo estiver habilitado ou o MCI \_ desativado se estiver desabilitado.
+O **membro dwReturn** retornará MCI ON se o vídeo estiver habilitado \_ ou MCI OFF se estiver \_ desabilitado.
 
 </dd> <dt>
 
-<span id="MCI_DGV_STATUS_VIDEO_RECORD"></span><span id="mci_dgv_status_video_record"></span>\_registro de \_ vídeo de status \_ \_ do MCI DGV
+<span id="MCI_DGV_STATUS_VIDEO_RECORD"></span><span id="mci_dgv_status_video_record"></span>REGISTRO DE VÍDEO \_ DE STATUS DE DGV \_ \_ da \_ MCI
 </dt> <dd>
 
-O membro **dwReturn** retorna \_ o MCI ativado ou o MCI \_ desativado, refletindo o estado definido \_ pelo \_ \_ sinalizador de gravação do DGV do MCI do comando do [MCI \_](mci-setvideo.md) .
+O **membro dwReturn** retorna MCI ON ou MCI OFF, refletindo o estado definido pelo sinalizador \_ \_ \_ MCI DGV \_ SETVIDEO RECORD do comando \_ [MCI \_ SETVIDEO.](mci-setvideo.md)
 
 </dd> <dt>
 
-<span id="MCI_DGV_STATUS_VIDEO_SOURCE"></span><span id="mci_dgv_status_video_source"></span>\_fonte de \_ vídeo de status MCI DGV \_ \_
+<span id="MCI_DGV_STATUS_VIDEO_SOURCE"></span><span id="mci_dgv_status_video_source"></span>ORIGEM DO VÍDEO \_ DE STATUS DO DGV \_ \_ DA \_ MCI
 </dt> <dd>
 
-O membro **dwReturn** retorna uma constante que indica o tipo de fonte de vídeo definido pelo \_ sinalizador de origem do DGV \_ do MCI \_ do comando do **MCI \_ setvideo** .
+O **membro dwReturn** retorna uma constante que indica o tipo de fonte de vídeo definida pelo sinalizador \_ SETVIDEO SOURCE da MCI DGV do comando \_ \_ **MCI \_ SETVIDEO.**
 
 </dd> <dt>
 
-<span id="MCI_DGV_STATUS_VIDEO_SRC_NUM"></span><span id="mci_dgv_status_video_src_num"></span>\_número de \_ \_ src de vídeo de status DGV \_ MCI \_
+<span id="MCI_DGV_STATUS_VIDEO_SRC_NUM"></span><span id="mci_dgv_status_video_src_num"></span>MCI \_ DGV \_ STATUS \_ VIDEO \_ SRC \_ NUM
 </dt> <dd>
 
-O membro **dwReturn** retorna o número dentro do seu tipo da fonte de entrada de vídeo ativa no momento.
+O **membro dwReturn** retorna o número dentro de seu tipo de fonte de entrada de vídeo atualmente ativa.
 
 </dd> <dt>
 
-<span id="MCI_DGV_STATUS_VIDEO_STREAM"></span><span id="mci_dgv_status_video_stream"></span>\_fluxo de \_ vídeo de status \_ \_ do MCI DGV
+<span id="MCI_DGV_STATUS_VIDEO_STREAM"></span><span id="mci_dgv_status_video_stream"></span>FLUXO DE VÍDEO \_ DE STATUS DE DGV \_ \_ da \_ MCI
 </dt> <dd>
 
-O membro **dwReturn** retorna o número de fluxo de vídeo atual.
+O **membro dwReturn** retorna o número atual do fluxo de vídeo.
 
 </dd> <dt>
 
-<span id="MCI_DGV_STATUS_VOLUME"></span><span id="mci_dgv_status_volume"></span>VOLUME de status do MCI \_ DGV \_ \_
+<span id="MCI_DGV_STATUS_VOLUME"></span><span id="mci_dgv_status_volume"></span>VOLUME DE \_ STATUS DE DGV da MCI \_ \_
 </dt> <dd>
 
-O membro **dwReturn** retorna a média do volume para os alto-falantes esquerdo e direito. Use \_ \_ o status do DGV MCI \_ nominal com esse sinalizador para obter o nível nominal.
+O **membro dwReturn** retorna a média do volume para os alto-falantes esquerdo e direito. Use STATUS \_ NOMINAL de DGV da MCI \_ com esse sinalizador para obter o nível \_ nominal.
 
 </dd> <dt>
 
-<span id="MCI_DGV_STATUS_WINDOW_VISIBLE"></span><span id="mci_dgv_status_window_visible"></span>janela de status do MCI \_ DGV \_ \_ \_ visível
+<span id="MCI_DGV_STATUS_WINDOW_VISIBLE"></span><span id="mci_dgv_status_window_visible"></span>JANELA \_ STATUS DE DGV DA MCI \_ \_ \_ VISÍVEL
 </dt> <dd>
 
-O membro **dwReturn** retornará **true** se a janela não estiver oculta.
+O **membro dwReturn** retornará **TRUE** se a janela não estiver oculta.
 
 </dd> <dt>
 
-<span id="MCI_DGV_STATUS_WINDOW_MINIMIZED"></span><span id="mci_dgv_status_window_minimized"></span>janela de status do MCI \_ DGV \_ \_ \_ minimizada
+<span id="MCI_DGV_STATUS_WINDOW_MINIMIZED"></span><span id="mci_dgv_status_window_minimized"></span>JANELA DE STATUS DE DGV DA MCI \_ \_ \_ \_ MINIMIZADA
 </dt> <dd>
 
-O membro **dwReturn** retornará **true** se a janela for minimizada.
+O **membro dwReturn** retornará **TRUE** se a janela for minimizada.
 
 </dd> <dt>
 
-<span id="MCI_DGV_STATUS_WINDOW_MAXIMIZED"></span><span id="mci_dgv_status_window_maximized"></span>janela de status do MCI \_ DGV \_ \_ \_ maximizada
+<span id="MCI_DGV_STATUS_WINDOW_MAXIMIZED"></span><span id="mci_dgv_status_window_maximized"></span>JANELA DE STATUS DE DGV DA MCI \_ \_ \_ \_ MAXIMIZADA
 </dt> <dd>
 
-O membro **dwReturn** retornará **true** se a janela for maximizada.
+O **membro dwReturn** retornará **TRUE** se a janela estiver maximizada.
 
 </dd> <dt>
 
-<span id="MCI_STATUS_MEDIA_PRESENT"></span><span id="mci_status_media_present"></span>\_mídia de status MCI \_ \_ presente
+<span id="MCI_STATUS_MEDIA_PRESENT"></span><span id="mci_status_media_present"></span>MÍDIA DE STATUS DA MCI \_ \_ \_ PRESENTE
 </dt> <dd>
 
-O membro **dwReturn** retorna **true**.
+O **membro dwReturn** retorna **TRUE.**
 
 </dd> </dl>
 
-Para dispositivos de vídeo digital, o parâmetro *lpStatus* aponta para uma estrutura de [**\_ \_ \_ parâmetros de status DGV MCI**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_status_parmsa) .
+Para dispositivos de vídeo digital, o *parâmetro lpStatus* aponta para uma estrutura [**\_ \_ \_ PARMS de STATUS de DGV da MCI.**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_status_parmsa)
 
-Os sinalizadores adicionais a seguir são usados com o tipo de dispositivo **Sequencer** . Essas constantes são usadas no membro **dwItem** da estrutura apontada pelo parâmetro *lpStatus* quando o \_ item de status MCI \_ é especificado para o parâmetro *dwFlags* .
+Os sinalizadores adicionais a seguir são usados com o **tipo de dispositivo sequencer.** Essas constantes são usadas no membro **dwItem** da estrutura apontada pelo parâmetro *lpStatus* quando ITEM DE STATUS da MCI é especificado para o \_ parâmetro \_ *dwFlags.*
 
 <dl> <dt>
 
-<span id="MCI_SEQ_STATUS_DIVTYPE"></span><span id="mci_seq_status_divtype"></span>\_DIVTYPE de \_ status de Seq MCI \_
+<span id="MCI_SEQ_STATUS_DIVTYPE"></span><span id="mci_seq_status_divtype"></span>DIVTYPE DE STATUS DA SEQ DA MCI \_ \_ \_
 </dt> <dd>
 
-O membro **dwReturn** é definido como um dos seguintes valores indicando o tipo de divisão atual de uma sequência:
+O **membro dwReturn** é definido como um dos seguintes valores que indicam o tipo de divisão atual de uma sequência:
 
--   MCI \_ Seq \_ div \_ PPQN
--   MCI \_ Seq \_ div \_ SMPTE \_ 24
--   MCI \_ Seq \_ div \_ SMPTE \_ 25
--   MCI \_ Seq \_ div \_ SMPTE \_ 30
--   MCI \_ Seq \_ div \_ SMPTE \_ 30DROP
+-   MCI \_ SEQ \_ DIV \_ PPQN
+-   MCI \_ SEQ \_ DIV \_ SMPTE \_ 24
+-   MCI \_ SEQ \_ DIV \_ SMPTE \_ 25
+-   MCI \_ SEQ \_ DIV \_ SMPTE \_ 30
+-   MCI \_ SEQ \_ DIV \_ SMPTE \_ 30DROP
 
 </dd> <dt>
 
-<span id="MCI_SEQ_STATUS_MASTER"></span><span id="mci_seq_status_master"></span>\_mestre de \_ status de Seq MCI \_
+<span id="MCI_SEQ_STATUS_MASTER"></span><span id="mci_seq_status_master"></span>MESTRE DE STATUS DA SEQ DA MCI \_ \_ \_
 </dt> <dd>
 
-O membro **dwReturn** é definido como o tipo de sincronização usado para a operação mestre.
+O **membro dwReturn** é definido como o tipo de sincronização usado para a operação mestre.
 
 </dd> <dt>
 
-<span id="MCI_SEQ_STATUS_OFFSET"></span><span id="mci_seq_status_offset"></span>\_deslocamento de \_ status de Seq MCI \_
+<span id="MCI_SEQ_STATUS_OFFSET"></span><span id="mci_seq_status_offset"></span>DESLOCAMENTO DE STATUS DA SEQ DA MCI \_ \_ \_
 </dt> <dd>
 
-O membro **dwReturn** é definido como o deslocamento SMPTE atual de uma sequência.
+O **membro dwReturn** é definido como o deslocamento SMPTE atual de uma sequência.
 
 </dd> <dt>
 
-<span id="MCI_SEQ_STATUS_PORT"></span><span id="mci_seq_status_port"></span>porta de status do MCI \_ Seq \_ \_
+<span id="MCI_SEQ_STATUS_PORT"></span><span id="mci_seq_status_port"></span>PORTA DE STATUS DA SEQ DA MCI \_ \_ \_
 </dt> <dd>
 
-O membro **dwReturn** é definido como o identificador do dispositivo MIDI para a porta atual usada pela sequência.
+O **membro dwReturn** é definido como o identificador de dispositivo MIDI para a porta atual usada pela sequência.
 
 </dd> <dt>
 
-<span id="MCI_SEQ_STATUS_SLAVE"></span><span id="mci_seq_status_slave"></span>\_auxiliar Seq de \_ status \_ do MCI
+<span id="MCI_SEQ_STATUS_SLAVE"></span><span id="mci_seq_status_slave"></span>MCI \_ SEQ \_ STATUS \_ SLAVE
 </dt> <dd>
 
-O membro **dwReturn** é definido como o tipo de sincronização usado para a operação subordinada.
+O **membro dwReturn** é definido como o tipo de sincronização usado para a operação subordinada.
 
 </dd> <dt>
 
-<span id="MCI_SEQ_STATUS_TEMPO"></span><span id="mci_seq_status_tempo"></span>\_tempo de \_ status de Seq MCI \_
+<span id="MCI_SEQ_STATUS_TEMPO"></span><span id="mci_seq_status_tempo"></span>TEMPO DE STATUS DA SEQ DA MCI \_ \_ \_
 </dt> <dd>
 
-O membro **dwReturn** é definido como o tempo atual de uma sequência MIDI em batidas por minuto para arquivos PPQN ou quadros por segundo para arquivos SMPTE.
+O **membro dwReturn** é definido como o tempo atual de uma sequência MIDI em tempos por minuto para arquivos PPQN ou quadros por segundo para arquivos SMPTE.
 
 </dd> <dt>
 
-<span id="MCI_STATUS_MEDIA_PRESENT"></span><span id="mci_status_media_present"></span>\_mídia de status MCI \_ \_ presente
+<span id="MCI_STATUS_MEDIA_PRESENT"></span><span id="mci_status_media_present"></span>MÍDIA DE STATUS DA MCI \_ \_ \_ PRESENTE
 </dt> <dd>
 
-O membro **dwReturn** será definido como **true** se a mídia for inserida no dispositivo; caso contrário, será definido como **false** .
+O **membro dwReturn** será definido como **TRUE** se a mídia for inserida no dispositivo; caso contrário, ele será **definido como FALSE.**
 
 </dd> </dl>
 
-Os sinalizadores adicionais a seguir são usados com o tipo de dispositivo **VCR** . Essas constantes são usadas no membro **dwItem** da estrutura apontada pelo parâmetro *lpStatus* quando o \_ item de status MCI \_ é especificado para o parâmetro *dwFlags* .
+Os sinalizadores adicionais a seguir são usados com o **tipo de dispositivo vcr.** Essas constantes são usadas no membro **dwItem** da estrutura apontada pelo parâmetro *lpStatus* quando ITEM DE STATUS da MCI é especificado para o \_ parâmetro \_ *dwFlags.*
 
 <dl> <dt>
 
-<span id="MCI_STATUS_MEDIA_PRESENT"></span><span id="mci_status_media_present"></span>\_mídia de status MCI \_ \_ presente
+<span id="MCI_STATUS_MEDIA_PRESENT"></span><span id="mci_status_media_present"></span>MÍDIA DE STATUS DA MCI \_ \_ \_ PRESENTE
 </dt> <dd>
 
-O membro **dwReturn** será definido como **true** se a mídia for inserida no dispositivo; caso contrário, será definido como **false** .
+O **membro dwReturn** será definido como **TRUE** se a mídia for inserida no dispositivo; caso contrário, ele será **definido como FALSE.**
 
 </dd> <dt>
 
-<span id="MCI_VCR_STATUS_ASSEMBLE_RECORD"></span><span id="mci_vcr_status_assemble_record"></span>\_registro de \_ montagem do status do VCR MCI \_ \_
+<span id="MCI_VCR_STATUS_ASSEMBLE_RECORD"></span><span id="mci_vcr_status_assemble_record"></span>REGISTRO DE MCI \_ VCR \_ STATUS \_ ASSEMBLE \_
 </dt> <dd>
 
-O membro **dwReturn** será definido como **true** se o modo de montagem estiver on; caso contrário, será definido como **false** .
+O **membro dwReturn** será definido como **TRUE se** o modo de montagem estiver em; caso contrário, ele será **definido como FALSE.**
 
 </dd> <dt>
 
-<span id="MCI_VCR_STATUS_AUDIO_MONITOR"></span><span id="mci_vcr_status_audio_monitor"></span>\_Monitor de \_ áudio de status de VCR MCI \_ \_
+<span id="MCI_VCR_STATUS_AUDIO_MONITOR"></span><span id="mci_vcr_status_audio_monitor"></span>MONITOR DE \_ ÁUDIO DE STATUS DO VCR \_ \_ da \_ MCI
 </dt> <dd>
 
-O membro **dwReturn** é definido como uma constante, indicando o tipo de monitor de áudio selecionado no momento.
+O **membro dwReturn** é definido como uma constante, indicando o tipo de monitor de áudio selecionado no momento.
 
 </dd> <dt>
 
-<span id="MCI_VCR_STATUS_AUDIO_MONITOR_NUMBER"></span><span id="mci_vcr_status_audio_monitor_number"></span>\_número do \_ \_ Monitor de \_ áudio \_ MCI de status do VCR
+<span id="MCI_VCR_STATUS_AUDIO_MONITOR_NUMBER"></span><span id="mci_vcr_status_audio_monitor_number"></span>NÚMERO DO MONITOR DE \_ ÁUDIO DE STATUS DO VCR \_ \_ \_ DA \_ MCI
 </dt> <dd>
 
-O membro **dwReturn** é definido como o número do tipo de monitor de áudio selecionado no momento.
+O **membro dwReturn** é definido como o número do tipo de monitor de áudio selecionado no momento.
 
 </dd> <dt>
 
-<span id="MCI_VCR_STATUS_AUDIO_RECORD"></span><span id="mci_vcr_status_audio_record"></span>\_registro de \_ áudio de status de VCR MCI \_ \_
+<span id="MCI_VCR_STATUS_AUDIO_RECORD"></span><span id="mci_vcr_status_audio_record"></span>REGISTRO DE \_ ÁUDIO DE STATUS DO VCR \_ \_ da \_ MCI
 </dt> <dd>
 
-O membro **dwReturn** será definido como **true** se o áudio for gravado quando o próximo comando de registro for fornecido; caso contrário, será definido como **false** . Se você especificar a \_ faixa MCI no parâmetro *dwFlags* deste comando, **dwTrack** conterá a faixa à qual essa consulta se aplica.
+O **membro dwReturn** será definido como **TRUE se** o áudio for gravado quando o próximo comando de registro for determinado; caso contrário, ele será **definido como FALSE.** Se você especificar MCI \_ TRACK no *parâmetro dwFlags* deste comando, **dwTrack** conterá a faixa à qual essa consulta se aplica.
 
 </dd> <dt>
 
-<span id="MCI_VCR_STATUS_AUDIO_SOURCE"></span><span id="mci_vcr_status_audio_source"></span>\_fonte de \_ áudio de status de VCR MCI \_ \_
+<span id="MCI_VCR_STATUS_AUDIO_SOURCE"></span><span id="mci_vcr_status_audio_source"></span>FONTE DE \_ ÁUDIO DE STATUS DO VCR \_ \_ da \_ MCI
 </dt> <dd>
 
-O membro **dwReturn** é definido como uma constante, indicando o tipo de fonte de áudio atual.
+O **membro dwReturn** é definido como uma constante, indicando o tipo de fonte de áudio atual.
 
 </dd> <dt>
 
-<span id="MCI_VCR_STATUS_AUDIO_SOURCE_NUMBER"></span><span id="mci_vcr_status_audio_source_number"></span>\_número de \_ \_ fonte de \_ áudio \_ MCI de status do VCR
+<span id="MCI_VCR_STATUS_AUDIO_SOURCE_NUMBER"></span><span id="mci_vcr_status_audio_source_number"></span>NÚMERO DE \_ ORIGEM DE ÁUDIO DO STATUS DO VCR \_ \_ \_ DA \_ MCI
 </dt> <dd>
 
-O membro **dwReturn** é definido como o número do tipo de fonte de áudio selecionado no momento.
+O **membro dwReturn** é definido como o número do tipo de fonte de áudio selecionado no momento.
 
 </dd> <dt>
 
-<span id="MCI_VCR_STATUS_CLOCK"></span><span id="mci_vcr_status_clock"></span>\_relógio de \_ status do VCR MCI \_
+<span id="MCI_VCR_STATUS_CLOCK"></span><span id="mci_vcr_status_clock"></span>RELÓGIO DE \_ STATUS DO VCR da MCI \_ \_
 </dt> <dd>
 
-O membro **dwReturn** é definido como o valor do relógio atual, em incrementos de clock totais.
+O **membro dwReturn** é definido como o valor do relógio atual, em incrementos totais do relógio.
 
 </dd> <dt>
 
-<span id="MCI_VCR_STATUS_CLOCK_ID"></span><span id="mci_vcr_status_clock_id"></span>\_ID do \_ relógio de status do VCR MCI \_ \_
+<span id="MCI_VCR_STATUS_CLOCK_ID"></span><span id="mci_vcr_status_clock_id"></span>ID DO \_ RELÓGIO DE STATUS DO VCR \_ \_ \_ da MCI
 </dt> <dd>
 
-O membro **dwReturn** é definido como um número que descreve exclusivamente o relógio em uso.
+O **membro dwReturn** é definido como um número que descreve exclusivamente o relógio em uso.
 
 </dd> <dt>
 
-<span id="MCI_VCR_STATUS_COUNTER_FORMAT"></span><span id="mci_vcr_status_counter_format"></span>\_formato do \_ contador de status do VCR MCI \_ \_
+<span id="MCI_VCR_STATUS_COUNTER_FORMAT"></span><span id="mci_vcr_status_counter_format"></span>FORMATO DO CONTADOR \_ DE STATUS DO VCR \_ \_ DA \_ MCI
 </dt> <dd>
 
-O membro **dwReturn** é definido como uma constante que descreve o formato do contador atual. Para obter mais informações, consulte o \_ \_ \_ sinalizador de formato de tempo do MCI set do comando do [MCI \_ set](mci-set.md) .
+O **membro dwReturn** é definido como uma constante que descreve o formato do contador atual. Para obter mais informações, consulte o sinalizador MCI \_ SET TIME FORMAT do comando \_ \_ [MCI \_ SET.](mci-set.md)
 
 </dd> <dt>
 
-<span id="MCI_VCR_STATUS_COUNTER_RESOLUTION"></span><span id="mci_vcr_status_counter_resolution"></span>\_resolução do \_ contador de status de VCR MCI \_ \_
+<span id="MCI_VCR_STATUS_COUNTER_RESOLUTION"></span><span id="mci_vcr_status_counter_resolution"></span>RESOLUÇÃO DO CONTADOR DE \_ STATUS DO VCR \_ \_ DA \_ MCI
 </dt> <dd>
 
-O membro **dwReturn** é definido como uma constante que descreve a resolução do contador e é um dos seguintes valores:
+O **membro dwReturn** é definido como uma constante que descreve a resolução do contador e é um dos seguintes valores:
 
--   \_ \_ \_ \_ Quadros de resolução do contador de VCR MCI: o contador tem resolução de quadros.
--   \_ \_ \_ Segundos de res do contador de videocassete MCI: o \_ contador tem a resolução de segundos.
--   \_Valor do \_ contador de status do VCR MCI \_ \_ : o membro **dwReturn** é definido como a leitura do contador atual, no formato de tempo do contador atual.
+-   MCI \_ VCR \_ COUNTER \_ RES \_ FRAMES: o contador tem resolução de quadros.
+-   MCI \_ VCR \_ COUNTER \_ RES \_ SECONDS: o contador tem resolução de segundos.
+-   VALOR DO CONTADOR DE STATUS DO VCR da MCI: o membro \_ \_ \_ \_ **dwReturn** é definido como a leitura do contador atual, no formato de tempo de contador atual.
 
 </dd> <dt>
 
-<span id="MCI_VCR_STATUS_FRAME_RATE"></span><span id="mci_vcr_status_frame_rate"></span>\_taxa de \_ quadros de status de VCR MCI \_ \_
+<span id="MCI_VCR_STATUS_FRAME_RATE"></span><span id="mci_vcr_status_frame_rate"></span>TAXA DE QUADROS \_ DE STATUS DO VCR \_ \_ DA \_ MCI
 </dt> <dd>
 
-O membro **dwReturn** é definido como a taxa de quadros nativa atual do dispositivo.
+O **membro dwReturn** é definido como a taxa de quadros nativa atual do dispositivo.
 
 </dd> <dt>
 
-<span id="MCI_VCR_STATUS_INDEX"></span><span id="mci_vcr_status_index"></span>\_índice de \_ status de VCR MCI \_
+<span id="MCI_VCR_STATUS_INDEX"></span><span id="mci_vcr_status_index"></span>ÍNDICE DE \_ STATUS DO VCR DA MCI \_ \_
 </dt> <dd>
 
-O membro **dwReturn** é definido como uma constante, descrevendo o conteúdo atual da exibição na tela e é um dos seguintes:
+O **membro dwReturn** é definido como uma constante, descrevendo o conteúdo atual da exibição na tela e é um dos seguintes:
 
--   \_contador de \_ índice de VCR MCI \_
--   \_data do \_ índice de VCR do MCI \_
--   \_tempo de \_ índice de VCR do MCI \_
--   código de meio do \_ índice de VCR MCI \_ \_
+-   CONTADOR DE \_ ÍNDICE VCR \_ DA MCI \_
+-   DATA DO \_ ÍNDICE VCR \_ DA MCI \_
+-   TEMPO DE ÍNDICE \_ DO VCR \_ DA MCI \_
+-   MCI \_ VCR \_ INDEX \_ TIMECODE
 
 </dd> <dt>
 
-<span id="MCI_VCR_STATUS_INDEX_ON"></span><span id="mci_vcr_status_index_on"></span>\_ \_ \_ índice de status de VCR MCI \_ em
+<span id="MCI_VCR_STATUS_INDEX_ON"></span><span id="mci_vcr_status_index_on"></span>ÍNDICE DE STATUS DO VCR DA MCI \_ \_ \_ \_ EM
 </dt> <dd>
 
-O membro **dwReturn** será definido como **true** se a exibição na tela estiver on; caso contrário, será definido como **false** .
+O **membro dwReturn** será definido como **TRUE se** a exibição na tela estiver em; caso contrário, ele será **definido como FALSE.**
 
 </dd> <dt>
 
-<span id="MCI_VCR_STATUS_MEDIA_TYPE"></span><span id="mci_vcr_status_media_type"></span>\_tipo de \_ mídia de status do VCR MCI \_ \_
+<span id="MCI_VCR_STATUS_MEDIA_TYPE"></span><span id="mci_vcr_status_media_type"></span>TIPO DE MÍDIA \_ DE STATUS DO VCR \_ \_ DA \_ MCI
 </dt> <dd>
 
-O membro **dwReturn** é definido como um dos seguintes:
+O **membro dwReturn** é definido como um dos seguintes:
 
--   Mídia de VCR MCI com \_ \_ \_ 8mm
--   \_Mídia VCR \_ MCI \_ Hi8
--   \_VHS de \_ mídia \_ VCR MCI
--   \_mídia VCR \_ MCI \_ SVHS
--   mídia de VCR do MCI \_ \_ \_ beta
--   \_mídia VCR \_ MCI \_ EDBETA
--   \_mídia de VCR MCI \_ \_ diferente
+-   MCI \_ VCR \_ MEDIA \_ 8MM
+-   MCI \_ VCR \_ MEDIA \_ HI8
+-   VHS de \_ MÍDIA VCR \_ \_ da MCI
+-   MCI \_ VCR \_ MEDIA \_ SVHS
+-   MCI \_ VCR \_ MEDIA \_ BETA
+-   MCI \_ VCR \_ MEDIA \_ EDBETA
+-   MÍDIA VCR DA MCI \_ \_ \_ OUTROS
 
 </dd> <dt>
 
-<span id="MCI_VCR_STATUS_NUMBER"></span><span id="mci_vcr_status_number"></span>\_número de \_ status do VCR MCI \_
+<span id="MCI_VCR_STATUS_NUMBER"></span><span id="mci_vcr_status_number"></span>NÚMERO DE \_ STATUS DO VCR DA MCI \_ \_
 </dt> <dd>
 
-O membro **dwNumber** é definido como o número do sintonizador lógico quando você usa esse sinalizador com o \_ sinalizador de canal do \_ sintonizador de status do VCR MCI \_ \_ .
+O **membro dwNumber** é definido como o número do ajuste lógico quando você usa esse sinalizador com o sinalizador CHANNEL DO TUNER DE STATUS DO VCR da \_ \_ \_ \_ MCI.
 
 </dd> <dt>
 
-<span id="MCI_VCR_STATUS_NUMBER_OF_AUDIO_TRACKS"></span><span id="mci_vcr_status_number_of_audio_tracks"></span>\_ \_ status do VCR \_ MCI \_ número \_ de \_ faixas de áudio
+<span id="MCI_VCR_STATUS_NUMBER_OF_AUDIO_TRACKS"></span><span id="mci_vcr_status_number_of_audio_tracks"></span>NÚMERO DE STATUS DO VCR DA MCI \_ \_ DE \_ \_ \_ FAIXAS DE \_ ÁUDIO
 </dt> <dd>
 
-O membro **dwReturn** é definido como o número de faixas de áudio que são selecionáveis de forma independente.
+O **membro dwReturn** é definido como o número de faixas de áudio que são selecionáveis independentemente.
 
 </dd> <dt>
 
-<span id="MCI_VCR_STATUS_NUMBER_OF_VIDEO_TRACKS"></span><span id="mci_vcr_status_number_of_video_tracks"></span>\_ \_ status do VCR \_ MCI \_ número \_ de \_ faixas de vídeo
+<span id="MCI_VCR_STATUS_NUMBER_OF_VIDEO_TRACKS"></span><span id="mci_vcr_status_number_of_video_tracks"></span>NÚMERO DE STATUS DO VCR DA MCI \_ \_ DE \_ \_ \_ FAIXAS DE \_ VÍDEO
 </dt> <dd>
 
-O membro **dwReturn** é definido como o número de faixas de vídeo que são selecionáveis de forma independente.
+O **membro dwReturn** é definido como o número de faixas de vídeo que são selecionáveis independentemente.
 
 </dd> <dt>
 
-<span id="MCI_VCR_STATUS_PAUSE_TIMEOUT"></span><span id="mci_vcr_status_pause_timeout"></span>\_ \_ \_ tempo limite de pausa de status de VCR MCI \_
+<span id="MCI_VCR_STATUS_PAUSE_TIMEOUT"></span><span id="mci_vcr_status_pause_timeout"></span>TEMPO DE \_ PAUSA DO STATUS DO VCR \_ \_ \_ DA MCI
 </dt> <dd>
 
-O membro **dwReturn** é definido como a duração máxima, em milissegundos, de um comando PAUSE. O valor de retorno de zero indica que nenhum tempo limite ocorrerá.
+O **membro dwReturn** é definido como a duração máxima, em milissegundos, de um comando pause. O valor de retorno de zero indica que nenhum tempo-out ocorrerá.
 
 </dd> <dt>
 
-<span id="MCI_VCR_STATUS_PLAY_FORMAT"></span><span id="mci_vcr_status_play_format"></span>\_formato de \_ reprodução de status de VCR MCI \_ \_
+<span id="MCI_VCR_STATUS_PLAY_FORMAT"></span><span id="mci_vcr_status_play_format"></span>FORMATO DE REPRODUÇÃO \_ DE STATUS DO VCR \_ \_ DA \_ MCI
 </dt> <dd>
 
-O membro **dwReturn** é definido como um dos seguintes:
+O **membro dwReturn** é definido como um dos seguintes:
 
--   \_EP de \_ formato \_ VCR MCI
--   \_formato de videocassete MCI \_ \_ LP
--   \_ \_ outro formato de VCR MCI \_
--   \_SP de \_ formato \_ VCR MCI
+-   EP DE \_ FORMATO VCR \_ DA MCI \_
+-   LP DE \_ FORMATO VCR \_ da MCI \_
+-   FORMATO VCR DA MCI \_ \_ \_ OUTROS
+-   FORMATO DE VCR DA MCI \_ \_ \_ SP
 
 </dd> <dt>
 
-<span id="MCI_VCR_STATUS_POSTROLL_DURATION"></span><span id="mci_vcr_status_postroll_duration"></span>\_duração de \_ redistribuição de status de VCR MCI \_ \_
+<span id="MCI_VCR_STATUS_POSTROLL_DURATION"></span><span id="mci_vcr_status_postroll_duration"></span>DURAÇÃO DO \_ POSTROLL DO STATUS DO VCR \_ \_ DA MCI \_
 </dt> <dd>
 
-O membro **dwReturn** é definido como o tamanho da fita de vídeo que será reproduzida após o ponto em que foi interrompido, no formato de hora atual. Isso é necessário para desposicionar o transporte de fita do VCR de um comando parar ou pausar.
+O **membro dwReturn** é definido como o comprimento da casa que será reproduzindo após o ponto no qual ele foi interrompido, no formato de hora atual. Isso é necessário para interromper o transporte em fita VCR de um comando parar ou pausar.
 
 </dd> <dt>
 
-<span id="MCI_VCR_STATUS_POWER_ON"></span><span id="mci_vcr_status_power_on"></span>\_ \_ \_ ativação de status de VCR MCI \_ em
+<span id="MCI_VCR_STATUS_POWER_ON"></span><span id="mci_vcr_status_power_on"></span>ENERGIA DO STATUS DO VCR DA MCI \_ \_ \_ \_
 </dt> <dd>
 
-O membro **dwReturn** será definido como **true** se a energia estiver ativada; caso contrário, será definido como **false** .
+O **membro dwReturn** será definido como **TRUE** se a energia estiver írrea; caso contrário, ele será **definido como FALSE.**
 
 </dd> <dt>
 
-<span id="MCI_VCR_STATUS_PREROLL_DURATION"></span><span id="mci_vcr_status_preroll_duration"></span>\_duração da \_ preversão do status de VCR MCI \_ \_
+<span id="MCI_VCR_STATUS_PREROLL_DURATION"></span><span id="mci_vcr_status_preroll_duration"></span>DURAÇÃO DO \_ \_ PRÉ-ROLL DO STATUS DO VCR \_ DA \_ MCI
 </dt> <dd>
 
-O membro **dwReturn** é definido como o tamanho da fita de vídeo que será reproduzida antes do ponto em que ele foi iniciado, no formato de hora atual. Isso é necessário para estabilizar a saída do VCR.
+O **membro dwReturn** é definido como o comprimento da bola que será reproduzindo antes do ponto em que foi iniciado, no formato de hora atual. Isso é necessário para estabilizar a saída do VCR.
 
 </dd> <dt>
 
-<span id="MCI_VCR_STATUS_RECORD_FORMAT"></span><span id="mci_vcr_status_record_format"></span>\_formato de \_ registro de status de VCR MCI \_ \_
+<span id="MCI_VCR_STATUS_RECORD_FORMAT"></span><span id="mci_vcr_status_record_format"></span>FORMATO DE REGISTRO \_ DE STATUS DO VCR \_ \_ DA \_ MCI
 </dt> <dd>
 
-O membro **dwReturn** é definido como um dos seguintes:
+O **membro dwReturn** é definido como um dos seguintes:
 
--   \_EP de \_ formato \_ VCR MCI
--   \_formato de videocassete MCI \_ \_ LP
--   \_ \_ outro formato de VCR MCI \_
--   \_SP de \_ formato \_ VCR MCI
+-   EP DE \_ FORMATO VCR \_ DA MCI \_
+-   LP DE \_ FORMATO VCR \_ da MCI \_
+-   FORMATO VCR DA MCI \_ \_ \_ OUTROS
+-   FORMATO DE VCR DA MCI \_ \_ \_ SP
 
 </dd> <dt>
 
-<span id="MCI_VCR_STATUS_SPEED"></span><span id="mci_vcr_status_speed"></span>\_velocidade de \_ status do VCR MCI \_
+<span id="MCI_VCR_STATUS_SPEED"></span><span id="mci_vcr_status_speed"></span>VELOCIDADE DE \_ STATUS DO VCR da MCI \_ \_
 </dt> <dd>
 
-O membro **dwReturn** é definido como a velocidade atual. Para obter mais informações, consulte o \_ \_ \_ sinalizador de velocidade do conjunto de VCR MCI do comando [ \_ set do MCI](mci-set.md) .
+O **membro dwReturn** é definido como a velocidade atual. Para obter mais informações, consulte o sinalizador MCI \_ VCR \_ SET SPEED do \_ comando [MCI \_ SET.](mci-set.md)
 
 </dd> <dt>
 
-<span id="MCI_VCR_STATUS_TIME_MODE"></span><span id="mci_vcr_status_time_mode"></span>\_modo de \_ tempo de status do VCR MCI \_ \_
+<span id="MCI_VCR_STATUS_TIME_MODE"></span><span id="mci_vcr_status_time_mode"></span>MODO DE TEMPO \_ DE STATUS DO VCR \_ \_ DA \_ MCI
 </dt> <dd>
 
-O membro **dwReturn** é definido como um dos seguintes:
+O **membro dwReturn** é definido como um dos seguintes:
 
--   \_contador de \_ tempo de VCR MCI \_
--   \_detecção de \_ tempo de VCR MCI \_
--   tempo de vida de \_ hora do VCR MCI \_ \_
+-   CONTADOR DE TEMPO \_ DO VCR \_ da MCI \_
+-   DETECÇÃO DE TEMPO \_ DO VCR \_ da MCI \_
+-   MCI \_ VCR \_ TIME \_ TIMECODE
 
-Para obter mais informações, consulte o \_ \_ \_ \_ sinalizador de modo de tempo de conjunto de VCR MCI do comando [ \_ set do MCI](mci-set.md) .
+Para obter mais informações, consulte o sinalizador MCI \_ VCR \_ SET TIME MODE do comando \_ \_ [MCI \_ SET.](mci-set.md)
 
 </dd> <dt>
 
-<span id="MCI_VCR_STATUS_TIME_TYPE"></span><span id="mci_vcr_status_time_type"></span>\_tipo de \_ tempo de status do VCR MCI \_ \_
+<span id="MCI_VCR_STATUS_TIME_TYPE"></span><span id="mci_vcr_status_time_type"></span>TIPO DE \_ TEMPO DE STATUS DO VCR \_ \_ DA \_ MCI
 </dt> <dd>
 
-O membro **dwReturn** é definido como uma constante que descreve o tipo de hora atual em uso (usado por [Play](play.md), [Record](record.md), [Seek](seek.md)e assim por diante) e é um dos seguintes:
+O **membro dwReturn** é definido como uma constante que descreve o tipo de hora atual em uso (usado por [reproduzir](play.md), [registrar](record.md) [,](seek.md)buscar e assim por diante) e é um dos seguintes:
 
 </dd> <dt>
 
-<span id="MCI_VCR_TIME_COUNTER"></span><span id="mci_vcr_time_counter"></span>\_contador de \_ tempo de VCR MCI \_
+<span id="MCI_VCR_TIME_COUNTER"></span><span id="mci_vcr_time_counter"></span>CONTADOR DE TEMPO \_ DO VCR \_ da MCI \_
 </dt> <dd>
 
 O contador está em uso.
 
 </dd> <dt>
 
-<span id="MCI_VCR_TIME_TIMECODE"></span><span id="mci_vcr_time_timecode"></span>tempo de vida de \_ hora do VCR MCI \_ \_
+<span id="MCI_VCR_TIME_TIMECODE"></span><span id="mci_vcr_time_timecode"></span>MCI \_ VCR \_ TIME \_ TIMECODE
 </dt> <dd>
 
-O código de pafica em uso.
+O código de tempo está em uso.
 
 </dd> <dt>
 
-<span id="MCI_VCR_STATUS_TIMECODE_PRESENT"></span><span id="mci_vcr_status_timecode_present"></span>\_código de status de VCR MCI \_ \_ \_ presente
+<span id="MCI_VCR_STATUS_TIMECODE_PRESENT"></span><span id="mci_vcr_status_timecode_present"></span>MCI \_ VCR \_ STATUS \_ TIMECODE \_ PRESENT
 </dt> <dd>
 
-O membro **dwReturn** será definido como **true** se o código de tempo estiver presente na posição atual no conteúdo; caso contrário, será definido como **false** .
+O **membro dwReturn** será definido como **TRUE se** o código de data/hora estiver presente na posição atual no conteúdo; caso contrário, ele será **definido como FALSE.**
 
 </dd> <dt>
 
-<span id="MCI_VCR_STATUS_TIMECODE_RECORD"></span><span id="mci_vcr_status_timecode_record"></span>\_registro de \_ código de status do VCR MCI \_ \_
+<span id="MCI_VCR_STATUS_TIMECODE_RECORD"></span><span id="mci_vcr_status_timecode_record"></span>REGISTRO DE \_ CÓDIGO DE HORA DO STATUS DO VCR \_ \_ DA \_ MCI
 </dt> <dd>
 
-O membro **dwReturn** será definido como **true** se o código de code for registrado quando o próximo comando de registro for atribuído; caso contrário, será definido como **false** .
+O **membro dwReturn** será definido como **TRUE se** o código de hora for gravado quando o próximo comando de registro for determinado; caso contrário, ele será **definido como FALSE.**
 
 </dd> <dt>
 
-<span id="MCI_VCR_STATUS_TIMECODE_TYPE"></span><span id="mci_vcr_status_timecode_type"></span>\_tipo de \_ código de status de VCR do MCI \_ \_
+<span id="MCI_VCR_STATUS_TIMECODE_TYPE"></span><span id="mci_vcr_status_timecode_type"></span>TIPO DE \_ CÓDIGO DE HORA DO STATUS DO \_ \_ VCR DA \_ MCI
 </dt> <dd>
 
-O membro **dwReturn** é definido como uma constante, descrevendo o tipo de código de erro que é diretamente suportado pelo dispositivo e é um dos seguintes:
+O **membro dwReturn** é definido como uma constante, descrevendo o tipo de código de data/hora com suporte direto pelo dispositivo e é um dos seguintes:
 
--   \_Tipo de código de paficação de videocassete MCI \_ \_ \_ None: este dispositivo não usa um código de um.
--   \_ \_ Tipo de código de erro de VCR MCI \_ \_ outro: este dispositivo usa um código de erro não especificado.
--   \_Tipo de \_ código de pausar VCR MCI \_ \_ : este dispositivo usa o código de pausando SMPTE.
--   Tipo de código de caso de \_ VCR MCI \_ \_ \_ \_ drop ignore: este dispositivo usa o código de recurso de descarte SMPTE.
+-   MCI \_ VCR \_ TIMECODE \_ TYPE \_ NONE: esse dispositivo não usa um código de hora.
+-   MCI \_ VCR \_ TIMECODE \_ TYPE \_ OTHER: esse dispositivo usa um código de hora não especificado.
+-   MCI \_ VCR \_ TIMECODE \_ TYPE \_ SMPTE: esse dispositivo usa o código de hora SMPTE.
+-   MCI \_ VCR \_ TIMECODE \_ TYPE SMPTE DROP: esse dispositivo usa o código de tempo de soltar \_ \_ SMPTE.
 
 </dd> <dt>
 
-<span id="MCI_VCR_STATUS_TUNER_CHANNEL"></span><span id="mci_vcr_status_tuner_channel"></span>\_canal de \_ \_ sintonização de status de VCR MCI \_
+<span id="MCI_VCR_STATUS_TUNER_CHANNEL"></span><span id="mci_vcr_status_tuner_channel"></span>CANAL DE \_ AJUSTE DE STATUS DO \_ VCR \_ DA \_ MCI
 </dt> <dd>
 
-O membro **dwReturn** é definido como o número do canal atual. Se você especificar \_ \_ \_ o número de status do VCR MCI no parâmetro *dwFlags* deste comando, **dwNumber** conterá o número do sintonizador lógico ao qual esse comando se aplica.
+O **membro dwReturn** é definido como o número do canal atual. Se você especificar o NÚMERO DE STATUS do VCR da MCI no parâmetro \_ \_ \_ *dwFlags* deste comando, **dwNumber** conterá o número do ajuste lógico ao qual esse comando se aplica.
 
 </dd> <dt>
 
-<span id="MCI_VCR_STATUS_VIDEO_MONITOR"></span><span id="mci_vcr_status_video_monitor"></span>\_Monitor de \_ vídeo de status de VCR MCI \_ \_
+<span id="MCI_VCR_STATUS_VIDEO_MONITOR"></span><span id="mci_vcr_status_video_monitor"></span>MONITOR DE VÍDEO \_ DE STATUS DO VCR \_ \_ DA \_ MCI
 </dt> <dd>
 
-O membro **dwReturn** é definido como uma constante, indicando o tipo de monitor de vídeo selecionado no momento.
+O **membro dwReturn** é definido como uma constante, indicando o tipo de monitor de vídeo selecionado no momento.
 
 </dd> <dt>
 
-<span id="MCI_VCR_STATUS_VIDEO_MONITOR_NUMBER"></span><span id="mci_vcr_status_video_monitor_number"></span>\_número do \_ Monitor de vídeo do status do VCR MCI \_ \_ \_
+<span id="MCI_VCR_STATUS_VIDEO_MONITOR_NUMBER"></span><span id="mci_vcr_status_video_monitor_number"></span>NÚMERO DO MONITOR DE \_ VÍDEO DE STATUS DO VCR \_ \_ \_ DA \_ MCI
 </dt> <dd>
 
-O membro **dwReturn** é definido como o número do tipo de monitor de vídeo selecionado no momento.
+O **membro dwReturn** é definido como o número do tipo de monitor de vídeo selecionado no momento.
 
 </dd> <dt>
 
-<span id="MCI_VCR_STATUS_VIDEO_RECORD"></span><span id="mci_vcr_status_video_record"></span>\_registro de \_ vídeo de status de VCR MCI \_ \_
+<span id="MCI_VCR_STATUS_VIDEO_RECORD"></span><span id="mci_vcr_status_video_record"></span>REGISTRO DE VÍDEO \_ DE STATUS DO VCR \_ \_ DA \_ MCI
 </dt> <dd>
 
-O membro **dwReturn** será definido como **true** se o vídeo for gravado quando o próximo comando de registro for fornecido; caso contrário, será definido como **false** . Se você especificar a \_ faixa MCI no parâmetro *dwFlags* deste comando, **dwTrack** conterá a faixa à qual essa consulta se aplica.
+O **membro dwReturn** será definido como **TRUE se** o vídeo for gravado quando o próximo comando de registro for determinado; caso contrário, ele será **definido como FALSE.** Se você especificar MCI \_ TRACK no *parâmetro dwFlags* deste comando, **dwTrack** conterá a faixa à qual essa consulta se aplica.
 
 </dd> <dt>
 
-<span id="MCI_VCR_STATUS_VIDEO_SOURCE"></span><span id="mci_vcr_status_video_source"></span>\_fonte de \_ vídeo de status de VCR MCI \_ \_
+<span id="MCI_VCR_STATUS_VIDEO_SOURCE"></span><span id="mci_vcr_status_video_source"></span>ORIGEM DO VÍDEO \_ DE STATUS DO VCR \_ \_ DA \_ MCI
 </dt> <dd>
 
-O membro **dwReturn** é definido como uma constante que indica o tipo de fonte de vídeo selecionado no momento.
+O **membro dwReturn** é definido como uma constante que indica o tipo de fonte de vídeo selecionado no momento.
 
 </dd> <dt>
 
-<span id="MCI_VCR_STATUS_VIDEO_SOURCE_NUMBER"></span><span id="mci_vcr_status_video_source_number"></span>\_número de \_ fonte do vídeo de status do VCR MCI \_ \_ \_
+<span id="MCI_VCR_STATUS_VIDEO_SOURCE_NUMBER"></span><span id="mci_vcr_status_video_source_number"></span>NÚMERO DE \_ ORIGEM DO VÍDEO DE STATUS DO VCR \_ \_ \_ DA \_ MCI
 </dt> <dd>
 
-O membro **dwReturn** é definido como o número do tipo de fonte de vídeo selecionado no momento.
+O **membro dwReturn** é definido como o número do tipo de origem de vídeo selecionado no momento.
 
 </dd> <dt>
 
-<span id="MCI_VCR_STATUS_WRITE_PROTECTED"></span><span id="mci_vcr_status_write_protected"></span>\_status do VCR MCI \_ \_ \_ protegido contra gravação
+<span id="MCI_VCR_STATUS_WRITE_PROTECTED"></span><span id="mci_vcr_status_write_protected"></span>GRAVAÇÃO DE STATUS DO VCR DA MCI \_ \_ \_ \_ PROTEGIDA
 </dt> <dd>
 
-O membro **dwReturn** será definido como **true** se a mídia estiver protegida contra gravação; caso contrário, será definido como **false** .
+O **membro dwReturn** será definido como **TRUE** se a mídia estiver protegida por gravação; caso contrário, ele será **definido como FALSE.**
 
 </dd> </dl>
 
-Para dispositivos VCR, o parâmetro *lpStatus* aponta para uma estrutura de parâmetros de [**status de \_ VCR \_ \_ MCI**](mci-vcr-status-parms.md) .
+Para dispositivos VCR, o *parâmetro lpStatus* aponta para uma [**estrutura \_ \_ \_ PARMS DE STATUS DO VCR da MCI.**](mci-vcr-status-parms.md)
 
 Usar o \_ sinalizador de \_ comprimento do status MCI para determinar o comprimento da mídia sempre retorna 2 horas para dispositivos VCR, a menos que o comprimento tenha sido explicitamente alterado usando o comando [MCI \_ set](mci-set.md) .
 

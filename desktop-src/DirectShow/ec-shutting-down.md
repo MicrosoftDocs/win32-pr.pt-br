@@ -1,17 +1,17 @@
 ---
 description: O grafo de filtro está sendo desligado, antes de ser destruído.
 ms.assetid: f1b3fc87-16ec-485b-b659-fc7d975c4a22
-title: EC_SHUTTING_DOWN (DShow. h)
+title: EC_SHUTTING_DOWN (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 471b746df3980afd96bbfc122a164ccd30561846
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 917a8f79b1a5201e50d0fcf2761a99b2801f75601f95ef866902492fb36065f9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748004"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120079106"
 ---
-# <a name="ec_shutting_down"></a>desligar \_ o EC \_
+# <a name="ec_shutting_down"></a>DESLIGAMENTO \_ DA \_ EC
 
 O grafo de filtro está sendo desligado, antes de ser destruído.
 
@@ -19,7 +19,7 @@ O grafo de filtro está sendo desligado, antes de ser destruído.
 
 <dl> <dt>
 
-<span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
+<span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*Lparam1*
 </dt> <dd>
 
 Zero.
@@ -35,7 +35,7 @@ Zero.
 
 ## <a name="default-action"></a>Ação Padrão
 
-Esse evento não é enviado para o aplicativo. O Gerenciador de gráfico de filtro o envia para os distribuidores de plug-in, para notificá-los de que o grafo está sendo desligado. Os aplicativos não podem substituir a ação padrão desse evento.
+Esse evento não é enviado para o aplicativo. O gerenciador de grafo de filtro envia-o aos distribuidores de plug-in para notificá-los de que o grafo está sendo desligado. Os aplicativos não podem substituir a ação padrão desse evento.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,7 +43,7 @@ Esse evento não é enviado para o aplicativo. O Gerenciador de gráfico de filt
 
 | Requisito | Valor |
 |-------------------|------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>DShow. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 
@@ -54,7 +54,7 @@ Esse evento não é enviado para o aplicativo. O Gerenciador de gráfico de filt
 [Códigos de notificação de eventos](event-notification-codes.md)
 </dt> <dt>
 
-[Notificação de eventos no DirectShow](event-notification-in-directshow.md)
+[Notificação de eventos DirectShow](event-notification-in-directshow.md)
 </dt> </dl>
 
  

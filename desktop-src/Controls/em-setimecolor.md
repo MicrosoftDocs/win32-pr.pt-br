@@ -3,7 +3,7 @@ title: Mensagem de EM_SETIMECOLOR (RichEdit. h)
 description: Define a cor de composição do IME (editor de método de entrada) para um controle de edição rico.
 ms.assetid: ea5449c9-7d0f-4340-8e3e-1e0b77d443f6
 keywords:
-- Controles de EM_SETIMECOLOR de mensagens do Windows
+- controles de Windows de mensagem de EM_SETIMECOLOR
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c020bb3af2b1197afc005bd0b6efec82b609b88
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7a0f68e548a36cbdaa28f292feb69b6d56cbc3264b0bea8bdb1938088717bd62
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455348"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120048396"
 ---
 # <a name="em_setimecolor-message"></a>\_Mensagem em SETIMECOLOR
 
@@ -48,7 +48,7 @@ Ponteiro para uma estrutura [**COMPCOLOR**](/windows/desktop/api/Richedit/ns-ric
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a operação for concluída com sucesso, o valor de retorno será um valor diferente de zero.
 
@@ -60,9 +60,9 @@ Se a operação falhar, o valor de retorno será zero.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
 
 
 

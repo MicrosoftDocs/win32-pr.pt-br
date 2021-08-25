@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: 651b9af34afdd2ffd767eba7ca4467ecfee081cf
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a75dd64bfbeaf027839c63227c594ada7602101d059cbbd9d10deb085152918d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104088813"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120103646"
 ---
 # <a name="sdbgetfileattributes-function"></a>Função SdbGetFileAttributes
 
@@ -41,34 +41,34 @@ BOOL WINAPI SdbGetFileAttributes(
 
 <dl> <dt>
 
-*lpwszFileName* \[ no\]
+*lpwszFileName* \[ Em\]
 </dt> <dd>
 
 O caminho para o arquivo.
 
 </dd> <dt>
 
-*ppAttrInfo* \[ fora\]
+*ppAttrInfo* \[ out\]
 </dt> <dd>
 
-Uma matriz de estruturas [**ATTRINFO**](attrinfo.md) que contêm os dados de atributo.
+Uma matriz de [**estruturas ATTRINFO**](attrinfo.md) que contêm os dados de atributo.
 
 </dd> <dt>
 
-*lpdwAttrCount* \[ fora\]
+*lpdwAttrCount* \[ out\]
 </dt> <dd>
 
 O número de atributos.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-A função retorna **true** em caso de êxito ou **false** em caso de falha.
+A função retorna **TRUE em** caso de êxito **ou FALSE** em caso de falha.
 
 ## <a name="remarks"></a>Comentários
 
-Depois de concluir os dados, libere-os usando a função [**SdbFreeFileAttributes**](sdbfreefileattributes.md) .
+Quando terminar de usar os dados, livre-os usando a [**função SdbFreeFileAttributes.**](sdbfreefileattributes.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -76,8 +76,8 @@ Depois de concluir os dados, libere-os usando a função [**SdbFreeFileAttribute
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                   |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

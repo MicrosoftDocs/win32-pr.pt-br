@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 38ddb306ee6fdcbd1eb792b2c29ca367adc0f4b88cc25dfcbdde22c2638258d1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 546ace6b93328c3420a33c131250510d8421491b
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118765032"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122470832"
 ---
 # <a name="jet_ls"></a>JET_LS
 
@@ -29,9 +29,9 @@ _**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jet_ls"></a>JET_LS
 
-O **JET_LS** de dados contém um identificador de contexto para o armazenamento local (LS). Esse handle pode ser associado a um cursor ou a uma tabela e pode se referir a recursos alocados dinamicamente.
+O tipo de dados **JET_LS** contém um identificador de contexto para armazenamento local (ls). Esse identificador pode ser associado a um cursor ou uma tabela e pode se referir a recursos alocados dinamicamente.
 
-**Windows XP: JET_LS** é introduzido no Windows XP.
+**Windows xp: JET_LS** é introduzido no Windows XP.
 
 ```cpp
     typedef JET_API_PTR JET_LS;
@@ -41,70 +41,31 @@ O **JET_LS** de dados contém um identificador de contexto para o armazenamento 
 
 JET_LS
 
-Um valor de JET_LSNil indica um alça de contexto inválido.
+Um valor de JET_LSNil indica um identificador de contexto inválido.
 
 ### <a name="remarks"></a>Comentários
 
-Um identificador de contexto é inicialmente associado ao tipo **JET_LS** de dados, usando [JetSetLS](./jetsetls-function.md). O identificador de contexto pode ser recuperado do tipo **JET_LS** de dados, usando [JetGetLS](./jetgetls-function.md).
+Um identificador de contexto é inicialmente associado ao tipo de dados **JET_LS** , usando [JetSetLS](./jetsetls-function.md). O identificador de contexto pode ser recuperado do tipo de dados **JET_LS** , usando [JetGetLS](./jetgetls-function.md).
 
-O identificador de contexto pode ser desassociado explicitamente do **tipo de dados JET_LS** usando [JetGetLS](./jetgetls-function.md) com JET_bitLSReset. Como alternativa, o identificador de contexto pode ser desassociado implicitamente do tipo de dados **JET_LS** quando o objeto subjacente é liberado pelo mecanismo de banco de dados como resultado da ação direta ou indireta do aplicativo. No caso implícito, um retorno de chamada de runtime é emitido para o aplicativo para que ele possa limpar o handle de contexto. Para obter mais informações sobre a desassociação implícita do **tipo JET_LS** dados, consulte [JetSetLS](./jetsetls-function.md).
+O identificador de contexto pode ser explicitamente desassociado do tipo de dados **JET_LS** usando [JetGetLS](./jetgetls-function.md) com JET_bitLSReset. Como alternativa, o identificador de contexto pode ser implicitamente desassociado do tipo de dados **JET_LS** quando o objeto subjacente é liberado pelo mecanismo de banco de dados como resultado de uma ação direta ou indireta pelo aplicativo. No caso implícito, um retorno de chamada de tempo de execução é emitido para o aplicativo para que ele possa limpar o identificador de contexto. Para obter mais informações sobre como desassociar implicitamente do tipo de dados **JET_LS** , consulte [JetSetLS](./jetsetls-function.md).
 
-Os sinalizadores a seguir são associados ao tipo JET_LS dados.
+Os sinalizadores a seguir são associados ao tipo de dados JET_LS.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Termo</p></th>
-<th><p>Descrição</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_bitLSReset</p></td>
-<td><p>O identificador de contexto é desassociado do objeto .</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitLSCursor</p></td>
-<td><p>Definir ou recuperar o armazenamento local associado a um cursor de tabela.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_bitLSTable</p></td>
-<td><p>Definir ou recuperar o armazenamento local associado a uma tabela.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_LSNil</p></td>
-<td><p>O alça de contexto é inválido.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Termo</p> | <p>Descrição</p> | 
+|-------------|--------------------|
+| <p>JET_bitLSReset</p> | <p>O identificador de contexto é desassociado do objeto.</p> | 
+| <p>JET_bitLSCursor</p> | <p>Definir ou recuperar o armazenamento local associado a um cursor de tabela.</p> | 
+| <p>JET_bitLSTable</p> | <p>Definir ou recuperar o armazenamento local associado a uma tabela.</p> | 
+| <p>JET_LSNil</p> | <p>O identificador de contexto é inválido.</p> | 
+
 
 
 ### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requer Windows Vista ou Windows XP.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>Requer Windows Server 2008 ou Windows Server 2003.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em Esent.h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>requer o Windows Vista ou Windows XP.</p> | | <p><strong>Servidor</strong></p> | <p>requer o Windows server 2008 ou Windows server 2003.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | 
+
 
 
 ### <a name="see-also"></a>Consulte Também

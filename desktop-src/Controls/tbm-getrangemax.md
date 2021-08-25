@@ -3,7 +3,7 @@ title: Mensagem de TBM_GETRANGEMAX (commctrl. h)
 description: Recupera a posição máxima do controle deslizante em um TrackBar.
 ms.assetid: c0ae5f96-f4ce-46cd-84d0-9e7c473441a0
 keywords:
-- Controles de TBM_GETRANGEMAX de mensagens do Windows
+- controles de Windows de mensagem de TBM_GETRANGEMAX
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6bdd9687b617759ab8b8fdea59ed06d7fcd78b6d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e14e5988802135816076bea8549df125c46708a83d3d949bbe0f90659ea2468f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009396"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120046486"
 ---
 # <a name="tbm_getrangemax-message"></a>\_Mensagem tbm GETRANGEMAX
 
@@ -35,7 +35,7 @@ Recupera a posição máxima do controle deslizante em um TrackBar.
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor de 32 bits que especifica a posição máxima no intervalo de TrackBar de mínimo para máximo de posições do controle deslizante.
 
@@ -45,9 +45,9 @@ Retorna um valor de 32 bits que especifica a posição máxima no intervalo de T
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

@@ -1,20 +1,20 @@
 ---
-description: Instrumentação de Gerenciamento do Windows (WMI) define um conjunto de propriedades do sistema que estão associadas a todas as classes e instâncias de classes.
+description: Windows A instrumentação de gerenciamento (WMI) define um conjunto de propriedades do sistema que estão associadas a todas as classes e instâncias de classes.
 ms.assetid: e812c0cb-3e08-4cac-8d05-2cd7abc922d1
 ms.tgt_platform: multiple
 title: Propriedades do sistema WMI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b3ee541d9de0d37c9aa1eae4ded07d3cb70ff1bf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d3471665e2e818037bb831c8d8ab39bbe0d56e01912afb1a3399b4055d3670a1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104165318"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120120656"
 ---
 # <a name="wmi-system-properties"></a>Propriedades do sistema WMI
 
-Instrumentação de Gerenciamento do Windows (WMI) define um conjunto de propriedades do sistema que estão associadas a todas as classes e instâncias de classes. Assim como acontece com as classes do sistema, os nomes das propriedades do sistema começam com um sublinhado duplo, distinguindo-os das propriedades criadas por aplicativos ou provedores que não devem começar com um sublinhado simples ou duplo. Outra maneira de identificar uma propriedade do sistema é usar o método [**IWbemClassObject:: Get**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-get) .
+Windows A instrumentação de gerenciamento (WMI) define um conjunto de propriedades do sistema que estão associadas a todas as classes e instâncias de classes. Assim como acontece com as classes do sistema, os nomes das propriedades do sistema começam com um sublinhado duplo, distinguindo-os das propriedades criadas por aplicativos ou provedores que não devem começar com um sublinhado simples ou duplo. Outra maneira de identificar uma propriedade do sistema é usar o método [**IWbemClassObject:: Get**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-get) .
 
 As propriedades do sistema estão disponíveis a qualquer momento, mas os valores podem ser **nulos**. **NULL** indica que uma propriedade não se aplica a um objeto específico. No entanto, as propriedades do sistema podem não estar disponíveis o tempo todo para todas as classes ou instâncias.
 

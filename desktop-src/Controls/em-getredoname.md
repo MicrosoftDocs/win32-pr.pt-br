@@ -1,9 +1,9 @@
 ---
-title: Mensagem de EM_GETREDONAME (RichEdit. h)
-description: Recupera o tipo da próxima ação, se houver, na fila de restauração do controle de edição avançada.
+title: EM_GETREDONAME mensagem (Richedit.h)
+description: Recupera o tipo da próxima ação, se alguma, na fila refazer do controle de edição rich.
 ms.assetid: 8649236f-32dc-45d3-847e-c9f65ffba44c
 keywords:
-- Controles de EM_GETREDONAME de mensagens do Windows
+- EM_GETREDONAME controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ea44257344b9ebdb8ffe91ad97e939aae0db9b9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9687ae54223ec7cc0f908d747eff2504216b79469b5f285863f8c8ffdfe91b3b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918561"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120048816"
 ---
-# <a name="em_getredoname-message"></a>\_Mensagem em refazer
+# <a name="em_getredoname-message"></a>Mensagem EM \_ GETREDONAME
 
-Recupera o tipo da próxima ação, se houver, na fila de restauração do controle de edição avançada.
+Recupera o tipo da próxima ação, se alguma, na fila refazer do controle de edição rich.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -43,15 +43,15 @@ Não usado; deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se a fila de restauração do controle não estiver vazia, o valor retornado será um valor de enumeração [**UNDONAMEID**](/windows/desktop/api/Richedit/ne-richedit-undonameid) que indica o tipo da próxima ação na fila de restauração do controle.
+Se a fila de refazer para o controle não estiver vazia, o valor retornado será um valor de enumeração [**UNDONAMEID**](/windows/desktop/api/Richedit/ne-richedit-undonameid) que indica o tipo da próxima ação na fila de refazer do controle.
 
-Se não houver ações refazêveis ou o tipo da próxima ação refeita for desconhecido, o valor de retorno será zero.
+Se não houver nenhuma ação redoável ou o tipo da próxima ação redoável for desconhecido, o valor de retorno será zero.
 
 ## <a name="remarks"></a>Comentários
 
-Os tipos de ações que podem ser desfeitas ou refeitos incluem as operações de digitação, exclusão, arrastar e soltar, recortar e colar. Essas informações podem ser úteis para aplicativos que fornecem uma interface do usuário estendida para operações de desfazer e refazer, como uma caixa de listagem suspensa de ações refazêveis.
+Os tipos de ações que podem ser desfeitas ou refeitas incluem operações de digitação, exclusão, arrastar e soltar, recortar e colar. Essas informações podem ser úteis para aplicativos que fornecem uma interface do usuário estendida para operações de desfazer e refazer, como uma caixa de listagem lista de ações redoáveis.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,9 +59,9 @@ Os tipos de ações que podem ser desfeitas ou refeitos incluem as operações d
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -72,13 +72,13 @@ Os tipos de ações que podem ser desfeitas ou refeitos incluem as operações d
 **Referência**
 </dt> <dt>
 
-[**em \_ GETundoname**](em-getundoname.md)
+[**EM \_ GETUNDONAME**](em-getundoname.md)
 </dt> <dt>
 
-[**em \_ refazer**](em-redo.md)
+[**EM \_ REDO**](em-redo.md)
 </dt> <dt>
 
-[**em \_ desfazer**](em-undo.md)
+[**EM \_ UNDO**](em-undo.md)
 </dt> <dt>
 
 [**UNDONAMEID**](/windows/desktop/api/Richedit/ne-richedit-undonameid)

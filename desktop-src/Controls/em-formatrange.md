@@ -1,9 +1,9 @@
 ---
-title: Mensagem de EM_FORMATRANGE (RichEdit. h)
-description: Formata um intervalo de texto em um controle de edição rico para um dispositivo específico.
+title: EM_FORMATRANGE mensagem (Richedit.h)
+description: Formatar um intervalo de texto em um controle de edição rico para um dispositivo específico.
 ms.assetid: 6d1e562b-d741-4d4a-a395-554083cb0dbb
 keywords:
-- Controles de EM_FORMATRANGE de mensagens do Windows
+- EM_FORMATRANGE controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f8f235fb054643623510ea23e73001aaeb070be3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 941aceb8c8f91657c7f78aba3d83a627fc413ed20d71217c933c6fba9b6f39e2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824478"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120049346"
 ---
-# <a name="em_formatrange-message"></a>\_Mensagem em FORMATRANGE
+# <a name="em_formatrange-message"></a>Mensagem EM \_ FORMATRANGE
 
-Formata um intervalo de texto em um controle de edição rico para um dispositivo específico.
+Formatar um intervalo de texto em um controle de edição rico para um dispositivo específico.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -32,26 +32,26 @@ Formata um intervalo de texto em um controle de edição rico para um dispositiv
 *wParam* 
 </dt> <dd>
 
-Especifica se o texto deve ser renderizado. Se esse parâmetro não for zero, o texto será renderizado. Caso contrário, o texto é apenas medido.
+Especifica se o texto deve ser renderizar. Se esse parâmetro não for zero, o texto será renderizado. Caso contrário, o texto será apenas medido.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Uma estrutura [**FORMATRANGE**](/windows/desktop/api/Richedit/ns-richedit-formatrange) que contém informações sobre o dispositivo de saída ou **NULL** para liberar informações armazenadas em cache pelo controle.
+Uma [**estrutura FORMATRANGE**](/windows/desktop/api/Richedit/ns-richedit-formatrange) que contém informações sobre o dispositivo de saída ou **NULL** para liberar informações armazenadas em cache pelo controle .
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Essa mensagem retorna o índice do último caractere que se ajusta à região, mais 1.
+Essa mensagem retorna o índice do último caractere que se encaixa na região, mais 1.
 
 ## <a name="remarks"></a>Comentários
 
-Essa mensagem é normalmente usada para formatar o conteúdo do controle de edição rico para um dispositivo de saída, como uma impressora.
+Normalmente, essa mensagem é usada para formatar o conteúdo do controle de edição rich para um dispositivo de saída, como uma impressora.
 
-Depois de usar essa mensagem para formatar um intervalo de texto, é importante que você libere informações armazenadas em cache enviando **em \_ FORMATRANGE** novamente, mas com *lParam* definido como **NULL**; caso contrário, ocorrerá um vazamento de memória. Além disso, depois de usar essa mensagem para um dispositivo, você deve liberar as informações em cache antes de usá-las novamente para um dispositivo diferente.
+Depois de usar essa mensagem para formatar um intervalo de texto, é importante liberar informações armazenadas em cache enviando **EM \_ FORMATRANGE** novamente, mas com *lParam definido* como **NULL;** caso contrário, ocorrerá um vazamento de memória. Além disso, depois de usar essa mensagem para um dispositivo, você deve liberar informações armazenadas em cache antes de usá-la novamente para um dispositivo diferente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,9 +59,9 @@ Depois de usar essa mensagem para formatar um intervalo de texto, é importante 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -72,13 +72,13 @@ Depois de usar essa mensagem para formatar um intervalo de texto, é importante 
 **Referência**
 </dt> <dt>
 
-[**em \_ DISPLAYBAND**](em-displayband.md)
+[**EM \_ DISPLAYBAND**](em-displayband.md)
 </dt> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
-[Imprimindo controles de edição avançada](printing-rich-edit-controls.md)
+[Imprimindo controles de edição rich](printing-rich-edit-controls.md)
 </dt> </dl>
 
  

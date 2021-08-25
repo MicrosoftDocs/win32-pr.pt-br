@@ -1,5 +1,5 @@
 ---
-description: O registro do Win32 \_&\# 8194; A classe WMI representa o registro do sistema em um sistema de computador executando o Windows.
+description: O registro do Win32 \_&\# 8194; A classe WMI representa o registro do sistema em um sistema de computador que executa o Windows.
 ms.assetid: 4a6cd7d7-2845-434d-b024-d6dbb77371ea
 ms.tgt_platform: multiple
 title: Classe Win32_Registry
@@ -22,16 +22,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: a1dc5fd89ee589aabda5da5f97632d86b39f6beb
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 64611f35e08d9b816d990602b43c62330431e8afb65874cee284fac5778a898d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920204"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119971571"
 ---
 # <a name="win32_registry-class"></a>\_Classe de Registro Win32
 
-A  [classe WMI](../wmisdk/retrieving-a-class.md) de **\_ registro do Win32** representa o registro do sistema em um sistema de computador executando o Windows.
+A  [classe WMI](../wmisdk/retrieving-a-class.md) de **\_ registro do Win32** representa o registro do sistema em um sistema de computador que executa o Windows.
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas. As propriedades e os métodos estão em ordem alfabética, não em ordem de MOF.
 
@@ -94,7 +94,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("win32api \|NTDLL.DLL\| [**NtQuerySystemInformation**](/windows/win32/api/winternl/nf-winternl-ntquerysysteminformation) \| SystemRegistryQuotaInformation"), [**unidades**](../wmisdk/standard-qualifiers.md) ("megabytes")
 </dt> </dl>
 
-Tamanho físico atual do registro do Windows.
+tamanho físico atual do registro de Windows.
 
 Exemplo: 10
 
@@ -148,7 +148,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry do \| sistema \\ \\ CurrentControlSet \\ \\ Control \| RegistrySizeLimit"), [**unidades**](../wmisdk/standard-qualifiers.md) ("megabytes")
 </dt> </dl>
 
-Tamanho máximo do registro do Windows. Se o sistema for bem-sucedido ao usar a propriedade **proposedSize** , **MaximumSize** deverá conter o mesmo valor.
+tamanho máximo do registro de Windows. Se o sistema for bem-sucedido ao usar a propriedade **proposedSize** , **MaximumSize** deverá conter o mesmo valor.
 
 </dd> <dt>
 
@@ -164,7 +164,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**Key**](../wmisdk/key-qualifier.md), [**override**](../wmisdk/standard-qualifiers.md) ("Name"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry")
 </dt> </dl>
 
-Nome do registro do Windows. O tamanho máximo é de 256 caracteres.
+nome do registro de Windows. O tamanho máximo é de 256 caracteres.
 
 </dd> <dt>
 
@@ -180,7 +180,7 @@ Tipo de acesso: leitura/gravação
 Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry do \| sistema \\ \\ CurrentControlSet \\ \\ Control \| RegistrySizeLimit"), [**unidades**](../wmisdk/standard-qualifiers.md) ("megabytes")
 </dt> </dl>
 
-Tamanho proposto do registro do Windows. É a única configuração do registro que pode ser modificada e sua proposta é tentada na próxima vez em que o sistema for inicializado.
+tamanho proposto do registro de Windows. É a única configuração do registro que pode ser modificada e sua proposta é tentada na próxima vez em que o sistema for inicializado.
 
 </dd> <dt>
 

@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7e4076730f249695cc37c473643d8f0dc20d24f79fb48ec822afaf9b8d4234b1
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: dc3184f18bf692c333d7088ade79ff4ac5360f1a
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119393086"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122631354"
 ---
 # <a name="groupsizedefinition-element"></a>Elemento GroupSizeDefinition
 
@@ -39,10 +39,10 @@ Representa um tamanho de layout para um grupo de controles em um modelo personal
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

@@ -1,9 +1,9 @@
 ---
 title: Elemento Scale
-description: Representa o tamanho e a preferência de layout de um Grupo de controles por meio de um par Group, SizeDefinition.
+description: Representa o tamanho e a preferência de layout de um grupo de controles por meio de um par de grupo, SizeDefinition.
 ms.assetid: feef3721-c779-4c64-96c6-9d951ac32277
 keywords:
-- Faixa de opções do Windows do elemento Scale
+- elemento Scale Windows faixa de faixas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e3ba922b65525b92189673020f7155275bdf49f9
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 580cfad910a727f7e4392489adc8cb8baec9a0bc
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111445007"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122630197"
 ---
 # <a name="scale-element"></a>Elemento Scale
 
-Representa o tamanho e a preferência de layout de um [**Grupo**](windowsribbon-element-group.md) de controles por meio de um par {**Grupo**, [**SizeDefinition**](windowsribbon-element-sizedefinition.md)}.
+Representa o tamanho e a preferência de layout de um [**grupo**](windowsribbon-element-group.md) de controles por meio de um par {**Group**, [**SizeDefinition**](windowsribbon-element-sizedefinition.md)}.
 
 ## <a name="usage"></a>Uso
 
@@ -39,10 +39,10 @@ Representa o tamanho e a preferência de layout de um [**Grupo**](windowsribbon-
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -55,17 +55,17 @@ Representa o tamanho e a preferência de layout de um [**Grupo**](windowsribbon-
 <tbody>
 <tr class="odd">
 <td><strong>Grupo</strong><br/></td>
-<td>xs:positiveInteger ou xs:string<br/></td>
+<td>xs: positiveInteger ou xs: String<br/></td>
 <td>Sim<br/></td>
-<td>Deve corresponder a um <em>CommandName de Grupo existente.</em> <a href="windowsribbon-element-group.md"><strong></strong></a><br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs:positiveInteger ou xs:string)<br/> </dt> <dd> Uma cadeia de caracteres ou um valor inteiro entre 2 e 59999, inclusive ou 0x2 e 0xea5f em hexadecimal, inclusive. <br/> O valor deve ser exclusivo dentro do documento XML da Faixa de Opções. <br/> Comprimento máximo: 100 caracteres. <br/> </dd> </dl></td>
+<td>Deve corresponder a um <a href="windowsribbon-element-group.md"><strong>grupo</strong></a> de <em>CommandName</em>existente.<br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs: positiveInteger ou xs: String)<br/> </dt> <dd> Uma cadeia de caracteres ou um valor inteiro entre 2 e 59999, inclusivo, ou 0x2 e 0xea5f em hexadecimal, inclusive. <br/> O valor deve ser exclusivo no documento XML da faixa de faixas. <br/> Comprimento máximo: 100 caracteres. <br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>Tamanho</strong><br/></td>
 <td>xs:string<br/></td>
 <td>Sim<br/></td>
-<td>Esse valor deve corresponder a um dos tamanhos válidos para <a href="windowsribbon-element-group.md"><strong></strong></a> o atributo <em>SizeDefinition</em> do Grupo de controles associado especificado no <em>Grupo</em>. <br/> Restrito a um dos seguintes valores: <br/> <br/>
-<dt><span></span><span></span><strong></strong> (Pop-up)<br/> </dt> <dd> Layout de controle idêntico <code>Large</code> para , mas hospedado em um pop-up ou em um painel de lista.<br/> </dd> <dt><span></span><span></span><strong></strong> (Pequeno)<br/> </dt> <dd> Modelo <a href="windowsribbon-element-sizedefinition.md"><strong>SizeDefinition</strong></a> pequeno.<br/> </dd> <dt><span></span><span></span><strong></strong> (Médio)<br/> </dt> <dd> Modelo <a href="windowsribbon-element-sizedefinition.md"><strong>Medium SizeDefinition.</strong></a><br/> </dd> <dt><span></span><span></span><strong></strong> (Grande)<br/> </dt> <dd> Modelo <a href="windowsribbon-element-sizedefinition.md"><strong>SizeDefinition</strong></a> grande.<br/> </dd> </dl></td>
+<td>Esse valor deve corresponder a um dos tamanhos válidos para o atributo <em>SizeDefinition</em> do <a href="windowsribbon-element-group.md"><strong>grupo</strong></a> associado de controles especificado no <em>grupo</em>. <br/> Restrito a um dos seguintes valores: <br/> <br/>
+<dt><span></span><span></span><strong></strong> Pop-up<br/> </dt> <dd> Layout de controle idêntico a <code>Large</code> , mas hospedado em um pop-up ou em um painel suspenso.<br/> </dd> <dt><span></span><span></span><strong></strong> Menores<br/> </dt> <dd> Modelo de <a href="windowsribbon-element-sizedefinition.md"><strong>SizeDefinition</strong></a> pequeno.<br/> </dd> <dt><span></span><span></span><strong></strong> Médio<br/> </dt> <dd> Modelo de <a href="windowsribbon-element-sizedefinition.md"><strong>SizeDefinition</strong></a> médio.<br/> </dd> <dt><span></span><span></span><strong></strong> Vários<br/> </dt> <dd> Modelo de <a href="windowsribbon-element-sizedefinition.md"><strong>SizeDefinition</strong></a> grande.<br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -91,15 +91,15 @@ Não há elementos filho.
 
 Opcional.
 
-Pode ocorrer uma ou mais vezes para [**cada ScalingPolicy**](windowsribbon-element-scalingpolicy.md) ou [**ScalingPolicy.IdealSizes.**](windowsribbon-element-scalingpolicy-idealsizes.md)
+Pode ocorrer uma ou mais vezes para cada [**ScalingPolicy**](windowsribbon-element-scalingpolicy.md) ou [**ScalingPolicy. IdealSizes**](windowsribbon-element-scalingpolicy-idealsizes.md).
 
-Cada par de atributos (*Grupo* *,* Tamanho ) deve ser exclusivo.
+Cada par de atributos (*grupo*, *tamanho*) deve ser exclusivo.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir demonstra como [**a**](windowsribbon-element-group.md) aparência dos controles em um grupo pode ser personalizada por meio da funcionalidade de layout adaptável dos modelos Ribbon [**SizeDefinition.**](windowsribbon-element-sizedefinition.md)
+O exemplo a seguir demonstra como a aparência de controles em um [**grupo**](windowsribbon-element-group.md) pode ser personalizada por meio da funcionalidade de layout adaptável dos modelos de faixa de opções [**SizeDefinition**](windowsribbon-element-sizedefinition.md) .
 
-O [**manifesto ScalingPolicy**](windowsribbon-element-scalingpolicy.md) neste exemplo especifica uma preferência [**ScalingPolicy.IdealSizes**](windowsribbon-element-scalingpolicy-idealsizes.md) [**SizeDefinition**](windowsribbon-element-sizedefinition.md) para cada um dos quatro grupos de controles em uma **guia** Início. Além disso, **os elementos Scale** são especificados para influenciar o comportamento de ressução, em ordem de tamanho decrescente, de cada grupo.
+O manifesto [**ScalingPolicy**](windowsribbon-element-scalingpolicy.md) neste exemplo especifica uma preferência de [**ScalingPolicy. IdealSizes**](windowsribbon-element-scalingpolicy-idealsizes.md) [**SizeDefinition**](windowsribbon-element-sizedefinition.md) para cada um dos quatro grupos de controles em uma guia **página inicial** . Além disso, os elementos **Scale** são especificados para influenciar o comportamento de recolhimento, em ordem de tamanho decrescente, de cada grupo.
 
 
 ```XML
@@ -169,8 +169,8 @@ O [**manifesto ScalingPolicy**](windowsribbon-element-scalingpolicy.md) neste ex
 
 
 
-* **Sistema mínimo com suporte:** Windows 7
-* **Pode estar vazio:** Sim
+* **sistema mínimo com suporte**: Windows 7
+* **Pode estar vazio**: Sim
 
 
 
@@ -178,7 +178,7 @@ O [**manifesto ScalingPolicy**](windowsribbon-element-scalingpolicy.md) neste ex
 
 <dl> <dt>
 
-[Personalização de uma faixa de opções por meio de definições de tamanho e políticas de dimensionamento](windowsribbon-templates.md)
+[Personalizando uma faixa de guia por meio de definições de tamanho e políticas de dimensionamento](windowsribbon-templates.md)
 </dt> </dl>
 
  
