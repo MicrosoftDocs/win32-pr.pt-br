@@ -1,9 +1,9 @@
 ---
-title: Elemento Template (TemplateListType)
-description: Um modelo que define os dados a serem incluídos com um evento. | Elemento Template (TemplateListType)
+title: Elemento template (TemplateListType)
+description: Um modelo que define os dados a incluir com um evento. | Elemento template (TemplateListType)
 ms.assetid: 97560254-100c-4d2a-bf3f-ca0897ece6c2
 keywords:
-- Log de elemento de modelo
+- elemento template EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: aeba50057fdec03bfea5a03ca164b4c3d8f29593
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 9bccc77d13eb07bf771fa61ef6537ad9010e4d8975dbf77389d9a7722eb8b664
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105781477"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120005696"
 ---
-# <a name="template-templatelisttype-element"></a>Elemento Template (TemplateListType)
+# <a name="template-templatelisttype-element"></a>Elemento template (TemplateListType)
 
-Um modelo que define os dados a serem incluídos com um evento.
+Um modelo que define os dados a incluir com um evento.
 
 ``` syntax
 <xs:element name="template"
@@ -30,7 +30,7 @@ Um modelo que define os dados a serem incluídos com um evento.
  />
 ```
 
-O elemento de **modelo** é definido pelo tipo complexo [**TemplateListType**](eventmanifestschema-templatelisttype-complextype.md) .
+O **elemento** de modelo é definido pelo tipo complexo [**TemplateListType.**](eventmanifestschema-templatelisttype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ O elemento de **modelo** é definido pelo tipo complexo [**TemplateListType**](e
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

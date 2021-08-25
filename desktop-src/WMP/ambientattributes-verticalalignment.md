@@ -3,7 +3,7 @@ title: Ambiente. verticalAlignment
 description: O atributo verticalAlignment especifica ou recupera um valor que indica o posicionamento vertical do controle quando a exibição ou a subexibição pai é ampliada.
 ms.assetid: 08ef483a-58ee-4a35-9973-2567076d07f7
 keywords:
-- Windows Media Player de ambiente. verticalAlignment
+- Windows Media Player ambientalattributes. verticalAlignment
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 88de2f5f54b95b14827fabb2bafb89ff6974966b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a116a8883fe1d591f5c68050e4a5ab738a3cf913322ae7c671c71a507f2c924d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105781466"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119956386"
 ---
 # <a name="ambientattributesverticalalignment"></a>Ambiente. verticalAlignment
 

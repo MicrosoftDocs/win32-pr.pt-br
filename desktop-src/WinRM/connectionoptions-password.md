@@ -5,8 +5,8 @@ ms.assetid: 61ba54b6-7da0-423e-b5b2-c4dd8aacd042
 ms.tgt_platform: multiple
 keywords:
 - Gerenciamento Remoto do Windows de propriedade de senha
-- Propriedade Password Gerenciamento Remoto do Windows, objeto ConnectionOptions
-- Objeto ConnectionOptions Gerenciamento Remoto do Windows, Propriedade Password
+- propriedade Password Gerenciamento Remoto do Windows, objeto connectionoptions
+- objeto connectionoptions Gerenciamento Remoto do Windows, propriedade Password
 topic_type:
 - apiref
 api_name:
@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d4d553bf3f2a0a245e358e09a89eb1c00751e58
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8ffc992b5a0560175d6562a16cf4cb3fd6bc4259eb3b712e26708dc713baba14
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085858"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119898986"
 ---
 # <a name="connectionoptionspassword-property"></a>Propriedade ConnectionOptions. Password
 
@@ -51,7 +51,7 @@ Se nenhum valor for fornecido e o sinalizador **WSManFlagCredUsernamePassword** 
 
 Lembre-se de que você não pode recuperar a senha. A senha só pode ser definida com esta propriedade.
 
-Se você criar um objeto [**ConnectionOptions**](connectionoptions.md) e usar um nome de usuário e senha para se conectar ao gerenciamento remoto do Windows, o sinalizador **WSManFlagCredUserNamePassword** deverá ser definido na chamada para [**WSMan. CreateSession**](wsman-createsession.md).
+se você criar um objeto [**connectionoptions**](connectionoptions.md) e usar um nome de usuário e senha para se conectar ao Gerenciamento Remoto do Windows, o sinalizador **WSManFlagCredUserNamePassword** deverá ser definido na chamada para [**WSMan. createsession**](wsman-createsession.md).
 
 Para obter mais informações sobre como definir senhas, consulte a seção comentários em [**ConnectionOptions**](connectionoptions.md).
 
@@ -78,7 +78,7 @@ objOptions.Password = "<password>"
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                 |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                           |
-| parâmetro<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>WSManDisp. idl</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>WSManDisp. tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>WSMAuto.dll</dt> </dl>   |

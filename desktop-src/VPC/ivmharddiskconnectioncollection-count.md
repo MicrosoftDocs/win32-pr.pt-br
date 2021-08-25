@@ -1,11 +1,11 @@
 ---
-title: Propriedade Count de IVMHardDiskConnectionCollection (VPCCOMInterfaces. h)
+title: Propriedade IvMHardDiskConnectionCollection Count (VPCCOMInterfaces.h)
 description: Recupera o número de conexões de disco rígido nesta coleção.
 ms.assetid: 913c1bb7-0237-4f11-9873-7b42a94004f8
 keywords:
-- Propriedade de contagem Virtual PC
-- Propriedade Count Virtual PC, interface IVMHardDiskConnectionCollection
-- Virtual PC de interface IVMHardDiskConnectionCollection, Propriedade Count
+- Propriedade Count Pc Virtual
+- Propriedade Count Pc Virtual , interface IVMHardDiskConnectionCollection
+- INTERFACE IVMHardDiskConnectionCollection pc virtual , propriedade Count
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3f34bbf4d07d7c5967ccfc38e16a743105de8e69
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fccb00cf2388db8a971f5da2f726030b3f793ac878f4a59df2646195eb41ef15
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644713"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119974316"
 ---
-# <a name="ivmharddiskconnectioncollectioncount-property"></a>Propriedade IVMHardDiskConnectionCollection:: Count
+# <a name="ivmharddiskconnectioncollectioncount-property"></a>Propriedade IVMHardDiskConnectionCollection::Count
 
-\[O Windows Virtual PC não está mais disponível para uso a partir do Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows O PC virtual não está mais disponível para uso a partir Windows 8. Em vez disso, use o provedor WMI do [Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
 
 Recupera o número de conexões de disco rígido nesta coleção.
 
@@ -54,9 +54,9 @@ O número de conexões de disco rígido.
 | Nome/valor                                                                                                                                                    | Significado                                      |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|
 | <dl> <dt>S \_ OK</dt> <dt>0</dt> </dl>                       | A operação foi bem-sucedida.<br/>     |
-| <dl> <dt>E \_ </dt> <dt>0X80004003</dt> de ponteiro </dl>         | O parâmetro é **NULL**.<br/>        |
-| <dl> <dt>VM \_ E 0xA0040207 de \_ VM \_ desconhecido</dt> <dt></dt> </dl> | A configuração é desconhecida.<br/>     |
-| <dl> <dt>DISP \_ E \_ </dt> <dt>0x80020009</dt> de exceção </dl> | Ocorreu um erro inesperado.<br/> |
+| <dl> <dt>E \_ PONTEIRO</dt> <dt>0x80004003</dt> </dl>         | O parâmetro é **NULL.**<br/>        |
+| <dl> <dt>VM \_ E \_ VM \_ UNKNOWN</dt> <dt>0xA0040207</dt> </dl> | A configuração é desconhecida.<br/>     |
+| <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl> | Ocorreu um erro inesperado.<br/> |
 
 
 
@@ -66,12 +66,12 @@ O número de conexões de disco rígido.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                         |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                                         |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                          |
-| Fim do suporte do cliente<br/>    | Windows 7<br/>                                                                               |
+| Fim do suporte ao cliente<br/>    | Windows 7<br/>                                                                               |
 | Produto<br/>                  | Windows Virtual PC<br/>                                                                      |
-| parâmetro<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl>      |
-| IID<br/>                      | IID \_ IVMHardDiskconnectionCollection é definido como b9f2caf4-0aeb-4085-B105-ceddb90dbf62<br/> |
+| Cabeçalho<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl>      |
+| IID<br/>                      | IID \_ IVMHardDiskconnectionCollection é definido como b9f2caf4-0aeb-4085-b105-ceddb90dbf62<br/> |
 
 
 

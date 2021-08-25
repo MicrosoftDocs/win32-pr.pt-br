@@ -1,22 +1,22 @@
 ---
-title: O programa portado para o Windows
-description: O programa a seguir é um programa OpenGL do Windows com o mesmo código OpenGL usado no AUXDEMO. Programa de exemplo C fornecido com o SDK da plataforma. Compare este programa com o programa de sistema de janela X OpenGL em um programa OpenGL de sistema de janelas X.
+title: O programa portado para Windows
+description: O programa a seguir é um Windows OpenGL com o mesmo código OpenGL usado no AUXDEMO. Programa de exemplo C fornecido com o SDK da Plataforma. Compare este programa com o programa OpenGL do Sistema de JanelaS X em Um Programa OpenGL do Sistema de JanelaS X.
 ms.assetid: c42dce45-8f9e-4920-ac3d-ff7549aae3e9
 keywords:
 - portando para OpenGL, exemplo
-- Portabilidade do OpenGL, exemplo
+- Portação openGL, exemplo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d0b86851ebc6acd5e61997b7e2efae662b11554
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1f8a90e205dbebc8ff4228e3114080b0e535cc6ecdcb6ebbd40738d6afc363fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103916567"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119888026"
 ---
-# <a name="the-program-ported-to-windows"></a>O programa portado para o Windows
+# <a name="the-program-ported-to-windows"></a>O programa portado para Windows
 
-O programa a seguir é um programa OpenGL do Windows com o mesmo código OpenGL usado no AUXDEMO. Programa de exemplo C fornecido com o SDK da plataforma. Compare este programa com o programa de sistema de janela X OpenGL em [um programa OpenGL de sistema de janelas x](an-x-window-system-opengl-program.md).
+O programa a seguir é um Windows OpenGL com o mesmo código OpenGL usado no AUXDEMO. Programa de exemplo C fornecido com o SDK da Plataforma. Compare este programa com o programa OpenGL do Sistema de JanelaS X no Programa OpenGL do [Sistema de JanelaS X.](an-x-window-system-opengl-program.md)
 
 
 ```C++
@@ -349,9 +349,9 @@ GLvoid drawScene(GLvoid)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

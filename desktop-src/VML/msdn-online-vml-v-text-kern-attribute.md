@@ -1,50 +1,50 @@
 ---
-title: Atributo de kerning da VML V-Text-
-description: Atributo de kerning da VML V-Text-
+title: Atributo VML V-Text-Kern
+description: Atributo VML V-Text-Kern
 ms.assetid: cece49c3-8e62-4327-8949-684a1d073293
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b20eab11cc24cd7580b68de8acf86468fb1d16a
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 3e5ca41b66c05af673839ccbc8ba9eb95cf652eb223cd4dd3915799e91ff6c69
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103917513"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119974626"
 ---
-# <a name="vml-v-text-kern-attribute"></a>Atributo de kerning da VML V-Text-
+# <a name="vml-v-text-kern-attribute"></a>Atributo VML V-Text-Kern
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Determina se o kerning está ativado. Leitura/gravação. **VgTriState**.
+Determina se o apuramento está ligado. Leitura/gravação. **VgTriState.**
 
 **Aplica-se a**
 
-[TextPath](msdn-online-vml-textpath-element.md)
+[Textpath](msdn-online-vml-textpath-element.md)
 
 **Sintaxe de marca**
 
-<v: *elemento* Style = "v-Text-kerning: *expression* " >
+<v: *element* style="v-text-ltd: *expression* ">
 
 **Sintaxe do script**
 
-*elemento* . Style. v-Text-kerning = "*expression*"
+*elemento* .style.v-text-kern="*expression*"
 
-*expressão* = de *elemento*. Style. v-ajuste de texto
+*expressão* = *elemento*.style.v-text-kern
 
 **Comentários**
 
-Se for **true**, o kerning será ativado. O padrão é **False**. O kerning é a remoção de espaço entre determinados pares de letras para compensar letterformss desiguais. Por exemplo, se o kerning for ativado, o espaço extra entre um "T" maiúsculo e um "i" minúsculo seriam removidos.
+Se **True**, a a adoção será 100000001. O padrão é **False**. Oinging é a remoção de espaço entre determinados pares de letras para compensar as letras desiguais. Por exemplo, se o recurso for ligado, o espaço extra entre um "T" maiúsculo e um "i" minúsculo será removido.
 
-*Atributo padrão da VML*
+*Atributo padrão VML*
 
 **Exemplo**
 
-O kerning está ativado.
+O Kerning está ligado.
 
 
 ```HTML
@@ -58,6 +58,6 @@ O kerning está ativado.
 
 
 
- 
+ 
 
- 
+ 

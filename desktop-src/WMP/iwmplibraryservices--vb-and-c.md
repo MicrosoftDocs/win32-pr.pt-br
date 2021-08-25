@@ -1,10 +1,10 @@
 ---
-title: Interface IWMPLibraryServices (VB e C) (WMP. h)
+title: Interface IWMPLibraryServices (VB e C) (Wmp.h)
 description: Fornece métodos para enumerar bibliotecas.
 ms.assetid: f2a72731-6e61-4f78-b0ca-ae907004eb7d
 keywords:
-- IWMPLibraryServices (VB e C) interface do Windows Media Player
-- IWMPLibraryServices (VB e C) interface do Windows Media Player, descrito
+- Interface IWMPLibraryServices (VB e C) Windows Media Player
+- Interface IWMPLibraryServices (VB e C) Windows Media Player , descrita
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3493d5c94dcbd9db1e4f281a8fddfadbd2e336f1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fd3b0b2829355d60a8748ccc7f035a1656e403acb5e32d337033b29484ef2236
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105761439"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119901856"
 ---
 # <a name="iwmplibraryservices-vb-and-c-interface"></a>Interface IWMPLibraryServices (VB e C#)
 
@@ -41,13 +41,13 @@ A interface **IWMPLibraryServices (VB e C#)** tem esses métodos.
 | Método                                                                                               | Descrição                                                                                                        |
 |:-----------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------|
 | [**getCountByType**](wmplibiwmplibraryservices-iwmplibraryservices-getcountbytype--vb-and-c.md)     | Retorna a contagem de bibliotecas disponíveis de um tipo especificado.<br/>                                           |
-| [**getLibraryByType**](wmplibiwmplibraryservices-iwmplibraryservices-getlibrarybytype--vb-and-c.md) | Retorna uma interface **IWMPLibrary** que representa a biblioteca que tem o tipo e o índice especificados.<br/> |
+| [**getLibraryByType**](wmplibiwmplibraryservices-iwmplibraryservices-getlibrarybytype--vb-and-c.md) | Retorna uma **interface IWMPLibrary** que representa a biblioteca que tem o tipo e o índice especificados.<br/> |
 
 
 
  
 
-Obtenha uma interface **IWMPLibraryServices** convertendo o objeto retornado do método **AxWindowsMediaPlayer. GetOcx** .
+Obter uma interface **IWMPLibraryServices,** lançando o objeto retornado do **método AxWindowsMediaPlayer.GetOcx.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,7 +55,7 @@ Obtenha uma interface **IWMPLibraryServices** convertendo o objeto retornado do 
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>WMP. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Wmp.h</dt> </dl> |
 
 
 

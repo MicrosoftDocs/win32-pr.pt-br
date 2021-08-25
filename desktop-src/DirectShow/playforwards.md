@@ -4,12 +4,12 @@ ms.assetid: 3f6ad4c8-d610-4053-bbe8-fe4fa3f45b63
 title: PlayForwards
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c2ad08891f801f5904b4cc051c93f5ee6fc1ae4
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 9da78b499634b561bd0d2dbc474f9bc519900159519464a727618f7c29f13e88
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104295970"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119830616"
 ---
 # <a name="playforwards"></a>PlayForwards
 
@@ -18,7 +18,7 @@ ms.locfileid: "104295970"
 
  
 
-O `PlayForwards` evento é enviado quando o `PlayForwards` comando tiver sido habilitado ou desabilitado.
+O `PlayForwards` evento é enviado quando o comando foi habilitado ou `PlayForwards` desabilitado.
 
 ``` syntax
 PlayForwards(bEnabled)
@@ -31,7 +31,7 @@ PlayForwards(bEnabled)
 <span id="bEnabled"></span><span id="benabled"></span><span id="BENABLED"></span>*bEnabled*
 </dt> <dd>
 
-Especifica se a operação está habilitada ou desabilitada como um booliano.
+Especifica se a operação está habilitada ou desabilitada como booliana.
 
 </dd> </dl>
 

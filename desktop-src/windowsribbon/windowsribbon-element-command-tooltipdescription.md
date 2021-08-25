@@ -3,7 +3,7 @@ title: Propriedade Command. TooltipDescription
 description: Representa uma descrição da dica de ferramenta.
 ms.assetid: 2d3ea497-2d96-4420-8fcf-39ac2c472bf1
 keywords:
-- Faixa de das propriedades do Windows de Propriedade Command. TooltipDescription
+- propriedade Command. TooltipDescription da faixa de Windows
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 288578e74420912b7454be5037c4b2651918ac6a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b5dd356ae3bcfa5949e8469240330a3a09a11f01b5a919ed02f4eb55683fbc15
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105760667"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119933206"
 ---
 # <a name="commandtooltipdescription-property"></a>Propriedade Command. TooltipDescription
 
@@ -111,8 +111,8 @@ O exemplo a seguir demonstra a marcação para um elemento [**Command**](windows
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/> |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>              |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/> |
 
 
 

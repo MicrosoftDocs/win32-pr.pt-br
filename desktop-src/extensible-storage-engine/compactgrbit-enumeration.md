@@ -30,21 +30,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c7bbe6c88a0a52ab852e3cde9af8871833948949
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a85f3298e4127a35acd5a39839f788fc404269f80a07463bde1417dc04f7fe16
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105748114"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119976532"
 ---
 # <a name="compactgrbit-enumeration"></a>Enumeração CompactGrbit
 
-Opções para [JetCompact (JET_SESID, String, String, JET_PFNSTATUS, JET_CONVERT, CompactGrbit)](./api.jetcompact-method.md).
+Opções para [JetCompact(JET_SESID, String, String, JET_PFNSTATUS, JET_CONVERT, CompactGrbit)](./api.jetcompact-method.md).
 
 Esta enumeração tem um atributo [FlagsAttribute](/dotnet/api/system.flagsattribute) que permite uma combinação bit a bit dos valores membros dela.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -80,12 +80,12 @@ public enum CompactGrbit
 <tr class="even">
 <td></td>
 <td>Estatísticas</td>
-<td>Faz com que o JetCompact despeje estatísticas no banco de dados de origem em um arquivo chamado DFRGINFO.TXT. As estatísticas incluem o nome de cada tabela no banco de dados de origem, o número de linhas em cada tabela, o tamanho total em bytes de todas as linhas em cada tabela, tamanho total em bytes de todas as colunas do tipo <a href="hh577895(v=exchg.10).md">LONGTEXT</a> ou <a href="hh577895(v=exchg.10).md">LongBinary</a> que foram grandes o suficiente para serem armazenados separados do registro, número de páginas de folha de índice clusterizado e número de páginas de folha de valor longo Além disso, estatísticas de resumo, incluindo o tamanho do banco de dados de origem, banco de dados de destino, tempo necessário para compactação de banco de dados, o espaço de banco de dados temporário também são todos despejados.</td>
+<td>Faz com que o JetCompact despejo estatísticas no banco de dados de origem para um arquivo chamado DFRGINFO.TXT. As estatísticas incluem o nome de cada tabela no banco de dados de origem, o número de linhas em cada tabela, o tamanho total em bytes de todas as linhas em cada tabela, o tamanho total em bytes de todas as colunas do tipo <a href="hh577895(v=exchg.10).md">LongText</a> ou <a href="hh577895(v=exchg.10).md">LongBinary</a> que eram grandes o suficiente para serem armazenadas separadas do registro, o número de páginas folha de índice clusteradas e o número de páginas de folha de valor longo. Além disso, as estatísticas resumidas, incluindo o tamanho do banco de dados de origem, o banco de dados de destino, o tempo necessário para a compactação do banco de dados, o espaço temporário do banco de dados também são despejados.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>Reparar</td>
-<td><strong>Obsoleto.</strong> Usado quando o banco de dados de origem é conhecido como corrompido. Ele permite que um conjunto completo de novos comportamentos se destinasse a recuperar o máximo de dados possível do banco de dado de origem. JetCompact com esse conjunto de opções pode retornar <a href="hh564840(v=exchg.10).md">êxito</a> , mas não copiar todos os dados criados no banco de dado de origem. Os dados que estavam em partes danificadas do banco de dados de origem serão ignorados.</td>
+<td><strong>Obsoleto.</strong> Usado quando o banco de dados de origem é conhecido como corrompido. Ele permite um conjunto inteiro de novos comportamentos destinados a recuperar o máximo de dados possível do banco de dados de origem. JetCompact com esse conjunto de opções pode retornar <a href="hh564840(v=exchg.10).md">Êxito,</a> mas não copiar todos os dados criados no banco de dados de origem. Os dados que estava em partes danificadas do banco de dados de origem serão ignorados.</td>
 </tr>
 </tbody>
 </table>
@@ -95,4 +95,4 @@ public enum CompactGrbit
 
 #### <a name="reference"></a>Referência
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

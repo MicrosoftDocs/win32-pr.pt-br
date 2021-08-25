@@ -4,16 +4,16 @@ ms.assetid: 69151d5a-be6e-4947-862d-cea65306c536
 title: Criando um banco de dados ICE
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f51043aa9b3c1591fa3262492c117aba35f23d92
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0e078517f8942454320e3f743d7379bbfeb22a7c44afe635a8276568a56c27f1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828043"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119926986"
 ---
 # <a name="building-an-ice-database"></a>Criando um banco de dados ICE
 
-Depois de selecionar o [ICES](internal-consistency-evaluators-ices.md) apropriado para validação, um desenvolvedor deve coletar as ações personalizadas em um banco de dados Ice. Um arquivo. Cub é um banco de dados Standard. msi que contém apenas ICEs e suas tabelas necessárias. Um arquivo. Cub não pode ser instalado e usado somente para armazenar e fornecer acesso a ações personalizadas do ICE.
+Depois de selecionar o [ICES](internal-consistency-evaluators-ices.md) apropriado para validação, um desenvolvedor deve coletar as ações personalizadas em um banco de dados Ice. Um arquivo. Cub é um banco de dados .msi padrão que contém apenas ICEs e suas tabelas necessárias. Um arquivo. Cub não pode ser instalado e usado somente para armazenar e fornecer acesso a ações personalizadas do ICE.
 
 Um arquivo. Cub contém as tabelas de banco de dados a seguir.
 

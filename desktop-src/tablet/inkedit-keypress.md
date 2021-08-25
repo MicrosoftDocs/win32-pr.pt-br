@@ -4,12 +4,12 @@ ms.assetid: 8284ab41-dfac-4da2-b101-6968a43b15d7
 title: Evento InkEdit. KeyPress (Inked. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e49264f82b2cfe3c6998666339f08340a540791
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 713100edeae3ce6b950433afb73d13f40aefb291047e98984cbd6908dde3ce2b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105812039"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119935092"
 ---
 # <a name="inkeditkeypress-event"></a>Evento InkEdit. KeyPress
 
@@ -37,7 +37,7 @@ Um inteiro que retorna um código de keyansi numérico padrão. O parâmetro *Ch
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se esse evento for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
@@ -51,9 +51,9 @@ Esse método de evento é definido na interface **\_ IInkEditEvents** . A interf
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/>                                                 |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                     |
-| parâmetro<br/>                   | <dl> <dt>Inked. h (também requer Inked \_ i. c)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Inked. h (também requer Inked \_ i. c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkEd.dll</dt> </dl>                          |
 
 

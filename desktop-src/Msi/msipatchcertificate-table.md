@@ -4,12 +4,12 @@ ms.assetid: 8f76c27d-92f1-4de7-a69c-fba877e0325d
 title: Tabela MsiPatchCertificate
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 01648e792931fd856a1231a5d876c7db843479df
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f39d2bc3a05c8b3fe3f23cd7dce01da36e14ce1f3984f24e827606bbc44c1a77
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011148"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119913306"
 ---
 # <a name="msipatchcertificate-table"></a>Tabela MsiPatchCertificate
 
@@ -21,7 +21,7 @@ A tabela MsiPatchCertificate tem as seguintes colunas:
 
 | Coluna               | Tipo                         | Chave | Nullable |
 |----------------------|------------------------------|-----|----------|
-| PatchCertificate     | [Identificador](identifier.md) | S   | N        |
+| PatchCertificate     | [Identificador](identifier.md) | Y   | N        |
 | DigitalCertificate\_ | [Identificador](identifier.md) | N   | N        |
 
 
@@ -73,10 +73,10 @@ Os patches são sempre avaliados em relação à tabela MsiPatchCertificate que 
 [**MSIDISABLELUAPATCHING**](msidisableluapatching.md)
 </dt> <dt>
 
-[Assinaturas digitais e Windows Installer](digital-signatures-and-windows-installer.md)
+[assinaturas digitais e Windows Installer](digital-signatures-and-windows-installer.md)
 </dt> <dt>
 
-[Sem suporte no Windows Installer 2,0 e versões anteriores](not-supported-in-windows-installer-version-2-0.md)
+[sem suporte no Windows Installer 2,0 e versões anteriores](not-supported-in-windows-installer-version-2-0.md)
 </dt> </dl>
 
  

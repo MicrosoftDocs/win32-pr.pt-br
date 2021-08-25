@@ -4,12 +4,12 @@ ms.assetid: 1ca46000-4700-4326-8f49-1b9a22d45bfa
 title: Elemento PnPXDeviceCategory
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a08084d780c26d2f7fab902156939fd14a3e60c
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 42a34a3f63333a2d33266991c0e028e7d42a7244c962617974c9cc15e290d03c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107996583"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119897356"
 ---
 # <a name="pnpxdevicecategory-element"></a>Elemento PnPXDeviceCategory
 
@@ -35,23 +35,23 @@ Não há elementos filho.
 
 | Elemento                                                   | Descrição                                                                                          |
 |-----------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| [**thisModelMetadata**](thismodelmetadata.md)<br/> | Define os metadados de modelo e fabricante para o dispositivo a ser implementado.<br/> <br/> |
+| [**thisModelMetadata**](thismodelmetadata.md)<br/> | Define o fabricante e os metadados do modelo para o dispositivo a ser implementado.<br/> <br/> |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-Os dispositivos também podem especificar uma subcategoria de dispositivo para uma categoria de dispositivo mais descritiva. Por exemplo, "phones. WindowsMobile cameras. DigitalStillCamera MediaDevices. MusicPlayer" identifica um dispositivo que é um dispositivo Microsoft Windows Mobile com uma câmera e um player de música. A categoria de dispositivo primário para este dispositivo seria "telefones".
+Os dispositivos também podem especificar uma subcategoria de dispositivo para uma categoria de dispositivo mais descritiva. Por exemplo, "Phones.WindowsMobile Cameras.DigitalStillCamera MediaDevices.MusicPlayer" identifica um dispositivo que é um dispositivo Microsoft Windows Mobile com uma câmera e um player de música. A categoria de dispositivo principal para esse dispositivo seria "Telefones".
 
-Para especificar mais de uma categoria de dispositivo, separe as categorias com um espaço. Por exemplo, "armazenamento de impressoras" identifica um dispositivo com uma categoria primária de "impressoras" e uma categoria secundária de "armazenamento".
+Para especificar mais de uma categoria de dispositivo, separe as categorias com um espaço. Por exemplo, "Impressoras Armazenamento" identifica um dispositivo com uma categoria primária de "Impressoras" e uma categoria secundária de "Armazenamento".
 
-Se um elemento **PnPXDeviceCategory** estiver presente, pelo menos um elemento [**hospedado**](hosted.md) deverá conter ambos os elementos [**PnPXHardwareId**](pnpxhardwareid.md) e [**PnPXCompatibleId**](pnpxcompatibleid.md) . Da mesma forma, se os elementos **PnPXHardwareId** e **PnPXCompatibleId** estiverem presentes em um elemento **hospedado** , pelo menos um elemento **PnPXDeviceCategory** deverá estar presente dentro do elemento [**thisModelMetadata**](thismodelmetadata.md) .
+Se um **elemento PnPXDeviceCategory** estiver presente, pelo menos um elemento hospedado deverá conter elementos [**PnPXHardwareId**](pnpxhardwareid.md) e [**PnPXCompatibleId.**](pnpxcompatibleid.md) [](hosted.md) Da mesma forma, se os elementos **PnPXHardwareId** e  **PnPXCompatibleId** estão presentes em um elemento hospedado, pelo menos um elemento **PnPXDeviceCategory** deve estar presente dentro do elemento [**thisModelMetadata.**](thismodelmetadata.md)
 
 ## <a name="element-information"></a>Informações do elemento
 
 
 
-| Label | Valor |
+| Rótulo | Valor |
 |-------------------------------------|---------------|
 | Sistema mínimo com suporte<br/> | Windows Vista |
 | Pode estar vazio                        | Sim           |

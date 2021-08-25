@@ -20,12 +20,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: ab268e719374906e149dc9c1b733487f986e8308
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 588622fb010cf9ca43f7253adc269e86b1755e5e459cbd6320a28d1d5416706a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105934"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119914336"
 ---
 # <a name="systemconfig_v0_power-class"></a>\_Classe de \_ energia SystemConfig V0
 
@@ -197,11 +197,11 @@ Verdadeiro indica que o sistema dá suporte ao estado de suspensão s5.
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/> |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

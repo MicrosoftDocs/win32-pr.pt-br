@@ -1,17 +1,17 @@
 ---
 description: Ao criar seus próprios assemblies lado a lado, siga as diretrizes para criar assemblies lado a lado e criar qualquer DLL a ser incluída no assembly de acordo com as diretrizes de criação de uma DLL para um assembly lado a lado.
 ms.assetid: 0e98bbcd-7e23-4a33-b0fa-1f936d0ef96b
-title: Criação de armazenamento de estado para assemblies lado a lado
+title: Armazenamento de estado de criação para Assemblies lado a lado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eee388cf680ee3a186a225ca7e3bde8b6eae625d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 91dd3b3dc62726c45a03fd388864faa7f359112687f0c03fb133276eef2280ec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103662425"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119885516"
 ---
-# <a name="authoring-state-storage-for-side-by-side-assemblies"></a>Criação de armazenamento de estado para assemblies lado a lado
+# <a name="authoring-state-storage-for-side-by-side-assemblies"></a>Armazenamento de estado de criação para Assemblies lado a lado
 
 Ao criar seus próprios assemblies lado a lado, siga as [diretrizes para criar assemblies](guidelines-for-creating-side-by-side-assemblies.md) lado a lado e criar qualquer DLL a ser incluída no assembly de acordo com as diretrizes de [criação de uma dll para um assembly lado a lado](authoring-a-dll-for-a-side-by-side-assembly.md).
 

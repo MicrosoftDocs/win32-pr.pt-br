@@ -1,77 +1,77 @@
 ---
 title: Usando aceleradores de teclado
-description: Esta seção aborda as tarefas associadas a aceleradores de teclado.
+description: Esta seção aborda as tarefas associadas aos aceleradores de teclado.
 ms.assetid: 11c42d69-7454-43e6-9f44-c14a283814ce
 keywords:
 - entrada do usuário, aceleradores de teclado
 - capturando entrada do usuário, aceleradores de teclado
 - aceleradores de teclado
-- aceleradores
-- tabelas do acelerador
-- recursos da tabela de aceleração
-- função de acelerador de conversão
+- Aceleradores
+- tabelas de acelerador
+- recursos da tabela de aceleradores
+- função de acelerador de tradução
 - WM_COMMAND mensagem
-- WM_SYS mensagem de comando
+- WM_SYS mensagem COMMAND
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2241ba828ea9e6be5e4bb0b7471adcc3130940ca
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: ecbb16c92b986cbe73aababc7edc24518cf59ce5009322e3a006bac827427c45
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104007535"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119886556"
 ---
 # <a name="using-keyboard-accelerators"></a>Usando aceleradores de teclado
 
-Esta seção aborda as tarefas associadas a aceleradores de teclado.
+Esta seção aborda as tarefas associadas aos aceleradores de teclado.
 
 -   [Usando um recurso de tabela de acelerador](#using-an-accelerator-table-resource)
-    -   [Criando o recurso de tabela de acelerador](#creating-the-accelerator-table-resource)
-    -   [Carregando o recurso de tabela de acelerador](#loading-the-accelerator-table-resource)
-    -   [Chamando a função acelerador de conversão](#calling-the-translate-accelerator-function)
-    -   [Processando \_ mensagens de comando do WM](/windows)
-    -   [Destruindo o recurso de tabela de acelerador](#destroying-the-accelerator-table-resource)
+    -   [Criando o recurso de tabela do acelerador](#creating-the-accelerator-table-resource)
+    -   [Carregando o recurso de tabela do acelerador](#loading-the-accelerator-table-resource)
+    -   [Chamando a função de acelerador de tradução](#calling-the-translate-accelerator-function)
+    -   [Ing WM \_ COMMAND Messages](/windows)
+    -   [Destruir o recurso de tabela do acelerador](#destroying-the-accelerator-table-resource)
     -   [Criando aceleradores para atributos de fonte](#creating-accelerators-for-font-attributes)
--   [Usando uma tabela de acelerador criada em tempo de execução](#using-an-accelerator-table-created-at-run-time)
-    -   [Criando uma tabela de acelerador de Run-Time](#creating-a-run-time-accelerator-table)
+-   [Usando uma tabela de acelerador criada em tempo de executar](#using-an-accelerator-table-created-at-run-time)
+    -   [Criando uma tabela Run-Time acelerador de dados](#creating-a-run-time-accelerator-table)
     -   [Aceleradores de processamento](#processing-accelerators)
-    -   [Destruindo uma tabela de acelerador de Run-Time](#destroying-a-run-time-accelerator-table)
-    -   [Criando aceleradores editáveis do usuário](#creating-user-editable-accelerators)
+    -   [Destruir uma tabela Run-Time acelerador de dados](#destroying-a-run-time-accelerator-table)
+    -   [Criando aceleradores editáveis pelo usuário](#creating-user-editable-accelerators)
 
 ## <a name="using-an-accelerator-table-resource"></a>Usando um recurso de tabela de acelerador
 
-A maneira mais comum de adicionar suporte a acelerador a um aplicativo é incluir um recurso de tabela de acelerador com o arquivo executável do aplicativo e, em seguida, carregar o recurso em tempo de execução.
+A maneira mais comum de adicionar suporte de acelerador a um aplicativo é incluir um recurso de tabela de acelerador com o arquivo executável do aplicativo e, em seguida, carregar o recurso em tempo de execução.
 
 Esta seção aborda os tópicos a seguir.
 
--   [Criando o recurso de tabela de acelerador](#creating-the-accelerator-table-resource)
--   [Carregando o recurso de tabela de acelerador](#loading-the-accelerator-table-resource)
--   [Chamando a função acelerador de conversão](#calling-the-translate-accelerator-function)
--   [Processando \_ mensagens de comando do WM](/windows)
--   [Destruindo o recurso de tabela de acelerador](#destroying-the-accelerator-table-resource)
+-   [Criando o recurso de tabela do acelerador](#creating-the-accelerator-table-resource)
+-   [Carregando o recurso de tabela do acelerador](#loading-the-accelerator-table-resource)
+-   [Chamando a função de acelerador de tradução](#calling-the-translate-accelerator-function)
+-   [Ing WM \_ COMMAND Messages](/windows)
+-   [Destruir o recurso de tabela do acelerador](#destroying-the-accelerator-table-resource)
 -   [Criando aceleradores para atributos de fonte](#creating-accelerators-for-font-attributes)
 
-### <a name="creating-the-accelerator-table-resource"></a>Criando o recurso de tabela de acelerador
+### <a name="creating-the-accelerator-table-resource"></a>Criando o recurso de tabela do acelerador
 
-Você cria um recurso de tabela de aceleração usando [a instrução](./accelerators-resource.md) Accelerators no arquivo de definição de recurso do aplicativo. Você deve atribuir um nome ou identificador de recurso à tabela de aceleração, preferencialmente, ao contrário de qualquer outro recurso. O sistema usa esse identificador para carregar o recurso em tempo de execução.
+Você cria um recurso de tabela de acelerador usando a instrução [ACCELERATORS](./accelerators-resource.md) no arquivo de definição de recursos do aplicativo. Você deve atribuir um nome ou identificador de recurso à tabela do acelerador, preferencialmente ao contrário de qualquer outro recurso. O sistema usa esse identificador para carregar o recurso em tempo de executar.
 
-Cada acelerador que você define requer uma entrada separada na tabela do acelerador. Em cada entrada, você define o pressionamento de teclas (um código de caractere ASCII ou o código de chave virtual) que gera o acelerador e o identificador do acelerador. Você também deve especificar se o pressionamento de tecla deve ser usado em alguma combinação com as teclas ALT, SHIFT ou CTRL. Para obter mais informações sobre chaves virtuais, consulte [entrada de teclado](/windows/desktop/inputdev/keyboard-input).
+Cada acelerador definido requer uma entrada separada na tabela do acelerador. Em cada entrada, você define o teclas (um código de caractere ASCII ou código de chave virtual) que gera o acelerador e o identificador do acelerador. Você também deve especificar se o tecla keystroke deve ser usado em alguma combinação com as teclas ALT, SHIFT ou CTRL. Para obter mais informações sobre chaves virtuais, consulte [Entrada do teclado](/windows/desktop/inputdev/keyboard-input).
 
-Uma tecla ASCII é especificada colocando o caractere ASCII entre aspas duplas ou usando o valor inteiro do caractere em combinação com o sinalizador ASCII. Os exemplos a seguir mostram como definir aceleradores ASCII.
+Um conjunto de teclas ASCII é especificado entre aspas duplas ou usando o valor inteiro do caractere em combinação com o sinalizador ASCII. Os exemplos a seguir mostram como definir aceleradores ASCII.
 
 ``` syntax
 "A", ID_ACCEL1         ; SHIFT+A 
 65,  ID_ACCEL2, ASCII  ; SHIFT+A 
 ```
 
-Um pressionamento de tecla de código de chave virtual é especificado de forma diferente, dependendo se a tecla de pressionamento é uma chave alfanumérica ou não alfanumérica. Para uma chave alfanumérica, a letra ou o número da chave, entre aspas duplas, é combinado com o sinalizador **VIRTKEY** . Para uma chave não alfanumérica, o código de chave virtual para a chave específica é combinado com o sinalizador **VIRTKEY** . Os exemplos a seguir mostram como definir aceleradores de código de chave virtual.
+Um tecla de código de chave virtual é especificado de forma diferente, dependendo se o tecla keystroke é uma chave alfanumérico ou uma chave não alfanumérico. Para uma chave alfanumérico, a letra ou o número da chave, entre aspas duplas, é combinado com o **sinalizador VIRTKEY.** Para uma chave não alfanumérico, o código de chave virtual para a chave específica é combinado com o sinalizador **VIRTKEY.** Os exemplos a seguir mostram como definir aceleradores de código de chave virtual.
 
 ``` syntax
 "a",       ID_ACCEL3, VIRTKEY   ; A (caps-lock on) or a 
 VK_INSERT, ID_ACCEL4, VIRTKEY   ; INSERT key 
 ```
 
-O exemplo a seguir mostra um recurso de tabela de aceleração que define aceleradores para operações de arquivo. O nome do recurso é *FileAccel*.
+O exemplo a seguir mostra um recurso accelerator-table que define aceleradores para operações de arquivo. O nome do recurso é *FileAccel.*
 
 ``` syntax
 FileAccel ACCELERATORS 
@@ -83,7 +83,7 @@ BEGIN
 END 
 ```
 
-Se você quiser que o usuário pressione as teclas ALT, SHIFT ou CTRL em alguma combinação com o pressionamento de teclas do acelerador, especifique os sinalizadores ALT, SHIFT e CONTROL na definição do acelerador. Estes são alguns exemplos:
+Se você quiser que o usuário pressione as teclas ALT, SHIFT ou CTRL em alguma combinação com o pressionando de teclas do acelerador, especifique os sinalizadores ALT, SHIFT e CONTROL na definição do acelerador. Estes são alguns exemplos:
 
 ``` syntax
 "B",   ID_ACCEL5, ALT                   ; ALT_SHIFT+B 
@@ -91,13 +91,13 @@ Se você quiser que o usuário pressione as teclas ALT, SHIFT ou CTRL em alguma 
 VK_F5, ID_ACCEL7, CONTROL, ALT, VIRTKEY ; CTRL+ALT+F5 
 ```
 
-Por padrão, quando uma chave de acelerador corresponde a um item de menu, o sistema realça o item de menu. Você pode usar o sinalizador **inverter** para evitar o realce de um acelerador individual. O exemplo a seguir mostra como usar o sinalizador **Invert** :
+Por padrão, quando uma tecla de acelerador corresponde a um item de menu, o sistema realça o item de menu. Você pode usar o **sinalizador NOINVERT** para impedir o realçamento de um acelerador individual. O exemplo a seguir mostra como usar o **sinalizador NOINVERT:**
 
 ``` syntax
 VK_DELETE, ID_ACCEL8, VIRTKEY, SHIFT, NOINVERT  ; SHIFT+DELETE 
 ```
 
-Para definir os aceleradores que correspondem aos itens de menu em seu aplicativo, inclua os aceleradores no texto dos itens de menu. O exemplo a seguir mostra como incluir aceleradores no texto do item de menu em um arquivo de definição de recurso.
+Para definir aceleradores que correspondem aos itens de menu em seu aplicativo, inclua os aceleradores no texto dos itens de menu. O exemplo a seguir mostra como incluir aceleradores no texto do item de menu em um arquivo de definição de recurso.
 
 ``` syntax
 FilePopup MENU 
@@ -113,15 +113,15 @@ BEGIN
 END 
 ```
 
-### <a name="loading-the-accelerator-table-resource"></a>Carregando o recurso de tabela de acelerador
+### <a name="loading-the-accelerator-table-resource"></a>Carregando o recurso de tabela do acelerador
 
-Um aplicativo carrega um recurso de tabela de aceleração chamando a função [**LoadAccelerators**](/windows/desktop/api/Winuser/nf-winuser-loadacceleratorsa) e especificando o identificador de instância para o aplicativo cujo arquivo executável contém o recurso e o nome ou identificador do recurso. O **LoadAccelerators** carrega a tabela de acelerador especificada na memória e retorna o identificador para a tabela de acelerador.
+Um aplicativo carrega um recurso de tabela de acelerador chamando a função [**LoadAccelerators**](/windows/desktop/api/Winuser/nf-winuser-loadacceleratorsa) e especificando o identificador de instância para o aplicativo cujo arquivo executável contém o recurso e o nome ou identificador do recurso. **LoadAccelerators** carrega a tabela de acelerador especificada na memória e retorna o alça para a tabela do acelerador.
 
-Um aplicativo pode carregar um recurso de tabela de aceleração a qualquer momento. Normalmente, um aplicativo de thread único carrega sua tabela de acelerador antes de inserir seu loop de mensagem principal. Um aplicativo que usa vários threads normalmente carrega o recurso de tabela de aceleração para um thread antes de inserir o loop de mensagem para o thread. Um aplicativo ou thread também pode usar várias tabelas de acelerador, cada uma associada a uma janela específica no aplicativo. Esse aplicativo carregaria a tabela de acelerador para a janela cada vez que o usuário ativou a janela. Para obter mais informações sobre threads, consulte [processos e threads](/windows/desktop/ProcThread/processes-and-threads).
+Um aplicativo pode carregar um recurso de tabela de acelerador a qualquer momento. Normalmente, um aplicativo de thread único carrega sua tabela de acelerador antes de inserir seu loop de mensagem principal. Um aplicativo que usa vários threads normalmente carrega o recurso accelerator-table para um thread antes de inserir o loop de mensagem para o thread. Um aplicativo ou thread também pode usar várias tabelas de acelerador, cada uma associada a uma janela específica no aplicativo. Esse aplicativo carregaria a tabela do acelerador para a janela sempre que o usuário ativasse a janela. Para obter mais informações sobre threads, consulte [Processos e threads.](/windows/desktop/ProcThread/processes-and-threads)
 
-### <a name="calling-the-translate-accelerator-function"></a>Chamando a função acelerador de conversão
+### <a name="calling-the-translate-accelerator-function"></a>Chamando a função de acelerador de tradução
 
-Para os aceleradores de processo, o loop de mensagem de um aplicativo (ou de thread) deve conter uma chamada para a função [**TranslateAccelerator**](/windows/desktop/api/Winuser/nf-winuser-translateacceleratora) . **TranslateAccelerator** compara pressionamentos de teclas em uma tabela de acelerador e, se encontrar uma correspondência, converte os pressionamentos de tecla em uma mensagem de [**\_ comando do WM**](wm-command.md) (ou [**WM \_ SYSCOMMAND**](wm-syscommand.md)). Em seguida, a função envia a mensagem a um procedimento de janela. Os parâmetros da função **TranslateAccelerator** incluem o identificador para a janela que deve receber as mensagens de **\_ comando do WM** , o identificador para a tabela de acelerador usada para converter Aceleradores e um ponteiro para uma estrutura de [**msg**](/windows/win32/api/winuser/ns-winuser-msg) que contém uma mensagem da fila. O exemplo a seguir mostra como chamar **TranslateAccelerator** de dentro de um loop de mensagem.
+Para processar aceleradores, o loop de mensagem de um aplicativo (ou thread) deve conter uma chamada para a [**função TranslateAccelerator.**](/windows/desktop/api/Winuser/nf-winuser-translateacceleratora) **TranslateAccelerator** compara os teclas com uma tabela de acelerador e, se encontrar uma combinação, converte os teclas em uma mensagem [**WM \_ COMMAND**](wm-command.md) (ou [**WM \_ SYSCOMMAND).**](wm-syscommand.md) Em seguida, a função envia a mensagem para um procedimento de janela. Os parâmetros da função **TranslateAccelerator** incluem o alçamento para a janela que deve receber as mensagens **WM \_ COMMAND,** o alça para a tabela de aceleradores usada para converter aceleradores e um ponteiro para uma estrutura [**MSG**](/windows/win32/api/winuser/ns-winuser-msg) que contém uma mensagem da fila. O exemplo a seguir mostra como chamar **TranslateAccelerator** de dentro de um loop de mensagem.
 
 
 ```
@@ -152,28 +152,28 @@ while ( (bRet = GetMessage(&msg, (HWND) NULL, 0, 0)) != 0)
 
 
 
-### <a name="processing-wm_command-messages"></a>Processando \_ mensagens de comando do WM
+### <a name="processing-wm_command-messages"></a>Ing WM \_ COMMAND Messages
 
-Quando um acelerador é usado, a janela especificada na função [**TranslateAccelerator**](/windows/desktop/api/Winuser/nf-winuser-translateacceleratora) recebe um [**\_ comando do WM**](wm-command.md) ou uma mensagem do [**WM \_ SYSCOMMAND**](wm-syscommand.md) . A palavra de ordem inferior do parâmetro *wParam* contém o identificador do acelerador. O procedimento de janela examina o identificador para determinar a origem da mensagem **de \_ comando do WM** e processa a mensagem de acordo.
+Quando um acelerador é usado, a janela especificada na [**função TranslateAccelerator**](/windows/desktop/api/Winuser/nf-winuser-translateacceleratora) recebe uma mensagem [**WM \_ COMMAND**](wm-command.md) ou [**WM \_ SYSCOMMAND.**](wm-syscommand.md) A palavra de ordem baixa do *parâmetro wParam* contém o identificador do acelerador. O procedimento de janela examina o identificador para determinar a origem da mensagem **WM \_ COMMAND** e processar a mensagem de acordo.
 
-Normalmente, se um acelerador corresponder a um item de menu no aplicativo, o acelerador e o item de menu serão atribuídos ao mesmo identificador. Se você precisar saber se uma mensagem [**de \_ comando do WM**](wm-command.md) foi gerada por um acelerador ou por um item de menu, poderá examinar a palavra de ordem superior do parâmetro *wParam* . Se um acelerador gerar a mensagem, a palavra de ordem superior será 1; se um item de menu gerou a mensagem, a palavra de ordem superior será 0.
+Normalmente, se um acelerador corresponder a um item de menu no aplicativo, o acelerador e o item de menu serão atribuídos ao mesmo identificador. Se você precisar saber se uma mensagem [**WM \_ COMMAND**](wm-command.md) foi gerada por um acelerador ou por um item de menu, examine a palavra de ordem alta do *parâmetro wParam.* Se um acelerador gerou a mensagem, a palavra de ordem alta é 1; se um item de menu gerou a mensagem, a palavra de ordem alta é 0.
 
-### <a name="destroying-the-accelerator-table-resource"></a>Destruindo o recurso de tabela de acelerador
+### <a name="destroying-the-accelerator-table-resource"></a>Destruir o recurso de tabela do acelerador
 
-O sistema destrói automaticamente os recursos da tabela de aceleradores carregados pela função [**LoadAccelerators**](/windows/desktop/api/Winuser/nf-winuser-loadacceleratorsa) , removendo o recurso da memória depois que o aplicativo é fechado.
+O sistema destrói automaticamente os recursos de tabela de acelerador carregados pela função [**LoadAccelerators,**](/windows/desktop/api/Winuser/nf-winuser-loadacceleratorsa) removendo o recurso da memória depois que o aplicativo é fechado.
 
 ### <a name="creating-accelerators-for-font-attributes"></a>Criando aceleradores para atributos de fonte
 
 O exemplo nesta seção mostra como executar as seguintes tarefas:
 
--   Crie um recurso de tabela de aceleração.
--   Carregue a tabela do acelerador em tempo de execução.
--   Converter aceleradores em um loop de mensagem.
--   Processar mensagens de [**\_ comando do WM**](wm-command.md) geradas pelos aceleradores.
+-   Crie um recurso de tabela de acelerador.
+-   Carregue a tabela do acelerador em tempo de executar.
+-   Traduzir aceleradores em um loop de mensagem.
+-   Processe [**\_ mensagens WM COMMAND**](wm-command.md) geradas pelos aceleradores.
 
-Essas tarefas são demonstradas no contexto de um aplicativo que inclui um menu de **caracteres** e aceleradores correspondentes que permitem ao usuário selecionar atributos da fonte atual.
+Essas tarefas são demonstradas no contexto de um aplicativo que inclui um **menu** Caractere e aceleradores correspondentes que permitem ao usuário selecionar atributos da fonte atual.
 
-A seguinte parte de um arquivo de definição de recurso define o menu de **caracteres** e a tabela de acelerador associada. Observe que os itens de menu mostram os pressionamentos de teclas do acelerador e que cada acelerador tem o mesmo identificador de seu item de menu associado.
+A parte a seguir de um arquivo de definição de recurso define o menu **Caractere** e a tabela de aceleradores associada. Observe que os itens de menu mostram os teclas de aceleração e que cada acelerador tem o mesmo identificador que seu item de menu associado.
 
 
 ```
@@ -324,18 +324,18 @@ LRESULT APIENTRY MainWndProc(HWND hwndMain, UINT uMsg, WPARAM wParam, LPARAM lPa
 
 
 
-## <a name="using-an-accelerator-table-created-at-run-time"></a>Usando uma tabela de acelerador criada em tempo de execução
+## <a name="using-an-accelerator-table-created-at-run-time"></a>Usando uma tabela de acelerador criada em tempo de executar
 
-Este tópico discute como usar tabelas de acelerador criadas em tempo de execução.
+Este tópico discute como usar tabelas de acelerador criadas em tempo de executar.
 
--   [Criando uma tabela de acelerador de Run-Time](#creating-a-run-time-accelerator-table)
+-   [Criando uma tabela Run-Time acelerador de dados](#creating-a-run-time-accelerator-table)
 -   [Aceleradores de processamento](#processing-accelerators)
--   [Destruindo uma tabela de acelerador de Run-Time](#destroying-a-run-time-accelerator-table)
--   [Criando aceleradores editáveis do usuário](#creating-user-editable-accelerators)
+-   [Destruir uma tabela Run-Time acelerador de dados](#destroying-a-run-time-accelerator-table)
+-   [Criando aceleradores editáveis pelo usuário](#creating-user-editable-accelerators)
 
-### <a name="creating-a-run-time-accelerator-table"></a>Criando uma tabela de acelerador de Run-Time
+### <a name="creating-a-run-time-accelerator-table"></a>Criando uma tabela Run-Time acelerador de dados
 
-A primeira etapa na criação de uma tabela aceleradora em tempo de execução está preenchendo uma matriz de estruturas [**da aceleração extra**](/windows/win32/api/winuser/ns-winuser-accel) . Cada estrutura na matriz define um acelerador na tabela. A definição de um acelerador inclui seus sinalizadores, sua chave e seu identificador. A estrutura **da aceleração extra** tem o seguinte formato.
+A primeira etapa na criação de uma tabela de acelerador em tempo de executar é preencher uma matriz de estruturas [**ACCEL.**](/windows/win32/api/winuser/ns-winuser-accel) Cada estrutura na matriz define um acelerador na tabela. A definição de um acelerador inclui seus sinalizadores, sua chave e seu identificador. A **estrutura ACCEL** tem o seguinte formulário.
 
 ``` syntax
 typedef struct tagACCEL { // accl 
@@ -345,21 +345,21 @@ typedef struct tagACCEL { // accl
 } ACCEL;
 ```
 
-Você define um pressionamento de teclas do acelerador especificando um código de caractere ASCII ou um código de chave virtual no membro de **chave** da estrutura [**da aceleração extra**](/windows/win32/api/winuser/ns-winuser-accel) . Se você especificar um código de chave virtual, deverá primeiro incluir o sinalizador **FVIRTKEY** no membro **fVirt** ; caso contrário, o sistema interpretará o código como um código de caractere ASCII. Você pode incluir o sinalizador **FCONTROL**, **FALT** ou **FSHIFT** , ou todos os três, para combinar a tecla CTRL, ALT ou Shift com o pressionamento de teclas.
+Defina o teclatro de um acelerador especificando um código de caractere ASCII ou um código de chave virtual no membro-chave da [**estrutura ACCEL.**](/windows/win32/api/winuser/ns-winuser-accel)  Se você especificar um código de chave virtual, primeiro deverá incluir o **sinalizador FVIRTKEY** no **membro fVirt;** caso contrário, o sistema interpretará o código como um código de caractere ASCII. Você pode incluir o **sinalizador FCONTROL,GRAFT** ou **FSHIFT,** ou todos os três, para combinar a tecla CTRL, ALT ou SHIFT com o tecla keystroke. 
 
-Para criar a tabela de acelerador, passe um ponteiro para a matriz de estruturas [**da aceleração extra**](/windows/win32/api/winuser/ns-winuser-accel) para a função [**CreateAcceleratorTable**](/windows/desktop/api/Winuser/nf-winuser-createacceleratortablea) . **CreateAcceleratorTable** cria a tabela de acelerador e retorna o identificador para a tabela.
+Para criar a tabela de aceleradores, passe um ponteiro para a matriz de estruturas [**ACCEL**](/windows/win32/api/winuser/ns-winuser-accel) para a [**função CreateAcceleratorTable.**](/windows/desktop/api/Winuser/nf-winuser-createacceleratortablea) **CreateAcceleratorTable** cria a tabela de aceleradores e retorna o alça para a tabela.
 
 ### <a name="processing-accelerators"></a>Aceleradores de processamento
 
-O processo de carregar e chamar aceleradores fornecidos por uma tabela de acelerador criada em tempo de execução é o mesmo que processar os fornecidos por um recurso de tabela de aceleração. Para obter mais informações, consulte [carregando o recurso de tabela de acelerador](#loading-the-accelerator-table-resource) por meio do [processamento de mensagens de \_ comando do WM](/windows).
+O processo de carregar e chamar aceleradores fornecidos por uma tabela de acelerador criada em tempo de operação é o mesmo que processar aqueles fornecidos por um recurso accelerator-table. Para obter mais informações, consulte [Carregando o recurso de tabela do acelerador por](#loading-the-accelerator-table-resource) meio do processamento de mensagens de comando [ \_ wm.](/windows)
 
-### <a name="destroying-a-run-time-accelerator-table"></a>Destruindo uma tabela de acelerador de Run-Time
+### <a name="destroying-a-run-time-accelerator-table"></a>Destruir uma tabela Run-Time acelerador de dados
 
-O sistema destrói automaticamente as tabelas aceleradoras criadas em tempo de execução, removendo os recursos da memória depois que o aplicativo é fechado. Você pode destruir uma tabela de acelerador e removê-la da memória anteriormente passando o identificador da tabela para a função [**DestroyAcceleratorTable**](/windows/desktop/api/Winuser/nf-winuser-destroyacceleratortable) .
+O sistema destrói automaticamente as tabelas de acelerador criadas em tempo de operação, removendo os recursos da memória depois que o aplicativo é fechado. Você pode destruir uma tabela de acelerador e removê-la da memória anteriormente passando o alça da tabela para a [**função DestroyAcceleratorTable.**](/windows/desktop/api/Winuser/nf-winuser-destroyacceleratortable)
 
-### <a name="creating-user-editable-accelerators"></a>Criando aceleradores editáveis do usuário
+### <a name="creating-user-editable-accelerators"></a>Criando aceleradores editáveis pelo usuário
 
-Este exemplo mostra como construir uma caixa de diálogo que permite ao usuário alterar o acelerador associado a um item de menu. A caixa de diálogo consiste em uma caixa de combinação que contém itens de menu, uma caixa de combinação que contém os nomes das chaves e as caixas de seleção para selecionar as teclas CTRL, ALT e SHIFT. A ilustração a seguir mostra a caixa de diálogo.
+Este exemplo mostra como construir uma caixa de diálogo que permite que o usuário altere o acelerador associado a um item de menu. A caixa de diálogo consiste em uma caixa de combinação que contém itens de menu, uma caixa de combinação contendo os nomes das chaves e caixas de seleção para selecionar as teclas CTRL, ALT e SHIFT. A ilustração a seguir mostra a caixa de diálogo.
 
 ![caixa de diálogo com caixas de combinação e caixas de seleção](images/useredit.gif)
 
@@ -392,7 +392,7 @@ BEGIN
 END
 ```
 
-A barra de menus do aplicativo contém um submenu de **caracteres** cujos itens têm aceleradores associados a eles.
+A barra de menus do aplicativo contém **um** submenu Caractere cujos itens têm aceleradores associados a eles.
 
 ``` syntax
 MainMenu MENU 
@@ -416,7 +416,7 @@ FontAccel ACCELERATORS
  
 ```
 
-Os valores de item de menu para o modelo de menu são constantes definidas da seguinte maneira no arquivo de cabeçalho do aplicativo.
+Os valores de item de menu para o modelo de menu são constantes definidas da seguinte forma no arquivo de header do aplicativo.
 
 ``` syntax
 #define IDM_REGULAR    1100
@@ -425,7 +425,7 @@ Os valores de item de menu para o modelo de menu são constantes definidas da se
 #define IDM_ULINE      1400
 ```
 
-A caixa de diálogo usa uma matriz de estruturas VKEY definidas pelo aplicativo, cada uma contendo uma cadeia de caracteres de texto de pressionamento de tecla e uma cadeia de texto de acelerador. Quando a caixa de diálogo é criada, ela analisa a matriz e adiciona cada cadeia de caracteres de texto de pressionamento de tecla à caixa de combinação **selecionar pressionamentos** de teclas. Quando o usuário clica no botão **OK** , a caixa de diálogo procura a cadeia de caracteres de texto de pressionamento de teclas selecionada e recupera a cadeia de caracteres de texto de acelerador correspondente. A caixa de diálogo acrescenta a cadeia de texto Accelerator-Text ao texto do item de menu selecionado pelo usuário. O exemplo a seguir mostra a matriz de estruturas VKEY:
+A caixa de diálogo usa uma matriz de estruturas de VKEY definidas pelo aplicativo, cada uma contendo uma cadeia de caracteres de texto com teclas e uma cadeia de caracteres de texto do acelerador. Quando a caixa de diálogo é criada, ela analisa a matriz e  adiciona cada cadeia de caracteres de teclas de texto à caixa de combinação Selecionar Teclas. Quando o usuário clica no **botão OK,** a caixa de diálogo procura a cadeia de caracteres de texto de tecla selecionada e recupera a cadeia de caracteres de texto do acelerador correspondente. A caixa de diálogo anexa a cadeia de caracteres de texto do acelerador ao texto do item de menu selecionado pelo usuário. O exemplo a seguir mostra a matriz de estruturas de VKEY:
 
 
 ```
@@ -469,7 +469,7 @@ VKEYS vkeys[MAXKEYS] = {
 
 
 
-O procedimento de inicialização da caixa de diálogo preenche as caixas de combinação **selecionar item** e **selecionar pressionamentos de teclas** . Depois que o usuário seleciona um item de menu e um acelerador associado, a caixa de diálogo examina os controles na caixa de diálogo para obter a seleção do usuário, atualiza o texto do item de menu e cria uma nova tabela de acelerador que contém o novo acelerador definido pelo usuário. O exemplo a seguir mostra o procedimento da caixa de diálogo. Observe que você deve inicializar em seu procedimento de janela.
+O procedimento de inicialização da caixa de  diálogo preenche as caixas de combinação Selecionar **Item** e Selecionar Teclas. Depois que o usuário seleciona um item de menu e um acelerador associado, a caixa de diálogo examina os controles na caixa de diálogo para obter a seleção do usuário, atualiza o texto do item de menu e cria uma nova tabela de aceleradores que contém o novo acelerador definido pelo usuário. O exemplo a seguir mostra o procedimento da caixa de diálogo. Observe que você deve inicializar em seu procedimento de janela.
 
 
 ```
@@ -782,6 +782,6 @@ BOOL CALLBACK EdAccelProc(HWND hwndDlg, UINT uMsg, WPARAM wParam, LPARAM lParam)
 
 
 
- 
+ 
 
- 
+ 

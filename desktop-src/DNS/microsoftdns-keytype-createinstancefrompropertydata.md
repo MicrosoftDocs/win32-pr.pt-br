@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b16dc8f3f591ba3aaf5ac9883cdd3a15c85146d0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 315ef898a101b3a86fa5a3085e4a171edd8efa28972cf62c006cc0eb87e354b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009735"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119913136"
 ---
 # <a name="createinstancefrompropertydata-method-of-the-microsoftdns_keytype-class"></a>Método CreateInstanceFromPropertyData da \_ classe KeyType MicrosoftDNS
 
@@ -84,7 +84,7 @@ Classe do RR. O valor padrão é 1. Os valores a seguir são válidos.
 | <span id="1"></span><dl> <dt>**1**</dt> </dl> | NO (Internet)<br/> |
 | <span id="2"></span><dl> <dt>**2**</dt> </dl> | CS (CSNET)<br/>    |
 | <span id="3"></span><dl> <dt>**3**</dt> </dl> | CH (CAOS)<br/>    |
-| <span id="4"></span><dl> <dt>**quatro**</dt> </dl> | HS (Hesiod)<br/>   |
+| <span id="4"></span><dl> <dt>**4**</dt> </dl> | HS (Hesiod)<br/>   |
 
 
 
@@ -99,7 +99,7 @@ Tempo, em segundos, que o RR pode ser armazenado em cache por um resolvedor de D
 
 </dd> <dt>
 
-*Flags* \[in\]
+*Sinalizadores* \[ de no\]
 </dt> <dd>
 
 Sinalizadores usados para especificar o mapeamento, conforme descrito em IETF RFC 2535.
@@ -118,7 +118,7 @@ Protocolo para o qual a chave especificada no registro de recurso pode ser usada
 | <span id="1"></span><dl> <dt>**1**</dt> </dl>     | TLS<br/>           |
 | <span id="2"></span><dl> <dt>**2**</dt> </dl>     | Email<br/>        |
 | <span id="3"></span><dl> <dt>**3**</dt> </dl>     | DNSSEC<br/>        |
-| <span id="4"></span><dl> <dt>**quatro**</dt> </dl>     | IPsec<br/>         |
+| <span id="4"></span><dl> <dt>**4**</dt> </dl>     | IPsec<br/>         |
 | <span id="255"></span><dl> <dt>**255**</dt> </dl> | Todos os protocolos<br/> |
 
 
@@ -139,7 +139,7 @@ Algoritmo usado com a chave especificada no registro de recurso. Os valores atri
 | <span id="1"></span><dl> <dt>**1**</dt> </dl> | RSA/MD5 (RFC 2537)<br/>          |
 | <span id="2"></span><dl> <dt>**2**</dt> </dl> | Diffie-Hellman (RFC 2539)<br/>   |
 | <span id="3"></span><dl> <dt>**3**</dt> </dl> | DSA (RFC 2536)<br/>              |
-| <span id="4"></span><dl> <dt>**quatro**</dt> </dl> | Criptografia de curva elíptica<br/> |
+| <span id="4"></span><dl> <dt>**4**</dt> </dl> | Criptografia de curva elíptica<br/> |
 
 
 
@@ -161,7 +161,7 @@ Referência ao novo objeto.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 

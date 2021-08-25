@@ -1,19 +1,19 @@
 ---
-title: Identificadores de serviços Web do Windows
+title: Windows Identificadores de serviços da Web
 ms.assetid: a67f48ce-ebe3-48f9-9c00-67acd8b9fbe5
-description: 'Saiba mais sobre: identificadores de serviços Web do Windows'
+description: 'saiba mais sobre: Windows identificadores de serviços Web'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 102a0666c69abe791c532ee6a837e95c57392f6b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cd4eff84fe08728b9f336fdd32f2d929ba335125522311f0cec279825c2e70d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105793292"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119926836"
 ---
-# <a name="windows-web-services-handles"></a>Identificadores de serviços Web do Windows
+# <a name="windows-web-services-handles"></a>Windows Identificadores de serviços da Web
 
-A API dos serviços Web do Windows inclui os seguintes identificadores:
+a API de serviços Web do Windows inclui os seguintes identificadores:
 
 -   [WS \_ Channel](ws-channel.md)
 -   [\_erro WS](ws-error.md)

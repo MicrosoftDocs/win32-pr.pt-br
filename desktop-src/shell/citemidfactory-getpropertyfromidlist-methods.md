@@ -4,12 +4,12 @@ ms.assetid: D0BE2A9A-5832-4C0E-BFB6-96EB467C3D9D
 title: Métodos CItemIDFactory::GetPropertyFromIDList (Shidfact.h)
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 22aaec6d0616337a887f2876b51aaa744b205ba7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 736bd8f9634f7429fdbb74a827a2ca257dc4dc5ce75bb58298f808190ba5e6c6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646844"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119884756"
 ---
 # <a name="citemidfactorygetpropertyfromidlist-methods"></a>Métodos CItemIDFactory:: GetPropertyFromIDList
 
@@ -34,9 +34,9 @@ Retorna uma propriedade do [**IPropertyStore**](/windows/win32/api/propsys/nn-pr
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Shidfact. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Shidfact. h</dt> </dl> |
 
 
 

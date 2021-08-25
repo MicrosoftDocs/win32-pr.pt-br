@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a6f48ae389090840e085c90b0bc5444e7cd6784e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bb9867cb6476ab0a2838903c906f662032e14dfb0d4fa0547b045672e03b6ce8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105780557"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119930096"
 ---
 # <a name="iwmsecurebufferdecrypt-method"></a>IWMSecureBuffer: método ecrypt de:D
 
@@ -50,7 +50,7 @@ Ponteiro para uma interface de canal segura que contém o ponteiro de dados crip
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 

@@ -3,7 +3,7 @@ title: Network. encodedFrameRate
 description: A propriedade encodedFrameRate recupera a taxa de quadros de vídeo especificada pelo autor do conteúdo em quadros por segundo.
 ms.assetid: 7dad5c90-f750-48d7-9dda-3fc07394edcc
 keywords:
-- Network. encodedFrameRate Windows Media Player
+- Windows Media Player Network. encodedFrameRate
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0008eb5d648dc7d3f51b40329ca3d830c3590c49
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f1f64b6f57b4cfd0e7bc94715f80c1066ebe23a601e64c173926cf2cd9e36393
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105772935"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119901696"
 ---
 # <a name="networkencodedframerate"></a>Network. encodedFrameRate
 
@@ -35,7 +35,7 @@ Essa propriedade é um **número** somente leitura (**Long**).
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de JScript a seguir usa a *rede*. **encodedFrameRate** para exibir a taxa de quadros especificada quando o arquivo foi codificado. As informações são exibidas em um DIV HTML criado com ID = "FR". O objeto de **jogador** foi criado com ID = "Player".
+o exemplo a seguir JScript usa a *rede*. **encodedFrameRate** para exibir a taxa de quadros especificada quando o arquivo foi codificado. As informações são exibidas em um DIV HTML criado com ID = "FR". O objeto de **jogador** foi criado com ID = "Player".
 
 
 ```JScript

@@ -4,12 +4,12 @@ ms.assetid: 25bfbd62-b6be-4d1f-aa4c-77798bbb9fc9
 title: Filtro de "t" inteligente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c52077066f69e50fbb5218012a402a8d556c15c1
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 50a8e829d78658b867d3884240250c10d10a65c7cd309f109fe29b023c726518
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107909294"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119964987"
 ---
 # <a name="smart-tee-filter"></a>Filtro de "t" inteligente
 
@@ -23,7 +23,7 @@ A ilustração a seguir mostra um grafo de captura típico que usa o filtro de "
 
 
 
-| Label | Valor |
+| Rótulo | Valor |
 |------------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | Filtrar interfaces                        | [**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter)                                                                             |
 | Tipos de mídia de pino de entrada                    | \_Vídeo de MediaType, MEDIASUBTYPE \_ nulo                                                                           |
@@ -48,7 +48,7 @@ O pino de captura é o pino de saída 0 e o pino de visualização é o pino de 
 
 <dl> <dt>
 
-[Filtros do DirectShow](directshow-filters.md)
+[DirectShow Filter](directshow-filters.md)
 </dt> </dl>
 
  

@@ -4,17 +4,17 @@ description: A criação de um manipulador de protocolo envolve a implementaçã
 ms.assetid: d4bcf370-4152-4cfd-a92e-eb9196d23ab4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c5a88ca5137b012431fff75bf5975a8b4820121
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 32e33a7ebf6d5f14d0ec4d78031e25b17d59bac5fb99ee7ea6d20046fbe95c78
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104084492"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119963486"
 ---
 # <a name="implementing-a-protocol-handler-for-wds"></a>Implementando um manipulador de protocolo para o WDS
 
 > [!NOTE]
-> O Windows Desktop Search 2. x é uma tecnologia obsoleta que originalmente estava disponível como um suplemento para o Windows XP e o Windows Server 2003. Em versões posteriores, use o [Windows Search](../search/-search-3x-wds-overview.md) em vez disso.
+> Windows o Desktop Search 2. x é uma tecnologia obsoleta que estava originalmente disponível como um suplemento para o Windows XP e o Windows Server 2003. em versões posteriores, use [Windows pesquisa](../search/-search-3x-wds-overview.md) em vez disso.
 
 A criação de um manipulador de protocolo envolve a implementação de [**ISearchProtocol**](/windows/desktop/api/searchapi/nn-searchapi-isearchprotocol) para gerenciar objetos UrlAccessor, [**IUrlAccessor**](/windows/desktop/api/searchapi/nn-searchapi-iurlaccessor) para gerar metadados sobre e identificar os filtros apropriados para os itens no armazenamento de dados, IProtocolHandlerSite para instanciar um objeto SearchProtocol e identificar os filtros apropriados e o [**IFilter**](/windows/desktop/api/filter/nn-filter-ifilter)para filtrar arquivos proprietários ou para enumerar e filtrar arquivos armazenados hierarquicamente. O manipulador de protocolo deve ser multithread.
 
@@ -29,7 +29,7 @@ Estas seções contêm os seguintes tópicos:
 
 ## <a name="note-on-urls"></a>Observação sobre URLs
 
-O Microsoft Windows Desktop Search (WDS) usa URLs para identificar exclusivamente os itens em um sistema de arquivos, dentro de uma loja do tipo banco de dados ou na Web. Uma URL que define um nó de entrada é chamada de página inicial; O WDS começa nessa página inicial e rastreia recursivamente o armazenamento de dados. A estrutura de URL típica é:
+o Microsoft Windows Desktop Search (WDS) usa URLs para identificar exclusivamente os itens em um sistema de arquivos, dentro de uma loja do tipo banco de dados ou na Web. Uma URL que define um nó de entrada é chamada de página inicial; O WDS começa nessa página inicial e rastreia recursivamente o armazenamento de dados. A estrutura de URL típica é:
 
 `protocol://host/path/name.extension`
 
@@ -37,7 +37,7 @@ O Microsoft Windows Desktop Search (WDS) usa URLs para identificar exclusivament
 >
 > Quando desejar adicionar um novo armazenamento de dados, você precisará selecionar um nome para identificá-lo que não entre em conflito com os atuais. Recomendamos esta Convenção de nomenclatura: companyName. Scheme.
 
- 
+ 
 
 ## <a name="protocol-handler-interfaces"></a>Interfaces de manipulador de protocolo
 
@@ -53,7 +53,7 @@ Para uma URL especificada, a interface [**IUrlAccessor**](/windows/desktop/api/s
 >
 > Os horários modificados para diretórios são ignorados. O objeto [**IUrlAccessor**](/windows/desktop/api/searchapi/nn-searchapi-iurlaccessor) deve enumerar os objetos filho para determinar se houve modificações ou exclusões.
 
- 
+ 
 
 Grande parte do design do objeto **UrlAccessor** depende se a estrutura é hierárquica ou baseada em link. Para armazenamentos de dados hierárquicos, o objeto **UrlAccessor** deve encontrar um filtro que possa enumerar seu conteúdo. Outra distinção entre os manipuladores de protocolo hierárquico e baseado em link é o uso do método IsDirectory. Em manipuladores de protocolo baseado em link, esse método deve retornar S \_ false. Os manipuladores de protocolo hierárquicos devem retornar S \_ OK para contêineres.
 
@@ -87,9 +87,9 @@ O código de exemplo a seguir demonstra como criar o PID \_ GTHR \_ DIRLINK adeq
 >
 > **ESSE CÓDIGO E AS INFORMAÇÕES SÃO FORNECIDOS "NO ESTADO EM QUE SE ENCONTRAM", SEM GARANTIAS DE QUALQUER TIPO, EXPRESSAS OU IMPLÍCITAS, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS IMPLÍCITAS DE COMERCIALIZAÇÃO E/OU ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA.**
 >
-> Copyright (C) Microsoft. Todos os direitos reservados.
+> Copyright (C) Microsoft. All rights reserved.
 
- 
+ 
 
 
 ```
@@ -156,7 +156,7 @@ HRESULT GetPropVariantForUrlAndTime(PCWSTR pszUrl, const FILETIME &ftLastModifie
 >
 > Um componente [**IFilter**](/windows/desktop/api/filter/nn-filter-ifilter)do contêiner sempre deve enumerar todas as URLs filho, mesmo que as URLs filho não tenham sido alteradas, pois o indexador detecta as exclusões por meio do processo de enumeração. Se a saída de data em um DIR \_ links \_ com o \_ tempo indicar que os dados não foram alterados, o indexador não atualizará os dados para essa URL.
 
- 
+ 
 
 A URL física é a URL que o objeto **UrlAccessor** processa. Se o filtro não emitir um DisplayUrl amigável para o usuário, o WDS exibirá a URL física para o usuário como parte dos resultados da pesquisa. O esquema do WDS contém duas propriedades para controlar o que é exibido para o usuário final, conforme mostrado na tabela a seguir.
 
@@ -169,7 +169,7 @@ A URL física é a URL que o objeto **UrlAccessor** processa. Se o filtro não e
 
 
 
- 
+ 
 
 Se o seu código não emitir um DisplayFolder ou nome_da_pasta, esses valores serão computados a partir do DisplayUrl. As barras invertidas na URL denotam contêineres na loja ou no sistema de arquivos.
 
@@ -178,7 +178,7 @@ Se o seu código não emitir um DisplayFolder ou nome_da_pasta, esses valores se
 Para que o manipulador de protocolo tenha uma página inicial padrão (e a URL do nó de entrada), você deve implementar a interface **ISearchProtocolOptions** . Em versões futuras do WDS, essa interface fornecerá ganchos para a caixa de diálogo de opções para uma experiência de usuário aprimorada. Essa interface fornece a seguinte funcionalidade:
 
 -   Determina se os requisitos para seu manipulador de protocolo são atendidos. Por exemplo, o armazenamento do manipulador de protocolo pode exigir acesso a um determinado aplicativo para indexar corretamente os dados do aplicativo, mas esse aplicativo não está disponível.
--   Identifica os requisitos mínimos que seu manipulador de protocolo precisa para processar um item. Os requisitos podem ser expressos em uma descrição independente do usuário, localizada, como "Microsoft Outlook 2000 ou superior".
+-   Identifica os requisitos mínimos que seu manipulador de protocolo precisa para processar um item. os requisitos podem ser expressos em uma descrição amigável e localizada para o usuário, como "Microsoft Outlook 2000 ou superior".
 -   Define as URLs que seu manipulador de protocolo deve processar por padrão.
 
 ### <a name="isearchprotocoloptions"></a>ISearchProtocolOptions
@@ -195,7 +195,7 @@ A tabela a seguir descreve os métodos que você precisa implementar para a inte
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -213,6 +213,6 @@ A tabela a seguir descreve os métodos que você precisa implementar para a inte
 [Instalando e Registrando manipuladores de protocolo](-search-2x-wds-ph-install-registration.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

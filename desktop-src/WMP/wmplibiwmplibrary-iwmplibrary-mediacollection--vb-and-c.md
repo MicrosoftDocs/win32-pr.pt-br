@@ -1,11 +1,11 @@
 ---
-title: Propriedade mediacollection do IWMPLibrary
-description: A propriedade mediacollection Obtém uma interface IWMPMediaCollection para a biblioteca atual.
+title: Propriedade IWMPLibrary mediaCollection
+description: A propriedade mediaCollection obtém uma interface IWMPMediaCollection para a biblioteca atual.
 ms.assetid: 6ac92b0d-d634-4e99-8946-b10363d4be47
 keywords:
-- Propriedade mediacollection Windows Media Player
-- Propriedade mediacollection Windows Media Player, interface IWMPLibrary
-- Interface IWMPLibrary Windows Media Player, Propriedade mediacollection
+- propriedade mediaCollection Windows Media Player
+- propriedade mediaCollection Windows Media Player interface , IWMPLibrary
+- Interface IWMPLibrary Windows Media Player propriedade , mediaCollection
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 69f3f3e10f102441f02f5fad33dd295712b431b7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8b1e10cd41dbc8ac558451ca2b6c8366fa566044db34cfbb44962cbe41c3e26a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105786246"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119899946"
 ---
-# <a name="iwmplibrarymediacollection-property"></a>Propriedade IWMPLibrary:: mediacollection
+# <a name="iwmplibrarymediacollection-property"></a>Propriedade IWMPLibrary::mediaCollection
 
-A propriedade **mediacollection** Obtém uma interface **IWMPMediaCollection** para a biblioteca atual.
+A **propriedade mediaCollection** obtém uma interface **IWMPMediaCollection** para a biblioteca atual.
 
 ## <a name="syntax"></a>Syntax
 
@@ -46,7 +46,7 @@ Public ReadOnly Property mediaCollection As IWMPMediaCollection
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Uma interface WMPLib. IWMPMediaCollection para a biblioteca atual.
+Uma interface WMPLib.IWMPMediaCollection para a biblioteca atual.
 
 ## <a name="requirements"></a>Requisitos
 

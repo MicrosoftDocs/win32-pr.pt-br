@@ -1,7 +1,7 @@
 ---
 description: O método DisplayTypeInfo exibe informações de tipo de mídia durante a depuração.
 ms.assetid: fd10d37b-57f5-4246-8ca3-f4bc59911445
-title: Método CBasePin. DisplayTypeInfo (Amfilter. h)
+title: Método CBasePin.DisplayTypeInfo (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 681e424505bb2ff840ac5beaa48431f17a5d177b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 10b4535950a46fa55aba0ea7d808a075186f074cc829be0d3225dc887512ad47
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750066"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119916446"
 ---
-# <a name="cbasepindisplaytypeinfo-method"></a>Método CBasePin. DisplayTypeInfo
+# <a name="cbasepindisplaytypeinfo-method"></a>Método CBasePin.DisplayTypeInfo
 
 O `DisplayTypeInfo` método exibe informações de tipo de mídia durante a depuração.
 
@@ -50,20 +50,20 @@ Ignorado.
 
 </dd> <dt>
 
-*PMT* 
+*Pgto* 
 </dt> <dd>
 
-Ponteiro para um objeto [**CMediaType**](cmediatype.md) que especifica o tipo de mídia.
+Ponteiro para um [**objeto CMediaType**](cmediatype.md) que especifica o tipo de mídia.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Em compilações de depuração, esse método chama a função [**DbgLog**](dbglog.md) para exibir o tipo de mídia especificado. Em compilações de varejo, esse método não faz nada.
+Em builds de depuração, esse método chama a [**função DbgLog**](dbglog.md) para exibir o tipo de mídia especificado. Em builds de varejo, esse método não faz nada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ Em compilações de depuração, esse método chama a função [**DbgLog**](dbgl
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amfilter.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

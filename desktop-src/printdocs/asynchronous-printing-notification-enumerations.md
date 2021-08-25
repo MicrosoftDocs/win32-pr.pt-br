@@ -4,12 +4,12 @@ ms.assetid: 732a552b-caf9-45da-9a9e-a325c4f6341b
 title: Enumerações de notificação de impressão assíncrona
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e2baf2a4476ac858a883dda55b2864a79d78cf6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0a86082d171fbf76afc4a7f02a9511fc7ad3d118ced1aa2ef4f43f87a2abd111
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105763293"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119950726"
 ---
 # <a name="asynchronous-printing-notification-enumerations"></a>Enumerações de notificação de impressão assíncrona
 

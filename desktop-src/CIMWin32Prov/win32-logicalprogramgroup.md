@@ -21,16 +21,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: db7c7484489ecbc87e908dc6eb1c3de156cda665
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 9b012966b61f018656b61134b4f889b2ba38ac70ca7e56751c332b1eb16a1564
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826580"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119973326"
 ---
 # <a name="win32_logicalprogramgroup-class"></a>\_Classe Win32 LogicalProgramGroup
 
-A [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **\_ LogicalProgramGroup do Win32** representa um grupo de programas em um sistema de computador executando o Windows. Por exemplo, acessórios ou inicialização.
+A [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **\_ LogicalProgramGroup do Win32** representa um grupo de programas em um sistema de computador que executa o Windows. Por exemplo, acessórios ou inicialização.
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas. As propriedades e os métodos estão em ordem alfabética, não em ordem de MOF.
 
@@ -110,7 +110,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("win32api \| CWbemProviderGlue Class Methods \| [**GetAllInstances**](/windows/desktop/api/wbemglue/nf-wbemglue-cwbemproviderglue-getallinstances)")
 </dt> </dl>
 
-Nome do grupo de programas do Windows. Os grupos de programas são implementados como pastas de arquivos no Win32.
+nome do grupo de programas Windows. Os grupos de programas são implementados como pastas de arquivos no Win32.
 
 Exemplo: "ferramentas do sistema de acessórios \\ "
 
@@ -272,7 +272,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("win32api \| CWbemProviderGlue Class Methods \| [**GetAllInstances**](/windows/desktop/api/wbemglue/nf-wbemglue-cwbemproviderglue-getallinstances)")
 </dt> </dl>
 
-Usuários que podem acessar o grupo de programas do Windows. Os grupos de programas são implementados como pastas de arquivos no Win32.
+usuários que podem acessar o grupo de programas Windows. Os grupos de programas são implementados como pastas de arquivos no Win32.
 
 Exemplo: "todos os usuários"
 
@@ -282,7 +282,7 @@ Exemplo: "todos os usuários"
 
 A classe **Win32 \_ LogicalProgramGroup** é derivada de [**Win32 \_ ProgramGroupOrItem**](win32-programgrouporitem.md).
 
-O processo de chamada que usa essa classe deve ter o privilégio **se \_ Restore \_ Name** no computador em que o registro reside. Por exemplo, se você enumerar essa classe no computador local, a conta sob a qual seu aplicativo é executado deverá ter esse privilégio. Para obter mais informações, consulte [executando operações privilegiadas](/windows/desktop/WmiSdk/executing-privileged-operations).
+o processo de chamada que usa essa classe deve ter o privilégio de **ES \_ restore \_ NAME** no computador em que o registro reside. Por exemplo, se você enumerar essa classe no computador local, a conta sob a qual seu aplicativo é executado deverá ter esse privilégio. Para obter mais informações, consulte [executando operações privilegiadas](/windows/desktop/WmiSdk/executing-privileged-operations).
 
 ## <a name="requirements"></a>Requisitos
 

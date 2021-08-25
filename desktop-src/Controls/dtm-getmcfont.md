@@ -1,9 +1,9 @@
 ---
-title: Mensagem de DTM_GETMCFONT (commctrl. h)
-description: Obtém a fonte em que o controle de calendário do mês filho do controle de data e hora (DTP) está sendo usado no momento. Você pode enviar essa mensagem explicitamente ou usar a \_ macro DateTime GetMonthCalFont.
+title: DTM_GETMCFONT mensagem (Commctrl.h)
+description: Obtém a fonte que o controle de calendário de mês filho do DTP (selador de data e hora) está usando no momento. Você pode enviar essa mensagem explicitamente ou usar a \_ macro DateTime GetMonthCalFont.
 ms.assetid: 6687a1dc-6f6d-4684-80b2-f726b08d2f3a
 keywords:
-- Controles de DTM_GETMCFONT de mensagens do Windows
+- DTM_GETMCFONT controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d799d5dbbe5e3a4cdf7eede871f9aeac451d17a4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b2bf60f226e7fe5d309324bc517a7fd215abe4591fd5141ff149b14e162ac9be
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824692"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119878126"
 ---
-# <a name="dtm_getmcfont-message"></a>\_Mensagem DTM GETMCFONT
+# <a name="dtm_getmcfont-message"></a>Mensagem \_ GETMCFONT DTM
 
-Obtém a fonte em que o controle de calendário do mês filho do controle de data e hora (DTP) está sendo usado no momento. Você pode enviar essa mensagem explicitamente ou usar a macro [**DateTime \_ GetMonthCalFont**](/windows/desktop/api/Commctrl/nf-commctrl-datetime_getmonthcalfont) .
+Obtém a fonte que o controle de calendário de mês filho do DTP (selador de data e hora) está usando no momento. Você pode enviar essa mensagem explicitamente ou usar a macro [**\_ DateTime GetMonthCalFont.**](/windows/desktop/api/Commctrl/nf-commctrl-datetime_getmonthcalfont)
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -35,9 +35,9 @@ Obtém a fonte em que o controle de calendário do mês filho do controle de dat
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor HFONT que é o identificador para a fonte atual.
+Retorna um valor HFONT que é o alçador para a fonte atual.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,9 +45,9 @@ Retorna um valor HFONT que é o identificador para a fonte atual.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -7,16 +7,16 @@ keywords:
 - Estruturas SNMP, SNMP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f254dfebeb3d468add8871d4b6f28f268341e9ea
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 9bb5cf0920d9387fb24874cc92a8e7fa623617d89f3578cb181805eb56f35546
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366588"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119886346"
 ---
 # <a name="snmp-structures"></a>Estruturas SNMP
 
-\[O SNMP está disponível para uso nos sistemas operacionais especificados na seção requisitos. Ele poderá ser alterado ou ficar indisponível em versões subsequentes. Em vez disso, use [gerenciamento remoto do Windows](/windows/desktop/WinRM/portal), que é a implementação da Microsoft do WS-Man.\]
+\[O SNMP está disponível para uso nos sistemas operacionais especificados na seção requisitos. Ele poderá ser alterado ou ficar indisponível em versões subsequentes. em vez disso, use [Gerenciamento Remoto do Windows](/windows/desktop/WinRM/portal), que é a implementação da Microsoft do WS-Man.\]
 
 A tabela a seguir lista as estruturas que são usadas com SNMP.
 
@@ -33,8 +33,8 @@ A tabela a seguir lista as estruturas que são usadas com SNMP.
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 

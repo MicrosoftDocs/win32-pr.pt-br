@@ -1,5 +1,5 @@
 ---
-description: Descreve a sessão de logon ou as sessões associadas a um usuário conectado a um sistema de computador executando o Windows.
+description: Descreve a sessão de logon ou as sessões associadas a um usuário conectado a um sistema de computador que executa o Windows.
 ms.assetid: d09a115b-95a3-47c7-a04d-c810d044ccc8
 ms.tgt_platform: multiple
 title: Classe Win32_LogonSession
@@ -23,12 +23,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 78e14bbd41c2fd8bb0c10a7bfeeda0dc9d426b0f
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 85cbc80050fafe887fa99974c41666c7189b2b12c21559aac0255870b2a697d5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646270"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119972976"
 ---
 # <a name="win32_logonsession-class"></a>\_Classe Win32 LogonSession
 

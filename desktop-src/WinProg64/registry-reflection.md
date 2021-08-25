@@ -3,20 +3,20 @@ title: Reflexão do registro
 description: O redirecionador de registro isola os aplicativos de 32 bits e 64 bits fornecendo exibições lógicas separadas de determinadas partes do registro no WOW64. No entanto, os valores de algumas chaves do registro devem ser os mesmos nas exibições de 32 bits e 64 bits.
 ms.assetid: eac9038b-9f59-4ac7-8974-f94a4a62a257
 keywords:
-- reflexão do registro 64-programação do Windows-bit
-- Programação de reflexão de 64 bits do Windows
+- reflexão de registro 64-bit Windows programação
+- reflexão 64-bit Windows programação
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 523041004d9570bbdf101050e30f5d9139031913
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: d9104ba6bf4d537a597a2a45bfd9034379ed1781dd893e23633c08e9e9c1149b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105807183"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119899036"
 ---
 # <a name="registry-reflection"></a>Reflexão do registro
 
-\[As informações neste tópico se aplicam ao Windows Server 2008, Windows Vista, Windows Server 2003 e Windows XP. A partir do Windows 7 e do Windows Server 2008 R2, o WOW64 não usa mais a reflexão do registro e, anteriormente, as chaves refletidas são compartilhadas. Para obter mais informações, consulte [chaves do registro afetadas pelo WOW64](shared-registry-keys.md).\]
+\[as informações neste tópico se aplicam ao Windows server 2008, Windows Vista, Windows Server 2003 e Windows XP. a partir do Windows 7 e do Windows Server 2008 R2, o WOW64 não usa mais a reflexão do registro e, anteriormente, as chaves refletidas são compartilhadas. Para obter mais informações, consulte [chaves do registro afetadas pelo WOW64](shared-registry-keys.md).\]
 
 O [redirecionador de registro](registry-redirector.md) isola os aplicativos de 32 bits e 64 bits fornecendo exibições lógicas separadas de determinadas partes do registro no WOW64. No entanto, os valores de algumas chaves do registro devem ser os mesmos nas exibições de 32 bits e 64 bits.
 
@@ -24,15 +24,15 @@ O processo de *reflexão do registro* copia chaves e valores do registro entre d
 
 Uma chave refletida é copiada quando uma chave é fechada chamando [**falha RegCloseKey**](/windows/desktop/api/winreg/nf-winreg-regclosekey). Observe que isso oferece aumento para uma possível condição de corrida: se mais de um processo alterar a chave refletida, a última chamada **falha RegCloseKey** determinará o valor final da chave.
 
-O refletor copia dados de ativação COM para servidores locais entre os modos de exibição, mas não copia dados em processo porque a combinação de dados em processo 32/64 não é permitida em janelas de 64 bits.
+O refletor copia dados de ativação COM para servidores locais entre os modos de exibição, mas não copia dados em processo porque a combinação de dados em processo 32/64 não é permitida em Windows de 64 bits.
 
 A reflexão não está habilitada para chaves de registro compartilhadas ou para chaves do registro que não são redirecionadas. Por exemplo, a reflexão não está habilitada para a chave do **\_ \_ \\ sistema do computador local hKey** . Para obter uma lista de chaves do registro redirecionadas, compartilhadas ou refletidas, consulte [chaves do registro afetadas pelo WOW64](shared-registry-keys.md).
 
 A reflexão do registro usa uma política "último escritor vence", conforme ilustrado no exemplo a seguir:
 
--   Após uma instalação limpa do Windows de 64 bits, a Wordpad.exe de 64 bits é registrada para manipular arquivos. doc. O refletor copia o registro. doc da exibição do registro de 64 bits para a exibição do registro de 32 bits.
--   Um administrador instala o escritório de 32 bits, que registra Winword.exe de 32 bits para manipular arquivos. doc na exibição de registro de 32 bits. O reflector do registro copia essas informações na exibição do registro de 64 bits, de modo que os aplicativos de 32 bits e de 64 bits iniciem a versão de 32 bits do Winword.exe para arquivos. doc.
--   Um administrador instala o escritório de 64 bits, que registra Winword.exe de 64 bits para manipular arquivos. doc na exibição de registro de 64 bits. O refletor de registro copia essas informações no registro de 32 bits, de modo que os aplicativos de 32 bits e de 64 bits iniciem a versão de 64 bits do Winword.exe para arquivos. doc.
+-   após uma instalação limpa do Windows de 64 bits, o Wordpad.exe de 64 bits é registrado para lidar com os arquivos .doc. O refletor copia o registro de .doc da exibição do registro de 64 bits para a exibição do registro de 32 bits.
+-   um administrador instala o Office de 32 bits, que registra Winword.exe de 32 bits para manipular .doc arquivos na exibição de registro de 32 bits. O refletor de registro copia essas informações na exibição do registro de 64 bits, de modo que os aplicativos de 32 bits e de 64 bits iniciem a versão de 32 bits do Winword.exe para arquivos de .doc.
+-   um administrador instala o Office de 64 bits, que registra Winword.exe de 64 bits para manipular .doc arquivos na exibição de registro de 64 bits. O refletor de registro copia essas informações no registro de 32 bits, de modo que os aplicativos de 32 bits e de 64 bits iniciem a versão de 64 bits do Winword.exe para arquivos de .doc.
 
 Portanto, as informações de associação de arquivo são preservadas para o aplicativo instalado mais recentemente.
 
@@ -63,6 +63,6 @@ As chaves refletidas não devem ser usadas em operações de registro transacion
 [Chaves do Registro afetadas pelo WOW64](shared-registry-keys.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

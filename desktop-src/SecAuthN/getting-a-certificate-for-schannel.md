@@ -1,21 +1,21 @@
 ---
-description: O exemplo a seguir mostra as etapas para obter uma \_ estrutura de contexto de certificado que contém um certificado; você deve selecionar um certificado e um repositório de certificados apropriados para seu aplicativo.
+description: O exemplo a seguir mostra as etapas para obter uma estrutura CERT CONTEXT que contém um certificado; você deve selecionar um certificado e um armazenamento de certificados apropriados \_ para seu aplicativo.
 ms.assetid: 31d7a8bd-729f-4db7-8e22-25d14296c0c4
-title: Obtendo um certificado para Schannel
+title: Obter um certificado para schannel
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b5bf7f311ac31fe2ff033d4b57f7d04bd1f42424
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b648f55cdfe68bc6c6b1b02b9c0d5bc715fe4efeaad70d25072b4709a2cd0114
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105752829"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119883136"
 ---
-# <a name="getting-a-certificate-for-schannel"></a>Obtendo um certificado para Schannel
+# <a name="getting-a-certificate-for-schannel"></a>Obter um certificado para schannel
 
-O exemplo a seguir mostra as etapas para obter uma estrutura de [**\_ contexto**](/windows/desktop/api/wincrypt/ns-wincrypt-cert_context) de certificado que contém um certificado; você deve selecionar um certificado e um repositório de certificados apropriados para seu aplicativo.
+O exemplo a seguir mostra as etapas para obter uma estrutura [**CERT \_ CONTEXT**](/windows/desktop/api/wincrypt/ns-wincrypt-cert_context) que contém um certificado; você deve selecionar um certificado e um armazenamento de certificados apropriados para seu aplicativo.
 
-Este exemplo demonstra como abrir um [*repositório de certificados*](/windows/desktop/SecGloss/c-gly) e localizar um certificado que será passado para a função [**falha AcquireCredentialsHandle**](/windows/win32/api/sspi/nf-sspi-acquirecredentialshandlea) , por meio da estrutura de [**\_ credenciais Schannel**](/windows/desktop/api/Schannel/ns-schannel-schannel_cred) .
+Este exemplo demonstra [*como*](/windows/desktop/SecGloss/c-gly) abrir um armazenamento de certificados e localizar um certificado que será passado para a função [**AcquireCredentialsHandle,**](/windows/win32/api/sspi/nf-sspi-acquirecredentialshandlea) por meio da estrutura [**\_ CRED SCHANNEL.**](/windows/desktop/api/Schannel/ns-schannel-schannel_cred)
 
 
 ```C++

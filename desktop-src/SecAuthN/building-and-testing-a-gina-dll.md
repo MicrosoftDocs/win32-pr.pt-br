@@ -1,28 +1,28 @@
 ---
-description: Todas as funções, protótipos, estruturas e constantes são definidas no arquivo de cabeçalho Winwlx. h.
+description: Todas as funções, protótipos, estruturas e constantes são definidas no arquivo de título Winwlx.h.
 ms.assetid: 13b5bc92-583d-4031-94f9-f84dbfbf7ee7
-title: Criando e testando uma DLL GINA
+title: Como criar e testar uma DLL DE LTD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 02e6e4a00f15e6ced4827bbc3efeb3c459f5d6a8
-ms.sourcegitcommit: 70f39ec77d19d3c32c376ee2831753d2cafae41a
+ms.openlocfilehash: 31df8597ca9ad78b8c94efb5610e3c899f7834cb14c9112b15a410c72705a0cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104298058"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119883526"
 ---
-# <a name="building-and-testing-a-gina-dll"></a>Criando e testando uma DLL GINA
+# <a name="building-and-testing-a-gina-dll"></a>Como criar e testar uma DLL DE LTD
 
-Todas as funções, protótipos, estruturas e constantes são definidas no arquivo de cabeçalho Winwlx. h.
+Todas as funções, protótipos, estruturas e constantes são definidas no arquivo de título Winwlx.h.
 
 > [!Note]  
-> As DLLs GINAs são ignoradas no Windows Vista.
+> As DLLs DE VALOR são ignoradas no Windows Vista.
 
  
 
-Para testar uma dll [*Gina*](/windows/desktop/SecGloss/g-gly) , use o Winlogon.exe de uma versão verificada do sistema operacional, que está disponível com o Microsoft Windows Driver Development Kit (DDK). A versão verificada do [*Winlogon*](/windows/desktop/SecGloss/w-gly) dá suporte à depuração de ginas da seguinte maneira:
+Para testar uma DLL [*DOEI,*](/windows/desktop/SecGloss/g-gly) use o Winlogon.exe de uma versão verificada do sistema operacional, que está disponível com o DDK (Kit de Desenvolvimento de Driver) do Microsoft Windows. A versão verificada do [*Winlogon dá*](/windows/desktop/SecGloss/w-gly) suporte à depuração deGUEAs da seguinte forma:
 
--   Você pode usar a sintaxe a seguir para criar uma seção em Win.ini para especificar opções de depuração do Winlogon.
+-   Você pode usar a sintaxe a seguir para criar uma seção no Win.ini para especificar opções de depuração do Winlogon.
 
     ``` syntax
     [WinlogonDebug]
@@ -30,29 +30,29 @@ Para testar uma dll [*Gina*](/windows/desktop/SecGloss/g-gly) , use o Winlogon.e
     DebugFlags=Flag1 [, Flag2 ...]
     ```
 
-    Se especificado, o **logfile** deverá conter o nome totalmente qualificado do arquivo que será usado para registrar informações de depuração. Se o arquivo não existir, ele será criado.
+    Se especificado, **o LogFile** deve conter o nome totalmente qualificado do arquivo que será usado para registrar informações de depuração. Se o arquivo não existir, ele será criado.
 
-    As opções **DebugFlags** especificam quais tipos de informações de depuração gravar no arquivo de log ou depurador. **DebugFlags** pode conter um ou mais dos sinalizadores a seguir.
+    As **opções DebugFlags** especificam quais tipos de informações de depuração gravar no arquivo de log ou no depurador. **DebugFlags** pode conter um ou mais dos sinalizadores a seguir.
 
     
 
     | Sinalizador de depuração | Descrição                                                                                                                                                                |
     |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | CoolSwitch     | A combinação de teclas CTRL + ALT + SHIFT + TAB causará uma interrupção de depuração no Winlogon.                                                                                               |
+    | CoolSwitch     | A combinação de teclas CTRL+ALT+SHIFT+TAB causará uma quebra de depuração no Winlogon.                                                                                               |
     | Erro          | Erros de impressão.                                                                                                                                                              |
     | Init           | Imprimir mensagens de inicialização e progresso.                                                                                                                                |
     | Notificar         | Imprimir mensagens do pacote de notificação.                                                                                                                                       |
-    | SAS            | Imprimir informações sobre notificações de [*sequência de atenção segura*](/windows/desktop/SecGloss/s-gly) (SAS). |
-    | Estado          | Imprimir mensagens quando o Winlogon mudar de estado.                                                                                                                                |
+    | SAS            | Imprima informações [*sobre notificações*](/windows/desktop/SecGloss/s-gly) de SAS (sequência de atenção segura). |
+    | Estado          | Imprimir mensagens quando o Winlogon altera o estado.                                                                                                                                |
     | Tempo limite        | Imprimir mensagens quando um limite de tempo for definido ou um limite de tempo for atingido.                                                                                                        |
-    | Trace          | Imprimir informações de rastreamento detalhado.                                                                                                                                           |
+    | Trace          | Imprimir informações detalhadas de rastreamento.                                                                                                                                           |
     | Aviso           | Imprimir avisos.                                                                                                                                                            |
 
     
 
      
 
--   Para iniciar a versão verificada do Winlogon em um depurador, adicione a seguinte entrada ao registro:
+-   Para iniciar a versão verificada do Winlogon em um depurador, adicione a seguinte entrada ao Registro:
 
     ```
     HKEY_LOCAL_MACHINE
@@ -72,22 +72,22 @@ Para testar uma dll [*Gina*](/windows/desktop/SecGloss/g-gly) , use o Winlogon.e
     ```
 
 > [!NOTE]
-> Você deve usar o depurador simbólico do Windows (NTSD) para depurar o Winlogon.
+> Você deve usar o Windows NTSD (depurador simbólico) para depurar o Winlogon.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Carregando e executando uma DLL GINA](loading-and-running-a-gina-dll.md)
+[Carregando e executando uma DLL DE LTD](loading-and-running-a-gina-dll.md)
 </dt> <dt>
 
-[Funções de exportação GINA](authentication-functions.md)
+[Funções de exportação DEAM](authentication-functions.md)
 </dt> <dt>
 
-[Estruturas GINA](authentication-structures.md)
+[Estruturas DE FEDERAÇÃO](authentication-structures.md)
 </dt> <dt>
 
-[Funções de GINA de serviços de terminal](terminal-services-gina-functions.md)
+[Funções DEIS dos Serviços de Terminal](terminal-services-gina-functions.md)
 </dt> </dl>
 
  

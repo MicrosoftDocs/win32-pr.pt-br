@@ -1,21 +1,21 @@
 ---
 title: Estruturas de aplicativo cliente
-description: Estruturas com suporte para o desenvolvimento de aplicativos cliente pela API Windows Biometric Framework.
+description: estruturas com suporte para o desenvolvimento de aplicativos cliente pela API Windows Biometric Framework.
 ms.assetid: ac13910c-0c33-4fb8-a9c6-a2d5b1b28c73
 keywords:
-- API de Windows Biometric Framework de API Windows Biometric Framework, estruturas de aplicativo cliente
+- Windows api da estrutura de biométrica Windows Biometric Framework, estruturas de aplicativo cliente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f3e04de50fb340c4acf7e66b4e6154f2176a7adb
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e556bfe7f9f8ac561d9ad22f24b6c2dab16c81acc601dee7456a942cf38deae9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103636878"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119993906"
 ---
 # <a name="client-application-structures"></a>Estruturas de aplicativo cliente
 
-As estruturas a seguir têm suporte para o desenvolvimento de aplicativos cliente pela API Windows Biometric Framework.
+as estruturas a seguir têm suporte para o desenvolvimento de aplicativos cliente pela API Windows Biometric Framework.
 
 ## <a name="in-this-section"></a>Nesta seção
 

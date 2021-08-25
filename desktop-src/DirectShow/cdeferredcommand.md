@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 8d3db3f35b5589a6cd17791d72aa9931124ccfbb
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 3413deb3c606177c937aef72a8437769dc2a97acdcbee97200880c96f36f9fc7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104087866"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119910036"
 ---
 # <a name="cdeferredcommand-class"></a>Classe CDeferredCommand
 
@@ -52,7 +52,7 @@ As contagens de referência controlam o tempo de vida da `CDeferredCommand` clas
 | [**GetParams**](cdeferredcommand-getparams.md)               | Recupera a lista de argumentos **DISPPARAMS** para o método.                                                               |
 | [**GetResult**](cdeferredcommand-getresult.md)               | Recupera a lista de argumentos resultantes, se houver.                                                                   |
 | [**GetTime**](cdeferredcommand-gettime.md)                   | Recupera a hora em que o método será executado.                                                                         |
-| [**Chame**](cdeferredcommand-invoke.md)                     | Fornece acesso a métodos e propriedades expostas por um objeto.                                                         |
+| [**Invoke**](cdeferredcommand-invoke.md)                     | Fornece acesso a métodos e propriedades expostas por um objeto.                                                         |
 | [**Isstreamtime**](cdeferredcommand-isstreamtime.md)         | Especifica se o comando deve ser executado no momento do fluxo ou na hora da apresentação.                                         |
 | Métodos IDeferredCommand                                      | Descrição                                                                                                             |
 | [**Cancelar**](cdeferredcommand-cancel.md)                     | Cancela uma solicitação [**CDeferredCommand:: Invoke**](cdeferredcommand-invoke.md) enfileirada anteriormente.                        |

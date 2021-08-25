@@ -1,7 +1,7 @@
 ---
-description: 'O método CurrentStopTime recupera a hora de parada do segmento, definida pelo método CBasePin:: NewSegment.'
+description: O método CurrentStopTime recupera o tempo de parada do segmento, definido pelo método CBasePin::NewSegment.
 ms.assetid: 2066c4a5-2d39-4a2e-b2d6-48c615862aec
-title: Método CBasePin. CurrentStopTime (Amfilter. h)
+title: Método CBasePin.CurrentStopTime (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 74fb25184bbcd0778268f74a4c40ccfb0722287f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2905913828c91fffde9fb474802c8dea0e0f83d59ccdb5408f846a1936071cf6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105755612"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119916696"
 ---
-# <a name="cbasepincurrentstoptime-method"></a>Método CBasePin. CurrentStopTime
+# <a name="cbasepincurrentstoptime-method"></a>Método CBasePin.CurrentStopTime
 
-O `CurrentStopTime` método recupera a hora de parada do segmento, definida pelo método [**CBasePin:: NewSegment**](cbasepin-newsegment.md) .
+O `CurrentStopTime` método recupera a hora de parada do segmento, definida pelo método [**CBasePin::NewSegment.**](cbasepin-newsegment.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,9 +40,9 @@ REFERENCE_TIME CurrentStopTime();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna o valor de [**CBasePin:: m \_ tStop**](cbasepin-m-tstop.md).
+Retorna o valor de [**CBasePin::m \_ tStop.**](cbasepin-m-tstop.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Retorna o valor de [**CBasePin:: m \_ tStop**](cbasepin-m-tstop.md).
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amfilter.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

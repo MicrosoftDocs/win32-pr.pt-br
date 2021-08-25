@@ -22,12 +22,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 65a0f1c9bf7905504ee3aa2ba6fff7e9804f4747
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 41361959c56810036b8ca2e17d338e2ff1d3433c6e0384fd168a2d21d6e0e0f5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455857"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119868446"
 ---
 # <a name="win32_rdcentralpublishedfileassociation-class"></a>\_Classe Win32 RDCentralPublishedFileAssociation
 
@@ -87,7 +87,7 @@ Tipo de acesso: leitura/gravação
 Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Nome da extensão (por exemplo,. txt).
+Nome da extensão (por exemplo, .txt).
 
 </dd> <dt>
 

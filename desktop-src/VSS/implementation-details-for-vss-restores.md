@@ -4,12 +4,12 @@ ms.assetid: 425754fe-5957-4d6b-a55d-eb271fb370bb
 title: Detalhes de implementação para restaurações do VSS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 31db73ba1c6a298aa3963dbd525ebc89d4da8409
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 982d568d6fe6f7578259709e4cbf298895f1dbec0e003b3a308754c9559ce7bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105781080"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120006286"
 ---
 # <a name="implementation-details-for-vss-restores"></a>Detalhes de implementação para restaurações do VSS
 

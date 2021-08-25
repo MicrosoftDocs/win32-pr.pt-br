@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Capicom.h
-ms.openlocfilehash: 4cedd7c039212b7bae3e681d7e0d594d3e1b8de3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8c008a77e11bd7803dfb09ed2e6ddf1f57ed8695f2de33655239eb73ac49a248
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747645"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119879026"
 ---
 # <a name="capicom_oid-enumeration"></a>Enumeração de OID CAPICOM \_
 
@@ -35,7 +35,7 @@ Essa enumeração é usada pelo [**OID. Propriedade Name**](oid-name.md) .
 | **\_outro OID de CApicom \_**                                       | O objeto não é um dos tipos de objeto CAPICOM predefinidos.<br/>                                                                                                                                                                       | 0     |
 | **\_extensão de \_ identificador de chave de autoridade \_ \_ de CAPICOM \_**       | O objeto é uma extensão de certificado que contém o identificador de chave pública da autoridade de certificação (CA).<br/>                                                                                                                  | 1     |
 | **\_extensão de \_ atributos de chave \_ \_ capicor OID**                  | O objeto é uma extensão de certificado que contém atributos opcionais de uma chave pública.<br/>                                                                                                                                            | 2     |
-| **Extensão de políticas de certificado capicor \_ \_ \_ \_ 95 \_**               | O objeto é uma extensão de certificado que contém informações de política de certificado do Windows 95.<br/>                                                                                                                                      | 3     |
+| **Extensão de políticas de certificado capicor \_ \_ \_ \_ 95 \_**               | o objeto é uma extensão de certificado que contém informações de política de certificado Windows 95.<br/>                                                                                                                                      | 3     |
 | **\_extensão de \_ restrição de uso da chave \_ \_ capicor OID \_**          | O objeto é uma extensão de certificado que contém restrições sobre o uso da chave pública de um certificado.<br/>                                                                                                                          | 4     |
 | **\_extensão de \_ \_ \_ mapeamentos de política HERDAdos do \_ capicor OID**         | O objeto é uma extensão de certificado que contém informações de mapeamento de política herdadas.<br/>                                                                                                                                              | 5     |
 | **\_extensão do \_ nome da entidade de identificação do \_ \_ capicor \_**               | O objeto é uma extensão de certificado que contém um nome alternativo para o assunto do certificado.<br/>                                                                                                                         | 6     |
@@ -72,10 +72,10 @@ Essa enumeração é usada pelo [**OID. Propriedade Name**](oid-name.md) .
 | **\_EKU de \_ \_ criptografia restrita do \_ servidor CAPICOM \_**                  | O objeto é um objeto [**EKU**](eku.md) que especifica que o certificado pode ser usado para a SGC ( [*criptografia de entrada de servidor*](../secgloss/s-gly.md) ).<br/> | 110   |
 | **\_EKU de \_ sistema de \_ arquivos \_ com criptografia OID \_ de CAPICOM**               | O objeto é um objeto [**EKU**](eku.md) que especifica que o certificado pode ser usado para o [*sistema de arquivos com criptografia*](../secgloss/e-gly.md) (EFS).<br/>      | 111   |
 | **EKU de recuperação do capicor do \_ \_ EFS \_ \_**                          | O objeto é um objeto [**EKU**](eku.md) que especifica que o certificado pode ser usado para a recuperação do EFS.<br/>                                                                                                                 | 112   |
-| **\_EKU de \_ \_ criptografia de OID do CAPICOM \_**                           | O objeto é um objeto [**EKU**](eku.md) que especifica que o certificado pode ser usado para a criptografia do Windows Hardware Quality Labs (WHQL).<br/>                                                                                   | 113   |
-| **\_EKU de criptografia de OID \_ os nt5 \_ \_**                            | O objeto é um objeto [**EKU**](eku.md) que especifica que o certificado pode ser usado para criptografia do windows Server 2003 e do Windows XP.<br/>                                                                                     | 114   |
+| **\_EKU de \_ \_ criptografia de OID do CAPICOM \_**                           | o objeto é um objeto [**EKU**](eku.md) que especifica que o certificado pode ser usado para Windows a criptografia do WHQL (Hardware Quality Labs).<br/>                                                                                   | 113   |
+| **\_EKU de criptografia de OID \_ os nt5 \_ \_**                            | o objeto é um objeto [**EKU**](eku.md) que especifica que o certificado pode ser usado para a criptografia Windows Server 2003 e Windows XP.<br/>                                                                                     | 114   |
 | **EKU de criptografia do capicor \_ \_ OEM \_ WHQL \_ \_**                      | O objeto é um objeto [**EKU**](eku.md) que especifica que o certificado pode ser usado para a criptografia WHQL de OEM (fabricantes originais de equipamento).<br/>                                                                            | 115   |
-| **\_EKU de \_ criptografia de \_ NT embutido OID \_ de CAPICOM \_**                    | O objeto é um objeto [**EKU**](eku.md) que especifica que o certificado pode ser usado para a criptografia do Windows NT Embedded.<br/>                                                                                                    | 116   |
+| **\_EKU de \_ criptografia de \_ NT embutido OID \_ de CAPICOM \_**                    | o objeto é um objeto [**EKU**](eku.md) que especifica que o certificado pode ser usado para Windows NT criptografia inserida.<br/>                                                                                                    | 116   |
 | **\_EKU do \_ \_ signatário da lista raiz de OID \_ do CAPICOM \_**                     | O objeto é um objeto [**EKU**](eku.md) que especifica que o certificado pode ser usado para assinar uma lista raiz.<br/>                                                                                                                     | 117   |
 | **\_EKU de \_ subordinação qualificada de OID de \_ CAPICOM \_**               | O objeto é um objeto [**EKU**](eku.md) que especifica que o certificado pode ser usado para subordinação qualificada.<br/>                                                                                                             | 118   |
 | **\_EKU de \_ recuperação de chave de OID de CAPICOM \_ \_**                          | O objeto é um objeto [**EKU**](eku.md) que especifica que o certificado pode ser usado para a recuperação de chave.<br/>                                                                                                                        | 119   |
@@ -94,8 +94,8 @@ Essa enumeração é usada pelo [**OID. Propriedade Name**](oid-name.md) .
 
 | Requisito | Valor |
 |----------------------------|--------------------------------------------------------------------------------------|
-| Redistribuível<br/> | CAPICOM 2,0 ou posterior no Windows Server 2003 e no Windows XP<br/>                |
-| parâmetro<br/>          | <dl> <dt>CAPICOM. h</dt> </dl> |
+| Redistribuível<br/> | capicom 2,0 ou posterior no Windows Server 2003 e Windows XP<br/>                |
+| Cabeçalho<br/>          | <dl> <dt>CAPICOM. h</dt> </dl> |
 
 
 

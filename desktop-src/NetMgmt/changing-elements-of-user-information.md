@@ -1,36 +1,36 @@
 ---
 title: Alterando elementos de informações do usuário
-description: As funções de gerenciamento de rede fornecem uma variedade de níveis de informações para ajudar a alterar as informações do usuário.
+description: As funções de gerenciamento de rede fornecem uma variedade de níveis de informações para auxiliar na alteração das informações do usuário.
 ms.assetid: dc126431-57b0-467b-9f56-1e66a647c7b1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e1aa6ec8d7fed30d38d25adc67974d8bad8ab1f
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: fd3161bb4d689b70f85f6c20c7c302779d0f685e8bcace43cffdee68b2cda2d4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105757762"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119912496"
 ---
 # <a name="changing-elements-of-user-information"></a>Alterando elementos de informações do usuário
 
-As funções de gerenciamento de rede fornecem uma variedade de níveis de informações para ajudar a alterar as informações do usuário. Alguns níveis exigem privilégios administrativos para serem executados com êxito. Para obter mais informações sobre como chamar funções que exigem privilégios de administrador, consulte [executando com privilégios especiais](/windows/desktop/SecBP/running-with-special-privileges).
+As funções de gerenciamento de rede fornecem uma variedade de níveis de informações para auxiliar na alteração das informações do usuário. Alguns níveis exigem privilégios administrativos para execução bem-sucedida. Para obter mais informações sobre como chamar funções que exigem privilégios de administrador, consulte [Executando com privilégios especiais](/windows/desktop/SecBP/running-with-special-privileges).
 
-O código de exemplo neste tópico demonstra como alterar vários elementos de informações do usuário chamando a função [**NetUserSetInfo**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusersetinfo) . O código usa várias estruturas de informações de gerenciamento de rede.
+O código de exemplo neste tópico demonstra como alterar vários elementos de informações do usuário chamando a [**função NetUserSetInfo.**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusersetinfo) O código usa várias estruturas de informações de gerenciamento de rede.
 
 Ao alterar as informações do usuário, é melhor usar o nível específico para essa informação. Isso impede a redefinição acidental de informações não relacionadas ao usar os valores de nível inferior.
 
-Definir alguns dos níveis mais comumente usados é ilustrado nos exemplos de código a seguir:
+Definir alguns dos níveis mais usados é ilustrado nos exemplos de código a seguir:
 
 -   [Definindo a senha do usuário, nível 1003](#setting-the-user-password-level-1003)
--   [Configurando o privilégio de usuário, nível 1005](#setting-the-user-privilege-level-1005)
--   [Configurando o diretório base do usuário, nível 1006](#setting-the-user-home-directory-level-1006)
--   [Configurando o campo comentário do usuário, nível 1007](#setting-the-user-comment-field-level-1007)
--   [Configurando os sinalizadores de usuário, nível 1008](#setting-the-user-flags-level-1008)
--   [Configurando o caminho do script do usuário, nível 1009](#setting-the-user-script-path-level-1009)
--   [Configurando os sinalizadores de autoridade de usuário, nível 1010](#setting-the-user-authority-flags-level-1010)
+-   [Definindo o privilégio de usuário, nível 1005](#setting-the-user-privilege-level-1005)
+-   [Definindo o Diretório Básico do Usuário, Nível 1006](#setting-the-user-home-directory-level-1006)
+-   [Definindo o campo comentário do usuário, nível 1007](#setting-the-user-comment-field-level-1007)
+-   [Definindo os sinalizadores de usuário, nível 1008](#setting-the-user-flags-level-1008)
+-   [Definindo o caminho do script de usuário, nível 1009](#setting-the-user-script-path-level-1009)
+-   [Definindo os sinalizadores de autoridade de usuário, nível 1010](#setting-the-user-authority-flags-level-1010)
 -   [Definindo o nome completo do usuário, nível 1011](#setting-the-user-full-name-level-1011)
 
-Todos os fragmentos de código pressupõem que o usuário definiu a diretiva de compilação UNICODE e incluiu os arquivos de cabeçalho do SDK apropriados, da seguinte maneira:
+Todos os fragmentos de código pressupom que o usuário definiu a diretiva de compilação UNICODE e incluiu os arquivos de header do SDK apropriados, da seguinte maneira:
 
 
 ```C++
@@ -55,7 +55,7 @@ DWORD netRet = 0;
 
 ## <a name="setting-the-user-password-level-1003"></a>Definindo a senha do usuário, nível 1003
 
-O fragmento de código a seguir ilustra como definir a senha de um usuário com um valor conhecido com uma chamada para a função [**NetUserSetInfo**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusersetinfo) . O [**tópico \_ informações \_ do usuário 1003**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1003) contém informações adicionais.
+O fragmento de código a seguir ilustra como definir a senha de um usuário para um valor conhecido com uma chamada para a [**função NetUserSetInfo.**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusersetinfo) O [**tópico INFORMAÇÕES DO USUÁRIO \_ \_ 1003**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1003) contém informações adicionais.
 
 
 ```C++
@@ -79,9 +79,9 @@ else
 
 
 
-## <a name="setting-the-user-privilege-level-1005"></a>Configurando o privilégio de usuário, nível 1005
+## <a name="setting-the-user-privilege-level-1005"></a>Definindo o privilégio de usuário, nível 1005
 
-O fragmento de código a seguir ilustra como especificar o nível de privilégio atribuído a um usuário com uma chamada para a função [**NetUserSetInfo**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusersetinfo) . O [**tópico \_ informações \_ do usuário 1005**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1005) contém informações adicionais. Para obter mais informações sobre privilégios de conta, consulte [constantes](/windows/desktop/SecAuthZ/authorization-constants)de [privilégios](/windows/desktop/SecAuthZ/privileges) e autorização.
+O fragmento de código a seguir ilustra como especificar o nível de privilégio atribuído a um usuário com uma chamada para a [**função NetUserSetInfo.**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusersetinfo) O [**tópico INFORMAÇÕES DO USUÁRIO \_ \_ 1005**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1005) contém informações adicionais. Para obter mais informações sobre privilégios de conta, consulte [Privilégios e](/windows/desktop/SecAuthZ/privileges) [constantes de autorização.](/windows/desktop/SecAuthZ/authorization-constants)
 
 
 ```C++
@@ -103,9 +103,9 @@ else
 
 
 
-## <a name="setting-the-user-home-directory-level-1006"></a>Configurando o diretório base do usuário, nível 1006
+## <a name="setting-the-user-home-directory-level-1006"></a>Definindo o Diretório Básico do Usuário, Nível 1006
 
-O fragmento de código a seguir ilustra como especificar o caminho do diretório base de um usuário com uma chamada para a função [**NetUserSetInfo**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusersetinfo) . O diretório pode ser um caminho embutido em código ou um caminho Unicode válido. O [**tópico \_ informações \_ do usuário 1006**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1006) contém informações adicionais.
+O fragmento de código a seguir ilustra como especificar o caminho do diretório inicial de um usuário com uma chamada para a [**função NetUserSetInfo.**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusersetinfo) O diretório pode ser um caminho codificado ou um caminho Unicode válido. O [**tópico INFORMAÇÕES DO USUÁRIO \_ \_ 1006**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1006) contém informações adicionais.
 
 
 ```C++
@@ -128,9 +128,9 @@ else
 
 
 
-## <a name="setting-the-user-comment-field-level-1007"></a>Configurando o campo comentário do usuário, nível 1007
+## <a name="setting-the-user-comment-field-level-1007"></a>Definindo o campo comentário do usuário, nível 1007
 
-O fragmento de código a seguir ilustra como associar um comentário a um usuário chamando a função [**NetUserSetInfo**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusersetinfo) . O [**tópico \_ informações \_ do usuário 1007**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1007) contém informações adicionais.
+O fragmento de código a seguir ilustra como associar um comentário a um usuário chamando a [**função NetUserSetInfo.**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusersetinfo) O [**tópico INFORMAÇÕES DO USUÁRIO \_ \_ 1007**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1007) contém informações adicionais.
 
 
 ```C++
@@ -153,11 +153,11 @@ else
 
 
 
-## <a name="setting-the-user-flags-level-1008"></a>Configurando os sinalizadores de usuário, nível 1008
+## <a name="setting-the-user-flags-level-1008"></a>Definindo os sinalizadores de usuário, nível 1008
 
-O fragmento de código a seguir ilustra como definir sinalizadores de usuário com uma chamada para a função [**NetUserSetInfo**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusersetinfo) . O [**tópico \_ informações \_ do usuário 1008**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1008) contém uma lista de valores válidos para os sinalizadores e uma descrição de cada sinalizador.
+O fragmento de código a seguir ilustra como definir sinalizadores de usuário com uma chamada para a [**função NetUserSetInfo.**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusersetinfo) O [**tópico USER INFO \_ \_ 1008**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1008) contém uma lista de valores válidos para os sinalizadores e uma descrição de cada sinalizador.
 
-Observe que o \_ sinalizador de script UF deve ser definido para redes Windows NT, windows 2000, Windows XP e LAN Manager. A tentativa de definir outros sinalizadores sem configurar o \_ script UF nessas redes causará falha na função [**NetUserSetInfo**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusersetinfo) .
+Observe que o sinalizador SCRIPT DALV deve ser definido \_ para redes Windows NT, Windows 2000, Windows XP e LAN Manager. A tentativa de definir outros sinalizadores sem configurar o SCRIPT DE UF nessas redes fará com que \_ [**a função NetUserSetInfo**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusersetinfo) falhe.
 
 
 ```C++
@@ -178,9 +178,9 @@ else
 
 
 
-## <a name="setting-the-user-script-path-level-1009"></a>Configurando o caminho do script do usuário, nível 1009
+## <a name="setting-the-user-script-path-level-1009"></a>Definindo o caminho do script de usuário, nível 1009
 
-O fragmento de código a seguir ilustra como definir o caminho para o arquivo de script de logon de um usuário específico com uma chamada para a função [**NetUserSetInfo**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusersetinfo) . O arquivo de script pode ser um. Arquivo CMD, um. Arquivo EXE ou um. Arquivo BAT. A cadeia de caracteres também pode ser nula. O [**tópico \_ informações \_ do usuário 1009**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1009) contém informações adicionais.
+O fragmento de código a seguir ilustra como definir o caminho para o arquivo de script de logon de um usuário específico com uma chamada para a [**função NetUserSetInfo.**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusersetinfo) O arquivo de script pode ser um . Arquivo CMD, um .EXE ou um arquivo .BAT arquivo. A cadeia de caracteres também pode ser nula. O [**tópico INFORMAÇÕES DO USUÁRIO \_ \_ 1009**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1009) contém informações adicionais.
 
 
 ```C++
@@ -201,9 +201,9 @@ else
 
 
 
-## <a name="setting-the-user-authority-flags-level-1010"></a>Configurando os sinalizadores de autoridade de usuário, nível 1010
+## <a name="setting-the-user-authority-flags-level-1010"></a>Definindo os sinalizadores de autoridade de usuário, nível 1010
 
-O fragmento de código a seguir ilustra como definir os sinalizadores de privilégio de operador para um usuário com uma chamada para a função [**NetUserSetInfo**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusersetinfo) . O [**tópico \_ informações \_ do usuário 1010**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1010) contém uma lista de valores válidos para os sinalizadores e uma descrição de cada sinalizador.
+O fragmento de código a seguir ilustra como definir os sinalizadores de privilégio do operador para um usuário com uma chamada para a [**função NetUserSetInfo.**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusersetinfo) O [**tópico USER INFO \_ \_ 1010**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1010) contém uma lista de valores válidos para os sinalizadores e uma descrição de cada sinalizador.
 
 
 ```C++
@@ -226,7 +226,7 @@ else
 
 ## <a name="setting-the-user-full-name-level-1011"></a>Definindo o nome completo do usuário, nível 1011
 
-O fragmento de código a seguir ilustra como definir o nome completo de um usuário com uma chamada para a função [**NetUserSetInfo**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusersetinfo) . O [**tópico \_ informações \_ do usuário 1011**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1011) contém informações adicionais.
+O fragmento de código a seguir ilustra como definir o nome completo de um usuário com uma chamada para a [**função NetUserSetInfo.**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusersetinfo) O [**tópico INFORMAÇÕES DO USUÁRIO \_ \_ 1011**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1011) contém informações adicionais.
 
 
 ```C++
@@ -247,6 +247,6 @@ else
 
 
 
- 
+ 
 
- 
+ 

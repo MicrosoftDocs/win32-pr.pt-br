@@ -1,19 +1,19 @@
 ---
-description: O exemplo a seguir contém uma solicitação de geração de chave mostrada no formato ASN. 1.
+description: O exemplo a seguir contém uma solicitação de geração de chave mostrada no formato ASN.1.
 ms.assetid: d08c33f8-f372-44d3-8c8e-a26440e85c34
-title: ASN codificado de geração de chave. 1
+title: ASN.1 codificado em geração de chave
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f46e09273e32d4e7bd63ba035076ebb30facf18
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 61c423d209edfe4dbfd6b4ed53511dc5ae8b2f1a4cb41f404d6fae4d927f93b6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105755961"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119993586"
 ---
-# <a name="key-generation-encoded-asn1"></a>ASN codificado de geração de chave. 1
+# <a name="key-generation-encoded-asn1"></a>ASN.1 codificado em geração de chave
 
-O exemplo a seguir contém uma solicitação de geração de chave mostrada no formato ASN. 1.
+O exemplo a seguir contém uma solicitação de geração de chave mostrada no formato ASN.1.
 
 ``` syntax
 0000: 30 82 02 4e               ; SEQUENCE (24e Bytes)
@@ -80,7 +80,7 @@ CertUtil: -asn command completed successfully.
 
 <dl> <dt>
 
-[Solicitações de amostra](sample-requests.md)
+[Solicitações de exemplo](sample-requests.md)
 </dt> </dl>
 
  

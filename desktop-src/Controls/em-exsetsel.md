@@ -1,9 +1,9 @@
 ---
-title: Mensagem de EM_EXSETSEL (RichEdit. h)
-description: Seleciona um intervalo de caracteres ou objetos de Component Object Model (COM) em um controle de edição rico da Microsoft.
+title: EM_EXSETSEL mensagem (Richedit.h)
+description: Seleciona um intervalo de caracteres ou objetos COMPONENT OBJECT MODEL (COM) em um controle Microsoft Rich Edit.
 ms.assetid: 85a0d1d4-1826-4ac5-b823-de81a051441d
 keywords:
-- Controles de EM_EXSETSEL de mensagens do Windows
+- EM_EXSETSEL controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6939156fb1a8f35e03527e64a4c6f5185180668d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c9e35840e404f295b7d3ed6ddd5dddf4c77076c236eb3260f6f719b152cef207
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824532"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119915646"
 ---
-# <a name="em_exsetsel-message"></a>\_Mensagem em EXSETSEL
+# <a name="em_exsetsel-message"></a>Mensagem EM \_ EXSETSEL
 
-Seleciona um intervalo de caracteres ou objetos de Component Object Model (COM) em um controle de edição rico da Microsoft.
+Seleciona um intervalo de caracteres ou objetos COMPONENT OBJECT MODEL (COM) em um controle Microsoft Rich Edit.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -32,20 +32,20 @@ Seleciona um intervalo de caracteres ou objetos de Component Object Model (COM) 
 *wParam* 
 </dt> <dd>
 
-Esse parâmetro não é usado; Ele deve ser zero.
+Esse parâmetro não é usado; ele deve ser zero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Uma estrutura [**CHARRANGE**](/windows/desktop/api/Richedit/ns-richedit-charrange) que especifica o intervalo de seleção.
+Uma [**estrutura CHARRANGE**](/windows/desktop/api/Richedit/ns-richedit-charrange) que especifica o intervalo de seleção.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O valor de retorno é a seleção que realmente está definida.
+O valor de retorno é a seleção que está realmente definida.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ O valor de retorno é a seleção que realmente está definida.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 

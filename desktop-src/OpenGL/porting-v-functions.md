@@ -17,12 +17,12 @@ keywords:
 - funções do v
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bfd5e40915f891817606ac8517c0b3b980b436be
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9e84fd5eb036afaf5291902ab00f91f3b155f7507d8fce7135dc8030323c1a05
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292044"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119888066"
 ---
 # <a name="porting-v-functions"></a>Portando funções do v
 
@@ -36,9 +36,9 @@ glVertex4[d|f|i|s][v]( x, y, z, w);
 
 A função **glVertex** tem sufixos da mesma maneira que outras chamadas OpenGL. As versões de vetor da chamada assumem matrizes do tamanho adequado como argumentos. Na versão 2-D, z = 0 e w = 1. Na versão 3-D, w = 1.
 
- 
+ 
 
- 
+ 
 
 
 

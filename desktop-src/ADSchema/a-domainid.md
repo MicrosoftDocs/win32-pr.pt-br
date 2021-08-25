@@ -1,11 +1,11 @@
 ---
-title: Atributo domain-ID
+title: Atributo de ID de domínio
 description: Referência a um domínio associado a uma autoridade de certificação.
 ms.assetid: dd2f0822-cf94-485b-8d21-8954dddb81ad
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo domain-ID
-- Esquema de AD do atributo domainID
+- Esquema do AD do atributo de ID de domínio
+- Esquema do AD do atributo domainID
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e6c321fdea062ccbca907e22a2d72b06c26110ab
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2ae98294df75cdd2fdd69576629b87dbea8410b17d91ba525024a2a0a43ce7c4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104369966"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119925966"
 ---
-# <a name="domain-id-attribute"></a>Atributo domain-ID
+# <a name="domain-id-attribute"></a>Atributo de ID de domínio
 
 Referência a um domínio associado a uma autoridade de certificação.
 
@@ -30,13 +30,13 @@ Referência a um domínio associado a uma autoridade de certificação.
 | Entrada | Valor |
 |-------------------|-----------------------------------------|
 | CN                | ID de domínio                               |
-| LDAP-Display-Name | Domínio                                |
+| Ldap-Display-Name | domainID                                |
 | Tamanho              | \-                                      |
 | Privilégio de atualização  | \-                                      |
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.686                  |
-| System-ID-GUID    | 963d2734-48be-11d1-a9c3-0000f80367c1    |
-| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | 963d2734-48be-11d1-a9c3-0000f80367c1    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -58,15 +58,15 @@ Referência a um domínio associado a uma autoridade de certificação.
 | ID do link                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| É de valor único       | True                                                                   |
+| Tem valor único       | Verdadeiro                                                                   |
 | É indexado             | Falso                                                                  |
-| No catálogo global      | Falso                                                                  |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                           |
+| No Catálogo Global      | Falso                                                                  |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
 | System-Flags           | 0x00000010                                                             |
-| Classes usadas em        | [**Autoridade de certificação**](c-certificationauthority.md)<br/> |
+| Classes usadas em        | [**Autoridade de Certificação**](c-certificationauthority.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Referência a um domínio associado a uma autoridade de certificação.
 | ID do link                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| É de valor único       | True                                                                   |
+| Tem valor único       | Verdadeiro                                                                   |
 | É indexado             | Falso                                                                  |
-| No catálogo global      | Falso                                                                  |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                           |
+| No Catálogo Global      | Falso                                                                  |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
 | System-Flags           | 0x00000010                                                             |
-| Classes usadas em        | [**Autoridade de certificação**](c-certificationauthority.md)<br/> |
+| Classes usadas em        | [**Autoridade de Certificação**](c-certificationauthority.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Referência a um domínio associado a uma autoridade de certificação.
 | ID do link                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| É de valor único       | True                                                                   |
+| Tem valor único       | Verdadeiro                                                                   |
 | É indexado             | Falso                                                                  |
-| No catálogo global      | Falso                                                                  |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                           |
+| No Catálogo Global      | Falso                                                                  |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
 | System-Flags           | 0x00000010                                                             |
-| Classes usadas em        | [**Autoridade de certificação**](c-certificationauthority.md)<br/> |
+| Classes usadas em        | [**Autoridade de Certificação**](c-certificationauthority.md)<br/> |
 
 
 
@@ -121,7 +121,7 @@ Referência a um domínio associado a uma autoridade de certificação.
 | ID do link                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| É de valor único       | True                                                                   |
+| É de valor único       | Verdadeiro                                                                   |
 | É indexado             | Falso                                                                  |
 | No catálogo global      | Falso                                                                  |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                           |
@@ -142,7 +142,7 @@ Referência a um domínio associado a uma autoridade de certificação.
 | ID do link                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| É de valor único       | True                                                                   |
+| É de valor único       | Verdadeiro                                                                   |
 | É indexado             | Falso                                                                  |
 | No catálogo global      | Falso                                                                  |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                           |
@@ -163,7 +163,7 @@ Referência a um domínio associado a uma autoridade de certificação.
 | ID do link                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| É de valor único       | True                                                                   |
+| É de valor único       | Verdadeiro                                                                   |
 | É indexado             | Falso                                                                  |
 | No catálogo global      | Falso                                                                  |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                           |

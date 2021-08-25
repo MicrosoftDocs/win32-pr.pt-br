@@ -1,19 +1,19 @@
 ---
-description: A tabela EventMappings lista os controles que assinam alguns eventos de controle e lista o atributo a ser alterado quando o evento é publicado por outro controle ou pelo Windows Installer.
+description: a tabela eventmappings lista os controles que assinam alguns eventos de controle e lista o atributo a ser alterado quando o evento é publicado por outro controle ou pelo Windows Installer.
 ms.assetid: 63c9ba3e-aa8a-475b-8360-4aec78ed19db
 title: Tabela EventMappings
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d6e9a7b5b4283b5d70102123dcb11e3e9e844221
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5f17380e3e91669926ef50532c36fec71f44d61eb2ed7273d053defe45fa874e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827949"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119963106"
 ---
 # <a name="eventmapping-table"></a>Tabela EventMappings
 
-A tabela EventMappings lista os controles que assinam alguns eventos de controle e lista o atributo a ser alterado quando o evento é publicado por outro controle ou pelo Windows Installer.
+a tabela eventmappings lista os controles que assinam alguns eventos de controle e lista o atributo a ser alterado quando o evento é publicado por outro controle ou pelo Windows Installer.
 
 A tabela EventMappings tem as colunas a seguir.
 
@@ -21,9 +21,9 @@ A tabela EventMappings tem as colunas a seguir.
 
 | Coluna    | Tipo                         | Chave | Nullable |
 |-----------|------------------------------|-----|----------|
-| caixa de diálogo\_  | [Identificador](identifier.md) | S   | N        |
-| controle\_ | [Identificador](identifier.md) | S   | N        |
-| Evento     | [Identificador](identifier.md) | S   | N        |
+| caixa de diálogo\_  | [Identificador](identifier.md) | Y   | N        |
+| controle\_ | [Identificador](identifier.md) | Y   | N        |
+| Evento     | [Identificador](identifier.md) | Y   | N        |
 | Atributo | [Identificador](identifier.md) | N   | N        |
 
 
@@ -70,7 +70,7 @@ Mais de um controle em uma caixa de diálogo pode assinar o mesmo evento.
 
 A lista a seguir identifica os usos típicos para a tabela EventMappings:
 
--   Para assinar um [controle de texto](text-control.md) para um [ActionText ControlEvent,](actiontext-controlevent.md), [ActionData ControlEvent,](actiondata-controlevent.md), [ScriptInProgress ControlEvent,](scriptinprogress-controlevent.md) ou [timecontinueing ControlEvent,](timeremaining-controlevent.md) publicados pelo Windows Installer.
+-   para assinar um [controle de texto](text-control.md) para um [ActionText controlevent,](actiontext-controlevent.md), [ActionData controlevent,](actiondata-controlevent.md), [ScriptInProgress controlevent,](scriptinprogress-controlevent.md) ou [timecontinueing controlevent,](timeremaining-controlevent.md) publicados pelo Windows Installer.
 -   Para assinar um controle [ProgressBar](progressbar-control.md) ou um [controle de mensagem](billboard-control.md) para um ControlEvent, de [reprogress](setprogress-controlevent.md).
 -   Para assinar um [controle DirectoryCombo](directorycombo-control.md) para um [IgnoreChange ControlEvent,](ignorechange-controlevent.md).
 -   Para desabilitar automaticamente um [controle de pressão](pushbutton-control.md) localizado na mesma caixa de diálogo com um [controle SelectionTree](selectiontree-control.md). Para desabilitar o botão de ação quando nenhum recurso estiver listado no [controle SelectionTree](selectiontree-control.md), use a tabela EventMappings para assinar o controle de pressão para um [SelectionNoItems ControlEvent,](selectionnoitems-controlevent.md). Digite **habilitar** no campo atributos da tabela EventMappings.

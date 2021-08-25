@@ -1,9 +1,9 @@
 ---
-title: Propriedade Command.Id
-description: Representa uma ID exclusiva para um comando.
+title: Command.Id propriedade
+description: Representa uma ID exclusiva para um Comando.
 ms.assetid: 937ca9d6-6910-4133-9cfa-d7e3f895f876
 keywords:
-- Faixa de Command.Id da Propriedade do Windows
+- Command.Id propriedade Windows Faixa de Opções
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 13e259e5fd74e3037afde3d4c001000b5a17a9bc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 50c542cbf4103c6063a177990d454a45e5f937745720c7c0a7bc5c60c4c1047e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455787"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119931606"
 ---
-# <a name="commandid-property"></a>Propriedade Command.Id
+# <a name="commandid-property"></a>Command.Id propriedade
 
-Representa uma ID exclusiva para um comando.
+Representa uma ID exclusiva para um Comando.
 
 ## <a name="usage"></a>Uso
 
@@ -51,17 +51,17 @@ Não há elementos filho.
 
 Opcional.
 
-Pode ocorrer no máximo uma vez para cada [**comando**](windowsribbon-element-command.md).
+Pode ocorrer no máximo uma vez para cada [**Comando**](windowsribbon-element-command.md).
 
-A ID é associada a uma definição de comando no arquivo de cabeçalho da faixa de, por exemplo, `#define cmdSave 25003 /* Save */` .
+A ID está associada a uma definição de Comando no arquivo de header da Faixa de Opções, por exemplo, `#define cmdSave 25003 /* Save */` .
 
-Esse elemento contém um valor da União de tipos *xs: positiveInteger* e *xs: String* restrito a um valor inteiro entre 2 e 59999, inclusivo, ou 0x2 e 0xea5f em hexadecimal, inclusive.
+Esse elemento contém um valor da união dos tipos *xs:positiveInteger* e *xs:string* restrito a um valor inteiro entre 2 e 59999, inclusive ou 0x2 e 0xea5f em hexadecimal, inclusivo.
 
 O comprimento máximo é de 10 caracteres, incluindo zeros à esquerda opcionais.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir demonstra a marcação para um elemento [**Command**](windowsribbon-element-command.md) com uma declaração **Command.ID** .
+O exemplo a seguir demonstra a marcação para um [**elemento Command**](windowsribbon-element-command.md) com uma **Command.Id** de dados.
 
 
 ```XML
@@ -91,8 +91,8 @@ O exemplo a seguir demonstra a marcação para um elemento [**Command**](windows
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>              |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/> |
 
 
 

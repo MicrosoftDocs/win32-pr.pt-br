@@ -1,9 +1,9 @@
 ---
-title: Elemento de arquivo (DebugDataType)
+title: Elemento FileLine (DebugDataType)
 description: O nome do arquivo de origem e a linha dentro do arquivo de origem que registrou a mensagem de rastreamento.
 ms.assetid: 398fc254-d48f-49eb-9554-f110a7665628
 keywords:
-- Arquivo EventLog do elemento Filer
+- Elemento FileLine EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 195c964e58e40a7bb4b77e8da142d3224159427b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6cceb2d6c7730aed49f91aab464e692ff3fa03873bcce8b3da1f60f8fdb58add
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644363"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119904786"
 ---
-# <a name="fileline-debugdatatype-element"></a>Elemento de arquivo (DebugDataType)
+# <a name="fileline-debugdatatype-element"></a>Elemento FileLine (DebugDataType)
 
 O nome do arquivo de origem e a linha dentro do arquivo de origem que registrou a mensagem de rastreamento.
 
@@ -30,7 +30,7 @@ O nome do arquivo de origem e a linha dentro do arquivo de origem que registrou 
  />
 ```
 
-O elemento **Filer** é definido pelo tipo complexo [**DebugDataType**](eventschema-debugdatatype-complextype.md) .
+O **elemento FileLine** é definido pelo tipo complexo [**DebugDataType.**](eventschema-debugdatatype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ O elemento **Filer** é definido pelo tipo complexo [**DebugDataType**](eventsch
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
