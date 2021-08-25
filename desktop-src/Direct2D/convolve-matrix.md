@@ -6,12 +6,12 @@ keywords:
 - efeito de matriz convolve
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 27951f5b9145dc46188e6b3112892d1a61856236
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9e3b988e0bd48fece4d767fad29b63fe021c82d49d07dae5ab3f1b10b3f9794f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104557193"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119833366"
 ---
 # <a name="convolve-matrix-effect"></a>Efeito de matriz Convolve
 
@@ -36,7 +36,7 @@ O exemplo aqui mostra a entrada e a saída do efeito de matriz convolve com um k
 | Antes                                                         |
 |----------------------------------------------------------------|
 | ![a imagem antes do efeito.](images/default-before.jpg)     |
-| After (após)                                                          |
+| Depois                                                          |
 | ![a imagem após a transformação.](images/6-convolvematrix.png) |
 
 
@@ -126,9 +126,9 @@ O tamanho da saída do efeito depende do tamanho do kernel de convolução, do d
 
 | Requisito | Valor |
 |--------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho do Windows 7 \[ \| aplicativos da Windows Store\] |
-| Servidor mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho do Windows 7 \[ \| aplicativos da Windows Store\] |
-| parâmetro                   | d2d1effects. h                                                                      |
+| Cliente mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho Windows 7 \[ \| Windows aplicativos da loja\] |
+| Servidor mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho Windows 7 \[ \| Windows aplicativos da loja\] |
+| Cabeçalho                   | d2d1effects. h                                                                      |
 | Biblioteca                  | d2d1. lib, dxguid. lib                                                               |
 
 

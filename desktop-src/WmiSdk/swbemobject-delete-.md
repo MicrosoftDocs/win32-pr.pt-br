@@ -16,12 +16,12 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 0d994c8a9b9e0af9d4bd884c89cd67280513c9f1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: db8df81e56db9967db46b88c0587af9b82a6281e7e732b8647059e8bf4f5457a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011345"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119857376"
 ---
 # <a name="swbemobjectdelete_-method"></a>Método SWbemObject. Delete \_
 
@@ -57,7 +57,7 @@ Esse parâmetro normalmente é indefinido. Caso contrário, esse é um objeto [*
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
@@ -111,7 +111,7 @@ Não há memória suficiente para concluir a operação.
 
 ## <a name="remarks"></a>Comentários
 
-O **método \_ delete** falhará se uma nova instância de [**SWbemObject**](swbemobject.md) for criada, mas nenhum valor será fornecido para a propriedade de chave. O Instrumentação de Gerenciamento do Windows (WMI) gera automaticamente um valor de GUID (identificador global exclusivo), mas um valor de GUID não é aceito por **SWbemObject \_ . Delete**. Nesse caso, [**SWbemServices. Delete**](swbemservices-delete.md), que usa o caminho do objeto funciona. Observe que um objeto [**SWbemObjectPath**](swbemobjectpath.md) é retornado pelo método [**SWbemObject. put \_**](swbemobject-put-.md) depois que um objeto é confirmado no WMI.
+O **método \_ delete** falhará se uma nova instância de [**SWbemObject**](swbemobject.md) for criada, mas nenhum valor será fornecido para a propriedade de chave. Windows A instrumentação de gerenciamento (WMI) gera um valor de identificador global exclusivo (GUID) automaticamente, mas um valor de GUID não é aceito por **SWbemObject. Delete \_**. Nesse caso, [**SWbemServices. Delete**](swbemservices-delete.md), que usa o caminho do objeto funciona. Observe que um objeto [**SWbemObjectPath**](swbemobjectpath.md) é retornado pelo método [**SWbemObject. put \_**](swbemobject-put-.md) depois que um objeto é confirmado no WMI.
 
 ## <a name="examples"></a>Exemplos
 
@@ -167,7 +167,7 @@ Set objSWbemService = Nothing
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemObject<br/>                                                           |

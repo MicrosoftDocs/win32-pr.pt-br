@@ -1,11 +1,11 @@
 ---
-title: Atributo flags
-description: A ser usado pelo objeto para armazenar informações de bit.
+title: Atributo Flags
+description: A ser usado pelo objeto para armazenar informações de bits.
 ms.assetid: 97ad0f76-2479-4a20-82db-0686851a5b75
 ms.tgt_platform: multiple
 keywords:
-- Atributo de AD Schema de sinalizadores
-- atributo de AD Schema de sinalizadores
+- Atributo Flags Esquema do AD
+- atributo flags Esquema do AD
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b3078a973c799fd901b2e0fadb397b5974bc36a
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: db9b6d4bdcfb9f1eec4455e55a7fda8e17332256789e9ccc75d223c891ac4ef6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105750376"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119804616"
 ---
-# <a name="flags-attribute"></a>Atributo flags
+# <a name="flags-attribute"></a>Atributo Flags
 
-A ser usado pelo objeto para armazenar informações de bit.
+A ser usado pelo objeto para armazenar informações de bits.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | Flags                                |
-| LDAP-Display-Name | sinalizadores                                |
+| Ldap-Display-Name | sinalizadores                                |
 | Tamanho              | 4 bytes                              |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.38                |
-| System-ID-GUID    | bf967976-0de6-11d0-a285-00aa003049e2 |
+| System-Id-Guid    | bf967976-0de6-11d0-a285-00aa003049e2 |
 | Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ A ser usado pelo objeto para armazenar informações de bit.
 | ID do link                | \-                                                                                                                                                                          |
 | MAPI-Id                | \-                                                                                                                                                                          |
 | System-Only            | Falso                                                                                                                                                                       |
-| É de valor único       | True                                                                                                                                                                        |
+| Tem valor único       | Verdadeiro                                                                                                                                                                        |
 | É indexado             | Falso                                                                                                                                                                       |
-| No catálogo global      | True                                                                                                                                                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                |
+| No Catálogo Global      | Verdadeiro                                                                                                                                                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                |
 | Range-Lower            | \-                                                                                                                                                                          |
 | Range-Upper            | \-                                                                                                                                                                          |
 | Search-Flags           | 0x00000000                                                                                                                                                                  |
 | System-Flags           | 0x00000010                                                                                                                                                                  |
-| Classes usadas em        | [**Grupo-política-contêiner**](c-grouppolicycontainer.md)<br/> [**PKI-certificado-modelo**](c-pkicertificatetemplate.md)<br/> [**Início**](c-top.md)<br/> |
+| Classes usadas em        | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> [**Início**](c-top.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ A ser usado pelo objeto para armazenar informações de bit.
 | ID do link                | \-                                                                                                                                                                          |
 | MAPI-Id                | \-                                                                                                                                                                          |
 | System-Only            | Falso                                                                                                                                                                       |
-| É de valor único       | True                                                                                                                                                                        |
+| Tem valor único       | Verdadeiro                                                                                                                                                                        |
 | É indexado             | Falso                                                                                                                                                                       |
-| No catálogo global      | True                                                                                                                                                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                |
+| No Catálogo Global      | Verdadeiro                                                                                                                                                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                |
 | Range-Lower            | \-                                                                                                                                                                          |
 | Range-Upper            | \-                                                                                                                                                                          |
 | Search-Flags           | 0x00000000                                                                                                                                                                  |
 | System-Flags           | 0x00000010                                                                                                                                                                  |
-| Classes usadas em        | [**Grupo-política-contêiner**](c-grouppolicycontainer.md)<br/> [**PKI-certificado-modelo**](c-pkicertificatetemplate.md)<br/> [**Início**](c-top.md)<br/> |
+| Classes usadas em        | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> [**Início**](c-top.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ A ser usado pelo objeto para armazenar informações de bit.
 | ID do link                | \-                                                                                                                                                                          |
 | MAPI-Id                | \-                                                                                                                                                                          |
 | System-Only            | Falso                                                                                                                                                                       |
-| É de valor único       | True                                                                                                                                                                        |
+| Tem valor único       | Verdadeiro                                                                                                                                                                        |
 | É indexado             | Falso                                                                                                                                                                       |
-| No catálogo global      | True                                                                                                                                                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                |
+| No Catálogo Global      | Verdadeiro                                                                                                                                                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                |
 | Range-Lower            | \-                                                                                                                                                                          |
 | Range-Upper            | \-                                                                                                                                                                          |
 | Search-Flags           | 0x00000000                                                                                                                                                                  |
 | System-Flags           | 0x00000010                                                                                                                                                                  |
-| Classes usadas em        | [**Grupo-política-contêiner**](c-grouppolicycontainer.md)<br/> [**PKI-certificado-modelo**](c-pkicertificatetemplate.md)<br/> [**Início**](c-top.md)<br/> |
+| Classes usadas em        | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> [**Início**](c-top.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ A ser usado pelo objeto para armazenar informações de bit.
 | ID do link                | \-                                                                                                                                                                          |
 | MAPI-Id                | \-                                                                                                                                                                          |
 | System-Only            | Falso                                                                                                                                                                       |
-| É de valor único       | True                                                                                                                                                                        |
+| Tem valor único       | Verdadeiro                                                                                                                                                                        |
 | É indexado             | Falso                                                                                                                                                                       |
-| No catálogo global      | True                                                                                                                                                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                |
+| No Catálogo Global      | Verdadeiro                                                                                                                                                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                |
 | Range-Lower            | \-                                                                                                                                                                          |
 | Range-Upper            | \-                                                                                                                                                                          |
 | Search-Flags           | 0x00000000                                                                                                                                                                  |
 | System-Flags           | 0x00000010                                                                                                                                                                  |
-| Classes usadas em        | [**Grupo-política-contêiner**](c-grouppolicycontainer.md)<br/> [**PKI-certificado-modelo**](c-pkicertificatetemplate.md)<br/> [**Início**](c-top.md)<br/> |
+| Classes usadas em        | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> [**Início**](c-top.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ A ser usado pelo objeto para armazenar informações de bit.
 | ID do link                | \-                                                                                                                                                                          |
 | MAPI-Id                | \-                                                                                                                                                                          |
 | System-Only            | Falso                                                                                                                                                                       |
-| É de valor único       | True                                                                                                                                                                        |
+| Tem valor único       | Verdadeiro                                                                                                                                                                        |
 | É indexado             | Falso                                                                                                                                                                       |
-| No catálogo global      | True                                                                                                                                                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                |
+| No Catálogo Global      | Verdadeiro                                                                                                                                                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                |
 | Range-Lower            | \-                                                                                                                                                                          |
 | Range-Upper            | \-                                                                                                                                                                          |
 | Search-Flags           | 0x00000000                                                                                                                                                                  |
 | System-Flags           | 0x00000010                                                                                                                                                                  |
-| Classes usadas em        | [**Grupo-política-contêiner**](c-grouppolicycontainer.md)<br/> [**PKI-certificado-modelo**](c-pkicertificatetemplate.md)<br/> [**Início**](c-top.md)<br/> |
+| Classes usadas em        | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> [**Início**](c-top.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ A ser usado pelo objeto para armazenar informações de bit.
 | ID do link                | \-                                                                                                                                                                          |
 | MAPI-Id                | \-                                                                                                                                                                          |
 | System-Only            | Falso                                                                                                                                                                       |
-| É de valor único       | True                                                                                                                                                                        |
+| Tem valor único       | Verdadeiro                                                                                                                                                                        |
 | É indexado             | Falso                                                                                                                                                                       |
-| No catálogo global      | True                                                                                                                                                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                |
+| No Catálogo Global      | Verdadeiro                                                                                                                                                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                |
 | Range-Lower            | \-                                                                                                                                                                          |
 | Range-Upper            | \-                                                                                                                                                                          |
 | Search-Flags           | 0x00000000                                                                                                                                                                  |
 | System-Flags           | 0x00000010                                                                                                                                                                  |
-| Classes usadas em        | [**Grupo-política-contêiner**](c-grouppolicycontainer.md)<br/> [**PKI-certificado-modelo**](c-pkicertificatetemplate.md)<br/> [**Início**](c-top.md)<br/> |
+| Classes usadas em        | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> [**Início**](c-top.md)<br/> |
 
 
 

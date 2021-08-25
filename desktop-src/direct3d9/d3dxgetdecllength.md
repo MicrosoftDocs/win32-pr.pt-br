@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 5576b4b86d5238d4942e09d605f695c66136799a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: cc6a44c73d9b7127bb382cfbf18587a84d8cc179feabf48da6e29b908204b1a9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105766420"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119857033"
 ---
 # <a name="d3dxgetdecllength-function"></a>Função D3DXGetDeclLength
 
@@ -49,7 +49,7 @@ Um ponteiro para a declaração de vértice. Consulte [**D3DVERTEXELEMENT9**](d3
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **uint**](../winprog/windows-data-types.md)**
 

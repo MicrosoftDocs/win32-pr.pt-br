@@ -1,27 +1,27 @@
 ---
-description: 'Saiba mais sobre: membros do JET_THREADSTATS'
-title: Membros de JET_THREADSTATS (Microsoft. ISAM. ESENT. Interop. vista)
+description: 'Saiba mais sobre: JET_THREADSTATS membros'
+title: JET_THREADSTATS (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: JET_THREADSTATS members
 ms:assetid: AllMembers.T:Microsoft.Isam.Esent.Interop.Vista.JET_THREADSTATS
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.jet_threadstats_members(v=EXCHG.10)
 ms:contentKeyID: 39514028
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: f8b824f716d35c3039bb77af745cf6cf08dfc9cc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 13713d00431337f5e2190e2f547729e96a7cfb634fe1a95dddba570a9236f1f9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922397"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119890276"
 ---
-# <a name="jet_threadstats-members"></a>Membros do JET_THREADSTATS
+# <a name="jet_threadstats-members"></a>JET_THREADSTATS membros
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-Contém estatísticas cumulativas no trabalho executado pelo mecanismo de banco de dados no thread atual. Essas informações são retornadas por meio de JetGetThreadStats.
+Contém estatísticas cumulativas sobre o trabalho executado pelo mecanismo de banco de dados no thread atual. Essas informações são retornadas por meio de JetGetThreadStats.
 
-O tipo de [JET_THREADSTATS](./jet-threadstats-structure2.md) expõe os membros a seguir.
+O [JET_THREADSTATS](./jet-threadstats-structure2.md) tipo expõe os membros a seguir.
 
 ## <a name="properties"></a>Propriedades
 
@@ -47,12 +47,12 @@ O tipo de [JET_THREADSTATS](./jet-threadstats-structure2.md) expõe os membros a
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="hh578651(v=exchg.10).md">cPageDirtied</a></td>
-<td>Obtém o número total de páginas de banco de dados, sem alterações não gravadas, que foram modificadas pelo mecanismo de banco de dados no thread atual.</td>
+<td>Obtém o número total de páginas de banco de dados, sem alterações não escritas, que foram modificadas pelo mecanismo de banco de dados no thread atual.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="hh557376(v=exchg.10).md">cPagePreread</a></td>
-<td>Obtém o número total de páginas de banco de dados pré-busca do disco pelo mecanismo de banco de dados no thread atual.</td>
+<td>Obtém o número total de páginas de banco de dados pré-buscadas do disco pelo mecanismo de banco de dados no thread atual.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
@@ -62,7 +62,7 @@ O tipo de [JET_THREADSTATS](./jet-threadstats-structure2.md) expõe os membros a
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="hh596234(v=exchg.10).md">cPageRedirtied</a></td>
-<td>Obtém o número total de páginas de banco de dados, com alterações não gravadas, que foram modificadas pelo mecanismo de banco de dados no thread atual.</td>
+<td>Obtém o número total de páginas de banco de dados, com alterações não escritas, que foram modificadas pelo mecanismo de banco de dados no thread atual.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
@@ -89,21 +89,21 @@ Parte superior
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
 <td><a href="hh565584(v=exchg.10).md">Adicionar</a></td>
-<td>Adicione as estatísticas em duas estruturas de JET_THREADSTATS.</td>
+<td>Adicione as estatísticas em duas estruturas JET_THREADSTATS dados.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
 <td><a href="hh538903(v=exchg.10).md">Criar</a></td>
-<td>Crie um novo struct <a href="hh578565(v=exchg.10).md">JET_THREADSTATS</a> com o valor especificado.</td>
+<td>Crie um <a href="hh578565(v=exchg.10).md">novo JET_THREADSTATS</a> struct com o valor especificado.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="hh557146(v=exchg.10).md">Equals (Object)</a></td>
-<td>Retorna um valor que indica se essa instância é igual a outra instância. (Substitui <a href="/dotnet/api/system.valuetype.equals#System_ValueType_Equals_System_Object_">ValueType. Equals (Object)</a>.)</td>
+<td><a href="hh557146(v=exchg.10).md">Equals(Object)</a></td>
+<td>Retorna um valor que indica se essa instância é igual a outra instância. (Substitui <a href="/dotnet/api/system.valuetype.equals#System_ValueType_Equals_System_Object_">ValueType.Equals(Object)</a>.)</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="hh596601(v=exchg.10).md">Equals (JET_THREADSTATS)</a></td>
+<td><a href="hh596601(v=exchg.10).md">Equals(JET_THREADSTATS)</a></td>
 <td>Retorna um valor que indica se essa instância é igual a outra instância.</td>
 </tr>
 <tr class="odd">
@@ -114,27 +114,27 @@ Parte superior
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="hh579156(v=exchg.10).md">GetHashCode</a></td>
-<td>Retorna o código hash para a instância. (Substitui <a href="/dotnet/api/system.valuetype.gethashcode#System_ValueType_GetHashCode">ValueType. GetHashCode ()</a>.)</td>
+<td>Retorna o código hash para a instância. (Substitui <a href="/dotnet/api/system.valuetype.gethashcode#System_ValueType_GetHashCode">ValueType.GetHashCode()</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">Gettype</a></td>
 <td>(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></td>
+<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Memberwiseclone</a></td>
 <td>(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
-<td><a href="hh579433(v=exchg.10).md">Subtrair</a></td>
-<td>Calcule a diferença em estatísticas entre duas estruturas de JET_THREADSTATS.</td>
+<td><a href="hh579433(v=exchg.10).md">Subtract</a></td>
+<td>Calcule a diferença nas estatísticas entre duas estruturas JET_THREADSTATS dados.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="hh558249(v=exchg.10).md">ToString</a></td>
-<td>Obtém uma representação de cadeia de caracteres deste objeto. (Substitui <a href="/dotnet/api/system.valuetype.tostring#System_ValueType_ToString">ValueType. ToString ()</a>.)</td>
+<td>Obtém uma representação de cadeia de caracteres desse objeto. (Substitui <a href="/dotnet/api/system.valuetype.tostring#System_ValueType_ToString">ValueType.ToString()</a>.)</td>
 </tr>
 </tbody>
 </table>
@@ -155,8 +155,8 @@ Parte superior
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn350944.puboperator(exchg.10).gif" title="Operador público" alt="Public operator" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
-<td><a href="hh163281(v=exchg.10).md">Além</a></td>
-<td>Adicione as estatísticas em duas estruturas de JET_THREADSTATS.</td>
+<td><a href="hh163281(v=exchg.10).md">Adição</a></td>
+<td>Adicione as estatísticas em duas estruturas JET_THREADSTATS dados.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn350944.puboperator(exchg.10).gif" title="Operador público" alt="Public operator" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
@@ -166,12 +166,12 @@ Parte superior
 <tr class="odd">
 <td><img src="../images/dn350944.puboperator(exchg.10).gif" title="Operador público" alt="Public operator" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
 <td><a href="hh577527(v=exchg.10).md">Desigualdade</a></td>
-<td>Determina se duas instâncias especificadas do JET_THREADSTATS não são iguais.</td>
+<td>Determina se duas instâncias especificadas do JET_THREADSTATS são iguais.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn350944.puboperator(exchg.10).gif" title="Operador público" alt="Public operator" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
 <td><a href="hh557686(v=exchg.10).md">Subtração</a></td>
-<td>Calcule a diferença em estatísticas entre duas estruturas de JET_THREADSTATS.</td>
+<td>Calcule a diferença nas estatísticas entre duas estruturas JET_THREADSTATS dados.</td>
 </tr>
 </tbody>
 </table>
@@ -183,6 +183,6 @@ Parte superior
 
 #### <a name="reference"></a>Referência
 
-[Estrutura de JET_THREADSTATS](./jet-threadstats-structure2.md)
+[JET_THREADSTATS estrutura](./jet-threadstats-structure2.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

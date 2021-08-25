@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Root\CIMV2\Security\MicrosoftVolumeEncryption
-ms.openlocfilehash: bb70f76d9556df5bed70639471eb7a0f3afaaecc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d0cbcedfe13b46698bd1067a2200369575a2fb9d7ceaa50f52174afc0e83e712
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090173"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119797126"
 ---
 # <a name="getidentificationfield-method-of-the-win32_encryptablevolume-class"></a>Método getidentificafield da classe Win32 \_ EncryptableVolume
 
@@ -48,7 +48,7 @@ Uma cadeia de caracteres que especifica o campo de identificação que é atribu
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **UInt32**
 
@@ -72,8 +72,8 @@ Esse método retornará um dos códigos a seguir ou outro código de erro se ele
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows 7 Enterprise, Windows 7 Ultimate \[\]<br/>                               |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                                                 |
+| Cliente mínimo com suporte<br/> | Windows 7 Enterprise, \[ somente os aplicativos de área de trabalho do Windows 7 Ultimate\]<br/>                               |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/>                                                 |
 | Namespace<br/>                | \\MicrosoftVolumeEncryption de \\ segurança \\ cimv2 raiz<br/>                                             |
 | MOF<br/>                      | <dl> <dt>Win32 \_ encryptablevolume. mof</dt> </dl> |
 

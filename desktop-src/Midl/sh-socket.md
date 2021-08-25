@@ -1,8 +1,8 @@
 ---
 title: palavra-chave sh_socket
-description: A \_ palavra-chave \ sh Socket \ especifica que o objeto do sistema é um identificador para um soquete.
+description: A palavra-chave \ sh \_ socket\ especifica que o objeto do sistema é um identificador para um soquete.
 keywords:
-- MIDL de palavra-chave sh_socket
+- sh_socket palavra-chave MIDL
 topic_type:
 - apiref
 api_name:
@@ -11,16 +11,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 02/05/2021
-ms.openlocfilehash: 5f5d2506f66f89cd47ecf3f011c8071b79e64177
-ms.sourcegitcommit: af9983bab40fe0b042f177ce7ca79f2eb0f9d0e8
+ms.openlocfilehash: 542610d586af084f4238e70cd0e6c848099e4d2153d0feab8d617475a50476e9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "105785997"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119822096"
 ---
-# <a name="sh_socket-keyword"></a>\_palavra-chave sh Socket
+# <a name="sh_socket-keyword"></a>\_Palavra-chave sh socket
 
-A palavra-chave **sh \_ Socket** especifica que um `system_handle` contém um identificador para um soquete.
+A **\_ palavra-chave sh socket** especifica que um `system_handle` contém um alça para um soquete.
 
 ``` syntax
 [system_handle(sh_socket)]
@@ -30,13 +30,13 @@ A palavra-chave **sh \_ Socket** especifica que um `system_handle` contém um id
 
 ## <a name="parameters"></a>Parâmetros
 
-Essa palavra-chave é um parâmetro para [**system_handle**](system-handle.md).
+Essa palavra-chave é um parâmetro [**para system_handle**](system-handle.md).
 
-A documentação [**system_handle**](system-handle.md) também contém detalhes sobre o uso opcional do parâmetro *Access-Rights* . O comportamento padrão é de acordo com as `DUPLICATE_SAME_ACCESS` especificações de [função **DuplicateHandle**](/windows/win32/api/handleapi/nf-handleapi-duplicatehandle) .
+A [**system_handle**](system-handle.md) também contém detalhes sobre o uso opcional do *parâmetro access-rights.* O comportamento padrão é `DUPLICATE_SAME_ACCESS` de acordo com as [especificações de função **DuplicateHandle.**](/windows/win32/api/handleapi/nf-handleapi-duplicatehandle)
 
 ## <a name="remarks"></a>Comentários
 
-Para usar essa palavra-chave com o `system_handle` atributo, o `-target` sinalizador deve ser definido como `NT100` (ou superior) durante a execução de midl.exe.
+Para usar essa palavra-chave com o `system_handle` atributo , o sinalizador deve ser definido como `-target` `NT100` (ou superior) ao executar midl.exe.
 
 ## <a name="examples"></a>Exemplos
 
@@ -51,8 +51,8 @@ interface MyInterface : IUnknown
 
 | &nbsp; | &nbsp; |
 |-|-|
-| Cliente mínimo com suporte | Atualização de aniversário do Windows 10 (versão 1607, Build 14393) |
-| Servidor mínimo com suporte | Windows Server 2016 (Build 14393) |
+| Cliente mínimo com suporte | Windows 10 Atualização de aniversário (versão 1607, build 14393) |
+| Servidor mínimo com suporte | Windows Server 2016 (build 14393) |
 
 ## <a name="see-also"></a>Confira também
 
@@ -61,5 +61,5 @@ interface MyInterface : IUnknown
 [**system_handle**](system-handle.md)
 </dt> <dt>
 
-[Windows Sockets 2](../winsock/windows-sockets-start-page-2.md)
+[Windows Soquetes 2](../winsock/windows-sockets-start-page-2.md)
 </dt> </dl>

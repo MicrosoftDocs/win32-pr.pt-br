@@ -1,19 +1,19 @@
 ---
-title: Estruturas do Gerenciador de conexões do Windows
-description: As estruturas do Gerenciador de conexões do Windows (WCM) são as seguintes.
+title: Windows Estruturas do Gerenciador de conexões
+description: as estruturas WCM (gerenciador de conexões Windows) são as seguintes.
 ms.assetid: E554D678-721A-4311-8B64-315D2403E69A
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aac6307364ed84af19dfddc186c489ecceb1889b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7a218706e812ec718db5261d26c68d4e0d2e92185561d13a90ac3716aba8035a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104498742"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119814626"
 ---
-# <a name="windows-connection-manager-structures"></a>Estruturas do Gerenciador de conexões do Windows
+# <a name="windows-connection-manager-structures"></a>Windows Estruturas do Gerenciador de conexões
 
-As estruturas do Gerenciador de conexões do Windows (WCM) são as seguintes.
+as estruturas WCM (gerenciador de conexões Windows) são as seguintes.
 
 -   [**\_informações do \_ ciclo de cobrança do WCM \_**](/windows/desktop/api/Wcmapi/ns-wcmapi-wcm_billing_cycle_info)
 -   [**\_dados de \_ custo de conexão WCM \_**](/windows/desktop/api/Wcmapi/ns-wcmapi-wcm_connection_cost_data)
@@ -24,9 +24,9 @@ As estruturas do Gerenciador de conexões do Windows (WCM) são as seguintes.
 -   [**\_intervalo de tempo de WCM \_**](/windows/desktop/api/Wcmapi/ns-wcmapi-wcm_time_interval)
 -   [**\_dados de uso de WCM \_**](/windows/desktop/api/Wcmapi/ns-wcmapi-wcm_usage_data)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Estrutura de CD3DX12_HEAP_DESC (D3dx12. h)
-description: Uma estrutura auxiliar para habilitar a inicialização fácil de uma \_ estrutura desc de heap D3D12 \_ .
+title: CD3DX12_HEAP_DESC (D3dx12.h)
+description: Uma estrutura auxiliar para habilitar a inicialização fácil de uma estrutura D3D12 \_ HEAP \_ DESC.
 ms.assetid: 38E0BA60-2BB0-4AC1-870A-10AB16E4C6E6
 keywords:
-- Estrutura de CD3DX12_HEAP_DESC
+- CD3DX12_HEAP_DESC estrutura
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ae5b2537d2571355f26c46f03aed3489fb2b6069
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 347e44a8516b48dcd779d3ac19fbc9b5bbf5d37ad565f36a0b9b10a083d395c3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105762334"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119858366"
 ---
-# <a name="cd3dx12_heap_desc-structure"></a>\_Estrutura desc de heap CD3DX12 \_
+# <a name="cd3dx12_heap_desc-structure"></a>Estrutura CD3DX12 \_ HEAP \_ DESC
 
-Uma estrutura auxiliar para habilitar a inicialização fácil de uma estrutura [**\_ \_ desc de heap D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_heap_desc) .
+Uma estrutura auxiliar para habilitar a inicialização fácil de uma [**estrutura D3D12 \_ HEAP \_ DESC.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_heap_desc)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -49,112 +49,112 @@ struct CD3DX12_HEAP_DESC  : public D3D12_HEAP_DESC{
 
 <dl> <dt>
 
-**CD3DX12 \_ \_ de heap DESC ()**
+**CD3DX12 \_ HEAP \_ DESC()**
 </dt> <dd>
 
-Cria uma nova instância, não inicializada, de um CD3DX12 de \_ heap \_ desc.
+Cria uma nova instância, não reinicializada, de um CD3DX12 \_ HEAP \_ DESC.
 
 </dd> <dt>
 
-**heap CD3DX12 \_ explícito \_ DESC (const D3D12 \_ heap \_ desc &o)**
+**EXPLICIT CD3DX12 \_ HEAP \_ DESC(const D3D12 \_ HEAP \_ DESC &o)**
 </dt> <dd>
 
-Cria uma nova instância de um \_ heap CD3DX12 \_ DESC, inicializada com o conteúdo de outra estrutura [**\_ \_ desc de heap D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_heap_desc) .
+Cria uma nova instância de uma DESC de HEAP CD3DX12, inicializada com o conteúdo de outra \_ \_ estrutura [**D3D12 \_ HEAP \_ DESC.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_heap_desc)
 
 </dd> <dt>
 
-**CD3DX12 \_ heap \_ DESC (tamanho UInt64, propriedades de heap de D3D12 \_ \_ , alinhamento de UINT64 = 0, D3D12 sinalizadores de \_ heap sinalizadores \_ = D3D12 \_ heap \_ Flag \_ nenhum)**
+**CD3DX12 \_ HEAP \_ DESC (tamanho UINT64, propriedades DE PROPRIEDADES DE HEAP D3D12, alinhamento \_ \_ UINT64 = 0, sinalizadores DE SINALIZADORES DE HEAP D3D12 \_ = \_ D3D12 \_ HEAP FLAG \_ \_ NONE)**
 </dt> <dd>
 
-Cria uma nova instância de um \_ heap CD3DX12 \_ DESC, inicializando os seguintes parâmetros:
+Cria uma nova instância de uma DESC de HEAP CD3DX12, \_ \_ inicializando os seguintes parâmetros:
 
-Tamanho de UINT64
+Tamanho UINT64
 
-[**D3D12 \_ Propriedades de \_ Propriedades do heap**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_heap_properties)
+[**D3D12 \_ Propriedades \_ DE PROPRIEDADES DO HEAP**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_heap_properties)
 
-opt Alinhamento de UINT64 = 0
+(opt) Alinhamento UINT64 = 0
 
-opt [**D3D12 \_ Sinalizadores de \_ sinalizadores de heap**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_heap_flags) = sinalizador de heap D3D12 \_ \_ \_ nenhum
+(opt) [**D3D12 \_ Sinalizadores \_ HEAP FLAGS**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_heap_flags) = D3D12 \_ HEAP FLAG \_ \_ NONE
 
 </dd> <dt>
 
-**CD3DX12 \_ heap \_ DESC (tamanho UInt64, \_ \_ tipo de heap D3D12, alinhamento de UInt64 = 0, sinalizadores de \_ sinalizadores de heap D3D12 \_ = sinalizador de heap de D3D12 \_ \_ \_ nenhum)**
+**CD3DX12 \_ HEAP \_ DESC (tamanho UINT64, tipo DE TIPO DE HEAP D3D12, alinhamento \_ \_ UINT64 = 0, sinalizadores DE SINALIZADORES DE HEAP D3D12 \_ = \_ D3D12 \_ HEAP FLAG \_ \_ NONE)**
 </dt> <dd>
 
-Cria uma nova instância de um \_ heap CD3DX12 \_ DESC, inicializando os seguintes parâmetros:
+Cria uma nova instância de uma DESC de HEAP CD3DX12, \_ \_ inicializando os seguintes parâmetros:
 
-Tamanho de UINT64
+Tamanho UINT64
 
-[**D3D12 \_ Tipo de \_ tipo de heap**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_heap_type)
+[**D3D12 \_ Tipo DE \_ TIPO HEAP**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_heap_type)
 
-opt Alinhamento de UINT64 = 0
+(opt) Alinhamento UINT64 = 0
 
-opt [**D3D12 \_ Sinalizadores de \_ sinalizadores de heap**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_heap_flags) = sinalizador de heap D3D12 \_ \_ \_ nenhum
+(opt) [**D3D12 \_ Sinalizadores \_ HEAP FLAGS**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_heap_flags) = D3D12 \_ HEAP FLAG \_ \_ NONE
 
 </dd> <dt>
 
-**CD3DX12 \_ heap \_ DESC (tamanho de UInt64, \_ propriedade de página de CPU D3D12 \_ \_ cpuPageProperty, D3D12 de \_ \_ pool de memória memoryPoolPreference, alinhamento de UINT64 = 0, sinalizadores de \_ sinalizadores de heap D3D12 \_ = sinalizador de heap D3D12 \_ \_ \_ nenhum)**
+**CD3DX12 \_ HEAP \_ DESC (tamanho UINT64, PROPRIEDADE DA PÁGINA da CPU D3D12 \_ \_ \_ cpuPageProperty, D3D12 \_ MEMORY POOL \_ memoryPoolPreference, alinhamento UINT64 = 0, sinalizadores D3D12 SINALIZADORES DE \_ HEAP = \_ D3D12 \_ SINALIZADOR DE HEAP \_ \_ NONE)**
 </dt> <dd>
 
-Cria uma nova instância de um \_ heap CD3DX12 \_ DESC, inicializando os seguintes parâmetros:
+Cria uma nova instância de uma DESC de HEAP CD3DX12, \_ \_ inicializando os seguintes parâmetros:
 
-Tamanho de UINT64
+Tamanho UINT64
 
-[**D3D12 \_ \_ \_ Propriedade da página da CPU**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_cpu_page_property) cpuPageProperty
+[**D3D12 \_ CPU \_ PAGE \_ PROPERTY**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_cpu_page_property) cpuPageProperty
 
-[**D3D12 \_ MemoryPoolPreference do \_ pool de memória**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_memory_pool)
+[**D3D12 \_ MEMORY \_ POOL**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_memory_pool) memoryPoolPreference
 
-opt Alinhamento de UINT64 = 0
+(opt) Alinhamento UINT64 = 0
 
-opt [**D3D12 \_ Sinalizadores de \_ sinalizadores de heap**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_heap_flags) = sinalizador de heap D3D12 \_ \_ \_ nenhum
+(opt) [**D3D12 \_ Sinalizadores \_ HEAP FLAGS**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_heap_flags) = D3D12 \_ HEAP FLAG \_ \_ NONE
 
 </dd> <dt>
 
-**CD3DX12 \_ heap \_ DESC (const D3D12 \_ \_ informações de alocação de recursos \_& resAllocInfo, D3D12 \_ heap propriedades propriedades \_ , sinalizadores de heap de D3D12 \_ \_ flags = D3D12 \_ sinalizador de heap \_ \_ nenhum)**
+**CD3DX12 \_ HEAP \_ DESC(const D3D12 \_ RESOURCE \_ ALLOCATION \_ INFO& resAllocInfo, D3D12 \_ HEAP \_ PROPERTIES properties, D3D12 \_ HEAP \_ FLAGS flags = D3D12 \_ HEAP \_ FLAG \_ NONE)**
 </dt> <dd>
 
-Cria uma nova instância de um \_ heap CD3DX12 \_ DESC, inicializando os seguintes parâmetros:
+Cria uma nova instância de uma DESC de HEAP CD3DX12, \_ \_ inicializando os seguintes parâmetros:
 
-[**D3D12 \_ \_ \_ Informações de alocação de recursos**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_resource_allocation_info)& resAllocInfo
+[**D3D12 \_ RESOURCE \_ ALLOCATION \_ INFO**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_resource_allocation_info)& resAllocInfo
 
-[**D3D12 \_ Propriedades de \_ Propriedades do heap**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_heap_properties)
+[**D3D12 \_ Propriedades \_ DE PROPRIEDADES DO HEAP**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_heap_properties)
 
-opt [**D3D12 \_ Sinalizadores de \_ sinalizadores de heap**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_heap_flags) = sinalizador de heap D3D12 \_ \_ \_ nenhum
+(opt) [**D3D12 \_ Sinalizadores \_ HEAP FLAGS**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_heap_flags) = D3D12 \_ HEAP FLAG \_ \_ NONE
 
 </dd> <dt>
 
-**CD3DX12 \_ heap \_ DESC (const D3D12 \_ \_ informações de alocação de recursos \_& resAllocInfo, D3D12 \_ \_ tipo de heap, \_ sinalizadores de heap D3D12 \_ flags = \_ sinalizador de heap D3D12 \_ \_ nenhum)**
+**CD3DX12 \_ HEAP \_ DESC(const D3D12 \_ RESOURCE \_ ALLOCATION \_ INFO& resAllocInfo, D3D12 \_ HEAP \_ TYPE type, D3D12 \_ HEAP \_ FLAGS flags = D3D12 \_ HEAP \_ FLAG \_ NONE)**
 </dt> <dd>
 
-Cria uma nova instância de um \_ heap CD3DX12 \_ DESC, inicializando os seguintes parâmetros:
+Cria uma nova instância de uma DESC de HEAP CD3DX12, \_ \_ inicializando os seguintes parâmetros:
 
-[**D3D12 \_ \_ \_ Informações de alocação de recursos**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_resource_allocation_info)& resAllocInfo
+[**D3D12 \_ RESOURCE \_ ALLOCATION \_ INFO**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_resource_allocation_info)& resAllocInfo
 
-[**D3D12 \_ Tipo de \_ tipo de heap**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_heap_type)
+[**D3D12 \_ Tipo DE \_ TIPO HEAP**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_heap_type)
 
-opt [**D3D12 \_ Sinalizadores de \_ sinalizadores de heap**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_heap_flags) = sinalizador de heap D3D12 \_ \_ \_ nenhum
+(opt) [**D3D12 \_ Sinalizadores \_ HEAP FLAGS**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_heap_flags) = D3D12 \_ HEAP FLAG \_ \_ NONE
 
 </dd> <dt>
 
-**CD3DX12 \_ heap \_ DESC (const D3D12 \_ \_ informações de alocação de recursos \_& resAllocInfo, D3D12 \_ CPU \_ Page \_ Property CPUPAGEPROPERTY, D3D12 \_ \_ pool de memória memoryPoolPreference, D3D12 \_ heap \_ flags flags = D3D12 \_ \_ sinalizador heap \_ None)**
+**CD3DX12 \_ HEAP \_ DESC(const D3D12 \_ RESOURCE \_ ALLOCATION \_ INFO& resAllocInfo, D3D12 \_ CPU \_ PAGE \_ PROPERTY cpuPageProperty, D3D12 \_ MEMORY \_ POOL memoryPoolPreference, D3D12 \_ HEAP \_ FLAGS flags = D3D12 \_ HEAP \_ FLAG \_ NONE)**
 </dt> <dd>
 
-Cria uma nova instância de um \_ heap CD3DX12 \_ DESC, inicializando os seguintes parâmetros:
+Cria uma nova instância de uma DESC de HEAP CD3DX12, \_ \_ inicializando os seguintes parâmetros:
 
-[**D3D12 \_ \_ \_ Informações de alocação de recursos**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_resource_allocation_info)& resAllocInfo
+[**D3D12 \_ RESOURCE \_ ALLOCATION \_ INFO**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_resource_allocation_info)& resAllocInfo
 
-[**D3D12 \_ \_ \_ Propriedade da página da CPU**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_cpu_page_property) cpuPageProperty
+[**D3D12 \_ CPU \_ PAGE \_ PROPERTY**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_cpu_page_property) cpuPageProperty
 
-[**D3D12 \_ MemoryPoolPreference do \_ pool de memória**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_memory_pool)
+[**D3D12 \_ MEMORY \_ POOL**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_memory_pool) memoryPoolPreference
 
-opt [**D3D12 \_ Sinalizadores de \_ sinalizadores de heap**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_heap_flags) = sinalizador de heap D3D12 \_ \_ \_ nenhum
+(opt) [**D3D12 \_ Sinalizadores \_ HEAP FLAGS**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_heap_flags) = D3D12 \_ HEAP FLAG \_ \_ NONE
 
 </dd> <dt>
 
-**const do operador const D3D12 \_ \_ de HEAP desc& () constante**
+**operator const D3D12 \_ HEAP \_ DESC&() const**
 </dt> <dd>
 
-Define o & operador de passagem por referência para o tipo de \_ estrutura desc de heap CD3DX12 \_ .
+Define o & operador de passagem por referência para o tipo de estrutura DESC HEAP CD3DX12. \_ \_
 
 </dd> </dl>
 
@@ -164,7 +164,7 @@ Define o & operador de passagem por referência para o tipo de \_ estrutura desc
 
 | Requisito | Valor |
 |-------------------|-------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3dx12. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3dx12.h</dt> </dl> |
 
 
 
@@ -172,7 +172,7 @@ Define o & operador de passagem por referência para o tipo de \_ estrutura desc
 
 <dl> <dt>
 
-[**D3D12 de \_ heap \_ desc**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_heap_desc)
+[**D3D12 \_ HEAP \_ DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_heap_desc)
 </dt> <dt>
 
 [Estruturas auxiliares do D3D12](helper-structures-for-d3d12.md)

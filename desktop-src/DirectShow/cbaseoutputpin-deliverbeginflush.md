@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 22dbd2bccf33d9f203d1505106184500b8cae3ba
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: f154835a78ba2dab40f6cd505f6dc25e00ef60b6d070a2b4b19e1123c370478f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108099514"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119814196"
 ---
 # <a name="cbaseoutputpindeliverbeginflush-method"></a>Método CBaseOutputPin. DeliverBeginFlush
 
@@ -48,7 +48,7 @@ Retorna um valor **HRESULT** . Os valores possíveis incluem os listados na tabe
 
 | Código de retorno                                                                                           | Descrição                      |
 |-------------------------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>                  | Sucesso.<br/>              |
+| <dl> <dt>**S \_ OK**</dt> </dl>                  | Êxito.<br/>              |
 | <dl> <dt>**VFW \_ E \_ não \_ conectado**</dt> </dl> | O PIN não está conectado.<br/> |
 
 
@@ -65,12 +65,12 @@ Esse método chama o método [**IPin:: BeginFlush**](/windows/desktop/api/Strmif
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
+| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir Fluxos. h)</dt> </dl>                                                                                  |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

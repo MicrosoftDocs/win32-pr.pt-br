@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8948bd865db776c52ac021d296792a6f7d0720dc
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 655b947e0d2420ba731329dc09104d9a6da19342de41408c06173aecdb4f3737
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104499954"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119837386"
 ---
 # <a name="revision-attribute"></a>Atributo de revisão
 
@@ -59,7 +59,7 @@ O nível de revisão para um descritor de segurança ou outra alteração. Usado
 | ID do link                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| É de valor único       | True                                                                                  |
+| É de valor único       | Verdadeiro                                                                                  |
 | É indexado             | Falso                                                                                 |
 | No catálogo global      | Falso                                                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                          |
@@ -80,7 +80,7 @@ O nível de revisão para um descritor de segurança ou outra alteração. Usado
 | ID do link                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| É de valor único       | True                                                                                  |
+| É de valor único       | Verdadeiro                                                                                  |
 | É indexado             | Falso                                                                                 |
 | No catálogo global      | Falso                                                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                          |
@@ -101,7 +101,7 @@ O nível de revisão para um descritor de segurança ou outra alteração. Usado
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| É de valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
@@ -122,15 +122,15 @@ O nível de revisão para um descritor de segurança ou outra alteração. Usado
 | ID do link                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| É de valor único       | True                                                                                  |
+| Tem valor único       | Verdadeiro                                                                                  |
 | É indexado             | Falso                                                                                 |
-| No catálogo global      | Falso                                                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                          |
+| No Catálogo Global      | Falso                                                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000010                                                                            |
-| Classes usadas em        | [**Sam-domínio-base**](c-samdomainbase.md)<br/> [**Início**](c-top.md)<br/> |
+| Classes usadas em        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> [**Início**](c-top.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ O nível de revisão para um descritor de segurança ou outra alteração. Usado
 | ID do link                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| É de valor único       | True                                                                                  |
+| Tem valor único       | Verdadeiro                                                                                  |
 | É indexado             | Falso                                                                                 |
-| No catálogo global      | Falso                                                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                          |
+| No Catálogo Global      | Falso                                                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000010                                                                            |
-| Classes usadas em        | [**Sam-domínio-base**](c-samdomainbase.md)<br/> [**Início**](c-top.md)<br/> |
+| Classes usadas em        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> [**Início**](c-top.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ O nível de revisão para um descritor de segurança ou outra alteração. Usado
 | ID do link                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| É de valor único       | True                                                                                  |
+| Tem valor único       | Verdadeiro                                                                                  |
 | É indexado             | Falso                                                                                 |
-| No catálogo global      | Falso                                                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                          |
+| No Catálogo Global      | Falso                                                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000010                                                                            |
-| Classes usadas em        | [**Sam-domínio-base**](c-samdomainbase.md)<br/> [**Início**](c-top.md)<br/> |
+| Classes usadas em        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> [**Início**](c-top.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ O nível de revisão para um descritor de segurança ou outra alteração. Usado
 | ID do link                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| É de valor único       | True                                                                                  |
+| Tem valor único       | Verdadeiro                                                                                  |
 | É indexado             | Falso                                                                                 |
-| No catálogo global      | Falso                                                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                          |
+| No Catálogo Global      | Falso                                                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000010                                                                            |
-| Classes usadas em        | [**Sam-domínio-base**](c-samdomainbase.md)<br/> [**Início**](c-top.md)<br/> |
+| Classes usadas em        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> [**Início**](c-top.md)<br/> |
 
 
 

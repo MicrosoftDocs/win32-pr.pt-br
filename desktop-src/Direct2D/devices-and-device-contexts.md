@@ -1,56 +1,56 @@
 ---
-title: Como renderizar usando um contexto de dispositivo Direct2D
-description: Neste tópico, você aprenderá sobre a criação de Direct2D \ 32; contexto de dispositivo no Windows 8.
+title: como renderizar usando um contexto de dispositivo Direct2D
+description: neste tópico, você aprenderá a criar Direct2D \ 32; contexto de dispositivo no Windows 8.
 ms.assetid: D4563FEA-767E-4B16-8F3C-3D548A64B206
 keywords:
-- Dispositivo Direct2D
-- Contexto do dispositivo Direct2D
+- dispositivo Direct2D
+- Direct2D contexto do dispositivo
 ms.topic: article
 ms.date: 05/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: 2858861956a40bf969309be474105052e4692cde
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 735ad81a5911b16c159ffb8c63173421a55295e20e34090eb483065e1a7d311c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104569392"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119832987"
 ---
-# <a name="how-to-render-by-using-a-direct2d-device-context"></a>Como renderizar usando um contexto de dispositivo Direct2D
+# <a name="how-to-render-by-using-a-direct2d-device-context"></a>como renderizar usando um contexto de dispositivo Direct2D
 
-Neste tópico, você aprenderá a criar o [**contexto do dispositivo**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1devicecontext) [Direct2D](./direct2d-portal.md) no Windows 8. Essas informações se aplicam a você se você estiver desenvolvendo aplicativos da Windows Store ou um aplicativo de desktop usando o Direct2D. Este tópico descreve a finalidade dos objetos de contexto do dispositivo Direct2D, como criar esse objeto e um guia passo a passo sobre como renderizar e exibir as imagens e primitivas do Direct2D. Você também aprenderá sobre como alternar destinos de renderização e adicionar efeitos ao seu aplicativo.
+neste tópico, você aprenderá a criar [Direct2D](./direct2d-portal.md) [**contexto de dispositivo**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1devicecontext) no Windows 8. essas informações se aplicam a você se você estiver desenvolvendo Windows aplicativos da loja ou um aplicativo de área de trabalho usando Direct2D. este tópico descreve a finalidade de Direct2D objetos de contexto de dispositivo, como criar esse objeto e um guia passo a passo sobre como renderizar e exibir Direct2D primitivos e imagens. Você também aprenderá sobre como alternar destinos de renderização e adicionar efeitos ao seu aplicativo.
 
--   [O que é um dispositivo Direct2D?](#what-is-a-direct2d-device)
--   [O que é um contexto de dispositivo Direct2D?](#what-is-a-direct2d-device-context)
--   [Renderizando com Direct2D no Windows 8](#rendering-with-direct2d-on-windows-8)
+-   [o que é um dispositivo Direct2D?](#what-is-a-direct2d-device)
+-   [o que é um contexto de dispositivo Direct2D?](#what-is-a-direct2d-device-context)
+-   [renderizando com Direct2D em Windows 8](#rendering-with-direct2d-on-windows-8)
 -   [Por que usar um contexto de dispositivo para renderizar?](#why-use-a-device-context-to-render)
--   [Como criar um contexto de dispositivo Direct2D para renderização](#how-to-create-a-direct2d-device-context-for-rendering)
+-   [como criar um contexto de dispositivo Direct2D para renderização](#how-to-create-a-direct2d-device-context-for-rendering)
 -   [Selecionando um destino](#selecting-a-target)
 -   [Como renderizar e exibir](#how-to-render-and-display)
 
-## <a name="what-is-a-direct2d-device"></a>O que é um dispositivo Direct2D?
+## <a name="what-is-a-direct2d-device"></a>o que é um dispositivo Direct2D?
 
-Você precisa de um dispositivo Direct2D e de um dispositivo Direct3D para criar um contexto de dispositivo Direct2D. Um [**dispositivo Direct2D**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1device) (expõe um ponteiro de interface **ID2D1Device** ) representa um adaptador de vídeo. Um dispositivo Direct3D (expõe um ponteiro de interface [**ID3D11Device**](/windows/desktop/api/d3d11/nn-d3d11-id3d11device) ) está associado a um dispositivo Direct2D. Cada aplicativo deve ter um **dispositivo Direct2D**, mas pode ter mais de um **dispositivo**.
+você precisa de um dispositivo Direct2D e um dispositivo Direct3D para criar um contexto de dispositivo Direct2D. um [**dispositivo Direct2D**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1device) (expõe um ponteiro de interface **ID2D1Device** ) representa um adaptador de vídeo. um dispositivo Direct3D (expõe um ponteiro de interface [**ID3D11Device**](/windows/desktop/api/d3d11/nn-d3d11-id3d11device) ) está associado a um dispositivo Direct2D. cada aplicativo deve ter um **dispositivo Direct2D**, mas pode ter mais de um **dispositivo**.
 
-## <a name="what-is-a-direct2d-device-context"></a>O que é um contexto de dispositivo Direct2D?
+## <a name="what-is-a-direct2d-device-context"></a>o que é um contexto de dispositivo Direct2D?
 
-Um [](./direct2d-portal.md) [**contexto de dispositivo**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1devicecontext) Direct2D (expõe um ponteiro de interface **ID2D1DeviceContext** ) representa um conjunto de buffers de estado e de comando que você usa para renderizar para um destino. Você pode chamar métodos no contexto do dispositivo para definir o estado do pipeline e gerar comandos de renderização usando os recursos de propriedade de um dispositivo.
+um [](./direct2d-portal.md) [**contexto de dispositivo**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1devicecontext) Direct2D (expõe um ponteiro de interface **ID2D1DeviceContext** ) representa um conjunto de buffers de estado e de comando que você usa para renderizar para um destino. Você pode chamar métodos no contexto do dispositivo para definir o estado do pipeline e gerar comandos de renderização usando os recursos de propriedade de um dispositivo.
 
-## <a name="rendering-with-direct2d-on-windows-8"></a>Renderizando com Direct2D no Windows 8
+## <a name="rendering-with-direct2d-on-windows-8"></a>renderizando com Direct2D em Windows 8
 
-No Windows 7 e versões anteriores, você usa um [**ID2D1HwndRenderTarget**](/windows/win32/api/d2d1/nn-d2d1-id2d1hwndrendertarget) ou outra interface de destino de renderização para renderizar em uma janela ou superfície. A partir do Windows 8, não recomendamos a renderização usando métodos que dependem de interfaces como **ID2D1HwndRenderTarget** porque elas não funcionarão com aplicativos da Windows Store. Você pode usar um [**contexto de dispositivo**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1devicecontext) para renderizar para um HWND se desejar criar um aplicativo de área de trabalho e ainda aproveitar os recursos adicionais **do contexto do dispositivo** . No entanto, o **contexto do dispositivo** é necessário para renderizar o conteúdo em aplicativos da Windows Store com [Direct2D](./direct2d-portal.md).
+no Windows 7 e versões anteriores, você usa um [**ID2D1HwndRenderTarget**](/windows/win32/api/d2d1/nn-d2d1-id2d1hwndrendertarget) ou outra interface de destino de renderização para renderizar em uma janela ou superfície. a partir do Windows 8, não recomendamos a renderização usando métodos que dependem de interfaces como **ID2D1HwndRenderTarget** porque elas não funcionarão com Windows aplicativos da loja. Você pode usar um [**contexto de dispositivo**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1devicecontext) para renderizar para um HWND se desejar criar um aplicativo de área de trabalho e ainda aproveitar os recursos adicionais **do contexto do dispositivo** . no entanto, o **contexto do dispositivo** é necessário para renderizar o conteúdo em um Windows aplicativos da loja com [Direct2D](./direct2d-portal.md).
 
 ## <a name="why-use-a-device-context-to-render"></a>Por que usar um contexto de dispositivo para renderizar?
 
--   Você pode renderizar para aplicativos da Windows Store.
+-   você pode renderizar para aplicativos da Windows Store.
 -   Você pode alterar o destino de renderização a qualquer momento antes, durante e após a renderização. O contexto do dispositivo garante que as chamadas para métodos de desenho sejam executadas em ordem e as aplique quando você alternar o destino de renderização.
--   Você pode usar mais de um tipo de janela com um contexto de dispositivo. Você pode usar um [**contexto de dispositivo**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1devicecontext) e [**uma cadeia de permuta dxgi**](/windows/desktop/api/dxgi1_2/nn-dxgi1_2-idxgiswapchain1) para renderizar diretamente em um [**Windows:: UI:: Core:: CoreWindow**](/uwp/api/Windows.UI.Core.CoreWindow) ou um [**Windows:: UI:: XAML:: SwapChainBackgroundPanel**](/uwp/api/Windows.UI.Xaml.Controls.SwapChainBackgroundPanel).
--   Você pode usar o [](./direct2d-portal.md) [**contexto do dispositivo**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1devicecontext) Direct2D para criar [efeitos de Direct2D](effects-overview.md) e para renderizar a saída de um efeito de imagem ou um grafo de efeito para um destino de renderização.
--   Você pode ter vários [**contextos de dispositivo**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1devicecontext), o que pode ser útil para melhorar o desempenho em um aplicativo threaded. Consulte [aplicativos Direct2D multithread](multi-threaded-direct2d-apps.md) para obter mais informações.
+-   Você pode usar mais de um tipo de janela com um contexto de dispositivo. você pode usar um [**contexto de dispositivo**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1devicecontext) e [**uma cadeia de permuta DXGI**](/windows/desktop/api/dxgi1_2/nn-dxgi1_2-idxgiswapchain1) para renderizar diretamente em um [**Windows:: ui:: Core:: CoreWindow**](/uwp/api/Windows.UI.Core.CoreWindow) ou uma [**Windows:: ui:: XAML:: SwapChainBackgroundPanel**](/uwp/api/Windows.UI.Xaml.Controls.SwapChainBackgroundPanel).
+-   você pode usar o [](./direct2d-portal.md) [**contexto de dispositivo**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1devicecontext) Direct2D para criar [efeitos de Direct2D](effects-overview.md) e para renderizar a saída de um efeito de imagem ou um grafo de efeito para um destino de renderização.
+-   Você pode ter vários [**contextos de dispositivo**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1devicecontext), o que pode ser útil para melhorar o desempenho em um aplicativo threaded. consulte [aplicativos de Direct2D multithread](multi-threaded-direct2d-apps.md) para obter mais informações.
 -   O [**contexto do dispositivo**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1devicecontext) interopera em conjunto com o Direct3D, dando a você mais acesso às opções do Direct3D.
 
-## <a name="how-to-create-a-direct2d-device-context-for-rendering"></a>Como criar um contexto de dispositivo Direct2D para renderização
+## <a name="how-to-create-a-direct2d-device-context-for-rendering"></a>como criar um contexto de dispositivo Direct2D para renderização
 
-O código aqui mostra como criar um dispositivo Direct3D11, obter o dispositivo DXGI associado, criar um [**dispositivo Direct2D**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1device)e, finalmente, criar o [**contexto do dispositivo**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1devicecontext) Direct2D para renderização.
+o código aqui mostra como criar um dispositivo Direct3D11, obter o dispositivo DXGI associado, criar um [**dispositivo Direct2D**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1device)e, finalmente, criar o [**contexto do dispositivo**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1devicecontext) Direct2D para renderização.
 
 Aqui está um diagrama das chamadas de método e das interfaces que esse código usa.
 
@@ -59,7 +59,7 @@ Aqui está um diagrama das chamadas de método e das interfaces que esse código
 > [!Note]  
 > Esse código pressupõe que você já tenha um objeto [**ID2D1Factory1**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1factory1) , para obter mais informações, consulte a [**página de referência do ID2D1Factory**](/windows/win32/api/d2d1/nn-d2d1-id2d1factory).
 
- 
+ 
 
 
 ```C++
@@ -127,12 +127,12 @@ Vamos percorrer as etapas no exemplo de código anterior.
 
 1.  Obtenha um ponteiro de interface ID3D11Device, você precisará dele para criar o contexto do dispositivo.
 
-    -   Declare os sinalizadores de criação para configurar o dispositivo [Direct3D](/windows/desktop/direct3d11/atoc-dx-graphics-direct3d-11) para suporte BGRA. [Direct2D](./direct2d-portal.md) requer a ordem de cor de BGRA.
+    -   Declare os sinalizadores de criação para configurar o dispositivo [Direct3D](/windows/desktop/direct3d11/atoc-dx-graphics-direct3d-11) para suporte BGRA. [Direct2D](./direct2d-portal.md) requer a ordem de cor BGRA.
     -   Declare uma matriz de entradas de [**\_ \_ nível de recurso do D3D**](/windows/desktop/api/d3dcommon/ne-d3dcommon-d3d_feature_level) que representa o conjunto de níveis de recursos para o qual seu aplicativo dará suporte.
         > [!Note]  
         > O [Direct3D](/windows/desktop/direct3d11/atoc-dx-graphics-direct3d-11) pesquisa sua lista até encontrar o nível de recurso suportado pelo sistema host.
 
-         
+         
 
     -   Use a função [**D3D11CreateDevice**](/windows/desktop/api/d3d11/nf-d3d11-d3d11createdevice) para criar um objeto [**ID3D11Device**](/windows/desktop/api/d3d11_1/nn-d3d11_1-id3d11device1) , a função também retornará um objeto [**ID3D11DeviceContext**](/windows/desktop/api/d3d11_1/nn-d3d11_1-id3d11devicecontext1) , mas esse objeto não será necessário para este exemplo.
 
@@ -142,7 +142,7 @@ Vamos percorrer as etapas no exemplo de código anterior.
 
 ## <a name="selecting-a-target"></a>Selecionando um destino
 
-O código aqui mostra como obter a [**textura bidimensional do Direct3D**](/windows/desktop/api/d3d11/nn-d3d11-id3d11texture2d) para o buffer de fundo da janela e criar um destino de bitmap que é vinculado a essa textura para a qual o [**contexto do dispositivo Direct2D**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1devicecontext) é processado.
+o código aqui mostra como obter a [**textura bidimensional do Direct3D**](/windows/desktop/api/d3d11/nn-d3d11-id3d11texture2d) para o buffer de fundo da janela e criar um destino de bitmap que vincula a essa textura para a qual o [**contexto do dispositivo Direct2D**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1devicecontext) é renderizado.
 
 
 ```C++
@@ -230,15 +230,15 @@ Vamos percorrer as etapas no exemplo de código anterior.
 
 1.  Aloque uma [**estrutura \_ \_ \_ DESC1 de cadeia de permuta dxgi**](/windows/desktop/api/dxgi1_2/ns-dxgi1_2-dxgi_swap_chain_desc1) e defina as configurações para a cadeia de [**permuta**](/windows/desktop/api/dxgi/nn-dxgi-idxgiswapchain).
 
-    Essas configurações mostram um exemplo de como criar uma cadeia de permuta que um aplicativo da Windows Store pode usar.
+    essas configurações mostram um exemplo de como criar uma cadeia de permuta que um aplicativo da Windows Store pode usar.
 
 2.  Obtenha o adaptador em que o [**dispositivo Direct3D**](/windows/desktop/api/d3d11/nn-d3d11-id3d11device) e o [**dispositivo dxgi**](/windows/desktop/api/dxgi/nn-dxgi-idxgidevice) estão sendo executados e obtenha o objeto [**IDXGIFactory**](/windows/desktop/api/dxgi1_2/nn-dxgi1_2-idxgifactory2) associado a eles. Você deve usar esse **alocador dxgi** para garantir que a [**cadeia de permuta**](/windows/desktop/api/dxgi/nn-dxgi-idxgiswapchain) seja criada no mesmo adaptador.
 
-3.  Chame o método [**IDXGIFactory2:: CreateSwapChainForCoreWindow**](/windows/desktop/api/dxgi1_2/nf-dxgi1_2-idxgifactory2-createswapchainforcorewindow) para criar a cadeia de permuta. Use a classe [**Windows:: UI:: CoreWindow**](/uwp/api/Windows.UI.Core.CoreWindow) para a janela principal de um aplicativo da Windows Store.
+3.  Chame o método [**IDXGIFactory2:: CreateSwapChainForCoreWindow**](/windows/desktop/api/dxgi1_2/nf-dxgi1_2-idxgifactory2-createswapchainforcorewindow) para criar a cadeia de permuta. Use a classe [**Windows:: UI:: CoreWindow**](/uwp/api/Windows.UI.Core.CoreWindow) para a janela principal de um aplicativo da loja Windows.
 
     Certifique-se de definir a latência máxima do quadro como 1 para minimizar o consumo de energia.
 
-    Se você quiser renderizar o conteúdo do Direct2D em um aplicativo da Windows Store, consulte o método [**CreateSwapChainForComposition**](/windows/desktop/api/dxgi1_2/nf-dxgi1_2-idxgifactory2-createswapchainforcomposition) .
+    se você quiser renderizar Direct2D conteúdo em um aplicativo da loja Windows, consulte o método [**CreateSwapChainForComposition**](/windows/desktop/api/dxgi1_2/nf-dxgi1_2-idxgifactory2-createswapchainforcomposition) .
 
 4.  Obtenha o buffer de fundo da [**cadeia de permuta**](/windows/desktop/api/dxgi/nn-dxgi-idxgiswapchain). O buffer de fundo expõe uma interface [**ID3D11Texture2D**](/windows/desktop/api/d3d11/nn-d3d11-id3d11texture2d) alocada pela **cadeia de permuta**
 
@@ -248,11 +248,11 @@ Vamos percorrer as etapas no exemplo de código anterior.
 
     Crie um objeto [**ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap) a partir do buffer de fundo usando o método [**ID2D1DeviceContext:: CreateBitmapFromDxgiSurface**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-createbitmapfromdxgisurface(idxgisurface_constd2d1_bitmap_properties1_id2d1bitmap1)) .
 
-7.  Agora o [**bitmap Direct2D**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap) está vinculado ao buffer de fundo. Defina o destino no [**contexto do dispositivo Direct2D**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1devicecontext) para o **bitmap**.
+7.  agora, o [**bitmap Direct2D**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap) está vinculado ao buffer de fundo. defina o destino no [**contexto do dispositivo Direct2D**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1devicecontext) para o **bitmap**.
 
 ## <a name="how-to-render-and-display"></a>Como renderizar e exibir
 
-Agora que você tem um bitmap de destino, pode desenhar primitivos, imagens, efeitos de imagem e texto para ele usando o [**contexto do dispositivo Direct2D**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1devicecontext). O código aqui mostra como desenhar um retângulo.
+agora que você tem um bitmap de destino, pode desenhar primitivos, imagens, efeitos de imagem e texto para ele usando o [**contexto de dispositivo Direct2D**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1devicecontext). O código aqui mostra como desenhar um retângulo.
 
 
 ```C++
@@ -293,8 +293,8 @@ Vamos percorrer as etapas no exemplo de código anterior.
 4.  Chame o método [**EndDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw) depois de concluir a emissão de comandos de desenho.
 5.  Exiba o resultado chamando o método [**IDXGISwapChain::P reenviado**](/windows/desktop/api/dxgi/nf-dxgi-idxgiswapchain-present) .
 
-Agora você pode usar o [**contexto de dispositivo Direct2D**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1devicecontext) desenhar primitivas, imagens, efeitos de imagem e texto na tela.
+agora você pode usar o [**contexto de dispositivo Direct2D**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1devicecontext) desenhar primitivas, imagens, efeitos de imagem e texto na tela.
 
- 
+ 
 
- 
+ 

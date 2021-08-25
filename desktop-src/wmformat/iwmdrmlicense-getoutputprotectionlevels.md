@@ -15,12 +15,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5318ecdc8322699ac9d942425a98347799c37715
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: a8d70aaae5e96b8328c091e49836ae743c0fd5ef9d5036fd5aca067f9305d7fe
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "105813679"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119771316"
 ---
 # <a name="iwmdrmlicensegetoutputprotectionlevels-method"></a>Método IWMDRMLicense:: GetOutputProtectionLevels
 
@@ -48,7 +48,7 @@ Ponteiro para uma estrutura de níveis de proteção de saída do WMDRM que rece
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 

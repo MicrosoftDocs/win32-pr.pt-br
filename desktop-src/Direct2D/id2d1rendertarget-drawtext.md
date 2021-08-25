@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
-ms.openlocfilehash: 5ace5c64dc90f057ff9fdfe5a79d664137c38030
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 430607b09795be249a05398b1bfb749e9be45ae517c6374e001a4c3042bf316f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105758556"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119874186"
 ---
-# <a name="id2d1rendertargetdrawtext-methods"></a>ID2D1RenderTarget: métodos de rawText de:D
+# <a name="id2d1rendertargetdrawtext-methods"></a>Métodos ID2D1RenderTarget::D rawText
 
-Desenha o texto especificado usando as informações de formato fornecidas por um objeto [**IDWriteTextFormat**](/windows/desktop/api/dwrite/nn-dwrite-idwritetextformat) .
+Desenha o texto especificado usando as informações de formato fornecidas por [**um objeto IDWriteTextFormat.**](/windows/desktop/api/dwrite/nn-dwrite-idwritetextformat)
 
 ### <a name="overload-list"></a>Lista de sobrecargas
 
@@ -30,20 +30,20 @@ Desenha o texto especificado usando as informações de formato fornecidas por u
 
 | Método                                                                                                                                                                                                                                                                               | Descrição                                                                                                                                     |
 |:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**DrawText (WCHAR \* , IDWriteTextFormat \* , d2d1 \_ Rect \_ F&, ID2D1Brush \* , d2d1 \_ \_ \_ Opções de texto de desenho, \_ método de medição de texto DWRITE \_ \_ )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtext(constwchar_uint32_idwritetextformat_constd2d1_rect_f__id2d1brush_d2d1_draw_text_options_dwrite_measuring_mode))  | Desenha o texto especificado usando as informações de formato fornecidas por um objeto [**IDWriteTextFormat**](/windows/desktop/api/dwrite/nn-dwrite-idwritetextformat) .<br/>  |
-| [**DrawText (WCHAR \* , IDWriteTextFormat \* , d2d1 \_ Rect \_ F \* , ID2D1Brush \* , d2d1 \_ \_ \_ Opções de texto de desenho, \_ método de medição de texto DWRITE \_ \_ )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtext(constwchar_uint32_idwritetextformat_constd2d1_rect_f_id2d1brush_d2d1_draw_text_options_dwrite_measuring_mode)) | Desenha o texto especificado usando as informações de formato fornecidas por um objeto [**IDWriteTextFormat**](/windows/desktop/api/dwrite/nn-dwrite-idwritetextformat) . <br/> |
+| [**DrawText(WCHAR, \* IDWriteTextFormat, \* D2D1 \_ RECT \_ F&,ID2D1Brush \* ,D2D1 OPÇÕES DE TEXTO DE DESENHO, MÉTODO DE MEDIÇÃO \_ DE TEXTO \_ \_ DWRITE) \_ \_ \_**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtext(constwchar_uint32_idwritetextformat_constd2d1_rect_f__id2d1brush_d2d1_draw_text_options_dwrite_measuring_mode))  | Desenha o texto especificado usando as informações de formato fornecidas por [**um objeto IDWriteTextFormat.**](/windows/desktop/api/dwrite/nn-dwrite-idwritetextformat)<br/>  |
+| [**DrawText(WCHAR, \* IDWriteTextFormat, \* D2D1 \_ RECT \_ \* F, ID2D1Brush \* , D2D1 \_ OPÇÕES \_ \_ \_ \_ \_ DE TEXTO DE DESENHO, MÉTODO DE MEDIÇÃO DE TEXTO DWRITE)**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtext(constwchar_uint32_idwritetextformat_constd2d1_rect_f_id2d1brush_d2d1_draw_text_options_dwrite_measuring_mode)) | Desenha o texto especificado usando as informações de formato fornecidas por [**um objeto IDWriteTextFormat.**](/windows/desktop/api/dwrite/nn-dwrite-idwritetextformat) <br/> |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-Para desenhar texto com Direct2D, use o método [**ID2D1RenderTarget::D rawtext**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtext(constwchar_uint32_idwritetextformat_constd2d1_rect_f__id2d1brush_d2d1_draw_text_options_dwrite_measuring_mode)) para texto que tenha um único formato ou o método [**ID2D1RenderTarget::D rawtextlayout**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtextlayout) quando você precisar de vários formatos, recursos OpenType avançados ou teste de clique. Esses métodos usam a API DirectWrite para fornecer exibição de texto de alta qualidade.
+Para desenhar texto com Direct2D, use o método [**ID2D1RenderTarget::D rawText**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtext(constwchar_uint32_idwritetextformat_constd2d1_rect_f__id2d1brush_d2d1_draw_text_options_dwrite_measuring_mode)) para texto que tenha um único formato ou o método [**ID2D1RenderTarget::D rawTextLayout**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtextlayout) quando precisar de vários formatos, recursos avançados do OpenType ou testes de acerto. Esses métodos usam a API DirectWrite para fornecer exibição de texto de alta qualidade.
 
-Esse método não retornará um código de erro se ele falhar. Para determinar se uma operação de desenho (como **DrawText**) falhou, verifique o resultado retornado pelos métodos [**ID2D1RenderTarget:: EndDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw) ou [**ID2D1RenderTarget:: flush**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush) .
+Esse método não retornará um código de erro se ele falhar. Para determinar se uma operação de desenho (como **DrawText**) falhou, verifique o resultado retornado pelos métodos [**ID2D1RenderTarget::EndDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw) ou [**ID2D1RenderTarget::Flush.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush)
 
 ## <a name="examples"></a>Exemplos
 
-Para obter um exemplo, consulte [como desenhar texto](how-to--draw-text.md).
+Para ver um exemplo, [consulte Como desenhar texto.](how-to--draw-text.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -51,7 +51,7 @@ Para obter um exemplo, consulte [como desenhar texto](how-to--draw-text.md).
 
 | Requisito | Valor |
 |--------------------|-------------------------------------------------------------------------------------|
-| Biblioteca<br/> | <dl> <dt>D2d1. lib</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D2d1.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>D2d1.dll</dt> </dl> |
 
 
@@ -69,7 +69,7 @@ Para obter um exemplo, consulte [como desenhar texto](how-to--draw-text.md).
 [Como desenhar texto](how-to--draw-text.md)
 </dt> <dt>
 
-[Visão geral de formatação e layout de texto](/windows/desktop/DirectWrite/text-formatting-and-layout)
+[Formatação de texto e visão geral de layout](/windows/desktop/DirectWrite/text-formatting-and-layout)
 </dt> </dl>
 
  

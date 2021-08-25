@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: e3324b4cb0d42ca33ee7c3234a1acc099adcb743
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 3643936511755642cf9997709faa69d7bb3e902e5cf3e9dd2b0f56bda681b381
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089068"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119815266"
 ---
 # <a name="sdbstartindexing-function"></a>Função SdbStartIndexing
 
@@ -40,23 +40,23 @@ BOOL WINAPI SdbStartIndexing(
 
 <dl> <dt>
 
-*PDB* \[ no\]
+*pdb* \[ Em\]
 </dt> <dd>
 
-Um identificador para o banco de dados de Shim.
+Um alça para o banco de dados shim.
 
 </dd> <dt>
 
-*iiWhich* \[ no\]
+*iiWhich* \[ Em\]
 </dt> <dd>
 
 O identificador do índice.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-A função retorna **true** em caso de êxito ou **false** em caso de falha.
+A função retorna **TRUE em** caso de êxito **ou FALSE** em caso de falha.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,8 +64,8 @@ A função retorna **true** em caso de êxito ou **false** em caso de falha.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                   |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

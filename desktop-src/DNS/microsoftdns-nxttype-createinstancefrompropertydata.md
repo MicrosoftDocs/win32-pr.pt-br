@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fee00cd0afdb6ac629a981dbdb586a30252eac1d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1075574ec2e2fecceacc24701f67105ac9796a41a45e20c468a9021d7ff20899
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455415"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119815666"
 ---
 # <a name="createinstancefrompropertydata-method-of-the-microsoftdns_nxttype-class"></a>Método CreateInstanceFromPropertyData da \_ classe NXTType MicrosoftDNS
 
@@ -82,7 +82,7 @@ Classe do RR. O valor padrão é 1. Os valores a seguir são válidos.
 | <span id="1"></span><dl> <dt>**1**</dt> </dl> | NO (Internet)<br/> |
 | <span id="2"></span><dl> <dt>**2**</dt> </dl> | CS (CSNET)<br/>    |
 | <span id="3"></span><dl> <dt>**3**</dt> </dl> | CH (CAOS)<br/>    |
-| <span id="4"></span><dl> <dt>**quatro**</dt> </dl> | HS (Hesiod)<br/>   |
+| <span id="4"></span><dl> <dt>**4**</dt> </dl> | HS (Hesiod)<br/>   |
 
 
 
@@ -118,7 +118,7 @@ Referência ao novo objeto.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 

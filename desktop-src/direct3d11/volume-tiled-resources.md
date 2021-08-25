@@ -4,12 +4,12 @@ description: Saiba como as texturas de volume (3D) podem ser usadas como recurso
 ms.assetid: B6BF22A2-EDA3-4765-B545-BF825043D4C4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2bf9b3ed8b1db89d9718fa904eefd23ce2e871db
-ms.sourcegitcommit: ca37395fd832e798375e81142b97cffcffabf184
+ms.openlocfilehash: 618de4243598cdd9da3e80b0fe8cfad9cef65903736c4ae647f46e38d85fb77c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110335430"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119857642"
 ---
 # <a name="volume-tiled-resources"></a>Alocação dinâmica de volumes de recursos
 
@@ -146,31 +146,31 @@ As mesmas chamadas à API são usadas para recursos lado a lado 2D e 3D:
 
 Enumerações
 
--   [**D3D11 \_ \_ \_ Camada de recursos do lado do xadrez**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_tiled_resources_tier) : determina o nível de suporte ao recurso do lado do xadrez.
--   [**D3D11 \_ FORMATO \_ SUPPORT2**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_format_support2) : usado para testar o suporte a recursos lado a lado.
--   [**D3D11 \_ Marque o \_ sinalizador de \_ \_ níveis \_ de qualidade**](/windows/desktop/api/D3D11_2/ne-d3d11_2-d3d11_check_multisample_quality_levels_flag) de vários exemplos: determina o suporte a recursos de um lado em um recurso de várias amostras.
--   [**D3D11 \_ \_ \_ Sinalizadores de cópia de bloco**](/windows/desktop/api/D3D11_2/ne-d3d11_2-d3d11_tile_copy_flag) : mantém os sinalizadores para copiar de e para swizzled de recursos de lado e buffers lineares.
+-   [**D3D11 \_ CAMADA DE \_ RECURSOS \_ LADO A LADO:**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_tiled_resources_tier) determina o nível de suporte a recursos lado a lado.
+-   [**D3D11 \_ FORMAT \_ SUPPORT2:**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_format_support2) usado para testar o suporte a recursos lado a lado.
+-   [**D3D11 \_ CHECK \_ MULTISAMPLE \_ QUALITY LEVELS \_ \_ FLAG**](/windows/desktop/api/D3D11_2/ne-d3d11_2-d3d11_check_multisample_quality_levels_flag) : determina o suporte a recursos lado a lado em um recurso de várias amostragem.
+-   [**D3D11 \_ SINALIZADORES \_ DE CÓPIA DE \_ BLOCO:**](/windows/desktop/api/D3D11_2/ne-d3d11_2-d3d11_tile_copy_flag) contém sinalizadores para copiar de e para recursos lado a lado e buffers lineares.
 
 Estruturas
 
--   [**D3D11 \_ \_ \_ Coordenada de recurso por lado**](/windows/desktop/api/D3D11_2/ns-d3d11_2-d3d11_tiled_resource_coordinate) : contém a referência a co-ordenada x, y e z e o subresource. Observe que há uma classe auxiliar: \_ coordenada de recurso de lado CD3D11 \_ \_ .
--   [**D3D11 \_ \_ \_ Tamanho da região do bloco**](/windows/desktop/api/D3D11_2/ns-d3d11_2-d3d11_tile_region_size) : especifica o tamanho e o número de blocos da região do lado do ladrilho.
--   [**D3D11 \_ \_Forma do bloco**](/windows/desktop/api/D3D11_2/ns-d3d11_2-d3d11_tile_shape) : a forma do bloco como uma largura, altura e profundidade em texels.
--   [**D3D11 \_ D3D11 de dados de recurso \_ \_ \_ OPTIONS1**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_feature_data_d3d11_options1): contém o nível de camada de recurso de bloco com suporte.
+-   [**D3D11 \_ TILED \_ RESOURCE \_ COORDINATE**](/windows/desktop/api/D3D11_2/ns-d3d11_2-d3d11_tiled_resource_coordinate) : contém a referência de coordenadas x, y e z e sub-recursos. Observe que há uma classe auxiliar: CD3D11 \_ TILED \_ RESOURCE \_ COORDINATE.
+-   [**D3D11 \_ TAMANHO \_ DA \_ REGIÃO DO**](/windows/desktop/api/D3D11_2/ns-d3d11_2-d3d11_tile_region_size) BLOCO: especifica o tamanho e o número de blocos da região lado a lado.
+-   [**D3D11 \_ FORMA \_ DO TILE:**](/windows/desktop/api/D3D11_2/ns-d3d11_2-d3d11_tile_shape) a forma do seu tamanho como largura, altura e profundidade em texels.
+-   [**D3D11 \_ FEATURE \_ DATA \_ D3D11 \_ OPTIONS1:**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_feature_data_d3d11_options1)mantém o nível da camada de recurso doile com suporte.
 
 Métodos
 
--   [**ID3D11Device:: CheckFeatureSupport**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-checkfeaturesupport) : usado para determinar quais recursos e em que camada têm suporte no hardware atual.
--   [**ID3D11DeviceContext2:: CopyTiles**](/windows/desktop/api/D3D11_2/nf-d3d11_2-id3d11devicecontext2-copytiles) : copia blocos do buffer para o recurso de lado ou vice-versa.
--   [**ID3D11DeviceContext2:: UpdateTileMappings**](/windows/desktop/api/D3D11_2/nf-d3d11_2-id3d11devicecontext2-updatetilemappings) : atualiza os mapeamentos de locais de bloco em recursos de ladrilho para locais de memória em um pool de blocos.
--   [**ID3D11DeviceContext2:: CopyTileMappings**](/windows/desktop/api/D3D11_2/nf-d3d11_2-id3d11devicecontext2-copytilemappings) : copia mapeamentos de um recurso de origem ao lado para um recurso de destino ao lado.
--   [**ID3D11DeviceContext2:: GetResourceTiling**](/windows/desktop/api/D3D11_2/nf-d3d11_2-id3d11device2-getresourcetiling) : Obtém informações sobre como um recurso de quebra-lado é dividido em blocos.
+-   [**ID3D11Device::CheckFeatureSupport:**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-checkfeaturesupport) usado para determinar quais recursos e em qual camada têm suporte no hardware atual.
+-   [**ID3D11DeviceContext2::CopyTiles:**](/windows/desktop/api/D3D11_2/nf-d3d11_2-id3d11devicecontext2-copytiles) copia blocos do buffer para o recurso lado a lado ou vice-versa.
+-   [**ID3D11DeviceContext2::UpdateTileMappings:**](/windows/desktop/api/D3D11_2/nf-d3d11_2-id3d11devicecontext2-updatetilemappings) atualiza mapeamentos de locais de bloco em recursos lado a lado para locais de memória em um pool de blocos.
+-   [**ID3D11DeviceContext2::CopyTileMappings:**](/windows/desktop/api/D3D11_2/nf-d3d11_2-id3d11devicecontext2-copytilemappings) copia mapeamentos de um recurso de origem lado a lado para um recurso em bloco de destino.
+-   [**ID3D11DeviceContext2::GetResourceTiling:**](/windows/desktop/api/D3D11_2/nf-d3d11_2-id3d11device2-getresourcetiling) obtém informações sobre como um recurso lado a lado é dividido em blocos.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Recursos do Direct3D 11,3](direct3d-11-3-features.md)
+[Recursos do Direct3D 11.3](direct3d-11-3-features.md)
 </dt> </dl>
 
  

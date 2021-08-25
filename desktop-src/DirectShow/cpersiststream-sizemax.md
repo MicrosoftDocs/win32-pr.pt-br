@@ -1,7 +1,7 @@
 ---
-description: Recupera o tamanho máximo de bytes necessário para o fluxo atual, não incluindo o número de versão.
+description: Recupera o tamanho máximo de byte necessário para o fluxo atual, não incluindo o número de versão.
 ms.assetid: ca1a68e2-02b4-4eea-916a-e0418ae811ae
-title: Método CPersistStream. SizeMax (pStream. h)
+title: Método CPersistStream.SizeMax (Pstream.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: afa29e2c81cc454a9e85b9038486221f6f44aaf5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2b8f2c547e75303e4c54a49651f2118a90768bc0f42161ee3dae0de9bec2dcad
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105771843"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119813296"
 ---
-# <a name="cpersiststreamsizemax-method"></a>Método CPersistStream. SizeMax
+# <a name="cpersiststreamsizemax-method"></a>Método CPersistStream.SizeMax
 
-Recupera o tamanho máximo de bytes necessário para o fluxo atual, não incluindo o número de versão.
+Recupera o tamanho máximo de byte necessário para o fluxo atual, não incluindo o número de versão.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,13 +40,13 @@ virtual int SizeMax();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o número de bytes necessários para os dados, não incluindo o número de versão.
 
 ## <a name="remarks"></a>Comentários
 
-A versão padrão retorna zero; Ele deve ser substituído para fornecer algum outro valor apropriado.
+A versão padrão retorna zero; ele deve ser substituído para fornecer algum outro valor apropriado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ A versão padrão retorna zero; Ele deve ser substituído para fornecer algum ou
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>PStream. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Pstream.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

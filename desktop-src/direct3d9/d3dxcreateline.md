@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 5cf7d75ca63d64be39733b36a1b7d7a1b464238e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f821f613babac6d4ee801b7321ff15d902b72e908401ce248604dd2617841c74
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105763273"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119857126"
 ---
 # <a name="d3dxcreateline-function"></a>Função D3DXCreateLine
 
@@ -59,7 +59,7 @@ Ponteiro para uma interface [**ID3DXLine**](id3dxline.md) .
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

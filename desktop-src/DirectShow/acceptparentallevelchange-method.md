@@ -4,17 +4,17 @@ ms.assetid: b3d58069-16dc-4598-90ea-6136c2f62ac7
 title: Método AcceptParentalLevelChange
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f8b2e81d1d82c4ede14580ed65d88566738dac1b
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: aea4742622ce9a2c65cdce660a8bae7fab6f84171d6bd61cdf88475c2bcd788c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105792571"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119873586"
 ---
 # <a name="acceptparentallevelchange-method"></a>Método AcceptParentalLevelChange
 
 > [!Note]  
-> Esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
+> esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
 
  
 

@@ -1,8 +1,8 @@
 ---
-description: Registra informações sobre a implementação física de um provedor no WMI. Provedores que não definem a Propriedade HostingModel são carregados, por padrão, para serem executados em um processo de Wmiprvse.exe como NetworkServiceHostOrSelfHost.
+description: Registra informações sobre a implementação física de um provedor no WMI. Provedores que não configuram a propriedade HostingModel são carregados, por padrão, para executar em um processo Wmiprvse.exe como NetworkServiceHostOrSelfHost.
 ms.assetid: 41e0d938-00c6-4f4c-8027-8b8512398dee
 ms.tgt_platform: multiple
-title: Classe __Win32Provider
+title: __Win32Provider classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -10,16 +10,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 0240c459ea2d09013379bfd7c3190ce691cf4cc6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dd7c848e9c792bcff3c0af58143d404bda744a982daeedbff01895242407a7aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922603"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119857686"
 ---
 # <a name="__win32provider-class"></a>\_\_Classe Win32Provider
 
-A classe de sistema **\_ \_ Win32Provider** registra informações sobre a implementação física de um provedor no WMI. Provedores que não definem a propriedade **HostingModel** são carregados, por padrão, para serem executados em um processo de Wmiprvse.exe como **NetworkServiceHostOrSelfHost**.
+A **\_ \_ classe de sistema Win32Provider** registra informações sobre a implementação física de um provedor no WMI. Provedores que não configuram a propriedade **HostingModel** são carregados, por padrão, para executar em um processo Wmiprvse.exe como **NetworkServiceHostOrSelfHost**.
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas. As propriedades são listadas em ordem alfabética, não em ordem MOF.
 
@@ -57,13 +57,13 @@ class __Win32Provider : __Provider
 
 ## <a name="members"></a>Membros
 
-A classe **\_ \_ Win32Provider** tem estes tipos de membros:
+A **\_ \_ classe Win32Provider** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **\_ \_ Win32Provider** tem essas propriedades.
+A **\_ \_ classe Win32Provider** tem essas propriedades.
 
 <dl> <dt>
 
@@ -73,25 +73,25 @@ A classe **\_ \_ Win32Provider** tem essas propriedades.
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Identificador de classe que o WMI usa para determinar se um provedor de alto desempenho deve ou não ser carregado no processo do cliente ou no processo WMI. Se o provedor e o cliente estiverem localizados no mesmo computador, o WMI carregará o provedor em processo para o cliente usando **ClientLoadableCLSID** como o identificador de classe. Quando o provedor e o cliente estão localizados em computadores diferentes, o WMI carrega o provedor em processo para o WMI. O WMI também usa **ClientLoadableCLSID** para dar suporte a operações de atualização.
+Identificador de classe que o WMI usa para determinar se deve ou não carregar um provedor de alto desempenho no processo do cliente ou no processo WMI. Se o provedor e o cliente estão localizados no mesmo computador, o WMI carrega o provedor em processo para o cliente usando **ClientLoadableCLSID** como o identificador de classe. Quando o provedor e o cliente estão localizados em computadores diferentes, o WMI carrega o provedor em processo para o WMI. O WMI também usa **ClientLoadableCLSID para** dar suporte a operações de atualização.
 
-Para obter mais informações, consulte [registrando um provedor de High-Performance.](registering-a-high-performance-provider.md)
+Para obter mais informações, [consulte Registrando um provedor High-Performance dados.](registering-a-high-performance-provider.md)
 
 </dd> <dt>
 
-**CLSID**
+**Clsid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-O **GUID** que representa o identificador de classe (**CLSID**) do objeto com do provedor. Esse objeto COM deve conter uma implementação da interface [**IWbemProviderInit**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemproviderinit) .
+**GUID** que representa o **CLSID**(identificador de classe) do objeto COM do provedor. Esse objeto COM deve conter uma implementação da interface [**IWbemProviderInit.**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemproviderinit)
 
 </dd> <dt>
 
@@ -101,36 +101,36 @@ O **GUID** que representa o identificador de classe (**CLSID**) do objeto com do
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 Não usado.
 
 </dd> <dt>
 
-**Defaultmachinename**
+**DefaultMachineName**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Identifica o computador no qual o provedor deve ser iniciado. Se o provedor for executado no computador local, ele será **nulo**.
+Identifica o computador no qual iniciar o provedor. Se o provedor for executado no computador local, será **NULL.**
 
 </dd> <dt>
 
-**Enabled**
+**Habilitada**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Se for **true**, essa instância será habilitada e poderá ser usada para concluir as solicitações do cliente.
+Se **TRUE**, essa instância estará habilitada e poderá ser usada para concluir solicitações de cliente.
 
 </dd> <dt>
 
@@ -140,10 +140,10 @@ Se for **true**, essa instância será habilitada e poderá ser usada para concl
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Essa propriedade é composta de valores das propriedades de **hospedagem** e **HostingSpecification** de [**\_ provedores de MSFT**](/previous-versions/windows/desktop/wmisystemprov/msft-providers) . O valor dessa propriedade especifica como o WMI carrega o provedor e a conta de segurança na qual ele é executado. Para obter mais informações sobre como definir a propriedade **HostingModel** , consulte [provedor de hospedagem e segurança](provider-hosting-and-security.md) e [registrando um provedor](registering-a-provider.md).
+Essa propriedade é composta por valores das propriedades **HostingGroup** e **HostingSpecification** dos Provedores [**MSFT. \_**](/previous-versions/windows/desktop/wmisystemprov/msft-providers) O valor dessa propriedade especifica como o WMI carrega o provedor e a conta de segurança na qual ele é executado. Para obter mais informações sobre como definir a **propriedade HostingModel,** consulte [Hospedagem](provider-hosting-and-security.md) e segurança do provedor [e registro de um provedor.](registering-a-provider.md)
 
 </dd> <dt>
 
@@ -153,7 +153,7 @@ Essa propriedade é composta de valores das propriedades de **hospedagem** e **H
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 Reservado. O valor padrão é zero (0).
@@ -166,24 +166,24 @@ Reservado. O valor padrão é zero (0).
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Conjunto de sinalizadores que fornecem informações sobre a serialização. O valor padrão é zero (0).
+Conjunto de sinalizadores que fornecem informações sobre serialização. O valor padrão é zero (0).
 
 <dt>
 
 0
 </dt> <dd>
 
-Todas as inicializações desse provedor devem ser serializadas.
+Toda a inicialização desse provedor deve ser serializada.
 
 </dd> <dt>
 
 1
 </dt> <dd>
 
-Todas as inicializações deste provedor no mesmo namespace devem ser serializadas.
+Todas as inicializações desse provedor no mesmo namespace devem ser serializadas.
 
 </dd> <dt>
 
@@ -199,10 +199,10 @@ Nenhuma serialização de inicialização é necessária.
 **InitializationTimeoutInterval**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 Não usado.
@@ -212,10 +212,10 @@ Não usado.
 **InitializeAsAdminFirst**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 TBD
@@ -228,10 +228,10 @@ TBD
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Qualificadores: [ **chave**](standard-qualifiers.md)
+Qualificadores: [ **Chave**](standard-qualifiers.md)
 </dt> </dl>
 
 O nome do provedor.
@@ -241,10 +241,10 @@ O nome do provedor.
 **OperationTimeoutInterval**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 Não usado.
@@ -254,39 +254,39 @@ Não usado.
 **PerLocaleInitialization**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Se for **true**, o provedor será inicializado para cada localidade quando um usuário se conectar ao mesmo namespace mais de uma vez usando localidades diferentes. O valor padrão é **false**.
+Se **TRUE**, o provedor será inicializado para cada localidade quando um usuário se conectar ao mesmo namespace mais de uma vez usando localidades diferentes. O valor padrão é **FALSE**.
 
 </dd> <dt>
 
 **PerUserInitialization**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Se for **true**, o provedor será inicializado uma vez para cada usuário do NT LAN Manager (NTLM) que faz solicitações ao provedor. Se **for false** (padrão), o provedor será inicializado uma vez para todos os usuários.
+Se **TRUE**, o provedor será inicializado uma vez para cada usuário do NTLM (NT LAN Manager) que faz solicitações ao provedor. Se **FALSE** (padrão), o provedor será inicializado uma vez para todos os usuários.
 
 </dd> <dt>
 
-**Mero**
+**Puro**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Se **for true**, o provedor concorda em se preparar para descarregar chamando [**IUnknown:: Release**](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) em todos os pontos de interface pendentes quando o WMI chama o método **Release** de sua interface primária. Provedores que devem permanecer clientes do WMI depois que não funcionam como provedores devem definir **Pure** como **false**. A configuração padrão é **true**. Para obter mais informações, consulte a seção comentários deste tópico.
+Se **TRUE**, o provedor concorda em se preparar para descarregar chamando [**IUnknown::Release**](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) em todos os pontos de interface pendentes quando o WMI chama o método **Release** de sua interface primária. Provedores que devem permanecer clientes do WMI depois que não funcionarem como provedores devem definir **Puro** como **FALSE.** A configuração padrão é **TRUE.** Para obter mais informações, consulte a seção Comentários deste tópico.
 
 </dd> <dt>
 
@@ -296,10 +296,10 @@ Se **for true**, o provedor concorda em se preparar para descarregar chamando [*
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Descritor de segurança (SD) na linguagem de definição do descritor de segurança (SDDL) que determina o conjunto de usuários que podem chamar [**IWbemDecoupledRegistrar: Register**](/windows/desktop/api/Wbemprov/nf-wbemprov-iwbemdecoupledregistrar-register) para o provedor dissociado com êxito. Para obter mais informações, consulte o tópico [Security Descriptor Definition Language](/windows/desktop/SecAuthZ/security-descriptor-definition-language) na seção security da SDK do Windows. Esse descritor de segurança é usado apenas para provedores dissociados e não afeta outros provedores. Para obter mais informações, consulte [incorporando um provedor em um aplicativo](incorporating-a-provider-in-an-application.md).
+SD (descritor de segurança) na SDDL (Linguagem de Definição do Descritor de Segurança) que determina o conjunto de usuários que podem chamar [**IWbemDecoupledRegistrar:Register**](/windows/desktop/api/Wbemprov/nf-wbemprov-iwbemdecoupledregistrar-register) para o provedor desafinido. para obter mais informações, consulte o tópico [security Descriptor Definition Language](/windows/desktop/SecAuthZ/security-descriptor-definition-language) na seção security da SDK do Windows. Esse descritor de segurança é usado apenas para provedores dissociados e não afeta outros provedores. Para obter mais informações, consulte [incorporando um provedor em um aplicativo](incorporating-a-provider-in-an-application.md).
 
 O WMI executa verificações de acesso para provedores dissociados que usam as interfaces [**IWbemProviderInit**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemproviderinit) e [**IWbemObjectSink**](iwbemobjectsink.md) . Se o descritor de segurança for **nulo**, somente aplicativos ou serviços executados nas contas LocalSystem, NetworkService e LocalService poderão executar um provedor dissociado.
 

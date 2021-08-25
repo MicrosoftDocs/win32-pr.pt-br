@@ -1,25 +1,25 @@
 ---
 description: Interrompe a passagem de codificação atual ou consulta se a passagem de codificação atual é a última.
 ms.assetid: 847f638f-9ab9-42ca-8e39-82c113cee92f
-title: Propriedade AVEncCommonPassEnd (Codecapi. h)
+title: Propriedade AVEncCommonPassEnd (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 026b20cf0c13536403e7ccf32b160e8c6fc08141
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 02faeb9d78f10b962b7134fd316bda348b0f03e1a82ace210956c2243231df19
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104456823"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119873366"
 ---
 # <a name="avenccommonpassend-property"></a>Propriedade AVEncCommonPassEnd
 
 Interrompe a passagem de codificação atual ou consulta se a passagem de codificação atual é a última.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="data-type"></a>Tipo de dados
 
-**Variante \_ BOOL** (**VT \_ bool**)
+**VARIANT \_ BOOL** (**VT \_ BOOL**)
 
 ## <a name="property-guid"></a>GUID da propriedade
 
@@ -27,9 +27,9 @@ Esta propriedade é de leitura/gravação.
 
 ## <a name="remarks"></a>Comentários
 
-Definir essa propriedade como **Variant \_ true** finaliza a passagem de codificação atual. A definição dessa propriedade como **variante \_ false** encerra a codificação de passagem.
+Definir essa propriedade como **VARIANT \_ TRUE** encerra a passagem de codificação atual. Definir essa propriedade como **VARIANT \_ FALSE** encerra a codificação multipass.
 
-A leitura desta propriedade consulta se a passagem de codificação atual é a última.
+Ler essa propriedade consulta se a passagem de codificação atual é a última.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,9 +37,9 @@ A leitura desta propriedade consulta se a passagem de codificação atual é a �
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos do Windows 2000 Professional \[ Desktop aplicativos \| UWP\]<br/>                     |
-| Servidor mínimo com suporte<br/> | Aplicativos da área de trabalho do Windows 2000 Server aplicativos \[ \| UWP\]<br/>                           |
-| parâmetro<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional \[ aplicativos UWP da área de \| trabalho\]<br/>                     |
+| Servidor mínimo com suporte<br/> | Windows aplicativos da área de trabalho do servidor 2000 \[ \| aplicativos UWP\]<br/>                           |
+| Cabeçalho<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -47,10 +47,10 @@ A leitura desta propriedade consulta se a passagem de codificação atual é a �
 
 <dl> <dt>
 
-[Propriedades da API do codec](codec-api-properties.md)
+[Propriedades da API do Codec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interface ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI Interface**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

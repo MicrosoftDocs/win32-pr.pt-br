@@ -1,7 +1,7 @@
 ---
-description: A função RegCreateBlobKey armazena um BLOB na chave do registro fornecida.
+description: A função RegCreateBlobKey armazena um BLOB na chave do Registro determinada.
 ms.assetid: 14f3763e-aa04-4d51-b388-81ebf0d3952c
-title: Função RegCreateBlobKey (Netmon. h)
+title: Função RegCreateBlobKey (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: fc46b38919b37dc004c1065b0cc8d5f80e65984c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3267fd0ba5e6fe56b99b5d465f69718fe5509a7ead58acf1d8dafb642397af5e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105768586"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119889646"
 ---
 # <a name="regcreateblobkey-function"></a>Função RegCreateBlobKey
 
-A função **RegCreateBlobKey** armazena um blob na chave do registro fornecida.
+A **função RegCreateBlobKey** armazena um BLOB na chave do Registro determinada.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,30 +41,30 @@ DWORD RegCreateBlobKey(
 
 <dl> <dt>
 
-*HKEY* \[ fora\]
+*hkey* \[ out\]
 </dt> <dd>
 
-Manipule a chave do registro onde o BLOB será armazenado.
+Lidar com a chave do Registro em que o BLOB será armazenado.
 
 </dd> <dt>
 
-*szBlobName* \[ no\]
+*szBlobName* \[ Em\]
 </dt> <dd>
 
-Nome (definido pelo aplicativo) que representa o BLOB no registro.
+Nome (aplicativo definido) que representa o BLOB no Registro.
 
 </dd> <dt>
 
-*hBlob* \[ no\]
+*hBlob* \[ Em\]
 </dt> <dd>
 
-Identificador para o BLOB que é salvo.
+Lidar com o BLOB salvo.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se a função for bem-sucedida, o valor de retorno será NMERR com \_ êxito.
+Se a função for bem-sucedida, o valor de retorno será NMERR \_ SUCCESS.
 
 Se a função não for bem-sucedida, o valor de retorno será um valor NMERR que indica o erro.
 
@@ -76,8 +76,8 @@ Se a função não for bem-sucedida, o valor de retorno será um valor NMERR que
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                    |
-| Cabeçalho<br/>                   | <dl> <dt>Netmon. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Npptools. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Netmon.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Npptools.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Npptools.dll</dt> </dl> |
 
 
