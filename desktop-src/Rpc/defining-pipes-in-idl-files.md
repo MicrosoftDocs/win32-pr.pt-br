@@ -4,12 +4,12 @@ description: Quando um pipe é definido em um arquivo IDL, o compilador MIDL ger
 ms.assetid: f6c282e4-3056-48c4-bd12-dfcae6d238d7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 115be7fc5d00458d13df102afebe9ba5b55de070
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: bbd237690f45fd6ca73d62f54a5dccf0409f4424e1e96407c116b39ef5d882a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366383"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120022066"
 ---
 # <a name="defining-pipes-in-idl-files"></a>Definindo pipes em arquivos IDL
 
@@ -60,12 +60,12 @@ void OutPipe(
 
 <dl> <dt>
 
-[pipe](/windows/desktop/Midl/pipe)
+[conexão](/windows/desktop/Midl/pipe)
 </dt> <dt>
 
 [**/Oi**](/windows/desktop/Midl/-oi)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

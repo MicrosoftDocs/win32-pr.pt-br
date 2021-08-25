@@ -1,6 +1,6 @@
 ---
-title: Atributo ViewpointOrigin de VML
-description: Atributo ViewpointOrigin de VML
+title: Atributo VML ViewpointOrigin
+description: Atributo VML ViewpointOrigin
 ms.assetid: 4ccb3e12-bae4-4cb2-b48b-80c155ae7e03
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,16 +11,16 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "120007556"
 ---
-# <a name="vml-viewpointorigin-attribute"></a>Atributo ViewpointOrigin de VML
+# <a name="vml-viewpointorigin-attribute"></a>Atributo VML ViewpointOrigin
 
-este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). para obter informações, recomendações e orientações sobre a versão atual do Windows Internet explorer, consulte [internet explorer developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
  
 
-Define a origem do ponto de vista dentro da caixa delimitadora da forma. Leitura/gravação. **VgVector2D**.
+Define a origem do ponto de vista dentro da caixa delimitada da forma. Leitura/gravação. **VgVector2D.**
 
 **Aplica-se a**
 
@@ -28,19 +28,19 @@ Define a origem do ponto de vista dentro da caixa delimitadora da forma. Leitura
 
 **Sintaxe de marca**
 
-<o: *Element* viewpointorigin = " *expressão* " >
+<o: *element* viewpointorigin=" *expressão* ">
 
 **Sintaxe do script**
 
-*Element* . viewpointorigin = "*expressão*"
+*element* .viewpointorigin="*expression*"
 
-*expressão* = de *elemento*. viewpointorigin
+*expressão* = *elemento*.viewpointorigin
 
 **Comentários**
 
-Define o ponto de vista em termos dos valores x e y da forma original. Os valores x e y variam de 0,5 a-0,5 (50% a-50% da origem da coordenada da forma). O padrão é 0, 0.
+Define o ponto de vista em termos dos valores x e y da forma original. Os valores x e y variam de 0,5 a -0,5 (50% a -50% da origem da coordenada da forma). O padrão é 0,0.
 
-*Microsoft Office Atributo de extensões*
+*Microsoft Office Atributo Extensions*
 
  
 

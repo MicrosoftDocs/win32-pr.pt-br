@@ -3,7 +3,7 @@ title: Mensagem de LVM_GETINSERTMARKRECT (commctrl. h)
 description: Recupera o retângulo que limita o ponto de inserção.
 ms.assetid: 7b10229c-73ab-426c-8a8a-71258a33e248
 keywords:
-- Controles de LVM_GETINSERTMARKRECT de mensagens do Windows
+- controles de Windows de mensagem de LVM_GETINSERTMARKRECT
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dd85bfb94f6425d2666372fd141b531fcb238643
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d5832ce185a579432b341482847400e96d60869a64d3ff0a2cd599e2eecf6b20
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918974"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120062596"
 ---
 # <a name="lvm_getinsertmarkrect-message"></a>\_Mensagem GETINSERTMARKRECT LVM
 
@@ -35,7 +35,7 @@ Recupera o retângulo que limita o ponto de inserção.
 *lParam* 
 </dt> <dd>Ponteiro para uma estrutura <a href="/previous-versions//dd162897(v=vs.85)">**Rect**</a> que contém as coordenadas de um retângulo que limita o ponto de inserção.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos valores a seguir.
 
@@ -63,9 +63,9 @@ Retorna um dos valores a seguir.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

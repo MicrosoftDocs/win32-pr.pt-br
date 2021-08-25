@@ -4,12 +4,12 @@ description: Este artigo técnico fornece informações sobre como escrever e us
 ms.assetid: 575c4716-18c2-7b11-7308-aa2e3d8efac7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7558e47d08cb0183b8d9cefa5f22f0750fd1c598
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: a3c68891e2e20938036bd016e6e786a2cdad0096ae44af0e8974a88052963be0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104007801"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120075516"
 ---
 # <a name="crash-dump-analysis"></a>Análise de despejo de memória
 
@@ -29,19 +29,19 @@ Nem todos os bugs podem ser encontrados antes do lançamento, o que significa qu
 
 As opções básicas para escrever um minidespejo são as seguintes:
 
--   Não fazer nada. O Windows gera automaticamente um minidespejo sempre que um programa gera uma exceção sem tratamento. A geração automática de um minidespejo está disponível desde o Windows XP. Se o usuário permitir, o minidespejo será enviado à Microsoft, e não ao desenvolvedor, por meio de Relatório de Erros do Windows (WER). Os desenvolvedores podem obter acesso a esses minidespejos por meio do [programa de aplicativos da área de trabalho do Windows](../appxpkg/windows-desktop-application-program.md).
+-   Não fazer nada. Windows gera automaticamente um minidespejo sempre que um programa gera uma exceção sem tratamento. a geração automática de um minidespejo está disponível desde o Windows XP. se o usuário permitir, o minidespejo será enviado à Microsoft, e não ao desenvolvedor, por meio de Relatório de Erros do Windows (WER). os desenvolvedores podem obter acesso a esses minidespejos por meio do [programa de aplicativo de área de trabalho Windows](../appxpkg/windows-desktop-application-program.md).
 
     O uso do WER requer:
 
     -   Desenvolvedores para assinar seus aplicativos usando Authenticode
     -   Os aplicativos têm um recurso VERSIONINFO válido em todos os executáveis e DLL
 
-    Se você implementar uma rotina personalizada para exceções sem tratamento, será altamente recomendável usar a função [**ReportFault**](/windows/desktop/api/errorrep/nf-errorrep-reportfault) no manipulador de exceção para também enviar um minidespejo automatizado para o wer. A função **ReportFault** lida com todos os problemas de conexão e envio do minidespejo para o wer. Não enviar minidespejos para o WER viola os requisitos de jogos para o Windows.
+    Se você implementar uma rotina personalizada para exceções sem tratamento, será altamente recomendável usar a função [**ReportFault**](/windows/desktop/api/errorrep/nf-errorrep-reportfault) no manipulador de exceção para também enviar um minidespejo automatizado para o wer. A função **ReportFault** lida com todos os problemas de conexão e envio do minidespejo para o wer. Não enviar minidespejos para o WER viola os requisitos de jogos para Windows.
 
-    Para obter mais informações sobre como o WER funciona, consulte [como relatório de erros do Windows funciona](https://www.microsoft.com/whdc/maintain/WER/WERWorks.mspx). Para obter uma explicação dos detalhes do registro, consulte [introdução ao relatório de erros do Windows](https://msdn.microsoft.com/) na [zona ISV](https://msdn.microsoft.com/)do MSDN.
+    para obter mais informações sobre como o WER funciona, consulte [como Relatório de Erros do Windows funciona](https://www.microsoft.com/whdc/maintain/WER/WERWorks.mspx). para obter uma explicação dos detalhes do registro, consulte [introdução ao Relatório de Erros do Windows](https://msdn.microsoft.com/) na [zona ISV](https://msdn.microsoft.com/)do MSDN.
 
 -   Use um produto do Microsoft Visual Studio Team System. No menu **depurar** , clique em **Salvar despejo como** para salvar uma cópia de um despejo. O uso de um despejo salvo localmente é apenas uma opção para teste interno e depuração.
--   Adicione código ao seu projeto. Adicione a função [**MiniDumpWriteDump**](/windows/desktop/api/minidumpapiset/nf-minidumpapiset-minidumpwritedump) e o código de manipulação de exceção apropriado para salvar e enviar um minidespejo diretamente para o desenvolvedor. Este artigo demonstra como implementar essa opção. No entanto, observe que o **MiniDumpWriteDump** atualmente não funciona com código gerenciado e só está disponível no Windows XP, no Windows Vista e no Windows 7.
+-   Adicione código ao seu projeto. Adicione a função [**MiniDumpWriteDump**](/windows/desktop/api/minidumpapiset/nf-minidumpapiset-minidumpwritedump) e o código de manipulação de exceção apropriado para salvar e enviar um minidespejo diretamente para o desenvolvedor. Este artigo demonstra como implementar essa opção. no entanto, observe que o **MiniDumpWriteDump** não funciona atualmente com código gerenciado e só está disponível no Windows XP, Windows Vista, Windows 7.
 
 ## <a name="thread-safety"></a>Acesso thread-safe
 
@@ -126,7 +126,7 @@ O MSDN tem informações mais detalhadas sobre a estrutura de [**\_ \_ informaç
 
 Dumpchk.exe é um utilitário de linha de comando que pode ser usado para verificar se um arquivo de despejo foi criado corretamente. Se Dumpchk.exe gerar um erro, o arquivo de despejo estará corrompido e não poderá ser analisado. Para obter informações sobre como usar Dumpchk.exe, consulte [como usar Dumpchk.exe para verificar um arquivo de despejo de memória](https://support.microsoft.com/kb/315271/).
 
-Dumpchk.exe está incluído no CD do produto Windows XP e pode ser instalado na unidade do sistema \\ arquivos \\ de programa de suporte ferramentas \\ executando Setup.exe na \\ pasta ferramentas de suporte \\ no CD do produto Windows XP. Você também pode obter a versão mais recente do Dumpchk.exe baixando e instalando as ferramentas de depuração disponíveis nas [ferramentas de depuração do Windows](https://www.microsoft.com/whdc/devtools/debugging/) no [Windows hardware Developer Central](https://www.microsoft.com/whdc/).
+o Dumpchk.exe está incluído no CD do Windows XP e pode ser instalado na unidade do sistema \\ arquivos \\ de programa de suporte ferramentas \\ executando Setup.exe na \\ pasta ferramentas de suporte \\ no CD do produto Windows XP. você também pode obter a versão mais recente do Dumpchk.exe baixando e instalando as ferramentas de depuração disponíveis em [Windows ferramentas de depuração](https://www.microsoft.com/whdc/devtools/debugging/) no [Windows Hardware developer Central](https://www.microsoft.com/whdc/).
 
 ## <a name="analyzing-a-minidump"></a>Analisando um minidespejo
 
@@ -135,7 +135,7 @@ Abrir um minidespejo para análise é tão fácil quanto criar um.
 **Para analisar um minidespejo**
 
 1.  Abra o Visual Studio.
-2.  No menu **arquivo** , clique em **Abrir projeto**.
+2.  No menu **arquivo** , clique em **abrir Project**.
 3.  Defina **arquivos do tipo** para **despejar arquivos**, navegue até o arquivo de despejo, selecione-o e clique em **abrir.**
 4.  Execute o depurador.
 
@@ -143,7 +143,7 @@ O depurador criará um processo simulado. O processo simulado será interrompido
 
 ### <a name="using-the-microsoft-public-symbol-server"></a>Usando o servidor de símbolos público da Microsoft
 
-Para obter a pilha para falhas em nível de driver ou de sistema, pode ser necessário configurar o Visual Studio para apontar para o servidor de símbolos público da Microsoft.
+para obter a pilha para falhas em nível de driver ou de sistema, pode ser necessário configurar Visual Studio para apontar para o servidor de símbolos público da Microsoft.
 
 **Para definir um caminho para o servidor de símbolos da Microsoft**
 
@@ -156,9 +156,9 @@ Para obter a pilha para falhas em nível de driver ou de sistema, pode ser neces
 
 ### <a name="debugging-a-minidump-with-windbg"></a>Depurando um minidespejo com o WinDbg
 
-Você também pode usar o WinDbg, um depurador que faz parte das ferramentas de depuração do Windows, para depurar um minidespejo. O WinDbg permite que você depure sem precisar usar o Visual Studio. Para baixar as ferramentas de depuração do Windows, consulte [ferramentas de depuração do Windows](https://www.microsoft.com/whdc/devtools/debugging/) no [Windows hardware Developer Central](https://www.microsoft.com/whdc/).
+você também pode usar o WinDbg, um depurador que faz parte das ferramentas de depuração de Windows, para depurar um minidespejo. O WinDbg permite que você depure sem precisar usar Visual Studio. para baixar Windows ferramentas de depuração, consulte [Windows ferramentas de depuração](https://www.microsoft.com/whdc/devtools/debugging/) no [Windows Hardware developer Central](https://www.microsoft.com/whdc/).
 
-Depois de instalar as ferramentas de depuração do Windows, você deve inserir o caminho do símbolo no WinDbg.
+depois de instalar Windows ferramentas de depuração, você deve inserir o caminho do símbolo no WinDbg.
 
 **Para inserir um caminho de símbolo no WinDbg**
 
@@ -169,12 +169,12 @@ Depois de instalar as ferramentas de depuração do Windows, você deve inserir 
 
 ### <a name="using-copy-protection-tools-with-minidumps"></a>Usando ferramentas de Copy-Protection com minidespejos
 
-Os desenvolvedores também precisam estar cientes de como seu esquema de proteção de cópia pode afetar o minidespejo. A maioria dos esquemas de proteção de cópia tem suas próprias ferramentas de deembaralhamento, e cabe ao desenvolvedor aprender como usar essas ferramentas com o [**MiniDumpWriteDump**](/windows/desktop/api/minidumpapiset/nf-minidumpapiset-minidumpwritedump).
+Os desenvolvedores também precisam estar cientes de como seu esquema de proteção contra cópia pode afetar o minidump. A maioria dos esquemas de proteção contra cópia tem suas próprias ferramentas descramáveis e é responsabilidade do desenvolvedor saber como usar essas ferramentas com [**MiniDumpWriteDump.**](/windows/desktop/api/minidumpapiset/nf-minidumpapiset-minidumpwritedump)
 
 ## <a name="summary"></a>Resumo
 
-A função [**MiniDumpWriteDump**](/windows/desktop/api/minidumpapiset/nf-minidumpapiset-minidumpwritedump) pode ser uma ferramenta extremamente útil para coletar e resolver bugs após o lançamento do produto. Escrever um manipulador de exceção personalizado que usa **MiniDumpWriteDump** permite que o desenvolvedor Personalize a coleta de informações e aprimore o processo de depuração. A função é flexível o suficiente para ser usada em qualquer projeto baseado em C++ e deve ser considerada parte do processo de estabilidade de qualquer projeto.
+A [**função MiniDumpWriteDump**](/windows/desktop/api/minidumpapiset/nf-minidumpapiset-minidumpwritedump) pode ser uma ferramenta extremamente útil para coletar e resolver bugs após o lançamento do produto. Escrever um manipulador de exceção personalizado que usa **MiniDumpWriteDump** permite que o desenvolvedor personalize a coleção de informações e aprimora o processo de depuração. A função é flexível o suficiente para ser usada em qualquer projeto baseado em C++e deve ser considerada parte do processo de estabilidade de qualquer projeto.
 
- 
+ 
 
- 
+ 

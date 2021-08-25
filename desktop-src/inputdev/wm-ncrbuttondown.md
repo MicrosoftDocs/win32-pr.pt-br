@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e6f416cc0f42ead127d7e72c0f46a291b4c30197
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8bb30c650ec3f83cf120c7f9ef6589af6961c2da16b770fba55586916b357117
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455966"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119888586"
 ---
 # <a name="wm_ncrbuttondown-message"></a>Mensagem do WM \_ NCRBUTTONDOWN
 
@@ -52,7 +52,7 @@ Uma estrutura de [**pontos**](/previous-versions//dd162808(v=vs.85)) que contém
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se um aplicativo processar essa mensagem, ele deverá retornar zero.
 

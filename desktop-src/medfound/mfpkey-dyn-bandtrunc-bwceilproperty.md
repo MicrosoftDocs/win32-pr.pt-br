@@ -4,12 +4,12 @@ ms.assetid: 01af4961-b372-462b-a24e-c600d1cd76ab
 title: Propriedade MFPKEY_DYN_BANDTRUNC_BWCEIL (Wmcodecdsp. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 59c7bce5f8ec0ea3be6dfc59ea281bb7bb3eac67
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4dd3093fa7db432369abaac02fb3339c3ed268ca7a7b611af2f9256982c67b84
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105781344"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119939996"
 ---
 # <a name="mfpkey_dyn_bandtrunc_bwceil-property"></a>\_Propriedade MFPKEY dyn \_ BANDTRUNC \_ BWCEIL
 
@@ -30,7 +30,7 @@ Disponível apenas usando [**IPropertyStore**](/windows/win32/api/propsys/nn-pro
 | Requisito | Valor |
 |-------------------|-----------------------------------------------------------------------------------------|
 | Cliente<br/> | Windows Vista ou Windows 7<br/>                                                   |
-| parâmetro<br/> | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cabeçalho<br/> | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
 
 
 

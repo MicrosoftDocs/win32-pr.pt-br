@@ -12,24 +12,24 @@ keywords:
 - reinicialização do aplicativo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 862236fad876307b0662a8444775c78673b92983
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d31d6c8ef342b9e1781297d547358317a90d515002e6ef3e529b8d7a0c50aa09
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822961"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120024596"
 ---
 # <a name="application-recovery-and-restart"></a>Reinicialização e recuperação de aplicativos
 
 ## <a name="purpose"></a>Finalidade
 
-Um aplicativo pode usar a recuperação e reinicialização do aplicativo (ARR) para salvar dados e informações de estado antes que o aplicativo seja encerrado devido a uma exceção sem tratamento ou quando o aplicativo para de responder. O aplicativo também será reiniciado, se solicitado.
+Um aplicativo pode usar o ARR (Application Recovery and Restart) para salvar dados e informações de estado antes que o aplicativo saia devido a uma exceção sem resposta ou quando o aplicativo para de responder. O aplicativo também será reiniciado, se solicitado.
 
-Um aplicativo também pode ser reiniciado se um instalador atualizar um componente do aplicativo ou se o computador precisar ser reiniciado como resultado de uma atualização. Observe que para dar suporte à reinicialização automática do aplicativo depois que um instalador atualiza um aplicativo, o aplicativo e o instalador precisam ser criados adequadamente. Para obter detalhes, consulte [registrando para reinicialização do aplicativo](registering-for-application-restart.md).
+Um aplicativo também poderá ser reiniciado se um instalador atualizar um componente do aplicativo ou se o computador precisar reiniciar como resultado de uma atualização. Observe que, para dar suporte à reinicialização automática do aplicativo depois que um instalador atualiza um aplicativo, o aplicativo e o instalador precisam ser autorados adequadamente. Para obter detalhes, consulte [Registrando para reinicialização do aplicativo.](registering-for-application-restart.md)
 
 ## <a name="developer-audience"></a>Público de desenvolvedores
 
-O ARR foi projetado para desenvolvedores de C e C++.
+O ARR foi projetado para desenvolvedores C e C++.
 
 ## <a name="run-time-requirements"></a>Requisitos de tempo de execução
 
@@ -41,8 +41,8 @@ O ARR está disponível a partir do sistema operacional Windows Vista.
 
 | Tópico                                                                                                   | Descrição                                                           |
 |---------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| [Usando a recuperação e reinicialização do aplicativo](using-application-recovery-and-restart.md)<br/>         | Guia de procedimentos para o registro para recuperação e reinicialização.<br/> |
-| [Recuperação de aplicativo e referência de reinicialização](application-recovery-and-restart-reference.md)<br/> | Informações de referência para a API ARR. <br/>                    |
+| [Usando a recuperação e a reinicialização do aplicativo](using-application-recovery-and-restart.md)<br/>         | Guia de procedimento para registro para recuperação e reinicialização.<br/> |
+| [Referência de recuperação e reinicialização de aplicativos](application-recovery-and-restart-reference.md)<br/> | Informações de referência para a API do ARR. <br/>                    |
 
 
 

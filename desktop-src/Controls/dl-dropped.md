@@ -3,7 +3,7 @@ title: DL_DROPPED código de notificação (commctrl. h)
 description: Sinaliza que o usuário concluiu uma operação de arrastar liberando o botão esquerdo do mouse. Uma caixa de listagem de arrastar envia esse código de notificação para sua janela pai na forma de uma mensagem de arrastar lista. Para obter mais informações, consulte arrastar mensagens da caixa de listagem.
 ms.assetid: 81b9b424-2735-407d-bac9-f03ea2f48b4e
 keywords:
-- DL_DROPPED de código de notificação controles do Windows
+- DL_DROPPED código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e1b2480360ea38a00c4dd8efe6eb84eed8999890
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4c245cbb85a4e67845bd86a25b4cccb2f2aa0dc1d9d9613afd1d685037c5e1ef
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824870"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120002716"
 ---
 # <a name="dl_dropped-notification-code"></a>\_Código de notificação removido da DL
 
@@ -45,7 +45,7 @@ Um ponteiro para uma estrutura [**DRAGLISTINFO**](/windows/win32/api/commctrl/ns
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sem valor de retorno.
 
@@ -59,9 +59,9 @@ Esse código de notificação normalmente é processado pela inserção do item 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

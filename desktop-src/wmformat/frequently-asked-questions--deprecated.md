@@ -1,6 +1,6 @@
 ---
-title: Perguntas frequentes (SDK do Windows Media Format 11)
-description: Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte codec de áudio e vídeo do Windows Media e APIs do DSP. | Perguntas frequentes (SDK do Windows Media Format 11)
+title: perguntas frequentes (Windows o SDK do formato de mídia 11)
+description: para obter a documentação atual sobre codecs de mídia Windows e processadores de sinal digitais, consulte Windows áudio de mídia e o Codec de vídeo e APIs do DSP. | perguntas frequentes (Windows o SDK do formato de mídia 11)
 ms.assetid: 5ba4de31-e94c-406b-98ae-83c221c8003a
 keywords:
 - Formato das perguntas frequentes do Windows Media
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 12a957537553481220a80a576287402ee1dffa71
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 2799502ff7f8ceb145d2325abf5014825ed217028a831aa1065e063c1a85ae9c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103930469"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120006974"
 ---
 # <a name="frequently-asked-questions"></a>Perguntas frequentes
 
-Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte [codec de áudio e vídeo do Windows Media e APIs do DSP.](/previous-versions//dd464626(v=vs.85))
+para obter a documentação atual sobre codecs de mídia Windows e processadores de sinal digitais, consulte [Windows áudio de mídia e o Codec de vídeo e APIs do DSP.](/previous-versions//dd464626(v=vs.85))
 
  
 

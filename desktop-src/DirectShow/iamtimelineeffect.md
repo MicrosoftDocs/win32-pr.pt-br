@@ -1,5 +1,5 @@
 ---
-description: A interface IAMTimelineEffect fornece métodos para manipular efeitos de áudio e vídeo em DES (serviços de edição do DirectShow).
+description: a interface IAMTimelineEffect fornece métodos para manipular efeitos de áudio e vídeo em serviços de edição DirectShow (DES).
 ms.assetid: 3cc8a5f8-3f57-4e2b-82dd-827e04c771f7
 title: Interface IAMTimelineEffect (QEdit. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 8b9936616b9c4487849053d36c6a63290bd16b5c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f710693c967e1f0ac73c69534e8ac90a65d6603e749cd2aeae6a355ed8517415
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105789948"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120052756"
 ---
 # <a name="iamtimelineeffect-interface"></a>Interface IAMTimelineEffect
 
@@ -28,11 +28,11 @@ ms.locfileid: "105789948"
 
  
 
-A `IAMTimelineEffect` interface fornece métodos para manipular efeitos de áudio e vídeo em des ( [serviços de edição do DirectShow](directshow-editing-services.md) ). Um efeito pode ser adicionado a qualquer objeto de linha do tempo que expõe a interface [**IAMTimelineEffectable**](iamtimelineeffectable.md) . Para definir propriedades em um efeito, use a interface [**IPropertySetter**](ipropertysetter.md) .
+a `IAMTimelineEffect` interface fornece métodos para manipular efeitos de áudio e vídeo em [serviços de edição DirectShow](directshow-editing-services.md) (DES). Um efeito pode ser adicionado a qualquer objeto de linha do tempo que expõe a interface [**IAMTimelineEffectable**](iamtimelineeffectable.md) . Para definir propriedades em um efeito, use a interface [**IPropertySetter**](ipropertysetter.md) .
 
 O objeto de efeito DES é, na verdade, um wrapper para um dos dois outros objetos:
 
--   Para efeitos de áudio, qualquer filtro de efeito de áudio do DirectShow.
+-   para efeitos de áudio, qualquer DirectShow filtro de efeito de áudio.
 -   Para efeitos de vídeo, e um objeto de transformação DirectX de entrada.
 
 A Microsoft não dá mais suporte ao desenvolvimento de objetos de transformação DirectX de terceiros.
@@ -69,7 +69,7 @@ A interface **IAMTimelineEffect** tem esses métodos.
  
 
 > [!Note]  
-> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> para obter o Qedit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
 
  
 

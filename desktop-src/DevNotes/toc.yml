@@ -512,7 +512,7 @@
           items:
             - name: Método GetNumericalProperty
               href: /windows/desktop/api/Fhcfg/nf-fhcfg-ifhtarget-getnumericalproperty
-            - name: Método GetStringProperty
+            - name: Método getstringproperty
               href: /windows/desktop/api/Fhcfg/nf-fhcfg-ifhtarget-getstringproperty
     - name: Arquivos
       href: files.md
@@ -599,7 +599,7 @@
           href: pimestylefromattr.md
         - name: RGBFromIMEColorStyle
           href: rgbfromimecolorstyle.md
-    - name: Suporte ao cliente Low-Level gráficos
+    - name: Suporte ao cliente do Low-Level de gráficos
       href: '-dxgkernel-low-level-client-support.md'
       items:
         - name: DCIBeginAccess
@@ -843,27 +843,27 @@
           href: /windows/desktop/api/comppkgsup/nf-comppkgsup-unregisterserverforpmp
         - name: WINNLSEnableIME
           href: /windows/desktop/api/Winnls32/nf-winnls32-winnlsenableime
-    - name: Mshtml
+    - name: FICHEIRO
       href: mshtml2.md
       items:
-        - name: Iwebbrowser2
+        - name: IWebBrowser2
           href: /windows/desktop/api/Exdisp/nn-exdisp-iwebbrowser2
           items:
             - name: Propriedade HWND
               href: /previous-versions//mt725310(v=vs.85)
-            - name: PropriedadeModmode
+            - name: Propriedade TheaterMode
               href: /windows/desktop/api/Exdisp/nf-exdisp-iwebbrowser2-get_theatermode
             - name: Propriedade ToolBar
               href: /previous-versions//mt725312(v=vs.85)
     - name: Instalação
       href: installation.md
       items:
-        - name: CoInstall
+        - name: Instalar
           href: /windows/desktop/api/objbase/nf-objbase-coinstall
           items:
             - name: CSPLATFORM
               href: /previous-versions//bb432231(v=vs.85)
-            - name: Querycontext
+            - name: QUERYCONTEXT
               href: /previous-versions//bb432414(v=vs.85)
             - name: TYSPEC
               href: tyspec.md
@@ -910,19 +910,19 @@
           href: reload-config.md
         - name: SxsLookupClrGuid
           href: sxslookupclrguid.md
-        - name: DesinstalarComponent
+        - name: UninstallComponent
           href: uninstallcomponent.md
         - name: VerifyCatalogFile
           href: verifycatalogfile.md
-    - name: ISCSI Target Pass-Through
+    - name: Pass-Through de destino iSCSI
       href: /powershell/module/iscsi
       items:
         - name: SENSE_DATA
           href: sense-data.md
-    - name: Java VM
+    - name: VM Java
       href: java-vm.md
       items:
-        - name: BaixarJavaEX
+        - name: DownloadJavaEX
           href: downloadjavaex.md
         - name: JAVA_TRUST
           href: /windows/win32/api/Capi/ns-capi-java_trust
@@ -930,7 +930,7 @@
           href: notifybrowsershutdown.md
         - name: ShowJavaConsole
           href: showjavaconsole.md
-    - name: Depuração de Jet
+    - name: Depuração do Jet
       href: jet-debugging.md
       items:
         - name: CchLszOfId2
@@ -950,12 +950,12 @@
           href: msdelta-createdeltab.md
         - name: DeltaFree
           href: msdelta-deltafree.md
-    - name: Msn
+    - name: MSN
       href: msn.md
       items:
-        - name: Determinando se o MSN está no estado de login
+        - name: Determinando se o MSN está no estado de entrada
           href: determining-if-msn-is-in-the-signin-state.md
-    - name: MSXML 1.0 (obsoleto)
+    - name: 'MSXML 1,0 (obsoleto)'
       href: msxml-1-0.md
       items:
         - name: IXMLElementCollection
@@ -963,7 +963,7 @@
           items:
             - name: Método item
               href: /windows/desktop/api/Msxml/nf-msxml-ixmlelementcollection-item
-            - name: Get_length método
+            - name: Método de get_length
               href: /windows/desktop/api/Msxml/nf-msxml-ixmlelementcollection-get_length
     - name: Rede
       href: networking.md
@@ -985,7 +985,7 @@
               href: /windows/win32/api/Lmaccess/ns-lmaccess-netlogon_info_4
         - name: ResumeSuspendedDownload
           href: /previous-versions//bb432423(v=vs.85)
-        - name: Mecanismo NDR RPC
+        - name: Mecanismo de NDR de RPC
           href: rpc-ndr-engine.md
           items:
             - name: NdrComplexArrayBufferSize
@@ -1017,7 +1017,7 @@
       items:
         - name: DA_GET_NFS_ATTRIBUTES
           href: da-get-nfs-attributes.md
-    - name: Opencl
+    - name: OpenCL
       href: opencl.md
     - name: PatchAPI
       href: patchapi.md
@@ -1041,12 +1041,12 @@
           href: csciscscenabled.md
         - name: CSCQueryDatabaseStatus
           href: cscquerydatabasestatus.md
-    - name: Biblioteca de Registro Offline
+    - name: Biblioteca de registro offline
       href: offline-registry-library-portal.md
       items:
         - name: Sobre a biblioteca de registro offline
           href: about-the-offline-registry-library.md
-        - name: Funções de biblioteca de registro offline
+        - name: Funções da biblioteca do registro offline
           href: offline-registry-library-functions.md
           items:
             - name: ORCloseHive

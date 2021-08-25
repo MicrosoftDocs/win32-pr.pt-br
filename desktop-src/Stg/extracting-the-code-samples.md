@@ -4,16 +4,16 @@ description: Embora os exemplos de código sejam divididos em uma série de liç
 ms.assetid: f8e20e40-cfef-4844-8b28-5a11fdcd691a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a593cf36b2fa235813c291eb35307153b28a2aa4
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 67093f4cfbbfab2a3c1681462627f02b504124ed15d1483b9f9d91ec5551d0e4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104363867"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120034946"
 ---
 # <a name="extracting-the-code-samples"></a>Extraindo os exemplos de código
 
-Embora os exemplos de código sejam divididos em uma série de lições do tutorial, os agrupamentos de exemplo apropriados podem ser facilmente extraídos da coleção. A maioria dos diretórios de exemplo individuais tem como objetivo trabalhar em conjunto com pelo menos um outro diretório de exemplo. Os exemplos relacionados a componentes consistem em um par de cliente e servidor, com o servidor que requer o uso do utilitário de amostra de registro. Aqui está um resumo dos agrupamentos de exemplo e como extrair cada grupo como uma unidade compilável. Para cada Agrupamento de exemplo, copie o conteúdo dos diretórios mostrados. O diretório pai de \[ destino \] mostrado não requer nenhum conteúdo da ramificação de exemplos. No entanto, os menus de ajuda nos exemplos em execução pressupõem que o tutorial apropriado. Arquivos de ajuda HTM estão localizados neste diretório pai de \[ destino \] .
+Embora os exemplos de código sejam divididos em uma série de lições do tutorial, os agrupamentos de exemplo apropriados podem ser facilmente extraídos da coleção. A maioria dos diretórios de exemplo individuais tem como objetivo trabalhar em conjunto com pelo menos um outro diretório de exemplo. Os exemplos relacionados a componentes consistem em um par de cliente e servidor, com o servidor que requer o uso do utilitário de amostra de registro. Aqui está um resumo dos agrupamentos de exemplo e como extrair cada grupo como uma unidade compilável. Para cada Agrupamento de exemplo, copie o conteúdo dos diretórios mostrados. O diretório pai de \[ destino \] mostrado não requer nenhum conteúdo da ramificação de exemplos. No entanto, os menus de ajuda nos exemplos em execução pressupõem que o tutorial apropriado .HTM arquivos de ajuda estejam localizados nesse diretório pai de \[ destino \] .
 
 Para o aplicativo Win32 READTUT:
 
@@ -195,9 +195,9 @@ Para os exemplos de cliente/servidor de segurança DCOM:
     DCOMDRAW
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Sqlunirl.dll
-ms.openlocfilehash: ce5bf557183a9c3a1fede535239fb549b2ae6c6e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a08245d61f9badcfd4db8ab79ca63d0d19383eebb3a9e55a1cc4ebd2e41c060b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749514"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120087976"
 ---
 # <a name="_getobject-function"></a>\_Função GetObject
 

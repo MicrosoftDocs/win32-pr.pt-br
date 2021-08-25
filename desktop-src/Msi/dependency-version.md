@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: aa3f95d73bdd6bda0c0f9a71fd3f4d9292e8c5fb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0de11edff94fb41e98696e1e2b16cc397f3bf05b599ad0740fb07de2c72cac37
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105758960"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120074976"
 ---
 # <a name="dependencyversion-property"></a>Propriedade Dependency. Version
 
@@ -49,7 +49,7 @@ Confira a função [**obter \_ versão**](/windows/win32/api/mergemod/nf-mergemo
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
 | Versão<br/> | Mergemod.dll 1,0 ou posterior<br/>                                                    |
-| parâmetro<br/>  | <dl> <dt>Mergemod. h</dt> </dl>   |
+| Cabeçalho<br/>  | <dl> <dt>Mergemod. h</dt> </dl>   |
 | DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

@@ -1,26 +1,26 @@
 ---
-title: Propriedade HotKeyAltTab IMsRdpClientAdvancedSettings
-description: Especifica o código de chave virtual a ser adicionar ao ALT para determinar a substituição de tecla de atalho para ALT+TAB.
+title: Propriedade IMsRdpClientAdvancedSettings HotKeyAltTab
+description: Especifica o código de chave virtual a ser adicionado a ALT para determinar a substituição de tecla de atalho para ALT + TAB.
 ms.assetid: d7066fb4-f53f-4e55-ba12-fb4078ece144
 ms.tgt_platform: multiple
 keywords:
-- Propriedade HotKeyAltTab Serviços de Área de Trabalho Remota
-- A propriedade HotKeyAltTab Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings
-- Interface IMsRdpClientAdvancedSettings Serviços de Área de Trabalho Remota , propriedade HotKeyAltTab
-- A propriedade HotKeyAltTab Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings2
-- Interface IMsRdpClientAdvancedSettings2 Serviços de Área de Trabalho Remota , propriedade HotKeyAltTab
-- A propriedade HotKeyAltTab Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings3
-- Interface IMsRdpClientAdvancedSettings3 Serviços de Área de Trabalho Remota , propriedade HotKeyAltTab
-- A propriedade HotKeyAltTab Serviços de Área de Trabalho Remota interface , IMsRdpClientAdvancedSettings4
-- Interface IMsRdpClientAdvancedSettings4 Serviços de Área de Trabalho Remota , propriedade HotKeyAltTab
-- A propriedade HotKeyAltTab Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings5
-- Interface IMsRdpClientAdvancedSettings5 Serviços de Área de Trabalho Remota , propriedade HotKeyAltTab
-- A propriedade HotKeyAltTab Serviços de Área de Trabalho Remota interface , IMsRdpClientAdvancedSettings6
-- Interface IMsRdpClientAdvancedSettings6 Serviços de Área de Trabalho Remota , propriedade HotKeyAltTab
-- A propriedade HotKeyAltTab Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings7
-- Interface IMsRdpClientAdvancedSettings7 Serviços de Área de Trabalho Remota , propriedade HotKeyAltTab
-- A propriedade HotKeyAltTab Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings8
-- Interface IMsRdpClientAdvancedSettings8 Serviços de Área de Trabalho Remota , propriedade HotKeyAltTab
+- Serviços de Área de Trabalho Remota da propriedade HotKeyAltTab
+- Propriedade HotKeyAltTab Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings
+- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings, Propriedade HotKeyAltTab
+- Propriedade HotKeyAltTab Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings2
+- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings2, Propriedade HotKeyAltTab
+- Propriedade HotKeyAltTab Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings3
+- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings3, Propriedade HotKeyAltTab
+- Propriedade HotKeyAltTab Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings4
+- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings4, Propriedade HotKeyAltTab
+- Propriedade HotKeyAltTab Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings5
+- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings5, Propriedade HotKeyAltTab
+- Propriedade HotKeyAltTab Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings6
+- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings6, Propriedade HotKeyAltTab
+- Propriedade HotKeyAltTab Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings7
+- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings7, Propriedade HotKeyAltTab
+- Propriedade HotKeyAltTab Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings8
+- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings8, Propriedade HotKeyAltTab
 topic_type:
 - apiref
 api_name:
@@ -61,13 +61,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "120009886"
 ---
-# <a name="imsrdpclientadvancedsettingshotkeyalttab-property"></a>Propriedade IMsRdpClientAdvancedSettings::HotKeyAltTab
+# <a name="imsrdpclientadvancedsettingshotkeyalttab-property"></a>Propriedade IMsRdpClientAdvancedSettings:: HotKeyAltTab
 
-Especifica o código de chave virtual a ser adicionar ao ALT para determinar a substituição de tecla de atalho para ALT+TAB.
+Especifica o código de chave virtual a ser adicionado a ALT para determinar a substituição de tecla de atalho para ALT + TAB.
 
-Essa propriedade é válida somente quando a [**propriedade KeyboardHookMode**](imsrdpclientsecuredsettings-keyboardhookmode.md) não está habilitada.
+Essa propriedade é válida somente quando a propriedade [**KeyboardHookMode**](imsrdpclientsecuredsettings-keyboardhookmode.md) não está habilitada.
 
-Essa propriedade é leitura/gravação.
+Esta propriedade é de leitura/gravação.
 
 ## <a name="syntax"></a>Syntax
 
@@ -86,7 +86,7 @@ HRESULT get_HotKeyAltTab(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-O novo código de chave virtual. **VK \_ PRIOR** é o valor padrão, com ALT+PAGE UP como a sequência resultante.
+O novo código de chave virtual. **VK \_ ANTERIOR** é o valor padrão, com Alt + Page Up como a sequência resultante.
 
 ## <a name="error-codes"></a>Códigos do Erro
 
@@ -94,7 +94,7 @@ Retornará **S \_ OK** se for bem-sucedido.
 
 ## <a name="remarks"></a>Comentários
 
-Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for Conexão Web de Área de Trabalho Remota](requirements-for-remote-desktop-web-connection.md).
+Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for conexão Web de área de trabalho remota](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -106,7 +106,7 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                                  |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>          |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>          |
-| IID<br/>                      | \_IMs IIDRdpClientAdvancedSettings é definido como 3c65b4ab-12b3-465b-acd4-b8dad3bff9e2<br/> |
+| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings é definido como 3c65b4ab-12B3-465b-acd4-b8dad3bff9e2<br/> |
 
 
 
@@ -135,7 +135,7 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 [**IMsRdpClientAdvancedSettings8**](imsrdpclientadvancedsettings8.md)
 </dt> <dt>
 
-[**Imsrdpclientadvancedsettings**](imsrdpclientadvancedsettings-interface.md)
+[**IMsRdpClientAdvancedSettings**](imsrdpclientadvancedsettings-interface.md)
 </dt> </dl>
 
  

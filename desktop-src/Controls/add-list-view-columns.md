@@ -4,12 +4,12 @@ description: Este tópico demonstra como adicionar colunas a um controle de exib
 ms.assetid: 9DBDFF56-7CD6-467C-AD2E-64213615E241
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 75e478c57a31fdd7ad91e0089106e93c24c47d5c
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: ee71065729502410d189493527af0e3e37663a4a2aaf541852454af7fa4a5aac
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104008617"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119922076"
 ---
 # <a name="how-to-add-list-view-columns"></a>Como adicionar colunas de List-View
 
@@ -19,12 +19,12 @@ Este tópico demonstra como adicionar colunas a um controle de exibição de lis
 
 ### <a name="technologies"></a>Tecnologias
 
--   [Controles do Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
 -   C/C++
--   Programação da interface do usuário do Windows
+-   Windows Programação de interface do usuário
 
 ## <a name="instructions"></a>Instruções
 

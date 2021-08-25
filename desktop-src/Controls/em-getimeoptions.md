@@ -1,9 +1,9 @@
 ---
-title: Mensagem de EM_GETIMEOPTIONS (RichEdit. h)
-description: Recupera as opções atuais do IME (editor de método de entrada).
+title: EM_GETIMEOPTIONS mensagem (Richedit.h)
+description: Recupera as opções atuais do IME (Editor de Método de Entrada).
 ms.assetid: 81ec89b9-dabd-487e-805e-e3c2e58e3068
 keywords:
-- Controles de EM_GETIMEOPTIONS de mensagens do Windows
+- EM_GETIMEOPTIONS controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,19 +14,19 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7bd805f2407fbe9e055df3d9174f106d33991aca
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: aea4513189014969dbfdf69a0ad257cbfde6a4ff99c2499f478c4865100a23c2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085936"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120049056"
 ---
-# <a name="em_getimeoptions-message"></a>\_Mensagem em GETIMEOPTIONS
+# <a name="em_getimeoptions-message"></a>Mensagem EM \_ GETIMEOPTIONS
 
-Recupera as opções atuais do IME (editor de método de entrada).
+Recupera as opções atuais do IME (Editor de Método de Entrada).
 
 > [!Note]  
-> Esta mensagem tem suporte apenas em versões de idioma asiático do Microsoft Rich Edit 1,0. Não há suporte para ele em versões posteriores do rich edit.
+> Essa mensagem só tem suporte em versões de idioma asiático do Microsoft Rich Edit 1.0. Não há suporte para ele em nenhuma versão posterior do Rich Edit.
 
  
 
@@ -48,9 +48,9 @@ Não usado; deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Essa mensagem retorna um ou mais dos valores de sinalizador de opção do IME descritos na mensagem em [**\_ SETIMEOPTIONS**](em-setimeoptions.md) .
+Essa mensagem retorna um ou mais dos valores de sinalizador de opção IME descritos na [**mensagem EM \_ SETIMEOPTIONS.**](em-setimeoptions.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -58,9 +58,9 @@ Essa mensagem retorna um ou mais dos valores de sinalizador de opção do IME de
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -68,7 +68,7 @@ Essa mensagem retorna um ou mais dos valores de sinalizador de opção do IME de
 
 <dl> <dt>
 
-[**em \_ SETIMEOPTIONS**](em-setimeoptions.md)
+[**EM \_ SETIMEOPTIONS**](em-setimeoptions.md)
 </dt> </dl>
 
  

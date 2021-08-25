@@ -1,33 +1,33 @@
 ---
-description: Exemplo de marca
+description: Exemplo de tique
 ms.assetid: 1a3de957-70ea-4b9d-94a0-9b0a74f15d78
-title: Exemplo de marca
+title: Exemplo de tique
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ecee7400d6a1cad71101359b0ce538077a25673
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 31e91dfc8cbc0634cc319164b12939ed20555356a1e8ed92d78fc377af1d58e0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105760081"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120049906"
 ---
-# <a name="ticker-sample"></a>Exemplo de marca
+# <a name="ticker-sample"></a>Exemplo de tique
 
 ## <a name="description"></a>Descrição
 
-Este exemplo usa o processador de mixagem de vídeo para misturar vídeo e texto. Ele usa a interface [**IVMRMixerBitmap9**](/previous-versions/windows/desktop/api/Vmr9/nn-vmr9-ivmrmixerbitmap9) para misturar texto na parte inferior da janela de vídeo.
+Este exemplo usa o Renderização de Combinação de Vídeo para combinar vídeo e texto. Ele usa a [**interface IVMRMixerBitmap9**](/previous-versions/windows/desktop/api/Vmr9/nn-vmr9-ivmrmixerbitmap9) para mesclar texto na parte inferior da janela de vídeo.
 
-O aplicativo cria um bitmap com uma cadeia de caracteres de texto padrão e rola-o na parte inferior da tela. Para alterar o texto, escolha **Definir cadeia de texto...** no menu de **marcação** . Para definir a fonte, escolha **definir fonte...** no menu de **marcação** . Se você selecionar **usar imagem estática** no menu de **marcação** , o aplicativo alternará de uma cadeia de caracteres de texto dinâmico para uma imagem de bitmap estática.
+O aplicativo cria um bitmap com uma cadeia de caracteres de texto padrão e rola-o na parte inferior da tela. Para alterar o texto, escolha **Definir cadeia de caracteres de texto...** no menu **Tique.** Para definir a fonte, escolha **Definir fonte...** no menu **Tique.** Se você selecionar **Usar imagem estática no** menu **Tique,** o aplicativo mudará de uma cadeia de caracteres de texto dinâmico para uma imagem de bitmap estática.
 
 ## <a name="downloading-the-sample"></a>Baixando o exemplo
 
-Para baixar os exemplos do SDK do DirectShow, instale a versão mais recente do [SDK do Windows](https://msdn.microsoft.com/windowsvista/bb980924.aspx).
+Para baixar os DirectShow exemplos do SDK, instale a versão mais recente do [SDK Windows .](https://msdn.microsoft.com/windowsvista/bb980924.aspx)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Amostras do DirectShow](directshow-samples.md)
+[DirectShow Amostras](directshow-samples.md)
 </dt> </dl>
 
  

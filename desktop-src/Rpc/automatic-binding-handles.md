@@ -1,28 +1,28 @@
 ---
-title: Identificadores de associação automática
-description: Os identificadores de associação automática são úteis quando o aplicativo não requer um servidor específico e quando não precisa manter nenhuma informação de estado entre o cliente e o servidor.
+title: Alças de associação automática
+description: Os alças de associação automática são úteis quando o aplicativo não requer um servidor específico e quando não precisa manter nenhuma informação de estado entre o cliente e o servidor.
 ms.assetid: ba049369-6c8b-4313-a266-e0364a30056e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5fe83d3f9029e0384c87e5e409583ff70f1e91ac
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: b619b17e44e79e623bcffa84f4938d1278a7d146d6de90547cd833e1bf091167
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104294386"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120023436"
 ---
-# <a name="automatic-binding-handles"></a>Identificadores de associação automática
+# <a name="automatic-binding-handles"></a>Alças de associação automática
 
-Os identificadores de associação automática são úteis quando o aplicativo não requer um servidor específico e quando não precisa manter nenhuma informação de estado entre o cliente e o servidor. Quando você usa um identificador de ligação automática, não precisa escrever nenhum código de aplicativo cliente para lidar com associações e identificadores — basta especificar o uso do identificador de ligação automática no arquivo de configuração de aplicativo (ACF). Em seguida, o stub define o identificador e gerencia a associação.
+Os alças de associação automática são úteis quando o aplicativo não requer um servidor específico e quando não precisa manter nenhuma informação de estado entre o cliente e o servidor. Ao usar um alça de associação automática, você não precisa escrever nenhum código de aplicativo cliente para lidar com a associação e os alças– basta especificar o uso do alça de associação automática no arquivo de configuração de aplicativo (ACF). Em seguida, o stub define o handle e gerencia a associação.
 
-Por exemplo, uma operação de carimbo de data/hora pode ser implementada usando um identificador automático. Não faz diferença ao aplicativo cliente que o servidor fornece com o carimbo de data/hora, pois ele pode aceitar o tempo de qualquer servidor disponível.
+Por exemplo, uma operação de carimbo de data/hora pode ser implementada usando uma alça automática. Não faz diferença para o aplicativo cliente que o servidor fornece o carimbo de data/hora, pois ele pode aceitar a hora de qualquer servidor disponível.
 
 > [!Note]  
-> Os identificadores automáticos não têm suporte para a plataforma Macintosh.
+> Não há suporte para alças automáticas para a plataforma Macintosh.
 
- 
+ 
 
-Você especifica o uso de identificadores automáticos, incluindo o atributo de \[ [**\_ identificador automático**](/windows/desktop/Midl/auto-handle) \] no ACF. O exemplo de carimbo de data/hora usa o seguinte ACF:
+Especifique o uso de alças automáticas incluindo o atributo \[ [**de \_ alça**](/windows/desktop/Midl/auto-handle) \] automática no ACF. O exemplo de carimbo de data/hora usa o seguinte ACF:
 
 ``` syntax
 /* ACF file */
@@ -34,9 +34,9 @@ interface autoh
 }
 ```
 
-Quando o ACF não inclui nenhum outro atributo de identificador e quando os procedimentos remotos não usam identificadores explícitos, o compilador MIDL usa identificadores automáticos por padrão. Ele também usa identificadores automáticos como padrão quando o ACF não está presente.
+Quando o ACF não inclui nenhum outro atributo de handle e quando os procedimentos remotos não usam alças explícitas, o compilador MIDL usa alças automáticas por padrão. Ele também usa alças automáticas como o padrão quando o ACF não está presente.
 
-Os procedimentos remotos são especificados no arquivo IDL. O identificador automático não deve aparecer como um argumento para o procedimento remoto. Por exemplo:
+Os procedimentos remotos são especificados no arquivo IDL. O handle automático não deve aparecer como um argumento para o procedimento remoto. Por exemplo:
 
 ``` syntax
 /* IDL file */
@@ -52,8 +52,8 @@ interface autoh
 }
 ```
 
-O benefício do identificador automático é que o desenvolvedor não precisa escrever nenhum código para gerenciar o identificador; os stubs gerenciam a associação automaticamente. Isso é significativamente diferente do [exemplo Hello, World](tutorial.md), em que o cliente gerencia o identificador primitivo implícito definido no ACF e deve chamar várias funções de tempo de execução para estabelecer o identificador de associação.
+O benefício do controle automático é que o desenvolvedor não precisa escrever nenhum código para gerenciar o handle; os stubs gerenciam a associação automaticamente. Isso é significativamente diferente do exemplo [Hello, World,](tutorial.md)em que o cliente gerencia o handle primitivo implícito definido no ACF e deve chamar várias funções de tempo de run time para estabelecer o alça de associação.
 
- 
+ 
 
- 
+ 

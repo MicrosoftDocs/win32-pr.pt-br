@@ -17,9 +17,9 @@ A interface [**IBackgroundCopyQMgr**](/windows/desktop/api/Qmgr/nn-qmgr-ibackgro
 
 ## <a name="in-this-section"></a>Nesta seção
 
--   [**Método CreateObject**](/windows/desktop/api/Qmgr/nf-qmgr-ibackgroundcopyqmgr-creategroup)
+-   [**Método CreateGroup**](/windows/desktop/api/Qmgr/nf-qmgr-ibackgroundcopyqmgr-creategroup)
 -   [**Método EnumGroups**](/windows/desktop/api/Qmgr/nf-qmgr-ibackgroundcopyqmgr-enumgroups)
--   [**Método getgroup**](/windows/desktop/api/Qmgr/nf-qmgr-ibackgroundcopyqmgr-getgroup)
+-   [**Método GetGroup**](/windows/desktop/api/Qmgr/nf-qmgr-ibackgroundcopyqmgr-getgroup)
 
  
 

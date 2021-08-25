@@ -2,7 +2,7 @@
 description: Verifica se o chassi físico referenciado pode ser contido ou inserido no pacote físico.
 ms.assetid: 9a1aa1b7-2b95-4887-9d14-e416ff69f9df
 ms.tgt_platform: multiple
-title: Método IsCompatible da classe CIM_Chassis classe
+title: Método iscompatível da classe CIM_Chassis
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,16 +21,16 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "120003286"
 ---
-# <a name="iscompatible-method-of-the-cim_chassis-class"></a>Método IsCompatible da classe \_ Chassis CIM
+# <a name="iscompatible-method-of-the-cim_chassis-class"></a>Método iscompatível da classe de \_ chassi CIM
 
-O **método IsCompatible** verifica se o chassi físico referenciado pode ser contido ou inserido no pacote físico. Em uma subclasse, o conjunto de códigos de retorno possíveis pode ser especificado usando um qualificador [**ValueMap**](/windows/desktop/WmiSdk/standard-qualifiers) no método . As cadeias de caracteres para as quais o conteúdo **valueMap** são convertidos também podem ser especificadas na subclasse como um qualificador de matriz **Valores.** Esse método é herdado de [**CIM \_ PhysicalPackage.**](cim-physicalpackage.md)
+O método **iscompatível** verifica se o chassi físico referenciado pode ser contido ou inserido no pacote físico. Em uma subclasse, o conjunto de códigos de retorno possíveis pode ser especificado usando um qualificador [**ValueMap**](/windows/desktop/WmiSdk/standard-qualifiers) no método. As cadeias de caracteres nas quais os conteúdos de **ValueMap** são convertidos também podem ser especificadas na subclasse como um qualificador de matriz de **valores** . Esse método é herdado do [**CIM \_ PhysicalPackage**](cim-physicalpackage.md).
 
 > [!IMPORTANT]
-> As classes CIM (Distributed Management Task Force) do DMTF (Distributed Management Task Force) modelo CIM são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
+> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
 
  
 
-Este tópico usa sintaxe Managed Object Format (MOF). Para obter mais informações sobre como usar esse método, consulte [Chamando um método](/windows/desktop/WmiSdk/calling-a-method).
+Este tópico usa a sintaxe formato MOF (MOF). Para obter mais informações sobre como usar esse método, consulte [chamando um método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,7 +47,7 @@ uint32 IsCompatible(
 
 <dl> <dt>
 
-*ElementToCheck* \[ Em\]
+*ElementToCheck* \[ no\]
 </dt> <dd>
 
 Referência ao elemento físico para o qual verificar a compatibilidade.
@@ -56,13 +56,13 @@ Referência ao elemento físico para o qual verificar a compatibilidade.
 
 ## <a name="return-value"></a>Valor retornado
 
-Retorna um valor de 0 (zero) em caso de êxito, 1 (um) se não há suporte para a solicitação e qualquer outro número para indicar um erro.
+Retorna um valor de 0 (zero) em caso de sucesso, 1 (um) se a solicitação não tiver suporte e qualquer outro número para indicar um erro.
 
 ## <a name="remarks"></a>Comentários
 
-Atualmente, esse método não é implementado pelo WMI. Para usar esse método, você deve implementá-lo em seu próprio provedor.
+Este método não está implementado no momento pelo WMI. Para usar esse método, você deve implementá-lo em seu próprio provedor.
 
-Esta documentação é derivada das descrições da classe CIM publicadas pelo DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, estar em conformidade com os padrões de documentação do SDK da Microsoft ou fornecer mais informações.
+Esta documentação é derivada das descrições da classe CIM publicadas pela DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, obedecer aos padrões de documentação do Microsoft SDK ou fornecer mais informações.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -72,8 +72,8 @@ Esta documentação é derivada das descrições da classe CIM publicadas pelo D
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
+| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -82,10 +82,10 @@ Esta documentação é derivada das descrições da classe CIM publicadas pelo D
 
 <dl> <dt>
 
-[**Chassi CIM \_**](iscompatible-method-in-class-cim-chassis.md)
+[**\_Chassi CIM**](iscompatible-method-in-class-cim-chassis.md)
 </dt> <dt>
 
-[**Chassi CIM \_**](cim-chassis.md)
+[**\_Chassi CIM**](cim-chassis.md)
 </dt> </dl>
 
  

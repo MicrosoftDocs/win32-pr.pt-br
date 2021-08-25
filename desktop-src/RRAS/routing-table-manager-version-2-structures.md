@@ -7,12 +7,12 @@ keywords:
 - Gerenciador de tabela de roteamento versão 2 RRAS, estruturas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: de227d8957d3b0ca64f8c7d8cbdc3eb3af390c01
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a3905614ca0e8a16ac85d986e04fe450ce4c2e23ee6b11a4b7a4c64f65568d9b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105768688"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120035976"
 ---
 # <a name="routing-table-manager-version-2-structures"></a>Estruturas da versão 2 do Gerenciador de tabela de roteamento
 
@@ -42,9 +42,9 @@ As funções RTMv2 usam as seguintes estruturas.
 
 [**\_informações de rota RTM \_**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_route_info)
 
- 
+ 
 
- 
+ 
 
 
 

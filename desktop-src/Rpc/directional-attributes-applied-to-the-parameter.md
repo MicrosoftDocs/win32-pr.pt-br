@@ -4,12 +4,12 @@ description: Os atributos direcionais \ in \ e \ out \ determinam como o cliente
 ms.assetid: 21ab54c4-a707-4ee3-bea8-8ba216e25c16
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 752432836075b319483e3a17421f691a111689b4
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 9e18e34a7ea553fd5c1fd9157877a0296e403443fc490bb328f48ac4b7b2c8b3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105759343"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120073386"
 ---
 # <a name="directional-attributes-applied-to-the-parameter"></a>Atributos direcionais aplicados ao parâmetro
 
@@ -25,10 +25,10 @@ Os atributos direcionais \[ [dentro](/windows/desktop/Midl/in) \] e \[ [fora](/w
 
 
 
- 
+ 
 
 Em todos esses casos, o stub do cliente não libera memória. O aplicativo cliente deve liberar a memória antes de ser encerrado. O stub de servidor libera memória quando a chamada de procedimento remoto retorna (sujeito ao \[ atributo [ALLOCATE](/windows/desktop/Midl/allocate) \] ACF).
 
- 
+ 
 
- 
+ 

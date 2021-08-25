@@ -1,9 +1,9 @@
 ---
-title: Mensagem de LB_RESETCONTENT (WinUser. h)
+title: LB_RESETCONTENT mensagem (Winuser.h)
 description: Remove todos os itens de uma caixa de listagem.
 ms.assetid: 3865e45e-62da-457a-801c-2f9a61687022
 keywords:
-- Controles de LB_RESETCONTENT de mensagens do Windows
+- LB_RESETCONTENT controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c0091871df045812dcaa7a159cc456a1350d20f0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c896263cd4a695583bda299b0feeff552a05ef2c938b9df348da685821c46652
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824682"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120085366"
 ---
-# <a name="lb_resetcontent-message"></a>RESETCONTENT de mensagens de LB \_
+# <a name="lb_resetcontent-message"></a>Mensagem LB \_ RESETCONTENT
 
 Remove todos os itens de uma caixa de listagem.
 
@@ -43,13 +43,13 @@ Não usado; deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa mensagem não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Se a caixa de listagem tiver um estilo desenhado pelo proprietário, mas não o estilo de [**lbs \_ HASSTRINGS**](list-box-styles.md) , o proprietário da caixa de listagem receberá uma mensagem do [**WM \_ DELETEITEM**](wm-deleteitem.md) para cada item na caixa de listagem.
+Se a caixa de listagem tiver um estilo desenhado pelo proprietário, mas não o estilo [**\_ HASSTRINGS do LBS,**](list-box-styles.md) o proprietário da caixa de listagem receberá uma mensagem [**WM \_ DELETEITEM**](wm-deleteitem.md) para cada item na caixa de listagem.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,9 +57,9 @@ Se a caixa de listagem tiver um estilo desenhado pelo proprietário, mas não o 
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -67,7 +67,7 @@ Se a caixa de listagem tiver um estilo desenhado pelo proprietário, mas não o 
 
 <dl> <dt>
 
-[**DELETEITEM do WM \_**](wm-deleteitem.md)
+[**WM \_ DELETEITEM**](wm-deleteitem.md)
 </dt> </dl>
 
  

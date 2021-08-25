@@ -4,67 +4,67 @@ ms.assetid: b668f1c3-eed0-44c5-921f-e92c016130f0
 title: GUIDs de formato de objeto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d69d941e8c644597fc182a9a0ed1207a88bad060
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6737795e2315ae1d69790fbdb7a981dc976181e77f944a899047781070b707b5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103662436"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120054936"
 ---
 # <a name="object-format-guids"></a>GUIDs de formato de objeto
 
-O formato de um arquivo em um dispositivo pode ser descrito por um valor de **GUID** . Esse valor é especificado pela propriedade **de \_ \_ formato de objeto WPD** . Os dispositivos portáteis do Windows definem os seguintes formatos:
+O formato de um arquivo em um dispositivo pode ser descrito por um **valor guid.** Esse valor é especificado pela propriedade **WPD \_ OBJECT \_ FORMAT.** Windows Dispositivos Portáteis define os seguintes formatos:
 
 
 
 | GUID de formato                                | Descrição                                                                                                                                                  |
 |--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_3G2 de \_ formato de objeto WPD \_                   | 3G2 áudio, ou vídeo, arquivo                                                                                                                                    |
-| \_3G2A de \_ formato de objeto WPD \_                  | Áudio (3G2A)                                                                                                                                                 |
-| \_3GP de \_ formato de objeto WPD \_                   | arquivo de áudio 3GP                                                                                                                                               |
-| \_AAC de \_ formato de objeto WPD \_                   | Áudio (AAC)                                                                                                                                                  |
-| formato de objeto WPD, \_ \_ \_ AIFF                  | Áudio (AIFF)                                                                                                                                                 |
-| \_formato de objeto WPD \_ \_ All                   | Identifica todos os formatos disponíveis                                                                                                                             |
-| \_formato de objeto WPD \_ \_ Amr                   | Áudio (AMR)                                                                                                                                                  |
-| formato de objeto WPD, \_ \_ \_ ASF                   | Vídeo (ASF, formato avançado de streaming da Microsoft)                                                                                                             |
-| \_ASXPLAYLIST de \_ formato de objeto WPD \_           | Lista de reprodução (ASX)                                                                                                                                               |
-| \_ATSCTS de \_ formato de objeto WPD \_                | ATSCTS áudio, ou vídeo, arquivo                                                                                                                                 |
-| \_formato de objeto WPD \_ \_ audível               | Áudio                                                                                                                                                        |
-| \_AVCHD de \_ formato de objeto WPD \_                 | AVCHD áudio, ou vídeo, arquivo                                                                                                                                  |
-| \_formato de objeto WPD \_ \_ avi                   | Vídeo (AVI)                                                                                                                                                  |
-| \_bmp de \_ formato de objeto WPD \_                   | Imagem (BMP, arquivo de bitmap)                                                                                                                                     |
-| \_CIFF de \_ formato de objeto WPD \_                  | Imagem (CIFF, formato de arquivo de imagem da câmera Canon)                                                                                                                 |
-| \_DPOF de \_ formato de objeto WPD \_                  | Texto (arquivo de pedido de impressão digital)                                                                                                                              |
-| \_DVBTS de \_ formato de objeto WPD \_                 | DVBTS áudio, ou vídeo, arquivo                                                                                                                                  |
-| \_executável de \_ formato de objeto WPD \_            | Executável                                                                                                                                                   |
-| \_EXIF de \_ formato de objeto WPD \_                  | Imagem (formato de arquivo intercambiável)                                                                                                                             |
-| \_FLAC de \_ formato de objeto WPD \_                  | Áudio (FLAC)                                                                                                                                                 |
-| \_formato de objeto WPD \_ \_ FLASHPIX              | Imagem (formato de imagem de armazenamento estruturado)                                                                                                                      |
-| \_GIF de \_ formato de objeto WPD \_                   | Imagem (GIF, Graphics Interchange Format)                                                                                                                     |
-| \_HTML de \_ formato de objeto WPD \_                  | HTML                                                                                                                                                         |
-| \_ícone de \_ formato de objeto WPD \_                  | Ícone do Windows (ICO)                                                                                                                                           |
-| \_formato de objeto WPD \_ \_ JFIF                  | Imagem (formato JPEG Interchange)                                                                                                                              |
-| \_JP2 de \_ formato de objeto WPD \_                   | Image (formato de arquivo de linha de base JPEG2000)                                                                                                                        |
-| \_JPEGXR de \_ formato de objeto WPD \_                | Imagem (JPEGXR, também chamada de foto de HD)                                                                                                                 |
-| \_JPX de \_ formato de objeto WPD \_                   | Imagem (formato de arquivo estendido JPEG2000)                                                                                                                        |
-| \_M3UPLAYLIST de \_ formato de objeto WPD \_           | Lista de reprodução (M3U)                                                                                                                                               |
-| formato de objeto WPD de \_ \_ \_ \_ HTML compilado mht \_   | Formato de arquivo de documento HTML compilado MHT                                                                                                                       |
-| \_formato de objeto WPD \_ \_ Microsoft \_ Excel      | Microsoft Office formato de arquivo de documento do Excel                                                                                                                  |
-| \_formato de objeto WPD \_ \_ Microsoft \_ PowerPoint | Formato de arquivo de documento do Microsoft Office PowerPoint                                                                                                             |
-| \_formato de objeto WPD \_ \_ Microsoft \_ wfc        | Formato de arquivo do Windows Connect Now                                                                                                                              |
-| \_formato de objeto WPD \_ \_ Microsoft \_ Word       | Microsoft Office formato de arquivo de documento do Word                                                                                                                   |
-| \_MP2 de \_ formato de objeto WPD \_                   | Formato de arquivo de áudio ou vídeo (MP2)                                                                                                                             |
-| \_Formato de objeto WPD \_ \_ mp3                   | Áudio (MP3)                                                                                                                                                  |
-| \_M4A de \_ formato de objeto WPD \_                   | Arquivo de áudio do MPEG4                                                                                                                                             |
-| \_Formato de objeto WPD \_ \_ MP4                   | Arquivo de vídeo MPEG4                                                                                                                                             |
-| \_formato de objeto WPD \_ \_ MPEG                  | Vídeo (MPEG)                                                                                                                                                 |
-| \_MPLPLAYLIST de \_ formato de objeto WPD \_           | Lista de reprodução (MPL)                                                                                                                                               |
-| \_Associação de \_ rede de formato de objeto WPD \_ \_  | Formato de arquivo de associação de rede                                                                                                                              |
-| \_OGG de \_ formato de objeto WPD \_                   | Áudio (OCG)                                                                                                                                                  |
-| formato de objeto WPD ( \_ \_ \_ PCD)                   | Imagem (PAC de imagem PhotoCD)                                                                                                                                    |
-| formato de objeto WPD, \_ \_ \_ PICT                  | Imagem (formato de imagem Apple QuickDraw)                                                                                                                         |
-| \_PLSPLAYLIST de \_ formato de objeto WPD \_           | Lista de reprodução (PLS)                                                                                                                                               |
-| formato de objeto WPD do \_ \_ \_ png                   | Imagem (Portable Network Graphics)                                                                                                                            |
+| FORMATO DE OBJETO WPD \_ \_ \_ 3G2                   | Arquivo de áudio ou vídeo 3G2                                                                                                                                    |
+| FORMATO DE OBJETO WPD \_ \_ \_ 3G2A                  | Áudio (3G2A)                                                                                                                                                 |
+| FORMATO DE OBJETO WPD \_ \_ \_ 3GP                   | Arquivo de áudio 3GP                                                                                                                                               |
+| WPD \_ OBJECT \_ FORMAT \_ AAC                   | Áudio (AAC)                                                                                                                                                  |
+| WPD \_ OBJECT \_ FORMAT \_ AIFF                  | Áudio (AIFF)                                                                                                                                                 |
+| WPD \_ OBJECT \_ FORMAT \_ ALL                   | Identifica todos os formatos disponíveis                                                                                                                             |
+| WPD \_ OBJECT \_ FORMAT \_ AMR                   | Áudio (AMR)                                                                                                                                                  |
+| ASF DE \_ FORMATO \_ DE OBJETO \_ WPD                   | Vídeo (ASF, Formato de Streaming Avançado da Microsoft)                                                                                                             |
+| FORMATO DE OBJETO WPD \_ \_ \_ ASXPLAYLIST           | Playlist (ASX)                                                                                                                                               |
+| ATSCTS DE \_ FORMATO DE OBJETO \_ \_ WPD                | Arquivo de áudio ou vídeo ATSCTS                                                                                                                                 |
+| FORMATO DE OBJETO WPD \_ \_ \_ AUDÍVEL               | Áudio                                                                                                                                                        |
+| AVCHD DE FORMATO \_ \_ DE OBJETO \_ WPD                 | Arquivo de áudio AVCHD ou vídeo                                                                                                                                  |
+| WPD \_ OBJECT \_ FORMAT \_ AVI                   | Vídeo (AVI)                                                                                                                                                  |
+| BMP DE \_ FORMATO \_ DE \_ OBJETO WPD                   | Imagem (BMP, arquivo bitmap)                                                                                                                                     |
+| WPD \_ OBJECT \_ FORMAT \_ CIFF                  | Image (CIFF, formato de arquivo de imagem da câmera canon)                                                                                                                 |
+| DPOF DE FORMATO \_ \_ DE OBJETO \_ WPD                  | Texto (Arquivo de Ordem de Impressão Digital)                                                                                                                              |
+| DVBTS DE FORMATO \_ \_ DE \_ OBJETO WPD                 | Arquivo de áudio ou vídeo DVBTS                                                                                                                                  |
+| EXECUTÁVEL DE \_ FORMATO \_ DE OBJETO \_ WPD            | Executável                                                                                                                                                   |
+| WPD \_ OBJECT \_ FORMAT \_ EXIF                  | Imagem (formato de arquivo permutável)                                                                                                                             |
+| WPD \_ OBJECT \_ FORMAT \_ FLAC                  | Áudio (FLAC)                                                                                                                                                 |
+| WPD \_ OBJECT \_ FORMAT \_ FLASHPIX              | Imagem (formato Armazenamento imagem estruturada)                                                                                                                      |
+| GIF DE FORMATO \_ DE \_ OBJETO \_ WPD                   | Imagem (GIF, Graphics Interchange Format)                                                                                                                     |
+| HTML DE FORMATO \_ \_ DE OBJETO WPD \_                  | HTML                                                                                                                                                         |
+| ÍCONE DE FORMATO \_ DE \_ OBJETO \_ WPD                  | Windows ícone (ICO)                                                                                                                                           |
+| JFIF DE FORMATO \_ \_ DE \_ OBJETO WPD                  | Imagem (formato de intercâmbio JPEG)                                                                                                                              |
+| FORMATO DE OBJETO WPD \_ \_ \_ JP2                   | Imagem (formato de arquivo de linha de base JPEG2000)                                                                                                                        |
+| FORMATO DE \_ OBJETO \_ \_ WPD JPEGXR                | Imagem (JPEGXR, também conhecido como Hd Photo)                                                                                                                 |
+| FORMATO DE \_ OBJETO \_ \_ WPD JPX                   | Imagem (formato de arquivo estendido JPEG2000)                                                                                                                        |
+| WPD \_ OBJECT \_ FORMAT \_ M3UPLAYLIST           | Playlist (M3U)                                                                                                                                               |
+| HTML COMPILADO EM FORMATO DE OBJETO WPD \_ \_ \_ \_ \_ MHT   | Formato de arquivo de documento HTML compilado MHT                                                                                                                       |
+| FORMATO DE OBJETO WPD \_ \_ MICROSOFT \_ \_ EXCEL      | Microsoft Office Excel formato de arquivo de documento                                                                                                                  |
+| FORMATO DE OBJETO WPD \_ \_ MICROSOFT \_ \_ POWERPOINT | Microsoft Office PowerPoint formato de arquivo de documento                                                                                                             |
+| WFC DO MICROSOFT WPD \_ \_ OBJECT FORMAT \_ \_        | Conexão Fácil do Windows de arquivo                                                                                                                              |
+| WPD \_ OBJECT \_ FORMAT \_ MICROSOFT \_ WORD       | Microsoft Office Formato de arquivo do Documento do Word                                                                                                                   |
+| FORMATO DE OBJETO WPD \_ \_ \_ MP2                   | Formato de arquivo de áudio ou vídeo (MP2)                                                                                                                             |
+| FORMATO DE OBJETO WPD \_ \_ \_ MP3                   | Áudio (MP3)                                                                                                                                                  |
+| FORMATO DE OBJETO WPD \_ \_ \_ M4A                   | Arquivo de áudio MPEG4                                                                                                                                             |
+| FORMATO DE OBJETO WPD \_ \_ \_ MP4                   | Arquivo de vídeo MPEG4                                                                                                                                             |
+| MPEG \_ DE FORMATO DE OBJETO \_ \_ WPD                  | Vídeo (MPEG)                                                                                                                                                 |
+| WPD \_ OBJECT \_ FORMAT \_ MPLPLAYLIST           | Playlist (MPL)                                                                                                                                               |
+| ASSOCIAÇÃO DE REDE DE \_ FORMATO \_ DE \_ \_ OBJETO WPD  | Formato de arquivo de Associação de Rede                                                                                                                              |
+| OGG DE \_ FORMATO \_ DE \_ OBJETO WPD                   | Áudio (OCG)                                                                                                                                                  |
+| PCD DE FORMATO \_ \_ DE OBJETO \_ WPD                   | Image (PhotoCD Image Pac)                                                                                                                                    |
+| WPD \_ OBJECT \_ FORMAT \_ PICT                  | Imagem (formato de imagem QuickDraw da Apple)                                                                                                                         |
+| WPD \_ OBJECT \_ FORMAT \_ PLSPLAYLIST           | Playlist (PLS)                                                                                                                                               |
+| PNG DE FORMATO \_ \_ DE \_ OBJETO WPD                   | Imagem (elementos gráficos de rede portátil)                                                                                                                            |
 | \_ \_ somente Propriedades de formato de objeto WPD \_ \_      | Este objeto não tem nenhum fluxo de dados e é especificado completamente pelas propriedades                                                                                     |
 | \_QCELP de \_ formato de objeto WPD \_                 | Áudio (previsão linear de entusiasmo com código Qualcomm)                                                                                                              |
 | \_script de \_ formato de objeto WPD \_                | Script (formato específico do dispositivo)                                                                                                                              |
@@ -72,7 +72,7 @@ O formato de um arquivo em um dispositivo pode ser descrito por um valor de **GU
 | formato de objeto de WPD \_ \_ \_ TIFF                  | Image (formato de arquivo de imagem de marca)                                                                                                                                |
 | \_TIFFEP de \_ formato de objeto WPD \_                | Imagem (formato de arquivo de imagem de marca para fotografia eletrônica)                                                                                                     |
 | \_TIFFIT de \_ formato de objeto WPD \_                | Image (formato de arquivo de imagem de marca para tecnologia informativa)                                                                                                   |
-| \_formato de objeto WPD \_ \_ não especificado           | Um formato de objeto indefinido ou não especificado no dispositivo. Isso é usado para objetos que não podem ser especificados por códigos de formato de dispositivos portáteis do Windows definidos. |
+| \_formato de objeto WPD \_ \_ não especificado           | Um formato de objeto indefinido ou não especificado no dispositivo. isso é usado para objetos que não podem ser especificados por Windows códigos de formato de dispositivos portáteis definidos. |
 | \_VCALENDAR1 de \_ formato de objeto WPD \_            | formato de arquivo vCalendar (vCalendar versão 1)                                                                                                                  |
 | \_VCARD2 de \_ formato de objeto WPD \_                | formato de arquivo vCard (versão 2 do vCard)                                                                                                                          |
 | \_VCARD3 de \_ formato de objeto WPD \_                | formato de arquivo vCard (vCard versão 3)                                                                                                                          |

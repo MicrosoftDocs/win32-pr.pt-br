@@ -1,28 +1,28 @@
 ---
 title: Estruturas de interface de protocolo de roteamento
-description: As funções de interface de protocolo de roteamento usam as seguintes estruturas.
+description: As Funções de Interface do Protocolo de Roteamento usam as estruturas a seguir.
 ms.assetid: 679c74fa-0049-4556-a942-e51160ceb796
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b32e8ba21a99ceabe18a1eea2470edf0ac2f5a3d
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 62075ca136d210fc3831779f03563405e18f5ad1fae625c697e184133aa32fd1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104008082"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120035996"
 ---
 # <a name="routing-protocol-interface-structures"></a>Estruturas de interface de protocolo de roteamento
 
-As [funções de interface de protocolo de roteamento](routing-protocol-interface-functions.md) usam as seguintes estruturas.
+As [Funções de Interface do Protocolo de Roteamento](routing-protocol-interface-functions.md) usam as estruturas a seguir.
 
 [**Mensagem**](/windows/desktop/api/Routprot/ns-routprot-message)
 
-[**\_características de roteamento de MPR \_**](/windows/desktop/api/Routprot/ns-routprot-mpr50_routing_characteristics)
+[**CARACTERÍSTICAS DE \_ ROTEAMENTO DE MPR \_**](/windows/desktop/api/Routprot/ns-routprot-mpr50_routing_characteristics)
 
-[**\_características do serviço MPR \_**](/windows/win32/api/stm/ns-stm-mpr40_service_characteristics)
+[**CARACTERÍSTICAS DO SERVIÇO MPR \_ \_**](/windows/win32/api/stm/ns-stm-mpr40_service_characteristics)
 
-[**ATUALIZAR \_ \_ mensagem completa**](/windows/desktop/api/Routprot/ns-routprot-update_complete_message)
+[**ATUALIZAR \_ MENSAGEM \_ COMPLETA**](/windows/desktop/api/Routprot/ns-routprot-update_complete_message)
 
- 
+ 
 
- 
+ 

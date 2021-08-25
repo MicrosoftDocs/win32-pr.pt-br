@@ -3,7 +3,7 @@ title: Mensagem de ACM_OPEN (commctrl. h)
 description: Abre um clipe AVI e exibe seu primeiro quadro em um controle de animação. Você pode enviar essa mensagem explicitamente ou usar a \_ macro animado abrir ou animar \_ OpenEx. É recomendável usar a versão Unicode desta mensagem, ACM \_ OPENW.
 ms.assetid: 87f476ce-bb27-4b5f-bfdf-dff84bd7e4f4
 keywords:
-- Controles de ACM_OPEN de mensagens do Windows
+- controles de Windows de mensagem de ACM_OPEN
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0588c0e321efe5cace63baf4016dbaa97f735252
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4c5af2bd996af159217c92d78102a97e5c530d34cf445d5ad34186cecb93ab85
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369352"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119922166"
 ---
 # <a name="acm_open-message"></a>\_Mensagem aberta do ACM
 
@@ -45,7 +45,7 @@ Um ponteiro para um buffer que contém o caminho do arquivo AVI ou o nome de um 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará zero se for bem-sucedido ou nenhum outro.
 
@@ -65,9 +65,9 @@ Você pode usar a [**animação \_ fechar**](/windows/desktop/api/Commctrl/nf-co
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 | Nomes Unicode e ANSI<br/>   | **ACM \_ OPENW** (Unicode) e **ACM \_ opena** (ANSI)<br/>                         |
 
 

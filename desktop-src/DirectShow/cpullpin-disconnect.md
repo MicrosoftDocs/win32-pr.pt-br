@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ec13a7f29a06bab4f79ddb58932796f8363adadc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0491bfba7e5b739a2b46674cc2f6506017810d4f1e51693d4478720c67a4a4da
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105756615"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120055066"
 ---
 # <a name="cpullpindisconnect-method"></a>Método CPullPin. Disconnect
 
@@ -40,13 +40,13 @@ HRESULT Disconnect();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna S \_ OK.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método interrompe qualquer conexão feita no método [**CPullPin:: Connect**](cpullpin-connect.md) . Chame esse método dentro de seu método [**IPin::D isconnect**](/windows/desktop/api/Strmif/nf-strmif-ipin-disconnect) . (Se o PIN deriva de [**CBasePin**](cbasepin.md), substitua [**CBasePin:: BreakConnect**](cbasepin-breakconnect.md) para chamar esse método.)
+esse método interrompe qualquer conexão feita no método [**CPullPin:: Conexão**](cpullpin-connect.md) . Chame esse método dentro de seu método [**IPin::D isconnect**](/windows/desktop/api/Strmif/nf-strmif-ipin-disconnect) . (Se o PIN deriva de [**CBasePin**](cbasepin.md), substitua [**CBasePin:: BreakConnect**](cbasepin-breakconnect.md) para chamar esse método.)
 
 ## <a name="requirements"></a>Requisitos
 

@@ -3,7 +3,7 @@ title: Mensagem de CB_GETDROPPEDSTATE (WinUser. h)
 description: Determina se a caixa de listagem de uma caixa de combinação é descartada.
 ms.assetid: a3f4e352-298d-45ea-a5a7-007f1fc1a387
 keywords:
-- Controles de CB_GETDROPPEDSTATE de mensagens do Windows
+- controles de Windows de mensagem de CB_GETDROPPEDSTATE
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ae321bbaa3078a04ffc97d4a8083a674d03d651
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a1674406b4dc5a4dd5e7985ba497fce8ef93e7c3480c050db0420b541c6d2ab6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009782"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120089246"
 ---
 # <a name="cb_getdroppedstate-message"></a>Mensagem do CB \_ GETremovestate
 
@@ -43,7 +43,7 @@ Não usado; deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a caixa de listagem estiver visível, o valor de retorno será **true**; caso contrário, será **false**.
 
@@ -53,9 +53,9 @@ Se a caixa de listagem estiver visível, o valor de retorno será **true**; caso
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

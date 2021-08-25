@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b4a2610ff4ada2c433da6eb28c51d36798f5db9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e3e54ce56237a487ef2c44cf318c5672733dd14ed222f1ed349f62c0b329e99a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105753645"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120065983"
 ---
 # <a name="poss-superiors-attribute"></a>Poss-Superiors atributo
 
@@ -61,7 +61,7 @@ A lista de objetos que podem conter esta classe.
 | System-Only            | Falso                                            |
 | É de valor único       | Falso                                            |
 | É indexado             | Falso                                            |
-| No catálogo global      | True                                             |
+| No catálogo global      | Verdadeiro                                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
@@ -82,7 +82,7 @@ A lista de objetos que podem conter esta classe.
 | System-Only            | Falso                                            |
 | É de valor único       | Falso                                            |
 | É indexado             | Falso                                            |
-| No catálogo global      | True                                             |
+| No catálogo global      | Verdadeiro                                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
@@ -103,7 +103,7 @@ A lista de objetos que podem conter esta classe.
 | System-Only            | Falso                                            |
 | É de valor único       | Falso                                            |
 | É indexado             | Falso                                            |
-| No catálogo global      | True                                             |
+| No catálogo global      | Verdadeiro                                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
@@ -122,10 +122,10 @@ A lista de objetos que podem conter esta classe.
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| É de valor único       | Falso                                            |
+| Tem valor único       | Falso                                            |
 | É indexado             | Falso                                            |
-| No catálogo global      | True                                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
+| No Catálogo Global      | Verdadeiro                                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
@@ -143,10 +143,10 @@ A lista de objetos que podem conter esta classe.
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| É de valor único       | Falso                                            |
+| Tem valor único       | Falso                                            |
 | É indexado             | Falso                                            |
-| No catálogo global      | True                                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
+| No Catálogo Global      | Verdadeiro                                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
@@ -164,10 +164,10 @@ A lista de objetos que podem conter esta classe.
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| É de valor único       | Falso                                            |
+| Tem valor único       | Falso                                            |
 | É indexado             | Falso                                            |
-| No catálogo global      | True                                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
+| No Catálogo Global      | Verdadeiro                                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
@@ -185,10 +185,10 @@ A lista de objetos que podem conter esta classe.
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| É de valor único       | Falso                                            |
+| Tem valor único       | Falso                                            |
 | É indexado             | Falso                                            |
-| No catálogo global      | True                                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
+| No Catálogo Global      | Verdadeiro                                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |

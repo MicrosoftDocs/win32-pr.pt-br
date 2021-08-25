@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: bfb26f6c71d544e0c0a6a4d833b40a5d15ae5485
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c08e22ad44cb1eec461ebe70361a8ee4640a7fdf5a7eb7040b2774a520be7a05
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828319"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119904356"
 ---
 # <a name="event-schema"></a>Esquema do evento
 
@@ -26,11 +26,11 @@ O esquema de evento define os seguintes elementos e tipos que identificam os ele
 
 A seção Elements contém os nomes dos elementos que você encontraria em eventos registrados; no entanto, para obter os detalhes de cada elemento, consulte o tipo complexo que contém o elemento.
 
-O SDK do Windows inclui o esquema no \\ arquivo include \\ Event. xsd.
+o SDK do Windows inclui o esquema no \\ arquivo Include \\ Event. xsd.
 
 Você pode usar esse esquema para identificar os elementos e atributos ao chamar a função [**EvtRender**](/windows/desktop/api/WinEvt/nf-winevt-evtrender) para renderizar seções ou propriedades específicas do evento. Para obter um exemplo que mostra como usar esse esquema ao renderizar eventos, consulte [renderizando eventos](rendering-events.md).
 
-Além do esquema de evento, o log de eventos do Windows também define os seguintes esquemas:
+além do esquema de evento, Windows Log de eventos também define os seguintes esquemas:
 
 -   [Esquema EventManifest](eventmanifestschema-schema.md)— define os elementos e tipos usados para escrever um manifesto de instrumentação.
 -   [Esquema de consulta](queryschema-schema.md)— define os elementos e tipos usados para gravar uma consulta para recuperar eventos de um ou mais canais.

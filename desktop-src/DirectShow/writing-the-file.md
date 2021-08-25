@@ -4,12 +4,12 @@ ms.assetid: d3dbe6ab-810c-4798-a769-c3f00c52a93a
 title: Gravando o arquivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bda23b144956ab5afca9dd733b29a6f9d639cddf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2cabb5575f371c6525e58cc8ede7d05c2701acc31be325af46e3b00e6e2d8d20
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105760080"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120051390"
 ---
 # <a name="writing-the-file"></a>Gravando o arquivo
 
@@ -18,7 +18,7 @@ Para gravar o arquivo, basta executar o gráfico de filtro chamando o método [*
 Para exibir o progresso da operação de gravação de arquivo, consulte o filtro Mux para a interface [**IMediaSeeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking) . Chame o método [**IMediaSeeking:: getDuration**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-getduration) para recuperar a duração do arquivo. Periodicamente, enquanto o grafo está em execução, chame o método [**IMediaSeeking:: getCurrentPosition**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-getcurrentposition) para recuperar a posição atual do grafo no fluxo. A posição atual dividida por duração fornece a porcentagem concluída.
 
 > [!Note]  
-> Um aplicativo geralmente consulta o Gerenciador do grafo de filtro para **IMediaSeeking**, mas a gravação de arquivos é uma exceção a essa regra. O Gerenciador de gráfico de filtro calcula a posição atual a partir da posição inicial e o tempo de execução do grafo, o que é preciso para a reprodução de arquivos, mas não para a gravação de arquivos. Portanto, para obter um resultado preciso, você deve recuperar a posição do filtro MUX.
+> um aplicativo geralmente consulta o filtro Graph Manager para **IMediaSeeking**, mas a gravação de arquivos é uma exceção a essa regra. o filtro Graph gerenciador calcula a posição atual a partir da posição inicial e o tempo de execução do grafo, o que é preciso para a reprodução de arquivos, mas não para a gravação de arquivos. Portanto, para obter um resultado preciso, você deve recuperar a posição do filtro MUX.
 
  
 
@@ -70,7 +70,7 @@ void OnTimer(HWND hDlg, IMediaSeeking *pSeek)
 
 
 
-Quando o aplicativo recebe um evento de conclusão do DirectShow, ele deve parar o grafo, conforme mostrado no código a seguir:
+quando o aplicativo recebe um evento de conclusão DirectShow, ele deve parar o grafo, conforme mostrado no código a seguir:
 
 
 ```C++

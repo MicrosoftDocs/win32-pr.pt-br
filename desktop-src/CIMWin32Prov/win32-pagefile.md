@@ -1,8 +1,8 @@
 ---
-description: O \_ arquivo de paginação Win32&\# 32; A classe WMI representa o arquivo usado para lidar com a troca de arquivos de memória virtual em um sistema Win32. Essa classe foi substituída.
+description: O Arquivo de \_ Página win32&\# 32; A classe WMI representa o arquivo usado para lidar com a troca de arquivos de memória virtual em um sistema Win32. Essa classe foi substituída.
 ms.assetid: 5599d09d-a2fd-4217-8560-5fd56f09d47b
 ms.tgt_platform: multiple
-title: Classe Win32_PageFile
+title: Win32_PageFile classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -50,18 +50,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: fb63c4242ae8fa3cca5133a25d2742d07210ca1c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: d7b144153d94ba1c28234e38e3983eb4a1ab165f4bda26b97eac00799cb3e9ab
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105756430"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119972296"
 ---
-# <a name="win32_pagefile-class"></a>\_Classe de arquivo de paginação Win32
+# <a name="win32_pagefile-class"></a>Classe PageFile do Win32 \_
 
-A [classe WMI](../wmisdk/retrieving-a-class.md) de arquivo de **\_ paginação Win32** representa o arquivo usado para lidar com a troca de arquivos de memória virtual em um sistema Win32. Essa classe foi substituída.
+A classe [WMI](../wmisdk/retrieving-a-class.md) **\_ Win32 PageFile** representa o arquivo usado para lidar com a troca de arquivos de memória virtual em um sistema Win32. Essa classe foi substituída.
 
-A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas. As propriedades e os métodos estão em ordem alfabética, não em ordem de MOF.
+A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas. As propriedades e os métodos estão em ordem alfabética, não em ordem MOF.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -110,14 +110,14 @@ class Win32_PageFile : CIM_DataFile
 
 ## <a name="members"></a>Membros
 
-A classe de **\_ arquivo de paginação Win32** tem estes tipos de membros:
+A **classe \_ PageFile win32** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-A classe de **\_ arquivo de paginação Win32** tem esses métodos.
+A **classe \_ PageFile win32** tem esses métodos.
 
 
 
@@ -125,15 +125,15 @@ A classe de **\_ arquivo de paginação Win32** tem esses métodos.
 |:--------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**ChangeSecurityPermissions**](changesecuritypermissions-method-in-class-win32-pagefile.md)     | Método de classe que altera as permissões de segurança para o arquivo lógico especificado no caminho do objeto.<br/>                                                                                                                       |
 | [**ChangeSecurityPermissionsEx**](changesecuritypermissionsex-method-in-class-win32-pagefile.md) | Método de classe que altera as permissões de segurança para o arquivo lógico especificado no caminho do objeto.<br/>                                                                                                                       |
-| [**Compactar**](compress-method-in-class-win32-pagefile.md)                                       | Método de classe que compacta o arquivo lógico (ou diretório) especificado no caminho do objeto.<br/>                                                                                                                                  |
+| [**Comprimir**](compress-method-in-class-win32-pagefile.md)                                       | Método de classe que compacta o arquivo lógico (ou diretório) especificado no caminho do objeto.<br/>                                                                                                                                  |
 | [**CompressEx**](compressex-method-in-class-win32-pagefile.md)                                   | Método de classe que compacta o arquivo lógico (ou diretório) especificado no caminho do objeto.<br/>                                                                                                                                  |
-| [**Copiar**](copy-method-in-class-win32-pagefile.md)                                               | Método de classe que copia o arquivo ou diretório lógico especificado no caminho do objeto para o local especificado pelo parâmetro de entrada.<br/>                                                                                       |
-| [**CopyEx**](copyex-method-in-class-win32-pagefile.md)                                           | Método de classe que copia o arquivo ou diretório lógico especificado no caminho do objeto para o local especificado pelo parâmetro FileName.<br/>                                                                                    |
+| [**Copiar**](copy-method-in-class-win32-pagefile.md)                                               | Método de classe que copia o arquivo lógico ou diretório especificado no caminho do objeto para o local especificado pelo parâmetro de entrada.<br/>                                                                                       |
+| [**CopyEx**](copyex-method-in-class-win32-pagefile.md)                                           | Método de classe que copia o arquivo lógico ou diretório especificado no caminho do objeto para o local especificado pelo parâmetro FileName.<br/>                                                                                    |
 | [**Excluir**](delete-method-in-class-win32-pagefile.md)                                           | Método de classe que exclui o arquivo lógico (ou diretório) especificado no caminho do objeto.<br/>                                                                                                                                     |
 | [**DeleteEx**](deleteex-method-in-class-win32-pagefile.md)                                       | Método de classe que exclui o arquivo lógico (ou diretório) especificado no caminho do objeto.<br/>                                                                                                                                     |
-| [**GetEffectivePermission**](geteffectivepermission-method-in-class-win32-pagefile.md)           | Método de classe que determina se o chamador tem as permissões agregadas especificadas pelo argumento de *permissão* não apenas no objeto File, mas no compartilhamento o arquivo ou diretório reside (se estiver em um compartilhamento).<br/> |
+| [**GetEffectivePermission**](geteffectivepermission-method-in-class-win32-pagefile.md)           | Método de classe que determina se o chamador tem as permissões agregadas especificadas pelo argumento *Permission* não apenas no objeto de arquivo, mas no compartilhamento em que o arquivo ou diretório reside (se ele estiver em um compartilhamento).<br/> |
 | [**Renomear**](rename-method-in-class-win32-pagefile.md)                                           | Método de classe que renomeia o arquivo lógico (ou diretório) especificado no caminho do objeto.<br/>                                                                                                                                     |
-| [**TakeOwnerShip**](takeownership-method-in-class-win32-pagefile.md)                             | Método de classe que obtém a propriedade do arquivo lógico especificado no caminho do objeto.<br/>                                                                                                                                       |
+| [**Takeownership**](takeownership-method-in-class-win32-pagefile.md)                             | Método de classe que obtém a propriedade do arquivo lógico especificado no caminho do objeto.<br/>                                                                                                                                       |
 | [**TakeOwnerShipEx**](takeownershipex-method-in-class-win32-pagefile.md)                         | Método de classe que obtém a propriedade do arquivo lógico especificado no caminho do objeto.<br/>                                                                                                                                       |
 | [**Descompactar**](uncompress-method-in-class-win32-pagefile.md)                                   | Método de classe que descompacta o arquivo lógico (ou diretório) especificado no caminho do objeto.<br/>                                                                                                                                |
 | [**UncompressEx**](uncompressex-method-in-class-win32-pagefile.md)                               | Método de classe que descompacta o arquivo lógico (ou diretório) especificado no caminho do objeto.<br/>                                                                                                                                |
@@ -144,122 +144,122 @@ A classe de **\_ arquivo de paginação Win32** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-A classe de **\_ arquivo de paginação Win32** tem essas propriedades.
+A **classe \_ PageFile win32** tem essas propriedades.
 
 <dl> <dt>
 
-**AccessMask**
+**Accessmask**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**esquema**](../wmisdk/standard-qualifiers.md) ("Win32"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("direitos de acesso")
+Qualificadores: [**esquema**](../wmisdk/standard-qualifiers.md) ("Win32"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Direitos de Acesso")
 </dt> </dl>
 
-Bitmask que representa os direitos de acesso necessários para acessar ou executar operações específicas no arquivo. Para obter valores, consulte [**constantes de direitos de acesso de arquivo e diretório**](../wmisdk/file-and-directory-access-rights-constants.md).
+Bitmask que representa os direitos de acesso necessários para acessar ou executar operações específicas no arquivo. Para valores, consulte [**Constantes de direitos de acesso de**](../wmisdk/file-and-directory-access-rights-constants.md)arquivo e diretório .
 
-Essa propriedade é herdada [**do \_ LogicalFile CIM**](cim-logicalfile.md).
+Essa propriedade é herdada de [**CIM \_ LogicalFile.**](cim-logicalfile.md)
 
 <dt>
 
 <span id="FILE_READ_DATA__file__or_FILE_LIST_DIRECTORY__directory_"></span><span id="file_read_data__file__or_file_list_directory__directory_"></span><span id="FILE_READ_DATA__FILE__OR_FILE_LIST_DIRECTORY__DIRECTORY_"></span>
 
-Do **arquivo \_ LER \_ os dados (arquivo) ou \_ \_ diretório de lista de arquivos (diretório)** (1)
+**ARQUIVO \_ READ \_ DATA (arquivo) ou FILE \_ LIST DIRECTORY \_ (diretório)** (1)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="FILE_WRITE_DATA__file__or_FILE_ADD_FILE__directory_"></span><span id="file_write_data__file__or_file_add_file__directory_"></span><span id="FILE_WRITE_DATA__FILE__OR_FILE_ADD_FILE__DIRECTORY_"></span>
 
-Do **arquivo \_ GRAVAR \_ dados (arquivo) ou arquivo \_ Adicionar \_ arquivo (diretório)** (2)
+**ARQUIVO \_ WRITE \_ DATA (arquivo) ou FILE \_ ADD FILE \_ (diretório)** (2)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="FILE_APPEND_DATA__file__or_FILE_ADD_SUBDIRECTORY__directory_"></span><span id="file_append_data__file__or_file_add_subdirectory__directory_"></span><span id="FILE_APPEND_DATA__FILE__OR_FILE_ADD_SUBDIRECTORY__DIRECTORY_"></span>
 
-Do **arquivo \_ ACRESCENTAR \_ dados (arquivo) ou arquivo \_ Adicionar \_ subdiretório (diretório)** (4)
+**ARQUIVO \_ ACRESCENTAR \_ DADOS (arquivo) ou ADICIONAR \_ \_ ARQUIVO SUBDIRETÓRIO (diretório)** (4)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="FILE_READ_EA"></span><span id="file_read_ea"></span>
 
-Do **arquivo \_ LER \_ ea** (8)
+**ARQUIVO \_ READ \_ EA** (8)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="FILE_WRITE_EA"></span><span id="file_write_ea"></span>
 
-Do **arquivo \_ GRAVAR \_ ea** (16)
+**ARQUIVO \_ WRITE \_ EA** (16)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="FILE_EXECUTE__file__or_FILE_TRAVERSE__directory_"></span><span id="file_execute__file__or_file_traverse__directory_"></span><span id="FILE_EXECUTE__FILE__OR_FILE_TRAVERSE__DIRECTORY_"></span>
 
-Do **arquivo \_ EXECUTAR (arquivo) ou \_ atravessamento de arquivo (diretório)** (32)
+**ARQUIVO \_ EXECUTE (arquivo) ou \_ FILE TRAVERSE (diretório)** (32)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="FILE_DELETE_CHILD__directory_"></span><span id="file_delete_child__directory_"></span><span id="FILE_DELETE_CHILD__DIRECTORY_"></span>
 
-Do **arquivo \_ EXCLUIR \_ filho (diretório)** (64)
+**ARQUIVO \_ DELETE \_ CHILD (diretório)** (64)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="FILE_READ_ATTRIBUTES"></span><span id="file_read_attributes"></span>
 
-Do **arquivo \_ \_Atributos de leitura** (128)
+**ARQUIVO \_ ATRIBUTOS \_ DE LEITURA** (128)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="FILE_WRITE_ATTRIBUTES"></span><span id="file_write_attributes"></span>
 
-Do **arquivo \_ \_Atributos de gravação** (256)
+**ARQUIVO \_ ATRIBUTOS \_ DE** GRAVAÇÃO (256)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="DELETE"></span><span id="delete"></span>
 
-**Excluir** (65536)
+**DELETE** (65536)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="READ_CONTROL"></span><span id="read_control"></span>
 
-**Ler \_ CONTROLE** (131072)
+**LEITURA \_ CONTROL** (131072)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="WRITE_DAC"></span><span id="write_dac"></span>
 
-**Gravar \_ DAC** (262144)
+**GRAVAÇÃO \_ DAC** (262144)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="WRITE_OWNER"></span><span id="write_owner"></span>
 
-**Gravar \_ PROPRIETÁRIO** (524288)
+**GRAVAÇÃO \_ OWNER** (524288)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="SYNCHRONIZE"></span><span id="synchronize"></span>
 
-**Sincronizar** (1048576)
+**SYNCHRONIZE** (1048576)
 
 
 </dt> <dd></dd> </dl>
@@ -269,18 +269,18 @@ Do **arquivo \_ \_Atributos de gravação** (256)
 **Arquivar**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**esquema**](../wmisdk/standard-qualifiers.md) ("Win32"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("deve ser arquivado")
+Qualificadores: [**esquema**](../wmisdk/standard-qualifiers.md) ("Win32"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Deve ser arquivado")
 </dt> </dl>
 
-Se **for true**, o arquivo deverá ser arquivado.
+Se **True**, o arquivo deverá ser arquivado.
 
-Essa propriedade é herdada [**do \_ LogicalFile CIM**](cim-logicalfile.md).
+Essa propriedade é herdada de [**CIM \_ LogicalFile.**](cim-logicalfile.md)
 
 </dd> <dt>
 
@@ -293,30 +293,30 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](../wmisdk/standard-qualifiers.md) (64), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Caption")
+Qualificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Legenda")
 </dt> </dl>
 
-Uma breve descrição textual do objeto.
+Uma breve descrição textual do objeto .
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **Compactado**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**esquema**](../wmisdk/standard-qualifiers.md) ("Win32"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("compactado")
+Qualificadores: [**esquema**](../wmisdk/standard-qualifiers.md) ("Win32"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Compactado")
 </dt> </dl>
 
-Se **for true**, o arquivo será compactado.
+Se **True**, o arquivo será compactado.
 
-Essa propriedade é herdada [**do \_ LogicalFile CIM**](cim-logicalfile.md).
+Essa propriedade é herdada de [**CIM \_ LogicalFile.**](cim-logicalfile.md)
 
 </dd> <dt>
 
@@ -329,12 +329,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("método de compactação")
+Qualificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Método de Compactação")
 </dt> </dl>
 
-Cadeia de caracteres de forma livre que indica o algoritmo ou a ferramenta usada para compactar o arquivo lógico. Se o esquema de compactação for desconhecido ou não estiver descrito, use "desconhecido". Se o arquivo lógico estiver compactado, mas o esquema de compactação for desconhecido ou não estiver descrito, use "compactado". Se o arquivo lógico não estiver compactado, use "não compactado".
+Cadeia de caracteres de forma livre que indica o algoritmo ou a ferramenta usada para compactar o arquivo lógico. Se o esquema de compactação for desconhecido ou não for descrito, use "Desconhecido". Se o arquivo lógico for compactado, mas o esquema de compactação for desconhecido ou não for descrito, use "Compactado". Se o arquivo lógico não for compactado, use "Não Compactado".
 
-Essa propriedade é herdada [**do \_ LogicalFile CIM**](cim-logicalfile.md).
+Essa propriedade é herdada de [**CIM \_ LogicalFile.**](cim-logicalfile.md)
 
 </dd> <dt>
 
@@ -347,7 +347,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**\_ chave CIM**](../wmisdk/standard-wmi-qualifiers.md), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("nome da classe")
+Qualificadores: [**\_ Chave CIM,**](../wmisdk/standard-wmi-qualifiers.md) [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Nome da Classe")
 </dt> </dl>
 
 Nome da classe.
@@ -542,7 +542,7 @@ Essa propriedade é herdada [**do \_ LogicalFile CIM**](cim-logicalfile.md).
 
 </dd> <dt>
 
-**Tamanho**
+**FileSize**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **UInt64**
@@ -562,7 +562,7 @@ Essa propriedade é herdada [**do \_ LogicalFile CIM**](cim-logicalfile.md).
 
 </dd> <dt>
 
-**Talvez**
+**FileType**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -628,119 +628,119 @@ Qualificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ([**" \_ sist
 
 Nome do sistema de arquivos.
 
-Essa propriedade é herdada [**do \_ LogicalFile CIM**](cim-logicalfile.md).
+Essa propriedade é herdada de [**CIM \_ LogicalFile.**](cim-logicalfile.md)
 
 </dd> <dt>
 
 **Oculto**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**esquema**](../wmisdk/standard-qualifiers.md) ("Win32"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Hidden")
+Qualificadores: [**esquema**](../wmisdk/standard-qualifiers.md) ("Win32"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Oculto")
 </dt> </dl>
 
-Se for **true**, o arquivo ficará oculto.
+Se **True**, o arquivo será oculto.
 
-Essa propriedade é herdada [**do \_ LogicalFile CIM**](cim-logicalfile.md).
+Essa propriedade é herdada de [**CIM \_ LogicalFile.**](cim-logicalfile.md)
 
 </dd> <dt>
 
 **InitialSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**preterido**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Regstry \| sistema \\ \\ CurrentControlSet \\ \\ Control \\ \\ Session Manager \\ \\ Memory Management \| PagingFiles"), [**unidades**](../wmisdk/standard-qualifiers.md) ("megabytes")
+Qualificadores: [**PRETERIDO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Regstry \| System \\ \\ CurrentControlSet Control Session \\ \\ Manager Memory Management \\ \\ \\ \\ \| PagingFiles"), [**Unidades**](../wmisdk/standard-qualifiers.md) ("megabytes")
 </dt> </dl>
 
-Tamanho inicial do arquivo de paginação.
+Tamanho inicial do arquivo de página.
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. \|Componente DMTF \| 1,5 "), [**DisplayName**](../wmisdk/standard-qualifiers.md) (" data de instalação ")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Data de instalação")
 </dt> </dl>
 
 Indica quando o objeto foi instalado. A falta de um valor não indica que o objeto não está instalado.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **InUseCount**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("contagem de abertura de arquivo atual")
+Qualificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Contagem Aberta do Arquivo Atual")
 </dt> </dl>
 
-Número de "aberturas de arquivo" que estão atualmente ativos no arquivo.
+Número de "aberturas de arquivo" que estão ativas no momento no arquivo.
 
-Para obter mais informações sobre como usar valores de **UInt64** em scripts, consulte [scripts no WMI](/previous-versions//aa393262(v=vs.85)).
+Para obter mais informações sobre como **usar valores uint64** em scripts, consulte [Scripts no WMI](/previous-versions//aa393262(v=vs.85)).
 
-Essa propriedade é herdada [**do \_ LogicalFile CIM**](cim-logicalfile.md).
+Essa propriedade é herdada de [**CIM \_ LogicalFile.**](cim-logicalfile.md)
 
 </dd> <dt>
 
 **LastAccessed**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("último acesso")
+Qualificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Último Acessado")
 </dt> </dl>
 
-Data e hora do último acesso ao arquivo.
+Data e hora em que o arquivo foi acessado pela última vez.
 
-Essa propriedade é herdada [**do \_ LogicalFile CIM**](cim-logicalfile.md).
+Essa propriedade é herdada de [**CIM \_ LogicalFile.**](cim-logicalfile.md)
 
 </dd> <dt>
 
-**LastModified**
+**Lastmodified**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("última modificação")
+Qualificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Última Modificação")
 </dt> </dl>
 
-Data e hora da última modificação do arquivo.
+Data e hora em que o arquivo foi modificado pela última vez.
 
-Essa propriedade é herdada [**do \_ LogicalFile CIM**](cim-logicalfile.md).
+Essa propriedade é herdada de [**CIM \_ LogicalFile.**](cim-logicalfile.md)
 
 </dd> <dt>
 
-**Manufacturer**
+**Fabricante**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -749,28 +749,28 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**esquema**](../wmisdk/standard-qualifiers.md) ("Win32"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("fabricante")
+Qualificadores: [**esquema**](../wmisdk/standard-qualifiers.md) ("Win32"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Fabricante")
 </dt> </dl>
 
-Cadeia de caracteres do fabricante do recurso de versão (se houver um).
+Cadeia de caracteres de fabricante do recurso de versão (se uma estiver presente).
 
-Esta propriedade é herdada [**do \_ arquivo**](cim-datafile.md)de propriedades CIM.
+Essa propriedade é herdada de [**CIM \_ DataFile.**](cim-datafile.md)
 
 </dd> <dt>
 
-**MaximumSize**
+**Maximumsize**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**preteridos**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| estruturas de gerenciamento de memória win32api \| [**MEMORYSTATUS**](/windows/win32/api/winbase/ns-winbase-memorystatus) \| dwTotalPageFile"), [**unidades**](../wmisdk/standard-qualifiers.md) ("megabytes")
+Qualificadores: [**PRETERIDO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Memory Management Structures \| [**MEMORYSTATUS**](/windows/win32/api/winbase/ns-winbase-memorystatus) \| dwTotalPageFile"), [**unidades**](../wmisdk/standard-qualifiers.md) ("megabytes")
 </dt> </dl>
 
-Tamanho máximo do arquivo de paginação definido pelo usuário. O sistema operacional não permitirá que o arquivo de paginação exceda esse limite.
+Tamanho máximo do arquivo de página conforme definido pelo usuário. O sistema operacional não permitirá que o arquivo de página exceda esse limite.
 
 </dd> <dt>
 
@@ -783,10 +783,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**preterido**](../wmisdk/standard-wmi-qualifiers.md), [**substituir**](../wmisdk/standard-qualifiers.md) ("nome"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32DLL \|NTDLL.DLL\| [**NtQuerySystemInformation**](/windows/win32/api/winternl/nf-winternl-ntquerysysteminformation) \| SystemPageFileInformation \| arquivo de paginaname")
+Qualificadores: [**PRETERIDO**](../wmisdk/standard-wmi-qualifiers.md) [**,**](../wmisdk/standard-qualifiers.md) Substituir ("Nome"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32DLL \|NTDLL.DLL\| [**NtQuerySystemInformation**](/windows/win32/api/winternl/nf-winternl-ntquerysysteminformation) \| SystemPageFileInformation \| PageFileName")
 </dt> </dl>
 
-Nome do arquivo de paginação.
+Nome do arquivo de página.
 
 Exemplo: "C: \\PAGEFILE.SYS"
 
@@ -801,32 +801,32 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**fixo**](../wmisdk/standard-wmi-qualifiers.md), [**esquema**](../wmisdk/standard-qualifiers.md) ("Win32"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Path")
+Qualificadores: [**corrigido,**](../wmisdk/standard-wmi-qualifiers.md) [**esquema**](../wmisdk/standard-qualifiers.md) ("Win32"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Caminho")
 </dt> </dl>
 
-Caminho do arquivo, incluindo as barras invertidas à esquerda e à direita.
+Caminho do arquivo, incluindo as malhas instingas à frente e à parte final.
 
-Exemplo: " \\ sistema do Windows \\ \\ "
+Exemplo: " \\ windows \\ system \\ "
 
-Essa propriedade é herdada [**do \_ LogicalFile CIM**](cim-logicalfile.md).
+Essa propriedade é herdada de [**CIM \_ LogicalFile.**](cim-logicalfile.md)
 
 </dd> <dt>
 
-**Seres**
+**Legível**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("legível")
+Qualificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Acessível")
 </dt> </dl>
 
-Se **for true**, o arquivo poderá ser lido.
+Se **True**, o arquivo poderá ser lido.
 
-Essa propriedade é herdada [**do \_ LogicalFile CIM**](cim-logicalfile.md).
+Essa propriedade é herdada de [**CIM \_ LogicalFile.**](cim-logicalfile.md)
 
 </dd> <dt>
 
@@ -839,12 +839,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](../wmisdk/standard-qualifiers.md) (10), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("status")
+Qualificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Status")
 </dt> </dl>
 
 Cadeia de caracteres que indica o status atual do objeto.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 Os valores incluem o seguinte:
 
@@ -859,28 +859,28 @@ Os valores incluem o seguinte:
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Erro** ("erro")
+**Erro** ("Erro")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-**Degradado** ("degradado")
+**Degradado** ("Degradado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconhecido** ("desconhecido")
+**Desconhecido** ("Desconhecido")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Falha de Pred** ("Pred Fail")
+**Pred Fail** ("Pred Fail")
 
 
 </dt> <dd></dd> <dt>
@@ -894,42 +894,42 @@ Os valores incluem o seguinte:
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Parando** ("parando")
+**Parando** ("Parando")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Service"></span><span id="service"></span><span id="SERVICE"></span>
 
-**Serviço** ("serviço")
+**Serviço** ("Serviço")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>
 
-**Sob estresse** ("sob estresse")
+**Stressed** ("Stressed")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NonRecover"></span><span id="nonrecover"></span><span id="NONRECOVER"></span>
 
-Não **recuperar** ("Recover")
+**NonRecover** ("NonRecover")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>
 
-**Sem contato** ("sem contato")
+**Sem contato** ("Sem contato")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lost_Comm"></span><span id="lost_comm"></span><span id="LOST_COMM"></span>
 
-**Perda de comunicação** ("perda de comunicação")
+**Perda de vírgula** ("comm perdida")
 
 
 </dt> <dd></dd> </dl>
@@ -939,18 +939,18 @@ Não **recuperar** ("Recover")
 **System**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**esquema**](../wmisdk/standard-qualifiers.md) ("Win32"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("arquivo do sistema")
+Qualificadores: [**esquema**](../wmisdk/standard-qualifiers.md) ("Win32"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Arquivo do Sistema")
 </dt> </dl>
 
-Se for **true**, o arquivo será um arquivo do sistema.
+Se **True**, o arquivo será um arquivo do sistema.
 
-Essa propriedade é herdada [**do \_ LogicalFile CIM**](cim-logicalfile.md).
+Essa propriedade é herdada de [**CIM \_ LogicalFile.**](cim-logicalfile.md)
 
 </dd> <dt>
 
@@ -963,40 +963,40 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**esquema**](../wmisdk/standard-qualifiers.md) ("Win32"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Version")
+Qualificadores: [**esquema**](../wmisdk/standard-qualifiers.md) ("Win32"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Versão")
 </dt> </dl>
 
-Cadeia de caracteres da versão do recurso de versão (se houver uma).
+Cadeia de caracteres de versão do recurso de versão (se uma estiver presente).
 
-Esta propriedade é herdada [**do \_ arquivo**](cim-datafile.md)de propriedades CIM.
+Essa propriedade é herdada de [**CIM \_ DataFile.**](cim-datafile.md)
 
 </dd> <dt>
 
 **Gravável**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("gravável")
+Qualificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Writeable")
 </dt> </dl>
 
-Se **for true**, o arquivo poderá ser gravado.
+Se **True**, o arquivo poderá ser gravado.
 
-Essa propriedade é herdada [**do \_ LogicalFile CIM**](cim-logicalfile.md).
+Essa propriedade é herdada de [**CIM \_ LogicalFile.**](cim-logicalfile.md)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-A classe de **\_ arquivo de paginação Win32** é derivada do [**\_ diretório CIM**](cim-directory.md).
+A **classe \_ PageFile win32** é derivada do [**diretório CIM. \_**](cim-directory.md)
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de código VBScript a seguir demonstra como recuperar estatísticas de arquivos de paginação de instâncias do arquivo de **\_ paginação Win32**.
+O exemplo de código VBScript a seguir demonstra como recuperar estatísticas de arquivo de página de instâncias do **Win32 \_ PageFile.**
 
 
 ```VB
@@ -1012,7 +1012,7 @@ next
 
 
 
-O exemplo de código Perl a seguir demonstra como recuperar estatísticas de arquivos de paginação de instâncias do arquivo de **\_ paginação Win32**.
+O exemplo de código Perl a seguir demonstra como recuperar estatísticas de arquivo de página de instâncias do **Win32 \_ PageFile.**
 
 
 ```
@@ -1048,8 +1048,8 @@ else
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -1058,7 +1058,7 @@ else
 
 <dl> <dt>
 
-[**DataFile de CIM \_**](cim-datafile.md)
+[**CIM \_ DataFile**](cim-datafile.md)
 </dt> <dt>
 
 [Classes do sistema operacional](./operating-system-classes.md)

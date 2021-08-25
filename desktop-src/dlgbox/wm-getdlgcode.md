@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 89d6e1ddb3be21e227c4dad404a06113f5c50a49
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 10d9ef69c2a6e89154cd6d931e05f9e52b4c51b214319bca8dffa9f86786a3da
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105811513"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120022186"
 ---
 # <a name="wm_getdlgcode-message"></a>Mensagem do WM \_ GETDLGCODE
 
@@ -39,7 +39,7 @@ Enviado para o procedimento de janela associado a um controle. Por padrão, o si
 *wParam* 
 </dt> <dd>
 
-A chave virtual, pressionada pelo usuário, que solicitou que o Windows emitisse essa notificação. O manipulador deve lidar seletivamente com essas chaves. Por exemplo, o manipulador pode aceitar e processar **VK \_ Return** , mas delegar **VK \_ Tab** para a janela do proprietário. Para obter uma lista de valores, consulte [**códigos de chave virtual**](/windows/desktop/inputdev/virtual-key-codes).
+a chave virtual, pressionada pelo usuário, que solicitou Windows para emitir essa notificação. O manipulador deve lidar seletivamente com essas chaves. Por exemplo, o manipulador pode aceitar e processar **VK \_ Return** , mas delegar **VK \_ Tab** para a janela do proprietário. Para obter uma lista de valores, consulte [**códigos de chave virtual**](/windows/desktop/inputdev/virtual-key-codes).
 
 </dd> <dt>
 
@@ -50,7 +50,7 @@ Um ponteiro para uma estrutura [**msg**](/windows/win32/api/winuser/ns-winuser-m
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno é um ou mais dos valores a seguir, indicando qual tipo de entrada o aplicativo processa.
 
@@ -88,7 +88,7 @@ A mensagem do **WM \_ GETDLGCODE** e os valores retornados são úteis somente c
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

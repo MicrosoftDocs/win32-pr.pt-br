@@ -1,19 +1,19 @@
 ---
 title: Identificadores de protocolo
-description: Os seguintes identificadores de protocolo também estão listados em Routprot. h para o SDK do Windows e iprtmib. h para o SDK (Software Development Kit) da plataforma.
+description: os seguintes identificadores de protocolo também estão listados em Routprot. h para o SDK do Windows e iprtmib. h para o SDK (Software Development Kit) da plataforma.
 ms.assetid: f67138b8-de5d-4907-a464-672d57864ebf
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 59ac515eb4b5090c0b4f75fd923d8345538ff5e3
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: dafcbcd028b5c8d4f58172565b34c93cff8d8f9ff766c055e3d8a956cfbb0aa8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104294330"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120036466"
 ---
 # <a name="protocol-identifiers"></a>Identificadores de protocolo
 
-Os seguintes identificadores de protocolo também estão listados em Routprot. h para o SDK do Windows e iprtmib. h para o SDK (Software Development Kit) da plataforma.
+os seguintes identificadores de protocolo também estão listados em Routprot. h para o SDK do Windows e iprtmib. h para o SDK (Software Development Kit) da plataforma.
 
 ## <a name="ip-protocols"></a>Protocolos de IP
 
@@ -39,13 +39,13 @@ Os seguintes protocolos de roteamento estão associados ao transporte IP.
 | PROTO \_ IP \_ BGP, MIB \_ IPPROTO \_ BGP                            | O Border Gateway Protocol (BGP), um protocolo de roteamento dinâmico.                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | PROTO \_ IP \_ BOOTP, MIB \_ IPPROTO \_ BOOTP                        | O protocolo bootstrap.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | PROTO \_ IPv6 \_ DHCPRELAY, MIB \_ IPV6PROTO \_ HDCPRELAY            | O protocolo de retransmissão DHCPv6.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| PROTO \_ IP \_ NT \_ autoestático, MIB \_ IPNT \_ autoestático             | Uma entrada específica do Windows adicionada originalmente por um protocolo de roteamento, mas que agora é estático.                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| PROTO \_ IP \_ NT \_ static, MIB \_ IPNT \_ estático                     | Uma entrada específica do Windows adicionada como uma rota estática da interface do usuário de roteamento ou um comando de roteamento.                                                                                                                                                                                                                                                                                                                                                                                                               |
-| PROTO \_ IP \_ NT \_ estático \_ não \_ DOD, MIB \_ IPNT \_ estático \_ não \_ DOD | Uma entrada específica do Windows adicionada como uma rota estática da interface do usuário de roteamento ou um comando de roteamento, exceto que essas rotas não causam a demanda por discagem (DOD).                                                                                                                                                                                                                                                                                                                                                        |
+| PROTO \_ IP \_ NT \_ autoestático, MIB \_ IPNT \_ autoestático             | um Windows entrada específica adicionada originalmente por um protocolo de roteamento, mas que agora é estático.                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| PROTO \_ IP \_ NT \_ static, MIB \_ IPNT \_ estático                     | um Windows entrada específica adicionada como uma rota estática da interface do usuário de roteamento ou um comando de roteamento.                                                                                                                                                                                                                                                                                                                                                                                                               |
+| PROTO \_ IP \_ NT \_ estático \_ não \_ DOD, MIB \_ IPNT \_ estático \_ não \_ DOD | um Windows entrada específica adicionada como uma rota estática da interface do usuário de roteamento ou um comando de roteamento, exceto que essas rotas não causam a demanda por discagem (DOD).                                                                                                                                                                                                                                                                                                                                                        |
 
 
 
- 
+ 
 
 As rotas com um identificador de protocolo de \_ IP \_ local proto incluem:
 
@@ -76,7 +76,7 @@ Os seguintes protocolos de roteamento estão associados ao transporte IPX.
 
 
 
- 
+ 
 
 O identificador para o Gerenciador de roteador IPX é:
 
@@ -84,6 +84,6 @@ O identificador para o Gerenciador de roteador IPX é:
 
 Use esse identificador em vez de um identificador de protocolo de roteamento para chamadas MIB com o Gerenciador de roteador IPX.
 
- 
+ 
 
- 
+ 
