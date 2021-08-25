@@ -3,7 +3,7 @@ title: External. ignoreIEHistory
 description: Observação Este tópico descreve a funcionalidade projetada para uso por lojas online. | External. ignoreIEHistory
 ms.assetid: ad0ad31e-61b7-45b4-8836-375df859c739
 keywords:
-- Windows Media Player externo. ignoreIEHistory
+- Windows Media Player external. ignoreIEHistory
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 436dd774d247e150729d1921dc842bf0ecd3c26d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 39e874c6920c794f015c51bc1f1084ff545eb710e297f5e43b7c44e49ca39396
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105813158"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119901936"
 ---
 # <a name="externalignoreiehistory"></a>External. ignoreIEHistory
 
@@ -28,7 +28,7 @@ ms.locfileid: "105813158"
 
  
 
-A propriedade **ignoreIEHistory** especifica se o Windows Media Player deve ignorar o histórico do Internet Explorer.
+a propriedade **ignoreIEHistory** especifica se Windows Media Player deve ignorar o histórico do Internet Explorer.
 
 ``` syntax
 window.external.ignoreIEHistory
@@ -37,7 +37,7 @@ window.external.ignoreIEHistory
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Essa propriedade é um **booliano** somente gravação. **Verdadeiro** indica que o Windows Media Player deve ignorar o histórico.
+Essa propriedade é um **booliano** somente gravação. **verdadeiro** indica que Windows Media Player deve ignorar o histórico.
 
 ## <a name="requirements"></a>Requisitos
 

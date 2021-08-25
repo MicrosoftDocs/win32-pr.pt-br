@@ -1,26 +1,26 @@
 ---
-title: Atributo AdjustHandles de VML
-description: Atributo AdjustHandles de VML
+title: Atributo AdjustHandles do VML
+description: Atributo AdjustHandles do VML
 ms.assetid: 9a31ca1b-1220-405c-94bf-9d85eac0563f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 086e10030b869509e8b308432e63aecd8449f7a5
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 53dfbbfc8c68c53afc6e6a246853affabb558d218744d30d062158665de6fa27
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105768685"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119905346"
 ---
-# <a name="vml-adjusthandles-attribute"></a>Atributo AdjustHandles de VML
+# <a name="vml-adjusthandles-attribute"></a>Atributo AdjustHandles do VML
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Determina se os identificadores de uma forma podem ser editados. Leitura/gravação. **VgTriState**.
+Determina se os alças de uma forma podem ser editados. Leitura/gravação. **VgTriState.**
 
 **Aplica-se a**
 
@@ -28,14 +28,14 @@ Determina se os identificadores de uma forma podem ser editados. Leitura/gravaç
 
 **Sintaxe de marca**
 
-<o: *Element* adjusthandles = " *expressão* " >
+<o: *elemento* adjusthandles=" *expressão* ">
 
 **Comentários**
 
-Se **for true**, os identificadores de ajuste de uma forma não poderão ser alterados por um editor gráfico. O valor padrão é **Falso**.
+Se **True**, os alças de ajuste de uma forma não poderão ser alterados por um editor gráfico. O valor padrão é **Falso**.
 
-*Atributo de extensões de Microsoft Office*
+*Microsoft Office Atributo Extensions*
 
- 
+ 
 
- 
+ 

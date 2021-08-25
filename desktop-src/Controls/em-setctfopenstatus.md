@@ -1,9 +1,9 @@
 ---
-title: Mensagem de EM_SETCTFOPENSTATUS (RichEdit. h)
-description: Abre ou fecha o teclado do TSF (estrutura de serviços de texto).
+title: EM_SETCTFOPENSTATUS mensagem (Richedit.h)
+description: Abre ou fecha o teclado Estrutura de Serviços de Texto (TSF).
 ms.assetid: 9bdabf5a-93db-4b0e-9528-807d262de866
 keywords:
-- Controles de EM_SETCTFOPENSTATUS de mensagens do Windows
+- EM_SETCTFOPENSTATUS controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cf4163a415f129dfc5d3f98aa06578d13bb462e5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 85ac27017abbadeb038f5b881aefe1aff394036931529c84c9c5a34a36e556c7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009659"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120048626"
 ---
-# <a name="em_setctfopenstatus-message"></a>\_Mensagem em SETCTFOPENSTATUS
+# <a name="em_setctfopenstatus-message"></a>Mensagem EM \_ SETCTFOPENSTATUS
 
-Abre ou fecha o teclado do TSF (estrutura de serviços de texto).
+Abre ou fecha o teclado Estrutura de Serviços de Texto (TSF).
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -32,7 +32,7 @@ Abre ou fecha o teclado do TSF (estrutura de serviços de texto).
 *wParam* 
 </dt> <dd>
 
-Para ativar o teclado TSF, use **true**. Para desligar o teclado TSF, use **false**.
+Para ativar o teclado TSF, use **TRUE.** Para desligar o teclado TSF, use **FALSE.**
 
 </dd> <dt>
 
@@ -43,9 +43,9 @@ Não usado; deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se for bem-sucedida, essa mensagem retornará **true**. Se não for bem-sucedida, essa mensagem retornará **false**.
+Se for bem-sucedida, essa mensagem retornará **TRUE.** Se não for bem-sucedida, essa mensagem **retornará FALSE.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ Se for bem-sucedida, essa mensagem retornará **true**. Se não for bem-sucedida
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP com SP1\]<br/>                                  |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows XP somente com \[ aplicativos da área de trabalho SP1\]<br/>                                  |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Se for bem-sucedida, essa mensagem retornará **true**. Se não for bem-sucedida
 
 <dl> <dt>
 
-[**em \_ GETCTFOPENSTATUS**](em-getctfopenstatus.md)
+[**EM \_ GETCTFOPENSTATUS**](em-getctfopenstatus.md)
 </dt> </dl>
 
  

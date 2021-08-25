@@ -1,7 +1,7 @@
 ---
-description: Recupera o próximo objeto de nível superior no arquivo do DirectX. Preterido.
+description: Recupera o próximo objeto de nível superior no arquivo DirectX. Preterido.
 ms.assetid: 91cd3205-5603-4a62-aab2-7ef4adb9e6d1
-title: 'Método IDirectXFileEnumObject:: GetNextDataObject (DXFile. h)'
+title: Método IDirectXFileEnumObject::GetNextDataObject (DXFile.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119985126"
 ---
-# <a name="idirectxfileenumobjectgetnextdataobject-method"></a>Método IDirectXFileEnumObject:: GetNextDataObject
+# <a name="idirectxfileenumobjectgetnextdataobject-method"></a>Método IDirectXFileEnumObject::GetNextDataObject
 
-Recupera o próximo objeto de nível superior no arquivo do DirectX. Preterido.
+Recupera o próximo objeto de nível superior no arquivo DirectX. Preterido.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,12 +40,12 @@ HRESULT GetNextDataObject(
 
 <dl> <dt>
 
-*ppDataObj* \[ fora\]
+*ppDataObj* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECTXFILEDATA**](idirectxfiledata.md)\***
 
-Endereço de um ponteiro para uma interface [**IDirectXFileData**](idirectxfiledata.md) , que representa o objeto de dados de arquivo retornado.
+Endereço de um ponteiro para uma interface [**IDirectXFileData,**](idirectxfiledata.md) que representa o objeto de dados de arquivo retornado.
 
 </dd> </dl>
 
@@ -53,11 +53,11 @@ Endereço de um ponteiro para uma interface [**IDirectXFileData**](idirectxfiled
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se o método for bem sucedido, o valor de retorno será DXFILE \_ OK. Se o método falhar, o valor de retorno poderá ser um dos seguintes valores: DXFILEERR \_ BADVALUE, DXFILEERR \_ NOMOREOBJECTS
+Se o método for bem-sucedido, o valor de retorno será DXFILE \_ OK. Se o método falhar, o valor de retorno poderá ser um dos seguintes valores: DXFILEERR \_ BADVALUE, DXFILEERR \_ NOMOREOBJECTS
 
 ## <a name="remarks"></a>Comentários
 
-Os objetos de nível superior são sempre objetos de dados. Objetos de referência de dados e objetos binários só podem ser filhos de objetos de dados.
+Objetos de nível superior são sempre objetos de dados. Objetos de referência de dados e objetos binários só podem ser filhos de objetos de dados.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,8 +65,8 @@ Os objetos de nível superior são sempre objetos de dados. Objetos de referênc
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>DXFile. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3dxof. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>DXFile.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3dxof.lib</dt> </dl> |
 
 
 

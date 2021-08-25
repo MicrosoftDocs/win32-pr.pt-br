@@ -4,12 +4,12 @@ description: Um controle de edição rico sem janela, também conhecido como obj
 ms.assetid: 880a704d-776a-49d3-be31-0328af408e3b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fc1c8bc685dff5f8ddb041011089a84eb2e12008
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: 96b68a2bc0317a884f0516b73b3674d104c4fa6c12f16bdc24960d7ea0ef8bbf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103917698"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119922176"
 ---
 # <a name="about-windowless-rich-edit-controls"></a>Sobre controles de edição avançados sem janela
 
@@ -66,6 +66,6 @@ Um controle de edição avançada padrão tem um procedimento de janela que proc
 
 Você também pode criar o objeto de serviços de texto como parte de um [objeto agregado com](/windows/desktop/com/aggregation). Isso facilita a agregação do objeto de serviços de texto com um objeto COM (Component Object Model sem janela).
 
- 
+ 
 
- 
+ 

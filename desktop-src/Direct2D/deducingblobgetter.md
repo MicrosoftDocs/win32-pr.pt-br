@@ -1,9 +1,9 @@
 ---
-title: DeducingBlobGetter (D2d1effecthelpers. h)
-description: Deduz a classe e os argumentos e, em seguida, chama um retorno de chamada getter de propriedade de função de membro para uma propriedade de tipo de BLOB.
+title: DeducingBlobGetter (D2d1effecthelpers.h)
+description: Deduz a classe e os argumentos e, em seguida, chama um retorno de chamada getter da propriedade member-function para uma propriedade de tipo blob.
 ms.assetid: 1B8800CB-2AD0-4684-99D7-986F6C53A6F1
 keywords:
-- DeducingBlobGetter Direct2D
+- DeduçãoBlobGetter Direct2D
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f7ca5cc37a9fbd79807e258a87a199be7319ce3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f045f781ae22aa4550a298ba7becfe2bc4a939528657f663ec021870bf3afa78
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759264"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119918276"
 ---
-# <a name="deducingblobgetter"></a>DeducingBlobGetter
+# <a name="deducingblobgetter"></a>DeduçãoBlobGetter
 
-Deduz a classe e os argumentos e, em seguida, chama um retorno de chamada getter de propriedade de função de membro para uma propriedade de tipo de BLOB.
+Deduz a classe e os argumentos e, em seguida, chama um retorno de chamada getter da propriedade member-function para uma propriedade de tipo blob.
 
 > [!Note]  
 > DeducingBlobGetter não deve ser chamado diretamente.
@@ -47,7 +47,7 @@ HRESULT DeducingBlobGetter(
 
 | Requisito | Valor |
 |-------------------|------------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D2d1effecthelpers. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D2d1effecthelpers.h</dt> </dl> |
 
 
 

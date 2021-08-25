@@ -4,12 +4,12 @@ description: Os valores do registro associados com a HKEY \_ local \_ Machine \\
 ms.assetid: 871ae88f-ed2c-4078-8160-b0a490390426
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 02406bca5dd69098f8cd49c2fba5f067852fcc5f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d1648f12cd3983c73f5fdae040d4b81a833cce64995d98c19ef804e2941af48e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104006080"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119993046"
 ---
 # <a name="hkey_local_machinesoftwaremicrosoftole"></a>HKEY \_ local \_ Machine \\ software \\ Microsoft \\ OLE
 
@@ -39,11 +39,11 @@ Somente administradores, o criador do objeto e o sistema têm acesso completo a 
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

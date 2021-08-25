@@ -3,7 +3,7 @@ title: Mensagem de BCM_GETNOTELENGTH (commctrl. h)
 description: Obtém o comprimento do texto da nota que pode ser exibido na descrição de um botão de link de comando. Envie essa mensagem explicitamente ou usando o botão \_ GetNoteLength macro.
 ms.assetid: 62385485-b553-47e9-9f15-696cc4694752
 keywords:
-- Controles de BCM_GETNOTELENGTH de mensagens do Windows
+- controles de Windows de mensagem de BCM_GETNOTELENGTH
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b33c5245778481033bd97326c3d66a40bf03210
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 385cb5d7694818a0e0e03ab74bcc31b76d13f5d304c7415b1f70a0fd43e1b31b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009271"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119921656"
 ---
 # <a name="bcm_getnotelength-message"></a>\_Mensagem GETNOTELENGTH do BCM
 
@@ -43,7 +43,7 @@ Deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o comprimento do texto da nota em **WCHARs**, não incluindo nenhum **nulo** de término ou zero se não houver texto de nota.
 
@@ -59,9 +59,9 @@ A **mensagem \_ GETNOTELENGTH do BCM** funciona apenas com os estilos de botão 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

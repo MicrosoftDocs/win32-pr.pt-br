@@ -1,7 +1,7 @@
 ---
-description: Atualiza o pai para os arquivos de disco rígido virtual de folha e filho especificados.
+description: Atualiza o pai para os arquivos de disco rígido virtual folha e filho especificados.
 ms.assetid: 5ad41218-bcfd-449a-a66e-2096a1d96bf5
-title: Método SetParentVirtualHardDisk da classe Msvm_ImageManagementService
+title: Método SetParentVirtualHardDisk da classe Msvm_ImageManagementService dados
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: f1d14d3b2ee19a9768e1ee9ed9333a452153cc9b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 47be9f3f383da237a3679633ac1d663bbc81ef078a7529662b8f21d10246761f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105782802"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120050536"
 ---
-# <a name="setparentvirtualharddisk-method-of-the-msvm_imagemanagementservice-class"></a>Método SetParentVirtualHardDisk da \_ classe imagens Msvm
+# <a name="setparentvirtualharddisk-method-of-the-msvm_imagemanagementservice-class"></a>Método SetParentVirtualHardDisk da classe Msvm \_ ImageManagementService
 
-Atualiza o pai para os arquivos de disco rígido virtual de folha e filho especificados. Consulte comentários para restrições de uso para este método.
+Atualiza o pai para os arquivos de disco rígido virtual folha e filho especificados. Consulte Comentários sobre restrições de uso para esse método.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,42 +43,42 @@ uint32 SetParentVirtualHardDisk(
 
 <dl> <dt>
 
-*ChildPath* \[ no\]
+*ChildPath* \[ Em\]
 </dt> <dd>
 
 Um caminho totalmente qualificado que especifica o local do arquivo de disco rígido virtual filho.
 
 </dd> <dt>
 
-*ParentPath* \[ no\]
+*ParentPath* \[ Em\]
 </dt> <dd>
 
 Um caminho totalmente qualificado que especifica o local do arquivo de disco rígido virtual pai.
 
 </dd> <dt>
 
-*LeafPath* \[ no\]
+*LeafPath* \[ Em\]
 </dt> <dd>
 
-Um caminho totalmente qualificado que especifica o local do arquivo de disco rígido virtual de folha. O parâmetro poderá ser **nulo** se o disco rígido virtual estiver offline, mas deverá ser especificado se o disco rígido virtual estiver em uso.
+Um caminho totalmente qualificado que especifica o local do arquivo de disco rígido virtual folha. O parâmetro poderá ser **Null se** o disco rígido virtual estiver offline, mas deverá ser especificado se o disco rígido virtual estiver em uso.
 
 </dd> <dt>
 
-*IgnoreIDMismatch* \[ no\]
+*IgnoreIDMismatch* \[ Em\]
 </dt> <dd>
 
-Indica se o pai deve ser forçado a definir quando os identificadores de disco virtual não correspondem. Esse parâmetro deve ser usado com cautela porque se o novo disco rígido virtual pai não for idêntico ao pai original, poderá ocorrer corrupção de dados.
+Indica se o pai deve ser definido à força quando os identificadores de disco virtual não corresponderem. Esse parâmetro deve ser usado com cuidado porque, se o novo disco rígido virtual pai não for idêntico ao pai original, poderá ocorrer corrupção de dados.
 
 </dd> <dt>
 
-*Trabalho* \[ do fora\]
+*Trabalho* \[ out\]
 </dt> <dd>
 
-Se a operação for executada de forma assíncrona, esse método retornará 4096, e esse parâmetro conterá uma referência a um objeto derivado de [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
+Se a operação for executada de forma assíncrona, esse método retornará 4096 e esse parâmetro conterá uma referência a um objeto derivado de [**CIM \_ ConcreteJob.**](/previous-versions//cc136808(v=vs.85))
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos valores a seguir.
 
@@ -87,7 +87,7 @@ Esse método retorna um dos valores a seguir.
 **Concluído sem erro** (0)
 </dt> <dt>
 
-**Parâmetros de método marcados-trabalho iniciado** (4096)
+**Parâmetros de método verificados – Trabalho iniciado** (4096)
 </dt> <dt>
 
 **Falha** (32768)
@@ -99,16 +99,16 @@ Esse método retorna um dos valores a seguir.
 **Sem suporte** (32770)
 </dt> <dt>
 
-O **status é desconhecido** (32771)
+**O status é desconhecido** (32771)
 </dt> <dt>
 
-**Tempo limite** (32772)
+**Tempoout** (32772)
 </dt> <dt>
 
 **Parâmetro inválido** (32773)
 </dt> <dt>
 
-O **sistema está em uso** (32774)
+**O sistema está em uso** (32774)
 </dt> <dt>
 
 **Estado inválido para esta operação** (32775)
@@ -117,10 +117,10 @@ O **sistema está em uso** (32774)
 **Tipo de dados incorreto** (32776)
 </dt> <dt>
 
-O **sistema não está disponível** (32777)
+**O sistema não está disponível** (32777)
 </dt> <dt>
 
-**Memória insuficiente** (32778)
+**Memória sem memória** (32778)
 </dt> <dt>
 
 **Arquivo não encontrado** (32779)
@@ -131,9 +131,9 @@ O **sistema não está disponível** (32777)
 Somente os seguintes tipos de discos rígidos virtuais podem ser usados com este método:
 
 -   VHD diferencial
--   VHDX diferencial
+-   Diferenciando VHDX
 
-O acesso à classe [**Msvm \_ imagens**](msvm-imagemanagementservice.md) pode ser restringido pela filtragem do UAC. Para obter mais informações, consulte [controle de conta de usuário e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+O acesso à [**classe Msvm \_ ImageManagementService**](msvm-imagemanagementservice.md) pode ser restrito pela Filtragem de UAC. Para obter mais informações, consulte [Controle de conta de usuário e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -141,10 +141,10 @@ O acesso à classe [**Msvm \_ imagens**](msvm-imagemanagementservice.md) pode se
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -153,7 +153,7 @@ O acesso à classe [**Msvm \_ imagens**](msvm-imagemanagementservice.md) pode se
 
 <dl> <dt>
 
-[**Msvm \_ imagens**](msvm-imagemanagementservice.md)
+[**Msvm \_ ImageManagementService**](msvm-imagemanagementservice.md)
 </dt> </dl>
 
  

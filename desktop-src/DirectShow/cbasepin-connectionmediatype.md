@@ -1,7 +1,7 @@
 ---
-description: 'O método ConnectionMediaType recupera o tipo de mídia para a conexão do PIN atual, se houver. Esse método implementa o método IPin:: ConnectionMediaType.'
+description: O método ConnectionMediaType recupera o tipo de mídia para a conexão de pino atual, se for o caso. Esse método implementa o método IPin::ConnectionMediaType.
 ms.assetid: 57d100ba-4171-4caa-ab98-66a0a327a53b
-title: Método CBasePin. ConnectionMediaType (Amfilter. h)
+title: Método CBasePin.ConnectionMediaType (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 62bd211b6c93e44c571d822ccc86104a5a6fdcab
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cdeed52a212a659ca280163ea9513f0cb4f373ea2686bfde00078ebccb183daa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105771865"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119916746"
 ---
-# <a name="cbasepinconnectionmediatype-method"></a>Método CBasePin. ConnectionMediaType
+# <a name="cbasepinconnectionmediatype-method"></a>Método CBasePin.ConnectionMediaType
 
-O método **ConnectionMediaType** recupera o tipo de mídia para a conexão do PIN atual, se houver. Esse método implementa o método [**IPin:: ConnectionMediaType**](/windows/desktop/api/Strmif/nf-strmif-ipin-connectionmediatype) .
+O **método ConnectionMediaType** recupera o tipo de mídia para a conexão de pino atual, se for o caso. Esse método implementa o [**método IPin::ConnectionMediaType.**](/windows/desktop/api/Strmif/nf-strmif-ipin-connectionmediatype)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,24 +42,24 @@ HRESULT ConnectionMediaType(
 
 <dl> <dt>
 
-*PMT* 
+*Pgto* 
 </dt> <dd>
 
-Ponteiro para uma estrutura de [**\_ \_ tipo de mídia am**](/windows/win32/api/strmif/ns-strmif-am_media_type) que recebe o tipo de mídia.
+Ponteiro para uma [**estrutura AM \_ MEDIA \_ TYPE**](/windows/win32/api/strmif/ns-strmif-am_media_type) que recebe o tipo de mídia.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor **HRESULT** . Os valores possíveis incluem os da tabela a seguir.
+Retorna um **valor HRESULT.** Os valores possíveis incluem aqueles na tabela a seguir.
 
 
 
 | Código de retorno                                                                                           | Descrição                           |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                  | Êxito.<br/>                   |
-| <dl> <dt>**\_ponteiro E**</dt> </dl>             | Argumento de ponteiro **nulo** .<br/> |
-| <dl> <dt>**VFW \_ E \_ não \_ conectado**</dt> </dl> | O PIN não está conectado.<br/>      |
+| <dl> <dt>**PONTEIRO \_ E**</dt> </dl>             | Argumento de ponteiro **NULL.**<br/> |
+| <dl> <dt>**VFW \_ E \_ NÃO \_ CONECTADO**</dt> </dl> | O pino não está conectado.<br/>      |
 
 
 
@@ -67,9 +67,9 @@ Retorna um valor **HRESULT** . Os valores possíveis incluem os da tabela a segu
 
 ## <a name="remarks"></a>Comentários
 
-Se o PIN estiver conectado, esse método copiará o tipo de mídia para a estrutura do [**\_ \_ tipo de mídia am**](/windows/win32/api/strmif/ns-strmif-am_media_type) especificada por *PGTO*. O chamador deve liberar o bloco de formato do tipo de mídia. Você pode usar a função [**CoTaskMemFree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree) ou a função auxiliar [**FreeMediaType**](freemediatype.md) .
+Se o pino estiver conectado, esse método copia o tipo de mídia para a estrutura [**AM \_ MEDIA \_ TYPE**](/windows/win32/api/strmif/ns-strmif-am_media_type) especificada por *pmt*. O chamador deve liberar o bloco de formato do tipo de mídia. Você pode usar a [**função CoTaskMemFree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree) ou a função auxiliar [**FreeMediaType.**](freemediatype.md)
 
-Se o PIN não estiver conectado, esse método zerará o bloco de memória especificado por *PGTO* e retornará um código de erro.
+Se o pino não estiver conectado, esse método zera o bloco de memória especificado por *pmt* e retornará um código de erro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -77,8 +77,8 @@ Se o PIN não estiver conectado, esse método zerará o bloco de memória especi
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amfilter.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

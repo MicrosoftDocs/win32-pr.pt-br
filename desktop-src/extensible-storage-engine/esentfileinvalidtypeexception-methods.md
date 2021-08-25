@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: métodos EsentFileInvalidTypeException'
+description: 'Saiba mais sobre: Métodos EsentFileInvalidTypeException'
 title: 'Métodos EsentFileInvalidTypeException '
 TOCTitle: EsentFileInvalidTypeException methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.EsentFileInvalidTypeException
@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101684
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 52083f52a7b32cba9a167b24a3583abfca3eb8e7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9afd92d54ea126c6df24f431a3812c18ebb775d6e249c62fc1179b24e59ecc07
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104569422"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120020776"
 ---
 # <a name="esentfileinvalidtypeexception-methods"></a>Métodos EsentFileInvalidTypeException 
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo [EsentFileInvalidTypeException](./esentfileinvalidtypeexception-class.md) expõe os membros a seguir.
+O [tipo EsentFileInvalidTypeException](./esentfileinvalidtypeexception-class.md) expõe os membros a seguir.
 
 ## <a name="methods"></a>Métodos
 
@@ -44,7 +44,7 @@ O tipo [EsentFileInvalidTypeException](./esentfileinvalidtypeexception-class.md)
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">GetBaseException</a></td>
+<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">Getbaseexception</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
@@ -59,12 +59,12 @@ O tipo [EsentFileInvalidTypeException](./esentfileinvalidtypeexception-class.md)
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">Gettype</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></td>
+<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Memberwiseclone</a></td>
 <td>(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</td>
 </tr>
 <tr class="even">
@@ -84,4 +84,4 @@ Parte superior
 
 [Classe EsentFileInvalidTypeException](./esentfileinvalidtypeexception-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -3,7 +3,7 @@ title: Ambienteattributes. clippingColor
 description: O atributo clippingColor especifica ou recupera a cor a ser recortada do bitmap clippingImage.
 ms.assetid: d6ea43d3-c118-43d3-bfdc-29ddd6ea4978
 keywords:
-- ClippingColor do Windows Media Player de ambiente.
+- Windows Media Player ambientalattributes. clippingColor
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ad526eb0f705d1fce95f3813a666420b29db9de
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 299ee63b93abfdea337bb25e8b399e6011fb42d7fa4e1e0c09b3feb259d4f1d6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105762112"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119902806"
 ---
 # <a name="ambientattributesclippingcolor"></a>Ambienteattributes. clippingColor
 
@@ -35,7 +35,7 @@ Este atributo é uma **cadeia de caracteres** de leitura/gravação.
 
 | Valor                                       | Descrição                                       |
 |---------------------------------------------|---------------------------------------------------|
-| Automático                                        | Padrão. A cor no local do pixel 0, 0 é usada. |
+| Auto                                        | Padrão. A cor no local do pixel 0, 0 é usada. |
 | qualquer valor de cor do Microsoft Internet Explorer | A cor especificada do Internet Explorer é usada.    |
 
 

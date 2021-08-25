@@ -1,8 +1,8 @@
 ---
-description: A \_ classe CIM ResidesOnExtent representa uma associação entre um sistema de arquivos e a extensão de armazenamento onde ele está localizado. Normalmente, um sistema de arquivos reside em um disco lógico.
+description: A classe CIM ResidesOnExtent representa uma associação entre um sistema de arquivos e \_ a extensão de armazenamento em que ele está localizado. Normalmente, um sistema de arquivos reside em um disco lógico.
 ms.assetid: 911a81e9-3032-41ff-a337-044c06d02307
 ms.tgt_platform: multiple
-title: Classe CIM_ResidesOnExtent
+title: CIM_ResidesOnExtent classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,19 +16,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 526023fbcc1c961ecaca068be8b0d4ce3e2f84f8
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b7149de4ab84b13ef4e0f6b2c3aed908f8ef933ad09541c885f53edd3caec9d7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089622"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119920346"
 ---
-# <a name="cim_residesonextent-class"></a>\_Classe CIM ResidesOnExtent
+# <a name="cim_residesonextent-class"></a>Classe CIM \_ ResidesOnExtent
 
-A classe **CIM \_ ResidesOnExtent** representa uma associação entre um sistema de arquivos e a extensão de armazenamento onde ele está localizado. Normalmente, um sistema de arquivos reside em um disco lógico.
+A **classe CIM \_ ResidesOnExtent** representa uma associação entre um sistema de arquivos e a extensão de armazenamento em que ele está localizado. Normalmente, um sistema de arquivos reside em um disco lógico.
 
 > [!IMPORTANT]
-> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> As classes CIM (Distributed Management Task Force) do DMTF (Distributed Management Task Force) modelo CIM são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
@@ -47,55 +47,55 @@ class CIM_ResidesOnExtent : CIM_Dependency
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ ResidesOnExtent** tem estes tipos de membros:
+A **classe CIM \_ ResidesOnExtent** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ ResidesOnExtent** tem essas propriedades.
+A **classe CIM \_ ResidesOnExtent** tem essas propriedades.
 
 <dl> <dt>
 
-**Antecedent**
+**Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **CIM \_ StorageExtent**
+Tipo de dados: **Cim \_ StorageExtent**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent")
+Qualificadores: [**substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecessor")
 </dt> </dl>
 
-Um [**\_ StorageExtent CIM**](cim-storageextent.md) que descreve a extensão de armazenamento.
+Um [**\_ StorageExtent cim**](cim-storageextent.md) que descreve a extensão de armazenamento.
 
 </dd> <dt>
 
-**Depende**
+**Dependente**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados **: \_ sistema de arquivos CIM**
+Tipo de dados: **Cim \_ FileSystem**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependente")
+Qualificadores: [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependente")
 </dt> </dl>
 
-Um [**\_ sistema de arquivos CIM**](cim-filesystem.md) que descreve o sistema de arquivos que está localizado na extensão de armazenamento.
+Um [**\_ FileSystem CIM**](cim-filesystem.md) que descreve o sistema de arquivos localizado na extensão de armazenamento.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-A classe **CIM \_ ResidesOnExtent** é derivada da [**\_ dependência CIM**](cim-dependency.md).
+A **classe CIM \_ ResidesOnExtent** é derivada da [**\_ Dependência CIM.**](cim-dependency.md)
 
 O WMI não implementa essa classe.
 
-Esta documentação é derivada das descrições da classe CIM publicadas pela DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, obedecer aos padrões de documentação do Microsoft SDK ou fornecer mais informações.
+Esta documentação é derivada das descrições da classe CIM publicadas pelo DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, estar em conformidade com os padrões de documentação do SDK da Microsoft ou fornecer mais informações.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -105,8 +105,8 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -115,7 +115,7 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 
 <dl> <dt>
 
-[**\_Dependência CIM**](cim-dependency.md)
+[**Dependência cim \_**](cim-dependency.md)
 </dt> </dl>
 
  

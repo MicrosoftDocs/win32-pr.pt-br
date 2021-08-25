@@ -1,28 +1,28 @@
 ---
-title: Canais virtuais programáveis
-description: Descreve as alterações no modelo de programação para implementar aplicativos de canal virtual que são fornecidos pelo Cliente Avançado de serviços de terminal (TSAC).
+title: Canais virtuais com script
+description: Descreve as alterações no modelo de programação para implementar aplicativos de canal virtual fornecidos pelo TSAC (Terminal Services Cliente Avançado).
 ms.assetid: b9ec2e4b-99c7-4f0d-9706-45a98446ca04
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 023738e7845801cc6d3ca3f4c00f5609b8406ca9
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9f98c09a172c69ada01331cf36b362ca969eaf9fd916bef715287a9d288d00a9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105753519"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119988326"
 ---
-# <a name="scriptable-virtual-channels"></a>Canais virtuais programáveis
+# <a name="scriptable-virtual-channels"></a>Canais virtuais com script
 
-Para obter informações sobre como usar canais virtuais programáveis, consulte [implementando canais virtuais programáveis usando o conexão Web de área de trabalho remota](implementing-scriptable-virtual-channels-using-remote-desktop-web-connection.md).
+Para obter informações sobre como usar canais virtuais que podem ser scripts, consulte [Implementando canais virtuais que podem](implementing-scriptable-virtual-channels-using-remote-desktop-web-connection.md)ser scripts usando Conexão Web de Área de Trabalho Remota .
 
-Para obter informações sobre canais virtuais, consulte [serviços de área de trabalho remota canais virtuais](terminal-services-virtual-channels.md).
+Para obter informações sobre canais virtuais, [consulte Serviços de Área de Trabalho Remota Virtual Channels](terminal-services-virtual-channels.md).
 
-**Windows XP:** O Windows XP inclui Conexão Web de Área de Trabalho Remota, que é uma versão atualizada do Cliente Avançado de serviços de terminal (TSAC). O Conexão Web de Área de Trabalho Remota dá suporte a [protocolo RDP](remote-desktop-protocol.md) (RDP) 5,1 e é compatível com versões anteriores do RDP 5,0.
+**Windows XP:** Windows XP inclui Conexão Web de Área de Trabalho Remota, que é uma versão atualizada do TSAC (Terminal Services Cliente Avançado). Conexão Web de Área de Trabalho Remota dá [suporte protocolo RDP](remote-desktop-protocol.md) (RDP) 5.1 e é compatível com versões anteriores com o RDP 5.0.
 
- 
+ 
 
- 
+ 
 
 
 

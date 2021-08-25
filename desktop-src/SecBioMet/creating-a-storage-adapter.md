@@ -1,19 +1,19 @@
 ---
-title: Criando um adaptador de armazenamento
+title: criando um adaptador de Armazenamento
 description: Estrutura básica de um plug-in de adaptador de armazenamento implementada como uma DLL (biblioteca de vínculo dinâmico) do C++.
 ms.assetid: c37e4c46-d11c-4458-b87b-78f693188e3c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a4f922035b84593d812380991d0574a3ebeb141
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c8ff7ab15b1f94a37c77a7b3f4f014d34794999ae83429d663d7f97ac29ab5e5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104453713"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119993766"
 ---
-# <a name="creating-a-storage-adapter"></a>Criando um adaptador de armazenamento
+# <a name="creating-a-storage-adapter"></a>criando um adaptador de Armazenamento
 
-O exemplo de código a seguir mostra a estrutura básica de um plug-in de adaptador de armazenamento implementado como uma DLL (biblioteca de vínculo dinâmico) do C++. Para ver as implementações de pseudocódigo de cada função pública na DLL, vá para [funções do adaptador de armazenamento](storage-adapter-functions.md). Se você optar por não fornecer a funcionalidade para uma função específica, deverá definir um stub para ela e retornar E \_ NOTIMPL.
+O exemplo de código a seguir mostra a estrutura básica de um plug-in de adaptador de armazenamento implementado como uma DLL (biblioteca de vínculo dinâmico) do C++. para ver as implementações de pseudocódigo de cada função pública na DLL, vá para [Armazenamento funções de adaptador](storage-adapter-functions.md). Se você optar por não fornecer a funcionalidade para uma função específica, deverá definir um stub para ela e retornar E \_ NOTIMPL.
 
 
 ```C++
@@ -738,9 +738,9 @@ StorageAdapterControlUnitPrivileged(
 [Criando plug-ins de adaptador](creating-adapter-plug-ins.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

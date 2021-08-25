@@ -1,9 +1,9 @@
 ---
-title: Mensagem de TB_GETBUTTON (commctrl. h)
+title: TB_GETBUTTON mensagem (Commctrl.h)
 description: Recupera informações sobre o botão especificado em uma barra de ferramentas.
 ms.assetid: d90d053c-0daf-4a5a-b7ca-b9b4472c65a3
 keywords:
-- Controles de TB_GETBUTTON de mensagens do Windows
+- TB_GETBUTTON controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eb2080a6c984bb2384f68a1388bd46fe598f5087
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9e36d8cd4e382570884b0cb30f7c95615e2342544cab0970e9864e9fde7882f0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103645265"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119919026"
 ---
-# <a name="tb_getbutton-message"></a>Mensagem de $ BUTTON de TB \_
+# <a name="tb_getbutton-message"></a>Mensagem \_ GETBUTTON de TB
 
 Recupera informações sobre o botão especificado em uma barra de ferramentas.
 
@@ -32,20 +32,20 @@ Recupera informações sobre o botão especificado em uma barra de ferramentas.
 *wParam* 
 </dt> <dd>
 
-Índice de base zero do botão para o qual recuperar informações.
+Índice baseado em zero do botão para o qual recuperar informações.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Ponteiro para a estrutura [**TBBUTTON**](/windows/desktop/api/Commctrl/ns-commctrl-tbbutton) que recebe as informações do botão.
+Ponteiro para a [**estrutura TBBUTTON**](/windows/desktop/api/Commctrl/ns-commctrl-tbbutton) que recebe as informações do botão.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna **verdadeiro** se for bem-sucedido ou **false** caso contrário.
+Retorna **TRUE se** for bem-sucedido ou FALSE **caso** contrário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ Retorna **verdadeiro** se for bem-sucedido ou **false** caso contrário.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

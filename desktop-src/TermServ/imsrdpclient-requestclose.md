@@ -1,30 +1,30 @@
 ---
-title: Método IMsRdpClient RequestClose
-description: Solicita um desligamento normal do Área de Trabalho Remota controle ActiveX.
+title: Método RequestClose IMsRdpClient
+description: Solicita um desligamento normalmente do Área de Trabalho Remota ActiveX controle.
 ms.assetid: 0b930a00-f134-4da2-a752-8fd131a22043
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota do método RequestClose
-- Método RequestClose Serviços de Área de Trabalho Remota, interface IMsRdpClient
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient, método RequestClose
-- Método RequestClose Serviços de Área de Trabalho Remota, interface IMsRdpClient2
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient2, método RequestClose
-- Método RequestClose Serviços de Área de Trabalho Remota, interface IMsRdpClient3
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient3, método RequestClose
-- Método RequestClose Serviços de Área de Trabalho Remota, interface IMsRdpClient4
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient4, método RequestClose
-- Método RequestClose Serviços de Área de Trabalho Remota, interface IMsRdpClient5
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient5, método RequestClose
-- Método RequestClose Serviços de Área de Trabalho Remota, interface IMsRdpClient6
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient6, método RequestClose
-- Método RequestClose Serviços de Área de Trabalho Remota, interface IMsRdpClient7
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient7, método RequestClose
-- Método RequestClose Serviços de Área de Trabalho Remota, interface IMsRdpClient8
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient8, método RequestClose
-- Método RequestClose Serviços de Área de Trabalho Remota, interface IMsRdpClient9
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient9, método RequestClose
-- Método RequestClose Serviços de Área de Trabalho Remota, interface IMsRdpClient10
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient10, método RequestClose
+- Método RequestClose Serviços de Área de Trabalho Remota
+- O método RequestClose Serviços de Área de Trabalho Remota , interface IMsRdpClient
+- Interface IMsRdpClient Serviços de Área de Trabalho Remota , método RequestClose
+- O método RequestClose Serviços de Área de Trabalho Remota interface , IMsRdpClient2
+- Interface IMsRdpClient2 Serviços de Área de Trabalho Remota , método RequestClose
+- O método RequestClose Serviços de Área de Trabalho Remota , interface IMsRdpClient3
+- Interface IMsRdpClient3 Serviços de Área de Trabalho Remota , método RequestClose
+- O método RequestClose Serviços de Área de Trabalho Remota interface , IMsRdpClient4
+- Interface IMsRdpClient4 Serviços de Área de Trabalho Remota , método RequestClose
+- O método RequestClose Serviços de Área de Trabalho Remota , interface IMsRdpClient5
+- Interface IMsRdpClient5 Serviços de Área de Trabalho Remota , método RequestClose
+- O método RequestClose Serviços de Área de Trabalho Remota interface , IMsRdpClient6
+- Interface IMsRdpClient6 Serviços de Área de Trabalho Remota , método RequestClose
+- O método RequestClose Serviços de Área de Trabalho Remota interface , IMsRdpClient7
+- Interface IMsRdpClient7 Serviços de Área de Trabalho Remota , método RequestClose
+- O método RequestClose Serviços de Área de Trabalho Remota interface , IMsRdpClient8
+- Interface IMsRdpClient8 Serviços de Área de Trabalho Remota , método RequestClose
+- O método RequestClose Serviços de Área de Trabalho Remota interface , IMsRdpClient9
+- Interface IMsRdpClient9 Serviços de Área de Trabalho Remota , método RequestClose
+- O método RequestClose Serviços de Área de Trabalho Remota interface , IMsRdpClient10
+- Interface IMsRdpClient10 Serviços de Área de Trabalho Remota , método RequestClose
 topic_type:
 - apiref
 api_name:
@@ -44,16 +44,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1679b08680b962cdbff57e9bbbd1c392607d8709
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ae812c27b0c280ca3a6cd879d5af86181de85793ec6092441fb83b45c74d8656
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644418"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120010176"
 ---
-# <a name="imsrdpclientrequestclose-method"></a>Método IMsRdpClient:: RequestClose
+# <a name="imsrdpclientrequestclose-method"></a>Método IMsRdpClient::RequestClose
 
-Solicita um desligamento normal do Área de Trabalho Remota controle ActiveX. Um desligamento normal pode incluir a finalização da sessão de Serviços de Área de Trabalho Remota do usuário, mas ele não desliga o servidor Host da Sessão da Área de Trabalho Remota (Host da Sessão RD).
+Solicita um desligamento normalmente do Área de Trabalho Remota ActiveX controle. Um desligamento normalmente pode incluir o encerramento da sessão de Serviços de Área de Trabalho Remota do usuário, mas não desliga o servidor Host da Sessão da Área de Trabalho Remota (Host da Sessão RD).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -70,10 +70,10 @@ HRESULT RequestClose(
 
 <dl> <dt>
 
-*pCloseStatus* \[ fora\]
+*pCloseStatus* \[ out\]
 </dt> <dd>
 
-Valor da enumeração [**ControlCloseStatus**](controlclosestatus.md) que indica se o aplicativo pode fechar o controle imediatamente. A seguir está uma lista de possíveis valores.
+Valor da [**enumeração ControlCloseStatus**](controlclosestatus.md) que indica se o aplicativo pode fechar o controle imediatamente. A seguir está uma lista de valores possíveis.
 
 <dt>
 
@@ -95,24 +95,24 @@ O aplicativo de contêiner pode continuar a fechar o controle imediatamente. Ess
 
 </dt> <dd>
 
-O aplicativo de contêiner não deve fechar o controle imediatamente; o aplicativo deve aguardar um dos eventos descritos na seção comentários a seguir para ocorrer antes de fechar.
+O aplicativo de contêiner não deve fechar o controle imediatamente; O aplicativo deve aguardar que um dos eventos descritos na seção Comentários a seguir ocorra antes de fechar.
 
 </dd> </dl> </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retornar **S \_ OK** se for bem-sucedido.
+Retornar **S \_ OK se** for bem-sucedido.
 
 ## <a name="remarks"></a>Comentários
 
-Se o parâmetro *pCloseStatus* for igual a **controlCloseWaitForEvents**, o aplicativo deverá esperar que um dos seguintes eventos ocorra antes que o aplicativo feche o controle:
+Se o *parâmetro pCloseStatus* for igual a **controlCloseWaitForEvents**, o aplicativo deverá aguardar que um dos seguintes eventos ocorra antes que o aplicativo feche o controle:
 
--   [**IMsTscAxEvents:: OnDisconnect**](imstscaxevents-ondisconnected.md). Se o usuário não estiver conectado à sessão de Serviços de Área de Trabalho Remota, o aplicativo poderá chamar a função [**DestroyWindow**](/windows/desktop/api/winuser/nf-winuser-destroywindow) para destruir todas as janelas e, em seguida, fechar o controle.
--   [**IMsTscAxEvents:: OnConfirmClose**](imstscaxevents-onconfirmclose.md). Se o usuário estiver conectado à sessão de Serviços de Área de Trabalho Remota, o controle acionará um evento **OnConfirmClose** . Esse evento permite que o aplicativo solicite ao usuário se deseja fechar a conexão. Se o usuário responder sim para o prompt, o aplicativo de contêiner poderá chamar [**DestroyWindow**](/windows/desktop/api/winuser/nf-winuser-destroywindow) para destruir todas as janelas e fechar o controle.
+-   [**IMsTscAxEvents::OnDisconnected.**](imstscaxevents-ondisconnected.md) Se o usuário não estiver conectado à sessão Serviços de Área de Trabalho Remota, o aplicativo poderá chamar a [**função DestroyWindow**](/windows/desktop/api/winuser/nf-winuser-destroywindow) para destruir todas as janelas e fechar o controle.
+-   [**IMsTscAxEvents::OnConfirmClose.**](imstscaxevents-onconfirmclose.md) Se o usuário estiver conectado à sessão Serviços de Área de Trabalho Remota, o controle disparará um **evento OnConfirmClose.** Esse evento permite que o aplicativo solicita ao usuário se deve fechar a conexão. Se o usuário responder sim ao prompt, o aplicativo de contêiner poderá chamar [**DestroyWindow**](/windows/desktop/api/winuser/nf-winuser-destroywindow) para destruir todas as janelas e fechar o controle.
 
-O **RequestClose** permite que um aplicativo de contêiner solicite ao usuário se uma conexão deve ser fechada. Para obter mais informações, consulte [**IMsTscAxEvents:: OnConfirmClose**](imstscaxevents-onconfirmclose.md).
+**RequestClose** permite que um aplicativo de contêiner solicite ao usuário se deve fechar uma conexão. Para obter mais informações, [**consulte IMsTscAxEvents::OnConfirmClose**](imstscaxevents-onconfirmclose.md).
 
-Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for conexão Web de área de trabalho remota](requirements-for-remote-desktop-web-connection.md).
+Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for Conexão Web de Área de Trabalho Remota](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -132,7 +132,7 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 
 <dl> <dt>
 
-[**IMsRdpClient**](imsrdpclient-interface.md)
+[**Imsrdpclient**](imsrdpclient-interface.md)
 </dt> <dt>
 
 [**IMsRdpClient2**](imsrdpclient2.md)
@@ -165,7 +165,7 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 [**IMsTscAxEvents::OnConfirmClose**](imstscaxevents-onconfirmclose.md)
 </dt> <dt>
 
-[**IMsTscAxEvents:: ondisconnectd**](imstscaxevents-ondisconnected.md)
+[**IMsTscAxEvents::OnDisconnected**](imstscaxevents-ondisconnected.md)
 </dt> </dl>
 
  

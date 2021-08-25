@@ -4,17 +4,17 @@ description: Criando controles deslizantes personalizados
 ms.assetid: eb26ba44-a891-4cb6-be74-5acf881e896f
 keywords:
 - Criando capas, controles deslizantes
-- Capas, controles deslizantes do Windows Media Player
+- Windows Media Player capas, controles deslizantes
 - capas, controles deslizantes
 - controles deslizantes em capas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d0f205d46af003589fcc2c3b741a253ea08fae12
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d85a789bbd90003b59e1a9b9dcf8fffcf4a126c38138f7a051c24125780f8c83
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104498752"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119902326"
 ---
 # <a name="creating-custom-sliders"></a>Criando controles deslizantes personalizados
 
@@ -51,9 +51,9 @@ Você pode ver uma aparência de controle deslizante de trabalho semelhante na s
 [**Guia de criação de capa**](skin-creation-guide.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

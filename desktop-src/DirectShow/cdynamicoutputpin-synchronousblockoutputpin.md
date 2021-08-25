@@ -1,7 +1,7 @@
 ---
-description: O método SynchronousBlockOutputPin bloqueia o PIN; Não retorna até que o PIN seja bloqueado.
+description: O método SynchronousBlockOutputPin bloqueia o pino; não retorna até que o pino seja bloqueado.
 ms.assetid: 10fdb788-bc72-4eda-b60b-af83f954d689
-title: Método CDynamicOutputPin. SynchronousBlockOutputPin (Amfilter. h)
+title: Método CDynamicOutputPin.SynchronousBlockOutputPin (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7fff1a0a1f093b97d07c74d7916ef2a7511d0e16
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d8613a27d8af2dc2b69a93a1f324db17b054cf2dd312fdb0c9d6cd63e6c89ca8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105757424"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119916306"
 ---
-# <a name="cdynamicoutputpinsynchronousblockoutputpin-method"></a>Método CDynamicOutputPin. SynchronousBlockOutputPin
+# <a name="cdynamicoutputpinsynchronousblockoutputpin-method"></a>Método CDynamicOutputPin.SynchronousBlockOutputPin
 
-O `SynchronousBlockOutputPin` método bloqueia o PIN; não retorna até que o PIN seja bloqueado.
+O `SynchronousBlockOutputPin` método bloqueia o pino; não retorna até que o pino seja bloqueado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,17 +40,17 @@ HRESULT SynchronousBlockOutputPin();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor **HRESULT** . Os valores possíveis incluem os mostrados na tabela a seguir.
+Retorna um **valor HRESULT.** Os valores possíveis incluem aqueles mostrados na tabela a seguir.
 
 
 
 | Código de retorno                                                                                                                    | Descrição                                              |
 |--------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                                           | Êxito.<br/>                                      |
-| <dl> <dt>**VFW \_ E \_ PIN \_ já \_ bloqueados**</dt> </dl>                   | O PIN já está bloqueado em outro thread.<br/>     |
-| <dl> <dt>**VFW \_ E \_ PIN \_ já \_ bloqueados neste \_ \_ \_ thread**</dt> </dl> | O PIN já está bloqueado no thread de chamada.<br/> |
+| <dl> <dt>**PIN DO VFW \_ E \_ JÁ \_ \_ BLOQUEADO**</dt> </dl>                   | O pin já está bloqueado em outro thread.<br/>     |
+| <dl> <dt>**VFW \_ E PIN JÁ \_ \_ \_ \_ \_ BLOQUEADOS NESSE \_ THREAD**</dt> </dl> | O pin já está bloqueado no thread de chamada.<br/> |
 
 
 
@@ -66,8 +66,8 @@ Não chame esse método do thread de streaming.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amfilter.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

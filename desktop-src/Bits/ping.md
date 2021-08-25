@@ -1,9 +1,9 @@
 ---
 title: Ping
-description: Use o pacote ping para estabelecer uma conexão e negociar a segurança com o servidor.
+description: Use o pacote Ping para estabelecer uma conexão e negociar a segurança com o servidor.
 ms.assetid: 10b01fe8-d1a3-4a3b-ac35-e3557d3ef4ee
 keywords:
-- BITS de ping
+- Ping BITS
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.locfileid: "120004886"
 ---
 # <a name="ping"></a>Ping
 
-Use o pacote **ping** para estabelecer uma conexão e negociar a segurança com o servidor.
+Use o **pacote Ping** para estabelecer uma conexão e negociar a segurança com o servidor.
 
 ``` syntax
 BITS_POST remote-URL HTTP/1.1
@@ -32,31 +32,31 @@ BITS-Packet-Type: Ping
 
 <dl> <dt>
 
-<span id="BITS_POST"></span><span id="bits_post"></span>\_postagem de bits
+<span id="BITS_POST"></span><span id="bits_post"></span>BITS \_ POST
 </dt> <dd>
 
-Verbo específico do BITS que identifica esse pacote para o servidor BITS.
+Verbo específico de BITS que identifica esse pacote para o servidor BITS.
 
-Substitua a URL remota pelo URI absoluto ou relativo. Normalmente, substitua a URL remota pelo nome do arquivo remoto do trabalho.
+Substitua REMOTE-URL pelo URI absoluto ou relativo. Normalmente, substitua REMOTE-URL pelo nome de arquivo remoto do trabalho.
 
 </dd> <dt>
 
-<span id="BITS-Packet-Type"></span><span id="bits-packet-type"></span><span id="BITS-PACKET-TYPE"></span>BITS-tipo de pacote
+<span id="BITS-Packet-Type"></span><span id="bits-packet-type"></span><span id="BITS-PACKET-TYPE"></span>Bits-Packet-Type
 </dt> <dd>
 
-Identifica esse pacote de solicitação como um pacote de ping.
+Identifica esse pacote de solicitação como um pacote ping.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-O pacote de **ping** é opcional. Em vez de enviar um pacote **ping** , você pode usar o pacote [**Create-Session**](create-session.md) para estabelecer uma conexão e negociar a segurança. No entanto, é mais eficiente usar o pacote de **ping** para essa finalidade.
+O **pacote Ping** é opcional. Em vez de enviar um **pacote ping,** você pode usar o [**pacote Create-Session**](create-session.md) para estabelecer uma conexão e negociar a segurança. No entanto, é mais eficiente usar o **pacote Ping** para essa finalidade.
 
 ## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[**ACK para ping**](ack-for-ping.md)
+[**Ack para Ping**](ack-for-ping.md)
 </dt> <dt>
 
 [**Criar sessão**](create-session.md)

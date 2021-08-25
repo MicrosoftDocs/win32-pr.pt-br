@@ -1,9 +1,9 @@
 ---
-title: Elemento opcode (RenderingInfoType)
+title: Elemento Opcode (RenderingInfoType)
 description: A cadeia de caracteres de mensagem renderizada do opcode especificado no evento.
 ms.assetid: 5fdc94ca-edc0-4eae-8dab-d58d9172b8fc
 keywords:
-- EventLog do elemento opcode
+- Elemento Opcode EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9ab6ed5bea91b5d05e21239d876f9efc86bbe51a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b8ab181b57b91f3fbc9587833c3bd7d2e1c12b3f8c723961eae2a523573925ec
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918897"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119904566"
 ---
-# <a name="opcode-renderinginfotype-element"></a>Elemento opcode (RenderingInfoType)
+# <a name="opcode-renderinginfotype-element"></a>Elemento Opcode (RenderingInfoType)
 
 A cadeia de caracteres de mensagem renderizada do opcode especificado no evento.
 
@@ -30,7 +30,7 @@ A cadeia de caracteres de mensagem renderizada do opcode especificado no evento.
  />
 ```
 
-O elemento **opcode** é definido pelo tipo complexo [**RenderingInfoType**](eventschema-renderingtype-complextype.md) .
+O **elemento Opcode** é definido pelo tipo complexo [**RenderingInfoType.**](eventschema-renderingtype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ O elemento **opcode** é definido pelo tipo complexo [**RenderingInfoType**](eve
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

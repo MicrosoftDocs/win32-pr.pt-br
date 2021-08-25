@@ -4,12 +4,12 @@ description: Arquitetura de objetos conectáveis
 ms.assetid: 69949a3b-3ab8-4054-84d8-9256fbf39c7b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e9d8d2909942d1c04aed972e7891a6f4ae3f730
-ms.sourcegitcommit: d39e82e232f6510f843fdb8d55d25b4e9e02e880
+ms.openlocfilehash: d1215b013c3db751e90b07ed21d5f897ef0332000ce2cd2b3b167cbe86798927
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "105788695"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119993947"
 ---
 # <a name="architecture-of-connectable-objects"></a>Arquitetura de objetos conectáveis
 

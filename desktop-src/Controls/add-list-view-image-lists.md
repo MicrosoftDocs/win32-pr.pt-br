@@ -4,12 +4,12 @@ description: Este tópico demonstra como adicionar listas de imagens a um contro
 ms.assetid: 3C282FBC-5E37-4D8E-A2C4-B2876874E9A7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c2f6f5b483ea80b412ab7638c9aceafcac4c5e6
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 8875573634cd47fb5ccb271c3dabfca99daf9061469e31c1178b3e4ed938347e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104294609"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119922047"
 ---
 # <a name="how-to-add-list-view-image-lists"></a>Como adicionar List-View listas de imagens
 
@@ -21,12 +21,12 @@ Você cria apenas as listas de imagens que o controle usa. Por exemplo, se seu a
 
 ### <a name="technologies"></a>Tecnologias
 
--   [Controles do Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
 -   C/C++
--   Programação da interface do usuário do Windows
+-   Windows Programação de interface do usuário
 
 ## <a name="instructions"></a>Instruções
 

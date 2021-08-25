@@ -4,12 +4,12 @@ description: Manipuladores de objetos
 ms.assetid: a5b51e07-246d-42a2-b33f-2bd0c608f41a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d7294ddd48d2acaa010ad15c0e2497fd33c7f071
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c85221456d637e0d9e982aad253c06d34618018a3648a31a7bd21e8c1465fa84
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822382"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119992316"
 ---
 # <a name="object-handlers"></a>Manipuladores de objetos
 
@@ -21,7 +21,7 @@ O OLE fornece um manipulador de objeto padrão que os aplicativos de servidor lo
 
 Um manipulador de objeto é uma DLL que contém vários componentes de interação. Esses componentes incluem partes de comunicação remota para gerenciar a comunicação entre o manipulador e seu aplicativo de servidor, um cache para armazenar os dados de um objeto, juntamente com informações sobre como esses dados devem ser formatados e exibidos e um objeto de controle que coordena as atividades dos outros componentes da DLL. Além disso, se um objeto for um link, a DLL também incluirá um componente de vinculação ou *objeto vinculado*, que controla o nome e o local da origem do link.
 
-O *cache* contém dados e informações de apresentação suficientes para que o manipulador exiba um objeto carregado, mas não em execução, em seu contêiner. O OLE fornece uma implementação do cache usado pelo manipulador de objetos padrão do OLE e o objeto de link. O cache armazena dados em formatos necessários para o manipulador de objeto atender às solicitações de desenho de contêiner. Quando os dados de um objeto são alterados, o objeto envia uma notificação ao cache para que uma atualização possa ocorrer. Para obter mais informações sobre o cache, consulte [Exibir cache](view-caching.md).
+O *cache* contém dados e informações de apresentação suficientes para que o manipulador exiba um objeto carregado, mas não em execução, em seu contêiner. O OLE fornece uma implementação do cache usado pelo manipulador de objetos padrão do OLE e o objeto de link. O cache armazena dados em formatos necessários para o manipulador de objeto atender às solicitações de desenho de contêiner. Quando os dados de um objeto são alterados, o objeto envia uma notificação ao cache para que uma atualização possa ocorrer. Para obter mais informações sobre o cache, consulte [exibir Caching](view-caching.md).
 
 Para obter mais informações, consulte o tópico a seguir:
 
@@ -34,9 +34,9 @@ Para obter mais informações, consulte o tópico a seguir:
 [Documentos compostos](compound-documents.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

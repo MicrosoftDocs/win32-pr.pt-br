@@ -4,12 +4,12 @@ ms.assetid: 5ffac4f8-7112-4383-bf73-16e2289a3942
 title: Relatórios de atividade de controles dos pais
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a41527e166b683e2ae7cd72129d9c9f3e032c7c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3a5d45a180114c2c53dbccc48836697b1a4fdab733db4f06237696d3dd50f42c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105790308"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119939356"
 ---
 # <a name="parental-controls-activity-reporting"></a>Relatórios de atividade de controles dos pais
 
@@ -19,9 +19,9 @@ Clicar no link relatórios de atividade abre uma página do Visualizador de log 
 
 A caixa Resumo no canto superior direito do painel controles pais indica o status atual do relatório de atividades.
 
-Os eventos de atividade também são visíveis no Visualizador de Eventos com um nome de Microsoft.com/Windows/ParentalControls nos logs do aplicativo.
+os eventos de atividade também são visíveis no Visualizador de Eventos com um nome de Microsoft.com/Windows/ParentalControls nos Logs de aplicativo.
 
-Essa funcionalidade depende da nova funcionalidade de log de eventos no Windows Vista, usando as APIs de publicação fornecidas.
+essa funcionalidade depende da nova funcionalidade de log de eventos no Windows Vista, usando as APIs de publicação fornecidas.
 
  
 

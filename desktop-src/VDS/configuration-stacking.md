@@ -4,16 +4,16 @@ ms.assetid: 1f0f75d6-3553-4ee1-8ee6-bd617da4a109
 title: Empilhamento de configuração
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b50b90629556b5ed00db712b49fe8fa4e48ea8cc
-ms.sourcegitcommit: 37f276b5d887a3aad04b1ba86e390dea9d87e591
+ms.openlocfilehash: 9018a2484ce4e5b9121d08abffee54911531b7f421cfef75643594e827fe350e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "104561762"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119905548"
 ---
 # <a name="configuration-stacking"></a>Empilhamento de configuração
 
-\[A partir do Windows 8 e do Windows Server 2012, a interface com do [serviço de disco virtual](virtual-disk-service-portal.md) é substituída pela [API de gerenciamento de armazenamento do Windows](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal).\]
+\[a partir do Windows 8 e Windows Server 2012, a interface COM do [serviço de disco Virtual](virtual-disk-service-portal.md) é substituída pela [API de gerenciamento de Armazenamento Windows](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal).\]
 
 O empilhamento envolve a concatenação de um conjunto de mapeamentos de blocos lógicos. Você pode empilhar vários LUNs do mesmo subsistema em um LUN. Você pode empilhar um LUN junto com volumes do mesmo pacote em um volume. Além disso, você pode empilhar vários LUNs que são exibidos por subsistemas heterogêneos em um volume.
 

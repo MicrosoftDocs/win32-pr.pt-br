@@ -1,9 +1,9 @@
 ---
-title: Mensagem de LVM_GETHOVERTIME (commctrl. h)
-description: Recupera a quantidade de tempo que o cursor do mouse deve passar sobre um item antes de ser selecionado. Você pode enviar essa mensagem explicitamente ou usar a \_ macro Getfocalizetime de ListView.
+title: LVM_GETHOVERTIME mensagem (Commctrl.h)
+description: Recupera a quantidade de tempo que o cursor do mouse deve passar sobre um item antes de ser selecionado. Você pode enviar essa mensagem explicitamente ou usar a \_ macro ListView GetHoverTime.
 ms.assetid: e7646024-f868-459f-88be-b232b6b4bb2a
 keywords:
-- Controles de LVM_GETHOVERTIME de mensagens do Windows
+- LVM_GETHOVERTIME controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 83e243ece42f06ffe35eb31954d9ca0dd44957be
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 150a8eff54f8b3c27f0e7783ceda67af60c326e370d1a518d83e6bdd214fb529
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455432"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119920096"
 ---
-# <a name="lvm_gethovertime-message"></a>Mensagem do LVM \_ GETfocalizetime
+# <a name="lvm_gethovertime-message"></a>Mensagem \_ GETHOVERTIME LVM
 
-Recupera a quantidade de tempo que o cursor do mouse deve passar sobre um item antes de ser selecionado. Você pode enviar essa mensagem explicitamente ou usar a [**macro \_ getfocalizetime de ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_gethovertime) .
+Recupera a quantidade de tempo que o cursor do mouse deve passar sobre um item antes de ser selecionado. Você pode enviar essa mensagem explicitamente ou usar a [**macro \_ ListView GetHoverTime.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_gethovertime)
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -35,13 +35,13 @@ Recupera a quantidade de tempo que o cursor do mouse deve passar sobre um item a
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna o período de tempo, em milissegundos, que o cursor do mouse deve passar sobre um item antes de ser selecionado. Se o valor de retorno for (**DWORD**)-1, o tempo de foco será o tempo de focalização padrão.
+Retorna a quantidade de tempo, em milissegundos, que o cursor do mouse deve passar o mouse sobre um item antes de ser selecionado. Se o valor de retorno for (**DWORD**)-1, o tempo de foco será o tempo de foco padrão.
 
 ## <a name="remarks"></a>Comentários
 
-O tempo de foco afeta apenas os controles de exibição de lista que têm o estilo de exibição de lista estendida [**LVS \_ ex \_ TRACKSELECT**](extended-list-view-styles.md), [**LVS \_ ex \_ ONECLICKACTIVATE**](extended-list-view-styles.md)ou [**LVS \_ ex \_ TWOCLICKACTIVATE**](extended-list-view-styles.md) .
+O tempo de foco afeta apenas os controles de exibição de lista que têm o estilo de exibição de lista estendido [**LVS \_ EX \_ TRACKSELECT**](extended-list-view-styles.md), [**LVS \_ EX \_ ONECLICKACTIVATE**](extended-list-view-styles.md)ou [**LVS \_ EX \_ TWOCLICKACTIVATE.**](extended-list-view-styles.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,9 +49,9 @@ O tempo de foco afeta apenas os controles de exibição de lista que têm o esti
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
