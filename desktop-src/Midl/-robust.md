@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 974f9530006c03a041d9d444c41f9c5ca01569c0
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 551f5a60013aa3a903dcb3e35cc4c25a9f83dc67fff2a6ab5c7bfd62a041feee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103823179"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119895816"
 ---
 # <a name="robust-switch"></a>comutador/robust
 
@@ -73,9 +73,9 @@ A opção **/robust** é necessária para implementar a verificação de interva
 [**amplitude**](range.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

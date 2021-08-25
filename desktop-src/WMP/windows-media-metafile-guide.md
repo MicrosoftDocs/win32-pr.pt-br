@@ -1,16 +1,16 @@
 ---
-title: Guia de metarquivo do Windows Media
-description: Guia de metarquivo do Windows Media
+title: Windows Guia de metadados de mídia
+description: Windows Guia de metadados de mídia
 ms.assetid: d2360a63-f073-44b0-8637-1f22b577f51a
 keywords:
-- Metaarquivos do Windows Media, sobre
-- Windows Media Player, metaarquivos
-- Windows Media Player, metaarquivos do Windows Media
-- metaarquivos, sobre
-- Windows Media, metaarquivos
-- Listas de reprodução do metarquivo do Windows Media, sobre
-- listas de reprodução, sobre
-- listas de reprodução de metarquivo, sobre
+- Windows Metadados de mídia, sobre
+- Windows Media Player,metadados
+- Windows Media Player,Windows metadados de mídia
+- metafiles,about
+- Windows Mídia, metadados
+- Windows Playlists de metadados de mídia, sobre
+- playlists, sobre
+- playlists de metadados, sobre
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -18,46 +18,46 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: fcf0a4c98ae49d1cdf3b7e36e8a278f184cd4632
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a16f539d232271843c891760f319fc26decc87a9b1c3bcf4a3d575ffb7d86856
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103916582"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119900636"
 ---
-# <a name="windows-media-metafile-guide"></a>Guia de metarquivo do Windows Media
+# <a name="windows-media-metafile-guide"></a>Windows Guia de metadados de mídia
 
-Um metarquivo do Windows Media pode ser simples ou complexo, pois você precisa que ele seja. O metarquivo do Windows Media mais básico contém apenas o Uniform Resource Locator (URL) de algum conteúdo multimídia em um servidor. O cliente do, o Windows Media Player, analisa essas informações e, em seguida, abre o arquivo de mídia ou o fluxo definido no metarquivo do Windows Media. Um metarquivo complexo pode conter vários arquivos ou fluxos organizados em uma lista de reprodução, instruções sobre como reproduzir os arquivos ou fluxos, elementos de texto e gráficos, como título, autor e texto de direitos autorais, inserção personalizada de anúncios em uma transmissão ao vivo, hiperlinks associados a elementos na interface do Windows Media Player e muito mais.
+Um Windows metadado de mídia pode ser tão simples ou complexo quanto você precisa. O metadado Windows Media mais básico contém apenas a URL (Uniform Resource Locator) de algum conteúdo multimídia em um servidor. O cliente, Windows Media Player, analisará essas informações e abrirá o arquivo de mídia ou fluxo definido no metadado Windows Mídia. Um metarquivo complexo pode conter vários arquivos ou fluxos organizados em uma playlist, instruções sobre como reproduzir os arquivos ou fluxos, texto e elementos gráficos, como título, autor e texto de direitos autorais, inserção personalizada de ad em uma transmissão ao vivo, hiperlinks associados a elementos na interface Windows Media Player e muito mais.
 
-As seções a seguir fornecem informações detalhadas sobre como criar e usar listas de reprodução do metarquivo do Windows Media.
+As seções a seguir fornecem informações detalhadas sobre como criar e usar playlists Windows metadados de mídia.
 
 
 
 | Seção                                                            | Descrição                                                                         |
 |--------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| [Tipos de listas de reprodução](types-of-playlists.md)                       | Lista as extensões de nome de arquivo disponíveis.                                               |
-| [Criando listas de reprodução de metarquivo](creating-metafile-playlists.md)     | Descreve como criar listas de reprodução do metarquivo do Windows Media.                           |
-| [Playlists de metarquivo](metafile-playlists.md)                       | Descreve o uso, o script, os metadados e o processamento da lista de reprodução do metarquivo.             |
-| [Diretrizes de extensão de metarquivo](metafile-extension-guidelines.md) | Descreve o uso preferencial de extensões de nome de arquivo para streaming de arquivos de mídia.      |
-| [Ordem de Precedência](order-of-precedence.md)                     | Descreve como os elementos de playlist do metarquivo substituem outros elementos da lista de reprodução do metarquivo. |
+| [Tipos de playlists](types-of-playlists.md)                       | Lista as extensões de nome de arquivo disponíveis.                                               |
+| [Criando playlists de metadados](creating-metafile-playlists.md)     | Descreve como criar playlists Windows de metadados de mídia.                           |
+| [Playlists de metadados](metafile-playlists.md)                       | Descreve o uso, o script, os metadados e o processamento da playlist de metadados.             |
+| [Diretrizes de extensão de metadados](metafile-extension-guidelines.md) | Descreve o uso preferencial de extensões de nome de arquivo para arquivos de mídia de streaming.      |
+| [Ordem de Precedência](order-of-precedence.md)                     | Descreve como os elementos de playlist de metadados substituem outros elementos de playlist de metadados. |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[**Referência de elementos de metarquivo do Windows Media**](windows-media-metafile-elements-reference.md)
+[**Windows Referência de elementos de metadados de mídia**](windows-media-metafile-elements-reference.md)
 </dt> <dt>
 
-[**Metaarquivos do Windows Media**](windows-media-metafiles.md)
+[**Windows Metadados de mídia**](windows-media-metafiles.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: métodos EsentMissingFullBackupException'
+description: 'Saiba mais sobre: Métodos EsentMissingFullBackupException'
 title: 'Métodos EsentMissingFullBackupException '
 TOCTitle: EsentMissingFullBackupException methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.EsentMissingFullBackupException
@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102297
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 0a137e34b9feaf6febb902f707dde024e690f356
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 782f98f107ad6a6a2da9e56033544d1d74d6352978756cebc161d6bd39ff0ee6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104555988"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119851976"
 ---
 # <a name="esentmissingfullbackupexception-methods"></a>Métodos EsentMissingFullBackupException 
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo [EsentMissingFullBackupException](./esentmissingfullbackupexception-class.md) expõe os membros a seguir.
+O [tipo EsentMissingFullBackupException](./esentmissingfullbackupexception-class.md) expõe os membros a seguir.
 
 ## <a name="methods"></a>Métodos
 
@@ -44,7 +44,7 @@ O tipo [EsentMissingFullBackupException](./esentmissingfullbackupexception-class
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">GetBaseException</a></td>
+<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">Getbaseexception</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
@@ -59,12 +59,12 @@ O tipo [EsentMissingFullBackupException](./esentmissingfullbackupexception-class
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">Gettype</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></td>
+<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Memberwiseclone</a></td>
 <td>(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</td>
 </tr>
 <tr class="even">
@@ -84,4 +84,4 @@ Parte superior
 
 [Classe EsentMissingFullBackupException](./esentmissingfullbackupexception-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

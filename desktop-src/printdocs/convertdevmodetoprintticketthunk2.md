@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - prntvpt.dll
-ms.openlocfilehash: f13d597a11a4d6cfd1ad6f5d70b3a386560f5106
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d5aea99e54a43eb35f76c719da885f8d7ae0352d47ecff62b7df38de30410025
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105785321"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119950386"
 ---
 # <a name="convertdevmodetoprintticketthunk2-function"></a>Função ConvertDevModeToPrintTicketThunk2
 
-\[Essa função não tem suporte e pode ser desabilitada ou excluída em versões futuras do Windows. O [**PTConvertDevModeToPrintTicket**](/windows/desktop/api/prntvpt/nf-prntvpt-ptconvertdevmodetoprintticket) fornece funcionalidade equivalente e deve ser usado em vez disso.\]
+\[Essa função não tem suporte e pode ser desabilitada ou excluída em versões futuras do Windows. [**PTConvertDevModeToPrintTicket**](/windows/desktop/api/prntvpt/nf-prntvpt-ptconvertdevmodetoprintticket) fornece funcionalidade equivalente e deve ser usado em vez disso.\]
 
 Converte uma estrutura [**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea) em um tíquete de impressão.
 
@@ -46,51 +46,51 @@ HRESULT ConvertDevModeToPrintTicketThunk2(
 
 <dl> <dt>
 
-*hProvider* \[ no\]
+*hProvider* \[ Em\]
 </dt> <dd>
 
-Um identificador para um provedor de tíquete de impressão aberto. Esse identificador é retornado pela função [**BindPTProviderThunk**](bindptproviderthunk.md) .
+Um handle para um provedor de tíquete de impressão aberto. Esse handle é retornado pela [**função BindPTProviderThunk.**](bindptproviderthunk.md)
 
 </dd> <dt>
 
-*pDevmode* \[ no\]
+*pDevmode* \[ Em\]
 </dt> <dd>
 
 Um ponteiro para o [**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea) a ser convertido.
 
 </dd> <dt>
 
-*cbSize* \[ no\]
+*cbSize* \[ Em\]
 </dt> <dd>
 
-O tamanho, em bytes, do [**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea) passado em *pDevmode*.
+O tamanho, em bytes, [**do DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea) passado em *pDevmode.*
 
 </dd> <dt>
 
-*escopo* \[ no\]
+*escopo* \[ Em\]
 </dt> <dd>
 
-Um valor que especifica o escopo de *ppPrintTicket*. Esse valor pode especificar uma única página, um documento inteiro ou todos os documentos no trabalho de impressão. O valor desse parâmetro deve ser um membro da enumeração [**EPrintTicketScope**](/windows/desktop/api/prntvpt/ne-prntvpt-eprintticketscope) , Cast como um **DWORD**.
+Um valor que especifica o escopo de *ppPrintTicket*. Esse valor pode especificar uma única página, um documento inteiro ou todos os documentos no trabalho de impressão. O valor desse parâmetro deve ser um membro da enumeração [**EPrintTicketScope,**](/windows/desktop/api/prntvpt/ne-prntvpt-eprintticketscope) cast como um **DWORD.**
 
 </dd> <dt>
 
-*ppPrintTicket* \[ fora\]
+*ppPrintTicket* \[ out\]
 </dt> <dd>
 
-O endereço do buffer que contém um tíquete de impressão que representa o [**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea) passado em *pDevmode*. Essa função chama [**CoTaskMemAlloc**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemalloc) para alocar esse buffer. Quando o buffer não for mais necessário, o chamador deverá liberá-lo chamando [**CoTaskMemFree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree).
+O endereço do buffer que contém um tíquete de impressão que representa [**o DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea) passado em *pDevmode.* Essa função chama [**CoTaskMemAlloc para**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemalloc) alocar esse buffer. Quando o buffer não for mais necessário, o chamador deverá libera-lo chamando [**CoTaskMemFree.**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree)
 
 </dd> <dt>
 
-*pcbPrintTicketLength* \[ fora\]
+*pcbPrintTicketLength* \[ out\]
 </dt> <dd>
 
 O tamanho, em bytes, do tíquete de impressão retornado em *ppPrintTicket*.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se o método for bem sucedido, ele retornará **S \_ OK**; caso contrário, ele retornará um código de erro **HRESULT** . Para obter mais informações sobre códigos de erro COM, consulte [tratamento de erros](../com/error-handling-in-com.md).
+Se o método for bem-sucedido, ele **retornará S \_ OK;** caso contrário, retornará um **código de erro HRESULT.** Para obter mais informações sobre códigos de erro COM, consulte [Tratamento de erros](../com/error-handling-in-com.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -98,8 +98,8 @@ Se o método for bem sucedido, ele retornará **S \_ OK**; caso contrário, ele 
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                   |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Prntvpt.dll</dt> </dl> |
 
 
@@ -108,7 +108,7 @@ Se o método for bem sucedido, ele retornará **S \_ OK**; caso contrário, ele 
 
 <dl> <dt>
 
-[Imprimir esquema](./printschema.md)
+[Esquema de impressão](./printschema.md)
 </dt> <dt>
 
 [**PTConvertDevModeToPrintTicket**](/windows/desktop/api/prntvpt/nf-prntvpt-ptconvertdevmodetoprintticket)

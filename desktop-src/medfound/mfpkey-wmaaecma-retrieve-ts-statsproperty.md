@@ -1,45 +1,45 @@
 ---
-description: Especifica se o DSP de captura de voz armazena estatísticas de carimbo de data/hora no registro.
+description: Especifica se o DSP de Captura de Voz armazena estatísticas de carimbo de data/hora no Registro.
 ms.assetid: c44462be-ccdf-4a49-bb77-6e816def4849
-title: Propriedade MFPKEY_WMAAECMA_RETRIEVE_TS_STATS (Wmcodecdsp. h)
+title: MFPKEY_WMAAECMA_RETRIEVE_TS_STATS propriedade (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cb8e4efad8def035c7282e3ade8045bdbfd7e34d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c28f9812bb5f1324fcb1153b84f5a6704c7481c8356073fd02b8d95b57a8e497
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105810687"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119953496"
 ---
-# <a name="mfpkey_wmaaecma_retrieve_ts_stats-property"></a>MFPKEY \_ WMAAECMA \_ recuperar \_ \_ Propriedade TS stats
+# <a name="mfpkey_wmaaecma_retrieve_ts_stats-property"></a>Propriedade MFPKEY \_ WMAAECMA \_ RETRIEVE \_ TS \_ STATS
 
-Especifica se o DSP de captura de voz armazena estatísticas de carimbo de data/hora no registro.
+Especifica se o DSP de Captura de Voz armazena estatísticas de carimbo de data/hora no Registro.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
-Disponível apenas usando [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).
+Disponível somente usando [**IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore)
 
 ## <a name="data-type"></a>Tipo de Dados
 
-BOOL do VT \_
+BOOL da VT \_
 
 ## <a name="default-value"></a>Valor padrão
 
-VARIANTE \_ falso
+VARIANT \_ FALSE
 
 ## <a name="applies-to"></a>Aplica-se A
 
--   [DSP de captura de voz](voicecapturedmo.md)
+-   [DSP de Captura de Voz](voicecapturedmo.md)
 
 ## <a name="remarks"></a>Comentários
 
-Os algoritmos de cancelamento de eco acústico (AEC) dependem de carimbos de data/hora precisos nos fluxos de áudio. Na realidade, os carimbos de data/hora geralmente são imperfeitos e diferentes dispositivos de áudio podem apresentar taxas diferentes de variação e descompasso. Quando o AEC está habilitado, o DSP coleta estatísticas sobre os carimbos de data e hora e usa essas informações para compensar as imprecisões.
+Os algoritmos de AEC (cancelamento de eco acústico) dependem de carimbos de data/hora precisos nos fluxos de áudio. Na realidade, os carimbos de data/hora geralmente são defeitos e diferentes dispositivos de áudio podem apresentar taxas diferentes de variação e desacordo. Quando o AEC está habilitado, o DSP coleta estatísticas sobre os carimbos de data/hora e usa essas informações para compensar imprecisões.
 
-Se o valor dessa propriedade for VARIANT \_ true, o DSP salvará as estatísticas coletadas no registro. Na próxima vez que o DSP executar o AEC usando o mesmo par de dispositivos de áudio, ele lerá as informações estatísticas do registro, o que permite que o DSP seja executado com mais eficiência.
+Se o valor dessa propriedade for VARIANT TRUE, o DSP salvará as estatísticas que \_ coleta no Registro. Na próxima vez que o DSP executar o AEC usando o mesmo par de dispositivos de áudio, ele lerá as informações estatísticas do Registro, o que permite que o DSP execute com mais eficiência.
 
-Se você definir o valor dessa propriedade como VARIANT \_ true e estiver usando o DSP no modo de filtro, também deverá definir a propriedade [MFPKEY \_ WMAAECMA \_ DEVICEPAIR \_ GUID](mfpkey-wmaaecma-devicepair-guidproperty.md) . No modo de origem, isso não é necessário.
+Se você definir o valor dessa propriedade como VARIANT TRUE e estiver usando o DSP no modo de filtro, também deverá definir a propriedade \_ [GUID MFPKEY \_ WMAAECMA \_ DEVICEPAIR. \_ ](mfpkey-wmaaecma-devicepair-guidproperty.md) No modo de origem, isso não é necessário.
 
-O valor padrão dessa propriedade é VARIANT \_ false. O DSP usa essa propriedade somente quando o processamento de AEC está habilitado.
+O valor padrão dessa propriedade é VARIANT \_ FALSE. O DSP usa essa propriedade somente quando o processamento do AEC está habilitado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -47,9 +47,9 @@ O valor padrão dessa propriedade é VARIANT \_ false. O DSP usa essa propriedad
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                    |
-| parâmetro<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                    |
+| Cabeçalho<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -57,10 +57,10 @@ O valor padrão dessa propriedade é VARIANT \_ false. O DSP usa essa propriedad
 
 <dl> <dt>
 
-[Propriedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propriedades](media-foundation-properties.md)
 </dt> <dt>
 
-[DSP de captura de voz](voicecapturedmo.md)
+[DSP de Captura de Voz](voicecapturedmo.md)
 </dt> </dl>
 
  

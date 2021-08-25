@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2254db9d0f4efcd003362e4126c5c295ca532b2f
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: feb459f7c2d6ff98a35e139cf07d9d95c4bed575e52b3d20258f570f07297943
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103638636"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119963186"
 ---
 # <a name="char-switch"></a>comutador/Char
 
@@ -91,7 +91,7 @@ A tabela a seguir resume os tipos gerados.
 
 
 
- 
+ 
 
 A opção **/Char** signed indica que o caractere do compilador C e os tipos pequenos são assinados. Para corresponder o padrão MIDL para **Char**, o compilador MIDL deve converter todos os usos de **Char** não acompanhados por uma especificação de sinal para um **Char não assinado**. O tipo [**pequeno**](small.md) não é modificado porque o padrão C-Compiler corresponde ao padrão MIDL para **pequeno**.
 
@@ -127,9 +127,9 @@ Para obter mais informações relacionadas ao **/Char**, consulte [**Small**](sm
 [**menores**](small.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

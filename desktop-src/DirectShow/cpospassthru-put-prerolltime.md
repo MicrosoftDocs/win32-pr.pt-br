@@ -1,7 +1,7 @@
 ---
-description: O \_ método Put preverttime define a quantidade de dados que serão enfileirados antes da posição inicial. Esse método implementa o método IMediaPosition::p UT \_ preverttime.
+description: O método \_ put PrerollTime define a quantidade de dados que serão colocados na fila antes da posição inicial. Esse método implementa o método IMediaPosition::p ut \_ PrerollTime.
 ms.assetid: 5c35fb1d-2296-493f-8104-601127d7dd9f
-title: Método de CPosPassThru.put_PrerollTime (Ctlutil. h)
+title: CPosPassThru.put_PrerollTime método (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 60bd4eddc7688373386147ea7999fdbd17f9af6b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 825c3c584fc6db7eb9f94b4e8d01e003f5cf6c36ff8adac4041fd48f792ca858
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752287"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119909196"
 ---
-# <a name="cpospassthruput_prerolltime-method"></a>CPosPassThru. put \_ método preverttime
+# <a name="cpospassthruput_prerolltime-method"></a>Método CPosPassThru.put \_ PrerollTime
 
-O `put_PrerollTime` método define a quantidade de dados que serão enfileirados antes da posição inicial. Esse método implementa o método [**IMediaPosition::p UT \_ preverttime**](/windows/desktop/api/Control/nf-control-imediaposition-put_prerolltime) .
+O `put_PrerollTime` método define a quantidade de dados que serão ensuados antes da posição inicial. Esse método implementa o [**método IMediaPosition::p ut \_ PrerollTime.**](/windows/desktop/api/Control/nf-control-imediaposition-put_prerolltime)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,13 +45,13 @@ HRESULT put_PrerollTime(
 *llTime* 
 </dt> <dd>
 
-Tempo de preversão, em segundos.
+Tempo de pré-roll, em segundos.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna o valor **HRESULT** do PIN conectado.
+Retorna o **valor HRESULT** do pino conectado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,8 +59,8 @@ Retorna o valor **HRESULT** do PIN conectado.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Ctlutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

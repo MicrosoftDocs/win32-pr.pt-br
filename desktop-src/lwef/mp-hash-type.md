@@ -3,8 +3,8 @@ title: Enumeração de MP_HASH_TYPE (MpClient. h)
 description: Tipos de hash possíveis.
 ms.assetid: 46432C40-6DE1-4FB8-B7C1-C2712CCEB208
 keywords:
-- Recursos do ambiente Windows herdado de enumeração de MP_HASH_TYPE
-- PMP_HASH_TYPE recursos de ambiente herdados do ponteiro de enumeração do Windows
+- recursos do ambiente de Windows herdado de enumeração de MP_HASH_TYPE
+- Windows recursos de ambiente herdados do ponteiro de enumeração PMP_HASH_TYPE
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 40c36e709d165845b729673df4aaea1042a7ee49
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a98e048b77953a90051de947b2b500c4ab1c07f29138418418edfdce5f5ebad7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455823"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119961226"
 ---
 # <a name="mp_hash_type-enumeration"></a>Enumeração de tipo de \_ hash MP \_
 
@@ -86,9 +86,9 @@ SHA 256
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
 
 
 

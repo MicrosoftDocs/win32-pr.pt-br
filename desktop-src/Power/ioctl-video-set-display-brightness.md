@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Ntddvdeo.h
-ms.openlocfilehash: a0c679f352012eea66b80335bc3ad1547501dd92
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ec4bb5200378f9f530913f26d33bfbd485d81ae184c7b478a51c90bca18d95da
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921723"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119961846"
 ---
 # <a name="ioctl_video_set_display_brightness-control-code"></a>Conjunto de vídeos do IOCTL \_ \_ \_ Exibir \_ código de controle de brilho
 
@@ -110,7 +110,7 @@ Se *hDevice* tiver sido aberto sem especificar o \_ sinalizador sobreposto do si
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a operação for concluída com êxito, [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) retornará um valor diferente de zero.
 
@@ -120,7 +120,7 @@ Se a operação falhar ou estiver pendente, [**DeviceIoControl**](/windows/deskt
 
 Os valores especificados nos membros **ucACBrightness** e **ucDCBrightness** da estrutura de [**\_ brilho de vídeo**](/previous-versions/windows/desktop/legacy/aa372686(v=vs.85)) devem ter sido retornados anteriormente pelo [**\_ \_ \_ \_ brilho suportado pela consulta de vídeo do IOCTL**](ioctl-video-query-supported-brightness.md). Por exemplo, se os valores com suporte forem 10, 20, 30, 40, 50, 60, 70, 80, 90 e 100, o uso de um valor de 33 seria um erro.
 
-O arquivo de cabeçalho usado para criar aplicativos que incluem essa funcionalidade, Ntddvdeo. h, está incluído no Microsoft Windows Driver Development Kit (DDK). Para obter informações sobre como obter o DDK, consulte [https://www.microsoft.com/whdc/devtools/ddk/default.mspx](https://msdn.microsoft.com/windows/hardware/gg454513) .
+o arquivo de cabeçalho usado para criar aplicativos que incluem essa funcionalidade, Ntddvdeo. h, está incluído no Microsoft Windows Driver Development Kit (DDK). Para obter informações sobre como obter o DDK, consulte [https://www.microsoft.com/whdc/devtools/ddk/default.mspx](https://msdn.microsoft.com/windows/hardware/gg454513) .
 
 Como alternativa, você pode definir esse código de controle da seguinte maneira:
 
@@ -135,9 +135,9 @@ Como alternativa, você pode definir esse código de controle da seguinte maneir
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos do Windows Vista, Windows XP com SP1 para \[ Desktop\]<br/>                   |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Ntddvdeo. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Vista, somente Windows XP com \[ aplicativos de área de trabalho do SP1\]<br/>                   |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Ntddvdeo. h</dt> </dl> |
 
 
 

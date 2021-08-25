@@ -4,22 +4,22 @@ ms.assetid: 4b3a9023-0267-4caa-9d89-88237009df05
 title: Processo de conexão do CBasePin
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1441b0daba58857e00da0139d3312fb277287fc2
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 6134c9094e00ea43c5e4bb9f92c9132287fab3c16f98d56497affc8c1015bd6a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103919872"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119916777"
 ---
 # <a name="cbasepin-connection-process"></a>Processo de conexão do CBasePin
 
 Esta seção descreve como a classe [**CBasePin**](cbasepin.md) implementa o processo de conexão do PIN.
 
-O Gerenciador de gráfico de filtro inicia todas as conexões de PIN. Ele chama o método [**IPin:: Connect**](/windows/desktop/api/Strmif/nf-strmif-ipin-connect) do pino de saída, especificando o pino de entrada. O pino de saída conclui a conexão chamando o método [**IPin:: ReceiveConnection**](/windows/desktop/api/Strmif/nf-strmif-ipin-receiveconnection) do pino de entrada. O PIN de entrada pode aceitar ou rejeitar a conexão.
+o filtro Graph Manager inicia todas as conexões de pin. ele chama o método [**IPin:: Conexão**](/windows/desktop/api/Strmif/nf-strmif-ipin-connect) do pino de saída, especificando o pino de entrada. O pino de saída conclui a conexão chamando o método [**IPin:: ReceiveConnection**](/windows/desktop/api/Strmif/nf-strmif-ipin-receiveconnection) do pino de entrada. O PIN de entrada pode aceitar ou rejeitar a conexão.
 
-O Gerenciador do grafo de filtro também pode especificar um tipo de mídia para a conexão. Nesse caso, os Pins tentam se conectar com esse tipo. Caso contrário, os Pins devem negociar o tipo. O Gerenciador do grafo de filtro também pode especificar um tipo de mídia *parcial* , que tem o valor GUID \_ NULL para o tipo principal, subtipo ou tipo de formato. Nesse caso, os Pins tentam corresponder a qualquer parte do tipo de mídia especificada; o valor de GUID \_ NULL funciona como um caractere curinga.
+o filtro Graph Manager também pode especificar um tipo de mídia para a conexão. Nesse caso, os Pins tentam se conectar com esse tipo. Caso contrário, os Pins devem negociar o tipo. o filtro Graph Manager também pode especificar um tipo de mídia *parcial* , que tem o valor GUID \_ NULL para o tipo principal, subtipo ou tipo de formato. Nesse caso, os Pins tentam corresponder a qualquer parte do tipo de mídia especificada; o valor de GUID \_ NULL funciona como um caractere curinga.
 
-O método [**CBasePin:: Connect**](cbasepin-connect.md) começa verificando se o PIN pode aceitar uma conexão. Por exemplo, ele verifica se o PIN ainda não está conectado. Ele delega o restante do processo de conexão para o método [**CBasePin:: AgreeMediaType**](cbasepin-agreemediatype.md) . Tudo o que segue é executado pelo **AgreeMediaType**.
+o método [**CBasePin:: Conexão**](cbasepin-connect.md) começa verificando se o pin pode aceitar uma conexão. Por exemplo, ele verifica se o PIN ainda não está conectado. Ele delega o restante do processo de conexão para o método [**CBasePin:: AgreeMediaType**](cbasepin-agreemediatype.md) . Tudo o que segue é executado pelo **AgreeMediaType**.
 
 Se o tipo de mídia for totalmente especificado, o PIN chamará o método [**CBasePin:: AttemptConnection**](cbasepin-attemptconnection.md) para tentar a conexão. Caso contrário, ele tentará os tipos de mídia na seguinte ordem:
 

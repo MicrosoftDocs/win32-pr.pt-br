@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.inst
 ms:contentKeyID: 55103286
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 8d52035b7473c17f9278a0343d12d957b2970349
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 429bc8934795f3120cbc236f78772c15f111e605475953339d0b24ff943391f6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104567948"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119850316"
 ---
 # <a name="instanceparameters-members"></a>Membros de instanceparameters
 
@@ -69,7 +69,7 @@ Parte superior
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn350951(v=exchg.10).md">CachedClosedTables</a></td>
-<td>Obtém ou define um valor que concede o número de recursos de árvore B em cache pela instância depois que as tabelas que eles representam foram fechadas pelo aplicativo. Valores grandes para esse parâmetro farão com que o mecanismo de banco de dados use mais memória, mas aumentará a velocidade com que um grande número de tabelas pode ser aberto aleatoriamente pelo aplicativo. Isso é útil para aplicativos que têm um esquema com um número muito grande de tabelas. Com suporte no Windows Vista e em cima. Ignorado no Windows XP e no Windows Server 2003.</td>
+<td>Obtém ou define um valor que concede o número de recursos de árvore B em cache pela instância depois que as tabelas que eles representam foram fechadas pelo aplicativo. Valores grandes para esse parâmetro farão com que o mecanismo de banco de dados use mais memória, mas aumentará a velocidade com que um grande número de tabelas pode ser aberto aleatoriamente pelo aplicativo. Isso é útil para aplicativos que têm um esquema com um número muito grande de tabelas. com suporte no Windows Vista e em cima. ignorado no Windows XP e no Windows Server 2003.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
@@ -154,32 +154,32 @@ Parte superior
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn350991(v=exchg.10).md">LogFileDirectory</a></td>
-<td>Obtém ou define o caminho relativo ou absoluto do sistema de arquivos da pasta que conterá os logs de transação para a instância.</td>
+<td>Obtém ou define o caminho do sistema de arquivos relativo ou absoluto da pasta que conterá os logs de transação para a instância.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="dn350969(v=exchg.10).md">LogFileSize</a></td>
-<td>Obtém ou define o tamanho dos arquivos de log de transações. Esse parâmetro deve ser definido em unidades de 1024 bytes (por exemplo, uma configuração de 2048 fornecerá arquivos de log de 2 MB).</td>
+<td><a href="dn350969(v=exchg.10).md">Logfilesize</a></td>
+<td>Obtém ou define o tamanho dos arquivos de log de transações. Esse parâmetro deve ser definido em unidades de 1024 bytes (por exemplo, uma configuração de 2048 dará arquivos de log de 2 MB).</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn350993(v=exchg.10).md">MaxCursors</a></td>
-<td>Obtém ou define o número de recursos de cursor reservados para esta instância. Um recurso de cursor corresponde diretamente a um JET_TABLEID.</td>
+<td>Obtém ou define o número de recursos de cursor reservados para essa instância. Um recurso de cursor corresponde diretamente a um JET_TABLEID.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn350970(v=exchg.10).md">MaxOpenTables</a></td>
-<td>Obtém ou define o número de recursos da árvore B + reservados para esta instância.</td>
+<td>Obtém ou define o número de recursos de árvore B+ reservados para essa instância.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn350994(v=exchg.10).md">MaxSessions</a></td>
-<td>Obtém ou define o número de recursos de sessões reservados para esta instância. Um recurso de sessão corresponde diretamente a um JET_SESID.</td>
+<td>Obtém ou define o número de recursos de sessões reservados para essa instância. Um recurso de sessão corresponde diretamente a um JET_SESID.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn350997(v=exchg.10).md">MaxTemporaryTables</a></td>
-<td>Obtém ou define o número de recursos de tabela temporária para uso por uma instância. Essa configuração afetará quantas tabelas temporárias podem ser usadas ao mesmo tempo. Se esse parâmetro de sistema for definido como zero, nenhum banco de dados temporário será criado e qualquer atividade que exija o uso do banco de dados temporário falhará. Essa configuração pode ser útil para evitar a e/s necessária para criar o banco de dados temporário se for conhecido que ele não será usado.</td>
+<td>Obtém ou define o número de recursos de tabela temporários para uso por uma instância. Essa configuração afetará quantas tabelas temporárias podem ser usadas ao mesmo tempo. Se esse parâmetro do sistema for definido como zero, nenhum banco de dados temporário será criado e qualquer atividade que exija o uso do banco de dados temporário falhará. Essa configuração pode ser útil para evitar a E/S necessária para criar o banco de dados temporário se for conhecido que ele não será usado.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
@@ -189,7 +189,7 @@ Parte superior
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn350975(v=exchg.10).md">MaxVerPages</a></td>
-<td>Obtém ou define o número máximo de páginas de repositório de versão reservadas para esta instância.</td>
+<td>Obtém ou define o número máximo de páginas de armazenamento de versão reservadas para essa instância.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
@@ -199,47 +199,47 @@ Parte superior
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn350976(v=exchg.10).md">OneDatabasePerSession</a></td>
-<td>Obtém ou define um valor que indica se apenas um banco de dados pode ser aberto usando JetOpenDatabase por uma determinada sessão ao mesmo tempo. O banco de dados temporário é excluído dessa restrição.</td>
+<td>Obtém ou define um valor que indica se apenas um banco de dados tem permissão para ser aberto usando JetOpenDatabase por uma determinada sessão ao mesmo tempo. O banco de dados temporário é excluído dessa restrição.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn351002(v=exchg.10).md">PageTempDBMin</a></td>
-<td>Obtém ou define o tamanho inicial do banco de dados temporário. O tamanho está em páginas de banco de dados. Um tamanho de zero indica que o tamanho padrão de um banco de dados comum deve ser usado. Geralmente, é desejável que aplicativos pequenos configurem o banco de dados temporário para que seja o menor possível. Definir esse parâmetro como <a href="dn351211(v=exchg.10).md">PageTempDBSmallest</a> atingirá o menor banco de dados temporário possível.</td>
+<td>Obtém ou define o tamanho inicial do banco de dados temporário. O tamanho está nas páginas do banco de dados. Um tamanho de zero indica que o tamanho padrão de um banco de dados comum deve ser usado. Geralmente, é desejável que aplicativos pequenos configurem o banco de dados temporário para ser o menor possível. Definir esse parâmetro como <a href="dn351211(v=exchg.10).md">PageTempDBSmallest</a> atingirá o menor banco de dados temporário possível.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn350979(v=exchg.10).md">PreferredVerPages</a></td>
-<td>Obtém ou define o número preferencial de páginas de repositório de versão reservadas para esta instância. Se o tamanho do repositório de versão exceder esse limite, todas as informações usadas apenas para tarefas em segundo plano opcionais, como a recuperação de espaço excluído no banco de dados, serão sacrificadas para preservar espaço para informações transacionais.</td>
+<td>Obtém ou define o número preferencial de páginas de armazenamento de versão reservadas para essa instância. Se o tamanho do armazenamento de versões exceder esse limite, todas as informações usadas apenas para tarefas opcionais em segundo plano, como recuperar espaço excluído no banco de dados, serão, em vez disso, preservadas para preservar espaço para informações transacionais.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn351004(v=exchg.10).md">PrereadIOMax</a></td>
-<td>Obtém ou define o número máximo de operações de e/s expedidas para uma determinada finalidade.</td>
+<td>Obtém ou define o número máximo de operações de E/S expedidas para uma determinada finalidade.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn350981(v=exchg.10).md">Recuperação</a></td>
-<td>Obtém ou define um valor que indica se a recuperação de Pane está ativada.</td>
+<td>Obtém ou define um valor que indica se a recuperação de falha está em.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="dn351007(v=exchg.10).md">SystemDirectory</a></td>
-<td>Obtém ou define o caminho relativo ou absoluto do sistema de arquivos da pasta que conterá o arquivo de ponto de verificação para a instância.</td>
+<td><a href="dn351007(v=exchg.10).md">Systemdirectory</a></td>
+<td>Obtém ou define o caminho do sistema de arquivos relativo ou absoluto da pasta que conterá o arquivo de ponto de verificação para a instância.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="dn350983(v=exchg.10).md">TempDirectory</a></td>
-<td>Obtém ou define o caminho relativo ou absoluto do sistema de arquivos da pasta que conterá o banco de dados temporário da instância.</td>
+<td><a href="dn350983(v=exchg.10).md">Tempdirectory</a></td>
+<td>Obtém ou define o caminho do sistema de arquivos relativo ou absoluto da pasta que conterá o banco de dados temporário para a instância.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn351008(v=exchg.10).md">VersionStoreTaskQueueMax</a></td>
-<td>Obtém ou define o número de itens de trabalho de limpeza em segundo plano que podem ser enfileirados no pool de threads do mecanismo de banco de dados a qualquer momento.</td>
+<td>Obtém ou define o número de itens de trabalho de limpeza em segundo plano que podem ser en enfocados no pool de threads do mecanismo de banco de dados a qualquer momento.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn350985(v=exchg.10).md">WaypointLatency</a></td>
-<td>Obtém ou define um número de logs para os quais o ESENT adiará as liberações de banco de dados. Isso pode ser usado para aumentar a capacidade de recuperação do banco de dados se as falhas causarem a perda de arquivos de log. Com suporte no Windows 7 e em cima. Ignorado no Windows XP, no Windows Server 2003, no Windows Vista e no Windows Server 2008.</td>
+<td>Obtém ou define um número de logs que o esent adiará as liberações de banco de dados. Isso pode ser usado para aumentar a capacidade de recuperação do banco de dados se as falhas fizerem com que os arquivos de log sejam perdidos. Com suporte no Windows 7 e acima. Ignorado no Windows XP, Windows Server 2003, Windows Vista e Windows Server 2008.</td>
 </tr>
 </tbody>
 </table>
@@ -275,18 +275,18 @@ Parte superior
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">Gettype</a></td>
 <td>(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></td>
+<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Memberwiseclone</a></td>
 <td>(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn350967(v=exchg.10).md">ToString</a></td>
-<td>Retorna uma <a href="/dotnet/api/system.string">cadeia de caracteres</a> que representa a <a href="dn350942(v=exchg.10).md">instância</a>atualparameters. (Substitui <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object. ToString ()</a>.)</td>
+<td>Retorna uma <a href="/dotnet/api/system.string">Cadeia de</a> Caracteres que representa <a href="dn350942(v=exchg.10).md">o InstanceParameters atual.</a> (Substitui <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>.)</td>
 </tr>
 </tbody>
 </table>
@@ -298,6 +298,6 @@ Parte superior
 
 #### <a name="reference"></a>Referência
 
-[Classe instanceparameters](./instanceparameters-class.md)
+[Classe InstanceParameters](./instanceparameters-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

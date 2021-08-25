@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2dc8bf7f307ab56609b5f90f6955a1f666854270
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3b0d9873e2d327c424b2cd1ffda7112676f53399a63d2a9ca92dca1f50a02f62
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105780860"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119908876"
 ---
 # <a name="cpullpinonerror-method"></a>Método CPullPin. OnError
 
@@ -49,13 +49,13 @@ Especifica o valor **HRESULT** retornado pelo método que falhou.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-O objeto chama esse método sempre que ocorre um erro que interrompe o thread de extração de dados. O filtro pode usar esse método para se recuperar de erros de streaming normalmente. Na maioria dos casos, o erro é retornado do filtro upstream, portanto, o filtro upstream é responsável por reportá-lo para o Gerenciador do grafo de filtro. Se o erro ocorrer dentro do método [**CPullPin:: Receive**](cpullpin-receive.md) , o filtro deverá enviar um evento de [**\_ ERRORABORT do EC**](ec-errorabort.md) . (Consulte [**IMediaEventSink:: Notify**](/windows/desktop/api/Strmif/nf-strmif-imediaeventsink-notify).)
+O objeto chama esse método sempre que ocorre um erro que interrompe o thread de extração de dados. O filtro pode usar esse método para se recuperar de erros de streaming normalmente. na maioria dos casos, o erro é retornado do filtro upstream, portanto, o filtro upstream é responsável por reportá-lo para o filtro Graph Manager. Se o erro ocorrer dentro do método [**CPullPin:: Receive**](cpullpin-receive.md) , o filtro deverá enviar um evento de [**\_ ERRORABORT do EC**](ec-errorabort.md) . (Consulte [**IMediaEventSink:: Notify**](/windows/desktop/api/Strmif/nf-strmif-imediaeventsink-notify).)
 
 ## <a name="requirements"></a>Requisitos
 

@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: método API. JetGetLS'
-title: Método API. JetGetLS
+description: 'Saiba mais sobre: Método Api.JetGetLS'
+title: Método Api.JetGetLS
 TOCTitle: 'JetGetLS method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetGetLS(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,Microsoft.Isam.Esent.Interop.JET_LS@,Microsoft.Isam.Esent.Interop.LsGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetgetls(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 611f92e21dad83121b4e4a6226838ac9ebce2d7b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d0453bae6f966ee358d9c62e360cb3184153dd7fe20ce586f707ae4ce55f6961
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164374"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119840796"
 ---
-# <a name="apijetgetls-method"></a>Método API. JetGetLS
+# <a name="apijetgetls-method"></a>Método Api.JetGetLS
 
-Permite que o aplicativo recupere o identificador de contexto conhecido como armazenamento local associado a um cursor ou à tabela associada a esse cursor. Esse identificador de contexto deve ter sido definido anteriormente usando [JetSetLS (JET_SESID, JET_TABLEID, JET_LS, LsGrbit)](./api.jetsetls-method.md). JetGetLS também pode ser usado para buscar simultaneamente o identificador de contexto atual para um cursor ou uma tabela e redefinir esse identificador de contexto.
+Permite que o aplicativo recupere o handle de contexto conhecido como Local Armazenamento associado a um cursor ou à tabela associada a esse cursor. Esse handle de contexto deve ter sido definido anteriormente usando [JetSetLS(JET_SESID, JET_TABLEID, JET_LS, LsGrbit)](./api.jetsetls-method.md). JetGetLS também pode ser usado para buscar simultaneamente o alçador de contexto atual para um cursor ou tabela e redefinir esse alça de contexto.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -68,28 +68,28 @@ public static void JetGetLS(
 #### <a name="parameters"></a>Parâmetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
     A sessão a ser usada.
 
 <!-- end list -->
 
-  - TableID  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - Tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
     O cursor a ser usado.
 
 <!-- end list -->
 
   - ls  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_LS](./jet-ls-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_LS](./jet-ls-structure.md)  
     
-    Retorna o identificador de contexto recuperado.
+    Retorna o alça de contexto recuperado.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. ESENT. Interop. LsGrbit](./lsgrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.LsGrbit](./lsgrbit-enumeration.md)  
     
     Recuperar opções.
 
@@ -101,4 +101,4 @@ public static void JetGetLS(
 
 [Membros da API](./api-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,25 +1,25 @@
 ---
-title: Interfaces de cliente DRM do Microsoft Windows Media
-description: Interfaces de cliente DRM do Microsoft Windows Media
+title: Interfaces de cliente do Microsoft Windows Media DRM
+description: Interfaces de cliente do Microsoft Windows Media DRM
 ms.assetid: 27bbc33f-8102-4db2-bbc6-1a1da92bac80
 keywords:
-- SDK do Windows Media Format, interfaces
+- Windows SDK do formato de mídia, interfaces
 - DRM (gerenciamento de direitos digitais), interfaces
 - DRM (gerenciamento de direitos digitais), interfaces
 - APIs estendidas do cliente DRM, interfaces
 - APIs estendidas do cliente, interfaces
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b4e259ef5b8ef410db072a7f942d139f682bc90
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 972224decdad339876e4f72c40cad5b3ba28de98446ff358fd36cb7f86bee0af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104369077"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119931096"
 ---
-# <a name="microsoft-windows-media-drm-client-interfaces"></a>Interfaces de cliente DRM do Microsoft Windows Media
+# <a name="microsoft-windows-media-drm-client-interfaces"></a>Interfaces de cliente do Microsoft Windows Media DRM
 
-A tabela a seguir descreve as interfaces compatíveis com as APIs de cliente DRM do Windows Media.
+a tabela a seguir descreve as interfaces com suporte nas APIs de cliente de DRM de mídia Windows.
 
 
 
@@ -36,10 +36,10 @@ A tabela a seguir descreve as interfaces compatíveis com as APIs de cliente DRM
 | [**IWMDRMLicenseManagement**](iwmdrmlicensemanagement.md)                   | Habilita operações de gerenciamento para o armazenamento de licença local.                                                      |
 | [**IWMDRMLicenseManagement**](iwmdrmlicensemanagement.md)                   | Fornece opções de gerenciamento adicionais para o armazenamento de licença local.                                             |
 | [**IWMDRMLicenseQuery**](iwmdrmlicensequery.md)                             | Permite que os aplicativos consultem os direitos e o estado da licença de um arquivo protegido.                                |
-| [**IWMDRMNetReceiver**](iwmdrmnetreceiver.md)                               | Fornece métodos necessários para criar um aplicativo de receptor de Microsoft Windows Media DRM para dispositivos de rede.          |
-| [**IWMDRMNetTransmitter**](iwmdrmnettransmitter.md)                         | Fornece métodos necessários para criar um aplicativo Microsoft Windows Media DRM para dispositivos de rede transmissor.       |
+| [**IWMDRMNetReceiver**](iwmdrmnetreceiver.md)                               | fornece métodos necessários criar um aplicativo de receptor de Microsoft Windows Media DRM para dispositivos de rede.          |
+| [**IWMDRMNetTransmitter**](iwmdrmnettransmitter.md)                         | fornece métodos necessários criar um aplicativo Microsoft Windows Media DRM para dispositivos de rede transmissor.       |
 | [**IWMDRMNonSilentLicenseAquisition**](iwmdrmnonsilentlicenseaquisition.md) | Fornece métodos que habilitam a aquisição de licenças com a intervenção do usuário.                                        |
-| [**IWMDRMProvider**](iwmdrmprovider.md)                                     | Cria os outros objetos das APIs estendidas do Microsoft Windows Media DRM Client.                              |
+| [**IWMDRMProvider**](iwmdrmprovider.md)                                     | cria os outros objetos das APIs estendidas do Microsoft Windows Media DRM Client.                              |
 | [**IWMDRMSecurity**](iwmdrmsecurity.md)                                     | Gerencia vários processos relacionados à segurança para o computador cliente e o subsistema DRM.                           |
 | [**IWMDRMSecurity**](iwmdrmsecurity.md)                                     | Gerencia a revogação e a renovação de componentes.                                                                       |
 | [**IWMSecureBuffer**](iwmsecurebuffer.md)                                   | Habilita criptografia e descriptografia de buffers.                                                                   |

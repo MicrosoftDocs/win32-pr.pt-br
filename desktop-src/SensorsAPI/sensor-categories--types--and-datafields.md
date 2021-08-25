@@ -4,12 +4,12 @@ ms.assetid: 38d87fb4-8f9f-412f-98e5-84651be2c759
 title: Categorias de sensor, tipos e campos de dados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f6127cfe0229078ddef264dfd68636c92475069b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f5494aa39a4b771bdaa54dd3d46426e9177bf0486886250c163d2a0ca94333c1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104461020"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119959986"
 ---
 # <a name="sensor-categories-types-and-data-fields"></a>Categorias de sensor, tipos e campos de dados
 
@@ -19,7 +19,7 @@ Esta seção descreve as categorias definidas pela plataforma. Cada página de c
 
 
 
-| Category                                                                 | GUID                                   |
+| Categoria                                                                 | GUID                                   |
 |--------------------------------------------------------------------------|----------------------------------------|
 | [**Categoria do SENSOR \_ \_ tudo**](sensor-category-all.md)                     | {C317C286-C468-4288-9975-D4C4587C442C} |
 | [**\_biometria da categoria de sensor \_**](sensor-category-biometric.md)         | {CA19690F-A2C7-477D-A99E-99EC6E2B5648} |

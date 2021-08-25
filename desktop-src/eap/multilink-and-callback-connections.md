@@ -4,12 +4,12 @@ description: Para o primeiro link em uma conexão de vínculos múltiplos, o ser
 ms.assetid: a6aee73b-43b2-43b4-a6f1-ac7b293c44ad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: af39ebfa54469e2f44c44c800cebbfb176b33cad
-ms.sourcegitcommit: c20a43b333f03175ac23823c55f3204bfe8cd243
+ms.openlocfilehash: dfc7493550863a755a87668c96dbe0ce600d524a111b7e7300b97c307f4d30c5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "105780339"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119852316"
 ---
 # <a name="multilink-and-callback-connections"></a>Conexões Multilink e de retorno de chamada
 
@@ -21,9 +21,9 @@ Se o protocolo de autenticação definir o membro **fSaveConnectionData** da [**
 
 O protocolo de autenticação pode usar uma [interface do usuário interativa](interactive-user-interface.md) para coletar dados de um link específico de uma conexão de vínculos múltiplos. Nesse caso, o serviço de autenticação disponibiliza os dados resultantes para o protocolo de autenticação durante os links subsequentes. No entanto, esses dados nunca são salvos no armazenamento persistente.
 
- 
+ 
 
- 
+ 
 
 
 

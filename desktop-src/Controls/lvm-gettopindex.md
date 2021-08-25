@@ -1,9 +1,9 @@
 ---
-title: Mensagem de LVM_GETTOPINDEX (commctrl. h)
-description: Recupera o índice do item visível superior no modo de exibição de lista ou de relatório. Você pode enviar essa mensagem explicitamente ou usando a \_ macro GetTopIndex do ListView.
+title: LVM_GETTOPINDEX mensagem (Commctrl.h)
+description: Recupera o índice do item visível mais alto quando está na exibição de lista ou relatório. Você pode enviar essa mensagem explicitamente ou usando a \_ macro ListView GetTopIndex.
 ms.assetid: vs|controls|~\controls\listview\messages\lvm_gettopindex.htm
 keywords:
-- Controles de LVM_GETTOPINDEX de mensagens do Windows
+- LVM_GETTOPINDEX controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bb1cb080588d1825fcbd9e6c5e7b1b573fd7ad2b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6434aa2c7382a4a4d54fc3a76edd5eb4b70ccae858b8d9fcf41547590a8bc69c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105811143"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119920036"
 ---
-# <a name="lvm_gettopindex-message"></a>\_Mensagem GETTOPINDEX LVM
+# <a name="lvm_gettopindex-message"></a>Mensagem GETTOPINDEX do LVM \_
 
-Recupera o índice do item visível superior no modo de exibição de lista ou de relatório. Você pode enviar essa mensagem explicitamente ou usando a macro [**\_ GetTopIndex do ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_gettopindex) .
+Recupera o índice do item visível mais alto quando está na exibição de lista ou relatório. Você pode enviar essa mensagem explicitamente ou usando a [**macro \_ ListView GetTopIndex.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_gettopindex)
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -35,9 +35,9 @@ Recupera o índice do item visível superior no modo de exibição de lista ou d
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna o índice do item se for bem-sucedido. Retornará zero se o controle de exibição de lista estiver em um modo de exibição de ícone ou pequeno, ou se o controle de exibição de lista estiver no modo de exibição de detalhes com grupos habilitados.
+Retornará o índice do item se for bem-sucedido. Retornará zero se o controle de exibição de lista estiver no ícone ou exibição de ícone pequeno ou se o controle de exibição de lista estiver na exibição de detalhes com grupos habilitados.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,9 +45,9 @@ Retorna o índice do item se for bem-sucedido. Retornará zero se o controle de 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

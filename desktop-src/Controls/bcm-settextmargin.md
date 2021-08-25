@@ -1,9 +1,9 @@
 ---
-title: Mensagem de BCM_SETTEXTMARGIN (commctrl. h)
-description: A \_ mensagem SETTEXTMARGIN do BCM define as margens para o texto de desenho em um controle de botão.
+title: BCM_SETTEXTMARGIN mensagem (Commctrl.h)
+description: A mensagem BCM \_ SETTEXTMARGIN define as margens para desenhar texto em um controle de botão.
 ms.assetid: 0798b1c5-7db4-46c6-8881-4c847abc7460
 keywords:
-- Controles de BCM_SETTEXTMARGIN de mensagens do Windows
+- BCM_SETTEXTMARGIN controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4fb6653007c155a508ce4da899a7be0d8ff2ab2d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 724c3e16c19aa2fb146bc0b47dec563db8b871536cb8f7e58fc86cbb739c225c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455127"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119921356"
 ---
-# <a name="bcm_settextmargin-message"></a>\_Mensagem SETTEXTMARGIN do BCM
+# <a name="bcm_settextmargin-message"></a>Mensagem BCM \_ SETTEXTMARGIN
 
-A **mensagem \_ SETTEXTMARGIN do BCM** define as margens para o texto de desenho em um controle de botão.
+A **mensagem BCM \_ SETTEXTMARGIN** define as margens para desenhar texto em um controle de botão.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -39,18 +39,18 @@ Não usado; deve ser zero.
 *lParam* 
 </dt> <dd>
 
-Um ponteiro para uma estrutura [**Rect**](/previous-versions//dd162897(v=vs.85)) que especifica as margens a serem usadas para desenhar o texto.
+Um ponteiro para uma [**estrutura RECT**](/previous-versions//dd162897(v=vs.85)) que especifica as margens a ser usadas para desenhar texto.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se a mensagem tiver sucesso, retornará **true**. Caso contrário, retornará **false**.
+Se a mensagem for bem-sucedida, ela retornará **TRUE.** Caso contrário, **retornará FALSE.**
 
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> Para usar essa mensagem, você deve fornecer um manifesto especificando Comclt32.dll versão 6,0. Para obter mais informações sobre manifestos, consulte [habilitando estilos visuais](cookbook-overview.md).
+> Para usar essa mensagem, você deve fornecer um manifesto especificando Comclt32.dll versão 6.0. Para obter mais informações sobre manifestos, consulte [Habilitando estilos visuais.](cookbook-overview.md)
 
  
 
@@ -60,9 +60,9 @@ Se a mensagem tiver sucesso, retornará **true**. Caso contrário, retornará **
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -76,7 +76,7 @@ Se a mensagem tiver sucesso, retornará **true**. Caso contrário, retornará **
 [**Botão \_ SetTextMargin**](/windows/desktop/api/Commctrl/nf-commctrl-button_settextmargin)
 </dt> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
 [Botões](buttons.md)

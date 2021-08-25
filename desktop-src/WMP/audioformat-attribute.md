@@ -3,7 +3,7 @@ title: Atributo AudioFormat
 description: O atributo AudioFormat é um código FourCC que identifica o formato de áudio do item.
 ms.assetid: 66a65317-4a01-4e1e-9f13-a41ad7a40d71
 keywords:
-- Atributo AudioFormat Windows Media Player
+- Windows Media Player de atributo AudioFormat
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a9761e6df8dfd5c163aa39baf390f0843e57b16
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 65f9e49e8ce8a52e175f0a23847b72c5fb56a14902cfa3e68c02dcc0903f8c59
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105762106"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119902676"
 ---
 # <a name="audioformat-attribute"></a>Atributo AudioFormat
 

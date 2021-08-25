@@ -3,28 +3,28 @@ title: Metadados personalizados
 description: Metadados personalizados
 ms.assetid: 86132163-da56-416a-9539-874d18972932
 keywords:
-- SDK do Windows Media Format, metadados personalizados
+- Windows SDK de Formato de Mídia, metadados personalizados
 - ASF (Advanced Systems Format), metadados personalizados
-- ASF (formato de sistemas avançados), metadados personalizados
-- SDK do Windows Media Format, interface IWMHeaderInfo3
-- Formato de sistema avançado (ASF), interface IWMHeaderInfo3
+- ASF (Formato de Sistemas Avançados), metadados personalizados
+- Windows SDK de Formato de Mídia, interface IWMHeaderInfo3
+- AsF (Advanced Systems Format), interface IWMHeaderInfo3
 - ASF (formato de sistemas avançados), interface IWMHeaderInfo3
-- metadados, personalizando
+- metadados, personalização
 - IWMHeaderInfo3
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a795ab184e5bd6120278f61c0d3654679fd79c28
-ms.sourcegitcommit: b04e152a7f51618fc174ffa872654623fe088db2
+ms.openlocfilehash: cdbbc9fdfc07500e43a3a3875bbb62a77ed176df7a1607a6cb902cef24160e9f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "103640280"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119809446"
 ---
 # <a name="custom-metadata"></a>Metadados personalizados
 
-Além dos muitos atributos com suporte fornecidos com o Windows Media Format SDK, você pode criar atributos de metadados para suas próprias especificações. Ao criar atributos de metadados personalizados, você deve usar uma Convenção de nomenclatura facilmente identificável para evitar possíveis conflitos com atributos criados por outras pessoas.
+Além dos muitos atributos com suporte fornecidos com o SDK de Formato de Mídia Windows, você pode criar atributos de metadados de acordo com suas próprias especificações. Ao criar atributos de metadados personalizados, você deve usar uma convenção de nomen efetivamente identificável para evitar possíveis conflitos com atributos criados por outras pessoas.
 
-É recomendável que você use os métodos de [**IWMHeaderInfo3**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo3) para criar seus metadados devido à flexibilidade adicional que eles fornecem sobre os métodos de [**IWMHeaderInfo**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo).
+É recomendável que você use os métodos de [**IWMHeaderInfo3**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo3) para criar seus metadados devido à flexibilidade adicionada que eles fornecem sobre os métodos [**de IWMHeaderInfo**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -39,9 +39,9 @@ Além dos muitos atributos com suporte fornecidos com o Windows Media Format SDK
 [**Trabalhando com metadados**](working-with-metadata.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

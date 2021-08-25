@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 23eeaa06073fa9259c1a48137cf3676baa402d39
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 12d16f9f06685a427a8f3e7c4f2356dff0bc6415e50379ba752a4bc3a3fec8e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105757939"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119872056"
 ---
 # <a name="waketorun-settingstype-element"></a>Elemento WakeToRun (settingstype)
 
@@ -44,7 +44,7 @@ O elemento **WakeToRun** é definido pelo tipo complexo [**settingstype**](tasks
 
 ## <a name="remarks"></a>Comentários
 
-Quando o serviço de Agendador de Tarefas ativa o computador para executar uma tarefa, a tela pode permanecer desativada, mesmo que o computador não esteja mais no modo de suspensão ou hibernação. A tela será ativada quando o Windows Vista detectar que um usuário voltou a usar o computador.
+Quando o serviço de Agendador de Tarefas ativa o computador para executar uma tarefa, a tela pode permanecer desativada, mesmo que o computador não esteja mais no modo de suspensão ou hibernação. a tela será ativada quando Windows o Vista detectar que um usuário voltou a usar o computador.
 
 Para desenvolvimento em C++, consulte a [**Propriedade WakeToRun de ITaskSettings**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_waketorun).
 
@@ -56,8 +56,8 @@ Para desenvolvimento de script, consulte [**TaskSettings. WakeToRun**](tasksetti
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 

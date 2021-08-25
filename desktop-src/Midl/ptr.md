@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b2d8b2ee2e3ea4daccd1c4fa37ff1c1f1899dd3c
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 53e9b85be5e9073a272dafd63a2a01ba64f440f90cc5d9c41f44260f235f9ab5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104293948"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119927416"
 ---
 # <a name="ptr-attribute"></a>atributo ptr
 
@@ -96,7 +96,7 @@ Especifica pelo menos um Declarador de ponteiro ao qual o atributo **\[ PTR \]**
 
 </dd> <dt>
 
-*nome da função* 
+*Nome da função* 
 </dt> <dd>
 
 Especifica o nome do procedimento remoto.
@@ -112,7 +112,7 @@ Consiste em zero ou mais atributos apropriados para o tipo de parâmetro especif
 
 ## <a name="remarks"></a>Comentários
 
-O ponteiro completo designado pelo atributo **\[ PTR \]** se aproxima da funcionalidade completa do ponteiro em linguagem C. O ponteiro completo pode ter o valor **NULL** e pode ser alterado durante a chamada de **NULL** para não **NULL**. O armazenamento apontado por ponteiros completos pode ser alcançado por outros nomes no aplicativo com suporte a aliases e ciclos. Essa funcionalidade requer mais sobrecarga durante uma chamada de procedimento remoto para identificar os dados referenciados pelo ponteiro, determinar se o valor é **nulo** e descobrir se dois ponteiros apontam para os mesmos dados.
+O ponteiro completo designado pelo atributo **\[ PTR \]** se aproxima da funcionalidade completa do ponteiro em linguagem C. O ponteiro completo pode ter o valor **NULL** e pode ser alterado durante a chamada de **NULL** para não **NULL**. Armazenamento apontados por ponteiros completos podem ser acessados por outros nomes no aplicativo com suporte a aliases e ciclos. Essa funcionalidade requer mais sobrecarga durante uma chamada de procedimento remoto para identificar os dados referenciados pelo ponteiro, determinar se o valor é **nulo** e descobrir se dois ponteiros apontam para os mesmos dados.
 
 Use ponteiros completos para:
 
@@ -169,7 +169,7 @@ typedef [ptr, string] unsigned char * MY_STRING_TYPE;
 
 <dl> <dt>
 
-[**Storage**](arrays-1.md)
+[**matrizes**](arrays-1.md)
 </dt> <dt>
 
 [Matrizes e ponteiros](/windows/desktop/Rpc/arrays-and-pointers)
@@ -244,6 +244,6 @@ typedef [ptr, string] unsigned char * MY_STRING_TYPE;
 [**diferente**](unique.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

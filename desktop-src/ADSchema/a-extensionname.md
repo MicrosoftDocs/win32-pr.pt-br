@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 841685edbafbc761b1531f29f16d45657b57011d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 270398ea4a351b7d170a3eecc37dd2cded87b1a7aada911cf6be32372d5f61bf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105756274"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119929676"
 ---
 # <a name="extension-name-attribute"></a>Extension-Name atributo
 
@@ -36,7 +36,7 @@ O nome de uma página de propriedades usada para estender a interface do usuári
 | Frequência de atualização  | Sempre que uma nova extensão de interface do usuário for criada.     |
 | Attribute-Id      | 1.2.840.113556.1.2.227                      |
 | System-ID-GUID    | bf967972-0de6-11d0-a285-00aa003049e2        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 
@@ -121,10 +121,10 @@ O nome de uma página de propriedades usada para estender a interface do usuári
 | ID do link                | \-                              |
 | MAPI-Id                | 0x80A9                          |
 | System-Only            | Falso                           |
-| É de valor único       | Falso                           |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 255                             |
 | Search-Flags           | 0x00000000                      |
@@ -142,10 +142,10 @@ O nome de uma página de propriedades usada para estender a interface do usuári
 | ID do link                | \-                              |
 | MAPI-Id                | 0x80A9                          |
 | System-Only            | Falso                           |
-| É de valor único       | Falso                           |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 255                             |
 | Search-Flags           | 0x00000000                      |
@@ -163,10 +163,10 @@ O nome de uma página de propriedades usada para estender a interface do usuári
 | ID do link                | \-                              |
 | MAPI-Id                | 0x80A9                          |
 | System-Only            | Falso                           |
-| É de valor único       | Falso                           |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 255                             |
 | Search-Flags           | 0x00000000                      |

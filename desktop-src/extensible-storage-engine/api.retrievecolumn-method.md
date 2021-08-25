@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: método API. RetrieveColumn'
-title: Método API. RetrieveColumn
+description: 'Saiba mais sobre: Método Api.RetrieveColumn'
+title: Método Api.RetrieveColumn
 TOCTitle: 'RetrieveColumn method '
 ms:assetid: Overload:Microsoft.Isam.Esent.Interop.Api.RetrieveColumn
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.retrievecolumn(v=EXCHG.10)
@@ -14,14 +14,14 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 3bcb5effcfc59e155007fbd9e1733d95db058970
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 392fb670cbe9f64025cd2270c52dc7bc317507821d25b3cf842d323db6ddccc4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103662981"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119840396"
 ---
-# <a name="apiretrievecolumn-method"></a>Método API. RetrieveColumn
+# <a name="apiretrievecolumn-method"></a>Método Api.RetrieveColumn
 
 Incluir membros protegidos  
 Incluir membros herdados  
@@ -39,13 +39,13 @@ Incluir membros herdados
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
-<td><a href="dn334041(v=exchg.10).md">RetrieveColumn (JET_SESID, JET_TABLEID, JET_COLUMNID)</a></td>
-<td>Recupera um valor de coluna única do registro atual. O registro é aquele associado à entrada de índice na posição atual do cursor.</td>
+<td><a href="dn334041(v=exchg.10).md">RetrieveColumn(JET_SESID, JET_TABLEID, JET_COLUMNID)</a></td>
+<td>Recupera um único valor de coluna do registro atual. O registro é o registro associado à entrada de índice na posição atual do cursor.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
-<td><a href="dn334060(v=exchg.10).md">RetrieveColumn (JET_SESID, JET_TABLEID, JET_COLUMNID, RetrieveColumnGrbit, JET_RETINFO)</a></td>
-<td>Recupera um valor de coluna única do registro atual. O registro é aquele associado à entrada de índice na posição atual do cursor. Como alternativa, essa função pode recuperar uma coluna de um registro que está sendo criado no buffer de cópia do cursor. Essa função também pode recuperar dados de coluna de uma entrada de índice que faz referência ao registro atual. Além de recuperar o valor real da coluna, JetRetrieveColumn também pode ser usado para recuperar o tamanho de uma coluna, antes de recuperar os dados da coluna em si, para que os buffers de aplicativo possam ser dimensionados adequadamente.</td>
+<td><a href="dn334060(v=exchg.10).md">RetrieveColumn(JET_SESID, JET_TABLEID, JET_COLUMNID, RetrieveColumnGrbit, JET_RETINFO)</a></td>
+<td>Recupera um único valor de coluna do registro atual. O registro é o registro associado à entrada de índice na posição atual do cursor. Como alternativa, essa função pode recuperar uma coluna de um registro que está sendo criado no buffer de cópia do cursor. Essa função também pode recuperar dados de coluna de uma entrada de índice que faz referência ao registro atual. Além de recuperar o valor real da coluna, JetRetrieveColumn também pode ser usado para recuperar o tamanho de uma coluna, antes de recuperar os dados da coluna em si para que os buffers de aplicativo possam ser dimensionados adequadamente.</td>
 </tr>
 </tbody>
 </table>
@@ -61,4 +61,4 @@ Parte superior
 
 [Membros da API](./api-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

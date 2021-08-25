@@ -1,9 +1,9 @@
 ---
-title: Mensagem de BM_GETIMAGE (WinUser. h)
-description: Recupera um identificador para a imagem (ícone ou bitmap) associado ao botão.
+title: BM_GETIMAGE mensagem (Winuser.h)
+description: Recupera um alça para a imagem (ícone ou bitmap) associada ao botão.
 ms.assetid: 766ea1b0-418d-41b8-b31d-0fcc58e03893
 keywords:
-- Controles de BM_GETIMAGE de mensagens do Windows
+- BM_GETIMAGE controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9319f5310b40ff76a011e1a06b2be1d41be611f5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4b98ede304499aa97d9129957aa69a0991dee98565ff7827cdad4d0c1a82f19b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104295842"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119921256"
 ---
-# <a name="bm_getimage-message"></a>\_Mensagem BM GETimage
+# <a name="bm_getimage-message"></a>Mensagem \_ GETIMAGE BM
 
-Recupera um identificador para a imagem (ícone ou bitmap) associado ao botão.
+Recupera um alça para a imagem (ícone ou bitmap) associada ao botão.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -38,8 +38,8 @@ O tipo de imagem a ser associado ao botão. Esse parâmetro pode usar um dos val
 
 | Valor                                                                                                                                                      | Significado              |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------|
-| <span id="IMAGE_BITMAP"></span><span id="image_bitmap"></span><dl> <dt>**BITMAP de imagem \_**</dt> </dl> | Um bitmap.<br/> |
-| <span id="IMAGE_ICON"></span><span id="image_icon"></span><dl> <dt>**ícone de imagem \_**</dt> </dl>       | Um ícone.<br/>  |
+| <span id="IMAGE_BITMAP"></span><span id="image_bitmap"></span><dl> <dt>**BITMAP \_ DE IMAGEM**</dt> </dl> | Um bitmap.<br/> |
+| <span id="IMAGE_ICON"></span><span id="image_icon"></span><dl> <dt>**ÍCONE DE \_ IMAGEM**</dt> </dl>       | Um ícone.<br/>  |
 
 
 
@@ -54,9 +54,9 @@ Este parâmetro não é usado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O valor de retorno é um identificador para a imagem, se houver; caso contrário, será **nulo**.
+O valor de retorno é um handle para a imagem, se for o caso; caso contrário, será **NULL.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,9 +64,9 @@ O valor de retorno é um identificador para a imagem, se houver; caso contrário
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -77,10 +77,10 @@ O valor de retorno é um identificador para a imagem, se houver; caso contrário
 **Referência**
 </dt> <dt>
 
-[**BM \_ SETimage**](bm-setimage.md)
+[**BM \_ SETIMAGE**](bm-setimage.md)
 </dt> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
 [Botões](buttons.md)

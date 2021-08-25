@@ -4,12 +4,12 @@ ms.assetid: 805788ec-1672-462a-b188-c680f56c2641
 title: Compreendendo as listas de palavras, o contexto do reconhecedor e as chaves
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d27f15d64f353b8702695b0067f13857427fc34e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e60fbfc7a3a3099a1146307637d20e777cca416789a61f5dd034f9d86911f1a4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170072"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119842806"
 ---
 # <a name="understanding-word-lists-recognizer-context-and-factoids"></a>Compreendendo as listas de palavras, o contexto do reconhecedor e as chaves
 
@@ -28,7 +28,7 @@ Definir um factoid no objeto [**RecognizerContext**](inkrecognizercontext-class.
 
 -   **Palavras**
 -   **SystemDictionary**
--   **Nenhuma**
+-   **Nenhum**
 
 De longe, o factor mais útil para dicionários de aplicativo é o factor de **listas de palavras** . O facto de lista de **palavras** ajusta o reconhecedor para retornar apenas palavras encontradas na lista de palavras. Esse factor desativa todos os outros dicionários, exceto a lista de palavras. Se o factor de lista de **palavras** estiver definido, e não for especificada nenhuma forma de palavra no contexto do reconhecedor, o dicionário do usuário será usado como a lista de palavras.
 

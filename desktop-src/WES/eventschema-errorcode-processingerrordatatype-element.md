@@ -3,7 +3,7 @@ title: Elemento ErrorCode (ProcessingErrorDataType)
 description: Contém o código de erro que foi gerado quando houve um erro ao processar dados de evento.
 ms.assetid: 30243369-6ab0-450b-a345-6f8ff9b21543
 keywords:
-- EventLog do elemento ErrorCode
+- Elemento ErrorCode EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 938870f5069c2be920bf6b9a7970d76f89620e68
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 200ff2c06cced288c6cbcd62679d4b30207d994d6d03d4d6bf27b92896060326
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369294"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119863236"
 ---
 # <a name="errorcode-processingerrordatatype-element"></a>Elemento ErrorCode (ProcessingErrorDataType)
 
@@ -30,7 +30,7 @@ Contém o código de erro que foi gerado quando houve um erro ao processar dados
  />
 ```
 
-O elemento **ErrorCode** é definido pelo tipo complexo [**ProcessingErrorDataType**](eventschema-processingerrordatatype-complextype.md) .
+O **elemento ErrorCode** é definido pelo tipo [**complexo ProcessingErrorDataType.**](eventschema-processingerrordatatype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ O elemento **ErrorCode** é definido pelo tipo complexo [**ProcessingErrorDataTy
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

@@ -1,9 +1,9 @@
 ---
 title: Evento Disconnect do objeto AxWindowsMediaPlayer
-description: O evento de desconexão é reservado para uso futuro.
+description: O evento Disconnect é reservado para uso futuro.
 ms.assetid: 3baecc6c-e772-4269-96c1-900be270543e
 keywords:
-- Evento Disconnect do objeto AxWindowsMediaPlayer do Windows Media Player
+- Evento Disconnect do objeto AxWindowsMediaPlayer Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 89dffe3191efeddba74eb22c7c5c72b8c52bc095
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1f0554de8fe71ae13e510733ed2204ff4ed79d575a40f23a1769a5fb36eeb560
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105763376"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119902677"
 ---
 # <a name="disconnect-event-of-the-axwindowsmediaplayer-object"></a>Evento Disconnect do objeto AxWindowsMediaPlayer
 
-O evento de desconexão é reservado para uso futuro.
+O evento Disconnect é reservado para uso futuro.
 
 ``` syntax
 [C#]
@@ -41,13 +41,13 @@ Private Sub player_Disconnect(
 
 ## <a name="event-data"></a>Dados de evento
 
-O manipulador associado a esse evento é do tipo **AxWMPLib. \_ WMPOCXEvents \_ DisconnectEventHandler**. Esse manipulador recebe um argumento do tipo **AxWMPLib. \_ WMPOCXEvents \_ DisconnectEvent**, que contém a seguinte propriedade relacionada a este evento.
+O manipulador associado a esse evento é do tipo **AxWMPLib. \_ WMPOCXEvents \_ DisconnectEventHandler**. Esse manipulador recebe um argumento do tipo **AxWMPLib. \_ WMPOCXEvents \_ DisconnectEvent**, que contém a propriedade a seguir relacionada a esse evento.
 
 
 
 | Propriedade | Descrição                               |
 |----------|-------------------------------------------|
-| result   | **System. Int32** Sem suporte.<br/> |
+| result   | **System.Int32** Sem suporte.<br/> |
 
 
 
@@ -63,7 +63,7 @@ Esse evento é reservado para uso futuro.
 
 | Requisito | Valor |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/>   | Windows Media Player 9 Series ou posterior<br/>                                                                          |
+| Versão<br/>   | Windows Media Player série 9 ou posterior<br/>                                                                          |
 | Namespace<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Assembly<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 

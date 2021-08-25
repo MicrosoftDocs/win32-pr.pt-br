@@ -1,7 +1,7 @@
 ---
-description: Indica que o navegador de DVD começou a reproduzir ou terminou de reproduzir dados do karaokê.
+description: Indica que o Navegador de DVD começou a tocar ou terminou a reprodução de dados de nó.
 ms.assetid: 910bf809-a56a-4d02-9c7e-429769a4ec2b
-title: EC_DVD_KARAOKE_MODE (Dvdevcode. h)
+title: EC_DVD_KARAOKE_MODE (Dvdevcode.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,25 +13,25 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: fb83bc1de9c2933b53935c056b192eca74c4245c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e4edbdb337c4b57a7ed09bd63a8ed4fb0d1946b289b369badab64b561000d3e7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105783391"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119928566"
 ---
-# <a name="ec_dvd_karaoke_mode"></a>\_modo de \_ karaokê de DVD do EC \_
+# <a name="ec_dvd_karaoke_mode"></a>MODO \_ \_ DE DVD DE EC \_
 
-Indica que o [navegador de DVD](data-flow-in-the-dvd-navigator.md) começou a reproduzir ou terminou de reproduzir dados do karaokê.
+Indica que o Navegador [de DVD](data-flow-in-the-dvd-navigator.md) começou a tocar ou terminou a reprodução de dados de nó.
 
 ## <a name="parameters"></a>Parâmetros
 
 <dl> <dt>
 
-<span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
+<span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*Lparam1*
 </dt> <dd>
 
-$True. Se for **true**, uma faixa do karaokê será reproduzida. Caso contrário, nenhuma faixa do karaokê será reproduzida.
+$True. Se **TRUE**, uma faixa de nova faixa está sendo tocada. Caso contrário, nenhuma faixa de time está sendo tocada.
 
 </dd> <dt>
 
@@ -44,7 +44,7 @@ Reservado.
 
 ## <a name="remarks"></a>Comentários
 
-O DVD Player sinaliza esse evento sempre que ele altera domínios.
+O player de DVD sinaliza esse evento sempre que ele altera os domínios.
 
 Esse evento é gerado em todos os domínios de DVD.
 
@@ -54,7 +54,7 @@ Esse evento é gerado em todos os domínios de DVD.
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Dvdevcode. h (incluir DShow. h)</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Dvdevcode.h (inclua Dshow.h)</dt> </dl> |
 
 
 
@@ -65,10 +65,10 @@ Esse evento é gerado em todos os domínios de DVD.
 [Aplicativos de DVD](dvd-applications.md)
 </dt> <dt>
 
-[Códigos de notificação de eventos de DVD](dvd-notification-codes.md)
+[Códigos de notificação de evento de DVD](dvd-notification-codes.md)
 </dt> <dt>
 
-[Notificação de eventos no DirectShow](event-notification-in-directshow.md)
+[Notificação de eventos DirectShow](event-notification-in-directshow.md)
 </dt> </dl>
 
  

@@ -16,12 +16,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: b75cb397120ac2d4af041187f38f826e6b56be11
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 34b02a77f5dc67d1149f07e66f5740d6b99ab73e4c0dfbc637d387d47b8c54fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920251"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119920236"
 ---
 # <a name="cim_sapsapdependency-class-cimwin32-wmi-providers"></a>Classe CIM_SAPSAPDependency (provedores WMI CIMWin32)
 

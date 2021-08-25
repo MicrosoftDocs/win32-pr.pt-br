@@ -1,22 +1,22 @@
 ---
-description: O analisador de Sumário (analisador de Sumário) é um componente do Windows que permite armazenar informações de índice avançadas em arquivos ASF (Advanced Systems Format).
+description: O Analisador de Tabela de Conteúdo (Analisador de ToC) é um componente Windows que permite armazenar informações avançadas de índice em arquivos ASF (Advanced Systems Format).
 ms.assetid: 123083b0-dc1b-4c5c-8702-e236cffcf2da
-title: Analisador de Sumário
+title: Analisador de Tabela de Conteúdo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 62d4f931013ba091a740c27c3af541c3bcb7200a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 348d98ed50057727407f0fd339a16f0d20538864289441846c3de7ef5e611614
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921353"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119953145"
 ---
-# <a name="table-of-contents-parser"></a>Analisador de Sumário
+# <a name="table-of-contents-parser"></a>Analisador de Tabela de Conteúdo
 
-O analisador de Sumário (analisador de Sumário) é um componente do Windows que permite armazenar informações de índice avançadas em arquivos ASF (Advanced Systems Format).
+O Analisador de Tabela de Conteúdo (Analisador de ToC) é um componente Windows que permite armazenar informações avançadas de índice em arquivos ASF (Advanced Systems Format).
 
 > [!Note]  
-> O analisador de Sumário não está diretamente relacionado às APIs de Microsoft Media Foundation, embora possa ser usado em conjunto com Media Foundation.
+> O Analisador de TOC não está diretamente relacionado às APIs Microsoft Media Foundation, embora possa ser usado em conjunto com Media Foundation.
 
  
 
@@ -24,9 +24,9 @@ O analisador de Sumário (analisador de Sumário) é um componente do Windows qu
 
 | Seção                                                                        | Descrição                                                                                                |
 |--------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| [Sobre o analisador de sumários](about-toc-parser.md)                         | Fornece uma visão geral do analisador de Sumário                                                                     |
-| [Guia de programação do analisador de Sumário](toc-parser-programming-guide.md) | Descreve como usar o analisador de Sumário para executar tarefas específicas.                                             |
-| [Referência do analisador de Sumário](toc-parser-reference.md)                 | Contém páginas de referência para objetos, interfaces, estruturas e Enumerações associadas ao analisador de Sumário. |
+| [Sobre o Analisador de Conteúdo](about-toc-parser.md)                         | Fornece uma visão geral do Analisador de TOC                                                                     |
+| [Guia de Programação do Analisador de Tabela de Conteúdo](toc-parser-programming-guide.md) | Descreve como usar o Analisador de TOC para executar tarefas específicas.                                             |
+| [Referência do Analisador de Tabela de Conteúdo](toc-parser-reference.md)                 | Contém páginas de referência para objetos, interfaces, estruturas e enumerações associadas ao Analisador de TOC. |
 
 
 

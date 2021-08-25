@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Capicom.h
-ms.openlocfilehash: 3cbde0e8a64fa931ce50d2277d33b5fd5c27ee68
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 70185a7a48b7dc195727991fb0dcc35f4909451fa0e4da5f4100e8385adebc2e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105756562"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119879365"
 ---
 # <a name="capicom_certificates_save_as_type-enumeration"></a>\_Enumeração de certificados de CApicom \_ \_ de gravação como \_ tipo
 
@@ -46,8 +46,8 @@ O \_ tipo de enumeração ' salvar como tipo ' certificados CApicor \_ \_ \_ é 
 
 | Requisito | Valor |
 |----------------------------|--------------------------------------------------------------------------------------|
-| Redistribuível<br/> | CAPICOM 2,0 ou posterior no Windows Server 2003 e no Windows XP<br/>                |
-| parâmetro<br/>          | <dl> <dt>CAPICOM. h</dt> </dl> |
+| Redistribuível<br/> | capicom 2,0 ou posterior no Windows Server 2003 e Windows XP<br/>                |
+| Cabeçalho<br/>          | <dl> <dt>CAPICOM. h</dt> </dl> |
 
 
 

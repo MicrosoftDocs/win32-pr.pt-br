@@ -3,7 +3,7 @@ title: Mensagem de TVM_SETHOT (commctrl. h)
 description: Define o item ativo para um controle de exibição de árvore. Você pode enviar essa mensagem explicitamente ou usando a macro TreeView \_ SetHot.
 ms.assetid: 5e7368f5-40ce-4e7b-bbe3-5fe0b17181a8
 keywords:
-- Controles de TVM_SETHOT de mensagens do Windows
+- controles de Windows de mensagem de TVM_SETHOT
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: beccd5429267350682a6721cde66cca9316cf438
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 87ca61fd0bd3e25f37229cd5cee54f9bbb59b3a5c7556ae745821a8dc4d595d6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103919017"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119913946"
 ---
 # <a name="tvm_sethot-message"></a>\_Mensagem TVM SETHOT
 
@@ -45,7 +45,7 @@ Identificador para o novo item ativo. Se esse valor for **nulo**, o controle de 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna **verdadeiro** se for bem-sucedido ou **false** caso contrário.
 
@@ -69,9 +69,9 @@ Essa mensagem será ignorada se *lParam* for **NULL** e o controle de exibição
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

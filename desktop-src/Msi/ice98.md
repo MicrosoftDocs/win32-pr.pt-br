@@ -1,29 +1,29 @@
 ---
-description: ICE98 verifica o campo de descrição da tabela ODBCDataSource para uma fonte de dados ODBC. Ele usa a função SQLValidDSN para verificar se somente caracteres válidos são usados e se a descrição não excede o comprimento máximo permitido.
+description: ICE98 verifica o campo de descrição da Tabela ODBCDataSource para uma fonte de dados ODBC. Ele usa a função SQLValidDSN para verificar se apenas caracteres válidos são usados e se a descrição não excede o comprimento máximo permitido.
 ms.assetid: ed78db96-10a1-4e42-9147-2309c9ca9c6e
 title: ICE98
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4bf06e97341bd8f15502b1ea1fe43a975dc9cde2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 23f8a627b057e6c235fdb57a4f2d5d2b2cf6274e528ef4945c6a6323e1888427
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170056"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119894686"
 ---
 # <a name="ice98"></a>ICE98
 
-ICE98 verifica o campo de descrição da [tabela ODBCDataSource](odbcdatasource-table.md) para uma fonte de dados ODBC. Ele usa a função **SQLValidDSN** para verificar se somente caracteres válidos são usados e se a descrição não excede o comprimento máximo permitido.
+ICE98 verifica o campo de descrição da Tabela [ODBCDataSource](odbcdatasource-table.md) para uma fonte de dados ODBC. Ele usa a **função SQLValidDSN** para verificar se apenas caracteres válidos são usados e se a descrição não excede o comprimento máximo permitido.
 
 ## <a name="result"></a>Resultado
 
-ICE98 posta os seguintes avisos.
+ICE98 posta os avisos a seguir.
 
 
 
-| Aviso de ICE98                    | Descrição                                                                                                                                                                                                 |
+| Aviso ICE98                    | Descrição                                                                                                                                                                                                 |
 |----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| O nome da fonte de dados é inválido. | O valor na coluna Descrição da [tabela ODBCDataSource](odbcdatasource-table.md) contém caracteres inválidos ou é muito longo, o que significa que ele excede o \_ comprimento máximo \_ \_ de DSN do SQL de 32. |
+| O nome da fonte de dados é inválido. | O valor na coluna Descrição da Tabela [ODBCDataSource](odbcdatasource-table.md) contém caracteres inválidos ou é muito longo, o que significa que excede o tamanho máximo de \_ \_ 32 SQL DSN. \_ |
 
 
 

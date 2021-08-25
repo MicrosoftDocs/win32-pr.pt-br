@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c438ce67ac14ec79fe50cb0c931a5c5d437babd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3c370d8d234b4e9d7f0d234f0163dd4e41a10a8cc1686ec231686bb4d2b7f28e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105784628"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119861856"
 ---
 # <a name="providerurl-attribute"></a>Atributo ProviderURL
 
-O atributo **providerUrl** é o endereço do Home Page do provedor dos valores de atributo.
+O **atributo ProviderURL** é o endereço do home page do provedor dos valores de atributo.
 
 ## <a name="applies-to"></a>Aplica-se A
 
@@ -32,7 +32,7 @@ O atributo **providerUrl** é o endereço do Home Page do provedor dos valores d
 
 Esse atributo é armazenado somente no banco de dados de biblioteca (ou cache).
 
-Para determinar se você pode alterar o valor desse atributo, use o método [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar se você pode alterar o valor desse atributo, use o [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -40,7 +40,7 @@ Para determinar se você pode alterar o valor desse atributo, use o método [Med
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versão<br/> | Windows Media Player 9 Series ou posterior<br/> |
+| Versão<br/> | Windows Media Player série 9 ou posterior<br/> |
 
 
 

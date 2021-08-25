@@ -1,9 +1,9 @@
 ---
 title: Elemento DURATION
-description: O elemento DURATION define o período de tempo durante o qual o Windows Media Player processará a entrada da playlist associada.
+description: o elemento DURATION define o período de tempo Windows Media Player processará a entrada da playlist associada.
 ms.assetid: fe5c242e-08c9-44f0-a6fc-3f0fa432ba38
 keywords:
-- Elemento DURATION do Windows Media Player
+- Elemento DURATION Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c0446fd207ce04ab08d4c7bd2e055ef8d11a5a36
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5b06b497a6d31b03c4cbec23748f6995a1382fb806ad18fabaa542ed8ff33e4f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105796433"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119863346"
 ---
 # <a name="duration-element"></a>Elemento DURATION
 
-O elemento **Duration** define o período de tempo durante o qual o Windows Media Player processará a entrada da playlist associada.
+o elemento **DURATION** define o período de tempo Windows Media Player processará a entrada da playlist associada.
 
 ``` syntax
 <DURATION
@@ -34,7 +34,7 @@ O elemento **Duration** define o período de tempo durante o qual o Windows Medi
 
 **Valor** (obrigatório)
 
-O período de tempo, em horas, minutos, segundos e centésimos de segundo, que uma entrada é renderizada pelo Windows Media Player. O valor padrão é o comprimento total da entrada. Se a entrada for um arquivo gráfico, um valor de duração deverá ser especificado.
+O período de tempo, em horas, minutos, segundos e centésimos de um segundo, que uma entrada é renderizada pelo Windows Media Player. O valor padrão é o comprimento total da entrada. Se a entrada for um arquivo gráfico, um valor de duração deverá ser especificado.
 
 ## <a name="parentchild-elements"></a>Elementos pai/filho
 
@@ -82,10 +82,10 @@ O elemento **Duration** substitui um elemento **PREVIEWDURATION** .
 
 <dl> <dt>
 
-[**Referência de elementos de metarquivo do Windows Media**](windows-media-metafile-elements-reference.md)
+[**Windows Referência de elementos de metarquivo de mídia**](windows-media-metafile-elements-reference.md)
 </dt> <dt>
 
-[**Referência do metarquivo do Windows Media**](windows-media-metafile-reference.md)
+[**Windows Referência de metarquivo de mídia**](windows-media-metafile-reference.md)
 </dt> </dl>
 
  
