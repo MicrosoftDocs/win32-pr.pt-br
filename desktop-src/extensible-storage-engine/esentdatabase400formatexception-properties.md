@@ -1,25 +1,25 @@
 ---
-description: 'Saiba mais sobre: Propriedades de EsentDatabase400FormatException'
-title: Propriedades de EsentDatabase400FormatException
+description: 'Saiba mais sobre: Propriedades EsentDatabase400FormatException'
+title: Propriedades EsentDatabase400FormatException
 TOCTitle: EsentDatabase400FormatException properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.EsentDatabase400FormatException
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentdatabase400formatexception_properties(v=EXCHG.10)
 ms:contentKeyID: 55101313
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 8bd4327204f6d5a2743bf346f995b9f991d3a310
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0f4b8afd2d947b80597c60c6173ddabecd525e5c0ac41df97132eaf719d2e123
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104567187"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120117386"
 ---
-# <a name="esentdatabase400formatexception-properties"></a>Propriedades de EsentDatabase400FormatException
+# <a name="esentdatabase400formatexception-properties"></a>Propriedades EsentDatabase400FormatException
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo [EsentDatabase400FormatException](./esentdatabase400formatexception-class.md) expõe os membros a seguir.
+O [tipo EsentDatabase400FormatException](./esentdatabase400formatexception-class.md) expõe os membros a seguir.
 
 ## <a name="properties"></a>Propriedades
 
@@ -40,16 +40,16 @@ O tipo [EsentDatabase400FormatException](./esentdatabase400formatexception-class
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn274313(v=exchg.10).md">Erro</a></td>
-<td>Obtém o erro de ESENT subjacente para esta exceção. (Herdado de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.)</td>
+<td>Obtém o erro Esent subjacente para essa exceção. (Herdado de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">HelpLink</a></td>
+<td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">Helplink</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.protproperty(exchg.10).gif" title="Propriedade protegida" alt="Protected property" /></td>
-<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">Resultado</a></td>
+<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">HResult</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
@@ -69,7 +69,7 @@ O tipo [EsentDatabase400FormatException](./esentdatabase400formatexception-class
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">Pilha</a></td>
+<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">StackTrace</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
@@ -89,4 +89,4 @@ Parte superior
 
 [Classe EsentDatabase400FormatException](./esentdatabase400formatexception-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

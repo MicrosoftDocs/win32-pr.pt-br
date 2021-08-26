@@ -1,9 +1,9 @@
 ---
-title: Mensagem de TBM_SETRANGEMIN (commctrl. h)
-description: Define a posição lógica mínima para o controle deslizante em um TrackBar.
+title: TBM_SETRANGEMIN mensagem (Commctrl.h)
+description: Define a posição lógica mínima para o controle deslizante em uma barra de faixa.
 ms.assetid: 85071be2-4df3-4b54-9122-b6dc767f6cb9
 keywords:
-- Controles de TBM_SETRANGEMIN de mensagens do Windows
+- TBM_SETRANGEMIN controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d34c2e70aa6247cb970e576c915bdcd28cd18d23
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d35cbb162b42636d886cb5e41eb9ba6de1a2101a8327ff8ddffbc71c57fa6735
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103917982"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120046066"
 ---
-# <a name="tbm_setrangemin-message"></a>\_Mensagem tbm SETRANGEMIN
+# <a name="tbm_setrangemin-message"></a>Mensagem TBM \_ SETRANGEMIN
 
-Define a posição lógica mínima para o controle deslizante em um TrackBar.
+Define a posição lógica mínima para o controle deslizante em uma barra de faixa.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -32,24 +32,24 @@ Define a posição lógica mínima para o controle deslizante em um TrackBar.
 *wParam* 
 </dt> <dd>
 
-Sinalizador de redesenho. Se esse parâmetro for **true**, a mensagem redesenhará o TrackBar depois que o intervalo for definido. Se esse parâmetro for **false**, a mensagem definirá o intervalo, mas não redesenhará o TrackBar.
+Redesenhar sinalizador. Se esse parâmetro for **TRUE,** a mensagem redesenhará a barra de faixas depois que o intervalo for definido. Se esse parâmetro for **FALSE,** a mensagem define o intervalo, mas não redesenha a barra de faixa.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Posição mínima do controle deslizante.
+Posição mínima para o controle deslizante.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sem valor de retorno.
 
 ## <a name="remarks"></a>Comentários
 
-Se a posição do controle deslizante atual for menor que o novo mínimo, a mensagem **tbm \_ SETRANGEMIN** definirá a posição do controle deslizante como o novo valor mínimo.
+Se a posição atual do controle deslizante for menor que o novo mínimo, a mensagem **\_ SETRANGEMIN TBM** definirá a posição do controle deslizante como o novo valor mínimo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,9 +57,9 @@ Se a posição do controle deslizante atual for menor que o novo mínimo, a mens
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -70,7 +70,7 @@ Se a posição do controle deslizante atual for menor que o novo mínimo, a mens
 **Referência**
 </dt> <dt>
 
-[**\_SETRANGE tbm**](tbm-setrange.md)
+[**TBM \_ SETRANGE**](tbm-setrange.md)
 </dt> <dt>
 
 [**TBM \_ SETRANGEMAX**](tbm-setrangemax.md)

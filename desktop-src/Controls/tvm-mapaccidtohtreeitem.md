@@ -1,9 +1,9 @@
 ---
 title: Mensagem de TVM_MAPACCIDTOHTREEITEM (commctrl. h)
-description: Mapeia uma ID de acessibilidade para um HTREEITEM.
+description: Mapas uma ID de acessibilidade a um HTREEITEM.
 ms.assetid: f4feb7cb-2138-4930-b8ee-b9e2d4b19001
 keywords:
-- Controles de TVM_MAPACCIDTOHTREEITEM de mensagens do Windows
+- controles de Windows de mensagem de TVM_MAPACCIDTOHTREEITEM
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b827b18387723fe4792321f7932e1abb3673466e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f6481d8db806156d10536ac0ec7c66fdeb4693a1133365767b4c3dc37ad8420f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009106"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120045796"
 ---
 # <a name="tvm_mapaccidtohtreeitem-message"></a>\_Mensagem TVM MAPACCIDTOHTREEITEM
 
-Mapeia uma ID de acessibilidade para um **HTREEITEM**.
+Mapas uma ID de acessibilidade a um **HTREEITEM**.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -35,7 +35,7 @@ Mapeia uma ID de acessibilidade para um **HTREEITEM**.
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o **HTREEITEM** ao qual a ID de acessibilidade especificada está mapeada.
 
@@ -54,9 +54,9 @@ Quando você adiciona um item a um controle de exibição de árvore, um **HTREE
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

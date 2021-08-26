@@ -1,7 +1,7 @@
 ---
 description: Remove um IContextNode filho.
 ms.assetid: ed1d7b35-f6ba-4eff-888d-5cc492f02832
-title: 'IContextNode: método eleteSubNode de:D (IACom. h)'
+title: Método IContextNode::D eleteSubNode (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: ffcec19e13a3ad885b3b497f80322caf9365c91a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0ebad42f02ccfad0db2d119832f3495819ac18ce321d72ede3aa8d7545b999be
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501815"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120057876"
 ---
-# <a name="icontextnodedeletesubnode-method"></a>IContextNode: método eleteSubNode de:D
+# <a name="icontextnodedeletesubnode-method"></a>Método IContextNode::D eleteSubNode
 
-Remove um [**IContextNode**](icontextnode.md)filho.
+Remove um [**IContextNode filho.**](icontextnode.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,20 +39,20 @@ HRESULT DeleteSubNode(
 
 <dl> <dt>
 
-*pContextNodeToDelete* \[ no\]
+*pContextNodeToDelete* \[ Em\]
 </dt> <dd>
 
 O [**IContextNode**](icontextnode.md) a ser removido.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Para obter uma descrição dos valores de retorno, consulte [classes e interfaces – análise de tinta](classes-and-interfaces---ink-analysis.md).
+Para ver uma descrição dos valores de retorno, consulte [Classes e interfaces – Análise de Tinta.](classes-and-interfaces---ink-analysis.md)
 
 ## <a name="remarks"></a>Comentários
 
-E \_ INVALIDARG será retornado se o parâmetro *pContextNodeToDelete* não for filho desse objeto [**IContextNode**](icontextnode.md) .
+E \_ INVALIDARG será retornado se o *parâmetro pContextNodeToDelete* não for um filho desse [**objeto IContextNode.**](icontextnode.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -60,9 +60,9 @@ E \_ INVALIDARG será retornado se o parâmetro *pContextNodeToDelete* não for 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                     |
-| parâmetro<br/>                   | <dl> <dt>IACom. h (também requer IACom \_ i. c)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>IACom.h (também requer IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 

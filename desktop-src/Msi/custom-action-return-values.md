@@ -4,12 +4,12 @@ ms.assetid: 56c2d639-eef8-47cd-9d47-9a4781b9be36
 title: Valores de retorno de ação personalizada
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c01ba6273aea6cf950edb56ef3c2a94ab9a272d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f3853cfeafba22cb2d479feb1e699c29bcf4b0ab7a08402245f30958cb593df6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105753271"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120044996"
 ---
 # <a name="custom-action-return-values"></a>Valores de retorno de ação personalizada
 
@@ -33,7 +33,7 @@ Observe que as ações personalizadas que são [arquivos executáveis](executabl
 
 Para obter mais informações sobre a opção **msidbCustomActionTypeContinue** e outras opções de processamento de retorno, consulte [Opções de processamento de retorno de ação personalizada](custom-action-return-processing-options.md).
 
-Observe que Windows Installer converte os valores de retorno de todas as ações quando grava o valor de retorno no arquivo de log. Por exemplo, se o valor de retorno da ação aparecer como 1 no arquivo de log, isso significa que a ação retornou êxito de erro \_ . Para obter mais informações sobre essa conversão, consulte [log de valores de retorno de ação](logging-of-action-return-values.md).
+observe que Windows Installer converte os valores de retorno de todas as ações quando grava o valor de retorno no arquivo de log. Por exemplo, se o valor de retorno da ação aparecer como 1 no arquivo de log, isso significa que a ação retornou êxito de erro \_ . Para obter mais informações sobre essa conversão, consulte [log de valores de retorno de ação](logging-of-action-return-values.md).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

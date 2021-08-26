@@ -16,12 +16,12 @@ api_location: ''
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 273580dd49ac5a6787329d942bfaa494d3c3379e
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: f98009a3b9a9e04edd82b555fba979eeb66e204d8a27331b7d6f85c0d1d8c404
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122467583"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120114436"
 ---
 # <a name="span-idwwan_profile_v4element_1_passwordspanmodemdmconfigprofilepassword-v4"></a><span id="WWAN_profile_v4.element_1_Password"></span>ModemDMConfigProfile... \/ \/ Senha (v4)
 
@@ -41,7 +41,7 @@ Para obter mais informações, consulte a documentação do elemento [**Password
 &nbsp;&nbsp;&nbsp;&nbsp;[\<UserLogonCred\>](element-1-userlogoncred.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<Password\>**
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` syntax
 <Password>
@@ -63,19 +63,41 @@ Nenhum.
 
 ### <a name="span-idparent_elementsspanspan-idparent_elementsspanparent-elements"></a><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Elementos pai
 
-
-| Elemento pai | Descrição | 
-|----------------|-------------|
-| <a href="element-1-userlogoncred.md">UserLogonCred</a> | <p>Credenciais de logon para uma conexão.</p> | 
-
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Elemento pai</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="element-1-userlogoncred.md">UserLogonCred</a></td>
+<td><p>Credenciais de logon para uma conexão.</p></td>
+</tr>
+</tbody>
+</table>
 
  
 
 ## <a name="requirements"></a>Requisitos
 
-
-| | | <p>Namespace</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
-
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><p>Namespace</p></td>
+<td><p>https://www.microsoft.com/networking/WWAN/profile/v4</p></td>
+</tr>
+</tbody>
+</table>
 
  
 

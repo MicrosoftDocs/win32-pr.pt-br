@@ -1,9 +1,9 @@
 ---
 title: " Diretivas ifdef e ifndef"
-description: Diretivas de pré-processador que determinam se uma macro ou constante de pré-processador específico está definida.
+description: Diretivas de pré-processador que determinam se uma constante ou macro de pré-processador específica está definida.
 ms.assetid: c1cc2e1d-2599-45ec-9629-56c4b42e0d0e
 keywords:
-- ifdef e diretivas ifndef HLSL
+- Diretivas ifdef e ifndef HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,23 +13,23 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 338308b58f1cdc68ec78984e65ffbf056a36b10b
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 584cde8856c48aeafed5665016a71146f8c2ffb341b837faa6bf35d627152c39
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104006546"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120068316"
 ---
-# <a name="ifdef-and-ifndef-directives"></a>\#Diretivas ifdef e \# ifndef
+# <a name="ifdef-and-ifndef-directives"></a>\#Diretivas \# ifdef e ifndef
 
-Diretivas de pré-processador que determinam se uma macro ou constante de pré-processador específico está definida.
+Diretivas de pré-processador que determinam se uma constante ou macro de pré-processador específica está definida.
 
 
 
-| \#*identificador* de ifdef...  |
+| \#Identificador  ifdef ...  |
 |---------------------------|
 | \#endif                   |
-| \#*identificador* de ifndef... |
+| \#identificador  ifndef ... |
 | \#endif                   |
 
 
@@ -42,7 +42,7 @@ Diretivas de pré-processador que determinam se uma macro ou constante de pré-p
 
 | Item                                                                              | Descrição                                               |
 |-----------------------------------------------------------------------------------|-----------------------------------------------------------|
-| <span id="identifier"></span><span id="IDENTIFIER"></span>*ID*<br/> | Identificador da constante ou macro a ser verificada. <br/> |
+| <span id="identifier"></span><span id="IDENTIFIER"></span>*Identificador*<br/> | Identificador da constante ou macro a ser verificada. <br/> |
 
 
 
@@ -50,11 +50,11 @@ Diretivas de pré-processador que determinam se uma macro ou constante de pré-p
 
 ## <a name="remarks"></a>Comentários
 
-Você pode usar as \# diretivas ifdef e \# ifndef em qualquer lugar que o [ \# se](dx-graphics-hlsl-appendix-pre-if.md) possa ser usado. A \# diretiva ifdef é equivalente a). Essas diretivas verificam apenas a presença ou a ausência de identificadores definidos usando a diretiva [ \# definir](dx-graphics-hlsl-appendix-pre-define.md) , não para identificadores declarados no código-fonte C ou C++.
+Você pode usar as \# diretivas ifdef \# e ifndef em qualquer lugar em que [ \# o se](dx-graphics-hlsl-appendix-pre-if.md) possa ser usado. A \# instrução ifdef é equivalente à diretiva ). Essas diretivas verificam apenas a presença ou ausência de identificadores definidos usando a diretiva [ \# define,](dx-graphics-hlsl-appendix-pre-define.md) não para identificadores declarados no código-fonte C ou C++.
 
-Essas políticas são fornecidas somente para compatibilidade com versões anteriores da linguagem. O uso do operador [definido](dx-graphics-hlsl-appendix-pre-if.md) com a \# diretiva If é preferencial.
+Essas políticas são fornecidas somente para compatibilidade com versões anteriores da linguagem. O uso do operador [definido](dx-graphics-hlsl-appendix-pre-if.md) com a \# diretiva if é preferencial.
 
-A \# diretiva ifndef verifica o oposto da condição verificada por \# ifdef. Se o identificador não for definido, a condição será true (diferente de zero); caso contrário, a condição será false (zero).
+A \# diretiva ifndef verifica o oposto da condição verificada por \# ifdef. Se o identificador não estiver definido, a condição será verdadeira (não zero); caso contrário, a condição será false (zero).
 
 ## <a name="examples"></a>Exemplos
 
@@ -73,7 +73,7 @@ int main()
 
 
 
-Quando compilado usando o comando a seguir, PROG. cpp será compilado no modo de teste; caso contrário, ele será compilado no modo final.
+Quando compilado usando o comando a seguir, prog.cpp será compilado no modo de teste; caso contrário, ele será compilado no modo final.
 
 
 ```
@@ -89,7 +89,7 @@ CL.EXE /Dtest prog.cpp
 [Diretivas de pré-processador (DirectX HLSL)](dx-graphics-hlsl-appendix-preprocessor.md)
 </dt> <dt>
 
-[\#se,)](dx-graphics-hlsl-appendix-pre-if.md)
+[\#if, )](dx-graphics-hlsl-appendix-pre-if.md)
 </dt> </dl>
 
  

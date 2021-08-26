@@ -8,12 +8,12 @@ keywords:
 - executando a onda-arquivos de áudio, sobre
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a5fb6b2fb67e52374351063d330ffdf392529389
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 357998d2b1a026d867092dc323c9e65121705bd9178e6ea4555edfc2c778cc78
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104363888"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120037956"
 ---
 # <a name="playing-waveform-audio-files"></a>Executando Waveform-Audio arquivos
 
@@ -26,9 +26,9 @@ Os tópicos a seguir descrevem como usar a interface de áudio de forma de onda 
 -   [Alterando o volume de Waveform-Audio reprodução](changing-the-volume-of-waveform-audio-playback.md)
 -   [Alterando a taxa de densidade e reprodução](changing-pitch-and-playback-rate.md)
 
- 
+ 
 
- 
+ 
 
 
 

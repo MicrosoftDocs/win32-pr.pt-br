@@ -4,12 +4,12 @@ ms.assetid: e780df46-bf47-4334-b788-05ad8179f051
 title: Etapa 3C. Implementar o método CheckTransform
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 78148701fc54e73a6970d45fde95d70f4cf0df3a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 430ad933acfa7fc41a8b075183080e0b710a5d4780b55fa89cd4bf80984c1edc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171507"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120075586"
 ---
 # <a name="step-3c-implement-the-checktransform-method"></a>Etapa 3C. Implementar o método CheckTransform
 
@@ -112,7 +112,7 @@ Em seguida: [etapa 4. Definir propriedades de alocador](step-4--set-allocator-pr
 [Retângulos de origem e de destino em renderizadores de vídeo](source-and-target-rectangles-in-video-renderers.md)
 </dt> <dt>
 
-[Gravando filtros do DirectShow](writing-directshow-filters.md)
+[gravando filtros de DirectShow](writing-directshow-filters.md)
 </dt> </dl>
 
  

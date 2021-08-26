@@ -15,17 +15,17 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9276c36a08a429f44568b3a909af77f5ae038c80
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 39df84e7e0dbfe150a92ebde2faade9562ad65b74fb503f6ef1ee07f74f46f22
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105764718"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120116236"
 ---
 # <a name="jet_columnbase-structure"></a>Estrutura JET_COLUMNBASE
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jet_columnbase-structure"></a>Estrutura JET_COLUMNBASE
 
@@ -119,7 +119,7 @@ Opções para a coluna, incluindo zero ou mais dos valores a seguir.
 <td><p>JET_bitColumnAutoincrement</p></td>
 <td><p>A coluna é incrementada automaticamente. O número é um número cada vez maior e é garantido que seja exclusivo dentro de uma tabela. No entanto, os números podem não ser sequenciais. Por exemplo, se cinco linhas forem inseridas em uma tabela, a coluna incrementada automaticamente poderá conter os valores {1, 2, 6, 7, 8}.</p>
 <p>JET_bitColumnAutoincrement pode ser usado somente quando o membro <strong>coltyp</strong> é definido como <strong>JET_coltypLong</strong> ou <strong>JET_coltypCurrency</strong> e não pode ser combinado com JET_bitColumnEscrowUpdate, JET_bitColumnUserDefinedDefault ou JET_bitColumnVersion.</p>
-<p><strong>Windows 2000:  </strong> JET_bitColumnVersion pode ser usado somente quando o membro <strong>coltyp</strong> é definido como <strong>JET_coltypLong</strong>.</p></td>
+<p><strong>Windows 2000:</strong> JET_bitColumnVersion pode ser usado somente quando o membro <strong>coltyp</strong> é definido como <strong>JET_coltypLong</strong>.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_bitColumnUpdatable</p></td>
@@ -174,9 +174,9 @@ Opções para a coluna, incluindo zero ou mais dos valores a seguir.
 </tr>
 <tr class="odd">
 <td><p>JET_bitColumnDeleteOnZero</p></td>
-<td><p>A coluna é uma coluna de atualização de caução e, quando chega a zero, o registro será excluído. Um uso comum para colunas Delete-on-zero é como campos de contagem de referência. Quando o número de referências cair em zero, o registro será excluído. Uma coluna Delete-on-zero deve ser uma coluna de atualização de caução.</p>
+<td><p>A coluna é uma coluna de atualização de caução e, quando chega a zero, o registro será excluído. Um uso comum para colunas Delete-on-zero é como campos de contagem de referência. Quando o número de referências cair para zero, o registro será excluído. Uma coluna delete-on-zero deve ser uma coluna de atualização de escrow.</p>
 <p>JET_bitColumnDeleteOnZero substitui JET_bitColumnFinalize.</p>
-<p>JET_bitColumnDeleteOnZero não pode ser combinada com JET_bitColumnFinalize ou JET_bitColumnUserDefinedDefault e não pode ser usada com colunas padrão definidas pelo usuário.</p></td>
+<p>JET_bitColumnDeleteOnZero pode ser combinado com JET_bitColumnFinalize ou JET_bitColumnUserDefinedDefault e não pode ser usado com colunas padrão definidas pelo usuário.</p></td>
 </tr>
 </tbody>
 </table>
@@ -184,7 +184,7 @@ Opções para a coluna, incluindo zero ou mais dos valores a seguir.
 
 **szBaseTableName**
 
-A tabela da qual a tabela atual herda seu DDL.
+A tabela da qual a tabela atual herda sua DDL.
 
 **szBaseColumnName**
 
@@ -192,7 +192,7 @@ O nome da coluna na tabela de modelo.
 
 ### <a name="remarks"></a>Comentários
 
-**JET_COLUMNBASE** contém grande parte das mesmas informações que [JET_COLUMNDEF](./jet-columndef-structure.md), mas adiciona campos de cadeia de caracteres para descrever a tabela base (se um DDL hierárquico foi usado).
+**JET_COLUMNBASE** contém grande parte das mesmas informações que [JET_COLUMNDEF](./jet-columndef-structure.md), mas adiciona campos de cadeia de caracteres para descrever a tabela base (se uma DDL hierárquica foi usada).
 
 ### <a name="requirements"></a>Requisitos
 
@@ -204,19 +204,19 @@ O nome da coluna na tabela de modelo.
 <tbody>
 <tr class="odd">
 <td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista, o Windows XP ou o Windows 2000 Professional.</p></td>
+<td><p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008, o Windows Server 2003 ou o Windows 2000 Server.</p></td>
+<td><p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
+<td><p>Declarado em Esent.h.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Unicode</strong></p></td>
-<td><p>Implementado como <strong>JET_COLUMNBASE_W</strong> (Unicode) e <strong>JET_COLUMNBASE_A</strong> (ANSI).</p></td>
+<td><p>Implementado como <strong>JET_COLUMNBASE_W</strong> (Unicode) <strong>e JET_COLUMNBASE_A</strong> (ANSI).</p></td>
 </tr>
 </tbody>
 </table>

@@ -4,12 +4,12 @@ ms.assetid: 4c2ffd22-49ee-4318-bfa0-e0ce4d8c67bb
 title: Guia de programação da API do sensor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 078cc99e88a1a4fd6a232220e08c53a99dfbdfb0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c5886564e66a0a8db64713b280b44f85a197430dc23523266bc45e66e44c956b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105753924"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120073236"
 ---
 # <a name="sensor-api-programming-guide"></a>Guia de programação da API do sensor
 
@@ -36,7 +36,7 @@ O código de exemplo nesta seção utiliza os seguintes cabeçalhos incluídos a
 
 Você também deve vincular a esses arquivos de biblioteca associados adicionais: propsys. lib e PortableDeviceGuids. lib.
 
-O código de exemplo nesta seção usa as seguintes constantes para categorias de sensor, tipos e campos de dados. Essas constantes são valores personalizados que são definidos pelo exemplo de driver timesensor no kit de driver do Windows. Observe que, embora a plataforma do sensor habilite a definição e o uso de tipos personalizados como esses, você deve usar tipos definidos pela plataforma sempre que possível.
+O código de exemplo nesta seção usa as seguintes constantes para categorias de sensor, tipos e campos de dados. essas constantes são valores personalizados que são definidos pelo exemplo de driver timesensor no Kit de driver Windows. Observe que, embora a plataforma do sensor habilite a definição e o uso de tipos personalizados como esses, você deve usar tipos definidos pela plataforma sempre que possível.
 
 
 ```C++
