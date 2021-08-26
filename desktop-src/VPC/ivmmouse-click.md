@@ -1,11 +1,11 @@
 ---
-title: Método IVMMouse Click (VPCCOMInterfaces. h)
-description: Simula um clique no botão do mouse.
+title: Método IVMMouse Click (VPCCOMInterfaces.h)
+description: Simula um clique de botão do mouse.
 ms.assetid: f16e36d6-34ca-4d65-95e4-1a6660d0abd0
 keywords:
-- Clique em método virtual PC
-- Clique em método virtual PC, interface IVMMouse
-- IVMMouse interface virtual PC, clique em método
+- Clique no método Virtual PC
+- Clique no método Virtual PC , interface IVMMouse
+- INTERFACE IVMMouse pc virtual , método Click
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ad3ea1b861db0a92ad92e689770182d225778aee
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 53d1d1aaf538ac6b30a27df904729f2ad3187ebde29cb915c3d7ef35d1e9cf57
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455907"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119974237"
 ---
-# <a name="ivmmouseclick-method"></a>Método IVMMouse:: Click
+# <a name="ivmmouseclick-method"></a>Método IVMMouse::Click
 
-\[O Windows Virtual PC não está mais disponível para uso a partir do Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows O PC virtual não está mais disponível para uso a partir Windows 8. Em vez disso, use o provedor WMI do [Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
 
-Simula um clique no botão do mouse.
+Simula um clique de botão do mouse.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,26 +44,26 @@ HRESULT Click(
 
 <dl> <dt>
 
-*buttonIndex* \[ no\]
+*buttonIndex* \[ Em\]
 </dt> <dd>
 
-O índice do botão que está sendo clicado. Para obter uma lista de valores, consulte [**VMMouseButton**](vmmousebutton.md).
+O índice do botão que está sendo clicado. Para ver uma lista de valores, [**consulte VMMouseButton**](vmmousebutton.md).
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
 
 
-| Código/valor de retorno                                                                                                                                                        | Descrição                                                                                                                                       |
+| Valor/código de retorno                                                                                                                                                        | Descrição                                                                                                                                       |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> <dt>0</dt> </dl>                              | A operação foi bem-sucedida.<br/>                                                                                                          |
-| <dl> <dt>**E \_ INVALIDARG**</dt> <dt>0x80000003</dt> </dl>             | O parâmetro é **NULL**.<br/>                                                                                                             |
-| <dl> <dt>**VM \_ E a \_ VM \_ não \_ está executando**</dt> <dt>0xA0040206</dt> </dl>   | A máquina virtual à qual este dispositivo de mouse está anexado não está em execução no momento.<br/>                                                   |
-| <dl> <dt>**VM \_ E \_ mouse \_ não \_ ativo**</dt> <dt>0xA0040800</dt> </dl> | A operação não pôde ser concluída porque o dispositivo de mouse não está ligado ou não está ativo no momento na máquina virtual.<br/> |
-| <dl> <dt>**DISP \_ E \_**</dt> <dt>0x80020009</dt> de exceção </dl>        | Ocorreu um erro inesperado.<br/>                                                                                                      |
+| <dl> <dt>**E \_ INVALIDARG**</dt> <dt>0x80000003</dt> </dl>             | O parâmetro é **NULL.**<br/>                                                                                                             |
+| <dl> <dt>**VM \_ E \_ VM \_ NÃO \_ EXECUTANDO**</dt> <dt>0XA0040206</dt> </dl>   | A máquina virtual à qual este dispositivo do mouse está anexado não está em execução no momento.<br/>                                                   |
+| <dl> <dt>**VM \_ E \_ MOUSE NÃO ATIVO \_ \_ 0XA0040800**</dt> <dt></dt> </dl> | A operação não pôde ser concluída porque o dispositivo do mouse não está ligado ou não está ativo na máquina virtual no momento.<br/> |
+| <dl> <dt>**DISP \_ E \_ EXCEPTION**</dt> <dt>0x80020009</dt> </dl>        | Ocorreu um erro inesperado.<br/>                                                                                                      |
 
 
 
@@ -75,12 +75,12 @@ Esse método pode retornar um desses valores.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                     |
-| Fim do suporte do cliente<br/>    | Windows 7<br/>                                                                          |
+| Fim do suporte ao cliente<br/>    | Windows 7<br/>                                                                          |
 | Produto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| parâmetro<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMmouse é definido como ac903f6d-6346-4f29-8875-5d511a13895e<br/>                   |
+| Cabeçalho<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMmouse é definido como \_ ac903f6d-6346-4f29-8875-5d511a13895e<br/>                   |
 
 
 

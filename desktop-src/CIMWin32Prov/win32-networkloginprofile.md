@@ -1,5 +1,5 @@
 ---
-description: O Win32 \_ NetworkLoginProfile&\# 8194; A classe WMI representa as informações de logon de rede de um usuário específico em um sistema de computador executando o Windows.
+description: O Win32 \_ NetworkLoginProfile&\# 8194; A classe WMI representa as informações de logon de rede de um usuário específico em um sistema de computador que executa o Windows.
 ms.assetid: e5a8e934-d5a7-43fa-b140-c3cca972590f
 ms.tgt_platform: multiple
 title: Classe Win32_NetworkLoginProfile
@@ -46,12 +46,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 3b138ce4bc92088896286f4a21a039b068e2206e
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 4fb71b27093cb1011b9aebaadf0a6760124b64f9e13ae7b5ef46f5ffc478cce4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105752406"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119972645"
 ---
 # <a name="win32_networkloginprofile-class"></a>\_Classe Win32 NetworkLoginProfile
 
@@ -386,16 +386,16 @@ Uma permissão para uma conta de confiança para um domínio que confia em outro
 
 Conta de confiança da estação de trabalho
 
-Uma conta de computador para uma estação de trabalho do Windows ou servidor que seja membro deste domínio.
+Uma conta de computador para uma Windows de trabalho ou servidor que seja membro desse domínio.
 
 </dd> <dt>
 
 8192 (0x2000)
 </dt> <dd>
 
-Conta de confiança do servidor
+Conta de Confiança do Servidor
 
-Uma conta de computador para um controlador de domínio de backup que é membro deste domínio.
+Uma conta de computador para um controlador de domínio de backup que seja membro desse domínio.
 
 </dd> <dt>
 
@@ -409,9 +409,9 @@ Não expirar senha
 131072 (0x20000)
 </dt> <dd>
 
-Conta de logon MNS
+Conta de Logon do MNS
 
-Tipo de conta de logon de MNS (conjunto de nós principais) que representa um usuário MNS.
+Tipo de conta de logon MNS (Majority Node Set) que representa um usuário MNS.
 
 </dd> <dt>
 
@@ -432,7 +432,7 @@ Confiável para delegação
 1048576 (0x100000)
 </dt> <dd>
 
-Não delegado
+Não Delegado
 
 </dd> <dt>
 
@@ -446,7 +446,7 @@ Usar somente chave DES
 4194304 (0x400000)
 </dt> <dd>
 
-Não requer preautoria
+Não exigir pré-autorização
 
 </dd> <dt>
 
@@ -461,11 +461,11 @@ Indica que a senha expirou.
 
 As propriedades a seguir descrevem o tipo de conta. Somente um valor pode ser definido:
 
--   \_conta normal da UF \_
--   UF \_ \_ duplicado de \_ conta temporária
--   conta de confiança da UF \_ Workstation \_ \_
--   \_conta de \_ confiança do servidor UF \_
--   conta de confiança de domínio da UF \_ \_ \_
+-   CONTA NORMAL DA UF \_ \_
+-   CONTA \_ \_ DUPLICADA TEMP DA UF \_
+-   CONTA CONFIÁVEL DA ESTAÇÃO \_ \_ DE TRABALHO \_ DA UF
+-   CONTA \_ DE CONFIANÇA DO \_ SERVIDOR \_ DA UNIVERSIDADE
+-   CONTA \_ DE CONFIANÇA INTERDOMÍNIO \_ \_ DA UNIVERSIDADE
 
 </dd> <dt>
 
@@ -478,10 +478,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("win32api \| rede Management structures \| [**user \_ info \_ 3**](/windows/win32/api/lmaccess/ns-lmaccess-user_info_3) \| usri3 \_ Full \_ name")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Network Management Structures USER INFO \| [**\_ \_ 3**](/windows/win32/api/lmaccess/ns-lmaccess-user_info_3) \| usri3 \_ full \_ name")
 </dt> </dl>
 
-Nome completo do usuário que pertence ao perfil de logon de rede. Essa cadeia de caracteres poderá ficar vazia se o usuário optar por não associar um nome completo a um nome de usuário.
+Nome completo do usuário que pertence ao perfil de logon de rede. Essa cadeia de caracteres poderá estar vazia se o usuário optar por não associar um nome completo a um nome de usuário.
 
 </dd> <dt>
 
@@ -494,12 +494,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("win32api \| Network Management estruturas \| [**user \_ info \_ 3**](/windows/win32/api/lmaccess/ns-lmaccess-user_info_3) \| usri3 \_ Home \_ dir")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Network Management Structures USER INFO \| [**\_ \_ 3**](/windows/win32/api/lmaccess/ns-lmaccess-user_info_3) \| usri3 \_ home \_ dir")
 </dt> </dl>
 
-Caminho para o diretório base do usuário. Essa cadeia de caracteres pode estar vazia se o usuário optar por não especificar um diretório base.
+Caminho para o diretório home do usuário. Essa cadeia de caracteres poderá estar vazia se o usuário optar por não especificar um diretório home.
 
-Exemplo: " \\ HOMEDIR"
+Exemplo:" \\ HOMEDIR"
 
 </dd> <dt>
 
@@ -512,10 +512,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("win32api \| Network Management estruturas \| [**user \_ info \_ 3**](/windows/win32/api/lmaccess/ns-lmaccess-user_info_3) \| usri3 \_ Home \_ dir \_ drive")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Network Management Structures USER INFO \| [**\_ \_ 3**](/windows/win32/api/lmaccess/ns-lmaccess-user_info_3) \| usri3 \_ home dir \_ \_ drive")
 </dt> </dl>
 
-Letra da unidade atribuída ao diretório base do usuário para fins de logon.
+Letra da unidade atribuída ao diretório base do usuário para fins de log.
 
 Exemplo: "C:"
 
@@ -524,36 +524,36 @@ Exemplo: "C:"
 **LastLogoff**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("win32api de \| Gerenciamento de rede do usuário de estruturas \| [**\_ \_ 3**](/windows/win32/api/lmaccess/ns-lmaccess-user_info_3) \| usri3 \_ último \_ logoff")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Network Management Structures USER INFO \| [**\_ \_ 3**](/windows/win32/api/lmaccess/ns-lmaccess-user_info_3) \| usri3 \_ last \_ logoff")
 </dt> </dl>
 
-O usuário fez o último logoff do sistema. Esse valor é calculado a partir do número de segundos decorridos desde 00:00:00, 1º de janeiro de 1970. Um valor " \* \* \* \* \* \* \* \* \* \* \* \* \* \* . \* \* \* \* \* \* + \* \* \* " significa que a hora do último logoff é desconhecida. O formato desse valor é AAAAMMDDHHMMSS. mmmmmm sutc. Para obter informações sobre como converter essa propriedade em sua hora local, consulte [tarefas do WMI: datas e horas](../wmisdk/wmi-tasks--dates-and-times.md).
+O usuário registrou o sistema pela última vez. Esse valor é calculado com base no número de segundos decorridos desde 00:00:00, 1º de janeiro de 1970. Um valor de " \* \* \* \* \* \* \* \* \* \* \* \* \* \* . \* \* \* \* \* \* + \* \* \* " significa que a hora do último logoff é desconhecida. O formato desse valor é yyyymmddhhmmss.mmmmmm sutc. Para obter informações sobre como traduzir essa propriedade para a hora local, consulte [Tarefas WMI: datas e horas.](../wmisdk/wmi-tasks--dates-and-times.md)
 
-Exemplo: 19521201000230, 0 000
+Exemplo: 19521201000230.000000 000
 
 </dd> <dt>
 
 **LastLogon**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("win32api de \| Gerenciamento de rede do usuário de estruturas \| [**\_ \_ 3**](/windows/win32/api/lmaccess/ns-lmaccess-user_info_3) \| usri3 \_ último \_ logon")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Network Management Structures USER INFO \| [**\_ \_ 3**](/windows/win32/api/lmaccess/ns-lmaccess-user_info_3) \| usri3 \_ last \_ logon")
 </dt> </dl>
 
-O usuário fez o último logon no sistema. Esse valor é calculado a partir do número de segundos decorridos desde 00:00:00, 1º de janeiro de 1970. O formato desse valor é AAAAMMDDHHMMSS. mmmmmm sutc. Para obter informações sobre como converter essa propriedade em sua hora local, consulte [tarefas do WMI: datas e horas](../wmisdk/wmi-tasks--dates-and-times.md).
+O usuário logou pela última vez no sistema. Esse valor é calculado com base no número de segundos decorridos desde 00:00:00, 1º de janeiro de 1970. O formato desse valor é yyyymmddhhmmss.mmmmmm sutc. Para obter informações sobre como traduzir essa propriedade para a hora local, consulte [Tarefas WMI: datas e horas.](../wmisdk/wmi-tasks--dates-and-times.md)
 
-Exemplo: 19521201000230, 0 000
+Exemplo: 19521201000230.000000 000
 
 </dd> <dt>
 
@@ -566,10 +566,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](../wmisdk/standard-qualifiers.md) (147), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("win32api \| rede Management estruturas \| [**usuário \_ informações \_ 3**](/windows/win32/api/lmaccess/ns-lmaccess-user_info_3) \| usri3 \_ horário de logon \_ ")
+Qualificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (147), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Network Management Structures USER INFO \| [**\_ \_ 3**](/windows/win32/api/lmaccess/ns-lmaccess-user_info_3) \| usri3 \_ logon \_ hours")
 </dt> </dl>
 
-Vezes durante a semana em que o usuário pode fazer logon. Cada bit representa uma unidade de tempo especificada pela propriedade **UnitsPerWeek** . Por exemplo, se a unidade de tempo for por hora, o primeiro bit (bit 0, Word 0) é domingo, 0:00 a 0:59, o segundo bit (bit 1, Word 0) é domingo, 1:00 a 1:59 e assim por diante. Se esse membro for definido como **NULL**, não haverá restrição de tempo. A hora é definida como GMT e deve ser ajustada para outros fusos horários (por exemplo, GMT menos 8 horas para PST).
+Horários durante a semana em que o usuário pode fazer logoff. Cada bit representa uma unidade de tempo especificada pela **propriedade UnitsPerWeek.** Por exemplo, se a unidade de tempo for por hora, o primeiro bit (bit 0, palavra 0) será domingo, 0:00 a 0:59, o segundo bit (bit 1, palavra 0) é domingo, 1:00 a 1:59 e assim por diante. Se esse membro for definido como **NULL,** não haverá nenhuma restrição de tempo. A hora é definida como GMT e deve ser ajustada para outros fusos horários (por exemplo, GMT menos 8 horas para PST).
 
 </dd> <dt>
 
@@ -582,32 +582,32 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("win32api de \| Gerenciamento de rede do usuário de estruturas" \| [**\_ \_**](/windows/win32/api/lmaccess/ns-lmaccess-user_info_3) \| usri3 servidor de \_ logon \_ ")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Network Management Structures USER INFO \| [**\_ \_ 3**](/windows/win32/api/lmaccess/ns-lmaccess-user_info_3) \| usri3 \_ logon \_ server")
 </dt> </dl>
 
-Nome do servidor para o qual as solicitações de logon são enviadas. Os nomes de servidor devem ser precedidos por duas barras invertidas ( \\ \\ ). Um nome de servidor com um asterisco ( \\ \\ \* ) indica que a solicitação de logon pode ser tratada por qualquer servidor de logon. Uma cadeia de caracteres nula indica que as solicitações são enviadas para o controlador de domínio.
+Nome do servidor para o qual as solicitações de logon são enviadas. Os nomes de servidor devem ser precedido por duas malhas in-back ( \\ \\ ). Um nome de servidor com um asterisco ( ) indica que a solicitação de logon pode ser tratada \\ \\ \* por qualquer servidor de logon. Uma cadeia de caracteres nula indica que as solicitações são enviadas ao controlador de domínio.
 
-Exemplo: " \\ \\ meuservidor"
+Exemplo: \\ \\ "MyServer"
 
 </dd> <dt>
 
 **MaximumStorage**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("win32api \| Network Management estruturas \| [**user \_ info \_ 3**](/windows/win32/api/lmaccess/ns-lmaccess-user_info_3) \| usri3 \_ Max \_ Storage"), [**Units**](../wmisdk/standard-qualifiers.md) ("bytes")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Network Management Structures USER INFO \| [**\_ \_ 3**](/windows/win32/api/lmaccess/ns-lmaccess-user_info_3) \| usri3 \_ max \_ storage"), [**Units**](../wmisdk/standard-qualifiers.md) ("bytes")
 </dt> </dl>
 
-Quantidade máxima de espaço em disco disponível para o usuário. Se MaximumStorage for definido como USER \_ MAXSTORAGE \_ Unlimited, o usuário poderá usar todo o espaço em disco disponível.
+Quantidade máxima de espaço em disco disponível para o usuário. Se MaximumStorage estiver definido como USER MAXSTORAGE UNLIMITED, o usuário poderá usar todo \_ o espaço em disco \_ disponível.
 
-Exemplo: 10 milhões
+Exemplo: 10000000
 
-Para obter mais informações sobre como usar valores de **UInt64** em scripts, consulte [scripts no WMI](/previous-versions//aa393262(v=vs.85)).
+Para obter mais informações sobre como **usar valores uint64** em scripts, consulte [Scripts no WMI](/previous-versions//aa393262(v=vs.85)).
 
 </dd> <dt>
 
@@ -715,7 +715,7 @@ O identificador relativo (RID) do grupo global primário deste usuário. O ident
 
 </dd> <dt>
 
-**Direitos**
+**Privilégios**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **UInt32**
@@ -842,7 +842,7 @@ Descrição ou comentário definido pelo usuário para este perfil.
 
 </dd> <dt>
 
-**ID**
+**UserId**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **UInt32**
@@ -879,13 +879,13 @@ Os valores são:
 -   "Conta de confiança da estação de trabalho"
 -   "Conta de confiança do servidor"
 -   "Conta de confiança entre domínios"
--   Conhecidos
+-   "Desconhecido"
 
 <dt>
 
 <span id="Normal_Account"></span><span id="normal_account"></span><span id="NORMAL_ACCOUNT"></span>
 
-**Conta normal** ("conta normal")
+**Conta normal** ("Conta Normal")
 
 
 </dt> <dd></dd> <dt>
@@ -899,14 +899,14 @@ Os valores são:
 
 <span id="Workstation_Trust_Account"></span><span id="workstation_trust_account"></span><span id="WORKSTATION_TRUST_ACCOUNT"></span>
 
-**Conta de confiança da estação de trabalho** ("conta de confiança da estação de trabalho")
+**Conta de confiança da estação de trabalho** ("Conta de Confiança da Estação de Trabalho")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Server_Trust_Account"></span><span id="server_trust_account"></span><span id="SERVER_TRUST_ACCOUNT"></span>
 
-**Conta de confiança do servidor** ("conta de confiança do servidor")
+**Conta de Confiança do Servidor** ("Conta de Confiança do Servidor")
 
 
 </dt> <dd></dd> <dt>
@@ -920,7 +920,7 @@ Os valores são:
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconhecido** ("desconhecido")
+**Desconhecido** ("Desconhecido")
 
 
 </dt> <dd></dd> </dl>
@@ -936,22 +936,22 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("win32api \| Network Management estruturas \| [**user \_ info \_ 3**](/windows/win32/api/lmaccess/ns-lmaccess-user_info_3) \| usri3 \_ workstations")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Network Management Structures USER INFO \| [**\_ \_ 3**](/windows/win32/api/lmaccess/ns-lmaccess-user_info_3) \| usri3 \_ workstations")
 </dt> </dl>
 
-Nomes de estações de trabalho das quais o usuário pode fazer logon. Até oito estações de trabalho podem ser especificadas; os nomes devem ser separados por vírgulas (,). Uma cadeia de caracteres nula indica que não há restrições. Para desabilitar logons de todas as estações de trabalho para essa conta, defina a UF \_ ACCOUNTDISABLE na propriedade **flags** dessa classe.
+Nomes de estações de trabalho das quais o usuário pode fazer logoff. Até oito estações de trabalho podem ser especificadas; os nomes devem ser separados por vírgulas (,). Uma cadeia de caracteres nula não indica nenhuma restrição. Para desabilitar logons de todas as estações de trabalho para essa conta, de definido como UF ACCOUNTDISABLE na propriedade \_ **Flags** dessa classe.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-A classe **Win32 \_ NetworkLoginProfile** é derivada da [**\_ configuração de CIM**](cim-setting.md).
+A **classe \_ NetworkLoginProfile do Win32** é derivada da [**configuração cim \_**](cim-setting.md).
 
-O processo de chamada que usa essa classe deve ter o privilégio **se \_ Restore \_ Name** no computador em que o registro reside. Para obter mais informações, consulte [executando operações privilegiadas](../wmisdk/executing-privileged-operations.md).
+O processo de chamada que usa essa classe deve ter ES **\_ privilégio RESTORE \_ NAME** no computador no qual o Registro reside. Para obter mais informações, consulte [Executando operações privilegiadas.](../wmisdk/executing-privileged-operations.md)
 
 ## <a name="examples"></a>Exemplos
 
-A amostra do PowerShell [listar perfis de logon de rede](https://Gallery.TechNet.Microsoft.Com/4b84fb8a-964e-4811-98d2-de1009685a14) retorna informações de logon de rede para todos os usuários de um computador.
+O [exemplo Listar Perfis de Logon](https://Gallery.TechNet.Microsoft.Com/4b84fb8a-964e-4811-98d2-de1009685a14) de Rede do PowerShell retorna informações de logon de rede para todos os usuários de um computador.
 
 O exemplo de VBScript a seguir retorna informações de logon de rede.
 
@@ -1029,8 +1029,8 @@ End Function
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -1039,7 +1039,7 @@ End Function
 
 <dl> <dt>
 
-[**Configuração de CIM \_**](cim-setting.md)
+[**Configuração cim \_**](cim-setting.md)
 </dt> <dt>
 
 [Classes do sistema operacional](./operating-system-classes.md)

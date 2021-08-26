@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 24495c94cca0eb6b99bc209cad8f25fac8f66896
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 1c5d2f1a475800506dadc8929079ecb2549d59bfd838f340c56e5f763aa9af24
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104456940"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120002886"
 ---
 # <a name="uncompress-method-of-the-cim_datafile-class"></a>Descompactar o método da \_ classe de DataFile de arquivo CIM
 
@@ -45,7 +45,7 @@ uint32 Uncompress();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor de 0 (zero) em caso de êxito e qualquer outro número para indicar um erro. Para obter códigos de erro adicionais, consulte [**constantes de erro WMI**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obter valores gerais de **HRESULT** , consulte [códigos de erro do sistema](/windows/desktop/Debug/system-error-codes).
 
@@ -61,7 +61,7 @@ Retorna um valor de 0 (zero) em caso de êxito e qualquer outro número para ind
 **2**
 </dt> <dd>
 
-Acesso negado.
+Acesso negado
 
 </dd> <dt>
 

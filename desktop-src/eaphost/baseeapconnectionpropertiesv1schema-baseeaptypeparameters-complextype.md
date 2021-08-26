@@ -14,12 +14,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 86c47d5b3ee62f09b7a9f86223720c103df93df0
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: 413df28e1dcbbc6b557a73ca4496524490d6ccf05edc4d9ecc30935861d36771
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "104298894"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119978376"
 ---
 # <a name="baseeaptypeparameters-complex-type---connection-properties"></a>Tipo complexo BaseEapTypeParameters – Propriedades de conexão
 
@@ -41,8 +41,8 @@ O tipo complexo **BaseEapTypeParameters** é um elemento base do elemento espec�
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 

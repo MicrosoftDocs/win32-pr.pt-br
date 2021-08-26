@@ -6,12 +6,12 @@ keywords:
 - RPC de chamada de procedimento remoto, descrito, Enfileiramento de mensagens
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b72e9e35ec2aa1cc440c0d0356c681c4fe8548c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4c44296068087dc2fd4423dbb3294c3c7a417e8a983ec958c2ad765ff87ea81e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005932"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120018376"
 ---
 # <a name="rpc-message-queuing"></a>Enfileiramento de mensagens RPC
 
@@ -21,15 +21,15 @@ O MSMQ (enfileiramento de mensagens) permite que os usuários se comuniquem entr
 -   **Entrega de mensagem garantida.** Quando um aplicativo envia uma mensagem por meio do MSMQ, a mensagem atingirá seu destino, mesmo se o aplicativo de destino não estiver em execução ao mesmo tempo ou se as redes e os sistemas estiverem offline.
 -   **Roteamento e configuração dinâmica.** O MSMQ fornece roteamento flexível em redes heterogêneas. A configuração dessas redes pode ser alterada dinamicamente sem alterações importantes em sistemas e redes.
 -   **Mensagens sem conexão.** Os aplicativos que usam o MSMQ não precisam configurar sessões diretas com aplicativos de destino.
--   [Segurança](security.md). O MSMQ fornece comunicação segura com base na segurança do Windows e na CryptoAPI (API de criptografia) para criptografia e assinaturas digitais.
+-   [Segurança](security.md). o MSMQ fornece comunicação segura com base na segurança do Windows e na CryptoAPI (API de criptografia) para criptografia e assinaturas digitais.
 -   **Mensagens priorizadas.** O MSMQ transfere mensagens entre redes com base na prioridade, permitindo uma comunicação mais rápida para aplicativos críticos.
 
 O Microsoft RPC estende o modelo Open Software Foundation – equipamento de comunicações de dados (uso-DCE) para chamadas de procedimento remoto, permitindo que aplicativos distribuídos usem o MSMQ como um transporte e controlem muitos de seus recursos. Essa funcionalidade está disponível para aplicativos RPC convencionais e, por meio da interface **IRPCOptions** , para aplicativos com.
 
 > [!Note]  
-> O enfileiramento de mensagens RPC está disponível somente no Windows 2000. As versões posteriores do Windows não dão suporte ao enfileiramento de mensagens RPC.
+> o enfileiramento de mensagens RPC está disponível somente no Windows 2000. as versões posteriores do Windows não dão suporte ao enfileiramento de mensagens RPC.
 
- 
+ 
 
 Os tópicos a seguir fornecem uma visão geral do enfileiramento de mensagens:
 
@@ -40,9 +40,9 @@ Os tópicos a seguir fornecem uma visão geral do enfileiramento de mensagens:
 -   [Desenvolvendo aplicativos de enfileiramento RPC-Message](developing-rpc-message-queuing-applications.md)
 -   [Serviços de segurança MSMQ](msmq-security-services.md)
 
- 
+ 
 
- 
+ 
 
 
 

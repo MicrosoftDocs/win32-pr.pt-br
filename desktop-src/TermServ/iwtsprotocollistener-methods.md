@@ -5,16 +5,16 @@ ms.assetid: 6484F59E-20F5-4C6A-914F-A970B32368D1
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c8a973129784ecb9d0290090fecd9a0e1ff419d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7f37454d889b0a2fe7004c59c2d308b3cefd60009db28a880320cf3c8fe5683e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103635798"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119989346"
 ---
 # <a name="iwtsprotocollistener-methods"></a>Métodos IWTSProtocolListener
 
-\[O IWTSProtocolListener não está mais disponível para uso a partir do Windows Server 2012.\]
+\[O IWTSProtocolListener não está mais disponível para uso a partir de Windows Server 2012.\]
 
 A interface [**IWTSProtocolListener**](/windows/desktop/api/wtsprotocol/nn-wtsprotocol-iwtsprotocollistener) expõe os métodos a seguir.
 
@@ -23,9 +23,9 @@ A interface [**IWTSProtocolListener**](/windows/desktop/api/wtsprotocol/nn-wtspr
 -   [**Método StartListen**](/windows/desktop/api/Wtsprotocol/nf-wtsprotocol-iwtsprotocollistener-startlisten)
 -   [**Método StopListen**](/windows/desktop/api/Wtsprotocol/nf-wtsprotocol-iwtsprotocollistener-stoplisten)
 
- 
+ 
 
- 
+ 
 
 
 

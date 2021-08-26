@@ -2,7 +2,7 @@
 description: Permite que o nome do grupo seja alterado.
 ms.assetid: 7eb1360e-7416-4a90-abc6-c9a85a114316
 ms.tgt_platform: multiple
-title: Método Rename da classe Win32_Group
+title: Renomear o método da Win32_Group classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: c111a0c12d0fdc1ce3f6d6bcaa0e7b0f57831054
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: cff8f587426b45133716e308ea40785602fea2d5b5d30a99645bfd0c6cc5c4e1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105755840"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120003016"
 ---
-# <a name="rename-method-of-the-win32_group-class"></a>Método Rename da classe de \_ grupo Win32
+# <a name="rename-method-of-the-win32_group-class"></a>Renomear o método da classe De grupo \_ Win32
 
-O método **Rename** da [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) permite que o nome do grupo seja alterado.
+O **método de classe** [WMI Renomear](/windows/desktop/WmiSdk/retrieving-a-class) permite que o nome do grupo seja alterado.
 
-Este tópico usa a sintaxe formato MOF (MOF). Para obter mais informações sobre como usar esse método, consulte [chamando um método](/windows/desktop/WmiSdk/calling-a-method).
+Este tópico usa sintaxe Managed Object Format (MOF). Para obter mais informações sobre como usar esse método, consulte [Chamando um método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,16 +42,16 @@ uint32 Rename(
 
 <dl> <dt>
 
-*Nome* \[ do no\]
+*Nome* \[ Em\]
 </dt> <dd>
 
-Nome da conta de usuário do Windows no domínio especificado pela propriedade de **domínio** dessa classe.
+Nome da Windows de usuário no domínio especificado pela **propriedade Domain** dessa classe.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O método **Rename** pode retornar os códigos de erro listados na lista a seguir. Para valores inteiros diferentes daqueles listados, consulte códigos de [ \_ retorno do WMI](/windows/desktop/WmiSdk/wmi-return-codes).
+O **método Renomear** pode retornar os códigos de erro listados na lista a seguir. Para valores inteiros diferentes daqueles listados, consulte [Códigos de \_ retorno WMI](/windows/desktop/WmiSdk/wmi-return-codes).
 
 <dl> <dt>
 
@@ -135,8 +135,8 @@ Sucesso.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -148,10 +148,10 @@ Sucesso.
 [Classes do sistema operacional](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_Grupo Win32**](win32-group.md)
+[**Grupo \_ Win32**](win32-group.md)
 </dt> <dt>
 
-[**\_LogicalFileSecuritySetting Win32**](/previous-versions/windows/desktop/secrcw32prov/win32-logicalfilesecuritysetting)
+[**Win32 \_ LogicalFileSecuritySetting**](/previous-versions/windows/desktop/secrcw32prov/win32-logicalfilesecuritysetting)
 </dt> </dl>
 
  

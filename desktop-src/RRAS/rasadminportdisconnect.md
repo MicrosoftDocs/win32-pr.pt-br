@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ee05e7927bd6c9adb086a09f76b9022affd74792
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 369a0f3abf4cee54f92c9bfd846557623de5e23fffd4724a701ca7c04aa818af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759176"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120028516"
 ---
 # <a name="rasadminportdisconnect-function"></a>Função RasAdminPortDisconnect
 
-\[Essa função é fornecida somente para compatibilidade com versões anteriores do Windows NT Server 4,0. Ele retorna uma \_ chamada \_ de erro não \_ implementada no Windows Server 2003. Os aplicativos devem usar a função [**MprAdminPortDisconnect**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminportdisconnect) .\]
+\[essa função é fornecida somente para compatibilidade com versões anteriores com o Windows NT Server 4,0. ele retorna uma \_ chamada \_ de erro não \_ implementada no Windows Server 2003. Os aplicativos devem usar a função [**MprAdminPortDisconnect**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminportdisconnect) .\]
 
 A função **RasAdminPortDisconnect** desconecta uma porta que está em uso no momento.
 
@@ -46,7 +46,7 @@ DWORD RasAdminPortDisconnect(
 *lpszServer* \[ no\]
 </dt> <dd>
 
-Ponteiro para uma cadeia de caracteres Unicode terminada em nulo que especifica o nome do servidor RAS do Windows NT/Windows 2000. Especifique o nome com " \\ \\ " caracteres à esquerda, no formato: \\ \\ *ServerName*.
+ponteiro para uma cadeia de caracteres Unicode terminada em nulo que especifica o nome do servidor RAS Windows NT/Windows 2000. Especifique o nome com " \\ \\ " caracteres à esquerda, no formato: \\ \\ *ServerName*.
 
 </dd> <dt>
 
@@ -57,7 +57,7 @@ Ponteiro para uma cadeia de caracteres Unicode terminada em nulo que especifica 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for bem-sucedida, o valor de retorno será \_ êxito no erro.
 
@@ -84,7 +84,7 @@ Não há informações de erro estendidas para esta função; Não chame [**GetL
 |----------------------------------|----------------------------------------------------------------------------------------|
 | Fim do suporte do cliente<br/> | Windows 2000 Professional<br/>                                                   |
 | Fim do suporte do servidor<br/> | Windows 2000 Server<br/>                                                         |
-| parâmetro<br/>                | <dl> <dt>Rassapi. h</dt> </dl>   |
+| Cabeçalho<br/>                | <dl> <dt>Rassapi. h</dt> </dl>   |
 | Biblioteca<br/>               | <dl> <dt>Rassapi. lib</dt> </dl> |
 | DLL<br/>                   | <dl> <dt>Rassapi.dll</dt> </dl> |
 

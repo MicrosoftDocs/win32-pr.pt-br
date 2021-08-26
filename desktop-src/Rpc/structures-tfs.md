@@ -4,12 +4,12 @@ description: Descrição de vários tipos de estruturas na RPC (chamada de proce
 ms.assetid: edaf547d-d3d1-443c-93dd-8e036bc42944
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e4ccae91f703badd2e0153dfc3d8acff1ace562f
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 1783508a834ce2fa3d93d3db04edc1de362d6f888c29511c1eb6852cce0e83ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104007893"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120017406"
 ---
 # <a name="structures-rpc"></a>Estruturas (RPC)
 
@@ -27,7 +27,7 @@ Há várias categorias de estruturas, progressivamente mais complicadas em termo
 > [!Note]  
 > Quando comparada às categorias de matriz, fica claro que apenas estruturas de até 64K podem ser descritas (o tamanho é para a parte plana da estrutura), ou seja, não há equivalente a matrizes SM e LG.
 
- 
+ 
 
 **Membros comuns a estruturas**
 
@@ -175,7 +175,7 @@ O \_ layout do ponteiro<> campo de uma estrutura complexa é tratado de maneira 
 > [!Note]  
 > Isso é diferente de outras estruturas, que duplicam a descrição de quaisquer ponteiros contidos em matrizes ou estruturas inseridas em seu próprio layout de ponteiro \_<> campo também.
 
- 
+ 
 
 O formato de um layout de ponteiro de estrutura complexa também é radicalmente diferente. Como ele contém apenas descrições de membros reais de ponteiro e porque uma estrutura complexa é empacotada e não empacotada um campo por vez, o layout do ponteiro \_<> campo simplesmente contém a descrição do ponteiro de todos os membros do ponteiro. Não há um FC \_ PP inicial e nenhum dos layouts de ponteiro usuais \_<> informações.
 
@@ -188,7 +188,7 @@ A descrição do layout de uma estrutura contém um ou mais dos seguintes caract
     > [!Note]  
     > Também há tokens de alinhamento de buffer, FC \_ ALIGNB2 por meio de \_ ALIGNM8 FC; eles não são usados.
 
-     
+     
 
 -   Enchimento da memória. Elas ocorrem apenas no final da descrição de uma estrutura e denotam o número de bytes de preenchimento na memória antes da matriz em conformidade na estrutura: FC \_ STRUCTPADn, em que n é o número de bytes de preenchimento.
 -   Qualquer tipo não base inserido (Observe, no entanto, que uma matriz em conformidade nunca ocorre no layout da estrutura). Isso tem uma descrição de 4 bytes:
@@ -206,6 +206,6 @@ A descrição do layout de uma estrutura contém um ou mais dos seguintes caract
 
 Também pode haver um pad FC \_ antes do final do FC de terminação \_ , se necessário, para garantir que a cadeia de caracteres de formato seja alinhada a um limite de 2 bytes após a extremidade do FC \_ .
 
- 
+ 
 
- 
+ 

@@ -1,19 +1,19 @@
 ---
 title: Simplificando a instalação do jogo
-description: Este artigo descreve alguns conceitos que os desenvolvedores de jogos para Windows podem e devem implementar para melhorar a experiência geral.
+description: este artigo descreve alguns conceitos que os desenvolvedores de jogos para Windows podem e devem implementar para melhorar a experiência geral.
 ms.assetid: 356780b7-801d-c6dd-a266-6272bcb8bd36
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8728eb2c9c53a99673ee742a5c961b91e37abed6
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 53062b9905e59435f1b9175eb95832294d93e51193003622d3bcc6dd16ee07df
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104294299"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120042456"
 ---
 # <a name="simplifying-game-installation"></a>Simplificando a instalação do jogo
 
-Uma grande vantagem dos jogos que são executados em um console em vez de no Windows é o processo de instalação — ou a falta deles. Quando um jogo é executado pela primeira vez em um console, o jogador faz algumas opções ou confirmações e é capaz de começar a jogar quase imediatamente. A instalação de um jogo no Windows é mais complicada, por comparação, por sua necessidade de entrada substancial do usuário e de seu processo de instalação potencialmente longo. No entanto, esse processo de instalação pode ser melhorado para fornecer uma melhor experiência para os jogadores de jogos baseados no Windows. Este artigo descreve alguns conceitos que os desenvolvedores de jogos para Windows podem e devem implementar para melhorar a experiência geral.
+uma grande vantagem dos jogos que são executados em um console em vez de em Windows é o processo de instalação — ou a falta deles. Quando um jogo é executado pela primeira vez em um console, o jogador faz algumas opções ou confirmações e é capaz de começar a jogar quase imediatamente. a instalação de um jogo em Windows é mais complicada, por comparação, por sua necessidade de entrada substancial do usuário e seu processo de instalação potencialmente longo. no entanto, esse processo de instalação pode ser melhorado para fornecer uma melhor experiência para os jogadores de jogos baseados em Windows. este artigo descreve alguns conceitos que os desenvolvedores de jogos para Windows podem e devem implementar para melhorar a experiência geral.
 
 -   [Instalação típica do jogo](#typical-game-installation)
 -   [Instalação simplificada de jogos](#simplified-game-installation)
@@ -25,22 +25,22 @@ Uma grande vantagem dos jogos que são executados em um console em vez de no Win
     -   [Pense em seu EULA](#think-about-your-eula)
     -   [Iniciar automaticamente após a instalação](#automatically-launch-after-installation)
     -   [Otimizar o desempenho da instalação](#optimize-your-installation-performance)
-    -   [Registrar-se no firewall do Windows durante a instalação](#register-with-windows-firewall-during-installation)
+    -   [registrar-se no Firewall do Windows durante a instalação](#register-with-windows-firewall-during-installation)
     -   [Instalar para todos os usuários, não apenas o usuário atual](#install-for-all-users-not-just-the-current-user)
 -   [Exemplo de instalação simplificada](#example-of-simplified-installation)
 -   [Resumo](#summary)
 
 ## <a name="typical-game-installation"></a>Instalação típica do jogo
 
-Ao comparar a facilidade de instalação e a quantidade de tempo necessária para começar a jogar um jogo, a experiência típica do Xbox é muito melhor do que o Windows. O fluxograma da Figura 1 mostra os processos de instalação típicos no Xbox e no Windows, para comparação.
+Ao comparar a facilidade de instalação e a quantidade de tempo necessária para começar a jogar um jogo, a experiência típica do Xbox é muito melhor do que a Windows. o fluxograma na figura 1 mostra os processos de instalação típicos no Xbox e no Windows, para comparação.
 
-**Figura 1. Processo típico de instalação, Xbox versus Windows**
+**Figura 1. Processo de instalação típico, Xbox versus Windows**
 
 ![Xbox \- vs \- PC](images/pcvsconsoleinstall.png)
 
 ## <a name="simplified-game-installation"></a>Instalação simplificada de jogos
 
-No entanto, os requisitos maiores colocados no usuário para instalar um jogo no Windows não precisam ser. Ao implementar os conceitos a seguir, você diminuirá o número de etapas que um usuário deve concluir, o que pode reduzir a quantidade de tempo necessária para a instalação.
+no entanto, os requisitos maiores colocados no usuário para instalar um jogo em Windows não precisam ser. Ao implementar os conceitos a seguir, você diminuirá o número de etapas que um usuário deve concluir, o que pode reduzir a quantidade de tempo necessária para a instalação.
 
 ### <a name="ask-all-questions-up-front"></a>Faça todas as perguntas com antecedência
 
@@ -50,7 +50,7 @@ Você também pode solicitar que o usuário aceite o EULA e insira a chave do pr
 
 ### <a name="provide-special-installation-modes"></a>Fornecer modos de instalação especiais
 
-O ideal é que os instaladores de jogos do Windows só ofereçam modos de instalação totalmente automáticos e personalizados, e nada entre eles.
+o ideal é que Windows instaladores de jogos só ofereçam modos de instalação totalmente automáticos e personalizados e nada entre eles.
 
 O modo automático não deve fazer mais perguntas do que absolutamente necessário para criar uma instalação em funcionamento e simplesmente usar as configurações padrão sem solicitar outras opções. Muitos jogos não se preocupam com o local do jogo no disco rígido ou com as configurações iniciais do jogo – eles apenas querem jogar o jogo assim que possível.
 
@@ -94,11 +94,11 @@ Quase todos os jogadores querem jogar um jogo assim que receberem. Por padrão, 
 
 Os desenvolvedores devem testar suas instalações para determinar a quantidade de tempo necessária para a instalação. Os desenvolvedores podem reduzir o tempo de instalação usando a versão mais recente de suas ferramentas de instalação e otimizando o layout de dados na mídia de instalação. A maioria das ferramentas de criação de DVD tem opções de otimização de layout que podem melhorar os tempos de instalação sem aumentar a carga de trabalho de desenvolvimento.
 
-### <a name="register-with-windows-firewall-during-installation"></a>Registrar-se no firewall do Windows durante a instalação
+### <a name="register-with-windows-firewall-during-installation"></a>registrar-se no Firewall do Windows durante a instalação
 
-Se o seu jogo puder ser executado como um servidor ou se o modelo de rede de jogos for ponto a ponto, Registre seu jogo com o Firewall do Windows no momento da instalação. Isso impedirá que a caixa de diálogo do firewall apareça no meio do jogo quando o usuário tentar acessar a rede. Se o jogo for um cliente puro, o instalador não deverá adicionar o jogo à lista de exceções do firewall.
+se o seu jogo puder ser executado como um servidor ou se o modelo de rede de jogos for ponto a ponto, registre seu jogo com Windows firewall no momento da instalação. Isso impedirá que a caixa de diálogo do firewall apareça no meio do jogo quando o usuário tentar acessar a rede. Se o jogo for um cliente puro, o instalador não deverá adicionar o jogo à lista de exceções do firewall.
 
-Para obter mais informações, consulte Firewall do Windows para desenvolvedores de jogos.
+para obter mais informações, consulte Windows Firewall para desenvolvedores de jogos.
 
 ### <a name="install-for-all-users-not-just-the-current-user"></a>Instalar para todos os usuários, não apenas o usuário atual
 
@@ -106,29 +106,29 @@ Basta, por padrão, instalar o jogo para todos os usuários. Isso permitirá que
 
 ## <a name="example-of-simplified-installation"></a>Exemplo de instalação simplificada
 
-A Figura 2 a seguir é um exemplo de um processo aprimorado para a instalação de um jogo no Windows, com caixas de diálogo de instalação simplificadas.
+A seguir, a Figura 2 é um exemplo de um processo aprimorado para instalar um jogo no Windows, com diálogos de instalação simplificados.
 
 **Figura 2. Processo de instalação simplificado**
 
 ![instalar](images/simplifiedgameinstall.png)
 
-Estes são pontos importantes de observação:
+Veja a seguir pontos importantes de observação:
 
--   O instalador é iniciado automaticamente após a inserção do disco de instalação (execução automática).
--   A tela inicial — com opções para instalar, remover, exibir o site ou sair — não será exibida se o jogo ainda não estiver instalado no computador.
--   A caixa de diálogo de **instalação** é a primeira caixa de diálogo mostrada pelo instalador.
--   O botão **instalar** é a implementação do modo de instalação automática.
--   O botão **Opções** é a implementação do modo de instalação personalizada.
--   O botão **Cancelar** fechará imediatamente o instalador. Como iniciar o instalador é uma ação trivial para o usuário, não solicite a confirmação.
--   Depois que o usuário aceitar o EULA e inserir uma chave do produto válida, a instalação será iniciada.
--   Quando o processo de instalação for concluído, o jogo será iniciado automaticamente ou exibirá uma caixa de diálogo que alertará o usuário de que a instalação foi concluída e oferecerá opções adicionais, com base no fato de **executar o jogo após a instalação** ter sido selecionada.
--   A caixa de seleção **executar jogo** fornece outra chance de iniciar o jogo, por conveniência. Essa opção sempre é desmarcada por padrão, pois a caixa de diálogo **instalação concluída** só poderá ser exibida se a opção **executar jogo após a instalação** não tiver sido selecionada na caixa de diálogo **Opções de instalação** .
--   O botão **OK** descarta a caixa de diálogo, opcionalmente executando a ação na **execução** e **exibe as caixas de seleção do Leiame** .
+-   O instalador é automaticamente lançado após a inserção do disco de instalação (executar automaticamente).
+-   A tela inicial , com opções para instalar, remover, exibir o site ou sair, não será mostrada se o jogo ainda não estiver instalado no computador.
+-   A **caixa de** diálogo Instalação é a primeira caixa de diálogo mostrada pelo instalador.
+-   O **botão** Instalar é a implementação do modo de instalação automática.
+-   O **botão** Opções é a implementação do modo de instalação personalizado.
+-   O **botão** Cancelar sairá imediatamente do instalador. Como iniciar o instalador é uma ação trivial para o usuário, não solicitar confirmação.
+-   Depois que o usuário aceitar o EULA e inserir uma chave do produto (Product Key) válida, a instalação será iniciada.
+-   Quando o processo de instalação for concluído, o jogo será lançado automaticamente ou exibirá uma caixa  de diálogo que alerta o usuário de que a instalação foi concluída e oferecerá opções adicionais, com base em se Executar jogo após a instalação foi selecionado.
+-   A **caixa de seleção** Executar jogo oferece outra chance de iniciar o jogo, para sua conveniência. Essa opção sempre é deseleitada por padrão,  pois a caixa de diálogo Instalação Concluída só poderá ser mostrada se Executar jogo após a instalação ter sido deseleitada na caixa de diálogo **Opções de** Instalação. 
+-   O **botão OK** descarta a caixa de  diálogo, opcionalmente, em ação nas caixas de seleção Executar e Exibir o **Leiame.**
 
 ## <a name="summary"></a>Resumo
 
-Os jogadores desejam jogar um jogo o mais rápido possível. A última coisa que um jogador deseja fazer é vagar por meio de caixas de diálogo e fazer escolhas que são as mesmas para todos os outros jogos que ele instalou. Implementar essas ideias pode reduzir a quantidade de tempo que um jogador gasta instalando um jogo no Windows e ajuda a melhorar a qualidade geral da experiência de jogos do Windows.
+Os jogadores querem jogar um jogo assim que possível. A última coisa que um jogador deseja fazer é passar pelas caixas de diálogo e fazer escolhas que sejam as mesmas para todos os outros jogos que ele instalou. Implementar essas ideias pode reduzir a quantidade de tempo que um jogador gasta instalando um jogo no Windows e ajudar a melhorar a qualidade geral da experiência de Windows jogos.
 
- 
+ 
 
- 
+ 

@@ -4,12 +4,12 @@ ms.assetid: f2313ffd-867f-4870-a667-3e5f5402776f
 title: Mensagem de WM_MDICREATE (WinUser. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1fc11e9dfc561b138a95b711d68ecd831a43d2ec
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c69a894ebd2e55bb74486e26cd118366b1e533a490cc50feb5f77aad64c6be3f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105793697"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120056006"
 ---
 # <a name="wm_mdicreate-message"></a>Mensagem do WM \_ MDICREATE
 
@@ -40,9 +40,9 @@ Um ponteiro para uma estrutura [**MDICREATESTRUCT**](/windows/win32/api/winuser/
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Tipo: **HWND**
+Digite: **HWND**
 
 Se a mensagem tiver sucesso, o valor de retorno será o identificador para a nova janela filho.
 
@@ -66,7 +66,7 @@ Um aplicativo não deve enviar uma segunda mensagem do **WM \_ MDICREATE** enqua
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

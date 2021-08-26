@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 899f35db6d826997047b0d8cf878e41794606baf
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 79f99191035925756876fbf3e25d8220a34f8eaf9b50bc069f86d08af9047071
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752792"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120002756"
 ---
 # <a name="releasedateyearmonth-attribute"></a>Atributo ReleaseDateYearMonth
 
-O atributo **ReleaseDateYearMonth** é a parte do ano e do mês da data da versão original do item.
+O **atributo ReleaseDateYearMonth** é a parte do ano e do mês da data da versão original do item.
 
 ## <a name="applies-to"></a>Aplica-se A
 
@@ -33,7 +33,7 @@ O atributo **ReleaseDateYearMonth** é a parte do ano e do mês da data da vers�
 
 Esse atributo é armazenado somente no banco de dados de biblioteca (ou cache).
 
-Para determinar se você pode alterar o valor desse atributo, use o método [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar se você pode alterar o valor desse atributo, use o [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 

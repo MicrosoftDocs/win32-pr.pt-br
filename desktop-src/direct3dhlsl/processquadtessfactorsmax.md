@@ -1,9 +1,9 @@
 ---
 title: Função ProcessQuadTessFactorsMax
-description: Gera os fatores de mosaico corrigidos para um patch quádruplo. | Função ProcessQuadTessFactorsMax
+description: Gera os fatores de mosaico corrigidos para um patch quad. | Função ProcessQuadTessFactorsMax
 ms.assetid: a0c91430-db25-49c9-bcc8-d2be1d0e6f6c
 keywords:
-- HLSL da função ProcessQuadTessFactorsMax
+- Função ProcessQuadTessFactorsMax HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 62219301e93bebf7825328fd381b5d2fbb607925
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 58cfa3f9e6dd69210da18d672acd2b56ad73e34be9cf2c5d8b179181e636050f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104968463"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120067776"
 ---
 # <a name="processquadtessfactorsmax-function"></a>Função ProcessQuadTessFactorsMax
 
-Gera os fatores de mosaico corrigidos para um patch quádruplo.
+Gera os fatores de mosaico corrigidos para um patch quad.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,48 +40,48 @@ void ProcessQuadTessFactorsMax(
 
 <dl> <dt>
 
-*RawEdgeFactors* \[ no\]
+*RawEdgeFactors* \[ Em\]
 </dt> <dd>
 
-Tipo: **FLOAT4**
+Tipo: **float4**
 
-Os fatores de mosaico de borda, passados para o estágio Tessellator.
+Os fatores de mosaico de borda, passados para o estágio do mosaico.
 
 </dd> <dt>
 
-*InsideScale* \[ no\]
+*InsideScale* \[ Em\]
 </dt> <dd>
 
 Tipo: **float**
 
-O fator de escala aplicado aos fatores de mosaico UV calculados pelo estágio de mosaico. O intervalo permitido para InsideScale é de 0,0 a 1,0.
+O fator de escala aplicado aos fatores de mosaico UV calculados pelo estágio de mosaico. O intervalo acessível para InsideScale é de 0,0 a 1,0.
 
 </dd> <dt>
 
-*RoundedEdgeTessFactors* \[ fora\]
+*RoundedEdgeTessFactors* \[ out\]
 </dt> <dd>
 
-Tipo: **FLOAT4**
+Tipo: **float4**
 
-Os fatores de borda arredondada-mosaico calculados pelo estágio Tessellator.
-
-</dd> <dt>
-
-*RoundedInsideTessFactors* \[ fora\]
-</dt> <dd>
-
-Tipo: **float2**
-
-Os fatores de mosaico arredondados calculados pelo estágio Tessellator para bordas internas.
+Os fatores arredondados de mosaico de borda calculados pelo estágio do mosaico.
 
 </dd> <dt>
 
-*UnroundedInsideTessFactors* \[ fora\]
+*RoundedInsideTessFactors* \[ out\]
 </dt> <dd>
 
 Tipo: **float2**
 
-Os fatores de mosaico calculados pelo estágio Tessellator para bordas internas.
+Os fatores de mosaico arredondados calculados pelo estágio do mosaico para dentro das bordas.
+
+</dd> <dt>
+
+*UnroundedInsideTessFactors* \[ out\]
+</dt> <dd>
+
+Tipo: **float2**
+
+Os fatores de mosaico calculados pelo estágio do mosaico para bordas internas.
 
 </dd> </dl>
 
@@ -91,17 +91,17 @@ Essa função não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Gera os fatores de mosaico corrigidos para um patch quádruplo, computando os fatores de mosaico internos como o máximo dos fatores de mosaico de borda. Os fatores de Tess internos serão valores idênticos determinados pelo máximo de todas as quatro bordas dimensionadas pelo InsideScale. O resultado é arredondado com base no modo de particionamento, mas os resultados não arredondados estão disponíveis usando o parâmetro *UnroundedInsideTessFactors* .
+Gera os fatores de mosaico corrigidos para um patch quad, computando os fatores de mosaico interno como o máximo dos fatores de mosaico de borda. Os fatores dentro do Tess serão valores idênticos determinados pelo máximo de todas as quatro bordas dimensionadas por InsideScale. O resultado é arredondado com base no modo de particionamento, mas os resultados não encontrados estão disponíveis usando o parâmetro *UnroundedInsideTessFactors.*
 
-### <a name="minimum-shader-model"></a>Modelo de sombreamento mínimo
+### <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
 
-Essa função tem suporte nos seguintes modelos de sombreador.
+Essa função tem suporte nos modelos de sombreador a seguir.
 
 
 
 | Modelo de Sombreador                                                                | Com suporte |
 |-----------------------------------------------------------------------------|-----------|
-| [Modelo](d3d11-graphics-reference-sm5.md) de sombreador 5 e modelos de sombreador mais altos | sim       |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md) e modelos de sombreador superior | sim       |
 
 
 
@@ -111,7 +111,7 @@ Essa função tem suporte nos seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 |        | x    |        |          |       |         |
 

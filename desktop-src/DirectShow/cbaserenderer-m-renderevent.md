@@ -1,7 +1,7 @@
 ---
 description: Evento usado para agendar a renderização.
 ms.assetid: c1fe0d3b-b9b1-48d1-bc54-6d2e9f03e4cd
-title: 'Membro CBaseRenderer:: m_RenderEvent (Renbase. h)'
+title: Membro CBaseRenderer::m_RenderEvent (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 55e341bde6653c05277f01ae6c7df81a62282132
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: be688003009d99919495702883cbe7d87501d08fc28b4b60fbf5f502ba00083b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105753177"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120043746"
 ---
-# <a name="cbaserendererm_renderevent-member"></a>Membro de CBaseRenderer:: m \_ RenderEvent
+# <a name="cbaserendererm_renderevent-member"></a>Membro CBaseRenderer::m \_ RenderEvent
 
 Evento usado para agendar a renderização.
 
@@ -42,8 +42,8 @@ CAMEvent m_RenderEvent;
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Renbase. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Renbase.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

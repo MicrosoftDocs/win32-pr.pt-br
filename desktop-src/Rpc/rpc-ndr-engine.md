@@ -4,12 +4,12 @@ description: O mecanismo de representação de dados de rede (NDR) da chamada de
 ms.assetid: E452AA27-053D-4032-868B-CF2D5C0D4BE0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5bf7ba92a74d2d7dc8c394c561f65337db13af99
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: a0dd01ae40562528ac89c8b9dcfb0b9009ead5ca1a92b2cde90c3274d574fc1a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104008724"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120018416"
 ---
 # <a name="rpc-ndr-engine-rpc"></a>Mecanismo de NDR de RPC (RPC)
 

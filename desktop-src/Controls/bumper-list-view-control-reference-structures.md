@@ -4,34 +4,34 @@ description: Estruturas de exibição de lista
 ms.assetid: 12d77514-7281-4873-b456-252ff80ed7f0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b603e9acd65448b3c4970aa9552f4d2b91ebccd
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: b5898a1dc098b5b173ff8c3cbea2c9ab684d7d147e5523601e694baf57c364a6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103663894"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119971282"
 ---
 # <a name="list-view-structures"></a>Estruturas de exibição de lista
 
 ## <a name="in-this-section"></a>Nesta seção
 
--   [**LVBKIMAGE**](/windows/win32/api/commctrl/ns-commctrl-lvbkimagea)
--   [**LVCOLUMN**](/windows/win32/api/commctrl/ns-commctrl-lvcolumna)
--   [**LVFINDINFO**](/windows/win32/api/commctrl/ns-commctrl-lvfindinfoa)
+-   [**Lvbkimage**](/windows/win32/api/commctrl/ns-commctrl-lvbkimagea)
+-   [**Lvcolumn**](/windows/win32/api/commctrl/ns-commctrl-lvcolumna)
+-   [**Lvfindinfo**](/windows/win32/api/commctrl/ns-commctrl-lvfindinfoa)
 -   [**LVFOOTERINFO**](/windows/win32/api/commctrl/ns-commctrl-lvfooterinfo)
 -   [**LVFOOTERITEM**](/windows/win32/api/commctrl/ns-commctrl-lvfooteritem)
--   [**LVGROUP**](/windows/win32/api/commctrl/ns-commctrl-lvgroup)
--   [**LVGROUPMETRICS**](/windows/win32/api/commctrl/ns-commctrl-lvgroupmetrics)
--   [**LVHITTESTINFO**](/windows/win32/api/commctrl/ns-commctrl-lvhittestinfo)
+-   [**Lvgroup**](/windows/win32/api/commctrl/ns-commctrl-lvgroup)
+-   [**Lvgroupmetrics**](/windows/win32/api/commctrl/ns-commctrl-lvgroupmetrics)
+-   [**Lvhittestinfo**](/windows/win32/api/commctrl/ns-commctrl-lvhittestinfo)
 -   [**LVINSERTGROUPSORTED**](/windows/win32/api/commctrl/ns-commctrl-lvinsertgroupsorted)
 -   [**LVINSERTMARK**](/windows/desktop/api/Commctrl/ns-commctrl-lvinsertmark)
--   [**LVITEM**](/windows/win32/api/commctrl/ns-commctrl-lvitema)
--   [**LVITEMINDEX**](/windows/win32/api/commctrl/ns-commctrl-lvitemindex)
+-   [**Lvitem**](/windows/win32/api/commctrl/ns-commctrl-lvitema)
+-   [**Lvitemindex**](/windows/win32/api/commctrl/ns-commctrl-lvitemindex)
 -   [**LVSETINFOTIP**](/windows/win32/api/commctrl/ns-commctrl-lvsetinfotip)
 -   [**LVTILEINFO**](/windows/win32/api/commctrl/ns-commctrl-lvtileinfo)
 -   [**LVTILEVIEWINFO**](/windows/win32/api/commctrl/ns-commctrl-lvtileviewinfo)
 -   [**NMITEMACTIVATE**](/windows/win32/api/commctrl/ns-commctrl-nmitemactivate)
--   [**NMLISTVEIW**](/windows/win32/api/commctrl/ns-commctrl-nmlistview)
+-   [**Nmlistview**](/windows/win32/api/commctrl/ns-commctrl-nmlistview)
 -   [**NMLVCACHEHINT**](/windows/win32/api/commctrl/ns-commctrl-nmlvcachehint)
 -   [**NMLVCUSTOMDRAW**](/windows/win32/api/commctrl/ns-commctrl-nmlvcustomdraw)
 -   [**NMLVDISPINFO**](/windows/win32/api/commctrl/ns-commctrl-nmlvdispinfoa)

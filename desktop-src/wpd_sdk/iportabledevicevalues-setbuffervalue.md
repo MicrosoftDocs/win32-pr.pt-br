@@ -1,7 +1,7 @@
 ---
-description: O método setbuffervalue adiciona um novo valor de BYTE \* (tipo VT \_ vector \| VT \_ UI1) ou substitui um existente.
+description: O método SetBufferValue adiciona um novo valor BYTE \* (tipo VT \_ VECTOR \| VT UI1) ou substitui \_ um existente.
 ms.assetid: 6c421240-2ff8-4862-bd90-1feee5d15a8d
-title: 'Método IPortableDeviceValues:: setbuffervalue (PortableDeviceTypes. h)'
+title: Método IPortableDeviceValues::SetBufferValue (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: e04b41fdd397d8d03e7e0576d2ba8fb3b6ad1401
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 25a087c6f2d1e254e225f82ef794915898fbc20c7203fe20315d51f78e9770f8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749343"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120055096"
 ---
-# <a name="iportabledevicevaluessetbuffervalue-method"></a>Método IPortableDeviceValues:: setbuffervalue
+# <a name="iportabledevicevaluessetbuffervalue-method"></a>Método IPortableDeviceValues::SetBufferValue
 
-O método **Setbuffervalue** adiciona um novo valor de **byte** \* (tipo VT \_ vector \| VT \_ UI1) ou substitui um existente.
+O **método SetBufferValue** adiciona um novo valor **BYTE** \* (tipo VT VECTOR \_ \| VT UI1) ou substitui \_ um existente.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,30 +42,30 @@ HRESULT SetBufferValue(
 
 <dl> <dt>
 
-*chave* \[ no\]
+*chave* \[ Em\]
 </dt> <dd>
 
-Um **REFPROPERTYKEY** que especifica o item a ser criado ou substituído.
+Uma **REFPROPERTYKEY** que especifica o item a ser criado ou substituido.
 
 </dd> <dt>
 
-*valores* \[ no\]
+*pValue* \[ Em\]
 </dt> <dd>
 
-Um **byte \*** que contém os dados a serem gravados no item. Os dados de buffer enviados são copiados para a interface, para que o chamador possa liberar esse buffer depois de fazer essa chamada.
+Um **BYTE \*** que contém os dados a gravar no item. Os dados de buffer enviados são copiados para a interface, para que o chamador possa liberar esse buffer depois de fazer essa chamada.
 
 </dd> <dt>
 
-*cbValue* \[ no\]
+*cbValue* \[ Em\]
 </dt> <dd>
 
-O tamanho do valor apontado *por value, em* bytes.
+O tamanho do valor apontado por *pValue*, em bytes.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 
@@ -79,9 +79,9 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 
 ## <a name="remarks"></a>Comentários
 
-Se um valor existente tiver a mesma chave especificada pelo parâmetro de *chave* , ele substituirá o valor existente sem nenhum aviso. A memória de chave existente é liberada adequadamente.
+Se um valor existente tiver a mesma chave especificada pelo parâmetro *key,* ele substituirá o valor existente sem nenhum aviso. A memória de chave existente é liberada adequadamente.
 
-Não há suporte para a definição de um buffer **nulo** ou de tamanho zero.
+Não há **suporte para** a configuração de um buffer NULL ou de tamanho zero.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -89,8 +89,8 @@ Não há suporte para a definição de um buffer **nulo** ou de tamanho zero.
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
 
 
 
@@ -98,10 +98,10 @@ Não há suporte para a definição de um buffer **nulo** ou de tamanho zero.
 
 <dl> <dt>
 
-[**Interface IPortableDeviceValues**](iportabledevicevalues.md)
+[**IPortableDeviceValues Interface**](iportabledevicevalues.md)
 </dt> <dt>
 
-[**IPortableDeviceValues:: getbuffervalue**](iportabledevicevalues-getbuffervalue.md)
+[**IPortableDeviceValues::GetBufferValue**](iportabledevicevalues-getbuffervalue.md)
 </dt> </dl>
 
  

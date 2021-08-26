@@ -1,19 +1,19 @@
 ---
 title: Usando precisão mínima de HLSL
-description: A partir do Windows 8, os drivers gráficos podem implementar os tipos de dados escalares HLSL mínimos de precisão usando qualquer precisão maior ou igual à precisão de bit especificada.
+description: a partir do Windows 8, os drivers gráficos podem implementar os tipos de dados escalares de precisão mínima HLSL usando qualquer precisão maior ou igual à precisão de bit especificada.
 ms.assetid: 422B0C45-5CEB-4235-AD05-62D36C36CFC6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: de7f66f35aef3e870edb4e8564a280be89ce34be
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 4981cd80fdd80fbccf1b2610cbfeb210a9894a857fb2d7af1ddd84b9e2772e70
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641316"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120067276"
 ---
 # <a name="using-hlsl-minimum-precision"></a>Usando precisão mínima de HLSL
 
-A partir do Windows 8, os drivers gráficos podem implementar os [tipos de dados escalares HLSL](dx-graphics-hlsl-scalar.md) mínimos de precisão usando qualquer precisão maior ou igual à precisão de bit especificada. Quando o código do sombreador de precisão mínima do HLSL é usado em hardware que implementa a precisão mínima do HLSL, você usa menos largura de banda de memória e, como resultado, você também usa menos energia do sistema.
+a partir do Windows 8, os drivers gráficos podem implementar os [tipos de dados escalares](dx-graphics-hlsl-scalar.md) de precisão mínima HLSL usando qualquer precisão maior ou igual à precisão de bit especificada. Quando o código do sombreador de precisão mínima do HLSL é usado em hardware que implementa a precisão mínima do HLSL, você usa menos largura de banda de memória e, como resultado, você também usa menos energia do sistema.
 
 Você pode consultar o suporte mínimo de precisão que o driver de gráficos fornece chamando [**ID3D11Device:: CheckFeatureSupport**](/windows/desktop/api/d3d11/nf-d3d11-id3d11device-checkfeaturesupport) com o valor de [**\_ \_ \_ \_ \_ suporte mínimo de precisão do recurso do D3D11**](/windows/desktop/api/d3d11/ne-d3d11-d3d11_feature) . Para obter mais informações, consulte [suporte mínimo de precisão do HLSL](/windows/desktop/direct3d11/direct3d-11-1-features).
 
@@ -25,12 +25,12 @@ Você pode consultar o suporte mínimo de precisão que o driver de gráficos fo
 
 Para usar a precisão mínima no código do sombreador HLSL, declare variáveis individuais com tipos como **min16float** (**min16float4** para um vetor), **min16int**, **min10float** e assim por diante. Com essas variáveis, o código do sombreador indica que ele não requer mais precisão do que as variáveis indicam. Mas o hardware pode ignorar os indicadores de precisão mínima e executar com precisão de 32 bits cheia. Quando o código do sombreador é usado em hardware que aproveita a precisão mínima, você usa menos largura de banda de memória e, como resultado, você também usa menos energia do sistema, desde que o código do sombreador não espere mais precisão do que o especificado.
 
-Você não precisa criar vários sombreadores que não usam a precisão mínima. Em vez disso, crie sombreadores com precisão mínima, e as variáveis de precisão mínimas se comportarão na precisão de 32 bits completa se o driver de gráficos relatar que ele não dá suporte a precisão mínima. Os sombreadores de precisão mínima do HLSL não funcionam em sistemas operacionais anteriores ao Windows 8, portanto, se você planeja direcionar sistemas operacionais anteriores, precisará criar vários sombreadores, alguns dos outros que não usam precisão mínima.
+Você não precisa criar vários sombreadores que não usam a precisão mínima. Em vez disso, crie sombreadores com precisão mínima, e as variáveis de precisão mínimas se comportarão na precisão de 32 bits completa se o driver de gráficos relatar que ele não dá suporte a precisão mínima. os sombreadores de precisão mínima do HLSL não funcionam em sistemas operacionais anteriores à Windows 8, portanto, se você planeja direcionar sistemas operacionais anteriores, precisará criar vários sombreadores, alguns que fazem e outros que não usam precisão mínima.
 
 > [!Note]  
 > Não faça alternâncias de dados entre diferentes níveis de precisão em um sombreador porque esses tipos de conversões são desperdícios e reduzem o desempenho. A exceção é que as constantes do sombreador ainda são sempre de 32 bits, mas os fornecedores podem criar um hardware de gráficos que pode fazer a conversão livremente para qualquer precisão menor que a leitura da instrução HLSL possa usar.
 
- 
+ 
 
 Usando a precisão mínima, você pode controlar a precisão dos cálculos em várias partes do seu código de sombreador.
 
@@ -47,6 +47,6 @@ O rasterizador de referência [**( \_ \_ \_ referência de tipo de driver D3D**]
 [Guia de programação para HLSL](dx-graphics-hlsl-pguide.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

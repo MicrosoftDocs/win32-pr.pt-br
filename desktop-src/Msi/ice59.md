@@ -4,12 +4,12 @@ ms.assetid: 9cd19137-792d-4fde-92d2-7d96942448d6
 title: ICE59
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5631b723a158bb371fff3211654a70d694b6cb5c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2e1a8d6318a9b4525941edd3873c9fc35bd11f488e42c8a82da71c4b2c0b9b5b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105752455"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120044016"
 ---
 # <a name="ice59"></a>ICE59
 
@@ -17,7 +17,7 @@ ICE59 verifica se os atalhos anunciados pertencem aos componentes instalados pel
 
 Os erros relatados por ICE59 geralmente levam ao seguinte comportamento:
 
-1.  O atalho anunciado iniciará o Windows Installer para instalar o recurso listado na coluna de destino.
+1.  o atalho anunciado iniciará o Windows Installer para instalar o recurso listado na coluna de destino.
 2.  Mas como a [tabela FeatureComponents](featurecomponents-table.md) não mapeia o recurso de destino para o componente que contém o atalho, o keyfile do componente (que é ativado pelo atalho) não é instalado.
 3.  Portanto, o atalho é quebrado e não fará nada.
 

@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 237570ab2c0ce2f06a3957652a9313e0069d1500
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a7136dbcc04dbc06e07765f52ec2ca64f9dc1a020809a90595eeda68bf244a6a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103828800"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119971936"
 ---
 # <a name="esentinvalidsystempathexception-constructor"></a>Construtor EsentInvalidSystemPathException
 
 Inicializa uma nova instância da classe EsentInvalidSystemPathException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentInvalidSystemPathException()
 
 [Classe EsentInvalidSystemPathException](./esentinvalidsystempathexception-class.md)
 
-[Membros do EsentInvalidSystemPathException](./esentinvalidsystempathexception-members.md)
+[Membros EsentInvalidSystemPathException](./esentinvalidsystempathexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

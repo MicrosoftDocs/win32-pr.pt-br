@@ -1,5 +1,5 @@
 ---
-description: 'O tipo base para classes que representam uma propriedade retornada pelo \_ método Win32 PnPEntity:: deviceproperties.'
+description: O tipo base para classes que representam uma propriedade retornada pelo Método Win32 \_ PnPEntity::GetDeviceProperties.
 ms.assetid: f636c106-6ca6-407f-804a-0ec554ed565c
 ms.tgt_platform: multiple
 title: classe Win32_PnPDeviceProperty
@@ -18,16 +18,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: d8e1869e5d6cde35404ff9c12eabd35631b3227c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: e111ce65f5902d7acce95a3e7ca000f4309706eca396d3693ddac56bd7bae0a1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104457182"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119972046"
 ---
-# <a name="win32_pnpdeviceproperty-class"></a>\_Classe Win32 PnPDeviceProperty
+# <a name="win32_pnpdeviceproperty-class"></a>Classe Win32 \_ PnPDeviceProperty
 
-O tipo base para classes que representam uma propriedade retornada pelo método [**Win32 \_ PnPEntity**](win32-pnpentity.md):: deviceproperties.[](getdeviceproperties-win32-pnpentity.md)
+O tipo base para classes que representam uma propriedade retornada pelo [**Método Win32 \_ PnPEntity**](win32-pnpentity.md)::[**GetDeviceProperties.**](getdeviceproperties-win32-pnpentity.md)
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas.
 
@@ -46,17 +46,17 @@ class Win32_PnPDeviceProperty
 
 ## <a name="members"></a>Membros
 
-A classe **Win32 \_ PnPDeviceProperty** tem estes tipos de membros:
+A **classe Win32 \_ PnPDeviceProperty** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Win32 \_ PnPDeviceProperty** tem essas propriedades.
+A **classe Win32 \_ PnPDeviceProperty** tem essas propriedades.
 
 <dl> <dt>
 
-**DeviceID**
+**Deviceid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -78,11 +78,11 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O valor do par de Name-Value de chave que identifica a propriedade de **dados** .
+O valor do par chave Name-Value que identifica a **propriedade** Data.
 
 </dd> <dt>
 
-**KeyName**
+**Keyname**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -91,20 +91,20 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O nome do par de Name-Value de chave que identifica a propriedade de **dados** .
+O nome do par chave Name-Value que identifica a **propriedade** Data.
 
 </dd> <dt>
 
 **Tipo**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **Uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O tipo da propriedade de **dados** .
+O tipo da **propriedade** Data.
 
 Os valores possíveis são.
 
@@ -119,7 +119,7 @@ Os valores possíveis são.
 
 <span id="Null"></span><span id="null"></span><span id="NULL"></span>
 
-**NULL** (1)
+**Nulo** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -161,7 +161,7 @@ Os valores possíveis são.
 
 <span id="Uint32"></span><span id="uint32"></span><span id="UINT32"></span>
 
-**UInt32** (7)
+**Uint32** (7)
 
 
 </dt> <dd></dd> <dt>
@@ -189,7 +189,7 @@ Os valores possíveis são.
 
 <span id="Double"></span><span id="double"></span><span id="DOUBLE"></span>
 
-**Duplo** (11)
+**Double** (11)
 
 
 </dt> <dd></dd> <dt>
@@ -203,14 +203,14 @@ Os valores possíveis são.
 
 <span id="Guid"></span><span id="guid"></span><span id="GUID"></span>
 
-**GUID** (13)
+**Guid** (13)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Currency"></span><span id="currency"></span><span id="CURRENCY"></span>
 
-**Moeda** (14)
+**Conversor de Moedas** (14)
 
 
 </dt> <dd></dd> <dt>
@@ -224,21 +224,21 @@ Os valores possíveis são.
 
 <span id="FileTime"></span><span id="filetime"></span><span id="FILETIME"></span>
 
-**FILETIME** (16)
+**FileTime** (16)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Boolean"></span><span id="boolean"></span><span id="BOOLEAN"></span>
 
-**Booliano** (17)
+**Booliana** (17)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="String"></span><span id="string"></span><span id="STRING"></span>
 
-**Cadeia de caracteres** (18)
+**Cadeia de** caracteres (18)
 
 
 </dt> <dd></dd> <dt>
@@ -297,7 +297,7 @@ Os valores possíveis são.
 **Reserved**
 
 
-</dt> <dd>26 – 4097</dd> <dt>
+</dt> <dd>26–4097</dd> <dt>
 
 <span id="SByteArray"></span><span id="sbytearray"></span><span id="SBYTEARRAY"></span>
 
@@ -455,7 +455,7 @@ Os valores possíveis são.
 
 <span id="Unknown_-_check_in_devpropdef.h"></span><span id="unknown_-_check_in_devpropdef.h"></span><span id="UNKNOWN_-_CHECK_IN_DEVPROPDEF.H"></span>
 
-**Desconhecido-verifique em devpropdef. h** (4120)
+**Desconhecido – check-in devpropdef.h** (4120)
 
 
 </dt> <dd></dd> <dt>
@@ -472,7 +472,7 @@ Os valores possíveis são.
 **Reserved**
 
 
-</dt> <dd>8218 – 4294967295</dd> </dl>
+</dt> <dd>8218–4294967295</dd> </dl>
 
 </dd> </dl>
 
@@ -482,10 +482,10 @@ Os valores possíveis são.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                             |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                             |
 | Servidor mínimo com suporte<br/> | Windows Server 2016<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>Cimwin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>Cimwin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -497,7 +497,7 @@ Os valores possíveis são.
 [Classes de hardware do sistema de computador](computer-system-hardware-classes.md)
 </dt> <dt>
 
-[**Getdeviceproperties**](getdeviceproperties-win32-pnpentity.md)
+[**GetDeviceProperties**](getdeviceproperties-win32-pnpentity.md)
 </dt> </dl>
 
  

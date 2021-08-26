@@ -1,6 +1,6 @@
 ---
-title: 'Função Texture2D:: GetDimensions'
-description: 'Retorna as dimensões do recurso. | Função Texture2D:: GetDimensions'
+title: Função Texture2D::GetDimensions
+description: Retorna as dimensões do recurso. | Função Texture2D::GetDimensions
 ms.assetid: 921e425d-c0dd-4b8d-b590-0599fabfe606
 keywords:
 - Função GetDimensions HLSL
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ba1fa832b51e86b5df3193895caa293bb006d82a
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 46eb5101dc119d2779f60d2e2b39a42c695933a5bffd477b407fea56c930038c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104989220"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120067696"
 ---
-# <a name="texture2dgetdimensions-function"></a>Função Texture2D:: GetDimensions
+# <a name="texture2dgetdimensions-function"></a>Função Texture2D::GetDimensions
 
 Retorna as dimensões do recurso.
 
@@ -42,7 +42,7 @@ void GetDimensions(
 
 <dl> <dt>
 
-*MipLevel* \[ no\]
+*MipLevel* \[ Em\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -51,7 +51,7 @@ Opcional. O nível de mipmap (deve ser especificado se *NumberOfLevels* for usad
 
 </dd> <dt>
 
-*Largura* \[ fora\]
+*Largura* \[ out\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -60,7 +60,7 @@ A largura do recurso, em texels.
 
 </dd> <dt>
 
-*Altura* \[ fora\]
+*Altura* \[ out\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -69,18 +69,18 @@ A altura do recurso, em texels.
 
 </dd> <dt>
 
-*NumberOfLevels* \[ fora\]
+*NumberOfLevels* \[ out\]
 </dt> <dd>
 
 Tipo: **uint**
 
-O número de níveis de mipmap (também requer *MipLevel* ).
+O número de níveis de mipmap (requer *também MipLevel).*
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Nothing
+Nada
 
 ## <a name="remarks"></a>Comentários
 
@@ -111,7 +111,7 @@ Essa função tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 

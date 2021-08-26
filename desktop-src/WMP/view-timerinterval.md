@@ -1,9 +1,9 @@
 ---
-title: VIEW. IntervaloDoCronômetro
-description: O atributo IntervaloDoCronômetro especifica ou recupera o intervalo, em milissegundos, no qual o temporizador dispara eventos para o manipulador de eventos OnTimer.
+title: VIEW.timerInterval
+description: O atributo timerInterval especifica ou recupera o intervalo, em milissegundos, no qual o temporizador dispara eventos para o manipulador de eventos ontimer.
 ms.assetid: 1a69890f-5ea4-493a-8a9e-04fe60a41804
 keywords:
-- VIEW. IntervaloDoCronômetro Windows Media Player
+- VIEW.timerInterval Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 790c95fbb2cded134222271d04c4c37dae412b8d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f43b2b7bbd87663a35c43db733d3e11ff0dca5bc3ddfd00e57022b4df7122c3b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105780361"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120001306"
 ---
-# <a name="viewtimerinterval"></a>VIEW. IntervaloDoCronômetro
+# <a name="viewtimerinterval"></a>VIEW.timerInterval
 
-O atributo **IntervaloDoCronômetro** especifica ou recupera o intervalo, em milissegundos, no qual o temporizador dispara eventos para o manipulador de eventos **OnTimer** .
+O **atributo timerInterval** especifica ou recupera o intervalo, em milissegundos, no qual o temporizador dispara eventos para o manipulador de eventos **ontimer.**
 
 ``` syntax
         elementID.timerInterval
@@ -29,24 +29,24 @@ O atributo **IntervaloDoCronômetro** especifica ou recupera o intervalo, em mil
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esse atributo é um **número** de leitura/gravação (**longo**) com um valor padrão de 1000.
+Esse atributo é um  número de leitura/gravação (**longo**) com um valor padrão de 1000.
 
 
 
 | Valor        | Descrição                    |
 |--------------|--------------------------------|
-| 0            | O evento de timer não é acionado. |
+| 0            | O evento de temporizador não é a incêndio. |
 | 50 e acima | O intervalo em milissegundos.  |
 
 
 
  
 
-Qualquer valor abaixo de 50 (incluindo números negativos, mas não incluindo zero) gera um erro e o valor anterior é mantido.
+Qualquer valor abaixo de 50 (incluindo números negativos, mas sem incluir zero) gera um erro e o valor anterior é mantido.
 
 ## <a name="remarks"></a>Comentários
 
-Isso não será acionado automaticamente se nenhum manipulador de eventos **OnTimer** for implementado. Portanto, não há degradação de desempenho, embora o valor padrão seja diferente de zero.
+Isso não será a disparar automaticamente se nenhum manipulador de eventos **ontimer** for implementado. Portanto, não há degradação de desempenho, embora o valor padrão seja não zero.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,7 +54,7 @@ Isso não será acionado automaticamente se nenhum manipulador de eventos **OnTi
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior<br/> |
 
 
 
@@ -65,7 +65,7 @@ Isso não será acionado automaticamente se nenhum manipulador de eventos **OnTi
 [**Elemento VIEW**](view-element.md)
 </dt> <dt>
 
-[**Exibir. OnTimer**](view-ontimer.md)
+[**VIEW.ontimer**](view-ontimer.md)
 </dt> </dl>
 
  

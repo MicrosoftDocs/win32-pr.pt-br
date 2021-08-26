@@ -1,7 +1,7 @@
 ---
-description: Função D3DXVec2TransformArray (D3DX10Math. h) – transforma uma matriz (x, y, 0, 1) por uma determinada matriz.
+description: Função D3DXVec2TransformArray (D3DX10Math.h) – transforma uma matriz (x, y, 0, 1) por uma determinada matriz.
 ms.assetid: 66c8909c-6c20-4b32-9546-fcf2d0e824fa
-title: Função D3DXVec2TransformArray (D3DX10Math. h)
+title: Função D3DXVec2TransformArray (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: cec42fcbe53d3a8aa160f6864af70cbf441a19ab
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: a795590530503819ae66d1e17f9a4c8f8236dfb3015af512f4c6e28d084ca778
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108364"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119989896"
 ---
-# <a name="d3dxvec2transformarray-function-d3dx10mathh"></a>Função D3DXVec2TransformArray (D3DX10Math. h)
+# <a name="d3dxvec2transformarray-function-d3dx10mathh"></a>Função D3DXVec2TransformArray (D3DX10Math.h)
 
 Transforma uma matriz (x, y, 0, 1) por uma determinada matriz.
 
@@ -45,55 +45,55 @@ D3DXVECTOR4* D3DXVec2TransformArray(
 
 <dl> <dt>
 
-*pout* \[ entrada, saída\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR4**](../direct3d9/d3dxvector4.md)\***
 
-Ponteiro para a estrutura [**D3DXVECTOR4**](d3d10-d3dxvector4.md) que é o resultado da operação.
+Ponteiro para a [**estrutura D3DXVECTOR4**](d3d10-d3dxvector4.md) que é o resultado da operação.
 
 </dd> <dt>
 
-*Didistância* \[ no\]
+*OutStride* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Stride entre os vetores no fluxo de dados de saída.
+Distância entre vetores no fluxo de dados de saída.
 
 </dd> <dt>
 
-*VP* \[ no\]
+*pV* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR2**](../direct3d9/d3dxvector2.md) \***
 
-Ponteiro para o [**D3DXVECTOR2**](d3d10-d3dxvector2.md)de origem.
+Ponteiro para o [**D3DXVECTOR2 de origem.**](d3d10-d3dxvector2.md)
 
 </dd> <dt>
 
-*VStride* \[ no\]
+*VStride* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Stride entre os vetores no fluxo de dados de entrada.
+Distância entre vetores no fluxo de dados de entrada.
 
 </dd> <dt>
 
-*PM* \[ no\]
+*pM* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](../direct3d9/d3dxmatrix.md) \***
 
-Ponteiro para a estrutura de [**D3DXMATRIX**](d3d10-d3dxmatrix.md) de origem.
+Ponteiro para a estrutura [**D3DXMATRIX de origem.**](d3d10-d3dxmatrix.md)
 
 </dd> <dt>
 
 *n* \[ em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Número de elementos na matriz.
 
@@ -109,7 +109,7 @@ Ponteiro para uma estrutura D3DXVECTOR4 que é a matriz transformada.
 
 Essa função transforma a matriz pV (x, y, 0, 1) pela matriz pM.
 
-O valor de retorno para essa função é o mesmo valor retornado no parâmetro pOut. Dessa forma, a função [**D3DXVec2Transform**](d3d10-d3dxvec2transform.md) pode ser usada como um parâmetro para outra função.
+O valor retornado para essa função é o mesmo valor retornado no parâmetro pOut. Dessa forma, a [**função D3DXVec2Transform**](d3d10-d3dxvec2transform.md) pode ser usada como um parâmetro para outra função.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -117,12 +117,12 @@ O valor de retorno para essa função é o mesmo valor retornado no parâmetro p
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

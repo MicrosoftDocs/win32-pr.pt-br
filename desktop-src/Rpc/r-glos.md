@@ -5,12 +5,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: 7c1eadf9-367f-45c7-82a0-e410e7f58868
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1274d180faefda3f0fe1d8441b69c815361e305a
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 08523bd76bdd3d7abec32fd423bcad2723b53d098528d9f3e3f3f0c2ad827e44
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104369088"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120018846"
 ---
 # <a name="r-rpc"></a>R (RPC)
 
@@ -28,7 +28,7 @@ Instâncias de servidor ou outros recursos, como dispositivos, bancos de dados e
 <span id="_rpc_rpcss_glos"></span><span id="_RPC_RPCSS_GLOS"></span>**Subsistema RPC (RPCSs)**
 </dt> <dd>
 
-Subsistema do Windows que inclui uma variedade de serviços RPC e OLE, incluindo o mapeador de ponto de extremidade, SCM (Gerenciador de controle de serviço) e o resolvedor de objetos COM. Não confunda isso com o pacote de alocador de memória específico de RPC, RpcSs.
+Windows subsistema que inclui uma variedade de serviços RPC e OLE, incluindo o mapeador de ponto de extremidade, SCM (gerenciador de controle de serviço) e o resolvedor de objetos COM. Não confunda isso com o pacote de alocador de memória específico de RPC, RpcSs.
 
 </dd> <dt>
 

@@ -1,9 +1,9 @@
 ---
-title: Tipo complexo BaseEapParameters – Propriedades do usuário
+title: Tipo Complexo BaseEapParameters – Propriedades do usuário
 description: Define o elemento que especificou o método herdado selecionado e as credenciais específicas do método.
 ms.assetid: bc42e536-f741-4821-8453-6c0631daad3e
 keywords:
-- BaseEapParameters tipo complexo EAPHost
+- Tipo complexo BaseEapParameters EAPHost
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 451c03123634dd98a1f4a49292db0a807009f6f5
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: 80ae1dc749d1c31ee11809b530fe1b04a59ce3e4e4dc76e84323b7dc078ec44a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "105793832"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119978286"
 ---
-# <a name="baseeapparameters-complex-type---user-properties"></a>Tipo complexo BaseEapParameters – Propriedades do usuário
+# <a name="baseeapparameters-complex-type---user-properties"></a>Tipo Complexo BaseEapParameters – Propriedades do usuário
 
-O tipo complexo **BaseEapParameters** define o elemento que especificou o método herdado selecionado e as credenciais específicas do método.
+O **tipo complexo BaseEapParameters** define o elemento que especificou o método herdado selecionado e as credenciais específicas do método.
 
-O método pode definir os elementos constituintes dentro de **BaseEapParameters**; o método também executa a validação de esquema nos elementos no **BaseEapParameters**.
+O método pode definir os elementos constituintes **dentro de BaseEapParameters**; o método também executa a validação de esquema nos elementos em **BaseEapParameters**.
 
 ``` syntax
 <xs:complexType name="BaseEapParameters">
@@ -49,7 +49,7 @@ O método pode definir os elementos constituintes dentro de **BaseEapParameters*
 
 | Elemento                                                                      | Type    | Descrição                                                                                               |
 |------------------------------------------------------------------------------|---------|-----------------------------------------------------------------------------------------------------------|
-| [**Type**](baseeapuserpropertiesv1schema-type-baseeapparameters-element.md) | Número inteiro | Define o elemento de espaço reservado para o tipo de método selecionado e as credenciais específicas do método. <br/> |
+| [**Type**](baseeapuserpropertiesv1schema-type-baseeapparameters-element.md) | Número inteiro | Define o elemento de espaço reservado para o tipo de método selecionado e credenciais específicas do método. <br/> |
 
 
 
@@ -59,8 +59,8 @@ O método pode definir os elementos constituintes dentro de **BaseEapParameters*
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

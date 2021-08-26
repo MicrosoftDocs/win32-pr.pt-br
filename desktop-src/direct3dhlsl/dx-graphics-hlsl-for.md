@@ -3,7 +3,7 @@ title: Instrução for
 description: Executa iterativamente uma série de instruções, com base na avaliação da expressão condicional.
 ms.assetid: d795c89e-7088-4bf3-93a8-798ed9c1a353
 keywords:
-- para instrução HLSL
+- HLSL de instrução for
 topic_type:
 - apiref
 api_name:
@@ -13,18 +13,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0cbcf06f28a327e18aa9f31b417dc1911411d0c9
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 001683c612aefb56d8257977ce7efe99d162a0919d39c678ee4074128a019a31
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113119072"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120068186"
 ---
 # <a name="for-statement"></a>Instrução for
 
 Executa iterativamente uma série de instruções, com base na avaliação da expressão condicional.
 
-\[*Atributo* \] para ( *Inicializador; Condicional; Iterador* ) { *Bloco de instrução*; }
+\[*Atributo* \] para ( *inicializador; Condiciona Iterador* ) { *bloco de instruções*;}
 
 
 
@@ -34,19 +34,19 @@ Executa iterativamente uma série de instruções, com base na avaliação da ex
 
 <dl> <dt>
 
-<span id="Attribute"></span><span id="attribute"></span><span id="ATTRIBUTE"></span>*Atributo*
+<span id="Attribute"></span><span id="attribute"></span><span id="ATTRIBUTE"></span>*Attribute*
 </dt> <dd>
 
-Um parâmetro opcional que controla como a instrução é compilada. Quando nenhum atributo for especificado, o compilador tentará primeiro emitir uma versão rolada do loop e, se isso falhar, ou se algumas operações serão mais fáceis se o loop tiver sido desenrolado, retornará para uma versão não listada do loop.
+Um parâmetro opcional que controla como a instrução é compilada. Quando nenhum atributo for especificado, o compilador tentará primeiro emitir uma versão revertida do loop e, se isso falhar, ou se algumas operações forem mais fáceis se o loop fosse cancelado, o voltará a uma versão não lançada do loop.
 
 
 
 | Atributo             | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 |-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| unroll(x)             | Unroll the loop until it stops executing. Opcionalmente, pode especificar o número máximo de vezes que o loop deve ser executado. Não compatível com o **\[ atributo loop. \]**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| loop                  | Gere o código que usa o controle de fluxo para executar cada iteração do loop. Não compatível com o **\[ atributo unroll. \]**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| fastopt               | Reduz o tempo de compilação, mas produz otimizações menos agressivas. Se você usar esse atributo, o compilador não desenrola os loops.<br/> Esse atributo afeta apenas destinos de modelo de sombreador que suportam instruções [de quebra.](dx-graphics-hlsl-break.md) Esse atributo está disponível no modelo de sombreador [ \_ versus 2 \_ x](dx9-graphics-reference-asm-vs-2-x.md) e [modelo de sombreador 3](dx-graphics-hlsl-sm3.md) e posterior. Ele é particularmente útil no [modelo de sombreador 4](dx-graphics-hlsl-sm4.md) e posterior quando o compilador compila loops. O compilador simula loops por padrão para avaliar se ele pode unroll-los. Se você não quiser que o compilador unroll loops, use esse atributo para reduzir o tempo de compilação. <br/> |
-| permitir \_ condição \_ uav | Permite que uma condição de encerramento de loop do sombreador de computação seja baseada em uma leitura UAV. O loop não deve conter intrínsecos de sincronização.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| não acumular (x)             | Desverta o loop até que ele pare de ser executado. Opcionalmente, pode especificar o número máximo de vezes que o loop é executado. Não compatível com o atributo **\[ loop \]** .                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| loop                  | Gere o código que usa o controle de fluxo para executar cada iteração do loop. Não compatível com o atributo **\[ unroll \]** .                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| fastopt               | Reduz o tempo de compilação, mas produz otimizações menos agressivas. Se você usar esse atributo, o compilador não desrolará loops.<br/> Esse atributo afeta somente os destinos de modelo de sombreador que dão suporte a instruções de [quebra](dx-graphics-hlsl-break.md) . Esse atributo está disponível no modelo do sombreador [versus \_ 2 \_ x](dx9-graphics-reference-asm-vs-2-x.md) e no [sombreador, modelo 3](dx-graphics-hlsl-sm3.md) e posterior. Ele é particularmente útil no [modelo de sombreador 4](dx-graphics-hlsl-sm4.md) e mais tarde, quando o compilador compila loops. O compilador simula loops por padrão para avaliar se ele pode desroll-los. Se você não quiser que o compilador desverta loops, use esse atributo para reduzir o tempo de compilação. <br/> |
+| permitir \_ \_ condição UAV | Permite que uma condição de encerramento de loop de sombreador de computação seja baseada em uma leitura de UAV. O loop não deve conter intrínsecos de sincronização.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 
 
 
@@ -61,14 +61,14 @@ O valor inicial do contador de loops.
 
 </dd> <dt>
 
-<span id="Conditional"></span><span id="conditional"></span><span id="CONDITIONAL"></span>*Condicional*
+<span id="Conditional"></span><span id="conditional"></span><span id="CONDITIONAL"></span>*Condiciona*
 </dt> <dd>
 
-Uma expressão [condicional](dx-graphics-hlsl-expressions.md). Se a expressão condicional for avaliada como true, o bloco de instrução será executado. O loop termina quando a expressão é avaliada como false.
+Uma [expressão](dx-graphics-hlsl-expressions.md)condicional. Se a expressão condicional for avaliada como true, o bloco de instrução será executado. O loop termina quando a expressão é avaliada como falsa.
 
 </dd> <dt>
 
-<span id="Iterator"></span><span id="iterator"></span><span id="ITERATOR"></span>*Iterador*
+<span id="Iterator"></span><span id="iterator"></span><span id="ITERATOR"></span>*Repeti*
 </dt> <dd>
 
 Atualize o valor do contador de loop.
@@ -84,15 +84,15 @@ Uma ou mais [instruções HLSL](dx-graphics-hlsl-statement-blocks.md).
 
 ## <a name="remarks"></a>Comentários
 
-Os **\[ atributos \] unroll** **\[ e loop \]** são mutuamente exclusivos e gerarão erros do compilador quando ambos são especificados.
+Os atributos **\[ desroll \]** e **\[ loop \]** são mutuamente exclusivos e gerarão erros de compilador quando ambos forem especificados.
 
-Os **\[ atributos \] de condição fastopt** e **\[ \_ allow uav \_ \]** serão ignorados se **\[ o unroll \]** for especificado.
+Os atributos de **\[ \_ \_ condição \]** **\[ \] fastopt** e Allow UAV serão ignorados se o **\[ canroll \]** for especificado.
 
 ## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[Controle de fluxo](dx-graphics-hlsl-flow-control.md)
+[Flow Controlo](dx-graphics-hlsl-flow-control.md)
 </dt> </dl>
 
  

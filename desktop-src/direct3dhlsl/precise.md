@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 03f288fb5dafee0e29c8c11cab72156f7ad3d569
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 3c7929a7ebab01b17aca3e11cb98de8796bf568cd08a3a7b04d8f3395f531d72
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104498940"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120067906"
 ---
 # <a name="precise"></a>Preciso
 
@@ -27,7 +27,7 @@ Desabilitação por instrução de refatoração aritmética.
 
 
 
- 
+ 
 
 Este modificador requer o sinalizador de sombreador global "refatoração \_ permitida". Quando a refatoração \_ permitida estiver presente, os resultados de componentes individuais de instruções individuais poderão ser forçados a permanecerem precisos ou não podem ser refatoráveis por compiladores ou drivers. Se os componentes de uma instrução [**Mad**](mad--sm4---asm-.md) estiverem marcados como **precisos**, o hardware deverá executar uma instrução **Mad** ou o equivalente exato e não poderá dividi-lo em uma multiplicação seguida por um Add. Por outro lado, um multiplicado seguido por um Add, onde ou ambos são sinalizados como **precisos**, não podem ser mesclados em um **Mad** de fusível.
 
@@ -50,7 +50,7 @@ Esse modificador tem suporte nos seguintes modelos de sombreador.
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -59,9 +59,9 @@ Esse modificador tem suporte nos seguintes modelos de sombreador.
 [Modificadores de instrução do Shader Model 5](shader-model-5-instruction-modifiers.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,8 +1,8 @@
 ---
-description: Essa classe representa a associação entre um sistema operacional e as configurações de Autochk que se aplicam aos discos no computador. Observe que a configuração está associada ao sistema operacional, e não ao sistema de computador, pois pode haver um ou mais sistemas operacionais instalados no computador, cada um com suas próprias configurações de autochk.
+description: Essa classe representa a associação entre um sistema operacional e as configurações de autochk que se aplicam aos discos no computador. Observe que a configuração está associada ao sistema operacional em vez do sistema de computador, pois pode haver um ou mais sistemas operacionais instalados no computador, cada um com suas próprias configurações de autochk.
 ms.assetid: 11178459-85c2-41c0-83b3-5b967e3311cf
 ms.tgt_platform: multiple
-title: Classe Win32_OperatingSystemAutochkSetting
+title: Win32_OperatingSystemAutochkSetting classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -10,16 +10,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 905ffc92273b46bb36b7b3e2909afea32e6baeff
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: cfa6e90828935dda8aa163967985813526042b8800f91cb01825fbd158f8a63d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089529"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119972536"
 ---
-# <a name="win32_operatingsystemautochksetting-class"></a>\_Classe Win32 OperatingSystemAutochkSetting
+# <a name="win32_operatingsystemautochksetting-class"></a>Classe Win32 \_ OperatingSystemAutochkSetting
 
-Essa classe representa a associação entre um sistema operacional e as configurações de Autochk que se aplicam aos discos no computador. Observe que a configuração está associada ao sistema operacional, e não ao sistema de computador, pois pode haver um ou mais sistemas operacionais instalados no computador, cada um com suas próprias configurações de autochk.
+Essa classe representa a associação entre um sistema operacional e as configurações de autochk que se aplicam aos discos no computador. Observe que a configuração está associada ao sistema operacional em vez do sistema de computador, pois pode haver um ou mais sistemas operacionais instalados no computador, cada um com suas próprias configurações de autochk.
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas.
 
@@ -36,26 +36,26 @@ class Win32_OperatingSystemAutochkSetting : CIM_ElementSetting
 
 ## <a name="members"></a>Membros
 
-A classe **Win32 \_ OperatingSystemAutochkSetting** tem estes tipos de membros:
+A **classe \_ OperatingSystemAutochkSetting do Win32** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Win32 \_ OperatingSystemAutochkSetting** tem essas propriedades.
+A **classe \_ OperatingSystemAutochkSetting do Win32** tem essas propriedades.
 
 <dl> <dt>
 
 **Element**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: sistema **\_ operacional Win32**
+Tipo de dados: **Sistema Operacional \_ Win32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**substituir**](../wmisdk/standard-qualifiers.md) ("element"), [**Key**](../wmisdk/key-qualifier.md)
+Qualificadores: [**Substituir**](../wmisdk/standard-qualifiers.md) ("Elemento"), [**chave**](../wmisdk/key-qualifier.md)
 </dt> </dl>
 
 TBD
@@ -71,7 +71,7 @@ Tipo de dados: **Win32 \_ AutochkSetting**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**substituir**](../wmisdk/standard-qualifiers.md) ("Setting"), [**Key**](../wmisdk/key-qualifier.md)
+Qualificadores: [**Substituir**](../wmisdk/standard-qualifiers.md) ("Configuração"), [**chave**](../wmisdk/key-qualifier.md)
 </dt> </dl>
 
 TBD
@@ -86,8 +86,8 @@ TBD
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CimWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CimWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Cimwin32.dll</dt> </dl> |
 
 
@@ -96,7 +96,7 @@ TBD
 
 <dl> <dt>
 
-[**\_ELEMENTSETTING CIM**](cim-elementsetting.md)
+[**Elemento \_ CIMSetting**](cim-elementsetting.md)
 </dt> </dl>
 
  

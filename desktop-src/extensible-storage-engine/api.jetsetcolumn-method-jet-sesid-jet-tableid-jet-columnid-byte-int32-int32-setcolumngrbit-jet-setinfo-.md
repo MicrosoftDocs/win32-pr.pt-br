@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: método API. JetSetColumn (JET_SESID, JET_TABLEID, JET_COLUMNID, byte, Int32, Int32, SetColumnGrbit, JET_SETINFO)'
-title: Método API. JetSetColumn (JET_SESID, JET_TABLEID, JET_COLUMNID, byte, Int32, Int32, SetColumnGrbit, JET_SETINFO)
+description: 'Saiba mais sobre: Método Api.JetSetColumn (JET_SESID, JET_TABLEID, JET_COLUMNID, Byte , Int32, Int32, SetColumnGrbit, JET_SETINFO)'
+title: Método Api.JetSetColumn (JET_SESID, JET_TABLEID, JET_COLUMNID, Byte , Int32, Int32, SetColumnGrbit, JET_SETINFO)
 TOCTitle: JetSetColumn method (JET_SESID, JET_TABLEID, JET_COLUMNID, Byte , Int32, Int32, SetColumnGrbit, JET_SETINFO)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetSetColumn(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,Microsoft.Isam.Esent.Interop.JET_COLUMNID,System.Byte[],System.Int32,System.Int32,Microsoft.Isam.Esent.Interop.SetColumnGrbit,Microsoft.Isam.Esent.Interop.JET_SETINFO)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetsetcolumn(v=EXCHG.10)
@@ -27,12 +27,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119977796"
 ---
-# <a name="apijetsetcolumn-method-jet_sesid-jet_tableid-jet_columnid-byte--int32-int32-setcolumngrbit-jet_setinfo"></a>Método API. JetSetColumn (JET_SESID, JET_TABLEID, JET_COLUMNID, byte, Int32, Int32, SetColumnGrbit, JET_SETINFO)
+# <a name="apijetsetcolumn-method-jet_sesid-jet_tableid-jet_columnid-byte--int32-int32-setcolumngrbit-jet_setinfo"></a>Método Api.JetSetColumn (JET_SESID, JET_TABLEID, JET_COLUMNID, Byte , Int32, Int32, SetColumnGrbit, JET_SETINFO)
 
-A função JetSetColumn modifica um valor de coluna única em um registro modificado a ser inserido ou para atualizar o registro atual. Ele pode substituir um valor existente, adicionar um novo valor a uma sequência de valores em uma coluna com vários valores, remover um valor de uma sequência de valores em uma coluna com vários valores ou atualizar todo ou parte de um valor longo (uma coluna do tipo [LONGTEXT](./jet-coltyp-enumeration.md) ou [LongBinary](./jet-coltyp-enumeration.md)).
+A função JetSetColumn modifica um único valor de coluna em um registro modificado a ser inserido ou para atualizar o registro atual. Ele pode substituir um valor existente, adicionar um novo valor a uma sequência de valores em uma coluna com vários valores, remover um valor de uma sequência de valores em uma coluna com vários valores ou atualizar todo ou parte de um valor longo (uma coluna do tipo [LongText](./jet-coltyp-enumeration.md) ou [LongBinary](./jet-coltyp-enumeration.md)).
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -80,67 +80,67 @@ public static JET_wrn JetSetColumn(
 #### <a name="parameters"></a>Parâmetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
     A sessão que está executando a atualização.
 
 <!-- end list -->
 
-  - TableID  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - Tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
     O cursor a ser atualizado. Uma atualização deve ser preparada.
 
 <!-- end list -->
 
   - columnid  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
     
-    O columnid a ser definido.
+    A columnid a ser definida.
 
 <!-- end list -->
 
   - data  
-    Escreva \[\]  
+    Tipo: \[\]  
     
     Os dados a serem definidos.
 
 <!-- end list -->
 
   - dataSize  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    O tamanho dos dados a serem definidos.
+    O tamanho dos dados a definir.
 
 <!-- end list -->
 
-  - dataOffset  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+  - Dataoffset  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    O deslocamento no buffer de dados do qual definir dados.
+    O deslocamento no buffer de dados do onde definir dados.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. ESENT. Interop. SetColumnGrbit](./setcolumngrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.SetColumnGrbit](./setcolumngrbit-enumeration.md)  
     
-    Opções SetColumn.
+    Opções setColumn.
 
 <!-- end list -->
 
-  - setinfo  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SETINFO](./jet-setinfo-class.md)  
+  - Setinfo  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SETINFO](./jet-setinfo-class.md)  
     
-    Usado para especificar ITAG ou deslocamento de valor longo.
+    Usado para especificar itag ou deslocamento de valor longo.
 
 #### <a name="return-value"></a>Valor retornado
 
-Tipo: [Microsoft.ISAM.ESENT.Interop.JET_wrn](./jet-wrn-enumeration.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_wrn](./jet-wrn-enumeration.md)  
 Um valor de aviso.  
 
 ## <a name="remarks"></a>Comentários
 
-Essa é uma versão somente interna da API que usa um buffer de dados e um deslocamento no buffer.
+Essa é uma versão somente interna da API que leva um buffer de dados e um deslocamento para o buffer.
 
 ## <a name="see-also"></a>Confira também
 
@@ -150,6 +150,6 @@ Essa é uma versão somente interna da API que usa um buffer de dados e um deslo
 
 [Membros da API](./api-members.md)
 
-[Sobrecarga de JetSetColumn](./api.jetsetcolumn-method.md)
+[Sobrecarga JetSetColumn](./api.jetsetcolumn-method.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

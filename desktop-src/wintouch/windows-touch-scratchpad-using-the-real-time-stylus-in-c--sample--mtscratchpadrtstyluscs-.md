@@ -1,31 +1,31 @@
 ---
-title: Bloco de rascunho de toque do Windows usando o exemplo de caneta Real-Time (C#)
-description: Examine um exemplo de C# do Windows Touch (MTScratchpadRTStylus), que mostra como usar as mensagens do Windows Touch para desenhar rastreamentos de pontos de toque em uma janela.
+title: Windows Toque em Scratchpad usando Real-Time exemplo de caneta (C#)
+description: Revise um exemplo Windows touch scratchpad C# (MTSqueichpadRTStylus), que mostra como usar mensagens Windows Touch para desenhar rastreamentos dos pontos de toque para uma janela.
 ms.assetid: 8e80672f-0780-4dec-a9b4-afec0f7782ad
 keywords:
-- Windows Touch, exemplos de código
-- Windows Touch, código de exemplo
-- Windows Touch, amostras de bloco de rascunho
-- Amostras de bloco de rascunho
-- Windows Touch, objeto de caneta em tempo real (RTS)
+- Windows Toque, exemplos de código
+- Windows Toque, código de exemplo
+- Windows Toque, exemplos do Scratchpad
+- Exemplos de bloco de rascunho
+- Windows Touch, objeto RTS (Caneta em Tempo Real)
 ms.topic: article
 ms.date: 10/28/2019
-ms.openlocfilehash: 3c30d3543024a48394ddd7b9b2b06a05b61f5025
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: a76f7a66f8bc26b7e1cad8f1fa71d9703f0c0da1ad1452a078b374a0f1603238
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112406309"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120055837"
 ---
-# <a name="windows-touch-scratchpad-using-the-real-time-stylus-sample-c"></a>Bloco de rascunho de toque do Windows usando o exemplo de caneta Real-Time (C#)
+# <a name="windows-touch-scratchpad-using-the-real-time-stylus-sample-c"></a>Windows Toque em Scratchpad usando Real-Time exemplo de caneta (C#)
 
-O exemplo de bloco de rascunho do Windows ([MTScratchpadRTStylus](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTScratchpadRTStylus/CS)) mostra como usar mensagens de toque do Windows para desenhar rastreamentos dos pontos de toque em uma janela. O rastreamento do dedo principal, aquele que foi colocado no digitalizador primeiro, é desenhado em preto. Os dedos secundários são desenhados em seis outras cores: vermelho, verde, azul, ciano, magenta e amarelo. A captura de tela a seguir mostra como o aplicativo pode ser examinado durante a execução.
+O exemplo Windows Touch Scratchpad ([MTSqueichpadRTStylus](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTScratchpadRTStylus/CS)) mostra como usar mensagens Windows Touch para desenhar rastreamentos dos pontos de toque para uma janela. O rastreamento do dedo primário, aquele que foi colocado primeiro no digitalizador, é desenhado em preto. Os dedos secundários são desenhados em seis outras cores: vermelho, verde, azul, ciano, magenta e amarelo. A captura de tela a seguir mostra a aparência do aplicativo durante a execução.
 
-![captura de tela mostrando o exemplo de bloco de rascunho de toque do Windows usando a caneta em tempo real em c Sharp, com rabiscos pretos e vermelhos na tela](images/mtscratchpadrtstyluscs.png)
+![captura de tela mostrando o exemplo de bloco de rascunho de toque do Windows usando a caneta em tempo real em c sharp, com alternâncias pretas e vermelhas na tela](images/mtscratchpadrtstyluscs.png)
 
-Para este exemplo, o objeto de Real-Time Stylus (RTS) é criado e o suporte para vários pontos de contato está habilitado. Um plug-in DynamicRenderer é adicionado ao RTS para renderizar o conteúdo. Um plug-in, EventHandlerPlugIn, é implementado para rastrear o número de dedos e alterar a cor que o renderizador dinâmico está desenhando. Com ambos os plug-ins na pilha de plug-in de RTS, o aplicativo de bloco de rascunho do Windows irá renderizar o contato principal em preto e o restante dos contatos nas várias cores.
+Para este exemplo, o objeto Real-Time caneta (RTS) é criado e o suporte para vários pontos de contato está habilitado. Um plug-in DynamicRenderer é adicionado ao RTS para renderizar o conteúdo. Um plug-in, EventHandlerPlugIn, é implementado para rastrear o número de dedos e alterar a cor que o renderador dinâmico está desenhando. Com ambos os plug-ins na pilha de plug-in RTS, o aplicativo Windows Touch Scratchpad renderizará o contato principal em preto e o restante dos contatos nas várias cores.
 
-O código a seguir mostra como o EventHandlerPlugIn incrementa e decrementa uma contagem do número de contatos e define a cor do renderizador dinâmico.
+O código a seguir mostra como EventHandlerPlugIn incrementa e diminui uma contagem do número de contatos e define a cor do renderador dinâmico.
 
 ```CSharp
         public void StylusDown(RealTimeStylus sender, StylusDownData data)
@@ -43,7 +43,7 @@ O código a seguir mostra como o EventHandlerPlugIn incrementa e decrementa uma 
         }
 ```
 
-O código a seguir mostra como o RTS é criado com o suporte a vários pontos de contato.
+O código a seguir mostra como o RTS é criado com suporte a vários pontos de contato.
 
 ```CSharp
         private void OnLoadHandler(Object sender, EventArgs e)
@@ -65,7 +65,7 @@ O código a seguir mostra como o RTS é criado com o suporte a vários pontos de
         }
 ```
 
-Depois que a cor do objeto DynamicRenderer tiver sido alterada e os traços tiverem sido desenhados, uma chamada para DynamicRenderer:: Refresh fará com que os novos traços sejam exibidos. O código a seguir mostra como isso é executado no método OnPaintHandler.
+Depois que a cor do objeto DynamicRenderer tiver sido alterada e os traços foram desenhados, uma chamada para DynamicRenderer::Refresh fará com que os novos traços apareçam. O código a seguir mostra como isso é executado no método OnPaintHandler.
 
 ```CSharp
         private void OnPaintHandler(object sender, PaintEventArgs e)
@@ -81,4 +81,4 @@ Depois que a cor do objeto DynamicRenderer tiver sido alterada e os traços tive
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-[Aplicativo de bloco de rascunho multitoque (RTS/C#)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTScratchpadRTStylus/CS), [aplicativo de bloco de rascunho multitoque (RTS/C++)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTScratchpadRTStylus/cpp), [exemplos de toque do Windows](windows-touch-samples.md)
+[Aplicativo RTS/C#, RTS(Multi](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTScratchpadRTStylus/CS) [touch Scratchpad Application) , RTS/C++),](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTScratchpadRTStylus/cpp) [Windows de](windows-touch-samples.md) toque

@@ -3,9 +3,9 @@ title: Propriedade IMsRdpCameraRedirConfig DeviceExists
 description: Especifica se o dispositivo de câmera existe ou não no momento (ou seja, a câmera está conectada).
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota da propriedade DeviceExists
-- Propriedade DeviceExists Serviços de Área de Trabalho Remota, interface IMsRdpCameraRedirConfig
-- Serviços de Área de Trabalho Remota de interface IMsRdpCameraRedirConfig, Propriedade DeviceExists
+- Propriedade DeviceExists Serviços de Área de Trabalho Remota
+- A propriedade DeviceExists Serviços de Área de Trabalho Remota , interface IMsRdpCameraRedirConfig
+- Interface IMsRdpCameraRedirConfig Serviços de Área de Trabalho Remota , propriedade DeviceExists
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 12/16/2020
-ms.openlocfilehash: 368b2d46e6dfc2c32c0bb294edceda31f8a58f4e
-ms.sourcegitcommit: 04e801237156e90b48111d60bddf437f87f5cdfe
+ms.openlocfilehash: 617c91491d88736ca60218d71f9dd5aa02ad0f9faeefdda6b872ba9262cec587
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "104456335"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119990656"
 ---
-# <a name="imsrdpcameraredirconfigdeviceexists-property"></a>IMsRdpCameraRedirConfig: Propriedade eviceExists de:D
+# <a name="imsrdpcameraredirconfigdeviceexists-property"></a>Propriedade IMsRdpCameraRedirConfig::D eviceExists
 
 Especifica se o dispositivo de câmera existe ou não no momento (ou seja, a câmera está conectada).
 

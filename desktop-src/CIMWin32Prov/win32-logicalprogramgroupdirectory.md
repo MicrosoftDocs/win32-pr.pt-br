@@ -1,5 +1,5 @@
 ---
-description: A \_ classe WMI de associação do Win32 LogicalProgramGroupDirectory relaciona grupos de programas lógicos (agrupamentos no menu Iniciar) e os diretórios de arquivos nos quais eles são armazenados.
+description: a \_ classe WMI de associação do Win32 LogicalProgramGroupDirectory relaciona grupos de programas lógicos (agrupamentos no menu Iniciar) e os diretórios de arquivos nos quais eles são armazenados.
 ms.assetid: 31a8b56a-d4fd-4cc5-9997-ec6211fe9425
 ms.tgt_platform: multiple
 title: Classe Win32_LogicalProgramGroupDirectory
@@ -16,12 +16,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: d6ebaddd4455ba1b62832f940d78534c90cefeeb
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: fa9bf70e82f5a46c8a9a346b33d18e3c9f4a12322ad10a5fca1233df5a36c1d0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105754387"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119973306"
 ---
 # <a name="win32_logicalprogramgroupdirectory-class"></a>\_Classe Win32 LogicalProgramGroupDirectory
 
@@ -88,7 +88,7 @@ Referência à instância que representa o diretório de arquivos para o grupo d
 
 A classe **Win32 \_ LogicalProgramGroupDirectory** é derivada da [**\_ dependência CIM**](cim-dependency.md).
 
-O processo de chamada que usa essa classe deve ter o privilégio **se \_ Restore \_ Name** no computador em que o registro reside. Por exemplo, se você enumerar essa classe no computador local, a conta sob a qual seu aplicativo é executado deverá ter esse privilégio. Para obter mais informações, consulte [executando operações privilegiadas](/windows/desktop/WmiSdk/executing-privileged-operations).
+o processo de chamada que usa essa classe deve ter o privilégio de **ES \_ restore \_ NAME** no computador em que o registro reside. Por exemplo, se você enumerar essa classe no computador local, a conta sob a qual seu aplicativo é executado deverá ter esse privilégio. Para obter mais informações, consulte [executando operações privilegiadas](/windows/desktop/WmiSdk/executing-privileged-operations).
 
 ## <a name="requirements"></a>Requisitos
 

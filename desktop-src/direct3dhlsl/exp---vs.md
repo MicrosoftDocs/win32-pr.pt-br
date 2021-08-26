@@ -1,6 +1,6 @@
 ---
-title: exp-vs
-description: Fornece precisão total exponencial 2x. | exp-vs
+title: exp - vs
+description: Fornece precisão total exponencial 2x. | exp - vs
 ms.assetid: 3644046b-3257-4257-9880-146ca50f6b0b
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,22 +9,22 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: c5b49b69e1270075aef4368dedca5791c2784657
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 2b5b27067e83cbfd7604165ec1191d3371634aac15781a719377c92c69e29e6f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104989240"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120067946"
 ---
-# <a name="exp---vs"></a>exp-vs
+# <a name="exp---vs"></a>exp - vs
 
-Fornece a precisão total exponencial 2<sup>x</sup>.
+Fornece precisão total exponencial de 2<sup>x</sup>.
 
 ## <a name="syntax"></a>Syntax
 
 
 
-| exp DST, src |
+| exp dst, src |
 |--------------|
 
 
@@ -33,14 +33,14 @@ Fornece a precisão total exponencial 2<sup>x</sup>.
 
 onde
 
--   DST é o registro de destino.
--   src é um registro de origem. O registro de origem requer uso explícito de replicate swizzle, ou seja, exatamente um dos componentes. x,. y,. z,. w swizzle (ou. r,. g,. b,. equivalentes) devem ser especificados. Consulte [registro de origem Swizzling](dx9-graphics-reference-asm-vs-registers-modifiers-source-swizzling.md).
+-   dst é o registro de destino.
+-   src é um registro de origem. O registro de origem requer o uso explícito do swizzle de replicação, ou seja, exatamente um dos componentes .x, .y, .z, .w swizzle (ou os equivalentes .r, .g, .b, .a). Consulte [Source Register Swizzling](dx9-graphics-reference-asm-vs-registers-modifiers-source-swizzling.md).
 
 ## <a name="remarks"></a>Comentários
 
 
 
-| Versões do sombreador de vértice | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versões do sombreador de vértice | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|------|-------|------|-------|
 | exp                    | x    | x    | x    | x     | x    | x     |
 

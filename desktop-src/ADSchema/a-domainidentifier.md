@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 92b163139c14743cdeb5df4d5481783bdfe8eb88
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f28ef71f15a9833a66d518a140bc9423a61e98e070dee340433dad63343da538
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103824959"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120077706"
 ---
 # <a name="domain-identifier-attribute"></a>Domain-Identifier atributo
 
@@ -57,8 +57,8 @@ Sid de domínio que identifica o domínio.
 |------------------------|------------------------------------------------------|
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
-| System-Only            | True                                                 |
-| É de valor único       | True                                                 |
+| System-Only            | Verdadeiro                                                 |
+| É de valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
 | No catálogo global      | Falso                                                |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
@@ -78,8 +78,8 @@ Sid de domínio que identifica o domínio.
 |------------------------|------------------------------------------------------|
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
-| System-Only            | True                                                 |
-| É de valor único       | True                                                 |
+| System-Only            | Verdadeiro                                                 |
+| É de valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
 | No catálogo global      | Falso                                                |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
@@ -99,8 +99,8 @@ Sid de domínio que identifica o domínio.
 |------------------------|------------------------------------------------------|
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
-| System-Only            | True                                                 |
-| É de valor único       | True                                                 |
+| System-Only            | Verdadeiro                                                 |
+| É de valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
 | No catálogo global      | Falso                                                |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
@@ -120,11 +120,11 @@ Sid de domínio que identifica o domínio.
 |------------------------|------------------------------------------------------|
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
-| System-Only            | True                                                 |
-| É de valor único       | True                                                 |
+| System-Only            | Verdadeiro                                                 |
+| Tem valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
-| No catálogo global      | Falso                                                |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
+| No Catálogo Global      | Falso                                                |
+| Descritor de segurança NT | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
@@ -141,11 +141,11 @@ Sid de domínio que identifica o domínio.
 |------------------------|------------------------------------------------------|
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
-| System-Only            | True                                                 |
-| É de valor único       | True                                                 |
+| System-Only            | Verdadeiro                                                 |
+| Tem valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
-| No catálogo global      | Falso                                                |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
+| No Catálogo Global      | Falso                                                |
+| Descritor de segurança NT | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
@@ -162,11 +162,11 @@ Sid de domínio que identifica o domínio.
 |------------------------|------------------------------------------------------|
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
-| System-Only            | True                                                 |
-| É de valor único       | True                                                 |
+| System-Only            | Verdadeiro                                                 |
+| Tem valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
-| No catálogo global      | Falso                                                |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
+| No Catálogo Global      | Falso                                                |
+| Descritor de segurança NT | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |

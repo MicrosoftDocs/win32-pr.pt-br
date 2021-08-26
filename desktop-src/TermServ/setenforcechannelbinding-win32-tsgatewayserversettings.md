@@ -5,7 +5,7 @@ ms.assetid: 8bd64fe7-bad5-44e6-a309-10802d9a8bd4
 ms.tgt_platform: multiple
 keywords:
 - Método SetEnforceChannelBinding Serviços de Área de Trabalho Remota
-- Método SetEnforceChannelBinding Serviços de Área de Trabalho Remota , Win32_TSGatewayServerSettings classe
+- Método SetEnforceChannelBinding Serviços de Área de Trabalho Remota classe Win32_TSGatewayServerSettings ,
 - Win32_TSGatewayServerSettings classe Serviços de Área de Trabalho Remota , método SetEnforceChannelBinding
 topic_type:
 - apiref

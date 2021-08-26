@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: método BytesColumnValue. ToString'
-title: Método BytesColumnValue. ToString
+description: 'Saiba mais sobre: Método BytesColumnValue.ToString'
+title: Método BytesColumnValue.ToString
 TOCTitle: 'ToString method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.BytesColumnValue.ToString
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.bytescolumnvalue.tostring(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d880dfb7fa81ee76af7c557ead385fce743171e8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0b41264b674c6782e28485bfc57b34be78c991eb58c20a04974f10e6d9308120
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105807332"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119976726"
 ---
-# <a name="bytescolumnvaluetostring-method"></a>Método BytesColumnValue. ToString
+# <a name="bytescolumnvaluetostring-method"></a>Método BytesColumnValue.ToString
 
-Retorna uma [cadeia de caracteres](/dotnet/api/system.string) que representa o [BytesColumnValue](./bytescolumnvalue-class.md)atual.
+Retorna uma [Cadeia de](/dotnet/api/system.string) caracteres que representa [o BytesColumnValue atual.](./bytescolumnvalue-class.md)
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -54,10 +54,10 @@ returnValue = instance.ToString()
 public override string ToString()
 ```
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
-Tipo: [System. String](/dotnet/api/system.string)  
-Uma [cadeia de caracteres](/dotnet/api/system.string) que representa o [BytesColumnValue](./bytescolumnvalue-class.md)atual.  
+Tipo: [System.String](/dotnet/api/system.string)  
+Uma [Cadeia de](/dotnet/api/system.string) caracteres que representa o [BytesColumnValue atual.](./bytescolumnvalue-class.md)  
 
 ## <a name="see-also"></a>Confira também
 
@@ -65,6 +65,6 @@ Uma [cadeia de caracteres](/dotnet/api/system.string) que representa o [BytesCol
 
 [Classe BytesColumnValue](./bytescolumnvalue-class.md)
 
-[Membros do BytesColumnValue](./bytescolumnvalue-members.md)
+[Membros BytesColumnValue](./bytescolumnvalue-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

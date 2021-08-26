@@ -1,7 +1,7 @@
 ---
-description: A função DeleteMediaType exclui uma estrutura de \_ tipo de mídia am alocada \_ , incluindo o bloco de formato.
+description: A função DeleteMediaType exclui uma estrutura AM \_ MEDIA \_ TYPE alocada, incluindo o bloco de formato.
 ms.assetid: 970f6b2b-2bf5-418d-b4ae-637561cd6765
-title: Função DeleteMediaType (mtype. h)
+title: Função DeleteMediaType (Mtype.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: db0de399ab1be7808370a6d0da57c4c3ca7b8de1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6035b65d6bf292f6ca35c4323ac5ad90c747b0cfd4bfa756b1f054d7b693d998
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752278"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119998386"
 ---
 # <a name="deletemediatype-function"></a>Função DeleteMediaType
 
-A função **DeleteMediaType** exclui uma estrutura [**de \_ \_ tipo de mídia am**](/windows/win32/api/strmif/ns-strmif-am_media_type) alocada, incluindo o bloco de formato.
+A **função DeleteMediaType** exclui uma estrutura [**AM MEDIA \_ \_ TYPE**](/windows/win32/api/strmif/ns-strmif-am_media_type) alocada, incluindo o bloco de formato.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,10 +42,10 @@ void WINAPI DeleteMediaType(
 
 <dl> <dt>
 
-*PMT* 
+*Pgto* 
 </dt> <dd>
 
-Um ponteiro para uma estrutura de [**\_ \_ tipo de mídia am**](/windows/win32/api/strmif/ns-strmif-am_media_type) .
+Um ponteiro para uma estrutura [**AM \_ MEDIA \_ TYPE.**](/windows/win32/api/strmif/ns-strmif-am_media_type)
 
 </dd> </dl>
 
@@ -57,7 +57,7 @@ Essa função não retorna um valor.
 
 Use essa função para liberar qualquer estrutura de tipo de mídia que foi alocada usando [**CoTaskMemAlloc**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemalloc) ou [**CreateMediaType**](createmediatype.md).
 
-Essa função é definida na biblioteca de [classes base do DirectShow](directshow-base-classes.md) . Se preferir não vincular à biblioteca de classes base, você pode usar o seguinte código:
+Essa função é definida na biblioteca [DirectShow Classes Base.](directshow-base-classes.md) Se você preferir não vincular à biblioteca de classes base, poderá usar o seguinte código:
 
 
 ```C++
@@ -101,8 +101,8 @@ void _DeleteMediaType(AM_MEDIA_TYPE *pmt)
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Mtype. h (incluir fluxos. h)</dt> </dl>                                                                                     |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Mtype.h (incluir Fluxos.h)</dt> </dl>                                                                                     |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

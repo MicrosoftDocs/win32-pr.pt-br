@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 1769ebb876fd2ae99c800a61b80d339a850ab232
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: e81c9be0723befc105ce9976ea8f2d1bddb859d7e4a83fd5fde3a1dfe93bfe35
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105754022"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120077676"
 ---
 # <a name="addnode-method-of-the-cim_clusteringservice-class"></a>Método AddNode da \_ classe ClusteringService do CIM
 
@@ -54,7 +54,7 @@ Referência ao sistema de computador para adicionar ao cluster.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor de 0 (zero) em êxito, 1 (um) se a operação não tiver suporte e qualquer outro número para indicar um erro.
 
