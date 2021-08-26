@@ -1,19 +1,19 @@
 ---
-description: Nível de volume médio de destino de um arquivo de áudio do Windows Media.
+description: Nível médio de volume de destino de um Windows de Áudio de Mídia.
 ms.assetid: f81158c8-b341-4b39-8fa4-b510c93b89fc
-title: Atributo MF_MT_AUDIO_WMADRC_AVGTARGET (Mfapi. h)
+title: MF_MT_AUDIO_WMADRC_AVGTARGET atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 41956e2e9e6f14e969cade3628f1e88bce98796d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2a05ef07966313d9b06bec57ec09af068f385bbc869cba7fab33e42e786dc63b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297475"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119940626"
 ---
-# <a name="mf_mt_audio_wmadrc_avgtarget-attribute"></a>\_Atributo MF MT \_ Audio \_ WMADRC \_ AVGTARGET
+# <a name="mf_mt_audio_wmadrc_avgtarget-attribute"></a>Atributo \_ MF MT \_ AUDIO \_ WMADRC \_ AVGTARGET
 
-Nível de volume médio de destino de um arquivo de áudio do Windows Media.
+Nível médio de volume de destino de um Windows de Áudio de Mídia.
 
 ## <a name="data-type"></a>Tipo de dados
 
@@ -21,11 +21,11 @@ Nível de volume médio de destino de um arquivo de áudio do Windows Media.
 
 ## <a name="remarks"></a>Comentários
 
-Esse atributo se aplica a tipos de mídia de áudio para codecs de áudio do Windows Media. Especifica o nível de volume médio de destino do conteúdo. O decodificador pode usar esse valor para executar o controle de intervalo dinâmico.
+Esse atributo se aplica a tipos de mídia de áudio para Windows de áudio de mídia. Ele especifica o nível de volume médio de destino do conteúdo. O decodificador pode usar esse valor para executar o controle de intervalo dinâmico.
 
-O método [**IMFASFContentInfo::P arseheader**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-parseheader) adiciona esse atributo ao tipo de mídia se o cabeçalho ASF contiver o atributo [**WM/WMADRCAverageTarget**](../wmformat/wm-wmadrcaveragetarget.md) . Esse atributo está documentado na documentação do Windows Media Format SDK.
+O [**método IMFASFContentInfo::P arseHeader**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-parseheader) adiciona esse atributo ao tipo de mídia se o header ASF contiver o atributo [**WM/WMADRCAverageTarget.**](../wmformat/wm-wmadrcaveragetarget.md) Esse atributo está documentado na documentação Windows do SDK de Formato de Mídia.
 
-A constante de GUID para esse atributo é exportada de mfuuid. lib.
+A constante GUID para esse atributo é exportada de mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -33,9 +33,9 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos \| UWP do Windows Vista desktop\]<br/>                              |
-| Servidor mínimo com suporte<br/> | Aplicativos do Windows Server 2008 \[ Desktop aplicativos \| UWP\]<br/>                        |
-| parâmetro<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Aplicativos \| UWP de aplicativos da área de trabalho do Vista\]<br/>                              |
+| Servidor mínimo com suporte<br/> | Windows Aplicativos \[ UWP do Server 2008 Desktop \|\]<br/>                        |
+| Cabeçalho<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -43,13 +43,13 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: setuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
 [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype)

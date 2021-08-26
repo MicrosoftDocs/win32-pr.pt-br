@@ -6,12 +6,12 @@ keywords:
 - acender Iluminação especular
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 61f2482d9631de7383c26e791d13f1571f247fa6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b9edc4c75eaa17369ba0d0d9f1838d8857053def9aaab3dacceb8bf761b9c04c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009241"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120000340"
 ---
 # <a name="spot-specular-lighting-effect"></a>Efeito de iluminação especular de spot
 
@@ -77,9 +77,9 @@ O vetor ![símbolo de vetor t](images/spot-mathchar-t.png) é definido por estas
 | SpecularExponent<br/> \_ \_ \_ Expoente especular de prop d2d1 SPOTSPECULAR \_<br/>       | O expoente do termo especular na equação de iluminação Phong. Um valor maior corresponde a uma superfície mais reflexiva. Esse valor não é unitário e deve estar entre 1,0 e 128. O tipo é FLOAT.<br/> O valor padrão é 1,0 f.<br/>                                                                                                                                                                                                                               |
 | SpecularConstant<br/> Constante de D2D1 \_ SPOTSPECULAR \_ prop \_ especulação \_<br/>       | A taxa de reflexão especular para a luz de entrada. O valor não é unitário e deve estar entre 0 e 10.000. O tipo é FLOAT.<br/> O valor padrão é 1,0 f.<br/>                                                                                                                                                                                                                                                                                                   |
 | SurfaceScale<br/> \_Escala de \_ superfície de prop d2d1 SPOTSPECULAR \_ \_<br/>               | O fator de escala na direção Z para gerar um mapa de altura. O valor não é unitário e deve estar entre 0 e 10.000. O tipo é FLOAT.<br/> O valor padrão é 1,0 f.<br/>                                                                                                                                                                                                                                                                                          |
-| Cor<br/> \_Cor de \_ prop d2d1 SPOTSPECULAR \_<br/>                               | A cor da luz de entrada. Essa propriedade é exposta como um vetor 3 (R, G, B) e usada para computar L<sub>R</sub>, l<sub>G</sub>, l<sub>B</sub>. O tipo é \_ 3F de vetor d2d1 \_ .<br/> O valor padrão é {1,0 f, 1,0 f, 1,0 f}.<br/>                                                                                                                                                                                                                                     |
-| KernelUnitLength<br/> \_Comprimento da \_ \_ unidade de kernel d2d1 SPOTSPECULAR prop \_ \_<br/>     | O tamanho de um elemento no kernel Sobel usado para gerar a superfície normal na direção X e Y. Essa propriedade é mapeada para os valores DX e dy no gradiente Sobel. Essa propriedade é um \_ vetor d2d1 \_ 2F (comprimento de unidade de kernel X, comprimento de unidade de kernel Y) e é definido em (unidade de kernel/DIPs). O efeito usa a interpolação bilinear para dimensionar o bitmap para corresponder ao tamanho dos elementos do kernel. O tipo é o \_ vetor d2d1 \_ 2F.<br/> O valor padrão é {1,0 f, 1,0 f}.<br/> |
-| ScaleMode<br/> \_Modo de \_ escala de prop d2d1 SPOTSPECULAR \_ \_<br/>                     | O modo de interpolação que o efeito usa para dimensionar a imagem para o comprimento da unidade de kernel correspondente. Há seis modos de escala que variam de qualidade e velocidade. Consulte [modos de escala](#scale-modes) para obter mais informações. <br/> O tipo é D2D1 \_ SPOTSPECULAR \_ Scale \_ Mode.<br/> O valor padrão é D2D1 \_ SPOTSPECULAR \_ Scale \_ mode \_ linear.<br/>                                                                                                                             |
+| Color<br/> \_Cor de \_ prop d2d1 SPOTSPECULAR \_<br/>                               | A cor da luz de entrada. Essa propriedade é exposta como um vetor 3 (R, G, B) e usada para computar L<sub>R</sub>, l<sub>G</sub>, l<sub>B</sub>. O tipo é \_ 3F de vetor d2d1 \_ .<br/> O valor padrão é {1,0 f, 1,0 f, 1,0 f}.<br/>                                                                                                                                                                                                                                     |
+| KernelUnitLength<br/> \_Comprimento da \_ \_ unidade de kernel d2d1 SPOTSPECULAR prop \_ \_<br/>     | O tamanho de um elemento no kernel Sobel usado para gerar a superfície normal na direção X e Y. Essa propriedade é mapeada para os valores DX e dy no gradiente Sobel. Essa propriedade é um \_ vetor d2d1 \_ 2F (comprimento de unidade de kernel X, comprimento de unidade de kernel Y) e é definido em (unidade de kernel/DIPs). O efeito usa a interpolação bilinear para dimensionar o bitmap para corresponder ao tamanho dos elementos do kernel. O tipo é o \_ vetor d2d1 \_ 2F.<br/> O valor padrão é {1.0f, 1.0f}.<br/> |
+| Scalemode<br/> D2D1 \_ SPOTSPECULAR \_ PROP \_ SCALE \_ MODE<br/>                     | O modo de interpolação que o efeito usa para dimensionar a imagem para o comprimento da unidade do kernel correspondente. Há seis modos de escala que variam em qualidade e velocidade. Consulte [Modos de escala para](#scale-modes) obter mais informações. <br/> O tipo é D2D1 \_ SPOTSPECULAR \_ SCALE \_ MODE.<br/> O valor padrão é D2D1 \_ SPOTSPECULAR \_ SCALE \_ MODE \_ LINEAR.<br/>                                                                                                                             |
 
 
 
@@ -91,19 +91,19 @@ O vetor ![símbolo de vetor t](images/spot-mathchar-t.png) é definido por estas
 
 | Enumeração                                            | Descrição                                                                                                                                                                                          |
 |--------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| D2D1 \_ SPOTSPECULAR \_ Scale \_ mode \_ mais próximo do \_ vizinho     | Amostra o ponto único mais próximo e o usa. Esse modo usa menos tempo de processamento, mas gera a imagem de qualidade mais baixa.                                                                           |
-| \_Modo de \_ escala d2d1 SPOTSPECULAR \_ \_ linear                | Usa uma amostra de quatro pontos e uma interpolação linear. Esse modo gera uma imagem de qualidade mais alta do que o vizinho mais próximo.                                                                                   |
-| \_Modo de \_ escala d2d1 SPOTSPECULAR \_ \_ cúbico                 | Usa um kernel cúbico de 16 amostras para interpolação. Esse modo usa o maior tempo de processamento, mas gera uma imagem de qualidade mais alta.                                                                        |
-| D2D1 \_ SPOTSPECULAR de \_ escala \_ múltipla de modo \_ \_ \_ linear | Usa quatro amostras lineares em um único pixel para suavização de multialias de borda. Esse modo é bom para reduzir horizontalmente por pequenas quantidades em imagens com poucos pixels.                                              |
-| \_Modo de \_ dimensionamento d2d1 SPOTSPECULAR \_ \_ ANISOTROPIC           | Usa a filtragem de anisotropic para exemplificar um padrão de acordo com a forma transformada do bitmap.                                                                                                     |
-| \_Modo de escala d2d1 SPOTSPECULAR de \_ \_ \_ alta \_ qualidade \_ cúbico  | Usa um kernel cúbico de tamanho variável de alta qualidade para executar uma imagem diminuir se downscaling estiver envolvido na matriz de transformação. Em seguida, usa o modo de interpolação cúbica para a saída final. |
+| D2D1 \_ SPOTSPECULAR \_ SCALE \_ MODE \_ NEAREST \_ NEIGHBOR     | Amostra o ponto único mais próximo e usa isso. Esse modo usa menos tempo de processamento, mas emita a imagem de qualidade mais baixa.                                                                           |
+| D2D1 \_ MODO DE ESCALAPECULAR \_ \_ \_ LINEAR                | Usa uma amostra de quatro pontos e interpolação linear. Esse modo saída de uma imagem de qualidade mais alta do que o vizinho mais próximo.                                                                                   |
+| D2D1 \_ SPOTSPECULAR \_ SCALE \_ MODE \_ CUBIC                 | Usa um kernel cúbica de 16 exemplos para interpolação. Esse modo usa a maior parte do tempo de processamento, mas emita uma imagem de qualidade mais alta.                                                                        |
+| D2D1 \_ SPOTSPECULAR \_ SCALE \_ MODE \_ MULTI \_ SAMPLE \_ LINEAR | Usa quatro exemplos lineares em um único pixel para uma boa suavização de borda. Esse modo é bom para escalar para baixo em pequenas quantidades em imagens com poucos pixels.                                              |
+| D2D1 \_ SPOTSPECULAR \_ SCALE MODE \_ \_ ANISOLE           | Usa a filtragem anisométrico para amostrar um padrão de acordo com a forma transformada do bitmap.                                                                                                     |
+| D2D1 \_ SPOTSPECULAR \_ SCALE \_ MODE \_ HIGH \_ QUALITY \_ CUBIC  | Usa um kernel cúbico de tamanho variável de alta qualidade para executar um pré-downscale da imagem se o downscaling estiver envolvido na matriz de transformação. Em seguida, usa o modo de interpolação cúbica para a saída final. |
 
 
 
  
 
 > [!Note]  
-> Se você não selecionar um modo, o efeito terá como padrão o \_ modo de escala d2d1 SPOTSPECULAR \_ \_ \_ linear.
+> Se você não selecionar um modo, o efeito assume como padrão D2D1 \_ SPOTSPECULAR \_ SCALE \_ MODE \_ LINEAR.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -111,10 +111,10 @@ O vetor ![símbolo de vetor t](images/spot-mathchar-t.png) é definido por estas
 
 | Requisito | Valor |
 |--------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho do Windows 7 \[ \| aplicativos da Windows Store\] |
-| Servidor mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho do Windows 7 \[ \| aplicativos da Windows Store\] |
-| parâmetro                   | d2d1effects. h                                                                      |
-| Biblioteca                  | d2d1. lib, dxguid. lib                                                               |
+| Cliente mínimo com suporte | Windows 8 e Atualização de plataforma para Windows 7 aplicativos da área de trabalho \[ \| Windows Store\] |
+| Servidor mínimo com suporte | Windows 8 e Atualização de plataforma para Windows 7 aplicativos da área de trabalho \[ \| Windows Store\] |
+| Cabeçalho                   | d2d1effects.h                                                                      |
+| Biblioteca                  | d2d1.lib, dxguid.lib                                                               |
 
 
 

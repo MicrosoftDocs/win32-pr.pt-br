@@ -1,17 +1,17 @@
 ---
 description: As funções a seguir são usadas com fontes e texto.
 ms.assetid: 69c04ed7-52da-4cb6-9fd2-f2a8c044df8b
-title: Funções de fonte e texto (GDI do Windows)
+title: funções de fonte e texto (Windows GDI)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d1a4dd6f000356dfb0e52c34fadef81bd6e8843e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e243ea92cf8fdcecc159495102caa70f6a9a55128acf6df9c6d83e1c2b84737a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104502422"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120015346"
 ---
-# <a name="font-and-text-functions-windows-gdi"></a>Funções de fonte e texto (GDI do Windows)
+# <a name="font-and-text-functions-windows-gdi"></a>funções de fonte e texto (Windows GDI)
 
 As funções a seguir são usadas com fontes e texto.
 
@@ -66,7 +66,7 @@ As funções a seguir são usadas com fontes e texto.
 | [**SetTextColor**](/windows/desktop/api/Wingdi/nf-wingdi-settextcolor)                       | Define a cor do texto para um contexto de dispositivo.                                                                            |
 | [**SetTextJustification**](/windows/desktop/api/Wingdi/nf-wingdi-settextjustification)       | Especifica a quantidade de espaço que o sistema deve adicionar aos caracteres de quebra em uma cadeia de caracteres.                             |
 | [**TabbedTextOut**](/windows/desktop/api/Winuser/nf-winuser-tabbedtextouta)                     | Grava uma cadeia de caracteres em um local, expandindo guias para valores especificados.                                         |
-| [**Texto**](/windows/desktop/api/Wingdi/nf-wingdi-textouta)                                 | Grava uma cadeia de caracteres em um local.                                                                             |
+| [**Textout**](/windows/desktop/api/Wingdi/nf-wingdi-textouta)                                 | Grava uma cadeia de caracteres em um local.                                                                             |
 
 
 
@@ -77,9 +77,9 @@ As funções a seguir são usadas com fontes e texto.
 Essas funções são fornecidas apenas para compatibilidade com versões de 16 bits do Windows.
 
 -   [**CreateScalableFontResource**](/windows/desktop/api/Wingdi/nf-wingdi-createscalablefontresourcea)
--   [**EnumFontFamilies**](/windows/desktop/api/Wingdi/nf-wingdi-enumfontfamiliesa)
+-   [**Enumfontfamilies**](/windows/desktop/api/Wingdi/nf-wingdi-enumfontfamiliesa)
 -   [**EnumFontFamProc**](/previous-versions//dd162621(v=vs.85))
--   [**EnumFonts**](/windows/desktop/api/Wingdi/nf-wingdi-enumfontsa)
+-   [**Enumfonts**](/windows/desktop/api/Wingdi/nf-wingdi-enumfontsa)
 -   [**EnumFontsProc**](/previous-versions//dd162623(v=vs.85))
 -   [**GetCharWidth**](/windows/desktop/api/Wingdi/nf-wingdi-getcharwidtha)
 -   [**GetTextExtentPoint**](/windows/desktop/api/WinGdi/nf-wingdi-gettextextentpointa)

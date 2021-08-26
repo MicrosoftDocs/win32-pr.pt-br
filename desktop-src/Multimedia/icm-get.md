@@ -1,9 +1,9 @@
 ---
 title: Mensagem de ICM_GET (VFW. h)
-description: A mensagem de obtenção de ICM \_ recupera um valor DWORD definido pelo aplicativo de um driver de compactação de vídeo.
+description: o ICM \_ obter mensagem recupera um valor DWORD definido pelo aplicativo de um driver de compactação de vídeo.
 ms.assetid: 288c0053-16a1-4547-b748-da218a0b588c
 keywords:
-- Multimídia do Windows de mensagem ICM_GET
+- mensagem de ICM_GET Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e23cd994546be41b5f938331b2dc632897635c32
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d8885faf7b0605378ace3004165004384a582c9d49a0a8ce047122c108b6cb8b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644398"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120038726"
 ---
-# <a name="icm_get-message"></a>\_Extrair mensagem do ICM
+# <a name="icm_get-message"></a>ICM \_ OBTER mensagem
 
-A mensagem de **\_ obtenção de ICM** recupera um valor **DWORD** definido pelo aplicativo de um driver de compactação de vídeo.
+o **ICM \_ obter** mensagem recupera um valor **DWORD** definido pelo aplicativo de um driver de compactação de vídeo.
 
 
 ```C++

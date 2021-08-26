@@ -1,43 +1,43 @@
 ---
-description: Filtro de origem de mídia do Windows
+description: Windows Filtro de origem de mídia
 ms.assetid: e59b3086-4f62-4541-8bef-b0581f01906f
-title: Filtro de origem de mídia do Windows
+title: Windows Filtro de origem de mídia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fa8e2c2f2e575a70d85fdce3d9b8d643e270f721
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: eb1e617a51095aec7cb409e46ba8f19f14f76fcd6f8d8a9bffeaa13843b1728b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107908994"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119982197"
 ---
-# <a name="windows-media-source-filter"></a>Filtro de origem de mídia do Windows
+# <a name="windows-media-source-filter"></a>Windows Filtro de origem de mídia
 
-Esse é o filtro de origem herdado para conteúdo de® de mídia do Windows. Ele é usado pelo Windows Media Player 6,4. Em geral, a maneira mais simples e confiável de usar esse filtro é usar o controle ActiveX do Windows Media Player 6,4. Muitos dos métodos expostos por esse filtro também são expostos por meio do controle ActiveX. Consulte o SDK do Windows Media Player para obter mais informações.
+Esse filtro é o filtro de origem herdado para Windows Mídia® conteúdo. Ele é usado pelo Windows Media Player 6.4. Em geral, a maneira mais simples e confiável de usar esse filtro é usar o Windows Media Player 6.4 ActiveX controle. Muitos dos métodos expostos por esse filtro também são expostos por meio do controle ActiveX dados. Consulte o Windows Media Player SDK para obter mais informações.
 
-Quando esse filtro recebe o nome de um arquivo ASF local ou uma URL para um arquivo remoto, ele lê o arquivo, analisa os fluxos compactados e cria um PIN de saída para cada um. Esse filtro não usa o Windows Media Format SDK. Ele usa as versões de codec instaláveis dos decodificadores de mídia do Windows, não as versões DMO. O PIN de saída de áudio sempre se conecta ao filtro do manipulador do ACM do ASF e o PIN do vídeo sempre se conecta ao manipulador do ASF ICM. (Nesse caso, o ICM se refere ao nome original do Gerenciador de compactação de vídeo.) O filtro não dá suporte à busca.
+Quando esse filtro recebe o nome de um arquivo ASF local ou uma URL para um arquivo remoto, ele lê o arquivo, analisado os fluxos compactados e cria um pino de saída para cada um deles. Esse filtro não usa o SDK Windows Formato de Mídia. Ele usa as versões de codec instaláveis dos decodificadores Windows Media, não as versões DMO. O pino de saída de áudio sempre se conecta ao filtro manipulador ACM do ASF e o pino de vídeo sempre se conecta ao manipulador de ICM ASF. (ICM nesse caso refere-se ao nome original do Gerenciador de Compactação de Vídeo.) O filtro não dá suporte à busca.
 
-O diagrama a seguir mostra um gráfico de filtro com este filtro.
+O diagrama a seguir mostra um grafo de filtro com esse filtro.
 
-![Grafo de filtro de origem do Windows Media](images/wms-wmv-graph.png)
+![grafo de filtro da fonte de mídia do Windows](images/wms-wmv-graph.png)
 
-Para manter a compatibilidade com versões anteriores com o Windows Media Player 6,4, esse filtro é o filtro de origem padrão para arquivos com extensões de arquivo. WMA,. wmv e. ASF. Para a reprodução de arquivos, os aplicativos mais recentes devem usar o filtro de [leitor ASF do WM](wm-asf-reader-filter.md) . No entanto, o leitor ASF do WM não oferece suporte à reprodução de conteúdo transmitido.
+Para manter a compatibilidade com compatibilidade com Windows Media Player 6.4, esse filtro é o filtro de origem padrão para arquivos com extensões de arquivo .wma, .wmv e .asf. Para reprodução de arquivo, os aplicativos mais novos devem usar o [filtro Leitor do WM ASF.](wm-asf-reader-filter.md) No entanto, o Leitor do WM ASF não dá suporte à reprodução de conteúdo transmitido.
 
-A maneira mais simples de um aplicativo reproduzir conteúdo baseado no Windows Media é usar o SDK do Windows Media Player. Outra opção é usar o Windows Media Format SDK. Não é recomendável tentar criar um player personalizado baseado no filtro de origem de mídia do Windows.
+A maneira mais simples para um aplicativo reproduzir conteúdo Windows baseado em mídia é usar o SDK do Windows Media Player. Outra opção é usar o SDK Windows Formato de Mídia. A tentativa de criar um player personalizado com base no filtro Windows fonte de mídia não é recomendada.
 
 
 
-| Label | Valor |
+| Rótulo | Valor |
 |------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Filtrar interfaces                        | [**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter), [**IAMChannelInfo**](/previous-versions/windows/desktop/api/Qnetwork/nn-qnetwork-iamchannelinfo), [**IAMExtendedSeeking**](/previous-versions/windows/desktop/api/Qnetwork/nn-qnetwork-iamextendedseeking), [**IAMMediaContent**](/previous-versions/windows/desktop/api/Qnetwork/nn-qnetwork-iammediacontent), [**IAMOpenProgress**](/windows/desktop/api/Strmif/nn-strmif-iamopenprogress), [**IAMNetShowConfig**](/previous-versions/windows/desktop/api/Qnetwork/nn-qnetwork-iamnetshowconfig), [**IAMNetShowExProps**](/previous-versions/windows/desktop/api/Qnetwork/nn-qnetwork-iamnetshowexprops), [**IAMNetShowPreroll**](/previous-versions/windows/desktop/api/Qnetwork/nn-qnetwork-iamnetshowpreroll), [**IAMNetworkStatus**](/previous-versions/windows/desktop/api/Qnetwork/nn-qnetwork-iamnetworkstatus), [**IFileSourceFilter**](/windows/desktop/api/Strmif/nn-strmif-ifilesourcefilter) |
+| Interfaces de filtro                        | [**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter), [**IAMChannelInfo**](/previous-versions/windows/desktop/api/Qnetwork/nn-qnetwork-iamchannelinfo), [**IAMExtendedSeeking**](/previous-versions/windows/desktop/api/Qnetwork/nn-qnetwork-iamextendedseeking), [**IAMMediaContent,**](/previous-versions/windows/desktop/api/Qnetwork/nn-qnetwork-iammediacontent) [**IAMOpenProgress**](/windows/desktop/api/Strmif/nn-strmif-iamopenprogress), [**IAMNetShowConfig**](/previous-versions/windows/desktop/api/Qnetwork/nn-qnetwork-iamnetshowconfig), [**IAMNetShowExProps,**](/previous-versions/windows/desktop/api/Qnetwork/nn-qnetwork-iamnetshowexprops) [**IAMNetShowPreroll**](/previous-versions/windows/desktop/api/Qnetwork/nn-qnetwork-iamnetshowpreroll), [**IAMNetworkStatus**](/previous-versions/windows/desktop/api/Qnetwork/nn-qnetwork-iamnetworkstatus), [**IFileSourceFilter**](/windows/desktop/api/Strmif/nn-strmif-ifilesourcefilter) |
 | Tipos de mídia de pino de entrada                    | Não aplicável.                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | Interfaces de pino de entrada                     | Não aplicável.                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| Tipos de mídia do pino de saída                   | Varia dependendo dos fluxos dentro do arquivo ASF.                                                                                                                                                                                                                                                                                                                                                                                                               |
-| Interfaces de pino de saída                    | [**IMediaSeeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking)                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| CLSID do filtro                             | Ver comentários                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Tipos de mídia de pino de saída                   | Varia dependendo dos fluxos dentro do arquivo ASF.                                                                                                                                                                                                                                                                                                                                                                                                               |
+| Interfaces de pino de saída                    | [**Imediaseeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking)                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Filtrar CLSID                             | Consulte Comentários                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | Executável                               | dxmasf.dll                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| [Núcleo](merit.md)                       | MÉRITO \_ normal                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| [Categoria do filtro](filter-categories.md) | \_LEGACYAMFILTERCATEGORY CLSID                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| [Mérito](merit.md)                       | NORMAL DE SEMPRE \_                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| [Categoria de filtro](filter-categories.md) | CLSID \_ LegacyAmFilterCategory                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
 
 
@@ -45,7 +45,7 @@ A maneira mais simples de um aplicativo reproduzir conteúdo baseado no Windows 
 
 ## <a name="remarks"></a>Comentários
 
-O CLSID do filtro não está definido em Qnetwork. h. Use esta macro em seu próprio arquivo de cabeçalho:
+O CLSID do filtro não está definido em qnetwork.h. Use essa macro em seu próprio arquivo de header:
 
 
 ```C++
@@ -60,13 +60,13 @@ DEFINE_GUID(CLSID_NetShowSource,
 
 <dl> <dt>
 
-[Filtros do DirectShow](directshow-filters.md)
+[DirectShow Filtros](directshow-filters.md)
 </dt> <dt>
 
 [Lendo arquivos ASF no DirectShow](reading-asf-files-in-directshow.md)
 </dt> <dt>
 
-[Filtro de leitor ASF do WM](wm-asf-reader-filter.md)
+[Filtro de Leitor do WM ASF](wm-asf-reader-filter.md)
 </dt> </dl>
 
  

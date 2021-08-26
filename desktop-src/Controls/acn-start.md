@@ -1,9 +1,9 @@
 ---
-title: ACN_START código de notificação (commctrl. h)
-description: Notifica uma janela pai do controle de animação que o clipe AVI associado começou a ser reproduzido. Esse código de notificação é enviado na forma de uma mensagem de comando do WM \_ .
+title: ACN_START de notificação (Commctrl.h)
+description: Notifica a janela pai de um controle de animação de que o clipe AVI associado começou a ser a reprodução. Esse código de notificação é enviado na forma de uma mensagem WM \_ COMMAND.
 ms.assetid: b4d12225-36f7-4f87-b58a-dac091d14e4c
 keywords:
-- ACN_START de código de notificação controles do Windows
+- ACN_START código de notificação Windows Controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b0354d8b2b41ea8690be47e70cbc577c064e579
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7ccfb5a1fc1f6b258cfe8363e99f38894ed7e601401d4f725431992a31f86376
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644404"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119922156"
 ---
-# <a name="acn_start-notification-code"></a>ACN \_ Iniciar código de notificação
+# <a name="acn_start-notification-code"></a>Código de \_ notificação ACN START
 
-Notifica uma janela pai do controle de animação que o clipe AVI associado começou a ser reproduzido. Esse código de notificação é enviado na forma de uma mensagem de [**\_ comando do WM**](/windows/desktop/menurc/wm-command) .
+Notifica a janela pai de um controle de animação de que o clipe AVI associado começou a ser a reprodução. Esse código de notificação é enviado na forma de uma mensagem [**WM \_ COMMAND.**](/windows/desktop/menurc/wm-command)
 
 
 ```C++
@@ -49,7 +49,7 @@ O [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) cont
 *lParam* 
 </dt> <dd>
 
-Um **HWND** que especifica o identificador para o controle de animação.
+Um **HWND que** especifica o alça para o controle de animação.
 
 </dd> </dl>
 
@@ -59,9 +59,9 @@ Um **HWND** que especifica o identificador para o controle de animação.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

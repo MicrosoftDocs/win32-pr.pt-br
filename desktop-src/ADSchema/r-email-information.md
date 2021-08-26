@@ -1,10 +1,10 @@
 ---
-title: Conjunto de propriedades Email-Information
+title: Email-Information de propriedades
 description: Conjunto de propriedades que contém atributos de usuário que descrevem informações relacionadas ao email do usuário.
 ms.assetid: 9effd519-5226-4f40-8149-32aa1d0941cf
 ms.tgt_platform: multiple
 keywords:
-- Conjunto de propriedades Email-Information definir esquema do AD
+- Email-Information conjunto de propriedades do AD Schema
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 310279b6f7dd7481b904542440c076c2006a8462
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 1e502dcdb1f2420ba238747c400d35ad2c6773d9ad28b8c37fb8d6d2d302a4bc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919653"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119922326"
 ---
-# <a name="email-information-property-set"></a>Conjunto de propriedades Email-Information
+# <a name="email-information-property-set"></a>Email-Information de propriedades
 
 Conjunto de propriedades que contém atributos de usuário que descrevem informações relacionadas ao email do usuário.
 
@@ -29,8 +29,8 @@ Conjunto de propriedades que contém atributos de usuário que descrevem informa
 | Entrada | Valor |
 |--------------|--------------------------------------|
 | CN           | Email-Information                    |
-| Display-Name | Opções de telefone e email               |
-| GUID de direitos  | e45795b2-9455-11d1-aebd-0000f80367c1 |
+| Display-Name | Telefone e opções de email               |
+| RIGHTS-GUID  | e45795b2-9455-11d1-aebd-0000f80367c1 |
 
 
 
@@ -38,7 +38,7 @@ Conjunto de propriedades que contém atributos de usuário que descrevem informa
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -50,8 +50,8 @@ Conjunto de propriedades que contém atributos de usuário que descrevem informa
 
 | Entrada | Valor |
 |-------------------------|-----------------------------------------------------------------------|
-| Applies-To              | [**Usuário**](c-user.md)<br/> [**Group**](c-group.md)<br/> |
-| Localização-exibição-ID | 22                                                                    |
+| Applies-To              | [**Usuário**](c-user.md)<br/> [**Grupo**](c-group.md)<br/> |
+| Localization-Display-ID | 22                                                                    |
 | Membros do conjunto de propriedades    | \-                                                                    |
 
 
@@ -62,20 +62,20 @@ Conjunto de propriedades que contém atributos de usuário que descrevem informa
 
 | Entrada | Valor |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Usuário**](c-user.md)<br/> [**Group**](c-group.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
-| Localização-exibição-ID | 22                                                                                                                        |
+| Applies-To              | [**Usuário**](c-user.md)<br/> [**Grupo**](c-group.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
+| Localization-Display-ID | 22                                                                                                                        |
 | Membros do conjunto de propriedades    | \-                                                                                                                        |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
 | Entrada | Valor |
 |-------------------------|-------------------------------------|
-| Applies-To              | [**Group**](c-group.md)<br/> |
-| Localização-exibição-ID | 22                                  |
+| Applies-To              | [**Grupo**](c-group.md)<br/> |
+| Localization-Display-ID | 22                                  |
 | Membros do conjunto de propriedades    | \-                                  |
 
 
@@ -86,8 +86,8 @@ Conjunto de propriedades que contém atributos de usuário que descrevem informa
 
 | Entrada | Valor |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Usuário**](c-user.md)<br/> [**Group**](c-group.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
-| Localização-exibição-ID | 22                                                                                                                        |
+| Applies-To              | [**Usuário**](c-user.md)<br/> [**Grupo**](c-group.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
+| Localization-Display-ID | 22                                                                                                                        |
 | Membros do conjunto de propriedades    | \-                                                                                                                        |
 
 
@@ -98,8 +98,8 @@ Conjunto de propriedades que contém atributos de usuário que descrevem informa
 
 | Entrada | Valor |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Usuário**](c-user.md)<br/> [**Group**](c-group.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
-| Localização-exibição-ID | 22                                                                                                                        |
+| Applies-To              | [**Usuário**](c-user.md)<br/> [**Grupo**](c-group.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
+| Localization-Display-ID | 22                                                                                                                        |
 | Membros do conjunto de propriedades    | \-                                                                                                                        |
 
 
@@ -110,8 +110,8 @@ Conjunto de propriedades que contém atributos de usuário que descrevem informa
 
 | Entrada | Valor |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Usuário**](c-user.md)<br/> [**Group**](c-group.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
-| Localização-exibição-ID | 22                                                                                                                        |
+| Applies-To              | [**Usuário**](c-user.md)<br/> [**Grupo**](c-group.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
+| Localization-Display-ID | 22                                                                                                                        |
 | Membros do conjunto de propriedades    | \-                                                                                                                        |
 
 
@@ -122,8 +122,8 @@ Conjunto de propriedades que contém atributos de usuário que descrevem informa
 
 | Entrada | Valor |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Usuário**](c-user.md)<br/> [**Group**](c-group.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
-| Localização-exibição-ID | 22                                                                                                                        |
+| Applies-To              | [**Usuário**](c-user.md)<br/> [**Grupo**](c-group.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
+| Localization-Display-ID | 22                                                                                                                        |
 | Membros do conjunto de propriedades    | \-                                                                                                                        |
 
 

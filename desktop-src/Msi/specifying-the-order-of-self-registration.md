@@ -4,16 +4,16 @@ ms.assetid: 46ee5ea2-35fd-4352-8a45-572d6fb5e080
 title: Especificando a ordem de auto-registro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d99587f6e6bdd8726f2cdc584fc2f399d81ae91
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9bb26fbebad3167fbea95679a1ea7a29c28946ae6fa2dd2b014be6ade986e28f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104461224"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120039676"
 ---
 # <a name="specifying-the-order-of-self-registration"></a>Especificando a ordem de auto-registro
 
-Observe que você não pode especificar a ordem na qual o instalador registra ou cancela o registro de DLLs de registro automático usando as ações [SelfRegModules](selfregmodules-action.md) e [SelfUnRegModules](selfunregmodules-action.md) . Essas ações registram todos os módulos listados na [tabela selfreg](selfreg-table.md). O instalador não registra automaticamente os arquivos. exe.
+Observe que você não pode especificar a ordem na qual o instalador registra ou cancela o registro de DLLs de registro automático usando as ações [SelfRegModules](selfregmodules-action.md) e [SelfUnRegModules](selfunregmodules-action.md) . Essas ações registram todos os módulos listados na [tabela selfreg](selfreg-table.md). O instalador não registra automaticamente .exe arquivos.
 
 Para especificar a ordem na qual o instalador registra ou cancela o registro de módulos, você deve usar duas [ações personalizadas](custom-actions.md) para cada módulo. Uma ação personalizada para DllRegisterServer e um segundo para DllUnregisterServer. Essas ações personalizadas devem então ser criadas na [tabela InstallExecuteSequence](installexecutesequence-table.md) no ponto na sequência onde quer que a dll seja registrada ou cancelada.
 

@@ -3,9 +3,9 @@ title: Método IWMPPlaylistCollection getByName
 description: O método getByName retorna uma interface IWMPPlaylistArray que fornece acesso a listas de reprodução com o nome especificado, se existir.
 ms.assetid: d41afab1-4103-4f59-a432-21a502499444
 keywords:
-- método getByName Windows Media Player
+- Windows Media Player do método getByName
 - método getByName Windows Media Player, interface IWMPPlaylistCollection
-- Interface IWMPPlaylistCollection Windows Media Player, método getByName
+- Windows Media Player de interface IWMPPlaylistCollection, método getByName
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e51f83b4db019286c04762a081e649fec282135e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4fcee45af3ef55d53a05bab290fa92d3e6842fbb097358235b6720cbb1b54e0d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105771619"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119999736"
 ---
 # <a name="iwmpplaylistcollectiongetbyname-method"></a>Método IWMPPlaylistCollection:: getByName
 
@@ -60,7 +60,7 @@ Um **System. String** que é o nome da playlist.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Uma interface **WMPLib. IWMPPlaylistArray** para a matriz de listas de reprodução recuperada.
 

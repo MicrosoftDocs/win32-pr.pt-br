@@ -1,25 +1,25 @@
 ---
-description: Como a atualização altera o nome do arquivo. msi e altera o código do componente de alguns componentes, o código do produto da atualização deve ser alterado do produto original.
+description: Como a atualização altera o nome do arquivo .msi e altera o código do componente de alguns componentes, o código do produto da atualização deve ser alterado do produto original.
 ms.assetid: ebb1a217-fce6-43f0-9139-c0f4422c8fc4
-title: Atualizando Propriedades para uma atualização
+title: Atualizando propriedades para uma atualização
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 750c30a75650ff4009dda799b0542f41f535481f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 99d340f56eaf78c585e28a52dc7b310bf1af047d7530e61b841267bc0b83251a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011719"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120039176"
 ---
-# <a name="updating-properties-for-an-upgrade"></a>Atualizando Propriedades para uma atualização
+# <a name="updating-properties-for-an-upgrade"></a>Atualizando propriedades para uma atualização
 
-Como a atualização altera o nome do arquivo. msi e altera o código do componente de alguns componentes, o código do produto da atualização deve ser alterado do produto original. Para obter uma descrição dos casos em que uma atualização é necessária para alterar a propriedade [**ProductCode**](productcode.md) , consulte [alterando o código do produto](changing-the-product-code.md). Uma atualização que altera o ProductCode é conhecida como uma [atualização principal](major-upgrades.md).
+Como a atualização altera o nome do arquivo .msi e altera o código do componente de alguns componentes, o código do produto da atualização deve ser alterado do produto original. Para ver uma descrição dos casos em que uma atualização é necessária para alterar a [**propriedade ProductCode,**](productcode.md) consulte [Alterando o código do produto](changing-the-product-code.md). Uma atualização que altera o ProductCode é conhecida como atualização [principal.](major-upgrades.md)
 
-A propriedade [**ProductName**](productname.md) do pacote de atualização, a propriedade [**ProductVersion**](productversion.md) , a propriedade [**ProductLanguage**](productlanguage.md) e a propriedade [**UpgradeCode**](upgradecode.md) podem ser alteradas ou deixadas inalteradas, do produto original. Com base nos valores dessas propriedades, Windows Installer pode determinar se deseja aplicar pacotes de atualização futuros à atualização atual.
+A propriedade [**ProductName**](productname.md) do pacote de atualização, a propriedade [**ProductVersion,**](productversion.md) a propriedade [**ProductLanguage**](productlanguage.md) e a propriedade [**UpgradeCode**](upgradecode.md) podem ser alteradas ou deixadas inalteradas do produto original. Com base nos valores dessas propriedades, Windows Instalador pode determinar se os pacotes de atualização futuros serão aplicados à atualização atual.
 
-A propriedade especificada na coluna Actionproperty da tabela de [atualização](upgrade-table.md) deve ser adicionada à propriedade [**SecureCustomProperties**](securecustomproperties.md) .
+A propriedade especificada na coluna ActionProperty da tabela [Upgrade](upgrade-table.md) deve ser adicionada à [**propriedade SecureCustomProperties.**](securecustomproperties.md)
 
-Use o editor de banco de dados para abrir MNP2001.msi e insira os dados a seguir na [tabela de propriedades](property-table.md). A lista fornece links para os tópicos de referência para as propriedades internas do instalador. Os nomes de propriedade que não são links são propriedades definidas pelo autor. Muitas das propriedades foram importadas de Uisample.msi que acompanham o SDK. Para obter detalhes, consulte [importando a interface do usuário](importing-the-user-interface.md).
+Use o editor de banco de dados para MNP2001.msi e insira os dados a seguir na [tabela Propriedade](property-table.md). A lista fornece links para os tópicos de referência para propriedades do instalador internos. Os nomes de propriedade que não são links são propriedades definidas pelo autor. Muitas das propriedades foram importadas do Uisample.msi que vem com o SDK. Para obter detalhes, [consulte Importando o Interface do Usuário](importing-the-user-interface.md).
 
 [Tabela de propriedades](property-table.md)
 
@@ -29,43 +29,43 @@ Use o editor de banco de dados para abrir MNP2001.msi e insira os dados a seguir
 |--------------------------------------------------|-------------------------------------------|
 | [**ARPHELPLINK**](arphelplink.md)               | https://www.microsoft.com/management       |
 | BannerBitmap                                     | bannrbmp                                  |
-| ButtonText \_ voltar                                 | < &de volta                                |
-| ButtonText \_ procurar                               | Br&owse                                   |
-| ButtonText \_ cancelar                               | Cancelar                                    |
-| ButtonText \_ sair                                 | &sair                                     |
-| ButtonText \_ concluir                               | &concluir                                   |
-| \_Ignorar ButtonText                               | Ignorar &                                   |
-| ButtonText \_ instalar                              | &instalar                                  |
-| ButtonText \_ próximo                                 | &próximo >                                |
-| ButtonText \_ não                                   | &não                                       |
+| ButtonText \_ Back                                 | < &Voltar                                |
+| ButtonText \_ Browse                               | Br&owse                                   |
+| ButtonText \_ Cancel                               | Cancelar                                    |
+| Saída \_ de ButtonText                                 | &sair                                     |
+| ButtonText \_ Finish                               | &concluir                                   |
+| ButtonText \_ Ignore                               | &Ignorar                                   |
+| Instalação \_ de ButtonText                              | &instalação                                  |
+| ButtonText \_ Next                                 | &próximo >                                |
+| ButtonText \_ Não                                   | &Não                                       |
 | ButtonText \_ OK                                   | OK                                        |
-| ButtonText \_ remover                               | &remover                                   |
-| Redefinição de ButtonText \_                                | Redefinição de &                                    |
-| Retomar ButtonText \_                               | Retomar &                                   |
-| Repetição de ButtonText \_                                | Tentar novamente &                                    |
-| ButtonText \_ retornar                               | &retornar                                   |
+| ButtonText \_ Remove                               | &Remover                                   |
+| ButtonText \_ Reset                                | &redefinição                                    |
+| ButtonText \_ Resume                               | &retomar                                   |
+| ButtonText \_ Retry                                | &repetir                                    |
+| Retorno \_ de ButtonText                               | &retorno                                   |
 | ButtonText \_ Sim                                  | &Sim                                      |
-| CompleteSetupIcon                                | completo                                  |
+| CompleteSetupIcon                                | completi                                  |
 | ComponentDownload                                | ftp://anonymous@microsoft.com/components/ |
 | CustomSetupIcon                                  | custicon                                  |
 | [**DefaultUIFont**](defaultuifont.md)           | DlgFont8                                  |
 | DialogBitmap                                     | dlgbmp                                    |
 | DlgTitleFont                                     | {&DlgFontBold8}                           |
 | ErrorDialog                                      | ErrorDlg                                  |
-| ExclamationIcon                                  | exclamated                                  |
+| ExclamationIcon                                  | exclama                                  |
 | Falso                                            | 0                                         |
-| Iagree                                           | No                                        |
+| Iagree                                           | Não                                        |
 | InfoIcon                                         | informações                                      |
 | InstallerIcon                                    | insticon                                  |
 | [**INSTALLLEVEL**](installlevel.md)             | 3                                         |
 | InstallMode                                      | Típico                                   |
-| [**Manufacturer**](manufacturer.md)             | Microsoft                                 |
+| [**Fabricante**](manufacturer.md)             | Microsoft                                 |
 | [**PIDTemplate**](pidtemplate.md)               | 12345<\#\#\#-%%%%%%%>@@@@@          |
 | [**ProductCode**](productcode.md)               | {34CF587C-1D8F-4DD5-ADFE-440F4B593987}    |
-| [**ProductID**](productid.md)                   | nenhum                                      |
+| [**Productid**](productid.md)                   | nenhum                                      |
 | [**ProductLanguage**](productlanguage.md)       | 1046                                      |
-| [**ProductName**](productname.md)               | MNP2001                                   |
-| [**ProductVersion**](productversion.md)         | 01.50.0000                                |
+| [**Productname**](productname.md)               | MNP2001                                   |
+| [**Productversion**](productversion.md)         | 01.50.0000                                |
 | Progress1                                        | Instalando                                |
 | Progress2                                        | installs                                  |
 | [**PROMPTROLLBACKCOST**](promptrollbackcost.md) | P                                         |

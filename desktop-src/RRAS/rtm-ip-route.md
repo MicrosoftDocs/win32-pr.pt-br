@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1978503a3ec37e0c39716569030d5ea6599e19d9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0fd854864dcc61397fa52df7af9419a38ac829a81382be6b6190e4cb3db41d7c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105778525"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120026726"
 ---
 # <a name="rtm_ip_route-structure"></a>Estrutura de rota de \_ IP RTM \_
 
-\[Essa API foi substituída pela API do [Gerenciador de tabela de roteamento versão 2](about-routing-table-manager-version-2.md) e não estará disponível além do Windows Server 2003. Os aplicativos devem usar a API da versão 2 do Gerenciador de tabela de roteamento.\]
+\[esta api foi substituída pela api do [gerenciador de tabela de roteamento versão 2](about-routing-table-manager-version-2.md) e não estará disponível além do Windows Server 2003. Os aplicativos devem usar a API da versão 2 do Gerenciador de tabela de roteamento.\]
 
 A estrutura de **\_ \_ rota de IP RTM** contém informações que descrevem uma rota de propriedade da família de protocolos IP.
 
@@ -111,7 +111,7 @@ Os membros da estrutura **de \_ \_ rota de IP RTM** são alinhados em **DWORD** 
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                        |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                             |
 | Fim do suporte do servidor<br/>    | Windows Server 2003<br/>                                                   |
-| parâmetro<br/>                   | <dl> <dt>RTM. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>RTM. h</dt> </dl> |
 
 
 

@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 983f0520ccc50fa1683d4b8254ac436fff7491a1
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b6682d8987f2df3ba3fb06427d41b722abb5eb003a4226a155c104cc3239d0f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103916416"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119982756"
 ---
 # <a name="input-register"></a>Registro de entrada
 
@@ -28,14 +28,14 @@ As propriedades de registro a seguir controlam como cada registro se comporta:
 
 | Propriedade        | Descrição                                                                                   |
 |-----------------|-----------------------------------------------------------------------------------------------|
-| Name            | v \[ n \] -n é um número de registro opcional. 0 é o valor padrão usado, se for omitido.     |
+| Nome            | v \[ n \] -n é um número de registro opcional. 0 é o valor padrão usado, se for omitido.     |
 | Contagem           | Um máximo de 16 registros, V0-v15.                                                          |
 | Permissões de e/s | Somente leitura. Esse registro não pode ser gravado pela API ou dentro do sombreador.                   |
 | Portas de leitura      | 1. este é o número de vezes que um registro pode ser lido em uma única instrução. Veja abaixo. |
 
 
 
- 
+ 
 
 Qualquer instrução única pode acessar apenas um registro de entrada de vértice. No entanto, cada fonte na instrução pode Swizzler e negar de forma independente o vetor conforme ele é lido.
 
@@ -73,7 +73,7 @@ dcl_position v0
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -82,9 +82,9 @@ dcl_position v0
 [Registros de sombreador de vértice](dx9-graphics-reference-asm-vs-registers.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

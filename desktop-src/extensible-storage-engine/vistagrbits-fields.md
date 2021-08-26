@@ -1,25 +1,25 @@
 ---
-description: 'Saiba mais sobre: campos VistaGrbits'
-title: Campos VistaGrbits (Microsoft. ISAM. ESENT. Interop. vista)
+description: 'Saiba mais sobre: Campos do VistaGrbits'
+title: Campos do VistaGrbits (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: VistaGrbits fields
 ms:assetid: Fields.T:Microsoft.Isam.Esent.Interop.Vista.VistaGrbits
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.vistagrbits_fields(v=EXCHG.10)
 ms:contentKeyID: 55104318
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 3694dae8c55a5da838b8fcc058b369d7f0a59ed9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d81a176d04911f2c76767838a62e5202f9e80c059112c703a3673644fddb76f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103837445"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119967566"
 ---
-# <a name="vistagrbits-fields"></a>Campos VistaGrbits
+# <a name="vistagrbits-fields"></a>Campos do VistaGrbits
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo [VistaGrbits](./vistagrbits-class.md) expõe os membros a seguir.
+O [tipo VistaGrbits](./vistagrbits-class.md) expõe os membros a seguir.
 
 ## <a name="fields"></a>Campos
 
@@ -40,42 +40,42 @@ O tipo [VistaGrbits](./vistagrbits-class.md) expõe os membros a seguir.
 <tr class="even">
 <td><img src="../images/hh596466.pubfield(exchg.10).gif" title="Campo público" alt="Public field" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
 <td><a href="dn335364(v=exchg.10).md">IndexCrossProduct</a></td>
-<td>A especificação desse sinalizador para um índice que tenha mais de uma coluna de chave que seja uma coluna com vários valores resultará na criação de uma entrada de índice para cada resultado de um produto cruzado de todos os valores nessas colunas de chave. Caso contrário, o índice teria apenas uma entrada para cada valor múltiplo na coluna de chave mais significativa, que é uma coluna com vários valores, e cada uma dessas entradas de índice usaria o primeiro valor múltiplo de outras colunas de chave que são colunas com valores múltiplos. Por exemplo, se você tiver especificado esse sinalizador para um índice na coluna A que tem os valores &quot; vermelho &quot; e &quot; azul &quot; e acima da coluna B que tem os valores &quot; 1 &quot; e &quot; 2 &quot; , as seguintes entradas de índice serão criadas: &quot; vermelho &quot; , &quot; 1 &quot; ; &quot; vermelho &quot; , &quot; 2 &quot; ; &quot; azul &quot; , &quot; 1 &quot; ; &quot; azul &quot; , &quot; 2 &quot; . Caso contrário, as seguintes entradas de índice seriam criadas: &quot; vermelho &quot; , &quot; 1 &quot; ; &quot; azul &quot; , &quot; 1 &quot; .</td>
+<td>Especificar esse sinalizador para um índice que tem mais de uma coluna de chave que é uma coluna com vários valores resultará na criação de uma entrada de índice para cada resultado de um produto cruzado de todos os valores nessas colunas de chave. Caso contrário, o índice teria apenas uma entrada para cada valor múltiplo na coluna de chave mais significativa que é uma coluna com valores múltiplos e cada uma dessas entradas de índice usaria o primeiro valor múltiplo de qualquer outra coluna de chave que são colunas com valores múltiplos. Por exemplo, se você especificou esse sinalizador para um índice sobre a coluna A que tem os valores vermelho e azul e sobre a coluna B que tem os valores 1 e 2, as seguintes entradas de índice serão &quot; criadas: &quot; &quot; vermelho , &quot; &quot; &quot; &quot; &quot; &quot; &quot; &quot; 1 &quot; ; &quot; vermelho, &quot; &quot; 2 &quot; ; &quot; azul &quot; , &quot; 1 &quot; ; &quot; azul &quot; , &quot; 2 &quot; . Caso contrário, as seguintes entradas de índice seriam criadas: &quot; vermelho &quot; , &quot; 1 &quot; ; &quot; azul &quot; , &quot; 1 &quot; .</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/hh596466.pubfield(exchg.10).gif" title="Campo público" alt="Public field" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
 <td><a href="dn335368(v=exchg.10).md">IndexDisallowTruncation</a></td>
-<td>A especificação desse sinalizador fará com que qualquer atualização para o índice resulte em uma chave truncada falhe com <a href="hh564840(v=exchg.10).md">keytruncate</a>. Caso contrário, as chaves serão truncadas silenciosamente.</td>
+<td>Especificar esse sinalizador fará com que qualquer atualização no índice que resulte em uma chave truncada falhe com <a href="hh564840(v=exchg.10).md">KeyTruncated.</a> Caso contrário, as chaves serão silenciosamente truncadas.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/hh596466.pubfield(exchg.10).gif" title="Campo público" alt="Public field" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
 <td><a href="dn351285(v=exchg.10).md">IndexNestedTable</a></td>
-<td>Indexar várias colunas com vários valores, mas apenas com valores do mesmo itagSequence.</td>
+<td>Indexe em várias colunas com vários valores, mas apenas com valores do mesmo itagSequence.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/hh596466.pubfield(exchg.10).gif" title="Campo público" alt="Public field" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
 <td><a href="dn335282(v=exchg.10).md">LogStreamMustExist</a></td>
-<td>Os logs de transações devem existir no diretório do arquivo de log (ou seja, não é possível iniciar automaticamente um novo fluxo).</td>
+<td>Os logs de transação devem existir no diretório do arquivo de log (ou seja, não podem iniciar automaticamente um novo fluxo).</td>
 </tr>
 <tr class="even">
 <td><img src="../images/hh596466.pubfield(exchg.10).gif" title="Campo público" alt="Public field" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
 <td><a href="dn335367(v=exchg.10).md">RecoveryWithoutUndo</a></td>
-<td>Execute a recuperação, mas pare na fase de desfazer. Permite que os logs presentes sejam reproduzidos e, posteriormente, os logs adicionais possam ser copiados e reproduzidos.</td>
+<td>Execute a recuperação, mas pare na fase Desfazer. Permite que todos os logs presentes sejam reproduzidos e, em seguida, logs adicionais posteriores podem ser copiados e reproduzidos.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/hh596466.pubfield(exchg.10).gif" title="Campo público" alt="Public field" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
 <td><a href="dn335375(v=exchg.10).md">ReplayMissingMapEntryDB</a></td>
-<td>Padrão de entrada de mapa de banco de dados ausente para o mesmo local.</td>
+<td>Entrada de mapa de banco de dados ausente padrão para o mesmo local.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/hh596466.pubfield(exchg.10).gif" title="Campo público" alt="Public field" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
 <td><a href="dn335283(v=exchg.10).md">TruncateDone</a></td>
-<td>O mecanismo pode marcar os cabeçalhos do banco de dados conforme apropriado (por exemplo, um backup completo concluído), mesmo que a chamada para truncar não tenha sido concluída.</td>
+<td>O mecanismo pode marcar os headers de banco de dados conforme apropriado (por exemplo, um backup completo concluído), mesmo que a chamada para truncar não tenha sido concluída.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/hh596466.pubfield(exchg.10).gif" title="Campo público" alt="Public field" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
 <td><a href="dn335371(v=exchg.10).md">TruncateLogsAfterRecovery</a></td>
-<td>Na recuperação reversível bem-sucedida, TRUNCATE os arquivos de log.</td>
+<td>Na recuperação suave bem-sucedida, truncar arquivos de log.</td>
 </tr>
 </tbody>
 </table>
@@ -89,4 +89,4 @@ Parte superior
 
 [Classe VistaGrbits](./vistagrbits-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

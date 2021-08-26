@@ -4,30 +4,30 @@ description: Um controle de animação é uma janela que exibe um clipe AVI (int
 ms.assetid: 6be69d1a-5b2c-41d5-b6d7-e86ddac2cb0d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1625828e5f4febce7314da365c9db93ce3a07136
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: 57a2a579334fe266499884ccf40ad1154b3465ffd301c92643f248ff2664ed4a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "105769036"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119921786"
 ---
 # <a name="about-animation-controls"></a>Sobre os controles de animação
 
 Um *controle de animação* é uma janela que exibe um clipe AVI (intercalado Audio-Video). Um clipe AVI é uma série de quadros de bitmap como um filme. Os controles de animação só podem exibir clipes AVI que não contenham áudio.
 
-Um uso comum para um controle de animação é indicar a atividade do sistema durante uma operação demorada. Isso é possível porque o thread de operação continua em execução enquanto o clipe AVI é exibido. Por exemplo, a caixa de diálogo Localizar do Windows Explorer exibe uma lupa de movimentação à medida que o sistema procura um arquivo.
+Um uso comum para um controle de animação é indicar a atividade do sistema durante uma operação demorada. Isso é possível porque o thread de operação continua em execução enquanto o clipe AVI é exibido. por exemplo, a caixa de diálogo localizar do Windows Explorer exibe uma lupa de movimentação à medida que o sistema procura um arquivo.
 
 > [!Note]  
 > Se você estiver usando ComCtl32.dll versão 6, o thread não terá suporte; Verifique se o aplicativo não bloqueia a interface do usuário ou se a animação não ocorrerá.
 
- 
+ 
 
 Um controle de animação pode exibir um clipe AVI originado de um arquivo AVI descompactado ou de um arquivo AVI que foi compactado usando a codificação de tamanho de execução (BI \_ RLE8). Você pode adicionar o clipe AVI ao seu aplicativo como um recurso AVI ou o clipe pode acompanhar seu aplicativo como um arquivo AVI separado.
 
 > [!Note]  
 > O arquivo AVI ou recurso não deve ter um canal de som. Os recursos do controle de animação são muito limitados e estão sujeitos a alterações. Se você precisar de um controle para fornecer recursos de reprodução e gravação de multimídia para seu aplicativo, poderá usar o controle MCIWnd. Para obter mais informações, consulte [classe de janela MCIWnd](/windows/desktop/Multimedia/mciwnd-window-class).
 
- 
+ 
 
 Esta seção aborda os tópicos a seguir.
 
@@ -71,8 +71,8 @@ Esta seção descreve as mensagens de janela tratadas pelo procedimento de janel
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 

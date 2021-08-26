@@ -4,24 +4,24 @@ ms.assetid: 97432b99-e89b-4d69-963d-a959f887e580
 title: Filtro de captura de vídeo WDM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b17afb9b4ee534146ef7b8e8c34d9594f6b9e45e
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: deeaae173fc629eb1b614b02cc6daca809d126c6798a35f29e54a441ef622e97
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107908634"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119982516"
 ---
 # <a name="wdm-video-capture-filter"></a>Filtro de captura de vídeo WDM
 
-O filtro de captura de vídeo WDM controla dispositivos de captura analógica que usam drivers Windows Driver Model (WDM).
+o filtro de captura de vídeo WDM controla dispositivos de captura analógica que usam drivers Windows Driver Model (WDM).
 
-Esse filtro é, na verdade, um plug-in KsProxy de modo kernel. Ele fornece páginas de propriedades e as interfaces COM para drivers WDM que controlam dispositivos de captura analógica (também chamados de decodificadores de vídeo analógico). Um aplicativo pode tratá-lo simplesmente como um filtro. Para adicionar esse filtro a um grafo de filtro, use o [enumerador de dispositivo do sistema](system-device-enumerator.md). Ele retorna um moniker exclusivo para cada dispositivo que usa esse plug-in. Para obter mais informações, consulte [enumerando dispositivos e filtros](enumerating-devices-and-filters.md) e [como os dispositivos de hardware participam do grafo de filtro](how-hardware-devices-participate-in-the-filter-graph.md). Assim como ocorre com qualquer filtro baseado em KsProxy, o nome amigável do filtro dependerá do driver subjacente.
+Esse filtro é, na verdade, um plug-in KsProxy de modo kernel. Ele fornece páginas de propriedades e as interfaces COM para drivers WDM que controlam dispositivos de captura analógica (também chamados de decodificadores de vídeo analógico). Um aplicativo pode tratá-lo simplesmente como um filtro. Para adicionar esse filtro a um grafo de filtro, use o [enumerador de dispositivo do sistema](system-device-enumerator.md). Ele retorna um moniker exclusivo para cada dispositivo que usa esse plug-in. Para obter mais informações, consulte [enumerando dispositivos e filtros](enumerating-devices-and-filters.md) e [como os dispositivos de hardware participam do filtro Graph](how-hardware-devices-participate-in-the-filter-graph.md). Assim como ocorre com qualquer filtro baseado em KsProxy, o nome amigável do filtro dependerá do driver subjacente.
 
 Nem todos os dispositivos expostos por meio do filtro de captura de vídeo WDM implementarão todas as interfaces listadas abaixo. O aplicativo pode usar **QueryInterface** para determinar quais interfaces têm suporte em um determinado dispositivo.
 
 
 
-| Label | Valor |
+| Rótulo | Valor |
 |------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Filtrar interfaces                        | O driver WDM para o dispositivo pode oferecer suporte a um ou mais dos seguintes: [**IAMAnalogVideoDecoder**](/windows/desktop/api/Strmif/nn-strmif-iamanalogvideodecoder), [**IAMCameraControl**](/windows/desktop/api/Strmif/nn-strmif-iamcameracontrol), [**IAMDeviceRemoval**](/windows/desktop/api/Strmif/nn-strmif-iamdeviceremoval), [**IAMDroppedFrames**](/windows/desktop/api/Strmif/nn-strmif-iamdroppedframes), [**IAMExtDevice**](/windows/desktop/api/Strmif/nn-strmif-iamextdevice), [**IAMExtTransport**](/windows/desktop/api/Strmif/nn-strmif-iamexttransport), [**IAMFilterMiscFlags**](/windows/desktop/api/Strmif/nn-strmif-iamfiltermiscflags), [**IAMTimecodeReader**](/windows/desktop/api/Strmif/nn-strmif-iamtimecodereader), [**IAMVideoCompression**](/windows/desktop/api/Strmif/nn-strmif-iamvideocompression), [**IAMVideoControl**](/windows/desktop/api/Strmif/nn-strmif-iamvideocontrol), [**IAMVideoProcAmp**](/windows/desktop/api/Strmif/nn-strmif-iamvideoprocamp), [**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter), [**IKsPropertySet**](ikspropertyset.md), [**IMediaSeeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking), [**IReferenceClock**](/windows/desktop/api/Strmif/nn-strmif-ireferenceclock), **ISpecifyPropertyPages**. |
 | Tipos de mídia de pino de entrada                    | Dependente de driver.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
@@ -42,7 +42,7 @@ Nem todos os dispositivos expostos por meio do filtro de captura de vídeo WDM i
 
 <dl> <dt>
 
-[Filtros do DirectShow](directshow-filters.md)
+[DirectShow Filter](directshow-filters.md)
 </dt> <dt>
 
 [Captura de vídeo](video-capture.md)

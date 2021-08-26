@@ -1,9 +1,9 @@
 ---
 title: WM_POINTERHWHEEL mensagem
-description: Postado na janela com o foco do teclado de primeiro plano quando uma roda de rolagem horizontal é girada.
+description: Postado na janela com o foco do teclado em primeiro plano quando uma roda de rolagem horizontal é girada.
 ms.assetid: 6eec37da-2200-4be1-bf0b-44504caa1320
 keywords:
-- Mensagens de entrada e notificações de WM_POINTERHWHEEL mensagem
+- WM_POINTERHWHEEL mensagens de entrada e notificações
 topic_type:
 - apiref
 api_name:
@@ -14,21 +14,21 @@ api_type:
 - HeaderDef
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: 5817d5ed243363c82038dc3df2d8f1e337079076
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9de03b198603f06b4c1c1401714bd2fd5edfe28784890c4b9ab00a025dbaab7a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369801"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120015227"
 ---
 # <a name="wm_pointerhwheel-message"></a>WM_POINTERHWHEEL mensagem
 
-Postado na janela com o foco do teclado de primeiro plano quando uma roda de rolagem horizontal é girada.
+Postado na janela com o foco do teclado em primeiro plano quando uma roda de rolagem horizontal é girada.
 
-Uma janela recebe essa mensagem por meio de sua função [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Uma janela recebe essa mensagem por meio de [**sua função WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
-> \[! Fundamental\]  
-> Os aplicativos da área de trabalho devem ter reconhecimento de DPI. Se seu aplicativo não tiver reconhecimento de DPI, as coordenadas de tela contidas nas mensagens de ponteiro e estruturas relacionadas poderão parecer imprecisas devido à virtualização de DPI. A virtualização de DPI fornece suporte de dimensionamento automático para aplicativos que não têm reconhecimento de DPI e está ativo por padrão (os usuários podem desativá-lo). Para obter mais informações, consulte [Writing High-DPI Win32 Applications](/previous-versions//dd464660(v=vs.85)).
+> \[! Importante\]  
+> Os aplicativos da área de trabalho devem estar cientes de DPI. Se o aplicativo não estiver ciente de DPI, as coordenadas de tela contidas em mensagens de ponteiro e estruturas relacionadas poderão aparecer imprecisas devido à virtualização de DPI. A virtualização de DPI oferece suporte de dimensionamento automático para aplicativos que não têm conhecimento de DPI e estão ativos por padrão (os usuários podem desativar). Para obter mais informações, consulte [Escrevendo aplicativos Win32 de alto DPI.](/previous-versions//dd464660(v=vs.85))
 
  
 
@@ -46,11 +46,11 @@ Uma janela recebe essa mensagem por meio de sua função [**WindowProc**](/previ
 *wParam* 
 </dt> <dd>
 
-Contém o identificador de ponteiro e o Delta de roda. Use as macros a seguir para recuperar essas informações.
+Contém o identificador de ponteiro e o delta da roda. Use as macros a seguir para recuperar essas informações.
 
 [**GET_POINTERID_WPARAM**](/previous-versions/windows/desktop/api)(wParam): identificador de ponteiro.
 
-[**GET_WHEEL_DELTA_WPARAM**](/windows/win32/api/winuser/nf-winuser-get_wheel_delta_wparam)(wParam): o Delta de roda como um valor curto assinado.
+[**GET_WHEEL_DELTA_WPARAM**](/windows/win32/api/winuser/nf-winuser-get_wheel_delta_wparam)(wParam): delta da roda como valor curto com assinatura.
 
 </dd> <dt>
 
@@ -66,22 +66,22 @@ Contém o local do ponto do ponteiro.
 
 Use as macros a seguir para recuperar as coordenadas de tela física do ponto.
 
--   [**GET_X_LPARAM**](/windows/win32/api/windowsx/nf-windowsx-get_x_lparam)(lParam): a coordenada X (ponto horizontal).
--   [**GET_Y_LPARAM**](/windows/win32/api/windowsx/nf-windowsx-get_y_lparam)(lParam): a coordenada Y (ponto vertical).
+-   [**GET_X_LPARAM**](/windows/win32/api/windowsx/nf-windowsx-get_x_lparam)(lParam): a coordenada x (ponto horizontal).
+-   [**GET_Y_LPARAM**](/windows/win32/api/windowsx/nf-windowsx-get_y_lparam)(lParam): a coordenada y (ponto vertical).
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se o aplicativo processar essa mensagem, ele deverá retornar zero.
+Se o aplicativo processa essa mensagem, ele deve retornar zero.
 
 Se o aplicativo não processar essa mensagem, ele deverá chamar [**DefWindowProc**](/windows/win32/api/winuser/nf-winuser-defwindowproca).
 
 ## <a name="remarks"></a>Comentários
 
-Para recuperar as unidades de rolagem de roda, use o **inputData** arquivado da estrutura de [**POINTER_INFO**](/previous-versions/windows/desktop/api) retornada chamando a função [**GetPointerInfo**](/previous-versions/windows/desktop/api) . Este campo contém um valor assinado e é expresso em um múltiplo de **WHEEL_DELTA**. Um valor positivo indica uma rotação para frente e um valor negativo indica uma rotação para trás.
+Para recuperar as unidades de rolagem da roda, use **inputData** arquivado [**da estrutura POINTER_INFO**](/previous-versions/windows/desktop/api) retornada chamando a função [**GetPointerInfo.**](/previous-versions/windows/desktop/api) Esse campo contém um valor assinado e é expresso em um múltiplo **de WHEEL_DELTA**. Um valor positivo indica uma rotação para frente e um valor negativo indica uma rotação para trás.
 
-Observe que as entradas da roda podem ser entregues mesmo que o cursor do mouse esteja localizado fora da janela do aplicativo. As mensagens de roda são entregues de maneira muito semelhante às entradas do teclado. A janela de foco da fila de mensagens do foregournd recebe as mensagens de roda.
+Observe que as entradas de roda podem ser entregues mesmo se o cursor do mouse estiver localizado fora da janela do aplicativo. As mensagens de roda são entregues de maneira muito semelhante às entradas do teclado. A janela de foco da fila de mensagens forurnd recebe as mensagens de roda.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -89,9 +89,9 @@ Observe que as entradas da roda podem ser entregues mesmo que o cursor do mouse 
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                               |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                               |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

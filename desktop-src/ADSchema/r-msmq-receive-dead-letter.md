@@ -1,10 +1,10 @@
 ---
-title: MSMQ-recebimento-inatividade estendida direita
-description: Permite receber mensagens da fila inatividade.
+title: msmq-Receive-Dead-Letter estendido
+description: Permite o recebimento de mensagens da fila mensagens mortas.
 ms.assetid: e7e37e6b-8f2a-4ca6-bfeb-0e74d7a80785
 ms.tgt_platform: multiple
 keywords:
-- MSMQ-recebimento-inativo-letra estendida esquema do AD
+- msmq-Receive-Dead-Letter estendido direito esquema do AD
 topic_type:
 - apiref
 api_name:
@@ -13,24 +13,24 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ee68beb0afc7b9bcbb38157ffd1de82fc447dd4
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b10155964a22c129cc614c8a3a898c654a0d8d8eb8dfae462f265c90010452d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104087181"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119922106"
 ---
-# <a name="msmq-receive-dead-letter-extended-right"></a>MSMQ-recebimento-inatividade estendida direita
+# <a name="msmq-receive-dead-letter-extended-right"></a>msmq-Receive-Dead-Letter estendido
 
-Permite receber mensagens da fila inatividade.
+Permite o recebimento de mensagens da fila mensagens mortas.
 
 
 
 | Entrada | Valor |
 |--------------|--------------------------------------|
-| CN           | MSMQ-recebimento-mensagens mortas             |
-| Display-Name | Receber mensagem mortas                  |
-| GUID de direitos  | 4b6e08c0-df3c-11d1-9c86-006008764d0e |
+| CN           | msmq-receive-dead-letter             |
+| Display-Name | Receber mensagens mortas                  |
+| RIGHTS-GUID  | 4b6e08c0-df3c-11d1-9c86-006008764d0e |
 
 
 
@@ -49,8 +49,8 @@ Permite receber mensagens da fila inatividade.
 
 | Entrada | Valor |
 |-------------------------|--------------------------------------------------------------|
-| Applies-To              | [**Configuração do MSMQ**](c-msmqconfiguration.md)<br/> |
-| Localização-exibição-ID | 38                                                           |
+| Applies-To              | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
+| Localization-Display-ID | 38                                                           |
 
 
 
@@ -60,8 +60,8 @@ Permite receber mensagens da fila inatividade.
 
 | Entrada | Valor |
 |-------------------------|--------------------------------------------------------------|
-| Applies-To              | [**Configuração do MSMQ**](c-msmqconfiguration.md)<br/> |
-| Localização-exibição-ID | 38                                                           |
+| Applies-To              | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
+| Localization-Display-ID | 38                                                           |
 
 
 
@@ -71,8 +71,8 @@ Permite receber mensagens da fila inatividade.
 
 | Entrada | Valor |
 |-------------------------|--------------------------------------------------------------|
-| Applies-To              | [**Configuração do MSMQ**](c-msmqconfiguration.md)<br/> |
-| Localização-exibição-ID | 38                                                           |
+| Applies-To              | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
+| Localization-Display-ID | 38                                                           |
 
 
 
@@ -82,8 +82,8 @@ Permite receber mensagens da fila inatividade.
 
 | Entrada | Valor |
 |-------------------------|--------------------------------------------------------------|
-| Applies-To              | [**Configuração do MSMQ**](c-msmqconfiguration.md)<br/> |
-| Localização-exibição-ID | 38                                                           |
+| Applies-To              | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
+| Localization-Display-ID | 38                                                           |
 
 
 
@@ -93,8 +93,8 @@ Permite receber mensagens da fila inatividade.
 
 | Entrada | Valor |
 |-------------------------|--------------------------------------------------------------|
-| Applies-To              | [**Configuração do MSMQ**](c-msmqconfiguration.md)<br/> |
-| Localização-exibição-ID | 38                                                           |
+| Applies-To              | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
+| Localization-Display-ID | 38                                                           |
 
 
 
@@ -104,8 +104,8 @@ Permite receber mensagens da fila inatividade.
 
 | Entrada | Valor |
 |-------------------------|--------------------------------------------------------------|
-| Applies-To              | [**Configuração do MSMQ**](c-msmqconfiguration.md)<br/> |
-| Localização-exibição-ID | 38                                                           |
+| Applies-To              | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
+| Localization-Display-ID | 38                                                           |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Estrutura de MCI_RECORD_PARMS (Mciapi. h)
-description: A \_ estrutura de parâmetros do registro MCI \_ contém informações de posicionamento para o \_ comando de registro MCI.
+title: MCI_RECORD_PARMS (Mciapi.h)
+description: A estrutura \_ \_ MCI RECORD PARMS contém informações de posicionamento para o comando MCI \_ RECORD.
 ms.assetid: 5d502cf8-3963-49d6-b515-d26e19195322
 keywords:
-- Multimídia do Windows da estrutura de MCI_RECORD_PARMS
+- MCI_RECORD_PARMS estrutura Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b633ce192d0f4b2467cb744d614ea38056eafb60
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9c531b5b186a6119a22cafc4e252424ace2e388b2545461b440cd7957694494b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454603"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120039076"
 ---
-# <a name="mci_record_parms-structure"></a>Estrutura de parâmetros do \_ registro MCI \_
+# <a name="mci_record_parms-structure"></a>Estrutura DO \_ \_ PARMS de REGISTRO MCI
 
-A estrutura de **\_ \_ parâmetros do registro MCI** contém informações de posicionamento para o comando de [**\_ registro MCI**](mci-record.md) .
+A **estrutura \_ MCI RECORD \_ PARMS** contém informações de posicionamento para o [**comando MCI \_ RECORD.**](mci-record.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,30 +42,30 @@ typedef struct {
 
 <dl> <dt>
 
-**dwCallback**
+**Dwcallback**
 </dt> <dd>
 
-A palavra de ordem inferior Especifica um identificador de janela usado para o \_ sinalizador de notificação MCI.
+A palavra de ordem baixa especifica um alça de janela usado para o sinalizador NOTIFY da \_ MCI.
 
 </dd> <dt>
 
-**dwFrom**
+**Dwfrom**
 </dt> <dd>
 
-Posição da qual reproduzir.
+Posição da onde reproduzir.
 
 </dd> <dt>
 
 **dwTo**
 </dt> <dd>
 
-Posição para reprodução.
+Posição para a reprodução.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Ao atribuir dados aos membros dessa estrutura, defina os sinalizadores correspondentes no parâmetro *fdwCommand* da função [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para validar os membros.
+Ao atribuir dados aos membros dessa estrutura, defina os sinalizadores correspondentes no parâmetro *fdwCommand* da [**função mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para validar os membros.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,7 +75,7 @@ Ao atribuir dados aos membros dessa estrutura, defina os sinalizadores correspon
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                          |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                |
-| Cabeçalho<br/>                   | <dl> <dt>Mciapi. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Mciapi.h</dt> </dl> |
 
 
 
@@ -83,13 +83,13 @@ Ao atribuir dados aos membros dessa estrutura, defina os sinalizadores correspon
 
 <dl> <dt>
 
-[**MCI**](mci.md)
+[**Mci**](mci.md)
 </dt> <dt>
 
 [**Estruturas MCI**](mci-structures.md)
 </dt> <dt>
 
-[**\_registro MCI**](mci-record.md)
+[**REGISTRO \_ MCI**](mci-record.md)
 </dt> <dt>
 
 [**mciSendCommand**](/previous-versions//dd757160(v=vs.85))

@@ -1,8 +1,8 @@
 ---
-description: A \_ associação CIM RealizesAggregatePExtent representa a relação na qual a \_ classe CIM AggregatePExtent é realizada em uma mídia física.
+description: A associação CIM \_ RealizesAggregatePExtent representa a relação na qual a classe \_ AggregatePExtent cim é realizada em uma mídia física.
 ms.assetid: 420dde1d-daa8-4cd3-b3fd-c2aefdc1e217
 ms.tgt_platform: multiple
-title: Classe CIM_RealizesAggregatePExtent
+title: CIM_RealizesAggregatePExtent classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,23 +16,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: eb80414134534d09a4030e2e87003a660e69fd9f
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 1c5eaf7e53fc7972795d0502c156e753bae60c777987e7304ef27a3a3fde54e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105755437"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119920936"
 ---
-# <a name="cim_realizesaggregatepextent-class"></a>\_Classe CIM RealizesAggregatePExtent
+# <a name="cim_realizesaggregatepextent-class"></a>Classe CIM \_ RealizesAggregatePExtent
 
-A associação **CIM \_ RealizesAggregatePExtent** representa a relação na qual a classe [**CIM \_ AggregatePExtent**](cim-aggregatepextent.md) é realizada em uma mídia física.
+A **associação CIM \_ RealizesAggregatePExtent** representa a relação na qual a [**classe \_ AggregatePExtent cim**](cim-aggregatepextent.md) é realizada em uma mídia física.
 
 > [!IMPORTANT]
-> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> As classes CIM (Distributed Management Task Force) do DMTF (Distributed Management Task Force) modelo CIM são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
-A sintaxe a seguir é simplificada do código formato MOF (MOF) e inclui todas as suas propriedades herdadas. As propriedades são listadas em ordem alfabética, não em ordem MOF.
+A sintaxe a seguir é simplificada Managed Object Format código (MOF) e inclui todas as suas propriedades herdadas. As propriedades são listadas em ordem alfabética, não em ordem MOF.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,17 +47,17 @@ class CIM_RealizesAggregatePExtent : CIM_Realizes
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ RealizesAggregatePExtent** tem estes tipos de membros:
+A **classe CIM \_ RealizesAggregatePExtent** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ RealizesAggregatePExtent** tem essas propriedades.
+A **classe CIM \_ RealizesAggregatePExtent** tem essas propriedades.
 
 <dl> <dt>
 
-**Antecedent**
+**Antecedente**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **CIM \_ PhysicalMedia**
@@ -66,36 +66,36 @@ Tipo de dados: **CIM \_ PhysicalMedia**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent"), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
+Qualificadores: [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecessor"), [**Máx.**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
-Um [**\_ PhysicalMedia CIM**](cim-physicalmedia.md) que descreve a mídia física na qual a extensão é realizada.
+Um [**Cim \_ PhysicalMedia**](cim-physicalmedia.md) que descreve a mídia física na qual a extensão é realizada.
 
 </dd> <dt>
 
-**Depende**
+**Dependente**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **CIM \_ AggregatePExtent**
+Tipo de dados: **\_ AggregatePExtent do CIM**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependente")
+Qualificadores: [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependente")
 </dt> </dl>
 
-O [**CIM \_ AggregatePExtent**](cim-aggregatepextent.md) que está localizado na mídia.
+O [**\_ AggregatePExtent cim**](cim-aggregatepextent.md) localizado na mídia.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-A classe **CIM \_ RealizesAggregatePExtent** é derivada do [**CIM \_**](cim-realizes.md).
+A **classe CIM \_ RealizesAggregatePExtent** é derivada de [**CIM \_ Realizes**](cim-realizes.md).
 
 O WMI não implementa essa classe.
 
-Esta documentação é derivada das descrições da classe CIM publicadas pela DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, obedecer aos padrões de documentação do Microsoft SDK ou fornecer mais informações.
+Esta documentação é derivada das descrições da classe CIM publicadas pelo DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, estar em conformidade com os padrões de documentação do SDK da Microsoft ou fornecer mais informações.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -105,8 +105,8 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -115,7 +115,7 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 
 <dl> <dt>
 
-[**O CIM \_ percebe**](cim-realizes.md)
+[**Cim \_ Realiza**](cim-realizes.md)
 </dt> </dl>
 
  

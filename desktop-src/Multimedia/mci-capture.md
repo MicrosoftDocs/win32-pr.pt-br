@@ -1,9 +1,9 @@
 ---
-title: MCI_CAPTURE comando (mmsystem. h)
-description: O \_ comando de captura MCI captura o conteúdo do buffer de quadro e o armazena em um arquivo especificado. Dispositivos de vídeo digital reconhecem este comando.
+title: MCI_CAPTURE comando (Mmsystem.h)
+description: O comando MCI CAPTURE captura o conteúdo do buffer de quadro e \_ o armazena em um arquivo especificado. Os dispositivos de vídeo digital reconhecem esse comando.
 ms.assetid: bdebddc5-a0a0-449e-889e-37c7d6612c60
 keywords:
-- Multimídia do Windows de comando MCI_CAPTURE
+- MCI_CAPTURE comando Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 041954d786b007023226fb5d3febf4747c0121e2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7cc6bc6e31fd66153a8ea867f56a4e2638ad1f3392a284a61818e521327e52d6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918760"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120039446"
 ---
-# <a name="mci_capture-command"></a>\_Comando de captura MCI
+# <a name="mci_capture-command"></a>Comando MCI \_ CAPTURE
 
-O \_ comando de captura MCI captura o conteúdo do buffer de quadro e o armazena em um arquivo especificado. Dispositivos de vídeo digital reconhecem este comando.
+O comando MCI CAPTURE captura o conteúdo do buffer de quadro e \_ o armazena em um arquivo especificado. Os dispositivos de vídeo digital reconhecem esse comando.
 
-Para enviar esse comando, chame a função [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) com os parâmetros a seguir.
+Para enviar esse comando, chame a [**função mciSendCommand**](/previous-versions//dd757160(v=vs.85)) com os parâmetros a seguir.
 
 
 ```C++
@@ -50,23 +50,23 @@ Identificador de dispositivo do dispositivo MCI que deve receber a mensagem de c
 
 </dd> <dt>
 
-<span id="dwFlags"></span><span id="dwflags"></span><span id="DWFLAGS"></span>*dwFlags*
+<span id="dwFlags"></span><span id="dwflags"></span><span id="DWFLAGS"></span>*Dwflags*
 </dt> <dd>
 
-\_Notificação MCI, \_ espera MCI ou teste MCI \_ . Para obter informações sobre esses sinalizadores, consulte [os sinalizadores aguardar, notificar e testar](the-wait-notify-and-test-flags.md).
+MCI \_ NOTIFY, MCI \_ WAIT ou MCI \_ TEST. Para obter informações sobre esses sinalizadores, consulte [Os sinalizadores de espera, notificação e teste.](the-wait-notify-and-test-flags.md)
 
 </dd> <dt>
 
 <span id="lpCapture"></span><span id="lpcapture"></span><span id="LPCAPTURE"></span>*lpCapture*
 </dt> <dd>
 
-Ponteiro para uma estrutura de [**\_ \_ \_ parâmetros de captura DGV MCI**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_capture_parmsa) .
+Ponteiro para uma [**estrutura \_ MCI DGV \_ CAPTURE \_ PARMS.**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_capture_parmsa)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retornará zero se for bem-sucedido ou um erro de outra forma.
+Retornará zero se for bem-sucedido ou um erro, caso contrário.
 
 ## <a name="remarks"></a>Comentários
 
@@ -74,17 +74,17 @@ Os seguintes sinalizadores adicionais se aplicam a dispositivos de vídeo digita
 
 <dl> <dt>
 
-<span id="MCI_DGV_CAPTURE_AS"></span><span id="mci_dgv_capture_as"></span>\_ \_ captura de DGV MCI \_ como
+<span id="MCI_DGV_CAPTURE_AS"></span><span id="mci_dgv_capture_as"></span>MCI \_ DGV \_ CAPTURE \_ AS
 </dt> <dd>
 
-O membro **lpstrFileName** da estrutura identificada por *lpCapture* contém um endereço de um buffer que especifica o caminho e o nome de arquivo de destino. (Esse sinalizador é necessário.)
+O **membro lpstrFileName** da estrutura identificada por *lpCapture* contém um endereço de um buffer especificando o caminho de destino e o nome do arquivo. (Esse sinalizador é necessário.)
 
 </dd> <dt>
 
-<span id="MCI_DGV_CAPTURE_AT"></span><span id="mci_dgv_capture_at"></span>\_ \_ captura de DGV MCI \_ em
+<span id="MCI_DGV_CAPTURE_AT"></span><span id="mci_dgv_capture_at"></span>CAPTURA \_ DE DGV DA MCI \_ \_ EM
 </dt> <dd>
 
-O membro **RC** da estrutura identificada por *lpCapture* contém um retângulo válido. O retângulo especifica a região retangular dentro do buffer de quadro que é recortado e salvo em disco. Se omitido, a região cortada usa como padrão o retângulo especificado ou padronizado em um comando anterior [ \_ Put](mci-put.md) que especifica a área de origem dessa instância do driver de dispositivo.
+O **membro rc** da estrutura identificada por *lpCapture contém* um retângulo válido. O retângulo especifica a região retangular dentro do buffer de quadro que é cortada e salva em disco. Se omitida, a região cortada assume como padrão o retângulo especificado ou padrão em um comando [ \_ PUT da MCI](mci-put.md) anterior que especifica a área de origem para essa instância do driver de dispositivo.
 
 </dd> </dl>
 
@@ -96,7 +96,7 @@ O membro **RC** da estrutura identificada por *lpCapture* contém um retângulo 
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                                |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                      |
-| Cabeçalho<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -104,7 +104,7 @@ O membro **RC** da estrutura identificada por *lpCapture* contém um retângulo 
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
 [Comandos MCI](mci-commands.md)

@@ -4,12 +4,12 @@ ms.assetid: b2317ce9-e775-450e-91f5-00f735f256a3
 title: A mensagem de WM_PAINT
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a69f7dab736972d8b7226890144efd8763de856a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 138913771621699abb27d4f5648e732b21a607ff5466ec4766726ab278d46fed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104989093"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119965176"
 ---
 # <a name="the-wm_paint-message"></a>A mensagem do WM \_ Paint
 

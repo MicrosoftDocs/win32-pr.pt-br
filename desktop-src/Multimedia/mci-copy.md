@@ -3,7 +3,7 @@ title: MCI_COPY comando (mmsystem. h)
 description: O \_ comando de cópia MCI copia dados para a área de transferência. Dispositivos de vídeo digital reconhecem este comando.
 ms.assetid: 41807920-3312-4cdb-82e6-6ab4b9b35162
 keywords:
-- Multimídia do Windows de comando MCI_COPY
+- MCI_COPY comando Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f4c27950b9599d0b565b982eb59755e4d3f2ea65
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 590acf61b352fa9abab00dfd49f3f54b166bfc340eaf12061e3d90b7a3025d26
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918509"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120039286"
 ---
 # <a name="mci_copy-command"></a>\_Comando de cópia MCI
 

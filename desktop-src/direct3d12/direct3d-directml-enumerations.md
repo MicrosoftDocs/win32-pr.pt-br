@@ -5,12 +5,12 @@ ms.localizationpriority: low
 ms.topic: article
 ms.date: 11/06/2020
 ms.custom: 19H1
-ms.openlocfilehash: 2a761dba639ece37eba347115a831d3c6803a618
-ms.sourcegitcommit: d168355cd7112871f24643b4079c2640b36f4975
+ms.openlocfilehash: a74ce2fc3b5bcf94a97d7f51cec20d5f9f0d8e9837a7b59d2f1bdea80328db90
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "111521207"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119953096"
 ---
 # <a name="directml-enumerations"></a>Enumerações do DirectML
 
@@ -20,7 +20,7 @@ As enumerações a seguir são declaradas em DirectML.h.
 
 | Tópico e descrição |
 |-|
-| [**DML_AXIS_DIRECTION**](/windows/desktop/api/directml/ne-directml-dml_axis_direction). Define constantes que especificam a direção de uma operação ao longo do eixo especificado para o operador (por exemplo, resumo, selecionando os elementos top-k, selecionando o elemento mínimo). |
+| [**DML_AXIS_DIRECTION**](/windows/desktop/api/directml/ne-directml-dml_axis_direction). Define constantes que especificam a direção de uma operação ao longo do eixo especificado para o operador (por exemplo, soma, selecionando os elementos top-k, selecionando o elemento mínimo). |
 | [**DML_BINDING_TYPE**](/windows/desktop/api/directml/ne-directml-dml_binding_type). Define constantes que especificam a natureza dos recursos referenciados por uma descrição de associação [DML_BINDING_DESC estrutura](/windows/desktop/api/directml/ns-directml-dml_binding_desc). |
 | [**DML_CONVOLUTION_DIRECTION**](/windows/desktop/api/directml/ne-directml-dml_convolution_direction). Define constantes que especificam uma direção para o operador de convolução DirectML (conforme descrito pela [estrutura DML_CONVOLUTION_OPERATOR_DESC ).](/windows/desktop/api/directml/ns-directml-dml_convolution_operator_desc) |
 | [**DML_CONVOLUTION_MODE**](/windows/desktop/api/directml/ne-directml-dml_convolution_mode). Define constantes que especificam um modo para o operador de convolução DirectML (conforme descrito pela [estrutura DML_CONVOLUTION_OPERATOR_DESC ).](/windows/desktop/api/directml/ns-directml-dml_convolution_operator_desc) |

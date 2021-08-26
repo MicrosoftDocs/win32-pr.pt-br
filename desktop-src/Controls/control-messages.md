@@ -1,19 +1,19 @@
 ---
 title: Mensagens de controle
-description: Esta seção contém informações sobre como as mensagens do Windows são usadas para se comunicar com controles.
+description: esta seção contém informações sobre como Windows mensagens são usadas para se comunicar com controles.
 ms.assetid: 94d34132-25c2-4a1a-bd0e-35e5a666bbfa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 923a1b47d625a2797a900a6c582d00c5169097f3
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: ed60ebb66341332b6248b8427045abc5b62a2311427d56e46b25fe93b3d899ba
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "103824094"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119921096"
 ---
 # <a name="control-messages"></a>Mensagens de controle
 
-Esta seção contém informações sobre como as mensagens do Windows são usadas para se comunicar com controles.
+esta seção contém informações sobre como Windows mensagens são usadas para se comunicar com controles.
 
 Os tópicos a seguir são discutidos.
 
@@ -47,7 +47,7 @@ fSuccess = TreeView_GetItem(hwnd, &tvItem);
 
 
 
-Quando uma alteração é feita nas configurações de cores do sistema, o Windows envia uma mensagem do [**WM \_ SYSCOLORCHANGE**](/windows/desktop/gdi/wm-syscolorchange) para todas as janelas de nível superior. A janela de nível superior deve encaminhar a mensagem do **WM \_ SYSCOLORCHANGE** para seus controles comuns; caso contrário, os controles não serão notificados sobre a alteração de cor. O encaminhamento da mensagem garante que as cores usadas por seus controles comuns sejam consistentes com as usadas por outros objetos da interface do usuário. Por exemplo, um controle Toolbar usa a cor "3D Objects" para desenhar seus botões. Se o usuário alterar a cor do objeto 3-D, mas a mensagem do **WM \_ SYSCOLORCHANGE** não for encaminhada para a barra de ferramentas, os botões da barra de ferramentas permanecerão na cor original (ou até mesmo mudarão para uma combinação de cores novas e antigas), enquanto a cor dos outros botões no sistema é alterada.
+quando uma alteração é feita nas configurações de cores do sistema, Windows envia uma mensagem do [**WM \_ SYSCOLORCHANGE**](/windows/desktop/gdi/wm-syscolorchange) para todas as janelas de nível superior. A janela de nível superior deve encaminhar a mensagem do **WM \_ SYSCOLORCHANGE** para seus controles comuns; caso contrário, os controles não serão notificados sobre a alteração de cor. O encaminhamento da mensagem garante que as cores usadas por seus controles comuns sejam consistentes com as usadas por outros objetos da interface do usuário. Por exemplo, um controle Toolbar usa a cor "3D Objects" para desenhar seus botões. Se o usuário alterar a cor do objeto 3-D, mas a mensagem do **WM \_ SYSCOLORCHANGE** não for encaminhada para a barra de ferramentas, os botões da barra de ferramentas permanecerão na cor original (ou até mesmo mudarão para uma combinação de cores novas e antigas), enquanto a cor dos outros botões no sistema é alterada.
 
 ## <a name="notifications-from-controls"></a>Notificações de controles
 

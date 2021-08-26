@@ -1,9 +1,9 @@
 ---
-title: LVM_GETCOUNTPERPAGE mensagem (Commctrl.h)
-description: Calcula o número de itens que podem se ajustar verticalmente na área visível de um controle de exibição de lista quando na exibição de lista ou relatório. Somente itens totalmente visíveis são contados. Você pode enviar essa mensagem explicitamente ou usando a \_ macro ListView GetCountPerPage.
+title: Mensagem de LVM_GETCOUNTPERPAGE (commctrl. h)
+description: Calcula o número de itens que podem se ajustar verticalmente na área visível de um controle de exibição de lista no modo de exibição de lista ou de relatório. Somente os itens totalmente visíveis são contados. Você pode enviar essa mensagem explicitamente ou usando a \_ macro GetCountPerPage do ListView.
 ms.assetid: 2ffd2bb1-cddf-4a4a-a4a8-087c9dc3fec0
 keywords:
-- LVM_GETCOUNTPERPAGE controles de Windows mensagem
+- controles de Windows de mensagem de LVM_GETCOUNTPERPAGE
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119968336"
 ---
-# <a name="lvm_getcountperpage-message"></a>Mensagem GETCOUNTPERPAGE do LVM \_
+# <a name="lvm_getcountperpage-message"></a>\_Mensagem GETCOUNTPERPAGE LVM
 
-Calcula o número de itens que podem se ajustar verticalmente na área visível de um controle de exibição de lista quando na exibição de lista ou relatório. Somente itens totalmente visíveis são contados. Você pode enviar essa mensagem explicitamente ou usando a [**macro \_ ListView GetCountPerPage.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getcountperpage)
+Calcula o número de itens que podem se ajustar verticalmente na área visível de um controle de exibição de lista no modo de exibição de lista ou de relatório. Somente os itens totalmente visíveis são contados. Você pode enviar essa mensagem explicitamente ou usando a macro [**\_ GetCountPerPage do ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getcountperpage) .
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -37,7 +37,7 @@ Calcula o número de itens que podem se ajustar verticalmente na área visível 
 
 ## <a name="return-value"></a>Valor retornado
 
-Retornará o número de itens totalmente visíveis se for bem-sucedido. Se a exibição atual for ícone ou exibição de ícone pequeno, o valor de retorno será o número total de itens no controle de exibição de lista.
+Retorna o número de itens totalmente visíveis se for bem-sucedido. Se a exibição atual for ícone ou exibição de ícone pequeno, o valor de retorno será o número total de itens no controle de exibição de lista.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,9 +45,9 @@ Retornará o número de itens totalmente visíveis se for bem-sucedido. Se a exi
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
-| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

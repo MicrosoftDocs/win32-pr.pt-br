@@ -3,9 +3,9 @@ title: Método IWMPError clearErrorQueue
 description: O método clearErrorQueue limpa os erros da fila de erros. | Método IWMPError clearErrorQueue
 ms.assetid: a8e8e666-56e4-4e75-9ed5-2714d272ce7c
 keywords:
-- método clearErrorQueue Windows Media Player
+- Windows Media Player do método clearErrorQueue
 - método clearErrorQueue Windows Media Player, interface IWMPError
-- Interface IWMPError Windows Media Player, método clearErrorQueue
+- Windows Media Player de interface IWMPError, método clearErrorQueue
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 98c3f422a9bc32049106d83c970bd8d2c9b2110f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8f75b4e4d2a0e80a3f55a38744758497abc71f5899498fee95ee3b3db752631c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105784669"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120000446"
 ---
 # <a name="iwmperrorclearerrorqueue-method"></a>Método IWMPError:: clearErrorQueue
 
@@ -49,7 +49,7 @@ Implements IWMPError.clearErrorQueue
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 

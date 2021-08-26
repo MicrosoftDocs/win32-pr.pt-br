@@ -3,7 +3,7 @@ title: Métodos ID2D1DeviceContext3 DrawSpriteBatch (D2d1 \_ 3. h)
 description: Renderiza parte ou todo o lote de Sprite fornecido para o contexto do dispositivo usando as opções de desenho especificadas.
 ms.assetid: 66d049ca-5d4b-1570-3fa3-8991f9fc97a0
 keywords:
-- Métodos DrawSpriteBatch Direct2D
+- Direct2D métodos de DrawSpriteBatch
 topic_type:
 - apiref
 api_location:
@@ -12,12 +12,12 @@ api_type:
 - HeaderDef
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 3735fba14d90cc538c62e804e8b86562a463c4b0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 40e92a07a44650b6dbef37d3d355e32c5be1ec0b8b77d370f537d3adaf3d8ce6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105787007"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119966976"
 ---
 # <a name="id2d1devicecontext3drawspritebatch-methods"></a>ID2D1DeviceContext3: métodos de rawSpriteBatch de:D
 

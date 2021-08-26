@@ -4,12 +4,12 @@ description: Estruturas de exibição de árvore
 ms.assetid: 2860458f-0217-4434-aab7-69f6f4274055
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: abf266b80241d9bc48bc3e3f4efb0b4c6054dbfb
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 841cb307777a837fc0557915019853b31750d8b93aafd9bdb6cbe4d344dc34a3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103930298"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119969066"
 ---
 # <a name="tree-view-structures"></a>Estruturas de exibição de árvore
 
@@ -28,8 +28,8 @@ ms.locfileid: "103930298"
 -   [**TVGETITEMPARTRECTINFO**](/windows/win32/api/commctrl/ns-commctrl-tvgetitempartrectinfo)
 -   [**TVHITTESTINFO**](/windows/win32/api/commctrl/ns-commctrl-tvhittestinfo)
 -   [**TVINSERTSTRUCT**](/windows/win32/api/commctrl/ns-commctrl-tvinsertstructa)
--   [**TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema)
--   [**TVITEMEX**](/windows/win32/api/commctrl/ns-commctrl-tvitemexa)
+-   [**Tvitem**](/windows/win32/api/commctrl/ns-commctrl-tvitema)
+-   [**Tvitemex**](/windows/win32/api/commctrl/ns-commctrl-tvitemexa)
 -   [**TVSORTCB**](/windows/win32/api/commctrl/ns-commctrl-tvsortcb)
 
  

@@ -1,7 +1,7 @@
 ---
-description: O método GetWindowPosition recupera as coordenadas atuais para a janela.
+description: O método GetWindowPosition recupera as coordenadas atuais da janela.
 ms.assetid: a2f46a87-b2cd-450f-8d2b-0f8695432fda
-title: Método CBaseControlWindow. GetWindowPosition (Ctlutil. h)
+title: Método CBaseControlWindow.GetWindowPosition (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: af2b1bdb8b2c839644e8c0629e3e272c123d3c21
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6d576f065e807c2af47621d43940d7e48c54f36f0617d20590953a5e83ab2fc9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751280"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119966726"
 ---
-# <a name="cbasecontrolwindowgetwindowposition-method"></a>Método CBaseControlWindow. GetWindowPosition
+# <a name="cbasecontrolwindowgetwindowposition-method"></a>Método CBaseControlWindow.GetWindowPosition
 
-O `GetWindowPosition` método recupera as coordenadas atuais para a janela.
+O `GetWindowPosition` método recupera as coordenadas atuais da janela.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -48,34 +48,34 @@ HRESULT GetWindowPosition(
 *pLeft* 
 </dt> <dd>
 
-Ponteiro para a coordenada esquerda, em coordenadas da tela.
+Ponteiro para a coordenada esquerda, em coordenadas de tela.
 
 </dd> <dt>
 
 *pTop* 
 </dt> <dd>
 
-Ponteiro para a coordenada superior, em coordenadas da tela.
+Ponteiro para a coordenada superior, em coordenadas de tela.
 
 </dd> <dt>
 
-*pWidth* 
+*Pwidth* 
 </dt> <dd>
 
-Ponteiro para a largura da janela, em coordenadas da tela.
+Ponteiro para a largura da janela, em coordenadas de tela.
 
 </dd> <dt>
 
 *pHeight* 
 </dt> <dd>
 
-Ponteiro para a altura da janela, em coordenadas da tela.
+Ponteiro para a altura da janela, em coordenadas de tela.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor **HRESULT** .
+Retorna um **valor HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -83,8 +83,8 @@ Retorna um valor **HRESULT** .
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Ctlutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

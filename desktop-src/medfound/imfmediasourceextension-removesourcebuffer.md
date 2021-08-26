@@ -1,7 +1,7 @@
 ---
 description: Remove o buffer de origem especificado da coleção de buffers de origem gerenciados pelo objeto IMFMediaSourceExtension.
 ms.assetid: 2f29cbac-4261-41ee-84c8-cb73686aeee5
-title: 'Método IMFMediaSourceExtension:: RemoveSourceBuffer'
+title: Método IMFMediaSourceExtension::RemoveSourceBuffer
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - mfmediaengine.h
-ms.openlocfilehash: 2a093401058895f31b29843778a18a040e722c33
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 52c15882b57191169f033ab8a3b6c2f50f10f8e20b8f081c7bc70b7509b9a58b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104297952"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120013966"
 ---
-# <a name="imfmediasourceextensionremovesourcebuffer-method"></a>Método IMFMediaSourceExtension:: RemoveSourceBuffer
+# <a name="imfmediasourceextensionremovesourcebuffer-method"></a>Método IMFMediaSourceExtension::RemoveSourceBuffer
 
-Remove o buffer de origem especificado da coleção de buffers de origem gerenciados pelo objeto [**IMFMediaSourceExtension**](/windows/desktop/api/mfmediaengine/nn-mfmediaengine-imfmediasourceextension) .
+Remove o buffer de origem especificado da coleção de buffers de origem gerenciados pelo [**objeto IMFMediaSourceExtension.**](/windows/desktop/api/mfmediaengine/nn-mfmediaengine-imfmediasourceextension)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,16 +39,16 @@ HRESULT RemoveSourceBuffer(
 
 <dl> <dt>
 
-*pSourceBuffer* \[ no\]
+*pSourceBuffer* \[ Em\]
 </dt> <dd>
 
 O buffer a ser removido.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,9 +56,9 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 8.1 \[ apenas aplicativos de área de trabalho\]<br/>                                                 |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012 R2\]<br/>                                      |
-| INSERI<br/>                      | <dl> <dt>Mfmediaengine. idl</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8.1 somente aplicativos da área de trabalho\]<br/>                                                 |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 Somente \[ aplicativos da área de trabalho R2\]<br/>                                      |
+| Idl<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
 
 
 

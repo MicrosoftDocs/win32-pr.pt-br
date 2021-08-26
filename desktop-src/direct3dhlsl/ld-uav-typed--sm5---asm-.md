@@ -4,12 +4,12 @@ description: Acesso aleatório-a leitura de um elemento de uma exibição de ace
 ms.assetid: E5E03311-3596-4497-9271-FE6445DBFC62
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 61b22392c802378c094b443c8ff2f2282909bd1f
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: dc9685341f4a3a2e6b22bbbcc4b36f6ecccc153f17c67f38c390e6beeef94358
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104293573"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119982066"
 ---
 # <a name="ld_uav_typed-sm5---asm"></a>LD \_ UAV \_ tipada (SM5-ASM)
 
@@ -54,7 +54,7 @@ Essa instrução se aplica aos seguintes estágios de sombreador:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | X     | X       |
 
@@ -66,7 +66,7 @@ Como UAVs estão disponíveis em todos os estágios do sombreador para o Direct3
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 

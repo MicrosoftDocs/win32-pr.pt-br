@@ -16,12 +16,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 8b95d45efff51128b08dc5b6395309f49e85a79e
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 1a2c1c568eeb8a3d753479c8663cc04293e76d38c5efb9919ab494b198657efa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646399"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119921936"
 ---
 # <a name="cim_dependency-class-cimwin32-wmi-providers"></a>Classe CIM_Dependency (provedores WMI CIMWin32)
 

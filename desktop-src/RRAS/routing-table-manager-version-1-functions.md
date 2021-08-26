@@ -7,16 +7,16 @@ keywords:
 - Gerenciador de tabela de roteamento versão 1 RRAS, funções
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f2337ea09b4dd116f9db90c37e0a1ea3ea2a62b9
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2d7d898a180499cafb2f3a128ed81a72e0fea783b8b3620192034694a59a6709
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105789735"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120027216"
 ---
 # <a name="routing-table-manager-version-1-functions"></a>Funções da versão 1 do Gerenciador de tabela de roteamento
 
-**Windows Server 2003:** Essa API foi substituída pela API do [Gerenciador de tabela de roteamento versão 2](about-routing-table-manager-version-2.md) e não estará disponível além do Windows Server 2003. Novos aplicativos devem usar a API da versão 2 do Gerenciador de tabela de roteamento.
+**Windows Server 2003:** esta api foi substituída pela api do [gerenciador de tabela de roteamento versão 2](about-routing-table-manager-version-2.md) e não estará disponível além do Windows Server 2003. Novos aplicativos devem usar a API da versão 2 do Gerenciador de tabela de roteamento.
 
 Use as seguintes funções para acessar as tabelas de roteamento mantidas pelo Gerenciador de tabela de roteamento:
 
@@ -48,9 +48,9 @@ Use as seguintes funções para acessar as tabelas de roteamento mantidas pelo G
 
 [**RtmRegisterClient**](rtmregisterclient.md)
 
- 
+ 
 
- 
+ 
 
 
 

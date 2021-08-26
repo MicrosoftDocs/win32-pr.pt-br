@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c48c0643a96cfd6cb23b684916580b53a6321ccf
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f1712c3ded333ef23dc8b79429404907a0c2c7b1b24459ee6eb1be5f9ea20747
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104087031"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120066079"
 ---
 # <a name="ms-ts-max-idle-time-attribute"></a>MS-TS-Max-ociosidade-atributo de tempo
 
@@ -55,7 +55,7 @@ Tempo ocioso máximo da sessão dos serviços de terminal é a quantidade máxim
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| É de valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
 | No catálogo global      | Falso                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
@@ -76,7 +76,7 @@ Tempo ocioso máximo da sessão dos serviços de terminal é a quantidade máxim
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| É de valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
 | No catálogo global      | Falso                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
@@ -97,7 +97,7 @@ Tempo ocioso máximo da sessão dos serviços de terminal é a quantidade máxim
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| É de valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
 | No catálogo global      | Falso                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |

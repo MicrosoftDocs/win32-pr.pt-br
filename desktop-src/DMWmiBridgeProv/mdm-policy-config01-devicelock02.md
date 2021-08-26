@@ -17,16 +17,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c5926912d276fbe04f75c161196c47d0f0dd384
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 80bfd2f08b048ef16aaa03de2e9a0c1c809e493b00f5ff84e7c24e1b9edb4f83
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086238"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119967516"
 ---
 # <a name="mdm_policy_config01_devicelock02-class"></a>\_Classe MDM \_ Config01 \_ DeviceLock02
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
 A classe **MDM \_ Policy \_ Config01 \_ DeviceLock02** representa as políticas de bloqueio de dispositivo disponíveis.
 
@@ -112,7 +112,7 @@ Tipo de dados: **sint32**
 Tipo de acesso: leitura/gravação
 </dt> </dl>
 
-DevicePasswordEnabled não deve ser definido como Enabled (0) quando WMI é usado para definir as políticas de DeviceLock do EAS, uma vez que ele está habilitado por padrão no CSP de política para compatibilidade de volta com o Windows 8. x. Se DevicePasswordEnabled for definido como Enabled (0), o CSP da política retornará um erro informando que DevicePasswordEnabled já existe. O Windows 8. x não oferecia suporte à política DevicePassword. Ao desabilitar DevicePasswordEnabled (1), essa deve ser a única política definida do grupo DeviceLock de políticas abaixo. As políticas são listadas abaixo: >-DevicePasswordEnabled é a política pai do seguinte:
+DevicePasswordEnabled não deve ser definido como Enabled (0) quando WMI é usado para definir as políticas de DeviceLock do EAS, uma vez que ele está habilitado por padrão no CSP de política para compatível com Windows 8. x. Se DevicePasswordEnabled for definido como Enabled (0), o CSP da política retornará um erro informando que DevicePasswordEnabled já existe. o Windows 8. x não oferecia suporte à política DevicePassword. Ao desabilitar DevicePasswordEnabled (1), essa deve ser a única política definida do grupo DeviceLock de políticas abaixo. As políticas são listadas abaixo: >-DevicePasswordEnabled é a política pai do seguinte:
 
 -   DevicePasswordEnabled é a política pai do seguinte:
     -   AllowSimpleDevicePassword
@@ -283,7 +283,7 @@ Tipo de acesso: leitura/gravação
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                      |
 | Namespace<br/>                | \\DMMap de \\ MDM \\ CIMv2 raiz<br/>                                                             |
 | MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |

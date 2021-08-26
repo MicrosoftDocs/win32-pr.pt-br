@@ -4,16 +4,16 @@ ms.assetid: 5aca7ff5-c09f-4d00-b319-2b89550686ab
 title: Atualizando componentes para uma atualização
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 920bc955d3d3615941ef03ec885ca8871f79dc86
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3e725653acc7aadbeb3710d3cd6b1ee6dc2971e51d3583f2be279ddfed008d81
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922458"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120039236"
 ---
 # <a name="updating-components-for-an-upgrade"></a>Atualizando componentes para uma atualização
 
-Por design, os usuários do produto MNP2000 fictício nunca devem usar arquivos atualizados, como Baseba01.txt. Portanto, os arquivos atualizados são por definição incompatível com o produto original e os componentes de Windows Installer, como beisebol, que contém esses arquivos, devem receber novos códigos de componentes. Novos arquivos, como Opera01.txt, são introduzidos como parte de um novo componente com um código de componente exclusivo. Como o produto original e a atualização usam o mesmo componente do bloco de notas, o código do componente desse componente não é alterado. Para obter mais informações sobre quando o código do componente deve ser alterado, consulte [alterando o código do componente](changing-the-component-code.md).
+Por design, os usuários do produto MNP2000 fictício nunca devem usar arquivos atualizados, como Baseba01.txt. portanto, os arquivos atualizados são por definição incompatível com o produto original e os componentes de Windows Installer, como beisebol, que contém esses arquivos, devem receber novos códigos de componentes. Novos arquivos, como Opera01.txt, são introduzidos como parte de um novo componente com um código de componente exclusivo. como o produto original e a atualização usam o mesmo componente Bloco de notas, o código do componente desse componente não é alterado. Para obter mais informações sobre quando o código do componente deve ser alterado, consulte [alterando o código do componente](changing-the-component-code.md).
 
 Use o Orca ou outro editor de banco de dados para inserir os dados a seguir na [tabela de componentes](component-table.md) de MNP2001.msi. Não reutilize os GUIDs mostrados abaixo na coluna ComponentID no seu exemplo.
 

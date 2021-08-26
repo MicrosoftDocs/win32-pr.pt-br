@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 9424dee6d28e0bd9cd6ac43c15ad27cdebdb7017
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e027d71faf8dda5769962d3c71d1fcfb5958c61c91993cf17fbf472d93aff50f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105783304"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119980476"
 ---
 # <a name="msvm_guestfileservicecopyfilestoguest-method"></a>\_Método Msvm GuestFileService:: CopyFilesToGuest
 
@@ -54,7 +54,7 @@ Uma matriz de instâncias da classe [**Msvm \_ CopyFileToGuestSettingData**](msv
 Um parâmetro opcional para monitorar o progresso da operação, que é usado se o método não pôde ser executado de forma síncrona. Se a operação estiver sendo executada de forma assíncrona, o valor de retorno será 4096.
 
 > [!Note]  
-> Esse parâmetro foi adicionado no Windows 10.
+> Esse parâmetro foi adicionado em Windows 10.
 
  
 
@@ -72,7 +72,7 @@ Uma matriz opcional de referências do [**Msvm \_ CopyFileToGuestJob**](msvm-cop
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Em caso de sucesso, retorna 0; caso contrário, retorna um valor de erro.
 
@@ -123,8 +123,8 @@ O **sistema não está disponível** (32777)
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 8.1 \[ apenas aplicativos de área de trabalho\]<br/>                                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012 R2\]<br/>                                                 |
+| Cliente mínimo com suporte<br/> | Windows 8.1 \[ somente aplicativos da área de trabalho\]<br/>                                                            |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[Somente aplicativos da área de trabalho R2\]<br/>                                                 |
 | Namespace<br/>                | \\\\\\Virtualização \\ v2 de raiz<br/>                                                                 |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |

@@ -4,16 +4,16 @@ ms.assetid: 5b777f64-6b62-48dd-8eae-6603582a452a
 title: Reconexão dinâmica
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 704178a28b91c6f78bea20b9c73c9a61f80be881
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: a7b558a2e00ee2577cf1d31dda7aaebb15b5bd740c6dad5689e70b950c02d4d9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104456657"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119966147"
 ---
 # <a name="dynamic-reconnection"></a>Reconexão dinâmica
 
-Na maioria dos filtros do DirectShow, os Pins não podem ser reconectados enquanto o grafo está transmitindo dados ativamente. O aplicativo deve parar o grafo antes de reconectar os Pins. No entanto, alguns filtros dão suporte a reconexões de PIN enquanto o grafo está em execução, um processo conhecido como reconexão dinâmica. Isso pode ser feito pelo aplicativo ou por um filtro no grafo.
+na maioria dos filtros de DirectShow, os pins não podem ser reconectados enquanto o grafo está transmitindo dados ativamente. O aplicativo deve parar o grafo antes de reconectar os Pins. No entanto, alguns filtros dão suporte a reconexões de PIN enquanto o grafo está em execução, um processo conhecido como reconexão dinâmica. Isso pode ser feito pelo aplicativo ou por um filtro no grafo.
 
 Como exemplo, considere o grafo na ilustração a seguir.
 
@@ -56,7 +56,7 @@ Para chamar o método de forma *síncrona*, basta passar o valor **NULL** em vez
 
 **Etapa 2. Reconectar os Pins**
 
-Para reconectar os Pins, consulte o Gerenciador de gráficos de filtro para a interface **IGraphConfig** e chame [**IGraphConfig:: Reconnect**](/windows/desktop/api/Strmif/nf-strmif-igraphconfig-reconnect) ou [**IGraphConfig:: reconfigure**](/windows/desktop/api/Strmif/nf-strmif-igraphconfig-reconfigure). O método **reconnect** é mais simples de usar; Ele faz o seguinte:
+para reconectar os pins, consulte o filtro Graph Manager para a interface **IGraphConfig** e chame [**IGraphConfig:: reconnect**](/windows/desktop/api/Strmif/nf-strmif-igraphconfig-reconnect) ou [**IGraphConfig:: reconfigure**](/windows/desktop/api/Strmif/nf-strmif-igraphconfig-reconfigure). O método **reconnect** é mais simples de usar; Ele faz o seguinte:
 
 -   Interrompe os filtros intermediários (filtro 2 no exemplo) e os remove do grafo.
 -   Adiciona novos filtros intermediários, se necessário.
@@ -89,14 +89,14 @@ Antes de chamar **reconfigure**, bloqueie o fluxo de dados do pino de saída, co
 
 Observe que o método **IGraphConfig:: Reconnect** manipula automaticamente as etapas anteriores. Você só precisa executar essas etapas se estiver usando o método **reconfigure** .
 
-Depois que os dados são enviados por push pelo grafo, chame **reconfigure** e passe um ponteiro para sua interface de retorno de chamada do **IGraphConfigCallback** . O Gerenciador de gráfico de filtro chamará o método [**IGraphConfigCallback:: reconfigure**](/windows/desktop/api/Strmif/nf-strmif-igraphconfigcallback-reconfigure) que você forneceu.
+Depois que os dados são enviados por push pelo grafo, chame **reconfigure** e passe um ponteiro para sua interface de retorno de chamada do **IGraphConfigCallback** . o filtro Graph Manager chamará o método [**IGraphConfigCallback:: reconfigure**](/windows/desktop/api/Strmif/nf-strmif-igraphconfigcallback-reconfigure) que você forneceu.
 
-**Etapa 3. Desbloquear o fluxo de dados**
+**Etapa 3. Desbloquear os dados Flow**
 
 Depois de reconectar os Pins, desbloqueie o fluxo de dados chamando **IPinFlowControl:: Block** com um valor de zero para o primeiro parâmetro.
 
 > [!Note]  
-> Se uma reconexão dinâmica for executada por um filtro, haverá alguns problemas de Threading dos quais você deve estar atento. Se o Gerenciador do grafo de filtro tentar parar o filtro, ele poderá ser bloqueado, pois o grafo aguardará a interrupção do filtro, enquanto, ao mesmo tempo, o filtro pode estar aguardando que os dados sejam enviados por push pelo grafo. Para evitar o deadlock possível, alguns dos métodos descritos nesta seção levam um identificador a um evento do Win32. O filtro deve sinalizar o evento se o Gerenciador do grafo de filtro tentar parar o filtro. Para obter mais informações, consulte [**IGraphConfig**](/windows/desktop/api/Strmif/nn-strmif-igraphconfig) e [**IPinConnection**](/windows/desktop/api/Strmif/nn-strmif-ipinconnection).
+> Se uma reconexão dinâmica for executada por um filtro, haverá alguns problemas de Threading dos quais você deve estar atento. se o filtro Graph Manager tentar parar o filtro, ele poderá ser bloqueado, pois o grafo aguarda que o filtro pare, enquanto, ao mesmo tempo, o filtro pode estar aguardando que os dados sejam enviados por push pelo grafo. Para evitar o deadlock possível, alguns dos métodos descritos nesta seção levam um identificador a um evento do Win32. o filtro deve sinalizar o evento se o filtro Graph Manager tentar parar o filtro. Para obter mais informações, consulte [**IGraphConfig**](/windows/desktop/api/Strmif/nn-strmif-igraphconfig) e [**IPinConnection**](/windows/desktop/api/Strmif/nn-strmif-ipinconnection).
 
  
 
@@ -104,7 +104,7 @@ Depois de reconectar os Pins, desbloqueie o fluxo de dados chamando **IPinFlowCo
 
 <dl> <dt>
 
-[Criação de grafo dinâmico](dynamic-graph-building.md)
+[criação de Graph dinâmico](dynamic-graph-building.md)
 </dt> </dl>
 
  

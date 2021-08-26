@@ -4,12 +4,12 @@ ms.assetid: 1d9a6a22-bb82-45e1-80d2-88627c90340c
 title: Propriedade AVEncStatAudioPeakPCMValue (Codecapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 00d75444631a63c946d4020fe91cdd3a980fc393
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 330f3eea62ce5f0232504786c63e87c233bd802f6d06fad6306f476f9d6b5361
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104087509"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119999836"
 ---
 # <a name="avencstataudiopeakpcmvalue-property"></a>Propriedade AVEncStatAudioPeakPCMValue
 
@@ -37,9 +37,9 @@ Esta propriedade se aplica somente à codificação de taxa de bits variável (V
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos do Windows 2000 Professional \[ Desktop aplicativos \| UWP\]<br/>                     |
-| Servidor mínimo com suporte<br/> | Aplicativos da área de trabalho do Windows 2000 Server aplicativos \[ \| UWP\]<br/>                           |
-| parâmetro<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | aplicativos Windows 2000 Professional \[ desktop aplicativos \| UWP\]<br/>                     |
+| Servidor mínimo com suporte<br/> | Windows \[ aplicativos da área de trabalho do servidor 2000 \| aplicativo UWP\]<br/>                           |
+| Cabeçalho<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
 
 
 

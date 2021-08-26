@@ -3,7 +3,7 @@ title: PGM_GETBKCOLOR mensagem (Commctrl.h)
 description: Recupera a cor da tela de fundo atual para o controle de pager. Você pode enviar essa mensagem explicitamente ou usar a \_ macro GetBkColor do Pager.
 ms.assetid: c39ad721-fe39-44e9-8305-67444acc5d65
 keywords:
-- PGM_GETBKCOLOR controles Windows mensagem
+- PGM_GETBKCOLOR controles de Windows mensagem
 topic_type:
 - apiref
 api_name:

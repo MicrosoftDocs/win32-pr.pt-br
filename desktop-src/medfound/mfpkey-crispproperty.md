@@ -1,19 +1,19 @@
 ---
-description: Especifica uma representação numérica da compensação entre a suavidade de movimento e a qualidade da imagem da saída do codec.
+description: Especifica uma representação numérica da desvantagem entre a suavização de movimento e a qualidade da imagem da saída do codec.
 ms.assetid: 63915450-71c5-4097-91d7-5817249c1cda
-title: Propriedade MFPKEY_CRISP (Wmcodecdsp. h)
+title: MFPKEY_CRISP propriedade (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 04ff20b37bcedf3995ec3e16178b823c40b352ba
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 177ae5e9d1c8a9aba359000e04483c8e45c44f823c9db924155dd5ef3d5989a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103661878"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119954256"
 ---
-# <a name="mfpkey_crisp-property"></a>\_Propriedade MFPKEY Crisp
+# <a name="mfpkey_crisp-property"></a>Propriedade MFPKEY \_ CRISP
 
-Especifica uma representação numérica da compensação entre a suavidade de movimento e a qualidade da imagem da saída do codec.
+Especifica uma representação numérica da desvantagem entre a suavização de movimento e a qualidade da imagem da saída do codec.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
@@ -21,7 +21,7 @@ g \_ wszWMVCCrisp
 
 ## <a name="data-type"></a>Tipo de Dados
 
-\_I4 VT
+VT \_ I4
 
 ## <a name="default-value"></a>Valor padrão
 
@@ -29,9 +29,9 @@ g \_ wszWMVCCrisp
 
 ## <a name="remarks"></a>Comentários
 
-Esse valor inteiro pode variar de 0 a 100. Quanto maior o valor, mais o codec otimizará a codificação para a qualidade da imagem de quadros individuais, o que geralmente reduz a suavidade do movimento.
+Esse valor inteiro pode variar de 0 a 100. Quanto maior o valor, mais o codec otimizará a codificação para a qualidade da imagem de quadros individuais, o que geralmente reduz a suavidade de movimento.
 
-Essa propriedade deve ser definida somente para a codificação de taxa de bits constante (CBR). As otimizações para a codificação de taxa de bits variável (VBR) funcionam de forma diferente.
+Essa propriedade deve ser definida somente para codificação CBR (taxa de bits constante). As otimizações para codificação VBR (taxa de bits variável) funcionam de maneira diferente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -39,9 +39,9 @@ Essa propriedade deve ser definida somente para a codificação de taxa de bits 
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                    |
-| parâmetro<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                    |
+| Cabeçalho<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -49,7 +49,7 @@ Essa propriedade deve ser definida somente para a codificação de taxa de bits 
 
 <dl> <dt>
 
-[Propriedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propriedades](media-foundation-properties.md)
 </dt> </dl>
 
  

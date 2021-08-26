@@ -1,11 +1,11 @@
 ---
-title: Atributo MSMQ-site-2
-description: O DN do segundo site de um par que está conectado.
+title: Atributo MSMQ-Site-2
+description: O DN do segundo site de um par conectado.
 ms.assetid: 41d8246e-c713-41c3-a570-f906ba0ab857
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo do MSMQ-site-2
-- Esquema de AD do atributo mSMQSite2
+- Esquema do AD do atributo MSMQ-Site-2
+- Esquema do AD do atributo mSMQSite2
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ad4f852750cf7d7566e3106e24062ec1234ba0ac
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d98f97eabf9d218dc3ecf46bd1fd14cd88ac796fb02c05bb188267fd7d21d4e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086908"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120066461"
 ---
-# <a name="msmq-site-2-attribute"></a>Atributo MSMQ-site-2
+# <a name="msmq-site-2-attribute"></a>Atributo MSMQ-Site-2
 
-O DN do segundo site de um par que está conectado.
+O DN do segundo site de um par conectado.
 
 
 
 | Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | MSMQ-site-2                             |
-| LDAP-Display-Name | mSMQSite2                               |
+| CN                | MSMQ-Site-2                             |
+| Ldap-Display-Name | mSMQSite2                               |
 | Tamanho              | \-                                      |
 | Privilégio de atualização  | \-                                      |
-| Frequência de atualização  | Cada vez que uma linha de site do MSMQ é criada. |
+| Frequência de atualização  | Cada vez que um MSMQ-Site-Line é criado. |
 | Attribute-Id      | 1.2.840.113556.1.4.944                  |
-| System-ID-GUID    | 9a0dc338-c100-11d1-bbc5-0080c76670c0    |
-| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | 9a0dc338-c100-11d1-football5-0080c76670c0    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -58,15 +58,15 @@ O DN do segundo site de um par que está conectado.
 | ID do link                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| É de valor único       | True                                                |
+| Tem valor único       | Verdadeiro                                                |
 | É indexado             | Falso                                               |
-| No catálogo global      | Falso                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                        |
+| No Catálogo Global      | Falso                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classes usadas em        | [**MSMQ-link de site**](c-msmqsitelink.md)<br/> |
+| Classes usadas em        | [**MSMQ-Site-Link**](c-msmqsitelink.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ O DN do segundo site de um par que está conectado.
 | ID do link                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| É de valor único       | True                                                |
+| Tem valor único       | Verdadeiro                                                |
 | É indexado             | Falso                                               |
-| No catálogo global      | Falso                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                        |
+| No Catálogo Global      | Falso                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classes usadas em        | [**MSMQ-link de site**](c-msmqsitelink.md)<br/> |
+| Classes usadas em        | [**MSMQ-Site-Link**](c-msmqsitelink.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ O DN do segundo site de um par que está conectado.
 | ID do link                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| É de valor único       | True                                                |
+| Tem valor único       | Verdadeiro                                                |
 | É indexado             | Falso                                               |
-| No catálogo global      | Falso                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                        |
+| No Catálogo Global      | Falso                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classes usadas em        | [**MSMQ-link de site**](c-msmqsitelink.md)<br/> |
+| Classes usadas em        | [**MSMQ-Site-Link**](c-msmqsitelink.md)<br/> |
 
 
 
@@ -121,7 +121,7 @@ O DN do segundo site de um par que está conectado.
 | ID do link                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| É de valor único       | True                                                |
+| É de valor único       | Verdadeiro                                                |
 | É indexado             | Falso                                               |
 | No catálogo global      | Falso                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                        |
@@ -142,7 +142,7 @@ O DN do segundo site de um par que está conectado.
 | ID do link                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| É de valor único       | True                                                |
+| É de valor único       | Verdadeiro                                                |
 | É indexado             | Falso                                               |
 | No catálogo global      | Falso                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                        |
@@ -163,7 +163,7 @@ O DN do segundo site de um par que está conectado.
 | ID do link                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| É de valor único       | True                                                |
+| É de valor único       | Verdadeiro                                                |
 | É indexado             | Falso                                               |
 | No catálogo global      | Falso                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                        |

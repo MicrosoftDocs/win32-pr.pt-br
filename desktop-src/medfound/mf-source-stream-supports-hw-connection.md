@@ -4,12 +4,12 @@ ms.assetid: 32FEBC99-0AE0-4FE9-90AB-5FB204BD4C83
 title: Atributo MF_SOURCE_STREAM_SUPPORTS_HW_CONNECTION (Mfidl. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 751d672e664ab1849376d839285393075ddf6af6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 659672b11cbcaa51f543eec8239f56ba792584a4b1ac44af25ed76016cdeb2a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105807950"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119955137"
 ---
 # <a name="mf_source_stream_supports_hw_connection-attribute"></a>O \_ fluxo de origem MF \_ \_ dá suporte ao \_ atributo de \_ conexão HW
 
@@ -42,9 +42,9 @@ A conexão entre a origem de mídia e a MFT é negociada da seguinte maneira.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 8 \| UWP\]<br/>                                  |
-| Servidor mínimo com suporte<br/> | Aplicativos do Windows Server 2012 \[ Desktop aplicativos \| UWP\]<br/>                        |
-| parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ aplicativos UWP de aplicativos de desktop \|\]<br/>                                  |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ aplicativos UWP de aplicativos de desktop \|\]<br/>                        |
+| Cabeçalho<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
 
 
 

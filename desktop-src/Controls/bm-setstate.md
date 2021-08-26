@@ -1,9 +1,9 @@
 ---
-title: Mensagem de BM_SETSTATE (WinUser. h)
-description: Define o estado de realce de um botão. O estado de realce indica se o botão é realçado como se o usuário tivesse enviado por push. Você pode enviar essa mensagem explicitamente ou usar a \_ macro SetState do botão.
+title: BM_SETSTATE mensagem (Winuser.h)
+description: Define o estado de realça de um botão. O estado de realça indica se o botão está realçado como se o usuário o tivesse pressionado. Você pode enviar essa mensagem explicitamente ou usar a \_ macro Button SetState.
 ms.assetid: 675ebe8d-b381-46ca-b328-ebe9f25d864a
 keywords:
-- Controles de BM_SETSTATE de mensagens do Windows
+- BM_SETSTATE controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ab9b60231980f406b0aeb499d724dc6aa7025513
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7e3bb9451041c602541f039afcd85a895af2f02302dc5d55d64fbefb5bc6e3ff
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105755660"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119921206"
 ---
-# <a name="bm_setstate-message"></a>\_Mensagem BM SETstate
+# <a name="bm_setstate-message"></a>Mensagem BM \_ SETSTATE
 
-Define o estado de realce de um botão. O estado de realce indica se o botão é realçado como se o usuário tivesse enviado por push. Você pode enviar essa mensagem explicitamente ou usar a [**macro \_ SetState do botão**](/windows/desktop/api/Windowsx/nf-windowsx-button_setstate) .
+Define o estado de realça de um botão. O estado de realça indica se o botão está realçado como se o usuário o tivesse pressionado. Você pode enviar essa mensagem explicitamente ou usar a macro [**\_ Button SetState.**](/windows/desktop/api/Windowsx/nf-windowsx-button_setstate)
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -32,7 +32,7 @@ Define o estado de realce de um botão. O estado de realce indica se o botão é
 *wParam* 
 </dt> <dd>
 
-Um **bool** que especifica se o botão é realçado. Um valor de **true** realça o botão. Um valor **false** remove qualquer realce.
+Um **BOOL** que especifica se o botão está realçada. Um valor true **realça** o botão. Um valor false **remove** qualquer realçamento.
 
 </dd> <dt>
 
@@ -43,15 +43,15 @@ Não usado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa mensagem sempre retorna zero.
 
 ## <a name="remarks"></a>Comentários
 
-Realce afeta apenas a aparência de um botão. Ele não tem nenhum efeito no estado de verificação de um botão de opção ou caixa de seleção.
+Realçamento afeta apenas a aparência de um botão. Ele não tem efeito sobre o estado de verificação de um botão de rádio ou caixa de seleção.
 
-Um botão é realçado automaticamente quando o usuário posiciona o cursor sobre ele e pressiona e mantém o botão esquerdo do mouse. O realce é removido quando o usuário libera o botão do mouse.
+Um botão é realçado automaticamente quando o usuário posiciona o cursor sobre ele e pressiona e mantém o botão esquerdo do mouse. O realçamento é removido quando o usuário libera o botão do mouse.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,9 +59,9 @@ Um botão é realçado automaticamente quando o usuário posiciona o cursor sobr
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -72,10 +72,10 @@ Um botão é realçado automaticamente quando o usuário posiciona o cursor sobr
 **Referência**
 </dt> <dt>
 
-[**BM \_ GETstate**](bm-getstate.md)
+[**BM \_ GETSTATE**](bm-getstate.md)
 </dt> <dt>
 
-[**BM \_ SETcheck**](bm-setcheck.md)
+[**BM \_ SETCHECK**](bm-setcheck.md)
 </dt> </dl>
 
  

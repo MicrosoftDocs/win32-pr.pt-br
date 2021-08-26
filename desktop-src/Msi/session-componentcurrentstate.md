@@ -1,7 +1,7 @@
 ---
-description: A propriedade ComponentCurrentState do objeto Session é uma propriedade somente leitura que retorna o estado atual instalado do componente designado. Para valores de estado, consulte a propriedade ComponentRequestState.
+description: A propriedade ComponentCurrentState do objeto Session é uma propriedade somente leitura que retorna o estado instalado atual do componente designado. Para valores de estado, consulte a propriedade ComponentRequestState.
 ms.assetid: c8343e90-8867-462d-9844-e547341a590c
-title: Propriedade Session. ComponentCurrentState
+title: Propriedade Session.ComponentCurrentState
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 8c556dd9656ebced155ef90fe96abd394a32ff1b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ce060c7eddb76491480f4a1de9f477629da489ae9d8412adc02da25b8d7a0a1e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747737"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120039847"
 ---
-# <a name="sessioncomponentcurrentstate-property"></a>Propriedade Session. ComponentCurrentState
+# <a name="sessioncomponentcurrentstate-property"></a>Propriedade Session.ComponentCurrentState
 
-A propriedade **ComponentCurrentState** do objeto [**Session**](session-object.md) é uma propriedade somente leitura que retorna o estado atual instalado do componente designado. Para valores de estado, consulte a propriedade [**ComponentRequestState**](session-componentrequeststate.md) .
+A **propriedade ComponentCurrentState** do [**objeto Session**](session-object.md) é uma propriedade somente leitura que retorna o estado instalado atual do componente designado. Para valores de estado, consulte a [**propriedade ComponentRequestState.**](session-componentrequeststate.md)
 
 Esta propriedade é somente para leitura.
 
@@ -37,11 +37,11 @@ propVal = Session.ComponentCurrentState
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Nome de cadeia de caracteres necessário do componente solicitado, chave primária na tabela de componentes.
+Nome da cadeia de caracteres necessária do componente solicitado, chave primária na tabela Componente.
 
 ## <a name="remarks"></a>Comentários
 
-Se a propriedade falhar, você poderá obter informações de erro estendidas usando o método [**LastErrorRecord**](installer-lasterrorrecord.md) .
+Se a propriedade falhar, você poderá obter informações de erro estendidas usando o [**método LastErrorRecord.**](installer-lasterrorrecord.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,9 +49,9 @@ Se a propriedade falhar, você poderá obter informações de erro estendidas us
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou no Windows Vista. Windows Installer no Windows Server 2003 ou no Windows XP<br/> |
+| Versão<br/> | Windows Instalador 5.0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Instalador 4.0 ou Windows Instalador 4.5 no Windows Server 2008 ou Windows Vista. Windows Instalador no Windows Server 2003 ou Windows XP<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ ISession é definido como 000C109E-0000-0000-C000-000000000046<br/>                                                                                                                                                                             |
+| IID<br/>     | IID ISession é definido como \_ 000C109E-0000-0000-C000-000000000046<br/>                                                                                                                                                                             |
 
 
 
@@ -59,7 +59,7 @@ Se a propriedade falhar, você poderá obter informações de erro estendidas us
 
 <dl> <dt>
 
-[**Session**](session-object.md)
+[**Sessão**](session-object.md)
 </dt> <dt>
 
 [**Propriedade ComponentRequestState**](session-componentrequeststate.md)

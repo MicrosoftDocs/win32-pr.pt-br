@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: referência do mecanismo de armazenamento extensível'
-title: Referência do mecanismo de armazenamento extensível
+description: 'saiba mais sobre: referência do mecanismo de Armazenamento extensível'
+title: referência do mecanismo de Armazenamento extensível
 TOCTitle: Extensible Storage Engine Reference
 ms:assetid: 5033f53b-72f1-4a28-926e-242461863071
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg269245(v=EXCHG.10)
@@ -15,44 +15,44 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0fa0c26a99b5dcf640173d4720fa59954a25a049
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 61efc6587d080e4afd99c54a72963a1a7afea2b77859097fb919920d85a19382
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105793686"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119968846"
 ---
-# <a name="extensible-storage-engine-reference"></a>Referência do mecanismo de armazenamento extensível
+# <a name="extensible-storage-engine-reference"></a>referência do mecanismo de Armazenamento extensível
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
-## <a name="extensible-storage-engine-reference"></a>Referência do mecanismo de armazenamento extensível
+## <a name="extensible-storage-engine-reference"></a>referência do mecanismo de Armazenamento extensível
 
-A referência do mecanismo de armazenamento extensível contém as seguintes seções:
+a referência do mecanismo de Armazenamento extensível contém as seguintes seções:
 
-  - [Funções de retorno de chamada do mecanismo de armazenamento extensível](./extensible-storage-engine-callback-functions.md)
-
-<!-- end list -->
-
-  - [Constantes do mecanismo de armazenamento extensível](./extensible-storage-engine-constants.md)
+  - [funções de retorno de chamada do mecanismo de Armazenamento extensível](./extensible-storage-engine-callback-functions.md)
 
 <!-- end list -->
 
-  - [Tipos de dados do mecanismo de armazenamento extensível](./extensible-storage-engine-data-types.md)
+  - [constantes do mecanismo de Armazenamento extensível](./extensible-storage-engine-constants.md)
 
 <!-- end list -->
 
-  - [Erros do mecanismo de armazenamento extensível](./extensible-storage-engine-errors.md)
+  - [tipos de dados do mecanismo de Armazenamento extensível](./extensible-storage-engine-data-types.md)
 
 <!-- end list -->
 
-  - [Arquivos do mecanismo de armazenamento extensível](./extensible-storage-engine-files.md)
+  - [erros do mecanismo de Armazenamento extensível](./extensible-storage-engine-errors.md)
 
 <!-- end list -->
 
-  - [Funções do mecanismo de armazenamento extensível](./extensible-storage-engine-functions.md)
+  - [arquivos do mecanismo de Armazenamento extensível](./extensible-storage-engine-files.md)
 
 <!-- end list -->
 
-  - [Estruturas do mecanismo de armazenamento extensível](./extensible-storage-engine-structures.md)
+  - [funções do mecanismo de Armazenamento extensível](./extensible-storage-engine-functions.md)
+
+<!-- end list -->
+
+  - [estruturas do mecanismo de Armazenamento extensível](./extensible-storage-engine-structures.md)

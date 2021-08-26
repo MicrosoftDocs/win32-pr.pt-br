@@ -1,7 +1,7 @@
 ---
-description: O \_ método Put Caption define o título ou a legenda da janela.
+description: O método put \_ Caption define o título ou a legenda da janela.
 ms.assetid: 6671805a-e1ef-40f1-bc3f-bf7954ff9851
-title: Método de CBaseControlWindow.put_Caption (Ctlutil. h)
+title: CBaseControlWindow.put_Caption método (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: aca8e5e7ad04acae9fab1cfe2d44f982266805e8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c7f0c9da5ad2c3ae409e14a1ca9918a0c1aa7ef04615ab4d647ce1a3467c7311
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749855"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119983696"
 ---
-# <a name="cbasecontrolwindowput_caption-method"></a>Método de legenda CBaseControlWindow. put \_
+# <a name="cbasecontrolwindowput_caption-method"></a>Método CBaseControlWindow.put \_ Caption
 
-O `put_Caption` método define o título ou a legenda da janela.
+O `put_Caption` método define o título ou legenda da janela.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,17 +45,17 @@ HRESULT put_Caption(
 *strCaption* 
 </dt> <dd>
 
-Nova legenda da janela.
+Legenda da nova janela.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor **HRESULT** .
+Retorna um **valor HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
-A maioria das janelas de nível superior em uma área de trabalho baseada no Windows tem um título (legenda) associado a elas. Essa propriedade pode ser consultada e definida por meio da interface [**IVideoWindow**](/windows/desktop/api/Control/nn-control-ivideowindow) . Qualquer conjunto de legendas será visível somente se a janela tiver o \_ estilo de legenda WS aplicado. Se não tiver, a legenda ainda poderá ser definida (e recuperada), embora não seja visível para o usuário.
+A maioria das janelas de nível superior Windows área de trabalho baseada em Windows tem um título (legenda) associado a elas. Essa propriedade pode ser consultada e definida por meio da interface [**IVideoWindow.**](/windows/desktop/api/Control/nn-control-ivideowindow) Qualquer conjunto de legendas ficará visível somente se a janela tiver o estilo CAPTION do WS \_ aplicado. Se não, a legenda ainda poderá ser definida (e recuperada), embora não seja visível para o usuário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ A maioria das janelas de nível superior em uma área de trabalho baseada no Win
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Ctlutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

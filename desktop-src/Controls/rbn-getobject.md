@@ -3,7 +3,7 @@ title: RBN_GETOBJECT código de notificação (commctrl. h)
 description: Enviado por um controle rebar criado com o \_ estilo RBS REGISTERDROP quando um objeto é arrastado sobre uma banda no controle. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
 ms.assetid: 057474c1-5f65-4290-973e-4366b760365a
 keywords:
-- RBN_GETOBJECT de código de notificação controles do Windows
+- RBN_GETOBJECT código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a390bc5c5f74a577805ca8ae1128fbb24e6b10b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1d9709313a16d068e44b847f5e0862adf1e133b9f0ea92136a12e9aae24ffb14
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085921"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119985036"
 ---
 # <a name="rbn_getobject-notification-code"></a>\_Código de notificação GETobject do RBN
 
@@ -45,7 +45,7 @@ Ponteiro para uma estrutura [**NMOBJECTNOTIFY**](/windows/win32/api/commctrl/ns-
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno para este código de notificação deve ser zero.
 
@@ -59,9 +59,9 @@ Para receber o \_ código de notificação GetObject do RBN, inicialize o OLE co
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

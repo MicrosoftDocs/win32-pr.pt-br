@@ -4,12 +4,12 @@ ms.assetid: b6c33cc8-ff43-4a19-a333-51a7f9b265a9
 title: Propriedade MFNETSOURCE_BROWSERUSERAGENT (Mfidl. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f8cbb4dcd5558c59da20e75209529c16fc0c147
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cf46fde925dbe2d94643a0843d105726f0976ba7a84f47773ef35e32ae8dfde7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104502100"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119954856"
 ---
 # <a name="mfnetsource_browseruseragent-property"></a>\_Propriedade MFNETSOURCE BROWSERUSERAGENT
 
@@ -43,9 +43,9 @@ Os aplicativos podem usar essa propriedade para configurar a origem da rede. Par
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
 
 
 

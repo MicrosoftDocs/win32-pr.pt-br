@@ -4,12 +4,12 @@ description: O exemplo nesta seção demonstra como criar uma caixa de diálogo 
 ms.assetid: DBF7FBDF-AADC-45CE-833E-F893C1129FC0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fa0b84a8a77d18903ddbdb29687cc2b97b88872b
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: 8fa2ad8ba22c2972c6bdd502728af413d4800dabf0ab5c9196a4033a52267115
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103824015"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119920706"
 ---
 # <a name="how-to-create-a-tabbed-dialog-box"></a>Como criar uma caixa de diálogo com guias
 
@@ -18,7 +18,7 @@ O exemplo nesta seção demonstra como criar uma caixa de diálogo que usa guias
 > [!Note]  
 > Em muitos casos, você pode implementar caixas de diálogo de várias páginas com mais facilidade usando folhas de propriedades. Para obter mais informações sobre folhas de propriedades, consulte [about Property Sheets](property-sheets.md).
 
- 
+ 
 
 O modelo da caixa de diálogo principal simplesmente define dois controles Button. Ao processar a [**mensagem \_ INITDIALOG do WM**](/windows/desktop/dlgbox/wm-initdialog) , o procedimento da caixa de diálogo cria um controle guia e carrega os recursos de modelo da caixa de diálogo para cada uma das caixas de diálogo filhas.
 
@@ -26,12 +26,12 @@ O modelo da caixa de diálogo principal simplesmente define dois controles Butto
 
 ### <a name="technologies"></a>Tecnologias
 
--   [Controles do Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
 -   C/C++
--   Programação da interface do usuário do Windows
+-   Windows Programação de interface do usuário
 
 ## <a name="instructions"></a>Instruções
 
@@ -258,9 +258,9 @@ VOID WINAPI OnChildDialogInit(HWND hwndDlg)
 [Usando controles de guia](using-tab-controls.md)
 </dt> <dt>
 
-[Demonstração de controles comuns do Windows (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
+[Windows de demonstração de controles comuns (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

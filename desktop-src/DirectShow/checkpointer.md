@@ -1,7 +1,7 @@
 ---
-description: Verifica se um ponteiro é nulo. Se o ponteiro for nulo, a função ou o método no qual a macro aparece retornará o valor especificado.
+description: Verifica se um ponteiro é NULL. Se o ponteiro for NULL, a função ou o método no qual a macro aparece retornará o valor especificado.
 ms.assetid: eca73fbf-5fd8-4b76-af06-ca0c22510b55
-title: Macro do ponto de verificação (Wxdebug. h)
+title: Macro CheckPointer (Wxdebug.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Wxdebug.h
-ms.openlocfilehash: 04f442303e520ef758a3576d21c2df810ef26fb2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ef1fa2370def45321958862ebaf3ded341b13f45ddae1ecafdc4a17e937aca08
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748200"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119999286"
 ---
-# <a name="checkpointer-macro"></a>Macro do ponto de verificação
+# <a name="checkpointer-macro"></a>Macro CheckPointer
 
-Verifica se um ponteiro é **nulo**. Se o ponteiro for **nulo**, a função ou o método no qual a macro aparece retornará o valor especificado.
+Verifica se um ponteiro é **NULL.** Se o ponteiro for **NULL,** a função ou o método no qual a macro aparece retornará o valor especificado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,23 +40,23 @@ HRESULT CheckPointer(
 
 <dl> <dt>
 
-*DTI* 
+*P* 
 </dt> <dd>
 
 Ponteiro para verificar.
 
 </dd> <dt>
 
-*RET* 
+*Ret* 
 </dt> <dd>
 
-Valor que a função ou método retorna se *p* for **nulo**.
+Valor que a função ou método retornará se *p* for **NULL.**
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-A função ao redor retornará *RET* se *p* for **NULL**. Caso contrário, a macro não fará com que a função ao redor seja retornada.
+A função ao redor *retornará ret* se *p* for **NULL.** Caso contrário, a macro não faz com que a função ao redor retorne.
 
 ## <a name="examples"></a>Exemplos
 
@@ -79,7 +79,7 @@ HRESULT MyFunction(VOID *pSomeParameter)
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Wxdebug. h (incluir fluxos. h)</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Wxdebug.h (incluir Fluxos.h)</dt> </dl> |
 
 
 

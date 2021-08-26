@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 41456f99d90b4d6e915669fc3f5c84109efa5be5
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c55a774457cd95b8e70604cd09e4164acf3669dbec9f9c63b6997e9a6e262672
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103645534"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120066135"
 ---
 # <a name="ms-tpm-ownerinformation-attribute"></a>atributo ms-TPM-OwnerInformation
 
@@ -55,7 +55,7 @@ Contém as informações de proprietário de um determinado TPM.
 | ID do link                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| É de valor único       | True                                      |
+| É de valor único       | Verdadeiro                                      |
 | É indexado             | Falso                                     |
 | No catálogo global      | Falso                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                              |
@@ -76,7 +76,7 @@ Contém as informações de proprietário de um determinado TPM.
 | ID do link                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| É de valor único       | True                                      |
+| É de valor único       | Verdadeiro                                      |
 | É indexado             | Falso                                     |
 | No catálogo global      | Falso                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                              |
@@ -97,7 +97,7 @@ Contém as informações de proprietário de um determinado TPM.
 | ID do link                | \-                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                  |
 | System-Only            | Falso                                                                                                               |
-| É de valor único       | True                                                                                                                |
+| É de valor único       | Verdadeiro                                                                                                                |
 | É indexado             | Falso                                                                                                               |
 | No catálogo global      | Falso                                                                                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                        |
