@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 56937fcea63ae811d238d14255f1fd46cbfb92e9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7fa878ff7ca319b58aa56bfd94bf5eb82d0446206fab03d90a5f19807c52c9c1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825144"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120066386"
 ---
 # <a name="mssfu-30-netgroup-host-at-domain-attribute"></a>msSFU-30-netgroup – atributo host-at-Domain
 
@@ -57,7 +57,7 @@ Contém parte do mapa do netgroup que representa cadeias de caracteres computada
 | MAPI-Id                | \-                                              |
 | System-Only            | Falso                                           |
 | É de valor único       | Falso                                           |
-| É indexado             | True                                            |
+| É indexado             | Verdadeiro                                            |
 | No catálogo global      | Falso                                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                    |
 | Range-Lower            | \-                                              |
@@ -78,7 +78,7 @@ Contém parte do mapa do netgroup que representa cadeias de caracteres computada
 | MAPI-Id                | \-                                              |
 | System-Only            | Falso                                           |
 | É de valor único       | Falso                                           |
-| É indexado             | True                                            |
+| É indexado             | Verdadeiro                                            |
 | No catálogo global      | Falso                                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                    |
 | Range-Lower            | \-                                              |
@@ -99,7 +99,7 @@ Contém parte do mapa do netgroup que representa cadeias de caracteres computada
 | MAPI-Id                | \-                                              |
 | System-Only            | Falso                                           |
 | É de valor único       | Falso                                           |
-| É indexado             | True                                            |
+| É indexado             | Verdadeiro                                            |
 | No catálogo global      | Falso                                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                    |
 | Range-Lower            | \-                                              |
@@ -119,10 +119,10 @@ Contém parte do mapa do netgroup que representa cadeias de caracteres computada
 | ID do link                | \-                                              |
 | MAPI-Id                | \-                                              |
 | System-Only            | Falso                                           |
-| É de valor único       | Falso                                           |
-| É indexado             | True                                            |
-| No catálogo global      | Falso                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                    |
+| Tem valor único       | Falso                                           |
+| É indexado             | Verdadeiro                                            |
+| No Catálogo Global      | Falso                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                    |
 | Range-Lower            | \-                                              |
 | Range-Upper            | \-                                              |
 | Search-Flags           | 0x00000001                                      |

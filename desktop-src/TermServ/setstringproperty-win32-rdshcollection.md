@@ -1,12 +1,12 @@
 ---
-title: Método setstringproperty da classe Win32_RDSHCollection (CertEnroll. h)
-description: Atualiza um valor de propriedade de cadeia de caracteres de um \_ objeto Win32 RDSHCollection.
+title: Método SetStringProperty da classe Win32_RDSHCollection (Certenroll.h)
+description: Atualiza um valor da propriedade de cadeia de caracteres de um \_ objeto Win32 RDSHCollection.
 ms.assetid: 6981b47a-5480-44f5-90e3-f64d439fa2aa
 ms.tgt_platform: multiple
 keywords:
-- Método setstringproperty Serviços de Área de Trabalho Remota
-- Método setstringproperty Serviços de Área de Trabalho Remota, classe Win32_RDSHCollection
-- Classe Win32_RDSHCollection Serviços de Área de Trabalho Remota, método setstringproperty
+- Método SetStringProperty Serviços de Área de Trabalho Remota
+- Método SetStringProperty Serviços de Área de Trabalho Remota , Win32_RDSHCollection classe
+- Win32_RDSHCollection classe Serviços de Área de Trabalho Remota , método SetStringProperty
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2606c195822432138ee67576db54f945c6834cfd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 87556f82f4004b6c7dbf194dfe38f47804d1fa07747ccb7e18d2b24a4a70f355
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105769376"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119987486"
 ---
-# <a name="setstringproperty-method-of-the-win32_rdshcollection-class"></a>Método setstringproperty da classe Win32 \_ RDSHCollection
+# <a name="setstringproperty-method-of-the-win32_rdshcollection-class"></a>Método SetStringProperty da classe Win32 \_ RDSHCollection
 
-Atualiza um valor de propriedade de cadeia de caracteres de um objeto [**Win32 \_ RDSHCollection**](win32-rdshcollection.md) .
+Atualiza um valor da propriedade de cadeia de caracteres de um [**\_ objeto Win32 RDSHCollection.**](win32-rdshcollection.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,21 +44,21 @@ uint32 SetStringProperty(
 
 <dl> <dt>
 
-*Chave* \[ no\]
+*Chave* \[ Em\]
 </dt> <dd>
 
 A chave que identifica a propriedade a ser atualizada.
 
 </dd> <dt>
 
-*Valor* \[ do no\]
+*Valor* \[ Em\]
 </dt> <dd>
 
 O novo valor da propriedade.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI.
 
@@ -70,9 +70,9 @@ Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI.
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                                   |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                              |
-| Namespace<br/>                | \\RDMs CIMv2 \\ raiz<br/>                                                                |
-| parâmetro<br/>                   | <dl> <dt>CertEnroll. h</dt> </dl>     |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Namespace<br/>                | \\rdms CIMv2 \\ raiz<br/>                                                                |
+| Cabeçalho<br/>                   | <dl> <dt>Certenroll.h</dt> </dl>     |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -81,7 +81,7 @@ Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI.
 
 <dl> <dt>
 
-[**\_RDSHCollection Win32**](win32-rdshcollection.md)
+[**Win32 \_ RDSHCollection**](win32-rdshcollection.md)
 </dt> </dl>
 
  

@@ -7,12 +7,12 @@ keywords:
 - transmit_as
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f08b885826aea302a16d8c23709de0ef0b07a848
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 617422c50bae46de72bac1e548b6f248b19d0cb2436ac0c08b265bbba4f5a6cb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366410"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120016636"
 ---
 # <a name="the-transmit_as-attribute"></a>O \_ atributo transmitir como
 
@@ -33,15 +33,15 @@ A tabela a seguir descreve os quatro nomes de rotina fornecidos pelo programador
 | [**tipo \_ para \_ transmissão**](the-type-to-xmit-function.md)     | Aloca um objeto do tipo transmitido e converte do tipo de aplicativo para o tipo transmitido pela rede (chamador e objeto chamado). |
 | [**Tipo \_ de \_ transmissão**](the-type-from-xmit-function.md) | Converte do tipo transmitido para o tipo de aplicativo (chamador e objeto chamado).                                                                  |
 | [**Digite \_ \_ InStr gratuito**](the-type-free-inst-function.md) | Libera recursos usados pelo tipo de aplicativo (objeto chamado somente).                                                                              |
-| [**\_Transmissão gratuita de tipo \_**](the-type-free-xmit-function.md) | Libera o armazenamento retornado pelo tipo para a rotina de *****\_*** \_ transmissão** (chamador e objeto chamado).                                                      |
+| [**\_Transmissão gratuita de tipo \_**](the-type-free-xmit-function.md) | Libera o armazenamento retornado pelo **tipo** _\__ para a rotina de *_\_ transmissão_* (chamador e objeto chamado).                                                      |
 
 
 
- 
+ 
 
 Além dessas quatro funções fornecidas pelo programador, o tipo transmitido não é manipulado pelo aplicativo. O tipo transmitido é definido somente para mover dados pela rede. Depois que os dados são convertidos no tipo usado pelo aplicativo, a memória usada pelo tipo transmitido é liberada.
 
-Essas rotinas fornecidas pelo programador são fornecidas pelo cliente ou pelo aplicativo de servidor com base nos atributos direcionais. Se o parâmetro for **\[** [](/windows/desktop/Midl/in) **\]** somente, o cliente transmitirá para o servidor. O cliente precisa do **tipo \_ para \_ transmissão** e tipo de funções de **\_ \_ transmissão gratuita** . O servidor precisa do **tipo \_ de \_ transmissão** e **digitar \_ funções \_ Inst gratuitas** . Para um **\[** [](/windows/desktop/Midl/out-idl) **\]** parâmetro somente out, o servidor transmite para o cliente. O aplicativo de servidor deve implementar o **tipo \_ para \_ transmissão** e digitar funções de **\_ \_ transmissão gratuitas** , enquanto o programa cliente deve fornecer o **tipo da função \_ de \_ transmissão** . Para os objetos **de \_ tipo de transmissão** temporários, o stub chamará a *****\_*** \_ transmissão gratuita de tipo** para liberar qualquer memória alocada por uma chamada de **tipo \_ para \_ transmissão**.
+Essas rotinas fornecidas pelo programador são fornecidas pelo cliente ou pelo aplicativo de servidor com base nos atributos direcionais. Se o parâmetro for **\[** [](/windows/desktop/Midl/in) **\]** somente, o cliente transmitirá para o servidor. O cliente precisa do **tipo \_ para \_ transmissão** e tipo de funções de **\_ \_ transmissão gratuita** . O servidor precisa do **tipo \_ de \_ transmissão** e **digitar \_ funções \_ Inst gratuitas** . Para um **\[** [](/windows/desktop/Midl/out-idl) **\]** parâmetro somente out, o servidor transmite para o cliente. O aplicativo de servidor deve implementar o **tipo \_ para \_ transmissão** e digitar funções de **\_ \_ transmissão gratuitas** , enquanto o programa cliente deve fornecer o **tipo da função \_ de \_ transmissão** . Para os objetos **de \_ tipo de transmissão** temporários, o stub chamará a _\__ *_\_ transmissão gratuita_* de tipo para liberar qualquer memória alocada por uma chamada de **tipo \_ para \_ transmissão**.
 
 Certas diretrizes se aplicam à instância do tipo de aplicativo. Se o tipo de aplicativo for um ponteiro ou contiver um ponteiro, o **tipo** \_ **da rotina de \_ transmissão** deverá alocar memória para os dados aos quais os ponteiros apontam (o próprio objeto de tipo de aplicativo é manipulado pelo stub da maneira usual).
 
@@ -100,6 +100,6 @@ void __RPC_USER DOUBLE_LINK_TYPE_free_xmit (
     DOUBLE_XMIT_TYPE __RPC_FAR * pArray);
 ```
 
- 
+ 
 
- 
+ 

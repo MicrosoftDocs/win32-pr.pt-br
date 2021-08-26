@@ -1,17 +1,17 @@
 ---
 description: Interface do Usuário
 ms.assetid: 2770E065-A15E-46CA-9D4E-610A2FE62E64
-title: Interface do usuário (notas do desenvolvedor)
+title: Interface do Usuário (Notas do Desenvolvedor)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4095920ab4f63e68795e94c12d58527c191ac319
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: ed3c537ec60713b02cc522bd50fdc5566a7f54dda0442a0517af76e73af8b6e7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104500773"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120001076"
 ---
-# <a name="user-interface-developer-notes"></a>Interface do usuário (notas do desenvolvedor)
+# <a name="user-interface-developer-notes"></a>Interface do Usuário (Notas do Desenvolvedor)
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -32,7 +32,7 @@ ms.locfileid: "104500773"
 -   [**KRShowKeyMgr**](krshowkeymgr.md)
 -   [**NmMakeCert**](nmmakecert.md)
 -   [**SetShellNext**](/windows/desktop/api/Icwcfg/nf-icwcfg-setshellnext)
--   [**CTLCOLOR do WM \_**](wm-ctlcolor-.md)
+-   [**WM \_ CTLCOLOR**](wm-ctlcolor-.md)
 
  
 

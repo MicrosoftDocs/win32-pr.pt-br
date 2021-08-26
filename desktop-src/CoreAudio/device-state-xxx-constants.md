@@ -4,12 +4,12 @@ ms.assetid: d03f2fbc-313a-42cf-902a-fd9f6dce2a35
 title: Constantes de DEVICE_STATE_XXX (Mmdeviceapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b65fc09a547ad702d27e96e968915f9d70e3313e
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b3d5632f14ff52fec2aa907dc2786f2a3ab893f921cd44433548510163f66a1b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646214"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120053866"
 ---
 # <a name="device_state_xxx-constants"></a>Constantes do estado do dispositivo \_ \_ xxx
 
@@ -20,7 +20,7 @@ As \_ constantes do estado \_ do dispositivo xxx indicam o estado atual de um di
 | Constante/valor                                                                                                                                                                                                                                               | Descrição                                                                                                                                                                                                                                                                                                                                                                      |
 |:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="DEVICE_STATE_ACTIVE"></span><span id="device_state_active"></span><dl> <dt>**Dispositivo \_ do ESTADO \_ ativo**</dt> <dt>0x00000001</dt> </dl>             | O dispositivo de ponto de extremidade de áudio está ativo. Ou seja, o adaptador de áudio que se conecta ao dispositivo de ponto de extremidade está presente e habilitado. Além disso, se o dispositivo de ponto de extremidade se conectar a uma tomada no adaptador, o dispositivo de ponto de extremidade será conectado.<br/>                                                                                                                            |
-| <span id="DEVICE_STATE_DISABLED"></span><span id="device_state_disabled"></span><dl> <dt>**Dispositivo \_ do ESTADO \_ desabilitado**</dt> <dt>0x00000002</dt> </dl>       | O dispositivo de ponto de extremidade de áudio está desabilitado. O usuário desabilitou o dispositivo no painel de controle multimídia do Windows Mmsys.cpl. Para obter mais informações, consulte Comentários.<br/>                                                                                                                                                                                                        |
+| <span id="DEVICE_STATE_DISABLED"></span><span id="device_state_disabled"></span><dl> <dt>**Dispositivo \_ do ESTADO \_ desabilitado**</dt> <dt>0x00000002</dt> </dl>       | O dispositivo de ponto de extremidade de áudio está desabilitado. o usuário desabilitou o dispositivo no painel de controle Windows multimídia Mmsys.cpl. Para obter mais informações, consulte Comentários.<br/>                                                                                                                                                                                                        |
 | <span id="DEVICE_STATE_NOTPRESENT"></span><span id="device_state_notpresent"></span><dl> <dt>**Dispositivo \_ do Estado não \_ presente**</dt> <dt>0x00000004</dt> </dl> | O dispositivo de ponto de extremidade de áudio não está presente porque o adaptador de áudio que se conecta ao dispositivo de ponto de extremidade foi removido do sistema ou o usuário desabilitou o dispositivo de adaptador no Gerenciador de Dispositivos.<br/>                                                                                                                                                              |
 | <span id="DEVICE_STATE_UNPLUGGED"></span><span id="device_state_unplugged"></span><dl> <dt>**Dispositivo \_ do Estado de 0x00000008 \_ DESconectado**</dt> <dt></dt> </dl>    | O dispositivo de ponto de extremidade de áudio está desconectado. O adaptador de áudio que contém a tomada para o dispositivo de ponto de extremidade está presente e habilitado, mas o dispositivo de ponto de extremidade não está conectado à tomada. Somente um dispositivo com detecção de presença de Jack pode estar nesse estado. Para obter mais informações sobre a detecção de presença de Jack, consulte [dispositivos de ponto de extremidade de áudio](audio-endpoint-devices.md).<br/> |
 | <span id="DEVICE_STATEMASK_ALL"></span><span id="device_statemask_all"></span><dl> <dt>**Dispositivo \_ do STATEMASK \_ todos os**</dt> <dt>0x0000000F</dt> </dl>          | Inclui dispositivos de ponto de extremidade de áudio em todos os Estados ativos, desabilitados, não presentes e desconectados.<br/>                                                                                                                                                                                                                                                                           |
@@ -33,7 +33,7 @@ Os métodos [**IMMDeviceEnumerator:: EnumAudioEndpoints**](/windows/desktop/api/
 
 No entanto, um cliente pode abrir um fluxo (por exemplo, obtendo uma interface [**IAudioClient**](/windows/desktop/api/Audioclient/nn-audioclient-iaudioclient) para o dispositivo) somente em um dispositivo que esteja no \_ estado ativo do estado do dispositivo \_ .
 
-O painel de controle multimídia do Windows, Mmsys.cpl, exibe os dispositivos de ponto de extremidade de áudio no sistema. A desabilitação de um dispositivo no Mmsys.cpl oculta o dispositivo dos mecanismos de descoberta de dispositivo em APIs de áudio de nível superior, mas não invalida os objetos de fluxo que um cliente pode ter instanciado antes de o dispositivo ser desabilitado. Por exemplo, se um fluxo estiver sendo reproduzido no dispositivo quando o usuário o desabilitar no Mmsys.cpl, o fluxo continuará a ser executado sem interrupções.
+o painel de controle de multimídia Windows, Mmsys.cpl, exibe os dispositivos de ponto de extremidade de áudio no sistema. A desabilitação de um dispositivo no Mmsys.cpl oculta o dispositivo dos mecanismos de descoberta de dispositivo em APIs de áudio de nível superior, mas não invalida os objetos de fluxo que um cliente pode ter instanciado antes de o dispositivo ser desabilitado. Por exemplo, se um fluxo estiver sendo reproduzido no dispositivo quando o usuário o desabilitar no Mmsys.cpl, o fluxo continuará a ser executado sem interrupções.
 
 Por outro lado, desabilitar um dispositivo no Gerenciador de Dispositivos remove efetivamente o dispositivo do sistema.
 
@@ -63,9 +63,9 @@ Para habilitar ou desabilitar um dispositivo de ponto de extremidade no Mmsys.cp
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                     |
-| parâmetro<br/>                   | <dl> <dt>Mmdeviceapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Mmdeviceapi. h</dt> </dl> |
 
 
 

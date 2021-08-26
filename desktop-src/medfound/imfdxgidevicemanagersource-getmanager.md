@@ -1,7 +1,7 @@
 ---
-description: Obtém o IMFDXGIDeviceManager do coletor de renderização de vídeo Microsoft Media Foundation.
+description: Obtém o IMFDXGIDeviceManager do Microsoft Media Foundation de renderização de vídeo.
 ms.assetid: 809e89e4-3ed5-4dba-82dc-4ec217b8ef38
-title: 'Método IMFDXGIDeviceManagerSource:: GetManager'
+title: Método IMFDXGIDeviceManagerSource::GetManager
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - mfidl.h
-ms.openlocfilehash: 098810e9e06f339b1035748d71f46c7af26e96a8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9e42e42e88dfa2acec9061a54f3a8fcc96128ad5aee6ff004e49f6dd10062074
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105784969"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119957826"
 ---
-# <a name="imfdxgidevicemanagersourcegetmanager-method"></a>Método IMFDXGIDeviceManagerSource:: GetManager
+# <a name="imfdxgidevicemanagersourcegetmanager-method"></a>Método IMFDXGIDeviceManagerSource::GetManager
 
-Obtém o [**IMFDXGIDeviceManager**](/windows/desktop/api/mfobjects/nn-mfobjects-imfdxgidevicemanager) do coletor de renderização de vídeo Microsoft Media Foundation.
+Obtém [**o IMFDXGIDeviceManager**](/windows/desktop/api/mfobjects/nn-mfobjects-imfdxgidevicemanager) do Microsoft Media Foundation de renderização de vídeo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,16 +39,16 @@ HRESULT GetManager(
 
 <dl> <dt>
 
-*ppManager* \[ fora\]
+*ppManager* \[ out\]
 </dt> <dd>
 
-O objeto [**IMFDXGIDeviceManager**](/windows/desktop/api/mfobjects/nn-mfobjects-imfdxgidevicemanager) .
+O [**objeto IMFDXGIDeviceManager.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfdxgidevicemanager)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,9 +56,9 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos Windows 8.1 aplicativos de \[ área de trabalho \| UWP\]<br/>                                  |
-| Servidor mínimo com suporte<br/> | \[Aplicativos UWP para aplicativos da área de trabalho do Windows Server 2012 R2 \|\]<br/>                       |
-| INSERI<br/>                      | <dl> <dt>Mfidl. idl</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8.1 aplicativos UWP de aplicativos da área \| de trabalho\]<br/>                                  |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 Aplicativos UWP de aplicativos da área \[ de trabalho \| R2\]<br/>                       |
+| Idl<br/>                      | <dl> <dt>Mfidl.idl</dt> </dl> |
 
 
 

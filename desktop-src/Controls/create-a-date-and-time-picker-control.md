@@ -1,36 +1,36 @@
 ---
-title: Como criar um controle de seletor de data e hora
-description: Este tópico demonstra como criar dinamicamente um controle DTP (data and time Picker).
+title: Como criar um controle de selador de data e hora
+description: Este tópico demonstra como criar dinamicamente um controle DTP (selador de data e hora).
 ms.assetid: D4ACA939-3004-48D3-ADD9-FC5E53128BA2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1253a2972b8d858a7440b3e472d5b3aa347b8175
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: afa3f18e6033d3764e385280da383d74c351201694969266dcc383654a4372ac
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104162411"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119920886"
 ---
-# <a name="how-to-create-a-date-and-time-picker-control"></a>Como criar um controle de seletor de data e hora
+# <a name="how-to-create-a-date-and-time-picker-control"></a>Como criar um controle de selador de data e hora
 
-Este tópico demonstra como criar dinamicamente um controle DTP (data and time Picker). O exemplo de código C++ que o acompanha cria um controle DTP em uma caixa de diálogo sem janela restrita. Ele usa o estilo DTS não- [**\_ None**](date-and-time-picker-control-styles.md) para permitir que o usuário simule a desativação da data dentro do controle.
+Este tópico demonstra como criar dinamicamente um controle DTP (selador de data e hora). O exemplo de código C++ que acompanha cria um controle DTP em uma caixa de diálogo sem modo. Ele usa o [**estilo DTS \_ SHOWNONE**](date-and-time-picker-control-styles.md) para permitir que o usuário simule a desativação da data dentro do controle .
 
 ## <a name="what-you-need-to-know"></a>O que você precisa saber
 
 ### <a name="technologies"></a>Tecnologias
 
--   [Controles do Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
 -   C/C++
--   Programação da interface do usuário do Windows
+-   Windows Interface do Usuário programação
 
 ## <a name="instructions"></a>Instruções
 
 ### <a name="step-1"></a>Etapa 1:
 
-Registre a classe Window chamando a função [**InitCommonControlsEx**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrolsex) e especificando o \_ bit classes de data de ICC \_ na estrutura [**InitCommonControlsEx**](/windows/win32/api/commctrl/ns-commctrl-initcommoncontrolsex) que acompanha.
+Registre a classe de janela chamando a função [**InitCommonControlsEx**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrolsex) e especificando o bit ICC DATE CLASSES na estrutura \_ \_ [**INITCOMMONCONTROLSEX**](/windows/win32/api/commctrl/ns-commctrl-initcommoncontrolsex) que acompanha.
 
 
 ```C++
@@ -46,9 +46,9 @@ Registre a classe Window chamando a função [**InitCommonControlsEx**](/windows
 
 ### <a name="step-2"></a>Etapa 2:
 
-Para criar o controle DTP, use a função [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) . Especifique [**a \_ classe DATETIMEPICK**](common-control-window-classes.md) como a classe Window e passe o identificador para a caixa de diálogo pai.
+Para criar o controle DTP, use a [**função CreateWindowEx.**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) [**Especifique DATETIMEPICK \_ CLASS**](common-control-window-classes.md) como a classe de janela e passe o handle para a caixa de diálogo pai.
 
-O exemplo de código C++ a seguir usa a função [**CreateDialog**](/windows/desktop/api/winuser/nf-winuser-createdialoga) para criar uma caixa de diálogo sem janela restrita. Em seguida, ele chama **CreateWindowEx** para criar o controle DTP.
+O exemplo de código C++ a seguir usa a [**função CreateDialog**](/windows/desktop/api/winuser/nf-winuser-createdialoga) para criar uma caixa de diálogo sem modo. Em seguida, ele **chama CreateWindowEx** para criar o controle DTP.
 
 
 ```C++
@@ -121,15 +121,15 @@ HWND WINAPI CreateDatePick(HWND hwndMain)
 
 <dl> <dt>
 
-[Usando controles de seletor de data e hora](using-date-and-time-picker.md)
+[Usando controles de selador de data e hora](using-date-and-time-picker.md)
 </dt> <dt>
 
-[Referência de controle do seletor de data e hora](bumper-date-and-time-picker-date-and-time-picker-control-reference.md)
+[Referência de controle do selador de data e hora](bumper-date-and-time-picker-date-and-time-picker-control-reference.md)
 </dt> <dt>
 
-[Seletor de data e hora](date-and-time-picker-control-reference.md)
+[Selador de data e hora](date-and-time-picker-control-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

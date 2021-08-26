@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b00e1b589567f945861fe34055a8aa3f0be3e5bb
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ee6ae775e74ffd72009d9ac45e9c8926a37186362533cdb478ffb11f694d0ca0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105754414"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120054166"
 ---
 # <a name="efspolicy-attribute"></a>Atributo EFSPolicy
 
@@ -121,15 +121,15 @@ A política de sistema de arquivos com criptografia.
 | ID do link                | \-                                                                                              |
 | MAPI-Id                | \-                                                                                              |
 | System-Only            | Falso                                                                                           |
-| É de valor único       | Falso                                                                                           |
+| Tem valor único       | Falso                                                                                           |
 | É indexado             | Falso                                                                                           |
-| No catálogo global      | Falso                                                                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                    |
+| No Catálogo Global      | Falso                                                                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                    |
 | Range-Lower            | \-                                                                                              |
 | Range-Upper            | \-                                                                                              |
 | Search-Flags           | 0x00000000                                                                                      |
 | System-Flags           | 0x00000010                                                                                      |
-| Classes usadas em        | [**Política de domínio**](c-domainpolicy.md)<br/> [**Sam-domínio**](c-samdomain.md)<br/> |
+| Classes usadas em        | [**Política de domínio**](c-domainpolicy.md)<br/> [**Domínio Sam**](c-samdomain.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ A política de sistema de arquivos com criptografia.
 | ID do link                | \-                                                                                              |
 | MAPI-Id                | \-                                                                                              |
 | System-Only            | Falso                                                                                           |
-| É de valor único       | Falso                                                                                           |
+| Tem valor único       | Falso                                                                                           |
 | É indexado             | Falso                                                                                           |
-| No catálogo global      | Falso                                                                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                    |
+| No Catálogo Global      | Falso                                                                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                    |
 | Range-Lower            | \-                                                                                              |
 | Range-Upper            | \-                                                                                              |
 | Search-Flags           | 0x00000000                                                                                      |
 | System-Flags           | 0x00000010                                                                                      |
-| Classes usadas em        | [**Política de domínio**](c-domainpolicy.md)<br/> [**Sam-domínio**](c-samdomain.md)<br/> |
+| Classes usadas em        | [**Política de domínio**](c-domainpolicy.md)<br/> [**Domínio Sam**](c-samdomain.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ A política de sistema de arquivos com criptografia.
 | ID do link                | \-                                                                                              |
 | MAPI-Id                | \-                                                                                              |
 | System-Only            | Falso                                                                                           |
-| É de valor único       | Falso                                                                                           |
+| Tem valor único       | Falso                                                                                           |
 | É indexado             | Falso                                                                                           |
-| No catálogo global      | Falso                                                                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                    |
+| No Catálogo Global      | Falso                                                                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                    |
 | Range-Lower            | \-                                                                                              |
 | Range-Upper            | \-                                                                                              |
 | Search-Flags           | 0x00000000                                                                                      |
 | System-Flags           | 0x00000010                                                                                      |
-| Classes usadas em        | [**Política de domínio**](c-domainpolicy.md)<br/> [**Sam-domínio**](c-samdomain.md)<br/> |
+| Classes usadas em        | [**Política de domínio**](c-domainpolicy.md)<br/> [**Domínio Sam**](c-samdomain.md)<br/> |
 
 
 

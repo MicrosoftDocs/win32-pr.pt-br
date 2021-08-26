@@ -1,6 +1,6 @@
 ---
 title: Modificadores para ps_2_0 e superior
-description: Modificadores de instrução afetam o resultado da instrução antes de ser gravado no registro de destino. Saiba mais sobre modificadores para ps_2_0 e acima.
+description: Modificadores de instrução afetam o resultado da instrução antes de ser gravado no registro de destino. Saiba mais sobre modificadores para ps_2_0 e superior.
 ms.assetid: eb2a8a1f-51bc-4516-b679-a8fb25b0dda0
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: dc8ed91f8e103ebbab7c43ffe53201f0e1d5dfcf
-ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
+ms.openlocfilehash: 6875789c40a2f0fab2987927662658a821de5742b2473b7947250cfb11da8155
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111989281"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119982886"
 ---
 # <a name="modifiers-for-ps_2_0-and-above"></a>Modificadores para ps \_ 2 \_ 0 e superior
 
@@ -82,7 +82,7 @@ cmp_pp r0, r1, r2, r3
 
 ## <a name="saturate"></a>Saturar
 
-O modificador de instrução saturado (sáb) satura (ou fixa) o resultado da instrução para o intervalo 0, 1 antes de escrever \_ \[ no registro de \] destino.
+O modificador de instrução saturado (sáb) satura (ou fixa) o resultado da instrução para o intervalo 0, 1 antes de \_ escrever no registro de \[ \] destino.
 
 O modificador de instrução sáb pode ser usado com qualquer instrução, exceto \_ [frc - ps](frc---ps.md), [sincos - ps](sincos---ps.md)e qualquer instrução de \* tex.
 

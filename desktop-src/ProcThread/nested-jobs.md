@@ -4,18 +4,18 @@ ms.assetid: FA22493B-CD29-49A7-BDAC-349FA96B8C9E
 title: Trabalhos aninhados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: abf105c70ec8e83b395fcce56c6274d4838358bc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fba0a517b71cdc01ec701a4a8f6a4f272f039797c140333e64ecad5532aca23f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104558628"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120032197"
 ---
 # <a name="nested-jobs"></a>Trabalhos aninhados
 
 Um aplicativo pode usar trabalhos aninhados para gerenciar subconjuntos de processos. Os trabalhos aninhados também habilitam um aplicativo que usa trabalhos para hospedar outros aplicativos que também usam trabalhos.
 
-**Windows 7, Windows server 2008 R2, Windows XP com SP3, Windows server 2008, Windows Vista e Windows Server 2003:** Um processo pode ser associado a apenas um único trabalho. Os trabalhos aninhados foram introduzidos no Windows 8 e no Windows Server 2012.
+**Windows 7, Windows server 2008 R2, Windows XP com SP3, Windows server 2008, Windows Vista e Windows server 2003:** Um processo pode ser associado a apenas um único trabalho. os trabalhos aninhados foram introduzidos em Windows 8 e Windows Server 2012.
 
 Este tópico fornece uma visão geral do comportamento de aninhamento de trabalho e de trabalhos aninhados:
 

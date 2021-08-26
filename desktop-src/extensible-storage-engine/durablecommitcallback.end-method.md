@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: método DurableCommitCallback. end'
-title: Método DurableCommitCallback. end (Microsoft. ISAM. ESENT. Interop. Windows8)
+description: 'Saiba mais sobre: Método DurableCommitCallback.End'
+title: Método DurableCommitCallback.End (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: 'End method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Windows8.DurableCommitCallback.End
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.durablecommitcallback.end(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d9f8286e49157a177aa83e6106fb45e5d1819e52
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 44b6639a14fbb843f9634a65686a111213e6cb0a6678677b710d30a011900b5e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171944"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120066766"
 ---
-# <a name="durablecommitcallbackend-method"></a>Método DurableCommitCallback. end
+# <a name="durablecommitcallbackend-method"></a>Método DurableCommitCallback.End
 
 Encerra a sessão de confirmação durável.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -59,6 +59,6 @@ public void End()
 
 [Classe DurableCommitCallback](./durablecommitcallback-class.md)
 
-[Membros do DurableCommitCallback](./durablecommitcallback-members.md)
+[Membros DurableCommitCallback](./durablecommitcallback-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop. windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

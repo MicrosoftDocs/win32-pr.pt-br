@@ -1,7 +1,7 @@
 ---
 description: O método ReadOnly indica se o fluxo de entrada é somente leitura.
 ms.assetid: 25b8230d-be2b-4129-a1aa-f6b36e95199e
-title: Método CTransInPlaceInputPin. ReadOnly (TRANSip. h)
+title: Método CTransInPlaceInputPin.ReadOnly (Transip.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 33e71f8fd0aa7bf37f76ed6446fb5132c1808fb7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4f0dd3ae23da6832911b58e50cba67bcf8e6ec6092c3a31a193bd5a027c5566c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759085"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119999086"
 ---
-# <a name="ctransinplaceinputpinreadonly-method"></a>Método CTransInPlaceInputPin. ReadOnly
+# <a name="ctransinplaceinputpinreadonly-method"></a>Método CTransInPlaceInputPin.ReadOnly
 
 O `ReadOnly` método indica se o fluxo de entrada é somente leitura.
 
@@ -40,9 +40,9 @@ const BOOL ReadOnly();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna o valor da variável de membro [**m \_ bReadOnly**](ctransinplaceinputpin-m-breadonly.md) .
+Retorna o valor da [**variável de membro m \_ bReadOnly.**](ctransinplaceinputpin-m-breadonly.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Retorna o valor da variável de membro [**m \_ bReadOnly**](ctransinplaceinputpi
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>TRANSip. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Transip.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

@@ -3,9 +3,9 @@ title: Propriedade do rótulo IWMPCdromBurn
 description: A propriedade Label Obtém a cadeia de caracteres do rótulo do volume do CD.
 ms.assetid: 46e7741c-59c5-46d8-b9ca-09892d907cd7
 keywords:
-- Propriedade de rótulo Windows Media Player
-- Propriedade de rótulo Windows Media Player, interface IWMPCdromBurn
-- Interface IWMPCdromBurn Windows Media Player, Propriedade Label
+- Windows Media Player de Propriedade do rótulo
+- propriedade do rótulo Windows Media Player, interface IWMPCdromBurn
+- Windows Media Player de interface IWMPCdromBurn, propriedade label
 topic_type:
 - apiref
 api_name:
@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 05da344f1148de7e79cb605135964c6ab8225ac0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d8b8917706e20b5d1361054ac5f6fd209c0026837c428ecba715727e3d828a4f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105780376"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120000545"
 ---
 # <a name="iwmpcdromburnlabel-property"></a>Propriedade IWMPCdromBurn:: Label
 

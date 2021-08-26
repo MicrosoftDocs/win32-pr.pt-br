@@ -4,12 +4,12 @@ ms.assetid: 1aea75b1-a498-405e-9208-91672455496b
 title: Sequência de ações personalizadas de sequenciamento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ad7c24fb91247a36880cb808c9b8e10437312cf7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 26d86449b67809f782560e35d32b1b1e42434153ced776a27fd479a7b80a25a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104172005"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120039966"
 ---
 # <a name="sequencing-custom-actions"></a>Sequência de ações personalizadas de sequenciamento
 
@@ -31,13 +31,13 @@ Se estiver usando a interface do usuário completa com o servidor, as ações in
 
 Observe que, se um produto for removido definindo seu principal recurso como ausente, a propriedade [**Remove**](remove.md) poderá não ser igual a All após a ação [InstallValidate](installvalidate-action.md) . Isso significa que qualquer ação personalizada que dependa de REMOVE = ALL deve ser sequenciada após a ação InstallValidate. Uma ação personalizada pode verificar remover para determinar se um produto foi definido para ser completamente desinstalado.
 
-As ações personalizadas que fazem referência a um arquivo instalado como sua fonte, como o tipo de ação personalizada 17 (DLL), o tipo de ação personalizada 18 (EXE), o tipo de ação personalizada 21 (JScript) e o tipo de ação personalizada 22 (VBScript), devem aderir às seguintes restrições de sequenciamento.
+ações personalizadas que fazem referência a um arquivo instalado como sua fonte, como o tipo de ação personalizada 17 (DLL), tipo de ação personalizada 18 (EXE), tipo de ação personalizada 21 (JScript) e tipo de ação personalizada 22 (VBScript), devem aderir às seguintes restrições de sequenciamento.
 
 -   A ação personalizada deve ser sequenciada após a ação [CostFinalize](costfinalize-action.md) para que o caminho para o arquivo referenciado possa ser resolvido.
 -   Se o arquivo de origem ainda não estiver instalado no computador, as ações personalizadas adiadas (em script) deverão ser sequenciadas após o [InstallFiles](installfiles-action.md).
 -   Se o arquivo de origem ainda não estiver instalado no computador, as ações personalizadas do nondeferred deverão ser sequenciadas após a ação [InstallInitialize](installinitialize-action.md) .
 
-As restrições de sequenciamento a seguir se aplicam a ações personalizadas que alteram ou atualizam um pacote de Windows Installer.
+as restrições de sequenciamento a seguir se aplicam a ações personalizadas que alteram ou atualizam um pacote de Windows Installer.
 
 -   Se a ação personalizada alterar o pacote, como ao adicionar linhas a uma tabela, a ação deverá ser sequenciada antes da ação [InstallInitialize](installinitialize-action.md) .
 -   Se a ação personalizada fizer alterações que afetem o custo, elas deverão ser sequenciadas antes da ação [CostInitialize](costfinalize-action.md) .

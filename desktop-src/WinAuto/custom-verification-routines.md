@@ -1,32 +1,32 @@
 ---
 title: Rotinas de verificação personalizadas
-description: Esta seção descreve como criar uma rotina de verificação personalizada para a ferramenta AccChecker (verificador de acessibilidade da interface do usuário).
+description: Esta seção descreve como criar uma rotina de verificação personalizada para a ferramenta AccChecker (Verificador de Acessibilidade da Interface do Usuário).
 ms.assetid: 56F3EA1F-39C3-4DD9-8F2B-0C3608DD8737
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d66ad2fe0e27d16b55dd2d50d367250aadd15c4f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 245865a0ab4aa6848d4a4361a30febbb341742208586ebf4ec5b35c34fa30534
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103916054"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120030876"
 ---
 # <a name="custom-verification-routines"></a>Rotinas de verificação personalizadas
 
-Esta seção descreve como criar uma rotina de verificação personalizada para a ferramenta AccChecker (verificador de acessibilidade da interface do usuário).
+Esta seção descreve como criar uma rotina de verificação personalizada para a ferramenta AccChecker (Verificador de Acessibilidade da Interface do Usuário).
 
 -   [Criando uma verificação personalizada](#creating-a-custom-verification)
-    -   [Exemplo de verificação personalizada](#sample-custom-verification)
+    -   [Verificação personalizada de exemplo](#sample-custom-verification)
 -   [Usando uma verificação personalizada](#using-a-custom-verification)
-    -   [A GUI (interface gráfica do usuário) do AccChecker](#the-accchecker-graphical-user-interface-gui)
+    -   [A GUI (guia Interface do Usuário gráfica) do AccChecker](#the-accchecker-graphical-user-interface-gui)
     -   [Automação do AccChecker](#accchecker-automation)
 -   [Tópicos relacionados](#related-topics)
 
-O AccChecker (verificador de acessibilidade da interface do usuário) é uma ferramenta de teste de acessibilidade projetada para verificar a implementação do Microsoft Acessibilidade Ativa (MSAA) em uma interface do usuário do aplicativo ou controle. Problemas de acessibilidade de alto impacto que podem ser expostos pela implementação de MSAA são testados com um conjunto de rotinas de verificação automatizadas internas. Essas rotinas de verificação nativa podem ser aumentadas com rotinas personalizadas usando a plataforma AccChecker extensível.
+O AccChecker (Verificador de Acessibilidade da Interface do Usuário) é uma ferramenta de teste de acessibilidade projetada para verificar a implementação de Microsoft Active Accessibility (MSAA) em um controle ou interface do usuário do aplicativo. Problemas de acessibilidade de alto impacto que podem ser expostos pela implementação da MSAA são testados com um conjunto de rotinas de verificação automatizadas. Essas rotinas de verificação nativas podem ser aumentadas com rotinas personalizadas usando a plataforma extensível AccChecker.
 
 ## <a name="creating-a-custom-verification"></a>Criando uma verificação personalizada
 
-Uma verificação personalizada é criada como uma biblioteca de classes (DLL) que implementa uma única interface ( `IVerificationRoutine` ) que contém um membro ( `Execute` ):
+Uma verificação personalizada é criada como uma DLL (biblioteca de classes) que implementa uma única interface ( `IVerificationRoutine` ) que contém um membro ( `Execute` ):
 
 
 ```CSharp
@@ -42,33 +42,33 @@ void Execute(
 
 **Parâmetros**
 
-*HWND*
+*Hwnd*
 
-Tipo: **System. IntPtr**
+Tipo: **System.IntPtr**
 
 O HWND do elemento que está sendo verificado.
 
-*digita*
+*Logger*
 
-Tipo: **AccCheck. Logging. ILogger**
+Tipo: **AccCheck.Logging.ILogger**
 
-O método de log selecionado. Os tipos possíveis incluem **AccumulatingLogger** (usado pelo AccChecker para armazenar em cache todas as entradas de log até que as verificações sejam concluídas), **ConsoleLogger**, **TextFileLogger** e **XMLSerializingLogger**.
+O método de registro em log selecionado. Os tipos possíveis incluem **AccumulatingLogger** (usado pelo AccChecker para armazenar em cache todas as entradas de log até que as verificações sejam concluídas), **ConsoleLogger,** **TextFileLogger** e **XMLSerializingLogger.**
 
 *AllowUI*
 
 Tipo: **bool**
 
-Indica se a rotina de verificação exibe a interface do usuário que está testando. Geralmente definido como falso em cenários de teste automatizado.
+Indica se a rotina de verificação exibe a interface do usuário que está testando. Geralmente definido como false em cenários de teste automatizados.
 
-*gráficos*
+*elemento gráfico*
 
-Tipo: **AccCheck. GraphicsHelper**
+Tipo: **AccCheck.GraphicsHelper**
 
 Usado para capturas de tela e outras visualizações no AccChecker.
 
-### <a name="sample-custom-verification"></a>Exemplo de verificação personalizada
+### <a name="sample-custom-verification"></a>Verificação personalizada de exemplo
 
-O exemplo a seguir é uma verificação personalizada em C# que executa uma verificação de profundidade de árvore de elementos simples. Um erro será registrado se a árvore de elementos for maior que 50 níveis de profundidade, um aviso será registrado se a árvore de elementos for de 20 a 50 níveis de profundidade e uma mensagem informativa será registrada de outra forma.
+O exemplo a seguir é uma verificação personalizada em C# que executa uma verificação de profundidade de árvore de elemento simples. Um erro será registrado se a árvore de elementos for maior que 50 níveis de profundidade, um aviso será registrado se a árvore de elementos tiver de 20 a 50 níveis de profundidade e uma mensagem informacional for registrada em seu caso.
 
 
 ```CSharp
@@ -164,32 +164,32 @@ namespace VerificationRoutines
 
 
 > [!Note]  
-> Uma solução Microsoft Visual Studio que contém o código de exemplo de verificação está incluída na documentação da ajuda. Os arquivos estão localizados no caminho de instalação do AccChecker.
+> Uma Microsoft Visual Studio que contém o código de exemplo de verificação está incluída na documentação da ajuda. Os arquivos estão localizados no caminho de instalação do AccChecker.
 
- 
+ 
 
 ## <a name="using-a-custom-verification"></a>Usando uma verificação personalizada
 
 Esta seção descreve como incorporar uma verificação personalizada em cenários de teste do AccChecker.
 
-### <a name="the-accchecker-graphical-user-interface-gui"></a>A GUI (interface gráfica do usuário) do AccChecker
+### <a name="the-accchecker-graphical-user-interface-gui"></a>A GUI (guia Interface do Usuário gráfica) do AccChecker
 
-Para incluir uma rotina de verificação personalizada no aplicativo AccChecker, basta clicar em abrir DLL no menu arquivo e localizar a DLL para a rotina. A rotina personalizada será adicionada à parte inferior da lista de verificações no painel Selecionar rotinas de verificação.
+Para incluir uma rotina de verificação personalizada no aplicativo AccChecker, basta clicar em Abrir DLL no menu Arquivo e localizar a DLL para a rotina. A rotina personalizada será adicionada à parte inferior da lista de verificações no painel Selecionar rotinas de verificação.
 
-A captura de tela a seguir mostra a verificação personalizada de profundidade da árvore de verificação de exemplo adicionada a AccChecker.
+A captura de tela a seguir mostra a verificação personalizada profundidade da árvore de verificação de exemplo adicionada ao AccChecker.
 
-![exemplo de rotina de verificação personalizada de profundidade da árvore de verificação adicionada à interface do usuário do amaccchecker](images/accchecker-sample-custom-verification.png)
+![exemplo de rotina de verificação personalizada da profundidade da árvore adicionada à interface do usuário do accchecker](images/accchecker-sample-custom-verification.png)
 
 > [!Note]  
-> Se os valores de atributo de verificação não forem especificados na rotina de verificação personalizada, a verificação ainda será carregada em AccChecker, mesmo que não apareça na interface do usuário. Como não é exibido na interface do usuário, ele não pode ser desmarcado e excluído das execuções de verificação subsequentes.
+> Se os valores de atributo de verificação não são especificados na rotina de verificação personalizada, a verificação ainda é carregada no AccChecker, embora não apareça na interface do usuário. Como ele não é exibido na interface do usuário, ele não pode ser desmarcado e excluído das próximas verificações.
 
- 
+ 
 
 ### <a name="accchecker-automation"></a>Automação do AccChecker
 
-Incorporar uma rotina de verificação personalizada em uma estrutura AccChecker automatizada é tão simples quanto adicionar a DLL de verificação e habilitar as rotinas de verificação desejadas.
+Incorporar uma rotina de verificação personalizada em uma estrutura automatizada do AccChecker é tão simples quanto adicionar a DLL de verificação e habilenciar as rotinas de verificação desejadas.
 
-O trecho de código a seguir demonstra como usar a API AccChecker para testar a funcionalidade de tabulação no aplicativo do painel de controle do firewall do Windows.
+O snippet de código a seguir demonstra como usar a API do AccChecker para testar a funcionalidade de tabulação no aplicativo Windows painel de controle firewall.
 
 
 ```CSharp
@@ -243,9 +243,9 @@ public class TestCases : TestBase
 
 
 > [!Note]  
-> Uma solução Microsoft Visual Studio 2008 que contém o código de exemplo de verificação está incluída na documentação da ajuda. Os arquivos estão localizados no caminho de instalação do AccChecker.
+> Uma Microsoft Visual Studio 2008 que contém o código de exemplo de verificação está incluída na documentação da ajuda. Os arquivos estão localizados no caminho de instalação do AccChecker.
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -254,9 +254,9 @@ public class TestCases : TestBase
 [UI Accessibility Checker](ui-accessibility-checker.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

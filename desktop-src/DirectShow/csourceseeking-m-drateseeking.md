@@ -1,7 +1,7 @@
 ---
-description: Taxa de reprodução. Por padrão, o valor é definido como 1,0.
+description: Taxa de reprodução. Por padrão, o valor é definido como 1.0.
 ms.assetid: 835ddbe8-2017-4a4a-8f10-b3f33a8215a7
-title: 'Membro CSourceSeeking:: m_dRateSeeking (Ctlutil. h)'
+title: Membro CSourceSeeking::m_dRateSeeking (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1055a420316868db6374798c0295339dd74ac172
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 65a21cbae87c25e0f37791129f1699349ea4bb4a8591097978e04010a925962b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105784030"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120054206"
 ---
-# <a name="csourceseekingm_drateseeking-member"></a>Membro de CSourceSeeking:: m \_ dRateSeeking
+# <a name="csourceseekingm_drateseeking-member"></a>Membro CSourceSeeking::m \_ dRateSeeking
 
-Taxa de reprodução. Por padrão, o valor é definido como 1,0.
+Taxa de reprodução. Por padrão, o valor é definido como 1.0.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -38,7 +38,7 @@ double m_dRateSeeking;
 
 ## <a name="remarks"></a>Comentários
 
-Mantenha a seção crítica **m \_ pLock** antes de acessar essa variável.
+Mantenha a **seção \_ crítica m pLock** antes de acessar essa variável.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,8 +46,8 @@ Mantenha a seção crítica **m \_ pLock** antes de acessar essa variável.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Ctlutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

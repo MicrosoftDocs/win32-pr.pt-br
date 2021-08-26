@@ -1,37 +1,37 @@
 ---
 title: Registrando para executar um programa
-description: Você pode se registrar para que o BITS execute um programa com base nos eventos de trabalho e transferidos, mas não nos eventos de modificação de trabalho. O BITS executa o programa no contexto do usuário.
+description: Você pode se registrar para que o BITS execute um programa com base em eventos de trabalho transferidos e de erro, mas não eventos modificados por trabalho. O BITS executa o programa no contexto do usuário.
 ms.assetid: f1996d08-0e35-403b-9cdb-dae9e1c42e05
 keywords:
-- BITS de notificação de eventos, linha de comando
-- Registrando para BITS de notificação de linha de comando
+- bits de notificação de eventos, linha de comando
+- registrando para BITS de notificação de linha de comando
 ms.topic: article
 ms.date: 10/04/2018
-ms.openlocfilehash: 7831a959a73112b21bdf3e0fbc2b7d3dd4f6a447
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: db86f67ad899d190b24d74bfb04c501ca7881351cfb2f37ef53300666622c317
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641311"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119922026"
 ---
 # <a name="registering-to-execute-a-program"></a>Registrando para executar um programa
 
-Você pode se registrar para que o BITS execute um programa com base nos eventos de trabalho e transferidos, mas não nos eventos de modificação de trabalho. O BITS executa o programa no contexto do usuário.
+Você pode se registrar para que o BITS execute um programa com base em eventos de trabalho transferidos e de erro, mas não eventos modificados por trabalho. O BITS executa o programa no contexto do usuário.
 
-**Para se registrar para executar um programa**
+**Para registrar-se para executar um programa**
 
-1.  Chame o método **método ibackgroundcopyjob:: QueryInterface** para recuperar um ponteiro de interface [**IBackgroundCopyJob2**](/windows/desktop/api/Bits1_5/nn-bits1_5-ibackgroundcopyjob2) . Especifique \_ \_ uuidof (IBackgroundCopyJob2) como o identificador de interface.
-2.  Chame o método [**IBackgroundCopyJob2:: SetNotifyCmdLine**](/windows/desktop/api/Bits1_5/nf-bits1_5-ibackgroundcopyjob2-setnotifycmdline) para especificar o programa a ser executado e os argumentos exigidos pelo programa, como o identificador de trabalho.
+1.  Chame o **método IBackgroundCopyJob::QueryInterface** para recuperar um ponteiro de interface [**IBackgroundCopyJob2.**](/windows/desktop/api/Bits1_5/nn-bits1_5-ibackgroundcopyjob2) \_ \_ Especifique uuidof(IBackgroundCopyJob2) como o identificador de interface.
+2.  Chame o [**método IBackgroundCopyJob2::SetNotifyCmdLine**](/windows/desktop/api/Bits1_5/nf-bits1_5-ibackgroundcopyjob2-setnotifycmdline) para especificar o programa a ser executado e quaisquer argumentos exigidos pelo programa, como o identificador de trabalho.
 
-3.  Chame o método [**método ibackgroundcopyjob:: SetNotifyFlags**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-setnotifyflags) para especificar quando a linha de comando é executada.
+3.  Chame o [**método IBackgroundCopyJob::SetNotifyFlags**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-setnotifyflags) para especificar quando a linha de comando é executada.
 
-    Você só pode especificar os \_ sinalizadores de evento de erro BG notificar \_ trabalho \_ transferido e BG \_ Notify \_ Job \_ . O \_ sinalizador de modificação do trabalho BG Notify \_ \_ é ignorado.
+    Você só pode especificar os sinalizadores de evento BG \_ NOTIFY JOB TRANSFERRED e \_ \_ BG NOTIFY JOB \_ \_ \_ ERROR. O sinalizador BG \_ NOTIFY JOB MODIFICATION é \_ \_ ignorado.
 
-Observe que o BITS não executará o programa se você também estiver [registrado para receber retornos de chamada com](registering-a-com-callback.md) e o ponteiro da interface de retorno de chamada for válido ou se o método de notificação que o bits chamar retornar um código de êxito. No entanto, se o método de notificação retornar um código de falha, como E \_ falhar, o bits executará a linha de comando.
+Observe que o BITS não executará o programa se você também estiver registrado para receber [retornos](registering-a-com-callback.md) de chamada COM e o ponteiro da interface de retorno de chamada for válido ou se o método de notificação que o BITS chamar retornará um código de êxito. No entanto, se o método de notificação retornar um código de falha, como E \_ FAIL, o BITS executará a linha de comando.
 
-O BITS chama a função [**CreateProcessAsUser**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessasusera) para iniciar o programa. Se você especificar uma cadeia de caracteres de parâmetro, o primeiro parâmetro deverá ser o nome do programa.
+BITS chama a [**função CreateProcessAsUser**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessasusera) para iniciar o programa. Se você especificar uma cadeia de caracteres de parâmetro, o primeiro parâmetro deverá ser o nome do programa.
 
-O exemplo a seguir mostra como registrar para executar um programa quando o evento de transferência de trabalho ocorre. O exemplo supõe que o ponteiro de interface [**método ibackgroundcopyjob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) é válido.
+O exemplo a seguir mostra como registrar para executar um programa quando ocorre o evento transferido pelo trabalho. O exemplo pressupo que o ponteiro da interface [**IBackgroundCopyJob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) é válido.
 
 
 ```C++
@@ -70,7 +70,7 @@ if (SUCCEEDED(hr))
 
 
 
-Quando o estado do trabalho se torna BG \_ \_ , o estado do trabalho é \_ transferido, o bits executa o programa especificado em pProgram. O exemplo a seguir é uma implementação simples de um programa que usa um identificador de trabalho como um argumento. O programa assume que o número correto de argumentos é passado para ele.
+Quando o estado do trabalho se torna BG JOB STATE TRANSFERRED, o BITS executa o \_ programa especificado em \_ \_ pProgram. O exemplo a seguir é uma implementação simples de um programa que aceita um identificador de trabalho como um argumento. O programa supõe que o número correto de argumentos seja passado para ele.
 
 
 ```C++
@@ -133,6 +133,6 @@ int wmain(int argc, wchar_t *argv[])
 
 
 
- 
+ 
 
- 
+ 

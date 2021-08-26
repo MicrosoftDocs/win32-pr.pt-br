@@ -1,9 +1,9 @@
 ---
-title: Mensagem de LVM_GETCALLBACKMASK (commctrl. h)
-description: Obtém a máscara de retorno de chamada para um controle de exibição de lista. Você pode enviar essa mensagem explicitamente ou usando a \_ macro GetCallbackMask do ListView.
+title: LVM_GETCALLBACKMASK mensagem (Commctrl.h)
+description: Obtém a máscara de retorno de chamada para um controle de exibição de lista. Você pode enviar essa mensagem explicitamente ou usando a \_ macro GetCallbackMask listView.
 ms.assetid: fb05593d-14b9-4e53-acb3-d5ac61e517ec
 keywords:
-- Controles de LVM_GETCALLBACKMASK de mensagens do Windows
+- LVM_GETCALLBACKMASK controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 68438b748f5260bb7cc6e43702442aa4cbe3a84e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 58cbfec76df9418c2bc94e0083928f28e462188383a203237dd03f3f175c74b6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454633"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119920226"
 ---
-# <a name="lvm_getcallbackmask-message"></a>\_Mensagem GETCALLBACKMASK LVM
+# <a name="lvm_getcallbackmask-message"></a>Mensagem GETCALLBACKMASK do LVM \_
 
-Obtém a máscara de retorno de chamada para um controle de exibição de lista. Você pode enviar essa mensagem explicitamente ou usando a macro [**\_ GetCallbackMask do ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getcallbackmask) .
+Obtém a máscara de retorno de chamada para um controle de exibição de lista. Você pode enviar essa mensagem explicitamente ou usando a macro [**\_ GetCallbackMask listView.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getcallbackmask)
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -35,7 +35,7 @@ Obtém a máscara de retorno de chamada para um controle de exibição de lista.
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna a máscara de retorno de chamada.
 
@@ -45,9 +45,9 @@ Retorna a máscara de retorno de chamada.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

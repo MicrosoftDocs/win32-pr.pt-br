@@ -1,9 +1,9 @@
 ---
-title: RBN_HEIGHTCHANGE código de notificação (commctrl. h)
-description: Enviado por um controle rebar quando sua altura é alterada. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
+title: RBN_HEIGHTCHANGE de notificação (Commctrl.h)
+description: Enviado por um controle de barra de rebar quando sua altura foi alterada. Esse código de notificação é enviado na forma de uma mensagem WM \_ NOTIFY.
 ms.assetid: cf90e38c-ac3e-4bef-b047-0956ae5041d1
 keywords:
-- RBN_HEIGHTCHANGE de código de notificação controles do Windows
+- RBN_HEIGHTCHANGE de notificação Windows Controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bfe0601e8cb22ec9b86768741c5b455aa7f21eef
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 217eb4c5cd5e373eb759668386f29f93c47cc3b787364851c8501b47f6b608f5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918387"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119984996"
 ---
-# <a name="rbn_heightchange-notification-code"></a>Código de notificação do RBN \_ HEIGHTCHANGE
+# <a name="rbn_heightchange-notification-code"></a>Código de notificação HEIGHTCHANGE do RBN \_
 
-Enviado por um controle rebar quando sua altura é alterada. Esse código de notificação é enviado na forma de uma mensagem de [**\_ notificação do WM**](wm-notify.md) .
+Enviado por um controle de barra de rebar quando sua altura foi alterada. Esse código de notificação é enviado na forma de uma mensagem [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,17 +41,17 @@ RBN_HEIGHTCHANGE
 *lParam* 
 </dt> <dd>
 
-Ponteiro para uma estrutura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contém informações adicionais sobre esta notificação.
+Ponteiro para uma [**estrutura NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contém informações adicionais sobre essa notificação.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno para essa notificação não é usado.
 
 ## <a name="remarks"></a>Comentários
 
-Controles Rebar que usam o estilo [**ccs \_ Vert**](common-control-styles.md) enviam este código de notificação quando sua largura é alterada.
+Controles de barra rebar que usam o [**estilo \_ VERT do CCS**](common-control-styles.md) enviam esse código de notificação quando sua largura muda.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,9 +59,9 @@ Controles Rebar que usam o estilo [**ccs \_ Vert**](common-control-styles.md) en
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

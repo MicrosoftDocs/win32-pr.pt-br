@@ -3,7 +3,7 @@ title: Atributo WM/SubTitleDescription
 description: O atributo WM/SubTitleDescription especifica informações adicionais de subtítulo.
 ms.assetid: ece56ccf-63d1-4edf-a349-0ac2f4ce468a
 keywords:
-- Atributo WM/SubTitleDescription do Windows Media Player
+- Windows Media Player do atributo WM/SubTitleDescription
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 05815ea31cd58a55123ddadc9483b5caf48b9ced
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2911be40b6260a73a20541e3a7ab7458317d4872a90aea0525933d87303ff59d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105782980"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120000806"
 ---
 # <a name="wmsubtitledescription-attribute"></a>Atributo WM/SubTitleDescription
 
@@ -29,7 +29,7 @@ O atributo **WM/SubTitleDescription** especifica informações adicionais de sub
 
 ## <a name="remarks"></a>Comentários
 
-A constante do Windows Media Format SDK para esse atributo é g \_ wszWMSubTitleDescription.
+a constante do SDK do formato de mídia Windows para esse atributo é g \_ wszWMSubTitleDescription.
 
 Para determinar se você pode alterar o valor desse atributo, use o método [Media. isReadOnlyItem](media-isreadonlyitem.md) .
 

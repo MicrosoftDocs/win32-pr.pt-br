@@ -1,7 +1,7 @@
 ---
-description: Contém a porcentagem de ciclo de serviço atual para um PIN ou canal em um controlador de modulação de pulso de pulsação (PWM).
+description: Contém o percentual de ciclo de serviço atual para um pino ou canal em um controlador PWM (Pulse Width Modulartion).
 ms.assetid: 09C0232A-DF5C-4A1C-8138-D3D65E45731B
-title: Estrutura de PWM_PIN_GET_ACTIVE_DUTY_CYCLE_PERCENTAGE_OUTPUT (PWM. h)
+title: PWM_PIN_GET_ACTIVE_DUTY_CYCLE_PERCENTAGE_OUTPUT (Pwm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - Pwm.h
-ms.openlocfilehash: 607fcb1ab429e7cbe9aee593f75d48f0f9d308bd
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: dda05c06ee8c53968647bc29da2febee14abf758d4ad228c16178703c2d1da08
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089195"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120053316"
 ---
-# <a name="pwm_pin_get_active_duty_cycle_percentage_output-structure"></a>PWM \_ PIN \_ obter \_ a \_ \_ estrutura de \_ saída percentual do ciclo de imposto ativo \_
+# <a name="pwm_pin_get_active_duty_cycle_percentage_output-structure"></a>Estrutura DE SAÍDA DO PERCENTUAL DO CICLO DE \_ \_ \_ \_ \_ TRABALHO \_ \_ ATIVO DO PIN PWM
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto pré-lançado, que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-Contém a porcentagem de ciclo de serviço atual para um PIN ou canal em um controlador de modulação de pulso de pulsação (PWM).
+Contém o percentual de ciclo de serviço atual para um pino ou canal em um controlador PWM (Pulse Width Modulartion).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,7 +44,7 @@ typedef struct _PWM_PIN_GET_ACTIVE_DUTY_CYCLE_PERCENTAGE_OUTPUT {
 **Percentual**
 </dt> <dd>
 
-O ciclo de serviço de sinal de PWM atual, como um percentual de PWM \_ , que é um valor de ULONGLONG.
+O ciclo de serviço de sinal PWM atual, como um PWM \_ PERCENTAGE, que é um valor ULONGLONG.
 
 </dd> </dl>
 
@@ -54,11 +54,11 @@ O ciclo de serviço de sinal de PWM atual, como um percentual de PWM \_ , que é
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                      |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2016\]<br/>                                             |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                      |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2016 somente aplicativos da área de trabalho\]<br/>                                             |
 | Versão mínima do KMDF<br/>     | 1,19<br/>                                                                                  |
 | Versão mínima do UMDF<br/>     | 2.19<br/>                                                                                  |
-| parâmetro<br/>                   | <dl> <dt>PWM. h (incluir PWM. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Pwm.h (inclua Pwm.h)</dt> </dl> |
 
 
 
@@ -66,7 +66,7 @@ O ciclo de serviço de sinal de PWM atual, como um percentual de PWM \_ , que é
 
 <dl> <dt>
 
-[**IOCTL \_ PWM \_ PIN \_ obter \_ \_ percentual de \_ ciclo de imposto ativo \_**](https://www.bing.com/search?q=**IOCTL\_PWM\_PIN\_GET\_ACTIVE\_DUTY\_CYCLE\_PERCENTAGE**)
+[**IOCTL \_ PWM \_ PIN \_ GET \_ ACTIVE \_ DUTY \_ CYCLE \_ PERCENTAGE**](https://www.bing.com/search?q=**IOCTL\_PWM\_PIN\_GET\_ACTIVE\_DUTY\_CYCLE\_PERCENTAGE**)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Método CDynamicOutputPin. Disconnect – o método Disconnect quebra a conexão do PIN atual. Esse método implementa o método IPin::D isconnect.
+description: Método CDynamicOutputPin.Disconnect – o método Disconnect interrompe a conexão de pino atual. Esse método implementa o método IPin::D isconnect.
 ms.assetid: 8d92a504-98ad-4f8f-89a4-f0c80763db44
-title: Método CDynamicOutputPin. Disconnect (Amfilter. h)
+title: Método CDynamicOutputPin.Disconnect (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5a775146973b353413fa2e74584a6c763b721e7b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 000bbdc0400a84f41cf370beca92b96d898b57ddb62ab7dc72319557fbe18a77
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108099294"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119983056"
 ---
-# <a name="cdynamicoutputpindisconnect-method"></a>Método CDynamicOutputPin. Disconnect
+# <a name="cdynamicoutputpindisconnect-method"></a>Método CDynamicOutputPin.Disconnect
 
-O `Disconnect` método quebra a conexão do PIN atual. Esse método implementa o método [**IPin::D isconnect**](/windows/desktop/api/Strmif/nf-strmif-ipin-disconnect) .
+O `Disconnect` método interrompe a conexão de pino atual. Esse método implementa o [**método IPin::D isconnect.**](/windows/desktop/api/Strmif/nf-strmif-ipin-disconnect)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,14 +42,14 @@ Esse método não tem parâmetros.
 
 ## <a name="return-value"></a>Valor retornado
 
-Retorna um valor **HRESULT** . Os valores possíveis incluem os mostrados na tabela a seguir.
+Retorna um **valor HRESULT.** Os valores possíveis incluem aqueles mostrados na tabela a seguir.
 
 
 
 | Código de retorno                                                                             | Descrição                           |
 |-----------------------------------------------------------------------------------------|---------------------------------------|
-| <dl> <dt>**\_falso**</dt> </dl> | O PIN não foi conectado.<br/> |
-| <dl> <dt>**S \_ OK**</dt> </dl>    | Sucesso.<br/>                   |
+| <dl> <dt>**S \_ FALSE**</dt> </dl> | O pino não estava conectado.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>    | Êxito.<br/>                   |
 
 
 
@@ -57,7 +57,7 @@ Retorna um valor **HRESULT** . Os valores possíveis incluem os mostrados na tab
 
 ## <a name="remarks"></a>Comentários
 
-Esse método substitui o método [**CBasePin::D isconnect**](cbasepin-disconnect.md) para habilitar a desconexão enquanto o filtro está ativo.
+Esse método substitui o [**método CBasePin::D sconnect**](cbasepin-disconnect.md) para habilitar a desconexão enquanto o filtro está ativo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,12 +65,12 @@ Esse método substitui o método [**CBasePin::D isconnect**](cbasepin-disconnect
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amfilter.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

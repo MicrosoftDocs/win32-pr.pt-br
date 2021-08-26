@@ -1,7 +1,7 @@
 ---
-description: Construtor de CSourceStream. CSourceStream-método de construtor.
+description: Construtor CSourceStream.CSourceStream – Método do construtor.
 ms.assetid: 9078b2f5-b11e-4780-8143-6738e9df4f4b
-title: Construtor CSourceStream. CSourceStream (Source. h)
+title: Construtor CSourceStream.CSourceStream (Source.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 75d94bb89ca109c2a7974c294153d46235f92f23
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e02827c74ef4c5461a5777221e1839846b855a4b2f4cd27d97ce913399787ba9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108085184"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120053846"
 ---
-# <a name="csourcestreamcsourcestream-constructor"></a>Construtor CSourceStream. CSourceStream
+# <a name="csourcestreamcsourcestream-constructor"></a>Construtor CSourceStream.CSourceStream
 
-Método de construtor.
+Método do construtor.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -48,38 +48,38 @@ CSourceStream(
 *pObjectName* 
 </dt> <dd>
 
-Ponteiro para uma cadeia de caracteres que contém o nome de depuração do PIN.
+Ponteiro para uma cadeia de caracteres que contém o nome de depuração do pino.
 
 </dd> <dt>
 
-*phr* 
+*Phr* 
 </dt> <dd>
 
-Ponteiro para uma variável que recebe um valor **HRESULT** que indica o êxito ou a falha do método. Inicialize o valor para S \_ OK antes de criar o objeto. O valor será alterado somente se ocorrer um erro.
+Ponteiro para uma variável que recebe um **valor HRESULT** que indica o êxito ou a falha do método. Inicialize o valor como S \_ OK antes de criar o objeto . O valor será alterado somente se ocorrer um erro.
 
 </dd> <dt>
 
-*PMS* 
+*Pms* 
 </dt> <dd>
 
-Ponteiro para o filtro [**CSource**](csource.md) que criou este pin.
+Ponteiro para o [**filtro CSource**](csource.md) que criou esse pino.
 
 </dd> <dt>
 
-*pName* 
+*Pname* 
 </dt> <dd>
 
-Ponteiro para uma cadeia de caracteres que contém o nome do PIN.
+Ponteiro para uma cadeia de caracteres que contém o nome do pino.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-A cadeia de caracteres fornecida no parâmetro *pObjectName* é usada somente para fins de depuração. Para obter mais informações, consulte [**CBaseObject**](cbaseobject.md).
+A cadeia de caracteres determinada no *parâmetro pObjectName* é usada somente para fins de depuração. Para obter mais informações, [**consulte CBaseObject**](cbaseobject.md).
 
-A cadeia de caracteres fornecida no parâmetro *pname* é o nome retornado pelo método [**IPin:: QueryPinInfo**](/windows/desktop/api/Strmif/nf-strmif-ipin-querypininfo) . A `CSourceStream` classe não usa esse nome para o identificador de PIN retornado pelo método [**CSourceStream:: QueryId**](csourcestream-queryid.md) . Em vez disso, **QueryId** calcula um identificador de PIN com base no número do PIN. (Os identificadores de PIN dão suporte à persistência de gráfico. Para obter mais informações, consulte [**IPin:: QueryId**](/windows/desktop/api/Strmif/nf-strmif-ipin-queryid).)
+A cadeia de caracteres determinada no *parâmetro pName* é o nome retornado pelo [**método IPin::QueryPinInfo.**](/windows/desktop/api/Strmif/nf-strmif-ipin-querypininfo) A `CSourceStream` classe não usa esse nome para o identificador de pino retornado pelo método [**CSourceStream::QueryId.**](csourcestream-queryid.md) Em vez **disso, QueryId** calcula um identificador de pino com base no número do pino. (Identificadores de pinos são compatíveis com persistência de grafo. Para obter mais informações, [**consulte IPin::QueryId**](/windows/desktop/api/Strmif/nf-strmif-ipin-queryid).)
 
-O construtor adiciona automaticamente o PIN ao filtro proprietário, chamando [**CSource:: AddPin**](csource-addpin.md).
+O construtor adiciona automaticamente o pino ao filtro de propriedade chamando [**CSource::AddPin.**](csource-addpin.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -87,12 +87,12 @@ O construtor adiciona automaticamente o PIN ao filtro proprietário, chamando [*
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Source. h (incluir fluxos. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Source.h (incluir Fluxos.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

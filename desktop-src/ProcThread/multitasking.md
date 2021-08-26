@@ -4,12 +4,12 @@ ms.assetid: ac45bef6-f078-40ac-95f4-06bd61ff46c4
 title: Multitarefa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d06c1d8d44f397f06923c793971bcb20f35b2b4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ee7826ca79d6095715c722b4b5c3da479e276444825343ac096cd9822d9e365a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296742"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120032176"
 ---
 # <a name="multitasking"></a>Multitarefa
 
@@ -17,7 +17,7 @@ Um sistema operacional multitarefa divide o tempo de processador disponível ent
 
 A duração da fração de tempo depende do sistema operacional e do processador. Como cada fração de tempo é pequena (aproximadamente 20 milissegundos), vários threads parecem estar sendo executados ao mesmo tempo. É esse o caso em sistemas de multiprocessador, em que os threads executáveis são distribuídos entre os processadores disponíveis. No entanto, é preciso ter cuidado ao usar vários threads em um aplicativo, pois o desempenho do sistema pode diminuir se houver muitos threads.
 
-Para mais informações, consulte os seguintes tópicos:
+Para obter mais informações, consulte estes tópicos:
 
 -   [Vantagens da multitarefa](advantages-of-multitasking.md)
 -   [Quando usar multitarefa](when-to-use-multitasking.md)

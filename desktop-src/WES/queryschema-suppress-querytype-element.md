@@ -1,9 +1,9 @@
 ---
-title: Elemento suprimir (QueryType)
-description: Uma consulta XPath que identifica os eventos a serem excluídos do conjunto de resultados da consulta.
+title: Elemento Suppress (QueryType)
+description: Uma consulta XPath que identifica os eventos a excluir do conjunto de resultados da consulta.
 ms.assetid: 41304a3c-bde1-49c3-8cb3-e95fc428bd96
 keywords:
-- Suprimir log de elemento
+- Suprimir elemento EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 3a1d7fcec98d32167155ebcafc4f13d2a727d59a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2612a98c282627154a9107f2f9f77a3ddb52c191e00dbcb394c8db4d7c796b79
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086439"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120032006"
 ---
-# <a name="suppress-querytype-element"></a>Elemento suprimir (QueryType)
+# <a name="suppress-querytype-element"></a>Elemento Suppress (QueryType)
 
-Uma consulta XPath que identifica os eventos a serem excluídos do conjunto de resultados da consulta.
+Uma consulta XPath que identifica os eventos a excluir do conjunto de resultados da consulta.
 
 ``` syntax
 <xs:element name="Suppress">
@@ -36,7 +36,7 @@ Uma consulta XPath que identifica os eventos a serem excluídos do conjunto de r
 </xs:element>
 ```
 
-O elemento **suprimir** é definido pelo tipo complexo [**QueryType**](queryschema-querytype-complextype.md) .
+O **elemento Suppress** é definido pelo tipo complexo [**QueryType.**](queryschema-querytype-complextype.md)
 
 ## <a name="attributes"></a>Atributos
 
@@ -54,8 +54,8 @@ O elemento **suprimir** é definido pelo tipo complexo [**QueryType**](querysche
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

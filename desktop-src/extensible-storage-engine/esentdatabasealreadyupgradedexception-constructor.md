@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 589b1a567d91594483d9b53a23b57ed780616f4a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9b6515339afc9a0f2e3f53fa057bacc0ac3ade1db1963666c61c59bd98baff02
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105786200"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120066092"
 ---
 # <a name="esentdatabasealreadyupgradedexception-constructor"></a>Construtor EsentDatabaseAlreadyUpgradedException
 
 Inicializa uma nova instância da classe EsentDatabaseAlreadyUpgradedException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentDatabaseAlreadyUpgradedException()
 
 [Classe EsentDatabaseAlreadyUpgradedException](./esentdatabasealreadyupgradedexception-class.md)
 
-[Membros do EsentDatabaseAlreadyUpgradedException](./esentdatabasealreadyupgradedexception-members.md)
+[Membros EsentDatabaseAlreadyUpgradedException](./esentdatabasealreadyupgradedexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

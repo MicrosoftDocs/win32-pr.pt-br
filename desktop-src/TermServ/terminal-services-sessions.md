@@ -5,12 +5,12 @@ ms.assetid: 09a990cd-7590-4d73-b1f5-8736f0b4f17e
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6bb99f9745e382bdff1099eabae9a8e8ef0b8333
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: ac5093e9da70301fc4258ce2df88527c87940e455050a0673ac36d2fb04a8cd0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105756802"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119987156"
 ---
 # <a name="remote-desktop-sessions"></a>Sessões de Área de Trabalho Remota
 
@@ -31,6 +31,6 @@ Para obter mais informações sobre como iniciar um processo de servidor local e
 [Sessões filho](child-sessions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

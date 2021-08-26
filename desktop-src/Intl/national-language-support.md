@@ -4,12 +4,12 @@ ms.assetid: 7a548074-0782-45e1-8051-80c3b9d81885
 title: Suporte ao idioma nacional
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 49b85230a6e74bd3286996121dd48550aafb3438
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 38bfcb42a2e349ac9bf9a6a661975bcf517df2b6af1a66c933f34719ab98c696
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922824"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120040906"
 ---
 # <a name="national-language-support"></a>Suporte ao idioma nacional
 

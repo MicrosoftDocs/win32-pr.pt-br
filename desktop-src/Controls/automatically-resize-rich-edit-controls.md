@@ -4,12 +4,12 @@ description: Um aplicativo pode redimensionar um controle de edição rico confo
 ms.assetid: CCAFC039-AC9E-4BC4-ABE1-8C56FA9DD3F5
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ee9ead05c4c04526a9290dc115f7a2fa7741397
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: 0ef3fa798da0a7747464d42535c638f437154124dd76b0324add35b5ba01931a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104008456"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119921716"
 ---
 # <a name="how-to-automatically-resize-rich-edit-controls"></a>Como redimensionar automaticamente os controles de edição avançados
 
@@ -19,12 +19,12 @@ Um aplicativo pode redimensionar um controle de edição rico conforme necessár
 
 ### <a name="technologies"></a>Tecnologias
 
--   [Controles do Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
 -   C/C++
--   Programação da interface do usuário do Windows
+-   Windows Programação de interface do usuário
 
 ## <a name="instructions"></a>Instruções
 
@@ -45,9 +45,9 @@ Para receber códigos de notificação do [en \_ REQUESTRESIZE](en-requestresize
 [Usando controles de edição avançados](using-rich-edit-controls.md)
 </dt> <dt>
 
-[Demonstração de controles comuns do Windows (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
+[Windows de demonstração de controles comuns (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

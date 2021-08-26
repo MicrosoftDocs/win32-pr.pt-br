@@ -15,12 +15,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 95913337de968d0b30780b5898b7f204d947dd4b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 620f6487bb516a76ac5cb7f77da9983178933c24ac03151bd9a4c8455f694ec9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103645176"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119986876"
 ---
 # <a name="tlslicenseenumbegin-function"></a>Função TLSLicenseEnumBegin
 
@@ -261,7 +261,7 @@ Os dados no parâmetro de pesquisa não são válidos.
 
 </dd> </dl> </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa função retorna os seguintes valores de retorno possíveis.
 

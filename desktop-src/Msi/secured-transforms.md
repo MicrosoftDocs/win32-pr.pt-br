@@ -4,12 +4,12 @@ ms.assetid: c6019b28-b0a7-4104-9d78-b4b4228635b8
 title: Transformações protegidas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e498d6049a2c913ca78f12b6a8700a104af37c4e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e07c36b70827c301117bff7d98b30aae2990efb80f892bda24b0be35cbba5316
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103837400"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120040836"
 ---
 # <a name="secured-transforms"></a>Transformações protegidas
 
@@ -21,7 +21,7 @@ A remoção do produto por qualquer usuário remove todas as transformações pr
 
 Se o instalador descobrir que uma transformação segura não está disponível localmente, ele tentará restaurar o cache de transformação de uma origem. As transformações seguras podem ser seguras-em-fonte ou caminho completo seguro:
 
--   As [transformações de origem segura](secure-at-source-transforms.md) que estão faltando no cache de transformação local são restauradas da raiz da origem do arquivo. msi.
+-   As [transformações seguras no código-fonte](secure-at-source-transforms.md) que estão faltando no cache de transformação local são restauradas da raiz da origem do arquivo de .msi.
 -   [Seguras-as transformações de caminho completo](secure-full-path-transforms.md) que estão ausentes do cache de transformação local são restauradas do caminho completo original especificado pela lista de transformações.
 
  

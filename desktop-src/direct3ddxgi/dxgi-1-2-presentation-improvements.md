@@ -4,12 +4,12 @@ description: DXGI 1,2 dá suporte a uma nova cadeia de permuta de flip-Model, re
 ms.assetid: 22236FBD-E881-49B5-8AE9-96FB526DFEF8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a3abbb784de82f5bf647a4b66503497edcd4f89
-ms.sourcegitcommit: 5724b38883e518ac565e1b266defa85ad0941bb2
+ms.openlocfilehash: 12f191af4a94b1379e2539b8d544163467fe4dc49141f244e8dcc1f13a3e36af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "104571703"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119984197"
 ---
 # <a name="flip-model-dirty-rectangles-scrolled-areas"></a>Inverter Modelo, retângulos sujos, áreas roladas
 
@@ -17,9 +17,9 @@ DXGI 1,2 dá suporte a uma nova cadeia de permuta de flip-Model, retângulos suj
 
 ## <a name="dxgi-flip-model-presentation"></a>Apresentação de modelo de flip-DXGI
 
-DXGI 1,2 adiciona suporte para o modelo de apresentação de flip para Direct3D 10 e APIs posteriores. No Windows 7, o Direct3D 9EX primeiro adotou a [apresentação de flip-Model](../direct3darticles/direct3d-9ex-improvements.md) para evitar copiar desnecessariamente o buffer da cadeia de permuta. Usando o modelo de flip, buffers de fundo são invertidos entre o tempo de execução e o Gerenciador de Janelas da Área de Trabalho (DWM), portanto o DWM sempre compõe diretamente do buffer de fundo em vez de copiar o conteúdo do buffer de fundo.
+DXGI 1,2 adiciona suporte para o modelo de apresentação de flip para Direct3D 10 e APIs posteriores. no Windows 7, o Direct3D 9ex primeiro adotou a [apresentação de flip-model](../direct3darticles/direct3d-9ex-improvements.md) para evitar copiar desnecessariamente o buffer da cadeia de permuta. Usando o modelo de flip, buffers de fundo são invertidos entre o tempo de execução e o Gerenciador de Janelas da Área de Trabalho (DWM), portanto o DWM sempre compõe diretamente do buffer de fundo em vez de copiar o conteúdo do buffer de fundo.
 
-As APIs DXGI 1,2 incluem uma interface da cadeia de permuta DXGI revisada, [**IDXGISwapChain1**](/windows/desktop/api/DXGI1_2/nn-dxgi1_2-idxgiswapchain1). Você pode usar vários métodos de interface [**IDXGIFactory2**](/windows/desktop/api/DXGI1_2/nn-dxgi1_2-idxgifactory2) para criar o objeto **IDXGISwapChain1** apropriado a ser usado com um identificador [**HWND**](../winprog/windows-data-types.md) , um objeto [CoreWindow](/uwp/api/Windows.UI.Core.CoreWindow?view=winrt-19041) , [DirectComposition](../directcomp/directcomposition-portal.md)ou a estrutura [**Windows. UI. XAML**](/uwp/api/Windows.UI.Xaml?view=winrt-19041) .
+As APIs DXGI 1,2 incluem uma interface da cadeia de permuta DXGI revisada, [**IDXGISwapChain1**](/windows/desktop/api/DXGI1_2/nn-dxgi1_2-idxgiswapchain1). Você pode usar vários métodos de interface [**IDXGIFactory2**](/windows/desktop/api/DXGI1_2/nn-dxgi1_2-idxgifactory2) para criar o objeto **IDXGISwapChain1** apropriado a ser usado com um identificador [**HWND**](../winprog/windows-data-types.md) , um objeto [CoreWindow](/uwp/api/Windows.UI.Core.CoreWindow?view=winrt-19041) , [DirectComposition](../directcomp/directcomposition-portal.md)ou o [**Windows. Conectável. Estrutura XAML**](/uwp/api/Windows.UI.Xaml?view=winrt-19041) .
 
 Selecione o modelo de apresentação inverter especificando o valor de enumeração [**\_ \_ \_ \_ seqüencial de inverter efeito de permuta dxgi**](/windows/desktop/api/DXGI/ne-dxgi-dxgi_swap_effect) no membro **SwapEffect** da estrutura [**DESC1 da cadeia de \_ permuta \_ \_ dxgi**](/windows/desktop/api/DXGI1_2/ns-dxgi1_2-dxgi_swap_chain_desc1) e definindo o membro **BufferCount** da **cadeia de permuta de dxgi \_ \_ \_ DESC1** para um mínimo de 2. Para obter mais informações sobre como usar o modelo de flip DXGI, consulte [modelo de flip-dxgi](dxgi-flip-model.md). Devido à apresentação mais suave do modelo de apresentação invertida e outras funcionalidades novas, recomendamos que você use o modelo de apresentação de flip para todos os novos aplicativos que você escreve com o Direct3D 10 e as APIs posteriores.
 

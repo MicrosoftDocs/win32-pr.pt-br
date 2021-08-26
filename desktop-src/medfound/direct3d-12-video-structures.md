@@ -1,17 +1,17 @@
 ---
 description: Esta seção contém informações de referência para as estruturas da API de vídeo do Microsoft Direct3D 12.
 ms.assetid: ''
-title: Estruturas de vídeo do Direct3D 12
+title: Estruturas de Vídeo do Direct3D 12
 ms.topic: article
 ms.date: 06/03/2019
-ms.openlocfilehash: 8914e8af9e21f3ee9a93e8bf9d122bec71483932
-ms.sourcegitcommit: 78b64f3865e64768b5319d4f010032ee68924a98
+ms.openlocfilehash: 945bb3f32a72cab437939e45a0b9691cbde70ef32acf7b08afd2580ff4a4259b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107314559"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119958746"
 ---
-# <a name="direct3d-12-video-structures"></a>Estruturas de vídeo do Direct3D 12
+# <a name="direct3d-12-video-structures"></a>Estruturas de Vídeo do Direct3D 12
 
 Esta seção contém informações de referência para as estruturas da API de vídeo do Microsoft Direct3D 12.
 

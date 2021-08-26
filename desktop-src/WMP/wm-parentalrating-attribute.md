@@ -3,7 +3,7 @@ title: Atributo WM/ParentalRating
 description: O atributo WM/ParentalRating é a classificação pai do conteúdo.
 ms.assetid: 9cbe5ae7-96b9-41f2-bdfd-8043f4cbd82d
 keywords:
-- Atributo WM/ParentalRating do Windows Media Player
+- Windows Media Player do atributo WM/ParentalRating
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d4da78c6c8af5dbff3e283a784f0c1f583e093c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a5808156e73620f775c2aa91feceaed4e06961f8e974c53a1595cdc739185062
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105787444"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120000876"
 ---
 # <a name="wmparentalrating-attribute"></a>Atributo WM/ParentalRating
 
@@ -26,7 +26,7 @@ O atributo **WM/ParentalRating** é a classificação pai do conteúdo.
 ## <a name="applies-to"></a>Aplica-se A
 
 -   [Itens de áudio](audio-item-attributes.md)
--   [Atributos de arquivo de mídia do Windows comumente usados](commonly-used-windows-media-file-attributes.md)
+-   [atributos de arquivo de mídia Windows usados com frequência](commonly-used-windows-media-file-attributes.md)
 -   [DVDs](dvd-attributes.md)
 -   [Itens de vídeo](video-item-attributes.md)
 
@@ -34,7 +34,7 @@ O atributo **WM/ParentalRating** é a classificação pai do conteúdo.
 
 Esse atributo é armazenado tanto na biblioteca (ou no cache) quanto no arquivo de mídia digital.
 
-A constante do Windows Media Format SDK para esse atributo é g \_ wszWMParentalRating.
+a constante do SDK do formato de mídia Windows para esse atributo é g \_ wszWMParentalRating.
 
 **MPAARating** é um alias para este atributo.
 

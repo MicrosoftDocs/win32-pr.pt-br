@@ -17,14 +17,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: de7f0b61cdbc5d5776039c3bf13b83ca0a6f8fdc
-ms.sourcegitcommit: ea73413ee4f69fa573ee0cd4422f20d17bd42e1f
+ms.openlocfilehash: 165b0a74f71ee5267fb3bd300baec4e48c51662b33c83203ebae1ba462f10a0b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "104011881"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119953556"
 ---
-# <a name="ibackgroundcopymanagercreatejob-method"></a>Método IBackgroundCopyManager:: CreateJob
+# <a name="ibackgroundcopymanagercreatejob-method"></a>Método IBackgroundCopyManager::CreateJob
 
 Cria um trabalho.
 
@@ -46,43 +46,43 @@ HRESULT CreateJob(
 
 <dl> <dt>
 
-*pDisplayName* \[ no\]
+*pDisplayName* \[ Em\]
 </dt> <dd>
 
-Cadeia de caracteres terminada em nulo que contém um nome de exibição para o trabalho. Normalmente, o nome de exibição é usado para identificar o trabalho em uma interface do usuário. Observe que mais de um trabalho pode ter o mesmo nome de exibição. Não deve ser **nulo**. O nome é limitado a 256 caracteres, não incluindo o terminador nulo.
+Cadeia de caracteres terminada em nulo que contém um nome de exibição para o trabalho. Normalmente, o nome de exibição é usado para identificar o trabalho em uma interface do usuário. Observe que mais de um trabalho pode ter o mesmo nome de exibição. Não deve ser **NULL.** O nome é limitado a 256 caracteres, não incluindo o terminador nulo.
 
 </dd> <dt>
 
-*Tipo* \[ de no\]
+*Tipo* \[ Em\]
 </dt> <dd>
 
-Tipo de trabalho de transferência, como BG_JOB_TYPE_DOWNLOAD. Para obter uma lista de tipos de transferência, consulte a enumeração [**BG_JOB_TYPE**](bg-job-type.md) .
+Tipo de trabalho de transferência, como BG_JOB_TYPE_DOWNLOAD. Para ver uma lista de tipos de transferência, [**consulte a enumeração BG_JOB_TYPE**](bg-job-type.md) dados.
 
 </dd> <dt>
 
-*pJobID* \[ fora\]
+*pJobID* \[ out\]
 </dt> <dd>
 
-Identifica exclusivamente seu trabalho na fila. Use esse identificador ao chamar o método [**IBackgroundCopyManager:: GetJob**](ibackgroundcopymanager-getjob.md) para obter um trabalho da fila.
+Identifica exclusivamente seu trabalho na fila. Use esse identificador ao chamar o [**método IBackgroundCopyManager::GetJob**](ibackgroundcopymanager-getjob.md) para obter um trabalho da fila.
 
 </dd> <dt>
 
-*ppJob* \[ fora\]
+*ppJob* \[ out\]
 </dt> <dd>
 
-Um ponteiro de interface [**método ibackgroundcopyjob**](ibackgroundcopyjob-.md) que você usa para modificar as propriedades do trabalho e especificar os arquivos a serem transferidos. Para ativar o trabalho na fila, chame o método [**método ibackgroundcopyjob:: resume**](ibackgroundcopyjob-resume.md) . Libere *ppJob* quando terminar.
+Um ponteiro de interface [**IBackgroundCopyJob**](ibackgroundcopyjob-.md) que você usa para modificar as propriedades do trabalho e especificar os arquivos a serem transferidos. Para ativar o trabalho na fila, chame o [**método IBackgroundCopyJob::Resume.**](ibackgroundcopyjob-resume.md) Libere *ppJob* quando terminar.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Esse método retorna os valores **HRESULT** a seguir, bem como outros.
+Esse método retorna os seguintes **valores HRESULT,** bem como outros.
 
 
 
 | Código de retorno                                                                              | Descrição                                    |
 |------------------------------------------------------------------------------------------|------------------------------------------------|
-| <dl> <dt>S_OK * * * *</dt> </dl> | Novo trabalho gerado com êxito.<br/> |
+| <dl> <dt>S_OK****</dt> </dl> | O novo trabalho foi gerado com êxito.<br/> |
 
 
 
@@ -90,7 +90,7 @@ Esse método retorna os valores **HRESULT** a seguir, bem como outros.
 
 ## <a name="remarks"></a>Comentários
 
-Somente o usuário que cria o trabalho ou um usuário com privilégios de administrador pode [Adicionar arquivos ao trabalho](https://www.bing.com/search?q=add+files+to+the+job) e [alterar as propriedades do trabalho](https://www.bing.com/search?q=change+the+job's+properties).
+Somente o usuário que cria o trabalho ou [](https://www.bing.com/search?q=add+files+to+the+job) um usuário com privilégios de administrador pode adicionar arquivos ao trabalho e alterar as [propriedades do trabalho.](https://www.bing.com/search?q=change+the+job's+properties)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -98,11 +98,11 @@ Somente o usuário que cria o trabalho ou um usuário com privilégios de admini
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10, versão 1709\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | Windows Server, \[ somente aplicativos da área de trabalho da versão 1709\]<br/>                                       |
-| parâmetro<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>DeliveryOptimization. idl</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Dosvc. lib</dt> </dl>                |
+| Cliente mínimo com suporte<br/> | Windows 10, versão 1709 somente para \[ aplicativos da área de trabalho\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows Servidor, versão 1709 somente \[ aplicativos da área de trabalho\]<br/>                                       |
+| Cabeçalho<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Dosvc.lib</dt> </dl>                |
 | DLL<br/>                      | <dl> <dt>Dosvc.dll</dt> </dl>                |
 | IID<br/>                      | IID_IBackgroundCopyManager é definido como 5CE34C0D-0DC9-4C1F-897C-DAA1B78CEE7C<br/>           |
 
@@ -115,8 +115,8 @@ Somente o usuário que cria o trabalho ou um usuário com privilégios de admini
 [**IBackgroundCopyManager**](ibackgroundcopymanager.md)
 </dt> <dt>
 
-[**Método ibackgroundcopyjob**](ibackgroundcopyjob-.md)
+[**IBackgroundCopyJob**](ibackgroundcopyjob-.md)
 </dt> <dt>
 
-[**Método ibackgroundcopyjob:: retomar**](ibackgroundcopyjob-resume.md)
+[**IBackgroundCopyJob::Resume**](ibackgroundcopyjob-resume.md)
 </dt> </dl>
