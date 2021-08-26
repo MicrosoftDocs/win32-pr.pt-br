@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: f2da7e0576579b0f0c509de7a8318e46e5dd955d
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 6d5f1b254ad4a833c1523f5a139224fc1fed508d4530a056ffdb0f111db5769e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103930390"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120032346"
 ---
 # <a name="bitmapvaluetype-complex-type"></a>Tipo complexo BitMapValueType
 
@@ -57,13 +57,13 @@ Define o mapeamento entre um valor de bit e um valor de cadeia de caracteres.
 |---------|-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | message | [**strTableRef**](eventmanifestschema-strtableref-simpletype.md) | O valor da cadeia de caracteres localizada para o qual o valor de bits é mapeado. A cadeia de caracteres de mensagem faz referência a uma cadeia de caracteres localizada na seção [**STRINGTABLE**](eventmanifestschema-stringtable-resources-element.md) do manifesto. <br/>                                                                                  |
 | símbolo  | [**CSymbolType**](eventmanifestschema-csymboltype-simpletype.md) | O símbolo a ser usado para referenciar o mapa em seu aplicativo. O [**compilador de mensagem (MC.exe)**](message-compiler--mc-exe-.md) usa o símbolo para criar uma constante para o mapa no arquivo de cabeçalho que o compilador gera. Se você não especificar um símbolo, o compilador gerará um para você.<br/> |
-| value   | [**HexInt32Type**](eventmanifestschema-hex32type-simpletype.md)  | O valor de bit a ser mapeado para o valor da cadeia de caracteres. Você deve especificar um número hexadecimal que tenha um único conjunto de bits.<br/>                                                                                                                                                                                          |
+| valor   | [**HexInt32Type**](eventmanifestschema-hex32type-simpletype.md)  | O valor de bit a ser mapeado para o valor da cadeia de caracteres. Você deve especificar um número hexadecimal que tenha um único conjunto de bits.<br/>                                                                                                                                                                                          |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-Mapeia um valor hexadecimal (o número deve ser precedido por 0x) com um único bit definido como um nome.
+Mapas um valor hexadecimal (o número deve ser precedido por 0x) com um único bit definido como um nome.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ Mapeia um valor hexadecimal (o número deve ser precedido por 0x) com um único 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 

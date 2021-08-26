@@ -6,12 +6,12 @@ keywords:
 - Arquitetura de multicast
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4329cd053285c39778c9537613afdec6f449d15e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a3240c6dcb7591618804e8fc73255db02970e92b0ebb926491870e4108b7604f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822700"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120030206"
 ---
 # <a name="components-of-the-multicast-architecture"></a>Componentes da arquitetura multicast
 
@@ -29,9 +29,9 @@ Os principais componentes da arquitetura de roteamento de multicast são explica
 
 A seção [como a arquitetura de multicast se encaixa em conjunto](how-the-multicast-architecture-fits-together.md) explica como esses componentes interagem.
 
- 
+ 
 
- 
+ 
 
 
 

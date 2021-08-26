@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 66cd29758e0b2d63db88db8b998cc79ec12efdd9
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 2816d148af2a7514dc28a71036402f3781e47a0144848a2ea81bbb94d339f961
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108094714"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119999026"
 ---
 # <a name="ctransinplaceoutputpincheckmediatype-method"></a>Método CTransInPlaceOutputPin. CheckMediaType
 
@@ -57,7 +57,7 @@ Retorna um valor **HRESULT** . Os valores possíveis incluem os mostrados na tab
 
 | Código de retorno                                                                                                | Descrição                         |
 |------------------------------------------------------------------------------------------------------------|-------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>                       | Sucesso.<br/>                 |
+| <dl> <dt>**S \_ OK**</dt> </dl>                       | Êxito.<br/>                 |
 | <dl> <dt>**\_tipo E \_ VFW \_ não \_ aceito**</dt> </dl> | Tipo de mídia não aceito.<br/> |
 
 
@@ -76,12 +76,12 @@ Se o filtro já estiver sendo transmitido e estiver usando dois alocadores, esse
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>TRANSip. h (incluir fluxos. h)</dt> </dl>                                                                                   |
+| parâmetro<br/>  | <dl> <dt>Transip. h (incluir Fluxos. h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ad24bef60fe1cc29114d9899698feaa7a7d41af3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0f30fdf1d7b5d51b7e1c2c29f52631f6fa5fab956822895ec414fde7ccf83a1e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103662024"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119972698"
 ---
 # <a name="esentinitinprogressexception-constructor"></a>Construtor EsentInitInProgressException
 
 Inicializa uma nova instância da classe EsentInitInProgressException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentInitInProgressException()
 
 [Classe EsentInitInProgressException](./esentinitinprogressexception-class.md)
 
-[Membros do EsentInitInProgressException](./esentinitinprogressexception-members.md)
+[Membros EsentInitInProgressException](./esentinitinprogressexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

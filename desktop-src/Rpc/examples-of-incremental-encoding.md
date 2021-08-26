@@ -3,15 +3,15 @@ title: Exemplos de codificação incremental
 description: A seção a seguir fornece um exemplo de como usar o identificador de serialização de estilo incremental para codificação de tipo.
 ms.assetid: c50c0de3-aabb-4166-93dc-67b0fee66635
 keywords:
-- RPC de chamada de procedimento remoto, tarefas, usando codificação incremental
+- RPC de Chamada de Procedimento Remoto , tarefas, usando codificação incremental
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 16c9cb61e6b2bf55b29fb02e39f41dd7a61c8317
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 09d80b7f9b8ddb2acf31626da581996a667a7d2f7a395d419ea8da4c36c60d40
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103916619"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120021406"
 ---
 # <a name="examples-of-incremental-encoding"></a>Exemplos de codificação incremental
 
@@ -68,9 +68,9 @@ MesHandleFree ( Handle );
 
 
 
- 
+ 
 
- 
+ 
 
 
 

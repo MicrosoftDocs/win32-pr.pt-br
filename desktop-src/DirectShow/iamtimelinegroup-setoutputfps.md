@@ -1,7 +1,7 @@
 ---
-description: O método SetOutputFPS define a taxa de quadros de saída não compactados para esse grupo.
+description: O método SetOutputFPS define a taxa de quadros de saída descompactada para esse grupo.
 ms.assetid: 335ea106-d5db-43a1-b771-b027e25164a6
-title: 'Método IAMTimelineGroup:: SetOutputFPS (QEdit. h)'
+title: Método IAMTimelineGroup::SetOutputFPS (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: bbec5de572dd2ed2a0e6b3062b208f1084bafd07
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 332e9ea33e0ca559800e560409066946247d1cff34b8e6b48fd1fadbdb91e38f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105760089"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120052696"
 ---
-# <a name="iamtimelinegroupsetoutputfps-method"></a>Método IAMTimelineGroup:: SetOutputFPS
+# <a name="iamtimelinegroupsetoutputfps-method"></a>Método IAMTimelineGroup::SetOutputFPS
 
 > [!Note]  
 > \[Preterido. Essa API pode ser removida de versões futuras do Windows.\]
 
  
 
-O `SetOutputFPS` método define a taxa de quadros de saída não compactados para esse grupo.
+O `SetOutputFPS` método define a taxa de quadros de saída descompactada para esse grupo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,30 +45,30 @@ HRESULT SetOutputFPS(
 
 <dl> <dt>
 
-*QUADROS* 
+*Fps* 
 </dt> <dd>
 
-Taxa de quadros de saída para este grupo, em quadros por segundo. O valor não pode ser igual a zero e não pode ter mais de sete dígitos após a casa decimal.
+Taxa de quadros de saída para esse grupo, em quadros por segundo. O valor não pode ser igual a zero e não pode ter mais de sete dígitos após a casa decimal.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
-A saída renderizada desse grupo é executada na taxa de quadros especificada e todas as edições no material de origem são arredondadas para o limite de quadro mais próximo, conforme definido pela taxa de quadros. Para obter o melhor desempenho, use a mesma taxa de quadros para todos os grupos, vídeo e áudio.
+A saída renderizada desse grupo é executado na taxa de quadros especificada e todas as edições no material de origem são arredondadas para o limite de quadro mais próximo, conforme definido pela taxa de quadros. Para melhor desempenho, use a mesma taxa de quadros para todos os grupos, vídeo e áudio.
 
-O método [**IAMTimelineGroup:: SetSmartRecompressFormat**](iamtimelinegroup-setsmartrecompressformat.md) substitui a taxa de quadros.
+O [**método IAMTimelineGroup::SetSmartRecompressFormat**](iamtimelinegroup-setsmartrecompressformat.md) substitui a taxa de quadros.
 
 > [!Note]  
-> O arquivo de cabeçalho QEdit. h não é compatível com cabeçalhos do Direct3D posteriores à versão 7.
+> O arquivo de título Qedit.h não é compatível com os headers direct3D posteriores à versão 7.
 
  
 
 > [!Note]  
-> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Para obter o Qedit.h, baixe [o Microsoft Windows SDK Update para Windows Vista e .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O Qedit.h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -78,8 +78,8 @@ O método [**IAMTimelineGroup:: SetSmartRecompressFormat**](iamtimelinegroup-set
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>QEdit. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -87,7 +87,7 @@ O método [**IAMTimelineGroup:: SetSmartRecompressFormat**](iamtimelinegroup-set
 
 <dl> <dt>
 
-[**Interface IAMTimelineGroup**](iamtimelinegroup.md)
+[**IAMTimelineGroup Interface**](iamtimelinegroup.md)
 </dt> <dt>
 
 [Códigos de erro e êxito](error-and-success-codes.md)

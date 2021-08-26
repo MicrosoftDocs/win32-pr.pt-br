@@ -1,7 +1,7 @@
 ---
-description: 'Método IEnumPStoreTypes:: Reset – redefine para o início da sequência de enumeração.'
+description: Método IEnumPStoreTypes::Reset – redefine para o início da sequência de enumeração.
 ms.assetid: 35f14aa5-92cb-4ad8-b80c-2550dedb7a7f
-title: 'Método IEnumPStoreTypes:: Reset (Pstore. h)'
+title: Método IEnumPStoreTypes::Reset (Pstore.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Pstorec.dll
-ms.openlocfilehash: 55953a67d19ac94f792769974d860bae9b57f1ea
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: dcb68cb73bb88a4bbe3225e37c9e72d17ca5385b403a8b41d9cfad84ffec81d0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108089314"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120002086"
 ---
-# <a name="ienumpstoretypesreset-method"></a>Método IEnumPStoreTypes:: Reset
+# <a name="ienumpstoretypesreset-method"></a>Método IEnumPStoreTypes::Reset
 
-\[O armazenamento protegido (Pstore) está disponível para uso no Windows Server 2003 e no Windows XP. Ele só está disponível para operações somente leitura no Windows Server 2008 e no Windows Vista, mas pode estar indisponível nas versões subsequentes. A Pstore usa uma implementação mais antiga da proteção de dados. Os desenvolvedores são altamente incentivados a aproveitar a proteção de dados mais forte fornecida pelas funções [**CryptProtectData**](/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata) e [**CryptUnprotectData**](/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata) .\]
+\[O Armazenamento (Pstore) está disponível para uso no Windows Server 2003 e Windows XP. Ele só está disponível para operações somente leitura no Windows Server 2008 e Windows Vista, mas pode não estar disponível nas versões subsequentes. O Pstore usa uma implementação mais antiga da proteção de dados. Os desenvolvedores são incentivados a aproveitar a proteção de dados mais forte fornecida pelas funções [**CryptProtectData**](/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata) e [**CryptUnprotectData.**](/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata)\]
 
 Redefine para o início da sequência de enumeração.
 
@@ -41,7 +41,7 @@ Esse método não tem parâmetros.
 
 ## <a name="return-value"></a>Valor retornado
 
-O valor de retorno é um valor **HRESULT** .
+O valor de retorno é um **valor HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,12 +49,12 @@ O valor de retorno é um valor **HRESULT** .
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Pstore. h</dt> </dl>    |
+| parâmetro<br/> | <dl> <dt>Pstore.h</dt> </dl>    |
 | DLL<br/>    | <dl> <dt>Pstorec.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

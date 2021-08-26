@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 923f9592b14dff78f1942d179c695fb7d976c0b2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c16ede5177d6e3765a96293032d520e1f8928fa6f41794a495d4c91681b145ae
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749847"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119999776"
 ---
 # <a name="cbaselistgettailpositioni-method"></a>Método CBaseList. GetTailPositionI
 
@@ -40,7 +40,7 @@ POSITION GetTailPositionI();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor de posição ou **NULL** se a lista estiver vazia.
 
@@ -50,7 +50,7 @@ Retorna um valor de posição ou **NULL** se a lista estiver vazia.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Wxlist. h (incluir fluxos. h)</dt> </dl>                                                                                    |
+| parâmetro<br/>  | <dl> <dt>Wxlist. h (incluir Fluxos. h)</dt> </dl>                                                                                    |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 

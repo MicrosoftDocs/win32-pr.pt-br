@@ -1,30 +1,30 @@
 ---
-title: Retornos de chamada do Gerenciador de tabela de roteamento versão 2
-description: Os retornos de chamada a seguir são usados para informar os clientes de eventos de registro.
+title: Roteamento de retornos de chamada do Gerenciador de Tabelas versão 2
+description: Os retornos de chamada a seguir são usados para informar os clientes sobre eventos de registro.
 ms.assetid: 98fd8197-0717-48a6-8a78-990bb7fb3bec
 keywords:
-- Serviço de roteamento e acesso remoto RRAS, Gerenciador de tabela de roteamento versão 2, retornos de chamada
-- Gerenciador de tabela de roteamento versão 2 RRAS, retornos de chamada
+- Roteamento e RRAS do Serviço de Acesso Remoto, Gerenciador de Tabelas de Roteamento versão 2, retornos de chamada
+- Roteamento de RRAS do Gerenciador de Tabelas versão 2, retornos de chamada
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: da3e3c4031f813de91604fdb5691ec1b08aae834
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 810666e10af11290ccfbe98c972e12423d62085ffb647849bdf3d699c055944e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104453628"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120026966"
 ---
-# <a name="routing-table-manager-version-2-callbacks"></a>Retornos de chamada do Gerenciador de tabela de roteamento versão 2
+# <a name="routing-table-manager-version-2-callbacks"></a>Roteamento de retornos de chamada do Gerenciador de Tabelas versão 2
 
-Os retornos de chamada a seguir são usados para informar os clientes de eventos de registro.
+Os retornos de chamada a seguir são usados para informar os clientes sobre eventos de registro.
 
-[**\_método de \_ exportação de entidade RTM \_**](/windows/win32/api/rtmv2/nc-rtmv2-_entity_method)
+[**MÉTODO DE \_ EXPORTAÇÃO DE \_ ENTIDADE RTM \_**](/windows/win32/api/rtmv2/nc-rtmv2-_entity_method)
 
-[**retorno de chamada do \_ evento RTM \_**](/windows/win32/api/rtmv2/nc-rtmv2-_event_callback)
+[**RETORNO DE CHAMADA \_ DE \_ EVENTO RTM**](/windows/win32/api/rtmv2/nc-rtmv2-_event_callback)
 
- 
+ 
 
- 
+ 
 
 
 

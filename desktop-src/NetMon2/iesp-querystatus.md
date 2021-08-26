@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 3435ed832484042bfeb9229e4b46fa34441cb395
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 00b83cbbb167775a8de360c880f381b41f250abf0eab01c883bc7580be4d956f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104165350"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120037536"
 ---
 # <a name="iespquerystatus-method"></a>Método IESP:: QueryStatus
 
@@ -47,7 +47,7 @@ Um ponteiro para uma estrutura [NETWORKSTATUS](networkstatus.md) retornada que i
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se o método for bem-sucedido, o valor de retorno será NMERR com \_ êxito.
 

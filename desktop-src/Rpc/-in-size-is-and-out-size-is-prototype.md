@@ -4,12 +4,12 @@ description: O protótipo de função a seguir usa duas cadeias de caracteres co
 ms.assetid: 334c5e0f-b1fb-41ca-8157-d92525e78b3a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d03dbb4dd65d44122bea7ff086013295e0bf616d
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 75075ccabe4a29ca1765a189c371c407c791cb868d2980386488879415e8f60d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366593"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120073626"
 ---
 # <a name="in-size_is-and-out-size_is-prototype"></a>\[em, tamanho \_ é \] e \[ out, o tamanho \_ é \] protótipo
 
@@ -54,6 +54,6 @@ void Analyze(char *pchIn,
 
 O \[ atributo de **cadeia de caracteres** \] pode ser utilizado quando um parâmetro é conhecido como uma cadeia de caracteres. Esse atributo direciona o stub para calcular o tamanho da cadeia de caracteres, eliminando assim a sobrecarga associada ao \[ [**comprimento**](/windows/desktop/Midl/size-is) dos \] parâmetros. Além disso, ele direcionará o stub para verificar se a cadeia de caracteres é terminada em **nulo** antes de passar o parâmetro para o aplicativo.
 
- 
+ 
 
- 
+ 

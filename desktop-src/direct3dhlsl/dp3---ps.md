@@ -1,6 +1,6 @@
 ---
-title: DP3-PS
-description: Computa o produto de três componentes do ponto dos registros de origem. | DP3-PS
+title: dp3 – ps
+description: Calcula o produto de ponto de três componentes dos registros de origem. | dp3 – ps
 ms.assetid: a365acd1-89c0-4340-8f51-8e478f84ddc0
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,22 +9,22 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 09e4178f6aedbfb5242f4c545d624f1d07796008
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 49e957078832f11885ea82baf8438d712394133eb77ad8eeaba705ff0d32a9d5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104968364"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120024626"
 ---
-# <a name="dp3---ps"></a>DP3-PS
+# <a name="dp3---ps"></a>dp3 – ps
 
-Computa o produto de três componentes do ponto dos registros de origem.
+Calcula o produto de ponto de três componentes dos registros de origem.
 
 ## <a name="syntax"></a>Syntax
 
 
 
-| DP3 DST, src0, src1 |
+| dp3 dst, src0, src1 |
 |---------------------|
 
 
@@ -33,7 +33,7 @@ Computa o produto de três componentes do ponto dos registros de origem.
 
 onde
 
--   DST é o registro de destino.
+-   dst é o registro de destino.
 -   src0 é um registro de origem.
 -   src1 é um registro de origem.
 
@@ -41,7 +41,7 @@ onde
 
 
 
-| Versões do sombreador de pixel | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versões do sombreador de pixel | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
 | dp3                   | x    | x    | x    | x    | x    | x    | x     | x    | x     |
 
@@ -49,7 +49,7 @@ onde
 
  
 
-O trecho de código a seguir mostra as operações executadas:
+O snippet de código a seguir mostra as operações executadas:
 
 
 ```
@@ -59,9 +59,9 @@ dest.x = dest.y = dest.z = dest.w =
 
 
 
-Essa instrução é executada no pipeline de vetor, sempre gravando nos canais de cor. Para a versão 1 \_ 4, essa instrução ainda usa o pipeline de vetor, mas pode gravar em qualquer canal.
+Essa instrução é executado no pipeline de vetor, sempre escrevendo nos canais de cores. Para a versão 1 \_ 4, essa instrução ainda usa o pipeline de vetor, mas pode gravar em qualquer canal.
 
-Uma instrução com uma máscara de gravação de registro de destino. RGB (. xyz) pode ser emitida em conjunto com DP3, conforme mostrado abaixo.
+Uma instrução com uma máscara de gravação .rgb (.xyz) de registro de destino pode ser emitida com dp3, conforme mostrado abaixo.
 
 
 ```
@@ -71,7 +71,7 @@ dp3 r0.rgb, t0, v0            // Copy scalar result to color components
 
 
 
-A instrução DP3 pode ser modificada usando o modificador de argumento de entrada de [dimensionamento assinado do registro de origem](dx9-graphics-reference-asm-ps-registers-modifiers-signed-scale.md) ( \_ BX2) aplicado aos seus argumentos de entrada se eles ainda não estiverem expandidos para o intervalo dinâmico assinado. Para um sombreador de iluminação, o modificador de instrução saturação ( \_ SAT) é geralmente usado para fixe os valores negativos para preto, conforme mostrado no exemplo a seguir.
+A instrução dp3 pode [](dx9-graphics-reference-asm-ps-registers-modifiers-signed-scale.md) ser modificada usando o modificador de argumento de entrada de Dimensionamento Assinado do Registro de Origem ( bx2) aplicado a seus argumentos de entrada se eles ainda não estão expandidos para o intervalo dinâmico \_ assinado. Para um sombreador de iluminação, o modificador de instrução saturado ( sáb) geralmente é usado para fixar os valores negativos em preto, conforme \_ mostrado no exemplo a seguir.
 
 
 ```

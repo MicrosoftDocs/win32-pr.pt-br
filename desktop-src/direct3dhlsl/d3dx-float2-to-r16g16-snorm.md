@@ -1,9 +1,9 @@
 ---
-title: Função D3DX_FLOAT2_to_R16G16_SNORM
-description: Compacta o XMFLOAT2 fornecido de volta em um \_ formato dxgi \_ R16G16 \_ SNORM.
+title: D3DX_FLOAT2_to_R16G16_SNORM função
+description: Empacota o XMFLOAT2 determinado de volta em um SNORM DXGI \_ FORMAT \_ R16G16. \_
 ms.assetid: 7c5c6aae-b750-435a-9582-18b7689bc2d9
 keywords:
-- Função D3DX_FLOAT2_to_R16G16_SNORM HLSL
+- D3DX_FLOAT2_to_R16G16_SNORM função HLSL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ba63d7d7f03988e416d06b645e5c15163e431a7e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 8d9ad7d4ff95113d4d684cba7cc348c2d60a536e12171afa6ad421724a668e63
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103930628"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120024996"
 ---
-# <a name="d3dx_float2_to_r16g16_snorm-function"></a>D3DX \_ FLOAT2 \_ \_ R16G16 \_ SNORM function
+# <a name="d3dx_float2_to_r16g16_snorm-function"></a>Função SNORM D3DX \_ FLOAT2 \_ a \_ R16G16 \_
 
-Compacta o XMFLOAT2 fornecido de volta em um \_ formato dxgi \_ R16G16 \_ SNORM.
+Empacota o XMFLOAT2 determinado de volta em um SNORM DXGI \_ FORMAT \_ R16G16. \_
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,13 +40,13 @@ UINT D3DX_FLOAT2_to_R16G16_SNORM(
 *unpackedInput* 
 </dt> <dd>
 
-Os dados do sombreador desempacotado.
+Os dados do sombreador desempacodados.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Os dados do sombreador embalado.
+Os dados de sombreador empacotados.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,7 +54,7 @@ Os dados do sombreador embalado.
 
 | Requisito | Valor |
 |-------------------|--------------------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3DX \_ DXGIFormatConvert. inl</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3DX \_ DXGIFormatConvert.inl</dt> </dl> |
 
 
 
@@ -65,7 +65,7 @@ Os dados do sombreador embalado.
 [Funções](format-conversion-functions.md)
 </dt> <dt>
 
-[Descompactando e empacotando o \_ formato dxgi para a edição de imagem In-Place](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
+[Desempacotar e empacotar formato DXGI \_ para In-Place edição de imagem](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
 </dt> </dl>
 
  

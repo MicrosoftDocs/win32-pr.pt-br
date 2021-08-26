@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 428778afc12c668d284dffb5a8a6f734c03f0705
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 99f18932121d44f61d67c8124faa2d26638035bdcff473ad26c4222ceea9a85b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104295815"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120048786"
 ---
 # <a name="idwritefontfallbackmapcharacters-method"></a>Método IDWriteFontFallback:: MapCharacters
 
@@ -55,13 +55,13 @@ HRESULT MapCharacters(
 *source* 
 </dt> <dd>
 
-Tipo: **[**IDWriteTextAnalysisSource**](/windows/win32/api/dwrite/nn-dwrite-idwritetextanalysissource) \** _
+Tipo: **[ **IDWriteTextAnalysisSource**](/windows/win32/api/dwrite/nn-dwrite-idwritetextanalysissource)\***
 
 A implementação da fonte de texto contém o texto e a localidade.
 
 </dd> <dt>
 
-_textPosition * 
+*textPosition* 
 </dt> <dd>
 
 Tipo: **UINT32**
@@ -82,22 +82,22 @@ Comprimento do texto a ser analisado.
 *baseFontCollection* \[ em, opcional\]
 </dt> <dd>
 
-Tipo: **[**IDWriteFontCollection**](/windows/win32/api/dwrite/nn-dwrite-idwritefontcollection) \** _
+Tipo: **[ **IDWriteFontCollection**](/windows/win32/api/dwrite/nn-dwrite-idwritefontcollection)\***
 
 Coleção de fontes padrão a ser usada.
 
 </dd> <dt>
 
-_baseFamilyName * \[ in, opcional\]
+*baseFamilyName* \[ em, opcional\]
 </dt> <dd>
 
-Tipo: **const WCHAR \_ t \** _
+Tipo: **const WCHAR \_ t \***
 
 Nome da família da fonte base. Se você passar NULL, nenhuma correspondência será feita em relação à família.
 
 </dd> <dt>
 
-_baseWeight * 
+*baseWeight* 
 </dt> <dd>
 
 Tipo: **[ **\_ \_ espessura da fonte DWRITE**](/windows/win32/api/dwrite/ne-dwrite-dwrite_font_weight)**
@@ -127,13 +127,13 @@ A ampliação desejada.
 *mappedLength* \[ fora\]
 </dt> <dd>
 
-Tipo: **UINT32 \** _
+Tipo: **UINT32 \***
 
 Comprimento do texto mapeado para a fonte mapeada. Isso sempre será menor ou igual ao tamanho do texto e maior que zero (se o comprimento do texto for diferente de zero), o chamador avançará pelo menos um caractere.
 
 </dd> <dt>
 
-_mappedFont * \[ out\]
+*mappedFont* \[ fora\]
 </dt> <dd>
 
 Tipo: **[ **IDWriteFont**](/windows/win32/api/dwrite/nn-dwrite-idwritefont)\*\***
@@ -145,15 +145,15 @@ A fonte que deve ser usada para renderizar os primeiros caracteres *mappedLength
 *escala* \[ fora\]
 </dt> <dd>
 
-Tipo: **float \** _
+Tipo: **float \***
 
 Fator de escala para multiplicar o tamanho em em da fonte retornada por.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
 Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
@@ -163,8 +163,8 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 8.1 \[ apenas aplicativos de área de trabalho\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012 R2\]<br/>                                 |
+| Cliente mínimo com suporte<br/> | Windows 8.1 \[ somente aplicativos da área de trabalho\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[Somente aplicativos da área de trabalho R2\]<br/>                                 |
 | Número mínimo de telefone com suporte<br/>  | Windows Phone 8,1 \[ Windows Phone Silverlight 8,1 e aplicativos de Windows Runtime\]<br/> |
 | Biblioteca<br/>                  | <dl> <dt>Dwrite. lib</dt> </dl>   |
 | DLL<br/>                      | <dl> <dt>Dwrite.dll</dt> </dl>   |

@@ -1,11 +1,11 @@
 ---
-title: Propriedade IWMPNetwork framesSkipped
-description: A propriedade framesSkipped Obtém o número total de quadros ignorados durante a reprodução.
+title: Propriedade framesSkipped de IWMPNetwork
+description: A propriedade framesSkipped obtém o número total de quadros ignorados durante a reprodução.
 ms.assetid: eedecfa9-0c82-4800-979e-ca85fb78c480
 keywords:
-- Propriedade framesSkipped Windows Media Player
-- Propriedade framesSkipped Windows Media Player, interface IWMPNetwork
-- Interface IWMPNetwork Windows Media Player, Propriedade framesSkipped
+- propriedade framesSkipped Windows Media Player
+- propriedade framesSkipped Windows Media Player , interface IWMPNetwork
+- Interface IWMPNetwork Windows Media Player , propriedade framesSkipped
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8409cec50089111184f96e4463f57cc9c4fbae07
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3640ff73eeadd1bf59eecc29045b0434f0885b7dc1eef319d6e6ee040442abdd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749425"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119999976"
 ---
-# <a name="iwmpnetworkframesskipped-property"></a>Propriedade IWMPNetwork:: framesSkipped
+# <a name="iwmpnetworkframesskipped-property"></a>Propriedade IWMPNetwork::framesSkipped
 
-A propriedade **framesSkipped** Obtém o número total de quadros ignorados durante a reprodução.
+A **propriedade framesSkipped** obtém o número total de quadros ignorados durante a reprodução.
 
 ## <a name="syntax"></a>Syntax
 
@@ -46,11 +46,11 @@ Public ReadOnly Property framesSkipped As System.Int32
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Um **System. Int32** que é o número de quadros ignorados.
+Um **System.Int32** que é o número de quadros ignorados.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de código a seguir usa **framesSkipped** para exibir o número total de quadros ignorados durante a reprodução. As informações são exibidas em um rótulo quando o usuário clica em um botão. O objeto **AxWMPLib. AxWindowsMediaPlayer** é representado pela variável chamada Player.
+O exemplo de código a seguir **usa framesSkipped** para exibir o número total de quadros ignorados durante a reprodução. As informações são exibidas em um rótulo quando o usuário clica em um botão. O **objeto AxWMPLib.AxWindowsMediaPlayer** é representado pela variável chamada player.
 
 
 ```CSharp
@@ -80,7 +80,7 @@ End Sub
 
 | Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/>   | Windows Media Player 9 Series ou posterior<br/>                                                                      |
+| Versão<br/>   | Windows Media Player série 9 ou posterior<br/>                                                                      |
 | Namespace<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

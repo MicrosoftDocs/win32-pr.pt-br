@@ -4,12 +4,12 @@ description: Os botões de opção são usados para selecionar uma das várias o
 ms.assetid: cf4568ff-1bc4-4770-bc54-a5d08ac0a60c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9766e85f530281e4f843c4d39fd41fe35d4fb620
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c560e4efa57790980d852ab2716248d5b1d7faff535592f3f2ca892f3dff0715
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103635279"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119998136"
 ---
 # <a name="radio-button-msaa-ui-element-reference"></a>Botão de opção (referência de elemento de interface do usuário do MSAA)
 

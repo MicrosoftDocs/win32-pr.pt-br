@@ -3,7 +3,7 @@ title: Mensagem de EM_SETPUNCTUATION (RichEdit. h)
 description: Define os caracteres de Pontuação para um controle de edição rico.
 ms.assetid: c0c8ad14-63e2-4be8-8fc0-6b8ef9be4522
 keywords:
-- Controles de EM_SETPUNCTUATION de mensagens do Windows
+- controles de Windows de mensagem de EM_SETPUNCTUATION
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 710392cee7f7a1fb04fce59d6549134255499172
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9a5e0856c1ee1882695dc5e6d7dfdd6b72ea0f6c4f16ee7396bbfde2b76b49b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086185"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120062896"
 ---
 # <a name="em_setpunctuation-message"></a>\_Mensagem em SETpontuation
 
@@ -46,7 +46,7 @@ Especifica o tipo de pontuação, que pode ser um dos valores a seguir.
 | <span id="PC_LEADING"></span><span id="pc_leading"></span><dl> <dt>**líder do PC \_**</dt> </dl>       | Caracteres de Pontuação à esquerda.<br/>   |
 | <span id="PC_FOLLOWING"></span><span id="pc_following"></span><dl> <dt>**PC a \_ seguir**</dt> </dl> | Caracteres de Pontuação a seguir.<br/> |
 | <span id="PC_DELIMITER"></span><span id="pc_delimiter"></span><dl> <dt>**delimitador de PC \_**</dt> </dl> | Delimitador.<br/>                        |
-| <span id="PC_OVERFLOW_"></span><span id="pc_overflow_"></span><dl> <dt>**PC \_ ESTOURO**</dt> </dl> | Não há suporte.<br/>                    |
+| <span id="PC_OVERFLOW_"></span><span id="pc_overflow_"></span><dl> <dt>**PC \_ ESTOURO**</dt> </dl> | Sem suporte.<br/>                    |
 
 
 
@@ -61,7 +61,7 @@ Ponteiro para uma estrutura de [**Pontuação**](/windows/desktop/api/Richedit/n
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a operação for concluída com sucesso, o valor de retorno será um valor diferente de zero.
 
@@ -73,9 +73,9 @@ Se a operação falhar, o valor de retorno será zero.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
 
 
 

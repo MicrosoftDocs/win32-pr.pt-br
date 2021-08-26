@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Async.h
-ms.openlocfilehash: 03cbbc70e633f8289f99e094602cb1a912b711c5
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3bcc32e94d6329d42edd27f1daf39e40d28b71ba65cc32fd88d4ae3951d5012e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105782452"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119989236"
 ---
 # <a name="d3dx10createeffectfrommemory-function"></a>Função D3DX10CreateEffectFromMemory
 
@@ -52,7 +52,7 @@ HRESULT D3DX10CreateEffectFromMemory(
 
 <dl> <dt>
 
-*pData* \[ no\]
+*pData* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **LPCVOID**](../winprog/windows-data-types.md)**
@@ -61,16 +61,16 @@ Ponteiro para o efeito na memória.
 
 </dd> <dt>
 
-*Comprimento* \[ de um no\]
+*DataLength* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **tamanho \_ T**](../winprog/windows-data-types.md)**
+Tipo: **[ **SIZE \_ T**](../winprog/windows-data-types.md)**
 
 Tamanho do efeito na memória.
 
 </dd> <dt>
 
-*pSrcFileName* \[ no\]
+*pSrcFileName* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
@@ -79,110 +79,110 @@ Nome do arquivo de efeito na memória.
 
 </dd> <dt>
 
-*pDefines* \[ no\]
+*pDefines* \[ Em\]
 </dt> <dd>
 
-Tipo: **\* [**macro const \_ D3D \_ Shader**](/windows/win32/api/d3dcommon/ns-d3dcommon-d3d_shader_macro)**
+Tipo: **const [**D3D \_ SHADER \_ MACRO**](/windows/win32/api/d3dcommon/ns-d3dcommon-d3d_shader_macro) \***
 
-Uma matriz de macros de sombreador terminada em nulo (consulte a [**\_ \_ macro do sombreador do D3D**](/windows/win32/api/d3dcommon/ns-d3dcommon-d3d_shader_macro)); Defina como **NULL** para não especificar nenhuma macro.
+Uma matriz terminada em NULL de macros de sombreador (consulte  MACRO DO [**\_ SOMBREADOR \_ D3D**](/windows/win32/api/d3dcommon/ns-d3dcommon-d3d_shader_macro)); de definido como NULL para não especificar macros.
 
 </dd> <dt>
 
-*pInclude* \[ no\]
+*pInclude* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **ID3D10Include**](/previous-versions/windows/desktop/legacy/bb173775(v=vs.85))\***
 
-Um ponteiro para uma interface de inclusão (consulte a [**interface ID3D10Include**](/previous-versions/windows/desktop/legacy/bb173775(v=vs.85))). Este parâmetro pode ser **NULL**.
+Um ponteiro para uma interface de inclusão (consulte [**Interface ID3D10Incluir**](/previous-versions/windows/desktop/legacy/bb173775(v=vs.85))). Este parâmetro pode ser **NULL**.
 
 </dd> <dt>
 
-*pProfile* \[ no\]
+*pProfile* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
-Uma cadeia de caracteres que especifica o [perfil do sombreador](../direct3dhlsl/dx-graphics-hlsl-models.md)ou o modelo do sombreador.
+Uma cadeia de caracteres que especifica o [perfil do sombreador](../direct3dhlsl/dx-graphics-hlsl-models.md)ou o modelo de sombreador.
 
 </dd> <dt>
 
-*HLSLFlags* \[ no\]
+*HLSLFlags* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-HLSL opções de compilação (consulte as [ \_ constantes do sombreador d3d10](d3d10-shader.md)).
+Opções de compilação HLSL (consulte [Constantes de \_ SOMBREADOR D3D10](d3d10-shader.md)).
 
 </dd> <dt>
 
-*FXFlags* \[ no\]
+*FXFlags* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Opções de compilação de efeito (consulte [ \_ constantes de efeito de d3d10](d3d10-effect.md)).
+Opções de compilação de efeito (consulte [ \_ Constantes D3D10 EFFECT](d3d10-effect.md)).
 
 </dd> <dt>
 
-*pDevice* \[ no\]
+*pDevice* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **ID3D10Device**](/windows/win32/api/D3D10/nn-d3d10-id3d10device)\***
 
-Um ponteiro para o dispositivo (consulte a [**interface ID3D10Device**](/windows/win32/api/D3D10/nn-d3d10-id3d10device)) que usará os recursos.
+Um ponteiro para o dispositivo (consulte [**Interface ID3D10Device**](/windows/win32/api/D3D10/nn-d3d10-id3d10device)) que usará os recursos.
 
 </dd> <dt>
 
-*pEffectPool* \[ no\]
+*pEffectPool* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **ID3D10EffectPool**](/windows/win32/api/D3D10Effect/nn-d3d10effect-id3d10effectpool)\***
 
-Ponteiro para um pool de efeitos (consulte a [**interface ID3D10EffectPool**](/windows/win32/api/D3D10Effect/nn-d3d10effect-id3d10effectpool)) para compartilhar variáveis entre efeitos.
+Ponteiro para um pool de efeitos (consulte [**ID3D10EffectPool Interface**](/windows/win32/api/D3D10Effect/nn-d3d10effect-id3d10effectpool)) para compartilhar variáveis entre efeitos.
 
 </dd> <dt>
 
-*pPump* \[ no\]
+*pPump* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **ID3DX10ThreadPump**](id3dx10threadpump.md)\***
 
-Um ponteiro para uma interface de bombeamento de thread (consulte a [**interface ID3DX10ThreadPump**](id3dx10threadpump.md)). Use **NULL** para especificar que essa função não deve retornar até que seja concluída.
+Um ponteiro para uma interface de bomba de thread (consulte Interface [**ID3DX10ThreadPump**](id3dx10threadpump.md)). Use **NULL** para especificar que essa função não deve retornar até que seja concluída.
 
 </dd> <dt>
 
-*ppEffect* \[ fora\]
+*ppEffect* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **ID3D10Effect**](/windows/win32/api/D3D10Effect/nn-d3d10effect-id3d10effect)\*\***
 
-Endereço de um ponteiro para o efeito (consulte a [**interface ID3D10Effect**](/windows/win32/api/D3D10Effect/nn-d3d10effect-id3d10effect)) que é criada.
+Endereço de um ponteiro para o efeito (consulte [**ID3D10Effect Interface**](/windows/win32/api/D3D10Effect/nn-d3d10effect-id3d10effect)) que é criado.
 
 </dd> <dt>
 
-*ppErrors* \[ fora\]
+*ppErrors* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **ID3D10Blob**](/windows/win32/api/D3DCommon/nn-d3dcommon-id3d10blob)\*\***
 
-O endereço de um ponteiro para a memória (consulte a [**interface ID3D10Blob**](/windows/win32/api/D3DCommon/nn-d3dcommon-id3d10blob)) que contém erros de compilação de efeito, se houver algum.
+O endereço de um ponteiro para a memória (consulte [**Interface ID3D10Blob**](/windows/win32/api/D3DCommon/nn-d3dcommon-id3d10blob)) que contém erros de compilação de efeito, se houver algum.
 
 </dd> <dt>
 
-*pHResult* \[ fora\]
+*pHResult* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)\***
 
-Um ponteiro para o valor de retorno. Pode ser **NULL**. Se *pPump* não for **NULL**, *pHResult* deverá ser um local de memória válido até que a execução assíncrona seja concluída.
+Um ponteiro para o valor de retorno. Pode ser **NULL.** Se *pPump* não for **NULL,** *o pHResult* deverá ser um local de memória válido até que a execução assíncrona seja concluída.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-O valor de retorno é um dos valores listados nos [códigos de retorno do Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+O valor de retorno é um dos valores listados em Códigos de Retorno [do Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -190,7 +190,7 @@ O valor de retorno é um dos valores listados nos [códigos de retorno do Direct
 
 | Requisito | Valor |
 |-------------------|------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3DX10Async. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3DX10Async.h</dt> </dl> |
 
 
 
@@ -198,7 +198,7 @@ O valor de retorno é um dos valores listados nos [códigos de retorno do Direct
 
 <dl> <dt>
 
-[Funções de Uso Geral](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
+[Uso Geral funções](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
 </dt> </dl>
 
  

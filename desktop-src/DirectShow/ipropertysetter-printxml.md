@@ -1,7 +1,7 @@
 ---
 description: O método PrintXML converte dados de propriedade em uma cadeia de caracteres XML.
 ms.assetid: 24638489-b5ed-4bdd-b40e-6d61c0db1533
-title: 'IPropertySetter: método rintXML de:P (QEdit. h)'
+title: Método IPropertySetter::P rintXML (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: f31d36e8642cb669f5e365d6ffe25b538268bd1b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5070a6906d7f30ab12171f551270f82b9851fa8c3990fade47aca6d2927509be
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105812774"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120051506"
 ---
-# <a name="ipropertysetterprintxml-method"></a>IPropertySetter: método rintXML de:P
+# <a name="ipropertysetterprintxml-method"></a>Método IPropertySetter::P rintXML
 
 > [!Note]  
 > \[Preterido. Essa API pode ser removida de versões futuras do Windows.\]
@@ -48,47 +48,47 @@ HRESULT PrintXML(
 
 <dl> <dt>
 
-*pszXML* \[ fora\]
+*pszXML* \[ out\]
 </dt> <dd>
 
 Ponteiro para um buffer que recebe a cadeia de caracteres XML.
 
 </dd> <dt>
 
-*cbXML* \[ no\]
+*cbXML* \[ Em\]
 </dt> <dd>
 
 Tamanho do buffer apontado por *pszXML*, em bytes.
 
 </dd> <dt>
 
-*pcbPrinted* \[ fora\]
+*pcbPrinted* \[ out\]
 </dt> <dd>
 
-Ponteiro para uma variável que recebe o comprimento da cadeia de caracteres XML. Pode ser **NULL**.
+Ponteiro para uma variável que recebe o comprimento da cadeia de caracteres XML. Pode ser **NULL.**
 
 </dd> <dt>
 
-*recuar* \[ no\]
+*recuo* \[ Em\]
 </dt> <dd>
 
-Número de níveis de recuo para a marca externa.
+Número de níveis de recuo para a marca mais externa.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retornará S \_ OK se for bem-sucedido. Caso contrário, retorna um valor **HRESULT** que indica a causa do erro. Se a cadeia de caracteres XML for maior que o buffer, o método retornará E \_ OUTOFMEMORY.
+Retornará S \_ OK se for bem-sucedido. Caso contrário, retornará **um valor HRESULT** indicando a causa do erro. Se a cadeia de caracteres XML for maior que o buffer, o método retornará E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> O arquivo de cabeçalho QEdit. h não é compatível com cabeçalhos do Direct3D posteriores à versão 7.
+> O arquivo de título Qedit.h não é compatível com os headers direct3D posteriores à versão 7.
 
  
 
 > [!Note]  
-> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Para obter o Qedit.h, baixe [o Microsoft Windows SDK Update para Windows Vista e .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O Qedit.h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -98,8 +98,8 @@ Retornará S \_ OK se for bem-sucedido. Caso contrário, retorna um valor **HRES
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>QEdit. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -107,7 +107,7 @@ Retornará S \_ OK se for bem-sucedido. Caso contrário, retorna um valor **HRES
 
 <dl> <dt>
 
-[**Interface IPropertySetter**](ipropertysetter.md)
+[**IPropertySetter Interface**](ipropertysetter.md)
 </dt> <dt>
 
 [Códigos de erro e êxito](error-and-success-codes.md)

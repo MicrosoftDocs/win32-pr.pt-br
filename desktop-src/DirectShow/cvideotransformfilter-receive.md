@@ -1,7 +1,7 @@
 ---
-description: 'O método Receive recebe um exemplo de mídia, processa-o e entrega um exemplo de saída para o filtro downstream. Esse método substitui o método CTransformFilter:: Receive.'
+description: O método Receive recebe um exemplo de mídia, processa-o e entrega um exemplo de saída para o filtro downstream. Esse método substitui o método CTransformFilter::Receive.
 ms.assetid: 35e22a63-471e-4ca8-be3b-d84920cec7cb
-title: Método CVideoTransformFilter. Receive (Vtrans. h)
+title: Método CVideoTransformFilter.Receive (Vtrans.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: bdc33773a31a7c9ddfd7adb0f3fb20f8fcf6d520
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6bce69d5f14a522f403eed54b56a340ab02316507766c0cc6d60ff897ec73541
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759082"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119998506"
 ---
-# <a name="cvideotransformfilterreceive-method"></a>Método CVideoTransformFilter. Receive
+# <a name="cvideotransformfilterreceive-method"></a>Método CVideoTransformFilter.Receive
 
-O `Receive` método recebe um exemplo de mídia, processa-o e entrega um exemplo de saída para o filtro downstream. Esse método substitui o método [**CTransformFilter:: Receive**](ctransformfilter-receive.md) .
+O `Receive` método recebe um exemplo de mídia, processa-o e entrega um exemplo de saída para o filtro downstream. Esse método substitui o [**método CTransformFilter::Receive.**](ctransformfilter-receive.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -49,15 +49,15 @@ Ponteiro para a interface [**IMediaSample**](/windows/desktop/api/Strmif/nn-strm
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor **HRESULT** . Os possíveis valores incluem os seguintes:
+Retorna um **valor HRESULT.** Os possíveis valores incluem os seguintes:
 
 
 
 | Código de retorno                                                                             | Descrição                                                 |
 |-----------------------------------------------------------------------------------------|-------------------------------------------------------------|
-| <dl> <dt>**\_falso**</dt> </dl> | O filtro upstream deve parar de enviar amostras.<br/> |
+| <dl> <dt>**S \_ FALSE**</dt> </dl> | O filtro upstream deve parar de enviar amostras.<br/> |
 | <dl> <dt>**S \_ OK**</dt> </dl>    | Êxito.<br/>                                         |
 
 
@@ -66,13 +66,13 @@ Retorna um valor **HRESULT** . Os possíveis valores incluem os seguintes:
 
 ## <a name="remarks"></a>Comentários
 
-Esse método chama [**CVideoTransformFilter:: ShouldSkipFrame**](cvideotransformfilter-shouldskipframe.md) para determinar se ele deve entregar esse exemplo ou simplesmente descartá-lo. Se **ShouldSkipFrame** retornar **false** (indicando que o exemplo deve ser entregue), o método fará o seguinte:
+Esse método chama [**CVideoTransformFilter::ShouldSkipFrame**](cvideotransformfilter-shouldskipframe.md) para determinar se ele deve entregar este exemplo ou simplesmente descartá-lo. Se **ShouldSkipFrame** retornar **FALSE** (indicando que o exemplo deve ser entregue), o método faz o seguinte:
 
-1.  Chama [**CTransformFilter:: InitializeOutputSample**](ctransformfilter-initializeoutputsample.md) para preparar o exemplo de saída
-2.  Chama [**CTransformFilter:: Transform**](ctransformfilter-transform.md) para processar o exemplo de entrada. Esse método é virtual puro e deve ser implementado na classe derivada.
-3.  Chama [**CBaseOutputPin::D eliver**](cbaseoutputpin-deliver.md) para entregar o exemplo de saída.
+1.  Chama [**CTransformFilter::InitializeOutputSample**](ctransformfilter-initializeoutputsample.md) para preparar o exemplo de saída
+2.  Chama [**CTransformFilter::Transform para**](ctransformfilter-transform.md) processar o exemplo de entrada. Esse método é virtual puro e deve ser implementado na classe derivada.
+3.  Chama [**CBaseOutputPin::D eliver para**](cbaseoutputpin-deliver.md) entregar o exemplo de saída.
 
-Além disso, esse método verifica as alterações de formato no exemplo de entrada ou saída, chamando [**IMediaSample:: GetMediaType**](/windows/desktop/api/Strmif/nf-strmif-imediasample-getmediatype). Se houver uma alteração de formato, o método definirá o tipo de conexão no PIN correspondente. Antes de definir o novo tipo, ele chama **StopStreaming**. Depois de definir o novo tipo, ele chama **StartStreaming**. A classe derivada pode usar esses métodos para atualizar seu estado interno. A classe derivada também pode precisar verificar o novo formato em seu método de **transformação** .
+Além disso, esse método verifica se há alterações de formato no exemplo de entrada ou saída chamando [**IMediaSample::GetMediaType**](/windows/desktop/api/Strmif/nf-strmif-imediasample-getmediatype). Se houver uma alteração de formato, o método define o tipo de conexão no pino correspondente. Antes de define o novo tipo, ele chama **StopStreaming**. Depois de define o novo tipo, ele chama **StartStreaming**. A classe derivada pode usar esses métodos para atualizar seu estado interno. A classe derivada também pode precisar verificar o novo formato em seu **método Transform.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -80,8 +80,8 @@ Além disso, esse método verifica as alterações de formato no exemplo de entr
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Vtrans. h (incluir fluxos. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Vtrans.h (incluir Fluxos.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

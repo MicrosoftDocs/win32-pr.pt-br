@@ -4,12 +4,12 @@ description: Um DISPID permite a implementação do IDispatch para pesquisar os 
 ms.assetid: 3d19b37a-1ce4-4f34-96b3-ff39b320e8db
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d510fac39209cdb268a7676b49bbb6424cae1b09
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 5f73b1e280a6735f4d7d18f519e60102c04103d9500a588ef0613fd123557ed7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104159849"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119998876"
 ---
 # <a name="appendix-c-iaccessible-dispids"></a>Apêndice C: DISPIDs do IAccessible
 
@@ -45,9 +45,9 @@ Um DISPID permite a implementação do [**IDispatch**](idispatch-interface.md) p
 
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: 61e8918b-7f5a-4720-bb3b-df9ac7614894
 title: Codificador MPEG-2 da Microsoft (Wmcodecdsp. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ef5fad3b316db9ac4e47efcb9de761227cdd3279
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 91ae7f1bd9cb8233d919689bbeb1eea496760ae1254bae88120776364528243d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103645766"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120051226"
 ---
 # <a name="microsoft-mpeg-2-encoder"></a>Codificador MPEG-2 da Microsoft
 
@@ -100,9 +100,9 @@ O filtro dá suporte às propriedades combinadas do [**codificador de áudio MPE
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Vista Home Premium, Windows Vista Ultimate, Windows 7 Home Premium, Windows 7 Professional, Windows 7 Enterprise, Windows 7 Ultimate \[ Desktop apps\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows vista home Premium, Windows vista Ultimate, Windows 7 Home Premium, Windows 7 Professional, Windows 7 Enterprise, \[ somente aplicativos de área de trabalho do Windows 7 Ultimate\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                                                                                     |
-| parâmetro<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl>                                                                                       |
+| Cabeçalho<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl>                                                                                       |
 
 
 
@@ -110,7 +110,7 @@ O filtro dá suporte às propriedades combinadas do [**codificador de áudio MPE
 
 <dl> <dt>
 
-[Filtros do DirectShow](directshow-filters.md)
+[DirectShow Filter](directshow-filters.md)
 </dt> </dl>
 
  

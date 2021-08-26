@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 470fe3915c9f672c4663971159386e529ea60db4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 093591ffe07ecbe662ca85306b74c34c670e1adbe51e2605b1f21faa20696c3f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105782291"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120024766"
 ---
 # <a name="wm_rasdialevent-message"></a>Mensagem do WM \_ RASDIALEVENT
 
@@ -57,7 +57,7 @@ Valor de *lParam*. Equivalente ao parâmetro *dwError* das funções de retorno 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se um aplicativo processar essa mensagem, ele deverá retornar **true**.
 

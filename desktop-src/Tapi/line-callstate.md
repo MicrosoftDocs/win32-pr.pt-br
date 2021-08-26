@@ -4,12 +4,12 @@ ms.assetid: 7b24e3c3-bc69-488b-a698-cf17875bc3c5
 title: Mensagem de LINE_CALLSTATE (TAPI. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4159037c448307c99e759d8741ed19a14ab2562f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 90d82dfb5f0d5e306085ecd2d7f29270d19c2c9c101e30ac547fe246b7e6fddb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105757207"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120012566"
 ---
 # <a name="line_callstate-message"></a>\_Mensagem callstate de linha
 
@@ -85,7 +85,7 @@ Se for diferente de zero, ele especificará o privilégio do aplicativo para a c
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sem valor de retorno.
 
@@ -108,7 +108,7 @@ Esta mensagem não pode ser desabilitada.
 | Requisito | Valor |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versão da TAPI<br/> | Requer TAPI 2,0 ou posterior<br/>                                             |
-| parâmetro<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Cabeçalho<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
 
 
 

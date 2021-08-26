@@ -1,7 +1,7 @@
 ---
-description: 'O método AdvisePeriodic cria uma solicitação de aviso periódica. Esse método implementa o método IReferenceClock:: AdvisePeriodic.'
+description: O método AdvisePeriodic cria uma solicitação de consultoria periódica. Esse método implementa o método IReferenceClock::AdvisePeriodic.
 ms.assetid: ddaf0861-df11-4008-8e9c-a0c53929cd3f
-title: Método CBaseReferenceClock. AdvisePeriodic (Refclock. h)
+title: Método CBaseReferenceClock.AdvisePeriodic (Refclock.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a582e05756e8d034e5b2d0a1cd8f7eb569dbb842
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e4b81fc8dfc33cc2a6e5207e984de0c2e693b8c00b8f8d35949d0bb7150484bd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105754999"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120052426"
 ---
-# <a name="cbasereferenceclockadviseperiodic-method"></a>Método CBaseReferenceClock. AdvisePeriodic
+# <a name="cbasereferenceclockadviseperiodic-method"></a>Método CBaseReferenceClock.AdvisePeriodic
 
-O `AdvisePeriodic` método cria uma solicitação de aviso periódica. Esse método implementa o método [**IReferenceClock:: AdvisePeriodic**](/windows/desktop/api/Strmif/nf-strmif-ireferenceclock-adviseperiodic) .
+O `AdvisePeriodic` método cria uma solicitação de consultoria periódica. Esse método implementa o [**método IReferenceClock::AdvisePeriodic.**](/windows/desktop/api/Strmif/nf-strmif-ireferenceclock-adviseperiodic)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -48,43 +48,43 @@ HRESULT AdvisePeriodic(
 *StartTime* 
 </dt> <dd>
 
-Hora da primeira notificação, em unidades de 100 a nanossegundos. Deve ser maior que zero e menor que o \_ tempo máximo.
+Hora da primeira notificação, em unidades de 100 nanossegundos. Deve ser maior que zero e menor que MAX \_ TIME.
 
 </dd> <dt>
 
-*Período de tempo* 
+*PeriodTime* 
 </dt> <dd>
 
-Tempo entre notificações, em unidades de 100 a nanossegundos. Deve ser maior que zero.
+Tempo entre notificações, em unidades de 100 nanossegundos. Deve ser maior que zero.
 
 </dd> <dt>
 
 *hSemaphore* 
 </dt> <dd>
 
-Identificador para um semáforo, criado pelo chamador.
+Lidar com um semáforo, criado pelo chamador.
 
 </dd> <dt>
 
 *pdwAdviseToken* 
 </dt> <dd>
 
-Ponteiro para uma variável que recebe um identificador para a solicitação de aviso.
+Ponteiro para uma variável que recebe um identificador para a solicitação de consultoria.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um dos valores **HRESULT** mostrados na tabela a seguir.
+Retorna um dos **valores HRESULT** mostrados na tabela a seguir.
 
 
 
 | Código de retorno                                                                                   | Descrição                          |
 |-----------------------------------------------------------------------------------------------|--------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>          | Sucesso<br/>                   |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Êxito<br/>                   |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Valores de tempo inválidos<br/>       |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Falha<br/>                   |
-| <dl> <dt>**\_ponteiro E**</dt> </dl>     | Argumento de ponteiro **nulo**<br/> |
+| <dl> <dt>**PONTEIRO \_ E**</dt> </dl>     | **Argumento de** ponteiro NULL<br/> |
 
 
 
@@ -92,7 +92,7 @@ Retorna um dos valores **HRESULT** mostrados na tabela a seguir.
 
 ## <a name="remarks"></a>Comentários
 
-Em cada hora de notificação, o relógio libera o semáforo especificado no parâmetro *hSemaphore* . Quando nenhuma notificação adicional for necessária, chame o método [**CBaseReferenceClock:: Unadvise**](cbasereferenceclock-unadvise.md) e passe o valor de *pdwAdviseToken* retornado dessa chamada.
+A cada hora de notificação, o relógio libera o semáforo especificado no *parâmetro hSemaphore.* Quando nenhuma notificação adicional for necessária, chame o método [**CBaseReferenceClock::Unadvise**](cbasereferenceclock-unadvise.md) e passe o *valor pdwAdviseToken* retornado dessa chamada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -100,8 +100,8 @@ Em cada hora de notificação, o relógio libera o semáforo especificado no par
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Refclock. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Refclock.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

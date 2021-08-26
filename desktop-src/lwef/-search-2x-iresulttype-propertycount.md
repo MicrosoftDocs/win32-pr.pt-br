@@ -1,11 +1,11 @@
 ---
-title: Propriedade IResultType PropertyCount (WdsSharedIDL. h)
+title: Propriedade PropertyCount IResultType (WdsSharedIDL.h)
 description: Essa propriedade contém o número de propriedades expostas pelo tipo.
 ms.assetid: 4ca4b18c-d228-4275-b00d-06c6f227e0ae
 keywords:
-- Recursos do ambiente Windows herdado da propriedade PropertyCount
-- Propriedade PropertyCount recursos de ambiente do Windows herdados, interface IResultType
-- Recursos do ambiente Windows herdado da interface IResultType, Propriedade PropertyCount
+- Propriedade PropertyCount Herdou Windows recursos de ambiente
+- Propriedade PropertyCount Recursos Windows ambiente herdado, interface IResultType
+- Interface IResultType Recursos Windows ambiente herdado, propriedade PropertyCount
 topic_type:
 - apiref
 api_name:
@@ -17,17 +17,17 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1804c0abd249d93470cb2570f5bd58c600e8d3be
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6952f2efb6e0d14be22daf71e352747915b2ba05bf543d764ee9af5f496715ed
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499245"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120014626"
 ---
-# <a name="iresulttypepropertycount-property"></a>IResultType: Propriedade ropertyCount de:P
+# <a name="iresulttypepropertycount-property"></a>Propriedade IResultType::P ropertyCount
 
 > [!NOTE]
-> O Windows Desktop Search 2. x é uma tecnologia obsoleta que originalmente estava disponível como um suplemento para o Windows XP e o Windows Server 2003. Em versões posteriores, use a [API de pesquisa do Windows](../search/-search-reference-entry-page.md) em vez disso. 
+> Windows A Pesquisa de Área de Trabalho 2.x é uma tecnologia obsoleta que estava originalmente disponível como um complemento para Windows XP e Windows Server 2003. Em versões posteriores, use a [API Windows Search.](../search/-search-reference-entry-page.md) 
 
 Essa propriedade contém o número de propriedades expostas pelo tipo.
 
@@ -46,7 +46,7 @@ HRESULT get_PropertyCount(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Retorna o endereço do número de propriedades expostas.
+retorna o endereço do número de propriedades expostas.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,10 +54,10 @@ Retorna o endereço do número de propriedades expostas.
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows XP com SP2\]<br/>                                      |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003 com SP1\]<br/>                             |
-| Redistribuível<br/>          | Windows Desktop Search (WDS) 2.6.5<br/>                                             |
-| parâmetro<br/>                   | <dl> <dt>WdsSharedIDL. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows XP somente com \[ aplicativos da área de trabalho SP2\]<br/>                                      |
+| Servidor mínimo com suporte<br/> | Windows Servidor 2003 somente com aplicativos da área de trabalho SP1 \[\]<br/>                             |
+| Redistribuível<br/>          | Windows Pesquisa de Área de Trabalho (WDS) 2.6.5<br/>                                             |
+| Cabeçalho<br/>                   | <dl> <dt>WdsSharedIDL.h</dt> </dl> |
 
 
 

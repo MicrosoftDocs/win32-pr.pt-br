@@ -1,20 +1,20 @@
 ---
 title: Diretrizes de vários usuários
-description: Diretrizes para o desenvolvimento de aplicativos para vários usuários em um ambiente de Serviços de Área de Trabalho Remota.
+description: Diretrizes para o desenvolvimento de aplicativos para vários usuários em um Serviços de Área de Trabalho Remota ambiente.
 ms.assetid: c7acbedb-3bf2-4519-ab11-a50bf071e757
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a06db01da6d9413684e3197aa9758d6e5c04643f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 5bc598042530ab59c0c8932522185ce5a9d0d3dce04cabce44239c3c81b79d59
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105788032"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119988846"
 ---
 # <a name="multiple-user-guidelines"></a>Diretrizes de vários usuários
 
-As seções a seguir fornecem diretrizes para o desenvolvimento de aplicativos para vários usuários em um ambiente de Serviços de Área de Trabalho Remota.
+As seções a seguir fornecem diretrizes para o desenvolvimento de aplicativos para vários usuários em um Serviços de Área de Trabalho Remota ambiente.
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -27,7 +27,7 @@ A instalação de um aplicativo para um único usuário pode criar problemas em 
 
 </dd> <dt>
 
-[Armazenando informações específicas do usuário](storing-user-specific-information.md)
+[Armazenar informações específicas do usuário](storing-user-specific-information.md)
 </dt> <dd>
 
 Aplicativos devem armazenar informações específicas do usuário em locais específicos do usuário, separadamente de informações globais que se aplicam a todos os usuários.
@@ -48,13 +48,13 @@ Não é seguro pressupor que o nome do computador ou o endereço IP atribuído a
 
 </dd> </dl>
 
-Como sempre, bloqueie arquivos e bancos de dados ao fazer alterações para evitar a perda inadvertida de dado.
+Como sempre, bloqueie arquivos e bancos de dados ao fazer alterações para evitar a perda inadvertida de dados.
 
-Seu aplicativo não deve bloquear nenhum arquivo de aplicativo em tempo de execução que não seja de arquivos por usuário. Arquivos de tempo de execução bloqueados podem manter várias instâncias do aplicativo ou os processos sob o aplicativo, como assistentes, de serem executados. Uma boa maneira de testar quais arquivos são arquivos de aplicativo em tempo de execução é controlar quais arquivos são instalados pela instalação do aplicativo. Arquivos por usuário raramente são instalados pela instalação; Portanto, a maioria dos arquivos instalados pela instalação são arquivos de aplicativo de tempo de execução.
+Seu aplicativo não deve bloquear nenhum arquivo de aplicativo em tempo de executar que não sejam arquivos por usuário. Arquivos em tempo de execução bloqueados podem impedir a execução de várias instâncias do aplicativo ou processos no aplicativo, como assistentes. Uma boa maneira de testar quais arquivos são arquivos de aplicativo em tempo de executar é controlar quais arquivos são instalados pela configuração do aplicativo. Arquivos por usuário raramente são instalados pela instalação; portanto, a maioria dos arquivos instalados pela instalação são arquivos de aplicativo em tempo de executar.
 
- 
+ 
 
- 
+ 
 
 
 
