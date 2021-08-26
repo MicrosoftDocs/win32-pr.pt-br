@@ -1,5 +1,5 @@
 ---
-description: Representa um sistema operacional baseado no Windows instalado em um computador.
+description: representa um sistema operacional baseado em Windows instalado em um computador.
 ms.assetid: eb6a8cff-20a0-4211-b46a-3084e9c39246
 ms.tgt_platform: multiple
 title: Classe Win32_OperatingSystem
@@ -80,16 +80,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 15a6a1bf7bec8c830d1a15ec690b01ec9ea22e48
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a1df0da4cadf0cd610803b2f456f22049471b28bc5653bc400f4c730cb0c47de
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164147"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119972526"
 ---
 # <a name="win32_operatingsystem-class"></a>Classe do sistema \_ operacional Win32
 
-A [classe WMI](../wmisdk/retrieving-a-class.md) de **\_ OperatingSystem do Win32** representa um sistema operacional baseado no Windows instalado em um computador.
+a [classe WMI](../wmisdk/retrieving-a-class.md) de **\_ OperatingSystem do Win32** representa um sistema operacional baseado em Windows instalado em um computador.
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas. As propriedades e os métodos estão em ordem alfabética, não em ordem de MOF.
 
@@ -185,8 +185,8 @@ A classe de sistema **\_ operacional Win32** tem esses métodos.
 |:-------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**Reboot**](reboot-method-in-class-win32-operatingsystem.md)                             | Desliga e reinicia o sistema de computador.<br/>                                                                                                                                                                                                           |
 | [**SetDateTime**](setdatetime-method-in-class-win32-operatingsystem.md)                   | Permite definir a data e a hora do computador.<br/>                                                                                                                                                                                                                |
-| [**Desligar**](shutdown-method-in-class-win32-operatingsystem.md)                         | Descarrega programas e DLLs no ponto em que é seguro desligar o computador.<br/>                                                                                                                                                                           |
-| [**Win32Shutdown**](win32shutdown-method-in-class-win32-operatingsystem.md)               | Fornece o conjunto completo de opções de desligamento com suporte dos sistemas operacionais Windows.<br/>                                                                                                                                                                           |
+| [**Desligamento**](shutdown-method-in-class-win32-operatingsystem.md)                         | Descarrega programas e DLLs no ponto em que é seguro desligar o computador.<br/>                                                                                                                                                                           |
+| [**Win32Shutdown**](win32shutdown-method-in-class-win32-operatingsystem.md)               | fornece o conjunto completo de opções de desligamento com suporte pelos sistemas operacionais Windows.<br/>                                                                                                                                                                           |
 | [**Win32ShutdownTracker**](win32shutdowntracker-method-in-class-win32-operatingsystem.md) | Fornece o mesmo conjunto de opções de desligamento com suporte pelo método [**Win32Shutdown**](win32shutdown-method-in-class-win32-operatingsystem.md) no sistema **\_ operacional Win32**, mas também permite que você especifique comentários, um motivo para o desligamento ou um tempo limite.<br/> |
 
 
@@ -211,7 +211,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("win32api de \| informações de mapa de unidade \_ \_ \| btInt13Unit")
 </dt> </dl>
 
-Nome da unidade de disco da qual o sistema operacional Windows é iniciado.
+nome da unidade de disco da qual o sistema operacional Windows é iniciado.
 
 Exemplo: " \\ \\ Device \\ Harddisk0"
 
@@ -226,7 +226,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("win32api de \| estruturas de informações do sistema \| [**OSVERSIONINFOEX**](/windows/win32/api/winnt/ns-winnt-osversioninfoexa) \| dwBuildNumber")
+qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Informações do Sistema estruturas \| [**OSVERSIONINFOEX**](/windows/win32/api/winnt/ns-winnt-osversioninfoexa) \| dwBuildNumber")
 </dt> </dl>
 
 Número de Build de um sistema operacional. Ele pode ser usado para obter informações de versão mais precisas do que os números de versão de lançamento do produto.
@@ -244,7 +244,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| software \\ \\ Microsoft \\ \\ Windows \\ \\ CurrentVersion \| CurrentType")
+qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| Software \\ \\ Microsoft \\ \\ Windows \\ \\ CurrentVersion \| currenttype")
 </dt> </dl>
 
 Tipo de compilação usado para um sistema operacional.
@@ -265,9 +265,9 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**maxlen**](../wmisdk/standard-qualifiers.md) (64), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Caption")
 </dt> </dl>
 
-Breve descrição do objeto — uma cadeia de caracteres de uma linha. A cadeia de caracteres inclui a versão do sistema operacional. Por exemplo, "Microsoft Windows 7 Enterprise". Essa propriedade pode ser localizada.
+Breve descrição do objeto — uma cadeia de caracteres de uma linha. A cadeia de caracteres inclui a versão do sistema operacional. por exemplo, "Microsoft Windows 7 Enterprise". Essa propriedade pode ser localizada.
 
-**Windows Vista e Windows 7:** Esta propriedade pode conter caracteres à direita. Por exemplo, a cadeia de caracteres "Microsoft Windows 7 Enterprise" (espaço à direita incluído) pode ser necessária para recuperar informações usando essa propriedade.
+**Windows Vista e Windows 7:** Esta propriedade pode conter caracteres à direita. por exemplo, a cadeia de caracteres "Microsoft Windows 7 Enterprise" (espaço à direita incluído) pode ser necessária para recuperar informações usando essa propriedade.
 
 Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
 
@@ -354,7 +354,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("win32api de \| estruturas de informações do sistema \| [**OSVERSIONINFOEX**](/windows/win32/api/winnt/ns-winnt-osversioninfoexa) \| **szCSDVersion**")
+qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Informações do Sistema estruturas \| [**OSVERSIONINFOEX**](/windows/win32/api/winnt/ns-winnt-osversioninfoexa) \| **szCSDVersion**")
 </dt> </dl>
 
 Cadeia de caracteres terminada em **nulo** que indica as Service Pack mais recentes instaladas em um computador. Se nenhum service pack estiver instalado, a cadeia de caracteres será **nula**.
@@ -459,7 +459,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
 </dt> </dl>
 
-Indica qual configuração de DEP (prevenção de execução de dados) é aplicada. A configuração de DEP especifica a extensão à qual a DEP se aplica a aplicativos de 32 bits no sistema. O DEP sempre é aplicado ao kernel do Windows.
+Indica qual configuração de DEP (prevenção de execução de dados) é aplicada. A configuração de DEP especifica a extensão à qual a DEP se aplica a aplicativos de 32 bits no sistema. o DEP sempre é aplicado ao kernel Windows.
 
 <dt>
 
@@ -492,7 +492,7 @@ O DEP está habilitado para todos os aplicativos de 32 bits no computador. Essa 
 
 </dt> <dd>
 
-O DEP é habilitado para um número limitado de binários, o kernel e todos os serviços baseados no Windows. No entanto, ela está desativada por padrão para todos os aplicativos de 32 bits. Um usuário ou administrador deve escolher explicitamente o **Always on** ou a configuração de **recusa** antes que a DEP possa ser aplicada a aplicativos de 32 bits.
+o DEP está habilitado para um número limitado de binários, o kernel e todos os serviços baseados em Windows. No entanto, ela está desativada por padrão para todos os aplicativos de 32 bits. Um usuário ou administrador deve escolher explicitamente o **Always on** ou a configuração de **recusa** antes que a DEP possa ser aplicada a aplicativos de 32 bits.
 
 </dd> <dt>
 
@@ -537,11 +537,11 @@ Tipo de acesso: leitura/gravação
 Qualificadores: [**override**](../wmisdk/standard-qualifiers.md) ("Descrição"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
 </dt> </dl>
 
-Descrição do sistema operacional Windows. Algumas interfaces do usuário, por exemplo, aquelas que permitem a edição dessa descrição, limitam seu comprimento a 48 caracteres.
+descrição do sistema operacional Windows. Algumas interfaces do usuário, por exemplo, aquelas que permitem a edição dessa descrição, limitam seu comprimento a 48 caracteres.
 
 </dd> <dt>
 
-**Fornecido**
+**Distribuído**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **booliano**
@@ -672,7 +672,7 @@ Tipo de dados: **UInt64**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. \|Configurações de memória do sistema DMTF \| 1,4 "), [**unidades**](../wmisdk/standard-qualifiers.md) (" quilobytes ")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. \|memória do sistema DMTF Configurações \| 1,4 "), [**unidades**](../wmisdk/standard-qualifiers.md) (" kilobytes ")
 </dt> </dl>
 
 Número, em kilobytes, que pode ser mapeado para os arquivos de paginação do sistema operacional sem fazer com que nenhuma outra página seja trocada.
@@ -822,7 +822,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
 </dt> </dl>
 
-Nome do fabricante do sistema operacional. Para sistemas baseados no Windows, esse valor é "Microsoft Corporation".
+Nome do fabricante do sistema operacional. para sistemas baseados em Windows, esse valor é "Microsoft Corporation".
 
 </dd> <dt>
 
@@ -876,7 +876,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
 </dt> </dl>
 
-Idiomas Multilingual User Interface Pack (MUI Pack) instalados no computador. Por exemplo, "en-US". Os idiomas MUI Pack são arquivos de recursos que podem ser instalados na versão em inglês do sistema operacional. Quando um MUI Pack é instalado, você pode alterar o idioma da interface do usuário para um dos idiomas com suporte 33.
+Interface de Usuário Multilíngue Idiomas do pacote (MUI Pack) instalados no computador. Por exemplo, "en-US". Os idiomas MUI Pack são arquivos de recursos que podem ser instalados na versão em inglês do sistema operacional. Quando um MUI Pack é instalado, você pode alterar o idioma da interface do usuário para um dos idiomas com suporte 33.
 
 </dd> <dt>
 
@@ -982,7 +982,7 @@ Indefinido
 
 </dt> <dd>
 
-Ultimate Edition, por exemplo, Windows Vista Ultimate.
+ultimate Edition, por exemplo, Windows Vista Ultimate.
 
 </dd> <dt>
 
@@ -1037,7 +1037,7 @@ Business Edition
 
 </dt> <dd>
 
-Windows Server Standard Edition (instalação da experiência desktop)
+Windows Edição Standard do servidor (instalação da experiência Desktop)
 
 </dd> <dt>
 
@@ -1070,7 +1070,7 @@ Edição do Small Business Server
 
 </dt> <dd>
 
-Enterprise Server Edition
+Enterprise Edição do servidor
 
 </dd> <dt>
 
@@ -1147,7 +1147,7 @@ Home Server Edition
 
 </dt> <dd>
 
-Storage Express Server Edition
+Armazenamento Express Server Edition
 
 </dd> <dt>
 
@@ -1158,7 +1158,7 @@ Storage Express Server Edition
 
 </dt> <dd>
 
-Windows Storage Server Standard Edition (instalação da experiência desktop)
+Windows Armazenamento Server Edição Standard (instalação da experiência Desktop)
 
 </dd> <dt>
 
@@ -1169,7 +1169,7 @@ Windows Storage Server Standard Edition (instalação da experiência desktop)
 
 </dt> <dd>
 
-Windows Storage Server Workgroup Edition (instalação da experiência desktop)
+Windows Armazenamento Server workgroup Edition (instalação da experiência Desktop)
 
 </dd> <dt>
 
@@ -1213,7 +1213,7 @@ Small Business Server Premium Edition
 
 </dt> <dd>
 
-Windows Enterprise Edition
+Windows Edição Enterprise
 
 </dd> <dt>
 
@@ -1246,7 +1246,7 @@ Windows Server Web Server Edition (instalação Server Core)
 
 </dt> <dd>
 
-Windows Server Standard Edition sem Hyper-V
+Windows Edição Standard do servidor sem Hyper-V
 
 </dd> <dt>
 
@@ -1268,7 +1268,7 @@ Windows Server Datacenter Edition sem Hyper-V (instalação completa)
 
 </dt> <dd>
 
-Windows Server Enterprise Edition sem Hyper-V (instalação completa)
+Windows Edição Enterprise do servidor sem Hyper-V (instalação completa)
 
 </dd> <dt>
 
@@ -1279,7 +1279,7 @@ Windows Server Enterprise Edition sem Hyper-V (instalação completa)
 
 </dt> <dd>
 
-Windows Server Datacenter Edition sem Hyper-V (instalação do Server Core)
+Windows Server Datacenter Edition sem Hyper-V (instalação Server Core)
 
 </dd> <dt>
 
@@ -1290,7 +1290,7 @@ Windows Server Datacenter Edition sem Hyper-V (instalação do Server Core)
 
 </dt> <dd>
 
-Windows Server Standard Edition sem Hyper-V (instalação Server Core)
+Windows Edição Standard do servidor sem Hyper-V (instalação do server Core)
 
 </dd> <dt>
 
@@ -1301,7 +1301,7 @@ Windows Server Standard Edition sem Hyper-V (instalação Server Core)
 
 </dt> <dd>
 
-Windows Server Enterprise Edition sem Hyper-V (instalação Server Core)
+Windows Edição Enterprise do servidor sem Hyper-V (instalação do server Core)
 
 </dd> <dt>
 
@@ -1323,7 +1323,7 @@ Microsoft Hyper-V Server
 
 </dt> <dd>
 
-Storage Server Express Edition (instalação Server Core)
+Armazenamento Server Express Edition (instalação Server Core)
 
 </dd> <dt>
 
@@ -1334,7 +1334,7 @@ Storage Server Express Edition (instalação Server Core)
 
 </dt> <dd>
 
-Storage Server Standard Edition (instalação Server Core)
+Armazenamento Edição Standard do servidor (instalação do server Core)
 
 </dd> <dt>
 
@@ -1345,7 +1345,7 @@ Storage Server Standard Edition (instalação Server Core)
 
 </dt> <dd>
 
-Storage Server Workgroup Edition (instalação Server Core)
+Armazenamento Server Workgroup Edition (instalação Server Core)
 
 </dd> <dt>
 
@@ -1356,7 +1356,7 @@ Storage Server Workgroup Edition (instalação Server Core)
 
 </dt> <dd>
 
-Storage Server Workgroup Edition (instalação Server Core)
+Armazenamento Server Workgroup Edition (instalação Server Core)
 
 </dd> <dt>
 
@@ -1389,7 +1389,7 @@ Windows Server Essentials (instalação da experiência desktop)
 
 </dt> <dd>
 
-Small Business Server Premium (instalação do Server Core)
+Small Business Server Premium (instalação do server Core)
 
 </dd> <dt>
 
@@ -1400,7 +1400,7 @@ Small Business Server Premium (instalação do Server Core)
 
 </dt> <dd>
 
-Windows Compute Cluster Server sem Hyper-V
+Windows Servidor de cluster de computação sem Hyper-V
 
 </dd> <dt>
 
@@ -1422,7 +1422,7 @@ Windows RT
 
 </dt> <dd>
 
-Página inicial do Windows
+Windows Casa
 
 </dd> <dt>
 
@@ -1433,7 +1433,7 @@ Página inicial do Windows
 
 </dt> <dd>
 
-Windows Professional com Media Center
+Windows Professional com o Media Center
 
 </dd> <dt>
 
@@ -1455,7 +1455,7 @@ Windows Mobile
 
 </dt> <dd>
 
-Windows IoT (Internet das Coisas) Core
+Windows Básico de IoT (Internet das Coisas)
 
 </dd> <dt>
 
@@ -1477,7 +1477,7 @@ Windows Server Datacenter Edition (instalação do nano Server)
 
 </dt> <dd>
 
-Windows Server Standard Edition (instalação do nano Server)
+Windows Edição Standard do servidor (instalação do Nano Server)
 
 </dd> <dt>
 
@@ -1499,7 +1499,7 @@ Windows Server Datacenter Edition (instalação Server Core)
 
 </dt> <dd>
 
-Windows Server Standard Edition (instalação Server Core)
+Windows Edição Standard do servidor (instalação do server Core)
 
 </dd> </dl>
 
@@ -1514,7 +1514,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| software \\ \\ Microsoft \\ \\ Windows \\ \\ CurrentVersion \| RegisteredOrganization")
+qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| Software \\ \\ Microsoft \\ \\ Windows \\ \\ CurrentVersion \| RegisteredOrganization")
 </dt> </dl>
 
 Nome da empresa para o usuário registrado do sistema operacional.
@@ -2187,14 +2187,14 @@ Espanhol – Costa Rica
 5132 (0x140C)
 </dt> <dd>
 
-Francês – Luxemburgo
+Francês – País
 
 </dd> <dt>
 
 6145 (0x1801)
 </dt> <dd>
 
-Árabe – Marrocos
+Árabe – Arabico
 
 </dd> <dt>
 
@@ -2208,14 +2208,14 @@ Inglês – Irlanda
 6154 (0x180A)
 </dt> <dd>
 
-Espanhol – Panamá
+Espanhol – Espanha
 
 </dd> <dt>
 
 7169 (0x1C01)
 </dt> <dd>
 
-Árabe – Tunísia
+Árabe – Árabe
 
 </dd> <dt>
 
@@ -2229,77 +2229,77 @@ Inglês – África do Sul
 7178 (0x1C0A)
 </dt> <dd>
 
-Espanhol – República Dominicana
+Espanhol – República Republica
 
 </dd> <dt>
 
 8193 (0x2001)
 </dt> <dd>
 
-Árabe – Omã
+Árabe – Omão
 
 </dd> <dt>
 
 8201 (0x2009)
 </dt> <dd>
 
-Inglês – Jamaica
+Inglês – English – English
 
 </dd> <dt>
 
 8202 (0x200A)
 </dt> <dd>
 
-Espanhol – Venezuela
+Espanhol – Espanha
 
 </dd> <dt>
 
 9217 (0x2401)
 </dt> <dd>
 
-Árabe – Iêmen
+Árabe – Árabe
 
 </dd> <dt>
 
 9226 (0x240A)
 </dt> <dd>
 
-Espanhol – Colômbia
+Espanhol – Espanha
 
 </dd> <dt>
 
 10241 (0x2801)
 </dt> <dd>
 
-Árabe – Síria
+Árabe – Árabe
 
 </dd> <dt>
 
 10249 (0x2809)
 </dt> <dd>
 
-Inglês – Belize
+Inglês – Ltda
 
 </dd> <dt>
 
 10250 (0x280A)
 </dt> <dd>
 
-Espanhol – Peru
+Espanhol – Espanhol
 
 </dd> <dt>
 
 11265 (0x2C01)
 </dt> <dd>
 
-Árabe – Jordânia
+Árabe – Árabe
 
 </dd> <dt>
 
 11273 (0x2C09)
 </dt> <dd>
 
-Inglês – Trinidad
+Inglês – Inglaterra
 
 </dd> <dt>
 
@@ -2313,7 +2313,7 @@ Espanhol – Argentina
 12289 (0x3001)
 </dt> <dd>
 
-Árabe – Líbano
+Árabe – Árabe
 
 </dd> <dt>
 
@@ -2327,77 +2327,77 @@ Espanhol – Equador
 13313 (0x3401)
 </dt> <dd>
 
-Árabe – Kuwait
+Árabe – Árabe
 
 </dd> <dt>
 
 13322 (0x340A)
 </dt> <dd>
 
-Espanhol – Chile
+Espanhol – México
 
 </dd> <dt>
 
 14337 (0x3801)
 </dt> <dd>
 
-Árabe – E.A.U.
+Árabe – EUA
 
 </dd> <dt>
 
 14346 (0x380A)
 </dt> <dd>
 
-Espanhol – Uruguai
+Espanhol – Espanhol
 
 </dd> <dt>
 
 15361 (0x3C01)
 </dt> <dd>
 
-Árabe – Bahrein
+Árabe – Barelão
 
 </dd> <dt>
 
 15370 (0x3C0A)
 </dt> <dd>
 
-Espanhol – Paraguai
+Espanhol – País
 
 </dd> <dt>
 
 16385 (0x4001)
 </dt> <dd>
 
-Árabe – Catar
+Árabe – Árabe
 
 </dd> <dt>
 
 16394 (0x400A)
 </dt> <dd>
 
-Espanhol – Bolívia
+Espanhol – País
 
 </dd> <dt>
 
 17418 (0x440A)
 </dt> <dd>
 
-Espanhol – El Salvador
+Espanhol – El Sempre
 
 </dd> <dt>
 
 18442 (0x480A)
 </dt> <dd>
 
-Espanhol – Honduras
+Espanhol – Ltda
 
 </dd> <dt>
 
 19466 (0x4C0A)
 </dt> <dd>
 
-Espanhol – Nicarágua
+Espanhol – País
 
 </dd> <dt>
 
@@ -2413,51 +2413,51 @@ Espanhol – Porto Rico
 **OSProductSuite**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry do \| sistema \\ \\ CurrentControlSet \\ \\ controloptions do \\ \\ \| ProductSuite"), [**bitvalues**](../wmisdk/standard-qualifiers.md) ("pequenas empresas", "Enterprise", "backoffice", "servidor de comunicação", "Terminal Server", "pequenas empresas (restritos)", "NT embutido", "Data Center")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control \\ \\ \| ProductOptions ProductSuite"), [**BitValues**](../wmisdk/standard-qualifiers.md) ("Small Business", "Enterprise", "BackOffice", "Communication Server", "Terminal Server", "Small Business(Restricted)", "Embedded NT", "Data Center")
 </dt> </dl>
 
-Inclusões de produto do sistema instaladas e licenciadas para o sistema operacional. Por exemplo, o valor de 146 (0x92) para **OSProductSuite** indica Enterprise, serviços de terminal e Data Center (bits um, quatro e sete conjuntos). A lista a seguir lista os possíveis valores.
+Adições de produtos do sistema instalados e licenciados ao sistema operacional. Por exemplo, o valor de 146 (0x92) para **OSProductSuite** indica Enterprise, Serviços de Terminal e Data Center (bits um, quatro e sete conjunto). A lista a seguir lista os valores possíveis.
 
 <dt>
 
 1 (0x1)
 </dt> <dd>
 
-O Microsoft Small Business Server já foi instalado, mas pode ter sido atualizado para outra versão do Windows.
+O Microsoft Small Business Server foi instalado uma vez, mas pode ter sido atualizado para outra versão do Windows.
 
 </dd> <dt>
 
 2 (0x2)
 </dt> <dd>
 
-O Windows Server 2008 Enterprise está instalado.
+Windows O servidor 2008 Enterprise está instalado.
 
 </dd> <dt>
 
 4 (0x4)
 </dt> <dd>
 
-Os componentes do Windows backoffice estão instalados.
+Windows Os componentes do BackOffice são instalados.
 
 </dd> <dt>
 
 8 (0x8)
 </dt> <dd>
 
-O servidor de comunicação está instalado.
+O Servidor de Comunicação está instalado.
 
 </dd> <dt>
 
 16 (0x10)
 </dt> <dd>
 
-Os serviços de terminal estão instalados.
+Os Serviços de Terminal estão instalados.
 
 </dd> <dt>
 
@@ -2471,42 +2471,42 @@ O Microsoft Small Business Server é instalado com a licença de cliente restrit
 64 (0x40)
 </dt> <dd>
 
-O Windows Embedded está instalado.
+Windows Embedded está instalado.
 
 </dd> <dt>
 
 128 (0x80)
 </dt> <dd>
 
-Uma edição do datacenter está instalada.
+Uma edição do Datacenter está instalada.
 
 </dd> <dt>
 
 256 (0x100)
 </dt> <dd>
 
-Os serviços de terminal estão instalados, mas há suporte para apenas uma sessão interativa.
+Os Serviços de Terminal estão instalados, mas há suporte para apenas uma sessão interativa.
 
 </dd> <dt>
 
 512 (0x200)
 </dt> <dd>
 
-O Windows Home Edition está instalado.
+Windows A Home Edition está instalada.
 
 </dd> <dt>
 
 1024 (0x400)
 </dt> <dd>
 
-A edição do servidor Web está instalada.
+O Web Server Edition está instalado.
 
 </dd> <dt>
 
 8192 (0x2000)
 </dt> <dd>
 
-O Storage Server Edition está instalado.
+Armazenamento O Server Edition está instalado.
 
 </dd> <dt>
 
@@ -2711,7 +2711,7 @@ MACROS
 
 <span id="Reliant_UNIX"></span><span id="reliant_unix"></span><span id="RELIANT_UNIX"></span>
 
-<span id="Reliant_UNIX"></span><span id="reliant_unix"></span><span id="RELIANT_UNIX"></span>**Unix dependente** (24)
+<span id="Reliant_UNIX"></span><span id="reliant_unix"></span><span id="RELIANT_UNIX"></span>**UNIX dependentes** (24)
 
 
 </dt> <dd></dd> <dt>
@@ -2827,7 +2827,7 @@ Solaris
 
 <span id="Interactive_UNIX"></span><span id="interactive_unix"></span><span id="INTERACTIVE_UNIX"></span>
 
-<span id="Interactive_UNIX"></span><span id="interactive_unix"></span><span id="INTERACTIVE_UNIX"></span>**Unix interativo** (40)
+<span id="Interactive_UNIX"></span><span id="interactive_unix"></span><span id="INTERACTIVE_UNIX"></span>**UNIX interativos** (40)
 
 
 </dt> <dd></dd> <dt>
@@ -3028,10 +3028,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| software WIN32REGISTRY \\ \\ Microsoft \\ \\ Windows NT \\ \\ CurrentVersion \| Plus! ProductId ")
+qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| Software \\ \\ Microsoft \\ \\ Windows NT \\ \\ CurrentVersion \| plus! ProductId ")
 </dt> </dl>
 
-Não há suporte.
+Sem suporte.
 
 </dd> <dt>
 
@@ -3044,32 +3044,32 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| software WIN32REGISTRY \\ \\ Microsoft \\ \\ Windows NT \\ \\ CurrentVersion \| Plus! VersionNumber ")
+qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| Software \\ \\ Microsoft \\ \\ Windows NT \\ \\ CurrentVersion \| plus! VersionNumber ")
 </dt> </dl>
 
-Não há suporte.
+Sem suporte.
 
 </dd> <dt>
 
 **PortableOperatingSystem**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Especifica se o sistema operacional foi inicializado a partir de um dispositivo USB externo. Se for true, o sistema operacional detectou que está inicializando em um dispositivo de armazenamento conectado localmente com suporte.
+Especifica se o sistema operacional foi inicializado de um dispositivo USB externo. Se true, o sistema operacional detectou que está inicializando em um dispositivo de armazenamento conectado localmente com suporte.
 
-**Windows server 2008 R2, Windows 7, Windows server 2008 e Windows Vista:** Não há suporte para essa propriedade antes do Windows 8 e do Windows Server 2012.
+**Windows Server 2008 R2, Windows 7, Windows Server 2008 e Windows Vista:** Essa propriedade não é suportada antes Windows 8 e Windows Server 2012.
 
 </dd> <dt>
 
 **Primário**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -3085,7 +3085,7 @@ Especifica se este é o sistema operacional primário.
 **ProductType**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -3124,17 +3124,17 @@ Informações adicionais do sistema.
 Tipo de dados: **uint8**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry do \| sistema \\ \\ CurrentControlSet \\ \\ Control \\ \\ PriorityControl \| Win32PrioritySeparation")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control \\ \\ PriorityControl \| Win32PrioritySeparation")
 </dt> </dl>
 
 Sem suporte
 
-* * Windows Server 2008 e Windows Vista: * *
+**Windows Server 2008 e Windows Vista: **
 
-A propriedade **QuantumLength** define o número de tiques de relógio por Quantum. Um Quantum é uma unidade de tempo de execução que o Agendador tem permissão para fornecer a um aplicativo antes de alternar para outros aplicativos. Quando um thread executa um Quantum, o kernel o captura e o move para o final de uma fila para aplicativos com prioridades iguais. O comprimento real do quantum de um thread varia em diferentes plataformas do Windows. Somente para Windows NT/Windows 2000.
+A **propriedade QuantumLength** define o número de tiques de relógio por quantum. Um quantum é uma unidade de tempo de execução que o agendador tem permissão para dar a um aplicativo antes de alternar para outros aplicativos. Quando um thread executa um quantum, o kernel o preempção e o move para o final de uma fila para aplicativos com prioridades iguais. O comprimento real do quantum de um thread varia entre diferentes Windows plataformas. Somente Windows NT/Windows 2000.
 
 Os valores possíveis são.
 
@@ -3149,34 +3149,34 @@ Os valores possíveis são.
 
 <span id="One_tick"></span><span id="one_tick"></span><span id="ONE_TICK"></span>
 
-**Uma marca** (1)
+**Um tique** (1)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Two_ticks"></span><span id="two_ticks"></span><span id="TWO_TICKS"></span>
 
-**Duas tiques** (2)
+**Dois tiques** (2)
 
 
 </dt> <dd></dd> </dl>
 
 </dd> <dt>
 
-**Quantumtype**
+**QuantumType**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **uint8**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 Sem suporte
 
-* * Windows Server 2008 e Windows Vista: * *
+**Windows Server 2008 e Windows Vista: **
 
-A propriedade **quantumtype** especifica uma Quantum de comprimento fixo ou variável. O padrão do Windows é a Quantum de comprimento variável em que o aplicativo em primeiro plano tem uma Quantum mais longa do que os aplicativos em segundo plano. O padrão do Windows Server é a Quantum de comprimento fixo. Um Quantum é uma unidade de tempo de execução que o Agendador tem permissão para fornecer a um aplicativo antes de alternar para outro aplicativo. Quando um thread executa um Quantum, o kernel o captura e o move para o final de uma fila para aplicativos com prioridades iguais. O comprimento real do quantum de um thread varia em diferentes plataformas do Windows.
+A **propriedade QuantumType** especifica quantums de comprimento fixo ou variável. Windows padrão para quantums de comprimento variável em que o aplicativo de primeiro plano tem um quantum mais longo do que os aplicativos em segundo plano. Windows O padrão do servidor é quantums de comprimento fixo. Um quantum é uma unidade de tempo de execução que o agendador tem permissão para dar a um aplicativo antes de alternar para outro aplicativo. Quando um thread executa um quantum, o kernel o preempção e o move para o final de uma fila para aplicativos com prioridades iguais. O comprimento real do quantum de um thread varia entre diferentes Windows plataformas.
 
 Os valores possíveis são.
 
@@ -3191,7 +3191,7 @@ Os valores possíveis são.
 
 <span id="Fixed"></span><span id="fixed"></span><span id="FIXED"></span>
 
-**Fixo** (1)
+**Corrigido** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -3214,7 +3214,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| software \\ \\ Microsoft \\ \\ Windows NT \\ \\ CurrentVersion \| RegisteredOwner")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| Software Microsoft Windows NT \\ \\ \\ \\ \\ \\ CurrentVersion \| RegisteredOwner")
 </dt> </dl>
 
 Nome do usuário registrado do sistema operacional.
@@ -3223,7 +3223,7 @@ Exemplo: "Ben Smith"
 
 </dd> <dt>
 
-**SerialNumber**
+**Serialnumber**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -3232,10 +3232,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| software \\ \\ Microsoft \\ \\ Windows NT \\ \\ CurrentVersion \| ProductID")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| Software Microsoft Windows NT \\ \\ \\ \\ \\ \\ CurrentVersion \| ProductId")
 </dt> </dl>
 
-Número de identificação de série do produto do sistema operacional.
+Número de identificação serial do produto do sistema operacional.
 
 Exemplo: "10497-OEM-0031416-71674"
 
@@ -3244,13 +3244,13 @@ Exemplo: "10497-OEM-0031416-71674"
 **ServicePackMajorVersion**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("win32api de \| estruturas de informações do sistema \| [**OSVERSIONINFOEX**](/windows/win32/api/winnt/ns-winnt-osversioninfoexa) \| **wServicePackMajor**")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Informações do Sistema estruturas \| [**OSVERSIONINFOEX**](/windows/win32/api/winnt/ns-winnt-osversioninfoexa) \| **wServicePackMajor**")
 </dt> </dl>
 
 Número de versão principal do service pack instalado no sistema de computador. Se nenhum service pack tiver sido instalado, o valor será 0 (zero).
@@ -3260,13 +3260,13 @@ Número de versão principal do service pack instalado no sistema de computador.
 **ServicePackMinorVersion**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("win32api de \| estruturas de informações do sistema \| [**OSVERSIONINFOEX**](/windows/win32/api/winnt/ns-winnt-osversioninfoexa) \| **wServicePackMinor**")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Informações do Sistema estruturas \| [**OSVERSIONINFOEX**](/windows/win32/api/winnt/ns-winnt-osversioninfoexa) \| **wServicePackMinor**")
 </dt> </dl>
 
 Número de versão secundária do service pack instalado no sistema de computador. Se nenhum service pack tiver sido instalado, o valor será 0 (zero).
@@ -3276,20 +3276,20 @@ Número de versão secundária do service pack instalado no sistema de computado
 **SizeStoredInPagingFiles**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. \|Configurações de memória do sistema DMTF \| 1,3 "), [**unidades**](../wmisdk/standard-qualifiers.md) (" quilobytes ")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. Memória do sistema DMTF \| Configurações \| 001.3"), [**Unidades**](../wmisdk/standard-qualifiers.md) ("quilobytes")
 </dt> </dl>
 
-O número total de quilobytes que podem ser armazenados nos arquivos de paginação do sistema operacional – 0 (zero) indica que não há arquivos de paginação. Lembre-se de que esse número não representa o tamanho físico real do arquivo de paginação no disco.
+Número total de quilobytes que podem ser armazenados nos arquivos de paging do sistema operacional — 0 (zero) indica que não há arquivos de paging. Esteja ciente de que esse número não representa o tamanho físico real do arquivo de paging no disco.
 
-Para obter mais informações sobre como usar valores de **UInt64** em scripts, consulte [scripts no WMI](/previous-versions//aa393262(v=vs.85)).
+Para obter mais informações sobre como **usar valores uint64** em scripts, consulte [Scripts no WMI](/previous-versions//aa393262(v=vs.85)).
 
-Essa propriedade é herdada de sistema [**\_ operacional CIM**](cim-operatingsystem.md).
+Essa propriedade é herdada de [**CIM \_ OperatingSystem**](cim-operatingsystem.md).
 
 </dd> <dt>
 
@@ -3302,12 +3302,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](../wmisdk/standard-qualifiers.md) (10), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("status")
+Qualificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Status")
 </dt> </dl>
 
-Status atual do objeto. Vários status de operação e não operacional podem ser definidos. Os status operacionais incluem: "OK", "degradado" e "Pred falha" (um elemento, como uma unidade de disco rígido habilitada para inteligente, pode funcionar corretamente, mas prevê uma falha em um futuro próximo). Os status não operacionais incluem: "erro", "Iniciando", "parando" e "serviço". O status do serviço se aplica ao trabalho administrativo, como espelhamento de espelho de um disco, recarregamento de uma lista de permissões de usuário ou outro trabalho administrativo. Nem todo esse trabalho está online, mas o elemento gerenciado não é "OK" nem em um dos outros Estados.
+Status atual do objeto. Vários status operacionais e não operacionais podem ser definidos. Os status operacionais incluem: "OK", "Degradado" e "Pred Fail" (um elemento, como uma unidade de disco rígido habilitada para SMART, pode funcionar corretamente, mas prevê uma falha em um futuro próximo). Os status nãooperacionais incluem: "Error", "Starting", "Stopping" e "Service". O Status do serviço se aplica ao trabalho administrativo, como espelhamento de um disco, recarregamento de uma lista de permissões de usuário ou outro trabalho administrativo. Nem todo esse trabalho está online, mas o elemento gerenciado não é "OK" nem em um dos outros estados.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 <dt>
 
@@ -3320,28 +3320,28 @@ Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsyst
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Erro** ("erro")
+**Erro** ("Erro")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-**Degradado** ("degradado")
+**Degradado** ("Degradado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconhecido** ("desconhecido")
+**Desconhecido** ("Desconhecido")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Falha de Pred** ("Pred Fail")
+**Pred Fail** ("Pred Fail")
 
 
 </dt> <dd></dd> <dt>
@@ -3355,21 +3355,21 @@ Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsyst
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Parando** ("parando")
+**Parando** ("Parando")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Service"></span><span id="service"></span><span id="SERVICE"></span>
 
-**Serviço** ("serviço")
+**Serviço** ("Serviço")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>
 
-**Sob estresse** ("sob estresse")
+**Stressed** ("Stressed")
 
 
 </dt> <dd></dd> <dt>
@@ -3406,7 +3406,7 @@ Tipo de dados: **UInt32**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**bitmap**](../wmisdk/standard-qualifiers.md) ("0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"), [**bitvalues**](../wmisdk/standard-qualifiers.md) ("Windows Server, Small Business Edition", "Windows Server, Enterprise Edition", "Windows Server, backoffice Edition", "Windows Server, Communications Edition", "serviços de terminal da Microsoft", "Windows Server, Small Business Edition restrito", "Windows Embedded", "Windows Server, Datacenter Edition", "usuário único", "Windows Home Edition", "Windows Server, Web Edition")
+qualificadores: [**BitMap**](../wmisdk/standard-qualifiers.md) ("0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"), [**bitvalues**](../wmisdk/standard-qualifiers.md) ("Windows Server, Small Business Edition", "Windows server, Edição Enterprise", "Windows server, backoffice Edition", "Windows server, communications edition", "Microsoft Terminal Services", "Windows server, Small Business Edition Restricted", "Windows Embedded", "Windows server, datacenter edition", "Single User", "Windows Home Edition", "Windows server, Web Edition")
 </dt> </dl>
 
 Sinalizadores de bits que identificam os pacotes de produtos disponíveis no sistema.
@@ -3519,7 +3519,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| funções de informações do sistema win32api [**GetSystemDirectory**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getsystemdirectorya))
+qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Informações do Sistema funções [**GetSystemDirectory**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getsystemdirectorya))
 </dt> </dl>
 
 Diretório do sistema operacional.
@@ -3553,7 +3553,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**unidades**](../wmisdk/standard-qualifiers.md) ("quilobytes")
 </dt> </dl>
 
-Espaço total de permuta em quilobytes. Esse valor pode ser **NULL** (não especificado) se o espaço de permuta não for diferenciado dos arquivos de paginação. No entanto, alguns sistemas operacionais distinguem esses conceitos. Por exemplo, no UNIX, processos inteiros podem ser trocados quando a lista de páginas gratuita cai e permanece abaixo de uma quantidade especificada.
+Espaço total de permuta em quilobytes. Esse valor pode ser **NULL** (não especificado) se o espaço de permuta não for diferenciado dos arquivos de paginação. No entanto, alguns sistemas operacionais distinguem esses conceitos. por exemplo, no UNIX, processos inteiros podem ser trocados quando a lista de páginas gratuita cai e permanece abaixo de uma quantidade especificada.
 
 Para obter mais informações sobre como usar valores de **UInt64** em scripts, consulte [scripts no WMI](/previous-versions//aa393262(v=vs.85)).
 
@@ -3610,7 +3610,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**substituir**](../wmisdk/standard-qualifiers.md) ("Version"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("win32api de \| estruturas de informações do sistema \| [**OSVERSIONINFOEX**](/windows/win32/api/winnt/ns-winnt-osversioninfoexa) \| dwMajorVersion, dwMinorVersion")
+qualificadores: [**Override**](../wmisdk/standard-qualifiers.md) ("Version"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Informações do Sistema estruturas \| [**OSVERSIONINFOEX**](/windows/win32/api/winnt/ns-winnt-osversioninfoexa) \| dwMajorVersion, dwMinorVersion")
 </dt> </dl>
 
 Número de versão do sistema operacional.
@@ -3628,10 +3628,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("win32api \| funções de informações do sistema \| [**GetWindowsDirectory**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getwindowsdirectorya)")
+qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Informações do Sistema functions \| [**GetWindowsDirectory**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getwindowsdirectorya)")
 </dt> </dl>
 
-Diretório do Windows do sistema operacional.
+Windows diretório do sistema operacional.
 
 Exemplo: "C: \\ Windows"
 
@@ -3641,7 +3641,7 @@ Exemplo: "C: \\ Windows"
 
 A classe de sistema **\_ operacional Win32** é derivada do [**CIM \_ OperatingSystem**](cim-operatingsystem.md).
 
-Qualquer sistema operacional que pode ser instalado em um computador que possa executar um sistema operacional baseado no Windows é um descendente ou membro dessa classe. **Win32 \_ O OperatingSystem** é uma classe singleton. Para obter a instância única, use "@" para a chave.
+qualquer sistema operacional que pode ser instalado em um computador que possa executar um sistema operacional baseado em Windows é um descendente ou membro dessa classe. **Win32 \_ O OperatingSystem** é uma classe singleton. Para obter a instância única, use "@" para a chave.
 
 Ao contrário da maioria das outras classes WMI geradas pelo MgmtClassGen, o método **OperatingSystem. CreateInstance**() retornará um objeto **OperatingSystem** em branco. Portanto, se você estiver usando C \# com MgmtClassGen, poderá usar o seguinte código:
 
@@ -3656,7 +3656,7 @@ WMI.OperatingSystem os = new ROOT.CIMV2.win32.OperatingSystem();
 
 Você pode encontrar um exemplo de VBScript que obtém os dados do sistema operacional e do processador do [**Win32 \_ ComputerSystem**](win32-computersystem.md), do [**\_ processador Win32**](win32-processor.md)e do **\_ OperatingSystem do Win32** nos exemplos de tópico do [**\_ processador Win32**](win32-processor.md) .
 
-A amostra [gerar relatórios do ambiente do Exchange usando](https://Gallery.TechNet.Microsoft.Com/scriptcenter/Generate-Exchange-2388e7c9) o PowerShell PowerShell na galeria do TechNet usa uma classe do sistema **\_ operacional Win32** como parte de um aplicativo maior para gerar relatórios de ambiente do Exchange.
+o exemplo de [gerar relatórios de ambiente de Exchange usando](https://Gallery.TechNet.Microsoft.Com/scriptcenter/Generate-Exchange-2388e7c9) powershell powershell na galeria do TechNet usa uma classe de sistema **\_ operacional Win32** como parte de um aplicativo maior para gerar relatórios de ambiente do Exchange.
 
 A amostra [obter tempo de atividade do servidor usando WMI](https://Gallery.TechNet.Microsoft.Com/Get-Server-Uptime-Using-WMI-15aaa8ac) na galeria do TechNet usa a propriedade **LastBootupTime** para determinar quanto tempo o servidor esteve ativo. O exemplo também usa a opção Timeout para garantir que a chamada WMI não pare.
 
@@ -3707,8 +3707,8 @@ $os | Format-List *
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -3717,19 +3717,19 @@ $os | Format-List *
 
 <dl> <dt>
 
-[**Sistema \_ operacional CIM**](cim-operatingsystem.md)
+[**Sistema operacional CIM \_**](cim-operatingsystem.md)
 </dt> <dt>
 
 [Classes do sistema operacional](./operating-system-classes.md)
 </dt> <dt>
 
-[Tarefas do WMI: sistemas operacionais](../wmisdk/wmi-tasks--operating-systems.md)
+[Tarefas WMI: sistemas operacionais](../wmisdk/wmi-tasks--operating-systems.md)
 </dt> <dt>
 
-[Tarefas do WMI: hardware do computador](../wmisdk/wmi-tasks--computer-hardware.md)
+[Tarefas WMI: Hardware do Computador](../wmisdk/wmi-tasks--computer-hardware.md)
 </dt> <dt>
 
-[Tarefas do WMI: gerenciamento de desktop](../wmisdk/wmi-tasks--desktop-management.md)
+[Tarefas WMI: Gerenciamento de Área de Trabalho](../wmisdk/wmi-tasks--desktop-management.md)
 </dt> </dl>
 
  

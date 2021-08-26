@@ -1,7 +1,7 @@
 ---
-description: 'O método QueryId recupera o identificador do PIN. Esse método substitui o método CBasePin:: QueryId.'
+description: O método QueryId recupera o identificador de pino. Esse método substitui o método CBasePin::QueryId.
 ms.assetid: 9543234c-5349-49d0-b410-1c461ee4eabe
-title: Método CRendererInputPin. QueryId (Renbase. h)
+title: Método CRendererInputPin.QueryId (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b56ae2a846b4d89da4c6a9d4c8f88bd3094c5cff
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 732bf7aa6d0d247c93c0334db48b86bccd2ac15715dd2da9a4d60a0d315966bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749242"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120054567"
 ---
-# <a name="crendererinputpinqueryid-method"></a>Método CRendererInputPin. QueryId
+# <a name="crendererinputpinqueryid-method"></a>Método CRendererInputPin.QueryId
 
-O `QueryId` método recupera o identificador do PIN. Esse método substitui o método [**CBasePin:: QueryId**](cbasepin-queryid.md) .
+O `QueryId` método recupera o identificador de pino. Esse método substitui o [**método CBasePin::QueryId.**](cbasepin-queryid.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,21 +45,21 @@ HRESULT QueryId(
 *Id* 
 </dt> <dd>
 
-Recebe uma cadeia de caracteres que contém o identificador do PIN.
+Recebe uma cadeia de caracteres que contém o identificador de pino.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um dos valores **HRESULT** mostrados na tabela a seguir.
+Retorna um dos **valores HRESULT** mostrados na tabela a seguir.
 
 
 
 | Código de retorno                                                                                   | Descrição                          |
 |-----------------------------------------------------------------------------------------------|--------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>          | Sucesso<br/>                   |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Êxito<br/>                   |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memória insuficiente<br/>       |
-| <dl> <dt>**\_ponteiro E**</dt> </dl>     | Argumento de ponteiro **nulo**<br/> |
+| <dl> <dt>**PONTEIRO \_ E**</dt> </dl>     | **Argumento de** ponteiro NULL<br/> |
 
 
 
@@ -67,7 +67,7 @@ Retorna um dos valores **HRESULT** mostrados na tabela a seguir.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método aloca a cadeia de caracteres largos "em" e a atribui ao parâmetro *ID* . O chamador deve liberar a memória alocada, usando a função **CoTaskMemFree** .
+Esse método aloca a cadeia de caracteres largos "In" e a atribui ao *parâmetro Id.* O chamador deve liberar a memória alocada usando a **função CoTaskMemFree.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,8 +75,8 @@ Esse método aloca a cadeia de caracteres largos "em" e a atribui ao parâmetro 
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Renbase. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Renbase.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

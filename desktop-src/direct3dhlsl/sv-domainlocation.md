@@ -1,6 +1,6 @@
 ---
 title: SV_DomainLocation
-description: Define o local no envoltória do ponto de domínio atual que está sendo avaliado.
+description: Define o local no chassi do ponto de domínio atual que está sendo avaliado.
 ms.assetid: 907f568c-7c45-41e5-96c4-6e6b816a4a53
 keywords:
 - SV_DomainLocation HLSL
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: fc39a71bcbfb6f3719ecfc7d0abe463a1fd127e4
-ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
+ms.openlocfilehash: 481d4def3d13ee69138f31adaae3c7d90c2e27ab11702fe3191db94540d9835c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111827045"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120067526"
 ---
-# <a name="sv_domainlocation"></a>\_DOMAINLOCATION VA
+# <a name="sv_domainlocation"></a>SV \_ DomainLocation
 
-Define o local no envoltória do ponto de domínio atual que está sendo avaliado.
+Define o local no chassi do ponto de domínio atual que está sendo avaliado.
 
 ## <a name="type"></a>Tipo
 
@@ -30,8 +30,8 @@ Define o local no envoltória do ponto de domínio atual que está sendo avaliad
 
 | Tipo       | Topologia de entrada               |
 |--------|----------------|
-| float2 | patch quádruplo     |
-| float3 | Tri patch      |
+| float2 | patch quad     |
+| float3 | tri patch      |
 | float2 | isoline        |
 
 
@@ -46,7 +46,7 @@ Essa função tem suporte nos seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      | x      |          |       |         |
 

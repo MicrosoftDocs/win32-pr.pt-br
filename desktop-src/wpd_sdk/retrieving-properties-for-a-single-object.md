@@ -4,12 +4,12 @@ ms.assetid: e4e3b286-6330-4147-a367-57accf5beae6
 title: Recuperando propriedades de um único objeto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5851b31256659c2ca036bac504a53fa51a20ee14
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7e0806de3da9cd3f0674057d413a071996f86f5d74a364c0f5db707965fc2220
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105780658"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120054716"
 ---
 # <a name="retrieving-properties-for-a-single-object"></a>Recuperando propriedades de um único objeto
 

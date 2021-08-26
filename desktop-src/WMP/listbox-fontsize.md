@@ -1,9 +1,9 @@
 ---
-title: LISTBOX.fontSize
-description: O atributo fontSize especifica ou recupera o tamanho da fonte para o controle de caixa de listagem.
+title: Caixa de listagem. fontSize
+description: O atributo fontSize especifica ou recupera o tamanho da fonte para o controle caixa de listagem.
 ms.assetid: e7756249-5295-4564-8ba6-dd28d5104024
 keywords:
-- LISTBOX.fontSize Windows Media Player
+- Windows Media Player LISTBOX. fontSize
 topic_type:
 - apiref
 api_name:
@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "120003406"
 ---
-# <a name="listboxfontsize"></a>LISTBOX.fontSize
+# <a name="listboxfontsize"></a>Caixa de listagem. fontSize
 
-O **atributo fontSize** especifica ou recupera o tamanho da fonte para o controle de caixa de listagem.
+O atributo **FontSize** especifica ou recupera o tamanho da fonte para o controle caixa de listagem.
 
 ``` syntax
         elementID.fontSize
@@ -29,7 +29,7 @@ O **atributo fontSize** especifica ou recupera o tamanho da fonte para o control
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esse atributo é um  número de leitura/gravação (**longo**) que especifica o tamanho da fonte em pontos. O valor padrão é 10.
+Esse atributo é um **número** de leitura/gravação (**longo**) que especifica o tamanho da fonte em pontos. O valor padrão é 10.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -48,7 +48,7 @@ Esse atributo é um  número de leitura/gravação (**longo**) que especifica o 
 [**Elemento LISTBOX**](listbox-element.md)
 </dt> <dt>
 
-[**LISTBOX.fontStyle**](listbox-fontstyle.md)
+[**LISTBOX. fontStyle**](listbox-fontstyle.md)
 </dt> </dl>
 
  

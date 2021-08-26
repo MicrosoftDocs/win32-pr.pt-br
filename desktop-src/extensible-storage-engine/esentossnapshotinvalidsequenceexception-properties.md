@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102424
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: b6b6989aed1ba3e287972f92e3c198132dbbdfb3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b3ade378a54a0b8c735f8efb5498f9f58b9f3849b72bd64861d708f7e99ba261
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104551155"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120019166"
 ---
 # <a name="esentossnapshotinvalidsequenceexception-properties"></a>Propriedades de EsentOSSnapshotInvalidSequenceException
 
@@ -49,7 +49,7 @@ O tipo [EsentOSSnapshotInvalidSequenceException](./esentossnapshotinvalidsequenc
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.protproperty(exchg.10).gif" title="Propriedade protegida" alt="Protected property" /></td>
-<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">Resultado</a></td>
+<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">HResult</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
@@ -69,7 +69,7 @@ O tipo [EsentOSSnapshotInvalidSequenceException](./esentossnapshotinvalidsequenc
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">Pilha</a></td>
+<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">StackTrace</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">

@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: ec7c44ec3fc01074a0f4af70249236aa366d64bf
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: e63c4b588c4ff4c22bf0d1e8998163884634e4545537de3c275503652dbb81c9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105749319"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120003866"
 ---
 # <a name="copyex-method-of-the-cim_logicalfile-class"></a>Método CopyEx da classe de \_ LogicalFile CIM
 
@@ -80,7 +80,7 @@ Se for TRUE, o método também será aplicado recursivamente a arquivos e diret�
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor de 0 (zero) em caso de êxito e qualquer outro número para indicar um erro.
 
@@ -100,7 +100,7 @@ Sucesso.
 
 2
 
-Acesso negado.
+Acesso negado
 
 </dd> <dt>
 
@@ -140,7 +140,7 @@ Sistema de arquivos não NTFS.
 
 </dd> <dt>
 
-**Plataforma não NT/Windows 2000**
+**plataforma não NT/Windows 2000**
 </dt> <dd>
 
 12

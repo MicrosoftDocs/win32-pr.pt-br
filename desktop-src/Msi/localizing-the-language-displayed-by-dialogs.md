@@ -1,21 +1,21 @@
 ---
-description: O serviço de Windows Installer usa o idioma do usuário atual em todas as caixas de diálogo até que um pacote de Windows Installer seja aberto.
+description: O Windows instalador usa o idioma do usuário atual em todos os diálogos até que um pacote Windows instalador seja aberto.
 ms.assetid: c9902990-7a26-48fd-96ac-4d5a749e34be
-title: Localizando o idioma exibido por caixas de diálogo
+title: Localizando o idioma exibido por diálogos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 042b2b7f9ac256ebad265b75a8756fc422403e37
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 72142ce0f479379ebc929807294e6bbab7699738ee41e70be87e8e65f57c1ea3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105778564"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120043176"
 ---
-# <a name="localizing-the-language-displayed-by-dialogs"></a>Localizando o idioma exibido por caixas de diálogo
+# <a name="localizing-the-language-displayed-by-dialogs"></a>Localizando o idioma exibido por diálogos
 
-O serviço de Windows Installer usa o idioma do usuário atual em todas as caixas de diálogo até que um pacote de Windows Installer seja aberto. O Windows Installer determina isso usando **GetUserDefaultUILanguage**. Quando um pacote de Windows Installer é aberto, o instalador exibe caixas de diálogo usando o idioma do pacote conforme especificado pela propriedade de [**Resumo do modelo**](template-summary.md) .
+O Windows instalador usa o idioma do usuário atual em todos os diálogos até que um pacote Windows instalador seja aberto. O Windows instalador de dados determina isso usando **GetUserDefaultUILanguage**. Quando um Windows instalador é aberto, o instalador exibe diálogos usando o idioma do pacote, conforme especificado pela propriedade [**Resumo do**](template-summary.md) Modelo.
 
-Para obter mais informações sobre como localizar o idioma de um pacote de Windows Installer, consulte também [um exemplo de localização](a-localization-example.md).
+Para obter mais informações sobre como localizador o idioma de um pacote Windows Instalador, consulte também [Um exemplo de localização](a-localization-example.md).
 
  
 

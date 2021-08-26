@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3a20bbb689c4ee5e3ac12c510098163d9fbb224e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7880cba8e910c3da8ade049e18ae22e403c0c616246e4dfde94e587a1fcdeab9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105754976"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120054996"
 ---
 # <a name="cpullpingetreader-method"></a>Método CPullPin. GetReader
 
@@ -40,7 +40,7 @@ IAsyncReader* GetReader();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um ponteiro para a interface [**IAsyncReader**](/windows/desktop/api/Strmif/nn-strmif-iasyncreader) .
 
@@ -48,7 +48,7 @@ Retorna um ponteiro para a interface [**IAsyncReader**](/windows/desktop/api/Str
 
 A interface retornada tem uma contagem de referência pendente. O chamador deve liberar a interface.
 
-O método não verifica o valor do ponteiro de interface antes de chamar **AddRef**, portanto, não chame isso até que você tenha chamado o método [**CPullPin:: Connect**](cpullpin-connect.md) com êxito. Caso contrário, o ponteiro de interface pode ser **nulo** e chamar **AddRef** gerará uma exceção.
+o método não verifica o valor do ponteiro de interface antes de chamar **AddRef**, portanto, não chame isso até que você tenha chamado com êxito o método [**CPullPin:: Conexão**](cpullpin-connect.md) . Caso contrário, o ponteiro de interface pode ser **nulo** e chamar **AddRef** gerará uma exceção.
 
 ## <a name="requirements"></a>Requisitos
 

@@ -4,12 +4,12 @@ description: Executa um filtro de comparação.
 ms.assetid: 59786ED2-48FB-494E-A5A4-F732D63BF01B
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 23563fe52bbc943e8756d04085b66d156ab259d7
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 2656f70a95487ce98aadc30a028fccaed00cb1c8d6324d64bb22c9672543d5f9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104988569"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120067726"
 ---
 # <a name="sample_c-sm4---asm"></a>exemplo \_ c (sm4-ASM)
 

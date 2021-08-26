@@ -1,9 +1,9 @@
 ---
-title: TVN_KEYDOWN código de notificação (commctrl. h)
-description: Notifica uma janela pai do controle de exibição de árvore que o usuário pressionou uma tecla e o controle de exibição de árvore tem o foco de entrada. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
+title: TVN_KEYDOWN de notificação (Commctrl.h)
+description: Notifica a janela pai de um controle de exibição de árvore de que o usuário pressionou uma tecla e o controle de exibição de árvore tem o foco de entrada. Esse código de notificação é enviado na forma de uma mensagem WM \_ NOTIFY.
 ms.assetid: da0d2b62-2295-4dce-9b37-a250f3be087f
 keywords:
-- TVN_KEYDOWN de código de notificação controles do Windows
+- TVN_KEYDOWN código de notificação Windows Controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ccb18c3bf7dc03056abb55575850821e11eb9bf
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dadd3386e83e541288249b83028119111a42855a111f7ecb398571a1d46ab356
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454615"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120002466"
 ---
-# <a name="tvn_keydown-notification-code"></a>Código de notificação do TVN \_ KEYDOWN
+# <a name="tvn_keydown-notification-code"></a>Código de \_ notificação TVN KEYDOWN
 
-Notifica uma janela pai do controle de exibição de árvore que o usuário pressionou uma tecla e o controle de exibição de árvore tem o foco de entrada. Esse código de notificação é enviado na forma de uma mensagem de [**\_ notificação do WM**](wm-notify.md) .
+Notifica a janela pai de um controle de exibição de árvore de que o usuário pressionou uma tecla e o controle de exibição de árvore tem o foco de entrada. Esse código de notificação é enviado na forma de uma mensagem [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,13 +41,13 @@ TVN_KEYDOWN
 *lParam* 
 </dt> <dd>
 
-Ponteiro para uma estrutura [**NMTVKEYDOWN**](/windows/win32/api/commctrl/ns-commctrl-nmtvkeydown) . O membro **wVKey** especifica o código de chave virtual.
+Ponteiro para uma [**estrutura NMTVKEYDOWN.**](/windows/win32/api/commctrl/ns-commctrl-nmtvkeydown) O **membro wVKey** especifica o código de chave virtual.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se o membro **wVKey** de *lParam* for um código de chave de caractere, o caractere será usado como parte de uma pesquisa incremental. Retorne diferente de zero para excluir o caractere da pesquisa incremental ou zero para incluir o caractere na pesquisa. Para todas as outras chaves, o valor de retorno é ignorado.
+Se o **membro wVKey** de *lParam* for um código de chave de caractere, o caractere será usado como parte de uma pesquisa incremental. Retorne diferente de zero para excluir o caractere da pesquisa incremental ou zero para incluir o caractere na pesquisa. Para todas as outras chaves, o valor de retorno é ignorado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,9 +55,9 @@ Se o membro **wVKey** de *lParam* for um código de chave de caractere, o caract
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

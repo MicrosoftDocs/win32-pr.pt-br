@@ -1,45 +1,45 @@
 ---
 title: Exibindo o status de uma assinatura do coletor de eventos
-description: Você pode exibir o status de uma assinatura do coletor de eventos. O status inclui a disponibilidade da assinatura, o último erro que ocorreu para a assinatura, a hora do último erro e a próxima vez que a assinatura será repetida.
+description: Você pode exibir o status de uma assinatura do Coletor de Eventos. O status inclui a disponibilidade da assinatura, o último erro que ocorreu para a assinatura, a hora do último erro e a próxima vez que a assinatura for recuperada.
 ms.assetid: e1c3c3ed-2f7c-433d-a51d-66c2abd2e961
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d7c806d72d4945e2e45384b91bc94fbef3ed08b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2a6efd0268ef571d8f9ad984bb70a9e69e489e6349f8af0ee9e47e9aa18a1cc5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292123"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120032646"
 ---
 # <a name="displaying-the-status-of-an-event-collector-subscription"></a>Exibindo o status de uma assinatura do coletor de eventos
 
-Você pode exibir o status de uma assinatura do coletor de eventos. O status inclui a disponibilidade da assinatura, o último erro que ocorreu para a assinatura, a hora do último erro e a próxima vez que a assinatura será repetida.
+Você pode exibir o status de uma assinatura do Coletor de Eventos. O status inclui a disponibilidade da assinatura, o último erro que ocorreu para a assinatura, a hora do último erro e a próxima vez que a assinatura for recuperada.
 
 > [!Note]
 >
 > Você pode usar este exemplo para exibir o status de uma assinatura ou pode digitar o seguinte comando no prompt de comando:
 >
-> **wecutil gr** *subscriptionname*
+> **wecutil gr** *SubscriptionName*
 
- 
+ 
 
-Você precisará do nome de uma assinatura para exibir seu status. Para listar os nomes das assinaturas atuais em um computador local, você pode usar o exemplo de C++ exibido em [listando assinaturas do coletor de eventos](listing-event-collector-subscriptions.md)ou pode digitar o seguinte comando no prompt de comando:
+Você precisará do nome de uma assinatura para exibir seu status. Para listar os nomes das assinaturas atuais em um computador local, você pode usar o exemplo C++ em mostrado em [Listando assinaturas](listing-event-collector-subscriptions.md)do coletor de eventos ou pode digitar o seguinte comando no prompt de comando:
 
 **wecutil es**
 
-O exemplo a seguir segue um procedimento para exibir o status de uma assinatura do coletor de eventos:
+O exemplo a seguir segue um procedimento para exibir o status de uma assinatura do Coletor de Eventos:
 
-**Para exibir o status de uma assinatura do coletor de eventos**
+**Para exibir o status de uma assinatura do Coletor de Eventos**
 
-1.  Abra a assinatura fornecendo o nome da assinatura e os direitos de acesso como parâmetros para a função [**EcOpenSubscription**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription) . Para obter mais informações sobre direitos de acesso, consulte as [**constantes do coletor de eventos do Windows**](windows-event-collector-constants.md).
-2.  Obtenha o status da assinatura chamando a função [**EcGetSubscriptionRunTimeStatus**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetsubscriptionruntimestatus) (não especifique uma origem de evento ao chamar a função).
-3.  Obtenha a matriz de fontes de eventos da assinatura chamando a função [**EcGetSubscriptionRunTimeStatus**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetsubscriptionruntimestatus) e passando o sinalizador EcSubscriptionRunTimeStatusEventSources.
-4.  Obtenha as informações de status de cada origem do evento chamando a função [**EcGetSubscriptionRunTimeStatus**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetsubscriptionruntimestatus) e passando o nome da origem do evento. Para obter mais informações sobre as informações de status que podem ser recuperadas, consulte a enumeração de [**ID de informações de \_ status do tempo de execução da assinatura \_ \_ \_ \_ do EC**](/windows/desktop/api/Evcoll/ne-evcoll-ec_subscription_runtime_status_info_id) .
+1.  Abra a assinatura fornecendo o nome da assinatura e os direitos de acesso como parâmetros para a [**função EcOpenSubscription.**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription) Para obter mais informações sobre direitos de acesso, [**consulte Windows constantes do Coletor de Eventos**](windows-event-collector-constants.md).
+2.  Obter o status da assinatura chamando a [**função EcGetSubscriptionRunTimeStatus**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetsubscriptionruntimestatus) (não especifique uma origem do evento ao chamar a função).
+3.  Obter a matriz de fontes de evento da assinatura chamando a função [**EcGetSubscriptionRunTimeStatus**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetsubscriptionruntimestatus) e passando o sinalizador EcSubscriptionRunTimeStatusEventSources.
+4.  Obter as informações de status de cada origem do evento chamando a [**função EcGetSubscriptionRunTimeStatus**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetsubscriptionruntimestatus) e passando o nome da origem do evento. Para obter mais informações sobre as informações de status que podem ser recuperadas, consulte a enumeração [**EC \_ SUBSCRIPTION \_ \_ RUNTIME STATUS INFO \_ \_ ID**](/windows/desktop/api/Evcoll/ne-evcoll-ec_subscription_runtime_status_info_id) .
 5.  Imprima as informações de status da assinatura.
-6.  Feche a assinatura chamando a função [**EcClose**](/windows/desktop/api/Evcoll/nf-evcoll-ecclose) .
+6.  Feche a assinatura chamando a [**função EcClose.**](/windows/desktop/api/Evcoll/nf-evcoll-ecclose)
 
-O exemplo de código C++ a seguir mostra como exibir o status de uma assinatura do coletor de eventos.
+O exemplo de código C++ a seguir mostra como exibir o status de uma assinatura do Coletor de Eventos.
 
 
 ```C++
@@ -432,12 +432,12 @@ std::wstring ConvertEcDateTime( ULONGLONG code )
 [Listando assinaturas do coletor de eventos](listing-event-collector-subscriptions.md)
 </dt> <dt>
 
-[Referência do coletor de eventos do Windows](windows-event-collector-reference.md)
+[Windows Referência do coletor de eventos](windows-event-collector-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

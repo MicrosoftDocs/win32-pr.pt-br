@@ -4,12 +4,12 @@ ms.assetid: 4c3da994-fe12-4cb8-8f11-c4930cae96af
 title: Requisitos para objetos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 51265b4334e43ab6aec4cdef313ae0002cc66bf3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 80f15568d47f46faa31ef3c95023210a5b2af05828b80dc75ccfcf0885c8d027
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170678"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120054796"
 ---
 # <a name="requirements-for-objects"></a>Requisitos para objetos
 
@@ -33,7 +33,7 @@ Para saber quais propriedades e recursos cada um deve oferecer suporte, consulte
 | [**\_certificado de \_ tipo de conteúdo WPD \_**](wpd-content-type-certificate.md)                   | O objeto é um certificado usado para autenticação.                                                                                                                                                                                                                                                                                                                                                 |
 | [**\_contato de \_ tipo de conteúdo WPD \_**](wpd-content-type-contact.md)                           | O objeto é dados de contato pessoal, como um arquivo vCard.                                                                                                                                                                                                                                                                                                                                           |
 | [**\_grupo de \_ contatos de tipo de conteúdo WPD \_ \_**](wpd-content-type-contact-group.md)              | O objeto representa um grupo de contatos. A \_ propriedade de referências de objeto wpd deste objeto \_ contém uma lista de identificadores de objeto para vários \_ objetos de contato de tipo de conteúdo WPD \_ \_ .                                                                                                                                                                                                                     |
-| [**\_documento de \_ tipo de conteúdo WPD \_**](wpd-content-type-document.md)                         | Objeto é um contêiner para texto, com ou sem formatação. Os exemplos incluem arquivos do Microsoft Word e arquivos de texto sem formatação.                                                                                                                                                                                                                                                                          |
+| [**\_documento de \_ tipo de conteúdo WPD \_**](wpd-content-type-document.md)                         | Objeto é um contêiner para texto, com ou sem formatação. os exemplos incluem arquivos de Microsoft Word e arquivos de texto sem formatação.                                                                                                                                                                                                                                                                          |
 | [**\_email de \_ tipo de conteúdo WPD \_**](wpd-content-type-email.md)                               | O objeto é um email.                                                                                                                                                                                                                                                                                                                                                                             |
 | [**\_pasta de \_ tipo de conteúdo WPD \_**](wpd-content-type-folder.md)                             | O objeto é uma pasta.                                                                                                                                                                                                                                                                                                                                                                              |
 | [**\_ \_ objeto funcional de tipo de conteúdo WPD \_ \_**](wpd-content-type-functional-object.md)      | O objeto é um objeto funcional, representando a funcionalidade do dispositivo.                                                                                                                                                                                                                                                                                                                                |

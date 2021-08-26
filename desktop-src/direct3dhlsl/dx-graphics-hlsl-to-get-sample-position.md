@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 9a1e5f4dc71d5af2e7973ef180c919a49e65ef81
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 95be6d9b6c4cbf70aed059399af0892a3c75f0a3462b6ef2b0732e8180f4e123
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113118581"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120068106"
 ---
 # <a name="getsampleposition-directx-hlsl-texture-object"></a>GetSamplePosition (objeto de textura directX HLSL)
 
@@ -61,7 +61,7 @@ Essa função tem suporte nos modelos de sombreador a seguir.
 
 ## <a name="remarks"></a>Comentários
 
-Um sombreador de pixel pode ser avaliado na frequência de exemplo (execute um sombreador de pixel uma vez por amostra) ou na frequência de pixel (execute um sombreador de pixel uma vez por pixel). Anexe a semântica SV SampleIndex a uma entrada de sombreador de pixel para invocar um sombreador de pixel na frequência de exemplo. Em seguida, o valor de entrada é usado como um índice de exemplo ao amostragem do destino de \_ renderização.
+Um sombreador de pixel pode ser avaliado na frequência de exemplo (execute um sombreador de pixel uma vez por exemplo) ou na frequência de pixel (execute um sombreador de pixel uma vez por pixel). Anexe a semântica SV SampleIndex a uma entrada de sombreador de pixel para invocar um sombreador de pixel na frequência de exemplo. Em seguida, o valor de entrada é usado como um índice de exemplo ao amostragem do destino de \_ renderização.
 
 Você pode interpolar uma entrada de sombreador de pixel de várias maneiras. Para interpolar em:
 

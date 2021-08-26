@@ -4,12 +4,12 @@ description: Com os arquivos IDL e ACF como entrada, o compilador MIDL gera até
 ms.assetid: 151bd643-1da0-4b33-b8a3-3d7037e63319
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ebb45bb369ea9d5faa695bf2658f3bafe2b3cb3d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0aea74b77d8e709d8a71d3c84f457d301bb38d8c35bdccaa77e9e3033d08ed70
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005152"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120019686"
 ---
 # <a name="midl-compiler-output"></a>Saída do compilador MIDL
 
@@ -20,17 +20,17 @@ Com os arquivos IDL e ACF como entrada, o compilador MIDL gera até cinco arquiv
 | Arquivo        | Parte padrão do nome do arquivo base | Exemplo      |
 |-------------|-----------------------------------|--------------|
 | Arquivo IDL    | ---                               | Abcdefgh. idl |
-| parâmetro      | .h                                | Abcdef. h     |
+| Cabeçalho      | .h                                | Abcdef. h     |
 | Stub do cliente | \_c. c                             | Abcdef \_ c. c  |
 | Stub de servidor | \_s. c                             | Abcdef \_ s. c  |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

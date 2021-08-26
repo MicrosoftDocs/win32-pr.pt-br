@@ -17,7 +17,7 @@ ms.locfileid: "120004526"
 
 A [**função getaddrinfo**](/windows/desktop/api/ws2tcpip/nf-ws2tcpip-getaddrinfo) fornece tradução do nome do host para o endereço para transporte baseado em IP. Como a **função getaddrinfo** é específica para transporte baseado em IP, ela falha em Bluetooth soquetes.
 
-Para executar a conversão do nome do host para o endereço de soquetes Bluetooth, use a função [**WSALookupServiceBegin**](bluetooth-and-wsalookupservicebegin-for-device-inquiry.md) com CONTÊINERES LUP para consultar **\_ dispositivos remotos** e, em seguida, pesquise um Nome Remoto correspondente específico e o endereço correspondente.
+Para executar a conversão do nome do host para o endereço de soquetes do Bluetooth, use a função [**WSALookupServiceBegin**](bluetooth-and-wsalookupservicebegin-for-device-inquiry.md) com CONTÊINERES LUP para consultar **\_ dispositivos remotos** e, em seguida, pesquise um Nome Remoto correspondente específico e o endereço correspondente.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

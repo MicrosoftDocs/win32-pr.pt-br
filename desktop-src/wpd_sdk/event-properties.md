@@ -1,5 +1,5 @@
 ---
-description: Os dispositivos portáteis do Windows oferecem suporte às seguintes propriedades de evento.
+description: Windows Os dispositivos portáteis oferecem suporte às seguintes propriedades de evento.
 ms.assetid: 672b75ac-cd47-4212-a505-c220ecdf98e3
 title: Propriedades do evento (PortableDevice. h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 54c7aefeaf1170b7a8b8e3e79a62288f2d14dad2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f5220b7cd3b0acfb70788a62138a7da3a4ebac008a51e90bbc93308ae2624300
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105763238"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120055346"
 ---
 # <a name="event-properties"></a>Propriedades do evento
 
-Os dispositivos portáteis do Windows oferecem suporte às seguintes propriedades de evento.
+Windows Os dispositivos portáteis oferecem suporte às seguintes propriedades de evento.
 
 
 

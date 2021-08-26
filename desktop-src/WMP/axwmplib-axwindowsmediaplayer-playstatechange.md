@@ -1,9 +1,9 @@
 ---
 title: Evento PlayStateChange do objeto AxWindowsMediaPlayer
-description: O evento PlayStateChange ocorre quando o estado de reprodução do controle do Windows Media Player é alterado.
+description: o evento PlayStateChange ocorre quando o estado de reprodução do controle de Windows Media Player é alterado.
 ms.assetid: f8823c90-2084-4771-a2fe-7081d4e49e63
 keywords:
-- Evento PlayStateChange do objeto AxWindowsMediaPlayer do Windows Media Player
+- Evento PlayStateChange do objeto AxWindowsMediaPlayer Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: af97803224df89287847ee2b9ef83d8e976d91b7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a02f533211ccb6f2f2617d402eed8343a444fad4a7c3ccf49e187ede71ce9513
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105780030"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120003986"
 ---
 # <a name="playstatechange-event-of-the-axwindowsmediaplayer-object"></a>Evento PlayStateChange do objeto AxWindowsMediaPlayer
 
-O evento PlayStateChange ocorre quando o estado de reprodução do controle do Windows Media Player é alterado.
+o evento PlayStateChange ocorre quando o estado de reprodução do controle de Windows Media Player é alterado.
 
 ``` syntax
 [C#]
@@ -56,7 +56,7 @@ O manipulador associado a esse evento é do tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 
 ## <a name="remarks"></a>Comentários
 
-Não há garantia de que os Estados do Windows Media Player ocorram em uma ordem específica. Além disso, nem todo estado ocorre necessariamente durante uma sequência de eventos. Você não deve escrever código que dependa da ordem de estado.
+não há garantia de que os estados de Windows Media Player ocorram em uma ordem específica. Além disso, nem todo estado ocorre necessariamente durante uma sequência de eventos. Você não deve escrever código que dependa da ordem de estado.
 
 ## <a name="examples"></a>Exemplos
 

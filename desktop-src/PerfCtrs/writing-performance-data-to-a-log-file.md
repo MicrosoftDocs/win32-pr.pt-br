@@ -4,12 +4,12 @@ ms.assetid: a1bc40ea-d928-495a-abc0-daf097202a12
 title: Gravando dados de desempenho em um arquivo de log
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: afce3c85b36d66f1b621e4c4f174bff327e6084a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f97bce7d5256db5ebeaee659a12809535b9718bc6fdadc807c9d9ffdc8b67c7f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105754612"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120033076"
 ---
 # <a name="writing-performance-data-to-a-log-file"></a>Gravando dados de desempenho em um arquivo de log
 

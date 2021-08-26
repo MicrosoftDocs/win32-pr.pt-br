@@ -1,24 +1,24 @@
 ---
-title: Uma lista de reprodução básica
-description: Uma lista de reprodução básica
+title: Uma Playlist Básica
+description: Uma Playlist Básica
 ms.assetid: fdd87959-861a-456e-b903-f5a27b4f6221
 keywords:
-- Listas de reprodução do metarquivo do Windows Media, exemplos de playlist
+- Windows Playlists de metarquivo de mídia, exemplos de playlist
 - listas de reprodução, exemplos de playlist
 - listas de reprodução de metarquivo, exemplos de playlist
-- Playlists do metarquivo do Windows Media, listas de reprodução de exemplo
+- Windows Playlists de metarquivo de mídia, playlists de exemplo
 - listas de reprodução, exemplos de listas de reprodução
 - listas de reprodução de metarquivo, listas de reprodução de exemplo
-- Playlists do metarquivo do Windows Media, listas de reprodução de exemplo
+- Windows Playlists de metarquivo de mídia, listas de reprodução de exemplo
 - listas de reprodução, listas de reprodução de exemplo
 - listas de reprodução de metarquivo, listas de reprodução de exemplo
-- Playlists do metarquivo do Windows Media, exemplo de código
+- Windows Playlists de metarquivo de mídia, exemplo de código
 - listas de reprodução, exemplo de código
 - listas de reprodução de metarquivo, exemplo de código
-- Playlists do metarquivo do Windows Media, exemplo de playlist básica
+- Windows Playlists de metarquivo de mídia, exemplo de playlist básica
 - listas de reprodução, exemplo de playlist básica
 - listas de reprodução de metarquivo, exemplo de playlist básica
-- Exemplos do Windows Media Player, playlist
+- exemplos de Windows Media Player, playlist
 - Windows Media Player, listas de reprodução de exemplo
 - Windows Media Player, listas de reprodução de exemplo
 - Windows Media Player, exemplo de playlist básica
@@ -32,16 +32,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 804bc69c9ab3b243030cd2c87545e6362ccfca79
-ms.sourcegitcommit: 78b64f3865e64768b5319d4f010032ee68924a98
+ms.openlocfilehash: c8284acfe86cb204293902c0fb8664e74b12f3d2cc176d762f1aff079faac0cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107314779"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120004576"
 ---
-# <a name="a-basic-playlist"></a>Uma lista de reprodução básica
+# <a name="a-basic-playlist"></a>Uma Playlist Básica
 
-O exemplo de playlist a seguir mostra um conjunto básico de elementos da lista de reprodução. Ao escrever seu próprio código, você precisará alterar todas as URLs e nomes de arquivos para nomes de arquivos válidos que sejam acessíveis ao seu Windows Media Player.
+O exemplo de playlist a seguir mostra um conjunto básico de elementos da lista de reprodução. Ao escrever seu próprio código, você precisará alterar todas as URLs e nomes de arquivo para nomes de arquivo válidos que sejam acessíveis para seu Windows Media Player.
 
 **Exemplo de código**
 
@@ -67,13 +67,13 @@ A tabela a seguir fornece detalhes sobre o uso de cada elemento no código de ex
 
 | Linha                                                                                            | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |-------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \<ASX version = "3.0">                                                                     | O elemento [ASX](asx-element.md) identifica o cliente do (Windows Media Player) que esta é uma lista de reprodução do metarquivo do Windows Media. O atributo **version** especifica o número de versão dos elementos de metarquivo.                                                                                                                                                                                                                                                                                                                                           |
-| \<TITLE>Demonstração de playlist básica\</TITLE>                                                  | O elemento [title](title-element--metafile.md) identifica o título da lista de reprodução como um todo. O Windows Media Player exibe esses metadados como o título de exibição.                                                                                                                                                                                                                                                                                                                                                                                               |
+| \<ASX version = "3.0">                                                                     | o elemento [ASX](asx-element.md) identifica para o cliente (Windows Media Player) que esta é uma lista de reprodução de metarquivo de mídia Windows. O atributo **version** especifica o número de versão dos elementos de metarquivo.                                                                                                                                                                                                                                                                                                                                           |
+| \<TITLE>Demonstração de playlist básica\</TITLE>                                                  | O elemento [title](title-element--metafile.md) identifica o título da lista de reprodução como um todo. Windows Media Player exibe esses metadados como o título de exibição.                                                                                                                                                                                                                                                                                                                                                                                               |
 | \<ENTRY>                                                                                   | Inicia o elemento de [entrada](entry-element.md) . Um elemento de **entrada** é uma maneira de definir um clipe específico em uma lista de reprodução                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| \<TITLE>Uma entrada em uma playlist básica\</TITLE>                                         | Identifica o título do clipe da lista de reprodução. Ele é diferente do elemento **title** anterior porque este é aninhado dentro de um elemento **entry** . O Windows Media Player exibe esses metadados como o título do clipe.                                                                                                                                                                                                                                                                                                                                         |
-| \<AUTHOR>Microsoft Corporation\</AUTHOR>                                              | O elemento [autor](author-element.md) identifica o autor do clipe de mídia. O Windows Media Player exibe esses metadados como o **autor** do clipe.                                                                                                                                                                                                                                                                                                                                                                                                         |
+| \<TITLE>Uma entrada em uma playlist básica\</TITLE>                                         | Identifica o título do clipe da lista de reprodução. Ele é diferente do elemento **title** anterior porque este é aninhado dentro de um elemento **entry** . Windows Media Player exibe esses metadados como o título do clipe.                                                                                                                                                                                                                                                                                                                                         |
+| \<AUTHOR>Microsoft Corporation\</AUTHOR>                                              | O elemento [autor](author-element.md) identifica o autor do clipe de mídia. Windows Media Player exibe esses metadados como o **autor** do clipe.                                                                                                                                                                                                                                                                                                                                                                                                         |
 | \<!-- This is a comment. Change the following path to point to your Windows media file --> | Um comentário. Os [comentários](comments.md) são visíveis somente quando o código é exibido e estão no mesmo formato que os comentários **XML** .                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| \<REF HREF = "mms://proseware.com/path/Yourfile.wma" />                                    | Ponteiro real para o arquivo de mídia. O elemento [ref](ref-element.md) identifica a linha como um ponteiro para conteúdo de mídia, enquanto o atributo **href** é a URL para o arquivo de mídia. Nesse caso, a URL usa o protocolo MMS e, portanto, aponta para um Windows Media Server. Os arquivos de mídia no servidor de mídia geralmente não são mantidos no mesmo local que os documentos HTML.<br/> Observe o uso do fechamento do tipo XML do elemento, "/>", em vez de " &lt; /ref &gt; ". Como esse elemento não tem elementos filho, ele se fecha.<br/> |
+| \<REF HREF = "mms://proseware.com/path/Yourfile.wma" />                                    | Ponteiro real para o arquivo de mídia. O elemento [ref](ref-element.md) identifica a linha como um ponteiro para conteúdo de mídia, enquanto o atributo **href** é a URL para o arquivo de mídia. nesse caso, a URL usa o protocolo MMS, portanto, aponta para um Windows servidor de mídia. Os arquivos de mídia no servidor de mídia geralmente não são mantidos no mesmo local que os documentos HTML.<br/> Observe o uso do fechamento do tipo XML do elemento, "/>", em vez de " &lt; /ref &gt; ". Como esse elemento não tem elementos filho, ele se fecha.<br/> |
 | \</ENTRY>                                                                                  | Especifica o final do elemento de **entrada** .                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | \</ASX>                                                                                    | Especifica o fim da lista de reprodução.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 
@@ -94,10 +94,10 @@ A tabela a seguir fornece detalhes sobre o uso de cada elemento no código de ex
 [**Playlists de metarquivo**](metafile-playlists.md)
 </dt> <dt>
 
-[**Referência de elementos de metarquivo do Windows Media**](windows-media-metafile-elements-reference.md)
+[**Windows Referência de elementos de metarquivo de mídia**](windows-media-metafile-elements-reference.md)
 </dt> <dt>
 
-[**Guia de metarquivo do Windows Media**](windows-media-metafile-guide.md)
+[**Windows Guia de metarquivo de mídia**](windows-media-metafile-guide.md)
 </dt> </dl>
 
  

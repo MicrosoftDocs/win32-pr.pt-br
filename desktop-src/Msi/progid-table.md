@@ -4,12 +4,12 @@ ms.assetid: 66a7e170-6f70-4db7-98f4-8a074471b9f2
 title: Tabela ProgId
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 293ce3748f691b664d55b0a1158a574472388202
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fbed8baea9bd8421757cf2e31f0ba06679db3394c95f732537a7e230c02b5ee8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922739"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120042056"
 ---
 # <a name="progid-table"></a>Tabela ProgId
 
@@ -21,12 +21,12 @@ A tabela ProgId tem as colunas a seguir.
 
 | Coluna         | Tipo                         | Chave | Nullable |
 |----------------|------------------------------|-----|----------|
-| ProgId         | [Text](text.md)             | S   | N        |
-| Pai do ProgId \_ | [Text](text.md)             | N   | S        |
-| Classe\_        | [GUID](guid.md)             | N   | S        |
-| Descrição    | [Text](text.md)             | N   | S        |
-| ícone\_         | [Identificador](identifier.md) | N   | S        |
-| IconIndex      | [Inteiro](integer.md)       | N   | S        |
+| ProgId         | [Text](text.md)             | Y   | N        |
+| Pai do ProgId \_ | [Text](text.md)             | N   | Y        |
+| Classe\_        | [GUID](guid.md)             | N   | Y        |
+| Descrição    | [Text](text.md)             | N   | Y        |
+| Ícone\_         | [Identificador](identifier.md) | N   | Y        |
+| IconIndex      | [Inteiro](integer.md)       | N   | Y        |
 
 
 

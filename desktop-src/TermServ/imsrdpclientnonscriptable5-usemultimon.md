@@ -1,12 +1,12 @@
 ---
-title: Propriedade IMsRdpClientNonScriptable5 UseMultimon
-description: Especifica se o controle ActiveX Área de Trabalho Remota deve usar vários monitores.
+title: Propriedade UseMulndon IMsRdpClientNonScriptable5
+description: Especifica se o controle Área de Trabalho Remota ActiveX deve usar vários monitores.
 ms.assetid: 7832E025-80F6-4B4B-9829-C2D2EF2D8C37
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota da propriedade UseMultimon
-- Propriedade UseMultimon Serviços de Área de Trabalho Remota, interface IMsRdpClientNonScriptable5
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientNonScriptable5, Propriedade UseMultimon
+- Propriedade UseMulndon Serviços de Área de Trabalho Remota
+- Propriedade UseMultiman Serviços de Área de Trabalho Remota , interface IMsRdpClientNonScriptable5
+- Interface IMsRdpClientNonScriptable5 Serviços de Área de Trabalho Remota , propriedade UseMultiman
 topic_type:
 - apiref
 api_name:
@@ -19,18 +19,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 941a2991ef5591176cd2508bbb6a097fecabebf0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8335d4424931b38d5d967e3ad910785e68184668eceda79011ff2c213517a8eb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918737"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120033276"
 ---
-# <a name="imsrdpclientnonscriptable5usemultimon-property"></a>Propriedade IMsRdpClientNonScriptable5:: UseMultimon
+# <a name="imsrdpclientnonscriptable5usemultimon-property"></a>Propriedade IMsRdpClientNonScriptable5::UseMultiman
 
-Especifica se o controle ActiveX Área de Trabalho Remota deve usar vários monitores. Se essa propriedade contiver **Variant \_ true**, o controle usará vários monitores. Se essa propriedade contiver a **variante \_ false**, o controle não usará vários monitores.
+Especifica se o controle Área de Trabalho Remota ActiveX deve usar vários monitores. Se essa propriedade **contiver VARIANT \_ TRUE**, o controle usará vários monitores. Se essa propriedade **\_ contiver VARIANT FALSE**, o controle não usará vários monitores.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="syntax"></a>Syntax
 
@@ -61,7 +61,7 @@ Especifica o novo valor da propriedade.
 | Servidor mínimo com suporte<br/> | Windows Server 2008 R2<br/>                                                             |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>        |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>        |
-| IID<br/>                      | IID \_ IMsRdpClientNonScriptable5 é definido como 4f6996d5-d7b1-412C-b0ff-063718566907<br/> |
+| IID<br/>                      | IID \_ IMsRdpClientNonScriptable5 é definido como 4f6996d5-d7b1-412c-b0ff-063718566907<br/> |
 
 
 

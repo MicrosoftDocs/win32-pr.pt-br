@@ -1,26 +1,26 @@
 ---
 title: Propriedade IMsRdpClientAdvancedSettings keepAliveInterval
-description: Especifica um intervalo, em milissegundos, no qual o cliente envia mensagens Keep-Alive para o servidor.
+description: Especifica um intervalo, em milissegundos, no qual o cliente envia mensagens keep alive para o servidor.
 ms.assetid: 0d1b7d8f-f81c-4591-bb08-adab307e87fe
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota da propriedade keepAliveInterval
-- Propriedade keepAliveInterval Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings, Propriedade keepAliveInterval
-- Propriedade keepAliveInterval Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings2
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings2, Propriedade keepAliveInterval
-- Propriedade keepAliveInterval Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings3
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings3, Propriedade keepAliveInterval
-- Propriedade keepAliveInterval Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings4
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings4, Propriedade keepAliveInterval
-- Propriedade keepAliveInterval Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings5
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings5, Propriedade keepAliveInterval
-- Propriedade keepAliveInterval Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings6
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings6, Propriedade keepAliveInterval
-- Propriedade keepAliveInterval Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings7
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings7, Propriedade keepAliveInterval
-- Propriedade keepAliveInterval Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings8
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings8, Propriedade keepAliveInterval
+- propriedade keepAliveInterval Serviços de Área de Trabalho Remota
+- propriedade keepAliveInterval Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings
+- Interface IMsRdpClientAdvancedSettings Serviços de Área de Trabalho Remota , propriedade keepAliveInterval
+- propriedade keepAliveInterval Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings2
+- Interface IMsRdpClientAdvancedSettings2 Serviços de Área de Trabalho Remota , propriedade keepAliveInterval
+- propriedade keepAliveInterval Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings3
+- Interface IMsRdpClientAdvancedSettings3 Serviços de Área de Trabalho Remota , propriedade keepAliveInterval
+- propriedade keepAliveInterval Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings4
+- Interface IMsRdpClientAdvancedSettings4 Serviços de Área de Trabalho Remota , propriedade keepAliveInterval
+- propriedade keepAliveInterval Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings5
+- Interface IMsRdpClientAdvancedSettings5 Serviços de Área de Trabalho Remota , propriedade keepAliveInterval
+- A propriedade keepAliveInterval Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings6
+- Interface IMsRdpClientAdvancedSettings6 Serviços de Área de Trabalho Remota , propriedade keepAliveInterval
+- a propriedade keepAliveInterval Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings7
+- Interface IMsRdpClientAdvancedSettings7 Serviços de Área de Trabalho Remota , propriedade keepAliveInterval
+- propriedade keepAliveInterval Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings8
+- Interface IMsRdpClientAdvancedSettings8 Serviços de Área de Trabalho Remota , propriedade keepAliveInterval
 topic_type:
 - apiref
 api_name:
@@ -54,20 +54,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d15412b5b1803aadcffa08a8617742e0c90b1a0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1dad34455d1203fb353672b8ef3797866b8ad2aa8b5686f71f769eccc5f3c9ff
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369442"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120033296"
 ---
-# <a name="imsrdpclientadvancedsettingskeepaliveinterval-property"></a>Propriedade IMsRdpClientAdvancedSettings:: keepAliveInterval
+# <a name="imsrdpclientadvancedsettingskeepaliveinterval-property"></a>Propriedade IMsRdpClientAdvancedSettings::keepAliveInterval
 
-Especifica um intervalo, em milissegundos, no qual o cliente envia mensagens Keep-Alive para o servidor.
+Especifica um intervalo, em milissegundos, no qual o cliente envia mensagens keep alive para o servidor.
 
 Uma configuração de política de grupo que especifica se as conexões de cliente persistentes com o servidor são permitidas podem substituir essa configuração de propriedade.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="syntax"></a>Syntax
 
@@ -86,7 +86,7 @@ HRESULT get_keepAliveInterval(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-O novo intervalo, em milissegundos. O valor padrão da propriedade é zero, o que desabilita as mensagens Keep-Alive. O valor mínimo válido dessa propriedade é 10.000, que representa 10 segundos.
+O novo intervalo, em milissegundos. O valor padrão da propriedade é zero, que desabilita mensagens keep alive. O valor mínimo válido dessa propriedade é 10.000, que representa 10 segundos.
 
 ## <a name="error-codes"></a>Códigos do Erro
 
@@ -94,7 +94,7 @@ Retornará **S \_ OK** se for bem-sucedido.
 
 ## <a name="remarks"></a>Comentários
 
-Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for conexão Web de área de trabalho remota](requirements-for-remote-desktop-web-connection.md).
+Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for Conexão Web de Área de Trabalho Remota](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -106,7 +106,7 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                                  |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>          |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>          |
-| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings é definido como 3c65b4ab-12B3-465b-acd4-b8dad3bff9e2<br/> |
+| IID<br/>                      | \_IMs IIDRdpClientAdvancedSettings é definido como 3c65b4ab-12b3-465b-acd4-b8dad3bff9e2<br/> |
 
 
 
@@ -135,7 +135,7 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 [**IMsRdpClientAdvancedSettings8**](imsrdpclientadvancedsettings8.md)
 </dt> <dt>
 
-[**IMsRdpClientAdvancedSettings**](imsrdpclientadvancedsettings-interface.md)
+[**Imsrdpclientadvancedsettings**](imsrdpclientadvancedsettings-interface.md)
 </dt> </dl>
 
  

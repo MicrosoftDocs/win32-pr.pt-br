@@ -4,12 +4,12 @@ ms.assetid: 6cd04d9a-5489-4fde-951e-aa962e9bd755
 title: Tabela ModuleInstallExecuteSequence
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d294ddfdf06028bf18d518e1086d37a0719f8c8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6659c8223e41307766d67a4a5138699b46e03fbf3d50b514cb452bdc870c009c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105753442"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120042836"
 ---
 # <a name="moduleinstallexecutesequence-table"></a>Tabela ModuleInstallExecuteSequence
 
@@ -21,11 +21,11 @@ A tabela ModuleInstallExecuteSequence contém as colunas a seguir.
 
 | Coluna     | Tipo                         | Chave | Nullable |
 |------------|------------------------------|-----|----------|
-| Ação     | [Identificador](identifier.md) | S   | N        |
-| Sequência   | [Inteiro](integer.md)       |     | S        |
-| Baseaction | [Identificador](identifier.md) |     | S        |
-| After (após)      | [Inteiro](integer.md)       |     | S        |
-| Condição  | [Condição](condition.md)   |     | S        |
+| Ação     | [Identificador](identifier.md) | Y   | N        |
+| Sequência   | [Inteiro](integer.md)       |     | Y        |
+| Baseaction | [Identificador](identifier.md) |     | Y        |
+| Depois      | [Inteiro](integer.md)       |     | Y        |
+| Condição  | [Condição](condition.md)   |     | Y        |
 
 
 
@@ -49,14 +49,14 @@ Se uma [ação padrão](standard-actions.md) for usada na coluna ação de uma t
 
 O número de sequência de uma ação padrão. Se uma ação ou caixa de diálogo personalizada for inserida na coluna ação dessa linha, esse campo deverá ser definido como nulo.
 
-Ao usar [ações padrão](standard-actions.md) em tabelas de sequências do módulo de mesclagem, o valor na coluna sequência deve ser o número de sequência de ação recomendado. Se o número de sequência no módulo de mesclagem for diferente daquele para a mesma ação na tabela de sequência de arquivos. msi, a ferramenta de mesclagem usará o número de sequência do arquivo. msi. Consulte as sequências sugeridas em [usando uma tabela de sequência](using-a-sequence-table.md) para os números de sequência recomendados de ações padrão.
+Ao usar [ações padrão](standard-actions.md) em tabelas de sequências do módulo de mesclagem, o valor na coluna sequência deve ser o número de sequência de ação recomendado. Se o número de sequência no módulo de mesclagem for diferente daquele para a mesma ação na tabela de sequência de arquivos .msi, a ferramenta de mesclagem usará o número de sequência do arquivo de .msi. Consulte as sequências sugeridas em [usando uma tabela de sequência](using-a-sequence-table.md) para os números de sequência recomendados de ações padrão.
 
 </dd> <dt>
 
 <span id="BaseAction"></span><span id="baseaction"></span><span id="BASEACTION"></span>Baseaction
 </dt> <dd>
 
-A coluna Baseaction pode conter uma ação padrão, uma ação personalizada especificada na tabela de ação personalizada do módulo de mesclagem ou uma caixa de diálogo especificada na tabela de diálogo do módulo. A coluna Baseaction é uma chave na coluna ação desta tabela. Ele não pode ser uma chave estrangeira em outra tabela ou tabela de mesclagem no arquivo de Windows Installer. Isso significa que cada ação padrão, ação personalizada ou caixa de diálogo listada na coluna Baseaction também deve ser listada na coluna ação de outro registro nesta tabela.
+A coluna Baseaction pode conter uma ação padrão, uma ação personalizada especificada na tabela de ação personalizada do módulo de mesclagem ou uma caixa de diálogo especificada na tabela de diálogo do módulo. A coluna Baseaction é uma chave na coluna ação desta tabela. ele não pode ser uma chave estrangeira em outra tabela ou tabela de mesclagem no arquivo de Windows Installer. Isso significa que cada ação padrão, ação personalizada ou caixa de diálogo listada na coluna Baseaction também deve ser listada na coluna ação de outro registro nesta tabela.
 
 </dd> <dt>
 

@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_
 ms:contentKeyID: 55103539
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 1943588cf4210a8961d81060d41920b492a8c674
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cae8f2cd9cd3438978645956d840bf34955e277e0686d9883b4e3f3b2a2f1def
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827423"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120017636"
 ---
 # <a name="jet_convert-members"></a>Membros do JET_CONVERT
 
@@ -21,7 +21,7 @@ Incluir membros herdados
 
 **Observação: essa API agora está obsoleta.**
 
-Opções de conversão para [JetCompact (JET_SESID, String, String, JET_PFNSTATUS, JET_CONVERT, CompactGrbit)](./api.jetcompact-method.md). Este recurso foi descontinuado no Windows Server 2003.
+Opções de conversão para [JetCompact (JET_SESID, String, String, JET_PFNSTATUS, JET_CONVERT, CompactGrbit)](./api.jetcompact-method.md). este recurso foi descontinuado no Windows Server 2003.
 
 O tipo de [JET_CONVERT](./jet-convert-class.md) expõe os membros a seguir.
 

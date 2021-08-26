@@ -50,12 +50,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: e026c3c3d0a29bbbd10ed2b5565708f0bcb0900c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 5559de847cf15b60e3af27f8b092605b8ca8c3bfd874d27ebab7a0edda454d14
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104457184"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119972206"
 ---
 # <a name="win32_physicalmemory-class"></a>\_Classe Win32 PhysicalMemory
 
@@ -136,7 +136,7 @@ SMBIOS-Type 17-Attributes. Representa a classificação.
 
 Esse valor é proveniente do membro **Attributes** da estrutura de **dispositivo de memória** nas informações de SMBIOS.
 
-**Windows server 2012 R2, Windows 8.1, Windows server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows server 2008 e Windows Vista:** Não há suporte para essa propriedade antes do Windows Server 2016 e do Windows 10.
+**Windows Server 2012 r2, Windows 8.1, Windows Server 2012, Windows 8, Windows server 2008 R2, Windows 7, Windows server 2008 e Windows Vista:** não há suporte para essa propriedade antes de Windows Server 2016 e Windows 10.
 
 </dd> <dt>
 
@@ -218,7 +218,7 @@ A velocidade de clock configurada do dispositivo de memória, em megahertz (MHz)
 
 Esse valor é proveniente do membro da **velocidade do relógio da memória configurada** da estrutura do **dispositivo de memória** nas informações do SMBIOS.
 
-**Windows server 2012 R2, Windows 8.1, Windows server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows server 2008 e Windows Vista:** Não há suporte para essa propriedade antes do Windows Server 2016 e do Windows 10.
+**Windows Server 2012 r2, Windows 8.1, Windows Server 2012, Windows 8, Windows server 2008 R2, Windows 7, Windows server 2008 e Windows Vista:** não há suporte para essa propriedade antes de Windows Server 2016 e Windows 10.
 
 </dd> <dt>
 
@@ -238,7 +238,7 @@ A tensão configurada para este dispositivo, em milivolts ou 0, se a tensão for
 
 Esse valor é proveniente do membro de **tensão configurado** da estrutura do **dispositivo de memória** nas informações do SMBIOS.
 
-**Windows server 2012 R2, Windows 8.1, Windows server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows server 2008 e Windows Vista:** Não há suporte para essa propriedade antes do Windows Server 2016 e do Windows 10.
+**Windows Server 2012 r2, Windows 8.1, Windows Server 2012, Windows 8, Windows server 2008 R2, Windows 7, Windows server 2008 e Windows Vista:** não há suporte para essa propriedade antes de Windows Server 2016 e Windows 10.
 
 </dd> <dt>
 
@@ -422,7 +422,7 @@ Proprietário
 
 </dt> <dd>
 
-SIMM
+Simm
 
 </dd> <dt>
 
@@ -433,7 +433,7 @@ SIMM
 
 </dt> <dd>
 
-ACTIVA
+Dimm
 
 </dd> <dt>
 
@@ -455,7 +455,7 @@ TSOP
 
 </dt> <dd>
 
-PGA
+Pga
 
 </dd> <dt>
 
@@ -466,18 +466,18 @@ PGA
 
 </dt> <dd>
 
-DIMM
+Rimm
 
 </dd> <dt>
 
 
 
- 12
+ (12)
 
 
 </dt> <dd>
 
-SODIMM
+Sodimm
 
 </dd> <dt>
 
@@ -499,7 +499,7 @@ SRIMM
 
 </dt> <dd>
 
-SMD
+Smd
 
 </dd> <dt>
 
@@ -554,7 +554,7 @@ SOIC
 
 </dt> <dd>
 
-LCCS
+Lcc
 
 </dd> <dt>
 
@@ -565,7 +565,7 @@ LCCS
 
 </dt> <dd>
 
-PLCC
+YORKC
 
 </dd> <dt>
 
@@ -576,7 +576,7 @@ PLCC
 
 </dt> <dd>
 
-BGA
+Bga
 
 </dd> <dt>
 
@@ -607,67 +607,67 @@ LGA
 **HotSwappable**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Se **for true**, esse componente de mídia física poderá ser substituído por um fisicamente diferente, mas equivalente a um, enquanto o pacote de contenção tiver a potência aplicada. Por exemplo, um componente de ventilador pode ser projetado para ser intercambiável. Todos os componentes que podem ser intercambiáveis são inerentemente removíveis e substituíveis.
+Se **TRUE**, esse componente de mídia física poderá ser substituído por um fisicamente diferente, mas equivalente, enquanto o pacote que o contém tem a potência aplicada. Por exemplo, um componente de ventilador pode ser projetado para ser trocado por hot-swapp. Todos os componentes que podem ser trocados por hot-swapp são inerentemente removíveis e substituíveis.
 
-Essa propriedade é herdada do [**CIM \_ PhysicalComponent**](cim-physicalcomponent.md).
+Essa propriedade é herdada de [**Cim \_ PhysicalComponent.**](cim-physicalcomponent.md)
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. \|Componente DMTF \| 1,5 "), [**DisplayName**](../wmisdk/standard-qualifiers.md) (" data de instalação ")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Data de instalação")
 </dt> </dl>
 
-Data e hora em que o objeto está instalado. Essa propriedade não precisa de um valor para indicar que o objeto está instalado.
+Data e hora em que o objeto é instalado. Essa propriedade não precisa de um valor para indicar que o objeto está instalado.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **InterleaveDataDepth**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| intensidade de \| dados intercalados do SMBIOS tipo 20")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("SMBIOS \| Type 20 \| Interleaved Data Depth")
 </dt> </dl>
 
-Número máximo de linhas consecutivas de dados de 16 bits não assinados que são acessados em uma única transferência intercalada do dispositivo de memória. Se o valor for 0 (zero), a memória não será intercalada.
+Número máximo de inteiros de 16 bits sem sinal de linhas consecutivas de dados que são acessadas em uma única transferência intercalada do dispositivo de memória. Se o valor for 0 (zero), a memória não será intercalada.
 
 </dd> <dt>
 
 **InterleavePosition**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. \|Endereços mapeados do dispositivo de memória DMTF \| 1,7 ")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. Endereços mapeados do dispositivo de memória DMTF \| \| 001.7")
 </dt> </dl>
 
-Posição da memória física em uma intercalação. Por exemplo, em uma intercalação 2:1, um valor de "1" indica que a memória está na posição "uniforme".
+Posição da memória física em uma intercalação. Por exemplo, em uma intercalação 2:1, um valor de "1" indica que a memória está na posição "even".
 
-Essa propriedade é herdada do [**CIM \_ PhysicalMemory**](cim-physicalmemory.md).
+Essa propriedade é herdada [**de CIM \_ PhysicalMemory.**](cim-physicalmemory.md)
 
 <dt>
 
@@ -694,7 +694,7 @@ Segunda posição
 
 </dd> <dt>
 
-**Manufacturer**
+**Fabricante**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -703,54 +703,54 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](../wmisdk/standard-qualifiers.md) (256)
+Qualificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
 </dt> </dl>
 
 Nome da organização responsável por produzir o elemento físico.
 
-Esse valor é proveniente do membro do **fabricante** da estrutura do **dispositivo de memória** nas informações do SMBIOS.
+Esse valor vem do membro **Fabricante** da estrutura **dispositivo de** memória nas informações do SMBIOS.
 
-Essa propriedade é herdada do [**CIM \_ físicoelement**](cim-physicalelement.md).
+Essa propriedade é herdada de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
 **MaxVoltage**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| tipo SMBIOS 17 \| tensão máxima")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("SMBIOS \| Tipo 17 \| Tensão máxima")
 </dt> </dl>
 
-A tensão de operação máxima para este dispositivo, em milivolts ou 0, se a tensão for desconhecida.
+A tensão operacional máxima para esse dispositivo, em milivolts ou 0, se a tensão for desconhecida.
 
-Esse valor é proveniente do membro de **tensão máxima** da estrutura do **dispositivo de memória** nas informações do SMBIOS.
+Esse valor vem do **membro de tensão** Máxima da estrutura **dispositivo de** memória nas informações do SMBIOS.
 
-**Windows server 2012 R2, Windows 8.1, Windows server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows server 2008 e Windows Vista:** Não há suporte para essa propriedade antes do Windows Server 2016 e do Windows 10.
+**Windows Server 2012 R2, Windows 8.1, Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008 e Windows Vista:** Essa propriedade não é suportada antes Windows Server 2016 e Windows 10.
 
 </dd> <dt>
 
-**Memorytype**
+**MemoryType**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. \|Dispositivo de memória DMTF \| 2,9 ")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. Dispositivo de memória DMTF \| \| 002.9")
 </dt> </dl>
 
-Tipo de memória física. Esse é um valor CIM que é mapeado para o valor SMBIOS. A propriedade **SMBIOSMemoryType** contém o tipo de memória de SMBIOS bruto.
+Tipo de memória física. Esse é um valor CIM mapeado para o valor SMBIOS. A **propriedade SMBIOSMemoryType** contém o tipo de memória SMBIOS bruto.
 
-Esse valor é proveniente do membro do **tipo de memória** da estrutura do **dispositivo de memória** nas informações do SMBIOS.
+Esse valor vem do membro **Tipo de** Memória da estrutura **dispositivo de** memória nas informações do SMBIOS.
 
-Essa propriedade é herdada do [**CIM \_ PhysicalMemory**](cim-physicalmemory.md).
+Essa propriedade é herdada [**de CIM \_ PhysicalMemory.**](cim-physicalmemory.md)
 
 <dt>
 
@@ -763,7 +763,7 @@ Essa propriedade é herdada do [**CIM \_ PhysicalMemory**](cim-physicalmemory.md
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outro** (1)
+<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -959,7 +959,7 @@ A tensão operacional mínima para este dispositivo, em milivolts ou 0, se a ten
 
 Esse valor é proveniente do membro de **tensão mínima** da estrutura do **dispositivo de memória** nas informações do SMBIOS.
 
-**Windows server 2012 R2, Windows 8.1, Windows server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows server 2008 e Windows Vista:** Não há suporte para essa propriedade antes do Windows Server 2016 e do Windows 10.
+**Windows Server 2012 r2, Windows 8.1, Windows Server 2012, Windows 8, Windows server 2008 R2, Windows 7, Windows server 2008 e Windows Vista:** não há suporte para essa propriedade antes de Windows Server 2016 e Windows 10.
 
 </dd> <dt>
 
@@ -1149,11 +1149,11 @@ Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("tipo de
 
 O tipo de memória do SMBIOS bruto. O valor da propriedade **memorytype** é um valor CIM que é mapeado para o valor SMBIOS.
 
-**Windows server 2012 R2, Windows 8.1, Windows server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows server 2008 e Windows Vista:** Não há suporte para essa propriedade antes do Windows Server 2016 e do Windows 10.
+**Windows Server 2012 r2, Windows 8.1, Windows Server 2012, Windows 8, Windows server 2008 R2, Windows 7, Windows server 2008 e Windows Vista:** não há suporte para essa propriedade antes de Windows Server 2016 e Windows 10.
 
 </dd> <dt>
 
-**Velocidade**
+**Rápida**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **UInt32**
@@ -1632,7 +1632,7 @@ $mt=get-WMIMemoryType($stick.MemoryType)
 
 <dl> <dt>
 
-[**\_PHYSICALMEMORY CIM**](cim-physicalmemory.md)
+[**CIM \_ PhysicalMemory**](cim-physicalmemory.md)
 </dt> <dt>
 
 [Classes de hardware do sistema de computador](computer-system-hardware-classes.md)

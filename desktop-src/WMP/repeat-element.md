@@ -1,9 +1,9 @@
 ---
 title: Elemento REPEAT
-description: O elemento REPEAT define o número de vezes que o Windows Media Player repete um ou mais elementos de entrada ou ENTRYREF.
+description: o elemento REPEAT define o número de vezes que Windows Media Player repete um ou mais elementos de entrada ou ENTRYREF.
 ms.assetid: 1a825f2b-29a7-4180-93df-51b3b5dd14e5
 keywords:
-- REPETIR elemento Windows Media Player
+- Windows Media Player de elemento REPEAT
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: aff7d5eaa9594882b029f0b02f4888d93fff01d9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 330eda0757acb29b48ed10636d8f479b6ebb1395d088020876c717a78f41ae6a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752595"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120002536"
 ---
 # <a name="repeat-element"></a>Elemento REPEAT
 
-O elemento **REPEAT** define o número de vezes que o Windows Media Player repete um ou mais elementos de **entrada** ou **ENTRYREF** .
+o elemento **REPEAT** define o número de vezes que Windows Media Player repete um ou mais elementos de **entrada** ou **ENTRYREF** .
 
 ``` syntax
 <REPEAT   
@@ -35,7 +35,7 @@ O elemento **REPEAT** define o número de vezes que o Windows Media Player repet
 
 **COUNT**
 
-Inteiro que representa o número de vezes que o Windows Media Player repete a **entrada** e os elementos **ENTRYREF** dentro desse escopo do elemento.
+o inteiro que representa o número de vezes que Windows Media Player repete os elementos **ENTRY** e **ENTRYREF** dentro desse escopo do elemento.
 
 ## <a name="parentchild-elements"></a>Elementos pai/filho
 
@@ -52,9 +52,9 @@ Inteiro que representa o número de vezes que o Windows Media Player repete a **
 
 ## <a name="remarks"></a>Comentários
 
-Esse elemento define o número de vezes que o Windows Media Player se repete ou faz um loop pelos clipes definidos pelos elementos **entry** e **ENTRYREF** dentro desse escopo do elemento. Somente o primeiro elemento **REPEAT** em um metarquivo é válido; os elementos **repetidos** subsequentes são ignorados.
+esse elemento define o número de vezes que Windows Media Player repetições ou loops por meio de, os clipes definidos pelos elementos **ENTRY** e **ENTRYREF** dentro desse escopo do elemento. Somente o primeiro elemento **REPEAT** em um metarquivo é válido; os elementos **repetidos** subsequentes são ignorados.
 
-Se nenhum atributo **Count** for definido, o conteúdo na **entrada** associada e nos elementos **ENTRYREF** repetirá um número infinito de vezes. Um valor de zero faz com que o Windows Media Player ignore o elemento **REPEAT** e reproduza o conteúdo uma vez.
+Se nenhum atributo **Count** for definido, o conteúdo na **entrada** associada e nos elementos **ENTRYREF** repetirá um número infinito de vezes. um valor de zero faz com que Windows Media Player ignore o elemento **REPEAT** e reproduza o conteúdo uma vez.
 
 ## <a name="examples"></a>Exemplos
 
@@ -92,10 +92,10 @@ Se nenhum atributo **Count** for definido, o conteúdo na **entrada** associada 
 
 <dl> <dt>
 
-[**Referência de elementos de metarquivo do Windows Media**](windows-media-metafile-elements-reference.md)
+[**Windows Referência de elementos de metarquivo de mídia**](windows-media-metafile-elements-reference.md)
 </dt> <dt>
 
-[**Referência do metarquivo do Windows Media**](windows-media-metafile-reference.md)
+[**Windows Referência de metarquivo de mídia**](windows-media-metafile-reference.md)
 </dt> </dl>
 
  
