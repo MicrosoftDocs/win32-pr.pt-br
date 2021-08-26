@@ -4,12 +4,12 @@ ms.assetid: feac7b8d-1dee-462c-89dc-bec1ba045da2
 title: Usando as funções de registro para consumir dados de contador
 ms.topic: article
 ms.date: 08/17/2020
-ms.openlocfilehash: ce2a4ba9992510cb296b037cfd98965410c48939
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 69f64f6e4cb44dd98d4f5097ca791054cd04c7e07219dc0e270cbfdff4cdbdc2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105758929"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120033116"
 ---
 # <a name="using-the-registry-functions-to-consume-counter-data"></a>Usando as funções de registro para consumir dados de contador
 
@@ -21,7 +21,7 @@ Os dados de desempenho não são realmente armazenados no registro. Chamar as fu
 > Normalmente, você não deve usar as funções de registro para consumir dados do contador. Em vez disso, você deve [usar as funções de PDH (auxiliar de dados de desempenho)](using-the-pdh-functions-to-consume-counter-data.md). As funções de PDH são mais fáceis de usar e evitam muitos problemas de desempenho e confiabilidade que podem ocorrer por meio do uso incorreto das funções de registro.
 
 > [!Note]
-> Você não poderá usar as funções de registro se estiver escrevendo aplicativos do Windows OneCore. Em vez disso, use as [funções de consumidor do PerfLib v2](using-the-perflib-functions-to-consume-counter-data.md).
+> você não poderá usar as funções de registro se estiver gravando Windows OneCore aplicativos. Em vez disso, use as [funções de consumidor do PerfLib v2](using-the-perflib-functions-to-consume-counter-data.md).
 
 As funções de registro são a API de nível baixo para coletar dados de **provedores v1**. As funções de registro também dão suporte à coleta de dados de **provedores v2** por meio de uma camada de conversão que chama as [funções de consumidor v2](using-the-perflib-functions-to-consume-counter-data.md).
 

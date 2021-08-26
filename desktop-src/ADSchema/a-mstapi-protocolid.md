@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 10538f66b98988fafa69d4fe2f3e70b47348c999
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b6fb09579ae7c97c9a44140cf634b9fab42f257401fb00091ac74209b0a4908b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104087044"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120066176"
 ---
 # <a name="ms-tapi-protocol-id-attribute"></a>atributo ms-TAPI-Protocol-ID
 
@@ -57,7 +57,7 @@ Esse atributo indica o tipo de conferência TAPI. Esse atributo é usado para de
 | ID do link                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| É de valor único       | True                                                              |
+| É de valor único       | Verdadeiro                                                              |
 | É indexado             | Falso                                                             |
 | No catálogo global      | Falso                                                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                      |
@@ -78,7 +78,7 @@ Esse atributo indica o tipo de conferência TAPI. Esse atributo é usado para de
 | ID do link                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| É de valor único       | True                                                              |
+| É de valor único       | Verdadeiro                                                              |
 | É indexado             | Falso                                                             |
 | No catálogo global      | Falso                                                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                      |
@@ -99,7 +99,7 @@ Esse atributo indica o tipo de conferência TAPI. Esse atributo é usado para de
 | ID do link                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| É de valor único       | True                                                              |
+| É de valor único       | Verdadeiro                                                              |
 | É indexado             | Falso                                                             |
 | No catálogo global      | Falso                                                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                      |
@@ -120,7 +120,7 @@ Esse atributo indica o tipo de conferência TAPI. Esse atributo é usado para de
 | ID do link                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| É de valor único       | True                                                              |
+| É de valor único       | Verdadeiro                                                              |
 | É indexado             | Falso                                                             |
 | No catálogo global      | Falso                                                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                      |
@@ -141,7 +141,7 @@ Esse atributo indica o tipo de conferência TAPI. Esse atributo é usado para de
 | ID do link                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| É de valor único       | True                                                              |
+| É de valor único       | Verdadeiro                                                              |
 | É indexado             | Falso                                                             |
 | No catálogo global      | Falso                                                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                      |

@@ -1,17 +1,17 @@
 ---
-description: PROPERTYKEYs e GUIDs em dispositivos portáteis do Windows
+description: PROPERTYKEYs e guids em Windows dispositivos portáteis
 ms.assetid: 3f9e9f29-37dd-47b0-997e-de81966efce2
-title: PROPERTYKEYs e GUIDs em dispositivos portáteis do Windows
+title: PROPERTYKEYs e guids em Windows dispositivos portáteis
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c28cbe76b76eda04852cd1afcbb11b85b0a185d1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 80100b043383074f58bc27fe8e9782c4fd6d2e4f3841a28f37035f39d23cc7c5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829083"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120054866"
 ---
-# <a name="propertykeys-and-guids-in-windows-portable-devices"></a>PROPERTYKEYs e GUIDs em dispositivos portáteis do Windows
+# <a name="propertykeys-and-guids-in-windows-portable-devices"></a>PROPERTYKEYs e guids em Windows dispositivos portáteis
 
 Uma propriedade ou comando é identificado por uma estrutura PROPERTYKEY. Uma estrutura PROPERTYKEY é composta de duas partes: um GUID (o membro fmtid) e um DWORD (o membro PID). A parte GUID é usada para indicar a categoria à qual a propriedade ou o comando pertence (ou seja, propriedades relacionadas pertencem à mesma categoria e os comandos relacionados pertencem à mesma categoria; portanto, eles terão o mesmo fmtid). A parte DWORD indica a propriedade ou a ID de comando e é usada para distinguir as propriedades ou comandos individuais dentro de uma categoria de propriedade ou comando (ou seja, os valores de PID para propriedades ou comandos na mesma categoria serão diferentes).
 

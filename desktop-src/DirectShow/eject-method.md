@@ -1,24 +1,24 @@
 ---
-description: O método EJECT ejeta ou insere um disco de ou para a unidade de DVD.
+description: O método Ejeta ejeta ou insere um disco de ou na unidade de DVD.
 ms.assetid: 855a19ee-97a6-4abd-872d-cc815d286582
-title: Método EJECT
+title: Método Ejetar
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cddfdd7182587bd16e1a7f656cd97f8458035408
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: f898e6a1808d8de7f6e9097dc743b12b0421206c6f0bdaa954f99e47e2d1eeec
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104456646"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120043326"
 ---
-# <a name="eject-method"></a>Método EJECT
+# <a name="eject-method"></a>Método Ejetar
 
 > [!Note]  
 > Esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
 
  
 
-O `Eject` método ejeta ou insere um disco de ou para a unidade de DVD.
+O `Eject` método ejeta ou insere um disco de ou na unidade de DVD.
 
 ``` syntax
         MSWebDVD.Eject()
@@ -30,7 +30,7 @@ Sem valor de retorno.
 
 ## <a name="remarks"></a>Comentários
 
-Em algumas unidades de DVD, esse método atua como uma alternância, ejeção e inserção em chamadas alternativas. Isso depende do hardware.
+Em algumas unidades de DVD, esse método atua como uma alternância, ejetando e inserindo em chamadas alternativas. Isso depende do hardware.
 
  
 

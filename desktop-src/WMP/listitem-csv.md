@@ -3,18 +3,18 @@ title: listitem.csv
 description: listitem.csv
 ms.assetid: d8f4bdb3-e7a5-4080-9ae7-555bf3695e9c
 keywords:
-- Armazenamentos online do Windows Media Player, listitem.csv
+- Windows Media Player lojas online listitem.csv
 - lojas online, listitem.csv
 - Digite 1 lojas online, listitem.csv
 - listitem.csv
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fe080c5b9426d5394a7d05c1bd293bba84014b0e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: eb6894bb30cac5dfc30ce2e98a91965de193611420291be301e3e5c06dd5509d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104363865"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120003366"
 ---
 # <a name="listitemcsv"></a>listitem.csv
 

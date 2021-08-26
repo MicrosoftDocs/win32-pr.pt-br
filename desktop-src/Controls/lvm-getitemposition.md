@@ -3,7 +3,7 @@ title: Mensagem de LVM_GETITEMPOSITION (commctrl. h)
 description: Recupera a posição de um item de exibição de lista. Você pode enviar essa mensagem explicitamente ou usando a \_ macro GetItemPosition do ListView.
 ms.assetid: e5841089-c34e-498e-b94c-45c845bfc747
 keywords:
-- Controles de LVM_GETITEMPOSITION de mensagens do Windows
+- controles de Windows de mensagem de LVM_GETITEMPOSITION
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f40b5899634e2f357068caa6ef96339be82f600b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 92d4f4a55f88b6af9828420871de80117ae492bf53c8a62883e43f928c4f5c70
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824672"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120002616"
 ---
 # <a name="lvm_getitemposition-message"></a>\_Mensagem GETITEMPOSITION LVM
 
@@ -43,7 +43,7 @@ Ponteiro para uma estrutura de [**ponto**](/previous-versions//dd162805(v=vs.85)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna **verdadeiro** se for bem-sucedido ou **false** caso contrário.
 
@@ -53,9 +53,9 @@ Retorna **verdadeiro** se for bem-sucedido ou **false** caso contrário.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

@@ -1,35 +1,35 @@
 ---
-title: Introdução com mensagens de toque do Windows
-description: Esta seção explica as tarefas associadas à obtenção do Windows Touch input para funcionar em seu aplicativo.
+title: Introdução com Windows mensagens de toque
+description: esta seção explica as tarefas associadas à obtenção de Windows entrada por toque para funcionar em seu aplicativo.
 ms.assetid: cd4e140e-a0b8-494f-82d9-bc0bfba55ecd
 keywords:
-- Windows Touch, mensagens
-- Windows Touch, registro para entrada por toque
-- Windows Touch, testando digitalizadores de entrada
+- Windows Toque, mensagens
+- Windows Toque, registro para entrada por toque
+- Windows Toque, testando digitalizadores de entrada
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b39048a4f9d643026396328093ae554c0eaa5d08
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 7d3f1daac2aacf8ac4c34ccbf9b1ab8be63058c45096e181c8b2eecf4f5d2de6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366152"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120055896"
 ---
-# <a name="getting-started-with-windows-touch-messages"></a>Introdução com mensagens de toque do Windows
+# <a name="getting-started-with-windows-touch-messages"></a>Introdução com Windows mensagens de toque
 
-Esta seção explica as tarefas associadas à obtenção do Windows Touch input para funcionar em seu aplicativo.
+esta seção explica as tarefas associadas à obtenção de Windows entrada por toque para funcionar em seu aplicativo.
 
-As etapas a seguir normalmente são executadas ao trabalhar com mensagens do Windows Touch:
+as etapas a seguir normalmente são executadas ao trabalhar com Windows mensagens de toque:
 
 1.  Teste os recursos do digitalizador de entrada.
-2.  Registre-se para receber mensagens do Windows Touch.
+2.  registre-se para receber Windows mensagens de toque.
 3.  Manipule as mensagens.
 
-A mensagem usada para o Windows Touch é o [**WM \_ Touch**](wm-touchdown.md). Essa mensagem indica os vários Estados de contato com um digitalizador.
+a mensagem usada para Windows toque é o [**WM \_ touch**](wm-touchdown.md). Essa mensagem indica os vários Estados de contato com um digitalizador.
 
 ## <a name="testing-the-capabilities-of-the-input-digitizer"></a>Testando os recursos do digitalizador de entrada
 
-A função [GetSystemMetrics](/windows/win32/api/winuser/nf-winuser-getsystemmetrics) pode ser usada para consultar os recursos do digitalizador de entrada passando o valor de *nIndex* do **\_ digitalizador SM**. [GetSystemMetrics](/windows/win32/api/winuser/nf-winuser-getsystemmetrics) retorna um campo de bits que indica se o dispositivo está pronto, se o dispositivo dá suporte à caneta ou ao toque, se o dispositivo de entrada está integrado ou externo e se o dispositivo dá suporte a várias entradas (Windows Touch). A tabela a seguir mostra os bits para os vários campos.
+A função [GetSystemMetrics](/windows/win32/api/winuser/nf-winuser-getsystemmetrics) pode ser usada para consultar os recursos do digitalizador de entrada passando o valor de *nIndex* do **\_ digitalizador SM**. [GetSystemMetrics](/windows/win32/api/winuser/nf-winuser-getsystemmetrics) retorna um campo de bits que indica se o dispositivo está pronto, se o dispositivo dá suporte à caneta ou ao toque, se o dispositivo de entrada está integrado ou externo e se o dispositivo dá suporte a várias entradas (Windows toque). A tabela a seguir mostra os bits para os vários campos.
 
 
 
@@ -39,9 +39,9 @@ A função [GetSystemMetrics](/windows/win32/api/winuser/nf-winuser-getsystemmet
 
 
 
- 
+ 
 
-Para testar o resultado a partir do comando para um recurso específico, você pode usar o operador de & bits e o bit específico que está testando. Por exemplo, para testar o Windows Touch, você testará que o bit de sétima ordem está definido (0x40 em Hex). O exemplo de código a seguir mostra como esses valores podem ser testados.
+Para testar o resultado a partir do comando para um recurso específico, você pode usar o operador de & bits e o bit específico que está testando. por exemplo, para testar Windows toque, você testará que o bit de sétima ordem está definido (0x40 em hex). O exemplo de código a seguir mostra como esses valores podem ser testados.
 
 
 ```C++
@@ -80,30 +80,30 @@ A tabela a seguir lista as constantes definidas no Windows. h para testar os rec
 
 
 
- 
+ 
 
 Verificar os valores de NID \_ \* é uma maneira útil de verificar os recursos do computador de um usuário para configurar seu aplicativo para entrada de toque, caneta ou não Tablet. Por exemplo, se você tiver uma interface do usuário dinâmica e quiser configurar automaticamente uma parte dela, poderá verificar se há NID de \_ \_ toque integrado, NID \_ multitoque e obter o número máximo de toques na primeira vez que um usuário executar o aplicativo.
 
 > [!Note]  
 > Há algumas limitações inerentes para o SM \_ GETSYSTEMMETRICS. Por exemplo, não há suporte para plug and Play. Por esse motivo, tenha cuidado ao usar essa função como meio de configuração permanente.
 
- 
+ 
 
-## <a name="registering-to-receive-windows-touch-input"></a>Registrando para receber a entrada do Windows Touch
+## <a name="registering-to-receive-windows-touch-input"></a>registrando para receber Windows entrada por toque
 
-Antes de receber a entrada do Windows Touch, os aplicativos devem primeiro se registrar para receber a entrada do Windows Touch. Ao registrar a janela do aplicativo, o aplicativo indica que ele é compatível com toque. Depois que o aplicativo registra sua janela, as notificações do Windows Touch driver são encaminhadas para o aplicativo quando a entrada é feita na janela. Quando o aplicativo é desligado, ele cancela o registro de sua janela para desabilitar as notificações.
+antes de receber Windows entrada por toque, os aplicativos devem primeiro se registrar para receber Windows entrada de toque. Ao registrar a janela do aplicativo, o aplicativo indica que ele é compatível com toque. depois que o aplicativo registra sua janela, as notificações do Windows driver de toque são encaminhadas para o aplicativo quando a entrada é feita na janela. Quando o aplicativo é desligado, ele cancela o registro de sua janela para desabilitar as notificações.
 
 > [!Note]  
 > [**WM \_**](wm-touchdown.md) As mensagens de toque são atualmente "ávidos". Depois que a primeira mensagem de toque for recebida em uma janela, todas as mensagens de toque serão enviadas para essa janela até que outra janela receba o foco.
 
- 
+ 
 
 > [!Note]  
 > Por padrão, você recebe mensagens de [**\_ gesto do WM**](wm-gesture.md) em vez de mensagens do [**WM \_ Touch**](wm-touchdown.md) . Se você chamar [**RegisterTouchWindow**](/windows/desktop/api/winuser/nf-winuser-registertouchwindow), você deixará de receber mensagens de **\_ gesto do WM** .
 
- 
+ 
 
-O código a seguir demonstra como um aplicativo pode se registrar para receber mensagens de toque do Windows em um aplicativo Win32.
+o código a seguir demonstra como um aplicativo pode se registrar para receber Windows mensagens de toque em um aplicativo Win32.
 
 
 ```C++
@@ -112,9 +112,9 @@ RegisterTouchWindow(hWnd, 0);
 
 
 
-## <a name="handling-windows-touch-messages"></a>Manipulando mensagens de toque do Windows
+## <a name="handling-windows-touch-messages"></a>manipulando Windows mensagens de toque
 
-Você pode lidar com as mensagens de toque do Windows de aplicativos em sistemas operacionais Windows de várias maneiras. Se você estiver programando um aplicativo de GUI, adicione o código dentro da `WndProc` função para lidar com as mensagens de interesse. Se você estiver programando uma MFC (Microsoft Foundation Class) ou um aplicativo gerenciado, adicione manipuladores para as mensagens de interesse. O exemplo de código a seguir mostra como as mensagens de toque podem ser tratadas do WndProc em um aplicativo baseado no Windows.
+você pode manipular as mensagens de Windows toque de aplicativos em sistemas operacionais Windows de várias maneiras. Se você estiver programando um aplicativo de GUI, adicione o código dentro da `WndProc` função para lidar com as mensagens de interesse. Se você estiver programando uma MFC (Microsoft Foundation Class) ou um aplicativo gerenciado, adicione manipuladores para as mensagens de interesse. o exemplo de código a seguir mostra como as mensagens de toque podem ser tratadas do WndProc em um aplicativo baseado em Windows.
 
 
 ```C++
@@ -200,9 +200,9 @@ Tocar na janela indicará os toques de uma janela pop-up.
 
 <dl> <dt>
 
-[Entrada por toque do Windows](guide-multi-touch-input.md)
+[Windows Entrada por toque](guide-multi-touch-input.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -14,12 +14,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 6e88d1b9b5b36815b1a833062c30e804e4db744a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 11a85c182511a866d3fb76f291b0a73ed0541fdee34b7e6f74c036b5446792db
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103662797"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120041856"
 ---
 # <a name="fileio_v0_name-class"></a>Classe de nome de \_ V0 FileIo \_
 

@@ -12,18 +12,18 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: b9254986bebadeffafaa832817f59194bfc58e12
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: a0ba22ce288535a8d940a5f70275f0152ffa559090d820b77df06ed3d1a9178d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107908854"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120043257"
 ---
 # <a name="fourccmap-class"></a>Classe FOURCCMap
 
 ![hierarquia de classe FOURCCMap](images/fourcc01.png)
 
-A classe **FOURCCMap** fornece conversão entre subtipos de mídia **GUID** e marcas de mídia de 32 bits **FOURCC** de estilo antigo. Nas APIs de multimídia originais do Windows, os tipos de mídia foram marcados com valores de 32 bits criados a partir de caracteres de 4 8 bits e eram conhecidos como s **FOURCC**. Os tipos de mídia do DirectShow têm **GUID** s para o subtipo, parcialmente porque são mais simples de criar (a criação de um novo **FOURCC** requer seu registro com a Microsoft). Como os s **FOURCC** são exclusivos, um mapeamento um-para-um tornou-se possível alocando um intervalo de 4.000.000.000 **GUID** s representando os s **FOURCC**. Esse intervalo é todos os **GUIDs** do formulário:
+A classe **FOURCCMap** fornece conversão entre subtipos de mídia **GUID** e marcas de mídia de 32 bits **FOURCC** de estilo antigo. nas APIs de multimídia originais do Windows, os tipos de mídia foram marcados com valores de 32 bits criados a partir de caracteres de 4 8 bits e eram conhecidos como s **FOURCC**. DirectShow tipos de mídia têm **GUID** s para o subtipo, parcialmente porque são mais simples de criar (a criação de um novo **FOURCC** requer seu registro com a Microsoft). Como os s **FOURCC** são exclusivos, um mapeamento um-para-um tornou-se possível alocando um intervalo de 4.000.000.000 **GUID** s representando os s **FOURCC**. Esse intervalo é todos os **GUIDs** do formulário:
 
 `XXXXXXXX-0000-0010-8000-00AA00389B71`
 
@@ -37,7 +37,7 @@ Os métodos [**GetFOURCC**](fourccmap-getfourcc.md) e [**SetFOURCC**](fourccmap-
 
 
 
-| Label | Valor |
+| Rótulo | Valor |
 |------------------------------------------|----------------------------------------------------------|
 | [**FOURCCMap**](fourccmap-fourccmap.md) | Método de construtor.                                      |
 | [**GetFOURCC**](fourccmap-getfourcc.md) | Recupera o **FOURCC** de um objeto **FOURCCMap** .    |

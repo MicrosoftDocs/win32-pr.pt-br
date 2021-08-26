@@ -1,21 +1,21 @@
 ---
 title: Acessando computadores remotos
-description: Você pode usar a API do log de eventos do Windows para acessar dados no computador local ou em um computador remoto.
+description: você pode usar a API de Log de eventos Windows para acessar dados no computador local ou em um computador remoto.
 ms.assetid: df789981-0e1c-4d68-9bd5-5d054f1724d4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e0063238560ddd7f1613e94b83ecc7f27900bb3
-ms.sourcegitcommit: c2a1c4314550ea9bd202d28adfcc7bfe6180932f
+ms.openlocfilehash: 0a64bf1b3bded6ba1c72231e85bc78fa7f486739741fea1391c869ad79b457e5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "104084406"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120032576"
 ---
 # <a name="accessing-remote-computers"></a>Acessando computadores remotos
 
-Você pode usar a API do log de eventos do Windows para acessar dados no computador local ou em um computador remoto. Para acessar dados em um computador remoto, você precisa chamar a função [**EvtOpenSession**](/windows/desktop/api/WinEvt/nf-winevt-evtopensession) para criar um contexto de sessão remota. Ao chamar essa função, você especifica o nome do computador remoto ao qual deseja se conectar, as credenciais do usuário a serem usadas para fazer a conexão e o tipo de autenticação a ser usado para autenticar o usuário. Para especificar o usuário atual, defina o domínio, o usuário e os membros da senha como **nulo**.
+você pode usar a API de Log de eventos Windows para acessar dados no computador local ou em um computador remoto. Para acessar dados em um computador remoto, você precisa chamar a função [**EvtOpenSession**](/windows/desktop/api/WinEvt/nf-winevt-evtopensession) para criar um contexto de sessão remota. Ao chamar essa função, você especifica o nome do computador remoto ao qual deseja se conectar, as credenciais do usuário a serem usadas para fazer a conexão e o tipo de autenticação a ser usado para autenticar o usuário. Para especificar o usuário atual, defina o domínio, o usuário e os membros da senha como **nulo**.
 
-Ao chamar a API de log de eventos do Windows, você passa o identificador para o contexto de sessão remota que a função [**EvtOpenSession**](/windows/desktop/api/WinEvt/nf-winevt-evtopensession) retorna. (Para acessar dados no computador local, passe **NULL** para especificar a sessão padrão.) Para acessar dados no computador remoto, o computador remoto deve habilitar a exceção "gerenciamento remoto do log de eventos" do firewall do Windows; caso contrário, quando você tentar usar o identificador de sessão, a chamada será um erro com o \_ servidor RPC S \_ \_ indisponível. O computador ao qual você está se conectando deve estar executando o Windows Vista ou posterior.
+ao chamar Windows API de Log de eventos, você passa o identificador para o contexto de sessão remota que a função [**EvtOpenSession**](/windows/desktop/api/WinEvt/nf-winevt-evtopensession) retorna. (Para acessar dados no computador local, passe **NULL** para especificar a sessão padrão.) para acessar dados no computador remoto, o computador remoto deve habilitar a exceção de Firewall Windows "gerenciamento de Log de eventos remotos"; caso contrário, quando você tentar usar o identificador de sessão, a chamada será um erro com o \_ servidor RPC S \_ \_ indisponível. o computador ao qual você está se conectando deve estar executando o Windows Vista ou posterior.
 
 O exemplo a seguir mostra como se conectar a um computador remoto.
 

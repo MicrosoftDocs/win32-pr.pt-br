@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 390ae779eaa7d640d23b40a7e6f6579e158bf6ca
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d8cdce3f01bc3a0ed28ee9ce758ef6cb136676a9bd8b4b314547103045e5b284
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105753365"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120056866"
 ---
 # <a name="cbasecontrolvideoisdefaultsourcerect-method"></a>Método CBaseControlVideo. IsDefaultSourceRect
 
@@ -40,7 +40,7 @@ virtual HRESULT IsDefaultSourceRect() = 0;
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará S \_ OK se o renderizador estiver usando a origem padrão; caso contrário, retornará S \_ false.
 
@@ -82,7 +82,7 @@ Neste exemplo, CVideoText é uma classe derivada de [**CBaseControlVideo**](cbas
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
+| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir Fluxos. h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 

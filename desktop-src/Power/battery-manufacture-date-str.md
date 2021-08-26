@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Poclass.h
 - Batclass.h
-ms.openlocfilehash: cdd3f067bc3ed2e3339710e0a5bd48c8f42e6525
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 30a70fed151304d189fa91b20106e1154ca0e9f4ea5225c52bf1023dbd218346
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105758926"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120032966"
 ---
 # <a name="battery_manufacture_date-structure"></a>Estrutura de data de \_ fabricação da bateria \_
 
@@ -73,9 +73,9 @@ A data é codificada no formato Gregoriano ou do calendário ocidental.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                                                                                                                                                                                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                                                                                                                                                                                |
-| parâmetro<br/>                   | <dl> <dt>Poclass. h; </dt> <dt>Batclass. h no Windows server 2008 R2, Windows 7, Windows Server 2008, Windows Vista, Windows Server 2003 e Windows XP</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                                                                                                                                                                                                         |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                                                                                                                                                                                |
+| Cabeçalho<br/>                   | <dl> <dt>Poclass. h;</dt> <dt>Batclass. h no Windows server 2008 R2, Windows 7, Windows server 2008, Windows Vista, Windows Server 2003 e Windows XP</dt> </dl> |
 
 
 

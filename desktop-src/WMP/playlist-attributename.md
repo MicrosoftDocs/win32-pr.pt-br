@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4560a7ca2766ee0bbadc582af878bca87e0834e2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 695e0ee00aca0fe7743a028e0e7830e1839c0b2f89b42a94e9ce1dbe29ef35ec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105784542"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120003206"
 ---
 # <a name="playlistattributename"></a>Playlist. attributeName
 
@@ -45,7 +45,7 @@ O número de atributos é recuperado pela propriedade **attributeCount** . Dado 
 
 Para recuperar o valor dessa propriedade, é necessário ter acesso de leitura à biblioteca. Para obter mais informações, consulte [acesso à biblioteca](library-access.md).
 
-Para obter informações sobre os atributos com suporte do Windows Media Player, consulte a [referência de atributo](attribute-reference.md)do Windows Media Player.
+para obter informações sobre os atributos com suporte pelo Windows Media Player, consulte a [referência de atributo](attribute-reference.md)Windows Media Player.
 
 Consulte a propriedade [attributeCount](playlist-attributecount.md) para obter o código de exemplo que usa essa propriedade.
 
@@ -76,10 +76,10 @@ Consulte a propriedade [attributeCount](playlist-attributecount.md) para obter o
 [**Playlist. setItemInfo**](playlist-setiteminfo.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Configurações. mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Configurações. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  
