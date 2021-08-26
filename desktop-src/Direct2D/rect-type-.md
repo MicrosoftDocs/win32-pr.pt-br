@@ -14,14 +14,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dfb9dd2703a843b9f09ba1404cd9acfddc25620ff2dc4a00566b4c1582847449
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2e5f56fd9cbcfd576a441d9199e7ec1114cfb9f3
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119075010"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884486"
 ---
-# <a name="recttype-function"></a>Função <Type> Rect
+# <a name="rectlttypegt-function"></a>Função de &lt; tipo de &gt; rect
 
 Cria uma estrutura de retângulo que armazena suas coordenadas usando o tipo de dados especificado.
 
@@ -72,7 +72,7 @@ Uma estrutura de retângulo que contém as coordenadas especificadas.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 7, Windows Vista com SP2 e Atualização de Plataforma para Windows aplicativos \[ UWP da área de trabalho do Vista \|\]<br/>                          |
+| Cliente mínimo com suporte<br/> | Windows 7, Windows Vista com SP2 e Atualização de Plataforma para Windows \[ aplicativos UWP da área de trabalho do Vista \|\]<br/>                          |
 | Servidor mínimo com suporte<br/> | Windows Server 2008 R2, Windows Server 2008 com SP2 e Atualização de Plataforma para aplicativos \[ UWP do Windows Server 2008 \|\]<br/> |
 | Telefone mínimo com suporte<br/>  | Windows Phone 8.1 \[ Windows Phone Silverlight 8.1 e Windows runtime\]<br/>                                                  |
 | Cabeçalho<br/>                   | <dl> <dt>D2d1helper.h</dt> </dl>                                                  |

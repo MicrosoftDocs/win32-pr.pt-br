@@ -1,19 +1,19 @@
 ---
-title: Sintaxe
+title: Syntax
 description: Aqui está a sintaxe para chamar FXC.exe, a ferramenta de compilador de efeito. Para obter um exemplo, consulte compilando offline.
 ms.assetid: 3aee89bd-02e1-4de1-8552-ba36814f8464
 keywords:
 - FXC, sintaxe
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6241a728b4835b11d10ea6e39d67fd73a8576cd7
-ms.sourcegitcommit: ae73f4dd3cf5a3c6a1ea7d191ca32a5b01f6686b
+ms.openlocfilehash: f9cae0305a8fdca5c9fd419cf610b0ebbb547331
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "105781560"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122880766"
 ---
-# <a name="syntax"></a>Sintaxe
+# <a name="syntax"></a>Syntax
 
 Aqui está a sintaxe para chamar FXC.exe, a ferramenta de compilador de efeito. Para obter um exemplo, consulte [compilando offline](dx-graphics-tools-fxc-using.md).
 
@@ -63,7 +63,7 @@ Descompacte o código de bytes do sombreador DX10 do primeiro arquivo. Os arquiv
 ##### <a name="dumpbin"></a>/dumpbin
 Carrega um arquivo binário em vez de compilar um sombreador.
 
-##### <a name="e-name"></a>/E <name>
+##### <a name="e-ltnamegt"></a>Nome da/e &lt;&gt;
 Ponto de entrada do sombreador. Se nenhum ponto de entrada for fornecido, **Main** será considerado o nome da entrada do sombreador.
 
 ##### <a name="enable_unbounded_descriptor_tables"></a>/enable_unbounded_descriptor_tables
@@ -137,43 +137,43 @@ Caminho de inclusão adicional.
 Literais hexadecimais de saída. Requer o \_47.dll D3dcompiler ou uma versão posterior da dll.
 
 ##### <a name="matchuavs"></a>/matchUAVs
-Corresponder as alocações do slot do UAV do sombreador de modelo no sombreador atual. Para obter mais informações, consulte <a href="#remarks">comentários</a>.
+Corresponder às alocações de slot UAV do sombreador de modelo no sombreador atual. Para obter mais informações, consulte <a href="#remarks">Comentários</a>.
 
 ##### <a name="mergeuavs"></a>/mergeUAVs
-Mescle as alocações do slot UAV do sombreador de modelo e o sombreador atual. Para obter mais informações, consulte <a href=""></a> <a href="#remarks">comentários</a>.
+Mesclar alocações de slot UAV do sombreador de modelo e do sombreador atual. Para obter mais informações, consulte <a href=""></a> <a href="#remarks">Comentários</a>.
 
 ##### <a name="ni"></a>/Ni
-Números de instrução de saída em listagens de assembly.
+Números de instrução de saída em listagem de assembly.
 
-##### <a name="no"></a>/
-Deslocamento de byte de instrução de saída em listagens de assembly. Quando você produzir o assembly, use////para anotar com o deslocamento de bytes para cada instrução.
+##### <a name="no"></a>/Não
+Deslocamento de byte de instrução de saída em listagem de assembly. Quando você produz assembly, use /No para anote-o com o deslocamento de byte para cada instrução.
 
 ##### <a name="nologo"></a>/nologo
 Suprime uma mensagem de direitos autorais.
 
 ##### <a name="od"></a>/Od
-Desabilitar otimizações. /OD implica/GFP,, mas a saída pode não ser idêntica a/OD/GFP.
+Desabilitar otimizações. /Od implica /Gfp, embora a saída possa não ser idêntica a /Od /Gfp.
 
 ##### <a name="op"></a>/Op
-Desabilitar preshaders (preterido).
+Desabilitar pré-sombreadores (preterido).
 
-##### <a name="o0-o1-o2-o3"></a>/O0/O1,/O2,/O3
+##### <a name="o0-o1-o2-o3"></a>/O0 /O1, /O2, /O3
 Níveis de otimização. O1 é a configuração padrão.
-- O0-desabilita a reordenação de instrução. Isso ajuda a reduzir a carga de registro e permite uma simulação de loop mais rápida.
-- O1-desabilita a reordenação de instrução para ps_3_0 e para cima.
-- O2-igual a O1. Reservado para uso futuro.
-- O3-igual a O1. Reservado para uso futuro.
+- O0 – desabilita a reordenação de instruções. Isso ajuda a reduzir a carga do registro e habilita a simulação de loop mais rápida.
+- O1 – desabilita a reordenação de instruções para ps_3_0 e superior.
+- O2 – o mesmo que O1. Reservado para uso futuro.
+- O3 – o mesmo que O1. Reservado para uso futuro.
 
 ##### <a name="p-file"></a>/P <*arquivo*>
-Pré-processar para o arquivo (deve ser usado sozinho).
+Pré-processamento para arquivo (deve ser usado sozinho).
 
 ##### <a name="qstrip_debug"></a>/Qstrip_debug
-Remova os dados de depuração do código de bytes do sombreador para 4_0 + perfis.
+Retirar dados de depuração do código de byte do sombreador para perfis 4_0+.
 
 ##### <a name="qstrip_priv"></a>/Qstrip_priv
-Remova os dados privados do código de bytes 4_0 + Shader. Remove dados privados (sequência arbitrária de bytes) do blob de sombreador (binário de sombreador compilado) que você inseriu anteriormente com a `/setprivate <file>` opção.
+Retirar os dados privados do código de byte do sombreador 4_0+. Remove dados privados (sequência arbitrária de bytes) do blob de sombreador (binário do sombreador compilado) que você insere anteriormente com a `/setprivate <file>` opção .
 
-Você deve especificar a opção/DUMPBIN com/Qstrip_priv. Por exemplo:
+Você deve especificar a opção /dumpbin com /Qstrip_priv. Por exemplo:
 
 ```console
 fxc /Qstrip_priv /dumpbin /Fo ps01.no.private.obj 
@@ -181,16 +181,16 @@ fxc /Qstrip_priv /dumpbin /Fo ps01.no.private.obj
 ```
 
 ##### <a name="qstrip_reflect"></a>/Qstrip_reflect
-Remova os dados de reflexo do código de bytes do sombreador para 4_0 + perfis.
+Retirar dados de reflexão do código de byte do sombreador para perfis 4_0+.
 
 ##### <a name="qstrip_rootsignature"></a>/Qstrip_rootsignature
-Remova a assinatura raiz do código de bytes do sombreador. Novo para o Direct3D 12.
+Retirar a assinatura raiz do código de byte do sombreador. Novidades do Direct3D 12.
 
 ##### <a name="res_may_alias"></a>/res_may_alias
-Suponha que UAVs/SRVs possa alias para cs_5_0 +. Requer o \_47.dll D3dcompiler ou uma versão posterior da dll.
+Suponha que os UAVs/SRVs possam ser alias para cs_5_0+. Requer o D3dcompiler \_47.dll ou uma versão posterior da DLL.
 
-##### <a name="setprivate-file"></a>*arquivo* de </SetPrivate>
-Adicione dados privados no arquivo fornecido ao blob de sombreador compilado. Insere o arquivo fornecido, que é tratado como um buffer bruto, para o blob de sombreador. Use/SetPrivate para adicionar dados privados ao compilar um sombreador. Ou use a opção/DUMPBIN com/SetPrivate para carregar um objeto de sombreador existente e, depois que o objeto estiver na memória, para adicionar o blob de dados privados. Por exemplo, use um único comando com/SetPrivate para adicionar dados privados a um blob de sombreador compilado:
+##### <a name="setprivate-file"></a>/setprivate <*arquivo*>
+Adicione dados privados no arquivo determinado ao blob de sombreador compilado. Incorpora o arquivo determinado, que é tratado como um buffer bruto, para o blob de sombreador. Use /setprivate para adicionar dados privados ao compilar um sombreador. Ou use a opção /dumpbin com /setprivate para carregar um objeto de sombreador existente e, depois que o objeto está na memória, para adicionar o blob de dados privado. Por exemplo, use um único comando com /setprivate para adicionar dados privados a um blob de sombreador compilado:
 
 ```console
 fxc /T ps_4_0 /Fo ps01.with.private.obj ps01.fx 
@@ -205,63 +205,63 @@ fxc /dumpbin /Fo ps01.with.private.obj ps01.no.private.obj
     /setprivate ps01.private.data
 ```
     
-##### <a name="setrootsignature-file"></a>*arquivo* de </setrootsignature>
-Anexe a assinatura raiz ao código de bytes do sombreador. Novo para o Direct3D 12.
+##### <a name="setrootsignature-file"></a>/setrootsignature <*arquivo*>
+Anexe a assinatura raiz ao código de bytes do sombreador. Novidades do Direct3D 12.
 
-##### <a name="shtemplate-file"></a>*arquivo* de </shtemplate>
-Use o arquivo de sombreador de modelo fornecido para recursos de mesclagem (/mergeUAVs) e correspondentes (/matchUAVs). Para obter mais informações, consulte <a href="#remarks">comentários</a>.
+##### <a name="shtemplate-file"></a>/shtemplate <*arquivo*>
+Use o arquivo de sombreador de modelo determinado para mesclar (/mergeUAVs) e recursos correspondentes (/matchUAVs). Para obter mais informações, consulte <a href="#remarks">Comentários</a>.
 
 ##### <a name="vd"></a>/Vd
-Desabilitar validação.
+Desabilite a validação.
 
-##### <a name="verifyrootsignature-file"></a>*arquivo* de </verifyrootsignature>
-Verifique o código de bytes do sombreador em relação à assinatura raiz. Novo para o Direct3D 12.
+##### <a name="verifyrootsignature-file"></a>/verifyrootsignature <*arquivo*>
+Verifique o código de byte do sombreador em relação à assinatura raiz. Novidades do Direct3D 12.
 
 ##### <a name="vi"></a>/Vi
 Exibir detalhes sobre o processo de inclusão.
 
-##### <a name="vn-name"></a>*Nome* </vn>
-Use nome como nome da variável no arquivo de cabeçalho.
+##### <a name="vn-name"></a>/Vn <*nome*>
+Use name como nome da variável no arquivo de header.
 
 ##### <a name="wx"></a>/WX
-Tratar avisos como erros.
+Trate os avisos como erros.
 
 ##### <a name="zi"></a>/Zi
 Habilitar informações de depuração.
 
 ##### <a name="zpc"></a>/Zpc
-Matrizes de pacote na ordem de coluna principal.
+Pack matrices in column-major order.
 
 ##### <a name="zpr"></a>/Zpr
-Matrizes de pacote na ordem de linha principal.
+Pack matrices in row-major order.
 
 ### <a name="filenames"></a>*Nomes de arquivos*
 
-\[nos \] arquivos que contêm o (s) sombreador (es) e/ou os efeitos.
+\[em \] Os arquivos que contêm os sombreador e/ou os efeitos.
 
 ## <a name="remarks"></a>Comentários
 
-Use as `/mergeUAVs` `/matchUAVs` Opções, e `/shtemplate` para alinhar os slots de associação UAV para uma cadeia de sombreadores.
+Use as opções , e para alinhar os slots de associação `/mergeUAVs` `/matchUAVs` `/shtemplate` UAV para uma cadeia de sombreadores.
 
-Suponha que você tenha sombreadores A. FX, B. FX e C. FX. Para alinhar os slots de associação de UAV para essa cadeia de sombreadores, você precisa de duas passagens de compilação:
+Suponha que você tenha sombreadores A.fx, B.fx e C.fx. Para alinhar os slots de associação UAV para essa cadeia de sombreadores, você precisa de duas passagens de compilação:
 
-**Para alinhar os slots de associação de UAV para uma cadeia de sombreadores**
+**Para alinhar os slots de associação UAV para uma cadeia de sombreadores**
 
-1.  Use/mergeUAVs para compilar sombreadores e especifique um blob de sombreador compilado anteriormente com/shtemplate. Por exemplo:
+1.  Use /mergeUAVs para compilar sombreadores e especifique um blob de sombreador compilado anteriormente com /shtemplate. Por exemplo:
     ```
     fxc.exe /T cs_5_0 C.fx /Fo C.o /mergeUAVs /shtemplate Btmp.o
     ```
-2.  Use/matchUAVs para compilar sombreadores e especifique o último blob de sombreador da primeira passagem com/shtemplate. Você pode compilar em qualquer ordem. Por exemplo:
+2.  Use /matchUAVs para compilar sombreadores e especifique o último blob de sombreador da primeira passagem com /shtemplate. Você pode compilar em qualquer ordem. Por exemplo:
     ```
     fxc.exe /T cs_5_0 A.fx /Fo A.o /matchUAVs /shtemplate C.o
     ```
-Você não precisa recompilar o C. FX na segunda passagem.
+Você não precisa recompilar C.fx na segunda passagem.
 
-Depois de executar as duas etapas de compilação anteriores, você pode usar um. o, B. o e o C. o como BLOBs de sombreador final com slots UAV alinhados.
+Depois de executar as duas passagens de compilação anteriores, você pode usar A.o, B.o e C.o como blobs de sombreador final com slots UAV alinhados.
 
 ## <a name="profiles"></a>Perfis
 
-Cada modelo de sombreador é rotulado com um perfil HLSL. Para compilar um sombreador em um modelo de sombreador específico, escolha o perfil de sombreador apropriado na tabela a seguir.
+Cada modelo de sombreador é rotulado com um perfil HLSL. Para compilar um sombreador em relação a um modelo de sombreador específico, escolha o perfil de sombreador apropriado na tabela a seguir.
 
 <table><thead><tr class="header"><th>Tipo de Sombreador</th><th>Perfis</th></tr></thead><tbody><tr class="odd"><td>Sombreador de computação</td><td><dl> cs_4_0<br />
 cs_4_1<br />

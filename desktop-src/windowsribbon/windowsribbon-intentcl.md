@@ -1,29 +1,29 @@
 ---
-title: Compilando marcação de faixa de opções
-description: Para que a estrutura Windows faixa de opções consuma o arquivo de marcação faixa de opções, o arquivo de marcação deve ser compilado em um arquivo de recurso de formato binário.
+title: Compilando marcação da faixa de medida
+description: para o Windows estrutura da faixa de faixas consumir o arquivo de marcação da faixa de faixas, o arquivo de marcação deve ser compilado em um arquivo de recurso de formato binário.
 ms.assetid: ef9fea92-8c67-461d-9d74-2e259e407fb0
 keywords:
-- Windows Faixa de opções, marcação de compilação
-- Faixa de opções, marcação de compilação
-- Windows Faixa de opções, fluxo de trabalho do compilador
-- Faixa de opções, fluxo de trabalho do compilador
-- Windows Ribbon,UI Command Compiler (UICC.exe)
-- Ribbon,Compilador de Comando da Interface do Usuário (UICC.exe)
-- Compilador de comando da interface do usuário (UICC.exe)
-- UICC.exe (compilador de comando da interface do usuário)
-- compilando uma marcação Windows faixa de opções
+- Windows Faixa de faixas, compilando marcação
+- Faixa de faixas, compilando marcação
+- Windows Faixa de medida, fluxo de trabalho do compilador
+- Faixa de medida, fluxo de trabalho do compilador
+- Windows Faixa de comandos, compilador de comando de interface do usuário (UICC.exe)
+- Faixa de comandos, compilador de comando de interface do usuário (UICC.exe)
+- Compilador de comando de interface do usuário (UICC.exe)
+- UICC.exe (compilador de comando de interface do usuário)
+- compilando marcação de faixa de Windows
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 85534a05b3bde59cc2ec0eec482d8c3b47e898d39ad988c595fbac33eb5e9f36
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cefd64103ceb501e8f4d23e937a242e910b0cad5
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119932556"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884908"
 ---
-# <a name="compiling-ribbon-markup"></a>Compilando marcação de faixa de opções
+# <a name="compiling-ribbon-markup"></a>Compilando marcação da faixa de medida
 
-Para que a estrutura Windows Faixa [](windowsribbon-schema.md) de Opções consuma o arquivo de marcação faixa de opções, o arquivo de marcação deve ser compilado em um arquivo de recurso de formato binário. Um compilador de marcação dedicado, o UICC (Compilador de Comando da Interface do Usuário), está incluído com o SDK (Software Development Kit) do Windows (7.0 ou posterior) para essa finalidade. Além de compilar a versão binária da marcação, o UICC gera um arquivo de título de definição de ID (.h) que expõe todos os elementos de marcação para o aplicativo host da Faixa de Opções e um arquivo de recurso (.rc) usado para vincular recursos de imagem e cadeia de caracteres ao aplicativo host no momento da compilação.
+para o Windows estrutura da faixa de faixas consumir o arquivo de [marcação da faixa de faixas](windowsribbon-schema.md) , o arquivo de marcação deve ser compilado em um arquivo de recurso de formato binário. um compilador de marcação dedicado, o UICC (compilador de comando de interface do usuário), está incluído com o SDK (Software Development Kit) do Windows (7,0 ou posterior) para essa finalidade. Além de compilar a versão binária da marcação, o UICC gera um arquivo de cabeçalho de definição de ID (. h) que expõe todos os elementos de marcação para o aplicativo host da faixa de versões e um arquivo de recurso (. rc) que é usado para vincular recursos de imagem e de cadeia de caracteres ao aplicativo host no momento da compilação.
 
 -   [Fluxo de trabalho do compilador](#compiler-workflow)
 -   [Sintaxe de linha de comando](#command-line-syntax)
@@ -33,13 +33,13 @@ Para que a estrutura Windows Faixa [](windowsribbon-schema.md) de Opções consu
 
 ## <a name="compiler-workflow"></a>Fluxo de trabalho do compilador
 
-O fluxo de trabalho do compilador de marcação ribbon é ilustrado no diagrama a seguir.
+O fluxo de trabalho do compilador de marcação da faixa de opções é ilustrado no diagrama a seguir.
 
-![diagrama mostrando o fluxo de trabalho do compilador de marcação da faixa de opções.](images/overviews/overviews-intentcl.png)
+![diagrama mostrando o fluxo de trabalho do compilador de marcação da faixa de Ribbon.](images/overviews/overviews-intentcl.png)
 
 ## <a name="command-line-syntax"></a>Sintaxe da linha de comando
 
-A sintaxe de linha de comando para o compilador de marcação da Faixa de Opções é mostrada no exemplo a seguir.
+A sintaxe de linha de comando para o compilador de marcação da faixa de opções é mostrada no exemplo a seguir.
 
 
 ```
@@ -61,8 +61,8 @@ Os argumentos e as opções para essa ferramenta são descritos na tabela a segu
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -72,16 +72,16 @@ Os argumentos e as opções para essa ferramenta são descritos na tabela a segu
 </thead>
 <tbody>
 <tr class="odd">
-<td>/header:<headerFile></td>
-<td>Gere um arquivo de header chamado que contém os símbolos de recurso <headerFile> da ID de comando de marcação. Se omitido, um arquivo de header não será gerado.</td>
+<td>/header: &lt; HeaderFile&gt;</td>
+<td>Gere um arquivo de cabeçalho chamado &lt; HeaderFile &gt; que contém os símbolos de recurso de ID de comando de marcação. Se omitido, um arquivo de cabeçalho não será gerado.</td>
 </tr>
 <tr class="even">
-<td>/res:<resourceFile></td>
-<td>Gere um arquivo de recurso chamado que vincula todos os recursos de imagem e cadeia de caracteres, o arquivo de marcação binária e o arquivo de header para o aplicativo host no <resourceFile> momento do build. Se omitido, um arquivo de recurso não será gerado.</td>
+<td>/res<resourceFile></td>
+<td>Gerar um arquivo de recurso chamado <resourceFile> que vincula todos os recursos de imagem e de cadeia de caracteres, o arquivo de marcação binária e o arquivo de cabeçalho ao aplicativo host no momento da compilação. Se omitido, um arquivo de recurso não será gerado.</td>
 </tr>
 <tr class="odd">
-<td>/name:<ribbonName></td>
-<td>O nome do recurso para o arquivo de marcação binário registrado no <resourceFile> . O padrão é APPLICATION_RIBBON.</td>
+<td>/Name<ribbonName></td>
+<td>O nome do recurso para o arquivo de marcação binária que é registrado no <resourceFile> . O padrão é APPLICATION_RIBBON.</td>
 </tr>
 <tr class="even">
 <td>/W{0\1\2}</td>
@@ -94,11 +94,11 @@ Os argumentos e as opções para essa ferramenta são descritos na tabela a segu
 </tr>
 <tr class="even">
 <td>1<br/></td>
-<td>Somente mensagens de erro e aviso.<br/></td>
+<td>Mensagens de erro e de aviso apenas.<br/></td>
 </tr>
 <tr class="odd">
 <td><strong>2</strong><br/></td>
-<td>Padrão. <br/> Mensagens de erro, aviso e informações.<br/></td>
+<td>Padrão. <br/> Mensagens de erro, aviso e informativas.<br/></td>
 </tr>
 </tbody>
 </table>
@@ -114,7 +114,7 @@ Os argumentos e as opções para essa ferramenta são descritos na tabela a segu
 
 ### <a name="example"></a>Exemplo
 
-O exemplo a seguir demonstra como usar o compilador de marcação Faixa de Opções para gerar um conjunto típico de arquivos de recurso para um aplicativo de Faixa de Opções.
+O exemplo a seguir demonstra como usar o compilador de marcação da faixa de opções para gerar um conjunto típico de arquivos de recurso para um aplicativo da faixa de opções.
 
 `UICC.exe RibbonMarkup.xml RibbonMarkup.bml /header:RibbonIds.h /res:RibbonUI.rc`
 
@@ -122,10 +122,10 @@ O exemplo a seguir demonstra como usar o compilador de marcação Faixa de Opç�
 
 <dl> <dt>
 
-[Declarando comandos e controles com marcação de faixa de opções](windowsribbon-schema.md)
+[Declarando comandos e controles com marcação de faixa de medida](windowsribbon-schema.md)
 </dt> <dt>
 
-[Criando um aplicativo de faixa de opções](windowsribbon-stepbystep.md)
+[Criando um aplicativo de faixa de faixas](windowsribbon-stepbystep.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: O método Connect conecta o NPP à rede usando uma placa de interface de rede especificada e fornece informações de configuração sobre a conexão.
+description: o método Conexão conecta o NPP à rede usando uma placa de interface de rede especificada e fornece informações de configuração sobre a conexão.
 ms.assetid: aae9ff9c-d077-4db2-a900-9916e4f7bb8b
-title: 'Método IDelaydC:: Connect (Netmon. h)'
+title: 'método IDelaydC:: Conexão (Netmon. h)'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: b2cd1fb5ad694493c4a225aa3bf109d7775b9dd6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e91db1dae0c67c5f35e46841867d3d3e15058cf0
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826829"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122477293"
 ---
-# <a name="idelaydcconnect-method"></a>Método IDelaydC:: Connect
+# <a name="idelaydcconnect-method"></a>método IDelaydC:: Conexão
 
-O método **Connect** conecta o NPP à rede usando uma placa de interface de rede especificada e fornece informações de configuração sobre a conexão.
+o método **Conexão** conecta o NPP à rede usando uma placa de interface de rede especificada e fornece informações de configuração sobre a conexão.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -71,7 +71,7 @@ Identificador para um BLOB de erro que contém informações adicionais sobre o 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se esse método for bem-sucedido, o valor de retorno será NMERR com \_ êxito.
 
@@ -79,65 +79,21 @@ Se o método não for bem-sucedido, o valor de retorno será um dos seguintes c�
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Código de retorno</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><dl> <dt><strong>NMERR_ALREADY_CONNECTED</strong></dt> </dl></td>
-<td>Esta instância do objeto COM NPP já está conectada à rede.<br/></td>
-</tr>
-<tr class="even">
-<td><dl> <dt><strong>NMERR_BLOB_CONVERSION_ERROR</strong></dt> </dl></td>
-<td>O BLOB de configuração está corrompido. Esse erro é gerado pela chamada <strong>IDelaydC:: Configure</strong> .<br/></td>
-</tr>
-<tr class="odd">
-<td><dl> <dt><strong>NMERR_BLOB_ENTRY_DOES_NOT_EXIST</strong></dt> </dl></td>
-<td>O BLOB de entrada especificado por <em>hInputBlob</em> não tem uma entrada necessária para executar esta operação. Esse erro pode ser gerado pela chamada <strong>IDelaydC:: Connect</strong> ou <strong>IDelaydC:: Configure</strong> . Examine o BLOB de erro retornado por <em>hErrorBlob</em> para determinar qual entrada não foi encontrada.<br/></td>
-</tr>
-<tr class="even">
-<td><dl> <dt><strong>NMERR_BLOB_NOT_INITIALIZED</strong></dt> </dl></td>
-<td>A função <strong>createBlob</strong> não foi chamada. Esse erro é gerado pela chamada <strong>IDelaydC:: Configure</strong> .<br/></td>
-</tr>
-<tr class="odd">
-<td><dl> <dt><strong>NMERR_BLOB_STRING_INVALID</strong></dt> </dl></td>
-<td>A cadeia de caracteres não é terminada em nulo. Esse erro é gerado pela chamada <strong>IDelaydC:: Configure</strong> .<br/></td>
-</tr>
-<tr class="even">
-<td><dl> <dt><strong>NMERR_ILLEGAL_TRIGGER</strong></dt> </dl></td>
-<td>A parte do gatilho do BLOB de entrada está corrompida. Esse erro é gerado pela chamada <strong>IDelaydC:: Configure</strong> .<br/></td>
-</tr>
-<tr class="odd">
-<td><dl> <dt><strong>NMERR_INVALID_BLOB</strong></dt> </dl></td>
-<td>O objeto especificado em <em>hInputBlob</em> não é um blob. Esse erro é gerado pela chamada <strong>IDelaydC:: Configure</strong> .<br/></td>
-</tr>
-<tr class="even">
-<td><dl> <dt><strong>NMERR_NO_DEFAULT_CAPTURE_DIRECTORY</strong></dt> </dl></td>
-<td>O diretório de captura padrão não foi definido no registro. Use o caminho a seguir para definir o diretório de captura. <br/>
-<pre class="syntax" data-space="preserve"><code>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\nm\Parameters\CapturePath</code></pre></td>
-</tr>
-<tr class="odd">
-<td><dl> <dt><strong>NMERR_OUT_OF_MEMORY</strong></dt> </dl></td>
-<td>Não havia memória disponível para executar esta operação. Esse erro é gerado pela chamada <strong>IDelaydC:: Configure</strong> .<br/></td>
-</tr>
-<tr class="even">
-<td><dl> <dt><strong>NMERR_TIMEOUT</strong></dt> </dl></td>
-<td>O tempo limite da solicitação foi atingido. Esse erro é gerado pela chamada <strong>IDelaydC:: Configure</strong> .<br/></td>
-</tr>
-<tr class="odd">
-<td><dl> <dt><strong>NMERR_UPLEVEL_BLOB</strong></dt> </dl></td>
-<td>O número de versão do BLOB especificado em <em>hInputBlob</em> está incorreto. Esse erro é gerado pela chamada <strong>IDelaydC:: Configure</strong> .<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Código de retorno | Descrição | 
+|-------------|-------------|
+| <dl><dt><strong>NMERR_ALREADY_CONNECTED</strong></dt></dl> | Esta instância do objeto COM NPP já está conectada à rede.<br /> | 
+| <dl><dt><strong>NMERR_BLOB_CONVERSION_ERROR</strong></dt></dl> | O BLOB de configuração está corrompido. Esse erro é gerado pela chamada <strong>IDelaydC:: Configure</strong> .<br /> | 
+| <dl><dt><strong>NMERR_BLOB_ENTRY_DOES_NOT_EXIST</strong></dt></dl> | O BLOB de entrada especificado por <em>hInputBlob</em> não tem uma entrada necessária para executar esta operação. esse erro pode ser gerado pela chamada <strong>IDelaydC:: Conexão</strong> ou <strong>IDelaydC:: Configure</strong> . Examine o BLOB de erro retornado por <em>hErrorBlob</em> para determinar qual entrada não foi encontrada.<br /> | 
+| <dl><dt><strong>NMERR_BLOB_NOT_INITIALIZED</strong></dt></dl> | A função <strong>createBlob</strong> não foi chamada. Esse erro é gerado pela chamada <strong>IDelaydC:: Configure</strong> .<br /> | 
+| <dl><dt><strong>NMERR_BLOB_STRING_INVALID</strong></dt></dl> | A cadeia de caracteres não é terminada em nulo. Esse erro é gerado pela chamada <strong>IDelaydC:: Configure</strong> .<br /> | 
+| <dl><dt><strong>NMERR_ILLEGAL_TRIGGER</strong></dt></dl> | A parte do gatilho do BLOB de entrada está corrompida. Esse erro é gerado pela chamada <strong>IDelaydC:: Configure</strong> .<br /> | 
+| <dl><dt><strong>NMERR_INVALID_BLOB</strong></dt></dl> | O objeto especificado em <em>hInputBlob</em> não é um blob. Esse erro é gerado pela chamada <strong>IDelaydC:: Configure</strong> .<br /> | 
+| <dl><dt><strong>NMERR_NO_DEFAULT_CAPTURE_DIRECTORY</strong></dt></dl> | O diretório de captura padrão não foi definido no registro. Use o caminho a seguir para definir o diretório de captura. <br /><pre class="syntax" data-space="preserve"><code>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\nm\Parameters\CapturePath</code></pre> | 
+| <dl><dt><strong>NMERR_OUT_OF_MEMORY</strong></dt></dl> | Não havia memória disponível para executar esta operação. Esse erro é gerado pela chamada <strong>IDelaydC:: Configure</strong> .<br /> | 
+| <dl><dt><strong>NMERR_TIMEOUT</strong></dt></dl> | O tempo limite da solicitação foi atingido. Esse erro é gerado pela chamada <strong>IDelaydC:: Configure</strong> .<br /> | 
+| <dl><dt><strong>NMERR_UPLEVEL_BLOB</strong></dt></dl> | O número de versão do BLOB especificado em <em>hInputBlob</em> está incorreto. Esse erro é gerado pela chamada <strong>IDelaydC:: Configure</strong> .<br /> | 
+
 
 
 
@@ -145,7 +101,7 @@ Se o método não for bem-sucedido, o valor de retorno será um dos seguintes c�
 
 ## <a name="remarks"></a>Comentários
 
-Quando o método **Connect** é chamado, o NPP chama automaticamente **IDelaydC:: Configure** usando o blob fornecido pelo *hInputBlob*. Observe que todos os códigos de erro retornados pela chamada para **IDelaydC:: Configure** são passados de volta e retornados pela chamada **IDelaydC:: Connect** .
+quando o método **Conexão** é chamado, o NPP chama automaticamente **IDelaydC:: Configure** usando o BLOB fornecido pelo *hInputBlob*. observe que todos os códigos de erro retornados pela chamada para **IDelaydC:: Configure** são passados de volta e retornados pela chamada **IDelaydC:: Conexão** .
 
 Esse método deve ser chamado antes que você possa iniciar a captura de quadros. Observe que quando você se conecta à rede usando esse método, você deve continuar a usar os métodos de interface **IDelaydC** para capturar quadros.
 

@@ -1,21 +1,21 @@
 ---
 description: O termo ISABOUT corresponde a colunas em um grupo de um ou mais termos de pesquisa.
 ms.assetid: e2629c4c-4b44-4427-ac1d-17f55fd969e3
-title: '@ SOBRE o termo'
+title: Termo ISABOUT
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5665e7bf62da4858cf2e7d68e65d0f42771903d55e3189db12f19cdd5414530d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ee772bbd3be1f9ef3924989dfbaa2a9afd77d4a6
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118969605"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122627352"
 ---
-# <a name="isabout-term"></a>@ SOBRE o termo
+# <a name="isabout-term"></a>Termo ISABOUT
 
 **Preterido**
 
-Este recurso foi removido a partir de Windows 8. Se você escrever novos aplicativos, evite usar esse recurso preterido. Se você modificar os aplicativos existentes, será altamente recomendável remover qualquer dependência desse recurso.
+Esse recurso foi removido a partir Windows 8. Se você escrever novos aplicativos, evite usar esse recurso preterido. Se você modificar aplicativos existentes, será incentivado a remover qualquer dependência desse recurso.
 
 O termo ISABOUT corresponde a colunas em um grupo de um ou mais termos de pesquisa. Ele tem a seguinte sintaxe:
 
@@ -26,9 +26,9 @@ ISABOUT(<components>) [RANKMETHOD <method>]
 
 
 
-O Termo RANKMETHOD opcional especifica o método de cálculo usado para classificar os documentos que correspondem a um ou mais dos componentes. Se nenhum RANKMETHOD for especificado, o método de classificação de coeficiente Jaccard padrão será usado.
+O termo opcional RANKMETHOD especifica o método de cálculo usado para classificar os documentos que corresponderem a um ou mais dos componentes. Se nenhum RANKMETHOD for especificado, o método de classificação padrão Coeficiente de Jaccard será usado.
 
-O termo ISABOUT pode ter um ou mais componentes. As colunas especificadas no predicado [Contains](-search-sql-contains.md) são testadas em relação a cada componente. O documento será incluído nos resultados se pelo menos um dos componentes corresponder. Vírgulas separam vários componentes.
+O termo ISABOUT pode ter um ou mais componentes. As colunas especificadas no predicado [CONTAINS](-search-sql-contains.md) são testadas em relação a cada componente. O documento será incluído nos resultados se pelo menos um dos componentes corresponde. Vírgulas separam vários componentes.
 
 A parte do componente tem a seguinte sintaxe:
 
@@ -39,21 +39,21 @@ A parte do componente tem a seguinte sintaxe:
 
 
 
-Você pode usar a condição de peso opcional para alterar a importância relativa de cada termo dentro do termo ISABOUT. Se nenhum termo de peso for aplicado, o peso de 1,0 padrão será implícito.
+Você pode usar o termo WEIGHT opcional para alterar a importância relativa de cada termo dentro do termo ISABOUT. Se nenhum termo de peso for aplicado, o peso padrão de 1,0 será implícito.
 
-A tabela a seguir descreve os tipos de termo de correspondência possíveis.
+A tabela a seguir descreve possíveis tipos de termos de combinação.
 
 
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
-<th>Tipo</th>
+<th>Type</th>
 <th>Descrição</th>
 <th>Exemplos</th>
 </tr>
@@ -61,11 +61,11 @@ A tabela a seguir descreve os tipos de termo de correspondência possíveis.
 <tbody>
 <tr class="odd">
 <td>Word</td>
-<td>Uma única palavra sem espaços ou outra Pontuação.</td>
+<td>Uma única palavra sem espaços ou outra pontuação.</td>
 <td><span data-codelanguage=""></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -83,7 +83,7 @@ A tabela a seguir descreve os tipos de termo de correspondência possíveis.
 <span data-codelanguage=""></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -97,12 +97,12 @@ A tabela a seguir descreve os tipos de termo de correspondência possíveis.
 </tr>
 <tr class="odd">
 <td>Curinga</td>
-<td>Palavras ou frases com o asterisco (*) adicionado ao final. Para obter mais informações, consulte <a href="-search-sql-wildcards.md">usando curingas no predicado CONTAINS</a>.</td>
+<td>Palavras ou frases com o asterisco (*) adicionado ao final. Para obter mais informações, <a href="-search-sql-wildcards.md">consulte Using Wildcards in the CONTAINS Predicate</a>.</td>
 <td><div class="code">
 <span data-codelanguage=""></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -124,9 +124,9 @@ and &quot;compulsory&quot;</code></pre></td>
 
  
 
-## <a name="isabout-column-weighting"></a>Issobre o peso da coluna
+## <a name="isabout-column-weighting"></a>Ponderação de coluna ISABOUT
 
-O termo ISABOUT classifica os documentos correspondentes com base no quão próximo cada documento corresponde ao conjunto de termos de correspondência na consulta. Você pode usar o peso de coluna para posicionar mais importância na correspondência de alguns termos de correspondência do que outros. Cada termo de correspondência no termo ISABOUT pode ter um valor de peso aplicado. O peso é aplicado a um único termo de correspondência e é indicado pela palavra-chave "WEIGHT". O termo de peso tem duas sintaxes alternativas:
+O termo ISABOUT classifica documentos correspondentes com base na proximidade com que cada documento corresponde ao conjunto de termos de correspondência na consulta. Você pode usar a ponderação de coluna para dar mais importância à correspondência de alguns termos de correspondência do que outros. Cada termo de combinação no termo ISABOUT pode ter um valor de peso aplicado. O peso é aplicado a um único termo de combinação e é indicado pela palavra-chave "WEIGHT". O termo WEIGHT tem duas sintaxes alternativas:
 
 
 ```
@@ -136,13 +136,13 @@ O termo ISABOUT classifica os documentos correspondentes com base no quão próx
 
 
 
-O valor de peso deve estar entre 0 e 1,0, com no máximo três casas decimais. A especificação de um valor de peso fora desse intervalo resulta em uma mensagem de erro. O valor de classificação não ponderada para um termo é multiplicado pelo valor de peso do termo.
+O valor de peso deve estar entre 0 e 1,0, com no máximo três casas decimais. Especificar um valor de peso fora desse intervalo resulta em uma mensagem de erro. O valor de classificação sem peso para um termo é multiplicado pelo valor de peso para o termo.
 
-Se nenhum peso for especificado para um termo de correspondência, o valor padrão, 1,0, será implícito.
+Se nenhum peso for especificado para um termo de combinação, o valor padrão, 1,0, será implícito.
 
 ### <a name="example"></a>Exemplo
 
-O exemplo a seguir aplica pesos aos dois termos de correspondência, usando a sintaxe longa e curta para valores de peso.
+O exemplo a seguir aplica pesos aos dois termos de combinação ISABOUT, usando a sintaxe longa e curta para valores de peso.
 
 
 ```

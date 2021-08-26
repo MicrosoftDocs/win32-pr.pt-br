@@ -7,18 +7,18 @@ MSHAttr:
 title: PurposeGroups
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 370cf6b0dc13848ca21a2a06e0b9806d753878c5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d3b158938e1a41f6ab8d3f1df0cae6a2166bc21c
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105763817"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122630932"
 ---
 # <a name="span-idwwan_profile_v4element_purposegroupsspanpurposegroups"></a><span id="WWAN_profile_v4.element_PurposeGroups"></span>PurposeGroups
 
-Uma lista opcional de grupos de perfis, onde cada grupo inclui perfis usados para uma finalidade comum.
+Uma lista opcional de grupos de perfis, em que cada grupo inclui perfis usados para uma finalidade comum.
 
-Este elemento é novo para v4 do esquema.
+Esse elemento é novo para v4 do esquema.
 
 Um perfil pode ser listado em vários grupos.
 
@@ -52,8 +52,8 @@ Nenhum.
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -64,13 +64,13 @@ Nenhum.
 <tbody>
 <tr class="odd">
 <td><a href="element-purposegroupguid.md">PurposeGroupGuid</a></td>
-<td><p>Representa um perfil em um dos perfis.</p>
-<p>Os perfis são especificados pelo valor de <a href="simpletype-guidtype.md"><strong>guidtype</strong></a> .</p>
-<p>Quatro valores GUID são definidos, conforme listado na tabela a seguir.</p>
+<td><p>Representa um perfil em um PurposeGroup de perfis.</p>
+<p>Os perfis são especificados por seu <a href="simpletype-guidtype.md"><strong>valor guidType.</strong></a></p>
+<p>Quatro valores de GUID são definidos, conforme listado na tabela a seguir.</p>
 <table>
 <thead>
 <tr class="header">
-<th>Grupo de finalidade</th>
+<th>Grupo de finalidades</th>
 <th>GUID</th>
 </tr>
 </thead>
@@ -104,8 +104,8 @@ Nenhum.
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -116,8 +116,8 @@ Nenhum.
 <tbody>
 <tr class="odd">
 <td><a href="element-mbnprofileext.md">MBNProfileExt</a></td>
-<td><p>O elemento <strong>MBNProfileExt</strong> é uma extensão do elemento MBNProfile anterior. Ele identifica um perfil de banda larga móvel com um conjunto mais rico de opções do que o elemento MBNProfile.</p>
-<p>Pode haver mais de um elemento MbnProfileExt em um perfil, descrevendo as configurações de perfil para um determinado conjunto de condições operacionais. Use o elemento filho <a href="element-profileconditionedon.md"><strong>ProfileConditionedOn</strong></a> de <strong>MBNProfileExt</strong> para especificar quais condições operacionais tornam um perfil específico o perfil ativo.</p></td>
+<td><p>O <strong>elemento MBNProfileExt</strong> é uma extensão do elemento MBNProfile anterior. Ele identifica um perfil de Banda Larga Móvel com um conjunto mais avançado de opções do que o elemento MBNProfile.</p>
+<p>Pode haver mais de um elemento MbnProfileExt em um perfil, descrevendo as configurações de perfil para um conjunto específico de condições operacionais. Use o <a href="element-profileconditionedon.md"><strong>elemento filho ProfileConditionedOn</strong></a> <strong>de MBNProfileExt</strong> para especificar quais condições operacionais fazem de um perfil específico o perfil ativo.</p></td>
 </tr>
 </tbody>
 </table>
@@ -128,8 +128,8 @@ Nenhum.
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">

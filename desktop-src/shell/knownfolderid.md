@@ -5,12 +5,12 @@ title: KNOWNFOLDERID (KnownFolders. h)
 ms.topic: reference
 ms.custom: snippet-project
 ms.date: 07/27/2020
-ms.openlocfilehash: eb4b6ef46179abbe515edfcd323a349c7d091ac9
-ms.sourcegitcommit: c8f1dc81483739b697c96ae97ca533028efc3b2c
+ms.openlocfilehash: 3d27f8831e4a68b6fb5bb95d7f4a6c34fe361db5
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "114656874"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122626372"
 ---
 # <a name="knownfolderid"></a>KNOWNFOLDERID
 
@@ -64,19 +64,19 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;">Constante</th>
-<th style="text-align: left;">Descrição</th>
+<th >Constante</th>
+<th >Descrição</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_AccountPictures"></span><span id="folderid_accountpictures"></span><span id="FOLDERID_ACCOUNTPICTURES"></span><dl> <dt><strong>FOLDERID_AccountPictures</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_AccountPictures"></span><span id="folderid_accountpictures"></span><span id="FOLDERID_ACCOUNTPICTURES"></span><dl> <dt><strong>FOLDERID_AccountPictures</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -113,8 +113,8 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_AddNewPrograms"></span><span id="folderid_addnewprograms"></span><span id="FOLDERID_ADDNEWPROGRAMS"></span><dl> <dt><strong>FOLDERID_AddNewPrograms</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_AddNewPrograms"></span><span id="folderid_addnewprograms"></span><span id="FOLDERID_ADDNEWPROGRAMS"></span><dl> <dt><strong>FOLDERID_AddNewPrograms</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -151,8 +151,8 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_AdminTools"></span><span id="folderid_admintools"></span><span id="FOLDERID_ADMINTOOLS"></span><dl> <dt><strong>FOLDERID_AdminTools</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_AdminTools"></span><span id="folderid_admintools"></span><span id="FOLDERID_ADMINTOOLS"></span><dl> <dt><strong>FOLDERID_AdminTools</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -189,8 +189,8 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_AppDataDesktop"></span><span id="folderid_appdatadesktop"></span><span id="FOLDERID_APPDATADESKTOP"></span><dl> <dt><strong>FOLDERID_AppDataDesktop</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_AppDataDesktop"></span><span id="folderid_appdatadesktop"></span><span id="FOLDERID_APPDATADESKTOP"></span><dl> <dt><strong>FOLDERID_AppDataDesktop</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -228,8 +228,8 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 <p>Esta FOLDERid é usada internamente por aplicativos .NET para habilitar a funcionalidade do aplicativo de plataforma cruzada. Ele não se destina a ser usado diretamente de um aplicativo.</p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_AppDataDocuments"></span><span id="folderid_appdatadocuments"></span><span id="FOLDERID_APPDATADOCUMENTS"></span><dl> <dt><strong>FOLDERID_AppDataDocuments</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_AppDataDocuments"></span><span id="folderid_appdatadocuments"></span><span id="FOLDERID_APPDATADOCUMENTS"></span><dl> <dt><strong>FOLDERID_AppDataDocuments</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -267,8 +267,8 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 <p>Esta FOLDERid é usada internamente por aplicativos .NET para habilitar a funcionalidade do aplicativo de plataforma cruzada. Ele não se destina a ser usado diretamente de um aplicativo.</p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_AppDataFavorites"></span><span id="folderid_appdatafavorites"></span><span id="FOLDERID_APPDATAFAVORITES"></span><dl> <dt><strong>FOLDERID_AppDataFavorites</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_AppDataFavorites"></span><span id="folderid_appdatafavorites"></span><span id="FOLDERID_APPDATAFAVORITES"></span><dl> <dt><strong>FOLDERID_AppDataFavorites</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -289,25 +289,25 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 </tr>
 <tr class="odd">
 <td>Equivalente de CSIDl</td>
-<td>nenhum, valor introduzido no Windows 10, versão 1709</td>
+<td>Nenhum, valor introduzido no Windows 10, versão 1709</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herdado</td>
+<td>Nome de exibição herddo</td>
 <td>Não aplicável</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herdado</td>
+<td>Caminho padrão herddo</td>
 <td>Não aplicável</td>
 </tr>
 </tbody>
 </table>
 
 <p> </p>
-<p>Esta FOLDERid é usada internamente por aplicativos .NET para habilitar a funcionalidade do aplicativo de plataforma cruzada. Ele não se destina a ser usado diretamente de um aplicativo.</p></td>
+<p>Essa FOLDERID é usada internamente por aplicativos .NET para habilitar a funcionalidade do aplicativo de plataforma cruzada. Ele não se destina a ser usado diretamente de um aplicativo.</p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_AppDataProgramData"></span><span id="folderid_appdataprogramdata"></span><span id="FOLDERID_APPDATAPROGRAMDATA"></span><dl> <dt><strong>FOLDERID_AppDataProgramData</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_AppDataProgramData"></span><span id="folderid_appdataprogramdata"></span><span id="FOLDERID_APPDATAPROGRAMDATA"></span><dl> <dt><strong>FOLDERID_AppDataProgramData</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -320,33 +320,33 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>Peruser</td>
+<td>PERÚSER</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
 <td>%LOCALAPPDATA%\ProgramData</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDl</td>
-<td>nenhum, valor introduzido no Windows 10, versão 1709</td>
+<td>Equivalente de CSIDL</td>
+<td>Nenhum, valor introduzido no Windows 10, versão 1709</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herdado</td>
+<td>Nome de exibição herddo</td>
 <td>Não aplicável</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herdado</td>
+<td>Caminho padrão herddo</td>
 <td>Não aplicável</td>
 </tr>
 </tbody>
 </table>
 
 <p> </p>
-<p>Esta FOLDERid é usada internamente por aplicativos .NET para habilitar a funcionalidade do aplicativo de plataforma cruzada. Ele não se destina a ser usado diretamente de um aplicativo.</p></td>
+<p>Essa FOLDERID é usada internamente por aplicativos .NET para habilitar a funcionalidade do aplicativo de plataforma cruzada. Ele não se destina a ser usado diretamente de um aplicativo.</p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_ApplicationShortcuts"></span><span id="folderid_applicationshortcuts"></span><span id="FOLDERID_APPLICATIONSHORTCUTS"></span><dl> <dt><strong>FOLDERID_ApplicationShortcuts</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_ApplicationShortcuts"></span><span id="folderid_applicationshortcuts"></span><span id="FOLDERID_APPLICATIONSHORTCUTS"></span><dl> <dt><strong>FOLDERID_ApplicationShortcuts</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -359,22 +359,22 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>Peruser</td>
+<td>PERÚSER</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
-<td>atalhos do%LOCALAPPDATA%\Microsoft\ Windows \application</td>
+<td>%LOCALAPPDATA%\Microsoft\Windows\Atalhos de Aplicativo</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDl</td>
+<td>Equivalente de CSIDL</td>
 <td>Nenhum, valor introduzido no Windows 8</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herdado</td>
+<td>Nome de exibição herddo</td>
 <td>Não aplicável</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herdado</td>
+<td>Caminho padrão herddo</td>
 <td>Não aplicável</td>
 </tr>
 </tbody>
@@ -383,8 +383,8 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_AppsFolder"></span><span id="folderid_appsfolder"></span><span id="FOLDERID_APPSFOLDER"></span><dl> <dt><strong>FOLDERID_AppsFolder</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_AppsFolder"></span><span id="folderid_appsfolder"></span><span id="FOLDERID_APPSFOLDER"></span><dl> <dt><strong>FOLDERID_AppsFolder</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -397,22 +397,22 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>VIRTUAISLUNS</td>
+<td>VIRTUAL</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
 <td>Não aplicável — pasta virtual</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDl</td>
+<td>Equivalente de CSIDL</td>
 <td>Nenhum, valor introduzido no Windows 8</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herdado</td>
+<td>Nome de exibição herddo</td>
 <td>Não aplicável</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herdado</td>
+<td>Caminho padrão herddo</td>
 <td>Não aplicável</td>
 </tr>
 </tbody>
@@ -421,8 +421,8 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_AppUpdates"></span><span id="folderid_appupdates"></span><span id="FOLDERID_APPUPDATES"></span><dl> <dt><strong>FOLDERID_AppUpdates</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_AppUpdates"></span><span id="folderid_appupdates"></span><span id="FOLDERID_APPUPDATES"></span><dl> <dt><strong>FOLDERID_AppUpdates</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -435,22 +435,22 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>VIRTUAISLUNS</td>
+<td>VIRTUAL</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
 <td>Não aplicável — pasta virtual</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDl</td>
+<td>Equivalente de CSIDL</td>
 <td>Nenhum</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herdado</td>
-<td>nenhum, valor introduzido no Windows Vista. em versões anteriores do Windows, as informações nesta página foram incluídas em <strong>adicionar ou remover programas</strong> se a caixa <strong>mostrar atualizações</strong> estava marcada.</td>
+<td>Nome de exibição herddo</td>
+<td>Nenhum, valor introduzido no Windows Vista. Em versões anteriores do Windows, as informações nesta <strong></strong> página foram incluídas em Adicionar ou Remover Programas se a caixa Mostrar <strong>atualizações tiver</strong> sido marcada.</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herdado</td>
+<td>Caminho padrão herddo</td>
 <td>Não aplicável</td>
 </tr>
 </tbody>
@@ -459,8 +459,8 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_CameraRoll"></span><span id="folderid_cameraroll"></span><span id="FOLDERID_CAMERAROLL"></span><dl> <dt><strong>FOLDERID_CameraRoll</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_CameraRoll"></span><span id="folderid_cameraroll"></span><span id="FOLDERID_CAMERAROLL"></span><dl> <dt><strong>FOLDERID_CameraRoll</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -469,26 +469,26 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 </tr>
 <tr class="even">
 <td>Nome de exibição</td>
-<td>Rolo da câmera</td>
+<td>Roll da Câmera</td>
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>Peruser</td>
+<td>PERÚSER</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
-<td>%USERPROFILE%\Pictures\Camera</td>
+<td>%USERPROFILE%\Pictures\Camera Roll</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDl</td>
+<td>Equivalente de CSIDL</td>
 <td>Nenhum, valor introduzido no Windows 8.1</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herdado</td>
+<td>Nome de exibição herddo</td>
 <td>Não aplicável</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herdado</td>
+<td>Caminho padrão herddo</td>
 <td>Não aplicável</td>
 </tr>
 </tbody>
@@ -497,8 +497,8 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_CDBurning"></span><span id="folderid_cdburning"></span><span id="FOLDERID_CDBURNING"></span><dl> <dt><strong>FOLDERID_CDBurning</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_CDBurning"></span><span id="folderid_cdburning"></span><span id="FOLDERID_CDBURNING"></span><dl> <dt><strong>FOLDERID_CDBurning</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -507,27 +507,27 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 </tr>
 <tr class="even">
 <td>Nome de exibição</td>
-<td>Pasta de gravação temporária</td>
+<td>Pasta de burn temporária</td>
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>Peruser</td>
+<td>PERÚSER</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
-<td>%LOCALAPPDATA%\Microsoft\ Windows \Burn\Burn</td>
+<td>%LOCALAPPDATA%\Microsoft\Windows\Burn\Burn</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDl</td>
+<td>Equivalente de CSIDL</td>
 <td>CSIDL_CDBURN_AREA</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herdado</td>
+<td>Nome de exibição herddo</td>
 <td>Gravação de CD</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herdado</td>
-<td>userprofile Configurações \application Data\Microsoft\CD burning</td>
+<td>Caminho padrão herddo</td>
+<td>%USERPROFILE%\Local Configurações\Application Data\Microsoft\CD</td>
 </tr>
 </tbody>
 </table>
@@ -535,8 +535,8 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_ChangeRemovePrograms"></span><span id="folderid_changeremoveprograms"></span><span id="FOLDERID_CHANGEREMOVEPROGRAMS"></span><dl> <dt><strong>FOLDERID_ChangeRemovePrograms</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_ChangeRemovePrograms"></span><span id="folderid_changeremoveprograms"></span><span id="FOLDERID_CHANGEREMOVEPROGRAMS"></span><dl> <dt><strong>FOLDERID_ChangeRemovePrograms</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -573,8 +573,8 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_CommonAdminTools"></span><span id="folderid_commonadmintools"></span><span id="FOLDERID_COMMONADMINTOOLS"></span><dl> <dt><strong>FOLDERID_CommonAdminTools</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_CommonAdminTools"></span><span id="folderid_commonadmintools"></span><span id="FOLDERID_COMMONADMINTOOLS"></span><dl> <dt><strong>FOLDERID_CommonAdminTools</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -611,8 +611,8 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_CommonOEMLinks"></span><span id="folderid_commonoemlinks"></span><span id="FOLDERID_COMMONOEMLINKS"></span><dl> <dt><strong>FOLDERID_CommonOEMLinks</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_CommonOEMLinks"></span><span id="folderid_commonoemlinks"></span><span id="FOLDERID_COMMONOEMLINKS"></span><dl> <dt><strong>FOLDERID_CommonOEMLinks</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -649,8 +649,8 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_CommonPrograms"></span><span id="folderid_commonprograms"></span><span id="FOLDERID_COMMONPROGRAMS"></span><dl> <dt><strong>FOLDERID_CommonPrograms</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_CommonPrograms"></span><span id="folderid_commonprograms"></span><span id="FOLDERID_COMMONPROGRAMS"></span><dl> <dt><strong>FOLDERID_CommonPrograms</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -687,8 +687,8 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_CommonStartMenu"></span><span id="folderid_commonstartmenu"></span><span id="FOLDERID_COMMONSTARTMENU"></span><dl> <dt><strong>FOLDERID_CommonStartMenu</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_CommonStartMenu"></span><span id="folderid_commonstartmenu"></span><span id="FOLDERID_COMMONSTARTMENU"></span><dl> <dt><strong>FOLDERID_CommonStartMenu</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -725,8 +725,8 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_CommonStartup"></span><span id="folderid_commonstartup"></span><span id="FOLDERID_COMMONSTARTUP"></span><dl> <dt><strong>FOLDERID_CommonStartup</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_CommonStartup"></span><span id="folderid_commonstartup"></span><span id="FOLDERID_COMMONSTARTUP"></span><dl> <dt><strong>FOLDERID_CommonStartup</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -763,8 +763,8 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_CommonTemplates"></span><span id="folderid_commontemplates"></span><span id="FOLDERID_COMMONTEMPLATES"></span><dl> <dt><strong>FOLDERID_CommonTemplates</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_CommonTemplates"></span><span id="folderid_commontemplates"></span><span id="FOLDERID_COMMONTEMPLATES"></span><dl> <dt><strong>FOLDERID_CommonTemplates</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -788,11 +788,11 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 <td>CSIDL_COMMON_TEMPLATES</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herdado</td>
+<td>Nome de exibição herddo</td>
 <td>Modelos</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herdado</td>
+<td>Caminho padrão herddo</td>
 <td>%ALLUSERSPROFILE%\Templates</td>
 </tr>
 </tbody>
@@ -801,8 +801,8 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_ComputerFolder"></span><span id="folderid_computerfolder"></span><span id="FOLDERID_COMPUTERFOLDER"></span><dl> <dt><strong>FOLDERID_ComputerFolder</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_ComputerFolder"></span><span id="folderid_computerfolder"></span><span id="FOLDERID_COMPUTERFOLDER"></span><dl> <dt><strong>FOLDERID_ComputerFolder</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -815,22 +815,22 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>VIRTUAISLUNS</td>
+<td>VIRTUAL</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
 <td>Não aplicável — pasta virtual</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDl</td>
+<td>Equivalente de CSIDL</td>
 <td>CSIDL_DRIVES</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herdado</td>
+<td>Nome de exibição herddo</td>
 <td>Meu Computador</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herdado</td>
+<td>Caminho padrão herddo</td>
 <td>Não aplicável — pasta virtual</td>
 </tr>
 </tbody>
@@ -839,8 +839,8 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_ConflictFolder"></span><span id="folderid_conflictfolder"></span><span id="FOLDERID_CONFLICTFOLDER"></span><dl> <dt><strong>FOLDERID_ConflictFolder</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_ConflictFolder"></span><span id="folderid_conflictfolder"></span><span id="FOLDERID_CONFLICTFOLDER"></span><dl> <dt><strong>FOLDERID_ConflictFolder</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -853,22 +853,22 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>VIRTUAISLUNS</td>
+<td>VIRTUAL</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
 <td>Não aplicável — pasta virtual</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDl</td>
-<td>nenhum, valor introduzido no Windows Vista</td>
+<td>Equivalente de CSIDL</td>
+<td>Nenhum, valor introduzido no Windows Vista</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herdado</td>
-<td>Não aplicável. este <strong>KNOWNFOLDERID</strong> refere-se ao gerenciador de sincronização do Windows Vista. Não é a pasta referenciada pelo <a href="/windows/desktop/api/Syncmgr/nn-syncmgr-isyncmgrconflictfolder"><strong>ISyncMgrConflictFolder</strong></a>mais antigo.</td>
+<td>Nome de exibição herddo</td>
+<td>Não aplicável. Essa <strong>KNOWNFOLDERID</strong> refere-se ao gerenciador de sincronização Windows Vista. Não é a pasta referenciada pelo <a href="/windows/desktop/api/Syncmgr/nn-syncmgr-isyncmgrconflictfolder"><strong>ISyncMgrConflictFolder mais antigo.</strong></a></td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herdado</td>
+<td>Caminho padrão herddo</td>
 <td>Não aplicável</td>
 </tr>
 </tbody>
@@ -877,8 +877,8 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_ConnectionsFolder"></span><span id="folderid_connectionsfolder"></span><span id="FOLDERID_CONNECTIONSFOLDER"></span><dl> <dt><strong>FOLDERID_ConnectionsFolder</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_ConnectionsFolder"></span><span id="folderid_connectionsfolder"></span><span id="FOLDERID_CONNECTIONSFOLDER"></span><dl> <dt><strong>FOLDERID_ConnectionsFolder</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -891,22 +891,22 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>VIRTUAISLUNS</td>
+<td>VIRTUAL</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
 <td>Não aplicável — pasta virtual</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDl</td>
+<td>Equivalente de CSIDL</td>
 <td>CSIDL_CONNECTIONS</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herdado</td>
+<td>Nome de exibição herddo</td>
 <td>Conexões de Rede</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herdado</td>
+<td>Caminho padrão herddo</td>
 <td>Não aplicável — pasta virtual</td>
 </tr>
 </tbody>
@@ -915,8 +915,8 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_Contacts"></span><span id="folderid_contacts"></span><span id="FOLDERID_CONTACTS"></span><dl> <dt><strong>FOLDERID_Contacts</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_Contacts"></span><span id="folderid_contacts"></span><span id="FOLDERID_CONTACTS"></span><dl> <dt><strong>FOLDERID_Contacts</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -929,22 +929,22 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>Peruser</td>
+<td>PERÚSER</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
 <td>%USERPROFILE%\Contacts</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDl</td>
-<td>nenhum, valor introduzido no Windows Vista</td>
+<td>Equivalente de CSIDL</td>
+<td>Nenhum, valor introduzido no Windows Vista</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herdado</td>
+<td>Nome de exibição herddo</td>
 <td>Não aplicável</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herdado</td>
+<td>Caminho padrão herddo</td>
 <td>Não aplicável</td>
 </tr>
 </tbody>
@@ -953,8 +953,8 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_ControlPanelFolder"></span><span id="folderid_controlpanelfolder"></span><span id="FOLDERID_CONTROLPANELFOLDER"></span><dl> <dt><strong>FOLDERID_ControlPanelFolder</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_ControlPanelFolder"></span><span id="folderid_controlpanelfolder"></span><span id="FOLDERID_CONTROLPANELFOLDER"></span><dl> <dt><strong>FOLDERID_ControlPanelFolder</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -967,22 +967,22 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>VIRTUAISLUNS</td>
+<td>VIRTUAL</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
 <td>Não aplicável — pasta virtual</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDl</td>
+<td>Equivalente de CSIDL</td>
 <td>CSIDL_CONTROLS</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herdado</td>
+<td>Nome de exibição herddo</td>
 <td>Painel de Controle</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herdado</td>
+<td>Caminho padrão herddo</td>
 <td>Não aplicável — pasta virtual</td>
 </tr>
 </tbody>
@@ -991,8 +991,8 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_Cookies"></span><span id="folderid_cookies"></span><span id="FOLDERID_COOKIES"></span><dl> <dt><strong>FOLDERID_Cookies</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_Cookies"></span><span id="folderid_cookies"></span><span id="FOLDERID_COOKIES"></span><dl> <dt><strong>FOLDERID_Cookies</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -1005,22 +1005,22 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>Peruser</td>
+<td>PERÚSER</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
-<td>%APPDATA%\Microsoft\ Windows \Cookies</td>
+<td>%APPDATA%\Microsoft\Windows\Cookies</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDl</td>
+<td>Equivalente de CSIDL</td>
 <td>CSIDL_COOKIES</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herdado</td>
+<td>Nome de exibição herddo</td>
 <td>Cookies</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herdado</td>
+<td>Caminho padrão herddo</td>
 <td>%USERPROFILE%\Cookies</td>
 </tr>
 </tbody>
@@ -1029,8 +1029,8 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_Desktop"></span><span id="folderid_desktop"></span><span id="FOLDERID_DESKTOP"></span><dl> <dt><strong>FOLDERID_Desktop</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_Desktop"></span><span id="folderid_desktop"></span><span id="FOLDERID_DESKTOP"></span><dl> <dt><strong>FOLDERID_Desktop</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -1039,26 +1039,26 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 </tr>
 <tr class="even">
 <td>Nome de exibição</td>
-<td>Desktop</td>
+<td>Área de trabalho</td>
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>PERÚSER</td>
+<td>Peruser</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
 <td>%USERPROFILE%\Desktop</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDL</td>
+<td>Equivalente de CSIDl</td>
 <td>CSIDL_DESKTOP, CSIDL_DESKTOPDIRECTORY</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herddo</td>
-<td>Desktop</td>
+<td>Nome de exibição herdado</td>
+<td>Área de trabalho</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herddo</td>
+<td>Caminho padrão herdado</td>
 <td>%USERPROFILE%\Desktop</td>
 </tr>
 </tbody>
@@ -1067,8 +1067,8 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_DeviceMetadataStore"></span><span id="folderid_devicemetadatastore"></span><span id="FOLDERID_DEVICEMETADATASTORE"></span><dl> <dt><strong>FOLDERID_DeviceMetadataStore</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_DeviceMetadataStore"></span><span id="folderid_devicemetadatastore"></span><span id="FOLDERID_DEVICEMETADATASTORE"></span><dl> <dt><strong>FOLDERID_DeviceMetadataStore</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -1081,22 +1081,22 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>Comum</td>
+<td>COMMON</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
-<td>%ALLUSERSPROFILE%\Microsoft\Windows\DeviceMetadataStore</td>
+<td>%ALLUSERSPROFILE%\Microsoft\ Windows \DeviceMetadataStore</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDL</td>
-<td>Nenhum, valor introduzido na Windows 7</td>
+<td>Equivalente de CSIDl</td>
+<td>nenhum, valor introduzido no Windows 7</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herddo</td>
+<td>Nome de exibição herdado</td>
 <td>Não aplicável</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herddo</td>
+<td>Caminho padrão herdado</td>
 <td>Não aplicável</td>
 </tr>
 </tbody>
@@ -1105,8 +1105,8 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_Documents"></span><span id="folderid_documents"></span><span id="FOLDERID_DOCUMENTS"></span><dl> <dt><strong>FOLDERID_Documents</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_Documents"></span><span id="folderid_documents"></span><span id="FOLDERID_DOCUMENTS"></span><dl> <dt><strong>FOLDERID_Documents</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -1119,23 +1119,23 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>PERÚSER</td>
+<td>Peruser</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
 <td>%USERPROFILE%\Documents</td>
 </tr>
 <tr class="odd">
-<td>Equivalentes de CSIDL</td>
+<td>Equivalentes a CSIDl</td>
 <td>CSIDL_MYDOCUMENTS, CSIDL_PERSONAL</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herddo</td>
+<td>Nome de exibição herdado</td>
 <td>Meus Documentos</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herddo</td>
-<td>%USERPROFILE%\Meus Documentos</td>
+<td>Caminho padrão herdado</td>
+<td>Documentos do%USERPROFILE%\My</td>
 </tr>
 </tbody>
 </table>
@@ -1143,8 +1143,8 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_DocumentsLibrary"></span><span id="folderid_documentslibrary"></span><span id="FOLDERID_DOCUMENTSLIBRARY"></span><dl> <dt><strong>FOLDERID_DocumentsLibrary</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_DocumentsLibrary"></span><span id="folderid_documentslibrary"></span><span id="FOLDERID_DOCUMENTSLIBRARY"></span><dl> <dt><strong>FOLDERID_DocumentsLibrary</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -1157,22 +1157,22 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>PERÚSER</td>
+<td>Peruser</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
-<td>%APPDATA%\Microsoft\Windows\Libraries\Documents.library-ms</td>
+<td>%APPDATA%\Microsoft\ Windows \Libraries\Documents.library-ms</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDL</td>
-<td>Nenhum, valor introduzido na Windows 7</td>
+<td>Equivalente de CSIDl</td>
+<td>nenhum, valor introduzido no Windows 7</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herddo</td>
+<td>Nome de exibição herdado</td>
 <td>Não aplicável</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herddo</td>
+<td>Caminho padrão herdado</td>
 <td>Não aplicável</td>
 </tr>
 </tbody>
@@ -1181,8 +1181,8 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_Downloads"></span><span id="folderid_downloads"></span><span id="FOLDERID_DOWNLOADS"></span><dl> <dt><strong>FOLDERID_Downloads</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_Downloads"></span><span id="folderid_downloads"></span><span id="FOLDERID_DOWNLOADS"></span><dl> <dt><strong>FOLDERID_Downloads</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -1195,22 +1195,22 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>PERÚSER</td>
+<td>Peruser</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
 <td>%USERPROFILE%\Downloads</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDL</td>
+<td>Equivalente de CSIDl</td>
 <td>Nenhum</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herddo</td>
+<td>Nome de exibição herdado</td>
 <td>Não aplicável</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herddo</td>
+<td>Caminho padrão herdado</td>
 <td>Não aplicável</td>
 </tr>
 </tbody>
@@ -1219,8 +1219,8 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_Favorites"></span><span id="folderid_favorites"></span><span id="FOLDERID_FAVORITES"></span><dl> <dt><strong>FOLDERID_Favorites</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_Favorites"></span><span id="folderid_favorites"></span><span id="FOLDERID_FAVORITES"></span><dl> <dt><strong>FOLDERID_Favorites</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -1233,22 +1233,22 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>PERÚSER</td>
+<td>Peruser</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
 <td>%USERPROFILE%\Favorites</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDL</td>
+<td>Equivalente de CSIDl</td>
 <td>CSIDL_FAVORITES, CSIDL_COMMON_FAVORITES</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herddo</td>
+<td>Nome de exibição herdado</td>
 <td>Favoritos</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herddo</td>
+<td>Caminho padrão herdado</td>
 <td>%USERPROFILE%\Favorites</td>
 </tr>
 </tbody>
@@ -1257,8 +1257,8 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_Fonts"></span><span id="folderid_fonts"></span><span id="FOLDERID_FONTS"></span><dl> <dt><strong>FOLDERID_Fonts</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_Fonts"></span><span id="folderid_fonts"></span><span id="FOLDERID_FONTS"></span><dl> <dt><strong>FOLDERID_Fonts</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -1278,15 +1278,15 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 <td>%windir%\Fonts</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDL</td>
+<td>Equivalente de CSIDl</td>
 <td>CSIDL_FONTS</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herddo</td>
+<td>Nome de exibição herdado</td>
 <td>Fontes</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herdado</td>
+<td>Caminho padrão herddo</td>
 <td>%windir%\Fonts</td>
 </tr>
 </tbody>
@@ -1295,11 +1295,11 @@ exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-cl
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_Games"></span><span id="folderid_games"></span><span id="FOLDERID_GAMES"></span><dl> <dt><strong>FOLDERID_Games</strong></dt> </dl></td>
-<td style="text-align: left;"><div class="alert">
+<td ><span id="FOLDERID_Games"></span><span id="folderid_games"></span><span id="FOLDERID_GAMES"></span><dl> <dt><strong>FOLDERID_Games</strong></dt> </dl></td>
+<td ><div class="alert">
 <blockquote>
 [!Note]<br />
-esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. Nessas versões, ele retorna <strong>0x80070057-E_INVALIDARG</strong>
+Essa FOLDERID foi preterida no Windows 10, versão 1803 e versões posteriores. Nessas versões, ele retorna <strong>0x80070057 - E_INVALIDARG</strong>
 </blockquote>
 </div>
 <div>
@@ -1310,7 +1310,7 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <tbody>
 <tr class="odd">
 <td>GUID</td>
-<td>{CAC52C1A-B53D-4edc-92D7-6B2E8AC19434}</td>
+<td>{VAI52C1A-B53D-4edc-92D7-6B2E8AC19434}</td>
 </tr>
 <tr class="even">
 <td>Nome de exibição</td>
@@ -1318,22 +1318,22 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>VIRTUAISLUNS</td>
+<td>VIRTUAL</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
 <td>Não aplicável — pasta virtual</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDl</td>
+<td>Equivalente de CSIDL</td>
 <td>Nenhum</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herdado</td>
+<td>Nome de exibição herddo</td>
 <td>Não aplicável</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herdado</td>
+<td>Caminho padrão herddo</td>
 <td>Não aplicável</td>
 </tr>
 </tbody>
@@ -1342,8 +1342,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_GameTasks"></span><span id="folderid_gametasks"></span><span id="FOLDERID_GAMETASKS"></span><dl> <dt><strong>FOLDERID_GameTasks</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_GameTasks"></span><span id="folderid_gametasks"></span><span id="FOLDERID_GAMETASKS"></span><dl> <dt><strong>FOLDERID_GameTasks</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -1356,22 +1356,22 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>Peruser</td>
+<td>PERÚSER</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
-<td>%LOCALAPPDATA%\Microsoft\ Windows \GameExplorer</td>
+<td>%LOCALAPPDATA%\Microsoft\Windows\GameExplorer</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDl</td>
-<td>nenhum, valor introduzido no Windows Vista</td>
+<td>Equivalente de CSIDL</td>
+<td>Nenhum, valor introduzido no Windows Vista</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herdado</td>
+<td>Nome de exibição herddo</td>
 <td>Não aplicável</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herdado</td>
+<td>Caminho padrão herddo</td>
 <td>Não aplicável</td>
 </tr>
 </tbody>
@@ -1380,8 +1380,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_History"></span><span id="folderid_history"></span><span id="FOLDERID_HISTORY"></span><dl> <dt><strong>FOLDERID_History</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_History"></span><span id="folderid_history"></span><span id="FOLDERID_HISTORY"></span><dl> <dt><strong>FOLDERID_History</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -1394,23 +1394,23 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>Peruser</td>
+<td>PERÚSER</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
-<td>%LOCALAPPDATA%\Microsoft\ Windows \History</td>
+<td>%LOCALAPPDATA%\Microsoft\Windows\History</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDl</td>
+<td>Equivalente de CSIDL</td>
 <td>CSIDL_HISTORY</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herdado</td>
+<td>Nome de exibição herddo</td>
 <td>Histórico</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herdado</td>
-<td>% userprofile Configurações \History</td>
+<td>Caminho padrão herddo</td>
+<td>%USERPROFILE%\Local Configurações\History</td>
 </tr>
 </tbody>
 </table>
@@ -1418,8 +1418,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_HomeGroup"></span><span id="folderid_homegroup"></span><span id="FOLDERID_HOMEGROUP"></span><dl> <dt><strong>FOLDERID_HomeGroup</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_HomeGroup"></span><span id="folderid_homegroup"></span><span id="FOLDERID_HOMEGROUP"></span><dl> <dt><strong>FOLDERID_HomeGroup</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -1432,201 +1432,11 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>VIRTUAISLUNS</td>
+<td>VIRTUAL</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
 <td>Não aplicável — pasta virtual</td>
-</tr>
-<tr class="odd">
-<td>Equivalente de CSIDl</td>
-<td>nenhum, valor introduzido no Windows 7</td>
-</tr>
-<tr class="even">
-<td>Nome de exibição herdado</td>
-<td>Não aplicável</td>
-</tr>
-<tr class="odd">
-<td>Caminho padrão herdado</td>
-<td>Não aplicável</td>
-</tr>
-</tbody>
-</table>
-
-<p> </p></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_HomeGroupCurrentUser"></span><span id="folderid_homegroupcurrentuser"></span><span id="FOLDERID_HOMEGROUPCURRENTUSER"></span><dl> <dt><strong>FOLDERID_HomeGroupCurrentUser</strong></dt> </dl></td>
-<td style="text-align: left;">
-<table>
-<tbody>
-<tr class="odd">
-<td>GUID</td>
-<td>{9B74B6A3-0DFD-4f11-9E78-5F7800F2E772}</td>
-</tr>
-<tr class="even">
-<td>Nome de exibição</td>
-<td>O nome do usuário (% USERNAME%)</td>
-</tr>
-<tr class="odd">
-<td>Tipo de pasta</td>
-<td>VIRTUAISLUNS</td>
-</tr>
-<tr class="even">
-<td>Default Caminho</td>
-<td>Não aplicável — pasta virtual</td>
-</tr>
-<tr class="odd">
-<td>Equivalente de CSIDl</td>
-<td>Nenhum, valor introduzido no Windows 8</td>
-</tr>
-<tr class="even">
-<td>Nome de exibição herdado</td>
-<td>Não aplicável</td>
-</tr>
-<tr class="odd">
-<td>Caminho padrão herdado</td>
-<td>Não aplicável</td>
-</tr>
-</tbody>
-</table>
-
-<p> </p></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_ImplicitAppShortcuts"></span><span id="folderid_implicitappshortcuts"></span><span id="FOLDERID_IMPLICITAPPSHORTCUTS"></span><dl> <dt><strong>FOLDERID_ImplicitAppShortcuts</strong></dt> </dl></td>
-<td style="text-align: left;">
-<table>
-<tbody>
-<tr class="odd">
-<td>GUID</td>
-<td>{BCB5256F-79F6-4CEE-B725-DC34E402FD46}</td>
-</tr>
-<tr class="even">
-<td>Nome de exibição</td>
-<td>ImplicitAppShortcuts</td>
-</tr>
-<tr class="odd">
-<td>Tipo de pasta</td>
-<td>Peruser</td>
-</tr>
-<tr class="even">
-<td>Default Caminho</td>
-<td>%APPDATA%\Microsoft\Internet Explorer\Quick Launch\User Pinned\ImplicitAppShortcuts</td>
-</tr>
-<tr class="odd">
-<td>Equivalente de CSIDl</td>
-<td>nenhum, valor introduzido no Windows 7</td>
-</tr>
-<tr class="even">
-<td>Nome de exibição herdado</td>
-<td>Não aplicável</td>
-</tr>
-<tr class="odd">
-<td>Caminho padrão herdado</td>
-<td>Não aplicável</td>
-</tr>
-</tbody>
-</table>
-
-<p> </p></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_InternetCache"></span><span id="folderid_internetcache"></span><span id="FOLDERID_INTERNETCACHE"></span><dl> <dt><strong>FOLDERID_InternetCache</strong></dt> </dl></td>
-<td style="text-align: left;">
-<table>
-<tbody>
-<tr class="odd">
-<td>GUID</td>
-<td>{352481E8-33BE-4251-BA85-6007CAEDCF9D}</td>
-</tr>
-<tr class="even">
-<td>Nome de exibição</td>
-<td>Arquivos Temporários da Internet</td>
-</tr>
-<tr class="odd">
-<td>Tipo de pasta</td>
-<td>PERÚSER</td>
-</tr>
-<tr class="even">
-<td>Default Caminho</td>
-<td>%LOCALAPPDATA%\Microsoft\Windows\Arquivos temporários da Internet</td>
-</tr>
-<tr class="odd">
-<td>Equivalente de CSIDL</td>
-<td>CSIDL_INTERNET_CACHE</td>
-</tr>
-<tr class="even">
-<td>Nome de exibição herddo</td>
-<td>Arquivos Temporários da Internet</td>
-</tr>
-<tr class="odd">
-<td>Caminho padrão herddo</td>
-<td>%USERPROFILE%\Local Configurações\Arquivos temporários da Internet</td>
-</tr>
-</tbody>
-</table>
-
-<p> </p></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_InternetFolder"></span><span id="folderid_internetfolder"></span><span id="FOLDERID_INTERNETFOLDER"></span><dl> <dt><strong>FOLDERID_InternetFolder</strong></dt> </dl></td>
-<td style="text-align: left;">
-<table>
-<tbody>
-<tr class="odd">
-<td>GUID</td>
-<td>{4D9F7874-4E0C-4904-967B-40B0D20C3E4B}</td>
-</tr>
-<tr class="even">
-<td>Nome de exibição</td>
-<td>A Internet</td>
-</tr>
-<tr class="odd">
-<td>Tipo de pasta</td>
-<td>Virtual</td>
-</tr>
-<tr class="even">
-<td>Default Caminho</td>
-<td>Não aplicável — pasta virtual</td>
-</tr>
-<tr class="odd">
-<td>Equivalente de CSIDL</td>
-<td>CSIDL_INTERNET</td>
-</tr>
-<tr class="even">
-<td>Nome de exibição herddo</td>
-<td>Internet Explorer</td>
-</tr>
-<tr class="odd">
-<td>Caminho padrão herddo</td>
-<td>Não aplicável — pasta virtual</td>
-</tr>
-</tbody>
-</table>
-
-<p> </p></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_Libraries"></span><span id="folderid_libraries"></span><span id="FOLDERID_LIBRARIES"></span><dl> <dt><strong>FOLDERID_Libraries</strong></dt> </dl></td>
-<td style="text-align: left;">
-<table>
-<tbody>
-<tr class="odd">
-<td>GUID</td>
-<td>{1B3EA5DC-B587-4786-B4EF-BD1DC332AEAE}</td>
-</tr>
-<tr class="even">
-<td>Nome de exibição</td>
-<td>Bibliotecas</td>
-</tr>
-<tr class="odd">
-<td>Tipo de pasta</td>
-<td>PERÚSER</td>
-</tr>
-<tr class="even">
-<td>Default Caminho</td>
-<td>%APPDATA%\Microsoft\Windows\Libraries</td>
 </tr>
 <tr class="odd">
 <td>Equivalente de CSIDL</td>
@@ -1645,9 +1455,199 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 
 <p> </p></td>
 </tr>
+<tr class="odd">
+<td ><span id="FOLDERID_HomeGroupCurrentUser"></span><span id="folderid_homegroupcurrentuser"></span><span id="FOLDERID_HOMEGROUPCURRENTUSER"></span><dl> <dt><strong>FOLDERID_HomeGroupCurrentUser</strong></dt> </dl></td>
+<td >
+<table>
+<tbody>
+<tr class="odd">
+<td>GUID</td>
+<td>{9B74B6A3-0DFD-4f11-9E78-5F7800F2E772}</td>
+</tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_Links"></span><span id="folderid_links"></span><span id="FOLDERID_LINKS"></span><dl> <dt><strong>FOLDERID_Links</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td>Nome de exibição</td>
+<td>Nome de usuário do usuário (%USERNAME%)</td>
+</tr>
+<tr class="odd">
+<td>Tipo de pasta</td>
+<td>VIRTUAL</td>
+</tr>
+<tr class="even">
+<td>Default Caminho</td>
+<td>Não aplicável — pasta virtual</td>
+</tr>
+<tr class="odd">
+<td>Equivalente de CSIDL</td>
+<td>Nenhum, valor introduzido no Windows 8</td>
+</tr>
+<tr class="even">
+<td>Nome de exibição herddo</td>
+<td>Não aplicável</td>
+</tr>
+<tr class="odd">
+<td>Caminho padrão herddo</td>
+<td>Não aplicável</td>
+</tr>
+</tbody>
+</table>
+
+<p> </p></td>
+</tr>
+<tr class="even">
+<td ><span id="FOLDERID_ImplicitAppShortcuts"></span><span id="folderid_implicitappshortcuts"></span><span id="FOLDERID_IMPLICITAPPSHORTCUTS"></span><dl> <dt><strong>FOLDERID_ImplicitAppShortcuts</strong></dt> </dl></td>
+<td >
+<table>
+<tbody>
+<tr class="odd">
+<td>GUID</td>
+<td>{BCB5256F-79F6-4CEE-B725-DC34E402FD46}</td>
+</tr>
+<tr class="even">
+<td>Nome de exibição</td>
+<td>ImplicitAppShortcuts</td>
+</tr>
+<tr class="odd">
+<td>Tipo de pasta</td>
+<td>PERÚSER</td>
+</tr>
+<tr class="even">
+<td>Default Caminho</td>
+<td>%APPDATA%\Microsoft\Internet Explorer\Início Rápido\User Pinned\ImplicitAppShortcuts</td>
+</tr>
+<tr class="odd">
+<td>Equivalente de CSIDL</td>
+<td>Nenhum, valor introduzido na Windows 7</td>
+</tr>
+<tr class="even">
+<td>Nome de exibição herddo</td>
+<td>Não aplicável</td>
+</tr>
+<tr class="odd">
+<td>Caminho padrão herddo</td>
+<td>Não aplicável</td>
+</tr>
+</tbody>
+</table>
+
+<p> </p></td>
+</tr>
+<tr class="odd">
+<td ><span id="FOLDERID_InternetCache"></span><span id="folderid_internetcache"></span><span id="FOLDERID_INTERNETCACHE"></span><dl> <dt><strong>FOLDERID_InternetCache</strong></dt> </dl></td>
+<td >
+<table>
+<tbody>
+<tr class="odd">
+<td>GUID</td>
+<td>{352481E8-33BE-4251-BA85-6007CAEDCF9D}</td>
+</tr>
+<tr class="even">
+<td>Nome de exibição</td>
+<td>Arquivos Temporários da Internet</td>
+</tr>
+<tr class="odd">
+<td>Tipo de pasta</td>
+<td>Peruser</td>
+</tr>
+<tr class="even">
+<td>Default Caminho</td>
+<td>%LOCALAPPDATA%\Microsoft\ Windows \Temporary arquivos da Internet</td>
+</tr>
+<tr class="odd">
+<td>Equivalente de CSIDl</td>
+<td>CSIDL_INTERNET_CACHE</td>
+</tr>
+<tr class="even">
+<td>Nome de exibição herdado</td>
+<td>Arquivos Temporários da Internet</td>
+</tr>
+<tr class="odd">
+<td>Caminho padrão herdado</td>
+<td>% userprofile Configurações arquivos da Internet \Temporary</td>
+</tr>
+</tbody>
+</table>
+
+<p> </p></td>
+</tr>
+<tr class="even">
+<td ><span id="FOLDERID_InternetFolder"></span><span id="folderid_internetfolder"></span><span id="FOLDERID_INTERNETFOLDER"></span><dl> <dt><strong>FOLDERID_InternetFolder</strong></dt> </dl></td>
+<td >
+<table>
+<tbody>
+<tr class="odd">
+<td>GUID</td>
+<td>{4D9F7874-4E0C-4904-967B-40B0D20C3E4B}</td>
+</tr>
+<tr class="even">
+<td>Nome de exibição</td>
+<td>A Internet</td>
+</tr>
+<tr class="odd">
+<td>Tipo de pasta</td>
+<td>VIRTUAISLUNS</td>
+</tr>
+<tr class="even">
+<td>Default Caminho</td>
+<td>Não aplicável — pasta virtual</td>
+</tr>
+<tr class="odd">
+<td>Equivalente de CSIDl</td>
+<td>CSIDL_INTERNET</td>
+</tr>
+<tr class="even">
+<td>Nome de exibição herdado</td>
+<td>Internet Explorer</td>
+</tr>
+<tr class="odd">
+<td>Caminho padrão herdado</td>
+<td>Não aplicável — pasta virtual</td>
+</tr>
+</tbody>
+</table>
+
+<p> </p></td>
+</tr>
+<tr class="odd">
+<td ><span id="FOLDERID_Libraries"></span><span id="folderid_libraries"></span><span id="FOLDERID_LIBRARIES"></span><dl> <dt><strong>FOLDERID_Libraries</strong></dt> </dl></td>
+<td >
+<table>
+<tbody>
+<tr class="odd">
+<td>GUID</td>
+<td>{1B3EA5DC-B587-4786-B4EF-BD1DC332AEAE}</td>
+</tr>
+<tr class="even">
+<td>Nome de exibição</td>
+<td>Bibliotecas</td>
+</tr>
+<tr class="odd">
+<td>Tipo de pasta</td>
+<td>Peruser</td>
+</tr>
+<tr class="even">
+<td>Default Caminho</td>
+<td>%APPDATA%\Microsoft\ Windows \Libraries</td>
+</tr>
+<tr class="odd">
+<td>Equivalente de CSIDl</td>
+<td>nenhum, valor introduzido no Windows 7</td>
+</tr>
+<tr class="even">
+<td>Nome de exibição herdado</td>
+<td>Não aplicável</td>
+</tr>
+<tr class="odd">
+<td>Caminho padrão herdado</td>
+<td>Não aplicável</td>
+</tr>
+</tbody>
+</table>
+
+<p> </p></td>
+</tr>
+<tr class="even">
+<td ><span id="FOLDERID_Links"></span><span id="folderid_links"></span><span id="FOLDERID_LINKS"></span><dl> <dt><strong>FOLDERID_Links</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -1660,22 +1660,22 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>PERÚSER</td>
+<td>Peruser</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
 <td>%USERPROFILE%\Links</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDL</td>
+<td>Equivalente de CSIDl</td>
 <td>Nenhum</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herddo</td>
+<td>Nome de exibição herdado</td>
 <td>Não aplicável</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herddo</td>
+<td>Caminho padrão herdado</td>
 <td>Não aplicável</td>
 </tr>
 </tbody>
@@ -1684,8 +1684,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_LocalAppData"></span><span id="folderid_localappdata"></span><span id="FOLDERID_LOCALAPPDATA"></span><dl> <dt><strong>FOLDERID_LocalAppData</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_LocalAppData"></span><span id="folderid_localappdata"></span><span id="FOLDERID_LOCALAPPDATA"></span><dl> <dt><strong>FOLDERID_LocalAppData</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -1698,23 +1698,23 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>PERÚSER</td>
+<td>Peruser</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
-<td>%LOCALAPPDATA% (%USERPROFILE%\AppData\Local)</td>
+<td>% LOCALAPPDATA% (%USERPROFILE%\AppData\Local)</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDL</td>
+<td>Equivalente de CSIDl</td>
 <td>CSIDL_LOCAL_APPDATA</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herddo</td>
+<td>Nome de exibição herdado</td>
 <td>Dados de aplicativos</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herddo</td>
-<td>%USERPROFILE%\Local Configurações\Application Data</td>
+<td>Caminho padrão herdado</td>
+<td>% userprofile Configurações \application Data</td>
 </tr>
 </tbody>
 </table>
@@ -1722,8 +1722,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_LocalAppDataLow"></span><span id="folderid_localappdatalow"></span><span id="FOLDERID_LOCALAPPDATALOW"></span><dl> <dt><strong>FOLDERID_LocalAppDataLow</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_LocalAppDataLow"></span><span id="folderid_localappdatalow"></span><span id="FOLDERID_LOCALAPPDATALOW"></span><dl> <dt><strong>FOLDERID_LocalAppDataLow</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -1736,22 +1736,22 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>PERÚSER</td>
+<td>Peruser</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
 <td>%USERPROFILE%\AppData\LocalLow</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDL</td>
+<td>Equivalente de CSIDl</td>
 <td>Nenhum</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herddo</td>
+<td>Nome de exibição herdado</td>
 <td>Não aplicável</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herddo</td>
+<td>Caminho padrão herdado</td>
 <td>Não aplicável</td>
 </tr>
 </tbody>
@@ -1760,8 +1760,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_LocalizedResourcesDir"></span><span id="folderid_localizedresourcesdir"></span><span id="FOLDERID_LOCALIZEDRESOURCESDIR"></span><dl> <dt><strong>FOLDERID_LocalizedResourcesDir</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_LocalizedResourcesDir"></span><span id="folderid_localizedresourcesdir"></span><span id="FOLDERID_LOCALIZEDRESOURCESDIR"></span><dl> <dt><strong>FOLDERID_LocalizedResourcesDir</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -1778,19 +1778,19 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
-<td>%windir%\resources\0409 (página de código)</td>
+<td>%WINDIR%\resources\0409 (página de código)</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDL</td>
+<td>Equivalente de CSIDl</td>
 <td>CSIDL_RESOURCES_LOCALIZED</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herddo</td>
+<td>Nome de exibição herdado</td>
 <td>Nenhum</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herddo</td>
-<td>%windir%\resources\0409 (página de código)</td>
+<td>Caminho padrão herdado</td>
+<td>%WINDIR%\resources\0409 (página de código)</td>
 </tr>
 </tbody>
 </table>
@@ -1798,8 +1798,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_Music"></span><span id="folderid_music"></span><span id="FOLDERID_MUSIC"></span><dl> <dt><strong>FOLDERID_Music</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_Music"></span><span id="folderid_music"></span><span id="FOLDERID_MUSIC"></span><dl> <dt><strong>FOLDERID_Music</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -1824,7 +1824,7 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="even">
 <td>Nome de exibição herddo</td>
-<td>Minha Música</td>
+<td>Minhas Músicas</td>
 </tr>
 <tr class="odd">
 <td>Caminho padrão herddo</td>
@@ -1836,8 +1836,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_MusicLibrary"></span><span id="folderid_musiclibrary"></span><span id="FOLDERID_MUSICLIBRARY"></span><dl> <dt><strong>FOLDERID_MusicLibrary</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_MusicLibrary"></span><span id="folderid_musiclibrary"></span><span id="FOLDERID_MUSICLIBRARY"></span><dl> <dt><strong>FOLDERID_MusicLibrary</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -1874,8 +1874,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_NetHood"></span><span id="folderid_nethood"></span><span id="FOLDERID_NETHOOD"></span><dl> <dt><strong>FOLDERID_NetHood</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_NetHood"></span><span id="folderid_nethood"></span><span id="FOLDERID_NETHOOD"></span><dl> <dt><strong>FOLDERID_NetHood</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -1892,7 +1892,7 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
-<td>%APPDATA%\Microsoft\Windows\Atalhos de rede</td>
+<td>%APPDATA%\Microsoft\Windows\Network Shortcuts</td>
 </tr>
 <tr class="odd">
 <td>Equivalente de CSIDL</td>
@@ -1912,8 +1912,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_NetworkFolder"></span><span id="folderid_networkfolder"></span><span id="FOLDERID_NETWORKFOLDER"></span><dl> <dt><strong>FOLDERID_NetworkFolder</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_NetworkFolder"></span><span id="folderid_networkfolder"></span><span id="FOLDERID_NETWORKFOLDER"></span><dl> <dt><strong>FOLDERID_NetworkFolder</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -1926,7 +1926,7 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>Virtual</td>
+<td>VIRTUAL</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
@@ -1950,8 +1950,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_Objects3D"></span><span id="folderid_objects3d"></span><span id="FOLDERID_OBJECTS3D"></span><dl> <dt><strong>FOLDERID_Objects3D</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_Objects3D"></span><span id="folderid_objects3d"></span><span id="FOLDERID_OBJECTS3D"></span><dl> <dt><strong>FOLDERID_Objects3D</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -1988,8 +1988,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_OriginalImages"></span><span id="folderid_originalimages"></span><span id="FOLDERID_ORIGINALIMAGES"></span><dl> <dt><strong>FOLDERID_OriginalImages</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_OriginalImages"></span><span id="folderid_originalimages"></span><span id="FOLDERID_ORIGINALIMAGES"></span><dl> <dt><strong>FOLDERID_OriginalImages</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -2006,7 +2006,7 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
-<td>%LOCALAPPDATA%\Microsoft\Windows Galeria de Fotos\Original Images</td>
+<td>%LOCALAPPDATA%\Microsoft\Windows Galeria de Fotos\Imagens Originais</td>
 </tr>
 <tr class="odd">
 <td>Equivalente de CSIDL</td>
@@ -2026,8 +2026,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_PhotoAlbums"></span><span id="folderid_photoalbums"></span><span id="FOLDERID_PHOTOALBUMS"></span><dl> <dt><strong>FOLDERID_PhotoAlbums</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_PhotoAlbums"></span><span id="folderid_photoalbums"></span><span id="FOLDERID_PHOTOALBUMS"></span><dl> <dt><strong>FOLDERID_PhotoAlbums</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -2036,7 +2036,7 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="even">
 <td>Nome de exibição</td>
-<td>Apresentação de slides</td>
+<td>Apresentações de Slides</td>
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
@@ -2064,8 +2064,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_PicturesLibrary"></span><span id="folderid_pictureslibrary"></span><span id="FOLDERID_PICTURESLIBRARY"></span><dl> <dt><strong>FOLDERID_PicturesLibrary</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_PicturesLibrary"></span><span id="folderid_pictureslibrary"></span><span id="FOLDERID_PICTURESLIBRARY"></span><dl> <dt><strong>FOLDERID_PicturesLibrary</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -2102,8 +2102,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_Pictures"></span><span id="folderid_pictures"></span><span id="FOLDERID_PICTURES"></span><dl> <dt><strong>FOLDERID_Pictures</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_Pictures"></span><span id="folderid_pictures"></span><span id="FOLDERID_PICTURES"></span><dl> <dt><strong>FOLDERID_Pictures</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -2128,7 +2128,7 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="even">
 <td>Nome de exibição herdado</td>
-<td>Minhas imagens</td>
+<td>Minhas Imagens</td>
 </tr>
 <tr class="odd">
 <td>Caminho padrão herdado</td>
@@ -2140,8 +2140,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_Playlists"></span><span id="folderid_playlists"></span><span id="FOLDERID_PLAYLISTS"></span><dl> <dt><strong>FOLDERID_Playlists</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_Playlists"></span><span id="folderid_playlists"></span><span id="FOLDERID_PLAYLISTS"></span><dl> <dt><strong>FOLDERID_Playlists</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -2178,8 +2178,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_PrintersFolder"></span><span id="folderid_printersfolder"></span><span id="FOLDERID_PRINTERSFOLDER"></span><dl> <dt><strong>FOLDERID_PrintersFolder</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_PrintersFolder"></span><span id="folderid_printersfolder"></span><span id="FOLDERID_PRINTERSFOLDER"></span><dl> <dt><strong>FOLDERID_PrintersFolder</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -2216,8 +2216,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_PrintHood"></span><span id="folderid_printhood"></span><span id="FOLDERID_PRINTHOOD"></span><dl> <dt><strong>FOLDERID_PrintHood</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_PrintHood"></span><span id="folderid_printhood"></span><span id="FOLDERID_PRINTHOOD"></span><dl> <dt><strong>FOLDERID_PrintHood</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -2254,8 +2254,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_Profile"></span><span id="folderid_profile"></span><span id="FOLDERID_PROFILE"></span><dl> <dt><strong>FOLDERID_Profile</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_Profile"></span><span id="folderid_profile"></span><span id="FOLDERID_PROFILE"></span><dl> <dt><strong>FOLDERID_Profile</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -2292,8 +2292,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_ProgramData"></span><span id="folderid_programdata"></span><span id="FOLDERID_PROGRAMDATA"></span><dl> <dt><strong>FOLDERID_ProgramData</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_ProgramData"></span><span id="folderid_programdata"></span><span id="FOLDERID_PROGRAMDATA"></span><dl> <dt><strong>FOLDERID_ProgramData</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -2310,19 +2310,19 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
-<td>%ALLUSERSPROFILE% (%ProgramData%, %SystemDrive%\ProgramData)</td>
+<td>% ALLUSERSPROFILE% (% ProgramData%,%SystemDrive%\ProgramData)</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDL</td>
+<td>Equivalente de CSIDl</td>
 <td>CSIDL_COMMON_APPDATA</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herddo</td>
+<td>Nome de exibição herdado</td>
 <td>Dados de aplicativos</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herddo</td>
-<td>%ALLUSERSPROFILE%\Application Data</td>
+<td>Caminho padrão herdado</td>
+<td>Dados do%ALLUSERSPROFILE%\Application</td>
 </tr>
 </tbody>
 </table>
@@ -2330,8 +2330,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_ProgramFiles"></span><span id="folderid_programfiles"></span><span id="FOLDERID_PROGRAMFILES"></span><dl> <dt><strong>FOLDERID_ProgramFiles</strong></dt> </dl></td>
-<td style="text-align: left;"><p>Consulte Comentários para obter mais informações.</p>
+<td ><span id="FOLDERID_ProgramFiles"></span><span id="folderid_programfiles"></span><span id="FOLDERID_PROGRAMFILES"></span><dl> <dt><strong>FOLDERID_ProgramFiles</strong></dt> </dl></td>
+<td ><p>Consulte comentários para obter mais informações.</p>
 
 <table>
 <tbody>
@@ -2349,19 +2349,19 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
-<td>%ProgramFiles% (%SystemDrive%\Arquivos de Programas)</td>
+<td>% ProgramFiles% (arquivos%systemdrive%\Arquivos)</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDL</td>
+<td>Equivalente de CSIDl</td>
 <td>CSIDL_PROGRAM_FILES</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herddo</td>
+<td>Nome de exibição herdado</td>
 <td>Arquivos de Programas</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herddo</td>
-<td>%ProgramFiles% (%SystemDrive%\Arquivos de Programas)</td>
+<td>Caminho padrão herdado</td>
+<td>% ProgramFiles% (arquivos%systemdrive%\Arquivos)</td>
 </tr>
 </tbody>
 </table>
@@ -2369,8 +2369,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_ProgramFilesX64"></span><span id="folderid_programfilesx64"></span><span id="FOLDERID_PROGRAMFILESX64"></span><dl> <dt><strong>FOLDERID_ProgramFilesX64</strong></dt> </dl></td>
-<td style="text-align: left;"><p>Esse valor não tem suporte em sistemas operacionais de 32 bits. Também não há suporte para aplicativos de 32 bits em execução em sistemas operacionais de 64 bits. Tentar usar FOLDERID_ProgramFilesX64 em qualquer situação resulta em um erro. Consulte Comentários para obter mais informações.</p>
+<td ><span id="FOLDERID_ProgramFilesX64"></span><span id="folderid_programfilesx64"></span><span id="FOLDERID_PROGRAMFILESX64"></span><dl> <dt><strong>FOLDERID_ProgramFilesX64</strong></dt> </dl></td>
+<td ><p>Não há suporte para esse valor em sistemas operacionais de 32 bits. Também não há suporte para aplicativos de 32 bits em execução em sistemas operacionais de 64 bits. A tentativa de usar FOLDERID_ProgramFilesX64 em uma das situações resulta em um erro. Consulte comentários para obter mais informações.</p>
 
 <table>
 <tbody>
@@ -2388,19 +2388,19 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
-<td>%ProgramFiles% (%SystemDrive%\Arquivos de Programas)</td>
+<td>% ProgramFiles% (arquivos%systemdrive%\Arquivos)</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDL</td>
+<td>Equivalente de CSIDl</td>
 <td>Nenhum</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herddo</td>
+<td>Nome de exibição herdado</td>
 <td>Arquivos de Programas</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herddo</td>
-<td>%ProgramFiles% (%SystemDrive%\Arquivos de Programas)</td>
+<td>Caminho padrão herdado</td>
+<td>% ProgramFiles% (arquivos%systemdrive%\Arquivos)</td>
 </tr>
 </tbody>
 </table>
@@ -2408,8 +2408,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_ProgramFilesX86"></span><span id="folderid_programfilesx86"></span><span id="FOLDERID_PROGRAMFILESX86"></span><dl> <dt><strong>FOLDERID_ProgramFilesX86</strong></dt> </dl></td>
-<td style="text-align: left;"><p>Consulte Comentários para obter mais informações.</p>
+<td ><span id="FOLDERID_ProgramFilesX86"></span><span id="folderid_programfilesx86"></span><span id="FOLDERID_PROGRAMFILESX86"></span><dl> <dt><strong>FOLDERID_ProgramFilesX86</strong></dt> </dl></td>
+<td ><p>Consulte comentários para obter mais informações.</p>
 
 <table>
 <tbody>
@@ -2427,19 +2427,19 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
-<td>%ProgramFiles% (%SystemDrive%\Arquivos de Programas)</td>
+<td>% ProgramFiles% (arquivos%systemdrive%\Arquivos)</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDL</td>
+<td>Equivalente de CSIDl</td>
 <td>CSIDL_PROGRAM_FILESX86</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herddo</td>
+<td>Nome de exibição herdado</td>
 <td>Arquivos de Programas</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herddo</td>
-<td>%ProgramFiles% (%SystemDrive%\Arquivos de Programas)</td>
+<td>Caminho padrão herdado</td>
+<td>% ProgramFiles% (arquivos%systemdrive%\Arquivos)</td>
 </tr>
 </tbody>
 </table>
@@ -2447,8 +2447,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_ProgramFilesCommon"></span><span id="folderid_programfilescommon"></span><span id="FOLDERID_PROGRAMFILESCOMMON"></span><dl> <dt><strong>FOLDERID_ProgramFilesCommon</strong></dt> </dl></td>
-<td style="text-align: left;"><p>Consulte Comentários para obter mais informações.</p>
+<td ><span id="FOLDERID_ProgramFilesCommon"></span><span id="folderid_programfilescommon"></span><span id="FOLDERID_PROGRAMFILESCOMMON"></span><dl> <dt><strong>FOLDERID_ProgramFilesCommon</strong></dt> </dl></td>
+<td ><p>Consulte comentários para obter mais informações.</p>
 
 <table>
 <tbody>
@@ -2466,19 +2466,19 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
-<td>%ProgramFiles%\Common Files</td>
+<td>Arquivos%ProgramFiles%\Common</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDL</td>
+<td>Equivalente de CSIDl</td>
 <td>CSIDL_PROGRAM_FILES_COMMON</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herddo</td>
+<td>Nome de exibição herdado</td>
 <td>Arquivos comuns</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herddo</td>
-<td>%ProgramFiles%\Common Files</td>
+<td>Caminho padrão herdado</td>
+<td>Arquivos%ProgramFiles%\Common</td>
 </tr>
 </tbody>
 </table>
@@ -2486,8 +2486,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_ProgramFilesCommonX64"></span><span id="folderid_programfilescommonx64"></span><span id="FOLDERID_PROGRAMFILESCOMMONX64"></span><dl> <dt><strong>FOLDERID_ProgramFilesCommonX64</strong></dt> </dl></td>
-<td style="text-align: left;"><p>Consulte Comentários para obter mais informações.</p>
+<td ><span id="FOLDERID_ProgramFilesCommonX64"></span><span id="folderid_programfilescommonx64"></span><span id="FOLDERID_PROGRAMFILESCOMMONX64"></span><dl> <dt><strong>FOLDERID_ProgramFilesCommonX64</strong></dt> </dl></td>
+<td ><p>Consulte comentários para obter mais informações.</p>
 
 <table>
 <tbody>
@@ -2505,19 +2505,19 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
-<td>%ProgramFiles%\Common Files</td>
+<td>Arquivos%ProgramFiles%\Common</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDL</td>
+<td>Equivalente de CSIDl</td>
 <td>Nenhum</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herddo</td>
+<td>Nome de exibição herdado</td>
 <td>Arquivos comuns</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herddo</td>
-<td>%ProgramFiles%\Common Files</td>
+<td>Caminho padrão herdado</td>
+<td>Arquivos%ProgramFiles%\Common</td>
 </tr>
 </tbody>
 </table>
@@ -2525,8 +2525,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_ProgramFilesCommonX86"></span><span id="folderid_programfilescommonx86"></span><span id="FOLDERID_PROGRAMFILESCOMMONX86"></span><dl> <dt><strong>FOLDERID_ProgramFilesCommonX86</strong></dt> </dl></td>
-<td style="text-align: left;"><p>Consulte Comentários para obter mais informações.</p>
+<td ><span id="FOLDERID_ProgramFilesCommonX86"></span><span id="folderid_programfilescommonx86"></span><span id="FOLDERID_PROGRAMFILESCOMMONX86"></span><dl> <dt><strong>FOLDERID_ProgramFilesCommonX86</strong></dt> </dl></td>
+<td ><p>Consulte comentários para obter mais informações.</p>
 
 <table>
 <tbody>
@@ -2544,19 +2544,19 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
-<td>Arquivos%ProgramFiles%\Common</td>
+<td>%ProgramFiles%\Common Files</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDl</td>
+<td>Equivalente de CSIDL</td>
 <td>CSIDL_PROGRAM_FILES_COMMONX86</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herdado</td>
+<td>Nome de exibição herddo</td>
 <td>Arquivos comuns</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herdado</td>
-<td>Arquivos%ProgramFiles%\Common</td>
+<td>Caminho padrão herddo</td>
+<td>%ProgramFiles%\Common Files</td>
 </tr>
 </tbody>
 </table>
@@ -2564,8 +2564,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_Programs"></span><span id="folderid_programs"></span><span id="FOLDERID_PROGRAMS"></span><dl> <dt><strong>FOLDERID_Programs</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_Programs"></span><span id="folderid_programs"></span><span id="FOLDERID_PROGRAMS"></span><dl> <dt><strong>FOLDERID_Programs</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -2578,23 +2578,23 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>Peruser</td>
+<td>PERÚSER</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
-<td>%APPDATA%\Microsoft\ Windows \menu iniciar\programas</td>
+<td>%APPDATA%\Microsoft\Windows\Menu Iniciar\Programas</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDl</td>
+<td>Equivalente de CSIDL</td>
 <td>CSIDL_PROGRAMS</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herdado</td>
+<td>Nome de exibição herddo</td>
 <td>Programas</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herdado</td>
-<td>%USERPROFILE%\Start Iniciar\programas</td>
+<td>Caminho padrão herddo</td>
+<td>%USERPROFILE%\Menu Iniciar\Programas</td>
 </tr>
 </tbody>
 </table>
@@ -2602,8 +2602,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_Public"></span><span id="folderid_public"></span><span id="FOLDERID_PUBLIC"></span><dl> <dt><strong>FOLDERID_Public</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_Public"></span><span id="folderid_public"></span><span id="FOLDERID_PUBLIC"></span><dl> <dt><strong>FOLDERID_Public</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -2620,18 +2620,18 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
-<td>% PUBLIC% (%SystemDrive%\Users\Public)</td>
+<td>%PUBLIC% (%SystemDrive%\Users\Public)</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDl</td>
-<td>nenhum, novo para o Windows Vista</td>
+<td>Equivalente de CSIDL</td>
+<td>Nenhum, novo para Windows Vista</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herdado</td>
+<td>Nome de exibição herddo</td>
 <td>Não aplicável</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herdado</td>
+<td>Caminho padrão herddo</td>
 <td>Não aplicável</td>
 </tr>
 </tbody>
@@ -2640,8 +2640,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_PublicDesktop"></span><span id="folderid_publicdesktop"></span><span id="FOLDERID_PUBLICDESKTOP"></span><dl> <dt><strong>FOLDERID_PublicDesktop</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_PublicDesktop"></span><span id="folderid_publicdesktop"></span><span id="FOLDERID_PUBLICDESKTOP"></span><dl> <dt><strong>FOLDERID_PublicDesktop</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -2650,26 +2650,26 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="even">
 <td>Nome de exibição</td>
-<td>Área de trabalho pública</td>
+<td>Área de Trabalho Pública</td>
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>COMMON</td>
+<td>COMUM</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
 <td>%PUBLIC%\Desktop</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDl</td>
+<td>Equivalente de CSIDL</td>
 <td>CSIDL_COMMON_DESKTOPDIRECTORY</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herdado</td>
-<td>Desktop</td>
+<td>Nome de exibição herddo</td>
+<td>Área de trabalho</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herdado</td>
+<td>Caminho padrão herddo</td>
 <td>%ALLUSERSPROFILE%\Desktop</td>
 </tr>
 </tbody>
@@ -2678,8 +2678,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_PublicDocuments"></span><span id="folderid_publicdocuments"></span><span id="FOLDERID_PUBLICDOCUMENTS"></span><dl> <dt><strong>FOLDERID_PublicDocuments</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_PublicDocuments"></span><span id="folderid_publicdocuments"></span><span id="FOLDERID_PUBLICDOCUMENTS"></span><dl> <dt><strong>FOLDERID_PublicDocuments</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -2692,22 +2692,22 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>COMMON</td>
+<td>COMUM</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
 <td>%PUBLIC%\Documents</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDl</td>
+<td>Equivalente de CSIDL</td>
 <td>CSIDL_COMMON_DOCUMENTS</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herdado</td>
+<td>Nome de exibição herddo</td>
 <td>Documentos compartilhados</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herdado</td>
+<td>Caminho padrão herddo</td>
 <td>%ALLUSERSPROFILE%\Documents</td>
 </tr>
 </tbody>
@@ -2716,8 +2716,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_PublicDownloads"></span><span id="folderid_publicdownloads"></span><span id="FOLDERID_PUBLICDOWNLOADS"></span><dl> <dt><strong>FOLDERID_PublicDownloads</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_PublicDownloads"></span><span id="folderid_publicdownloads"></span><span id="FOLDERID_PUBLICDOWNLOADS"></span><dl> <dt><strong>FOLDERID_PublicDownloads</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -2730,22 +2730,22 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>COMMON</td>
+<td>COMUM</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
 <td>%PUBLIC%\Downloads</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDl</td>
-<td>nenhum, valor introduzido no Windows Vista</td>
+<td>Equivalente de CSIDL</td>
+<td>Nenhum, valor introduzido no Windows Vista</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herdado</td>
+<td>Nome de exibição herddo</td>
 <td>Não aplicável</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herdado</td>
+<td>Caminho padrão herddo</td>
 <td>Não aplicável</td>
 </tr>
 </tbody>
@@ -2754,8 +2754,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_PublicGameTasks"></span><span id="folderid_publicgametasks"></span><span id="FOLDERID_PUBLICGAMETASKS"></span><dl> <dt><strong>FOLDERID_PublicGameTasks</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_PublicGameTasks"></span><span id="folderid_publicgametasks"></span><span id="FOLDERID_PUBLICGAMETASKS"></span><dl> <dt><strong>FOLDERID_PublicGameTasks</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -2768,15 +2768,167 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
+<td>COMUM</td>
+</tr>
+<tr class="even">
+<td>Default Caminho</td>
+<td>%ALLUSERSPROFILE%\Microsoft\Windows\GameExplorer</td>
+</tr>
+<tr class="odd">
+<td>Equivalente de CSIDL</td>
+<td>Nenhum, valor introduzido no Windows Vista</td>
+</tr>
+<tr class="even">
+<td>Nome de exibição herddo</td>
+<td>Não aplicável</td>
+</tr>
+<tr class="odd">
+<td>Caminho padrão herddo</td>
+<td>Não aplicável</td>
+</tr>
+</tbody>
+</table>
+
+<p> </p></td>
+</tr>
+<tr class="even">
+<td ><span id="FOLDERID_PublicLibraries"></span><span id="folderid_publiclibraries"></span><span id="FOLDERID_PUBLICLIBRARIES"></span><dl> <dt><strong>FOLDERID_PublicLibraries</strong></dt> </dl></td>
+<td >
+<table>
+<tbody>
+<tr class="odd">
+<td>GUID</td>
+<td>{48DAF80B-E6CF-4F4E-B800-0E69D84EE384}</td>
+</tr>
+<tr class="even">
+<td>Nome de exibição</td>
+<td>Bibliotecas</td>
+</tr>
+<tr class="odd">
+<td>Tipo de pasta</td>
 <td>COMMON</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
-<td>%ALLUSERSPROFILE%\Microsoft\ Windows \GameExplorer</td>
+<td>%ALLUSERSPROFILE%\Microsoft\ Windows \Libraries</td>
 </tr>
 <tr class="odd">
 <td>Equivalente de CSIDl</td>
-<td>nenhum, valor introduzido no Windows Vista</td>
+<td>nenhum, valor introduzido no Windows 7</td>
+</tr>
+<tr class="even">
+<td>Nome de exibição herdado</td>
+<td>Não aplicável</td>
+</tr>
+<tr class="odd">
+<td>Caminho padrão herdado</td>
+<td>Não aplicável</td>
+</tr>
+</tbody>
+</table>
+
+<p> </p></td>
+</tr>
+<tr class="odd">
+<td ><span id="FOLDERID_PublicMusic"></span><span id="folderid_publicmusic"></span><span id="FOLDERID_PUBLICMUSIC"></span><dl> <dt><strong>FOLDERID_PublicMusic</strong></dt> </dl></td>
+<td >
+<table>
+<tbody>
+<tr class="odd">
+<td>GUID</td>
+<td>{3214FAB5-9757-4298-BB61-92A9DEAA44FF}</td>
+</tr>
+<tr class="even">
+<td>Nome de exibição</td>
+<td>Músicas Públicas</td>
+</tr>
+<tr class="odd">
+<td>Tipo de pasta</td>
+<td>COMMON</td>
+</tr>
+<tr class="even">
+<td>Default Caminho</td>
+<td>%PUBLIC%\Music</td>
+</tr>
+<tr class="odd">
+<td>Equivalente de CSIDl</td>
+<td>CSIDL_COMMON_MUSIC</td>
+</tr>
+<tr class="even">
+<td>Nome de exibição herdado</td>
+<td>Música compartilhada</td>
+</tr>
+<tr class="odd">
+<td>Caminho padrão herdado</td>
+<td>Música%ALLUSERSPROFILE%\Documents\My</td>
+</tr>
+</tbody>
+</table>
+
+<p> </p></td>
+</tr>
+<tr class="even">
+<td ><span id="FOLDERID_PublicPictures"></span><span id="folderid_publicpictures"></span><span id="FOLDERID_PUBLICPICTURES"></span><dl> <dt><strong>FOLDERID_PublicPictures</strong></dt> </dl></td>
+<td >
+<table>
+<tbody>
+<tr class="odd">
+<td>GUID</td>
+<td>{B6EBFB86-6907-413C-9AF7-4FC2ABF07CC5}</td>
+</tr>
+<tr class="even">
+<td>Nome de exibição</td>
+<td>Imagens públicas</td>
+</tr>
+<tr class="odd">
+<td>Tipo de pasta</td>
+<td>COMMON</td>
+</tr>
+<tr class="even">
+<td>Default Caminho</td>
+<td>%PUBLIC%\Pictures</td>
+</tr>
+<tr class="odd">
+<td>Equivalente de CSIDl</td>
+<td>CSIDL_COMMON_PICTURES</td>
+</tr>
+<tr class="even">
+<td>Nome de exibição herdado</td>
+<td>Imagens compartilhadas</td>
+</tr>
+<tr class="odd">
+<td>Caminho padrão herdado</td>
+<td>%ALLUSERSPROFILE%\Documents\My imagens</td>
+</tr>
+</tbody>
+</table>
+
+<p> </p></td>
+</tr>
+<tr class="odd">
+<td ><span id="FOLDERID_PublicRingtones"></span><span id="folderid_publicringtones"></span><span id="FOLDERID_PUBLICRINGTONES"></span><dl> <dt><strong>FOLDERID_PublicRingtones</strong></dt> </dl></td>
+<td >
+<table>
+<tbody>
+<tr class="odd">
+<td>GUID</td>
+<td>{E555AB60-153B-4D17-9F04-A5FE99FC15EC}</td>
+</tr>
+<tr class="even">
+<td>Nome de exibição</td>
+<td>Toques</td>
+</tr>
+<tr class="odd">
+<td>Tipo de pasta</td>
+<td>COMMON</td>
+</tr>
+<tr class="even">
+<td>Default Caminho</td>
+<td>%ALLUSERSPROFILE%\Microsoft\ Windows \Ringtones</td>
+</tr>
+<tr class="odd">
+<td>Equivalente de CSIDl</td>
+<td>nenhum, valor introduzido no Windows 7</td>
 </tr>
 <tr class="even">
 <td>Nome de exibição herdado</td>
@@ -2792,160 +2944,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_PublicLibraries"></span><span id="folderid_publiclibraries"></span><span id="FOLDERID_PUBLICLIBRARIES"></span><dl> <dt><strong>FOLDERID_PublicLibraries</strong></dt> </dl></td>
-<td style="text-align: left;">
-<table>
-<tbody>
-<tr class="odd">
-<td>GUID</td>
-<td>{48DAF80B-E6CF-4F4E-B800-0E69D84EE384}</td>
-</tr>
-<tr class="even">
-<td>Nome de exibição</td>
-<td>Bibliotecas</td>
-</tr>
-<tr class="odd">
-<td>Tipo de pasta</td>
-<td>Comum</td>
-</tr>
-<tr class="even">
-<td>Default Caminho</td>
-<td>%ALLUSERSPROFILE%\Microsoft\Windows\Libraries</td>
-</tr>
-<tr class="odd">
-<td>Equivalente de CSIDL</td>
-<td>Nenhum, valor introduzido na Windows 7</td>
-</tr>
-<tr class="even">
-<td>Nome de exibição herddo</td>
-<td>Não aplicável</td>
-</tr>
-<tr class="odd">
-<td>Caminho padrão herddo</td>
-<td>Não aplicável</td>
-</tr>
-</tbody>
-</table>
-
-<p> </p></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_PublicMusic"></span><span id="folderid_publicmusic"></span><span id="FOLDERID_PUBLICMUSIC"></span><dl> <dt><strong>FOLDERID_PublicMusic</strong></dt> </dl></td>
-<td style="text-align: left;">
-<table>
-<tbody>
-<tr class="odd">
-<td>GUID</td>
-<td>{3214FAB5-9757-4298-BB61-92A9DEAAA44FF}</td>
-</tr>
-<tr class="even">
-<td>Nome de exibição</td>
-<td>Músicas Públicas</td>
-</tr>
-<tr class="odd">
-<td>Tipo de pasta</td>
-<td>Comum</td>
-</tr>
-<tr class="even">
-<td>Default Caminho</td>
-<td>%PUBLIC%\Music</td>
-</tr>
-<tr class="odd">
-<td>Equivalente de CSIDL</td>
-<td>CSIDL_COMMON_MUSIC</td>
-</tr>
-<tr class="even">
-<td>Nome de exibição herddo</td>
-<td>Música compartilhada</td>
-</tr>
-<tr class="odd">
-<td>Caminho padrão herddo</td>
-<td>%ALLUSERSPROFILE%\Documents\My Music</td>
-</tr>
-</tbody>
-</table>
-
-<p> </p></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_PublicPictures"></span><span id="folderid_publicpictures"></span><span id="FOLDERID_PUBLICPICTURES"></span><dl> <dt><strong>FOLDERID_PublicPictures</strong></dt> </dl></td>
-<td style="text-align: left;">
-<table>
-<tbody>
-<tr class="odd">
-<td>GUID</td>
-<td>{B6EBFB86-6907-413C-9AF7-4FC2ABF07CC5}</td>
-</tr>
-<tr class="even">
-<td>Nome de exibição</td>
-<td>Imagens públicas</td>
-</tr>
-<tr class="odd">
-<td>Tipo de pasta</td>
-<td>Comum</td>
-</tr>
-<tr class="even">
-<td>Default Caminho</td>
-<td>%PUBLIC%\Pictures</td>
-</tr>
-<tr class="odd">
-<td>Equivalente de CSIDL</td>
-<td>CSIDL_COMMON_PICTURES</td>
-</tr>
-<tr class="even">
-<td>Nome de exibição herddo</td>
-<td>Imagens compartilhadas</td>
-</tr>
-<tr class="odd">
-<td>Caminho padrão herddo</td>
-<td>%ALLUSERSPROFILE%\Documents\My Pictures</td>
-</tr>
-</tbody>
-</table>
-
-<p> </p></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_PublicRingtones"></span><span id="folderid_publicringtones"></span><span id="FOLDERID_PUBLICRINGTONES"></span><dl> <dt><strong>FOLDERID_PublicRingtones</strong></dt> </dl></td>
-<td style="text-align: left;">
-<table>
-<tbody>
-<tr class="odd">
-<td>GUID</td>
-<td>{E555AB60-153B-4D17-9F04-A5FE99FC15EC}</td>
-</tr>
-<tr class="even">
-<td>Nome de exibição</td>
-<td>Ringtones</td>
-</tr>
-<tr class="odd">
-<td>Tipo de pasta</td>
-<td>Comum</td>
-</tr>
-<tr class="even">
-<td>Default Caminho</td>
-<td>%ALLUSERSPROFILE%\Microsoft\Windows\Ringtones</td>
-</tr>
-<tr class="odd">
-<td>Equivalente de CSIDL</td>
-<td>Nenhum, valor introduzido na Windows 7</td>
-</tr>
-<tr class="even">
-<td>Nome de exibição herddo</td>
-<td>Não aplicável</td>
-</tr>
-<tr class="odd">
-<td>Caminho padrão herddo</td>
-<td>Não aplicável</td>
-</tr>
-</tbody>
-</table>
-
-<p> </p></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_PublicUserTiles"></span><span id="folderid_publicusertiles"></span><span id="FOLDERID_PUBLICUSERTILES"></span><dl> <dt><strong>FOLDERID_PublicUserTiles</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_PublicUserTiles"></span><span id="folderid_publicusertiles"></span><span id="FOLDERID_PUBLICUSERTILES"></span><dl> <dt><strong>FOLDERID_PublicUserTiles</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -2954,26 +2954,26 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="even">
 <td>Nome de exibição</td>
-<td>Imagens de conta pública</td>
+<td>Imagens da conta pública</td>
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>Comum</td>
+<td>COMMON</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
 <td>%PUBLIC%\AccountPictures</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDL</td>
+<td>Equivalente de CSIDl</td>
 <td>Nenhum, valor introduzido no Windows 8</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herddo</td>
+<td>Nome de exibição herdado</td>
 <td>Não aplicável</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herddo</td>
+<td>Caminho padrão herdado</td>
 <td>Não aplicável</td>
 </tr>
 </tbody>
@@ -2982,8 +2982,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_PublicVideos"></span><span id="folderid_publicvideos"></span><span id="FOLDERID_PUBLICVIDEOS"></span><dl> <dt><strong>FOLDERID_PublicVideos</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_PublicVideos"></span><span id="folderid_publicvideos"></span><span id="FOLDERID_PUBLICVIDEOS"></span><dl> <dt><strong>FOLDERID_PublicVideos</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -2996,23 +2996,23 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>Comum</td>
+<td>COMMON</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
 <td>%PUBLIC%\Videos</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDL</td>
+<td>Equivalente de CSIDl</td>
 <td>CSIDL_COMMON_VIDEO</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herddo</td>
+<td>Nome de exibição herdado</td>
 <td>Vídeo compartilhado</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herddo</td>
-<td>%ALLUSERSPROFILE%\Documents\My Videos</td>
+<td>Caminho padrão herdado</td>
+<td>Vídeos de%ALLUSERSPROFILE%\Documents\My</td>
 </tr>
 </tbody>
 </table>
@@ -3020,8 +3020,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_QuickLaunch"></span><span id="folderid_quicklaunch"></span><span id="FOLDERID_QUICKLAUNCH"></span><dl> <dt><strong>FOLDERID_QuickLaunch</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_QuickLaunch"></span><span id="folderid_quicklaunch"></span><span id="FOLDERID_QUICKLAUNCH"></span><dl> <dt><strong>FOLDERID_QuickLaunch</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -3034,23 +3034,23 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>PERÚSER</td>
+<td>Peruser</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
-<td>%APPDATA%\Microsoft\Internet Explorer\Início Rápido</td>
+<td>Inicialização do%APPDATA%\Microsoft\Internet Explorer\Quick</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDL</td>
+<td>Equivalente de CSIDl</td>
 <td>Nenhum</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herddo</td>
+<td>Nome de exibição herdado</td>
 <td>Início Rápido</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herddo</td>
-<td>%APPDATA%\Microsoft\Internet Explorer\Início Rápido</td>
+<td>Caminho padrão herdado</td>
+<td>Inicialização do%APPDATA%\Microsoft\Internet Explorer\Quick</td>
 </tr>
 </tbody>
 </table>
@@ -3058,8 +3058,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_Recent"></span><span id="folderid_recent"></span><span id="FOLDERID_RECENT"></span><dl> <dt><strong>FOLDERID_Recent</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_Recent"></span><span id="folderid_recent"></span><span id="FOLDERID_RECENT"></span><dl> <dt><strong>FOLDERID_Recent</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -3072,22 +3072,22 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>PERÚSER</td>
+<td>Peruser</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
-<td>%APPDATA%\Microsoft\Windows\Recent</td>
+<td>%APPDATA%\Microsoft\ Windows \Recent</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDL</td>
+<td>Equivalente de CSIDl</td>
 <td>CSIDL_RECENT</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herddo</td>
+<td>Nome de exibição herdado</td>
 <td>Meus documentos recentes</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herddo</td>
+<td>Caminho padrão herdado</td>
 <td>%USERPROFILE%\Recent</td>
 </tr>
 </tbody>
@@ -3096,12 +3096,12 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_RecordedTV"></span><span id="folderid_recordedtv"></span><span id="FOLDERID_RECORDEDTV"></span><dl> <dt><strong>FOLDERID_RecordedTV</strong></dt> </dl></td>
-<td style="text-align: left;"><p>Não usado. Esse valor é indefinido desde Windows 7.</p></td>
+<td ><span id="FOLDERID_RecordedTV"></span><span id="folderid_recordedtv"></span><span id="FOLDERID_RECORDEDTV"></span><dl> <dt><strong>FOLDERID_RecordedTV</strong></dt> </dl></td>
+<td ><p>Não usado. esse valor é indefinido a partir de Windows 7.</p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_RecordedTVLibrary"></span><span id="folderid_recordedtvlibrary"></span><span id="FOLDERID_RECORDEDTVLIBRARY"></span><dl> <dt><strong>FOLDERID_RecordedTVLibrary</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_RecordedTVLibrary"></span><span id="folderid_recordedtvlibrary"></span><span id="FOLDERID_RECORDEDTVLIBRARY"></span><dl> <dt><strong>FOLDERID_RecordedTVLibrary</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -3114,22 +3114,22 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>Comum</td>
+<td>COMMON</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
 <td>%PUBLIC%\RecordedTV.library-ms</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDL</td>
-<td>Nenhum, valor introduzido na Windows 7</td>
+<td>Equivalente de CSIDl</td>
+<td>nenhum, valor introduzido no Windows 7</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herddo</td>
+<td>Nome de exibição herdado</td>
 <td>Não aplicável</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herddo</td>
+<td>Caminho padrão herdado</td>
 <td>Não aplicável</td>
 </tr>
 </tbody>
@@ -3138,8 +3138,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_RecycleBinFolder"></span><span id="folderid_recyclebinfolder"></span><span id="FOLDERID_RECYCLEBINFOLDER"></span><dl> <dt><strong>FOLDERID_RecycleBinFolder</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_RecycleBinFolder"></span><span id="folderid_recyclebinfolder"></span><span id="FOLDERID_RECYCLEBINFOLDER"></span><dl> <dt><strong>FOLDERID_RecycleBinFolder</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -3152,22 +3152,22 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>Virtual</td>
+<td>VIRTUAISLUNS</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
 <td>Não aplicável — pasta virtual</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDL</td>
+<td>Equivalente de CSIDl</td>
 <td>CSIDL_BITBUCKET</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herddo</td>
+<td>Nome de exibição herdado</td>
 <td>Lixeira</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herddo</td>
+<td>Caminho padrão herdado</td>
 <td>Não aplicável — pasta virtual</td>
 </tr>
 </tbody>
@@ -3176,8 +3176,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_ResourceDir"></span><span id="folderid_resourcedir"></span><span id="FOLDERID_RESOURCEDIR"></span><dl> <dt><strong>FOLDERID_ResourceDir</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_ResourceDir"></span><span id="folderid_resourcedir"></span><span id="FOLDERID_RESOURCEDIR"></span><dl> <dt><strong>FOLDERID_ResourceDir</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -3197,15 +3197,15 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <td>%windir%\Resources</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDL</td>
+<td>Equivalente de CSIDl</td>
 <td>CSIDL_RESOURCES</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herddo</td>
+<td>Nome de exibição herdado</td>
 <td>Recursos</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herddo</td>
+<td>Caminho padrão herdado</td>
 <td>%windir%\Resources</td>
 </tr>
 </tbody>
@@ -3214,8 +3214,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_Ringtones"></span><span id="folderid_ringtones"></span><span id="FOLDERID_RINGTONES"></span><dl> <dt><strong>FOLDERID_Ringtones</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_Ringtones"></span><span id="folderid_ringtones"></span><span id="FOLDERID_RINGTONES"></span><dl> <dt><strong>FOLDERID_Ringtones</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -3224,26 +3224,26 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="even">
 <td>Nome de exibição</td>
-<td>Ringtones</td>
+<td>Toques</td>
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>PERÚSER</td>
+<td>Peruser</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
-<td>%LOCALAPPDATA%\Microsoft\Windows\Ringtones</td>
+<td>%LOCALAPPDATA%\Microsoft\ Windows \Ringtones</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDL</td>
-<td>Nenhum, valor introduzido na Windows 7</td>
+<td>Equivalente de CSIDl</td>
+<td>nenhum, valor introduzido no Windows 7</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herddo</td>
+<td>Nome de exibição herdado</td>
 <td>Não aplicável</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herddo</td>
+<td>Caminho padrão herdado</td>
 <td>Não aplicável</td>
 </tr>
 </tbody>
@@ -3252,8 +3252,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_RoamingAppData"></span><span id="folderid_roamingappdata"></span><span id="FOLDERID_ROAMINGAPPDATA"></span><dl> <dt><strong>FOLDERID_RoamingAppData</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_RoamingAppData"></span><span id="folderid_roamingappdata"></span><span id="FOLDERID_ROAMINGAPPDATA"></span><dl> <dt><strong>FOLDERID_RoamingAppData</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -3266,23 +3266,23 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>PERÚSER</td>
+<td>Peruser</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
-<td>%APPDATA% (%USERPROFILE%\AppData\Roaming)</td>
+<td>% APPDATA% (%USERPROFILE%\AppData\Roaming)</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDL</td>
+<td>Equivalente de CSIDl</td>
 <td>CSIDL_APPDATA</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herddo</td>
+<td>Nome de exibição herdado</td>
 <td>Dados de aplicativos</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herddo</td>
-<td>%APPDATA% (%USERPROFILE%\Application Data)</td>
+<td>Caminho padrão herdado</td>
+<td>% APPDATA% (dados de%USERPROFILE%\Application)</td>
 </tr>
 </tbody>
 </table>
@@ -3290,8 +3290,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_RoamedTileImages"></span><span id="folderid_roamedtileimages"></span><span id="FOLDERID_ROAMEDTILEIMAGES"></span><dl> <dt><strong>FOLDERID_RoamedTileImages</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_RoamedTileImages"></span><span id="folderid_roamedtileimages"></span><span id="FOLDERID_ROAMEDTILEIMAGES"></span><dl> <dt><strong>FOLDERID_RoamedTileImages</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -3304,22 +3304,22 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>Peruser</td>
+<td>PERÚSER</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
-<td>%LOCALAPPDATA%\Microsoft\ Windows \RoamedTileImages</td>
+<td>%LOCALAPPDATA%\Microsoft\Windows\RoamedTileImages</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDl</td>
+<td>Equivalente de CSIDL</td>
 <td>Nenhum, valor introduzido no Windows 8</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herdado</td>
+<td>Nome de exibição herddo</td>
 <td>Não aplicável</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herdado</td>
+<td>Caminho padrão herddo</td>
 <td>Não aplicável</td>
 </tr>
 </tbody>
@@ -3328,8 +3328,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_RoamingTiles"></span><span id="folderid_roamingtiles"></span><span id="FOLDERID_ROAMINGTILES"></span><dl> <dt><strong>FOLDERID_RoamingTiles</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_RoamingTiles"></span><span id="folderid_roamingtiles"></span><span id="FOLDERID_ROAMINGTILES"></span><dl> <dt><strong>FOLDERID_RoamingTiles</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -3342,22 +3342,22 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>Peruser</td>
+<td>PERÚSER</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
-<td>%LOCALAPPDATA%\Microsoft\ Windows \RoamingTiles</td>
+<td>%LOCALAPPDATA%\Microsoft\Windows\RoamingTiles</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDl</td>
+<td>Equivalente de CSIDL</td>
 <td>Nenhum, valor introduzido no Windows 8</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herdado</td>
+<td>Nome de exibição herddo</td>
 <td>Não aplicável</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herdado</td>
+<td>Caminho padrão herddo</td>
 <td>Não aplicável</td>
 </tr>
 </tbody>
@@ -3366,8 +3366,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_SampleMusic"></span><span id="folderid_samplemusic"></span><span id="FOLDERID_SAMPLEMUSIC"></span><dl> <dt><strong>FOLDERID_SampleMusic</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_SampleMusic"></span><span id="folderid_samplemusic"></span><span id="FOLDERID_SAMPLEMUSIC"></span><dl> <dt><strong>FOLDERID_SampleMusic</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -3380,22 +3380,22 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>COMMON</td>
+<td>COMUM</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
-<td>Música%PUBLIC%\Music\Sample</td>
+<td>%PUBLIC%\Music\Sample Music</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDl</td>
+<td>Equivalente de CSIDL</td>
 <td>Nenhum</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herdado</td>
+<td>Nome de exibição herddo</td>
 <td>Música de exemplo</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herdado</td>
+<td>Caminho padrão herddo</td>
 <td>%ALLUSERSPROFILE%\Documents\My Music\Sample Music</td>
 </tr>
 </tbody>
@@ -3404,8 +3404,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_SamplePictures"></span><span id="folderid_samplepictures"></span><span id="FOLDERID_SAMPLEPICTURES"></span><dl> <dt><strong>FOLDERID_SamplePictures</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_SamplePictures"></span><span id="folderid_samplepictures"></span><span id="FOLDERID_SAMPLEPICTURES"></span><dl> <dt><strong>FOLDERID_SamplePictures</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -3418,23 +3418,23 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>COMMON</td>
+<td>COMUM</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
-<td>%PUBLIC%\Pictures\Sample imagens</td>
+<td>%PUBLIC%\Pictures\Sample Pictures</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDl</td>
+<td>Equivalente de CSIDL</td>
 <td>Nenhum</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herdado</td>
+<td>Nome de exibição herddo</td>
 <td>Imagens de exemplo</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herdado</td>
-<td>Imagens do%ALLUSERSPROFILE%\Documents\My Pictures\Sample</td>
+<td>Caminho padrão herddo</td>
+<td>%ALLUSERSPROFILE%\Documents\My Pictures\Sample Pictures</td>
 </tr>
 </tbody>
 </table>
@@ -3442,8 +3442,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_SamplePlaylists"></span><span id="folderid_sampleplaylists"></span><span id="FOLDERID_SAMPLEPLAYLISTS"></span><dl> <dt><strong>FOLDERID_SamplePlaylists</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_SamplePlaylists"></span><span id="folderid_sampleplaylists"></span><span id="FOLDERID_SAMPLEPLAYLISTS"></span><dl> <dt><strong>FOLDERID_SamplePlaylists</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -3452,26 +3452,26 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="even">
 <td>Nome de exibição</td>
-<td>Listas de reprodução de exemplo</td>
+<td>Playlists de exemplo</td>
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>COMMON</td>
+<td>COMUM</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
-<td>Listas de reprodução do%PUBLIC%\Music\Sample</td>
+<td>%PUBLIC%\Music\Sample Playlists</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDl</td>
-<td>nenhum, valor introduzido no Windows Vista</td>
+<td>Equivalente de CSIDL</td>
+<td>Nenhum, valor introduzido no Windows Vista</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herdado</td>
+<td>Nome de exibição herddo</td>
 <td>Não aplicável</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herdado</td>
+<td>Caminho padrão herddo</td>
 <td>Não aplicável</td>
 </tr>
 </tbody>
@@ -3480,8 +3480,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_SampleVideos"></span><span id="folderid_samplevideos"></span><span id="FOLDERID_SAMPLEVIDEOS"></span><dl> <dt><strong>FOLDERID_SampleVideos</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_SampleVideos"></span><span id="folderid_samplevideos"></span><span id="FOLDERID_SAMPLEVIDEOS"></span><dl> <dt><strong>FOLDERID_SampleVideos</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -3494,22 +3494,22 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>COMMON</td>
+<td>COMUM</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
-<td>Vídeos de%PUBLIC%\Videos\Sample</td>
+<td>%PUBLIC%\Videos\Sample Videos</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDl</td>
+<td>Equivalente de CSIDL</td>
 <td>Nenhum</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herdado</td>
+<td>Nome de exibição herddo</td>
 <td>Não aplicável</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herdado</td>
+<td>Caminho padrão herddo</td>
 <td>Não aplicável</td>
 </tr>
 </tbody>
@@ -3518,8 +3518,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_SavedGames"></span><span id="folderid_savedgames"></span><span id="FOLDERID_SAVEDGAMES"></span><dl> <dt><strong>FOLDERID_SavedGames</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_SavedGames"></span><span id="folderid_savedgames"></span><span id="FOLDERID_SAVEDGAMES"></span><dl> <dt><strong>FOLDERID_SavedGames</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -3532,22 +3532,22 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>Peruser</td>
+<td>PERÚSER</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
-<td>Jogos de%USERPROFILE%\Saved</td>
+<td>%USERPROFILE%\Saved Games</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDl</td>
-<td>nenhum, valor introduzido no Windows Vista</td>
+<td>Equivalente de CSIDL</td>
+<td>Nenhum, valor introduzido no Windows Vista</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herdado</td>
+<td>Nome de exibição herddo</td>
 <td>Não aplicável</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herdado</td>
+<td>Caminho padrão herddo</td>
 <td>Não aplicável</td>
 </tr>
 </tbody>
@@ -3556,8 +3556,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_SavedPictures"></span><span id="folderid_savedpictures"></span><span id="FOLDERID_SAVEDPICTURES"></span><dl> <dt><strong>FOLDERID_SavedPictures</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_SavedPictures"></span><span id="folderid_savedpictures"></span><span id="FOLDERID_SAVEDPICTURES"></span><dl> <dt><strong>FOLDERID_SavedPictures</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -3570,22 +3570,22 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>PERÚSER</td>
+<td>Peruser</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
-<td>%USERPROFILE%\Pictures\Saved Pictures</td>
+<td>%USERPROFILE%\Pictures\Saved imagens</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDL</td>
+<td>Equivalente de CSIDl</td>
 <td>Nenhum</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herddo</td>
+<td>Nome de exibição herdado</td>
 <td>Não aplicável</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herddo</td>
+<td>Caminho padrão herdado</td>
 <td>Não aplicável</td>
 </tr>
 </tbody>
@@ -3594,8 +3594,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_SavedPicturesLibrary"></span><span id="folderid_savedpictureslibrary"></span><span id="FOLDERID_SAVEDPICTURESLIBRARY"></span><dl> <dt><strong>FOLDERID_SavedPicturesLibrary</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_SavedPicturesLibrary"></span><span id="folderid_savedpictureslibrary"></span><span id="FOLDERID_SAVEDPICTURESLIBRARY"></span><dl> <dt><strong>FOLDERID_SavedPicturesLibrary</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -3604,26 +3604,26 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="even">
 <td>Nome de exibição</td>
-<td>Biblioteca de Imagens Salvas</td>
+<td>Biblioteca de imagens salvas</td>
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>PERÚSER</td>
+<td>Peruser</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
-<td>%APPDATA%\Microsoft\Windows\Libraries\SavedPictures.library-ms</td>
+<td>%APPDATA%\Microsoft\ Windows \Libraries\SavedPictures.library-ms</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDL</td>
+<td>Equivalente de CSIDl</td>
 <td>Nenhum</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herddo</td>
+<td>Nome de exibição herdado</td>
 <td>Não aplicável</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herddo</td>
+<td>Caminho padrão herdado</td>
 <td>Não aplicável</td>
 </tr>
 </tbody>
@@ -3632,8 +3632,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_SavedSearches"></span><span id="folderid_savedsearches"></span><span id="FOLDERID_SAVEDSEARCHES"></span><dl> <dt><strong>FOLDERID_SavedSearches</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_SavedSearches"></span><span id="folderid_savedsearches"></span><span id="FOLDERID_SAVEDSEARCHES"></span><dl> <dt><strong>FOLDERID_SavedSearches</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -3646,22 +3646,22 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>PERÚSER</td>
+<td>Peruser</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
 <td>%USERPROFILE%\Searches</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDL</td>
+<td>Equivalente de CSIDl</td>
 <td>Nenhum</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herddo</td>
+<td>Nome de exibição herdado</td>
 <td>Não aplicável</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herddo</td>
+<td>Caminho padrão herdado</td>
 <td>Não aplicável</td>
 </tr>
 </tbody>
@@ -3670,8 +3670,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_Screenshots"></span><span id="folderid_screenshots"></span><span id="FOLDERID_SCREENSHOTS"></span><dl> <dt><strong>FOLDERID_Screenshots</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_Screenshots"></span><span id="folderid_screenshots"></span><span id="FOLDERID_SCREENSHOTS"></span><dl> <dt><strong>FOLDERID_Screenshots</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -3684,22 +3684,22 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>PERÚSER</td>
+<td>Peruser</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
-<td>%USERPROFILE%\Pictures\Capturas de tela</td>
+<td>%USERPROFILE%\Pictures\Screenshots</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDL</td>
+<td>Equivalente de CSIDl</td>
 <td>Nenhum, valor introduzido no Windows 8</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herddo</td>
+<td>Nome de exibição herdado</td>
 <td>Não aplicável</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herddo</td>
+<td>Caminho padrão herdado</td>
 <td>Não aplicável</td>
 </tr>
 </tbody>
@@ -3708,8 +3708,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_SEARCH_CSC"></span><span id="folderid_search_csc"></span><dl> <dt><strong>FOLDERID_SEARCH_CSC</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_SEARCH_CSC"></span><span id="folderid_search_csc"></span><dl> <dt><strong>FOLDERID_SEARCH_CSC</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -3722,83 +3722,7 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>Virtual</td>
-</tr>
-<tr class="even">
-<td>Default Caminho</td>
-<td>Não aplicável — pasta virtual</td>
-</tr>
-<tr class="odd">
-<td>Equivalente de CSIDL</td>
-<td>Nenhum</td>
-</tr>
-<tr class="even">
-<td>Nome de exibição herddo</td>
-<td>Não aplicável</td>
-</tr>
-<tr class="odd">
-<td>Caminho padrão herddo</td>
-<td>Não aplicável</td>
-</tr>
-</tbody>
-</table>
-
-<p> </p></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_SearchHistory"></span><span id="folderid_searchhistory"></span><span id="FOLDERID_SEARCHHISTORY"></span><dl> <dt><strong>FOLDERID_SearchHistory</strong></dt> </dl></td>
-<td style="text-align: left;">
-<table>
-<tbody>
-<tr class="odd">
-<td>GUID</td>
-<td>{0D4C3DB6-03A3-462F-A0E6-08924C41B5D4}</td>
-</tr>
-<tr class="even">
-<td>Nome de exibição</td>
-<td>Histórico</td>
-</tr>
-<tr class="odd">
-<td>Tipo de pasta</td>
-<td>PERÚSER</td>
-</tr>
-<tr class="even">
-<td>Default Caminho</td>
-<td>%LOCALAPPDATA%\Microsoft\Windows\ConnectedSearch\History</td>
-</tr>
-<tr class="odd">
-<td>Equivalente de CSIDL</td>
-<td>Nenhum, valor introduzido no Windows 8.1</td>
-</tr>
-<tr class="even">
-<td>Nome de exibição herddo</td>
-<td>Não aplicável</td>
-</tr>
-<tr class="odd">
-<td>Caminho padrão herddo</td>
-<td>Não aplicável</td>
-</tr>
-</tbody>
-</table>
-
-<p> </p></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_SearchHome"></span><span id="folderid_searchhome"></span><span id="FOLDERID_SEARCHHOME"></span><dl> <dt><strong>FOLDERID_SearchHome</strong></dt> </dl></td>
-<td style="text-align: left;">
-<table>
-<tbody>
-<tr class="odd">
-<td>GUID</td>
-<td>{190337d1-b8ca-4121-a639-6d472d16972a}</td>
-</tr>
-<tr class="even">
-<td>Nome de exibição</td>
-<td>Resultados da Pesquisa</td>
-</tr>
-<tr class="odd">
-<td>Tipo de pasta</td>
-<td>Virtual</td>
+<td>VIRTUAISLUNS</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
@@ -3822,8 +3746,84 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_SEARCH_MAPI"></span><span id="folderid_search_mapi"></span><dl> <dt><strong>FOLDERID_SEARCH_MAPI</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_SearchHistory"></span><span id="folderid_searchhistory"></span><span id="FOLDERID_SEARCHHISTORY"></span><dl> <dt><strong>FOLDERID_SearchHistory</strong></dt> </dl></td>
+<td >
+<table>
+<tbody>
+<tr class="odd">
+<td>GUID</td>
+<td>{0D4C3DB6-03A3-462F-A0E6-08924C41B5D4}</td>
+</tr>
+<tr class="even">
+<td>Nome de exibição</td>
+<td>Histórico</td>
+</tr>
+<tr class="odd">
+<td>Tipo de pasta</td>
+<td>Peruser</td>
+</tr>
+<tr class="even">
+<td>Default Caminho</td>
+<td>%LOCALAPPDATA%\Microsoft\ Windows \ConnectedSearch\History</td>
+</tr>
+<tr class="odd">
+<td>Equivalente de CSIDl</td>
+<td>Nenhum, valor introduzido no Windows 8.1</td>
+</tr>
+<tr class="even">
+<td>Nome de exibição herdado</td>
+<td>Não aplicável</td>
+</tr>
+<tr class="odd">
+<td>Caminho padrão herdado</td>
+<td>Não aplicável</td>
+</tr>
+</tbody>
+</table>
+
+<p> </p></td>
+</tr>
+<tr class="odd">
+<td ><span id="FOLDERID_SearchHome"></span><span id="folderid_searchhome"></span><span id="FOLDERID_SEARCHHOME"></span><dl> <dt><strong>FOLDERID_SearchHome</strong></dt> </dl></td>
+<td >
+<table>
+<tbody>
+<tr class="odd">
+<td>GUID</td>
+<td>{190337d1-b8ca-4121-a639-6d472d16972a}</td>
+</tr>
+<tr class="even">
+<td>Nome de exibição</td>
+<td>Resultados da Pesquisa</td>
+</tr>
+<tr class="odd">
+<td>Tipo de pasta</td>
+<td>VIRTUAISLUNS</td>
+</tr>
+<tr class="even">
+<td>Default Caminho</td>
+<td>Não aplicável — pasta virtual</td>
+</tr>
+<tr class="odd">
+<td>Equivalente de CSIDl</td>
+<td>Nenhum</td>
+</tr>
+<tr class="even">
+<td>Nome de exibição herdado</td>
+<td>Não aplicável</td>
+</tr>
+<tr class="odd">
+<td>Caminho padrão herdado</td>
+<td>Não aplicável</td>
+</tr>
+</tbody>
+</table>
+
+<p> </p></td>
+</tr>
+<tr class="even">
+<td ><span id="FOLDERID_SEARCH_MAPI"></span><span id="folderid_search_mapi"></span><dl> <dt><strong>FOLDERID_SEARCH_MAPI</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -3860,8 +3860,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_SearchTemplates"></span><span id="folderid_searchtemplates"></span><span id="FOLDERID_SEARCHTEMPLATES"></span><dl> <dt><strong>FOLDERID_SearchTemplates</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_SearchTemplates"></span><span id="folderid_searchtemplates"></span><span id="FOLDERID_SEARCHTEMPLATES"></span><dl> <dt><strong>FOLDERID_SearchTemplates</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -3898,8 +3898,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_SendTo"></span><span id="folderid_sendto"></span><span id="FOLDERID_SENDTO"></span><dl> <dt><strong>FOLDERID_SendTo</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_SendTo"></span><span id="folderid_sendto"></span><span id="FOLDERID_SENDTO"></span><dl> <dt><strong>FOLDERID_SendTo</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -3936,8 +3936,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_SidebarDefaultParts"></span><span id="folderid_sidebardefaultparts"></span><span id="FOLDERID_SIDEBARDEFAULTPARTS"></span><dl> <dt><strong>FOLDERID_SidebarDefaultParts</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_SidebarDefaultParts"></span><span id="folderid_sidebardefaultparts"></span><span id="FOLDERID_SIDEBARDEFAULTPARTS"></span><dl> <dt><strong>FOLDERID_SidebarDefaultParts</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -3974,8 +3974,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_SidebarParts"></span><span id="folderid_sidebarparts"></span><span id="FOLDERID_SIDEBARPARTS"></span><dl> <dt><strong>FOLDERID_SidebarParts</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_SidebarParts"></span><span id="folderid_sidebarparts"></span><span id="FOLDERID_SIDEBARPARTS"></span><dl> <dt><strong>FOLDERID_SidebarParts</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -4012,8 +4012,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_SkyDrive"></span><span id="folderid_skydrive"></span><span id="FOLDERID_SKYDRIVE"></span><dl> <dt><strong>FOLDERID_SkyDrive</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_SkyDrive"></span><span id="folderid_skydrive"></span><span id="FOLDERID_SKYDRIVE"></span><dl> <dt><strong>FOLDERID_SkyDrive</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -4050,8 +4050,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_SkyDriveCameraRoll"></span><span id="folderid_skydrivecameraroll"></span><span id="FOLDERID_SKYDRIVECAMERAROLL"></span><dl> <dt><strong>FOLDERID_SkyDriveCameraRoll</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_SkyDriveCameraRoll"></span><span id="folderid_skydrivecameraroll"></span><span id="FOLDERID_SKYDRIVECAMERAROLL"></span><dl> <dt><strong>FOLDERID_SkyDriveCameraRoll</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -4060,26 +4060,26 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="even">
 <td>Nome de exibição</td>
-<td>Rolo da câmera</td>
+<td>Roll da Câmera</td>
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>Peruser</td>
+<td>PERÚSER</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
-<td>% USERPROFILE% \ OneDrive Roll \Pictures\Camera</td>
+<td>%USERPROFILE%\OneDrive\Pictures\Camera Roll</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDl</td>
+<td>Equivalente de CSIDL</td>
 <td>Nenhum, valor introduzido no Windows 8.1</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herdado</td>
+<td>Nome de exibição herddo</td>
 <td>Não aplicável</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herdado</td>
+<td>Caminho padrão herddo</td>
 <td>Não aplicável</td>
 </tr>
 </tbody>
@@ -4088,8 +4088,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_SkyDriveDocuments"></span><span id="folderid_skydrivedocuments"></span><span id="FOLDERID_SKYDRIVEDOCUMENTS"></span><dl> <dt><strong>FOLDERID_SkyDriveDocuments</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_SkyDriveDocuments"></span><span id="folderid_skydrivedocuments"></span><span id="FOLDERID_SKYDRIVEDOCUMENTS"></span><dl> <dt><strong>FOLDERID_SkyDriveDocuments</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -4102,22 +4102,22 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>Peruser</td>
+<td>PERÚSER</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
-<td>% USERPROFILE% \ OneDrive \documents</td>
+<td>%USERPROFILE%\OneDrive\Documents</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDl</td>
+<td>Equivalente de CSIDL</td>
 <td>Nenhum, valor introduzido no Windows 8.1</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herdado</td>
+<td>Nome de exibição herddo</td>
 <td>Não aplicável</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herdado</td>
+<td>Caminho padrão herddo</td>
 <td>Não aplicável</td>
 </tr>
 </tbody>
@@ -4126,8 +4126,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_SkyDrivePictures"></span><span id="folderid_skydrivepictures"></span><span id="FOLDERID_SKYDRIVEPICTURES"></span><dl> <dt><strong>FOLDERID_SkyDrivePictures</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_SkyDrivePictures"></span><span id="folderid_skydrivepictures"></span><span id="FOLDERID_SKYDRIVEPICTURES"></span><dl> <dt><strong>FOLDERID_SkyDrivePictures</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -4140,22 +4140,22 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>Peruser</td>
+<td>PERÚSER</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
-<td>% USERPROFILE% \ OneDrive \Pictures</td>
+<td>%USERPROFILE%\OneDrive\Pictures</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDl</td>
+<td>Equivalente de CSIDL</td>
 <td>Nenhum, valor introduzido no Windows 8.1</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herdado</td>
+<td>Nome de exibição herddo</td>
 <td>Não aplicável</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herdado</td>
+<td>Caminho padrão herddo</td>
 <td>Não aplicável</td>
 </tr>
 </tbody>
@@ -4164,8 +4164,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_StartMenu"></span><span id="folderid_startmenu"></span><span id="FOLDERID_STARTMENU"></span><dl> <dt><strong>FOLDERID_StartMenu</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_StartMenu"></span><span id="folderid_startmenu"></span><span id="FOLDERID_STARTMENU"></span><dl> <dt><strong>FOLDERID_StartMenu</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -4178,23 +4178,23 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>Peruser</td>
+<td>PERÚSER</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
-<td>%APPDATA%\Microsoft\ Windows Menu \menu</td>
+<td>%APPDATA%\Microsoft\Windows\Menu Iniciar</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDl</td>
+<td>Equivalente de CSIDL</td>
 <td>CSIDL_STARTMENU</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herdado</td>
+<td>Nome de exibição herddo</td>
 <td>Menu Iniciar</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herdado</td>
-<td>Menu%USERPROFILE%\Start</td>
+<td>Caminho padrão herddo</td>
+<td>Menu %USERPROFILE%\Start</td>
 </tr>
 </tbody>
 </table>
@@ -4202,8 +4202,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_Startup"></span><span id="folderid_startup"></span><span id="FOLDERID_STARTUP"></span><dl> <dt><strong>FOLDERID_Startup</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_Startup"></span><span id="folderid_startup"></span><span id="FOLDERID_STARTUP"></span><dl> <dt><strong>FOLDERID_Startup</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -4216,23 +4216,23 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>Peruser</td>
+<td>PERÚSER</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
-<td>%APPDATA%\Microsoft\ Windows \menu Menu\Programs\StartUp</td>
+<td>%APPDATA%\Microsoft\Windows\Menu Iniciar\Programas\StartUp</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDl</td>
+<td>Equivalente de CSIDL</td>
 <td>CSIDL_STARTUP, CSIDL_ALTSTARTUP</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herdado</td>
+<td>Nome de exibição herddo</td>
 <td>Inicialização</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herdado</td>
-<td>%USERPROFILE%\Start Menu\Programs\StartUp</td>
+<td>Caminho padrão herddo</td>
+<td>%USERPROFILE%\Menu Iniciar\Programas\StartUp</td>
 </tr>
 </tbody>
 </table>
@@ -4240,8 +4240,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_SyncManagerFolder"></span><span id="folderid_syncmanagerfolder"></span><span id="FOLDERID_SYNCMANAGERFOLDER"></span><dl> <dt><strong>FOLDERID_SyncManagerFolder</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_SyncManagerFolder"></span><span id="folderid_syncmanagerfolder"></span><span id="FOLDERID_SYNCMANAGERFOLDER"></span><dl> <dt><strong>FOLDERID_SyncManagerFolder</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -4254,83 +4254,7 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>VIRTUAISLUNS</td>
-</tr>
-<tr class="even">
-<td>Default Caminho</td>
-<td>Não aplicável — pasta virtual</td>
-</tr>
-<tr class="odd">
-<td>Equivalente de CSIDl</td>
-<td>nenhum, valor introduzido no Windows Vista</td>
-</tr>
-<tr class="even">
-<td>Nome de exibição herdado</td>
-<td>Não aplicável</td>
-</tr>
-<tr class="odd">
-<td>Caminho padrão herdado</td>
-<td>Não aplicável</td>
-</tr>
-</tbody>
-</table>
-
-<p> </p></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_SyncResultsFolder"></span><span id="folderid_syncresultsfolder"></span><span id="FOLDERID_SYNCRESULTSFOLDER"></span><dl> <dt><strong>FOLDERID_SyncResultsFolder</strong></dt> </dl></td>
-<td style="text-align: left;">
-<table>
-<tbody>
-<tr class="odd">
-<td>GUID</td>
-<td>{289a9a43-be44-4057-a41b-587a76d7e7f9}</td>
-</tr>
-<tr class="even">
-<td>Nome de exibição</td>
-<td>Resultados da sincronização</td>
-</tr>
-<tr class="odd">
-<td>Tipo de pasta</td>
-<td>VIRTUAISLUNS</td>
-</tr>
-<tr class="even">
-<td>Default Caminho</td>
-<td>Não aplicável — pasta virtual</td>
-</tr>
-<tr class="odd">
-<td>Equivalente de CSIDl</td>
-<td>nenhum, valor introduzido no Windows Vista</td>
-</tr>
-<tr class="even">
-<td>Nome de exibição herdado</td>
-<td>Não aplicável</td>
-</tr>
-<tr class="odd">
-<td>Caminho padrão herdado</td>
-<td>Não aplicável</td>
-</tr>
-</tbody>
-</table>
-
-<p> </p></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_SyncSetupFolder"></span><span id="folderid_syncsetupfolder"></span><span id="FOLDERID_SYNCSETUPFOLDER"></span><dl> <dt><strong>FOLDERID_SyncSetupFolder</strong></dt> </dl></td>
-<td style="text-align: left;">
-<table>
-<tbody>
-<tr class="odd">
-<td>GUID</td>
-<td>{0F214138-B1D3-4a90-BBA9-27CBC0C5389A}</td>
-</tr>
-<tr class="even">
-<td>Nome de exibição</td>
-<td>Instalação da sincronização</td>
-</tr>
-<tr class="odd">
-<td>Tipo de pasta</td>
-<td>Virtual</td>
+<td>VIRTUAL</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
@@ -4354,8 +4278,84 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_System"></span><span id="folderid_system"></span><span id="FOLDERID_SYSTEM"></span><dl> <dt><strong>FOLDERID_System</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_SyncResultsFolder"></span><span id="folderid_syncresultsfolder"></span><span id="FOLDERID_SYNCRESULTSFOLDER"></span><dl> <dt><strong>FOLDERID_SyncResultsFolder</strong></dt> </dl></td>
+<td >
+<table>
+<tbody>
+<tr class="odd">
+<td>GUID</td>
+<td>{289a9a43-be44-4057-a41b-587a76d7e7f9}</td>
+</tr>
+<tr class="even">
+<td>Nome de exibição</td>
+<td>Resultados da sincronização</td>
+</tr>
+<tr class="odd">
+<td>Tipo de pasta</td>
+<td>VIRTUAL</td>
+</tr>
+<tr class="even">
+<td>Default Caminho</td>
+<td>Não aplicável — pasta virtual</td>
+</tr>
+<tr class="odd">
+<td>Equivalente de CSIDL</td>
+<td>Nenhum, valor introduzido no Windows Vista</td>
+</tr>
+<tr class="even">
+<td>Nome de exibição herddo</td>
+<td>Não aplicável</td>
+</tr>
+<tr class="odd">
+<td>Caminho padrão herddo</td>
+<td>Não aplicável</td>
+</tr>
+</tbody>
+</table>
+
+<p> </p></td>
+</tr>
+<tr class="odd">
+<td ><span id="FOLDERID_SyncSetupFolder"></span><span id="folderid_syncsetupfolder"></span><span id="FOLDERID_SYNCSETUPFOLDER"></span><dl> <dt><strong>FOLDERID_SyncSetupFolder</strong></dt> </dl></td>
+<td >
+<table>
+<tbody>
+<tr class="odd">
+<td>GUID</td>
+<td>{0F214138-B1D3-4a90-BBA9-27CBC0C5389A}</td>
+</tr>
+<tr class="even">
+<td>Nome de exibição</td>
+<td>Instalação da sincronização</td>
+</tr>
+<tr class="odd">
+<td>Tipo de pasta</td>
+<td>VIRTUAL</td>
+</tr>
+<tr class="even">
+<td>Default Caminho</td>
+<td>Não aplicável — pasta virtual</td>
+</tr>
+<tr class="odd">
+<td>Equivalente de CSIDL</td>
+<td>Nenhum, valor introduzido no Windows Vista</td>
+</tr>
+<tr class="even">
+<td>Nome de exibição herddo</td>
+<td>Não aplicável</td>
+</tr>
+<tr class="odd">
+<td>Caminho padrão herddo</td>
+<td>Não aplicável</td>
+</tr>
+</tbody>
+</table>
+
+<p> </p></td>
+</tr>
+<tr class="even">
+<td ><span id="FOLDERID_System"></span><span id="folderid_system"></span><span id="FOLDERID_SYSTEM"></span><dl> <dt><strong>FOLDERID_System</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -4376,7 +4376,7 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="odd">
 <td>Equivalente de CSIDL</td>
-<td>Csidl_system</td>
+<td>CSIDL_SYSTEM</td>
 </tr>
 <tr class="even">
 <td>Nome de exibição herddo</td>
@@ -4392,8 +4392,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_SystemX86"></span><span id="folderid_systemx86"></span><span id="FOLDERID_SYSTEMX86"></span><dl> <dt><strong>FOLDERID_SystemX86</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_SystemX86"></span><span id="folderid_systemx86"></span><span id="FOLDERID_SYSTEMX86"></span><dl> <dt><strong>FOLDERID_SystemX86</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -4430,8 +4430,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_Templates"></span><span id="folderid_templates"></span><span id="FOLDERID_TEMPLATES"></span><dl> <dt><strong>FOLDERID_Templates</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_Templates"></span><span id="folderid_templates"></span><span id="FOLDERID_TEMPLATES"></span><dl> <dt><strong>FOLDERID_Templates</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -4468,12 +4468,12 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_TreeProperties"></span><span id="folderid_treeproperties"></span><span id="FOLDERID_TREEPROPERTIES"></span><dl> <dt><strong>FOLDERID_TreeProperties</strong></dt> </dl></td>
-<td style="text-align: left;"><p>Não usado no Windows Vista. Sem suporte a partir Windows 7.</p></td>
+<td ><span id="FOLDERID_TreeProperties"></span><span id="folderid_treeproperties"></span><span id="FOLDERID_TREEPROPERTIES"></span><dl> <dt><strong>FOLDERID_TreeProperties</strong></dt> </dl></td>
+<td ><p>Não usado no Windows Vista. Sem suporte a partir Windows 7.</p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_UserPinned"></span><span id="folderid_userpinned"></span><span id="FOLDERID_USERPINNED"></span><dl> <dt><strong>FOLDERID_UserPinned</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_UserPinned"></span><span id="folderid_userpinned"></span><span id="FOLDERID_USERPINNED"></span><dl> <dt><strong>FOLDERID_UserPinned</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -4510,8 +4510,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_UserProfiles"></span><span id="folderid_userprofiles"></span><span id="FOLDERID_USERPROFILES"></span><dl> <dt><strong>FOLDERID_UserProfiles</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_UserProfiles"></span><span id="folderid_userprofiles"></span><span id="FOLDERID_USERPROFILES"></span><dl> <dt><strong>FOLDERID_UserProfiles</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -4548,8 +4548,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_UserProgramFiles"></span><span id="folderid_userprogramfiles"></span><span id="FOLDERID_USERPROGRAMFILES"></span><dl> <dt><strong>FOLDERID_UserProgramFiles</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_UserProgramFiles"></span><span id="folderid_userprogramfiles"></span><span id="FOLDERID_USERPROGRAMFILES"></span><dl> <dt><strong>FOLDERID_UserProgramFiles</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -4562,22 +4562,22 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>Peruser</td>
+<td>PERÚSER</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
 <td>%LOCALAPPDATA%\Programs</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDl</td>
-<td>nenhum, valor introduzido no Windows 7</td>
+<td>Equivalente de CSIDL</td>
+<td>Nenhum, valor introduzido na Windows 7</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herdado</td>
+<td>Nome de exibição herddo</td>
 <td>Não aplicável</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herdado</td>
+<td>Caminho padrão herddo</td>
 <td>Não aplicável</td>
 </tr>
 </tbody>
@@ -4586,8 +4586,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_UserProgramFilesCommon"></span><span id="folderid_userprogramfilescommon"></span><span id="FOLDERID_USERPROGRAMFILESCOMMON"></span><dl> <dt><strong>FOLDERID_UserProgramFilesCommon</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_UserProgramFilesCommon"></span><span id="folderid_userprogramfilescommon"></span><span id="FOLDERID_USERPROGRAMFILESCOMMON"></span><dl> <dt><strong>FOLDERID_UserProgramFilesCommon</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -4600,22 +4600,22 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>Peruser</td>
+<td>PERÚSER</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
 <td>%LOCALAPPDATA%\Programs\Common</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDl</td>
-<td>nenhum, valor introduzido no Windows 7</td>
+<td>Equivalente de CSIDL</td>
+<td>Nenhum, valor introduzido na Windows 7</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herdado</td>
+<td>Nome de exibição herddo</td>
 <td>Não aplicável</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herdado</td>
+<td>Caminho padrão herddo</td>
 <td>Não aplicável</td>
 </tr>
 </tbody>
@@ -4624,8 +4624,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_UsersFiles"></span><span id="folderid_usersfiles"></span><span id="FOLDERID_USERSFILES"></span><dl> <dt><strong>FOLDERID_UsersFiles</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_UsersFiles"></span><span id="folderid_usersfiles"></span><span id="FOLDERID_USERSFILES"></span><dl> <dt><strong>FOLDERID_UsersFiles</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -4634,26 +4634,26 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="even">
 <td>Nome de exibição</td>
-<td>O nome completo do usuário (por exemplo, Jean Philippe rosca) inserido quando a conta de usuário foi criada.</td>
+<td>O nome completo do usuário (por exemplo, Que é o Nome de Usuário) inserido quando a conta de usuário foi criada.</td>
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>VIRTUAISLUNS</td>
+<td>VIRTUAL</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
 <td>Não aplicável — pasta virtual</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDl</td>
+<td>Equivalente de CSIDL</td>
 <td>Nenhum</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herdado</td>
+<td>Nome de exibição herddo</td>
 <td>Não aplicável</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herdado</td>
+<td>Caminho padrão herddo</td>
 <td>Não aplicável</td>
 </tr>
 </tbody>
@@ -4662,13 +4662,13 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_UsersLibraries"></span><span id="folderid_userslibraries"></span><span id="FOLDERID_USERSLIBRARIES"></span><dl> <dt><strong>FOLDERID_UsersLibraries</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_UsersLibraries"></span><span id="folderid_userslibraries"></span><span id="FOLDERID_USERSLIBRARIES"></span><dl> <dt><strong>FOLDERID_UsersLibraries</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
 <td>GUID</td>
-<td>{A302545D-DEFF-464b-ABE8-61C8648D939B}</td>
+<td>{A302545D-DEFF-464b-CELL8-61C8648D939B}</td>
 </tr>
 <tr class="even">
 <td>Nome de exibição</td>
@@ -4676,22 +4676,22 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>VIRTUAISLUNS</td>
+<td>VIRTUAL</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
 <td>Não aplicável — pasta virtual</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDl</td>
-<td>nenhum, valor introduzido no Windows 7</td>
+<td>Equivalente de CSIDL</td>
+<td>Nenhum, valor introduzido na Windows 7</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herdado</td>
+<td>Nome de exibição herddo</td>
 <td>Não aplicável</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herdado</td>
+<td>Caminho padrão herddo</td>
 <td>Não aplicável</td>
 </tr>
 </tbody>
@@ -4700,8 +4700,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_Videos"></span><span id="folderid_videos"></span><span id="FOLDERID_VIDEOS"></span><dl> <dt><strong>FOLDERID_Videos</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_Videos"></span><span id="folderid_videos"></span><span id="FOLDERID_VIDEOS"></span><dl> <dt><strong>FOLDERID_Videos</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -4710,27 +4710,27 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="even">
 <td>Nome de exibição</td>
-<td>vídeos</td>
+<td>Vídeos</td>
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>Peruser</td>
+<td>PERÚSER</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
 <td>%USERPROFILE%\Videos</td>
 </tr>
 <tr class="odd">
-<td>CSIDl</td>
+<td>CSIDL</td>
 <td>CSIDL_MYVIDEO</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herdado</td>
+<td>Nome de exibição herddo</td>
 <td>Meus vídeos</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herdado</td>
-<td>%USERPROFILE%\My Documentos\minhas vídeos</td>
+<td>Caminho padrão herddo</td>
+<td>%USERPROFILE%\Meus Documentos\Meus Vídeos</td>
 </tr>
 </tbody>
 </table>
@@ -4738,8 +4738,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_VideosLibrary"></span><span id="folderid_videoslibrary"></span><span id="FOLDERID_VIDEOSLIBRARY"></span><dl> <dt><strong>FOLDERID_VideosLibrary</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_VideosLibrary"></span><span id="folderid_videoslibrary"></span><span id="FOLDERID_VIDEOSLIBRARY"></span><dl> <dt><strong>FOLDERID_VideosLibrary</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -4748,26 +4748,26 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 </tr>
 <tr class="even">
 <td>Nome de exibição</td>
-<td>vídeos</td>
+<td>Vídeos</td>
 </tr>
 <tr class="odd">
 <td>Tipo de pasta</td>
-<td>Peruser</td>
+<td>PERÚSER</td>
 </tr>
 <tr class="even">
 <td>Default Caminho</td>
-<td>%APPDATA%\Microsoft\ Windows \Libraries\Videos.library-ms</td>
+<td>%APPDATA%\Microsoft\Windows\Libraries\Videos.library-ms</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDl</td>
-<td>nenhum, valor introduzido no Windows 7</td>
+<td>Equivalente de CSIDL</td>
+<td>Nenhum, valor introduzido na Windows 7</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herdado</td>
+<td>Nome de exibição herddo</td>
 <td>Não aplicável</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herdado</td>
+<td>Caminho padrão herddo</td>
 <td>Não aplicável</td>
 </tr>
 </tbody>
@@ -4776,8 +4776,8 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_Windows"></span><span id="folderid_windows"></span><span id="FOLDERID_WINDOWS"></span><dl> <dt><strong>FOLDERID_Windows</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_Windows"></span><span id="folderid_windows"></span><span id="FOLDERID_WINDOWS"></span><dl> <dt><strong>FOLDERID_Windows</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -4797,15 +4797,15 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 <td>%windir%</td>
 </tr>
 <tr class="odd">
-<td>Equivalente de CSIDl</td>
+<td>Equivalente de CSIDL</td>
 <td>CSIDL_WINDOWS</td>
 </tr>
 <tr class="even">
-<td>Nome de exibição herdado</td>
+<td>Nome de exibição herddo</td>
 <td>WINDOWS</td>
 </tr>
 <tr class="odd">
-<td>Caminho padrão herdado</td>
+<td>Caminho padrão herddo</td>
 <td>%windir%</td>
 </tr>
 </tbody>
@@ -4820,38 +4820,38 @@ esta folderid foi preterida no Windows 10, versão 1803 e versões posteriores. 
 
 ## <a name="remarks"></a>Comentários
 
-A interpretação de determinados valores de **KNOWNFOLDERID** depende se a pasta faz parte de um aplicativo de 32 bits ou 64 bits e se esse aplicativo está sendo executado em um sistema operacional de 32 ou de 64 bits. Se seu aplicativo precisar distinguir entre, por exemplo, **arquivos de programas** e **arquivos de programas (x86)**, você deverá usar o **KNOWNFOLDERID** correto para a situação.
+A interpretação de determinados **valores KNOWNFOLDERID** depende se a pasta faz parte de um aplicativo de 32 ou 64 bits e se esse aplicativo está sendo executado em um sistema operacional de 32 ou 64 bits. Se o aplicativo precisar distinguir entre, por **exemplo,** Arquivos de Programas e Arquivos de Programas **(x86),** você deverá usar o **KNOWNFOLDERID** correto para a situação.
 
-As tabelas a seguir resumem o uso de **KNOWNFOLDERID** nesses casos.
+As tabelas a seguir **resumem o uso de KNOWNFOLDERID** nesses casos.
 
 
-**PASTAS de os \_ ProgramId** 
+**FOLDERID \_ ProgramFiles** 
 
-| Sistema operacional | Aplicativo | KNOWNFOLDERID | Default Caminho | Equivalente de CSIDl |
+| Sistema operacional | Aplicativo | KNOWNFOLDERID | Default Caminho | Equivalente de CSIDL |
 |------------------|-------------|---------------|--------------|------------------|  
-| 32 bits | 32 bits | PASTAS de os \_ ProgramId | Arquivos de programas de% SystemDrive% \\ | arquivos de \_ programa CSIDL \_ |
-| 32 bits | 32 bits | PASTA de \_ ProgramFilesX86 | Arquivos de programas de% SystemDrive% \\ | FILESX86 do \_ programa CSIDL \_ |
-| 32 bits | 32 bits | FOLDERid \_ ProgramFilesX64 (sem suporte em sistemas operacionais de 32 bits) | Não aplicável | Não aplicável |
-| 64 bits | 64 bits | PASTAS de os \_ ProgramId | Arquivos de programas de% SystemDrive% \\ | arquivos de \_ programa CSIDL \_ |
-| 64 bits | 64 bits | PASTA de \_ ProgramFilesX86 | \\Arquivos de programa% systemdrive% (x86) | FILESX86 do \_ programa CSIDL \_ |
-| 64 bits | 64 bits | PASTA de \_ ProgramFilesX64 | Arquivos de programas de% SystemDrive% \\ | Nenhum |
-| 64 bits | 32 bits | PASTAS de os \_ ProgramId | \\Arquivos de programa% systemdrive% (x86) | arquivos de \_ programa CSIDL \_ |
-| 64 bits | 32 bits | PASTA de \_ ProgramFilesX86 | \\Arquivos de programa% systemdrive% (x86) | FILESX86 do \_ programa CSIDL \_ |
-| 64 bits | 32 bits | FOLDERid \_ ProgramFilesX64 (sem suporte para aplicativos de 32 bits) | Não aplicável | Não aplicável |
+| 32 bits | 32 bits | FOLDERID \_ ProgramFiles | %SystemDrive% \\ Arquivos de Programas | ARQUIVOS DO PROGRAMA \_ \_ CSIDL |
+| 32 bits | 32 bits | FOLDERID \_ ProgramFilesX86 | %SystemDrive% \\ Arquivos de Programas | ARQUIVOS DE PROGRAMA \_ \_ CSIDLX86 |
+| 32 bits | 32 bits | FOLDERID \_ ProgramFilesX64 (sem suporte em sistemas operacionais de 32 bits) | Não aplicável | Não aplicável |
+| 64 bits | 64 bits | FOLDERID \_ ProgramFiles | %SystemDrive% \\ Arquivos de Programas | ARQUIVOS DO PROGRAMA \_ \_ CSIDL |
+| 64 bits | 64 bits | FOLDERID \_ ProgramFilesX86 | %SystemDrive% \\ Program Files (x86) | ARQUIVOS DE PROGRAMA \_ \_ CSIDLX86 |
+| 64 bits | 64 bits | FOLDERID \_ ProgramFilesX64 | %SystemDrive% \\ Arquivos de Programas | Nenhum |
+| 64 bits | 32 bits | FOLDERID \_ ProgramFiles | %SystemDrive% \\ Program Files (x86) | ARQUIVOS DO PROGRAMA \_ \_ CSIDL |
+| 64 bits | 32 bits | FOLDERID \_ ProgramFilesX86 | %SystemDrive% \\ Program Files (x86) | ARQUIVOS DE PROGRAMA \_ \_ CSIDLX86 |
+| 64 bits | 32 bits | FOLDERID \_ ProgramFilesX64 (sem suporte para aplicativos de 32 bits) | Não aplicável | Não aplicável |
 
 
-**PASTA de \_ ProgramFilesCommon**
+**FOLDERID \_ ProgramFilesCommon**
 
-| Sistema operacional | Aplicativo | KNOWNFOLDERID | Default Caminho | Equivalente de CSIDl |
+| Sistema operacional | Aplicativo | KNOWNFOLDERID | Default Caminho | Equivalente de CSIDL |
 |------------------|-------------|---------------|--------------|------------------|  
-| 32 bits | 32 bits | PASTA de \_ ProgramFilesCommon | Arquivos% ProgramFiles% \\ comuns | arquivos de \_ programa CSIDL \_ \_ comuns |
-| 32 bits | 32 bits | PASTA de \_ ProgramFilesCommonX86 | Arquivos% ProgramFiles% \\ comuns | Arquivos de \_ programas CSIDL \_ \_ COMMONX86 |
-| 32 bits | 32 bits | FOLDERid \_ ProgramFilesCommonX64 (indefinido) | Não aplicável | Não aplicável |
-| 64 bits | 64 bits | PASTA de \_ ProgramFilesCommon | Arquivos% ProgramFiles% \\ comuns | arquivos de \_ programa CSIDL \_ \_ comuns |
-| 64 bits | 64 bits | PASTA de \_ ProgramFilesCommonX86 | % ProgramFiles (x86)% \\ Arquivos comuns | Arquivos de \_ programas CSIDL \_ \_ COMMONX86 |
-| 64 bits | 64 bits | PASTA de \_ ProgramFilesCommonX64 | Arquivos% ProgramFiles% \\ comuns | Nenhum |
-| 64 bits | 32 bits | PASTA de \_ ProgramFilesCommon | % ProgramFiles (x86)% \\ Arquivos comuns | arquivos de \_ programa CSIDL \_ \_ comuns |
-| 64 bits | 32 bits | PASTA de \_ ProgramFilesCommonX86 | % ProgramFiles (x86)% \\ Arquivos comuns | Arquivos de \_ programas CSIDL \_ \_ COMMONX86 |
+| 32 bits | 32 bits | FOLDERID \_ ProgramFilesCommon | %ProgramFiles% \\ Common Files | ARQUIVOS DE PROGRAMA \_ CSIDL \_ \_ COMUNS |
+| 32 bits | 32 bits | FOLDERID \_ ProgramFilesCommonX86 | %ProgramFiles% \\ Common Files | ARQUIVOS DE PROGRAMA \_ CSIDL \_ \_ COMMONX86 |
+| 32 bits | 32 bits | FOLDERID \_ ProgramFilesCommonX64 (indefinido) | Não aplicável | Não aplicável |
+| 64 bits | 64 bits | FOLDERID \_ ProgramFilesCommon | %ProgramFiles% \\ Common Files | ARQUIVOS DE PROGRAMA \_ CSIDL \_ \_ COMUNS |
+| 64 bits | 64 bits | FOLDERID \_ ProgramFilesCommonX86 | %ProgramFiles(x86)% \\ Common Files | ARQUIVOS DE PROGRAMA \_ CSIDL \_ \_ COMMONX86 |
+| 64 bits | 64 bits | FOLDERID \_ ProgramFilesCommonX64 | %ProgramFiles% \\ Common Files | Nenhum |
+| 64 bits | 32 bits | FOLDERID \_ ProgramFilesCommon | %ProgramFiles(x86)% \\ Common Files | ARQUIVOS DE PROGRAMA \_ CSIDL \_ \_ COMUNS |
+| 64 bits | 32 bits | FOLDERID \_ ProgramFilesCommonX86 | %ProgramFiles(x86)% \\ Common Files | ARQUIVOS DE PROGRAMA \_ CSIDL \_ \_ COMMONX86 |
 | 64 bits | 32 bits | FOLDERID \_ ProgramFilesCommonX64 | %ProgramFiles% \\ Common Files | Nenhum |
 
 
@@ -4876,7 +4876,7 @@ Nós utilizamos cadeias de caracteres de ambiente para fornecer caminhos genéri
 |--------------------|--------------|
 | %ALLUSERSPROFILE% | C: \\ ProgramData |
 | %APPDATA% | C: Nome \\ de \\ *usuário dos* \\ usuários AppData \\ Roaming |
-| %LOCALAPPDATA% | C: Nome \\ de \\ *usuário dos* \\ usuários AppData \\ Local |
+| %LOCALAPPDATA% | C: Nome \\ de \\ *usuário dos usuários* \\ AppData \\ Local |
 | %ProgramData% | C: \\ ProgramData |
 | %ProgramFiles% | C: \\ Arquivos de Programas |
 | %ProgramFiles(x86)% | C: \\ Arquivos de Programas (x86) |
@@ -4891,10 +4891,10 @@ Nós utilizamos cadeias de caracteres de ambiente para fornecer caminhos genéri
 | Cadeia de caracteres de ambiente | Caminho de exemplo |
 |--------------------|--------------|
 | %ALLUSERSPROFILE% | C: \\ Documentos e Configurações todos os \\ usuários |
-| %APPDATA% | C: Documentos \\ e Configurações dados do aplicativo de nome \\ *de* \\ usuário |
+| %APPDATA% | C: Documentos \\ e dados de aplicativo Configurações nome \\ *de* \\ usuário |
 | %ProgramFiles% | C: \\ Arquivos de Programas |
 | %SystemDrive% | C: |
-| %USERPROFILE% | C: Documentos \\ e nome de usuário Configurações \\ *usuário* |
+| %USERPROFILE% | C: Documentos \\ e nome Configurações \\ *usuário* |
 | %windir% | C: \\ Windows |
 
 
@@ -4911,7 +4911,7 @@ Nós utilizamos cadeias de caracteres de ambiente para fornecer caminhos genéri
 
 <dl> <dt>
 
-[**Csidl**](csidl.md)
+[**CSIDL**](csidl.md)
 </dt> <dt>
 
 [Pastas conhecidas](known-folders.md)

@@ -1,7 +1,7 @@
 ---
-description: 'O método EndOfStream notifica o PIN de que nenhum dado adicional é esperado, até que um novo comando de execução seja emitido para o filtro. Esse método implementa o método IPin:: EndOfStream.'
+description: O método EndOfStream notifica o pin de que nenhum dado adicional é esperado até que um novo comando de executar seja emitido para o filtro. Esse método implementa o método IPin::EndOfStream.
 ms.assetid: 915beab4-2fc3-4acd-bb30-c0851df058db
-title: Método CRenderedInputPin. EndOfStream (Amextra. h)
+title: Método CRenderedInputPin.EndOfStream (Amextra.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c836b1098c92a69fa720fb7b87e4a63b3c05a526
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 26f7a5075e06a3943978a8e938f034fbabcaddfa31c9ffa2a2b37d33a0120640
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752490"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120107986"
 ---
-# <a name="crenderedinputpinendofstream-method"></a>Método CRenderedInputPin. EndOfStream
+# <a name="crenderedinputpinendofstream-method"></a>Método CRenderedInputPin.EndOfStream
 
-O `EndOfStream` método notifica o PIN de que nenhum dado adicional é esperado, até que um novo comando de execução seja emitido para o filtro. Esse método implementa o método [**IPin:: EndOfStream**](/windows/desktop/api/Strmif/nf-strmif-ipin-endofstream) .
+O método notifica o pin de que nenhum dado adicional é esperado até que um novo comando de executar `EndOfStream` seja emitido para o filtro. Esse método implementa o [**método IPin::EndOfStream.**](/windows/desktop/api/Strmif/nf-strmif-ipin-endofstream)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,15 +40,15 @@ HRESULT EndOfStream();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna S \_ OK se for bem-sucedido ou um código de erro do contrário.
+Retornará S \_ OK se for bem-sucedido ou um código de erro caso contrário.
 
 ## <a name="remarks"></a>Comentários
 
-Se o filtro estiver em execução, esse método enviará um evento de [**\_ conclusão do EC**](ec-complete.md) para o Gerenciador do grafo de filtro. Caso contrário, é definido um sinalizador para que o \_ evento de conclusão do EC seja enviado quando o filtro for executado em seguida. A liberação do filtro limpa o sinalizador.
+Se o filtro estiver em execução, esse método enviará um [**evento EC \_ COMPLETE**](ec-complete.md) para o Gerenciador Graph Filtro. Caso contrário, define um sinalizador para que o evento EC \_ COMPLETE seja enviado quando o filtro for executado na próxima vez. A liberação do filtro limpa o sinalizador.
 
-Você deve substituir esse método para manter o bloqueio de streaming do PIN:
+Você deve substituir esse método para manter o bloqueio de streaming do pino:
 
 
 ```C++
@@ -71,7 +71,7 @@ STDMETHODIMP CMyInputPin::EndOfStream(void)
 
 
 
-Além disso, se os processos de filtro **receberem** chamadas de forma assíncrona, o PIN deverá aguardar para enviar o evento de conclusão do EC \_ até que o filtro tenha processado todas as amostras pendentes.
+Além disso, se  o filtro processa Receber chamadas de forma assíncrona, o pino deverá aguardar para enviar o evento EC COMPLETE até que o filtro tenha processado todos os \_ exemplos pendentes.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -79,8 +79,8 @@ Além disso, se os processos de filtro **receberem** chamadas de forma assíncro
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amextra. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amextra.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

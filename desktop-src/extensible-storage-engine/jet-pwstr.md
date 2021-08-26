@@ -15,23 +15,23 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 536ef3bba465f6d152e3483436c1dc1e82277339
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ca4478684e79dfb698dd30bb21132f597129fdac
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105761223"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122479332"
 ---
 # <a name="jet_pwstr"></a>JET_PWSTR
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jet_pwstr"></a>JET_PWSTR
 
 O tipo de dados **JET_PWSTR** contém uma cadeia de caracteres **Unicode** terminada em nulo (Char \* ).
 
-**Windows Vista: a JET_PWSTR** é introduzida no Windows Vista.
+**Windows vista: JET_PWSTR** é introduzido no Windows Vista.
 
 ```cpp
     typedef __nullterminated WCHAR * JET_PWSTR;
@@ -45,24 +45,7 @@ Terminação nula, Cadeia de caracteres Unicode (Char \* ).
 
 ### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>requer o Windows Vista.</p> | | <p><strong>Servidor</strong></p> | <p>requer o Windows Server 2008.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | 
+
 

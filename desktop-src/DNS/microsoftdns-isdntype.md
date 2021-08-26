@@ -1,10 +1,10 @@
 ---
-title: Classe MicrosoftDNS_ISDNType
-description: A subclasse de MicrosoftDNS \_ ResourceRecord que representa um registro de ISDN.
+title: MicrosoftDNS_ISDNType classe
+description: A subclasse do MicrosoftDNS \_ ResourceRecord que representa um registro ISDN.
 ms.assetid: 8925042c-65d3-465f-aedd-9f7c862620b5
 keywords:
-- MicrosoftDNS_ISDNType de classe de DNS
-- MicrosoftDNS_ISDNType de classe de DNS, descrita
+- dns MicrosoftDNS_ISDNType classe
+- MicrosoftDNS_ISDNType classe DNS , descrita
 topic_type:
 - apiref
 api_name:
@@ -19,16 +19,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d4e8b50d75f7b6d57226247c978ced45e07b1acc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: af06ad782b6d36213e9a1df210916f9346e1e4f8bd0a98dd619651a579dc5c4e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085202"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120131716"
 ---
-# <a name="microsoftdns_isdntype-class"></a>\_Classe isdntype MicrosoftDNS
+# <a name="microsoftdns_isdntype-class"></a>Classe ISDNType do MicrosoftDNS \_
 
-A subclasse de [**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md) que representa um registro de ISDN.
+A subclasse [**do MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md) que representa um registro ISDN.
 
 A sintaxe a seguir é simplificada do código MOF.
 
@@ -44,21 +44,21 @@ class MicrosoftDNS_ISDNType : MicrosoftDNS_ResourceRecord
 
 ## <a name="members"></a>Membros
 
-A **classe \_ isdntype MicrosoftDNS** tem estes tipos de membros:
+A **classe \_ ISDNType do MicrosoftDNS** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-A **classe \_ isdntype MicrosoftDNS** tem esses métodos.
+A **classe \_ ISDNType do MicrosoftDNS** tem esses métodos.
 
 
 
 | Método                             | Descrição                                                                                                                                                                                                                                                                                                                                                           |
 |:-----------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **CreateInstanceFromPropertyData** | Cria uma instância de um registro de recurso de ISDN com base nos dados nos parâmetros de entrada do método: o nome do servidor DNS do registro, o nome do contêiner, o nome do proprietário, a classe (padrão = IN), o valor de vida útil e o número ISDN e Subendereço do proprietário. Ele retorna uma referência ao novo objeto como um parâmetro de saída. <br/> Qualificadores: implementados, estáticos<br/> |
-| **Modificar**                         | Atualiza o TTL, o número ISDN e o Subendereço para os valores especificados como os parâmetros de entrada deste método. Se um novo valor para um parâmetro não for especificado, o valor atual do parâmetro não será alterado. O método retorna uma referência ao objeto modificado como um parâmetro de saída. <br/> Qualificadores: implementados<br/>                   |
+| **CreateInstanceFromPropertyData** | Instalita um Registro de Recurso ISDN com base nos dados nos parâmetros de entrada do método: o Nome do Servidor DNS do registro, o Nome do Contêiner, o Nome do Proprietário, a classe (padrão = IN), o valor de vida real e o número ISDN e o endereço subddress do proprietário. Ele retorna uma referência ao novo objeto como um parâmetro de saída. <br/> Qualificadores: implementados, estáticos<br/> |
+| **Modificar**                         | Atualiza o TTL, o Número ISDN e o Subddress para os valores especificados como os parâmetros de entrada desse método. Se um novo valor para um parâmetro não for especificado, o valor atual do parâmetro não será alterado. O método retorna uma referência ao objeto modificado como um parâmetro de saída. <br/> Qualificadores: implementados<br/>                   |
 
 
 
@@ -66,7 +66,7 @@ A **classe \_ isdntype MicrosoftDNS** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-A **classe \_ isdntype MicrosoftDNS** tem essas propriedades.
+A **classe \_ ISDNType do MicrosoftDNS** tem essas propriedades.
 
 <dl> <dt>
 
@@ -92,7 +92,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Subendereço do proprietário, se definido.
+Subddress do proprietário, se definido.
 
 </dd> </dl>
 
@@ -105,7 +105,7 @@ Subendereço do proprietário, se definido.
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                   |
 | Namespace<br/>                | \\MicrosoftDNS raiz<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -113,10 +113,10 @@ Subendereço do proprietário, se definido.
 
 <dl> <dt>
 
-[**Método CreateInstanceFromPropertyData da \_ classe isdntype MicrosoftDNS**](microsoftdns-isdntype-createinstancefrompropertydata.md)
+[**Método CreateInstanceFromPropertyData da classe ISDNType do MicrosoftDNS \_**](microsoftdns-isdntype-createinstancefrompropertydata.md)
 </dt> <dt>
 
-[**Método Modify da \_ classe isdntype MicrosoftDNS**](microsoftdns-isdntype-modify.md)
+[**Método Modify da classe \_ ISDNType do MicrosoftDNS**](microsoftdns-isdntype-modify.md)
 </dt> <dt>
 
 [**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)

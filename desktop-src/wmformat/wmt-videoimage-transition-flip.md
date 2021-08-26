@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dc92ad1dfffd945b89293dd9207289aa47645d4f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d2a3bfe94e001c6a65256facd5484a015d00f245
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752732"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122475752"
 ---
 # <a name="wmt_videoimage_transition_flip"></a>Inverter WMT de \_ \_ transição VIDEOIMAGE \_
 
@@ -31,36 +31,12 @@ A tabela a seguir descreve os parâmetros usados por essa transição e lista os
 
 
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Parâmetro</th>
-<th>Membro da estrutura</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Ângulo</td>
-<td><strong>fEffectPara0</strong></td>
-<td>Ângulo da rotação, de 0,0 a 180,0 graus.</td>
-</tr>
-<tr class="even">
-<td>Composição</td>
-<td><strong>fEffectPara1</strong></td>
-<td>Defina como um dos seguintes valores:
-<ul>
-<li>0-especifica a composição normal, na qual a imagem anterior é o plano de fundo e a imagem atual é o primeiro plano.</li>
-<li>1-especifica a composição revertida, na qual a imagem atual é a imagem de plano de fundo e a imagem anterior é o primeiro plano</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Parâmetro | Membro da estrutura | Descrição | 
+|-----------|------------------|-------------|
+| Ângulo | <strong>fEffectPara0</strong> | Ângulo da rotação, de 0,0 a 180,0 graus. | 
+| Composição | <strong>fEffectPara1</strong> | Defina como um dos seguintes valores:<ul><li>0-especifica a composição normal, na qual a imagem anterior é o plano de fundo e a imagem atual é o primeiro plano.</li><li>1-especifica a composição revertida, na qual a imagem atual é a imagem de plano de fundo e a imagem anterior é o primeiro plano</li></ul> | 
+
 
 
 

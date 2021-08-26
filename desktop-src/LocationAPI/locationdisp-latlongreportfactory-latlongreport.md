@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - locationapi.h
-ms.openlocfilehash: c44582c01685431e9b5dfa4820735728dd2a9cbc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b1f9e28b9b452c335fa4d549b1c979584f2e02c438957e4c7283ad8044def644
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104169870"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120129836"
 ---
 # <a name="locationdisplatlongreportfactorylatlongreport-property"></a>Propriedade LocationDisp. LatLongReportFactory. LatLongReport
 
-\[O modelo de objeto de API de localização está disponível para uso nos sistemas operacionais especificados na seção requisitos. Ele poderá ser alterado ou ficar indisponível em versões subsequentes. Em vez disso, para acessar o local de um site, use a [API de localização geográfica do W3C](/previous-versions/windows/internet-explorer/ie-developer/samples/gg589513(v=vs.85)). Para acessar o local de um aplicativo de área de trabalho, use a API [**Windows. Devices. geolocalização**](/uwp/api/Windows.Devices.Geolocation) .\]
+\[O modelo de objeto de API de localização está disponível para uso nos sistemas operacionais especificados na seção requisitos. Ele poderá ser alterado ou ficar indisponível em versões subsequentes. Em vez disso, para acessar o local de um site, use a [API de localização geográfica do W3C](/previous-versions/windows/internet-explorer/ie-developer/samples/gg589513(v=vs.85)). Para acessar o local de um aplicativo de área de trabalho, use o [**Windows. API de dispositivos. geolocalização**](/uwp/api/Windows.Devices.Geolocation) .\]
 
 O relatório de latitude/longitude atual.
 
@@ -51,9 +51,9 @@ Para obter um exemplo de como usar essa propriedade, consulte [um exemplo de rel
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                               |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                |
-| parâmetro<br/>                   | <dl> <dt>Locationapi. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Locationapi. h</dt> </dl> |
 
 
 

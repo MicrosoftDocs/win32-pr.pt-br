@@ -1,7 +1,7 @@
 ---
-description: Exclui um pacote de driver de impressora do repositório de drivers.
+description: Exclui um pacote de driver de impressora do armazenamento de driver.
 ms.assetid: a43a94d1-097e-457c-bce9-d4c434ecfa93
-title: Função DeletePrinterDriverPackage (winspool. h)
+title: Função DeletePrinterDriverPackage (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - Spoolss.dll
-ms.openlocfilehash: 54d1cda53795f4feab60e397ce7e38402f22374f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d7247f4f0ef4d1f77f00664792d0b7b36bc991b19d437017b54db676731ccc70
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105782466"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120112546"
 ---
 # <a name="deleteprinterdriverpackage-function"></a>Função DeletePrinterDriverPackage
 
-Exclui um pacote de driver de impressora do repositório de drivers.
+Exclui um pacote de driver de impressora do armazenamento de driver.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,49 +43,49 @@ HRESULT DeletePrinterDriverPackage(
 
 <dl> <dt>
 
-*pszServer* \[ no\]
+*pszServer* \[ Em\]
 </dt> <dd>
 
-Um ponteiro para uma constante, Cadeia de caracteres terminada em nulo que especifica o nome do servidor de impressão do qual o pacote de driver está sendo excluído. Um valor de ponteiro **nulo** significa o computador local.
+Um ponteiro para uma cadeia de caracteres com terminação nula constante que especifica o nome do servidor de impressão do qual o pacote de driver está sendo excluído. Um **valor de** ponteiro NULL significa o computador local.
 
 </dd> <dt>
 
-*pszInfPath* \[ no\]
+*pszInfPath* \[ Em\]
 </dt> <dd>
 
-Um ponteiro para uma constante, Cadeia de caracteres terminada em nulo que especifica o caminho para o \* arquivo. inf do driver.
+Um ponteiro para uma cadeia de caracteres com terminação nula constante que especifica o caminho para o arquivo \* .inf do driver.
 
 </dd> <dt>
 
-*pszEnvironment* \[ no\]
+*pszEnvironment* \[ Em\]
 </dt> <dd>
 
-Um ponteiro para uma constante, Cadeia de caracteres terminada em nulo que especifica a arquitetura do processador (por exemplo, Windows NT x86). Isso pode ser **nulo**.
+Um ponteiro para uma cadeia de caracteres com terminação nula constante que especifica a arquitetura do processador (por exemplo, Windows NT x86). Pode ser **NULL.**
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-S \_ OK, se a operação for concluída com sucesso.
+S \_ OK, se a operação for bem-sucedida.
 
-E \_ ACCESSDENIED, se o pacote foi enviado com o Windows.
+E \_ ACCESSDENIED, se o pacote foi fornecido com Windows.
 
-\_Código HRESULT (erro \_ \_ \_ \_ de pacote de driver de impressão em \_ uso), se o pacote estiver sendo usado.
+HRESULT \_ CODE(ERROR \_ PRINT DRIVER PACKAGE IN \_ \_ \_ \_ USE), se o pacote estiver sendo usado.
 
-Caso contrário, o **HRESULT** conterá um código de erro.
+Caso contrário, **o HRESULT** conterá um código de erro.
 
-Para obter mais informações sobre códigos de erro COM, consulte [tratamento de erros](../com/error-handling-in-com.md).
+Para obter mais informações sobre códigos de erro COM, consulte [Tratamento de erros](../com/error-handling-in-com.md).
 
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> Essa é uma função de bloqueio ou síncrona e pode não retornar imediatamente. A rapidez com que essa função retorna depende de fatores de tempo de execução, como status de rede, configuração de servidor de impressão e fatores de implementação de driver de impressora que são difíceis de prever ao escrever um aplicativo. Chamar essa função de um thread que gerencia a interação com a interface do usuário pode fazer com que o aplicativo pareça não responder.
+> Essa é uma função de bloqueio ou síncrona e pode não retornar imediatamente. A rapidez com que essa função retorna depende de fatores de tempo de execução, como status de rede, configuração do servidor de impressão e fatores de implementação de driver de impressora que são difíceis de prever ao escrever um aplicativo. Chamar essa função de um thread que gerencia a interação com a interface do usuário pode fazer com que o aplicativo pareça não responder.
 
  
 
-O repositório de drivers normalmente é% windir% \\ inf ou% windir% \\ System32 \\ DriverStore \\ FileRepository.
+O repositório de driver normalmente é %windir% \\ inf ou %windir% \\ System32 \\ DriverStore \\ FileRepository.
 
-Um pacote de driver fornecido com o Windows não pode ser removido com esta função.
+Um pacote de driver que é fornecido com Windows não pode ser removido com essa função.
 
 O usuário deve ter privilégios de administração de impressora.
 
@@ -95,10 +95,10 @@ O usuário deve ter privilégios de administração de impressora.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                      |
-| parâmetro<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Winspool. lib</dt> </dl>                   |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                            |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                                      |
+| Cabeçalho<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Winspool.lib</dt> </dl>                   |
 | DLL<br/>                      | <dl> <dt>Spoolss.dll</dt> </dl>                    |
 | Nomes Unicode e ANSI<br/>   | **DeletePrinterDriverPackageW** (Unicode) e **DeletePrinterDriverPackageA** (ANSI)<br/>           |
 

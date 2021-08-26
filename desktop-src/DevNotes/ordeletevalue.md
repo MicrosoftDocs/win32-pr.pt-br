@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Offreg.dll
-ms.openlocfilehash: 426765950fd38cbb3e3c99f4001db2965ddb07e3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 717464b1ba44593a9b36ccf26e5df248cb95df9bfa40a7786896c87041e246d3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105755755"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120045286"
 ---
 # <a name="ordeletevalue-function"></a>Função ORDeleteValue
 
@@ -56,7 +56,7 @@ Os nomes de valores não diferenciam maiúsculas de minúsculas.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for bem-sucedida, o valor de retorno será \_ êxito no erro.
 
@@ -68,8 +68,8 @@ Se a função falhar, o valor de retorno será um código de erro diferente de z
 
 | Requisito | Valor |
 |----------------------------|---------------------------------------------------------------------------------------|
-| Redistribuível<br/> | Biblioteca de registro offline do Windows versão 1,0 ou posterior<br/>                      |
-| parâmetro<br/>          | <dl> <dt>Offreg. h</dt> </dl>   |
+| Redistribuível<br/> | Windows Biblioteca de registro offline versão 1,0 ou posterior<br/>                      |
+| Cabeçalho<br/>          | <dl> <dt>Offreg. h</dt> </dl>   |
 | DLL<br/>             | <dl> <dt>Offreg.dll</dt> </dl> |
 
 

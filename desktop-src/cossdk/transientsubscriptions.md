@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 5053a4fd488ed38a637b4296f94caf20887f3ed924ae6d11b8f6a242669eccad
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 68ccdd222f4fe205e58adf5195df694ec1256804
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119853926"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122879925"
 ---
 # <a name="transientsubscriptions-collection"></a>Coleção TransientSubscriptions
 
@@ -62,7 +62,7 @@ As propriedades a seguir têm suporte no [**objeto COMAdminCatalogObject**](coma
 -   [SubscriberPartitionID](#subscriberpartitionid)
 -   [UserName](#username)
 
-### <a name="description"></a>Descrição
+### <a name="description"></a>Description
 
 
 
@@ -86,8 +86,8 @@ As propriedades a seguir têm suporte no [**objeto COMAdminCatalogObject**](coma
 |----------------|----------------------------------------------------------|
 | Descrição    | Indica se a assinatura está habilitada no momento. |
 | Access         | ReadWrite                                                |
-| Tipo           | Bool                                                     |
-| Padrão        | Verdadeiro                                                     |
+| Type           | Bool                                                     |
+| Padrão        | True                                                     |
 | Sistema mínimo | Windows 2000                                             |
 
 
@@ -148,23 +148,23 @@ As propriedades a seguir têm suporte no [**objeto COMAdminCatalogObject**](coma
 
 | Entrada | Valor |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrição    | Identificador da assinatura. Essa propriedade é retornada quando o método de propriedade de [**chave**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) é chamado em um objeto desta coleção. |
+| Descrição    | Identificador da assinatura. Essa propriedade é retornada quando o [**método de**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) propriedade Key é chamado em um objeto desta coleção. |
 | Access         | WriteOnce                                                                                                                                                        |
 | Type           | String                                                                                                                                                           |
-| Padrão        | <Generated>                                                                                                                                                |
+| Padrão        | &lt;Gerado&gt;                                                                                                                                                |
 | Sistema mínimo | Windows 2000                                                                                                                                                     |
 
 
 
  
 
-### <a name="interfaceid"></a>InterfaceID
+### <a name="interfaceid"></a>Interfaceid
 
 
 
 | Entrada | Valor |
 |----------------|----------------------------------|
-| Descrição    | IID para interface assinada para. |
+| Descrição    | IID para interface inscrito. |
 | Access         | WriteOnce                        |
 | Type           | String                           |
 | Padrão        | N/D                              |
@@ -180,7 +180,7 @@ As propriedades a seguir têm suporte no [**objeto COMAdminCatalogObject**](coma
 
 | Entrada | Valor |
 |----------------|----------------------------------------------|
-| Descrição    | Método na interface que está sendo assinada. |
+| Descrição    | Método na interface que está sendo inscrito. |
 | Access         | ReadWrite                                    |
 | Type           | String                                       |
 | Padrão        | N/D                                          |
@@ -196,17 +196,17 @@ As propriedades a seguir têm suporte no [**objeto COMAdminCatalogObject**](coma
 
 | Entrada | Valor |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrição    | O nome da assinatura. Espaços extras no início e no final da cadeia de caracteres são removidos. Essa propriedade é retornada quando o método de propriedade [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) é chamado em um objeto desta coleção. |
+| Descrição    | O nome da assinatura. Espaços extras no início e no final da cadeia de caracteres são removidos. Essa propriedade é retornada quando o [**método de**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) propriedade Name é chamado em um objeto desta coleção. |
 | Access         | ReadWrite                                                                                                                                                                                                                              |
 | Type           | String                                                                                                                                                                                                                                 |
-| Padrão        | "Nova assinatura"                                                                                                                                                                                                                     |
+| Padrão        | "Nova Assinatura"                                                                                                                                                                                                                     |
 | Sistema mínimo | Windows 2000                                                                                                                                                                                                                           |
 
 
 
  
 
-### <a name="peruser"></a>Peruser
+### <a name="peruser"></a>PerUser
 
 
 
@@ -214,7 +214,7 @@ As propriedades a seguir têm suporte no [**objeto COMAdminCatalogObject**](coma
 |----------------|---------------------------------------------------------------------------------------------------------|
 | Descrição    | Indica se a assinatura se aplica somente a um determinado usuário, representado pela propriedade UserName. |
 | Access         | ReadWrite                                                                                               |
-| Tipo           | Bool                                                                                                    |
+| Type           | Bool                                                                                                    |
 | Padrão        | Falso                                                                                                   |
 | Sistema mínimo | Windows 2000                                                                                            |
 
@@ -228,7 +228,7 @@ As propriedades a seguir têm suporte no [**objeto COMAdminCatalogObject**](coma
 
 | Entrada | Valor |
 |----------------|-------------------------------------------------------------------------------------|
-| Descrição    | ID do Publicador. Você pode indicar um EventCLSID ou um PublisherID, mas não ambos. |
+| Descrição    | ID do publicador. Você pode indicar um EventCLSID ou um PublisherID, mas não ambos. |
 | Access         | WriteOnce                                                                           |
 | Type           | String                                                                              |
 | Padrão        | ""                                                                                  |
@@ -244,9 +244,9 @@ As propriedades a seguir têm suporte no [**objeto COMAdminCatalogObject**](coma
 
 | Entrada | Valor |
 |----------------|------------------------------------------|
-| Descrição    | Um ponteiro para a interface do Assinante. |
+| Descrição    | Um ponteiro para a interface do assinante. |
 | Access         | ReadWrite                                |
-| Tipo           | Variante                                  |
+| Type           | Variante                                  |
 | Padrão        | N/D                                      |
 | Sistema mínimo | Windows 2000                             |
 
@@ -260,10 +260,10 @@ As propriedades a seguir têm suporte no [**objeto COMAdminCatalogObject**](coma
 
 | Entrada | Valor |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrição    | Ao assinar uma classe de evento na mesma partição, usada para representar o GUID da ID de partição do Assinante. Ao assinar as classes de evento, o Assinante tem a opção de assinar uma classe de evento na mesma partição ou em outra. |
+| Descrição    | Ao assinar uma classe de evento na mesma partição, usado para representar o GUID da ID de partição do assinante. Ao assinar classes de evento, o assinante tem a opção de assinar uma classe de evento na mesma partição ou em uma partição diferente. |
 | Access         | WriteOnce                                                                                                                                                                                                                                                       |
 | Type           | String                                                                                                                                                                                                                                                          |
-| Padrão        | <Generated>                                                                                                                                                                                                                                               |
+| Padrão        | &lt;Gerado&gt;                                                                                                                                                                                                                                               |
 | Sistema mínimo | Windows Server 2003                                                                                                                                                                                                                                             |
 
 

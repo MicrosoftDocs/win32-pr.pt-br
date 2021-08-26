@@ -1,21 +1,21 @@
 ---
-description: Este artigo contém tabelas de frequência para ajuste de TV analógica internacional para Nova Zelândia. Os índices de frequência não são adequados para números de canal.
+description: Este artigo contém tabelas de frequência para ajuste de TV análogo internacional para a Nova Zelândia. Índices de frequência não são adequados para números de canal.
 ms.assetid: a314d0b1-9e4f-42dd-914a-65a8f3610300
 title: Nova Zelândia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9879e89f6460ab25aa93594001068526404dcd84
-ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
+ms.openlocfilehash: 63f8f95412f4c8038708ddfde068fd1ddb27aca78bc50206484640ffb552a700
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "112067972"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120102386"
 ---
 # <a name="new-zealand"></a>Nova Zelândia
 
-Para obter uma explicação das tabelas a seguir, consulte [tabelas e atribuições](tables-and-assignments.md).
+Para uma explicação das tabelas a seguir, consulte [Tabelas e Atribuições](tables-and-assignments.md).
 
-Os índices de frequência na Nova Zelândia da tabela de transmissão são adequados para uso como números de canal; os índices de frequência de cabo não são adequados para uso como números de canal.
+Os índices de frequência na tabela de difusão da Nova Zelândia são adequados para uso como números de canal; os índices de frequência do cabo não são adequados para uso como números de canal.
 
 -   [Windows 7 e posterior](#windows-7-and-later)
     -   [Atribuições de difusão da Nova Zelândia](#new-zealand-broadcast-assignments)
@@ -226,7 +226,7 @@ Os índices de frequência na Nova Zelândia da tabela de transmissão são adeq
 
 <dl> <dt>
 
-[Ajuste de TV analógica internacional](international-analog-tv-tuning.md)
+[Ajuste de TV análogo internacional](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

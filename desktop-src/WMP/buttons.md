@@ -1,26 +1,26 @@
 ---
-title: Botões (SDK do Windows Media Player)
+title: Botões (Windows Media Player SDK)
 description: Botões
 ms.assetid: 1212e2d9-e8f8-45d8-8c7f-20865c9c9c94
 keywords:
-- Aparências móveis do Windows Media Player, visão geral do botão
+- Windows Media Player Capas móveis, visão geral do botão
 - capas, visão geral do botão
 - referência para capas, botões
 - botões em capas, sobre
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a0f06eb2fe21ee18a24f92e92d4fa760e9c76887
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 96128c723c5b8bbac31c82a32060704bc892dfb7
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104085102"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122885532"
 ---
-# <a name="buttons-windows-media-player-sdk"></a>Botões (SDK do Windows Media Player)
+# <a name="buttons-windows-media-player-sdk"></a>Botões (Windows Media Player SDK)
 
-Você desejará usar um ou mais botões em sua capa, e cada botão deve ser definido no arquivo de definição de capa. Se você não definir um botão nesta seção, sua capa não será capaz de usá-lo.
+Você deverá usar um ou mais botões em sua capa e cada botão deve ser definido no arquivo de definição de capa. Se você não definir um botão nesta seção, sua capa não poderá usá-lo.
 
-A seção de botões do arquivo de definição de capa começa com esta linha:
+A seção botões do arquivo de definição de capa começa com esta linha:
 
 
 ```C++
@@ -30,7 +30,7 @@ A seção de botões do arquivo de definição de capa começa com esta linha:
 
 
 
-Em seguida, você deve adicionar uma ou mais linhas que contêm informações sobre cada um dos botões em sua capa. Uma linha típica pode ser:
+Em seguida, você deve adicionar uma ou mais linhas que contenham informações sobre cada um dos botões em sua capa. Uma linha típica pode ser:
 
 
 ```C++
@@ -40,9 +40,9 @@ Em seguida, você deve adicionar uma ou mais linhas que contêm informações so
 
 
 
-Observe que esse código deve ser digitado como uma linha que começa com "PlayPause" e termina com "Push @ 160, 98".
+Observe que esse código deve ser digitado como uma linha começando com "PlayPause" e terminando com "Esvasado @ 160,98".
 
-Você pode usar o modelo a seguir para a seção de botões do arquivo de definição de capa:
+Você pode usar o seguinte modelo para a seção Botão do arquivo de definição de capa:
 
 
 ```C++
@@ -53,22 +53,22 @@ Você pode usar o modelo a seguir para a seção de botões do arquivo de defini
 
 
 
-Novamente, observe que elas devem ser digitadas como linhas únicas, a primeira começando com "// <Function> " e terminando com " &lt; push 2 Image src &gt; ". A segunda linha começa com "//----------" e termina com "------------------."
+Novamente, observe que eles devem ser digitados como linhas simples, a primeira começando com "// Function" e terminando com &lt; &gt; " Push &lt; 2 Image Src &gt; ". A segunda linha começa com "// ----------" e termina com "------------------."
 
-As informações do botão para cada linha na seção de botão devem aparecer na seguinte ordem. Somente as seis primeiras partes da linha são obrigatórias. As imagens secundárias não são incluídas, a menos que sejam necessárias.
+As informações de botão para cada linha na seção Botão devem aparecer na ordem a seguir. Somente as seis primeiras partes da linha são necessárias. As imagens secundárias não são incluídas, a menos que sejam necessárias.
 
-1.  [Função de botão](button-function.md)
+1.  [Função Button](button-function.md)
 2.  [Tipo de botão](button-type.md)
-3.  [Local do botão](button-location.md)
-4.  [Origem da imagem enviada por push](pushed-image-source.md)
-5.  [Origem da imagem para o botão desabilitado](image-source-for-disabled-button.md)
-6.  [Pressione a cor RGB](hit-rgb-color.md)
-7.  [Fonte de imagem secundária normal](normal-secondary-image-source.md)
-8.  [Fonte de imagem terciário normal](normal-tertiary-image-source.md)
-9.  [Fonte de imagem secundária enviada por push](pushed-secondary-image-source.md)
-10. [Fonte de imagem terciário enviada por push](pushed-tertiary-image-source.md)
+3.  [Localização do botão](button-location.md)
+4.  [Origem da imagem por pushed](pushed-image-source.md)
+5.  [Origem da imagem para o botão Desabilitado](image-source-for-disabled-button.md)
+6.  [Cor RGB de hit](hit-rgb-color.md)
+7.  [Origem de imagem secundária normal](normal-secondary-image-source.md)
+8.  [Origem de imagem terciária normal](normal-tertiary-image-source.md)
+9.  [Origem da imagem secundária por pushed](pushed-secondary-image-source.md)
+10. [Origem da imagem terciária por esão](pushed-tertiary-image-source.md)
 
-Para obter um exemplo de código de botão, consulte a [seção de botão de exemplo](sample-button-section.md).
+Para ver um exemplo de código de botão, consulte [a seção Botão de exemplo](sample-button-section.md).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

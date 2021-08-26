@@ -16,17 +16,17 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b60cedaa4ef84cb9f3ea31cd619d7335cc09324e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f06f50e489503d02a6ea772be65678022dd36f6c
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085258"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122481282"
 ---
 # <a name="id3dx11threadpump-interface"></a>Interface ID3DX11ThreadPump
 
 > [!Note]  
-> A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store.
+> a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows.
 
  
 
@@ -44,68 +44,16 @@ A interface **ID3DX11ThreadPump** tem esses métodos.
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Método</th>
-<th style="text-align: left;">Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><a href="id3dx11threadpump-addworkitem.md"><strong>AddWorkItem</strong></a></td>
-<td style="text-align: left;"><blockquote>
-[!Note]<br />
-A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store.
-</blockquote>
-<br/> Adiciona um item de trabalho à bomba do thread.<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="id3dx11threadpump-getqueuestatus.md"><strong>GetQueueStatus</strong></a></td>
-<td style="text-align: left;"><blockquote>
-[!Note]<br />
-A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store.
-</blockquote>
-<br/> Obtém o número de itens em cada uma das três filas dentro da bomba do thread.<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="id3dx11threadpump-getworkitemcount.md"><strong>GetWorkItemCount</strong></a></td>
-<td style="text-align: left;"><blockquote>
-[!Note]<br />
-A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store.
-</blockquote>
-<br/> Obtém o número de itens de trabalho na bomba do thread.<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="id3dx11threadpump-processdeviceworkitems.md"><strong>ProcessDeviceWorkItems</strong></a></td>
-<td style="text-align: left;"><blockquote>
-[!Note]<br />
-A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store.
-</blockquote>
-<br/> Define itens de trabalho para o dispositivo depois que eles terminarem de carregar e processar.<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="id3dx11threadpump-purgeallitems.md"><strong>PurgeAllItems</strong></a></td>
-<td style="text-align: left;"><blockquote>
-[!Note]<br />
-A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store.
-</blockquote>
-<br/> Limpa todos os itens de trabalho da bomba de thread.<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="id3dx11threadpump-waitforallitems.md"><strong>WaitForAllItems</strong></a></td>
-<td style="text-align: left;"><blockquote>
-[!Note]<br />
-A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store.
-</blockquote>
-<br/> Aguarda a conclusão de todos os itens de trabalho na bomba do thread.<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Método | Descrição | 
+|--------|-------------|
+| <a href="id3dx11threadpump-addworkitem.md"><strong>AddWorkItem</strong></a> | <blockquote>[!Note]<br />a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows.</blockquote><br /> Adiciona um item de trabalho à bomba do thread.<br /> | 
+| <a href="id3dx11threadpump-getqueuestatus.md"><strong>GetQueueStatus</strong></a> | <blockquote>[!Note]<br />a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows.</blockquote><br /> Obtém o número de itens em cada uma das três filas dentro da bomba do thread.<br /> | 
+| <a href="id3dx11threadpump-getworkitemcount.md"><strong>GetWorkItemCount</strong></a> | <blockquote>[!Note]<br />a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows.</blockquote><br /> Obtém o número de itens de trabalho na bomba do thread.<br /> | 
+| <a href="id3dx11threadpump-processdeviceworkitems.md"><strong>ProcessDeviceWorkItems</strong></a> | <blockquote>[!Note]<br />a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows.</blockquote><br /> Define itens de trabalho para o dispositivo depois que eles terminarem de carregar e processar.<br /> | 
+| <a href="id3dx11threadpump-purgeallitems.md"><strong>PurgeAllItems</strong></a> | <blockquote>[!Note]<br />a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows.</blockquote><br /> Limpa todos os itens de trabalho da bomba de thread.<br /> | 
+| <a href="id3dx11threadpump-waitforallitems.md"><strong>WaitForAllItems</strong></a> | <blockquote>[!Note]<br />a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows.</blockquote><br /> Aguarda a conclusão de todos os itens de trabalho na bomba do thread.<br /> | 
+
 
 
 
@@ -131,9 +79,9 @@ O objeto de bomba de thread ocupa uma quantidade significativa de recursos, port
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                                 |
-| parâmetro<br/>                   | <dl> <dt>D3DX11core. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                              |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/>                                 |
+| Cabeçalho<br/>                   | <dl> <dt>D3DX11core. h</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>D3DX11. lib</dt> </dl>   |
 
 

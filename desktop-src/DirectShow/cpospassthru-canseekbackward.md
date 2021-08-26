@@ -1,7 +1,7 @@
 ---
-description: 'O método CanSeekBackward determina se o fluxo pode ser buscado retroativamente. Esse método implementa o método IMediaPosition:: CanSeekBackward.'
+description: O método CanSeekBackward determina se o fluxo pode ser buscado para trás. Esse método implementa o método IMediaPosition::CanSeekBackward.
 ms.assetid: 6443980f-6863-4941-b2dd-4a31257b5810
-title: Método CPosPassThru. CanSeekBackward (Ctlutil. h)
+title: Método CPosPassThru.CanSeekBackward (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a6a016f5cfeea7ca1e63bb4d0e603784b8f95a85
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c1d989acf074eb20e6ea3387c37129700320ce782e3c5d7c8bd4320641839ca1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105775622"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120108426"
 ---
-# <a name="cpospassthrucanseekbackward-method"></a>Método CPosPassThru. CanSeekBackward
+# <a name="cpospassthrucanseekbackward-method"></a>Método CPosPassThru.CanSeekBackward
 
-O `CanSeekBackward` método determina se o fluxo pode ser buscado retroativamente. Esse método implementa o método [**IMediaPosition:: CanSeekBackward**](/windows/desktop/api/Control/nf-control-imediaposition-canseekbackward) .
+O `CanSeekBackward` método determina se o fluxo pode ser buscado para trás. Esse método implementa o [**método IMediaPosition::CanSeekBackward.**](/windows/desktop/api/Control/nf-control-imediaposition-canseekbackward)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,13 +45,13 @@ HRESULT CanSeekBackward(
 *pCanSeekBackward* 
 </dt> <dd>
 
-Ponteiro para uma variável que recebe o valor OATRUE se o filtro puder ser revertido ou OAFALSE caso contrário.
+Ponteiro para uma variável que recebe o valor OATRUE se o filtro puder buscar para trás ou OAFALSE caso contrário.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna o valor **HRESULT** do PIN conectado.
+Retorna o **valor HRESULT** do pino conectado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,8 +59,8 @@ Retorna o valor **HRESULT** do PIN conectado.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Ctlutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

@@ -1,8 +1,8 @@
 ---
-description: A \_ classe CIM ExecuteProgram representa os arquivos que podem ser executados no sistema onde o elemento de software está instalado.
+description: A classe Cim \_ ExecuteProgram representa arquivos que podem ser executados no sistema em que o elemento de software está instalado.
 ms.assetid: 4329d228-4069-4a5a-b1eb-2dbad9644118
 ms.tgt_platform: multiple
-title: Classe CIM_ExecuteProgram
+title: CIM_ExecuteProgram classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -25,19 +25,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: beaea36c40083e4305cf2304dd7a60dadc55e9eee3315288525ffcfdf056a192
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e3794e445281b5f95639ca3116c2d3565fca069e
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119924006"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122883671"
 ---
-# <a name="cim_executeprogram-class"></a>\_Classe CIM ExecuteProgram
+# <a name="cim_executeprogram-class"></a>Classe Cim \_ ExecuteProgram
 
-A classe **CIM \_ ExecuteProgram** representa os arquivos que podem ser executados no sistema onde o elemento de software está instalado.
+A **classe Cim \_ ExecuteProgram** representa arquivos que podem ser executados no sistema em que o elemento de software está instalado.
 
 > [!IMPORTANT]
-> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> As classes CIM (Distributed Management Task Force) modelo CIM DMTF são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
@@ -65,20 +65,20 @@ class CIM_ExecuteProgram : CIM_Action
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ ExecuteProgram** tem estes tipos de membros:
+A **classe Cim \_ ExecuteProgram** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-A classe **CIM \_ ExecuteProgram** tem esses métodos.
+A **classe Cim \_ ExecuteProgram** tem esses métodos.
 
 
 
 | Método                                                      | Descrição                                                   |
 |:------------------------------------------------------------|:--------------------------------------------------------------|
-| [**Invoke**](invoke-method-in-class-cim-executeprogram.md) | Executa uma ação específica. Não implementado pelo WMI.<br/> |
+| [**Invoke**](invoke-method-in-class-cim-executeprogram.md) | Toma uma ação específica. Não implementado pelo WMI.<br/> |
 
 
 
@@ -86,11 +86,11 @@ A classe **CIM \_ ExecuteProgram** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ ExecuteProgram** tem essas propriedades.
+A **classe Cim \_ ExecuteProgram** tem essas propriedades.
 
 <dl> <dt>
 
-**ActionID**
+**Actionid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -99,12 +99,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**chave**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Identificador exclusivo atribuído a uma ação específica para um elemento de software.
 
-Esta propriedade é herdada [**da \_ ação CIM**](cim-action.md).
+Essa propriedade é herdada da [**Ação CIM. \_**](cim-action.md)
 
 </dd> <dt>
 
@@ -120,9 +120,9 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Breve descrição textual do objeto.
+Descrição textual curta do objeto.
 
-Esta propriedade é herdada [**da \_ ação CIM**](cim-action.md).
+Essa propriedade é herdada da [**Ação CIM. \_**](cim-action.md)
 
 </dd> <dt>
 
@@ -150,22 +150,22 @@ Tipo de acesso: Somente leitura
 
 Descrição do objeto.
 
-Esta propriedade é herdada [**da \_ ação CIM**](cim-action.md).
+Essa propriedade é herdada da [**Ação CIM. \_**](cim-action.md)
 
 </dd> <dt>
 
 **Direção**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se um objeto [**de \_ ação CIM**](cim-action.md) específico faz parte de uma sequência de ações para fazer a transição do elemento de software atual para seu próximo estado, como "instalar" ou para remover o elemento de software atual, como "Desinstalar".
+Indica se um objeto de Ação [**CIM \_**](cim-action.md) específico faz parte de uma sequência de ações para fazer a transição do elemento de software atual para seu próximo estado, como "Instalar", ou para remover o elemento de software atual, como "Desinstalar".
 
-Esta propriedade é herdada [**da \_ ação CIM**](cim-action.md).
+Essa propriedade é herdada da [**Ação CIM. \_**](cim-action.md)
 
 <dt>
 
@@ -194,12 +194,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ softwareelement**](cim-softwareelement.md).**Name**"), [**\_ chave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificadores: [**Propagado**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**Name**"), [**cim \_ key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Identifica o elemento de software.
 
-Esta propriedade é herdada [**da \_ ação CIM**](cim-action.md).
+Essa propriedade é herdada da [**Ação CIM. \_**](cim-action.md)
 
 </dd> <dt>
 
@@ -228,30 +228,30 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ softwareelement**](cim-softwareelement.md).**SoftwareElementID**"), [**\_ chave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificadores: [**Propagado**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementID**"), [**chave \_ CIM,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Identificador para o elemento de software.
 
-Esta propriedade é herdada [**da \_ ação CIM**](cim-action.md).
+Essa propriedade é herdada da [**Ação CIM. \_**](cim-action.md)
 
 </dd> <dt>
 
 **SoftwareElementState**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ softwareelement**](cim-softwareelement.md).**SoftwareElementState**"), [**\_ chave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Qualificadores: [**Propagado**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementState**"), [**chave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Estado de um elemento de software.
 
-Esta propriedade é herdada [**da \_ ação CIM**](cim-action.md).
+Essa propriedade é herdada da [**Ação CIM. \_**](cim-action.md)
 
 <dt>
 
@@ -284,18 +284,18 @@ Descreve os detalhes necessários para a instalação bem-sucedida e os detalhes
 
 </dt> <dd>
 
-Descreve os detalhes necessários para a execução bem-sucedida e os detalhes (condições e ações) necessários para criar um elemento de software no estado em execução (ou seja, o próximo estado).
+Descreve os detalhes necessários para a execução bem-sucedida e os detalhes (condições e ações) necessários para criar um elemento de software no estado de execução (ou seja, o próximo estado).
 
 </dd> <dt>
 
 <span id="Running"></span><span id="running"></span><span id="RUNNING"></span>
 
-<span id="Running"></span><span id="running"></span><span id="RUNNING"></span>**Em execução** (3)
+<span id="Running"></span><span id="running"></span><span id="RUNNING"></span>**Executando** (3)
 
 
 </dt> <dd>
 
-Descreve os detalhes necessários para monitorar e operar em um elemento inicial.
+Descreve os detalhes necessários para monitorar e operar em um elemento start.
 
 </dd> </dl>
 
@@ -304,18 +304,18 @@ Descreve os detalhes necessários para monitorar e operar em um elemento inicial
 **TargetOperatingSystem**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ softwareelement**](cim-softwareelement.md).**TargetOperatingSystem**"), [**\_ chave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) (" MIF. \|Informações do componente de software DMTF \| 2,5 ")
+Qualificadores: [**Propagado**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**TargetOperatingSystem**"), [**chave CIM, \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Informações do componente de software DMTF \| \| 002.5")
 </dt> </dl>
 
-Sistema operacional de destino do elemento de software proprietário.
+Sistema operacional de destino do elemento de software de propriedade.
 
-Esta propriedade é herdada [**da \_ ação CIM**](cim-action.md).
+Essa propriedade é herdada da [**Ação CIM. \_**](cim-action.md)
 
 <dt>
 
@@ -328,7 +328,7 @@ Esta propriedade é herdada [**da \_ ação CIM**](cim-action.md).
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outro** (1)
+<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -367,7 +367,7 @@ Mac OS
 
 <span id="Digital_Unix"></span><span id="digital_unix"></span><span id="DIGITAL_UNIX"></span>
 
-<span id="Digital_Unix"></span><span id="digital_unix"></span><span id="DIGITAL_UNIX"></span>**Unix Digital** (6)
+<span id="Digital_Unix"></span><span id="digital_unix"></span><span id="DIGITAL_UNIX"></span>**Digital Unix** (6)
 
 
 </dt> <dd></dd> <dt>
@@ -379,13 +379,13 @@ Mac OS
 
 </dt> <dd>
 
-Abrir VMS
+Abrir VMs
 
 </dd> <dt>
 
 <span id="HPUX"></span><span id="hpux"></span>
 
-<span id="HPUX"></span><span id="hpux"></span>HP **(8** )
+<span id="HPUX"></span><span id="hpux"></span>**HPUX** (8)
 
 
 </dt> <dd>
@@ -843,8 +843,8 @@ Versão da operação.
 
 A versão da operação deve estar em um dos seguintes formatos:
 
--   <major>.<minor>.<revision>
--   <major>.<minor><letter><revision>
+-   &lt;principal &gt; . &lt; secundária &gt; . &lt; revisão&gt;
+-   &lt;principal &gt; . &lt; &gt; &lt; revisão de letra &gt; &lt; secundária&gt;
 
 Esta propriedade é herdada [**da \_ ação CIM**](cim-action.md).
 

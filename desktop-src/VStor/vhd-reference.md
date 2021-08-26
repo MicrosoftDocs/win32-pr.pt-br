@@ -1,51 +1,32 @@
 ---
-description: 'Os seguintes elementos são usados no VHD (disco rígido virtual):'
+description: 'Os seguintes elementos são usados no VHD (Disco Rígido Virtual):'
 MS-HAID: vhd.vhd\_reference
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: Referência do VHD
+title: Referência de VHD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 68bf3c559cadc2312cacd9737d07aad16fdb261a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0f8d5685fa1bec49ff36ae3d458828971459a250
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105760914"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122475642"
 ---
-# <a name="span-idvhdvhd_referencespanvhd-reference"></a><span id="vhd.vhd_reference"></span>Referência do VHD
+# <a name="span-idvhdvhd_referencespanvhd-reference"></a><span id="vhd.vhd_reference"></span>Referência de VHD
 
-Os seguintes elementos são usados no VHD (disco rígido virtual):
+Os seguintes elementos são usados no VHD (Disco Rígido Virtual):
 
 ## <a name="span-idin_this_sectionspanin-this-section"></a><span id="in_this_section"></span>Nesta seção
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Tópico</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="vhd-enumerations.md">Enumerações de VHD</a></p></td>
-<td><p>As seguintes enumerações são usadas no disco rígido virtual (VHD):</p></td>
-</tr>
-<tr class="even">
-<td><p><a href="vhd-functions.md">Funções de VHD</a></p></td>
-<td><p>As funções a seguir são usadas em discos virtuais:</p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="vhd-structures.md">Estruturas de VHD</a></p></td>
-<td><p>As seguintes estruturas são usadas no disco rígido virtual (VHD):</p></td>
-</tr>
-</tbody>
-</table>
+
+| Tópico | Descrição | 
+|-------|-------------|
+| <p><a href="vhd-enumerations.md">Enumerações VHD</a></p> | <p>As enumerações a seguir são usadas no VHD (Disco Rígido Virtual):</p> | 
+| <p><a href="vhd-functions.md">Funções VHD</a></p> | <p>As seguintes funções são usadas em Discos Virtuais:</p> | 
+| <p><a href="vhd-structures.md">Estruturas VHD</a></p> | <p>As seguintes estruturas são usadas no VHD (Disco Rígido Virtual):</p> | 
+
 
  
 

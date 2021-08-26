@@ -1,21 +1,21 @@
 ---
-title: Tipos de dados de API de componente de protocolo WebSocket (WebSocket. h)
-description: A API do componente de protocolo WebSocket define esses tipos de dados.
+title: Tipos de dados da API de Componente do Protocolo WebSocket (Websocket.h)
+description: A API de Componente de Protocolo WebSocket define esses tipos de dados.
 ms.assetid: D5D42785-CFAC-4324-9194-1BA8056FBAA1
 keywords:
 - WEB_SOCKET_HANDLE
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5111817b5bee202474b45f7a4280cf3c0e2d8703
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ead8fc6cb6e79a78001b1106345203996a07f27158a26df8e7f42516937b29a0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086486"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120071986"
 ---
 # <a name="websocket-protocol-component-api-data-types"></a>Tipos de dados da API do componente de protocolo WebSocket
 
-A API do componente de protocolo WebSocket define esses tipos de dados.
+A API de Componente de Protocolo WebSocket define esses tipos de dados.
 
 
 ```C++
@@ -30,9 +30,9 @@ typedef PVOID WEB_SOCKET_HANDLE;
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                   |
-| parâmetro<br/>                   | <dl> <dt>WebSocket. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                   |
+| Cabeçalho<br/>                   | <dl> <dt>Websocket.h</dt> </dl> |
 
 
 

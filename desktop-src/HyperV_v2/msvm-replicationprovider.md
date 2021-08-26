@@ -19,12 +19,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 8cc821b6bdd5d6f5d1c1085a804799c662f9d62e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 84b64ec1462d9d3cb487cac807891d57c219de7f
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103828590"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122885692"
 ---
 # <a name="msvm_replicationprovider-class"></a>\_Classe Msvm replicationprovider
 
@@ -121,7 +121,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: **chave**, **maxlen** (256)
 </dt> </dl>
 
-A ID da instância do WMI, que identifica o provedor. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement). O formato dessa propriedade é "Microsoft: <host-Machine-Name>\\ replicationprovider \\<provedor-Name>".
+A ID da instância do WMI, que identifica o provedor. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement). O formato dessa propriedade é "Microsoft: &lt; host-machine-name &gt; \\ replicationprovider \\ &lt; provedor-name &gt; ".
 
 </dd> <dt>
 
@@ -173,8 +173,8 @@ Você pode usar qualquer um dos provedores disponíveis e a classe [**Msvm \_ Re
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 8.1 \[ apenas aplicativos de área de trabalho\]<br/>                                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012 R2\]<br/>                                                 |
+| Cliente mínimo com suporte<br/> | Windows 8.1 \[ somente aplicativos da área de trabalho\]<br/>                                                            |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[Somente aplicativos da área de trabalho R2\]<br/>                                                 |
 | Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |

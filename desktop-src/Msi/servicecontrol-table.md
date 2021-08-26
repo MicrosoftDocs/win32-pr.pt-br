@@ -4,12 +4,12 @@ ms.assetid: c51cd9bd-3c55-4eec-ab67-172765adc51c
 title: Tabela de UserControl
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 24b8531fb70c1887d77ae9b09bf3fe7e59de0c7878dfac44707df942e838f4f4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1b0c360991ce4a72698ac1b667d82a98ba64b7a0
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120039976"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122885687"
 ---
 # <a name="servicecontrol-table"></a>Tabela de UserControl
 
@@ -26,11 +26,11 @@ A tabela de controle de origem tem as colunas a seguir.
 
 | Coluna         | Tipo                         | Chave | Nullable |
 |----------------|------------------------------|-----|----------|
-| ServiceControl | [Identificador](identifier.md) | Y   | N        |
+| ServiceControl | [Identificador](identifier.md) | S   | N        |
 | Nome           | [Binário](formatted.md)   | N   | N        |
 | Evento          | [Inteiro](integer.md)       | N   | N        |
-| Argumentos      | [Binário](formatted.md)   | N   | Y        |
-| Aguarde           | [Inteiro](integer.md)       | N   | Y        |
+| Argumentos      | [Binário](formatted.md)   | N   | S        |
+| Aguarde           | [Inteiro](integer.md)       | N   | S        |
 | Componente\_    | [Identificador](identifier.md) | N   | N        |
 
 
@@ -66,11 +66,11 @@ Os valores a seguir são usados apenas durante uma instalação.
 
 
 
-| Constante                           | Hexadecimal | Decimal | Descrição                                                                        |
+| Constante                           | Hexadecimal | Decimal | Description                                                                        |
 |------------------------------------|-------------|---------|------------------------------------------------------------------------------------|
 | **msidbServiceControlEventStart**  | 0x001       | 1       | Inicia o serviço durante a [ação iniciarservices](startservices-action.md).    |
 | **msidbServiceControlEventStop**   | 0x002       | 2       | Interrompe o serviço durante a [ação StopServices](stopservices-action.md).       |
-| (nenhum)                             | 0x004       | 4       | <reserved>                                                                   |
+| (nenhum)                             | 0x004       | 4       | &lt;reserved&gt;                                                                   |
 | **msidbServiceControlEventDelete** | 0x008       | 8       | Exclui o serviço durante a [ação DeleteServices](deleteservices-action.md). |
 
 
@@ -81,11 +81,11 @@ Os valores a seguir são usados apenas durante uma desinstalação.
 
 
 
-| Constante                                    | Hexadecimal | Decimal | Descrição                                                                        |
+| Constante                                    | Hexadecimal | Decimal | Description                                                                        |
 |---------------------------------------------|-------------|---------|------------------------------------------------------------------------------------|
 | **msidbServiceControlEventUninstallStart**  | 0x010       | 16      | Inicia o serviço durante a [ação iniciarservices](startservices-action.md).    |
 | **msidbServiceControlEventUninstallStop**   | 0x020       | 32      | Interrompe o serviço durante a [ação StopServices](stopservices-action.md).       |
-| (nenhum)                                      | 0x040       | 64      | <reserved>                                                                   |
+| (nenhum)                                      | 0x040       | 64      | &lt;reserved&gt;                                                                   |
 | **msidbServiceControlEventUninstallDelete** | 0x080       | 128     | Exclui o serviço durante a [ação DeleteServices](deleteservices-action.md). |
 
 
@@ -119,7 +119,7 @@ Chave externa para a coluna um da [tabela de componentes](component-table.md).
 
 As ações [startservices](startservices-action.md), [StopServices](stopservices-action.md)e [DeleteServices](deleteservices-action.md) em [*tabelas de sequência*](s-gly.md) processam as informações nesta tabela. Para obter informações sobre como usar *tabelas de sequência*, consulte [usando uma tabela de sequência](using-a-sequence-table.md).
 
-Use a coluna Nome para iniciar, parar ou excluir serviços que estão sendo substituídos pela instalação ou que dependem de um novo serviço que está sendo instalado. Por exemplo, inserir MyService na coluna ServiceControl pode ligar esse serviço a MyComponent na coluna \_ Componente. Se o campo bit na coluna Evento estiver definido para iniciar durante a instalação, o instalador iniciará MyService ao instalar o MyComponent.
+Use a coluna nome para iniciar, parar ou excluir serviços que estão sendo substituídos pela instalação do ou que dependem de um novo serviço que está sendo instalado. Por exemplo, a inserção de MyService na coluna de controle de serviço pode vincular esse serviço a myComponent na \_ coluna Component. Se o campo de bits na coluna evento for definido como iniciar durante a instalação, o instalador iniciará MyService ao instalar myComponent.
 
 ## <a name="validation"></a>Validação
 

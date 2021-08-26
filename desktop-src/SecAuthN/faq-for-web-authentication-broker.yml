@@ -1,36 +1,36 @@
 ### YamlMime:FAQ
 metadata:
-  description: Perguntas frequentes sobre o Agente de Autenticação da Web.
+  description: Perguntas frequentes sobre o agente de autenticação da Web.
   ms.assetid: 49ACB2E3-CF57-4D8E-9670-E7C18A06F76A
-  title: Perguntas frequentes sobre o Agente de Autenticação da Web
+  title: Perguntas frequentes sobre o agente de autenticação da Web
   ms.topic: article
   ms.date: 05/31/2018
-  ms.openlocfilehash: ef15108a0c6384d833faaef052480c0e3eb79dda
-  ms.sourcegitcommit: 6377cd944d1f09f2dfe5727170ca8b330c8235bf
+  ms.openlocfilehash: fab271c9787650213b6bb575888960d921f0dda35a62ff3b7d43c1b50585e43c
+  ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 07/07/2021
-  ms.locfileid: "113366757"
-title: Perguntas frequentes sobre o Agente de Autenticação da Web
+  ms.lasthandoff: 08/11/2021
+  ms.locfileid: "120101306"
+title: Perguntas frequentes sobre o agente de autenticação da Web
 summary: >
-  Perguntas frequentes sobre o Agente de Autenticação da Web.
+  Perguntas frequentes sobre o agente de autenticação da Web.
 sections:
 - name: Ignored
   questions:
   - question: >
-      Como posso garantir que minha página https:// trabalho com o Agente de Autenticação da Web?
+      Como posso ter certeza de que minha página do https://funciona com o agente de autenticação da Web?
     answer: >
-      Tente carregar a página no Windows Internet Explorer antes de tentar com o Agente de Autenticação da Web. Se sua página da Web for carregada sem erros, ela também será renderizada corretamente pelo Agente de Autenticação da Web.
+      tente carregar a página no Windows Internet Explorer antes de experimentá-la com o agente de autenticação da Web. Se a sua página da Web for carregada sem erros, ela também será renderizada corretamente pelo agente de autenticação da Web.
   - question: >
-      Em caso de erro, os códigos de erro serão exibidos para o usuário?
+      No caso de um erro, os códigos de erro serão exibidos para o usuário?
     answer: >
-      Embora uma página de erro seja exibida para o usuário, o código de erro subjacente não é mostrado. Ele só é retornado para o aplicativo. Como alternativa, você também pode usar os logs operacionais.
+      Enquanto uma página de erro for exibida para o usuário, o código de erro subjacente não será exibido. Ele é retornado apenas para o aplicativo. Como alternativa, você também pode usar os logs operacionais.
   - question: >
       Como posso encontrar mais detalhes sobre o erro encontrado?
     answer: >
       Use os logs operacionais para obter detalhes.
   - question: >
-      O contêiner do aplicativo SSO (single sign-on) compartilha seus cookies com o Internet Explorer ou outros navegadores?
+      O contêiner de aplicativo SSO (logon único) compartilha seus cookies com o Internet Explorer ou com outros navegadores?
     answer: >
       Não. 
-additionalContent: "\n## <a name=\"related-topics\"></a>Tópicos relacionados\n\n[Considerações para o desenvolvimento de páginas da Web](considerations-for-the-web-page-development.md)\n\n[Aplicativo de exemplo do SDK do Agente de Autenticação da Web](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/WebAuthenticationBroker)\n\n[**Windows.Security.Authentication.Web**](/uwp/api/Windows.Security.Authentication.Web)"
+additionalContent: "\n## <a name=\"related-topics\"></a>Tópicos relacionados\n\n[Considerações para o desenvolvimento de páginas da Web](considerations-for-the-web-page-development.md)\n\n[Aplicativo de exemplo do SDK do agente de autenticação da Web](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/WebAuthenticationBroker)\n\n[**Windows.Security.Authentication.Web**](/uwp/api/Windows.Security.Authentication.Web)"

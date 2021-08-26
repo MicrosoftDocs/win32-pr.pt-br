@@ -4,12 +4,12 @@ description: Use as seguintes constantes com funções de administração e conf
 ms.assetid: 3d9e21de-1eca-4e3f-a941-5f7b0f46e30c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ce998072ee5d06c6dbd03aba019f343e3595f0b8
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b2105b14755fd2d89d98b88d42ef5e2ccfc0d002dce34985fbc5d6ce94c2d6ca
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105748964"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120101736"
 ---
 # <a name="transport-and-protocol-constants"></a>Constantes de transporte e protocolo
 
@@ -18,9 +18,9 @@ Use as seguintes constantes com funções de [Administração](router-administra
 -   [Identificadores de protocolo](protocol-identifiers.md)
 -   [Identificadores de transporte](transport-identifiers.md)
 
- 
+ 
 
- 
+ 
 
 
 

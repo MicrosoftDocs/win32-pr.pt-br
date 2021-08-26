@@ -1,33 +1,33 @@
 ---
-description: O filtro de endereço notifica o driver de Monitor de Rede para aceitar quadros que tenham uma de uma variedade de tipos de endereço MAC especificados (Ethernet, token ring e FDDI).
+description: O filtro de endereço notifica o driver Monitor de Rede para aceitar quadros que têm uma variedade de tipos de endereço MAC especificados (Ethernet, Anel de Token e FDDI).
 ms.assetid: 23a38f49-2d63-4fc8-8113-29143493359c
-title: Gravando parte de filtro de ADDRESStable
+title: Escrevendo parte do filtro ADDRESSTABLE
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b06b00d046d555dffc39561b817629f4f47ca4d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: efbf0a18f8004ea4c38607d6c1c7b8fa741315b41fefe5b4d31b103167d415eb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105755986"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120128786"
 ---
-# <a name="writing-addresstable-filter-portion"></a>Gravando parte de filtro de ADDRESStable
+# <a name="writing-addresstable-filter-portion"></a>Escrevendo parte do filtro ADDRESSTABLE
 
-O filtro de endereço notifica o driver de Monitor de Rede para aceitar quadros que tenham uma de uma variedade de tipos de endereço MAC especificados (Ethernet, token ring e FDDI). Você pode especificar um máximo de oito pares de endereços. Um par de endereços pode especificar uma origem, um destino, ambos ou nenhum.
+O filtro de endereço notifica o driver Monitor de Rede para aceitar quadros que têm uma variedade de tipos de endereço MAC especificados (Ethernet, Anel de Token e FDDI). Você pode especificar um máximo de oito pares de endereços. Um par de endereços pode especificar uma origem, um destino, ambos ou nenhum deles.
 
-A parte de endereço do filtro consiste em duas estruturas: [**AddressTable**](addresstable.md) e [**ADDRESSPAIR**](addresspair.md).
+A parte de endereço do filtro consiste em duas estruturas: [**ADDRESSTABLE**](addresstable.md) e [**ADDRESSPAIR.**](addresspair.md)
 
-Se você não especificar nenhum endereço, todos os quadros passarão pelo filtro de endereço. No entanto, se você especificar qualquer endereço, somente os quadros que passarem pelo filtro de endereço determinado serão aprovados.
+Se você especificar NENHUM endereço, TODOS os quadros passarão pelo filtro de endereço. No entanto, se você especificar endereços, somente os quadros que passam pelo filtro de endereço especificado passarão.
 
-A criação do filtro de endereço envolve a alocação de uma estrutura de [**AddressTable**](addresstable.md) e o preenchimento de membros da estrutura [**ADDRESSPAIR**](addresspair.md) .
+A criação do filtro de endereço envolve a alocação de uma estrutura [**ADDRESSTABLE**](addresstable.md) e o preenchimento de membros da [**estrutura ADDRESSPAIR.**](addresspair.md)
 
 **Para criar a parte de endereço de um filtro de captura**
 
-1.  Use o sinalizador **CAPTUREFILTER \_ flags \_ local \_ somente** da estrutura [**CAPTUREFILTER**](capturefilter.md) para restringir a captura para o tráfego de e para o computador local.
+1.  Use o **sinalizador CAPTUREFILTER \_ FLAGS \_ LOCAL \_ ONLY** da estrutura [**CAPTUREFILTER**](capturefilter.md) para restringir a captura ao tráfego de e para o computador local.
 
-    A definição desse sinalizador não definirá a NIC para o modo promíscuo; o arquivo de captura capturará somente o tráfego local.
+    Definir esse sinalizador não definirá a NIC para o modo promiscuo; o arquivo de captura capturará apenas o tráfego local.
 
-2.  Use o seguinte código de exemplo para definir a estrutura de [**AddressTable**](addresstable.md) :
+2.  Use o seguinte código de exemplo para definir a [**estrutura ADDRESSTABLE:**](addresstable.md)
 
     ``` syntax
     typedef struct _ADDRESSTABLE
@@ -50,23 +50,23 @@ A criação do filtro de endereço envolve a alocação de uma estrutura de [**A
     typedef ADDRESSPAIR *LPADDRESSPAIR;
     ```
 
-3.  Use as informações, listadas na tabela a seguir, para selecionar um tipo de sinalizador [**ADDRESSPAIR**](addresspair.md) . 
+3.  Use as informações listadas na tabela a seguir para selecionar um [**tipo de sinalizador ADDRESSPAIR.**](addresspair.md) 
 
     | Sinalizador                             | Significado                                                                               |
     |----------------------------------|---------------------------------------------------------------------------------------|
-    | sinalizadores de endereço \_ \_ correspondem ao \_ DST       | Corresponde a um endereço de destino.                                                        |
-    | os \_ sinalizadores de endereço \_ correspondem \_ src       | Corresponde a um endereço de origem                                                              |
-    | \_exclusão de sinalizadores de endereço \_          | Exclui o quadro se esse endereço for encontrado (uma origem ou destino definido). |
-    | Endereço do \_ grupo de horário de Verão dos sinalizadores de endereços \_ \_ \_ | Corresponde ao bit do grupo (do endereço de destino) somente para mensagens do tipo de difusão.      |
-    | sinalizadores de endereço \_ \_ correspondem a \_ ambos      | Corresponde tanto ao destino quanto aos endereços de origem.                                    |
+    | SINALIZADORES \_ DE \_ ENDEREÇOS \_ CORRESPONDEREM A DST       | Corresponde a um endereço de destino.                                                        |
+    | SINALIZADORES \_ DE ENDEREÇO \_ \_ CORRESPONDEREM AO SRC       | Corresponde a um endereço de origem                                                              |
+    | EXCLUSÃO \_ DE SINALIZADORES \_ DE ENDEREÇO          | Exclui o quadro se esse endereço for encontrado (uma origem ou destino definidos). |
+    | COMPLEMENTO \_ DE \_ GRUPO DST \_ \_ SINALIZADORES DE ENDEREÇO | Corresponde ao bit do grupo (do endereço de destino) somente para mensagens de tipo de difusão.      |
+    | OS \_ SINALIZADORES DE \_ ENDEREÇO \_ CORRESPONDEREM A AMBOS      | Corresponde aos endereços de origem e de destino.                                    |
 
     
 
      
 
-4.  Preencha um endereço de destino, que é avaliado em relação ao sinalizador [**ADDRESSPAIR**](addresspair.md) que você selecionar.
-5.  Preencha um endereço de origem, que é avaliado em relação ao sinalizador [**ADDRESSPAIR**](addresspair.md) que você selecionar.
-6.  Preencha a estrutura de [**AddressTable**](addresstable.md) com uma matriz de estruturas [**ADDRESSPAIR**](addresspair.md) , que inclui os pares de endereços que o driver avalia. Todos os pares de endereços são avaliados como uma instrução OR lógica (ADDRESSPAIR 1 \| \| ADDRESSPAIR 2). Você pode incluir um máximo de oito pares de endereços em um filtro de captura.
+4.  Preencha um endereço de destino, que é avaliado em relação ao [**sinalizador ADDRESSPAIR**](addresspair.md) selecionado.
+5.  Preencha um endereço de origem, que é avaliado em relação [**ao sinalizador ADDRESSPAIR**](addresspair.md) selecionado.
+6.  Preencha a estrutura [**ADDRESSTABLE**](addresstable.md) com uma matriz de estruturas [**ADDRESSPAIR,**](addresspair.md) que inclui os pares de endereços que o driver avalia. Todos os pares de endereços são avaliados como uma instrução OR lógica (ADDRESSPAIR 1 \| \| ADDRESSPAIR 2). Você pode incluir um máximo de oito pares de endereços em um filtro de captura.
 
  
 

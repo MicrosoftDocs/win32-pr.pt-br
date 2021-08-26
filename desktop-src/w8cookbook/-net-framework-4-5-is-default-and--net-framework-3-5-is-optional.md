@@ -4,12 +4,12 @@ description: .NET Framework 4.5 é padrão e .NET Framework 3.5 é opcional
 ms.assetid: 19B53C82-812A-49AC-87C6-C08E7C199208
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e875f7508bc0940689afde5eb9b3f00407dd2c7dd70e35de52fe580717c8ad53
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 18b45aef294e035f5fb7e647c49b22206ac8aadd
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119549786"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122883130"
 ---
 # <a name="net-framework-45-is-default-and-net-framework-35-is-optional"></a>.NET Framework 4.5 é padrão e .NET Framework 3.5 é opcional
 
@@ -18,7 +18,7 @@ ms.locfileid: "119549786"
 **Clientes** Windows 8     
 **Servidores** Windows Server 2012     
 
-## <a name="description"></a>Descrição
+## <a name="description"></a>Description
 
 .NET Framework 4.5 está habilitado por padrão no Windows 8. Windows 8 não inclui o .NET 3.5 por padrão, mas os arquivos do .NET 3.5 estão disponíveis na mídia de instalação do Windows 8 como um recurso opcional.
 
@@ -26,7 +26,7 @@ Se o usuário estiver atualizando do Windows 7 para o Windows 8, o .NET Framewor
 
 ## <a name="manifestation"></a>Manifestação
 
-Se o usuário executar uma instalação limpa do Windows 8 e, em seguida, instalar aplicativos que exigem o .NET Framework 3.5 (ou 2.0), ele disparará uma solicitação para os arquivos .NET 3.5 necessários. Normalmente, os arquivos ausentes serão baixados da Atualização do Windows (depois de pedir permissão ao usuário), mas se o acesso à atualização do Windows não for possível, a habilitação do .NET Framework 3.5 falhará, a menos que uma fonte alternativa para os arquivos ausentes tenha sido especificada.
+Se o usuário executar uma instalação limpa do Windows 8 e, em seguida, instalar aplicativos que exigem o .NET Framework 3.5 (ou 2.0), ele disparará uma solicitação para os arquivos .NET 3.5 necessários. Normalmente, os arquivos ausentes serão baixados da atualização do Windows (depois de pedir permissão ao usuário), mas se o acesso à atualização do Windows não for possível, a habilitação do .NET Framework 3.5 falhará, a menos que uma fonte alternativa para os arquivos ausentes tenha sido especificada.
 
 ## <a name="mitigation"></a>Atenuação
 
@@ -104,9 +104,9 @@ Para máquinas que estão configuradas para usar o WSUS para manutenção, você
 
 
 
-Essa entrada do Registro também pode ser definida por meio do Política de Grupo (Política de Computador Local -> Configuração do Computador -> Modelos Administrativos -> System. Selecione a configuração Especificar configurações para instalação de componente opcional e reparo de componente .
+Essa entrada do Registro também pode ser definida por meio de Política de Grupo (Política de Computador Local -> Configuração do Computador -> Modelos Administrativos -> System. Selecione a configuração Especificar configurações para instalação de componente opcional e reparo de componente .
 
-Se você selecionar Contatar Windows Atualizar diretamente para baixar o conteúdo de reparo em vez do Windows Server Update Services (WSUS), qualquer tentativa de adicionar recursos do Windows (por exemplo, .NET Framework 3.5) ou recursos de reparo disparará downloads de arquivos do Windows Update. Os computadores de destino exigem acesso à Internet e AO WU para essa opção. As operações de manutenção normais continuarão a usar o WSUS se ele tiver sido configurado como uma origem.
+Se você selecionar Contatar Windows Atualizar diretamente para baixar o conteúdo de reparo em vez do WSUS (Windows Server Update Services), qualquer tentativa de adicionar recursos do Windows (por exemplo, .NET Framework 3.5) ou recursos de reparo disparará downloads de arquivos do Windows Update. Os computadores de destino exigem acesso à Internet e AO WU para essa opção. As operações de manutenção normais continuarão a usar o WSUS se ele tiver sido configurado como uma origem.
 
 **Uma observação sobre como definir o local de origem local por meio de entradas do Registro**
 
@@ -120,16 +120,16 @@ Há suporte para esta entrada do Registro:
 <thead>
 <tr class="header">
 <th>Entrada</th>
-<th>Tipo</th>
-<th>Descrição</th>
+<th>Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Caminho de origem local</td>
-<td>Reg_expand_sz</td>
+<td>REG_EXPAND_SZ</td>
 <td>Caminho(s) de origem local a ser usado por padrão. Vários caminhos podem ser especificados; eles devem ser separados por ; . Os locais serão pesquisados na ordem em que são especificados. <br/> Os locais de origem locais especificados na linha de comando do DISM têm precedência sobre os locais especificados nesta entrada do Registro. Os locais de pasta podem ser especificados nesta entrada do Registro. <br/> Os WIMs podem ser usados, mas o caminho deve ser para o arquivo WIM; não há necessidade de montá-lo, por exemplo: <br/> <dl> wim: \\ machine\share\file.wim:1<br />
-</dl> Observe o 1 no final. Você deve especificar o índice numérico da imagem que deseja usar no arquivo WIM. <br/> Para um WIM montado, o caminho de origem precisa se referir ao diretório do Windows da imagem montada, em vez do ponto de montagem (por exemplo: /source: \windows em vez <mount_point> de /source: <mount_point> ). <br/></td>
+</dl> Observe o 1 no final. Você deve especificar o índice numérico da imagem que deseja usar no arquivo WIM. <br/> Para um WIM montado, o caminho de origem precisa se referir ao diretório do Windows da imagem montada, em vez do ponto de montagem (por exemplo: /source: mount_point \windows em vez &lt; &gt; de /source: &lt; mount_point &gt; ). <br/></td>
 </tr>
 </tbody>
 </table>

@@ -4,12 +4,12 @@ ms.assetid: 1e2cd767-685b-47d8-9020-a0a5dda63506
 title: JobRollCutAtEndOfJob
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 11fdb973f3fda9fea28f64f0edb232910f2d2201
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 012ba13de0106f5132f0f42f385e8574f6254c86d6504c88b9fd18909b0a8473
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112408659"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120112346"
 ---
 # <a name="jobrollcutatendofjob"></a>JobRollCutAtEndOfJob
 
@@ -25,7 +25,7 @@ Descreve o método de corte para papel de rolagem. O roll deve ser cortado no fi
 
 
 
-| Name | Valor |
+| Nome | Valor |
 |----------------------------|--------------------|
 | Tipo de elemento <br/>   | Recurso<br/> |
 | Prefixo de definição de scoping <br/> | Trabalho<br/>     |
@@ -70,7 +70,7 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 
 ## <a name="extensible-markup-language-xml-content"></a>linguagem XML conteúdo (XML)
 
-As palavras-chave public Print Schema são definidas no https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords namespace . O conteúdo linguagem XML XML (public linguagem XML) para essa palavra-chave é definido abaixo:
+As palavras-chave public Print Schema são definidas no https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords namespace . O conteúdo linguagem XML xml público para essa palavra-chave está definido abaixo:
 
 ``` syntax
 <psf:Feature name="psk:JobRollCutAtEndOfJob">

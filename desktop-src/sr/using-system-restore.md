@@ -1,23 +1,23 @@
 ---
-title: Usando a restauração do sistema
+title: Usando Restauração do Sistema
 description: Os exemplos a seguir demonstram como criar e cancelar pontos de restauração usando a função SRSetRestorePoint.
 ms.assetid: 98c79305-3659-4d1a-8165-bb6e451e2d1e
 keywords:
-- Restauração do sistema, usando
+- Restauração do Sistema, usando
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4fd19e3a90cfdc766a62bdf20e2e4027e1e4c5ba
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 2f707609dd844941402c282b52430eb56ee7ff481f23b8dc9aedbae04d6e3b12
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366310"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120111256"
 ---
-# <a name="using-system-restore"></a>Usando a restauração do sistema
+# <a name="using-system-restore"></a>Usando Restauração do Sistema
 
-Os exemplos a seguir demonstram como criar e cancelar pontos de restauração usando a função [**SRSetRestorePoint**](/windows/desktop/api/SRRestorePtAPI/nf-srrestoreptapi-srsetrestorepointa) .
+Os exemplos a seguir demonstram como criar e cancelar pontos de restauração usando a [**função SRSetRestorePoint.**](/windows/desktop/api/SRRestorePtAPI/nf-srrestoreptapi-srsetrestorepointa)
 
-A primeira etapa para usar o uso da restauração do sistema é configurar as chamadas COM para [**CoInitializeEx**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex) e [**CoInitializeSecurity**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializesecurity). Isso é necessário para qualquer processo que use a função [**SRSetRestorePoint**](/windows/desktop/api/SRRestorePtAPI/nf-srrestoreptapi-srsetrestorepointa) . O NetworkService, o LocalService e o sistema devem ser permitidos para fazer chamadas para o processo. A seguinte função **InitializeCOMSecurity** é um exemplo de como inicializar a segurança com. Talvez seja necessário modificar os parâmetros para a função **CoInitializeSecurity** para seu aplicativo.
+A primeira etapa para usar o Restauração do Sistema é configurar as chamadas COM para [**CoInitializeEx**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex) e [**CoInitializeSecurity**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializesecurity). Isso é necessário para qualquer processo que use a [**função SRSetRestorePoint.**](/windows/desktop/api/SRRestorePtAPI/nf-srrestoreptapi-srsetrestorepointa) O NetworkService, o LocalService e o Sistema devem ter permissão para fazer chamadas ao processo. A função **InitializeCOMSecurity** a seguir é um exemplo de como inicializar a segurança COM. Talvez seja necessário modificar os parâmetros para a **função CoInitializeSecurity** para seu aplicativo.
 
 
 ```C++
@@ -349,7 +349,7 @@ exit:
 
 
 
-## <a name="example-2-create-and-cancel-a-restore-point"></a>Exemplo 2: criar e cancelar um ponto de restauração.
+## <a name="example-2-create-and-cancel-a-restore-point"></a>Exemplo 2: Criar e cancelar um ponto de restauração.
 
 
 ```C++
@@ -470,6 +470,6 @@ exit:
 
 
 
- 
+ 
 
- 
+ 

@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 370d4ad2dac0af41e65292819f97a688e2a68a1e
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 945d730538eb225c2e932ac9018dcd0fc6594970
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104087678"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122627612"
 ---
 # <a name="span-idvspixenginedescriptorheaprecordspandescriptorheaprecord-structure"></a><span id="vspixengine.descriptorheaprecord"></span>Estrutura DescriptorHeapRecord
 
@@ -42,7 +42,7 @@ Uma matriz de informações de heap de descritor indexada usando a enumeração 
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>parâmetro</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine. h</td></tr></tbody></table>
 
  
 
