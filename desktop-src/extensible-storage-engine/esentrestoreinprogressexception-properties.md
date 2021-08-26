@@ -1,25 +1,25 @@
 ---
-description: 'Saiba mais sobre: Propriedades de EsentRestoreInProgressException'
-title: Propriedades de EsentRestoreInProgressException
+description: 'Saiba mais sobre: propriedades EsentRestoreInProgressException'
+title: Propriedades EsentRestoreInProgressException
 TOCTitle: EsentRestoreInProgressException properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.EsentRestoreInProgressException
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentrestoreinprogressexception_properties(v=EXCHG.10)
 ms:contentKeyID: 55102632
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 8f7669fa9fb09c10f1edb40c7a615946daaca5ad
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 78228eb4d91ee161b92f16967fb87e9217fe4a87da4230ed66892bc34739e4b7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104563443"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120018476"
 ---
-# <a name="esentrestoreinprogressexception-properties"></a>Propriedades de EsentRestoreInProgressException
+# <a name="esentrestoreinprogressexception-properties"></a>Propriedades EsentRestoreInProgressException
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo [EsentRestoreInProgressException](./esentrestoreinprogressexception-class.md) expõe os membros a seguir.
+O [tipo EsentRestoreInProgressException](./esentrestoreinprogressexception-class.md) expõe os membros a seguir.
 
 ## <a name="properties"></a>Propriedades
 
@@ -40,16 +40,16 @@ O tipo [EsentRestoreInProgressException](./esentrestoreinprogressexception-class
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn274313(v=exchg.10).md">Erro</a></td>
-<td>Obtém o erro de ESENT subjacente para esta exceção. (Herdado de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.)</td>
+<td>Obtém o erro Esent subjacente para essa exceção. (Herdado de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">HelpLink</a></td>
+<td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">Helplink</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.protproperty(exchg.10).gif" title="Propriedade protegida" alt="Protected property" /></td>
-<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">Resultado</a></td>
+<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">HResult</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
@@ -69,7 +69,7 @@ O tipo [EsentRestoreInProgressException](./esentrestoreinprogressexception-class
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">Pilha</a></td>
+<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">StackTrace</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
@@ -89,4 +89,4 @@ Parte superior
 
 [Classe EsentRestoreInProgressException](./esentrestoreinprogressexception-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

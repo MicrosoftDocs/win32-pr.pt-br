@@ -4,29 +4,29 @@ description: Sobre os objetos Error e ErrorItem
 ms.assetid: 187f6835-3101-45db-87bd-930d222165ce
 keywords:
 - Windows Media Player, objeto de erro
-- Modelo de objeto do Windows Media Player, objeto de erro
+- modelo de objeto Windows Media Player, objeto de erro
 - modelo de objeto, objeto de erro
-- Controle ActiveX do Windows Media Player, objeto de erro
-- Controle ActiveX, objeto de erro
-- Controle ActiveX móvel do Windows Media Player, objeto de erro
-- Windows Media Player Mobile, objeto de erro
+- controle de ActiveX de Windows Media Player, objeto de erro
+- controle de ActiveX, objeto de erro
+- Windows Media Player controle de ActiveX móvel, objeto de erro
+- Windows Media Player Celular, objeto de erro
 - Objeto de erro
 - Windows Media Player, objeto ErrorItem
-- Modelo de objeto do Windows Media Player, objeto ErrorItem
+- modelo de objeto Windows Media Player, objeto ErrorItem
 - modelo de objeto, objeto ErrorItem
-- Controle ActiveX do Windows Media Player, objeto ErrorItem
-- Controle ActiveX, objeto ErrorItem
-- Controle ActiveX móvel do Windows Media Player, objeto ErrorItem
+- Windows Media Player ActiveX controle, objeto ErrorItem
+- controle de ActiveX, objeto ErrorItem
+- Windows Media Player controle de ActiveX móvel, objeto ErrorItem
 - Windows Media Player Mobile, objeto ErrorItem
 - Objeto ErrorItem
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 23064670f13229aca84ae6dc86cf27cf34abbc56
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 84dcd8e0961007c185640b32ac53d249d2e739ca5e1aa4247a6735e09b2a3242
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292299"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120004396"
 ---
 # <a name="about-the-error-and-erroritem-objects"></a>Sobre os objetos Error e ErrorItem
 
@@ -63,9 +63,9 @@ player.error.webHelp();
 [**Modelo de objeto do Player para linguagens de script**](player-object-model-for-scripting-languages.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

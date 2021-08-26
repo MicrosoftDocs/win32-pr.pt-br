@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4f7b52e211d155b92a9917670682af735eedf9fc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 67714d720cf559d66b2f253e2b13c630877d4421462cb4c1e5de59e574687c61
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105766483"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120018481"
 ---
 # <a name="esentresourceexception-constructor-serializationinfo-streamingcontext"></a>Construtor EsentResourceException (SerializationInfo, StreamingContext)
 
-Inicializa uma nova instância da classe EsentResourceException. Esse construtor é usado para desserializar uma exceção serializada.
+Inicializa uma nova instância da classe EsentResourceException. Esse construtor é usado para desserlizar uma exceção serializada.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -59,14 +59,14 @@ protected EsentResourceException(
 #### <a name="parameters"></a>Parâmetros
 
   - informações  
-    Tipo: [System. Runtime. Serialization. SerializationInfo](/dotnet/api/system.runtime.serialization.serializationinfo)  
+    Tipo: [System.Runtime.Serialization.SerializationInfo](/dotnet/api/system.runtime.serialization.serializationinfo)  
     
-    Os dados necessários para desserializar o objeto.
+    Os dados necessários para desterlizar o objeto.
 
 <!-- end list -->
 
   - contexto  
-    Tipo: [System. Runtime. Serialization. StreamingContext](/dotnet/api/system.runtime.serialization.streamingcontext)  
+    Tipo: [System.Runtime.Serialization.StreamingContext](/dotnet/api/system.runtime.serialization.streamingcontext)  
     
     O contexto de desserialização.
 
@@ -76,8 +76,8 @@ protected EsentResourceException(
 
 [Classe EsentResourceException](./esentresourceexception-class.md)
 
-[Membros do EsentResourceException](./esentresourceexception-members.md)
+[Membros EsentResourceException](./esentresourceexception-members.md)
 
-[Sobrecarga de EsentResourceException](./esentresourceexception-constructor.md)
+[Sobrecarga EsentResourceException](./esentresourceexception-constructor.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

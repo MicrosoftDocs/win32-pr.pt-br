@@ -1,9 +1,9 @@
 ---
-title: Elemento Fragment
-description: O elemento Fragment especifica uma condição da consulta que seleciona itens da biblioteca. As condições são especificadas por cadeias de caracteres de condição. Uma cadeia de caracteres de condição normalmente tem uma parte do nome, uma parte da condição e uma parte do valor.
+title: Elemento fragment
+description: O elemento fragment especifica uma condição da consulta que seleciona itens da biblioteca. As condições são especificadas por cadeias de caracteres de condição. Uma cadeia de caracteres de condição normalmente tem uma parte de nome, uma parte de condição e uma parte de valor.
 ms.assetid: 1575318f-8527-42ba-9c2f-9993a60987d7
 keywords:
-- Elemento de fragmento Windows Media Player
+- elemento fragment Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: da4cd18c6286cf2439e310b4e797f6978f3b2395
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1010b269302f88f163232bcaf3e37111e5fc219944ff1d141c1189e119bba05a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105763345"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120003696"
 ---
-# <a name="fragment-element"></a>Elemento Fragment
+# <a name="fragment-element"></a>Elemento fragment
 
-O elemento **Fragment** especifica uma condição da consulta que seleciona itens da biblioteca. As condições são especificadas por cadeias de caracteres de condição. Uma cadeia de caracteres de condição normalmente tem uma parte do nome, uma parte da condição e uma parte do valor.
+O **elemento** fragment especifica uma condição da consulta que seleciona itens da biblioteca. As condições são especificadas por cadeias de caracteres de condição. Uma cadeia de caracteres de condição normalmente tem uma parte de nome, uma parte de condição e uma parte de valor.
 
 ``` syntax
 <fragment
@@ -35,7 +35,7 @@ O elemento **Fragment** especifica uma condição da consulta que seleciona iten
 
 <dl> <dt>
 
-<span id="name__required______________"></span><span id="NAME__REQUIRED______________"></span>**nome** (obrigatório) 
+<span id="name__required______________"></span><span id="NAME__REQUIRED______________"></span>**name** (obrigatório) 
 </dt> <dd>
 
 Uma parte de uma cadeia de caracteres de condição. Consulte Observações.
@@ -48,7 +48,7 @@ Uma parte de uma cadeia de caracteres de condição. Consulte Observações.
 
 | Hierarquia | Elementos                                                               |
 |-----------|------------------------------------------------------------------------|
-| Pai    | [Filtrar](filter-element.md), [sourceFilter](sourcefilter-element.md) |
+| Pai    | [filter](filter-element.md), [sourceFilter](sourcefilter-element.md) |
 | Filho     | [argument](argument-element.md)                                       |
 
 
@@ -57,7 +57,7 @@ Uma parte de uma cadeia de caracteres de condição. Consulte Observações.
 
 ## <a name="remarks"></a>Comentários
 
-Determinadas cadeias de caracteres de condição têm uma parte de atributo de metadados, uma parte de condição e uma parte de valor. Por exemplo, na cadeia de caracteres de condição "o artista do álbum é Joe", a parte do atributo de metadados é "artista do álbum", a parte da condição é "is" e a parte do valor é "Joe".
+Determinadas cadeias de caracteres de condição têm uma parte de atributo de metadados, uma parte de condição e uma parte de valor. Por exemplo, na cadeia de caracteres de condição "Album Artist Is Joe", a parte do atributo de metadados é "Album Artist", a parte da condição é "Is" e a parte do valor é "Joe".
 
 Exemplo:
 
@@ -71,15 +71,15 @@ Exemplo:
 
 
 
-Para cadeias de caracteres de condição desse tipo, a tabela a seguir mostra os possíveis atributos de metadados, possíveis condições e valores possíveis:
+Para cadeias de caracteres de condição desse tipo, a tabela a seguir mostra os possíveis atributos de metadados, as possíveis condições e os valores possíveis:
 
 
 
 | Atributo de metadados                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | Condições possíveis                                                                                             | Valores possíveis                                                                                                                                                                                                                                                                                                   |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Artista ActorAlbum<br/> Título do álbum<br/> Autor<br/> Legenda<br/> Canal<br/> Compositor<br/> Conductor<br/> Provedor de conteúdo<br/> Gênero do provedor de conteúdo<br/> Artista participante<br/> Texto de direitos autorais<br/> Diretor<br/> Episódio<br/> Tipo de arquivo<br/> Gênero<br/> Chave<br/> Palavras-chave<br/> Idioma<br/> Espírito<br/> Classificação de pais<br/> Período<br/> Produtor<br/> Provedor<br/> Publisher<br/> Série<br/> Nome da estação<br/> Subgênero<br/> Subtítulo<br/> Título<br/> Gravador<br/> | EqualsDoes não é igual a<br/> É<br/> Não é<br/> Contém<br/> Não contém<br/> | Qualquer valor de cadeia de caracteres                                                                                                                                                                                                                                                                                                  |
-| Taxa de bits (em quilobytes por segundo).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | EqualsDoes não é igual a<br/> É<br/> Não é<br/> Contém<br/> Não contém<br/> | 4864<br/> 96<br/> 128<br/> 160<br/> 192<br/> 256<br/> 300<br/> 500<br/> 750<br/> 1000<br/> 1500<br/> 3000<br/> 4500<br/> 6000<br/> 7500<br/>                                                                            |
-| Tipo de mídia secundária                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | EqualsDoes não é igual a<br/> É<br/> Não é<br/> Contém<br/> Não contém<br/> | Áudio: NewsAudio: talk show<br/> Áudio: livros de áudio<br/> Áudio: palavra falada em áudio<br/> Vídeo: notícias<br/> Vídeo: programa de conversa<br/> Vídeo: vídeo doméstico<br/> Vídeo: filme/filme<br/> Vídeo: programa de TV<br/> Vídeo: vídeo corporativo<br/> Vídeo: vídeo de música<br/> |
+| AtorAlbum Artist<br/> Título do álbum<br/> Autor<br/> Legenda<br/> Canal<br/> Compositor<br/> Condutor<br/> Provedor de Conteúdo<br/> Gênero do provedor de conteúdo<br/> Artista colaborador<br/> Texto de direitos autorais<br/> Diretor<br/> Episódio<br/> Tipo de arquivo<br/> Gênero<br/> Chave<br/> Palavras-chave<br/> Idioma<br/> Humor<br/> Classificação dos pais<br/> Período<br/> Produtor<br/> Provedor<br/> Publisher<br/> Série<br/> Nome da estação<br/> Subgênero<br/> Subtítulo<br/> Título<br/> Gravador<br/> | EqualsDoes não é igual a<br/> É<br/> Não é<br/> Contém<br/> Não contém<br/> | Qualquer valor de cadeia de caracteres                                                                                                                                                                                                                                                                                                  |
+| Taxa de bits (em quilobytes por segundo.)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | EqualsDoes não é igual a<br/> É<br/> Não é<br/> Contém<br/> Não contém<br/> | 4864<br/> 96<br/> 128<br/> 160<br/> 192<br/> 256<br/> 300<br/> 500<br/> 750<br/> 1000<br/> 1500<br/> 3000<br/> 4500<br/> 6000<br/> 7500<br/>                                                                            |
+| Tipo de mídia secundária                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | EqualsDoes não é igual a<br/> É<br/> Não é<br/> Contém<br/> Não contém<br/> | Áudio: NewsAudio: Talk Show<br/> Áudio: Audio Books<br/> Áudio: Palavra Falada em Áudio<br/> Vídeo: Notícias<br/> Vídeo: Talk Show<br/> Vídeo: Home Video<br/> Vídeo: Filme/Filme<br/> Vídeo: programa de TV<br/> Vídeo: Vídeo corporativo<br/> Vídeo: vídeo de música<br/> |
 | Altura da imagem do tamanho do arquivo (em KB)<br/> Largura da imagem<br/> Contagem de execuções: totais da tarde<br/> Contagem de execuções: totais da noite<br/> Contagem de execuções: totais da manhã<br/> Contagem de execuções: totais da noite<br/> Contagem de execuções: total geral<br/> Contagem de execuções: total da semana<br/> Contagem de execuções: total de fim de semana<br/>                                                                                                                                                                                                                                                                                                                  | É menor que o maior que<br/> É<br/> Não é<br/>                                          | Qualquer número                                                                                                                                                                                                                                                                                                        |
 | Data de transmissão codificada<br/> Data de gravação<br/> Data de início<br/> Ano de lançamento<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | É antes de<br/> É<br/> Não é<br/>                                                    | YesterdayLast semana<br/> Mês passado<br/> 6 meses<br/> 1 ano<br/> 2 anos<br/> 5 anos<br/> 2000s<br/> 90<br/> anos<br/> 70<br/> anos<br/> 1950s<br/> 1940s<br/>                                                            |
 | Data de adição                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | É antes de<br/> É<br/> Não é<br/>                                                    | YesterdayLast semana<br/> Mês passado<br/> 6 meses<br/> 1 ano<br/> 2 anos<br/> 5 anos<br/>                                                                                                                                                                                   |
@@ -114,13 +114,13 @@ Para cadeias de caracteres de condição desse tipo, a tabela a seguir mostra os
 | Limitador                 | Números possíveis | Formatos possíveis                |
 |-------------------------|------------------|---------------------------------|
 | Limitar tamanho total a     | Qualquer número       | Kilobytes, megabytes, gigabytes |
-| Limitar duração total a | Qualquer número       | Segundos, minutos, horas, dias   |
+| Limitar duração total a | Qualquer número       | Segundos, Minutos, Horas, Dias   |
 
 
 
  
 
-Determinadas cadeias de caracteres de condição têm uma parte de limite e uma parte de número. Por exemplo, na cadeia de caracteres de condição "limitar número de itens a 25", a parte do limitador é "limitar número de itens" e a parte de número é "25".
+Determinadas cadeias de caracteres de condição têm uma parte do limitador e uma parte de número. Por exemplo, na cadeia de caracteres de condição "Limitar Número de Itens a 25", a parte do limitador é "Número limite de itens" e a parte do número é "25".
 
 Exemplo:
 
@@ -139,13 +139,13 @@ Para cadeias de caracteres de condição desse tipo, a tabela a seguir mostra o 
 
 | Limitador               | Números possíveis |
 |-----------------------|------------------|
-| Limitar o número de itens | Qualquer número       |
+| Número limite de itens | Qualquer número       |
 
 
 
  
 
-Determinadas cadeias de caracteres de condição têm uma parte de proteção e uma parte da condição. Por exemplo, na cadeia de caracteres de condição "a proteção está presente", a parte de proteção é "proteção" e a parte da condição é "is".
+Determinadas cadeias de caracteres de condição têm uma parte de proteção e uma parte de condição. Por exemplo, na cadeia de caracteres de condição "Proteção Está presente", a parte de proteção é "Proteção" e a parte da condição é "Is".
 
 Exemplo:
 
@@ -170,7 +170,7 @@ Para cadeias de caracteres de condição desse tipo, a tabela a seguir mostra as
 
  
 
-Há um tipo de elemento **Fragment** que não contém uma cadeia de caracteres de condição. Se o atributo Name de um elemento **Fragment** for "randomizar ordem de reprodução", o elemento **Fragment** não conterá nenhum elemento **Argument** . Esse elemento **Fragment** instrui o Player a reproduzir a lista em ordem aleatória.
+Há um tipo de elemento **de fragmento** que não contém uma cadeia de caracteres de condição. Se o atributo name de um **elemento de fragmento** for "Ordem de Reprodução Aleatória", o elemento de **fragmento** não conterá **elementos de** argumento. Esse **elemento** de fragmento instrui o jogador a reproduzir a lista em ordem aleatória.
 
 Exemplo:
 
@@ -182,7 +182,7 @@ Exemplo:
 
 
 
-Determinadas cadeias de caracteres de condição têm uma parte de classificação, uma parte de valor e uma parte da condição. Por exemplo, na cadeia de caracteres de condição "classificar por ordem crescente de título", a parte de classificação é "classificar por", a parte de valor é "título" e a parte da condição é "crescente". Observe que, nesse caso, a parte de valor é um atributo de metadados.
+Determinadas cadeias de caracteres de condição têm uma parte de classificação, uma parte de valor e uma parte de condição. Por exemplo, na cadeia de caracteres de condição "Classificar por ordem crescente de título", a parte de classificação é "Classificar por", a parte do valor é "Título" e a parte da condição é "Crescente". Observe que, nesse caso, a parte do valor é um atributo de metadados.
 
 Exemplo:
 
@@ -196,29 +196,29 @@ Exemplo:
 
 
 
-Para cadeias de caracteres de condição desse tipo, a tabela a seguir mostra os valores e condições possíveis.
+Para cadeias de caracteres de condição desse tipo, a tabela a seguir mostra os possíveis valores e condições.
 
 
 
 | Parte de classificação | Valores possíveis                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Condições possíveis                              |
 |--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
-| Classificar Por      | GenreTitle<br/> Data de adição<br/> Classificação automática<br/> Minha classificação<br/> Contagem de execuções: total geral<br/> Contagem de execuções: totais da manhã<br/> Contagem de execuções: totais da tarde<br/> Contagem de execuções: totais da noite<br/> Contagem de execuções: totais da noite<br/> Contagem de execuções: total da semana<br/> Contagem de execuções: total de fim de semana<br/> Ator<br/> Subtítulo<br/> Nome da estação<br/> Canal<br/> Tempo de difusão<br/> Diretor<br/> Ano de lançamento<br/> Gravador<br/> Produtor<br/> Data de gravação<br/> Data de codificação<br/> Taxa de bits<br/> Proteção<br/> | AscendingDescending<br/> Aleatório<br/> |
+| Classificar Por      | GenreTitle<br/> Data de adição<br/> Classificação automática<br/> Minha Classificação<br/> Contagem de reprodução: total geral<br/> Contagem de reprodução: totais de manhã<br/> Contagem de reprodução: totais de tarde<br/> Contagem de reprodução: totais da noite<br/> Contagem de reprodução: totais de noite<br/> Contagem de reprodução: Total de dias da semana<br/> Contagem de reprodução: fim de semana total<br/> Ator<br/> Subtítulo<br/> Nome da estação<br/> Canal<br/> Hora da difusão<br/> Diretor<br/> Ano de lançamento<br/> Gravador<br/> Produtor<br/> Data registrada<br/> Data codificada<br/> Taxa de bits<br/> Proteção<br/> | AscendingDescending<br/> Aleatório<br/> |
 
 
 
  
 
-Quando você usa um elemento de fragmento para classificar uma lista de reprodução, deve classificar em um atributo de metadados que se aplica ao tipo de itens de mídia que você está classificando. Por exemplo, se você estiver classificando itens de música, não poderá classificar no ator. A tabela a seguir mostra quais atributos de metadados você pode usar para classificar quais tipos de mídia.
+Ao usar um elemento de fragmento para classificar uma playlist, você deve classificar um atributo de metadados que se aplica ao tipo de itens de mídia que você está classificação. Por exemplo, se você estiver classificação de itens de música, não poderá classificar em Ator. A tabela a seguir mostra quais atributos de metadados você pode usar para classificar quais tipos de mídia.
 
 
 
 | Típo de mídia  | Atributos de metadados possíveis                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Música       | GenreTitle<br/> Data de adição<br/> Classificação automática<br/> Minha classificação<br/> Contagem de execuções: total geral<br/> Contagem de execuções: totais da manhã<br/> Contagem de execuções: totais da tarde<br/> Contagem de execuções: totais da noite<br/> Contagem de execuções: totais da noite<br/> Contagem de execuções: total da semana<br/> Contagem de execuções: total de fim de semana<br/>                                                                                                                                                                                                                                                                                            |
-| Vídeo ou TV | GenreActor<br/> Subtítulo<br/> Título<br/> Data de adição<br/> Classificação automática<br/> Nome da estação<br/> Canal<br/> Tempo de difusão<br/> Diretor<br/> Ano de lançamento<br/> Gravador<br/> Produtor<br/> Data de gravação<br/> Data de codificação<br/> Taxa de bits<br/> Minha classificação<br/> Proteção<br/> Contagem de execuções: total geral<br/> Contagem de execuções: totais da manhã<br/> Contagem de execuções: totais da tarde<br/> Contagem de execuções: totais da noite<br/> Contagem de execuções: totais da noite<br/> Contagem de execuções: total da semana<br/> Contagem de execuções: total de fim de semana<br/> |
+| Música       | GenreTitle<br/> Data de adição<br/> Classificação automática<br/> Minha Classificação<br/> Contagem de reprodução: total geral<br/> Contagem de reprodução: totais de manhã<br/> Contagem de reprodução :Totais de tarde<br/> Contagem de reprodução :Totais da noite<br/> Contagem de reprodução :Totais de noite<br/> Contagem de reprodução :Total weekday<br/> Contagem de reprodução: fim de semana total<br/>                                                                                                                                                                                                                                                                                            |
+| Vídeo ou TV | GenreActor<br/> Subtítulo<br/> Título<br/> Data de adição<br/> Classificação automática<br/> Nome da estação<br/> Canal<br/> Hora da difusão<br/> Diretor<br/> Ano de lançamento<br/> Gravador<br/> Produtor<br/> Data registrada<br/> Data codificada<br/> Taxa de bits<br/> Minha Classificação<br/> Proteção<br/> Contagem de reprodução: total geral<br/> Contagem de reprodução: totais de manhã<br/> Contagem de reprodução: totais de tarde<br/> Contagem de reprodução: totais da noite<br/> Contagem de reprodução: totais de noite<br/> Contagem de reprodução: Total de dias da semana<br/> Contagem de reprodução: fim de semana total<br/> |
 | Opção       | TitleDate adicionado<br/> Taxa de bits<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | Photo       | Título                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| Outro       | GenreTitle<br/> Data de adição<br/> Classificação automática<br/> Minha classificação<br/> Taxa de bits<br/> Contagem de execuções: total geral<br/> Contagem de execuções: totais da manhã<br/> Contagem de execuções: totais da tarde<br/> Contagem de execuções: totais da noite<br/> Contagem de execuções: totais da noite<br/> Contagem de execuções: total da semana<br/> Contagem de execuções: total de fim de semana<br/>                                                                                                                                                                                                                                                                    |
+| Outro       | GenreTitle<br/> Data de adição<br/> Classificação automática<br/> Minha Classificação<br/> Taxa de bits<br/> Contagem de reprodução: total geral<br/> Contagem de reprodução: totais de manhã<br/> Contagem de reprodução: totais de tarde<br/> Contagem de reprodução: totais da noite<br/> Contagem de reprodução: totais de noite<br/> Contagem de reprodução: Total de dias da semana<br/> Contagem de reprodução: fim de semana total<br/>                                                                                                                                                                                                                                                                    |
 
 
 
@@ -230,7 +230,7 @@ Quando você usa um elemento de fragmento para classificar uma lista de reprodu�
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versão<br/> | Windows Media Player 9 Series ou posterior<br/> |
+| Versão<br/> | Windows Media Player série 9 ou posterior<br/> |
 
 
 
@@ -238,16 +238,16 @@ Quando você usa um elemento de fragmento para classificar uma lista de reprodu�
 
 <dl> <dt>
 
-[**Elemento Argument**](argument-element.md)
+[**Elemento argument**](argument-element.md)
 </dt> <dt>
 
-[**Elemento Filter**](filter-element.md)
+[**Elemento filter**](filter-element.md)
 </dt> <dt>
 
 [**Elemento sourceFilter**](sourcefilter-element.md)
 </dt> <dt>
 
-[**Referência de elementos da playlist do Windows Media**](windows-media-playlist-elements-reference.md)
+[**Windows Referência de elementos da playlist de mídia**](windows-media-playlist-elements-reference.md)
 </dt> </dl>
 
  

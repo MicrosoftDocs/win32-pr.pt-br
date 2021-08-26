@@ -1,7 +1,7 @@
 ---
 description: Representa uma associação na qual os valores de métrica são coletados para um elemento gerenciado.
 ms.assetid: 00752751-bc27-463b-a4ac-4db8e5040077
-title: Classe CIM_MetricForME
+title: CIM_MetricForME classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,14 +15,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 89c119ad622b778d0402100a64ff15befe623685
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bbab6db5bd02ea4dbab553e758318c5b0b71f525068874cfe49fbbed8d21dfd0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105778597"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120046835"
 ---
-# <a name="cim_metricforme-class"></a>\_Classe CIM MetricForME
+# <a name="cim_metricforme-class"></a>Classe CIM \_ MetricForME
 
 Representa uma associação na qual os valores de métrica são coletados para um elemento gerenciado.
 
@@ -39,42 +39,42 @@ class CIM_MetricForME : CIM_Dependency
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ MetricForME** tem estes tipos de membros:
+A **classe \_ METRICForME cim** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ MetricForME** tem essas propriedades.
+A **classe \_ METRICForME cim** tem essas propriedades.
 
 <dl> <dt>
 
-**Antecedent**
+**Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **CIM \_ managedelement**
+Tipo de dados: **\_ ManagedElement do CIM**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent")
+Qualificadores: [**substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecessor")
 </dt> </dl>
 
 O elemento gerenciado na associação.
 
 </dd> <dt>
 
-**Depende**
+**Dependente**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **CIM \_ BaseMetricValue**
+Tipo de dados: **Cim \_ BaseMetricValue**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependente")
+Qualificadores: [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependente")
 </dt> </dl>
 
 O valor da métrica na associação.
@@ -89,8 +89,8 @@ O valor da métrica na associação.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                                          |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -99,7 +99,7 @@ O valor da métrica na associação.
 
 <dl> <dt>
 
-[**\_Dependência CIM**](cim-dependency.md)
+[**Dependência cim \_**](cim-dependency.md)
 </dt> </dl>
 
  

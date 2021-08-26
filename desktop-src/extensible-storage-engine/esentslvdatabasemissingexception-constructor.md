@@ -24,17 +24,17 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f2137c20ee06a92cdaebb4eb4f9f9f213ca18a2f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0e4caf9cb12069e13acc19b90402cf942016480d53cd32f75a2f7d99a3ef05b9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103662868"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120018456"
 ---
 # <a name="esentslvdatabasemissingexception-constructor"></a>Construtor EsentSLVDatabaseMissingException
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -56,6 +56,6 @@ public EsentSLVDatabaseMissingException()
 
 [Classe EsentSLVDatabaseMissingException](./esentslvdatabasemissingexception-class.md)
 
-[Membros do EsentSLVDatabaseMissingException](./esentslvdatabasemissingexception-members.md)
+[Membros EsentSLVDatabaseMissingException](./esentslvdatabasemissingexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

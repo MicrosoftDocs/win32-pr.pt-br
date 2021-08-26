@@ -4,12 +4,12 @@ ms.assetid: 9b255dfa-3c1d-4707-927d-a2d5f4117f6a
 title: Recuperando contornos de caracteres
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 638193632d4992dfb53f29a3dfe66a858b3e1fb6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d3db9b9200f665088096fdecbffc12866668d093c0c4d5ddb4a1612153873e7a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967591"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120092646"
 ---
 # <a name="retrieving-character-outlines"></a>Recuperando contornos de caracteres
 

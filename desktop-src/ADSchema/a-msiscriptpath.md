@@ -1,11 +1,11 @@
 ---
-title: Atributo MSI-script-Path
-description: O caminho do arquivo de script de anúncio do Microsoft Installer para este aplicativo.
+title: Atributo Msi-Script-Path
+description: O caminho do arquivo para o arquivo de script de anúncio do instalador da Microsoft para este aplicativo.
 ms.assetid: 6ebe172c-42fc-4a36-940e-a48315d6496c
 ms.tgt_platform: multiple
 keywords:
-- MSI-script-Path-esquema de atributo do AD
-- Esquema de AD do atributo msiScriptPath
+- Esquema do AD do atributo Msi-Script-Path
+- Esquema do AD do atributo msiScriptPath
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ecce0bb7c082666136e69be8179cf3c5cdf7a6d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 59558f9d17a52f2e1a4f56e98286d90a4ed80c10416cc96a25b0058bd126549b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086913"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120066726"
 ---
-# <a name="msi-script-path-attribute"></a>Atributo MSI-script-Path
+# <a name="msi-script-path-attribute"></a>Atributo Msi-Script-Path
 
-O caminho do arquivo de script de anúncio do Microsoft Installer para este aplicativo.
+O caminho do arquivo para o arquivo de script de anúncio do instalador da Microsoft para este aplicativo.
 
 
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | MSI-script-Path                             |
-| LDAP-Display-Name | msiScriptPath                               |
+| CN                | Msi-Script-Path                             |
+| Ldap-Display-Name | msiScriptPath                               |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.15                       |
-| System-ID-GUID    | bf967937-0de6-11d0-a285-00aa003049e2        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | bf967937-0de6-11d0-a285-00aa003049e2        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -58,10 +58,10 @@ O caminho do arquivo de script de anúncio do Microsoft Installer para este apli
 | ID do link                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| É de valor único       | True                                                             |
+| Tem valor único       | Verdadeiro                                                             |
 | É indexado             | Falso                                                            |
-| No catálogo global      | Falso                                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                     |
+| No Catálogo Global      | Falso                                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
@@ -79,10 +79,10 @@ O caminho do arquivo de script de anúncio do Microsoft Installer para este apli
 | ID do link                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| É de valor único       | True                                                             |
+| Tem valor único       | Verdadeiro                                                             |
 | É indexado             | Falso                                                            |
-| No catálogo global      | Falso                                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                     |
+| No Catálogo Global      | Falso                                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
@@ -100,10 +100,10 @@ O caminho do arquivo de script de anúncio do Microsoft Installer para este apli
 | ID do link                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| É de valor único       | True                                                             |
+| Tem valor único       | Verdadeiro                                                             |
 | É indexado             | Falso                                                            |
-| No catálogo global      | Falso                                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                     |
+| No Catálogo Global      | Falso                                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
@@ -121,10 +121,10 @@ O caminho do arquivo de script de anúncio do Microsoft Installer para este apli
 | ID do link                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| É de valor único       | True                                                             |
+| Tem valor único       | Verdadeiro                                                             |
 | É indexado             | Falso                                                            |
-| No catálogo global      | Falso                                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                     |
+| No Catálogo Global      | Falso                                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
@@ -142,10 +142,10 @@ O caminho do arquivo de script de anúncio do Microsoft Installer para este apli
 | ID do link                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| É de valor único       | True                                                             |
+| Tem valor único       | Verdadeiro                                                             |
 | É indexado             | Falso                                                            |
-| No catálogo global      | Falso                                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                     |
+| No Catálogo Global      | Falso                                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
@@ -163,10 +163,10 @@ O caminho do arquivo de script de anúncio do Microsoft Installer para este apli
 | ID do link                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| É de valor único       | True                                                             |
+| Tem valor único       | Verdadeiro                                                             |
 | É indexado             | Falso                                                            |
-| No catálogo global      | Falso                                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                     |
+| No Catálogo Global      | Falso                                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |

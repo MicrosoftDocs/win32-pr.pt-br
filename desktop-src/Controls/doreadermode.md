@@ -3,7 +3,7 @@ title: Função doreadermode
 description: Habilita o modo de leitura em uma janela.
 ms.assetid: 8f898cdd-c907-430a-8287-15d88390c756
 keywords:
-- Controles do Windows da função doreadermode
+- controles de Windows da função doreadermode
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d5f5c5863e804cd4bbaab651447e4c6f22dc24a6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 63b71538e41e4b70155da8352e531b620fbe5de7f62746713c3a2a58f3adddf2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104456061"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120002686"
 ---
 # <a name="doreadermode-function"></a>Função doreadermode
 
-\[O **Doreadermode** está disponível por meio do Windows XP com Service Pack 2 (SP2). Ele pode não estar disponível em versões subsequentes.\]
+\[o **doreadermode** está disponível por meio do Windows XP com Service Pack 2 (SP2). Ele pode não estar disponível em versões subsequentes.\]
 
 Habilita o modo de leitura em uma janela.
 
@@ -70,8 +70,8 @@ O modo leitor é ativado por meio de dispositivos com suporte com um clique do m
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Vista, \[ somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                   |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                            |
+| Cliente mínimo com suporte<br/> | Windows vista, somente aplicativos do Windows vista \[ desktop\]<br/>                                                   |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                            |
 | DLL<br/>                      | <dl> <dt>Comctl32.dll (versão 4,72 ou posterior)</dt> </dl> |
 
 

@@ -1,26 +1,26 @@
 ---
-title: Efeito de histograma
+title: Efeito histograma
 description: Use o efeito de histograma para gerar um histograma para o bitmap de entrada com base no número especificado de compartimentos.
 ms.assetid: 458E2334-F383-41DE-9479-601AC3007BF3
 keywords:
-- efeito de histograma
+- efeito histograma
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b654ffb2b830914b00a59490ceb429b5de9c51cb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 08477a832b2dbf758d26a16e78905f8530d4d4525205cbc85e9d138f8b3bded7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369533"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120044398"
 ---
-# <a name="histogram-effect"></a>Efeito de histograma
+# <a name="histogram-effect"></a>Efeito histograma
 
 Use o efeito de histograma para gerar um histograma para o bitmap de entrada com base no número especificado de compartimentos.
 
 O CLSID para esse efeito é CLSID \_ D2D1Histogram.
 
 -   [Exemplo](#example)
--   [Propriedades do efeito](#effect-properties)
+-   [Propriedades de efeito](#effect-properties)
 -   [Seletores de canal](#channel-selectors)
 -   [Saída de dados](#data-output)
 -   [Comentários](#remarks)
@@ -34,7 +34,7 @@ O CLSID para esse efeito é CLSID \_ D2D1Histogram.
 | Antes                                                     |
 |------------------------------------------------------------|
 | ![a imagem antes do efeito.](images/default-before.jpg) |
-| Grafo dos dados de saída do histograma                         |
+| Graph dos dados de saída do histograma                         |
 | ![a imagem após a transformação.](images/33-histogram.png) |
 
 
@@ -66,21 +66,21 @@ hr = histogramEffect->GetValue(D2D1_HISTOGRAM_PROP_HISTOGRAM_OUTPUT,
 
 
 
-## <a name="effect-properties"></a>Propriedades do efeito
+## <a name="effect-properties"></a>Propriedades de efeito
 
-Aqui está a equação para gerar a saída.
+Esta é a equação para gerar a saída.
 
 ![a equação para gerar a saída do efeito de histograma.](images/histogram-formula.png)
 
-*eu* é avaliado de 0 para o número de compartimentos. O efeito gera um histograma para valores de pixel entre 0 e 1. Os valores fora desse intervalo são clamped para o intervalo. O intervalo de um Bucket específico depende do número de buckets. Esse efeito funciona em pixels de bitmap retos. Os canais de cores do bitmap de entrada são divididos pelo canal alfa para computar esse efeito.
+*i* é avaliado de 0 para o número de compartimentos. O efeito gera um histograma para valores de pixel entre 0 e 1. Os valores fora desse intervalo são fixados ao intervalo. O intervalo de um bucket específico depende do número de buckets. Esse efeito funciona em pixels de bitmap retos. Os canais de cores do bitmap de entrada são divididos pelo canal alfa para calcular esse efeito.
 
 
 
 | Nome de exibição e enumeração de índice                                             | Tipo e valor padrão                                                   | Descrição                                                                                                                                                                                   |
 |--------------------------------------------------------------------------------|--------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| NumBins<br/> \_ \_ \_ Compartimentos de número da prop d2d1 histograma \_<br/>                 | UINT32<br/> 256<br/>                                         | Especifica o número de compartimentos usados para o histograma. O intervalo de valores de intensidade que se enquadram em um Bucket específico depende do número de buckets especificados.                              |
-| ChannelSelect<br/> \_ \_ Selecionar canal de prop d2d1 histograma \_ \_<br/>     | \_Seletor de canal d2d1 \_<br/> \_Seletor de canal do d2d1 \_ \_ R<br/> | Especifica o canal usado para gerar o histograma. Esse efeito tem uma única saída de dados correspondente ao canal especificado. Consulte [seletores de canal](#channel-selectors) para obter mais informações. |
-| HistogramOutput<br/> \_Saída de \_ histograma de prop d2d1 histograma \_ \_<br/> | BARRA\[\]<br/> Somente propriedade de saída.<br/>                    | A matriz de saída.                                                                                                                                                                             |
+| NumBins<br/> COMPARTIMENTOS NUM DE \_ \_ PROP DE HISTOGRAMA \_ D2D1 \_<br/>                 | UINT32<br/> 256<br/>                                         | Especifica o número de compartimentos usados para o histograma. O intervalo de valores de intensidade que se enquadram em um bucket específico depende do número de buckets especificados.                              |
+| ChannelSelect<br/> D2D1 SELEÇÃO DE CANAL \_ \_ DE PROP DE \_ HISTOGRAMA \_<br/>     | SELETOR DE CANAL D2D1 \_ \_<br/> D2D1 \_ CHANNEL \_ SELECTOR \_ R<br/> | Especifica o canal usado para gerar o histograma. Esse efeito tem uma única saída de dados correspondente ao canal especificado. Confira [Seletores de canal](#channel-selectors) para obter mais informações. |
+| HistogramOutput<br/> SAÍDA DE \_ \_ HISTOGRAMA DE PROP DE \_ \_ HISTOGRAMA D2D1<br/> | Flutuar\[\]<br/> Somente propriedade de saída.<br/>                    | A matriz de saída.                                                                                                                                                                             |
 
 
 
@@ -92,10 +92,10 @@ Aqui está a equação para gerar a saída.
 
 | Enumeração                | Descrição                                                           |
 |----------------------------|-----------------------------------------------------------------------|
-| \_Seletor de canal do d2d1 \_ \_ R | O efeito gera a saída de histograma com base no canal vermelho.   |
-| \_Seletor de canal d2d1 \_ \_ G | O efeito gera a saída do histograma com base no canal verde. |
-| \_Seletor de canal do d2d1 \_ \_ B | O efeito gera a saída de histograma com base no canal azul.  |
-| \_ \_ Seletor de canal do d2d1 \_ A | O efeito gera a saída de histograma com base no canal alfa. |
+| D2D1 \_ CHANNEL \_ SELECTOR \_ R | O efeito gera a saída de histograma com base no canal vermelho.   |
+| D2D1 \_ CHANNEL \_ SELECTOR \_ G | O efeito gera a saída de histograma com base no canal verde. |
+| SELETOR DE \_ CANAL \_ D2D1 \_ B | O efeito gera a saída de histograma com base no canal azul.  |
+| SELETOR DE CANAL D2D1 \_ \_ \_ A | O efeito gera a saída de histograma com base no canal alfa. |
 
 
 
@@ -103,12 +103,12 @@ Aqui está a equação para gerar a saída.
 
 ## <a name="data-output"></a>Saída de dados
 
-Esse efeito gera um FLOAT \[ \] , com o número de elementos correspondentes ao número de compartimentos especificados. Cada elemento em FLOAT \[ \] é um float. O valor do elemento corresponde ao número de elementos nessa bin.
+Esse efeito saída de um FLOAT \[ \] , com o número de elementos correspondente ao número de compartimentos especificados. Cada elemento no FLOAT \[ \] é um float. O valor do elemento corresponde ao número de elementos nesse compartimento.
 
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> O método [**createeffect**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-createeffect) falhará se o dispositivo não oferecer suporte a DirectCompute e retornar HRESULT = D2DERR \_ recursos de dispositivo insuficientes \_ \_ . Todos os cartões DirectX11 e cartões DirectX10 que dão suporte ao DirectCompute podem usar o efeito.
+> O [**método CreateEffect**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-createeffect) falhará se o dispositivo não der suporte ao DirectCompute e retornar HRESULT = D2DERR \_ INSUFFICIENT DEVICE \_ \_ CAPABILITIES. Todos os cartões DirectX11 e cartões DirectX10 que suportam DirectCompute podem usar o efeito .
 
  
 
@@ -118,10 +118,10 @@ Esse efeito gera um FLOAT \[ \] , com o número de elementos correspondentes ao 
 
 | Requisito | Valor |
 |--------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho do Windows 7 \[ \| aplicativos da Windows Store\] |
-| Servidor mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho do Windows 7 \[ \| aplicativos da Windows Store\] |
-| parâmetro                   | d2d1effects. h                                                                      |
-| Biblioteca                  | d2d1. lib, dxguid. lib                                                               |
+| Cliente mínimo com suporte | Windows 8 e Atualização de plataforma para Windows 7 aplicativos da área de trabalho \[ \| Windows Store\] |
+| Servidor mínimo com suporte | Windows 8 e Atualização de plataforma para Windows 7 aplicativos da área de trabalho \[ \| Windows Store\] |
+| Cabeçalho                   | d2d1effects.h                                                                      |
+| Biblioteca                  | d2d1.lib, dxguid.lib                                                               |
 
 
 

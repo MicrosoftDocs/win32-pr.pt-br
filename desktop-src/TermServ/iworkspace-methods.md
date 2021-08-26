@@ -1,5 +1,5 @@
 ---
-title: Métodos do IWorkspace
+title: Métodos IWorkspace
 description: A interface IWorkspace expõe os métodos a seguir.
 ms.assetid: 10189F81-84BF-45EF-B43F-9F19A2DEF1AB
 ms.tgt_platform: multiple
@@ -12,14 +12,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119989596"
 ---
-# <a name="iworkspace-methods"></a>Métodos do IWorkspace
+# <a name="iworkspace-methods"></a>Métodos IWorkspace
 
 A interface [**IWorkspace**](/windows/desktop/api/workspaceruntime/nn-workspaceruntime-iworkspace) expõe os métodos a seguir.
 
 ## <a name="in-this-section"></a>Nesta seção
 
--   [**Método GetProcessId**](/windows/desktop/api/workspaceruntime/nf-workspaceruntime-iworkspace-getprocessid)
--   [**Método GetWorkspaceNames**](/windows/desktop/api/workspaceruntime/nf-workspaceruntime-iworkspace-getworkspacenames)
+-   [**Método getprocessid**](/windows/desktop/api/workspaceruntime/nf-workspaceruntime-iworkspace-getprocessid)
+-   [**Método getworkspacenames**](/windows/desktop/api/workspaceruntime/nf-workspaceruntime-iworkspace-getworkspacenames)
 -   [**Método StartRemoteApplication**](/windows/desktop/api/workspaceruntime/nf-workspaceruntime-iworkspace-startremoteapplication)
 
  

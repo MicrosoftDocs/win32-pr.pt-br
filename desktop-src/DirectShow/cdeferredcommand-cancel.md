@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 524300da374b10eaac884161bb0195d88f45476d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fa7e957fe97e06c6fb14fe3a9048048e351ac1baf4ff8f4dae25b3cf5863776e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747393"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120043706"
 ---
 # <a name="cdeferredcommandcancel-method"></a>Método CDeferredCommand. Cancel
 
@@ -40,7 +40,7 @@ HRESULT Cancel();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará VFW \_ E \_ já \_ cancelado se **m \_ pQueue** for **nulo**. Retorna um **HRESULT** de [**CCmdQueue:: Remove**](ccmdqueue-remove.md) se a chamada gerar um erro. Retornará S \_ OK se for bem-sucedido.
 
@@ -54,7 +54,7 @@ Essa função de membro implementa o método [**IDeferredCommand:: Cancel**](/wi
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
+| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir Fluxos. h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 

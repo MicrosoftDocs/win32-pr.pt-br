@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 036e2ee10d1ceac6df6a68a35c1da881d1d478b5
-ms.sourcegitcommit: 7ef31bf778e76ce4196205d4c4c632fbdc649805
+ms.openlocfilehash: 845379985a95fe7514d197bc62a97cb67aa1a7f560f136ab8b9cda7caf31560e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "104552629"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120081526"
 ---
 # <a name="glevalcoord2d-function"></a>função glEvalCoord2d
 
@@ -48,7 +48,7 @@ Um valor que é o domínio coordena *u* para a função base definida em uma fun
 
 </dd> <dt>
 
-*l* 
+*v* 
 </dt> <dd>
 
 Um valor que é o domínio coordena *v* para a função base definida em uma função [**glMap2**](glmap2.md) anterior.

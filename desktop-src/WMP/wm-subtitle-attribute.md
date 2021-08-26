@@ -1,9 +1,9 @@
 ---
-title: Atributo do WM/subtítulo
-description: O atributo WM/subtítulo é o subtítulo do conteúdo.
+title: Atributo WM/SubTitle
+description: O atributo WM/SubTitle é o subtítulo do conteúdo.
 ms.assetid: b1bd9a90-7ff5-4cc3-a141-839f4eaaa407
 keywords:
-- Atributo do WM/subtítulo Windows Media Player
+- Atributo WM/SubTitle Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,31 +12,31 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a82630f6f8dbd36df5d71b942ea2949bb6237e65
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 54e825f4ebfff07010c46b7150076bba69325cd96be4793611027a2dc148cb35
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105786323"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120000856"
 ---
-# <a name="wmsubtitle-attribute"></a>Atributo do WM/subtítulo
+# <a name="wmsubtitle-attribute"></a>Atributo WM/SubTitle
 
-O atributo **WM/subtítulo** é o subtítulo do conteúdo.
+O **atributo WM/SubTitle** é o subtítulo do conteúdo.
 
 ## <a name="applies-to"></a>Aplica-se A
 
 -   [Itens de áudio](audio-item-attributes.md)
--   [Atributos de arquivo de mídia do Windows comumente usados](commonly-used-windows-media-file-attributes.md)
+-   [Atributos de arquivo Windows mídia comumente usados](commonly-used-windows-media-file-attributes.md)
 
 ## <a name="remarks"></a>Comentários
 
-Esse atributo é armazenado tanto na biblioteca quanto no arquivo de mídia digital.
+Esse atributo é armazenado na biblioteca e no arquivo de mídia digital.
 
-**Subtítulo** é um alias para este atributo.
+**SubTitle** é um alias para esse atributo.
 
-A constante do Windows Media Format SDK para esse atributo é g \_ wszWMSubTitle.
+A Windows constante do SDK de Formato de Mídia para esse atributo é g \_ wszWMSubTitle.
 
-Para determinar se você pode alterar o valor desse atributo, use o método [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar se você pode alterar o valor desse atributo, use o [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -44,7 +44,7 @@ Para determinar se você pode alterar o valor desse atributo, use o método [Med
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versão<br/> | Windows Media Player 9 Series ou posterior<br/> |
+| Versão<br/> | Windows Media Player série 9 ou posterior<br/> |
 
 
 

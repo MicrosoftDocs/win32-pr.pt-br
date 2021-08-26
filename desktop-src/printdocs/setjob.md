@@ -17,12 +17,12 @@ api_location:
 - WinSpool.drv
 - Ext-MS-Win-Printer-WinSpool-l1-1-2.dll
 - Ext-MS-Win-Printer-WinSpool-L1-1-3.dll
-ms.openlocfilehash: 34dfc8c0239a10d7e7f036beed457d57329f4c67
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9259429a7696e832bbbe6d0dd4bbb6fb46e7bce2bf7157122c10ca47656af346
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105780070"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120060016"
 ---
 # <a name="setjob-function"></a>Função SetJob
 
@@ -70,11 +70,11 @@ Se o parâmetro *Level* for definido como 3, o parâmetro *JobID* deverá corres
 
 O tipo de estrutura de informações do trabalho apontado pelo parâmetro *pJob* .
 
-**Todas as versões do Windows**: você pode definir o parâmetro *Level* como 0, 1 ou 2. Quando você define *nível* como 0, *PJob* deve ser **nulo**. Use esses valores quando você não estiver definindo nenhum parâmetro de trabalho de impressão.
+**todas as versões do Windows**: você pode definir o parâmetro *Level* como 0, 1 ou 2. Quando você define *nível* como 0, *PJob* deve ser **nulo**. Use esses valores quando você não estiver definindo nenhum parâmetro de trabalho de impressão.
 
 Você também pode definir o parâmetro *Level* como 3.
 
-A partir do **Windows Vista**: você também pode definir o parâmetro *Level* como 4.
+a partir do **Windows Vista**: você também pode definir o parâmetro *Level* como 4.
 
 </dd> <dt>
 
@@ -83,11 +83,11 @@ A partir do **Windows Vista**: você também pode definir o parâmetro *Level* c
 
 Um ponteiro para uma estrutura que define os parâmetros do trabalho de impressão.
 
-**Todas as versões do Windows**: *pJob* podem apontar para uma estrutura de [**informações de trabalho \_ \_ 1**](job-info-1.md) ou de [**\_ informações \_ 2**](job-info-2.md) .
+**todas as versões do Windows**: *pJob* podem apontar para uma estrutura de [**informações de trabalho \_ \_ 1**](job-info-1.md) ou de [**\_ informações \_ 2**](job-info-2.md) .
 
 *pJob* também pode apontar para uma estrutura de [**informações de trabalho \_ \_ 3**](job-info-3.md) . Você deve ter **acesso ao trabalho \_ \_ administrar** permissão de acesso para os trabalhos especificados pelos membros **JobID** e **NextJobId** da **estrutura \_ informações \_ do trabalho 3** .
 
-A partir do **Windows Vista**: o *pJob* também pode apontar para uma estrutura de [**informações do trabalho \_ \_ 4**](job-info-4.md) .
+a partir do **Windows Vista**: *pJob* também pode apontar para uma estrutura de [**informações do trabalho \_ \_ 4**](job-info-4.md) .
 
 Se o parâmetro *Level* for 0, *PJob* deverá ser **NULL**.
 
@@ -110,7 +110,7 @@ A operação de trabalho de impressão a ser executada. Esse parâmetro pode usa
 | <span id="JOB_CONTROL_SENT_TO_PRINTER"></span><span id="job_control_sent_to_printer"></span><dl> <dt>**\_controle \_ de trabalho enviado \_ para a \_ impressora**</dt> </dl>       | Usado por monitores de porta para finalizar o trabalho de impressão.<br/>                             |
 | <span id="JOB_CONTROL_LAST_PAGE_EJECTED"></span><span id="job_control_last_page_ejected"></span><dl> <dt>**\_última página de controle de trabalho \_ \_ \_ ejetada**</dt> </dl> | Usado por monitores de idioma para finalizar o trabalho de impressão.<br/>                         |
 | <span id="JOB_CONTROL_RETAIN"></span><span id="job_control_retain"></span><dl> <dt>**\_retenção de controle de trabalho \_**</dt> </dl>                                    | **Windows Vista e posterior**: manter o trabalho na fila depois que ele for impresso.<br/> |
-| <span id="JOB_CONTROL_RELEASE"></span><span id="job_control_release"></span><dl> <dt>**\_versão de controle de trabalho \_**</dt> </dl>                                 | **Windows Vista e posterior**: Libere o trabalho de impressão.<br/>                     |
+| <span id="JOB_CONTROL_RELEASE"></span><span id="job_control_release"></span><dl> <dt>**\_versão de controle de trabalho \_**</dt> </dl>                                 | **Windows Vista e posterior**: libere o trabalho de impressão.<br/>                     |
 
 
 
@@ -120,7 +120,7 @@ Você pode usar a mesma chamada para a função **SetJob** para definir parâmet
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for realizada com sucesso, o valor de retorno será um valor diferente de zero.
 
@@ -181,28 +181,28 @@ Se você vincular trabalhos de impressão, observe o seguinte:
 [Funções da API do Spooler de impressão](printing-and-print-spooler-functions.md)
 </dt> <dt>
 
-[**AddJob**](addjob.md)
+[**Addjob**](addjob.md)
 </dt> <dt>
 
-[**GetJob**](getjob.md)
+[**Getjob**](getjob.md)
 </dt> <dt>
 
 [**OpenPrinter**](openprinter.md)
 </dt> <dt>
 
-[**Setprinter**](setprinter.md)
+[**SetPrinter**](setprinter.md)
 </dt> <dt>
 
-[**Informações do trabalho \_ \_ 1**](job-info-1.md)
+[**INFORMAÇÕES \_ DO TRABALHO \_ 1**](job-info-1.md)
 </dt> <dt>
 
-[**Informações do trabalho \_ \_ 2**](job-info-2.md)
+[**INFORMAÇÕES \_ DO TRABALHO \_ 2**](job-info-2.md)
 </dt> <dt>
 
-[**Informações do trabalho \_ \_ 3**](job-info-3.md)
+[**INFORMAÇÕES \_ DO \_ TRABALHO 3**](job-info-3.md)
 </dt> <dt>
 
-[**Informações do trabalho \_ \_ 4**](job-info-4.md)
+[**INFORMAÇÕES \_ DO TRABALHO \_ 4**](job-info-4.md)
 </dt> </dl>
 
  

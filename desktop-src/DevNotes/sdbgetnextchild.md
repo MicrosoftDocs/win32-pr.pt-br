@@ -1,5 +1,5 @@
 ---
-description: Pesquisa a próxima marca filha dentro do pai especificado e retorna o TAGID do próximo filho.
+description: Pesquisa a próxima TAG filho dentro do pai especificado e retorna a TAGID do próximo filho.
 ms.assetid: c7311f20-15ca-4b2d-a08d-8bb992a3a0cd
 title: Função SdbGetNextChild
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: 4f2943eaf0baec84a9473b679743b9eafad3b7fb
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 210e0aab8cb5e43bfc649e8abb72cf565c4d4f892f651708286f7a3f87d11ce2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826354"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120045298"
 ---
 # <a name="sdbgetnextchild-function"></a>Função SdbGetNextChild
 
-Pesquisa a próxima marca filha dentro do pai especificado e retorna o **TagId** do próximo filho.
+Pesquisa a próxima TAG filho dentro do pai especificado e retorna **a TAGID** do próximo filho.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,34 +41,34 @@ TAGID WINAPI SdbGetNextChild(
 
 <dl> <dt>
 
-*PDB* \[ no\]
+*pdb* \[ Em\]
 </dt> <dd>
 
-Um identificador para o banco de dados de Shim.
+Um alça para o banco de dados shim.
 
 </dd> <dt>
 
-*tiParent* \[ no\]
+*tiParent* \[ Em\]
 </dt> <dd>
 
-O **TagId** do início da pesquisa. Esse parâmetro pode ser **TagId \_ raiz** ou **\_ \_ lista de tipos de marca**.
+O **TAGID** do início da pesquisa. Esse parâmetro pode ser **TAGID \_ ROOT ou** **TAG TYPE \_ \_ LIST.**
 
 </dd> <dt>
 
-*tiPrev* \[ no\]
+*tiPrev* \[ Em\]
 </dt> <dd>
 
-O **TagId** do filho anterior.
+O **TAGID** do filho anterior.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O **TagId** do filho ou **TagId \_ nulo** se nenhum filho for encontrado.
+O **TAGID** do filho ou **TAGID \_ NULL** se nenhum filho for encontrado.
 
 ## <a name="remarks"></a>Comentários
 
-Antes de chamar essa função, chame a função [**SdbGetFirstChild**](sdbgetfirstchild.md) .
+Antes de chamar essa função, chame a [**função SdbGetFirstChild.**](sdbgetfirstchild.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -76,8 +76,8 @@ Antes de chamar essa função, chame a função [**SdbGetFirstChild**](sdbgetfir
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                   |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

@@ -1,9 +1,9 @@
 ---
-title: Elemento RunOnlyIfNetworkAvailable (settingsType)
-description: Especifica que o Agendador de Tarefas executará a tarefa somente quando uma rede estiver disponível.
+title: Elemento RunOnlyIfNetworkAvailable (settingstype)
+description: Especifica que a Agendador de Tarefas executará a tarefa somente quando uma rede estiver disponível.
 ms.assetid: b7b804d3-b31a-4d70-9ba5-805a285e278e
 keywords:
-- Elemento RunOnlyIfNetworkAvailable Agendador de Tarefas
+- Agendador de Tarefas do elemento RunOnlyIfNetworkAvailable
 topic_type:
 - apiref
 api_name:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119991026"
 ---
-# <a name="runonlyifnetworkavailable-settingstype-element"></a>Elemento RunOnlyIfNetworkAvailable (settingsType)
+# <a name="runonlyifnetworkavailable-settingstype-element"></a>Elemento RunOnlyIfNetworkAvailable (settingstype)
 
-Especifica que o Agendador de Tarefas executará a tarefa somente quando uma rede estiver disponível.
+Especifica que a Agendador de Tarefas executará a tarefa somente quando uma rede estiver disponível.
 
 ``` syntax
 <xs:element name="RunOnlyIfNetworkAvailable"
@@ -32,7 +32,7 @@ Especifica que o Agendador de Tarefas executará a tarefa somente quando uma red
  />
 ```
 
-O **elemento RunOnlyIfNetworkAvailable** é definido pelo [**tipo complexo settingsType.**](taskschedulerschema-settingstype-complextype.md)
+O elemento **RunOnlyIfNetworkAvailable** é definido pelo tipo complexo [**settingstype**](taskschedulerschema-settingstype-complextype.md) .
 
 ## <a name="parent-element"></a>Elemento pai
 
@@ -40,19 +40,19 @@ O **elemento RunOnlyIfNetworkAvailable** é definido pelo [**tipo complexo setti
 
 | Elemento                                                           | Derivado de                                                         | Descrição                                                                        |
 |-------------------------------------------------------------------|----------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| [**Configurações**](taskschedulerschema-settings-tasktype-element.md) | [**settingsType**](taskschedulerschema-settingstype-complextype.md) | Contém as configurações que o Agendador de Tarefas usa para executar a tarefa.<br/> |
+| [**Configurações**](taskschedulerschema-settings-tasktype-element.md) | [**settingstype**](taskschedulerschema-settingstype-complextype.md) | Contém as configurações que o Agendador de Tarefas usa para executar a tarefa.<br/> |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-Para desenvolvimento em C++, consulte [**Propriedade RunOnlyIfNetworkAvailable de ITaskSettings**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_runonlyifnetworkavailable).
+Para desenvolvimento em C++, consulte a [**Propriedade RunOnlyIfNetworkAvailable de ITaskSettings**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_runonlyifnetworkavailable).
 
-Para desenvolvimento de scripts, [**consulte TaskSettings.RunOnlyIfNetworkAvailable.**](tasksettings-runonlyifnetworkavailable.md)
+Para desenvolvimento de script, consulte [**TaskSettings. RunOnlyIfNetworkAvailable**](tasksettings-runonlyifnetworkavailable.md).
 
 ## <a name="examples"></a>Exemplos
 
-O XML a seguir define um elemento de configurações que permite que a tarefa inicie somente se uma rede estiver disponível.
+O XML a seguir define um elemento Settings que permite que a tarefa seja iniciada somente se uma rede estiver disponível.
 
 
 ```XML
@@ -69,8 +69,8 @@ O XML a seguir define um elemento de configurações que permite que a tarefa in
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 
@@ -78,7 +78,7 @@ O XML a seguir define um elemento de configurações que permite que a tarefa in
 
 <dl> <dt>
 
-[Agendador de Tarefas de esquema](task-scheduler-schema-elements.md)
+[Elementos do esquema de Agendador de Tarefas](task-scheduler-schema-elements.md)
 </dt> </dl>
 
  

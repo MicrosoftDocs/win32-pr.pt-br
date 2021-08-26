@@ -1,33 +1,33 @@
 ---
-description: Um aplicativo pode monitorar o conteúdo de um diretório e de seus subdiretórios usando notificações de alteração.
+description: Um aplicativo pode monitorar o conteúdo de um diretório e seus subdireários usando notificações de alteração.
 ms.assetid: ad884b15-e040-478b-aa99-d8622198f62a
 title: Obtendo notificações de alteração de diretório
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c44375c334c3630aee09bf4a13fc23f87cc91e7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6d94bd2b86aacaf7b32191fd68208bd1400a4b56cf4c55b13102210ffb50f7ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647665"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120047996"
 ---
 # <a name="obtaining-directory-change-notifications"></a>Obtendo notificações de alteração de diretório
 
-Um aplicativo pode monitorar o conteúdo de um diretório e de seus subdiretórios usando notificações de alteração. Aguardar uma notificação de alteração é semelhante a ter uma operação de leitura pendente em um diretório e, se necessário, de seus subdiretórios. Quando algo é alterado no diretório que está sendo observado, a operação de leitura é concluída. Por exemplo, um aplicativo pode usar essas funções para atualizar uma listagem de diretório sempre que um nome de arquivo dentro do diretório monitorado for alterado.
+Um aplicativo pode monitorar o conteúdo de um diretório e seus subdireários usando notificações de alteração. Aguardar uma notificação de alteração é semelhante a ter uma operação de leitura pendente em um diretório e, se necessário, seus subdireários. Quando algo muda dentro do diretório que está sendo observado, a operação de leitura é concluída. Por exemplo, um aplicativo pode usar essas funções para atualizar uma listagem de diretório sempre que um nome de arquivo dentro do diretório monitorado for atualizado.
 
-Um aplicativo pode especificar um conjunto de condições que disparam uma notificação de alteração usando a função [**FindFirstChangeNotification**](/windows/desktop/api/FileAPI/nf-fileapi-findfirstchangenotificationa) . As condições incluem alterações nos nomes de arquivo, nomes de diretório, atributos, tamanho do arquivo, hora da última gravação e segurança. Essa função também retorna um identificador que pode ser aguardado usando as [funções Wait](/windows/desktop/Sync/wait-functions). Se a condição de espera for satisfeita, [**FindNextChangeNotification**](/windows/desktop/api/FileAPI/nf-fileapi-findnextchangenotification) poderá ser usado para fornecer um identificador de notificação para aguardar as alterações subsequentes. No entanto, essas funções não indicam a alteração real que satisfez a condição de espera.
+Um aplicativo pode especificar um conjunto de condições que disparam uma notificação de alteração usando a [**função FindFirstChangeNotification.**](/windows/desktop/api/FileAPI/nf-fileapi-findfirstchangenotificationa) As condições incluem alterações em nomes de arquivo, nomes de diretório, atributos, tamanho do arquivo, hora da última gravação e segurança. Essa função também retorna um alça que pode ser aguardado usando as [funções de espera](/windows/desktop/Sync/wait-functions). Se a condição de espera for atendida, [**FindNextChangeNotification**](/windows/desktop/api/FileAPI/nf-fileapi-findnextchangenotification) poderá ser usado para fornecer um handle de notificação para aguardar as alterações subsequentes. No entanto, essas funções não indicam a alteração real que atendia à condição de espera.
 
-Use [**FindCloseChangeNotification**](/windows/desktop/api/FileAPI/nf-fileapi-findclosechangenotification) para fechar o identificador de notificação.
+Use [**FindCloseChangeNotification para**](/windows/desktop/api/FileAPI/nf-fileapi-findclosechangenotification) fechar o alçamento de notificação.
 
-Para recuperar informações sobre a alteração específica como parte da notificação, use a função [**ReadDirectoryChangesW**](/windows/desktop/api/WinBase/nf-winbase-readdirectorychangesw) . Essa função também permite que você forneça uma rotina de conclusão.
+Para recuperar informações sobre a alteração específica como parte da notificação, use a [**função ReadDirectoryChangesW.**](/windows/desktop/api/WinBase/nf-winbase-readdirectorychangesw) Essa função também permite que você forneça uma rotina de conclusão.
 
-Para controlar as alterações em um volume, consulte [registros de alterações](change-journals.md).
+Para acompanhar as alterações em um volume, consulte [alterar diários](change-journals.md).
 
-O exemplo a seguir monitora a árvore de diretório para as alterações de nome de diretório. Ele também monitora um diretório em busca de alterações de nome de arquivo. O exemplo usa a função [**FindFirstChangeNotification**](/windows/desktop/api/FileAPI/nf-fileapi-findfirstchangenotificationa) para criar dois identificadores de notificação e a função [**WaitForMultipleObjects**](/windows/desktop/api/synchapi/nf-synchapi-waitformultipleobjects) para aguardar os identificadores. Sempre que um diretório é criado ou excluído na árvore, o exemplo deve atualizar a árvore de diretórios inteira. Sempre que um arquivo é criado ou excluído no diretório, o exemplo deve atualizar o diretório.
+O exemplo a seguir monitora a árvore de diretório para alterações de nome de diretório. Ele também monitora um diretório para alterações de nome de arquivo. O exemplo usa a [**função FindFirstChangeNotification**](/windows/desktop/api/FileAPI/nf-fileapi-findfirstchangenotificationa) para criar dois alças de notificação e a [**função WaitForMultipleObjects**](/windows/desktop/api/synchapi/nf-synchapi-waitformultipleobjects) para aguardar os alças. Sempre que um diretório é criado ou excluído na árvore, o exemplo deve atualizar toda a árvore de diretórios. Sempre que um arquivo é criado ou excluído no diretório, o exemplo deve atualizar o diretório.
 
 > [!Note]
 >
-> Esse exemplo simplista usa a função [**ExitProcess**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-exitprocess) para terminação e limpeza, mas aplicativos mais complexos sempre devem usar o gerenciamento de recursos adequado, como [**FindCloseChangeNotification**](/windows/desktop/api/FileAPI/nf-fileapi-findclosechangenotification) , quando apropriado.
+> Este exemplo simplista usa a função [**ExitProcess**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-exitprocess) para encerramento e limpeza, mas aplicativos mais complexos sempre devem usar o gerenciamento de recursos apropriado, como [**FindCloseChangeNotification,**](/windows/desktop/api/FileAPI/nf-fileapi-findclosechangenotification) quando apropriado.
 
  
 

@@ -1,19 +1,19 @@
 ---
 title: RequestReplyNamedPipesClientWithWindowsTransportSecurityExample
-description: Este exemplo mostra um cliente de pipes nomeados que envia mensagens de solicitação-resposta com segurança fornecida pela segurança de transporte SSPI do Windows. Ele ilustra o cliente usando propriedades de token de segurança para modificar o nível de representação permitido do padrão.
+description: este exemplo mostra um cliente de pipes nomeados que envia mensagens de solicitação-resposta com segurança fornecida por Windows segurança de transporte SSPI. Ele ilustra o cliente usando propriedades de token de segurança para modificar o nível de representação permitido do padrão.
 ms.assetid: 50BA8F67-95F4-414A-952C-8AF91C511753
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f81eb77680b161a121be68d1e4f00a3d87c9dcb6
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d46dda53ceeff5a8bbe1b649c65b294fb190224491c9b90a144be35c4123f42b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104498594"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120089456"
 ---
 # <a name="requestreplynamedpipesclientwithwindowstransportsecurityexample"></a>RequestReplyNamedPipesClientWithWindowsTransportSecurityExample
 
-Este exemplo mostra um cliente de pipes nomeados que envia mensagens de solicitação-resposta com segurança fornecida pela segurança de transporte SSPI do Windows. Ele ilustra o cliente usando propriedades de token de segurança para modificar o nível de representação permitido do padrão.
+este exemplo mostra um cliente de pipes nomeados que envia mensagens de solicitação-resposta com segurança fornecida por Windows segurança de transporte SSPI. Ele ilustra o cliente usando propriedades de token de segurança para modificar o nível de representação permitido do padrão.
 
 -   [RequestReplyNamedPipesClientWithWindowsTransportSecurity. cpp](#requestreplynamedpipesclientwithwindowstransportsecuritycpp)
 -   [PurchaseOrder. WSDL](#purchaseorderwsdl)
@@ -584,9 +584,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

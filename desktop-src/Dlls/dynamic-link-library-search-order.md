@@ -1,20 +1,20 @@
 ---
-description: Os aplicativos podem controlar o local do qual uma DLL é carregada especificando um caminho completo ou usando outro mecanismo, como um manifesto. Se esses métodos não são usados, o sistema pesquisa a DLL no tempo de carregamento, conforme descrito neste tópico.
+description: Os aplicativos podem controlar o local do qual uma DLL é carregada, especificando um caminho completo ou usando outro mecanismo, como um manifesto. Se esses métodos não forem usados, o sistema pesquisará a DLL no tempo de carregamento, conforme descrito neste tópico.
 ms.assetid: 44228cf2-6306-466c-8f16-f513cd3ba8b5
-title: Dynamic-Link de Pesquisa da Biblioteca de Dynamic-Link
+title: Ordem de pesquisa da biblioteca de Dynamic-Link
 ms.topic: article
 ms.date: 09/11/2020
 ms.custom: contperf-fy21q1
-ms.openlocfilehash: 73c90e176983aa542ec524c2bfa32623821c2f21
-ms.sourcegitcommit: 3cea99a2ed9579a94236fa7924abd6149db51a58
+ms.openlocfilehash: e2abe21e0283adab4fbc3c17db6503772e20c217cf3019ea775812b0f45e5145
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "114991833"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120083436"
 ---
-# <a name="dynamic-link-library-search-order"></a>Dynamic-Link de Pesquisa da Biblioteca de Dynamic-Link
+# <a name="dynamic-link-library-search-order"></a>Ordem de pesquisa da biblioteca de Dynamic-Link
 
-Um sistema pode conter várias versões da mesma DLL (biblioteca de vínculo dinâmico). Os aplicativos podem controlar o local do qual uma DLL é carregada especificando um caminho completo ou usando outro mecanismo, como um manifesto. Se esses métodos não são usados, o sistema pesquisa a DLL no tempo de carregamento, conforme descrito neste tópico.
+Um sistema pode conter várias versões da mesma DLL (biblioteca de vínculo dinâmico). Os aplicativos podem controlar o local do qual uma DLL é carregada, especificando um caminho completo ou usando outro mecanismo, como um manifesto. Se esses métodos não forem usados, o sistema pesquisará a DLL no tempo de carregamento, conforme descrito neste tópico.
 
 -   [Fatores que afetam a pesquisa](#factors-that-affect-searching)
 -   [Ordem de pesquisa para aplicativos UWP](#search-order-for-uwp-apps)
@@ -22,91 +22,91 @@ Um sistema pode conter várias versões da mesma DLL (biblioteca de vínculo din
     -   [Ordem de pesquisa alternativa para aplicativos UWP](#alternate-search-order-for-uwp-apps)
 -   [Ordem de pesquisa para aplicativos da área de trabalho](#search-order-for-desktop-applications)
     -   [Ordem de pesquisa padrão para aplicativos da área de trabalho](#standard-search-order-for-desktop-applications)
-    -   [Ordem de pesquisa alternativa para aplicativos da área de trabalho](#alternate-search-order-for-desktop-applications)
-    -   [Ordem de pesquisa usando **sinalizadores LOAD \_ LIBRARY \_ SEARCH**](#search-order-using-load_library_search-flags)
+    -   [Ordem de pesquisa alternativa para aplicativos de área de trabalho](#alternate-search-order-for-desktop-applications)
+    -   [Ordem de pesquisa usando sinalizadores de **\_ \_ pesquisa da biblioteca de carregamento**](#search-order-using-load_library_search-flags)
 -   [Tópicos relacionados](#related-topics)
 
 ## <a name="factors-that-affect-searching"></a>Fatores que afetam a pesquisa
 
 Os seguintes fatores afetam se o sistema procura uma DLL:
 
--   Se uma DLL com o mesmo nome de módulo já estiver carregada na memória, o sistema verificará apenas o redirecionamento e um manifesto antes de resolver para a DLL carregada, independentemente de qual diretório ele está. O sistema não pesquisa a DLL.
--   Se a DLL estiver na lista de DLLs conhecidas para a versão do Windows na qual o aplicativo está em execução, o sistema usará sua cópia da DLL conhecida (e as DLLs dependentes da DLL conhecida, se alguma) em vez de pesquisar a DLL. Para ver uma lista de DLLs conhecidas no sistema atual, consulte a seguinte chave do Registro: **HKEY \_ LOCAL MACHINE SYSTEM \_ \\ \\ CurrentControlSet Control \\ Session Manager \\ \\ KnownDLLs**.
--   Se uma DLL tiver dependências, o sistema procurará as DLLs dependentes como se fossem carregadas apenas com seus nomes de módulo. Isso é verdadeiro mesmo que a primeira DLL seja carregada especificando um caminho completo.
+-   Se uma DLL com o mesmo nome de módulo já estiver carregada na memória, o sistema verificará apenas o redirecionamento e um manifesto antes de resolver para a DLL carregada, não importa em qual diretório ele está. O sistema não pesquisa a DLL.
+-   se a DLL estiver na lista de DLLs conhecidas para a versão do Windows em que o aplicativo está sendo executado, o sistema usará sua cópia da dll conhecida (e as DLLs dependentes da dll conhecida, se houver) em vez de pesquisar a dll. Para obter uma lista de DLLs conhecidas no sistema atual, consulte a seguinte chave do registro: **HKEY \_ local \_ Machine \\ System \\ CurrentControlSet \\ Control \\ Session Manager \\ KnownDLLs**.
+-   Se uma DLL tiver dependências, o sistema pesquisará as DLLs dependentes como se elas fossem carregadas com apenas seus nomes de módulo. Isso é verdadeiro mesmo que a primeira DLL tenha sido carregada especificando um caminho completo.
 
 ## <a name="search-order-for-uwp-apps"></a>Ordem de pesquisa para aplicativos UWP
 
-Quando um aplicativo UWP para Windows 10 (ou um aplicativo da Store para Windows 8.x) carrega um módulo empacotado chamando a [**função LoadPackagedLibrary,**](/windows/desktop/api/Winbase/nf-winbase-loadpackagedlibrary) a DLL deve estar no grafo de dependência do pacote do processo. Para obter mais informações, **consulte LoadPackagedLibrary**. Quando um aplicativo UWP carrega um módulo por outros meios e não especifica um caminho completo, o sistema pesquisa a DLL e suas dependências no tempo de carregamento, conforme descrito nesta seção.
+quando um aplicativo UWP para Windows 10 (ou um aplicativo da loja para Windows 8. x) carrega um módulo empacotado chamando a função [**LoadPackagedLibrary**](/windows/desktop/api/Winbase/nf-winbase-loadpackagedlibrary) , a DLL deve estar no grafo de dependência do pacote do processo. Para obter mais informações, consulte **LoadPackagedLibrary**. Quando um aplicativo UWP carrega um módulo por outros meios e não especifica um caminho completo, o sistema procura a DLL e suas dependências no tempo de carregamento, conforme descrito nesta seção.
 
-Antes que o sistema pesquise uma DLL, ele verifica o seguinte:
+Antes que o sistema procure uma DLL, ele verifica o seguinte:
 
--   Se uma DLL com o mesmo nome de módulo já estiver carregada na memória, o sistema usará a DLL carregada, independentemente do diretório em que estiver. O sistema não pesquisa a DLL.
--   Se a DLL estiver na lista de DLLs conhecidas para a versão do Windows na qual o aplicativo está em execução, o sistema usará sua cópia da DLL conhecida (e as DLLs dependentes da DLL conhecida, se há). O sistema não pesquisa a DLL. Para ver uma lista de DLLs conhecidas no sistema atual, consulte a seguinte chave do Registro: **HKEY \_ LOCAL MACHINE SYSTEM \_ \\ \\ CurrentControlSet Control \\ Session Manager \\ \\ KnownDLLs**.
+-   Se uma DLL com o mesmo nome de módulo já estiver carregada na memória, o sistema usará a DLL carregada, não importa em qual diretório ele está. O sistema não pesquisa a DLL.
+-   se a DLL estiver na lista de DLLs conhecidas para a versão do Windows em que o aplicativo está sendo executado, o sistema usará sua cópia da dll conhecida (e as DLLs dependentes da dll conhecida, se houver). O sistema não pesquisa a DLL. Para obter uma lista de DLLs conhecidas no sistema atual, consulte a seguinte chave do registro: **HKEY \_ local \_ Machine \\ System \\ CurrentControlSet \\ Control \\ Session Manager \\ KnownDLLs**.
 
-Se o sistema precisa pesquisar um módulo ou suas dependências, ele sempre usa a ordem de pesquisa para aplicativos UWP, mesmo que uma dependência não seja um código de aplicativo UWP.
+Se o sistema precisar pesquisar um módulo ou suas dependências, ele sempre usará a ordem de pesquisa para aplicativos UWP, mesmo se uma dependência não for um código de aplicativo UWP.
 
-### <a name="standard-search-order-for-uwp-apps"></a>Ordem de Pesquisa Padrão para aplicativos UWP
+### <a name="standard-search-order-for-uwp-apps"></a>Ordem de pesquisa padrão para aplicativos UWP
 
-Se o módulo ainda não estiver carregado ou na lista de DLLs conhecidas, o sistema pesquisa esses locais nesta ordem:
+Se o módulo ainda não estiver carregado ou na lista de DLLs conhecidas, o sistema pesquisará esses locais nesta ordem:
 
-1.  O grafo de dependência do pacote do processo. Esse é o pacote do aplicativo mais as dependências especificadas como na seção do manifesto `<PackageDependency>` `<Dependencies>` do pacote do aplicativo. As dependências são pesquisadas na ordem em que aparecem no manifesto.
+1.  O grafo de dependência do pacote do processo. Esse é o pacote do aplicativo, além de quaisquer dependências especificadas como `<PackageDependency>` na `<Dependencies>` seção do manifesto do pacote do aplicativo. As dependências são pesquisadas na ordem em que aparecem no manifesto.
 2.  O diretório do qual o processo de chamada foi carregado.
-3.  O diretório do sistema (%SystemRoot% \\ system32).
+3.  O diretório do sistema (% SystemRoot% \\ System32).
 
-Se uma DLL tiver dependências, o sistema procurará as DLLs dependentes como se fossem carregadas apenas com seus nomes de módulo. Isso é verdadeiro mesmo que a primeira DLL seja carregada especificando um caminho completo.
+Se uma DLL tiver dependências, o sistema pesquisará as DLLs dependentes como se elas fossem carregadas com apenas seus nomes de módulo. Isso é verdadeiro mesmo que a primeira DLL tenha sido carregada especificando um caminho completo.
 
 ### <a name="alternate-search-order-for-uwp-apps"></a>Ordem de pesquisa alternativa para aplicativos UWP
 
-Se um módulo alterar a ordem de pesquisa padrão chamando a função [**LoadLibraryEx**](/windows/desktop/api/LibLoaderAPI/nf-libloaderapi-loadlibraryexa) com **LOAD WITH \_ \_ ALTERED SEARCH \_ \_ PATH**, o sistema pesquisa o diretório do qual o módulo especificado foi carregado em vez do diretório do processo de chamada. O sistema pesquisa esses locais nesta ordem:
+Se um módulo alterar a ordem de pesquisa padrão chamando a função [**LoadLibraryEx**](/windows/desktop/api/LibLoaderAPI/nf-libloaderapi-loadlibraryexa) com **Load \_ com \_ o \_ \_ caminho de pesquisa alterado**, o sistema pesquisará o diretório no qual o módulo especificado foi carregado, em vez do diretório do processo de chamada. O sistema pesquisa esses locais nesta ordem:
 
-1.  O grafo de dependência do pacote do processo. Esse é o pacote do aplicativo mais as dependências especificadas como na seção do manifesto `<PackageDependency>` `<Dependencies>` do pacote do aplicativo. As dependências são pesquisadas na ordem em que aparecem no manifesto.
+1.  O grafo de dependência do pacote do processo. Esse é o pacote do aplicativo, além de quaisquer dependências especificadas como `<PackageDependency>` na `<Dependencies>` seção do manifesto do pacote do aplicativo. As dependências são pesquisadas na ordem em que aparecem no manifesto.
 2.  O diretório do qual o módulo especificado foi carregado.
-3.  O diretório do sistema (%SystemRoot% \\ system32).
+3.  O diretório do sistema (% SystemRoot% \\ System32).
 
 ## <a name="search-order-for-desktop-applications"></a>Ordem de pesquisa para aplicativos da área de trabalho
 
-Os aplicativos da área de trabalho podem controlar o local do qual uma DLL é carregada especificando um caminho completo, usando o redirecionamento [de DLL](dynamic-link-library-redirection.md)ou usando um [manifesto](/windows/desktop/SbsCs/manifests). Se nenhum desses métodos for usado, o sistema pesquisa a DLL em tempo de carregamento, conforme descrito nesta seção.
+Os aplicativos de área de trabalho podem controlar o local do qual uma DLL é carregada, especificando um caminho completo, usando o [redirecionamento de dll](dynamic-link-library-redirection.md)ou usando um [manifesto](/windows/desktop/SbsCs/manifests). Se nenhum desses métodos for usado, o sistema pesquisará a DLL no tempo de carregamento, conforme descrito nesta seção.
 
-Antes que o sistema pesquise uma DLL, ele verifica o seguinte:
+Antes que o sistema procure uma DLL, ele verifica o seguinte:
 
--   Se uma DLL com o mesmo nome de módulo já estiver carregada na memória, o sistema usará a DLL carregada, independentemente do diretório em que estiver. O sistema não pesquisa a DLL.
--   Se a DLL estiver na lista de DLLs conhecidas para a versão do Windows na qual o aplicativo está em execução, o sistema usará sua cópia da DLL conhecida (e as DLLs dependentes da DLL conhecida, se há). O sistema não pesquisa a DLL. Para ver uma lista de DLLs conhecidas no sistema atual, consulte a seguinte chave do Registro: **HKEY \_ LOCAL MACHINE SYSTEM \_ \\ \\ CurrentControlSet Control \\ Session Manager \\ \\ KnownDLLs**.
+-   Se uma DLL com o mesmo nome de módulo já estiver carregada na memória, o sistema usará a DLL carregada, não importa em qual diretório ele está. O sistema não pesquisa a DLL.
+-   se a DLL estiver na lista de DLLs conhecidas para a versão do Windows em que o aplicativo está sendo executado, o sistema usará sua cópia da dll conhecida (e as DLLs dependentes da dll conhecida, se houver). O sistema não pesquisa a DLL. Para obter uma lista de DLLs conhecidas no sistema atual, consulte a seguinte chave do registro: **HKEY \_ local \_ Machine \\ System \\ CurrentControlSet \\ Control \\ Session Manager \\ KnownDLLs**.
 
-Se uma DLL tiver dependências, o sistema procurará as DLLs dependentes como se fossem carregadas apenas com seus nomes de módulo. Isso é verdadeiro mesmo que a primeira DLL seja carregada especificando um caminho completo.
+Se uma DLL tiver dependências, o sistema pesquisará as DLLs dependentes como se elas fossem carregadas com apenas seus nomes de módulo. Isso é verdadeiro mesmo que a primeira DLL tenha sido carregada especificando um caminho completo.
 
 > [!IMPORTANT]
-> Se um invasor ganhar controle de um dos diretórios pesquisados, ele poderá colocar uma cópia mal-intencionada da DLL nesse diretório. Para ver maneiras de ajudar a evitar esses ataques, consulte [Segurança de biblioteca de vínculo dinâmico.](dynamic-link-library-security.md)
+> Se um invasor obtiver o controle de um dos diretórios que é pesquisado, ele poderá fazer uma cópia mal-intencionada da DLL nesse diretório. Para obter maneiras de ajudar a evitar esses ataques, consulte [segurança da biblioteca de vínculo dinâmico](dynamic-link-library-security.md).
 
 ### <a name="standard-search-order-for-desktop-applications"></a>Ordem de pesquisa padrão para aplicativos da área de trabalho
 
-A ordem de pesquisa de DLL padrão usada pelo sistema depende se o modo de pesquisa de DLL seguro está habilitado ou desabilitado. Cofre O modo de pesquisa de DLL coloca o diretório atual do usuário posteriormente na ordem de pesquisa.
+A ordem de pesquisa padrão da DLL usada pelo sistema depende de se o modo de pesquisa de DLL seguro está habilitado ou desabilitado. Cofre O modo de pesquisa de DLL coloca o diretório atual do usuário mais tarde na ordem de pesquisa.
 
-Cofre O modo de pesquisa de DLL está habilitado por padrão. Para desabilitar esse recurso, crie o valor do Registro SafeDllSearchMode do Gerenciador de Sessão de Controle do Sistema **HKEY \_ LOCAL MACHINE \_ \\ \\ \\ \\ CurrentControlSet** e de definido como \\  0. Chamar a [**função SetDllDirectory**](/windows/desktop/api/winbase/nf-winbase-setdlldirectorya) desabilita efetivamente **SafeDllSearchMode** enquanto o diretório especificado está no caminho de pesquisa e altera a ordem de pesquisa, conforme descrito neste tópico.
+Cofre O modo de pesquisa de DLL está habilitado por padrão. Para desabilitar esse recurso, crie o valor do registro **HKEY \_ local \_ System do \\ sistema \\ CurrentControlSet \\ Control \\ Session Manager** \\ **SafeDllSearchMode** e defina-o como 0. Chamar a função [**SetDllDirectory**](/windows/desktop/api/winbase/nf-winbase-setdlldirectorya) efetivamente desabilita **SafeDllSearchMode** enquanto o diretório especificado está no caminho de pesquisa e altera a ordem de pesquisa, conforme descrito neste tópico.
 
 Se **SafeDllSearchMode** estiver habilitado, a ordem de pesquisa será a seguinte:
 
 1.  O diretório do qual o aplicativo foi carregado.
-2.  O diretório do sistema. Use a [**função GetSystemDirectory**](/windows/desktop/api/sysinfoapi/nf-sysinfoapi-getsystemdirectorya) para obter o caminho desse diretório.
-3.  O diretório do sistema de 16 bits. Não há nenhuma função que obtém o caminho desse diretório, mas ela é pesquisada.
-4.  O Windows diretório. Use a [**função GetWindowsDirectory**](/windows/desktop/api/sysinfoapi/nf-sysinfoapi-getwindowsdirectorya) para obter o caminho desse diretório.
+2.  O diretório do sistema. Use a função [**GetSystemDirectory**](/windows/desktop/api/sysinfoapi/nf-sysinfoapi-getsystemdirectorya) para obter o caminho desse diretório.
+3.  O diretório do sistema de 16 bits. Não há nenhuma função que obtenha o caminho desse diretório, mas ela é pesquisada.
+4.  o diretório Windows. Use a função [**GetWindowsDirectory**](/windows/desktop/api/sysinfoapi/nf-sysinfoapi-getwindowsdirectorya) para obter o caminho desse diretório.
 5.  O diretório atual.
-6.  Os diretórios listados na variável de ambiente PATH. Observe que isso não inclui o caminho por aplicativo especificado pela chave do Registro de **Caminhos** de Aplicativo. A **chave Caminhos do** Aplicativo não é usada ao calcular o caminho de pesquisa de DLL.
+6.  Os diretórios listados na variável de ambiente PATH. Observe que isso não inclui o caminho por aplicativo especificado pela chave do registro de **caminhos do aplicativo** . A chave de **caminhos do aplicativo** não é usada ao calcular o caminho de pesquisa da dll.
 
 Se **SafeDllSearchMode** estiver desabilitado, a ordem de pesquisa será a seguinte:
 
 1.  O diretório do qual o aplicativo foi carregado.
 2.  O diretório atual.
-3.  O diretório do sistema. Use a [**função GetSystemDirectory**](/windows/desktop/api/sysinfoapi/nf-sysinfoapi-getsystemdirectorya) para obter o caminho desse diretório.
-4.  O diretório do sistema de 16 bits. Não há nenhuma função que obtém o caminho desse diretório, mas ela é pesquisada.
-5.  O Windows diretório. Use a [**função GetWindowsDirectory**](/windows/desktop/api/sysinfoapi/nf-sysinfoapi-getwindowsdirectorya) para obter o caminho desse diretório.
-6.  Os diretórios listados na variável de ambiente PATH. Observe que isso não inclui o caminho por aplicativo especificado pela chave do Registro de **Caminhos** de Aplicativo. A **chave Caminhos do** Aplicativo não é usada ao calcular o caminho de pesquisa de DLL.
+3.  O diretório do sistema. Use a função [**GetSystemDirectory**](/windows/desktop/api/sysinfoapi/nf-sysinfoapi-getsystemdirectorya) para obter o caminho desse diretório.
+4.  O diretório do sistema de 16 bits. Não há nenhuma função que obtenha o caminho desse diretório, mas ela é pesquisada.
+5.  o diretório Windows. Use a função [**GetWindowsDirectory**](/windows/desktop/api/sysinfoapi/nf-sysinfoapi-getwindowsdirectorya) para obter o caminho desse diretório.
+6.  Os diretórios listados na variável de ambiente PATH. Observe que isso não inclui o caminho por aplicativo especificado pela chave do registro de **caminhos do aplicativo** . A chave de **caminhos do aplicativo** não é usada ao calcular o caminho de pesquisa da dll.
 
-### <a name="alternate-search-order-for-desktop-applications"></a>Ordem de pesquisa alternativa para aplicativos da área de trabalho
+### <a name="alternate-search-order-for-desktop-applications"></a>Ordem de pesquisa alternativa para aplicativos de área de trabalho
 
-A ordem de pesquisa padrão usada pelo sistema pode ser alterada chamando a [**função LoadLibraryEx**](/windows/desktop/api/LibLoaderAPI/nf-libloaderapi-loadlibraryexa) com **LOAD WITH \_ \_ ALTERED SEARCH \_ \_ PATH**. A ordem de pesquisa padrão também pode ser alterada chamando a [**função SetDllDirectory.**](/windows/desktop/api/Winbase/nf-winbase-setdlldirectorya)
+A ordem de pesquisa padrão usada pelo sistema pode ser alterada chamando a função [**LoadLibraryEx**](/windows/desktop/api/LibLoaderAPI/nf-libloaderapi-loadlibraryexa) com **Load \_ com o \_ \_ \_ caminho de pesquisa alterado**. A ordem de pesquisa padrão também pode ser alterada chamando a função [**SetDllDirectory**](/windows/desktop/api/Winbase/nf-winbase-setdlldirectorya) .
 
 > [!NOTE]
-> A ordem de pesquisa padrão do processo também será afetada chamando a [**função SetDllDirectory**](/windows/desktop/api/Winbase/nf-winbase-setdlldirectorya) no processo pai antes do início do processo atual.
+> A ordem de pesquisa padrão do processo também será afetada chamando a função [**SetDllDirectory**](/windows/desktop/api/Winbase/nf-winbase-setdlldirectorya) no processo pai antes do início do processo atual.
 
 Se você especificar uma estratégia de pesquisa alternativa, seu comportamento continuará até que todos os módulos executáveis associados tenham sido localizados. Depois que o sistema inicia o processamento de rotinas de inicialização de DLL, o sistema reverte para a estratégia de pesquisa padrão.
 

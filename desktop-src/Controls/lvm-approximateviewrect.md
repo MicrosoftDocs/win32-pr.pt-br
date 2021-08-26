@@ -3,7 +3,7 @@ title: Mensagem de LVM_APPROXIMATEVIEWRECT (commctrl. h)
 description: Calcula a largura aproximada e a altura necessárias para exibir um determinado número de itens. Você pode enviar essa mensagem explicitamente ou usar a \_ macro ApproximateViewRect do ListView.
 ms.assetid: a14331a8-217d-48c6-9489-fb90c4d31b91
 keywords:
-- Controles de LVM_APPROXIMATEVIEWRECT de mensagens do Windows
+- controles de Windows de mensagem de LVM_APPROXIMATEVIEWRECT
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: be929d34acad46b75a53a9e0cc8825ec9801e998
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 97fcbb5476f28debd28116a52123bd01b8030c8b0a0c9c52e6598c864caed021
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918000"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120047056"
 ---
 # <a name="lvm_approximateviewrect-message"></a>\_Mensagem APPROXIMATEVIEWRECT LVM
 
@@ -45,7 +45,7 @@ O [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) é a
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor **DWORD** que contém a largura aproximada (no [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85))) e a altura (no [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85))) necessárias para exibir os itens, em pixels.
 
@@ -59,9 +59,9 @@ Definir o tamanho do controle de exibição de lista com base nas dimensões for
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

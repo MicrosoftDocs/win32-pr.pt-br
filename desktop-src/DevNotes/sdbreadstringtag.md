@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: 3f368d66e0fbc144a46683a04655cd7f650c3bce
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8f8652e944328298b7cd3888fa93c41d3551ba913f4acd848f60fa053ed0067e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103919070"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120044936"
 ---
 # <a name="sdbreadstringtag-function"></a>Função SdbReadStringTag
 
-Recupera a cadeia de caracteres para o **TagId** especificado.
+Recupera a cadeia de caracteres para o **TAGID especificado.**
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,37 +42,37 @@ BOOL WINAPI SdbReadStringTag(
 
 <dl> <dt>
 
-*PDB* \[ no\]
+*pdb* \[ Em\]
 </dt> <dd>
 
-Um identificador para o banco de dados de Shim.
+Um alça para o banco de dados shim.
 
 </dd> <dt>
 
-*tiWhich* \[ no\]
+*tiWhich* \[ Em\]
 </dt> <dd>
 
-O **TagId** que corresponde aos dados a serem recuperados.
+O **TAGID** que corresponde aos dados a serem recuperados.
 
 </dd> <dt>
 
-*pwszBuffer* \[ fora\]
+*pwszBuffer* \[ out\]
 </dt> <dd>
 
-O buffer que recebe a cadeia de caracteres. Este parâmetro não pode ser **nulo**.
+O buffer que recebe a cadeia de caracteres. Esse parâmetro não pode ser **NULL.**
 
 </dd> <dt>
 
-*cchBufferSize* \[ no\]
+*cchBufferSize* \[ Em\]
 </dt> <dd>
 
-O tamanho do buffer *pwszBuffer* , em caracteres.
+O tamanho do *buffer pwszBuffer,* em caracteres.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-A função retorna **true** em caso de êxito ou **false** em caso de falha.
+A função retorna **TRUE em** caso de êxito **ou FALSE** em caso de falha.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -80,8 +80,8 @@ A função retorna **true** em caso de êxito ou **false** em caso de falha.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                   |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

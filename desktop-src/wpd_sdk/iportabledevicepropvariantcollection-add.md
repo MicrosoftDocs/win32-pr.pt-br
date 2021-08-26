@@ -1,7 +1,7 @@
 ---
-description: 'Método IPortableDevicePropVariantCollection:: Add – o método add adiciona um item à coleção.'
+description: Método IPortableDevicePropVariantCollection::Add – o método Add adiciona um item à coleção.
 ms.assetid: e9e8975f-f9b8-4940-b967-020cf3812582
-title: 'Método IPortableDevicePropVariantCollection:: Add (PortableDeviceTypes. h)'
+title: Método IPortableDevicePropVariantCollection::Add (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 7aed732cb92ea7e0f2fb3c2ebdd615f643bc3107
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: fd90e4702045200e4f2766f6dcdd661ff83b6cd3370970a22e3211eebfa13c90
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108112454"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120055256"
 ---
-# <a name="iportabledevicepropvariantcollectionadd-method"></a>Método IPortableDevicePropVariantCollection:: Add
+# <a name="iportabledevicepropvariantcollectionadd-method"></a>Método IPortableDevicePropVariantCollection::Add
 
-O método **Add** adiciona um item à coleção.
+O **método** Add adiciona um item à coleção.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,16 +40,16 @@ HRESULT Add(
 
 <dl> <dt>
 
-*valores* \[ no\]
+*pValue* \[ Em\]
 </dt> <dd>
 
-Ponteiro para um novo objeto **PROPVARIANT** para adicionar à coleção. Esse método copia o **PROPVARIANT** para a coleção, de modo que você deve liberar sua cópia local da variável chamando **PropVariantClear** depois de chamar esse método.
+Ponteiro para um novo **objeto PROPVARIANT** a ser adicionar à coleção. Esse método copia o **PROPVARIANT** para a coleção, portanto, você deve liberar sua cópia local da variável chamando **PropVariantClear** depois de chamar esse método.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 
@@ -63,13 +63,13 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 
 ## <a name="remarks"></a>Comentários
 
-Quando o VARTYPE de  zero é VT \_ vector ou VT \_ UI1, não há suporte para a configuração e a recuperação de um buffer de tamanho **nulo** ou zero. Por exemplo, não há um zero. caub. pElems = **NULL** nem 1. caub. cElems = 0 são permitidos.
+Quando o VARTYPE para *pValue* for VT VECTOR ou \_ VT \_ UI1, não há suporte para a configuração e a recuperação de um buffer **NULL** ou de tamanho zero. Por exemplo, nem pValue.caub.pElems = **NULL** nem pValue.caub.cElems = 0 são permitidos.
 
-Se um chamador tentar adicionar um item de um VARTYPE diferente contido na coleção e o valor de PROPVARIANT não puder ser alterado por essa interface automaticamente, esse método falhará. Para alterar o tipo de coleção manualmente, chame [**IPortableDevicePropVariantCollection:: ChangeType**](iportabledevicepropvariantcollection-changetype.md).
+Se um chamador tentar adicionar um item de um VARTYPE diferente contido na coleção e o valor PROPVARIANT não puder ser alterado automaticamente por essa interface, esse método falhará. Para alterar o tipo de coleção manualmente, chame [**IPortableDevicePropVariantCollection::ChangeType**](iportabledevicepropvariantcollection-changetype.md).
 
 ## <a name="examples"></a>Exemplos
 
-Para obter um exemplo de como usar esse método, consulte [recuperando um identificador de objeto de um identificador exclusivo persistente](retrieving-an-object-identifier-from-a-persistent-unique-identifier.md)
+Para ver um exemplo de como usar esse método, consulte Recuperando um [identificador de objeto de um identificador exclusivo persistente](retrieving-an-object-identifier-from-a-persistent-unique-identifier.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -77,16 +77,16 @@ Para obter um exemplo de como usar esse método, consulte [recuperando um identi
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[**Interface IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md)
+[**IPortableDevicePropVariantCollection Interface**](iportabledevicepropvariantcollection.md)
 </dt> <dt>
 
 [Movendo o conteúdo no dispositivo](moving-content-on-the-device.md)

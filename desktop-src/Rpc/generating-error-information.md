@@ -4,12 +4,12 @@ description: Se um servidor ou aplicativo encontrar um erro fatal ao ser chamado
 ms.assetid: 6658c387-94df-4d85-9749-53858f9e0f5f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b06a13e932034e6840479443e0b78f4c322c0b3
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e7eb6868dfe11318e09b30217d5410a94ce32983ce64e75521c55fc5cc060ad0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105759597"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120020906"
 ---
 # <a name="generating-error-information"></a>Gerando informações de erro
 
@@ -29,9 +29,9 @@ Em vez disso, o servidor poderia chamar a função [**RpcErrorAddRecord**](/wind
 
 A chamada de função [**RpcErrorAddRecord**](/windows/desktop/api/Rpcasync/nf-rpcasync-rpcerroraddrecord) poderá falhar se memória suficiente não estiver disponível, mesmo que exija apenas alguns bytes de espaço de heap. Além disso, os registros adicionados pelo **RpcErrorAddRecord** são acumulados em um determinado thread. O tempo de execução normalmente limpa esses registros antes de chamar a rotina do servidor, mas se as informações de erro estendidas forem usadas fora do RPC, tome cuidado com a limpeza do erro estendido acumulado no thread chamando [**RpcErrorClearInformation**](/windows/desktop/api/Rpcasync/nf-rpcasync-rpcerrorclearinformation).
 
- 
+ 
 
- 
+ 
 
 
 

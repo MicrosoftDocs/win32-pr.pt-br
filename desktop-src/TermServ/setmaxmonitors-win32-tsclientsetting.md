@@ -1,5 +1,5 @@
 ---
-title: Método SetMaxMonitors da classe Win32_TSClientSetting
+title: Método SetMaxMonitors da classe Win32_TSClientSetting dados
 description: Define a propriedade MaxMonitors.
 ms.assetid: 1c8266e1-ff2b-4fbc-af70-6f7b4499d88c
 ms.tgt_platform: multiple

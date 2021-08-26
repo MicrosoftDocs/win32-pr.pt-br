@@ -4,12 +4,12 @@ ms.assetid: 559e73bf-91c2-4dbf-a667-e5c0431aaffa
 title: INDEXid
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 79b6ef6b79dd19183f575930e9793a6ab2f1f5cb
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: c5711f2927462325b2a6479dd9506099da4bd50f9a9a99b68152e5c0030a47d3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089423"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120001886"
 ---
 # <a name="indexid"></a>INDEXid
 
@@ -41,8 +41,8 @@ Um **IndexID** inválido.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 

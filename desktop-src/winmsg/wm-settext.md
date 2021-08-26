@@ -4,12 +4,12 @@ ms.assetid: 1b48c309-6903-4139-bf42-e8526963e681
 title: Mensagem de WM_SETTEXT (WinUser. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c3284855d817d5207b0d7572a41774e961c0113f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6fc2ab860fd89d726b9763c198fe8d58caa1376a3b919fd3587ad39a612d6667
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103663153"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120055976"
 ---
 # <a name="wm_settext-message"></a>\_Mensagem de SETtext do WM
 
@@ -40,7 +40,7 @@ Um ponteiro para uma cadeia de caracteres terminada em nulo que é o texto da ja
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **LRESULT**
 
@@ -60,7 +60,7 @@ Esta mensagem não altera a seleção atual na caixa de listagem de uma caixa de
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

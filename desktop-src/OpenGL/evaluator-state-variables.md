@@ -1,6 +1,6 @@
 ---
-title: Variáveis de estado do avaliador
-description: Variáveis de estado do avaliador
+title: Variáveis de Estado do Avaliador
+description: Variáveis de Estado do Avaliador
 ms.assetid: e7d710be-de17-46a0-8ad8-0f65b943ece8
 keywords:
 - Variáveis de estado do avaliador OpenGL
@@ -12,20 +12,20 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f2895f773721f7c900003cbaa0f070c277a0e260
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 747ed7c19817757570d6517c68a987c2c75aa340c74ecfbac9fe258b1091f00e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107909254"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120082506"
 ---
-# <a name="evaluator-state-variables"></a>Variáveis de estado do avaliador
+# <a name="evaluator-state-variables"></a>Variáveis de Estado do Avaliador
 
-<dl> <dt><span id="GL_ORDER"></span><span id="gl_order"></span>\_ordem GL</dt> <dd> 
+<dl> <dt><span id="GL_ORDER"></span><span id="gl_order"></span>GL \_ ORDER</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|--------------------------------|
-| Descrição:     | ordem de mapa de 1-D                  |
+| Descrição:     | Ordem do mapa 1D                  |
 | Grupo de atributos: |                                |
 | Valor inicial:   | 1                              |
 | Comando Get:     | [**glGetMapiv**](glgetmap.md) |
@@ -34,24 +34,24 @@ ms.locfileid: "107909254"
 
  
 
-</dd> <dt><span id="GL_ORDER"></span><span id="gl_order"></span>\_ordem GL</dt> <dd> 
+</dd> <dt><span id="GL_ORDER"></span><span id="gl_order"></span>GL \_ ORDER</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|--------------------------------|
-| Descrição:     | pedidos de mapa 2-D                 |
+| Descrição:     | Pedidos de mapa 2D                 |
 | Grupo de atributos: |                                |
-| Valor inicial:   | 1, 1                            |
+| Valor inicial:   | 1,1                            |
 | Comando Get:     | [**glGetMapiv**](glgetmap.md) |
 
 
 
  
 
-</dd> <dt><span id="GL_COEFF"></span><span id="gl_coeff"></span>\_COEFF GL</dt> <dd> 
+</dd> <dt><span id="GL_COEFF"></span><span id="gl_coeff"></span>GL \_ COEFF</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|--------------------------------|
-| Descrição:     | pontos de controle de 1-D             |
+| Descrição:     | Pontos de controle 1D             |
 | Grupo de atributos: |                                |
 | Valor inicial:   |                                |
 | Comando Get:     | [**glGetMapfv**](glgetmap.md) |
@@ -60,11 +60,11 @@ ms.locfileid: "107909254"
 
  
 
-</dd> <dt><span id="GL_COEFF"></span><span id="gl_coeff"></span>\_COEFF GL</dt> <dd> 
+</dd> <dt><span id="GL_COEFF"></span><span id="gl_coeff"></span>GL \_ COEFF</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|--------------------------------|
-| Descrição:     | pontos de controle 2D             |
+| Descrição:     | Pontos de controle 2D             |
 | Grupo de atributos: |                                |
 | Valor inicial:   |                                |
 | Comando Get:     | [**glGetMapfv**](glgetmap.md) |
@@ -73,11 +73,11 @@ ms.locfileid: "107909254"
 
  
 
-</dd> <dt><span id="GL_DOMAIN"></span><span id="gl_domain"></span>\_domínio GL</dt> <dd> 
+</dd> <dt><span id="GL_DOMAIN"></span><span id="gl_domain"></span>DOMÍNIO \_ GL</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|--------------------------------|
-| Descrição:     | pontos de extremidade de domínio 1-D           |
+| Descrição:     | Pontos de extremidade de domínio 1D           |
 | Grupo de atributos: |                                |
 | Valor inicial:   |                                |
 | Comando Get:     | [**glGetMapfv**](glgetmap.md) |
@@ -86,11 +86,11 @@ ms.locfileid: "107909254"
 
  
 
-</dd> <dt><span id="GL_DOMAIN"></span><span id="gl_domain"></span>\_domínio GL</dt> <dd> 
+</dd> <dt><span id="GL_DOMAIN"></span><span id="gl_domain"></span>DOMÍNIO \_ GL</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|--------------------------------|
-| Descrição:     | pontos de extremidade de domínio 2D           |
+| Descrição:     | Pontos de extremidade de domínio 2D           |
 | Grupo de atributos: |                                |
 | Valor inicial:   |                                |
 | Comando Get:     | [**glGetMapfv**](glgetmap.md) |
@@ -103,46 +103,46 @@ ms.locfileid: "107909254"
 
 | Propriedade | Valor |
 |------------------|------------------------------------|
-| Descrição:     | o mapa 1-D habilita: *x* é o tipo de mapa   |
-| Grupo de atributos: | eval/habilitação                        |
-| Valor inicial:   | GL \_ falso                          |
+| Descrição:     | O mapa 1D habilita: *x* é tipo de mapa   |
+| Grupo de atributos: | eval/enable                        |
+| Valor inicial:   | GL \_ FALSE                          |
 | Comando Get:     | [**glIsEnabled**](glisenabled.md) |
 
 
 
  
 
-</dd> <dt><span id="GL_MAP2_x"></span><span id="gl_map2_x"></span><span id="GL_MAP2_X"></span>GL \_ map2 \_ x</dt> <dd> 
+</dd> <dt><span id="GL_MAP2_x"></span><span id="gl_map2_x"></span><span id="GL_MAP2_X"></span>GL \_ MAP2 \_ x</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|------------------------------------|
-| Descrição:     | o mapa 2-D habilita: *x* é o tipo de mapa   |
-| Grupo de atributos: | eval/habilitação                        |
-| Valor inicial:   | GL \_ falso                          |
+| Descrição:     | O mapa 2D habilita: *x* é tipo de mapa   |
+| Grupo de atributos: | eval/enable                        |
+| Valor inicial:   | GL \_ FALSE                          |
 | Comando Get:     | [**glIsEnabled**](glisenabled.md) |
 
 
 
  
 
-</dd> <dt><span id="GL_MAP1_GRID_DOMAIN"></span><span id="gl_map1_grid_domain"></span>Domínio de grade do GL \_ MAP1 \_ \_</dt> <dd> 
+</dd> <dt><span id="GL_MAP1_GRID_DOMAIN"></span><span id="gl_map1_grid_domain"></span>DOMÍNIO DE GRADE GL \_ MAP1 \_ \_</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|--------------------------------------------------------------------------------|
-| Descrição:     | pontos de extremidade de grade 1-D                                                             |
+| Descrição:     | Pontos de extremidade de grade 1D                                                             |
 | Grupo de atributos: | eval                                                                           |
-| Valor inicial:   | 0, 1                                                                            |
+| Valor inicial:   | 0,1                                                                            |
 | Comando Get:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
  
 
-</dd> <dt><span id="GL_MAP2_GRID_DOMAIN"></span><span id="gl_map2_grid_domain"></span>Domínio de grade do GL \_ map2 \_ \_</dt> <dd> 
+</dd> <dt><span id="GL_MAP2_GRID_DOMAIN"></span><span id="gl_map2_grid_domain"></span>DOMÍNIO \_ DE GRADE GL MAP2 \_ \_</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|--------------------------------------------------------------------------------|
-| Descrição:     | pontos de extremidade de grade 2D                                                             |
+| Descrição:     | Pontos de extremidade de grade 2D                                                             |
 | Grupo de atributos: | eval                                                                           |
 | Valor inicial:   | 0, 1; 0, 1                                                                     |
 | Comando Get:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |

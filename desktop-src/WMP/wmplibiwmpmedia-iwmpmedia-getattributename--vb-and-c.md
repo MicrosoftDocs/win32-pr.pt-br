@@ -1,11 +1,11 @@
 ---
-title: Método GetAttributeName de IWMPMedia
-description: O método GetAttributeName retorna o nome do atributo correspondente ao índice especificado.
+title: Método getAttributeName de IWMPMedia
+description: O método getAttributeName retorna o nome do atributo correspondente ao índice especificado.
 ms.assetid: d2496484-34cc-4222-9bc3-1d3ebb9a4173
 keywords:
-- método GetAttributeName do Windows Media Player
-- método GetAttributeName Windows Media Player, interface IWMPMedia
-- Interface IWMPMedia do Windows Media Player, método GetAttributeName
+- Método getAttributeName Windows Media Player
+- Método getAttributeName Windows Media Player interface , IWMPMedia
+- Interface IWMPMedia Windows Media Player , método getAttributeName
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fb40ef8c0c984258dc11dd00c80807db2f4eb64a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6ad61be7a611eefc18f408f3f325a45b5f5952e81d53279f04f002f8d87dc2f7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105756847"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120031056"
 ---
-# <a name="iwmpmediagetattributename-method"></a>Método IWMPMedia:: GetAttributeName
+# <a name="iwmpmediagetattributename-method"></a>Método IWMPMedia::getAttributeName
 
-O método **GetAttributeName** retorna o nome do atributo correspondente ao índice especificado.
+O **método getAttributeName** retorna o nome do atributo correspondente ao índice especificado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -53,28 +53,28 @@ Implements IWMPMedia.getAttributeName
 
 <dl> <dt>
 
-*Lindex* \[ no\]
+*lIndex* \[ Em\]
 </dt> <dd>
 
-Um **System. Int32** que é o índice.
+Um **System.Int32** que é o índice.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Um **System. String** que é o nome do atributo.
+Um **System.String** que é o nome do atributo.
 
 ## <a name="remarks"></a>Comentários
 
 O nome do atributo retornado pode ser usado em conjunto com **getItemInfo** para recuperar o valor de um atributo nomeado específico.
 
-Antes de chamar esse método, você deve ter acesso de leitura à biblioteca. Para obter mais informações, consulte [acesso à biblioteca](library-access.md).
+Antes de chamar esse método, você deve ter acesso de leitura à biblioteca. Para obter mais informações, consulte [Acesso à biblioteca.](library-access.md)
 
-Para obter informações sobre os atributos com suporte do Windows Media Player, consulte a [referência de atributo](attribute-reference.md).
+Para obter informações sobre os atributos com suporte do Windows Media Player, consulte a [Referência de atributo](attribute-reference.md).
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir usa **GetAttributeName** para preencher uma caixa de texto de várias linhas com o índice e o nome de cada atributo para o item de mídia atual. O objeto **AxWMPLib. AxWindowsMediaPlayer** é representado pela variável chamada Player.
+O exemplo a seguir **usa getAttributeName** para preencher uma caixa de texto de várias linhas com o índice e o nome de cada atributo para o item de mídia atual. O **objeto AxWMPLib.AxWindowsMediaPlayer** é representado pela variável chamada player.
 
 
 ```CSharp
@@ -132,7 +132,7 @@ attributeNames.Lines = attInfo
 
 | Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/>   | Windows Media Player 9 Series ou posterior<br/>                                                                      |
+| Versão<br/>   | Windows Media Player série 9 ou posterior<br/>                                                                      |
 | Namespace<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -145,7 +145,7 @@ attributeNames.Lines = attInfo
 [**Interface IWMPMedia (VB e C#)**](iwmpmedia--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPMedia. getItemInfo (VB e C#)**](wmplibiwmpmedia-iwmpmedia-getiteminfo--vb-and-c.md)
+[**IWMPMedia.getItemInfo (VB e C#)**](wmplibiwmpmedia-iwmpmedia-getiteminfo--vb-and-c.md)
 </dt> </dl>
 
  

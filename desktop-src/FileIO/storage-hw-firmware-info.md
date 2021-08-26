@@ -1,7 +1,7 @@
 ---
-description: Estrutura de STORAGE_HW_FIRMWARE_INFO-essa estrutura contém informações sobre o firmware do dispositivo.
+description: STORAGE_HW_FIRMWARE_INFO estrutura - essa estrutura contém informações sobre o firmware do dispositivo.
 ms.assetid: 7BDACD50-0FD1-4F00-BAE5-884D8C1485BC
-title: Estrutura de STORAGE_HW_FIRMWARE_INFO (Winioctl. h)
+title: STORAGE_HW_FIRMWARE_INFO (Winioctl.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - winioctl.h.h
-ms.openlocfilehash: e7aa3d33f744b00fc742a2862add83149cb265b4
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1b9aa008e108f1282f8f61aaeacdce11eba7016632fa9643ae3db5550efb1e10
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108090954"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120047906"
 ---
-# <a name="storage_hw_firmware_info-structure"></a>\_Estrutura de \_ informações de firmware de hardware de armazenamento \_
+# <a name="storage_hw_firmware_info-structure"></a>Estrutura STORAGE \_ HW \_ FIRMWARE \_ INFO
 
 Essa estrutura contém informações sobre o firmware do dispositivo.
 
@@ -53,25 +53,25 @@ typedef struct _STORAGE_HW_FIRMWARE_INFO {
 **Versão**
 </dt> <dd>
 
-A versão desta estrutura. Isso deve ser definido como sizeof (informações de firmware de hardware de armazenamento \_ \_ \_ )
+A versão dessa estrutura. Isso deve ser definido como sizeof(STORAGE \_ HW \_ FIRMWARE \_ INFO)
 
 </dd> <dt>
 
 **Tamanho**
 </dt> <dd>
 
-O tamanho dessa estrutura como um buffer, incluindo o slot.
+O tamanho dessa estrutura como um buffer, incluindo slot.
 
 </dd> <dt>
 
 **SupportUpgrade**
 </dt> <dd>
 
-Indica que este firmware dá suporte a uma atualização.
+Indica que esse firmware dá suporte a uma atualização.
 
 </dd> <dt>
 
-**Reserved0**
+**Reservado0**
 </dt> <dd>
 
 Reservado para uso futuro.
@@ -81,10 +81,10 @@ Reservado para uso futuro.
 **SlotCount**
 </dt> <dd>
 
-O número de Slots de firmware no dispositivo. Esta é a dimensão da matriz de Slots.
+O número de slots de firmware no dispositivo. Essa é a dimensão da matriz slot.
 
 > [!Note]  
-> Alguns dispositivos podem armazenar mais de 1 imagem de firmware, se tiverem mais de 1 slot de firmware.
+> Alguns dispositivos podem armazenar mais de uma imagem de firmware, se eles têm mais de 1 slot de firmware.
 
  
 
@@ -100,14 +100,14 @@ O slot de firmware que contém a imagem de firmware ativa/em execução no momen
 **PendingActivateSlot**
 </dt> <dd>
 
-O slot de firmware que está com a ativação pendente.
+O slot de firmware que está pendente de ativação.
 
 </dd> <dt>
 
 **FirmwareShared**
 </dt> <dd>
 
-Indica que o firmware se aplica ao dispositivo e ao controlador/adaptador, por exemplo, SSD de NVMe.
+Indica que o firmware se aplica ao dispositivo e ao controlador/adaptador, por exemplo, NVMe SSD.
 
 </dd> <dt>
 
@@ -121,21 +121,21 @@ Reservado para uso futuro.
 **ImagePayloadAlignment**
 </dt> <dd>
 
-O alinhamento da carga da imagem, em número de bytes. O máximo é o \_ tamanho da página. O tamanho da transferência é um vários desse tamanho. Alguns protocolos exigem pelo menos o tamanho do setor. Quando esse valor é definido como 0, isso significa que esse valor é inválido.
+O alinhamento da carga da imagem, em número de bytes. O máximo é TAMANHO DA \_ PÁGINA. O tamanho da transferência é uma mutlíptica desse tamanho. Alguns protocolos exigem pelo menos o tamanho do setor. Quando esse valor é definido como 0, isso significa que esse valor é inválido.
 
 </dd> <dt>
 
 **ImagePayloadMaxSize**
 </dt> <dd>
 
-O tamanho máximo da carga da imagem, que é usado para um único comando.
+O tamanho máximo do payload da imagem, que é usado para um único comando.
 
 </dd> <dt>
 
 **Slot**
 </dt> <dd>
 
-Contém as informações de slot para cada slot no dispositivo, do tipo [**\_ informações de \_ \_ slot \_ de firmware de HW de armazenamento**](storage-hw-firmware-slot-info.md).
+Contém as informações de slot para cada slot no dispositivo, do tipo [**STORAGE \_ HW \_ FIRMWARE SLOT \_ \_ INFO**](storage-hw-firmware-slot-info.md).
 
 </dd> </dl>
 
@@ -145,35 +145,35 @@ Contém as informações de slot para cada slot no dispositivo, do tipo [**\_ in
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                                 |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2016\]<br/>                                                        |
-| parâmetro<br/>                   | <dl> <dt>Winioctl. h. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                                 |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2016 somente aplicativos da área de trabalho\]<br/>                                                        |
+| Cabeçalho<br/>                   | <dl> <dt>Winioctl.h.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[**\_ativação do \_ firmware de armazenamento do IOCTL \_**](/windows/desktop/api/WinIoctl/ni-winioctl-ioctl_storage_firmware_activate)
+[**IOCTL \_ STORAGE \_ FIRMWARE \_ ACTIVATE**](/windows/desktop/api/WinIoctl/ni-winioctl-ioctl_storage_firmware_activate)
 </dt> <dt>
 
-[**\_ativação do \_ firmware de HW de armazenamento \_**](/windows/desktop/api/winioctl/ns-winioctl-storage_hw_firmware_activate)
+[**ATIVAÇÃO \_ DO FIRMWARE HW \_ DE \_ ARMAZENAMENTO**](/windows/desktop/api/winioctl/ns-winioctl-storage_hw_firmware_activate)
 </dt> <dt>
 
-[**\_download do \_ firmware de armazenamento do IOCTL \_**](/windows/desktop/api/WinIoctl/ni-winioctl-ioctl_storage_firmware_download)
+[**DOWNLOAD DO FIRMWARE DE ARMAZENAMENTO IOCTL \_ \_ \_**](/windows/desktop/api/WinIoctl/ni-winioctl-ioctl_storage_firmware_download)
 </dt> <dt>
 
-[**\_download de \_ firmware de hardware de armazenamento \_**](/windows/desktop/api/winioctl/ns-winioctl-storage_hw_firmware_download)
+[**DOWNLOAD \_ DO FIRMWARE DO HW DE \_ \_ ARMAZENAMENTO**](/windows/desktop/api/winioctl/ns-winioctl-storage_hw_firmware_download)
 </dt> <dt>
 
-[**\_informações de \_ obtenção do firmware de armazenamento do IOCTL \_ \_**](/windows/desktop/api/WinIoctl/ni-winioctl-ioctl_storage_firmware_get_info)
+[**OBTER INFORMAÇÕES SOBRE O \_ FIRMWARE DE \_ ARMAZENAMENTO \_ IOCTL \_**](/windows/desktop/api/WinIoctl/ni-winioctl-ioctl_storage_firmware_get_info)
 </dt> <dt>
 
-[**\_consulta de \_ informações de firmware de hardware de armazenamento \_ \_**](storage-hw-firmware-info-query.md)
+[**CONSULTA DE \_ INFORMAÇÕES DE FIRMWARE HW DE \_ \_ \_ ARMAZENAMENTO**](storage-hw-firmware-info-query.md)
 </dt> <dt>
 
-[**\_informações de \_ slot de firmware de hardware de armazenamento \_ \_**](storage-hw-firmware-slot-info.md)
+[**INFORMAÇÕES \_ DO SLOT DE FIRMWARE HW DE \_ \_ \_ ARMAZENAMENTO**](storage-hw-firmware-slot-info.md)
 </dt> </dl>
 
  

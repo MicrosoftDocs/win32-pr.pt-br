@@ -4,12 +4,12 @@ ms.assetid: ec0e367e-9ef9-4de6-9132-b462c233bc98
 title: Usando o exemplo de apoio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d4886c796691e83e02b58ddea129d60d5004c9f3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 47318b7bd4dbbad57fb82bec11e0a1293a0284c906c78fc7175d8a758ad477f2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105758505"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120083556"
 ---
 # <a name="using-the-sample-grabber"></a>Usando o exemplo de apoio
 
@@ -19,18 +19,18 @@ O filtro de [**apoio de exemplo**](sample-grabber-filter.md) é um filtro de tra
 
 Se você simplesmente deseja pegar um bitmap de um arquivo de vídeo, é mais fácil usar o objeto [detector de mídia (MediaDet)](media-detector--mediadet.md) . Consulte [captando um quadro de cartaz](grabbing-a-poster-frame.md) para obter detalhes. No entanto, o exemplo de apoio é mais flexível porque funciona com quase qualquer tipo de mídia (consulte [**ISampleGrabber:: SetMediaType**](isamplegrabber-setmediatype.md) para as poucas exceções) e oferece mais controle ao aplicativo.
 
--   [Criar o Gerenciador de gráfico de filtro](#create-the-filter-graph-manager)
--   [Adicionar o exemplo de apoio ao grafo de filtro](#add-the-sample-grabber-to-the-filter-graph)
+-   [criar o filtro Graph Manager](#create-the-filter-graph-manager)
+-   [Adicione o exemplo de apoio ao filtro Graph](#add-the-sample-grabber-to-the-filter-graph)
 -   [Definir o tipo de mídia](#set-the-media-type)
--   [Criar o grafo de filtro](#build-the-filter-graph)
--   [Executar o grafo](#run-the-graph)
+-   [Criar o filtro Graph](#build-the-filter-graph)
+-   [Executar o Graph](#run-the-graph)
 -   [Obter o exemplo](#grab-the-sample)
 -   [Código de exemplo](#example-code)
 -   [Tópicos relacionados](#related-topics)
 
-## <a name="create-the-filter-graph-manager"></a>Criar o Gerenciador de gráfico de filtro
+## <a name="create-the-filter-graph-manager"></a>criar o filtro Graph Manager
 
-Para começar, crie o [Gerenciador do grafo de filtro](filter-graph-manager.md) e consulte as interfaces [**IMediaControl**](/windows/desktop/api/Control/nn-control-imediacontrol) e [**IMediaEventEx**](/windows/desktop/api/Control/nn-control-imediaeventex) .
+para começar, crie o [filtro Graph gerenciador](filter-graph-manager.md) e consulte as interfaces [**IMediaControl**](/windows/desktop/api/Control/nn-control-imediacontrol) e [**IMediaEventEx**](/windows/desktop/api/Control/nn-control-imediaeventex) .
 
 
 ```C++
@@ -63,7 +63,7 @@ Para começar, crie o [Gerenciador do grafo de filtro](filter-graph-manager.md) 
 
 
 
-## <a name="add-the-sample-grabber-to-the-filter-graph"></a>Adicionar o exemplo de apoio ao grafo de filtro
+## <a name="add-the-sample-grabber-to-the-filter-graph"></a>Adicione o exemplo de apoio ao filtro Graph
 
 Crie uma instância do filtro de apoio de exemplo e addit para o grafo de filtro. Consulte o filtro de apoio de exemplo para a interface [**ISampleGrabber**](isamplegrabber.md) .
 
@@ -120,11 +120,11 @@ Quando o elemento de exemplo se conecta, ele compara esse tipo de mídia com o t
 
 
 
-## <a name="build-the-filter-graph"></a>Criar o grafo de filtro
+## <a name="build-the-filter-graph"></a>Criar o filtro Graph
 
-Agora você pode criar o restante do gráfico de filtro. Como o exemplo de apoio se conectará apenas usando o tipo de mídia que você especificou, isso permite que você aproveite os mecanismos de [conexão inteligente](intelligent-connect.md) do Gerenciador de grafo de filtro ao criar o grafo.
+Agora você pode criar o restante do gráfico de filtro. como o exemplo de apoio se conectará apenas usando o tipo de mídia especificado, isso permite que você aproveite os mecanismos de [Conexão inteligentes](intelligent-connect.md) do Graph Manager ao criar o grafo.
 
-Por exemplo, se você tiver especificado vídeo descompactado, poderá conectar um filtro de origem ao complemento de exemplo e o Gerenciador de gráfico de filtro adicionará automaticamente o analisador de arquivo e o decodificador. O exemplo a seguir usa a função auxiliar ConnectFilters, que está listada em [conectar dois filtros](connect-two-filters.md):
+por exemplo, se você tiver especificado vídeo descompactado, poderá conectar um filtro de origem ao complemento de exemplo e o filtro Graph Manager adicionará automaticamente o analisador de arquivo e o decodificador. o exemplo a seguir usa a função auxiliar ConnectFilters, que é listada em [Conexão dois filtros](connect-two-filters.md):
 
 
 ```C++
@@ -200,7 +200,7 @@ O exemplo a seguir conecta o exemplo de apoio ao filtro de renderizador nulo:
 
 Lembre-se de que colocar o exemplo de apoio entre um decodificador de vídeo e o renderizador de vídeo pode prejudicar significativamente o desempenho da renderização. O exemplo de amostra é um filtro de trans-in-Place, o que significa que o buffer de saída é o mesmo que o buffer de entrada. Para a renderização de vídeo, é provável que o buffer de saída esteja localizado na placa gráfica, em que as operações de leitura são muito mais lentas, comparadas com as operações de leitura na memória principal.
 
-## <a name="run-the-graph"></a>Executar o grafo
+## <a name="run-the-graph"></a>Executar o Graph
 
 O exemplo de apoio Opera em um dos dois modos:
 
@@ -211,7 +211,7 @@ Este artigo descreve o modo de buffer. (Antes de usar o modo de retorno de chama
 
 Opcionalmente, chame o método [**ISampleGrabber:: SetOneShot**](isamplegrabber-setoneshot.md) com o valor **true**. Isso faz com que o exemplo de apoio Pare depois de receber o primeiro exemplo de mídia, o que é útil se você quiser pegar um único quadro a partir do fluxo. Procure o tempo desejado, execute o grafo e aguarde o evento de [**\_ conclusão do EC**](ec-complete.md) . Observe que o nível de precisão do quadro depende da origem. Por exemplo, procurar um arquivo MPEG geralmente não é preciso de quadros.
 
-Para executar o grafo o mais rápido possível, ative o relógio do grafo, conforme descrito em [definindo o relógio do grafo](setting-the-graph-clock.md).
+para executar o grafo o mais rápido possível, ative o relógio do grafo, conforme descrito em [definindo o relógio de Graph](setting-the-graph-clock.md).
 
 O exemplo a seguir habilita o modo único e o modo de buffer, executa o gráfico de filtro e aguarda a conclusão.
 
@@ -569,7 +569,7 @@ HRESULT WriteBitmap(PCWSTR pszFileName, BITMAPINFOHEADER *pBMI, size_t cbBMI,
 
 <dl> <dt>
 
-[Usando os serviços de edição do DirectShow](using-directshow-editing-services.md)
+[usando DirectShow serviços de edição](using-directshow-editing-services.md)
 </dt> </dl>
 
  

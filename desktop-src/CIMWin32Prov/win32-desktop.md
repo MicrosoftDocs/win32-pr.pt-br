@@ -1,8 +1,8 @@
 ---
-description: A \_ classe Win32 DesktopWMI representa as características comuns da área de trabalho de um usuário. As propriedades dessa classe podem ser modificadas pelo usuário para personalizar a área de trabalho.
+description: A classe Win32 \_ DesktopWMI representa as características comuns da área de trabalho de um usuário. As propriedades dessa classe podem ser modificadas pelo usuário para personalizar a área de trabalho.
 ms.assetid: 9615a443-7611-4c30-9693-ea71b09b013b
 ms.tgt_platform: multiple
-title: Classe Win32_Desktop
+title: Win32_Desktop classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -35,16 +35,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 1d005104cb663a680bac080b7ff9b6529fd9b7a1
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 5c59adebd2fdf3c0727016473e6c347be3af139d539bb007c794eb2aafb4c1e8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826689"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120002876"
 ---
-# <a name="win32_desktop-class"></a>\_Classe de área de trabalho Win32
+# <a name="win32_desktop-class"></a>Classe Win32 \_ Desktop
 
-A [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **\_ da área de trabalho do Win32** representa as características comuns da área de trabalho de um usuário. As propriedades dessa classe podem ser modificadas pelo usuário para personalizar a área de trabalho.
+A **classe WMI do Win32 \_ Desktop** representa as características comuns da área de trabalho de um usuário.[](/windows/desktop/WmiSdk/retrieving-a-class) As propriedades dessa classe podem ser modificadas pelo usuário para personalizar a área de trabalho.
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas. As propriedades são listadas em ordem alfabética, não em ordem MOF.
 
@@ -80,26 +80,26 @@ class Win32_Desktop : CIM_Setting
 
 ## <a name="members"></a>Membros
 
-A classe de **\_ área de trabalho Win32** tem estes tipos de membros:
+A **classe Win32 \_ Desktop** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe de **\_ área de trabalho Win32** tem essas propriedades.
+A **classe Win32 \_ Desktop** tem essas propriedades.
 
 <dl> <dt>
 
 **BorderWidth**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| . \\ \\ Painel de controle padrão \\ \\ Desktop \\ \\ WindowMetrics \| BorderWidth ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry. \| DEFAULT \\ \\ Painel de Controle \\ \\ \\ \\ DesktopMetrics \| BorderWidth")
 </dt> </dl>
 
 Largura das bordas em torno de todas as janelas com bordas ajustáveis.
@@ -117,41 +117,41 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Breve descrição textual do objeto atual.
+Descrição textual curta do objeto atual.
 
-Essa propriedade é herdada [**da \_ configuração de CIM**](cim-setting.md).
+Essa propriedade é herdada da [**Configuração cim \_**](cim-setting.md).
 
 </dd> <dt>
 
 **CoolSwitch**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("painel de controle do Win32Registry \| \\ \\ Desktop \| CoolSwitch")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| Painel de Controle Desktop \\ \\ \| CoolSwitch")
 </dt> </dl>
 
-A alternância rápida de tarefas está ativada. A alternância rápida de tarefas permite que o usuário alterne entre janelas usando a combinação de teclado **ALT + TAB** .
+A alternação rápida de tarefas está 100000001. A troca rápida de tarefas permite que o usuário alternar entre janelas usando a **combinação de teclado ALT+TAB.**
 
 </dd> <dt>
 
 **CursorBlinkRate**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("painel de controle do Win32Registry \| \\ \\ Desktop \| CursorBlinkRate"), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("milissegundos")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| Painel de Controle Desktop \\ \\ \| CursorBlinkRate"), [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("milissegundos")
 </dt> </dl>
 
 Período de tempo entre o cursor sucessivo piscar.
@@ -171,20 +171,20 @@ Tipo de acesso: Somente leitura
 
 Descrição textual do objeto atual.
 
-Essa propriedade é herdada [**da \_ configuração de CIM**](cim-setting.md).
+Essa propriedade é herdada da [**Configuração cim \_**](cim-setting.md).
 
 </dd> <dt>
 
 **DragFullWindows**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("painel de controle do Win32Registry \| \\ \\ Desktop \| DragFullWindows")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| Painel de Controle Desktop \\ \\ \| DragFullWindows")
 </dt> </dl>
 
 O conteúdo de uma janela é mostrado quando um usuário move a janela.
@@ -194,16 +194,16 @@ O conteúdo de uma janela é mostrado quando um usuário move a janela.
 **GridGranularity**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("painel de controle do Win32Registry \| \\ \\ Desktop \| GridGranularity"), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("8 pixels")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| Painel de Controle Desktop \\ \\ \| GridGranularity"), [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("8 pixels")
 </dt> </dl>
 
-Espaçamento da grade à qual as janelas estão associadas na área de trabalho. Isso facilita a organização do Windows. O espaçamento normalmente é suficiente para que o usuário não perceba.
+Espaçamento da grade à que as janelas estão vinculadas na área de trabalho. Isso facilita a organização de janelas. O espaçamento geralmente é suficiente para que o usuário não o observe.
 
 Example: 1
 
@@ -212,13 +212,13 @@ Example: 1
 **IconSpacing**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| . \\ \\ Painel de controle padrão \\ \\ Desktop \\ \\ WindowMetrics \| IconSpacing "), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) (" pixels ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry. \| Default \\ \\ Painel de Controle Desktop \\ \\ \\ \\ \| IconSpacing"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("pixels")
 </dt> </dl>
 
 Espaçamento entre ícones.
@@ -236,7 +236,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| . \\ \\ Painel de controle padrão \\ \\ Desktop \\ \\ WindowMetrics \| IconFont ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry. \| DEFAULT \\ \\ Painel de Controle Desktop \\ \\ \\ \\ IconMetricsFont") \|
 </dt> </dl>
 
 Fonte usada para os nomes dos ícones.
@@ -248,13 +248,13 @@ Exemplo: "MS San Serif"
 **IconTitleSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("win32api \| fonte e estruturas de texto \| [**LOGFONTW**](/windows/win32/api/wingdi/ns-wingdi-logfonta) \| lfHeight"), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("ponto")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API \| Font and Text Structures \| [**LOGFONTW**](/windows/win32/api/wingdi/ns-wingdi-logfonta) \| lfHeight"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("point")
 </dt> </dl>
 
 Tamanho da fonte do ícone.
@@ -266,16 +266,16 @@ Exemplo: 9
 **IconTitleWrap**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| . \\ \\ Painel de controle padrão \\ \\ Desktop \\ \\ WindowMetrics \| IconTitleWrap ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry. \| Default \\ \\ Painel de Controle Desktop \\ \\ \\ \\ IconMetricsTitleWrap") \|
 </dt> </dl>
 
-O texto do título do ícone é quebrado para a próxima linha.
+O texto do título do ícone é wraps para a próxima linha.
 
 </dd> <dt>
 
@@ -288,7 +288,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI")
+Qualificadores: [**chave**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI")
 </dt> </dl>
 
 Nome que identifica o perfil da área de trabalho atual.
@@ -306,26 +306,26 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| . Padrão de \\ \\ área de trabalho do painel de controle padrão \\ \\ \| ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry. \| Default \\ \\ Painel de Controle Desktop \\ \\ \| Pattern")
 </dt> </dl>
 
-Nome do padrão usado como o plano de fundo da área de trabalho.
+Nome do padrão usado como a tela de fundo para a área de trabalho.
 
 </dd> <dt>
 
 **ScreenSaverActive**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| . \\ \\ Painel de controle padrão \\ \\ Desktop \| ScreenSaveActive ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry. \| DEFAULT \\ \\ Painel de Controle \\ \\ Desktop \| ScreenSaveActive")
 </dt> </dl>
 
-A proteção de tela está ativa.
+A economia de tela está ativa.
 
 </dd> <dt>
 
@@ -338,25 +338,25 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| . \\ \\SCRNSAVE.EXE da área de trabalho do painel de controle padrão \\ \\ \| ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry. \| DEFAULT \\ \\ Painel de Controle Desktop \\ \\ \|SCRNSAVE.EXE")
 </dt> </dl>
 
-Nome do arquivo executável da proteção de tela atual.
+Nome do arquivo executável da salvação de tela atual.
 
-Exemplo: "LOGON. SCR
+Exemplo: "LOGON. SCR"
 
 </dd> <dt>
 
 **ScreenSaverSecure**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| . \\ \\ Painel de controle padrão \\ \\ Desktop \| ScreenSaverIsSecure ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry. \| DEFAULT \\ \\ Painel de Controle Desktop \\ \\ \| ScreenSaverIsSecure")
 </dt> </dl>
 
 A senha está habilitada para a proteção de tela.
@@ -366,20 +366,20 @@ A senha está habilitada para a proteção de tela.
 **ScreenSaverTimeout**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| . \\ \\ Painel de controle padrão \\ \\ Desktop \| ScreenSaveTimeOut "), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) (" segundos ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry. \| DEFAULT \\ \\ Painel de Controle Desktop \\ \\ \| ScreenSaveTimeOut"), [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("segundos")
 </dt> </dl>
 
-Quantidade de tempo que o passa antes que a proteção de tela seja iniciada.
+Quantidade de tempo que passa antes do início da economia de tela.
 
 </dd> <dt>
 
-**SettingID**
+**Settingid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -388,12 +388,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Identificador pelo qual o objeto atual é conhecido.
 
-Essa propriedade é herdada [**da \_ configuração de CIM**](cim-setting.md).
+Essa propriedade é herdada da [**Configuração cim \_**](cim-setting.md).
 
 </dd> <dt>
 
@@ -406,10 +406,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| . \\ \\ \\ \\ Papel de parede da área de trabalho do painel de controle padrão \| ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry. \| DEFAULT Painel de Controle \\ \\ \\ \\ Desktop \| Wallpaper")
 </dt> </dl>
 
-Nome do arquivo para o design do papel de parede no plano de fundo da área de trabalho.
+Nome do arquivo para o design de papel de parede na tela de fundo da área de trabalho.
 
 Exemplo: "WINNT.BMP"
 
@@ -418,40 +418,40 @@ Exemplo: "WINNT.BMP"
 **WallpaperStretched**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| . \\ \\ Painel de controle padrão papel de parede de \\ \\ área de trabalho \| ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry. \| DEFAULT \\ \\ Painel de Controle Desktop \\ \\ \| WallpaperStyle")
 </dt> </dl>
 
-O papel de parede é alongado para preencher a tela inteira. Microsoft Plus! deve ser instalado antes que essa opção esteja disponível. Se **for false**, o papel de parede manterá suas dimensões originais no plano de fundo da área de trabalho.
+O papel de parede é estendido para preencher toda a tela. Microsoft Plus! deve ser instalado antes que essa opção seja disponibilizada. Se **FALSE**, o papel de parede manterá suas dimensões originais na tela de fundo da área de trabalho.
 
 </dd> <dt>
 
 **WallpaperTiled**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| . \\ \\ Painel de controle padrão \\ \\ Desktop \| TileWallpaper ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry. \| DEFAULT \\ \\ Painel de Controle Desktop \\ \\ \| TileWallpaper")
 </dt> </dl>
 
-O papel de parede é enlado ou centralizado.
+O papel de parede é lado a lado ou centralizado.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-A classe de **\_ área de trabalho Win32** é derivada da [**\_ configuração CIM**](cim-setting.md).
+A **classe Win32 \_ Desktop** é derivada da [**configuração cim \_**](cim-setting.md).
 
-O processo de chamada que usa essa classe deve ter o privilégio **se \_ Restore \_ Name** no computador em que o registro reside. Por exemplo, se você enumerar essa classe no computador local, a conta sob a qual seu aplicativo é executado deverá ter esse privilégio. Para obter mais informações, consulte [executando operações privilegiadas](/windows/desktop/WmiSdk/executing-privileged-operations).
+O processo de chamada que usa essa classe deve ter ES **\_ privilégio RESTORE \_ NAME** no computador no qual o Registro reside. Por exemplo, se você enumerar essa classe no computador local, a conta na qual o aplicativo é executado deverá ter esse privilégio. Para obter mais informações, consulte [Executando operações privilegiadas.](/windows/desktop/WmiSdk/executing-privileged-operations)
 
 ## <a name="examples"></a>Exemplos
 
@@ -499,8 +499,8 @@ Foreach ($dt in $desktops) {
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -509,7 +509,7 @@ Foreach ($dt in $desktops) {
 
 <dl> <dt>
 
-[**Configuração de CIM \_**](cim-setting.md)
+[**Configuração cim \_**](cim-setting.md)
 </dt> <dt>
 
 [Classes do sistema operacional](/previous-versions//aa392727(v=vs.85))

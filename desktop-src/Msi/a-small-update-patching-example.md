@@ -1,27 +1,27 @@
 ---
-description: Este exemplo ilustra como criar um pacote de patch que aplica uma pequena atualização ao pacote de instalação de exemplo abordado em um exemplo de instalação.
+description: Este exemplo ilustra como criar um pacote de patch que aplica uma pequena atualização ao pacote de instalação de exemplo discutido em Um exemplo de instalação.
 ms.assetid: 17dadd64-6e81-444a-985e-1b340e4f2ee5
-title: Um exemplo de aplicação de patch de atualização pequena
+title: Um pequeno exemplo de a patch de atualização
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 36d4997a326e8fea33086a75c9cf40ecef8cb997
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a0670693e9f5c6bf1c6b48c72e4b05b0f06703d69c08f46f6a2209b3d5046ea7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105750827"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120082966"
 ---
-# <a name="a-small-update-patching-example"></a>Um exemplo de aplicação de patch de atualização pequena
+# <a name="a-small-update-patching-example"></a>Um pequeno exemplo de a patch de atualização
 
-Este exemplo ilustra como criar um [pacote de patch](patch-packages.md) que aplica uma [pequena atualização](small-updates.md) ao pacote de instalação de exemplo abordado em [um exemplo de instalação](an-installation-example.md). Uma pequena atualização faz alterações em um ou mais arquivos de aplicativo que são considerados muito pequenos para garantir a alteração do código do produto. Para obter mais informações [, consulte patches e atualizações](patching-and-upgrades.md).
+Este exemplo ilustra como criar um pacote [](small-updates.md) [de patch](patch-packages.md) que aplica uma pequena atualização ao pacote de instalação de exemplo discutido em Um exemplo [de instalação](an-installation-example.md). Uma pequena atualização faz alterações em um ou mais arquivos de aplicativo que são considerados muito pequenos para justificar a alteração do código do produto. Para obter mais informações, [consulte Patching and Upgrades](patching-and-upgrades.md).
 
-Este exemplo ilustra como criar um pacote de patches Windows Installer que atualiza o recurso de concerto do produto hipotético MNP2000 para corrigir um erro no produto original. O pacote de patch de exemplo aplica uma pequena atualização ao produto que não exige a alteração do código do produto. Consulte o tópico sobre as [principais atualizações](major-upgrades.md) na seção [patches e atualizações](patching-and-upgrades.md) para obter mais informações sobre as principais atualizações.
+Este exemplo ilustra como criar um pacote de patch do Windows Installer que atualiza o recurso Concert do produto hipotético MNP2000 para corrigir um erro no produto original. O pacote de patch de exemplo aplica uma pequena atualização ao produto que não requer a alteração do código do produto. Consulte o tópico sobre [Atualizações principais](major-upgrades.md) na seção [Patches e Atualizações](patching-and-upgrades.md) para obter mais informações sobre atualizações principais.
 
 O pacote de atualização de exemplo tem as seguintes especificações:
 
--   Ele corrige um erro secundário no cronograma de concerto exibido pelo recurso de concerto.
--   Ele atualiza o código do pacote para refletir que o pacote de instalação foi alterado.
--   A pequena atualização pode ser aplicada por meio da aplicação de patch na instalação local do produto.
+-   Ele corrige um erro secundário na agenda de shows exibida pelo recurso Concert.
+-   Ele atualiza o código do pacote para refletir se o pacote de instalação foi alterado.
+-   A pequena atualização pode ser aplicada corrigindo a instalação local do produto.
 
 [Continuar](planning-a-small-update-patch.md)
 
