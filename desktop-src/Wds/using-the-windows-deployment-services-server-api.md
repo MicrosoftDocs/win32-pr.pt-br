@@ -1,27 +1,27 @@
 ---
 title: Uso da API de servidor de Serviços de Implantação do Windows
-description: Em ambientes em que a solução padrão WDS (serviços de implantação do Windows) não pode ser usada, o servidor WDS expõe uma API que permite aos desenvolvedores escrever plug-ins, conhecidos como provedores, para lidar com solicitações de PXE (Preboot Execution Environment).
+description: em ambientes em que a solução de WDS (serviços de implantação de Windows) padrão não pode ser usada, o servidor WDS expõe uma API que permite aos desenvolvedores escrever plug-ins, conhecidos como provedores, para lidar com solicitações de PXE (preboot execution environment).
 ms.assetid: 5e25654a-33c6-4c0f-acc3-e938d1f4a4e7
 keywords:
-- Serviços de implantação do Windows serviços de implantação do Windows, usando a API do servidor
+- Windows serviços de implantação Windows serviços de implantação, usando a API do servidor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d3634dffa73eddc9b5db92be6bc807cccbc5248f
-ms.sourcegitcommit: c2a1c4314550ea9bd202d28adfcc7bfe6180932f
+ms.openlocfilehash: 21ce7516e5279fecdfeecfa90edd8e3a0dad265562fa5ea59336367dbe157c5e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "103640338"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119999566"
 ---
 # <a name="using-the-windows-deployment-services-server-api"></a>Uso da API de servidor de Serviços de Implantação do Windows
 
-Em ambientes em que a solução padrão WDS (serviços de implantação do Windows) não pode ser usada, o servidor WDS expõe uma API que permite aos desenvolvedores escrever plug-ins, conhecidos como provedores, para lidar com solicitações de PXE (Preboot Execution Environment). Os desenvolvedores devem aderir às seguintes diretrizes ao escrever provedores PXE para o WDS.
+em ambientes em que a solução de WDS (serviços de implantação de Windows) padrão não pode ser usada, o servidor WDS expõe uma API que permite aos desenvolvedores escrever plug-ins, conhecidos como provedores, para lidar com solicitações de PXE (preboot execution environment). Os desenvolvedores devem aderir às seguintes diretrizes ao escrever provedores PXE para o WDS.
 
 ## <a name="install-the-wds-role-on-the-server"></a>Instalar a função do WDS no servidor
 
--   O WDS (serviços de implantação do Windows) é a versão revisada do RIS (serviços de instalação remota), você precisará da função de servidor do WDS para implementar o servidor PXE do WDS e os provedores.
--   O WDS substitui o RIS como o componente padrão a partir do Windows Server 2008 e do Windows Server 2003 com Service Pack 2 (SP2).
--   Você deve atualizar o servidor RIS para o WDS no Windows Server 2003 com Service Pack 1 (SP1). Você pode instalar a função de servidor do WDS com o [WAIK (Kit de instalação automatizada do Windows)](https://www.microsoft.com/download/details.aspx?id=10333).
+-   Windows Serviços de implantação (WDS) é a versão revisada do RIS (serviços de instalação remota), você precisará da função de servidor do WDS para implementar o servidor PXE do WDS e os provedores.
+-   o WDS substitui o RIS como o componente padrão a partir do Windows server 2008 e do Windows server 2003 com Service Pack 2 (SP2).
+-   você deve atualizar o servidor RIS para o WDS no Windows server 2003 com Service Pack 1 (SP1). você pode instalar a função de servidor do WDS com o [Windows WAIK (Kit de instalação automatizada)](https://www.microsoft.com/download/details.aspx?id=10333).
 
 ## <a name="register-providers"></a>Registrar provedores
 
@@ -29,7 +29,7 @@ Em ambientes em que a solução padrão WDS (serviços de implantação do Windo
     > [!Note]  
     > Ao instalar um provedor novo ou modificado, será necessário reiniciar o serviço WDS PXE para que as alterações entrem em vigor.
 
-     
+     
 
 -   Use a função [**PxeProviderRegister**](/windows/win32/api/WdsPxe/nf-wdspxe-pxeproviderregister) para registrar o provedor e adicioná-lo à lista. Use a função [**PxeProviderUnRegister**](/windows/win32/api/WdsPxe/nf-wdspxe-pxeproviderunregister) para cancelar o registro de um provedor registrado e removê-lo da lista.
 -   Especifique a sequência do provedor na lista ordenada. O índice de um provedor na lista não pode ser garantido porque outro provedor pode ser registrado posteriormente antes dele. Para inserir o provedor na lista antes ou depois de outro provedor registrado, primeiro use a função [**PxeProviderQueryIndex**](/windows/win32/api/WdsPxe/nf-wdspxe-pxeproviderqueryindex) para obter o índice do provedor registrado e, em seguida, registre o novo provedor ao especificar um valor de índice maior ou menor.
@@ -43,7 +43,7 @@ Em ambientes em que a solução padrão WDS (serviços de implantação do Windo
 -   Registre cada retorno de chamada no provedor durante o processamento da função [*PxeProviderInitialize*](pxeproviderinitialize.md) . Os retornos de chamada devem ser registrados com a função [**PxeRegisterCallback**](/windows/win32/api/WdsPxe/nf-wdspxe-pxeregistercallback) .
 -   Inicialize todos os recursos internos do provedor dentro do processamento de sua função [*PxeProviderInitialize*](pxeproviderinitialize.md) .
 
-## <a name="shutdown"></a>Desligar
+## <a name="shutdown"></a>Shutdown
 
 -   Implemente o retorno de chamada [*PxeProviderShutdown*](pxeprovidershutdown.md) . Todo provedor precisa ter um retorno de chamada *PxeProviderShutdown*.
 -   A função de retorno de chamada [*PxeProviderShutdown*](pxeprovidershutdown.md) deve desligar completamente o provedor e liberar todos os seus recursos.
@@ -96,15 +96,15 @@ Implemente o retorno de chamada [*PxeProviderRecvRequest*](pxeproviderrecvreques
 
 <dl> <dt>
 
-[Sobre a API dos serviços de implantação do Windows](about-the-windows-deployment-services-api.md)
+[sobre a API dos serviços de implantação Windows](about-the-windows-deployment-services-api.md)
 </dt> <dt>
 
 [Uso da API de cliente de Serviços de Implantação do Windows](using-the-windows-deployment-services-client-api.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

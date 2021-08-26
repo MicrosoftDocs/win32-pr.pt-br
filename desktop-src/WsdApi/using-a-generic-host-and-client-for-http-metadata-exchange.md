@@ -1,31 +1,31 @@
 ---
-description: Se o cliente e o host não puderem trocar metadados, um host genérico e um cliente poderão ser substituídos pelo host e cliente personalizados para ajudar a solucionar o problema.
+description: Se o cliente e o host não puderem trocar metadados, um host genérico e um cliente poderão ser substituídos pelo host personalizado e pelo cliente para ajudar a solucionar o problema.
 ms.assetid: 7e5c8444-b3ee-4e9c-984f-13d54f2bbfc0
-title: Usando um host genérico e um cliente para a troca de metadados HTTP
+title: Usando um host genérico e um cliente para metadados HTTP Exchange
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 36827dde8aa03fa15fc4beaa5917f1f2c3c36eca
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d6623b39989b613e725fb2103165c825425f20b53a4375d6791aa92cd3b99187
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105798382"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120030076"
 ---
-# <a name="using-a-generic-host-and-client-for-http-metadata-exchange"></a>Usando um host genérico e um cliente para a troca de metadados HTTP
+# <a name="using-a-generic-host-and-client-for-http-metadata-exchange"></a>Usando um host genérico e um cliente para metadados HTTP Exchange
 
-Se o cliente e o host não puderem trocar metadados, um host genérico e um cliente poderão ser substituídos pelo host e cliente personalizados para ajudar a solucionar o problema. Se o endereço do dispositivo ou os metadados do dispositivo não aparecerem na saída do cliente de depuração WSD, os endereços de transporte fornecidos ou o ambiente de rede poderão estar causando a falha. Para obter mais informações sobre o host e o cliente genéricos, consulte [ferramentas de depuração](debugging-tools.md).
+Se o cliente e o host não puderem trocar metadados, um host genérico e um cliente poderão ser substituídos pelo host personalizado e pelo cliente para ajudar a solucionar o problema. Se o endereço do dispositivo ou os metadados do dispositivo não aparecerem na saída do cliente de depuração do WSD, os endereços de transporte fornecidos ou o ambiente de rede poderão estar causando a falha. Para obter mais informações sobre o host genérico e o cliente, consulte [Ferramentas de depuração](debugging-tools.md).
 
-Se tiver verificado que um host genérico e um cliente podem concluir a troca de metadados WS-Discovery e HTTP, esse procedimento de diagnóstico pode ser ignorado e a solução de problemas pode ser continuada seguindo os procedimentos em [como usar o log do WinHTTP para verificar se há tráfego](using-winhttp-logging-to-verify-get-traffic.md).
+Se tiver sido verificado que um host genérico e um cliente podem concluir a troca de metadados WS-Discovery e HTTP, esse procedimento de diagnóstico poderá ser ignorado e a solução de problemas poderá ser continuada seguindo os procedimentos em Usando o registro em log [do WinHTTP](using-winhttp-logging-to-verify-get-traffic.md)para verificar obter tráfego.
 
-Se o host ou o cliente for um aplicativo em execução em um computador, o host ou cliente genérico deverá ser executado no mesmo contexto de segurança que o host ou cliente real. Por exemplo, se o host ou o cliente real for executado como administrador, o host ou cliente genérico deverá ser executado como administrador. Além disso, se o host ou o cliente for um dispositivo autônomo, ele deverá ser completamente substituído por um computador que esteja executando um cliente ou host genérico em um contexto de segurança que garanta acesso ilimitado à rede (por exemplo, executando como administrador).
+Se o host ou o cliente for um aplicativo em execução em um computador, o host genérico ou o cliente deverá ser executado no mesmo contexto de segurança que o host ou o cliente real. Por exemplo, se o host ou cliente real for executado como Administrador, o host genérico ou o cliente deverá ser executado como Administrador. Além disso, se o host ou o cliente for um dispositivo autônomo, ele deverá ser completamente substituído por um computador que executa um host ou cliente genérico em um contexto de segurança que garanta acesso ilimitado à rede (por exemplo, em execução como Administrador).
 
 **Para usar um host genérico e um cliente para solucionar problemas de troca de metadados HTTP**
 
-1.  Abra una janela de prompt de comando.
-2.  Execute o seguinte comando: **WSDDebug \_host.exe/Mode Metadata/Start**
+1.  Abra uma janela de prompt de comando.
+2.  Execute o seguinte comando: **WSDDebughost.exe \_ /mode metadata /start**
 
     > [!Note]  
-    > Uma caixa de diálogo **alerta de segurança do Windows** pode ser exibida. Nesse caso, clique em **desbloquear** para permitir que o host de depuração WSD seja executado.
+    > Uma **Segurança do Windows caixa de diálogo** Alerta pode aparecer. Em caso afirmatório, **clique em Desbloquear** para permitir que o Host de Depuração do WSD seja executado.
 
      
 
@@ -38,13 +38,13 @@ Se o host ou o cliente for um aplicativo em execução em um computador, o host 
     Host metadata>
     ```
 
-3.  Execute o seguinte comando: **WSDDebug \_client.exe/Mode Metadata/Hello off/resolve** *<id>* . Substitua *<id>* pela ID do dispositivo identificada na etapa 2.
+3.  Execute o seguinte comando: **WSDDebug \_client.exe /mode metadata /hello off /resolve** *<id>* . Substitua *<id>* pela ID do dispositivo identificada na etapa 2.
     > [!Note]  
-    > Uma caixa de diálogo **alerta de segurança do Windows** pode ser exibida. Nesse caso, clique em **desbloquear** para permitir que o cliente de depuração WSD seja executado.
+    > Uma **Segurança do Windows caixa de diálogo** Alerta pode aparecer. Em caso afirmatório, **clique em Desbloquear** para permitir que o Cliente de Depuração do WSD seja executado.
 
      
 
-O cliente de depuração WSD gera uma saída semelhante à seguinte.
+O cliente de depuração do WSD gera uma saída semelhante à seguinte.
 
 ``` syntax
 WSDAPI Debug Client
@@ -98,25 +98,25 @@ End of metadata
 Client metadata>
 ```
 
-O cliente de depuração WSD pode gerar muita saída em uma rede com muitos dispositivos DPWS. A saída pode ser redirecionada para um arquivo para facilitar a análise. Digite o arquivo de **log** de texto *<filename>* no prompt do cliente de depuração WSD para redirecionar a saída para um arquivo. O redirecionamento de saída pode ser interrompido digitando o registro de tempo de **interrupção do log** no prompt do cliente de depuração WSD.
+O cliente de depuração do WSD pode gerar muita saída em uma rede com muitos dispositivos DPWS. A saída pode ser redirecionada para um arquivo para uma análise mais fácil. Digite **log no** prompt do Cliente de Depuração do *<filename>* WSD para redirecionar a saída para um arquivo. O redirecionamento de saída pode ser interrompido digitando **log no** prompt do Cliente de Depuração do WSD.
 
-Anote o endereço de referência do ponto de extremidade (EPR). Esse endereço de EPR deve corresponder à ID do dispositivo identificada na etapa 2 acima. Além disso, verifique se o cliente de depuração WSD imprimiu completamente os metadados do dispositivo. Os metadados do dispositivo começam com `Metadata for host` e terminam com `End of metadata` .
+Anote o endereço de EPR (referência de ponto de extremidade). Esse endereço de EPR deve corresponder à ID do dispositivo identificada na etapa 2 acima. Além disso, verifique se o cliente de depuração do WSD imprimiu completamente os metadados do dispositivo. Os metadados do dispositivo começam com `Metadata for host` e terminam com `End of metadata` .
 
-Se a ID do dispositivo e os metadados do dispositivo aparecerem corretamente na saída do cliente de depuração WSD, a falha do aplicativo provavelmente não estará relacionada aos endereços de transporte fornecidos, ao sistema operacional ou ao ambiente de rede. Substitua o host genérico e o cliente pelo host e cliente personalizados e continue a solução de problemas seguindo os procedimentos em [como usar o log do WinHTTP para verificar o tráfego Get](using-winhttp-logging-to-verify-get-traffic.md).
+Se a ID do dispositivo e os metadados do dispositivo aparecerem corretamente na saída do cliente de depuração do WSD, a falha do aplicativo provavelmente não está relacionada aos endereços de transporte fornecidos, ao sistema operacional ou ao ambiente de rede. Substitua o host genérico e o cliente pelo host personalizado e pelo cliente e continue a solução de problemas seguindo os procedimentos em Usando o registro em log [do WinHTTP](using-winhttp-logging-to-verify-get-traffic.md)para verificar obter tráfego.
 
-Se o endereço do dispositivo e os metadados do dispositivo não aparecerem na saída do cliente de depuração WSD, a falha poderá ter uma ou mais das seguintes causas:
+Se o endereço do dispositivo e os metadados do dispositivo não aparecerem na saída do cliente de depuração do WSD, a falha poderá ter uma ou mais das seguintes causas:
 
--   O endereço de transporte anunciado pelo host está incorreto ou malformado. O cliente de depuração WSD tenta obter os metadados do dispositivo da URL fornecida no elemento **XAddrs** de uma mensagem [ProbeMatches](probematches-message.md) ou [ResolveMatches](resolvematches-message.md) . A URL usada para troca de metadados aparece na saída do cliente de depuração WSD, prefixada pela frase `Using xAddr` . O exemplo a seguir mostra o XAddrs usado para troca de metadados na saída do cliente de depuração WSD acima.
+-   O endereço de transporte anunciado pelo host está incorreto ou malformado. O cliente de depuração do WSD tenta obter metadados de dispositivo da URL fornecida no **elemento XAddrs** de uma [mensagem ProbeMatches](probematches-message.md) [ou ResolveMatches.](resolvematches-message.md) A URL usada para troca de metadados aparece na saída do Cliente de Depuração do WSD, prefixada pela frase `Using xAddr` . O exemplo a seguir mostra os XAddrs usados para troca de metadados na saída do cliente de depuração do WSD acima.
 
     ``` syntax
     Using xAddr: https://[::1]:5357/37f86d35-e6ac-4241-964f-1d9ae46fb366
     ```
 
-    Se o XAddrs fornecido não estiver em conformidade com as [regras de validação do XAddr](xaddr-validation-rules.md), o cliente de depuração WSD não poderá obter os metadados do dispositivo.
+    Se os XAddrs fornecidos não estão em conformidade com as regras de validação [XAddr,](xaddr-validation-rules.md)o Cliente de Depuração do WSD não poderá obter os metadados do dispositivo.
 
--   O aplicativo está sendo executado no contexto de segurança incorreto. Verifique se o aplicativo está usando as credenciais corretas e se o cliente e o host têm permissão suficiente para acessar a rede.
--   A configuração do firewall está incorreta. Siga as instruções em [inspecionando as configurações de adaptador e firewall](inspecting-adapter-and-firewall-settings.md) para verificar se as configurações do firewall do Windows estão corretas e se não há outras regras descartando os pacotes. O cliente e o host também podem ser copiados em um computador "original" (um com uma instalação padrão do sistema operacional que nunca tenha sido unida a um domínio) para tentar reproduzir a falha.
--   Uma política IPSec está bloqueando o aplicativo. Copie o cliente e o host em um computador que não esteja sujeito a diretivas IPSec e tente reproduzir a falha.
+-   O aplicativo está em execução no contexto de segurança errado. Verifique se o aplicativo está usando as credenciais corretas e se o cliente e o host têm permissão suficiente para acessar a rede.
+-   A configuração do firewall está errada. Siga as [](inspecting-adapter-and-firewall-settings.md) instruções em Inspecionando o adaptador e Configurações firewall para verificar se as configurações Windows Firewall do Windows estão corretas e se não há outras regras descartando os pacotes. O cliente e o host também podem ser copiados em um computador "pristine" (um com uma instalação de sistema operacional padrão que nunca foi ingressada em um domínio) para tentar reproduzir a falha.
+-   Uma política de IPSec está bloqueando o aplicativo. Copie o cliente e o host em um computador que não está sujeito a políticas de IPSec e tente reproduzir a falha.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -125,7 +125,7 @@ Se o endereço do dispositivo e os metadados do dispositivo não aparecerem na s
 [Procedimentos de diagnóstico do WSDAPI](wsdapi-diagnostic-procedures.md)
 </dt> <dt>
 
-[Introdução com a solução de problemas de WSDAPI](getting-started-with-wsdapi-troubleshooting.md)
+[Ponto de Partida solução de problemas do WSDAPI](getting-started-with-wsdapi-troubleshooting.md)
 </dt> </dl>
 
  

@@ -15,12 +15,12 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 86c14924828c924b3bbbca3bb1a5f822437ec4c9
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 1e204b4f89cced7cf0bd5cdcb21702c37c241a81abfbc12d8644eafdb3c7c7ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105747720"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119988406"
 ---
 # <a name="cd3dx12_pipeline_state_stream_ib_strip_cut_value-structure"></a>\_Estrutura do \_ \_ valor de \_ \_ \_ recorte de \_ faixa do CD3DX12 de fluxo do Stream IB
 

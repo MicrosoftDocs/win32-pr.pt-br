@@ -4,12 +4,12 @@ ms.assetid: 8b47a007-525c-4d02-8723-d6217600041e
 title: Propriedade AVEncMPVUseConcealmentMotionVectors (Codecapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d5a9316e257ebbbb8ba72ce027fe4c8c84db92b
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: f2335eaf57e0fdcddcd52a66f9645d3467e8feea1d866e199b10a030728b793a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103919738"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119999886"
 ---
 # <a name="avencmpvuseconcealmentmotionvectors-property"></a>Propriedade AVEncMPVUseConcealmentMotionVectors
 
@@ -35,9 +35,9 @@ Se o valor for **Variant \_ true**, o codificador usará os vetores de movimento
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos do Windows 2000 Professional \[ Desktop aplicativos \| UWP\]<br/>                     |
-| Servidor mínimo com suporte<br/> | Aplicativos da área de trabalho do Windows 2000 Server aplicativos \[ \| UWP\]<br/>                           |
-| parâmetro<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | aplicativos Windows 2000 Professional \[ desktop aplicativos \| UWP\]<br/>                     |
+| Servidor mínimo com suporte<br/> | Windows \[ aplicativos da área de trabalho do servidor 2000 \| aplicativo UWP\]<br/>                           |
+| Cabeçalho<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
 
 
 

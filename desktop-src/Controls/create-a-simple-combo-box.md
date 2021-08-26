@@ -4,12 +4,12 @@ description: Este tópico descreve como criar, adicionar itens e recuperar itens
 ms.assetid: E432AEC0-6C06-40C7-BBFE-B66C21DB8ACA
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c4175d435ac78795e7020fd84099d512cc65be20
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: eb1ab672e0beea90d07eadf05f14ffdc4a8181a4da7bf7940af50b00ddc69cde
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104454379"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119920806"
 ---
 # <a name="how-to-create-a-simple-combo-box"></a>Como criar uma caixa de combinação simples
 
@@ -24,12 +24,12 @@ Este tópico descreve como criar, adicionar itens e recuperar itens de uma caixa
 
 ### <a name="technologies"></a>Tecnologias
 
--   [Controles do Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
 -   C/C++
--   Programação da interface do usuário do Windows
+-   Windows Programação de interface do usuário
 
 ## <a name="instructions"></a>Instruções
 
@@ -102,7 +102,7 @@ Quando o usuário faz uma seleção na lista, a caixa de combinação envia uma 
 > [!Note]  
 > A notificação [CBN \_ SELCHANGE](cbn-selchange.md) é enviada e processada antes que o item seja colocado no campo de seleção da caixa de combinação. Como resultado, neste exemplo, o item selecionado não aparecerá no campo de seleção até que a caixa de mensagem seja fechada.
 
- 
+ 
 
 
 ```C++
@@ -498,6 +498,6 @@ LRESULT CALLBACK DemoApp::WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM
 [ComboBox](combo-boxes.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

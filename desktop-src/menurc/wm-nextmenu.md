@@ -1,9 +1,9 @@
 ---
-title: Mensagem de WM_NEXTMENU (WinUser. h)
-description: Enviado a um aplicativo quando a tecla de seta para a direita ou para a esquerda é usada para alternar entre a barra de menus e o menu do sistema.
+title: WM_NEXTMENU mensagem (Winuser.h)
+description: Enviado para um aplicativo quando a tecla de seta para a direita ou para a esquerda é usada para alternar entre a barra de menus e o menu do sistema.
 ms.assetid: 3fa50fd3-47a6-4dae-9ceb-2abb6626e0a6
 keywords:
-- WM_NEXTMENU menus de mensagens e outros recursos
+- WM_NEXTMENU menus de mensagem e outros recursos
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ecb8efe8c80a3355a30ab0abf28019f87b33963
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 635ce19efbcfdfd8451f929affbbe0fe2b2c000bc4912977062f3fba2c54e9c7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103919199"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119952076"
 ---
-# <a name="wm_nextmenu-message"></a>Mensagem do WM \_ NEXTMENU
+# <a name="wm_nextmenu-message"></a>Mensagem \_ WM NEXTMENU
 
-Enviado a um aplicativo quando a tecla de seta para a direita ou para a esquerda é usada para alternar entre a barra de menus e o menu do sistema.
+Enviado para um aplicativo quando a tecla de seta para a direita ou para a esquerda é usada para alternar entre a barra de menus e o menu do sistema.
 
 
 ```C++
@@ -39,20 +39,20 @@ Enviado a um aplicativo quando a tecla de seta para a direita ou para a esquerda
 *wParam* 
 </dt> <dd>
 
-O código de chave virtual da chave. Consulte [**códigos de chave virtual**](/windows/desktop/inputdev/virtual-key-codes).
+O código de chave virtual da chave. Consulte [**Códigos de chave virtual.**](/windows/desktop/inputdev/virtual-key-codes)
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Um ponteiro para uma estrutura [**MDINEXTMENU**](/windows/win32/api/winuser/ns-winuser-mdinextmenu) que contém informações sobre o menu a ser ativado.
+Um ponteiro para uma [**estrutura MMAXXTMENU**](/windows/win32/api/winuser/ns-winuser-mdinextmenu) que contém informações sobre o menu a ser ativado.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Ao responder a essa mensagem, o aplicativo pode especificar o menu para alternar para o membro **hmenuNext** de [**MDINEXTMENU**](/windows/win32/api/winuser/ns-winuser-mdinextmenu) e a janela para receber as mensagens de notificação de menu no membro **hWndNext** da estrutura **MDINEXTMENU** . Você deve definir ambos os membros para que as alterações entrem em vigor (elas são inicialmente **nulas**).
+Ao responder a essa mensagem, o aplicativo pode especificar o menu para o qual alternar no **membro hmenuNext** de [**M FITNESSXTMENU**](/windows/win32/api/winuser/ns-winuser-mdinextmenu) e na janela para receber as mensagens de notificação de menu no **hwndNext** membro da estrutura **MWNXTMENU.** Você deve definir os dois membros para que as alterações entre em vigor (inicialmente são **NULL).**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -62,7 +62,7 @@ Ao responder a essa mensagem, o aplicativo pode especificar o menu para alternar
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -73,10 +73,10 @@ Ao responder a essa mensagem, o aplicativo pode especificar o menu para alternar
 **Referência**
 </dt> <dt>
 
-[**MDINEXTMENU**](/windows/win32/api/winuser/ns-winuser-mdinextmenu)
+[**MARDXTMENU**](/windows/win32/api/winuser/ns-winuser-mdinextmenu)
 </dt> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
 [Menus](menus.md)

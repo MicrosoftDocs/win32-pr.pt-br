@@ -4,12 +4,12 @@ ms.assetid: 74ce5eea-5430-48d3-9640-f23c8bbdc937
 title: Propriedade ServicePackLevelMinor
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c057f33ada8abe4acd68ff824ffb0d2b0282632e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 905305f1d9db239682ca50de9151ef6086e020b432ad0f409143a3502932a98b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105787068"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120039846"
 ---
 # <a name="servicepacklevelminor-property"></a>Propriedade ServicePackLevelMinor
 
@@ -17,7 +17,7 @@ A propriedade **ServicePackLevelMinor** é usada em conjunto com a propriedade [
 
 ## <a name="remarks"></a>Comentários
 
-Essa propriedade é definida somente no Windows 2000.
+esta propriedade é definida somente no Windows 2000.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -25,7 +25,7 @@ Essa propriedade é definida somente no Windows 2000.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou no Windows Vista. Windows Installer no Windows Server 2003 ou no Windows XP. Consulte os [requisitos de Run-Time Windows Installer](windows-installer-portal.md) para obter informações sobre a Service Pack mínima do Windows exigida por uma versão Windows Installer.<br/> |
+| Versão<br/> | Windows instalador 5,0 em Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou Windows Vista. Windows instalador no Windows Server 2003 ou Windows XP. consulte os [requisitos de Run-Time Windows Installer](windows-installer-portal.md) para obter informações sobre o service pack mínimo Windows exigido por uma versão Windows Installer.<br/> |
 
 
 

@@ -4,12 +4,12 @@ description: Quando uma tentativa de conexão com um endereço de rede falha por
 ms.assetid: 343ee69e-1ff5-4107-9ddb-4245c3b4a54d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 150fa8542d1724be9d60f997db7952d6df387b9b
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: ef0f65f62121d631dcf035e641c9d0d4d89850d7673e1c47b82ff4a4889dff49
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366108"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120030496"
 ---
 # <a name="autodial-connection-operations"></a>Operações de conexão de discagem automática
 
@@ -23,6 +23,6 @@ Para habilitar o manipulador de discagem automática personalizado para uma entr
 
 Quando o sistema inicia uma operação de discagem automática para uma entrada de catálogo telefônico com um manipulador de discagem automática personalizado, ele chama o [**RASADFunc**](/windows/desktop/api/Ras/nc-ras-rasadfunca)especificado. A função **RASADFunc** recebe um ponteiro para uma estrutura [**RASADPARAMS**](/previous-versions/windows/desktop/legacy/aa376719(v=vs.85)) que indica o local e a janela pai da janela da interface do usuário. Seu **RASADFunc** pode iniciar um thread para executar a operação de discagem personalizada. A função **RASADFunc** retorna **true** para indicar que levou sobre a discagem ou **false** para permitir que o sistema execute a discagem. Sua operação de discagem personalizada deve usar a função [**RasDial**](/windows/desktop/api/Ras/nf-ras-rasdiala) para fazer a discagem real. Quando a operação de discagem for concluída, a operação de discagem personalizada indica êxito ou falha ao definir a variável apontada pelo parâmetro *lpdwRetCode* passado para [**RASADFunc**](/windows/desktop/api/Ras/nc-ras-rasadfunca).
 
- 
+ 
 
- 
+ 

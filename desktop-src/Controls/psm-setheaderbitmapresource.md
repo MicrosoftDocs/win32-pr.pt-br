@@ -1,25 +1,25 @@
 ---
 title: PSM_SETHEADERBITMAPRESOURCE mensagem
-description: Define uma imagem de plano de fundo de um arquivo de recurso. A imagem é exibida na parte superior de um assistente na seção de cabeçalho. Você também pode usar a \_ macro PropSheet SetHeaderBitmapResource para postar a mensagem.
+description: Define uma imagem de plano de fundo de um arquivo de recurso. A imagem é exibida na parte superior de um assistente na seção de header. Você também pode usar a macro \_ SetHeaderBitmapResource do PropSheet para postar a mensagem.
 ms.assetid: e40f3d45-69bf-402a-ac7c-9a3c431c6651
 keywords:
-- Controles de PSM_SETHEADERBITMAPRESOURCE de mensagens do Windows
+- PSM_SETHEADERBITMAPRESOURCE controles de Windows mensagem
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 90fde960e1a135317eddacaa82e3b795bf9d302e
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: bc812b6b75e87e9626a1eb3dacf2b3978f489df0b41df852be7138b5af93fc4c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104006330"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119985466"
 ---
-# <a name="psm_setheaderbitmapresource-message"></a>Mensagem de PSM \_ SETHEADERBITMAPRESOURCE
+# <a name="psm_setheaderbitmapresource-message"></a>Mensagem PSM \_ SETHEADERBITMAPRESOURCE
 
-Esta mensagem não está implementada.
+Essa mensagem não está implementada.
 
- 
+ 
 
- 
+ 
 
 
 

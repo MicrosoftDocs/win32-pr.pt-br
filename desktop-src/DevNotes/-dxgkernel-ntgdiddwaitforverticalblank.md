@@ -16,12 +16,12 @@ api_location:
 - Ext-MS-Win-GDI-Internal-Desktop-L1-1-0.dll
 - GDI32.dll
 - GDI32Full.dll
-ms.openlocfilehash: d138480e4a45a2b2cb67ece44ab8ceb67efae72d
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 4880dad9763372f01ba1bb91def46806fe077f0a115c98f850355853c70f1d04
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104088910"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120053326"
 ---
 # <a name="ntgdiddwaitforverticalblank-function"></a>Função NtGdiDdWaitForVerticalBlank
 
@@ -59,7 +59,7 @@ Ponteiro para uma [**estrutura \_ WAITFORVERTICALBLANKDATA do DD**](/windows/win
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 **NtGdiDdWaitForVerticalBlank** retorna um dos seguintes códigos de retorno de chamada.
 

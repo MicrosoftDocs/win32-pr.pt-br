@@ -23,12 +23,12 @@ api_type:
 - DllExport
 api_location:
 - WmiPerfInst.dll
-ms.openlocfilehash: 13b339e95e175e4d2dff50c0a9674f8002933c1a
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 356fdba0e2ebb7fb202f4996daa6b1929cd61fc67b028f67e8b041748306c0ab
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105753973"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119972236"
 ---
 # <a name="win32_perf-class"></a>\_Classe perf Win32
 
@@ -125,7 +125,7 @@ Tipo de dados: **UInt64**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Frequência em tiques por segundo da propriedade **de \_ PerfTime de frequência** . Um valor pode ser obtido chamando a função do Windows [**QueryPerformanceCounter**](/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter).
+Frequência em tiques por segundo da propriedade **de \_ PerfTime de frequência** . um valor pode ser obtido chamando a função Windows [**QueryPerformanceCounter**](/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter).
 
 Para obter mais informações sobre como usar valores de **UInt64** em scripts, consulte [scripts no WMI](/previous-versions//aa393262(v=vs.85)).
 
@@ -188,7 +188,7 @@ Tipo de dados: **UInt64**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Carimbo de data/hora do contador de alto desempenho. Um valor pode ser obtido chamando a função do Windows [**QueryPerformanceCounter**](/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter).
+Carimbo de data/hora do contador de alto desempenho. um valor pode ser obtido chamando a função Windows [**QueryPerformanceCounter**](/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter).
 
 Para obter mais informações sobre como usar valores de **UInt64** em scripts, consulte [scripts no WMI](/previous-versions//aa393262(v=vs.85)).
 

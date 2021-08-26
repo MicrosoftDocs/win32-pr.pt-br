@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Tex.h
-ms.openlocfilehash: f12842cd07c55c33509ecfbb56fc804a6fc3b7c0
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 400347efde28133055b97016d877b1bd4148624387ddd7086f4ff185ab87cca9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103930720"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119989526"
 ---
 # <a name="d3dx10_filter_flag-enumeration"></a>Enumeração de sinalizador de \_ filtro D3DX10 \_
 
@@ -152,7 +152,7 @@ O mesmo que especificar D3DX \_ Filter \_ sRGB \_ no \| D3DX \_ Filter \_ sRGB \
 
 ## <a name="remarks"></a>Comentários
 
-O D3DX10 executa automaticamente a correção de gama (para converter dados de cores de espaço RGB em espaço RGB padrão) ao carregar dados de textura. Isso é feito automaticamente por instância quando dados RGB são carregados de um arquivo. png em uma textura sRGB. Use os sinalizadores de filtro SRGB para indicar se os dados não precisam ser convertidos em espaço sRGB.
+O D3DX10 executa automaticamente a correção de gama (para converter dados de cores de espaço RGB em espaço RGB padrão) ao carregar dados de textura. Isso é feito automaticamente por instância quando dados RGB são carregados de um arquivo de .png em uma textura sRGB. Use os sinalizadores de filtro SRGB para indicar se os dados não precisam ser convertidos em espaço sRGB.
 
 ## <a name="requirements"></a>Requisitos
 

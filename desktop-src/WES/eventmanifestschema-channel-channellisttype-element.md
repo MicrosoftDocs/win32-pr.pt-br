@@ -1,9 +1,9 @@
 ---
-title: Elemento Channel (ChannelListType)
+title: Elemento channel (ChannelListType)
 description: Define um canal no qual os eventos podem ser registrados.
 ms.assetid: 4af740d7-2ab8-4f3e-86b3-501e5a6a60f6
 keywords:
-- Log de elementos do canal
+- elemento channel EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6c90d1f831157d2a4a2d4f3519b4e1baa07d6af2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4f19e90f3f66aa017ecb7183e1ad3dc5c614832b8ec2f832d4ec6656674f0ea7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499806"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120032306"
 ---
-# <a name="channel-channellisttype-element"></a>Elemento Channel (ChannelListType)
+# <a name="channel-channellisttype-element"></a>Elemento channel (ChannelListType)
 
 Define um canal no qual os eventos podem ser registrados.
 
@@ -30,7 +30,7 @@ Define um canal no qual os eventos podem ser registrados.
  />
 ```
 
-O elemento **Channel** é definido pelo tipo complexo [**ChannelListType**](eventmanifestschema-channellisttype-complextype.md) .
+O **elemento** channel é definido pelo tipo complexo [**ChannelListType.**](eventmanifestschema-channellisttype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ O elemento **Channel** é definido pelo tipo complexo [**ChannelListType**](even
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

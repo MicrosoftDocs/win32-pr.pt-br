@@ -6,12 +6,12 @@ keywords:
 - Chamada de procedimento remoto RPC, referência, outros tipos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 173adedfc53bebe6c1985e2dd750b71ab8de9373
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 45b4b3f04ae25af92a6e0a80c8d4727a45dc7306ce54ee5e69361587de875fda
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641517"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120019296"
 ---
 # <a name="other-rpc-types"></a>Outros tipos de RPC
 
@@ -29,6 +29,6 @@ Esta seção contém informações sobre os seguintes tipos de RPC que não são
 -   [Associação de cadeia de caracteres](string-binding.md)
 -   [UUID de cadeia de caracteres](string-uuid.md)
 
- 
+ 
 
- 
+ 

@@ -13,19 +13,19 @@ api_type:
 - DllExport
 api_location:
 - Idndl.dll
-ms.openlocfilehash: bc5a9fdaf3beb9e1c401943f923fa48bd9d4b44c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 23eca82d97ac1da2d0f179c6e670ed032a57410490dcc5a52cf3005d75d65b2e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105792510"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120041616"
 ---
 # <a name="downlevelgetstringscripts-function"></a>Função DownlevelGetStringScripts
 
 Fornece uma lista de scripts usados na cadeia de caracteres Unicode especificada.
 
 > [!Note]  
-> Essa função é usada somente por aplicativos que são executados em sistemas operacionais anteriores ao Windows Vista. Seu uso requer o pacote de download. Os aplicativos que só são executados no Windows Vista e posterior devem chamar [**GetStringScripts**](/windows/desktop/api/Winnls/nf-winnls-getstringscripts).
+> essa função é usada somente por aplicativos que são executados em sistemas operacionais anteriores ao Windows Vista. Seu uso requer o pacote de download. os aplicativos que são executados somente no Windows Vista e posterior devem chamar [**GetStringScripts**](/windows/desktop/api/Winnls/nf-winnls-getstringscripts).
 
  
 
@@ -102,7 +102,7 @@ Como alternativa, o aplicativo pode definir esse parâmetro como 0. Nesse caso, 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o número de caracteres recuperados no buffer de saída, incluindo um caractere nulo de terminação, se bem-sucedido e *cchScripts* é definido como um valor diferente de zero. A função retorna 1 para indicar que nenhum script foi encontrado, por exemplo, quando a cadeia de caracteres de entrada contém apenas caracteres comuns ou HERDAdos e GSS \_ permitir \_ herdado \_ comum não está definido. Considerando que cada script encontrado adiciona cinco caracteres (quatro caracteres + delimitador), uma operação matemática simples fornece a contagem de script como ( \_ código de retorno-1)/5.
 
@@ -217,10 +217,10 @@ O arquivo de cabeçalho e a DLL necessários fazem parte do download ["APIs de m
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                                                                                                 |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                                                                        |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                                                                                                 |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                                                                        |
 | Redistribuível<br/>          | APIs de mitigação do IDN (Microsoft internacionalizated Domain Name) no Windows XP (SP2 ou posterior), Windows Server 2003 (SP1 ou posterior) ou Windows Vista<br/> |
-| parâmetro<br/>                   | <dl> <dt>Idndl. h</dt> </dl>                                                                          |
+| Cabeçalho<br/>                   | <dl> <dt>Idndl. h</dt> </dl>                                                                          |
 | DLL<br/>                      | <dl> <dt>Idndl.dll</dt> </dl>                                                                        |
 
 

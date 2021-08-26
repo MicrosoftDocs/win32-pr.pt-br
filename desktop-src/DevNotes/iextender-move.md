@@ -1,7 +1,7 @@
 ---
 description: Move um MDIForm, formulário ou controle.
 ms.assetid: 963e6533-f571-4043-bdd8-2596df6b5b35
-title: 'Método IExtender:: move'
+title: Método IExtender::Move
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - Ole2disp.dll
 - Oleaut32.dll
-ms.openlocfilehash: 2c7ed806629f0e5e1bb0cdee5c76910728fd651d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 13002457952490588fa9e9ad40e7f66e7d31465b74f9757a3193ccaed1e8bf7e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752570"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120002096"
 ---
-# <a name="iextendermove-method"></a>Método IExtender:: move
+# <a name="iextendermove-method"></a>Método IExtender::Move
 
 Move um MDIForm, formulário ou controle.
 
@@ -43,35 +43,35 @@ void Move(
 
 <dl> <dt>
 
-*à esquerda* \[ no\]
+*esquerda* \[ Em\]
 </dt> <dd>
 
 A borda esquerda do formulário ou controle.
 
 </dd> <dt>
 
-*superior* \[ no\]
+*top* \[ Em\]
 </dt> <dd>
 
 A borda superior do formulário ou controle.
 
 </dd> <dt>
 
-*largura* \[ no\]
+*largura* \[ Em\]
 </dt> <dd>
 
 A largura do formulário ou controle.
 
 </dd> <dt>
 
-*altura* \[ no\]
+*altura* \[ Em\]
 </dt> <dd>
 
 A altura do formulário ou controle.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 

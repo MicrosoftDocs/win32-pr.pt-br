@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 0d57e2723c90eee8df728aa540baeab86932e773
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: e8717edc045f50cc572d675dbec405b01fda49503349e9716210dfcae23fb277
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "103638870"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119982446"
 ---
 # <a name="expp---vs"></a>expp-vs
 
@@ -29,7 +29,7 @@ Fornece o exponencial de precisão parcial 2<sup>x</sup>.
 
 
 
- 
+ 
 
 Em que:
 
@@ -47,7 +47,7 @@ Em que:
 
 
 
- 
+ 
 
 ### <a name="vs_1_1"></a>vs \_ 1 \_ 1
 
@@ -100,9 +100,9 @@ A instrução fornece pelo menos 10 bits de precisão.
 [Instruções do sombreador de vértice](dx9-graphics-reference-asm-vs-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

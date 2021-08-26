@@ -4,12 +4,12 @@ description: Serviço de Roteamento e Acesso Remoto
 ms.assetid: fa0a183a-0254-401e-8b78-441cb3f83e8b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 49d81e743f640e600588413f0c15c44e0410c5ea
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 2d827150b84806afe4a9290436620def7675ee03163bf5f63c0c0d6556932a1b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108116464"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120028996"
 ---
 # <a name="routing-and-remote-access-service"></a>Serviço de Roteamento e Acesso Remoto
 
@@ -35,11 +35,11 @@ Para obter informações mais específicas sobre quais sistemas operacionais dã
 
 | Tópico                                                                                                             | Descrição                                                                                                           |
 |-------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| [Arquitetura de serviços de roteamento e acesso remoto](routing-and-remote-access-services-architecture.md)<br/> | Visão geral da arquitetura de serviços de roteamento e acesso remoto.<br/>                                           |
+| [roteamento e arquitetura de Serviços do Access remota](routing-and-remote-access-services-architecture.md)<br/> | visão geral do roteamento e da arquitetura de Serviços do Access remota.<br/>                                           |
 | [Layout do registro de roteamento e acesso remoto](routing-and-remote-access-registry-layout.md)<br/>             | Um exemplo de layout de registro para o serviço de roteador<br/>                                                          |
 | [Códigos de erro de roteamento e acesso remoto](routing-and-remote-access-error-codes.md)<br/>                     | Lista de todos os códigos de erro de roteamento e acesso remoto.<br/>                                                         |
 | [Acesso remoto](remote-access-start-page.md)<br/>                                                          | Documentação para APIs de administração RAS e RAS.<br/>                                                         |
-| [Roteamento](routing-start-page.md)<br/>                                                                      | Documentação para as APIs de gerenciamento de roteador e de MIB (base de informações de gerenciamento).<br/>                        |
+| [Roteiros](routing-start-page.md)<br/>                                                                      | Documentação para as APIs de gerenciamento de roteador e de MIB (base de informações de gerenciamento).<br/>                        |
 | [Protocolos de roteamento](routing-protocols-start-page.md)<br/>                                                  | Documentação do Gerenciador de grupos de multicast, da interface do protocolo de roteamento e das APIs do Gerenciador de tabelas de roteamento.<br/> |
 | [Glossário](glossary.md)<br/>                                                                               | Definições para termos usados na documentação do serviço de roteamento e acesso remoto.<br/>                         |
 

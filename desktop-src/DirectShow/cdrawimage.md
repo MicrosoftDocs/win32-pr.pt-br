@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 001b91338b2956f663d777cbc9597fa2d9a478f3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 951744cded927707ac0b39e562b4207acbecdd92420c91a2b130f0b493444b01
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105764569"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119999546"
 ---
 # <a name="cdrawimage-class"></a>Classe CDrawImage
 
@@ -85,15 +85,15 @@ Se o método [**FastRender**](cdrawimage-fastrender.md) for usado para desenhar 
 | [**GetTargetRect**](cdrawimage-gettargetrect.md)                     | Recupera o retângulo de destino atual.                                                                                    |
 | [**IncrementPaletteVersion**](cdrawimage-incrementpaletteversion.md) | Incrementa a versão da paleta.                                                                                                 |
 | [**NotifyAllocator**](cdrawimage-notifyallocator.md)                 | Informa ao `CDrawImage` objeto se o alocador da conexão é um objeto **CImageAllocator** .                       |
-| [**NotifyEndDraw**](cdrawimage-notifyenddraw.md)                     | Não há suporte.                                                                                                                  |
+| [**NotifyEndDraw**](cdrawimage-notifyenddraw.md)                     | Sem suporte.                                                                                                                  |
 | [**NotifyMediaType**](cdrawimage-notifymediatype.md)                 | Notifica o objeto do tipo de mídia atual.                                                                                  |
-| [**NotifyStartDraw**](cdrawimage-notifystartdraw.md)                 | Não há suporte.                                                                                                                  |
+| [**NotifyStartDraw**](cdrawimage-notifystartdraw.md)                 | Sem suporte.                                                                                                                  |
 | [**ResetPaletteVersion**](cdrawimage-resetpaletteversion.md)         | Redefine a versão da paleta.                                                                                                     |
-| [**ScaleSourceRect**](cdrawimage-scalesourcerect.md)                 | Dimensiona um retângulo de origem especificado, se houver uma diferença entre o tamanho do vídeo nativo e o formato do tipo de mídia. VirtuaisLUNs. |
+| [**ScaleSourceRect**](cdrawimage-scalesourcerect.md)                 | Dimensiona um retângulo de origem especificado, se houver uma diferença entre o tamanho do vídeo nativo e o formato de tipo de mídia. Virtual. |
 | [**SetDrawContext**](cdrawimage-setdrawcontext.md)                   | Define os contextos de dispositivo usados para desenho.                                                                                      |
 | [**SetSourceRect**](cdrawimage-setsourcerect.md)                     | Define o retângulo de origem.                                                                                                      |
 | [**SetTargetRect**](cdrawimage-settargetrect.md)                     | Define o retângulo de destino.                                                                                                      |
-| [**UsingImageAllocator**](cdrawimage-usingimageallocator.md)         | Indica se o alocador atual é um objeto [**CImageAllocator**](cimageallocator.md) .                                 |
+| [**UsingImageAllocator**](cdrawimage-usingimageallocator.md)         | Indica se o alocador atual é um [**objeto CImageAllocator.**](cimageallocator.md)                                 |
 
 
 
@@ -105,8 +105,8 @@ Se o método [**FastRender**](cdrawimage-fastrender.md) for usado para desenhar 
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Winutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

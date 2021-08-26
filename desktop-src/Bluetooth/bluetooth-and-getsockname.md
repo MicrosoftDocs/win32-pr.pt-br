@@ -1,25 +1,25 @@
 ---
 title: Bluetooth e getsockname
-description: O Bluetooth usa a função getsockname para recuperar o endereço do dispositivo do servidor e o número da porta alocada a um soquete por meio de uma chamada anterior à função BIND.
+description: Bluetooth usa a função getsockname para recuperar o endereço do dispositivo do servidor e o número da porta alocados a um soquete por meio de uma chamada anterior à função bind.
 ms.assetid: 3892bd59-97ac-4b76-bff9-7329f22a66cc
 keywords:
 - Bluetooth
-- getsockname
+- Getsockname
 - Bluetooth e getsockname
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 36c4337d8911bcde99225f1365be22f682d0d0f1
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: bbf23bf555a104adf9c2ff4d4fefe8a680c961d180ab0b176f71327eb75e8727
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103917639"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120004496"
 ---
 # <a name="bluetooth-and-getsockname"></a>Bluetooth e getsockname
 
-O Bluetooth usa a função [**getsockname**](/windows/desktop/api/winsock/nf-winsock-getsockname) para recuperar o endereço do dispositivo do servidor e o número da porta alocada a um soquete por meio de uma chamada anterior à função [**BIND**](/windows/desktop/api/winsock/nf-winsock-bind) .
+Bluetooth usa a [**função getsockname**](/windows/desktop/api/winsock/nf-winsock-getsockname) para recuperar o endereço do dispositivo do servidor e o número da porta alocados a um soquete por meio de uma chamada anterior à [**função bind.**](/windows/desktop/api/winsock/nf-winsock-bind)
 
-Para obter mais informações, consulte [Windows Sockets](/windows/desktop/WinSock/windows-sockets-start-page-2).
+Para obter mais informações, [consulte Windows Soquetes](/windows/desktop/WinSock/windows-sockets-start-page-2).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -28,12 +28,12 @@ Para obter mais informações, consulte [Windows Sockets](/windows/desktop/WinSo
 [Windows Sockets](/windows/desktop/WinSock/windows-sockets-start-page-2)
 </dt> <dt>
 
-[**getsockname**](/windows/desktop/api/winsock/nf-winsock-getsockname)
+[**Getsockname**](/windows/desktop/api/winsock/nf-winsock-getsockname)
 </dt> <dt>
 
-[**associa**](/windows/desktop/api/winsock/nf-winsock-bind)
+[**Ligar**](/windows/desktop/api/winsock/nf-winsock-bind)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -4,12 +4,12 @@ ms.assetid: 54032f75-2287-4589-bda5-e005ee077c41
 title: Constantes de ENDPOINT_HARDWARE_SUPPORT_XXX (Mmdeviceapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ffb5b2255330b205519ce3065ccb5f7eebb6b65
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 3c975a7bc00229943bb943035bf1fc84609414d83015ce4ae7d84d175b2e18a3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089629"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120053716"
 ---
 # <a name="endpoint_hardware_support_xxx-constants"></a>Constantes de suporte de hardware de ponto de extremidade \_ \_ \_ xxx
 
@@ -37,9 +37,9 @@ Uma máscara de suporte de hardware indica quais funções um dispositivo de pon
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                     |
-| parâmetro<br/>                   | <dl> <dt>Mmdeviceapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Mmdeviceapi. h</dt> </dl> |
 
 
 

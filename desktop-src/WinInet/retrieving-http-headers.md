@@ -4,12 +4,12 @@ description: Este tutorial descreve como recuperar informações de cabeçalho d
 ms.assetid: 347e4fb3-5f96-488a-bef8-4df0b8d1ade1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a5b31043940b8c2127d1cfa1696d2821641d0784
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: ba9c1dbae3447d5ae44c8d348394f2dc802ed9d7b4af7d99fde19d0b5d2c3d22
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105749131"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119955506"
 ---
 # <a name="retrieving-http-headers"></a>Recuperando cabeçalhos HTTP
 
@@ -157,10 +157,10 @@ retry:
 
 
 > [!Note]  
-> O WinINet não oferece suporte a implementações de servidor. Além disso, ele não deve ser usado de um serviço. Para implementações de servidor ou serviços, use [o Microsoft Windows http Services (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
+> O WinINet não oferece suporte a implementações de servidor. Além disso, ele não deve ser usado de um serviço. para implementações de servidor ou serviços, use [o Microsoft Windows HTTP services (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
 
- 
+ 
 
- 
+ 
 
- 
+ 

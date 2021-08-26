@@ -4,16 +4,16 @@ ms.assetid: 5b331d7d-9440-4e0d-a73b-48a2a556c31c
 title: Introdução de cartões inteligentes ao sistema
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b9134dd9efce17b60f3495bf7bfc36b03c34ed3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 07cd65135e1580792135a1042729f2002f4437697fa0548a4f6cd776650485b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171254"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120015706"
 ---
 # <a name="introducing-smart-cards-to-the-system"></a>Introdução de cartões inteligentes ao sistema
 
-Antes que o [*subsistema de cartão inteligente*](../secgloss/s-gly.md) possa encontrar um [*cartão inteligente*](../secgloss/s-gly.md), o cartão inteligente deve ser introduzido no sistema. Isso normalmente é feito com uma ferramenta de configuração de cartão inteligente fornecida pelo fabricante do cartão. A ferramenta pode ser um programa em um disquete (com o cartão inteligente), um controle ActiveX disponível em um site e assim por diante.
+Antes que o [*subsistema de cartão inteligente*](../secgloss/s-gly.md) possa encontrar um [*cartão inteligente*](../secgloss/s-gly.md), o cartão inteligente deve ser introduzido no sistema. Isso normalmente é feito com uma ferramenta de configuração de cartão inteligente fornecida pelo fabricante do cartão. a ferramenta pode ser um programa em um disquete (com o cartão inteligente), um controle de ActiveX disponível em um site e assim por diante.
 
 A ferramenta de instalação deve fornecer as seguintes informações sobre o cartão:
 

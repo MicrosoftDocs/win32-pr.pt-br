@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d242d973d7ec8d320ed589933567b337a035f0e5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c4a0fae8a36110ffe2caccb9937ce67cf1b9d1515473eb6d7e0a2efec64dccfc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105753524"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120033726"
 ---
 # <a name="getstringproperty-method-of-the-win32_rdmsvirtualdesktopcollection-class"></a>Método getstringproperty da classe Win32 \_ RDMSVirtualDesktopCollection
 
@@ -58,7 +58,7 @@ Uma cadeia de caracteres que recebe o valor recuperado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI.
 

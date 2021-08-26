@@ -1,19 +1,19 @@
 ---
-description: O GDI+ fornece gradientes lineares horizontais, verticais e diagonais. Por padrão, a cor em um gradiente linear muda uniformemente. No entanto, você pode personalizar um gradiente linear para que a cor mude de maneira não uniforme.
+description: GDI+ fornece gradientes lineares horizontais, verticais e diagonais. Por padrão, a cor em um gradiente linear muda uniformemente. No entanto, você pode personalizar um gradiente linear para que a cor mude de maneira não uniforme.
 ms.assetid: 9b0236b2-be6b-4918-a106-5b0e6c3dd5ff
 title: Criando um gradiente linear
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d66b9f5a3a07061e8b3d19140c25a9f3a33052a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 922c4f1fc805aae25f53ed206d1b3e9112afbd3fa51ba544e121a70839d79d0b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104554840"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120015188"
 ---
 # <a name="creating-a-linear-gradient"></a>Criando um gradiente linear
 
-O GDI+ fornece gradientes lineares horizontais, verticais e diagonais. Por padrão, a cor em um gradiente linear muda uniformemente. No entanto, você pode personalizar um gradiente linear para que a cor mude de maneira não uniforme.
+GDI+ fornece gradientes lineares horizontais, verticais e diagonais. Por padrão, a cor em um gradiente linear muda uniformemente. No entanto, você pode personalizar um gradiente linear para que a cor mude de maneira não uniforme.
 
 -   [Gradientes lineares horizontais](#horizontal-linear-gradients)
 -   [Personalizando gradientes lineares](#customizing-linear-gradients)
@@ -52,7 +52,7 @@ A ilustração a seguir mostra a linha, a elipse e o retângulo. Observe que o g
 
 No exemplo anterior, os componentes de cor mudam linearmente conforme você vai de uma coordenada horizontal de 0 para uma coordenada horizontal de 200. Por exemplo, um ponto cuja primeira coordenada esteja a meio caminho entre 0 e 200 terá um componente azul a meio caminho entre 0 e 255.
 
-O GDI+ permite que você ajuste a maneira como uma cor varia de uma borda de um gradiente para a outra. Suponha que você queira criar um pincel de gradiente que mude de preto para vermelho de acordo com a tabela a seguir.
+GDI+ permite que você ajuste a maneira como uma cor varia de uma borda de um gradiente para a outra. Suponha que você queira criar um pincel de gradiente que mude de preto para vermelho de acordo com a tabela a seguir.
 
 
 

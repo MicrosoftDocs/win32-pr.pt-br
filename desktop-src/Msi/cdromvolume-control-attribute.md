@@ -1,19 +1,19 @@
 ---
-description: Se o bit de controle CDROMVolume for definido, o controle mostrará todos os volumes na instalação atual, além de todos os volumes de CD-ROM.
+description: Se o bit controle CDROMVolume estiver definido, o controle mostrará todos os volumes na instalação atual, além de todos os volumes de CD-ROM.
 ms.assetid: 233df659-413d-416e-a3d7-d05a67e9bd73
 title: Atributo de controle CDROMVolume
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 25a687cfd52f347d9bfd24e74fb10b15f865e13b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 78abd961ddfd710defea9b464ea861f731fcf84a0989062f0607fda8ced5b381
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105749593"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120078036"
 ---
 # <a name="cdromvolume-control-attribute"></a>Atributo de controle CDROMVolume
 
-Se o bit de controle CDROMVolume for definido, o controle mostrará todos os volumes na instalação atual, além de todos os volumes de CD-ROM.
+Se o bit controle CDROMVolume estiver definido, o controle mostrará todos os volumes na instalação atual, além de todos os volumes de CD-ROM.
 
 Se esse bit não estiver definido, o controle mostrará todos os volumes na instalação atual.
 
@@ -43,9 +43,9 @@ Se esse bit não estiver definido, o controle mostrará todos os volumes na inst
 
 ## <a name="remarks"></a>Comentários
 
-Para definir esse atributo em um controle, inclua o bit CDROMVolume na coluna atributos do registro do controle na [tabela de controle](control-table.md).
+Para definir esse atributo em um controle, inclua o bit CDROMVolume na coluna Atributos do registro do controle na [tabela Controle](control-table.md).
 
-Consulte [atributos de controle](control-attributes.md) e o controle que você precisa criar sob [controles](controls.md).
+Consulte [Atributos de controle](control-attributes.md) e o controle que você precisa criar em [Controles](controls.md).
 
  
 

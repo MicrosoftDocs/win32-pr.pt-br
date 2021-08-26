@@ -4,17 +4,17 @@ description: Adicionando um controle deslizante
 ms.assetid: 7062d580-a9d1-4fd7-bc28-db2615464838
 keywords:
 - Criando capas, controles deslizantes
-- Capas, controles deslizantes do Windows Media Player
+- Windows Media Player capas, controles deslizantes
 - capas, controles deslizantes
 - controles deslizantes em capas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c3efcae55b3826b69a7c88fed5a23a262526c9dd
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c6c3644e1b243188664295bbc00101a74377cbef17632217ff0a81dac0d377a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005772"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120004375"
 ---
 # <a name="adding-a-slider"></a>Adicionando um controle deslizante
 
@@ -71,9 +71,9 @@ Você pode ver uma aparência de controle deslizante de trabalho semelhante na s
 [**Guia de criação de capa**](skin-creation-guide.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

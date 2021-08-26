@@ -4,12 +4,12 @@ ms.assetid: 105d2b85-c6e1-4719-83b4-1693c14ef4f4
 title: Dados ASCII em arquivos mortos de texto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d43deeb7918b75a71770ab9d09535972f6e8bb4b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: da7fa327d19b59793862bd2c06ce814b17979e8e8a6f72d41b1af677b715b4ea
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828062"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120078066"
 ---
 # <a name="ascii-data-in-text-archive-files"></a>Dados ASCII em arquivos mortos de texto
 
@@ -80,7 +80,7 @@ Advertise   Publication d'informations sur l'application
 ```
 
 > [!Note]  
-> Se um arquivo morto de texto contiver dados não ASCII, o arquivo morto incluirá informações de página de código. Arquivos mortos com informações de página de código só podem ser importados de volta para um banco de dados dessa página de código exata ou para um banco de dados neutro de idioma. No caso de um banco de dados com neutralidade de idioma, a página de código é definida como a página de código do arquivo morto. Para obter mais informações sobre como Windows Installer manipula páginas de código, consulte a seção [manipulação de página de código (Windows Installer)](code-page-handling-windows-installer-.md).
+> Se um arquivo morto de texto contiver dados não ASCII, o arquivo morto incluirá informações de página de código. Arquivos mortos com informações de página de código só podem ser importados de volta para um banco de dados dessa página de código exata ou para um banco de dados neutro de idioma. No caso de um banco de dados com neutralidade de idioma, a página de código é definida como a página de código do arquivo morto. para obter mais informações sobre como Windows Installer manipula páginas de código, consulte a seção [manipulação de página de código (Windows Installer)](code-page-handling-windows-installer-.md).
 
  
 

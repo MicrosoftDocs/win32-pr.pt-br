@@ -3,7 +3,7 @@ title: Macro MCI_MSF_MINUTE (Mciapi. h)
 description: A macro de minuto do MSF do MCI \_ \_ recupera o componente de minutos de um parâmetro que contém informações de minutos/segundos/quadros compactados (MSF).
 ms.assetid: 60ac6662-d828-4635-a019-2603199523c5
 keywords:
-- Multimídia MCI_MSF_MINUTE macro do Windows
+- macro de MCI_MSF_MINUTE Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f65f978c13fc1b3fbf86266c35786b21612c4e7c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8423e63c7e155c072b496a9bf13c332619f96e8c6780cac6fae266f6a924c9f6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105751175"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120039136"
 ---
 # <a name="mci_msf_minute-macro"></a>Macro de minuto do \_ MSF MCI \_
 
@@ -47,7 +47,7 @@ Hora no formato MSF.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o componente de minutos das informações de MSF especificadas.
 

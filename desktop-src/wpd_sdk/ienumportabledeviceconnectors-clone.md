@@ -1,7 +1,7 @@
 ---
 description: Cria uma cópia da interface IEnumPortableDeviceConnectors atual.
 ms.assetid: 64274cb0-1f57-481d-914f-41238cbe2f1b
-title: 'Método IEnumPortableDeviceConnectors:: clone (Devpkey. h)'
+title: Método IEnumPortableDeviceConnectors::Clone (Devpkey.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGuids.lib
 - PortableDeviceGuids.dll
-ms.openlocfilehash: 0e5273f1c400732c94c7c63918787f5e130a854d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 53b9c49b5bf36571409cd49026d5d08fced80c3e43aee63d844abd481e51aa3b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297362"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120055326"
 ---
-# <a name="ienumportabledeviceconnectorsclone-method"></a>Método IEnumPortableDeviceConnectors:: clone
+# <a name="ienumportabledeviceconnectorsclone-method"></a>Método IEnumPortableDeviceConnectors::Clone
 
-O método **clone** cria uma cópia da interface [**IEnumPortableDeviceConnectors**](ienumportabledeviceconnectors.md) atual.
+O **método Clone** cria uma cópia da interface [**IEnumPortableDeviceConnectors**](ienumportabledeviceconnectors.md) atual.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,16 +40,16 @@ HRESULT Clone(
 
 <dl> <dt>
 
-*ppEnum* \[ fora\]
+*ppEnum* \[ out\]
 </dt> <dd>
 
-O endereço de um ponteiro para uma interface [**IEnumPortableDeviceConnectors**](ienumportabledeviceconnectors.md) . O aplicativo de chamada deve liberar essa interface quando ela é feita com ela.
+O endereço de um ponteiro para uma interface [**IEnumPortableDeviceConnectors.**](ienumportabledeviceconnectors.md) O aplicativo de chamada deve liberar essa interface quando terminar.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 
@@ -67,11 +67,11 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                                                                                             |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                                                                                                             |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                                                                              |
-| parâmetro<br/>                   | <dl> <dt>Devpkey. h; </dt> <dt>Portabledeviceconnectapi. h</dt> </dl> |
-| INSERI<br/>                      | <dl> <dt>Portabledeviceconnectapi. idl</dt> </dl>                                                                |
-| Biblioteca<br/>                  | <dl> <dt>PortableDeviceGuids. lib</dt> </dl>                                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Devpkey.h; </dt> <dt>Portabledeviceconnectapi.h</dt> </dl> |
+| Idl<br/>                      | <dl> <dt>Portabledeviceconnectapi.idl</dt> </dl>                                                                |
+| Biblioteca<br/>                  | <dl> <dt>PortableDeviceGuids.lib</dt> </dl>                                                                     |
 
 
 

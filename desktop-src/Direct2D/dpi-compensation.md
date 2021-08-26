@@ -4,12 +4,12 @@ description: Use o efeito de compensação de DPI para ajustar automaticamente u
 ms.assetid: EA8AD89B-A710-468F-A6F3-474DA29586F1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 69a0477d2a57f39738fa9b1ce16c97995c60cf96
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 38f1390825087cabb9ee1bec65f2708990757ff25f08e71140be5be0fc6ae11e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824833"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119967106"
 ---
 # <a name="dpi-compensation-effect"></a>Efeito de compensação de DPI
 
@@ -72,9 +72,9 @@ O CLSID para esse efeito é CLSID \_ D2D1DpiCompensation.
 
 | Requisito | Valor |
 |--------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho do Windows 7 \[ \| aplicativos da Windows Store\] |
-| Servidor mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho do Windows 7 \[ \| aplicativos da Windows Store\] |
-| parâmetro                   | d2d1effects. h                                                                      |
+| Cliente mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho Windows 7 \[ \| Windows aplicativos da loja\] |
+| Servidor mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho Windows 7 \[ \| Windows aplicativos da loja\] |
+| Cabeçalho                   | d2d1effects. h                                                                      |
 | Biblioteca                  | d2d1. lib, dxguid. lib                                                               |
 
 

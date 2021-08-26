@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b0dba61706861b808f28d7f6874a9bfd93d4152c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 6ef8f1b61d8d12fc1725fd695467058ac93277a7aab0977ccaed128a74da79d9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825004"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120077856"
 ---
 # <a name="dns-tombstoned-attribute"></a>DNS-Tombstoned atributo
 
@@ -58,8 +58,8 @@ True se este objeto tiver sido marcado para exclusão. Esse atributo existe para
 | ID do link                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| É de valor único       | True                                     |
-| É indexado             | True                                     |
+| É de valor único       | Verdadeiro                                     |
+| É indexado             | Verdadeiro                                     |
 | No catálogo global      | Falso                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                             |
 | Range-Lower            | \-                                       |
@@ -79,8 +79,8 @@ True se este objeto tiver sido marcado para exclusão. Esse atributo existe para
 | ID do link                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| É de valor único       | True                                     |
-| É indexado             | True                                     |
+| É de valor único       | Verdadeiro                                     |
+| É indexado             | Verdadeiro                                     |
 | No catálogo global      | Falso                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                             |
 | Range-Lower            | \-                                       |
@@ -100,8 +100,8 @@ True se este objeto tiver sido marcado para exclusão. Esse atributo existe para
 | ID do link                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| É de valor único       | True                                     |
-| É indexado             | True                                     |
+| É de valor único       | Verdadeiro                                     |
+| É indexado             | Verdadeiro                                     |
 | No catálogo global      | Falso                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                             |
 | Range-Lower            | \-                                       |
@@ -121,8 +121,8 @@ True se este objeto tiver sido marcado para exclusão. Esse atributo existe para
 | ID do link                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| É de valor único       | True                                     |
-| É indexado             | True                                     |
+| É de valor único       | Verdadeiro                                     |
+| É indexado             | Verdadeiro                                     |
 | No catálogo global      | Falso                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                             |
 | Range-Lower            | \-                                       |
@@ -142,8 +142,8 @@ True se este objeto tiver sido marcado para exclusão. Esse atributo existe para
 | ID do link                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| É de valor único       | True                                     |
-| É indexado             | True                                     |
+| É de valor único       | Verdadeiro                                     |
+| É indexado             | Verdadeiro                                     |
 | No catálogo global      | Falso                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                             |
 | Range-Lower            | \-                                       |
@@ -163,8 +163,8 @@ True se este objeto tiver sido marcado para exclusão. Esse atributo existe para
 | ID do link                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| É de valor único       | True                                     |
-| É indexado             | True                                     |
+| É de valor único       | Verdadeiro                                     |
+| É indexado             | Verdadeiro                                     |
 | No catálogo global      | Falso                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                             |
 | Range-Lower            | \-                                       |

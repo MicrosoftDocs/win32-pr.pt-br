@@ -1,7 +1,7 @@
 ---
-description: Função D3DXFloat32To16Array (D3dx9math. h) – converte uma matriz de 32 bits floats em floats de 16 bits.
+description: Função D3DXFloat32To16Array (D3dx9math.h) – converte uma matriz de floats de 32 bits em floats de 16 bits.
 ms.assetid: 00f7ae77-d2b5-4244-8fe9-6fea475700b7
-title: Função D3DXFloat32To16Array (D3dx9math. h)
+title: Função D3DXFloat32To16Array (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: dc00df150c48e285d5478eb9b11df6c5203d6bcc
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 2d4b02a85a22d8490b36ad32511af0d85294045502d4e32ba82b757ac34e21ea
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108094254"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120027726"
 ---
-# <a name="d3dxfloat32to16array-function-d3dx9mathh"></a>Função D3DXFloat32To16Array (D3dx9math. h)
+# <a name="d3dxfloat32to16array-function-d3dx9mathh"></a>Função D3DXFloat32To16Array (D3dx9math.h)
 
-Converte uma matriz de 32-bit floats em floats de 16 bits.
+Converte uma matriz de floats de 32 bits em floats de 16 bits.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,7 +42,7 @@ D3DXFLOAT16* D3DXFloat32To16Array(
 
 <dl> <dt>
 
-*pout* \[ entrada, saída\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXFLOAT16**](d3dxfloat16.md)\***
@@ -51,19 +51,19 @@ Ponteiro para a matriz de floats de 16 bits.
 
 </dd> <dt>
 
-*fixar* \[ no\]
+*pIn* \[ Em\]
 </dt> <dd>
 
-Tipo: **const [**float**](../winprog/windows-data-types.md) \***
+Tipo: **const [**FLOAT**](../winprog/windows-data-types.md) \***
 
-Ponteiro para uma matriz de flutuações de 32 bits.
+Ponteiro para uma matriz de floats de 32 bits.
 
 </dd> <dt>
 
 *n* \[ em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 O número de elementos na matriz.
 
@@ -81,12 +81,12 @@ Ponteiro para uma matriz de floats de 16 bits.
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

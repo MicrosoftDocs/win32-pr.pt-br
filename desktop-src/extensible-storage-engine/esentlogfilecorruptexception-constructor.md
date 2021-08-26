@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: cc074602792f6d88dcc3c465174000595273232b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b8b11e31a0b5fbcad79511457f6debc64859a890f71563d297763d43d8c80099
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105765079"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120019587"
 ---
 # <a name="esentlogfilecorruptexception-constructor"></a>Construtor EsentLogFileCorruptException
 
 Inicializa uma nova instância da classe EsentLogFileCorruptException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentLogFileCorruptException()
 
 [Classe EsentLogFileCorruptException](./esentlogfilecorruptexception-class.md)
 
-[Membros do EsentLogFileCorruptException](./esentlogfilecorruptexception-members.md)
+[Membros EsentLogFileCorruptException](./esentlogfilecorruptexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

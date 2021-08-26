@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Offreg.dll
-ms.openlocfilehash: 13594493af2e7992471d13dce30f0a848501c4bb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 786321db22c513e7698fcd1661d173ccb5fdf76f1b09d9dd3e739ddf3fb2ca47
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750131"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119984156"
 ---
 # <a name="orgetkeysecurity-function"></a>Função ORGetKeySecurity
 
@@ -70,7 +70,7 @@ Um ponteiro para uma variável que especifica o tamanho, em bytes, do buffer apo
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for bem-sucedida, a função retornará êxito de erro \_ .
 
@@ -84,8 +84,8 @@ Se o buffer especificado pelo parâmetro *pSecurityDescriptor* for muito pequeno
 
 | Requisito | Valor |
 |----------------------------|---------------------------------------------------------------------------------------|
-| Redistribuível<br/> | Biblioteca de registro offline do Windows versão 1,0 ou posterior<br/>                      |
-| parâmetro<br/>          | <dl> <dt>Offreg. h</dt> </dl>   |
+| Redistribuível<br/> | Windows Biblioteca de registro offline versão 1,0 ou posterior<br/>                      |
+| Cabeçalho<br/>          | <dl> <dt>Offreg. h</dt> </dl>   |
 | DLL<br/>             | <dl> <dt>Offreg.dll</dt> </dl> |
 
 

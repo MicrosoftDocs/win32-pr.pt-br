@@ -4,12 +4,12 @@ ms.assetid: d3b5668a-29bf-4846-8ab0-1bda7b6160f9
 title: Exemplo de zoom de tinta
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f20253a3f56b2a03b5a6dad45ab9a8b72090b5ea
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3d786fe502e1510a44df39049e845f05694a1befae0d4a21bcfa2ba2bd2b19b2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501400"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119939436"
 ---
 # <a name="ink-zoom-sample"></a>Exemplo de zoom de tinta
 
@@ -30,7 +30,7 @@ Os recursos a seguir são usados neste exemplo:
 
 ## <a name="initializing-the-form"></a>Inicializando o formulário
 
-Primeiro, o exemplo faz referência às interfaces de automação do Tablet PC, que são fornecidas no SDK (Software Development Kit) do Windows Vista ou do Windows XP Tablet PC Edition.
+primeiro, o exemplo faz referência às interfaces de automação do tablet pc, que são fornecidas no SDK (Kit de desenvolvimento de Software) do Windows Vista ou Windows XP tablet pc Edition.
 
 
 ```C++

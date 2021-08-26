@@ -1,6 +1,6 @@
 ---
 title: Enumeração de D3DX11_CHANNEL_FLAG (D3DX11tex. h)
-description: Observe que a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store. Esses sinalizadores são usados por funções que operam em um ou mais canais em uma textura.
+description: observe que a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows. Esses sinalizadores são usados por funções que operam em um ou mais canais em uma textura.
 ms.assetid: 058a0a1e-3c1b-4397-a41a-2e47d878cd92
 keywords:
 - Enumeração D3DX11_CHANNEL_FLAG Direct3D 11
@@ -15,17 +15,17 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d2e3097552637ce96663671dda443684ebda2b65
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
-ms.translationtype: HT
+ms.openlocfilehash: 45f8142d34235a151638e1043928521666f2d1751319ee785d22b92004a14421
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104371018"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120028306"
 ---
 # <a name="d3dx11_channel_flag-enumeration"></a>Enumeração de sinalizador de \_ canal D3DX11 \_
 
 > [!Note]  
-> A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store.
+> a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows.
 
  
 

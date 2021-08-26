@@ -6,12 +6,12 @@ keywords:
 - RPC de chamada de procedimento remoto, tarefas, disponibilizando o servidor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ee2826e4e63e7e78e7f87f6afc120b80e885cd3
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 55385a1ba10f7f8ca28622af0b145ce25ef1bbbd0ab8df327687ce7fd7db6f77
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005726"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120020050"
 ---
 # <a name="making-the-server-available-on-the-network"></a>Disponibilizando o servidor na rede
 
@@ -52,9 +52,9 @@ status = RpcServerInqBindings(&rpcBindingVector);
 
 O único parâmetro passado para a função [**RpcServerInqBindings**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcserverinqbindings) é um ponteiro para um ponteiro para uma estrutura de [**\_ \_ vetor de associação RPC**](/windows/desktop/api/Rpcdce/ns-rpcdce-rpc_binding_vector) . A biblioteca de tempo de execução RPC aloca dinamicamente uma matriz de vetores de ligação e armazena o endereço da matriz na variável de parâmetro (nesse caso, **rpcBindingVector**). Cada aplicativo de servidor é responsável por liberar esse vetor de ligação usando a função [**RpcBindingVectorFree**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcbindingvectorfree) depois que ele termina de usá-lo (por exemplo, depois de transmiti-lo para as funções apropriadas).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: 910eb010-07df-4384-a489-3c268e4cd531
 title: Exemplo de MFCaptureToFile
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a0f8d8bb71eabb1faeb72bd8ce345b7a3eea0fe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5a1d5a588a573d7e2bc89fab25383210b275476a5285e377d651e44ecef47896
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647560"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119940336"
 ---
 # <a name="mfcapturetofile-sample"></a>Exemplo de MFCaptureToFile
 
@@ -38,7 +38,7 @@ Este exemplo demonstra as APIs a seguir.
 
 ## <a name="downloading-the-sample"></a>Baixando o exemplo
 
-Este exemplo está disponível no [repositório GitHub de exemplos clássicos do Windows](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/mediafoundation/MFCaptureToFile).
+Este exemplo está disponível no repositório [Windows github de exemplos clássicos.](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/mediafoundation/MFCaptureToFile)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

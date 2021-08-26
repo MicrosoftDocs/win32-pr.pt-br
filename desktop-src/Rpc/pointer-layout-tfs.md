@@ -4,12 +4,12 @@ description: O layout do ponteiro descreve os ponteiros de uma estrutura ou de u
 ms.assetid: 1a4984c1-97b9-4e95-a17e-851b67fa94a3
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f26a6639b0c4b56c911be1e688995aaf3fb9d2d8
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6616cc7d1000b042c6039b2abf3f79d4900cd0e5fadac748881666610b139c57
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822879"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120019187"
 ---
 # <a name="pointer-layout"></a>Layout do ponteiro
 
@@ -162,21 +162,21 @@ A princípio, o endianess Pass é um pouco semelhante ao empacotamento/desempaco
 
 As passagens de endianess são diferentes da seguinte maneira: todas as estruturas e todos os membros têm que ser percorridos até que o membro folha ou o elemento seja um tipo simples. Isso é diferente do desempacotamento; no desempacotamento, por exemplo, nunca há necessidade de processar estruturas de conformidade inseridas em estruturas em conformidade ou em qualquer membro da estrutura compatível, para esse assunto. Outro problema é que a conversão não é uma operação idempotente; portanto, a passagem de desempacotamento pode refazer o desempacotamento de algumas partes sem danos, enquanto a conversão precisa ser executada em uma base de tipo estritamente única vez por qualquer um.
 
-Portanto, o algoritmo endianess pode ser resumido da seguinte maneira. O NDR tem uma noção da estrutura de conformidade de nível superior e um sinalizador para marcá-lo, conforme apropriado. Ao se movimentar pela primeira vez, como para converter a parte plana e obter o local dos pontos, essa noção não seria usada. O NDR se depararia com as partes simples de todos os níveis de estruturas e nunca se aventuraria no processamento de ponteiros. Por fim, o NDR iria converter a matriz no nível superior.
+Portanto, o algoritmo endianess pode ser resumido da seguinte maneira. A NDR tem uma noção da estrutura compatível de nível superior e um sinalizador para marcá-la, conforme apropriado. Ao passar pela primeira vez, como converter a parte plana e obter o local dos pontos, essa noção não será usada. A NDR seria decrescente pelas partes planas de todos os níveis de estruturas e nunca entraria no processamento de ponteiro. Por fim, a NDR converteria a matriz no nível superior.
 
-Ao percorrer a segunda vez, o sinalizador seria usado para marcar a passagem do ponteiro inserido para evitar a inserção de níveis mais detalhados das estruturas em conformidade e, em seguida, a estrutura compatível mais alta. Dessa forma, o sinalizador forçaria o comportamento comum de marshaling/desempacotamento, que é evitar decrescente em níveis mais detalhados de estruturas em conformidade.
+Ao passar pela segunda vez, o sinalizador seria usado para marcar a passagem do ponteiro inserido para evitar a inserção de níveis mais profundos das estruturas compatíveis e, em seguida, a estrutura mais compatível. Dessa forma, o sinalizador forçaria o comportamento comum de marshaling/desmarque, que é evitar a queda em níveis mais profundos de estruturas compatíveis.
 
-A segunda passagem para estruturas complexas com matrizes em conformidade funciona da seguinte maneira: as estruturas complexas funcionam da maneira comum; Isso significa que os níveis mais detalhados nunca examinarão nem ignorarão seu tamanho de conformidade ou suas matrizes de conformidade e, em vez disso, simplesmente percorrerão seus membros sem tocar na matriz.
+A segunda passagem para estruturas complexas com matrizes compatíveis funciona da seguinte maneira: as estruturas complexas funcionam da maneira comum; o que significa que níveis mais profundos nunca olhariam ou ignorariam seu tamanho compatível ou suas matrizes compatíveis e, em vez disso, simplesmente explicam seus membros sem tocar na matriz.
 
-Para estruturas complexas com estruturas compatíveis, a estrutura compatível deve estar ciente se é de nível superior e se está em uma estrutura complexa. A parte simples da matriz é processada pela estrutura compatível mais alta. Na segunda passagem, a estrutura compatível mais alta iria ignorar a parte plana e passar pelo layout do ponteiro e retornando. A estrutura mais complexa ignoraria sua parte plana e também ignoraria o layout do ponteiro.
+Para estruturas complexas com estruturas compatíveis, a estrutura compatível deve estar ciente se ela é de nível superior e se está em uma estrutura complexa. A parte plana da matriz é processada pela estrutura mais compatível. Na segunda passagem, a estrutura mais compatível ignoraria a parte simples e passaria pelo layout do ponteiro e retornaria. A estrutura mais complexa ignoraria sua parte plana e também ignoraria o layout do ponteiro.
 
-**O aspecto robusto das endianess Walks**
+**O aspecto robusto das orientações de endiaidade**
 
-A endianess Walk verifica as condições normais do buffer e executa outras verificações de uma natureza não correlacionada. As verificações destinadas a valores correlacionados (como o argumento de dimensionamento versus o tamanho de conformidade) não podem ser executadas usando essa etapa; Eles são executados mais tarde, ao desempacotamento.
+O passo a passo de endiaidade verifica as condições comuns fora do buffer e executa outras verificações de natureza não corrigida. As verificações destinadas a valores correlacionados (como o argumento de tamanho versus o tamanho compatível) não podem ser executadas usando esta etapa; eles são executados posteriormente, ao desmarcar.
 
- 
+ 
 
- 
+ 
 
 
 

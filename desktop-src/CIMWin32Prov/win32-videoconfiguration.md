@@ -1,8 +1,8 @@
 ---
-description: A \_ classe Win32 VideoConfiguration não está ativa. Ele não retornará nenhuma instância, pois não há nenhum provedor fazendo backup dele.
+description: A classe \_ VideoConfiguration win32 não está ativa. Ele não retornará nenhuma instância, pois não há nenhum provedor que o retorne.
 ms.assetid: 8dd15e8a-ff9b-4e75-bae9-8c80548301ab
 ms.tgt_platform: multiple
-title: Classe Win32_VideoConfiguration
+title: Win32_VideoConfiguration classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -44,18 +44,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 96ad4206cc50953a135b23257526ffb5cdc59b6e
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 7d951a8927458fa12398682ce63963dd71949d70e4db3a426dfc93ad14c78bf7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104500836"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119922616"
 ---
-# <a name="win32_videoconfiguration-class"></a>\_Classe Win32 VideoConfiguration
+# <a name="win32_videoconfiguration-class"></a>Classe \_ VideoConfiguration do Win32
 
-A classe **Win32 \_ VideoConfiguration** não está ativa. Ele não retornará nenhuma instância, pois não há nenhum provedor fazendo backup dele.
+A **classe \_ VideoConfiguration win32** não está ativa. Ele não retornará nenhuma instância, pois não há nenhum provedor que o retorne.
 
-A classe **Win32 \_ VideoConfiguration** representa uma configuração de um subsistema de vídeo. Essa classe foi preterida em favor das propriedades contidas nas classes [**Win32 \_ VideoController**](win32-videocontroller.md), [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md)e [**CIM \_ VideoControllerResolution**](cim-videocontrollerresolution.md)
+A **classe \_ VideoConfiguration do Win32** representa uma configuração de um subsistema de vídeo. Essa classe foi preterida em favor das propriedades contidas nas classes [**Win32 \_ VideoController,**](win32-videocontroller.md) [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md)e [**CIM \_ VideoControllerResolution**](cim-videocontrollerresolution.md)
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas.
 
@@ -100,31 +100,31 @@ class Win32_VideoConfiguration : CIM_Setting
 
 ## <a name="members"></a>Membros
 
-A classe **Win32 \_ VideoConfiguration** tem estes tipos de membros:
+A **classe \_ VideoConfiguration win32** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Win32 \_ VideoConfiguration** tem essas propriedades.
+A **classe \_ VideoConfiguration win32** tem essas propriedades.
 
 <dl> <dt>
 
 **ActualColorResolution**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**preterido**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| funções de contexto de dispositivo win32api \| [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) \| COLORRES"), [**unidades**](../wmisdk/standard-qualifiers.md) ("bits por pixel")
+Qualificadores: [**PRETERIDO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Device Context Functions \| [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) \| COLORRES"), [**Unidades**](../wmisdk/standard-qualifiers.md) ("bits por pixel")
 </dt> </dl>
 
-Indica a intensidade de cor atual da exibição do vídeo.
+Indica a profundidade de cor atual da exibição de vídeo.
 
-Essa propriedade foi preterida em favor de uma propriedade (s) correspondente contida no [**Win32 \_ VideoController**](win32-videocontroller.md), [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//ou [**CIM \_ VideoControllerResolution**](cim-videocontrollerresolution.md).
+Essa propriedade foi preterida em favor de uma(s) propriedade(s) correspondente contida no [**\_ VideoController win32,**](win32-videocontroller.md) [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e/ou [**CIM \_ VideoControllerResolution.**](cim-videocontrollerresolution.md)
 
 </dd> <dt>
 
@@ -137,14 +137,14 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**preteridos**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| sistema \\ \\ CurrentControlSet \\ \\ Services \\ \\ Class \\ \\ info \| chiptype")
+Qualificadores: [**PRETERIDO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services Class \\ \\ \\ \\ Info \| ChipType")
 </dt> </dl>
 
 Contém o nome do chip do adaptador.
 
-Exemplo: S3
+Exemplo: s3
 
-Essa propriedade foi preterida em favor de uma propriedade (s) correspondente contida no [**Win32 \_ VideoController**](win32-videocontroller.md), [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//ou [**CIM \_ VideoControllerResolution**](cim-videocontrollerresolution.md).
+Essa propriedade foi preterida em favor de uma(s) propriedade(s) correspondente contida no [**\_ VideoController win32,**](win32-videocontroller.md) [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e/ou [**CIM \_ VideoControllerResolution.**](cim-videocontrollerresolution.md)
 
 </dd> <dt>
 
@@ -157,12 +157,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**preterido**](../wmisdk/standard-wmi-qualifiers.md), [**chave**](../wmisdk/key-qualifier.md), [**maxlen**](../wmisdk/standard-qualifiers.md) (256), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
+Qualificadores: [**PRETERIDO,**](../wmisdk/standard-wmi-qualifiers.md) [**chave**](../wmisdk/key-qualifier.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
 </dt> </dl>
 
 Especifica o nome do fabricante do adaptador. Esse nome pode ser usado para comparar a compatibilidade desse dispositivo com as necessidades do sistema de computador.
 
-Essa propriedade foi preterida em favor de uma propriedade (s) correspondente contida no [**Win32 \_ VideoController**](win32-videocontroller.md), [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//ou [**CIM \_ VideoControllerResolution**](cim-videocontrollerresolution.md).
+Essa propriedade foi preterida em favor de uma(s) propriedade(s) correspondente contida no [**\_ VideoController win32,**](win32-videocontroller.md) [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e/ou [**CIM \_ VideoControllerResolution.**](cim-videocontrollerresolution.md)
 
 </dd> <dt>
 
@@ -175,12 +175,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**preteridos**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| sistema \\ \\ CurrentControlSet \\ \\ Services \\ \\ Class \\ \\ info \| DACType")
+Qualificadores: [**PRETERIDO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services Class \\ \\ \\ \\ Info \| DACType")
 </dt> </dl>
 
-Indica o nome do chip digital para analógico (DAC) usado no adaptador.
+Indica o nome do CHIP digital para análogo (DAC) usado no adaptador.
 
-Essa propriedade foi preterida em favor de uma propriedade (s) correspondente contida no [**Win32 \_ VideoController**](win32-videocontroller.md), [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//ou [**CIM \_ VideoControllerResolution**](cim-videocontrollerresolution.md).
+Essa propriedade foi preterida em favor de uma(s) propriedade(s) correspondente contida no [**\_ VideoController win32,**](win32-videocontroller.md) [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e/ou [**CIM \_ VideoControllerResolution.**](cim-videocontrollerresolution.md)
 
 </dd> <dt>
 
@@ -193,32 +193,32 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**preteridos**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
+Qualificadores: [**PRETERIDO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
 </dt> </dl>
 
 Contém uma descrição ou um nome descritivo do adaptador de vídeo.
 
-Essa propriedade foi preterida em favor de uma propriedade (s) correspondente contida no [**Win32 \_ VideoController**](win32-videocontroller.md), [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//ou [**CIM \_ VideoControllerResolution**](cim-videocontrollerresolution.md).
+Essa propriedade foi preterida em favor de uma(s) propriedade(s) correspondente contida no [**\_ VideoController win32,**](win32-videocontroller.md) [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e/ou [**CIM \_ VideoControllerResolution.**](cim-videocontrollerresolution.md)
 
 </dd> <dt>
 
 **AdapterRAM**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**preteridos**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| sistema \\ \\ CurrentControlSet \\ \\ Services \\ \\ Class \\ \\ info \| VideoMemory"), [**Units**](../wmisdk/standard-qualifiers.md) ("bytes")
+Qualificadores: [**PRETERIDO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services Class \\ \\ \\ \\ Info \| VideoMemory"), [**Units**](../wmisdk/standard-qualifiers.md) ("bytes")
 </dt> </dl>
 
 Indica o tamanho da memória do adaptador de vídeo.
 
 Exemplo: 16777216
 
-Essa propriedade foi preterida em favor de uma propriedade (s) correspondente contida no [**Win32 \_ VideoController**](win32-videocontroller.md), [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//ou [**CIM \_ VideoControllerResolution**](cim-videocontrollerresolution.md).
+Essa propriedade foi preterida em favor de uma(s) propriedade(s) correspondente contida no [**\_ VideoController win32,**](win32-videocontroller.md) [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e/ou [**CIM \_ VideoControllerResolution.**](cim-videocontrollerresolution.md)
 
 </dd> <dt>
 
@@ -231,34 +231,34 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**preterido**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry o \| sistema de descrição de hardware \\ \\ \\ \\ \\ \\ DisplayController \\ \\ 0 \\ \\ identificador")
+Qualificadores: [**PRETERIDO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| HARDWARE Description System \\ \\ \\ \\ \\ \\ DisplayController \\ \\ 0 \\ \\ Identifier")
 </dt> </dl>
 
 Indica o tipo de adaptador de vídeo.
 
 Conjunto de caracteres: alfanumérico
 
-Essa propriedade foi preterida em favor de uma propriedade (s) correspondente contida no [**Win32 \_ VideoController**](win32-videocontroller.md), [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//ou [**CIM \_ VideoControllerResolution**](cim-videocontrollerresolution.md).
+Essa propriedade foi preterida em favor de uma(s) propriedade(s) correspondente contida no [**\_ VideoController win32,**](win32-videocontroller.md) [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e/ou [**CIM \_ VideoControllerResolution.**](cim-videocontrollerresolution.md)
 
 </dd> <dt>
 
-**BitsPerPixel**
+**Bitsperpixel**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**preterido**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| funções de contexto de dispositivo win32api \| [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) \| BITSPIXEL")
+Qualificadores: [**PRETERIDO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Funções de contexto do dispositivo Win32API \| \| [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) \| BITSPIXEL")
 </dt> </dl>
 
-Indica o número real de bits por pixel que representa a exibição. Isso pode ser dimensionado para a configuração de vídeo atual (representada pela propriedade ActualColorResolution) do usuário.
+Indica o número real de bits por pixel que representam a exibição. Isso pode ser dimensionado para a configuração de vídeo atual (representada pela propriedade ActualColorResolution) do usuário.
 
 Exemplo: 8
 
-Essa propriedade foi preterida em favor de uma propriedade (s) correspondente contida no [**Win32 \_ VideoController**](win32-videocontroller.md), [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//ou [**CIM \_ VideoControllerResolution**](cim-videocontrollerresolution.md).
+Essa propriedade foi preterida em favor de uma(s) propriedade(s) correspondente contida no [**\_ VideoController win32,**](win32-videocontroller.md) [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e/ou [**CIM \_ VideoControllerResolution.**](cim-videocontrollerresolution.md)
 
 </dd> <dt>
 
@@ -271,52 +271,52 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](../wmisdk/standard-qualifiers.md) (64)
+Qualificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64)
 </dt> </dl>
 
-Breve descrição textual do objeto atual.
+Descrição textual curta do objeto atual.
 
-Essa propriedade é herdada [**da \_ configuração de CIM**](cim-setting.md).
+Essa propriedade é herdada da [**Configuração cim \_**](cim-setting.md).
 
 </dd> <dt>
 
 **ColorPlanes**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**preteridos**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| funções de contexto de dispositivo win32api planos de \| [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) \| ")
+Qualificadores: [**PRETERIDO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Device Context Functions \| [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) \| PLANES")
 </dt> </dl>
 
-Indica o número atual de planos de cores usados na exibição do vídeo. Um plano de cores é outra maneira de representar cores de pixel; em vez de atribuir um único valor RGB a cada pixel, os planos de cores separam o gráfico em cada um dos componentes de cor primária (vermelho verde azul) e os armazenam em seus próprios planos. Isso permite mais profundidades de cor em sistemas de vídeo de 8 e 16 bits. Os sistemas gráficos apresentam o bitwidth grande o suficiente para armazenar informações de profundidade de cor, tornando apenas um plano de cores necessário.
+Indica o número atual de planos de cores usados na exibição de vídeo. Um plano de cores é outra maneira de representar cores de pixel; em vez de atribuir um único valor RGB a cada pixel, os planos de cores separam o gráfico em cada um dos componentes de cor primária (vermelho-verde) e os armazenam em seus próprios planos. Isso permite maior profundidade de cor em sistemas de vídeo de 8 e 16 bits. Os sistemas gráficos atuais têm a bitwidth grande o suficiente para armazenar informações de profundidade de cor, tornando necessário apenas um plano de cores.
 
 Example: 1
 
-Essa propriedade foi preterida em favor de uma propriedade (s) correspondente contida no [**Win32 \_ VideoController**](win32-videocontroller.md), [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//ou [**CIM \_ VideoControllerResolution**](cim-videocontrollerresolution.md).
+Essa propriedade foi preterida em favor de uma(s) propriedade(s) correspondente contida no [**\_ VideoController win32,**](win32-videocontroller.md) [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e/ou [**CIM \_ VideoControllerResolution.**](cim-videocontrollerresolution.md)
 
 </dd> <dt>
 
 **ColorTableEntries**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**preterido**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| funções de contexto de dispositivo win32api \| [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) \| NUMCOLORS")
+Qualificadores: [**PRETERIDO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Funções de contexto do dispositivo Win32API \| \| [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) \| NUMCOLORS")
 </dt> </dl>
 
-Indica o número de índices de cores em uma tabela de cores para uma exibição de vídeo. Essa propriedade será usada se o dispositivo tiver uma profundidade de cor de no máximo 8 bits por pixel. Para dispositivos com mais profundidades de cor,-1 é retornado.
+Indica o número de índices de cores em uma tabela de cores para uma exibição de vídeo. Essa propriedade será usada se o dispositivo tiver uma profundidade de cor de não mais de 8 bits por pixel. Para dispositivos com profundidades de cor maiores, -1 é retornado.
 
 Exemplo: 256
 
-Essa propriedade foi preterida em favor de uma propriedade (s) correspondente contida no [**Win32 \_ VideoController**](win32-videocontroller.md), [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//ou [**CIM \_ VideoControllerResolution**](cim-videocontrollerresolution.md).
+Essa propriedade foi preterida em favor de uma(s) propriedade(s) correspondente contida no [**\_ VideoController win32,**](win32-videocontroller.md) [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e/ou [**CIM \_ VideoControllerResolution.**](cim-videocontrollerresolution.md)
 
 </dd> <dt>
 
@@ -331,7 +331,7 @@ Tipo de acesso: Somente leitura
 
 Descrição textual do objeto atual.
 
-Essa propriedade é herdada [**da \_ configuração de CIM**](cim-setting.md).
+Essa propriedade é herdada da [**Configuração cim \_**](cim-setting.md).
 
 </dd> <dt>
 
@@ -407,7 +407,7 @@ Qualificadores: [**preterido**](../wmisdk/standard-wmi-qualifiers.md), [**Mappin
 
 Especifica o caminho para o arquivo. inf do driver de vídeo.
 
-Exemplo: C: \\ drivers do Windows \\ System32 \\
+exemplo: C: \\ Windows \\ System32 \\ Drivers
 
 Essa propriedade foi preterida em favor de uma propriedade (s) correspondente contida no [**Win32 \_ VideoController**](win32-videocontroller.md), [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//ou [**CIM \_ VideoControllerResolution**](cim-videocontrollerresolution.md).
 
@@ -633,7 +633,7 @@ Essa propriedade foi preterida em favor de uma propriedade (s) correspondente co
 
 </dd> <dt>
 
-**SettingID**
+**Settingid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -642,52 +642,52 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](../wmisdk/standard-qualifiers.md) (256)
+Qualificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
 </dt> </dl>
 
 Identificador pelo qual o objeto atual é conhecido.
 
-Essa propriedade é herdada [**da \_ configuração de CIM**](cim-setting.md).
+Essa propriedade é herdada da [**Configuração cim \_**](cim-setting.md).
 
 </dd> <dt>
 
 **SystemPaletteEntries**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**preterido**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| funções de contexto de dispositivo win32api \| [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) \| SIZEPALETTE")
+Qualificadores: [**PRETERIDO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Device Context Functions \| [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) \| SIZEPALETTE")
 </dt> </dl>
 
-Iindicates o número atual de entradas de índice de cor reservadas para uso do sistema. Esse valor só é válido para configurações de exibição que usam uma paleta indexada. As paletas indexadas não são usadas para profundidades de cor maiores que 8 bits por pixel. Se a profundidade de cor tiver mais de 8 bits por pixel, esse valor será definido como **nulo**.
+Iindica o número atual de entradas de índice de cores reservadas para uso do sistema. Esse valor só é válido para configurações de exibição que usam uma paleta indexada . Paletas indexadas não são usadas para profundidades de cor maiores que 8 bits por pixel. Se a profundidade da cor for maior que 8 bits por pixel, esse valor será definido como **NULL.**
 
 Exemplo: 20
 
-Essa propriedade foi preterida em favor de uma propriedade (s) correspondente contida no [**Win32 \_ VideoController**](win32-videocontroller.md), [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//ou [**CIM \_ VideoControllerResolution**](cim-videocontrollerresolution.md).
+Essa propriedade foi preterida em favor de uma(s) propriedade(s) correspondente contida no [**\_ VideoController win32,**](win32-videocontroller.md) [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e/ou [**CIM \_ VideoControllerResolution.**](cim-videocontrollerresolution.md)
 
 </dd> <dt>
 
 **VerticalResolution**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**preterido**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| funções de contexto de dispositivo win32api \| [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) \| VERTRES")
+Qualificadores: [**PRETERIDO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Device Context Functions \| [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) \| VERTRES")
 </dt> </dl>
 
 Indica o número atual de pixels na direção vertical (eixo Y) da exibição.
 
 Exemplo: 768
 
-Essa propriedade foi preterida em favor de uma propriedade (s) correspondente contida no [**Win32 \_ VideoController**](win32-videocontroller.md), [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//ou [**CIM \_ VideoControllerResolution**](cim-videocontrollerresolution.md).
+Essa propriedade foi preterida em favor de uma(s) propriedade(s) correspondente contida no [**\_ VideoController win32,**](win32-videocontroller.md) [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e/ou [**CIM \_ VideoControllerResolution.**](cim-videocontrollerresolution.md)
 
 </dd> </dl>
 
@@ -699,8 +699,8 @@ Essa propriedade foi preterida em favor de uma propriedade (s) correspondente co
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -709,7 +709,7 @@ Essa propriedade foi preterida em favor de uma propriedade (s) correspondente co
 
 <dl> <dt>
 
-[**Configuração de CIM \_**](cim-setting.md)
+[**Configuração cim \_**](cim-setting.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
 description: Exclui um subtipo especificado de dentro do tipo especificado.
 ms.assetid: 1c44a609-80af-4e28-b1b5-2b4faea143bd
-title: 'IPStore: método eleteSubtype de:D (Pstore. h)'
+title: Método IPStore::D eleteSubtype (Pstore.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Pstorec.dll
-ms.openlocfilehash: 6fd89c1dd00a71cb843596e08bc168b90008b180
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 88bb437c89073f3601050c1246f1e59b136a85955da4697d338077343a4d1bc3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747677"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120001606"
 ---
-# <a name="ipstoredeletesubtype-method"></a>IPStore: método eleteSubtype de:D
+# <a name="ipstoredeletesubtype-method"></a>Método IPStore::D eleteSubtype
 
-\[O armazenamento protegido (Pstore) está disponível para uso no Windows Server 2003 e no Windows XP. Ele só está disponível para operações somente leitura no Windows Server 2008 e no Windows Vista, mas pode estar indisponível nas versões subsequentes. A Pstore usa uma implementação mais antiga da proteção de dados. Os desenvolvedores são altamente incentivados a aproveitar a proteção de dados mais forte fornecida pelas funções [**CryptProtectData**](/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata) e [**CryptUnprotectData**](/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata) .\]
+\[O Armazenamento (Pstore) está disponível para uso no Windows Server 2003 e Windows XP. Ele só está disponível para operações somente leitura no Windows Server 2008 e Windows Vista, mas pode não estar disponível nas versões subsequentes. O Pstore usa uma implementação mais antiga da proteção de dados. Os desenvolvedores são incentivados a aproveitar a proteção de dados mais forte fornecida pelas funções [**CryptProtectData**](/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata) e [**CryptUnprotectData.**](/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata)\]
 
 Exclui um subtipo especificado de dentro do tipo especificado.
 
@@ -44,17 +44,17 @@ HRESULT DeleteSubtype(
 
 <dl> <dt>
 
-*Chave* \[ no\]
+*Chave* \[ Em\]
 </dt> <dd>
 
-Especifica se o tipo é local para o computador ou associado somente ao usuário de criação.
+Especifica se o tipo é local para o computador ou associado somente ao usuário que está criando.
 
 
 
 | Valor                                                                                                                                                                                                                                                   | Significado                                                                            |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| <span id="PST_KEY_CURRENT_USER"></span><span id="pst_key_current_user"></span><dl> <dt>**PST \_ CHAVE \_ do \_ usuário atual**</dt> <dt>0x00000000</dt> </dl>    | O armazenamento é mantido na seção usuário atual do registro.<br/>  |
-| <span id="PST_KEY_LOCAL_MACHINE"></span><span id="pst_key_local_machine"></span><dl> <dt>**PST \_ \_ \_ Computador local da chave**</dt> <dt>0x00000001</dt> </dl> | O armazenamento é mantido na seção máquina local do registro.<br/> |
+| <span id="PST_KEY_CURRENT_USER"></span><span id="pst_key_current_user"></span><dl> <dt>**PST \_ CHAVE \_ ATUAL \_ DO USUÁRIO**</dt> <dt>0X00000000</dt> </dl>    | O armazenamento é mantido na seção de usuário atual do Registro.<br/>  |
+| <span id="PST_KEY_LOCAL_MACHINE"></span><span id="pst_key_local_machine"></span><dl> <dt>**PST \_ CHAVE \_ DO \_ COMPUTADOR LOCAL**</dt> <dt>0X00000001</dt> </dl> | O armazenamento é mantido na seção computador local do Registro.<br/> |
 
 
 
@@ -62,30 +62,30 @@ Especifica se o tipo é local para o computador ou associado somente ao usuário
 
 </dd> <dt>
 
-*pType* \[ no\]
+*pType* \[ Em\]
 </dt> <dd>
 
 Um ponteiro para um GUID que identifica o tipo de dados do armazenamento.
 
 </dd> <dt>
 
-*pSubtype* \[ no\]
+*pSubtype* \[ Em\]
 </dt> <dd>
 
 Um ponteiro para um GUID que identifica o subtipo de dados do armazenamento.
 
 </dd> <dt>
 
-*dwFlags* \[ no\]
+*dwFlags* \[ Em\]
 </dt> <dd>
 
 Reservado: deve ser definido como zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O valor de retorno é um valor **HRESULT** . Um valor de **PST \_ E \_ OK** indica que a função foi bem-sucedida.
+O valor de retorno é um **valor HRESULT.** Um valor de **PST \_ E OK \_ indica** que a função foi bem-sucedida.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -93,7 +93,7 @@ O valor de retorno é um valor **HRESULT** . Um valor de **PST \_ E \_ OK** indi
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Pstore. h</dt> </dl>    |
+| parâmetro<br/> | <dl> <dt>Pstore.h</dt> </dl>    |
 | DLL<br/>    | <dl> <dt>Pstorec.dll</dt> </dl> |
 
 

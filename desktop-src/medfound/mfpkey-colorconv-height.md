@@ -1,31 +1,31 @@
 ---
 description: Especifica a altura dos retângulos de origem e de destino, em pixels.
 ms.assetid: be53d72f-f7b4-44a7-9231-fe0480daf49c
-title: Propriedade MFPKEY_COLORCONV_HEIGHT (Wmcodecdsp. h)
+title: MFPKEY_COLORCONV_HEIGHT propriedade (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d355a690962fa4525eec66061ad1f2cca23f8e6b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 77da2eede1200b8917df7f3ad55e25d28122c997ac93f7fefa2fc4e469c9b9ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104461222"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119954326"
 ---
-# <a name="mfpkey_colorconv_height-property"></a>\_Propriedade de \_ altura MFPKEY COLORCONV
+# <a name="mfpkey_colorconv_height-property"></a>Propriedade MFPKEY \_ COLORCONV \_ HEIGHT
 
 Especifica a altura dos retângulos de origem e de destino, em pixels.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
-Disponível apenas usando [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).
+Disponível somente usando [**IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore)
 
 ## <a name="data-type"></a>Tipo de Dados
 
-\_I4 VT
+VT \_ I4
 
 ## <a name="applies-to"></a>Aplica-se A
 
--   [DSP de conversor de cores](colorconverter.md)
+-   [DSP do Conversor de Cores](colorconverter.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -33,9 +33,9 @@ Disponível apenas usando [**IPropertyStore**](/windows/win32/api/propsys/nn-pro
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                    |
-| parâmetro<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                    |
+| Cabeçalho<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -43,7 +43,7 @@ Disponível apenas usando [**IPropertyStore**](/windows/win32/api/propsys/nn-pro
 
 <dl> <dt>
 
-[Propriedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propriedades](media-foundation-properties.md)
 </dt> </dl>
 
  

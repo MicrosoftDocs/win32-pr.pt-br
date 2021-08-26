@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 197eb7e402068f541dc5a385eca14a631de2488c
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 719c8bba805ffb58b8c15661ba2618c29b9dedc1f65f36dba50791cde985a397
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104370848"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120032046"
 ---
 # <a name="valuemapvaluetype-complex-type"></a>Tipo complexo ValueMapValueType
 
@@ -57,7 +57,7 @@ Define o mapeamento entre um valor inteiro e um valor de cadeia de caracteres.
 |---------|-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | message | [**strTableRef**](eventmanifestschema-strtableref-simpletype.md) | O valor da cadeia de caracteres localizada para o qual o valor inteiro é mapeado. A cadeia de caracteres de mensagem faz referência a uma cadeia de caracteres localizada na seção [**STRINGTABLE**](eventmanifestschema-stringtable-resources-element.md) do manifesto. <br/>                                                                              |
 | símbolo  | [**CSymbolType**](eventmanifestschema-csymboltype-simpletype.md) | O símbolo a ser usado para referenciar o mapa em seu aplicativo. O [**compilador de mensagem (MC.exe)**](message-compiler--mc-exe-.md) usa o símbolo para criar uma constante para o mapa no arquivo de cabeçalho que o compilador gera. Se você não especificar um símbolo, o compilador gerará um para você.<br/> |
-| value   | [**UInt32type**](eventmanifestschema-hexint32type-simpletype.md) | O valor inteiro a ser mapeado para o valor da cadeia de caracteres.<br/>                                                                                                                                                                                                                                                       |
+| valor   | [**UInt32type**](eventmanifestschema-hexint32type-simpletype.md) | O valor inteiro a ser mapeado para o valor da cadeia de caracteres.<br/>                                                                                                                                                                                                                                                       |
 
 
 
@@ -67,8 +67,8 @@ Define o mapeamento entre um valor inteiro e um valor de cadeia de caracteres.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 
