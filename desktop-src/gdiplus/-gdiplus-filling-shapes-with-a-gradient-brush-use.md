@@ -4,12 +4,12 @@ ms.assetid: e37b4c3a-b753-483a-990f-da3bcc70acf5
 title: Preenchendo formas com um pincel de gradiente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a6784d0bfd59fd37f217e8d7a1cdd230348807d0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d0d471e9d3e2d7fb6d151d50ab3b5f10212874180b4554769b5c00a552085391
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104988876"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120015046"
 ---
 # <a name="filling-shapes-with-a-gradient-brush"></a>Preenchendo formas com um pincel de gradiente
 
@@ -17,7 +17,7 @@ Você pode usar um pincel de gradiente para preencher uma forma com uma cor que 
 
 Um gradiente linear muda de cor ao mover na horizontal, vertical ou em paralelo para uma linha inclinada especificada. Um gradiente de demarcador muda de cor ao mover sobre o interior e o limite de um demarcador. É possível personalizar gradientes de demarcador para obter uma grande variedade de efeitos.
 
-O GDI+ fornece as classes [**LinearGradientBrush**](/windows/desktop/api/gdiplusbrush/nl-gdiplusbrush-lineargradientbrush) e [**PathGradientBrush**](/windows/desktop/api/gdipluspath/nl-gdipluspath-pathgradientbrush) , ambas herdadas da classe [**Brush**](/windows/desktop/api/gdiplusbrush/nl-gdiplusbrush-brush) .
+GDI+ fornece as classes [**LinearGradientBrush**](/windows/desktop/api/gdiplusbrush/nl-gdiplusbrush-lineargradientbrush) e [**PathGradientBrush**](/windows/desktop/api/gdipluspath/nl-gdipluspath-pathgradientbrush) , ambas herdadas da classe [**Brush**](/windows/desktop/api/gdiplusbrush/nl-gdiplusbrush-brush) .
 
 Os tópicos a seguir abordam gradientes lineares e de caminho mais detalhadamente:
 

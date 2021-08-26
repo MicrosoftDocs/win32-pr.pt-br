@@ -4,12 +4,12 @@ ms.assetid: 0a885b7a-840d-4112-85f7-ff6f2d87bb75
 title: EC_CLOCK_UNSET (DShow. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 85ead35d89eee94bbffb38a96f658ccb2bb6e6e4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dd7bc9daecb9e39ca2d121c9fa903b2e4e8257e6247f28d718ca093b302cc2e7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105766314"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119998216"
 ---
 # <a name="ec_clock_unset"></a>desdefinição do relógio do EC \_ \_
 
@@ -35,7 +35,7 @@ Zero.
 
 ## <a name="default-action"></a>Ação Padrão
 
-O Gerenciador de gráfico de filtro escolhe um novo relógio de referência no próximo comando Pause ou Run. Ele também encaminha o evento para o aplicativo.
+o filtro Graph Manager escolhe um novo relógio de referência no próximo comando pause ou run. Ele também encaminha o evento para o aplicativo.
 
 ## <a name="remarks"></a>Comentários
 

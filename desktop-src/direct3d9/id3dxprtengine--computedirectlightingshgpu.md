@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: e56dd807d28ba6952cd20c971b675b83687a3015
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 14dc76cb8ac3875101c42beb581c7eb2b96eb7511c85e7f76cd034658afcca3d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105769371"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119985576"
 ---
 # <a name="id3dxprtenginecomputedirectlightingshgpu-method"></a>Método ID3DXPRTEngine:: ComputeDirectLightingSHGPU
 
@@ -59,7 +59,7 @@ Ponteiro para o objeto de dispositivo [**IDirect3DDevice9**](/windows/win32/api/
 
 </dd> <dt>
 
-*Flags* \[in\]
+*Sinalizadores* \[ de no\]
 </dt> <dd>
 
 Tipo: **[ **uint**](../winprog/windows-data-types.md)**
@@ -104,7 +104,7 @@ Ponteiro para um objeto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) . Esse buffer de
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

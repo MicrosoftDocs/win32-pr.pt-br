@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: c76cbb6c019878d9c392d21caa40c604df3a5f12
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 111b292c5f355aceefa95fb01bafc2cb9220757618d39d4b3ca29bbf77ca4570
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171706"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119948676"
 ---
 # <a name="job_info_3-structure"></a>Estrutura das informações do trabalho \_ \_ 3
 

@@ -1,17 +1,17 @@
 ---
 description: Lista as funções de transformação de vetor 4D.
 ms.assetid: 25fada4c-0ddc-0b79-9b8a-e9edfefce19a
-title: Funções de transformação de vetor de 4D de biblioteca DirectXMath
+title: Funções de transformação de vetor 4D da Biblioteca DirectXMath
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ae78e754a608724f3943c3cbef26cc18c5d12347
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 96a34d08ab7a1eed2daddfcda4b7f05a00dd9beadd8e0e8490bd78ee3a55cc6c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105780348"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119979166"
 ---
-# <a name="directxmath-library-4d-vector-transformation-functions"></a>Funções de transformação de vetor de 4D de biblioteca DirectXMath
+# <a name="directxmath-library-4d-vector-transformation-functions"></a>Funções de transformação de vetor 4D da Biblioteca DirectXMath
 
 Lista as funções de transformação de vetor 4D.
 
@@ -32,7 +32,7 @@ Lista as funções de transformação de vetor 4D.
 
 <dl> <dt>
 
-[Funções de vetor 4D da biblioteca DirectXMath](ovw-xnamath-reference-functions-vector4.md)
+[Funções de vetor 4D da Biblioteca DirectXMath](ovw-xnamath-reference-functions-vector4.md)
 </dt> </dl>
 
  

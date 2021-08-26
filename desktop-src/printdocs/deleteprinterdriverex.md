@@ -15,12 +15,12 @@ api_type:
 - DllExport
 api_location:
 - Winspool.drv
-ms.openlocfilehash: b88ef38236961286875a1885dad9dde936887d13
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 88cc39227ffc5b1700a1348541e18215bc10c8b87a6bff942611f098059a70e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105763001"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119950036"
 ---
 # <a name="deleteprinterdriverex-function"></a>Função DeletePrinterDriverEx
 
@@ -55,7 +55,7 @@ Um ponteiro para uma cadeia de caracteres terminada em nulo que especifica o nom
 *pEnvironment* \[ no\]
 </dt> <dd>
 
-Um ponteiro para uma cadeia de caracteres terminada em nulo que especifica o ambiente do qual o driver deve ser excluído (por exemplo, Windows NT x86, Windows IA64 ou Windows x64). Se esse parâmetro for **nulo**, o nome do driver será excluído do ambiente atual do aplicativo de chamada e do computador cliente (não do aplicativo de destino e do servidor de impressão).
+um ponteiro para uma cadeia de caracteres terminada em nulo que especifica o ambiente do qual o driver deve ser excluído (por exemplo, Windows NT x86, Windows IA64 ou Windows x64). Se esse parâmetro for **nulo**, o nome do driver será excluído do ambiente atual do aplicativo de chamada e do computador cliente (não do aplicativo de destino e do servidor de impressão).
 
 </dd> <dt>
 
@@ -94,7 +94,7 @@ A versão do driver a ser excluído. Esse parâmetro pode ser 0, 1, 2 ou 3. Esse
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for realizada com sucesso, o valor de retorno será um valor diferente de zero.
 
@@ -107,7 +107,7 @@ Se a função falhar, o valor retornado será zero.
 
  
 
-Antes que a função exclua os arquivos de driver, ele chama a função **DrvDriverEvent** do driver, permitindo que o driver remova todos os arquivos privados que não são usados. Para obter mais informações sobre o **DrvDriverEvent**, consulte o Microsoft Windows Driver Development Kit (DDK).
+Antes que a função exclua os arquivos de driver, ele chama a função **DrvDriverEvent** do driver, permitindo que o driver remova todos os arquivos privados que não são usados. para obter mais informações sobre o **DrvDriverEvent**, consulte o Microsoft Windows Driver Development Kit (DDK).
 
 Se os arquivos de driver estiverem carregados no momento, a função os moverá para um diretório temporário e os marcará para exclusão na reinicialização.
 

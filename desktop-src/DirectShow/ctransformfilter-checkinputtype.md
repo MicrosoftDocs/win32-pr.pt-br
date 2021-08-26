@@ -1,7 +1,7 @@
 ---
-description: O método CheckInputType verifica se um tipo de mídia especificado é aceitável para a entrada.
+description: O método CheckInputType verifica se um tipo de mídia especificado é aceitável para entrada.
 ms.assetid: 11f156f7-add2-45be-a0d3-05d21f596b89
-title: Método CTransformFilter. CheckInputType (Transfrm. h)
+title: Método CTransformFilter.CheckInputType (Transfrm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 63c48a0502ee074b0940f85386dca0619a3ad12d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6ef410ac8d96160b39ca9b7103e5125be8619169ba6b287a32b8769e57a0cbf4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750037"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120053616"
 ---
-# <a name="ctransformfiltercheckinputtype-method"></a>Método CTransformFilter. CheckInputType
+# <a name="ctransformfiltercheckinputtype-method"></a>Método CTransformFilter.CheckInputType
 
 O `CheckInputType` método verifica se um tipo de mídia especificado é aceitável para entrada.
 
@@ -45,20 +45,20 @@ virtual HRESULT CheckInputType(
 *mtIn* 
 </dt> <dd>
 
-Ponteiro para um objeto [**CMediaType**](cmediatype.md) que especifica o tipo de mídia.
+Ponteiro para um [**objeto CMediaType**](cmediatype.md) que especifica o tipo de mídia.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor **HRESULT** . Os valores possíveis incluem os mostrados na tabela a seguir.
+Retorna um **valor HRESULT.** Os valores possíveis incluem aqueles mostrados na tabela a seguir.
 
 
 
 | Código de retorno                                                                                                | Descrição                              |
 |------------------------------------------------------------------------------------------------------------|------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                       | O tipo de mídia é aceitável.<br/>     |
-| <dl> <dt>**\_tipo E \_ VFW \_ não \_ aceito**</dt> </dl> | O tipo de mídia não é aceitável.<br/> |
+| <dl> <dt>**TIPO VFW \_ E \_ NÃO \_ \_ ACEITO**</dt> </dl> | O tipo de mídia não é aceitável.<br/> |
 
 
 
@@ -66,9 +66,9 @@ Retorna um valor **HRESULT** . Os valores possíveis incluem os mostrados na tab
 
 ## <a name="remarks"></a>Comentários
 
-A classe derivada deve implementar esse método. Retorne \_ os S ok se o formato de entrada proposto for aceitável ou um código de erro do contrário.
+A classe derivada deve implementar esse método. Retornar S \_ OK se o formato de entrada proposto for aceitável ou um código de erro, caso contrário.
 
-Esse método não precisa verificar se o formato de entrada é compatível com o formato de saída (se houver). O PIN de entrada verifica isso chamando o método [**CheckTransform**](ctransformfilter-checktransform.md) .
+Esse método não precisa verificar se o formato de entrada é compatível com o formato de saída (se há). O pino de entrada verifica isso chamando o [**método CheckTransform.**](ctransformfilter-checktransform.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -76,8 +76,8 @@ Esse método não precisa verificar se o formato de entrada é compatível com o
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Transfrm. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Transfrm.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Propriedade IWMPCdromBurn burnFormat
-description: A propriedade burnFormat Obtém um valor que indica o tipo de CD a ser gravado.
+title: Propriedade burnFormat IWMPCdromForm
+description: A propriedade burnFormat obtém um valor que indica o tipo de CD a ser gravar.
 ms.assetid: f60fcbd2-5d34-46f3-a2e2-29dac2ecf689
 keywords:
 - Propriedade burnFormat Windows Media Player
-- Propriedade burnFormat Windows Media Player, interface IWMPCdromBurn
-- Interface IWMPCdromBurn Windows Media Player, Propriedade burnFormat
+- propriedade burnFormat Windows Media Player , interface IWMPCdromForm
+- Interface IWMPCdrom Ltda Windows Media Player , propriedade burnFormat
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 17e379727376b1ce272a95cd77c688fa611b291a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 93d5dc4ff27b3650ee37f16a7e90eb535ebe373401363f8c93bd16d09061b7a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105815492"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120000536"
 ---
-# <a name="iwmpcdromburnburnformat-property"></a>Propriedade IWMPCdromBurn:: burnFormat
+# <a name="iwmpcdromburnburnformat-property"></a>Propriedade IWMPCdrom Ltd::burnFormat
 
-A propriedade **burnFormat** Obtém um valor que indica o tipo de CD a ser gravado.
+A **propriedade burnFormat** obtém um valor que indica o tipo de CD a ser gravar.
 
 Esta propriedade é somente para leitura.
 
@@ -49,7 +49,7 @@ Public ReadOnly Property burnFormat As WMPBurnFormat
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Um **WMPLib. WMPBurnFormat** que é um valor da enumeração **WMPBurnFormat** que indica o tipo de CD a ser gravado.
+Um **WMPLib.WMP Ltdaformat** que é um valor da enumeração **WMPIiFormat** que indica o tipo de CD a ser gravar.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,7 +59,7 @@ Um **WMPLib. WMPBurnFormat** que é um valor da enumeração **WMPBurnFormat** q
 |----------------------|----------------------------------------------------------------------------------------------------------------|
 | Versão<br/>   | Windows Media Player 11<br/>                                                                             |
 | Namespace<br/> | **WMPLib**<br/>                                                                                          |
-| Assembly<br/>  | <dl> <dt>Interop. WMPLib (Interop.WMPLib.dll)</dt> </dl> |
+| Assembly<br/>  | <dl> <dt>Interop.WMPLib (Interop.WMPLib.dll)</dt> </dl> |
 
 
 
@@ -67,10 +67,10 @@ Um **WMPLib. WMPBurnFormat** que é um valor da enumeração **WMPBurnFormat** q
 
 <dl> <dt>
 
-[**Interface IWMPCdromBurn (VB e C#)**](iwmpcdromburn--vb-and-c.md)
+[**Interface IWMPCdrom Ltda (VB e C#)**](iwmpcdromburn--vb-and-c.md)
 </dt> <dt>
 
-[**WMPBurnFormat**](/previous-versions/windows/desktop/api/wmp/ne-wmp-wmpburnformat)
+[**WMP Ltdaformat**](/previous-versions/windows/desktop/api/wmp/ne-wmp-wmpburnformat)
 </dt> </dl>
 
  

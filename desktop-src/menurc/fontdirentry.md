@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1cee72a490fd2b94b1c810797f656d81418c0f71
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e236104730dbbfe79ec0ed3d18cbb465402ed8827c6037a2457bec18faf63024
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454831"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119886736"
 ---
 # <a name="fontdirentry-structure"></a>Estrutura FONTDIRENTRY
 
@@ -361,7 +361,7 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-O deslocamento no arquivo para uma cadeia de caracteres terminada em nulo que nomeia a face de tipos.
+O deslocamento no arquivo para uma cadeia de caracteres terminada em nulo que nomeia a face de tipo.
 
 </dd> <dt>
 
@@ -372,14 +372,14 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Este membro está reservado.
+Esse membro é reservado.
 
 </dd> <dt>
 
-**szDeviceName**
+**Szdevicename**
 </dt> <dd>
 
-Tipo: **Char**
+Tipo: **CHAR**
 
 </dd> <dd>
 
@@ -390,19 +390,19 @@ O nome do dispositivo se esse arquivo de fonte for designado para um dispositivo
 **szFaceName**
 </dt> <dd>
 
-Tipo: **Char**
+Tipo: **CHAR**
 
 </dd> <dd>
 
-O nome da face de tipos da fonte.
+O nome da face de tipo da fonte.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Há uma estrutura **FONTDIRENTRY** para cada fonte no arquivo. res. Os aplicativos que geram arquivos. res com recursos de fonte também devem adicionar ao arquivo uma estrutura **FONTDIRENTRY** para cada fonte.
+Há uma estrutura **FONTDIRENTRY** para cada fonte no arquivo .res. Os aplicativos que geram arquivos .res com recursos de fonte também devem adicionar ao arquivo uma **estrutura FONTDIRENTRY** para cada fonte.
 
-As declarações de fonte podem ser misturadas com outras declarações de recurso no. O arquivo RC porque as fontes não precisam ser contíguas no arquivo. res.
+As declarações de fonte podem ser misturadas com outras declarações de recurso no . Arquivo RC porque as fontes não precisam ser contíguas no arquivo .res.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -422,13 +422,13 @@ As declarações de fonte podem ser misturadas com outras declarações de recur
 **Referência**
 </dt> <dt>
 
-[**Dialugado**](direntry.md)
+[**DIRENTRY**](direntry.md)
 </dt> <dt>
 
 [**FONTGROUPHDR**](fontgrouphdr.md)
 </dt> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
 [Recursos](resources.md)
@@ -437,7 +437,7 @@ As declarações de fonte podem ser misturadas com outras declarações de recur
 **Outros recursos**
 </dt> <dt>
 
-[**LOGFONT**](/windows/win32/api/wingdi/ns-wingdi-logfonta)
+[**Logfont**](/windows/win32/api/wingdi/ns-wingdi-logfonta)
 </dt> </dl>
 
  

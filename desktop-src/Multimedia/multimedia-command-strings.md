@@ -3,19 +3,19 @@ title: Cadeias de caracteres de comando multimídia
 description: Cadeias de caracteres de comando multimídia
 ms.assetid: f8edfdbd-1334-4323-aec5-73c0a56f9b4d
 keywords:
-- Multimídia do Windows, cadeias de caracteres de comando
+- Windows multimídia, cadeias de caracteres de comando
 - multimídia, cadeias de caracteres de comando
 - referência de multimídia, cadeias de caracteres de comando
 - referência para multimídia, cadeias de caracteres de comando
 - cadeias de caracteres de comando multimídia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae4ec8f9b0efa783028850a6cd03cbc0bed20caf
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 986a1fc9e2a97671b04d8ba8a4a5cd033e176a94f6a8e898b4f899b7a9c707a7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103917261"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120038766"
 ---
 # <a name="multimedia-command-strings"></a>Cadeias de caracteres de comando multimídia
 
@@ -27,19 +27,19 @@ As cadeias de caracteres de comando a seguir são usadas com multimídia.
 -   [close](close.md)
 -   [configurar](configure.md)
 -   [copy](copy.md)
--   [advertência](cue.md)
+-   [marcar](cue.md)
 -   [migração](cut.md)
 -   [delete](delete.md)
 -   [fuga](escape.md)
 -   [Trave](freeze.md)
 -   [index](./windows-multimedia-start-page.md)
--   [detalhes](info.md)
+-   [informações](info.md)
 -   [list](list.md)
 -   [carga](load.md)
 -   [marca](mark.md)
 -   [monitor](monitor.md)
 -   [open](open.md)
--   [Olar](paste.md)
+-   [colar](paste.md)
 -   [pause](pause.md)
 -   [reproduzir](play.md)
 -   [Posicione](put.md)
@@ -75,6 +75,6 @@ As cadeias de caracteres de comando a seguir são usadas com multimídia.
 [Referência de multimídia](multimedia-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

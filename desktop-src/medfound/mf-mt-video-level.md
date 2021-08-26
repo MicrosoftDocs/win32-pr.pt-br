@@ -1,19 +1,19 @@
 ---
-description: Especifica o nível MPEG-2 ou H. 264 em um tipo de mídia de vídeo. Este é um alias do \_ nível MF MT do \_ MPEG2 \_ .
+description: Especifica o nível MPEG-2 ou H.264 em um tipo de mídia de vídeo. Este é um alias de \_ MF MT \_ MPEG2 \_ LEVEL.
 ms.assetid: 23786FC8-ACA4-4F6A-98BA-57A8C76BD4C6
-title: Atributo MF_MT_VIDEO_LEVEL (Mfapi. h)
+title: MF_MT_VIDEO_LEVEL atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ca2c5eb00390df1b5c18cab7e04a5f7449f84fc1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b40f1ebc6834373e00253f494e3fc76c20c343af17d754c7c4fe642b802d16ee
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105785252"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120012766"
 ---
-# <a name="mf_mt_video_level-attribute"></a>\_Atributo de \_ nível de vídeo MF MT \_
+# <a name="mf_mt_video_level-attribute"></a>Atributo \_ MF MT \_ VIDEO \_ LEVEL
 
-Especifica o nível MPEG-2 ou H. 264 em um tipo de mídia de vídeo. Este é um alias do [ \_ \_ \_ nível MF MT do MPEG2](mf-mt-mpeg2-level-attribute.md).
+Especifica o nível MPEG-2 ou H.264 em um tipo de mídia de vídeo. Este é um alias do [ \_ MF MT \_ MPEG2 \_ LEVEL.](mf-mt-mpeg2-level-attribute.md)
 
 ## <a name="data-type"></a>Tipo de dados
 
@@ -21,13 +21,13 @@ Especifica o nível MPEG-2 ou H. 264 em um tipo de mídia de vídeo. Este é um 
 
 ## <a name="remarks"></a>Comentários
 
-**Codificadores H. 264:**
+**Codificadores H.264:**
 
-Os níveis com suporte são estendidos para incluir o [**eAVEncH264VLevel5 \_ 2**](/windows/desktop/api/codecapi/ne-codecapi-eavench264vlevel).
+Os níveis com suporte são estendidos para incluir [**o eAVEncH264VLevel5 \_ 2**](/windows/desktop/api/codecapi/ne-codecapi-eavench264vlevel).
 
-Padrão: o padrão recomendado é selecionar o nível mínimo para corresponder à configuração de codificação de vídeo, incluindo a resolução, a taxa de quadros etc.
+Padrão: o padrão recomendado é selecionar o nível mínimo para corresponder à configuração de codificação de vídeo, incluindo resolução, taxa de quadros etc.
 
-Padrão recomendado: selecione o nível mínimo para corresponder à configuração de codificação de vídeo, incluindo a resolução, a taxa de quadros, etc.
+Padrão recomendado: selecione o nível mínimo para corresponder à configuração de codificação de vídeo, incluindo resolução, taxa de quadros etc.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,9 +35,9 @@ Padrão recomendado: selecione o nível mínimo para corresponder à configuraç
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 8.1 \[ apenas aplicativos de área de trabalho\]<br/>                                       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012 R2\]<br/>                            |
-| parâmetro<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8.1 somente aplicativos da área de trabalho\]<br/>                                       |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 Somente \[ aplicativos da área de trabalho R2\]<br/>                            |
+| Cabeçalho<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -45,7 +45,7 @@ Padrão recomendado: selecione o nível mínimo para corresponder à configuraç
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

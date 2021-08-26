@@ -1,9 +1,9 @@
 ---
-title: Estrutura de MCI_OVLY_RECT_PARMS (Mciapi. h)
-description: A estrutura do MCI \_ OVLY \_ Rect \_ parms contém informações de posicionamento para o MCI \_ Put e o MCI \_ , onde os comandos para dispositivos de sobreposição de vídeo.
+title: MCI_OVLY_RECT_PARMS (Mciapi.h)
+description: A estrutura MCI OVLY RECT PARMS contém informações de posicionamento para os comandos MCI PUT e \_ \_ \_ \_ MCI \_ WHERE para dispositivos de sobreposição de vídeo.
 ms.assetid: 1cfd8e51-c76f-4a1c-905c-efacbd8146f4
 keywords:
-- Multimídia do Windows da estrutura de MCI_OVLY_RECT_PARMS
+- MCI_OVLY_RECT_PARMS estrutura Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 68a6b51d980b6ca0a3c223f414571a42b2e3ae3f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5cfd55b2950f6d4268a9af5ee5bdc7fc9c378c4dbaeaa569406339263a2cf85e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454605"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120039106"
 ---
-# <a name="mci_ovly_rect_parms-structure"></a>Estrutura de parâmetros do MCI \_ OVLY \_ Rect \_
+# <a name="mci_ovly_rect_parms-structure"></a>Estrutura MCI \_ OVLY \_ RECT \_ PARMS
 
-A estrutura do **MCI \_ OVLY \_ Rect \_ parms** contém informações de posicionamento para o MCI [**\_ Put**](mci-put.md) e o [**MCI, \_ onde**](mci-where.md) os comandos para dispositivos de sobreposição de vídeo.
+A **estrutura MCI \_ OVLY \_ RECT \_ PARMS** contém informações de posicionamento para os comandos [**MCI \_ PUT**](mci-put.md) e [**MCI \_ WHERE**](mci-where.md) para dispositivos de sobreposição de vídeo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,23 +41,23 @@ typedef struct {
 
 <dl> <dt>
 
-**dwCallback**
+**Dwcallback**
 </dt> <dd>
 
-A palavra de ordem inferior Especifica um identificador de janela usado para o \_ sinalizador de notificação MCI.
+A palavra de ordem baixa especifica um alça de janela usado para o sinalizador NOTIFY da \_ MCI.
 
 </dd> <dt>
 
-**RC**
+**Rc**
 </dt> <dd>
 
-Retângulo que contém informações de posicionamento. As estruturas [Rect](/previous-versions//ms536136(v=vs.85)) são tratadas de forma diferente no MCI do que em outras partes do Windows; no MCI, **RC. Right** contém a largura do retângulo e **RC. Bottom** contém sua altura.
+Retângulo que contém informações de posicionamento. [As estruturas RECT](/previous-versions//ms536136(v=vs.85)) são tratadas de maneira diferente na MCI do que em outras partes do Windows; na MCI, **rc.right** contém a largura do retângulo e **rc.bottom contém** sua altura.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Ao atribuir dados aos membros dessa estrutura, defina os sinalizadores correspondentes no parâmetro *fdwCommand* da função [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para validar os membros.
+Ao atribuir dados aos membros dessa estrutura, defina os sinalizadores correspondentes no parâmetro *fdwCommand* da [**função mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para validar os membros.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,7 +67,7 @@ Ao atribuir dados aos membros dessa estrutura, defina os sinalizadores correspon
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                          |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                |
-| Cabeçalho<br/>                   | <dl> <dt>Mciapi. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Mciapi.h</dt> </dl> |
 
 
 
@@ -75,22 +75,22 @@ Ao atribuir dados aos membros dessa estrutura, defina os sinalizadores correspon
 
 <dl> <dt>
 
-[**MCI**](mci.md)
+[**Mci**](mci.md)
 </dt> <dt>
 
 [**Estruturas MCI**](mci-structures.md)
 </dt> <dt>
 
-[**\_Put MCI**](mci-put.md)
+[**MCI \_ PUT**](mci-put.md)
 </dt> <dt>
 
-[**MCI \_ onde**](mci-where.md)
+[**MCI \_ WHERE**](mci-where.md)
 </dt> <dt>
 
 [**mciSendCommand**](/previous-versions//dd757160(v=vs.85))
 </dt> <dt>
 
-[RECT](/previous-versions//ms536136(v=vs.85))
+[Rect](/previous-versions//ms536136(v=vs.85))
 </dt> </dl>
 
  

@@ -4,12 +4,12 @@ ms.assetid: 25b3667a-1478-48c4-9c41-4defd25a0103
 title: Exemplo detalhado da tabela de sequência
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d4698d5270f2f246fe6e676799ea239e47a950c7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6bc6e9715850d05231080cd8cd832ac7f39c1e3044628bb307afb51bf92c2210
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105756717"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120040186"
 ---
 # <a name="sequence-table-detailed-example"></a>Exemplo detalhado da tabela de sequência
 

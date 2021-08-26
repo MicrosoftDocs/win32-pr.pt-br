@@ -1,7 +1,7 @@
 ---
 description: Descreve os recursos e o gerenciamento de um controlador serial.
 ms.assetid: ce3e0424-4ab8-435d-a155-1164535b3b0d
-title: Classe CIM_SerialController (gerenciamento do Hyper-V)
+title: CIM_SerialController classe (gerenciamento do Hyper-V)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,14 +17,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 4a2e69bab38bb8b68c15ed93b2bee721c35a7600
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6a438919674f805f59cb6e2cac6e76cb6367f03ce12fa2ceb0787527e56adb83
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105787112"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119980826"
 ---
-# <a name="cim_serialcontroller-class-hyper-v-management"></a>Classe CIM_SerialController (gerenciamento do Hyper-V)
+# <a name="cim_serialcontroller-class-hyper-v-management"></a>CIM_SerialController classe (gerenciamento do Hyper-V)
 
 Descreve os recursos e o gerenciamento de um controlador serial.
 
@@ -43,35 +43,35 @@ class CIM_SerialController : CIM_Controller
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ SerialController** tem estes tipos de membros:
+A **classe Cim \_ SerialController** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ SerialController** tem essas propriedades.
+A **classe Cim \_ SerialController** tem essas propriedades.
 
 <dl> <dt>
 
 **Funcionalidades**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: a matriz **UInt16**
+Tipo de dados: **matriz uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indexado"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Portas seriais DMTF \| 4,7 "), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ SerialController**.**CapabilityDescriptions**")
+Qualificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexado"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Portas seriais DMTF \| \| 004.7"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ SerialController**.**CapabilityDescriptions**")
 </dt> </dl>
 
-A compatibilidade no nível do chip para o controlador serial. Esta propriedade descreve o buffer e outros recursos do controlador serial que podem ser inerentes ao hardware do chip.
+A compatibilidade no nível do chip para o controlador serial. Essa propriedade descreve o buffer e outros recursos do controlador serial que podem ser inerentes ao hardware do chip.
 
 <dt>
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Outro** (1)
+**Outros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -85,42 +85,42 @@ A compatibilidade no nível do chip para o controlador serial. Esta propriedade 
 
 <span id="XT_AT_Compatible"></span><span id="xt_at_compatible"></span><span id="XT_AT_COMPATIBLE"></span>
 
-**XT/at compatível** (3)
+**Compatível com XT/AT** (3)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="16450_Compatible"></span><span id="16450_compatible"></span><span id="16450_COMPATIBLE"></span>
 
-**compatível com 16450** (4)
+**16450 Compatível** (4)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="16550_Compatible"></span><span id="16550_compatible"></span><span id="16550_COMPATIBLE"></span>
 
-**compatível com 16550** (5)
+**16550 Compatível** (5)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="16550A_Compatible"></span><span id="16550a_compatible"></span><span id="16550A_COMPATIBLE"></span>
 
-**compatível com 16550A** (6)
+**16550A compatível** (6)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="8251_Compatible"></span><span id="8251_compatible"></span><span id="8251_COMPATIBLE"></span>
 
-**compatível com 8251** (160)
+**8251 Compatível** (160)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="8251FIFO_Compatible"></span><span id="8251fifo_compatible"></span><span id="8251FIFO_COMPATIBLE"></span>
 
-**compatível com 8251FIFO** (161)
+**Compatível com 8251FIFO** (161)
 
 
 </dt> <dd></dd> </dl>
@@ -130,54 +130,54 @@ A compatibilidade no nível do chip para o controlador serial. Esta propriedade 
 **CapabilityDescriptions**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indexado"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) (**" \_ CIM SerialController**.**Recursos**")
+Qualificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexed"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ SerialController**.**Funcionalidades**")
 </dt> </dl>
 
-Uma matriz que contém explicações mais detalhadas para recursos do controlador serial na matriz **Capabilities** . Os itens na matriz **CapabilityDescriptions** correlacionam-se com aqueles na matriz de **recursos** .
+Uma matriz que contém explicações mais detalhadas sobre os recursos do controlador serial na matriz **Funcionalidades.** Os itens na matriz **CapabilityDescriptions** se correlacionam com aqueles na matriz **Recursos.**
 
 </dd> <dt>
 
 **MaxBaudRate**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("bits por segundo"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Portas seriais DMTF \| 4,6 "), **PUnit** (" bit/segundo ")
+Qualificadores: [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("Bits por Segundo"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Portas seriais DMTF \| \| 004.6"), **PUnit** ("bit/segundo")
 </dt> </dl>
 
-A taxa de baud máxima em, bits por segundo, com suporte do controlador serial.
+A taxa máxima de transmissão em bits por segundo, que é suportada pelo controlador serial.
 
 </dd> <dt>
 
 **Segurança**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Portas seriais DMTF \| 4,9 ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Portas seriais DMTF \| \| 004.9")
 </dt> </dl>
 
-A segurança operacional para o controlador.
+A segurança operacional do controlador.
 
 <dt>
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Outro** (1)
+**Outros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -227,8 +227,8 @@ A segurança operacional para o controlador.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                                          |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -237,7 +237,7 @@ A segurança operacional para o controlador.
 
 <dl> <dt>
 
-[**\_Controlador CIM**](cim-controller.md)
+[**Controlador \_ CIM**](cim-controller.md)
 </dt> </dl>
 
  

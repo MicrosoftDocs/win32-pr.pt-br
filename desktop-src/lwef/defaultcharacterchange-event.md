@@ -4,16 +4,16 @@ description: Evento DefaultCharacterChange
 ms.assetid: 14b86a44-8fd2-4719-b7b5-cdcc618d27cd
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ab92fe04f9c42466d559e9b4610eafc8490556d6
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: eed166608d3f3b874e975ff58f600d24b73b50e293333b841039b2240780b4de
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104364194"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119963126"
 ---
 # <a name="defaultcharacterchange-event"></a>Evento DefaultCharacterChange
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 <dl> <dt>
 
@@ -37,7 +37,7 @@ Ocorre quando o usuário altera o caractere padrão.
 
 
 
- 
+ 
 
 </dd> </dl>
 
@@ -52,9 +52,9 @@ Quando o novo caractere é exibido, ele assume o mesmo tamanho que qualquer inst
 [**Método ShowDefaultCharacterProperties**](showdefaultcharacterproperties-method.md), [ **método Load**](load-method.md)
 
 
- 
+ 
 
- 
+ 
 
 
 

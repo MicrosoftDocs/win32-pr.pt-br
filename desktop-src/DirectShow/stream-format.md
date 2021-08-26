@@ -1,40 +1,40 @@
 ---
-description: Formato do fluxo
+description: Formato de fluxo
 ms.assetid: 7ed095f2-b541-4b99-8afc-9acba58081cd
-title: Formato do fluxo
+title: Formato de fluxo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 75413c28f0871db0168e27685de49fd35b682224
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a01ed1ac4501a2d8f081c12fef75baf15aaebd442fc182a116db1038c2a73523
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105779227"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119903986"
 ---
-# <a name="stream-format"></a>Formato do fluxo
+# <a name="stream-format"></a>Formato de fluxo
 
-O driver MSDV e o UVC podem produzir dois formatos de DV: áudio Intercalado ou vídeo somente. Áudio Intercalado-vídeo é o formato original do dispositivo. O formato somente de vídeo contém os mesmos dados, mas os exemplos são marcados como sem dados de áudio. O formato somente vídeo existe principalmente para compatibilidade com aplicativos que usam vídeo para Windows. Para obter mais informações, consulte [tipos-1 vs. tipo-2 DV AVI files](type-1-vs--type-2-dv-avi-files.md).
+O MSDV e o driver UVC podem saída de dois formatos DV: áudio-vídeo intercalado ou somente vídeo. Áudio-vídeo intercalado é o formato original do dispositivo. O formato somente vídeo contém os mesmos dados, mas os exemplos são marcados como sem dados de áudio. O formato somente vídeo existe principalmente para compatibilidade com aplicativos que usam o Video para Windows. Para obter mais informações, [consulte Type-1 vs. Type-2 DV AVI Files](type-1-vs--type-2-dv-avi-files.md).
 
-**Driver MSDV**
+**MSDV Driver**
 
-O driver MSDV tem dois pinos de saída. O primeiro pino de saída envia dados intercalados e o segundo PIN de saída envia dados somente de vídeo. Somente um PIN de saída pode ser conectado por vez. Para selecionar um formato, conecte o PIN de saída apropriado. Você pode usar a interface [**IAMStreamConfig**](/windows/desktop/api/Strmif/nn-strmif-iamstreamconfig) no pino de saída para localizar o formato.
+O driver MSDV tem dois pinos de saída. O primeiro pino de saída envia dados intercalados e o segundo pino de saída envia dados somente vídeo. Somente um pino de saída pode ser conectado por vez. Para selecionar um formato, conecte o pino de saída apropriado. Você pode usar a interface [**IAMStreamConfig**](/windows/desktop/api/Strmif/nn-strmif-iamstreamconfig) no pino de saída para encontrar o formato.
 
-**Driver UVC**
+**UVC Driver**
 
-Ao contrário do driver MSDV, o driver UVC fornece os dois formatos do mesmo PIN. O formato padrão é somente vídeo. Para selecionar o formato, use a interface **IAMStreamConfig** no pino de saída. Chame o método **GetStreamCaps** para enumerar os tipos de mídia no pino de saída. Para cada tipo de mídia, se o tipo principal corresponder ao formato desejado, chame **SetFormat** e transmita esse tipo de mídia.
+Ao contrário do driver MSDV, o driver UVC entrega os dois formatos do mesmo pin. O formato padrão é somente vídeo. Para selecionar o formato, use a interface **IAMStreamConfig** no pino de saída. Chame o **método GetStreamCaps** para enumerar os tipos de mídia no pino de saída. Para cada tipo de mídia, se o tipo principal corresponde ao formato desejado, chame **SetFormat** e passe esse tipo de mídia.
 
 
 
 | Formatar                      | Tipo principal             |
 |-----------------------------|------------------------|
 | Áudio e vídeo intercalados | MEDIATYPE \_ intercalado |
-| Somente vídeo                  | Vídeo de MEDIATYPE \_       |
+| Somente vídeo                  | Vídeo \_ MEDIATYPE       |
 
 
 
  
 
-A função a seguir define o formato com base no GUID de tipo principal.
+A função a seguir define o formato com base no GUID do tipo principal.
 
 
 ```C++
@@ -91,13 +91,13 @@ HRESULT SetStreamFormat(IAMStreamConfig *pConfig, const GUID& majorType)
 
 
 
-O driver MSDV também dá suporte a **IAMStreamConfig**, para que você possa escrever código que funcione para ambos os tipos de dispositivo.
+O driver MSDV também dá suporte **a IAMStreamConfig,** para que você possa escrever código que funcione para ambos os tipos de dispositivo.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Controlando uma camcorder DV](controlling-a-dv-camcorder.md)
+[Controlando uma dvcorder](controlling-a-dv-camcorder.md)
 </dt> </dl>
 
  

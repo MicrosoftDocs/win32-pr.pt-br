@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - WinSpool.drv
-ms.openlocfilehash: 9af428533d111300d31f6529a0a030fc3b81ee7c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f7bbeda17f5cbafa46785577243df9e50b3bf7109631166ffb8894bbb678393e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105810195"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119950426"
 ---
 # <a name="connecttoprinterdlg-function"></a>Função ConnectToPrinterDlg
 
@@ -47,14 +47,14 @@ Especifica a janela pai da caixa de diálogo.
 
 </dd> <dt>
 
-*Flags* \[in\]
+*Sinalizadores* \[ de no\]
 </dt> <dd>
 
 Esse parâmetro é reservado e deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for bem sucedido e o usuário selecionar uma impressora, o valor de retorno será um identificador para a impressora selecionada.
 

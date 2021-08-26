@@ -1,7 +1,7 @@
 ---
-description: Estrutura auxiliar para gerenciar uma tabela de constante de sombreador. Isso também pode ser feito usando o ID3DXConstantTable.
+description: Estrutura auxiliar para gerenciar uma tabela constante do sombreador. Isso também pode ser feito usando ID3DXConstantTable.
 ms.assetid: cc6d66e4-c600-420b-b7b5-1bd10ecb22f9
-title: Estrutura de D3DXSHADER_CONSTANTTABLE (D3dx9shader. h)
+title: D3DXSHADER_CONSTANTTABLE estrutura (D3dx9shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9shader.h
-ms.openlocfilehash: ef4fe6cf9af924d9ae6c358f72bf49f93d85f29d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f423eba3187c6bbc5c17d4ba9284e4e1b2048a016b8a11744b83b46e4d8522af
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105788741"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120027286"
 ---
-# <a name="d3dxshader_constanttable-structure"></a>\_Estrutura de constante D3DXSHADER
+# <a name="d3dxshader_constanttable-structure"></a>Estrutura CONSTANTTABLE D3DXSHADER \_
 
-Estrutura auxiliar para gerenciar uma tabela de constante de sombreador. Isso também pode ser feito usando o [**ID3DXConstantTable**](id3dxconstanttable.md).
+Estrutura auxiliar para gerenciar uma tabela constante do sombreador. Isso também pode ser feito usando [**ID3DXConstantTable.**](id3dxconstanttable.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -63,7 +63,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Offset do início desta estrutura, em bytes, para a cadeia de caracteres que contém o nome do criador.
+Deslocamento do início dessa estrutura, em bytes, para a cadeia de caracteres que contém o nome do criador.
 
 </dd> <dt>
 
@@ -96,7 +96,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Matriz de informações constantes, \_ constantes D3DXSHADER CONSTANTINFO \[  \] . Consulte [**D3DXSHADER \_ CONSTANTINFO**](d3dxshader-constantinfo.md).
+Matriz de informações constantes, \_ \[ *constantes* CONSTANTINFO D3DXSHADER \] . Consulte [**\_ CONSTANTINFO D3DXSHADER**](d3dxshader-constantinfo.md).
 
 </dd> <dt>
 
@@ -107,7 +107,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Os sinalizadores de [sinalizadores D3DXSHADER](d3dxshader-flags.md) usados para compilar o sombreador.
+Os [sinalizadores D3DXSHADER usados](d3dxshader-flags.md) para compilar o sombreador.
 
 </dd> <dt>
 
@@ -118,15 +118,15 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Deslocamento na cadeia de caracteres que contém o destino.
+Deslocamento para a cadeia de caracteres que contém o destino.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-As informações constantes do sombreador estão incluídas em uma tabela de comentários delimitada por tabulação. Todos os deslocamentos são medidos em bytes desde o início da estrutura. As entradas na tabela de constantes são classificadas por criador em ordem crescente.
+As informações constantes do sombreador são incluídas em uma tabela de comentários delimitada por tabulação. Todos os deslocamentos são medidos em bytes do início da estrutura. As entradas na tabela constante são ordenadas pelo Criador em ordem crescente.
 
-Uma tabela de constantes de sombreador pode ser gerenciada com as interfaces [**ID3DXConstantTable**](id3dxconstanttable.md) . Como alternativa, você pode gerenciar a tabela constante com **a \_ constante D3DXSHADER**.
+Uma tabela constante do sombreador pode ser gerenciada com as interfaces [**ID3DXConstantTable.**](id3dxconstanttable.md) Como alternativa, você pode gerenciar a tabela constante com **D3DXSHADER \_ CONSTANTTABLE**.
 
 Esse membro de tamanho geralmente é inicializado usando o seguinte:
 
@@ -144,7 +144,7 @@ constantTable.Size = sizeof(D3DXSHADER_CONSTANTTABLE)
 
 | Requisito | Valor |
 |-------------------|------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3dx9shader. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3dx9shader.h</dt> </dl> |
 
 
 

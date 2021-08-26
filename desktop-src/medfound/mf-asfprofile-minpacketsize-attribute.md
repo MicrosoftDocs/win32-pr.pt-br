@@ -1,7 +1,7 @@
 ---
 description: Especifica o tamanho mínimo do pacote para um arquivo ASF, em bytes.
 ms.assetid: 22e5725d-de55-4a0c-a6cc-1ed9f20e7663
-title: Atributo MF_ASFPROFILE_MINPACKETSIZE (Wmcontainer. h)
+title: MF_ASFPROFILE_MINPACKETSIZE atributo (Wmcontainer.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 0eb233492308865b5f4044765c6323e113d73a6680ce05e629f7e1fe3b4076b6
@@ -11,7 +11,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "120013426"
 ---
-# <a name="mf_asfprofile_minpacketsize-attribute"></a>\_Atributo MF ASFPROFILE \_ MINPACKETSIZE
+# <a name="mf_asfprofile_minpacketsize-attribute"></a>Atributo MF \_ ASFPROFILE \_ MINPACKETSIZE
 
 Especifica o tamanho mínimo do pacote para um arquivo ASF, em bytes.
 
@@ -21,9 +21,9 @@ Especifica o tamanho mínimo do pacote para um arquivo ASF, em bytes.
 
 ## <a name="remarks"></a>Comentários
 
-Esse atributo se aplica a objetos de perfil ASF. Para definir esse atributo, use a interface [**IMFASFProfile**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfprofile) .
+Esse atributo se aplica a objetos de perfil ASF. Para definir esse atributo, use a interface [**IMFASFProfile.**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfprofile)
 
-A constante de GUID para esse atributo é exportada de mfuuid. lib.
+A constante GUID para esse atributo é exportada de mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -31,9 +31,9 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                     |
-| Cabeçalho<br/>                   | <dl> <dt>Wmcontainer. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Wmcontainer.h</dt> </dl> |
 
 
 
@@ -41,16 +41,16 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Atributos ASF](asf-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: setuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> </dl>
 
  

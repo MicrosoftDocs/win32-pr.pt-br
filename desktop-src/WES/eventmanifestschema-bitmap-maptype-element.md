@@ -1,9 +1,9 @@
 ---
 title: Elemento bitMap (MapType)
-description: Define uma lista de pares de nome/valor que mapeia valores de bits e valores de cadeia de caracteres.
+description: Define uma lista de pares nome/valor que mapeiam valores de bit e valores de cadeia de caracteres.
 ms.assetid: 23e636a1-4945-4515-941a-6a2403167da9
 keywords:
-- elemento de bitMap EventLog
+- Elemento bitMap EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8d06910f3064fd8b51d090dd33e6735e35bd6177
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fe64dde4074cd8cab2d091d582a88552eb9c1377a632dc7692a0ab959fe11bff
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369920"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120032376"
 ---
 # <a name="bitmap-maptype-element"></a>Elemento bitMap (MapType)
 
-Define uma lista de pares de nome/valor que mapeia valores de bits e valores de cadeia de caracteres.
+Define uma lista de pares nome/valor que mapeiam valores de bit e valores de cadeia de caracteres.
 
 ``` syntax
 <xs:element name="bitMap"
@@ -30,7 +30,7 @@ Define uma lista de pares de nome/valor que mapeia valores de bits e valores de 
  />
 ```
 
-O elemento **bitMap** é definido pelo tipo complexo [**MapType**](eventmanifestschema-maptype-complextype.md) .
+O **elemento bitMap** é definido pelo [**tipo complexo MapType.**](eventmanifestschema-maptype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ O elemento **bitMap** é definido pelo tipo complexo [**MapType**](eventmanifest
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

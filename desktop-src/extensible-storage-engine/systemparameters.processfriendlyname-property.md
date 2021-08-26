@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: Propriedade SystemParameters. ProcessFriendlyName'
-title: Propriedade SystemParameters. ProcessFriendlyName
+description: 'Saiba mais sobre: propriedade SystemParameters.ProcessFriendlyName'
+title: Propriedade SystemParameters.ProcessFriendlyName
 TOCTitle: 'ProcessFriendlyName property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.SystemParameters.ProcessFriendlyName
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.systemparameters.processfriendlyname(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 48384c916664bf3745c5440ca9996d56c95f392e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 73dcd278f371397cc35644ec6ac7726d0fd5c999e1b5790f49387a13fabecc30
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105813335"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120015947"
 ---
-# <a name="systemparametersprocessfriendlyname-property"></a>Propriedade SystemParameters. ProcessFriendlyName
+# <a name="systemparametersprocessfriendlyname-property"></a>Propriedade SystemParameters.ProcessFriendlyName
 
 Obtém ou define o nome amigável para esta instância do processo.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -61,7 +61,7 @@ public static string ProcessFriendlyName { get; set; }
 
 #### <a name="property-value"></a>Valor da propriedade
 
-Tipo: [System. String](/dotnet/api/system.string)  
+Tipo: [System.String](/dotnet/api/system.string)  
 
 ## <a name="see-also"></a>Confira também
 
@@ -71,4 +71,4 @@ Tipo: [System. String](/dotnet/api/system.string)
 
 [Membros do SystemParameters](./systemparameters-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -3,19 +3,19 @@ title: O método OnPaint
 description: O método OnPaint
 ms.assetid: 4b335362-4430-4b05-8aea-7de8df9cc91f
 keywords:
-- Plug-ins do Windows Media Player, método OnPaint
+- plug-ins Windows Media Player, método onpaint
 - plug-ins, método OnPaint
 - plug-ins de interface do usuário, método OnPaint
 - Plug-ins de interface do usuário, método OnPaint
 - Método OnPaint
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 22641c34bb2edab30c1bf97011e893bc1d9d44a6
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: aa5e121cdaeac1c7589e58b1613a8d25bdff4f44f6db2375bcbdc34da20929e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104453692"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120001946"
 ---
 # <a name="the-onpaint-method"></a>O método OnPaint
 
@@ -58,9 +58,9 @@ LRESULT OnPaint(UINT nMsg, WPARAM wParam,
 [**Implementando CPluginWindow**](implementing-cpluginwindow.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

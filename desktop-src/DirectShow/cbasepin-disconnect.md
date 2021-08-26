@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: bda01d02db2a93a90c63f206b723a55df2373418
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 0048624b79daa6948851fd9a56142b97c7e185caa9bbcbdeb6c2c1b19f591eb1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108096004"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119916626"
 ---
 # <a name="cbasepindisconnect-method"></a>Método CBasePin. Disconnect
 
@@ -49,7 +49,7 @@ Retorna um valor **HRESULT** . Os valores possíveis incluem os da tabela a segu
 | Código de retorno                                                                                         | Descrição                                                                        |
 |-----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
 | <dl> <dt>**\_falso**</dt> </dl>             | O PIN não foi conectado.<br/>                                              |
-| <dl> <dt>**S \_ OK**</dt> </dl>                | Sucesso.<br/>                                                                |
+| <dl> <dt>**S \_ OK**</dt> </dl>                | Êxito.<br/>                                                                |
 | <dl> <dt>**VFW \_ E \_ não \_ parado**</dt> </dl> | O filtro está ativo e o PIN não dá suporte à reconexão dinâmica.<br/> |
 
 
@@ -66,12 +66,12 @@ A classe base delega a maior parte do trabalho para o método [**CBasePin::D isc
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
+| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir Fluxos. h)</dt> </dl>                                                                                  |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

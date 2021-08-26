@@ -1,21 +1,21 @@
 ---
-description: Os dados binários não podem ser inseridos em uma tabela diretamente usando as consultas de inserção ou atualização do SQL.
+description: Os dados binários não podem ser inseridos em uma tabela diretamente usando as consultas INSERT INTO ou UPDATE SQL.
 ms.assetid: cc055de8-eaba-48eb-a982-4d584ac7a881
 title: Adicionando dados binários a uma tabela usando SQL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 491bfe57354b4faf9f7c385bc4e14c64ad366f1b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 005b7de98fa62ae6e79378831802b8a5a9c95b1d0f3d33dd353fd5403ad600ca
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828092"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119996946"
 ---
 # <a name="adding-binary-data-to-a-table-using-sql"></a>Adicionando dados binários a uma tabela usando SQL
 
-Os dados binários não podem ser inseridos em uma tabela diretamente usando as consultas de inserção ou atualização do SQL. Para adicionar dados binários a uma tabela, você deve primeiro usar o marcador de parâmetro (?) na consulta como um espaço reservado para o valor binário. A execução da consulta deve incluir um registro que contém os dados binários em um de seus campos.
+Os dados binários não podem ser inseridos em uma tabela diretamente usando as consultas INSERT INTO ou UPDATE SQL. Para adicionar dados binários a uma tabela, primeiro você deve usar o marcador de parâmetro (?) na consulta como um espaço reservado para o valor binário. A execução da consulta deve incluir um registro que contém os dados binários em um de seus campos.
 
-Um marcador é uma referência de parâmetro para um valor fornecido por um registro enviado com a consulta. Ele é representado na instrução SQL por um ponto de interrogação (?).
+Um marcador é uma referência de parâmetro a um valor fornecido por um registro enviado com a consulta. Ele é representado na instrução SQL por um ponto de interrogação (?).
 
 O código de exemplo a seguir adiciona dados binários a uma tabela.
 
@@ -102,7 +102,7 @@ Database.Commit ' save changes
 [Trabalhando com consultas](working-with-queries.md)
 </dt> <dt>
 
-[Sintaxe SQL](sql-syntax.md)
+[SQL Sintaxe](sql-syntax.md)
 </dt> <dt>
 
 [Exemplos de consultas de banco de dados usando SQL e script](examples-of-database-queries-using-sql-and-script.md)

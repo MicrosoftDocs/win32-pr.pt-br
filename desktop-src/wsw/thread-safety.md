@@ -8,12 +8,12 @@ keywords:
 - WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fed84cac9634148742c92f1b0d4b4ecdb905ac42
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 25528f3315fcfae95d07d973d4743548eb35ec84bf754fdaafe067bcaccc56f1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "103642987"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120054456"
 ---
 # <a name="thread-safety"></a>Acesso thread-safe
 
@@ -44,7 +44,7 @@ Os seguintes identificadores são threads livres e oferecem suporte a operaçõe
 Para todos esses identificadores, o threading é definido em termos de operações (não chamadas de função). Uma operação é definida de maneira diferente para funções invocadas de forma síncrona versus funções invocadas de forma assíncrona:
 
 -   Para funções invocadas de forma síncrona, a operação está pendente durante a execução da função.
--   Para funções invocadas de forma assíncrona, se a função retornar um código de retorno diferente de **WS \_ S \_ Async** , a operação estará pendente durante a execução da função. No entanto, se a função retornar **WS \_ S \_ Async** , a operação estará pendente até que o [**retorno de \_ \_ chamada WS assíncrono**](/windows/desktop/api/WebServices/nc-webservices-ws_async_callback) seja invocado. Para obter mais informações sobre como invocar funções de forma assíncrona, consulte o tópico [modelo assíncrono](asynchronous-model.md) . Para códigos de erro, consulte [valores de retorno dos serviços Web do Windows](windows-web-services-return-values.md).
+-   Para funções invocadas de forma assíncrona, se a função retornar um código de retorno diferente de **WS \_ S \_ Async** , a operação estará pendente durante a execução da função. No entanto, se a função retornar **WS \_ S \_ Async** , a operação estará pendente até que o [**retorno de \_ \_ chamada WS assíncrono**](/windows/desktop/api/WebServices/nc-webservices-ws_async_callback) seja invocado. Para obter mais informações sobre como invocar funções de forma assíncrona, consulte o tópico [modelo assíncrono](asynchronous-model.md) . para códigos de erro, consulte [Windows valores de retorno de serviços Web](windows-web-services-return-values.md).
 
 A falha ao seguir o contrato de threading de um objeto resultará em um comportamento indefinido.
 

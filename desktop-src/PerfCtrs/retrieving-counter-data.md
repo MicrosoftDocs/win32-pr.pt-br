@@ -1,25 +1,25 @@
 ---
-description: Os objetos de desempenho podem definir um ou mais contadores.
+description: Objetos de desempenho podem definir um ou mais contadores.
 ms.assetid: a3a598b2-5623-4472-a814-620c6a003a7e
 title: Recuperando dados do contador
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f932408471b23dd413a3b8cece63d533b1ba5426
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 19109aac1a4b661e08be7f70418d19355649a0b4fb04e4a9d39fac610068cea3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105780484"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119962296"
 ---
 # <a name="retrieving-counter-data"></a>Recuperando dados do contador
 
-Os objetos de desempenho podem definir um ou mais contadores. Os dados do contador para os contadores estão localizados no bloco de memória bloco do [**\_ \_ contador perf**](/windows/desktop/api/Winperf/ns-winperf-perf_counter_block) . O local do bloco do contador dentro do bloco de objetos depende se o objeto contém contadores de instância única ou vários contadores de instância. Para obter detalhes, consulte [formato de dados de desempenho](performance-data-format.md).
+Objetos de desempenho podem definir um ou mais contadores. Os dados do contador para os contadores estão localizados no bloco de [**memória PERF \_ COUNTER \_ BLOCK.**](/windows/desktop/api/Winperf/ns-winperf-perf_counter_block) O local do bloco de contador dentro do bloco de objeto depende se o objeto contém contadores de instância única ou contadores de várias instâncias. Para obter detalhes, consulte [Formato de dados de desempenho](performance-data-format.md).
 
-Você usa os membros de **contraoffset** e de **tamanho** da [**\_ \_ definição do contador de desempenho**](/windows/desktop/api/Winperf/ns-winperf-perf_counter_definition) para acessar os dados do contador dentro do bloco do contador. Atualmente, os dados do contador são limitados aos tipos de dados **DWORD** e **ULONGLONG** (esses são os únicos tipos aos quais a ferramenta de desempenho dá suporte).
+Use os **membros CounterOffset** e **CounterSize** de [**PERF COUNTER \_ \_ DEFINITION**](/windows/desktop/api/Winperf/ns-winperf-perf_counter_definition) para acessar os dados do contador dentro do bloco de contador. Atualmente, os dados do contador são limitados aos tipos de dados **DWORD** e **ULONGLONG** (esses são os únicos tipos aos quais a ferramenta desempenho dá suporte).
 
-O **membro** Counter da [**definição do \_ contador \_**](/windows/desktop/api/Winperf/ns-winperf-perf_counter_definition) de desempenho informa a quais outras informações você precisa do objeto performance para usar os dados do contador. Para alguns contadores, você pode usar os dados do contador diretamente, mas para outros, você pode precisar de informações de base de tempo ou dados de outro contador para calcular um valor de exibição.
+O **membro CounterType** de [**PERF COUNTER \_ \_ DEFINITION**](/windows/desktop/api/Winperf/ns-winperf-perf_counter_definition) informa quais outras informações você precisa do objeto de desempenho para usar os dados do contador. Para alguns contadores, você pode usar os dados do contador diretamente, mas para outros, talvez seja necessário ter informações de base de tempo ou dados de outro contador para calcular um valor exibivel.
 
-O exemplo a seguir mostra como usar o tipo de contador para determinar as informações que você precisa para recuperar dos dados de desempenho de um contador para calcular um valor de contador que possa ser exibido. Para obter um exemplo que calcula um valor exibível com base no tipo de contador, consulte [calculando valores de contador](calculating-counter-values.md).
+O exemplo a seguir mostra como usar o tipo de contador para determinar as informações que você precisa recuperar dos dados de desempenho de um contador para calcular um valor de contador exibivel. Para ver um exemplo que calcula um valor exibivel com base no tipo de contador, consulte [Calculando valores de contador](calculating-counter-values.md).
 
 
 ```C++

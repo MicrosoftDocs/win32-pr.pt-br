@@ -1,36 +1,36 @@
 ---
 title: 'Instalação e configuração para Gerenciamento Remoto do Windows '
-description: Para que os scripts do Gerenciamento Remoto do Windows (WinRM) sejam executados e para que a ferramenta de linha de comando do **WinRM** execute operações de dados, o gerenciamento remoto do Windows (WinRM) deve estar instalado e configurado.
+description: para que os scripts do Gerenciamento Remoto do Windows (winrm) sejam executados e para que a ferramenta de linha de comando do **winrm** execute operações de dados, o Gerenciamento Remoto do Windows (WinRM) deve estar instalado e configurado.
 ms.date: 08/31/2020
 ms.assetid: 81c40456-0003-46d0-8695-83bf77432056
 ms.topic: article
 ms.custom: contperf-fy21q1
-ms.openlocfilehash: 4ebe4094984f237a3c8949392e3e9a6b47b8afe6
-ms.sourcegitcommit: f374b50b37160b683da16b59ac9340282a8f50a5
+ms.openlocfilehash: c031ad9b9d9c888385527c227b102c64bb4dfb65eaea340e52eac3fb9595e591
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "104500121"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119997616"
 ---
-# <a name="installation-and-configuration-for-windows-remote-management"></a>Instalação e configuração para Gerenciamento Remoto do Windows
+# <a name="installation-and-configuration-for-windows-remote-management"></a>instalação e configuração para Gerenciamento Remoto do Windows
 
-Para que os scripts do Gerenciamento Remoto do Windows (WinRM) sejam executados e para que a ferramenta de linha de comando do **WinRM** execute operações de dados, o gerenciamento remoto do Windows (WinRM) deve estar instalado e configurado.
+para que os scripts do Gerenciamento Remoto do Windows (winrm) sejam executados e para que a ferramenta de linha de comando do **winrm** execute operações de dados, o Gerenciamento Remoto do Windows (WinRM) deve estar instalado e configurado.
 
 Esses elementos também dependem da configuração do WinRM.
 
-- A ferramenta de linha de comando do [shell remoto do Windows](./windows-remote-management-glossary.md#w) (**WinRS**).
+- o Windows o **Winrs**(ferramenta de linha de comando) do [Shell remoto](./windows-remote-management-glossary.md#w) .
 - [Encaminhamento de eventos](./windows-remote-management-glossary.md#e).
-- Comunicação remota do Windows PowerShell 2,0.
+- Windows PowerShell comunicação remota do 2,0.
 
 ## <a name="where-winrm-is-installed"></a>Onde o WinRM está instalado
 
-O WinRM é instalado automaticamente com todas as versões do sistema operacional Windows com suporte no momento.
+o WinRM é instalado automaticamente com todas as versões com suporte no momento do sistema operacional Windows.
 
 ## <a name="configuration-of-winrm-and-ipmi"></a>Configuração do WinRM e do IPMI
 
 Esses componentes do [provedor WMI](/previous-versions/windows/desktop/ipmiprv/ipmi-provider) do WinRM e do [IPMI (interface de gerenciamento de plataforma inteligente)](./windows-remote-management-glossary.md#i) são instalados com o sistema operacional.
 
-- O serviço WinRM é iniciado automaticamente no Windows Server 2008 e em diante (no Windows Vista, você precisa iniciar o serviço manualmente).
+- o serviço WinRM é iniciado automaticamente no Windows Server 2008 e em diante (no Windows Vista, você precisa iniciar o serviço manualmente).
 - Por padrão, nenhum [ouvinte](./windows-remote-management-glossary.md#l) do WinRM está configurado. Mesmo que o serviço WinRM esteja em execução, WS-Management [mensagens](./windows-remote-management-glossary.md#m) de protocolo que solicitam dados não podem ser recebidas nem enviadas.
 - O firewall de conexão com a Internet (ICF) bloqueia o acesso às portas.
 
@@ -95,7 +95,7 @@ Para obter a configuração do ouvinte, digite `winrm enumerate winrm/config/lis
 
 Especifica o endereço para o qual este ouvinte foi criado.
 
-### <a name="transport"></a>Transport
+### <a name="transport"></a>Transporte
 
 Especifica o transporte a ser usado para enviar e receber respostas e solicitações do protocolo WS-Management. O valor deve ser *http* ou *https*. O padrão é *http*.
 
@@ -164,15 +164,15 @@ Especifica um prefixo de URL no qual aceitar solicitações HTTP ou HTTPS. O pre
 
 ### <a name="allowunencrypted"></a>AllowUnencrypted
 
-Permite que o computador cliente solicite tráfego não criptografado. Por padrão, o computador cliente requer o tráfego de rede criptografado e essa configuração é *falsa*.
+Permite que o computador cliente solicite tráfego não criptografado. Por padrão, o computador cliente requer tráfego de rede criptografado e essa configuração é *False.*
 
-### <a name="basic"></a>Básico
+### <a name="basic"></a>Basic
 
 Permite que o computador cliente use a autenticação básica. A autenticação básica é um esquema no qual o nome de usuário e a senha são enviados em texto não criptografado para o servidor ou proxy. Esse método é o método menos seguro de autenticação. O padrão é *True*.
 
 ### <a name="digest"></a>Digest
 
-Permite que o cliente use a autenticação Digest. É um esquema de desafio/resposta de autenticação que utiliza uma cadeia de caracteres de dados do servidor especificado para o desafio. Apenas o computador cliente pode iniciar uma solicitação de autenticação Digest. O computador cliente envia uma solicitação ao servidor para autenticar e recebe uma cadeia de caracteres do token do servidor. Em seguida, o computador cliente envia a solicitação de recurso, incluindo o nome de usuário e um hash criptográfico da senha combinada com a cadeia de caracteres do token. A autenticação Digest tem suporte para HTTP e HTTPS. Os aplicativos e scripts de cliente do shell do WinRM podem especificar a autenticação Digest, mas o serviço WinRM não aceita a autenticação Digest. O padrão é *True*.
+Permite que o cliente use a autenticação Digest. É um esquema de desafio/resposta de autenticação que utiliza uma cadeia de caracteres de dados do servidor especificado para o desafio. Apenas o computador cliente pode iniciar uma solicitação de autenticação Digest. O computador cliente envia uma solicitação ao servidor para autenticar e recebe uma cadeia de caracteres de token do servidor. Em seguida, o computador cliente envia a solicitação de recurso, incluindo o nome de usuário e um hash criptográfico da senha combinados com a cadeia de caracteres de token. A autenticação Digest tem suporte para HTTP e HTTPS. Os aplicativos e scripts de cliente do WinRM Shell podem especificar a autenticação Digest, mas o serviço WinRM não aceita a autenticação Digest. O padrão é *True*.
 
 > [!NOTE]
 > A autenticação Digest por HTTP não é considerada segura.
@@ -187,42 +187,42 @@ Permite que o cliente use a autenticação Kerberos. A autenticação Kerberos �
 
 ### <a name="negotiate"></a>Negotiate
 
-Permite que o cliente use a autenticação Negotiate. Negociar a autenticação é um esquema no qual o cliente envia uma solicitação ao servidor para autenticar. O servidor determina se deve usar o protocolo Kerberos ou NTLM. O protocolo Kerberos é selecionado para autenticar uma conta de domínio e NTLM é selecionado para contas de computador local. O nome de usuário deve ser especificado no \\ \_ formato de nome de usuário de domínio para um usuário de domínio. O nome de usuário deve ser especificado no \_ formato " \\ nome de usuário do nome do servidor \_ " para um usuário local em um computador servidor. O padrão é *True*.
+Permite que o cliente use a autenticação Negotiate. Negociar a autenticação é um esquema no qual o cliente envia uma solicitação ao servidor para autenticar. O servidor determina se deve usar o protocolo Kerberos ou NTLM. O protocolo Kerberos é selecionado para autenticar uma conta de domínio e NTLM é selecionado para contas de computador local. O nome de usuário deve ser especificado no formato de nome \\ de usuário de domínio para um usuário de \_ domínio. O nome de usuário deve ser especificado no formato "nome de usuário do nome do \_ \\ \_ servidor" para um usuário local em um computador servidor. O padrão é *True*.
 
 ### <a name="credssp"></a>CredSSP
 
-Permite que o cliente use a autenticação do Credential Security Support Provider (CredSSP). O CredSSP permite que um aplicativo delegue as credenciais do usuário do computador cliente para o servidor de destino. O padrão é *False*.
+Permite que o cliente use a autenticação CredSSP (Provedor de Suporte de Segurança de Credencial). O CredSSP permite que um aplicativo delegar as credenciais do usuário do computador cliente para o servidor de destino. O padrão é *False*.
 
 ### <a name="defaultports"></a>DefaultPorts
 
 Especifica as portas que o cliente usará para HTTP ou HTTPS.
 
-**WinRM 2,0:** A porta HTTP padrão é 5985 e a porta HTTPS padrão é 5986.
+**WinRM 2.0:** A porta HTTP padrão é 5985 e a porta HTTPS padrão é 5986.
 
 ### <a name="trustedhosts"></a>TrustedHosts
 
-Especifica a lista de computadores remotos que são confiáveis. Outros computadores em um grupo de trabalho ou computadores em um domínio diferente devem ser adicionados a essa lista.
+Especifica a lista de computadores remotos confiáveis. Outros computadores em um grupo de trabalho ou computadores em um domínio diferente devem ser adicionados a essa lista.
 
 > [!Note]
-> Os computadores na lista TrustedHosts não são autenticados. O cliente pode enviar informações de credenciais para esses computadores.
+> Os computadores na lista TrustedHosts não são autenticados. O cliente pode enviar informações de credencial para esses computadores.
 
-Se um endereço IPv6 for especificado para um TrustedHost, o endereço deverá ser colocado entre colchetes, conforme demonstrado pelo seguinte comando do utilitário WinRM: `winrm set winrm/config/client '@{TrustedHosts ="[0:0:0:0:0:0:0:0]"}'` .
+Se um endereço IPv6 for especificado para um TrustedHost, o endereço deverá ser entre colchetes, conforme demonstrado pelo seguinte comando do utilitário winrm: `winrm set winrm/config/client '@{TrustedHosts ="[0:0:0:0:0:0:0:0]"}'` .
 
 Para obter mais informações sobre como adicionar computadores à lista TrustedHosts, digite `winrm help config` .
 
 ## <a name="winrm-service-default-configuration-settings"></a>Definições de configuração padrão do serviço WinRM
 
-A versão do serviço do WinRM tem as seguintes definições de configuração padrão.
+A versão de serviço do WinRM tem as seguintes definições de configuração padrão.
 
 ### <a name="rootsddl"></a>RootSDDL
 
-Especifica o descritor de segurança que controla o acesso remoto ao ouvinte. O padrão é "O:NSG: BAD: P (A;; GA;;; BA) (A;; GR;;; ER) S:P (AU; FA; GA;;; WD) (AU; SA; GWGX;;; WD) ".
+Especifica o descritor de segurança que controla o acesso remoto ao ouvinte. O padrão é "O:NSG:BAD:P(A;; GA;;; BA)(A;; GR;;; ER)S:P(AU;FA; GA;;; WD)(AU;SA; GWGX;;; WD)".
 
 ### <a name="maxconcurrentoperations"></a>MaxConcurrentOperations
 
 O número máximo de operações simultâneas. O padrão é 100.
 
-**WinRM 2,0:** A configuração MaxConcurrentOperations é preterida e está definida como somente leitura. Essa configuração foi substituída por MaxConcurrentOperationsPerUser.
+**WinRM 2.0:** A configuração MaxConcurrentOperations foi preterida e está definida como somente leitura. Essa configuração foi substituída por MaxConcurrentOperationsPerUser.
 
 ### <a name="maxconcurrentoperationsperuser"></a>MaxConcurrentOperationsPerUser
 
@@ -230,13 +230,13 @@ Especifica o número máximo de operações simultâneas que qualquer usuário p
 
 ### <a name="enumerationtimeoutms"></a>EnumerationTimeoutms
 
-Especifica o tempo limite de ociosidade em milissegundos entre as mensagens de pull. O padrão é 60000.
+Especifica o tempo de ociosidade em milissegundos entre mensagens pull. O padrão é 60000.
 
 ### <a name="maxconnections"></a>MaxConnections
 
 Especifica o número máximo de solicitações ativas que o serviço pode processar simultaneamente. O padrão é 300.
 
-**WinRM 2,0:** O padrão é 25.
+**WinRM 2.0:** O padrão é 25.
 
 ### <a name="maxpacketretrievaltimeseconds"></a>MaxPacketRetrievalTimeSeconds
 
@@ -246,9 +246,9 @@ Especifica o período máximo de tempo, em segundos, que o serviço WinRM leva p
 
 Permite que o computador cliente solicite tráfego não criptografado. O padrão é *False*.
 
-### <a name="basic"></a>Básico
+### <a name="basic"></a>Basic
 
-Permite que o serviço WinRM use a autenticação básica. O padrão é *False*.
+Permite que o serviço WinRM use a autenticação Básica. O padrão é *False*.
 
 ### <a name="certificate"></a>Certificado
 
@@ -260,21 +260,21 @@ Permite que o serviço WinRM use a autenticação Kerberos. O padrão é *True*.
 
 ### <a name="negotiate"></a>Negotiate
 
-Permite que o serviço WinRM use a autenticação de negociação. O padrão é *True*.
+Permite que o serviço WinRM use a autenticação Negotiate. O padrão é *True*.
 
 ### <a name="credssp"></a>CredSSP
 
-Permite que o serviço WinRM use a autenticação do Credential Security Support Provider (CredSSP). O padrão é *False*.
+Permite que o serviço WinRM use a autenticação CredSSP (Provedor de Suporte de Segurança de Credencial). O padrão é *False*.
 
 ### <a name="cbthardeninglevel"></a>CbtHardeningLevel
 
-Define a política para requisitos de token de associação de canal em solicitações de autenticação. O padrão é *relaxado*.
+Define a política para requisitos de token de associação de canal em solicitações de autenticação. O padrão é *Relaxed.*
 
 ### <a name="defaultports"></a>DefaultPorts
 
 Especifica as portas que o serviço WinRM usará para HTTP ou HTTPS.
 
-**WinRM 2,0:** A porta HTTP padrão é 5985 e a porta HTTPS padrão é 5986.
+**WinRM 2.0:** A porta HTTP padrão é 5985 e a porta HTTPS padrão é 5986.
 
 ### <a name="ipv4filter-and-ipv6filter"></a>IPv4Filter e IPv6Filter
 
@@ -282,29 +282,29 @@ Especifica os endereços IPv4 ou IPv6 que os ouvintes podem usar. Os padrões s�
 
 **IPv4:** Uma cadeia de caracteres literal IPv4 consiste em quatro números decimais pontilhados, cada um no intervalo de 0 a 255. Por exemplo: 192.168.0.0.
 
-**IPv6:** Uma cadeia de caracteres literal do IPv6 é colocada entre colchetes e contém números hexadecimais separados por dois-pontos. Por exemplo:: \[ : 1 \] ou \[ 3ffe: ffff:: 6ECB: 0101 \] .
+**IPv6:** Uma cadeia de caracteres literal IPv6 é entre colchetes e contém números hexadecimais separados por dois-pontos. Por exemplo: \[ ::1 \] ou \[ 3ffe:ffff::6ECB:0101 \] .
 
 ### <a name="enablecompatibilityhttplistener"></a>EnableCompatibilityHttpListener
 
-Especifica se o ouvinte de HTTP de compatibilidade está habilitado. Se essa configuração for *verdadeira*, o ouvinte escutará na porta 80 além da porta 5985. O padrão é *False*.
+Especifica se o ouvinte HTTP de compatibilidade está habilitado. Se essa configuração for *True,* o ouvinte escutará na porta 80, além da porta 5985. O padrão é *False*.
 
 ### <a name="enablecompatibilityhttpslistener"></a>EnableCompatibilityHttpsListener
 
-Especifica se o ouvinte de HTTPS de compatibilidade está habilitado. Se essa configuração for *verdadeira*, o ouvinte escutará na porta 443 além da porta 5986. O padrão é *False*.
+Especifica se o ouvinte HTTPS de compatibilidade está habilitado. Se essa configuração for *True,* o ouvinte escutará na porta 443, além da porta 5986. O padrão é *False*.
 
-## <a name="winrs-default-configuration-settings"></a>Definições de configuração padrão do WinRS
+## <a name="winrs-default-configuration-settings"></a>Configuração padrão do Winrs Configurações
 
-`winrm quickconfig` também define as configurações padrão do **WinRS** .
+`winrm quickconfig`também define as configurações padrão do **Winrs.**
 
 ### <a name="allowremoteshellaccess"></a>AllowRemoteShellAccess
 
-Permite o acesso a shells remotos. Se você definir esse parâmetro como *false*, as novas conexões de shell remoto serão rejeitadas pelo servidor. O padrão é *True*.
+Permite o acesso a shells remotos. Se você definir esse parâmetro como *False,* novas conexões de shell remoto serão rejeitadas pelo servidor. O padrão é *True*.
 
 ### <a name="idletimeout"></a>IdleTimeout
 
 Especifica o tempo máximo, em milissegundos, que o shell remoto permanecerá aberto quando não houver nenhuma atividade de usuário no shell remoto. O shell remoto é excluído automaticamente após o tempo especificado.
 
-**WinRM 2,0:** O padrão é 180000. O valor mínimo é 60000. Definir esse valor inferior a 60000 não terá efeito sobre o tempo limite.
+**WinRM 2.0:** O padrão é 180000. O valor mínimo é 60000. Definir esse valor inferior a 60000 não terá nenhum efeito sobre o tempo-fora.
 
 ### <a name="maxconcurrentusers"></a>MaxConcurrentUsers
 
@@ -312,9 +312,9 @@ Especifica o número máximo de usuários que podem executar simultaneamente ope
 
 ### <a name="maxshellruntime"></a>MaxShellRunTime
 
-Especifica o tempo máximo, em milissegundos, que o comando remoto ou o script pode executar. O padrão é 28,8 milhões.
+Especifica o tempo máximo, em milissegundos, que o comando remoto ou o script tem permissão para executar. O padrão é 28800000.
 
-**WinRM 2,0:** A configuração MaxShellRunTime é definida como somente leitura. Alterar o valor de MaxShellRunTime não terá nenhum efeito sobre os shells remotos.
+**WinRM 2.0:** A configuração MaxShellRunTime é definida como somente leitura. Alterar o valor de MaxShellRunTime não terá nenhum efeito nos shells remotos.
 
 ### <a name="maxprocessespershell"></a>MaxProcessesPerShell
 
@@ -322,58 +322,58 @@ Especifica o número máximo de processos que qualquer operação de shell tem p
 
 ### <a name="maxmemorypershellmb"></a>MaxMemoryPerShellMB
 
-Especifica a quantidade máxima de memória alocada por shell, incluindo os processos filho do Shell. O padrão é 150 MB.
+Especifica a quantidade máxima de memória alocada por shell, incluindo os processos filho do shell. O padrão é 150 MB.
 
 ### <a name="maxshellsperuser"></a>MaxShellsPerUser
 
 Especifica o número máximo de shells simultâneos que um usuário pode abrir remotamente no mesmo computador. Se essa configuração de política estiver habilitada, o usuário não poderá abrir novos shells remotos se a contagem exceder o limite especificado. Se esta configuração de política estiver desabilitada ou não estiver configurada, o limite será definido para 5 shells remotos por usuário por padrão.
 
-## <a name="configuring-winrm-with-group-policy"></a>Configurando o WinRM com o Política de Grupo
+## <a name="configuring-winrm-with-group-policy"></a>Configurando o WinRM com Política de Grupo
 
-Use o editor de Política de Grupo para configurar o shell remoto do Windows e o WinRM para computadores em sua empresa.
+Use o editor Política de Grupo para configurar Windows Remote Shell e WinRM para computadores em sua empresa.
 
 ### <a name="to-configure-with-group-policy"></a>Para configurar com Política de Grupo
 
 1. Abra uma janela de Prompt de comando como administrador.
-2. No prompt de comando, digite `gpedit.msc` . A janela **Editor de objeto de política de grupo** é aberta.
-3. Localize o **gerenciamento remoto do Windows** e o **Windows Remote Shell** política de grupo Objects (GPO) em **configuração do computador \\ modelos administrativos componentes do \\ Windows**.
-4. Na guia **estendida** , selecione uma configuração para ver uma descrição. Clique duas vezes em uma configuração para editá-la.
+2. No Prompt de Comando, digite `gpedit.msc`. A **Editor de Objeto de Política de Grupo** é aberta.
+3. Encontre os **Windows gerenciamento** remoto e Windows GPO **(Remote Shell** Política de Grupo Objects) em Configuração do Computador Modelos Administrativos **Windows \\ \\ Componentes**.
+4. Na guia **Estendido,** selecione uma configuração para ver uma descrição. Clique duas vezes em uma configuração para editá-la.
 
-## <a name="windows-firewall-and-winrm-20-ports"></a>Portas do firewall do Windows e do WinRM 2,0
+## <a name="windows-firewall-and-winrm-20-ports"></a>Windows Firewall e portas WinRM 2.0
 
-A partir do WinRM 2,0, as portas de ouvinte padrão configuradas pelo `Winrm quickconfig` são a porta 5985 para transporte http e a porta 5986 para https. Os ouvintes do WinRM podem ser configurados em qualquer porta arbitrária.
+A partir do WinRM 2.0, as portas de ouvinte padrão configuradas pelo são a porta 5985 para transporte HTTP e a `Winrm quickconfig` porta 5986 para HTTPS. Os ouvintes do WinRM podem ser configurados em qualquer porta arbitrária.
 
-Se um computador for atualizado para o WinRM 2,0, os ouvintes configurados anteriormente serão migrados e ainda receberão o tráfego.
+Se um computador for atualizado para o WinRM 2.0, os ouvintes configurados anteriormente serão migrados e ainda receberão tráfego.
 
 ## <a name="winrm-installation-and-configuration-notes"></a>Notas de instalação e configuração do WinRM
 
-O WinRM não depende de nenhum outro serviço, exceto WinHttp. Se o serviço de administração do IIS estiver instalado no mesmo computador, você poderá ver mensagens que indicam que o WinRM não pode ser carregado antes de Serviços de Informações da Internet (IIS). No entanto, o WinRM não depende realmente do IIS &mdash; que essas mensagens ocorrem porque a ordem de carregamento garante que o serviço IIS seja iniciado antes do serviço http. O WinRM requer que `WinHTTP.dll` seja registrado.
+O WinRM não depende de nenhum outro serviço, exceto WinHttp. Se o Serviço de Administração do IIS estiver instalado no mesmo computador, você poderá ver mensagens que indicam que o WinRM não pode ser carregado antes Serviços de Informações da Internet (IIS). No entanto, o WinRM não depende realmente do IIS em que essas mensagens ocorrem porque a ordem de carregamento garante que o serviço IIS seja iniciado antes &mdash; do serviço HTTP. O WinRM requer que `WinHTTP.dll` sejam registrados.
 
-Se o cliente de firewall do ISA2004 estiver instalado no computador, ele poderá fazer com que um cliente do Web Services para gerenciamento (WS-Management) pare de responder. Para evitar esse problema, instale o ISA2004 firewall SP1.
+Se o cliente de firewall ISA2004 estiver instalado no computador, ele poderá fazer com que um cliente WS-Management (Serviços Web para Gerenciamento) pare de responder. Para evitar esse problema, instale o Firewall ISA2004 SP1.
 
-Se dois serviços de escuta com endereços IP diferentes estiverem configurados com o mesmo número de porta e nome do computador, o WinRM escutará ou receberá mensagens em apenas um endereço. Isso ocorre porque os prefixos de URL usados pelo protocolo WS-Management são os mesmos.
+Se dois serviços ouvintes com endereços IP diferentes são configurados com o mesmo número da porta e o mesmo nome do computador, o WinRM escuta ou recebe mensagens em apenas um endereço. Isso porque os prefixos de URL usados pelo protocolo WS-Management são os mesmos.
 
-## <a name="ipmi-driver-and-provider-installation-notes"></a>Notas de instalação do driver e do provedor IPMI
+## <a name="ipmi-driver-and-provider-installation-notes"></a>Notas de instalação do driver IPMI e do provedor
 
-O driver pode não detectar a existência de drivers IPMI que não são da Microsoft. Se o driver não for iniciado, talvez seja necessário desabilitá-lo.
+O driver pode não detectar a existência de drivers IPMI que não são da Microsoft. Se o driver não for iniciar, talvez seja necessário desabilitá-lo.
 
-Se os recursos do [BMC (Baseboard Management Controller)](./windows-remote-management-glossary.md#b) aparecerem no BIOS do sistema, a ACPI (plug and Play) detectará o hardware do BMC e instalará automaticamente o driver IPMI. Plug and Play suporte pode não estar presente em todos os BMCs. Se o BMC for detectado pelo Plug and Play, um dispositivo desconhecido aparecerá em Gerenciador de Dispositivos antes de o componente de gerenciamento de hardware ser instalado. Quando o driver é instalado, um novo componente, o dispositivo compatível com IPMI genérico do Microsoft ACPI, aparece em Gerenciador de Dispositivos.
+Se os recursos do [BMC (controlador](./windows-remote-management-glossary.md#b) de gerenciamento de placa base) aparecerem no BIOS do sistema, o ACPI (Plug and Play) detectará o hardware do BMC e instalará automaticamente o driver IPMI. Plug and Play suporte pode não estar presente em todos os BMCs. Se o BMC for detectado pelo Plug and Play, um Dispositivo Desconhecido aparecerá no Gerenciador de Dispositivos antes que o componente gerenciamento de hardware seja instalado. Quando o driver é instalado, um novo componente, o Dispositivo compatível com IPMI Genérico do Microsoft ACPI, aparece Gerenciador de Dispositivos.
 
-Se o seu sistema não detectar automaticamente o BMC e instalar o driver, mas um BMC foi detectado durante o processo de instalação, você deverá criar o dispositivo BMC. Para fazer isso, digite o seguinte comando no prompt de comando: `Rundll32 ipmisetp.dll, AddTheDevice` . Depois que esse comando é executado, o dispositivo IPMI é criado e aparece em Gerenciador de Dispositivos. Se você desinstalar o componente de gerenciamento de hardware, o dispositivo será removido.
+Se o sistema não detectar automaticamente o BMC e instalar o driver, mas um BMC tiver sido detectado durante o processo de instalação, você deverá criar o dispositivo BMC. Para fazer isso, digite o seguinte comando em um prompt de comando: `Rundll32 ipmisetp.dll, AddTheDevice` . Depois que esse comando é executado, o dispositivo IPMI é criado e ele aparece em Gerenciador de Dispositivos. Se você desinstalar o componente Gerenciamento de Hardware, o dispositivo será removido.
 
-Para obter mais informações, consulte [introdução ao gerenciamento de hardware](/previous-versions/windows/it-pro/windows-server-2003/cc785056(v=ws.10)).
+Para obter mais informações, consulte [Introdução ao Gerenciamento de Hardware.](/previous-versions/windows/it-pro/windows-server-2003/cc785056(v=ws.10))
 
-O provedor de IPMI coloca as classes de hardware no [namespace](/windows/desktop/WmiSdk/gloss-n) de **\\ hardware raiz** do WMI. Para obter mais informações sobre as classes de hardware, consulte [provedor IPMI](/previous-versions/windows/desktop/ipmiprv/ipmi-provider). Para obter mais informações sobre *namespaces* WMI, consulte [arquitetura WMI](/windows/desktop/WmiSdk/wmi-architecture).
+O provedor IPMI coloca as classes de hardware no [namespace](/windows/desktop/WmiSdk/gloss-n) **de hardware \\ raiz** do WMI. Para obter mais informações sobre as classes de hardware, consulte [Provedor IPMI](/previous-versions/windows/desktop/ipmiprv/ipmi-provider). Para obter mais informações sobre *namespaces WMI*, consulte [Arquitetura WMI](/windows/desktop/WmiSdk/wmi-architecture).
 
-## <a name="wmi-plug-in-configuration-notes"></a>Observações de configuração de plug-in WMI
+## <a name="wmi-plug-in-configuration-notes"></a>Notas de configuração de plug-in WMI
 
-A partir do Windows 8 e do Windows Server 2012, os [plug-ins WMI](./windows-remote-management-glossary.md#w) têm suas próprias configurações de segurança. Para que um usuário normal ou de energia (não administrador) possa usar o *plug-in WMI*, você precisa habilitar o acesso para esse usuário após a configuração do [ouvinte](./windows-remote-management-glossary.md#l) . Primeiro, você deve configurar o usuário para acesso remoto ao [WMI](./windows-remote-management-glossary.md#w) por meio de uma destas etapas.
+Começando com Windows 8 e Windows Server 2012, [os plug-ins WMI](./windows-remote-management-glossary.md#w) têm suas próprias configurações de segurança. Para um usuário normal ou de energia (não administrador) poder usar o *plug-in WMI*, você precisa habilitar o acesso para esse usuário depois que o [ouvinte](./windows-remote-management-glossary.md#l) tiver sido configurado. Primeiro, você deve configurar o usuário para acesso remoto ao [WMI](./windows-remote-management-glossary.md#w) por meio de uma dessas etapas.
 
-- Execute `lusrmgr.msc` para adicionar o usuário ao grupo **WinRMRemoteWMIUsers \_ \_** na janela **usuários e grupos locais** ou
-- Use a ferramenta de linha de comando **WinRM** para configurar o descritor de segurança para o [*namespace*](./windows-remote-management-glossary.md#n) do [plug-in do WMI](./windows-remote-management-glossary.md#w), da seguinte maneira: `winrm configSDDL http://schemas.microsoft.com/wbem/wsman/1/wmi/ WmiNamespace` .
+- Execute `lusrmgr.msc` para adicionar o usuário ao grupo **WinRMRemoteWMIUsers \_ \_** na janela Usuários e **Grupos** Locais ou
+- use a ferramenta de linha de comando **winrm** para configurar o descritor de segurança para o [*namespace*](./windows-remote-management-glossary.md#n) do [plug-in WMI,](./windows-remote-management-glossary.md#w)da seguinte forma: `winrm configSDDL http://schemas.microsoft.com/wbem/wsman/1/wmi/ WmiNamespace` .
 
 Quando a interface do usuário for exibida, adicione o usuário.
 
-Depois de configurar o usuário para acesso remoto ao [WMI](./windows-remote-management-glossary.md#w), você deve configurar o *WMI* para permitir que o usuário acesse o plug-in. Para fazer isso, execute `wmimgmt.msc` para modificar a segurança do *WMI* para o [namespace](./windows-remote-management-glossary.md#n) a ser acessado na janela **controle WMI** .
+Depois de configurar o usuário para acesso remoto ao [WMI,](./windows-remote-management-glossary.md#w)você deve configurar o *WMI* para permitir que o usuário acesse o plug-in. Para fazer isso, execute `wmimgmt.msc` para modificar a segurança *WMI* do [namespace](./windows-remote-management-glossary.md#n) a ser acessado na janela **Controle WMI.**
 
-A maioria das classes WMI para gerenciamento está no namespace **raiz \\ cimv2** .
+A maioria das classes WMI para gerenciamento está no namespace **\\ raiz cimv2.**

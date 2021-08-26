@@ -4,17 +4,17 @@ ms.assetid: 94f94eb1-49fa-4b8c-95a6-da307b0abd62
 title: Propriedade CurrentTime
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 95fa779eb6f4999fa6e093e1a07d07171c7920fa
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 7d49db59d7b53bff217a31da4ef0bf20548e99ca2fecc6dc277bc5217f1e2340
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105782202"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119998826"
 ---
 # <a name="currenttime-property"></a>Propriedade CurrentTime
 
 > [!Note]  
-> Esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
+> esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
 
  
 

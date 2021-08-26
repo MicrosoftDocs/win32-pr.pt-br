@@ -1,7 +1,7 @@
 ---
 description: Cria uma matriz usando os deslocamentos especificados.
 ms.assetid: 1cb713d5-b994-4496-a506-89451be09fb2
-title: Função D3DXMatrixTranslation (D3dx9math. h)
+title: Função D3DXMatrixTranslation (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 9c74d56eaa0e41bc6ce9060ff291885a8a5c05a5
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 6aaa14bbd2f82be7ac87857c05a863b6459440dcfdd383d2144fe1b4426019ec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298606"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119986516"
 ---
-# <a name="d3dxmatrixtranslation-function-d3dx9mathh"></a>Função D3DXMatrixTranslation (D3dx9math. h)
+# <a name="d3dxmatrixtranslation-function-d3dx9mathh"></a>Função D3DXMatrixTranslation (D3dx9math.h)
 
 Cria uma matriz usando os deslocamentos especificados.
 
@@ -43,51 +43,51 @@ D3DXMATRIX* D3DXMatrixTranslation(
 
 <dl> <dt>
 
-*pout* \[ entrada, saída\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Ponteiro para a estrutura [**D3DXMATRIX**](d3dxmatrix.md) que é o resultado da operação.
+Ponteiro para a [**estrutura D3DXMATRIX**](d3dxmatrix.md) que é o resultado da operação.
 
 </dd> <dt>
 
 *x* \[ em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Deslocamento de coordenadas X.
+Deslocamento da coordenada X.
 
 </dd> <dt>
 
 *y* \[ em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Deslocamento de coordenadas Y.
+Deslocamento da coordenada Y.
 
 </dd> <dt>
 
 *z* \[ em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Deslocamento de coordenadas Z.
+Deslocamento da coordenada Z.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Ponteiro para uma estrutura [**D3DXMATRIX**](d3dxmatrix.md) que contém uma matriz de transformação traduzida.
+Ponteiro para uma [**estrutura D3DXMATRIX**](d3dxmatrix.md) que contém uma matriz de transformação traduzida.
 
 ## <a name="remarks"></a>Comentários
 
-O valor de retorno para essa função é o mesmo valor retornado no parâmetro *pout* . Dessa forma, o D3DXMATRIXTranslation pode ser usado como um parâmetro para outra função.
+O valor retornado para essa função é o mesmo valor retornado no *parâmetro pOut.* Dessa forma, a D3DXMATRIXTranslation pode ser usada como um parâmetro para outra função.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -95,8 +95,8 @@ O valor de retorno para essa função é o mesmo valor retornado no parâmetro *
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

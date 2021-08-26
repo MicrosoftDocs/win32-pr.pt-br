@@ -1,7 +1,7 @@
 ---
-description: 'O método ConnectedTo recupera um ponteiro para o PIN conectado, se houver. Esse método implementa o método IPin:: ConnectedTo.'
+description: O método ConnectedTo recupera um ponteiro para o pino conectado, se for o caso. Esse método implementa o método IPin::ConnectedTo.
 ms.assetid: d8978c9a-e498-4411-a052-f3c2fca570ef
-title: Método CBasePin. ConnectedTo (Amfilter. h)
+title: Método CBasePin.ConnectedTo (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5003154011f93b2b70ddd49dab00dcc1659eb2f5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2a37eafe9abf226be20cf5d573abc91bc52ee070e7667dbab3a8799f74022c92
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105771866"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119916756"
 ---
-# <a name="cbasepinconnectedto-method"></a>Método CBasePin. ConnectedTo
+# <a name="cbasepinconnectedto-method"></a>Método CBasePin.ConnectedTo
 
-O `ConnectedTo` método recupera um ponteiro para o PIN conectado, se houver. Esse método implementa o método [**IPin:: ConnectedTo**](/windows/desktop/api/Strmif/nf-strmif-ipin-connectedto) .
+O `ConnectedTo` método recupera um ponteiro para o pino conectado, se for o caso. Esse método implementa o [**método IPin::ConnectedTo.**](/windows/desktop/api/Strmif/nf-strmif-ipin-connectedto)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,21 +45,21 @@ HRESULT ConnectedTo(
 *ppPin* 
 </dt> <dd>
 
-Endereço de uma variável que recebe um ponteiro para a interface [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) do outro PIN.
+Endereço de uma variável que recebe um ponteiro para a interface [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) do outro pino.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor **HRESULT** . Os valores possíveis incluem os da tabela a seguir.
+Retorna um **valor HRESULT.** Os valores possíveis incluem aqueles na tabela a seguir.
 
 
 
 | Código de retorno                                                                                           | Descrição                           |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                  | Êxito.<br/>                   |
-| <dl> <dt>**\_ponteiro E**</dt> </dl>             | Argumento de ponteiro **nulo** .<br/> |
-| <dl> <dt>**VFW \_ E \_ não \_ conectado**</dt> </dl> | O PIN não está conectado.<br/>      |
+| <dl> <dt>**PONTEIRO \_ E**</dt> </dl>             | Argumento de ponteiro **NULL.**<br/> |
+| <dl> <dt>**VFW \_ E \_ NÃO \_ CONECTADO**</dt> </dl> | O pino não está conectado.<br/>      |
 
 
 
@@ -67,7 +67,7 @@ Retorna um valor **HRESULT** . Os valores possíveis incluem os da tabela a segu
 
 ## <a name="remarks"></a>Comentários
 
-Se o método for executado com sucesso, a interface **IPin** que ele retornar terá uma contagem de referência pendente. Certifique-se de liberá-lo quando terminar.
+Se o método for bem-sucedido, a interface **IPin** retornada terá uma contagem de referência pendente. Certifique-se de liberá-lo quando terminar.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,8 +75,8 @@ Se o método for executado com sucesso, a interface **IPin** que ele retornar te
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amfilter.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

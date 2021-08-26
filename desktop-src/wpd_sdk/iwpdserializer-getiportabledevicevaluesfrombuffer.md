@@ -1,7 +1,7 @@
 ---
-description: O método GetIPortableDeviceValuesFromBuffer desserializa uma matriz de bytes para uma interface IPortableDeviceValues.
+description: O método GetIPortableDeviceValuesFromBuffer deserializa uma matriz de byte para uma interface IPortableDeviceValues.
 ms.assetid: 93bea711-74d5-407a-a707-a3abe47bc2cd
-title: 'Método IWpdSerializer:: GetIPortableDeviceValuesFromBuffer (PortableDeviceTypes. h)'
+title: Método IWpdSerializer::GetIPortableDeviceValuesFromBuffer (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 639a9455349e1d016b71d9c9717940695e9c0a85
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ac33bf0cfb04363d40e4efeff13db1cb2504ce2dcb7ece4d9b10ac3d08dff83f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105787551"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120054956"
 ---
-# <a name="iwpdserializergetiportabledevicevaluesfrombuffer-method"></a>Método IWpdSerializer:: GetIPortableDeviceValuesFromBuffer
+# <a name="iwpdserializergetiportabledevicevaluesfrombuffer-method"></a>Método IWpdSerializer::GetIPortableDeviceValuesFromBuffer
 
-O método **GetIPortableDeviceValuesFromBuffer** desserializa uma matriz de bytes para uma interface **IPortableDeviceValues** .
+O **método GetIPortableDeviceValuesFromBuffer** deserializa uma matriz de byte para uma interface **IPortableDeviceValues.**
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,38 +42,38 @@ HRESULT GetIPortableDeviceValuesFromBuffer(
 
 <dl> <dt>
 
-*pBuffer* \[ no\]
+*pBuffer* \[ Em\]
 </dt> <dd>
 
-Ponteiro para o buffer a ser desserializado.
+Ponteiro para o buffer a ser desterlizado.
 
 </dd> <dt>
 
-*dwInputBufferLength* \[ no\]
+*dwInputBufferLength* \[ Em\]
 </dt> <dd>
 
 **DWORD** que especifica o tamanho do buffer, em bytes.
 
 </dd> <dt>
 
-*ppParams* \[ fora\]
+*ppParams* \[ out\]
 </dt> <dd>
 
-Endereço de uma variável que recebe um ponteiro para uma interface [**IPortableDeviceValues**](iportabledevicevalues.md) criada a partir do buffer. O aplicativo é responsável por chamar o **lançamento** na interface.
+Endereço de uma variável que recebe um ponteiro para uma interface [**IPortableDeviceValues**](iportabledevicevalues.md) criada a partir do buffer. O aplicativo é responsável por chamar **Release** na interface .
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 
 | Código de retorno                                                                                  | Descrição                                          |
 |----------------------------------------------------------------------------------------------|------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>         | O método foi bem-sucedido.<br/>                     |
-| <dl> <dt>**\_ponteiro E**</dt> </dl>    | Um argumento de ponteiro necessário era **nulo**.<br/> |
-| <dl> <dt>**E \_ inesperado**</dt> </dl> | Ocorreu um erro de conversão não especificado.<br/> |
+| <dl> <dt>**PONTEIRO \_ E**</dt> </dl>    | Um argumento de ponteiro necessário era **NULL.**<br/> |
+| <dl> <dt>**E \_ UNEXPECTED**</dt> </dl> | Ocorreu um erro de conversão não especificado.<br/> |
 
 
 
@@ -85,8 +85,8 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
 
 
 
@@ -94,7 +94,7 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 
 <dl> <dt>
 
-[**Interface IWpdSerializer**](iwpdserializer.md)
+[**IWpdSerializer Interface**](iwpdserializer.md)
 </dt> </dl>
 
  

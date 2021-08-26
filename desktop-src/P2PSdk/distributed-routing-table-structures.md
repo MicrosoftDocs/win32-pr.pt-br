@@ -4,12 +4,12 @@ ms.assetid: 3ff85b24-5ec0-4b26-b30e-1bf8030a575d
 title: Estruturas de tabela de roteamento distribuído
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d454d2c28008422da897dc91ca9a3dc29db374b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7613b63559eadd2b19229228b9d57fb438b6bd2bbb1b5a9d335a6513c1e8bfee
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105764635"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119978936"
 ---
 # <a name="distributed-routing-table-structures"></a>Estruturas de tabela de roteamento distribuído
 

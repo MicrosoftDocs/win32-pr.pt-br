@@ -3,7 +3,7 @@ title: Mensagem de PBM_SETSTATE (commctrl. h)
 description: Define o estado da barra de progresso.
 ms.assetid: 4626f334-db74-4618-8fc7-e6f21c88ca19
 keywords:
-- Controles de PBM_SETSTATE de mensagens do Windows
+- controles de Windows de mensagem de PBM_SETSTATE
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c91e94bcc909957264eff776e56d3580b2c36ad
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 794006517eaa23789f3a25425b1213fede7f8dde9893587def02ebc9605b28f3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455543"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119986056"
 ---
 # <a name="pbm_setstate-message"></a>Mensagem do estado do PBM \_
 
@@ -51,7 +51,7 @@ Estado da barra de progresso que está sendo definida. Um dos valores a seguir.
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o estado anterior.
 
@@ -61,9 +61,9 @@ Retorna o estado anterior.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

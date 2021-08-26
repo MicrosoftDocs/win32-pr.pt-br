@@ -1,9 +1,9 @@
 ---
-title: opção/v
-description: A opção/v especifica que as referências de tipo de metadados são validadas.
+title: /v switch
+description: A opção /v especifica que as referências de tipo de metadados são validadas.
 ms.assetid: AC522044-68CE-423D-B2E8-6864CD0B528E
 keywords:
-- /v opção MIDL
+- /v switch MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,22 +12,22 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4efd1ba12e11b7bdfdda31b0e9c9670c97d5cc4c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d8c1c11494798cbef77d876ce10ba1a40454ad515d3a449f97bd6ab1348da2ed
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747995"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119979686"
 ---
-# <a name="v-switch"></a>opção/v
+# <a name="v-switch"></a>/v switch
 
-A opção **/v** especifica que as referências de tipo de metadados são validadas.
+A **opção /v** especifica que as referências de tipo de metadados são validadas.
 
 ``` syntax
 mdmerge /v 
 ```
 
-## <a name="switch-options"></a>Opções de comutação
+## <a name="switch-options"></a>Opções de opção
 
 Essa opção não tem parâmetros.
 
@@ -35,7 +35,7 @@ Essa opção não tem parâmetros.
 
 ## <a name="examples"></a>Exemplos
 
-**mdmerge/v**
+**mdmerge /v**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,7 +52,7 @@ Essa opção não tem parâmetros.
 
 <dl> <dt>
 
-[Sintaxe de linha de comando MIDL geral](general-midl-command-line-syntax.md)
+[Sintaxe geral da linha de comando MIDL](general-midl-command-line-syntax.md)
 </dt> </dl>
 
  

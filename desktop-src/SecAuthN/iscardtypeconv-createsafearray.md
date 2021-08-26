@@ -1,7 +1,7 @@
 ---
-description: Cria um SAFEARRAY de automação de caracteres não assinados (bytes).
+description: Cria uma SAFEARRAY de Automação de caracteres não assinados (bytes).
 ms.assetid: 67cc8cd1-95be-4498-ac25-6c418089af27
-title: 'Método ISCardTypeConv:: createsafearray (Scarddat. h)'
+title: Método ISCardTypeConv::CreateSafeArray (Scarddat.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: 6bc27a3f50f0740eca178787fd021f76c9b6729e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 50b1adc227e651f3ce3b904389b57812cfb9dedee235f07057425880c0c8e32f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089844"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120013736"
 ---
-# <a name="iscardtypeconvcreatesafearray-method"></a>Método ISCardTypeConv:: createsafearray
+# <a name="iscardtypeconvcreatesafearray-method"></a>Método ISCardTypeConv::CreateSafeArray
 
-\[O método **createsafearray** está disponível para uso nos sistemas operacionais especificados na seção requisitos. Ele não está disponível para uso no Windows Server 2003 com Service Pack 1 (SP1) e posterior, no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. Os [módulos de cartão inteligente](/previous-versions/windows/desktop/secsmart/smart-card-modules) fornecem funcionalidade semelhante.\]
+\[O **método CreateSafeArray** está disponível para uso nos sistemas operacionais especificados na seção Requisitos. Ele não está disponível para uso no Windows Server 2003 com Service Pack 1 (SP1) e posterior, Windows Vista, Windows Server 2008 e versões subsequentes do sistema operacional. Os [Módulos de Cartão Inteligente](/previous-versions/windows/desktop/secsmart/smart-card-modules) fornecem funcionalidade semelhante.\]
 
-O método **createsafearray** cria um SafeArray de automação de caracteres não assinados (bytes).
+O **método CreateSafeArray** cria uma SAFEARRAY de Automação de caracteres não assinados (bytes).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,21 +42,21 @@ HRESULT CreateSafeArray(
 
 <dl> <dt>
 
-*nAllocSize* \[ no\]
+*nAllocSize* \[ Em\]
 </dt> <dd>
 
 Tamanho em bytes da memória a ser alocada para a matriz.
 
 </dd> <dt>
 
-*ppArray* \[ fora\]
+*ppArray* \[ out\]
 </dt> <dd>
 
 Ponteiro para o objeto SAFEARRAY a ser retornado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um dos seguintes valores possíveis:
 
@@ -74,7 +74,7 @@ O método retorna um dos seguintes valores possíveis:
 
 ## <a name="remarks"></a>Comentários
 
-Para criar uma matriz de bytes C/C++ típica, chame [**CreateByteArray**](iscardtypeconv-createbytearray.md).
+Para criar uma matriz de byte C/C++ típica, chame [**CreateByteArray**](iscardtypeconv-createbytearray.md).
 
 Para criar um buffer universal de bytes mapeados em um objeto **IStream** ([**IByteBuffer**](ibytebuffer.md)), chame [**CreateByteBuffer**](iscardtypeconv-createbytebuffer.md).
 
@@ -84,14 +84,14 @@ Para criar um buffer universal de bytes mapeados em um objeto **IStream** ([**IB
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                    |
-| Fim do suporte do cliente<br/>    | Windows XP<br/>                                                                   |
-| Fim do suporte do servidor<br/>    | Windows Server 2003<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Scarddat. h</dt> </dl>   |
-| Biblioteca de tipos<br/>             | <dl> <dt>Scarddat. tlb</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                    |
+| Fim do suporte ao cliente<br/>    | Windows XP<br/>                                                                   |
+| Fim do suporte ao servidor<br/>    | Windows Server 2003<br/>                                                          |
+| Cabeçalho<br/>                   | <dl> <dt>Scarddat.h</dt> </dl>   |
+| Biblioteca de tipos<br/>             | <dl> <dt>Scarddat.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
-| IID<br/>                      | IID \_ ISCardTypeConv é definido como 53B6AA63-3F56-11D0-916B-00AA00C18068<br/>       |
+| IID<br/>                      | IID ISCardTypeConv é definido como \_ 53B6AA63-3F56-11D0-916B-00AA00C18068<br/>       |
 
 
 
@@ -102,7 +102,7 @@ Para criar um buffer universal de bytes mapeados em um objeto **IStream** ([**IB
 [**ISCardTypeConv**](iscardtypeconv.md)
 </dt> <dt>
 
-[Valores de retorno do cartão inteligente](authentication-return-values.md)
+[Valores de retorno de cartão inteligente](authentication-return-values.md)
 </dt> <dt>
 
 [**CreateByteArray**](iscardtypeconv-createbytearray.md)

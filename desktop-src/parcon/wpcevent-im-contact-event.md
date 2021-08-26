@@ -4,12 +4,12 @@ ms.assetid: 0a016542-306e-48b4-8b0c-b9e4e915513e
 title: WPCEVENT_IM_CONTACT evento (Wpcevent. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9747f7ede57f7a1d77af0f0e8e5425401ee32b36
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: baac4bf5648b27f2e8d446a79bb2d90d52f0aac416e30d031d3b81d430a6927b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171717"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119951437"
 ---
 # <a name="wpcevent_im_contact-event"></a>Evento de contato do WPCEVENT \_ im \_
 
@@ -88,9 +88,9 @@ Um valor da enumeração [**\_ IsBlocked de WPCFLAG**](/windows/win32/api/wpceve
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                             |
-| parâmetro<br/>                   | <dl> <dt>Wpcevent. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Wpcevent. h</dt> </dl> |
 
 
 

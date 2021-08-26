@@ -4,12 +4,12 @@ ms.assetid: 6ccaf2eb-acec-4dfd-9ec7-c78aca043900
 title: Evento InkEdit. MouseMove (Inked. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a0d3e98827a1f0ebcdc80f5d44765ebe768f65e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 601bcaa4c5bc3379c207302c28e5eb17d44b2b184ce42452d5b78b6079d88ead
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105749716"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119939106"
 ---
 # <a name="inkeditmousemove-event"></a>Evento InkEdit. MouseMove
 
@@ -86,7 +86,7 @@ A coordenada y atual, em pixels, do ponteiro do mouse.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se esse evento for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
@@ -106,9 +106,9 @@ Esse método de evento é definido na interface **\_ IInkEditEvents** . A interf
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/>                                                 |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                     |
-| parâmetro<br/>                   | <dl> <dt>Inked. h (também requer Inked \_ i. c)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Inked. h (também requer Inked \_ i. c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkEd.dll</dt> </dl>                          |
 
 

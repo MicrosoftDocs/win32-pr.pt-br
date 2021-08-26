@@ -1,8 +1,8 @@
 ---
-description: A interface IWbemObjectSink cria uma interface de coletor que pode receber todos os tipos de notificações dentro do modelo de programação WMI.
+description: A interface IWbemObjectSink cria uma interface de sink que pode receber todos os tipos de notificações dentro do modelo de programação WMI.
 ms.assetid: 987aea1d-912a-4691-987f-181c1ef1a8a9
 ms.tgt_platform: multiple
-title: Interface IWbemObjectSink (Wbemcli. h)
+title: Interface IWbemObjectSink (Wbemcli.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,28 +14,28 @@ api_type:
 - COM
 api_location:
 - Fastprox.dll
-ms.openlocfilehash: 980865605eadfd5e4cb61a511317dec7838b8e47
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6bfce21edca92c95276f382d16007f8b319b9f3b80fc5c3c721f7232ea0b4618
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105767710"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119996536"
 ---
 # <a name="iwbemobjectsink-interface"></a>Interface IWbemObjectSink
 
-A interface **IWbemObjectSink** cria uma interface de coletor que pode receber todos os tipos de notificações dentro do modelo de programação WMI. Os clientes devem implementar essa interface para receber os resultados dos [métodos assíncronos](making-an-asynchronous-call-with-c--.md) de [**IWbemServices**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices)e tipos específicos de notificações de eventos. Os provedores usam, mas não implementam essa interface para fornecer eventos e objetos ao WMI.
+A interface **IWbemObjectSink** cria uma interface de sink que pode receber todos os tipos de notificações dentro do modelo de programação WMI. Os clientes devem implementar essa interface para receber os resultados dos métodos [assíncronos](making-an-asynchronous-call-with-c--.md) [**de IWbemServices**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices)e tipos específicos de notificações de eventos. Os provedores usam, mas não implementam essa interface para fornecer eventos e objetos ao WMI.
 
-Normalmente, os provedores chamam uma implementação fornecida a eles pelo WMI. Nesses casos, chame [**indicar**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjectsink-indicate) para fornecer objetos ao serviço WMI. Depois disso, chame [**SetStatus**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjectsink-setstatus) para indicar o final da sequência de notificação. Você também pode chamar **SetStatus** para indicar erros quando o coletor não tiver nenhum objeto.
+Normalmente, os provedores chamam uma implementação fornecida a eles pelo WMI. Nesses casos, chame [**Indicar**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjectsink-indicate) para fornecer objetos para o serviço WMI. Depois disso, chame [**SetStatus**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjectsink-setstatus) para indicar o final da sequência de notificação. Você também pode chamar **SetStatus** para indicar erros quando o sink não tiver nenhum objeto.
 
 Ao programar clientes assíncronos do WMI, o usuário fornece a implementação. O WMI chama os métodos para entregar objetos e definir o status do resultado.
 
 > [!Note]  
-> Se um aplicativo cliente passar a mesma interface de coletor em duas chamadas assíncronas sobrepostas diferentes, o WMI não garantirá a ordem do retorno de chamada. Os aplicativos cliente que fazem chamadas assíncronas sobrepostas devem passar objetos de coletor diferentes ou serializar suas chamadas.
+> Se um aplicativo cliente passar a mesma interface de sink em duas chamadas assíncronas sobrepostas diferentes, o WMI não garantirá a ordem do retorno de chamada. Os aplicativos cliente que fazem chamadas assíncronas sobrepostas devem passar objetos de sink diferentes ou serializar suas chamadas.
 
  
 
 > [!Note]  
-> Como o retorno de chamada para o coletor não pode ser retornado no mesmo nível de autenticação que o cliente requer, é recomendável que você use semisynchronous em vez de comunicação assíncrona. Para obter mais informações, consulte [chamando um método](calling-a-method.md).
+> Como o retorno de chamada para o sink pode não ser retornado no mesmo nível de autenticação que o cliente exige, é recomendável que você use semissíncrono em vez de comunicação assíncrona. Para obter mais informações, consulte [Chamando um método](calling-a-method.md).
 
  
 
@@ -54,7 +54,7 @@ A interface **IWbemObjectSink** tem esses métodos.
 | Método                                         | Descrição                                                                                                             |
 |:-----------------------------------------------|:------------------------------------------------------------------------------------------------------------------------|
 | [**Indicar**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjectsink-indicate)   | Recebe objetos de notificação.<br/>                                                                               |
-| [**SetStatus**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjectsink-setstatus) | Chamado por fontes para indicar o final de uma sequência de notificação ou para enviar outros códigos de status ao coletor.<br/> |
+| [**Setstatus**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjectsink-setstatus) | Chamado por fontes para indicar o final de uma sequência de notificação ou para enviar outros códigos de status para o sink.<br/> |
 
 
 
@@ -62,13 +62,13 @@ A interface **IWbemObjectSink** tem esses métodos.
 
 ## <a name="remarks"></a>Comentários
 
-Ao implementar um coletor de assinatura de evento (**IWbemObjectSink** ou [**IWbemEventSink**](iwbemeventsink.md)), não chame o WMI de dentro dos métodos de [**indicar**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjectsink-indicate) ou [**SetStatus**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjectsink-setstatus) no objeto do coletor. Por exemplo, chamar [**IWbemServices:: CancelAsyncCall**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-cancelasynccall) para cancelar o coletor de dentro de uma implementação de [**indicar**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjectsink-indicate) pode interferir no estado do WMI. Para cancelar uma assinatura de evento, defina um sinalizador e chame **IWbemServices:: CancelAsyncCall** de outro thread ou objeto. Para implementações que não estão relacionadas a um coletor de eventos, como recuperações de objeto, enum e consulta, você pode chamar de volta para o WMI.
+Ao implementar um sink de assinatura de evento **(IWbemObjectSink** ou [**IWbemEventSink),**](iwbemeventsink.md)não chame o WMI de dentro dos métodos [**Indicate**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjectsink-indicate) ou [**SetStatus**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjectsink-setstatus) no objeto sink. Por exemplo, chamar [**IWbemServices::CancelAsyncCall**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-cancelasynccall) para cancelar o sink de dentro de uma implementação de [**Indique**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjectsink-indicate) pode interferir no estado WMI. Para cancelar uma assinatura de evento, de definir um sinalizador e chamar **IWbemServices::CancelAsyncCall de** outro thread ou objeto. Para implementações que não estão relacionadas a um sink de evento, como recuperações de objeto, enum e consulta, você pode chamar novamente no WMI.
 
-As implementações do coletor devem processar a notificação de eventos dentro de 100 ms porque o thread WMI que entrega a notificação de eventos não pode realizar outro trabalho até que o objeto do coletor tenha concluído o processamento. Se a notificação exigir uma grande quantidade de processamento, o coletor poderá usar uma fila interna para que outro thread manipule o processamento.
+As implementações de sink devem processar a notificação de evento dentro de 100 MSEC porque o thread WMI que entrega a notificação de evento não pode fazer outro trabalho até que o objeto do sink tenha concluído o processamento. Se a notificação exigir uma grande quantidade de processamento, o sink poderá usar uma fila interna para outro thread para lidar com o processamento.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de código a seguir é uma implementação simples de um coletor de objeto. Este exemplo pode ser usado com [**IWbemServices:: ExecQueryAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execqueryasync) ou [**IWbemServices:: CreateInstanceEnumAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-createinstanceenumasync) para receber as instâncias retornadas:
+O exemplo de código a seguir é uma implementação simples de um sink de objeto. Este exemplo pode ser usado com [**IWbemServices::ExecQueryAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execqueryasync) ou [**IWbemServices::CreateInstanceEnumAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-createinstanceenumasync) para receber as instâncias retornadas:
 
 
 ```C++
@@ -168,8 +168,8 @@ HRESULT QuerySink::SetStatus(
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                                 |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                                           |
-| parâmetro<br/>                   | <dl> <dt>Wbemcli. h (incluir Wbemidl. h)</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Wbemuuid. lib</dt> </dl>                  |
+| Cabeçalho<br/>                   | <dl> <dt>Wbemcli.h (inclua Wbemidl.h)</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Wbemuuid.lib</dt> </dl>                  |
 | DLL<br/>                      | <dl> <dt>Fastprox.dll</dt> </dl>                  |
 
 
@@ -187,7 +187,7 @@ HRESULT QuerySink::SetStatus(
 [Definindo a segurança em uma chamada assíncrona](setting-security-on-an-asynchronous-call.md)
 </dt> <dt>
 
-[Recebendo eventos para a duração do seu aplicativo](receiving-events-for-the-duration-of-your-application.md)
+[Recebendo eventos durante a duração do aplicativo](receiving-events-for-the-duration-of-your-application.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
 description: Recupera um identificador de objeto para o objeto especificado associado ao processo especificado.
 ms.assetid: c7b371c3-02c0-4137-ad9d-dd07a74fe2a5
-title: Função ObFindHandleForObject (Ntosp. h)
+title: Função ObFindHandleForObject (Ntosp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Ntoskrnl.lib
 - Ntoskrnl.dll
-ms.openlocfilehash: 7ba87d05d4264f3bb160bae16053a338e38e2145
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 481def34e3e8656205eefe96058fe3c7558d2c898c7e05ddc78f9a67435c507e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826224"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119984146"
 ---
 # <a name="obfindhandleforobject-function"></a>Função ObFindHandleForObject
 
-\[Essa função é obsoleta e pode ser alterada ou indisponível em versões futuras do Windows. Evite usar essa função.\]
+\[Essa função é obsoleta e pode ser alterada ou não disponível em versões futuras do Windows. Evite usar essa função.\]
 
 Recupera um identificador de objeto para o objeto especificado associado ao processo especificado.
 
@@ -46,48 +46,48 @@ BOOLEAN WINAPI ObFindHandleForObject(
 
 <dl> <dt>
 
-*Processo* \[ do no\]
+*Processo* \[ Em\]
 </dt> <dd>
 
-O processo. Esse identificador é retornado pela função **IoGetCurrentProcess** ou **PsGetCurrentProcess** .
+O processo. Esse handle é retornado pela **função IoGetCurrentProcess** ou **PsGetCurrentProcess.**
 
 </dd> <dt>
 
-*Objeto* \[ do no\]
+*Objeto* \[ Em\]
 </dt> <dd>
 
-Um ponteiro para o objeto.
+Um ponteiro para o objeto .
 
 </dd> <dt>
 
-*Reserved1* \[ em, opcional\]
-</dt> <dd>
-
-Reservado.
-
-</dd> <dt>
-
-*Reserved2* \[ em, opcional\]
+*Reservado1* \[ in, opcional\]
 </dt> <dd>
 
 Reservado.
 
 </dd> <dt>
 
-*Identificador* \[ do fora\]
+*Reservado2* \[ in, opcional\]
+</dt> <dd>
+
+Reservado.
+
+</dd> <dt>
+
+*Manipular* \[ out\]
 </dt> <dd>
 
 O identificador de objeto.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-A função retornará **true** se uma correspondência for encontrada e **false** caso contrário.
+A função retornará **TRUE** se uma corresponder for encontrada e **FALSE caso contrário.**
 
 ## <a name="remarks"></a>Comentários
 
-Essa função está disponível em Ntoskrnl.exe e pode ser chamada somente do modo kernel. A biblioteca de importação correspondente está disponível por meio do WDK (Windows Driver Kit).
+Essa função está disponível no Ntoskrnl.exe e pode ser chamada somente no modo kernel. A biblioteca de importação correspondente está disponível por meio do WDK (Kit Windows Driver).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -95,10 +95,10 @@ Essa função está disponível em Ntoskrnl.exe e pode ser chamada somente do mo
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                    |
-| parâmetro<br/>                   | <dl> <dt>Ntosp. h</dt> </dl>      |
-| Biblioteca<br/>                  | <dl> <dt>Ntoskrnl. lib</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                    |
+| Cabeçalho<br/>                   | <dl> <dt>Ntosp.h</dt> </dl>      |
+| Biblioteca<br/>                  | <dl> <dt>Ntoskrnl.lib</dt> </dl> |
 
 
 

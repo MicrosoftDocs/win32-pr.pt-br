@@ -1,17 +1,17 @@
 ---
 description: Representa o tipo de origem do quadro.
 ms.assetid: 4A2B427E-E654-48BA-8BF4-16F1B1F8D266
-title: Atributo MF_DEVICESTREAM_ATTRIBUTE_FRAMESOURCE_TYPES (Mfapi. h)
+title: MF_DEVICESTREAM_ATTRIBUTE_FRAMESOURCE_TYPES atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8823a828a81290fe3b039c8959d694c62331622f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fcce2e7f90f4e5f23e99bac8e532455fac1309cc0e20177c5800d85f4580e20a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105763280"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120013186"
 ---
-# <a name="mf_devicestream_attribute_framesource_types-attribute"></a>\_Atributo de \_ \_ tipos de framery de atributo MF DEVICESTREAM \_
+# <a name="mf_devicestream_attribute_framesource_types-attribute"></a>Atributo \_ \_ \_ FRAMESOURCE TYPES MF DEVICESTREAM \_
 
 Representa o tipo de origem do quadro.
 
@@ -21,7 +21,7 @@ Representa o tipo de origem do quadro.
 
 ## <a name="remarks"></a>Comentários
 
-Esse valor desse atributo deve ser um bitmask de um ou mais valores da enumeração [**MFFrameSourceTypes**](/windows/desktop/api/mfapi/ne-mfapi-mfframesourcetypes) . Para dar suporte à compatibilidade com versões anteriores, quando esse atributo não está definido para um tipo de mídia, supõe-se que o valor é **MFFrameSourceTypes:: Color**.
+Esse valor desse atributo deve ser um bitmask de um ou mais valores da [**enumeração MFFrameSourceTypes.**](/windows/desktop/api/mfapi/ne-mfapi-mfframesourcetypes) Para dar suporte à compatibilidade com backward, quando esse atributo não é definido para um tipo de mídia, supõe-se que tenha o valor **MFFrameSourceTypes::Color**.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -29,9 +29,9 @@ Esse valor desse atributo deve ser um bitmask de um ou mais valores da enumeraç
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10, versão 1607\]<br/>                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2016\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 10, versão 1607 somente \[ para aplicativos da área de trabalho\]<br/>                          |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2016 somente aplicativos da área de trabalho\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 

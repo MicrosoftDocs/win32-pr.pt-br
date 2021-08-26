@@ -15,12 +15,12 @@ api_type:
 - DllExport
 api_location:
 - Winspool.drv
-ms.openlocfilehash: c524e3bcc79efc2207839b3d3a95051e2eb8bae5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e8a00b8b29ff5da4fb9b75af435c36f6313bd46d287408731eb3171d2e3b5001
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105798538"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119950056"
 ---
 # <a name="deleteprinterconnection-function"></a>Função DeletePrinterConnection
 
@@ -48,7 +48,7 @@ Ponteiro para uma cadeia de caracteres terminada em nulo que especifica o nome d
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for realizada com sucesso, o valor de retorno será um valor diferente de zero.
 

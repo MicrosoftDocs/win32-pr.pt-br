@@ -3,7 +3,7 @@ title: RBN_SPLITTERDRAG código de notificação (commctrl. h)
 description: Enviado por um controle rebar quando o usuário arrasta um divisor. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
 ms.assetid: 7827c971-6a92-452f-b961-1abe6ae66d2a
 keywords:
-- RBN_SPLITTERDRAG de código de notificação controles do Windows
+- RBN_SPLITTERDRAG código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fe0b2d3fc00433be9cd3011f2f2b24d515b8cbd0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e3de913b5815acbdf8b0a98d8131d0a6f071f157fd5bb78040422b6892d7fe09
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499538"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119984936"
 ---
 # <a name="rbn_splitterdrag-notification-code"></a>Código de notificação do RBN \_ SPLITTERDRAG
 
@@ -45,7 +45,7 @@ Ponteiro para uma estrutura [**NMREBARSPLITTER**](/windows/win32/api/commctrl/ns
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno para essa notificação não é usado.
 
@@ -55,9 +55,9 @@ O valor de retorno para essa notificação não é usado.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

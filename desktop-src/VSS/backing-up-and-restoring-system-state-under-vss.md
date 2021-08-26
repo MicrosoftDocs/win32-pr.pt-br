@@ -1,33 +1,33 @@
 ---
-description: Observação Este tópico se aplica somente ao Windows Server 2003 R2 e ao Windows Server 2003 com Service Pack 1 (SP1).
+description: observação este tópico se aplica somente ao Windows server 2003 R2 e Windows server 2003 com Service Pack 1 (SP1).
 ms.assetid: a192d9a7-1c65-4251-acb1-4df03ebfe910
-title: Fazendo backup e restaurando o estado do sistema no Windows Server 2003 R2 e no Windows Server 2003 SP1
+title: fazendo backup e restaurando o estado do sistema no Windows server 2003 R2 e no Windows server 2003 SP1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: de2fdb50e3f719a5208c2894f5659f927bcc922d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c4803acc5981cc74084789064bd276baa28b35c0ffe225e49d2b65ba5485e51a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922718"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120032946"
 ---
-# <a name="backing-up-and-restoring-system-state-in-windows-server-2003-r2-and-windows-server-2003-sp1"></a>Fazendo backup e restaurando o estado do sistema no Windows Server 2003 R2 e no Windows Server 2003 SP1
+# <a name="backing-up-and-restoring-system-state-in-windows-server-2003-r2-and-windows-server-2003-sp1"></a>fazendo backup e restaurando o estado do sistema no Windows server 2003 R2 e no Windows server 2003 SP1
 
 > [!Note]  
-> Este tópico se aplica somente ao Windows Server 2003 R2 e ao Windows Server 2003 com Service Pack 1 (SP1). Para obter informações sobre outras versões de sistema operacional, consulte [fazendo backup e restaurando o estado do sistema](locating-additional-system-files.md).
+> este tópico se aplica somente ao Windows server 2003 R2 e Windows server 2003 com Service Pack 1 (SP1). Para obter informações sobre outras versões de sistema operacional, consulte [fazendo backup e restaurando o estado do sistema](locating-additional-system-files.md).
 
  
 
 > [!Note]  
-> A Microsoft não fornece suporte técnico de desenvolvedor ou profissional de ti para implementar restaurações de estado do sistema online no Windows (todas as versões). Para obter informações sobre como usar as APIs e os procedimentos fornecidos pela Microsoft para implementar restaurações de estado do sistema online, consulte os recursos da Comunidade disponíveis no [msdn Community Center](https://msdn.microsoft.com/community/default.aspx).
+> a Microsoft não fornece suporte técnico de desenvolvedor ou profissional de ti para implementar restaurações de estado do sistema online em Windows (todas as versões). para obter informações sobre como usar as APIs e os procedimentos fornecidos pela Microsoft para implementar restaurações de estado do sistema online, consulte os recursos da comunidade disponíveis no [MSDN Community Center](https://msdn.microsoft.com/community/default.aspx).
 
  
 
-Ao executar um backup ou restauração do VSS, o estado do sistema do Windows é definido como sendo uma coleção de vários elementos principais do sistema operacional e seus arquivos. Esses elementos sempre devem ser tratados por operações de backup e restauração como uma unidade.
+ao executar um backup ou restauração do VSS, o estado do sistema Windows é definido como sendo uma coleção de vários elementos principais do sistema operacional e seus arquivos. Esses elementos sempre devem ser tratados por operações de backup e restauração como uma unidade.
 
-No Windows Server 2003 R2 e no Windows Server 2003 com SP1, não há nenhuma API do Windows criada para tratar esses objetos como um, portanto, é recomendável que os solicitantes tenham seu próprio objeto de estado do sistema para que possam processar esses componentes de forma consistente.
+no Windows server 2003 R2 e no Windows server 2003 com SP1, não há nenhuma API de Windows projetada para tratar esses objetos como um, portanto, é recomendável que os solicitantes tenham seu próprio objeto de estado do sistema para que possam processar esses componentes de forma consistente.
 
-Como o VSS é executado em versões do Windows em que o WFP ( [*proteção de arquivo do sistema*](vssgloss-s.md) ) protege os arquivos de estado do sistema contra corrupção, são necessárias etapas especiais para fazer backup e restaurar o estado do sistema.
+como o VSS é executado em versões do Windows em que o WFP ( [*proteção de arquivo do sistema*](vssgloss-s.md) ) protege os arquivos de estado do sistema contra corrupção, são necessárias etapas especiais para fazer backup e restaurar o estado do sistema.
 
 O estado do sistema consiste no seguinte:
 
@@ -35,7 +35,7 @@ O estado do sistema consiste no seguinte:
 -   O Active Directory (ADSI) (em sistemas que são controladores de domínio)
 -   A pasta de volume do sistema (SYSVOL) que é replicada pelo FRS (serviço de replicação de arquivo) (em sistemas que são controladores de domínio)
 -   Servidor de certificado (em sistemas que fornecem autoridade de certificação)
--   Banco de dados de cluster (em sistemas que são um nó de um cluster do Windows)
+-   banco de dados de cluster (em sistemas que são um nó de um cluster Windows)
 -   Serviço de Registro
 -   Banco de dados de registro de classe COM+
 
@@ -67,11 +67,11 @@ Os arquivos do sistema e de inicialização incluem:
 -   The WFP service catalog file must be backed up prior to backing up the WFP files, and it is found under: <dl> % SystemRoot% \\ System32 \\ CatRoot \\ {F750E6C3-38EE-11D1-85E5-00C04FC295EE} </dl>
 -   Todos os arquivos protegidos pela [*proteção de arquivo do sistema*](vssgloss-s.md) e enumerados pelo [**SfcGetNextProtectedFile**](/windows/win32/api/sfc/nf-sfc-sfcgetnextprotectedfile) (consulte operações de restauração do VSS de arquivos protegidos por WFP) -   os arquivos de configuração do contador de desempenho: <dl> % SystemRoot% \\ System32 \\ perf? 00?. DATs  
     % SystemRoot% \\ System32 \\ perf? 00?. Bak </dl>
--   Se estiver presente, o arquivo da metabase do IIS (servidor de informações da Internet) deverá ser incluído nas operações de backup e restauração porque ele contém o estado usado pelo Microsoft Exchange e outros aplicativos de rede. Esse arquivo pode ser encontrado em: <dl> % SystemRoot% \\ System32 \\ inetsrv \\ metabase. bin </dl>
+-se estiver presente, o arquivo da metabase do IIS (servidor de informações da Internet) deverá ser incluído nas operações de backup e restauração porque ele contém o estado usado pelo Microsoft Exchange e outros aplicativos de rede. Esse arquivo pode ser encontrado em: <dl> % SystemRoot% \\ System32 \\ inetsrv \\ metabase. bin </dl>
 -   Se o backup do arquivo da metabase do IIS for feito, as chaves para permitir que os aplicativos leiam determinadas entradas criptografadas devem ser restauradas como parte do estado do sistema. Os arquivos podem ser encontrados em: <dl> % SystemRoot% \\ System32 \\ Microsoft \\ Protect\\\*  
     % AllUsersProfile% \\ Microsoft \\ crypto \\ RSA \\ MachineKeys\\\* </dl>
 -Ao fazer backup de arquivos de inicialização e do sistema, pode ser necessário determinar o dispositivo de inicialização do dos fazendo o seguinte: 1. localize a partição do sistema em **HKEY \_ local \_ Machine** \\ **System** \\ **Setup** \\ **SystemPartition**.
-    2.  Passar a variável de ambiente raiz do sistema (% SystemRoot%) para o Gerenciador de montagem para obter o nome do dispositivo NT.
+    2.  Passe a variável de ambiente raiz do sistema (% SystemRoot%) para o Gerenciador de montagem para obter o nome do dispositivo NT.
 
 ## <a name="vss-restore-operations-of-wfp-protected-files"></a>Operações de restauração do VSS de arquivos protegidos por WFP
 
@@ -87,7 +87,7 @@ Esse valor deve ser definido antes de qualquer inicialização em que os arquivo
 
 O diretório dllcache do sistema também deve ser submetido a backup ou restaurado, com backup e restauração do volume de inicialização, e está localizado examinando a entrada de registro **reg \_ Expand \_ sz** :
 
-**HKEY \_ \_Computador local** \\ **software** \\ **Microsoft** \\ **Windows NT** \\ **CurrentVersion** \\ **Winlogon** \\ **SfcDllCache**<dl> <dt>
+**HKEY \_ \_computador LOCAL** \\ **Software** \\ **Microsoft** \\ **Windows NT** \\ **CurrentVersion** \\ **WinLogon** \\ **SfcDllCache**<dl> <dt>
 
                   Data type
 </dt> <dd>                  REG \_ expande \_ sz</dd> </dl>
@@ -107,7 +107,7 @@ NtDll.dll
 Smss.exe  
 </dl>
 
-Esses arquivos ajudam no processo de restauração dos arquivos WFP e, como tal, há uma dependência circular. Atualmente, não há como restaurar esses arquivos, exceto para reinstalar o Windows.
+Esses arquivos ajudam no processo de restauração dos arquivos WFP e, como tal, há uma dependência circular. Atualmente, não há como restaurar esses arquivos, exceto para reinstalar Windows.
 
  
 

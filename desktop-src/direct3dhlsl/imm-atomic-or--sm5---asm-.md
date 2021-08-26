@@ -4,12 +4,12 @@ description: A bit ou a memória atômicas imediatas. Retorna o valor na memóri
 ms.assetid: 0ACE977D-5D0E-4E9C-A49F-B81D789B0D43
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e2bc3b9afd2ba9f4dc63a8fb5c5818c1121c7ec6
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 4e4188e8b79cdf4d782ebc926645a4279d08c9682fd0ae254c2ce37c5fbcf46a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104006908"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119982096"
 ---
 # <a name="imm_atomic_or-sm5---asm"></a>IMM \_ Atomic \_ ou (SM5-ASM)
 
@@ -61,7 +61,7 @@ Essa instrução se aplica aos seguintes estágios de sombreador:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | X     | X       |
 
@@ -73,7 +73,7 @@ Como UAVs estão disponíveis em todos os estágios do sombreador para o Direct3
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 

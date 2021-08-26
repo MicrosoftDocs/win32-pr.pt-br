@@ -1,15 +1,15 @@
 ---
-description: O método RegionChange exibe uma caixa de diálogo do sistema que permite ao usuário alterar a região associada à unidade de DVD.
+description: O método RegionChange exibe uma caixa de diálogo do sistema que permite que o usuário altere a região associada à unidade de DVD.
 ms.assetid: 67b0ec96-adcb-4d0b-9f8c-38ce67c71cd3
-title: Método RegionChange (Segment. h)
+title: Método RegionChange (Segment.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 349f194d8863545828d3f71e938c302d8b0510cb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 93e5aa7a1318b3b8abef35193f19983a75814046dbadfbb96b7c70b8d10e51d4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105782837"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119904596"
 ---
 # <a name="regionchange-method"></a>Método RegionChange
 
@@ -18,7 +18,7 @@ ms.locfileid: "105782837"
 
  
 
-O `RegionChange` método exibe uma caixa de diálogo do sistema que permite ao usuário alterar a região associada à unidade de DVD.
+O método exibe uma caixa de diálogo do sistema que permite que o usuário altere a `RegionChange` região associada à unidade de DVD.
 
 ``` syntax
 MSWebDVD.RegionChange()
@@ -30,7 +30,7 @@ Sem valor de retorno.
 
 ## <a name="remarks"></a>Comentários
 
-A região de uma unidade de DVD só pode ser alterada cinco vezes.
+A região de uma unidade de DVD pode ser alterada apenas cinco vezes.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,7 +38,7 @@ A região de uma unidade de DVD só pode ser alterada cinco vezes.
 
 | Requisito | Valor |
 |-------------------|--------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Segment. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Segment.h</dt> </dl> |
 
 
 

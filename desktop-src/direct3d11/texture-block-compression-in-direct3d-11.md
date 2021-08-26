@@ -4,12 +4,12 @@ description: O suporte para texturas de compactação de bloco (BC) foi estendid
 ms.assetid: E0735D4E-9C0F-45DC-854A-C27EB8367D86
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f80a22c97c8a706a3825abfb4ac2b5133c1a9beb
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: b52c2c764c0f9dca4021dcb14187db67e697cd7155701294a9c6214b4543d00b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104084587"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120027796"
 ---
 # <a name="texture-block-compression-in-direct3d-11"></a>Compactação de bloco de textura no Direct3D 11
 
@@ -30,32 +30,32 @@ Para obter informações mais específicas sobre o suporte do algoritmo de compa
 | Cor de três canais com canal alfa       | Três canais de cores (5 bits:6 bits:5 bits) com 8 bits de alfa          | BC3                | Direct3D 9.1                    |
 | Cor de um canal                            | Um canal de cor (8 bits)                                                | BC4                | Direct3D 10                     |
 | Cor de dois canais                            | Dois canais de cores (8 bits:8 bits)                                        | BC5                | Direct3D 10                     |
-| Cor de alto alcance dinâmico (HDR) de três canais | Três canais de cor (16 bits: 16 bits: 16 bits) no ponto flutuante "metade"\* | BC6H               | Direct3D 11                     |
+| Cor de alto alcance dinâmico (HDR) de três canais | Três canais de cores (16 bits:16 bits:16 bits) no ponto flutuante "metade"\* | BC6H               | Direct3D 11                     |
 | Cor de três canais, canal alfa opcional  | Três canais de cores (4 a 7 bits por canal) com 0 a 8 bits de alfa  | BC7                | Direct3D 11                     |
 
 
 
  
 
-\*O ponto flutuante "metade" é um valor de 16 bits que consiste em um bit de sinal opcional, um expoente com tendência de 5 bits e um mantissa de 10 ou 11 bits.
+\*O ponto flutuante "Half" é um valor de 16 bits que consiste em um bit de sinal opcional, um expoente com desvio de 5 bits e uma mantissa de 10 ou 11 bits.
 
 ## <a name="bc1-bc2-and-b3-formats"></a>Formatos BC1, BC2 e B3
 
-Os formatos BC1, BC2 e BC3 são equivalentes aos formatos de compactação de textura 9 DXTn do Direct3D e são iguais aos formatos BC1, BC2 e BC3 correspondentes do Direct3D 10. O suporte para esses três formatos é exigido por todos os níveis de recurso (o nível de recurso do D3D \_ \_ \_ 9 \_ 1, nível de recurso do D3D \_ \_ \_ 9 \_ 2, nível de recurso do D3D \_ \_ \_ 9 \_ 3, nível de recurso do D3D \_ \_ \_ 10 \_ 0, \_ nível de recurso do D3D \_ \_ 10 \_ 1 e nível de recurso do D3D \_ \_ \_ 11 \_ 0).
+Os formatos BC1, BC2 e BC3 são equivalentes aos formatos de compactação de textura 9 DXTn do Direct3D e são iguais aos formatos BC1, BC2 e BC3 correspondentes do Direct3D 10. O suporte para esses três formatos é necessário para todos os níveis de recurso (D3D \_ FEATURE \_ LEVEL \_ 9 \_ 1, D3D \_ FEATURE LEVEL \_ \_ 9 \_ 2, \_ D3D FEATURE LEVEL \_ \_ \_ 9 3, D3D \_ FEATURE LEVEL \_ \_ 10 \_ 0, D3D \_ FEATURE LEVEL \_ \_ 10 1 e \_ D3D \_ FEATURE LEVEL \_ \_ 11 \_ 0).
 
 
 
 | Formato de compactação de bloco | Formato DXGI                                                                           | Formato equivalente do Direct3D 9                               | Bytes por bloco de pixels 4x4 |
 |--------------------------|---------------------------------------------------------------------------------------|------------------------------------------------------------|---------------------------|
-| BC1                      | \_Formato dxgi \_ BC1 \_ UNORM, \_ formato dxgi \_ BC1 \_ UNORM \_ sRGB, \_ formato dxgi \_ BC1 \_ tipo | D3DFMT \_ DXT1, FOURCC = "DXT1"                                | 8                         |
-| BC2                      | \_Formato dxgi \_ BC2 \_ UNORM, \_ formato dxgi \_ BC2 \_ UNORM \_ sRGB, \_ formato dxgi \_ BC2 \_ tipo | D3DFMT \_ DXT2 \* , FOURCC = "DXT2", D3DFMT \_ DXT3, FOURCC = "DXT3" | 16                        |
-| BC3                      | \_Formato dxgi \_ BC3 \_ UNORM, \_ formato dxgi \_ BC3 \_ UNORM \_ sRGB, \_ formato dxgi \_ BC3 \_ tipo | D3DFMT \_ DXT4 \* , FOURCC = "DXT4", D3DFMT \_ DXT5, FOURCC = "DXT5" | 16                        |
+| BC1                      | FORMATO DXGI \_ \_ BC1 \_ UNORM, FORMATO DXGI \_ \_ BC1 \_ UNORM \_ SRGB, FORMATO DXGI \_ \_ BC1 \_ SEM TIPO | D3DFMT \_ DXT1, FourCC="DXT1"                                | 8                         |
+| BC2                      | FORMATO DXGI \_ \_ BC2 \_ UNORM, FORMATO DXGI \_ \_ BC2 \_ UNORM \_ SRGB, FORMATO DXGI \_ \_ BC2 \_ SEM TIPO | D3DFMT \_ DXT2 \* , FourCC="DXT2", D3DFMT \_ DXT3, FourCC="DXT3" | 16                        |
+| BC3                      | FORMATO DXGI \_ \_ BC3 \_ UNORM, FORMATO DXGI \_ \_ BC3 \_ UNORM \_ SRGB, FORMATO DXGI \_ \_ BC3 \_ SEM TIPO | D3DFMT \_ DXT4 \* , FourCC="DXT4", D3DFMT \_ DXT5, FourCC="DXT5" | 16                        |
 
 
 
  
 
-\*Esses esquemas de compactação (DXT2 e DXT4) não fazem distinção entre os formatos alfa do Direct3D 9 e os formatos alfa padrão. Essa distinção deve ser processada pelos sombreadores programáveis no momento da renderização.
+\*Esses esquemas de compactação (DXT2 e DXT4) não fazem distinção entre os formatos alfa pré-multiplicados do Direct3D 9 e os formatos alfa padrão. Essa distinção deve ser processada pelos sombreadores programáveis no momento da renderização.
 
 ## <a name="bc4-and-bc5-formats"></a>Formatos BC4 e BC5
 
@@ -63,8 +63,8 @@ Os formatos BC1, BC2 e BC3 são equivalentes aos formatos de compactação de te
 
 | Formato de compactação de bloco | Formato DXGI                                                                     | Formato equivalente do Direct3D 9 | Bytes por bloco de pixels 4x4 |
 |--------------------------|---------------------------------------------------------------------------------|------------------------------|---------------------------|
-| BC4                      | \_Formato dxgi \_ BC4 \_ UNORM, \_ formato dxgi \_ BC4 \_ SNORM, \_ formato dxgi \_ BC4 \_ tipo | FourCC="ATI1"                | 8                         |
-| BC5                      | \_Formato dxgi \_ BC5 \_ UNORM, \_ formato dxgi \_ BC5 \_ SNORM, \_ formato dxgi \_ BC5 \_ tipo | FourCC="ATI2"                | 16                        |
+| BC4                      | FORMATO DXGI \_ \_ BC4 \_ UNORM, FORMATO DXGI \_ \_ BC4 \_ SNORM, FORMATO DXGI \_ \_ BC4 \_ SEM TIPO | FourCC="ATI1"                | 8                         |
+| BC5                      | FORMATO DXGI \_ \_ BC5 \_ UNORM, FORMATO DXGI \_ \_ BC5 \_ SNORM, FORMATO DXGI \_ \_ BC5 \_ SEM TIPO | FourCC="ATI2"                | 16                        |
 
 
 
@@ -78,7 +78,7 @@ Para obter mais informações sobre esse formato, consulte a documentação do [
 
 | Formato de compactação de bloco | Formato DXGI                                                                      | Formato equivalente do Direct3D 9 | Bytes por bloco de pixels 4x4 |
 |--------------------------|----------------------------------------------------------------------------------|------------------------------|---------------------------|
-| BC6H                     | \_Formato dxgi \_ BC6H \_ UF16, \_ formato dxgi \_ BC6H \_ SF16, \_ formato dxgi \_ BC6H \_ tipo | N/D                          | 16                        |
+| BC6H                     | FORMATO DXGI \_ \_ BC6H \_ UF16, FORMATO DXGI \_ \_ BC6H \_ SF16, FORMATO DXGI \_ \_ BC6H \_ SEM TIPO | N/D                          | 16                        |
 
 
 
@@ -94,7 +94,7 @@ Para obter mais informações sobre esse formato, consulte a documentação do [
 
 | Formato de compactação de bloco | Formato DXGI                                                                           | Formato equivalente do Direct3D 9 | Bytes por bloco de pixels 4x4 |
 |--------------------------|---------------------------------------------------------------------------------------|------------------------------|---------------------------|
-| BC7                      | \_Formato dxgi \_ BC7 \_ UNORM, \_ formato dxgi \_ BC7 \_ UNORM \_ sRGB, \_ formato dxgi \_ BC7 \_ tipo | N/D                          | 16                        |
+| BC7                      | FORMATO DXGI \_ \_ BC7 \_ UNORM, FORMATO DXGI \_ \_ BC7 \_ UNORM \_ SRGB, FORMATO DXGI \_ \_ BC7 \_ SEM TIPO | N/D                          | 16                        |
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: 509188e2-28af-4915-bc76-ee451133398f
 title: Identificador HRECOCONTEXT (recapitular. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 13ef2b6f629587de84f831fd32a31f42a208c024
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b9be012cc624553ae9573dc361c364d4ef61ec4c6d72fbf7c3eb2168c3ccb290
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827197"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119935536"
 ---
 # <a name="hrecocontext-handle"></a>Identificador de HRECOCONTEXT
 
@@ -70,9 +70,9 @@ A seguir estão as funções **HRECOCONTEXT**
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                        |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/>                        |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                            |
-| parâmetro<br/>                   | <dl> <dt>Recapitular. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Recapitular. h</dt> </dl> |
 
 
 
