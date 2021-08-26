@@ -1,5 +1,5 @@
 ---
-description: O compilador Managed Object Format (MOF) dá suporte a dois estilos de comentário usando dois estilos diferentes de delimitadores de comentário.
+description: O compilador formato MOF (MOF) dá suporte a dois estilos de comentário usando dois estilos diferentes de delimitadores de comentário.
 ms.assetid: 5ab71b45-7ed1-44c4-8710-6b833b0afb80
 ms.tgt_platform: multiple
 title: Criando um comentário
@@ -19,24 +19,24 @@ ms.locfileid: "120097336"
 ---
 # <a name="creating-a-comment"></a>Criando um comentário
 
-O compilador Managed Object Format (MOF) dá suporte a dois estilos de comentário usando dois estilos diferentes de delimitadores de comentário.
+O compilador formato MOF (MOF) dá suporte a dois estilos de comentário usando dois estilos diferentes de delimitadores de comentário.
 
-A tabela a seguir lista os delimitadores usados para comentários e o efeito que os delimitadores têm no código.
+A tabela a seguir lista os delimitadores que são usados para comentários e o efeito que os delimitadores têm no código.
 
 
 
 | Delimitador   | Marcas                                                                                         |
 |-------------|-----------------------------------------------------------------------------------------------|
 | //          | Início de um comentário que termina no final da linha.                                    |
-| /\* E \*/ | Início e fim de um comentário que pode abranger várias linhas ou abranger apenas uma parte de uma linha. |
+| /\* e \*/ | Início e fim de um comentário que pode abranger várias linhas ou apenas uma parte de uma linha. |
 
 
 
  
 
-Assim como nas linguagens de programação C e C++, você deve usar o delimitador // somente com comentários de linha única, mas usar os delimitadores /e/com comentários de linha única ou de várias \* \* linhas.
+Como nas linguagens de programação C e C++, você deve usar o delimitador//somente com comentários de linha única, mas usar os delimitadores/ \* e \* /com comentários de linha única ou de várias linhas.
 
-O exemplo de código a seguir descreve os dois estilos delimiter.
+O exemplo de código a seguir descreve os dois estilos de delimitador.
 
 ``` syntax
 int32 MyProp = 2; // This is a comment until the line ends.
@@ -47,7 +47,7 @@ int32 /* This is a comment. */ MyProp = 2;
 
 <dl> <dt>
 
-[Projetando classes Managed Object Format (MOF)](designing-managed-object-format--mof--classes.md)
+[Criando classes formato MOF (MOF)](designing-managed-object-format--mof--classes.md)
 </dt> </dl>
 
  

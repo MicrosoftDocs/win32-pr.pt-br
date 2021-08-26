@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: Construtor de instância (cadeia de caracteres, Cadeia de caracteres)'
-title: Construtor de instância (cadeia de caracteres, Cadeia de caracteres)
+description: 'Saiba mais sobre: Construtor de instância (cadeia de caracteres, cadeia de caracteres)'
+title: Construtor de instância (cadeia de caracteres, cadeia de caracteres)
 TOCTitle: Instance constructor (String, String)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Instance.#ctor(System.String,System.String)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.instance.instance(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 02cb629cdfaba17ce9a137b52eb1a6d6fdbaa56b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2d93a5799a646a90688261bdd55bc9dfe929ef6bd074a51e15cabdcee768ffa2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296495"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120116436"
 ---
-# <a name="instance-constructor-string-string"></a>Construtor de instância (cadeia de caracteres, Cadeia de caracteres)
+# <a name="instance-constructor-string-string"></a>Construtor de instância (cadeia de caracteres, cadeia de caracteres)
 
-Inicializa uma nova instância da classe de instância. O JET_INSTANCE subjacente é alocado, mas não inicializado.
+Inicializa uma nova instância da classe Instance. O valor JET_INSTANCE subjacente é alocado, mas não inicializado.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -59,16 +59,16 @@ public Instance(
 #### <a name="parameters"></a>Parâmetros
 
   - name  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
-    O nome da instância. Essa cadeia de caracteres deve ser exclusiva em um determinado processo que hospeda o mecanismo de banco de dados.
+    O nome da instância. Essa cadeia de caracteres deve ser exclusiva dentro de um determinado processo que hospeda o mecanismo de banco de dados.
 
 <!-- end list -->
 
   - displayName  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
-    Um nome de exibição para a instância. Isso será usado em entradas do EventLog.
+    Um nome de exibição para a instância. Isso será usado em entradas de eventlog.
 
 ## <a name="see-also"></a>Confira também
 
@@ -80,4 +80,4 @@ public Instance(
 
 [Sobrecarga de instância](./instance-constructor.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

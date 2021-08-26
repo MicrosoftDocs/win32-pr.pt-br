@@ -63,12 +63,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: d25d168b85a79c5212afc719ce6ec83ca9780395
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8f5c23b5845dcceaf1ec8b7ad813596308a5625c9446cc18bfc5b82e9e73494e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104296804"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120046446"
 ---
 # <a name="msvm_ps2mouse-class"></a>\_Classe Msvm Ps2Mouse
 
@@ -155,7 +155,7 @@ A classe **Msvm \_ Ps2Mouse** tem esses métodos.
 | **OnlineDevice**                                                 | Não há suporte para o método.<br/>                                                              |
 | **QuiesceDevice**                                                | Não há suporte para o método.<br/>                                                              |
 | [**RequestStateChange**](msvm-ps2mouse-requeststatechange.md)   | Solicita uma alteração de estado.<br/>                                                                   |
-| [**Redefinir**](msvm-ps2mouse-reset.md)                             | Redefine o dispositivo.<br/>                                                                         |
+| [**Definido**](msvm-ps2mouse-reset.md)                             | Redefine o dispositivo.<br/>                                                                         |
 | **Restaurarproperties**                                            | Não há suporte para o método.<br/>                                                              |
 | **Salvarproperties**                                               | Não há suporte para o método.<br/>                                                              |
 | [**Setbuttonstate**](setbuttonstate-msvm-ps2mouse.md)           | Define o estado atual do botão de dispositivo especificado.<br/>                                     |
@@ -824,13 +824,13 @@ O último estado solicitado ou desejado para o elemento. Essa propriedade é her
 **Resolução**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A resolução de rastreamento do dispositivo apontador, em contagens por polegada. Essa propriedade é herdada do [**CIM \_ PointingDevice**](/windows/desktop/CIMWin32Prov/cim-pointingdevice).
+A resolução de acompanhamento do dispositivo apontador, em contagens por polegada. Essa propriedade é herdada de [**CIM \_ PointingDevice.**](/windows/desktop/CIMWin32Prov/cim-pointingdevice)
 
 </dd> <dt>
 
@@ -843,33 +843,33 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O status atual do objeto. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement), mas não é usada.
+O status atual do objeto. Essa propriedade é herdada [**de CIM \_ ManagedSystemElement,**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)mas não é usada.
 
 </dd> <dt>
 
 **StatusDescriptions**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Cadeias de caracteres que descrevem os vários valores de matriz de [**OperationalStatus**](msvm-bioselement.md) . Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement) e é sempre definida como "OK".
+Cadeias de caracteres que descrevem os [**vários valores de matriz OperationalStatus.**](msvm-bioselement.md) Essa propriedade é herdada de [**\_ ManagedSystemElement do CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement) e é sempre definida como "OK".
 
 </dd> <dt>
 
 **StatusInfo**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O estado atual do dispositivo lógico. Essa propriedade é herdada [**do \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
+O estado atual do dispositivo lógico. Essa propriedade é herdada [**de CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
 
 </dd> <dt>
 
@@ -882,14 +882,14 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **maxlen** (256)
+Qualificadores: **MaxLen** (256)
 </dt> </dl>
 
-O nome da classe de criação do sistema de escopo. Essa propriedade é herdada [**de \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice).
+O nome da classe de criação do sistema de scoping. Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)
 
 </dd> <dt>
 
-**SystemName**
+**Systemname**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -898,55 +898,55 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **maxlen** (256)
+Qualificadores: **MaxLen** (256)
 </dt> </dl>
 
-O nome do sistema de escopo. Esse valor corresponde ao valor da propriedade [**Name**](msvm-computersystem.md) da classe **Msvm \_ ComputerSystem** para a máquina virtual de escopo. Essa propriedade é herdada [**de \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice).
+O nome do sistema de scoping. Esse valor corresponde ao valor da propriedade [**Name**](msvm-computersystem.md) da **classe Msvm \_ ComputerSystem** para a máquina virtual de scoping. Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)
 
 </dd> <dt>
 
 **TimeOfLastStateChange**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A data ou a hora em que o estado habilitado do elemento foi alterado pela última vez. Se o estado do elemento não tiver sido alterado e essa propriedade for populada, ela deverá ser definida como um valor de intervalo de 0. Se uma alteração de estado foi solicitada, mas rejeitada ou ainda não processada, a propriedade não deve ser atualizada. Essa propriedade é herdada do [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)).
+A data ou a hora em que o estado habilitado do elemento foi alterado pela última vez. Se o estado do elemento não tiver sido alterado e essa propriedade for populada, ela deverá ser definida como um valor de intervalo 0. Se uma alteração de estado tiver sido solicitada, mas rejeitada ou ainda não processada, a propriedade não deverá ser atualizada. Essa propriedade é herdada de [**CIM \_ EnabledLogicalElement.**](/previous-versions//cc136818(v=vs.85))
 
 </dd> <dt>
 
 **TotalPowerOnHours**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O número total de horas em que este dispositivo foi ligado. Essa propriedade é herdada [**do \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
+O número total de horas que esse dispositivo foi ligado. Essa propriedade é herdada [**de CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
 
 </dd> <dt>
 
 **TransitioningToState**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica o estado de destino para o qual a instância está em transição. Essa propriedade é herdada do [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))e é sempre definida como **NULL**.
+Indica o estado de destino para o qual a instância está em transição. Essa propriedade é herdada [**de CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))e é sempre definida como **Null.**
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-O acesso à classe **Msvm \_ Ps2Mouse** pode ser restringido pela filtragem do UAC. Para obter mais informações, consulte [controle de conta de usuário e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+O acesso à **classe Msvm \_ Ps2Mouse** pode ser restrito pela Filtragem de UAC. Para obter mais informações, consulte [Controle de conta de usuário e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -954,10 +954,10 @@ O acesso à classe **Msvm \_ Ps2Mouse** pode ser restringido pela filtragem do U
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -966,10 +966,10 @@ O acesso à classe **Msvm \_ Ps2Mouse** pode ser restringido pela filtragem do U
 
 <dl> <dt>
 
-[**\_POINTINGDEVICE CIM**](cim-pointingdevice.md)
+[**CIM \_ PointingDevice**](cim-pointingdevice.md)
 </dt> <dt>
 
-[**\_POINTINGDEVICE CIM**](/windows/desktop/CIMWin32Prov/cim-pointingdevice)
+[**CIM \_ PointingDevice**](/windows/desktop/CIMWin32Prov/cim-pointingdevice)
 </dt> <dt>
 
 [Classes de entrada](input-classes.md)

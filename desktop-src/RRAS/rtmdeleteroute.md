@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 310364bdb6e6ba7daf285316fcaaf16884e53929
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0efe2e34345cc335b8214b781da4dce608dddcc4c2f77e80d8c86f76007c2855
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918675"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120073846"
 ---
 # <a name="rtmdeleteroute-function"></a>Função RtmDeleteRoute
 
-\[Essa API foi substituída pela API do [Gerenciador de tabela de roteamento versão 2](about-routing-table-manager-version-2.md) e não estará disponível além do Windows Server 2003. Os aplicativos devem usar a API da versão 2 do Gerenciador de tabela de roteamento.\]
+\[esta api foi substituída pela api do [gerenciador de tabela de roteamento versão 2](about-routing-table-manager-version-2.md) e não estará disponível além do Windows Server 2003. Os aplicativos devem usar a API da versão 2 do Gerenciador de tabela de roteamento.\]
 
 A função **RtmDeleteRoute** exclui uma entrada de rota.
 
@@ -99,7 +99,7 @@ Esse parâmetro é opcional. Se o chamador especificar **NULL** para esse parâm
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for realizada com sucesso, o valor de retorno **não será um \_ erro**.
 
@@ -131,7 +131,7 @@ A função gera uma mensagem de alteração de rota se a melhor rota para uma re
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                          |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                               |
 | Fim do suporte do servidor<br/>    | Windows Server 2003<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>RTM. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>RTM. h</dt> </dl>   |
 | Biblioteca<br/>                  | <dl> <dt>RTM. lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Rtm.dll</dt> </dl> |
 

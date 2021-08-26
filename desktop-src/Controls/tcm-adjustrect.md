@@ -3,7 +3,7 @@ title: Mensagem de TCM_ADJUSTRECT (commctrl. h)
 description: Calcula a área de exibição de um controle guia, dado um retângulo de janela, ou calcula o retângulo da janela que corresponderia a uma área de exibição especificada. Você pode enviar essa mensagem explicitamente ou usando a macro TabCtrl \_ AdjustRect.
 ms.assetid: 2f14201a-e4a3-4ae5-b9cf-4a674c52f24a
 keywords:
-- Controles de TCM_ADJUSTRECT de mensagens do Windows
+- controles de Windows de mensagem de TCM_ADJUSTRECT
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c9c1612a4f6c2fc436f858807fca59112c376a35
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ba09a88f12a25b87f507d70961a816412f2679da0fb9e1cb6ed6c760ecca320e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105749304"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120105006"
 ---
 # <a name="tcm_adjustrect-message"></a>\_Mensagem ADJUSTRECT de TCM
 
@@ -43,7 +43,7 @@ Ponteiro para uma estrutura [**Rect**](/previous-versions//dd162897(v=vs.85)) qu
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sem valor de retorno.
 
@@ -57,9 +57,9 @@ Essa mensagem se aplica somente a controles de guia que estão na parte superior
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

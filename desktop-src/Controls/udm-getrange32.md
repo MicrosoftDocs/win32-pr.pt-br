@@ -1,9 +1,9 @@
 ---
-title: Mensagem de UDM_GETRANGE32 (commctrl. h)
-description: Recupera o intervalo de 32 bits de um controle acima-abaixo.
+title: UDM_GETRANGE32 mensagem (Commctrl.h)
+description: Recupera o intervalo de 32 bits de um controle de cima para baixo.
 ms.assetid: a94b50c9-cd2f-430d-875f-720e51f544f1
 keywords:
-- Controles de UDM_GETRANGE32 de mensagens do Windows
+- UDM_GETRANGE32 controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ca418cd08dc4c81b3ff734d74f3ca9deeef7d848
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 72078327b7a580768321f14c1d512e097561ae3441667497a822dc8a8a28b4e2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455004"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120077096"
 ---
-# <a name="udm_getrange32-message"></a>\_Mensagem de GETRANGE32 UDM
+# <a name="udm_getrange32-message"></a>Mensagem GETRANGE32 do UDM \_
 
-Recupera o intervalo de 32 bits de um controle acima-abaixo.
+Recupera o intervalo de 32 bits de um controle de cima para baixo.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -32,20 +32,20 @@ Recupera o intervalo de 32 bits de um controle acima-abaixo.
 *wParam* 
 </dt> <dd>
 
-Ponteiro para um inteiro assinado que recebe o limite inferior do intervalo de controle acima-abaixo. Esse parâmetro pode ser **nulo**.
+Ponteiro para um inteiro com sinal que recebe o limite inferior do intervalo de controle para cima para baixo. Esse parâmetro pode ser **NULL.**
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Ponteiro para um inteiro assinado que recebe o limite superior do intervalo de controle acima-abaixo. Esse parâmetro pode ser **nulo**.
+Ponteiro para um inteiro com sinal que recebe o limite superior do intervalo de controle para cima para baixo. Esse parâmetro pode ser **NULL.**
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O valor retornado para esta mensagem não é usado.
+O valor de retorno para essa mensagem não é usado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ O valor retornado para esta mensagem não é usado.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

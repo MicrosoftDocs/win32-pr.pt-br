@@ -1,21 +1,21 @@
 ---
-description: Especifica a taxa média de bits do fluxo de áudio codificado, em bits por segundo. Essa propriedade só se aplica a constantes de taxa de bits constante (CBR) e a taxa de bits variável (VBR).
+description: Especifica a taxa média de bits do fluxo de áudio codificado, em bits por segundo. Essa propriedade se aplica somente aos modos de codificação CBR (taxa de bits constante) e VBR (taxa de bits variável).
 ms.assetid: 9513ad64-2de9-497d-86ce-46cfdf87e0f8
-title: Propriedade AVEncAudioMeanBitRate (Codecapi. h)
+title: Propriedade AVEncAudioMeanBitRate (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 75e311686e6113003593c8a6dbe02a9fca1f30b9
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: ac7b0d1ad6cfde3aee4ec9c747feb8d692c3917332808e40e3d5f76e3d01ce21
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104010048"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120079466"
 ---
 # <a name="avencaudiomeanbitrate-property"></a>Propriedade AVEncAudioMeanBitRate
 
-Especifica a taxa média de bits do fluxo de áudio codificado, em bits por segundo. Essa propriedade só se aplica a constantes de taxa de bits constante (CBR) e a taxa de bits variável (VBR).
+Especifica a taxa média de bits do fluxo de áudio codificado, em bits por segundo. Essa propriedade se aplica somente aos modos de codificação CBR (taxa de bits constante) e VBR (taxa de bits variável).
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="data-type"></a>Tipo de dados
 
@@ -35,9 +35,9 @@ Os codificadores podem implementar essa propriedade como um conjunto enumerado o
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos do Windows 2000 Professional \[ Desktop aplicativos \| UWP\]<br/>                     |
-| Servidor mínimo com suporte<br/> | Aplicativos da área de trabalho do Windows 2000 Server aplicativos \[ \| UWP\]<br/>                           |
-| parâmetro<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional aplicativos \[ UWP da área de \| trabalho\]<br/>                     |
+| Servidor mínimo com suporte<br/> | Windows aplicativos da área de trabalho do servidor 2000 \[ \| aplicativos UWP\]<br/>                           |
+| Cabeçalho<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -45,10 +45,10 @@ Os codificadores podem implementar essa propriedade como um conjunto enumerado o
 
 <dl> <dt>
 
-[Propriedades da API do codec](codec-api-properties.md)
+[Propriedades da API do Codec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interface ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI Interface**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

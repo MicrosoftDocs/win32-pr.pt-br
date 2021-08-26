@@ -4,16 +4,16 @@ description: IAgentCharacterEx SetTTSModeID
 ms.assetid: 66ed792a-1693-45dc-b9a8-eebe772c5af9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 34392e65fcb8f3a46db6251f01f59ad76aba278d
-ms.sourcegitcommit: 3e70ae762629e244028b437420ed50b5850db4e3
+ms.openlocfilehash: a24195fd177abbde3c6423f966df67ba0faeaf315038d7f8cb0b4ca136f16c3c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "104365671"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120114716"
 ---
 # <a name="iagentcharacterexsetttsmodeid"></a>IAgentCharacterEx::SetTTSModeID
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 ``` syntax
 HRESULT SetTTSModeID(
@@ -35,7 +35,7 @@ A configuração de ID de modo do mecanismo de TTS para o caractere.
 > [!Note]  
 > **IAgentCharacterEx: SetTTSModeID** pode falhar se o Speech.dll não estiver instalado e o mecanismo especificado não corresponder à configuração do modo TTS compilado do caractere.
 
- 
+ 
 
 </dd> </dl>
 
@@ -54,9 +54,9 @@ Os requisitos do mecanismo de fala do Microsoft Agent são baseados no Microsoft
 [**IAgentCharacterEx:GetTTSModeID**](iagentcharacterex--getttsmodeid.md)
 
 
- 
+ 
 
- 
+ 
 
 
 

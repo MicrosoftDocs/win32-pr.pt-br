@@ -4,12 +4,12 @@ ms.assetid: d0318a0d-4ff4-42f2-b009-996b7ff0f632
 title: Método PlayChapter
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bab4600d8d4fc09c4b63fa423c66823e92e95a2a
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 832b1da6940b26a3cc3a4ab5bdba8653806966f8a399b74eb5adf50600e22293
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105789825"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120102336"
 ---
 # <a name="playchapter-method"></a>Método PlayChapter
 
@@ -31,7 +31,7 @@ MSWebDVD.PlayChapter(iChapter)
 <span id="iChapter"></span><span id="ichapter"></span><span id="ICHAPTER"></span>*iChapter*
 </dt> <dd>
 
-Especifica o índice do capítulo no título atual como um inteiro.
+Especifica o índice de capítulo no título atual como um Inteiro.
 
 </dd> </dl>
 
@@ -41,7 +41,7 @@ Sem valor de retorno.
 
 ## <a name="remarks"></a>Comentários
 
-Quando o final do capítulo especificado for atingido, esse método continuará a reproduzir os capítulos subsequentes, se existirem. Se você quiser reproduzir apenas um capítulo especificado, use [**PlayChaptersAutoStop**](playchaptersautostop-method.md).
+Quando o final do capítulo especificado é atingido, esse método continua a tocar os capítulos subsequentes, se existirem. Se você quiser reproduzir apenas um capítulo especificado, use [**PlayChaptersAutoStop**](playchaptersautostop-method.md).
 
 ## <a name="see-also"></a>Confira também
 

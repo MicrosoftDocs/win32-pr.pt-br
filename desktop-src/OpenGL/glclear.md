@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0db935e46c65c42976024a8afbb98028294710c7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0bb48a1b2832a5f9c046bb450b7cfba9ec4f83a759b093df91f3ec2064f23a3d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105759184"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120082096"
 ---
 # <a name="glclear-function"></a>função glClear
 
@@ -40,7 +40,7 @@ void WINAPI glClear(
 
 <dl> <dt>
 
-*mascara* 
+*mask* 
 </dt> <dd>
 
 Os operadores or de máscaras que indicam os buffers a serem apagados. As quatro máscaras são as seguintes.

@@ -4,23 +4,23 @@ ms.assetid: bb3c658d-96db-495a-a0dc-e93949c3835d
 title: Códigos de erro do sistema (12000-15999) (WinError. h)
 ms.topic: reference
 ms.date: 07/18/2019
-ms.openlocfilehash: 8cac8adf6d8a4cf8f60fe978eb6f99f5efc1b9fe
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: aa250eb26db3a2dfefda4c8b31bb2bbfd5e5d6415ea50d7279121fb09302c7ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104457025"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120058986"
 ---
 # <a name="system-error-codes-12000-15999"></a>Códigos de erro do sistema (12000-15999)
 
 > [!NOTE]
-> Essas informações destinam-se a desenvolvedores Depurando erros do sistema. Para outros erros, como problemas com Windows Update, há uma lista de recursos na página códigos de [erro](system-error-codes.md) .
+> Essas informações destinam-se a desenvolvedores Depurando erros do sistema. para outros erros, como problemas com Windows Update, há uma lista de recursos na página códigos de [erro](system-error-codes.md) .
 
 A lista a seguir descreve os [códigos de erro do sistema](system-error-codes.md) (erros 12000 a 15999). Elas são retornadas pela função [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) quando muitas funções falham. Para recuperar o texto de descrição do erro em seu aplicativo, use a função [**FormatMessage**](/windows/desktop/api/WinBase/nf-winbase-formatmessage) com a **mensagem de formato \_ \_ do sinalizador do \_ sistema** .
 
 <dl> <dt>
 
-<span id="ERROR_INTERNET__"></span><span id="error_internet__"></span>**Erro \_ do \_Internet \** _
+<span id="ERROR_INTERNET__"></span><span id="error_internet__"></span>**ERRO na \_ Internet\_\***
 </dt> <dd> <dl> <dt>
 
 12000-12175 (0x2EE0)
@@ -33,7 +33,7 @@ Consulte [códigos de erro da Internet](../wininet/wininet-errors.md) e Wininet.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_QM_POLICY_EXISTS"></span><span id="error_ipsec_qm_policy_exists"></span>_ *erro \_ a \_ política IPSec qm \_ \_ existe**
+<span id="ERROR_IPSEC_QM_POLICY_EXISTS"></span><span id="error_ipsec_qm_policy_exists"></span>**ERRO \_ a \_ política IPSec qm \_ \_ existe**
 </dt> <dd> <dl> <dt>
 
 13000 (0x32C8)
@@ -1242,7 +1242,7 @@ Erro ao criptografar a carga.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_IKE_DECRYPT"></span><span id="error_ipsec_ike_decrypt"></span>**ERRO \_ de \_ descriptografia de IPSec IKE \_**
+<span id="ERROR_IPSEC_IKE_DECRYPT"></span><span id="error_ipsec_ike_decrypt"></span>**ERRO \_ IPSEC \_ IKE \_ DECRYPT**
 </dt> <dd> <dl> <dt>
 
 13867 (0x362B)
@@ -1250,12 +1250,12 @@ Erro ao criptografar a carga.
 
 
 
-Erro ao descriptografar a carga.
+Erro ao descriptografar o payload.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_IKE_POLICY_MATCH"></span><span id="error_ipsec_ike_policy_match"></span>**ERRO \_ de \_ \_ correspondência de política IKE IPSec \_**
+<span id="ERROR_IPSEC_IKE_POLICY_MATCH"></span><span id="error_ipsec_ike_policy_match"></span>**ERRO \_ \_ IKE \_ POLICY \_ MATCH**
 </dt> <dd> <dl> <dt>
 
 13868 (0x362C)
@@ -1263,12 +1263,12 @@ Erro ao descriptografar a carga.
 
 
 
-Erro de correspondência de política.
+Erro de corresponder à política.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_IKE_UNSUPPORTED_ID"></span><span id="error_ipsec_ike_unsupported_id"></span>**ERRO \_ de \_ \_ ID incompatível de IKE IPSec \_**
+<span id="ERROR_IPSEC_IKE_UNSUPPORTED_ID"></span><span id="error_ipsec_ike_unsupported_id"></span>**ERRO \_ \_ ID IKE IKE \_ SEM \_ SUPORTE**
 </dt> <dd> <dl> <dt>
 
 13869 (0x362D)
@@ -1281,7 +1281,7 @@ ID sem suporte.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_IKE_INVALID_HASH"></span><span id="error_ipsec_ike_invalid_hash"></span>**ERRO de \_ hash de IPSec \_ Ike \_ inválido \_**
+<span id="ERROR_IPSEC_IKE_INVALID_HASH"></span><span id="error_ipsec_ike_invalid_hash"></span>**ERRO \_ HASH \_ IKE IKE \_ \_ INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 13870 (0x362E)
@@ -1294,7 +1294,7 @@ Falha na verificação de hash.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_IKE_INVALID_HASH_ALG"></span><span id="error_ipsec_ike_invalid_hash_alg"></span>**ERRO \_ de \_ hash de IP Ike \_ inválido \_ \_ alg**
+<span id="ERROR_IPSEC_IKE_INVALID_HASH_ALG"></span><span id="error_ipsec_ike_invalid_hash_alg"></span>**ERRO \_ \_ IKE IKE \_ \_ ALG DE HASH \_ INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 13871 (0x362F)
@@ -1307,7 +1307,7 @@ Algoritmo de hash inválido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_IKE_INVALID_HASH_SIZE"></span><span id="error_ipsec_ike_invalid_hash_size"></span>**ERRO \_ de \_ \_ tamanho de \_ hash \_ inválido de IKE IPSec**
+<span id="ERROR_IPSEC_IKE_INVALID_HASH_SIZE"></span><span id="error_ipsec_ike_invalid_hash_size"></span>**ERRO \_ TAMANHO DE \_ \_ \_ HASH \_ INVÁLIDO DE IKE IPSEC**
 </dt> <dd> <dl> <dt>
 
 13872 (0x3630)
@@ -1320,7 +1320,7 @@ Tamanho de hash inválido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_IKE_INVALID_ENCRYPT_ALG"></span><span id="error_ipsec_ike_invalid_encrypt_alg"></span>**ERRO \_ \_ IKE IPSec \_ inválido \_ criptografar \_ alg**
+<span id="ERROR_IPSEC_IKE_INVALID_ENCRYPT_ALG"></span><span id="error_ipsec_ike_invalid_encrypt_alg"></span>**ERRO \_ \_ IKE IKE \_ INVÁLIDO \_ \_ CRIPTOGRAFAR ALG**
 </dt> <dd> <dl> <dt>
 
 13873 (0x3631)
@@ -1333,7 +1333,7 @@ Algoritmo de criptografia inválido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_IKE_INVALID_AUTH_ALG"></span><span id="error_ipsec_ike_invalid_auth_alg"></span>**ERRO \_ de \_ autenticação de IP Ike \_ inválido \_ \_ alg**
+<span id="ERROR_IPSEC_IKE_INVALID_AUTH_ALG"></span><span id="error_ipsec_ike_invalid_auth_alg"></span>**ERRO \_ \_ IKE IKE ALG DE \_ \_ \_ AUTENTICAÇÃO INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 13874 (0x3632)
@@ -1346,7 +1346,7 @@ Algoritmo de autenticação inválido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_IKE_INVALID_SIG"></span><span id="error_ipsec_ike_invalid_sig"></span>**ERRO \_ de \_ SIG IPSec IKE \_ inválido \_**
+<span id="ERROR_IPSEC_IKE_INVALID_SIG"></span><span id="error_ipsec_ike_invalid_sig"></span>**ERRO \_ \_ IKE IKE \_ SIG \_ INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 13875 (0x3633)
@@ -1359,7 +1359,7 @@ Assinatura de certificado inválida.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_IKE_LOAD_FAILED"></span><span id="error_ipsec_ike_load_failed"></span>**ERRO \_ \_ \_ ao carregar Ike de IPSec \_**
+<span id="ERROR_IPSEC_IKE_LOAD_FAILED"></span><span id="error_ipsec_ike_load_failed"></span>**ERRO \_ FALHA NA CARGA \_ IKE DO IPSEC \_ \_**
 </dt> <dd> <dl> <dt>
 
 13876 (0x3634)
@@ -1367,12 +1367,12 @@ Assinatura de certificado inválida.
 
 
 
-Falha no carregamento.
+Falha na carga.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_IKE_RPC_DELETE"></span><span id="error_ipsec_ike_rpc_delete"></span>**ERRO \_ de \_ \_ exclusão de RPC IKE IPSec \_**
+<span id="ERROR_IPSEC_IKE_RPC_DELETE"></span><span id="error_ipsec_ike_rpc_delete"></span>**ERRO \_ IPSEC \_ IKE \_ RPC \_ DELETE**
 </dt> <dd> <dl> <dt>
 
 13877 (0x3635)
@@ -1380,12 +1380,12 @@ Falha no carregamento.
 
 
 
-Excluído via chamada RPC.
+Excluído por meio de chamada RPC.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_IKE_BENIGN_REINIT"></span><span id="error_ipsec_ike_benign_reinit"></span>**ERRO \_ de \_ \_ reinicialização de Ike de IPSec benigno \_**
+<span id="ERROR_IPSEC_IKE_BENIGN_REINIT"></span><span id="error_ipsec_ike_benign_reinit"></span>**ERRO \_ \_ \_ REINIT BENIGNO DE IKE IPSEC \_**
 </dt> <dd> <dl> <dt>
 
 13878 (0x3636)
@@ -1393,12 +1393,12 @@ Excluído via chamada RPC.
 
 
 
-Estado temporário criado para executar a reinicialização. Isso não é uma falha real.
+Estado temporário criado para executar reinicialização. Isso não é uma falha real.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_IKE_INVALID_RESPONDER_LIFETIME_NOTIFY"></span><span id="error_ipsec_ike_invalid_responder_lifetime_notify"></span>**ERRO \_ ao \_ \_ \_ \_ notificador de tempo de resposta de Ike inválido de IPSec \_**
+<span id="ERROR_IPSEC_IKE_INVALID_RESPONDER_LIFETIME_NOTIFY"></span><span id="error_ipsec_ike_invalid_responder_lifetime_notify"></span>**ERRO \_ IKE \_ IKE NOTIFICAÇÃO DE TEMPO \_ DE VIDA DO \_ RESPONDENTE INVÁLIDO \_ IPSEC \_**
 </dt> <dd> <dl> <dt>
 
 13879 (0x3637)
@@ -1406,12 +1406,12 @@ Estado temporário criado para executar a reinicialização. Isso não é uma fa
 
 
 
-O valor de tempo de vida recebido na notificação de tempo de vida do respondente está abaixo do valor mínimo configurado para o Windows 2000. Corrija a política na máquina par.
+O valor de tempo de vida recebido na Notificação de Tempo de Vida do Respondente está abaixo Windows valor mínimo configurado para 2000. Corrige a política no computador par.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_IKE_INVALID_MAJOR_VERSION"></span><span id="error_ipsec_ike_invalid_major_version"></span>**ERRO \_ de \_ \_ \_ versão principal inválida de IKE IPSec \_**
+<span id="ERROR_IPSEC_IKE_INVALID_MAJOR_VERSION"></span><span id="error_ipsec_ike_invalid_major_version"></span>**ERRO \_ \_ IKE IKE \_ INVÁLIDO VERSÃO \_ \_ PRINCIPAL**
 </dt> <dd> <dl> <dt>
 
 13880 (0x3638)
@@ -1419,12 +1419,12 @@ O valor de tempo de vida recebido na notificação de tempo de vida do responden
 
 
 
-O destinatário não pode manipular a versão do IKE especificada no cabeçalho.
+O destinatário não pode manipular a versão do IKE especificada no header.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_IKE_INVALID_CERT_KEYLEN"></span><span id="error_ipsec_ike_invalid_cert_keylen"></span>**ERRO \_ de \_ certificado IPSec IKE \_ inválido \_ \_ KEYLEN**
+<span id="ERROR_IPSEC_IKE_INVALID_CERT_KEYLEN"></span><span id="error_ipsec_ike_invalid_cert_keylen"></span>**ERRO \_ \_ IKE IKE \_ DE CERTIFICADO INVÁLIDO \_ \_ KEYLEN**
 </dt> <dd> <dl> <dt>
 
 13881 (0x3639)
@@ -1432,12 +1432,12 @@ O destinatário não pode manipular a versão do IKE especificada no cabeçalho.
 
 
 
-O comprimento da chave no certificado é muito pequeno para os requisitos de segurança configurados.
+O comprimento da chave no certificado é muito pequeno para requisitos de segurança configurados.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_IKE_MM_LIMIT"></span><span id="error_ipsec_ike_mm_limit"></span>**ERRO \_ de \_ limite de Ike mm de IPSec \_ \_**
+<span id="ERROR_IPSEC_IKE_MM_LIMIT"></span><span id="error_ipsec_ike_mm_limit"></span>**ERRO \_ LIMITE DE MM \_ IKE IKE \_ \_ IPSEC**
 </dt> <dd> <dl> <dt>
 
 13882 (0x363A)
@@ -1445,12 +1445,12 @@ O comprimento da chave no certificado é muito pequeno para os requisitos de seg
 
 
 
-Número máximo de SAs MM estabelecido para par excedido.
+Número máximo de SAs mm estabelecidas para pares excedido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_IKE_NEGOTIATION_DISABLED"></span><span id="error_ipsec_ike_negotiation_disabled"></span>**ERRO \_ de \_ negociação IKE IPSec \_ \_ desabilitada**
+<span id="ERROR_IPSEC_IKE_NEGOTIATION_DISABLED"></span><span id="error_ipsec_ike_negotiation_disabled"></span>**ERRO \_ NEGOCIAÇÃO \_ IKE IPSEC \_ \_ DESABILITADA**
 </dt> <dd> <dl> <dt>
 
 13883 (0x363B)
@@ -1463,7 +1463,7 @@ O IKE recebeu uma política que desabilita a negociação.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_IKE_QM_LIMIT"></span><span id="error_ipsec_ike_qm_limit"></span>**ERRO de \_ limite de IPSec \_ Ike \_ qm \_**
+<span id="ERROR_IPSEC_IKE_QM_LIMIT"></span><span id="error_ipsec_ike_qm_limit"></span>**ERRO \_ \_ IKE IKE \_ LIMITE DE QM \_**
 </dt> <dd> <dl> <dt>
 
 13884 (0x363C)
@@ -1471,12 +1471,12 @@ O IKE recebeu uma política que desabilita a negociação.
 
 
 
-Limite máximo de modo rápido atingido para o modo principal. O novo modo principal será iniciado.
+Atingiu o limite máximo de modo rápido para o modo principal. O novo modo principal será iniciado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_IKE_MM_EXPIRED"></span><span id="error_ipsec_ike_mm_expired"></span>**ERRO \_ \_ Ike mm de IPSec \_ \_ expirado**
+<span id="ERROR_IPSEC_IKE_MM_EXPIRED"></span><span id="error_ipsec_ike_mm_expired"></span>**ERRO \_ \_ IKE MM IKE \_ \_ EXPIROU**
 </dt> <dd> <dl> <dt>
 
 13885 (0x363D)
@@ -1484,12 +1484,12 @@ Limite máximo de modo rápido atingido para o modo principal. O novo modo princ
 
 
 
-O tempo de vida da SA de modo principal expirou ou o par enviou uma exclusão de modo principal.
+O tempo de vida sa do modo principal expirou ou o par enviou uma exclusão do modo principal.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_IKE_PEER_MM_ASSUMED_INVALID"></span><span id="error_ipsec_ike_peer_mm_assumed_invalid"></span>**ERRO \_ IPSec \_ Ike \_ peer \_ mm \_ considerado \_ inválido**
+<span id="ERROR_IPSEC_IKE_PEER_MM_ASSUMED_INVALID"></span><span id="error_ipsec_ike_peer_mm_assumed_invalid"></span>**ERRO \_ IPSEC \_ IKE \_ PEER MM \_ \_ CONSIDERADO \_ INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 13886 (0x363E)
@@ -1497,12 +1497,12 @@ O tempo de vida da SA de modo principal expirou ou o par enviou uma exclusão de
 
 
 
-SA de modo principal assumido como inválido porque o par parou de responder.
+Sa do modo principal considerado inválido porque o par parou de responder.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_IKE_CERT_CHAIN_POLICY_MISMATCH"></span><span id="error_ipsec_ike_cert_chain_policy_mismatch"></span>**ERRO \_ de \_ \_ \_ \_ incompatibilidade de política de cadeia de certificado IKE IPSec \_**
+<span id="ERROR_IPSEC_IKE_CERT_CHAIN_POLICY_MISMATCH"></span><span id="error_ipsec_ike_cert_chain_policy_mismatch"></span>**ERRO \_ \_ IKE IKE \_ CERT CHAIN POLICY \_ \_ \_ MISMATCH**
 </dt> <dd> <dl> <dt>
 
 13887 (0x363F)
@@ -1510,12 +1510,12 @@ SA de modo principal assumido como inválido porque o par parou de responder.
 
 
 
-O certificado não se encadea a uma raiz confiável na política IPsec.
+O certificado não encadeia a uma raiz confiável na política IPsec.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_IKE_UNEXPECTED_MESSAGE_ID"></span><span id="error_ipsec_ike_unexpected_message_id"></span>**ERRO \_ de \_ \_ ID de \_ mensagem \_ inesperada IPSec IKE**
+<span id="ERROR_IPSEC_IKE_UNEXPECTED_MESSAGE_ID"></span><span id="error_ipsec_ike_unexpected_message_id"></span>**ERRO ID DE MENSAGEM INESPERADA DE \_ \_ IKE \_ \_ \_ IPSEC**
 </dt> <dd> <dl> <dt>
 
 13888 (0x3640)
@@ -1528,7 +1528,7 @@ ID de mensagem inesperada recebida.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_IKE_INVALID_AUTH_PAYLOAD"></span><span id="error_ipsec_ike_invalid_auth_payload"></span>**ERRO \_ de \_ \_ carga de \_ autenticação inválida de IKE IPSec \_**
+<span id="ERROR_IPSEC_IKE_INVALID_AUTH_PAYLOAD"></span><span id="error_ipsec_ike_invalid_auth_payload"></span>**ERRO \_ \_ IKE IKE PAYLOAD DE \_ \_ AUTENTICAÇÃO \_ INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 13889 (0x3641)
@@ -1536,12 +1536,12 @@ ID de mensagem inesperada recebida.
 
 
 
-Ofertas de autenticação inválidas recebidas.
+Recebeu ofertas de autenticação inválidas.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_IKE_DOS_COOKIE_SENT"></span><span id="error_ipsec_ike_dos_cookie_sent"></span>**ERRO \_ de \_ cookie de dos IPSec IKE \_ \_ \_ enviado**
+<span id="ERROR_IPSEC_IKE_DOS_COOKIE_SENT"></span><span id="error_ipsec_ike_dos_cookie_sent"></span>**ERRO \_ IPSEC \_ IKE \_ DOS COOKIE \_ \_ SENT**
 </dt> <dd> <dl> <dt>
 
 13890 (0x3642)
@@ -1549,12 +1549,12 @@ Ofertas de autenticação inválidas recebidas.
 
 
 
-Enviada notificação de cookie DoS para o iniciador.
+Notificação de cookie DoS enviada ao iniciador.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_IKE_SHUTTING_DOWN"></span><span id="error_ipsec_ike_shutting_down"></span>**ERRO \_ de \_ \_ desligamento de IKE IPSec \_**
+<span id="ERROR_IPSEC_IKE_SHUTTING_DOWN"></span><span id="error_ipsec_ike_shutting_down"></span>**ERRO AO DESLIGAR O IKE DO \_ \_ IPSEC \_ \_**
 </dt> <dd> <dl> <dt>
 
 13891 (0x3643)
@@ -1567,7 +1567,7 @@ O serviço IKE está sendo desligado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_IKE_CGA_AUTH_FAILED"></span><span id="error_ipsec_ike_cga_auth_failed"></span>**ERRO \_ de \_ \_ autenticação CGA IPSec IKE \_ \_ falhou**
+<span id="ERROR_IPSEC_IKE_CGA_AUTH_FAILED"></span><span id="error_ipsec_ike_cga_auth_failed"></span>**ERRO \_ FALHA NA \_ AUTENTICAÇÃO DO \_ IKE IKE CGA \_ \_**
 </dt> <dd> <dl> <dt>
 
 13892 (0x3644)
@@ -1580,7 +1580,7 @@ Não foi possível verificar a associação entre o endereço CGA e o certificad
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_IKE_PROCESS_ERR_NATOA"></span><span id="error_ipsec_ike_process_err_natoa"></span>**ERRO \_ de \_ processo Ike de IPSec \_ \_ \_ NATOA**
+<span id="ERROR_IPSEC_IKE_PROCESS_ERR_NATOA"></span><span id="error_ipsec_ike_process_err_natoa"></span>**ERRO \_ NO PROCESSO \_ IKE IPSEC \_ ERR \_ \_ NATOA**
 </dt> <dd> <dl> <dt>
 
 13893 (0x3645)
@@ -1588,12 +1588,12 @@ Não foi possível verificar a associação entre o endereço CGA e o certificad
 
 
 
-Erro ao processar carga NatOA.
+Erro ao processar o payload natoA.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_IKE_INVALID_MM_FOR_QM"></span><span id="error_ipsec_ike_invalid_mm_for_qm"></span>**ERRO \_ \_ de IPSec IKE \_ inválido \_ mm \_ para \_ QM**
+<span id="ERROR_IPSEC_IKE_INVALID_MM_FOR_QM"></span><span id="error_ipsec_ike_invalid_mm_for_qm"></span>**ERRO \_ \_ IKE IKE \_ INVÁLIDO MM PARA \_ \_ \_ QM**
 </dt> <dd> <dl> <dt>
 
 13894 (0x3646)
@@ -1601,12 +1601,12 @@ Erro ao processar carga NatOA.
 
 
 
-Os parâmetros do modo principal são inválidos para este modo rápido.
+Os parâmetros do modo principal são inválidos para esse modo rápido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_IKE_QM_EXPIRED"></span><span id="error_ipsec_ike_qm_expired"></span>**ERRO \_ \_ IKE IPSec \_ qm \_ expirado**
+<span id="ERROR_IPSEC_IKE_QM_EXPIRED"></span><span id="error_ipsec_ike_qm_expired"></span>**ERRO \_ \_ QM IKE \_ IPSEC \_ EXPIROU**
 </dt> <dd> <dl> <dt>
 
 13895 (0x3647)
@@ -1614,12 +1614,12 @@ Os parâmetros do modo principal são inválidos para este modo rápido.
 
 
 
-O SA de modo rápido expirou pelo driver IPsec.
+O SA do modo rápido expirou pelo driver IPsec.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_IKE_TOO_MANY_FILTERS"></span><span id="error_ipsec_ike_too_many_filters"></span>**ERRO \_ Ike de IPSec em muitos \_ \_ \_ \_ filtros**
+<span id="ERROR_IPSEC_IKE_TOO_MANY_FILTERS"></span><span id="error_ipsec_ike_too_many_filters"></span>**ERRO \_ \_ IKE IKE \_ DE MUITOS \_ \_ FILTROS**
 </dt> <dd> <dl> <dt>
 
 13896 (0x3648)
@@ -1627,12 +1627,12 @@ O SA de modo rápido expirou pelo driver IPsec.
 
 
 
-Muitos filtros IKEEXT adicionados dinamicamente foram detectados.
+Foram detectados muitos filtros IKEEXT adicionados dinamicamente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_IKE_NEG_STATUS_END"></span><span id="error_ipsec_ike_neg_status_end"></span>**ERRO \_ de \_ \_ neg de \_ status de IKE IPSec \_**
+<span id="ERROR_IPSEC_IKE_NEG_STATUS_END"></span><span id="error_ipsec_ike_neg_status_end"></span>**ERRO \_ IPSEC \_ IKE \_ NEG STATUS \_ \_ END**
 </dt> <dd> <dl> <dt>
 
 13897 (0x3649)
@@ -1640,12 +1640,12 @@ Muitos filtros IKEEXT adicionados dinamicamente foram detectados.
 
 
 
-ERRO \_ de \_ \_ neg de \_ status de IKE IPSec \_
+ERRO \_ IPSEC \_ IKE \_ NEG STATUS \_ \_ END
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_IKE_KILL_DUMMY_NAP_TUNNEL"></span><span id="error_ipsec_ike_kill_dummy_nap_tunnel"></span>**ERRO \_ IPSec \_ Ike \_ Kill \_ fictícia \_ NAP \_ Tunnel**
+<span id="ERROR_IPSEC_IKE_KILL_DUMMY_NAP_TUNNEL"></span><span id="error_ipsec_ike_kill_dummy_nap_tunnel"></span>**ERRO \_ \_ IKE IKE \_ KILL DUMMY NAP \_ \_ \_ TUNNEL**
 </dt> <dd> <dl> <dt>
 
 13898 (0x364A)
@@ -1653,12 +1653,12 @@ ERRO \_ de \_ \_ neg de \_ status de IKE IPSec \_
 
 
 
-A reautenticação de NAP foi bem-sucedida e deve excluir o túnel IKEv2 NAP fictício.
+O reauth nap foi bem-sucedido e deve excluir o túnel NAP IKEv2 fictício.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_IKE_INNER_IP_ASSIGNMENT_FAILURE"></span><span id="error_ipsec_ike_inner_ip_assignment_failure"></span>**ERRO \_ \_ \_ \_ na atribuição de IP \_ interno \_ Ike do IPSec**
+<span id="ERROR_IPSEC_IKE_INNER_IP_ASSIGNMENT_FAILURE"></span><span id="error_ipsec_ike_inner_ip_assignment_failure"></span>**ERRO \_ FALHA NA ATRIBUIÇÃO DE IP INTERNO DO \_ IKE \_ \_ \_ \_ IPSEC**
 </dt> <dd> <dl> <dt>
 
 13899 (0x364B)
@@ -1671,7 +1671,7 @@ Erro ao atribuir o endereço IP interno ao iniciador no modo de túnel.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_IKE_REQUIRE_CP_PAYLOAD_MISSING"></span><span id="error_ipsec_ike_require_cp_payload_missing"></span>**ERRO \_ \_ IKE IPSec \_ requer \_ conteúdo de CP \_ \_ ausente**
+<span id="ERROR_IPSEC_IKE_REQUIRE_CP_PAYLOAD_MISSING"></span><span id="error_ipsec_ike_require_cp_payload_missing"></span>**ERRO \_ \_ IKE IPSEC \_ EXIGIR CARGA CP \_ \_ \_ AUSENTE**
 </dt> <dd> <dl> <dt>
 
 13900 (0x364C)
@@ -1679,12 +1679,12 @@ Erro ao atribuir o endereço IP interno ao iniciador no modo de túnel.
 
 
 
-Requer carga de configuração ausente.
+Exigir carga de configuração ausente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_KEY_MODULE_IMPERSONATION_NEGOTIATION_PENDING"></span><span id="error_ipsec_key_module_impersonation_negotiation_pending"></span>**ERRO \_ de \_ negociação de representação de módulo de chave IPSec \_ \_ \_ \_ pendente**
+<span id="ERROR_IPSEC_KEY_MODULE_IMPERSONATION_NEGOTIATION_PENDING"></span><span id="error_ipsec_key_module_impersonation_negotiation_pending"></span>**ERRO DE NEGOCIAÇÃO DE REPRESENTAÇÃO DO MÓDULO DE CHAVE \_ IPSEC \_ \_ \_ \_ \_ PENDENTE**
 </dt> <dd> <dl> <dt>
 
 13901 (0x364D)
@@ -1697,7 +1697,7 @@ Uma negociação em execução como o princípio de segurança que emitiu a cone
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_IKE_COEXISTENCE_SUPPRESS"></span><span id="error_ipsec_ike_coexistence_suppress"></span>**ERRO \_ de \_ \_ supressão de coexistência de IPSec IKE \_**
+<span id="ERROR_IPSEC_IKE_COEXISTENCE_SUPPRESS"></span><span id="error_ipsec_ike_coexistence_suppress"></span>**ERRO \_ SUPRESSÃO DE \_ \_ COEXISTÊNCIA DE IKE IPSEC \_**
 </dt> <dd> <dl> <dt>
 
 13902 (0x364E)
@@ -1705,12 +1705,12 @@ Uma negociação em execução como o princípio de segurança que emitiu a cone
 
 
 
-SA foi excluído devido à verificação de supressão de coexistência de IKEv1/AuthIP.
+A SA foi excluída devido à verificação de supressão de co-existência de IKEv1/AuthIP.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_IKE_RATELIMIT_DROP"></span><span id="error_ipsec_ike_ratelimit_drop"></span>**ERRO \_ IPSec \_ Ike \_ RATELIMIT \_ drop**
+<span id="ERROR_IPSEC_IKE_RATELIMIT_DROP"></span><span id="error_ipsec_ike_ratelimit_drop"></span>**ERRO \_ \_ IKE \_ RATELIMIT \_ DROP IPSEC**
 </dt> <dd> <dl> <dt>
 
 13903 (0x364F)
@@ -1718,12 +1718,12 @@ SA foi excluído devido à verificação de supressão de coexistência de IKEv1
 
 
 
-A solicitação SA de entrada foi descartada devido à limitação da taxa de endereço IP do par.
+A solicitação SA de entrada foi descartado devido à limitação da taxa de endereço IP par.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_IKE_PEER_DOESNT_SUPPORT_MOBIKE"></span><span id="error_ipsec_ike_peer_doesnt_support_mobike"></span>**ERRO \_ IPSec \_ Ike \_ peer \_ \_ não dá suporte a \_ MOBIKE**
+<span id="ERROR_IPSEC_IKE_PEER_DOESNT_SUPPORT_MOBIKE"></span><span id="error_ipsec_ike_peer_doesnt_support_mobike"></span>**ERRO \_ O PAR \_ IKE IPSEC \_ NÃO DÁ SUPORTE A \_ \_ \_ MOBIKE**
 </dt> <dd> <dl> <dt>
 
 13904 (0x3650)
@@ -1736,7 +1736,7 @@ O par não dá suporte a MOBIKE.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_IKE_AUTHORIZATION_FAILURE"></span><span id="error_ipsec_ike_authorization_failure"></span>**ERRO \_ de \_ \_ falha de autorização \_ de IPSec IKE**
+<span id="ERROR_IPSEC_IKE_AUTHORIZATION_FAILURE"></span><span id="error_ipsec_ike_authorization_failure"></span>**ERRO \_ FALHA NA AUTORIZAÇÃO DE \_ IKE IPSEC \_ \_**
 </dt> <dd> <dl> <dt>
 
 13905 (0x3651)
@@ -1749,7 +1749,7 @@ Estabelecimento de SA não autorizado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_IKE_STRONG_CRED_AUTHORIZATION_FAILURE"></span><span id="error_ipsec_ike_strong_cred_authorization_failure"></span>**ERRO \_ de \_ \_ falha de \_ autorização de credenciais fortes \_ IPSec IKE \_**
+<span id="ERROR_IPSEC_IKE_STRONG_CRED_AUTHORIZATION_FAILURE"></span><span id="error_ipsec_ike_strong_cred_authorization_failure"></span>**ERRO \_ FALHA DE \_ AUTORIZAÇÃO DE \_ \_ CRED \_ FORTE DE IKE IPSEC \_**
 </dt> <dd> <dl> <dt>
 
 13906 (0x3652)
@@ -1757,12 +1757,12 @@ Estabelecimento de SA não autorizado.
 
 
 
-O estabelecimento de SA não é autorizado porque não há uma credencial baseada em PKINIT suficientemente forte.
+O estabelecimento de SA não está autorizado porque não há uma credencial baseada em PKINIT suficientemente forte.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_IKE_AUTHORIZATION_FAILURE_WITH_OPTIONAL_RETRY"></span><span id="error_ipsec_ike_authorization_failure_with_optional_retry"></span>**ERRO \_ \_ \_ \_ de falha de autorização IKE IPSec \_ com \_ \_ repetição opcional**
+<span id="ERROR_IPSEC_IKE_AUTHORIZATION_FAILURE_WITH_OPTIONAL_RETRY"></span><span id="error_ipsec_ike_authorization_failure_with_optional_retry"></span>**ERRO \_ FALHA NA AUTORIZAÇÃO DE IKE IPSEC \_ COM A TENTATIVA \_ \_ \_ \_ \_ OPCIONAL**
 </dt> <dd> <dl> <dt>
 
 13907 (0x3653)
@@ -1775,7 +1775,7 @@ Estabelecimento de SA não autorizado. Talvez seja necessário inserir credencia
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_IKE_STRONG_CRED_AUTHORIZATION_AND_CERTMAP_FAILURE"></span><span id="error_ipsec_ike_strong_cred_authorization_and_certmap_failure"></span>**ERRO \_ \_ \_ \_ \_ de autorização de credenciais fortes \_ de Ike de IPSec e \_ falha de CERTMAP \_**
+<span id="ERROR_IPSEC_IKE_STRONG_CRED_AUTHORIZATION_AND_CERTMAP_FAILURE"></span><span id="error_ipsec_ike_strong_cred_authorization_and_certmap_failure"></span>**ERRO \_ \_ IKE IKE \_ FORTE \_ AUTORIZAÇÃO CRED \_ E FALHA DE \_ \_ \_ CERTMAP**
 </dt> <dd> <dl> <dt>
 
 13908 (0x3654)
@@ -1783,12 +1783,12 @@ Estabelecimento de SA não autorizado. Talvez seja necessário inserir credencia
 
 
 
-O estabelecimento de SA não é autorizado porque não há uma credencial baseada em PKINIT suficientemente forte. Isso pode estar relacionado à falha de mapeamento de certificado para conta para o SA.
+O estabelecimento de SA não está autorizado porque não há uma credencial baseada em PKINIT suficientemente forte. Isso pode estar relacionado à falha de mapeamento de certificado para conta para o SA.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_IKE_NEG_STATUS_EXTENDED_END"></span><span id="error_ipsec_ike_neg_status_extended_end"></span>**ERRO \_ IPSec \_ Ike \_ neg de \_ status \_ estendido \_ final**
+<span id="ERROR_IPSEC_IKE_NEG_STATUS_EXTENDED_END"></span><span id="error_ipsec_ike_neg_status_extended_end"></span>**ERRO \_ IPSEC \_ IKE \_ NEG STATUS \_ \_ EXTENDED \_ END**
 </dt> <dd> <dl> <dt>
 
 13909 (0x3655)
@@ -1796,12 +1796,12 @@ O estabelecimento de SA não é autorizado porque não há uma credencial basead
 
 
 
-ERRO \_ IPSec \_ Ike \_ neg de \_ status \_ estendido \_ final
+ERRO \_ IPSEC \_ IKE \_ NEG STATUS \_ \_ EXTENDED \_ END
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_BAD_SPI"></span><span id="error_ipsec_bad_spi"></span>**ERRO \_ SPI de IPSec \_ insatisfatório \_**
+<span id="ERROR_IPSEC_BAD_SPI"></span><span id="error_ipsec_bad_spi"></span>**ERRO \_ DE IPSEC \_ BAD \_ SPI**
 </dt> <dd> <dl> <dt>
 
 13910 (0x3656)
@@ -1809,12 +1809,12 @@ ERRO \_ IPSec \_ Ike \_ neg de \_ status \_ estendido \_ final
 
 
 
-O SPI no pacote não corresponde a um SA IPsec válido.
+A SPI no pacote não corresponderá a um SA IPsec válido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_SA_LIFETIME_EXPIRED"></span><span id="error_ipsec_sa_lifetime_expired"></span>**ERRO \_ de \_ tempo de vida da SA IPsec \_ \_ expirado**
+<span id="ERROR_IPSEC_SA_LIFETIME_EXPIRED"></span><span id="error_ipsec_sa_lifetime_expired"></span>**ERRO \_ TEMPO DE VIDA SA DO IPSEC \_ \_ \_ EXPIRADO**
 </dt> <dd> <dl> <dt>
 
 13911 (0x3657)
@@ -1827,7 +1827,7 @@ O pacote foi recebido em um SA IPsec cujo tempo de vida expirou.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_WRONG_SA"></span><span id="error_ipsec_wrong_sa"></span>**ERRO de \_ IPSec \_ errado \_ SA**
+<span id="ERROR_IPSEC_WRONG_SA"></span><span id="error_ipsec_wrong_sa"></span>**ERRO \_ IPSEC \_ SA \_ ERRADO**
 </dt> <dd> <dl> <dt>
 
 13912 (0x3658)
@@ -1835,12 +1835,12 @@ O pacote foi recebido em um SA IPsec cujo tempo de vida expirou.
 
 
 
-O pacote foi recebido em um SA IPsec que não corresponde às características do pacote.
+O pacote foi recebido em um SA IPsec que não corresponder às características do pacote.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_REPLAY_CHECK_FAILED"></span><span id="error_ipsec_replay_check_failed"></span>**ERRO \_ de \_ verificação de reprodução de IPSec \_ \_ falhou**
+<span id="ERROR_IPSEC_REPLAY_CHECK_FAILED"></span><span id="error_ipsec_replay_check_failed"></span>**ERRO \_ FALHA NA VERIFICAÇÃO DE REPRODUÇÃO \_ \_ DO IPSEC \_**
 </dt> <dd> <dl> <dt>
 
 13913 (0x3659)
@@ -1848,12 +1848,12 @@ O pacote foi recebido em um SA IPsec que não corresponde às características d
 
 
 
-Falha na verificação de repetição do número de sequência de pacote.
+Falha na verificação de reprodução do número de sequência de pacotes.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_INVALID_PACKET"></span><span id="error_ipsec_invalid_packet"></span>**ERRO de \_ pacote de IPSec \_ inválido \_**
+<span id="ERROR_IPSEC_INVALID_PACKET"></span><span id="error_ipsec_invalid_packet"></span>**ERRO \_ PACOTE INVÁLIDO IPSEC \_ \_**
 </dt> <dd> <dl> <dt>
 
 13914 (0x365A)
@@ -1861,12 +1861,12 @@ Falha na verificação de repetição do número de sequência de pacote.
 
 
 
-O cabeçalho IPsec e/ou o trailer no pacote é inválido.
+O header IPsec e/ou o trailer no pacote são inválidos.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_INTEGRITY_CHECK_FAILED"></span><span id="error_ipsec_integrity_check_failed"></span>**ERRO \_ \_ na verificação de integridade do IPSec \_ \_**
+<span id="ERROR_IPSEC_INTEGRITY_CHECK_FAILED"></span><span id="error_ipsec_integrity_check_failed"></span>**ERRO FALHA \_ NA VERIFICAÇÃO DE INTEGRIDADE \_ \_ DO IPSEC \_**
 </dt> <dd> <dl> <dt>
 
 13915 (0x365B)
@@ -1879,7 +1879,7 @@ Falha na verificação de integridade do IPsec.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_CLEAR_TEXT_DROP"></span><span id="error_ipsec_clear_text_drop"></span>**ERRO \_ ao \_ \_ remover texto não criptografado IPSec \_**
+<span id="ERROR_IPSEC_CLEAR_TEXT_DROP"></span><span id="error_ipsec_clear_text_drop"></span>**ERRO \_ IPSEC \_ CLEAR TEXT \_ \_ DROP**
 </dt> <dd> <dl> <dt>
 
 13916 (0x365C)
@@ -1887,12 +1887,12 @@ Falha na verificação de integridade do IPsec.
 
 
 
-O IPsec removeu um pacote de texto não criptografado.
+O IPsec ressou um pacote de texto não limpo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_AUTH_FIREWALL_DROP"></span><span id="error_ipsec_auth_firewall_drop"></span>**ERRO \_ ao \_ \_ remover firewall de autenticação IPsec \_**
+<span id="ERROR_IPSEC_AUTH_FIREWALL_DROP"></span><span id="error_ipsec_auth_firewall_drop"></span>**ERRO \_ AO SOLTAR O FIREWALL DE \_ \_ AUTENTICAÇÃO IPSEC \_**
 </dt> <dd> <dl> <dt>
 
 13917 (0x365D)
@@ -1900,12 +1900,12 @@ O IPsec removeu um pacote de texto não criptografado.
 
 
 
-O IPsec removeu um pacote ESP de entrada no modo de firewall autenticado. Essa queda é benigna.
+O IPsec rebaixou um pacote ESP de entrada no modo de firewall autenticado. Essa queda é benigna.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_THROTTLE_DROP"></span><span id="error_ipsec_throttle_drop"></span>**ERRO \_ ao \_ remover limitação IPSec \_**
+<span id="ERROR_IPSEC_THROTTLE_DROP"></span><span id="error_ipsec_throttle_drop"></span>**ERRO \_ DE QUEDA DE \_ ACELERAÇÃO DO IPSEC \_**
 </dt> <dd> <dl> <dt>
 
 13918 (0x365E)
@@ -1913,12 +1913,12 @@ O IPsec removeu um pacote ESP de entrada no modo de firewall autenticado. Essa q
 
 
 
-O IPsec removeu um pacote devido à limitação do DoS.
+O IPsec largou um pacote devido à throttling do DoS.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_DOSP_BLOCK"></span><span id="error_ipsec_dosp_block"></span>**ERRO \_ de \_ bloqueio de DOSP IPSec \_**
+<span id="ERROR_IPSEC_DOSP_BLOCK"></span><span id="error_ipsec_dosp_block"></span>**ERRO \_ BLOCO DO \_ DOSP IPSEC \_**
 </dt> <dd> <dl> <dt>
 
 13925 (0x3665)
@@ -1926,12 +1926,12 @@ O IPsec removeu um pacote devido à limitação do DoS.
 
 
 
-A proteção de DoS IPsec correspondeu a uma regra de bloqueio explícita.
+A Proteção contra DoS IPsec corresponderam a uma regra de bloco explícita.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_DOSP_RECEIVED_MULTICAST"></span><span id="error_ipsec_dosp_received_multicast"></span>**ERRO \_ IPSec \_ DOSP \_ recebido \_ multicast**
+<span id="ERROR_IPSEC_DOSP_RECEIVED_MULTICAST"></span><span id="error_ipsec_dosp_received_multicast"></span>**ERRO \_ O \_ DOSP IPSEC \_ RECEBEU \_ MULTICAST**
 </dt> <dd> <dl> <dt>
 
 13926 (0x3666)
@@ -1939,12 +1939,12 @@ A proteção de DoS IPsec correspondeu a uma regra de bloqueio explícita.
 
 
 
-A proteção de DoS IPsec recebeu um pacote multicast específico de IPsec que não é permitido.
+A Proteção contra DoS IPsec recebeu um pacote multicast específico do IPsec que não é permitido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_DOSP_INVALID_PACKET"></span><span id="error_ipsec_dosp_invalid_packet"></span>**ERRO de \_ pacote de IPSec \_ DOSP \_ inválido \_**
+<span id="ERROR_IPSEC_DOSP_INVALID_PACKET"></span><span id="error_ipsec_dosp_invalid_packet"></span>**ERRO \_ PACOTE INVÁLIDO DO \_ DOSP IPSEC \_ \_**
 </dt> <dd> <dl> <dt>
 
 13927 (0x3667)
@@ -1952,12 +1952,12 @@ A proteção de DoS IPsec recebeu um pacote multicast específico de IPsec que n
 
 
 
-A proteção de DoS IPsec recebeu um pacote formatado incorretamente.
+A Proteção contra DoS IPsec recebeu um pacote formatado incorretamente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_DOSP_STATE_LOOKUP_FAILED"></span><span id="error_ipsec_dosp_state_lookup_failed"></span>**ERRO \_ de \_ pesquisa de estado de DOSP IPSec \_ \_ \_ falhou**
+<span id="ERROR_IPSEC_DOSP_STATE_LOOKUP_FAILED"></span><span id="error_ipsec_dosp_state_lookup_failed"></span>**ERRO \_ FALHA NA PESQUISA DE ESTADO DO \_ DOSP \_ DO \_ IPSEC \_**
 </dt> <dd> <dl> <dt>
 
 13928 (0x3668)
@@ -1965,12 +1965,12 @@ A proteção de DoS IPsec recebeu um pacote formatado incorretamente.
 
 
 
-A proteção do DoS IPsec falhou ao pesquisar o estado.
+Falha na proteção contra DoS IPsec ao procurar o estado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_DOSP_MAX_ENTRIES"></span><span id="error_ipsec_dosp_max_entries"></span>**ERRO \_ ao \_ DOSP \_ máximo de \_ entradas IPSec**
+<span id="ERROR_IPSEC_DOSP_MAX_ENTRIES"></span><span id="error_ipsec_dosp_max_entries"></span>**ERRO \_ IPSEC \_ DOSP \_ MAX \_ ENTRIES**
 </dt> <dd> <dl> <dt>
 
 13929 (0x3669)
@@ -1978,12 +1978,12 @@ A proteção do DoS IPsec falhou ao pesquisar o estado.
 
 
 
-Falha na proteção do DoS IPsec ao criar o estado porque o número máximo de entradas permitidas pela política foi atingido.
+A Proteção contra DoS IPsec falhou ao criar o estado porque o número máximo de entradas permitidas pela política foi atingido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_DOSP_KEYMOD_NOT_ALLOWED"></span><span id="error_ipsec_dosp_keymod_not_allowed"></span>**ERRO \_ IPSec \_ DOSP \_ KEYMOD \_ não \_ permitido**
+<span id="ERROR_IPSEC_DOSP_KEYMOD_NOT_ALLOWED"></span><span id="error_ipsec_dosp_keymod_not_allowed"></span>**ERRO \_ IPSEC \_ DOSP \_ KEYMOD \_ NÃO \_ PERMITIDO**
 </dt> <dd> <dl> <dt>
 
 13930 (0x366A)
@@ -1991,12 +1991,12 @@ Falha na proteção do DoS IPsec ao criar o estado porque o número máximo de e
 
 
 
-A proteção de DoS IPsec recebeu um pacote de negociação IPsec para um módulo de chaveamento que não é permitido pela política.
+A Proteção contra DoS IPsec recebeu um pacote de negociação IPsec para um módulo de chave que não é permitido pela política.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_DOSP_NOT_INSTALLED"></span><span id="error_ipsec_dosp_not_installed"></span>**ERRO \_ \_ DOSP IPSec \_ não \_ instalado**
+<span id="ERROR_IPSEC_DOSP_NOT_INSTALLED"></span><span id="error_ipsec_dosp_not_installed"></span>**ERRO \_ IPSEC \_ DOSP \_ NÃO \_ INSTALADO**
 </dt> <dd> <dl> <dt>
 
 13931 (0x366B)
@@ -2004,12 +2004,12 @@ A proteção de DoS IPsec recebeu um pacote de negociação IPsec para um módul
 
 
 
-A proteção de DoS IPsec não foi habilitada.
+A Proteção contra DoS IPsec não foi habilitada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IPSEC_DOSP_MAX_PER_IP_RATELIMIT_QUEUES"></span><span id="error_ipsec_dosp_max_per_ip_ratelimit_queues"></span>**ERRO \_ de \_ DOSP \_ máximo de IPSec \_ por \_ filas de RATELIMIT de IP \_ \_**
+<span id="ERROR_IPSEC_DOSP_MAX_PER_IP_RATELIMIT_QUEUES"></span><span id="error_ipsec_dosp_max_per_ip_ratelimit_queues"></span>**ERRO \_ IPSEC \_ DOSP \_ MAX POR IP \_ \_ \_ RATELIMIT \_ QUEUES**
 </dt> <dd> <dl> <dt>
 
 13932 (0x366C)
@@ -2017,12 +2017,12 @@ A proteção de DoS IPsec não foi habilitada.
 
 
 
-Falha na proteção do DoS IPsec ao criar uma fila por limite de taxa IP interna porque o número máximo de filas permitidas pela política foi atingido.
+Falha na Proteção contra DoS do IPsec ao criar uma fila de limite por taxa de IP interna porque o número máximo de filas permitidas pela política foi atingido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SXS_SECTION_NOT_FOUND"></span><span id="error_sxs_section_not_found"></span>**ERRO \_ na \_ seção SxS \_ não \_ encontrada**
+<span id="ERROR_SXS_SECTION_NOT_FOUND"></span><span id="error_sxs_section_not_found"></span>**SEÇÃO \_ SXS \_ DE ERRO NÃO \_ \_ ENCONTRADA**
 </dt> <dd> <dl> <dt>
 
 14000 (0x36B0)
@@ -2035,7 +2035,7 @@ A seção solicitada não estava presente no contexto de ativação.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SXS_CANT_GEN_ACTCTX"></span><span id="error_sxs_cant_gen_actctx"></span>**ERRO \_ SxS não é \_ \_ Gen \_ ACTCTX**
+<span id="ERROR_SXS_CANT_GEN_ACTCTX"></span><span id="error_sxs_cant_gen_actctx"></span>**ERRO \_ SXS \_ CANT \_ GEN \_ ACTCTX**
 </dt> <dd> <dl> <dt>
 
 14001 (0x36B1)
@@ -2048,7 +2048,7 @@ Falha ao iniciar o aplicativo porque sua configuração lado a lado está incorr
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SXS_INVALID_ACTCTXDATA_FORMAT"></span><span id="error_sxs_invalid_actctxdata_format"></span>**ERRO \_ do \_ \_ formato ACTCTXDATA \_ inválido de SXS**
+<span id="ERROR_SXS_INVALID_ACTCTXDATA_FORMAT"></span><span id="error_sxs_invalid_actctxdata_format"></span>**ERRO \_ SXS \_ FORMATO \_ ACTCTXDATA \_ INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 14002 (0x36B2)
@@ -2061,7 +2061,7 @@ O formato de dados de associação de aplicativo é inválido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SXS_ASSEMBLY_NOT_FOUND"></span><span id="error_sxs_assembly_not_found"></span>**ERRO \_ de \_ assembly SxS \_ não \_ encontrado**
+<span id="ERROR_SXS_ASSEMBLY_NOT_FOUND"></span><span id="error_sxs_assembly_not_found"></span>**ERRO \_ ASSEMBLY SXS \_ NÃO \_ \_ ENCONTRADO**
 </dt> <dd> <dl> <dt>
 
 14003 (0x36B3)
@@ -2069,12 +2069,12 @@ O formato de dados de associação de aplicativo é inválido.
 
 
 
-O assembly referenciado não está instalado no seu sistema.
+O assembly referenciado não está instalado em seu sistema.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SXS_MANIFEST_FORMAT_ERROR"></span><span id="error_sxs_manifest_format_error"></span>**erro \_ de \_ formato de manifesto SxS \_ \_**
+<span id="ERROR_SXS_MANIFEST_FORMAT_ERROR"></span><span id="error_sxs_manifest_format_error"></span>**ERRO \_ DE FORMATO DE MANIFESTO SXS \_ \_ \_**
 </dt> <dd> <dl> <dt>
 
 14004 (0x36B4)
@@ -3621,7 +3621,7 @@ O resultado da consulta está atualmente em uma posição inválida.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_EVT_NON_VALIDATING_MSXML"></span><span id="error_evt_non_validating_msxml"></span>**ERRO \_ EVT \_ não \_ Validando o \_ MSXML**
+<span id="ERROR_EVT_NON_VALIDATING_MSXML"></span><span id="error_evt_non_validating_msxml"></span>**ERRO \_ EVT \_ não \_ Validando \_ MSXML**
 </dt> <dd> <dl> <dt>
 
 15013 (0x3AA5)
@@ -3629,7 +3629,7 @@ O resultado da consulta está atualmente em uma posição inválida.
 
 
 
-O MSXML registrado não dá suporte à validação.
+o MSXML registrado não dá suporte à validação.
 
 
 </dt> </dl> </dd> <dt>
@@ -3772,12 +3772,12 @@ Propriedade do canal %1! s! contém valor inválido. O valor tem tipo inválido,
 
 
 
-Propriedade do Publicador %1! s! contém valor inválido. O valor tem tipo inválido, está fora do intervalo válido, não pode ser atualizado ou não é suportado por este tipo de editor.
+Publisher propriedade %1!s! contém valor inválido. O valor tem um tipo inválido, está fora do intervalo válido, não pode ser atualizado ou não tem suporte para esse tipo de publicador.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_EVT_CHANNEL_CANNOT_ACTIVATE"></span><span id="error_evt_channel_cannot_activate"></span>**ERRO \_ EVT de \_ canal \_ não pode \_ Ativar**
+<span id="ERROR_EVT_CHANNEL_CANNOT_ACTIVATE"></span><span id="error_evt_channel_cannot_activate"></span>**ERRO \_ O CANAL EVT \_ NÃO PODE SER \_ \_ ATIVADO**
 </dt> <dd> <dl> <dt>
 
 15025 (0x3AB1)
@@ -3790,7 +3790,7 @@ Falha na ativação do canal.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_EVT_FILTER_TOO_COMPLEX"></span><span id="error_evt_filter_too_complex"></span>**filtro de erro \_ EVT \_ \_ muito \_ complexo**
+<span id="ERROR_EVT_FILTER_TOO_COMPLEX"></span><span id="error_evt_filter_too_complex"></span>**ERRO \_ FILTRO EVT \_ MUITO \_ \_ COMPLEXO**
 </dt> <dd> <dl> <dt>
 
 15026 (0x3AB2)
@@ -3798,12 +3798,12 @@ Falha na ativação do canal.
 
 
 
-A expressão XPath excedeu a complexidade com suporte. Symplify-o ou divida-o em duas ou mais expressões simples.
+A expressão xpath excedeu a complexidade com suporte. Simunte-o ou divida-o em duas ou mais expressões simples.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_EVT_MESSAGE_NOT_FOUND"></span><span id="error_evt_message_not_found"></span>**mensagem de erro \_ EVT \_ \_ não \_ encontrada**
+<span id="ERROR_EVT_MESSAGE_NOT_FOUND"></span><span id="error_evt_message_not_found"></span>**ERRO \_ MENSAGEM EVT \_ NÃO \_ \_ ENCONTRADA**
 </dt> <dd> <dl> <dt>
 
 15027 (0x3AB3)
@@ -3811,12 +3811,12 @@ A expressão XPath excedeu a complexidade com suporte. Symplify-o ou divida-o em
 
 
 
-o recurso de mensagem está presente, mas a mensagem não foi encontrada na tabela de cadeia de caracteres/mensagem.
+o recurso de mensagem está presente, mas a mensagem não é encontrada na tabela cadeia de caracteres/mensagem.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_EVT_MESSAGE_ID_NOT_FOUND"></span><span id="error_evt_message_id_not_found"></span>**ID de mensagem de erro \_ EVT \_ \_ \_ não \_ encontrada**
+<span id="ERROR_EVT_MESSAGE_ID_NOT_FOUND"></span><span id="error_evt_message_id_not_found"></span>**ERRO \_ ID DA \_ MENSAGEM \_ EVT NÃO \_ \_ ENCONTRADA**
 </dt> <dd> <dl> <dt>
 
 15028 (0x3AB4)
@@ -3829,7 +3829,7 @@ Não foi possível encontrar a ID da mensagem desejada.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_EVT_UNRESOLVED_VALUE_INSERT"></span><span id="error_evt_unresolved_value_insert"></span>**ERRO \_ EVT de \_ inserção de \_ valor não resolvido \_**
+<span id="ERROR_EVT_UNRESOLVED_VALUE_INSERT"></span><span id="error_evt_unresolved_value_insert"></span>**ERRO \_ EVT \_ UNRESOLVED \_ VALUE \_ INSERT**
 </dt> <dd> <dl> <dt>
 
 15029 (0x3AB5)
@@ -3842,7 +3842,7 @@ Não foi possível encontrar a cadeia de caracteres de substituição para o ín
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_EVT_UNRESOLVED_PARAMETER_INSERT"></span><span id="error_evt_unresolved_parameter_insert"></span>**ERRO \_ EVT de \_ inserção de \_ parâmetro não resolvido \_**
+<span id="ERROR_EVT_UNRESOLVED_PARAMETER_INSERT"></span><span id="error_evt_unresolved_parameter_insert"></span>**ERRO \_ EVT \_ UNRESOLVED \_ PARAMETER \_ INSERT**
 </dt> <dd> <dl> <dt>
 
 15030 (0x3AB6)
@@ -3850,12 +3850,12 @@ Não foi possível encontrar a cadeia de caracteres de substituição para o ín
 
 
 
-Não foi possível encontrar a cadeia de caracteres de descrição para a referência de parâmetro (%1).
+Não foi possível encontrar a cadeia de caracteres de descrição para referência de parâmetro (%1).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_EVT_MAX_INSERTS_REACHED"></span><span id="error_evt_max_inserts_reached"></span>**ERRO \_ EVT \_ máximo de \_ inserções \_ atingido**
+<span id="ERROR_EVT_MAX_INSERTS_REACHED"></span><span id="error_evt_max_inserts_reached"></span>**ERRO \_ INSERÇÕES MÁXIMAS DE EVT \_ \_ \_ ATINGIDAS**
 </dt> <dd> <dl> <dt>
 
 15031 (0x3AB7)
@@ -3868,7 +3868,7 @@ O número máximo de substituições foi atingido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_EVT_EVENT_DEFINITION_NOT_FOUND"></span><span id="error_evt_event_definition_not_found"></span>**\_definição de evento EVT de erro \_ \_ \_ não \_ encontrada**
+<span id="ERROR_EVT_EVENT_DEFINITION_NOT_FOUND"></span><span id="error_evt_event_definition_not_found"></span>**ERRO \_ DEFINIÇÃO DE EVENTO EVT \_ NÃO \_ \_ \_ ENCONTRADA**
 </dt> <dd> <dl> <dt>
 
 15032 (0x3AB8)
@@ -3876,12 +3876,12 @@ O número máximo de substituições foi atingido.
 
 
 
-Não foi possível encontrar a definição de evento para a ID de evento (%1).
+Não foi possível encontrar a definição de evento para a ID do evento (%1).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_EVT_MESSAGE_LOCALE_NOT_FOUND"></span><span id="error_evt_message_locale_not_found"></span>**ERRO \_ EVT \_ localidade de mensagem \_ \_ não \_ encontrada**
+<span id="ERROR_EVT_MESSAGE_LOCALE_NOT_FOUND"></span><span id="error_evt_message_locale_not_found"></span>**ERRO \_ A LOCALIDADE DA MENSAGEM \_ \_ EVT NÃO \_ \_ ENCONTRADA**
 </dt> <dd> <dl> <dt>
 
 15033 (0x3AB9)
@@ -3889,12 +3889,12 @@ Não foi possível encontrar a definição de evento para a ID de evento (%1).
 
 
 
-O recurso específico da localidade para a mensagem desejada não está presente.
+O recurso específico de localidade para a mensagem desejada não está presente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_EVT_VERSION_TOO_OLD"></span><span id="error_evt_version_too_old"></span>**versão de erro \_ EVT \_ \_ muito \_ antiga**
+<span id="ERROR_EVT_VERSION_TOO_OLD"></span><span id="error_evt_version_too_old"></span>**ERRO \_ VERSÃO EVT \_ MUITO \_ \_ ANTIGA**
 </dt> <dd> <dl> <dt>
 
 15034 (0x3ABA)
@@ -3907,7 +3907,7 @@ O recurso é muito antigo para ser compatível.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_EVT_VERSION_TOO_NEW"></span><span id="error_evt_version_too_new"></span>**versão de erro \_ EVT \_ \_ muito \_ nova**
+<span id="ERROR_EVT_VERSION_TOO_NEW"></span><span id="error_evt_version_too_new"></span>**ERRO \_ VERSÃO EVT \_ MUITO \_ \_ NOVA**
 </dt> <dd> <dl> <dt>
 
 15035 (0x3ABB)
@@ -3915,12 +3915,12 @@ O recurso é muito antigo para ser compatível.
 
 
 
-O recurso é muito novo para ser compatível.
+O recurso é novo demais para ser compatível.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_EVT_CANNOT_OPEN_CHANNEL_OF_QUERY"></span><span id="error_evt_cannot_open_channel_of_query"></span>**o erro \_ EVT \_ não pode \_ abrir o \_ canal \_ de \_ consulta**
+<span id="ERROR_EVT_CANNOT_OPEN_CHANNEL_OF_QUERY"></span><span id="error_evt_cannot_open_channel_of_query"></span>**ERRO \_ EVT \_ NÃO PODE ABRIR O CANAL DA \_ \_ \_ \_ CONSULTA**
 </dt> <dd> <dl> <dt>
 
 15036 (0x3ABC)
@@ -3928,12 +3928,12 @@ O recurso é muito novo para ser compatível.
 
 
 
-O canal no índice %1! d! Não é possível abrir a consulta.
+O canal no índice %1!d! da consulta não pode ser aberta.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_EVT_PUBLISHER_DISABLED"></span><span id="error_evt_publisher_disabled"></span>**ERRO \_ EVT \_ Editor \_ desabilitado**
+<span id="ERROR_EVT_PUBLISHER_DISABLED"></span><span id="error_evt_publisher_disabled"></span>**ERRO \_ PUBLICADOR EVT \_ \_ DESABILITADO**
 </dt> <dd> <dl> <dt>
 
 15037 (0x3ABD)
@@ -3941,12 +3941,12 @@ O canal no índice %1! d! Não é possível abrir a consulta.
 
 
 
-O Publicador foi desabilitado e seu recurso não está disponível. Isso geralmente ocorre quando o Publicador está no processo de ser desinstalado ou atualizado.
+O publicador foi desabilitado e seu recurso não está disponível. Isso geralmente ocorre quando o publicador está no processo de desinstalação ou atualização.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_EVT_FILTER_OUT_OF_RANGE"></span><span id="error_evt_filter_out_of_range"></span>**\_ \_ filtro de erro EVT \_ fora \_ do \_ intervalo**
+<span id="ERROR_EVT_FILTER_OUT_OF_RANGE"></span><span id="error_evt_filter_out_of_range"></span>**ERRO \_ FILTRO EVT \_ FORA DO \_ \_ \_ INTERVALO**
 </dt> <dd> <dl> <dt>
 
 15038 (0x3ABE)
@@ -3959,7 +3959,7 @@ Tentativa de criar um tipo numérico que está fora de seu intervalo válido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_EC_SUBSCRIPTION_CANNOT_ACTIVATE"></span><span id="error_ec_subscription_cannot_activate"></span>**ERRO \_ a \_ assinatura do EC \_ não pode \_ Ativar**
+<span id="ERROR_EC_SUBSCRIPTION_CANNOT_ACTIVATE"></span><span id="error_ec_subscription_cannot_activate"></span>**A \_ ASSINATURA EC DE ERRO NÃO PODE SER \_ \_ \_ ATIVADA**
 </dt> <dd> <dl> <dt>
 
 15080 (0x3AE8)
@@ -3972,7 +3972,7 @@ Falha na ativação da assinatura.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_EC_LOG_DISABLED"></span><span id="error_ec_log_disabled"></span>**ERRO \_ de \_ log do EC \_ desabilitado**
+<span id="ERROR_EC_LOG_DISABLED"></span><span id="error_ec_log_disabled"></span>**ERRO \_ LOG EC \_ \_ DESABILITADO**
 </dt> <dd> <dl> <dt>
 
 15081 (0x3AE9)
@@ -3980,12 +3980,12 @@ Falha na ativação da assinatura.
 
 
 
-O log da assinatura está em estado desabilitado e não pode ser usado para encaminhar eventos para o. O log deve ser habilitado primeiro para que a assinatura possa ser ativada.
+O log da assinatura está no estado desabilitado e não pode ser usado para encaminhar eventos. O log deve primeiro ser habilitado antes que a assinatura possa ser ativada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_EC_CIRCULAR_FORWARDING"></span><span id="error_ec_circular_forwarding"></span>**ERRO \_ de \_ encaminhamento circular do EC \_**
+<span id="ERROR_EC_CIRCULAR_FORWARDING"></span><span id="error_ec_circular_forwarding"></span>**ERRO \_ ENCAMINHAMENTO \_ CIRCULAR \_ EC**
 </dt> <dd> <dl> <dt>
 
 15082 (0x3AEA)
@@ -3998,7 +3998,7 @@ Ao encaminhar eventos do computador local para ele mesmo, a consulta da assinatu
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_EC_CREDSTORE_FULL"></span><span id="error_ec_credstore_full"></span>**ERRO \_ EC \_ CREDSTORE \_ completo**
+<span id="ERROR_EC_CREDSTORE_FULL"></span><span id="error_ec_credstore_full"></span>**ERRO \_ EC \_ CREDSTORE \_ FULL**
 </dt> <dd> <dl> <dt>
 
 15083 (0x3AEB)
@@ -4006,12 +4006,12 @@ Ao encaminhar eventos do computador local para ele mesmo, a consulta da assinatu
 
 
 
-O repositório de credenciais usado para salvar as credenciais está cheio.
+O armazenamento de credenciais usado para salvar credenciais está cheio.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_EC_CRED_NOT_FOUND"></span><span id="error_ec_cred_not_found"></span>**ERRO \_ de \_ credenciais do EC \_ não \_ encontrado**
+<span id="ERROR_EC_CRED_NOT_FOUND"></span><span id="error_ec_cred_not_found"></span>**ERRO \_ EC \_ CRED NÃO \_ \_ ENCONTRADO**
 </dt> <dd> <dl> <dt>
 
 15084 (0x3AEC)
@@ -4019,12 +4019,12 @@ O repositório de credenciais usado para salvar as credenciais está cheio.
 
 
 
-A credencial usada por essa assinatura não pode ser encontrada no repositório de credenciais.
+A credencial usada por essa assinatura não pode ser encontrada no armazenamento de credenciais.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_EC_NO_ACTIVE_CHANNEL"></span><span id="error_ec_no_active_channel"></span>**ERRO \_ EC \_ nenhum \_ \_ canal ativo**
+<span id="ERROR_EC_NO_ACTIVE_CHANNEL"></span><span id="error_ec_no_active_channel"></span>**ERRO \_ EC NO ACTIVE \_ \_ \_ CHANNEL**
 </dt> <dd> <dl> <dt>
 
 15085 (0x3AED)
@@ -4032,12 +4032,12 @@ A credencial usada por essa assinatura não pode ser encontrada no repositório 
 
 
 
-Nenhum canal ativo foi encontrado para a consulta.
+Nenhum canal ativo é encontrado para a consulta.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MUI_FILE_NOT_FOUND"></span><span id="error_mui_file_not_found"></span>**ERRO \_ de \_ arquivo MUI \_ não \_ encontrado**
+<span id="ERROR_MUI_FILE_NOT_FOUND"></span><span id="error_mui_file_not_found"></span>**ERRO \_ ARQUIVO DE MUI NÃO \_ \_ \_ ENCONTRADO**
 </dt> <dd> <dl> <dt>
 
 15100 (0x3AFC)
@@ -4045,12 +4045,12 @@ Nenhum canal ativo foi encontrado para a consulta.
 
 
 
-Falha do carregador de recursos ao localizar o arquivo MUI.
+Falha do carregador de recursos ao encontrar o arquivo MUI.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MUI_INVALID_FILE"></span><span id="error_mui_invalid_file"></span>**ERRO \_ de \_ arquivo inválido MUI \_**
+<span id="ERROR_MUI_INVALID_FILE"></span><span id="error_mui_invalid_file"></span>**ERRO \_ ARQUIVO INVÁLIDO DA MUI \_ \_**
 </dt> <dd> <dl> <dt>
 
 15101 (0x3AFD)
@@ -4058,12 +4058,12 @@ Falha do carregador de recursos ao localizar o arquivo MUI.
 
 
 
-Falha do carregador de recursos ao carregar o arquivo MUI porque o arquivo não pôde passar na validação.
+O carregador de recursos não conseguiu carregar o arquivo MUI porque o arquivo não passou na validação.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MUI_INVALID_RC_CONFIG"></span><span id="error_mui_invalid_rc_config"></span>**ERRO \_ de \_ \_ configuração RC inválida do MUI \_**
+<span id="ERROR_MUI_INVALID_RC_CONFIG"></span><span id="error_mui_invalid_rc_config"></span>**ERRO \_ MUI \_ INVALID RC \_ \_ CONFIG**
 </dt> <dd> <dl> <dt>
 
 15102 (0x3AFE)
@@ -4071,12 +4071,12 @@ Falha do carregador de recursos ao carregar o arquivo MUI porque o arquivo não 
 
 
 
-O manifesto RC está corrompido com dados de lixo ou de versão sem suporte ou com um item necessário ausente.
+O Manifesto RC está corrompido com dados de lixo ou versão sem suporte ou item necessário ausente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MUI_INVALID_LOCALE_NAME"></span><span id="error_mui_invalid_locale_name"></span>**ERRO \_ \_ nome de \_ localidade \_ inválido do MUI**
+<span id="ERROR_MUI_INVALID_LOCALE_NAME"></span><span id="error_mui_invalid_locale_name"></span>**ERRO \_ NOME DE LOCALIDADE INVÁLIDO \_ \_ DA MUI \_**
 </dt> <dd> <dl> <dt>
 
 15103 (0x3AFF)
@@ -4084,12 +4084,12 @@ O manifesto RC está corrompido com dados de lixo ou de versão sem suporte ou c
 
 
 
-O manifesto RC tem um nome de cultura inválido.
+O Manifesto RC tem um nome de cultura inválido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MUI_INVALID_ULTIMATEFALLBACK_NAME"></span><span id="error_mui_invalid_ultimatefallback_name"></span>**ERRO \_ \_ nome de \_ ULTIMATEFALLBACK \_ inválido do MUI**
+<span id="ERROR_MUI_INVALID_ULTIMATEFALLBACK_NAME"></span><span id="error_mui_invalid_ultimatefallback_name"></span>**ERRO \_ MUI \_ INVALID \_ ULTIMATEFALLBACK \_ NAME**
 </dt> <dd> <dl> <dt>
 
 15104 (0x3B00)
@@ -4097,12 +4097,12 @@ O manifesto RC tem um nome de cultura inválido.
 
 
 
-O manifesto RC tem um nome de ultimatefallback inválido.
+O Manifesto RC tem um nome ultimatefallback inválido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MUI_FILE_NOT_LOADED"></span><span id="error_mui_file_not_loaded"></span>**ERRO \_ \_ arquivo MUI \_ não \_ carregado**
+<span id="ERROR_MUI_FILE_NOT_LOADED"></span><span id="error_mui_file_not_loaded"></span>**ERRO \_ ARQUIVO DE MUI NÃO \_ \_ \_ CARREGADO**
 </dt> <dd> <dl> <dt>
 
 15105 (0x3B01)
@@ -4110,12 +4110,12 @@ O manifesto RC tem um nome de ultimatefallback inválido.
 
 
 
-O cache do carregador de recursos não tem a entrada MUI carregada.
+O cache do carregador de recursos não carregou a entrada da MUI.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_RESOURCE_ENUM_USER_STOP"></span><span id="error_resource_enum_user_stop"></span>**\_parada de \_ usuário de enumeração de recurso de erro \_ \_**
+<span id="ERROR_RESOURCE_ENUM_USER_STOP"></span><span id="error_resource_enum_user_stop"></span>**ERROR \_ RESOURCE \_ ENUM \_ USER \_ STOP**
 </dt> <dd> <dl> <dt>
 
 15106 (0x3B02)
@@ -4123,12 +4123,12 @@ O cache do carregador de recursos não tem a entrada MUI carregada.
 
 
 
-Enumeração de recursos interrompida pelo usuário.
+Enumeração de recurso interrompida pelo usuário.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MUI_INTLSETTINGS_UILANG_NOT_INSTALLED"></span><span id="error_mui_intlsettings_uilang_not_installed"></span>**ERRO \_ MUI \_ INTLSETTINGS \_ UILANG \_ não \_ instalado**
+<span id="ERROR_MUI_INTLSETTINGS_UILANG_NOT_INSTALLED"></span><span id="error_mui_intlsettings_uilang_not_installed"></span>**ERRO \_ MUI \_ INTLSETTINGS \_ UILANG \_ NÃO \_ INSTALADO**
 </dt> <dd> <dl> <dt>
 
 15107 (0x3B03)
@@ -4141,7 +4141,7 @@ Falha na instalação do idioma da interface do usuário.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MUI_INTLSETTINGS_INVALID_LOCALE_NAME"></span><span id="error_mui_intlsettings_invalid_locale_name"></span>**ERRO \_ MUI \_ INTLSETTINGS \_ \_ nome de localidade inválido \_**
+<span id="ERROR_MUI_INTLSETTINGS_INVALID_LOCALE_NAME"></span><span id="error_mui_intlsettings_invalid_locale_name"></span>**ERRO \_ MUI \_ INTLSETTINGS \_ NOME DE LOCALIDADE \_ \_ INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 15108 (0x3B04)
@@ -4154,7 +4154,7 @@ Falha na instalação da localidade.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MRM_RUNTIME_NO_DEFAULT_OR_NEUTRAL_RESOURCE"></span><span id="error_mrm_runtime_no_default_or_neutral_resource"></span>**ERRO \_ MRM \_ tempo \_ de execução sem \_ \_ recurso padrão ou \_ neutro \_**
+<span id="ERROR_MRM_RUNTIME_NO_DEFAULT_OR_NEUTRAL_RESOURCE"></span><span id="error_mrm_runtime_no_default_or_neutral_resource"></span>**ERRO \_ NO RUNTIME DO MRM \_ SEM RECURSO PADRÃO OU \_ \_ \_ \_ \_ NEUTRO**
 </dt> <dd> <dl> <dt>
 
 15110 (0x3B06)
@@ -4167,7 +4167,7 @@ Um recurso não tem valor padrão ou neutro.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MRM_INVALID_PRICONFIG"></span><span id="error_mrm_invalid_priconfig"></span>**ERRO \_ MRM \_ \_ PRICONFIG inválido**
+<span id="ERROR_MRM_INVALID_PRICONFIG"></span><span id="error_mrm_invalid_priconfig"></span>**ERRO \_ MRM \_ INVALID \_ PRICONFIG**
 </dt> <dd> <dl> <dt>
 
 15111 (0x3B07)
@@ -4180,7 +4180,7 @@ Arquivo de configuração PRI inválido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MRM_INVALID_FILE_TYPE"></span><span id="error_mrm_invalid_file_type"></span>**ERRO \_ MRM \_ \_ tipo de arquivo inválido \_**
+<span id="ERROR_MRM_INVALID_FILE_TYPE"></span><span id="error_mrm_invalid_file_type"></span>**ERRO \_ TIPO DE ARQUIVO INVÁLIDO \_ \_ MRM \_**
 </dt> <dd> <dl> <dt>
 
 15112 (0x3B08)
@@ -4193,7 +4193,7 @@ Tipo de arquivo inválido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MRM_UNKNOWN_QUALIFIER"></span><span id="error_mrm_unknown_qualifier"></span>**ERRO \_ MRM \_ \_ qualificador desconhecido**
+<span id="ERROR_MRM_UNKNOWN_QUALIFIER"></span><span id="error_mrm_unknown_qualifier"></span>**ERRO \_ QUALIFICADOR DESCONHECIDO DO MRM \_ \_**
 </dt> <dd> <dl> <dt>
 
 15113 (0x3B09)
@@ -4206,7 +4206,7 @@ Qualificador desconhecido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MRM_INVALID_QUALIFIER_VALUE"></span><span id="error_mrm_invalid_qualifier_value"></span>**ERRO \_ MRM \_ \_ valor de qualificador inválido \_**
+<span id="ERROR_MRM_INVALID_QUALIFIER_VALUE"></span><span id="error_mrm_invalid_qualifier_value"></span>**ERRO \_ VALOR DE \_ QUALIFICADOR INVÁLIDO \_ DO MRM \_**
 </dt> <dd> <dl> <dt>
 
 15114 (0x3B0A)
@@ -4214,12 +4214,12 @@ Qualificador desconhecido.
 
 
 
-Valor de qualificador inválido.
+Valor do qualificador inválido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MRM_NO_CANDIDATE"></span><span id="error_mrm_no_candidate"></span>**ERRO \_ MRM \_ nenhum \_ candidato**
+<span id="ERROR_MRM_NO_CANDIDATE"></span><span id="error_mrm_no_candidate"></span>**ERRO \_ MRM \_ NO \_ CANDIDATE**
 </dt> <dd> <dl> <dt>
 
 15115 (0x3B0B)
@@ -4227,12 +4227,12 @@ Valor de qualificador inválido.
 
 
 
-Nenhum candidato encontrado.
+Nenhum Candidato encontrado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MRM_NO_MATCH_OR_DEFAULT_CANDIDATE"></span><span id="error_mrm_no_match_or_default_candidate"></span>**ERRO \_ MRM \_ sem \_ correspondência \_ ou \_ \_ candidato padrão**
+<span id="ERROR_MRM_NO_MATCH_OR_DEFAULT_CANDIDATE"></span><span id="error_mrm_no_match_or_default_candidate"></span>**ERRO \_ MRM \_ NO MATCH OR DEFAULT \_ \_ \_ \_ CANDIDATE**
 </dt> <dd> <dl> <dt>
 
 15116 (0x3B0C)
@@ -4240,12 +4240,12 @@ Nenhum candidato encontrado.
 
 
 
-ResourceMap ou NamedResource tem um item que não tem recurso padrão ou neutro..
+O ResourceMap ou NamedResource tem um item que não tem um recurso padrão ou neutro..
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MRM_RESOURCE_TYPE_MISMATCH"></span><span id="error_mrm_resource_type_mismatch"></span>**ERRO \_ de \_ \_ incompatibilidade de tipo de recurso MRM \_**
+<span id="ERROR_MRM_RESOURCE_TYPE_MISMATCH"></span><span id="error_mrm_resource_type_mismatch"></span>**ERRO \_ INCOMPATIBILIDADE DO \_ TIPO DE RECURSO \_ \_ MRM**
 </dt> <dd> <dl> <dt>
 
 15117 (0x3B0D)
@@ -4253,12 +4253,12 @@ ResourceMap ou NamedResource tem um item que não tem recurso padrão ou neutro.
 
 
 
-Tipo de ResourceCandidate inválido.
+Tipo ResourceCandidate inválido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MRM_DUPLICATE_MAP_NAME"></span><span id="error_mrm_duplicate_map_name"></span>**ERRO \_ MRM \_ \_ nome do mapa duplicado \_**
+<span id="ERROR_MRM_DUPLICATE_MAP_NAME"></span><span id="error_mrm_duplicate_map_name"></span>**ERRO \_ NOME DO MAPA \_ DUPLICADO \_ DO MRM \_**
 </dt> <dd> <dl> <dt>
 
 15118 (0x3B0E)
@@ -4266,12 +4266,12 @@ Tipo de ResourceCandidate inválido.
 
 
 
-Mapa de recursos duplicado.
+Duplicar Mapa de Recursos.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MRM_DUPLICATE_ENTRY"></span><span id="error_mrm_duplicate_entry"></span>**ERRO \_ MRM \_ entrada duplicada \_**
+<span id="ERROR_MRM_DUPLICATE_ENTRY"></span><span id="error_mrm_duplicate_entry"></span>**ERRO \_ DE ENTRADA \_ DUPLICADA DO MRM \_**
 </dt> <dd> <dl> <dt>
 
 15119 (0x3B0F)
@@ -4284,7 +4284,7 @@ Entrada duplicada.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MRM_INVALID_RESOURCE_IDENTIFIER"></span><span id="error_mrm_invalid_resource_identifier"></span>**ERRO \_ MRM \_ \_ identificador de recurso inválido \_**
+<span id="ERROR_MRM_INVALID_RESOURCE_IDENTIFIER"></span><span id="error_mrm_invalid_resource_identifier"></span>**ERRO \_ IDENTIFICADOR DE RECURSO \_ INVÁLIDO \_ DO MRM \_**
 </dt> <dd> <dl> <dt>
 
 15120 (0x3B10)
@@ -4297,7 +4297,7 @@ Identificador de recurso inválido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MRM_FILEPATH_TOO_LONG"></span><span id="error_mrm_filepath_too_long"></span>**ERRO \_ MRM \_ FilePath \_ muito \_ longo**
+<span id="ERROR_MRM_FILEPATH_TOO_LONG"></span><span id="error_mrm_filepath_too_long"></span>**ERRO \_ MRM \_ FILEPATH MUITO \_ \_ LONGO**
 </dt> <dd> <dl> <dt>
 
 15121 (0x3B11)
@@ -4305,12 +4305,12 @@ Identificador de recurso inválido.
 
 
 
-FilePath muito longo.
+Caminho do arquivo muito longo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MRM_UNSUPPORTED_DIRECTORY_TYPE"></span><span id="error_mrm_unsupported_directory_type"></span>**ERRO \_ MRM \_ tipo de diretório sem suporte \_ \_**
+<span id="ERROR_MRM_UNSUPPORTED_DIRECTORY_TYPE"></span><span id="error_mrm_unsupported_directory_type"></span>**ERRO DO TIPO DE DIRETÓRIO \_ \_ MRM SEM \_ \_ SUPORTE**
 </dt> <dd> <dl> <dt>
 
 15122 (0x3B12)
@@ -4323,7 +4323,7 @@ Tipo de diretório sem suporte.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MRM_INVALID_PRI_FILE"></span><span id="error_mrm_invalid_pri_file"></span>**ERRO \_ MRM \_ \_ arquivo pri \_ inválido**
+<span id="ERROR_MRM_INVALID_PRI_FILE"></span><span id="error_mrm_invalid_pri_file"></span>**ERRO \_ ARQUIVO PRI \_ \_ INVÁLIDO DO MRM \_**
 </dt> <dd> <dl> <dt>
 
 15126 (0x3B16)
@@ -4336,7 +4336,7 @@ Arquivo PRI inválido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MRM_NAMED_RESOURCE_NOT_FOUND"></span><span id="error_mrm_named_resource_not_found"></span>**ERRO \_ MRM com o \_ \_ recurso nomeado \_ não \_ encontrado**
+<span id="ERROR_MRM_NAMED_RESOURCE_NOT_FOUND"></span><span id="error_mrm_named_resource_not_found"></span>**ERRO \_ MRM \_ CHAMADO RECURSO NÃO \_ \_ \_ ENCONTRADO**
 </dt> <dd> <dl> <dt>
 
 15127 (0x3B17)
@@ -4349,7 +4349,7 @@ NamedResource não encontrado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MRM_MAP_NOT_FOUND"></span><span id="error_mrm_map_not_found"></span>**mapa de MRM de erro \_ \_ \_ não \_ encontrado**
+<span id="ERROR_MRM_MAP_NOT_FOUND"></span><span id="error_mrm_map_not_found"></span>**ERRO \_ MAPA DO MRM NÃO \_ \_ \_ ENCONTRADO**
 </dt> <dd> <dl> <dt>
 
 15135 (0x3B1F)
@@ -4362,7 +4362,7 @@ ResourceMap não encontrado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MRM_UNSUPPORTED_PROFILE_TYPE"></span><span id="error_mrm_unsupported_profile_type"></span>**ERRO \_ MRM \_ tipo de perfil sem suporte \_ \_**
+<span id="ERROR_MRM_UNSUPPORTED_PROFILE_TYPE"></span><span id="error_mrm_unsupported_profile_type"></span>**ERRO \_ TIPO DE PERFIL \_ MRM SEM \_ \_ SUPORTE**
 </dt> <dd> <dl> <dt>
 
 15136 (0x3B20)
@@ -4375,7 +4375,7 @@ Tipo de perfil MRT sem suporte.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MRM_INVALID_QUALIFIER_OPERATOR"></span><span id="error_mrm_invalid_qualifier_operator"></span>**ERRO \_ MRM \_ \_ operador qualificador inválido \_**
+<span id="ERROR_MRM_INVALID_QUALIFIER_OPERATOR"></span><span id="error_mrm_invalid_qualifier_operator"></span>**ERRO \_ OPERADOR QUALIFICADOR \_ INVÁLIDO \_ DO MRM \_**
 </dt> <dd> <dl> <dt>
 
 15137 (0x3B21)
@@ -4388,7 +4388,7 @@ Operador qualificador inválido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MRM_INDETERMINATE_QUALIFIER_VALUE"></span><span id="error_mrm_indeterminate_qualifier_value"></span>**ERRO \_ MRM \_ \_ valor de qualificador indeterminado \_**
+<span id="ERROR_MRM_INDETERMINATE_QUALIFIER_VALUE"></span><span id="error_mrm_indeterminate_qualifier_value"></span>**ERRO \_ VALOR DO \_ QUALIFICADOR INDETERMINADO \_ DO MRM \_**
 </dt> <dd> <dl> <dt>
 
 15138 (0x3B22)
@@ -4401,7 +4401,7 @@ Não é possível determinar se o valor do qualificador ou o valor do qualificad
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MRM_AUTOMERGE_ENABLED"></span><span id="error_mrm_automerge_enabled"></span>**ERRO \_ MRM \_ mesclagem automática \_ habilitada**
+<span id="ERROR_MRM_AUTOMERGE_ENABLED"></span><span id="error_mrm_automerge_enabled"></span>**ERRO \_ MRM \_ AUTOMERGE \_ HABILITADO**
 </dt> <dd> <dl> <dt>
 
 15139 (0x3B23)
@@ -4409,12 +4409,12 @@ Não é possível determinar se o valor do qualificador ou o valor do qualificad
 
 
 
-A mesclagem automática está habilitada no arquivo PRI.
+A opção Automerge está habilitada no arquivo PRI.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MRM_TOO_MANY_RESOURCES"></span><span id="error_mrm_too_many_resources"></span>**ERRO \_ MRM \_ \_ muitos \_ recursos**
+<span id="ERROR_MRM_TOO_MANY_RESOURCES"></span><span id="error_mrm_too_many_resources"></span>**ERRO MUITOS RECURSOS DO \_ MRM \_ \_ \_**
 </dt> <dd> <dl> <dt>
 
 15140 (0x3B24)
@@ -4427,7 +4427,7 @@ Muitos recursos definidos para o pacote.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MCA_INVALID_CAPABILITIES_STRING"></span><span id="error_mca_invalid_capabilities_string"></span>**ERRO \_ de \_ cadeia de \_ caracteres de funcionalidades inválidas MCA \_**
+<span id="ERROR_MCA_INVALID_CAPABILITIES_STRING"></span><span id="error_mca_invalid_capabilities_string"></span>**ERRO \_ MCA \_ INVALID CAPABILITIES \_ \_ STRING**
 </dt> <dd> <dl> <dt>
 
 15200 (0x3B60)
@@ -4435,12 +4435,12 @@ Muitos recursos definidos para o pacote.
 
 
 
-O monitor retornou uma cadeia de recursos DDC/CI que não estava em conformidade com a especificação ACCESS. Bus 3,0, DDC/CI 1,1 ou MCCS 2 revisão 1.
+O monitor retornou uma cadeia de caracteres de funcionalidades de DDC/CI que não estava em conformidade com a especificação ACCESS.bus 3.0, DDC/CI 1.1 ou MCCS 2 Revisão 1.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MCA_INVALID_VCP_VERSION"></span><span id="error_mca_invalid_vcp_version"></span>**ERRO \_ MCA \_ \_ versão de VCP inválida \_**
+<span id="ERROR_MCA_INVALID_VCP_VERSION"></span><span id="error_mca_invalid_vcp_version"></span>**ERRO \_ MCA \_ VERSÃO DE \_ VCP \_ INVÁLIDA**
 </dt> <dd> <dl> <dt>
 
 15201 (0x3B61)
@@ -4448,12 +4448,12 @@ O monitor retornou uma cadeia de recursos DDC/CI que não estava em conformidade
 
 
 
-O código VCP da versão VCP do monitor (0xDF) retornou um valor de versão inválido.
+O código VCP de versão (0xDF) do monitor retornou um valor de versão inválido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MCA_MONITOR_VIOLATES_MCCS_SPECIFICATION"></span><span id="error_mca_monitor_violates_mccs_specification"></span>**ERRO \_ o \_ Monitor MCA \_ viola \_ a \_ especificação MCCS**
+<span id="ERROR_MCA_MONITOR_VIOLATES_MCCS_SPECIFICATION"></span><span id="error_mca_monitor_violates_mccs_specification"></span>**ERRO \_ O MONITOR DO MCA VIOLA A \_ \_ \_ ESPECIFICAÇÃO DO \_ MCCS**
 </dt> <dd> <dl> <dt>
 
 15202 (0x3B62)
@@ -4461,12 +4461,12 @@ O código VCP da versão VCP do monitor (0xDF) retornou um valor de versão inv�
 
 
 
-O monitor não está em conformidade com a especificação MCCS para a qual ele alega dar suporte.
+O monitor não está em conformidade com a especificação do MCCS que ele declara dar suporte.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MCA_MCCS_VERSION_MISMATCH"></span><span id="error_mca_mccs_version_mismatch"></span>**ERRO \_ de \_ \_ incompatibilidade de versão MCA MCCs \_**
+<span id="ERROR_MCA_MCCS_VERSION_MISMATCH"></span><span id="error_mca_mccs_version_mismatch"></span>**ERRO \_ INCOMPATIBILIDADE DE \_ VERSÃO DO MCA MCCS \_ \_**
 </dt> <dd> <dl> <dt>
 
 15203 (0x3B63)
@@ -4474,12 +4474,12 @@ O monitor não está em conformidade com a especificação MCCS para a qual ele 
 
 
 
-A versão MCCS no recurso MCCs ver de um monitor \_ não corresponde à versão MCCS que o monitor relata quando o código VCP de versão VCP (0xDF) é usado.
+A versão do MCCS na funcionalidade mccs ver de um monitor não corresponderá à versão do MCCS relatada pelo monitor quando o código VCP da versão \_ do VCP (0xDF) for usado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MCA_UNSUPPORTED_MCCS_VERSION"></span><span id="error_mca_unsupported_mccs_version"></span>**ERRO \_ de \_ versão do MCCs sem suporte para MCA \_ \_**
+<span id="ERROR_MCA_UNSUPPORTED_MCCS_VERSION"></span><span id="error_mca_unsupported_mccs_version"></span>**ERRO \_ MCA \_ VERSÃO DE \_ MCCS SEM \_ SUPORTE**
 </dt> <dd> <dl> <dt>
 
 15204 (0x3B64)
@@ -4487,12 +4487,12 @@ A versão MCCS no recurso MCCs ver de um monitor \_ não corresponde à versão 
 
 
 
-A API de configuração do monitor só funciona com monitores que dão suporte à especificação MCCS 1,0, MCCS 2,0 ou a especificação MCCS 2,0 revisão 1.
+A API de Configuração do Monitor só funciona com monitores que suportam a especificação MCCS 1.0, a especificação MCCS 2.0 ou a especificação MCCS 2.0 Revisão 1.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MCA_INTERNAL_ERROR"></span><span id="error_mca_internal_error"></span>**erro \_ interno de MCA \_ \_**
+<span id="ERROR_MCA_INTERNAL_ERROR"></span><span id="error_mca_internal_error"></span>**ERRO \_ ERRO INTERNO DO MCA \_ \_**
 </dt> <dd> <dl> <dt>
 
 15205 (0x3B65)
@@ -4500,12 +4500,12 @@ A API de configuração do monitor só funciona com monitores que dão suporte �
 
 
 
-Ocorreu um erro interno de API de configuração de monitor.
+Ocorreu um erro interno da API de Configuração do Monitor.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MCA_INVALID_TECHNOLOGY_TYPE_RETURNED"></span><span id="error_mca_invalid_technology_type_returned"></span>**ERRO \_ \_ tipo de \_ tecnologia inválido MCA \_ \_ retornado**
+<span id="ERROR_MCA_INVALID_TECHNOLOGY_TYPE_RETURNED"></span><span id="error_mca_invalid_technology_type_returned"></span>**ERRO \_ MCA \_ TIPO DE TECNOLOGIA \_ INVÁLIDO \_ \_ RETORNADO**
 </dt> <dd> <dl> <dt>
 
 15206 (0x3B66)
@@ -4513,12 +4513,12 @@ Ocorreu um erro interno de API de configuração de monitor.
 
 
 
-O monitor retornou um tipo de tecnologia de monitor inválido. CRT, plasma e LCD (TFT) são exemplos de tipos de tecnologia de monitor. Esse erro indica que o monitor violou a especificação MCCS 2,0 ou MCCS 2,0 revisão 1.
+O monitor retornou um tipo de tecnologia de monitor inválido. CRT, Ltda e TFT (LCD) são exemplos de tipos de tecnologia de monitoramento. Esse erro implica que o monitor violou a especificação MCCS 2.0 ou MCCS 2.0 Revisão 1.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MCA_UNSUPPORTED_COLOR_TEMPERATURE"></span><span id="error_mca_unsupported_color_temperature"></span>**ERRO \_ de \_ temperatura de cor sem suporte para MCA \_ \_**
+<span id="ERROR_MCA_UNSUPPORTED_COLOR_TEMPERATURE"></span><span id="error_mca_unsupported_color_temperature"></span>**ERRO TEMPERATURA DE COR SEM SUPORTE DO \_ MCA \_ \_ \_**
 </dt> <dd> <dl> <dt>
 
 15207 (0x3B67)
@@ -4526,12 +4526,12 @@ O monitor retornou um tipo de tecnologia de monitor inválido. CRT, plasma e LCD
 
 
 
-O chamador de [**SetMonitorColorTemperature**](/windows/win32/api/highlevelmonitorconfigurationapi/nf-highlevelmonitorconfigurationapi-setmonitorcolortemperature) especificou uma temperatura de cor para a qual o monitor atual não tinha suporte. Esse erro indica que o monitor violou a especificação MCCS 2,0 ou MCCS 2,0 revisão 1.
+O chamador de [**SetMonitorColorTemperature especificou**](/windows/win32/api/highlevelmonitorconfigurationapi/nf-highlevelmonitorconfigurationapi-setmonitorcolortemperature) uma temperatura de cor que o monitor atual não suportava. Esse erro implica que o monitor violou a especificação MCCS 2.0 ou MCCS 2.0 Revisão 1.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_AMBIGUOUS_SYSTEM_DEVICE"></span><span id="error_ambiguous_system_device"></span>**ERRO \_ de \_ dispositivo de sistema ambíguo \_**
+<span id="ERROR_AMBIGUOUS_SYSTEM_DEVICE"></span><span id="error_ambiguous_system_device"></span>**ERRO \_ DISPOSITIVO \_ AMBÍGUO DO \_ SISTEMA**
 </dt> <dd> <dl> <dt>
 
 15250 (0x3B92)
@@ -4539,12 +4539,12 @@ O chamador de [**SetMonitorColorTemperature**](/windows/win32/api/highlevelmonit
 
 
 
-O dispositivo de sistema solicitado não pode ser identificado porque vários dispositivos indistinguíveis potencialmente correspondem aos critérios de identificação.
+O dispositivo do sistema solicitado não pode ser identificado devido a vários dispositivos indistinguíveis potencialmente correspondentes aos critérios de identificação.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SYSTEM_DEVICE_NOT_FOUND"></span><span id="error_system_device_not_found"></span>**dispositivo de sistema de erro \_ \_ \_ não \_ encontrado**
+<span id="ERROR_SYSTEM_DEVICE_NOT_FOUND"></span><span id="error_system_device_not_found"></span>**ERRO \_ DISPOSITIVO DO SISTEMA NÃO \_ \_ \_ ENCONTRADO**
 </dt> <dd> <dl> <dt>
 
 15299 (0x3BC3)
@@ -4552,12 +4552,12 @@ O dispositivo de sistema solicitado não pode ser identificado porque vários di
 
 
 
-Não é possível encontrar o dispositivo de sistema solicitado.
+O dispositivo do sistema solicitado não pode ser encontrado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_HASH_NOT_SUPPORTED"></span><span id="error_hash_not_supported"></span>**HASH de erro \_ \_ sem \_ suporte**
+<span id="ERROR_HASH_NOT_SUPPORTED"></span><span id="error_hash_not_supported"></span>**HASH \_ DE ERRO SEM \_ \_ SUPORTE**
 </dt> <dd> <dl> <dt>
 
 15300 (0x3BC4)
@@ -4565,12 +4565,12 @@ Não é possível encontrar o dispositivo de sistema solicitado.
 
 
 
-A geração de hash para a versão de hash especificada e o tipo de hash não está habilitada no servidor.
+A geração de hash para a versão de hash e o tipo de hash especificados não está habilitada no servidor.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_HASH_NOT_PRESENT"></span><span id="error_hash_not_present"></span>**o \_ hash de erro \_ não \_ está presente**
+<span id="ERROR_HASH_NOT_PRESENT"></span><span id="error_hash_not_present"></span>**\_HASH DE ERRO NÃO \_ \_ PRESENTE**
 </dt> <dd> <dl> <dt>
 
 15301 (0x3BC5)
@@ -4583,7 +4583,7 @@ O hash solicitado do servidor não está disponível ou não é mais válido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SECONDARY_IC_PROVIDER_NOT_REGISTERED"></span><span id="error_secondary_ic_provider_not_registered"></span>**ERRO \_ de \_ provedor IC secundário \_ \_ não \_ registrado**
+<span id="ERROR_SECONDARY_IC_PROVIDER_NOT_REGISTERED"></span><span id="error_secondary_ic_provider_not_registered"></span>**ERRO \_ PROVEDOR DE IC SECUNDÁRIO NÃO \_ \_ \_ \_ REGISTRADO**
 </dt> <dd> <dl> <dt>
 
 15321 (0x3BD9)
@@ -4591,7 +4591,7 @@ O hash solicitado do servidor não está disponível ou não é mais válido.
 
 
 
-A instância do controlador de interrupção secundário que gerencia a interrupção especificada não está registrada.
+A instância do controlador de interrupção secundária que gerencia a interrupção especificada não está registrada.
 
 
 </dt> </dl> </dd> <dt>
@@ -4968,7 +4968,7 @@ O repositório do pacote está corrompido.
 
 
 
-Para instalar este aplicativo, você precisa de uma licença de desenvolvedor do Windows ou de um sistema habilitado para Sideload.
+para instalar este aplicativo, você precisa de uma licença de desenvolvedor Windows ou de um sistema habilitado para sideload.
 
 
 </dt> </dl> </dd> <dt>
@@ -5111,7 +5111,7 @@ A operação não pôde ser retomada porque os dados necessários para recupera�
 
 
 
-Não foi possível instalar o pacote porque o serviço de firewall do Windows não está em execução. Habilite o serviço de firewall do Windows e tente novamente.
+não foi possível instalar o pacote porque o serviço de Firewall do Windows não está em execução. habilite o serviço de Firewall Windows e tente novamente.
 
 
 </dt> </dl> </dd> <dt>
@@ -5434,9 +5434,9 @@ Essa API não pode ser usada no contexto do tipo de aplicativo do chamador.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>WinError. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>WinError. h</dt> </dl> |
 
 
 

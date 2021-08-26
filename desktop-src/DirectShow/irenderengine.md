@@ -1,5 +1,5 @@
 ---
-description: 'A interface IRenderEngine renderiza um projeto de serviços de edição do DirectShow (DES) construindo um grafo de filtro de uma linha do tempo. O DES fornece dois componentes que implementam essa interface: o mecanismo de renderização básico cria uma saída não compactada.'
+description: 'a interface IRenderEngine renderiza um projeto de serviços de edição DirectShow (DES) construindo um grafo de filtro de uma linha do tempo. O DES fornece dois componentes que implementam essa interface: o mecanismo de renderização básico cria uma saída não compactada.'
 ms.assetid: e2a91b34-ee4d-405e-81bf-29d15ea6342a
 title: Interface IRenderEngine (QEdit. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: d8c57e976fac877a02c3f3993fb3fe4d27f9033b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a13d51eb41a917dc4790c75a8a1f8a881dbcb8489364722ff8805bdf26fc77f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105760737"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120051306"
 ---
 # <a name="irenderengine-interface"></a>Interface IRenderEngine
 
@@ -28,7 +28,7 @@ ms.locfileid: "105760737"
 
  
 
-A `IRenderEngine` interface renderiza um projeto de [serviços de edição do DirectShow](directshow-editing-services.md) (des) construindo um grafo de filtro de uma linha do tempo.
+a `IRenderEngine` interface renderiza um projeto de [serviços de edição DirectShow](directshow-editing-services.md) (DES) construindo um grafo de filtro de uma linha do tempo.
 
 O DES fornece dois componentes que implementam essa interface:
 
@@ -59,7 +59,7 @@ A interface **IRenderEngine** tem esses métodos.
 | [**Compromisso**](irenderengine-commit.md)                                             | Não implementado.<br/>                                                           |
 | [**ConnectFrontEnd**](irenderengine-connectfrontend.md)                           | Cria o front-end do grafo de filtro a partir da linha do tempo atual.<br/>        |
 | [**Anulação confirmação**](irenderengine-decommit.md)                                         | Não implementado.<br/>                                                           |
-| [**DoSmartRecompression**](irenderengine-dosmartrecompression.md)                 | Não há suporte.<br/>                                                             |
+| [**DoSmartRecompression**](irenderengine-dosmartrecompression.md)                 | Sem suporte.<br/>                                                             |
 | [**GetCaps**](irenderengine-getcaps.md)                                           | Não implementado.<br/>                                                           |
 | [**GetFilterGraph**](irenderengine-getfiltergraph.md)                             | Recupera o gráfico de filtro que o mecanismo de processamento construiu, se houver.<br/> |
 | [**GetGroupOutputPin**](irenderengine-getgroupoutputpin.md)                       | Recupera o pino de saída para o grupo especificado.<br/>                          |
@@ -69,14 +69,14 @@ A interface **IRenderEngine** tem esses métodos.
 | [**ScrapIt**](irenderengine-scrapit.md)                                           | Descarta o grafo de filtro do mecanismo de processamento e todos os objetos associados.<br/>      |
 | [**SetDynamicReconnectLevel**](irenderengine-setdynamicreconnectlevel.md)         | Define o nível de reconexão dinâmica durante a renderização.<br/>                   |
 | [**SetFilterGraph**](irenderengine-setfiltergraph.md)                             | Especifica um grafo de filtro para o mecanismo de renderização usar.<br/>                     |
-| [**SetInterestRange**](irenderengine-setinterestrange.md)                         | Não há suporte.<br/>                                                             |
-| [**SetInterestRange2**](irenderengine-setinterestrange2.md)                       | Não há suporte.<br/>                                                             |
+| [**SetInterestRange**](irenderengine-setinterestrange.md)                         | Sem suporte.<br/>                                                             |
+| [**SetInterestRange2**](irenderengine-setinterestrange2.md)                       | Sem suporte.<br/>                                                             |
 | [**SetRenderRange**](irenderengine-setrenderrange.md)                             | Define o intervalo de tempo a ser renderizado.<br/>                                     |
 | [**SetRenderRange2**](irenderengine-setrenderrange2.md)                           | Define o intervalo de tempo a ser renderizado, como um **duplo**.<br/>                    |
-| [**SetSourceConnectCallback**](irenderengine-setsourceconnectcallback.md)         | Não há suporte.<br/>                                                             |
+| [**SetSourceConnectCallback**](irenderengine-setsourceconnectcallback.md)         | Sem suporte.<br/>                                                             |
 | [**SetSourceNameValidation**](irenderengine-setsourcenamevalidation.md)           | Especifica como o mecanismo de renderização valida nomes de arquivo.<br/>                      |
 | [**Settimelineobject**](irenderengine-settimelineobject.md)                       | Define a linha do tempo para o mecanismo de renderização usar.<br/>                            |
-| [**UseInSmartRecompressionGraph**](irenderengine-useinsmartrecompressiongraph.md) | Não há suporte.<br/>                                                             |
+| [**UseInSmartRecompressionGraph**](irenderengine-useinsmartrecompressiongraph.md) | Sem suporte.<br/>                                                             |
 
 
 
@@ -90,7 +90,7 @@ A interface **IRenderEngine** tem esses métodos.
  
 
 > [!Note]  
-> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> para obter o Qedit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
 
  
 
@@ -109,7 +109,7 @@ A interface **IRenderEngine** tem esses métodos.
 
 <dl> <dt>
 
-[Renderizando um projeto](rendering-a-project.md)
+[Renderizando um Project](rendering-a-project.md)
 </dt> </dl>
 
  

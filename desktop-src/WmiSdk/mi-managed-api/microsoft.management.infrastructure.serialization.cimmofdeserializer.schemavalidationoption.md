@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: propriedade CimMofDeserializer.SchemaValidationOption'
-title: Propriedade CimMofDeserializer.SchemaValidationOption (Microsoft.Management.Infrastructure.Serialization)
+description: 'Saiba mais sobre: Propriedade CimMofDeserializer. SchemaValidationOption'
+title: Propriedade CimMofDeserializer. SchemaValidationOption (Microsoft. Management. Infrastructure. Serialization)
 TOCTitle: CimMofDeserializer.SchemaValidationOption property (Microsoft.Management.Infrastructure.Serialization)
 ms:assetid: P:Microsoft.Management.Infrastructure.Serialization.CimMofDeserializer.SchemaValidationOption
 ms.date: 11/14/2019
@@ -32,12 +32,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "120097196"
 ---
-# <a name="cimmofdeserializerschemavalidationoption-property"></a>Propriedade CimMofDeserializer.SchemaValidationOption
+# <a name="cimmofdeserializerschemavalidationoption-property"></a>Propriedade CimMofDeserializer. SchemaValidationOption
 
-Obtém ou define a opção de validação de esquema para a reserialização.
+Obtém ou define a opção de validação de esquema para desserialização.
 
-**Namespace:**   [Microsoft.Management.Infrastructure.Serialization](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832966(v=vs.85))  
-**Assembly:**  Microsoft.Management.Infrastructure (em Microsoft.Management.Infrastructure.dll)  
+**Namespace:**   [Microsoft. Management. Infrastructure. Serialization](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832966(v=vs.85))  
+**Assembly:**  Microsoft. Management. Infrastructure (em Microsoft.Management.Infrastructure.dll)  
 
 ## <a name="syntax"></a>Syntax
 
@@ -65,9 +65,9 @@ Public Property SchemaValidationOption As MofDeserializerSchemaValidationOption
 
 Tipo: [MofDeserializerSchemaValidationOption](microsoft.management.infrastructure.serialization.mofdeserializerschemavalidationoption.md)
 
-A opção de validação de esquema para a desterialização.
+A opção de validação de esquema para desserialização.
 
 ## <a name="see-also"></a>Confira também
 
 [Classe CimMofDeserializer](microsoft.management.infrastructure.serialization.cimmofdeserializer.md) 
- [Namespace Microsoft.Management.Infrastructure.Serialization](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832966(v=vs.85))
+ [Namespace Microsoft. Management. Infrastructure. Serialization](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832966(v=vs.85))

@@ -1,7 +1,7 @@
 ---
-description: Esta seção lista o descritor de tráfego do ATM.
+description: Esta seção lista o descritor de tráfego ATM.
 ms.assetid: 8d15af95-2003-416e-b3b0-a9201972a899
-title: Descritor de tráfego do ATM
+title: Descritor de tráfego ATM
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 18cd4ec218f8f3a6719bb71a1eb2d6ef11179ca44878641aaf25906e6eae1dc6
@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "120097916"
 ---
-# <a name="atm-traffic-descriptor"></a>Descritor de tráfego do ATM
+# <a name="atm-traffic-descriptor"></a>Descritor de tráfego ATM
 
-Esta seção lista o descritor de tráfego do ATM.
+Esta seção lista o descritor de tráfego ATM.
 
 ``` syntax
 typedef struct {

@@ -1,7 +1,7 @@
 ---
-description: 'Método ID3DXMATRIXStack:: loadmatrix (D3dx9math. h) – carrega a matriz determinada na matriz atual.'
+description: Método ID3DXMATRIXStack::LoadMatrix (D3dx9math.h) – carrega a matriz determinada na matriz atual.
 ms.assetid: c4c5ac50-238f-4b41-8ea9-7e48ffd03fc5
-title: 'Método ID3DXMATRIXStack:: loadmatrix (D3dx9math. h)'
+title: Método ID3DXMATRIXStack::LoadMatrix (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,7 +21,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "120095886"
 ---
-# <a name="id3dxmatrixstackloadmatrix-method-d3dx9mathh"></a>Método ID3DXMATRIXStack:: loadmatrix (D3dx9math. h)
+# <a name="id3dxmatrixstackloadmatrix-method-d3dx9mathh"></a>Método ID3DXMATRIXStack::LoadMatrix (D3dx9math.h)
 
 Carrega a matriz determinada na matriz atual.
 
@@ -40,12 +40,12 @@ HRESULT LoadMatrix(
 
 <dl> <dt>
 
-*pMat* \[ no\]
+*pMat* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Ponteiro para a estrutura [**D3DXMATRIX**](d3dxmatrix.md) carregada na matriz atual.
+Ponteiro para a [**estrutura D3DXMATRIX**](d3dxmatrix.md) carregada na matriz atual.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Ponteiro para a estrutura [**D3DXMATRIX**](d3dxmatrix.md) carregada na matriz at
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se o método for bem sucedido, o valor de retorno será D3D \_ OK. Se o método falhar, o valor de retorno poderá ser D3DERR \_ INVALIDCALL.
+Se o método for bem-sucedido, o valor de retorno será D3D \_ OK. Se o método falhar, o valor de retorno poderá ser D3DERR \_ INVALIDCALL.
 
 ## <a name="remarks"></a>Comentários
 
@@ -65,8 +65,8 @@ Observe que esse método não adiciona um item à pilha; em vez disso, ele subst
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
@@ -77,7 +77,7 @@ Observe que esse método não adiciona um item à pilha; em vez disso, ele subst
 [ID3DXMATRIXStack](id3dxmatrixstack.md)
 </dt> <dt>
 
-[**ID3DXMATRIXStack:: loadidentity**](id3dxmatrixstack--loadidentity.md)
+[**ID3DXMATRIXStack::LoadIdentity**](id3dxmatrixstack--loadidentity.md)
 </dt> </dl>
 
  

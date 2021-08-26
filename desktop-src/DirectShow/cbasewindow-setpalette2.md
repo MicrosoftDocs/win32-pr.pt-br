@@ -1,7 +1,7 @@
 ---
 description: O método SetPalette instala uma paleta para a janela. Esse método não tem parâmetros.
 ms.assetid: 86eb34c6-85ff-4a40-8085-ea55dbc2727e
-title: Método CBaseWindow. SetPalette (Winutil. h)-sem parâmetros
+title: Método CBaseWindow.SetPalette (Winutil.h) – Sem parâmetros
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1203b6aeedd39eb82d7188c4e5d5503b01d167fe
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: f15df65f6e427e467c14654a0e2745b84d774a5226b9a526193fc546261c5a0f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "104173218"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120052146"
 ---
-# <a name="cbasewindowsetpalette-method-winutilh---no-parameters"></a>Método CBaseWindow. SetPalette (Winutil. h)-sem parâmetros
+# <a name="cbasewindowsetpalette-method-winutilh---no-parameters"></a>Método CBaseWindow.SetPalette (Winutil.h) – Sem parâmetros
 
 O `SetPalette` método instala uma paleta para a janela.
 
@@ -40,15 +40,15 @@ HRESULT SetPalette();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um dos valores **HRESULT** mostrados na tabela a seguir.
+Retorna um dos **valores HRESULT** mostrados na tabela a seguir.
 
 
 
 | Código de retorno                                                                             | Descrição                                                    |
 |-----------------------------------------------------------------------------------------|----------------------------------------------------------------|
-| <dl> <dt>**\_falso**</dt> </dl> | Uma chamada interna para **GdiFlush** retornou um erro.<br/> |
+| <dl> <dt>**S \_ FALSE**</dt> </dl> | Uma chamada interna para **GdiFlush retornou** um erro.<br/> |
 | <dl> <dt>**S \_ OK**</dt> </dl>    | Êxito.<br/>                                            |
 
 
@@ -57,18 +57,18 @@ Retorna um dos valores **HRESULT** mostrados na tabela a seguir.
 
 ## <a name="remarks"></a>Comentários
 
-A paleta fornecida pela variável de membro [**CBaseWindow:: m \_ hPalette**](cbasewindow-m-hpalette.md) é selecionada. O chamador deve garantir a validade de **m \_ hPalette**.
+A paleta dada pela variável de [**membro CBaseWindow::m \_ hPalette**](cbasewindow-m-hpalette.md) está selecionada. O chamador deve garantir a validade de **m \_ hPalette.**
 
-Se o valor da variável de membro [**CBaseWindow:: m \_ BNoRealize**](cbasewindow-m-bnorealize.md) for **false** (o padrão), esse método selecionará a paleta e a perceberá. Caso contrário, ele seleciona a paleta, mas não a percebe. O objeto não exclui nenhuma paleta anterior que estava sendo usada. O chamador é responsável por excluir paletas.
+Se o valor da variável de membro [**CBaseWindow::m \_ bNoRealize**](cbasewindow-m-bnorealize.md) for **FALSE** (o padrão), esse método selecionará a paleta e a perceberá. Caso contrário, ele selecionará a paleta, mas não a perceberá. O objeto não exclui nenhuma paleta anterior que estava usando. O chamador é responsável por excluir paletas.
 
-Qualquer thread pode chamar esse método com segurança, não apenas o thread que possui a janela. A janela envia uma mensagem particular para si mesma, que dispara uma chamada para o método [**CBaseWindow:: OnPaletteChange**](cbasewindow-onpalettechange.md) .
+Qualquer thread pode chamar com segurança esse método, não apenas o thread que possui a janela. A janela envia uma mensagem privada para si mesma, que dispara uma chamada para o [**método CBaseWindow::OnPaletteChange.**](cbasewindow-onpalettechange.md)
 
 ## <a name="requirements"></a>Requisitos
 
 | Requisito | Valor |
 |-|-|
-| parâmetro | Winutil. h (incluir fluxos. h) |
-| Biblioteca| Strmbase. lib (compilações de varejo); Strmbasd. lib (compilações de depuração) |
+| parâmetro | Winutil.h (incluir Fluxos.h) |
+| Biblioteca| Strmbase.lib (builds de varejo); Strmbasd.lib (builds de depuração) |
 
 ## <a name="see-also"></a>Confira também
 

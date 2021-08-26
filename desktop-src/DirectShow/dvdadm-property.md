@@ -4,17 +4,17 @@ ms.assetid: eb73a851-7118-42f3-be99-1cf356d2e37a
 title: Propriedade DVDAdm
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c3d81742fc6e643d6ee805a76c14d07d45d1924
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 5adedea036393e68456cfd9f035882ae9c335063030518e808c57bced6d5b5b6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104087627"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120079156"
 ---
 # <a name="dvdadm-property"></a>Propriedade DVDAdm
 
 > [!Note]  
-> Esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
+> esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
 
  
 

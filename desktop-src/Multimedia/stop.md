@@ -3,7 +3,7 @@ title: comando de parada
 description: O comando parar interrompe a reprodução ou a gravação. CD de áudio, digital-vídeo, MIDI Sequencer, VIDEODISC, VCR e Wave-Audio Devices reconhecem este comando.
 ms.assetid: 82b2da63-f1ac-48f3-a206-6c5cfe00f5be
 keywords:
-- comando parar multimídia do Windows
+- parar o comando Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 79d70aa150c01bd4c0ceab10332b4eca8b15d041
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3091fcf3c58dc015450a9d585af48cc8347d4167bdd487c37dd3f7c6cd4f04e0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369607"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120037106"
 ---
 # <a name="stop-command"></a>comando de parada
 

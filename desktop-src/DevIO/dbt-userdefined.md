@@ -4,12 +4,12 @@ ms.assetid: b42feda9-5fe7-4e54-aad9-28c61d2f29b6
 title: DBT_USERDEFINED evento (DBT. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d57ed3ebb801da4ae1ed7a7964cb7aac4f411a35
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 49eca726ea9c4336a36f30872ad068e45062a67189192154374d5d5b21e578ce
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010191"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120103866"
 ---
 # <a name="dbt_userdefined-event"></a>\_Evento DBT USERdefined
 
@@ -59,7 +59,7 @@ Um ponteiro para uma estrutura [**\_ \_ \_ userdefineda de difusão de desenvolv
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornar **true**.
 
@@ -71,7 +71,7 @@ Retornar **true**.
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows XP<br/>                                                            |
 | Servidor mínimo com suporte<br/> | Windows Server 2003<br/>                                                   |
-| parâmetro<br/>                   | <dl> <dt>DBT. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>DBT. h</dt> </dl> |
 
 
 

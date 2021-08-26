@@ -1,19 +1,19 @@
 ---
-description: A tabela AppSearch contém as propriedades necessárias para pesquisar um arquivo que tenha uma assinatura de arquivo específica. A tabela AppSearch também pode ser usada para definir uma propriedade para o valor existente de um registro ou de uma entrada de arquivo. ini.
+description: A tabela AppSearch contém as propriedades necessárias para pesquisar um arquivo que tenha uma assinatura de arquivo específica. A tabela AppSearch também pode ser usada para definir uma propriedade para o valor existente de um registro ou .ini entrada de arquivo.
 ms.assetid: d560096f-6baa-4fea-8786-f4e3d5ee6bf4
 title: Tabela AppSearch
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a9419a768a51364b4f22444288e6728a87289aa0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 450ab07a397366ca01e664b88321942e4f6a7800cd9e04c4d0cbbe048eed8b87
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104169205"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120045646"
 ---
 # <a name="appsearch-table"></a>Tabela AppSearch
 
-A tabela AppSearch contém as propriedades necessárias para pesquisar um arquivo que tenha uma assinatura de arquivo específica. A tabela AppSearch também pode ser usada para definir uma propriedade para o valor existente de um registro ou de uma entrada de arquivo. ini.
+A tabela AppSearch contém as propriedades necessárias para pesquisar um arquivo que tenha uma assinatura de arquivo específica. A tabela AppSearch também pode ser usada para definir uma propriedade para o valor existente de um registro ou .ini entrada de arquivo.
 
 A tabela AppSearch tem as colunas a seguir.
 
@@ -21,8 +21,8 @@ A tabela AppSearch tem as colunas a seguir.
 
 | Coluna      | Tipo                         | Chave | Nullable |
 |-------------|------------------------------|-----|----------|
-| Propriedade    | [Identificador](identifier.md) | S   | N        |
-| Signature\_ | [Identificador](identifier.md) | S   | N        |
+| Propriedade    | [Identificador](identifier.md) | Y   | N        |
+| Signature\_ | [Identificador](identifier.md) | Y   | N        |
 
 
 
@@ -54,7 +54,7 @@ A ação [AppSearch](appsearch-action.md) em [*tabelas de sequência*](s-gly.md)
 
 A ação [AppSearch](appsearch-action.md) pesquisa assinaturas usando a tabela [CompLocator](complocator-table.md) primeiro, a tabela [RegLocator](reglocator-table.md) segundo, a tabela [IniLocator](inilocator-table.md) terceira e, por fim, a tabela [DrLocator](drlocator-table.md) . As assinaturas de arquivo são listadas na tabela de [assinatura](signature-table.md) . Uma assinatura que não está na tabela de assinatura denota um diretório e a ação define a propriedade como o caminho do diretório para essa assinatura.
 
-Consulte [pesquisando aplicativos, arquivos, entradas de registro ou entradas de arquivo. ini existentes](searching-for-existing-applications-files-registry-entries-or--ini-file-entries.md).
+Consulte [pesquisando aplicativos existentes, arquivos, entradas de registro ou .ini entradas de arquivo](searching-for-existing-applications-files-registry-entries-or--ini-file-entries.md).
 
 ## <a name="validation"></a>Validação
 

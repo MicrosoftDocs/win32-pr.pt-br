@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Criando uma classe base WMI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ebdcbe6995a7782d854a4d0950db841f23a30b45
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4780279f00eea403b330400c490da75adfa097406796cd0b14f15f9861411bfa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922598"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120071506"
 ---
 # <a name="creating-a-wmi-base-class"></a>Criando uma classe base WMI
 
@@ -39,7 +39,7 @@ Ao criar uma classe base, observe a seguinte lista de diretrizes para nomes de c
     Embora não seja necessário, uma boa Convenção de nomenclatura para uma classe é dois componentes Unidos por um sublinhado. Quando possível, um nome de fornecedor deve criar a primeira metade do nome e um nome de classe descritivo deve ser a segunda parte.
 
 > [!Note]  
-> Classes não podem ser alteradas durante a execução de provedores. Você deve interromper a atividade, alterar a classe e reiniciar o serviço de gerenciamento do Windows. Atualmente, não é possível detectar uma alteração de classe.
+> Classes não podem ser alteradas durante a execução de provedores. você deve interromper a atividade, alterar a classe e reiniciar o serviço de gerenciamento de Windows. Atualmente, não é possível detectar uma alteração de classe.
 
  
 
@@ -114,7 +114,7 @@ Para obter mais informações, consulte [criando uma classe derivada](creating-a
 Criar uma classe base usando a API do WMI é principalmente uma série de comandos Put que definem a classe e registram a classe com o WMI. A principal finalidade dessa API é permitir que aplicativos cliente criem classes base. No entanto, você também pode fazer com que um provedor Use essa API para criar uma classe base. Por exemplo, se você acreditar que o código MOF para seu provedor não será instalado corretamente, você poderá instruir seu provedor para criar automaticamente as classes corretas no repositório do WMI. Para obter mais informações sobre provedores, consulte [escrevendo um provedor de classe](writing-a-class-provider.md).
 
 > [!Note]  
-> Classes não podem ser alteradas durante a execução de provedores. Você deve interromper a atividade, alterar a classe e reiniciar o serviço de gerenciamento do Windows. Atualmente, não é possível detectar uma alteração de classe.
+> Classes não podem ser alteradas durante a execução de provedores. você deve interromper a atividade, alterar a classe e reiniciar o serviço de gerenciamento de Windows. Atualmente, não é possível detectar uma alteração de classe.
 
  
 

@@ -13,17 +13,17 @@ ms.locfileid: "120127506"
 ---
 # <a name="installing-side-by-side-assemblies-as-shared-assemblies"></a>Instalando assemblies lado a lado como assemblies compartilhados
 
-O procedimento a seguir descreve como instalar [assemblies lado a lado](about-side-by-side-assemblies-.md) como [assemblies compartilhados](/windows/desktop/Msi/shared-assemblies).
+O procedimento a seguir descreve como instalar [assemblies lado](about-side-by-side-assemblies-.md) a lado como [assemblies compartilhados](/windows/desktop/Msi/shared-assemblies).
 
 **Para instalar um assembly lado a lado como um assembly compartilhado**
 
 1.  Assine e crie um catálogo para os arquivos no assembly.
 
-    Os arquivos devem ser assinados para instalá-los como assemblies lado a lado. Para obter mais informações, consulte [criando arquivos e catálogos assinados](creating-signed-files-and-catalogs.md).
+    Os arquivos devem ser assinados para instalá-los como assemblies lado a lado. Para obter mais informações, consulte [Criando arquivos assinados e catálogos](creating-signed-files-and-catalogs.md).
 
-2.  você deve instalar assemblies compartilhados lado a lado como componentes de um pacote de Windows Installer. Esse pode ser o mesmo pacote de instalação usado para instalar ou atualizar seu aplicativo. Se o assembly compartilhado for enviado como parte de vários aplicativos, você deverá fornecer um módulo de mesclagem que possa ser incorporado nos pacotes de instalação desses aplicativos e criar um catálogo para os arquivos no assembly.
+2.  Você deve instalar assemblies compartilhados lado a lado como componentes de um Windows instalador. Esse pode ser o mesmo pacote de instalação usado para instalar ou atualizar seu aplicativo. Se o assembly compartilhado for enviado como parte de vários aplicativos, você deverá fornecer um módulo de mesclagem que pode ser incorporado aos pacotes de instalação desses aplicativos e criar um catálogo para os arquivos no assembly.
 
-    Windows O instalador versão 2,0 ou posterior é necessário para instalar assemblies. para obter mais informações, consulte o SDK do [Windows Installer](../msi/windows-installer-portal.md) e as seções em [instalação de Assemblies do Win32](../msi/installation-of-win32-assemblies.md).
+    Windows O instalador versão 2.0 ou posterior é necessário para instalar assemblies. Para obter mais informações, consulte Windows SDK do [Instalador](../msi/windows-installer-portal.md) do Windows e as seções em [Instalação de assemblies Win32](../msi/installation-of-win32-assemblies.md).
 
  
 

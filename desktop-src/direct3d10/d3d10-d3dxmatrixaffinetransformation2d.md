@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 223ef5d2d9a68c993553d52f5d4cf63e8b95dd3b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 40666e4fc74f834d6333259636f9953281d534570eedabf37a3d99590ec2e1ee
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105763195"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120070156"
 ---
 # <a name="d3dxmatrixaffinetransformation2d-function-d3dx10mathh"></a>Função D3DXMatrixAffineTransformation2D (D3DX10Math. h)
 
@@ -89,7 +89,7 @@ Ponteiro para um [**D3DXVECTOR2**](d3d10-d3dxvector2.md), que representa a tradu
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
@@ -101,7 +101,7 @@ Essa função calcula a matriz de transformação afim com a seguinte fórmula, 
 
 M<sub>out</sub> = MS \* (M<sub>RC</sub>)-1 \* m<sub>r</sub> \* m<sub>RC</sub> \* MT
 
-onde:
+em que:
 
 M<sub>out</sub> = matriz de saída (pout)
 

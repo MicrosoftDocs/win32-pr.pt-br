@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 81f6f3437521dea2c5cf6e157ad7997718632081
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1b42a8e63f3b64ef2a66a74300036bbf8ade24a7e0ee5c68b3d1d599f00a04b4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918901"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120099846"
 ---
 # <a name="sendemail-actiongroup-element"></a>Elemento SendEmail (actionGroup)
 
@@ -79,8 +79,8 @@ Para obter um exemplo completo do XML para uma tarefa que especifica uma ação 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 | Fim do suporte do cliente<br/>    | Windows 7<br/>                                 |
 | Fim do suporte do servidor<br/>    | Windows Server 2008 R2<br/>                    |
 

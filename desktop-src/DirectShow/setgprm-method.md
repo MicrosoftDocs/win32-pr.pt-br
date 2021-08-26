@@ -4,17 +4,17 @@ ms.assetid: ded28f2a-5e40-4f76-9ed4-de10296529e1
 title: Método SetGPRM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e9e7492c599cde4c074c1a806f897edf3a8fe0a4
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 1c217f0235ca5b055e20102f553e9e23f5b93e6dd9c3d74db560584690a669ea
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105757868"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120078856"
 ---
 # <a name="setgprm-method"></a>Método SetGPRM
 
 > [!Note]  
-> Esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
+> esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
 
  
 

@@ -4,12 +4,12 @@ ms.assetid: 76989eb3-cd95-4dfc-ba0f-7563860b531c
 title: Neblina de vértice (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 35cd880bda7ebffd36bd95bec5f8565e104eaa15
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 76196ba0489ac58529bcb5c0500a269c8ee27b87040ec96f64ef228377dc8abd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104087211"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120068967"
 ---
 # <a name="vertex-fog-direct3d-9"></a>Neblina de vértice (Direct3D 9)
 

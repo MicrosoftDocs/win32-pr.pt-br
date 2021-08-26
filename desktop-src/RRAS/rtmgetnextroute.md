@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: da8592855e0c30cef2ed43b7818badd336bc2ab6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ec33ff5932d40a146811056d74ca3b91f0bdbfdd772a04a2d7392390d63209e3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499478"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120073816"
 ---
 # <a name="rtmgetnextroute-function"></a>Função RtmGetNextRoute
 
-\[Essa API foi substituída pela API do [Gerenciador de tabela de roteamento versão 2](about-routing-table-manager-version-2.md) e não estará disponível além do Windows Server 2003. Os aplicativos devem usar a API da versão 2 do Gerenciador de tabela de roteamento.\]
+\[esta api foi substituída pela api do [gerenciador de tabela de roteamento versão 2](about-routing-table-manager-version-2.md) e não estará disponível além do Windows Server 2003. Os aplicativos devem usar a API da versão 2 do Gerenciador de tabela de roteamento.\]
 
 A função **RtmGetNextRoute** retorna a próxima rota do subconjunto especificado de rotas na tabela.
 
@@ -69,7 +69,7 @@ Na saída, a *rota* aponta para uma estrutura que recebe a primeira rota corresp
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for realizada com sucesso, o valor de retorno **não será um \_ erro**.
 
@@ -107,7 +107,7 @@ Essa função é menos eficiente do que as funções de identificador de enumera
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                          |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                               |
 | Fim do suporte do servidor<br/>    | Windows Server 2003<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>RTM. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>RTM. h</dt> </dl>   |
 | Biblioteca<br/>                  | <dl> <dt>RTM. lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Rtm.dll</dt> </dl> |
 

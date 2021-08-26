@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: a4c820858041c730f971ce2821698f86e6ff2c31
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e52c08d0731bc89135df4547fcfc88e94b56b826d2ccab338576a22651376d94
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105785154"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120069106"
 ---
 # <a name="id3dxanimationcontrollersetpriorityblend-method"></a>Método ID3DXAnimationController:: SetPriorityBlend
 
@@ -49,7 +49,7 @@ Peso de mesclagem de prioridade usado pelo controlador de animação.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

@@ -1,25 +1,25 @@
 ---
-title: Recuperação de aplicativo e referência de reinicialização
-description: Recuperação e reinicialização do aplicativo define os seguintes elementos de programação
+title: Referência de recuperação e reinicialização de aplicativos
+description: A Recuperação e Reinicialização de Aplicativos define os seguintes elementos de programação
 ms.assetid: 6b6769a8-8dde-479f-b00f-31096ac34dde
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1227e9d05b056d7f349109e43efb6e28919c9aad
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9c7a7f6f56a05597874b5296e381ee52f1147f6ef9efd04ce0c3fe44bba6ed52
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104453729"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120024576"
 ---
-# <a name="application-recovery-and-restart-reference"></a>Recuperação de aplicativo e referência de reinicialização
+# <a name="application-recovery-and-restart-reference"></a>Referência de recuperação e reinicialização de aplicativos
 
-A recuperação e a reinicialização do aplicativo define os seguintes elementos de programação:
+A Recuperação e Reinicialização de Aplicativos define os seguintes elementos de programação:
 
--   [Recuperação de aplicativo e funções de reinicialização](application-recovery-and-restart-functions.md)
+-   [Funções de recuperação e reinicialização de aplicativos](application-recovery-and-restart-functions.md)
 
- 
+ 
 
- 
+ 
 
 
 

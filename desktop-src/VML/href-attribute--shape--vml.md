@@ -1,26 +1,26 @@
 ---
-title: Atributo HRef (forma) (VML)
-description: Atributo HRef (forma) (VML)
+title: Atributo HRef (Forma)(VML)
+description: Atributo HRef (Forma)(VML)
 ms.assetid: c44b3099-df3f-42e5-ad0c-10400630e884
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8ecbc0f97ca2fb9c1565b712d3677d007a62b035
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: dfe4b545aa27d311b0e1d0c73f0107aa6fdb357d524d3150ce6ab7dfb1e0f009
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104008074"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120072036"
 ---
-# <a name="href-attribute-shapevml"></a>Atributo HRef (forma) (VML)
+# <a name="href-attribute-shapevml"></a>Atributo HRef (Forma)(VML)
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Define uma URL para uma forma. Quando a forma é clicada, o navegador carregará a URL. Leitura/gravação. **Cadeia de caracteres**.
+Define uma URL para uma forma. Quando a forma for clicada, o navegador carregará a URL. Leitura/gravação. **Cadeia de caracteres**.
 
 **Aplica-se a**
 
@@ -28,25 +28,25 @@ Define uma URL para uma forma. Quando a forma é clicada, o navegador carregará
 
 **Sintaxe de marca**
 
-<v: *Element* href = " *expressão* " >
+<v: *elemento* href=" *expressão* ">
 
 **Sintaxe do script**
 
-*Element* . href = "*expressão*"
+*element* .href="*expression*"
 
-*expressão* = de *Element*. href
+*expressão* = *elemento*.href
 
 **Comentários**
 
-O atributo **href** é semelhante ao atributo HTML **href** padrão de âncoras.
+O **atributo HRef** é semelhante ao atributo **HRef** HTML padrão de âncoras.
 
-Usar **href** torna mais fácil criar botões interessantes em uma página da Web.
+O **uso de HRef** facilita a criação de botões interessantes em uma página da Web.
 
-*Atributo padrão da VML*
+*Atributo padrão VML*
 
 **Exemplo**
 
-Quando o retângulo for clicado, o navegador carregará o home page da Microsoft Corporation.
+Quando o retângulo for clicado, o navegador carregará o Microsoft Corporation home page.
 
 
 ```HTML
@@ -59,8 +59,8 @@ Quando o retângulo for clicado, o navegador carregará o home page da Microsoft
 
 
 
-[Exemplo de atributo href](/previous-versions/bb229672(v=vs.85)). (Requer o Microsoft Internet Explorer 5 ou superior.)
+[Exemplo de atributo HRef](/previous-versions/bb229672(v=vs.85)). (Requer o Microsoft Internet Explorer 5 ou superior.)
 
- 
+ 
 
- 
+ 

@@ -1,7 +1,7 @@
 ---
-description: Usando o código de \_ comando SIO MULTIPOINT \_ LOOPBACK para habilitar ou desabilitar o loopback do tráfego de vários pontos.
+description: Usando o \_ \_ código de comando de auto-retorno do MultiPoint sio para habilitar ou desabilitar o loopback do tráfego do MultiPoint.
 ms.assetid: 7e11932b-ce9a-4500-888f-8a08ab67b46c
-title: SIO_MULTIPOINT_LOOPBACK Ioctl
+title: SIO_MULTIPOINT_LOOPBACK IOCTL
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 1b75c781aeeaa67327dd2eaa57efb1eaccaf5d1d62daf3ffa9de3ce63fedbe2a
@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "120097506"
 ---
-# <a name="sio_multipoint_loopback-ioctl"></a>SIO \_ MULTIPOINT \_ LOOPBACK Ioctl
+# <a name="sio_multipoint_loopback-ioctl"></a>IOCTL de loopback do \_ MultiPoint sio \_
 
-Quando os soquetes folha d são usados em um plano de dados não rooted, geralmente é desejável ser capaz de controlar se o tráfego enviado para fora também é recebido novamente no \_ mesmo soquete. O código de comando SIO \_ MULTIPOINT LOOPBACK para \_ [**WSPIoctl**](/previous-versions/windows/hardware/network/ff566296(v=vs.85)) é usado para habilitar ou desabilitar o loopback do tráfego de vários pontos.
+Quando \_ os soquetes de folha d são usados em um plano de dados não-raiz, geralmente é desejável ser capaz de controlar se o tráfego enviado também é recebido de volta no mesmo soquete. O \_ código de \_ comando de auto-retorno do sio MultiPoint para [**WSPIoctl**](/previous-versions/windows/hardware/network/ff566296(v=vs.85)) é usado para habilitar ou desabilitar o loopback do tráfego do MultiPoint.
 
  
 

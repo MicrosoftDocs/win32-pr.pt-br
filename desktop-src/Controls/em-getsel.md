@@ -3,7 +3,7 @@ title: Mensagem de EM_GETSEL (WinUser. h)
 description: Obtém as posições de caractere inicial e final (em TCHARs) da seleção atual em um controle de edição. Você pode enviar essa mensagem para um controle de edição ou um controle de edição rico.
 ms.assetid: cf12aaea-cfa7-4804-ae34-fd0992332288
 keywords:
-- Controles de EM_GETSEL de mensagens do Windows
+- controles de Windows de mensagem de EM_GETSEL
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d28ba97c9043866c3e97c1c51389447498562455
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dca5f3cf1fdaa3c40dd1bb25ebbabb672474e76ae621a05cf52247c216adca17
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009308"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120048796"
 ---
 # <a name="em_getsel-message"></a>\_Mensagem em GETSEL
 
@@ -43,7 +43,7 @@ Um ponteiro para um valor **DWORD** que recebe a posição do primeiro caractere
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno é um valor de base zero com a posição inicial da seleção no [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) e a posição do primeiro **TCHAR** após o último **TCHAR** selecionado no [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)). Se um desses valores exceder 65.535, o valor de retorno será-1.
 
@@ -63,9 +63,9 @@ Se não houver seleção, os valores inicial e final serão a posição do curso
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

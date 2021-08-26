@@ -4,12 +4,12 @@ ms.assetid: b2ae49bc-3fb6-4cb9-82ce-387409096159
 title: Métodos IUpdateServiceManager
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 464b0b6e48d074dbc43f370f267fe7a526e8269b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1486727db4ed4e9b561c19a1a2f3994bca0085e836ae774fda1c7db76df38144
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501333"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119994346"
 ---
 # <a name="iupdateservicemanager-methods"></a>Métodos IUpdateServiceManager
 
@@ -19,7 +19,7 @@ A interface [**IUpdateServiceManager**](/windows/desktop/api/Wuapi/nn-wuapi-iupd
 
 | Método                                                                           | Descrição                                                                                                                                      |
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**AddScanPackageService**](/windows/desktop/api/Wuapi/nf-wuapi-iupdateservicemanager-addscanpackageservice)     | Registra um pacote de verificação como um serviço com o Windows Update Agent (WUA) e, em seguida, retorna uma interface [**IUpdateService**](/windows/desktop/api/Wuapi/nn-wuapi-iupdateservice) .    |
+| [**AddScanPackageService**](/windows/desktop/api/Wuapi/nf-wuapi-iupdateservicemanager-addscanpackageservice)     | registra um pacote de verificação como um serviço com o Windows Update Agent (WUA) e, em seguida, retorna uma interface [**IUpdateService**](/windows/desktop/api/Wuapi/nn-wuapi-iupdateservice) .    |
 | [**AddService**](/windows/desktop/api/Wuapi/nf-wuapi-iupdateservicemanager-addservice)                           | Registra um serviço com WUA.                                                                                                                    |
 | [**RegisterServiceWithAU**](/windows/desktop/api/Wuapi/nf-wuapi-iupdateservicemanager-registerservicewithau)     | Registra um serviço com Atualizações Automáticas.                                                                                                      |
 | [**RemoveService**](/windows/desktop/api/Wuapi/nf-wuapi-iupdateservicemanager-removeservice)                     | Remove um registro de serviço do WUA.                                                                                                         |

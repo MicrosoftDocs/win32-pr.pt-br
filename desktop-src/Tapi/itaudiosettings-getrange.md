@@ -4,16 +4,16 @@ ms.assetid: 09ee0c59-6ae6-47eb-a8cf-6b24e759d7fb
 title: 'Método ITAudioSettings:: GetRange (Ipmsp. h)'
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 91dd4d7bed3134c17de9c5958c7e6184cd51918e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f08c9eed736725bd4200c79583dcc12abde11399ec272be04805881752b19119
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105788063"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119992006"
 ---
 # <a name="itaudiosettingsgetrange-method"></a>Método ITAudioSettings:: GetRange
 
-\[ Esse método não está disponível para uso no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
+\[esse método não está disponível para uso no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
 
 O método **GetRange** recupera o intervalo de valores válidos para uma determinada [**propriedade de configurações de áudio**](audiosettingsproperty.md).
 
@@ -74,7 +74,7 @@ Valor da enumeração [**TAPIControlFlags**](tapicontrolflags.md) indicando como
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
@@ -96,7 +96,7 @@ Esse método pode retornar um desses valores.
 | Requisito | Valor |
 |-------------------------|--------------------------------------------------------------------------------------|
 | Versão da TAPI<br/> | Requer TAPI 3,1<br/>                                                         |
-| parâmetro<br/>       | <dl> <dt>Ipmsp. h</dt> </dl>   |
+| Cabeçalho<br/>       | <dl> <dt>Ipmsp. h</dt> </dl>   |
 | Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>  |
 | DLL<br/>          | <dl> <dt>Tapi3.dll</dt> </dl> |
 

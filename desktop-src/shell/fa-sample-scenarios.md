@@ -4,19 +4,19 @@ ms.assetid: e4392907-a84f-40ea-aa88-2ad0510bca3c
 title: Exemplo de associação de arquivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 23b92922bb907c4dd90b3e2bdc3d16c8e8b52e6a
-ms.sourcegitcommit: b0d03febac36ff77cba034615b94ea103311398d
+ms.openlocfilehash: 3ad24c3e65ca5b297412c4a69702987cd86b5187dab63dd81435d50e7d06721d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "107715784"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120009526"
 ---
 # <a name="file-association-example"></a>Exemplo de associação de arquivo
 
 No exemplo a seguir, uma empresa de desenvolvimento de software hipotética chamada Litware, Inc. cria um novo player de áudio chamado LitwarePlayer. O Litware quer criar uma associação de arquivo entre LitwarePlayer e seu tipo de arquivo primário, que usa um formato de áudio desenvolvido recentemente que permite que um CD de áudio inteiro seja armazenado em menos de 10 kilobytes de memória sem perda de qualidade.
 
 > [!IMPORTANT]
-> Este tópico não se aplica ao Windows 10. A maneira como as associações de arquivo padrão funcionam alteradas no Windows 10. Para obter mais informações, consulte a seção sobre **alterações de como o Windows 10 trata os aplicativos padrão** nesta [postagem](https://blogs.windows.com/windows-insider/2015/05/20/announcing-windows-10-insider-preview-build-10122-for-pcs/).
+> Este tópico não se aplica a Windows 10. A maneira como as associações de arquivo padrão funcionam em Windows 10. para obter mais informações, consulte a seção sobre **alterações em como Windows 10 trata os aplicativos padrão** nesta [postagem](https://blogs.windows.com/windows-insider/2015/05/20/announcing-windows-10-insider-preview-build-10122-for-pcs/).
 
  
 
@@ -66,7 +66,7 @@ A empresa deve executar as etapas a seguir.
 ## <a name="additional-resources"></a>Recursos adicionais
 
 -   [Introdução às associações de arquivo](fa-intro.md)
--   [Como registrar um navegador da Internet ou cliente de email com o menu Iniciar do Windows](start-menu-reg.md)
+-   [como registrar um navegador da Internet ou cliente de Email com o Menu iniciar Windows](start-menu-reg.md)
 -   [Registrando um aplicativo em um esquema de URI](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa767914(v=vs.85))
 
 ## <a name="related-topics"></a>Tópicos relacionados
@@ -76,7 +76,7 @@ A empresa deve executar as etapas a seguir.
 [Práticas recomendadas para associações de arquivo](fa-best-practices.md)
 </dt> <dt>
 
-[Diretrizes para o gerenciamento de aplicativos padrão no Windows Vista e posterior](vista-managing-defaults.md)
+[diretrizes para o gerenciamento de aplicativos padrão no Windows Vista e posterior](vista-managing-defaults.md)
 </dt> <dt>
 
 [Programas padrão](default-programs.md)

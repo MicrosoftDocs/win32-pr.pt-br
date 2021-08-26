@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Lsaidprov.h
-ms.openlocfilehash: 1120e7859080657e2a04202e01a01464694a3450
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3660fd4cfb8baa3e025789a2cde9dc04dd7e1e1678b0516a56562f1ea5be43dc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105747243"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119994476"
 ---
 # <a name="getcertificatefromcred-function"></a>Função GetCertificateFromCred
 
@@ -78,7 +78,7 @@ Se a função for realizada com sucesso, esse parâmetro será um ponteiro para 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for bem-sucedida, a função retornará o STATUS \_ êxito.
 
@@ -112,9 +112,9 @@ O provedor de identidade também pode armazenar o certificado em cache localment
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                   |
-| parâmetro<br/>                   | <dl> <dt>Lsaidprov. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                   |
+| Cabeçalho<br/>                   | <dl> <dt>Lsaidprov. h</dt> </dl> |
 
 
 

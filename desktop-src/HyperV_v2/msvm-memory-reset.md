@@ -1,7 +1,7 @@
 ---
-description: Método Reset da classe Msvm_Memory – solicita uma redefinição.
+description: Método reset da classe Msvm_Memory - Solicita uma redefinição.
 ms.assetid: c21be284-acb0-46e3-9629-b1d95154f58b
-title: Método Reset da classe Msvm_Memory
+title: Método reset da classe Msvm_Memory
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 8c966296c79a3215eb5b66c8825bb17d19854bd1
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: f9530594fb72c2186c1e69356e398fe94985f753a50404939b5d1d9367c720ff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108111604"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120046516"
 ---
-# <a name="reset-method-of-the-msvm_memory-class"></a>Método Reset da classe de \_ memória Msvm
+# <a name="reset-method-of-the-msvm_memory-class"></a>Método reset da classe Msvm \_ Memory
 
 Solicita uma redefinição.
 
@@ -57,17 +57,17 @@ Esse método retorna um dos seguintes valores:
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo com suporte<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[**\_Memória Msvm**](msvm-memory.md)
+[**Memória Msvm \_**](msvm-memory.md)
 </dt> </dl>
 
  

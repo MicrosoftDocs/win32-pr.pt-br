@@ -1,27 +1,27 @@
 ---
-description: A maneira como você grava eventos em uma sessão de rastreamento é determinada pelo tipo de seu provedor.
+description: A maneira como você escreve eventos em uma sessão de rastreamento é determinada pelo tipo de seu provedor.
 ms.assetid: 346f9c96-9ea8-41ea-8953-a1dc23732215
-title: Gravando eventos
+title: Escrevendo eventos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ffe7ab0ae1b7e5425527b804cc17a27dac0b20b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c1b4518cfc7e63b35243674271ec7fc46a5799e8f1799cf03ad412e77cf915f7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967455"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120078276"
 ---
-# <a name="writing-events"></a>Gravando eventos
+# <a name="writing-events"></a>Escrevendo eventos
 
-A maneira como você grava eventos em uma sessão de rastreamento é determinada pelo tipo de seu provedor.
+A maneira como você escreve eventos em uma sessão de rastreamento é determinada pelo tipo de seu provedor.
 
-Para provedores [MOF](about-event-tracing.md) , consulte [escrevendo eventos MOF (clássicos)](tracing-events.md).
+Para [provedores MOF,](about-event-tracing.md) consulte [Escrevendo eventos MOF (Clássico).](tracing-events.md)
 
-Para provedores de [WPP](about-event-tracing.md) , consulte [Writing WPP Events](windows-software-trace-preprocessor.md).
+Para [provedores WPP,](about-event-tracing.md) consulte [Escrevendo eventos WPP.](windows-software-trace-preprocessor.md)
 
-Para provedores [baseados em manifesto](about-event-tracing.md) , consulte [escrevendo eventos baseados em manifesto](writing-manifest-based-events.md).
+Para [provedores baseados em](about-event-tracing.md) manifesto, consulte [Escrevendo eventos baseados em manifesto.](writing-manifest-based-events.md)
 
-Para provedores de [TraceLogging](about-event-tracing.md) , consulte [usando o TraceLogging](../tracelogging/tracelogging-using-tracelogging.md).
+Para [provedores TraceLogging,](about-event-tracing.md) consulte [Usando TraceLogging](../tracelogging/tracelogging-using-tracelogging.md).
 
  
 

@@ -4,12 +4,12 @@ ms.assetid: 2fd14296-9eed-4e25-b140-6281c707fdb7
 title: Decodificador de áudio do Microsoft MPEG-1/DD/AAC (Wmcodecdsp. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a685fa2be32dd963cdc7de08ec716117e6a7016e
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 2dd20bfc2ad8a366b46ac0c0600d8cc7a8bca5abacae621e8ea7d02f5f1cb4d3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105779921"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120051246"
 ---
 # <a name="microsoft-mpeg-1ddaac-audio-decoder"></a>Decodificador de áudio do Microsoft MPEG-1/DD/AAC
 
@@ -34,7 +34,7 @@ Esse filtro decodifica os seguintes formatos de áudio:
 
  
 
-A decodificação dos formatos Dolby Digital Plus, AAC e HE-AAC requer o Windows 7. Não há suporte para a decodificação de Dolby Digital ou Dolby Digital Plus no Windows 7 Home Basic ou no Windows 7 Starter.
+a decodificação dos formatos Dolby Digital Plus, AAC e HE-AAC requer o Windows 7. não há suporte para a decodificação de dolby digital ou dolby digital Plus no Windows 7 Home Basic ou Windows 7 starter.
 
 No registro, o nome amigável desse filtro é "decodificador de áudio do Microsoft DTV-DVD".
 
@@ -48,7 +48,7 @@ Filtrar interfaces
 
 Tipos de mídia de pino de entrada
 
-No Windows Vista e posterior, o filtro dá suporte aos seguintes tipos de entrada:<br/>
+no Windows Vista e posterior, o filtro oferece suporte aos seguintes tipos de entrada:<br/>
 
 -   **MediaType \_ Áudio**, **MEDIASUBTYPE \_ Dolby \_ AC3** (veja a observação 1).
 -   **MediaType \_ Áudio**, **MEDIASUBTYPE \_ MPEG1Audio**
@@ -66,7 +66,7 @@ No Windows Vista e posterior, o filtro dá suporte aos seguintes tipos de entrad
 -   **MediaType \_ Stream**, **MEDIASUBTYPE \_ MPEG1Audio**
 -   **MediaType \_ Fluxo**, **\_ \_ áudio MEDIASUBTYPE MPEG2**
 
-A partir do Windows 7, o filtro também oferece suporte aos seguintes tipos de entrada:<br/>
+a partir do Windows 7, o filtro também oferece suporte aos seguintes tipos de entrada:<br/>
 
 -   **MediaType \_ Áudio**, **MEDIASUBTYPE \_ Dolby \_ DDPLUS** (veja a observação 1).
 -   **MediaType \_ Áudio**, **MEDIASUBTYPE \_ DTS2** (consulte a observação 2.)
@@ -98,12 +98,12 @@ Interfaces de pino de entrada
 
 Tipos de mídia do pino de saída
 
-No Windows Vista e posterior, o filtro dá suporte aos seguintes tipos de saída:<br/>
+no Windows Vista e posterior, o filtro dá suporte aos seguintes tipos de saída:<br/>
 
 -   **MediaType \_ Áudio**, **MEDIASUBTYPE \_ Dolby \_ AC3 \_ SPDIF** (igual ao **KSDATAFORMAT \_ subtipo \_ IEC61937 \_ Dolby \_ digital**)
 -   **MediaType \_ Áudio**, **MEDIASUBTYPE \_ PCM**
 
-A partir do Windows 7, o filtro também oferece suporte aos seguintes tipos de saída:<br/>
+a partir do Windows 7, o filtro também oferece suporte aos seguintes tipos de saída:<br/>
 
 -   **MediaType \_ Áudio**, **KSDATAFORMAT \_ subtipo \_ IEC61937 \_ DTS**
 -   **MediaType \_ Áudio**, **MEDIASUBTYPE \_ IEEE \_ float**
@@ -152,7 +152,7 @@ Para selecionar entre essas duas opções, use a interface [**ICodecAPI**](/wind
 
 Para o AAC, o decodificador tem determinadas restrições de formato na entrada AAC compactada. Essas restrições de formato são as mesmas que o [**decodificador AAC**](../medfound/aac-decoder.md)Media Foundation e estão documentadas na seção "[**restrições de formato**](../medfound/aac-decoder.md)".
 
-O decodificador do DirectShow também aceita tipos de entrada diferentes do decodificador de Media Foundation. O decodificador do DirectShow dá suporte aos seguintes tipos de entrada AAC:
+o decodificador DirectShow também aceita tipos de entrada diferentes do decodificador Media Foundation. o decodificador DirectShow dá suporte aos seguintes tipos de entrada AAC:
 
 -   **MEDIASUBTYPE \_ \_AAC1 bruto**: AAC bruto, normalmente encontrado em AVI ou Matroska (. MKV) arquivos.
 -   **MEDIASUBTYPE \_ MPEG \_ ADTS \_ AAC**: AAC em um fluxo de transporte de dados de áudio (ADTS) para streaming.
@@ -171,7 +171,7 @@ O PIN de entrada do decodificador dá suporte aos seguintes conjuntos de proprie
 -   [**Taxa-alteração de propriedade definida**](rate-change-property-set.md).
 
 > [!Note]  
-> A partir do Windows 7, o decodificador dá suporte ao modo de truque por meio do conjunto de propriedades de alteração de taxa. Ele dá suporte a taxas de reprodução no intervalo de \[ 0,501 a 2,0 \] , em que 1,0 é taxa de reprodução normal e 2,0 é o dobro da taxa normal.
+> a partir do Windows 7, o decodificador dá suporte ao modo de truque por meio do conjunto de propriedades de alteração de taxa. Ele dá suporte a taxas de reprodução no intervalo de \[ 0,501 a 2,0 \] , em que 1,0 é taxa de reprodução normal e 2,0 é o dobro da taxa normal.
 
  
 
@@ -186,7 +186,7 @@ O PIN de entrada do decodificador dá suporte às seguintes propriedades por mei
 | [**AVAudioChannelConfig**](avaudiochannelconfig-property.md)     | Windows Vista                                            |
 | [**AVAudioChannelCount**](avaudiochannelcount-property.md)       | Windows Vista                                            |
 | [**AVAudioSampleRate**](avaudiosamplerate-property.md)           | Windows Vista                                            |
-| [**AVDDSurroundMode**](avddsurroundmode-property.md)             | Somente Windows Vista; sem suporte no Windows 7 ou posterior. |
+| [**AVDDSurroundMode**](avddsurroundmode-property.md)             | Windows Somente vista; sem suporte no Windows 7 ou posterior. |
 | [**AVDecAudioDualMono**](avdecaudiodualmono-property.md)         | Windows Vista                                            |
 | [**AVDecCommonInputFormat**](avdeccommoninputformat-property.md) | Windows Vista                                            |
 | [**AVDecCommonMeanBitRate**](avdeccommonmeanbitrate.md)          | Windows 7                                                |
@@ -226,9 +226,9 @@ O filtro oferece suporte às seguintes propriedades por meio de [**ICodecAPI**](
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Vista Home Premium, Windows Vista Ultimate, aplicativos de área de trabalho do Windows 7 \[ somente\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows vista Home Premium, Windows vista Ultimate, \[ somente aplicativos de área de trabalho do Windows 7\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                      |
-| parâmetro<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl>        |
+| Cabeçalho<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl>        |
 
 
 
@@ -239,7 +239,7 @@ O filtro oferece suporte às seguintes propriedades por meio de [**ICodecAPI**](
 [**Subtipos de áudio**](audio-subtypes.md)
 </dt> <dt>
 
-[Filtros do DirectShow](directshow-filters.md)
+[DirectShow Filter](directshow-filters.md)
 </dt> <dt>
 
 [**Tipos de mídia de DVD**](dvd-media-types.md)

@@ -1,21 +1,21 @@
 ---
 description: Especifica a taxa de proporção de pixel.
 ms.assetid: 948eae1e-ab24-4b39-aa20-ec7da71bb359
-title: Propriedade AVEncVideoPixelAspectRatio (Codecapi. h)
+title: Propriedade AVEncVideoPixelAspectRatio (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cecd4b48f51fd6e91b45ad962a9ef81ebbf40824
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: b6d3f1050cbdd4006f9e32b9b574bbffc14ccf5f64a53982137804165ca26226
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104500189"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120057926"
 ---
 # <a name="avencvideopixelaspectratio-property"></a>Propriedade AVEncVideoPixelAspectRatio
 
 Especifica a taxa de proporção de pixel.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="data-type"></a>Tipo de dados
 
@@ -35,9 +35,9 @@ Os 16 bits superiores do valor contêm a largura e os 16 bits inferiores contêm
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos do Windows 2000 Professional \[ Desktop aplicativos \| UWP\]<br/>                     |
-| Servidor mínimo com suporte<br/> | Aplicativos da área de trabalho do Windows 2000 Server aplicativos \[ \| UWP\]<br/>                           |
-| parâmetro<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional \[ aplicativos UWP da área de \| trabalho\]<br/>                     |
+| Servidor mínimo com suporte<br/> | Windows aplicativos da área de trabalho do servidor 2000 \[ \| aplicativos UWP\]<br/>                           |
+| Cabeçalho<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -45,10 +45,10 @@ Os 16 bits superiores do valor contêm a largura e os 16 bits inferiores contêm
 
 <dl> <dt>
 
-[Propriedades da API do codec](codec-api-properties.md)
+[Propriedades da API do Codec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interface ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI Interface**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

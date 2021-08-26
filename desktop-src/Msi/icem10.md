@@ -1,5 +1,5 @@
 ---
-description: ICEM10 verifica se um módulo de mesclagem contém apenas propriedades que são permitidas na tabela de propriedades.
+description: ICEM10 verifica se um módulo de mesclagem contém apenas propriedades que são permitidas na Tabela de Propriedades.
 ms.assetid: 9ac7a724-ea0e-4caa-bb4f-846bfb802037
 title: ICEM10
 ms.topic: article
@@ -13,17 +13,17 @@ ms.locfileid: "120129406"
 ---
 # <a name="icem10"></a>ICEM10
 
-ICEM10 verifica se um módulo de mesclagem contém apenas propriedades que são permitidas na [tabela de propriedades](property-table.md). As propriedades específicas do produto a seguir não são permitidas na tabela de propriedades:
+ICEM10 verifica se um módulo de mesclagem contém apenas as propriedades permitidas na [Tabela de Propriedades](property-table.md). As seguintes propriedades específicas do produto não são permitidas na Tabela de Propriedades:
 
 -   [**Propriedade ProductLanguage**](productlanguage.md)
 -   [**Propriedade ProductCode**](productcode.md)
 -   [**Propriedade ProductVersion**](productversion.md)
 -   [**Propriedade ProductName**](productname.md)
--   [**Propriedade manufacturer**](manufacturer.md)
+-   [**Propriedade Manufacturer**](manufacturer.md)
 
 ## <a name="result"></a>Resultado
 
-ICEM10 posta um erro quando um módulo de mesclagem contém uma propriedade que não é permitida na [tabela de propriedades](property-table.md).
+ICEM10 posta um erro quando um módulo de mesclagem contém uma propriedade que não é permitida na [Tabela de Propriedades](property-table.md).
 
 ## <a name="example"></a>Exemplo
 
@@ -35,14 +35,14 @@ The property 'ProductLanguage' is not allowed in a merge module.
 The property 'Manufacturer' is not allowed in a merge module.
 ```
 
-A tabela a seguir mostra uma [tabela de propriedades](property-table.md)parcial.
+A tabela a seguir mostra uma Tabela de [Propriedades parcial](property-table.md).
 
 
 
 | Propriedade                                   | Valores    |
 |--------------------------------------------|-----------|
 | Color                                      | Vermelho       |
-| [**Manufacturer**](manufacturer.md)       | Microsoft |
+| [**Fabricante**](manufacturer.md)       | Microsoft |
 | [**ProductLanguage**](productlanguage.md) | 1046      |
 
 
@@ -53,18 +53,18 @@ O procedimento a seguir mostra como corrigir erros.
 
 **Para corrigir os erros**
 
-1.  Remova a propriedade '[**manufacturer**](manufacturer.md)' da [tabela de propriedades](property-table.md).
-2.  Remova a propriedade '[**ProductLanguage**](productlanguage.md)' da [tabela de propriedades](property-table.md).
+1.  Remova a propriedade '[**Manufacturer**](manufacturer.md)' da [Tabela de Propriedades](property-table.md).
+2.  Remova a propriedade '[**ProductLanguage**](productlanguage.md)' da [Tabela de Propriedades](property-table.md).
 
 ## <a name="table-used-during-execution"></a>Tabela usada durante a execução
 
-A [tabela de propriedades](property-table.md) é usada durante a execução.
+A [Tabela de Propriedades](property-table.md) é usada durante a execução.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Referência de ICE do módulo de mesclagem](merge-module-ice-reference.md)
+[Referência ice do módulo de mesclagem](merge-module-ice-reference.md)
 </dt> </dl>
 
  

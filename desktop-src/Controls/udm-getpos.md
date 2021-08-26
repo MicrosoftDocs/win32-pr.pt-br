@@ -3,7 +3,7 @@ title: Mensagem de UDM_GETPOS (commctrl. h)
 description: Recupera a posição atual de um controle de cima para baixo com precisão de 16 bits.
 ms.assetid: 5f395de0-11b3-44f8-9bf4-42e27ce88a0c
 keywords:
-- Controles de UDM_GETPOS de mensagens do Windows
+- controles de Windows de mensagem de UDM_GETPOS
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f8e78ad19289d85b93ebcb39a244a896ddb4f33f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e92ca5fe5d902980560b6879ac7c345230056987308a1e390b0af351281eac62
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105748248"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120059776"
 ---
 # <a name="udm_getpos-message"></a>\_Mensagem de GETPOS UDM
 
@@ -35,7 +35,7 @@ Recupera a posição atual de um controle de cima para baixo com precisão de 16
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se for bem-sucedido, o [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) será definido como zero e o [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) será definido como a posição atual do controle. Se ocorrer um erro, o **HIWORD** será definido como um valor diferente de zero.
 
@@ -51,9 +51,9 @@ Se os valores de 32 bits tiverem sido habilitados para um controle de cima para 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

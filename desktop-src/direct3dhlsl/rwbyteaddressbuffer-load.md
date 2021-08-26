@@ -1,5 +1,5 @@
 ---
-title: Métodos RWByteAddressBuffer::RWByteAddressBuffer Load
+title: 'Métodos de carga RWByteAddressBuffer:: RWByteAddressBuffer'
 description: Obtém um valor de um RWByteAddressBuffer.
 ms.assetid: AD284B6B-A552-4036-954A-988A9593E0A4
 keywords:
@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "120095286"
 ---
-# <a name="rwbyteaddressbufferload-methods"></a>Métodos RWByteAddressBuffer::Load
+# <a name="rwbyteaddressbufferload-methods"></a>Métodos RWByteAddressBuffer:: Load
 
-Obtém um valor de [**um RWByteAddressBuffer.**](sm5-object-rwbyteaddressbuffer.md)
+Obtém um valor de um [**RWByteAddressBuffer**](sm5-object-rwbyteaddressbuffer.md).
 
 ### <a name="overload-list"></a>Lista de sobrecargas
 
@@ -29,8 +29,8 @@ Obtém um valor de [**um RWByteAddressBuffer.**](sm5-object-rwbyteaddressbuffer.
 
 | Método                                                         | Descrição                                                    |
 |:---------------------------------------------------------------|:---------------------------------------------------------------|
-| [**Load(int,uint)**](rwbyteaddressbuffer-load-float-uint-.md) | Obtém um valor e retorna o status da operação.<br/> |
-| [**Load(int)**](rwbyteaddressbuffer-load-float-.md)           | Obtém um valor.<br/>                                     |
+| [**Carga (int, uint)**](rwbyteaddressbuffer-load-float-uint-.md) | Obtém um valor e retorna o status da operação.<br/> |
+| [**Carga (int)**](rwbyteaddressbuffer-load-float-.md)           | Obtém um valor.<br/>                                     |
 
 
 

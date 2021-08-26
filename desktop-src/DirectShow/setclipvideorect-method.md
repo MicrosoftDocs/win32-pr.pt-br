@@ -1,15 +1,15 @@
 ---
-description: O método SetClipVideoRect amplia a exibição de vídeo para o subretângulo especificado.
+description: O método SetClipVideoRect amplia a exibição de vídeo para o subrectangle especificado.
 ms.assetid: 3940a382-8d53-4ff9-b024-38de1aa00f54
 title: Método SetClipVideoRect
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ff7f4b003ef20b82f1e783ebf074e8bbd5cc793
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 7e7741a2604ed1c2896b105295020893e23b447e3fa6f6ab7c53def92aa508c4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103645848"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120078866"
 ---
 # <a name="setclipvideorect-method"></a>Método SetClipVideoRect
 
@@ -18,7 +18,7 @@ ms.locfileid: "103645848"
 
  
 
-O `SetClipVideoRect` método amplia a exibição de vídeo para o subretângulo especificado.
+O `SetClipVideoRect` método amplia a exibição de vídeo para o subrectangle especificado.
 
 ``` syntax
 MSWebDVD.SetClipVideoRect(oRect)
@@ -31,7 +31,7 @@ MSWebDVD.SetClipVideoRect(oRect)
 <span id="oRect"></span><span id="orect"></span><span id="ORECT"></span>*oRect*
 </dt> <dd>
 
-Especifica um objeto [DVDRect](dvdrect-object.md) , que contém o retângulo de recorte.
+Especifica um objeto [DVDRect,](dvdrect-object.md) que contém o retângulo de recorte.
 
 </dd> </dl>
 
@@ -41,7 +41,7 @@ Sem valor de retorno.
 
 ## <a name="remarks"></a>Comentários
 
-Quando você define um novo retângulo de recorte, o objeto amplia essa área para caber nas dimensões de exibição gerais do aplicativo. Isso cria o efeito de zoom em uma área específica da tela. Para especificar o retângulo, crie um novo objeto [DVDRect](dvdrect-object.md) e preencha suas propriedades.
+Quando você definir um novo retângulo de recorte, o objeto ampliará essa área para caber nas dimensões de exibição geral do aplicativo. Isso cria o efeito de ampliar em uma área específica da tela. Para especificar o retângulo, crie um novo [objeto DVDRect](dvdrect-object.md) e preencha suas propriedades.
 
 O retângulo mais comum para exibição de vídeo é 720 x 540.
 

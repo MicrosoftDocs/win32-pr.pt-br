@@ -10,16 +10,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: b90ee4f81c2afdfc222dd7d5d824f88bda122b73
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e261459785fa4e0ccdce7337df788de007c6f335799bbe4778e80f551f5e519e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104562275"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119995514"
 ---
 # <a name="wmi-architecture"></a>Arquitetura do WMI
 
-O WMI fornece uma interface uniforme para quaisquer aplicativos ou scripts locais ou remotos que obtêm dados de gerenciamento de um sistema de computador, rede ou empresa. A interface uniforme foi projetada de modo que os scripts e aplicativos cliente WMI não precisem chamar uma ampla variedade de interfaces de programação de aplicativo (APIs) do sistema operacional. Muitas APIs não podem ser chamadas por clientes de automação, como scripts ou aplicativos Visual Basic. Outras APIs não fazem chamadas para computadores remotos.
+O WMI fornece uma interface uniforme para quaisquer aplicativos ou scripts locais ou remotos que obtêm dados de gerenciamento de um sistema de computador, rede ou empresa. A interface uniforme foi projetada de modo que os scripts e aplicativos cliente WMI não precisem chamar uma ampla variedade de interfaces de programação de aplicativo (APIs) do sistema operacional. muitas APIs não podem ser chamadas por clientes de automação, como scripts ou aplicativos Visual Basic. Outras APIs não fazem chamadas para computadores remotos.
 
 Para obter dados do WMI, grave um script de cliente ou aplicativo que acesse as [classes WMI](wmi-classes.md) ou forneça dados para o WMI escrevendo um [*provedor WMI*](gloss-p.md). Para obter mais informações, consulte [usando o WMI](using-wmi.md).
 
@@ -45,7 +45,7 @@ A lista a seguir descreve os principais componentes WMI:
 
 -   [Infraestrutura WMI](wmi-infrastructure.md)
 
-    A infraestrutura do WMI é um componente do sistema operacional Microsoft Windows conhecido como o serviço WMI (Winmgmt). A infraestrutura do WMI tem dois componentes: o núcleo do WMI e o [*repositório do WMI*](gloss-w.md).
+    a infraestrutura do wmi é um componente do sistema operacional Microsoft Windows conhecido como o serviço WMI (winmgmt). A infraestrutura do WMI tem dois componentes: o núcleo do WMI e o [*repositório do WMI*](gloss-w.md).
 
     O repositório WMI é organizado por [*namespaces*](gloss-n.md)WMI. O serviço WMI cria alguns namespaces como raiz \\ padrão, cimv2 raiz \\ e \\ assinatura raiz na inicialização do sistema e desinstala um conjunto padrão de definições de classe, incluindo as [classes Win32](/windows/desktop/CIMWin32Prov/win32-provider), as classes de [sistema WMI](wmi-system-classes.md)e outras. Os namespaces restantes encontrados no sistema são criados por provedores para outras partes do sistema operacional ou produtos. Para obter mais informações e uma lista de provedores de WMI encontrados na maioria das versões do sistema operacional, consulte [provedores WMI](wmi-providers.md).
 

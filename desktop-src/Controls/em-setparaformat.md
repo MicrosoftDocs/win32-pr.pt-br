@@ -3,7 +3,7 @@ title: Mensagem de EM_SETPARAFORMAT (RichEdit. h)
 description: Define a formatação de parágrafo para a seleção atual em um controle de edição rico.
 ms.assetid: 2d612e1b-1489-4055-929b-e0b2719f6ec2
 keywords:
-- Controles de EM_SETPARAFORMAT de mensagens do Windows
+- controles de Windows de mensagem de EM_SETPARAFORMAT
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8780ed79650a90a8d85ee8025dbe97e9af36aa1a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1db0ba4e4bf505c5fb1b746b84cae71dcc621635a0a33b4a533ce8551486fe6c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455020"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120062906"
 ---
 # <a name="em_setparaformat-message"></a>\_Mensagem em SETPARAFORMAT
 
@@ -45,7 +45,7 @@ Microsoft rich edit 2,0 e posterior: esse parâmetro pode ser um ponteiro para u
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a operação for concluída com sucesso, o valor de retorno será um valor diferente de zero.
 
@@ -57,9 +57,9 @@ Se a operação falhar, o valor de retorno será zero.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
 
 
 

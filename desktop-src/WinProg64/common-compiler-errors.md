@@ -3,16 +3,16 @@ title: Erros comuns do compilador
 description: Esta seção ilustra os erros de compilador típicos que ocorrem durante a migração de uma base de código existente. Esses exemplos são de código HAL de nível de sistema, embora os conceitos sejam diretamente aplicáveis ao código de nível de usuário.
 ms.assetid: bbb6a57f-281a-4a6e-a4b6-15846d0cf21f
 keywords:
-- erros do compilador programação do Windows de 64 bits
-- Programação de migração de 64 bits do Windows
+- erros de compilador 64-bit Windows programação
+- migração de 64 bits Windows-programação
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a84a5f5f58f2cab7555ce3401ed6fae0af240f4
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 55d12e7c5566b5cb2b934eefb71b1b51858f278d3e408d3080cb1810f185dcfb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104294616"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120071636"
 ---
 # <a name="common-compiler-errors"></a>Erros comuns do compilador
 
@@ -107,7 +107,7 @@ typedef struct __CONFIGURATION_COMPONENT {
 } CONFIGURATION_COMPONENT, * POINTER_32 PCONFIGURATION_COMPONENT;
 ```
 
-A definição de tipo para o \_ componente PCONFIGURATION fornece um ponteiro de 32 bits nos modelos de 32 bits e 64 bits porque ele é declarado como **ponteiro \_ 32**. O designer original dessa estrutura sabia que ela será usada em um contexto de 32 bits no BIOS e definiu-a expressamente para esse uso. Esse código funciona bem em janelas de 32 bits porque os ponteiros são de 32 bits. No Windows de 64 bits, ele não funciona porque o código está no contexto de 64 bits.
+A definição de tipo para o \_ componente PCONFIGURATION fornece um ponteiro de 32 bits nos modelos de 32 bits e 64 bits porque ele é declarado como **ponteiro \_ 32**. O designer original dessa estrutura sabia que ela será usada em um contexto de 32 bits no BIOS e definiu-a expressamente para esse uso. esse código funciona bem em Windows de 32 bits porque os ponteiros são de 32 bits. no Windows de 64 bits, ele não funciona porque o código está no contexto de 64 bits.
 
 </dd> <dt>
 
@@ -259,7 +259,7 @@ return ComPortAddress;
 }
 ```
 
-**Pulong \_ PTR** é um ponteiro que é, em si, 32 bits para janelas de 32 bits e 64 bits para o Windows de 64 bits. Ele aponta para um inteiro não assinado, **ULONG \_ PTR**, que é de 32 bits para Windows de 32 bits e 64 bits para o Windows de 64 bits.
+**Pulong \_ PTR** é um ponteiro que é, em si, 32 bits para Windows de 32 bits e 64 bits para Windows de 64 bits. ele aponta para um inteiro não assinado, **ULONG \_ PTR**, que é de 32 bits para 32 bits Windows e 64 bits para Windows de 64 bits.
 
 </dd> </dl>
 
@@ -402,11 +402,11 @@ Isso funciona neste exemplo: a macro **HalCreateQva** está retornando 64 bits, 
 
 ## <a name="warning-c4311-example-5"></a>Exemplo de aviso C4311 5
 
-' Type cast ': truncamento de ponteiro de ' void \* \_ \_ ptr64 ' para ' unsinaled Long '
+'type cast': truncamento de ponteiro de 'void \* \_ \_ ptr64' para 'unsigned long'
 
 <dl> <dt>
 
-<span id="Code"></span><span id="code"></span><span id="CODE"></span>Auto-completar
+<span id="Code"></span><span id="code"></span><span id="CODE"></span>Código
 </dt> <dd>
 
 ``` syntax
@@ -426,19 +426,19 @@ Wbase.Wbase = (ULONG)(WindowRegisters->WindowBase) >> 20;
 
 </dd> <dt>
 
-<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>Ndescrição
+<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>Descrição
 </dt> <dd>
 
-WindowRegisters->WindowBase é um ponteiro e agora é de 64 bits. O código diz para alternar para a direita esse valor 20 bits. O compilador não nos permitirá usar o operador right-shift (>>) em um ponteiro; Portanto, precisamos convertê-lo em algum tipo de inteiro.
+WindowRegisters->WindowBase é um ponteiro e agora tem 64 bits. O código diz para deslocar para a direita esse valor de 20 bits. O compilador não nos permitirá usar o operador de deslocamento à direita (>>) em um ponteiro; portanto, precisamos castiá-lo em algum tipo de inteiro.
 
 </dd> <dt>
 
-<span id="Solution"></span><span id="solution"></span><span id="SOLUTION"></span>Soluções
+<span id="Solution"></span><span id="solution"></span><span id="SOLUTION"></span>Solução
 </dt> <dd>
 
 `Wbase.Wbase= PtrToUlong ( (PVOID) ((ULONG_PTR) (WindowRegisters->WindowBase) >> 20));`
 
-A conversão para um **ULONG \_ PTR** é exatamente o que precisamos. O próximo problema é o Wbase. Wbase é um **ULONG** e é de 32 bits. Nesse caso, sabemos que o ponteiro de 64 bits WindowRegisters->WindowBase é válido na parte inferior 32 bits mesmo depois de ser deslocado. Isso usa a macro **PtrToUlong** aceitável, pois ele truncará o ponteiro de 64 bits em um **ULONG** de 32 bits. A conversão **pVoid** é necessária porque o **PtrToUlong** espera um argumento de ponteiro. Quando você examina o código resultante do Assembler, toda essa conversão de código C se torna apenas uma carga Quad, Shift Right e Store Long.
+A transmissão para **um \_ PTR ULONG** é exatamente o que precisamos. O próximo problema é o Wbase. O Wbase é **um ULONG** e tem 32 bits. Nesse caso, sabemos que o ponteiro de 64 bits WindowRegisters->WindowBase é válido nos 32 bits inferiores mesmo depois de ser deslocado. Isso torna o uso da macro **PtrToUlong** aceitável, pois ele truncará o ponteiro de 64 bits em um ULONG de 32 **bits.** A **cast PVOID** é necessária porque **PtrToUlong** espera um argumento de ponteiro. Quando você vê o código do assembler resultante, toda essa transmissão de código C torna-se apenas um quad de carga, deslocamento para a direita e armazenamento longo.
 
 </dd> </dl>
 
