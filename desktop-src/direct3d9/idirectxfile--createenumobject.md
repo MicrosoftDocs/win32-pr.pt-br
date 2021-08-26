@@ -1,7 +1,7 @@
 ---
 description: Cria um objeto enumerador. Preterido.
 ms.assetid: 9e72bb2f-143e-4690-baef-ccded21572ec
-title: 'Método IDirectXFile:: createenumobject (DXFile. h)'
+title: Método IDirectXFile::CreateEnumObject (DXFile.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,7 +21,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119985146"
 ---
-# <a name="idirectxfilecreateenumobject-method"></a>Método IDirectXFile:: createenumobject
+# <a name="idirectxfilecreateenumobject-method"></a>Método IDirectXFile::CreateEnumObject
 
 Cria um objeto enumerador. Preterido.
 
@@ -42,30 +42,30 @@ HRESULT CreateEnumObject(
 
 <dl> <dt>
 
-*pvSource* \[ no\]
+*pvSource* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **LPVOID**](../winprog/windows-data-types.md)**
 
-Ponteiro para dados cujos conteúdos dependem do valor de dwLoadOptions
+Ponteiro para dados cujo conteúdo depende do valor de dwLoadOptions
 
 </dd> <dt>
 
-*dwLoadOptions* \[ no\]
+*dwLoadOptions* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **DXFILELOADOPTIONS**](dxfile.md)**
 
-Valor que especifica a origem dos dados. Esse valor pode ser um dos sinalizadores DXFILELOAD \_ XXX em [constantes DXFILE](dxfile.md).
+Valor que especifica a origem dos dados. Esse valor pode ser um dos sinalizadores DXFILELOAD \_ xxx em [Constantes DXFILE](dxfile.md).
 
 </dd> <dt>
 
 *ppEnumObj* \[ out, retval\]
 </dt> <dd>
 
-Tipo: **[ **LPDIRECTXFILEENUMOBJECT**](idirectxfileenumobject.md)\***
+Tipo: **[ **LPDIRECTXF DIGITUMOBJECT**](idirectxfileenumobject.md)\***
 
-Endereço de um ponteiro para uma interface [**IDirectXFileEnumObject**](idirectxfileenumobject.md) , que representa o objeto enumerador criado.
+Endereço de um ponteiro para uma interface [**IDirectXFileEnumObject,**](idirectxfileenumobject.md) que representa o objeto de enumerador criado.
 
 </dd> </dl>
 
@@ -73,7 +73,7 @@ Endereço de um ponteiro para uma interface [**IDirectXFileEnumObject**](idirect
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se o método for bem sucedido, o valor de retorno será DXFILE \_ OK. Se o método falhar, o valor de retorno poderá ser um dos seguintes: DXFILEERR \_ BADALLOC, DXFILEERR \_ BADFILEFLOATSIZE, DXFILEERR \_ BADFILETYPE, DXFILEERR \_ BADFILEVERSION, DXFILEERR \_ BADRESOURCE, DXFILEERR \_ BADVALUE, DXFILEERR \_ FILENOTFOUND, DXFILEERR \_ RESOURCENOTFOUND, DXFILEERR \_ URLNOTFOUND.
+Se o método for bem-sucedido, o valor de retorno será DXFILE \_ OK. Se o método falhar, o valor de retorno poderá ser um dos seguintes: DXFILEERR \_ BADALLOC, \_ DXFILEERR BADFILEFLOATSIZE, \_ \_ \_ \_ DXFILEERR BADFILETYPE, DXFILEERR BADFILEVERSION, DXFILEERR BADRESOURCE, DXFILEERR BADVALUE, DXFILEERR \_ FILENOTFOUND, DXFILEERR \_ RESOURCENOTFOUND, DXFILEERR \_ URLNOTFOUND.
 
 ## <a name="remarks"></a>Comentários
 
@@ -85,8 +85,8 @@ Depois de usar esse método, use um dos métodos IDirectXFileEnumObject para rec
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>DXFile. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3dxof. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>DXFile.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3dxof.lib</dt> </dl> |
 
 
 

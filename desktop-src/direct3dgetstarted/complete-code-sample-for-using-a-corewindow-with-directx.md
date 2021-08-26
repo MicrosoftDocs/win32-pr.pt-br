@@ -4,18 +4,18 @@ description: Este tópico fornece o exemplo de código completo usado no tutoria
 ms.assetid: 5d1e1f21-b541-4a61-8f04-e1e767b3a23e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bb1a01e983f483503b42a0ac244453f14665460f
-ms.sourcegitcommit: 07b756a2f350efa5cfd5024a723ef392274ac3d9
+ms.openlocfilehash: 26940947a1806ab5e265720aa681b37cd9f93d1ac7f80ef69d72ce91a3ea8d5f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "105782393"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120068676"
 ---
 # <a name="complete-code-for-a-directx-framework"></a>Código completo de uma estrutura do DirectX
 
 Este tópico fornece o exemplo de código completo usado no tutorial introdução [ao DirectX para Windows](getting-started-with-a-directx-game.md).
 
-Esse código pressupõe que você está usando Microsoft Visual Studio 2013 e que você criou um projeto Win32 vazio.
+esse código pressupõe que você está usando Microsoft Visual Studio 2013 e que você criou um projeto Win32 vazio.
 
 Este tópico contém estas seções:
 
@@ -38,7 +38,7 @@ Este exemplo não está disponível para download.
 | Requisito | Valor |
 |-----------------------|-------------|
 | Linguagens de programação | C++         |
-| Modelos de programação    | Windows/C++ |
+| Modelos de programação    | Windows/C + + |
 
 <span id="requirements"></span>
 

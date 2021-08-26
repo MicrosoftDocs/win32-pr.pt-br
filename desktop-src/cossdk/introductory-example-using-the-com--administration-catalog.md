@@ -1,41 +1,41 @@
 ---
-description: Exemplo introdutório usando o catálogo de administração do COM+
+description: Exemplo introdutório usando o catálogo de administração COM+
 ms.assetid: e9ce25aa-4fb1-4357-9f4e-5bf649e29447
-title: Exemplo introdutório usando o catálogo de administração do COM+
+title: Exemplo introdutório usando o catálogo de administração COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: db24f3985538b7189534c9fef3ef279ed240e3a1
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 5bfd085cbe9a829a1248ddf36057c9d9f79de9d576236a2621b237063340cf95
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105757583"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120070586"
 ---
-# <a name="introductory-example-using-the-com-administration-catalog"></a>Exemplo introdutório usando o catálogo de administração do COM+
+# <a name="introductory-example-using-the-com-administration-catalog"></a>Exemplo introdutório usando o catálogo de administração COM+
 
-Ao usar programaticamente o catálogo de administração do COM+, você normalmente executa as seguintes etapas gerais (não dadas em uma ordem estrita aqui):
+Ao usar programaticamente o catálogo de Administração do COM+, normalmente você realiza as seguintes etapas gerais (não fornecidas em uma ordem estrita aqui):
 
 -   Abra uma sessão com o catálogo COM+ no computador local. Opcionalmente, conecte-se ao catálogo COM+ em um computador remoto.
--   Executar ações como iniciar ou interromper serviços — ações que não pertencem a um aplicativo COM+ específico.
--   Execute ações como instalar ou exportar aplicativos COM+ ou instalar componentes em aplicativos — ações que pertencem à leitura ou gravação em arquivos.
--   Adicione novos itens a coleções, como criar um novo aplicativo COM+ adicionando um novo item à coleção "aplicativos".
--   Definir ou obter propriedades de um item em uma coleção.
+-   Execute ações como iniciar ou parar serviços — ações que não pertencem a um aplicativo COM+ específico.
+-   Execute ações como instalar ou exportar aplicativos COM+ ou instalar componentes em aplicativos – ações que pertencem à leitura ou à escrita em arquivos.
+-   Adicione novos itens a coleções, como criar um novo aplicativo COM+ adicionando um novo item à coleção "Aplicativos".
+-   Definir ou obter propriedades em um item em uma coleção.
 -   Salve ou descarte as alterações pendentes no catálogo.
--   Manipule quaisquer erros que possam ocorrer.
+-   Tratar quaisquer erros que possam ocorrer.
 
-Para mostrar a aparência dessas etapas quando você usa os objetos COMAdmin, um exemplo de Visual Basic da Microsoft é fornecido abaixo. Ele ilustra brevemente algumas das etapas típicas descritas acima, como localizar coleções, enumerar por meio de uma coleção para recuperar um item e definir propriedades nesse item.
+Para mostrar a aparência dessas etapas ao usar os objetos COMAdmin, um exemplo de Visual Basic Microsoft é fornecido abaixo. Ele ilustra brevemente algumas das etapas típicas descritas acima, como localizar coleções, enumerar por meio de uma coleção para recuperar um item e definir propriedades nesse item.
 
-No exemplo a seguir, você executará as seguintes ações:
+No exemplo abaixo, você executará as seguintes ações:
 
 1.  Crie um novo aplicativo COM+, "MyHomeZoo".
 2.  Instale alguns componentes, Cat e Dog, no aplicativo. Ambos os componentes estão contidos em uma única DLL que já deve existir: MyZoo.dll.
-3.  Configure a segurança baseada em função para o aplicativo definindo duas funções: ZooKeeper e AllergicToCats.
+3.  Configure a segurança baseada em função para o aplicativo definindo duas funções: ZooKeeper e KeeperToCats.
 4.  Atribua o acesso à função ZooKeeper a todo o aplicativo.
-5.  Atribua o acesso à função AllergicToCats somente ao componente Dog.
-6.  Ative as propriedades de segurança para que a verificação de função seja imposta para o aplicativo.
+5.  Atribua o acesso à função AssigntoCats somente ao componente Dog.
+6.  A ligue as propriedades de segurança para que a verificação de função seja imposta para o aplicativo.
 7.  Exporte o aplicativo MyHomeZoo para um arquivo para que ele possa ser instalado em outros computadores.
 
-Para usar este exemplo de Visual Basic, adicione uma referência à biblioteca de tipos de administrador do COM+.
+Para usar este exemplo de Visual Basic, adicione uma referência à Biblioteca de Tipos de Administrador COM+.
 
 
 ```VB
@@ -183,7 +183,7 @@ Exit Function
 [Operações de administração COM+ em transações](com--administration-operations-within-transactions.md)
 </dt> <dt>
 
-[Manipulando erros de administração COM+](handling-com--administration-errors.md)
+[Tratando erros de administração COM+](handling-com--administration-errors.md)
 </dt> <dt>
 
 [Visão geral dos objetos COMAdmin](overview-of-the-comadmin-objects.md)

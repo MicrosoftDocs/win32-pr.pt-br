@@ -17,7 +17,7 @@ ms.locfileid: "119988436"
 Conexão Web de Área de Trabalho Remota requer dois sistemas configurados da seguinte forma:
 
 -   Um servidor host executando Windows iis 4.0 ou posterior.
--   Um cliente que pode baixar e executar o Área de Trabalho Remota ActiveX controle. Qualquer cliente que executa o Microsoft Internet Explorer 4.01 (preferencialmente Service Pack 2) ou posterior pode executar o controle Área de Trabalho Remota ActiveX aplicativo.
+-   Um cliente que pode baixar e executar o Área de Trabalho Remota ActiveX controle. Qualquer cliente que executa o Microsoft Internet Explorer 4.01 (preferencialmente Service Pack 2) ou posterior pode executar o Área de Trabalho Remota ActiveX controle.
 
 O usuário que instala o software deve ter privilégios suficientes para instalar o software. Por exemplo, no Windows XP, o usuário deve ser membro dos grupos Usuários do Power ou Administradores.
 

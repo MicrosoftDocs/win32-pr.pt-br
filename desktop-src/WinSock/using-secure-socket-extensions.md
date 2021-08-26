@@ -4,12 +4,12 @@ ms.assetid: d5e2f9d0-c61f-42d3-b62b-6c75b221ae24
 title: Usando extensões de soquete seguro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d8a9abf9f3e9feee9e47a9925de08e49c66e821
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9ad8c9569631303c2b9cc12d3e70b4c5483d461a5d60d8810033ffd49be5743c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922606"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120121166"
 ---
 # <a name="using-secure-socket-extensions"></a>Usando extensões de soquete seguro
 
@@ -282,7 +282,7 @@ int QueryTcpSocketSecurity(IN SOCKET sock)
 
 <dl> <dt>
 
-[Sobre a plataforma de filtragem do Windows](../fwp/about-windows-filtering-platform.md)
+[sobre a plataforma de filtragem de Windows](../fwp/about-windows-filtering-platform.md)
 </dt> <dt>
 
 [Exemplos de Winsock avançados usando extensões de soquete seguro](advanced-winsock-samples-using-secure-socket-extensions.md)
@@ -303,7 +303,7 @@ int QueryTcpSocketSecurity(IN SOCKET sock)
 [Plataforma de filtragem do Windows](../fwp/windows-filtering-platform-start-page.md)
 </dt> <dt>
 
-[Funções da API da Windows Filtering Platform](../fwp/fwp-functions.md)
+[Windows Funções da API de plataforma de filtragem](../fwp/fwp-functions.md)
 </dt> <dt>
 
 [Extensões do Winsock Secure Socket](winsock-secure-socket-extensions.md)

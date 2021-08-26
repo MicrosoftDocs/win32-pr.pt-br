@@ -34,7 +34,7 @@ Para criar um moniker de sessão, você deve compor a ID de sessão da sessão S
 
     em *que dígitos* representam a ID de sessão da sessão na qual o processo do servidor será iniciado e onde a *ID* da classe representa a ID de classe do servidor. Observe que a ID da sessão é um número de base 10.
 
-    Para computadores que estão executando o Windows XP ou posterior, o uso da sintaxe a seguir fará com que o COM envie a ativação para a sessão de console físico ativa no momento, seja qual for sua ID de sessão:
+    Para computadores que estão executando o Windows XP ou posterior, o uso da sintaxe a seguir resultará no envio com a ativação para a sessão de console físico ativa no momento, seja qual for sua ID de sessão:
 
     ``` syntax
     "Session:Console!clsid:[class id]"

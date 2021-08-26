@@ -1,9 +1,9 @@
 ---
-title: Mensagem de TVM_GETITEM (commctrl. h)
-description: Recupera alguns ou todos os atributos de um item de exibição de árvore. Você pode enviar essa mensagem explicitamente ou usando a macro TreeView \_ GetItem.
+title: TVM_GETITEM mensagem (Commctrl.h)
+description: Recupera alguns ou todos os atributos de um item de exibição de árvore. Você pode enviar essa mensagem explicitamente ou usando a \_ macro GetItem TreeView.
 ms.assetid: e26ec000-967d-46de-8f71-6ebc36fefe5e
 keywords:
-- controles de Windows de mensagem de TVM_GETITEM
+- TVM_GETITEM controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -23,9 +23,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119984886"
 ---
-# <a name="tvm_getitem-message"></a>\_Mensagem TVM GETITEM
+# <a name="tvm_getitem-message"></a>Mensagem \_ GETITEM do TVM
 
-Recupera alguns ou todos os atributos de um item de exibição de árvore. Você pode enviar essa mensagem explicitamente ou usando a macro [**TreeView \_ GetItem**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_getitem) .
+Recupera alguns ou todos os atributos de um item de exibição de árvore. Você pode enviar essa mensagem explicitamente ou usando a macro [**\_ GetItem TreeView.**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_getitem)
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -37,19 +37,19 @@ Recupera alguns ou todos os atributos de um item de exibição de árvore. Você
 *lParam* 
 </dt> <dd>
 
-Ponteiro para uma estrutura [**TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) que especifica as informações para recuperar e receber informações sobre o item. Com a [versão 4,71](common-control-versions.md) e posterior, você pode usar uma estrutura [**TVITEMEX**](/windows/win32/api/commctrl/ns-commctrl-tvitemexa) em vez disso.
+Ponteiro para uma [**estrutura TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) que especifica as informações a serem recuperadas e recebe informações sobre o item. Com [a versão 4.71](common-control-versions.md) e posterior, você pode usar uma [**estrutura TVITEMEX.**](/windows/win32/api/commctrl/ns-commctrl-tvitemexa)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Retorna **verdadeiro** se for bem-sucedido ou **false** caso contrário.
+Retorna **TRUE se** for bem-sucedido ou FALSE **caso** contrário.
 
 ## <a name="remarks"></a>Comentários
 
-Quando a mensagem é enviada, o membro **hItem** da estrutura [**TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) ou [**TVITEMEX**](/windows/win32/api/commctrl/ns-commctrl-tvitemexa) identifica o item sobre o qual recuperar informações e o membro **Mask** especifica os atributos a serem recuperados.
+Quando a mensagem é enviada, o membro **hItem** da estrutura [**TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) ou [**TVITEMEX**](/windows/win32/api/commctrl/ns-commctrl-tvitemexa) identifica o item sobre o que recuperar informações e o membro de máscara especifica os atributos a serem recuperados. 
 
-Se o \_ sinalizador de texto TVIF for definido no membro **Mask** da estrutura [**TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) ou [**TVITEMEX**](/windows/win32/api/commctrl/ns-commctrl-tvitemexa) , o membro **pszText** deverá apontar para um buffer válido e o membro **cchTextMax** deverá ser definido como o número de caracteres nesse buffer.
+Se o sinalizador TVIF TEXT for definido no membro de máscara da estrutura \_ [**TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) ou [**TVITEMEX,**](/windows/win32/api/commctrl/ns-commctrl-tvitemexa) o membro **pszText** deverá apontar para um buffer válido e o membro **cchTextMax** deverá ser definido como o número de caracteres nesse  buffer.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,10 +57,10 @@ Se o \_ sinalizador de texto TVIF for definido no membro **Mask** da estrutura [
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
-| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
-| Nomes Unicode e ANSI<br/>   | **TVM \_ GETITEMW** (Unicode) e **TVM \_ getitema** (ANSI)<br/>                   |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Nomes Unicode e ANSI<br/>   | **TVM \_ GETITEMW** (Unicode) e **TVM \_ GETITEMA** (ANSI)<br/>                   |
 
 
 

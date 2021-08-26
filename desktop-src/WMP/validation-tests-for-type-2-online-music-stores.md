@@ -1,54 +1,54 @@
 ---
-title: Testes de validação para armazenamentos online do tipo 2 de integração
-description: Este tópico descreve os testes que a Microsoft executará para validar sua loja online do tipo 2. A Microsoft requer que você execute esses testes antes de enviar uma versão Release Candidate. Seu repositório online deve passar com êxito esses testes para serem publicados.
+title: Testes de validação para lojas online do tipo 2 de entrada
+description: Este tópico descreve os testes que a Microsoft executará para validar sua loja online do Tipo 2. A Microsoft exige que você execute esses testes antes de enviar um candidato à versão. Sua loja online deve passar com êxito nesses testes para serem publicados.
 ms.assetid: 1da51772-9711-4913-b05d-830fabe49da2
 keywords:
-- Lojas online do Windows Media Player
+- Windows Media Player Lojas Online
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: beefd0945f9d1a9ae61e61f8be74beada1695baf
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ab2cb1b4d44b1bd3c6289311c6b276de7c75ed1bcd955431796a36d272811942
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104364051"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119901238"
 ---
-# <a name="validation-tests-for-on-boarding-type-2-online-stores"></a>Testes de validação para armazenamentos online do tipo 2 de integração
+# <a name="validation-tests-for-on-boarding-type-2-online-stores"></a>Testes de validação para lojas online do tipo 2 de entrada
 
-Este tópico descreve os testes que a Microsoft executará para validar sua loja online do tipo 2. A Microsoft requer que você execute esses testes antes de enviar uma versão Release Candidate. Seu repositório online deve passar com êxito esses testes para serem publicados.
+Este tópico descreve os testes que a Microsoft executará para validar sua loja online do Tipo 2. A Microsoft exige que você execute esses testes antes de enviar um candidato à versão. Sua loja online deve passar com êxito nesses testes para serem publicados.
 
 > [!Note]  
-> Se seu repositório for do tipo 1 em vez de tipo 2, você poderá usar este tópico como uma diretriz para entender o escopo do teste de certificação que é coberto para armazenamentos do tipo 1. Para obter o conjunto completo de testes para repositórios do tipo 1, entre em contato com [suporte da Microsoft](https://support.microsoft.com/ph/7763#tab0).
+> Se o seu armazenamento for o Tipo 1 em vez do Tipo 2, você poderá usar este tópico como uma diretriz para entender o escopo do teste de certificação coberto para lojas do Tipo 1. Para o conjunto completo de testes para lojas do Tipo 1, entre em contato [com Suporte da Microsoft](https://support.microsoft.com/ph/7763#tab0).
 
- 
+ 
 
 Este tópico inclui as seções a seguir.
 
 -   [Lista de verificação de teste](#test-checklist)
-    -   [Preparação de aprovação de teste](#test-pass-preparation)
+    -   [Preparação de passagem de teste](#test-pass-preparation)
 -   [Ambiente de teste](#test-environment)
 -   [Configuração](#configuration-and-setup)
     -   [Configurando um computador de teste](#setting-up-a-test-machine)
-    -   [Configurando um repositório](#setting-up-a-store)
+    -   [Configurando um armazenamento](#setting-up-a-store)
     -   [Criando uma conta](#creating-an-account)
-    -   [Configurando o cache de credenciais](#setting-up-credential-caching)
+    -   [Configurando a credencial Caching](#setting-up-credential-caching)
 -   [Aquisição de conteúdo](#content-acquisition)
     -   [Conteúdo de streaming](#streaming-content)
     -   [Obtendo conteúdo](#obtaining-content)
-    -   [Gravando conteúdo](#burning-content)
+    -   [Conteúdo de gravação](#burning-content)
     -   [Transferindo conteúdo](#transferring-content)
--   [Armazenar recursos](#store-features)
+-   [Recursos da Loja](#store-features)
     -   [Gerenciando uma conta](#managing-an-account)
-    -   [Gerenciando o centro de informações](#managing-the-info-center)
--   [Interação de armazenamento](#store-interaction)
-    -   [Gerando para o repositório ativo](#yielding-to-the-active-store)
-    -   [Impedir que o armazenamento testado assuma o armazenamento ativo](#preventing-the-tested-store-from-taking-over-the-active-store)
-    -   [Acessando um repositório no modo de High-Contrast](#accessing-a-store-in-high-contrast-mode)
-    -   [Protegendo uma loja](#securing-a-store)
+    -   [Gerenciando o Centro de Informações](#managing-the-info-center)
+-   [Interação com o armazenamento](#store-interaction)
+    -   [Ing to the Active Store](#yielding-to-the-active-store)
+    -   [Impedindo que o armazenamento testado assumia o armazenamento ativo](#preventing-the-tested-store-from-taking-over-the-active-store)
+    -   [Acessando um armazenamento no modo High-Contrast armazenamento](#accessing-a-store-in-high-contrast-mode)
+    -   [Proteger um armazenamento](#securing-a-store)
 
 ## <a name="test-checklist"></a>Lista de verificação de teste
 
-Use a lista de verificação na tabela a seguir para validar sua loja online do tipo 2 que você deseja colocar no painel.
+Use a lista de verificação na tabela a seguir para validar sua loja online do Tipo 2 que você deseja colocar no quadro.
 
 
 
@@ -56,11 +56,11 @@ Teste
 
 Windows XP
 
-Windows Vista
+Windows Vista
 
-Windows 7
+Windows 7
 
-Resultado (aprovado/reprovado/não aplicável)
+Resultado (pass/fail/not applicable)
 
 32
 
@@ -80,93 +80,93 @@ Resultado (aprovado/reprovado/não aplicável)
 
 3. Verifique se o software não é executado na bandeja.
 
-4. Verifique se a guia loja Opera.
+4. Verifique se a guia loja opera.
 
-5. Verifique se o repositório tem uma opção para criar uma nova conta.
+5. Verifique se o armazenamento tem uma opção para criar uma nova conta.
 
 6. Verifique se a conta criada pode entrar.
 
-7. Verifique se o repositório tem uma opção para salvar as informações do usuário.
+7. Verifique se o armazenamento tem uma opção para salvar informações do usuário.
 
 8. Verifique se o cache de credenciais está presente e funcionando.
 
-9. Verifique se as credenciais do usuário são solicitadas se elas não estiverem armazenadas em cache.
+9. Verifique se o usuário será solicitado a solicitar credenciais se eles não estão armazenados em cache.
 
-10. Verifique se todos os tipos de fluxo de conteúdo disponíveis.
+10. Verifique se todos os tipos disponíveis de fluxo de conteúdo.
 
-11. Verifique se o conteúdo é reproduzido no Microsoft Windows Media Player.
+11. Verifique se o conteúdo é reproduzindo no Microsoft Windows Media Player.
 
 12. Verifique se um preço calculado está correto.
 
 13. Verifique se o conteúdo comprado foi baixado para a biblioteca.
 
-14. Verifique se os metadados são baixados para a compra.
+14. Verifique se os metadados foram baixados para a compra.
 
 15. Verifique se os direitos de uso de mídia estão corretos para a compra.
 
-16. Verifique se o conteúdo comprado pode ser executado.
+16. Verifique se o conteúdo comprado pode ser reproduzir.
 
-17. Verifique se clicar no botão **comprar** ou **comprar** alterna para o repositório.
+17. Verifique se clicar no **botão Comprar** ou **Comprar** muda para a loja.
 
 18. Verifique se o conteúdo comprado foi baixado.
 
 19. Verifique se o conteúdo comprado pode ser gravado.
 
-20. Verifique se a contagem de gravação foi decrementada.
+20. Verifique se a contagem de burn está decrementada.
 
 21. Verifique se o conteúdo pode ser transferido para outro computador.
 
 22. Verifique se o conteúdo é transferido para um dispositivo.
 
-23. Verifique se a contagem de sincronização foi decrementada.
+23. Verifique se a contagem de sincronização está decrementada.
 
-24. Verifique se o histórico de compras acompanha as compras anteriores.
+24. Verifique se o histórico de compras rastreia as compras anteriores.
 
 25. Verifique se uma compra anterior pode ser restaurada.
 
-26. Verifique a funcionalidade de um repositório para gerenciar vários computadores.
+26. Verifique a funcionalidade de um armazenamento para gerenciar vários computadores.
 
-27. Verifique se o centro de informações está desativado por padrão.
+27. Verifique se o Centro de Informações está desligado por padrão.
 
-28. Verifique se o centro de informações tem informações de mídia na área de execução.
+28. Verifique se o Centro de Informações tem informações de mídia na área agora em reprodução.
 
-29. Verifique se os links navegam para a loja.
+29. Verifique se os links navegam até o armazenamento.
 
-30. Verifique se o armazenamento testado resulta no repositório ativo.
+30. Verifique se o armazenamento testado produz no armazenamento ativo.
 
-31. Verifique se o repositório testado não assume o armazenamento atual.
+31. Verifique se o armazenamento testado não assumirá o armazenamento atual.
 
-32. Verifique se o repositório está acessível no modo de alto contraste.
+32. Verifique se o armazenamento está acessível no modo de alto contraste.
 
-33. Verifique se o repositório é seguro.
+33. Verifique se o armazenamento está seguro.
 
 
 
- 
+ 
 
-### <a name="test-pass-preparation"></a>Preparação de aprovação de teste
+### <a name="test-pass-preparation"></a>Preparação de passagem de teste
 
-Antes de executar uma aprovação de teste, você deve garantir que a loja e as contas de teste estejam prontas para teste. Você deve determinar as seguintes informações antes que a passagem seja iniciada. Se você puder determinar as informações de alguns dias antes da aprovação do teste, a passagem será executada com mais eficiência.
+Antes de executar uma aprovação de teste, você deve garantir que o armazenamento e as contas de teste estão prontos para teste. Você deve determinar as informações a seguir antes do início da passagem. Se você puder determinar as informações alguns dias antes da aprovação do teste, a passagem será executado com mais eficiência.
 
--   Determine as seguintes informações sobre as contas de teste que são fornecidas pela loja:
+-   Determine as seguintes informações sobre contas de teste fornecidas pelo armazenamento:
     -   Contas e senhas funcionam para permitir que um usuário entre
-    -   As contas são financiadas corretamente e adequadamente para cada tipo de modo de negócios que a loja oferece
-    -   As contas são válidas para que todas as localidades sejam testadas ou as contas existem para cada localidade se as contas não podem cruzar as localidades
+    -   As contas são corretamente e adequadamente estruturadas para cada tipo de modo de negócios que a loja oferece
+    -   As contas são válidas para todas as localidades a serem testadas ou existem contas para cada localidade se as contas não podem cruzar localidades
 -   Determine quais localidades testar.
 -   Determine quais idiomas testar.
 -   Determine as seguintes informações sobre o ambiente de teste:
 
-    -   Lojas ao vivo que funcionam com o Windows XP, o Windows Vista e o Windows 7
-    -   A loja não dinâmica a ser testada
-    -   Verifique se a loja não dinâmica a ser testada está visível em todas as versões do sistema operacional e todas as versões da plataforma Windows Media Player.
+    -   Lojas ao vivo que funcionam com Windows XP, Windows Vista e Windows 7
+    -   O armazenamento não ao vivo a ser testado
+    -   Verifique se o armazenamento não ao vivo a ser testado está visível em todas as versões do sistema operacional e em todas as versões do Windows Media Player plataforma.
 
--   Determine as seguintes informações sobre a loja a ser testada:
+-   Determine as seguintes informações sobre o armazenamento a ser testado:
 
-    -   Nome do repositório
-    -   Elemento gráfico e rótulo do logotipo da guia de armazenamento esperado
-    -   O armazenamento reside para todas as versões do sistema operacional?
-    -   Esta é uma nova versão do Store em teste?
-    -   O repositório está sendo testado em um armazenamento tipo 1 ou tipo 2?
+    -   Nome da loja
+    -   Gráficos e rótulos de logotipo da guia da loja esperados
+    -   A loja está em funcionamento para todas as versões do sistema operacional?
+    -   Essa é uma nova versão da loja em teste?
+    -   O armazenamento está em teste em um armazenamento tipo 1 ou Tipo 2?
     -   O tipo de loja foi alterado?
 
 -   Determine em quais versões e plataformas do sistema operacional você planeja testar o armazenamento.
@@ -197,11 +197,11 @@ Antes de executar uma aprovação de teste, você deve garantir que a loja e as 
 
 Você deve realizar testes nas seguintes configurações:
 
--   Microsoft Windows Media Player 11 no Windows XP com Service Pack 3 (SP3) 32 bits e sistemas operacionais de 64 bits
--   Sistemas operacionais Windows Media Player 11 no Windows Vista 32 bits e 64 bits (32 bits Windows Media Player)
--   Sistemas operacionais Microsoft Windows Media Player 12 no Windows 7 32-bit e 64-bit (32-bit Windows Media Player)
+-   Microsoft Windows Media Player 11 em Windows XP com Service Pack 3 (SP3) 32 bits e sistemas operacionais de 64 bits
+-   Windows Media Player 11 nos sistemas operacionais Windows Vista 32 bits e 64 bits (32-bit Windows Media Player)
+-   Microsoft Windows Media Player 12 em sistemas operacionais de Windows 7 32 bits e 64 bits (32-bit Windows Media Player)
 
-Embora seja necessário executar testes em todas as versões de sistema operacional e plataformas listadas, as versões de 32 bits do Windows Vista e do Windows 7 são as versões de sistema operacional de prioridade. Você deve testar a instalação de qualquer software em todas as plataformas.
+embora você deva executar testes em todas as versões de sistema operacional e plataformas listadas, as versões de 32 bits do Windows Vista e Windows 7 são as versões de sistema operacional de prioridade. Você deve testar a instalação de qualquer software em todas as plataformas.
 
 Capturas de tela neste tópico usam um repositório fictício, Proseware, para demonstrar o uso da interface do usuário.
 
@@ -214,7 +214,7 @@ As seções a seguir descrevem como configurar e configurar o teste de validaç�
 Execute as seguintes etapas para configurar um computador de teste:
 
 1.  Aponte o computador de teste para os servidores de teste de conteúdo adicionando uma chave do Registro específica do repositório.
-2.  Defina valores na caixa de diálogo **Opções regionais e de idioma** para as configurações adequadas de idioma e localidade. Para definir o idioma, selecione a guia **formatos** e, em seguida, selecione o idioma na caixa de combinação **formato atual** . Para definir a região, selecione a guia **local** e, em seguida, selecione a região na caixa de combinação **local atual** . Além disso, para lojas que exigem a instalação de um plug-in ou software personalizado específico para armazenamento, talvez seja necessário alterar a localidade do sistema para o idioma da localidade do repositório para facilitar a instalação. O instalador de software deve dar suporte a caracteres de byte único e duplo e deve ser executado em qualquer localidade. Você deve testar na localidade nativa. Para definir a localidade nativa, abra a caixa de diálogo **região e idioma** , selecione a guia **administrativo** e clique no botão **alterar localidade do sistema** , conforme mostrado na captura de tela a seguir. Clicar nesse botão exibe a caixa de diálogo **configurações de região e idioma** . A caixa de combinação de **localidade do sistema atual** nessa caixa de diálogo altera a localidade do sistema.
+2.  Defina valores na caixa de diálogo **Opções regionais e de idioma** para as configurações adequadas de idioma e localidade. Para definir o idioma, selecione a guia **formatos** e, em seguida, selecione o idioma na caixa de combinação **formato atual** . Para definir a região, selecione a guia **local** e, em seguida, selecione a região na caixa de combinação **local atual** . Além disso, para lojas que exigem a instalação de um plug-in ou software personalizado específico para armazenamento, talvez seja necessário alterar a localidade do sistema para o idioma da localidade do repositório para facilitar a instalação. O instalador de software deve dar suporte a caracteres de byte único e duplo e deve ser executado em qualquer localidade. Você deve testar na localidade nativa. Para definir a localidade nativa, abra a caixa de diálogo **região e idioma** , selecione a guia **administrativo** e clique no botão **alterar localidade do sistema** , conforme mostrado na captura de tela a seguir. clicar nesse botão exibe a caixa de diálogo **região e idioma Configurações** . A caixa de combinação de **localidade do sistema atual** nessa caixa de diálogo altera a localidade do sistema.
 
     As capturas de tela a seguir mostram as guias nas quais você pode definir a região e o idioma:
 
@@ -222,13 +222,13 @@ Execute as seguintes etapas para configurar um computador de teste:
 
     ![captura de tela mostrando como alterar a localidade do sistema atual](images/reg-lang-settings.png)
 
-3.  Desative a exibição do centro de informações de um repositório Configurando o Windows Media Player para reproduzir uma visualização. A principal diferença entre as plataformas é que, no Windows Media Player 11, você começa clicando **agora em execução**, enquanto no Windows Media Player 12, você começa clicando com o botão direito do mouse na janela principal.
+3.  desative a exibição do centro de informações de um repositório definindo Windows Media Player para reproduzir uma visualização. a principal diferença entre as plataformas é que, no Windows Media Player 11, você começa clicando **agora em execução**, enquanto em Windows Media Player 12, você começa clicando com o botão direito do mouse na janela principal.
 
-    A captura de tela a seguir mostra a sequência de opções de menu que desempenha uma visualização no Windows Media Player 11:
+    a captura de tela a seguir mostra a sequência de opções de menu que desempenha uma visualização no Windows Media Player 11:
 
     ![captura de tela mostrando como reproduzir uma visualização no Windows Media Player 11](images/wmp11-visual.png)
 
-    A captura de tela a seguir mostra a sequência de opções de menu que desempenha uma visualização no Windows Media Player 12:
+    a captura de tela a seguir mostra a sequência de opções de menu que desempenha uma visualização no Windows Media Player 12:
 
     ![captura de tela mostrando como reproduzir uma visualização no Windows Media Player 12](images/wmp12-visual.png)
 
@@ -236,14 +236,14 @@ Execute as seguintes etapas para configurar um computador de teste:
 
 Primeiro, execute as etapas a seguir para configurar um repositório e, em seguida, execute as etapas a seguir as etapas iniciais para verificar a configuração da loja:
 
-1.  Inicie o Windows Media Player e aguarde alguns segundos para adquirir o arquivo de AllServices.xml mais recente.
-2.  Para o Windows XP e o Windows Vista, para selecionar uma loja online, primeiro clique na guia que divide entre o modo de exibição de guia de mídia e a exibição de lojas online. Em seguida, no menu, clique em **procurar todas as lojas online** e selecione o repositório clicando em seu ícone na lista de lojas. Para o Windows 7, clique no botão no painel de navegação biblioteca que se divide entre o botão **Guia de mídia** e o botão **lojas online** . Em seguida, no menu, clique em **procurar todas as lojas online** e selecione o repositório clicando em seu ícone na lista de lojas.
+1.  inicie o Windows Media Player e aguarde alguns segundos para adquirir o arquivo de AllServices.xml mais recente.
+2.  para Windows XP e Windows Vista, para selecionar uma loja online, primeiro clique na guia que divide entre o modo de exibição de guia de mídia e a exibição de lojas online. Em seguida, no menu, clique em **procurar todas as lojas online** e selecione o repositório clicando em seu ícone na lista de lojas. para Windows 7, clique no botão no painel de navegação biblioteca que se divide entre o botão **guia de mídia** e o botão **lojas Online** . Em seguida, no menu, clique em **procurar todas as lojas online** e selecione o repositório clicando em seu ícone na lista de lojas.
 
-    A captura de tela a seguir mostra como selecionar uma loja online no Windows Media Player 11:
+    a captura de tela a seguir mostra como selecionar uma loja online no Windows Media Player 11:
 
     ![captura de tela mostrando como selecionar uma loja online no Windows Media Player 11](images/wmp11-set-store.png)
 
-    A captura de tela a seguir mostra como selecionar uma loja online no Windows Media Player 12:
+    a captura de tela a seguir mostra como selecionar uma loja Online no Windows Media Player 12:
 
     ![captura de tela mostrando como selecionar uma loja online no Windows Media Player 12](images/wmp12-set-store.png)
 
@@ -269,22 +269,22 @@ Primeiro, execute as etapas a seguir para configurar um repositório e, em segui
 
     Verifique se a guia loja é alterada para indicar o repositório selecionado.
 
-    Para o Windows XP e o Windows Vista com o Windows Media Player 11, verifique se o nome e o ícone da loja estão visíveis em relação ao plano de fundo do Windows Media Player 11 escuro.
+    para Windows XP e Windows Vista com Windows Media Player 11, verifique se o nome e o ícone da loja estão visíveis em relação ao plano de fundo escuro Windows Media Player 11.
 
-    Para o Windows 7 com Windows Media Player 12, verifique se o nome e o ícone da loja estão visíveis no painel de navegação biblioteca, no menu de contexto seletor de serviço.
+    para Windows 7 com Windows Media Player 12, verifique se o nome e o ícone da loja estão visíveis no painel de navegação biblioteca, no menu de contexto seletor de serviço.
 
     Verifique se o repositório está listado na parte superior da lista seletor de repositório no menu.
 
     > [!Note]  
     > Não haverá a opção **Adicionar serviço atual ao menu** se o repositório do tipo 2 for o repositório em destaque (padrão) para a região.
 
-     
+     
 
-    A captura de tela a seguir mostra o menu que aparece quando você clica na guia no canto superior direito do Windows Media Player 11:
+    a captura de tela a seguir mostra o menu que aparece quando você clica na guia no canto superior direito do Windows Media Player 11:
 
     ![captura de tela mostrando a guia armazenar no Windows Media Player 11](images/wmp11-verify-store.png)
 
-    A captura de tela a seguir mostra o menu que aparece quando você clica no botão dividir no canto inferior esquerdo do Windows Media Player 12:
+    a captura de tela a seguir mostra o menu que aparece quando você clica no botão de divisão no canto inferior esquerdo do Windows Media Player 12:
 
     ![captura de tela mostrando a guia armazenar no Windows Media Player 12](images/wmp12-verify-store.png)
 
@@ -294,17 +294,17 @@ Primeiro, execute as etapas a seguir para configurar um repositório e, em segui
 
 1.  Verifique se o repositório tem uma opção para criar uma nova conta e siga as instruções da loja para criar uma nova conta.
 
-    A captura de tela a seguir destaca um botão **criar nova conta** , como pode aparecer no Windows Media Player 11:
+    a captura de tela a seguir realça um botão **criar nova conta** , como pode aparecer no Windows Media Player 11:
 
     ![captura de tela mostrando como verificar a configuração da conta do Windows Media Player 11](images/wmp11-verify-account.png)
 
-    A captura de tela a seguir destaca um botão **criar nova conta** , como pode aparecer no Windows Media Player 12:
+    a captura de tela a seguir realça um botão **criar nova conta** , como pode aparecer no Windows Media Player 12:
 
     ![captura de tela mostrando como verificar a configuração da conta do Windows Media Player 12](images/wmp12-verify-account.png)
 
 2.  Verifique se você pode entrar na conta que você criou.
 
-### <a name="setting-up-credential-caching"></a>Configurando o cache de credenciais
+### <a name="setting-up-credential-caching"></a>Configurando a credencial Caching
 
 Primeiro, execute as seguintes etapas para configurar o cache de credenciais e execute as etapas a seguir as etapas iniciais para verificar a configuração de caching de credencial:
 
@@ -316,14 +316,14 @@ Primeiro, execute as seguintes etapas para configurar o cache de credenciais e e
 
 1.  Verifique se o repositório tem uma caixa de seleção para uma opção **salvar minhas informações de usuário** .
 
-    1.  Feche o Windows Media Player.
-    2.  Reabra o Windows Media Player e tente baixar algum conteúdo.
+    1.  Feche Windows Media Player.
+    2.  reabra Windows Media Player e tente baixar algum conteúdo.
 
 2.  Verifique se o cache de credenciais está presente e funcionando.
 
     1.  Saia da loja.
-    2.  Feche o Windows Media Player.
-    3.  Reabra o Windows Media Player e tente baixar algum conteúdo.
+    2.  Feche Windows Media Player.
+    3.  reabra Windows Media Player e tente baixar algum conteúdo.
 
 3.  Verifique se as credenciais do usuário são solicitadas se elas não estiverem armazenadas em cache.
 
@@ -341,13 +341,13 @@ Transmita todos os tipos de conteúdo disponíveis do repositório. Por exemplo,
 
 1.  Verifique se todos os tipos de fluxo de conteúdo disponíveis.
 
-2.  Verifique se o conteúdo é reproduzido no Windows Media Player e não em outro jogador ou controle.
+2.  verifique se o conteúdo é reproduzido no Windows Media Player e não em outro jogador ou controle.
 
 ### <a name="obtaining-content"></a>Obtendo conteúdo
 
 Primeiro, execute as etapas a seguir para comprar conteúdo e, em seguida, execute as etapas a seguir as etapas iniciais para verificar a compra e verificar se o conteúdo foi baixado:
 
-1.  Inicie o Windows Media Player.
+1.  Iniciar Windows Media Player.
 2.  Entre na conta de teste.
 3.  Navegue até o conteúdo a ser comprado.
 4.  Siga o procedimento específico do repositório para comprar conteúdo.
@@ -360,14 +360,14 @@ Primeiro, execute as etapas a seguir para comprar conteúdo e, em seguida, execu
 
 2.  Verifique se o conteúdo adquirido é baixado para a biblioteca.
 
-    Quando o download for concluído, navegue até o conteúdo baixado na biblioteca do Windows Media Player. O conteúdo baixado está localizado na biblioteca do usuário atual.
+    quando o download for concluído, navegue até o conteúdo baixado na biblioteca de Windows Media Player. O conteúdo baixado está localizado na biblioteca do usuário atual.
 
-    -   Para o Windows XP e o Windows Vista com o Windows Media Player 11, o conteúdo baixado aparece no painel de navegação **da biblioteca, em tabela dinâmica** e, em seguida, em **músicas**.
-    -   Para o Windows 7 com Windows Media Player 12, o conteúdo baixado para a biblioteca do Windows Media Player aparece no painel de navegação do Windows Media Player em **música**.
+    -   para Windows XP e Windows Vista com o Windows Media Player 11, o conteúdo baixado aparece no painel de navegação da **biblioteca, em tabela dinâmica** e, em seguida, em **músicas**.
+    -   para Windows 7 com Windows Media Player 12, o conteúdo baixado para a biblioteca de Windows Media Player aparece no painel de navegação Windows Media Player em **música**.
 
 3.  Verifique se os metadados são baixados para a compra.
 
-    Verifique se as colunas a seguir aparecem na biblioteca do Windows Media Player (adicione-as se não):
+    verifique se as colunas a seguir aparecem na biblioteca de Windows Media Player (adicione-as se não):
 
     -   Artista do álbum
     -   Título
@@ -401,28 +401,28 @@ Primeiro, execute as etapas a seguir para comprar conteúdo e, em seguida, execu
 
     Reproduzir qualquer conteúdo adquirido da loja e que resida na biblioteca local ou transmitir uma visualização.
 
-    Execute as seguintes etapas para comprar o conteúdo no Windows XP e no Windows Vista com o Windows Media Player 11:
+    execute as seguintes etapas para comprar conteúdo no Windows XP e Windows Vista com o Windows Media Player 11:
 
     1.  Clique na guia **executando agora** .
     2.  No painel lista, posicione o ponteiro do mouse para focalizar a arte do álbum para mostrar o link **comprar** .
     3.  Clique em **comprar**.
 
-    A captura de tela a seguir mostra o local do link **comprar** no Windows Media Player 11:
+    a captura de tela a seguir mostra o local do link **comprar** no Windows Media Player 11:
 
     ![captura de tela mostrando como comprar conteúdo no Windows Media Player 11](images/wmp11-verify-buy-play.png)
 
-    Execute as seguintes etapas para comprar o conteúdo no Windows 7 com o Windows Media Player 12:
+    execute as seguintes etapas para comprar conteúdo no Windows 7 com Windows Media Player 12:
 
     1.  Em modo de biblioteca, clique na guia **reproduzir** .
     2.  Na lista de reprodução, na arte do álbum, clique em **comprar**
 
-    A captura de tela a seguir mostra como comprar conteúdo no Windows Media Player 12:
+    a captura de tela a seguir mostra como comprar conteúdo no Windows Media Player 12:
 
     ![captura de tela mostrando como comprar conteúdo no Windows Media Player 12](images/wmp12-verify-buy-play.png)
 
 6.  Verifique se clicar em **comprar** ou **comprar** alterna para o repositório.
 
-    O Windows Media Player deve alternar para o repositório na exibição de biblioteca e carregar a experiência de compra da loja.
+    o Windows Media Player deve mudar para o repositório na exibição de biblioteca e carregar a experiência de compra da loja.
 
     Em seguida, você deve continuar a comprar a faixa.
 
@@ -437,17 +437,17 @@ Primeiro, execute as seguintes etapas para gravar o conteúdo adquirido (copiar 
 > [!Note]  
 > Antes de gravar uma faixa adquirida, anote sua contagem de gravação para que você possa verificar se a contagem diminui depois de gravar a faixa.
 
- 
+ 
 
 1.  Clique na guia **gravar**
 2.  Arraste as faixas adquiridas para a **lista de gravação**.
 3.  Clique no botão **Iniciar gravação** .
 
-A captura de tela a seguir mostra a **lista de gravação** no lado direito da tela e o botão **Iniciar gravação** abaixo da **lista de gravação** no Windows Media Player 11:
+a captura de tela a seguir mostra a **lista de gravação** no lado direito da tela e o botão **iniciar gravação** abaixo da **lista de gravação** no Windows Media Player 11:
 
 ![captura de tela mostrando como gravar conteúdo no Windows Media Player 11](images/wmp11-verify-burn.png)
 
-A captura de tela a seguir mostra como a lista de gravação aparece no Windows Media Player 12 depois que você arrasta uma faixa para a lista de gravação e mostra o botão **Iniciar gravação** na parte superior da guia **gravar** :
+a captura de tela a seguir mostra como a lista de gravação aparece no Windows Media Player 12 depois que você arrasta uma faixa para a lista de gravação e mostra o botão **iniciar gravação** na parte superior da guia **gravar** :
 
 ![captura de tela mostrando como gravar conteúdo no Windows Media Player 12](images/wmp12-verify-burn.png)
 
@@ -474,149 +474,149 @@ Primeiro execute as seguintes etapas para sincronizar um dispositivo e transferi
 > [!Note]  
 > Antes de transferir uma faixa adquirida, anote sua contagem de sincronização para que você possa verificar se a contagem diminui depois de transferir a faixa.
 
- 
+ 
 
-1.  Conecte um dispositivo com um relógio seguro. Os exemplos incluem dispositivos que usam o DRM do Windows Media para dispositivos portáteis, como um Media Center portátil como o iRiver H10, o Zen criativo e assim por diante.
-2.  No Windows Media Player, clique na guia **sincronizar** .
-3.  Arraste conteúdo da biblioteca para a área de **lista de sincronização** na guia **sincronizar** .
-4.  Clique no botão **Iniciar sincronização** .
+1.  Conexão um dispositivo com um relógio seguro. os exemplos incluem dispositivos que usam Windows DRM de mídia para dispositivos portáteis, como um Media Center portátil como o iRiver H10, o Zen criativo e assim por diante.
+2.  No Windows Media Player, clique na **guia Sincronizar.**
+3.  Arraste o conteúdo da biblioteca para a área **De sincronização na** **guia Sincronizar.**
+4.  Clique no **botão Iniciar Sincronização.**
 
-A captura de tela a seguir mostra o Track 1 na área de **lista de sincronização** e mostra o botão **Iniciar sincronização** no Windows Media Player 11:
+A captura de tela a seguir mostra a  Faixa 1 na **área** de lista Sincronização e mostra o botão Iniciar Sincronização Windows Media Player 11:
 
 ![captura de tela mostrando como transferir conteúdo no Windows Media Player 11](images/wmp11-verify-transfer.png)
 
-A captura de tela a seguir mostra o Track 1 na área de **lista de sincronização** e mostra o botão **Iniciar sincronização** no Windows Media Player 12:
+A captura de tela a seguir mostra a  Faixa 1 na **área** de lista Sincronização e mostra o botão Iniciar Sincronização Windows Media Player 12:
 
 ![captura de tela mostrando como transferir conteúdo no Windows Media Player 12](images/wmp12-verify-transfer.png)
 
 **Para verificar se o conteúdo comprado pode ser transferido para outro dispositivo**
 
-1.  Verifique se o conteúdo comprado é transferido para o dispositivo executando o conteúdo no dispositivo. O conteúdo transferido também deve ter metadados apropriados.
+1.  Verifique se o conteúdo comprado é transferido para o dispositivo, ao tocar o conteúdo no dispositivo. O conteúdo transferido também deve ter metadados apropriados.
 
-2.  Verifique se a contagem de sincronização foi decrementada.
+2.  Verifique se a contagem de sincronização está decrementada.
 
     Navegue até a biblioteca e abra os direitos de uso de mídia para uma faixa transferida.
 
-    Se o número de vezes que uma faixa pode sincronizar é limitado, verifique se esse número diminui quando a faixa é transferida.
+    Se o número de vezes que uma faixa pode ser sincronizada for limitado, verifique se esse número diminui quando a faixa é transferida.
 
-## <a name="store-features"></a>Armazenar recursos
+## <a name="store-features"></a>Recursos da Loja
 
-As seções a seguir descrevem como testar vários recursos de uma loja online integrada.
+As seções a seguir descrevem como testar vários recursos de uma loja online no boarded.
 
 ### <a name="managing-an-account"></a>Gerenciando uma conta
 
-Entre com uma conta que tenha feito algumas compras e abra o histórico de compra.
+Entre com uma conta que fez algumas compras e abra o histórico de compras.
 
-**Para verificar o histórico de compra**
+**Para verificar o histórico de compras**
 
--   Verifique se o histórico de compras acompanha as compras anteriores.
+-   Verifique se o histórico de compras rastreia as compras anteriores.
 
-Se o tipo de conta ou armazenamento der suporte a esse recurso, tente restaurar uma compra excluída.
+Se o tipo de loja ou conta for compatível com esse recurso, tente restaurar uma compra excluída.
 
-**Para verificar se as compras anteriores podem ser readquiridas**
+**Para verificar se as compras anteriores podem ser reacompaciadas**
 
 -   Verifique se uma compra anterior pode ser restaurada.
 
-Se o armazenamento oferecer suporte ao uso de vários computadores com a conta, verifique todas as funcionalidades fornecidas por esse recurso.
+Se o armazenamento dá suporte ao uso de vários computadores com a conta, verifique qualquer funcionalidade que esse recurso fornece.
 
 **Para verificar o gerenciamento de vários computadores com uma única conta**
 
--   Verifique a funcionalidade do repositório para gerenciar vários computadores.
+-   Verifique a funcionalidade do armazenamento para gerenciar vários computadores.
 
-### <a name="managing-a-store-specific-account"></a>Gerenciando uma conta de Store-Specific
+### <a name="managing-a-store-specific-account"></a>Gerenciando uma conta Store-Specific banco de dados
 
-O repositório pode não ter tipos de conta, restrições ou conteúdo típicos. Por exemplo, uma loja que aluga o vídeo de streaming precisaria de alguma interface do usuário para exibir locações ativas e essa interface do usuário precisaria ser testada.
+O armazenamento pode não ter tipos de conta, restrições ou conteúdo típicos. Por exemplo, uma loja que alugue vídeo de streaming precisaria de alguma interface do usuário para exibir aluguéis ativos e essa interface do usuário precisaria ser testada.
 
 > [!Note]  
-> Embora a Microsoft não possa certificar a funcionalidade de conta específica da loja, para garantir uma boa experiência do cliente, você deve testar essa funcionalidade.
+> Embora a Microsoft não possa certificar a funcionalidade de conta específica do armazenamento, para garantir uma boa experiência do cliente, você deve testar essa funcionalidade.
 
- 
+ 
 
-### <a name="managing-the-info-center"></a>Gerenciando o centro de informações
+### <a name="managing-the-info-center"></a>Gerenciando o Centro de Informações
 
-Primeiro, execute as seguintes etapas para se preparar para testar o estado padrão e, em seguida, execute a próxima etapa que segue as etapas iniciais para verificar se o centro de informações está desativado por padrão:
+Primeiro, execute as seguintes etapas para se preparar para testar o estado padrão e, em seguida, execute a próxima etapa que segue as etapas iniciais para verificar se o Info Center está desligado por padrão:
 
-1.  Reproduzir algum conteúdo da loja.
-2.  Alterne para o modo de agora em execução. No Windows XP ou no Windows Vista com Windows Media Player 11, clique na guia **executando agora** . No Windows 7 com Windows Media Player 12, clique no botão **alternar para agora** no canto inferior direito.
+1.  Reproduza algum conteúdo da loja.
+2.  Alternar para o modo Agora Em reprodução. No Windows XP ou Windows Vista com Windows Media Player 11, clique na **guia Agora Em** reprodução. No Windows 7 com Windows Media Player 12, clique  no botão Alternar para Agora Em Reprodução no canto inferior direito.
 
-**Para verificar se o centro de informações está desativado por padrão**
+**Para verificar se o Centro de Informações está desligado por padrão**
 
--   Verifique se o centro de informações está desativado por padrão.
+-   Verifique se o Centro de Informações está desligado por padrão.
 
-Se a loja oferece uma exibição do centro de informações, jogue algum conteúdo da loja e, enquanto o conteúdo está em execução, alterne para o modo de execução e ative o centro de informações.
+Se a loja oferecer uma exibição do Info Center, reproduza algum conteúdo da loja e, enquanto o conteúdo estiver sendo reproduzindo, alternar para o modo Agora Reproduzindo e ativar o Info Center.
 
-No Windows XP ou Windows Vista com Windows Media Player 11, clique com o botão direito do mouse na janela agora em execução e, no menu de contexto, selecione **exibição do centro de informações**.
+No Windows XP ou Windows Vista com Windows Media Player 11, clique com o botão direito do mouse na janela agora em reprodução e, em seguida, no menu de contexto, selecione Exibição do **Centro** de Informações .
 
-A captura de tela a seguir mostra o menu de contexto no Windows Media Player 11:
+A captura de tela a seguir mostra o menu de contexto Windows Media Player 11:
 
-![captura de tela mostrando como acessar o centro de informações de um repositório no Windows Media Player 11](images/wmp11-info-center.png)
+![captura de tela mostrando como acessar o centro de informações de uma loja no Windows Media Player 11](images/wmp11-info-center.png)
 
-No Windows 7 com Windows Media Player 12, clique com o botão direito do mouse na janela agora em execução, no menu de contexto, selecione **visualizações** e clique em **exibição do centro de informações**.
+No Windows 7 com Windows Media Player 12, clique com o botão direito do mouse na janela agora em reprodução, no menu de contexto, selecione Visualizações e clique em Exibição do Centro de **Informações**.
 
-A captura de tela a seguir mostra o menu de contexto no Windows Media Player 12:
+A captura de tela a seguir mostra o menu de contexto Windows Media Player 12:
 
-![captura de tela mostrando como acessar o centro de informações de um repositório no Windows Media Player 12](images/wmp12-info-center.png)
+![captura de tela mostrando como acessar o centro de informações de uma loja no Windows Media Player 12](images/wmp12-info-center.png)
 
-**Para verificar se o centro de informações está funcional**
+**Para verificar se o Info Center está funcional**
 
--   Verifique se o centro de informações mostra informações de mídia na área de execução. A captura de tela a seguir mostra um exemplo dessas informações de mídia:
+-   Verifique se o Info Center mostra informações de mídia na área agora em reprodução. A captura de tela a seguir mostra um exemplo dessas informações de mídia:
 
-    ![captura de tela mostrando a funcionalidade do centro de informações de um repositório](images/media-information.png)
+    ![captura de tela mostrando a funcionalidade do centro de informações de uma loja](images/media-information.png)
 
-Se quaisquer links de compra ou outros links aparecerem na página, clique nos links.
+Se algum link de compra ou outros links aparecerem na página, clique nos links.
 
-**Para verificar os links na exibição do centro de informações**
+**Para verificar links na exibição do Info Center**
 
--   Verifique se os links mostram o repositório.
+-   Verifique se os links mostram o armazenamento.
 
-    O Windows Media Player deve mudar para o repositório em sua biblioteca.
+    O Windows Media Player deve alternar para o armazenamento em sua biblioteca.
 
-## <a name="store-interaction"></a>Interação de armazenamento
+## <a name="store-interaction"></a>Interação com o armazenamento
 
 As seções a seguir descrevem como testar a interação entre as outras lojas e a loja que você está testando.
 
-### <a name="yielding-to-the-active-store"></a>Gerando para o repositório ativo
+### <a name="yielding-to-the-active-store"></a>Ing to the Active Store
 
-Alternar para um repositório diferente do armazenamento que está sendo testado.
+Alternar para um armazenamento diferente do armazenamento que está sendo testado.
 
-**Para verificar a concessão para o repositório ativo**
+**Para verificar o rendimento para o armazenamento ativo**
 
--   Verifique se o armazenamento testado resulta no repositório ativo.
+-   Verifique se o armazenamento testado produz no armazenamento ativo.
 
-### <a name="preventing-the-tested-store-from-taking-over-the-active-store"></a>Impedir que o armazenamento testado assuma o armazenamento ativo
+### <a name="preventing-the-tested-store-from-taking-over-the-active-store"></a>Impedindo que o armazenamento testado assumia o armazenamento ativo
 
--   Com outra loja selecionada, feche o Windows Media Player e reinicie o computador.
--   Inicie o Windows Media Player.
+-   Com outro armazenamento selecionado, feche Windows Media Player e reinicie o computador.
+-   Iniciar Windows Media Player.
 
-**Para verificar se o armazenamento testado não assume**
+**Para verificar se o armazenamento testado não assumirá o controle**
 
--   Verifique se o repositório ativo mais recentemente aparece e se o repositório testado não aparece.
+-   Verifique se o armazenamento ativo mais recentemente aparece e se o armazenamento testado não aparece.
 
-### <a name="accessing-a-store-in-high-contrast-mode"></a>Acessando um repositório no modo de High-Contrast
+### <a name="accessing-a-store-in-high-contrast-mode"></a>Acessando um armazenamento no modo High-Contrast armazenamento
 
-Primeiro, habilite o modo de alto contraste pressionando SHIFT esquerda + ALT esquerda + PRINT SCREEN e, em seguida, execute as seguintes etapas para verificar a acessibilidade de alto contraste:
+Primeiro, habilita o modo de alto contraste pressionando LEFT SHIFT+LEFT ALT+PRINT SCREEN e, em seguida, execute as seguintes etapas para verificar a acessibilidade de alto contraste:
 
-**Para verificar se o repositório está acessível no modo de alto contraste**
+**Para verificar se o armazenamento está acessível no modo de alto contraste**
 
-1.  Verifique se a interface do usuário de logon está intacta e funcional.
+1.  Verifique se a interface do usuário de logoff está intacta e funcional.
 2.  Verifique se todas as janelas e caixas de diálogo aparecem corretamente.
-3.  Mídia de compra. Verifique se os botões de compra e download, os gerentes de download, as informações de preço e assim por diante estão visíveis.
+3.  Mídia de compra. Verifique se os botões de compra e download, gerenciadores de download, informações de preço e assim por diante estão visíveis.
 4.  Verifique se você pode transmitir, gravar e sincronizar.
-5.  Procure por texto recortado e elementos da interface do usuário, texto que não seja legível e outros defeitos visíveis.
+5.  Procure elementos de texto recortado e interface do usuário, texto que não é legível e outros defeitos visíveis.
 
-### <a name="securing-a-store"></a>Protegendo uma loja
+### <a name="securing-a-store"></a>Proteger um armazenamento
 
 Execute as seguintes etapas para verificar a segurança da conta:
 
 **Para verificar a segurança da conta**
 
-1.  Insira informações de conta malformadas na página de logon e na caixa de diálogo e verifique se a loja a rejeita.
-2.  Entre, exiba a página da conta e saia.
-3.  Clique no botão voltar no Windows Media Player e verifique se você não vê as informações da conta de usuário anterior.
+1.  Insira informações de conta malformadas na página de logoff e na caixa de diálogo e verifique se o armazenamento as rejeita.
+2.  Entre, veja a página da conta e saia.
+3.  Clique no botão Voltar Windows Media Player e verifique se você não vê as informações da conta de usuário anterior.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -4,12 +4,12 @@ description: A comparação de inteiro de vetor por componente não é igual.
 ms.assetid: 5BED97D3-8FF6-4F1C-819B-DC8B4A4F2CCA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b74a68cf4b1b3c7473f8264e8b83910f4cb0677
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: e0170dd8b5cfd6284356699bc065e5581a601f8868bfd6c0db99a6a53f9bcfd1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104988605"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120023846"
 ---
 # <a name="ine-sm4---asm"></a>inha (sm4-ASM)
 

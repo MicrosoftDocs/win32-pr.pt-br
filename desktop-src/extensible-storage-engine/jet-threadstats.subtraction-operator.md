@@ -25,12 +25,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5a41455f05b91a582a1d8aae824ca5b426628cf1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 51f42b48042e1e0f2aedae1adb452499ed20a62f05abd0665e32f101436448c6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164264"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120115776"
 ---
 # <a name="jet_threadstatssubtraction-operator"></a>JET_THREADSTATS. Operador de subtração
 
@@ -76,7 +76,7 @@ public static JET_THREADSTATS operator -(
     
     A segunda JET_THREADSTATS.
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
 Tipo: [Microsoft.ISAM.ESENT.Interop.vista.JET_THREADSTATS](./jet-threadstats-structure2.md)  
 Uma JET_THREADSTATS que contém a diferença em estatísticas entre T1 e T2.  

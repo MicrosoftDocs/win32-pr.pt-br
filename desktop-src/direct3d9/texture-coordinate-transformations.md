@@ -20,7 +20,7 @@ Os dispositivos Direct3D podem transformar as coordenadas de textura para vérti
 
  
 
-Dispositivos que suportam operações de iluminação e transformação aceleradas por hardware (T&dispositivo L HAL) também aceleram a transformação de coordenadas de textura. Quando a aceleração de hardware de transformações não está disponível, otimizações específicas da plataforma no pipeline de geometria Direct3D se aplicam a transformações de coordenadas de textura.
+Dispositivos que suportam operações de transformação e iluminação aceleradas por hardware (T&dispositivo L HAL) também aceleram a transformação de coordenadas de textura. Quando a aceleração de hardware de transformações não está disponível, otimizações específicas da plataforma no pipeline de geometria Direct3D se aplicam a transformações de coordenadas de textura.
 
 Transformações de coordenadas de textura são úteis para produzir efeitos especiais, evitando a necessidade de modificar diretamente as coordenadas de textura da geometria. Você pode usar matrizes simples de conversão ou rotação para animar texturas em um objeto ou transformar coordenadas de textura geradas automaticamente pelo Direct3D para simplificar e talvez acelerar efeitos avançados, como texturas projetadas e mapeamento dinâmico de luz. Além disso, você pode usar as transformação de coordenadas de textura para reutilizar um único conjunto de coordenadas de textura para várias finalidades, em vários estágios de textura.
 

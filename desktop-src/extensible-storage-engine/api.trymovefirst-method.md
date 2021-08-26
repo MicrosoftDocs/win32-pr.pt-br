@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 624fba29ab6fe653b7af674e32b907ea3934d643
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 53b4f126e93986ad0818e2d6e333d70b848a6653343e14ed9fdc010013ffc651
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105781432"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120066966"
 ---
 # <a name="apitrymovefirst-method"></a>Método API. TryMoveFirst
 
@@ -76,7 +76,7 @@ public static bool TryMoveFirst(
     
     O cursor a ser posicionado.
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
 Tipo: [System. Boolean](/dotnet/api/system.boolean)  
 True se a movimentação tiver sido bem-sucedida.  

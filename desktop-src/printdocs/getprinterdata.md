@@ -17,18 +17,18 @@ api_location:
 - Winspool.drv
 - Ext-MS-Win-Printer-WinSpool-l1-1-2.dll
 - Ext-MS-Win-Printer-WinSpool-L1-1-3.dll
-ms.openlocfilehash: cb18936d6d3c1d82f4a52a874883cdcdfaae4815
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d4cf7d1d1b668974f792c6535f1667f127c78541f4786b32201209553e452c2c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105764489"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119948786"
 ---
 # <a name="getprinterdata-function"></a>Função GetPrinterData
 
 A função **GetPrinterData** recupera dados de configuração para a impressora ou o servidor de impressão especificado.
 
-No Windows 2000 e versões posteriores do Windows, chamar **GetPrinterData** é equivalente a chamar [**GetPrinterDataEx**](/windows/desktop/printdocs/getprinterdataex) com o parâmetro *pKeyName* definido como "PrinterDriverData".
+no Windows 2000 e versões posteriores do Windows, chamar **GetPrinterData** é equivalente a chamar [**GetPrinterDataEx**](/windows/desktop/printdocs/getprinterdataex) com o parâmetro *pKeyName* definido como "PrinterDriverData".
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -96,7 +96,7 @@ Um ponteiro para uma variável que recebe o tamanho, em bytes, dos dados de conf
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for bem-sucedida, o valor de retorno **será \_ êxito no erro**. Se a função falhar, o valor de retorno será um valor de erro.
 
@@ -109,7 +109,7 @@ Se a função for bem-sucedida, o valor de retorno **será \_ êxito no erro**. 
 
 **GetPrinterData** recupera os dados de configuração da impressora que foram definidos pela função [**SetPrinterDataEx**](setprinterdataex.md) ou [**SetPrinterData**](setprinterdata.md) .
 
-**GetPrinterData** pode disparar uma chamada do Windows para [**GetPrinterDataFromPort**](/previous-versions//ff550506(v=vs.85)), que pode gravar no registro. Se tiver, podem ocorrer efeitos colaterais, como disparar uma atualização ou atualizar a ID de evento 20 no cliente, se a impressora for compartilhada em uma rede.
+**GetPrinterData** pode disparar uma chamada de Windows para [**GetPrinterDataFromPort**](/previous-versions//ff550506(v=vs.85)), que pode gravar no registro. Se tiver, podem ocorrer efeitos colaterais, como disparar uma atualização ou atualizar a ID de evento 20 no cliente, se a impressora for compartilhada em uma rede.
 
 Se *hPrinter* for um identificador para um *servidor de impressão, o* especifiquename poderá especificar um dos valores predefinidos a seguir.
 
@@ -127,8 +127,8 @@ Se *hPrinter* for um identificador para um *servidor de impressão, o* especifiq
 | **\_log de eventos do SPLREG \_**                                              |                                                                                                                                                                                                                                 |
 | **\_versão principal do SPLREG \_**                                          |                                                                                                                                                                                                                                 |
 | **SPLREG \_ \_ versão secundária**                                          |                                                                                                                                                                                                                                 |
-| **\_ \_ pop-up do SPLREG net**                                              | Sem suporte no Windows Server 2003 e posterior<br/>                                                                                                                                                                       |
-| **\_ \_ pop-up do SPLREG net para o \_ \_ computador**                                | Após o retorno bem-sucedido, o *pData* conterá 1 se as notificações de trabalho devem ser enviadas para o computador cliente ou 0 se as notificações de trabalho forem enviadas ao usuário.<br/> Sem suporte no Windows Server 2003 e posterior<br/> |
+| **\_ \_ pop-up do SPLREG net**                                              | sem suporte no Windows Server 2003 e posterior<br/>                                                                                                                                                                       |
+| **\_ \_ pop-up do SPLREG net para o \_ \_ computador**                                | Após o retorno bem-sucedido, o *pData* conterá 1 se as notificações de trabalho devem ser enviadas para o computador cliente ou 0 se as notificações de trabalho forem enviadas ao usuário.<br/> sem suporte no Windows Server 2003 e posterior<br/> |
 | **\_versão do so SPLREG \_**                                             | Windows XP e posterior<br/>                                                                                                                                                                                                 |
 | **SPLREG \_ os \_ VERSIONEX**                                           |                                                                                                                                                                                                                                 |
 | **\_padrão de \_ prioridade de thread de porta SPLREG \_ \_**                         |                                                                                                                                                                                                                                 |
@@ -140,7 +140,7 @@ Se *hPrinter* for um identificador para um *servidor de impressão, o* especifiq
 | **\_política de \_ execução de isolamento do driver de impressão SPLREG \_ \_ \_**             | Windows 7 e posterior<br/>                                                                                                                                                                                                  |
 | **\_política de \_ substituição de isolamento do driver de impressão SPLREG \_ \_ \_**              | Windows 7 e posterior<br/>                                                                                                                                                                                                  |
 | **\_fax remoto do SPLREG \_**                                             | Após o retorno bem-sucedido, o *pData* conterá 0x0001 se o serviço de fax der suporte a clientes remotos. caso contrário, 0.<br/>                                                                                                               |
-| **\_ \_ pop-up de repetição do SPLREG**                                            | Após o retorno bem-sucedido, o *pData* conterá 1 se o servidor estiver definido para repetir janelas pop-up para todos os trabalhos ou 0 se o servidor não tentar novamente janelas pop-up para todos os trabalhos.<br/> Sem suporte no Windows Server 2003 e posterior<br/> |
+| **\_ \_ pop-up de repetição do SPLREG**                                            | Após o retorno bem-sucedido, o *pData* conterá 1 se o servidor estiver definido para repetir janelas pop-up para todos os trabalhos ou 0 se o servidor não tentar novamente janelas pop-up para todos os trabalhos.<br/> sem suporte no Windows Server 2003 e posterior<br/> |
 | **\_prioridade de thread do Agendador SPLREG \_ \_**                             |                                                                                                                                                                                                                                 |
 | **\_padrão de prioridade de thread do Agendador SPLREG \_ \_ \_**                    |                                                                                                                                                                                                                                 |
 | **SPLREG \_ WEBSHAREMGMT**                                            | Windows Server 2003 e posterior<br/>                                                                                                                                                                                        |
@@ -179,7 +179,7 @@ Chame a função [**RegQueryValueEx**](/windows/win32/api/winreg/nf-winreg-regqu
 
  
 
-No Windows 7 e versões posteriores do Windows, os trabalhos de impressão enviados a um servidor de impressão são renderizados no cliente por padrão. Os valores a seguir configuram o processamento do lado do cliente de trabalhos de impressão e podem ser lidos se você definir os valores a seguir em *valores* de valor.
+no Windows 7 e versões posteriores do Windows, os trabalhos de impressão enviados a um servidor de impressão são renderizados no cliente por padrão. Os valores a seguir configuram o processamento do lado do cliente de trabalhos de impressão e podem ser lidos se você definir os valores a seguir em *valores* de valor.
 
 
 

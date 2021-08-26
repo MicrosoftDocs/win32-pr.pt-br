@@ -4,12 +4,12 @@ ms.assetid: 8fddf8c3-268e-4706-9003-e4bfb03d5278
 title: Propriedade AVDecCommonInputFormat (Codecapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7432d2a48727ec144d4206d4a11bfe65ce2c5d2a
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 187e923be9c53cebbb55663d55ec6351be38f84c33f8c03277f587d61a4db719
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104456765"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120079486"
 ---
 # <a name="avdeccommoninputformat-property"></a>Propriedade AVDecCommonInputFormat
 
@@ -41,7 +41,7 @@ O valor dessa propriedade é um **BSTR** que contém a representação de cadeia
 | **CODECAPI \_ GUID \_ AVDecAudioInputMPEG**             | Áudio MPEG                                     |
 | **CODECAPI \_ GUID \_ AVDecAudioInputPCM**              | Áudio PCM                                      |
 | **CODECAPI \_ GUID \_ AVDecAudioInputWMA**              | Áudio do Windows Media                            |
-| **CODECAPI \_ GUID \_ AVDecAudioInputWMAPro**           | Windows Media Audio 9 Professional (WMA pro)   |
+| **CODECAPI \_ GUID \_ AVDecAudioInputWMAPro**           | Windows Professional de áudio de mídia 9 (WMA Pro)   |
 
 
 
@@ -53,9 +53,9 @@ O valor dessa propriedade é um **BSTR** que contém a representação de cadeia
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos do Windows 2000 Professional \[ Desktop aplicativos \| UWP\]<br/>                     |
-| Servidor mínimo com suporte<br/> | Aplicativos da área de trabalho do Windows 2000 Server aplicativos \[ \| UWP\]<br/>                           |
-| parâmetro<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | aplicativos Windows 2000 Professional \[ desktop aplicativos \| UWP\]<br/>                     |
+| Servidor mínimo com suporte<br/> | Windows \[ aplicativos da área de trabalho do servidor 2000 \| aplicativo UWP\]<br/>                           |
+| Cabeçalho<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
 
 
 

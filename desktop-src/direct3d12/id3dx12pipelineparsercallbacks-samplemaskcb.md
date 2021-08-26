@@ -1,5 +1,5 @@
 ---
-title: Método ID3DX12PipelineParserCallbacks SampleMaskCb (D3DX12. h)
+title: Método SampleMaskCb ID3DX12PipelineParserCallbacks (D3DX12.h)
 description: Chama o retorno de chamada de subobjeto de máscara de exemplo de um objeto que implementa essa interface.
 ms.assetid: 4D729414-1E04-407B-B32F-ECE1EA9FF414
 keywords:
@@ -17,14 +17,14 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0124b228056089e21c078ffce25ce59eef0e3dee
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 64acc7e969f52e78250cde9bc4c693ce3eae06ae3edd08e7f18c65dc0ff6fa8c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105791281"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120069586"
 ---
-# <a name="id3dx12pipelineparsercallbackssamplemaskcb-method"></a>Método ID3DX12PipelineParserCallbacks:: SampleMaskCb
+# <a name="id3dx12pipelineparsercallbackssamplemaskcb-method"></a>Método ID3DX12PipelineParserCallbacks::SampleMaskCb
 
 Chama o retorno de chamada de subobjeto de máscara de exemplo de um objeto que implementa essa interface.
 
@@ -48,13 +48,13 @@ void SampleMaskCb(
 *SampleMask* 
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
-Detalhes do subobjeto de máscara de exemplo analisado de um fluxo de estado de pipeline.
+Detalhes do subobjeto de máscara de exemplo analisado de um fluxo de estado do pipeline.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Não retorna nada.
 
@@ -64,8 +64,8 @@ Não retorna nada.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX12. h</dt> </dl>  |
-| Biblioteca<br/> | <dl> <dt>D3D12. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>D3DX12.h</dt> </dl>  |
+| Biblioteca<br/> | <dl> <dt>D3D12.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>D3D12.dll</dt> </dl> |
 
 

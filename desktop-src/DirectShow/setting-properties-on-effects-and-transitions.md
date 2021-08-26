@@ -4,18 +4,18 @@ ms.assetid: ce773140-7e50-4b72-8cb5-e34cba51644d
 title: Definindo propriedades em efeitos e transições
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c4ddd129eb9d4ab24ebef6f5c760a4211f26c9a6
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 1305eb7860b5519b14cfeebc349643c2662db3f133c0bf3424d1d71ccf85753c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105810165"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119904256"
 ---
 # <a name="setting-properties-on-effects-and-transitions"></a>Definindo propriedades em efeitos e transições
 
 \[Essa API não tem suporte e pode ser alterada ou não estar disponível no futuro.\]
 
-Muitos efeitos e transições de [serviços de edição do DirectShow](directshow-editing-services.md) dão suporte a propriedades que controlam seu comportamento. Um aplicativo pode definir o valor de uma propriedade usando a interface [**IPropertySetter**](ipropertysetter.md) . O objeto de transição ou efeito subjacente deve dar suporte a **IDispatch** para definir as propriedades. Com efeitos de vídeo e transições, o aplicativo pode definir um intervalo de valores que mudam ao longo do tempo. (Por exemplo, você pode definir uma transição de apagamento para mover para frente e para trás pelo quadro.) Com efeitos de áudio, o valor da propriedade é estático e não pode ser alterado ao longo do tempo. A única exceção é o efeito de [envelope de volume](volume-envelope-effect.md) , que dá suporte a uma propriedade dinâmica para o nível de volume.
+muitos efeitos de [serviços de edição DirectShow](directshow-editing-services.md) e transições dão suporte a propriedades que controlam seu comportamento. Um aplicativo pode definir o valor de uma propriedade usando a interface [**IPropertySetter**](ipropertysetter.md) . O objeto de transição ou efeito subjacente deve dar suporte a **IDispatch** para definir as propriedades. Com efeitos de vídeo e transições, o aplicativo pode definir um intervalo de valores que mudam ao longo do tempo. (Por exemplo, você pode definir uma transição de apagamento para mover para frente e para trás pelo quadro.) Com efeitos de áudio, o valor da propriedade é estático e não pode ser alterado ao longo do tempo. A única exceção é o efeito de [envelope de volume](volume-envelope-effect.md) , que dá suporte a uma propriedade dinâmica para o nível de volume.
 
 Para definir uma propriedade, execute as etapas a seguir.
 
@@ -33,7 +33,7 @@ A estrutura do [**\_ parâmetro Dexter**](dexter-param.md) especifica qual propr
 
 A \_ estrutura de valor Dexter especifica o valor de uma propriedade em um determinado momento. Ele contém os membros a seguir.
 
--   **v**: tipo Variant que especifica um novo valor para a propriedade. O membro **VT** dessa variante define o tipo de dados da propriedade. Para obter mais informações sobre o tipo **Variant** , consulte a SDK do Windows.
+-   **v**: tipo Variant que especifica um novo valor para a propriedade. O membro **VT** dessa variante define o tipo de dados da propriedade. para obter mais informações sobre o tipo **VARIANT** , consulte a SDK do Windows.
 -   **RT**: tempo de referência quando a propriedade assume esse valor, em relação à hora de início do efeito ou da transição. A hora de início do efeito ou da transição é relativa à hora de início de seu objeto pai.
 -   **dwInterp**: sinalizador que especifica como a propriedade é alterada do valor anterior para o novo valor. Com o \_ sinalizador de salto DEXTERF, a propriedade salta instantaneamente para o novo valor na hora especificada. Com o \_ sinalizador interpolação DEXTERF, a propriedade é interpolada linearmente do valor anterior.
 

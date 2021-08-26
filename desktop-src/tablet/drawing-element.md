@@ -4,12 +4,12 @@ ms.assetid: 566542f3-b824-442d-9d8b-0064ebcf9b68
 title: Elemento Drawing
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d87c0a3d8879fb5f3146c46c9c88d83a6e658d8
-ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
+ms.openlocfilehash: d44eab0f9feec4b80369a365663917ca1aea0f211bba70dd4b99e9161316c662
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111432508"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119936586"
 ---
 # <a name="drawing-element"></a>Elemento Drawing
 
@@ -23,7 +23,7 @@ Contém o conteúdo que foi classificado pelo analisador ou pelo usuário como u
 
 ## <a name="parent-elements"></a>Elementos pai
 
-[**Disputa**](content-element--journal-reader.md)
+[**Conteúdo**](content-element--journal-reader.md)
 
 [**GroupNode**](groupnode-element.md)
 

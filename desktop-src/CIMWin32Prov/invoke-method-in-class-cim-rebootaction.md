@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: e68849a486cc6a5b61dc55cf86e259e2f58435e8
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: eac69785beed5aa2b0865808bcca8bc5c3386506508acaebe177fc5008afaba8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105756043"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120064846"
 ---
 # <a name="invoke-method-of-the-cim_rebootaction-class"></a>Método Invoke da classe CIM \_ rebootaction
 
@@ -45,7 +45,7 @@ uint32 Invoke();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor inteiro de 0 (zero) em caso de êxito e qualquer outro número para indicar um erro.
 

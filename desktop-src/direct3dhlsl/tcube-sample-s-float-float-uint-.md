@@ -1,9 +1,9 @@
 ---
-title: 'Função TextureCube:: Sample (S, float, float, uint)'
-description: 'Exemplifica uma textura com um valor opcional para fixe os valores de nível de detalhe (LOD) de exemplo para e retorna o status da operação. | Função TextureCube:: Sample (S, float, float, uint)'
+title: Função TextureCube::Sample(S,float,float,uint)
+description: Amostra uma textura com um valor opcional para fixar valores de LOD (nível de detalhes) de exemplo e retorna o status da operação. | Função TextureCube::Sample(S,float,float,uint)
 ms.assetid: 8FA17583-9002-4DEC-A6D5-85B25DEA19B7
 keywords:
-- Exemplo de função HLSL
+- Função de exemplo HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9a91e9a3dcc2df617f50175eb0872398bc564103
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 44d2caa20748744a447616a2eed1a24331b714165f46bc746a54401a780b539d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104968453"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120067506"
 ---
-# <a name="texturecubesamplesfloatfloatuint-function"></a>Função TextureCube:: Sample (S, float, float, uint)
+# <a name="texturecubesamplesfloatfloatuint-function"></a>Função TextureCube::Sample(S,float,float,uint)
 
-Exemplifica uma textura com um valor opcional para fixe os valores de nível de detalhe (LOD) de exemplo para e retorna o status da operação.
+Amostra uma textura com um valor opcional para fixar valores de LOD (nível de detalhes) de exemplo e retorna o status da operação.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,18 +45,18 @@ DXGI_FORMAT Sample(
 *S* \[ em\]
 </dt> <dd>
 
-Um [estado de amostra](dx-graphics-hlsl-sampler.md). Este é um objeto declarado em um arquivo de efeito que contém atribuições de estado.
+Um [estado sampler](dx-graphics-hlsl-sampler.md). Esse é um objeto declarado em um arquivo de efeito que contém atribuições de estado.
 
 </dd> <dt>
 
-*Local* \[ do no\]
+*Localização* \[ Em\]
 </dt> <dd>
 
-As coordenadas de textura. O tipo de argumento é dependente do tipo de objeto Texture.
+As coordenadas de textura. O tipo de argumento depende do tipo de objeto de textura.
 
 
 
-| Tipo de Texture-Object                    | Tipo de parâmetro |
+| Texture-Object tipo                    | Tipo de parâmetro |
 |----------------------------------------|----------------|
 | Texture1D                              | FLOAT          |
 | Texture1DArray, Texture2D              | float2         |
@@ -69,23 +69,23 @@ As coordenadas de textura. O tipo de argumento é dependente do tipo de objeto T
 
 </dd> <dt>
 
-*Fixe* \[ no\]
+*Fixação* \[ Em\]
 </dt> <dd>
 
-Um valor opcional para fixe os valores de LOD de exemplo para. Por exemplo, se você passar 2.0 f para o valor fixe, certifique-se de que nenhum exemplo individual acessa um nível de MIP menor que 2,0 f.
+Um valor opcional para fixar valores LOD de exemplo. Por exemplo, se você passar 2,0f para o valor de fixação, garantirá que nenhuma amostra individual acesse um nível de mip menor que 2,0f.
 
 </dd> <dt>
 
-*Status* \[ do fora\]
+*Status* \[ out\]
 </dt> <dd>
 
-O status da operação. Você não pode acessar o status diretamente; em vez disso, passe o status para a função intrínseca [**CheckAccessFullyMapped**](checkaccessfullymapped.md) . **CheckAccessFullyMapped** retornará **true** se todos os valores da operação de **amostra**, **coleta** ou **carregamento** correspondente acessaram os blocos mapeados em um recurso de bloco ao [lado](/windows/desktop/direct3d11/direct3d-11-2-features). Se qualquer valor tiver sido tirado de um bloco não mapeado, **CheckAccessFullyMapped** retornará **false**.
+O status da operação. Você não pode acessar o status diretamente; Em vez disso, passe o status para a [**função intrínseca CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** retornará **TRUE** se todos os valores  da operação de **Exemplo,** **Coletar** ou Carregar correspondente acessarem blocos mapeados em um recurso lado a [lado.](/windows/desktop/direct3d11/direct3d-11-2-features) Se algum valor tiver sido retirado de um tile não mapeado, **CheckAccessFullyMapped** retornará **FALSE.**
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O formato de textura, que é um dos valores tipados listados [**no \_ formato dxgi**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).
+O formato de textura, que é um dos valores digitados listados em [**FORMATO DXGI. \_**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)
 
 ## <a name="see-also"></a>Confira também
 

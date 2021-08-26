@@ -1,12 +1,12 @@
 ---
-title: Método Resources da classe Win32_TSGatewayResourceGroup
-description: Define a propriedade Resources para esse grupo de recursos.
+title: Método SetResources da Win32_TSGatewayResourceGroup classe
+description: Define a propriedade Recursos para esse grupo de recursos.
 ms.assetid: 0043ee04-26d1-4907-87cc-a15f72cb0b93
 ms.tgt_platform: multiple
 keywords:
-- Método Resources serviços de área de trabalho remota
-- Método Resources serviços de área de trabalho remota, classe Win32_TSGatewayResourceGroup
-- Classe Win32_TSGatewayResourceGroup serviços de área de trabalho remota, método Resources
+- Método SetResources Serviços de Área de Trabalho Remota
+- Método SetResources Serviços de Área de Trabalho Remota , Win32_TSGatewayResourceGroup classe
+- Win32_TSGatewayResourceGroup classe Serviços de Área de Trabalho Remota , método SetResources
 topic_type:
 - apiref
 api_name:
@@ -24,9 +24,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119987666"
 ---
-# <a name="setresources-method-of-the-win32_tsgatewayresourcegroup-class"></a>Método Resources da \_ classe Win32 TSGatewayResourceGroup
+# <a name="setresources-method-of-the-win32_tsgatewayresourcegroup-class"></a>Método SetResources da classe \_ Win32 TSGatewayResourceGroup
 
-Define a propriedade **Resources** para esse grupo de recursos.
+Define a **propriedade Recursos** para esse grupo de recursos.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,7 +43,7 @@ uint32 SetResources(
 
 <dl> <dt>
 
-*Recursos* \[ do no\]
+*Recursos* \[ Em\]
 </dt> <dd>
 
 Lista de recursos separados por ponto e vírgula neste grupo de recursos. Um " \* " significa todos os recursos.
@@ -52,15 +52,15 @@ Lista de recursos separados por ponto e vírgula neste grupo de recursos. Um " \
 
 ## <a name="return-value"></a>Valor retornado
 
-Se o método tiver sucesso, ele retornará zero. Se o método não for bem-sucedido, ele retornará um valor diferente de zero. Para obter uma lista de códigos de erro, consulte [serviços de área de trabalho remota códigos de erro do provedor WMI](terminal-services-wmi-provider-error-codes.md).
+Se o método for bem-sucedido, ele retornará zero. Se o método não for bem-sucedido, ele retornará um valor diferente de zero. Para ver uma lista de códigos de erro, consulte Serviços de Área de Trabalho Remota códigos de erro do provedor [WMI](terminal-services-wmi-provider-error-codes.md).
 
 ## <a name="remarks"></a>Comentários
 
-Se vários recursos estiverem no parâmetro de *recursos* e um dos recursos não puder ser processado, nenhum dos recursos será processado.
+Se vários recursos estão no *parâmetro Resources* e um dos recursos não pode ser processado, nenhum dos recursos será processado.
 
 Você deve ser um membro do grupo Administradores para chamar esse método.
 
-os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). os arquivos MOF não são instalados como parte do SDK (Software Development Kit) do Microsoft Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+arquivos Managed Object Format (MOF) contêm as definições para classes WMI (Instrumentação de Gerenciamento de Windows). Os arquivos MOF não são instalados como parte do Microsoft Windows Software Development Kit (SDK). Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, [consulte Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -70,8 +70,8 @@ os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                           |
-| Namespace<br/>                | \\TerminalServices da CIMv2 raiz \\<br/>                                                 |
-| MOF<br/>                      | <dl> <dt>TS. mof</dt> </dl> |
+| Namespace<br/>                | \\CiMv2 \\ TerminalServices raiz<br/>                                                 |
+| MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 
 
@@ -80,7 +80,7 @@ os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 
 <dl> <dt>
 
-[**\_TSGatewayResourceGroup Win32**](win32-tsgatewayresourcegroup.md)
+[**Win32 \_ TSGatewayResourceGroup**](win32-tsgatewayresourcegroup.md)
 </dt> </dl>
 
  

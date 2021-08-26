@@ -1,63 +1,63 @@
 ---
-title: Como inicializar uma textura a partir de um arquivo
-description: Este tópico mostra como usar o Windows Imaging Component (WIC) para criar a textura e a exibição separadamente.
+title: Como inicializar uma textura de um arquivo
+description: Este tópico mostra como usar o WIC (Windows Imaging Component) para criar a textura e a exibição separadamente.
 ms.assetid: ea3c6003-191d-47d1-8931-f43598728ad4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1bf6ba4296c2103d7f84f934899f906500e712cd
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 7b3e8035e630a7b2182c114e329cf4b08428ab3a83ca218b933cb2b922ff305c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103917576"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120027936"
 ---
-# <a name="how-to-initialize-a-texture-from-a-file"></a>Como: inicializar uma textura a partir de um arquivo
+# <a name="how-to-initialize-a-texture-from-a-file"></a>Como inicializar uma textura de um arquivo
 
-Você pode usar a API do [Windows Imaging Component](/windows/desktop/wic/-wic-lh) para inicializar uma [textura](overviews-direct3d-11-resources-textures.md) de um arquivo. Para carregar uma textura, você deve criar uma textura e uma exibição de textura. Este tópico mostra como usar o Windows Imaging Component (WIC) para criar a textura e a exibição separadamente.
+Você pode usar a [API Windows componente de imagens](/windows/desktop/wic/-wic-lh) para inicializar uma [textura](overviews-direct3d-11-resources-textures.md) de um arquivo. Para carregar uma textura, você deve criar uma textura e uma exibição de textura. Este tópico mostra como usar o WIC (Windows Imaging Component) para criar a textura e a exibição separadamente.
 
 > [!Note]  
-> Este tópico é útil para imagens que você cria como texturas 2D simples. Para recursos mais complexos, use [DDS](/windows/desktop/direct3ddds/dx-graphics-dds). Para um pipeline de processamento de textura, gravador e leitor de arquivo DDS com recursos completos, consulte [DirectXTex](https://github.com/Microsoft/DirectXTex) e [DirectXTK](https://github.com/Microsoft/DirectXTK).
+> Este tópico é útil para imagens que você cria como texturas 2D simples. Para recursos mais complexos, use [DDS](/windows/desktop/direct3ddds/dx-graphics-dds). Para um pipeline de processamento de textura, leitor de arquivo, de DDS completo, consulte [DirectXTex](https://github.com/Microsoft/DirectXTex) e [DirectXTK](https://github.com/Microsoft/DirectXTK).
 
- 
+ 
 
 No final deste tópico, você encontrará o código de exemplo completo. O tópico descreve as partes do código de exemplo que criam a textura e a exibição.
 
-**Para inicializar uma textura e uma exibição separadamente.**
+**Para inicializar uma textura e exibir separadamente.**
 
-1.  Chame [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) para criar a interface da fábrica de imagens ([**IWICImagingFactory**](/windows/desktop/api/wincodec/nn-wincodec-iwicimagingfactory)).
-2.  Chame o método [**IWICImagingFactory:: CreateDecoderFromFilename**](/windows/desktop/api/wincodec/nf-wincodec-iwicimagingfactory-createdecoderfromfilename) para criar um objeto [**IWICBitmapDecoder**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapdecoder) a partir de um nome de arquivo de imagem.
-3.  Chame o método [**IWICBitmapDecoder:: GetFrame**](/windows/desktop/api/wincodec/nf-wincodec-iwicbitmapdecoder-getframe) para recuperar a interface [**IWICBitmapFrameDecode**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapframedecode) para o quadro da imagem.
-4.  Chame o método [**IWICBitmapSource:: GetPixelFormat**](/windows/desktop/api/wincodec/nf-wincodec-iwicbitmapsource-getpixelformat) (a interface [**IWICBitmapFrameDecode**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapframedecode) herda de [**IWICBitmapSource**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapsource)) para obter o formato de pixel da imagem.
-5.  Converta o formato de pixel em um tipo de [**\_ formato dxgi**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) de acordo com esta tabela:
+1.  Chame [**CoCreateInstance para**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) criar a interface de fábrica de imagens ([**IWICImagingFactory**](/windows/desktop/api/wincodec/nn-wincodec-iwicimagingfactory)).
+2.  Chame o [**método IWICImagingFactory::CreateDecoderFromFilename**](/windows/desktop/api/wincodec/nf-wincodec-iwicimagingfactory-createdecoderfromfilename) para criar um objeto [**IWICBitmapDecoder**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapdecoder) de um nome de arquivo de imagem.
+3.  Chame o [**método IWICBitmapDecoder::GetFrame**](/windows/desktop/api/wincodec/nf-wincodec-iwicbitmapdecoder-getframe) para recuperar a interface [**IWICBitmapFrameDecode**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapframedecode) para o quadro da imagem.
+4.  Chame o método [**IWICBitmapSource::GetPixelFormat**](/windows/desktop/api/wincodec/nf-wincodec-iwicbitmapsource-getpixelformat) ( A interface [**IWICBitmapFrameDecode**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapframedecode) herda de [**IWICBitmapSource**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapsource)) para obter o formato de pixel da imagem.
+5.  Converta o formato de pixel em um [**tipo DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) de acordo com esta tabela:
 
-    | Formato de pixel do WIC                                  | [ **\_ Formato dxgi** equivalente](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) |
+    | Formato de pixel WIC                                  | FORMATO [ **DXGI \_ equivalente**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) |
     |---------------------------------------------------|---------------------------------------------------------|
-    | \_WICPIXELFORMAT128BPPRGBAFLOAT GUID               | \_ \_ Float R32G32B32A32 de formato dxgi \_                       |
-    | \_WICPIXELFORMAT64BPPRGBAHALF GUID                 | \_ \_ Float R16G16B16A16 de formato dxgi \_                       |
-    | \_WICPIXELFORMAT64BPPRGBA GUID                     | \_Formato dxgi \_ R16G16B16A16 \_ UNORM                       |
-    | \_WICPIXELFORMAT32BPPRGBA GUID                     | \_Formato dxgi \_ R8G8B8A8 \_ UNORM                           |
-    | \_WICPIXELFORMAT32BPPBGRA GUID                     | \_Formato dxgi \_ B8G8R8A8 \_ UNORM (dxgi 1,1)                |
-    | \_WICPIXELFORMAT32BPPBGR GUID                      | \_Formato dxgi \_ B8G8R8X8 \_ UNORM (dxgi 1,1)                |
-    | \_WICPIXELFORMAT32BPPRGBA1010102XR GUID            | \_Formato dxgi \_ R10G10B10 \_ XR \_ Bias \_ a2 \_ UNORM (dxgi 1,1) |
-    | \_WICPIXELFORMAT32BPPRGBA1010102 GUID              | \_Formato dxgi \_ R10G10B10A2 \_ UNORM                        |
-    | \_WICPIXELFORMAT32BPPRGBE GUID                     | \_Formato dxgi \_ R9G9B9E5 \_ SHAREDEXP                       |
-    | \_WICPIXELFORMAT16BPPBGRA5551 GUID                 | \_Formato dxgi \_ B5G5R5A1 \_ UNORM (dxgi 1,2)                |
-    | \_WICPIXELFORMAT16BPPBGR565 GUID                   | \_Formato dxgi \_ B5G6R5 \_ UNORM (dxgi 1,2)                  |
-    | \_WICPIXELFORMAT32BPPGRAYFLOAT GUID                | \_ \_ Float R32 de formato dxgi \_\*                              |
-    | \_WICPIXELFORMAT16BPPGRAYHALF GUID                 | \_ \_ Float R16 de formato dxgi \_\*                              |
-    | \_WICPIXELFORMAT16BPPGRAY GUID                     | \_Formato dxgi \_ R16 \_ UNORM\*                              |
-    | \_WICPIXELFORMAT8BPPGRAY GUID                      | \_UNORM de \_ R8 de formato dxgi \_\*                               |
-    | \_WICPIXELFORMAT8BPPALPHA GUID                     | \_Formato dxgi \_ a8 \_ UNORM                                 |
-    | GUID \_ WICPixelFormat96bppRGBFloat (WIC do Windows 8) | \_ \_ Float R32G32B32 de formato dxgi \_                          |
+    | GUID \_ WICPixelFormat128bppRGBAFloat               | DXGI \_ FORMAT \_ R32G32B32A32 \_ FLOAT                       |
+    | GUID \_ WICPixelFormat64bppRGBAHalf                 | DXGI \_ FORMAT \_ R16G16B16A16 \_ FLOAT                       |
+    | GUID \_ WICPixelFormat64bppRGBA                     | DXGI \_ FORMAT \_ R16G16B16A16 \_ UNORM                       |
+    | GUID \_ WICPixelFormat32bppRGBA                     | DXGI \_ FORMAT \_ R8G8B8A8 \_ UNORM                           |
+    | GUID \_ WICPixelFormat32bppBGRA                     | DXGI \_ FORMAT \_ B8G8R8A8 \_ UNORM (DXGI 1.1)                |
+    | GUID \_ WICPixelFormat32bppBGR                      | DXGI \_ FORMAT \_ B8G8R8X8 \_ UNORM (DXGI 1.1)                |
+    | GUID \_ WICPixelFormat32bppRGBA1010102XR            | DXGI \_ FORMAT \_ R10G10B10 \_ XR BIAS \_ \_ A2 \_ UNORM (DXGI 1.1) |
+    | GUID \_ WICPixelFormat32bppRGBA1010102              | DXGI \_ FORMAT \_ R10G10B10A2 \_ UNORM                        |
+    | GUID \_ WICPixelFormat32bppRGBE                     | DXGI \_ FORMAT \_ R9G9B9E5 \_ SHAREDEXP                       |
+    | GUID \_ WICPixelFormat16bppBGRA5551                 | DXGI \_ FORMAT \_ B5G5R5A1 \_ UNORM (DXGI 1.2)                |
+    | GUID \_ WICPixelFormat16bppBGR565                   | FORMATO DXGI \_ \_ B5G6R5 \_ UNORM (DXGI 1.2)                  |
+    | GUID \_ WICPixelFormat32bppGrayFloat                | DXGI \_ FORMAT \_ R32 \_ FLOAT\*                              |
+    | GUID \_ WICPixelFormat16bppGrayHalf                 | DXGI \_ FORMAT \_ R16 \_ FLOAT\*                              |
+    | GUID \_ WICPixelFormat16bppGray                     | DXGI \_ FORMAT \_ R16 \_ UNORM\*                              |
+    | GUID \_ WICPixelFormat8bppGray                      | DXGI \_ FORMAT \_ R8 \_ UNORM\*                               |
+    | GUID \_ WICPixelFormat8bppAlpha                     | FORMATO DXGI \_ \_ A8 \_ UNORM                                 |
+    | GUID \_ WICPixelFormat96bppRGBFloat (Windows 8 WIC) | DXGI \_ FORMAT \_ R32G32B32 \_ FLOAT                          |
 
     
 
-     
+     
 
-    \* Os formatos DXGI de canal único são todos os canais vermelhos, portanto, você precisa do HLSL Shader swizzles como. rrr para renderizá-los como escala de cinza.
+    \* Os formatos DXGI de canal único são todos canais vermelhos, portanto, você precisa de swizzles de sombreador HLSL, como .rrr, para renderizar como escala de cinza.
 
-6.  Chame o método [**IWICBitmapSource:: CopyPixels**](/windows/desktop/api/wincodec/nf-wincodec-iwicbitmapsource-copypixels) para copiar os pixels da imagem em um buffer. Use o tipo de [**\_ formato dxgi**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) e o buffer para inicializar o recurso de textura 2D e o objeto Shader-Resource-View.
-7.  Chame o método [**ID3D11Device:: CreateTexture2D**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createtexture2d) para inicializar o recurso de textura 2D. Nesta chamada, passe o endereço de um ponteiro de interface [**ID3D11Texture2D**](/windows/desktop/api/D3D11/nn-d3d11-id3d11texture2d) .
+6.  Chame o [**método IWICBitmapSource::CopyPixels**](/windows/desktop/api/wincodec/nf-wincodec-iwicbitmapsource-copypixels) para copiar os pixels de imagem em um buffer. Use o [**tipo FORMAT DXGI \_ e**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) o buffer para inicializar o recurso de textura 2D e o objeto shader-resource-view.
+7.  Chame o [**método ID3D11Device::CreateTexture2D**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createtexture2d) para inicializar o recurso de textura 2D. Nesta chamada, passe o endereço de um ponteiro de interface [**ID3D11Texture2D.**](/windows/desktop/api/D3D11/nn-d3d11-id3d11texture2d)
 
     ```C++
         // Create texture
@@ -86,7 +86,7 @@ No final deste tópico, você encontrará o código de exemplo completo. O tópi
 
     
 
-8.  Chame o método [**ID3D11Device:: CreateShaderResourceView**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createshaderresourceview) para inicializar um objeto Shader-Resource-View. Passe uma descrição de sombreador-Resource-View **nula** (para obter uma exibição com parâmetros padrão) ou uma descrição não **nula** de Shader-Resource-View (para obter uma exibição com parâmetros não padrão). Se necessário, determine o tipo de textura chamando [**ID3D11Resource:: GetType**](/windows/desktop/api/D3D11/nf-d3d11-id3d11resource-gettype) e o formato de textura chamando [**ID3D11ShaderResourceView:: GetDesc**](/windows/desktop/api/D3D11/nf-d3d11-id3d11shaderresourceview-getdesc).
+8.  Chame o [**método ID3D11Device::CreateShaderResourceView**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createshaderresourceview) para inicializar um objeto shader-resource-view. Passe uma descrição do sombreador NULL-resource-view (para obter uma exibição com parâmetros padrão) ou uma descrição não **NULL** shader-resource-view (para obter uma exibição com parâmetros não padrão).  Se necessário, determine o tipo de textura chamando [**ID3D11Resource::GetType**](/windows/desktop/api/D3D11/nf-d3d11-id3d11resource-gettype) e o formato de textura chamando [**ID3D11ShaderResourceView::GetDesc**](/windows/desktop/api/D3D11/nf-d3d11-id3d11shaderresourceview-getdesc).
     ```C++
         if ( SUCCEEDED(hr) && tex != 0 )
         {
@@ -110,9 +110,9 @@ No final deste tópico, você encontrará o código de exemplo completo. O tópi
 
     
 
-O código de exemplo anterior pressupõe que a variável *d3dDevice* é um objeto [**ID3D11Device**](/windows/desktop/api/D3D11/nn-d3d11-id3d11device) que foi inicializado anteriormente.
+O código de exemplo anterior pressupõe que a variável *d3dDevice* é um [**objeto ID3D11Device**](/windows/desktop/api/D3D11/nn-d3d11-id3d11device) que foi inicializado anteriormente.
 
-Aqui está o cabeçalho que você pode incluir em seu aplicativo. O cabeçalho declara as funções **CreateWICTextureFromFile** e **CreateWICTextureFromMemory** que você pode chamar em seu aplicativo para criar uma textura de um arquivo e da memória.
+Este é o header que você pode incluir em seu aplicativo. O header declara as funções **CreateWICTextureFromFile** e **CreateWICTextureFromMemory** que você pode chamar em seu aplicativo para criar uma textura de um arquivo e da memória.
 
 
 ```C++
@@ -174,7 +174,7 @@ HRESULT CreateWICTextureFromFile( _In_ ID3D11Device* d3dDevice,
 
 
 
-Aqui está a fonte completa que você pode usar em seu aplicativo. A origem implementa as funções **CreateWICTextureFromFile** e **CreateWICTextureFromMemory** .
+Aqui está a fonte completa que você pode usar em seu aplicativo. A origem implementa as **funções CreateWICTextureFromFile** **e CreateWICTextureFromMemory.**
 
 
 ```C++
@@ -883,6 +883,6 @@ HRESULT CreateWICTextureFromFile( _In_ ID3D11Device* d3dDevice,
 [Texturas](overviews-direct3d-11-resources-textures.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

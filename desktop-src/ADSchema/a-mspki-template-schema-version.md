@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0cc3b7952b55b346da29119775bb9c0f8b825c50
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 19ba5dcd71abac9339c8be6b4c1b04828e65bbdcff47ab1086296603c1569dbe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105811221"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120066416"
 ---
 # <a name="ms-pki-template-schema-version-attribute"></a>MS-PKI-template-atributo de versão de esquema
 
@@ -57,7 +57,7 @@ Controla as atualizações de esquema da classe PKI-Certificate-template.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| É de valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
 | No catálogo global      | Falso                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
@@ -78,7 +78,7 @@ Controla as atualizações de esquema da classe PKI-Certificate-template.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| É de valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
 | No catálogo global      | Falso                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
@@ -99,7 +99,7 @@ Controla as atualizações de esquema da classe PKI-Certificate-template.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| É de valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
 | No catálogo global      | Falso                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
@@ -120,7 +120,7 @@ Controla as atualizações de esquema da classe PKI-Certificate-template.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| É de valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
 | No catálogo global      | Falso                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
@@ -141,7 +141,7 @@ Controla as atualizações de esquema da classe PKI-Certificate-template.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| É de valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
 | No catálogo global      | Falso                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |

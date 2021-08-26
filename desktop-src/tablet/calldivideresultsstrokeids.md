@@ -1,7 +1,7 @@
 ---
-description: Recupera as propriedades de ID dos objetos IInkStrokeDisp da palavra, da linha, do parágrafo ou do desenho correspondente determinado pela análise de tinta.
+description: Recupera as propriedades de ID para os objetos IInkStrkeDisp da palavra, linha, parágrafo ou desenho correspondentes determinados pela análise de tinta.
 ms.assetid: f05ffa3b-2a47-46fe-bb8f-e682aa094b69
-title: Função CallDivideResultsStrokeIds
+title: Função CallDivideResultsRogkeIds
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 api_location:
 - InkDiv.dll
 - InkDiv.dll.dll
-ms.openlocfilehash: ee690c9564df3b8c75eca6eec8eeb88b7531f4ef
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 64b3e4180a34c45890408f8ba92cc79465fffa7f1028152e27f8d5c0aa40e3e1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105773013"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120009126"
 ---
-# <a name="calldivideresultsstrokeids-function"></a>Função CallDivideResultsStrokeIds
+# <a name="calldivideresultsstrokeids-function"></a>Função CallDivideResultsRogkeIds
 
-Recupera as propriedades de [**ID**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkstrokedisp-get_id) dos objetos [**IInkStrokeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp) da palavra, da linha, do parágrafo ou do desenho correspondente determinado pela análise de tinta.
+Recupera as [**propriedades de ID**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkstrokedisp-get_id) para os [**objetos IInkStrkeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp) da palavra, linha, parágrafo ou desenho correspondentes determinados pela análise de tinta.
 
-Esta função não se destina a ser usada pelo código do aplicativo.
+Essa função não se destina a ser usada pelo código do aplicativo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,51 +46,51 @@ HRESULT WINAPI CallDivideResultsStrokeIds(
 
 <dl> <dt>
 
-*hDivider* \[ no\]
+*hDivider* \[ Em\]
 </dt> <dd>
 
-Um identificador para o objeto [divisória](the-divider-object.md) .
+Um identificador para o [objeto Divisor.](the-divider-object.md)
 
 </dd> <dt>
 
-*\[ aWordStrokeIds \]* \[out\]
+*aWordStrokeIds \[ \]* \[out\]
 </dt> <dd>
 
 Uma matriz das IDs de traço da tinta na palavra.
 
 </dd> <dt>
 
-*\[ aLineStrokeIds \]* \[out\]
+*aLineStrkeIds \[ \]* \[out\]
 </dt> <dd>
 
 Uma matriz das IDs de traço da tinta na linha.
 
 </dd> <dt>
 
-*\[ aParagraphStrokeIds \]* \[out\]
+*aParagraphStrkeIds \[ \]* \[out\]
 </dt> <dd>
 
 Uma matriz das IDs de traço da tinta no parágrafo.
 
 </dd> <dt>
 
-*\[ aDrawingStrokeIds \]* \[out\]
+*aDrawingStrkeIds \[ \]* \[out\]
 </dt> <dd>
 
 Uma matriz das IDs de traço da tinta no desenho.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa função pode retornar um desses valores.
 
 
 
-| Código de retorno                                                                                  | Description                                     |
+| Código de retorno                                                                                  | Descrição                                     |
 |----------------------------------------------------------------------------------------------|-------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>         | A função foi bem-sucedida.<br/>              |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | O parâmetro *hDivider* é inválido.<br/> |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | O *parâmetro hDivider* é inválido.<br/> |
 
 
 
@@ -102,7 +102,7 @@ Essa função pode retornar um desses valores.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                         |
+| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/>                         |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                             |
 | Biblioteca<br/>                  | <dl> <dt>InkDiv.dll</dt> </dl> |
 

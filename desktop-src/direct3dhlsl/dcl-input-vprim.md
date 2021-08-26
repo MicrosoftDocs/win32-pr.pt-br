@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 9742c6066d66d7aa4121c1d1d1df98a37cb0147e
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 166111e8a4c0504589fe45727d7fc00cc4e1a90cf0e7848f09587f525294b7c3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104365293"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120024736"
 ---
 # <a name="dcl_input-vprim-sm4---asm"></a>\_vPrim de entrada DCL (sm4-ASM)
 

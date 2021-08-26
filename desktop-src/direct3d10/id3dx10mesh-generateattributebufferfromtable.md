@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: c2140278cdabf123f713c234021e09844329b307
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: b2402f5af8324b7819865a4c705218fc50122c0a8fbdb37e67c83b8eba0b135a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105755150"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120069986"
 ---
 # <a name="id3dx10meshgenerateattributebufferfromtable-method"></a>Método ID3DX10Mesh:: GenerateAttributeBufferFromTable
 
@@ -38,7 +38,7 @@ HRESULT GenerateAttributeBufferFromTable();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

@@ -1,9 +1,9 @@
 ---
-title: Elemento usercert (EapType)
+title: Elemento UserCert (EapType)
 description: Refere-se ao hash SHA-1 do certificado que deve ser usado para autenticação.
 ms.assetid: 0f0fa37c-dff2-44c6-bd7c-ca54c569fcf1
 keywords:
-- Elemento usercert EAPHost
+- Elemento UserCert EAPHost
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c23840b489bad1e06bdd0c7eb6e0033bfb1961f4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ef25a43bf13b1cfb1e4b03f78f5772567b3bfb92f1c31bb810da7882a4d3e1c0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103645074"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120067226"
 ---
-# <a name="usercert-eaptype-element"></a>Elemento usercert (EapType)
+# <a name="usercert-eaptype-element"></a>Elemento UserCert (EapType)
 
-O elemento **usercert (EapType)** refere-se ao hash SHA-1 do certificado que deve ser usado para autenticação.
+O **elemento UserCert (EapType)** refere-se ao hash SHA-1 do certificado que deve ser usado para autenticação.
 
 ``` syntax
 <xs:element name="UserCert"
@@ -31,7 +31,7 @@ O elemento **usercert (EapType)** refere-se ao hash SHA-1 do certificado que dev
  />
 ```
 
-O elemento **usercert** é definido pelo elemento [**EapType**](eaptlsuserpropertiesv1schema-eaptype-element.md) .
+O **elemento UserCert** é definido pelo [**elemento EapType.**](eaptlsuserpropertiesv1schema-eaptype-element.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -39,8 +39,8 @@ O elemento **usercert** é definido pelo elemento [**EapType**](eaptlsuserproper
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

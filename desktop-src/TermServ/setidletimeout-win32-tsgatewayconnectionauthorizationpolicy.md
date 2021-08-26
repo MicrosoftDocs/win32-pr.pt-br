@@ -1,5 +1,5 @@
 ---
-title: Método SetIdleTimeout da Win32_TSGatewayConnectionAuthorizationPolicy classe
+title: Método SetIdleTimeout da classe Win32_TSGatewayConnectionAuthorizationPolicy
 description: Define a propriedade IdleTimeout.
 ms.assetid: 162224dd-e4d4-483f-9ec4-b87731bc5014
 ms.tgt_platform: multiple
@@ -62,7 +62,7 @@ Se o método for bem-sucedido, ele retornará zero. Se o método não for bem-su
 
 Você deve ser um membro do grupo Administradores para chamar esse método.
 
-Managed Object Format arquivos (MOF) contêm as definições para classes WMI (Instrumentação de Gerenciamento de Windows). Os arquivos MOF não são instalados como parte do Microsoft Windows Software Development Kit (SDK). Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, [consulte Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
+arquivos Managed Object Format (MOF) contêm as definições para classes WMI (Instrumentação de Gerenciamento de Windows). Os arquivos MOF não são instalados como parte do Microsoft Windows Software Development Kit (SDK). Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, [consulte Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 

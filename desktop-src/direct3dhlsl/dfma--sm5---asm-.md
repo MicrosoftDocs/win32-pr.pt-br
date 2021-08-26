@@ -4,12 +4,12 @@ description: Executa uma adição de multiplicação de fusível.
 ms.assetid: 5BE96CDB-1756-4EBE-B4CC-69EFF098A4F1
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b2e6cafc71dbc7d57655524b1b87c9c5b9ba20f3
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 84952ed594ba8541223df072fa59550aded581e5517dee3d6f4168b7661a87aa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104293565"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120068386"
 ---
 # <a name="dfma-sm5---asm"></a>dfma (SM5-ASM)
 
@@ -49,7 +49,7 @@ Essa instrução se aplica aos seguintes estágios de sombreador:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 

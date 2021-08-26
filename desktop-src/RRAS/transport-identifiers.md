@@ -4,12 +4,12 @@ description: Os identificadores de transporte (ou da família de protocolos) a s
 ms.assetid: 7720c34f-0558-49de-8f82-13a67e2c8c69
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fb09684ebb56834cbe642c422ad611a8fb331a36
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: b512feb0dfdf19a4c7cc198fbd13fa8d3bfbbd7d39f4247944a957c1bf6a19f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104454198"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120025486"
 ---
 # <a name="transport-identifiers"></a>Identificadores de transporte
 
@@ -21,13 +21,13 @@ Os identificadores de transporte (ou da família de protocolos) a seguir também
 |------------|-----------------------------------------------------------|
 | ATALK de PID \_ | Numa                                                 |
 | DTI \_ IP    | Protocolo IP versão 4                               |
-| DTI \_ IPX   | Troca de pacotes da Internet                                  |
+| DTI \_ IPX   | Exchange de pacotes da Internet                                  |
 | DTI \_ NBF   | Protocolo de quadros NetBIOS                                   |
-| PID \_ IPv6  | Windows Server 2008 ou posterior: protocolo IP versão 6 |
+| PID \_ IPv6  | Windows Servidor 2008 ou posterior: protocolo IP versão 6 |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -45,6 +45,6 @@ Os identificadores de transporte (ou da família de protocolos) a seguir também
 [Constantes de transporte e protocolo](transport-and-protocol-constants.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

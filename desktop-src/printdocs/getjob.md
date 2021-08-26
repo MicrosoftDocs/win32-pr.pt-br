@@ -1,7 +1,7 @@
 ---
 description: A função GetJob recupera informações sobre um trabalho de impressão especificado.
 ms.assetid: 57e59f84-d2a0-4722-b0fc-6673f7bb5c57
-title: Função GetJob (winspool. h)
+title: Função GetJob (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,16 +17,16 @@ api_location:
 - Winspool.drv
 - Ext-MS-Win-Printer-WinSpool-l1-1-2.dll
 - Ext-MS-Win-Printer-WinSpool-L1-1-3.dll
-ms.openlocfilehash: 73ae36ebab4530bf21eb86918fdbbbe941ed0741
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 26665d6141ea36adbe8aeeca0555bc6a5e918cb5213a4fb7a6dbd315eac92a53
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104169461"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119949076"
 ---
 # <a name="getjob-function"></a>Função GetJob
 
-A função **GetJob** recupera informações sobre um trabalho de impressão especificado.
+A **função GetJob** recupera informações sobre um trabalho de impressão especificado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -48,60 +48,60 @@ BOOL GetJob(
 
 <dl> <dt>
 
-*hPrinter* \[ no\]
+*hPrinter* \[ Em\]
 </dt> <dd>
 
-Um identificador para a impressora para a qual os dados de trabalho de impressão são recuperados. Use a função [**OpenPrinter**](openprinter.md) ou [**addprintr**](addprinter.md) para recuperar um identificador de impressora.
+Um alça para a impressora para a qual os dados de trabalho de impressão são recuperados. Use a [**função OpenPrinter**](openprinter.md) [**ou AddPrinter**](addprinter.md) para recuperar um alça de impressora.
 
 </dd> <dt>
 
-*JobID* \[ no\]
+*JobId* \[ Em\]
 </dt> <dd>
 
-Identifica o trabalho de impressão para o qual recuperar dados. Use a função [**AddJob**](addjob.md) ou a função [**StartDoc**](/windows/desktop/api/Wingdi/nf-wingdi-startdoca) para obter um identificador de trabalho de impressão.
+Identifica o trabalho de impressão para o qual recuperar dados. Use a [**função AddJob**](addjob.md) ou [**a função StartDoc**](/windows/desktop/api/Wingdi/nf-wingdi-startdoca) para obter um identificador de trabalho de impressão.
 
 </dd> <dt>
 
-*Nível* \[ do no\]
+*Nível* \[ Em\]
 </dt> <dd>
 
-O tipo de informação retornado no buffer *pJob* . Se o *nível* for 1, *pJob* receberá uma estrutura de [**informações de trabalho \_ \_ 1**](job-info-1.md) . Se *Level* for 2, *pJob* receberá uma estrutura de [**informações de trabalho \_ \_ 2**](job-info-2.md) .
+O tipo de informações retornadas no buffer *pJob.* Se *Level* for 1, *pJob* receberá uma estrutura [**JOB INFO \_ \_ 1.**](job-info-1.md) Se *Level* for 2, *pJob* receberá uma estrutura [**JOB INFO \_ \_ 2.**](job-info-2.md)
 
 </dd> <dt>
 
-*pJob* \[ fora\]
+*pJob* \[ out\]
 </dt> <dd>
 
-Um ponteiro para um buffer que recebe as informações de [**trabalho \_ \_ 1**](job-info-1.md) ou uma estrutura de [**informações de trabalho \_ \_ 2**](job-info-2.md) que contém informação sobre o trabalho. O buffer deve ser grande o suficiente para armazenar as cadeias de caracteres apontadas pelos membros da estrutura.
+Um ponteiro para um buffer que recebe uma estrutura [**JOB \_ INFO \_ 1**](job-info-1.md) ou [**JOB INFO \_ \_ 2**](job-info-2.md) que contém informações sobre o trabalho. O buffer deve ser grande o suficiente para armazenar as cadeias de caracteres apontadas pelos membros da estrutura.
 
-Para determinar o tamanho do buffer necessário, chame **GetJob** com *cbBuf* definido como zero. **GetJob** falha, [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) retorna \_ um buffer insuficiente de erro \_ e o parâmetro *pcbNeeded* retorna o tamanho, em bytes, do buffer necessário para manter a matriz de estruturas e seus dados.
+Para determinar o tamanho do buffer necessário, chame **GetJob** com *cbBuf* definido como zero. **GetJob** falha, [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) retorna ERROR INSUFFICIENT BUFFER e o parâmetro \_ \_ *pcbNeeded* retorna o tamanho, em bytes, do buffer necessário para manter a matriz de estruturas e seus dados.
 
 </dd> <dt>
 
-*cbBuf* \[ no\]
+*cbBuf* \[ Em\]
 </dt> <dd>
 
 O tamanho, em bytes, da matriz.
 
 </dd> <dt>
 
-*pcbNeeded* \[ fora\]
+*pcbNeeded* \[ out\]
 </dt> <dd>
 
-Um ponteiro para um valor que especifica o número de bytes copiados se a função for bem sucedido ou o número de bytes necessários se *cbBuf* for muito pequeno.
+Um ponteiro para um valor que especifica o número de bytes copiados se a função for bem-sucedida ou o número de bytes necessários se *cbBuf* for muito pequeno.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se a função for realizada com sucesso, o valor de retorno será um valor diferente de zero.
+Se a função for bem-sucedida, o valor de retorno será um valor não zero.
 
 Se a função falhar, o valor retornado será zero.
 
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> Essa é uma função de bloqueio ou síncrona e pode não retornar imediatamente. A rapidez com que essa função retorna depende de fatores de tempo de execução, como status de rede, configuração de servidor de impressão e fatores de implementação de driver de impressora que são difíceis de prever ao escrever um aplicativo. Chamar essa função de um thread que gerencia a interação com a interface do usuário pode fazer com que o aplicativo pareça não responder.
+> Essa é uma função de bloqueio ou síncrona e pode não retornar imediatamente. A rapidez com que essa função retorna depende de fatores de tempo de execução, como status de rede, configuração do servidor de impressão e fatores de implementação de driver de impressora que são difíceis de prever ao escrever um aplicativo. Chamar essa função de um thread que gerencia a interação com a interface do usuário pode fazer com que o aplicativo pareça não responder.
 
  
 
@@ -113,9 +113,9 @@ Se a função falhar, o valor retornado será zero.
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                                |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                      |
-| Cabeçalho<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Winspool. lib</dt> </dl>                   |
-| DLL<br/>                      | <dl> <dt>Winspool. drv</dt> </dl>                   |
+| Cabeçalho<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Winspool.lib</dt> </dl>                   |
+| DLL<br/>                      | <dl> <dt>Winspool.drv</dt> </dl>                   |
 | Nomes Unicode e ANSI<br/>   | **GetJobW** (Unicode) e **GetJobA** (ANSI)<br/>                                                   |
 
 
@@ -130,13 +130,13 @@ Se a função falhar, o valor retornado será zero.
 [Funções da API do Spooler de impressão](printing-and-print-spooler-functions.md)
 </dt> <dt>
 
-[**AddJob**](addjob.md)
+[**Addjob**](addjob.md)
 </dt> <dt>
 
-[**Informações do trabalho \_ \_ 1**](job-info-1.md)
+[**INFORMAÇÕES \_ DO TRABALHO \_ 1**](job-info-1.md)
 </dt> <dt>
 
-[**Informações do trabalho \_ \_ 2**](job-info-2.md)
+[**INFORMAÇÕES \_ DO TRABALHO \_ 2**](job-info-2.md)
 </dt> <dt>
 
 [**ScheduleJob**](schedulejob.md)

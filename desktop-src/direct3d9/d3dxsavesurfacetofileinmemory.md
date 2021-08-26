@@ -1,7 +1,7 @@
 ---
 description: Salva uma superfície em um arquivo de imagem.
 ms.assetid: 6320e5ed-e43d-43bf-a746-5478df42941d
-title: Função D3DXSaveSurfaceToFileInMemory (D3dx9tex. h)
+title: Função D3DXSaveSurfaceToFileInMemory (D3dx9tex.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -44,7 +44,7 @@ HRESULT D3DXSaveSurfaceToFileInMemory(
 
 <dl> <dt>
 
-*ppDestBuf* \[ fora\]
+*ppDestBuf* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
@@ -53,16 +53,16 @@ Endereço de um ponteiro para um [**ID3DXBuffer**](id3dxbuffer.md) que armazenar
 
 </dd> <dt>
 
-*DestFormat* \[ no\]
+*DestFormat* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **D3DXIMAGE \_ FileFormat**](./d3dximage-fileformat.md)**
+Tipo: **[ **D3DXIMAGE \_ FILEFORMAT**](./d3dximage-fileformat.md)**
 
-[**D3DXIMAGE \_ Fileformate**](./d3dximage-fileformat.md) especificando o formato de arquivo a ser usado ao salvar. Essa função dá suporte ao salvamento em todos os formatos de **\_ FileFormat do D3DXIMAGE** , exceto no pixmap portátil (. ppm) e no adaptador gráfico Targa/Truevision (. tga).
+[**D3DXIMAGE \_ FILEFORMAT**](./d3dximage-fileformat.md) especificando o formato de arquivo a ser usado ao salvar. Essa função dá suporte à salvação em todos os formatos **D3DXIMAGE \_ FILEFORMAT,** exceto o Mapa Portátil (.ppm) e o Adaptador gráfico Targa/Truevision (.tga).
 
 </dd> <dt>
 
-*pSrcSurface* \[ no\]
+*pSrcSurface* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DSURFACE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dsurface9)**
@@ -71,21 +71,21 @@ Ponteiro para a interface [**IDirect3DSurface9**](/windows/win32/api/d3d9helper/
 
 </dd> <dt>
 
-*pSrcPalette* \[ no\]
+*pSrcPalette* \[ Em\]
 </dt> <dd>
 
-Tipo: **const [**PaletteEntry**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) \***
+Tipo: **const [**PALETTEENTRY**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) \***
 
-Ponteiro para uma estrutura [**PaletteEntry**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) que contém uma paleta de 256 cores. Este parâmetro pode ser **NULL**.
+Ponteiro para uma [**estrutura PALETTEENTRY**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) que contém uma paleta de 256 cores. Este parâmetro pode ser **NULL**.
 
 </dd> <dt>
 
-*pSrcRect* \[ no\]
+*pSrcRect* \[ Em\]
 </dt> <dd>
 
-Tipo: **const [**Rect**](/previous-versions//dd162897(v=vs.85)) \***
+Tipo: **const [**RECT**](/previous-versions//dd162897(v=vs.85)) \***
 
-Ponteiro para uma estrutura [**Rect**](/previous-versions//dd162897(v=vs.85)) . Especifica o retângulo de origem. Defina esse parâmetro como **NULL** para especificar a imagem inteira.
+Ponteiro para uma [**estrutura RECT.**](/previous-versions//dd162897(v=vs.85)) Especifica o retângulo de origem. De definir esse parâmetro como **NULL** para especificar a imagem inteira.
 
 </dd> </dl>
 
@@ -93,11 +93,11 @@ Ponteiro para uma estrutura [**Rect**](/previous-versions//dd162897(v=vs.85)) . 
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se a função for bem sucedido, o valor de retorno será D3D \_ OK. Se a função falhar, o valor de retorno poderá ser o seguinte: D3DERR \_ INVALIDCALL.
+Se a função for bem-sucedida, o valor de retorno será D3D \_ OK. Se a função falhar, o valor de retorno poderá ser o seguinte: D3DERR \_ INVALIDCALL.
 
 ## <a name="remarks"></a>Comentários
 
-Essa função manipula a conversão de e para formatos de textura compactados.
+Essa função lida com a conversão de e para formatos de textura compactados.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -105,8 +105,8 @@ Essa função manipula a conversão de e para formatos de textura compactados.
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9tex. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>  |
+| parâmetro<br/>  | <dl> <dt>D3dx9tex.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>  |
 
 
 

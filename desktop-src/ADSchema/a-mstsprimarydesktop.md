@@ -1,11 +1,11 @@
 ---
-title: atributo MS-TS-Primary-desktop
-description: Esse atributo representa o link de encaminhamento para a área de trabalho principal de um usuário.
+title: Atributo ms-TS-Primary-Desktop
+description: Esse atributo representa o link de encaminhamento para a área de trabalho primária de um usuário.
 ms.assetid: f1dc80b5-371a-4e59-9bcf-4d04f01ea80c
 ms.tgt_platform: multiple
 keywords:
-- MS-TS-Primary-desktop atributo AD Schema
-- Esquema de AD do atributo msTSPrimaryDesktop
+- Esquema do AD do atributo ms-TS-Primary-Desktop
+- Esquema do AD do atributo msTSPrimaryDesktop
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fd73430e120b2d44d7fe037a2736469fe0771f94
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 51b050e44f4dfa32973ddb8773eda0672919df2ddbfef0ca77a5303e140a123d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919456"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120066067"
 ---
-# <a name="ms-ts-primary-desktop-attribute"></a>atributo MS-TS-Primary-desktop
+# <a name="ms-ts-primary-desktop-attribute"></a>Atributo ms-TS-Primary-Desktop
 
-Esse atributo representa o link de encaminhamento para a área de trabalho principal de um usuário.
+Esse atributo representa o link de encaminhamento para a área de trabalho primária de um usuário.
 
 
 
 | Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | MS-TS-Primary-desktop                   |
-| LDAP-Display-Name | msTSPrimaryDesktop                      |
+| CN                | ms-TS-Primary-Desktop                   |
+| Ldap-Display-Name | msTSPrimaryDesktop                      |
 | Tamanho              | \-                                      |
 | Privilégio de atualização  | \-                                      |
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.2073                 |
-| System-ID-GUID    | 29259694-09e4-4237-9f72-9306ebe63ab2    |
-| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | 29259694-09e4-4237-9f72-9306ebe63ab2    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -54,10 +54,10 @@ Esse atributo representa o link de encaminhamento para a área de trabalho princ
 | ID do link                | 2170                              |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
@@ -75,10 +75,10 @@ Esse atributo representa o link de encaminhamento para a área de trabalho princ
 | ID do link                | 2170                              |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
