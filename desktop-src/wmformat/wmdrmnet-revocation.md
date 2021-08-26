@@ -1,9 +1,9 @@
 ---
 title: WMDRMNET_Revocation
-description: A \_ propriedade de revogação WMDRMNET recupera a lista de revogação do Windows Media DRM 10 para dispositivos de rede.
+description: A propriedade WmDRMNET Revocation recupera a lista de revogação para Windows DRM de Mídia \_ 10 para Dispositivos de Rede.
 ms.assetid: 54029c9e-1951-43cf-bc42-2e8d27175a6d
 keywords:
-- WMDRMNET_Revocation o formato Windows Media
+- WMDRMNET_Revocation formato de mídia do Windows
 topic_type:
 - apiref
 api_name:
@@ -12,39 +12,39 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 740f3054b52fefa5e8636e68210e7f015f6fd65a
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 197f885ca1c82034c7549cb96361c1af0398070deb5e8dc7ea0a374641306f4b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104006729"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120109946"
 ---
-# <a name="wmdrmnet_revocation"></a>\_Revogação de WMDRMNET
+# <a name="wmdrmnet_revocation"></a>Revogação de WMDRMNET \_
 
-A propriedade de **\_ revogação WMDRMNET** recupera a lista de revogação do Windows Media DRM 10 para dispositivos de rede.
+A **propriedade WmDRMNET \_ Revocation** recupera a lista de revogação para Windows DRM de Mídia 10 para Dispositivos de Rede.
 
 ## <a name="global-constant"></a>Constante global
 
-\_wszWMDRMNET \_ revogação de g
+g \_ wszWMDRMNET \_ Revocation
 
 ## <a name="data-type"></a>Tipo de Dados
 
-**Cadeia de caracteres do \_ tipo WMT \_**
+**CADEIA DE CARACTERES DE \_ TIPO \_ WMT**
 
 ## <a name="remarks"></a>Comentários
 
-A lista de revogação contém os certificados de dispositivos que foram revogados.
+A lista de revogação contém os certificados dos dispositivos que foram revogados.
 
 ## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[**Propriedades de DRM**](drm-properties.md)
+[**Propriedades do DRM**](drm-properties.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

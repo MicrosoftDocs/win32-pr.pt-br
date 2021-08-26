@@ -4,12 +4,12 @@ ms.assetid: 3c026426-c2b7-4909-9524-9cc0bd45347e
 title: Protocolos compatíveis
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b086b48b73c0412968c00091e6353d134006f45fa9c8b8f229ea3f9e695bf99
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 20cc5e47bddec9e00fbb62e853db5a492172da84
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118238123"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122468023"
 ---
 # <a name="supported-protocols"></a>Protocolos compatíveis
 
@@ -39,56 +39,15 @@ A tabela a seguir lista a ordem de sobreposição.
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Esquemas permitidos</th>
-<th>Ordem de substituição de protocolo</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>mms://ou rtsp://</td>
-<td>Cache rápido habilitado:<br/>
-<ol>
-<li>RTSP com TCP (RTSPt)<br/></li>
-<li>RTSP com UDP (RTSPu)<br/></li>
-<li>Streaming HTTP<br/></li>
-<li>Download de HTTP (HTTP)<br/></li>
-</ol>
-Cache rápido desabilitado:<br/>
-<ol>
-<li>RTSPu<br/></li>
-<li>RTSPt<br/></li>
-<li>Streaming HTTP<br/></li>
-<li>Download de HTTP<br/></li>
-</ol></td>
-</tr>
-<tr class="even">
-<td>rtspu://</td>
-<td>RTSPu</td>
-</tr>
-<tr class="odd">
-<td>rtspt://</td>
-<td>RTSPt</td>
-</tr>
-<tr class="even">
-<td>https://</td>
-<td><ol>
-<li>HTTP<br/></li>
-<li>HTTPD<br/></li>
-</ol></td>
-</tr>
-<tr class="odd">
-<td>httpd://</td>
-<td>HTTPD</td>
-</tr>
-</tbody>
-</table>
+
+| Esquemas permitidos | Ordem de substituição de protocolo | 
+|-----------------|-------------------------|
+| mms://ou rtsp:// | Cache rápido habilitado:<br /><ol><li>RTSP com TCP (RTSPt)<br /></li><li>RTSP com UDP (RTSPu)<br /></li><li>Streaming HTTP<br /></li><li>Download de HTTP (HTTP)<br /></li></ol>Cache rápido desabilitado:<br /><ol><li>RTSPu<br /></li><li>RTSPt<br /></li><li>Streaming HTTP<br /></li><li>Download de HTTP<br /></li></ol> | 
+| rtspu:// | RTSPu | 
+| rtspt:// | RTSPt | 
+| https:// | <ol><li>HTTP<br /></li><li>HTTPD<br /></li></ol> | 
+| httpd:// | HTTPD | 
+
 
 
 

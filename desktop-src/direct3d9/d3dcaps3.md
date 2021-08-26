@@ -4,12 +4,12 @@ ms.assetid: d9cd7388-3413-472d-aacb-0b8c9c60031a
 title: D3DCAPS3
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b1389427826d65875bf89c42dd8e12776549da7f80f741e8de421b25c077026d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 706b2f5644b45179f9367aa26be11160e06df517
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117911529"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122622142"
 ---
 # <a name="d3dcaps3"></a>D3DCAPS3
 
@@ -19,9 +19,9 @@ Sinalizadores de funcionalidade do driver.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -32,7 +32,7 @@ Sinalizadores de funcionalidade do driver.
 <tr class="even">
 <td>D3DCAPS3_ALPHA_FULLSCREEN_FLIP_OR_DISCARD</td>
 <td>0x00000020L</td>
-<td>Indica que o dispositivo pode respeitar o estado D3DRS_ALPHABLENDENABLE renderização no modo de tela inteira ao usar o efeito de troca FLIP ou DISCARD. Isso só se aplica quando os D3DRS_SRCBLEND ou D3DRS_DESTBLEND estão definidos como um dos seguintes:
+<td>Indica que o dispositivo pode respeitar o estado D3DRS_ALPHABLENDENABLE renderização no modo de tela inteira ao usar o efeito de troca FLIP ou DISCARD. Isso só se aplica quando os estados D3DRS_SRCBLEND ou D3DRS_DESTBLEND estão definidos como um dos seguintes:
 <ul>
 <li>D3DBLEND_DESTALPHA</li>
 <li>D3DBLEND_INVDESTALPHA</li>
@@ -53,7 +53,7 @@ Sinalizadores de funcionalidade do driver.
 <tr class="odd">
 <td>D3DCAPS3_DXVAHD</td>
 <td>0x00000400L</td>
-<td>O driver de exibição dá suporte à DDI DXVA-HD. Para obter mais informações sobre dXVA-HD DDI, consulte <a href="https://msdn.microsoft.com/library/dd835176.aspx">Processing High-Definition Video</a>.<br/> 
+<td>O driver de exibição dá suporte à DDI DXVA-HD. Para obter mais informações sobre DDI DXVA-HD, consulte <a href="https://msdn.microsoft.com/library/dd835176.aspx">Processing High-Definition Video</a>.<br/> 
 <table>
 <tbody>
 <tr class="odd">

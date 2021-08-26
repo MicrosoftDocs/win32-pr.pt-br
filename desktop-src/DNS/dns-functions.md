@@ -7,12 +7,12 @@ keywords:
 ms.topic: article
 ms.date: 04/19/2019
 ms.custom: 19H1
-ms.openlocfilehash: 665afcd62d359bb89409e15744c7fb50c52cc6ce
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9e1f38e937c68ac97eab20e1f3bd07689d51190001a7641ed7a194511efc847e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105756416"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120109206"
 ---
 # <a name="dns-functions"></a>Funções de DNS
 

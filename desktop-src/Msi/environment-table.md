@@ -4,12 +4,12 @@ ms.assetid: f7106ed6-706f-4e57-989f-030066bcecd3
 title: Tabela de ambiente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d7a4db2e33c01685bdc40475f659e1b03b69b6c6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: de1fe52e8222bfde3e451b6ccc543511822e0d511a2ce1ce2b6bee8bc4fd117f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105789782"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120129596"
 ---
 # <a name="environment-table"></a>Tabela de ambiente
 
@@ -21,9 +21,9 @@ A tabela de ambiente tem as seguintes colunas.
 
 | Coluna      | Tipo                         | Chave | Nullable |
 |-------------|------------------------------|-----|----------|
-| Ambiente | [Identificador](identifier.md) | S   | N        |
+| Ambiente | [Identificador](identifier.md) | Y   | N        |
 | Nome        | [Text](text.md)             | N   | N        |
-| Valor       | [Binário](formatted.md)   | N   | S        |
+| Valor       | [Binário](formatted.md)   | N   | Y        |
 | Componente\_ | [Identificador](identifier.md) | N   | N        |
 
 
@@ -54,7 +54,7 @@ Essa coluna é o nome localizável da variável de ambiente. Os valores de chave
 | \+                             | Crie a variável de ambiente, caso ela não exista, e defina-a durante a instalação. Isso não tem efeito sobre o valor da variável de ambiente, se já existir.                                                                                                                                                                                                                                                                                                                         |
 | \-                             | Remova a variável de ambiente quando o componente for removido. Esse símbolo pode ser combinado com qualquer prefixo.                                                                                                                                                                                                                                                                                                                                                                                      |
 | !                              | Remova a variável de ambiente durante uma instalação. O instalador removerá apenas uma variável de ambiente durante uma instalação se o nome e o valor da variável corresponderem às entradas nos campos nome e valor da tabela de ambiente. Se você quiser remover uma variável de ambiente, independentemente de seu valor, use a sintaxe '! ' e deixe o campo de valor vazio.                                                                                                                    |
-| \*                             | Esse prefixo é usado com o Windows 2000 para indicar que o nome se refere a uma variável de ambiente do sistema. Se nenhum asterisco estiver presente, o instalador gravará a variável no ambiente do usuário. Esse símbolo pode ser combinado com qualquer prefixo. Um pacote que é usado para instalação no [contexto de instalação](installation-context.md) por máquina deve gravar variáveis de ambiente no ambiente da máquina, incluindo \* na coluna nome. Para obter mais informações, consulte Comentários. |
+| \*                             | esse prefixo é usado com Windows 2000 para indicar que o nome se refere a uma variável de ambiente do sistema. Se nenhum asterisco estiver presente, o instalador gravará a variável no ambiente do usuário. Esse símbolo pode ser combinado com qualquer prefixo. Um pacote que é usado para instalação no [contexto de instalação](installation-context.md) por máquina deve gravar variáveis de ambiente no ambiente da máquina, incluindo \* na coluna nome. Para obter mais informações, consulte Comentários. |
 | =-                             | A variável de ambiente é definida em instalar e removida na desinstalação. Esse é o comportamento usual.                                                                                                                                                                                                                                                                                                                                                                                                 |
 | !-                             | Remove uma variável de ambiente durante uma instalação ou desinstalação.                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | =+ !+<br/> !=<br/> | Estes não são prefixos válidos                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
@@ -97,9 +97,9 @@ Uma chave externa para a primeira coluna da [tabela de componentes](component-ta
 
 Para o instalador definir variáveis de ambiente, a ação [WriteEnvironmentStrings](writeenvironmentstrings-action.md) e a [ação RemoveEnvironmentStrings](removeenvironmentstrings-action.md) precisam ser listadas na [tabela InstallExecuteSequence](installexecutesequence-table.md).
 
-Observe que as variáveis de ambiente não são alteradas para a instalação em andamento quando a ação [WriteEnvironmentStrings](writeenvironmentstrings-action.md) ou a [ação RemoveEnvironmentStrings](removeenvironmentstrings-action.md) são executadas. No Windows 2000, essas informações são armazenadas no registro e uma mensagem notifica o sistema sobre as alterações quando a instalação é concluída. Um novo processo ou outro processo que verifica essas mensagens usa as novas variáveis de ambiente.
+Observe que as variáveis de ambiente não são alteradas para a instalação em andamento quando a ação [WriteEnvironmentStrings](writeenvironmentstrings-action.md) ou a [ação RemoveEnvironmentStrings](removeenvironmentstrings-action.md) são executadas. no Windows 2000, essas informações são armazenadas no registro e uma mensagem notifica o sistema sobre as alterações quando a instalação é concluída. Um novo processo ou outro processo que verifica essas mensagens usa as novas variáveis de ambiente.
 
-Ao modificar a variável de ambiente Path com a tabela de ambiente, não tente inserir o novo caminho inteiro explicitamente no campo valor. Em vez disso, estenda o caminho existente prefixando ou anexando um valor e delimitador (;) para o \[ ~ \] . Se \[ ~ \] não estiver presente no campo valor, as informações de caminho existentes serão perdidas e a instalação do arquivo. msi poderá impedir que o computador seja inicializado. A variável path é geralmente definida usando a sintaxe: \[ ~ \] ; Valor.
+Ao modificar a variável de ambiente Path com a tabela de ambiente, não tente inserir o novo caminho inteiro explicitamente no campo valor. Em vez disso, estenda o caminho existente prefixando ou anexando um valor e delimitador (;) para o \[ ~ \] . Se \[ ~ \] não estiver presente no campo valor, as informações de caminho existentes serão perdidas e a instalação do arquivo de .msi poderá impedir que o computador seja inicializado. A variável path é geralmente definida usando a sintaxe: \[ ~ \] ; Valor.
 
 Ao executar instalações por máquina de um servidor de terminal, o instalador grava variáveis de ambiente por usuário para **HKU \\ . \\Ambiente padrão**. Como os serviços de terminal não replicam esta seção do registro, a instalação não define as variáveis de ambiente por usuário. Um pacote usado para instalações por máquina deve gravar variáveis de ambiente no ambiente do computador, incluindo \* na coluna nome. Se o pacote puder ser instalado por usuário ou por computador, crie dois componentes: (1) um componente por usuário com as entradas da tabela de ambiente criadas para as configurações do usuário e (2) um componente por máquina com a tabela de ambiente criada para as configurações do computador. Condição a instalação deste componente usando a propriedade [**Privileged**](privileged.md) .
 

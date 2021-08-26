@@ -48,12 +48,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3d2e545fea9c1942dc09df82eb93eafa1d3e4e89
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 209d3ffe9721f51b8c2d510eecb5408ac66cdbeb58309d1f033e2d23730328ae
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105756952"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120116226"
 ---
 # <a name="jet_cbtyp-enumeration"></a>Enumeração de JET_cbtyp
 
@@ -143,12 +143,12 @@ public enum JET_cbtyp
 <tr class="odd">
 <td></td>
 <td>FreeCursorLS</td>
-<td>Esse retorno de chamada ocorrerá quando o aplicativo precisar limpar o identificador de contexto para o armazenamento local associado a um cursor que está sendo liberado pelo mecanismo de banco de dados. Para obter mais informações, consulte JetSetLS. O delegado para esse motivo de retorno de chamada é configurado por meio de JetSetSystemParameter com JET_paramRuntimeCallback.</td>
+<td>esse retorno de chamada ocorrerá quando o aplicativo precisar limpar o identificador de contexto para o Armazenamento Local associado a um cursor que está sendo liberado pelo mecanismo de banco de dados. Para obter mais informações, consulte JetSetLS. O delegado para esse motivo de retorno de chamada é configurado por meio de JetSetSystemParameter com JET_paramRuntimeCallback.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>FreeTableLS</td>
-<td>Esse retorno de chamada ocorrerá como resultado da necessidade do aplicativo para limpar o identificador de contexto do armazenamento local associado a uma tabela que está sendo liberada pelo mecanismo de banco de dados. Para obter mais informações, consulte JetSetLS. O delegado para esse motivo de retorno de chamada é configurado por meio de JetSetSystemParameter com JET_paramRuntimeCallback.</td>
+<td>esse retorno de chamada ocorrerá como resultado da necessidade do aplicativo de limpar o identificador de contexto para o Armazenamento Local associado a uma tabela que está sendo liberada pelo mecanismo de banco de dados. Para obter mais informações, consulte JetSetLS. O delegado para esse motivo de retorno de chamada é configurado por meio de JetSetSystemParameter com JET_paramRuntimeCallback.</td>
 </tr>
 </tbody>
 </table>

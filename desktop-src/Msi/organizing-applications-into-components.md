@@ -1,19 +1,19 @@
 ---
-description: Windows Installer instala e remove um aplicativo ou produto em partes referenciadas como componentes.
+description: Windows O instalador instala e remove um aplicativo ou produto em partes referenciadas como componentes.
 ms.assetid: 949d8b8c-8f1a-4fde-9a7d-824d33436e62
 title: Organizando aplicativos em componentes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d3fc2db794bef2a29025bf7ebc54c65691145ee
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1398bbbacbdb15df148576ebf0904f7aec98354a4d417681a81f2195535f08d7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828028"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120129186"
 ---
 # <a name="organizing-applications-into-components"></a>Organizando aplicativos em componentes
 
-Windows Installer instala e remove um aplicativo ou produto em partes referenciadas como [componentes](windows-installer-components.md). Os componentes são coleções de recursos que são sempre instalados ou removidos como uma unidade do sistema de um usuário. Um recurso pode ser um arquivo, chave do registro, atalho ou qualquer outra coisa que possa ser instalada. Cada componente recebe um [GUID](guid.md)de código de componente exclusivo.
+Windows O instalador instala e remove um aplicativo ou produto em partes referenciadas como [componentes](windows-installer-components.md). Os componentes são coleções de recursos que são sempre instalados ou removidos como uma unidade do sistema de um usuário. Um recurso pode ser um arquivo, chave do registro, atalho ou qualquer outra coisa que possa ser instalada. Cada componente recebe um [GUID](guid.md)de código de componente exclusivo.
 
 Os autores de pacotes de instalação devem criar apenas componentes e versões de componentes, que podem ser instalados e removidos sem danificar outros componentes. Além disso, a remoção de um componente não deve deixar por trás de nenhum recurso órfão no computador do usuário, como arquivos não utilizados, chaves do registro ou atalhos. Para garantir isso, os autores devem aderir às seguintes regras gerais ao organizar recursos em componentes:
 

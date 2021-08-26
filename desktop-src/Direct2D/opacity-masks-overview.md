@@ -4,12 +4,12 @@ description: 'Este tópico descreve como usar bitmaps e pincéis para definir m�
 ms.assetid: 869821b0-6ebe-46c2-aab6-93177d8a92c5
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 49a4757a30247da465e0ae5226bd923219e3e665
-ms.sourcegitcommit: b7a1da2711221fa99072079bf52399cbdfc6bd9d
+ms.openlocfilehash: 2050cccd37012028e2a86fbf77cd071671ce7201
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104569212"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122626552"
 ---
 # <a name="opacity-masks-overview"></a>Visão geral de máscaras da opacidade
 
@@ -26,7 +26,7 @@ Este tópico descreve como usar bitmaps e pincéis para definir máscaras de opa
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Esta visão geral pressupõe que você esteja familiarizado com as operações básicas de desenho Direct2D, conforme descrito no passo a passo [criando um aplicativo Direct2D simples](direct2d-quickstart.md) . Você também deve estar familiarizado com os diferentes tipos de pincéis, conforme descrito na [visão geral de pincéis](direct2d-brushes-overview.md).
+esta visão geral pressupõe que você esteja familiarizado com as operações básicas de desenho Direct2D, conforme descrito no passo a passo [criando um aplicativo Direct2D simples](direct2d-quickstart.md) . Você também deve estar familiarizado com os diferentes tipos de pincéis, conforme descrito na [visão geral de pincéis](direct2d-brushes-overview.md).
 
 ## <a name="what-is-an-opacity-mask"></a>O que é uma máscara de opacidade?
 
@@ -101,7 +101,7 @@ O exemplo a seguir define o Brush, *m \_ pFernBitmapBrush*, ao qual a máscara d
 Agora que a máscara de opacidade e o pincel estão definidos, você pode usar o método [**FillOpacityMask**](id2d1rendertarget-fillopacitymask.md) no método de renderização do aplicativo. Ao chamar o método **FillOpacityMask** , você deve especificar o tipo de máscara de opacidade que está usando: **d2d1 \_ de \_ \_ conteúdo máscara \_ de opacidade**, **d2d1 \_ opacidade \_ mascarar \_ \_ texto conteúdo \_ natural** e **d2d1 \_ opacidade \_ máscara texto de \_ conteúdo \_ \_ \_ compatível com GDI**. Para os significados desses três tipos, consulte [**conteúdo da \_ \_ máscara de \_ opacidade do d2d1**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_opacity_mask_content).
 
 > [!Note]  
-> A partir do Windows 8, [**o \_ \_ \_ conteúdo da máscara de opacidade d2d1**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_opacity_mask_content) não é necessário. Consulte o método [**ID2D1DeviceContext:: FillOpacityMask**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-fillopacitymask(id2d1bitmap_id2d1brush_constd2d1_rect_f_constd2d1_rect_f)) , que não tem um parâmetro de **conteúdo de \_ \_ máscara \_ de opacidade d2d1** .
+> a partir do Windows 8, [**o \_ \_ \_ conteúdo da máscara de opacidade D2D1**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_opacity_mask_content) não é necessário. Consulte o método [**ID2D1DeviceContext:: FillOpacityMask**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-fillopacitymask(id2d1bitmap_id2d1brush_constd2d1_rect_f_constd2d1_rect_f)) , que não tem um parâmetro de **conteúdo de \_ \_ máscara \_ de opacidade d2d1** .
 
  
 
@@ -133,7 +133,7 @@ O código foi omitido neste exemplo.
 
 ## <a name="use-a-brush-as-an-opacity-mask-with-the-fillgeometry-method"></a>Usar um pincel como uma máscara de opacidade com o método FillGeometry
 
-A seção anterior descreveu como usar um [**ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap) como uma máscara de opacidade. Direct2D também fornece o método [**ID2D1RenderTarget:: FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry) , que permite especificar, opcionalmente, o Brush como uma máscara de opacidade quando você preenche um [**ID2D1Geometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometry). Isso permite que você crie máscaras de opacidade a partir de gradientes (usando [**ID2D1LinearGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1lineargradientbrush) ou [**ID2D1RadialGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1radialgradientbrush)) e bitmaps (usando **ID2D1Bitmap**).
+A seção anterior descreveu como usar um [**ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap) como uma máscara de opacidade. Direct2D também fornece o método [**ID2D1RenderTarget:: FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry) , que permite especificar, opcionalmente, o brush como uma máscara de opacidade quando você preenche um [**ID2D1Geometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometry). Isso permite que você crie máscaras de opacidade a partir de gradientes (usando [**ID2D1LinearGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1lineargradientbrush) ou [**ID2D1RadialGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1radialgradientbrush)) e bitmaps (usando **ID2D1Bitmap**).
 
 O método [**FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry) usa três parâmetros:
 
@@ -179,7 +179,7 @@ As etapas a seguir descrevem como recriar esse efeito.
     <span codelanguage="ManagedCPlusPlus"></span>
     <table>
     <colgroup>
-    <col style="width: 100%" />
+    <col  />
     </colgroup>
     <thead>
     <tr class="header">
@@ -203,7 +203,7 @@ As etapas a seguir descrevem como recriar esse efeito.
     <span codelanguage="ManagedCPlusPlus"></span>
     <table>
     <colgroup>
-    <col style="width: 100%" />
+    <col  />
     </colgroup>
     <thead>
     <tr class="header">
@@ -308,7 +308,7 @@ O primeiro exemplo cria um [**ID2D1BitmapBrush**](/windows/win32/api/d2d1/nn-d2d
 
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -333,7 +333,7 @@ O primeiro exemplo cria um [**ID2D1BitmapBrush**](/windows/win32/api/d2d1/nn-d2d
 
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

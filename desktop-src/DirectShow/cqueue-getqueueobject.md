@@ -1,7 +1,7 @@
 ---
 description: Recupera o próximo item da fila.
 ms.assetid: 406ae640-5903-427d-91f9-8b01beb1aaa7
-title: Método CQueue. GetQueueObject (Wxutil. h)
+title: Método CQueue.GetQueueObject (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c3ae68c0564c7f76f38e91b7d27c8c3deb5ef2b4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6c32039a82e3a0b5c086cbe18e895bdec1aaac09d4947b90d9ba18e8c6636d71
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105758531"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120108276"
 ---
-# <a name="cqueuegetqueueobject-method"></a>Método CQueue. GetQueueObject
+# <a name="cqueuegetqueueobject-method"></a>Método CQueue.GetQueueObject
 
 Recupera o próximo item da fila.
 
@@ -40,13 +40,13 @@ T GetQueueObject();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um objeto do tipo **T** (o tipo de modelo).
 
 ## <a name="remarks"></a>Comentários
 
-Esse método é bloqueado até que um item esteja disponível na fila.
+Esse método bloqueia até que um item seja disponibilizado na fila.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Esse método é bloqueado até que um item esteja disponível na fila.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Wxutil. h (incluir fluxos. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Wxutil.h (incluir Fluxos.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

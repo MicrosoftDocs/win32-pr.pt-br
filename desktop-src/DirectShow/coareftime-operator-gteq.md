@@ -1,7 +1,7 @@
 ---
-description: Esse operador testa se um tempo de referência é menor ou igual a outro.
+description: Esse operador testa se uma hora de referência é menor ou igual a outra.
 ms.assetid: ae7449b7-d319-4e76-892f-0f9ae63ddf94
-title: COARefTime. Operator>= método (Ctlutil. h)
+title: MÉTODO COARefTime.operator>= (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 69b345f42c854e939c21a028827889a03e0ce735
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f6d19686fc2c904534f66882172db6bec52b4873a36104ce78d2d826a771978d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105789963"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120108466"
 ---
-# <a name="coareftimeoperator-method"></a>COARefTime. Operator>= método
+# <a name="coareftimeoperator-method"></a>MÉTODO COARefTime.operator>=
 
-Esse operador testa se um tempo de referência é menor ou igual a outro.
+Esse operador testa se uma hora de referência é menor ou igual a outra.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,16 +42,16 @@ BOOL operator>=(
 
 <dl> <dt>
 
-*RT* \[ referência\]
+*rt* \[ Ref\]
 </dt> <dd>
 
 Referência ao objeto **COARefTime** a ser comparado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retornará **true** se esse objeto for menor ou igual a *RT*. Caso contrário, retornará **false**.
+Retornará **TRUE** se esse objeto for menor ou igual a *rt*. Caso contrário, **retornará FALSE.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,8 +59,8 @@ Retornará **true** se esse objeto for menor ou igual a *RT*. Caso contrário, r
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Ctlutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

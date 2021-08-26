@@ -1,29 +1,29 @@
 ---
-description: Esta especificação descreve a estrutura de arquivos executáveis (imagem) e arquivos de objeto na família de sistemas operacionais Windows. Esses arquivos são chamados de executável portátil (PE) e arquivos de formato de arquivo de objeto comum (COFF), respectivamente.
+description: esta especificação descreve a estrutura de arquivos executáveis (imagem) e arquivos de objeto no Windows família de sistemas operacionais. Esses arquivos são chamados de executável portátil (PE) e arquivos de formato de arquivo de objeto comum (COFF), respectivamente.
 ms.assetid: 3dbfbf7f-6662-45a4-99f1-e0e24c370dee
 title: Formato PE
 ms.topic: article
 ms.date: 03/31/2021
 ms.custom: contperf-fy21q1
-ms.openlocfilehash: 3cc6fd777bca831ca4424baaa81c5525a24556ec
-ms.sourcegitcommit: 3b9424e1dcd951b2a73e47de3c7f4d734de4263b
+ms.openlocfilehash: f20431f7f56c64d5d430c9992da72ea4331cbf21
+ms.sourcegitcommit: 0dec0044816af3f2b2e6403659e1cf11138c90cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106103863"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121812192"
 ---
 # <a name="pe-format"></a>Formato PE
 
-Esta especificação descreve a estrutura de arquivos executáveis (imagem) e arquivos de objeto na família de sistemas operacionais Windows. Esses arquivos são chamados de executável portátil (PE) e arquivos de formato de arquivo de objeto comum (COFF), respectivamente.
+esta especificação descreve a estrutura de arquivos executáveis (imagem) e arquivos de objeto no Windows família de sistemas operacionais. Esses arquivos são chamados de executável portátil (PE) e arquivos de formato de arquivo de objeto comum (COFF), respectivamente.
 
 > [!Note]  
-> Este documento é fornecido para auxiliar no desenvolvimento de ferramentas e aplicativos para Windows, mas não é garantido que seja uma especificação completa em todos os aspectos. A Microsoft se reserva o direito de alterar este documento sem aviso prévio.
+> este documento é fornecido para auxiliar no desenvolvimento de ferramentas e aplicativos para Windows, mas não é garantido que seja uma especificação completa em todos os aspectos. A Microsoft se reserva o direito de alterar este documento sem aviso prévio.
 
 Essa revisão do executável portátil da Microsoft e da especificação de formato de arquivo de objeto comum substitui todas as revisões anteriores dessa especificação.
 
 ## <a name="general-concepts"></a>Conceitos gerais
 
-Este documento especifica a estrutura de arquivos executáveis (imagem) e arquivos de objeto na família Microsoft Windows de sistemas operacionais. Esses arquivos são chamados de executável portátil (PE) e arquivos de formato de arquivo de objeto comum (COFF), respectivamente. O nome "executável portátil" refere-se ao fato de que o formato não é específico da arquitetura.
+este documento especifica a estrutura de arquivos executáveis (imagem) e arquivos de objeto na família de sistemas operacionais Microsoft Windows. Esses arquivos são chamados de executável portátil (PE) e arquivos de formato de arquivo de objeto comum (COFF), respectivamente. O nome "executável portátil" refere-se ao fato de que o formato não é específico da arquitetura.
 
 Determinados conceitos que aparecem durante essa especificação são descritos na tabela a seguir:
 
@@ -37,7 +37,7 @@ Determinados conceitos que aparecem durante essa especificação são descritos 
 | reservado, deve ser 0 <br/>   | Uma descrição de um campo que indica que o valor do campo deve ser zero para geradores e consumidores devem ignorar o campo. <br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | Endereço virtual relativo (RVA) <br/>                   | Em um arquivo de imagem, esse é o endereço de um item depois que ele é carregado na memória, com o endereço base do arquivo de imagem subtraído dele. O RVA de um item quase sempre difere de sua posição dentro do arquivo no disco (ponteiro de arquivo). <br/> Em um arquivo de objeto, um RVA é menos significativo porque os locais de memória não são atribuídos. Nesse caso, um RVA seria um endereço dentro de uma seção (descrita posteriormente nesta tabela), à qual uma realocação é aplicada posteriormente durante a vinculação. Para simplificar, um compilador deve apenas definir o primeiro RVA em cada seção como zero. <br/>                                                                                                                                         |
 | section <br/>               | A unidade básica de código ou dados em um arquivo. PE ou COFF. Por exemplo, todo o código em um arquivo de objeto pode ser combinado em uma única seção ou (dependendo do comportamento do compilador) cada função pode ocupar sua própria seção. Com mais seções, há mais sobrecarga de arquivo, mas o vinculador é capaz de vincular o código de forma mais seletiva. Uma seção é semelhante a um segmento na arquitetura Intel 8086. Todos os dados brutos em uma seção devem ser carregados de forma contígua. Além disso, um arquivo de imagem pode conter várias seções, como. TLS ou. realocação, que têm finalidades especiais. <br/>                                                                                                                                                                      |
-| Endereço virtual (VA) <br/>                    | O mesmo que RVA, exceto pelo fato de que o endereço base do arquivo de imagem não é subtraído. O endereço é chamado de VA porque o Windows cria um espaço de VA distinto para cada processo, independentemente da memória física. Para quase todas as finalidades, um VA deve ser considerado apenas um endereço. Um VA não é tão previsível como RVA porque o carregador pode não carregar a imagem em seu local preferido. <br/>                                                                                                                                                                                                                                                                                                                                        |
+| Endereço virtual (VA) <br/>                    | O mesmo que RVA, exceto pelo fato de que o endereço base do arquivo de imagem não é subtraído. o endereço é chamado de va porque Windows cria um espaço de va distinto para cada processo, independentemente da memória física. Para quase todas as finalidades, um VA deve ser considerado apenas um endereço. Um VA não é tão previsível como RVA porque o carregador pode não carregar a imagem em seu local preferido. <br/>                                                                                                                                                                                                                                                                                                                                        |
 
 ## <a name="overview"></a>Visão geral
 
@@ -100,84 +100,84 @@ O cabeçalho do arquivo PE consiste em um stub do Microsoft MS-DOS, a assinatura
 
 O stub do MS-DOS é um aplicativo válido que é executado no MS-DOS. Ele é colocado na frente da imagem EXE. O vinculador coloca um stub padrão aqui, que imprime a mensagem "este programa não pode ser executado no modo DOS" quando a imagem é executada no MS-DOS. O usuário pode especificar um stub diferente usando a opção de vinculador/STUB.
 
-No local 0x3C, o stub tem o deslocamento do arquivo para a assinatura do PE. Essas informações permitem que o Windows execute corretamente o arquivo de imagem, embora tenha um stub do MS-DOS. Esse deslocamento de arquivo é colocado no local 0x3C durante a vinculação.
+No local 0x3c, o stub tem o deslocamento de arquivo para a assinatura PE. Essas informações permitem Windows executar corretamente o arquivo de imagem, mesmo que ele tenha um stub do MS-DOS. Esse deslocamento de arquivo é colocado no local 0x3c durante a vinculação.
 
 ### <a name="signature-image-only"></a>Assinatura (somente imagem)
 
-Após o stub do MS-DOS, no deslocamento do arquivo especificado em offset 0x3C, é uma assinatura de 4 bytes que identifica o arquivo como um arquivo de imagem de formato PE. Essa assinatura é "PE \\ 0 \\ 0" (as letras "P" E "e" seguidas por dois bytes nulos).
+Após o stub do MS-DOS, no deslocamento de arquivo especificado no deslocamento 0x3c, há uma assinatura de 4 byte que identifica o arquivo como um arquivo de imagem de formato PE. Essa assinatura é "PE \\ 0 \\ 0" (as letras "P" e "E" seguidas por dois bytes nulos).
 
-### <a name="coff-file-header-object-and-image"></a>Cabeçalho de arquivo COFF (objeto e imagem)
+### <a name="coff-file-header-object-and-image"></a>Header de arquivo COFF (objeto e imagem)
 
-No início de um arquivo de objeto, ou imediatamente após a assinatura de um arquivo de imagem, é um cabeçalho de arquivo COFF padrão no formato a seguir. Observe que o carregador do Windows limita o número de seções a 96.
+No início de um arquivo de objeto ou imediatamente após a assinatura de um arquivo de imagem, é um header de arquivo COFF padrão no formato a seguir. Observe que o Windows carregador limita o número de seções a 96.
 
 | Deslocamento         | Tamanho          | Campo                            | Descrição                                                                                                                                                                                                                                                          |
 |----------------|---------------|----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0 <br/>  | 2 <br/> | Computador <br/>              | O número que identifica o tipo de computador de destino. Para obter mais informações, consulte [tipos de máquina](#machine-types). <br/>                                                                                                                                        |
+| 0 <br/>  | 2 <br/> | Computador <br/>              | O número que identifica o tipo de computador de destino. Para obter mais informações, consulte [Tipos de computador](#machine-types). <br/>                                                                                                                                        |
 | 2 <br/>  | 2 <br/> | NumberOfSections <br/>     | O número de seções. Isso indica o tamanho da tabela da seção, que segue imediatamente os cabeçalhos. <br/>                                                                                                                                             |
-| 4 <br/>  | 4 <br/> | TimeDateStamp <br/>        | Os poucos 32 bits do número de segundos desde 00:00 de janeiro de 1970 (um valor t de tempo de execução \_ do C), que indica quando o arquivo foi criado. <br/>                                                                                                             |
-| 8 <br/>  | 4 <br/> | PointerToSymbolTable <br/> | O deslocamento do arquivo da tabela de símbolos COFF ou zero se nenhuma tabela de símbolos COFF estiver presente. Esse valor deve ser zero para uma imagem porque as informações de depuração COFF foram preteridas. <br/>                                                                           |
-| 12 <br/> | 4 <br/> | NumberOfSymbols <br/>      | O número de entradas na tabela de símbolos. Esses dados podem ser usados para localizar a tabela de cadeia de caracteres, que segue imediatamente a tabela de símbolos. Esse valor deve ser zero para uma imagem porque as informações de depuração COFF foram preteridas. <br/>                        |
-| 16 <br/> | 2 <br/> | SizeOfOptionalHeader <br/> | O tamanho do cabeçalho opcional, que é necessário para arquivos executáveis, mas não para arquivos de objeto. Esse valor deve ser zero para um arquivo-objeto. Para obter uma descrição do formato de cabeçalho, consulte [cabeçalho opcional (somente imagem)](#optional-header-image-only). <br/> |
-| 18 <br/> | 2 <br/> | Características <br/>      | Os sinalizadores que indicam os atributos do arquivo. Para obter valores de sinalizador específicos, consulte [características](#characteristics). <br/>                                                                                                                               |
+| 4 <br/>  | 4 <br/> | Timedatestamp <br/>        | Os 32 bits baixos do número de segundos desde 00:00 de 1º de janeiro de 1970 (um valor t de tempo de run time C), que indica quando o arquivo \_ foi criado. <br/>                                                                                                             |
+| 8 <br/>  | 4 <br/> | PointerToSymbolTable <br/> | O deslocamento de arquivo da tabela de símbolos COFF ou zero se nenhuma tabela de símbolos COFF estiver presente. Esse valor deve ser zero para uma imagem porque as informações de depuração de COFF foram preterida. <br/>                                                                           |
+| 12 <br/> | 4 <br/> | NumberOfSymbols <br/>      | O número de entradas na tabela de símbolos. Esses dados podem ser usados para localizar a tabela de cadeia de caracteres, que segue imediatamente a tabela de símbolos. Esse valor deve ser zero para uma imagem porque as informações de depuração de COFF foram preterida. <br/>                        |
+| 16 <br/> | 2 <br/> | SizeOfOptionalHeader <br/> | O tamanho do header opcional, que é necessário para arquivos executáveis, mas não para arquivos de objeto. Esse valor deve ser zero para um arquivo-objeto. Para ver uma descrição do formato do header, consulte [Header Opcional (Somente Imagem)](#optional-header-image-only). <br/> |
+| 18 <br/> | 2 <br/> | Características <br/>      | Os sinalizadores que indicam os atributos do arquivo. Para valores de sinalizador específicos, consulte [Características](#characteristics). <br/>                                                                                                                               |
 
-#### <a name="machine-types"></a>Tipos de máquina
+#### <a name="machine-types"></a>Tipos de computador
 
-O campo computador tem um dos seguintes valores, que especificam o tipo de CPU. Um arquivo de imagem pode ser executado somente no computador especificado ou em um sistema que emula o computador especificado.
+O campo Computador tem um dos seguintes valores, que especificam o tipo de CPU. Um arquivo de imagem pode ser executado somente no computador especificado ou em um sistema que emula o computador especificado.
 
 | Constante                                    | Valor              | Descrição                                                                             |
 |---------------------------------------------|--------------------|-----------------------------------------------------------------------------------------|
-| computador de arquivo de imagem \_ \_ \_ desconhecido <br/>   | 0x0 <br/>    | Presume-se que o conteúdo deste campo seja aplicável a qualquer tipo de computador <br/> |
-| \_AM33 da \_ máquina do arquivo de imagem \_ <br/>      | 0x1d3 <br/>  | Matsushita AM33 <br/>                                                             |
-| Máquina de arquivo de imagem \_ \_ \_ AMD64 <br/>     | 0x8664 <br/> | x64 <br/>                                                                         |
-| \_ARM de \_ máquina de arquivo de imagem \_ <br/>       | 0x1c0 <br/>  | little endian ARM <br/>                                                           |
-| \_ARM64 da \_ máquina do arquivo de imagem \_ <br/>     | 0xaa64 <br/> | little endian ARM64 <br/>                                                         |
-| \_ARMNT da \_ máquina do arquivo de imagem \_ <br/>     | 0x1c4 <br/>  | ARM Thumb-2 little endian <br/>                                                   |
-| computador de arquivo de imagem \_ \_ \_ EBC <br/>       | 0xebc <br/>  | Código de byte EFI <br/>                                                               |
-| Arquivo de imagem/ \_ \_ computador \_ i386 <br/>      | 0x14c <br/>  | Processadores Intel 386 ou posteriores e processadores compatíveis <br/>                     |
-| Computador de arquivo de imagem \_ \_ \_ IA64 <br/>      | 0x200 <br/>  | Família de processadores Intel Itanium <br/>                                              |
-| \_M32R da \_ máquina do arquivo de imagem \_ <br/>      | 0x9041 <br/> | Mitsubishi M32R little endian <br/>                                               |
-| \_MIPS16 da \_ máquina do arquivo de imagem \_ <br/>    | 0x266 <br/>  | MIPS16 <br/>                                                                      |
-| \_MIPSFPU da \_ máquina do arquivo de imagem \_ <br/>   | 0x366 <br/>  | MIPS com FPU <br/>                                                               |
-| \_MIPSFPU16 da \_ máquina do arquivo de imagem \_ <br/> | 0x466 <br/>  | MIPS16 com FPU <br/>                                                             |
-| \_POWERPC de \_ máquina de arquivo de imagem \_ <br/>   | 0x1f0 <br/>  | little endian do Power PC <br/>                                                      |
-| \_POWERPCFP da \_ máquina do arquivo de imagem \_ <br/> | 0x1f1 <br/>  | Power PC com suporte de ponto flutuante <br/>                                        |
-| \_R4000 da \_ máquina do arquivo de imagem \_ <br/>     | 0x166 <br/>  | little endian MIPS <br/>                                                          |
-| \_RISCV32 da \_ máquina do arquivo de imagem \_ <br/>   | 0x5032 <br/> | Espaço de endereço de 32 de bit RISC-V <br/>                                                 |
-| \_RISCV64 da \_ máquina do arquivo de imagem \_ <br/>   | 0x5064 <br/> | Espaço de endereço de 64 de bit RISC-V <br/>                                                 |
-| \_RISCV128 da \_ máquina do arquivo de imagem \_ <br/>  | 0x5128 <br/> | Espaço de endereço de 128 de bit RISC-V <br/>                                                |
-| \_SH3 da \_ máquina do arquivo de imagem \_ <br/>       | 0x1a2 <br/>  | SH3 Hitachi <br/>                                                                 |
-| \_SH3DSP da \_ máquina do arquivo de imagem \_ <br/>    | 0x1a3 <br/>  | DSP Hitachi SH3 <br/>                                                             |
-| \_Sh4 da \_ máquina do arquivo de imagem \_ <br/>       | 0x1a6 <br/>  | SH4 Hitachi <br/>                                                                 |
-| \_SH5 da \_ máquina do arquivo de imagem \_ <br/>       | 0x1a8 <br/>  | SH5 Hitachi <br/>                                                                 |
-| \_miniatura do \_ computador do arquivo de imagem \_ <br/>     | 0x1c2 <br/>  | Posição <br/>                                                                       |
-| \_WCEMIPSV2 da \_ máquina do arquivo de imagem \_ <br/> | 0x169 <br/>  | MIPS little-endian Stone v2 <br/>                                                   |
+| COMPUTADOR DE \_ ARQUIVO \_ DE IMAGEM \_ DESCONHECIDO <br/>   | 0x0 <br/>    | Presume-se que o conteúdo desse campo seja aplicável a qualquer tipo de computador <br/> |
+| COMPUTADOR \_ DE ARQUIVO DE IMAGEM \_ \_ AM33 <br/>      | 0x1d3 <br/>  | Média AM33 <br/>                                                             |
+| COMPUTADOR \_ DE ARQUIVO DE IMAGEM \_ \_ AMD64 <br/>     | 0x8664 <br/> | x64 <br/>                                                                         |
+| ARM DO \_ COMPUTADOR DO ARQUIVO DE \_ \_ IMAGEM <br/>       | 0x1c0 <br/>  | Arm little endian <br/>                                                           |
+| COMPUTADOR \_ DE ARQUIVO DE IMAGEM \_ \_ ARM64 <br/>     | 0xaa64 <br/> | Arm64 little endian <br/>                                                         |
+| ARMNT \_ DO COMPUTADOR DO ARQUIVO DE \_ \_ IMAGEM <br/>     | 0x1c4 <br/>  | Arm Thumb-2 little endian <br/>                                                   |
+| MÁQUINA DE \_ ARQUIVOS \_ DE IMAGEM \_ EBC <br/>       | 0xebc <br/>  | Código de byte EFI <br/>                                                               |
+| COMPUTADOR \_ DE ARQUIVO DE IMAGEM \_ \_ I386 <br/>      | 0x14c <br/>  | Processadores Intel 386 ou posteriores e processadores compatíveis <br/>                     |
+| MÁQUINA DE \_ ARQUIVOS \_ DE IMAGEM \_ IA64 <br/>      | 0x200 <br/>  | Família de processadores Intel Itanium <br/>                                              |
+| COMPUTADOR \_ DE ARQUIVO DE IMAGEM \_ \_ M32R <br/>      | 0x9041 <br/> | Little endian <br/>                                               |
+| \_ \_ MIPS16 DO COMPUTADOR DO \_ ARQUIVO DE IMAGEM <br/>    | 0x266 <br/>  | MIPS16 <br/>                                                                      |
+| \_ \_ \_ MIPSFPU DO COMPUTADOR DO ARQUIVO DE IMAGEM <br/>   | 0x366 <br/>  | MIPS com FPU <br/>                                                               |
+| MÁQUINA \_ DE ARQUIVOS DE IMAGEM \_ \_ MIPSFPU16 <br/> | 0x466 <br/>  | MIPS16 com FPU <br/>                                                             |
+| COMPUTADOR \_ DO ARQUIVO DE IMAGEM \_ \_ POWERPC <br/>   | 0x1f0 <br/>  | Power PC little endian <br/>                                                      |
+| COMPUTADOR \_ DO ARQUIVO DE IMAGEM \_ \_ POWERPCFP <br/> | 0x1f1 <br/>  | Power PC com suporte a ponto flutuante <br/>                                        |
+| COMPUTADOR \_ DE ARQUIVO DE IMAGEM \_ \_ R4000 <br/>     | 0x166 <br/>  | MiPS little endian <br/>                                                          |
+| COMPUTADOR \_ DE ARQUIVO DE IMAGEM \_ \_ RISCV32 <br/>   | 0x5032 <br/> | Espaço de endereço de 32 bits do RISC-V <br/>                                                 |
+| COMPUTADOR \_ DE ARQUIVO DE IMAGEM \_ \_ RISCV64 <br/>   | 0x5064 <br/> | Espaço de endereço de 64 bits RISC-V <br/>                                                 |
+| COMPUTADOR \_ DE ARQUIVO DE IMAGEM \_ \_ RISCV128 <br/>  | 0x5128 <br/> | Espaço de endereço de 128 bits do RISC-V <br/>                                                |
+| MÁQUINA DE \_ ARQUIVOS \_ DE IMAGEM \_ SH3 <br/>       | 0x1a2 <br/>  | Hitachi SH3 <br/>                                                                 |
+| COMPUTADOR \_ DE ARQUIVO DE IMAGEM \_ \_ SH3DSP <br/>    | 0x1a3 <br/>  | Hitachi SH3 DSP <br/>                                                             |
+| MÁQUINA DE \_ ARQUIVOS \_ DE IMAGEM \_ SH4 <br/>       | 0x1a6 <br/>  | Hitachi SH4 <br/>                                                                 |
+| MÁQUINA DE \_ ARQUIVOS \_ DE IMAGEM \_ SH5 <br/>       | 0x1a8 <br/>  | Hitachi SH5 <br/>                                                                 |
+| MINIATURA DO \_ COMPUTADOR DO ARQUIVO DE \_ \_ IMAGEM <br/>     | 0x1c2 <br/>  | Posição <br/>                                                                       |
+| COMPUTADOR \_ DE ARQUIVO DE IMAGEM \_ \_ WCEMIPSV2 <br/> | 0x169 <br/>  | MIPS little-endian WCE v2 <br/>                                                   |
 
 #### <a name="characteristics"></a>Características
 
-O campo características contém sinalizadores que indicam os atributos do arquivo de objeto ou de imagem. Os seguintes sinalizadores estão definidos no momento:
+O campo Características contém sinalizadores que indicam atributos do objeto ou arquivo de imagem. Os seguintes sinalizadores estão definidos no momento:
 
 | Sinalizador                                                 | Valor              | Descrição                                                                                                                                                                                                                                                                                                                                                        |
 |------------------------------------------------------|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| arquivo de imagem \_ \_ RELOCS \_ removido <br/>            | 0x0001 <br/> | Somente imagem, Windows CE e Microsoft Windows NT e posterior. Isso indica que o arquivo não contém realocações de base e, portanto, deve ser carregado em seu endereço base preferencial. Se o endereço base não estiver disponível, o carregador relatará um erro. O comportamento padrão do vinculador é remover as realocações de base dos arquivos executáveis (EXE). <br/> |
-| \_ \_ imagem executável do arquivo de imagem \_ <br/>           | 0x0002 <br/> | Somente imagem. Isso indica que o arquivo de imagem é válido e pode ser executado. Se esse sinalizador não for definido, isso indicará um erro de vinculador. <br/>                                                                                                                                                                                                                          |
-| NUMS de linha de arquivo de imagem \_ \_ \_ \_ removido <br/>        | 0x0004 <br/> | Os números de linha COFF foram removidos. Esse sinalizador foi preterido e deve ser zero. <br/>                                                                                                                                                                                                                                                                       |
-| arquivo de imagem \_ \_ local \_ SYMS \_ removido <br/>       | 0x0008 <br/> | As entradas da tabela de símbolos COFF para símbolos locais foram removidas. Esse sinalizador foi preterido e deve ser zero. <br/>                                                                                                                                                                                                                                             |
-| arquivo de imagem \_ \_ agressiva \_ WS \_ Trim <br/>        | 0x0010 <br/> | Obsoleto. Corte agressivo de conjunto de trabalho. Esse sinalizador foi preterido para o Windows 2000 e posterior e deve ser zero. <br/>                                                                                                                                                                                                                                          |
-| \_reconhecimento de \_ \_ endereço grande de arquivo \_ de imagem <br/>      | 0x0020 <br/> | O aplicativo pode manipular > endereços de 2 GB. <br/>                                                                                                                                                                                                                                                                                                            |
+| \_RELOCAÇÕES DE ARQUIVO DE IMAGEM \_ \_ RETIRADAS <br/>            | 0x0001 <br/> | Somente imagem, Windows CE e Microsoft Windows NT e posterior. Isso indica que o arquivo não contém realocações de base e, portanto, deve ser carregado em seu endereço base preferencial. Se o endereço base não estiver disponível, o carregador relata um erro. O comportamento padrão do vinculador é retirar realocações base de arquivos executáveis (EXE). <br/> |
+| IMAGEM \_ EXECUTÁVEL \_ DO ARQUIVO DE \_ IMAGEM <br/>           | 0x0002 <br/> | Somente imagem. Isso indica que o arquivo de imagem é válido e pode ser executado. Se esse sinalizador não estiver definido, ele indicará um erro do vinculador. <br/>                                                                                                                                                                                                                          |
+| NUMS \_ DE LINHA DE ARQUIVO DE IMAGEM \_ \_ \_ REMOVIDO <br/>        | 0x0004 <br/> | Os números de linha COFF foram removidos. Esse sinalizador foi preterido e deve ser zero. <br/>                                                                                                                                                                                                                                                                       |
+| SYMS LOCAIS DO \_ \_ ARQUIVO DE IMAGEM \_ \_ REMOVIDOS <br/>       | 0x0008 <br/> | As entradas da tabela de símbolos COFF para símbolos locais foram removidas. Esse sinalizador foi preterido e deve ser zero. <br/>                                                                                                                                                                                                                                             |
+| IMAGE \_ FILE \_ AGGRESSIVE \_ WS \_ TRIM <br/>        | 0x0010 <br/> | Obsoleto. Cortar agressivamente o conjunto de trabalho. Esse sinalizador foi preterido para Windows 2000 e posterior e deve ser zero. <br/>                                                                                                                                                                                                                                          |
+| ARQUIVO DE \_ IMAGEM COM GRANDE CONHECIMENTO DE \_ \_ \_ ENDEREÇO <br/>      | 0x0020 <br/> | O aplicativo pode lidar > endereços de 2 GB. <br/>                                                                                                                                                                                                                                                                                                            |
 |                                                      | 0x0040 <br/> | Esse sinalizador é reservado para uso futuro. <br/>                                                                                                                                                                                                                                                                                                                  |
-| BYTES de arquivo de imagem \_ \_ \_ invertidos \_ <br/>         | 0x0080 <br/> | Little endian: o bit menos significativo (LSB) precede o bit mais significativo (MSB) na memória. Esse sinalizador foi preterido e deve ser zero. <br/>                                                                                                                                                                                                          |
-| \_Computador de \_ 32 bits do arquivo de imagem \_ <br/>              | 0x0100 <br/> | O computador é baseado em uma arquitetura de palavra de 32 bits. <br/>                                                                                                                                                                                                                                                                                                        |
-| depuração de arquivo de imagem \_ \_ \_ eliminada <br/>             | 0x0200 <br/> | As informações de depuração são removidas do arquivo de imagem. <br/>                                                                                                                                                                                                                                                                                                  |
-| \_ \_ execução removível \_ do arquivo \_ de imagem da \_ permuta <br/> | 0x0400 <br/> | Se a imagem estiver em mídia removível, carregue-a completamente e copie-a para o arquivo de permuta. <br/>                                                                                                                                                                                                                                                                        |
-| \_arquivo \_ de imagem NET \_ Run \_ da \_ permuta <br/>        | 0x0800 <br/> | Se a imagem estiver na mídia de rede, carregue-a completamente e copie-a para o arquivo de permuta. <br/>                                                                                                                                                                                                                                                                          |
-| \_sistema de arquivos de imagem \_ <br/>                      | 0x1000 <br/> | O arquivo de imagem é um arquivo de sistema, não um programa de usuário. <br/>                                                                                                                                                                                                                                                                                                   |
-| \_dll do arquivo de imagem \_ <br/>                         | 0x2000 <br/> | O arquivo de imagem é uma DLL (biblioteca de vínculo dinâmico). Esses arquivos são considerados arquivos executáveis para quase todas as finalidades, embora não possam ser executados diretamente. <br/>                                                                                                                                                                                              |
-| IMAGEM \_ \_ \_ somente sistema de \_ arquivos <br/>            | 0x4000 <br/> | O arquivo deve ser executado somente em um computador com um processador. <br/>                                                                                                                                                                                                                                                                                                 |
-| BYTES de arquivo de imagem \_ \_ \_ revertidos- \_ Olá <br/>         | 0x8000 <br/> | Big endian: o MSB precede o LSB na memória. Esse sinalizador foi preterido e deve ser zero. <br/>                                                                                                                                                                                                                                                            |
+| LO \_ \_ INVERTIDA DE BYTES \_ DE ARQUIVO \_ DE IMAGEM <br/>         | 0x0080 <br/> | Little endian: o LSB (bit menos significativo) precede o MSB (bit mais significativo) na memória. Esse sinalizador foi preterido e deve ser zero. <br/>                                                                                                                                                                                                          |
+| IMAGE \_ FILE \_ 32BIT \_ MACHINE <br/>              | 0x0100 <br/> | O computador é baseado em uma arquitetura de 32 bits. <br/>                                                                                                                                                                                                                                                                                                        |
+| \_DEPURAÇÃO DE ARQUIVO DE IMAGEM \_ \_ DESPOJADA <br/>             | 0x0200 <br/> | As informações de depuração são removidas do arquivo de imagem. <br/>                                                                                                                                                                                                                                                                                                  |
+| IMAGE \_ FILE \_ REMOVABLE \_ RUN \_ FROM \_ SWAP <br/> | 0x0400 <br/> | Se a imagem estiver em mídia removível, carregue-a totalmente e copie-a para o arquivo de permuta. <br/>                                                                                                                                                                                                                                                                        |
+| IMAGE \_ FILE \_ NET \_ RUN \_ FROM \_ SWAP <br/>        | 0x0800 <br/> | Se a imagem estiver na mídia de rede, carregue-a totalmente e copie-a para o arquivo de permuta. <br/>                                                                                                                                                                                                                                                                          |
+| SISTEMA DE \_ ARQUIVOS DE \_ IMAGEM <br/>                      | 0x1000 <br/> | O arquivo de imagem é um arquivo do sistema, não um programa de usuário. <br/>                                                                                                                                                                                                                                                                                                   |
+| \_DLL DO \_ ARQUIVO DE IMAGEM <br/>                         | 0x2000 <br/> | O arquivo de imagem é uma DLL (biblioteca de vínculo dinâmico). Esses arquivos são considerados arquivos executáveis para quase todas as finalidades, embora não podem ser executados diretamente. <br/>                                                                                                                                                                                              |
+| SOMENTE \_ O SISTEMA DE ARQUIVOS DE \_ \_ \_ IMAGEM <br/>            | 0x4000 <br/> | O arquivo deve ser executado somente em um computador uniprocessador. <br/>                                                                                                                                                                                                                                                                                                 |
+| HI INVERTIDO \_ DE BYTES DE ARQUIVO DE \_ \_ \_ IMAGEM <br/>         | 0x8000 <br/> | Big Endian: a MSB precede o LSB na memória. Esse sinalizador foi preterido e deve ser zero. <br/>                                                                                                                                                                                                                                                            |
 
-### <a name="optional-header-image-only"></a>Cabeçalho opcional (somente imagem)
+### <a name="optional-header-image-only"></a>Header opcional (somente imagem)
 
-Cada arquivo de imagem tem um cabeçalho opcional que fornece informações para o carregador. Esse cabeçalho é opcional no sentido de que alguns arquivos (especificamente, arquivos de objeto) não o têm. Para arquivos de imagem, esse cabeçalho é necessário. Um arquivo de objeto pode ter um cabeçalho opcional, mas geralmente esse cabeçalho não tem nenhuma função em um arquivo de objeto, exceto para aumentar seu tamanho.
+Cada arquivo de imagem tem um header opcional que fornece informações para o carregador. Esse header é opcional no sentido de que alguns arquivos (especificamente, arquivos de objeto) não o têm. Para arquivos de imagem, esse header é necessário. Um arquivo de objeto pode ter um header opcional, mas geralmente esse header não tem nenhuma função em um arquivo de objeto, exceto para aumentar seu tamanho.
 
 Observe que o tamanho do cabeçalho opcional não é fixo. O campo **SizeOfOptionalHeader** no cabeçalho COFF deve ser usado para validar que uma investigação no arquivo de um determinado diretório de dados não vai além de **SizeOfOptionalHeader**. Para obter mais informações, consulte [cabeçalho de arquivo COFF (objeto e imagem)](#coff-file-header-object-and-image).
 
@@ -197,7 +197,7 @@ O cabeçalho opcional em si tem três partes principais.
 | Deslocamento (PE32/PE32 +) | Tamanho (PE32/PE32 +)    | Parte do cabeçalho                         | Descrição                                                                                                                                                                   |
 |---------------------|----------------------|-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0 <br/>       | 28/24 <br/>    | Campos padrão <br/>         | Campos que são definidos para todas as implementações de COFF, incluindo UNIX. <br/>                                                                                          |
-| 28/24 <br/>   | 68/88 <br/>    | Campos específicos do Windows <br/> | Campos adicionais para dar suporte a recursos específicos do Windows (por exemplo, subsistemas). <br/>                                                                              |
+| 28/24 <br/>   | 68/88 <br/>    | campos específicos do Windows <br/> | campos adicionais para dar suporte a recursos específicos de Windows (por exemplo, subsistemas). <br/>                                                                              |
 | 96/112 <br/>  | Variável <br/> | Diretórios de dados <br/>        | Pares de endereço/tamanho para tabelas especiais encontradas no arquivo de imagem e são usados pelo sistema operacional (por exemplo, a tabela de importação e a tabela de exportação). <br/> |
 
 #### <a name="optional-header-standard-fields-image-only"></a>Campos padrão de cabeçalho opcional (somente imagem)
@@ -227,9 +227,9 @@ Os próximos 21 campos são uma extensão para o formato de cabeçalho opcional 
 
 | Deslocamento (PE32/PE32 +) | Tamanho (PE32/PE32 +) | Campo                                   | Descrição                                                                                                                                                                                                                                                                                                            |
 |----------------------|--------------------|-----------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 28/24 <br/>    | 4/8 <br/>    | ImageBase <br/>                   | O endereço preferencial do primeiro byte de imagem quando carregado na memória; deve ser um múltiplo de 64 K. O padrão para DLLs é 0x10000000. O padrão para Windows CE EXEs é 0x00010000. O padrão para Windows NT, Windows 2000, Windows XP, Windows 95, Windows 98 e Windows me é 0x00400000. <br/>       |
-| 32/32 <br/>    | 4 <br/>      | SectionAlignment <br/>            | O alinhamento (em bytes) das seções quando elas são carregadas na memória. Ele deve ser maior ou igual ao alinhamento de File. O padrão é o tamanho da página para a arquitetura. <br/>                                                                                                                               |
-| 36/36 <br/>    | 4 <br/>      | FileAlignment <br/>               | O fator de alinhamento (em bytes) usado para alinhar os dados brutos das seções no arquivo de imagem. O valor deve ser uma potência de 2 entre 512 e 64 K, inclusive. O padrão é 512. Se o SectionAlignment for menor que o tamanho da página da arquitetura, o FileAlignment deverá corresponder a SectionAlignment. <br/> |
+| 28/24 <br/>    | 4/8 <br/>    | ImageBase <br/>                   | O endereço preferencial do primeiro byte de imagem quando carregado na memória; deve ser um múltiplo de 64 K. O padrão para DLLs é 0x10000000. o padrão para Windows CE EXEs é 0x00010000. o padrão para Windows NT, Windows 2000, Windows XP, Windows 95, Windows 98 e Windows Me é 0x00400000. <br/>       |
+| 32/32 <br/>    | 4 <br/>      | SectionAlignment <br/>            | O alinhamento (em bytes) das seções quando elas são carregadas na memória. Ele deve ser maior ou igual a FileAlignment. O padrão é o tamanho da página para a arquitetura. <br/>                                                                                                                               |
+| 36/36 <br/>    | 4 <br/>      | FileAlignment <br/>               | O fator de alinhamento (em bytes) usado para alinhar os dados brutos das seções no arquivo de imagem. O valor deve ser uma potência de 2 entre 512 e 64 K, inclusive. O padrão é 512. Se SectionAlignment for menor que o tamanho da página da arquitetura, FileAlignment deverá corresponder a SectionAlignment. <br/> |
 | 40/40 <br/>    | 2 <br/>      | MajorOperatingSystemVersion <br/> | O número de versão principal do sistema operacional necessário. <br/>                                                                                                                                                                                                                                                 |
 | 42/42 <br/>    | 2 <br/>      | MinorOperatingSystemVersion <br/> | O número de versão secundária do sistema operacional necessário. <br/>                                                                                                                                                                                                                                                 |
 | 44/44 <br/>    | 2 <br/>      | MajorImageVersion <br/>           | O número de versão principal da imagem. <br/>                                                                                                                                                                                                                                                                     |
@@ -237,42 +237,42 @@ Os próximos 21 campos são uma extensão para o formato de cabeçalho opcional 
 | 48/48 <br/>    | 2 <br/>      | MajorSubsystemVersion <br/>       | O número de versão principal do subsistema. <br/>                                                                                                                                                                                                                                                                 |
 | 50/50 <br/>    | 2 <br/>      | MinorSubsystemVersion <br/>       | O número de secundária principal do subsistema. <br/>                                                                                                                                                                                                                                                                 |
 | 52/52 <br/>    | 4 <br/>      | Win32VersionValue <br/>           | Reservado, deve ser zero. <br/>                                                                                                                                                                                                                                                                                    |
-| 56/56 <br/>    | 4 <br/>      | SizeOfImage <br/>                 | O tamanho (em bytes) da imagem, incluindo todos os cabeçalhos, à medida que a imagem é carregada na memória. Ele deve ser um múltiplo de SectionAlignment. <br/>                                                                                                                                                                      |
-| 60/60 <br/>    | 4 <br/>      | SizeOfHeaders <br/>               | O tamanho combinado de um stub do MS-DOS, cabeçalho PE e cabeçalhos de seção arredondados para um múltiplo de alinhamento de File. <br/>                                                                                                                                                                                             |
-| 64/64 <br/>    | 4 <br/>      | Soma <br/>                    | A soma de verificação do arquivo de imagem. O algoritmo para computar a soma de verificação é incorporado em IMAGHELP.DLL. Os itens a seguir são verificados para validação no tempo de carregamento: todos os drivers, qualquer DLL carregada no momento da inicialização e qualquer DLL que é carregada em um processo crítico do Windows. <br/>                                          |
-| 68/68 <br/>    | 2 <br/>      | Subsistema <br/>                   | O subsistema necessário para executar esta imagem. Para obter mais informações, consulte [subsistema do Windows](#windows-subsystem). <br/>                                                                                                                                                                                       |
-| 70/70 <br/>    | 2 <br/>      | DllCharacteristics <br/>          | Para obter mais informações, consulte [características de dll](#dll-characteristics) mais adiante nesta especificação. <br/>                                                                                                                                                                                                         |
-| 72/72 <br/>    | 4/8 <br/>    | SizeOfStackReserve <br/>          | O tamanho da pilha a ser reservada. Somente SizeOfStackCommit é confirmado; o restante é disponibilizado uma página por vez até que o tamanho da reserva seja atingido. <br/>                                                                                                                                                    |
+| 56/56 <br/>    | 4 <br/>      | SizeOfImage <br/>                 | O tamanho (em bytes) da imagem, incluindo todos os headers, pois a imagem é carregada na memória. Ele deve ser um múltiplo de SectionAlignment. <br/>                                                                                                                                                                      |
+| 60/60 <br/>    | 4 <br/>      | SizeOfHeaders <br/>               | O tamanho combinado de um stub do MS-DOS, o header PE e os headers da seção arredondados para um múltiplo de FileAlignment. <br/>                                                                                                                                                                                             |
+| 64/64 <br/>    | 4 <br/>      | Soma <br/>                    | A verificação de arquivo de imagem. O algoritmo para calcular a verificação é incorporado em IMAGHELP.DLL. Os seguintes são verificados quanto à validação no tempo de carregamento: todos os drivers, qualquer DLL carregada no momento da inicialização e qualquer DLL carregada em um processo Windows crítico. <br/>                                          |
+| 68/68 <br/>    | 2 <br/>      | Subsistema <br/>                   | O subsistema necessário para executar esta imagem. Para obter mais informações, [consulte Windows Subsistema](#windows-subsystem). <br/>                                                                                                                                                                                       |
+| 70/70 <br/>    | 2 <br/>      | DllCharacteristics <br/>          | Para obter mais informações, consulte [Características de DLL](#dll-characteristics) posteriormente nesta especificação. <br/>                                                                                                                                                                                                         |
+| 72/72 <br/>    | 4/8 <br/>    | SizeOfStackReserve <br/>          | O tamanho da pilha a ser reservada. Somente SizeOfStackCommit está comprometido; o restante é disponibilizado uma página por vez até que o tamanho da reserva seja atingido. <br/>                                                                                                                                                    |
 | 76/80 <br/>    | 4/8 <br/>    | SizeOfStackCommit <br/>           | O tamanho da pilha a ser confirmada. <br/>                                                                                                                                                                                                                                                                           |
-| 80/88 <br/>    | 4/8 <br/>    | SizeOfHeapReserve <br/>           | O tamanho do espaço de heap local a ser reservado. Somente SizeOfHeapCommit é confirmado; o restante é disponibilizado uma página por vez até que o tamanho da reserva seja atingido. <br/>                                                                                                                                          |
+| 80/88 <br/>    | 4/8 <br/>    | SizeOfHeapReserve <br/>           | O tamanho do espaço de heap local a ser reservado. Somente SizeOfHeapCommit está comprometido; o restante é disponibilizado uma página por vez até que o tamanho da reserva seja atingido. <br/>                                                                                                                                          |
 | 84/96 <br/>    | 4/8 <br/>    | SizeOfHeapCommit <br/>            | O tamanho do espaço de heap local a ser confirmado. <br/>                                                                                                                                                                                                                                                                |
 | 88/104 <br/>   | 4 <br/>      | LoaderFlags <br/>                 | Reservado, deve ser zero. <br/>                                                                                                                                                                                                                                                                                    |
-| 92/108 <br/>   | 4 <br/>      | NumberOfRvaAndSizes <br/>         | O número de entradas de diretório de dados no restante do cabeçalho opcional. Cada uma descreve uma localização e um tamanho. <br/>                                                                                                                                                                                          |
+| 92/108 <br/>   | 4 <br/>      | NumberOfRvaAndSizes <br/>         | O número de entradas de diretório de dados no restante do header opcional. Cada uma descreve uma localização e um tamanho. <br/>                                                                                                                                                                                          |
 
-##### <a name="windows-subsystem"></a>Subsistema do Windows
+##### <a name="windows-subsystem"></a>Windows Subsistema
 
-Os valores a seguir definidos para o campo subsistema do cabeçalho opcional determinam qual subsistema do Windows (se houver) é necessário para executar a imagem.
+Os valores a seguir definidos para o campo Subsistema do header opcional determinam qual subsistema Windows (se há) necessário para executar a imagem.
 
 | Constante                                                  | Valor          | Descrição                                                      |
 |-----------------------------------------------------------|----------------|------------------------------------------------------------------|
-| subsistema de imagem \_ \_ desconhecido <br/>                     | 0 <br/>  | Um subsistema desconhecido <br/>                                 |
-| subsistema de imagem \_ \_ nativo <br/>                      | 1 <br/>  | Drivers de dispositivo e processos nativos do Windows <br/>          |
-| \_GUI do Windows do SUBsistema de imagens \_ \_ <br/>                | 2 <br/>  | O subsistema GUI (interface gráfica do usuário) do Windows <br/> |
-| \_Cui do Windows do SUBsistema de imagem \_ \_ <br/>                | 3 <br/>  | O subsistema de caracteres do Windows <br/>                      |
-| \_Cui OS2 do SUBsistema de imagens \_ \_ <br/>                    | 5 <br/>  | O subsistema do sistema operacional/2 <br/>                         |
-| \_Cui POSIX do SUBsistema de imagem \_ \_ <br/>                  | 7 <br/>  | O subsistema de caracteres POSIX <br/>                        |
-| \_ \_ janelas nativas do subsistema de imagens \_ <br/>             | 8 <br/>  | Driver Win9x nativo <br/>                                  |
-| subsistema da imagem \_ \_ GUI do Windows \_ CE \_ <br/>            | 9 <br/>  | Windows CE <br/>                                           |
-| \_aplicativo EFI do SUBsistema de imagens \_ \_ <br/>            | 10 <br/> | Um aplicativo EFI (Extensible Firmware Interface) <br/>   |
-| \_Driver do \_ \_ serviço de inicialização \_ EFI \_ do subsistema de imagens <br/> | 11 <br/> | Um driver EFI com serviços de inicialização <br/>                     |
-| \_Driver de \_ tempo de \_ execução EFI do SUBsistema de imagem \_ <br/>       | 12 <br/> | Um driver EFI com serviços de tempo de execução <br/>                 |
-| \_ \_ EFI ROM do subsistema de imagens \_ <br/>                    | 13 <br/> | Uma imagem EFI ROM <br/>                                     |
-| \_Xbox do SUBsistema de imagens \_ <br/>                        | 14 <br/> | XBOX <br/>                                                 |
-| \_aplicativo de inicialização do Windows do SUBsistema de imagens \_ \_ \_ <br/>  | 16 <br/> | Aplicativo de inicialização do Windows. <br/>                            |
+| \_SUBSISTEMA DE IMAGEM \_ DESCONHECIDO <br/>                     | 0 <br/>  | Um subsistema desconhecido <br/>                                 |
+| \_SUBSISTEMA DE \_ IMAGEM NATIVO <br/>                      | 1 <br/>  | Drivers de dispositivo e processos Windows nativos <br/>          |
+| GUI DO \_ WINDOWS DO SUBSISTEMA \_ DE \_ IMAGEM <br/>                | 2 <br/>  | O Windows gui (interface gráfica do usuário) <br/> |
+| IMAGE \_ SUBSYSTEM \_ WINDOWS \_ CUI <br/>                | 3 <br/>  | O subsistema Windows caracteres <br/>                      |
+| IMAGE \_ SUBSYSTEM \_ OS2 \_ CUI <br/>                    | 5 <br/>  | O subsistema de caracteres os/2 <br/>                         |
+| \_SUBSISTEMA \_ DE IMAGEM POSIX \_ CUI <br/>                  | 7 <br/>  | O subsistema de caracteres Posix <br/>                        |
+| JANELAS \_ NATIVAS DO \_ SUBSISTEMA DE \_ IMAGEM <br/>             | 8 <br/>  | Driver Win9x nativo <br/>                                  |
+| IMAGE \_ SUBSYSTEM \_ WINDOWS \_ CE \_ GUI <br/>            | 9 <br/>  | Windows CE <br/>                                           |
+| APLICATIVO \_ EFI DE \_ \_ SUBSISTEMA DE IMAGEM <br/>            | 10 <br/> | Um aplicativo EFI (Extensible Firmware Interface) <br/>   |
+| DRIVER DO SERVIÇO DE \_ \_ INICIALIZAÇÃO EFI DO \_ SUBSISTEMA \_ IMAGE \_ <br/> | 11 <br/> | Um driver EFI com serviços de inicialização <br/>                     |
+| DRIVER \_ DE \_ RUNTIME DE EFI \_ DO SUBSISTEMA DE \_ IMAGEM <br/>       | 12 <br/> | Um driver EFI com serviços em tempo de executar <br/>                 |
+| IMAGE \_ SUBSYSTEM \_ EFI \_ ROM <br/>                    | 13 <br/> | Uma imagem de ROM de EFI <br/>                                     |
+| IMAGE \_ SUBSYSTEM \_ XBOX <br/>                        | 14 <br/> | XBOX <br/>                                                 |
+| APLICATIVO DE \_ INICIALIZAÇÃO DO WINDOWS DO SUBSISTEMA \_ \_ \_ IMAGE <br/>  | 16 <br/> | Windows aplicativo de inicialização. <br/>                            |
 
-##### <a name="dll-characteristics"></a>Características de DLL
+##### <a name="dll-characteristics"></a>Características da DLL
 
-Os valores a seguir são definidos para o campo DllCharacteristics do cabeçalho opcional.
+Os valores a seguir são definidos para o campo DllCharacteristics do header opcional.
 
 | Constante                                                             | Valor              | Descrição                                                                                             |
 |----------------------------------------------------------------------|--------------------|---------------------------------------------------------------------------------------------------------|
@@ -280,21 +280,21 @@ Os valores a seguir são definidos para o campo DllCharacteristics do cabeçalho
 |                                                                      | 0x0002 <br/> | Reservado, deve ser zero. <br/>                                                                     |
 |                                                                      | 0x0004 <br/> | Reservado, deve ser zero. <br/>                                                                     |
 |                                                                      | 0x0008 <br/> | Reservado, deve ser zero. <br/>                                                                     |
-| IMAGE \_ DLLCHARACTERISTICS \_ alta \_ entropia \_ VA <br/>             | 0x0020 <br/> | A imagem pode lidar com um espaço de endereço virtual de alta entropia de 64 bits. <br/>                               |
-| DLLCHARACTERISTICS de imagem \_\_ <br/> \_base dinâmica <br/>    | 0x0040 <br/> | A DLL pode ser realocada no tempo de carregamento. <br/>                                                          |
-| DLLCHARACTERISTICS de imagem \_\_ <br/> FORÇAR \_ integridade <br/> | 0x0080 <br/> | As verificações de integridade de código são impostas. <br/>                                                         |
-| DLLCHARACTERISTICS de imagem \_\_ <br/> compatível com NX \_ <br/>       | 0x0100 <br/> | A imagem é compatível com NX. <br/>                                                                     |
-| DLLCHARACTERISTICS de imagem \_ \_ sem \_ isolamento <br/>                | 0x0200 <br/> | Reconhecimento de isolamento, mas não Isole a imagem. <br/>                                              |
-| DLLCHARACTERISTICS de imagem \_ \_ sem \_ Seh <br/>                      | 0x0400 <br/> | Não usa manipulação de exceção estruturada (SE). Nenhum manipulador SE pode ser chamado nesta imagem. <br/> |
-| DLLCHARACTERISTICS de imagem \_ \_ sem \_ Associação <br/>                     | 0x0800 <br/> | Não associe a imagem. <br/>                                                                      |
-| \_APPCONTAINER DLLCHARACTERISTICS de imagem \_ <br/>                  | 0x1000 <br/> | A imagem deve ser executada em um AppContainer. <br/>                                                      |
-| \_ \_ driver WDM do Image DLLCHARACTERISTICS \_ <br/>                  | 0x2000 <br/> | Um driver WDM. <br/>                                                                               |
-| IMAGE \_ DLLCHARACTERISTICS \_ Guard \_ CF <br/>                     | 0x4000 <br/> | A imagem dá suporte à proteção de fluxo de controle. <br/>                                                          |
-| reconhecimento de imagem \_ \_ do DLLCHARACTERISTICS terminal \_ Server \_ <br/>      | 0x8000 <br/> | Terminal Server ciente. <br/>                                                                      |
+| VA \_ DE ALTA ENTROPIA DE DLLCHARACTERISTICS \_ \_ DA \_ IMAGEM <br/>             | 0x0020 <br/> | A imagem pode lidar com um espaço de endereço virtual de 64 bits de alta entropia. <br/>                               |
+| IMAGE \_ DLLCHARACTERISTICS\_ <br/> BASE \_ DINÂMICA <br/>    | 0x0040 <br/> | A DLL pode ser realocada em tempo de carregamento. <br/>                                                          |
+| IMAGE \_ DLLCHARACTERISTICS\_ <br/> FORÇAR \_ INTEGRIDADE <br/> | 0x0080 <br/> | Verificações de integridade de código são impostas. <br/>                                                         |
+| IMAGE \_ DLLCHARACTERISTICS\_ <br/> NX \_ COMPAT <br/>       | 0x0100 <br/> | A imagem é compatível com NX. <br/>                                                                     |
+| \_DLLCHARACTERISTICS DA IMAGEM \_ SEM \_ ISOLAMENTO <br/>                | 0x0200 <br/> | Com conhecimento de isolamento, mas não isole a imagem. <br/>                                              |
+| IMAGE \_ DLLCHARACTERISTICS \_ NO \_ SEH <br/>                      | 0x0400 <br/> | Não usa tratamento de exceção estruturada (ES). Nenhum ES manipulador pode ser chamado nesta imagem. <br/> |
+| IMAGE \_ DLLCHARACTERISTICS \_ NO \_ BIND <br/>                     | 0x0800 <br/> | Não a bind a imagem. <br/>                                                                      |
+| IMAGE \_ DLLCHARACTERISTICS \_ APPCONTAINER <br/>                  | 0x1000 <br/> | A imagem deve ser executada em um AppContainer. <br/>                                                      |
+| IMAGE \_ DLLCHARACTERISTICS \_ WDM \_ DRIVER <br/>                  | 0x2000 <br/> | Um driver WDM. <br/>                                                                               |
+| IMAGE \_ DLLCHARACTERISTICS \_ GUARD \_ CF <br/>                     | 0x4000 <br/> | A imagem dá suporte ao Control Flow Guard. <br/>                                                          |
+| IMAGE \_ DLLCHARACTERISTICS \_ TERMINAL \_ SERVER \_ AWARE <br/>      | 0x8000 <br/> | Servidor de Terminal com conhecimento. <br/>                                                                      |
 
-#### <a name="optional-header-data-directories-image-only"></a>Diretórios de dados de cabeçalho opcionais (somente imagem)
+#### <a name="optional-header-data-directories-image-only"></a>Diretórios de dados de header opcionais (somente imagem)
 
-Cada diretório de dados fornece o endereço e o tamanho de uma tabela ou cadeia de caracteres que o Windows usa. Essas entradas de diretório de dados são carregadas na memória para que o sistema possa usá-las em tempo de execução. Um diretório de dados é um campo de 8 bytes que tem a seguinte declaração:
+Cada diretório de dados fornece o endereço e o tamanho de uma tabela ou cadeia de caracteres que Windows usa. Essas entradas de diretório de dados são carregadas na memória para que o sistema possa usá-las em tempo de executar. Um diretório de dados é um campo de 8 byte que tem a seguinte declaração:
 
 ```cpp
 typedef struct _IMAGE_DATA_DIRECTORY {
@@ -303,45 +303,45 @@ typedef struct _IMAGE_DATA_DIRECTORY {
 } IMAGE_DATA_DIRECTORY, *PIMAGE_DATA_DIRECTORY;
 ```
 
-O primeiro campo, VirtualAddress, é, na verdade, o RVA da tabela. O RVA é o endereço da tabela em relação ao endereço base da imagem quando a tabela é carregada. O segundo campo fornece o tamanho em bytes. Os diretórios de dados, que formam a última parte do cabeçalho opcional, são listados na tabela a seguir.
+O primeiro campo, VirtualAddress, é, na verdade, o RVA da tabela. O RVA é o endereço da tabela em relação ao endereço base da imagem quando a tabela é carregada. O segundo campo fornece o tamanho em bytes. Os diretórios de dados, que formam a última parte do header opcional, são listados na tabela a seguir.
 
-Observe que o número de diretórios não é fixo. Antes de procurar um diretório específico, verifique o campo NumberOfRvaAndSizes no cabeçalho opcional.
+Observe que o número de diretórios não é fixo. Antes de procurar um diretório específico, verifique o campo NumberOfRvaAndSizes no header opcional.
 
-Além disso, não presuma que o RVAs nesta tabela aponte para o início de uma seção ou que as seções que contêm tabelas específicas têm nomes específicos.
+Além disso, não suponha que as RVAs nesta tabela apontem para o início de uma seção ou que as seções que contêm tabelas específicas tenham nomes específicos.
 
-| Deslocamento (PE/PE32 +)   | Tamanho          | Campo                               | Descrição                                                                                                                                                                          |
+| Deslocamento (PE/PE32+)   | Tamanho          | Campo                               | Descrição                                                                                                                                                                          |
 |---------------------|---------------|-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 96/112 <br/>  | 8 <br/> | Exportar tabela <br/>            | O tamanho e o endereço da tabela de exportação. Para obter mais informações, consulte a [seção. Edata (somente imagem)](#the-edata-section-image-only). <br/>                                                |
-| 104/120 <br/> | 8 <br/> | Importar tabela <br/>            | O tamanho e o endereço da tabela de importação. Para obter mais informações, consulte [a seção. iData](#the-idata-section).<br/>                                                                    |
-| 112/128 <br/> | 8 <br/> | Tabela de recursos <br/>          | O tamanho e o endereço da tabela de recursos. Para obter mais informações, consulte [a seção. rsrc](#the-rsrc-section).<br/>                                                                    |
-| 120/136 <br/> | 8 <br/> | Tabela de exceção <br/>         | O tamanho e o endereço da tabela de exceção. Para obter mais informações, consulte [a seção. pData](#the-pdata-section). <br/>                                                                |
-| 128/144 <br/> | 8 <br/> | Tabela de certificados <br/>       | O tamanho e o endereço da tabela do certificado de atributo. Para obter mais informações, consulte [a tabela de certificados de atributo (somente imagem)](#the-attribute-certificate-table-image-only). <br/> |
-| 136/152 <br/> | 8 <br/> | Tabela de realocação base <br/>   | O tamanho e o endereço da tabela de realocação de base. Para obter mais informações, consulte [a seção. realocação (somente imagem)](#the-reloc-section-image-only).<br/>                                   |
-| 144/160 <br/> | 8 <br/> | Depurar <br/>                   | O endereço e o tamanho inicial dos dados de depuração. Para obter mais informações, consulte [a seção. Debug](#the-debug-section).<br/>                                                             |
+| 96/112 <br/>  | 8 <br/> | Exportar tabela <br/>            | O endereço e o tamanho da tabela de exportação. Para obter mais informações, [consulte a seção .edata (somente imagem)](#the-edata-section-image-only). <br/>                                                |
+| 104/120 <br/> | 8 <br/> | Importar tabela <br/>            | O endereço e o tamanho da tabela de importação. Para obter mais informações, consulte [a seção .idata](#the-idata-section).<br/>                                                                    |
+| 112/128 <br/> | 8 <br/> | Tabela de recursos <br/>          | O endereço e o tamanho da tabela de recursos. Para obter mais informações, [consulte a seção .rsrc](#the-rsrc-section).<br/>                                                                    |
+| 120/136 <br/> | 8 <br/> | Tabela de exceção <br/>         | O endereço e o tamanho da tabela de exceção. Para obter mais informações, consulte [a seção .pdata](#the-pdata-section). <br/>                                                                |
+| 128/144 <br/> | 8 <br/> | Tabela de certificados <br/>       | O endereço e o tamanho da tabela do certificado de atributo. Para obter mais informações, consulte [A tabela de certificados de atributo (somente imagem)](#the-attribute-certificate-table-image-only). <br/> |
+| 136/152 <br/> | 8 <br/> | Tabela de realocação base <br/>   | O tamanho e o endereço da tabela de realocação base. Para obter mais informações, [consulte A seção .reloc (somente imagem)](#the-reloc-section-image-only).<br/>                                   |
+| 144/160 <br/> | 8 <br/> | Depurar <br/>                   | O tamanho e o endereço inicial dos dados de depuração. Para obter mais informações, consulte [a seção .debug](#the-debug-section).<br/>                                                             |
 | 152/168 <br/> | 8 <br/> | Arquitetura <br/>            | Reservado, deve ser 0 <br/>                                                                                                                                                      |
-| 160/176 <br/> | 8 <br/> | PTR global <br/>              | O RVA do valor a ser armazenado no registro do ponteiro global. O membro de tamanho dessa estrutura deve ser definido como zero. <br/>                                                 |
-| 168/184 <br/> | 8 <br/> | Tabela TLS <br/>               | O endereço e o tamanho da tabela do armazenamento local de threads (TLS). Para obter mais informações, [a seção. TLS](#the-tls-section).<br/>                                                        |
-| 176/192 <br/> | 8 <br/> | Carregar tabela de configuração <br/>       | O tamanho e o endereço da tabela de configuração de carregamento. Para obter mais informações, [a estrutura de configuração de carregamento (somente imagem)](#the-load-configuration-structure-image-only).<br/>       |
-| 184/200 <br/> | 8 <br/> | Importação associada <br/>            | O tamanho e o endereço da tabela de importação vinculada. <br/>                                                                                                                                 |
-| 192/208 <br/> | 8 <br/> | IAT <br/>                     | O tamanho e o endereço da tabela de endereços de importação. Para obter mais informações, consulte [importar tabela de endereços](#import-address-table).<br/>                                                 |
-| 200/216 <br/> | 8 <br/> | Atrasar descritor de importação <br/> | O tamanho e o endereço do descritor de importação de atraso. Para obter mais informações, consulte [atrasar-carregar tabelas de importação (somente imagem)](#delay-load-import-tables-image-only).<br/>                    |
-| 208/224 <br/> | 8 <br/> | Cabeçalho de tempo de execução CLR <br/>      | O tamanho e o endereço do cabeçalho do tempo de execução CLR. Para obter mais informações, consulte [a seção. cormeta (somente objeto)](#the-cormeta-section-object-only).<br/>                                |
+| 160/176 <br/> | 8 <br/> | Global Ptr <br/>              | O RVA do valor a ser armazenado no registro de ponteiro global. O membro de tamanho dessa estrutura deve ser definido como zero. <br/>                                                 |
+| 168/184 <br/> | 8 <br/> | Tabela TLS <br/>               | O endereço e o tamanho da tabela de armazenamento local do thread (TLS). Para obter mais informações, [consulte a seção .tls](#the-tls-section).<br/>                                                        |
+| 176/192 <br/> | 8 <br/> | Carregar tabela de configuração <br/>       | O tamanho e o endereço da tabela de configuração de carga. Para obter mais informações, consulte [A estrutura de configuração de carga (somente imagem)](#the-load-configuration-structure-image-only).<br/>       |
+| 184/200 <br/> | 8 <br/> | Importação vinculada <br/>            | O tamanho e o endereço da tabela de importação vinculados. <br/>                                                                                                                                 |
+| 192/208 <br/> | 8 <br/> | Iat <br/>                     | O endereço e o tamanho da tabela de endereços de importação. Para obter mais informações, consulte [Importar tabela de endereços](#import-address-table).<br/>                                                 |
+| 200/216 <br/> | 8 <br/> | Descritor de importação de atraso <br/> | O tamanho e o endereço do descritor de importação de atraso. Para obter mais informações, consulte [Tabelas de importação de carregamento de atraso (somente imagem)](#delay-load-import-tables-image-only).<br/>                    |
+| 208/224 <br/> | 8 <br/> | CLR Runtime Header <br/>      | O tamanho e o endereço do headtime do runtime do CLR. Para obter mais informações, [consulte a seção .cormeta (somente objeto).](#the-cormeta-section-object-only)<br/>                                |
 | 216/232 <br/> | 8 <br/> | Reservado, deve ser zero <br/>  |                                                                                                                                                                                      |
 
-A entrada da tabela de certificado aponta para uma tabela de certificados de atributo. Esses certificados não são carregados na memória como parte da imagem. Como tal, o primeiro campo dessa entrada, que normalmente é um RVA, é um ponteiro de arquivo em vez disso.
+A entrada Tabela de Certificados aponta para uma tabela de certificados de atributo. Esses certificados não são carregados na memória como parte da imagem. Assim, o primeiro campo dessa entrada, que normalmente é uma RVA, é um ponteiro de arquivo.
 
-## <a name="section-table-section-headers"></a>Tabela de seções (cabeçalhos de seção)
+## <a name="section-table-section-headers"></a>Tabela da seção (headers de seção)
 
 - [Sinalizadores de seção](#section-flags)
 - [Seções agrupadas (somente objeto)](#grouped-sections-object-only)
 
-Cada linha da tabela da seção é, na verdade, um cabeçalho de seção. Essa tabela imediatamente segue o cabeçalho opcional, se houver. Esse posicionamento é necessário porque o cabeçalho do arquivo não contém um ponteiro direto para a tabela da seção. Em vez disso, o local da tabela da seção é determinado pelo cálculo do local do primeiro byte após os cabeçalhos. Certifique-se de usar o tamanho do cabeçalho opcional, conforme especificado no cabeçalho do arquivo.
+Cada linha da tabela de seção é, na verdade, um header de seção. Esta tabela segue imediatamente o header opcional, se for o caso. Esse posicionamento é necessário porque o header do arquivo não contém um ponteiro direto para a tabela de seção. Em vez disso, o local da tabela de seção é determinado calculando o local do primeiro byte após os títulos. Certifique-se de usar o tamanho do header opcional, conforme especificado no header do arquivo.
 
-O número de entradas na tabela da seção é fornecido pelo campo NumberOfSections no cabeçalho do arquivo. As entradas na tabela da seção são numeradas a partir de um (1). As entradas da seção código e memória de dados estão na ordem escolhida pelo vinculador.
+O número de entradas na tabela de seção é determinado pelo campo NumberOfSections no header do arquivo. As entradas na tabela de seção são numeradas a partir de um (1). As entradas da seção de memória de dados e código estão na ordem escolhida pelo vinculador.
 
-Em um arquivo de imagem, o VAs para seções deve ser atribuído pelo vinculador para que ele esteja em ordem crescente e adjacente, e deve ser um múltiplo do valor de SectionAlignment no cabeçalho opcional.
+Em um arquivo de imagem, as VAs para seções devem ser atribuídas pelo vinculador para que elas sejam em ordem crescente e adjacentes, e devem ser um múltiplo do valor SectionAlignment no título opcional.
 
-Cada cabeçalho de seção (entrada de tabela de seção) tem o seguinte formato, para um total de 40 bytes por entrada.
+Cada header de seção (entrada de tabela de seção) tem o seguinte formato, para um total de 40 bytes por entrada.
 
 
 
@@ -438,7 +438,7 @@ O nome da seção em um arquivo de imagem nunca contém um "$"? .
   - [Representação do nome do símbolo](#symbol-name-representation)
   - [Valores de número de seção](#section-number-values)
   - [Representação de tipo](#type-representation)
-  - [Classe de armazenamento](#storage-class)
+  - [Armazenamento Classes](#storage-class)
 - [Registros de símbolo auxiliares](#auxiliary-symbol-records)
   - [Formato auxiliar 1: definições de função](#auxiliary-format-1-function-definitions)
   - [Formato auxiliar 2:. BF e símbolos. EF](#auxiliary-format-2-bf-and-ef-symbols)
@@ -496,37 +496,37 @@ Para cada seção em um arquivo de objeto, uma matriz de registros de compriment
 
  
 
-Se o símbolo referido pelo campo SymbolTableIndex tiver a seção classe de armazenamento de \_ classes Sym da classe Storage \_ \_ , o endereço do símbolo será o início da seção. A seção geralmente está no mesmo arquivo, exceto quando o arquivo de objeto faz parte de um arquivo morto (biblioteca). Nesse caso, a seção pode ser encontrada em qualquer outro arquivo de objeto no arquivo que tenha o mesmo nome de membro de arquivo como o arquivo de objeto atual. (A relação com o nome de membro de arquivo é usada na vinculação de tabelas de importação, ou seja, a seção. iData.)
+Se o símbolo referido pelo campo SymbolTableIndex tiver a seção classe de armazenamento de \_ classes Sym da classe Storage \_ \_ , o endereço do símbolo será o início da seção. A seção geralmente está no mesmo arquivo, exceto quando o arquivo de objeto faz parte de um arquivo morto (biblioteca). Nesse caso, a seção pode ser encontrada em qualquer outro arquivo de objeto no arquivo que tenha o mesmo nome de membro de arquivo como o arquivo de objeto atual. (A relação com o nome do membro morto é usada na vinculação de tabelas de importação, ou seja, na seção .idata.)
 
 #### <a name="type-indicators"></a>Indicadores de tipo
 
-O campo tipo do registro de realocação indica que tipo de realocação deve ser executada. Diferentes tipos de realocação são definidos para cada tipo de computador.
+O campo Tipo do registro de realocação indica que tipo de realocação deve ser executado. Diferentes tipos de realocação são definidos para cada tipo de computador.
 
 ##### <a name="x64-processors"></a>Processadores x64
 
-Os seguintes indicadores de tipo de realocação são definidos para x64 e processadores compatíveis.
+Os seguintes indicadores de tipo de realocação são definidos para processadores x64 e compatíveis.
 
 
 
 | Constante                                | Valor              | Descrição                                                                                                                                                   |
 |-----------------------------------------|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| IMAGEM \_ de \_ AMD64 de rel \_ absoluta <br/> | 0x0000 <br/> | A realocação é ignorada. <br/>                                                                                                                        |
-| \_ADDR64 de \_ AMD64 de rel de imagem \_ <br/>   | 0x0001 <br/> | O VA de 64 bits do destino de realocação. <br/>                                                                                                           |
-| \_ADDR32 de \_ AMD64 de rel de imagem \_ <br/>   | 0x0002 <br/> | O VA de 32 bits do destino de realocação. <br/>                                                                                                           |
-| \_ADDR32NB de \_ AMD64 de rel de imagem \_ <br/> | 0x0003 <br/> | O endereço de 32 bits sem uma base de imagem (RVA). <br/>                                                                                                   |
-| \_REL32 de \_ AMD64 de rel de imagem \_ <br/>    | 0x0004 <br/> | O endereço relativo de 32 bits do byte após a realocação. <br/>                                                                               |
-| IMAGE \_ rel \_ AMD64 \_ REL32 \_ 1 <br/> | 0x0005 <br/> | O endereço de 32 bits relativo à distância de byte 1 da realocação. <br/>                                                                               |
-| IMAGE \_ rel \_ AMD64 \_ REL32 \_ 2 <br/> | 0x0006 <br/> | O endereço de 32 bits relativo à distância de byte 2 da realocação. <br/>                                                                               |
-| IMAGE \_ rel \_ AMD64 \_ REL32 \_ 3 <br/> | 0x0007 <br/> | O endereço de 32 bits relativo à distância de byte 3 da realocação. <br/>                                                                               |
-| IMAGE \_ rel \_ AMD64 \_ REL32 \_ 4 <br/> | 0x0008 <br/> | O endereço de 32 bits relativo à distância de byte 4 da realocação. <br/>                                                                               |
-| IMAGE \_ rel \_ AMD64 \_ REL32 \_ 5 <br/> | 0x0009 <br/> | O endereço de 32 bits relativo à distância de byte 5 da realocação. <br/>                                                                               |
-| \_ \_ Seção AMD64 de rel de imagem \_ <br/>  | 0x000A <br/> | O índice da seção de 16 bits da seção que contém o destino. Isso é usado para dar suporte a informações de depuração. <br/>                                  |
-| \_SECREL de \_ AMD64 de rel de imagem \_ <br/>   | 0x000B <br/> | O deslocamento de 32 bits do destino desde o início de sua seção. Isso é usado para dar suporte a informações de depuração e armazenamento local de thread estático. <br/> |
-| \_SECREL7 de \_ AMD64 de rel de imagem \_ <br/>  | 0x000C <br/> | Um deslocamento não assinado de 7 bits da base da seção que contém o destino. <br/>                                                                    |
-| \_ \_ Token AMD64 de rel de imagem \_ <br/>    | 0x000D <br/> | Tokens CLR. <br/>                                                                                                                                       |
-| \_SREL32 de \_ AMD64 de rel de imagem \_ <br/>   | 0x000E <br/> | Um valor dependente de span com sinal de 32 bits emitido para o objeto. <br/>                                                                                     |
-| Par imagem de \_ AMD64 de rel \_ \_ <br/>     | 0x000F <br/> | Um par que deve seguir imediatamente cada valor dependente de span. <br/>                                                                                   |
-| \_SSPAN32 de \_ AMD64 de rel de imagem \_ <br/>  | 0x0010 <br/> | Um valor dependente de span com sinal de 32 bits que é aplicado no momento do link. <br/>                                                                                |
+| IMAGE \_ REL \_ AMD64 \_ ABSOLUTE <br/> | 0x0000 <br/> | A realocação é ignorada. <br/>                                                                                                                        |
+| IMAGE \_ REL \_ AMD64 \_ ADDR64 <br/>   | 0x0001 <br/> | O VA de 64 bits do destino de realocação. <br/>                                                                                                           |
+| IMAGE \_ REL \_ AMD64 \_ ADDR32 <br/>   | 0x0002 <br/> | O VA de 32 bits do destino de realocação. <br/>                                                                                                           |
+| IMAGE \_ REL \_ AMD64 \_ ADDR32NB <br/> | 0x0003 <br/> | O endereço de 32 bits sem uma RVA (base de imagem). <br/>                                                                                                   |
+| IMAGE \_ REL \_ AMD64 \_ REL32 <br/>    | 0x0004 <br/> | O endereço relativo de 32 bits do byte após a realocação. <br/>                                                                               |
+| IMAGE \_ REL \_ AMD64 \_ REL32 \_ 1 <br/> | 0x0005 <br/> | O endereço de 32 bits em relação à distância de byte 1 da realocação. <br/>                                                                               |
+| IMAGE \_ REL \_ AMD64 \_ REL32 \_ 2 <br/> | 0x0006 <br/> | O endereço de 32 bits em relação à distância de byte 2 da realocação. <br/>                                                                               |
+| IMAGE \_ REL \_ AMD64 \_ REL32 \_ 3 <br/> | 0x0007 <br/> | O endereço de 32 bits em relação à distância de byte 3 da realocação. <br/>                                                                               |
+| IMAGE \_ REL \_ AMD64 \_ REL32 \_ 4 <br/> | 0x0008 <br/> | O endereço de 32 bits em relação à distância de byte 4 da realocação. <br/>                                                                               |
+| IMAGE \_ REL \_ AMD64 \_ REL32 \_ 5 <br/> | 0x0009 <br/> | O endereço de 32 bits em relação à distância de byte 5 da realocação. <br/>                                                                               |
+| IMAGE \_ REL \_ AMD64 \_ SECTION <br/>  | 0x000A <br/> | O índice da seção de 16 bits da seção que contém o destino. Isso é usado para dar suporte a informações de depuração. <br/>                                  |
+| IMAGE \_ REL \_ AMD64 \_ SECREL <br/>   | 0x000B <br/> | O deslocamento de 32 bits do destino do início de sua seção. Isso é usado para dar suporte a informações de depuração e armazenamento local de thread estático. <br/> |
+| IMAGE \_ REL \_ AMD64 \_ SECREL7 <br/>  | 0x000C <br/> | Um deslocamento sem assinatura de 7 bits da base da seção que contém o destino. <br/>                                                                    |
+| IMAGE \_ REL \_ AMD64 \_ TOKEN <br/>    | 0x000D <br/> | Tokens CLR. <br/>                                                                                                                                       |
+| IMAGE \_ REL \_ AMD64 \_ SREL32 <br/>   | 0x000E <br/> | Um valor dependente de intervalo assinado de 32 bits emitido para o objeto . <br/>                                                                                     |
+| IMAGE \_ REL \_ AMD64 \_ PAIR <br/>     | 0x000F <br/> | Um par que deve seguir imediatamente cada valor dependente de intervalo. <br/>                                                                                   |
+| IMAGE \_ REL \_ AMD64 \_ SSPAN32 <br/>  | 0x0010 <br/> | Um valor dependente de intervalo assinado de 32 bits que é aplicado no momento do link. <br/>                                                                                |
 
 
 
@@ -540,21 +540,21 @@ Os seguintes indicadores de tipo de realocação são definidos para processador
 
 | Constante                                | Valor              | Descrição                                                                                                                                                                                                                                                            |
 |-----------------------------------------|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| IMAGEM \_ do \_ ARM de rel \_ absoluto <br/>   | 0x0000 <br/> | A realocação é ignorada. <br/>                                                                                                                                                                                                                                 |
-| \_ADDR32 do \_ ARM de rel de imagem \_ <br/>     | 0x0001 <br/> | O VA de 32 bits do destino. <br/>                                                                                                                                                                                                                               |
-| \_ADDR32NB do \_ ARM de rel de imagem \_ <br/>   | 0x0002 <br/> | O RVA de 32 bits do destino. <br/>                                                                                                                                                                                                                              |
-| \_BRANCH24 do \_ ARM de rel de imagem \_ <br/>   | 0x0003 <br/> | O deslocamento relativo de 24 bits para o destino. <br/>                                                                                                                                                                                                            |
-| \_BRANCH11 do \_ ARM de rel de imagem \_ <br/>   | 0x0004 <br/> | A referência a uma chamada de sub-rotina. A referência consiste em instruções de 2 16 bits com deslocamentos de 11 bits. <br/>                                                                                                                                                 |
-| \_REL32 do \_ ARM de rel de imagem \_ <br/>      | 0x000A <br/> | O endereço relativo de 32 bits do byte após a realocação. <br/>                                                                                                                                                                                        |
-| \_ \_ seção ARM de rel de imagem \_ <br/>    | 0x000E <br/> | O índice da seção de 16 bits da seção que contém o destino. Isso é usado para dar suporte a informações de depuração. <br/>                                                                                                                                           |
-| \_SECREL do \_ ARM de rel de imagem \_ <br/>     | 0x000F <br/> | O deslocamento de 32 bits do destino desde o início de sua seção. Isso é usado para dar suporte a informações de depuração e armazenamento local de thread estático. <br/>                                                                                                          |
-| \_MOV32 do \_ ARM de rel de imagem \_ <br/>      | 0x0010 <br/> | O VA de 32 bits do destino. Essa realocação é aplicada usando uma instrução MOVW para os 16 bits baixos seguidos por um MOVT para os 16 bits superiores. <br/>                                                                                                              |
-| IMAGEM \_ \_ MOV32 do Thumb rel \_ <br/>    | 0x0011 <br/> | O VA de 32 bits do destino. Essa realocação é aplicada usando uma instrução MOVW para os 16 bits baixos seguidos por um MOVT para os 16 bits superiores. <br/>                                                                                                              |
-| IMAGEM \_ \_ BRANCH20 do Thumb rel \_ <br/> | 0x0012 <br/> | A instrução é corrigida com o deslocamento relativo de 21 bits para o destino alinhado de 2 bytes. O bit menos significativo da substituição é sempre zero e não é armazenado. Essa relocação corresponde a uma instrução B condicional de Thumb de 2 32 bits. <br/> |
+| IMAGE \_ REL \_ ARM \_ ABSOLUTE <br/>   | 0x0000 <br/> | A realocação é ignorada. <br/>                                                                                                                                                                                                                                 |
+| IMAGE \_ REL \_ ARM \_ ADDR32 <br/>     | 0x0001 <br/> | O VA de 32 bits do destino. <br/>                                                                                                                                                                                                                               |
+| IMAGE \_ REL \_ ARM \_ ADDR32NB <br/>   | 0x0002 <br/> | O RVA de 32 bits do destino. <br/>                                                                                                                                                                                                                              |
+| \_REL \_ DE IMAGEM ARM \_ BRANCH24 <br/>   | 0x0003 <br/> | O deslocamento relativo de 24 bits para o destino. <br/>                                                                                                                                                                                                            |
+| \_REL \_ DE IMAGEM ARM \_ BRANCH11 <br/>   | 0x0004 <br/> | A referência a uma chamada de sub-rotina. A referência consiste em duas instruções de 16 bits com deslocamentos de 11 bits. <br/>                                                                                                                                                 |
+| \_REL \_ ARM DE IMAGEM \_ REL32 <br/>      | 0x000A <br/> | O endereço relativo de 32 bits do byte após a realocação. <br/>                                                                                                                                                                                        |
+| SEÇÃO ARM \_ DE REL \_ DE \_ IMAGEM <br/>    | 0x000E <br/> | O índice da seção de 16 bits da seção que contém o destino. Isso é usado para dar suporte a informações de depuração. <br/>                                                                                                                                           |
+| IMAGE \_ REL \_ ARM \_ SECREL <br/>     | 0x000F <br/> | O deslocamento de 32 bits do destino do início de sua seção. Isso é usado para dar suporte a informações de depuração e armazenamento local de thread estático. <br/>                                                                                                          |
+| IMAGE \_ REL \_ ARM \_ MOV32 <br/>      | 0x0010 <br/> | O VA de 32 bits do destino. Essa realocação é aplicada usando uma instrução MOVW para os 16 bits baixos seguidos por um MOVT para os 16 bits altos. <br/>                                                                                                              |
+| IMAGE \_ REL \_ THUMB \_ MOV32 <br/>    | 0x0011 <br/> | O VA de 32 bits do destino. Essa realocação é aplicada usando uma instrução MOVW para os 16 bits baixos seguidos por um MOVT para os 16 bits altos. <br/>                                                                                                              |
+| BRANCH \_ DE MINIATURA REL DA \_ \_ IMAGEM20 <br/> | 0x0012 <br/> | A instrução é corrigida com o deslocamento relativo de 21 bits para o destino alinhado de 2 byte. O bit menos significativo do deslocamento é sempre zero e não é armazenado. Essa realocação corresponde a uma instrução B condicional de 32 bits de thumb-2. <br/> |
 | Não usado <br/>                      | 0x0013 <br/> |                                                                                                                                                                                                                                                                        |
-| IMAGEM \_ \_ BRANCH24 do Thumb rel \_ <br/> | 0x0014 <br/> | A instrução é corrigida com o deslocamento relativo de 25 bits para o destino alinhado de 2 bytes. O bit menos significativo do deslocamento é zero e não é armazenado. Essa relocação corresponde a uma instrução Thumb-2 B. <br/>                            |
-| IMAGEM \_ \_ BLX23 do Thumb rel \_ <br/>    | 0x0015 <br/> | A instrução é corrigida com o deslocamento relativo de 25 bits para o destino alinhado de 4 bytes. Os dois bits baixos da substituição são zero e não são armazenados. <br/> Essa relocação corresponde a uma instrução BLX Thumb-2. <br/>                      |
-| \_par de \_ ARM de rel de imagem \_ <br/>       | 0x0016 <br/> | A realocação é válida somente quando segue imediatamente um REFHI de ARM \_ ou \_ REFHI Thumb. Seu SymbolTableIndex contém uma substituição e não um índice na tabela de símbolos. <br/>                                                                                |
+| BRANCH \_ DE MINIATURA REL DA \_ \_ IMAGEM24 <br/> | 0x0014 <br/> | A instrução é corrigida com o deslocamento relativo de 25 bits para o destino alinhado de 2 byte. O bit menos significativo do deslocamento é zero e não é armazenado. Essa realocação corresponde a uma instrução Thumb-2 B. <br/>                            |
+| THUMB \_ REL \_ DA IMAGEM \_ BLX23 <br/>    | 0x0015 <br/> | A instrução é corrigida com o deslocamento relativo de 25 bits para o destino alinhado de 4 byte. Os 2 bits baixos do deslocamento são zero e não são armazenados. <br/> Essa realocação corresponde a uma instrução BLX Thumb-2. <br/>                      |
+| PAR DE \_ ARM DE REL \_ DE \_ IMAGEM <br/>       | 0x0016 <br/> | A realocação é válida somente quando segue imediatamente um REFHI arm \_ ou \_ THUMB REFHI. Seu SymbolTableIndex contém um deslocamento e não um índice na tabela de símbolos. <br/>                                                                                |
 
 
 
@@ -568,37 +568,37 @@ Os seguintes indicadores de tipo de realocação são definidos para processador
 
 | Constante                                       | Valor              | Descrição                                                                                                                                                   |
 |------------------------------------------------|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| IMAGEM \_ ARM64 de rel \_ \_ absoluta <br/>        | 0x0000 <br/> | A realocação é ignorada. <br/>                                                                                                                        |
-| \_ARM64 rel \_ \_ ADDR32 da imagem <br/>          | 0x0001 <br/> | O VA de 32 bits do destino. <br/>                                                                                                                      |
-| \_ARM64 rel \_ \_ ADDR32NB da imagem <br/>        | 0x0002 <br/> | O RVA de 32 bits do destino. <br/>                                                                                                                     |
-| \_ARM64 rel \_ \_ BRANCH26 da imagem <br/>        | 0x0003 <br/> | O deslocamento relativo de 26 bits para o destino, para as instruções B e BL. <br/>                                                                        |
-| IMAGE \_ rel \_ ARM64 \_ PAGEBASE \_ REL21 <br/> | 0x0004 <br/> | A base da página do destino, para instrução ADRP. <br/>                                                                                                |
-| \_ARM64 rel \_ \_ REL21 da imagem <br/>           | 0x0005 <br/> | O deslocamento relativo de 12 bits para o destino, para instrução ADR <br/>                                                                               |
-| IMAGE \_ rel \_ ARM64 \_ PAGEOFFSET \_ 12A <br/> | 0x0006 <br/> | O deslocamento de página de 12 bits do destino para instruções adiciona/adiciona (immediate) com Shift zero. <br/>                                                      |
-| IMAGE \_ rel \_ ARM64 \_ PAGEOFFSET \_ 12L <br/> | 0x0007 <br/> | O deslocamento de página de 12 bits do destino, para a instrução LDR (indexada e não assinada imediatamente). <br/>                                                          |
-| \_ARM64 rel \_ \_ SECREL da imagem <br/>          | 0x0008 <br/> | O deslocamento de 32 bits do destino desde o início de sua seção. Isso é usado para dar suporte a informações de depuração e armazenamento local de thread estático. <br/> |
-| IMAGE \_ rel \_ ARM64 \_ SECREL \_ LOW12A <br/>  | 0x0009 <br/> | Bit 0:11 do deslocamento da seção do destino, para obter instruções, adicione/ADDS (imediato) com Shift zero. <br/>                                                  |
-| IMAGE \_ rel \_ ARM64 \_ SECREL \_ HIGH12A <br/> | 0x000A <br/> | Bit 12:23 do deslocamento da seção do destino, para obter instruções, adicione/ADDS (imediato) com Shift zero. <br/>                                                 |
-| IMAGE \_ rel \_ ARM64 \_ SECREL \_ LOW12L <br/>  | 0x000B <br/> | Bit 0:11 do deslocamento da seção do destino, para a instrução LDR (indexada e não assinada imediatamente). <br/>                                                      |
-| \_ \_ Token ARM64 rel de imagem \_ <br/>           | 0x000C <br/> | Token CLR. <br/>                                                                                                                                        |
-| \_ \_ Seção ARM64 rel de imagem \_ <br/>         | 0x000D <br/> | O índice da seção de 16 bits da seção que contém o destino. Isso é usado para dar suporte a informações de depuração. <br/>                                  |
-| \_ARM64 rel \_ \_ ADDR64 da imagem <br/>          | 0x000E <br/> | O VA de 64 bits do destino de realocação. <br/>                                                                                                           |
-| \_ARM64 rel \_ \_ BRANCH19 da imagem <br/>        | 0x000F <br/> | O deslocamento de 19 bits para o destino de realocação para a instrução B condicional. <br/>                                                                        |
-| \_ARM64 rel \_ \_ BRANCH14 da imagem <br/>        | 0x0010 <br/> | O deslocamento de 14 bits para o destino de realocação, para obter instruções TBZ e TBNZ. <br/>                                                                        |
-| \_ARM64 rel \_ \_ REL32 da imagem <br/>           | 0x0011 <br/> | O endereço relativo de 32 bits do byte após a realocação. <br/>                                                                               |
+| IMAGE \_ REL \_ ARM64 \_ ABSOLUTE <br/>        | 0x0000 <br/> | A realocação é ignorada. <br/>                                                                                                                        |
+| IMAGE \_ REL \_ ARM64 \_ ADDR32 <br/>          | 0x0001 <br/> | O VA de 32 bits do destino. <br/>                                                                                                                      |
+| IMAGE \_ REL \_ ARM64 \_ ADDR32NB <br/>        | 0x0002 <br/> | O RVA de 32 bits do destino. <br/>                                                                                                                     |
+| REL \_ DE \_ IMAGEM ARM64 \_ BRANCH26 <br/>        | 0x0003 <br/> | O deslocamento relativo de 26 bits para o destino, para instruções B e BL. <br/>                                                                        |
+| REL \_ DE \_ IMAGEM ARM64 \_ PAGEBASE \_ REL21 <br/> | 0x0004 <br/> | A base de página do destino, para instrução ADRP. <br/>                                                                                                |
+| REL \_ DE \_ IMAGEM ARM64 \_ REL21 <br/>           | 0x0005 <br/> | O deslocamento relativo de 12 bits para o destino, para instrução ADR <br/>                                                                               |
+| IMAGE \_ REL \_ ARM64 \_ PAGEOFFSET \_ 12A <br/> | 0x0006 <br/> | O deslocamento de página de 12 bits do destino, para obter instruções ADD/ADDS (imediato) com deslocamento zero. <br/>                                                      |
+| IMAGE \_ REL \_ ARM64 \_ PAGEOFFSET \_ 12L <br/> | 0x0007 <br/> | O deslocamento de página de 12 bits do destino, para a Instrução LDR (indexada, sem assinatura imediata). <br/>                                                          |
+| IMAGE \_ REL \_ ARM64 \_ SECREL <br/>          | 0x0008 <br/> | O deslocamento de 32 bits do destino do início de sua seção. Isso é usado para dar suporte a informações de depuração e armazenamento local de thread estático. <br/> |
+| IMAGE \_ REL \_ ARM64 \_ SECREL \_ LOW12A <br/>  | 0x0009 <br/> | Bit 0:11 do deslocamento da seção do destino, para obter instruções ADD/ADDS (imediato) com deslocamento zero. <br/>                                                  |
+| IMAGE \_ REL \_ ARM64 \_ SECREL \_ HIGH12A <br/> | 0x000A <br/> | Bit 12:23 do deslocamento da seção do destino, para obter instruções ADD/ADDS (imediato) com deslocamento zero. <br/>                                                 |
+| IMAGE \_ REL \_ ARM64 \_ SECREL \_ LOW12L <br/>  | 0x000B <br/> | Bit 0:11 do deslocamento da seção do destino, para a Instrução LDR (indexada, sem assinatura imediata). <br/>                                                      |
+| \_ \_ TOKEN ARM64 DE REL DE \_ IMAGEM <br/>           | 0x000C <br/> | Token CLR. <br/>                                                                                                                                        |
+| SEÇÃO \_ REL \_ ARM64 \_ DA IMAGEM <br/>         | 0x000D <br/> | O índice da seção de 16 bits da seção que contém o destino. Isso é usado para dar suporte a informações de depuração. <br/>                                  |
+| IMAGE \_ REL \_ ARM64 \_ ADDR64 <br/>          | 0x000E <br/> | O VA de 64 bits do destino de realocação. <br/>                                                                                                           |
+| REL \_ DE \_ IMAGEM ARM64 \_ BRANCH19 <br/>        | 0x000F <br/> | O deslocamento de 19 bits para o destino de realocação, para instrução B condicional. <br/>                                                                        |
+| REL \_ DE \_ IMAGEM ARM64 \_ BRANCH14 <br/>        | 0x0010 <br/> | O deslocamento de 14 bits para o destino de realocação, para obter instruções TBZ e TBNZ. <br/>                                                                        |
+| REL \_ DE \_ IMAGEM ARM64 \_ REL32 <br/>           | 0x0011 <br/> | O endereço relativo de 32 bits do byte após a realocação. <br/>                                                                               |
 
-##### <a name="hitachi-superh-processors"></a>Processadores Hitachi SuperH
+##### <a name="hitachi-superh-processors"></a>Processadores de SuperH da Hitachi
 
-Os seguintes indicadores de tipo de realocação são definidos para processadores SH3 e SH4. As relocalidades específicas do SH5 são indicadas como SHM (SH Media).
+Os indicadores de tipo de realocação a seguir são definidos para processadores SH3 e SH4. As realocações específicas de SH5 são notadas como SHM (sh media).
 
 
 
 | Constante                                      | Valor              | Descrição                                                                                                                                                                                                                |
 |-----------------------------------------------|--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| IMAGEM \_ SH3 de rel \_ \_ absoluta <br/>         | 0x0000 <br/> | A realocação é ignorada. <br/>                                                                                                                                                                                     |
-| \_SH3 rel \_ \_ DIRECT16 da imagem <br/>         | 0x0001 <br/> | Uma referência ao local de 16 bits que contém o VA do símbolo de destino. <br/>                                                                                                                                  |
-| \_SH3 rel \_ \_ DIRECT32 da imagem <br/>         | 0x0002 <br/> | O VA de 32 bits do símbolo de destino. <br/>                                                                                                                                                                            |
-| \_SH3 rel \_ \_ DIRECT8 da imagem <br/>          | 0x0003 <br/> | Uma referência ao local de 8 bits que contém o VA do símbolo de destino. <br/>                                                                                                                                   |
+| IMAGE \_ REL \_ SH3 \_ ABSOLUTE <br/>         | 0x0000 <br/> | A realocação é ignorada. <br/>                                                                                                                                                                                     |
+| IMAGE \_ REL \_ SH3 \_ DIRECT16 <br/>         | 0x0001 <br/> | Uma referência ao local de 16 bits que contém a VA do símbolo de destino. <br/>                                                                                                                                  |
+| IMAGE \_ REL \_ SH3 \_ DIRECT32 <br/>         | 0x0002 <br/> | A VA de 32 bits do símbolo de destino. <br/>                                                                                                                                                                            |
+| IMAGE \_ REL \_ SH3 \_ DIRECT8 <br/>          | 0x0003 <br/> | Uma referência ao local de 8 bits que contém o VA do símbolo de destino. <br/>                                                                                                                                   |
 | \_Word rel \_ SH3 \_ DIRECT8 \_ <br/>    | 0x0004 <br/> | Uma referência à instrução de 8 bits que contém o VA de 16 bits efetivo do símbolo de destino. <br/>                                                                                                               |
 | IMAGE \_ rel \_ SH3 \_ DIRECT8 \_ Long <br/>    | 0x0005 <br/> | Uma referência à instrução de 8 bits que contém o VA de 32 bits efetivo do símbolo de destino. <br/>                                                                                                               |
 | \_SH3 rel \_ \_ DIRECT4 da imagem <br/>          | 0x0006 <br/> | Uma referência ao local de 8 bits cujos poucos bits baixos contêm o VA do símbolo de destino. <br/>                                                                                                                        |
@@ -626,9 +626,9 @@ Os seguintes indicadores de tipo de realocação são definidos para processador
 
  
 
-##### <a name="ibm-powerpc-processors"></a>Processadores IBM PowerPC
+##### <a name="ibm-powerpc-processors"></a>processadores IBM PowerPC
 
-Os seguintes indicadores de tipo de realocação são definidos para processadores PowerPC.
+os seguintes indicadores de tipo de realocação são definidos para processadores de PowerPC.
 
 
 
@@ -666,11 +666,11 @@ Os seguintes indicadores de tipo de realocação são definidos para processador
 | Constante                               | Valor              | Descrição                                                                                                                                                   |
 |----------------------------------------|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | IMAGEM \_ de \_ pasta de rel \_ absoluta <br/> | 0x0000 <br/> | A realocação é ignorada. <br/>                                                                                                                        |
-| \_DIR16 de \_ pasta de rel de imagem \_ <br/>    | 0x0001 <br/> | Não há suporte. <br/>                                                                                                                                    |
-| \_REL16 de \_ pasta de rel de imagem \_ <br/>    | 0x0002 <br/> | Não há suporte. <br/>                                                                                                                                    |
+| \_DIR16 de \_ pasta de rel de imagem \_ <br/>    | 0x0001 <br/> | Sem suporte. <br/>                                                                                                                                    |
+| \_REL16 de \_ pasta de rel de imagem \_ <br/>    | 0x0002 <br/> | Sem suporte. <br/>                                                                                                                                    |
 | \_DIR32 de \_ pasta de rel de imagem \_ <br/>    | 0x0006 <br/> | O VA de 32 bits do destino. <br/>                                                                                                                           |
 | \_DIR32NB de \_ pasta de rel de imagem \_ <br/>  | 0x0007 <br/> | O RVA de 32 bits do destino. <br/>                                                                                                                          |
-| \_SEG12 de \_ pasta de rel de imagem \_ <br/>    | 0x0009 <br/> | Não há suporte. <br/>                                                                                                                                    |
+| \_SEG12 de \_ pasta de rel de imagem \_ <br/>    | 0x0009 <br/> | Sem suporte. <br/>                                                                                                                                    |
 | \_ \_ Seção i386 da imagem de rel \_ <br/>  | 0x000A <br/> | O índice da seção de 16 bits da seção que contém o destino. Isso é usado para dar suporte a informações de depuração. <br/>                                  |
 | \_SECREL de \_ pasta de rel de imagem \_ <br/>   | 0x000B <br/> | O deslocamento de 32 bits do destino desde o início de sua seção. Isso é usado para dar suporte a informações de depuração e armazenamento local de thread estático. <br/> |
 | \_ \_ Token i386 de rel de imagem \_ <br/>    | 0x000C <br/> | O token CLR. <br/>                                                                                                                                    |
@@ -715,8 +715,8 @@ Os seguintes indicadores de tipo de realocação são definidos para a família 
 | \_PCREL60I rel \_ IA64 de imagem \_ <br/>   | 0x0018 <br/> | Uma correção relativa a um PC de 60 bits. Se o deslocamento de destino couber em um campo de 25 bits assinado, converta todo o pacote em um pacote de MIB com NOP. No slot 1 e uma instrução de 25 bits (4 bits mais baixos todos os zero e ignorados) BR no slot 2. <br/>                                                                                                   |
 | \_PCREL60M rel \_ IA64 de imagem \_ <br/>   | 0x0019 <br/> | Uma correção relativa a um PC de 60 bits. Se o deslocamento de destino couber em um campo de 25 bits assinado, converta todo o pacote em um pacote MMB com NOP. M no slot 1 e uma instrução de 25 bits (4 bits mais baixos todos os zero e removido) BR no slot 2. <br/>                                                                                                   |
 | \_IMMGPREL64 rel \_ IA64 de imagem \_ <br/> | 0x001a <br/> | Uma correção de GP relativa de 64 bits. <br/>                                                                                                                                                                                                                                                                                                         |
-| \_ \_ Token IA64 de rel de imagem \_ <br/>      | 0x001b <br/> | Um token CLR. <br/>                                                                                                                                                                                                                                                                                                                        |
-| \_GPREL32 rel \_ IA64 de imagem \_ <br/>    | 0x001c <br/> | Uma correção de GP relativa de 32 bits. <br/>                                                                                                                                                                                                                                                                                                         |
+| \_ \_ Token IA64 de rel de imagem \_ <br/>      | 0x011C <br/> | Um token CLR. <br/>                                                                                                                                                                                                                                                                                                                        |
+| \_GPREL32 rel \_ IA64 de imagem \_ <br/>    | 0x011B <br/> | Uma correção de GP relativa de 32 bits. <br/>                                                                                                                                                                                                                                                                                                         |
 | \_ \_ Adendo IA64 da \_ imagem <br/>     | 0x001F <br/> | A realocação é válida somente quando segue imediatamente uma das seguintes realocações: IMM14, IMM22, IMM64, GPREL22, LTOFF22, LTOFF64, SECREL22, SECREL64I ou SECREL32. Seu valor contém o adendo para aplicar a instruções em um pacote, não para dados. <br/>                                                                  |
 
 
@@ -832,7 +832,7 @@ int ReverseSign(int i)
 
 ### <a name="coff-symbol-table"></a>Tabela de símbolos COFF
 
-A tabela de símbolos nesta seção é herdada do formato COFF tradicional. É diferente de Microsoft Visual C++ informações de depuração. Um arquivo pode conter uma tabela de símbolos COFF e Visual C++ informações de depuração, e as duas são mantidas separadas. Algumas ferramentas da Microsoft usam a tabela de símbolos para fins limitados, mas importantes, como a comunicação de informações COMDAT para o vinculador. Nomes de seção e nomes de arquivo, bem como símbolos de dados e de código, são listados na tabela de símbolos.
+A tabela de símbolos nesta seção é herdada do formato COFF tradicional. é diferente de Microsoft Visual C++ informações de depuração. Um arquivo pode conter uma tabela de símbolos COFF e Visual C++ informações de depuração, e as duas são mantidas separadas. Algumas ferramentas da Microsoft usam a tabela de símbolos para fins limitados, mas importantes, como a comunicação de informações COMDAT para o vinculador. Nomes de seção e nomes de arquivo, bem como símbolos de dados e de código, são listados na tabela de símbolos.
 
 O local da tabela de símbolos é indicado no cabeçalho COFF.
 
@@ -846,7 +846,7 @@ A tabela de símbolos é uma matriz de registros, cada um com 18 bytes de compri
 | 8 <br/>  | 4 <br/> | Valor <br/>              | O valor que está associado ao símbolo. A interpretação desse campo depende de SectionNumber e StorageClass. Um significado típico é o endereço relocável. <br/>                                                         |
 | 12 <br/> | 2 <br/> | SectionNumber <br/>      | O inteiro assinado que identifica a seção, usando um índice baseado em um na tabela da seção. Alguns valores têm um significado especial, conforme definido na seção tópico 5.4.2, "valores de número de seção". <br/>                                         |
 | 14 <br/> | 2 <br/> | Tipo <br/>               | Um número que representa o tipo. As ferramentas da Microsoft definem esse campo como 0x20 (Function) ou 0x0 (não uma função). Para obter mais informações, consulte [representação de tipo](#type-representation). <br/>                                                |
-| 16 <br/> | 1 <br/> | StorageClass <br/>       | Um valor enumerado que representa a classe de armazenamento. Para obter mais informações, consulte [classe de armazenamento](#storage-class). <br/>                                                                                                                   |
+| 16 <br/> | 1 <br/> | StorageClass <br/>       | Um valor enumerado que representa a classe de armazenamento. para obter mais informações, consulte [classe Armazenamento](#storage-class). <br/>                                                                                                                   |
 | 17 <br/> | 1 <br/> | NumberOfAuxSymbols <br/> | O número de entradas da tabela de símbolos auxiliares que seguem este registro. <br/>                                                                                                                                                           |
 
 
@@ -915,7 +915,7 @@ Os valores a seguir são definidos para o tipo base, embora as ferramentas da Mi
 | tipo de imagem \_ Sym \_ \_ void <br/>   | 1 <br/>  | Nenhum tipo válido; usado com ponteiros e funções void <br/>                       |
 | \_caractere de \_ tipo \_ Sym de imagem <br/>   | 2 <br/>  | Um caractere (byte assinado) <br/>                                                  |
 | tipo de imagem \_ Sym \_ \_ Short <br/>  | 3 <br/>  | Um inteiro assinado de 2 bytes <br/>                                                    |
-| tipo de imagem \_ Sym \_ \_ int <br/>    | 4 <br/>  | Um tipo inteiro natural (normalmente 4 bytes no Windows) <br/>                       |
+| tipo de imagem \_ Sym \_ \_ int <br/>    | 4 <br/>  | Um tipo inteiro natural (normalmente 4 bytes em Windows) <br/>                       |
 | tipo de imagem \_ Sym \_ \_ longo <br/>   | 5 <br/>  | Um inteiro com sinal de 4 bytes <br/>                                                    |
 | tipo de imagem \_ Sym \_ \_ float <br/>  | 6 <br/>  | Um número de ponto flutuante de 4 bytes <br/>                                             |
 | tipo de imagem \_ Sym \_ \_ duplo <br/> | 7 <br/>  | Um número de ponto flutuante de 8 bytes <br/>                                            |
@@ -976,63 +976,63 @@ Embora o formato COFF tradicional use muitos valores de classe de armazenamento,
 | \_definição do \_ tipo de classe Image Sym \_ \_ <br/>   | 13 <br/>        | Uma entrada de typedef. <br/>                                                                                                                                                                                                                                                                                                               |
 | classe Sym de imagem não \_ \_ definida como \_ \_ estática <br/>  | 14 <br/>        | Uma declaração de dados estáticos. <br/>                                                                                                                                                                                                                                                                                                     |
 | \_marca de \_ enumeração da classe Sym \_ da imagem \_ <br/>          | 15 <br/>        | Uma entrada TagName de tipo enumerado. <br/>                                                                                                                                                                                                                                                                                              |
-| \_ \_ \_ membro da classe Sym \_ da imagem de \_ enum <br/>   | 16 <br/>        | Um membro de uma enumeração. O campo valor especifica o membro n-th. <br/>                                                                                                                                                                                                                                                         |
-| \_parâmetro de \_ registro da classe Sym \_ da imagem \_ <br/>    | 17 <br/>        | Um parâmetro de registro. <br/>                                                                                                                                                                                                                                                                                                          |
-| \_campo de \_ bits de classe Image Sym \_ \_ <br/>         | 18 <br/>        | Uma referência de campo de bits. O campo valor especifica o n-bit no campo bit. <br/>                                                                                                                                                                                                                                                |
-| \_bloco de \_ classe Image Sym \_ <br/>              | 100 <br/>       | Um registro. BB (início do bloco) ou. EB (fim do bloco). O campo valor é o endereço relocável do local do código. <br/>                                                                                                                                                                                                      |
-| \_função de \_ classe \_ Sym de imagem <br/>           | 101 <br/>       | Um valor que as ferramentas da Microsoft usam para registros de símbolo que definem a extensão de uma função: Begin function (. BF), End Function (. EF) e linhas na função (. LF). Para registros. LF, o campo valor fornece o número de linhas de origem na função. Para registros. EF, o campo valor fornece o tamanho do código da função. <br/> |
-| \_ \_ fim da classe Image Sym \_ \_ de \_ struct <br/>    | 102 <br/>       | Uma entrada de fim de estrutura. <br/>                                                                                                                                                                                                                                                                                                     |
-| \_arquivo de \_ classe \_ Sym de imagem <br/>               | 103 <br/>       | Um valor que as ferramentas da Microsoft, bem como o formato COFF tradicional, usam para o registro de símbolo de arquivo-fonte. O símbolo é seguido por registros auxiliares que nomeiem o arquivo. <br/>                                                                                                                                                       |
-| \_seção da \_ classe \_ Sym da imagem <br/>            | 104 <br/>       | Uma definição de uma seção (ferramentas da Microsoft usam a classe de armazenamento estático em vez disso). <br/>                                                                                                                                                                                                                                                  |
-| \_classe Sym de imagem \_ \_ fraca \_ externa <br/>     | 105 <br/>       | Um externo fraco. Para obter mais informações, consulte [formato auxiliar 3: externas fracas](#auxiliary-format-3-weak-externals). <br/>                                                                                                                                                                                                           |
-| \_ \_ token CLR da classe Sym \_ da \_ imagem <br/>         | 107 <br/>       | Um símbolo de token CLR. O nome é uma cadeia de caracteres ASCII que consiste no valor hexadecimal do token. Para obter mais informações, consulte [definição de token CLR (somente objeto)](#clr-token-definition-object-only). <br/>                                                                                                                        |
+| \_ \_ \_ membro da classe Sym \_ da imagem de \_ enum <br/>   | 16 <br/>        | Um membro de uma enumeração. O campo Valor especifica o n o membro. <br/>                                                                                                                                                                                                                                                         |
+| PARAM DE \_ \_ REGISTRO DA \_ CLASSE IMAGE SYM \_ <br/>    | 17 <br/>        | Um parâmetro register. <br/>                                                                                                                                                                                                                                                                                                          |
+| CAMPO DE \_ BITS DA CLASSE IMAGE SYM \_ \_ \_ <br/>         | 18 <br/>        | Uma referência de campo de bits. O campo Valor especifica o n bit no campo de bits. <br/>                                                                                                                                                                                                                                                |
+| BLOCO DE \_ CLASSE IMAGE SYM \_ \_ <br/>              | 100 <br/>       | Um registro .bb (início do bloco) ou .eb (fim do bloco). O campo Valor é o endereço relocável do local do código. <br/>                                                                                                                                                                                                      |
+| FUNÇÃO IMAGE \_ SYM \_ \_ CLASS <br/>           | 101 <br/>       | Um valor que as ferramentas da Microsoft usam para registros de símbolo que definem a extensão de uma função: função begin (.bf ), função end ( .ef ) e linhas na função ( .lf ). Para registros .lf, o campo Valor fornece o número de linhas de origem na função. Para registros .ef, o campo Valor fornece o tamanho do código da função. <br/> |
+| FIM \_ DA CLASSE IMAGE SYM DO \_ \_ \_ \_ STRUCT <br/>    | 102 <br/>       | Uma entrada de fim de estrutura. <br/>                                                                                                                                                                                                                                                                                                     |
+| ARQUIVO DE \_ CLASSE IMAGE SYM \_ \_ <br/>               | 103 <br/>       | Um valor que as ferramentas da Microsoft, bem como o formato COFF tradicional, usam para o registro de símbolo de arquivo de origem. O símbolo é seguido por registros auxiliares que nomeam o arquivo. <br/>                                                                                                                                                       |
+| SEÇÃO DA \_ CLASSE IMAGE SYM \_ \_ <br/>            | 104 <br/>       | Uma definição de uma seção (as ferramentas da Microsoft usam a classe de armazenamento STATIC). <br/>                                                                                                                                                                                                                                                  |
+| CLASSE \_ DE SYM DE IMAGEM EXTERNA \_ \_ \_ FRACA <br/>     | 105 <br/>       | Um externo fraco. Para obter mais informações, [consulte Formato auxiliar 3: Externos fracos.](#auxiliary-format-3-weak-externals) <br/>                                                                                                                                                                                                           |
+| \_TOKEN \_ CLR DA CLASSE IMAGE SYM \_ \_ <br/>         | 107 <br/>       | Um símbolo de token CLR. O nome é uma cadeia de caracteres ASCII que consiste no valor hexadecimal do token. Para obter mais informações, consulte [Definição de token CLR (somente objeto)](#clr-token-definition-object-only). <br/>                                                                                                                        |
 
 
 
  
 
-### <a name="auxiliary-symbol-records"></a>Registros de símbolo auxiliares
+### <a name="auxiliary-symbol-records"></a>Registros de símbolo auxiliar
 
-Os registros da tabela de símbolos auxiliares sempre seguem e se aplicam a um registro de tabela de símbolos padrão. Um registro auxiliar pode ter qualquer formato que as ferramentas possam reconhecer, mas 18 bytes devem ser alocados para eles para que a tabela de símbolos seja mantida como uma matriz de tamanho regular. Atualmente, as ferramentas da Microsoft reconhecem formatos auxiliares para os seguintes tipos de registros: definições de função, símbolos de início e término de função (. BF e. EF), externos fracos, nomes de arquivo e definições de seção.
+Registros de tabela de símbolo auxiliar sempre seguem e se aplicam a algum registro de tabela de símbolo padrão. Um registro auxiliar pode ter qualquer formato que as ferramentas possam reconhecer, mas 18 bytes devem ser alocados para eles para que a tabela de símbolos seja mantida como uma matriz de tamanho regular. Atualmente, as ferramentas da Microsoft reconhecem formatos auxiliares para os seguintes tipos de registros: definições de função, símbolos de início e término de função (.bf e .ef), externos fracos, nomes de arquivo e definições de seção.
 
-O design COFF tradicional também inclui formatos de registro auxiliar para matrizes e estruturas. As ferramentas da Microsoft não as usam, mas, em vez disso, colocam essas informações simbólicas em Visual C++ formato de depuração nas seções de depuração.
+O design COFF tradicional também inclui formatos de registro auxiliar para matrizes e estruturas. As ferramentas da Microsoft não as usam, mas, em vez disso, coloca essas informações Visual C++ formato de depuração nas seções de depuração.
 
 #### <a name="auxiliary-format-1-function-definitions"></a>Formato auxiliar 1: definições de função
 
-Um registro de tabela de símbolos marca o início de uma definição de função se ela tiver todos os itens a seguir: uma classe de armazenamento de EXTERNAL (2), um valor de tipo que indica que é uma função (0x20) e um número de seção maior que zero. Observe que um registro de tabela de símbolos que tem um número de seção de indefinido (0) não define a função e não tem um registro auxiliar. Os registros de símbolo de definição de função são seguidos por um registro auxiliar no formato descrito abaixo:
+Um registro de tabela de símbolos marcará o início de uma definição de função se tiver o seguinte: uma classe de armazenamento EXTERNAL (2), um valor type que indica que é uma função (0x20) e um número de seção maior que zero. Observe que um registro de tabela de símbolos que tem um número de seção UNDEFINED (0) não define a função e não tem um registro auxiliar. Os registros de símbolo de definição de função são seguidos por um registro auxiliar no formato descrito abaixo:
 
 
 
 | Deslocamento         | Tamanho          | Campo                             | Descrição                                                                                                                                                                                                                   |
 |----------------|---------------|-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0 <br/>  | 4 <br/> | TagIndex <br/>              | O índice de tabela de símbolos do registro de símbolo. BF (Begin Function) correspondente. <br/>                                                                                                                                   |
-| 4 <br/>  | 4 <br/> | TotalSize <br/>             | O tamanho do código executável para a função em si. Se a função estiver em sua própria seção, o SizeOfRawData no cabeçalho da seção será maior ou igual a esse campo, dependendo das considerações de alinhamento. <br/> |
-| 8 <br/>  | 4 <br/> | PointerToLinenumber <br/>   | O deslocamento do arquivo da primeira entrada de número de linha COFF para a função ou zero se não houver nenhum. Para obter mais informações, consulte [números de linha COFF (preterido)](#coff-line-numbers-deprecated). <br/>                          |
-| 12 <br/> | 4 <br/> | PointerToNextFunction <br/> | O índice de tabela de símbolos do registro para a função seguinte. Se a função for a última na tabela de símbolos, esse campo será definido como zero. <br/>                                                                           |
+| 0 <br/>  | 4 <br/> | TagIndex <br/>              | O índice de tabela de símbolos do registro de símbolo .bf (função begin) correspondente. <br/>                                                                                                                                   |
+| 4 <br/>  | 4 <br/> | TotalSize <br/>             | O tamanho do código executável para a própria função. Se a função estiver em sua própria seção, SizeOfRawData no header da seção será maior ou igual a esse campo, dependendo das considerações de alinhamento. <br/> |
+| 8 <br/>  | 4 <br/> | PointerToLinenumber <br/>   | O deslocamento de arquivo da primeira entrada de número de linha COFF para a função ou zero se não houver nenhum. Para obter mais informações, [consulte COFF Line Numbers (Preterido).](#coff-line-numbers-deprecated) <br/>                          |
+| 12 <br/> | 4 <br/> | PointerToNextFunction <br/> | O índice da tabela de símbolos do registro para a próxima função. Se a função for a última na tabela de símbolos, esse campo será definido como zero. <br/>                                                                           |
 | 16 <br/> | 2 <br/> | Não usado <br/>                |                                                                                                                                                                                                                               |
 
 
 
  
 
-#### <a name="auxiliary-format-2-bf-and-ef-symbols"></a>Formato auxiliar 2:. BF e símbolos. EF
+#### <a name="auxiliary-format-2-bf-and-ef-symbols"></a>Formato auxiliar 2: símbolos .bf e .ef
 
-Para cada definição de função na tabela de símbolos, três itens descrevem o início, o fim e o número de linhas. Cada um desses símbolos tem a função de classe de armazenamento (101):
+Para cada definição de função na tabela de símbolos, três itens descrevem o início, o final e o número de linhas. Cada um desses símbolos tem a classe de armazenamento FUNCTION (101):
 
-Um registro de símbolo chamado. BF (função Begin). O campo de valor não é usado.
+Um registro de símbolo chamado .bf (função begin). O campo Valor não éusado.
 
-Um registro de símbolo chamado. LF (linhas na função). O campo valor fornece o número de linhas na função.
+Um registro de símbolo chamado .lf (linhas na função). O campo Valor fornece o número de linhas na função.
 
-Um registro de símbolo chamado. EF (fim da função). O campo valor tem o mesmo número que o campo tamanho total no registro de símbolo de definição de função.
+Um registro de símbolo chamado .ef (fim da função). O campo Valor tem o mesmo número que o campo Tamanho Total no registro de símbolo de definição de função.
 
-Os registros de símbolo. BF e. EF (mas não os registros. LF) são seguidos por um registro auxiliar com o seguinte formato:
+Os registros de símbolo .bf e .ef (mas não registros .lf) são seguidos por um registro auxiliar com o seguinte formato:
 
 
 
 | Deslocamento         | Tamanho          | Campo                                         | Descrição                                                                                                                                                                   |
 |----------------|---------------|-----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0 <br/>  | 4 <br/> | Não usado <br/>                            |                                                                                                                                                                               |
-| 4 <br/>  | 2 <br/> | LineNumber <br/>                        | O número de linha ordinal real (1, 2, 3 e assim por diante) dentro do arquivo de origem, correspondente ao registro. BF ou. EF. <br/>                                               |
+| 4 <br/>  | 2 <br/> | Linenumber <br/>                        | O número de linha ordinal real (1, 2, 3 e assim por diante) dentro do arquivo de origem, correspondente ao registro .bf ou .ef. <br/>                                               |
 | 6 <br/>  | 6 <br/> | Não usado <br/>                            |                                                                                                                                                                               |
 | 12 <br/> | 4 <br/> | PointerToNextFunction (somente BF) <br/> | O índice Symbol-Table do próximo registro de símbolo. BF. Se a função for a última na tabela de símbolos, esse campo será definido como zero. Ele não é usado para registros. EF. <br/> |
 | 16 <br/> | 2 <br/> | Não usado <br/>                            |                                                                                                                                                                               |
@@ -1191,169 +1191,169 @@ As opções para o \_ membro Win Certificate **wRevision** incluem (mas não se 
 
 | Valor             | Nome                                 | Observações                                                                                                                                                 |
 |-------------------|--------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0x0100<br/> | Revisão de certificado de WIN \_ \_ \_ 1 \_ 0<br/> | Versão 1, versão herdada da estrutura de certificado do Win \_ . Há suporte apenas para fins de verificação de assinaturas Authenticode herdadas<br/> |
-| 0x0200<br/> | Revisão de certificado de vitórias \_ \_ \_ 2 \_ 0<br/> | A versão 2 é a versão atual da estrutura de certificado do Win \_ . <br/>                                                                       |
+| 0x0100<br/> | Revisão de certificado de WIN \_ \_ \_ 1 \_ 0<br/> | Versão 1, versão herdada da estrutura de certificado do Win \_ . Ele tem suporte apenas para fins de verificação de assinaturas Authenticode herdadas<br/> |
+| 0x0200<br/> | WIN \_ CERT \_ REVISION \_ 2 \_ 0<br/> | A versão 2 é a versão atual da estrutura Win \_ Certificate. <br/>                                                                       |
 
 
 
  
 
-As opções para o \_ membro Win Certificate **wCertificateType** incluem (mas não estão limitadas a) os itens na tabela a seguir. Observe que alguns valores não têm suporte no momento.
+As opções para o membro WIN \_ CERTIFICATE **wCertificateType** incluem (mas não estão limitadas a) os itens na tabela a seguir. Observe que, no momento, não há suporte para alguns valores.
 
 
 
 | Valor             | Nome                                           | Observações                                                                                   |
 |-------------------|------------------------------------------------|-----------------------------------------------------------------------------------------|
-| 0x0001<br/> | Tipo de certificado do WIN \_ \_ \_ X509 <br/>              | bCertificate contém um certificado X. 509 <br/> Sem suporte<br/>         |
-| 0x0002<br/> | tipo de certificado do WIN \_ \_ \_ \_ dados assinados PKCS \_<br/> | bCertificate contém uma \# estrutura SIGNEDDATA PKCS 7<br/>                         |
-| 0x0003<br/> | Tipo de certificado de vitória \_ \_ \_ reservado \_ 1<br/>        | Reservado <br/>                                                                    |
-| 0x0004<br/> | \_tipo de certificado Win \_ \_ \_ pilha TS Stack \_ assinado<br/>  | Assinatura de certificado de pilha de protocolo Terminal Server <br/> Sem suporte<br/> |
+| 0x0001<br/> | TIPO \_ DE CERTIFICADO WIN \_ \_ X509 <br/>              | bCertificate contém um Certificado X.509 <br/> Sem suporte<br/>         |
+| 0x0002<br/> | DADOS \_ ASSINADOS \_ POR \_ PKCS DO TIPO \_ DE \_ CERTIFICADO WIN<br/> | bCertificate contém uma estrutura SignedData PKCS \# 7<br/>                         |
+| 0x0003<br/> | TIPO \_ DE CERTIFICADO WIN RESERVADO \_ \_ \_ 1<br/>        | Reservado <br/>                                                                    |
+| 0x0004<br/> | WIN \_ CERT \_ TYPE \_ TS \_ STACK \_ SIGNED<br/>  | Assinatura de certificado de pilha de protocolo do servidor terminal <br/> Sem suporte<br/> |
 
 
 
  
 
-O \_ membro **bCertificate** da estrutura de certificados do Win contém uma matriz de bytes de comprimento variável com o tipo de conteúdo especificado por **wCertificateType**. O tipo com suporte de Authenticode é \_ o \_ tipo \_ de certificado Win \_ dados assinados PKCS \_ , uma \# estrutura **SignedData** PKCS 7. Para obter detalhes sobre o formato de assinatura digital Authenticode, consulte [formato de assinatura executável portátil do Windows Authenticode](https://download.microsoft.com/download/9/c/5/9c5b2167-8017-4bae-9fde-d599bac8184a/Authenticode_PE.docx).
+O membro bCertificate da estrutura WIN CERTIFICATE contém uma matriz de byte de comprimento variável com o tipo de conteúdo especificado \_ por  **wCertificateType**. O tipo com suporte pelo Authenticode é WIN \_ CERT \_ TYPE \_ PKCS \_ SIGNED \_ DATA, uma estrutura SignedData PKCS \#  7. Para obter detalhes sobre o formato de assinatura digital Authenticode, consulte Windows formato de assinatura [executável portátil Authenticode](https://download.microsoft.com/download/9/c/5/9c5b2167-8017-4bae-9fde-d599bac8184a/Authenticode_PE.docx).
 
-Se o conteúdo de **bCertificate** não terminar em um limite de quadword, a entrada do certificado de atributo será preenchida com zeros, do final do **bCertificate** para o próximo limite de quadword.
+Se o **conteúdo bCertificate** não terminar em um limite quadword, a entrada do certificado de atributo será preenchimento com zeros, do final de **bCertificate** ao próximo limite quadword.
 
-O valor de **dwLength** é o comprimento da estrutura de certificado do Win finalizada \_ e é calculado como:
+O **valor dwLength** é o comprimento da estrutura WIN CERTIFICATE finalizada e \_ é computado como:
 
 `dwLength = offsetof(WIN_CERTIFICATE, bCertificate) + (size of the variable-length binary array contained within bCertificate)`
 
-Esse comprimento deve incluir o tamanho de qualquer preenchimento que seja usado para atender ao requisito de que cada \_ estrutura de certificado do Win esteja quadword alinhada:
+Esse comprimento deve incluir o tamanho de qualquer preenchimento usado para atender ao requisito de que cada estrutura WIN \_ CERTIFICATE esteja alinhada por quadword:
 
 ` dwLength += (8 - (dwLength & 7)) & 7;`
 
-O **tamanho da tabela do certificado**– especificado na entrada da **tabela certificados** nos [diretórios de dados de cabeçalho opcionais (somente imagem)](#optional-header-data-directories-image-only)– inclui o preenchimento.
+O **tamanho da Tabela de** Certificados especificado na entrada Tabela de Certificados nos Diretórios de Dados de Header Opcionais [(Somente Imagem)](#optional-header-data-directories-image-only)– inclui o preenchimento. 
 
-Para obter mais informações sobre como usar a API de ImageHlp para enumerar, adicionar e remover certificados de arquivos PE, consulte [ImageHlp Functions](imagehlp-functions.md).
+Para obter mais informações sobre como usar a API ImageHlp para enumerar, adicionar e remover certificados de arquivos PE, consulte [Funções ImageHlp](imagehlp-functions.md).
 
-#### <a name="certificate-data"></a>Dados do certificado
+#### <a name="certificate-data"></a>Dados de certificado
 
-Conforme indicado na seção anterior, os certificados na tabela de certificado de atributo podem conter qualquer tipo de certificado. Os certificados que garantem a integridade de um arquivo PE podem incluir um hash de imagem PE.
+Conforme indicado na seção anterior, os certificados na tabela de certificados de atributo podem conter qualquer tipo de certificado. Certificados que garantem a integridade de um arquivo PE podem incluir um hash de imagem PE.
 
-Um hash de imagem PE (ou hash de arquivo) é semelhante a uma soma de verificação de arquivo, pois o algoritmo de hash produz um resumo de mensagem que está relacionado à integridade de um arquivo. No entanto, uma soma de verificação é produzida por um algoritmo simples e é usada principalmente para detectar se um bloco de memória em disco ficou insatisfatório e os valores armazenados ali foram corrompidos. Um hash de arquivo é semelhante a uma soma de verificação, pois ele também detecta corrupção de arquivo. No entanto, ao contrário da maioria dos algoritmos de soma de verificação, é muito difícil modificar um arquivo sem alterar o hash de arquivo de seu valor original não modificado. Portanto, um hash de arquivo pode ser usado para detectar modificações intencionais e até mesmo sutis em um arquivo, como aqueles introduzidos por vírus, hackers ou programas de cavalo de Troia.
+Um hash de imagem PE (ou hash de arquivo) é semelhante a uma verificação de arquivo, já que o algoritmo de hash produz um resumo de mensagem relacionado à integridade de um arquivo. No entanto, uma verificação é produzida por um algoritmo simples e é usada principalmente para detectar se um bloco de memória no disco ficou ruim e os valores armazenados lá foram corrompidos. Um hash de arquivo é semelhante a uma verificação de que também detecta corrupção de arquivo. No entanto, ao contrário da maioria dos algoritmos de verificação, é muito difícil modificar um arquivo sem alterar o hash do arquivo de seu valor original não modificado. Assim, um hash de arquivo pode ser usado para detectar modificações intencionais e até mesmo sutis em um arquivo, como aquelas introduzidas por vírus, hackers ou programas de cavalos de Troia.
 
-Quando incluído em um certificado, o resumo da imagem deve excluir determinados campos na imagem do PE, como a soma de verificação e a entrada da tabela de certificado em diretórios de dados de cabeçalho opcionais. Isso ocorre porque o ato de adicionar um certificado altera esses campos e faria com que um valor de hash diferente fosse calculado.
+Quando incluído em um certificado, o resumo da imagem deve excluir determinados campos na Imagem PE, como a entrada Checksum e Tabela de Certificados em Diretórios de Dados de Header Opcionais. Isso porque o ato de adicionar um Certificado altera esses campos e faz com que um valor de hash diferente seja calculado.
 
-A função **ImageGetDigestStream** do Win32 fornece um fluxo de dados de um arquivo PE de destino com o qual as funções de hash são. Esse fluxo de dados permanece consistente quando os certificados são adicionados ou removidos de um arquivo PE. Com base nos parâmetros que são passados para **ImageGetDigestStream**, outros dados da imagem PE podem ser omitidos da computação de hash. Para obter um link para a página de referência da função, consulte [References](#references).
+A função Win32 **ImageGetDigestStream** fornece um fluxo de dados de um arquivo PE de destino com o qual as funções de hash. Esse fluxo de dados permanece consistente quando os certificados são adicionados ou removidos de um arquivo PE. Com base nos parâmetros passados para **ImageGetDigestStream,** outros dados da imagem PE podem ser omitidos da computação de hash. Para ver um link para a página de referência da função, consulte [Referências](#references).
 
 ### <a name="delay-load-import-tables-image-only"></a>Delay-Load importar tabelas (somente imagem)
 
-Essas tabelas foram adicionadas à imagem para dar suporte a um mecanismo uniforme para que os aplicativos adiem o carregamento de uma DLL até a primeira chamada para essa DLL. O layout das tabelas corresponde ao das tabelas de importação tradicionais que são descritas na seção 6,4, [a seção. iData](#the-idata-section)". Apenas alguns detalhes são discutidos aqui.
+Essas tabelas foram adicionadas à imagem para dar suporte a um mecanismo uniforme para que os aplicativos atrasem o carregamento de uma DLL até a primeira chamada para essa DLL. O layout das tabelas corresponde ao das tabelas de importação tradicionais descritas na seção 6.4, [Seção .idata](#the-idata-section)." Apenas alguns detalhes são discutidos aqui.
 
-#### <a name="the-delay-load-directory-table"></a>A tabela do Delay-Load Directory
+#### <a name="the-delay-load-directory-table"></a>A tabela Delay-Load diretório do Delay-Load
 
-A tabela de diretório de carregamento de atraso é a contraparte da tabela de importação de diretório. Ele pode ser recuperado por meio da entrada do descritor de importação de atraso na lista de diretórios de dados de cabeçalho opcionais (offset 200). A tabela é organizada da seguinte maneira:
+A tabela de diretório de carregamento de atraso é a contraparte da tabela de diretórios de importação. Ele pode ser recuperado por meio da entrada Doscriptor de Importação de Atraso na lista de diretórios de dados de header opcional (deslocamento 200). A tabela é organizada da seguinte forma:
 
 
 
 | Deslocamento         | Tamanho          | Campo                                  | Descrição                                                                                                                                                                                                                                                                                                                  |
 |----------------|---------------|----------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0 <br/>  | 4 <br/> | Atributos <br/>                 | Deve ser zero. <br/>                                                                                                                                                                                                                                                                                                    |
-| 4 <br/>  | 4 <br/> | Nome <br/>                       | O RVA do nome da DLL a ser carregada. O nome reside na seção de dados somente leitura da imagem. <br/>                                                                                                                                                                                                        |
-| 8 <br/>  | 4 <br/> | Identificador de módulo <br/>              | O RVA do identificador do módulo (na seção de dados da imagem) da DLL a ser carregada com atraso. Ele é usado para armazenamento pela rotina que é fornecida para gerenciar o carregamento de atraso. <br/>                                                                                                                                   |
-| 12 <br/> | 4 <br/> | Atrasar tabela de endereços de importação <br/> | O RVA da tabela de endereços de importação de carregamento de atraso. Para obter mais informações, consulte [atrasar a tabela de endereços de importação (IAT)](#delay-import-address-table). <br/>                                                                                                                                                                       |
-| 16 <br/> | 4 <br/> | Atrasar tabela de nomes de importação <br/>    | O RVA da tabela de nome de carregamento de atraso, que contém os nomes das importações que podem precisar ser carregadas. Isso corresponde ao layout da tabela de nomes de importação. Para obter mais informações, consulte a [tabela de dicas/nome](#hintname-table).<br/>                                                                                       |
-| 20 <br/> | 4 <br/> | Tabela de importação de atrasos associadas <br/>   | O RVA da tabela de endereços de carregamento de atraso associado, se existir. <br/>                                                                                                                                                                                                                                                     |
-| 24 <br/> | 4 <br/> | Descarregar tabela de importação de atraso <br/>  | O RVA da tabela de endereços de carregamento de atraso de descarga, se existir. Esta é uma cópia exata da tabela de endereços de importação de atraso. Se o chamador descarregar a DLL, essa tabela deverá ser copiada de volta na tabela de endereços de importação de atraso para que as chamadas subsequentes para a DLL continuem a usar o mecanismo de conversão corretamente. <br/> |
-| 28 <br/> | 4 <br/> | Carimbo de Data/Hora <br/>                 | O carimbo de data/hora da DLL à qual esta imagem foi associada. <br/>                                                                                                                                                                                                                                                     |
+| 4 <br/>  | 4 <br/> | Nome <br/>                       | A RVA do nome da DLL a ser carregada. O nome reside na seção de dados somente leitura da imagem. <br/>                                                                                                                                                                                                        |
+| 8 <br/>  | 4 <br/> | Alça do módulo <br/>              | O RVA do handle do módulo (na seção de dados da imagem) da DLL a ser carregada com atraso. Ele é usado para armazenamento pela rotina fornecida para gerenciar o carregamento com atraso. <br/>                                                                                                                                   |
+| 12 <br/> | 4 <br/> | Tabela de endereços de importação de atraso <br/> | O RVA da tabela de endereços de importação de carregamento de atraso. Para obter mais informações, consulte [Atrasar a IAT (Tabela de Endereços de Importação)](#delay-import-address-table). <br/>                                                                                                                                                                       |
+| 16 <br/> | 4 <br/> | Tabela de nomes de importação com atraso <br/>    | O RVA da tabela de nome de carregamento de atraso, que contém os nomes das importações que talvez precisem ser carregadas. Isso corresponde ao layout da tabela de nomes de importação. Para obter mais informações, consulte [Hint/Name Table](#hintname-table).<br/>                                                                                       |
+| 20 <br/> | 4 <br/> | Tabela de importação de atraso de limite <br/>   | O RVA da tabela de endereços de carregamento de atraso limite, se existir. <br/>                                                                                                                                                                                                                                                     |
+| 24 <br/> | 4 <br/> | Tabela de importação de atraso de descarregamento <br/>  | O RVA da tabela de endereços de carregamento de atraso de descarregamento, se existir. Esta é uma cópia exata da tabela de endereços de importação de atraso. Se o chamador descarregar a DLL, essa tabela deverá ser copiada novamente sobre a tabela de endereços de importação de atraso para que as chamadas subsequentes para a DLL continuem a usar o mecanismo de tking corretamente. <br/> |
+| 28 <br/> | 4 <br/> | Carimbo de Data/Hora <br/>                 | O timestamp da DLL à qual essa imagem foi vinculada. <br/>                                                                                                                                                                                                                                                     |
 
 
 
  
 
-As tabelas que são referenciadas nessa estrutura de dados são organizadas e classificadas da mesma forma que suas contrapartes para importações tradicionais. Para obter detalhes, consulte [a seção. iData](#the-idata-section).
+As tabelas referenciadas nessa estrutura de dados são organizadas e classificados da mesma forma que suas contrapartes são para importações tradicionais. Para obter detalhes, consulte [a seção .idata](#the-idata-section).
 
 #### <a name="attributes"></a>Atributos
 
-Como ainda, nenhum sinalizador de atributo é definido. O vinculador define esse campo como zero na imagem. Esse campo pode ser usado para estender o registro indicando a presença de novos campos ou pode ser usado para indicar comportamentos para as funções auxiliares de atraso ou descarregamento.
+Até o momento, nenhum sinalizador de atributo está definido. O linker define esse campo como zero na imagem. Esse campo pode ser usado para estender o registro indicando a presença de novos campos ou pode ser usado para indicar comportamentos para as funções auxiliares de atraso ou descarregamento.
 
 #### <a name="name"></a>Nome
 
 O nome da DLL a ser carregada com atraso reside na seção de dados somente leitura da imagem. Ele é referenciado por meio do campo szName.
 
-#### <a name="module-handle"></a>Identificador de módulo
+#### <a name="module-handle"></a>Alça do módulo
 
-O identificador da DLL a ser carregada com atraso está na seção de dados da imagem. O campo phmod aponta para o identificador. O auxiliar de carregamento de atraso fornecido usa esse local para armazenar o identificador para a DLL carregada.
+O handle da DLL a ser carregada com atraso está na seção de dados da imagem. O campo phmod aponta para o handle. O auxiliar de carregamento de atraso fornecido usa esse local para armazenar o alça para a DLL carregada.
 
-#### <a name="delay-import-address-table"></a>Atrasar tabela de endereços de importação
+#### <a name="delay-import-address-table"></a>Tabela de endereços de importação de atraso
 
-A tabela de endereços de importação de atraso (IAT) é referenciada pelo descritor de importação de atraso por meio do campo pIAT. O auxiliar de carregamento de atraso atualiza esses ponteiros com os pontos de entrada reais para que as conversões não estejam mais no loop de chamada. Os ponteiros de função são acessados usando a expressão `pINT->u1.Function` .
+A IAT (tabela de endereços de importação) de atraso é referenciada pelo descritor de importação de atraso por meio do campo pIAT. O auxiliar de carregamento de atraso atualiza esses ponteiros com os pontos de entrada reais para que os thunks não sejam mais no loop de chamada. Os ponteiros de função são acessados usando a expressão `pINT->u1.Function` .
 
-#### <a name="delay-import-name-table"></a>Atrasar tabela de nomes de importação
+#### <a name="delay-import-name-table"></a>Tabela de nomes de importação com atraso
 
-A tabela de nomes de importação de atraso (INT) contém os nomes das importações que podem exigir carregamento. Elas são ordenadas da mesma maneira que os ponteiros de função no IAT. Eles consistem nas mesmas estruturas que o padrão INT e são acessados usando a expressão `pINT->u1.AddressOfData->Name[0]` .
+A tabela de nomes de importação de atraso (INT) contém os nomes das importações que podem exigir carregamento. Eles são ordenados da mesma maneira que os ponteiros de função no IAT. Eles consistem nas mesmas estruturas que o INT padrão e são acessados usando a expressão `pINT->u1.AddressOfData->Name[0]` .
 
-#### <a name="delay-bound-import-address-table-and-time-stamp"></a>Atrasar a tabela de endereços de importação e o carimbo de data/hora
+#### <a name="delay-bound-import-address-table-and-time-stamp"></a>Tabela de endereços de importação com limite de atraso e carimbo de data/hora
 
-A tabela de endereços de importação de limite de atraso (BIAT) é uma tabela opcional de itens de dados de conversão de imagem \_ \_ que é usada junto com o campo de carimbo de data/hora da tabela de diretório de carregamento de atraso por uma fase de associação pós-processo.
+A BIAT (tabela de endereços de importação com limite de atraso) é uma tabela opcional de itens IMAGE THUNK DATA que é usada junto com o campo timestamp da tabela de diretório delay-load por uma fase de associação \_ \_ pós-processo.
 
-#### <a name="delay-unload-import-address-table"></a>Atrasar descarregamento da tabela de endereços de importação
+#### <a name="delay-unload-import-address-table"></a>Tabela de endereços de importação de descarregamento de atraso
 
-O atraso de descarregar tabela de endereços de importação (UIAT) é uma tabela opcional de itens de dados de conversão de imagem \_ \_ que o código de descarregamento usa para lidar com uma solicitação de descarga explícita. Ele consiste em dados inicializados na seção somente leitura, que é uma cópia exata do IAT original que mencionou o código para as conversões de carregamento de atraso. Na solicitação de descarga, a biblioteca pode ser liberada, o \* phmod limpo e o UIAT escrito sobre o IAT para restaurar tudo para seu estado de pré-carregamento.
+A UIAT (tabela de endereços de importação) de descarregamento de atraso é uma tabela opcional de itens IMAGE THUNK DATA que o código de descarregamento usa para lidar \_ \_ com uma solicitação de descarregamento explícita. Ele consiste em dados inicializados na seção somente leitura, que é uma cópia exata do IAT original que referenciava o código para as cargas de atraso. Na solicitação de descarregamento, a biblioteca pode ser liberada, o phmod limpo e o UIAT gravado sobre o IAT para restaurar tudo para seu \* estado de pré-carregamento.
 
 ## <a name="special-sections"></a>Seções especiais
 
-- [A seção. Debug](#the-debug-section)
+- [A seção .debug](#the-debug-section)
   - [Diretório de depuração (somente imagem)](#debug-directory-image-only)
   - [Tipo de depuração](#debug-type)
-  - [. Debug $ F (somente objeto)](#debugf-object-only)
-  - [. Debug $ S (somente objeto)](#debugs-object-only)
-  - [. Debug $ P (somente objeto)](#debugp-object-only)
-  - [. debug $ T (somente objeto)](#debugt-object-only)
-  - [Suporte do vinculador para informações de depuração da Microsoft](#linker-support-for-microsoft-debug-information)
-- [A seção. drectve (somente objeto)](#the-drectve-section-object-only)
-- [A seção. Edata (somente imagem)](#the-edata-section-image-only)
+  - [.debug$F (somente objeto)](#debugf-object-only)
+  - [.debug$S (somente objeto)](#debugs-object-only)
+  - [.debug$P (somente objeto)](#debugp-object-only)
+  - [.debug$T (somente objeto)](#debugt-object-only)
+  - [Suporte do Linker para informações de depuração da Microsoft](#linker-support-for-microsoft-debug-information)
+- [A seção .drectve (somente objeto)](#the-drectve-section-object-only)
+- [A seção .edata (somente imagem)](#the-edata-section-image-only)
   - [Exportar tabela de diretórios](#export-directory-table)
   - [Exportar tabela de endereços](#export-address-table)
-  - [Exportar tabela de ponteiros de nome](#export-name-pointer-table)
+  - [Exportar tabela de ponteiro de nome](#export-name-pointer-table)
   - [Exportar tabela ordinal](#export-ordinal-table)
-  - [Exportar tabela de nomes](#export-name-table)
-- [A seção. iData](#the-idata-section)
+  - [Exportar Tabela de Nomes](#export-name-table)
+- [A seção .idata](#the-idata-section)
   - [Importar tabela de diretórios](#import-directory-table)
-  - [Importar tabela de pesquisa](#import-lookup-table)
+  - [Importar tabela de lookup](#import-lookup-table)
   - [Tabela de dica/nome](#hintname-table)
   - [Importar tabela de endereços](#delay-import-address-table)
-- [A seção. pData](#the-pdata-section)
-- [A seção. realocação (somente imagem)](#the-reloc-section-image-only)
-  - [Bloco de realocação de base](#base-relocation-block)
+- [A seção .pdata](#the-pdata-section)
+- [A seção .reloc (somente imagem)](#the-reloc-section-image-only)
+  - [Bloco de realocação base](#base-relocation-block)
   - [Tipos de realocação base](#base-relocation-types)
-- [A seção. TLS](#the-tls-section)
+- [A seção .tls](#the-tls-section)
   - [O diretório TLS](#the-tls-directory)
   - [Funções de retorno de chamada TLS](#tls-callback-functions)
-- [A estrutura de configuração de carregamento (somente imagem)](#the-load-configuration-structure-image-only)
+- [A estrutura de configuração de carga (somente imagem)](#the-load-configuration-structure-image-only)
   - [Carregar diretório de configuração](#load-configuration-directory)
-  - [Carregar layout de configuração](#load-configuration-layout)
-- [A seção. rsrc](#the-rsrc-section)
-  - [Tabela de diretório de recursos](#resource-directory-table)
-  - [Entradas do diretório de recursos](#resource-directory-entries)
-  - [Cadeia de caracteres do diretório de recursos](#resource-directory-string)
-  - [Entrada de dados do recurso](#resource-data-entry)
-- [A seção. cormeta (somente objeto)](#the-cormeta-section-object-only)
-- [A seção. sxdata](#the-sxdata-section)
+  - [Layout de configuração de carga](#load-configuration-layout)
+- [A seção .rsrc](#the-rsrc-section)
+  - [Tabela do Diretório de Recursos](#resource-directory-table)
+  - [Entradas do Resource Directory](#resource-directory-entries)
+  - [Cadeia de caracteres do Diretório de Recursos](#resource-directory-string)
+  - [Entrada de dados de recurso](#resource-data-entry)
+- [A seção .cormeta (somente objeto)](#the-cormeta-section-object-only)
+- [A seção .sxdata](#the-sxdata-section)
 
-As seções COFF típicas contêm código ou dados que os vinculadores e os carregadores do Microsoft Win32 não têm conhecimento especial sobre o conteúdo da seção. O conteúdo é relevante apenas para o aplicativo que está sendo vinculado ou executado.
+As seções COFF típicas contêm código ou dados que os vinculadores e carregadores do Microsoft Win32 processam sem conhecimento especial do conteúdo da seção. O conteúdo é relevante apenas para o aplicativo que está sendo vinculado ou executado.
 
-No entanto, algumas seções COFF têm significados especiais quando encontradas em arquivos de objeto ou arquivos de imagem. Ferramentas e carregadores reconhecem essas seções porque têm sinalizadores especiais definidos no cabeçalho da seção, porque localizações especiais no cabeçalho opcional da imagem apontam para elas ou porque o próprio nome da seção indica uma função especial da seção. (Mesmo que o nome da seção em si não indique uma função especial da seção, o nome da seção é ditado por convenção, de modo que os autores dessa especificação possam se referir a um nome de seção em todos os casos.)
+No entanto, algumas seções COFF têm significados especiais quando encontradas em arquivos de objeto ou arquivos de imagem. Ferramentas e carregadores reconhecem essas seções porque têm sinalizadores especiais definidos no header da seção, porque locais especiais no header opcional da imagem apontam para elas ou porque o próprio nome da seção indica uma função especial da seção. (Mesmo que o próprio nome da seção não indique uma função especial da seção, o nome da seção é ditado por convenção, para que os autores dessa especificação possam se referir a um nome de seção em todos os casos.)
 
-As seções reservadas e seus atributos são descritos na tabela a seguir, seguida por descrições detalhadas para os tipos de seção que são persistidos em executáveis e os tipos de seção que contêm metadados para extensões.
+As seções reservadas e seus atributos são descritos na tabela abaixo, seguidas por descrições detalhadas para os tipos de seção persistentes em executáveis e os tipos de seção que contêm metadados para extensões.
 
 
 
 | Nome da seção          | Conteúdo                                                                                                                                                                  | Características                                                                                                                                                                                                                                                                                                                                                                                   |
 |-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| . BSS <br/>      | Dados não inicializados (formato livre) <br/>                                                                                                                             | Image \_ SCN \_ CNT \_ Uninitialized \_ Data \| Image \_ SCN \_ mem \_ Read \| Image \_ SCN \_ mem \_ Write <br/>                                                                                                                                                                                                                                                                                               |
-| .cormeta <br/>  | Metadados CLR que indicam que o arquivo de objeto contém código gerenciado <br/>                                                                                       | informações do IMAGE \_ SCN \_ lnk \_ <br/>                                                                                                                                                                                                                                                                                                                                                                 |
-| . Data <br/>     | Dados inicializados (formato livre) <br/>                                                                                                                               | IMAGE \_ SCN \_ CNT \_ INITIALIZED \_ Data \| Image \_ SCN \_ mem \_ Read \| Image \_ SCN \_ mem \_ Write <br/>                                                                                                                                                                                                                                                                                                 |
-| . Debug $ F <br/>  | Informações de depuração FPO geradas (somente objeto, somente arquitetura x86 e agora obsoleto) <br/>                                                                       | IMAGE \_ SCN \_ CNT \_ INITIALIZED \_ Data \| Image \_ SCN \_ mem \_ Read \| Image \_ SCN \_ mem é \_ Descartado <br/>                                                                                                                                                                                                                                                                                           |
-| . Debug $ P <br/>  | Tipos de depuração pré-compilados (somente objeto) <br/>                                                                                                                        | IMAGE \_ SCN \_ CNT \_ INITIALIZED \_ Data \| Image \_ SCN \_ mem \_ Read \| Image \_ SCN \_ mem é \_ Descartado <br/>                                                                                                                                                                                                                                                                                           |
-| . depurar $ S <br/>  | Depurar símbolos (somente objeto) <br/>                                                                                                                                  | IMAGE \_ SCN \_ CNT \_ INITIALIZED \_ Data \| Image \_ SCN \_ mem \_ Read \| Image \_ SCN \_ mem é \_ Descartado <br/>                                                                                                                                                                                                                                                                                           |
-| . debug $ T <br/>  | Tipos de depuração (somente objeto) <br/>                                                                                                                                    | IMAGE \_ SCN \_ CNT \_ INITIALIZED \_ Data \| Image \_ SCN \_ mem \_ Read \| Image \_ SCN \_ mem é \_ Descartado <br/>                                                                                                                                                                                                                                                                                           |
-| .drective <br/> | Opções do vinculador <br/>                                                                                                                                               | informações do IMAGE \_ SCN \_ lnk \_ <br/>                                                                                                                                                                                                                                                                                                                                                                 |
-| .edata <br/>    | Exportar tabelas <br/>                                                                                                                                                | Image \_ SCN \_ CNT \_ INITIALIZED \_ Data \| Image \_ SCN \_ mem \_ Read <br/>                                                                                                                                                                                                                                                                                                                           |
-| .idata <br/>    | Importar tabelas <br/>                                                                                                                                                | IMAGE \_ SCN \_ CNT \_ INITIALIZED \_ Data \| Image \_ SCN \_ mem \_ Read \| Image \_ SCN \_ mem \_ Write <br/>                                                                                                                                                                                                                                                                                                 |
+| .bss <br/>      | Dados não reinicializados (formato livre) <br/>                                                                                                                             | IMAGE \_ SCN \_ CNT \_ UNNITIALIZED \_ DATA IMAGE \| \_ SCN \_ MEM READ IMAGE \_ \| \_ SCN \_ MEM \_ WRITE <br/>                                                                                                                                                                                                                                                                                               |
+| .cormeta <br/>  | Metadados CLR que indicam que o arquivo de objeto contém código gerenciado <br/>                                                                                       | INFORMAÇÕES \_ DO SCN \_ LNK DA \_ IMAGEM <br/>                                                                                                                                                                                                                                                                                                                                                                 |
+| .data <br/>     | Dados inicializados (formato gratuito) <br/>                                                                                                                               | IMAGE \_ SCN \_ CNT \_ INITIALIZED \_ DATA \| IMAGE \_ SCN \_ MEM \_ READ \| IMAGE \_ SCN \_ MEM \_ WRITE <br/>                                                                                                                                                                                                                                                                                                 |
+| .debug$F <br/>  | Informações de depuração de FPO geradas (somente objeto, somente arquitetura x86 e agora obsoletas) <br/>                                                                       | IMAGE \_ SCN \_ CNT \_ INITIALIZED \_ DATA \| IMAGE \_ SCN \_ MEM \_ READ \| IMAGE \_ SCN \_ MEM \_ DISCARDABLE <br/>                                                                                                                                                                                                                                                                                           |
+| .debug$P <br/>  | Tipos de depuração pré-compilados (somente objeto) <br/>                                                                                                                        | IMAGE \_ SCN \_ CNT \_ INITIALIZED \_ DATA \| IMAGE \_ SCN \_ MEM \_ READ \| IMAGE \_ SCN \_ MEM \_ DISCARDABLE <br/>                                                                                                                                                                                                                                                                                           |
+| .debug$S <br/>  | Símbolos de depuração (somente objeto) <br/>                                                                                                                                  | IMAGE \_ SCN \_ CNT \_ INITIALIZED \_ DATA \| IMAGE \_ SCN \_ MEM \_ READ \| IMAGE \_ SCN \_ MEM \_ DISCARDABLE <br/>                                                                                                                                                                                                                                                                                           |
+| .debug$T <br/>  | Tipos de depuração (somente objeto) <br/>                                                                                                                                    | IMAGE \_ SCN \_ CNT \_ INITIALIZED \_ DATA \| IMAGE \_ SCN \_ MEM \_ READ \| IMAGE \_ SCN \_ MEM \_ DISCARDABLE <br/>                                                                                                                                                                                                                                                                                           |
+| .drective <br/> | Opções do vinculador <br/>                                                                                                                                               | INFORMAÇÕES \_ DO SCN \_ LNK DA \_ IMAGEM <br/>                                                                                                                                                                                                                                                                                                                                                                 |
+| .edata <br/>    | Exportar tabelas <br/>                                                                                                                                                | IMAGE \_ SCN \_ CNT \_ INITIALIZED \_ DATA \| IMAGE \_ SCN \_ MEM \_ READ <br/>                                                                                                                                                                                                                                                                                                                           |
+| .idata <br/>    | Importar tabelas <br/>                                                                                                                                                | IMAGE \_ SCN \_ CNT \_ INITIALIZED \_ DATA \| IMAGE \_ SCN \_ MEM \_ READ \| IMAGE \_ SCN \_ MEM \_ WRITE <br/>                                                                                                                                                                                                                                                                                                 |
 | .idlsym <br/>   | Inclui SEH (Image only) registrado para dar suporte a atributos IDL. Para obter informações, consulte "atributos IDL" em [referências](#references) no final deste tópico. <br/> | informações do IMAGE \_ SCN \_ lnk \_ <br/>                                                                                                                                                                                                                                                                                                                                                                 |
 | . pData <br/>    | Informações da exceção <br/>                                                                                                                                        | Image \_ SCN \_ CNT \_ INITIALIZED \_ Data \| Image \_ SCN \_ mem \_ Read <br/>                                                                                                                                                                                                                                                                                                                           |
 | . rdata <br/>    | Dados inicializados somente leitura <br/>                                                                                                                                   | Image \_ SCN \_ CNT \_ INITIALIZED \_ Data \| Image \_ SCN \_ mem \_ Read <br/>                                                                                                                                                                                                                                                                                                                           |
@@ -1404,7 +1404,7 @@ Uma entrada de diretório de depuração tem o seguinte formato:
 | 12 <br/> | 4 <br/> | Tipo <br/>             | O formato das informações de depuração. Este campo habilita o suporte a vários depuradores. Para obter mais informações, consulte [debug Type](#debug-type).<br/> |
 | 16 <br/> | 4 <br/> | SizeOfData <br/>       | O tamanho dos dados de depuração (não incluindo o próprio diretório de depuração). <br/>                                                                     |
 | 20 <br/> | 4 <br/> | AddressOfRawData <br/> | O endereço dos dados de depuração quando carregados, em relação à base da imagem. <br/>                                                                     |
-| 24 <br/> | 4 <br/> | PointerToRawData <br/> | O ponteiro de arquivo para os dados de depuração. <br/>                                                                                                        |
+| 24 <br/> | 4 <br/> | Pointertorawdata <br/> | O ponteiro do arquivo para os dados de depuração. <br/>                                                                                                        |
 
 
 
@@ -1412,32 +1412,32 @@ Uma entrada de diretório de depuração tem o seguinte formato:
 
 #### <a name="debug-type"></a>Tipo de depuração
 
-Os valores a seguir são definidos para o campo de tipo da entrada do diretório de depuração:
+Os seguintes valores são definidos para o campo Tipo da entrada do diretório de depuração:
 
 
 
 | Constante                                        | Valor          | Descrição                                                                                                                                                                                                      |
 |-------------------------------------------------|----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| tipo de depuração de imagem \_ \_ \_ desconhecido <br/>         | 0 <br/>  | Um valor desconhecido que é ignorado por todas as ferramentas. <br/>                                                                                                                                                       |
-| tipo de depuração de imagem \_ \_ \_ COFF <br/>            | 1 <br/>  | As informações de depuração do COFF (números de linha, tabela de símbolos e tabela de cadeia de caracteres). Esse tipo de informação de depuração também é apontado por campos nos cabeçalhos de arquivo. <br/>                                          |
-| tipo de depuração de imagem \_ \_ \_ CODEVIEW <br/>        | 2 <br/>  | As informações de depuração de Visual C++. <br/>                                                                                                                                                                    |
-| tipo de depuração de imagem \_ \_ \_ FPO <br/>             | 3 <br/>  | As informações de omissão do ponteiro do quadro (FPO). Essas informações dizem ao depurador como interpretar quadros de pilhas não padrão, que usam o Registro EBP para uma finalidade diferente de um ponteiro de quadro. <br/> |
-| tipo de depuração de imagem \_ \_ \_ misc <br/>            | 4 <br/>  | O local do arquivo DBG. <br/>                                                                                                                                                                            |
-| \_exceção de \_ tipo de depuração de imagem \_ <br/>       | 5 <br/>  | Uma cópia da seção. pData. <br/>                                                                                                                                                                            |
-| \_correção de \_ tipo de depuração de imagem \_ <br/>           | 6 <br/>  | Reservado. <br/>                                                                                                                                                                                            |
-| \_ \_ tipo de depuração \_ de imagem OMAP \_ como \_ src <br/>   | 7 <br/>  | O mapeamento de um RVA na imagem para um RVA na imagem de origem. <br/>                                                                                                                                          |
-| \_ \_ tipo de depuração \_ de imagem OMAP \_ da \_ src <br/> | 8 <br/>  | O mapeamento de um RVA na imagem de origem para um RVA na imagem. <br/>                                                                                                                                          |
-| tipo de depuração de imagem \_ \_ \_ BORLAND <br/>         | 9 <br/>  | Reservado para Borland. <br/>                                                                                                                                                                                |
-| Tipo de depuração de imagem \_ \_ \_ RESERVED10 <br/>      | 10 <br/> | Reservado. <br/>                                                                                                                                                                                            |
-| \_CLSID do \_ tipo de depuração de imagem \_ <br/>           | 11 <br/> | Reservado. <br/>                                                                                                                                                                                            |
-| \_reprodução de \_ tipo de depuração de imagem \_ <br/>           | 16 <br/> | Determinante do PE ou reprodução. <br/>                                                                                                                                                                   |
-| tipo de depuração de imagem \_ \_ \_ ex \_ DLLCHARACTERISTICS | 20 | Bits de características de DLL estendidas. |
+| TIPO \_ DE \_ DEPURAÇÃO DE IMAGEM \_ DESCONHECIDO <br/>         | 0 <br/>  | Um valor desconhecido que é ignorado por todas as ferramentas. <br/>                                                                                                                                                       |
+| TIPO \_ DE \_ DEPURAÇÃO DE IMAGEM \_ COFF <br/>            | 1 <br/>  | As informações de depuração do COFF (números de linha, tabela de símbolos e tabela de cadeia de caracteres). Esse tipo de informação de depuração também é apontado por campos nos cabeçalhos de arquivo. <br/>                                          |
+| CODEVIEW \_ DO TIPO DE \_ \_ DEPURAÇÃO DE IMAGEM <br/>        | 2 <br/>  | As Visual C++ de depuração. <br/>                                                                                                                                                                    |
+| \_FPO DO TIPO DE \_ \_ DEPURAÇÃO DE IMAGEM <br/>             | 3 <br/>  | As informações de FPO (omissão de ponteiro de quadro). Essas informações informam ao depurador como interpretar quadros de pilha não padrão, que usam o registro EBP para uma finalidade diferente de como um ponteiro de quadro. <br/> |
+| ERRO DE \_ TIPO DE \_ DEPURAÇÃO \_ DE IMAGEM <br/>            | 4 <br/>  | O local do arquivo DBG. <br/>                                                                                                                                                                            |
+| EXCEÇÃO \_ DE TIPO DE \_ \_ DEPURAÇÃO DE IMAGEM <br/>       | 5 <br/>  | Uma cópia da seção .pdata. <br/>                                                                                                                                                                            |
+| CORREÇÃO \_ DE TIPO DE \_ \_ DEPURAÇÃO DE IMAGEM <br/>           | 6 <br/>  | Reservado. <br/>                                                                                                                                                                                            |
+| TIPO \_ DE \_ DEPURAÇÃO DE IMAGEM \_ OMAP TO \_ \_ SRC <br/>   | 7 <br/>  | O mapeamento de uma RVA na imagem para uma RVA na imagem de origem. <br/>                                                                                                                                          |
+| OMAP DO \_ TIPO DE \_ \_ DEPURAÇÃO DE IMAGEM DO \_ \_ SRC <br/> | 8 <br/>  | O mapeamento de uma RVA na imagem de origem para uma RVA na imagem. <br/>                                                                                                                                          |
+| TIPO \_ DE \_ DEPURAÇÃO DE IMAGEM \_ BORLAND <br/>         | 9 <br/>  | Reservado para Borland. <br/>                                                                                                                                                                                |
+| TIPO \_ DE \_ DEPURAÇÃO DE IMAGEM \_ RESERVADO10 <br/>      | 10 <br/> | Reservado. <br/>                                                                                                                                                                                            |
+| CLSID DO TIPO \_ DE \_ \_ DEPURAÇÃO DE IMAGEM <br/>           | 11 <br/> | Reservado. <br/>                                                                                                                                                                                            |
+| REPRODUÇÃO \_ DE TIPO DE \_ \_ DEPURAÇÃO DE IMAGEM <br/>           | 16 <br/> | Determinismo pe ou reprodutibilidade. <br/>                                                                                                                                                                   |
+| TIPO \_ DE \_ DEPURAÇÃO DE IMAGEM EX \_ \_ DLLCHARACTERISTICS | 20 | Bits de características de DLL estendidas. |
 
 
 
  
 
-Se o campo tipo for definido como tipo de depuração de imagem \_ \_ \_ FPO, os dados brutos de depuração serão uma matriz na qual cada membro descreve o quadro de pilha de uma função. Nem todas as funções no arquivo de imagem devem ter informações de FPO definidas para ela, mesmo que o tipo de depuração seja FPO. Supõe-se que as funções que não têm informações de FPO tenham quadros de pilhas normais. O formato das informações FPO é o seguinte:
+Se o campo Tipo for definido como IMAGE DEBUG TYPE FPO, os dados \_ brutos de depuração serão uma matriz na qual cada membro descreverá o quadro de pilha \_ \_ de uma função. Nem todas as funções no arquivo de imagem devem ter informações de FPO definidas para ela, embora o tipo de depuração seja FPO. Supõe-se que essas funções que não têm informações de FPO tenham quadros de pilha normais. O formato para informações de FPO é o seguinte:
 
 
 ```C++
@@ -1461,9 +1461,9 @@ typedef struct _FPO_DATA {
 
 
 
-A presença de uma entrada de tipo de depuração de imagem de tipo \_ \_ \_ reproduza indica que o arquivo PE foi criado de forma a atingir o determinante ou reprodução. Se a entrada não for alterada, o arquivo PE de saída é garantido como bit a bit idêntico, independentemente de quando ou onde o PE é produzido. Vários campos de carimbo de data/hora no arquivo PE são preenchidos com parte ou todos os bits de um valor de hash calculado que usa o conteúdo do arquivo PE como entrada e, portanto, não representam mais a data e a hora reais quando um arquivo PE ou dados específicos relacionados no PE é produzido. Os dados brutos dessa entrada de depuração podem estar vazios ou podem conter um valor de hash calculado precedido por um valor de quatro bytes que representa o comprimento do valor de hash.
+A presença de uma entrada do tipo IMAGE DEBUG TYPE REPRO indica que o arquivo PE é criado de forma a obter determinismo ou \_ \_ \_ reprodutibilidade. Se a entrada não mudar, o arquivo PE de saída será bit a bit idêntico, independentemente de quando ou onde o PE for produzido. Vários campos de carimbo de data/hora no arquivo PE são preenchidos com parte ou todos os bits de um valor de hash calculado que usa o conteúdo do arquivo PE como entrada e, portanto, não representam mais a data e a hora reais em que um arquivo PE ou dados específicos relacionados no PE são produzidos. Os dados brutos dessa entrada de depuração podem estar vazios ou podem conter um valor de hash calculado precedido por um valor de quatro byte que representa o comprimento do valor de hash.
 
-Se o campo tipo for definido como tipo de depuração de imagem \_ \_ \_ \_ , por exemplo, DLLCHARACTERISTICS, os dados brutos de depuração conterão bits de características de dll estendidos, em outros, que podem ser definidos no cabeçalho opcional da imagem. Consulte [características de dll](#dll-characteristics) na seção [cabeçalho opcional Windows-Specific campos (somente imagem)](#optional-header-windows-specific-fields-image-only).
+Se o campo Tipo for definido como IMAGE \_ DEBUG \_ TYPE EX \_ DLLCHARACTERISTICS, os dados brutos de depuração conterão bits de características DLL estendidas, além daqueles que podem ser definidos no header opcional da \_ imagem. Consulte [Características de DLL](#dll-characteristics) na seção [Header Windows-Specific Campos (Somente Imagem)](#optional-header-windows-specific-fields-image-only).
 
 ##### <a name="extended-dll-characteristics"></a>Características de DLL estendidas
 
@@ -1471,87 +1471,87 @@ Os valores a seguir são definidos para os bits de características de DLL esten
 
 | Constante | Valor | Descrição |
 |-|-|-|
-| IMAGE \_ DLLCHARACTERISTICS \_ ex \_ CET \_ compatível | 0x0001 | A imagem é compatível com CET. |
+| IMAGE \_ DLLCHARACTERISTICS \_ EX \_ CET \_ COMPAT | 0x0001 | A imagem é compatível com CET. |
 
-#### <a name="debugf-object-only"></a>. Debug $ F (somente objeto)
+#### <a name="debugf-object-only"></a>.debug$F (somente objeto)
 
-Os dados nesta seção foram substituídos no Visual C++ versão 7,0 e posterior por um conjunto de dados mais amplo que é emitido em uma subseção **. Debug $ S** .
+Os dados nesta seção foram substitutos na Visual C++ versão 7.0 e posterior por um conjunto mais amplo de dados emitidos em uma subseção **.debug$S.**
 
-Os arquivos de objeto podem conter seções. Debug $ F cujo conteúdo é um ou mais \_ registros de dados FPO (informações de omissão de ponteiro de quadro). Consulte " \_ \_ tipo de depuração \_ de imagem FPO" em [tipo de depuração](#debug-type).
+Os arquivos de objeto podem conter seções .debug$F cujo conteúdo é um ou mais registros de DADOS de FPO (informações de \_ omissão do ponteiro de quadro). Consulte "IMAGE \_ DEBUG \_ TYPE \_ FPO" em [Depurar Tipo](#debug-type).
 
-O vinculador reconhece isso **. depurar $ F** registros. Se as informações de depuração estiverem sendo geradas, o vinculador classificará os \_ registros de dados FPO por RVA de procedimento e gerará uma entrada de diretório de depuração para eles.
+O linker reconhece esses **registros .debug$F.** Se as informações de depuração estão sendo geradas, o vinculador classifica os registros de DADOS do FPO por procedimento RVA e gera uma entrada de diretório \_ de depuração para eles.
 
 O compilador não deve gerar registros FPO para procedimentos que têm um formato de quadro padrão.
 
-#### <a name="debugs-object-only"></a>. Debug $ S (somente objeto)
+#### <a name="debugs-object-only"></a>.debug$S (somente objeto)
 
-Esta seção contém Visual C++ informações de depuração (informações simbólicas).
+Esta seção contém informações Visual C++ de depuração (informações simbólicas).
 
-#### <a name="debugp-object-only"></a>. Debug $ P (somente objeto)
+#### <a name="debugp-object-only"></a>.debug$P (somente objeto)
 
-Esta seção contém Visual C++ informações de depuração (informações pré-compiladas). Esses são tipos compartilhados entre todos os objetos que foram compilados usando o cabeçalho pré-compilado que foi gerado com esse objeto.
+Esta seção contém Visual C++ informações de depuração (informações pré-compiladas). Esses são tipos compartilhados entre todos os objetos que foram compilados usando o header pré-compilado que foi gerado com esse objeto.
 
-#### <a name="debugt-object-only"></a>. debug $ T (somente objeto)
+#### <a name="debugt-object-only"></a>.debug$T (somente objeto)
 
-Esta seção contém Visual C++ informações de depuração (informações de tipo).
+Esta seção contém informações Visual C++ de depuração (informações de tipo).
 
-#### <a name="linker-support-for-microsoft-debug-information"></a>Suporte do vinculador para informações de depuração da Microsoft
+#### <a name="linker-support-for-microsoft-debug-information"></a>Suporte do Linker para informações de depuração da Microsoft
 
-Para oferecer suporte a informações de depuração, o vinculador:
+Para dar suporte a informações de depuração, o linker:
 
--   Coleta todos os dados de depuração relevantes das seções **. Debug $ F**, **debug $ S**, **. Debug $ P** e **. debug $ T** .
+-   Coleta todos os dados de depuração relevantes das seções **.debug$F**, **debug$S,** **.debug$P** e **.debug$T.**
 
--   Processa esses dados juntamente com as informações de depuração geradas pelo vinculador no arquivo PDB e cria uma entrada de diretório de depuração para fazer referência a ele.
+-   Processa esses dados junto com as informações de depuração geradas pelo vinculador no arquivo PDB e cria uma entrada de diretório de depuração para fazer referência a eles.
 
-### <a name="the-drectve-section-object-only"></a>A seção. drectve (somente objeto)
+### <a name="the-drectve-section-object-only"></a>A seção .drectve (somente objeto)
 
-Uma seção é uma seção de diretiva se tiver o \_ sinalizador de informações de SCN lnk de imagem \_ \_ definido no cabeçalho da seção e tiver o nome da seção **. drectve** . O vinculador remove uma seção **. drectve** depois de processar as informações, portanto, a seção não aparece no arquivo de imagem que está sendo vinculado.
+Uma seção será uma seção de diretiva se tiver o sinalizador IMAGE SCN LNK INFO definido no header da seção e tiver o nome da seção \_ \_ \_ **.drectve.** O vinculador remove uma **seção .drectve** depois de processar as informações, para que a seção não apareça no arquivo de imagem que está sendo vinculado.
 
-Uma seção **. drectve** consiste em uma cadeia de caracteres de texto que pode ser codificada como ANSI ou UTF-8. Se o marcador de ordem de byte UTF-8 (BOM, um prefixo de três bytes que consiste em 0xEF, 0xBB e 0xBF) não estiver presente, a cadeia de caracteres de diretiva será interpretada como ANSI. A cadeia de caracteres de diretiva é uma série de opções de vinculador que são separadas por espaços. Cada opção contém um hífen, o nome da opção e qualquer atributo apropriado. Se uma opção contiver espaços, a opção deverá ser colocada entre aspas. A seção **. drectve** não deve ter realocações ou números de linha.
+Uma **seção .drectve** consiste em uma cadeia de caracteres de texto que pode ser codificada como ANSI ou UTF-8. Se o marcador de ordem de byte UTF-8 (BOM, um prefixo de três byte que consiste em 0xEF, 0xBB e 0xBF) não estiver presente, a cadeia de caracteres de diretiva será interpretada como ANSI. A cadeia de caracteres de diretiva é uma série de opções de vinculador que são separadas por espaços. Cada opção contém um hífen, o nome da opção e qualquer atributo apropriado. Se uma opção contiver espaços, a opção deverá ser entre aspas. A **seção .drectve** não deve ter realocações ou números de linha.
 
-### <a name="the-edata-section-image-only"></a>A seção. Edata (somente imagem)
+### <a name="the-edata-section-image-only"></a>A seção .edata (somente imagem)
 
-A seção exportar dados, denominada. Edata, contém informações sobre símbolos que outras imagens podem acessar por meio de vinculação dinâmica. Os símbolos exportados geralmente são encontrados em DLLs, mas as DLLs também podem importar símbolos.
+A seção exportar dados, chamada .edata, contém informações sobre símbolos que outras imagens podem acessar por meio de vinculação dinâmica. Símbolos exportados geralmente são encontrados em DLLs, mas as DLLs também podem importar símbolos.
 
-Uma visão geral da estrutura geral da seção exportar é descrita abaixo. As tabelas descritas geralmente são contíguas no arquivo na ordem mostrada (embora isso não seja necessário). Somente a tabela de exportação de diretório e a tabela de endereços de exportação são necessárias para exportar símbolos como ordinais. (Um ordinal é uma exportação que é acessada diretamente pelo índice da tabela de endereços de exportação.) A tabela de ponteiros de nome, a tabela ordinal e a tabela de nomes de exportação existem para dar suporte ao uso de nomes de exportação.
+Uma visão geral da estrutura geral da seção de exportação é descrita abaixo. As tabelas descritas geralmente são contíguas no arquivo na ordem mostrada (embora isso não seja necessário). Somente a tabela de diretório de exportação e a tabela de endereços de exportação são necessárias para exportar símbolos como ordinais. (Um ordinal é uma exportação acessada diretamente pelo índice da tabela de endereços de exportação.) A tabela de ponteiro de nome, a tabela ordinal e a tabela de nomes de exportação existem para dar suporte ao uso de nomes de exportação.
 
 
 
 | Nome da tabela                         | Descrição                                                                                                                                                                                                                                                                                                                                                |
 |------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Exportar tabela de diretórios <br/> | Uma tabela com apenas uma linha (ao contrário do diretório de depuração). Esta tabela indica os locais e tamanhos das outras tabelas de exportação. <br/>                                                                                                                                                                                                               |
-| Exportar tabela de endereços <br/>   | Uma matriz de RVAs de símbolos exportados. Esses são os endereços reais das funções e dos dados exportados no código executável e nas seções de dados. Outros arquivos de imagem podem importar um símbolo usando um índice para esta tabela (um ordinal) ou, opcionalmente, usando o nome público que corresponde ao ordinal se um nome público for definido. <br/> |
-| Tabela de ponteiros de nome <br/>     | Uma matriz de ponteiros para os nomes de exportação públicos, classificados em ordem crescente. <br/>                                                                                                                                                                                                                                                                    |
-| Tabela ordinal <br/>          | Uma matriz dos ordinais que correspondem aos membros da tabela de ponteiros de nome. A correspondência é por posição; Portanto, a tabela de ponteiros de nome e a tabela ordinal devem ter o mesmo número de membros. Cada ordinal é um índice na tabela de endereços de exportação. <br/>                                                                        |
-| Exportar tabela de nomes <br/>      | Uma série de cadeias de caracteres ASCII terminadas em nulo. Os membros da tabela de ponteiros de nome apontam para essa área. Esses nomes são os nomes públicos pelos quais os símbolos são importados e exportados; Eles não são necessariamente os mesmos que os nomes privados que são usados no arquivo de imagem. <br/>                                                           |
+| Exportar tabela de endereços <br/>   | Uma matriz de RVAs de símbolos exportados. Esses são os endereços reais das funções e dados exportados dentro das seções de dados e código executável. Outros arquivos de imagem podem importar um símbolo usando um índice para essa tabela (um ordinal) ou, opcionalmente, usando o nome público que corresponde ao ordinal se um nome público for definido. <br/> |
+| Tabela de ponteiros de nome <br/>     | Uma matriz de ponteiros para os nomes de exportação públicos, classificação em ordem crescente. <br/>                                                                                                                                                                                                                                                                    |
+| Tabela ordinal <br/>          | Uma matriz dos ordinais que correspondem aos membros da tabela de ponteiros de nome. A correspondência é por posição; portanto, a tabela de ponteiro de nome e a tabela ordinal devem ter o mesmo número de membros. Cada ordinal é um índice na tabela de endereços de exportação. <br/>                                                                        |
+| Exportar tabela de nomes <br/>      | Uma série de cadeias de caracteres ASCII terminadas em nulo. Os membros da tabela de ponteiro de nome apontam para essa área. Esses nomes são os nomes públicos pelos quais os símbolos são importados e exportados; eles não são necessariamente os mesmos que os nomes privados que são usados dentro do arquivo de imagem. <br/>                                                           |
 
 
 
  
 
-Quando outro arquivo de imagem importa um símbolo por nome, o carregador Win32 pesquisa a tabela de ponteiros de nome para uma cadeia de caracteres correspondente. Se uma cadeia de caracteres correspondente for encontrada, o ordinal associado será identificado pesquisando o membro correspondente na tabela ordinal (ou seja, o membro da tabela ordinal com o mesmo índice que o ponteiro de cadeia de caracteres encontrado na tabela de ponteiros de nome). O ordinal resultante é um índice na tabela de endereços de exportação, que fornece o local real do símbolo desejado. Cada símbolo de exportação pode ser acessado por um ordinal.
+Quando outro arquivo de imagem importa um símbolo por nome, o carregador Win32 pesquisa na tabela de ponteiros de nome uma cadeia de caracteres correspondente. Se uma cadeia de caracteres correspondente for encontrada, o ordinal associado será identificado procurando o membro correspondente na tabela ordinal (ou seja, o membro da tabela ordinal com o mesmo índice que o ponteiro de cadeia de caracteres encontrado na tabela de ponteiro de nome). O ordinal resultante é um índice na tabela de endereços de exportação, que fornece o local real do símbolo desejado. Cada símbolo de exportação pode ser acessado por um ordinal.
 
-Quando outro arquivo de imagem importa um símbolo por ordinal, é desnecessário Pesquisar a tabela de ponteiro de nome para uma cadeia de caracteres correspondente. O uso direto de um ordinal é, portanto, mais eficiente. No entanto, um nome de exportação é mais fácil de lembrar e não exige que o usuário saiba o índice de tabela do símbolo.
+Quando outro arquivo de imagem importa um símbolo por ordinal, é desnecessário pesquisar uma cadeia de caracteres correspondente na tabela de ponteiros de nome. Portanto, o uso direto de um ordinal é mais eficiente. No entanto, um nome de exportação é mais fácil de lembrar e não exige que o usuário conheça o índice da tabela para o símbolo.
 
 #### <a name="export-directory-table"></a>Exportar tabela de diretórios
 
-As informações de exportação de símbolo começam com a tabela exportar diretório, que descreve o restante das informações de símbolo de exportação. A tabela exportar diretório contém informações de endereço que são usadas para resolver importações para os pontos de entrada dentro desta imagem.
+As informações de símbolo de exportação começam com a tabela de diretório de exportação, que descreve o restante das informações de símbolo de exportação. A tabela de diretório de exportação contém informações de endereço que são usadas para resolver importações para os pontos de entrada dentro dessa imagem.
 
 
 
 | Deslocamento         | Tamanho          | Campo                                | Descrição                                                                                                                                                               |
 |----------------|---------------|--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0 <br/>  | 4 <br/> | Sinalizadores de exportação <br/>             | Reservado, deve ser 0. <br/>                                                                                                                                          |
+| 0 <br/>  | 4 <br/> | Exportar sinalizadores <br/>             | Reservado, deve ser 0. <br/>                                                                                                                                          |
 | 4 <br/>  | 4 <br/> | Carimbo de data/hora <br/>          | A hora e a data em que os dados de exportação foram criados. <br/>                                                                                                           |
 | 8 <br/>  | 2 <br/> | Versão Principal <br/>            | O número da versão principal. Os números de versão principal e secundária podem ser definidos pelo usuário. <br/>                                                                         |
 | 10 <br/> | 2 <br/> | Versão Secundária <br/>            | O número da versão secundária. <br/>                                                                                                                                     |
-| 12 <br/> | 4 <br/> | RVA de nome <br/>                 | O endereço da cadeia de caracteres ASCII que contém o nome da DLL. Esse endereço é relativo à base da imagem. <br/>                                                |
-| 16 <br/> | 4 <br/> | Base ordinal <br/>             | O número ordinal inicial para exportações nesta imagem. Este campo especifica o número ordinal inicial para a tabela de endereços de exportação. Normalmente, ele é definido como 1. <br/> |
+| 12 <br/> | 4 <br/> | Nome RVA <br/>                 | O endereço da cadeia de caracteres ASCII que contém o nome da DLL. Esse endereço é relativo à base de imagem. <br/>                                                |
+| 16 <br/> | 4 <br/> | Ordinal Base <br/>             | O número ordinal inicial para exportações nesta imagem. Esse campo especifica o número ordinal inicial da tabela de endereços de exportação. Normalmente, ele é definido como 1. <br/> |
 | 20 <br/> | 4 <br/> | Entradas da tabela de endereços <br/>    | O número de entradas na tabela de endereços de exportação. <br/>                                                                                                            |
 | 24 <br/> | 4 <br/> | Número de ponteiros de nome <br/>  | O número de entradas na tabela de ponteiros de nome. Esse também é o número de entradas na tabela ordinal. <br/>                                                     |
-| 28 <br/> | 4 <br/> | Exportar RVA de tabela de endereços <br/> | O endereço da tabela de endereços de exportação, em relação à base da imagem. <br/>                                                                                          |
-| 32 <br/> | 4 <br/> | RVA do ponteiro de nome <br/>         | O endereço da tabela de ponteiros do nome de exportação, em relação à base da imagem. O tamanho da tabela é fornecido pelo campo número de ponteiros de nome. <br/>                       |
-| 36 <br/> | 4 <br/> | RVA da tabela ordinal <br/>        | O endereço da tabela ordinal, em relação à base da imagem. <br/>                                                                                                 |
+| 28 <br/> | 4 <br/> | Exportar RVA da Tabela de Endereços <br/> | O endereço da tabela de endereços de exportação, em relação à base de imagem. <br/>                                                                                          |
+| 32 <br/> | 4 <br/> | Ponteiro de nome RVA <br/>         | O endereço da tabela de ponteiro de nome de exportação, em relação à base de imagem. O tamanho da tabela é determinado pelo campo Número de Ponteiros de Nome. <br/>                       |
+| 36 <br/> | 4 <br/> | RVA de tabela ordinal <br/>        | O endereço da tabela ordinal, em relação à base de imagem. <br/>                                                                                                 |
 
 
 
@@ -1561,36 +1561,36 @@ As informações de exportação de símbolo começam com a tabela exportar dire
 
 A tabela de endereços de exportação contém o endereço de pontos de entrada exportados e dados exportados e absolutos. Um número ordinal é usado como um índice na tabela de endereços de exportação.
 
-Cada entrada na tabela de endereços de exportação é um campo que usa um dos dois formatos na tabela a seguir. Se o endereço especificado não estiver dentro da seção de exportação (conforme definido pelo endereço e pelo comprimento que são indicados no cabeçalho opcional), o campo será um RVA de exportação, que é um endereço real no código ou nos dados. Caso contrário, o campo é um RVA do encaminhador, que nomeia um símbolo em outra DLL.
+Cada entrada na tabela de endereços de exportação é um campo que usa um dos dois formatos na tabela a seguir. Se o endereço especificado não estiver dentro da seção de exportação (conforme definido pelo endereço e pelo comprimento indicados no header opcional), o campo será um RVA de exportação, que é um endereço real no código ou nos dados. Caso contrário, o campo será um RVA encaminhador, que nomeia um símbolo em outra DLL.
 
 
 
 | Deslocamento        | Tamanho          | Campo                     | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 |---------------|---------------|---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0 <br/> | 4 <br/> | Exportar RVA <br/>    | O endereço do símbolo exportado quando carregado na memória, em relação à base da imagem. Por exemplo, o endereço de uma função exportada. <br/>                                                                                                                                                                                                                                                                                                       |
-| 0 <br/> | 4 <br/> | RVA do encaminhador <br/> | O ponteiro para uma cadeia de caracteres ASCII terminada em nulo na seção exportar. Essa cadeia de caracteres deve estar dentro do intervalo fornecido pela entrada do diretório de dados da tabela de exportação. Consulte [diretórios de dados de cabeçalho opcionais (somente imagem)](#optional-header-data-directories-image-only). Essa cadeia de caracteres fornece o nome da DLL e o nome da exportação (por exemplo, "MYDLL. expfunc") ou o nome da DLL e o número ordinal da exportação (por exemplo, "MYDLL. \# 27 "). <br/> |
+| 0 <br/> | 4 <br/> | Exportar RVA <br/>    | O endereço do símbolo exportado quando carregado na memória, em relação à base de imagem. Por exemplo, o endereço de uma função exportada. <br/>                                                                                                                                                                                                                                                                                                       |
+| 0 <br/> | 4 <br/> | RVA do encaminhador <br/> | O ponteiro para uma cadeia de caracteres ASCII terminada em nulo na seção de exportação. Essa cadeia de caracteres deve estar dentro do intervalo que é determinado pela entrada do diretório de dados da tabela de exportação. Consulte [Diretórios de dados de header opcionais (somente imagem)](#optional-header-data-directories-image-only). Essa cadeia de caracteres fornece o nome da DLL e o nome da exportação (por exemplo, "MYDLL.expfunc") ou o nome da DLL e o número ordinal da exportação (por exemplo, "MYDLL. \# 27"). <br/> |
 
 
 
  
 
-Um RVA do encaminhador exporta uma definição de alguma outra imagem, fazendo com que ela seja exibida como se estivesse sendo exportada pela imagem atual. Portanto, o símbolo é importado e exportado simultaneamente.
+Um encaminhador RVA exporta uma definição de alguma outra imagem, fazendo com que ela apareça como se estivesse sendo exportada pela imagem atual. Portanto, o símbolo é importado e exportado simultaneamente.
 
-Por exemplo, em Kernel32.dll no Windows XP, a exportação chamada "HeapAlloc" é encaminhada para a cadeia de caracteres "NTDLL. RtlAllocateHeap." Isso permite que os aplicativos usem o módulo específico do Windows XP Ntdll.dll sem realmente conter referências de importação para ele. A tabela de importação do aplicativo refere-se apenas a Kernel32.dll. Portanto, o aplicativo não é específico do Windows XP e pode ser executado em qualquer sistema Win32.
+Por exemplo, no Kernel32.dll no Windows XP, a exportação chamada "HeapAlloc" é encaminhada para a cadeia de caracteres "NTDLL. RtlAllocateHeap." Isso permite que os aplicativos usem Windows módulo específico do XP Ntdll.dll sem realmente conter referências de importação a ele. A tabela de importação do aplicativo refere-se apenas a Kernel32.dll. Portanto, o aplicativo não é específico Windows XP e pode ser executado em qualquer sistema Win32.
 
-#### <a name="export-name-pointer-table"></a>Exportar tabela de ponteiros de nome
+#### <a name="export-name-pointer-table"></a>Exportar tabela de ponteiro de nome
 
-A tabela de ponteiro de nome de exportação é uma matriz de endereços (RVAs) na tabela de nomes de exportação. Os ponteiros são 32 bits cada e são relativos à base da imagem. Os ponteiros são ordenados lexicalmente para permitir pesquisas binárias.
+A tabela de ponteiro de nome de exportação é uma matriz de endereços (RVAs) para a tabela de nomes de exportação. Os ponteiros são 32 bits cada e são relativos à base de imagem. Os ponteiros são ordenados lexicamente para permitir pesquisas binárias.
 
-Um nome de exportação será definido somente se a tabela de ponteiro de nome de exportação contiver um ponteiro para ele.
+Um nome de exportação será definido somente se a tabela de ponteiro de nome de exportação contiver um ponteiro para ela.
 
 #### <a name="export-ordinal-table"></a>Exportar tabela ordinal
 
-A tabela ordinal de exportação é uma matriz de índices não polarizados de 16 bits na tabela de endereços de exportação. Os ordinais são tendenciosas pelo campo base ordinal da tabela exportar diretório. Em outras palavras, a base ordinal deve ser subtraída dos ordinais para obter índices verdadeiros na tabela de endereços de exportação.
+A tabela ordinal de exportação é uma matriz de índices sem imparcialidade de 16 bits para a tabela de endereços de exportação. Os ordinais são polares pelo campo Base Ordinal da tabela do diretório de exportação. Em outras palavras, a base ordinal deve ser subtraída dos ordinais para obter índices verdadeiros na tabela de endereços de exportação.
 
-A tabela de ponteiro de nome de exportação e a tabela de exportação ordinal formam duas matrizes paralelas que são separadas para permitir o alinhamento de campo natural. Essas duas tabelas, na verdade, funcionam como uma tabela, na qual a coluna de ponteiro de nome de exportação aponta para um nome público (exportado) e a coluna ordinal de exportação fornece o ordinal correspondente para esse nome público. Um membro da tabela de ponteiro de nome de exportação e um membro da tabela de exportação ordinal são associados com a mesma posição (índice) em suas respectivas matrizes.
+A tabela de ponteiro de nome de exportação e a tabela ordinal de exportação formam duas matrizes paralelas separadas para permitir o alinhamento de campo natural. Essas duas tabelas, na verdade, operam como uma tabela, na qual a coluna Exportar Ponteiro de Nome aponta para um nome público (exportado) e a coluna Exportar Ordinal fornece o ordinal correspondente para esse nome público. Um membro da tabela de ponteiros de nome de exportação e um membro da tabela ordinal de exportação são associados por terem a mesma posição (índice) em suas respectivas matrizes.
 
-Assim, quando a tabela de ponteiros do nome de exportação é pesquisada e uma cadeia de caracteres correspondente é encontrada na posição i, o algoritmo para localizar o RVA do símbolo e o ordinal polarizado é:
+Portanto, quando a tabela de ponteiros de nome de exportação é pesquisada e uma cadeia de caracteres correspondente é encontrada na posição i, o algoritmo para localizar a RVA do símbolo e o ordinal desvio é:
 
 ```C++
 i = Search_ExportNamePointerTable (name);
@@ -1600,7 +1600,7 @@ rva = ExportAddressTable [ordinal];
 biased_ordinal = ordinal + OrdinalBase;
 ```
 
-Ao procurar um símbolo por ordinal (tendenciosa), o algoritmo para localizar o RVA e o nome do símbolo é:
+Ao pesquisar um símbolo por ordinal (polarizado), o algoritmo para localizar a RVA e o nome do símbolo é:
 
 ```C++
 ordinal = biased_ordinal - OrdinalBase;
@@ -1610,65 +1610,65 @@ rva = ExportAddressTable [ordinal];
 name = ExportNameTable [i];
 ```
 
-#### <a name="export-name-table"></a>Exportar tabela de nomes
+#### <a name="export-name-table"></a>Exportar Tabela de Nomes
 
-A tabela de nome de exportação contém os dados de cadeia de caracteres reais que foram apontados pela tabela de ponteiros do nome de exportação. As cadeias de caracteres nessa tabela são nomes públicos que outras imagens podem usar para importar os símbolos. Esses nomes de exportação públicos não são necessariamente os mesmos que os nomes de símbolos privados que os símbolos têm em seu próprio arquivo de imagem e código-fonte, embora possam ser.
+A tabela de nomes de exportação contém os dados de cadeia de caracteres reais que foram apontados pela tabela de ponteiro de nome de exportação. As cadeias de caracteres nesta tabela são nomes públicos que outras imagens podem usar para importar os símbolos. Esses nomes de exportação pública não são necessariamente os mesmos que os nomes de símbolos privados que os símbolos têm em seu próprio arquivo de imagem e código-fonte, embora possam ser.
 
-Cada símbolo exportado tem um valor ordinal, que é apenas o índice na tabela de endereços de exportação. No entanto, o uso de nomes de exportação é opcional. Alguns, todos ou nenhum dos símbolos exportados podem ter nomes de exportação. Para símbolos exportados que têm nomes de exportação, as entradas correspondentes na tabela de ponteiro de nome de exportação e a tabela ordinal de exportação funcionam em conjunto para associar cada nome a um ordinal.
+Cada símbolo exportado tem um valor ordinal, que é apenas o índice na tabela de endereços de exportação. No entanto, o uso de nomes de exportação é opcional. Alguns, todos ou nenhum dos símbolos exportados podem ter nomes de exportação. Para símbolos exportados que têm nomes de exportação, as entradas correspondentes na tabela de ponteiro de nome de exportação e a tabela ordinal de exportação trabalham juntas para associar cada nome a um ordinal.
 
-A estrutura da tabela de nome de exportação é uma série de cadeias de caracteres ASCII com terminação nula de comprimento variável.
+A estrutura da tabela de nomes de exportação é uma série de cadeias de caracteres ASCII terminadas em nulo de comprimento variável.
 
-### <a name="the-idata-section"></a>A seção. iData
+### <a name="the-idata-section"></a>A seção .idata
 
-Todos os arquivos de imagem que importam símbolos, incluindo praticamente todos os arquivos executáveis (EXE), têm uma seção. iData. Segue um layout de arquivo típico para as informações de importação:
+Todos os arquivos de imagem que importam símbolos, incluindo praticamente todos os arquivos executáveis (EXE), têm uma seção .idata. Um layout de arquivo típico para as informações de importação é o seguinte:
 
 -   Tabela de diretórios
 
-    Entrada de diretório nula
+    Entrada de diretório nulo
 
--   Tabela de pesquisa de importação do DLL1
-
-    Nulo
-
--   Tabela de pesquisa de importação do DLL2
+-   Tabela de lookup de importação DLL1
 
     Nulo
 
--   Tabela de pesquisa de importação do DLL3
+-   Tabela de lookup de importação DLL2
 
     Nulo
 
--   Tabela de Hint-Name
+-   Tabela de lookup de importação DLL3
+
+    Nulo
+
+-   Hint-Name tabela
 
 #### <a name="import-directory-table"></a>Importar tabela de diretórios
 
-As informações de importação começam com a tabela de importação de diretório, que descreve o restante das informações de importação. A tabela importar diretório contém informações de endereço que são usadas para resolver referências de correção para os pontos de entrada dentro de uma imagem DLL. A tabela importar diretório consiste em uma matriz de entradas do diretório de importação, uma entrada para cada DLL à qual a imagem se refere. A última entrada de diretório está vazia (preenchida com valores nulos), que indica o final da tabela de diretórios.
+As informações de importação começam com a tabela importar diretório, que descreve o restante das informações de importação. A tabela importar diretório contém informações de endereço que são usadas para resolver referências de correção para os pontos de entrada dentro de uma imagem DLL. A tabela importar diretório consiste em uma matriz de entradas de diretório de importação, uma entrada para cada DLL à qual a imagem se refere. A última entrada de diretório está vazia (preenchida com valores nulos), o que indica o final da tabela de diretórios.
 
-Cada entrada do diretório de importação tem o seguinte formato:
+Cada entrada de diretório de importação tem o seguinte formato:
 
 
 
 | Deslocamento         | Tamanho          | Campo                                                 | Descrição                                                                                                                                                                                 |
 |----------------|---------------|-------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0 <br/>  | 4 <br/> | Importar RVA (características) da tabela de pesquisa <br/> | O RVA da tabela de pesquisa de importação. Esta tabela contém um nome ou ordinal para cada importação. (O nome "características" é usado em Winnt. h, mas não descreve mais este campo.) <br/> |
-| 4 <br/>  | 4 <br/> | Carimbo de data/hora <br/>                           | O carimbo que é definido como zero até que a imagem seja associada. Depois que a imagem é associada, esse campo é definido como o carimbo de data/hora da DLL. <br/>                                          |
-| 8 <br/>  | 4 <br/> | Cadeia de encaminhadores <br/>                           | O índice da primeira referência do encaminhador. <br/>                                                                                                                                     |
-| 12 <br/> | 4 <br/> | RVA de nome <br/>                                  | O endereço de uma cadeia de caracteres ASCII que contém o nome da DLL. Esse endereço é relativo à base da imagem. <br/>                                                                   |
-| 16 <br/> | 4 <br/> | Importar a tabela de endereços RVA (tabela de conversão) <br/>    | O RVA da tabela de endereços de importação. O conteúdo dessa tabela é idêntico ao conteúdo da tabela de pesquisa de importação até que a imagem seja associada. <br/>                              |
+| 0 <br/>  | 4 <br/> | Importar RVA da tabela de lookup (características) <br/> | O RVA da tabela de lookup de importação. Esta tabela contém um nome ou ordinal para cada importação. (O nome "Características" é usado em Winnt.h, mas não descreve mais esse campo.) <br/> |
+| 4 <br/>  | 4 <br/> | Carimbo de data/hora <br/>                           | O carimbo definido como zero até que a imagem seja vinculada. Depois que a imagem é vinculada, esse campo é definido como o carimbo de data/hora da DLL. <br/>                                          |
+| 8 <br/>  | 4 <br/> | Cadeia de encaminhador <br/>                           | O índice da primeira referência do encaminhador. <br/>                                                                                                                                     |
+| 12 <br/> | 4 <br/> | Nome RVA <br/>                                  | O endereço de uma cadeia de caracteres ASCII que contém o nome da DLL. Esse endereço é relativo à base de imagem. <br/>                                                                   |
+| 16 <br/> | 4 <br/> | Importar RVA da tabela de endereços (tabela Thunk) <br/>    | O RVA da tabela de endereços de importação. O conteúdo dessa tabela é idêntico ao conteúdo da tabela de lookup de importação até que a imagem seja vinculada. <br/>                              |
 
 
 
  
 
-#### <a name="import-lookup-table"></a>Importar tabela de pesquisa
+#### <a name="import-lookup-table"></a>Importar tabela de lookup
 
-Uma tabela de pesquisa de importação é uma matriz de números de 32 bits para PE32 ou uma matriz de números de 64 bits para PE32 +. Cada entrada usa o formato de campo de bits descrito na tabela a seguir. Nesse formato, o bit 31 é o bit mais significativo para PE32 e bit 63 é o bit mais significativo para PE32 +. A coleção dessas entradas descreve todas as importações de uma determinada DLL. A última entrada é definida como zero (NULL) para indicar o fim da tabela.
+Uma tabela de busca de importação é uma matriz de números de 32 bits para PE32 ou uma matriz de números de 64 bits para PE32+. Cada entrada usa o formato de campo de bits descrito na tabela a seguir. Nesse formato, o bit 31 é o bit mais significativo para PE32 e o bit 63 é o bit mais significativo para PE32+. A coleção dessas entradas descreve todas as importações de uma determinada DLL. A última entrada é definida como zero (NULL) para indicar o final da tabela.
 
 
 
-| Bit (s)            | Tamanho           | Campo de bits                       | Descrição                                                                                                                                                               |
+| Bit(s)            | Tamanho           | Campo de bits                       | Descrição                                                                                                                                                               |
 |-------------------|----------------|---------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 31/63 <br/> | 1 <br/>  | Sinalizador de ordinal/nome <br/>   | Se esse bit for definido, importe por ordinal. Caso contrário, importe por nome. O bit é mascarado como 0x80000000 para PE32, 0x8000000000000000 para PE32 +. <br/>                         |
+| 31/63 <br/> | 1 <br/>  | Sinalizador ordinal/nome <br/>   | Se esse bit estiver definido, importe por ordinal. Caso contrário, importe por nome. O bit é mascarado como 0x80000000 para PE32, 0x8000000000000000 para PE32+. <br/>                         |
 | 15-0 <br/>  | 16 <br/> | Número ordinal <br/>      | Um número ordinal de 16 bits. Esse campo só será usado se o campo de bit do sinalizador ordinal/nome for 1 (importar por ordinal). O bits 30-15 ou 62-15 deve ser 0. <br/>                  |
 | 30-0 <br/>  | 31 <br/> | Dica/nome da tabela RVA <br/> | Um RVA de 31 bits de uma entrada de tabela de dica/nome. Esse campo só será usado se o campo de bit do sinalizador ordinal/nome for 0 (importar por nome). Para PE32 + bits 62-31 deve ser zero. <br/> |
 
@@ -1716,7 +1716,7 @@ Para imagens MIPS de 32 bits, as entradas da tabela de funções têm o seguinte
 
  
 
-Para as plataformas ARM, PowerPC, SH3 e SH4 Windows CE, as entradas da tabela de funções têm o seguinte formato:
+para as plataformas ARM, PowerPC, SH3 e SH4 Windows CE, as entradas da tabela de funções têm o seguinte formato:
 
 
 
@@ -1738,49 +1738,49 @@ Para plataformas x64 e Itanium, as entradas da tabela de funções têm o seguin
 
 | Deslocamento        | Tamanho          | Campo                          | Descrição                                        |
 |---------------|---------------|--------------------------------|----------------------------------------------------|
-| 0 <br/> | 4 <br/> | Endereço inicial <br/>      | O RVA da função correspondente. <br/> |
+| 0 <br/> | 4 <br/> | Endereço de início <br/>      | O RVA da função correspondente. <br/> |
 | 4 <br/> | 4 <br/> | Endereço final <br/>        | O RVA do final da função. <br/>    |
-| 8 <br/> | 4 <br/> | Informações de desenrolamento <br/> | O RVA das informações de desenrolamento. <br/>     |
+| 8 <br/> | 4 <br/> | Informações de desenrolar <br/> | O RVA das informações de desenrolamento. <br/>     |
 
 
 
  
 
-### <a name="the-reloc-section-image-only"></a>A seção. realocação (somente imagem)
+### <a name="the-reloc-section-image-only"></a>A seção .reloc (somente imagem)
 
-A tabela de realocação base contém entradas para todas as realocações de base na imagem. O campo tabela de realocação base nos diretórios de dados de cabeçalho opcionais fornece o número de bytes na tabela de realocação base. Para obter mais informações, consulte [diretórios de dados de cabeçalho opcionais (somente imagem)](#optional-header-data-directories-image-only). A tabela de realocação base é dividida em blocos. Cada bloco representa as realocações de base para uma página de 4K. Cada bloco deve iniciar em um limite de 32 bits.
+A tabela de realocação de base contém entradas para todas as realocações de base na imagem. O campo Tabela de Realocação Base nos diretórios de dados de header opcionais fornece o número de bytes na tabela de realocação base. Para obter mais informações, consulte [Diretórios de dados de header opcionais (somente imagem)](#optional-header-data-directories-image-only). A tabela de realocação de base é dividida em blocos. Cada bloco representa as realocações de base para uma página de 4K. Cada bloco deve iniciar em um limite de 32 bits.
 
-O carregador não é necessário para processar as relocalidades de base que são resolvidas pelo vinculador, a menos que a imagem de carga não possa ser carregada na base da imagem especificada no cabeçalho PE.
+O carregador não é necessário para processar as realocações de base que são resolvidas pelo vinculador, a menos que a imagem de carregamento não possa ser carregada na base de imagem especificada no título PE.
 
-#### <a name="base-relocation-block"></a>Bloco de realocação de base
+#### <a name="base-relocation-block"></a>Bloco de realocação base
 
-Cada bloco de realocação de base começa com a seguinte estrutura:
+Cada bloco de realocação base começa com a seguinte estrutura:
 
 
 
 | Deslocamento        | Tamanho          | Campo                  | Descrição                                                                                                                                              |
 |---------------|---------------|------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0 <br/> | 4 <br/> | RVA da página <br/>   | A imagem base mais a página RVA é adicionada a cada deslocamento para criar o VA em que a realocação de base deve ser aplicada. <br/>                         |
-| 4 <br/> | 4 <br/> | Tamanho do bloco <br/> | O número total de bytes no bloco de realocação de base, incluindo os campos RVA da página e tamanho do bloco e os campos tipo/deslocamento a seguir. <br/> |
+| 0 <br/> | 4 <br/> | RVA da página <br/>   | A base de imagem mais a página RVA é adicionada a cada deslocamento para criar a VA em que a realocação base deve ser aplicada. <br/>                         |
+| 4 <br/> | 4 <br/> | Tamanho do bloco <br/> | O número total de bytes no bloco de realocação base, incluindo os campos Página RVA e Tamanho do Bloco e os campos Tipo/Deslocamento a seguir. <br/> |
 
 
 
  
 
-O campo tamanho do bloco é seguido por qualquer número de entradas de campo de tipo ou deslocamento. Cada entrada é uma palavra (2 bytes) e tem a seguinte estrutura:
+O campo Tamanho do Bloco é seguido por qualquer número de entradas de campo Tipo ou Deslocamento. Cada entrada é um WORD (2 bytes) e tem a seguinte estrutura:
 
 
 
 | Deslocamento        | Tamanho                | Campo              | Descrição                                                                                                                                                                                                            |
 |---------------|---------------------|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0 <br/> | 4 bits <br/>  | Tipo <br/>   | Armazenados nos quatro bits superiores da palavra, um valor que indica o tipo de realocação de base a ser aplicado. Para obter mais informações, consulte [base de tipos de realocação](#base-relocation-types).<br/>                         |
-| 0 <br/> | 12 bits <br/> | Deslocamento <br/> | Armazenados nos 12 bits restantes da palavra, um deslocamento do endereço inicial que foi especificado no campo RVA da página para o bloco. Esse deslocamento especifica onde a realocação de base deve ser aplicada. <br/> |
+| 0 <br/> | 4 bits <br/>  | Tipo <br/>   | Armazenado nos 4 bits altos do WORD, um valor que indica o tipo de realocação base a ser aplicado. Para obter mais informações, consulte [Tipos de realocação base.](#base-relocation-types)<br/>                         |
+| 0 <br/> | 12 bits <br/> | Deslocamento <br/> | Armazenado nos 12 bits restantes do WORD, um deslocamento do endereço inicial especificado no campo RVA da página para o bloco. Esse deslocamento especifica onde a realocação base deve ser aplicada. <br/> |
 
 
 
  
 
-Para aplicar uma realocação de base, a diferença é calculada entre o endereço base preferencial e a base em que a imagem é realmente carregada. Se a imagem for carregada em sua base preferida, a diferença será zero e, portanto, as realocações básicas não precisarão ser aplicadas.
+Para aplicar uma realocação base, a diferença é calculada entre o endereço base preferencial e a base em que a imagem é realmente carregada. Se a imagem for carregada em sua base preferencial, a diferença será zero e, portanto, as realocações base não deverão ser aplicadas.
 
 #### <a name="base-relocation-types"></a>Tipos de realocação base
 
@@ -1788,17 +1788,17 @@ Para aplicar uma realocação de base, a diferença é calculada entre o endere�
 
 | Constante                                       | Valor          | Descrição                                                                                                                                                                                                                                                                                                                       |
 |------------------------------------------------|----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_ \_ absoluto com base em rel de imagem \_ <br/>        | 0 <br/>  | A realocação de base é ignorada. Esse tipo pode ser usado para preencher um bloco. <br/>                                                                                                                                                                                                                                                 |
-| \_ \_ com base em rel de imagem \_ alta <br/>            | 1 <br/>  | A realocação de base adiciona os 16 bits superiores da diferença ao campo de 16 bits no deslocamento. O campo de 16 bits representa o valor alto de uma palavra de 32 bits. <br/>                                                                                                                                                               |
-| \_com base em rel. de imagem \_ \_ baixa <br/>             | 2 <br/>  | A realocação de base adiciona os 16 bits baixos da diferença ao campo de 16 bits no deslocamento. O campo de 16 bits representa a metade inferior de uma palavra de 32 bits. <br/>                                                                                                                                                                  |
-| \_ \_ HIGHLOW com base em rel de imagem \_ <br/>         | 3 <br/>  | A realocação de base aplica todos os 32 bits da diferença ao campo de 32 bits no deslocamento. <br/>                                                                                                                                                                                                                              |
-| \_ \_ HIGHADJ com base em rel de imagem \_ <br/>         | 4 <br/>  | A realocação de base adiciona os 16 bits superiores da diferença ao campo de 16 bits no deslocamento. O campo de 16 bits representa o valor alto de uma palavra de 32 bits. Os 16 bits baixos do valor de 32 bits são armazenados na palavra de 16 bits que segue essa realocação base. Isso significa que essa realocação básica ocupa dois slots. <br/> |
-| \_ \_ JMPADDR MIPS baseada em rel \_ de \_ imagem <br/>   | 5 <br/>  | A interpretação de realocação depende do tipo de computador. <br/> Quando o tipo de computador é MIPS, a realocação de base se aplica a uma instrução de salto de MIPS. <br/>                                                                                                                                                    |
-| \_ \_ MOV32 ARM baseado em rel \_ de \_ imagem <br/>      | 5 <br/>  | Essa relocação só é significativa quando o tipo de computador é ARM ou Thumb. A realocação de base aplica o endereço de 32 bits de um símbolo em um par de instruções MOVW/MOVT consecutivas. <br/>                                                                                                                                 |
-| \_ \_ \_ RISCV HIGH20 com base em rel de imagem \_ <br/>   | 5 <br/>  | Essa relocação só é significativa quando o tipo de computador é RISC-V. A realocação de base aplica-se aos altos 20 bits de um endereço absoluto de 32 bits. <br/>                                                                                                                                                                     |
+| IMAGE \_ REL \_ BASED \_ ABSOLUTE <br/>        | 0 <br/>  | A realocação de base é ignorada. Esse tipo pode ser usado para bloquear um bloco. <br/>                                                                                                                                                                                                                                                 |
+| ALTA \_ COM BASE EM REL DE \_ \_ IMAGEM <br/>            | 1 <br/>  | A realocação de base adiciona os 16 bits altos da diferença ao campo de 16 bits no deslocamento. O campo de 16 bits representa o valor alto de uma palavra de 32 bits. <br/>                                                                                                                                                               |
+| IMAGE \_ REL \_ BASED \_ LOW <br/>             | 2 <br/>  | A realocação de base adiciona os 16 bits baixos da diferença ao campo de 16 bits no deslocamento. O campo de 16 bits representa a metade baixa de uma palavra de 32 bits. <br/>                                                                                                                                                                  |
+| HIGHLOW \_ BASEADO EM REL \_ DE \_ IMAGEM <br/>         | 3 <br/>  | A realocação de base aplica todos os 32 bits da diferença ao campo de 32 bits no deslocamento. <br/>                                                                                                                                                                                                                              |
+| \_HIGHADJ BASEADO EM REL DE \_ \_ IMAGEM <br/>         | 4 <br/>  | A realocação de base adiciona os 16 bits altos da diferença ao campo de 16 bits no deslocamento. O campo de 16 bits representa o valor alto de uma palavra de 32 bits. Os 16 bits baixos do valor de 32 bits são armazenados na palavra de 16 bits que segue essa realocação base. Isso significa que essa realocação base ocupa dois slots. <br/> |
+| IMAGE \_ REL \_ BASED \_ MIPS \_ JMPADDR <br/>   | 5 <br/>  | A interpretação de realocação depende do tipo de computador. <br/> Quando o tipo de computador é MIPS, a realocação de base se aplica a uma instrução de salto MIPS. <br/>                                                                                                                                                    |
+| ARM \_ \_ \_ MOV32 BASEADO EM REL \_ DE IMAGEM <br/>      | 5 <br/>  | Essa realocação só é significativa quando o tipo de computador é ARM ou Thumb. A realocação base aplica o endereço de 32 bits de um símbolo em um par de instruções MOVW/MOVT consecutivo. <br/>                                                                                                                                 |
+| \_ \_ RISCV \_ HIGH20 BASEADO EM REL \_ DE IMAGEM <br/>   | 5 <br/>  | Essa realocação só é significativa quando o tipo de computador é RISC-V. A realocação de base se aplica aos 20 bits altos de um endereço absoluto de 32 bits. <br/>                                                                                                                                                                     |
 |                                                | 6 <br/>  | Reservado, deve ser zero. <br/>                                                                                                                                                                                                                                                                                               |
-| \_ \_ MOV32 Thumb com base em rel de imagem \_ \_ <br/>    | 7 <br/>  | Essa relocação só é significativa quando o tipo de computador é Thumb. A realocação de base aplica o endereço de 32 bits de um símbolo a um par de instruções MOVW/MOVT consecutivas. <br/>                                                                                                                                            |
-| \_ \_ \_ RISCV LOW12I com base em rel de imagem \_ <br/>   | 7 <br/>  | Essa relocação só é significativa quando o tipo de computador é RISC-V. A realocação de base aplica-se aos 12 bits baixos de um endereço absoluto de 32 bits formado em formato de instrução de tipo RISC-V. <br/>                                                                                                                           |
+| THUMB \_ \_ \_ MOV32 BASEADO EM REL \_ DE IMAGEM <br/>    | 7 <br/>  | Essa realocação só é significativa quando o tipo de computador é Thumb. A realocação base aplica o endereço de 32 bits de um símbolo a um par de instruções MOVW/MOVT consecutivo. <br/>                                                                                                                                            |
+| \_ \_ RISCV \_ LOW12I BASEADO EM REL \_ DE IMAGEM <br/>   | 7 <br/>  | Essa realocação só é significativa quando o tipo de computador é RISC-V. A realocação de base se aplica aos 12 bits baixos de um endereço absoluto de 32 bits formado no formato de instrução de tipo I RISC-V. <br/>                                                                                                                           |
 | \_ \_ \_ RISCV LOW12S com base em rel de imagem \_ <br/>   | 8 <br/>  | Essa relocação só é significativa quando o tipo de computador é RISC-V. A realocação de base aplica-se aos 12 bits baixos de um endereço absoluto de 32 bits formado no formato de instrução RISC-V S-Type. <br/>                                                                                                                           |
 | \_ \_ JMPADDR16 MIPS baseada em rel \_ de \_ imagem <br/> | 9 <br/>  | A realocação só é significativa quando o tipo de computador é MIPS. A realocação de base se aplica a uma instrução de salto MIPS16. <br/>                                                                                                                                                                                            |
 | \_ \_ DIR64 com base em rel de imagem \_ <br/>           | 10 <br/> | A realocação de base aplica a diferença ao campo de 64 bits no deslocamento. <br/>                                                                                                                                                                                                                                             |
@@ -1809,9 +1809,9 @@ Para aplicar uma realocação de base, a diferença é calculada entre o endere�
 
 ### <a name="the-tls-section"></a>A seção. TLS
 
-A seção. TLS fornece suporte direto a PE e COFF para o armazenamento local de thread estático (TLS). O TLS é uma classe de armazenamento especial que o Windows dá suporte no, em que um objeto de dados não é uma variável automática (pilha), mas é local para cada thread individual que executa o código. Assim, cada thread pode manter um valor diferente para uma variável declarada usando TLS.
+A seção. TLS fornece suporte direto a PE e COFF para o armazenamento local de thread estático (TLS). o TLS é uma classe de armazenamento especial que Windows dá suporte em que um objeto de dados não é uma variável automática (pilha), mas é local para cada thread individual que executa o código. Assim, cada thread pode manter um valor diferente para uma variável declarada usando TLS.
 
-Observe que qualquer quantidade de dados TLS pode ser suportada usando as chamadas de API TlsAlloc, TlsFree, TlsSetValue e TlsGetValue. A implementação de PE ou COFF é uma abordagem alternativa para usar a API e tem a vantagem de ser mais simples do ponto de vista do programador de linguagem de alto nível. Essa implementação permite que os dados TLS sejam definidos e inicializados da mesma forma que as variáveis estáticas comuns em um programa. Por exemplo, no Visual C++, uma variável TLS estática pode ser definida da seguinte maneira, sem usar a API do Windows:
+Observe que qualquer quantidade de dados TLS pode ser suportada usando as chamadas de API TlsAlloc, TlsFree, TlsSetValue e TlsGetValue. A implementação de PE ou COFF é uma abordagem alternativa para usar a API e tem a vantagem de ser mais simples do ponto de vista do programador de linguagem de alto nível. Essa implementação permite que os dados TLS sejam definidos e inicializados da mesma forma que as variáveis estáticas comuns em um programa. por exemplo, no Visual C++, uma variável TLS estática pode ser definida da seguinte maneira, sem usar a API Windows:
 
 `__declspec (thread) int tlsFlag = 1;`
 
@@ -1887,61 +1887,61 @@ O parâmetro reservado deve ser definido como zero. O parâmetro Reason pode ass
 | Configuração                          | Valor         | Descrição                                                                                          |
 |----------------------------------|---------------|------------------------------------------------------------------------------------------------------|
 | \_anexar processo de dll \_ <br/> | 1 <br/> | Um novo processo foi iniciado, incluindo o primeiro thread. <br/>                                   |
-| \_anexação de thread de dll \_ <br/>  | 2 <br/> | Um novo thread foi criado. Essa notificação é enviada para todos, exceto para o primeiro thread. <br/>      |
-| desanexação de thread de DLL \_ \_ <br/>  | 3 <br/> | Um thread está prestes a ser encerrado. Essa notificação é enviada para todos, exceto para o primeiro thread. <br/> |
-| desanexar processo de DLL \_ \_ <br/> | 0 <br/> | Um processo está prestes a terminar, incluindo o thread original. <br/>                          |
+| \_anexação de thread de dll \_ <br/>  | 2 <br/> | Um novo thread foi criado. Essa notificação foi enviada para todos, menos o primeiro thread. <br/>      |
+| DESA \_ DESAQUEAMENTO DE THREAD \_ DLL <br/>  | 3 <br/> | Um thread está prestes a ser encerrado. Essa notificação foi enviada para todos, menos o primeiro thread. <br/> |
+| DESA \_ DESALAR PROCESSO DE DLL \_ <br/> | 0 <br/> | Um processo está prestes a ser encerrado, incluindo o thread original. <br/>                          |
 
 
 
  
 
-### <a name="the-load-configuration-structure-image-only"></a>A estrutura de configuração de carregamento (somente imagem)
+### <a name="the-load-configuration-structure-image-only"></a>A estrutura de configuração de carga (somente imagem)
 
-A estrutura de configuração de carregamento (diretório de configuração de carregamento de imagem \_ \_ \_ ) foi usada anteriormente em casos muito limitados no próprio sistema operacional Windows NT para descrever vários recursos muito difíceis ou muito grandes para descrever no cabeçalho do arquivo ou no cabeçalho opcional da imagem. As versões atuais do Microsoft linker e do Windows XP e versões posteriores do Windows usam uma nova versão desta estrutura para sistemas baseados em x86 de 32 bits que incluem a tecnologia SEH reservada. Isso fornece uma lista de manipuladores de exceção estruturados seguros que o sistema operacional usa durante a expedição de exceção. Se o endereço do manipulador residir no intervalo de VA da imagem e estiver marcado como reconhecimento de SEH reservado (ou seja, a imagem \_ DLLCHARACTERISTICS \_ nenhum \_ Seh está clara no campo DLLCHARACTERISTICS do cabeçalho opcional, conforme descrito anteriormente), o manipulador deverá estar na lista de manipuladores confiáveis conhecidos para essa imagem. Caso contrário, o sistema operacional encerrará o aplicativo. Isso ajuda a evitar a exploração de "seqüestro de manipulador de exceção x86" que foi usada no passado para assumir o controle do sistema operacional.
+A estrutura de configuração de carga (IMAGE LOAD CONFIG DIRECTORY) foi usada anteriormente em casos muito limitados no próprio sistema operacional do Windows NT para descrever vários recursos muito difíceis ou muito grandes para descrever no header de arquivo ou no header opcional \_ \_ da \_ imagem. As versões atuais do microsoft linker e Windows XP e versões posteriores do Windows usam uma nova versão dessa estrutura para sistemas baseados em x86 de 32 bits que incluem a tecnologia SEH reservada. Isso fornece uma lista de manipuladores de exceção estruturados seguros que o sistema operacional usa durante a expedição de exceção. Se o endereço do manipulador residir no intervalo de VA de uma imagem e for marcado como seH reservado (ou seja, IMAGE DLLCHARACTERISTICS NO SEH estiver claro no campo \_ \_ \_ DllCharacteristics do header opcional, conforme descrito anteriormente), o manipulador deverá estar na lista de manipuladores seguros conhecidos para essa imagem. Caso contrário, o sistema operacional encerrará o aplicativo. Isso ajuda a evitar a exploração de "sequestro do manipulador de exceção x86" que foi usada no passado para assumir o controle do sistema operacional.
 
-O Microsoft linker fornece automaticamente uma estrutura de configuração de carregamento padrão para incluir os dados de SEH reservados. Se o código de usuário já fornecer uma estrutura de configuração de carregamento, ele deverá incluir os novos campos de SEH reservados. Caso contrário, o vinculador não poderá incluir os dados SEH reservados e a imagem não será marcada como contendo SEH reservado.
+O microsoft linker fornece automaticamente uma estrutura de configuração de carga padrão para incluir os dados SEH reservados. Se o código do usuário já fornece uma estrutura de configuração de carga, ele deve incluir os novos campos SEH reservados. Caso contrário, o linker não poderá incluir os dados seh reservados e a imagem não será marcada como contendo o SEH reservado.
 
 #### <a name="load-configuration-directory"></a>Carregar diretório de configuração
 
-A entrada do diretório de dados para uma estrutura de configuração de carga SEH semireservada deve especificar um tamanho específico da estrutura de configuração de carga porque o carregador do sistema operacional sempre espera que seja um determinado valor. Nesse sentido, o tamanho é, na verdade, apenas uma verificação de versão. Para compatibilidade com o Windows XP e versões anteriores do Windows, o tamanho deve ser 64 para imagens x86.
+A entrada do diretório de dados para uma estrutura de configuração de carga SEH pré-reservada deve especificar um tamanho específico da estrutura de configuração de carga porque o carregador do sistema operacional sempre espera que ele seja um determinado valor. Nesse sentido, o tamanho é apenas uma verificação de versão. Para compatibilidade com Windows XP e versões anteriores do Windows, o tamanho deve ser 64 para imagens x86.
 
-#### <a name="load-configuration-layout"></a>Carregar layout de configuração
+#### <a name="load-configuration-layout"></a>Layout de configuração de carga
 
-A estrutura de configuração de carregamento tem o seguinte layout para arquivos PE de 32 bits e de 64 bits:
+A estrutura de configuração de carga tem o seguinte layout para arquivos PE de 32 bits e 64 bits:
 
 
 
 | Deslocamento              | Tamanho            | Campo                                      | Descrição                                                                                                                                                                                                                                                                                 |
 |---------------------|-----------------|--------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0 <br/>       | 4 <br/>   | Características <br/>                | Sinalizadores que indicam os atributos do arquivo, atualmente não utilizados. <br/>                                                                                                                                                                                                                   |
-| 4 <br/>       | 4 <br/>   | TimeDateStamp <br/>                  | Valor de carimbo de data e hora. O valor é representado no número de segundos decorridos desde a meia-noite (00:00:00), 1º de janeiro de 1970, horário coordenado universal, de acordo com o relógio do sistema. O carimbo de data/hora pode ser impresso usando a função de tempo C Runtime (CRT). <br/> |
+| 0 <br/>       | 4 <br/>   | Características <br/>                | Sinalizadores que indicam atributos do arquivo, atualmente nãoutilados. <br/>                                                                                                                                                                                                                   |
+| 4 <br/>       | 4 <br/>   | Timedatestamp <br/>                  | Valor de carimbo de data e hora. O valor é representado no número de segundos decorridos desde a meia-noite (00:00:00), 1º de janeiro de 1970, Tempo Coordenado Universal, de acordo com o relógio do sistema. O carimbo de data/hora pode ser impresso usando a função de tempo de runtime C (CRT). <br/> |
 | 8 <br/>       | 2 <br/>   | MajorVersion <br/>                   | Número de versão principal. <br/>                                                                                                                                                                                                                                                           |
 | 10 <br/>      | 2 <br/>   | MinorVersion <br/>                   | Número de versão secundária. <br/>                                                                                                                                                                                                                                                           |
-| 12 <br/>      | 4 <br/>   | GlobalFlagsClear <br/>               | Os sinalizadores do carregador global a serem desmarcados para esse processo, pois o carregador inicia o processo. <br/>                                                                                                                                                                                             |
-| 16 <br/>      | 4 <br/>   | GlobalFlagsSet <br/>                 | Os sinalizadores do carregador global a serem definidos para esse processo como o carregador inicia o processo. <br/>                                                                                                                                                                                               |
-| 20 <br/>      | 4 <br/>   | CriticalSectionDefaultTimeout <br/>  | O valor de tempo limite padrão a ser usado para as seções críticas do processo que são abandonadas. <br/>                                                                                                                                                                                       |
+| 12 <br/>      | 4 <br/>   | GlobalFlagsClear <br/>               | Os sinalizadores do carregador global a limpar para esse processo à medida que o carregador inicia o processo. <br/>                                                                                                                                                                                             |
+| 16 <br/>      | 4 <br/>   | GlobalFlagsSet <br/>                 | Os sinalizadores de carregador global a definir para esse processo à medida que o carregador inicia o processo. <br/>                                                                                                                                                                                               |
+| 20 <br/>      | 4 <br/>   | CriticalSectionDefaultTimeout <br/>  | O valor de tempoout padrão a ser usado para as seções críticas desse processo que são abandonadas. <br/>                                                                                                                                                                                       |
 | 24 <br/>      | 4/8 <br/> | DeCommitFreeBlockThreshold <br/>     | Memória que deve ser liberada antes de ser retornada ao sistema, em bytes. <br/>                                                                                                                                                                                                        |
 | 28/32 <br/>   | 4/8 <br/> | DeCommitTotalFreeThreshold <br/>     | Quantidade total de memória livre, em bytes. <br/>                                                                                                                                                                                                                                          |
-| 32/40 <br/>   | 4/8 <br/> | LockPrefixTable <br/>                | \[x86 apenas \] o VA de uma lista de endereços em que o prefixo de bloqueio é usado para que eles possam ser substituídos por Nop em máquinas de processador único. <br/>                                                                                                                                    |
-| 36/48 <br/>   | 4/8 <br/> | MaximumAllocationSize <br/>          | Tamanho máximo de alocação, em bytes. <br/>                                                                                                                                                                                                                                              |
+| 32/40 <br/>   | 4/8 <br/> | LockPrefixTable <br/>                | \[x86 apenas a VA de uma lista de endereços em que o prefixo LOCK é usado para que eles possam ser substituídos por NOP em \] máquinas de processador único. <br/>                                                                                                                                    |
+| 36/48 <br/>   | 4/8 <br/> | MaximumAllocationSize <br/>          | Tamanho máximo da alocação, em bytes. <br/>                                                                                                                                                                                                                                              |
 | 40/56 <br/>   | 4/8 <br/> | VirtualMemoryThreshold <br/>         | Tamanho máximo da memória virtual, em bytes. <br/>                                                                                                                                                                                                                                          |
-| 44/64 <br/>   | 4/8 <br/> | ProcessAffinityMask <br/>            | Definir esse campo como um valor diferente de zero é equivalente a chamar SetProcessAffinityMask com esse valor durante a inicialização do processo (somente. exe) <br/>                                                                                                                                       |
-| 48/72 <br/>   | 4 <br/>   | ProcessHeapFlags <br/>               | Processar sinalizadores de heap que correspondem ao primeiro argumento da função HeapCreate. Esses sinalizadores se aplicam ao heap de processo que é criado durante a inicialização do processo. <br/>                                                                                                              |
-| 52/76 <br/>   | 2 <br/>   | CSDVersion <br/>                     | O identificador da versão service pack. <br/>                                                                                                                                                                                                                                            |
+| 44/64 <br/>   | 4/8 <br/> | ProcessAffinityMask <br/>            | Definir esse campo como um valor não zero é equivalente a chamar SetProcessAffinityMask com esse valor durante a inicialização do processo (somente .exe) <br/>                                                                                                                                       |
+| 48/72 <br/>   | 4 <br/>   | ProcessHeapFlags <br/>               | Processe sinalizadores de heap que correspondem ao primeiro argumento da função HeapCreate. Esses sinalizadores se aplicam ao heap de processo criado durante a inicialização do processo. <br/>                                                                                                              |
+| 52/76 <br/>   | 2 <br/>   | CSDVersion <br/>                     | O service pack de versão. <br/>                                                                                                                                                                                                                                            |
 | 54/78 <br/>   | 2 <br/>   | Reservado <br/>                       | Deve ser zero. <br/>                                                                                                                                                                                                                                                                   |
-| 56/80 <br/>   | 4/8 <br/> | Editarlist <br/>                       | Reservado para uso pelo sistema. <br/>                                                                                                                                                                                                                                                 |
-| 60/88 <br/>   | 4/8 <br/> | SecurityCookie <br/>                 | Um ponteiro para um cookie que é usado pela implementação de Visual C++ ou GS. <br/>                                                                                                                                                                                                          |
-| 64/96 <br/>   | 4/8 <br/> | SEHandlerTable <br/>                 | \[x86 apenas \] o VA da tabela classificada de RVAs de cada manipulador se válido e exclusivo na imagem. <br/>                                                                                                                                                                                  |
-| 68/104 <br/>  | 4/8 <br/> | SEHandlerCount <br/>                 | \[x86 apenas \] a contagem de manipuladores exclusivos na tabela. <br/>                                                                                                                                                                                                                         |
-| 72/112 <br/>  | 4/8 <br/> | GuardCFCheckFunctionPointer <br/>    | O VA em que o ponteiro de função de verificação de proteção do fluxo de controle é armazenado. <br/>                                                                                                                                                                                                               |
-| 76/120 <br/>  | 4/8 <br/> | GuardCFDispatchFunctionPointer <br/> | O VA em que o ponteiro de função de expedição da proteção de fluxo de controle é armazenado. <br/>                                                                                                                                                                                                            |
-| 80/128 <br/>  | 4/8 <br/> | GuardCFFunctionTable <br/>           | O VA da tabela classificada de RVAs de cada função de proteção de fluxo de controle na imagem. <br/>                                                                                                                                                                                            |
+| 56/80 <br/>   | 4/8 <br/> | Editlist <br/>                       | Reservado para uso pelo sistema. <br/>                                                                                                                                                                                                                                                 |
+| 60/88 <br/>   | 4/8 <br/> | SecurityCookie <br/>                 | Um ponteiro para um cookie usado pela implementação Visual C++ ou GS. <br/>                                                                                                                                                                                                          |
+| 64/96 <br/>   | 4/8 <br/> | SEHandlerTable <br/>                 | \[x86 somente a VA da tabela classificação de RVAs de cada manipulador de ES \] válido na imagem. <br/>                                                                                                                                                                                  |
+| 68/104 <br/>  | 4/8 <br/> | SEHandlerCount <br/>                 | \[somente x86 \] A contagem de manipuladores exclusivos na tabela. <br/>                                                                                                                                                                                                                         |
+| 72/112 <br/>  | 4/8 <br/> | GuardCFCheckFunctionPointer <br/>    | O VA em que o ponteiro Flow de função de verificação do Control Flow Guard é armazenado. <br/>                                                                                                                                                                                                               |
+| 76/120 <br/>  | 4/8 <br/> | GuardCFDispatchFunctionPointer <br/> | A VA em que Control Flow Guard dispatch-function pointer é armazenado. <br/>                                                                                                                                                                                                            |
+| 80/128 <br/>  | 4/8 <br/> | GuardCFFunctionTable <br/>           | A VA da tabela classificação de RVAs de cada função Flow Guard na imagem. <br/>                                                                                                                                                                                            |
 | 84/136 <br/>  | 4/8 <br/> | GuardCFFunctionCount <br/>           | A contagem de RVAs exclusivos na tabela acima. <br/>                                                                                                                                                                                                                                    |
-| 88/144 <br/>  | 4 <br/>   | GuardFlags <br/>                     | Sinalizadores relacionados à proteção do fluxo de controle. <br/>                                                                                                                                                                                                                                               |
+| 88/144 <br/>  | 4 <br/>   | GuardFlags <br/>                     | Controlar Flow sinalizadores relacionados ao Flow Guard. <br/>                                                                                                                                                                                                                                               |
 | 92/148 <br/>  | 12 <br/>  | CodeIntegrity <br/>                  | Informações de integridade do código. <br/>                                                                                                                                                                                                                                                     |
-| 104/160 <br/> | 4/8 <br/> | GuardAddressTakenIatEntryTable <br/> | O VA em que o endereço de proteção de fluxo de controle obtido na tabela IAT é armazenado. <br/>                                                                                                                                                                                                              |
+| 104/160 <br/> | 4/8 <br/> | GuardAddressTakenIatEntryTable <br/> | A va em que a tabela IAT Flow do Control Flow Guard é armazenada. <br/>                                                                                                                                                                                                              |
 | 108/168 <br/> | 4/8 <br/> | GuardAddressTakenIatEntryCount <br/> | A contagem de RVAs exclusivos na tabela acima. <br/>                                                                                                                                                                                                                                    |
-| 112/176 <br/> | 4/8 <br/> | GuardLongJumpTargetTable <br/>       | O VA em que a tabela de destino de salto longo de proteção de fluxo de controle é armazenada. <br/>                                                                                                                                                                                                               |
+| 112/176 <br/> | 4/8 <br/> | GuardLongJumpTargetTable <br/>       | A VA em que a tabela de destino Flow de salto longo do Control Flow Guard está armazenada. <br/>                                                                                                                                                                                                               |
 | 116/184 <br/> | 4/8 <br/> | GuardLongJumpTargetCount <br/>       | A contagem de RVAs exclusivos na tabela acima. <br/>                                                                                                                                                                                                                                    |
 
 
@@ -1950,11 +1950,11 @@ A estrutura de configuração de carregamento tem o seguinte layout para arquivo
 
 O campo GuardFlags contém uma combinação de um ou mais dos seguintes sinalizadores e subcampos:
 
--   O módulo executa verificações de integridade de fluxo de controle usando o suporte fornecido pelo sistema.
+-   O módulo executa verificações de integridade do fluxo de controle usando o suporte fornecido pelo sistema.
 
     ` #define IMAGE_GUARD_CF_INSTRUMENTED  0x00000100`
 
--   O módulo executa o fluxo de controle e as verificações de integridade de gravação.
+-   O módulo executa verificações de integridade de gravação e fluxo de controle.
 
     ` #define IMAGE_GUARD_CFW_INSTRUMENTED  0x00000200`
 
@@ -1962,19 +1962,19 @@ O campo GuardFlags contém uma combinação de um ou mais dos seguintes sinaliza
 
     `#define IMAGE_GUARD_CF_FUNCTION_TABLE_PRESENT  0x00000400`
 
--   O módulo não faz uso do cookie de segurança/GS.
+-   O módulo não usa o cookie de segurança /GS.
 
     ` #define IMAGE_GUARD_SECURITY_COOKIE_UNUSED  0x00000800`
 
--   O módulo dá suporte à carga de atraso somente leitura IAT.
+-   O módulo dá suporte ao IAT de carregamento de atraso somente leitura.
 
     `#define IMAGE_GUARD_PROTECT_DELAYLOAD_IAT  0x00001000`
 
--   DELAYLOAD importar tabela em sua própria seção. didat (com nada mais nele) que pode ser protegida livremente.
+-   A tabela de importação de delayload em sua própria seção .didat (sem nada mais) que possa ser protegida livremente.
 
     ` #define IMAGE_GUARD_DELAYLOAD_IAT_IN_ITS_OWN_SECTION  0x00002000`
 
--   O módulo contém informações de exportação suprimidas. Isso também infere que o endereço obtido pela tabela IAT também está presente na configuração de carga.
+-   O módulo contém informações de exportação suprimidas. Isso também infere que a tabela IAT de endereço tomada também está presente na configuração de carga.
 
     `#define  IMAGE_GUARD_CF_EXPORT_SUPPRESSION_INFO_PRESENT  0x00004000`
 
@@ -1982,107 +1982,107 @@ O campo GuardFlags contém uma combinação de um ou mais dos seguintes sinaliza
 
     `#define IMAGE_GUARD_CF_ENABLE_EXPORT_SUPPRESSION  0x00008000`
 
--   O módulo contém informações de destino do longjmp.
+-   O módulo contém informações de destino longjmp.
 
     ` #define IMAGE_GUARD_CF_LONGJUMP_TABLE_PRESENT  0x00010000`
 
--   Máscara do subcampo que contém o stride das entradas da tabela da função de proteção do fluxo de controle (ou seja, a contagem adicional de bytes por entrada de tabela).
+-   Máscara para o subcampo que contém o passo das entradas da tabela de funções Flow Guard (ou seja, a contagem adicional de bytes por entrada de tabela).
 
     ` #define IMAGE_GUARD_CF_FUNCTION_TABLE_SIZE_MASK  0xF0000000`
 
-Além disso, o cabeçalho SDK do Windows Winnt. h define essa macro para a quantidade de bits a fim de deslocar o valor GuardFlags para justificar à direita a função de proteção de fluxo de controle Stride da tabela:
+Além disso, o header winnt.h do SDK do Windows define essa macro para a quantidade de bits deslocar para a direita o valor guardFlags para justificar com a direita o passo da tabela de funções do Control Flow Guard:
 
 ` #define IMAGE_GUARD_CF_FUNCTION_TABLE_SIZE_SHIFT  28`
 
-### <a name="the-rsrc-section"></a>A seção. rsrc
+### <a name="the-rsrc-section"></a>A seção .rsrc
 
-Os recursos são indexados por uma estrutura de árvore com classificação binária de vários níveis. O design geral pode incorporar 2 \* \* 31 níveis. Por convenção, no entanto, o Windows usa três níveis:
+Os recursos são indexados por uma estrutura de árvore classificação binária de vários níveis. O design geral pode incorporar 2 \* \* 31 níveis. Por convenção, no entanto, Windows usa três níveis:
 
 <dl> Tipo  
 Nome  
 Idioma  
 </dl>
 
-Uma série de tabelas de diretório de recursos relaciona todos os níveis da seguinte maneira: cada tabela de diretório é seguida por uma série de entradas de diretório que fornecem o nome ou identificador (ID) para esse nível (tipo, nome ou nível de linguagem) e um endereço de uma descrição de dados ou outra tabela de diretório. Se o endereço apontar para uma descrição de dados, os dados serão uma folha na árvore. Se o endereço apontar para outra tabela de diretório, essa tabela listará as entradas de diretório no próximo nível abaixo.
+Uma série de tabelas de diretório de recursos relaciona todos os níveis da seguinte maneira: cada tabela de diretório é seguida por uma série de entradas de diretório que dão o nome ou identificador (ID) para esse nível (tipo, nome ou nível de idioma) e um endereço de uma descrição de dados ou outra tabela de diretório. Se o endereço aponta para uma descrição de dados, os dados são uma folha na árvore. Se o endereço aponta para outra tabela de diretórios, essa tabela lista entradas de diretório no próximo nível para baixo.
 
-O tipo, o nome e as IDs de idioma de uma folha são determinados pelo caminho que é usado pelas tabelas de diretório para alcançar a folha. A primeira tabela determina a ID de tipo, a segunda tabela (apontada pela entrada de diretório na primeira tabela) determina a ID de nome e a terceira tabela determina a ID de idioma.
+As IDs de Tipo, Nome e Idioma de uma folha são determinadas pelo caminho que é feito pelas tabelas de diretório para alcançar a folha. A primeira tabela determina a ID do Tipo, a segunda tabela (apontada pela entrada de diretório na primeira tabela) determina a ID do Nome e a terceira tabela determina a ID do idioma.
 
-A estrutura geral da seção. rsrc é:
+A estrutura geral da seção .rsrc é:
 
 
 
 | Dados                                                                   | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 |------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Tabelas de diretório de recursos (e entradas de diretório de recursos) <br/> | Uma série de tabelas, uma para cada grupo de nós na árvore. Todos os nós de nível superior (tipo) são listados na primeira tabela. As entradas nesta tabela apontam para tabelas de segundo nível. Cada árvore de segundo nível tem a mesma ID de tipo, mas IDs de nome diferentes. Árvores de terceiro nível têm o mesmo tipo e IDs de nome, mas IDs de idioma diferentes. <br/> Cada tabela individual é imediatamente seguida por entradas de diretório, nas quais cada entrada tem um nome ou identificador numérico e um ponteiro para uma descrição de dados ou uma tabela no nível inferior seguinte. <br/> |
-| Cadeias de caracteres do diretório de recursos <br/>                                 | Cadeias de caracteres Unicode alinhadas em dois bytes, que servem como dados de cadeias apontados por entradas de diretório. <br/>                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| Descrição dos dados do recurso <br/>                                  | Uma matriz de registros, apontada por tabelas, que descreve o tamanho real e o local dos dados do recurso. Esses registros são as folhas na árvore de descrição de recursos. <br/>                                                                                                                                                                                                                                                                                                                                                                |
-| Dados de recurso <br/>                                              | Dados brutos da seção de recursos. As informações de tamanho e local no campo descrições de dados de recurso delimitam as regiões individuais dos dados do recurso. <br/>                                                                                                                                                                                                                                                                                                                                                                              |
+| Tabelas do Diretório de Recursos (e entradas do Resource Directory) <br/> | Uma série de tabelas, uma para cada grupo de nós na árvore. Todos os nós de nível superior (Tipo) são listados na primeira tabela. As entradas nesta tabela apontam para tabelas de segundo nível. Cada árvore de segundo nível tem a mesma ID de tipo, mas IDs de nome diferentes. Árvores de terceiro nível têm as mesmas IDs de Tipo e Nome, mas IDs de idioma diferentes. <br/> Cada tabela individual é imediatamente seguida por entradas de diretório, nas quais cada entrada tem um nome ou identificador numérico e um ponteiro para uma descrição de dados ou uma tabela no próximo nível inferior. <br/> |
+| Cadeias de caracteres do Diretório de Recursos <br/>                                 | Cadeias de caracteres Unicode alinhadas a dois byte, que servem como dados de cadeia de caracteres apontados por entradas de diretório. <br/>                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Descrição dos dados do recurso <br/>                                  | Uma matriz de registros, apontada por tabelas, que descrevem o tamanho real e a localização dos dados do recurso. Esses registros são as folhas na árvore de descrição do recurso. <br/>                                                                                                                                                                                                                                                                                                                                                                |
+| Dados de recurso <br/>                                              | Dados brutos da seção de recursos. As informações de tamanho e localização no campo Descrições de Dados de Recurso delimitam as regiões individuais dos dados do recurso. <br/>                                                                                                                                                                                                                                                                                                                                                                              |
 
 
 
  
 
-#### <a name="resource-directory-table"></a>Tabela de diretório de recursos
+#### <a name="resource-directory-table"></a>Tabela do Diretório de Recursos
 
-Cada tabela de diretório de recursos tem o formato a seguir. Essa estrutura de dados deve ser considerada o título de uma tabela porque a tabela realmente consiste em entradas de diretório (descritas na seção 6.9.2, "entradas do diretório de recursos") e esta estrutura:
+Cada tabela do diretório de recursos tem o seguinte formato. Essa estrutura de dados deve ser considerada o título de uma tabela porque a tabela realmente consiste em entradas de diretório (descritas na seção 6.9.2, "Entradas do Resource Directory") e nesta estrutura:
 
 
 
 | Deslocamento         | Tamanho          | Campo                              | Descrição                                                                                                                                                                     |
 |----------------|---------------|------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0 <br/>  | 4 <br/> | Características <br/>        | Sinalizadores de recurso. Este campo é reservado para uso futuro. Ele está definido como zero no momento. <br/>                                                                                 |
-| 4 <br/>  | 4 <br/> | Carimbo de data/hora <br/>        | A hora em que os dados de recurso foram criados pelo compilador de recurso. <br/>                                                                                               |
+| 0 <br/>  | 4 <br/> | Características <br/>        | Sinalizadores de recurso. Este campo é reservado para uso futuro. Atualmente, ele está definido como zero. <br/>                                                                                 |
+| 4 <br/>  | 4 <br/> | Carimbo de data/hora <br/>        | A hora em que os dados do recurso foram criados pelo compilador de recursos. <br/>                                                                                               |
 | 8 <br/>  | 2 <br/> | Versão Principal <br/>          | O número de versão principal, definido pelo usuário. <br/>                                                                                                                          |
 | 10 <br/> | 2 <br/> | Versão Secundária <br/>          | O número de versão secundária, definido pelo usuário. <br/>                                                                                                                          |
-| 12 <br/> | 2 <br/> | Número de entradas de nome <br/> | O número de entradas de diretório imediatamente após a tabela que usam cadeias de caracteres para identificar entradas de tipo, nome ou idioma (dependendo do nível da tabela). <br/> |
-| 14 <br/> | 2 <br/> | Número de entradas de ID <br/>   | O número de entradas de diretório imediatamente após as entradas de nome que usam IDs numéricas para entradas de tipo, nome ou idioma. <br/>                                    |
+| 12 <br/> | 2 <br/> | Número de entradas de nome <br/> | O número de entradas de diretório imediatamente após a tabela que usa cadeias de caracteres para identificar as entradas Tipo, Nome ou Idioma (dependendo do nível da tabela). <br/> |
+| 14 <br/> | 2 <br/> | Número de entradas de ID <br/>   | O número de entradas de diretório imediatamente após as entradas Name que usam IDs numéricas para entradas Type, Name ou Language. <br/>                                    |
 
 
 
  
 
-#### <a name="resource-directory-entries"></a>Entradas do diretório de recursos
+#### <a name="resource-directory-entries"></a>Entradas do Resource Directory
 
-As entradas de diretório compõem as linhas de uma tabela. Cada entrada do diretório de recursos tem o formato a seguir. Se a entrada é um nome ou uma entrada de ID é indicada pela tabela de diretório de recursos, que indica quantas entradas de nome e ID são seguidas (Lembre-se de que todas as entradas de nome precedem todas as entradas de ID da tabela). Todas as entradas da tabela são classificadas em ordem crescente: as entradas de nome por cadeia de caracteres que diferencia maiúsculas de minúsculas e as entradas de ID por valor numérico. Os deslocamentos são relativos ao endereço na entrada do \_ diretório de imagem \_ \_ DataDirectory de recursos. Consulte [emparelhamento dentro do PE: um tour do formato de arquivo executável portátil do Win32](/previous-versions/ms809762(v=msdn.10)#pe-file-resources) para obter mais informações.
+As entradas de diretório comem as linhas de uma tabela. Cada entrada do diretório de recursos tem o formato a seguir. Se a entrada é uma entrada Name ou ID é indicada pela tabela do diretório de recursos, que indica quantas entradas Name e ID a seguem (lembre-se de que todas as entradas Name precedem todas as entradas de ID da tabela). Todas as entradas para a tabela são ordenadas em ordem crescente: as entradas Name por cadeia de caracteres que não são sensíveis a minúsculas e as entradas de ID por valor numérico. Deslocamentos são relativos ao endereço no IMAGE \_ DIRECTORY \_ ENTRY RESOURCE \_ DataDirectory. Consulte [Peering Inside the PE: A Tour of the Win32 Portable Executable File Format para](/previous-versions/ms809762(v=msdn.10)#pe-file-resources) obter mais informações.
 
 
 
 | Deslocamento        | Tamanho          | Campo                           | Descrição                                                                                                          |
 |---------------|---------------|---------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| 0 <br/> | 4 <br/> | Deslocamento de nome <br/>         | O deslocamento de uma cadeia de caracteres que fornece o tipo, o nome ou a entrada de ID de idioma, dependendo do nível da tabela. <br/>     |
-| 0 <br/> | 4 <br/> | ID de inteiro <br/>          | Um inteiro de 32 bits que identifica o tipo, o nome ou a entrada de ID de idioma. <br/>                                   |
-| 4 <br/> | 4 <br/> | Deslocamento de entrada de dados <br/>   | Alto bit 0. Endereço de uma entrada de dados de recurso (uma folha). <br/>                                                   |
-| 4 <br/> | 4 <br/> | Deslocamento de subdiretório <br/> | Alto bit 1. Os 31 bits inferiores são o endereço de outra tabela de diretório de recursos (o próximo nível abaixo). <br/> |
+| 0 <br/> | 4 <br/> | Deslocamento de nome <br/>         | O deslocamento de uma cadeia de caracteres que fornece a entrada Tipo, Nome ou ID de Idioma, dependendo do nível da tabela. <br/>     |
+| 0 <br/> | 4 <br/> | ID de inteiro <br/>          | Um inteiro de 32 bits que identifica a entrada Tipo, Nome ou ID de Idioma. <br/>                                   |
+| 4 <br/> | 4 <br/> | Deslocamento de entrada de dados <br/>   | Bit 0 alto. Endereço de uma entrada de Dados de Recurso (uma folha). <br/>                                                   |
+| 4 <br/> | 4 <br/> | Deslocamento de subdiretório <br/> | Bit 1 alto. Os 31 bits inferiores são o endereço de outra tabela de diretório de recursos (o próximo nível abaixo). <br/> |
 
 
 
  
 
-#### <a name="resource-directory-string"></a>Cadeia de caracteres do diretório de recursos
+#### <a name="resource-directory-string"></a>Cadeia de caracteres do Diretório de Recursos
 
-A área de cadeia do diretório de recursos consiste em cadeias de caracteres Unicode, que são alinhadas ao Word. Essas cadeias de caracteres são armazenadas juntas após a última entrada do diretório de recursos e antes da primeira entrada de dados do recurso. Isso minimiza o impacto dessas cadeias de caracteres de comprimento variável no alinhamento das entradas de diretório de tamanho fixo. Cada cadeia de caracteres do diretório de recursos tem o seguinte formato:
+A área de cadeia de caracteres do diretório de recursos consiste em cadeias de caracteres Unicode, que são alinhadas por palavras. Essas cadeias de caracteres são armazenadas juntas após a última entrada do Resource Directory e antes da primeira entrada de Dados de Recurso. Isso minimiza o impacto dessas cadeias de caracteres de comprimento variável no alinhamento das entradas de diretório de tamanho fixo. Cada cadeia de caracteres do diretório de recursos tem o seguinte formato:
 
 
 
 | Deslocamento        | Tamanho                 | Campo                      | Descrição                                                            |
 |---------------|----------------------|----------------------------|------------------------------------------------------------------------|
 | 0 <br/> | 2 <br/>        | Comprimento <br/>         | O tamanho da cadeia de caracteres, não incluindo o próprio campo de comprimento. <br/> |
-| 2 <br/> | variável <br/> | Cadeia de caracteres Unicode <br/> | Os dados de cadeia de caracteres Unicode de comprimento variável, alinhados por palavra. <br/>     |
+| 2 <br/> | variável <br/> | Cadeia de caracteres Unicode <br/> | Os dados de cadeia de caracteres Unicode de comprimento variável, alinhados por palavras. <br/>     |
 
 
 
  
 
-#### <a name="resource-data-entry"></a>Entrada de dados do recurso
+#### <a name="resource-data-entry"></a>Entrada de dados de recurso
 
-Cada entrada de dados de recurso descreve uma unidade real de dados brutos na área de dados do recurso. Uma entrada de dados de recurso tem o seguinte formato:
+Cada entrada de Dados de Recurso descreve uma unidade real de dados brutos na área Dados do Recurso. Uma entrada de Dados de Recurso tem o seguinte formato:
 
 
 
 | Deslocamento         | Tamanho          | Campo                            | Descrição                                                                                                                                           |
 |----------------|---------------|----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0 <br/>  | 4 <br/> | RVA de dados <br/>             | O endereço de uma unidade de dados de recurso na área de dados do recurso. <br/>                                                                         |
-| 4 <br/>  | 4 <br/> | Tamanho <br/>                 | O tamanho, em bytes, dos dados de recurso que é apontado pelo campo RVA de dados. <br/>                                                        |
+| 0 <br/>  | 4 <br/> | RVA de dados <br/>             | O endereço de uma unidade de dados de recurso na área Dados do Recurso. <br/>                                                                         |
+| 4 <br/>  | 4 <br/> | Tamanho <br/>                 | O tamanho, em bytes, dos dados de recurso apontados pelo campo RVA de dados. <br/>                                                        |
 | 8 <br/>  | 4 <br/> | codepage <br/>             | A página de código usada para decodificar valores de ponto de código dentro dos dados do recurso. Normalmente, a página de código seria a página de código Unicode. <br/> |
 | 12 <br/> | 4 <br/> | Reservado, deve ser 0. <br/> |                                                                                                                                                       |
 
@@ -2090,9 +2090,9 @@ Cada entrada de dados de recurso descreve uma unidade real de dados brutos na á
 
  
 
-### <a name="the-cormeta-section-object-only"></a>A seção. cormeta (somente objeto)
+### <a name="the-cormeta-section-object-only"></a>A seção .cormeta (somente objeto)
 
-Os metadados CLR são armazenados nesta seção. Ele é usado para indicar que o arquivo de objeto contém código gerenciado. O formato dos metadados não é documentado, mas pode ser enviado para as interfaces CLR para lidar com metadados.
+Os metadados CLR são armazenados nesta seção. Ele é usado para indicar que o arquivo de objeto contém código gerenciado. O formato dos metadados não está documentado, mas pode ser entregue às interfaces CLR para lidar com metadados.
 
 ### <a name="the-sxdata-section"></a>A seção. sxdata
 
@@ -2121,28 +2121,28 @@ Os primeiros 8 bytes de um arquivo consistem na assinatura do arquivo. O restant
 Um cabeçalho de membro de arquivo precede cada membro. A lista a seguir mostra a estrutura geral de um arquivo morto:
 
 -   Assinatura: "! &lt; Arch &gt; \\ n "
--   parâmetro
+-   Cabeçalho
 
     <dl> primeiro membro do vinculador  
     </dl>
 
--   parâmetro
+-   Cabeçalho
 
     <dl> 2º membro do vinculador  
     </dl>
 
--   parâmetro
+-   Cabeçalho
 
     <dl> Membro longnames  
     </dl>
 
--   parâmetro
+-   Cabeçalho
 
     <dl> Conteúdo do arquivo OBJ 1  
     (Formato COFF)  
     </dl>
 
--   parâmetro
+-   Cabeçalho
 
     <dl> Conteúdo do arquivo OBJ 2  
     (Formato COFF)  
@@ -2166,8 +2166,8 @@ Cada cabeçalho de membro começa no primeiro endereço par após o final do mem
 |----------------|----------------|---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0 <br/>  | 16 <br/> | Nome <br/>          | O nome do membro de arquivo, com uma barra (/) anexada para encerrar o nome. Se o primeiro caractere for uma barra, o nome terá uma interpretação especial, conforme descrito na tabela a seguir. <br/> |
 | 16 <br/> | 12 <br/> | Data <br/>          | A data e a hora em que o membro de arquivo foi criado: esta é a representação decimal ASCII do número de segundos desde 1/1/1970 UCT. <br/>                                                    |
-| 28 <br/> | 6 <br/>  | ID do Usuário <br/>       | Uma representação decimal ASCII da ID de usuário. Esse campo não contém um valor significativo em plataformas do Windows porque as ferramentas da Microsoft emitem todos os espaços em branco. <br/>                                    |
-| 34 <br/> | 6 <br/>  | ID do Grupo <br/>      | Uma representação decimal ASCII da ID do grupo. Esse campo não contém um valor significativo em plataformas do Windows porque as ferramentas da Microsoft emitem todos os espaços em branco. <br/>                                   |
+| 28 <br/> | 6 <br/>  | ID do Usuário <br/>       | Uma representação decimal ASCII da ID de usuário. este campo não contém um valor significativo em plataformas Windows porque as ferramentas da Microsoft emitem todos os espaços em branco. <br/>                                    |
+| 34 <br/> | 6 <br/>  | ID do Grupo <br/>      | Uma representação decimal ASCII da ID do grupo. este campo não contém um valor significativo em plataformas Windows porque as ferramentas da Microsoft emitem todos os espaços em branco. <br/>                                   |
 | 40 <br/> | 8 <br/>  | Mode <br/>          | Uma representação octal ASCII do modo de arquivo do membro. Esse é o \_ valor do modo St da função de tempo de execução C \_ wstat. <br/>                                                                       |
 | 48 <br/> | 10 <br/> | Tamanho <br/>          | Uma representação decimal ASCII do tamanho total do membro de arquivo morto, sem incluir o tamanho do cabeçalho. <br/>                                                                                  |
 | 58 <br/> | 2 <br/>  | Fim do cabeçalho <br/> | Os dois bytes na cadeia de caracteres C "̃ \\ n" (0X60 0x0A). <br/>                                                                                                                                               |
@@ -2275,15 +2275,15 @@ O cabeçalho de importação contém os seguintes campos e deslocamentos:
 
 | Deslocamento         | Tamanho                | Campo                       | Descrição                                                                                                                  |
 |----------------|---------------------|-----------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| 0 <br/>  | 2 <br/>       | Sig1 <br/>            | O computador do arquivo de imagem deve ser \_ \_ \_ desconhecido. Para obter mais informações, consulte [tipos de máquina](#machine-types). <br/>                |
+| 0 <br/>  | 2 <br/>       | Sig1 <br/>            | Deve ser IMAGE \_ FILE \_ MACHINE \_ UNKNOWN. Para obter mais informações, consulte [Tipos de computador](#machine-types). <br/>                |
 | 2 <br/>  | 2 <br/>       | Sig2 <br/>            | Deve ser 0xFFFF. <br/>                                                                                                  |
 | 4 <br/>  | 2 <br/>       | Versão <br/>         | A versão da estrutura. <br/>                                                                                           |
-| 6 <br/>  | 2 <br/>       | Computador <br/>         | O número que identifica o tipo de computador de destino. Para obter mais informações, consulte [tipos de máquina](#machine-types).<br/> |
-| 8 <br/>  | 4 <br/>       | Carimbo de Time-Date <br/> | A hora e a data em que o arquivo foi criado. <br/>                                                                     |
-| 12 <br/> | 4 <br/>       | Tamanho dos dados <br/>    | O tamanho das cadeias de caracteres que seguem o cabeçalho. <br/>                                                                  |
-| 16 <br/> | 2 <br/>       | Ordinal/dica <br/>    | O ordinal ou a dica para a importação, determinado pelo valor no campo tipo de nome. <br/>                   |
-| 18 <br/> | 2 bits <br/>  | Tipo <br/>            | O tipo de importação. Para obter valores e descrições específicas, consulte [tipo de importação](#import-type).<br/>                           |
-|                | 3 bits <br/>  | Tipo de nome <br/>       | O tipo de nome de importação. Para obter mais informações, consulte [importar tipo de nome](#import-name-type). <br/>                           |
+| 6 <br/>  | 2 <br/>       | Computador <br/>         | O número que identifica o tipo de computador de destino. Para obter mais informações, consulte [Tipos de computador](#machine-types).<br/> |
+| 8 <br/>  | 4 <br/>       | Time-Date carimbo <br/> | A hora e a data em que o arquivo foi criado. <br/>                                                                     |
+| 12 <br/> | 4 <br/>       | Tamanho dos dados <br/>    | O tamanho das cadeias de caracteres que seguem o header. <br/>                                                                  |
+| 16 <br/> | 2 <br/>       | Ordinal/Hint <br/>    | O ordinal ou a dica para a importação, determinado pelo valor no campo Tipo de Nome. <br/>                   |
+| 18 <br/> | 2 bits <br/>  | Tipo <br/>            | O tipo de importação. Para ver valores e descrições específicos, consulte [Importar Tipo](#import-type).<br/>                           |
+|                | 3 bits <br/>  | Tipo de nome <br/>       | O tipo de nome de importação. Para obter mais informações, consulte [Importar tipo de nome](#import-name-type). <br/>                           |
 |                | 11 bits <br/> | Reservado <br/>        | Reservado, deve ser 0. <br/>                                                                                             |
 
 
@@ -2294,66 +2294,66 @@ Essa estrutura é seguida por duas cadeias de caracteres terminadas em nulo que 
 
 ### <a name="import-type"></a>Tipo de importação
 
-Os valores a seguir são definidos para o campo de tipo no cabeçalho de importação:
+Os seguintes valores são definidos para o campo Tipo no header de importação:
 
 | Constante                  | Valor         | Descrição                                      |
 |---------------------------|---------------|--------------------------------------------------|
-| IMPORTAR \_ código <br/>  | 0 <br/> | Código executável. <br/>                     |
-| IMPORTAR \_ dados <br/>  | 1 <br/> | Dados. <br/>                                |
-| IMPORTAR \_ const <br/> | 2 <br/> | Especificado como CONST no arquivo. def. <br/> |
+| IMPORTAR \_ CÓDIGO <br/>  | 0 <br/> | Código executável. <br/>                     |
+| IMPORTAR \_ DADOS <br/>  | 1 <br/> | Dados. <br/>                                |
+| IMPORT \_ CONST <br/> | 2 <br/> | Especificado como CONST no arquivo .def. <br/> |
 
-Esses valores são usados para determinar quais contribuições de seção devem ser geradas pela ferramenta que usa a biblioteca se ela precisar acessar esses dados.
+Esses valores são usados para determinar quais contribuições de seção devem ser geradas pela ferramenta que usa a biblioteca se ela precisa acessar esses dados.
 
 ### <a name="import-name-type"></a>Tipo de nome de importação
 
-O nome do símbolo de importação terminada em nulo imediatamente segue seu cabeçalho de importação associado. Os valores a seguir são definidos para o campo de tipo de nome no cabeçalho de importação. Eles indicam como o nome deve ser usado para gerar os símbolos corretos que representam a importação:
+O nome do símbolo de importação terminada em nulo imediatamente segue seu header de importação associado. Os valores a seguir são definidos para o campo Tipo de Nome no header de importação. Eles indicam como o nome deve ser usado para gerar os símbolos corretos que representam a importação:
 
 | Constante | Valor | Descrição |
 | - | - | - |
-| IMPORTAR \_ ORDINAL | 0 | A importação é por ordinal. Isso indica que o valor no campo ordinal/dica do cabeçalho de importação é o ordinal da importação. Se essa constante não for especificada, o campo ordinal/Hint sempre deverá ser interpretado como a dica da importação. |
-| nome da importação \_ | 1 | O nome da importação é idêntico ao nome do símbolo público. |
-| nome de importação \_ \_ NoPrefix | 2 | O nome da importação é o nome do símbolo público, mas ignorando a entrelinha?, @ ou, opcionalmente \_ . |
-| IMPORTAR \_ nome \_ desdecorado | 3 | O nome da importação é o nome do símbolo público, mas ignorando a entrelinha?, @ ou, opcionalmente \_ , e truncando no primeiro @ . |
+| IMPORT \_ ORDINAL | 0 | A importação é por ordinal. Isso indica que o valor no campo Ordinal/Hint do header de importação é o ordinal da importação. Se essa constante não for especificada, o campo Ordinal/Hint sempre deverá ser interpretado como a dica da importação. |
+| NOME DA \_ IMPORTAÇÃO | 1 | O nome de importação é idêntico ao nome do símbolo público. |
+| IMPORT \_ NAME \_ NOPREFIX | 2 | O nome de importação é o nome do símbolo público, mas ignorar o ?, @ou \_ opcionalmente. |
+| NOME \_ DE \_ IMPORTAÇÃO INDECORATE | 3 | O nome de importação é o nome do símbolo público, mas ignorar o ?, @ou opcionalmente à frente e \_ truncar no primeiro @ . |
 
-## <a name="appendix-a-calculating-authenticode-pe-image-hash"></a>Apêndice A: calculando o hash de imagem do Authenticode PE
+## <a name="appendix-a-calculating-authenticode-pe-image-hash"></a>Apêndice A: Calculando o hash de imagem do Authenticode PE
 
-- [O que é um hash de imagem Authenticode do PE?](#what-is-an-authenticode-pe-image-hash)
-- [O que é abordado em um hash de imagem do Authenticode PE?](#what-is-covered-in-an-authenticode-pe-image-hash)
+- [O que é um Hash de Imagem DO Authenticode?](#what-is-an-authenticode-pe-image-hash)
+- [O que é coberto em um hash de imagem DO Authenticode?](#what-is-covered-in-an-authenticode-pe-image-hash)
 
-Espera-se que vários certificados de atributo sejam usados para verificar a integridade das imagens. No entanto, o mais comum é a assinatura Authenticode. Uma assinatura Authenticode pode ser usada para verificar se as seções relevantes de um arquivo de imagem PE não foram alteradas de nenhuma forma a partir do formulário original do arquivo. Para realizar essa tarefa, as assinaturas Authenticode contêm algo chamado de hash de imagem PE
+Espera-se que vários certificados de atributo sejam usados para verificar a integridade das imagens. No entanto, a mais comum é a assinatura Authenticode. Uma assinatura Authenticode pode ser usada para verificar se as seções relevantes de um arquivo de imagem PE não foram alteradas de forma alguma do formulário original do arquivo. Para realizar essa tarefa, as assinaturas Authenticode contêm algo chamado hash de imagem PE
 
-### <a name="what-is-an-authenticode-pe-image-hash"></a>O que é um hash de imagem Authenticode do PE?
+### <a name="what-is-an-authenticode-pe-image-hash"></a>O que é um Hash de Imagem DO Authenticode?
 
-O hash de imagem do PE do Authenticode, ou hash de arquivo para curto, é semelhante a uma soma de verificação de arquivo, pois produz um valor pequeno que se relaciona com a integridade de um arquivo. Uma soma de verificação é produzida por um algoritmo simples e é usada principalmente para detectar falhas de memória. Ou seja, ele é usado para detectar se um bloco de memória em disco ficou insatisfatório e os valores armazenados ali foram corrompidos. Um hash de arquivo é semelhante a uma soma de verificação, pois ele também detecta corrupção de arquivo. No entanto, ao contrário da maioria dos algoritmos de soma de verificação, é muito difícil modificar um arquivo para que ele tenha o mesmo hash de arquivo que seu formulário original (não modificado). Ou seja, uma soma de verificação destina-se a detectar falhas de memória simples que levam a danos, mas um hash de arquivo pode ser usado para detectar modificações intencionais e até mesmo sutis em um arquivo, como aqueles introduzidos por vírus, hackers ou programas de cavalo de Troia.
+O hash de imagem do Authenticode PE, ou hash de arquivo para resumir, é semelhante a uma verificação de arquivo, pois produz um pequeno valor relacionado à integridade de um arquivo. Uma verificação é produzida por um algoritmo simples e é usada principalmente para detectar falhas de memória. Ou seja, ele é usado para detectar se um bloco de memória no disco ficou mal e se os valores armazenados lá foram corrompidos. Um hash de arquivo é semelhante a uma verificação de que também detecta corrupção de arquivo. No entanto, ao contrário da maioria dos algoritmos de verificação, é muito difícil modificar um arquivo para que ele tenha o mesmo hash de arquivo que seu formulário original (não modificado). Ou seja, uma verificação destina-se a detectar falhas de memória simples que levam a corrupção, mas um hash de arquivo pode ser usado para detectar modificações intencionais e até mesmo sutis em um arquivo, como aquelas introduzidas por vírus, hackers ou programas de cavalos de Troia.
 
-Em uma assinatura Authenticode, o hash de arquivo é assinado digitalmente usando uma chave privada conhecida somente pelo signatário do arquivo. Um consumidor de software pode verificar a integridade do arquivo calculando o valor de hash do arquivo e comparando-o com o valor do hash assinado contido na assinatura digital Authenticode. Se os hashes de arquivo não corresponderem, parte do arquivo coberto pelo hash de imagem PE foi modificada.
+Em uma assinatura Authenticode, o hash do arquivo é assinado digitalmente usando uma chave privada conhecida apenas pelo signante do arquivo. Um consumidor de software pode verificar a integridade do arquivo calculando o valor de hash do arquivo e comparando-o com o valor de hash assinado contido na assinatura digital Authenticode. Se os hashes de arquivo não corresponderem, parte do arquivo coberto pelo hash de imagem PE foi modificada.
 
-### <a name="what-is-covered-in-an-authenticode-pe-image-hash"></a>O que é abordado em um hash de imagem do Authenticode PE?
+### <a name="what-is-covered-in-an-authenticode-pe-image-hash"></a>O que é coberto em um hash de imagem DO Authenticode?
 
-Não é possível ou desejável incluir todos os dados de arquivo de imagem no cálculo do hash de imagem PE. Às vezes, ele simplesmente apresenta características indesejáveis (por exemplo, as informações de depuração não podem ser removidas dos arquivos lançados publicamente); às vezes, é simplesmente impossível. Por exemplo, não é possível incluir todas as informações em um arquivo de imagem em uma assinatura Authenticode, em seguida, inserir a assinatura Authenticode que contém o hash de imagem PE na imagem PE e, posteriormente, ser capaz de gerar um hash de imagem PE idêntico incluindo todos os dados do arquivo de imagem no cálculo novamente, porque o arquivo agora contém a assinatura Authenticode que não estava originalmente lá.
+Não é possível ou desejável incluir todos os dados de arquivo de imagem no cálculo do hash de imagem PE. Às vezes, ele simplesmente apresenta características indesejáveis (por exemplo, informações de depuração não podem ser removidas de arquivos lançados publicamente); às vezes, é simplesmente impossível. Por exemplo, não é possível incluir todas as informações dentro de um arquivo de imagem em uma assinatura Authenticode, inserir a assinatura Authenticode que contém esse hash de imagem PE na imagem PE e, posteriormente, poder gerar um hash de imagem PE idêntico incluindo todos os dados de arquivo de imagem no cálculo novamente, porque o arquivo agora contém a assinatura Authenticode que não estava originalmente lá.
 
-#### <a name="process-for-generating-the-authenticode-pe-image-hash"></a>Processo para gerar o hash de imagem do Authenticode PE
+#### <a name="process-for-generating-the-authenticode-pe-image-hash"></a>Processo para gerar o hash de imagem DO Authenticode
 
 Esta seção descreve como um hash de imagem PE é calculado e quais partes da imagem PE podem ser modificadas sem invalidar a assinatura Authenticode.
 
 > [!NOTE]
-> O hash de imagem PE para um arquivo específico pode ser incluído em um arquivo de catálogo separado sem incluir um certificado de atributo dentro do arquivo com hash. Isso é relevante, pois torna-se possível invalidar o hash de imagem PE em um arquivo de catálogo assinado por Authenticode, modificando uma imagem PE que não contenha realmente uma assinatura Authenticode.
+> O hash de imagem PE para um arquivo específico pode ser incluído em um arquivo de catálogo separado sem incluir um certificado de atributo dentro do arquivo com hash. Isso é relevante, pois torna-se possível invalidar o hash de imagem PE em um arquivo de catálogo assinado por Authenticode modificando uma imagem PE que, na verdade, não contém uma assinatura Authenticode.
 
-Todos os dados em seções da imagem do PE especificados na tabela da seção são codificados em sua totalidade, exceto pelos seguintes intervalos de exclusão:
+Todos os dados nas seções da imagem PE especificados na tabela de seção têm o hashed em sua totalidade, exceto para os seguintes intervalos de exclusão:
 
-- **O campo de soma de verificação de arquivo dos campos específicos do Windows do cabeçalho opcional.** Essa soma de verificação inclui o arquivo inteiro (incluindo qualquer certificado de atributo no arquivo). Em todas as chances, a soma de verificação será diferente do valor original após a inserção da assinatura Authenticode.
+- **O campo CheckSum do arquivo Windows específicos do arquivo do header opcional.** Essa verificação inclui todo o arquivo (incluindo todos os certificados de atributo no arquivo). Em toda a probabilidade, a verificação será diferente do valor original depois de inserir a assinatura Authenticode.
 
-- **Informações relacionadas aos certificados de atributo**. As áreas da imagem PE relacionadas à assinatura Authenticode não são incluídas no cálculo do hash de imagem do PE porque as assinaturas Authenticode podem ser adicionadas ou removidas de uma imagem sem afetar a integridade geral da imagem. Isso não é um problema, pois há cenários de usuário que dependem da reassinatura de imagens PE ou da adição de um carimbo de data/hora. O Authenticode exclui as seguintes informações do cálculo de hash:
+- **Informações relacionadas a certificados de atributo**. As áreas da imagem PE relacionadas à assinatura Authenticode não estão incluídas no cálculo do hash de imagem PE porque as assinaturas Authenticode podem ser adicionadas ou removidas de uma imagem sem afetar a integridade geral da imagem. Isso não é um problema, pois há cenários de usuário que dependem da assinatura de imagens PE ou da adição de um carimbo de data/hora. O Authenticode exclui as seguintes informações do cálculo de hash:
 
-  - O campo da tabela de certificados dos diretórios de dados de cabeçalho opcionais.
+  - O campo Tabela de Certificados dos diretórios de dados de título opcionais.
 
-  - A tabela de certificados e os certificados correspondentes apontados pelo campo da tabela de certificados listados imediatamente acima.
+  - A Tabela de Certificados e os certificados correspondentes apontados pelo campo Tabela de Certificados listados imediatamente acima.
 
-  Para calcular o hash de imagem do PE, os pedidos de Authenticode as seções especificadas na tabela por intervalo de endereços, em seguida, geram hash na sequência resultante de bytes, passando os intervalos de exclusão.
+  Para calcular o hash de imagem PE, o Authenticode ordena as seções especificadas na tabela de seção por intervalo de endereços e, em seguida, faz o hash da sequência resultante de bytes, passando os intervalos de exclusão.
 
-- **Informações anteriores ao final da última seção.** A área após a última seção (definida pelo deslocamento mais alto) não tem hash. Essa área geralmente contém informações de depuração. Informações de depuração geralmente podem ser consideradas consultoria para depuradores; Ele não afeta a integridade real do programa executável. É literalmente possível remover informações de depuração de uma imagem depois que um produto é entregue e não afeta a funcionalidade do programa. Na verdade, isso às vezes é feito como uma medida de salvamento de disco. Vale a pena observar que as informações de depuração contidas nas seções especificadas da imagem PE não podem ser removidas sem invalidar a assinatura Authenticode.
+- **Informações anteriores ao final da última seção.** A área após a última seção (definida pelo deslocamento mais alto) não tem um hashed. Essa área geralmente contém informações de depuração. As informações de depuração geralmente podem ser consideradas consultoria para depurador; ele não afeta a integridade real do programa executável. É literalmente possível remover informações de depuração de uma imagem depois que um produto foi entregue e não afetar a funcionalidade do programa. Na verdade, isso às vezes é feito como uma medida de economia de disco. Vale a pena notar que as informações de depuração contidas nas seções especificadas da Imagem PE não podem ser removidas sem invalidar a assinatura Authenticode.
 
-Você pode usar as ferramentas MakeCert e SignTool fornecidas no SDK da plataforma Windows para experimentar a criação e a verificação de assinaturas Authenticode. Para obter mais informações, consulte a referência abaixo.
+Você pode usar as ferramentas makecert e signtool fornecidas no SDK Windows Platform para experimentar a criação e a verificação de assinaturas Authenticode. Para obter mais informações, consulte Referência, abaixo.
 
 ## <a name="references"></a>Referências
 
@@ -2361,10 +2361,10 @@ Você pode usar as ferramentas MakeCert e SignTool fornecidas no SDK da platafor
 
 [Criando, exibindo e gerenciando certificados](/windows/desktop/SecCrypto/creating-viewing-and-managing-certificates)
 
-[Passo a passos de assinatura de código no modo kernel (. doc)](https://download.microsoft.com/download/9/c/5/9c5b2167-8017-4bae-9fde-d599bac8184a/KMCS_Walkthrough.doc)
+[Passo a passo de assinatura de código no modo kernel (.doc)](https://download.microsoft.com/download/9/c/5/9c5b2167-8017-4bae-9fde-d599bac8184a/KMCS_Walkthrough.doc)
 
 [SignTool](/windows/desktop/SecCrypto/signtool)
 
-[Formato de assinatura do executável portátil do Windows Authenticode (. docx)](https://download.microsoft.com/download/9/c/5/9c5b2167-8017-4bae-9fde-d599bac8184a/Authenticode_PE.docx)
+[Windows Formato de assinatura executável portátil Authenticode (.docx)](https://download.microsoft.com/download/9/c/5/9c5b2167-8017-4bae-9fde-d599bac8184a/Authenticode_PE.docx)
 
-[Funções do ImageHlp](/windows/desktop/Debug/imagehlp-functions)
+[Funções ImageHlp](/windows/desktop/Debug/imagehlp-functions)

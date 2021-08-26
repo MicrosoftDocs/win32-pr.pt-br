@@ -4,12 +4,12 @@ ms.assetid: 0c5aaaae-368e-4b3e-a483-b3a23c353e6e
 title: Especificando uma cadeia de caracteres de construtor de objeto para um componente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ca4604d07a5b750d02a968456d33c9e5bc6bee8
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: ead0c4d59e0da6301e989a1dfa256f8f3e4868ff823acf7d320fd169bdee188d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826317"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120120346"
 ---
 # <a name="specifying-an-object-constructor-string-for-a-component"></a>Especificando uma cadeia de caracteres de construtor de objeto para um componente
 

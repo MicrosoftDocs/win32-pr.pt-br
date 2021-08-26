@@ -11,12 +11,12 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: ab9b0b003b3edea331ae617948176c38a9c7b47eca0972e63d6b54873d2669e6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5626b28db7145c3ceaeeba9f013d7ed8a614f7b5
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118087122"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122622502"
 ---
 # <a name="operator--operators"></a>operador /= operadores
 
@@ -28,19 +28,19 @@ Operador de atribuição de divisão.
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;">Operador</th>
-<th style="text-align: left;">Descrição</th>
+<th >Operador</th>
+<th >Descrição</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><a href="/previous-versions/windows/desktop/legacy/ee421377(v=vs.85)"><strong>XMVECTOR::operator /= (XMVECTOR&,float)</strong></a></td>
-<td style="text-align: left;">Divide uma instância <code>XMVECTOR</code> por um valor de ponto flutuante e retorna uma referência à instância atualizada. <br/> O divide cada componente da instância atual do Tipo de Dados <code>operator /=</code> <a href="xmvector-data-type.md"><strong>XMVECTOR</strong></a> por um valor de ponto flutuante especificado, retornando uma referência à instância atual atualizada. <br/>
+<td ><a href="/previous-versions/windows/desktop/legacy/ee421377(v=vs.85)"><strong>XMVECTOR::operator /= (XMVECTOR&,float)</strong></a></td>
+<td >Divide uma instância <code>XMVECTOR</code> por um valor de ponto flutuante e retorna uma referência à instância atualizada. <br/> O divide cada componente da instância atual do Tipo de Dados <code>operator /=</code> <a href="xmvector-data-type.md"><strong>XMVECTOR</strong></a> por um valor de ponto flutuante especificado, retornando uma referência à instância atual atualizada. <br/>
 <blockquote>
 [!Note]<br />
 Esse operador só está disponível em C++.
@@ -48,8 +48,8 @@ Esse operador só está disponível em C++.
 <br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><a href="/previous-versions/windows/desktop/legacy/ee421378(v=vs.85)"><strong>XMVECTOR::operator /= (XMVECTOR&,XMVECTOR)</strong></a></td>
-<td style="text-align: left;">Divide uma <code>XMVECTOR</code> instância por uma segunda instância, retornando uma referência à instância inicial atualizada. <br/> O divide cada componente da instância atual do Tipo de Dados <code>operator /=</code> <a href="xmvector-data-type.md"><strong>XMVECTOR</strong></a> pelo componente correspondente em uma segunda instância especificada do , retornando uma referência à instância <code>XMVECTOR</code> inicial atualizada. <br/>
+<td ><a href="/previous-versions/windows/desktop/legacy/ee421378(v=vs.85)"><strong>XMVECTOR::operator /= (XMVECTOR&,XMVECTOR)</strong></a></td>
+<td >Divide uma <code>XMVECTOR</code> instância por uma segunda instância, retornando uma referência à instância inicial atualizada. <br/> O divide cada componente da instância atual do Tipo de Dados <code>operator /=</code> <a href="xmvector-data-type.md"><strong>XMVECTOR</strong></a> pelo componente correspondente em uma segunda instância especificada do , retornando uma referência à instância <code>XMVECTOR</code> inicial atualizada. <br/>
 <blockquote>
 [!Note]<br />
 Esse operador só está disponível em C++.

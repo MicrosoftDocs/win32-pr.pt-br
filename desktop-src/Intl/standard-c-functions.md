@@ -4,12 +4,12 @@ ms.assetid: a86626c1-7f90-4924-bfdd-384729bd0cc5
 title: Funções padrão C
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f6247b3707f96908ef16d887462ba06573fd8dd7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7f0e576dd8ad506d3d0f3379c161526dd7b9330542ca1cc575c95e3eda8e7dd4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103837332"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120130156"
 ---
 # <a name="standard-c-functions"></a>Funções padrão C
 
@@ -29,14 +29,14 @@ Um aplicativo deve adicionar as seguintes linhas para usar as funções genéric
 
 
 
-Observe que os arquivos TCHAR. h e WCHAR. h são necessários e que o sublinhado à esquerda na \_ variável Unicode também é necessário. Esse nomenclatura é específico para a biblioteca C padrão. O "UNICODE" renderizado sem o sublinhado é para os tempos de execução do Microsoft Windows.
+Observe que os arquivos TCHAR. h e WCHAR. h são necessários e que o sublinhado à esquerda na \_ variável Unicode também é necessário. Esse nomenclatura é específico para a biblioteca C padrão. o "UNICODE" renderizado sem o sublinhado é para os tempos de execução do Microsoft Windows.
 
 As funções [wcstombs](/cpp/c-runtime-library/reference/wcstombs-wcstombs-l) e [mbstowcs](/cpp/c-runtime-library/reference/mbstowcs-s-mbstowcs-s-l) podem converter do conjunto de caracteres com suporte da biblioteca C padrão para Unicode e back, com algumas limitações. Para obter mais informações sobre a conversão de cadeias de caracteres de e para Unicode, consulte [conversão entre tipos de cadeia](translation-between-string-types.md).
 
 A função [printf](/cpp/c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l) definida em TCHAR. h dá suporte às mesmas especificações de formato que as funções de impressão strsafe. h, por exemplo, [**StringCbPrintf**](/windows/win32/api/strsafe/nf-strsafe-stringcbprintfa). Da mesma forma, TCHAR. h define uma função [wprintf](/cpp/c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l) , na qual a cadeia de caracteres de formato é uma cadeia de caracteres Unicode.
 
 > [!Caution]  
-> A manipulação de buffer insatisfatório é incomplicada em muitos problemas de segurança que envolvem saturações de buffer. Consulte a [referência de strsafe. h](../menurc/strsafe-ovw.md). As funções definidas em strsafe. h fornecem processamento adicional para a manipulação de buffer adequada em seu código. Eles se destinam a substituir suas contrapartes C/C++ internas, bem como implementações específicas do Microsoft Windows. Para obter mais informações, consulte [Considerações sobre segurança: recursos internacionais](security-considerations--international-features.md).
+> A manipulação de buffer insatisfatório é incomplicada em muitos problemas de segurança que envolvem saturações de buffer. Consulte a [referência de strsafe. h](../menurc/strsafe-ovw.md). As funções definidas em strsafe. h fornecem processamento adicional para a manipulação de buffer adequada em seu código. eles se destinam a substituir suas contrapartes C/C++ internas, bem como implementações específicas do Microsoft Windows. Para obter mais informações, consulte [Considerações sobre segurança: recursos internacionais](security-considerations--international-features.md).
 
  
 

@@ -4,12 +4,12 @@ ms.assetid: 44642d32-2cbc-4dd9-bccc-15924f310539
 description: 'Saiba mais sobre: exemplo de propriedade'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b9c11fda9b133ca6fa3b2f9942d8d48bec3a9e47
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 83f17e12031b326566e6b948b05dae5851ec4aabd1cc7fd0a0281fc9d1a89c0f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104088930"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120061636"
 ---
 # <a name="property-sample"></a>Exemplo de propriedade
 
@@ -40,13 +40,13 @@ O exemplo de propriedade mostra como implementar três estilos diferentes de fol
 
 ## <a name="downloading-the-sample"></a>Baixando o exemplo
 
-O exemplo de propriedade é instalado como parte do [SDK (Software Development Kit) do Windows](https://msdn.microsoft.com/windows/bb980924.aspx) e está disponível no local a seguir.
+o exemplo de propriedade é instalado como parte do [SDK (Software Development Kit) do Windows](https://msdn.microsoft.com/windows/bb980924.aspx) e está disponível no local a seguir.
 
 
 
-| Local    | Caminho/URL                                                                                                 |
+| Localização    | Caminho/URL                                                                                                 |
 |-------------|----------------------------------------------------------------------------------------------------------|
-| SDK do Windows | % Arquivos de programas% \\ Microsoft SDKs \\ Windows \\ \[ versão número \] \\ exemplos \\ WinUI controles de \\ \\ \\ Propriedade comuns |
+| SDK do Windows | % arquivos de programas% \\ Microsoft SDKs \\ Windows número de \\ \[ versão \] \\ exemplos \\ winui controles de \\ \\ \\ propriedade comuns |
 
 
 
@@ -59,9 +59,9 @@ Para criar o exemplo usando o prompt de comando:
 1.  Abra a janela do prompt de comando e navegue até o diretório do projeto.
 2.  Digite `msbuild [project file]`.
 
-Para criar o exemplo usando o Visual Studio:
+Para criar o exemplo usando Visual Studio:
 
-1.  Abra o Windows Explorer e navegue até o diretório do projeto.
+1.  abra Windows Explorer e navegue até o diretório do projeto.
 2.  Clique duas vezes no ícone do arquivo. vcproj para abrir o projeto no Visual Studio.
 3.  No menu **Compilar** , selecione **Compilar solução** para compilar a solução.
 
@@ -69,7 +69,7 @@ Para criar o exemplo usando o Visual Studio:
 
 <dl> <dt>
 
-[Sobre folhas de propriedades](property-sheets.md)
+[Sobre as folhas de propriedades](property-sheets.md)
 </dt> </dl>
 
  

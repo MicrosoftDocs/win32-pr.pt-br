@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d4da8fb2aed018eab9880ab6c8a6bed310e6d89bb293d52efc5d6ac6d8baf190
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1e8d9491fb66d8e79b18efed363d4eb4f21bc6c5
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119059734"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122472342"
 ---
 # <a name="taskserviceconnect-method"></a>TaskService. método de Conexão
 
@@ -85,45 +85,15 @@ se o método de Conexão falhar, você poderá coletar o identificador de erro p
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Identificador de erro</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>0x80070005</td>
-<td>Acesso negado para se conectar ao serviço de Agendador de Tarefas.</td>
-</tr>
-<tr class="even">
-<td>0x80041315</td>
-<td>O serviço de Agendador de Tarefas não está em execução.</td>
-</tr>
-<tr class="odd">
-<td>0x8007000e</td>
-<td>O aplicativo não tem memória suficiente para concluir a operação ou o <em>usuário</em>, a <em>senha</em>ou o <em>domínio</em> tem pelo menos um valor nulo e um não nulo.</td>
-</tr>
-<tr class="even">
-<td>53</td>
-<td>Esse erro é retornado nas seguintes situações:
-<ul>
-<li>O nome do computador especificado no parâmetro <em>ServerName</em> não existe.</li>
-<li>quando você está tentando se conectar a um computador Windows Server 2003 ou Windows XP, o computador remoto não tem a exceção de firewall de compartilhamento de arquivos e impressoras habilitada ou o serviço de registro remoto não está em execução.</li>
-<li>quando você estiver tentando se conectar a um computador Windows Vista e o computador remoto não tiver a exceção de firewall de gerenciamento de tarefas agendadas remotas habilitada e a exceção de firewall de compartilhamento de arquivos e impressoras estiver habilitada ou o serviço de registro remoto não estiver em execução.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>50</td>
-<td>os parâmetros de <em>usuário</em>, <em>senha</em>ou <em>domínio</em> não podem ser especificados ao se conectar a um computador remoto Windows XP ou Windows Server 2003 de um computador Windows Vista.</td>
-</tr>
-</tbody>
-</table>
+
+| Identificador de erro | Descrição | 
+|------------------|-------------|
+| 0x80070005 | Acesso negado para se conectar ao serviço de Agendador de Tarefas. | 
+| 0x80041315 | O serviço de Agendador de Tarefas não está em execução. | 
+| 0x8007000e | O aplicativo não tem memória suficiente para concluir a operação ou o <em>usuário</em>, a <em>senha</em>ou o <em>domínio</em> tem pelo menos um valor nulo e um não nulo. | 
+| 53 | Esse erro é retornado nas seguintes situações:<ul><li>O nome do computador especificado no parâmetro <em>ServerName</em> não existe.</li><li>quando você está tentando se conectar a um computador Windows Server 2003 ou Windows XP, o computador remoto não tem a exceção de firewall de compartilhamento de arquivos e impressoras habilitada ou o serviço de registro remoto não está em execução.</li><li>quando você estiver tentando se conectar a um computador Windows Vista e o computador remoto não tiver a exceção de firewall de gerenciamento de tarefas agendadas remotas habilitada e a exceção de firewall de compartilhamento de arquivos e impressoras estiver habilitada ou o serviço de registro remoto não estiver em execução.</li></ul> | 
+| 50 | os parâmetros de <em>usuário</em>, <em>senha</em>ou <em>domínio</em> não podem ser especificados ao se conectar a um computador remoto Windows XP ou Windows Server 2003 de um computador Windows Vista. | 
+
 
 
 

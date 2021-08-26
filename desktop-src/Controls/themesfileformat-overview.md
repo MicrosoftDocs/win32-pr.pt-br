@@ -1,21 +1,21 @@
 ---
 title: Formato de arquivo de tema
-description: Este documento discute o formato dos arquivos de tema (. Theme). Um arquivo. Theme é um arquivo de texto. ini que é dividido em seções, que especificam elementos visuais que aparecem em uma área de trabalho do Windows. Os nomes de seção são encapsulados entre colchetes (\ \) no arquivo. ini.
+description: Este documento discute o formato dos arquivos de tema (. Theme). um arquivo. theme é um arquivo de texto .ini dividido em seções, que especificam elementos visuais que aparecem em uma área de trabalho Windows. Os nomes de seção são encapsulados entre colchetes (\ \) no arquivo .ini.
 ms.assetid: 0b7b0ff7-f55a-4215-a2fd-6c3ea117d6e8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b61ba97172fc5aaddb912183130941337a149536
-ms.sourcegitcommit: 25e1fa2b3641ae13b79e0afdf9cb7a168d99e009
+ms.openlocfilehash: c67fc2d73e54e4f9c319108c2b29ed62fb58266f
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "103824047"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122472293"
 ---
 # <a name="theme-file-format"></a>Formato de arquivo de tema
 
-Este documento discute o formato dos arquivos de tema (. Theme). Um arquivo. Theme é um arquivo de texto. ini que é dividido em seções, que especificam elementos visuais que aparecem em uma área de trabalho do Windows. Os nomes de seção são encapsulados entre colchetes ( \[ \] ) no arquivo. ini.
+Este documento discute o formato dos arquivos de tema (. Theme). um arquivo. theme é um arquivo de texto .ini dividido em seções, que especificam elementos visuais que aparecem em uma área de trabalho Windows. Os nomes de seção são encapsulados entre colchetes ( \[ \] ) no arquivo de .ini.
 
-Um novo formato de arquivo,. themepack, foi introduzido com o Windows 7 para ajudar os usuários a compartilhar temas. Os temas podem ser selecionados no painel de controle de personalização somente no Windows 7 Home Premium ou superior, ou somente no Windows Server 2008 R2 quando o componente da área de trabalho é instalado.
+um novo formato de arquivo,. themepack, foi introduzido com Windows 7 para ajudar os usuários a compartilhar temas. os temas podem ser selecionados no painel de controle de personalização somente no Windows 7 Home Premium ou superior, ou somente no Windows Server 2008 R2 quando o componente da área de trabalho é instalado.
 
 Os tópicos a seguir são discutidos neste artigo.
 
@@ -40,7 +40,7 @@ Os tópicos a seguir são discutidos neste artigo.
 
 Um arquivo. Theme permite que você altere a aparência de determinados elementos da área de trabalho. Você pode criar ou modificar um arquivo. Theme de duas maneiras:
 
--   Modifique as configurações de personalização ou exibição no painel de controle e salve as configurações como um arquivo. Theme. Consulte a ajuda do Windows para obter instruções.
+-   Modifique as configurações de personalização ou exibição no painel de controle e salve as configurações como um arquivo. Theme. consulte a ajuda do Windows para obter instruções.
 -   Crie um arquivo. Theme manualmente para um nível maior de controle sobre os detalhes do seu tema.
 
 Para disponibilizar seu tema para outros usuários, você deve fornecer o arquivo. theme, bem como a imagem de plano de fundo, a proteção de tela e os arquivos de ícones. Você pode fazer isso com um [pacote de temas](#theme-packs).
@@ -92,7 +92,7 @@ DefaultValue=%ProgramFiles%\Fabrikam\MyApp.exe,0
 
 
 
-Estes são os valores para os ícones de área de trabalho padrão no Windows 7.
+estes são os valores para os ícones de área de trabalho padrão no Windows 7.
 
 
 ```
@@ -123,7 +123,7 @@ Empty=%SystemRoot%\System32\imageres.dll,-55
 
  
 
-A cor dos elementos, como barras de rolagem, texto e botões, é personalizável. O arquivo. Theme especifica os valores RGB a serem alterados para esses elementos. Os valores substituem os valores padrão do estilo visual e são usados quando seu tema se baseia nos temas Windows clássico, Windows 7 Basic ou Alto Contraste.
+A cor dos elementos, como barras de rolagem, texto e botões, é personalizável. O arquivo. Theme especifica os valores RGB a serem alterados para esses elementos. os valores substituem os valores padrão do estilo visual e são usados quando seu tema se baseia nos temas Windows clássico, Windows 7 Basic ou Alto Contraste.
 
 Veja a seguir um exemplo de como as cores são definidas.
 
@@ -168,7 +168,7 @@ GradientInactiveTitle=192 192 192
 
  
 
-Um tema também pode alterar a aparência dos cursores. Para fazer isso, você cria arquivos. cur para substituir os cursores padrão do Windows. O exemplo a seguir é de um arquivo. Theme que define os cursores de um tema chamado *esportes*.
+Um tema também pode alterar a aparência dos cursores. para fazer isso, você cria arquivos. cur para substituir os cursores de Windows padrão. O exemplo a seguir é de um arquivo. Theme que define os cursores de um tema chamado *esportes*.
 
 
 ```
@@ -236,56 +236,21 @@ O plano de fundo de seu tema pode ser uma apresentação de slides de imagens ar
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Atributo</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Intervalo = número de milissegundos</td>
-<td>Obrigatórios. Interval é um número que determina com que frequência o plano de fundo é alterado. É medido em milissegundos.</td>
-</tr>
-<tr class="even">
-<td>Ordem aleatória = 0 ou 1</td>
-<td>Obrigatórios. Ordem aleatória identifica se a ordem aleatória do plano de fundo.<br/> 0 = Desabilitado<br/> 1 = Habilitado<br/></td>
-</tr>
-<tr class="odd">
-<td>RSSFeed = URL para RSS feed</td>
-<td>Obrigatório se ImagesRootPath não for especificado. RSSFeed especifica um RSS feed a ser usado como a apresentação de slides em segundo plano. Para que o feed funcione, você precisa fazer referência a imagens de alta resolução que aderem ao &quot; padrão de compartimentos &quot; usado pela <a href="/previous-versions/windows/desktop/ms684701(v=vs.85)">plataforma Windows RSS</a>. Devido a essa limitação, os arquivos. Theme que incluem um RSS feed devem ser criados manualmente. <br/>
-<blockquote>
-[!Note]<br />
-Você não pode especificar um RSSFeed e um ImagesRootPath.
-</blockquote>
-<br/> <br/></td>
-</tr>
-<tr class="even">
-<td>ImagesRootPath = caminho para a pasta de imagem</td>
-<td>Obrigatório se RSSFeed não for especificado. ImagesRootPath especifica um caminho para um conjunto de imagens que você deseja usar como a apresentação de slides em segundo plano. As imagens nas subpastas não são incluídas na apresentação de slides.<br/> ImagesRootPath dá suporte a substituições de variável de ambiente no caminho.<br/>
-<blockquote>
-[!Note]<br />
-Você não pode especificar um RSSFeed e um ImagesRootPath.
-</blockquote>
-<br/> <br/></td>
-</tr>
-<tr class="odd">
-<td>Item<em>N</em>caminho = caminho (s) para imagem (ns) específica (s)</td>
-<td>Para uso com ImagesRootPath. <br/> O item<em>N</em>caminho Especifica caminhos para imagens específicas, para que você possa limitar a apresentação de slides a imagens específicas, em vez de todas as imagens em uma pasta. Se nenhum caminho for especificado, todas as imagens no caminho ImagesRootPath serão usadas na apresentação de slides, incluindo as imagens adicionadas após a criação e instalação do tema.<br/> O caminho<em>N</em>do item dá suporte às substituições de variável de ambiente no caminho. <em>N</em> é 0, 1, 2 e assim por diante. <br/></td>
-</tr>
-</tbody>
-</table>
+
+| Atributo | Descrição | 
+|-----------|-------------|
+| Intervalo = número de milissegundos | Obrigatórios. Interval é um número que determina com que frequência o plano de fundo é alterado. É medido em milissegundos. | 
+| Ordem aleatória = 0 ou 1 | Obrigatórios. Ordem aleatória identifica se a ordem aleatória do plano de fundo.<br /> 0 = Desabilitado<br /> 1 = Habilitado<br /> | 
+| RSSFeed=URL para RSS feed | Necessário se ImagesRootPath não for especificado. RSSFeed especifica um RSS feed a ser usado como a apresentação de slides em segundo plano. Para que o feed funcione, é necessário referenciar imagens de alta resolução aderindo ao padrão de "compartimentos" usado pelo <a href="/previous-versions/windows/desktop/ms684701(v=vs.85)">Windows RSS Platform</a>. Devido a essa limitação, os arquivos .theme que incluem um RSS feed devem ser criados manualmente. <br /><blockquote>[!Note]<br />Não é possível especificar um RSSFeed e ImagesRootPath.</blockquote><br /><br /> | 
+| ImagesRootPath=path to image folder | Necessário se RSSFeed não for especificado. ImagesRootPath especifica um caminho para um conjunto de imagens que você deseja usar como a apresentação de slides em segundo plano. As imagens em subpastas não estão incluídas na apresentação de slides.<br /> ImagesRootPath dá suporte a substituições de Variável de Ambiente no caminho.<br /><blockquote>[!Note]<br />Não é possível especificar um RSSFeed e ImagesRootPath.</blockquote><br /><br /> | 
+| Item<em>N</em>Path=path(s) para imagens específicas | Para uso com ImagesRootPath. <br /> O<em>Caminho N</em>do Item especifica caminhos para imagens específicas, para que você possa limitar a apresentação de slides a imagens específicas em vez de todas as imagens em uma pasta. Se nenhum caminho for especificado, todas as imagens no caminho ImagesRootPath serão usadas na apresentação de slides, incluindo imagens adicionadas depois de criar e instalar o tema.<br /> O<em>Caminho N</em>do Item dá suporte a substituições de Variável de Ambiente no caminho. <em>N</em> é 0, 1, 2 e assim por diante. <br /> | 
+
 
 
 
  
 
-Os exemplos a seguir mostram como um arquivo. Theme especifica a apresentação de slides para incluir um conjunto de imagens armazenadas localmente.
+Os exemplos a seguir mostram como um arquivo .theme especifica a apresentação de slides para incluir um conjunto de imagens armazenadas localmente.
 
 
 ```
@@ -310,12 +275,12 @@ Item2Path=%ProgramFiles%\fabrikam\wallpaper\river.jpg
 
 
 
-O exemplo a seguir é um modelo para um arquivo. Theme que cria uma apresentação de slides de plano de fundo da área de trabalho usando imagens de um RSS feed. Siga estas etapas para personalizar o modelo:
+O exemplo a seguir é um modelo para um arquivo .theme que cria uma apresentação de slides da tela de fundo da área de trabalho usando imagens de um RSS feed. Siga estas etapas para personalizar o modelo:
 
-1.  Copie o exemplo a seguir e cole-o em um editor de texto.
-2.  Substitua {ThemeName} pelo nome que você deseja exibir na Galeria de temas do painel de controle de personalização.
-3.  Substitua {rssfeedurl} pelo caminho completo para um RSS feed compatível.
-4.  Salve as alterações como um arquivo com a extensão ". Theme".
+1.  Copie o exemplo a seguir e copie-o em um editor de texto.
+2.  Substitua {themename} pelo nome que você deseja que apareça na galeria de Painel de Controle temas personalizados.
+3.  Substitua {rssfeedurl} pelo caminho completo para um RSS feed.
+4.  Salve as alterações como um arquivo com a extensão ".theme".
 
 
 ```
@@ -364,14 +329,14 @@ MTSM=DABJDKT
 
 
 
-### <a name="metrics-section"></a>\[Seção de métricas \]
+### <a name="metrics-section"></a>\[Seção \] Métricas
 
 > [!Note]  
-> Esta seção é opcional. Se você não incluir esta seção no arquivo. theme, o sistema usará as configurações de estilo visual padrão.
+> Esta seção é opcional. Se você não incluir esta seção no arquivo .theme, o sistema usará as configurações de estilo visual padrão.
 
  
 
-Você pode especificar as métricas do sistema em um arquivo. Theme. As métricas do sistema são as dimensões de vários elementos de exibição, como a largura da borda da janela, a altura do ícone ou a largura da barra de rolagem. Os valores NonclientMetrics e IconMetrics são estruturas binárias definidas por NONCLIENTMETRICS e ICONMETRICS em winuser. h. A seguir, um exemplo de como alterar as métricas do sistema.
+Você pode especificar métricas do sistema em um arquivo .theme. As métricas do sistema são as dimensões de vários elementos de exibição, como a largura da borda da janela, a altura do ícone ou a largura da barra de rolagem. Os valores NonclientMetrics e IconMetrics são estruturas binárias definidas por NONCLIENTMETRICS e ICONMETRICS em winuser.h. Veja a seguir um exemplo de como alterar as métricas do sistema.
 
 
 ```
@@ -402,14 +367,14 @@ NonclientMetrics=84 1 0 0 1 0 0 0 16 0 0 0 16 0 0 0 18
 
 
 
-### <a name="visual-styles-section"></a>\[Seção de estilos visuais \]
+### <a name="visual-styles-section"></a>\[Seção Estilos \] Visuais
 
 > [!Note]  
-> Esta seção é necessária. Se você não incluir esta seção no arquivo. theme, o sistema ignorará o tema e não exibirá o tema no painel de controle.
+> Esta seção é necessária. Se você não incluir esta seção no arquivo .theme, o sistema ignorará o Tema e não exibirá o Tema Painel de Controle.
 
  
 
-Você pode fornecer informações específicas sobre o tamanho e a cor dos elementos da área de trabalho nos arquivos. msstyles. As seções de cor e tamanho dos arquivos. Theme podem ser substituídas por arquivos. msstyles que permitem que você modifique os elementos da área de trabalho com mais detalhes. Esses arquivos são especificados na seção estilos visuais de um arquivo. Theme. Veja a seguir um exemplo de uma seção de estilos visuais.
+Você pode fornecer informações específicas sobre o tamanho e a cor dos elementos da área de trabalho em arquivos .msstyles. As seções de cor e tamanho dos arquivos .theme podem ser substituídas por arquivos .msstyles que permitem modificar elementos da área de trabalho mais detalhadamente. Esses arquivos são especificados na seção estilos visuais de um arquivo .theme. A seguir está um exemplo de uma seção de estilos visuais.
 
 
 ```
@@ -421,11 +386,11 @@ Size=NormalSize
 
 
 
-A adição de um elemento Path a um arquivo. msstyles é opcional. Se você fornecer um caminho, deverá remover as seções métricas e cor do arquivo. Theme. Quando essas seções são removidas, as cores, as fontes e os tamanhos de um tema são provenientes do arquivo. msstyles e correspondem à intenção do autor do. msstyles. A falha na remoção das seções métrica e cor pode fazer com que o Windows ou os aplicativos tenham problemas de desenho.
+Adicionar um elemento Path a um arquivo .msstyles é opcional. Se você fornecer um caminho, deverá remover as seções de métricas e cores do arquivo .theme. Quando essas seções são removidas, as cores, as fontes e os tamanhos de um tema vêm do arquivo .msstyles e corresponderem à intenção do autor .msstyles. A falha na remoção das seções de métrica e cor pode fazer com que Windows aplicativos tenham problemas de desenho.
 
-**Windows Vista/Windows 7:** Quando o caminho aponta para Aero. msstyles, você pode especificar a cor de vidro desejada, conforme mostrado no exemplo a seguir.
+**Windows Vista/Windows 7:** Quando o caminho aponta para Aero.msstyles, você pode especificar a Cor de Vidro desejada, conforme mostrado no exemplo a seguir.
 
-**Windows 7:** Quando o caminho aponta para Aero. msstyles, você também pode especificar o valor de transparência desejado, conforme mostrado no exemplo a seguir.
+**Windows 7:** Quando o caminho aponta para Aero.msstyles, você também pode especificar o valor de Transparência desejado, conforme mostrado no exemplo a seguir.
 
 
 ```
@@ -439,9 +404,9 @@ Transparency=1
 
 
 
-Se os valores de transparência e ColorizationColor corresponderem exatamente a uma cor do sistema, o painel de controle de personalização exibirá o nome do sistema para a cor. Caso contrário, a cor será rotulada como "personalizado".
+Se os valores ColorizationColor e Transparency corresponderem exatamente a uma cor do sistema, o Painel de Controle personalização exibirá o nome do sistema para a cor. Caso contrário, a cor será rotulada como "Personalizado".
 
-O seguinte mostra uma seção VisualStyles para o tema básico do Windows 7.
+O exemplo a seguir mostra uma seção VisualStyles para o Windows 7 Basic.
 
 
 ```
@@ -456,7 +421,7 @@ Transparency=1
 
 
 
-O seguinte mostra uma seção VisualStyles para o tema clássico do Windows.
+O exemplo a seguir mostra uma seção VisualStyles para o Windows clássico.
 
 
 ```
@@ -469,7 +434,7 @@ Transparency=0
 
 
 
-O seguinte mostra uma seção VisualStyles para um tema Alto Contraste preto.
+O exemplo a seguir mostra uma seção VisualStyles para um Alto Contraste tema Preto.
 
 
 ```
@@ -482,14 +447,14 @@ Transparency=0
 
 
 
-### <a name="sounds-and-appevents-sections-sounds"></a>\[AppEvents de sons \] e \[ \] seções (sons)
+### <a name="sounds-and-appevents-sections-sounds"></a>\[Seções \] \[ Sons e AppEvents \] (Sons)
 
 > [!Note]  
-> Esta seção é opcional. Se você não incluir esta seção no arquivo. theme, o sistema usará as configurações de som padrão.
+> Esta seção é opcional. Se você não incluir esta seção no arquivo .theme, o sistema usará as configurações de som padrão.
 
  
 
-O usuário pode selecionar o ícone de **som** no painel de controle para associar sons a eventos que ocorrem em aplicativos. Por exemplo, um arquivo. wav pode ser executado quando um aplicativo é aberto. Um arquivo. Theme pode especificar arquivos. wav para substituir os padrões. O exemplo a seguir mostra como fazer isso.
+O usuário pode selecionar o **ícone som** no Painel de Controle para associar sons a eventos que ocorrem em aplicativos. Por exemplo, um arquivo .wav pode ser reproduzir quando um aplicativo é aberto. Um arquivo .theme pode especificar arquivos .wav para substituir os padrão. O exemplo a seguir mostra como fazer isso.
 
 
 ```
@@ -514,7 +479,7 @@ DefaultValue=%WinDir%\media\ding.wav
 
 
 
-**Windows 7 e posterior:** Um nome de esquema de som pode ser especificado em vez de listar cada som separadamente.
+**Windows 7 e posteriores:** Um nome de esquema de som pode ser especificado em vez de listar cada som separadamente.
 
 
 ```
@@ -525,21 +490,21 @@ SchemeName=@%SystemRoot%\System32\mmres.dll,-819
 
 
 
-O valor de schemeName especifica o nome do esquema de som ou o nome do esquema de som localizado, conforme mostrado no exemplo acima.
+O valor SchemeName especifica o nome do esquema de som ou o nome do esquema de som localizado, conforme mostrado no exemplo acima.
 
-### <a name="boot-section"></a>\[Seção de inicialização \]
+### <a name="boot-section"></a>\[Seção \] inicialização
 
 > [!Note]  
-> **As proteções de tela são preteridas na atualização de aniversário do Windows 10 e além disso.**
+> **Os protetores de tela foram preterido na Atualização de Windows 10 aniversário e além.**
 
  
 
 > [!Note]  
-> Esta seção é opcional. Se você não incluir esta seção no arquivo. theme, nenhuma proteção de tela será usada.
+> Esta seção é opcional. Se você não incluir esta seção no arquivo .theme, nenhuma economia de tela será usada.
 
  
 
-No arquivo. theme, você pode especificar a proteção de tela para o Windows usar. O exemplo a seguir mostra a isso.
+No arquivo .theme, você pode especificar a economia de tela para Windows usar. O exemplo a seguir mostra a isso.
 
 
 ```
@@ -549,14 +514,14 @@ SCRNSAVE.EXE=%WinDir%\System32\bubbles.scr
 
 
 
-### <a name="masterthemeselector-section"></a>\[\]Seção MasterThemeSelector
+### <a name="masterthemeselector-section"></a>\[Seção MasterThemeSelector \]
 
 > [!Note]  
-> Esta seção é necessária. Se você não incluir esta seção no arquivo. theme, o sistema ignorará o tema e não exibirá o tema no painel de controle.
+> Esta seção é necessária. Se você não incluir esta seção no arquivo .theme, o sistema ignorará o Tema e não exibirá o Tema Painel de Controle.
 
  
 
-A seção seletor de tema mestre do arquivo. Theme deve ser sempre incluída como uma marca que indica que o arquivo é válido. Você não tem uma opção de valores para esse parâmetro. O seguinte mostra isso.
+A seção do seletor de tema mestre do arquivo .theme sempre deve ser incluída como uma marca que indica que o arquivo é válido. Você não tem uma opção de valores para esse parâmetro. O exemplo a seguir mostra isso.
 
 
 ```
@@ -568,7 +533,7 @@ MTSM=DABJDKT
 
 ## <a name="example-of-a-theme-file"></a>Exemplo de um arquivo de tema
 
-O exemplo a seguir mostra um arquivo. Theme completo.
+O exemplo a seguir mostra um arquivo .theme completo.
 
 
 ```
@@ -704,13 +669,13 @@ Transparency=1
 
 ## <a name="installing-theme-files"></a>Instalando arquivos de tema
 
-Quando o Windows é inicializado, o sistema operacional enumera os subdiretórios de primeiro nível dos recursos de% WinDir% \\ \\ para identificar os temas disponíveis. Os arquivos de tema padrão do sistema estão localizados em temas de recursos de% WinDir% \\ \\ . Os arquivos de tema do usuário são armazenados em% windir% \\ Users \\ <username> \\ AppData \\ local \\ Microsoft \\ Windows \\ Themes.
+Quando Windows inicializado, o sistema operacional enumera os subdireários de primeiro nível de %WinDir% Resources para identificar \\ \\ os temas disponíveis. Os arquivos de tema padrão do sistema estão localizados em %WinDir% \\ Temas \\ de Recursos. Os arquivos de tema do usuário são armazenados em %WinDir% \\ Usuários \\ <username> \\ AppData \\ Local microsoft Windows \\ \\ \\ Temas.
 
-Um arquivo. Theme tem associações de arquivo; Portanto, os aplicativos de instalador de tema podem chamar [**ShellExecute**](/windows/desktop/api/shellapi/nf-shellapi-shellexecutea) em um arquivo. Theme para abrir a janela de **personalização** no painel de controle para o tema especificado.
+Um arquivo .theme tem associações de arquivo; portanto, os aplicativos instalador de tema podem chamar [**ShellExecute**](/windows/desktop/api/shellapi/nf-shellapi-shellexecutea) em um arquivo .theme para abrir a janela Personalização no Painel de Controle para o tema especificado. 
 
 ## <a name="theme-packs"></a>Pacotes de tema
 
-**Windows 7 e posterior.** Um pacote de temas é um arquivo. cab que contém não apenas o arquivo. theme, mas também os arquivos necessários para implementar o tema em outro computador, como arquivos de som e imagens. Os usuários podem criar pacotes de tema por meio do painel de controle de personalização.
+**Windows 7 e posterior.** Um pacote de tema é um .cab que contém não apenas o arquivo .theme, mas também os arquivos necessários para implementar o tema em outro computador, como arquivos de som e imagens. Os usuários podem criar pacotes de tema por meio do Painel de Controle.
 
 Os tipos de arquivo com suporte incluem o seguinte:
 
@@ -719,9 +684,9 @@ Os tipos de arquivo com suporte incluem o seguinte:
 | Tipo de arquivo    | Extensão                           |
 |--------------|-------------------------------------|
 | Tema        | .theme                              |
-| Imagem        | . jpg,. jpeg,. bmp,. dib,. tif,. png |
+| Imagem        | .jpg, .jpeg, .bmp, .dib, .tif, .png |
 | Som        | .wav                                |
-| Cursor do mouse | . cur,. ani                          |
+| Cursor do mouse | .cur, .ani                          |
 | Ícone da área de trabalho | .ico                                |
 | Logotipo da marca   | .png                                |
 

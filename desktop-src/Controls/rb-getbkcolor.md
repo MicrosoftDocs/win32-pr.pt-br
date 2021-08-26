@@ -1,9 +1,9 @@
 ---
-title: Mensagem de RB_GETBKCOLOR (commctrl. h)
-description: Recupera a cor do plano de fundo padrão de um controle rebar.
+title: RB_GETBKCOLOR mensagem (Commctrl.h)
+description: Recupera a cor da tela de fundo padrão de um controle de barras.
 ms.assetid: be90d1ce-a1f8-446d-ae64-001f7174ab05
 keywords:
-- Controles de RB_GETBKCOLOR de mensagens do Windows
+- RB_GETBKCOLOR controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7bb0c6f2348dfa54dc02ddc40658fd1289885ff7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a56e2b6c60076d878ddea275f5383f98c5a92ee868e00074c716c113382b7678
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455532"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120084996"
 ---
-# <a name="rb_getbkcolor-message"></a>\_Mensagem GETBKCOLOR RB
+# <a name="rb_getbkcolor-message"></a>Mensagem \_ GETBKCOLOR do RB
 
-Recupera a cor do plano de fundo padrão de um controle rebar.
+Recupera a cor da tela de fundo padrão de um controle de barras.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -35,9 +35,9 @@ Recupera a cor do plano de fundo padrão de um controle rebar.
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor [**COLORREF**](/windows/desktop/gdi/colorref) que representa a cor de plano de fundo padrão atual.
+Retorna um [**valor COLORREF**](/windows/desktop/gdi/colorref) que representa a cor da tela de fundo padrão atual.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,9 +45,9 @@ Retorna um valor [**COLORREF**](/windows/desktop/gdi/colorref) que representa a 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -55,7 +55,7 @@ Retorna um valor [**COLORREF**](/windows/desktop/gdi/colorref) que representa a 
 
 <dl> <dt>
 
-[**\_SETBKCOLOR RB**](rb-setbkcolor.md)
+[**RB \_ SETBKCOLOR**](rb-setbkcolor.md)
 </dt> </dl>
 
  

@@ -1,38 +1,38 @@
 ---
-description: 'Ao contrário da CryptoAPI (API de criptografia), a CNG (API de criptografia: próxima geração) separa os provedores criptográficos dos principais provedores de armazenamento.'
+description: 'Ao contrário da API de Criptografia (CryptoAPI), a API de Criptografia: CNG (Próxima Geração) separa os provedores criptográficos dos provedores de armazenamento de chaves.'
 ms.assetid: ce29bc97-049e-4c82-979f-4c805a318ba0
-title: Provedores de algoritmos criptográficos CNG
+title: Provedores de algoritmo criptográfico CNG
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2bc64926236157e581ce6406d95681bd8d4add14
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0fd98a7eb6fd159c54977cdf8b72ebffd747da48
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105748661"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122467072"
 ---
-# <a name="cng-cryptographic-algorithm-providers"></a>Provedores de algoritmos criptográficos CNG
+# <a name="cng-cryptographic-algorithm-providers"></a>Provedores de algoritmo criptográfico CNG
 
-Ao contrário da CryptoAPI (API de criptografia), a CNG (API de criptografia: próxima geração) separa os provedores criptográficos dos principais provedores de armazenamento. As operações básicas do algoritmo de criptografia, como hash e assinatura, são chamadas de operações primitivas ou simplesmente primitivos. A CNG inclui um provedor que implementa os seguintes algoritmos.
+Ao contrário da API de Criptografia (CryptoAPI), a API de Criptografia: CNG (Próxima Geração) separa os provedores criptográficos dos provedores de armazenamento de chaves. Operações básicas de algoritmo criptográfico, como hash e assinatura, são chamadas de operações primitivas ou simplesmente primitivos. O CNG inclui um provedor que implementa os algoritmos a seguir.
 
 -   [Algoritmos simétricos](#symmetric-algorithms)
 -   [Algoritmos assimétricos](#asymmetric-algorithms)
 -   [Algoritmos de hash](#hashing-algorithms)
--   [Algoritmos de troca de chaves](#key-exchange-algorithms)
+-   [Algoritmos Exchange chave](#key-exchange-algorithms)
 -   [Tópicos relacionados](#related-topics)
 
 ## <a name="symmetric-algorithms"></a>Algoritmos simétricos
 
 
 
-| Nome                                   | Modos com suporte                                                                                                                                                                                                 | Tamanho da chave em bits (padrão/mín/máx.) |
+| Nome                                   | Modos com suporte                                                                                                                                                                                                 | Tamanho da chave em bits (Default/Min/Max) |
 |----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------|
-| AES (criptografia AES)     | ECB, CBC, CFB8, CFB128, GCM, CCM, GMAC, CMAC, encapsulamento de chave AES, XTS<br/> **Windows 8:** O suporte para os modos CFB128 e CMAC começa.<br/> **Windows 10:** O suporte para o modo XTS-AES é iniciado.<br/> | 128/192/256                        |
-| DES (padrão de criptografia de dados)         | ECB, CBC, CFB8, CFB64<br/> **Windows 8:** O suporte para o modo CFB64 começa.<br/>                                                                                                                   | 56/56/56                           |
-| XORed padrão de criptografia de dados (DESX)   | ECB, CBC, CFB8, CFB64 <br/> **Windows 8:** O suporte para o modo CFB64 começa.<br/>                                                                                                                  | 192/192/192                        |
-| 3DES (padrão de criptografia de dados triplo) | ECB, CBC, CFB8, CFB64 <br/> **Windows 8:** O suporte para o modo CFB64 começa.<br/>                                                                                                                  | 112/168                            |
+| AES (criptografia AES)     | ECB, CBC, CFB8, CFB128, GCM, CCM, GMAC, CMAC, AES Key Wrap, XTS<br/> **Windows 8:** O suporte para os modos CFB128 e CMAC começa.<br/> **Windows 10:** O suporte para o modo XTS-AES começa.<br/> | 128/192/256                        |
+| DES (Data Encryption Standard)         | ECB, CBC, CFB8, CFB64<br/> **Windows 8:** O suporte para o modo CFB64 começa.<br/>                                                                                                                   | 56/56/56                           |
+| Data Encryption Standard XORed(DESX)   | ECB, CBC, CFB8, CFB64 <br/> **Windows 8:** O suporte para o modo CFB64 começa.<br/>                                                                                                                  | 192/192/192                        |
+| 3DES (Triple Data Encryption Standard) | ECB, CBC, CFB8, CFB64 <br/> **Windows 8:** O suporte para o modo CFB64 começa.<br/>                                                                                                                  | 112/168                            |
 | RSA Data Security 2 (RC2)              | Há suporte para os modos ECB, CBC, CFB8, CFB64.<br/> **Windows 8:** O suporte para o modo CFB64 começa.<br/>                                                                                              | 16 a 128 em incrementos de 8 bits      |
-| RC4 (RSA Data Security 4)              |                                                                                                                                                                                                                 | 8 a 512, em incrementos de 8 bits      |
+| RSA Data Security 4 (RC4)              |                                                                                                                                                                                                                 | 8 a 512, em incrementos de 8 bits      |
 
 
 
@@ -42,10 +42,10 @@ Ao contrário da CryptoAPI (API de criptografia), a CNG (API de criptografia: pr
 
 
 
-| Nome                              | Observações                                                                                                                                                                             | Tamanho da chave em bits (padrão/mín/máx.)                                                                            |
+| Nome                              | Observações                                                                                                                                                                             | Tamanho da chave em bits (Default/Min/Max)                                                                            |
 |-----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Algoritmo de assinatura digital (DSA) | A implementação está de acordo com o FIPS 186-3 para os tamanhos de chave entre 1024 e 3072 bits. <br/> A implementação está de acordo com o FIPS 186-2 para os tamanhos de chave de 512 a 1024 bits.<br/> | 512 a 3072, em incrementos de bits 64<br/> **Windows 8:** O suporte para a chave de 3072 bits começa.<br/> |
-| RSA                               | Inclui algoritmos RSA que usam PKCS1, codificação ou preenchimento da OAEP (preenchimento de criptografia assimétrica) ideal ou preenchimento de texto não criptografado do PSS (esquema de assinatura probabilística)               | 512 a 16384, em incrementos de bits 64                                                                            |
+| Algoritmo de Assinatura Digital (DSA) | A implementação está em conformidade com o FIPS 186-3 para tamanhos de chave entre 1024 e 3072 bits. <br/> A implementação está em conformidade com o FIPS 186-2 para tamanhos de chave de 512 a 1024 bits.<br/> | 512 a 3072, em incrementos de 64 bits<br/> **Windows 8:** O suporte para uma chave de 3072 bits começa.<br/> |
+| RSA                               | Inclui algoritmos RSA que usam PKCS1, codificação ou preenchimento de OAEP (Preenchimento de Criptografia Assimétrica Ideal) ou preenchimento de texto não criptografado do PSS (Esquema de Assinatura Probabilística)               | 512 a 16384, em incrementos de 64 bits                                                                            |
 
 
 
@@ -55,60 +55,31 @@ Ao contrário da CryptoAPI (API de criptografia), a CNG (API de criptografia: pr
 
 
 
-| Nome                               | Observações               | Tamanho da chave em bits (padrão/mín/máx.) |
+| Nome                               | Observações               | Tamanho da chave em bits (Default/Min/Max) |
 |------------------------------------|---------------------|------------------------------------|
 | Secure Hash Algorithm 1 (SHA1)     | Inclui HmacSha1   | 160/160/160                        |
 | Algoritmo de hash seguro 256 (SHA256) | Inclui HmacSha256 | 256/256/256                        |
 | Algoritmo de hash seguro 384 (SHA384) | Inclui HmacSha384 | 384/384/384                        |
 | Algoritmo de hash seguro 512 (SHA512) | Inclui HmacSha512 | 512/512/512                        |
-| Mensagem Digest 2 (MD2)             | Inclui HmacMd2    | 128/128/128                        |
-| Mensagem Digest 4 (MD4)             | Inclui HmacMd4    | 128/128/128                        |
+| Message Digest 2 (MD2)             | Inclui HmacMd2    | 128/128/128                        |
+| Message Digest 4 (MD4)             | Inclui HmacMd4    | 128/128/128                        |
 | Message Digest 5 (MD5)             | Inclui HmacMd5    | 128/128/128                        |
 
 
 
  
 
-## <a name="key-exchange-algorithms"></a>Algoritmos de troca de chaves
+## <a name="key-exchange-algorithms"></a>Algoritmos Exchange chave
 
 
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Nome do algoritmo</th>
-<th>Observações</th>
-<th>Tamanho da chave em bits (padrão/mín/máx.)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Algoritmo de troca de chave Diffie-Hellman</td>
 
-<td>512 a 4096, em incrementos de bits 64</td>
-</tr>
-<tr class="even">
-<td>Diffie-Hellman de curva elíptica (ECDH)</td>
-<td>Inclui curvas que usam chaves públicas 256, 384 e 521 bits, conforme especificado em SP800-56A.</td>
-<td>256/384/521</td>
-</tr>
-<tr class="odd">
-<td>ECDSA (algoritmo de assinatura digital de curva elíptica)</td>
-<td>Inclui curvas que usam chaves públicas 256, 384 e 521 bits, conforme especificado no FIPS 186-3.
-<blockquote>
-[!Note]<br />
-Para exibir todas as curvas elípticas nomeadas, use <strong>certutil displayEccCurve</strong>.
-</blockquote>
-<br/></td>
-<td>256/384/521</td>
-</tr>
-</tbody>
-</table>
+| Nome do algoritmo | Observações | Tamanho da chave em bits (Default/Min/Max) | 
+|----------------|-------|------------------------------------|
+| Diffie-Hellman algoritmo de Exchange chave | 512 a 4096, em incrementos de 64 bits | 
+| EcDH (Diffie-Hellman curva elíptica) | Inclui curvas que usam chaves públicas de 256, 384 e 521 bits, conforme especificado em SP800-56A. | 256/384/521 | 
+| Algoritmo de assinatura digital de curva elíptica (ECDSA) | Inclui curvas que usam chaves públicas de 256, 384 e 521 bits, conforme especificado em FIPS 186-3.<blockquote>[!Note]<br />Para exibir todas as curvas elípticas nomeadas, use <strong>certutil displayEccCurve.</strong></blockquote><br /> | 256/384/521 | 
+
 
 
 
@@ -121,7 +92,7 @@ Para exibir todas as curvas elípticas nomeadas, use <strong>certutil displayEcc
 [**Identificadores de algoritmo CNG**](/windows/desktop/SecCNG/cng-algorithm-identifiers)
 </dt> <dt>
 
-[Funções primitivas de criptografia CNG](/windows/desktop/SecCNG/cng-cryptographic-primitive-functions)
+[Funções primitivas criptográficas CNG](/windows/desktop/SecCNG/cng-cryptographic-primitive-functions)
 </dt> <dt>
 
 [Noções básicas sobre provedores criptográficos](understanding-cryptographic-providers.md)

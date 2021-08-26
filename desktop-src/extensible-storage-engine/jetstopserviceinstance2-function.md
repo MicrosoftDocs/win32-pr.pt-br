@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: função JetStopServiceInstance2'
+description: 'Saiba mais sobre: Função JetStopServiceInstance2'
 title: Função JetStopServiceInstance2
 TOCTitle: JetStopServiceInstance2 Function
 ms:assetid: ac021e13-ec83-42eb-9aef-a906d7a7ed39
@@ -19,21 +19,21 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5029e2cf45ec91d0282f32491895a24b32e6259e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3a28439932d9c0eb76675ed4e88d5595c64b5ace
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647344"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122470762"
 ---
 # <a name="jetstopserviceinstance2-function"></a>Função JetStopServiceInstance2
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
-A função **JetStopServiceInstance2** prepara uma instância antes da suspensão e prepara uma instância após a retomada. Suspender e retomar são Estados de execução do modelo de ciclo de vida do aplicativo da Windows Store.
+A **função JetStopServiceInstance2** prepara uma instância antes de Suspender e prepara uma instância após Retomar. Suspender e retomar são estados de execução do modelo de ciclo de vida do aplicativo Windows Store.
 
-A função **JetStopServiceInstance2** foi introduzida no Windows 8.
+A **função JetStopServiceInstance2** foi introduzida no Windows 8.
 
 ``` c++
 JET_ERR JET_API JetStopServiceInstance2(
@@ -44,112 +44,52 @@ JET_ERR JET_API JetStopServiceInstance2(
 
 ### <a name="parameters"></a>Parâmetros
 
-*cópia*
+*Instância*
 
-A instância de destino. O tipo de dados **JET_INSTANCE** é um identificador para a instância do banco de dado a ser usado para uma chamada para a API do Jet. Esse identificador é obtido quando você cria uma instância do banco de dados chamando as funções [JetCreateInstance](./jetcreateinstance-function.md), [JetCreateInstance2](./jetcreateinstance2-function.md), [JetInit](./jetinit-function.md)ou [JetInit2](./jetinit2-function.md) .
+A instância de destino. O **JET_INSTANCE** de dados é um identificador para a instância do banco de dados a ser usado para uma chamada à API jet. Esse handle é obtido quando você cria uma instância do banco de dados chamando as funções [JetCreateInstance](./jetcreateinstance-function.md), [JetCreateInstance2,](./jetcreateinstance2-function.md) [JetInit](./jetinit-function.md)ou [JetInit2.](./jetinit2-function.md)
 
 *grbit*
 
 Um grupo de bits que especifica um ou mais dos valores listados e definidos na tabela a seguir.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Valor</p></th>
-<th><p>Descrição</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_bitStopServiceAll</p></td>
-<td><p>Interrompe todos os serviços ESE (mecanismo de armazenamento extensível) para a instância especificada.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitStopServiceBackgroundUserTasks</p></td>
-<td><p>Interrompe tarefas de manutenção em segundo plano especificadas pelo cliente reiniciáveis (desfragmentação da árvore B +, por exemplo).</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_bitStopServiceQuiesceCaches</p></td>
-<td><p>Quiesces todos os caches sujos em disco. Esse valor é assíncrono e pode ser cancelado.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitStopServiceResume</p></td>
-<td><p>Retoma as operações StopService emitidas anteriormente; ou seja, ele reinicia o serviço. Esse valor pode ser combinado com o parâmetro <em>grbits</em> para retomar serviços específicos ou com JET_bitStopServiceAll para retomar todos os serviços interrompidos anteriormente. Esse bit só pode ser usado para retomar StopServiceBackgroundUserTasks e JET_bitStopServiceQuiesceCaches. Se você tiver chamado anteriormente com JET_bitStopServiceAll, uma tentativa de usar JET_bitStopServiceResume falhará. Se a segunda etapa de retomada não for chamada, o aplicativo causará degradação do desempenho. Nessa situação, o ponto de verificação é mantido em zero.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Valor</p> | <p>Descrição</p> | 
+|--------------|--------------------|
+| <p>JET_bitStopServiceAll</p> | <p>Interrompe todos os serviços ESE (Extensible Armazenamento Engine) para a instância especificada.</p> | 
+| <p>JET_bitStopServiceBackgroundUserTasks</p> | <p>Interrompe tarefas de manutenção em segundo plano especificadas pelo cliente reiniciáveis (Desfragmentação de Árvore B+, por exemplo).</p> | 
+| <p>JET_bitStopServiceQuiesceCaches</p> | <p>Acumula todos os caches sujos no disco. Esse valor é assíncrono e pode ser cancelado.</p> | 
+| <p>JET_bitStopServiceResume</p> | <p>Retoma as operações StopService emitidas anteriormente; ou seja, ele reinicia o serviço. Esse valor pode ser combinado com o <em>parâmetro grbits</em> para retomar serviços específicos ou com JET_bitStopServiceAll para Retomar todos os serviços interrompidos anteriormente. Esse bit só pode ser usado para retomar StopServiceBackgroundUserTasks e JET_bitStopServiceQuiesceCaches. Se você tiver chamado anteriormente com JET_bitStopServiceAll, uma tentativa de usar JET_bitStopServiceResume falhará. Se a segunda etapa de retomada não for chamada, o aplicativo terá o desempenho degradado. Nessa situação, o ponto de verificação é mantido em zero.</p> | 
 
 
-### <a name="return-value"></a>Retornar valor
 
-Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. Para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
+### <a name="return-value"></a>Valor retornado
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Código de retorno</p></th>
-<th><p>Descrição</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>A operação foi concluída com sucesso.</p></td>
-</tr>
-</tbody>
-</table>
+Essa função retorna o [tipo JET_ERR](./jet-err.md) dados com um dos códigos de retorno a seguir. Para obter mais informações sobre os possíveis erros de ESE, consulte [Extensible Armazenamento Engine Errors](./extensible-storage-engine-errors.md) and [Error Handling Parameters](./error-handling-parameters.md).
+
+
+| <p>Código de retorno</p> | <p>Descrição</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>A operação foi concluída com sucesso.</p> | 
+
 
 
 #### <a name="remarks"></a>Comentários
 
-Essa função permite que um aplicativo JET mova o cache do banco de dados para um estado limpo ou quase limpo (com o sistema operacional ocioso de e/s), de modo que, se o aplicativo fosse encerrado, a recuperação seria rápida. Essa abordagem é preferida sobre o JET de terminação chamando as funções [JetTerm](./jetterm-function.md) ou [JetDetachDatabase](./jetdetachdatabase-function.md) , de modo que, no cenário mais comum, o aplicativo seja simplesmente dessuspenso e, posteriormente, o aplicativo tenha todo o cache e esteja pronto para ser o mais rápido possível.
+Essa função permite que um aplicativo JET mova o cache do banco de dados para um estado limpo ou quase limpo (com a E/S do sistema operacional ociosa), de modo que, se o aplicativo fosse encerrado, a recuperação seria rápida. Essa abordagem é preferencial em vez de encerrar o JET chamando as funções [JetTerm](./jetterm-function.md) ou [JetDetachDatabase,](./jetdetachdatabase-function.md) para que, no cenário mais comum, o aplicativo seja apenas não aberto e, posteriormente, o aplicativo tenha todo o cache e esteja pronto para começar assim que possível.
 
-Se essa função for realizada com sucesso, ela prepara o cache do banco de dados para uma suspensão iminente. Essa função enfileira trabalhos em um thread de trabalho em segundo plano e retorna ao chamador imediatamente. A função deve ser chamada com base no VisibilityNotice de PLM em vez de chamar do manipulador de eventos de suspensão do aplicativo para garantir que o JET tenha tempo para liberar buffers sujos antes de o PLM suspender/encerrar o processo. Internamente, o JET dispara um despacho imediato da manutenção do ponto de verificação após a alteração da configuração (ou seja, a atualização do ponto de verificação ou esse novo bit de cache). Para obter mais informações sobre eventos VisibilityNotice, consulte [classe VisibilityChangedEventArgs](/uwp/api/windows.ui.core.visibilitychangedeventargs).
+Se essa função for bem-sucedida, ela preparará o cache do banco de dados para uma suspensão iminente. Essas filas de função funcionam para um thread de trabalho em segundo plano e retornam ao chamador imediatamente. A função deve ser chamada com base na VisibilityNotice do PLM em vez de chamar do manipulador de eventos de suspensão do aplicativo para garantir que o JET tenha tempo para liberar buffers sujos antes que o PLM suspenda/finaliza o processo. Internamente, o JET dispara uma expedição imediata da manutenção do ponto de verificação após a alteração da configuração (atualização do ponto de verificação ou esse novo bit de caches de quiesce). Para obter mais informações sobre eventos VisibilityNotice, consulte [Classe VisibilityChangedEventArgs](/uwp/api/windows.ui.core.visibilitychangedeventargs).
 
-Essa função deve ser chamada duas vezes. Ele é chamado depois que o aplicativo recebe o aviso de suspensão do sistema operacional, mas antes de o aplicativo ser suspenso. Em seguida, ele é chamado novamente depois que o sistema operacional retoma o aplicativo. Por exemplo:
+Essa função deve ser chamada duas vezes. Ele é chamado depois que o aplicativo recebe o aviso de suspensão do sistema operacional, mas antes que o aplicativo seja suspenso. Em seguida, ele é chamado novamente depois que o sistema operacional retoma o aplicativo. Por exemplo:
 
-Quando chamado para suspender: JET_ERR JET_API JetStopServiceInstance2 (instância, JET_bitStopServiceQuiesceCaches);
+Quando chamado para Suspender: JET_ERR JET_API JetStopServiceInstance2( instância, JET_bitStopServiceQuiesceCaches);
 
-Quando retomado: JET_ERR JET_API JetStopServiceInstance2 (instância, JET_bitStopServiceQuiesceCaches | JET_bitStopServiceResume);
+Quando retomado: JET_ERR JET_API JetStopServiceInstance2( instância, JET_bitStopServiceQuiesceCaches| JET_bitStopServiceResume );
 
 #### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows 8.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2012.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Biblioteca</strong></p></td>
-<td><p>Use ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Requer ESENT.dll.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requer Windows 8.</p> | | <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2012.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | | <p><strong>Biblioteca</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | 
+
 
 
 #### <a name="see-also"></a>Confira também

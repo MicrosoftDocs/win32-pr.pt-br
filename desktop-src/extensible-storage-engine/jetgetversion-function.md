@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: função JetGetVersion'
+description: 'Saiba mais sobre: Função JetGetVersion'
 title: Função JetGetVersion
 TOCTitle: JetGetVersion Function
 ms:assetid: f25c3639-ae2b-4357-9947-563ef3df72c6
@@ -18,21 +18,21 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 38128358d814ea85cf087c270a65a3fada976e7c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f4157b52d05716b00645bd7815c54e802bb55417
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171621"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122474492"
 ---
 # <a name="jetgetversion-function"></a>Função JetGetVersion
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jetgetversion-function"></a>Função JetGetVersion
 
-A função **JetGetVersion** recupera a versão do mecanismo de banco de dados.
+A **função JetGetVersion** recupera a versão do mecanismo de banco de dados.
 
 ```cpp
     JET_ERR JET_API JetGetVersion(
@@ -45,7 +45,7 @@ A função **JetGetVersion** recupera a versão do mecanismo de banco de dados.
 
 *sesid*
 
-A sessão a ser usada para esta chamada.
+A sessão a ser usada para essa chamada.
 
 *pwVersion*
 
@@ -53,67 +53,29 @@ Um ponteiro para o número de versão do mecanismo de banco de dados.
 
 ### <a name="return-value"></a>Valor Retornado
 
-Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. Para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
-
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Código de retorno</p></th>
-<th><p>Descrição</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>A operação foi concluída com sucesso.</p></td>
-</tr>
-</tbody>
-</table>
+Essa função retorna o [JET_ERR](./jet-err.md) de dados com um dos códigos de retorno a seguir. Para obter mais informações sobre os possíveis erros de ESE, consulte [Extensible Armazenamento Engine Errors](./extensible-storage-engine-errors.md) and [Error Handling Parameters](./error-handling-parameters.md).
 
 
-Se essa função for realizada com sucesso, a versão do mecanismo de banco de dados será recuperada.
+| <p>Código de retorno</p> | <p>Descrição</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>A operação foi concluída com sucesso.</p> | 
+
+
+
+Se essa função for bem-sucedida, a versão do mecanismo de banco de dados será recuperada.
 
 Não há modos de falha conhecidos.
 
 #### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista, o Windows XP ou o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008, o Windows Server 2003 ou o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Biblioteca</strong></p></td>
-<td><p>Use ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Requer ESENT.dll.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | | <p><strong>Biblioteca</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | 
+
 
 
 #### <a name="see-also"></a>Consulte Também
 
-[Parâmetros de tratamento de erros](./error-handling-parameters.md)  
-[Erros do mecanismo de armazenamento extensível](./extensible-storage-engine-errors.md)  
+[Parâmetros de tratamento de erro](./error-handling-parameters.md)  
+[Erros extensíveis Armazenamento mecanismo](./extensible-storage-engine-errors.md)  
 [JET_ERR](./jet-err.md)  
 [JET_SESID](./jet-sesid.md)

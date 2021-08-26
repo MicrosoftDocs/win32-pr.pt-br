@@ -1,34 +1,34 @@
 ---
-description: O roamApplicabilityType descreve as condições de roaming para as quais um perfil móvel se aplica.
+description: O roamApplicabilityType descreve as condições de roaming às quais um perfil de roaming se aplica.
 MS-HAID: WWAN\_profile\_v4.simpleType\_roamApplicabilityType
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: Tipo simples de roamApplicabilityType
+title: Tipo simples roamApplicabilityType
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 95d81214ab5a44dcac60bb5e1a6accc81b0d0418
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2c2ce8f24e0987d5e8463838b33d4f2f2cf859da
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827082"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122474752"
 ---
-# <a name="span-idwwan_profile_v4simpletype_roamapplicabilitytypespanroamapplicabilitytype-simple-type"></a><span id="WWAN_profile_v4.simpleType_roamApplicabilityType"></span>Tipo simples de roamApplicabilityType
+# <a name="span-idwwan_profile_v4simpletype_roamapplicabilitytypespanroamapplicabilitytype-simple-type"></a><span id="WWAN_profile_v4.simpleType_roamApplicabilityType"></span>Tipo simples roamApplicabilityType
 
-O roamApplicabilityType descreve as condições de roaming para as quais um perfil móvel se aplica.
+O roamApplicabilityType descreve as condições de roaming às quais um perfil de roaming se aplica.
 
-Esse é um atributo mais expressivo do que [**roamControlType**](simpletype-roamcontroltype.md), e um perfil deve usar **roamControlType** ou **roamApplicabilityType**, mas não ambos. (Se um perfil usar ambos, ambos serão aplicados. O resultado é a interseção dos dois.)
+Esse é um atributo mais expressiva do [**que roamControlType**](simpletype-roamcontroltype.md)e um perfil deve usar **roamControlType** ou **roamApplicabilityType**, mas não ambos. (Se um perfil usar ambos, ambos serão aplicados. O resultado é a interseção dos dois.)
 
-Use esse atributo para diferenciar entre vários perfis com condições de roaming não associadas, para especificar diferentes atributos de perfil para, por exemplo, Home versus roaming.
+Use esse atributo para diferenciar entre vários perfis com condições de roaming diferentes, para especificar atributos de perfil diferentes para, por exemplo, home versus roaming.
 
-Há três Estados de registro iniciais/móveis possíveis:
+Há três possíveis estados de registro em casa/roam:
 
--   Página inicial: registrado na rede doméstica
--   Parceiro: registrado em uma rede afiliada de forma bem associada à rede doméstica
--   Não parceiro: registrado em uma rede que não está fortemente afiliada com a rede doméstica
+-   Página Base: registrada na rede base
+-   Parceiro: registrado em uma rede estreitamente afiliado à rede base
+-   Não parceiro: registrado em uma rede que não é estreitamente afiliado à rede base
 
-O significado preciso de "parceiro" varia de acordo com a rede, mas representa uma relação mais próxima com taxas mais favoráveis do que um não parceiro. Esse pode ser o caso se um operador com base em regiões tiver uma organização de negócios para usar a rede de acesso de rádio de outra operadora fora de sua área inicial. Ele também pode representar a diferença entre o roaming em uma região (por exemplo, a UE) e fora dele.
+O significado preciso de "parceiro" varia com base na rede, mas representa uma relação mais próxima com taxas mais favoráveis do que um não parceiro. Esse pode ser o caso se um operador baseado regionalmente tiver uma disposição comercial para usar a rede de acesso de rádio de outro operador fora de sua área base. Ele também pode representar a diferença entre roaming em uma região (por exemplo, UE) e fora dela.
 
 ``` syntax
 <xs:simpleType name="roamApplicabilityType">
@@ -59,46 +59,18 @@ O significado preciso de "parceiro" varia de acordo com a rede, mas representa u
 
 ## <a name="enumeration-values"></a>Valores de enumeração
 
-O tipo simples **roamApplicabilityType** define os valores a seguir.
+O **tipo simples roamApplicabilityType** define os valores a seguir.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Valor</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>NonPartnerOnly</td>
-<td><p>Este perfil é usado somente quando estiver em roaming em uma rede que não seja de parceiro</p></td>
-</tr>
-<tr class="even">
-<td>PartnerOnly</td>
-<td><p>Este perfil é usado somente quando estiver em roaming em uma rede de parceiros</p></td>
-</tr>
-<tr class="odd">
-<td>HomeOnly</td>
-<td><p>Este perfil é usado somente quando estiver na rede doméstica</p></td>
-</tr>
-<tr class="even">
-<td>HomeAndPartner</td>
-<td><p>Este perfil é usado somente quando em casa ou em uma rede de parceiros</p></td>
-</tr>
-<tr class="odd">
-<td>PartnerAndNonpartner</td>
-<td><p>Este perfil é usado quando não está em casa (roaming em qualquer rede)</p></td>
-</tr>
-<tr class="even">
-<td>Em roaming</td>
-<td><p>Este perfil é usado em todas as redes</p></td>
-</tr>
-</tbody>
-</table>
+
+| Valor | Descrição | 
+|-------|-------------|
+| NonPartnerOnly | <p>Esse perfil é usado somente ao fazer roaming em uma rede não parceira</p> | 
+| PartnerOnly | <p>Esse perfil é usado somente ao fazer roaming em uma rede de parceiros</p> | 
+| HomeOnly | <p>Esse perfil é usado somente quando está na rede base</p> | 
+| HomeAndPartner | <p>Esse perfil é usado somente quando está em casa ou em uma rede de parceiros</p> | 
+| PartnerAndNonpartner | <p>Esse perfil é usado quando não está em casa (roaming em qualquer rede)</p> | 
+| AllRoaming | <p>Esse perfil é usado em todas as redes</p> | 
+
 
  
 

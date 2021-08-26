@@ -1,7 +1,7 @@
 ---
-description: Função D3DXVec2TransformCoord (D3dx9math. h) – transforma um vetor 2D por uma determinada matriz, projetando o resultado de volta em w = 1.
+description: Função D3DXVec2TransformCoord (D3dx9math.h) – transforma um vetor 2D por uma determinada matriz, projetando o resultado de volta em w = 1.
 ms.assetid: 0c0efdf8-77df-4f4a-86ce-89e11555f4dc
-title: Função D3DXVec2TransformCoord (D3dx9math. h)
+title: Função D3DXVec2TransformCoord (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 717af9eed2c7cedae7ac292a19239e13521dfa74
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: fa9d36b43cd86ceeb6b3fc9982d22e2cb1a75dd92f819f5c2eeb05835073e285
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115664"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120096096"
 ---
-# <a name="d3dxvec2transformcoord-function-d3dx9mathh"></a>Função D3DXVec2TransformCoord (D3dx9math. h)
+# <a name="d3dxvec2transformcoord-function-d3dx9mathh"></a>Função D3DXVec2TransformCoord (D3dx9math.h)
 
 Transforma um vetor 2D por uma determinada matriz, projetando o resultado de volta em w = 1.
 
@@ -42,30 +42,30 @@ D3DXVECTOR2* D3DXVec2TransformCoord(
 
 <dl> <dt>
 
-*pout* \[ entrada, saída\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR2**](d3dxvector2.md)\***
 
-Ponteiro para a estrutura [**D3DXVECTOR2**](d3dxvector2.md) que é o resultado da operação.
+Ponteiro para a [**estrutura D3DXVECTOR2**](d3dxvector2.md) que é o resultado da operação.
 
 </dd> <dt>
 
-*VP* \[ no\]
+*pV* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR2**](d3dxvector2.md) \***
 
-Ponteiro para a estrutura de [**D3DXVECTOR2**](d3dxvector2.md) de origem.
+Ponteiro para a estrutura [**D3DXVECTOR2 de**](d3dxvector2.md) origem.
 
 </dd> <dt>
 
-*PM* \[ no\]
+*pM* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Ponteiro para a estrutura de [**D3DXMATRIX**](d3dxmatrix.md) de origem.
+Ponteiro para a estrutura [**D3DXMATRIX de origem.**](d3dxmatrix.md)
 
 </dd> </dl>
 
@@ -73,13 +73,13 @@ Ponteiro para a estrutura de [**D3DXMATRIX**](d3dxmatrix.md) de origem.
 
 Tipo: **[ **D3DXVECTOR2**](d3dxvector2.md)\***
 
-Ponteiro para uma estrutura [**D3DXVECTOR2**](d3dxvector2.md) que é o vetor transformado.
+Ponteiro para uma [**estrutura D3DXVECTOR2**](d3dxvector2.md) que é o vetor transformado.
 
 ## <a name="remarks"></a>Comentários
 
-Essa função transforma o vetor, *VP* (x, y, 0, 1), pela matriz, *PM*, projetando o resultado de volta em w = 1.
+Essa função transforma o vetor, *pV* (x, y, 0, 1), pela matriz, *pM*, projetando o resultado de volta em w=1.
 
-O valor de retorno para essa função é o mesmo valor retornado no parâmetro *pout* . Dessa forma, a função **D3DXVec2TransformCoord** pode ser usada como um parâmetro para outra função.
+O valor retornado para essa função é o mesmo valor retornado no *parâmetro pOut.* Dessa forma, a **função D3DXVec2TransformCoord** pode ser usada como um parâmetro para outra função.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -87,12 +87,12 @@ O valor de retorno para essa função é o mesmo valor retornado no parâmetro *
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
