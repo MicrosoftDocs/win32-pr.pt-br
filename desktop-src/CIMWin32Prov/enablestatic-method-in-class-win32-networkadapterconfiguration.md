@@ -1,8 +1,8 @@
 ---
-description: O método de classe WMI EnableStatic permite endereçamento TCP/IP estático para o adaptador de rede de destino. Como resultado, o DHCP para esse adaptador de rede está desabilitado.
+description: O método de classe WMI EnableStatic habilita o endereçamento TCP/IP estático para o adaptador de rede de destino. Como resultado, o DHCP para esse adaptador de rede está desabilitado.
 ms.assetid: d0076424-58c0-4cfe-b55b-44c0f2620388
 ms.tgt_platform: multiple
-title: Método EnableStatic da classe Win32_NetworkAdapterConfiguration
+title: Método EnableStatic da Win32_NetworkAdapterConfiguration classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 74a7b9ca8c8016cca5a78f2e7fe753f00398193e
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 03d2c7214f9cfb89b8efcb612f3bc07840448ff0eaf1b064556d2797b74d4822
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646310"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119918416"
 ---
-# <a name="enablestatic-method-of-the-win32_networkadapterconfiguration-class"></a>Método EnableStatic da classe Win32 \_ NetworkAdapterConfiguration
+# <a name="enablestatic-method-of-the-win32_networkadapterconfiguration-class"></a>Método EnableStatic da classe \_ NetworkAdapterConfiguration do Win32
 
-O método de [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **EnableStatic** permite endereçamento TCP/IP estático para o adaptador de rede de destino. Como resultado, o DHCP para esse adaptador de rede está desabilitado.
+O método de [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **EnableStatic** habilita o endereçamento TCP/IP estático para o adaptador de rede de destino. Como resultado, o DHCP para esse adaptador de rede está desabilitado.
 
-Este tópico usa a sintaxe formato MOF (MOF). Para obter mais informações sobre como usar esse método, consulte [chamando um método](/windows/desktop/WmiSdk/calling-a-method).
+Este tópico usa sintaxe Managed Object Format (MOF). Para obter mais informações sobre como usar esse método, consulte [Chamando um método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,7 +43,7 @@ uint32 EnableStatic(
 
 <dl> <dt>
 
-*IPAddress* \[ no\]
+*IPAddress* \[ Em\]
 </dt> <dd>
 
 Lista todos os endereços IP estáticos para o adaptador de rede atual.
@@ -52,18 +52,18 @@ Exemplo: 155.34.22.0.
 
 </dd> <dt>
 
-*Submáscara de rede* \[ no\]
+*SubnetMask* \[ Em\]
 </dt> <dd>
 
-Máscaras de sub-rede que complementam os valores no parâmetro *IPAddress* .
+Máscaras de sub-rede que complementam os valores no *parâmetro IPAddress.*
 
 Exemplo: 255.255.0.0.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor de 0 (zero) para uma conclusão bem-sucedida quando uma reinicialização não é necessária, 1 (uma) para uma conclusão bem-sucedida quando uma reinicialização é necessária e qualquer outro número se houver um erro. Para obter mais informações sobre códigos de erro, consulte [**WMI Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) or [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obter valores gerais de **HRESULT** , consulte [códigos de erro do sistema](/windows/desktop/Debug/system-error-codes).
+Retorna um valor de 0 (zero) para uma conclusão bem-sucedida quando uma reinicialização não é necessária, 1 (um) para uma conclusão bem-sucedida quando uma reinicialização é necessária e qualquer outro número se houver um erro. Para obter mais informações sobre códigos de erro, consulte [**Constantes de erro WMI**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para valores **gerais de HRESULT,** consulte [Códigos de erro do sistema.](/windows/desktop/Debug/system-error-codes)
 
 <dl> <dt>
 
@@ -72,7 +72,7 @@ Retorna um valor de 0 (zero) para uma conclusão bem-sucedida quando uma reinici
 
 0
 
-Conclusão bem-sucedida, nenhuma reinicialização necessária.
+Conclusão bem-sucedida, sem necessidade de reinicialização.
 
 </dd> <dt>
 
@@ -90,7 +90,7 @@ Conclusão bem-sucedida, reinicialização necessária.
 
 64
 
-Método sem suporte nesta plataforma.
+Não há suporte para o método nesta plataforma.
 
 </dd> <dt>
 
@@ -112,7 +112,7 @@ Máscara de sub-rede inválida.
 
 </dd> <dt>
 
-**Ocorreu um erro ao processar uma instância que foi retornada**
+**Ocorreu um erro ao processar uma Instância que foi retornada**
 </dt> <dd>
 
 67
@@ -148,7 +148,7 @@ Endereço IP inválido.
 
 </dd> <dt>
 
-**Endereço IP de gateway inválido**
+**Endereço IP do gateway inválido**
 </dt> <dd>
 
 71
@@ -157,12 +157,12 @@ Endereço IP do gateway inválido.
 
 </dd> <dt>
 
-**Ocorreu um erro ao acessar o registro para as informações solicitadas**
+**Ocorreu um erro ao acessar o Registro para as informações solicitadas**
 </dt> <dd>
 
 72
 
-Ocorreu um erro ao acessar o registro para obter as informações solicitadas.
+Ocorreu um erro ao acessar o Registro para as informações solicitadas.
 
 </dd> <dt>
 
@@ -202,12 +202,12 @@ Arquivo inválido.
 
 </dd> <dt>
 
-**Caminho de sistema inválido**
+**Caminho do sistema inválido**
 </dt> <dd>
 
 77
 
-Caminho de sistema inválido.
+Caminho do sistema inválido.
 
 </dd> <dt>
 
@@ -247,21 +247,21 @@ Não é possível configurar o serviço DHCP. Para obter mais informações, con
 
 </dd> <dt>
 
-**Não é possível renovar a concessão DHCP**
+**Não é possível renovar a concessão de DHCP**
 </dt> <dd>
 
 82
 
-Não é possível renovar a concessão DHCP.
+Não é possível renovar a concessão de DHCP.
 
 </dd> <dt>
 
-**Não é possível liberar a concessão DHCP**
+**Não é possível liberar a concessão de DHCP**
 </dt> <dd>
 
 83
 
-Não é possível liberar a concessão DHCP.
+Não é possível liberar a concessão de DHCP.
 
 </dd> <dt>
 
@@ -270,7 +270,7 @@ Não é possível liberar a concessão DHCP.
 
 84
 
-O IP não está habilitado no adaptador.
+IP não habilitado no adaptador.
 
 </dd> <dt>
 
@@ -288,7 +288,7 @@ IPX não habilitado no adaptador.
 
 86
 
-Erro de limites de número de rede ou quadro.
+Erro de limites de quadro ou número de rede.
 
 </dd> <dt>
 
@@ -333,7 +333,7 @@ Parâmetro fora dos limites.
 
 91
 
-Acesso negado.
+Acesso negado
 
 </dd> <dt>
 
@@ -391,7 +391,7 @@ Interface não configurável.
 
 </dd> <dt>
 
-**Nem todas as concessões DHCP puderam ser liberadas/renovadas**
+**Nem todas as concessões DHCP podem ser liberadas/renovadas**
 </dt> <dd>
 
 98
@@ -405,14 +405,14 @@ Nem todas as concessões DHCP podem ser liberadas ou renovadas.
 
 100
 
-DHCP não habilitado no adaptador.
+O DHCP não está habilitado no adaptador.
 
 </dd> <dt>
 
 **2147786788**
 </dt> <dd>
 
-Bloqueio de gravação não habilitado. Para obter mais informações, consulte [**INetCfgLock:: AcquireWriteLock**](/previous-versions/windows/hardware/network/ff547914(v=vs.85)).
+Bloqueio de gravação não habilitado. Para obter mais informações, [**consulte INetCfgLock::AcquireWriteLock**](/previous-versions/windows/hardware/network/ff547914(v=vs.85)).
 
 </dd> <dt>
 
@@ -425,20 +425,20 @@ Bloqueio de gravação não habilitado. Para obter mais informações, consulte 
 
 ## <a name="remarks"></a>Comentários
 
-Ao usar o **EnableStatic** para alterar o endereço IP do computador remoto, ao ser conectado por meio desse adaptador, você provavelmente perderá a conexão com o computador remoto e receberá uma mensagem de erro de RPC não disponível. (no entanto, as configurações são alteradas). Para evitar esse cenário, considere alterar o gateway e/ou as configurações de DNS antes de definir o endereço IP do adaptador.
+Ao usar **EnableStatic** para alterar o endereço IP do computador remoto, enquanto estiver conectado por meio desse adaptador, você provavelmente perderá a conexão com o computador remoto e receberá uma mensagem de erro RPC não disponível. (no entanto, as configurações são alteradas). Para evitar esse cenário, considere alterar as configurações de Gateway e/ou DNS antes de definir o endereço IP do adaptador.
 
-Ao usar **EnableStatic** para dar um adaptador a uma configuração de IP estático, a função retorna um "81-não é possível configurar o serviço DHCP" se o adaptador já estiver configurado com um endereço estático. No entanto, a função ainda terá sucesso na configuração com a nova operação.
+Ao usar **EnableStatic** para dar a um adaptador uma configuração de IP estático, a função retornará um "81 – Não é possível configurar o serviço DHCP" se o adaptador já estiver configurado com um endereço estático. No entanto, a função ainda tem êxito na configuração com a nova operação.
 
 ## <a name="examples"></a>Exemplos
 
-O [IP estático e, em seguida, ingressar em um](https://Gallery.TechNet.Microsoft.Com/Static-IP-and-then-join-to-130d4b8a) exemplo de código do PowerShell de domínio, na galeria do TechNet, usa **EnableStatic** para adicionar um IP estático a um computador local.
+O [IP estático e,](https://Gallery.TechNet.Microsoft.Com/Static-IP-and-then-join-to-130d4b8a) em seguida, ingressar em um exemplo de código do PowerShell de domínio, na Galeria do TechNet, usa **EnableStatic** para adicionar um IP estático a um computador local.
 
-O exemplo de código do VBScript [atribuir um endereço IP estático](https://Gallery.TechNet.Microsoft.Com/8979c752-8288-4a18-b5ed-f3b79f013f4a) , na galeria do TechNet, usa **EnableStatic** para definir o endereço IP de um computador.
+O [exemplo de código](https://Gallery.TechNet.Microsoft.Com/8979c752-8288-4a18-b5ed-f3b79f013f4a) Atribuir um endereço IP estático VBScript, na Galeria do TechNet, usa **EnableStatic** para definir o endereço IP de um computador.
 
-O exemplo de VBScript a seguir demonstra como desabilitar o uso do DHCP em uma instância do [**Win32 \_ NetworkAdapterConfiguration**](win32-networkadapterconfiguration.md). Nesse caso, especificamos o adaptador com um índice de 0. O índice correto deve ser selecionado em instâncias do Win32 \_ adaptador para outras interfaces.
+O exemplo de VBScript a seguir demonstra como desabilitar o uso de DHCP em uma instância do [**\_ NetworkAdapterConfiguration do Win32.**](win32-networkadapterconfiguration.md) Nesse caso, especificamos o adaptador com um Índice de 0. O índice correto deve ser selecionado nas instâncias do Win32 \_ NetworkAdapter para outras interfaces.
 
 > [!Note]  
-> Esse script se aplica somente a sistemas baseados em NT altere as IPADDR e as variáveis de sub-rede abaixo para os valores que você deseja aplicar ao adaptador.
+> Esse script só se aplica a sistemas baseados em NT Altere as variáveis de ipaddr e sub-rede abaixo para os valores que você deseja aplicar ao adaptador.
 
  
 
@@ -461,10 +461,10 @@ end if
 
 
 
-O exemplo do Perl a seguir demonstra como desabilitar o uso do DHCP em uma instância do [**Win32 \_ NetworkAdapterConfiguration**](win32-networkadapterconfiguration.md). Nesse caso, especificamos o adaptador com um índice de 0. O índice correto deve ser selecionado em instâncias do Win32 \_ adaptador para outras interfaces.
+O exemplo de Perl a seguir demonstra como desabilitar o uso de DHCP em uma instância do [**\_ NetworkAdapterConfiguration do Win32.**](win32-networkadapterconfiguration.md) Nesse caso, especificamos o adaptador com um Índice de 0. O índice correto deve ser selecionado nas instâncias do Win32 \_ NetworkAdapter para outras interfaces.
 
 > [!Note]  
-> Esse script se aplica somente a sistemas baseados em NT altere as IPADDR e as variáveis de sub-rede abaixo para os valores que você deseja aplicar ao adaptador.
+> Esse script só se aplica a sistemas baseados em NT Altere as variáveis de ipaddr e sub-rede abaixo para os valores que você deseja aplicar ao adaptador.
 
  
 
@@ -509,8 +509,8 @@ else
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -522,13 +522,13 @@ else
 [Classes de hardware do sistema de computador](computer-system-hardware-classes.md)
 </dt> <dt>
 
-[**\_NetworkAdapterConfiguration Win32**](win32-networkadapterconfiguration.md)
+[**Win32 \_ NetworkAdapterConfiguration**](win32-networkadapterconfiguration.md)
 </dt> <dt>
 
-[Tarefas do WMI: rede](/windows/desktop/WmiSdk/wmi-tasks--networking)
+[Tarefas WMI: Rede](/windows/desktop/WmiSdk/wmi-tasks--networking)
 </dt> <dt>
 
-[Tarefas do WMI: contas e domínios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
+[Tarefas WMI: contas e domínios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
 </dt> <dt>
 
 [Suporte a IPv6 e IPv4 no WMI](/windows/desktop/WmiSdk/ipv6-and-ipv4-support-in-wmi)

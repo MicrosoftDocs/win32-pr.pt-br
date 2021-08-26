@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Qedit.h
-ms.openlocfilehash: 64647cbcbcc836c400890fb173a29c76f8723029
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 2686c64b3251616ac8cefbe81a77282e5b1a7c6847ef965b6361759118b74756
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107908804"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120050876"
 ---
 # <a name="null-renderer-filter"></a>Filtro de renderizador nulo
 
@@ -31,7 +31,7 @@ O filtro de renderizador nulo é um renderizador que descarta todas as amostras 
 
 
 
-| Label | Valor |
+| Rótulo | Valor |
 |------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
 | Filtrar interfaces                        | [**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter), [**IMediaPosition**](/windows/desktop/api/Control/nn-control-imediaposition), [**IMediaSeeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking) |
 | Tipos de mídia de pino de entrada                    | Qualquer tipo de mídia                                                                                                       |
@@ -52,7 +52,7 @@ O filtro de renderizador nulo é um renderizador que descarta todas as amostras 
 
 Use esse filtro quando um pino de saída no grafo exigir uma conexão downstream, mas você não quiser renderizar os dados desse PIN. Conectando o pino de saída ao renderizador NULL, você conclui a conexão sem renderizar os dados.
 
-Embora esse filtro não processe nenhum exemplo, ele aguarda o tempo de apresentação de cada amostra antes de descartar o exemplo. Portanto, o grafo será executado com a taxa normal. Se você quiser que o grafo seja executado o mais rapidamente possível, defina o relógio de referência como **nulo**. Para obter mais informações, consulte [definindo o relógio do grafo](setting-the-graph-clock.md).
+Embora esse filtro não processe nenhum exemplo, ele aguarda o tempo de apresentação de cada amostra antes de descartar o exemplo. Portanto, o grafo será executado com a taxa normal. Se você quiser que o grafo seja executado o mais rapidamente possível, defina o relógio de referência como **nulo**. para obter mais informações, consulte [definindo o relógio de Graph](setting-the-graph-clock.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,7 +68,7 @@ Embora esse filtro não processe nenhum exemplo, ele aguarda o tempo de apresent
 
 <dl> <dt>
 
-[Objetos de serviços de edição do DirectShow](directshow-editing-services-objects.md)
+[DirectShow Editando objetos de serviços](directshow-editing-services-objects.md)
 </dt> </dl>
 
  

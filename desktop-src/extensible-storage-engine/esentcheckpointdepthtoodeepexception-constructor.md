@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d8653662a3ea4500a878009506f2518b10bcf370
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6bca4a1ebb4e4a8697b1dbcab9e9d38519c601fa3e5efaf99f4498c3138fdafc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297056"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120021146"
 ---
 # <a name="esentcheckpointdepthtoodeepexception-constructor"></a>Construtor EsentCheckpointDepthTooDeepException
 
 Inicializa uma nova instância da classe EsentCheckpointDepthTooDeepException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentCheckpointDepthTooDeepException()
 
 [Classe EsentCheckpointDepthTooDeepException](./esentcheckpointdepthtoodeepexception-class.md)
 
-[Membros do EsentCheckpointDepthTooDeepException](./esentcheckpointdepthtoodeepexception-members.md)
+[Membros EsentCheckpointDepthTooDeepException](./esentcheckpointdepthtoodeepexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -4,12 +4,12 @@ description: O protótipo de função a seguir usa dois parâmetros de um parâm
 ms.assetid: acb0ec4f-1846-4fa2-98c2-2081b52a8260
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c216197fb33a666029429d98761b3219b27b176
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 498d12c85130bba8d7d8dcddfc400e2a90fa2d0e2c3cb11c4a7d89696cfe9aa4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103917619"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120073616"
 ---
 # <a name="in-string-and-out-string-prototype"></a>\[no, String \] e \[ out, protótipo de cadeia de caracteres \]
 
@@ -25,6 +25,6 @@ O primeiro parâmetro é \[ somente [**no**](/windows/desktop/Midl/in) \] . Essa
 
 O segundo parâmetro, que representa a resposta do médico, está \[ [**fora**](/windows/desktop/Midl/out-idl) \] apenas. Essa cadeia de caracteres de resposta só é transmitida do servidor para o cliente. O tamanho de alocação é fornecido para que os stubs de servidor possam alocar memória para ele. Como *pszOutput* é um \[ ponteiro de [**referência**](/windows/desktop/Midl/ref) \] , o cliente deve ter memória suficiente alocada para a cadeia de caracteres antes da chamada. A cadeia de caracteres de resposta é gravada nessa área de memória quando o procedimento remoto retorna.
 
- 
+ 
 
- 
+ 

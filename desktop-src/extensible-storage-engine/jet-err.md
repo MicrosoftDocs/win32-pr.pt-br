@@ -15,21 +15,21 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 35120be9a26dcbdc8d012cd12c871ddcf8f71555
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: f341f88a192fee6de55e0077778abde83493e35e
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "105812239"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122482272"
 ---
 # <a name="jet_err"></a>JET_ERR
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jet_err"></a>JET_ERR
 
-O tipo de dados **JET_ERR** contém um [código de erro do mecanismo de armazenamento extensível](./extensible-storage-engine-error-codes.md).
+O **JET_ERR** de dados contém um [código de erro extensível Armazenamento Engine](./extensible-storage-engine-error-codes.md).
 
 ```cpp
 typedef long JET_ERR;
@@ -39,38 +39,21 @@ typedef long JET_ERR;
 
 JET_ERR
 
-Um valor zero (correspondente a JET_errSuccess) indica que a chamada foi bem-sucedida. Um valor positivo avisa sobre uma condição não fatal que ocorreu durante uma chamada com êxito. Um valor negativo indica que a chamada falhou.
+Um valor zero (correspondente JET_errSuccess) indica que a chamada foi bem-sucedida. Um valor positivo avisa sobre uma condição não fatal que ocorreu durante uma chamada de outra forma bem-sucedida. Um valor negativo indica que a chamada falhou.
 
 ### <a name="remarks"></a>Comentários
 
-Para obter informações sobre como retornar erros como HRESULTs, consulte [erros do mecanismo de armazenamento extensível](./extensible-storage-engine-errors.md). Para obter informações sobre sinalizadores para configurar o banco de dados para lidar com erros, consulte [parâmetros de tratamento de erros](./error-handling-parameters.md).
+Para obter informações sobre como retornar erros como HRESULTs, consulte [Extensible Armazenamento Engine Errors](./extensible-storage-engine-errors.md). Para obter informações sobre sinalizadores para configurar o banco de dados para tratar erros, consulte [Parâmetros de tratamento de erro](./error-handling-parameters.md).
 
 ### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista, o Windows XP ou o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008, o Windows Server 2003 ou o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | 
+
 
 
 ### <a name="see-also"></a>Consulte Também
 
-[Erros do mecanismo de armazenamento extensível](./extensible-storage-engine-errors.md)  
-[Códigos de erro do mecanismo de armazenamento extensível](./extensible-storage-engine-error-codes.md)  
-[Parâmetros de tratamento de erros](./error-handling-parameters.md)
+[Erros extensíveis Armazenamento mecanismo](./extensible-storage-engine-errors.md)  
+[Códigos de erro Armazenamento mecanismo extensível](./extensible-storage-engine-error-codes.md)  
+[Parâmetros de tratamento de erro](./error-handling-parameters.md)

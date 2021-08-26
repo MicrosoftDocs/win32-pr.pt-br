@@ -1,10 +1,10 @@
 - name: APIs de áudio de núcleo
   href: core-audio-apis-in-windows-vista.md
   items:
-    - name: Sobre as APIs de áudio do Windows Core
+    - name: sobre as APIs de áudio do Windows Core
       href: about-the-windows-core-audio-apis.md
       items:
-        - name: O que há de novo para as APIs de áudio de núcleo no Windows 7
+        - name: o que há de novo para as APIs de áudio de núcleo no Windows 7
           href: what-s-new-for-core-audio-apis-in-windows-7.md
         - name: Arquivos de cabeçalho e componentes do sistema
           href: header-files-and-system-components.md
@@ -65,9 +65,9 @@
                   items:
                     - name: Funções de dispositivo para aplicativos DirectSound
                       href: device-roles-for-directsound-applications.md
-                    - name: Funções de dispositivo para aplicativos do DirectShow
+                    - name: funções de dispositivo para aplicativos DirectShow
                       href: device-roles-for-directshow-applications.md
-                    - name: Funções de dispositivo para aplicativos multimídia herdados do Windows
+                    - name: funções de dispositivo para aplicativos multimídia Windows herdados
                       href: device-roles-for-legacy-windows-multimedia-applications.md
                     - name: Eventos de áudio para aplicativos de áudio herdados
                       href: audio-events-for-legacy-audio-applications.md
@@ -109,7 +109,7 @@
               href: capturing-a-stream.md
             - name: Gravação de loopback
               href: loopback-recording.md
-            - name: Fluxos de Exclusive-Mode
+            - name: Exclusive-Mode Fluxos
               href: exclusive-mode-streams.md
             - name: Recuperando de um erro de Invalid-Device
               href: recovering-from-an-invalid-device-error.md
@@ -238,7 +238,7 @@
                   href: /windows/desktop/api/Audioclient/nf-audioclient-iaudioclient-getstreamlatency
                 - name: Inicializar
                   href: /windows/desktop/api/Audioclient/nf-audioclient-iaudioclient-initialize
-                - name: IsFormatSupported
+                - name: Isformatsupported
                   href: /windows/desktop/api/Audioclient/nf-audioclient-iaudioclient-isformatsupported
                 - name: Redefinir
                   href: /windows/desktop/api/Audioclient/nf-audioclient-iaudioclient-reset
@@ -255,7 +255,7 @@
                   href: /windows/desktop/api/Audioclient/nf-audioclient-iaudioclient2-getbuffersizelimits
                 - name: IsOffloadCapable
                   href: /windows/desktop/api/Audioclient/nf-audioclient-iaudioclient2-isoffloadcapable
-                - name: Método setclientproperties
+                - name: Método SetClientProperties
                   href: /windows/desktop/api/Audioclient/nf-audioclient-iaudioclient2-setclientproperties
             - name: IAudioClient3
               href: /windows/desktop/api/audioclient/nn-audioclient-iaudioclient3
@@ -269,16 +269,16 @@
             - name: IAudioClock
               href: /windows/desktop/api/Audioclient/nn-audioclient-iaudioclock
               items:
-                - name: Getcaracterísticas
+                - name: GetCharacteristics
                   href: /windows/desktop/api/Audioclient/nf-audioclient-iaudioclock-getcharacteristics
-                - name: Getfrequency
+                - name: GetFrequency
                   href: /windows/desktop/api/Audioclient/nf-audioclient-iaudioclock-getfrequency
-                - name: GetPosition
+                - name: Getposition
                   href: /windows/desktop/api/Audioclient/nf-audioclient-iaudioclock-getposition
             - name: IAudioClockAdjustment
               href: /windows/desktop/api/audioclient/nn-audioclient-iaudioclockadjustment
               items:
-                - name: Setsamplee
+                - name: SetSampleRate
                   href: /windows/desktop/api/audioclient/nf-audioclient-iaudioclockadjustment-setsamplerate
             - name: IAudioClock2
               href: /windows/desktop/api/audioclient/nn-audioclient-iaudioclock2
@@ -295,9 +295,9 @@
             - name: IAudioEndpointOffloadStreamMute
               href: /windows/desktop/api/audioengineendpoint/nn-audioengineendpoint-iaudioendpointoffloadstreammute
               items:
-                - name: Getmudo
+                - name: GetMute
                   href: /windows/desktop/api/Audioengineendpoint/nf-audioengineendpoint-iaudioendpointoffloadstreammute-getmute
-                - name: Sem áudio
+                - name: SetMute
                   href: /windows/desktop/api/Audioengineendpoint/nf-audioengineendpoint-iaudioendpointoffloadstreammute-setmute
             - name: IAudioEndpointOffloadStreamVolume
               href: /windows/desktop/api/audioengineendpoint/nn-audioengineendpoint-iaudioendpointoffloadstreamvolume
@@ -321,7 +321,7 @@
                   href: /windows/desktop/api/Endpointvolume/nf-endpointvolume-iaudioendpointvolume-getmastervolumelevel
                 - name: GetMasterVolumeLevelScalar
                   href: /windows/desktop/api/Endpointvolume/nf-endpointvolume-iaudioendpointvolume-getmastervolumelevelscalar
-                - name: Getmudo
+                - name: GetMute
                   href: /windows/desktop/api/Endpointvolume/nf-endpointvolume-iaudioendpointvolume-getmute
                 - name: GetVolumeRange
                   href: /windows/desktop/api/Endpointvolume/nf-endpointvolume-iaudioendpointvolume-getvolumerange
@@ -339,7 +339,7 @@
                   href: /windows/desktop/api/Endpointvolume/nf-endpointvolume-iaudioendpointvolume-setmastervolumelevel
                 - name: SetMasterVolumeLevelScalar
                   href: /windows/desktop/api/Endpointvolume/nf-endpointvolume-iaudioendpointvolume-setmastervolumelevelscalar
-                - name: Sem áudio
+                - name: SetMute
                   href: /windows/desktop/api/Endpointvolume/nf-endpointvolume-iaudioendpointvolume-setmute
                 - name: UnregisterControlChangeNotify
                   href: /windows/desktop/api/Endpointvolume/nf-endpointvolume-iaudioendpointvolume-unregistercontrolchangenotify
@@ -350,7 +350,7 @@
             - name: IAudioEndpointVolumeCallback
               href: /windows/desktop/api/Endpointvolume/nn-endpointvolume-iaudioendpointvolumecallback
               items:
-                - name: Onnotificar
+                - name: Onnotify
                   href: /windows/desktop/api/Endpointvolume/nf-endpointvolume-iaudioendpointvolumecallback-onnotify
             - name: IAudioEndpointVolumeEx
               href: /windows/desktop/api/Endpointvolume/nn-endpointvolume-iaudioendpointvolumeex
@@ -360,9 +360,9 @@
             - name: IAudioInputSelector
               href: /windows/desktop/api/Devicetopology/nn-devicetopology-iaudioinputselector
               items:
-                - name: Getseleções
+                - name: Getselection
                   href: /windows/desktop/api/Devicetopology/nf-devicetopology-iaudioinputselector-getselection
-                - name: Setseleções
+                - name: SetSelection
                   href: /windows/desktop/api/Devicetopology/nf-devicetopology-iaudioinputselector-setselection
             - name: IAudioLfxControl
               href: /windows/desktop/api/Audioengineendpoint/nn-audioengineendpoint-iaudiolfxcontrol
@@ -374,9 +374,9 @@
             - name: IAudioLoudness
               href: /windows/desktop/api/Devicetopology/nn-devicetopology-iaudioloudness
               items:
-                - name: GetEnabled
+                - name: Getenabled
                   href: /windows/desktop/api/Devicetopology/nf-devicetopology-iaudioloudness-getenabled
-                - name: Sethabilitado
+                - name: Setenabled
                   href: /windows/desktop/api/Devicetopology/nf-devicetopology-iaudioloudness-setenabled
             - name: IAudioMeterInformation
               href: /windows/desktop/api/Endpointvolume/nn-endpointvolume-iaudiometerinformation
@@ -385,7 +385,7 @@
                   href: /windows/desktop/api/Endpointvolume/nf-endpointvolume-iaudiometerinformation-getchannelspeakvalues
                 - name: GetMeteringChannelCount
                   href: /windows/desktop/api/Endpointvolume/nf-endpointvolume-iaudiometerinformation-getmeteringchannelcount
-                - name: Getpicovalue
+                - name: GetPeakValue
                   href: /windows/desktop/api/Endpointvolume/nf-endpointvolume-iaudiometerinformation-getpeakvalue
                 - name: QueryHardwareSupport
                   href: /windows/desktop/api/Endpointvolume/nf-endpointvolume-iaudiometerinformation-queryhardwaresupport
@@ -394,16 +394,16 @@
             - name: IAudioMute
               href: /windows/desktop/api/Devicetopology/nn-devicetopology-iaudiomute
               items:
-                - name: Getmudo
+                - name: GetMute
                   href: /windows/desktop/api/Devicetopology/nf-devicetopology-iaudiomute-getmute
-                - name: Sem áudio
+                - name: SetMute
                   href: /windows/desktop/api/Devicetopology/nf-devicetopology-iaudiomute-setmute
             - name: IAudioOutputSelector
               href: /windows/desktop/api/Devicetopology/nn-devicetopology-iaudiooutputselector
               items:
-                - name: Getseleções
+                - name: Getselection
                   href: /windows/desktop/api/Devicetopology/nf-devicetopology-iaudiooutputselector-getselection
-                - name: Setseleções
+                - name: SetSelection
                   href: /windows/desktop/api/Devicetopology/nf-devicetopology-iaudiooutputselector-setselection
             - name: IAudioPeakMeter
               href: /windows/desktop/api/Devicetopology/nn-devicetopology-iaudiopeakmeter
@@ -417,14 +417,14 @@
               items:
                 - name: GetBuffer
                   href: /windows/desktop/api/Audioclient/nf-audioclient-iaudiorenderclient-getbuffer
-                - name: ReleaseBuffer
+                - name: Releasebuffer
                   href: /windows/desktop/api/Audioclient/nf-audioclient-iaudiorenderclient-releasebuffer
             - name: IAudioSessionControl
               href: /windows/desktop/api/Audiopolicy/nn-audiopolicy-iaudiosessioncontrol
               items:
                 - name: GetIconPath
                   href: /windows/desktop/api/Audiopolicy/nf-audiopolicy-iaudiosessioncontrol-geticonpath
-                - name: GetDisplayName
+                - name: Getdisplayname
                   href: /windows/desktop/api/Audiopolicy/nf-audiopolicy-iaudiosessioncontrol-getdisplayname
                 - name: GetGroupingParam
                   href: /windows/desktop/api/Audiopolicy/nf-audiopolicy-iaudiosessioncontrol-getgroupingparam

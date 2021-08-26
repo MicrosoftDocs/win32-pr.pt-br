@@ -1,6 +1,6 @@
 ---
 title: Elemento EapType (eaptlsuserpropertiesv1schema)
-description: Esse elemento é um tipo derivado do elemento EapType do esquema baseeapuserpropertiesv1. Para o eaptlsuserpropertiesv1schema.
+description: Esse elemento é um tipo derivado do elemento EapType do esquema baseeapuserpropertiesv1. Para eaptlsuserpropertiesv1schema.
 ms.assetid: c9117803-dbf0-498d-8f86-f44ac2e6b2dc
 keywords:
 - Elemento EapType EAPHost
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 53e5c1404c70542f3604b94aa6cae9c8fc39fd21
-ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
+ms.openlocfilehash: fbc58ab640b7993d274abdb134de4648d51c495c07f70a4468460de1d920bd76
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106187755"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120021626"
 ---
 # <a name="eaptype-element-eaptlsuserpropertiesv1schema"></a>Elemento EapType (eaptlsuserpropertiesv1schema)
 
-O elemento **EapType** é um tipo derivado do elemento [**EapType**](baseeapuserpropertiesv1schema-eaptype-element.md) do esquema [baseeapuserpropertiesv1](baseeapuserpropertiesv1schema-schema.md) .
+O **elemento EapType** é um tipo derivado do elemento [**EapType**](baseeapuserpropertiesv1schema-eaptype-element.md) do esquema [baseeapuserpropertiesv1.](baseeapuserpropertiesv1schema-schema.md)
 
 ``` syntax
 <xs:element name="EapType"
@@ -60,14 +60,14 @@ O elemento **EapType** é um tipo derivado do elemento [**EapType**](baseeapuser
 
 | Elemento                                                                   | Type      | Descrição                                                                                                                                                                                                                                                                                                                |
 |---------------------------------------------------------------------------|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Usu**](eaptlsuserpropertiesv1schema-username-element.md)         |           | Captura o nome de usuário a ser enviado na resposta EAP-Identity. Se o elemento [**username**](eaptlsuserpropertiesv1schema-username-element.md) estiver ausente, o EAP-TLS usará o nome no certificado referido no elemento [**usercert**](eaptlsuserpropertiesv1schema-usercert-eaptype-element.md) .<br/> |
-| [**Usercert**](eaptlsuserpropertiesv1schema-usercert-eaptype-element.md) | hexBinary | Refere-se ao hash SHA-1 do certificado que deve ser usado para autenticação.<br/>                                                                                                                                                                                                                             |
+| [**Nome de usuário**](eaptlsuserpropertiesv1schema-username-element.md)         |           | Captura o nome de usuário a ser enviado na EAP-Identity resposta. Se o [**elemento Username**](eaptlsuserpropertiesv1schema-username-element.md) estiver ausente, eAP-TLS usará o nome no certificado referenciado no [**elemento UserCert.**](eaptlsuserpropertiesv1schema-usercert-eaptype-element.md)<br/> |
+| [**UserCert**](eaptlsuserpropertiesv1schema-usercert-eaptype-element.md) | Hexbinary | Refere-se ao hash SHA-1 do certificado que deve ser usado para autenticação.<br/>                                                                                                                                                                                                                             |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-O elemento **ProcessContents** permite aprimoramentos futuros no esquema. O elemento **ProcessContents** é opcional.
+O **elemento processContents** permite aprimoramentos futuros para o esquema. O **elemento processContents** é opcional.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,8 +75,8 @@ O elemento **ProcessContents** permite aprimoramentos futuros no esquema. O elem
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

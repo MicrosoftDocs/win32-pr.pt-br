@@ -4,12 +4,12 @@ description: Siga as instruções abaixo para instalar um método EAP implementa
 ms.assetid: c353550f-73a7-4195-81ea-544f74abc880
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e93e7796c216b5f60b7a46768ed9db9ca913482d
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: e047c5a8f0bc4cedcc207016d6f66530b392869839dda128635cd31ac459011a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103640846"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120021576"
 ---
 # <a name="installing-an-eap-method"></a>Instalando um método EAP
 
@@ -36,6 +36,6 @@ Siga as instruções abaixo para instalar um método EAP implementado pelo usuá
 [Usando o EAPHost](using-eap-host.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

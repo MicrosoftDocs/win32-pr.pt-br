@@ -1,9 +1,9 @@
 ---
-title: Mensagem de ICM_DRAW_STOP (VFW. h)
-description: A \_ mensagem de parada de desenho ICM \_ Notifica um driver de renderização para interromper seu relógio interno durante o período de desenho de quadros. Você pode enviar essa mensagem explicitamente ou usando a macro ICDrawStop.
+title: ICM_DRAW_STOP mensagem (Vfw.h)
+description: A ICM DRAW STOP notifica um driver de renderização para interromper seu relógio interno \_ para o tempo dos quadros de \_ desenho. Você pode enviar essa mensagem explicitamente ou usando a macro ICDrawStop.
 ms.assetid: 9ffda595-e3d6-48f0-9487-69f7e95979c2
 keywords:
-- Multimídia do Windows de mensagem ICM_DRAW_STOP
+- ICM_DRAW_STOP mensagem Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b3bde99dfcf483e67aa6a601de2718814cc22439
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 41bdb8fbc9a0cddf470733fa35b2f25dc62675175cbb40c427d0b160074c5409
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454989"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120038786"
 ---
-# <a name="icm_draw_stop-message"></a>Mensagem de parada de \_ desenho ICM \_
+# <a name="icm_draw_stop-message"></a>\_ICM Mensagem DRAW \_ STOP
 
-A mensagem de **\_ \_ parada de desenho ICM** notifica um driver de renderização para interromper seu relógio interno durante o período de desenho de quadros. Você pode enviar essa mensagem explicitamente ou usando a macro [**ICDrawStop**](/windows/desktop/api/Vfw/nf-vfw-icdrawstop) .
+A **ICM \_ DRAW \_ STOP** notifica um driver de renderização para interromper seu relógio interno para o tempo dos quadros de desenho. Você pode enviar essa mensagem explicitamente ou usando a macro [**ICDrawStop.**](/windows/desktop/api/Vfw/nf-vfw-icdrawstop)
 
 
 ```C++
@@ -40,7 +40,7 @@ Essa mensagem não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Essa mensagem é usada por hardware que executa sua própria descompactação assíncrona, tempo e desenho.
+Essa mensagem é usada pelo hardware que executa sua própria descompactação, tempo e desenho assíncronos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,7 +50,7 @@ Essa mensagem é usada por hardware que executa sua própria descompactação as
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                       |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                             |
-| Cabeçalho<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 
@@ -58,7 +58,7 @@ Essa mensagem é usada por hardware que executa sua própria descompactação as
 
 <dl> <dt>
 
-[Gerenciador de compactação de vídeo](video-compression-manager.md)
+[Gerenciador de Compactação de Vídeo](video-compression-manager.md)
 </dt> <dt>
 
 [Mensagens de compactação de vídeo](video-compression-messages.md)

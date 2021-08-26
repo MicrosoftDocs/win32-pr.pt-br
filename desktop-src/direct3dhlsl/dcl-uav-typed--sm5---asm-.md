@@ -4,12 +4,12 @@ description: Declare um UAV (modo de exibição de acesso não ordenado) para us
 ms.assetid: F9F5583F-E3D0-447F-9227-BBB1B4E71934
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b789714c7ec825620b73e387fa8a4dd73e1a590d
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 3ec321389f8c8296bda8ccd1eba947b5ba38adc80c94b3c8c0685b069fcdafbf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104989252"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119950576"
 ---
 # <a name="dcl_uav_typed-sm5---asm"></a>DCL \_ UAV \_ tipado (SM5-ASM)
 
@@ -50,7 +50,7 @@ Essa instrução se aplica aos seguintes estágios de sombreador:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | X     | X       |
 
@@ -62,7 +62,7 @@ Como UAVs estão disponíveis em todos os estágios do sombreador para o Direct3
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 

@@ -4,12 +4,12 @@ description: Há uma relação de fechamento entre as matrizes e os ponteiros na
 ms.assetid: 0d65c993-63e4-42ae-ae24-6c19a71386a1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f5ed669a2a81528afa84b41a1be25a0c84f70fbe
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 8ba7bdaa08352a96987066313d4db074872f28b71ec0be0856a32522a849029c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641633"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120073516"
 ---
 # <a name="array-attributes"></a>Atributos de matriz
 
@@ -63,13 +63,13 @@ O tamanho da matriz e o intervalo de elementos de matriz transmitidos para o com
 
 
 
- 
+ 
 
 > [!Note]  
 > O atributo **min \_ is** não está implementado no RPC. O índice de matriz mínimo é sempre tratado como zero.
 
- 
+ 
 
- 
+ 
 
- 
+ 

@@ -4,12 +4,12 @@ ms.assetid: 7912c682-c179-453b-8a34-e87958217500
 title: D3DPMISCCAPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b4ace0b9070d158769e22e02a759545b1bf7785
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: ee88ba03b3c0a6d51c0100b20768df4cbf632d46
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110343131"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122624532"
 ---
 # <a name="d3dpmisccaps"></a>D3DPMISCCAPS
 
@@ -19,9 +19,9 @@ Sinalizadores de funcionalidade primitiva de driver diversos.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -37,12 +37,12 @@ Sinalizadores de funcionalidade primitiva de driver diversos.
 <tr class="odd">
 <td>D3DPMISCCAPS_CULLNONE</td>
 <td>0x00000010L</td>
-<td>O driver não executa a ressarção de triângulo. Isso corresponde ao membro D3DCULL_NONE do tipo enumerado <a href="/windows/desktop/direct3d9/d3dcull"><strong>D3DCULL.</strong></a></td>
+<td>O driver não executa a ressarção de triângulo. Isso corresponde ao D3DCULL_NONE do tipo enumerado <a href="/windows/desktop/direct3d9/d3dcull"><strong>D3DCULL.</strong></a></td>
 </tr>
 <tr class="even">
 <td>D3DPMISCCAPS_CULLCW</td>
 <td>0x00000020L</td>
-<td>O driver dá suporte à ressarção de triângulo no sentido horário por meio do estado D3DRS_CULLMODE sistema. (Isso se aplica somente a primitivos de triângulo.) Esse sinalizador corresponde ao D3DCULL_CW do tipo enumerado <a href="/windows/desktop/direct3d9/d3dcull"><strong>D3DCULL.</strong></a></td>
+<td>O driver dá suporte à ressarção de triângulo no sentido horário por meio do estado D3DRS_CULLMODE sistema. (Isso se aplica somente a primitivos de triângulo.) Esse sinalizador corresponde ao D3DCULL_CW membro do tipo enumerado <a href="/windows/desktop/direct3d9/d3dcull"><strong>D3DCULL.</strong></a></td>
 </tr>
 <tr class="odd">
 <td>D3DPMISCCAPS_CULLCCW</td>
@@ -52,32 +52,32 @@ Sinalizadores de funcionalidade primitiva de driver diversos.
 <tr class="even">
 <td>D3DPMISCCAPS_COLORWRITEENABLE</td>
 <td>0x00000100L</td>
-<td>O dispositivo dá suporte a gravações por canal para o buffer de cores de destino de renderização por meio do estado de D3DRS_COLORWRITEENABLE.</td>
+<td>O dispositivo dá suporte a gravações por canal para o buffer de cores de destino de renderização por meio do estado D3DRS_COLORWRITEENABLE sistema.</td>
 </tr>
 <tr class="odd">
 <td>D3DPMISCCAPS_CLIPPLANESCALEDPOINTS</td>
 <td>0x00000200L</td>
-<td>O dispositivo corta corretamente os pontos dimensionados de tamanho maior que 1,0 para os planos de recorte definidos pelo usuário.</td>
+<td>O dispositivo corta corretamente pontos dimensionados de tamanho maior que 1,0 para planos de recorte definidos pelo usuário.</td>
 </tr>
 <tr class="even">
 <td>D3DPMISCCAPS_CLIPTLVERTS</td>
 <td>0x00000200L</td>
-<td>Os clipes de dispositivo transformam primitivas de vértice. Especifique D3DUSAGE_DONOTCLIP quando o pipeline não deve fazer recorte. Nesse caso, pode ser necessário recortar o software adicional no momento do desenho, exigindo que o buffer de vértice esteja na memória do sistema.<br/></td>
+<td>Os clipes de dispositivo pós-transformados são primitivos de vértice. Especifique D3DUSAGE_DONOTCLIP quando o pipeline não deve fazer nenhum recorte. Nesse caso, o recorte de software adicional pode precisar ser executado em tempo de desenho, exigindo que o buffer de vértice seja na memória do sistema.<br/></td>
 </tr>
 <tr class="odd">
 <td>D3DPMISCCAPS_TSSARGTEMP</td>
 <td>0x00000400L</td>
-<td>O dispositivo dá suporte a <a href="d3dta.md">D3DTA</a> para registro temporário.</td>
+<td>O dispositivo dá <a href="d3dta.md">suporte a D3DTA</a> para registro temporário.</td>
 </tr>
 <tr class="even">
 <td>D3DPMISCCAPS_BLENDOP</td>
 <td>0x00000800L</td>
-<td>O dispositivo dá suporte a operações de mesclagem alfa diferentes de D3DBLENDOP_ADD.</td>
+<td>O dispositivo dá suporte a operações de combinação alfa além D3DBLENDOP_ADD.</td>
 </tr>
 <tr class="odd">
 <td>D3DPMISCCAPS_NULLREFERENCE</td>
 <td>0x00000100L</td>
-<td>Um dispositivo de referência que não é renderizado.</td>
+<td>Um dispositivo de referência que não renderiza.</td>
 </tr>
 <tr class="even">
 <td>D3DPMISCCAPS_INDEPENDENTWRITEMASKS</td>
@@ -126,7 +126,7 @@ Sinalizadores de funcionalidade primitiva de driver diversos.
 <tr class="odd">
 <td>D3DPMISCCAPS_FOGVERTEXCLAMPED</td>
 <td>0x00100000L</td>
-<td>Fator de mistura de dispositivo coloca de neblina por vértice.</td>
+<td>O dispositivo fixa o fator blend blend por vértice.</td>
 </tr>
 </tbody>
 </table>
@@ -135,7 +135,7 @@ Sinalizadores de funcionalidade primitiva de driver diversos.
 
  
 
-Essas constantes são usadas pelo membro PrimitiveMiscCaps de [**D3DCAPS9**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9).
+Essas constantes são usadas pelo membro PrimitiveMiscCaps [**de D3DCAPS9.**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9)
 
 ## <a name="constant-information"></a>Informações constantes
 
@@ -143,7 +143,7 @@ Essas constantes são usadas pelo membro PrimitiveMiscCaps de [**D3DCAPS9**](/wi
 
 | Requisito                         |  Valor          |
 |--------------------------|------------|
-| parâmetro                   | d3d9caps. h |
+| parâmetro                   | d3d9caps.h |
 | Sistema operacional mínimo | Windows 98 |
 
 
@@ -154,7 +154,7 @@ Essas constantes são usadas pelo membro PrimitiveMiscCaps de [**D3DCAPS9**](/wi
 
 <dl> <dt>
 
-[Constantes do Direct3D](dx9-graphics-reference-d3d-constants.md)
+[Constantes Direct3D](dx9-graphics-reference-d3d-constants.md)
 </dt> </dl>
 
  

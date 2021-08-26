@@ -11,18 +11,18 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 3b273b05a7d89f970ae8361b1b47d1587ea30227fb8c51b7ccd91fdcecb8a278
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 49dddaf2d359b6b0d5ea2fa5c364ebe10a1402e5
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118087473"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122622102"
 ---
 # <a name="xmdecn4-operator--operators"></a>Operador XMDECN4 = operadores
 
-Atribui dados de componente de vetor à instância atual do `XMDECN4` .
+Atribui dados de componente vetor à instância atual do `XMDECN4` .
 
-Atribui dados de componente de vetor à instância atual do [**XMDECN4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmdecn4).
+Atribui dados de componente vetor à instância atual do [**XMDECN4.**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmdecn4)
 
 ### <a name="overload-list"></a>Lista de sobrecargas
 
@@ -30,19 +30,19 @@ Atribui dados de componente de vetor à instância atual do [**XMDECN4**](/windo
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;">Operador</th>
-<th style="text-align: left;">Descrição</th>
+<th >Operador</th>
+<th >Descrição</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmdecn4-operator-assign(uint32_t)"><strong>XMDECN4:: Operator = (const XMDECN4&)</strong></a></td>
-<td style="text-align: left;">Atribui os dados do componente de vetor de uma instância do <code>XMDECN4</code> à instância atual do <code>XMDECN4</code> . <br/> Esse operador atribui os dados do componente de vetor de uma instância do <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmdecn4"><strong>XMDECN4</strong></a> à instância atual do <code>XMDECN4</code> . <br/>
+<td ><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmdecn4-operator-assign(uint32_t)"><strong>XMDECN4::operator = (const XMDECN4&)</strong></a></td>
+<td >Atribui os dados do componente de vetor de uma instância <code>XMDECN4</code> do à instância atual do <code>XMDECN4</code> . <br/> Esse operador atribui os dados do componente de vetor de uma instância <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmdecn4"><strong>do XMDECN4</strong></a> à instância atual do <code>XMDECN4</code> . <br/>
 <blockquote>
 [!Note]<br />
 Esse operador só está disponível em C++.
@@ -50,8 +50,8 @@ Esse operador só está disponível em C++.
 <br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmdecn4-operator-assign(uint32_t)"><strong>XMDECN4:: Operator = (const uint32_t)</strong></a></td>
-<td style="text-align: left;">Atribui os dados do componente de vetor empacotados em uma instância do <code>uint32_t</code> para a instância atual do <code>XMDECN4</code> . <br/> Esse operador atribui os dados do componente de vetor empacotados em uma instância do <code>uint32_t</code> à instância atual do <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmdecn4"><strong>XMDECN4</strong></a>. <br/>
+<td ><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmdecn4-operator-assign(uint32_t)"><strong>XMDECN4::operator = (const uint32_t)</strong></a></td>
+<td >Atribui os dados do componente de vetor empacotados em uma instância do <code>uint32_t</code> à instância atual do <code>XMDECN4</code> . <br/> Esse operador atribui os dados do componente de vetor empacotados em uma instância do <code>uint32_t</code> à instância atual do <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmdecn4"><strong>XMDECN4.</strong></a> <br/>
 <blockquote>
 [!Note]<br />
 Esse operador só está disponível em C++.

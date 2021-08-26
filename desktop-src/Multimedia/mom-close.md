@@ -3,7 +3,7 @@ title: Mensagem de MOM_CLOSE (mmsystem. h)
 description: A mensagem de fechamento do MOM \_ é enviada para uma função de retorno de chamada de saída de Midi quando um dispositivo de saída de Midi é fechado.
 ms.assetid: 229b3701-16f1-4ec8-920e-cd8231561541
 keywords:
-- Multimídia do Windows de mensagem MOM_CLOSE
+- mensagem de MOM_CLOSE Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 68f173daa2fb104305979a72c9a14106175d7d20
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dbabd0cae61c1b1ea3d88df3cd2e52524b779eb7cdb5ac2c1e1a371546724f44
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103919067"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120038866"
 ---
 # <a name="mom_close-message"></a>Mensagem de fechamento do MOM \_
 

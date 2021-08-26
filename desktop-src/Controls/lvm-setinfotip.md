@@ -3,7 +3,7 @@ title: Mensagem de LVM_SETINFOTIP (commctrl. h)
 description: Define o texto da dica de ferramenta em resposta atrasada à notificação de GETINFOTIP de LVN \_ .
 ms.assetid: 3dbf6a9a-52ec-4619-9c70-041e75942e20
 keywords:
-- Controles de LVM_SETINFOTIP de mensagens do Windows
+- controles de Windows de mensagem de LVM_SETINFOTIP
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 90827766a6f1218dbbd631ed4eaf6b2989257944
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ef739535e399550911adfbe86d7376d3efeb77cd797ba807b24ee682d1f3fe3d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105771696"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119919896"
 ---
 # <a name="lvm_setinfotip-message"></a>\_Mensagem SETINFOTIP LVM
 
@@ -35,7 +35,7 @@ Define o texto da dica de ferramenta em resposta atrasada à notificação de [ 
 *lParam* 
 </dt> <dd>Ponteiro para uma estrutura <a href="/windows/win32/api/commctrl/ns-commctrl-lvsetinfotip">LVSETINFOTIP</a> que contém as informações a serem definidas.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará **true** se o texto da dica de ferramenta for definido com êxito ou **false** caso contrário.
 
@@ -60,9 +60,9 @@ O texto passado para a **mensagem \_ SETINFOTIP do LVM** aparece apenas se o ite
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

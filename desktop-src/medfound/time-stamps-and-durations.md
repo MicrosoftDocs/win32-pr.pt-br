@@ -4,12 +4,12 @@ ms.assetid: 4ab576ce-becd-4736-921e-e463c0dff841
 title: Carimbos de data/hora e durações
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2323c11fa0e3ec2b2b2d5ba1cefe4f5d5fa80c5b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 22452e8b6b8094e643126f479f13b2c447db584588f3be1c1aa6595b3e7e2bb7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104091029"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119953196"
 ---
 # <a name="time-stamps-and-durations"></a>Carimbos de data/hora e durações
 
@@ -57,7 +57,7 @@ Se o fluxo de entrada contiver carimbos de data/hora, mas houver lacunas nos hor
 ### <a name="mixers"></a>Mixers
 
 > [!Note]  
-> No Windows Vista, o pipeline Media Foundation não dá suporte a MFTs com mais de uma entrada. Há suporte para MFTs de várias entradas no Windows 7.
+> no Windows Vista, o pipeline de Media Foundation não oferece suporte a MFTs com mais de uma entrada. há suporte para MFTs de várias entradas no Windows 7.
 
  
 
@@ -78,7 +78,7 @@ Um codificador converte áudio ou vídeo descompactado em pacotes compactados. U
 ### <a name="multiplexers"></a>Multiplexadores
 
 > [!Note]  
-> No Windows Vista, o pipeline Media Foundation não dá suporte a MFTs com mais de uma entrada. Há suporte para MFTs de várias entradas no Windows 7.
+> no Windows Vista, o pipeline de Media Foundation não oferece suporte a MFTs com mais de uma entrada. há suporte para MFTs de várias entradas no Windows 7.
 
  
 
@@ -108,7 +108,7 @@ Exemplo 2. Suponha que um efeito de áudio transforme todos, exceto 10 milissegu
 
 
 
-| Amostra | Hora de entrada | Duração da entrada | Tempo de saída | Duração da saída |
+| Amostra | Tempo de entrada | Duração da entrada | Tempo de saída | Duração da saída |
 |--------|------------|----------------|-------------|-----------------|
 | 1      | 20         | 50             | 20          | 40              |
 | 2      | 70         | 50             | 60          | 50              |
@@ -119,21 +119,21 @@ Exemplo 2. Suponha que um efeito de áudio transforme todos, exceto 10 milissegu
 
  
 
-Observe a discrepância de 1-MS entre a duração real da amostra 2 e a duração implícita com base no próximo carimbo de data/hora (121? 70 = 51).
+Observe a discrepância de 1 ms entre a duração real da amostra 2 e a duração implícita com base no próximo carimbo de data/hora (121 ? 70 = 51).
 
-Como a MFT retém 10 ms, ela gera o primeiro 40 MS do exemplo de entrada 1 como exemplo de saída 1, com um carimbo de data/hora de 20 ms e uma duração de 40 MS.
+Como o MFT mantém 10 ms, ele realiza a saída dos primeiros 40 ms da amostra de entrada 1 como exemplo de saída 1, com um carimbo de data/hora de 20 ms e uma duração de 40 ms.
 
-A amostra de saída 2 combina os 10 ms retidos anteriormente com 40 MS da amostra de entrada 2. Este exemplo recebe um carimbo de data/hora de 60 MS (o carimbo de data/hora do exemplo de entrada anterior, 20 ms, além da duração dos dados já processados desse exemplo, 40ms). Ela recebe uma duração de 50 ms.
+A amostra de saída 2 combina os 10 ms anteriormente mantidos com 40 ms da amostra de entrada 2. Este exemplo recebe um carimbo de data/hora de 60 ms (o carimbo de data/hora do exemplo de entrada anterior, 20 ms, mais a duração dos dados já processados desse exemplo, 40 ms). Ele recebe uma duração de 50 ms.
 
-Da mesma forma, o exemplo a seguir tem um carimbo de data/hora de 110ms (70ms + 40ms) com uma duração de 50 ms.
+Da mesma forma, a próxima amostra tem um carimbo de data/hora de 110 ms (70 ms + 40 ms) com uma duração de 50 ms.
 
-O próximo cálculo é mais interessante. O carimbo de data/hora implícito do tempo de saída anterior e a duração seriam 160 ms (carimbo de data/hora 110 MS + duração 50 ms). No entanto, o carimbo de data/hora de saída deve ser calculado a partir do carimbo de data/hora de entrada do exemplo de entrada mais antigo que sobrepõe a amostra de saída no tempo, mais o comprimento de todos os dados já processados a partir desse exemplo. A amostra de entrada sobreposta mais próxima é a amostra 4 (carimbo de data/hora = 171), mas essa não é a primeira. O exemplo mais antigo sobreposto é o exemplo 3 (carimbo de data/hora = 121). Adicionar o 40ms que já foi processado desse exemplo, o resultado é 161.
+O próximo cálculo é mais interessante. O carimbo de data/hora implícito da hora e da duração da saída anterior seria de 160 ms (carimbo de data/hora 110 ms + duração de 50 ms). No entanto, o carimbo de data/hora de saída deve ser calculado com base no carimbo de data/hora de entrada do exemplo de entrada mais antigo que sobrepõe a amostra de saída no tempo, mais o comprimento de todos os dados já processados desse exemplo. A amostra de entrada sobreposta mais próxima é a amostra 4 (carimbo de data/hora = 171), mas essa não é a mais antiga. A amostra de sobreposição mais antiga é a amostra 3 (carimbo de data/hora = 121). Adicionando os 40 ms que já foram processados desse exemplo, o resultado é 161.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Gravando uma MFT personalizada](writing-a-custom-mft.md)
+[Escrevendo um MFT personalizado](writing-a-custom-mft.md)
 </dt> </dl>
 
  
