@@ -9,12 +9,12 @@ keywords:
 - ADSI ADSI, código de exemplo C/C++, delegando métodos IDispatch para o agregador
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 435a4552b364afbf909d04a759e3713ce69befab
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: b783e9448926d6d29a27e5fb0db519175f82a9af1935e9f13655db743a946bcb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "105756282"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119930006"
 ---
 # <a name="supporting-dual-or-dispatch-interfaces"></a>Suporte a interfaces duplas ou de expedição
 
@@ -95,6 +95,6 @@ STDMETHODIMP MyExtension::Invoke(DISPID dispidMember, REFIID riid,
 
 Os gravadores de extensão são altamente incentivados a dar suporte a interfaces duplas em vez de interfaces de expedição em seus objetos de extensão. Uma interface dupla permite que um cliente tenha acesso mais rápido, desde que o acesso vtable esteja habilitado no cliente. Para obter mais informações, consulte [associação tardia versus acesso vtable no modelo de extensão ADSI](late-binding-vs--vtable-access-in-the-adsi-extension-model.md). Com base no modelo atual, a implementação de interfaces duplas não deve ser mais difícil do que a implementação de interfaces de expedição.
 
- 
+ 
 
- 
+ 

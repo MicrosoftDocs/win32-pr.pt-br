@@ -1,9 +1,9 @@
 ---
-title: Mensagem de TVM_SETITEM (commctrl. h)
-description: A \_ mensagem TVM SETITEM define alguns ou todos os atributos de um item de exibição de árvore. Você pode enviar essa mensagem explicitamente ou usando a macro TreeView \_ SetItem.
+title: TVM_SETITEM mensagem (Commctrl.h)
+description: A mensagem TVM SETITEM define alguns ou todos os atributos de um item de \_ exibição de árvore. Você pode enviar essa mensagem explicitamente ou usando a macro TreeView \_ SetItem.
 ms.assetid: 28d288bf-a557-4fce-870c-ffa368ece5a9
 keywords:
-- Controles de TVM_SETITEM de mensagens do Windows
+- TVM_SETITEM controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 95750af3aa43a25f0ff4eae5533df5d9aef23537
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9521bc67766dbb503fc205e966d6ce72e674a4050b6c0d237c885dcb4a8f4b68
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455224"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119913936"
 ---
-# <a name="tvm_setitem-message"></a>\_Mensagem TVM SETITEM
+# <a name="tvm_setitem-message"></a>Mensagem TVM \_ SETITEM
 
-A mensagem **TVM \_ SETITEM** define alguns ou todos os atributos de um item de exibição de árvore. Você pode enviar essa mensagem explicitamente ou usando a macro [**TreeView \_ SetItem**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_setitem) .
+A **mensagem TVM \_ SETITEM** define alguns ou todos os atributos de um item de exibição de árvore. Você pode enviar essa mensagem explicitamente ou usando a macro [**TreeView \_ SetItem.**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_setitem)
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -41,17 +41,17 @@ Deve ser zero.
 *lParam* 
 </dt> <dd>
 
-Ponteiro para uma estrutura [**TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) que contém os novos atributos de item. Com a [versão 4,71](common-control-versions.md) e posterior, você pode usar uma estrutura [**TVITEMEX**](/windows/win32/api/commctrl/ns-commctrl-tvitemexa) em vez disso.
+Ponteiro para uma [**estrutura TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) que contém os novos atributos de item. Com [a versão 4.71](common-control-versions.md) e posterior, você pode usar uma [**estrutura TVITEMEX.**](/windows/win32/api/commctrl/ns-commctrl-tvitemexa)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna **verdadeiro** se for bem-sucedido ou **false** caso contrário.
+Retorna **TRUE se** for bem-sucedido ou FALSE **caso** contrário.
 
 ## <a name="remarks"></a>Comentários
 
-O membro **hItem** da estrutura [**TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) ou [**TVITEMEX**](/windows/win32/api/commctrl/ns-commctrl-tvitemexa) identifica o item, e o membro **Mask** especifica quais atributos definir.
+O **membro hItem** da estrutura [**TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) ou [**TVITEMEX**](/windows/win32/api/commctrl/ns-commctrl-tvitemexa) identifica o item e o membro **de** máscara especifica quais atributos definir.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,10 +59,10 @@ O membro **hItem** da estrutura [**TVITEM**](/windows/win32/api/commctrl/ns-comm
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
-| Nomes Unicode e ANSI<br/>   | **TVM \_ SETITEMW** (Unicode) e **TVM \_ setitema** (ANSI)<br/>                   |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Nomes Unicode e ANSI<br/>   | **TVM \_ SETITEMW** (Unicode) e **TVM \_ SETITEMA** (ANSI)<br/>                   |
 
 
 

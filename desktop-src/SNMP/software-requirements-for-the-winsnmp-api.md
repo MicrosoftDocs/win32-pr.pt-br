@@ -1,19 +1,19 @@
 ---
 title: Requisitos de software para a API WinSNMP
-description: Um aplicativo WinSNMP deve acessar a API WinSNMP por meio da biblioteca de vínculo dinâmico WSNMP32.DLL.
+description: Um aplicativo WinSNMP deve acessar a API winSNMP por meio da biblioteca de vínculo dinâmico WSNMP32.DLL.
 ms.assetid: ba0b9443-3fcf-41e2-993e-54e042f9d785
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e31c30302f9f6d15cef221da46ce721dc4727a44
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 87cf78c4937996a44b2a82ebeb0b2963f9a4ffaada0288068b07cd3b60432c70
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104159286"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119886066"
 ---
 # <a name="software-requirements-for-the-winsnmp-api"></a>Requisitos de software para a API WinSNMP
 
-Um aplicativo WinSNMP deve acessar a API WinSNMP por meio da biblioteca de vínculo dinâmico WSNMP32.DLL.
+Um aplicativo WinSNMP deve acessar a API winSNMP por meio da biblioteca de vínculo dinâmico WSNMP32.DLL.
 
 Os arquivos a seguir são necessários para dar suporte à funcionalidade da API WinSNMP.
 
@@ -21,19 +21,19 @@ Os arquivos a seguir são necessários para dar suporte à funcionalidade da API
 
 | Nome de arquivo     | Descrição                                                                                  |
 |--------------|----------------------------------------------------------------------------------------------|
-| WSNMP32. LIB  | Biblioteca WinSNMP                                                                              |
+| WSNMP32. Lib  | Biblioteca WinSNMP                                                                              |
 | WSNMP32.DLL  | Fornece a interface WinSNMP                                                                   |
-| WINSNMP. T    | Arquivo de cabeçalho WinSNMP                                                                          |
-| SNMPTRAP.EXE | Recebe interceptações SNMP e as encaminha para MGMTAPI.DLL, a biblioteca de API do Gerenciador SNMP da Microsoft |
+| WINSNMP. H    | Arquivo de título WinSNMP                                                                          |
+| SNMPTRAP.EXE | Recebe interceptações SNMP e encaminha-as para MGMTAPI.DLL, a biblioteca de API do Microsoft SNMP Manager |
 | SNMPAPI.DLL  | Fornece utilitários SNMP                                                                      |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

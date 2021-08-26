@@ -1,7 +1,7 @@
 ---
 description: Inicia um trabalho para remover recursos de um pool de recursos.
 ms.assetid: 1689ccbf-a524-45b7-bf95-6341a3b28f6c
-title: Método RemoveResourcesFromResourcePool da classe CIM_ResourcePoolConfigurationService
+title: Método RemoveResourcesFromResourcePool da CIM_ResourcePoolConfigurationService classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 41c8a7d1608b9c4d5ea629aa9c053e022d59d9ae
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 370944c9d8b8307a796b425dd4ff611429f59ccc72473a92528ef19b8c2f5910
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501899"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119980866"
 ---
-# <a name="removeresourcesfromresourcepool-method-of-the-cim_resourcepoolconfigurationservice-class"></a>Método RemoveResourcesFromResourcePool da \_ classe RESOURCEPOOLCONFIGURATIONSERVICE CIM
+# <a name="removeresourcesfromresourcepool-method-of-the-cim_resourcepoolconfigurationservice-class"></a>Método RemoveResourcesFromResourcePool da classe CIM \_ ResourcePoolConfigurationService
 
 Inicia um trabalho para remover recursos de um pool de recursos.
 
@@ -41,28 +41,28 @@ uint32 RemoveResourcesFromResourcePool(
 
 <dl> <dt>
 
-*Recursos* \[ no\]
+*HostResources* \[ Em\]
 </dt> <dd>
 
-Matriz de instâncias de [**\_ LogicalDevice CIM**](cim-logicaldevice.md) a serem removidas do pool.
+Matriz de [**instâncias \_ LogicalDevice cim**](cim-logicaldevice.md) a ser removido do pool.
 
 </dd> <dt>
 
-*Pool* \[ de no\]
+*Pool* \[ Em\]
 </dt> <dd>
 
-Um [**\_ ResourcePool CIM**](cim-resourcepool.md) que representa o pool do qual remover os recursos.
+Um [**\_ ResourcePool cim**](cim-resourcepool.md) que representa o pool do onde remover os recursos.
 
 </dd> <dt>
 
-*Trabalho* \[ do fora\]
+*Trabalho* \[ out\]
 </dt> <dd>
 
-Um [**\_ ConcreteJob CIM**](cim-concretejob.md) que referencia o trabalho (pode ser **nulo** se o trabalho for concluído).
+Um [**\_ ConcreteJob cim**](cim-concretejob.md) que faz referência ao trabalho (pode ser **nulo se** o trabalho for concluído).
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um 0 em caso de êxito; caso contrário, retornará um erro.
 
@@ -77,10 +77,10 @@ Retorna um 0 em caso de êxito; caso contrário, retornará um erro.
 **Desconhecido** (2)
 </dt> <dt>
 
-**Tempo limite** (3)
+**Tempoout** (3)
 </dt> <dt>
 
-**Com falha** (4)
+**Falha** (4)
 </dt> <dt>
 
 **Parâmetro inválido** (5)
@@ -92,19 +92,19 @@ Retorna um 0 em caso de êxito; caso contrário, retornará um erro.
 **ResourceType incorreto para o pool** (7)
 </dt> <dt>
 
-**DMTF reservado** (..)
+**DMTF Reservado** (..)
 </dt> <dt>
 
-**Parâmetros de método marcados-trabalho iniciado** (4096)
+**Parâmetros de método verificados – Trabalho iniciado** (4096)
 </dt> <dt>
 
 **Tamanho sem suporte** (4097)
 </dt> <dt>
 
-**Método reservado** (4098.. 32767)
+**Método Reservado** (4098..32767)
 </dt> <dt>
 
-**Específico do fornecedor** (32768.. 65535)
+**Específico do** fornecedor (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -115,8 +115,8 @@ Retorna um 0 em caso de êxito; caso contrário, retornará um erro.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo com suporte<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -125,7 +125,7 @@ Retorna um 0 em caso de êxito; caso contrário, retornará um erro.
 
 <dl> <dt>
 
-[**\_RESOURCEPOOLCONFIGURATIONSERVICE CIM**](cim-resourcepoolconfigurationservice.md)
+[**CIM \_ ResourcePoolConfigurationService**](cim-resourcepoolconfigurationservice.md)
 </dt> </dl>
 
  

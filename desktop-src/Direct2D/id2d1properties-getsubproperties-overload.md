@@ -3,7 +3,7 @@ title: Métodos ID2D1Properties GetSubProperties
 description: Obtém as subpropriedades da propriedade fornecida por índice.
 ms.assetid: AC1DA115-F6D4-47AB-8440-C4BD21E64A86
 keywords:
-- Métodos de sobrecarga GetSubProperties métodos Direct2D
+- Métodos de métodos de sobrecarga GetSubProperties Direct2D
 topic_type:
 - apiref
 api_type:
@@ -12,12 +12,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: a6fbdce8aebf33e11952eb5553236b32c62a701a
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 5b33a6ae7df0e1455c5dcb453c47c55c850390396699215368a1f9ed03ffe35b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105768802"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119917416"
 ---
 # <a name="id2d1propertiesgetsubproperties-methods"></a>Métodos ID2D1Properties:: GetSubProperties
 

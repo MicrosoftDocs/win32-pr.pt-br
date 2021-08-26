@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 23c96cb2bfc8113fd167c8b57a21a46285b691a6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6886bc9d9071f74e2124c460b9ed0504f013ea6fc55fb4e6c32514e2287309d6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115164"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120026426"
 ---
 # <a name="id3dxconstanttablesetfloatarray-method"></a>Método ID3DXConstantTable:: SetFloatArray
 
@@ -96,7 +96,7 @@ Se o método for bem sucedido, o valor de retorno será D3D \_ OK. Se o método 
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

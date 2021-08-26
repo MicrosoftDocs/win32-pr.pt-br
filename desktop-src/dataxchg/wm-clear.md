@@ -3,7 +3,7 @@ title: Mensagem de WM_CLEAR (WinUser. h)
 description: Um aplicativo envia uma \_ mensagem de limpeza do WM para um controle de edição ou caixa de combinação para excluir (limpar) a seleção atual, se houver, do controle de edição.
 ms.assetid: 6730a725-01ec-4821-9ffc-1ea267d665b3
 keywords:
-- Troca de dados de mensagem WM_CLEAR
+- WM_CLEAR Exchange de dados da mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 61a8e325704d1e8b953fe59bfaf4e8fcee62cf40
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c6820a9134f112b51474cd5b73e8545583cb02969b02a1bd1428138ebf1049dc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105789241"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120029106"
 ---
 # <a name="wm_clear-message"></a>Mensagem de limpeza do WM \_
 
@@ -50,7 +50,7 @@ Esse parâmetro não é usado e deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa mensagem não retorna um valor.
 
@@ -70,7 +70,7 @@ Quando enviado para uma caixa de combinação, a mensagem de **\_ limpeza do WM*
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

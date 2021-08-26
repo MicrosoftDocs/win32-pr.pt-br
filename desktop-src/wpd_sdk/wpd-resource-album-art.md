@@ -1,36 +1,36 @@
 ---
-description: Especifica uma imagem que representa a arte-final do álbum do objeto.
+description: Especifica uma imagem que representa a arte do álbum para o objeto .
 ms.assetid: 7a31ebb6-c4ab-4899-9c2e-c960aac4f0f9
 title: WPD_RESOURCE_ALBUM_ART
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4f4b800aa2ae22f2400f3195b85da6bd3bd35b4b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 336c56fbdb5970b483d3550c9a5eeba26e5d8da4a6111299208b467a1ef8b988
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501606"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119927686"
 ---
-# <a name="wpd_resource_album_art"></a>\_arte do \_ álbum de recursos WPD \_
+# <a name="wpd_resource_album_art"></a>WPD \_ RESOURCE \_ ALBUM \_ ART
 
-Especifica uma imagem que representa a arte-final do álbum do objeto.
+Especifica uma imagem que representa a arte do álbum para o objeto .
 
 Esse tipo de recurso deve dar suporte aos seguintes atributos.
 
 
 
-| Nome do atributo                                                                                                            | Obrigatório ou opcional                                   |
+| Nome do atributo                                                                                                            | Obrigatório ou Opcional                                   |
 |---------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
-| [\_largura de mídia WPD \_](media-properties.md)                                                                 | Obrigatórios.                                              |
-| [\_altura de mídia WPD \_](media-properties.md)                                                               | Obrigatórios.                                              |
-| [\_ \_ Tamanho total do atributo de recurso WPD \_ \_](resource-attribute-properties.md)              | Obrigatórios.                                              |
-| [o \_ atributo de recurso WPD \_ \_ pode \_ ler](attributes.md)                                     | Necessário se os clientes puderem ler este recurso.            |
-| [o \_ atributo de recurso WPD \_ \_ pode \_ gravar](attributes.md)                                   | Necessário se os clientes puderem gravar nesse recurso.        |
-| [o \_ atributo de recurso WPD \_ \_ pode \_ excluir](attributes.md)                                 | Necessário se os clientes puderem excluir esse recurso.          |
-| [\_atributo de recurso WPD \_ \_ ideal tamanho do \_ buffer de leitura \_ \_](attributes.md)   | Necessário se os clientes tiverem acesso de leitura ao recurso.  |
-| [\_atributo de recurso WPD \_ \_ ideal tamanho do \_ buffer de gravação \_ \_](attributes.md) | Necessário se os clientes tiverem acesso de gravação ao recurso. |
-| [\_formato de \_ atributo de recurso WPD \_](resource-attribute-properties.md)                       | Obrigatórios.                                              |
-| [\_chave de \_ recurso de atributo de recurso WPD \_ \_](resource-attribute-properties.md)                                              | Recomendadas                                            |
+| [LARGURA DE MÍDIA WPD \_ \_](media-properties.md)                                                                 | Obrigatórios.                                              |
+| [ALTURA DA MÍDIA WPD \_ \_](media-properties.md)                                                               | Obrigatórios.                                              |
+| [TAMANHO TOTAL \_ DO \_ ATRIBUTO DE RECURSO \_ WPD \_](resource-attribute-properties.md)              | Obrigatórios.                                              |
+| [O ATRIBUTO DE RECURSO WPD \_ \_ PODE \_ \_ LER](attributes.md)                                     | Necessário se os clientes puderem ler esse recurso.            |
+| [O ATRIBUTO DE RECURSO WPD \_ \_ PODE \_ \_ GRAVAR](attributes.md)                                   | Necessário se os clientes puderem gravar nesse recurso.        |
+| [O ATRIBUTO \_ DE RECURSO \_ WPD PODE \_ \_ EXCLUIR](attributes.md)                                 | Necessário se os clientes puderem excluir esse recurso.          |
+| [TAMANHO IDEAL DO BUFFER DE \_ \_ LEITURA DO ATRIBUTO \_ \_ \_ \_ DE RECURSO WPD](attributes.md)   | Necessário se os clientes têm acesso de leitura ao recurso.  |
+| [TAMANHO IDEAL \_ DO BUFFER DE GRAVAÇÃO \_ DO ATRIBUTO \_ \_ \_ \_ DE RECURSO WPD](attributes.md) | Necessário se os clientes têm acesso de gravação ao recurso. |
+| [FORMATO DE \_ ATRIBUTO DE \_ RECURSO WPD \_](resource-attribute-properties.md)                       | Obrigatórios.                                              |
+| [CHAVE DE RECURSO \_ DO \_ ATRIBUTO DE RECURSO \_ \_ WPD](resource-attribute-properties.md)                                              | Recomendado                                            |
 
 
 

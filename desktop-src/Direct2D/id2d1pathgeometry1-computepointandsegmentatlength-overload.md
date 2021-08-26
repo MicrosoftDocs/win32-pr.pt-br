@@ -3,7 +3,7 @@ title: Métodos ID2D1PathGeometry1 ComputePointAndSegmentAtLength
 description: Computa o ponto que existe em uma determinada distância ao longo da geometria do caminho, juntamente com o índice do segmento no qual o ponto está e o vetor direcional nesse ponto.
 ms.assetid: 993bfc4b-335c-0ca0-f34b-59e05aa173d2
 keywords:
-- Métodos ComputePointAndSegmentAtLength Direct2D
+- Direct2D métodos de ComputePointAndSegmentAtLength
 topic_type:
 - apiref
 api_type:
@@ -12,12 +12,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: f1776643d062db048a7448d2cd032b49dd6d5d77
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 7623d9e9e5801ee88a4965834d8f00bb3ba53c1fbe4cfea0f2030f01e80c32d1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104008006"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119917466"
 ---
 # <a name="id2d1pathgeometry1computepointandsegmentatlength-methods"></a>Métodos ID2D1PathGeometry1:: ComputePointAndSegmentAtLength
 

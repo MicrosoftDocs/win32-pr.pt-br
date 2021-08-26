@@ -4,12 +4,12 @@ ms.assetid: 09618be0-fe49-494f-940f-79ff8352097e
 title: Evento InkEdit. RecognitionResult (Inked. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 40d6206293b604e5540b5e6d0271e1ebe984a987
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 37ef71d38be31f32c59919a9ce4f24fd90b2d188d86a26e81821f6f7987da31d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171541"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119939076"
 ---
 # <a name="inkeditrecognitionresult-event"></a>Evento InkEdit. RecognitionResult
 
@@ -37,7 +37,7 @@ Um objeto [**IInkRecognitionResult**](/windows/desktop/api/msinkaut/nn-msinkaut-
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse evento não retorna um valor.
 
@@ -51,9 +51,9 @@ Esse método de evento é definido na interface **\_ IInkEditEvents** . A interf
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/>                                                 |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                     |
-| parâmetro<br/>                   | <dl> <dt>Inked. h (também requer Inked \_ i. c)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Inked. h (também requer Inked \_ i. c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkEd.dll</dt> </dl>                          |
 
 

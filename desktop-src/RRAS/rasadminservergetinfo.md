@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 115a2421db5efbafb72d73952684ff7758c6995b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1f6f83f7310700e774692d876bda979343da80aa45ea8012bf187e50f0af67bf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105782293"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120028446"
 ---
 # <a name="rasadminservergetinfo-function"></a>Função RasAdminServerGetInfo
 
-\[Essa função é fornecida somente para compatibilidade com versões anteriores do Windows NT Server 4,0. Ele retorna uma \_ chamada \_ de erro não \_ implementada no Windows Server 2003. Os aplicativos devem usar a função [**MprAdminServerGetInfo**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminservergetinfo) .\]
+\[essa função é fornecida somente para compatibilidade com versões anteriores com o Windows NT Server 4,0. ele retorna uma \_ chamada \_ de erro não \_ implementada no Windows Server 2003. Os aplicativos devem usar a função [**MprAdminServerGetInfo**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminservergetinfo) .\]
 
 A função **RasAdminServerGetInfo** Obtém a configuração de servidor de um servidor RAS.
 
@@ -46,7 +46,7 @@ DWORD RasAdminServerGetInfo(
 *lpszServer* \[ no\]
 </dt> <dd>
 
-Ponteiro para uma cadeia de caracteres Unicode terminada em **nulo** que especifica o nome do servidor RAS do Windows NT/Windows 2000. Se esse parâmetro for **nulo**, a função retornará informações sobre o computador local. Especifique o nome com " \\ \\ " caracteres à esquerda, no formato: \\ \\ *ServerName*.
+ponteiro para uma cadeia de caracteres Unicode terminada em **nulo** que especifica o nome do servidor RAS Windows NT/Windows 2000. Se esse parâmetro for **nulo**, a função retornará informações sobre o computador local. Especifique o nome com " \\ \\ " caracteres à esquerda, no formato: \\ \\ *ServerName*.
 
 </dd> <dt>
 
@@ -57,7 +57,7 @@ Ponteiro para a estrutura do [**\_ servidor RAS \_ 0**](ras-server-0-str.md) que
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for bem-sucedida, o valor de retorno será \_ êxito no erro.
 
@@ -75,7 +75,7 @@ Para enumerar todos os servidores RAS em um domínio, chame a função [**NetSer
 |----------------------------------|----------------------------------------------------------------------------------------|
 | Fim do suporte do cliente<br/> | Windows 2000 Professional<br/>                                                   |
 | Fim do suporte do servidor<br/> | Windows 2000 Server<br/>                                                         |
-| parâmetro<br/>                | <dl> <dt>Rassapi. h</dt> </dl>   |
+| Cabeçalho<br/>                | <dl> <dt>Rassapi. h</dt> </dl>   |
 | Biblioteca<br/>               | <dl> <dt>Rassapi. lib</dt> </dl> |
 | DLL<br/>                   | <dl> <dt>Rassapi.dll</dt> </dl> |
 

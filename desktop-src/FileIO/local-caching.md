@@ -1,17 +1,17 @@
 ---
 description: O cache local de dados é uma técnica usada para acelerar o acesso à rede para arquivos de dados. Ele envolve o armazenamento em cache de dados em clientes em vez de servidores, quando possível.
 ms.assetid: a7eb24b3-7e23-4798-8584-30a171fa4f04
-title: Cache local
+title: Caching local
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c8132bc51831db752422de1e3071ee3ef0b33a1b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f9d60fa71274bfcbf559ff57a3ab1a6fceba13d47315d80d9c3722a2a206b611
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103836997"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119927616"
 ---
-# <a name="local-caching"></a>Cache local
+# <a name="local-caching"></a>Caching local
 
 O *cache local* de dados é uma técnica usada para acelerar o acesso à rede para arquivos de dados. Ele envolve o armazenamento em cache de dados em clientes em vez de servidores, quando possível.
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: c8f13e46699c1bea42bd8f8a7f78313aeba68aaf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 76f5e581a4db81d9e260b388cc129d915121a69f3b360441e4220fd58aa0e623
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297022"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119938596"
 ---
 # <a name="itabletcursorbutton-interface"></a>Interface ITabletCursorButton
 
@@ -74,7 +74,7 @@ interface ITabletCursorButton : IUnknown
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                          |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/>                          |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                              |
 | Biblioteca<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 

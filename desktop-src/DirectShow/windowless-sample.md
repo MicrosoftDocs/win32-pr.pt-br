@@ -4,12 +4,12 @@ ms.assetid: 2141e465-996c-44e8-a081-38c3e1e0b01b
 title: Exemplo sem janela
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bb466b345497c320aba9d381a0a5559fda2e89c7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 248d5b877e98c22ff421cb8be86a630990b2b7f1ab66ba17f6cfd13eb659337b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104091026"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119982276"
 ---
 # <a name="windowless-sample"></a>Exemplo sem janela
 
@@ -21,13 +21,13 @@ Você pode capturar a imagem da janela de vídeo clicando com o botão direito d
 
 ## <a name="downloading-the-sample"></a>Baixando o exemplo
 
-Para baixar os exemplos do SDK do DirectShow, instale a versão mais recente do [SDK do Windows](https://msdn.microsoft.com/windowsvista/bb980924.aspx).
+para baixar os exemplos do SDK do DirectShow, instale a versão mais recente do [SDK do Windows](https://msdn.microsoft.com/windowsvista/bb980924.aspx).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Amostras do DirectShow](directshow-samples.md)
+[DirectShow Amostras](directshow-samples.md)
 </dt> </dl>
 
  

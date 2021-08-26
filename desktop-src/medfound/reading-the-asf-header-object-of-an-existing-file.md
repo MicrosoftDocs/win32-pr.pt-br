@@ -1,25 +1,25 @@
 ---
-description: Lendo o objeto de cabeçalho ASF de um arquivo existente
+description: Lendo o objeto de header ASF de um arquivo existente
 ms.assetid: 0e37f0d3-a37b-4f36-a133-7b1922e9944b
-title: Lendo o objeto de cabeçalho ASF de um arquivo existente
+title: Lendo o objeto de header ASF de um arquivo existente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b231cb0b9af6b24f84efaa6403a4774e66bbb646
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e653154d632786995bdf45dcfa8e67e3cfd55cdf3f90103ce1cf995179e1266b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105765606"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119887336"
 ---
-# <a name="reading-the-asf-header-object-of-an-existing-file"></a>Lendo o objeto de cabeçalho ASF de um arquivo existente
+# <a name="reading-the-asf-header-object-of-an-existing-file"></a>Lendo o objeto de header ASF de um arquivo existente
 
-O objeto ASF ContentInfo armazena informações que representam os objetos de cabeçalho ASF de um arquivo de mídia. Um objeto ContentInfo populado é necessário para ler e analisar um arquivo ASF existente.
+O objeto ContentInfo do ASF armazena informações que representam os objetos de título ASF de um arquivo de mídia. Um objeto ContentInfo populado é necessário para ler e analisar um arquivo ASF existente.
 
-Depois de criar o objeto ContentInfo chamando a função [**MFCreateASFContentInfo**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreateasfcontentinfo) , o aplicativo deve inicializá-lo com informações de cabeçalho do arquivo ASF a ser lido. Para popular o objeto, chame [**IMFASFContentInfo::P arseheader**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-parseheader).
+Depois de criar o objeto ContentInfo chamando a função [**MFCreateASFContentInfo,**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreateasfcontentinfo) o aplicativo deve inicializá-lo com informações de título do arquivo ASF que deve ser lido. Para popular o objeto, chame [**IMFASFContentInfo::P arseHeader**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-parseheader).
 
-**ParseHeader** requer um buffer de mídia que contenha o objeto de cabeçalho do arquivo asf. Uma opção é preencher um buffer de mídia com o objeto de cabeçalho para criar um fluxo de bytes para o arquivo e, em seguida, ler os primeiros 30 bytes de dados do fluxo de bytes em um buffer de mídia. Em seguida, você pode obter o tamanho passando os primeiros 24 bytes do objeto de cabeçalho para o método [**IMFASFContentInfo:: Getheaders**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-getheadersize) . Depois de obter o tamanho, você pode ler o objeto de cabeçalho inteiro em um buffer de mídia e passá-lo para **ParseHeader**. O método inicia a análise no deslocamento a partir do início do buffer de mídia especificado no parâmetro *cbOffsetWithinHeader* .
+**ParseHeader requer** um buffer de mídia que contém o Objeto de Header do arquivo ASF. Uma opção é preencher um buffer de mídia com o Objeto de Header para criar um fluxo de bytes para o arquivo e, em seguida, ler os primeiros 30 bytes de dados do fluxo de bytes em um buffer de mídia. Em seguida, você pode obter o tamanho passando os primeiros 24 bytes do objeto de título para o [**método IMFASFContentInfo::GetHeaderSize.**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-getheadersize) Depois de obter o tamanho, você pode ler todo o Objeto de Header em um buffer de mídia e passá-lo **para ParseHeader**. O método inicia a análise no deslocamento do início do buffer de mídia especificado no *parâmetro cbOffsetWithinHeader.*
 
-O código de exemplo a seguir cria e inicializa um objeto ContentInfo para ler um arquivo ASF existente contido em um fluxo de bytes. Primeiro, definimos uma função auxiliar que lê dados de um fluxo de bytes e aloca um buffer de mídia para manter os dados:
+O código de exemplo a seguir cria e inicializa um objeto ContentInfo para ler um arquivo ASF existente contido em um fluxo de byte. Primeiro, definimos uma função auxiliar que lê dados de um fluxo de byte e aloca um buffer de mídia para manter os dados:
 
 
 ```C++
@@ -96,7 +96,7 @@ HRESULT CreateContentInfo(IMFByteStream *pStream,
 
 
 
-O exemplo a seguir lê o objeto de cabeçalho ASF de um fluxo de bytes e popula um objeto ContentInfo do ASF.
+O exemplo a seguir lê o objeto de título ASF de um fluxo de byte e popula um objeto ContentInfo ASF.
 
 
 ```C++
@@ -174,7 +174,7 @@ HRESULT CreateContentInfo(IMFByteStream *pStream,
 
 
 > [!Note]  
-> Esses exemplos usam a função [SafeRelease](saferelease.md) para liberar ponteiros de interface.
+> Esses exemplos usam a [função SafeRelease](saferelease.md) para liberar ponteiros de interface.
 
  
 
@@ -182,16 +182,16 @@ HRESULT CreateContentInfo(IMFByteStream *pStream,
 
 <dl> <dt>
 
-[Objeto ASF ContentInfo](asf-contentinfo-object.md)
+[Objeto ContentInfo do ASF](asf-contentinfo-object.md)
 </dt> <dt>
 
-[Objeto de cabeçalho ASF](asf-file-structure.md)
+[Objeto de header ASF](asf-file-structure.md)
 </dt> <dt>
 
-[Suporte a ASF no Media Foundation](asf-support-in-media-foundation.md)
+[Suporte a ASF em Media Foundation](asf-support-in-media-foundation.md)
 </dt> <dt>
 
-[Obtendo informações de objetos de cabeçalho ASF](getting-information-from-asf-header-objects.md)
+[Obter informações de objetos de header ASF](getting-information-from-asf-header-objects.md)
 </dt> </dl>
 
  

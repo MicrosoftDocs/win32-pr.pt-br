@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - mfmediaengine.h
-ms.openlocfilehash: 73585bf63bc559f30ce114730274e30518497b05
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 98efb0054402f8bf019e91d639f16322a1378a23dfeee76cd31daea9d12bf6fe
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105812802"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120013036"
 ---
 # <a name="mf_media_engine_opm_status-enumeration"></a>\_Enumeração de \_ status de OPM do mecanismo de mídia MF \_ \_
 
@@ -92,8 +92,8 @@ OPM falhou por outros motivos.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 8.1 \[ apenas aplicativos de área de trabalho\]<br/>                                                 |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012 R2\]<br/>                                      |
+| Cliente mínimo com suporte<br/> | Windows 8.1 \[ somente aplicativos da área de trabalho\]<br/>                                                 |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[Somente aplicativos da área de trabalho R2\]<br/>                                      |
 | INSERI<br/>                      | <dl> <dt>Mfmediaengine. idl</dt> </dl> |
 
 

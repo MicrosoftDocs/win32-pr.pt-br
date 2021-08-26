@@ -4,18 +4,18 @@ ms.assetid: 05f0fdcb-74a4-441e-ac3c-d3d2c1dfee80
 title: Configurando o tipo de mídia do grupo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 365bd2171100a9d4bcfc48d70dbeb94d8a6639dd
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: c758e089a4f1240debb14c8159d039380b3473991860fef54470c12c1c00b1e1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105782226"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119928176"
 ---
 # <a name="setting-the-group-media-type"></a>Configurando o tipo de mídia do grupo
 
 \[Essa API não tem suporte e pode ser alterada ou não estar disponível no futuro.\]
 
-Todos os grupos devem definir um tipo de mídia descompactado, áudio ou vídeo. O tipo de mídia não compactada é o formato que os visualizadores veem ou ouvem durante a reprodução. Normalmente, a saída final estará em um formato compactado. Para obter mais informações, consulte [renderizando um projeto](rendering-a-project.md).
+Todos os grupos devem definir um tipo de mídia descompactado, áudio ou vídeo. O tipo de mídia não compactada é o formato que os visualizadores veem ou ouvem durante a reprodução. Normalmente, a saída final estará em um formato compactado. Para obter mais informações, consulte [renderizando um Project](rendering-a-project.md).
 
 Para definir o formato descompactado, crie uma estrutura [**de \_ \_ tipo de mídia am**](/windows/win32/api/strmif/ns-strmif-am_media_type) e preencha-a com o tipo principal apropriado, subtipo e cabeçalho de formato. Para vídeo, aloque uma estrutura [**VIDEOINFOHEADER**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) para o bloco de formato e defina a largura, a altura e a profundidade de bits. Para áudio, aloque uma estrutura [**WAVEFORMATEX**](/previous-versions/dd757713(v=vs.85)) para o bloco de formato e defina a taxa de amostragem, a profundidade de bits e o número de canais. Se você definir apenas o tipo principal, o DES fornecerá padrões razoáveis para os outros valores. Na prática, você deve definir os valores explicitamente para controlar a saída.
 
@@ -97,7 +97,7 @@ CoTaskMemFree(mt.pbFormat);
 
 
 
-Você também pode usar a classe [**CMediaType**](cmediatype.md) nas [classes base do DirectShow](directshow-base-classes.md) para gerenciar tipos de mídia. Ele contém alguns métodos auxiliares úteis e libera automaticamente o bloco de formato.
+você também pode usar a classe [**CMediaType**](cmediatype.md) no [DirectShow Classes Base](directshow-base-classes.md) para gerenciar tipos de mídia. Ele contém alguns métodos auxiliares úteis e libera automaticamente o bloco de formato.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

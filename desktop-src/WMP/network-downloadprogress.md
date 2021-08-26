@@ -1,9 +1,9 @@
 ---
-title: Network. downloadProgress
-description: A propriedade downloadProgress recupera a porcentagem de download concluído.
+title: Network.downloadProgress
+description: A propriedade downloadProgress recupera o percentual de download concluído.
 ms.assetid: bb57ce84-babb-4dc2-bc2b-c40cbb587e91
 keywords:
-- Network. downloadProgress Windows Media Player
+- Network.downloadProgress Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,42 +14,42 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 605d7d08b346c5cc279176098b2a6d593a2fb925
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ffc8d2707cd5fc24129363d53f9ee58fedf7b15c5da4eb5b80f032524ee66c09
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105781258"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119901716"
 ---
-# <a name="networkdownloadprogress"></a>Network. downloadProgress
+# <a name="networkdownloadprogress"></a>Network.downloadProgress
 
-A propriedade **downloadProgress** recupera a porcentagem de download concluído.
+A **propriedade downloadProgress** recupera o percentual de download concluído.
 
 ## <a name="syntax"></a>Syntax
 
-*Player*. *rede*. **downloadProgress**
+*player*. *network*. **downloadProgress**
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Essa propriedade é um **número** somente leitura (**Long**).
+Essa propriedade é um Número somente **leitura** (**long**).
 
 ## <a name="remarks"></a>Comentários
 
-Quando o controle do Windows Media Player está conectado a um arquivo de mídia que pode ser reproduzido e baixado ao mesmo tempo, a propriedade **downloadProgress** retorna a porcentagem do arquivo total que foi baixado. Atualmente, esse recurso tem suporte apenas em servidores Web. Os seguintes formatos de arquivo podem ser baixados e reproduzidos simultaneamente:
+Quando o controle Windows Media Player está conectado a um arquivo de mídia que pode ser reproduzido e baixado ao mesmo tempo, a propriedade **downloadProgress** retorna a porcentagem do arquivo total que foi baixado. Atualmente, esse recurso tem suporte apenas em servidores Web. Os seguintes formatos de arquivo podem ser baixados e tocados simultaneamente:
 
 -   Advanced Systems Format (ASF)
 -   Áudio do Windows Media (WMA)
 -   Vídeo do Windows Media (WMV)
 -   MP3
--   FUNCIONALIDADES
+-   Mpeg
 -   WAV
 -   Alguns arquivos AVI
 
-Use o *Player*. Evento de **buffer** para determinar quando o download começa e termina.
+Use o *Player*. **Evento de buffer** para determinar quando o download começa e termina.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de JScript a seguir usa a *rede*. **downloadProgress** para exibir a porcentagem de download concluído. As informações são exibidas em um DIV HTML criado com ID = "DP". O exemplo usa um temporizador com um intervalo de 1 segundo para atualizar a exibição. O objeto de **jogador** foi criado com ID = "Player".
+O exemplo JScript a seguir usa *Rede*. **downloadProgress para** exibir o percentual de download concluído. As informações são exibidas em um HTML DIV criado com ID = "DP". O exemplo usa um temporizador com um intervalo de 1 segundo para atualizar a exibição. O **objeto** Player foi criado com ID = "Player".
 
 
 ```JScript
@@ -87,7 +87,7 @@ function UpdateDP(){
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior.<br/>                              |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -99,7 +99,7 @@ function UpdateDP(){
 [**Objeto de rede**](network-object.md)
 </dt> <dt>
 
-[**Evento Player. buffering**](player-player-buffering.md)
+[**Evento Player.Buffering**](player-player-buffering.md)
 </dt> </dl>
 
  

@@ -4,20 +4,20 @@ ms.assetid: ef37d644-473f-4e51-9785-5b44fe0dce42
 title: Enumerando um heap
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 79ad6ea7e23f480b4d4e27885d296f1be1632053
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6c8e995dde36911947e1c510103503a99a307219bc2661a7efb9569fdab4ca20
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105754363"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119869836"
 ---
 # <a name="enumerating-a-heap"></a>Enumerando um heap
 
 O exemplo a seguir ilustra o uso da função [**HeapWalk**](/windows/desktop/api/HeapApi/nf-heapapi-heapwalk) para enumerar um heap.
 
-Primeiro, o exemplo cria um heap privado com a função [**HeapCreate**](/windows/desktop/api/HeapApi/nf-heapapi-heapcreate) . Em seguida, ele usa [**HeapLock**](/windows/desktop/api/HeapApi/nf-heapapi-heaplock) para bloquear o heap para que outros threads não possam acessar o heap enquanto ele está sendo enumerado. Em seguida, o exemplo chama [**HeapWalk**](/windows/desktop/api/HeapApi/nf-heapapi-heapwalk) com um ponteiro para uma estrutura de [**entrada de \_ heap \_ de processo**](/windows/win32/api/minwinbase/ns-minwinbase-process_heap_entry) e itera através do heap, imprimindo cada entrada para o console.
+Primeiro, o exemplo cria um heap privado com a [**função HeapCreate.**](/windows/desktop/api/HeapApi/nf-heapapi-heapcreate) Em seguida, ele [**usa HeapLock**](/windows/desktop/api/HeapApi/nf-heapapi-heaplock) para bloquear o heap para que outros threads não acessem o heap enquanto ele está sendo enumerado. Em seguida, o exemplo chama [**HeapWalk**](/windows/desktop/api/HeapApi/nf-heapapi-heapwalk) com um ponteiro para uma estrutura [**PROCESS HEAP \_ \_ ENTRY**](/windows/win32/api/minwinbase/ns-minwinbase-process_heap_entry) e itera pelo heap, imprimindo cada entrada no console.
 
-Após a conclusão da enumeração, o exemplo usa [**HeapUnlock**](/windows/desktop/api/HeapApi/nf-heapapi-heapunlock) para desbloquear o heap para que outros threads possam acessá-lo. Por fim, o exemplo chama [**HeapDestroy**](/windows/desktop/api/HeapApi/nf-heapapi-heapdestroy) para destruir o heap privado.
+Após a enumeração ser concluída, o exemplo usa [**HeapUnlock**](/windows/desktop/api/HeapApi/nf-heapapi-heapunlock) para desbloquear o heap para que outros threads possam acessá-lo. Por fim, o exemplo chama [**HeapDume para**](/windows/desktop/api/HeapApi/nf-heapapi-heapdestroy) destruir o heap privado.
 
 
 ```C++

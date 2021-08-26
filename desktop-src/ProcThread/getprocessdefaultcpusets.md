@@ -1,7 +1,7 @@
 ---
-description: Recupera a lista de conjuntos de CPU no conjunto padrão de processo que foi definido por SetProcessDefaultCpuSets. Se nenhum conjunto de CPU padrão for definido para um determinado processo, o RequiredIdCount será definido como 0 e a função terá sucesso.
+description: Recupera a lista de Conjuntos de CPU no conjunto padrão de processo que foi definido por SetProcessDefaultCpuSets. Se nenhum Conjunto de CPU padrão for definido para um determinado processo, RequiredIdCount será definido como 0 e a função terá êxito.
 ms.assetid: 85DC5331-9EC0-4603-94FD-B49E725301B1
-title: Função GetProcessDefaultCpuSets (Processthreadapi. h)
+title: Função GetProcessDefaultCpuSets (Processthreadapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_location:
 - Kernel32.dll
 - API-MS-Win-Core-ProcessThreads-L1-1-3.dll
 - KernelBase.dll
-ms.openlocfilehash: a5bd7c27b76efbbac923317837ac82b3a6700197
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3c5d71e4811411756719177647fda8dd76224f756629ad01794720d291565b21
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105766360"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119886696"
 ---
 # <a name="getprocessdefaultcpusets-function"></a>Função GetProcessDefaultCpuSets
 
-Recupera a lista de conjuntos de CPU no conjunto padrão de processo que foi definido por [**SetProcessDefaultCpuSets**](setprocessdefaultcpusets.md). Se nenhum conjunto de CPU padrão for definido para um determinado processo, o **RequiredIdCount** será definido como 0 e a função terá sucesso.
+Recupera a lista de Conjuntos de CPU no conjunto padrão de processo que foi definido por [**SetProcessDefaultCpuSets**](setprocessdefaultcpusets.md). Se nenhum Conjunto de CPU padrão for definido para um determinado processo, **RequiredIdCount** será definido como 0 e a função terá êxito.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,37 +44,37 @@ BOOL WINAPI GetProcessDefaultCpuSets(
 
 <dl> <dt>
 
-*Processo* \[ do no\]
+*Processo* \[ Em\]
 </dt> <dd>
 
-Especifica um identificador de processo para o processo a ser consultado. Esse identificador deve ter o \_ direito de \_ acesso de informações limitado à consulta de processo \_ . O valor retornado por [**GetCurrentProcess**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getcurrentprocess) também pode ser especificado aqui.
+Especifica um handle de processo para o processo a ser consultado. Esse handle deve ter o direito de acesso PROCESS \_ QUERY \_ LIMITED \_ INFORMATION. O valor retornado por [**GetCurrentProcess**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getcurrentprocess) também pode ser especificado aqui.
 
 </dd> <dt>
 
 *CpuSetIds* \[ out, opcional\]
 </dt> <dd>
 
-Especifica um buffer opcional para recuperar a lista de identificadores de conjunto de CPU.
+Especifica um buffer opcional para recuperar a lista de identificadores do Conjunto de CPU.
 
 </dd> <dt>
 
-*CpuSetIdCount* \[ no\]
+*CpuSetIdCount* \[ Em\]
 </dt> <dd>
 
-Especifica a capacidade do buffer especificado em **CpuSetIds**. Se o buffer for nulo, ele deverá ser 0.
+Especifica a capacidade do buffer especificada em **CpuSetIds.** Se o buffer for NULL, ele deverá ser 0.
 
 </dd> <dt>
 
-*RequiredIdCount* \[ fora\]
+*RequiredIdCount* \[ out\]
 </dt> <dd>
 
-Especifica a capacidade necessária do buffer para manter a lista completa de conjuntos de CPU de processo padrão. Após o retorno bem-sucedido, isso especifica o número de IDs preenchidas no buffer.
+Especifica a capacidade necessária do buffer para manter toda a lista de Conjuntos de CPU padrão do processo. No retorno bem-sucedido, isso especifica o número de IDs preenchidas no buffer.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Essa API retorna TRUE em caso de êxito. Se o buffer não for grande o suficiente, a API retornará FALSE e o valor **GetLastError** será um \_ buffer insuficiente de erro \_ . Esta API não pode falhar quando passou parâmetros válidos e o buffer de retorno é grande o suficiente.
+Essa API retorna TRUE em caso de êxito. Se o buffer não for grande o suficiente, a API retornará FALSE e o **valor GetLastError** será ERROR \_ INSUFFICIENT \_ BUFFER. Essa API não pode falhar quando os parâmetros válidos são passados e o buffer de retorno é grande o suficiente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -82,10 +82,10 @@ Essa API retorna TRUE em caso de êxito. Se o buffer não for grande o suficient
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Aplicativos UWP para aplicativos da área de trabalho do Windows 10 \|\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | Aplicativos do Windows Server 2016 \[ Desktop aplicativos \| UWP\]<br/>                                   |
-| parâmetro<br/>                   | <dl> <dt>Processthreadsapi. h</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Windows. h</dt> </dl>          |
+| Cliente mínimo com suporte<br/> | \[Windows 10 aplicativos UWP de aplicativos da área \| de trabalho\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2016 aplicativos UWP de aplicativos da área \| de trabalho\]<br/>                                   |
+| Cabeçalho<br/>                   | <dl> <dt>Processthreadsapi.h</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Windows.h</dt> </dl>          |
 | DLL<br/>                      | <dl> <dt>Kernel32.dll</dt> </dl>       |
 
 

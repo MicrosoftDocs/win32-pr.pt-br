@@ -1,15 +1,15 @@
 ---
-description: O método NotifyParentalLevelChange habilita ou desabilita a manipulação de eventos para comandos temporários de nível de gerenciamento pai.
+description: O método NotifyParentalLevelChange habilita ou desabilita a manipulação de eventos para comandos temporários de nível de gerenciamento dos pais.
 ms.assetid: c8252cc6-a83f-4cce-ba3e-7db669eeb465
-title: Método NotifyParentalLevelChange (Segment. h)
+title: Método NotifyParentalLevelChange (Segment.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cc47b7d78af8cfdd32aa63361411e769c375ddf1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8382b52f64d4196b0ef74e5f3285e9bb047a4e1f77d3b0e5bec4da218ee753b3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759433"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119997356"
 ---
 # <a name="notifyparentallevelchange-method"></a>Método NotifyParentalLevelChange
 
@@ -18,7 +18,7 @@ ms.locfileid: "105759433"
 
  
 
-O `NotifyParentalLevelChange` método habilita ou desabilita a manipulação de eventos para comandos temporários de nível de gerenciamento pai.
+O `NotifyParentalLevelChange` método habilita ou desabilita a manipulação de eventos para comandos temporários de nível de gerenciamento dos pais.
 
 ``` syntax
 MSWebDVD.NotifyParentalLevelChange(bNotify)
@@ -31,7 +31,7 @@ MSWebDVD.NotifyParentalLevelChange(bNotify)
 <span id="bNotify"></span><span id="bnotify"></span><span id="BNOTIFY"></span>*bNotify*
 </dt> <dd>
 
-Especifica um valor booliano que indica se o aplicativo será notificado quando o objeto MSWebDVD encontrar segmentos de vídeo com uma classificação mais restritiva do que a classificação geral do disco.
+Especifica um valor booliana que indica se o aplicativo é notificado ou não quando o objeto MSWebDVD encontra segmentos de vídeo com uma classificação mais restritiva do que a classificação geral do disco.
 
 </dd> </dl>
 
@@ -41,7 +41,7 @@ Sem valor de retorno.
 
 ## <a name="remarks"></a>Comentários
 
-As notificações de gerenciamento de pais são desabilitadas por padrão. Isso significa que os comandos temporários dos pais do disco são permitidos, mas ignorados e o disco será reproduzido sem interrupção. Chame esse método durante a inicialização do seu aplicativo se você precisar manipular comandos temporários no nível de gerenciamento pai do disco. Para desabilitar o gerenciamento de pais depois que ele estiver habilitado, chame esse método com um argumento de false. Para obter mais detalhes sobre o gerenciamento de pais, consulte [**AcceptParentalLevelChange**](acceptparentallevelchange-method.md).
+As notificações de gerenciamento dos pais são desabilitadas por padrão. Isso significa que os comandos temporários dos pais do disco são permitidos, mas ignorados e o disco será reproduzir sem interrupção. Chame esse método durante a inicialização do aplicativo se você precisar lidar com comandos temporários de nível de gerenciamento dos pais do disco. Para desabilitar o gerenciamento de pais depois que ele for habilitado, chame esse método com um argumento false. Para obter mais detalhes sobre o gerenciamento dos pais, [**consulte AcceptParentalLevelChange**](acceptparentallevelchange-method.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,7 +49,7 @@ As notificações de gerenciamento de pais são desabilitadas por padrão. Isso 
 
 | Requisito | Valor |
 |-------------------|--------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Segment. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Segment.h</dt> </dl> |
 
 
 

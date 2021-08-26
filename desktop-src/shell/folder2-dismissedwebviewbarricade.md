@@ -1,7 +1,7 @@
 ---
-description: Chamado em resposta à exibição da Web Barricade sendo Descartado pelo usuário.
+description: Chamado em resposta à exibição da Web que está sendo ignorado pelo usuário.
 ms.assetid: 170893b6-c947-45b1-b717-a93a0b083bda
-title: Método Pasta2. DismissedWebViewBarricade (shldisp. h)
+title: Método Folder2.DismissedWebViewBarricade (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: cdedc7292b0dd52ca903b944993e32df1ec2c3b9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1a5380330e807eabe76cf1223811fd06147468e12d0c13244b0e44d391aa6e83
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104091613"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119937096"
 ---
-# <a name="folder2dismissedwebviewbarricade-method"></a>Método Pasta2. DismissedWebViewBarricade
+# <a name="folder2dismissedwebviewbarricade-method"></a>Método Folder2.DismissedWebViewBarricade
 
-Chamado em resposta à exibição da Web Barricade sendo Descartado pelo usuário.
+Chamado em resposta à exibição da Web que está sendo ignorado pelo usuário.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -37,19 +37,19 @@ Folder2.DismissedWebViewBarricade()
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Um aplicativo chama esse método depois que o usuário ignora a exibição da Web Barricade.
+Um aplicativo chama esse método depois que o usuário descarta a exibição da Web.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir usa **DismissedWebViewBarricade** para especificar que a Barricade de exibição da Web para a pasta C: \\ Windows foi ignorada. O uso adequado é mostrado para JScript, VBScript e Visual Basic.
+O exemplo a seguir **usa DismissedWebViewBarricade** para especificar que a exibição da Web para a pasta C: \\ Windows foi descartada. O uso adequado é mostrado para JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -70,7 +70,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -122,11 +122,11 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 5,0 ou posterior)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, Windows aplicativos da área de \[ trabalho XP\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                          |
+| Cabeçalho<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 5.0 ou posterior)</dt> </dl> |
 
 
 

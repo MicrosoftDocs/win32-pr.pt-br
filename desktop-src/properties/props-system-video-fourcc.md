@@ -1,17 +1,17 @@
 ---
 description: Especifica o código FOURCC para o fluxo de vídeo.
 ms.assetid: c5054fc6-1273-4491-8fb9-30c4b8fc663f
-title: System. video. FourCC
+title: System.Video.FourCC
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 475b1cebc0d19a89c70e0ebae2be4b7673697c23
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cb575eff3a39de7ee737ff947113d0d4dab501bc07215319a13667b9f9869c14
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170323"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119944996"
 ---
-# <a name="systemvideofourcc"></a>System. video. FourCC
+# <a name="systemvideofourcc"></a>System.Video.FourCC
 
 Especifica o código FOURCC para o fluxo de vídeo.
 
@@ -32,15 +32,15 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-Um código FOURCC é um inteiro sem sinal de 32 bits que é criado pela concatenação de quatro caracteres ASCII. Por exemplo, o FOURCC para o vídeo H. 264 é ' H264 ' ou 0x34363248.
+Um código FOURCC é um inteiro sem sinal de 32 bits que é criado concatenando quatro caracteres ASCII. Por exemplo, o vídeo FOURCC para H.264 é 'H264' ou 0x34363248.
 
-Os valores de PKEY são definidos em Propkey. h.
+Os valores PKEY são definidos em Propkey.h.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[Propertydescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -49,19 +49,19 @@ Os valores de PKEY são definidos em Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[numberFormat](./propdesc-schema-numberformat.md)
+[Numberformat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -76,7 +76,7 @@ Os valores de PKEY são definidos em Propkey. h.
 [editControl](./propdesc-schema-editcontrol.md)
 </dt> <dt>
 
-[filterControl](./propdesc-schema-filtercontrol.md)
+[Filtercontrol](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
 [queryControl](./propdesc-schema-querycontrol.md)

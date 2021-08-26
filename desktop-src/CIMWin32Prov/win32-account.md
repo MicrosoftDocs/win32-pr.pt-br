@@ -1,8 +1,8 @@
 ---
-description: Contém informações sobre contas de usuário e contas de grupo conhecidas pelo sistema de computador que executa o Windows.
+description: Contém informações sobre contas de usuário e contas de grupo conhecidas para o sistema de computadores que executa Windows.
 ms.assetid: c0916f20-05be-4282-9642-28cec606bfd7
 ms.tgt_platform: multiple
-title: Classe Win32_Account
+title: Win32_Account classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,16 +23,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 2af601799095192d7af4ffedce0c8e0cd28bff21
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: dc98f826ddae09bd507517e564ec2d9387d6bf17147d5eac36596bdb9d1e81ba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089543"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119918116"
 ---
-# <a name="win32_account-class"></a>\_Classe de conta Win32
+# <a name="win32_account-class"></a>Classe Conta \_ win32
 
-A [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) abstrata da **\_ conta do Win32** contém informações sobre contas de usuário e contas de grupo conhecidas pelo sistema de computador executando o Windows. Os nomes de usuário ou grupo reconhecidos por um domínio do Windows são descendentes (ou membros) dessa classe.
+A **classe WMI abstrata conta \_ win32** contém informações sobre contas de usuário e contas de grupo conhecidas para o sistema de computadores que executa Windows. [](/windows/desktop/WmiSdk/retrieving-a-class) Nomes de usuário ou grupo reconhecidos por Windows domínio são descendentes (ou membros) dessa classe.
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas. As propriedades são listadas em ordem alfabética, não em ordem MOF.
 
@@ -56,13 +56,13 @@ class Win32_Account : CIM_LogicalElement
 
 ## <a name="members"></a>Membros
 
-A classe de **\_ conta Win32** tem estes tipos de membros:
+A **classe Conta \_ do Win32** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe de **\_ conta Win32** tem essas propriedades.
+A **classe Conta \_ do Win32** tem essas propriedades.
 
 <dl> <dt>
 
@@ -75,12 +75,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Caption")
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Legenda")
 </dt> </dl>
 
-Breve descrição do objeto.
+Descrição curta do objeto.
 
-Essa propriedade é herdada da classe [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md) .
+Essa propriedade é herdada da [**classe CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -98,7 +98,7 @@ Qualificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) (
 
 Descrição do objeto.
 
-Essa propriedade é herdada da classe [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md) .
+Essa propriedade é herdada da [**classe CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -111,46 +111,46 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**chave**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) (" \| domínio de funções de gerenciamento de rede win32api \| ")
+Qualificadores: [**chave**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Domínio de funções de gerenciamento de rede Win32API") \| \|
 </dt> </dl>
 
-Nome do domínio do Windows ao qual pertence um grupo ou usuário.
+Nome do domínio Windows ao qual um grupo ou usuário pertence.
 
-Exemplo: "NA-SALEs"
+Exemplo: "NA-SALES"
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Componente DMTF \| 1,5 "), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) (" data de instalação ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Data de instalação")
 </dt> </dl>
 
 Data e hora em que o objeto foi instalado. Essa propriedade não requer um valor para indicar que o objeto está instalado.
 
-Essa propriedade é herdada da classe [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md) .
+Essa propriedade é herdada da [**classe CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **LocalAccount**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [ **fixos**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Qualificadores: [ **corrigidos**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Se for **true**, a conta será definida no computador local. Para recuperar apenas as contas definidas no computador local, crie uma consulta que inclua a condição "LocalAccount =**true**".
+Se **TRUE**, a conta será definida no computador local. Para recuperar apenas as contas definidas no computador local, projete uma consulta que inclua a condição "LocalAccount=**TRUE".**
 
 </dd> <dt>
 
@@ -163,10 +163,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name"), [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("win32api \| Network Management estruturas \| name")
+Qualificadores: [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nome"), [**chave**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API \| Network Management Structures \| name")
 </dt> </dl>
 
-Nome da conta do sistema Windows no domínio especificado pela propriedade de **domínio** dessa classe. Essa propriedade substitui a propriedade **Name** herdada de [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Nome da Windows do sistema no domínio especificado pela **propriedade Domain** dessa classe. Essa propriedade substitui a **propriedade Name** herdada de [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
 
 </dd> <dt>
 
@@ -179,10 +179,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**fixos**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) (" \| identificadores de segurança do win32api (SIDs)")
+Qualificadores: [**Corrigido,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SIDs (Identificadores de Segurança \| win32API)")
 </dt> </dl>
 
-SID (identificador de segurança) desta conta. Um SID é um valor de cadeia de caracteres de comprimento variável usado para identificar um confiável. Cada conta tem um SID exclusivo emitido por uma autoridade (como um domínio do Windows), armazenado em um banco de dados de segurança. Quando um usuário faz logon, o sistema recupera o SID do usuário do banco de dados e o coloca no token de acesso do usuário. O sistema usa o SID no token de acesso do usuário para identificar o usuário em todas as interações subsequentes com a segurança do Windows. Quando um SID é usado como o identificador exclusivo para um usuário ou grupo, ele não pode ser usado novamente para identificar outro usuário ou grupo.
+SID (identificador de segurança) dessa conta. Um SID é um valor de cadeia de caracteres de comprimento variável usado para identificar um confiável. Cada conta tem um SID exclusivo emitido por uma autoridade (como um domínio Windows), armazenado em um banco de dados de segurança. Quando um usuário faz login, o sistema recupera o SID do usuário do banco de dados e o coloca no token de acesso do usuário. O sistema usa o SID no token de acesso do usuário para identificar o usuário em todas as interações subsequentes com Windows segurança. Quando um SID tiver sido usado como o identificador exclusivo de um usuário ou grupo, ele não poderá ser usado novamente para identificar outro usuário ou grupo.
 
 </dd> <dt>
 
@@ -195,7 +195,7 @@ Tipo de dados: **uint8**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**Fixed**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("win32api \| tipos de enumeração de controle de acesso do \| \_ nome SID \_ use")
+Qualificadores: [**Corrigido,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Tipos de enumeração de controle de acesso Win32API \| SID NAME \| \_ \_ USE")
 </dt> </dl>
 
 Valores enumerados que especificam o tipo de SID (identificador de segurança).
@@ -276,12 +276,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("status")
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Status")
 </dt> </dl>
 
-Status atual do objeto. Vários status de operação e não operacional podem ser definidos. Os status operacionais incluem: "OK", "degradado" e "Pred falha" (um elemento, como uma unidade de disco rígido habilitado para inteligente, pode estar funcionando corretamente, mas prevê uma falha em um futuro próximo). Os status não operacionais incluem: "erro", "Iniciando", "parando" e "serviço". O último, "serviço", pode ser aplicado durante o espelhamento de espelho de um disco, recarregamento de uma lista de permissões de usuário ou outro trabalho administrativo. Nem todo esse trabalho está online, mas o elemento gerenciado não é "OK" nem em um dos outros Estados.
+Status atual do objeto. Vários status operacionais e não operacionais podem ser definidos. Os status operacionais incluem: "OK", "Degradado" e "Pred Fail" (um elemento, como uma unidade de disco rígido habilitada para SMART, pode estar funcionando corretamente, mas prevê uma falha em um futuro próximo). Os status nãooperacionais incluem: "Error", "Starting", "Stopping" e "Service". O último, "Serviço", pode ser aplicado durante a resilvering de espelho de um disco, o recarregamento de uma lista de permissões de usuário ou outro trabalho administrativo. Nem todo esse trabalho está online, mas o elemento gerenciado não é "OK" nem em um dos outros estados.
 
-Essa propriedade é herdada da classe [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md) .
+Essa propriedade é herdada da [**classe CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 Os valores são:
 
@@ -296,28 +296,28 @@ Os valores são:
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Erro** ("erro")
+**Erro** ("Erro")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-**Degradado** ("degradado")
+**Degradado** ("Degradado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconhecido** ("desconhecido")
+**Desconhecido** ("Desconhecido")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Falha de Pred** ("Pred Fail")
+**Pred Fail** ("Pred Fail")
 
 
 </dt> <dd></dd> <dt>
@@ -331,42 +331,42 @@ Os valores são:
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Parando** ("parando")
+**Parando** ("Parando")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Service"></span><span id="service"></span><span id="SERVICE"></span>
 
-**Serviço** ("serviço")
+**Serviço** ("Serviço")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>
 
-**Sob estresse** ("sob estresse")
+**Stressed** ("Stressed")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NonRecover"></span><span id="nonrecover"></span><span id="NONRECOVER"></span>
 
-Não **recuperar** ("Recover")
+**NonRecover** ("NonRecover")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>
 
-**Sem contato** ("sem contato")
+**Sem contato** ("Sem contato")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lost_Comm"></span><span id="lost_comm"></span><span id="LOST_COMM"></span>
 
-**Perda de comunicação** ("perda de comunicação")
+**Perda de vírgula** ("comm perdida")
 
 
 </dt> <dd></dd> </dl>
@@ -375,7 +375,7 @@ Não **recuperar** ("Recover")
 
 ## <a name="remarks"></a>Comentários
 
-A classe de **\_ conta Win32** é derivada de [**CIM \_ LogicalElement**](cim-logicalelement.md).
+A **classe Conta \_ win32** é derivada de [**CIM \_ LogicalElement.**](cim-logicalelement.md)
 
 ## <a name="examples"></a>Exemplos
 

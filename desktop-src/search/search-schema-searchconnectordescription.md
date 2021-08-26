@@ -4,12 +4,12 @@ ms.assetid: a6b45864-210d-4099-804d-7548fd8eb562
 title: Elemento searchConnectorDescriptionType (esquema do conector de pesquisa)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7edb69647567b7e18e25e11dcd0fc773d0be7902
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2f228097e905ea6e60bb9197bcf8b8b381671a52f3375849af992f903df6e8b5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105763423"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119937906"
 ---
 # <a name="searchconnectordescriptiontype-element-search-connector-schema"></a>Elemento searchConnectorDescriptionType (esquema do conector de pesquisa)
 
@@ -114,19 +114,19 @@ O <searchConnectorDescriptionType> elemento é o contêiner de nível superior p
 |                | [Elemento isSearchOnlyItem (esquema do conector de pesquisa)](search-schema-sconn-issearchonlyitem.md)                           |
 |                | [Elemento isDefaultSaveLocation (esquema do conector de pesquisa)](search-schema-sconn-isdefaultsavelocation.md)                 |
 |                | [Elemento isDefaultNonOwnerSaveLocation (esquema do conector de pesquisa)](search-schema-sconn-isdefaultnonownersavelocation.md) |
-|                | [Elemento Description (esquema do conector de pesquisa)](search-schema-sconn-description.md)                                     |
+|                | [Elemento description (esquema do conector de pesquisa)](search-schema-sconn-description.md)                                     |
 |                | [Elemento iconReference (esquema do conector de pesquisa)](search-schema-sconn-iconreference.md)                                 |
 |                | [Elemento imageLink (esquema do conector de pesquisa)](search-schema-sconn-imagelink.md)                                         |
-|                | [Elemento Author (esquema do conector de pesquisa)](search-schema-sconn-author.md)                                               |
+|                | [Elemento author (esquema do conector de pesquisa)](search-schema-sconn-author.md)                                               |
 |                | [Elemento dateCreated (esquema do conector de pesquisa)](search-schema-sconn-datecreated.md)                                     |
 |                | [Elemento templateInfo (esquema do conector de pesquisa)](search-schema-sconn-templateinfo.md)                                   |
-|                | [Elemento LocationProvider (esquema do conector de pesquisa)](search-schema-sconn-locationprovider.md)                           |
-|                | [Elemento Scope (esquema do conector de pesquisa)](search-schema-sconn-scope.md)                                                 |
+|                | [Elemento locationProvider (esquema do conector de pesquisa)](search-schema-sconn-locationprovider.md)                           |
+|                | [Elemento scope (Esquema do Conector de Pesquisa)](search-schema-sconn-scope.md)                                                 |
 |                | [Elemento propertyStore (esquema do conector de pesquisa)](search-schema-sconn-propertystore.md)                                 |
 |                | [Elemento includeInStartMenuScope (esquema do conector de pesquisa)](search-schema-sconn-includeinstartmenuscope.md)             |
-|                | [Elemento Domain (esquema do conector de pesquisa)](search-schema-sconn-domain.md)                                               |
+|                | [Elemento domain (esquema do conector de pesquisa)](search-schema-sconn-domain.md)                                               |
 |                | [Elemento supportsAdvancedQuerySyntax (esquema do conector de pesquisa)](search-schema-sconn-supportsadvancedquerysyntax.md)     |
-|                | [Elemento IsIndexed (esquema do conector de pesquisa)](search-schema-sconn-isindexed.md)                                         |
+|                | [Elemento isIndexed (esquema do conector de pesquisa)](search-schema-sconn-isindexed.md)                                         |
 
 
 
@@ -138,7 +138,7 @@ O <searchConnectorDescriptionType> elemento é o contêiner de nível superior p
 
 | Atributo | Descrição                                                                      |
 |-----------|----------------------------------------------------------------------------------|
-| editor | Opcional. O nome de exibição do Publicador que fornece o conector de pesquisa.      |
+| publicador | Opcional. O nome de exibição do editor que fornece o conector de pesquisa.      |
 | product   | Opcional. O nome de exibição do produto ao qual o conector de pesquisa se aplica. |
 
 
@@ -147,11 +147,11 @@ O <searchConnectorDescriptionType> elemento é o contêiner de nível superior p
 
 ## <a name="remarks"></a>Comentários
 
-Os conectores de pesquisa para pesquisa federada não podem ser usados em bibliotecas. O esquema para conectores de pesquisa de biblioteca é uma extensão do esquema descrito aqui e inclui informações específicas para bibliotecas.
+Conectores de pesquisa para pesquisa federada não podem ser usados em bibliotecas. O esquema para conectores de pesquisa de biblioteca é uma extensão do esquema descrito aqui e inclui informações específicas para bibliotecas.
 
 ## <a name="example-of-a-search-connector-description-file"></a>Exemplo de um arquivo de descrição do conector de pesquisa
 
-Veja a seguir um exemplo de um arquivo de descrição do conector de pesquisa para um serviço Web de pesquisa federado.
+A seguir está um exemplo de um arquivo de Descrição do Conector de Pesquisa para um serviço Web de pesquisa federada.
 
 
 ```
@@ -179,7 +179,7 @@ Veja a seguir um exemplo de um arquivo de descrição do conector de pesquisa pa
 
 
 
-Veja a seguir um exemplo de um arquivo de descrição do conector de pesquisa para um manipulador de protocolo MAPI.
+A seguir está um exemplo de um arquivo de Descrição do Conector de Pesquisa para um manipulador de protocolo MAPI.
 
 
 ```
@@ -209,7 +209,7 @@ Veja a seguir um exemplo de um arquivo de descrição do conector de pesquisa pa
 [Visão geral do esquema de descrição do conector de pesquisa](search-sconn-desc-schema-entry.md)
 </dt> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
 [Pesquisa federada no Windows](-search-federated-search-overview.md)

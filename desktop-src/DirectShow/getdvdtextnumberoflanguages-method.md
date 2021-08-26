@@ -4,12 +4,12 @@ ms.assetid: aa4b737b-abe0-496a-8570-f3a8e711c7ce
 title: Método GetDVDTextNumberOfLanguages
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cc0864eb60631833a60b721a992a906012a252f4
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: a54b77ca6a27c7fa82ec0bb171246d6a679bae32bfedc29968571d8f40777584
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103920011"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119905396"
 ---
 # <a name="getdvdtextnumberoflanguages-method"></a>Método GetDVDTextNumberOfLanguages
 
@@ -26,7 +26,7 @@ O `GetDVDTextNumberOfLanguages` método recupera o número de idiomas de texto d
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retorna um valor inteiro especificando o número de idiomas de texto disponíveis.
+Retorna um valor inteiro que especifica o número de idiomas de texto disponíveis.
 
 ## <a name="see-also"></a>Confira também
 

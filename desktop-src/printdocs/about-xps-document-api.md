@@ -1,19 +1,19 @@
 ---
-description: A API de documento XPS implementa o modelo de objeto XPS e permite que os desenvolvedores criem um OM XPS, manipulem conteúdo de documento XPS em programas nativos do Windows \\ \\ e salvem o OM XPS em um arquivo ou fluxo como um documento XPS.
+description: a API de documento xps implementa o modelo de objeto xps e permite que os desenvolvedores criem um om xps, manipulem conteúdo de documento xps em programas nativos de Windows \\ \\ e salvem o om xps em um arquivo ou fluxo como um documento XPS.
 ms.assetid: dbb48dae-1ee6-4a8b-9184-8b796755087e
 title: Sobre a API de documento XPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e24a93061b7f09697a987aa83be121dac42703c8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 61b2363bba55fed184b1cf80bfc81fac9474444f77c9b867b461940e6b72d8f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105770621"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119950906"
 ---
 # <a name="about-xps-document-api"></a>Sobre a API de documento XPS
 
-A [API de documento XPS](documents-xps.md) implementa o modelo de objeto XPS e permite que os desenvolvedores criem um om XPS, manipulem conteúdo de documento XPS em programas nativos do Windows \\ \\ e salvem o OM XPS em um arquivo ou fluxo como um documento XPS. Os desenvolvedores de módulos de pipeline de filtro XPSDrv também podem usar a API de documento XPS para manipular o conteúdo do documento XPS em um filtro de driver de impressora XPSDrv.
+a [API de documento xps](documents-xps.md) implementa o modelo de objeto xps e permite que os desenvolvedores criem um om xps, manipulem conteúdo de documento xps em programas nativos de Windows \\ \\ e salvem o om xps em um arquivo ou fluxo como um documento XPS. Os desenvolvedores de módulos de pipeline de filtro XPSDrv também podem usar a API de documento XPS para manipular o conteúdo do documento XPS em um filtro de driver de impressora XPSDrv.
 
 ## <a name="xps-document-api-overview"></a>Visão geral da API de documento XPS
 

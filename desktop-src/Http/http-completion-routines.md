@@ -4,12 +4,12 @@ description: Os aplicativos têm várias opções para receber indicações de c
 ms.assetid: c48a64d2-b6c8-4694-8600-f84751954bad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8aee05efc8284cb29130efae4bcaefb4834a3fb4
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: dd80259d806d81153a649ad606e40c10986090442e3cab5e04bd864367441871
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103917288"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119981666"
 ---
 # <a name="http-completion-routines"></a>Rotinas de conclusão de HTTP
 
@@ -33,7 +33,7 @@ Aplicativos que preferem não bloquear podem usar a estrutura [**sobreposta**](/
 
 
 
- 
+ 
 
 ## <a name="returning-the-number-of-bytes-read"></a>Retornando o número de bytes lidos
 
@@ -54,17 +54,17 @@ A tabela a seguir resume o comportamento de conclusão para a conclusão síncro
 
 
 
- 
+ 
 
 > [!Note]  
 > \*Esse parâmetro também pode ser *pBytesSent* ou *pBytesRead*.
 
- 
+ 
 
 > [!Note]  
 > \*\*É recomendável que os aplicativos passem um **valor nulo** no *pBytesReceived* para operações assíncronas e obtenham o número de bytes recebidos de [**GetOverlappedResult**](/windows/desktop/api/ioapiset/nf-ioapiset-getoverlappedresult) ou [**GetQueuedCompletionStatus**](/windows/desktop/api/ioapiset/nf-ioapiset-getqueuedcompletionstatus).
 
- 
+ 
 
 ## <a name="return-codes"></a>Códigos de retorno
 
@@ -78,6 +78,6 @@ Quando o erro \_ de e/s \_ está pendente ou nenhum \_ erro é retornado da cham
 
 Se a API do servidor HTTP retornar algo diferente de erro \_ e/s \_ pendente ou nenhum \_ erro, da chamada de função assíncrona, a rotina de conclusão não será sinalizada e o erro será RETORNADO diretamente pela API.
 
- 
+ 
 
- 
+ 

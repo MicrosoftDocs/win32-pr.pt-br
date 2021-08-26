@@ -4,16 +4,16 @@ description: IAgentCommands setvoice
 ms.assetid: dfb3b58a-7f24-4366-8f04-93a9e956fdc8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a8e29936dbca65ffded5f8a5e5ea5297b28362e
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: d02fb124b51a3be1796258fdcb8ffa31d8b81b59636027f3d99497b27cd2bd00
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104454001"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119961896"
 ---
 # <a name="iagentcommandssetvoice"></a>IAgentCommands:: setvoice
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 ``` syntax
 HRESULT SetVoice(
@@ -84,7 +84,7 @@ Exceto por erros usando os caracteres de formatação de repetição ou agrupame
 > [!Note]  
 > Os recursos de gramática disponíveis podem depender do mecanismo de reconhecimento de fala. Talvez você queira verificar com o fornecedor do mecanismo para determinar quais opções de gramática têm suporte. Use o [**SRModeID**](srmodeid-property.md) para usar um mecanismo específico.
 
- 
+ 
 
 A operação dessa propriedade depende do estado do estado de reconhecimento de fala do servidor do Microsoft Agent. Por exemplo, se o reconhecimento de fala estiver desabilitado ou não estiver instalado, essa função não terá efeito imediato. No entanto, se o reconhecimento de fala estiver habilitado durante uma sessão, o comando ficará acessível quando seu aplicativo cliente for de entrada-ativo.
 
@@ -93,6 +93,6 @@ A operação dessa propriedade depende do estado do estado de reconhecimento de 
 [**IAgentCommands:: getvoice**](iagentcommands--getvoice.md), [**IAgentCommands:: SetCaption**](iagentcommands--setcaption.md), [**IAgentCommands:: setVisible**](iagentcommands--setvisible.md)
 
 
- 
+ 
 
- 
+ 

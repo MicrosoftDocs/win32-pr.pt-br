@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: classe EsentOSSnapshotInvalidSnapIdException'
+description: 'Saiba mais sobre: Classe EsentOSSnapshotInvalidSnapIdException'
 title: Classe EsentOSSnapshotInvalidSnapIdException
 TOCTitle: EsentOSSnapshotInvalidSnapIdException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentOSSnapshotInvalidSnapIdException
@@ -24,29 +24,29 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5ab41fc28a1f6eb561756abd97a68695dd1d4f08
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bbbd15d8962bb711e359d66bc3413bc18b8d18121464cc6a19777348e0cbcbe9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010888"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119947336"
 ---
 # <a name="esentossnapshotinvalidsnapidexception-class"></a>Classe EsentOSSnapshotInvalidSnapIdException
 
-Classe base para JET_err. OSSnapshotInvalidSnapId exceções.
+Classe base para JET_err. Exceções OSSnapshotInvalidSnapId.
 
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. ESENT. EsentException](./esentexception-class.md)  
-      [Microsoft. ISAM. ESENT. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft. ISAM. ESENT. Interop. EsentApiException](./esentapiexception-class.md)  
-          [Microsoft. ISAM. ESENT. Interop. EsentUsageException](./esentusageexception-class.md)  
-            Microsoft. ISAM. ESENT. Interop. EsentOSSnapshotInvalidSnapIdException  
+  [System.Exception](/dotnet/api/system.exception)  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentApiException](./esentapiexception-class.md)  
+          [Microsoft.Isam.Esent.Interop.EsentUsageException](./esentusageexception-class.md)  
+            Microsoft.Isam.Esent.Interop.EsentOSSnapshotInvalidSnapIdException  
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -72,6 +72,6 @@ Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro
 
 #### <a name="reference"></a>Referência
 
-[Membros do EsentOSSnapshotInvalidSnapIdException](./esentossnapshotinvalidsnapidexception-members.md)
+[Membros EsentOSSnapshotInvalidSnapIdException](./esentossnapshotinvalidsnapidexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

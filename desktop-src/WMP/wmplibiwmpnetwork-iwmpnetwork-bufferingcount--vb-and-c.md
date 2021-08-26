@@ -3,9 +3,9 @@ title: Propriedade IWMPNetwork bufferingCount
 description: A propriedade bufferingCount Obtém o número de vezes que o buffer ocorreu durante a reprodução.
 ms.assetid: 2e3a2914-fc38-4477-8c4c-15b4a2e424dc
 keywords:
-- Propriedade bufferingCount Windows Media Player
-- Propriedade bufferingCount Windows Media Player, interface IWMPNetwork
-- Interface IWMPNetwork Windows Media Player, Propriedade bufferingCount
+- Windows Media Player da propriedade bufferingCount
+- propriedade bufferingCount Windows Media Player, interface IWMPNetwork
+- Windows Media Player de interface IWMPNetwork, propriedade bufferingCount
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f4958892dd9784ee72b51adfedbbcdee81817b52
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 92b69169e950cf3794d613bfd1d79d4953ce8f8a8bb01efe9ff17d6fa5961071
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105770647"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119899966"
 ---
 # <a name="iwmpnetworkbufferingcount-property"></a>Propriedade IWMPNetwork:: bufferingCount
 

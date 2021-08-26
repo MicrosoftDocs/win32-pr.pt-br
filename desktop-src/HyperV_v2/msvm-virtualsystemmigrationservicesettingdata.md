@@ -23,12 +23,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 8c8685e468d60983408c52a985169c61be91f632
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9ab3feab1f34d0f44ce5cd0618915d8575af9e463a9ec772961c185e946ac094
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105754526"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119963496"
 ---
 # <a name="msvm_virtualsystemmigrationservicesettingdata-class"></a>\_Classe Msvm VirtualSystemMigrationServiceSettingData
 
@@ -148,7 +148,7 @@ Indica se a compactação do tráfego de migração ao vivo está habilitada ou 
 
 Essa é uma propriedade somente leitura, mas pode ser alterada usando o método [**ModifyResourceSettings**](modifyresourcesettings-msvm-virtualsystemmanagementservice.md) da classe [**Msvm \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md) .
 
-**Windows 8.1:** Não há suporte para esse valor até Windows 8.1 e Windows Server 2012 R2.
+**Windows 8.1:** não há suporte para esse valor até Windows 8.1 e Windows Server 2012 R2.
 
 </dd> <dt>
 
@@ -165,7 +165,7 @@ Indica se o uso de SMB como um tipo de transporte para transferir o estado da VM
 
 Essa é uma propriedade somente leitura, mas pode ser alterada usando o método [**ModifyResourceSettings**](modifyresourcesettings-msvm-virtualsystemmanagementservice.md) da classe [**Msvm \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md) .
 
-**Windows 8.1:** Não há suporte para esse valor até Windows 8.1 e Windows Server 2012 R2.
+**Windows 8.1:** não há suporte para esse valor até Windows 8.1 e Windows Server 2012 R2.
 
 </dd> <dt>
 
@@ -178,7 +178,7 @@ Tipo de dados: **booliano**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Especifica se a migração do sistema virtual está habilitada ou desabilitada. A migração de armazenamento está sempre habilitada. Essa é uma propriedade somente leitura, mas pode ser alterada usando o método [**ModifyServiceSettings**](modifyservicesettings-msvm-virtualsystemmigrationservice.md) da classe [**Msvm \_ VirtualSystemMigrationService**](msvm-virtualsystemmigrationservice.md) .
+Especifica se a migração do sistema virtual está habilitada ou desabilitada. Armazenamento migração está sempre habilitada. Essa é uma propriedade somente leitura, mas pode ser alterada usando o método [**ModifyServiceSettings**](modifyservicesettings-msvm-virtualsystemmigrationservice.md) da classe [**Msvm \_ VirtualSystemMigrationService**](msvm-virtualsystemmigrationservice.md) .
 
 </dd> <dt>
 
@@ -230,8 +230,8 @@ Especifica o número máximo de migrações de sistema virtual ativas permitidas
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                                    |
 | Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: d81de43dde2b4f0df5913831ddfcefbab1a41855
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 77dfc11089ccedf5d435e9c15c3ec97559938d5f90506975bf15cbcdbbaa609b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104506485"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119952406"
 ---
 # <a name="d3dxcreateskininfofromblendedmesh-function"></a>Função D3DXCreateSkinInfoFromBlendedMesh
 
@@ -79,7 +79,7 @@ Endereço de um ponteiro para uma interface [**ID3DXSkinInfo**](id3dxskininfo.md
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

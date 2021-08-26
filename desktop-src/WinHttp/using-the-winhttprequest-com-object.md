@@ -1,5 +1,5 @@
 ---
-description: A API do WinHTTP fornece suporte para programação de script.
+description: A API WinHTTP dá suporte à programação de script.
 ms.assetid: 838e3775-48af-4d19-a9b1-b3f7e2583a51
 title: Usando o objeto COM WinHttpRequest
 ms.topic: article
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 3a303d3eaa83f8f79c35d6e171621b3bd8838d24
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 03065d74a4cdda1662a325be164fb3e05414342863fa9b92a183c0a61228ff61
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090428"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119899177"
 ---
 # <a name="using-the-winhttprequest-com-object"></a>Usando o objeto COM WinHttpRequest
 
-A API do WinHTTP fornece suporte para programação de script.
+A API WinHTTP dá suporte à programação de script.
 
 -   [Recuperando dados usando script](retrieving-data-using-script.md)
 -   [Autenticação usando script](authentication-using-script.md)

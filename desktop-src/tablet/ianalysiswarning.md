@@ -1,7 +1,7 @@
 ---
 description: Representa um aviso ou erro que ocorre durante uma operação de análise de tinta.
 ms.assetid: a9b0564b-8a49-44bc-9dbc-60a2fd5b60f2
-title: Interface IAnalysisWarning (IACom. h)
+title: Interface IAnalysisWarning (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 79e865ac909d6f9ee1862926ffab06f538661d6e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 27e00533894560a84e73f8eb5682d1b70789ab5f2b21be5d6fe3682c543be6a4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090554"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119940376"
 ---
 # <a name="ianalysiswarning-interface"></a>Interface IAnalysisWarning
 
@@ -26,7 +26,7 @@ Representa um aviso ou erro que ocorre durante uma operação de análise de tin
 
 ## <a name="members"></a>Membros
 
-A interface **IAnalysisWarning** herda da interface [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IAnalysisWarning** também tem estes tipos de membros:
+A interface **IAnalysisWarning** herda da interface [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IAnalysisWarning** também tem estes tipos de membros:
 
 -   [Métodos](#methods)
 
@@ -39,9 +39,9 @@ A interface **IAnalysisWarning** tem esses métodos.
 | Método                                                            | Descrição                                                                                                                            |
 |:------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------|
 | [**GetBackgroundError**](ianalysiswarning-getbackgrounderror.md) | Recupera o código de erro para a operação de análise de tinta em segundo plano se ocorreu um erro.<br/>                                    |
-| [**Gethint**](ianalysiswarning-gethint.md)                       | Recupera a dica de análise que causou este aviso<br/>                                                                        |
+| [**GetHint**](ianalysiswarning-gethint.md)                       | Recupera a dica de análise que causou esse aviso<br/>                                                                        |
 | [**GetNodeIds**](ianalysiswarning-getnodeids.md)                 | Recupera os identificadores de todos os nós de contexto relevantes associados a este aviso.<br/>                              |
-| [**GetWarningCode**](ianalysiswarning-getwarningcode.md)         | Recupera o tipo de aviso que ocorreu usando a enumeração [**AnalysisWarningCode**](/windows/desktop/tablet/analysiswarningcode) .<br/> |
+| [**GetWarningCode**](ianalysiswarning-getwarningcode.md)         | Recupera o tipo de aviso que ocorreu usando a [**enumeração AnalysisWarningCode.**](/windows/desktop/tablet/analysiswarningcode)<br/> |
 
 
 
@@ -49,13 +49,13 @@ A interface **IAnalysisWarning** tem esses métodos.
 
 ## <a name="remarks"></a>Comentários
 
-Os tipos de avisos que podem ocorrer são descritos pela enumeração [**AnalysisWarningCode**](/windows/desktop/tablet/analysiswarningcode) . Geralmente, os avisos ocorrem quando você tenta usar um recurso que não é suportado pelo [**IInkAnalysisRecognizer**](iinkanalysisrecognizer.md) que o [**IInkAnalyzer**](iinkanalyzer.md) está usando.
+Os tipos de avisos que podem ocorrer são descritos pela [**enumeração AnalysisWarningCode.**](/windows/desktop/tablet/analysiswarningcode) Geralmente, ocorrem avisos quando você tenta usar um recurso que não é suportado pelo [**IInkAnalysisRecognizer**](iinkanalysisrecognizer.md) que o [**IInkAnalyzer**](iinkanalyzer.md) está usando.
 
-Alguns avisos indicam que o [**IInkAnalyzer**](iinkanalyzer.md) não concluiu a operação de análise. Para obter mais informações, consulte [**AnalysisWarningCode**](/windows/desktop/tablet/analysiswarningcode).
+Alguns avisos indicam que [**o IInkAnalyzer**](iinkanalyzer.md) não concluiu a operação de análise. Para obter mais informações, [**consulte AnalysisWarningCode**](/windows/desktop/tablet/analysiswarningcode).
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir mostra um contorno de um manipulador de eventos para o evento [**\_ IAnalysisEvents:: Results**](-ianalysisevents-results.md) . O manipulador verifica [**IAnalysisStatus:: Issuccessfully**](ianalysisstatus-issuccessful.md). Se a operação de análise gerar avisos, o manipulador iterará pela coleção de objetos **IAnalysisWarning** .
+O exemplo a seguir mostra um contorno de um manipulador de eventos para [**\_ o evento IAnalysisEvents::Results.**](-ianalysisevents-results.md) O manipulador verifica [**IAnalysisStatus::IsSuccessful.**](ianalysisstatus-issuccessful.md) Se a operação de análise gerar avisos, o manipulador itera pela coleção de **objetos IAnalysisWarning.**
 
 
 ```C++
@@ -142,9 +142,9 @@ STDMETHODIMP CMyClass::Results(
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                     |
-| parâmetro<br/>                   | <dl> <dt>IACom. h (também requer IACom \_ i. c)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>IACom.h (também requer IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 

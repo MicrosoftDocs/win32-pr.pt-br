@@ -1,21 +1,21 @@
 ---
-description: Saiba mais sobre o elemento PageImageableSize configurável pelo usuário. Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Saiba mais sobre o elemento PageImageableSize configurável pelo usuário. Este tópico não é atual. Para obter as informações mais atuais, consulte a Especificação de Esquema de Impressão.
 ms.assetid: 6b81814f-2d9e-4862-8633-6ba016c11dac
 title: PageImageableSize
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ee4e44bc9afe33b87d32b43c93eafc3b6d4ba4b0
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: 924c89f304c75863246f266e2c64818ee7ab21c173009a096d32c3d1ac6e178b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112395301"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119948257"
 ---
 # <a name="pageimageablesize"></a>PageImageableSize
 
-Este tópico não é atual. Para obter as informações mais atuais, consulte a [especificação do esquema de impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tópico não é atual. Para obter as informações mais atuais, consulte a [Especificação de Esquema de Impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Descreve a tela de imagem para layout e renderização. Isso será relatado com base em PageMediaSize e PageOrientation.
+Descreve a tela com imagem para layout e renderização. Isso será relatado com base em PageMediaSize e PageOrientation.
 
 Os diagramas a seguir ilustram o uso de variáveis PageImageableSize com base em PageOrientation.
 
@@ -23,14 +23,14 @@ Os diagramas a seguir ilustram o uso de variáveis PageImageableSize com base em
 
 -   [Informações do elemento](#element-information)
 -   [Conteúdo estrutural](#structural-content)
--   [Conteúdo de linguagem XML (XML)](#extensible-markup-language-xml-content)
+-   [linguagem XML conteúdo (XML)](#extensible-markup-language-xml-content)
 
 ## <a name="element-information"></a>Informações do elemento
 
-| Name                 | Valor         |
+| Nome                 | Valor         |
 |----------------------|---------------|
 | Tipo de elemento<br/>    | Propriedade<br/> |
-| Prefixo de escopo <br/> | ?<br/>     |
+| Prefixo de definição de scoping <br/> | ?<br/>     |
 | Observações <br/>          | Nenhum<br/>     |
 
 ## <a name="structural-content"></a>Conteúdo estrutural
@@ -71,20 +71,20 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 
 | Nome                                    | Tipo de dados          | Unidade               | Valores com suporte                       | Resumo                                                                                                                    |
 |-----------------------------------------|--------------------|--------------------|----------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| \_ImageableSizeWidthValue\_<br/>  | Número inteiro<br/> | mícrons<br/> | Maior que 0.<br/>             | Especifica a dimensão horizontal do tamanho da mídia do aplicativo em relação ao PageOrientation.<br/>               |
-| \_ImageableSizeHeightValue\_<br/> | Número inteiro<br/> | mícrons<br/> | Maior que 0.<br/>             | Especifica a dimensão vertical do tamanho da mídia do aplicativo em relação ao PageOrientation.<br/>                 |
-| \_OriginWidthValue\_<br/>         | Número inteiro<br/> | mícrons<br/> | Maior ou igual a 0.<br/> | Especifica a origem horizontal da área de imagem em relação ao tamanho da mídia do aplicativo.<br/>                   |
-| \_OriginHeightValue\_<br/>        | Número inteiro<br/> | mícrons<br/> | Maior ou igual a 0.<br/> | Especifica a origem vertical da área de imagem em relação ao tamanho da mídia do aplicativo.<br/>                     |
-| \_ExtentWidthValue\_<br/>         | Número inteiro<br/> | mícrons<br/> | Maior que 0.<br/>             | Especifica a distância horizontal entre a origem e o limite delimitador do tamanho da mídia do aplicativo.<br/>      |
-| \_ExtentHeightValue\_<br/>        | Número inteiro<br/> | mícrons<br/> | Maior que 0.<br/>             | Especifica a distância vertical entre a origem e o limite delimitador do tamanho da mídia do aplicativo Canvas.<br/> |
+| \_ImageableSizeWidthValue\_<br/>  | Número inteiro<br/> | Mícrons<br/> | Maior que 0.<br/>             | Especifica a dimensão horizontal do tamanho da mídia do aplicativo em relação à PageOrientation.<br/>               |
+| \_ImageableSizeHeightValue\_<br/> | Número inteiro<br/> | Mícrons<br/> | Maior que 0.<br/>             | Especifica a dimensão vertical do tamanho da mídia do aplicativo em relação à PageOrientation.<br/>                 |
+| \_OriginWidthValue\_<br/>         | Número inteiro<br/> | Mícrons<br/> | Maior ou igual a 0.<br/> | Especifica a origem horizontal da área que pode ser imagem em relação ao tamanho da mídia do aplicativo.<br/>                   |
+| \_OriginHeightValue\_<br/>        | Número inteiro<br/> | Mícrons<br/> | Maior ou igual a 0.<br/> | Especifica a origem vertical da área que pode ser imagem em relação ao tamanho da mídia do aplicativo.<br/>                     |
+| \_ExtentWidthValue\_<br/>         | Número inteiro<br/> | Mícrons<br/> | Maior que 0.<br/>             | Especifica a distância horizontal entre a origem e o limite delimitador do tamanho da mídia do aplicativo.<br/>      |
+| \_ExtentHeightValue\_<br/>        | Número inteiro<br/> | Mícrons<br/> | Maior que 0.<br/>             | Especifica a distância vertical entre a origem e o limite delimitador do tamanho da mídia do aplicativo de tela.<br/> |
 
 
 
  
 
-## <a name="extensible-markup-language-xml-content"></a>Conteúdo de linguagem XML (XML)
+## <a name="extensible-markup-language-xml-content"></a>linguagem XML conteúdo (XML)
 
-As palavras-chave do esquema de impressão pública são definidas no https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords namespace. O conteúdo do linguagem XML público (XML) para essa palavra-chave é definido abaixo:
+As palavras-chave public Print Schema são definidas no https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords namespace . O conteúdo linguagem XML xml público para essa palavra-chave está definido abaixo:
 
 ``` syntax
 <psf:Property name="psk:PageImageableSize">

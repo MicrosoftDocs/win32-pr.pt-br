@@ -1,19 +1,19 @@
 ---
-description: Evento por usuário gerado por um cliente de email quando uma recepção de mensagem é tentada em controles dos pais.
+description: Evento por usuário gerado por um cliente de email quando uma recepção de mensagem é tentada em Controles Dos Pais.
 ms.assetid: 3b8d9bac-16b0-49e9-b360-b2d6e82f1753
-title: WPCEVENT_EMAIL_RECEIVED evento (Wpcevent. h)
+title: WPCEVENT_EMAIL_RECEIVED evento (Wpcevent.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f14d583cadb6bc976b85953bb09ea34811a5061
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a81a51e79125403504aae2ed6e823c10044ffc35ed36ff139e8333f955338d81
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104169356"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119951556"
 ---
-# <a name="wpcevent_email_received-event"></a>\_Evento WPCEVENT email \_ recebido
+# <a name="wpcevent_email_received-event"></a>Evento WPCEVENT \_ EMAIL \_ RECEIVED
 
-Evento por usuário gerado por um cliente de email quando uma recepção de mensagem é tentada em controles dos pais.
+Evento por usuário gerado por um cliente de email quando uma recepção de mensagem é tentada em Controles Dos Pais.
 
 
 ```C++
@@ -47,7 +47,7 @@ A versão do aplicativo de email que está gerando o evento.
 
 </dd> <dt>
 
-*Entidade* 
+*Assunto* 
 </dt> <dd>
 
 A linha de assunto da mensagem recebida.
@@ -57,7 +57,7 @@ A linha de assunto da mensagem recebida.
 *Motivo* 
 </dt> <dd>
 
-Um valor da enumeração [**\_ IsBlocked de WPCFLAG**](/windows/win32/api/wpcevent/ne-wpcevent-wpcflag_isblocked) que indica informações sobre quais eventos são bloqueados do uso e quais controles estão em vigor.
+Um valor da [**enumeração \_ ISBLOCKED WPCFLAG**](/windows/win32/api/wpcevent/ne-wpcevent-wpcflag_isblocked) que indica informações sobre quais eventos são impedidos de usar e quais controles estão em uso.
 
 </dd> <dt>
 
@@ -85,21 +85,21 @@ A contagem de anexos para a mensagem.
 *AttachmentName* 
 </dt> <dd>
 
-Uma cadeia de caracteres delimitada que contém os nomes de todos os anexos da mensagem.
+Uma cadeia de caracteres delimitada que contém os nomes de todos os anexos à mensagem.
 
 </dd> <dt>
 
-*Receivedtime* 
+*ReceivedTime* 
 </dt> <dd>
 
-A hora em que a mensagem foi tentada ser recebida.
+A hora em que a mensagem foi tentada para ser recebida.
 
 </dd> <dt>
 
 *EmailAccount* 
 </dt> <dd>
 
-O nome da conta de email para este usuário.
+O nome da conta de email para esse usuário.
 
 </dd> </dl>
 
@@ -109,9 +109,9 @@ O nome da conta de email para este usuário.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                             |
-| parâmetro<br/>                   | <dl> <dt>Wpcevent. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Wpcevent.h</dt> </dl> |
 
 
 
@@ -122,7 +122,7 @@ O nome da conta de email para este usuário.
 [Usando APIs de log para controles dos pais](using-logging-apis-for-parental-controls.md)
 </dt> <dt>
 
-[**WPC \_ args \_ CONVERSATIONINITEVENT**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_conversationinitevent)
+[**WPC \_ ARGS \_ CONVERSATIONINITEVENT**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_conversationinitevent)
 </dt> </dl>
 
  

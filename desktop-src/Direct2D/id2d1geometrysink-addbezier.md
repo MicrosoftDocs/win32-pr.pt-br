@@ -1,6 +1,6 @@
 ---
-title: Métodos AddBezier ID2D1GeometrySink (D2d1. h)
-description: Cria uma curva de Bézier cúbica entre o ponto atual e o ponto de extremidade especificado e o adiciona ao coletor de geometria.
+title: Métodos AddBezier ID2D1GeometrySink (D2d1.h)
+description: Cria uma curva de Bezier cúbica entre o ponto atual e o ponto de extremidade especificado e a adiciona ao sink de geometria.
 ms.assetid: d1e228eb-dac6-485d-b3c9-69b2bd45e531
 keywords:
 - Métodos AddBezier Direct2D
@@ -12,16 +12,16 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: b470129350463920583c34bec5f886f60b16485e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5dff3f4a59b592b4820bf6e91f9415da98a0960cf333afc48115f894111d423b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749059"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119917816"
 ---
-# <a name="id2d1geometrysinkaddbezier-methods"></a>Métodos ID2D1GeometrySink:: AddBezier
+# <a name="id2d1geometrysinkaddbezier-methods"></a>Métodos ID2D1GeometrySink::AddBezier
 
-Cria uma curva de Bézier cúbica entre o ponto atual e o ponto de extremidade especificado e o adiciona ao coletor de geometria.
+Cria uma curva de Bezier cúbica entre o ponto atual e o ponto de extremidade especificado e a adiciona ao sink de geometria.
 
 ### <a name="overload-list"></a>Lista de sobrecargas
 
@@ -29,14 +29,14 @@ Cria uma curva de Bézier cúbica entre o ponto atual e o ponto de extremidade e
 
 | Método                                                                                            | Descrição                                                                                    |
 |:--------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------|
-| [**AddBezier (D2D1 de \_ segmento de Bezier do \_ am&)**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometrysink-addbezier(constd2d1_bezier_segment_))  | Cria uma curva de Bézier cúbica entre o ponto atual e o ponto final especificado.<br/> |
-| [**AddBezier ( \_ segmento de BEZIER d2d1 \_ \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometrysink-addbezier(constd2d1_bezier_segment)) | Cria uma curva de Bézier cúbica entre o ponto atual e um ponto de extremidade especificado.<br/>  |
+| [**AddBezier(D2D1 \_ BEZIER \_ SEGMENT&)**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometrysink-addbezier(constd2d1_bezier_segment_))  | Cria uma curva de Bézier cúbica entre o ponto atual e o ponto final especificado.<br/> |
+| [**AddBezier(D2D1 \_ BEZIER \_ SEGMENT \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometrysink-addbezier(constd2d1_bezier_segment)) | Cria uma curva de Bezier cúbica entre o ponto atual e o ponto de extremidade especificado.<br/>  |
 
 
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir cria um [**ID2D1PathGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry), recupera um coletor e o usa para definir uma forma de ampulheta. Para obter o exemplo completo, consulte [como desenhar e preencher uma forma complexa](how-to-draw-and-fill-a-complex-shape.md).
+O exemplo a seguir cria [**um ID2D1PathGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry), recupera um sink e o usa para definir uma forma de ampulheta. Para ver o exemplo completo, [consulte Como desenhar e preencher uma forma complexa.](how-to-draw-and-fill-a-complex-shape.md)
 
 
 ```C++
@@ -98,8 +98,8 @@ if (SUCCEEDED(hr))
 
 | Requisito | Valor |
 |--------------------|-------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D2d1. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D2d1. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>D2d1.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D2d1.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>D2d1.dll</dt> </dl> |
 
 

@@ -6,12 +6,12 @@ keywords:
 - Roteamento e acesso remoto do serviço RRAS, roteamento e acesso remoto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f6ed72b569a8fe2efe1423ce2429c31cd0a0a65
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: cd3388c2a11f69a473a334105d2872872b98b17b4956f12f886e50ada89f406f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822609"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120027396"
 ---
 # <a name="routing-and-remote-access-registry-layout"></a>Layout do registro de roteamento e acesso remoto
 
@@ -136,9 +136,9 @@ Cada Gerenciador de roteador instalado no sistema tem uma chave de registro cria
 
 A chave interfaces é populada com as interfaces que foram adicionadas ao sistema local da configuração do roteador. Cada interface tem um tipo associado (interno, dedicado ou dinâmico) e subchaves para cada Gerenciador de roteador (IP e IPX, por exemplo).
 
- 
+ 
 
- 
+ 
 
 
 

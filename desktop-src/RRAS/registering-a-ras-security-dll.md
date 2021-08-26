@@ -1,26 +1,26 @@
 ---
 title: Registrando uma DLL de segurança RAS
-description: O programa de instalação para uma DLL de segurança RAS deve registrar a DLL com o servidor RAS do Windows NT/Windows 2000.
+description: o programa de instalação para uma DLL de segurança RAS deve registrar a dll com o servidor RAS Windows NT/Windows 2000.
 ms.assetid: 90a1f30e-ea68-4859-b436-219c25016677
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 68ae856b33b2233ae114a281d96447719d9b2832
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b5ca32aa687649c80917f9a072b9d4cbeb0f1f4e8ba61ce090e7781bb04cdefd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103635688"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120028406"
 ---
 # <a name="registering-a-ras-security-dll"></a>Registrando uma DLL de segurança RAS
 
-O programa de instalação para uma DLL de segurança RAS deve registrar a DLL com o servidor RAS do Windows NT/Windows 2000. Somente uma DLL de segurança RAS pode ser registrada como suporte para várias DLLs de segurança não é fornecida. Para registrar uma DLL de segurança de RAS, defina o valor de *DLLPath* sob a seguinte chave no registro:
+o programa de instalação para uma DLL de segurança RAS deve registrar a dll com o servidor RAS Windows NT/Windows 2000. Somente uma DLL de segurança RAS pode ser registrada como suporte para várias DLLs de segurança não é fornecida. Para registrar uma DLL de segurança de RAS, defina o valor de *DLLPath* sob a seguinte chave no registro:
 
 ```
 HKEY_LOCAL_MACHINE
-   SOFTWARE
-      Microsoft
-         RAS
-            SecurityHost
+   SOFTWARE
+      Microsoft
+         RAS
+            SecurityHost
 ```
 
 
@@ -31,15 +31,15 @@ HKEY_LOCAL_MACHINE
 
 
 
- 
+ 
 
 O programa de instalação para uma DLL de segurança de RAS também deve fornecer a funcionalidade de remoção/desinstalação. Se um usuário remover a DLL, o programa de instalação deverá excluir o valor de *DLLPath* do registro. O serviço RAS não será iniciado se o valor de *DLLPath* especificar uma DLL que não pode ser encontrada.
 
 Uma DLL de segurança RAS deve exportar as funções [**RasSecurityDialogBegin**](/windows/desktop/api/Rasshost/nf-rasshost-rassecuritydialogbegin) e [**RasSecurityDialogEnd**](/windows/desktop/api/Rasshost/nf-rasshost-rassecuritydialogend) .
 
- 
+ 
 
- 
+ 
 
 
 

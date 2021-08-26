@@ -1,25 +1,25 @@
 ---
-description: 'Saiba mais sobre: Propriedades de EsentSLVCorruptedException'
-title: Propriedades de EsentSLVCorruptedException
+description: 'Saiba mais sobre: propriedades EsentSLVCorruptedException'
+title: Propriedades EsentSLVCorruptedException
 TOCTitle: EsentSLVCorruptedException properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.EsentSLVCorruptedException
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentslvcorruptedexception_properties(v=EXCHG.10)
 ms:contentKeyID: 55102736
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 2502cdf94f3046efbcf7bef649961c890ae20281
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9d6d7580ed910b8947f6da90a0a81a13ff654ebe3b1cd60ef1c2f8a3ea8521de
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104555811"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119851171"
 ---
-# <a name="esentslvcorruptedexception-properties"></a>Propriedades de EsentSLVCorruptedException
+# <a name="esentslvcorruptedexception-properties"></a>Propriedades EsentSLVCorruptedException
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo [EsentSLVCorruptedException](./esentslvcorruptedexception-class.md) expõe os membros a seguir.
+O [tipo EsentSLVCorruptedException](./esentslvcorruptedexception-class.md) expõe os membros a seguir.
 
 ## <a name="properties"></a>Propriedades
 
@@ -40,16 +40,16 @@ O tipo [EsentSLVCorruptedException](./esentslvcorruptedexception-class.md) expõ
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn274313(v=exchg.10).md">Erro</a></td>
-<td>Obtém o erro de ESENT subjacente para esta exceção. (Herdado de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.)</td>
+<td>Obtém o erro Esent subjacente para essa exceção. (Herdado de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">HelpLink</a></td>
+<td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">Helplink</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.protproperty(exchg.10).gif" title="Propriedade protegida" alt="Protected property" /></td>
-<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">Resultado</a></td>
+<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">HResult</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
@@ -69,7 +69,7 @@ O tipo [EsentSLVCorruptedException](./esentslvcorruptedexception-class.md) expõ
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">Pilha</a></td>
+<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">StackTrace</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
@@ -89,4 +89,4 @@ Parte superior
 
 [Classe EsentSLVCorruptedException](./esentslvcorruptedexception-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

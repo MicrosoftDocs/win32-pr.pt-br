@@ -36,12 +36,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 616148f6749f3ec00d019a903e8f9046d3aba602
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: bb97ded03cfc853fc0dde6ede26083be01cf218f210c31f947f315634599e179
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105758036"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119900256"
 ---
 # <a name="cim_mediaaccessdevice-class-hyper-v-management"></a>Classe CIM_MediaAccessDevice (gerenciamento do Hyper-V)
 
@@ -115,7 +115,7 @@ Tipo de dados: a matriz **UInt16**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indexado"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Dispositivos de armazenamento DMTF \| 1,9 "," MIF. \|Dispositivos de armazenamento DMTF \| 1,11 "," MIF. \|Dispositivos de armazenamento DMTF \| 1,12 "," MIF. \|Discos DMTF \| 3,7 "," MIF. \|Disco do host DMTF \| 1,2 "," MIF. \|Disco do host DMTF \| 1,4 "), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ MediaAccessDevice**.**CapabilityDescriptions**")
+Qualificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indexado"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|dispositivos DMTF Armazenamento \| 1,9 "," MIF. \|dispositivos DMTF Armazenamento \| 1,11 "," MIF. \|dispositivos DMTF Armazenamento \| 1,12 "," MIF. \|Discos DMTF \| 3,7 "," MIF. \|Disco do host DMTF \| 1,2 "," MIF. \|Disco do host DMTF \| 1,4 "), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ MediaAccessDevice**.**CapabilityDescriptions**")
 </dt> </dl>
 
 Uma matriz que contém os recursos do dispositivo de acesso à mídia.
@@ -394,42 +394,42 @@ Tipo de dados: **UInt64**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("bytes"), **PUnit** ("byte")
+Qualificadores: [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("Bytes"), **PUnit** ("byte")
 </dt> </dl>
 
-O tamanho mínimo do bloco, em bytes, para a mídia acessada pelo dispositivo.
+O tamanho mínimo do bloco, em bytes, para mídia acessada pelo dispositivo.
 
 </dd> <dt>
 
 **MountCount**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **contador**
+Qualificadores: **Contador**
 </dt> </dl>
 
-O número de vezes que a mídia foi montada para transferência de dados ou para limpar o dispositivo. Se o dispositivo não oferecer suporte a mídia removível, essa propriedade deverá ser definida como zero.
+O número de vezes que a mídia foi montada para transferência de dados ou para limpar o dispositivo. Se o dispositivo não dá suporte a mídia removível, essa propriedade deve ser definida como zero.
 
 </dd> <dt>
 
 **NeedsCleaning**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-**true** se o dispositivo precisar de limpeza; caso contrário, **false**.
+**true** se o dispositivo precisar de limpeza; caso contrário, **false.**
 
 > [!Note]  
-> A propriedade **Capabilities** indica se a limpeza manual ou automática é possível.
+> A **propriedade Recursos** indica se a limpeza manual ou automática é possível.
 
  
 
@@ -438,35 +438,35 @@ Tipo de acesso: Somente leitura
 **NumberOfMediaSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Se o dispositivo der suporte a várias mídias individuais, essa propriedade definirá o número máximo que pode ser suportado ou inserido.
+Se o dispositivo dá suporte a várias mídias individuais, essa propriedade define o número máximo que pode ser compatível ou inserido.
 
 </dd> <dt>
 
 **Segurança**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Discos DMTF \| 3,22 ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Discos DMTF \| \| 003.22")
 </dt> </dl>
 
-A segurança operacional para o dispositivo.
+A segurança operacional do dispositivo.
 
 <dt>
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Outro** (1)
+**Outros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -518,42 +518,42 @@ A segurança operacional para o dispositivo.
 **TimeOfLastMount**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A data e a hora mais recentes quando a mídia foi montada no dispositivo. Essa propriedade só é usada por dispositivos que oferecem suporte a mídia removível.
+A data e a hora mais recentes em que a mídia foi montada no dispositivo. Essa propriedade só é usada por dispositivos que suportam mídia removível.
 
 </dd> <dt>
 
 **TotalMountTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O tempo, em segundos, que a mídia foi montada para transferência de dados ou para limpar o dispositivo. Se o dispositivo não oferecer suporte a mídia removível, essa propriedade deverá ser definida como zero.
+O tempo, em segundos, em que a mídia foi montada para transferência de dados ou para limpar o dispositivo. Se o dispositivo não dá suporte a mídia removível, essa propriedade deve ser definida como zero.
 
 </dd> <dt>
 
 **UncompressedDataRate**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("quilobytes por segundo"), **PUnit** ("byte/segundo \* 10 ^ 3")
+Qualificadores: [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("QuiloBytes por Segundo"), **PUnit** ("byte / segundo \* 10^3")
 </dt> </dl>
 
-A taxa de transferência de dados sustentada em kilobytes na qual o dispositivo pode ler e gravar em uma mídia. Essa é uma taxa de dados bruta e prolongada. Taxas ou taxas máximas com compactação não devem ser relatadas nessa propriedade.
+A taxa de transferência de dados sustentada em quilobytes na qual o dispositivo pode ler e gravar em uma mídia. Essa é uma taxa de dados bruta e sustentada. Taxas máximas ou taxas com compactação não devem ser relatadas nesta propriedade.
 
 </dd> <dt>
 
@@ -566,42 +566,42 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ MediaAccessDevice**.**MaxUnitsBeforeCleaning**","**CIM \_ MediaAccessDevice**.**UnitsUsed**")
+Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ MediaAccessDevice**.**MaxUnitsBeforeCleaning**", "**CIM \_ MediaAccessDevice**.**UnitsUsed**")
 </dt> </dl>
 
-Descreve o tipo de unidade das propriedades **MaxUnitsBeforeCleaning** e **UnitsUsed** .
+Descreve o tipo de unidade das **propriedades MaxUnitsBeforeCleaning** e **UnitsUsed.**
 
 </dd> <dt>
 
-**UnitsUsed**
+**UnidadesUsadas**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**medidor**](/windows/desktop/WmiSdk/standard-qualifiers), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ MediaAccessDevice**.**UnitsDescription**","**CIM \_ MediaAccessDevice**.**MaxUnitsBeforeCleaning**")
+Qualificadores: [**Medidor**](/windows/desktop/WmiSdk/standard-qualifiers), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ MediaAccessDevice**.**UnitsDescription**", "**CIM \_ MediaAccessDevice**.**MaxUnitsBeforeCleaning**")
 </dt> </dl>
 
-O número de unidades usadas pelo dispositivo. Essa propriedade é usada para determinar quando o dispositivo deve ser limpo. **UnitsDescription** define como o tipo de unidade.
+O número de unidades usadas pelo dispositivo. Essa propriedade é usada para determinar quando o dispositivo deve ser limpo. **UnitsDescription define** como o tipo de unidade.
 
 </dd> <dt>
 
-**Descarregar**
+**UnloadTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("milissegundos"), **PUnit** ("segundo \* 10 ^-3")
+Qualificadores: [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("MilliSeconds"), **PUnit** ("segundo \* 10^-3")
 </dt> </dl>
 
-O tempo necessário, em milissegundos, para o dispositivo fazer a transição da leitura ou gravação de mídia para descarregamento. Por exemplo, para unidades de disco, esse é o intervalo entre um disco girando em velocidades nominais e um disco não está girando. Para unidades de fita, esse é o momento de uma mídia passar de seu BOT para ser totalmente ejetado e acessível a um elemento selecionador ou a um operador humano.
+O tempo necessário, em milissegundos, para o dispositivo fazer a transição da leitura ou da escrita da mídia para o descarregamento. Por exemplo, para unidades de disco, esse é o intervalo entre um disco girando em velocidades nominais e um disco não girando. Para unidades de fita, esse é o momento para uma mídia passar de seu BOT para ser totalmente ejetada e acessível a um elemento selador ou operador humano.
 
 </dd> </dl>
 
@@ -613,8 +613,8 @@ O tempo necessário, em milissegundos, para o dispositivo fazer a transição da
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                                          |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -623,7 +623,7 @@ O tempo necessário, em milissegundos, para o dispositivo fazer a transição da
 
 <dl> <dt>
 
-[**\_LOGICALDEVICE CIM**](cim-logicaldevice.md)
+[**CIM \_ LogicalDevice**](cim-logicaldevice.md)
 </dt> </dl>
 
  

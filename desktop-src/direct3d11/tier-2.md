@@ -4,12 +4,12 @@ description: Esta seção descreve o suporte de camada 2.
 ms.assetid: 4A4AEF13-2F0F-482E-9262-256C257ED85A
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 58fa6e8ff3dba5780e3507bb2da5273e327a30e1
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 29f5a5b018e5e48e6b2a1b86771b925cb88cf070ecd2b1303d359640eac565bc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103823868"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120027786"
 ---
 # <a name="tier-2"></a>Camada 2
 
@@ -34,6 +34,6 @@ Esta seção descreve o suporte de camada 2.
 [Recursos de azulejos recursos camadas](tiled-resources-features-tiers.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

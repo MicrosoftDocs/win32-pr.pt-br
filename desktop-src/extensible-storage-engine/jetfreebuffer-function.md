@@ -18,23 +18,23 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: fe638e2aab1d37324a6fd6bf477a578f02b9ac58
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 011974154f80c2da809292530deb50657d1280172554d79629a5a4650833c347
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105782550"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119944866"
 ---
 # <a name="jetfreebuffer-function"></a>Função JetFreeBuffer
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jetfreebuffer-function"></a>Função JetFreeBuffer
 
 A função **JetFreeBuffer** libera a memória que foi alocada por uma chamada do mecanismo de banco de dados.
 
-**Windows XP: o JetFreeBuffer** é introduzido no Windows XP.
+**Windows xp: o JetFreeBuffer** é introduzido no Windows XP.
 
 ```cpp
     JET_ERR JET_API JetFreeBuffer(
@@ -50,7 +50,7 @@ Ponteiro para uma região de memória que foi alocada anteriormente por uma cham
 
 ### <a name="return-value"></a>Valor Retornado
 
-Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. Para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
+Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de Armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
 
 <table>
 <colgroup>
@@ -86,11 +86,11 @@ Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos código
 <tbody>
 <tr class="odd">
 <td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista ou o Windows XP.</p></td>
+<td><p>requer o Windows Vista ou Windows XP.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008 ou o Windows Server 2003.</p></td>
+<td><p>requer o Windows server 2008 ou Windows server 2003.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Cabeçalho</strong></p></td>

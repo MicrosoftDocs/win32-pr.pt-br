@@ -4,16 +4,16 @@ description: IAgentBalloon getfontize
 ms.assetid: 4d342ee9-abb4-431b-bd28-f62ab76705ec
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d14b1a921f1f5c9927f58ab9e561569ba3bc98fa
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ccc392bd12fccfb01b8aee41a5a06ed50b388ac8223e622d75218c840f706c91
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104160454"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119962486"
 ---
 # <a name="iagentballoongetfontsize"></a>IAgentBalloon:: getfontize
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 ``` syntax
 HRESULT GetFontSize(
@@ -36,9 +36,9 @@ O endereço de um valor que recebe o tamanho da fonte.
 
 O tamanho de fonte padrão usado em um balão de palavras de caracteres é definido no editor de caracteres do agente da Microsoft. Você pode alterá-lo com [**IAgentBalloon:: Setfontize**](https://www.bing.com/search?q=**IAgentBalloon::SetFontSize**). No entanto, o usuário pode substituir as configurações de tamanho da fonte para todos os caracteres usando a folha de propriedades do Microsoft Agent.
 
- 
+ 
 
- 
+ 
 
 
 

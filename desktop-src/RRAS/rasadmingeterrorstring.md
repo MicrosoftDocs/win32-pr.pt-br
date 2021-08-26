@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7dc239c5f26061b5234631079ba21ce0d24ad570
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a45c768daef7c889351744c5e046c83f4de7e220f59752c1db271067efb68366
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750581"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120028597"
 ---
 # <a name="rasadmingeterrorstring-function"></a>Função RasAdminGetErrorString
 
-\[Essa função é fornecida somente para compatibilidade com versões anteriores do Windows NT Server 4,0. Ele retorna uma \_ chamada \_ de erro não \_ implementada no Windows Server 2003. Os aplicativos devem usar a função [**MprAdminGetErrorString**](/windows/desktop/api/Mprapi/nf-mprapi-mpradmingeterrorstring) .\]
+\[essa função é fornecida somente para compatibilidade com versões anteriores com o Windows NT Server 4,0. ele retorna uma \_ chamada \_ de erro não \_ implementada no Windows Server 2003. Os aplicativos devem usar a função [**MprAdminGetErrorString**](/windows/desktop/api/Mprapi/nf-mprapi-mpradmingeterrorstring) .\]
 
 A função **RasAdminGetErrorString** recupera uma cadeia de caracteres de mensagem que corresponde a um código de erro RAS retornado por uma das funções de administração do servidor RAS (RasAdmin). Essas cadeias de caracteres de mensagem são recuperadas do Rasmsg.dll que é instalado como parte do RAS.
 
@@ -65,7 +65,7 @@ Especifica o tamanho, em caracteres, do buffer *lpszString* . Normalmente, as me
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for bem-sucedida, o valor de retorno será \_ êxito no erro.
 
@@ -96,7 +96,7 @@ As funções RasAdmin podem retornar códigos de erro que não estão no interva
 |----------------------------------|----------------------------------------------------------------------------------------|
 | Fim do suporte do cliente<br/> | Windows 2000 Professional<br/>                                                   |
 | Fim do suporte do servidor<br/> | Windows 2000 Server<br/>                                                         |
-| parâmetro<br/>                | <dl> <dt>Rassapi. h</dt> </dl>   |
+| Cabeçalho<br/>                | <dl> <dt>Rassapi. h</dt> </dl>   |
 | Biblioteca<br/>               | <dl> <dt>Rassapi. lib</dt> </dl> |
 | DLL<br/>                   | <dl> <dt>Rassapi.dll</dt> </dl> |
 
