@@ -1,9 +1,9 @@
 ---
 title: Evento de aviso do objeto AxWindowsMediaPlayer
-description: O evento de aviso é reservado para uso futuro.
+description: O evento Warning é reservado para uso futuro.
 ms.assetid: 3de63756-2726-4864-8988-fd614f23bcad
 keywords:
-- Evento de aviso do objeto AxWindowsMediaPlayer do Windows Media Player
+- Evento de aviso do objeto AxWindowsMediaPlayer Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a868ba7f619287cd96929c62d89dee3555d908b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 18925236148a508e66bb34e83f7ddb69f0cb59d87c98dfe0188f780ea2fc3605
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105761120"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120003996"
 ---
 # <a name="warning-event-of-the-axwindowsmediaplayer-object"></a>Evento de aviso do objeto AxWindowsMediaPlayer
 
-O evento de aviso é reservado para uso futuro.
+O evento Warning é reservado para uso futuro.
 
 ``` syntax
 [C#]
@@ -41,15 +41,15 @@ Private Sub player_Warning(
 
 ## <a name="event-data"></a>Dados de evento
 
-O manipulador associado a esse evento é do tipo **AxWMPLib. \_ WMPOCXEvents \_ WarningEventHandler**. Esse manipulador recebe um argumento do tipo **AxWMPLib. \_ WMPOCXEvents \_ WarningEvent**, que contém as propriedades a seguir relacionadas a esse evento.
+O manipulador associado a esse evento é do tipo **AxWMPLib. \_ Aviso WMPOCXEventsEventHandler \_**. Esse manipulador recebe um argumento do tipo **AxWMPLib. \_ WMPOCXEvents \_ WarningEvent**, que contém as propriedades a seguir relacionadas a esse evento.
 
 
 
 | Propriedade    | Descrição                                |
 |-------------|--------------------------------------------|
-| aviso de | **System. Int32** Sem suporte.<br/>  |
-| param       | **System. Int32** Sem suporte.<br/>  |
-| descrição | **System. String** Sem suporte.<br/> |
+| warningType | **System.Int32** Sem suporte.<br/>  |
+| param       | **System.Int32** Sem suporte.<br/>  |
+| descrição | **System.String** Sem suporte.<br/> |
 
 
 
@@ -65,7 +65,7 @@ Esse evento é reservado para uso futuro.
 
 | Requisito | Valor |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/>   | Windows Media Player 9 Series ou posterior<br/>                                                                          |
+| Versão<br/>   | Windows Media Player série 9 ou posterior<br/>                                                                          |
 | Namespace<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Assembly<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 

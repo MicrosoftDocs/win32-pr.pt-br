@@ -4,12 +4,12 @@ description: Multiplicação de precisão dupla por componente.
 ms.assetid: 53AE27BE-2F4B-4C55-B496-D7122C00DC52
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a5d311cb5c958e8b7403197027c9854d1a93a64
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 838b9e2b3ed24dd5a6025c230439ce0719922d88bac723b3aed759c5fa224d8d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107999083"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120068376"
 ---
 # <a name="dmul-sm5---asm"></a>dmul (SM5-ASM)
 
@@ -70,7 +70,7 @@ Essa instrução se aplica aos seguintes estágios de sombreador:
 
 
 
-| Vértice | Envoltória | Domain | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 
@@ -84,7 +84,7 @@ Essa instrução tem suporte nos seguintes modelos de sombreador:
 
 
 
-| Modelo de Sombreador                                              | Suportado |
+| Modelo de Sombreador                                              | Com suporte |
 |-----------------------------------------------------------|-----------|
 | [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sim       |
 | [Modelo do sombreador 4,1](dx-graphics-hlsl-sm4.md)              | não        |

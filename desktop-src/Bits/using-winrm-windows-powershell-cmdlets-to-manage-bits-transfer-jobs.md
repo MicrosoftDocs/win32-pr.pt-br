@@ -1,19 +1,19 @@
 ---
 title: Usar os cmdlets do Windows PowerShell do WinRM para gerenciar trabalhos de transferência do BITS
-description: Gerenciamento Remoto do Windows cmdlets do PowerShell podem gerenciar trabalhos de transferência de Serviço de Transferência Inteligente em Segundo Plano (BITS).
+description: Windows Os cmdlets do PowerShell de gerenciamento remoto podem gerenciar trabalhos de transferência de Serviço de Transferência Inteligente em Segundo Plano (BITS).
 ms.assetid: 9fbef8a1-ed3f-4277-9a07-ed427f60d7a8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6eefd874a1056e959d1516d515891ae216e4aca3
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 9f24f4776d8a8431ac8c910fb8145633961bf353721698f8c3e5b4737ee0a1c3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104500982"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120004636"
 ---
 # <a name="using-winrm-windows-powershell-cmdlets-to-manage-bits-transfer-jobs"></a>Usar os cmdlets do Windows PowerShell do WinRM para gerenciar trabalhos de transferência do BITS
 
-Gerenciamento Remoto do Windows cmdlets do PowerShell podem gerenciar trabalhos de transferência de Serviço de Transferência Inteligente em Segundo Plano (BITS). Para obter mais informações sobre gerenciamento remoto de BITS, consulte [provedor de bits](/previous-versions/windows/desktop/bitsprov/bits-provider) e [classes de provedor bits]( /previous-versions//dd904507(v=vs.85)).
+Windows Os cmdlets do PowerShell de gerenciamento remoto podem gerenciar trabalhos de transferência de Serviço de Transferência Inteligente em Segundo Plano (BITS). Para obter mais informações sobre gerenciamento remoto de BITS, consulte [provedor de bits](/previous-versions/windows/desktop/bitsprov/bits-provider) e [classes de provedor bits]( /previous-versions//dd904507(v=vs.85)).
 
 Os exemplos a seguir exigem o [provedor bits](/previous-versions/windows/desktop/bitsprov/bits-provider). O provedor de BITS está disponível após a instalação do BITS Compact Server. Para obter informações sobre como instalar o Compact Server, consulte a documentação do [bits Compact Server](bits-compact-server.md) .
 

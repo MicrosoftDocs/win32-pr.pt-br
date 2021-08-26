@@ -5,12 +5,12 @@ ms.assetid: 7a0a5a1b-8473-405b-a590-3f917e50cbdc
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 149abf4562b0e35067149fb69c9a1ec1304cc528
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3b6280784d8bf9fc9c692cb38f1ca2d0e76646b1d2a3d464e516f03e7ac682fc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822202"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120005506"
 ---
 # <a name="ldap-error-codes-for-adsi"></a>Códigos de erro LDAP para ADSI
 
@@ -26,9 +26,9 @@ Esse método é semelhante aos [códigos de erro do Win32 para ADSI](win32-error
 4.  Substitua o erro de prefixo **\_ DS** por **LDAP \_**. No exemplo, a nova definição é um **\_ \_ erro de operações LDAP**.
 5.  Pesquise no arquivo Winldap. h o valor da definição de erro LDAP. No exemplo, o valor do **erro de \_ operações \_ LDAP** no arquivo Winldap. h é 0x01.
 
- 
+ 
 
- 
+ 
 
 
 

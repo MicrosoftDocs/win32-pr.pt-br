@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: e41c1da0eae001d314e2682a3295a0b88b993ee1
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: d75eb61dd498d7a2f1d6bd9c5bd0dd9c52f3fd56625cb41b0026e9acce431ec6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103837743"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120068346"
 ---
 # <a name="dst---vs"></a>DST-vs
 
@@ -43,7 +43,7 @@ onde
 
 | Versões do sombreador de vértice | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
 |------------------------|------|------|------|-------|------|-------|
-| DST                    | x    | x    | x    | x     | x    | x     |
+| dst                    | x    | x    | x    | x     | x    | x     |
 
 
 
