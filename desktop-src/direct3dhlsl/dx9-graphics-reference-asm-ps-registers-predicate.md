@@ -1,6 +1,6 @@
 ---
-title: Registro de predicado (referência do HLSL PS)
-description: O registro de saída do sombreador de pixel contém um valor booliano por canal.
+title: Registro de predicado (referência de PS HLSL)
+description: Esse registro de saída do sombreador de pixel contém um valor booliana por canal.
 ms.assetid: dc5bff90-4efa-4390-b744-dd1e894ff540
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,53 +9,53 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 54c0706b110e04548c836bed8ae794f8da73747e
-ms.sourcegitcommit: cba7f424a292fd7f3a8518947b9466439b455419
+ms.openlocfilehash: 8cc8404c9a6be87951142ff3473b283a57f4814b729a8ad5a462f9069b20f3ea
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "103638912"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119950026"
 ---
-# <a name="predicate-register-hlsl-ps-reference"></a>Registro de predicado (referência do HLSL PS)
+# <a name="predicate-register-hlsl-ps-reference"></a>Registro de predicado (referência de PS HLSL)
 
-O registro de saída do sombreador de pixel contém um valor booliano por canal.
+Esse registro de saída do sombreador de pixel contém um valor booliana por canal.
 
-Um registro de predicado tem suporte nas seguintes versões:
+Há suporte para um registro de predicado nas seguintes versões:
 
 
 
-| Versões do sombreador de pixel | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ SW | 2 \_ x | 3 \_ 0 | 3 \_ SW |
+| Versões do sombreador de pixel | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ sw | 2 \_ x | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|-------|------|------|-------|
 | registro de predicado    |      |      |      |      |      |       | x    | x    | x     |
 
 
 
- 
+ 
 
-Aqui estão as propriedades do registro.
+Aqui estão as propriedades de registro.
 
 
 
-| Tipo de registro | Contagem | R/W | \# Portas de leitura | \# Leituras/InStr | Dimensão | RelAddr | Padrões | Requer DCL |
+| Tipo de registro | Contagem | R/W | \# Ler portas | \# Leituras/inst | Dimensão | RelAddr | Padrões | Requer DCL |
 |---------------|-------|-----|---------------|---------------|-----------|---------|----------|--------------|
-| Predicado (p)  | 1     | R/W | 1             | 1             | 4         | N/D     | Nenhum     | N            |
+| Predicado(p)  | 1     | R/W | 1             | 1             | 4         | N/D     | Nenhum     | N            |
 
 
 
- 
+ 
 
-O registro de predicado pode ser modificado com [setp \_ comp-PS](setp-comp---ps.md). Não há valores padrão para este registro; um aplicativo precisa definir o registro antes que ele seja usado.
+O registro de predicado pode ser modificado [com setp \_ comp - ps](setp-comp---ps.md). Não há valores padrão para esse registro; um aplicativo precisa definir o registro antes de ser usado.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Register](dx9-graphics-reference-asm-ps-registers.md)
+[Registros](dx9-graphics-reference-asm-ps-registers.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

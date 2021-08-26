@@ -1,21 +1,21 @@
 ---
-description: 'Você pode habilitar a correção gama para um pincel de gradiente passando TRUE para o método PathGradientBrush:: SetGammaCorrection desse pincel.'
+description: Você pode habilitar a correção gama para um pincel de gradiente passando TRUE para o método PathGradientBrush::SetGammaCorrection desse pincel.
 ms.assetid: 47472e41-f469-44f4-8b39-cf3982b79f9e
 title: Aplicando a correção gama a um gradiente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 80e51673e8be4fd289286ce5e4e3e8f7c5469724
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eae76306e5c68804d76777d9fc80c65d06904702487a8b60f80659b9d16a96ae
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104091490"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119888536"
 ---
 # <a name="applying-gamma-correction-to-a-gradient"></a>Aplicando a correção gama a um gradiente
 
-Você pode habilitar a correção gama para um pincel de gradiente passando **true** para o método [**PathGradientBrush:: SetGammaCorrection**](/windows/desktop/api/Gdipluspath/nf-gdipluspath-pathgradientbrush-setgammacorrection) desse pincel. Você pode desabilitar a correção gama passando **false** para o método **PathGradientBrush:: SetGammaCorrection** . A correção gama é desabilitada por padrão.
+Você pode habilitar a correção gama para um pincel de gradiente passando **TRUE** para o [**método PathGradientBrush::SetGammaCorrection**](/windows/desktop/api/Gdipluspath/nf-gdipluspath-pathgradientbrush-setgammacorrection) desse pincel. Você pode desabilitar a correção gama passando **FALSE** para o **método PathGradientBrush::SetGammaCorrection.** A correção gama está desabilitada por padrão.
 
-O exemplo a seguir cria um pincel de gradiente linear e usa esse pincel para preencher dois retângulos. O primeiro retângulo é preenchido sem a correção gama e o segundo retângulo é preenchido com a correção gama.
+O exemplo a seguir cria um pincel de gradiente linear e usa esse pincel para preencher dois retângulos. O primeiro retângulo é preenchido sem correção gama e o segundo retângulo é preenchido com correção gama.
 
 
 ```
@@ -32,11 +32,11 @@ graphics.FillRectangle(&linGrBrush, 0, 60, 200, 50);
 
 
 
-A ilustração a seguir mostra os dois retângulos preenchidos. O retângulo superior, que não tem a correção gama, aparece escuro no meio. O retângulo inferior, que tem a correção gama, parece ter mais intensidade uniforme.
+A ilustração a seguir mostra os dois retângulos preenchidos. O retângulo superior, que não tem correção gama, aparece escuro no meio. O retângulo inferior, que tem correção gama, parece ter uma intensidade mais uniforme.
 
-![ilustração mostrando dois retângulos: o preenchimento colorido do primeiro varia em intensidade, o preenchimento da segunda varia menos](images/gammagradient1.png)
+![ilustração mostrando dois retângulos: o preenchimento colorido do primeiro varia de intensidade, o preenchimento do segundo varia menos](images/gammagradient1.png)
 
-O exemplo a seguir cria um pincel de gradiente de caminho com base em um caminho em formato de estrela. O código usa o pincel de gradiente de caminho com a correção gama desabilitada (o padrão) para preencher o caminho. Em seguida, o código passa **true** para o método [**PathGradientBrush:: SetGammaCorrection**](/windows/desktop/api/Gdipluspath/nf-gdipluspath-pathgradientbrush-setgammacorrection) para habilitar a correção gama para o pincel de gradiente de caminho. A chamada para [**Graphics:: TranslateTransform**](/windows/desktop/api/Gdiplusgraphics/nf-gdiplusgraphics-graphics-translatetransform) define a transformação mundial de um objeto [**Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) para que a chamada subsequente para [**Graphics:: FillPath**](/windows/desktop/api/Gdiplusgraphics/nf-gdiplusgraphics-graphics-fillpath) Preencha uma estrela que fica à direita da primeira estrela.
+O exemplo a seguir cria um pincel de gradiente de caminho com base em um caminho em forma de estrela. O código usa o pincel de gradiente de caminho com a correção gama desabilitada (o padrão) para preencher o caminho. Em seguida, o código passa **TRUE** para o [**método PathGradientBrush::SetGammaCorrection**](/windows/desktop/api/Gdipluspath/nf-gdipluspath-pathgradientbrush-setgammacorrection) para habilitar a correção gama para o pincel de gradiente de caminho. A chamada para [**Graphics::TranslateTransform**](/windows/desktop/api/Gdiplusgraphics/nf-gdiplusgraphics-graphics-translatetransform) define a transformação mundial de um objeto [**Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) para que a chamada subsequente a [**Graphics::FillPath**](/windows/desktop/api/Gdiplusgraphics/nf-gdiplusgraphics-graphics-fillpath) preencha uma estrela que fica à direita da primeira estrela.
 
 
 ```
@@ -76,9 +76,9 @@ graphics.FillPath(&pthGrBrush, &path);
 
 
 
-A ilustração a seguir mostra a saída do código anterior. A estrela à direita tem correção de gama. Observe que a estrela à esquerda, que não tem a correção gama, tem áreas que parecem escuras.
+A ilustração a seguir mostra a saída do código anterior. A estrela à direita tem correção gama. Observe que a estrela à esquerda, que não tem correção gama, tem áreas que parecem escuras.
 
-![ilustração de 2 5-pontos de início com preenchimento gradiente colorido; a primeira tem áreas escuras, a segunda não](images/gammagradient2.png)
+![ilustração de dois inícios de cinco pontos com preenchimento de gradiente colorido; o primeiro tem áreas escuras, o segundo não](images/gammagradient2.png)
 
  
 

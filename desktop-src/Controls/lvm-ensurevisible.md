@@ -1,9 +1,9 @@
 ---
-title: Mensagem de LVM_ENSUREVISIBLE (commctrl. h)
-description: Garante que um item de exibição de lista seja totalmente ou parcialmente visível, rolando o controle de exibição de lista, se necessário. Você pode enviar essa mensagem explicitamente ou usando a \_ macro EnsureVisible do ListView.
+title: LVM_ENSUREVISIBLE mensagem (Commctrl.h)
+description: Garante que um item de exibição de lista seja totalmente ou parcialmente visível, rolando o controle de exibição de lista, se necessário. Você pode enviar essa mensagem explicitamente ou usando a macro ListView \_ EnsureVisible.
 ms.assetid: 3564b6e6-b8b6-401b-85bc-8bd6261fc054
 keywords:
-- Controles de LVM_ENSUREVISIBLE de mensagens do Windows
+- LVM_ENSUREVISIBLE controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d0ff4009399988f20f3e162114f91e4cff02820
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: baeefaf90f0a4562fb187024b2c6f8676c68fb9d46377a4ced900bda6cfd3dfd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103917998"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119920296"
 ---
-# <a name="lvm_ensurevisible-message"></a>\_Mensagem ENSUREVISIBLE LVM
+# <a name="lvm_ensurevisible-message"></a>Mensagem LVM \_ ENSUREVISIBLE
 
-Garante que um item de exibição de lista seja totalmente ou parcialmente visível, rolando o controle de exibição de lista, se necessário. Você pode enviar essa mensagem explicitamente ou usando a macro [**\_ EnsureVisible do ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_ensurevisible) .
+Garante que um item de exibição de lista seja totalmente ou parcialmente visível, rolando o controle de exibição de lista, se necessário. Você pode enviar essa mensagem explicitamente ou usando a [**macro ListView \_ EnsureVisible.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_ensurevisible)
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -39,17 +39,17 @@ O índice do item de exibição de lista.
 *lParam* 
 </dt> <dd>
 
-Um valor que especifica se o item deve estar totalmente visível. Se esse parâmetro for **true**, nenhuma rolagem ocorrerá se o item estiver pelo menos parcialmente visível.
+Um valor que especifica se o item deve estar totalmente visível. Se esse parâmetro for **TRUE,** nenhuma rolagem ocorrerá se o item estiver pelo menos parcialmente visível.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna **verdadeiro** se for bem-sucedido ou **false** caso contrário.
+Retorna **TRUE se** for bem-sucedido ou FALSE **caso** contrário.
 
 ## <a name="remarks"></a>Comentários
 
-A mensagem falhará se o estilo da janela incluir [**LVS \_ NoScroll**](list-view-window-styles.md).
+A mensagem falhará se o estilo da janela incluir [**LVS \_ NOSCROLL.**](list-view-window-styles.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,9 +57,9 @@ A mensagem falhará se o estilo da janela incluir [**LVS \_ NoScroll**](list-vie
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

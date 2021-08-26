@@ -4,16 +4,16 @@ ms.assetid: 37e8f940-617d-43f6-92bd-aadccafe0059
 title: Sincronizando comandos de DVD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c4d677c38363a0ab80f90f58498eeef24bdc29eb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 38696425892618f1b66544e69a4a567d0f539234d991cb96792eda4f6f1509d3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105785333"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119964806"
 ---
 # <a name="synchronizing-dvd-commands"></a>Sincronizando comandos de DVD
 
-Os comandos de DVD nem sempre são concluídos instantaneamente. Por esse motivo, alguns dos métodos em [**IDvdControl2**](/windows/desktop/api/Strmif/nn-strmif-idvdcontrol2) são assíncronos. Isso inclui métodos de reprodução, como **PlayTitle** e métodos de navegação de menu, como o **menu** de menus e **ReturnFromSubmenu**. Um método assíncrono retorna imediatamente, sem esperar que o comando seja concluído. Depois que o método retornar, outros eventos poderão impedir a conclusão do comando, mesmo se o método tiver sido bem-sucedido. O DirectShow fornece várias opções de sincronização de comandos, variando de nenhuma sincronização à sincronização completa usando eventos de gráfico de filtro.
+Os comandos de DVD nem sempre são concluídos instantaneamente. Por esse motivo, alguns dos métodos em [**IDvdControl2**](/windows/desktop/api/Strmif/nn-strmif-idvdcontrol2) são assíncronos. Isso inclui métodos de reprodução, como **PlayTitle** e métodos de navegação de menu, como o **menu** de menus e **ReturnFromSubmenu**. Um método assíncrono retorna imediatamente, sem esperar que o comando seja concluído. Depois que o método retornar, outros eventos poderão impedir a conclusão do comando, mesmo se o método tiver sido bem-sucedido. o DirectShow fornece várias opções de sincronização de comandos, variando de nenhuma sincronização à sincronização completa usando eventos de gráfico de filtro.
 
 Todos os métodos assíncronos têm um parâmetro *dwFlags* e um parâmetro *ppCmd* . O parâmetro *dwFlags* especifica o comportamento de sincronização e o parâmetro *ppCmd* retorna um ponteiro para um objeto de sincronização opcional. Comportamentos diferentes resultam de acordo com os valores que você fornece para esses parâmetros.
 

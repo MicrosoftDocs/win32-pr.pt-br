@@ -4,17 +4,17 @@ description: Os ícones padrão são os ícones de erro, aviso, informações e 
 ms.assetid: 63b5c31d-5094-4299-b44b-35b2452ce706
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 69085f4c527db8431b5e33f0dba4668d43d1c669
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 74f5b70fb218606eb5f87cbad247c1c75a100f9c5e0f675bb6c075e559fd1a3d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "104297860"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119936295"
 ---
 # <a name="standard-icons"></a>Ícones padrão
 
 > [!NOTE]
-> Este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte da orientação ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais](/windows/uwp/design/).
+> este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte da orientação ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais](/windows/uwp/design/).
 
 Os ícones padrão são os ícones de erro, aviso, informações e pontos de interrogação que fazem parte do Windows.
 
@@ -29,7 +29,7 @@ Os ícones padrão têm estes significados:
 -   **Ícone de informações.** A interface do usuário está apresentando informações úteis.
 -   **Ícone de ponto de interrogação.** A interface do usuário indica um ponto de entrada de ajuda.
 
-Os ícones padrão são notáveis porque são incorporados a muitas APIs (interfaces de programação de aplicativo) do Windows, como caixas de [diálogo de tarefas](win-dialog-box.md), [caixa de mensagem](glossary.md), [balões](ctrl-balloons.md)e [notificações](mess-notif.md). Eles também são usados normalmente em [mensagens](glossary.md) in-loco e barras de [status](ctrl-status-bars.md).
+os ícones padrão são notáveis porque são criados em muitas Windows APIs (interfaces de programação de aplicativo), como caixas de [diálogo de tarefas](win-dialog-box.md), [caixa de mensagem](glossary.md), [balões](ctrl-balloons.md)e [notificações](mess-notif.md). Eles também são usados normalmente em [mensagens](glossary.md) in-loco e barras de [status](ctrl-status-bars.md).
 
 **Observação:** As diretrizes relacionadas aos [ícones](vis-icons.md) são apresentadas em um artigo separado.
 
@@ -55,15 +55,15 @@ Consequentemente, uma mensagem de erro pode receber um ícone de erro, mas nunca
 
 ### <a name="determining-the-appropriate-message-type"></a>Determinando o tipo de mensagem apropriado
 
-Alguns problemas podem ser apresentados como erro, aviso ou informações, dependendo da ênfase e da formulação. Por exemplo, suponha que uma página da Web não possa carregar um controle ActiveX não assinado com base na configuração atual do Windows Internet Explorer:
+Alguns problemas podem ser apresentados como erro, aviso ou informações, dependendo da ênfase e da formulação. por exemplo, suponha que uma página da Web não possa carregar um controle de ActiveX não assinado com base na configuração atual do Windows Internet Explorer:
 
--   **Ao.** "Esta página não pode carregar um controle ActiveX não assinado". (Fraseada como um problema existente.)
--   **Alerta.** "Esta página pode não se comportar conforme o esperado porque o Windows Internet Explorer não está configurado para carregar controles ActiveX não assinados." ou "permitir que esta página instale um controle ActiveX não assinado? Fazer isso de fontes não confiáveis pode prejudicar seu computador. " (Fraseada como condições que podem causar problemas futuros.)
--   **Divulgação.** "Você configurou o Windows Internet Explorer para bloquear controles ActiveX não assinados". (Fraseada como uma declaração de fato).
+-   **Ao.** "esta página não pode carregar um controle de ActiveX não assinado". (Fraseada como um problema existente.)
+-   **Alerta.** "esta página pode não se comportar conforme o esperado porque Windows o Internet Explorer não está configurado para carregar controles de ActiveX não assinados". ou "permitir que esta página instale um controle de ActiveX não assinado? Fazer isso de fontes não confiáveis pode prejudicar seu computador. " (Fraseada como condições que podem causar problemas futuros.)
+-   **Divulgação.** "você configurou o Windows Internet Explorer para bloquear controles de ActiveX não assinados". (Fraseada como uma declaração de fato).
 
 **Para determinar o tipo de mensagem apropriado, concentre-se no aspecto mais importante do problema que os usuários precisam conhecer ou agir.** Normalmente, se um problema impedir que o usuário Continue, ele será apresentado como um erro; Se o usuário puder continuar, é um aviso. Crie a [instrução principal](text-ui.md) ou outro texto correspondente com base nesse foco e, em seguida, escolha um ícone (padrão ou de outra forma) que corresponda ao texto. O texto da instrução principal e os ícones sempre devem corresponder.
 
-### <a name="severity"></a>Severidade
+### <a name="severity"></a>Severity
 
 Embora a gravidade não seja uma consideração ao escolher entre os ícones de erro, de aviso e de informações, **a gravidade é um fator para determinar se um ícone padrão deve ser usado.**
 
@@ -77,7 +77,7 @@ Os ícones funcionam melhor quando usados para se comunicar visualmente. (Observ
 -   Eles têm consequências inesperadas ou indesejadas.
 -   Eles exigem o tratamento correto agora, porque os erros não podem ser facilmente corrigidos e podem até mesmo ser irreversível.
 
-Para distinguir erros não críticos e avisos de críticos, as mensagens não críticas geralmente são exibidas sem um ícone. Fazer isso chama atenção para mensagens críticas, torna as mensagens críticas e não críticas visualmente distintas e é consistente com o [Tom do Windows](text-style-tone.md).
+Para distinguir erros não críticos e avisos de críticos, as mensagens não críticas geralmente são exibidas sem um ícone. fazer isso chama atenção para mensagens críticas, torna as mensagens críticas e não críticas visualmente distintas e é consistente com o [tom de Windows](text-style-tone.md).
 
 Nem todas as mensagens precisam de um ícone. Os ícones não são uma maneira de decorar mensagens.
 
@@ -95,7 +95,7 @@ No entanto, o exemplo a seguir não é crítico porque é provável que seja int
 
 Neste exemplo, essa [confirmação](mess-confirm.md) não é crítica porque é provável que seja intencional e facilmente desfeita.
 
-Em uma interface de usuário típica, a maioria dos erros está relacionada a erros de entrada do usuário. A maioria dos erros de entrada do usuário não é essencial porque eles são facilmente corrigidos e os usuários devem corrigi-los antes de continuar. Além disso, o desenho de muita atenção aos erros menores do usuário é ao contrário do Tom do Windows. Consequentemente, os erros de entrada de usuário secundários geralmente são exibidos sem um ícone de erro. Para reforçar sua natureza não crítica, nos referimos a isso como problemas de entrada do usuário.
+Em uma interface de usuário típica, a maioria dos erros está relacionada a erros de entrada do usuário. A maioria dos erros de entrada do usuário não é essencial porque eles são facilmente corrigidos e os usuários devem corrigi-los antes de continuar. além disso, o desenho de muita atenção aos erros de usuários secundários é diferente do tom de Windows. Consequentemente, os erros de entrada de usuário secundários geralmente são exibidos sem um ícone de erro. Para reforçar sua natureza não crítica, nos referimos a isso como problemas de entrada do usuário.
 
 ![captura de tela informando os usuários da entrada correta ](images/vis-std-icons-image4.png)
 
@@ -103,7 +103,7 @@ Neste exemplo, esse problema de entrada de usuário secundário não é crítico
 
 ### <a name="avoid-overwarning"></a>Evitar aviso prévio
 
-Nós alertamos os programas do Windows. O programa típico do Windows tem ícones de aviso aparentemente em qualquer lugar, avisando sobre coisas que têm pouco significado. Em alguns programas, quase todas as perguntas são apresentadas como um aviso. A deadvertência faz com que o uso de um programa seja semelhante a uma atividade perigosa e se reduz de problemas realmente significativos.
+nós nos reavisamos sobre programas Windows. o programa típico de Windows tem ícones de aviso aparentemente em qualquer lugar, avisando sobre coisas que têm pouco significado. Em alguns programas, quase todas as perguntas são apresentadas como um aviso. A deadvertência faz com que o uso de um programa seja semelhante a uma atividade perigosa e se reduz de problemas realmente significativos.
 
 O mero potencial para a perda de dados sozinha é insuficiente para chamar um ícone de aviso. Além disso, os resultados indesejáveis devem ser inesperados ou indesejados e não facilmente corrigidos. Caso contrário, praticamente qualquer pergunta respondida incorretamente poderia ser interpretada para resultar na perda de dados de algum tipo e mérito de um ícone de aviso.
 
@@ -218,15 +218,15 @@ No exemplo incorreto, o ícone de aviso padrão não corresponde à instrução 
     | Caixas de diálogo<br/>      | Use para todos os avisos. <br/> ![aviso de captura de tela de alteração de extensão de nome de arquivo ](images/vis-std-icons-image12.png)<br/>                                                   |
     | Avisos in-loco<br/> | Use para identificar o texto como um aviso. <br/> ![captura de tela de aviso de espaço livre insuficiente ](images/vis-std-icons-image13.png)<br/>                                    |
     | Notificações<br/>     | Use para todos os avisos. (para [eventos não críticos do sistema](glossary.md).) <br/> ![captura de tela de notificação de aviso de bateria fraca ](images/vis-std-icons-image14.png)<br/> |
-    | Balões<br/>          | Use para [condições especiais](ctrl-balloons.md). <br/> ![captura de tela do aviso de balão do Caps Lock ativado ](images/vis-std-icons-image15.png)<br/>                           |
-    | Publicitária<br/>           | Use para chamar a atenção para a faixa. <br/> ![captura de tela da faixa com aviso de TPM ausente ](images/vis-std-icons-image16.png)<br/>                                    |
+    | Balões<br/>          | Use para [condições especiais](ctrl-balloons.md). <br/> ![captura de tela do aviso de balão de bloqueio de caps em ](images/vis-std-icons-image15.png)<br/>                           |
+    | Banners<br/>           | Use para chamar a atenção para a faixa. <br/> ![captura de tela da faixa com aviso de tpm ausente ](images/vis-std-icons-image16.png)<br/>                                    |
 
 
 
  
 
--   **Não use ícones de aviso para "suavizar" erros não críticos.** Os erros não são avisos aplique as diretrizes de ícone de erro em vez disso.
--   **Para caixas de diálogo de pergunta, use ícones de aviso somente para perguntas com consequências significativas.** Não use ícones de aviso para perguntas rotineiras.
+-   **Não use ícones de aviso para "suavizar" erros não críticos.** Os erros não são avisos que aplicam as diretrizes de ícone de erro.
+-   **Para caixas de diálogo de pergunta, use ícones de aviso somente para perguntas com consequências significativas.** Não use ícones de aviso para perguntas de rotina.
 
 **Correto:**
 
@@ -234,42 +234,42 @@ No exemplo incorreto, o ícone de aviso padrão não corresponde à instrução 
 
 **Incorreto:**
 
-![captura de tela de aviso sobre como ignorar lembretes ](images/vis-std-icons-image18.png)
+![captura de tela de aviso sobre como descartar lembretes ](images/vis-std-icons-image18.png)
 
-No exemplo incorreto, um ícone de aviso é usado incorretamente para uma pergunta rotineira.
+No exemplo incorreto, um ícone de aviso é usado incorretamente para uma pergunta de rotina.
 
--   **Para caixas de diálogo de tarefas, você pode usar um ícone de nota de rodapé de aviso para alertar os usuários sobre consequências arriscadas.** No entanto, use um ícone de aviso na área de conteúdo ou na área de nota de rodapé, mas não em ambos.
+-   **Para caixas de diálogo de tarefa, você pode usar um ícone de nota de rodapé de aviso para alertar os usuários sobre consequências arriscadas.** No entanto, use um ícone de aviso na área de conteúdo ou na área de nota de rodapé, mas não em ambos.
 
-![aviso de captura de tela de um arquivo potencialmente inseguro ](images/vis-std-icons-image19.png)
+![aviso de captura de tela de um arquivo potencialmente não seguro ](images/vis-std-icons-image19.png)
 
-Neste exemplo, um escudo de segurança amarelo é usado em uma nota de rodapé.
+Neste exemplo, um blindagem de segurança amarelo é usado em uma nota de rodapé.
 
 ### <a name="information-icons"></a>Ícones de informações
 
--   **Use ícones de informações somente quando o contexto não estiver obviamente apresentando informações:**
+-   **Use ícones de informações somente quando o contexto não estiver, obviamente, apresentando informações:**
 
 
 
     | Contexto                         | Quando usar                                                                                                                                                  |
     |--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
     | Caixas de diálogo<br/>  | Não use.<br/>                                                                                                                             |
-    | No local<br/>      | Não use. Em vez disso, use um texto estático simples ou uma faixa.<br/>                                                                           |
+    | No local<br/>      | Não use. Em vez disso, use um texto estático sem-texto ou uma faixa.<br/>                                                                           |
     | Notificações<br/> | Não use.<br/>                                                                                                                             |
     | Balões<br/>      | Não use.<br/>                                                                                                                             |
-    | Publicitária<br/>       | Use para chamar a atenção para a faixa. <br/> ![captura de tela de faixa com informações de configurações ](images/vis-std-icons-image20.png)<br/> |
+    | Banners<br/>       | use para chamar a atenção para a faixa. <br/> ![captura de tela da faixa com informações de configurações ](images/vis-std-icons-image20.png)<br/> |
 
 
 
  
 
--   Os ícones de informações não são necessários em caixas de diálogo, notificações e balões porque seu contexto se comunica de forma satisfatória de que estão fornecendo aos usuários informações.
--   **Para caixas de diálogo de tarefas, não use ícones de nota de rodapé de informações.** As notas de rodapé são suficientemente visíveis e sem dizer que são informações.
+-   Ícones de informações não são necessários em caixas de diálogo, notificações e balão porque seu contexto comunica suficientemente que eles estão fornecendo informações aos usuários.
+-   **Para caixas de diálogo de tarefa, não use ícones de nota de rodapé de informações.** As notas de rodapé são suficientemente visíveis e não precisam dizer que são informações.
 
 ### <a name="question-mark-icons"></a>Ícones de ponto de interrogação
 
--   **Use o ícone de ponto de interrogação somente para pontos de entrada de ajuda.** Para obter mais informações, consulte as diretrizes do [ponto de entrada da ajuda](winenv-help.md) .
--   **Não use o ícone de ponto de interrogação para fazer perguntas.** Novamente, use o ícone de ponto de interrogação somente para pontos de entrada de ajuda. Não é necessário fazer perguntas usando o ícone de ponto de interrogação, mesmo assim, é suficiente apresentar uma instrução principal como uma pergunta.
--   **Não substitua rotineiramente ícones de interrogação por ícones de aviso.** Substitua um ícone de ponto de interrogação por um ícone de aviso somente se a pergunta tiver consequências significativas. Caso contrário, não use nenhum ícone.
+-   **Use o ícone de ponto de interrogação somente para pontos de entrada da Ajuda.** Para obter mais informações, consulte as [Diretrizes de ponto de entrada da](winenv-help.md) Ajuda.
+-   **Não use o ícone de ponto de interrogação para fazer perguntas.** Novamente, use o ícone de ponto de interrogação somente para pontos de entrada da Ajuda. Não é necessário fazer perguntas usando o ícone de ponto de interrogação, de qualquer forma, é suficiente apresentar uma instrução principal como uma pergunta.
+-   **Não substitua rotineiramente ícones de ponto de interrogação por ícones de aviso.** Substitua um ícone de ponto de interrogação por um ícone de aviso somente se a pergunta tiver consequências significativas. Caso contrário, não use nenhum ícone.
 
  
 

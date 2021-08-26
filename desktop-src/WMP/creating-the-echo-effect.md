@@ -3,7 +3,7 @@ title: Criando o efeito de eco
 description: Criando o efeito de eco
 ms.assetid: 3fac6c74-8221-4656-997b-0f903fae85b7
 keywords:
-- Plug-ins do Windows Media Player, método Echo DoProcessOutput de exemplo
+- plug-ins de Windows Media Player, método Echo de exemplo DoProcessOutput
 - plug-ins, exemplo de método Echo DoProcessOutput
 - plug-ins de processamento de sinal digital, Echo Sample DoProcessOutput Method
 - Plug-ins do DSP, método Echo de exemplo DoProcessOutput
@@ -11,12 +11,12 @@ keywords:
 - Exemplo de plug-in de eco do DSP, criando efeito de eco
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e978562ff4cdee016f92409d183990cd4bb178b9
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: fcb79b5be53f391854f38ce9aeba1c1bbff61ed2c0a982395c7063ff53146760
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104004956"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119902286"
 ---
 # <a name="creating-the-echo-effect"></a>Criando o efeito de eco
 
@@ -217,9 +217,9 @@ Para áudio de 16 bits, o assistente usa o seguinte código como a etapa final n
 [**Implementando CEcho::D oProcessOutput**](implementing-cecho--doprocessoutput.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

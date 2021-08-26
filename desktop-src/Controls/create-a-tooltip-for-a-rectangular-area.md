@@ -1,40 +1,40 @@
 ---
 title: Como criar uma dica de ferramenta para uma área retangular
-description: O exemplo a seguir demonstra como criar um controle de dica de ferramenta padrão para a área inteira do cliente de uma janela.
+description: O exemplo a seguir demonstra como criar um controle de dica de ferramenta padrão para toda a área de cliente de uma janela.
 ms.assetid: 6AF1CE6E-AD63-4F84-9759-14FE4F16092B
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8f8daf62bf2ba85c8750fd07a1b9122b0360fc11
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c9be19be187e8c09b3aeb618e1c3518c7c15ca66816cbbb751abe43aa0b9172a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103635286"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119920686"
 ---
 # <a name="how-to-create-a-tooltip-for-a-rectangular-area"></a>Como criar uma dica de ferramenta para uma área retangular
 
-O exemplo a seguir demonstra como criar um controle de dica de ferramenta padrão para a área inteira do cliente de uma janela.
+O exemplo a seguir demonstra como criar um controle de dica de ferramenta padrão para toda a área de cliente de uma janela.
 
-A ilustração a seguir mostra a dica de ferramenta que é exibida quando o ponteiro do mouse está dentro da janela do cliente de uma caixa de diálogo. O identificador da caixa de diálogo foi passado para a função mostrada no exemplo anterior.
+A ilustração a seguir mostra a dica de ferramenta exibida quando o ponteiro do mouse está dentro da janela do cliente de uma caixa de diálogo. O alça da caixa de diálogo foi passado para a função mostrada no exemplo anterior.
 
-![captura de tela de uma caixa de diálogo; o ponteiro do mouse está dentro da janela do cliente e uma dica de ferramenta é visível](images/tt-rectangle.png)
+![captura de tela de uma caixa de diálogo; o ponteiro do mouse está dentro da janela do cliente e uma dica de ferramenta está visível](images/tt-rectangle.png)
 
 ## <a name="what-you-need-to-know"></a>O que você precisa saber
 
 ### <a name="technologies"></a>Tecnologias
 
--   [Controles do Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
 -   C/C++
--   Programação da interface do usuário do Windows
+-   Windows Interface do Usuário programação
 
 ## <a name="instructions"></a>Instruções
 
 ### <a name="create-a-tooltip-for-a-rectangular-area"></a>Criar uma dica de ferramenta para uma área retangular
 
-O exemplo a seguir demonstra como criar um controle de dica de ferramenta padrão para a área inteira do cliente de uma janela.
+O exemplo a seguir demonstra como criar um controle de dica de ferramenta padrão para toda a área de cliente de uma janela.
 
 
 ```C++
@@ -74,9 +74,9 @@ void CreateToolTipForRect(HWND hwndParent)
 [Usando controles de dica de ferramenta](using-tooltip-contro.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

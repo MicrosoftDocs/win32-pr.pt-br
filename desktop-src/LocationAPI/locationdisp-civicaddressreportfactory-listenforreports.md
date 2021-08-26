@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - locationapi.h
-ms.openlocfilehash: 02315f8b2f7fced76c3d0d1330df246af6bad4b4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 218684dcdb1c79b3b1a37517a4369ad492031cae1badfb9f0b16bbb6933289d8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922820"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119979766"
 ---
 # <a name="locationdispcivicaddressreportfactorylistenforreports-method"></a>Método LocationDisp. CivicAddressReportFactory. ListenForReports
 
-\[O modelo de objeto de API de localização está disponível para uso nos sistemas operacionais especificados na seção requisitos. Ele poderá ser alterado ou ficar indisponível em versões subsequentes. Em vez disso, para acessar o local de um site, use a [API de localização geográfica do W3C](/previous-versions/windows/internet-explorer/ie-developer/samples/gg589513(v=vs.85)). Para acessar o local de um aplicativo de área de trabalho, use a API [**Windows. Devices. geolocalização**](/uwp/api/Windows.Devices.Geolocation) .\]
+\[O modelo de objeto de API de localização está disponível para uso nos sistemas operacionais especificados na seção requisitos. Ele poderá ser alterado ou ficar indisponível em versões subsequentes. Em vez disso, para acessar o local de um site, use a [API de localização geográfica do W3C](/previous-versions/windows/internet-explorer/ie-developer/samples/gg589513(v=vs.85)). Para acessar o local de um aplicativo de área de trabalho, use o [**Windows. API de dispositivos. geolocalização**](/uwp/api/Windows.Devices.Geolocation) .\]
 
 Solicita eventos de relatório de endereços cívicos.
 
@@ -44,7 +44,7 @@ LocationDisp.CivicAddressReportFactory.ListenForReports(
 *requestedReportInterval* 
 </dt> <dd> Número (**palavra dupla**) que representa o tempo solicitado entre eventos de relatório de endereço cívico, em milissegundos. Consulte Observações.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
@@ -62,9 +62,9 @@ Para obter um exemplo de como usar esse método, consulte [escutando eventos de 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                               |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                |
-| parâmetro<br/>                   | <dl> <dt>Locationapi. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Locationapi. h</dt> </dl> |
 
 
 

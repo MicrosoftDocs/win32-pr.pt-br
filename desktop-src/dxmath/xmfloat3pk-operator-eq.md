@@ -11,12 +11,12 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: fbbeb1c05cdf9480d850e03b2291495d21b05a88
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c26f10e45c362a8597381fe5dd22d8db5fd4adf5de5e59936fa7b7bae27ad5da
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296544"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119979006"
 ---
 # <a name="xmfloat3pk-operator--operators"></a>Operador XMFLOAT3PK = operadores
 

@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 04d10e5439b8cd653f7c0a37d3a951167561f964
-ms.sourcegitcommit: f01bc6744cea55ad1aeeace7981a30b567e6fe60
+ms.openlocfilehash: 7b7b8e22cb17db4bdb2d692dc003baf63a6c6836c7d1a05a67444d254940e342
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104967234"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119948906"
 ---
 # <a name="wavereadlanefirst-function"></a>Função WaveReadLaneFirst
 
@@ -43,7 +43,7 @@ A expressão a ser avaliada.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor resultante é uniforme em toda a onda.
 

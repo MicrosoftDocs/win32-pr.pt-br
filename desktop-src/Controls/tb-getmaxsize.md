@@ -1,9 +1,9 @@
 ---
-title: Mensagem de TB_GETMAXSIZE (commctrl. h)
-description: Recupera o tamanho total de todos os botões e separadores visíveis na barra de ferramentas.
+title: TB_GETMAXSIZE mensagem (Commctrl.h)
+description: Recupera o tamanho total de todos os botões visíveis e separadores na barra de ferramentas.
 ms.assetid: 560e6ce2-00ef-46c3-b1d8-fbe0ac79c888
 keywords:
-- Controles de TB_GETMAXSIZE de mensagens do Windows
+- TB_GETMAXSIZE controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f4829e65d90c04181369dd73b9c54634f1077144
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 511d5726f117bbda183f55af5570fb75c2df3c78f5f6132dcefb406ee8fa7b70
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105755649"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119918676"
 ---
-# <a name="tb_getmaxsize-message"></a>Mensagem de TB \_ GETmaxsize
+# <a name="tb_getmaxsize-message"></a>Mensagem \_ GETMAXSIZE de TB
 
-Recupera o tamanho total de todos os botões e separadores visíveis na barra de ferramentas.
+Recupera o tamanho total de todos os botões visíveis e separadores na barra de ferramentas.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -35,13 +35,13 @@ Recupera o tamanho total de todos os botões e separadores visíveis na barra de
 *lParam* 
 </dt> <dd>
 
-Ponteiro para uma estrutura de [**tamanho**](/previous-versions//dd145106(v=vs.85)) que recebe o tamanho dos itens.
+Ponteiro para uma [**estrutura SIZE**](/previous-versions//dd145106(v=vs.85)) que recebe o tamanho dos itens.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retornará zero se for bem-sucedido ou nenhum outro.
+Retornará diferente de zero se for bem-sucedido ou zero caso contrário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,9 +49,9 @@ Retornará zero se for bem-sucedido ou nenhum outro.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

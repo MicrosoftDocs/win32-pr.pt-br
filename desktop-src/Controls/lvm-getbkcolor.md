@@ -3,7 +3,7 @@ title: Mensagem de LVM_GETBKCOLOR (commctrl. h)
 description: Obtém a cor da tela de fundo de um controle de exibição de lista. Você pode enviar essa mensagem explicitamente ou usando a \_ macro GetBkColor do ListView.
 ms.assetid: 077d3b2e-f6d1-4acc-b002-e9e707ad274c
 keywords:
-- Controles de LVM_GETBKCOLOR de mensagens do Windows
+- controles de Windows de mensagem de LVM_GETBKCOLOR
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4329adda75677d1cc0126eaa0196fadf143cd0b4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ff6c768b9d27b3e8eda2f9b46988e261f82bba28ed9c70647420e6bfb36fdc29
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454635"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119920266"
 ---
 # <a name="lvm_getbkcolor-message"></a>\_Mensagem GETBKCOLOR LVM
 
@@ -35,7 +35,7 @@ Obtém a cor da tela de fundo de um controle de exibição de lista. Você pode 
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna a cor da tela de fundo do controle de exibição de lista.
 
@@ -45,9 +45,9 @@ Retorna a cor da tela de fundo do controle de exibição de lista.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

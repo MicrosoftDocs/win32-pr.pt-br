@@ -4,12 +4,12 @@ ms.assetid: 53e4f5b7-c85d-4b44-9a0c-0ad05ca872cc
 title: Etapa 6. Adicionar suporte para COM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 097d51fa440812311edde9ce448916c66721a507
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 354299ed9ed2f752e0041b82af712e7a9c5411eb7bb7e16588267183442edf68
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112406769"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119964896"
 ---
 # <a name="step-6-add-support-for-com"></a>Etapa 6. Adicionar suporte para COM
 
@@ -56,7 +56,7 @@ Para obter mais informações, consulte [como implementar IUnknown](how-to-imple
 
 ## <a name="object-creation"></a>Criação de objetos
 
-Se você planeja empacotar seu filtro em uma DLL e disponibilizá-lo para outros clientes, você deve dar suporte a [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) e a outras funções com relacionadas. A biblioteca de classes base implementa a maior parte disso; Você só precisa fornecer algumas informações sobre seu filtro. Esta seção fornece uma breve visão geral do que fazer. Para obter detalhes, consulte [como criar uma DLL de filtro do DirectShow](how-to-create-a-dll.md).
+Se você planeja empacotar seu filtro em uma DLL e disponibilizá-lo para outros clientes, você deve dar suporte a [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) e a outras funções com relacionadas. A biblioteca de classes base implementa a maior parte disso; Você só precisa fornecer algumas informações sobre seu filtro. Esta seção fornece uma breve visão geral do que fazer. para obter detalhes, consulte [como criar uma DLL de filtro de DirectShow](how-to-create-a-dll.md).
 
 Primeiro, escreva um método de classe estática que retorne uma nova instância do seu filtro. Você pode nomear esse método como desejar, mas a assinatura deve corresponder à mostrada no exemplo a seguir:
 
@@ -124,9 +124,9 @@ STDAPI DllUnregisterServer()
 Os exemplos anteriores mostram como registrar o CLSID de um filtro para COM. Para muitos filtros, isso é suficiente. Em seguida, o cliente deve criar o filtro usando [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) e adicioná-lo ao grafo de filtro chamando [**IFilterGraph:: AddFilter**](/windows/desktop/api/Strmif/nf-strmif-ifiltergraph-addfilter). Em alguns casos, no entanto, talvez você queira fornecer informações adicionais sobre o filtro no registro. Essas informações são as seguintes:
 
 -   Permite que os clientes descubram o filtro usando o [mapeador de filtro](filter-mapper.md) ou o [enumerador de dispositivo do sistema](system-device-enumerator.md).
--   Permite que o Gerenciador de gráficos de filtro descubra o filtro durante a criação automática de grafo.
+-   permite que o filtro Graph Manager descubra o filtro durante a criação automática de grafo.
 
-O exemplo a seguir registra o filtro de codificador RLE na categoria de compactador de vídeo. Para obter detalhes, consulte [como registrar filtros do DirectShow](how-to-register-directshow-filters.md). Certifique-se de ler a seção [diretrizes para registrar filtros](guidelines-for-registering-filters.md), que descreve as práticas recomendadas para o registro de filtro.
+O exemplo a seguir registra o filtro de codificador RLE na categoria de compactador de vídeo. para obter detalhes, consulte [como registrar filtros de DirectShow](how-to-register-directshow-filters.md). Certifique-se de ler a seção [diretrizes para registrar filtros](guidelines-for-registering-filters.md), que descreve as práticas recomendadas para o registro de filtro.
 
 
 ```C++
@@ -247,7 +247,7 @@ int main()
 [Conexão inteligente](intelligent-connect.md)
 </dt> <dt>
 
-[Gravando filtros do DirectShow](writing-directshow-filters.md)
+[gravando filtros de DirectShow](writing-directshow-filters.md)
 </dt> <dt>
 
 [Gravando filtros de transformação](writing-transform-filters.md)

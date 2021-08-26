@@ -1,6 +1,6 @@
 ---
 title: Interface IDWriteFactory2
-description: A interface de fábrica raiz para todos os objetos DirectWrite.
+description: a interface de fábrica raiz para todos os objetos de DirectWrite.
 ms.assetid: 1D3EEC28-EAB3-4FA2-98E9-7A8FDAF6E6FE
 keywords:
 - Gravação direta da interface IDWriteFactory1
@@ -15,16 +15,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bb7d5ba0f8d480981ab6ebea6dcdbd955b7b967e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 370292387f2c42e3f749e24a063e05bb24280ec5c8e8941a430f996fe7f349da
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105782830"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119902796"
 ---
 # <a name="idwritefactory2-interface"></a>Interface IDWriteFactory2
 
-A interface de fábrica raiz para todos os objetos [DirectWrite](direct-write-portal.md) .
+a interface de fábrica raiz para todos os objetos de [DirectWrite](direct-write-portal.md) .
 
 ## <a name="members"></a>Membros
 
@@ -56,8 +56,8 @@ A interface **IDWriteFactory1** tem esses métodos.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos Windows 8.1 aplicativos de \[ área de trabalho \| UWP\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Aplicativos UWP para aplicativos da área de trabalho do Windows Server 2012 R2 \|\]<br/>                          |
+| Cliente mínimo com suporte<br/> | Windows 8.1 \[ aplicativos UWP de aplicativos de desktop \|\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[Aplicativos de aplicativos UWP da área de trabalho R2 \|\]<br/>                          |
 | Número mínimo de telefone com suporte<br/>  | Windows Phone 8,1 \[ Windows Phone Silverlight 8,1 e aplicativos de Windows Runtime\]<br/> |
 | Biblioteca<br/>                  | <dl> <dt>Dwrite. lib</dt> </dl>   |
 | DLL<br/>                      | <dl> <dt>Dwrite.dll</dt> </dl>   |

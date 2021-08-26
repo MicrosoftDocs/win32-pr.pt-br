@@ -11,12 +11,12 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: daa4025b6b807d5ac717fa2764c2df4ff2190a35
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f5b6be08c197c662e001108b4eaf599dfee11ca9e7c467e28f6f5d6291bb7bde
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105762511"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119978576"
 ---
 # <a name="xmxdec4-operator--operators"></a>Operador XMXDEC4 = operadores
 

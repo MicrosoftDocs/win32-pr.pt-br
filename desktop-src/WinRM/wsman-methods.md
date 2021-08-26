@@ -5,20 +5,20 @@ ms.assetid: DD26E1DB-40D8-460C-9635-EDD009844AB2
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ad02fd654879c9d78bdc5e683f90b26d8126030
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d3dfd3258b22976b40e6ed8eabc311806ba04d19df2c6d964d93312ac05d7fb3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104364123"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119997246"
 ---
 # <a name="wsman-methods"></a>Métodos WSMan
 
-O objeto [**WSMan**](wsman.md) expõe os métodos a seguir.
+O [**objeto WSMan**](wsman.md) expõe os métodos a seguir.
 
 ## <a name="in-this-section"></a>Nesta seção
 
--   [**Método createconnectoptions**](wsman-createconnectionoptions.md)
+-   [**Método CreateConnectionOptions**](wsman-createconnectionoptions.md)
 -   [**Método CreateResourceLocator**](wsman-createresourcelocator.md)
 -   [**Método CreateSession**](wsman-createsession.md)
 -   [**Método EnumerationFlagHierarchyDeep**](wsman-enumerationflaghierarchydeep.md)
@@ -43,9 +43,9 @@ O objeto [**WSMan**](wsman.md) expõe os métodos a seguir.
 -   [**Método SessionFlagUseNoAuthentication**](wsman-sessionflagusenoauthentication.md)
 -   [**Método SessionFlagUTF8**](wsman-sessionflagutf8.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -7,12 +7,12 @@ keywords:
 - define MIDL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b4af77979824c2e76352d6f28bef72161249845d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 22c8a63423943d72326b16d53272f63d6efbe7d614661990560b00989be04cf1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005474"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119979696"
 ---
 # <a name="dealing-with-defines-in-idl-files"></a>Lidando com as \# definições em arquivos IDL
 
@@ -61,9 +61,9 @@ Essa instrução resulta na geração da seguinte linha no arquivo de cabeçalho
 #define ARRSIZE 10
 ```
 
- 
+ 
 
- 
+ 
 
 
 

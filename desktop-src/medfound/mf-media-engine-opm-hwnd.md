@@ -4,12 +4,12 @@ ms.assetid: E5271D72-FE16-4D28-9BBA-1440C7CE0921
 title: Atributo MF_MEDIA_ENGINE_OPM_HWND (Mfmediaengine. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d60dd38f4f9eaca3e4eefbf84142c1509463f9b9
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 2e1079e7b9503c73ea678e4f9fd3642ec94fe43a1326e6f33a635f81d1bc1a64
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "103930121"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120013066"
 ---
 # <a name="mf_media_engine_opm_hwnd-attribute"></a>\_ \_ \_ Atributo HWND de OPM do mecanismo de mídia MF \_
 
@@ -35,9 +35,9 @@ Para habilitar as proteções de OPM para reprodução de vídeo, o aplicativo d
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 8 \| UWP\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | Aplicativos do Windows Server 2012 \[ Desktop aplicativos \| UWP\]<br/>                                |
-| parâmetro<br/>                   | <dl> <dt>Mfmediaengine. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ aplicativos UWP de aplicativos de desktop \|\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ aplicativos UWP de aplicativos de desktop \|\]<br/>                                |
+| Cabeçalho<br/>                   | <dl> <dt>Mfmediaengine. h</dt> </dl> |
 
 
 

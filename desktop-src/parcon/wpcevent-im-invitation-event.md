@@ -4,12 +4,12 @@ ms.assetid: b2cd1d37-9993-4990-83b7-b147a109e4af
 title: WPCEVENT_IM_INVITATION evento (Wpcevent. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 87c9d7e90eaa901b5e18a072e03e3112ee8c2934
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f29b1adc556e29e03f7c8a189567b98055187f80d1574e201c54e3af0c1c0aca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105768307"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119951386"
 ---
 # <a name="wpcevent_im_invitation-event"></a>Evento de convite do WPCEVENT \_ im \_
 
@@ -95,9 +95,9 @@ Uma cadeia delimitada que contém cadeias de caracteres de identidade da conta d
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                             |
-| parâmetro<br/>                   | <dl> <dt>Wpcevent. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Wpcevent. h</dt> </dl> |
 
 
 

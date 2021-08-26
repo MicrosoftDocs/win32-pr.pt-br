@@ -1,12 +1,12 @@
 ---
-title: Propriedade ResourceLocator. Error (WSManDisp. h)
-description: Obtém uma representação XML de informações de erro adicionais. | Propriedade ResourceLocator. Error (WSManDisp. h)
+title: Propriedade ResourceLocator.Error (WSManDisp.h)
+description: Obtém uma representação XML de informações de erro adicionais. | Propriedade ResourceLocator.Error (WSManDisp.h)
 ms.assetid: d500ab29-d2d3-4a54-af2d-8729f9caf4dc
 ms.tgt_platform: multiple
 keywords:
-- Gerenciamento Remoto do Windows de propriedade de erro
-- Propriedade do erro Gerenciamento Remoto do Windows, objeto ResourceLocator
-- Gerenciamento Remoto do Windows de objeto ResourceLocator, Propriedade Error
+- Propriedade error Windows Remote Management
+- Propriedade error Windows Remote Management , objeto ResourceLocator
+- Objeto ResourceLocator Windows Gerenciamento Remoto, propriedade Error
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f927ab793fefa477eea4d326ff24c7fae23bc68
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: e07d8baf49d9487b0ffb67faf22d351c1757abf2eb3746bbfc1534bf8f61c777
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105748921"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119997316"
 ---
-# <a name="resourcelocatorerror-property"></a>Propriedade ResourceLocator. Error
+# <a name="resourcelocatorerror-property"></a>Propriedade ResourceLocator.Error
 
 Obtém uma representação XML de informações de erro adicionais.
 
@@ -51,9 +51,9 @@ A representação XML de informações de erro adicionais.
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                 |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                           |
-| parâmetro<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>WSManDisp. idl</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>WSManDisp. tlb</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>WSManDisp.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>WSManDisp.idl</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>WSManDisp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>WSMAuto.dll</dt> </dl>   |
 
 
@@ -62,7 +62,7 @@ A representação XML de informações de erro adicionais.
 
 <dl> <dt>
 
-[**ResourceLocator**](resourcelocator.md)
+[**Resourcelocator**](resourcelocator.md)
 </dt> </dl>
 
  

@@ -4,12 +4,12 @@ ms.assetid: b079bdfc-b192-451c-967d-dcefa94b7ec7
 title: Controle do rastreamento do Winsock
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 75f256c4e3927672bc13b14bfb72ca3b02c22bde
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: bc80251410b95e2d02106474ae97ab3c6ea57759dcfdbc76987d6621794c822e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108110544"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119996806"
 ---
 # <a name="control-of-winsock-tracing"></a>Controle do rastreamento do Winsock
 
@@ -17,7 +17,7 @@ O rastreamento do Winsock pode ser controlado usando um dos seguintes métodos:
 
 -   Ferramentas da linha de comando
 
-    Duas ferramentas de linha de comando estão incluídas no Windows Vista e no Windows Server 2008 que são usadas para controlar o rastreamento e converter o arquivo de log de rastreamento binário em texto legível.
+    duas ferramentas de linha de comando são incluídas no Windows Vista e no Windows Server 2008 que são usados para controlar o rastreamento e converter o arquivo de log de rastreamento binário em texto legível.
 
     A ferramenta **logman.exe** é usada para iniciar ou parar o rastreamento do Winsock.
 
@@ -25,15 +25,15 @@ O rastreamento do Winsock pode ser controlado usando um dos seguintes métodos:
 
 -   Visualizador de Eventos
 
-    O Visualizador de Eventos no Windows Vista e posterior também pode ser usado para habilitar o rastreamento do Winsock. O Visualizador de Eventos é acessível nas ferramentas administrativas do menu iniciar.
+    o Visualizador de Eventos no Windows Vista e posterior também pode ser usado para habilitar o rastreamento do Winsock. o Visualizador de Eventos é acessível nas ferramentas administrativas do menu Iniciar.
 
 ## <a name="using-logman-and-tracert"></a>Usando Logman e tracert
 
-O rastreamento de eventos de rede do Winsock é desabilitado por padrão no Windows Vista e posterior.
+o rastreamento de eventos de rede do Winsock é desabilitado por padrão no Windows Vista e posterior.
 
 O comando a seguir inicia o rastreamento de eventos de rede do Winsock em um computador, define o nome da sessão de rastreamento de eventos como mywinsocksession e envia a saída para um arquivo de log binário chamado winsocklogfile. etl:
 
-**logman start-ETS mywinsocksession-o winsocklogfile. etl-p Microsoft-Windows-Winsock-AFD**
+**logman start-ets mywinsocksession-o winsocklogfile. etl-p Microsoft-Windows-Winsock-AFD**
 
 Os arquivos de log são criados no diretório atual com nomes de arquivo do formato winsocklogfile \_ 000001. etl
 
@@ -49,16 +49,16 @@ Se um arquivo de saída contendo XML em vez de texto sem formatação for prefer
 
 **tracerpt.exe <nome do arquivo. etl> – o winsocktracelog.xml – do XML**
 
-O rastreamento de alterações do catálogo Winsock é habilitado por padrão no Windows Vista e posterior.
+o rastreamento de alterações do catálogo Winsock é habilitado por padrão no Windows Vista e posterior.
 
 > [!Note]  
-> Os provedores de serviço em camadas são preteridos. A partir do Windows 8 e do Windows Server 2012, use a [plataforma de filtragem do Windows](../fwp/windows-filtering-platform-start-page.md).
+> Os provedores de serviço em camadas são preteridos. começando com Windows 8 e Windows Server 2012, use [Windows plataforma de filtragem](../fwp/windows-filtering-platform-start-page.md).
 
  
 
 O comando a seguir inicia o rastreamento de alterações do catálogo Winsock para provedores de serviço em camadas (LSPs) em um computador, define o nome da sessão de rastreamento de eventos como mywinsockcatalogsession e envia a saída para um arquivo de log binário chamado winsockcataloglogfile. etl:
 
-**logman start-ETS mywinsockcatalogsession-o winsockcataloglogfile. etl-p Microsoft-Windows-Winsock-WS2HELP**
+**logman start-ets mywinsockcatalogsession-o winsockcataloglogfile. etl-p Microsoft-Windows-Winsock-WS2HELP**
 
 Os arquivos de log são criados no diretório atual com nomes de arquivo do formato winsockcataloglogfile \_ 000001. etl
 
@@ -76,7 +76,7 @@ Se um arquivo de saída contendo XML em vez de texto sem formatação for prefer
 
 ## <a name="using-event-viewer-to-start-winsock-network-event-tracing"></a>Usando Visualizador de Eventos para iniciar o rastreamento de eventos de rede do Winsock
 
-Quando você abre Visualizador de Eventos, o painel esquerdo contém a lista de eventos. Abra **logs de aplicativos e serviços** e navegue até o **evento de \\ \\ rede Winsock do Microsoft Windows** como a origem e selecione **operacional**.
+Quando você abre Visualizador de Eventos, o painel esquerdo contém a lista de eventos. abra **Logs de aplicativos e serviços** e navegue até **Microsoft \\ Windows evento de \\ rede Winsock** como a origem e selecione **operacional**.
 
 No painel Ação, selecione **Propriedades do log** e marque a caixa de seleção **habilitar registro em log** . Quando o registro em log estiver habilitado, você também poderá alterar o tamanho do arquivo de log se isso for necessário.
 
@@ -86,7 +86,7 @@ Talvez seja necessário aumentar o tamanho do log dependendo de quantos eventos 
 
 ## <a name="using-event-viewer-to-start-winsock-catalog-change-tracing"></a>Usando Visualizador de Eventos para iniciar o rastreamento de alterações do catálogo Winsock
 
-Quando você abre Visualizador de Eventos, o painel esquerdo contém a lista de eventos. Abra **logs de aplicativos e serviços** e navegue até a **alteração do catálogo do \\ \\ Winsock do Microsoft Windows** como a origem e selecione **operacional**.
+Quando você abre Visualizador de Eventos, o painel esquerdo contém a lista de eventos. abra **Logs de aplicativos e serviços** e navegue até **Microsoft \\ Windows catálogo de \\ Winsock altere** como a origem e selecione **operacional**.
 
 No painel Ação, selecione **Propriedades do log** e marque a caixa de seleção **habilitar registro em log** . Quando o registro em log estiver habilitado, você também poderá alterar o tamanho do arquivo de log se isso for necessário.
 

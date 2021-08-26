@@ -14,12 +14,12 @@ api_type:
 api_location:
 - InkObj.dll
 - InkObj.dll.dll
-ms.openlocfilehash: 61641f0fed8ec98321e155f82ff9a35150e7fdcd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4bdc93e2c80f1a7ef4a8eacf1a58288c008e1354cda702e492deb2990e8938d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105771295"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119938656"
 ---
 # <a name="inktransform-class"></a>Classe InkTransform
 
@@ -40,7 +40,7 @@ A classe **InkTransform** tem esses métodos.
 |:--------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------|
 | [**GetTransform**](/windows/desktop/api/msinkaut/nf-msinkaut-iinktransform-gettransform)       | Recupera o **InkTransform** como 6 floats.<br/>                                                                      |
 | [**Reflexão**](/windows/desktop/api/msinkaut/nf-msinkaut-iinktransform-reflect)                 | Reflete a transformação nas direções horizontal ou vertical.<br/>                                          |
-| [**Redefinir**](/windows/desktop/api/msinkaut/nf-msinkaut-iinktransform-reset)                     | Redefine a transformação para seu estado original.<br/>                                                                      |
+| [**Definido**](/windows/desktop/api/msinkaut/nf-msinkaut-iinktransform-reset)                     | Redefine a transformação para seu estado original.<br/>                                                                      |
 | [**Girar**](/windows/desktop/api/msinkaut/nf-msinkaut-iinktransform-rotate)                   | Gira a transformação por um ângulo medido em graus e, opcionalmente, especifica um ponto central para a rotação.<br/> |
 | [**ScaleTransform**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkstrokedisp-scaletransform) | Dimensiona a transformação por fatores X e Y.<br/>                                                                         |
 | [**SetTransform**](/windows/desktop/api/msinkaut/nf-msinkaut-iinktransform-settransform)       | Modifica o **InkTransform** usando 6 floats.<br/>                                                                    |
@@ -59,7 +59,7 @@ A classe **InkTransform** tem essas propriedades.
 
 | Propriedade                                     | Tipo de acesso           | Descrição                                                                                          |
 |:---------------------------------------------|:----------------------|:-----------------------------------------------------------------------------------------------------|
-| [**Dados**](/windows/desktop/api/msinkaut/nf-msinkaut-iinktransform-get_data)<br/> | Leitura/gravação<br/> | Obtém ou define a versão de automação do struct do XFORM do WIN32.<br/>                            |
+| [**Dado**](/windows/desktop/api/msinkaut/nf-msinkaut-iinktransform-get_data)<br/> | Leitura/gravação<br/> | Obtém ou define a versão de automação do struct do XFORM do WIN32.<br/>                            |
 | [**eDx**](/windows/desktop/api/msinkaut/nf-msinkaut-iinktransform-get_edx)<br/>   | Leitura/gravação<br/> | Obtém ou define o número real que especifica o elemento na terceira linha, primeira coluna.<br/>   |
 | [**eDy**](/windows/desktop/api/msinkaut/nf-msinkaut-iinktransform-get_edy)<br/>   | Leitura/gravação<br/> | Obtém ou define o número real que especifica o elemento na terceira linha, segunda coluna.<br/>  |
 | [**eM11**](/windows/desktop/api/msinkaut/nf-msinkaut-iinktransform-get_em11)<br/> | Leitura/gravação<br/> | Obtém ou define o número real que especifica o elemento na primeira linha, primeira coluna.<br/>   |
@@ -88,9 +88,9 @@ O objeto armazena apenas seis dos nove números em uma matriz de 3x3 porque toda
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/>                                                       |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                           |
-| parâmetro<br/>                   | <dl> <dt>Msinkaut. h (também requer Msinkaut \_ i. c)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Msinkaut. h (também requer Msinkaut \_ i. c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 

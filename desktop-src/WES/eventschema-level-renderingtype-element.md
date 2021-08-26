@@ -3,7 +3,7 @@ title: Elemento Level (RenderingInfoType)
 description: A cadeia de caracteres de mensagem renderizada do nível especificado no evento.
 ms.assetid: 68584df8-989d-4f53-9f5c-11a4e1e5524b
 keywords:
-- Log de elemento de nível
+- Elemento Level EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 42d10818b3edabc85492029c2a82819777f5cfa1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 254a51779c14e481c370030a565ce22a858106d6616e877b537a67262aacd9f9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009023"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119904666"
 ---
 # <a name="level-renderinginfotype-element"></a>Elemento Level (RenderingInfoType)
 
@@ -30,7 +30,7 @@ A cadeia de caracteres de mensagem renderizada do nível especificado no evento.
  />
 ```
 
-O elemento **Level** é definido pelo tipo complexo [**RenderingInfoType**](eventschema-renderingtype-complextype.md) .
+O **elemento Level** é definido pelo tipo complexo [**RenderingInfoType.**](eventschema-renderingtype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ O elemento **Level** é definido pelo tipo complexo [**RenderingInfoType**](even
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

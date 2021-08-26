@@ -4,17 +4,17 @@ ms.assetid: 65135f63-5637-47e0-8fae-6a4cd41ad33e
 title: Método ReplayChapter
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 53bcac75d7ab0e230fe28e2f07f6d6a3ed7d235a
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 7380488ebc2572883133c44158144bd30601573a4c306ed6195d8a405ef0c1c7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104500365"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119904477"
 ---
 # <a name="replaychapter-method"></a>Método ReplayChapter
 
 > [!Note]  
-> Esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
+> esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
 
  
 

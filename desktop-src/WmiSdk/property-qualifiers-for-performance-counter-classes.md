@@ -10,12 +10,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 4e060d072c34d248f9faf634aec7710f5638721b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 105bd010704364dc3865b2e704b3daeaafdb29a772d4f3b3fe036b88da2d43cd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171660"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119996176"
 ---
 # <a name="property-qualifiers-for-performance-counter-classes"></a>Qualificadores de propriedade para classes de contador de desempenho
 
@@ -152,7 +152,7 @@ Nome de uma propriedade em uma classe bruta a ser usada como um carimbo de data/
 
 ## <a name="how-to-interpret-property-qualifiers"></a>Como interpretar qualificadores de propriedade
 
-As propriedades nas [**classes \_ PerfFormattedData do Win32**](/windows/desktop/CIMWin32Prov/win32-perfformatteddata) contêm os dados calculados fornecidos pelo [provedor de dados de desempenho formatado](formatted-performance-data-provider.md). O valor da propriedade é o resultado calculado final. Os qualificadores fornecem uma receita.
+as propriedades nas [**classes \_ PerfFormattedData do Win32**](/windows/desktop/CIMWin32Prov/win32-perfformatteddata) contêm os dados calculados fornecidos pelo [Provedor de Dados de desempenho formatado](formatted-performance-data-provider.md). O valor da propriedade é o resultado calculado final. Os qualificadores fornecem uma receita.
 
 O **contador** e os qualificadores de **base** apontam para as fontes de dados e o **culináriatype** especifica a fórmula usada para produzir o resultado. O carimbo de data e hora e a frequência de exemplo também vêm da classe bruta correspondente e são nomeados em **PerfTimeStamp** e **PerfTimeFreq**.
 
@@ -170,7 +170,7 @@ A lista a seguir lista os qualificadores de propriedade disponíveis para propri
 | **PerfTimeFreq**  | Frequência \_ PerfTime       |
 | **PerfIndex**     | 408                       |
 | **HelpIndex**     | 409                       |
-| **Polybase**          | \_Base AvgDiskBytesPerRead |
+| **Base**          | \_Base AvgDiskBytesPerRead |
 
 
 

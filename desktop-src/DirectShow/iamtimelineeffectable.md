@@ -1,5 +1,5 @@
 ---
-description: A interface IAMTimelineEffectable fornece métodos para adicionar efeitos a um objeto de linha do tempo nos serviços de edição do DirectShow (DES) e para manipular os efeitos em um objeto.
+description: a interface IAMTimelineEffectable fornece métodos para adicionar efeitos a um objeto de linha do tempo em serviços de edição DirectShow (DES) e para manipular os efeitos em um objeto.
 ms.assetid: 70f2da64-e16a-4d4d-9522-042b5fa2855c
 title: Interface IAMTimelineEffectable (QEdit. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: bc67483f44515c2ce18825de5b6657d51e2c3826
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ad6b373f4b30209566709117b3b15ecf1a65d093ddb2dd27e9e0273b11ad0b62
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105779537"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119905026"
 ---
 # <a name="iamtimelineeffectable-interface"></a>Interface IAMTimelineEffectable
 
@@ -28,7 +28,7 @@ ms.locfileid: "105779537"
 
  
 
-A `IAMTimelineEffectable` interface fornece métodos para adicionar efeitos a um objeto de linha do tempo nos [serviços de edição do DirectShow](directshow-editing-services.md) (des) e para manipular os efeitos em um objeto. Todos os objetos que podem ter efeitos aplicados a eles implementam essa interface; Isso inclui fontes, faixas e composições.
+a `IAMTimelineEffectable` interface fornece métodos para adicionar efeitos a um objeto de linha do tempo em [DirectShow serviços de edição](directshow-editing-services.md) (DES) e para manipular os efeitos em um objeto. Todos os objetos que podem ter efeitos aplicados a eles implementam essa interface; Isso inclui fontes, faixas e composições.
 
 Um objeto que implementa essa interface pode ter qualquer número de efeitos. Para cada objeto, o mecanismo de renderização aplica seus efeitos em ordem de prioridade, começando com o nível de prioridade 0.
 
@@ -63,7 +63,7 @@ A interface **IAMTimelineEffectable** tem esses métodos.
  
 
 > [!Note]  
-> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> para obter o Qedit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
 
  
 

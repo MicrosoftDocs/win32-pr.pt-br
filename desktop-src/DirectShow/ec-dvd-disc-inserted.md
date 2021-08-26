@@ -1,7 +1,7 @@
 ---
-description: Sinaliza que um disco DVD foi inserido na unidade.
+description: Sinaliza que um disco de DVD foi inserido na unidade.
 ms.assetid: ce233c94-2eae-457c-919b-7c4d8334979a
-title: EC_DVD_DISC_INSERTED (Dvdevcode. h)
+title: EC_DVD_DISC_INSERTED (Dvdevcode.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,22 +13,22 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: c98d32960e2ab6a21633899164b3ff84525f2aaf
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6911d4ad044e0b2080007f9751bd7090b182d8474673da98d35dd91544947e03
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105789644"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119997916"
 ---
-# <a name="ec_dvd_disc_inserted"></a>\_disco de DVD EC \_ \_ inserido
+# <a name="ec_dvd_disc_inserted"></a>EC \_ DVD \_ DISC \_ INSERTED
 
-Sinaliza que um disco DVD foi inserido na unidade.
+Sinaliza que um disco de DVD foi inserido na unidade.
 
 ## <a name="parameters"></a>Parâmetros
 
 <dl> <dt>
 
-<span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
+<span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*Lparam1*
 </dt> <dd>
 
 Zero.
@@ -44,7 +44,7 @@ Zero.
 
 ## <a name="remarks"></a>Comentários
 
-A reprodução é iniciada automaticamente quando um disco é inserido. O aplicativo não precisa executar nenhuma ação especial em resposta a esse evento.
+A reprodução começa automaticamente quando um disco é inserido. O aplicativo não precisa tomar nenhuma ação especial em resposta a esse evento.
 
 Esse evento é gerado em todos os domínios.
 
@@ -54,7 +54,7 @@ Esse evento é gerado em todos os domínios.
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Dvdevcode. h (incluir DShow. h)</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Dvdevcode.h (inclua Dshow.h)</dt> </dl> |
 
 
 
@@ -65,10 +65,10 @@ Esse evento é gerado em todos os domínios.
 [Aplicativos de DVD](dvd-applications.md)
 </dt> <dt>
 
-[Códigos de notificação de eventos de DVD](dvd-notification-codes.md)
+[Códigos de notificação de evento de DVD](dvd-notification-codes.md)
 </dt> <dt>
 
-[Notificação de eventos no DirectShow](event-notification-in-directshow.md)
+[Notificação de eventos DirectShow](event-notification-in-directshow.md)
 </dt> </dl>
 
  

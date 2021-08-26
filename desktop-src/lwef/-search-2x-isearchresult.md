@@ -3,8 +3,8 @@ title: Interface ISearchResult (WdsSharedIDL. h)
 description: Expõe informações e propriedades referentes ao conjunto de resultados.
 ms.assetid: 2f50b9d7-f6fd-481c-a5db-d622a7b02017
 keywords:
-- Recursos do ambiente Windows herdado da interface ISearchResult
-- Recursos do ambiente Windows herdado da interface ISearchResult, descritos
+- recursos de ambiente de Windows herdado da interface ISearchResult
+- recursos de ambiente herdado Windows da interface ISearchResult, descritos
 topic_type:
 - apiref
 api_name:
@@ -15,17 +15,17 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 89387ebe02c87ca6a5c5ac663a67ea060bd78948
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fd15db1340b28c8ac273746a64a5aee8c4b3235155d948692ffcc16582ac4549
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644852"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119963516"
 ---
 # <a name="isearchresult-interface"></a>Interface ISearchResult
 
 > [!NOTE]
-> O Windows Desktop Search 2. x é uma tecnologia obsoleta que originalmente estava disponível como um suplemento para o Windows XP e o Windows Server 2003. Em versões posteriores, use a [API de pesquisa do Windows](../search/-search-reference-entry-page.md) em vez disso. 
+> Windows o Desktop Search 2. x é uma tecnologia obsoleta que estava originalmente disponível como um suplemento para o Windows XP e o Windows Server 2003. em versões posteriores, use a [API de pesquisa Windows](../search/-search-reference-entry-page.md) em vez disso. 
 
 Expõe informações e propriedades referentes ao conjunto de resultados.
 
@@ -50,7 +50,7 @@ A interface **ISearchResult** tem esses métodos.
 | [**GetValue**](-search-2x-isearchresult-getvalue.md)             | Não implementado.<br/> |
 | [**Getverbs**](-search-2x-isearchresult-getverb.md)               | Não implementado.<br/> |
 | [**IconCount**](-search-2x-isearchresult-iconcount.md)           | Não implementado.<br/> |
-| [**Index**](-search-2x-isearchresult-index.md)                   | Não implementado.<br/> |
+| [**Índice**](-search-2x-isearchresult-index.md)                   | Não implementado.<br/> |
 | [**LoadState**](-search-2x-isearchresult-loadstate.md)           | Não implementado.<br/> |
 | [**Pré-visualizador**](-search-2x-isearchresult-previewer.md)           | Não implementado.<br/> |
 | [**PutValue**](-search-2x-isearchresult-putvalue.md)             | Não implementado.<br/> |
@@ -72,10 +72,10 @@ Esses métodos expõem propriedades e ações aplicáveis ao conjunto de resulta
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows XP com SP2\]<br/>                                      |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003 com SP1\]<br/>                             |
-| Redistribuível<br/>          | Windows Desktop Search (WDS) 3,0<br/>                                               |
-| parâmetro<br/>                   | <dl> <dt>WdsSharedIDL. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows XP somente com \[ aplicativos de área de trabalho do SP2\]<br/>                                      |
+| Servidor mínimo com suporte<br/> | Windows Servidor 2003 somente com \[ aplicativos de área de trabalho do SP1\]<br/>                             |
+| Redistribuível<br/>          | Windows Pesquisa de desktop (WDS) 3,0<br/>                                               |
+| Cabeçalho<br/>                   | <dl> <dt>WdsSharedIDL. h</dt> </dl> |
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: Glifos e execuções de glifo
-description: Os glifos e as execuções de glifo estão disponíveis na camada mais baixa de funcionalidade da API DirectWrite, a camada de renderização de glifo.
+description: os glifos e as execuções de glifo estão disponíveis na camada mais baixa de funcionalidade da API DirectWrite, na camada de renderização de glifo.
 ms.assetid: e670cb65-1fcb-46fd-ac0b-02eaaaa51996
 keywords:
 - DirectWrite, glifos
@@ -9,16 +9,16 @@ keywords:
 - glifos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 32c5c6b30c9a44cde4704e6afd231cebbc91d2be
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: b39d1ca47249adf11f4e1e2072620f24553f7e299e0690c1cc147c4f74a4939f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104084652"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119902906"
 ---
 # <a name="glyphs-and-glyph-runs"></a>Glifos e execuções de glifo
 
-Os glifos e as execuções de glifo estão disponíveis na camada mais baixa de funcionalidade da API [DirectWrite](direct-write-portal.md) , a camada de renderização de glifo.
+os glifos e as execuções de glifo estão disponíveis na camada mais baixa de funcionalidade da API [DirectWrite](direct-write-portal.md) , na camada de renderização de glifo.
 
 ## <a name="glyphs"></a>Glifos
 
@@ -44,7 +44,7 @@ Uma execução de glifo representa um conjunto contíguo de glifos que têm a me
 
 ### <a name="the-idwritefontface-interface"></a>A interface IDWriteFontFace
 
-O [DirectWrite](direct-write-portal.md) usa o mesmo sistema para classificação de fontes como WPF (Windows pesentation Foundation), de modo que pode haver várias fontes físicas por cada família de fontes. Uma face de fonte, como a interface [**IDWriteFontFace**](/windows/win32/api/dwrite/nn-dwrite-idwritefontface) em DirectWrite, representa uma fonte física, com um peso específico, uma inclinação e uma ampliação. Ele contém o tipo de face da fonte, as referências de arquivo apropriadas, os dados de identificação facial e vários dados de fonte, como métricas, nomes e contornos de glifos.
+[DirectWrite](direct-write-portal.md) usa o mesmo sistema para classificação de fontes como Windows o WPF (Pesentation Foundation), de modo que pode haver várias fontes físicas por cada família de fontes. uma face de fonte, como a interface [**IDWriteFontFace**](/windows/win32/api/dwrite/nn-dwrite-idwritefontface) na DirectWrite, representa uma fonte física, com um peso específico, uma inclinação e uma ampliação. Ele contém o tipo de face da fonte, as referências de arquivo apropriadas, os dados de identificação facial e vários dados de fonte, como métricas, nomes e contornos de glifos.
 
 O [**IDWriteFontFace**](/windows/win32/api/dwrite/nn-dwrite-idwritefontface) pode ser criado diretamente a partir de um nome de fonte ou obtido de uma coleção de fontes.
 
@@ -64,6 +64,6 @@ O objeto [**IDWriteFontFace**](/windows/win32/api/dwrite/nn-dwrite-idwritefontfa
 
 Para obter mais informações, consulte o tópico [como implementar um processador de texto personalizado](how-to-implement-a-custom-text-renderer.md) .
 
- 
+ 
 
- 
+ 

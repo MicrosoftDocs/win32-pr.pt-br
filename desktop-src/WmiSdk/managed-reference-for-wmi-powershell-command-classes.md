@@ -1,32 +1,32 @@
 ---
-description: Referência gerenciada para classes de comando WMI do Windows PowerShell
+description: Referência gerenciada para classes de Windows PowerShell WMI
 ms.assetid: 30e77956-8428-4259-9218-b93f143fd987
 ms.tgt_platform: multiple
-title: Referência gerenciada para classes de comando WMI do Windows PowerShell
+title: Referência gerenciada para classes de Windows PowerShell WMI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cb309a9ca421a3966f84ba1ae825bd0c81eee8ed
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 228e4ea741edd9029f30159fd5aa6c009cae081a4f6d67d1e532086ea1d53fa0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105760995"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119996456"
 ---
-# <a name="managed-reference-for-wmi-windows-powershell-command-classes"></a>Referência gerenciada para classes de comando WMI do Windows PowerShell
+# <a name="managed-reference-for-wmi-windows-powershell-command-classes"></a>Referência gerenciada para classes de Windows PowerShell WMI
 
-O Windows PowerShell implementa a funcionalidade de Instrumentação de Gerenciamento do Windows (WMI) por meio de um conjunto de cmdlets. Você pode usar esses cmdlets para concluir as tarefas de ponta a ponta que são necessárias para gerenciar computadores locais e remotos.
+Windows PowerShell implementa Windows WMI (Instrumentação de Gerenciamento) por meio de um conjunto de cmdlets. Você pode usar esses cmdlets para concluir as tarefas de ponta a ponta necessárias para gerenciar computadores locais e remotos.
 
 Consulte [Windows PowerShell](https://msdn.microsoft.com/library/dd835506(v=vs.85).aspx) para obter mais informações.
 
-## <a name="wmi-powershell-classes"></a>Classes do PowerShell do WMI
+## <a name="wmi-powershell-classes"></a>WMI PowerShell Classes
 
-**Namespace**: Microsoft. PowerShell. Commands
+**Namespace**: Microsoft.PowerShell.Commands
 
-**Assembly**: Microsoft. PowerShell. Commands. Management
+**Assembly:** Microsoft.PowerShell.Commands.Management
 
-**Dll**: Microsoft.PowerShell.Commands.Management.dll
+**DLL:** Microsoft.PowerShell.Commands.Management.dll
 
-Essas classes de comando WMI são implementadas pelo Windows PowerShell. Essas classes são incluídas neste Software Development Kit (SDK) apenas para fins de integridade. Os membros dessas classes não podem ser usados diretamente, nem devem ser usados para derivar outras classes.
+Essas classes de comando WMI são implementadas por Windows PowerShell. Essas classes são incluídas neste SDK (software development kit) somente para conclusão. Os membros dessas classes não podem ser usados diretamente, nem devem ser usados para derivar outras classes.
 
 
 

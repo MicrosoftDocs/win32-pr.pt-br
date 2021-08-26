@@ -1,19 +1,19 @@
 ---
-description: O elemento booliano opcional <includeInStartMenuScope> especifica se esse conector de pesquisa deve ser incluído no escopo de pesquisa do menu iniciar.
+description: O elemento <includeInStartMenuScope> booliana opcional especifica se esse conector de pesquisa deve ser incluído no escopo menu Iniciar pesquisa.
 ms.assetid: 934a3834-9ddc-4c15-b738-68ea74adc24c
 title: Elemento includeInStartMenuScope (esquema do conector de pesquisa)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 126d10a2b69dcec5057e732679c8531fd6e82bca
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 60941ef06f3f7220c7bbbae652f5e8256c6256660ea8e9ece2ddd330858958b6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105810686"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119937946"
 ---
 # <a name="includeinstartmenuscope-element-search-connector-schema"></a>Elemento includeInStartMenuScope (esquema do conector de pesquisa)
 
-O elemento booliano opcional <includeInStartMenuScope> especifica se esse conector de pesquisa deve ser incluído no escopo de pesquisa do menu iniciar. O valor padrão é true para conectores de pesquisa usando o sistema de arquivos como uma fonte de dados e false para conectores de pesquisa usados por manipuladores de propriedade. Este elemento não tem elementos filho e nenhum atributo.
+O elemento <includeInStartMenuScope> booliana opcional especifica se esse conector de pesquisa deve ser incluído no escopo menu Iniciar pesquisa. O valor padrão é verdadeiro para conectores de pesquisa que usam o sistema de arquivos como uma fonte de dados e false para conectores de pesquisa usados por manipuladores de propriedade. Esse elemento não tem nenhum elemento filho e nenhum atributos.
 
 ## <a name="syntax"></a>Syntax
 
@@ -47,7 +47,7 @@ O elemento booliano opcional <includeInStartMenuScope> especifica se esse conect
 
 ## <a name="remarks"></a>Comentários
 
-Se você incluir o conector de pesquisa no escopo do menu Iniciar, os usuários poderão pesquisar seu local na caixa de pesquisa no menu iniciar.
+Se você incluir o conector de pesquisa no escopo menu Iniciar, os usuários poderão pesquisar seu local na caixa de pesquisa no menu Iniciar.
 
 ## <a name="example"></a>Exemplo
 
