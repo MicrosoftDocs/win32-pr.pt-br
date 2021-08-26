@@ -3,9 +3,9 @@ title: Propriedade IWMPClosedCaption2 SAMILangCount
 description: A propriedade SAMILangCount Obtém o número de idiomas com suporte pelo arquivo SAMI atual.
 ms.assetid: e3c7203d-66cb-49e2-9204-795c0f27248f
 keywords:
-- Propriedade SAMILangCount Windows Media Player
-- Propriedade SAMILangCount Windows Media Player, interface IWMPClosedCaption2
-- Interface IWMPClosedCaption2 Windows Media Player, Propriedade SAMILangCount
+- Windows Media Player da propriedade SAMILangCount
+- propriedade SAMILangCount Windows Media Player, interface IWMPClosedCaption2
+- Windows Media Player de interface IWMPClosedCaption2, propriedade SAMILangCount
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ea01357de508dea319389cd14ab85ebafe0329e6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 23b85ce04bd672f0219b8dd96f91172241689a80042a37a7680e2f8e26b65c85
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105780090"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119899996"
 ---
 # <a name="iwmpclosedcaption2samilangcount-property"></a>Propriedade IWMPClosedCaption2:: SAMILangCount
 

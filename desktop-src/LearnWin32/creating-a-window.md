@@ -4,12 +4,12 @@ description: Criando uma janela
 ms.assetid: e036519f-26b5-436c-b909-bb280d758e81
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eea5ec39187b389405d3c6d8eca475944278a3d5
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 253eb68747ce7511c11aeeba27343d7dd56c7d0a6f78f316d72aab83d11ddd92
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108103964"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119870026"
 ---
 # <a name="creating-a-window"></a>Criando uma janela
 
@@ -36,7 +36,7 @@ Você deve definir os seguintes membros da estrutura:
 - **HINSTANCE** é o identificador para a instância do aplicativo. Obtenha esse valor do parâmetro *HINSTANCE* de **wWinMain**.
 - **lpszClassName** é uma cadeia de caracteres que identifica a classe da janela.
 
-Os nomes de classe são locais para o processo atual, portanto, o nome só precisa ser exclusivo dentro do processo. No entanto, os controles padrão do Windows também têm classes. Se você usar qualquer um desses controles, deverá escolher nomes de classe que não estejam em conflito com os nomes de classe de controle. Por exemplo, a classe Window para o controle Button é chamada de "Button".
+Os nomes de classe são locais para o processo atual, portanto, o nome só precisa ser exclusivo dentro do processo. no entanto, os controles de Windows padrão também têm classes. Se você usar qualquer um desses controles, deverá escolher nomes de classe que não estejam em conflito com os nomes de classe de controle. Por exemplo, a classe Window para o controle Button é chamada de "Button".
 
 A estrutura [**WNDCLASS**](/windows/win32/api/winuser/ns-winuser-wndclassa) tem outros membros não mostrados aqui. Você pode defini-los como zero, conforme mostrado neste exemplo, ou preenchê-los em. A documentação do MSDN descreve a estrutura em detalhes.
 

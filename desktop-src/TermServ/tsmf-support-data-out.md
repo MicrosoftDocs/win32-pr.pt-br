@@ -1,11 +1,11 @@
 ---
-title: Estrutura de TSMF_SUPPORT_DATA_OUT
-description: Contém informações sobre formatos de mídia. | Estrutura de TSMF_SUPPORT_DATA_OUT
+title: TSMF_SUPPORT_DATA_OUT estrutura
+description: Contém informações sobre formatos de mídia. | TSMF_SUPPORT_DATA_OUT estrutura
 ms.assetid: 987ede31-ad15-489f-90e5-fb707c6b38a9
 ms.tgt_platform: multiple
 keywords:
-- Estrutura de TSMF_SUPPORT_DATA_OUT Serviços de Área de Trabalho Remota
-- Ponteiro de estrutura de PTSMF_SUPPORT_DATA_OUT Serviços de Área de Trabalho Remota
+- TSMF_SUPPORT_DATA_OUT estrutura Serviços de Área de Trabalho Remota
+- PTSMF_SUPPORT_DATA_OUT ponteiro de estrutura Serviços de Área de Trabalho Remota
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9705c4c2c27eaff904e09364b029bd74ebd05d6c
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 8577266c2e259e7a7e4bb70310837eee1d743905e0e0d166e5797bc51a1f1b45
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103930314"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119869016"
 ---
-# <a name="tsmf_support_data_out-structure"></a>\_Estrutura de \_ saída de dados de suporte do TSMF \_
+# <a name="tsmf_support_data_out-structure"></a>Estrutura TSMF \_ SUPPORT \_ DATA \_ OUT
 
-Contém informações sobre formatos de mídia. Essa estrutura é usada pelo método [**queryproperty**](/windows/desktop/api/Wtsprotocol/nf-wtsprotocol-iwrdsprotocolconnection-queryproperty) durante consultas **de \_ \_ \_ \_ suporte ao formato MF de consulta WRDS** .
+Contém informações sobre formatos de mídia. Essa estrutura é usada pelo [**método QueryProperty**](/windows/desktop/api/Wtsprotocol/nf-wtsprotocol-iwrdsprotocolconnection-queryproperty) durante consultas **WRDS \_ QUERY \_ MF \_ FORMAT \_ SUPPORT.**
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,7 +46,7 @@ typedef struct tagTSMF_SUPPORT_DATA_OUT {
 **guidMfSession**
 </dt> <dd>
 
-Isso deve corresponder à propriedade **guidMfSession** nos dados de [**suporte de TSMF correspondentes \_ \_ \_ na**](tsmf-support-data-in.md) estrutura.
+Isso deve corresponder à **propriedade guidMfSession** na estrutura [**TSMF \_ SUPPORT DATA \_ \_ IN**](tsmf-support-data-in.md) correspondente.
 
 </dd> <dt>
 
@@ -60,7 +60,7 @@ O número de estruturas nos dados de comprimento variável.
 **...**
 </dt> <dd>
 
-Um número variável de estruturas que contém dados de formato de mídia.
+Um número variável de estruturas que contêm dados de formato de mídia.
 
 </dd> </dl>
 
@@ -82,7 +82,7 @@ Um número variável de estruturas que contém dados de formato de mídia.
 [**QueryProperty**](/windows/desktop/api/Wtsprotocol/nf-wtsprotocol-iwrdsprotocolconnection-queryproperty)
 </dt> <dt>
 
-[**TSMF \_ suporte \_ NODEDATA \_**](tsmf-support-nodedata-out.md)
+[**NODEDATA OUT DE SUPORTE DO TSMF \_ \_ \_**](tsmf-support-nodedata-out.md)
 </dt> </dl>
 
  

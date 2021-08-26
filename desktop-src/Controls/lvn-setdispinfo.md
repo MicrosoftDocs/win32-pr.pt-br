@@ -1,9 +1,9 @@
 ---
-title: LVN_SETDISPINFO código de notificação (commctrl. h)
-description: Notifica uma janela pai do controle de exibição de lista que ele deve atualizar as informações que ele mantém para um item. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
+title: LVN_SETDISPINFO de notificação (Commctrl.h)
+description: Notifica a janela pai de um controle de exibição de lista de que ele deve atualizar as informações que mantém para um item. Esse código de notificação é enviado na forma de uma mensagem WM \_ NOTIFY.
 ms.assetid: 1ea51d50-4a57-4662-972e-89e916fa9b16
 keywords:
-- LVN_SETDISPINFO de código de notificação controles do Windows
+- LVN_SETDISPINFO código de notificação Windows Controles
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 659623d892f0f5a556f4890703d4e0dd725536b5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6f4827d37a115f2bd1bb523f78bdb5975de4314056a174be4bfa886e1a076497
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918801"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119915056"
 ---
-# <a name="lvn_setdispinfo-notification-code"></a>Código de notificação do LVN \_ SETDISPINFO
+# <a name="lvn_setdispinfo-notification-code"></a>Código de notificação LVN \_ SETDISPINFO
 
-Notifica uma janela pai do controle de exibição de lista que ele deve atualizar as informações que ele mantém para um item. Esse código de notificação é enviado na forma de uma mensagem de [**\_ notificação do WM**](wm-notify.md) .
+Notifica a janela pai de um controle de exibição de lista de que ele deve atualizar as informações que mantém para um item. Esse código de notificação é enviado na forma de uma mensagem [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -43,17 +43,17 @@ LVN_SETDISPINFO
 *lParam* 
 </dt> <dd>
 
-Ponteiro para uma estrutura [**NMLVDISPINFO**](/windows/win32/api/commctrl/ns-commctrl-nmlvdispinfoa) que especifica informações para o item alterado. O membro **Item** dessa estrutura é uma estrutura [**LVITEM**](/windows/win32/api/commctrl/ns-commctrl-lvitema) que contém informações sobre o item que foi alterado. O membro **pszText** do **Item** contém um valor válido, independentemente de o sinalizador de \_ texto LVIF ser definido no membro **Mask** dessa estrutura.
+Ponteiro para uma [**estrutura NMLVDISPINFO**](/windows/win32/api/commctrl/ns-commctrl-nmlvdispinfoa) que especifica informações para o item alterado. O **membro** do item dessa estrutura é uma [**estrutura LVITEM**](/windows/win32/api/commctrl/ns-commctrl-lvitema) que contém informações sobre o item que foi alterado. O **membro pszText** do **item** contém um valor válido, independentemente de o sinalizador TEXT LVIF ser definido no membro \_ **de** máscara dessa estrutura.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sem valor de retorno.
 
 ## <a name="remarks"></a>Comentários
 
-O receptor de notificação converte *lParam* para recuperar a estrutura [**NMLVDISPINFO**](/windows/win32/api/commctrl/ns-commctrl-nmlvdispinfoa) . O parâmetro *wParam* contém o código da mensagem.
+O receptor de notificação *lança lParam* para recuperar a [**estrutura NMLVDISPINFO.**](/windows/win32/api/commctrl/ns-commctrl-nmlvdispinfoa) O *parâmetro wParam* contém o código da mensagem.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,9 +61,9 @@ O receptor de notificação converte *lParam* para recuperar a estrutura [**NMLV
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nomes Unicode e ANSI<br/>   | **LVN \_ SETDISPINFOW** (Unicode) e **LVN \_ SETDISPINFOA** (ANSI)<br/>           |
 
 

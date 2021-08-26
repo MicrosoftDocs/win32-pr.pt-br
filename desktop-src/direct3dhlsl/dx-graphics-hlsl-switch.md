@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4af131ca3a126cd6f1fd54160418bfbe70cc9cce
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 30048e31916e15d54526908dd3e61a28cbfb5ad0f7aafcb08a850e959cd1ea95
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113119071"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119846056"
 ---
 # <a name="switch-statement"></a>Instrução Switch
 
@@ -189,7 +189,7 @@ Aqui estão exemplos de usos de forcecase e atributos de controle de fluxo de ch
 
 <dl> <dt>
 
-[Controle de fluxo](dx-graphics-hlsl-flow-control.md)
+[Flow Controlo](dx-graphics-hlsl-flow-control.md)
 </dt> </dl>
 
  

@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 705f02622b7298134328b513aa038804995eb1c1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d139b2daf3f3bc6ad78beaa50e19c0141aecd5e8bedac2dd20582fb1536d9b74
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105754694"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119930776"
 ---
 # <a name="iwmdrmsecuritygetrevocationdataversion-method"></a>Método IWMDRMSecurity:: GetRevocationDataVersion
 
@@ -55,7 +55,7 @@ GUID que especifica o tipo de lista de revogação. Defina como uma das constant
 |-------------------------------|----------------------------------------------------------------------------------|
 | \_aplicativo WMDRM RErevocationtype \_    | Especifica a lista de certificados revogados do aplicativo.                           |
 | \_dispositivo WMDRM RErevocationtype \_ | Especifica a lista de certificados revogados do dispositivo.                                |
-| WMDRM \_ RErevocationtype \_ CARDEA | Especifica a lista de revogação de certificados do Windows Media DRM para dispositivos de rede. |
+| WMDRM \_ RErevocationtype \_ CARDEA | especifica o Windows Media DRM para a lista de certificados revogados de dispositivos de rede. |
 
 
 
@@ -70,7 +70,7 @@ Variável que recebe o número de versão.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 

@@ -1,5 +1,5 @@
 ---
-description: Método Shell. EjectPC – ejeta o computador de sua estação de encaixe. Isso é o mesmo que clicar no menu iniciar e selecionar Ejetar PC se o seu computador oferecer suporte a esse comando.
+description: Método Shell. EjectPC – ejeta o computador de sua estação de encaixe. isso é o mesmo que clicar no menu Iniciar e selecionar ejetar PC, se o seu computador der suporte a esse comando.
 ms.assetid: eaba3dce-8fea-453f-90c2-4a9b5cb05ecc
 title: Método Shell. EjectPC (shldisp. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 5ec08aaa82d2f752fa06537434adede86b9d5a3a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 3f774b666647ebf8a255950fe8427a87e55ca514db9ed841a5fc7f2e7edb2e69
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108104344"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119883876"
 ---
 # <a name="shellejectpc-method"></a>Método Shell. EjectPC
 
@@ -57,9 +57,9 @@ Esse método não retorna um valor.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir mostra **EjectPC** em uso. O uso adequado é mostrado para JScript, VBScript e Visual Basic.
+O exemplo a seguir mostra **EjectPC** em uso. o uso adequado é mostrado para JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -115,7 +115,7 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos de área de trabalho do Windows XP\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
 | Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
 | INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |

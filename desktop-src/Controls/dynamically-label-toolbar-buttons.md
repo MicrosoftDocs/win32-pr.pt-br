@@ -1,36 +1,36 @@
 ---
-title: Como rotular botões da barra de ferramentas dinamicamente
+title: Como rotular dinamicamente os botões da barra de ferramentas
 description: Você pode atribuir texto a um botão existente usando a mensagem TB \_ SETBUTTONINFO.
 ms.assetid: 571C7FB9-2806-47AF-8933-0D3541AE6ACF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 38dbf6cbefffa799f60909859c99d3e8c2d65e8e
-ms.sourcegitcommit: f0ca63c18dc52c357d3398af7be766d2bdd40be7
+ms.openlocfilehash: 063a3b8be8a23dc8cead219c53989a8ff1a40225dc8411f9e8a1b156b6bb55bf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "104453892"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119877436"
 ---
-# <a name="how-to-dynamically-label-toolbar-buttons"></a>Como rotular botões da barra de ferramentas dinamicamente
+# <a name="how-to-dynamically-label-toolbar-buttons"></a>Como rotular dinamicamente os botões da barra de ferramentas
 
-Você pode atribuir texto a um botão existente usando a mensagem [**TB \_ SETBUTTONINFO**](tb-setbuttoninfo.md) .
+Você pode atribuir texto a um botão existente usando a [**mensagem TB \_ SETBUTTONINFO.**](tb-setbuttoninfo.md)
 
 ## <a name="what-you-need-to-know"></a>O que você precisa saber
 
 ### <a name="technologies"></a>Tecnologias
 
--   [Controles do Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
 -   C/C++
--   Programação da interface do usuário do Windows
+-   Windows Interface do Usuário programação
 
 ## <a name="instructions"></a>Instruções
 
-### <a name="dynamically-label-a-toolbar-button"></a>Rotular dinamicamente um botão da barra de ferramentas
+### <a name="dynamically-label-a-toolbar-button"></a>Rotular dinamicamente um botão de barra de ferramentas
 
-O exemplo a seguir demonstra como alterar o texto do terceiro botão nos exemplos anteriores de **salvar** para **salvar como**.
+O exemplo a seguir demonstra como alterar o texto do terceiro botão nos exemplos anteriores de **Salvar** para **Salvar como**.
 
 
 ```C++
@@ -50,9 +50,9 @@ LRESULT RelabelButton(HWND hWndToolbar)
 
 ## <a name="remarks"></a>Comentários
 
-Alterar o texto de um botão usando [**TB \_ SETBUTTONINFO**](tb-setbuttoninfo.md) não afeta a cadeia de caracteres atribuída a esse botão na lista de cadeias de caracteres internas.
+Alterar o texto de um botão usando [**TB \_ SETBUTTONINFO**](tb-setbuttoninfo.md) não afeta a cadeia de caracteres atribuída a esse botão na lista de cadeias de caracteres interna.
 
-Se você adicionar uma cadeia de caracteres de botão da barra de ferramentas à lista de texto interna, não será possível recuperar o índice dessa cadeia de caracteres chamando [tbn \_ GETBUTTONINFO](tbn-getbuttoninfo.md)— você deve usar a mensagem de [**\_ SetButton de TB**](tb-getbutton.md) em vez disso.
+Se você adicionar uma cadeia de caracteres de botão de barra de ferramentas à lista de texto interna, não poderá recuperar o índice dessa cadeia de caracteres chamando [TBN \_ GETBUTTONINFO](tbn-getbuttoninfo.md)– você deverá usar a mensagem [**\_ GETBUTTON de TB.**](tb-getbutton.md)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -61,12 +61,12 @@ Se você adicionar uma cadeia de caracteres de botão da barra de ferramentas à
 [Usando controles da barra de ferramentas](using-toolbar-controls.md)
 </dt> <dt>
 
-[Demonstração de controles comuns do Windows (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
+[Windows demonstração de controles comuns (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

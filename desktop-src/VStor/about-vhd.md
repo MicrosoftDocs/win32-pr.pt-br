@@ -7,20 +7,20 @@ MSHAttr:
 title: Sobre o VHD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 29ea37851360e70c1108e0715a47c77163c2c2fa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a79bd7695144811a1ec98f79e736760bbaddc8ef4b7460e55c5a66353a0b2ad9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647155"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119865947"
 ---
 # <a name="span-idvhdabout_vhdspanabout-vhd"></a><span id="vhd.about_vhd"></span>Sobre o VHD
 
 O formato de disco rígido virtual (VHD) é uma [especificação](https://download.microsoft.com/download/f/f/e/ffef50a5-07dd-4cf8-aaa3-442c0673a029/Virtual%20Hard%20Disk%20Format%20Spec_10_18_06.doc) de formato de imagem disponível publicamente que permite o encapsulamento do disco rígido em um arquivo individual para uso pelo sistema operacional como um *disco virtual* de todas as mesmas maneiras que discos rígidos físicos são usados. Esses discos virtuais são capazes de hospedar sistemas de arquivos nativos (NTFS, FAT, exFAT e UDFS) enquanto dão suporte a operações de arquivo e disco padrão. O suporte à API do VHD permite o gerenciamento dos discos virtuais. Os discos virtuais criados com a API VHD podem funcionar como discos de inicialização.
 
-Um exemplo de como os arquivos VHD são usados é o recurso do [Hyper-V](https://www.microsoft.com/windowsserver2008/en/us/hyperv.aspx) no Windows 7, no windows Server 2008, no Virtual Server e no Windows Virtual PC. Esses produtos usam a API do VHD para conter a imagem do sistema operacional Windows utilizada por uma máquina virtual como seu disco de inicialização do sistema.
+um exemplo de como os arquivos VHD são usados é o recurso do [Hyper-V](https://www.microsoft.com/windowsserver2008/en/us/hyperv.aspx) no Windows 7, Windows server 2008, servidor virtual e Windows virtual PC. esses produtos usam a API do VHD para conter o Windows imagem do sistema operacional utilizada por uma máquina virtual como seu disco de inicialização do sistema.
 
-O SDK (Software Development Kit) do Microsoft Windows integra o suporte nativo do VHD para trabalhar com discos virtuais, facilitando para os desenvolvedores e administradores criar, gerenciar e implantar imagens do Windows em arquivos VHD usando o suporte à API de plataforma ou as ferramentas de gerenciamento. Não é necessário instalar aplicativos separados ou implementar um analisador de formato VHD para habilitar essas operações. Essas APIs permitem o uso genérico de discos virtuais independentemente de outras tecnologias de virtualização.
+o SDK (Software Development Kit) do Microsoft Windows integra o suporte nativo do VHD para trabalhar com discos virtuais, facilitando para os desenvolvedores e administradores criar, gerenciar e implantar imagens Windows em arquivos VHD usando o suporte à API de plataforma ou ferramentas de gerenciamento. Não é necessário instalar aplicativos separados ou implementar um analisador de formato VHD para habilitar essas operações. Essas APIs permitem o uso genérico de discos virtuais independentemente de outras tecnologias de virtualização.
 
 ## <a name="span-idterminologyspanspan-idterminologyspanspan-idterminologyspanterminology"></a><span id="Terminology"></span><span id="terminology"></span><span id="TERMINOLOGY"></span>Terminologia
 
@@ -36,13 +36,13 @@ O diagrama a seguir apresenta uma visão geral dos recursos do VHD e suas relaç
 
 Veja a seguir uma explicação resumida dos recursos descritos anteriormente.
 
-APIs nativas do Windows no modo de usuário:
+APIs de Windows nativas de modo de usuário:
 
 -   VirtDisk.dll-biblioteca comum para APIs de gerenciamento de VHD.
 
 Wrappers de gerenciamento específicos de domínio do modo de usuário:
 
--   [APIs VHD do VDS](/windows/desktop/VDS/about-vds) – wrappers do modelo de objeto VDS para as APIs do Windows VHD.
+-   [apis VHD do vds](/windows/desktop/VDS/about-vds) – wrappers do modelo de objeto vds para as apis de Windows do VHD.
 
 Drivers de modo kernel:
 
@@ -50,7 +50,7 @@ Drivers de modo kernel:
 -   Gerenciamento de dependência de volume aninhado por FsDepends.sys.
 -   Vhdmp.sys-analisador de VHD e provedor de propriedade de dependência.
 
-A documentação do SDK nesta seção aborda as APIs VHD do Windows nativas do modo de usuário.
+a documentação do SDK nesta seção aborda as APIs do VHD Windows do modo de usuário nativo.
 
 ## <a name="span-idvirtual_disk_typesspanspan-idvirtual_disk_typesspanspan-idvirtual_disk_typesspanvirtual-disk-types"></a><span id="Virtual_Disk_Types"></span><span id="virtual_disk_types"></span><span id="VIRTUAL_DISK_TYPES"></span>Tipos de disco virtual
 

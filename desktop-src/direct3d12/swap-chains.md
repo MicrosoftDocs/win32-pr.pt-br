@@ -1,18 +1,18 @@
 ---
-title: Trocar cadeias
+title: Cadeias de troca
 description: As cadeias de permuta controlam a rotação do buffer de fundo, formando a base da animação de gráficos.
 ms.assetid: AABF5FDE-DB49-4B29-BC0E-032E0C7DF9EB
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ebbc7ec1b62ba620b42bc85c1c1f491ff7ba952d
-ms.sourcegitcommit: 5b98bf8c68922f8f03c14f793fbe17504900559c
+ms.openlocfilehash: 9e98fc2baf63d7d80fefc190f2d01da33ea24d420e647b4f0c57df7ec4c501f9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "104548263"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119850646"
 ---
-# <a name="swap-chains"></a>Trocar cadeias
+# <a name="swap-chains"></a>Cadeias de troca
 
 As cadeias de permuta controlam a rotação do buffer de fundo, formando a base da animação de gráficos.
 
@@ -67,11 +67,11 @@ void Present()
 
 Ao usar as chamadas [**CreateSwapChainForHwnd**](/windows/desktop/api/dxgi1_2/nf-dxgi1_2-idxgifactory2-createswapchainforhwnd), [**CreateSwapChainForCoreWindow**](/windows/desktop/api/dxgi1_2/nf-dxgi1_2-idxgifactory2-createswapchainforcorewindow)ou [**CreateSwapChainForComposition**](/windows/desktop/api/dxgi1_2/nf-dxgi1_2-idxgifactory2-createswapchainforcomposition) , observe que o parâmetro *pDevice* realmente requer um ponteiro para uma fila de comando direto no Direct3D 12, e não um dispositivo.
 
-### <a name="presenting-on-windows-7"></a>Apresentação no Windows 7
+### <a name="presenting-on-windows-7"></a>apresentando no Windows 7
 
-Ao direcionar o Direct3D 12 no Windows 7, os tipos de DXGI necessários para o Direct3D 12 não estão presentes, portanto, você deve usar o **ID3D12CommandQueueDownLevel** fornecido pelo D3D12On7 (consultado fora da fila de comando direto) para apresentar.
+ao direcionar o direct3d 12 no Windows 7, os tipos de DXGI necessários para o direct3d 12 não estão presentes, portanto, você deve usar o **ID3D12CommandQueueDownLevel** fornecido pelo D3D12On7 (consultado fora da fila de comando direto) para apresentar.
 
-Você fornece uma lista de comandos abertos para o método presente do Windows 7, que será usado, fechado e enviado automaticamente para o dispositivo para você. Você deve fornecer um buffer de fundo que deve ser criado pelo aplicativo, deve ser um recurso confirmado, deve ser de amostra única e deve ser um dos formatos a seguir.
+você fornece uma lista de comandos abertos para o método presente Windows 7, que será usado, fechado e enviado automaticamente para o dispositivo para você. Você deve fornecer um buffer de fundo que deve ser criado pelo aplicativo, deve ser um recurso confirmado, deve ser de amostra única e deve ser um dos formatos a seguir.
 
 * **DXGI_FORMAT_R16G16B16A16_FLOAT**
 * **DXGI_FORMAT_R10G10B10A2_UNORM**

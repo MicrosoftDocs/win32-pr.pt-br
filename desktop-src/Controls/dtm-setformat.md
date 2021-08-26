@@ -1,9 +1,9 @@
 ---
-title: Mensagem de DTM_SETFORMAT (commctrl. h)
-description: Define a exibição de um controle DTP (data e hora) com base em uma determinada cadeia de caracteres de formato. Você pode enviar essa mensagem explicitamente ou usar a \_ macro SetFormat de DateTime.
+title: DTM_SETFORMAT mensagem (Commctrl.h)
+description: Define a exibição de um controle DTP (selador de data e hora) com base em uma determinada cadeia de caracteres de formato. Você pode enviar essa mensagem explicitamente ou usar a macro DateTime \_ SetFormat.
 ms.assetid: a89fa3ad-9894-4c52-ab56-fb62208e39b3
 keywords:
-- Controles de DTM_SETFORMAT de mensagens do Windows
+- DTM_SETFORMAT controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 17669ed2e1ed23e3b090b77701bbe05d23a5ccb8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 17d4bb08694b63c21f1790d0a1366dd34d1083592bdeb62d532a32a96be3857a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009569"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119877856"
 ---
-# <a name="dtm_setformat-message"></a>\_Mensagem DTM SETformat
+# <a name="dtm_setformat-message"></a>Mensagem SETFORMAT de DTM \_
 
-Define a exibição de um controle DTP (data e hora) com base em uma determinada cadeia de caracteres de formato. Você pode enviar essa mensagem explicitamente ou usar a [**macro \_ SetFormat de DateTime**](/windows/desktop/api/Commctrl/nf-commctrl-datetime_setformat) .
+Define a exibição de um controle DTP (selador de data e hora) com base em uma determinada cadeia de caracteres de formato. Você pode enviar essa mensagem explicitamente ou usar a [**macro DateTime \_ SetFormat.**](/windows/desktop/api/Commctrl/nf-commctrl-datetime_setformat)
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -37,20 +37,20 @@ Define a exibição de um controle DTP (data e hora) com base em uma determinada
 *lParam* 
 </dt> <dd>
 
-Um ponteiro para uma [cadeia de caracteres de formato](date-and-time-picker-controls.md) terminada em zero que define a exibição desejada. Definir esse parâmetro como **NULL** redefinirá o controle para a cadeia de caracteres de formato padrão para o estilo atual.
+Um ponteiro para uma cadeia de caracteres de formato terminada [em](date-and-time-picker-controls.md) zero que define a exibição desejada. Definir esse parâmetro como **NULL** redefini o controle para a cadeia de caracteres de formato padrão para o estilo atual.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retornará zero se for bem-sucedido ou nenhum outro.
+Retornará diferente de zero se for bem-sucedido ou zero caso contrário.
 
 ## <a name="remarks"></a>Comentários
 
-É aceitável incluir caracteres extras na cadeia de caracteres de formato para produzir uma exibição mais rica. No entanto, todos os caracteres não formatados devem ser colocados entre aspas simples. Por exemplo, a cadeia de caracteres de formato "' hoje é: ' hh ': ' M' ' s ddddMMMdd ', ' YYY ' produziria uma saída como" hoje é: 04:22:31 terça-feira, 23 de março, 1996 ".
+É aceitável incluir caracteres extras dentro da cadeia de caracteres de formato para produzir uma exibição mais rica. No entanto, quaisquer caracteres não format devem ser incluídos entre aspas simples. Por exemplo, a cadeia de caracteres de formato "'Today is: 'hh':'m':'s ddddMMMdd', 'aaa" produziria uma saída como "Today is: 04:22:31 Tuesday Mar 23, 1996".
 
 > [!Note]  
-> Um controle DTP controla as alterações de localidade quando está usando a cadeia de caracteres de formato padrão. Se você definir uma cadeia de caracteres de formato personalizado, ela não será atualizada em resposta às alterações de localidade.
+> Um controle DTP controla as alterações de localidade quando está usando a cadeia de caracteres de formato padrão. Se você definir uma cadeia de caracteres de formato personalizado, ela não será atualizada em resposta a alterações de localidade.
 
  
 
@@ -60,10 +60,10 @@ Retornará zero se for bem-sucedido ou nenhum outro.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
-| Nomes Unicode e ANSI<br/>   | **DTM \_ SETFORMATW** (Unicode) e **DTM \_ setformaa** (ANSI)<br/>               |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Nomes Unicode e ANSI<br/>   | **DTM \_ SETFORMATW** (Unicode) e **DTM \_ SETFORMATA** (ANSI)<br/>               |
 
 
 

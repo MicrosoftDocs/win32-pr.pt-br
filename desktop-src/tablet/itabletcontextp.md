@@ -14,12 +14,12 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: 5b3b6a69deeaa30c3fa0e16b1b36094dceaff304
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: da5c26a0a9d7d080a9787fef0b7ba2fdb919e473fd66c989fca478c4ac7d0ac3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105812071"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119883516"
 ---
 # <a name="itabletcontextp-interface"></a>Interface ITabletContextP
 
@@ -53,7 +53,7 @@ A interface **ITabletContextP** tem esses métodos.
 
 Os desenvolvedores não devem usar essa interface.
 
-O [**UseNamedSharedMemoryCommunications**](itabletcontextp-usenamedsharedmemorycommunications.md) só está disponível no Windows Vista e versões posteriores.
+o [**UseNamedSharedMemoryCommunications**](itabletcontextp-usenamedsharedmemorycommunications.md) só está disponível no Windows Vista e versões posteriores.
 
 O código a seguir descreve como a interface **ITabletContextP** é definida.
 
@@ -101,7 +101,7 @@ interface ITabletContextP : ITabletContext
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                          |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/>                          |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                              |
 | Biblioteca<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 

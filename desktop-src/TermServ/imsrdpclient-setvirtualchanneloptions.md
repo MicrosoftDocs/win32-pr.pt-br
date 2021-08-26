@@ -1,6 +1,6 @@
 ---
 title: Método IMsRdpClient SetVirtualChannelOptions
-description: Define as opções de canal virtual para o controle ActiveX Área de Trabalho Remota.
+description: define as opções de canal virtual para o controle de ActiveX de Área de Trabalho Remota.
 ms.assetid: c74c3917-5766-4d5b-8458-b051eb91cb28
 ms.tgt_platform: multiple
 keywords:
@@ -44,18 +44,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 10e727fd3486b9d1b31fb3a421ea6ff268949790
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 804d4bde2fec9cb6273cc78f79d733f61a08772746439aa1cbb6e7b2d3c29716
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369388"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119871576"
 ---
 # <a name="imsrdpclientsetvirtualchanneloptions-method"></a>Método IMsRdpClient:: SetVirtualChannelOptions
 
-Define as opções de canal virtual para o controle ActiveX Área de Trabalho Remota.
+define as opções de canal virtual para o controle de ActiveX de Área de Trabalho Remota.
 
-Chame esse método depois de chamar o método [**CreateVirtualChannels**](imstscax-createvirtualchannels.md) , mas antes de estabelecer uma conexão com o método [**Connect**](imstscax-connect.md) . Esse método define opções adicionais em canais virtuais que foram criados com **CreateVirtualChannels**.
+chame esse método depois de chamar o método [**CreateVirtualChannels**](imstscax-createvirtualchannels.md) , mas antes de estabelecer uma conexão com o método [**Conexão**](imstscax-connect.md) . Esse método define opções adicionais em canais virtuais que foram criados com **CreateVirtualChannels**.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -87,7 +87,7 @@ As opções a serem definidas para o canal virtual especificado pelo parâmetro 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornar **S \_ OK** se for bem-sucedido.
 

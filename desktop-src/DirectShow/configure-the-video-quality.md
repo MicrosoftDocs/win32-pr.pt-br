@@ -4,24 +4,24 @@ ms.assetid: f789db78-292e-4092-a5dc-1906845fb1dd
 title: Configurar a qualidade do vídeo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9cb8d2d28e39f0083aac521f1953ebbb1ca8d5b6
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: c5987352eb329410efd3fc74d6bf12539e968da8e24d2f0a65af9c9ac7b5cb85
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103645788"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119871766"
 ---
 # <a name="configure-the-video-quality"></a>Configurar a qualidade do vídeo
 
 Este tópico descreve como um aplicativo pode alterar programaticamente as configurações de imagem e câmera em um dispositivo de captura de vídeo.
 
--   [Configurações do Procamp](#procamp-settings)
+-   [Configurações procamp](#procamp-settings)
 -   [Camera Settings](#camera-settings)
 -   [Tópicos relacionados](#related-topics)
 
-## <a name="procamp-settings"></a>Configurações do Procamp
+## <a name="procamp-settings"></a>Configurações procamp
 
-As câmeras de vídeo Windows Driver Model (WDM) podem dar suporte a propriedades que controlam a qualidade da imagem:
+Windows As câmeras de vídeo do modelo de driver (WDM) podem dar suporte a propriedades que controlam a qualidade da imagem:
 
 -   Compensação de luz
 -   Brightness
@@ -93,7 +93,7 @@ A interface [**IAMCameraControl**](/windows/desktop/api/Strmif/nn-strmif-iamcame
 
 -   Exposição
 -   Foco
--   Íris
+-   Iris
 -   Panorâmica
 -   Roll
 -   Inclinação

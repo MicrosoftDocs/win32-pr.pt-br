@@ -4,12 +4,12 @@ ms.assetid: e76ea1ed-5962-440a-a722-b59b314babd6
 title: Caracteres da área de uso privado e definido pelo usuário final
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f4307880a361bb847bb0dc24392006614336772
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 19152ff8564cae4ccccc154a6c9d349f0fc6cd8791fcccb1973b553bc681cc5a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297277"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119898754"
 ---
 # <a name="end-user-defined-and-private-use-area-characters"></a>Caracteres da área de uso privado e definido pelo usuário final
 

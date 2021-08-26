@@ -1,10 +1,10 @@
 ---
-title: Estrutura de MPSTATUS_DATAEX_UNUSED (MpClient. h)
-description: Estrutura fictícia para não SRP.
+title: MPSTATUS_DATAEX_UNUSED (MpClient.h)
+description: Estrutura fiada para não SRP.
 ms.assetid: 396744CE-2435-4591-B0CF-A4392C88640F
 keywords:
-- Recursos do ambiente Windows herdado da estrutura de MPSTATUS_DATAEX_UNUSED
-- Ponteiro de estrutura de PMPSTATUS_DATAEX_UNUSED recursos de ambiente herdados do Windows
+- MPSTATUS_DATAEX_UNUSED estrutura herdada Windows recursos de ambiente
+- PMPSTATUS_DATAEX_UNUSED de estrutura herdada Windows recursos de ambiente
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bfcbc987a97a8cc47501a24e633c5da2d776a42d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 245315d12b5fbe76ec2f552e510336aa3974753678e04f87c33546737f180c56
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086427"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119961086"
 ---
-# <a name="mpstatus_dataex_unused-structure"></a>\_ \_ Estrutura não utilizada do MPSTATUS DATAEX
+# <a name="mpstatus_dataex_unused-structure"></a>Estrutura MPSTATUS \_ DATAEX \_ UNUSED
 
-Estrutura fictícia para não SRP.
+Estrutura fiada para não SRP.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -54,9 +54,9 @@ Tipo: **DWORD**
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

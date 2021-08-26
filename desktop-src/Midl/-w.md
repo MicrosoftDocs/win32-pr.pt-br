@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 00b1f15ae0c28722adaca8c4b0651606681ce3af
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 7e03b2d4a762a7fbb1bba00f8804e8e43a77ad8183a744add63fcf0d37c86d54
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "105789785"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119913666"
 ---
 # <a name="w-switch"></a>Opção/w
 
@@ -54,7 +54,7 @@ Os níveis de aviso variam de 1 a 4, com um valor de zero significado para não 
 
 
 
- 
+ 
 
 Os avisos são diferentes dos erros. Os erros fazem com que o compilador MIDL pare o processamento do arquivo IDL. Os avisos fazem com que o compilador MIDL emita uma mensagem informativa e continue processando o arquivo IDL.
 
@@ -78,9 +78,9 @@ A opção **/w** comporta-se da mesma forma que a opção [**/Warn**](-warn.md)
 [**/Warn**](-warn.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

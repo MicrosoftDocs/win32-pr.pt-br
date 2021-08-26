@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Capicom.h
-ms.openlocfilehash: 8e38bb8940645bbefecb3822bce8de8c2e0eb902
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 480238556fce0470c51f00c394dd8566160686561342ec91da2e136c44a43cfe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105753100"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119879416"
 ---
 # <a name="capicom_cert_info_type-enumeration"></a>\_Enumeração de \_ tipo de informações de certificado CAPICOM \_
 
@@ -51,8 +51,8 @@ O tipo de enumeração de **\_ tipo de \_ informações \_ do certificado capico
 
 | Requisito | Valor |
 |----------------------------|--------------------------------------------------------------------------------------|
-| Redistribuível<br/> | CAPICOM 2,0 ou posterior no Windows Server 2003 e no Windows XP<br/>                |
-| parâmetro<br/>          | <dl> <dt>CAPICOM. h</dt> </dl> |
+| Redistribuível<br/> | capicom 2,0 ou posterior no Windows Server 2003 e Windows XP<br/>                |
+| Cabeçalho<br/>          | <dl> <dt>CAPICOM. h</dt> </dl> |
 
 
 

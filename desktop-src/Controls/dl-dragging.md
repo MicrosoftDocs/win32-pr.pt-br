@@ -3,7 +3,7 @@ title: DL_DRAGGING código de notificação (commctrl. h)
 description: Sinaliza que o usuário moveu o mouse ao arrastar um item.
 ms.assetid: 87fc4c24-8e88-4e3c-8f54-ecc7f80de5d7
 keywords:
-- DL_DRAGGING de código de notificação controles do Windows
+- DL_DRAGGING código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f5c9f3f6cec3ef95745eed88ec0208dff581ada
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cfe07cbf2cce3ad639af94055a2d1eab1f4fc3d6ce576c1c5467310809858843
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499870"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119878516"
 ---
 # <a name="dl_dragging-notification-code"></a>Código de notificação de arrastar para DL \_
 
@@ -52,7 +52,7 @@ Um ponteiro para uma estrutura [**DRAGLISTINFO**](/windows/win32/api/commctrl/ns
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno determina o tipo de cursor do mouse que a lista de arrastar deve definir; pode ser o valor DL \_ STOPCURSOR, DL \_ COPYCURSOR ou DL \_ MOVECURSOR. Se qualquer outro valor for retornado, o cursor não será alterado.
 
@@ -66,9 +66,9 @@ Um procedimento de janela normalmente processa o \_ código de notificação de 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

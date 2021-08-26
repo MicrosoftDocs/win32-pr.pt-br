@@ -3,7 +3,7 @@ title: Mensagem de LVM_UPDATE (commctrl. h)
 description: Atualiza um item de exibição de lista. Se o controle de exibição de lista tiver o \_ estilo de AUTOORGANIZAR LVS, essa macro fará com que o controle de exibição de lista seja organizado. Você pode enviar essa mensagem explicitamente ou usando a macro de \_ atualização de ListView.
 ms.assetid: 81b332e9-4bea-481e-a7c5-613371103550
 keywords:
-- Controles de LVM_UPDATE de mensagens do Windows
+- controles de Windows de mensagem de LVM_UPDATE
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e6cf2a4316e3ae3fc4dbab5e1afe780b03829b30
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ff9067d6eb80c5db7880ee9331a04e9259e9c841ccfe7dd80158a2afbcd06c99
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824194"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119915226"
 ---
 # <a name="lvm_update-message"></a>Mensagem de atualização do LVM \_
 
@@ -39,7 +39,7 @@ Atualiza um item de exibição de lista. Se o controle de exibição de lista ti
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna **verdadeiro** se for bem-sucedido ou **false** caso contrário.
 
@@ -49,9 +49,9 @@ Retorna **verdadeiro** se for bem-sucedido ou **false** caso contrário.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

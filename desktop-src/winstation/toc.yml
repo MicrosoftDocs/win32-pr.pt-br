@@ -1,34 +1,34 @@
-- name: Estações e desktops da janela
+- name: Estações de janela e áreas de trabalho
   href: window-stations-and-desktops.md
   items:
     - name: Sobre estações de janela e áreas de trabalho
       href: about-window-stations-and-desktops.md
       items:
-        - name: Estações de janela
+        - name: Estações de Janela
           href: window-stations.md
         - name: Desktops
           href: desktops.md
-        - name: Estação de janela e criação de área de trabalho
+        - name: Estação de Janelas e Criação da Área de Trabalho
           href: window-station-and-desktop-creation.md
         - name: Processar conexão com uma estação de janela
           href: process-connection-to-a-window-station.md
         - name: Conexão de thread com uma área de trabalho
           href: thread-connection-to-a-desktop.md
-        - name: Segurança de estação de janela e direitos de acesso
+        - name: Segurança e direitos de acesso da estação de janela
           href: window-station-security-and-access-rights.md
-        - name: Segurança de desktop e direitos de acesso
+        - name: Direitos de acesso e segurança da área de trabalho
           href: desktop-security-and-access-rights.md
     - name: Estação de janela e referência de área de trabalho
       href: window-station-and-desktop-reference.md
       items:
-        - name: Funções de estação de janela e área de trabalho
+        - name: Estação de Janelas e Funções de Área de Trabalho
           href: window-station-and-desktop-functions.md
           items:
             - name: CloseDesktop
               href: /windows/desktop/api/winuser/nf-winuser-closedesktop
             - name: CloseWindowStation
               href: /windows/desktop/api/winuser/nf-winuser-closewindowstation
-            - name: Createdesktop
+            - name: CreateDesktop
               href: /windows/desktop/api/winuser/nf-winuser-createdesktopa
             - name: CreateDesktopEx
               href: /windows/desktop/api/winuser/nf-winuser-createdesktopexa
@@ -64,7 +64,7 @@
               href: /windows/desktop/api/winuser/nf-winuser-setuserobjectinformationa
             - name: SwitchDesktop
               href: /windows/desktop/api/winuser/nf-winuser-switchdesktop
-        - name: Estruturas de área de trabalho e estação de janela
+        - name: Estação de janela e estruturas da área de trabalho
           href: window-station-and-desktop-structures.md
           items:
             - name: USEROBJECTFLAGS

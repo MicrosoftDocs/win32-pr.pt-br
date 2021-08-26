@@ -3,7 +3,7 @@ title: Mensagem de SBM_SETSCROLLINFO (WinUser. h)
 description: A \_ mensagem SBM SETSCROLLINFO é enviada para definir os parâmetros de uma barra de rolagem.
 ms.assetid: e0e42a81-67be-4d40-88c8-77398b068617
 keywords:
-- Controles de SBM_SETSCROLLINFO de mensagens do Windows
+- controles de Windows de mensagem de SBM_SETSCROLLINFO
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e98abbca2d53d4b104caea22954472a17dfd5c1c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5622371abb86301e1450c9fa0d6864e8db76c9837fca48fe8bcf11cb884f6b5c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105753788"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119914286"
 ---
 # <a name="sbm_setscrollinfo-message"></a>\_Mensagem SBM SETSCROLLINFO
 
@@ -60,7 +60,7 @@ O membro **fMask** pode ser um ou mais dos valores a seguir.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno é a posição atual da caixa de rolagem.
 
@@ -74,9 +74,9 @@ As mensagens que indicam a posição da barra de rolagem, o [**WM \_ HSCROLL**](
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

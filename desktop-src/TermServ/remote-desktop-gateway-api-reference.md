@@ -7,12 +7,12 @@ keywords:
 - Serviços de Área de Trabalho Remota Serviços de Área de Trabalho Remota, referência de API de Área de Trabalho Remota gateway
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d30a51d40cead3c902cc6c8f4772ab05d5aa70b1
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 329e62f57c72adb004c72de89d9d878d085ce2070c64b0747768611e09d8cf4d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103635088"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119865976"
 ---
 # <a name="remote-desktop-gateway-api-reference"></a>Referência de API de gateway de Área de Trabalho Remota
 
@@ -24,9 +24,9 @@ Você pode usar a API de gateway de Área de Trabalho Remota (gateway de área d
 -   [Interfaces de gateway Área de Trabalho Remota](remote-desktop-gateway-interfaces.md)
 -   [Estruturas Área de Trabalho Remota gateway](remote-desktop-gateway-structures.md)
 
- 
+ 
 
- 
+ 
 
 
 

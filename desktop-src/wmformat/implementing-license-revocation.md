@@ -3,9 +3,9 @@ title: Implementando a revogação de licenças
 description: Implementando a revogação de licenças
 ms.assetid: 50ecfeaa-89cd-4788-a25a-ee0ae8973bf0
 keywords:
-- SDK do Windows Media Format, implementando a revogação de licença
-- SDK do Windows Media Format, revogação de licença
-- SDK do Windows Media Format, revogação de licenças
+- Windows SDK de formato de mídia, implementando a revogação de licença
+- Windows SDK de formato de mídia, revogação de licença
+- Windows SDK do formato de mídia, revogação de licenças
 - ASF (Advanced Systems Format), implementando a revogação de licenças
 - ASF (formato de sistemas avançados), implementando a revogação de licenças
 - ASF (Advanced Systems Format), revogação de licença
@@ -21,16 +21,16 @@ keywords:
 - revogação de licença, implementando
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e83bfb1a512b031f5b7c297ecede4ed33fba8f2b
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: c73d0204e83c941600eefb53579b19ef72217055080c6ef4603d8eac28e08caa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "103640163"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119809126"
 ---
 # <a name="implementing-license-revocation"></a>Implementando a revogação de licenças
 
-O SDK do Windows Media Rights Manager 10 inclui um recurso chamado revogação de licenças. Esse recurso permite que os servidores de licenças solicitem que as licenças sejam removidas do computador cliente. O Windows Media Format SDK fornece métodos que processam mensagens de revogação e removem as licenças do armazenamento de licença local.
+o SDK do Windows Media rights Manager 10 inclui um recurso chamado revogação de licença. Esse recurso permite que os servidores de licenças solicitem que as licenças sejam removidas do computador cliente. o SDK do formato de mídia Windows fornece métodos que processam mensagens de revogação e removem as licenças do armazenamento de licença local.
 
 O processo de revogação de licença é iniciado por um serviço fornecido pelo emissor da licença. Seu aplicativo pode hospedar esse serviço ou pode ser um aplicativo Web. Em ambos os casos, seu aplicativo deve ser capaz de receber um desafio de licença criado pelo serviço.
 
@@ -44,7 +44,7 @@ Para remover licenças do repositório de licenças, execute as seguintes etapas
 > [!Note]  
 > O DRM não é compatível com a versão baseada em x64 deste SDK.
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -56,9 +56,9 @@ Para remover licenças do repositório de licenças, execute as seguintes etapas
 [**Interface IWMLicenseRevocationAgent**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmlicenserevocationagent)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

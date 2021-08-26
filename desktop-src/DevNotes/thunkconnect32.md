@@ -13,18 +13,18 @@ api_type:
 - DllExport
 api_location:
 - Kernel32.dll
-ms.openlocfilehash: 7f22d7ceb59732e986c23c873133b11f358364cd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3f754d4c0e88ee860d112a6fb99d15c2690af0014951e77425d425b65ad16e39
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747903"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119929106"
 ---
 # <a name="thunkconnect32-function"></a>Função ThunkConnect32
 
-\[Essa função foi suportada para compatibilidade com versões anteriores, mas não está presente nas versões atuais do Windows. Os novos drivers de dispositivo devem ser 32 ou 64 bits e não precisam dessa função.\]
+\[Essa função era compatível com compatibilidade com versões anteriores, mas não está presente nas versões atuais do Windows. Novos drivers de dispositivo devem ser de 32 ou 64 bits e não precisam dessa função.\]
 
-A função **ThunkConnect32** é usada por drivers de dispositivo de 16 bits (para MS-dos) que chamam o kernel de 32 bits.
+A **função ThunkConnect32** é usada por drivers de dispositivo de 16 bits (para MS-DOS) que chamam o kernel de 32 bits.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -81,16 +81,16 @@ Ignorado.
 
 </dd> <dt>
 
-*dwReason* 
+*Dwreason* 
 </dt> <dd>
 
 Ignorado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Sempre retorna **false**.
+Sempre retorna **FALSE.**
 
 ## <a name="requirements"></a>Requisitos
 

@@ -3,7 +3,7 @@ title: Mensagem de TVM_SHOWINFOTIP (commctrl. h)
 description: Mostra o InfoTip de um item especificado em um controle de exibição de árvore. Você pode enviar essa mensagem explicitamente ou usando a macro TreeView \_ ShowInfoTip.
 ms.assetid: ed5a1bda-5754-4bb3-aa22-8faaf1af1268
 keywords:
-- Controles de TVM_SHOWINFOTIP de mensagens do Windows
+- controles de Windows de mensagem de TVM_SHOWINFOTIP
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 76f147253800469a800677a242ff0ab0ccdbdfa4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b0e1cf61511e8c9e69c42d89f99fc4ddae90de78701e5e75170ff1b793671120
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824803"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119913916"
 ---
 # <a name="tvm_showinfotip-message"></a>\_Mensagem TVM SHOWINFOTIP
 
@@ -39,7 +39,7 @@ Identificador para o item.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna zero.
 
@@ -53,9 +53,9 @@ A maioria dos aplicativos não usa essa mensagem. Infotips são mostrados automa
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8e1165e3a613434fb76befb87cd1a83ed3af95d3
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 79020fa18717a3a2338a8ac243bb95e0fa14de47f0e434fb52c475c956afa101
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105781300"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119865666"
 ---
 # <a name="message-messagetable-element"></a>Elemento de mensagem (messagetable)
 
@@ -53,7 +53,7 @@ O elemento **Message** é definido pelo elemento [**messagetable**](eventmanifes
 
 
 
-| Nome    | Tipo   | Description                                                                                        |
+| Nome    | Tipo   | Descrição                                                                                        |
 |---------|--------|----------------------------------------------------------------------------------------------------|
 | message | string | Uma referência à cadeia de caracteres localizada na tabela de cadeia de caracteres.<br/>                                |
 | mid     | string | Não usado.<br/>                                                                               |
@@ -68,8 +68,8 @@ O elemento **Message** é definido pelo elemento [**messagetable**](eventmanifes
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 

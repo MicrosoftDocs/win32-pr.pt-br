@@ -3,27 +3,27 @@ title: Configurações de saída
 description: Configurações de saída
 ms.assetid: effe6c07-e6df-45b0-b865-2a025c466d6f
 keywords:
-- SDK do Windows Media Format, constantes globais
+- Windows SDK do formato de mídia, constantes globais
 - ASF (Advanced Systems Format), constantes globais
 - ASF (formato de sistemas avançados), constantes globais
 - constantes globais, lista de
-- SDK do Windows Media Format, constantes
+- Windows SDK do formato de mídia, constantes
 - ASF (Advanced Systems Format), constantes
 - ASF (formato de sistemas avançados), constantes
 - constantes, lista de
-- SDK do Windows Media Format, configurações de saída
+- Windows SDK do formato de mídia, configurações de saída
 - ASF (Advanced Systems Format), configurações de saída
 - ASF (formato de sistemas avançados), configurações de saída
 - configurações de saída
 - leitores síncronos, configurações de saída
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f5a02d508f76057dd72e34558a7ca8d29de4847
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 966cd350d379170f9f19c44967ef932bf41a15cb1910b865432ce499b006161e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104084340"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119929936"
 ---
 # <a name="output-settings"></a>Configurações de saída
 
@@ -38,7 +38,7 @@ As constantes globais a seguir são usadas para identificar as configurações d
 | g \_ wszDeliverOnReceive         | **WMT \_ tipo \_ bool**  | Se for true, os exemplos para essa saída serão entregues assim que estiverem disponíveis no leitor. Isso pode resultar em amostras dessa saída sendo entregue fora de ordem e antes das amostras correspondentes de outras saídas.                                                                                            |
 | g \_ wszDynamicRangeControl      | **WMT \_ tipo \_ DWORD** | Especifica o nível do controle de intervalo dinâmico a ser usado para a saída. Defina como um valor de 0 a 2, em que 0 indica que nenhum controle de intervalo dinâmico (o padrão) e 2 é o nível máximo do controle de intervalo dinâmico (o menor intervalo dinâmico).                                                                                |
 | g \_ wszEarlyDataDelivery        | **WMT \_ tipo \_ DWORD** | Tempo, em milissegundos, que especifica o quanto antes para entregar os exemplos. Se for maior que zero, os exemplos dessa saída serão recuperados e decodificados para que os exemplos sejam entregues antes dos exemplos de outras saídas. Normalmente, o leitor fornece exemplos em ordem de tempo de apresentação.         |
-| g \_ wszEnableDiscreteOutput     | **WMT \_ tipo \_ bool**  | Se for true, o leitor habilitará a saída de áudio de alta definição e multicanal. Essa configuração só é válida para fluxos de áudio codificados com o codec Windows Media Audio 9 Professional. Se essa configuração for definida como true, você também deverá especificar a configuração do alto-falante do computador cliente, definindo g \_ wszSpeakerConfig. |
+| g \_ wszEnableDiscreteOutput     | **WMT \_ tipo \_ bool**  | Se for true, o leitor habilitará a saída de áudio de alta definição e multicanal. essa configuração só é válida para fluxos de áudio codificados com o codec Windows Media audio 9 Professional. Se essa configuração for definida como true, você também deverá especificar a configuração do alto-falante do computador cliente, definindo g \_ wszSpeakerConfig. |
 | g \_ wszEnableFrameInterpolation | **WMT \_ tipo \_ bool**  | Se for true, o codec entregará o fluxo de vídeo em uma [*taxa de quadros*](wmformat-glossary.md)superior, interpolando os quadros forma algorítmica.                                                                                                                                                          |
 | g \_ wszJustInTimeDecode         | **WMT \_ tipo \_ bool**  | Se for true, os dados deverão ser decodificados o mais tarde possível. Sem suporte no leitor síncrono.                                                                                                                                                                                                                            |
 | g \_ wszNeedsPreviousSample      | **WMT \_ tipo \_ bool**  | Se for true, o exemplo exigirá que a amostra anterior seja descompactada. Essa configuração se aplica somente a quadros Delta em vídeo compactado e é somente leitura.                                                                                                                                                                       |
@@ -52,7 +52,7 @@ As constantes globais a seguir são usadas para identificar as configurações d
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -70,9 +70,9 @@ As constantes globais a seguir são usadas para identificar as configurações d
 [**IWMSyncReader::SetOutputSetting**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmsyncreader-setoutputsetting)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

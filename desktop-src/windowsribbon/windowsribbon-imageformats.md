@@ -1,38 +1,38 @@
 ---
 title: Especificando recursos de imagem da faixa de uma
-description: Como um sistema de apresentação de comando avançado, o Windows Ribbon Framework foi projetado para dar suporte extensivo a recursos de imagem em toda a interface do usuário (IU) da faixa de faixas. Todos os recursos de imagem são declarados na marcação da faixa de lista ou consultados de um aplicativo host da faixa de Ribbon.
+description: como um sistema de apresentação de comando avançado, o Windows estrutura da faixa de ribbon foi projetado para oferecer suporte extensivo a recursos de imagem em toda a interface do usuário da faixa de forma (iu). Todos os recursos de imagem são declarados na marcação da faixa de lista ou consultados de um aplicativo host da faixa de Ribbon.
 ms.assetid: 37b57992-8da8-4e6b-869d-72a136f6ad77
 keywords:
-- Faixa de, recursos de imagem do Windows
+- Windows Faixa de das, recursos de imagem
 - Faixa de das, recursos de imagem
-- Faixa de, transparência do Windows
+- Windows Faixa de, transparência
 - Faixa de, transparência
-- Faixa de, profundidade de cor do Windows
+- Windows Faixa de, profundidade de cor
 - Faixa de, profundidade de cor
-- Faixa de medida do Windows, contraste
+- Windows Faixa de faixas, contraste
 - Faixa de faixas, contraste
-- recursos de imagem no Windows Ribbon
+- recursos de imagem na faixa de Windows
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 13e7666126e5b8f7fbe8b610678a8a1d71589373
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: c485de9c0d9d1b51b09d4a2b9dba95dd30a778922750a7f388c7a5c8963cda6c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104454266"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119932576"
 ---
 # <a name="specifying-ribbon-image-resources"></a>Especificando recursos de imagem da faixa de uma
 
-Como um sistema de apresentação de comando avançado, o Windows Ribbon Framework foi projetado para dar suporte extensivo a recursos de imagem em toda a interface do usuário (IU) da faixa de faixas. Todos os recursos de imagem são declarados na [marcação da faixa](windowsribbon-schema.md) de lista ou consultados de um aplicativo host da faixa de Ribbon.
+como um sistema de apresentação de comando avançado, o Windows estrutura da faixa de ribbon foi projetado para oferecer suporte extensivo a recursos de imagem em toda a interface do usuário da faixa de forma (iu). Todos os recursos de imagem são declarados na [marcação da faixa](windowsribbon-schema.md) de lista ou consultados de um aplicativo host da faixa de Ribbon.
 
-Para o Windows 8 e posterior, a estrutura da faixa de opções dá suporte aos seguintes formatos de gráficos: arquivos BMP (bitmap ARGB) de 32 bits e arquivos PNG (Portable Network Graphics) com transparência.
+para Windows 8 e posteriores, a estrutura da faixa de opções dá suporte aos seguintes formatos de gráficos: arquivos BMP (bitmap ARGB) de 32 bits e arquivos PNG (Portable Network graphics) com transparência.
 
-Para o Windows 7 e versões anteriores, os recursos de imagem devem estar em conformidade com o formato gráfico BMP padrão usado no Windows.
+para o Windows 7 e anterior, os recursos de imagem devem estar em conformidade com o formato gráfico BMP padrão usado em Windows.
 
 > [!Note]  
 > Um erro de compilação pode ocorrer se um formato de imagem sem suporte for fornecido para a estrutura.
 
- 
+ 
 
 ## <a name="image-sizes"></a>Tamanhos de imagem
 
@@ -65,7 +65,7 @@ Para qualquer imagem, o tamanho exato do pixel depende da resolução de vídeo 
 
 
 
- 
+ 
 
 A estrutura da faixa de faixas dimensiona os recursos de imagem conforme necessário. No entanto, como o redimensionamento pode gerar artefatos indesejáveis e degradação de imagem, é altamente recomendável que o aplicativo forneça um pequeno conjunto de recursos de imagem que abrangem várias configurações de DPI usadas com frequência. Se uma correspondência exata não for encontrada, a imagem mais próxima será dimensionada ou reduzida verticalmente.
 
@@ -77,7 +77,7 @@ Para facilitar isso, os recursos de imagem podem ser declarados na marcação da
 >
 > Se nenhum elemento [**Image**](windowsribbon-element-image.md) for declarado com um valor *MinDPI* que corresponda à configuração de dpi de tela atual, a estrutura selecionará a **imagem** que tem o valor de *MinDPI* mais próximo menor que a configuração de dpi de tela atual e dimensionará o recurso de imagem para cima. Caso contrário, se nenhum elemento **Image** for declarado com um valor de atributo *MinDPI* menor que a configuração de dpi de tela atual, a estrutura escolherá o valor de *MinDPI* mais próximo maior que a configuração de dpi de tela atual e dimensionará o recurso de imagem para baixo.
 
- 
+ 
 
 O exemplo a seguir ilustra como declarar um conjunto de imagens para acomodar vários tamanhos de faixa de opções e configurações do sistema.
 
@@ -116,7 +116,7 @@ Se as imagens declaradas na marcação forem invalidadas em tempo de execução 
 > [!Note]  
 > Imagens grandes têm um tamanho de SM \_ CXICON por SM \_ CXICON e imagens pequenas têm um tamanho de SM \_ CXICON/2 por SM \_ CXICON/2.
 
- 
+ 
 
 ## <a name="color-depth-transparency-and-contrast"></a>Intensidade de cor, transparência e contraste
 
@@ -125,7 +125,7 @@ Espera-se que as imagens regulares estejam no formato de pixel ARGB de 32 bits p
 > [!WARNING]
 > Muitas ferramentas de edição de imagens não preservam o canal alfa de 8 bits de ordem mais alta ao carregar ou salvar imagens de 32 BPP.
 
- 
+ 
 
 Para que uma imagem seja exibida corretamente no modo de alto contraste, ela deve estar em um formato de pixel em palete 4 BPP. Quando a imagem é renderizada, a estrutura da faixa de faixas remapeia cores específicas com base no contexto de alto contraste da imagem.
 
@@ -157,9 +157,9 @@ Afasta
 
 WINDOWTEXT de cor \_
 
-Branco
+BRANCO
 
-Branco
+BRANCO
 
 FFFFFF
 
@@ -195,13 +195,13 @@ AZUL-ESCURO
 
 000080
 
-N/D
+n/d
 
-Branco
+BRANCO
 
 
 
- 
+ 
 
 Para obter mais informações sobre os formatos de imagem com suporte na estrutura da faixa de opções, consulte o seguinte:
 
@@ -279,6 +279,6 @@ O exemplo a seguir demonstra como os recursos de imagem de alto contraste são d
 [\_LargeHighContrastImage PKEY \_ UI](windowsribbon-reference-properties-uipkey-largehighcontrastimage.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

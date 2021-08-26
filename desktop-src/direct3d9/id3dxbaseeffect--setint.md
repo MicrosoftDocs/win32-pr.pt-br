@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 3c27d66544d4064c8d6c682db168b57b88d213cd
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 436ae9015ebe7d6aba203d0c696bed29323275775e5e5705577341f8152f5c0e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298471"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119848616"
 ---
 # <a name="id3dxbaseeffectsetint-method"></a>Método ID3DXBaseEffect:: SetInt
 
@@ -59,7 +59,7 @@ Valor inteiro.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

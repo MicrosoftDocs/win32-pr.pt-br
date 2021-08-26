@@ -1,19 +1,19 @@
 ---
 title: Propriedades de conexão do SDK
-description: Saiba mais sobre as propriedades de conexão do SDK. Veja um exemplo que é uma instância do esquema nativo do eaphostconfig.
+description: Saiba mais sobre as propriedades de conexão do SDK. Consulte um exemplo que é uma instância do esquema nativo eaphostconfig.
 ms.assetid: 34c9b423-4f4c-484e-86d7-4594566cd396
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: edbd404246055a3c94daff4c029a94f16adfe51b
-ms.sourcegitcommit: 773fa6257ead6c74154ad3cf46d21e49adc900aa
+ms.openlocfilehash: b7c514fc276601ee02cc9d24fc4961f07e7be722ab4ff69dae0316687d8d74d4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "103642924"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119948046"
 ---
 # <a name="sdk-connection-properties"></a>Propriedades de conexão do SDK
 
-Este exemplo é uma instância do esquema nativo do [eaphostconfig](eaphostconfigschema-schema.md) .
+Este exemplo é uma instância do [esquema nativo eaphostconfig.](eaphostconfigschema-schema.md)
 
 ``` syntax
   <?xml version="1.0" ?> 
@@ -35,15 +35,15 @@ Este exemplo é uma instância do esquema nativo do [eaphostconfig](eaphostconfi
 
 <dl> <dt>
 
-[Propriedades da conexão](connection-profiles.md)
+[Propriedades de conexão](connection-profiles.md)
 </dt> <dt>
 
 [EAPHost e esquema herdado](eaphost-schemas.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,20 +1,20 @@
 ---
-title: Teclado
+title: Keyboard
 description: O teclado é o dispositivo de entrada primário usado para entrada de texto no Microsoft Windows. Para acessibilidade e eficiência, a maioria das ações também pode ser executada usando o teclado.
 ms.assetid: 27185c98-1233-4e26-a156-0ff080fd4db3
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: c1554ca1a9769b562f154498cd0871bc1b813067
-ms.sourcegitcommit: 8ebcf6cd36f67f8bcf78e76ae8923d65b8995c8a
+ms.openlocfilehash: bca6f1486b899881fbb0db8f9d7ae15ce3aba297db849c291862eb3b473730b7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "111524290"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119843065"
 ---
-# <a name="keyboard"></a>Teclado
+# <a name="keyboard"></a>Keyboard
 
 > [!NOTE]
-> Este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte da orientação ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais](/windows/uwp/design/).
+> este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte da orientação ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais](/windows/uwp/design/).
 
 O teclado é o dispositivo de entrada primário usado para entrada de texto no Microsoft Windows. Para acessibilidade e eficiência, a maioria das ações também pode ser executada usando o teclado.
 
@@ -22,28 +22,28 @@ Os teclados também podem se referir a teclados virtuais, na tela e de escrita d
 
 ![captura de tela do teclado virtual ](images/inter-keyboard-image1.png)
 
-O teclado virtual Windows Tablet and Touch Technology.
+o Tecnologia Windows Tablet and Touch teclado na tela.
 
 ![captura de tela do painel de escrita do Tablet Windows ](images/inter-keyboard-image2.png)
 
-O painel de escrita da tecnologia Windows Tablet e Touch.
+o painel de escrita Tecnologia Windows Tablet and Touch.
 
 Há seis tipos básicos de chaves:
 
 -   Uma chave de caractere envia um caractere literal para a janela com o foco de entrada.
--   Uma tecla modificadora combinada com outra chave altera o significado de sua chave associada, como CTRL, ALT, Shift e a tecla de logotipo do Windows.
+-   uma tecla modificadora combinada com outra chave altera o significado de sua chave associada, como Ctrl, Alt, Shift e a tecla de logotipo Windows.
 -   As teclas de navegação são as setas direcionais, além de Home, end, Page up e Page Down.
 -   As chaves de edição são inserir, backspace e Delete.
 -   As teclas de função são F1 por meio de F12.
 -   As chaves do sistema colocam o sistema em um modo ou executam uma tarefa do sistema, como tela de impressão, Caps Lock e num lock.
 
-Chaves de acesso são chaves ou combinações de teclas usadas para acessibilidade para interagir com todos os controles ou itens de menu usando o teclado. As teclas de atalho são chaves ou combinações de teclas usadas por usuários avançados para executar comandos usados com frequência para eficiência. O Windows indica as chaves de acesso ao sublinhar a atribuição de chave de acesso.
+Chaves de acesso são chaves ou combinações de teclas usadas para acessibilidade para interagir com todos os controles ou itens de menu usando o teclado. As teclas de atalho são chaves ou combinações de teclas usadas por usuários avançados para executar comandos usados com frequência para eficiência. Windows indica as chaves de acesso sublinhando a atribuição de chave de acesso.
 
 ![captura de tela de teclas de acesso e teclas de atalho ](images/inter-keyboard-image3.png)
 
 Este exemplo mostra as teclas de acesso e as teclas de atalho.
 
-Para eliminar a desordem Visual, o Windows oculta os sublinhados de chave de acesso por padrão e os exibe somente quando a tecla Alt é pressionada. Para manter a consistência com o Windows, as imagens no guia de UX também são mostradas com os sublinhados de chave de acesso ocultos, a menos que a diretriz envolva chaves de acesso.
+para eliminar a desordem visual, Windows oculta os sublinhados de chave de acesso por padrão e os exibe somente quando a tecla Alt é pressionada. para manter a consistência com Windows, as imagens no guia do UX também são mostradas com a tecla de acesso sublinhadas ocultas, a menos que a diretriz envolva chaves de acesso.
 
 Para melhorar a conscientização das atribuições de chave de acesso em seu programa durante todo o processo de desenvolvimento, você pode exibi-las em todos os momentos. No painel de controle, acesse a central de facilidade de acesso e clique em **facilitar o uso do teclado**; em seguida, marque a caixa de seleção **sublinhar atalhos de teclado e chaves de acesso** .
 
@@ -74,7 +74,7 @@ Para ilustrar os elementos da navegação por teclado na lista a seguir, vamos n
     Cores básicas e cores personalizadas são grupos de controle, dando a essa caixa de diálogo cinco paradas de tabulação. Há muitos controles que a navegação seria ineficiente sem usar grupos de controle.
 
 -   **Teclas de direção.** As teclas de seta movem o foco de entrada entre os controles dentro de um grupo. Pressionar a tecla de seta para a direita move o foco de entrada para o próximo controle na ordem de tabulação, enquanto pressionar a seta para a esquerda move o foco de entrada para o controle anterior. Início, fim, para cima e para baixo também têm o comportamento esperado dentro de um grupo. Os usuários não podem navegar fora de um grupo de controle usando as teclas de direção.
--   **Botões padrão.** O Windows com botões de comando e links de comando têm um único botão padrão indicado por uma borda realçada, que é o botão que é clicado quando a tecla Enter é pressionada. Há um único botão de comando padrão ou link de comando atribuído por padrão. No entanto, o botão padrão é movido quando o usuário faz a tabulação para outro botão de comando ou link de comando. Consequentemente, qualquer botão de comando ou link de comando com foco de entrada também é sempre o botão padrão.
+-   **Botões padrão.** Windows com botões de comando e links de comando têm um único botão padrão indicado por uma borda realçada, que é o botão que é clicado quando a tecla Enter é pressionada. Há um único botão de comando padrão ou link de comando atribuído por padrão. No entanto, o botão padrão é movido quando o usuário faz a tabulação para outro botão de comando ou link de comando. Consequentemente, qualquer botão de comando ou link de comando com foco de entrada também é sempre o botão padrão.
 
     ![captura de tela dos botões OK e cancelar ](images/inter-keyboard-image7.png)
 
@@ -94,13 +94,13 @@ Embora esse mecanismo seja razoavelmente complicado, ele também é bastante int
 
 ### <a name="keyboard-support-for-accessibility-and-advanced-users"></a>Suporte de teclado para acessibilidade e usuários avançados
 
-**No Windows, a criação para o teclado se resume a fornecer navegação de teclado bem projetada, chaves de acesso para acessibilidade e teclas de atalho para usuários avançados.**
+**no Windows, a criação para o teclado se resume a fornecer navegação de teclado bem projetada, chaves de acesso para acessibilidade e teclas de atalho para usuários avançados.**
 
 Para garantir que a funcionalidade do programa esteja facilmente disponível para a maior variedade de usuários, incluindo aqueles que têm deficiências e deficiências, todos os elementos interativos da interface do usuário devem ser acessíveis pelo teclado. Em geral, isso significa que os elementos da interface do usuário usados com mais frequência são acessíveis usando uma única combinação de tecla de acesso ou chave, enquanto elementos usados com menos frequência podem exigir navegação de tecla de seta ou guia adicional. Para esses usuários, a capacidade de abrangência é mais importante do que consistência.
 
 Para garantir que a funcionalidade do programa seja eficiente para usuários experientes, os elementos de interface do usuário comumente usados também devem ter teclas de atalho para acesso direto ao teclado. Os usuários experientes muitas vezes têm uma forte preferência por usar o teclado, pois os comandos de teclado podem ser inseridos mais rapidamente e não exigem remover as mãos do teclado. Para esses usuários, eficiência e consistência são cruciais; a abrangência é importante apenas para os comandos mais usados.
 
-Há distinções sutis ao criar o acesso ao teclado para esses dois grupos, motivo pelo qual o Windows fornece dois mecanismos independentes de acesso de teclado direto. Ao usar o acesso e as teclas de atalho com eficiência, você pode dar a seus programas um acesso de teclado eficiente, consistente e abrangente que beneficia todos.
+há distinções sutis ao criar o acesso ao teclado para esses dois grupos, por isso Windows fornece dois mecanismos independentes de acesso de teclado direto. Ao usar o acesso e as teclas de atalho com eficiência, você pode dar a seus programas um acesso de teclado eficiente, consistente e abrangente que beneficia todos.
 
 ### <a name="access-keys"></a>Chaves de acesso
 
@@ -114,7 +114,7 @@ As teclas de acesso possuem as seguintes características:
 -   Elas não são atribuídas consistentemente porque nem sempre podem. No entanto, as teclas de acesso devem ser atribuídas consistentemente a comandos usados comumente, em especial os botões de confirmação.
 -   Elas são localizadas.
 
-Como as chaves de acesso não devem ser **memorizadas,** elas são atribuídas a um caractere que está no início do rótulo para torná-las fáceis de encontrar, mesmo se houver uma palavra-chave que aparece posteriormente no rótulo.
+**Como as chaves de acesso não se destinam a serem memorizadas, elas são atribuídas a um caractere que está no início do rótulo para facilitar a localização,** mesmo se houver uma palavra-chave que aparece posteriormente no rótulo.
 
 **Correto:**
 
@@ -122,7 +122,7 @@ Como as chaves de acesso não devem ser **memorizadas,** elas são atribuídas a
 
 **Incorreto:**
 
-![captura de tela do 21º caractere sublinhado ](images/inter-keyboard-image10.png)
+![captura de tela de vinte caracteres do primeiro caractere sublinhado ](images/inter-keyboard-image10.png)
 
 No exemplo correto, a chave de acesso é atribuída a um caractere que está no início do rótulo.
 
@@ -138,144 +138,144 @@ Por outro lado, as teclas de atalho têm as seguintes características:
 -   Elas devem ser atribuídas consistentemente, uma vez que são memorizadas e não diretamente documentadas.
 -   Elas não são localizadas.
 
-Como as teclas de atalho devem ser **memorizadas,** as teclas de atalho usadas com mais frequência usam letras dos primeiros ou mais memorizáveis caracteres dentro das palavras-chave do comando, como Ctrl+C para Cópia e Ctrl+Q para Solicitação.
+**Como as teclas de atalho devem ser memorizadas, as teclas de atalho usadas com mais frequência usam as letras do primeiro ou mais memorizado caracteres dentro das palavras-chave do comando,** como CTRL + C para copiar e CTRL + Q para solicitação.
 
-Significados inconsistentes para teclas de atalho conhecidas são frustrantes e causam erros.
+Os significados inconsistentes para as teclas de atalho conhecidas são frustrantes e causam erros.
 
 **Incorreto:**
 
-![captura de tela do botão de avanço com "w" sublinhado ](images/inter-keyboard-image11.png)
+![captura de tela do botão Avançar com ' w ' sublinhado ](images/inter-keyboard-image11.png)
 
-Neste exemplo, Ctrl+F é o atalho padrão para Find, portanto, atribuí-lo a Encaminhar é frustrante e propenso a erros. Ctrl+W seria uma opção melhor e fácil de lembrar.
+Neste exemplo, Ctrl + F é o atalho padrão para localizar, portanto, atribuí-lo ao forward é frustrante e propenso a erros. CTRL + W seria uma opção melhor e fácil de memorizar.
 
-Por fim, como elas devem ser memorizadas, as teclas de atalho específicas do aplicativo fazem sentido apenas para programas e recursos que são executados com frequência suficiente para os usuários incentivados a **memorizar.** Programas e recursos usados raramente não precisam de teclas de atalho. Por exemplo, os programas de instalação e a maioria dos assistentes não precisam de nenhuma atribuição especial de tecla de atalho, nem de comandos usados raramente em um aplicativo de produtividade.
+Por fim, como eles devem ser memorizados, **as teclas de atalho específicas do aplicativo fazem sentido apenas para programas e recursos executados com frequência suficiente para que os usuários motivados possam memorizar.** Os programas e recursos usados raramente não precisam de teclas de atalho. Por exemplo, os programas de instalação e a maioria dos assistentes não precisam de nenhuma atribuição especial de tecla de atalho, nem comandos usados com pouca frequência em um aplicativo de produtividade.
 
-### <a name="assigning-access-keys-in-dialog-boxes"></a>Atribuindo chaves de acesso nas caixas de diálogo
+### <a name="assigning-access-keys-in-dialog-boxes"></a>Atribuindo chaves de acesso em caixas de diálogo
 
-Sempre que possível, atribua chaves de acesso exclusivas a todos os controles interativos, exceto aqueles que normalmente não são chaves de acesso atribuídas. No entanto, em inglês há apenas 26 caracteres. Alguns caracteres podem não aparecer em nenhum dos rótulos e pode não haver caracteres distintos em todos os rótulos, reduzindo ainda mais esse número. Além disso, você deve planejar ter alguns caracteres não atribuídos para facilitar a localização. Consequentemente, você pode atribuir apenas cerca de 20 chaves de acesso exclusivas em uma única caixa de diálogo.
+Sempre que possível, atribua chaves de acesso exclusivas a todos os controles interativos, exceto aqueles que normalmente não são chaves de acesso atribuídas. No entanto, em inglês, há apenas 26 caracteres. Alguns caracteres podem não aparecer em nenhum dos rótulos, e pode não haver caracteres distintivos em todos os rótulos, reduzindo esse número ainda mais. Além disso, você deve planejar ter alguns caracteres não atribuídos para facilitar a localização. Consequentemente, você pode atribuir apenas cerca de 20 chaves de acesso exclusivas em uma única caixa de diálogo.
 
 Se você tiver uma caixa de diálogo com mais de 20 controles interativos, não atribua chaves de acesso a alguns controles ou, em situações raras, atribua chaves de acesso duplicadas.
 
-![captura de tela da caixa de diálogo de fonte ](images/inter-keyboard-image12.png)
+![captura de tela da caixa de diálogo fonte ](images/inter-keyboard-image12.png)
 
 Quando há muitos controles interativos, nem todos eles precisam de uma chave de acesso atribuída.
 
 Use o procedimento geral a seguir para atribuir chaves de acesso:
 
--   Primeiro, atribua chaves de acesso aos [botões de confirmação](glossary.md) e links de comando. Use a tabela de atribuições de chave de acesso padrão quando ela se aplicar; caso contrário, use a primeira letra da primeira palavra.
--   Ignore os controles que não são atribuídos a chaves de acesso.
--   Atribua chaves de acesso exclusivas aos controles restantes (começando com os mais usados):
+-   Primeiro, atribua chaves de acesso aos [botões de confirmação](glossary.md) e aos links de comando. Use a tabela de atribuições de chave de acesso padrão quando ela se aplicar; caso contrário, use a primeira letra da primeira palavra.
+-   Ignore os controles que não são atribuídos às chaves de acesso.
+-   Atribua chaves de acesso exclusivas aos controles restantes (começando com os usados com mais frequência):
     -   Se possível, atribua a chave de acesso de acordo com a tabela de atribuições de chave de acesso padrão.
     -   Caso contrário:
-        -   Prefira caracteres que aparecem no início do rótulo, idealmente o primeiro caractere da primeira ou segunda palavra.
-        -   Prefira uma consoante distinta ou uma voga, como "x" em "Exit".
+        -   Prefira os caracteres que aparecem no início do rótulo, o ideal é o primeiro caractere da primeira ou segunda palavra.
+        -   Prefira uma consoante distinta ou uma vogal, como "x" em "Exit".
         -   Prefira caracteres com larguras largas, como w, m e letras maiúsculas.
-        -   Evite usar caracteres que dificultam a imagem do sublinhado, como letras com um pixel de largura, letras com descendentes e letras ao lado de uma letra com um descendente.
+        -   Evite usar caracteres que tornem o sublinhado difícil de ver, como letras com um pixel de largura, letras com descendentes e letras ao lado de uma letra com um descendente.
 -   Se nem todos os controles puderem ter chaves de acesso exclusivas (comece com o menos usado):
     -   Se houver grupos de controles relacionados, como:
-        -   Um único conjunto de botões de rádio
+        -   Um único conjunto de botões de opção
         -   Um conjunto de caixas de seleção relacionadas
         -   Um conjunto de controles relacionados dentro de uma caixa de grupo
 
-Atribua chaves de acesso a rótulos de grupo em vez dos controles individuais. Normalmente, você faria o oposto. (Ao fazer isso, certifique-se de que haja um grupo de controle definido para esses controles.)
+Atribua chaves de acesso para agrupar rótulos em vez de controles individuais. Normalmente, você faria o oposto. (Ao fazer isso, verifique se há um grupo de controle definido para esses controles.)
 
--   Se ainda não todos os controles puderem ter chaves de acesso exclusivas:
-    -   Você poderá atribuir chaves de acesso não exclusivas se:
+-   Se ainda não todos os controles podem ter chaves de acesso exclusivas:
+    -   Você pode atribuir chaves de acesso não exclusivas se:
         -   De outra forma, os controles seriam muito difíceis de navegar.
-        -   As chaves de acesso não exclusivas não estão em conflito com as chaves de acesso dos controles comumente usados.
-    -   Caso contrário, os controles restantes podem ser acessados usando a navegação de tecla tab e seta.
+        -   As chaves de acesso não exclusivas não entram em conflito com as chaves de acesso dos controles comumente usados.
+    -   Caso contrário, os controles restantes podem ser acessados usando a navegação de tecla Tab e de seta.
 
 ![captura de tela de grupos com chaves de acesso diferentes ](images/inter-keyboard-image13.png)
 
-Neste exemplo, há controles repetitivos para que as chaves de acesso sejam atribuídas aos grupos de botões de rádio.
+Neste exemplo, há controles repetitivos, portanto, as chaves de acesso são atribuídas aos grupos de botões de opção.
 
 ### <a name="preventing-accidental-commands"></a>Impedindo comandos acidentais
 
-Se uma janela exibida fora do contexto (não iniciada pelo usuário) roubar o foco de entrada, há uma boa chance de que essa janela receba a entrada destinada a outra janela. Além disso, as chaves de acesso entrarão em vigor quando pressionadas sem pressionar a tecla Alt se a caixa de diálogo não tiver controles que levam entrada de texto (como caixas de texto e listas). Portanto, no exemplo a seguir, pressionar "r" ativa o botão Reiniciar agora.
+Se uma janela exibida fora do contexto (não iniciado pelo usuário) roubar o foco de entrada, haverá uma boa chance de que essa janela receba a entrada destinada a outra janela. Além disso, as chaves de acesso entram em vigor quando pressionadas sem a desativação da tecla Alt se a caixa de diálogo não tem controles que usam entrada de texto (como caixas de texto e listas). Portanto, no exemplo a seguir, pressionar "r" ativa o botão reiniciar agora.
 
-Claramente, essa entrada pode ter consequências não intencionais significativas.
+Claramente, essa entrada pode ter consequências significativas indesejadas.
 
 **Incorreto:**
 
-![captura de tela do botão reiniciar agora, "r" sublinhado ](images/inter-keyboard-image14.png)
+![captura de tela do botão reiniciar agora, ' r ' sublinhado ](images/inter-keyboard-image14.png)
 
-Neste exemplo, digitar texto com espaço, "r" ou Enter reinicia acidentalmente o Windows.
+Neste exemplo, digitar texto com espaço, "r" ou digitar reinicializações por acidente Windows.
 
-É claro que a melhor solução para esse problema é não roubar o foco de entrada. Em vez disso, ative o botão da barra de tarefas do [programa](winenv-taskbar.md) ou exibe uma notificação para chamar a atenção do usuário.
+É claro que a melhor solução para esse problema não é roubar o foco de entrada. Em vez disso, atualize o [botão da barra de tarefas](winenv-taskbar.md) do programa ou exiba uma notificação para obter a atenção do usuário.
 
-No entanto, se você precisa exibir essa janela, a melhor abordagem é não atribuir um botão padrão ou chaves de acesso e dar foco de entrada inicial a um controle diferente de um botão de confirmação.
+No entanto, se você precisar exibir tal janela, a melhor abordagem é não atribuir um botão padrão ou chaves de acesso e dar o foco de entrada inicial a um controle que não seja um botão de confirmação.
 
 **Correto:**
 
-![captura de tela do botão reiniciar, 'r' não sublinhado ](images/inter-keyboard-image15.png)
+![captura de tela do botão reiniciar, ' r ' não sublinhado ](images/inter-keyboard-image15.png)
 
-Neste exemplo, reiniciar acidentalmente o Windows é muito mais difícil de fazer.
+neste exemplo, reinicialização acidental Windows é muito mais difícil de fazer.
 
 **Se você fizer apenas seis coisas...**
 
-1.  Projete uma boa navegação por teclado, com uma ordem de tabulação adequada e grupos de controle apropriados, foco de entrada inicial e botões padrão.
-2.  Atribua chaves de acesso a todos os menus e à maioria dos controles.
-3.  Atribua as chaves de acesso a um caractere que aparece no início do rótulo para torná-las fáceis de encontrar.
-4.  Atribua teclas de atalho aos comandos mais usados.
-5.  Tente atribuir as teclas de atalho aos primeiros ou mais importantes caracteres dentro de palavras-chave.
-6.  Dê às teclas de atalho conhecidas um significado consistente.
+1.  Projete uma boa navegação de teclado, com uma ordem de tabulação sensata e grupos de controle apropriados, foco de entrada inicial e botões padrão.
+2.  Atribua chaves de acesso a todos os menus e a maioria dos controles.
+3.  Atribua as chaves de acesso a um caractere que aparece no início do rótulo, para facilitar a localização.
+4.  Atribua teclas de atalho para os comandos usados com mais frequência.
+5.  Tente atribuir as teclas de atalho para a primeira ou mais memorização de caracteres em palavras-chave.
+6.  Dê um significado consistente às teclas de atalho bem conhecidas.
 
 ## <a name="guidelines"></a>Diretrizes
 
 ### <a name="interaction"></a>Interação
 
--   **Não use a tecla Shift para modificar comandos em menus ou caixas de diálogo.** Fazer isso é indiscoverable e inesperado.
+-   **Não use a tecla Shift para modificar comandos em menus ou caixas de diálogo.** Fazer isso é não descoberto e inesperado.
 
     **Incorreto:**
 
-    ![captura de tela da caixa de diálogo confirmar substituição de pasta ](images/inter-keyboard-image16.png)
+    ![captura de tela da caixa de diálogo Confirmar substituição de pasta ](images/inter-keyboard-image16.png)
 
-    Neste exemplo do Windows XP, manter a tecla Shift substitui Sim para Todos por Não para Todos.
+    neste exemplo do Windows XP, manter a tecla Shift substitui sim por tudo por não.
 
--   **Não desabilite um controle com foco de entrada. Isso pode impedir que a janela receba a entrada do teclado.** Em vez disso, antes de desabilitar um controle com foco de entrada, mova o foco de entrada para outro controle.
--   **Se uma janela for exibida fora do contexto, potencialmente surpreendente para os usuários, talvez seja necessário evitar consequências não intencionais significativas:**
+-   **Não desabilite um controle com foco de entrada. Isso pode impedir que a janela receba entrada do teclado.** Em vez disso, antes de desabilitar um controle com o foco de entrada, mova o foco de entrada para outro controle.
+-   **Se uma janela for exibida fora do contexto, potencialmente surpreendentes usuários, talvez você precise evitar consequências indesejadas significativas:**
     -   Não atribua um botão padrão.
     -   Não atribua chaves de acesso.
-    -   Dê foco de entrada inicial a um controle diferente de um botão de commit.
+    -   Forneça o foco de entrada inicial a um controle que não seja um botão de confirmação.
 
 ### <a name="keyboard-navigation"></a>Navegação por teclado
 
--   **Sempre mostre o indicador de foco de entrada. Exceção:** você poderá suprimir temporariamente o indicador de foco de entrada se:
-    -   O indicador de foco de entrada é visualmente distração (como com uma exibição de lista grande que não está na exibição Detalhes).
-    -   O uso da tecla Enter provavelmente é precedido por outras entradas de teclado, como Alt ou teclas de seta.
-    -   O indicador de foco de entrada é exibido em qualquer entrada de teclado.
--   **Atribua o foco de entrada inicial ao controle com o** qual os usuários têm maior probabilidade de interagir primeiro, que geralmente é o primeiro controle interativo. Se o primeiro controle interativo não for uma boa opção, considere alterar o layout da janela.
--   **Atribua paradas de guias a todos os controles interativos, incluindo caixas de edição somente leitura. Exceções:**
-    -   Agrupa conjuntos de controles relacionados que se comportam como um único controle, como botões de rádio. Esses grupos têm uma única parada de tabulação.
-    -   Contêm grupos corretamente para que as teclas de direção andem para frente e para trás dentro do grupo e permaneçam dentro do grupo.
--   **A ordem de tabulação deve seguir a ordem de leitura, que geralmente flui da esquerda para a direita, de cima para baixo.** Considere fazer exceções para controles comumente usados colocando-os anteriormente na ordem de tabulação. A guia deve passar por todas as paradas da guia em ambas as direções sem parar.
--   **Em uma parada de tabulação, a ordem** de tecla de direção deve fluir da esquerda para a direita, de cima para baixo, sem exceções. As teclas de direção devem passar por todos os itens em ambas as direções sem parar.
+-   **Sempre mostrar o indicador de foco de entrada. Exceção:** você pode suprimir temporariamente o indicador de foco de entrada se:
+    -   O indicador de foco de entrada é visualmente confuso (como com uma exibição de lista grande que não está na exibição de detalhes).
+    -   O uso da tecla Enter é provavelmente precedido por outras entradas de teclado, como Alt ou teclas de direção.
+    -   O indicador de foco de entrada é exibido após qualquer entrada de teclado.
+-   **Atribua o foco de entrada inicial ao controle que os usuários têm mais probabilidade de interagir com o primeiro,** que é geralmente o primeiro controle interativo. Se o primeiro controle interativo não for uma boa opção, considere alterar o layout da janela.
+-   **Atribuir tabulações para todos os controles interativos, incluindo caixas de edição somente leitura. Exceção**
+    -   Agrupar conjuntos de controles relacionados que se comportam como um único controle, como botões de opção. Esses grupos têm uma única parada de tabulação.
+    -   Contém adequadamente os grupos para que as teclas de direção passem para frente e para trás dentro do grupo e permaneçam dentro do grupo.
+-   **A ordem de tabulação deve seguir a ordem de leitura, que geralmente flui da esquerda para a direita, de cima para baixo.** Considere fazer exceções para controles comumente usados colocando-os anteriormente na ordem de tabulação. Tab deve percorrer todas as paradas de tabulação em ambas as direções sem parar.
+-   **Dentro de uma parada de tabulação, a ordem da tecla de direção deve fluir da esquerda para a direita, de cima para baixo,** sem exceções. As teclas de direção devem percorrer todos os itens em ambas as direções sem parar.
 -   **Apresente os botões de confirmação na seguinte ordem:**
-    -   OK/ \[ Faça isso \] /Sim
-    -   \[Não faça isso \] /Não
+    -   OK/ \[ fazer o \] /Yes
+    -   \[Não faça isso \] /não
     -   Cancelar
-    -   Aplicar (se presente)
+    -   Aplicar (se houver)
 
-em \[ que Fazer isso e Não fazer isso são respostas \] \[ \] específicas para a instrução principal.
+onde \[ fazer isso \] e \[ não fazer isso \] são respostas específicas para a instrução principal.
 
--   **Selecione o mais seguro (para evitar a perda de dados ou acesso ao sistema) e o botão de comando ou o link de comando mais seguro para ser o padrão.** Se segurança e segurança não são fatores, selecione a resposta mais provável ou conveniente.
--   **A navegação por teclado não deve alterar os valores de controle nem resultar em uma mensagem de erro.** Nunca exigir que os usuários alterem o valor inicial de um controle durante a navegação. Em vez disso, inicialize os controles que validam na saída com valores válidos e validem o valor de um controle somente quando ele for alterado.
+-   **Selecione o mais seguro (para evitar perda de dados ou acesso ao sistema) e o botão de comando mais seguro ou o link de comando para ser o padrão.** Se não houver fatores de segurança e segurança, selecione a resposta mais provável ou conveniente.
+-   **A navegação por teclado não deve alterar valores de controle ou resultar em uma mensagem de erro.** Nunca exija que os usuários alterem o valor inicial de um controle durante a navegação. Em vez disso, inicialize os controles que são validados na saída com valores válidos e valide o valor de um controle somente quando ele foi alterado.
 
 ### <a name="access-keys"></a>Chaves de acesso
 
--   **Sempre que possível, atribua chaves de acesso para comandos comumente usados de acordo com a tabela a seguir.** Embora as atribuições de chave de acesso consistentes nem sempre sejam possíveis, elas certamente são preferenciais especialmente para comandos usados com frequência.
+-   **Sempre que possível, atribua chaves de acesso para comandos comumente usados de acordo com a tabela a seguir.** Embora as atribuições de chave de acesso consistente nem sempre sejam possíveis, elas são certamente preferenciais especialmente para comandos usados com frequência.
 
     |  Chave de acesso         | Comando                             |
     |---------------------------|-------------------------------------------|
     | Um<br/>              | Sobre<br/>                          |
-    | Um<br/>              | Sempre na parte superior<br/>                  |
+    | Um<br/>              | Sempre no início<br/>                  |
     | Um<br/>              | Aplicar<br/>                          |
     | B<br/>              | Voltar<br/>                           |
-    | B<br/>              | Bold<br/>                           |
+    | B<br/>              | Negrito<br/>                           |
     | B ou r<br/>         | Procurar<br/>                         |
-    | C<br/>              | Feche<br/>                          |
+    | C<br/>              | Fechar<br/>                          |
     | C<br/>              | Copiar<br/>                           |
-    | C<br/>              | Copie aqui<br/>                      |
+    | C<br/>              | Copiar aqui<br/>                      |
     | s<br/>              | Criar atalho<br/>                |
     | s<br/>              | Criar atalho aqui<br/>           |
     | t<br/>              | Recortar<br/>                            |
@@ -284,7 +284,7 @@ em \[ que Fazer isso e Não fazer isso são respostas \] \[ \] específicas para
     | E<br/>              | Editar<br/>                           |
     | x<br/>              | Fechar<br/>                           |
     | E<br/>              | Explorar<br/>                        |
-    | F<br/>              | Menos<br/>                          |
+    | F<br/>              | Menores<br/>                          |
     | F<br/>              | Arquivo<br/>                           |
     | F<br/>              | Localizar<br/>                           |
     | n<br/>              | Localizar próximo<br/>                      |
@@ -315,7 +315,7 @@ em \[ que Fazer isso e Não fazer isso são respostas \] \[ \] específicas para
     | s<br/>              | Colar especial<br/>                  |
     | P<br/>              | Pausar<br/>                          |
     | P<br/>              | Reproduzir<br/>                           |
-    | P<br/>              | Impressão<br/>                          |
+    | P<br/>              | Imprimir<br/>                          |
     | P<br/>              | Imprimir aqui<br/>                     |
     | r<br/>              | Propriedades<br/>                     |
     | R<br/>              | Refazer<br/>                           |
@@ -359,7 +359,7 @@ em \[ que Fazer isso e Não fazer isso são respostas \] \[ \] específicas para
 
     ![captura de tela de itens de menu com chaves de acesso numéricos ](images/inter-keyboard-image17.png)
 
-    Neste exemplo, o programa de pintura no Windows atribui chaves de acesso numérico a arquivos usados recentemente.
+    neste exemplo, o programa Paint no Windows atribui chaves de acesso numérico a arquivos usados recentemente.
 
 -   **Atribua chaves de acesso exclusivas dentro de um nível de menu.** Você pode reutilizar as chaves de acesso em diferentes níveis de menu.
 -   **Torne as chaves de acesso fáceis de localizar:**
@@ -430,31 +430,31 @@ em \[ que Fazer isso e Não fazer isso são respostas \] \[ \] específicas para
 
 ### <a name="choosing-shortcut-keys-what-not-to-do"></a>Escolhendo teclas de atalho (o que não fazer)
 
--   **Não faça distinção entre locais de chave.** Por exemplo, o Windows pode distinguir entre SHIFT esquerda e direita, ALT, CTRL, [logotipo do Windows](glossary.md)e chaves de [aplicativo](glossary.md), bem como chaves no teclado numérico. A atribuição de comportamento a apenas um local de chave é confusa e inesperada.
--   **Não use a tecla modificador do logotipo do Windows para as teclas de atalho do programa.** A chave do logotipo do Windows é reservada para uso do Windows. Mesmo que uma combinação de teclas de logotipo do Windows não esteja sendo usada pelo Windows agora, ela pode estar no futuro.
+-   **Não faça distinção entre locais de chave.** por exemplo, Windows pode distinguir entre Shift esquerda e direita, Alt, Ctrl, [Windows logotipo](glossary.md)e [chaves de aplicativo](glossary.md), bem como chaves no teclado numérico. A atribuição de comportamento a apenas um local de chave é confusa e inesperada.
+-   **não use a tecla modificador de logotipo Windows para as teclas de atalho do programa.** Windows chave de logotipo está reservada para uso Windows. mesmo que uma combinação de tecla de logotipo Windows não esteja sendo usada por Windows agora, ela pode estar no futuro.
 -   **Não use a chave do aplicativo como um modificador de tecla de atalho.** Em vez disso, use Ctrl, ALT e Shift.
--   **Não use as teclas de atalho usadas pelo Windows para as teclas de atalho do programa.** Isso entrará em conflito com as teclas de atalho do sistema Windows quando o seu programa tiver o foco de entrada.
+-   **não use as teclas de atalho usadas pelo Windows para as teclas de atalho do programa.** isso entrará em conflito com as teclas de atalho do sistema Windows quando o seu programa tiver o foco de entrada.
 -   **Não use combinações de teclas Alt + alfanuméricas para teclas de atalho.** Essas teclas de atalho podem entrar em conflito com as chaves de acesso.
 -   **Não use os seguintes caracteres para as teclas de atalho:** @ $ {} \[ \] \\  ~  \| ^ '  < >. Esses caracteres exigem diferentes combinações de teclas em idiomas ou são específicos da localidade.
 -   **Evite combinações de chaves complexas,** como três ou mais chaves juntas (exemplo: CTRL + ALT + barra de espaços) ou chaves que estão muito separadas no teclado (exemplo: CTRL + F5). Use teclas de atalho simples para comandos usados com frequência.
--   **Não use combinações CTRL + ALT,** porque o Windows interpreta essa combinação em algumas versões de idioma como uma chave AltGr, que gera caracteres alfanuméricos.
+-   **não use combinações Ctrl + Alt,** porque Windows interpreta essa combinação em algumas versões de idioma como uma chave AltGR, que gera caracteres alfanuméricos.
 
 ### <a name="keyboard-and-mouse-combinations"></a>Combinações de teclado e mouse
 
--   Para links, use Shift + clique para navegar usando uma nova janela e Ctrl + clique para navegar usando uma nova guia. Essa abordagem é consistente com o Windows Internet Explorer.
+-   Para links, use Shift + clique para navegar usando uma nova janela e Ctrl + clique para navegar usando uma nova guia. essa abordagem é consistente com Windows Internet Explorer.
 
 ## <a name="documentation"></a>Documentação
 
 Ao fazer referência ao teclado:
 
 -   Use o teclado na tela para se referir a uma representação de teclado na tela que o usuário toca em caracteres de entrada.
--   Forneça combinações de teclado começando com a tecla modificadora. Apresente as chaves modificadoras na seguinte ordem: logotipo do Windows, aplicativo, CTRL, ALT, Shift. Se o modificador do teclado numérico for usado, coloque-o pouco antes da chave que ele modifica.
+-   Forneça combinações de teclado começando com a tecla modificadora. apresente as chaves modificadoras na seguinte ordem: Windows logotipo, aplicativo, Ctrl, Alt, Shift. Se o modificador do teclado numérico for usado, coloque-o pouco antes da chave que ele modifica.
 -   Não use todas as letras maiúsculas para as teclas do teclado. Em vez disso, siga as letras maiúsculas usadas por teclados padrão ou em minúsculas se a chave não estiver rotulada como um painel.
     -   Para combinações de chave alfabética, use uma letra maiúscula.
     -   Soletrar página para cima, página abaixo, tela de impressão e bloqueio de rolagem.
     -   Soletrar sinal de adição, sinal de subtração, hífen, ponto e vírgula.
     -   Para teclas de direção, use seta para a esquerda, seta para a direita, seta para cima e seta para baixo. Não use rótulos gráficos para as teclas de direção.
-    -   Use a chave de logotipo do Windows e a Chave do aplicativo para se referir às chaves rotuladas com ícones. Não use rótulos gráficos para essas chaves.
+    -   Use Windows de logotipo e chave do aplicativo para se referir às chaves rotuladas com ícones. Não use rótulos gráficos para essas chaves.
 
 **Correto:**
 
@@ -474,11 +474,11 @@ Ctrl+A, Shift+F5
 
 Ctrl-A, Shift + F5
 
--   Para mostrar uma combinação de chaves que inclui pontuação que requer o uso da tecla Shift, como o ponto de interrogação, adicione Shift à combinação e dê o nome ou símbolo da chave deslocada. O uso do nome da chave não trocada, como 4 em vez de $, pode ser confuso para os usuários ou até mesmo errado; por exemplo, o ? e/caracteres nem sempre são teclas deslocadas em cada teclado.
+-   Para mostrar uma combinação de chaves que inclui pontuação que requer o uso da tecla Shift, como o ponto de interrogação, adicione Shift à combinação e dê o nome ou o símbolo da chave deslocada. O uso do nome da chave não trocada, como 4 em vez de $, pode ser confuso para os usuários ou até mesmo errado; por exemplo, o ? e/caracteres nem sempre são teclas deslocadas em cada teclado.
 
 **Correto:**
 
-Ctrl+Shift+?, Ctrl+Shift+, \* Ctrl+Shift+vírgula
+Ctrl+Shift+?, Ctrl+Shift+ \* , Ctrl+Shift+vírgula
 
 **Incorreto:**
 
@@ -489,9 +489,9 @@ Ctrl+Shift+/, Ctrl+?, Ctrl+Shift+8, Ctrl+\*
 
 Ao se referir à interação:
 
--   Use pressione, não pressione, pressione, pressione ou digite ao pressionar e liberar imediatamente uma chave inicia uma ação dentro do programa ou navega dentro de um documento ou interface do usuário.
--   Use o tipo, não enter, para direcionar os usuários para o tipo de texto.
--   Use o uso em situações em que pressionar pode ser confuso, como ao fazer referência a um tipo de chave, como teclas de direção ou teclas de função. Nesses casos, pressionar pode fazer os usuários pensarem que precisam pressionar todas as chaves simultaneamente.
+-   Use pressione, não pressione, pressione, pressione ou digite ao pressionar e liberar imediatamente uma chave iniciará uma ação dentro do programa ou navegará dentro de um documento ou interface do usuário.
+-   Use o tipo , não enter, para direcionar os usuários ao tipo de texto.
+-   Use o uso em situações em que pressionar pode ser confuso, como ao fazer referência a um tipo de chave, como teclas de seta ou teclas de função. Nesses casos, pressionar pode fazer os usuários pensarem que precisam pressionar todas as chaves simultaneamente.
 -   Use hold ao pressionar e manter uma tecla pressionada, como uma tecla modificadora.
 -   Não use pressionar como sinônimo para clicar.
 

@@ -1,21 +1,21 @@
 ---
 description: Este documento contém um exemplo que demonstra como usar as funções de contexto XState para recuperar e definir recursos estendidos em um thread.
 ms.assetid: F7937402-1173-4647-B9FF-856C0925C1C3
-title: Trabalhando com o contexto XState
+title: Trabalhando com contexto XState
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ca58a8fadb4404e2f6fc431b7b7d2a9d7f583f4
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 6300049f96ff6e7c1fb51759978f84e6c93c305de559a527c9791f2d33f87150
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826392"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119912216"
 ---
-# <a name="working-with-xstate-context"></a>Trabalhando com o contexto XState
+# <a name="working-with-xstate-context"></a>Trabalhando com contexto XState
 
-Este documento contém um exemplo que demonstra como usar as funções de contexto XState para recuperar e definir recursos estendidos em um thread. Os exemplos a seguir manipulam o estado AVX (extensões de vetor avançado) da Intel, que é definido pelo FeatureId 2 (máscara de recurso 4). O Intel AVX é definido na "referência de programação de extensões de vetor avançadas da Intel", disponível em <https://go.microsoft.com/fwlink/p/?linkid=212716> .
+Este documento contém um exemplo que demonstra como usar as funções de contexto XState para recuperar e definir recursos estendidos em um thread. Os exemplos a seguir manipulam o estado AVX (Extensões Avançadas de Vetor) da Intel, que é definido pelo FeatureId 2 (Máscara de Recurso 4). O Intel AVX é definido na "Referência de Programação de Extensões de Vetor Avançadas da Intel" disponível em <https://go.microsoft.com/fwlink/p/?linkid=212716> .
 
-**Windows 7 com SP1:** A [API AVX](avx-support-portal.md) é implementada pela primeira vez no Windows 7 com SP1. Como não há nenhum SDK para o Windows 7 com SP1, isso significa que não há cabeçalhos disponíveis e arquivos de biblioteca com os quais trabalhar. Nessa situação, um chamador deve declarar as funções necessárias desta documentação e obter ponteiros para elas usando [**GetModuleHandle**](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulehandlea) em "Kernel32.dll", seguido por chamadas para [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress).
+**Windows 7 com SP1:** A [API AVX](avx-support-portal.md) é implementada pela primeira vez no Windows 7 com SP1. Como não há nenhum SDK para Windows 7 com SP1, isso significa que não há nenhum arquivo de biblioteca e de headers disponíveis para trabalhar. Nessa situação, um chamador deve declarar as funções necessárias desta documentação e obter ponteiros para eles usando [**GetModuleHandle**](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulehandlea) em "Kernel32.dll", seguido por chamadas para [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress).
 
 
 ```C++

@@ -3,7 +3,7 @@ title: Sobre áudio de formato de onda
 description: Sobre áudio de formato de onda
 ms.assetid: 2d886488-bdab-4422-b89e-15140d86fe48
 keywords:
-- Multimídia do Windows, áudio de onda
+- Windows multimídia, áudio de onda
 - multimídia, áudio de onda
 - áudio de multimídia, onda
 - áudio, onda
@@ -14,18 +14,18 @@ keywords:
 - Função PlaySound, sobre
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6793e7f15756038083b2e399f143f80bdda12c02
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 4d7d9805e4be4e754efbb73d7745c834c9dc3d1f48a1f02a9a99b7877bc24306
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103917252"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119808696"
 ---
 # <a name="about-waveform-audio"></a>Sobre áudio de formato de onda
 
 Há vários métodos para adicionar som ao seu aplicativo usando áudio de onda. O método mais simples documentado aqui é o de usar a função [**PlaySound**](/previous-versions//dd743680(v=vs.85)) . A maioria dos outros elementos de API de wave-áudio é relativamente de baixo nível.
 
-Para mais informações, consulte os seguintes tópicos:
+Para obter mais informações, consulte estes tópicos:
 
 -   [Reprodução de áudio simples](simple-audio-playback.md)
 -   [Wave-interface de áudio](waveform-audio-interface.md)
@@ -35,6 +35,6 @@ Para mais informações, consulte os seguintes tópicos:
 
 Além das APIs discutidas aqui, a interface de controle de mídia pode ser usada para reproduzir áudio de forma de onda, bem como outras mídias, como sons e vídeo de MIDI. Para obter mais informações, consulte [MCI](mci.md).
 
- 
+ 
 
- 
+ 

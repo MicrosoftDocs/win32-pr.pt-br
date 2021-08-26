@@ -1,22 +1,22 @@
 ---
-description: O exemplo a seguir usa a função CreateFileMapping com o \_ sinalizador de páginas grandes s \_ para usar páginas grandes. Ele requer o Windows Server 2003 com Service Pack 1 (SP1) ou posterior.
+description: O exemplo a seguir usa a função CreateFileMapping com o sinalizador SEC \_ LARGE PAGES para usar páginas \_ grandes. Ele requer Windows Server 2003 com Service Pack 1 (SP1) ou posterior.
 ms.assetid: be2cdcbc-03e8-407d-8ae2-569f8fd8cba8
 title: Criando um mapeamento de arquivo usando páginas grandes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 49a852de187f6798904ef1795dca5955663283f5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8df68cc483856d0fe7f329b4f5e6e5c8a424a8c0e55958ca1da8de1ce51cbf71
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105757395"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119869936"
 ---
 # <a name="creating-a-file-mapping-using-large-pages"></a>Criando um mapeamento de arquivo usando páginas grandes
 
-O exemplo a seguir usa a função [**CreateFileMapping**](/windows/desktop/api/WinBase/nf-winbase-createfilemappinga) com o sinalizador de **\_ \_ páginas grandes s** para usar páginas grandes. O buffer deve ser grande o suficiente para conter o tamanho mínimo de uma página grande. Esse valor é obtido usando a função [**GetLargePageMinimum**](/windows/win32/api/memoryapi/nf-memoryapi-getlargepageminimum) . Esse recurso também requer o privilégio "SeLockMemoryPrivilege".
+O exemplo a seguir usa a [**função CreateFileMapping**](/windows/desktop/api/WinBase/nf-winbase-createfilemappinga) com o sinalizador **SEC LARGE \_ \_ PAGES** para usar páginas grandes. O buffer deve ser grande o suficiente para conter o tamanho mínimo de uma página grande. Esse valor é obtido usando a [**função GetLargePageMinimum.**](/windows/win32/api/memoryapi/nf-memoryapi-getlargepageminimum) Esse recurso também requer o privilégio "SeLockMemoryPrivilege".
 
 > [!NOTE]
-> A partir do Windows 10, versão 1703, a função [**MapViewOfFile**](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffile) mapeia uma exibição usando páginas pequenas por padrão, mesmo para objetos de mapeamento de arquivo criados com o sinalizador **s \_ grandes \_ páginas** . Neste e versões posteriores do sistema operacional, você deve especificar o sinalizador **arquivo de \_ \_ \_ páginas grandes de mapa** com a função [**MapViewOfFile**](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffile) para mapear páginas grandes. Esse sinalizador é ignorado nas versões do sistema operacional anteriores ao Windows 10, versão 1703.
+> Começando no Windows 10, versão 1703, a função [**MapViewOfFile**](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffile) mapeia uma exibição usando páginas pequenas por padrão, mesmo para objetos de mapeamento de arquivo criados com o sinalizador **SEC LARGE \_ \_ PAGES.** Neste e em versões posteriores do sistema operacional, você deve especificar o sinalizador **FILE \_ MAP LARGE \_ \_ PAGES** com a [**função MapViewOfFile**](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffile) para mapear páginas grandes. Esse sinalizador é ignorado nas versões do sistema operacional antes Windows 10, versão 1703.
 
 
 ```C++
@@ -155,7 +155,7 @@ int _tmain(void)
 [Criando um objeto de mapeamento de arquivo](creating-a-file-mapping-object.md)
 </dt> <dt>
 
-[Suporte a páginas grandes](large-page-support.md)
+[Suporte a página grande](large-page-support.md)
 </dt> </dl>
 
  

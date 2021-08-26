@@ -3,7 +3,7 @@ title: Mensagem de TVM_SORTCHILDREN (commctrl. h)
 description: Classifica os itens filho do item pai especificado em um controle de exibição de árvore. Você pode enviar essa mensagem explicitamente ou usando a macro TreeView \_ SortChildren.
 ms.assetid: c18bcd5f-c083-46ee-873b-d3100b0d7b04
 keywords:
-- Controles de TVM_SORTCHILDREN de mensagens do Windows
+- controles de Windows de mensagem de TVM_SORTCHILDREN
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 341591c31accb4aab0b49f611359a93ec99c0cab
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f975814fadc5271c562e4e8e420c35dbb3450142bed797af83af73fdf81a55d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009701"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119913796"
 ---
 # <a name="tvm_sortchildren-message"></a>\_Mensagem TVM SORTCHILDREN
 
@@ -43,7 +43,7 @@ Identificador para o item pai cujos itens filho devem ser classificados.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna **verdadeiro** se for bem-sucedido ou **false** caso contrário.
 
@@ -57,9 +57,9 @@ Esta mensagem alphabetizes os itens de árvore usando [**lstrcmpi**](/windows/de
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

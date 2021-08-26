@@ -1,15 +1,15 @@
 ---
-description: O pacote de atualização de Windows Installer de exemplo adiciona novos recursos ao produto original.
+description: o pacote de atualização de Windows Installer de exemplo adiciona novos recursos ao produto original.
 ms.assetid: cbc4c2ff-e08b-4ebb-a306-a80f9a6e4360
 title: Atualizando recursos para uma atualização
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8af072618bd0a2ba16a7f098d6b1129ba17c27af
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 107a6febda0c13101cc7c0615526514ebe3fee24e2aa14bac1d07794206f2de8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105766381"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119809902"
 ---
 # <a name="updating-features-for-an-upgrade"></a>Atualizando recursos para uma atualização
 
@@ -25,23 +25,23 @@ Use o editor de banco de dados para abrir MNP2001.msi e insira os dados a seguir
 
 
 
-| Recurso    | Pai do recurso \_ | Título         | Descrição                | Monitor | Nível | Diretório\_ | Atributos |
+| Recurso    | Pai do recurso \_ | Título         | Descrição                | Exibir | Nível | Diretório\_ | Atributos |
 |------------|-----------------|---------------|----------------------------|---------|-------|-------------|------------|
 | Artes       |                 | Artes          | Eventos de artes no parque vermelho.   | 18      | 3     | NOTEPADDIR  | 0          |
 | Beisebol   | Esporte           | Beisebol      | Jogos de beisebol             | 17      | 3     | SPORTDIR    | 32         |
 | Concerto    | Artes            | Concerto       | Eventos de concerto em Parque vermelho | 19      | 3     | ARTSDIR     | 2          |
 | Dance      | Artes            | Dance         | Eventos da dança no parque vermelho   | 21      | 3     | ARTSDIR     | 2          |
 | Comemorar   | Esporte           | Comemorar      | Jogos de futebol             | 13      | 3     | SPORTDIR    | 2          |
-| Check       |                 | Check          | Admissões do Parque vermelho      | 6       | 3     | NOTEPADDIR  | 0          |
+| Porta       |                 | Porta          | Admissões do Parque vermelho      | 6       | 3     | NOTEPADDIR  | 0          |
 | Ajuda       | Bloco de notas         | Ajuda          | Arquivo de ajuda.                 | 5       | 3     | NOTEPADDIR  | 1          |
-| Janeiro    | Check            | Janeiro       | Inmissões de janeiro         | 7       | 3     | MONDIR      | 2          |
+| Janeiro    | Porta            | Janeiro       | Inmissões de janeiro         | 7       | 3     | MONDIR      | 2          |
 | NewYears   | Janeiro         | Ano novo | Novos dias de admissão no ano   | 9       | 3     | HOLDIR      | 2          |
-| Bloco de notas    |                 | Bloco de notas       | Editor do bloco de notas             | 1       | 3     | NOTEPADDIR  | 0          |
+| Bloco de notas    |                 | Bloco de notas       | Bloco de notas Editor             | 1       | 3     | NOTEPADDIR  | 0          |
 | Leiame     | Bloco de notas         | Leiame        | Arquivo Leiame                | 3       | 3     | NOTEPADDIR  | 0          |
 | Esporte      |                 | Eventos de esporte  | Eventos de esporte no parque vermelho   | 12      | 3     | NOTEPADDIR  | 0          |
 | Quadra | Esporte           | Quadra    | Jogos de basquete           | 15      | 3     | SPORTDIR    | 2          |
 | Opera      | Artes            | Opera         | Desempenho do Opera         | 23      | 3     | ARTSDIR     | 2          |
-| Memorial   | Check            | Dia de Memorial  | Inmissões de dia de Memorial    | 11      | 3     | HOLDIR      | 2          |
+| Memorial   | Porta            | Dia de Memorial  | Inmissões de dia de Memorial    | 11      | 3     | HOLDIR      | 2          |
 
 
 

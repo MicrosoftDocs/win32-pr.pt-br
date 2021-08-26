@@ -1,12 +1,12 @@
 ---
-title: Método Session. put (WSManDisp. h)
+title: Método Session.Put (WSManDisp.h)
 description: Atualiza um recurso.
 ms.assetid: f121d9ce-6aa3-45e3-b0ba-67b19c2f5665
 ms.tgt_platform: multiple
 keywords:
-- Gerenciamento Remoto do Windows do método Put
-- Método Put Gerenciamento Remoto do Windows, objeto Session
-- Objeto de sessão Gerenciamento Remoto do Windows, método Put
+- Colocar o método Windows Gerenciamento Remoto
+- Put method Windows Remote Management , Session object
+- Objeto de sessão Windows gerenciamento remoto, método Put
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: de0f09b0a0f8de4e7f7d06cb84753e6b708841f9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d4c6fc6123470f6633b77a1c51234e751f3be04044c0ad100f0017849cb1ac42
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369761"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119898686"
 ---
-# <a name="sessionput-method"></a>Método Session. put
+# <a name="sessionput-method"></a>Método Session.Put
 
 Atualiza um recurso.
 
@@ -45,14 +45,14 @@ Session.Put( _
 
 <dl> <dt>
 
-*ResourceURI* \[ no\]
+*resourceUri* \[ Em\]
 </dt> <dd>
 
 O identificador do recurso a ser atualizado.
 
 Esse parâmetro pode conter um dos elementos contidos na lista a seguir:
 
--   URI com ou sem [*seletores*](windows-remote-management-glossary.md). Ao chamar o método **Put** para obter um recurso WMI, use a propriedade de chave ou as propriedades do objeto. Por exemplo, no exemplo de código a seguir Visual Basic Scripting Edition (VBScript), a chave é especificada por `Win32_Service?Name=winmgmt` .
+-   URI com ou sem [*seletores*](windows-remote-management-glossary.md). Ao chamar o **método Put** para obter um recurso WMI, use a propriedade de chave ou as propriedades do objeto . Por exemplo, no exemplo de código Visual Basic Scripting Edition (VBScript) a chave é especificada por `Win32_Service?Name=winmgmt` .
 
     ```VB
     strResourceUri = "http://schemas.microsoft.com/" & _ 
@@ -61,32 +61,32 @@ Esse parâmetro pode conter um dos elementos contidos na lista a seguir:
 
     
 
--   Objeto [**ResourceLocator**](resourcelocator.md) que pode conter seletores, [*fragmentos*](windows-remote-management-glossary.md)ou [*Opções*](windows-remote-management-glossary.md).
--   Referência de ponto de extremidade [*WS-Addressing*](windows-remote-management-glossary.md) , conforme descrito no padrão [protocolo WS-Management](ws-management-protocol.md) . Para obter mais informações sobre a especificação pública para WS-Management protocolo, consulte [página de índice de especificações de gerenciamento](/previous-versions/dotnet/articles/ms951267(v=msdn.10)).
+-   [**Objeto ResourceLocator**](resourcelocator.md) que pode conter seletores, [*fragmentos*](windows-remote-management-glossary.md)ou [*opções*](windows-remote-management-glossary.md).
+-   Referência de ponto de extremidade de endereçamento [*WS,*](windows-remote-management-glossary.md) conforme descrito [no protocolo WS-Management](ws-management-protocol.md) padrão. Para obter mais informações sobre a especificação pública do protocolo WS-Management, consulte [Página índice de especificações de gerenciamento](/previous-versions/dotnet/articles/ms951267(v=msdn.10)).
 
 </dd> <dt>
 
-*recurso* \[ do no\]
+*recurso* \[ Em\]
 </dt> <dd>
 
 O conteúdo do recurso atualizado.
 
 </dd> <dt>
 
-*sinalizadores* \[ de em, opcional\]
+*sinalizadores* \[ in, opcional\]
 </dt> <dd>
 
 Reservado. Deve ser definido como 0.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O XML que contém o conteúdo do recurso atualizado.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de código VBScript a seguir grava dados no objeto [**\_ WMISetting do Win32**](/windows/desktop/CIMWin32Prov/win32-wmisetting) . Você deve incluir todas as propriedades que não sejam da matriz do objeto no XML do parâmetro de *recurso* . A ordem das propriedades não é significativa.
+O exemplo de código VBScript a seguir grava dados no [**objeto \_ Win32 WMISetting.**](/windows/desktop/CIMWin32Prov/win32-wmisetting) Você deve incluir todas as propriedades não matrizes do objeto no XML do *parâmetro* Resource. A ordem das propriedades não é significativa.
 
 
 ```VB
@@ -148,9 +148,9 @@ End Sub
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                 |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                           |
-| parâmetro<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>WSManDisp. idl</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>WSManDisp. tlb</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>WSManDisp.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>WSManDisp.idl</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>WSManDisp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>WSMAuto.dll</dt> </dl>   |
 
 
@@ -159,7 +159,7 @@ End Sub
 
 <dl> <dt>
 
-[**Session**](session.md)
+[**Sessão**](session.md)
 </dt> </dl>
 
  

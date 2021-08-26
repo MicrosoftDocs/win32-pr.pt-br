@@ -1,9 +1,9 @@
 ---
-title: TCN_SELCHANGE código de notificação (commctrl. h)
-description: Notifica uma janela pai do controle de guia que a guia selecionada atualmente foi alterada. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
+title: TCN_SELCHANGE de notificação (Commctrl.h)
+description: Notifica a janela pai de um controle de tabulação de que a guia selecionada no momento foi alterada. Esse código de notificação é enviado na forma de uma mensagem WM \_ NOTIFY.
 ms.assetid: f40e30f6-169b-4381-a300-12c3befb5fc5
 keywords:
-- TCN_SELCHANGE de código de notificação controles do Windows
+- TCN_SELCHANGE código de notificação Windows Controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8578ac9fee7754b1ae27c05c6ec1b15636090040
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e54ad012e98005e8fbf5148af58aab10d90e3127afeab6311cc8b8f3f84e2988
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644240"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119876176"
 ---
-# <a name="tcn_selchange-notification-code"></a>Código de notificação de SELCHANGE de TCN \_
+# <a name="tcn_selchange-notification-code"></a>Código de \_ notificação TCN SELCHANGE
 
-Notifica uma janela pai do controle de guia que a guia selecionada atualmente foi alterada. Esse código de notificação é enviado na forma de uma mensagem de [**\_ notificação do WM**](wm-notify.md) .
+Notifica a janela pai de um controle de tabulação de que a guia selecionada no momento foi alterada. Esse código de notificação é enviado na forma de uma mensagem [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,17 +41,17 @@ TCN_SELCHANGE
 *lParam* 
 </dt> <dd>
 
-Ponteiro para uma estrutura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contém informações adicionais sobre esta notificação.
+Ponteiro para uma [**estrutura NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contém informações adicionais sobre essa notificação.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sem valor de retorno.
 
 ## <a name="remarks"></a>Comentários
 
-Para determinar a guia selecionada no momento, use a macro [**\_ getcurseal TabCtrl**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_getcursel) .
+Para determinar a guia selecionada no momento, use a [**macro \_ TabCtrl GetCurSel.**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_getcursel)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,9 +59,9 @@ Para determinar a guia selecionada no momento, use a macro [**\_ getcurseal TabC
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -69,7 +69,7 @@ Para determinar a guia selecionada no momento, use a macro [**\_ getcurseal TabC
 
 <dl> <dt>
 
-[SELCHANGING de TCN \_](tcn-selchanging.md)
+[TCN \_ SELCHANGING](tcn-selchanging.md)
 </dt> </dl>
 
  

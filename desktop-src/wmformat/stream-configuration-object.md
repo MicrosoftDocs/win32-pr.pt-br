@@ -3,7 +3,7 @@ title: Objeto de configuração de fluxo
 description: Objeto de configuração de fluxo
 ms.assetid: 228e334c-9d9b-4604-a225-73af7af3255f
 keywords:
-- SDK do Windows Media Format, objetos de configuração de fluxo
+- Windows SDK do formato de mídia, objetos de configuração de fluxo
 - ASF (Advanced Systems Format), objetos de configuração de fluxo
 - ASF (formato de sistemas avançados), objetos de configuração de fluxo
 - objetos, objetos de configuração de fluxo
@@ -11,12 +11,12 @@ keywords:
 - fluxos, objetos de configuração de fluxo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e16a6c2221952e6102b76c49fee660888c9dcbc
-ms.sourcegitcommit: ad672d3a10192c5ccac619ad2524407109266e93
+ms.openlocfilehash: 73e71be6149df3f2da0edba31d9c5803d86a6fd89189e1fc339cf99593336415
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2020
-ms.locfileid: "104084397"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119929376"
 ---
 # <a name="stream-configuration-object"></a>Objeto de configuração de fluxo
 
@@ -34,7 +34,7 @@ Para criar um objeto de configuração de fluxo, use um dos métodos a seguir.
 
 
 
- 
+ 
 
 Todos os métodos na tabela anterior definiram um ponteiro para uma interface **IWMStreamConfig** . As outras interfaces do objeto de configuração de fluxo podem ser obtidas chamando o método **QueryInterface** .
 
@@ -53,24 +53,24 @@ As interfaces a seguir têm suporte do objeto de configuração de fluxo.
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[**Configurando fluxos**](configuring-streams.md)
+[**configurando Fluxos**](configuring-streams.md)
 </dt> <dt>
 
-[**Objetos**](objects.md)
+[**Objeto**](objects.md)
 </dt> <dt>
 
 [**Objeto do gerenciador de perfis**](profile-manager-object.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -13,17 +13,17 @@ ms.locfileid: "119990666"
 ---
 # <a name="populating-com-collections"></a>Populando coleções COM+
 
-Depois de recuperar uma coleção e antes de trabalhar diretamente com os itens que ela contém, você deve preencher a coleção usando o método [**populate**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-populate) . Isso busca dados para o conteúdo da coleção do catálogo COM+.
+Depois de recuperar uma coleção e antes de trabalhar diretamente com os itens que ela contém, você deve preencher a coleção usando o [**método Populate.**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-populate) Isso busca dados para o conteúdo da coleção do catálogo COM+.
 
-É importante entender que sempre que você usa os objetos COMAdmin para manipular itens ou dados em coleções, você está realmente trabalhando em dados armazenados em cache transitórios; Você não está trabalhando diretamente com o catálogo persistente. Nada que você faça com uma coleção ou qualquer um de seus itens será refletido no catálogo até que você chame [**SaveChanges**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-savechanges) na coleção. Para obter mais detalhes, consulte [salvando ou descartando alterações](saving-or-discarding-changes.md).
+É importante entender que sempre que você usa os objetos COMAdmin para manipular itens ou dados em coleções, você está realmente trabalhando em dados armazenados em cache transitórios; você não está trabalhando diretamente com o catálogo persistente. Nada que você faça com uma coleção ou qualquer um de seus itens é refletido no catálogo até que você chame [**SaveChanges**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-savechanges) na coleção. Para obter mais detalhes, consulte [Salvando ou descartando alterações](saving-or-discarding-changes.md).
 
-Qualquer chamada subsequente para [**popular**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-populate), antes de chamar [**SaveChanges**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-savechanges), tem o efeito de descartar alterações pendentes para todos os itens na coleção. **Popular** sempre popula o cache no qual você está trabalhando com quaisquer dados que sejam persistidos no armazenamento de dados de catálogo subjacente.
+Todas as chamadas subsequentes [**para Popular ,**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-populate)antes de chamar [**SaveChanges**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-savechanges), têm o efeito de descartar alterações pendentes em todos os itens na coleção. **Popular sempre** popula o cache no qual você está trabalhando com quaisquer dados que sejam persistentes no armazenamento de dados do catálogo subjacente.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Navegando na hierarquia da coleção COM+](navigating-the-com--collection-hierarchy.md)
+[Navegando na hierarquia de coleção COM+](navigating-the-com--collection-hierarchy.md)
 </dt> <dt>
 
 [Consultando coleções relacionadas disponíveis](querying-for-available-related-collections.md)

@@ -1,6 +1,6 @@
 ---
 title: Função TLSLicenseEnumEnd
-description: Continua de uma chamada anterior para a função TLSLicenseEnumBegin e encerra a enumeração.
+description: Continua de uma chamada anterior para a função TLSLicenseEnumBegin e encerra a enumeração .
 ms.assetid: b9cba03c-0f5a-41e8-ae13-bcdd0ac6dd99
 ms.tgt_platform: multiple
 keywords:
@@ -15,19 +15,19 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8bbd494ec539ee78008fa3df274282da1e9db6c3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2c0518b9c27b01484b7fb92dd254ae6f1ccdf01d36ef602541209b9f38abd205
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105787575"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119869206"
 ---
 # <a name="tlslicenseenumend-function"></a>Função TLSLicenseEnumEnd
 
-Continua de uma chamada anterior para a função [**TLSLicenseEnumBegin**](tlslicenseenumbegin.md) e encerra a enumeração.
+Continua de uma chamada anterior para a [**função TLSLicenseEnumBegin**](tlslicenseenumbegin.md) e encerra a enumeração .
 
 > [!Note]  
-> Esta função não tem nenhum arquivo de cabeçalho ou biblioteca de importação associado. Para chamar essa função, você deve criar um arquivo de cabeçalho definido pelo usuário e usar as funções [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinamicamente a Mstlsapi.dll.
+> Essa função não tem nenhum arquivo de header associado ou biblioteca de importação. Para chamar essa função, você deve criar um arquivo de título definido pelo usuário e usar as funções [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinamicamente a Mstlsapi.dll.
 
  
 
@@ -47,23 +47,23 @@ DWORD WINAPI TLSLicenseEnumEnd(
 
 <dl> <dt>
 
-*hHandle* \[ no\]
+*hHandle* \[ Em\]
 </dt> <dd>
 
-Identificador para um servidor de licença Área de Trabalho Remota. Especifique um identificador que é aberto pela função [**TLSConnectToLsServer**](tlsconnecttolsserver.md) .
+Lidar com um servidor Área de Trabalho Remota licença. Especifique um alça que é aberto pela [**função TLSConnectToLsServer.**](tlsconnecttolsserver.md)
 
 </dd> <dt>
 
-*pdwErrCode* \[ fora\]
+*pdwErrCode* \[ out\]
 </dt> <dd>
 
-Ponteiro para uma variável que recebe um dos seguintes códigos de erro no retorno.
+Ponteiro para uma variável que recebe um dos códigos de erro a seguir no retorno.
 
 <dt>
 
 <span id="LSERVER_S_SUCCESS"></span><span id="lserver_s_success"></span>
 
-<span id="LSERVER_S_SUCCESS"></span><span id="lserver_s_success"></span>**LSERVER \_ S com \_ êxito** (0)
+<span id="LSERVER_S_SUCCESS"></span><span id="lserver_s_success"></span>**LSERVER \_ S \_ SUCCESS** (0)
 
 
 </dt> <dd>
@@ -74,16 +74,16 @@ A chamada foi bem-sucedida.
 
 <span id="LSERVER_E_INVALID_HANDLE"></span><span id="lserver_e_invalid_handle"></span>
 
-<span id="LSERVER_E_INVALID_HANDLE"></span><span id="lserver_e_invalid_handle"></span>**LSERVER \_ \_ \_ Identificador inválido E** (5005)
+<span id="LSERVER_E_INVALID_HANDLE"></span><span id="lserver_e_invalid_handle"></span>**LSERVER \_ E \_ HANDLE \_ INVÁLIDO** (5005)
 
 
 </dt> <dd>
 
-O identificador não é válido.
+O handle não é válido.
 
 </dd> </dl> </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa função retorna os seguintes valores de retorno possíveis.
 
@@ -92,11 +92,11 @@ Essa função retorna os seguintes valores de retorno possíveis.
 **RPC \_ S \_ OK**
 </dt> <dd>
 
-A chamada foi bem-sucedida. Verifique o valor do parâmetro *pdwErrCode* para obter o código de retorno para a chamada.
+A chamada foi bem-sucedida. Verifique o valor do parâmetro *pdwErrCode* para obter o código de retorno da chamada.
 
 </dd> <dt>
 
-**ARG. de RPC \_ \_ inválido \_**
+**RPC \_ S \_ \_ ARG INVÁLIDO**
 </dt> <dd>
 
 O argumento não era válido.

@@ -4,12 +4,12 @@ ms.assetid: 4f854c1a-f2e1-48c4-9cc1-8a0fcf1bebed
 title: API de tíquete de impressão
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e19cfd8d624a1390b8afacd625e92fcee2704dd
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: ac91cc976addba630bae3f250d244442ba1dd3b61f741575fe21cb250bab4a2f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104011966"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119947786"
 ---
 # <a name="print-ticket-api"></a>API de tíquete de impressão
 
@@ -26,7 +26,7 @@ Este tópico contém informações sobre os seguintes elementos de API:
 -   [Funções da API de tíquete de impressão](print-ticket-api-functions.md)
 -   [Enumerações de API de tíquete de impressão](print-ticket-api-enumerations.md)
 
-O diagrama a seguir mostra a relação da API de tíquete de impressão com as outras APIs de impressão que um aplicativo nativo do Windows pode usar.
+o diagrama a seguir mostra a relação da API de tíquete de impressão com as outras APIs de impressão que um aplicativo de Windows nativo pode usar.
 
 ![um diagrama que mostra a relação da API de tíquete de impressão com outras APIs de impressão que um aplicativo nativo do Windows pode usar](images/print-apis-pt.png)
 
