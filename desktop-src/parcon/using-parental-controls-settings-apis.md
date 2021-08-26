@@ -1,21 +1,21 @@
 ---
-description: Usando APIs de configurações de controles pais
+description: usando controles dos pais Configurações APIs
 ms.assetid: 77a239e9-1cec-4710-b673-7d0cebd502e9
-title: Usando APIs de configurações de controles pais
+title: usando controles dos pais Configurações APIs
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1dde4827dfe3ed5ee7eec6787744e6ff92f18775
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9c9dd75565559e8fe52413280e35abf076a57ad6
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103662573"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122885818"
 ---
-# <a name="using-parental-controls-settings-apis"></a>Usando APIs de configurações de controles pais
+# <a name="using-parental-controls-settings-apis"></a>usando controles dos pais Configurações APIs
 
-As configurações são discutidas antes do registro em log porque o log é condicional nas configurações do usuário.
+Configurações são discutidos antes do registro em log porque o log é condicional nas configurações do usuário.
 
-## <a name="wmi-api-settings-writeread"></a>Gravação/leitura das configurações da API WMI
+## <a name="wmi-api-settings-writeread"></a>API WMI Configurações gravação/leitura
 
 A API do WMI fornece acesso não abstrato (bruto) a todas as configurações instanciadas pela infraestrutura de controles dos pais, conforme definido no arquivo de esquema Wpcsprov. mof. O repositório de configurações existe no \\ \\ \\ namespace WindowsParentalControls de aplicativos cimv2 raiz \\ , com as seguintes definições de classe que definem um esquema. Elementos de extensibilidade são indicados.
 
@@ -35,7 +35,7 @@ Usuário por controle:
 
 -   WpcUserSettings (uma instância por usuário controlado)
     -   Propriedades para SID de propriedade, sinalizador de ativação/desativação, sinalizador de logon/desligamento, limites de tempo de ativação/desativação de sinalizador, substituições habilitadas, máscara de horário de logon e restrições gerais de aplicativo.
-    -   No Windows 8, a propriedade existente representa a primeira meia hora para cada hora. Uma nova propriedade de meia hora foi adicionada para representar a segunda metade de cada hora. Uma nova propriedade adicional foi introduzida para representar a concessão de tempo diária.
+    -   em Windows 8 a propriedade existente representa a primeira meia hora para cada hora. Uma nova propriedade de meia hora foi adicionada para representar a segunda metade de cada hora. Uma nova propriedade adicional foi introduzida para representar a concessão de tempo diária.
 
         **Windows 7 e Windows Vista:** As restrições de temporizador têm suporte para uma granularidade de 1 hora.
 
@@ -62,7 +62,7 @@ O uso do WMI para registrar um link de extensibilidade da interface do usuário 
 -   Subsistema-destinado a indicar classificações de tipos de link, como pacotes ou aplicativos compatíveis autônomos
 -   Nome caminho de DLL de recurso e ID-especifica o recurso para o nome de exibição a ser exibido para o link.
 -   Caminho de DLL de recurso de subtítulo e ID-especifica o recurso para texto adicional abaixo do nome.
--   Caminho da imagem-caminho completo de um bitmap de 24 × 24 pixels (BMP), com profundidade de cor de 8 bits por pixel e, preferencialmente, um canal alfa. Isso é especificado de maneira consistente com extensões de Shell: <file system path> , <negative resource ID> . Por exemplo: C: \\ Windows \\ System32 \\Wpccpl.dll,-20.
+-   Caminho da imagem-caminho completo de um bitmap de 24 × 24 pixels (BMP), com profundidade de cor de 8 bits por pixel e, preferencialmente, um canal alfa. Isso é especificado de maneira consistente com extensões de Shell: <file system path> , <negative resource ID> . por exemplo: C: \\ Windows \\ System32 \\Wpccpl.dll,-20.
 -   Caminho de imagem desabilitado-o mesmo que o caminho de imagem acima, exceto a variante do bitmap que mostra o estado desabilitado. Essa imagem é mostrada quando os controles dos pais estão desativados.
 -   Caminho exe-caminho completo de um executável a ser invocado usando ShellExecute (). Esse caminho deve ser especificado com barras invertidas ou o link não invocará o executável. A adição de um token% SID% após o caminho exe resultará na execução do link, substituindo a cadeia de caracteres de SID do usuário para o qual a página de Hub está sendo exibida no momento. O executável pode usar a cadeia de caracteres de SID para gerenciar a funcionalidade do usuário especificado.
 
@@ -70,7 +70,7 @@ A desinstalação do aplicativo deve remover um registro de link de extensibilid
 
 ## <a name="web-extensibility-link-and-web-content-filter-override-notes"></a>Notas de substituição de filtro de extensibilidade da Web e de conteúdo da Web
 
-Ao definir a propriedade Filterid como o mesmo GUID de um link de extensibilidade de interface do usuário registrado existente, o link exibido será promovido de um link genérico em outras configurações para o link de restrições da Web exclusivo. Essa é uma configuração em todo o computador e, portanto, fará com que o LSP do filtro de conteúdo da Web na caixa ignore todas as filtragens de todos os usuários controlados. Um nome descritivo também deve ser definido na Propriedade FilterName, que é especificada por um caminho para DLL de recurso e ID.
+ao definir a propriedade filterid como o mesmo GUID de um link de extensibilidade de interface do usuário registrado existente, o link exibido será promovido de um link genérico em outros Configurações para o link de restrições da Web exclusivo. Essa é uma configuração em todo o computador e, portanto, fará com que o LSP do filtro de conteúdo da Web na caixa ignore todas as filtragens de todos os usuários controlados. Um nome descritivo também deve ser definido na Propriedade FilterName, que é especificada por um caminho para DLL de recurso e ID.
 
 O sistema de controles dos pais recomenda o seguinte de qualquer filtro da Web de substituição:
 
@@ -81,7 +81,7 @@ O sistema de controles dos pais recomenda o seguinte de qualquer filtro da Web d
 -   Recomendado para honrar a lista de substituição de URL por usuário (lista de permissões/bloqueios).
 -   Seja robusto para a troca rápida de usuários.
 
-Os controles dos pais não colocam nenhuma limitação sobre como um filtro de conteúdo ou da Web se conecta ao Windows para implementar a filtragem. Os fornecedores podem aproveitar seus investimentos atuais ou tecnologias preferenciais (LSP, TDI, outros).
+os controles dos pais não colocam nenhuma limitação sobre como um filtro de conteúdo ou da web é conectado ao Windows para implementar a filtragem. Os fornecedores podem aproveitar seus investimentos atuais ou tecnologias preferenciais (LSP, TDI, outros).
 
 A desinstalação do filtro do fornecedor deve cancelar o registro das entradas Filterid e FilterName. Isso é realizado pela configuração de Filterid para GUID \_ NULL e FilterName para uma variante NULL. O filtro de conteúdo da Web na caixa será habilitado novamente.
 
@@ -93,23 +93,23 @@ Não há suporte para esse recurso no Windows 8.
 
 **Windows 7 e Windows Vista:** Há suporte para esse recurso.
 
-<WebAddresses>
+&lt;Endereços da&gt;
 
-<URL AllowBlock="1">https://alloweddomain.com/</URL>
+<URL AllowBlock="1">https://alloweddomain.com/&lt;/URL&gt;
 
-<URL AllowBlock="1">https://allowedurl.com/allowed/default.html</URL>
+<URL AllowBlock="1">https://allowedurl.com/allowed/default.html&lt;/URL&gt;
 
-<URL AllowBlock="2">https://blockeddomain.com/</URL>
+<URL AllowBlock="2">https://blockeddomain.com/&lt;/URL&gt;
 
-<URL AllowBlock="2">https://blockedurl.com/blocked/default.html</URL>
+<URL AllowBlock="2">https://blockedurl.com/blocked/default.html&lt;/URL&gt;
 
-</WebAddresses>
+&lt;/WebAddresses&gt;
 
 ## <a name="application-restrictions-override-notes"></a>Notas de substituição de restrições de aplicativo
 
-As substituições de restrições de aplicativo são definidas por usuário para permitir binários ou caminhos específicos. Se um novo usuário com controle pai for configurado e as substituições de restrições de aplicativo forem necessárias para esse usuário, é recomendável que a chave de execução do Windows no registro seja usada com um aplicativo pequeno marcado como exigindo a elevação implantada para gravar as substituições. Isso resultará em um prompt de credenciais de uso único para configurar as substituições para o usuário, após o qual os binários de destino das substituições não serão um incômodo para os usuários devido a solicitações de substituição de administrador adicionais.
+As substituições de restrições de aplicativo são definidas por usuário para permitir binários ou caminhos específicos. se um novo usuário com controle pai for configurado e as substituições de restrições de aplicativo forem necessárias para esse usuário, é recomendável que a chave de execução Windows no registro seja usada com um aplicativo pequeno marcado como exigindo elevação implantada para gravar as substituições. Isso resultará em um prompt de credenciais de uso único para configurar as substituições para o usuário, após o qual os binários de destino das substituições não serão um incômodo para os usuários devido a solicitações de substituição de administrador adicionais.
 
-## <a name="actions-required-for-settings-changes-to-become-effective"></a>Ações necessárias para que as alterações nas configurações se tornem efetivas
+## <a name="actions-required-for-settings-changes-to-become-effective"></a>ações necessárias para que Configurações alterações se tornem efetivas
 
 Se um administrador alterar as configurações de um usuário padrão conectado, uma mensagem de aviso será gerada. Isso indica que as alterações nas configurações podem não entrar em vigor até que o usuário controlado Faça logoff e logon novamente. Esse é um design conservador. A maioria das configurações entrará em vigor quase imediatamente enquanto o usuário controlado estiver conectado. Uma exceção é para jogos, em que as configurações entrarão em vigor na próxima vez que o explorador de jogos for executado ou invocar o jogo for tentado.
 
@@ -117,41 +117,41 @@ Se um administrador alterar as configurações de um usuário padrão conectado,
 
 Exemplos de C++ são fornecidos no SDK que demonstra o uso dos recursos de extensibilidade de configurações. Consulte a seção de exemplos de controles dos pais.
 
-## <a name="independent-test-tools"></a>Ferramentas de teste independentes
+## <a name="independent-test-tools"></a>Ferramentas de Teste independentes
 
-A inspeção de classes e instâncias é facilitada pelo plug-in wmimgmt. msc e pela ferramenta de Wbemtest.exe.
+A inspeção de classes e instâncias é facilitada pelo plug-in Wmimgmt.msc e Wbemtest.exe ferramenta.
 
 ## <a name="64-bit-considerations"></a>Considerações de 64 bits
 
-as versões do sistema operacional Windows de 64 bits atualmente têm um provedor WMI de 32 bits e um provedor de 64 bits instalado.
+As versões Windows sistema operacional de 64 bits atualmente têm um provedor WMI de 32 bits e um provedor de 64 bits instalados.
 
-## <a name="general-code-development-and-debugging"></a>Desenvolvimento e depuração de código geral
+## <a name="general-code-development-and-debugging"></a>Desenvolvimento e depuração de código gerais
 
-Se o Visual Studio for usado para o desenvolvimento de código de gerenciamento de configurações, a depuração local exigirá a execução do Visual Studio com direitos de administrador (chamando com executar como administrador usando a linha de comando ou a opção de clique com o botão direito do mouse) Isso se deve ao isolamento do processo e da mensagem implementado pelo UAC.
+Se Visual Studio for usado para o desenvolvimento de código de gerenciamento de configurações, a depuração local exigirá a execução de Visual Studio com direitos de administrador (invocar com Executar como Administrador usando a linha de comando ou a opção de clique com o botão direito do mouse). Isso ocorre devido ao processo e ao isolamento de mensagens implementados pelo UAC.
 
-## <a name="minimum-compliance-api-settings-read"></a>Configurações de API de conformidade mínimas lidas
+## <a name="minimum-compliance-api-settings-read"></a>Api de Conformidade Mínima Configurações Leitura
 
 ### <a name="interfaces-and-methods"></a>Interfaces e métodos
 
-A API de conformidade controlada pelo arquivo de cabeçalho Wpcapi. h fornece acesso simplificado somente leitura para as seguintes configurações usando interfaces COM.
+A API de Conformidade controlada pelo arquivo de header Wpcapi.h fornece acesso simplificado somente leitura às configurações a seguir usando interfaces COM.
 
 Os métodos de interface raiz [**IWindowsParentalControls**](/windows/desktop/api/Wpcapi/nn-wpcapi-iwindowsparentalcontrols) fornecem acesso a:
 
--   Métodos de IWPCSettings:
-    -   IsLoggingRequired () — o relatório de atividades é configurado como ativado para o usuário?
-    -   GetLastSettingsChangeTime () — o aplicativo pode estar ciente se as políticas de configurações foram alteradas desde uma verificação anterior.
-    -   Getrestrictions () — Leia se restrições da Web, limites de tempo, restrições de jogo ou restrições de aplicativo estão definidas como on.
--   Métodos de IWPCWebSettings:
-    -   GetSettings () – recupera sinalizadores para ativar ou desativar o filtro e downloads bloqueados.
-    -   RequestURLOverride () — Insira uma solicitação no mecanismo de substituição do administrador (aprovação over-tiracolo) que apresentará uma caixa de diálogo que contém as URLs a serem aprovadas.
--   Métodos de IWPCGamesSettings:
-    -   IsBlocked () – para uma determinada ID de aplicativo do jogo, é o jogo bloqueado pelos controles dos pais e por qual motivo.
--   Getvisibility () — fornece informações sobre se a interface do usuário de controles pai está oculta no momento.
--   GetWebFilterInfo () — fornece uma interface para obter a ID do filtro de conteúdo da Web ativo no momento.
+-   Métodos IWPCSettings:
+    -   IsLoggingRequired()— o relatório de atividades está configurado como on para o usuário?
+    -   GetLastSettingsChangeTime()— o aplicativo pode estar ciente se alguma política de configuração foi alterada desde uma verificação anterior.
+    -   GetRestrictions()— leia se as restrições da Web, os limites de tempo, as restrições de jogo ou as restrições de aplicativo estão definidos como .
+-   Métodos IWPCWebSettings:
+    -   GetSettings()– recupera sinalizadores para filtrar ou desligar e downloads bloqueados.
+    -   RequestURLOverride()— inscreve uma solicitação no mecanismo de substituição do administrador (aprovação over-the-the-ombr) que apresentará uma caixa de diálogo que contém as URLs a serem aprovadas.
+-   Métodos IWPCGamesSettings:
+    -   IsBlocked()— para uma determinada ID de aplicativo de jogo, é o jogo bloqueado pelos controles dos pais e por qual motivo.
+-   GetVisibility()— fornece informações sobre se a interface do usuário dos Controles Dos Pais está oculta no momento.
+-   GetWebFilterInfo()— fornece uma interface para obter a ID do Filtro de Conteúdo da Web ativo no momento.
 
 ### <a name="sample-code"></a>Código de exemplo
 
-Exemplos de C++ são fornecidos no SDK que demonstra o uso da API de conformidade. Consulte a seção de exemplos de controles dos pais.
+Exemplos do C++ são fornecidos no SDK que demonstra o uso da API de Conformidade. Consulte a seção Exemplos de controles dos pais.
 
  
 

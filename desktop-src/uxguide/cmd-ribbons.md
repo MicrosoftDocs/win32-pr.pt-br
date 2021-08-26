@@ -1,191 +1,191 @@
 ---
 title: Faixas de opções
-description: As faixas de opções são a maneira moderna de ajudar os usuários a encontrar, entender e usar comandos com eficiência e diretamente \ 8212; com um número mínimo de cliques, com menos necessidade de recorrer a avaliação e erro e sem precisar consultar a Ajuda.
+description: As faixas de palavras são a maneira moderna de ajudar os usuários a localizar, entender e usar comandos de forma eficiente e direta \ 8212; com um número mínimo de cliques, com menos necessidade de recorrer a avaliação e erro e sem precisar consultar a ajuda.
 ms.assetid: 8a4699da-9840-4622-9e94-d6d5c4e7708c
 ms.custom: contperf-fy21q1
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: db5a64d50bd225b714c2ff0578145c47c66bedb557dd067e0cdf89f369178b1e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cf74a58ae2fd9dda735c419f4ffa42b38d06c18c
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118042407"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884442"
 ---
 # <a name="ribbons"></a>Faixas de opções
 
 > [!NOTE]
-> Este guia de design foi criado para Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte das diretrizes ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais.](/windows/uwp/design/)
+> este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte da orientação ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais](/windows/uwp/design/).
 
-As faixas de opções são a maneira moderna de ajudar os usuários a encontrar, entender e usar comandos com eficiência e diretamente com um número mínimo de cliques, com menos necessidade de recorrer a avaliação e erro e sem precisar consultar a Ajuda.
+As faixas de palavras são a maneira moderna de ajudar os usuários a localizar, compreender e usar comandos de forma eficiente e direta com um número mínimo de cliques, com menos necessidade de recorrer a avaliação e erro e sem precisar consultar a ajuda.
 
-Uma faixa de opções é uma barra de comandos que organiza os recursos de um programa em uma série de guias na parte superior de uma janela. O uso de uma faixa de opções aumenta a capacidade de descoberta de recursos e funções, permite um aprendizado mais rápido do programa como um todo e faz com que os usuários se sintam mais no controle de sua experiência com o programa. Uma faixa de opções pode substituir a barra de menus tradicional e as barras de ferramentas.
+Uma faixa de guia é uma barra de comandos que organiza os recursos de um programa em uma série de guias na parte superior de uma janela. O uso de uma faixa de faixas aumenta a capacidade de descoberta de recursos e funções, permite um aprendizado mais rápido do programa como um todo e faz com que os usuários se sintam mais no controle de sua experiência com o programa. Uma faixa de opções pode substituir a barra de menus e as barras de ferramentas tradicionais.
 
-![captura de tela de uma faixa de opções ](images/cmd-ribbons-image1.png)
+![captura de tela de uma faixa de uma ](images/cmd-ribbons-image1.png)
 
-Uma faixa de opções típica.
+Uma faixa de uma típica.
 
-As guias da faixa de opções são compostas por grupos, que são um conjunto rotulado de comandos intimamente relacionados. Além de guias e grupos, as faixas de opções consistem em:
+As guias da faixa de guia são compostas por grupos, que são um conjunto rotulado de comandos fortemente relacionados. Além de guias e grupos, as faixas de faixa consistem em:
 
-- Um botão Aplicativo, que apresenta um menu de comandos que envolvem fazer algo com ou com um documento ou workspace, como comandos relacionados ao arquivo.
-- Uma Barra de Ferramentas de Acesso Rápido, que é uma barra de ferramentas pequena e personalizável que exibe comandos usados com frequência.
-- As guias principais são as guias que sempre são exibidas.
-- Guias contextuais, que são exibidas somente quando um tipo de objeto específico é selecionado. As guias que sempre são exibidas são chamadas de guias principais.
-- Um conjunto de guias é uma coleção de guias contextuais para um único tipo de objeto. Como os objetos podem ter vários tipos (por exemplo, um header em uma tabela que tem uma imagem é de três tipos), pode haver vários conjuntos de guias contextuais exibidos por vez.
+- Um botão de aplicativo, que apresenta um menu de comandos que envolvem fazer algo para ou com um documento ou espaço de trabalho, como comandos relacionados a arquivos.
+- Uma barra de ferramentas de acesso rápido, que é uma barra de ferramentas pequena e personalizável que exibe comandos usados com frequência.
+- As guias principais são as guias que são sempre exibidas.
+- Guias contextuais, que são exibidas somente quando um determinado tipo de objeto é selecionado. As guias que são sempre exibidas são chamadas de guias de núcleo.
+- Um conjunto de guias é uma coleção de guias contextuais para um único tipo de objeto. Como os objetos podem ter vários tipos (por exemplo, um cabeçalho em uma tabela que tem uma imagem é de três tipos), pode haver vários conjuntos de guias contextuais exibidos de cada vez.
 - Guias modais, que são guias principais exibidas com um modo temporário específico, como visualização de impressão.
-- Galerias, que são listas de comandos ou opções apresentadas graficamente. Uma galeria baseada em resultados ilustra o efeito dos comandos ou das opções em vez dos próprios comandos. Uma galeria na faixa de opções é exibida em uma faixa de opções, em vez de uma janela pop-up.
-- Dicas de ferramentas aprimoradas, que explicam concisamente seus comandos associados e dão as teclas de atalho. Eles também podem incluir gráficos e referências à Ajuda. As dicas de ferramenta aprimoradas reduzem a necessidade de ajuda relacionada a comandos.
-- Iniciadores de caixa de diálogo, que são botões na parte inferior de alguns grupos que abrem caixas de diálogo que contêm recursos relacionados ao grupo.
+- Galerias, que são listas de comandos ou opções apresentadas graficamente. Uma galeria baseada em resultados ilustra o efeito dos comandos ou opções em vez dos próprios comandos. Uma galeria na faixa de faixas é exibida dentro de uma faixa de bits, em vez de uma janela pop-up.
+- Dicas de ferramentas aprimoradas, que explicam de forma concisa seus comandos associados e fornecem as teclas de atalho. Eles também podem incluir elementos gráficos e referências para ajudar. As dicas de ferramentas aprimoradas reduzem a necessidade de ajuda relacionada a comandos.
+- Inicializadores de caixa de diálogo, que são botões na parte inferior de alguns grupos que abrem caixas de diálogo contendo recursos relacionados ao grupo.
 
-As faixas de opções foram introduzidas originalmente Microsoft Office 2007. Para saber por que Office precisa usar faixas de opções e os muitos problemas que usam uma faixa de opções são resolvidos, consulte [The Story of the Ribbon](/archive/blogs/jensenh/the-story-of-the-ribbon).
+as faixas de faixa foram introduzidas originalmente com o Microsoft Office 2007. para saber por que Office precisa usar as faixas de faixa e os vários problemas que usam uma faixa de faixas, consulte [a história da faixa de](/archive/blogs/jensenh/the-story-of-the-ribbon)visão.
 
 > [!Note]  
-> Diretrizes [relacionadas a menus](cmd-menus.md), [barras de ferramentas,](cmd-toolbars.md) [botões de comando](ctrl-command-buttons.md)e ícones são [apresentadas](vis-icons.md) em artigos separados.
+> As diretrizes relacionadas a [menus](cmd-menus.md), [barras de ferramentas](cmd-toolbars.md), botões de [comando](ctrl-command-buttons.md)e [ícones](vis-icons.md) são apresentadas em artigos separados.
 
-## <a name="is-this-the-right-user-interface"></a>Essa é a interface do usuário certa?
+## <a name="is-this-the-right-user-interface"></a>Esta é a interface do usuário correta?
 
-Para decidir usar uma faixa de opções, considere estas perguntas:
+Para decidir usar uma faixa de uma, considere estas perguntas:
 
 ### <a name="program-type"></a>Tipo de programa
 
-- **Que tipo de programa você está projetando?** O tipo de programa é um bom indicador da adequação de uma faixa de opções. As faixas de opções funcionam bem para programas de criação e criação de documentos, bem como visualizadores de documentos e navegadores. As faixas de opções podem funcionar para outros tipos de programas, mas outras formas de apresentação de comando podem ser mais apropriadas. Em geral, programas leves devem ter uma apresentação de comando leve.
+- **Que tipo de programa você está projetando?** O tipo de programa é um bom indicador da adequação de uma faixa de opção. As faixas funcionam bem para criação de documentos e programas de criação, bem como visualizadores de documentos e navegadores. As faixas de faixa podem funcionar para outros tipos de programas, mas outras formas de apresentação de comando podem ser mais apropriadas. Em geral, os programas leves devem ter uma apresentação de comando leve.
 
-### <a name="discoverability-and-learning-issues"></a>Problemas de descoberta e aprendizado
+### <a name="discoverability-and-learning-issues"></a>Problemas de descoberta e de aprendizagem
 
-- **Os usuários têm problemas para localizar comandos? Os usuários estão solicitando recursos que já estão no programa?** Em caso afirmativo, o uso de uma faixa de opções facilitará a encontrar comandos com rótulos autoexplicativos e o agrupamento de comandos relacionados. Usar uma faixa de opções também é melhor do que barras de menu e barras de ferramentas para crescimento futuro.
-- **Os usuários têm problemas para entender os comandos do programa? Geralmente, eles recorrem a "avaliação e erro" para selecionar o comando correto ou determinar como os comandos funcionam?** Nesse caso, usar uma faixa de opções com comandos orientados a resultados com base em galerias e visualizações ao vivo facilita a compreensão dos comandos.
+- **Os usuários têm problemas ao localizar comandos? Os usuários estão solicitando recursos que já estão no programa?** Nesse caso, usar uma faixa de faixas facilitará a localização dos comandos com rótulos autoexplicativos e o agrupamento de comandos relacionados. O uso de uma faixa de opção também escala melhor do que barras de menus e barras de ferramentas para crescimento futuro.
+- **Os usuários têm problemas para entender os comandos do programa? Eles costumam recorrer a "avaliação e erro" para selecionar o comando correto ou determinar como os comandos funcionam?** Nesse caso, o uso de uma faixa de bits com comandos orientados a resultados baseados em galerias e visualizações dinâmicas facilita a compreensão dos comandos.
 
 ### <a name="command-characteristics"></a>Características do comando
 
-- **Os comandos são apresentados em vários locais? Se o programa já existir, os comandos serão apresentados em barras de menu, barras de ferramentas, painéis de tarefas e dentro da própria área de trabalho?** Nesse caso, o uso de uma faixa de opções unificará os comandos em um único local, tornando-os mais fáceis de localizar.
-- **Os comandos se aplicam a toda a janela ou somente a painéis específicos?** As faixas de opções funcionam melhor para comandos que se aplicam a toda a janela ou a objetos específicos. Os comandos in-place funcionam melhor para painéis de janela individuais.
-- **A maioria dos comandos pode ser apresentada diretamente? Ou seja, os usuários podem interagir com eles usando um único clique? Se os comandos comumente usados são acessados de menus e caixas de diálogo, eles podem ser refactorados para serem diretos?** Embora alguns comandos possam ser apresentados usando menus e caixas de diálogo, apresentar a maioria dos comandos dessa maneira prejudica a eficiência de uma faixa de opções, possivelmente tornando uma barra de menus uma opção melhor.
+- **Os comandos são apresentados em vários locais? Se o seu programa já existir, os comandos serão apresentados em barras de menus, barras de ferramentas, painéis de tarefas e dentro da própria área de trabalho?** Nesse caso, usar uma faixa de faixas unificará os comandos em um único local, facilitando sua localização.
+- **Os comandos se aplicam a toda a janela ou somente a painéis específicos?** As faixas de opções funcionam melhor para comandos que se aplicam a toda a janela ou a objetos específicos. Os comandos in-loco funcionam melhor para os painéis de janela individuais.
+- **A maioria dos comandos pode ser apresentada diretamente? Ou seja, os usuários podem interagir com eles usando um único clique? Se os comandos usados com frequência forem acessados em menus e caixas de diálogo, eles poderão ser refatoros para serem diretos?** Embora alguns comandos possam ser apresentados usando menus e caixas de diálogo, a apresentação da maioria dos comandos dessa forma envolve a eficiência de uma faixa de opções, possivelmente tornando uma barra de menus uma opção melhor.
 
 ### <a name="command-scale"></a>Escala de comando
 
-- **Há um pequeno número de comandos? Os comandos usados com mais frequência podem ser apresentados facilmente em uma única barra de ferramentas simples?** O uso de uma faixa de opções vale a pena se a adição de guias principais e contextuais resulta em uma guia Página Base simples que pode ser usada sozinho para executar as tarefas mais comuns. Caso não seja, o benefício de usar uma faixa de opções pode não justificar seu peso extra para um pequeno número de comandos.
-- **Há um grande número de comandos? Usar uma faixa de opções exigiria mais de sete guias principais? Os usuários constantemente teriam que alterar guias para executar tarefas comuns?** Nesse caso, usar barras de ferramentas (que não exigem alteração de guias) e janelas de paleta [(o](cmd-toolbars.md) que pode exigir a alteração de guias, mas pode haver várias abertas por vez) pode ser uma opção mais eficiente.
-- **Os usuários tendem a usar um pequeno número de comandos na maioria das vezes?** Nesse caso, eles podem usar uma faixa de opções com eficiência colocando esses comandos na guia Página Base. A alteração constante de guias torna uma faixa de opções muito ineficiente.
-- **O programa se beneficia de tornar a área de conteúdo do programa o mais grande possível?** Se sim, usar uma barra de menus e uma única barra de ferramentas é mais eficiente do que uma faixa de opções. No entanto, se o programa exigir três ou mais linhas de barras de ferramentas ou usar painéis de tarefas, o uso de uma faixa de opções será mais eficiente em termos de espaço.
-- **Os usuários tendem a trabalhar em uma área específica dentro de uma janela grande no programa por longos períodos de tempo?** Em caso afirmado, eles se beneficiariam da proximidade de minibaras de ferramentas, janelas de paleta e comandos diretos. Fazer a viagem de ida e volta da área de trabalho para a faixa de opções seria muito ineficiente.
-- **Para eficiência e flexibilidade, os usuários precisam fazer alterações significativas no conteúdo, no local ou no tamanho da apresentação do comando?** Se sim, barras de ferramentas personalizáveis e extensíveis e janelas de paleta são uma opção melhor. Observe que alguns tipos de barras de ferramentas podem ser desencaixados para se tornarem janelas de paleta, e as janelas de paleta podem ser movidas, relizadas e personalizadas.
+- **Há um pequeno número de comandos? Os comandos usados com mais frequência podem ser apresentados facilmente em uma única barra de ferramentas simples?** Usar uma faixa de controle vale a pena se a adição de guias principal e contextual resultar em uma simples guia página inicial que pode ser usada sozinha para executar as tarefas mais comuns. Caso contrário, o benefício de usar uma faixa de faixas pode não justificar seu peso extra para um pequeno número de comandos.
+- **Há um grande número de comandos? O uso de uma faixa de faixas requer mais de sete guias principais? Os usuários precisam constantemente alterar as guias para executar tarefas comuns?** Nesse caso, usar barras de ferramentas (que não exigem a alteração de guias) e [janelas de paleta](cmd-toolbars.md) (que podem exigir a alteração de guias, mas pode haver várias abertas por vez) pode ser uma opção mais eficiente.
+- **Os usuários tendem a usar um pequeno número de comandos na maior parte do tempo?** Nesse caso, eles podem usar uma faixa de uma fita com eficiência, colocando esses comandos na guia página inicial. A alteração constante de guias tornaria uma faixa de uma forma muito ineficiente.
+- **O programa se beneficia de tornar a área de conteúdo do programa o mais grande possível?** Nesse caso, usar uma barra de menus e uma única barra de ferramentas é mais eficiente em termos de espaço do que uma faixa de faixas. No entanto, se o seu programa exigir três ou mais linhas de barras de ferramentas ou usar painéis de tarefas, o uso de uma faixa de faixas será mais eficiente em termos de espaço.
+- **Os usuários tendem a trabalhar em uma área específica dentro de uma janela grande no programa por longos períodos de tempo?** Nesse caso, eles se beneficiarão da proximidade das mini-barras de ferramentas, janelas de paletas e comandos diretos. Fazer a viagem de ida e volta da área de trabalho para a faixa de faixas seria muito ineficiente.
+- **Para eficiência e flexibilidade, os usuários precisam fazer alterações significativas no conteúdo da apresentação do comando, no local ou no tamanho?** Nesse caso, barras de ferramentas personalizáveis e extensíveis e janelas de paleta são uma opção melhor. Observe que alguns tipos de barras de ferramentas podem ser desencaixados para se tornar janelas de paleta e janelas de paleta podem ser movidas, redimensionadas e personalizadas.
 
-Por fim, considere essa pergunta final: A melhoria na capacidade de descoberta, na facilidade de aprendizado, na eficiência e na produtividade vale o custo do espaço extra e a necessidade de guias organizar **comandos?** Se sim, usar uma faixa de opções é uma excelente opção. Se você não tiver certeza, considere a usabilidade de testar um design baseado em faixa de opções e compará-lo com a melhor alternativa.
+Por fim, considere essa pergunta final: **é o aprimoramento da capacidade de descoberta, da facilidade de aprendizado, da eficiência e da produtividade no custo do espaço extra e da necessidade de guias para organizar os comandos?** Nesse caso, usar uma faixa de opções é uma excelente opção. Se você não tiver certeza, considere o teste de usabilidade de um design baseado em faixa de opção e a comparação com a melhor alternativa.
 
-As faixas de opções são uma forma nova e envolvente de apresentação de comando e uma ótima maneira de modernizar um programa. Mas, por mais atraentes que sejam, eles não são a escolha certa para cada programa.
+As faixas de palavras são uma forma nova e atraente de apresentação de comandos e uma ótima maneira de modernizar um programa. Mas, como são convincentes, eles não são a escolha certa para todos os programas.
 
 **Incorreto:**
 
-![captura de tela de uma faixa de opções com uma calculadora ](images/cmd-ribbons-image2.png)
+![captura de tela de uma faixa de faixas com uma calculadora ](images/cmd-ribbons-image2.png)
 
 Não faça isso!
 
 ## <a name="seven-most-important-things"></a>Sete coisas mais importantes
 
-1. Escolha uma solução de comando adequada para o tipo de programa. Usar uma faixa de opções deve tornar um programa mais simples, mais eficiente e mais fácil de usar nunca o oposto. Se usar uma faixa de opções não for apropriado, considere usar comandos avançados.  
-2. Não suia o desafio de criar uma faixa de opções efetiva. Não espere que seja uma porta simples das barras de menu e das barras de ferramentas existentes. E não leve em conta que usar uma faixa de opções torna seu programa melhor automaticamente. Estar disposto a comprometer o tempo e o esforço necessários para um reprojeto de comando é um fator importante na decisão de usar uma faixa de opções.  
-3. Tornar os comandos descobertos. Escolha um design de guia que tenha um mapeamento claro, óbvio e exclusivo entre seus comandos e as guias rotuladas descritivo onde eles residem. Os usuários devem ser capazes de determinar com rapidez e confiança qual guia tem o comando que eles estão procurando e raramente escolher a guia errada.  
-4. Tornar os comandos autoexplicativos. Os usuários devem entender o efeito de um comando de seu rótulo, ícone, dica de ferramenta e versão prévia. Eles não devem ter que experimentar ou ler um tópico de Ajuda para ver como um comando funciona.  
-5. Tornar o uso dos comandos eficiente:
-    - Os usuários devem gastar a maior parte do tempo na guia Página Base.
-    - Os usuários raramente devem ter que alterar guias durante tarefas comuns.
-    - Quando a janela é maximizada e os usuários estão na guia correta, os comandos usados com mais frequência têm mais ênfase visual e os usuários podem invocá-los com um único clique. Os usuários podem executar todos os outros comandos na guia com no máximo quatro cliques.
-    - Os usuários não devem ter que abrir caixas de diálogo para dar comandos e alterar atributos em tarefas comuns.
-6. Ajude os usuários a escolher comandos e opções com segurança e minimizar a necessidade de avaliação e erro. Use comandos orientados a resultados sempre que apropriado, geralmente na forma de galerias e visualizações ao vivo.  
-7. Verifique se a faixa de faixas é dimensionada bem com os maiores tamanhos de janela para o menor.  
+1. Escolha uma solução de comando adequada para o tipo de programa. O uso de uma faixa de visão deve fazer com que um programa fique mais simples, mais eficiente e fácil de usar nunca o oposto. Se estiver usando uma faixa de faixas não for apropriada, considere usar comandos avançados em vez disso.  
+2. Não subestime o desafio de criar uma faixa de faixas em vigor. Não espere que seja uma porta simples das barras de menus e barras de ferramentas existentes. E não é necessário que o uso de uma faixa de opção faça com que seu programa seja melhor. Estar disposto a confirmar o tempo e o esforço necessário para uma reestruturação de comando é um fator importante na decisão de usar uma faixa de uma.  
+3. Tornar os comandos detectáveis. Escolha um design de guia que tenha um mapeamento claro, óbvio e exclusivo entre seus comandos e as guias rotuladas de forma descritiva em que residem. Os usuários devem ser capazes de determinar de forma rápida e confiável qual guia tem o comando que estão procurando e raramente escolher a guia errada.  
+4. Torne os comandos auto-explicativos. Os usuários devem entender o efeito de um comando de seu rótulo, ícone, dica de ferramenta e visualização. Eles não devem ter que experimentar ou ler um tópico da ajuda para ver como funciona um comando.  
+5. Faça usando os comandos de forma eficiente:
+    - Os usuários devem passar a maior parte do tempo na guia página inicial.
+    - Os usuários raramente precisam alterar as guias durante as tarefas comuns.
+    - Quando a janela é maximizada e os usuários estão na guia correta, os comandos usados com mais frequência têm a ênfase mais visual e os usuários podem chamá-las com um único clique. Os usuários podem executar todos os outros comandos na guia com, no máximo, quatro cliques.
+    - Os usuários não devem abrir caixas de diálogo para fornecer comandos e alterar atributos em tarefas comuns.
+6. Ajude os usuários a escolher comandos e opções com confiança e minimizar a necessidade de tentativa e erro. Use comandos orientados a resultados sempre que apropriado, geralmente na forma de galerias e visualizações dinâmicas.  
+7. Certifique-se de que a faixa de opções seja bem dimensiona dos maiores tamanhos de janela para o menor.  
 
 ## <a name="design-concepts"></a>Conceitos de design
 
-### <a name="adapting-a-ribbon-in-an-existing-program"></a>Adaptando uma faixa de faixas em um programa existente
+### <a name="adapting-a-ribbon-in-an-existing-program"></a>Adaptando uma faixa de opções em um programa existente
 
-Embora você possa simplesmente refatorar uma barra de menus tradicional e um design de barra de ferramentas de um programa existente para um formato de faixa de faixas, fazer com que a maior parte do valor de usar uma faixa de uma. As faixas de faixa têm mais valor quando usadas para apresentar comandos imediatos, orientados a resultados, geralmente na forma de galerias e visualizações dinâmicas. Comandos orientados a resultados facilitam a compreensão dos comandos e os usuários muito mais eficientes e produtivos. Em vez de refatorar seus comandos existentes, é melhor reformular completamente como os comandos são executados em seu programa.
+Embora você possa simplesmente criar uma barra de menus tradicional e um design de barra de ferramentas de um programa existente para um formato de faixa de opções, fazer isso perde a maior parte do valor de usar uma faixa de opções. As faixas de opções têm o maior valor quando usadas para apresentar comandos imediatos orientados a resultados, geralmente na forma de galerias e visualizações ao vivo. Os comandos orientados a resultados facilitam a compreensão dos comandos e dos usuários muito mais eficientes e produtivos. Em vez de recriar seus comandos existentes, é melhor recriar completamente como os comandos são executados em seu programa.
 
-Não subestime o desafio de criar uma faixa de faixas em vigor. E não é necessário que o uso de uma faixa de opção faça com que seu programa seja melhor. A criação de uma faixa de uma vez em vigor leva muito tempo e esforço. Estar disposto a confirmar o tempo e o esforço necessários para tal reestruturação de comandos é um fator importante na decisão de usar uma faixa de uma.
+Não suia o desafio de criar uma faixa de opções efetiva. E não leve em conta que usar uma faixa de opções torna seu programa melhor automaticamente. A criação de uma faixa de opções efetiva leva muito tempo e esforço. Estar disposto a comprometer o tempo e o esforço necessários para tal reprojeto de comando é um fator importante na decisão de usar uma faixa de opções.
 
-### <a name="the-nature-of-ribbons"></a>A natureza das faixas de faixa
+### <a name="the-nature-of-ribbons"></a>A natureza das faixas de opções
 
-Em comparação com barras de menus e barras de ferramentas tradicionais, as faixas de opções têm as seguintes características:
+Em comparação com barras de menu tradicionais e barras de ferramentas, as faixas de opções têm as seguintes características:
 
-- **Uma interface do usuário única (IU) para todos os comandos.** As barras de menu são abrangentes e fáceis de aprender, e as barras de ferramentas são eficientes e diretas, mas por que não usar um pouco mais espaço na tela para criar uma interface do usuário de comandos únicos que realiza todos eles? Com apenas uma interface do usuário, as faixas de faixa não exigem que os usuários descubram qual interface do usuário tem o comando que estão procurando.
-- **Visível e auto-explicativa.** Os comandos da barra de menus são autoexplicativos por meio de seus rótulos, mas ficam ocultos na exibição na maior parte do tempo. Para economizar espaço na tela, os botões da barra de ferramentas são basicamente representados por ícones em vez de rótulos (embora alguns botões da barra de ferramentas usem ambos) e dependam de dicas de ferramenta quando o ícone não é auto-explicativo. No entanto, os usuários geralmente conhecem os ícones apenas para os comandos usados com mais frequência.
-- Ao apresentar a maioria dos comandos com ícones rotulados, os comandos da faixa de opções são visíveis e autoexplicativos e usam dicas de ferramenta somente para fornecer informações complementares. Há pouca necessidade de ir em outro lugar (como ajuda) para entender um comando.
-- **Rotulado como agrupamento.** Enquanto as categorias de menu são rotuladas, os grupos dentro de um menu suspenso não são e são indicados somente com um separador sem rótulo. Os grupos dentro das barras de ferramentas também são indicados com separadores sem rótulo.
-- Ao organizar comandos em grupos rotulados, as faixas de faixa facilitam a localização de comandos e a determinação da finalidade.
-- **Modal, mas não hierárquico.** Escala de barras de menu criando uma hierarquia de comandos. Os menus com muitos itens podem usar um ou mais níveis de submenus para fornecer mais comandos.
-- Os comandos da faixa de medida exigem mais espaço que os comandos da barra de ferramentas, portanto, eles usam guias para dimensionar. Esse uso de guias torna as faixas de formas modais, exigindo que os usuários alterem os modos ocasionalmente para localizar comandos. No entanto, dentro de uma guia, a maioria dos comandos é direta ou usa um único botão de divisão ou botão de menu, não uma hierarquia.
-- **Direto e imediato.** Um comando é direto se for invocado com um único clique (ou seja, sem navegar pelos menus) e imediato se entrar em vigor imediatamente (ou seja, sem caixas de diálogo para coletar entrada adicional). Os comandos da barra de menus são sempre indiretos e geralmente não imediatos. Assim como as barras de ferramentas, a maioria dos comandos da faixa de medida é projetada para ser direta e imediata, com os comandos usados com mais frequência invocados com um único clique e sem a necessidade de uma caixa de diálogo para coletar entrada adicional.
-- **Espaçoso.** Barras de menus e barras de ferramentas são projetadas principalmente para serem eficientes em termos de espaço. Para fornecer seus benefícios, as faixas de ferramentas podem consumir mais espaço vertical, sendo aproximadamente o equivalente de uma barra de menus, além de três linhas de barras. Sendo que poucos programas têm três ou mais linhas de barras de ferramentas, a faixa de faixas geralmente consome mais espaço do que as UIs tradicionais para comandos.
-- **Tem um botão de aplicativo e uma barra de ferramentas de acesso rápido.** Uma faixa de Ribbon sempre é apresentada com um botão de aplicativo e uma barra de ferramentas de acesso rápido. Isso permite que os usuários acessem comandos relacionados a arquivos e frequentemente usados sem alterar as guias e promove a consistência entre programas.
-- **Personalização mínima.** Embora as barras de menu tenham uma apresentação fixa, muitas barras de ferramentas são bastante personalizáveis, permitindo que os usuários definam locais, tamanhos e conteúdos. Uma faixa de medida em si não é personalizável, mas a barra de ferramentas de acesso rápido fornece personalização limitada.
-- **Acessibilidade de teclado aprimorada.** As barras de menu têm excelente acessibilidade de teclado porque pressionar a tecla Alt diretamente fornece o foco de entrada da barra de menus. No entanto, não há tal mecanismo para barras de ferramentas porque elas compartilham a navegação de teclado com o conteúdo da janela. Consequentemente, os usuários devem navegar até a barra de ferramentas usando a tecla Tab (que recebe a última parada de tabulação) e, em seguida, navegar até um comando específico usando as teclas de direção.
+- **Uma interface do usuário única para todos os comandos.** As barras de menu são abrangentes e fáceis de aprender e as barras de ferramentas são eficientes e diretas, mas por que não usar um pouco mais de espaço na tela para criar uma interface do usuário de comandos que realiza todos eles? Com apenas uma interface do usuário, as faixas de opções não exigem que os usuários descubram qual interface do usuário tem o comando que eles estão procurando.
+- **Visível e autoexplicativo.** Os comandos da barra de menus são autoexplicativos por meio de seus rótulos, mas ficam ocultos da exibição na maioria das vezes. Para economizar espaço na tela, os botões da barra de ferramentas são representados principalmente por ícones em vez de rótulos (embora alguns botões de barra de ferramentas usem ambos) e dependem de dicas de ferramenta quando o ícone não é autoexplicativo. No entanto, os usuários geralmente conhecem os ícones apenas para os comandos mais usados.
+- Ao apresentar a maioria dos comandos com ícones rotulados, os comandos da faixa de opções são visíveis e autoexplicativos e usam dicas de ferramenta apenas para fornecer informações complementares. Há pouca necessidade de ir para outro lugar (como Ajuda) para entender um comando.
+- **Agrupamento rotulado.** Embora as categorias de menu sejam rotuladas, os grupos em um menu suspenso não são e são indicados apenas com um separador sem rótulo. Grupos dentro de barras de ferramentas também são indicados com separadores sem rótulo.
+- Ao organizar comandos em grupos rotulados, as faixas de opções facilitam a encontrar comandos e determinar sua finalidade.
+- **Modal, mas não hierárquico.** As barras de menu são dimensionadas criando uma hierarquia de comandos. Menus com muitos itens podem usar um ou mais níveis de submenus para fornecer mais comandos.
+- Os comandos da faixa de opções exigem mais espaço do que os comandos da barra de ferramentas, portanto, eles usam guias para dimensionar. Esse uso de guias torna as faixas de opções modais, exigindo que os usuários alterem os modos ocasionalmente para encontrar comandos. No entanto, em uma guia, a maioria dos comandos é direta ou usa um botão de divisão única ou um botão de menu, não uma hierarquia.
+- **Direto e imediato.** Um comando será direto se invocado com um único clique (ou seja, sem navegar pelos menus) e imediato se entrar em vigor imediatamente (ou seja, sem caixas de diálogo para coletar entradas adicionais). Os comandos da barra de menus são sempre indiretos e geralmente não imediatos. Assim como as barras de ferramentas, a maioria dos comandos da faixa de opções é projetada para ser direta e imediata, com os comandos usados com mais frequência invocados com um único clique e sem a necessidade de uma caixa de diálogo para coletar entradas adicionais.
+- **Espaçosos.** As barras de menu e as barras de ferramentas são projetadas principalmente para serem eficientes no espaço. Para fornecer seus benefícios, as faixas de opções podem consumir mais espaço vertical, sendo aproximadamente o equivalente a uma barra de menus mais três linhas de barras de ferramentas. Sendo que poucos programas têm três ou mais linhas de barras de ferramentas, as faixas de opções geralmente consomem mais espaço do que as UIs tradicionais para comandos.
+- **Tem um botão Aplicativo e a Barra de Ferramentas de Acesso Rápido.** Uma faixa de opções sempre é apresentada com um botão Aplicativo e a Barra de Ferramentas de Acesso Rápido. Isso permite que os usuários acessem comandos relacionados a arquivos e usados com frequência sem alterar guias e promovem a consistência entre programas.
+- **Personalização mínima.** Embora as barras de menu tenham uma apresentação fixa, muitas barras de ferramentas são bastante personalizáveis, permitindo aos usuários definir locais, tamanhos e conteúdo. Uma faixa de opções em si não é personalizável, mas a Barra de Ferramentas de Acesso Rápido fornece personalização limitada.
+- **Acessibilidade aprimorada do teclado.** As barras de menu têm excelente acessibilidade de teclado porque pressionar a tecla Alt fornece diretamente o foco de entrada da barra de menus. No entanto, não há esse mecanismo para barras de ferramentas porque elas compartilham a navegação por teclado com o conteúdo da janela. Consequentemente, os usuários devem navegar até a barra de ferramentas usando a tecla Tab (que recebe a última parada da guia) e, em seguida, navegar até um comando específico usando as teclas de direção.
 
-Por outro lado, as faixas de faixa fornecem acessibilidade de teclado aprimorada por meio de [dicas](glossary.md)de tecla, geralmente com um processo de três etapas:
+Por outro lado, as faixas de opções fornecem acessibilidade aprimorada do teclado por meio [de dicas de](glossary.md)tecla , geralmente com um processo de três etapas:
 
-- Pressione Alt para entrar no modo KeyTip.
-- Pressione um caractere para escolher uma guia, o botão aplicativo ou um comando na barra de ferramentas de acesso rápido.
+- Pressione Alt para entrar no modo de dica de tecla.
+- Pressione um caractere para escolher uma guia, o botão Aplicativo ou um comando na Barra de Ferramentas de Acesso Rápido.
 - Em uma guia, pressione uma ou duas letras para escolher um comando.
 
-    Essa abordagem é altamente Visual. Ele também é mais flexível, permitindo que ele Escale melhor e tenha mais atribuições de chave de acesso mnemônico.
+    Essa abordagem é altamente visual. Ele também é mais flexível, permitindo que ele seja dimensionado melhor e tenha mais atribuições de chave de acesso mnemônico.
 
-    Não confunda chaves de acesso com teclas de atalho. Embora as teclas de acesso e as chaves de atalho forneçam acesso de teclado à interface do usuário, elas têm finalidades e diretrizes diferentes. Para obter mais informações, consulte [teclado](inter-keyboard.md).
+    Não confunda chaves de acesso com teclas de atalho. Embora as teclas de acesso e as teclas de atalho forneçam acesso de teclado à interface do usuário, elas têm diferentes finalidades e diretrizes. Para obter mais informações, consulte [Teclado](inter-keyboard.md).
 
 ### <a name="the-nature-of-rich-commands"></a>A natureza dos comandos avançados
 
-Comandos avançados referem-se à apresentação e à interação dos comandos usados pelas faixas de faixa, sem necessariamente usar um contêiner da faixa de uma. Os comandos avançados têm estas características:
+Comandos avançados referem-se à apresentação e à interação de comandos usados por faixas de opções, sem necessariamente usar um contêiner de faixa de opções. Comandos avançados têm estas características:
 
-- **Rotulagem.** Todos os comandos recebem rótulos autoexplicativos, com exceções somente quando os ícones são extremamente conhecidos e o espaço está em um nível Premium.
+- **Rotulagem.** Todos os comandos receberão rótulos autoexplicativos, com exceções somente quando os ícones são extremamente conhecidos e o espaço está em um premium.
 
     **Correto:**
 
-    ![captura de tela de uma faixa de formatos de formatação de caracteres ](images/cmd-ribbons-image3.png)
+    ![captura de tela de uma faixa de opções de formatação de caracteres ](images/cmd-ribbons-image3.png)
 
-    Esses comandos são extremamente conhecidos e, portanto, não precisam de rótulos.
+    Esses comandos são extremamente conhecidos para que não precisem de rótulos.
 
     **Incorreto:**
 
-    ![captura de tela de uma faixa de bits com ícones usados raramente ](images/cmd-ribbons-image4.png)
+    ![captura de tela de uma faixa de opções com ícones raramente usados ](images/cmd-ribbons-image4.png)
 
-    Esses ícones ininteligívels exigem rótulos para comandos avançados.
+    Esses ícones ininteligíveis exigem rótulos para comandos avançados.
 
-- **Automático.** Em vez de dimensionamento uniforme, os comandos são dimensionados em relação à sua frequência de uso e importância. Além de tornar mais fácil localizar e clicar nos comandos mais usados, ele também os torna mais [tocáveis](https://msdn.microsoft.com/library/windows/desktop/cc872774.aspx).
+- **Dimensionamento.** Em vez de dimensionamento uniforme, os comandos são dimensionados em relação à frequência de uso e importância. Além de tornar os comandos usados com mais frequência mais fáceis de encontrar e clicar, ele também os torna mais [sensíveis.](https://msdn.microsoft.com/library/windows/desktop/cc872774.aspx)
 
-    ![captura de tela de um grande e três botões pequenos ](images/cmd-ribbons-image5.png)
+    ![captura de tela de um botão grande e três botões pequenos ](images/cmd-ribbons-image5.png)
 
     Neste exemplo, o botão usado com mais frequência é maior do que os outros.
 
-- **Dimensionamento dinâmico.** Os controles de comando avançados se redimensionam para aproveitar ao máximo o espaço disponível, em vez de usar um tamanho fixo e truncar ou usar overflow quando o tamanho for muito pequeno.
+- **O ressamento dinâmico.** Controles de comando rich são reorganizado para aproveitar ao máximo o espaço disponível, em vez de usar um tamanho fixo e truncar ou usar estouro quando o tamanho for muito pequeno.
 
-    ![captura de tela de ampla faixa de forma com botões de tamanho igual ](images/cmd-ribbons-image6.png)![captura de tela de faixa de faixas pequena com botões mistos ](images/cmd-ribbons-image7.png)
+    ![captura de tela da faixa de opções larga com botões de tamanho igual ](images/cmd-ribbons-image6.png)![captura de tela da faixa de opções pequena com botões mistos ](images/cmd-ribbons-image7.png)
 
-    Neste exemplo, os botões de comando redimensionam para funcionar bem no espaço disponível.
+    Neste exemplo, os botões de comando são resizedos para funcionar bem no espaço disponível.
 
-- **Botões de divisão.** Os botões de divisão são uma boa maneira de consolidar um conjunto de variações de um comando quando necessário, mantendo a direção do comando usado com mais frequência.
+- **Botões de divisão.** Os botões divididos são uma boa maneira de consolidar um conjunto de variações de um comando quando necessário, mantendo a direcionamento para o comando usado com mais frequência.
 
-    ![captura de tela do comando Salvar como e suas opções ](images/cmd-ribbons-image8.png)
+    ![captura de tela de salvar como comando e suas opções ](images/cmd-ribbons-image8.png)
 
     Neste exemplo, o comando Salvar como usa um botão de divisão, em que o botão principal executa a variação mais comum e a parte do menu revela um menu com variações do comando.
 
-- **Menus suspensos avançados e galerias.** Os menus suspensos, listas suspensas e galerias usam o espaço necessário para se comunicar e diferenciar o efeito das opções, geralmente usando descrições de texto e gráficos. As categorias são usadas para organizar grandes conjuntos de opções.
+- **Menus suspensos e galerias rich.** Menus suspensos, listas suspensos e galerias usam o espaço necessário para se comunicar e diferenciar o efeito das opções, geralmente usando gráficos e descrições de texto. As categorias são usadas para organizar grandes conjuntos de opções.
 
     ![captura de tela das opções de menu suspenso com ícones ](images/cmd-ribbons-image9.png)
 
-    Nestes exemplos, clicar em um botão de menu exibe uma lista de opções que mostram seu efeito.
+    Nesses exemplos, clicar em um botão de menu exibe uma lista de opções que mostram seu efeito.
 
-- **Visualizações dinâmicas.** Sempre que o usuário passa o mouse sobre uma opção de formatação, o programa mostra a aparência dos resultados com essa formatação usando o conteúdo real.
+- **Visualizações ao vivo.** Sempre que o usuário passar o mouse sobre uma opção de formatação, o programa mostrará a aparência dos resultados com essa formatação usando o conteúdo real.
 
-    ![captura de tela de resultados de opções de formatação ](images/cmd-ribbons-image10.png)
+    ![captura de tela dos resultados das opções de formatação ](images/cmd-ribbons-image10.png)
 
-    As visualizações dinâmicas mostram os resultados da aplicação de uma opção de formatação ao focalizar.
+    As visualizações ao vivo mostram os resultados da aplicação de uma opção de formatação ao passar o mouse.
 
-- **Dicas de ferramentas aprimoradas.** Eles explicam de forma concisa seus comandos associados e fornecem as teclas de atalho. Eles também podem incluir elementos gráficos e referências para ajudar (embora eles eliminem amplamente a necessidade de ajuda relacionada a comandos).
+- **Dicas de ferramenta aprimoradas.** Eles explicam concisamente seus comandos associados e dão as teclas de atalho. Eles também podem incluir gráficos e referências à Ajuda (embora eliminem em grande parte a necessidade de ajuda relacionada a comandos).
 
-    ![captura de tela de grande dica de ferramenta com texto e gráfico ](images/cmd-ribbons-image11.png)
+    ![captura de tela de dica de ferramenta grande com texto e gráfico ](images/cmd-ribbons-image11.png)
 
-    As dicas de ferramentas avançadas explicam seus comandos associados de forma concisa.
+    Dicas de ferramentas aprimoradas explicam concisamente seus comandos associados.
 
-Embora as faixas de faixa possam não ser adequadas para todos os programas, todos os programas podem se beneficiar potencialmente de comandos avançados.
+Embora as faixas de opções possam não ser adequadas para todos os programas, todos os programas podem se beneficiar de comandos avançados.
 
-### <a name="ribbons-always-have-an-application-button-and-quick-access-toolbar"></a>As faixas de faixa sempre têm um botão do aplicativo e uma barra de ferramentas de acesso rápido
+### <a name="ribbons-always-have-an-application-button-and-quick-access-toolbar"></a>As faixas de opções sempre têm um botão Aplicativo e a Barra de Ferramentas de Acesso Rápido
 
 O botão Aplicativo e a Barra de Ferramentas de Acesso Rápido fornecem comandos úteis em qualquer contexto, reduzindo a necessidade de alterar guias. Embora esses três componentes sejam logicamente independentes, uma faixa de opções sempre deve ter um botão Aplicativo e uma Barra de Ferramentas de Acesso Rápido. Considerando que os comandos podem ir na faixa de opções ou no botão Aplicativo, você pode estar se perguntando onde colocar comandos. A escolha não é arbitrária.
 
@@ -254,95 +254,95 @@ Há uma variedade de fatores a considerar ao determinar grupos e sua apresentaç
 |-------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
 | ![captura de tela de comandos divididos em quatro grupos ](images/cmd-ribbons-image17.png) <br/> Use nomes de grupo específicos o suficiente para descrever os comandos contidos no grupo. | ![captura de tela do grupo de formatos com vários comandos ](images/cmd-ribbons-image16.png) <br/> Esse nome de grupo é muito indefinitivo para ser útil. Uma abordagem melhor seria reorganizar esses comandos em grupos mais específicos. |
 
-- **Ordene.** As pessoas lidam em uma ordem da esquerda para a direita (em culturas ocidentais), portanto, você pode imaginar que os grupos na extrema esquerda são os mais perceptíveis. No entanto, o nome da guia realçado e o conteúdo da janela tendem a atuar como [pontos focal](vis-layout.md), de modo que os grupos no centro da guia geralmente recebam mais atenção do que o grupo mais à esquerda. Coloque os grupos usados com mais frequência nos locais mais proeminentes e verifique se há um fluxo lógico para os grupos na guia.
+- **Ordem.** As pessoas leem em uma ordem da esquerda para a direita (em culturas ocidental), portanto, você pode pensar que os grupos à extrema esquerda são os mais perceptíveis. No entanto, o nome da guia realçada e o conteúdo da janela tendem a atuar como pontos focal, portanto, os grupos no centro da guia geralmente recebem mais atenção do que o grupo mais à esquerda. [](vis-layout.md) Coloque os grupos mais usados nos locais mais proeminentes e certifique-se de que haja um fluxo lógico para os grupos na guia.
 
-![captura de tela do grupo da área de transferência à extrema esquerda ](images/cmd-ribbons-image18.png)
+![captura de tela do grupo de área de transferência na extrema esquerda ](images/cmd-ribbons-image18.png)
 
-Neste exemplo, os grupos de fontes e parágrafos são mais perceptíveis do que o grupo da área de transferência, pois eles são o que os olhos veem primeiro ao se mover para cima do documento.
+Neste exemplo, os grupos Fonte e Parágrafo são mais perceptíveis do que o grupo Área de Transferência, pois eles são o que o olho vê primeiro ao mover para cima do documento.
 
-![captura de tela do grupo de controle na guia revisão ](images/cmd-ribbons-image19.png)
+![captura de tela do grupo de acompanhamento na guia revisão ](images/cmd-ribbons-image19.png)
 
-Neste exemplo, o grupo de rastreamento recebe a maior atenção, em parte porque a guia realçada de revisão atua como um ponto focal.
+Neste exemplo, o grupo Acompanhamento recebe mais atenção, em parte porque a guia Revisão realçada atua como um ponto focal.
 
-- **Uniformidade.** Pode ser difícil reconhecer comandos quando a apresentação do comando parece ser a mesma. Usar ícones com diferentes formas e cores, grupos com formatos variados e comandos com tamanhos diferentes torna mais fácil para os usuários reconhecer grupos de comandos. Os comandos devem ter dimensionamento uniforme somente quando a faixa de faixas é reduzida para seus tamanhos menores.
+- **Uniformidade.** Pode ser difícil reconhecer comandos quando a apresentação do comando tem a mesma aparência. O uso de ícones com diferentes formas e cores, grupos com formatos variados e comandos com tamanhos diferentes facilita o reconhecimento de grupos de comandos pelos usuários. Os comandos devem ter um dimensionamento uniforme somente quando a faixa de opções é dimensionada para seus tamanhos menores.
 
 | Correto | Incorreto |
 |------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| ![captura de tela de grupo com ícones de tamanho diferente ](images/cmd-ribbons-image20.png)<br/>Use uma variedade de tamanhos de ícone para melhorar a capacidade de reconhecimento| ![captura de tela do grupo com ícones de mesmo tamanho ](images/cmd-ribbons-image21.png)<br/>Esses comandos parecem muito semelhantes entre si porque são do mesmo tamanho. |
+| ![captura de tela do grupo com ícones de tamanhos diferentes ](images/cmd-ribbons-image20.png)<br/>Usar uma variedade de tamanhos de ícone para melhorar a reconhecimento| ![captura de tela do grupo com ícones do mesmo tamanho ](images/cmd-ribbons-image21.png)<br/>Esses comandos são muito semelhantes uns aos outros porque têm o mesmo tamanho. |
 
 ### <a name="previews"></a>Visualizações
 
-Você pode usar vários tipos de visualizações para mostrar o que resultará de um comando. Usando as visualizações úteis, você pode melhorar a eficiência do seu programa e reduzir a necessidade da abordagem de aprendizagem de avaliação e erro. As visualizações dinâmicas também convidam experimentação e estimulam a criatividade.
+Você pode usar vários tipos de visualizações para mostrar o que resultará de um comando. Usando visualizações úteis, você pode melhorar a eficiência do programa e reduzir a necessidade da abordagem de aprendizado de avaliação e erro. As visualizações ao vivo também convidam experimentação e incentivam a criatividade.
 
 Aqui estão alguns dos diferentes tipos de visualizações que você pode usar:
 
-- **Ícones e gráficos realistas.** Imagens estáticas que fornecem uma indicação realista do efeito de um comando. Eles podem ser usados em galerias, menus suspensos e dicas de ferramentas aprimoradas.
+- **Ícones estáticos e gráficos realistas.** Imagens estáticas que dão uma indicação realista do efeito de um comando. Eles podem ser usados em galerias, menus suspensos e dicas de ferramentas aprimoradas.
 
-![captura de tela da lista suspensa fonte ](images/cmd-ribbons-image22.png)
+![captura de tela da lista de listas lista de fontes ](images/cmd-ribbons-image22.png)
 
-Neste exemplo, a lista suspensa fonte mostra cada nome de fonte usando a própria fonte.
+Neste exemplo, a listada Fonte mostra cada nome de fonte usando a própria fonte.
 
-![captura de tela da Galeria de miniaturas de marca d' água ](images/cmd-ribbons-image23.png)
+![captura de tela da galeria de miniaturas de marca d'água ](images/cmd-ribbons-image23.png)
 
-Neste exemplo, miniaturas realísticas são usadas para mostrar as diferentes marcas d' água.
+Neste exemplo, miniaturas realistas são usadas para mostrar as diferentes marcas-d'água.
 
-- **Ícones e elementos gráficos dinâmicos.** Ícones e gráficos que são modificados para refletir o estado atual. Esses ícones são especialmente úteis para galerias, bem como botões de divisão que alteram seu efeito padrão para que sejam iguais à última ação.
+- **Ícones dinâmicos e gráficos.** Ícones e elementos gráficos que são modificados para refletir o estado atual. Esses ícones são especialmente úteis para galerias, bem como botões de divisão que alteram seu efeito padrão para serem iguais aos da última ação.
 
-![captura de tela da Galeria de estilos de parágrafo ](images/cmd-ribbons-image24.png)
+![captura de tela da galeria de estilos de parágrafo ](images/cmd-ribbons-image24.png)
 
-neste exemplo, Microsoft Word altera a galeria de estilos para refletir os estilos atuais.
+Neste exemplo, Microsoft Word a galeria estilos para refletir os estilos atuais.
 
 ![captura de tela dos botões de comando de formatação de texto ](images/cmd-ribbons-image25.png)
 
-Neste exemplo, o Word altera os comandos de cor de realce de texto e cor da fonte para indicar seu efeito atual.
+Neste exemplo, o Word altera os comandos Cor de realçada de texto e Cor da fonte para indicar seu efeito atual.
 
-- **Visualizações dinâmicas.** Quando os usuários focalizam uma opção de formatação, a visualização dinâmica mostra a aparência dos resultados com essa formatação. As visualizações dinâmicas ajudam os usuários a fazer seleções com mais eficiência e confiança com base no contexto real do usuário.
+- **Visualizações ao vivo.** Quando os usuários passarem o mouse sobre uma opção de formatação, a visualização ao vivo mostrará a aparência dos resultados com essa formatação. As visualizações ao vivo ajudam os usuários a fazer seleções com mais eficiência e confiança com base no contexto real do usuário.
 
 ![captura de tela do seletor de cor do comando de cor da página ](images/cmd-ribbons-image26.png)
 
-Neste exemplo, o comando de cor da página executa uma visualização dinâmica mostrando o efeito das opções de cor ao focalizar.
+Neste exemplo, o comando Cor da Página executa uma visualização ao vivo mostrando o efeito das opções de cor ao passar o mouse.
 
-As visualizações dinâmicas são um recurso poderoso que pode realmente melhorar a produtividade dos seus usuários, mas até mesmo as visualizações estáticas simples podem ser uma grande ajuda.
+As visualizações ao vivo são um recurso poderoso que pode realmente melhorar a produtividade dos usuários, mas até mesmo visualizações estáticas simples podem ser uma grande ajuda.
 
-### <a name="scaling-the-ribbon"></a>Dimensionando a faixa de faixas
+### <a name="scaling-the-ribbon"></a>Dimensionamento da faixa de opções
 
-Dimensionar uma barra de ferramentas é simples: se uma janela for muito estreita para exibir uma barra de ferramentas, a barra de ferramentas exibirá o que se ajusta e tornará tudo mais acessível por meio de um botão de estouro. Uma meta dos comandos avançados é tirar o máximo proveito do espaço disponível, portanto, dimensionar uma faixa de faixas requer mais trabalho de design. Não há nenhum tamanho de faixa de fita padrão, portanto, você não deve criar uma faixa de bits com uma largura específica em mente. Você precisa criar layouts com uma ampla gama de larguras e perceber que qualquer uma delas pode ser a mais que seus usuários verão. O dimensionamento é uma parte fundamental do design da faixa de faixas, não a última etapa. Ao criar uma guia, especifique os layouts diferentes para cada grupo (até três), bem como as combinações que podem ser usadas juntas. A faixa de faixas mostrará a maior combinação válida que se ajusta ao tamanho da janela atual.
+Dimensionar uma barra de ferramentas é simples: se uma janela for muito estreita para exibir uma barra de ferramentas, a barra de ferramentas exibirá o que se ajusta e torna todo o resto acessível por meio de um botão de estouro. Uma meta dos comandos avançados é aproveitar ao máximo o espaço disponível, portanto, dimensionar uma faixa de opções requer mais trabalho de design. Não há nenhum tamanho de faixa de opções padrão, portanto, você não deve criar uma faixa de opções com uma largura específica em mente. Você precisa projetar layouts com uma ampla variedade de larguras e perceber que qualquer um deles pode ser o que a maioria dos usuários verá. O dimensionamento é uma parte fundamental do design da faixa de opções, não a última etapa. Ao criar uma guia, especifique os layouts diferentes para cada grupo (até três), bem como as combinações que podem ser usadas em conjunto. A faixa de opções mostrará a maior combinação válida que se ajusta ao tamanho da janela atual.
 
-![captura de tela dos comandos de formatação nas barras de ferramentas do menu de estouro ](images/cmd-ribbons-image27.png) dimensionar usando um botão de estouro.
+![captura de tela dos comandos de formato no menu de estouro ](images/cmd-ribbons-image27.png) Barras de ferramentas dimensionam usando um botão de estouro.
 
-![captura de tela de faixas de faixa com várias larguras não há ](images/cmd-ribbons-image28.png) nenhum tamanho de faixa de bits padrão. O menor tamanho é um único ícone de grupo de pop-up.
+![captura de tela de faixas de opções com várias larguras ](images/cmd-ribbons-image28.png) Não há nenhum tamanho de faixa de opções padrão. O menor tamanho é um ícone de grupo pop-up único.
 
 ## <a name="guidelines"></a>Diretrizes
 
 ### <a name="general"></a>Geral
 
-- **Não combine faixas de ferramentas com barras de menus e barras de ferramentas em uma janela.** As faixas de faixa devem ser usadas no lugar de barras de menus e barras de ferramentas. No entanto, uma faixa de faixas pode ser combinada com elementos de navegação e janelas de paleta, como botões voltar e avançar e uma barra de endereços.
-- **Sempre Combine uma faixa de guia com um botão do aplicativo e uma barra de ferramentas de acesso rápido.**
-- **Selecione a guia mais à esquerda (geralmente página inicial) quando um programa é iniciado.** Não faça a última guia selecionada persistir nas instâncias do programa.
-- **Mostrar a faixa de faixas em seu estado normal (não minimizada) quando um programa for iniciado pela primeira vez.** Os usuários geralmente deixam as configurações padrão inalteradas, portanto, minimizar a faixa de opções no início do programa provavelmente fará com que todos os comandos sejam menos eficientes. Além disso, mostrar a faixa de faixas inicialmente minimizada pode ser desorientada.
-- **Fazer o estado da faixa de medida persistir nas instâncias do programa.** Por exemplo, se um usuário minimizar a faixa de faixas, ela deverá ser mostrada minimizada na próxima vez em que o programa for executado. Mas, novamente, não faça a última guia selecionada persistir dessa maneira.
+- **Não combine faixas de opções com barras de menu e barras de ferramentas em uma janela.** As faixas de opções devem ser usadas no lugar de barras de menu e barras de ferramentas. No entanto, uma faixa de opções pode ser combinada com janelas de paleta e elementos de navegação, como botões Voltar e Avançar e uma barra de endereços.
+- **Sempre combine uma faixa de opções com um botão Aplicativo e a Barra de Ferramentas de Acesso Rápido.**
+- **Selecione a guia mais à esquerda (geralmente Página Início) quando um programa for iniciado.** Não faça com que a última guia selecionada persista entre as instâncias do programa.
+- **Mostrar a faixa de opções em seu estado normal (não minimizado) quando um programa for iniciado pela primeira vez.** Os usuários geralmente deixam as configurações padrão inalteradas, portanto, minimizar a faixa de opções no início do programa provavelmente fará com que todos os comandos sejam menos eficientes. Além disso, mostrar a faixa de opções inicialmente minimizada pode ser um grande risco.
+- **Faça com que o estado da faixa de opções persista entre as instâncias do programa.** Por exemplo, se um usuário minimizar a faixa de opções, ela deverá ser mostrada minimizada na próxima vez que o programa for executado. Mas, novamente, não faça com que a última guia selecionada persista dessa maneira.
 
 ### <a name="using-tabs"></a>Usando guias
 
-Em geral, ter menos guias é melhor, portanto, remova as guias que não ajudam a atingir essas metas.
+Em geral, ter menos guias é melhor, portanto, remova guias que não ajudam a atingir essas metas.
 
-- **Sempre que for prático, use as guias padrão.** O uso de guias padrão melhora muito a descoberta, especialmente entre programas. Consulte as [guias da faixa](#standard-ribbon-tabs) de medida padrão mais adiante neste artigo.
-- **Rotule a primeira guia página inicial, se apropriado.** A guia página inicial deve conter os comandos usados com mais frequência. Se você tiver usado comandos com frequência que não se ajustam às outras guias, a guia página inicial será o lugar certo para eles.
+- **Sempre que for prático, use guias padrão.** O uso de guias padrão melhora muito a capacidade de descoberta, especialmente entre programas. Consulte as [guias da faixa de opções padrão](#standard-ribbon-tabs) mais adiante neste artigo.
+- **Rotule a primeira guia Página Início, se apropriado.** A guia Página Principal deve conter os comandos usados com mais frequência. Se você tiver usado comandos que não se ajustam às outras guias com frequência, a guia Página Página 1 é o lugar certo para elas.
 - Adicione uma nova guia se:
-  - **Seus comandos estão fortemente relacionados a tarefas específicas e podem ser descritos com precisão pelo rótulo da guia.** Adicionar a guia deve ajudar a facilitar a localização de seus comandos, e não mais difícil.
-  - **Seus comandos estão praticamente não relacionados a tarefas em outras guias.** A adição da guia não deve exigir mais alternância de tabulação durante tarefas normalmente executadas.
-  - **A guia tem comandos suficientes para justificar a aparência de um local extra.** Não tenha guias com apenas alguns comandos. **Exceção:** Considere adicionar uma guia com alguns comandos se eles estiverem fortemente relacionados a uma tarefa específica e a adição da guia simplificar muito uma guia inicial excessivamente complexa.
-- **Para as guias restantes, coloque as guias usadas com mais frequência primeiro, mantendo uma ordem lógica entre as guias.**
+  - **Seus comandos estão fortemente relacionados a tarefas específicas e podem ser descritos com precisão pelo rótulo da guia.** Adicionar a guia deve ajudar a tornar seus comandos fáceis de encontrar, não mais difíceis.
+  - **Seus comandos não estão relacionados principalmente a tarefas em outras guias.** Adicionar a guia não deve exigir mais alternação de tabulação durante tarefas normalmente executadas.
+  - **A guia tem comandos suficientes para justificar ter um local extra para procurar.** Não tem guias com apenas alguns comandos. **Exceção:** Considere adicionar uma guia com alguns comandos se eles estão fortemente relacionados a uma tarefa específica e adicionar a guia simplifica muito uma guia Página Página Principal muito complexa.
+- **Para as guias restantes, primeiro coloque as guias usadas com mais frequência, mantendo uma ordem lógica entre as guias.**
 - **Otimize o design da guia para que os usuários encontrem comandos com rapidez e confiança.** Todas as outras considerações são secundárias.
-- **Não forneça uma guia de ajuda.** Em vez disso, forneça assistência usando a ajuda de todo o programa e dicas de ferramenta aprimoradas.
-- **Use um máximo de sete guias principais.** Se houver mais de sete, será difícil determinar qual guia tem um comando. Embora sete guias principais sejam aceitáveis para aplicativos com muitos comandos, a maioria dos programas deve visar quatro ou menos guias.
+- **Não forneça uma guia Ajuda.** Em vez disso, forneça assistência usando a Ajuda em todo o programa e dicas de ferramentas aprimoradas.
+- **Use no máximo sete guias principais.** Se houver mais de sete, será difícil determinar qual guia tem um comando. Embora sete guias principais seja aceitável para aplicativos com muitos comandos, a maioria dos programas deve visar quatro ou menos guias.
 
 ### <a name="contextual-tabs"></a>Guias contextuais
 
-- **Use uma guia contextual para exibir uma coleção de comandos que são relevantes somente quando os usuários selecionam um determinado tipo de objeto.** Se houver apenas alguns comandos usados com frequência, poderá ser mais conveniente e mais estável usar uma guia regular e simplesmente desabilitar comandos quando eles não se aplicarem.
-- ![captura de tela dos comandos Recortar e copiar esmaecidos ](images/cmd-ribbons-image29.png)<br>É melhor desabilitar comandos comuns, como recortar e copiar do que usar uma guia contextual.
-- **Inclua somente os comandos que são específicos de um determinado tipo de objeto.** Não coloque os comandos somente em uma guia contextual se os usuários puderem precisar deles sem primeiro selecionar um objeto.
-- **Inclua os comandos frequentemente usados ao trabalhar com um tipo de objeto específico.** Coloque os comandos contextuais gerais usados com frequência em menus de contexto e mini barras de ferramentas para evitar a alternância de tabulação durante as tarefas normalmente executadas. Como alternativa, considere colocar comandos gerais com redundância em uma guia contextual se isso evitar a alternância de tabulação frequente. Mas não exagerar isso – não tente incluir todos os comandos que um usuário possa precisar ao trabalhar com o objeto.
+- **Use uma guia contextual para exibir uma coleção de comandos que são relevantes somente quando os usuários selecionam um tipo de objeto específico.** Se houver apenas alguns comandos usados com frequência, pode ser mais conveniente e estável usar uma guia regular e simplesmente desabilitar comandos quando eles não se aplicam.
+- ![captura de tela dos comandos recortar e copiar esmaecida ](images/cmd-ribbons-image29.png)<br>É melhor desabilitar comandos comuns como Recortar e Copiar do que usar uma guia contextual.
+- **Inclua apenas os comandos que são específicos para um tipo de objeto específico.** Não coloque comandos somente em uma guia contextual se os usuários talvez precisem deles sem primeiro selecionar um objeto.
+- **Inclua os comandos usados com frequência ao trabalhar com um tipo de objeto específico.** Coloque comandos contextuais gerais usados com frequência em menus de contexto e minibaras de ferramentas para evitar a alternência de tabulação durante tarefas normalmente executadas. Como alternativa, considere colocar comandos gerais com redundância em uma guia contextual se isso evitar a alternância de tabulação frequente. Mas não exagerar isso – não tente incluir todos os comandos que um usuário possa precisar ao trabalhar com o objeto.
 - ![captura de tela de comando de bordas na guia Design ](images/cmd-ribbons-image30.png)<br/>Neste exemplo, o comando bordas está incluído na guia Design para evitar a alternância de tabulação frequente durante as tarefas normalmente executadas. \
 - **Escolha uma cor de guia contextual que seja diferente das guias contextuais exibidas no momento.** O mesmo conjunto de guias pode aparecer mais tarde usando uma cor diferente para conseguir isso, mas tente usar atribuições de cores consistentes em invocações sempre que possível.
 - A **seleção de uma guia contextual ajuda automaticamente** a descoberta, melhora a percepção da estabilidade e reduz a necessidade de alternar entre as guias. Selecione uma guia contextual automaticamente quando:
@@ -355,7 +355,7 @@ Em geral, ter menos guias é melhor, portanto, remova as guias que não ajudam a
 
 - **Use uma guia modal para exibir uma coleção de comandos que se aplicam a um modo temporário específico e nenhuma das guias principais se aplica.** Se algumas das guias principais se aplicarem, use uma guia contextual, em vez disso, e desabilite os comandos que não se aplicam. Como as guias modais estão muito limitando, elas devem ser usadas somente quando não há uma alternativa melhor.
 - ![captura de tela da guia Visualizar impressão ](images/cmd-ribbons-image31.png)<br/>A visualização de impressão é uma guia modal comumente usada.
-- **Para fechar uma guia modal, coloque o <mode> comando Close como o último comando na guia.** Use o ícone fechar para facilitar a localização do comando. Dê ao modo no comando para evitar confusão sobre o que está sendo fechado.
+- **Para fechar uma guia modal, coloque o &lt; comando Close mode &gt; como o último comando na guia.** Use o ícone fechar para facilitar a localização do comando. Dê ao modo no comando para evitar confusão sobre o que está sendo fechado.
 - ![captura de tela do botão fechar visualização de impressão ](images/cmd-ribbons-image32.png)<br/>Neste exemplo, rotular explicitamente o comando fechar com o modo remove qualquer dúvida sobre o que está sendo fechado.
 - **Para fechar uma guia modal, também redefina o botão fechar na barra de título da janela para fechar o modo em vez do programa.** O teste do usuário mostrou que muitos usuários esperam esse comportamento.
 
@@ -434,104 +434,104 @@ Sempre que for prático, mapeie os comandos do programa para esses grupos padrã
 
 ### <a name="commands"></a>Comandos
 
-- ![captura de tela do comando de números de linha na faixa de faixas ](images/cmd-ribbons-image36.png)<br/>**Aproveite a capacidade de descoberta e a escalabilidade das faixas expondo todos os comandos usados com frequência.** Quando apropriado, mova os comandos usados com frequência das caixas de diálogo para a faixa de quadros, especialmente as que são difíceis de encontrar. O ideal é que os usuários possam executar tarefas comuns sem usar nenhuma caixa de diálogo.
+- ![captura de tela do comando de números de linha na faixa de opções ](images/cmd-ribbons-image36.png)<br/>**Aproveite a descoberta e a escalabilidade das faixas de opções expondo todos os comandos comumente usados.** Quando apropriado, mova os comandos usados com frequência das caixas de diálogo para a faixa de opções, especialmente aqueles que são conhecidos como difíceis de encontrar. O ideal é que os usuários sejam capazes de executar tarefas comuns sem usar nenhuma caixa de diálogo.
 
-- **Não use a escalabilidade das faixas de as para justificar a adição de complexidade desnecessária.** Continue para o retentor de exercício não adicione comandos a uma faixa de uma só porque você pode. Mantenha a experiência de comando geral simples. Veja a seguir as maneiras de simplificar a apresentação:
-  - ![captura de tela da minibarra de ferramentas e menu de contexto ](images/cmd-ribbons-image37.png)</br>**Use menus de contexto e mini barras de ferramentas para comandos contextuais in-loco.**
-  - **Mover (ou manter) comandos raramente usados em caixas de diálogo.** Use iniciadores de caixa de diálogo para acessar esses comandos. Você ainda pode usar caixas de diálogo com faixas de as! Apenas tente reduzir a necessidade de usá-los durante tarefas comuns.
-  - **Elimine os recursos redundantes e raramente usados.**
+- **Não use a escalabilidade das faixas de opções para justificar a adição de complexidade desnecessária.** Continue a praticar exercícios e não adicione comandos a uma faixa de opções apenas porque você pode. Mantenha a experiência geral de comando simples. Veja a seguir maneiras de simplificar a apresentação:
+  - ![captura de tela da minibara de ferramentas e do menu de contexto ](images/cmd-ribbons-image37.png)</br>**Use menus de contexto e minibaras de ferramentas para comandos contextuais in-locar.**
+  - **Mover (ou manter) comandos raramente usados nas caixas de diálogo.** Use os iniciadores da caixa de diálogo para acessar esses comandos. Você ainda pode usar caixas de diálogo com faixas de opções! Tente reduzir a necessidade de usá-los durante tarefas comuns.
+  - **Elimine recursos redundantes e raramente usados.**
 
 #### <a name="presentation"></a>Apresentação
 
-- **Apresente cada comando em apenas uma guia. Evite vários caminhos para o mesmo comando, especialmente se o comando exigir muitos cliques para invocar.** Pode parecer uma conveniência para encontrar um comando por meio de vários caminhos. Mas tenha em mente que, quando os usuários encontrarem o que estão procurando, eles param de olhar. É muito fácil para os usuários pressuporem que o primeiro caminho encontrado é o único caminho que é um problema sério se esse caminho não for eficiente. **Exceção:** As guias contextuais podem duplicar alguns comandos das guias Home e INSERT, caso isso impeça a alteração de guias para tarefas contextuais comuns.
-- **Dentro de um grupo, coloque os comandos em sua ordem lógica e, ao mesmo tempo, dê preferência aos comandos usados com mais frequência.** Em geral, os comandos devem ter um fluxo lógico para facilitar a localização, ao mesmo tempo em que os comandos usados com mais frequência aparecem primeiro. Geralmente, os comandos com ícones de 32 pixels aparecem antes dos comandos com ícones de 16 pixels para auxiliar na verificação entre grupos.
-- **Evite colocar comandos destrutivos ao lado dos comandos usados com frequência.** Um comando é considerado destrutivo se seu efeito é generalizado e não pode ser facilmente desfeito ou o efeito não é imediatamente perceptível.
+- **Apresente cada comando em apenas uma guia. Evite vários caminhos para o mesmo comando, especialmente se o comando exigir muitos cliques para invocar.** Pode parecer uma conveniência encontrar um comando por meio de vários caminhos. Mas tenha em mente que, quando os usuários encontram o que estão procurando, eles param de procurar. É muito fácil para os usuários presumirem que o primeiro caminho que eles encontram é o único caminho que será um problema sério se esse caminho for ineficiente. **Exceção:** As guias contextuais podem duplicar alguns comandos das guias Home e Insert se isso impedir a alteração de guias para tarefas contextuais comuns.
+- **Em um grupo, coloque os comandos em sua ordem lógica, dando preferência aos comandos usados com mais frequência.** Em geral, os comandos devem ter um fluxo lógico para torná-los fáceis de encontrar, enquanto ainda têm os comandos usados com mais frequência aparecem primeiro. Em geral, comandos com ícones de 32 x 32 pixels aparecem antes de comandos com ícones de 16 x 16 pixels para auxiliar na verificação entre grupos.
+- **Evite colocar comandos destrutivas ao lado dos comandos usados com frequência.** Um comando será considerado destrutiva se seu efeito for generalizado e não puder ser desfeita facilmente ou se o efeito não for imediatamente perceptível.
 - **Use separadores para indicar comandos fortemente relacionados, como um conjunto de opções mutuamente exclusivas.**
-- ![captura de tela de grupos de fontes e parágrafos ](images/cmd-ribbons-image3.png)<br/> **Considere o uso de grupos de estilo de barra de ferramentas para conjuntos de comandos fortemente relacionados e bem conhecidos que não precisam de rótulos.** Isso permite que você apresente muitos comandos em um espaço compacto sem afetar a descoberta e a facilidade de aprendizado. Para ser bem conhecido, esses comandos são frequentemente usados, reconhecidos instantaneamente e, portanto, tendem a estar na guia início.
+- ![captura de tela dos grupos de fontes e parágrafos ](images/cmd-ribbons-image3.png)<br/> **Considere o uso de grupos de estilo de barra de ferramentas para conjuntos de comandos fortemente relacionados e conhecidos que não precisam de rótulos.** Isso permite que você apresente muitos comandos em um espaço compacto sem afetar a capacidade de descoberta e a facilidade de aprendizado. Para ser tão conhecido, esses comandos são usados com frequência, reconhecidos instantaneamente e, portanto, tendem a estar na guia Página Base.
 
-- **Use ícones de 32 pixels para os comandos rotulados mais importantes e usados com mais frequência.** Ao dimensionar um grupo para baixo, faça com que esses comandos sejam convertidos em ícones de 16x16 pixels.
-- **Evite o posicionamento de comandos arbitrários.** Pense cuidadosamente em sua guia e design de grupo para garantir que os usuários não estejam desperdiçando tempo inspecionando cada guia para localizar o comando desejado.
-- **Evite o posicionamento baseado em marketing.** Os objetivos de marketing em toda a promoção de novos recursos tendem a mudar ao longo do tempo. Considere as versões futuras do seu produto e a quantidade de frustração que uma organização em constante mudança causará.
+- **Use ícones de 32 x 32 pixels para os comandos rotulados mais usados e importantes.** Ao dimensionar um grupo para baixo, transforme esses comandos no último a converter em ícones de 16 x 16 pixels.
+- **Evite o posicionamento arbitrário de comandos.** Pense cuidadosamente no design da guia e do grupo para garantir que os usuários não percam tempo inspecionando cada guia para encontrar o comando que eles querem.
+- **Evite o posicionamento baseado em marketing.** Os objetivos de marketing em torno da promoção de novos recursos tendem a mudar ao longo do tempo. Considere as versões futuras do seu produto e a frustração que uma organização em constante mudança causará.
 
 #### <a name="interaction"></a>Interação
 
-- **Desabilitar comandos que não se aplicam ao contexto atual ou que resultaria em um erro diretamente.** Se for útil, use a [dica de ferramenta aprimorada](glossary.md) para explicar por que o comando está desabilitado. Não oculte esses comandos, pois fazer isso pode fazer com que o layout da faixa de opção seja alterado, tornando a apresentação da faixa de modo instável.
-- **Não atualize rótulos de comando dinamicamente.** Novamente, fazer isso pode fazer com que o layout da guia seja alterado, resultando em uma aparência instável. Em vez disso, crie comandos de design para que eles funcionem com rótulos constantes.
+- **Desabilitar comandos que não se aplicam ao contexto atual ou que resultariam diretamente em um erro.** Se útil, use a [dica de ferramenta aprimorada](glossary.md) para explicar por que o comando está desabilitado. Não o oculta, pois isso pode fazer com que o layout da faixa de opções seja alterado, tornando a apresentação da faixa de opções instável.
+- **Não atualize os rótulos de comando dinamicamente.** Novamente, fazer isso pode fazer com que o layout da guia mude, resultando em uma aparência instável. Em vez disso, projete comandos para que eles funcionem com rótulos constantes.
 
     | Correto                                                                                       | Incorreto                                                                 |
     |-------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-    | ![captura de tela de inserir anotação e excluir nota ](images/cmd-ribbons-image38.png)<br/> Desabilitar comandos quando eles não estiverem disponíveis | ![captura de tela de inserir anotação, sem observação de exclusão ](images/cmd-ribbons-image39.png)<br/>Não ocultar comandos, mesmo quando eles não estiverem disponíveis |
+    | ![captura de tela da observação de inserção e observação de exclusão ](images/cmd-ribbons-image38.png)<br/> Desabilitar comandos quando eles não estão disponíveis | ![captura de tela da observação de inserção, nenhuma observação de exclusão ](images/cmd-ribbons-image39.png)<br/>Não ocultar comandos, mesmo quando eles não estão disponíveis |
 
-- **Prefira controles diretos.** Um comando é direto se invocado com um único clique (ou seja, sem navegar pelos menus). No entanto, com exceção das galerias na faixa de das, os controles diretos não dão suporte à visualização dinâmica, portanto, a necessidade de visualização dinâmica também é um fator.
-- **Use a visualização dinâmica** para indicar o efeito das opções quando um comando estiver entre um conjunto relacionado de opções de formatação e a visualização dinâmica for importante e prática, especialmente se os usuários provavelmente escolherem a opção errada.
-  - Se o comando for usado com frequência, use uma galeria de faixa de bits para direcionamento.
-  - Se o comando for usado com pouca frequência, use uma galeria suspensa.
-- **Expor comandos diretos** usando os seguintes controles na seguinte ordem de preferência
-  - **Botões de comando, caixas de seleção, botões de opção e galerias in-loco.** Eles são sempre diretos.
+- **Prefira controles diretos.** Um comando será direto se invocado com um único clique (ou seja, sem navegar pelos menus). No entanto, com exceção das galerias na faixa de opções, os controles diretos não suportam a visualização ao vivo, portanto, a necessidade de visualização ao vivo também é um fator.
+- **Use a** visualização ao vivo para indicar o efeito das opções quando um comando estiver entre um conjunto relacionado de opções de formatação e a visualização ao vivo for importante e prática, especialmente se os usuários provavelmente escolherem a opção errada caso contrário.
+  - Se o comando for usado com frequência, use uma galeria na faixa de opções para direcionamento.
+  - Se o comando for usado raramente, use uma galeria listada.
+- **Expor comandos diretos** usando os seguintes controles na ordem de preferência a seguir
+  - **Botões de comando, caixas de seleção, botões de rádio e galerias in-locar.** Eles são sempre diretos.
   - **Botões de divisão.** Direto para o comando mais comum, mas indireto para as variações de comando.
-  - **Botões de menu.** Eles são indiretos, mas apresentam muitos comandos que são fáceis de encontrar.
+  - **Botões de menu.** Eles são indiretos, mas apresentam muitos comandos fáceis de encontrar.
   - **Caixas de texto (com controles de rotação).** A entrada de texto geralmente requer mais esforço do que os outros tipos de controle.
-- ![captura de tela da faixa de faixas com apenas botões de menu ](images/cmd-ribbons-image42.png)</br>Se a faixa de faixas consistir principalmente de botões de menu quando forem exibidas em tamanho normal, você também poderá usar uma barra de menus.
-- **Prefira comandos imediatos.** ![captura de tela do botão de impressão de divisão e seu submenu ](images/cmd-ribbons-image43.png)<br/>Um comando é imediato se entrar em vigor imediatamente (ou seja, sem caixas de diálogo para coletar entrada adicional). Se um comando puder exigir entrada, considere usar um botão de divisão, com o comando imediato na parte do botão e os comandos que exigem entrada no submenu.
+- ![captura de tela da faixa de opções com apenas botões de menu ](images/cmd-ribbons-image42.png)</br>Se a faixa de opções consistir principalmente em botões de menu quando exibidos em tamanho total, você também pode usar uma barra de menus.
+- **Prefira comandos imediatos.** ![captura de tela do botão de impressão dividida e seu submenu ](images/cmd-ribbons-image43.png)<br/>Um comando será imediato se entrar em vigor imediatamente (ou seja, sem caixas de diálogo para coletar entradas adicionais). Se um comando pode exigir entrada, considere usar um botão de divisão, com o comando imediato na parte do botão e os comandos que exigem entrada no submenu.
 
 ### <a name="galleries"></a>Galerias
 
-**Use uma [Galeria](glossary.md)** se:
+**Use uma [galeria](glossary.md)** se:
 
-- **Há um conjunto bem definido de opções relacionadas que os usuários normalmente escolhem.** Pode haver um número não associado de variações, mas as seleções prováveis devem estar bem contidas. Se as opções não estiverem fortemente relacionadas, considere o uso de galerias separadas.
-- **As opções são mais bem expressas visualmente, como recursos de formatação.** O uso de miniaturas torna mais fácil navegar, entender e fazer escolhas. Embora as escolhas possam ser rotuladas, a seleção é feita visualmente e os rótulos de texto não devem ser necessários para entender as opções.
-- **As opções mostram o resultado que é obtido imediatamente com um único clique.** Não deve haver nenhuma caixa de diálogo de acompanhamento para esclarecer ainda mais a intenção do usuário ou um conjunto de etapas para atingir o resultado indicado. Se os usuários quiserem ajustar a escolha, deixe que eles façam isso posteriormente.
+- **Há um conjunto de opções bem definido e relacionado entre os quais os usuários normalmente escolhem.** Pode haver um número irrível de variações, mas as seleções prováveis devem estar bem contidas. Se as opções não estão fortemente relacionadas, considere o uso de galerias separadas.
+- **As opções são melhor expressas visualmente, como recursos de formatação.** O uso de miniaturas torna mais fácil procurar, entender e fazer escolhas. Embora as opções possam ser rotuladas, a seleção é feita visualmente e os rótulos de texto não devem ser necessários para entender as opções.
+- **As opções mostram o resultado obtido imediatamente com um único clique.** Não deve haver nenhuma caixa de diálogo de acompanhamento para esclarecer ainda mais a intenção do usuário ou um conjunto de etapas para obter o resultado indicado. Se os usuários quiserem ajustar a escolha, deixe-os fazer isso posteriormente.
 
-**Use uma galeria na faixa de faixas** se:
+**Use uma galeria na faixa de opções** se:
 
-- **As opções são usadas com frequência.** As opções precisam do espaço e valem o espaço potencialmente em uso de outros comandos.
+- **As opções são usadas com frequência.** As opções precisam do espaço e vale a pena o espaço potencialmente sendo retirado de outros comandos.
 - **Para uso típico, não é necessário agrupar ou filtrar as opções apresentadas.**
-- **As escolhas podem ser exibidas com eficiência na altura de uma faixa de opções (que é de 48 pixels).**
+- **As opções podem ser exibidas efetivamente dentro da altura de uma faixa de opções (que é de 48 pixels).**
 
-#### <a name="thumbnails-in-galleries"></a>Miniaturas nas galerias
+#### <a name="thumbnails-in-galleries"></a>Miniaturas em galerias
 
-**Escolha o menor tamanho de miniatura da Galeria padrão** que faz o trabalho bem.
+**Escolha o menor tamanho de miniatura** padrão da galeria que faz o trabalho bem.
 
-- Para galerias na faixa de bits, use miniaturas de 16x16, 48x48 ou 64x48 pixels.
-- Para galerias suspensas, use miniaturas de 16x16, 32x32, 48x48, 64x48, 72x96, 96x72, 96x96 ou 128x128 pixels.
-- Todos os itens da Galeria devem ter o mesmo tamanho de miniatura.
+- Para galerias na faixa de opções, use miniaturas de 16 x 16, 48 x 48 ou 64 x 48 pixels.
+- Para galerias listadas, use miniaturas de 16x16, 32x32, 48x48, 64x48, 72x96, 96x72, 96x96 ou 128x128 pixels.
+- Todos os itens da galeria devem ter o mesmo tamanho de miniatura.
 
-Para galerias na faixa de opções:
+Para galerias na faixa de bits:
 
-- **Exibir um mínimo de três opções; mais se houver espaço.** Se não houver espaço suficiente para exibir pelo menos três opções no tamanho típico da janela, use uma galeria de lista de opções.
-- **Expanda galerias na faixa de opções para aproveitar o espaço disponível.** Use o espaço adicional para mostrar mais itens e torná-los mais fáceis de escolher com um único clique.
+- **Exibir um mínimo de três opções; mais se houver espaço.** Se não houver espaço suficiente para exibir pelo menos três opções no tamanho típico da janela, use uma galeria suspensa em vez disso.
+- **Expanda as galerias de faixa de bits para aproveitar o espaço disponível.** Use o espaço adicional para mostrar mais itens e torná-los mais fáceis de escolher com um único clique.
 
-Para galerias de lista de usuários:
+Para galerias suspensas:
 
-- **Exibir a galeria de uma caixa de combinação, lista de menus suspensos, botão de divisão ou botão de menu.**
-- **Se o usuário clicar na janela principal para descartar a galeria listada, basta descartar a galeria sem selecionar ou modificar o conteúdo da janela principal.**
-- **Se uma galeria tiver muitas opções e algumas opções raramente são usadas, simplifique a galeria padrão concentrando-se nas opções comumente usadas.** Para os comandos restantes, forneça um comando apropriado na parte inferior da lista de menus da galeria.
-  - Se o comando mostrar uma lista de mais variações, nomee-o como "Mais `singular feature name` opções..."
-  - Se o comando apresentar uma caixa de diálogo que permite que os usuários criem suas próprias opções personalizadas, nomeia-a como `feature name` "Personalizado..."
-- **Organize as opções em grupos, se isso fizer isso, torna a navegação mais eficiente.**
-- ![captura de tela da galeria de símbolos e filtros ](images/cmd-ribbons-image44.png)<br/>**Se uma galeria tiver muitos itens, considere adicionar um filtro para ajudar os usuários a encontrar opções com mais eficiência.** Para evitar confusão, inicialmente, exibe a galeria não filtrada. No entanto, a maioria das galerias não deve exigir um filtro porque elas não devem ter muitas opções e usar grupos deve ser suficiente.
+- **Exiba a Galeria de uma caixa de combinação, lista suspensa, botão de divisão ou botão de menu.**
+- **Se o usuário clicar na janela principal para ignorar a Galeria suspensa, apenas ignore a Galeria sem selecionar ou modificar o conteúdo da janela principal.**
+- **Se uma galeria tiver muitas opções e algumas opções forem usadas raramente, Simplifique a Galeria padrão concentrando-se nas opções usadas com frequência.** Para os comandos restantes, forneça um comando apropriado na parte inferior da lista suspensa galeria.
+  - Se o comando mostrar uma lista de mais variações, nomeie-a como "mais `singular feature name` opções..."
+  - Se o comando apresentar uma caixa de diálogo que permite aos usuários criar suas próprias opções personalizadas, nomeie-o como "Custom `feature name` ..."
+- **Organize as opções em grupos, se isso tornar a navegação mais eficiente.**
+- ![captura de tela de galeria de símbolos e filtros ](images/cmd-ribbons-image44.png)<br/>**Se uma galeria tiver muitos itens, considere adicionar um filtro para ajudar os usuários a localizar escolhas com mais eficiência.** Para evitar confusão, inicialmente, exiba a Galeria sem filtro. No entanto, a maioria das galerias não deve exigir um filtro porque eles não devem ter tantas opções, e o uso de grupos deve ser suficiente.
 
 ### <a name="command-previews"></a>Visualizações de comando
 
-- **Use previews para mostrar o efeito de um comando sem que os usuários o executem primeiro.** Usando visualizações úteis, você pode melhorar a eficiência e a facilidade de aprendizado do programa e reduzir a necessidade de avaliação e erro. Para os diferentes tipos de visualizações de comando, consulte [Visualizações](#previews) na seção Conceitos de Design deste artigo.
-- **Para visualizações ao vivo, certifique-se de que a versão prévia possa ser aplicada e o estado atual restaurado em 500 milissegundos.** Isso requer a capacidade de aplicar alterações de formatação rapidamente e de uma maneira que seja interruptível. Os usuários devem ser capazes de avaliar opções diferentes rapidamente para que as visualizações ao vivo tenham seu benefício completo.
-- **Evite usar texto em visualizações.** Caso contrário, as imagens de visualização deverão ser localizadas.
+- **Use visualizações para mostrar o efeito de um comando sem que os usuários precisem executá-lo primeiro.** Usando as visualizações úteis, você pode melhorar a eficiência e a facilidade de aprendizado de seu programa e reduzir a necessidade de avaliação e erro. Para os diferentes tipos de visualizações de comando, consulte [visualizações](#previews) na seção conceitos de design deste artigo.
+- **Para visualizações dinâmicas, verifique se a visualização pode ser aplicada e o estado atual restaurado em 500 milissegundos.** Isso requer a capacidade de aplicar alterações de formatação rapidamente e de forma a ser passível de interrupção. Os usuários devem ser capazes de avaliar diferentes opções rapidamente para que as visualizações dinâmicas tenham seu benefício total.
+- **Evite usar texto em visualizações.** Caso contrário, as imagens de visualização precisarão ser localizadas.
 
 ### <a name="icons"></a>Ícones
 
-- ![captura de tela da lista lista e caixas de seleção ](images/cmd-ribbons-image45.png)<br/>**Forneça ícones para todos os controles de faixa de opções, exceto listas listadas, caixas de seleção e botões de rádio.** A maioria dos comandos exigirá ícones de 32 x 32 e 16 x 16 pixels (somente ícones de 16 x 16 pixels são usados pela Barra de Ferramentas de Acesso Rápido). As galerias normalmente usam ícones de 16 x 16, 48 x 48 ou 64 x 48 pixels.
+- ![captura de tela de lista suspensa e caixas de seleção ](images/cmd-ribbons-image45.png)<br/>**Forneça ícones para todos os controles da faixa de opção, exceto listas suspensas, caixas de seleção e botões de rádio.** A maioria dos comandos exigirá ícones de 32x32 e 16x16 pixels (somente ícones de 16x16 pixels são usados pela barra de ferramentas de acesso rápido). As galerias normalmente usam ícones de 48x48 de 16x16, de 64x48 ou de pixels.
 - **Forneça ícones exclusivos.** Não use o mesmo ícone para comandos diferentes.
-- **Certifique-se de que os ícones da faixa de opções estão claramente visíveis em relação à cor da tela de fundo da faixa de opções.** Sempre avalie ícones de faixa de opções no contexto e no modo de alto contraste.
-- **Escolha designs de ícone que comuniquem claramente seu efeito,** especialmente para os comandos usados com mais frequência. Faixas de opções bem projetadas têm ícones autoexplicativos para ajudar os usuários a encontrar e entender comandos com eficiência.
-- **Escolha ícones reconhecíveis e diferenciáveis,** especialmente para os comandos usados com mais frequência. Certifique-se de que os ícones tenham cores e formas distintas. Isso ajuda os usuários a encontrar os comandos rapidamente, mesmo que eles não se lembre do símbolo de ícone.
+- **Certifique-se de que os ícones da faixa de faixas estejam claramente visíveis em relação à cor da faixa de** Sempre avalie os ícones da faixa de posição no contexto e no modo de alto contraste.
+- **Escolha os designs de ícone que comunicam claramente seu efeito,** especialmente para os comandos usados com mais frequência. As faixas de faixa bem projetadas têm ícones autoexplicativos para ajudar os usuários a localizar e entender os comandos com eficiência.
+- **Escolha ícones que sejam reconhecíveis e distinguíveis,** especialmente para os comandos usados com mais frequência. Verifique se os ícones têm formas e cores distintivos. Isso ajuda os usuários a localizar os comandos rapidamente, mesmo que não se lembrem do símbolo de ícone.
 
     | Correto                                                                                                 | Incorreto                                                                               |
     |--------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
-    | ![captura de tela do dropper de olho azul e lápis amarelo ](images/cmd-ribbons-image46.png)<br/>Use forma e cor para tornar ícones fáceis de distinguir. | ![captura de tela do dropper de olho azul e lápis azul ](images/cmd-ribbons-image47.png)<br/> Ícones que têm a mesma cor são difíceis de distinguir|
+    | ![captura de tela do conta-gotas de olho azul e lápis amarelo ](images/cmd-ribbons-image46.png)<br/>Use forma e cor para criar ícones que são fáceis de distinguir. | ![captura de tela do conta-gotas de olho azul e lápis azul ](images/cmd-ribbons-image47.png)<br/> Os ícones que têm a mesma cor são difíceis de distinguir|
 
-- ![captura de tela do comando comments no contêiner pop-up ](images/cmd-ribbons-image48.png)<br/>**Considere criar ícones de grupo pop-up colocando o ícone de 16 x 16 pixels do comando mais proeminente no grupo dentro de um contêiner visual de 32 x 32 pixels.** Você não precisa criar ícones diferentes para grupos pop-up.
-- ![captura de tela dos botões de comando de formatação de texto ](images/cmd-ribbons-image25.png)<br/>**Se for útil, altere o ícone para refletir o estado atual.** Fazer isso é especialmente útil para botões divididos cujo efeito padrão pode ser alterado.
-- **Certifique-se de que os ícones de faixa de opções estão em conformidade com as diretrizes do ícone de estilo aero.** No entanto, os ícones de faixa de opções são mostrados diretamente em vez de serem mostrados em perspectiva.
+- ![captura de tela do comando de comentários no contêiner Popup ](images/cmd-ribbons-image48.png)<br/>**Considere a criação de ícones de grupos de pop-up colocando o ícone de 16x16 pixels do comando mais proeminente no grupo dentro de um contêiner visual de 32 pixels.** Você não precisa criar ícones diferentes para grupos pop-up.
+- ![captura de tela dos botões de comando de formatação de texto ](images/cmd-ribbons-image25.png)<br/>**Se for útil, altere o ícone para refletir o estado atual.** Fazer isso é especialmente útil para botões de divisão cujo efeito padrão pode ser alterado.
+- **Verifique se os ícones da faixa de medida estão em conformidade com as diretrizes de ícone do estilo Aero.** No entanto, os ícones da faixa de faixas são exibidos diretamente em, em vez de serem mostrados em perspectiva.
 
 | Correto                                                                                                 | Incorreto                                                                               |
     |--------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
@@ -539,50 +539,50 @@ Para galerias de lista de usuários:
  
 ### <a name="enhanced-tooltips"></a>Dicas de ferramentas aprimoradas
 
-- **Todos os comandos da faixa de opções devem** ter dicas de ferramenta aprimoradas para dar o nome do comando, a tecla de atalho, a descrição e as informações complementares opcionais. Evite dicas de ferramenta que simplesmente restate o rótulo.
+- **Todos os comandos da faixa de ferramentas devem ter dicas de ferramenta aprimoradas** para fornecer o nome do comando, a tecla de atalho, a descrição e as informações complementares opcionais. Evite dicas de ferramenta que simplesmente redeclarem o rótulo.
 
     **Incorreto:**
 
     ![captura de tela da dica de ferramenta que repete o nome do comando ](images/cmd-ribbons-image51.png)
 
-    Neste exemplo, a dica de ferramenta simplesmente restauria o rótulo do comando.
+    Neste exemplo, a dica de ferramenta simplesmente renomeia o rótulo de comando.
 
-- **Quando prático, descreva completamente o comando usando uma descrição concisa.** Link para Ajuda somente se mais explicações são realmente necessárias.
+- **Quando for prático, descreva completamente o comando usando uma descrição concisa.** Vincule-se à ajuda somente se uma explicação adicional for realmente necessária.
 
     **Incorreto:**
 
     ![captura de tela da dica de ferramenta para o comando tachado ](images/cmd-ribbons-image52.png)
 
-    Neste exemplo, o comando não precisa de Ajuda.
+    Neste exemplo, o comando não precisa de ajuda.
 
-- **Quando útil, ilustra o efeito do comando usando uma versão prévia.**
+- **Quando for útil, ilustre o efeito do comando usando uma visualização.**
 
-    ![captura de tela da dica de ferramenta e do gráfico para inserir gráfico ](images/cmd-ribbons-image53.png)
+    ![captura de tela de dica de ferramenta e grafo para inserir gráfico ](images/cmd-ribbons-image53.png)
 
-    Neste exemplo, a imagem da dica de ferramenta ilustra o efeito do comando.
+    Neste exemplo, a imagem de dica de ferramenta ilustra o efeito do comando.
 
-Para diretrizes de rotulagem, consulte [Rótulos de dica de ferramenta aprimorados.](#enhanced-tooltips)
+Para obter diretrizes de rotulamento, consulte [Rótulos de dica de ferramenta aprimorados](#enhanced-tooltips).
 
-### <a name="access-keys-and-keytips"></a>Chaves de acesso e dicas de chave
+### <a name="access-keys-and-keytips"></a>Teclas de acesso e dicas de tecla
 
-Dicas de tecla são o mecanismo usado para exibir chaves de acesso para comandos exibidos diretamente em uma faixa de opções.
+Keytips são o mecanismo usado para exibir chaves de acesso para comandos exibidos diretamente em uma faixa de faixas.
 
-As chaves de acesso para comandos de menu suspenso são indicadas com um caractere sublinhado. Elas diferem das chaves de acesso do menu das seguintes maneiras:
+As chaves de acesso para comandos de menu suspenso são indicadas com um caractere sublinhado. Elas diferem das chaves de acesso de menu das seguintes maneiras:
 
-- Duas chaves de acesso de caractere podem ser usadas. Por exemplo, o FP pode ser usado para acessar o comando Format desatar.
-- As atribuições de chave de acesso são mostradas usando dicas em vez de sublinhados, portanto, a largura e os descendentes de caracteres não são um fator para fazer atribuições.
+- Podem ser usadas duas chaves de acesso de caractere. Por exemplo, FP pode ser usado para acessar o comando de pincel de formatação.
+- As atribuições de chave de acesso são mostradas usando dicas em vez de sublinhados, portanto, a largura de caractere e os descendentes não são um fator para fazer atribuições.
 
-- **Atribua chaves de acesso a todas as guias e comandos da faixa de opções.** A única exceção possível é para comandos provenientes de complementos herdado.
-- **Para o botão Aplicativo e a Barra de Ferramentas de Acesso Rápido:**
-  - Atribua F ao botão Aplicativo. Essa atribuição é usada devido à similaridade do botão Aplicativo com o menu Arquivo tradicional.
-  - ![captura de tela de dicas de tecla de comando em uma faixa de opções ](images/cmd-ribbons-image54.png)<br/>Para a Barra de Ferramentas de Acesso Rápido e listas de arquivos usadas recentemente, atribua chaves de acesso numericamente.
-- ![captura de tela mostrando dicas de tecla para guias ](images/cmd-ribbons-image55.png)<br/>**Para guias:**
-  - Atribua H à Página Home.
+- **Atribua chaves de acesso a todos os comandos e guias da faixa de e.** A única exceção possível é para comandos provenientes de suplementos herdados.
+- **Para o botão aplicativo e a barra de ferramentas de acesso rápido:**
+  - Atribua F ao botão do aplicativo. Essa atribuição é usada devido à similaridade do botão do aplicativo para o menu de arquivo tradicional.
+  - ![captura de tela de dicas de atalho de comando em uma faixa de faixas ](images/cmd-ribbons-image54.png)<br/>Para a barra de ferramentas de acesso rápido e as listas de arquivos usados recentemente, atribua chaves de acesso numericamente.
+- ![captura de tela mostrando KeyTips para guias ](images/cmd-ribbons-image55.png)<br/>**Para guias:**
+  - Atribua H a página inicial.
   - Começando com as guias usadas com mais frequência, atribua a primeira letra do rótulo.
-  - Para todas as guias que não podem ser atribuídas à primeira letra, escolha uma consoante distinta ou uma voga no rótulo.
-  - Para programas que costumavam dar suporte a barras de menu, procure manter a compatibilidade da chave de acesso com a melhor extensão prática. Evite atribuir significados diferentes para acessar chaves de categorias de menu herdadas. Por exemplo, se a versão da barra de menus herdada de um programa tiver um menu Editar, procure usar uma chave de acesso E para a guia equivalente. Se não houver nenhuma guia equivalente, não atribua uma chave de acesso E a nenhuma guia para evitar confusão.
-- ![captura de tela mostrando dicas de tecla para uma faixa de opções ](images/cmd-ribbons-image56.png)<br/>**Para comandos, menus e submenus da faixa de opções:**
-  - Atribua combinações de chave de acesso exclusivas em uma guia. Você pode reutilizar combinações de teclas de acesso em guias diferentes.
+  - Para qualquer guia que não possa ser atribuída à primeira letra, escolha uma consoante distinta ou uma vogal no rótulo.
+  - Para programas que usaram suporte para barras de menu, busque manter a compatibilidade de chave de acesso com a melhor extensão prática. Evite atribuir diferentes significados para acessar chaves de categorias de menu herdadas. Por exemplo, se a versão da barra de menus herdada de um programa tivesse um menu Editar, busque usar uma tecla de acesso E para a guia equivalente. Se não houver nenhuma guia equivalente, não atribua uma tecla de acesso E a qualquer guia para evitar confusão.
+- ![captura de tela mostrando KeyTips para uma faixa de uma ](images/cmd-ribbons-image56.png)<br/>**Para comandos, menus e submenus da faixa de medida:**
+  - Atribua combinações de teclas de acesso exclusivas dentro de uma guia. Você pode reutilizar combinações de teclas de acesso dentro de guias diferentes.
   - Sempre que possível, atribua as chaves de acesso padrão para comandos comumente usados. Consulte a [tabela de chave de acesso padrão](inter-keyboard.md).
   - Para outros comandos:
     - Para os comandos usados com mais frequência, escolha letras no início da primeira ou segunda palavra do rótulo, preferivelmente a primeira letra.

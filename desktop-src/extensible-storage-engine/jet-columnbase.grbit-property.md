@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6a91cfdbcfd54996d5cb0ab1e955efafd09f2022
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ef2062acb86c4be98dca3e3299b73dce14b1a4134b559954af8db0c87e1603b0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105748060"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120116216"
 ---
 # <a name="jet_columnbasegrbit-property"></a>Propriedade JET_COLUMNBASE. grbit
 

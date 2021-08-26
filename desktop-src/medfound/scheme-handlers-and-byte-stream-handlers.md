@@ -4,12 +4,12 @@ ms.assetid: b0113527-f22c-4519-b1cf-fea54bff4090
 title: Manipuladores de esquema e Byte-Stream manipuladores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cc7bde81a02762cd9c82e0a7d031582c856da6984ab231775580ddf249caca23
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2f5cbb2ee0af93e456e86b6eab16ff44705f5380
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118058221"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122881775"
 ---
 # <a name="scheme-handlers-and-byte-stream-handlers"></a>Manipuladores de esquema e Byte-Stream manipuladores
 
@@ -47,7 +47,7 @@ HKEY_LOCAL_MACHINE
                   {00000000-0000-0000-0000-000000000000} = REG_SZ
 ```
 
-em *<scheme>* que é o esquema de URL que o manipulador foi projetado para analisar. O esquema inclui o caractere ':' à parte final; por exemplo, "http:".
+em *&lt; que scheme &gt;* é o esquema de URL que o manipulador foi projetado para analisar. O esquema inclui o caractere ':' à parte final; por exemplo, "http:".
 
 Para registrar um novo manipulador de esquema, adicione uma entrada cujo nome é o CLSID do manipulador de esquema, no formato de cadeia de caracteres canônica: `{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}` . O valor da entrada é uma cadeia de caracteres (REG SZ) que contém uma breve descrição do manipulador, como \_ "Meu Manipulador de Esquema". A parte importante da entrada é a CLSID. O resolvedor de origem cria o manipulador chamando **CoCreateInstance** com essa CLSID.
 
@@ -84,7 +84,7 @@ HKEY_LOCAL_MACHINE
                   {00000000-0000-0000-0000-000000000000} = REG_SZ
 ```
 
-em *<ExtensionOrMimeType>* que é a extensão de nome de arquivo ou o tipo MIME. As extensões de arquivo incluem o caractere '.' inicial; por exemplo, ".wmv".
+em *&lt; que ExtensionOrMimeType é &gt;* a extensão de nome de arquivo ou o tipo MIME. As extensões de arquivo incluem o caractere '.' inicial; por exemplo, ".wmv".
 
 A extensão de nome de arquivo faz parte da URL, fornecida pelo aplicativo. O tipo MIME pode estar disponível por meio do atributo [**\_ MF BYTESTREAM \_ CONTENT \_ TYPE**](mf-bytestream-content-type-attribute.md) no fluxo de byte.
 

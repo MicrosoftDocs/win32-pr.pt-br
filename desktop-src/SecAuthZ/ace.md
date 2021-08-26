@@ -1,177 +1,53 @@
 ---
-description: Lista os tipos de ACE definidos atualmente.
+description: Lista os tipos ACE definidos no momento.
 ms.assetid: 980b8242-2ba2-469f-b834-da7d3fb22e14
-title: ACE (WinNT. h)
+title: ACE (Winnt.h)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: de555170bc8b7c1594b38adaa95d19b7e9ace54c8241fc971ea9f5383cf3e115
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: afa93490c4cf74ac33e3b15eeb888f011f81aa2b
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117785215"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122470982"
 ---
-# <a name="ace"></a>PERFEITA
+# <a name="ace"></a>ACE
 
-Uma **Ace** é uma [*entrada de controle de acesso*](/windows/desktop/SecGloss/a-gly) em uma ACL ( [*lista de controle de acesso*](/windows/desktop/SecGloss/a-gly) ).
+Uma **ACE** é uma [*entrada de controle de acesso*](/windows/desktop/SecGloss/a-gly) em uma ACL [*(lista de controle de*](/windows/desktop/SecGloss/a-gly) acesso).
 
-A tabela a seguir lista os tipos de **Ace** definidos atualmente.
+A tabela a seguir lista os tipos **ACE** definidos no momento.
 
 
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Tipo de ACE</th>
-<th>Estrutura</th>
-<th>Tipo de ACL</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li>Acesso permitido</li>
-</ul></td>
-<td><a href="/windows/desktop/api/Winnt/ns-winnt-access_allowed_ace"><strong>ACCESS_ALLOWED_ACE</strong></a></td>
-<td>DACL</td>
-</tr>
-<tr class="even">
-<td><ul>
-<li>Acesso permitido</li>
-<li>Permite o retorno de chamada durante a verificação de acesso</li>
-</ul></td>
-<td><a href="/windows/desktop/api/Winnt/ns-winnt-access_allowed_callback_ace"><strong>ACCESS_ALLOWED_CALLBACK_ACE</strong></a></td>
-<td>DACL</td>
-</tr>
-<tr class="odd">
-<td><ul>
-<li>Acesso permitido</li>
-<li>Específico do objeto</li>
-</ul></td>
-<td><a href="/windows/desktop/api/Winnt/ns-winnt-access_allowed_object_ace"><strong>ACCESS_ALLOWED_OBJECT_ACE</strong></a></td>
-<td>DACL</td>
-</tr>
-<tr class="even">
-<td><ul>
-<li>Acesso permitido</li>
-<li>Específico do objeto</li>
-<li>Permite o retorno de chamada durante a verificação de acesso</li>
-</ul></td>
-<td><a href="/windows/desktop/api/Winnt/ns-winnt-access_allowed_callback_object_ace"><strong>ACCESS_ALLOWED_CALLBACK_OBJECT_ACE</strong></a></td>
-<td>DACL</td>
-</tr>
-<tr class="odd">
-<td><ul>
-<li>Acesso negado</li>
-</ul></td>
-<td><a href="/windows/desktop/api/Winnt/ns-winnt-access_denied_ace"><strong>ACCESS_DENIED_ACE</strong></a></td>
-<td>DACL</td>
-</tr>
-<tr class="even">
-<td><ul>
-<li>Acesso negado</li>
-<li>Permite o retorno de chamada durante a verificação de acesso</li>
-</ul></td>
-<td><a href="/windows/desktop/api/Winnt/ns-winnt-access_denied_callback_ace"><strong>ACCESS_DENIED_CALLBACK_ACE</strong></a></td>
-<td>DACL</td>
-</tr>
-<tr class="odd">
-<td><ul>
-<li>Acesso negado</li>
-<li>Específico do objeto</li>
-<li>Permite o retorno de chamada durante a verificação de acesso</li>
-</ul></td>
-<td><a href="/windows/desktop/api/Winnt/ns-winnt-access_denied_callback_object_ace"><strong>ACCESS_DENIED_CALLBACK_OBJECT_ACE</strong></a></td>
-<td>DACL</td>
-</tr>
-<tr class="even">
-<td><ul>
-<li>Acesso negado</li>
-<li>Específico do objeto</li>
-</ul></td>
-<td><a href="/windows/desktop/api/Winnt/ns-winnt-access_denied_object_ace"><strong>ACCESS_DENIED_OBJECT_ACE</strong></a></td>
-<td>DACL</td>
-</tr>
-<tr class="odd">
-<td><ul>
-<li>Alarme do sistema</li>
-</ul></td>
-<td><a href="/windows/desktop/api/Winnt/ns-winnt-system_alarm_ace"><strong>SYSTEM_ALARM_ACE</strong></a></td>
-<td>Sistema</td>
-</tr>
-<tr class="even">
-<td><ul>
-<li>Alarme do sistema</li>
-<li>Permite o retorno de chamada durante a verificação de acesso</li>
-</ul></td>
-<td><a href="/windows/desktop/api/Winnt/ns-winnt-system_alarm_callback_ace"><strong>SYSTEM_ALARM_CALLBACK_ACE</strong></a></td>
-<td>Sistema</td>
-</tr>
-<tr class="odd">
-<td><ul>
-<li>Alarme do sistema</li>
-<li>Específico do objeto</li>
-<li>Permite o retorno de chamada durante a verificação de acesso</li>
-</ul></td>
-<td><a href="/windows/desktop/api/Winnt/ns-winnt-system_alarm_callback_object_ace"><strong>SYSTEM_ALARM_CALLBACK_OBJECT_ACE</strong></a></td>
-<td>Sistema</td>
-</tr>
-<tr class="even">
-<td><ul>
-<li>Alarme do sistema</li>
-<li>Específico do objeto</li>
-</ul></td>
-<td><a href="/windows/desktop/api/winnt/ns-winnt-system_alarm_object_ace"><strong>SYSTEM_ALARM_OBJECT_ACE</strong></a></td>
-<td>Sistema</td>
-</tr>
-<tr class="odd">
-<td><ul>
-<li>Auditoria do sistema</li>
-</ul></td>
-<td><a href="/windows/desktop/api/Winnt/ns-winnt-system_audit_ace"><strong>SYSTEM_AUDIT_ACE</strong></a></td>
-<td>Sistema</td>
-</tr>
-<tr class="even">
-<td><ul>
-<li>Auditoria do sistema</li>
-<li>Permite o retorno de chamada durante a verificação de acesso</li>
-</ul></td>
-<td><a href="/windows/desktop/api/Winnt/ns-winnt-system_audit_callback_ace"><strong>SYSTEM_AUDIT_CALLBACK_ACE</strong></a></td>
-<td>Sistema</td>
-</tr>
-<tr class="odd">
-<td><ul>
-<li>Auditoria do sistema</li>
-<li>Específico do objeto</li>
-<li>Permite o retorno de chamada durante a verificação de acesso</li>
-</ul></td>
-<td><a href="/windows/desktop/api/Winnt/ns-winnt-system_audit_callback_object_ace"><strong>SYSTEM_AUDIT_CALLBACK_OBJECT_ACE</strong></a></td>
-<td>Sistema</td>
-</tr>
-<tr class="even">
-<td><ul>
-<li>Auditoria do sistema</li>
-<li>Específico do objeto</li>
-</ul></td>
-<td><a href="/windows/desktop/api/Winnt/ns-winnt-system_alarm_object_ace"><strong>SYSTEM_AUDIT_OBJECT_ACE</strong></a></td>
-<td>Sistema</td>
-</tr>
-</tbody>
-</table>
+
+| Tipo ACE | Estrutura | Tipo de ACL | 
+|----------|-----------|----------|
+| <ul><li>Acesso permitido</li></ul> | <a href="/windows/desktop/api/Winnt/ns-winnt-access_allowed_ace"><strong>ACCESS_ALLOWED_ACE</strong></a> | Discricionário | 
+| <ul><li>Acesso permitido</li><li>Permite o retorno de chamada durante a verificação de acesso</li></ul> | <a href="/windows/desktop/api/Winnt/ns-winnt-access_allowed_callback_ace"><strong>ACCESS_ALLOWED_CALLBACK_ACE</strong></a> | Discricionário | 
+| <ul><li>Acesso permitido</li><li>Específico do objeto</li></ul> | <a href="/windows/desktop/api/Winnt/ns-winnt-access_allowed_object_ace"><strong>ACCESS_ALLOWED_OBJECT_ACE</strong></a> | Discricionário | 
+| <ul><li>Acesso permitido</li><li>Específico do objeto</li><li>Permite o retorno de chamada durante a verificação de acesso</li></ul> | <a href="/windows/desktop/api/Winnt/ns-winnt-access_allowed_callback_object_ace"><strong>ACCESS_ALLOWED_CALLBACK_OBJECT_ACE</strong></a> | Discricionário | 
+| <ul><li>Acesso negado</li></ul> | <a href="/windows/desktop/api/Winnt/ns-winnt-access_denied_ace"><strong>ACCESS_DENIED_ACE</strong></a> | Discricionário | 
+| <ul><li>Acesso negado</li><li>Permite o retorno de chamada durante a verificação de acesso</li></ul> | <a href="/windows/desktop/api/Winnt/ns-winnt-access_denied_callback_ace"><strong>ACCESS_DENIED_CALLBACK_ACE</strong></a> | Discricionário | 
+| <ul><li>Acesso negado</li><li>Específico do objeto</li><li>Permite o retorno de chamada durante a verificação de acesso</li></ul> | <a href="/windows/desktop/api/Winnt/ns-winnt-access_denied_callback_object_ace"><strong>ACCESS_DENIED_CALLBACK_OBJECT_ACE</strong></a> | Discricionário | 
+| <ul><li>Acesso negado</li><li>Específico do objeto</li></ul> | <a href="/windows/desktop/api/Winnt/ns-winnt-access_denied_object_ace"><strong>ACCESS_DENIED_OBJECT_ACE</strong></a> | Discricionário | 
+| <ul><li>Alarme do sistema</li></ul> | <a href="/windows/desktop/api/Winnt/ns-winnt-system_alarm_ace"><strong>SYSTEM_ALARM_ACE</strong></a> | Sistema | 
+| <ul><li>Alarme do sistema</li><li>Permite o retorno de chamada durante a verificação de acesso</li></ul> | <a href="/windows/desktop/api/Winnt/ns-winnt-system_alarm_callback_ace"><strong>SYSTEM_ALARM_CALLBACK_ACE</strong></a> | Sistema | 
+| <ul><li>Alarme do sistema</li><li>Específico do objeto</li><li>Permite o retorno de chamada durante a verificação de acesso</li></ul> | <a href="/windows/desktop/api/Winnt/ns-winnt-system_alarm_callback_object_ace"><strong>SYSTEM_ALARM_CALLBACK_OBJECT_ACE</strong></a> | Sistema | 
+| <ul><li>Alarme do sistema</li><li>Específico do objeto</li></ul> | <a href="/windows/desktop/api/winnt/ns-winnt-system_alarm_object_ace"><strong>SYSTEM_ALARM_OBJECT_ACE</strong></a> | Sistema | 
+| <ul><li>Auditoria do sistema</li></ul> | <a href="/windows/desktop/api/Winnt/ns-winnt-system_audit_ace"><strong>SYSTEM_AUDIT_ACE</strong></a> | Sistema | 
+| <ul><li>Auditoria do sistema</li><li>Permite o retorno de chamada durante a verificação de acesso</li></ul> | <a href="/windows/desktop/api/Winnt/ns-winnt-system_audit_callback_ace"><strong>SYSTEM_AUDIT_CALLBACK_ACE</strong></a> | Sistema | 
+| <ul><li>Auditoria do sistema</li><li>Específico do objeto</li><li>Permite o retorno de chamada durante a verificação de acesso</li></ul> | <a href="/windows/desktop/api/Winnt/ns-winnt-system_audit_callback_object_ace"><strong>SYSTEM_AUDIT_CALLBACK_OBJECT_ACE</strong></a> | Sistema | 
+| <ul><li>Auditoria do sistema</li><li>Específico do objeto</li></ul> | <a href="/windows/desktop/api/Winnt/ns-winnt-system_alarm_object_ace"><strong>SYSTEM_AUDIT_OBJECT_ACE</strong></a> | Sistema | 
+
 
 
 
  
 
-Não há suporte para as ACEs System-Alarm específicas do sistema e do objeto.
+Atualmente, não há suporte para ACEs de alarme do sistema e alarme do sistema específicas do objeto.
 
 > [!Note]  
-> Cada ACE começa com uma estrutura de [**\_ cabeçalho Ace**](/windows/desktop/api/Winnt/ns-winnt-ace_header) . O formato dos dados que seguem o cabeçalho varia de acordo com o tipo de ACE especificado no cabeçalho.
+> Cada ACE começa com uma [**estrutura ACE \_ HEADER.**](/windows/desktop/api/Winnt/ns-winnt-ace_header) O formato dos dados após o header varia de acordo com o tipo ACE especificado no header.
 
  
 
@@ -181,9 +57,9 @@ Não há suporte para as ACEs System-Alarm específicas do sistema e do objeto.
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                                            |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                   |
-| Cabeçalho<br/>                   | <dl> <dt>Winnt. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                                            |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                   |
+| Cabeçalho<br/>                   | <dl> <dt>Winnt.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -194,18 +70,18 @@ Não há suporte para as ACEs System-Alarm específicas do sistema e do objeto.
 [**AddAce**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-addace)
 </dt> <dt>
 
-[**Ace de acesso \_ permitido \_**](/windows/desktop/api/Winnt/ns-winnt-access_allowed_ace)
+[**ACE \_ DE \_ ACESSO PERMITIDO**](/windows/desktop/api/Winnt/ns-winnt-access_allowed_ace)
 </dt> <dt>
 
-[**Ace de acesso \_ negado \_**](/windows/desktop/api/Winnt/ns-winnt-access_denied_ace)
+[**ACE \_ DE \_ ACESSO NEGADO**](/windows/desktop/api/Winnt/ns-winnt-access_denied_ace)
 </dt> <dt>
 
 [**ACL**](/windows/desktop/api/Winnt/ns-winnt-acl)
 </dt> <dt>
 
-[**\_Ace do alarme do sistema \_**](/windows/desktop/api/Winnt/ns-winnt-system_alarm_object_ace)
+[**SYSTEM \_ ALARM \_ ACE**](/windows/desktop/api/Winnt/ns-winnt-system_alarm_object_ace)
 </dt> <dt>
 
-[**\_ACE de auditoria do sistema \_**](/windows/desktop/api/Winnt/ns-winnt-system_audit_ace)
+[**ACE \_ DE AUDITORIA DO \_ SISTEMA**](/windows/desktop/api/Winnt/ns-winnt-system_audit_ace)
 </dt> </dl>
 

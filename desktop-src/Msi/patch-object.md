@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: f6fa55d6ced2afdc53ef8050732f5dee5d6c1f3d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e9e337af735a39312cb5aa740283cb8b4d8b508be33f28c302788a1207f89472
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751641"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120074836"
 ---
 # <a name="patch-object"></a>Objeto patch
 
@@ -66,8 +66,8 @@ O objeto **patch** tem essas propriedades.
 | [**Patchproperty**](patch-patchproperty.md)<br/>   | Obtém informações de propriedade sobre um patch específico aplicado a uma instância específica do produto.<br/> |
 | [**ProductCode**](patch-productcode.md)<br/>       | Retorna o código do produto.<br/>                                                                       |
 | [**SourceListInfo**](patch-sourcelistinfo.md)<br/> | Obtém e define as propriedades de informações de origem. Esta é uma propriedade de leitura ou gravação.<br/>              |
-| [**Fontes**](patch-sources.md)<br/>               | Enumera todas as fontes para esta instância de patch.<br/>                                             |
-| [**Status**](patch-state.md)<br/>                   | Estado da instalação do patch.<br/>                                                                |
+| [**Origens**](patch-sources.md)<br/>               | Enumera todas as fontes para esta instância de patch.<br/>                                             |
+| [**Estado**](patch-state.md)<br/>                   | Estado da instalação do patch.<br/>                                                                |
 | [**UserSid**](patch-usersid.md)<br/>               | Retorna o SID do usuário, na conta em que esta instância de patch está disponível.<br/>                       |
 
 
@@ -80,7 +80,7 @@ O objeto **patch** tem essas propriedades.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou no Windows Vista. Windows Installer 3,0 ou posterior no Windows Server 2003, Windows XP e Windows 2000<br/> |
+| Versão<br/> | Windows instalador 5,0 em Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou Windows Vista. Windows instalador 3,0 ou posterior no Windows Server 2003, Windows XP e Windows 2000<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                                                   |
 | IID<br/>     | IID \_ IPatch é definido como 000C10A1-0000-0000-C000-000000000046<br/>                                                                                                                                                                                                            |
 
@@ -90,7 +90,7 @@ O objeto **patch** tem essas propriedades.
 
 <dl> <dt>
 
-[Exemplos de script de Windows Installer](windows-installer-scripting-examples.md)
+[Windows Exemplos de script do instalador](windows-installer-scripting-examples.md)
 </dt> </dl>
 
  

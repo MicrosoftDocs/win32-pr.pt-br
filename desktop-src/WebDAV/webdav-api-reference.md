@@ -1,25 +1,25 @@
 ---
-title: Referência da API do WebDAV
+title: Referência da API WebDAV
 ms.assetid: d3aac8fc-de7d-4d8e-82d7-0d89417c4404
-description: 'Saiba mais sobre: referência da API do WebDAV'
+description: 'Saiba mais sobre: Referência da API WebDAV'
 keywords:
-- WebDAV do WebDAV, referência
+- WebDAV WebDAV , referência
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ad6d83b9e61f2a2a6f99b94c02c708f96e17e2c4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 17211d7847c9859575e7574307651a326780d47a778f846d1a4222bb5c7381c3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105757279"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120098619"
 ---
-# <a name="webdav-api-reference"></a>Referência da API do WebDAV
+# <a name="webdav-api-reference"></a>Referência da API WebDAV
 
-Os seguintes elementos são usados na API do WebDAV:
+Os seguintes elementos são usados na API WebDAV:
 
--   [Enumerações da API do WebDAV](webdav-api-enumerations.md)
--   [Funções da API do WebDAV](webdav-api-functions.md)
--   [Estruturas da API do WebDAV](webdav-api-structures.md)
+-   [Enumerações da API WebDAV](webdav-api-enumerations.md)
+-   [Funções da API WebDAV](webdav-api-functions.md)
+-   [Estruturas da API WebDAV](webdav-api-structures.md)
 
  
 

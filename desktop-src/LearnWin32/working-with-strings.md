@@ -4,16 +4,16 @@ description: Trabalhando com Cadeias de Caracteres
 ms.assetid: 876ff8bb-67c3-4dcc-aa94-7fbd915c67dc
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4661c6b07a267d90e0fca05d04354c018be04527
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b1850d531a1cff713ec71a7e96399f029794545db9b695abe5b826ed63f0f080
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108110964"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120075196"
 ---
 # <a name="working-with-strings"></a>Trabalhando com Cadeias de Caracteres
 
-O Windows nativamente dá suporte a cadeias de caracteres Unicode para elementos de interface do usuário, nomes de arquivos e assim por diante. Unicode é a codificação de caractere preferencial, pois dá suporte a todos os conjuntos de caracteres e idiomas. O Windows representa caracteres Unicode usando a codificação UTF-16, na qual cada caractere é codificado como um valor de 16 bits. Caracteres UTF-16 são chamados de caracteres *largos* , para distingui-los de caracteres ANSI de 8 bits. O compilador Visual C++ dá suporte ao tipo de dados interno **WCHAR \_ t** para caracteres largos. O arquivo de cabeçalho WinNT. h também define o seguinte **typedef**.
+Windows na verdade dá suporte a cadeias de caracteres Unicode para elementos de interface do usuário, nomes de arquivo e assim por diante. Unicode é a codificação de caractere preferencial, pois dá suporte a todos os conjuntos de caracteres e idiomas. Windows representa caracteres Unicode usando a codificação UTF-16, na qual cada caractere é codificado como um valor de 16 bits. Caracteres UTF-16 são chamados *de caracteres* largos, para diferenciá-los de caracteres ANSI de 8 bits. O Visual C++ compilador dá suporte ao tipo de dados **integrado wchar \_ t** para caracteres largos. O arquivo de título WinNT.h também define o **typedef a seguir.**
 
 
 ```C++
@@ -22,7 +22,7 @@ typedef wchar_t WCHAR;
 
 
 
-Você verá as duas versões no código de exemplo do MSDN. Para declarar um literal de caractere largo ou um literal de cadeia de caracteres largo, coloque **L** antes do literal.
+Você verá as duas versões no código de exemplo do MSDN. Para declarar um literal de caractere largo ou um literal de cadeia de caracteres largos, coloque **L antes** do literal.
 
 
 ```C++
@@ -32,7 +32,7 @@ wchar_t *str = L"hello";
 
 
 
-Aqui estão alguns outros TYPEDEFs relacionados a cadeias de caracteres que você verá:
+Aqui estão alguns outros typedefs relacionados à cadeia de caracteres que você verá:
 
 
 
@@ -50,12 +50,12 @@ Aqui estão alguns outros TYPEDEFs relacionados a cadeias de caracteres que voc�
 
 ## <a name="unicode-and-ansi-functions"></a>Funções Unicode e ANSI
 
-Quando a Microsoft introduziu o suporte a Unicode no Windows, ela facilitou a transição fornecendo dois conjuntos paralelos de APIs, um para cadeias de caracteres ANSI e o outro para cadeias de caracteres Unicode. Por exemplo, há duas funções para definir o texto da barra de título de uma janela:
+Quando a Microsoft introduziu o suporte a Unicode para Windows, ela facilizou a transição fornecendo dois conjuntos paralelos de APIs, um para cadeias de caracteres ANSI e outro para cadeias de caracteres Unicode. Por exemplo, há duas funções para definir o texto da barra de título de uma janela:
 
--   **SetWindowTextA** usa uma cadeia de caracteres ANSI.
--   **SetWindowTextW** usa uma cadeia de caracteres Unicode.
+-   **SetWindowTextA aceita** uma cadeia de caracteres ANSI.
+-   **SetWindowTextW aceita** uma cadeia de caracteres Unicode.
 
-Internamente, a versão ANSI traduz a cadeia de caracteres para Unicode. Os cabeçalhos do Windows também definem uma macro que é resolvida para a versão Unicode quando o símbolo de pré-processador `UNICODE` é definido ou a versão ANSI, caso contrário.
+Internamente, a versão ANSI converte a cadeia de caracteres em Unicode. Os Windows também definem uma macro que é resolvida para a versão Unicode quando o símbolo do pré-processador é definido ou a `UNICODE` versão ANSI, caso contrário.
 
 
 ```C++
@@ -68,20 +68,20 @@ Internamente, a versão ANSI traduz a cadeia de caracteres para Unicode. Os cabe
 
 
 
-No MSDN, a função está documentada sob o nome [**SetWindowText**](/windows/desktop/api/winuser/nf-winuser-setwindowtexta), embora seja realmente o nome da macro, não o nome real da função.
+No MSDN, a função é documentada com o nome [**SetWindowText**](/windows/desktop/api/winuser/nf-winuser-setwindowtexta), mesmo que esse seja realmente o nome da macro, não o nome real da função.
 
-Os novos aplicativos sempre devem chamar as versões Unicode. Muitas linguagens de mundo exigem Unicode. Se você usar cadeias de caracteres ANSI, será impossível localizar seu aplicativo. As versões ANSI também são menos eficientes, pois o sistema operacional deve converter as cadeias de caracteres ANSI em Unicode em tempo de execução. Dependendo de sua preferência, você pode chamar as funções Unicode explicitamente, como **SetWindowTextW**, ou usar as macros. O código de exemplo no MSDN normalmente chama as macros, mas as duas formas são exatamente equivalentes. As APIs mais recentes do Windows têm apenas uma versão Unicode, sem nenhuma versão ANSI correspondente.
+Novos aplicativos sempre devem chamar as versões Unicode. Muitas linguagens do mundo exigem Unicode. Se você usar cadeias de caracteres ANSI, será impossível localizar seu aplicativo. As versões ANSI também são menos eficientes, porque o sistema operacional deve converter as cadeias de caracteres ANSI em Unicode em tempo de operação. Dependendo de sua preferência, você pode chamar as funções Unicode explicitamente, como **SetWindowTextW** ou usar as macros. O código de exemplo no MSDN normalmente chama as macros, mas os dois formulários são exatamente equivalentes. A maioria das APIs mais Windows tem apenas uma versão Unicode, sem nenhuma versão ANSI correspondente.
 
-## <a name="tchars"></a>TCHARs
+## <a name="tchars"></a>Tchars
 
-De volta quando os aplicativos precisarem dar suporte ao Windows NT, bem como ao Windows 95, ao Windows 98 e ao Windows me, era útil compilar o mesmo código para cadeias de caracteres ANSI ou Unicode, dependendo da plataforma de destino. Para esse fim, o SDK do Windows fornece macros que mapeiam cadeias de caracteres para Unicode ou ANSI, dependendo da plataforma.
+Quando os aplicativos precisavam dar suporte a Windows NT, bem como Windows 95, Windows 98 e Windows Me, era útil compilar o mesmo código para cadeias de caracteres ANSI ou Unicode, dependendo da plataforma de destino. Para esse fim, o SDK Windows fornece macros que mapeiam cadeias de caracteres para Unicode ou ANSI, dependendo da plataforma.
 
 
 
 | Macro     | Unicode   | ANSI   |
 |-----------|-----------|--------|
-| TCHAR     | `wchar_t` | `char` |
-| TEXTO ("x") | `L"x"`    | `"x"`  |
+| Tchar     | `wchar_t` | `char` |
+| TEXT("x") | `L"x"`    | `"x"`  |
 
 
 
@@ -107,9 +107,9 @@ SetWindowTextA("My Application");  // ANSI function.
 
 
 
-As macros **Text** e **TCHAR** são menos úteis hoje, porque todos os aplicativos devem usar Unicode. No entanto, você pode vê-los em código mais antigo e em alguns dos exemplos de código do MSDN.
+As **macros TEXT** **e TCHAR** são menos úteis atualmente, porque todos os aplicativos devem usar Unicode. No entanto, você pode vê-los em código mais antigo e em alguns dos exemplos de código MSDN.
 
-Os cabeçalhos das bibliotecas de tempo de execução do Microsoft C definem um conjunto de macros semelhantes. Por exemplo, **\_ tcslen** é resolvido para **strlen** se `_UNICODE` estiver indefinido; caso contrário, ele será resolvido para **wcslen**, que é a versão de caractere largo do **strlen**.
+Os headers das bibliotecas de tempo de run time do Microsoft C definem um conjunto semelhante de macros. Por exemplo, **\_ tcslen** resolve para **strlen** se for indefinido; caso contrário, ele resolverá para wcslen , que é a versão de caractere largo `_UNICODE` de **strlen.** 
 
 
 ```C++
@@ -122,7 +122,7 @@ Os cabeçalhos das bibliotecas de tempo de execução do Microsoft C definem um 
 
 
 
-Cuidado: alguns cabeçalhos usam o símbolo de pré-processador `UNICODE` , outros usam `_UNICODE` com um prefixo de sublinhado. Sempre defina os dois símbolos. O Visual C++ os define por padrão quando você cria um novo projeto.
+Tenha cuidado: alguns headers usam o símbolo de pré-processador `UNICODE` , outros usam com um `_UNICODE` prefixo de sublinhado. Sempre defina os dois símbolos. Visual C++ define ambos por padrão quando você cria um novo projeto.
 
 ## <a name="next"></a>Avançar
 

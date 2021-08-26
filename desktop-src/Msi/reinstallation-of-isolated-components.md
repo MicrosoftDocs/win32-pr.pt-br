@@ -1,19 +1,19 @@
 ---
-description: Windows Installer executa as seguintes ações durante a reinstalação de um aplicativo quando o pacote contém componentes isolados. Normalmente, \_ o componente compartilhado é uma DLL que é compartilhada por \_ aplicativo de componente e outros executáveis do cliente.
+description: Windows O instalador executa as seguintes ações durante a reinstalação de um aplicativo quando o pacote contém componentes isolados. Normalmente, \_ o componente compartilhado é uma DLL que é compartilhada por \_ aplicativo de componente e outros executáveis do cliente.
 ms.assetid: 65909b47-dc09-4e9a-920a-9cb3f55b2e67
 title: Reinstalação de componentes isolados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 68ad1c7fb53eb09e96882209f7738e95be9b4a64
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c624777647ab9e5023cd6c78d9aaa4d20951563f915afcd800ba60ca3b233174
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828244"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120086006"
 ---
 # <a name="reinstallation-of-isolated-components"></a>Reinstalação de componentes isolados
 
-Windows Installer executa as seguintes ações durante a reinstalação de um aplicativo quando o pacote contém componentes isolados. Normalmente, \_ o componente compartilhado é uma DLL que é compartilhada por \_ aplicativo de componente e outros executáveis do cliente.
+Windows O instalador executa as seguintes ações durante a reinstalação de um aplicativo quando o pacote contém componentes isolados. Normalmente, \_ o componente compartilhado é uma DLL que é compartilhada por \_ aplicativo de componente e outros executáveis do cliente.
 
 ## <a name="reinstallation"></a>Reinstalação
 

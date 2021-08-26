@@ -6,12 +6,12 @@ keywords:
 - Conversão de chave de registro COM autoconverterto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 160f6591ed318ad7622e0bf3c0af5187f95d3be3
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d5ea2b32445bb7107dcbfdc2aec8aee518fdd474674e76fdbd820265d06b6160
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822152"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120097046"
 ---
 # <a name="autoconvertto"></a>Converter autoconverteto
 
@@ -21,8 +21,8 @@ Especifica a conversão automática de uma determinada classe de objetos em uma 
 
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID
-   {CLSID}
-      AutoConvertTo = value
+   {CLSID}
+      AutoConvertTo = value
 ```
 
 ## <a name="remarks"></a>Comentários
@@ -44,9 +44,9 @@ Normalmente, essa chave é usada para converter automaticamente os arquivos cria
 [**OleSetAutoConvert**](/windows/desktop/api/Ole2/nf-ole2-olesetautoconvert)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

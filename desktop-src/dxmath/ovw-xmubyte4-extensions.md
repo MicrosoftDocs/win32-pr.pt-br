@@ -1,5 +1,5 @@
 ---
-description: Descreve um vetor 4D composto de inteiros sem sinal, 8 bits (1 byte) de comprimento.
+description: Descreve um vetor 4D de inteiros sem sinal, com comprimento de 8 bits (1 byte).
 ms.assetid: d606293a-3a6d-49b5-832c-82ee5943c634
 title: Extensões XMUBYTE4
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.locfileid: "119979516"
 ---
 # <a name="xmubyte4-extensions"></a>Extensões XMUBYTE4
 
-Descreve um vetor 4D composto de inteiros sem sinal, 8 bits (1 byte) de comprimento.
+Descreve um vetor 4D de inteiros sem sinal, com comprimento de 8 bits (1 byte).
 
 > [!Note]  
 > Os recursos listados aqui só estão disponíveis ao desenvolver com C++.

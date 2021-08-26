@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: a4f51f8acab7caddd4571d60f7deae795440f02a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 72ef42d63a67cfb4328e0f73897ca6ac3b38e3e4275b9192eddfb14fe8cd2e62
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118174"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120119076"
 ---
 # <a name="d3dxmatrixrotationx-function-d3dx9mathh"></a>Função D3DXMatrixRotationX (D3dx9math. h)
 
@@ -80,7 +80,7 @@ O valor de retorno para essa função é o mesmo valor retornado no parâmetro *
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -4,18 +4,18 @@ ms.assetid: c5ada690-c5dd-455f-babe-8c09750525c4
 title: Propriedade MSIDISABLEEEUI
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d89ce43f649d406e4ae086db236375c02c43e2d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fb1e599ed0786c7d2c55644eb5759db3917757d3b41f6107161d72a3cc559484
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105757511"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120039946"
 ---
 # <a name="msidisableeeui-property"></a>Propriedade MSIDISABLEEEUI
 
 Para desabilitar a interface do usuário inserida para a instalação definida na [tabela MsiEmbeddedUI](msiembeddedui-table.md), defina a propriedade MSIDISABLEEEUI como 1 na linha de comando.
 
-**[Windows Installer 4,0 e anteriores](not-supported-in-windows-installer-4-0.md):** Sem suporte. Versões anteriores a Windows Installer 4,5 ignoram a propriedade MSIDISABLEEEUI.
+**[Windows Installer 4,0 e anteriores](not-supported-in-windows-installer-4-0.md):** Sem suporte. versões anteriores a Windows Installer 4,5 ignoram a propriedade MSIDISABLEEEUI.
 
 ## <a name="remarks"></a>Comentários
 
@@ -29,7 +29,7 @@ A propriedade MSIDISABLEEEUI desabilita a interface do usuário incorporada para
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,5 no Windows Server 2008, no Windows Vista, no Windows Server 2003 e no Windows XP. Consulte os [requisitos de Run-Time Windows Installer](windows-installer-portal.md) para obter informações sobre a Service Pack mínima do Windows exigida por uma versão Windows Installer.<br/> |
+| Versão<br/> | Windows instalador 5,0 em Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows instalador 4,5 no Windows server 2008, Windows Vista, Windows server 2003 e Windows XP. consulte os [requisitos de Run-Time Windows Installer](windows-installer-portal.md) para obter informações sobre o service pack mínimo Windows exigido por uma versão Windows Installer.<br/> |
 
 
 

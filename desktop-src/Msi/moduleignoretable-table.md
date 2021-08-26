@@ -1,19 +1,19 @@
 ---
-description: Se uma tabela no módulo de mesclagem estiver listada na tabela ModuleIgnoreTable, ela não será mesclada no arquivo. msi.
+description: Se uma tabela no módulo de mesclagem estiver listada na tabela ModuleIgnoreTable, ela não será mesclada no arquivo de .msi.
 ms.assetid: 9ff87993-74f6-4436-b0a9-d7ebed6555bd
 title: Tabela ModuleIgnoreTable
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b7b0191f616eced187411a148e40e0ae6575cca6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 46337b74f6822b374314a9248f0377ec63359c6576a6ca1398a931d27e548138
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171492"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120042840"
 ---
 # <a name="moduleignoretable-table"></a>Tabela ModuleIgnoreTable
 
-Se uma tabela no módulo de mesclagem estiver listada na tabela ModuleIgnoreTable, ela não será mesclada no arquivo. msi. Se a tabela já existir no arquivo. msi, ela não será modificada pela mesclagem. As tabelas no ModuleIgnoreTable podem, portanto, conter dados desnecessários após a mesclagem.
+Se uma tabela no módulo de mesclagem estiver listada na tabela ModuleIgnoreTable, ela não será mesclada no arquivo de .msi. Se a tabela já existir no arquivo de .msi, ela não será modificada pela mesclagem. As tabelas no ModuleIgnoreTable podem, portanto, conter dados desnecessários após a mesclagem.
 
 A tabela ModuleIgnoreTable tem as colunas a seguir.
 
@@ -34,7 +34,7 @@ A tabela ModuleIgnoreTable tem as colunas a seguir.
 <span id="Table"></span><span id="table"></span><span id="TABLE"></span>Tabela
 </dt> <dd>
 
-Nome da tabela no módulo de mesclagem que não deve ser mesclado no arquivo. msi.
+Nome da tabela no módulo de mesclagem que não deve ser mesclado no arquivo de .msi.
 
 </dd> </dl>
 

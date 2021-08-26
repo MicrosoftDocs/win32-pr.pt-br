@@ -4,112 +4,85 @@ ms.assetid: 2911ae57-1703-4a9d-bd33-94af1e0f8804
 title: Entrelaçamento de vídeo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ec10f49ef21f3701f85467a3f4a1c4b08d69df72
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 340c727f8faaaf20ff82eff58d0c651601071dea
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105813654"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122474332"
 ---
 # <a name="video-interlacing"></a>Entrelaçamento de vídeo
 
-Este tópico descreve como as fontes de mídia e os decodificadores devem lidar com conteúdo de vídeo entrelaçado.
+Este tópico descreve como fontes de mídia e decodificadores devem lidar com conteúdo de vídeo entrelaçados.
 
 Para decodificar e renderizar o vídeo entrelaçado corretamente, as seguintes informações são necessárias:
 
--   Progressivo ou entrelaçado. Um fluxo de vídeo pode conter quadros progressivos, quadros entrelaçados ou uma mistura de ambos.
+-   Progressivo ou entrelaçado. Um fluxo de vídeo pode conter quadros progressivos, quadros entrelaçados ou uma combinação de ambos.
 
--   Campo predominância. O campo predominância descreve qual campo aparece primeiro, o campo superior ou o campo inferior.
+-   Predominância de campo. A predominância de campo descreve qual campo aparece primeiro, o campo superior ou o campo inferior.
 
--   Repita o primeiro campo. Esse sinalizador é usado na reestruturação de 3:2, quando o quadro é progressivo, mas o fluxo é entrelaçado. Nesse contexto, o primeiro campo pode ser o campo superior ou inferior.
+-   Repita o primeiro campo. Esse sinalizador é usado na pulldown 3:2, quando o quadro é progressivo, mas o fluxo é entrelaçado. Nesse contexto, o primeiro campo pode ser o campo superior ou inferior.
 
--   Campos intercalados ou campo único. Um exemplo pode conter um único campo ou dois campos intercalados. Se um exemplo contiver um único campo, a altura de amostra será metade da altura do quadro, pois o exemplo contém apenas metade das linhas de varredura de um quadro. Os campos intercalados são recomendados, a menos que as características do conteúdo de origem ditem de outra forma.
+-   Campos intercalados ou campo único. Um exemplo pode conter um único campo ou dois campos intercalados. Se um exemplo contiver um único campo, a altura da amostra será metade da altura do quadro, pois o exemplo contém apenas metade das linhas de verificação de um quadro. Campos intercalados são recomendados, a menos que as características do conteúdo de origem ditam o contrário.
 
-Qualquer uma dessas características pode mudar de uma amostra para a próxima. No entanto, os componentes de vídeo precisam saber algo sobre o conteúdo geral antes de o streaming começar. Por exemplo, se o vídeo estiver entrelaçado, o processador de vídeo avançado (EVR) precisa reservar memória de vídeo para o desentrelaçamento. Se o vídeo for totalmente progressivo, por outro lado, o EVR poderá otimizar o pipeline de renderização. Adicionar uma etapa de desentrelaçamento ao pipeline aumenta a latência de renderização.
+Qualquer uma dessas características pode mudar de um exemplo para o próximo. No entanto, os componentes de vídeo precisam saber algo sobre o conteúdo geral antes do início do streaming. Por exemplo, se o vídeo for entrelaçado, o renderização de vídeo aprimorado (EVR) precisará reservar memória de vídeo para a desintercalação. Se o vídeo for quadros totalmente progressivos, por outro lado, o EVR poderá otimizar o pipeline de renderização. Adicionar uma etapa de desintercalação ao pipeline aumenta a latência de renderização.
 
-As informações sobre o entrelaçamento são armazenadas em dois locais:
+Informações sobre o entrelaçamento são armazenadas em dois locais:
 
--   As informações gerais sobre o entrelaçamento em um fluxo são colocadas no tipo de mídia. Para obter mais informações sobre tipos de mídia, consulte [tipos de mídia](media-types.md).
+-   Informações gerais sobre o entrelaçamento em um fluxo são colocadas no tipo de mídia. Para obter mais informações sobre tipos de mídia, consulte [Tipos de mídia](media-types.md).
 
--   As informações que podem ser alteradas com cada exemplo são colocadas no exemplo como um atributo. Para obter mais informações sobre exemplos, consulte [amostras de mídia](media-samples.md).
+-   As informações que podem mudar com cada amostra são colocadas no exemplo como um atributo. Para obter mais informações sobre exemplos, consulte [Amostras de mídia](media-samples.md).
 
-## <a name="interlace-information-in-the-media-type"></a>Entrelaçar informações no tipo de mídia
+## <a name="interlace-information-in-the-media-type"></a>Informações intercalar no tipo de mídia
 
-O atributo do [**\_ \_ \_ modo de entrelaçamento MF MT**](mf-mt-interlace-mode-attribute.md) no tipo de mídia descreve como o fluxo como um todo é entrelaçado. O valor desse atributo é um membro da enumeração [**MFVideoInterlaceMode**](/windows/desktop/api/mfobjects/ne-mfobjects-mfvideointerlacemode) . Um tipo de mídia de vídeo sempre deve ter esse atributo.
+O [**atributo \_ MF MT INTER DIGIT \_ \_ MODE no**](mf-mt-interlace-mode-attribute.md) tipo de mídia descreve como o fluxo como um todo é entrelaçado. O valor desse atributo é um membro da [**enumeração MFVideoIntermodMode.**](/windows/desktop/api/mfobjects/ne-mfobjects-mfvideointerlacemode) Um tipo de mídia de vídeo sempre deve ter esse atributo.
 
--   Se o fluxo contiver apenas quadros progressivos, sem quadros entrelaçados, use MFVideoInterlace \_ progressivo.
--   Se o fluxo contiver apenas quadros entrelaçados e cada amostra contiver dois campos intercalados, use MFVideoInterlace \_ FieldInterleavedUpperFirst ou MFVideoInterlace \_ FieldInterleavedLowerFirst.
--   Se o fluxo contiver apenas quadros entrelaçados e cada amostra contiver um único campo, use MFVideoInterlace \_ FieldSingleUpper ou MFVideoInterlace \_ FieldSingleLower. Se os campos forem alternados entre superior e inferior, não importa quais desses dois valores são usados. Se o formato contiver apenas campos maiúsculos ou apenas campos inferiores, defina o valor que corresponde ao conteúdo.
--   Se o fluxo contiver uma combinação de quadros entrelaçados e progressivos, ou se o campo predominância alternar, defina o tipo de mídia como MFVideoInterlace \_ MixedInterlaceOrProgressive. Use atributos de exemplo para descrever cada quadro.
+-   Se o fluxo contiver apenas quadros progressivos, sem quadros entrelaçados, use MFVideoInter frame \_ Progressivo.
+-   Se o fluxo contiver apenas quadros entrelaçados e cada amostra contiver dois campos intercalados, use MFVideoInterpper \_ FieldInterleavedUpperFirst ou MFVideoInterpper \_ FieldInterleavedLowerFirst.
+-   Se o fluxo contiver apenas quadros entrelaçados e cada amostra contiver um único campo, use MFVideoInterpper \_ FieldSingleUpper ou MFVideoInterpper \_ FieldSingleLower. Se os campos alternam entre superior e inferior, não importa qual desses dois valores será usado. Se o formato contiver apenas campos superiores ou apenas campos inferiores, de definir o valor que corresponde ao conteúdo.
+-   Se o fluxo contiver uma combinação de quadros entrelaçados e progressivos ou se a predominância de campo mudar, de definir o tipo de mídia como MFVideoInter digitado \_ MixedInter digitorProgressive. Use atributos de exemplo para descrever cada quadro.
 
 A tabela a seguir resume esse atributo.
 
 
 
-| \_modo de \_ entrelaçamento do MF MT \_                       | Entrelaçadas? | Exemplos                                  | Primeiro campo    |
+| MODO \_ \_ INTERESCALA MF \_ MT                       | Entrelaçado? | Amostras                                  | Primeiro campo    |
 |-----------------------------------------------|-------------|------------------------------------------|----------------|
-| MFVideoInterlace \_ progressivo                 | No          | Quadro progressivo                        | Não aplicável |
-| MFVideoInterlace \_ FieldInterleavedUpperFirst  | Yes         | Campos intercalados                       | Primeiro superior    |
-| MFVideoInterlace \_ FieldInterleavedLowerFirst  | Yes         | Campos intercalados                       | Primeiro abaixo    |
-| MFVideoInterlace \_ FieldSingleUpper            | Yes         | Campo único                             | Primeiro superior    |
-| MFVideoInterlace \_ FieldSingleLower            | Yes         | Campo único                             | Primeiro abaixo    |
-| MFVideoInterlace \_ MixedInterlaceOrProgressive | Pode variar    | Campos intercalados ou quadros progressivos | Pode variar       |
+| MFVideoInterquot \_ Progressivo                 | Não          | Quadro progressivo                        | Não aplicável |
+| MFVideoInterpper \_ FieldInterleavedUpperFirst  | Sim         | Campos intercalados                       | Superior primeiro    |
+| MFVideoInterlow \_ FieldInterleavedLowerFirst  | Sim         | Campos intercalados                       | Inferior primeiro    |
+| MFVideoInterpper \_ FieldSingleUpper            | Sim         | Campo único                             | Superior primeiro    |
+| FieldSingleLower MFVideoInterlower \_            | Sim         | Campo único                             | Inferior primeiro    |
+| MFVideoInteritor \_ MixedIntertoresOrProgressive | Pode variar    | Campos intercalados ou quadros progressivos | Pode variar       |
 
 
 
  
 
-Campos intercalados e campos únicos não podem ser misturados. Alternar de um para outro requer uma alteração de tipo de mídia.
+Campos intercalados e campos individuais não podem ser mistos. Alternar de um para outro requer uma alteração de tipo de mídia.
 
-## <a name="interlace-flags-on-samples"></a>Sinalizadores de entrelaçamento em exemplos
+## <a name="interlace-flags-on-samples"></a>Sinalizadores intercalar em exemplos
 
-As informações que podem mudar de uma amostra para a próxima são indicadas usando atributos de exemplo. Use a interface [**IMFSample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample) para obter ou definir esses atributos.
+As informações que podem mudar de um exemplo para o próximo são indicadas usando atributos de exemplo. Use a interface [**IMFSample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample) para obter ou definir esses atributos.
 
-Todos os atributos de entrelaçamento listados nesta seção têm valores Boolianos. Efetivamente, cada um desses atributos pode ter três valores: **true**, **false** ou não definido. Se um atributo não estiver definido, o valor será obtido do tipo de mídia. Se um atributo for definido, o valor substituirá o tipo de mídia. Algumas combinações de sinalizadores e tipos de mídia não são válidas.
+Todos os atributos de entrelaçamento listados nesta seção têm valores boolianas. Efetivamente, cada um desses atributos pode ter três valores: **TRUE,** **FALSE** ou não definido. Se um atributo não for definido, o valor será retirado do tipo de mídia. Se um atributo for definido, o valor substituirá o tipo de mídia. Algumas combinações de sinalizadores e tipos de mídia não são válidas.
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Atributo</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="mfsampleextension-interlaced-attribute.md">MFSampleExtension_Interlaced</a></td>
-<td>Se for <strong>true</strong>, o quadro será entrelaçado. Se for <strong>false</strong>, o quadro será progressivo.<br/> Defina esse atributo em cada exemplo se o tipo de mídia for MFVideoInterlace_MixedInterlaceOrProgressive.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="mfsampleextension-bottomfieldfirst-attribute.md">MFSampleExtension_BottomFieldFirst</a></td>
-<td>O significado desse sinalizador depende se os exemplos contêm campos intercalados ou campos únicos.<br/>
-<ul>
-<li>Campos intercalados: se <strong>for verdadeiro</strong>, o campo inferior será o primeiro. Se for <strong>false</strong>, o campo superior será primeiro.<br/></li>
-<li>Campos únicos: se <strong>for true</strong>, o exemplo conterá um campo inferior. Se <strong>for false</strong>, o exemplo conterá um campo superior.<br/></li>
-</ul>
-Defina esse atributo em cada amostra de entrelaçamento se o tipo de mídia for MFVideoInterlace_FieldSingleUpper, MFVideoInterlace_FieldSingleLower ou MFVideoInterlace_MixedInterlaceOrProgressive.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="mfsampleextension-repeatfirstfield-attribute.md">MFSampleExtension_RepeatFirstField</a></td>
-<td>Se <strong>for true</strong>, o primeiro campo será repetido. Se for <strong>false</strong> ou not set, o primeiro campo não será repetido.</td>
-</tr>
-<tr class="even">
-<td><a href="mfsampleextension-singlefield-attribute.md">MFSampleExtension_SingleField</a></td>
-<td>Se <strong>for true</strong>, o exemplo conterá um único campo. Se <strong>for false</strong>, o exemplo conterá campos intercalados.</td>
-</tr>
-</tbody>
-</table>
+
+| Atributo | Descrição | 
+|-----------|-------------|
+| <a href="mfsampleextension-interlaced-attribute.md">MFSampleExtension_Interlaced</a> | Se <strong>TRUE</strong>, o quadro será entrelaçado. Se <strong>FALSE</strong>, o quadro será progressivo.<br /> De definir esse atributo em cada exemplo se o tipo de mídia for MFVideoInterlace_MixedInterlaceOrProgressive.<br /> | 
+| <a href="mfsampleextension-bottomfieldfirst-attribute.md">MFSampleExtension_BottomFieldFirst</a> | O significado desse sinalizador depende se os exemplos contêm campos intercalados ou campos individuais.<br /><ul><li>Campos intercalados: se <strong>TRUE</strong>, o campo inferior será o primeiro. Se <strong>FALSE</strong>, o campo superior será o primeiro.<br /></li><li>Campos individuais: se <strong>TRUE</strong>, o exemplo conterá um campo inferior. Se <strong>FALSE</strong>, o exemplo conterá um campo superior.<br /></li></ul>De definir esse atributo em cada exemplo de intercala se o tipo de mídia for MFVideoInterlace_FieldSingleUpper, MFVideoInterlace_FieldSingleLower ou MFVideoInterlace_MixedInterlaceOrProgressive.<br /> | 
+| <a href="mfsampleextension-repeatfirstfield-attribute.md">MFSampleExtension_RepeatFirstField</a> | Se <strong>TRUE</strong>, o primeiro campo será repetido. Se <strong>FALSE</strong> ou não for definido, o primeiro campo não será repetido. | 
+| <a href="mfsampleextension-singlefield-attribute.md">MFSampleExtension_SingleField</a> | Se <strong>TRUE</strong>, o exemplo conterá um único campo. Se <strong>FALSE</strong>, o exemplo conterá campos intercalados. | 
+
 
 
 
  
 
-A tabela a seguir mostra quais sinalizadores são necessários, opcionais ou proibidos, com base no tipo de mídia.
+A tabela a seguir mostra quais sinalizadores são obrigatórios, opcionais ou proibidos, com base no tipo de mídia.
 
 
 
@@ -237,34 +210,34 @@ Se o tipo de mídia for MFVideoInterlace \_ FieldSingleUpper ou MFVideoInterlace
 
 A mesma regra se aplica à abertura geométrica (atributo de[ \_ \_ \_ abertura geométrica MF MT](mf-mt-geometric-aperture-attribute.md) ) e à abertura de exibição mínima (atributo de[ \_ \_ \_ \_ abertura de exibição mínima de MF MT](mf-mt-minimum-display-aperture-attribute.md) ). Essas regiões são especificadas em termos de todo o quadro, não dos campos individuais.
 
-## <a name="directshow-mappings"></a>Mapeamentos do DirectShow
+## <a name="directshow-mappings"></a>DirectShow Mapeamentos
 
-No DirectShow, as informações de entrelaçamento por amostra estão contidas no membro **dwTypeSpecificFlags** da estrutura de **\_ \_ Propriedades am SAMPLE2** . A tabela a seguir mostra os atributos equivalentes para Media Foundation.
+no DirectShow, as informações de entrelaçamento por amostra estão contidas no membro **dwTypeSpecificFlags** da estrutura de **\_ \_ propriedades AM SAMPLE2** . A tabela a seguir mostra os atributos equivalentes para Media Foundation.
 
 
 
-| Sinalizador de exemplo do DirectShow              | Media Foundation atributo de exemplo                                                                                                                                                  |
+| sinalizador de exemplo de DirectShow              | Media Foundation atributo de exemplo                                                                                                                                                  |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | \_ \_ \_ quadro intercalado do sinalizador de vídeo am \_ | **MFSampleExtension \_ Únicofield**  =  **falso**.                                                                                                                                    |
-| \_Campo1 do \_ sinalizador de vídeo am \_             | **MFSampleExtension \_ Entrelaçado**  =  **verdadeiro**.<br/> **MFSampleExtension \_ Singlefield**  =  **verdadeiro**.<br/> **MFSampleExtension \_ BottomFieldFirst**  =  **false**.<br/> |
-| \_Sinalizador de vídeo am \_ \_ campo2             | **MFSampleExtension \_ Entrelaçado**  =  **verdadeiro**.<br/> **MFSampleExtension \_ Singlefield**  =  **verdadeiro**.<br/> **MFSampleExtension \_ BottomFieldFirst**  =  **true**.<br/>  |
-| \_sinalizador de vídeo am \_ \_ trançado              | **MFSampleExtension \_ Falso entrelaçado**  =  . (Esse sinalizador indica que o driver não deve desentrelaçar os dois campos.)                                                        |
-| \_Sinalizador de vídeo am \_ \_ FIELD1FIRST        | **MFSampleExtension \_ BottomFieldFirst**  =  **false**. Se o conteúdo for entrelaçado e o \_ sinalizador FIELD1FIRST do sinalizador de vídeo am \_ \_ não estiver presente, defina esse atributo como **true**.        |
-| \_campo de \_ repetição do sinalizador de vídeo am \_ \_      | **MFSampleExtension \_ RepeatFirstField**  =  **true**. Se o \_ sinalizador de campo de repetição do sinalizador de vídeo am \_ \_ \_ não estiver presente, defina esse atributo como **false**.                                    |
+| \_Campo1 do \_ sinalizador de vídeo am \_             | **MFSampleExtension \_ Entrelaçado**  =  **verdadeiro**.<br/> **MFSampleExtension \_ SingleField**  =  **TRUE.**<br/> **MFSampleExtension \_ BottomFieldFirst**  =  **FALSE.**<br/> |
+| CAMPO \_ DO SINALIZADOR DE VÍDEO \_ \_ AM2             | **MFSampleExtension \_ TRUE**  =  **entrelaçado.**<br/> **MFSampleExtension \_ SingleField**  =  **TRUE.**<br/> **MFSampleExtension \_ BottomFieldFirst**  =  **TRUE.**<br/>  |
+| TEAVE \_ DO SINALIZADOR DE VÍDEO \_ \_ AM              | **MFSampleExtension \_ FALSE**  =  **entrelaçado.** (Esse sinalizador indica que o driver não deve desinteressar os dois campos.)                                                        |
+| AM \_ VIDEO \_ FLAG \_ FIELD1FIRST        | **MFSampleExtension \_ BottomFieldFirst**  =  **FALSE.** Se o conteúdo estiver entrelaçado e o sinalizador \_ FIELD1FIRST do SINALIZADOR DE VÍDEO AM não estiver presente, de definir \_ \_ esse atributo como **TRUE.**        |
+| CAMPO \_ DE REPETIÇÃO DO SINALIZADOR DE VÍDEO \_ \_ \_ AM      | **MFSampleExtension \_ RepeatFirstField**  =  **TRUE.** Se o sinalizador AM \_ VIDEO FLAG REPEAT FIELD não estiver \_ \_ \_ presente, de definir esse atributo como **FALSE.**                                    |
 
 
 
  
 
-Se o exemplo do DirectShow não contiver sinalizadores de exemplo, use o valor de **dwInterlaceFlags** da estrutura **VIDEOINFOHEADER2** :
+Se o DirectShow exemplo não contém sinalizadores de exemplo, use o valor **dwInterheadFlags** da **estrutura VIDEOINFOHEADER2:**
 
 
 
-| Sinalizador de entrelaçamento do DirectShow    | Media Foundation atributo de exemplo                    |
+| DirectShow sinalizador de intercala    | Media Foundation de exemplo                    |
 |------------------------------|------------------------------------------------------|
-| \_Isentrelaçado AMINTERLACE    | **MFSampleExtension \_ Entrelaçado**  =  **verdadeiro**.        |
-| AMINTERLACE \_ 1FieldPerSample | **MFSampleExtension \_ Singlefield**  =  **verdadeiro**.       |
-| AMINTERLACE \_ Field1First     | **MFSampleExtension \_ BottomFieldFirst**  =  **false**. |
+| AMINTER FRAME \_ IsInterlaced    | **MFSampleExtension \_ TRUE**  =  **entrelaçado.**        |
+| AMINTER OPERAÇÃO \_ 1FieldPerSample | **MFSampleExtension \_ SingleField**  =  **TRUE.**       |
+| AMINTER METEOR \_ Field1First     | **MFSampleExtension \_ BottomFieldFirst**  =  **FALSE.** |
 
 
 

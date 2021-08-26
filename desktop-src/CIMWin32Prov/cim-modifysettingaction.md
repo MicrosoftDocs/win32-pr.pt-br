@@ -1,8 +1,8 @@
 ---
-description: A \_ classe CIM ModifySettingAction representa as informações para modificar um arquivo de configuração específico, para uma entrada específica, com um valor específico.
+description: A classe CIM ModifySettingAction representa as informações para modificar um arquivo de configuração específico, para uma entrada \_ específica, com um valor específico.
 ms.assetid: 6d22bc11-f798-4634-8688-797d4a4a4bee
 ms.tgt_platform: multiple
-title: Classe CIM_ModifySettingAction
+title: CIM_ModifySettingAction classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -28,19 +28,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 450e73eaa6f405e47d79cbf3840932e0f106a4b9
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: d585163052a2d9bee13282342ddf3891d6d13ba76d0c1c95c841de7be6302893
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646447"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119921336"
 ---
-# <a name="cim_modifysettingaction-class"></a>\_Classe CIM ModifySettingAction
+# <a name="cim_modifysettingaction-class"></a>Classe CIM \_ ModifySettingAction
 
-A classe **CIM \_ ModifySettingAction** representa as informações para modificar um arquivo de configuração específico, para uma entrada específica, com um valor específico.
+A **classe CIM \_ ModifySettingAction** representa as informações para modificar um arquivo de configuração específico, para uma entrada específica, com um valor específico.
 
 > [!IMPORTANT]
-> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> As classes CIM (Distributed Management Task Force) do DMTF (Distributed Management Task Force) modelo CIM são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
@@ -71,20 +71,20 @@ class CIM_ModifySettingAction : CIM_Action
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ ModifySettingAction** tem estes tipos de membros:
+A **classe CIM \_ ModifySettingAction** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-A classe **CIM \_ ModifySettingAction** tem esses métodos.
+A **classe CIM \_ ModifySettingAction** tem esses métodos.
 
 
 
 | Método                                                           | Descrição                                                 |
 |:-----------------------------------------------------------------|:------------------------------------------------------------|
-| [**Chame**](invoke-method-in-class-cim-modifysettingaction.md) | Executa uma ação específica. Não implementado pelo WMI.<br/> |
+| [**Invoke**](invoke-method-in-class-cim-modifysettingaction.md) | Toma uma ação específica. Não implementado pelo WMI.<br/> |
 
 
 
@@ -92,11 +92,11 @@ A classe **CIM \_ ModifySettingAction** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ ModifySettingAction** tem essas propriedades.
+A **classe CIM \_ ModifySettingAction** tem essas propriedades.
 
 <dl> <dt>
 
-**ActionID**
+**Actionid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -105,25 +105,25 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**chave**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Identificador exclusivo atribuído a uma ação específica para um elemento de software.
 
-Esta propriedade é herdada [**da \_ ação CIM**](cim-action.md).
+Essa propriedade é herdada da [**Ação CIM. \_**](cim-action.md)
 
 </dd> <dt>
 
 **ActionType**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Tipo de ação a ser executada na entrada de configuração especificada. As adições são consideradas diferenciadas entre maiúsculas e minúsculas; no entanto, supõe-se que as remoções não diferenciam maiúsculas de minúsculas.
+Tipo de ação a ser executar na entrada de configuração especificada. Supõe-se que as adições sejam sensíveis a minúsculas; no entanto, as remoções são assumidas como não sensíveis a maiúsculas e minúsculas.
 
 <dt>
 
@@ -151,7 +151,7 @@ Exclui a entrada especificada.
 
 <span id="Append"></span><span id="append"></span><span id="APPEND"></span>
 
-<span id="Append"></span><span id="append"></span><span id="APPEND"></span>**Acrescentar** (2)
+<span id="Append"></span><span id="append"></span><span id="APPEND"></span>**Anexar** (2)
 
 
 </dt> <dd>
@@ -185,9 +185,9 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Breve descrição textual do objeto.
+Descrição textual curta do objeto.
 
-Esta propriedade é herdada [**da \_ ação CIM**](cim-action.md).
+Essa propriedade é herdada da [**Ação CIM. \_**](cim-action.md)
 
 </dd> <dt>
 
@@ -202,22 +202,22 @@ Tipo de acesso: Somente leitura
 
 Descrição do objeto.
 
-Esta propriedade é herdada [**da \_ ação CIM**](cim-action.md).
+Essa propriedade é herdada da [**Ação CIM. \_**](cim-action.md)
 
 </dd> <dt>
 
 **Direção**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se um objeto [**de \_ ação CIM**](cim-action.md) específico faz parte de uma sequência de ações para fazer a transição do elemento de software atual para seu próximo estado, como "instalar" ou para remover o elemento de software atual, como "Desinstalar".
+Indica se um objeto de Ação [**CIM \_**](cim-action.md) específico faz parte de uma sequência de ações para fazer a transição do elemento de software atual para seu próximo estado, como "Instalar", ou para remover o elemento de software atual, como "Desinstalar".
 
-Esta propriedade é herdada [**da \_ ação CIM**](cim-action.md).
+Essa propriedade é herdada da [**Ação CIM. \_**](cim-action.md)
 
 <dt>
 
@@ -237,7 +237,7 @@ Esta propriedade é herdada [**da \_ ação CIM**](cim-action.md).
 
 </dd> <dt>
 
-**Entryname**
+**Nome_da_entrada**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -246,14 +246,14 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificadores: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Nome da entrada a ser modificada.
 
 </dd> <dt>
 
-**Entryvalue**
+**EntryValue**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -262,7 +262,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Valor a adicionar, acrescentar ou substituir a configuração especificada.
+Valor a ser acrescentado, acrescentado ou para substituir a configuração especificada.
 
 </dd> <dt>
 
@@ -275,10 +275,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (1024)
+Qualificadores: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (1024)
 </dt> </dl>
 
-Nome do arquivo da entrada do arquivo de configuração a ser modificada.
+Nome do arquivo da entrada de arquivo de configuração a ser modificado.
 
 </dd> <dt>
 
@@ -291,12 +291,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ softwareelement**](cim-softwareelement.md).**Name**"), [**\_ chave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificadores: [**Propagado**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**Name**"), [**cim \_ key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Identifica o elemento de software.
 
-Esta propriedade é herdada [**da \_ ação CIM**](cim-action.md).
+Essa propriedade é herdada da [**Ação CIM. \_**](cim-action.md)
 
 </dd> <dt>
 
@@ -309,10 +309,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificadores: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Chave da seção da entrada de configuração a ser modificada.
+Chave de seção da entrada de configuração a ser modificado.
 
 </dd> <dt>
 
@@ -325,30 +325,30 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ softwareelement**](cim-softwareelement.md).**SoftwareElementID**"), [**\_ chave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificadores: [**Propagado**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementID**"), [**chave \_ CIM,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Identificador para o elemento de software.
 
-Esta propriedade é herdada [**da \_ ação CIM**](cim-action.md).
+Essa propriedade é herdada da [**Ação CIM. \_**](cim-action.md)
 
 </dd> <dt>
 
 **SoftwareElementState**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ softwareelement**](cim-softwareelement.md).**SoftwareElementState**"), [**\_ chave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Qualificadores: [**Propagado**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementState**"), [**chave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Estado de um elemento de software.
 
-Esta propriedade é herdada [**da \_ ação CIM**](cim-action.md).
+Essa propriedade é herdada da [**Ação CIM. \_**](cim-action.md)
 
 <dt>
 
@@ -544,7 +544,7 @@ VM (máquina virtual) da Microsoft para Java
 
 </dt> <dd>
 
-Windows 3. x
+Windows Win
 
 </dd> <dt>
 
@@ -626,7 +626,7 @@ NCR 3000
 
 <span id="Reliant_UNIX"></span><span id="reliant_unix"></span><span id="RELIANT_UNIX"></span>
 
-<span id="Reliant_UNIX"></span><span id="reliant_unix"></span><span id="RELIANT_UNIX"></span>**Unix dependente** (24)
+<span id="Reliant_UNIX"></span><span id="reliant_unix"></span><span id="RELIANT_UNIX"></span>**UNIX dependentes** (24)
 
 
 </dt> <dd></dd> <dt>
@@ -754,7 +754,7 @@ BS2000/OSD
 
 <span id="Interactive_UNIX"></span><span id="interactive_unix"></span><span id="INTERACTIVE_UNIX"></span>
 
-<span id="Interactive_UNIX"></span><span id="interactive_unix"></span><span id="INTERACTIVE_UNIX"></span>**Unix interativo** (40)
+<span id="Interactive_UNIX"></span><span id="interactive_unix"></span><span id="INTERACTIVE_UNIX"></span>**UNIX interativos** (40)
 
 
 </dt> <dd></dd> <dt>
@@ -766,7 +766,7 @@ BS2000/OSD
 
 </dt> <dd>
 
-BSD UNIX
+UNIX BSD
 
 </dd> <dt>
 
@@ -953,7 +953,7 @@ A classe **CIM \_ ModifySettingAction** é derivada da [**\_ ação CIM**](cim-a
 
 O WMI não implementa essa classe.
 
-Esta documentação é derivada das descrições da classe CIM publicadas pela DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, obedecer aos padrões de documentação do Microsoft SDK ou fornecer mais informações.
+Esta documentação é derivada das descrições da classe CIM publicadas pelo DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, estar em conformidade com os padrões de documentação do SDK da Microsoft ou fornecer mais informações.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -963,8 +963,8 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -973,7 +973,7 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 
 <dl> <dt>
 
-[**Ação de CIM \_**](cim-action.md)
+[**Ação \_ CIM**](cim-action.md)
 </dt> </dl>
 
  

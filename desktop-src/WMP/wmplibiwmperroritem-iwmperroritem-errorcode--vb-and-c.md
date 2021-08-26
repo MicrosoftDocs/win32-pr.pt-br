@@ -3,9 +3,9 @@ title: Propriedade errorCode IWMPErrorItem
 description: A propriedade errorCode Obtém o código de erro atual.
 ms.assetid: 00719067-685d-4ef2-9eec-72c7892fcdb9
 keywords:
-- Propriedade errorCode Windows Media Player
-- Propriedade errorCode Windows Media Player, interface IWMPErrorItem
-- Interface IWMPErrorItem Windows Media Player, Propriedade errorCode
+- Windows Media Player da propriedade errorCode
+- propriedade errorCode Windows Media Player, interface IWMPErrorItem
+- Windows Media Player de interface IWMPErrorItem, propriedade errorCode
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f284d5655fc1f4007695a1f681c744a9c5c6fc0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9d7179684fb0332e25716282adfd47a5f769493f646f73c82d0391bbce4e6a91
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105812156"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120031206"
 ---
 # <a name="iwmperroritemerrorcode-property"></a>Propriedade IWMPErrorItem:: errorCode
 

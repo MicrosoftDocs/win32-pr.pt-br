@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5e1962dc10b5ef45ba3ad7d7196872fd4d27708c
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 4db53509411c4b0d8e189f7ec9e2e3a1bee0fa7fa14fee94a7d5cc60a0703743
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104172830"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120118136"
 ---
 # <a name="texture2dgathercmpalphasfloatfloatint2int2int2int2uint-function"></a>Função Texture2D:: GatherCmpAlpha (S, float, float, Int2, Int2, Int2, Int2, uint)
 
@@ -118,7 +118,7 @@ O status da operação. Você não pode acessar o status diretamente; em vez dis
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **TemplateType**
 
@@ -132,7 +132,7 @@ Essa função tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 

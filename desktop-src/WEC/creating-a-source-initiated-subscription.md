@@ -5,12 +5,12 @@ ms.assetid: 489d3613-177f-4045-a055-2c1577ef2191
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ef0f3a40b3404441df40434c7ddb2f1bb6ac578caaf182c14d2825c6f99e7f9d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 771a70758a57134cdaabd8a9a72e3ad43c8bb890
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118997966"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122887286"
 ---
 # <a name="creating-a-source-initiated-subscription"></a>Criando uma assinatura iniciada por origem
 
@@ -419,12 +419,12 @@ DWORD GetProperty(EC_HANDLE hSubscription,
 
     1.  Execute o seguinte comando em um prompt de comando com privilégios elevados para obter o status de runtime da assinatura:
 
-        **wecutil gr***<subscriptionID>*
+        **wecutil gr** *&lt; subscriptionID &gt;*
 
     2.  Verifique se a origem do evento se conectou. Talvez seja necessário aguardar até que o intervalo de atualização especificado na política tenha acabado depois de criar a assinatura para que a origem do evento seja conectada.
     3.  Execute o seguinte comando para obter as informações da assinatura:
 
-        **wecutil gs***<subscriptionID>*
+        *&lt; subscriptionID &gt;* **do wecutil gs**
 
     4.  Obter o valor DeliveryMaxItems das informações da assinatura.
 

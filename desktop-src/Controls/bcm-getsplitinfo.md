@@ -3,7 +3,7 @@ title: Mensagem de BCM_GETSPLITINFO (commctrl. h)
 description: Obtém informações para um controle de botão de divisão. Envie essa mensagem explicitamente ou usando o botão \_ GetSplitInfo macro.
 ms.assetid: d608440d-b8d8-4e32-9128-08b7566b185c
 keywords:
-- Controles de BCM_GETSPLITINFO de mensagens do Windows
+- controles de Windows de mensagem de BCM_GETSPLITINFO
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 162c5522fcb432e3d512f688ae24aa12d4d0d8e1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1ee0771c8999c6a805931a93ed28c245082d18e538856fde42b69622ee73f9a8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918525"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119921636"
 ---
 # <a name="bcm_getsplitinfo-message"></a>\_Mensagem GETSPLITINFO do BCM
 
@@ -43,7 +43,7 @@ Um ponteiro para uma estrutura de [**\_ SPLITINFO de botão**](/windows/win32/ap
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna **verdadeiro** se for bem-sucedido ou **false** caso contrário.
 
@@ -57,9 +57,9 @@ Use esta mensagem somente com os estilos de botão [**BS \_ SPLITBUTTON**](butto
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

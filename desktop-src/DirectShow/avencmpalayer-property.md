@@ -1,21 +1,21 @@
 ---
 description: Especifica a camada de áudio MPEG. Essa propriedade se aplica a codificadores de áudio MPEG.
 ms.assetid: cdfe21f6-44aa-4450-99a6-58b23f4b588a
-title: Propriedade AVEncMPALayer (Codecapi. h)
+title: Propriedade AVEncMPALayer (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a81835ff021f690980290698c0706ee7cbdbf7e8
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: c5654f0d5d2cc5c7d07c05bc2823e4f3b83cc907a1ec46bf29bee76249901cc5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104456751"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120087596"
 ---
 # <a name="avencmpalayer-property"></a>Propriedade AVEncMPALayer
 
 Especifica a camada de áudio MPEG. Essa propriedade se aplica a codificadores de áudio MPEG.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="data-type"></a>Tipo de dados
 
@@ -27,7 +27,7 @@ Esta propriedade é de leitura/gravação.
 
 ## <a name="property-value"></a>Valor da propriedade
 
-O valor dessa propriedade é um membro da enumeração [**eAVEncMPALayer**](/windows/win32/api/codecapi/ne-codecapi-eavencmpalayer) .
+O valor dessa propriedade é um membro da [**enumeração eAVEncMPALayer.**](/windows/win32/api/codecapi/ne-codecapi-eavencmpalayer)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,9 +35,9 @@ O valor dessa propriedade é um membro da enumeração [**eAVEncMPALayer**](/win
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos do Windows 2000 Professional \[ Desktop aplicativos \| UWP\]<br/>                     |
-| Servidor mínimo com suporte<br/> | Aplicativos da área de trabalho do Windows 2000 Server aplicativos \[ \| UWP\]<br/>                           |
-| parâmetro<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional aplicativos \[ UWP da área de \| trabalho\]<br/>                     |
+| Servidor mínimo com suporte<br/> | Windows aplicativos da área de trabalho do servidor 2000 \[ \| aplicativos UWP\]<br/>                           |
+| Cabeçalho<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -45,10 +45,10 @@ O valor dessa propriedade é um membro da enumeração [**eAVEncMPALayer**](/win
 
 <dl> <dt>
 
-[Propriedades da API do codec](codec-api-properties.md)
+[Propriedades da API do Codec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interface ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI Interface**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

@@ -23,12 +23,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 0c4c73a5021efb4fc86c6cbc21d5b6bdc97aec07
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a6a20248cf536d8de58d5e6ba3cc1961e194541b
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920390"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884792"
 ---
 # <a name="cim_fileaction-class"></a>\_Classe fileaction do CIM
 
@@ -74,7 +74,7 @@ A **classe \_ Fileaction do CIM** tem esses métodos.
 
 | Método                                                  | Descrição                                                   |
 |:--------------------------------------------------------|:--------------------------------------------------------------|
-| [**Chame**](invoke-method-in-class-cim-fileaction.md) | Executa uma ação específica. Não implementado pelo WMI.<br/> |
+| [**Invoke**](invoke-method-in-class-cim-fileaction.md) | Executa uma ação específica. Não implementado pelo WMI.<br/> |
 
 
 
@@ -414,7 +414,7 @@ VM (máquina virtual) da Microsoft para Java
 
 </dt> <dd>
 
-Windows 3. x
+Windows Win
 
 </dd> <dt>
 
@@ -496,7 +496,7 @@ NCR 3000
 
 <span id="Reliant_UNIX"></span><span id="reliant_unix"></span><span id="RELIANT_UNIX"></span>
 
-<span id="Reliant_UNIX"></span><span id="reliant_unix"></span><span id="RELIANT_UNIX"></span>**Unix dependente** (24)
+<span id="Reliant_UNIX"></span><span id="reliant_unix"></span><span id="RELIANT_UNIX"></span>**UNIX dependentes** (24)
 
 
 </dt> <dd></dd> <dt>
@@ -624,7 +624,7 @@ BS2000/OSD
 
 <span id="Interactive_UNIX"></span><span id="interactive_unix"></span><span id="INTERACTIVE_UNIX"></span>
 
-<span id="Interactive_UNIX"></span><span id="interactive_unix"></span><span id="INTERACTIVE_UNIX"></span>**Unix interativo** (40)
+<span id="Interactive_UNIX"></span><span id="interactive_unix"></span><span id="INTERACTIVE_UNIX"></span>**UNIX interativos** (40)
 
 
 </dt> <dd></dd> <dt>
@@ -636,7 +636,7 @@ BS2000/OSD
 
 </dt> <dd>
 
-BSD UNIX
+UNIX BSD
 
 </dd> <dt>
 
@@ -810,8 +810,8 @@ Versão da operação.
 
 A versão da operação deve estar em um dos seguintes formatos:
 
--   <major>.<minor>.<revision>
--   <major>.<minor><letter><revision>
+-   &lt;principal &gt; . &lt; secundária &gt; . &lt; revisão&gt;
+-   &lt;principal &gt; . &lt; &gt; &lt; revisão de letra &gt; &lt; secundária&gt;
 
 Esta propriedade é herdada [**da \_ ação CIM**](cim-action.md).
 

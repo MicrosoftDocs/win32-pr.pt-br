@@ -4,12 +4,12 @@ description: Este tópico demonstra como exibir e acessar o conteúdo de um dire
 ms.assetid: 5192E171-8CEF-4921-9378-A7C3A52A9024
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: abd47b1d582d53a66bc77284927aef4230043e92
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 3f375ca2df82f851401baec79683a54ff28cf14e7a004d08cb0885e60fb036d1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104008615"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119920856"
 ---
 # <a name="how-to-create-a-multiple-selection-list-box"></a>Como criar uma caixa de listagem de Multiple-Selection
 
@@ -21,12 +21,12 @@ O exemplo de código C++ neste tópico permite que um usuário exiba uma lista d
 
 ### <a name="technologies"></a>Tecnologias
 
--   [Controles do Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
 -   C/C++
--   Programação da interface do usuário do Windows
+-   Windows Programação de interface do usuário
 
 ## <a name="instructions"></a>Instruções
 

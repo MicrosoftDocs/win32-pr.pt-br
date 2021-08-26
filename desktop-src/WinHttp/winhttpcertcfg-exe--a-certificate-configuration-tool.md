@@ -4,12 +4,12 @@ ms.assetid: e4c2afc2-0fd3-4bdd-812e-f112958e1576
 title: WinHttpCertCfg.exe, uma ferramenta de configuração de certificado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 51ce9978f6e2ffcafa1357a45dbeff80c12bf0e6ea2f7f3fb9656376b33dfb23
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 21b8fbfadd6cf0282f63b26c8dd40d5ef96b5f54
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117743794"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122466423"
 ---
 # <a name="winhttpcertcfgexe-a-certificate-configuration-tool"></a>WinHttpCertCfg.exe, uma ferramenta de configuração de certificado
 
@@ -36,61 +36,19 @@ A tabela a seguir lista os parâmetros para a ferramenta de configuração do.
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Parâmetro</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>-?</td>
-<td>Exibe dados de sintaxe.</td>
-</tr>
-<tr class="even">
-<td>-i</td>
-<td>especifica que o certificado deve ser importado de um arquivo de informações pessoais Exchange (PFX). Esse parâmetro deve ser seguido pelo nome do arquivo. Quando esse parâmetro é especificado, &quot; -a &quot; e &quot; -c &quot; também devem ser especificados.</td>
-</tr>
-<tr class="odd">
-<td>-g</td>
-<td>Especifica que o acesso é concedido a uma chave privada. Quando esse parâmetro é especificado, &quot; -a &quot; , &quot; -c e &quot; &quot; -s &quot; também devem ser especificados.</td>
-</tr>
-<tr class="even">
-<td>-r</td>
-<td>Especifica que o acesso é removido para uma chave privada. Quando esse parâmetro é especificado, &quot; -a &quot; , &quot; -c e &quot; &quot; -s &quot; também devem ser especificados.</td>
-</tr>
-<tr class="odd">
-<td>-l</td>
-<td>Especifica que as contas com acesso a uma chave privada estão listadas. Quando esse parâmetro é especificado, &quot; -c &quot; e &quot; -s &quot; também devem ser especificados.</td>
-</tr>
-<tr class="even">
-<td>-a</td>
-<td>Especifica a conta de usuário no computador que está sendo configurado. Pode ser um computador local ou uma conta de domínio, como &quot; IWAM_TESTMACHINE &quot; , &quot; testuser &quot; ou &quot; TESTDOMAIN\DOMAINUSER &quot; .</td>
-</tr>
-<tr class="odd">
-<td>-c</td>
-<td>Especifica o local e o nome do <a href="glossary.md"><em>repositório de certificados</em></a>. Use &quot; local_machine &quot; ou &quot; CURRENT_USER &quot; para designar qual ramificação do Registro usar para o local. O <em>repositório de certificados</em> pode ser qualquer instalado no computador. Os exemplos de nome típicos são &quot; My &quot; , &quot; root &quot; e &quot; TrustedPeople &quot; . O local e o nome do <em>repositório de certificados</em> são separados por uma barra invertida, por exemplo, &quot; local_machine \root &quot; .
-<blockquote>
-[!Note]<br />
-Embora a &quot; &quot; ramificação CURRENT_USER do registro possa ser especificada com esse parâmetro, estender o acesso às chaves privadas destina-se principalmente a certificados instalados em um <a href="glossary.md"><em>repositório de certificados</em></a> do computador local que pode ser acessado por vários usuários.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td>-S</td>
-<td>Especifica uma cadeia de caracteres de pesquisa que não diferencia maiúsculas de minúsculas para localizar o primeiro certificado enumerado com um nome de entidade que contém essa subcadeia de caracteres.</td>
-</tr>
-<tr class="odd">
-<td>-p</td>
-<td>Especifica uma senha que é usada para importar o certificado e a chave privada. Isso só é usado com a opção de importação.</td>
-</tr>
-</tbody>
-</table>
+
+| Parâmetro | Descrição | 
+|-----------|-------------|
+| -? | Exibe dados de sintaxe. | 
+| -i | especifica que o certificado deve ser importado de um arquivo de informações pessoais Exchange (PFX). Esse parâmetro deve ser seguido pelo nome do arquivo. Quando esse parâmetro é especificado, "-a" e "-c" também devem ser especificados. | 
+| -g | Especifica que o acesso é concedido a uma chave privada. Quando esse parâmetro é especificado, "-a", "-c" e "-s" também devem ser especificados. | 
+| -r | Especifica que o acesso é removido para uma chave privada. Quando esse parâmetro é especificado, "-a", "-c" e "-s" também devem ser especificados. | 
+| -l | Especifica que as contas com acesso a uma chave privada estão listadas. Quando esse parâmetro é especificado, "-c" e "-s" também devem ser especificados. | 
+| -a | Especifica a conta de usuário no computador que está sendo configurado. Pode ser um computador local ou uma conta de domínio, como "IWAM_TESTMACHINE", "testuser" ou "TESTDOMAIN\DOMAINUSER". | 
+| -c | Especifica o local e o nome do <a href="glossary.md"><em>repositório de certificados</em></a>. Use "LOCAL_MACHINE" ou "CURRENT_USER" para designar qual ramificação do Registro usar para o local. O <em>repositório de certificados</em> pode ser qualquer instalado no computador. Exemplos de nome típicos são "meu", "raiz" e "TrustedPeople". O local e o nome do <em>repositório de certificados</em> são separados por uma barra invertida, por exemplo, "local_machine \root".<blockquote>[!Note]<br />Embora a ramificação "CURRENT_USER" do registro possa ser especificada com esse parâmetro, estender o acesso às chaves privadas destina-se principalmente a certificados instalados em um <a href="glossary.md"><em>repositório de certificados</em></a> do computador local que pode ser acessado por vários usuários.</blockquote><br /> | 
+| -S | Especifica uma cadeia de caracteres de pesquisa que não diferencia maiúsculas de minúsculas para localizar o primeiro certificado enumerado com um nome de entidade que contém essa subcadeia de caracteres. | 
+| -p | Especifica uma senha que é usada para importar o certificado e a chave privada. Isso só é usado com a opção de importação. | 
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: Constantes de erro do log de eventos do Windows (WinError. h)
-description: A seguir estão os códigos de erro definidos pelo log de eventos do Windows.
+title: Windows Constantes de erro do log de eventos (WinError. h)
+description: a seguir estão os códigos de erro que Windows Log de eventos define.
 ms.assetid: 889ea4ae-dede-45d5-9293-cec85d81f010
 topic_type:
 - apiref
@@ -49,16 +49,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: efa5443d98c53d6abedbe3a0027e8e2e524ae9df
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e0f6f0bd3e2805c02dad78c064b56a443bfbb596cf42f25e9b52ac7ba584f123
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105794539"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120031936"
 ---
-# <a name="windows-event-log-error-constants"></a>Constantes de erro do log de eventos do Windows
+# <a name="windows-event-log-error-constants"></a>Windows Constantes de erro do log de eventos
 
-A seguir estão os códigos de erro definidos pelo log de eventos do Windows.
+a seguir estão os códigos de erro que Windows Log de eventos define.
 
 <dl> <dt>
 
@@ -218,7 +218,7 @@ O cursor do resultado da consulta não está apontando para uma posição válid
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_EVT_NON_VALIDATING_MSXML"></span><span id="error_evt_non_validating_msxml"></span>**ERRO \_ EVT \_ não \_ Validando o \_ MSXML**
+<span id="ERROR_EVT_NON_VALIDATING_MSXML"></span><span id="error_evt_non_validating_msxml"></span>**ERRO \_ EVT \_ não \_ Validando \_ MSXML**
 </dt> <dd> <dl> <dt>
 
 15013
@@ -226,7 +226,7 @@ O cursor do resultado da consulta não está apontando para uma posição válid
 
 
 
-O analisador MSXML registrado não oferece suporte à validação.
+o analisador de MSXML registrado não oferece suporte à validação.
 
 
 </dt> </dl> </dd> <dt>
@@ -562,9 +562,9 @@ Tentativa de criar um tipo numérico que está fora de seu intervalo válido.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>WinError. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>WinError. h</dt> </dl> |
 
 
 

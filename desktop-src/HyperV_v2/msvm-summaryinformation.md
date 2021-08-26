@@ -55,12 +55,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 4af759cf621f5afbaef90924351ad24a232889b1d81048f0e1372630c74f98f3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1f7cefc27c0e4adc507276d118bcca95c274d121
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118950085"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886615"
 ---
 # <a name="msvm_summaryinformation-class"></a>\_Classe Msvm SummaryInformation
 
@@ -377,13 +377,13 @@ InstanceID é uma propriedade opcional que pode ser usada para identificar de fo
 
 Para garantir a exclusividade no NameSpace, o valor de InstanceID deve ser construído usando o seguinte algoritmo "preferencial":
 
-<OrgID>:<LocalID>
+&lt;OrgID &gt; : &lt; LocalId&gt;
 
-Onde <OrgID> e <LocalID> são separados por dois-pontos (:), e onde <OrgID> devem incluir um nome de direitos autorais, com marca registrada ou exclusivo que pertença à entidade de negócios que está criando ou definindo a InstanceId ou que é uma ID registrada atribuída à entidade de negócios por uma autoridade global reconhecida. (Esse requisito é semelhante ao <Schema Name> \_ <Class Name> estrutura de nomes de classe de esquema.) Além disso, para garantir a exclusividade, <OrgID> não deve conter dois-pontos (:). Ao usar esse algoritmo, os primeiros dois-pontos a serem exibidos em InstanceID devem aparecer entre <OrgID> e <LocalID> .
+Onde &lt; OrgID &gt; e &lt; LocalId &gt; são separados por dois-pontos (:), e onde &lt; OrgID &gt; deve incluir um nome de direitos autorais, com marca registrada ou exclusivo que pertença à entidade de negócios que está criando ou definindo a InstanceId ou que é uma ID registrada atribuída à entidade de negócios por uma autoridade global reconhecida. (Esse requisito é semelhante ao <Schema Name> \_ <Class Name> estrutura de nomes de classe de esquema.) Além disso, para garantir a exclusividade, &lt; OrgID &gt; não deve conter dois-pontos (:). Ao usar esse algoritmo, os primeiros dois-pontos para aparecer em InstanceID devem aparecer entre &lt; OrgID &gt; e &lt; LocalId &gt; .
 
-<LocalID> é escolhido pela entidade de negócios e não deve ser reutilizado para identificar elementos subjacentes (reais) diferentes. Se não for nulo e o algoritmo "preferencial" acima não for usado, a entidade de definição deverá garantir que a InstanceID resultante não seja reutilizada em quaisquer InstanceIDs produzidas por este ou outros provedores para o NameSpace dessa instância.
+&lt;A localId &gt; é escolhida pela entidade de negócios e não deve ser reutilizada para identificar elementos subjacentes (reais) diferentes. Se não for nulo e o algoritmo "preferencial" acima não for usado, a entidade de definição deverá garantir que a InstanceID resultante não seja reutilizada em quaisquer InstanceIDs produzidas por este ou outros provedores para o NameSpace dessa instância.
 
-Se não estiver definido como nulo para instâncias definidas por DMTF, o algoritmo "preferencial" deverá ser usado com o <OrgID> conjunto como CIM.
+Se não estiver definido como nulo para instâncias definidas por DMTF, o algoritmo "preferencial" deverá ser usado com o &lt; OrgID &gt; definido como CIM.
 
 > [!Note]  
 > Adicionado em Windows 10.
@@ -1211,7 +1211,7 @@ Tipo de dados: **uint64**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A quantidade de tempo desde que a máquina virtual foi inicializada pela última vez. Esta propriedade não é válida para instâncias de **Msvm \_ SummaryInformation** que representam um instantâneo de máquina virtual.
+A quantidade de tempo desde a última inicialização da máquina virtual. Esta propriedade não é válida para instâncias de **Msvm \_ SummaryInformation** que representam um instantâneo de máquina virtual.
 
 </dd> <dt>
 

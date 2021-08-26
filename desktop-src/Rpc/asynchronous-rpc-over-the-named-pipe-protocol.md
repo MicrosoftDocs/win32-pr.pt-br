@@ -4,12 +4,12 @@ description: Se você usar pipes nomeados (ncacn \_ NP) como seu protocolo de tr
 ms.assetid: a1d0f758-91bc-4821-9a82-64ba6ce575ad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cf46f9e1c2ea5eb3fe20203db274233f5c10dec5
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 4f1dade78846bc978abeb8bbbe5c324144db2645177722ca5afd1a62f99a3ea5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103917602"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120023666"
 ---
 # <a name="asynchronous-rpc-over-the-named-pipe-protocol"></a>RPC assíncrono sobre o protocolo de Named-Pipe
 
@@ -19,6 +19,6 @@ Por exemplo, você não desejaria usar uma chamada de notificação para novos e
 
 Como os pipes nomeados são um protocolo de transporte, seu aplicativo pode usá-los especificando [**ncacn \_ NP**](/windows/desktop/Midl/ncacn-np) como o protocolo em uma associação de cadeia de caracteres. Para obter mais informações sobre pipes nomeados, consulte [pipes nomeados](/windows/desktop/ipc/named-pipes). Para obter detalhes sobre como criar associações de cadeia de caracteres, consulte [usando associações de cadeia de caracteres](finding-server-host-systems.md).
 
- 
+ 
 
- 
+ 

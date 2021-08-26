@@ -6,12 +6,12 @@ ms.tgt_platform: multiple
 title: W (WMI)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bc30e54be719bb7765c323662bad805c4c440a00
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a3e764e567217ffa1b0cd5a686fe5195389a1a49430f97f66098624973d799f6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105782434"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120030526"
 ---
 # <a name="w-wmi"></a>W (WMI)
 
@@ -22,7 +22,7 @@ ms.locfileid: "105782434"
 <span id="wmi.gloss_win32_schema"></span><span id="WMI.GLOSS_WIN32_SCHEMA"></span>**Esquema Win32**
 </dt> <dd>
 
-Uma extensão da Microsoft para o [*esquema CIM*](gloss-c.md) que contém definições de classes e instâncias para representar [*objetos gerenciados*](gloss-m.md) que existem em um ambiente típico do Windows.
+uma extensão da Microsoft para o [*esquema CIM*](gloss-c.md) que contém definições de classes e instâncias para representar [*objetos gerenciados*](gloss-m.md) que existem em um ambiente de Windows típico.
 
 </dd> <dt>
 
@@ -57,14 +57,14 @@ Um componente de nível baixo que fornece acesso entre dispositivos WMI e de har
 <span id="wmi.gloss_wmi_odbc_adapter"></span><span id="WMI.GLOSS_WMI_ODBC_ADAPTER"></span>**Adaptador ODBC do WMI**
 </dt> <dd>
 
-Uma interface que permite que um aplicativo Obtenha informações do gerenciamento do Windows usando *linguagem WQL*. Isso fornece uma API padrão que permite que aplicativos baseados em ODBC usem os dados no [*repositório CIM*](gloss-c.md) como se fosse um banco de dado.
+uma interface que permite que um aplicativo obtenha informações do gerenciamento de Windows usando *linguagem WQL*. Isso fornece uma API padrão que permite que aplicativos baseados em ODBC usem os dados no [*repositório CIM*](gloss-c.md) como se fosse um banco de dado.
 
 </dd> <dt>
 
 <span id="wmi.gloss_wmi_query_language"></span><span id="WMI.GLOSS_WMI_QUERY_LANGUAGE"></span>**Linguagem WQL (WQL)**
 </dt> <dd>
 
-Um subconjunto de linguagem SQL com extensões para dar suporte à notificação de eventos do WMI e a outros recursos específicos do WMI.
+um subconjunto da linguagem de consulta estruturada (SQL) com extensões para dar suporte à notificação de eventos do wmi e outros recursos específicos do wmi.
 
 </dd> <dt>
 

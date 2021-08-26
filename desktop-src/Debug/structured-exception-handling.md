@@ -4,12 +4,12 @@ ms.assetid: 6b6326d8-6875-4146-a4e3-7873f4e400cb
 title: Tratamento de exceções estruturado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 62069b5aed16869a3f56b644d522c368702251c1
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 9c07e3bce1c15120f5bba8f4423d96a32495dcdab0262957980f2b829ac0fa68
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826167"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120059006"
 ---
 # <a name="structured-exception-handling"></a>Tratamento de exceções estruturado
 

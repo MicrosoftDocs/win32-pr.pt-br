@@ -4,12 +4,12 @@ description: Este tópico mostra como criar um sombreador de computação.
 ms.assetid: 6114dd90-626b-4c9e-9da5-7d2d33153e79
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 64e6dc39476b83a9bd810cc7bb85231174ec1b18
-ms.sourcegitcommit: 73417d55867c804274a55abe5ca71bcba7006119
+ms.openlocfilehash: eea5e0ab6309dd441d33fc20b13d0ef31642b62f
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "104294596"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884462"
 ---
 # <a name="how-to-create-a-compute-shader"></a>Como: criar um sombreador de computação
 
@@ -52,9 +52,9 @@ Um sombreador de computação é um sombreador programável do Microsoft High-Le
 O exemplo de código a seguir mostra como compilar e criar um sombreador de computação.
 
 > [!Note]  
-> Para este código de exemplo, você precisa do SDK do Windows 8,0 e do \_ arquivo d3dcompiler44.dll da pasta% Program \_ File% \\ Windows kits \\ 8,0 \\ Redist \\ D3D \\ <arch> em seu caminho.
+> para este código de exemplo, você precisa do SDK do Windows 8,0 e do \_ arquivo d3dcompiler44.dll da pasta% PROGRAM \_ file% \\ Windows Kits \\ 8,0 \\ redist \\ D3D \\ &lt; arch &gt; em seu caminho.
 
- 
+ 
 
 
 ```cpp

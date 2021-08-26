@@ -1,19 +1,19 @@
 ---
-description: O <dateCreated> elemento opcional identifica a data e a hora em que esse conector de pesquisa foi criado, usando o padrão ISO 8601. Ele não tem nenhum elemento filho e nenhum atributo.
+description: O &lt; elemento opcional DateCreated &gt; identifica a data e a hora em que esse conector de pesquisa foi criado, usando o padrão ISO 8601. Ele não tem nenhum elemento filho e nenhum atributo.
 ms.assetid: 96d8b067-b5ab-4d36-a8d7-1d084a9f661d
 title: Elemento dateCreated (esquema do conector de pesquisa)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b59af62b2bd7ce8678fafb1fdd84646314f41a51414b4285db3077b5db0e0f7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: eff7c739bcad9e3a6594008597c0392398f22864
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119944396"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122882505"
 ---
 # <a name="datecreated-element-search-connector-schema"></a>Elemento dateCreated (esquema do conector de pesquisa)
 
-O <dateCreated> elemento opcional identifica a data e a hora em que esse conector de pesquisa foi criado, usando o padrão ISO 8601. Ele não tem nenhum elemento filho e nenhum atributo.
+O &lt; elemento opcional DateCreated &gt; identifica a data e a hora em que esse conector de pesquisa foi criado, usando o padrão ISO 8601. Ele não tem nenhum elemento filho e nenhum atributo.
 
 ## <a name="syntax"></a>Syntax
 

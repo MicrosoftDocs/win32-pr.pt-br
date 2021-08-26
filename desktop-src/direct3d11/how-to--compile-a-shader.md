@@ -4,12 +4,12 @@ description: Este tópico mostra como usar a função D3DCompileFromFile em temp
 ms.assetid: A2CE368F-E72A-453D-BA4D-3D1D53DDDEE0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6bb5eadb1d6627f553a9d769e6a0f43ab3ebe3a9
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: a0ccda5ee552ed1c7cb40802d92a4562b85c7f36
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641458"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122880652"
 ---
 # <a name="how-to-compile-a-shader"></a>Como: compilar um sombreador
 
@@ -42,9 +42,9 @@ Normalmente, você usa o compilador de código do [fxc.exe](/windows/desktop/dir
 O exemplo de código a seguir mostra como compilar vários sombreadores.
 
 > [!Note]  
-> Para este código de exemplo, você precisa do SDK do Windows 8,0 e do \_ arquivo d3dcompiler44.dll da pasta% Program \_ File% \\ Windows kits \\ 8,0 \\ Redist \\ D3D \\ <arch> em seu caminho. Os aplicativos da Windows Store dão suporte à compilação de tempo de execução para desenvolvimento, mas não para implantação.
+> para este código de exemplo, você precisa do SDK do Windows 8,0 e do \_ arquivo d3dcompiler44.dll da pasta% PROGRAM \_ file% \\ Windows Kits \\ 8,0 \\ redist \\ D3D \\ &lt; arch &gt; em seu caminho. Windows Os aplicativos da loja dão suporte à compilação de tempo de execução para desenvolvimento, mas não para implantação.
 
- 
+ 
 
 
 ```C++
@@ -250,6 +250,6 @@ VS_OUTPUT VSMain( VS_INPUT Input )
 [Como usar o Direct3D 11](how-to-use-direct3d-11.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -14,14 +14,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d925cc5676e6f0c9a8fb27a3ba2a12591ee87a5a72d5937e365fa57179e47ce1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e79208c0e68736ae91d623622c13bbeb624ab760
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118160372"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122887196"
 ---
-# <a name="point2type-function"></a>Função <Type> Point2
+# <a name="point2lttypegt-function"></a>Função de tipo &lt; Point2 &gt;
 
 Cria um ponto que armazena suas coordenadas usando o tipo de dados especificado.
 
