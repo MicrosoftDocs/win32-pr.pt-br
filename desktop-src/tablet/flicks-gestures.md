@@ -1,19 +1,19 @@
 ---
-description: O Windows Vista inclui um conjunto de oito gestos de movimento básicos. Os movimentos são movimentos de caneta rápidos e lineares associados a ações de rolagem e comandos.
+description: Windows O Vista inclui um conjunto de oito gestos de movimento básicos. Os movimentos são movimentos de caneta rápidos e lineares associados a ações de rolagem e comandos.
 ms.assetid: 004c7d76-90a9-4506-a70b-dbf8f9e1c616
 title: Gestos de movimentos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f85d519f47b265779741b2f98fcb1b2f5d69df5b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 37e7d53c42eb178900ce22b7890febcfd1c6aca95f2257b0c5ed06eb20173b79
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104568001"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119936506"
 ---
 # <a name="flicks-gestures"></a>Gestos de movimentos
 
-O Windows Vista inclui um conjunto de oito *gestos de movimento* básicos. Os movimentos são movimentos de caneta rápidos e lineares associados a ações de rolagem e comandos.
+Windows O Vista inclui um conjunto de oito *gestos de movimento* básicos. Os movimentos são movimentos de caneta rápidos e lineares associados a ações de rolagem e comandos.
 
 ## <a name="flick-details"></a>Detalhes do movimento
 
@@ -25,7 +25,7 @@ Uma *ação ou um* *movimento* é a ação ou o atalho executado em resposta a u
 
 ![ilustração mostrando o mapa de gestos](images/2647eb2d-36d0-4610-b923-fa3530d1e640.jpg)
 
-À medida que o usuário move a caneta sobre o digitalizador de um Tablet PC, o hardware gera pacotes de caneta que são roteados para o subsistema de entrada de caneta da plataforma do Tablet PC. Normalmente, se a caneta estiver sendo usada como um substituto para o mouse, o subsistema de entrada de caneta usará esses pacotes de caneta e os enviará, possivelmente com modificações, a user32, o componente do Windows responsável por processar a entrada do mouse. Se a caneta estiver sendo usada em uma superfície de tinta, a tinta será renderizada em vez dos pacotes do mouse que estão sendo gerados.
+À medida que o usuário move a caneta sobre o digitalizador de um Tablet PC, o hardware gera pacotes de caneta que são roteados para o subsistema de entrada de caneta da plataforma do Tablet PC. normalmente, se a caneta estiver sendo usada como um substituto para o mouse, o subsistema de entrada de caneta usará esses pacotes de caneta e os enviará, possivelmente com modificações, a User32, o componente Windows responsável pelo processamento de entrada do mouse. Se a caneta estiver sendo usada em uma superfície de tinta, a tinta será renderizada em vez dos pacotes do mouse que estão sendo gerados.
 
 A rotina de detecção de movimento é implementada no subsistema de entrada de caneta. A detecção de movimento começa na caneta e continua até:
 
@@ -59,7 +59,7 @@ Espera-se que a maioria dos aplicativos não reconheçam o movimento e, portanto
 
 ## <a name="processing-application-commands"></a>Processando comandos do aplicativo
 
-Seu aplicativo deve responder a qualquer um dos comandos do aplicativo que possam ser potencialmente atribuídos a um gesto de movimento. Se um aplicativo não responder à [**\_ \_ mensagem de Tablet do WM**](wm-tablet-flick-message.md), o Windows Vista acompanhará o envio da notificação [**\_ APPCOMMAND do WM**](/windows/desktop/inputdev/wm-appcommand) aplicável, seguido por uma notificação de [**\_ KEYDOWN do WM**](/windows/desktop/inputdev/wm-keydown) .
+Seu aplicativo deve responder a qualquer um dos comandos do aplicativo que possam ser potencialmente atribuídos a um gesto de movimento. se um aplicativo não responder à mensagem de [**\_ \_ movimento de TABLET do wm**](wm-tablet-flick-message.md), o Windows Vista seguirá enviando a notificação de [**\_ APPCOMMAND do wm**](/windows/desktop/inputdev/wm-appcommand) aplicável, seguida por uma notificação de [**\_ KEYDOWN do wm**](/windows/desktop/inputdev/wm-keydown) .
 
 A seguir está uma lista de comandos de aplicativo que podem ser atribuídos a movimentos, com a mensagem de pressionamento de tecla de backup que pode ser enviada.
 

@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 542e511c11111bb2698d9c936a1f0973a2145c9b
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 8d655ea3f4a0a5dccc8b5e1380296948c9a55dce1d86336f824b30189f6557d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104007092"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119930896"
 ---
 # <a name="drm_rights"></a>Direitos de DRM \_
 
@@ -41,12 +41,12 @@ A tabela a seguir lista os direitos com suporte.
 
 | Direita                                           | Cadeia de caracteres literal      | Descrição                                                                                                                                                                                                          |
 |-------------------------------------------------|---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_ \_ backup do g wszWMDRM direito \_                      | Backup            | Direito de fazer backup da licença.                                                                                                                                                                                        |
+| \_ \_ backup do g wszWMDRM direito \_                      | "Backup"            | Direito de fazer backup da licença.                                                                                                                                                                                        |
 | g \_ wszWMDRM \_ de \_ colaboração à \_ direita         | "CollaborativePlay" | Direito de reproduzir o arquivo como parte de uma lista de reprodução colaborativa.                                                                                                                                                          |
 | \_ \_ copiar à direita do g wszWMDRM \_                        | CopiarObjeto              | Direito de copiar o arquivo para um dispositivo. Esse direito substitui os direitos de cópia mais antigos (g \_ wszWMDRM \_ à direita \_ copiar \_ para \_ CD, g \_ wszWMDRM \_ à direita \_ copiar \_ para \_ \_ dispositivo não SDMI \_ e g \_ wszWMDRM \_ a cópia à direita \_ para o \_ \_ dispositivo SDMI \_ ). |
-| \_ \_ \_ copiar \_ para o \_ CD do g wszWMDRM                | "Print. Redbook"     | Direito de copiar o arquivo em um CD (formato de livro vermelho). No Windows Media DRM 10, esse direito é substituído pela \_ \_ cópia direita g wszWMDRM \_ .<br/>                                                                             |
-| \_ \_ copiar à direita do g wszWMDRM \_ para um \_ \_ \_ dispositivo não SDMI \_ | "Transfer. NONSDMI"  | Direito de copiar o arquivo para um dispositivo não SDMI. No Windows Media DRM 10, esse direito é substituído pela \_ \_ cópia direita g wszWMDRM \_ .<br/>                                                                                  |
-| \_ \_ copiar à direita do g wszWMDRM \_ para o \_ \_ \_ dispositivo SDMI      | "Transfer. SDMI"     | Direito de copiar o arquivo para um dispositivo compatível com SDMI. No Windows Media DRM 10, esse direito é substituído pela \_ \_ cópia direita g wszWMDRM \_ .<br/>                                                                           |
+| \_ \_ \_ copiar \_ para o \_ CD do g wszWMDRM                | "Print. Redbook"     | Direito de copiar o arquivo em um CD (formato de livro vermelho). no Windows Media DRM 10, esse direito é substituído pela \_ \_ cópia right g wszWMDRM \_ .<br/>                                                                             |
+| \_ \_ copiar à direita do g wszWMDRM \_ para um \_ \_ \_ dispositivo não SDMI \_ | "Transfer. NONSDMI"  | Direito de copiar o arquivo para um dispositivo não SDMI. no Windows Media DRM 10, esse direito é substituído pela \_ \_ cópia right g wszWMDRM \_ .<br/>                                                                                  |
+| \_ \_ copiar à direita do g wszWMDRM \_ para o \_ \_ \_ dispositivo SDMI      | "Transfer. SDMI"     | Direito de copiar o arquivo para um dispositivo compatível com SDMI. no Windows Media DRM 10, esse direito é substituído pela \_ \_ cópia right g wszWMDRM \_ .<br/>                                                                           |
 | \_ \_ reprodução à direita g wszWMDRM \_                    | Reproduzir              | Direito de reproduzir o arquivo de mídia.                                                                                                                                                                                        |
 
 

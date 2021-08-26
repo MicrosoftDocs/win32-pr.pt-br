@@ -1,6 +1,6 @@
 ---
 title: Interface IWMDRMNetReceiver
-description: A interface IWMDRMNetReceiver fornece métodos necessários para usar o DRM do Microsoft Windows Media para dispositivos de rede como um receptor. Para obter uma instância dessa interface, chame IWMDRMProvider CreateObject. Passe \_ IWMDRMNETRECEIVER IID como o parâmetro riid.
+description: a interface IWMDRMNetReceiver fornece métodos necessários para usar o Microsoft Windows Media DRM para dispositivos de rede como um receptor. Para obter uma instância dessa interface, chame IWMDRMProvider CreateObject. Passe \_ IWMDRMNETRECEIVER IID como o parâmetro riid.
 ms.assetid: 29966260-c0aa-4e7e-b827-a872c7429333
 keywords:
 - Formato de mídia do Windows da interface IWMDRMNetReceiver
@@ -14,16 +14,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7a85ae1525a81e97984e29a5dd28763d934dba2b
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 5cb917d7d229b81a6792461c506b2a6b50aaee2af3bd5f133e44273077924f86
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104365031"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119930106"
 ---
 # <a name="iwmdrmnetreceiver-interface"></a>Interface IWMDRMNetReceiver
 
-A interface **IWMDRMNetReceiver** fornece métodos necessários para usar o DRM do Microsoft Windows Media para dispositivos de rede como um receptor.
+a interface **IWMDRMNetReceiver** fornece métodos necessários para usar o Microsoft Windows Media DRM para dispositivos de rede como um receptor.
 
 Para obter uma instância dessa interface, chame [**IWMDRMProvider:: CreateObject**](iwmdrmprovider-createobject.md). Passe **\_ IWMDRMNetReceiver IID** como o parâmetro *riid* .
 

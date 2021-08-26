@@ -4,12 +4,12 @@ ms.assetid: 7277C5E0-BB91-4EEA-9529-64E66D179CDC
 title: Propriedade MFPKEY_PMP_Creation_Callback (Mfidl. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a2b18e04a15e035a9e4dc04a4039ce230342031a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 655d61865eaecd89fa84664fc5c25f89762180ac9007e21cc7cbc98f7a68b056
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104165379"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119953856"
 ---
 # <a name="mfpkey_pmp_creation_callback-property"></a>\_Propriedade de \_ retorno de chamada de criação do MFPKEY PMP \_
 
@@ -23,11 +23,11 @@ Tipo PROPVARIANT (VT)
 
 Membro PROPVARIANT
 
-**IUnknown \** _
+**IUnknown\***
 
 VT \_ desconhecido
 
-_ *punkVal**
+**punkVal**
 
 
 
@@ -58,9 +58,9 @@ No método [**IMFAsyncCallback:: Invoke**](/windows/desktop/api/mfobjects/nf-mfo
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 8 \| UWP\]<br/>                                  |
-| Servidor mínimo com suporte<br/> | Aplicativos do Windows Server 2012 \[ Desktop aplicativos \| UWP\]<br/>                        |
-| parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ aplicativos UWP de aplicativos de desktop \|\]<br/>                                  |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ aplicativos UWP de aplicativos de desktop \|\]<br/>                        |
+| Cabeçalho<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
 
 
 

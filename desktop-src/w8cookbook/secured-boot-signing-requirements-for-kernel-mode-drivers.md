@@ -4,26 +4,26 @@ description: Requisitos de assinatura de recursos de inicialização segura para
 ms.assetid: 7FF64BA2-89E3-4E6F-B542-7BC7BF7F4FB2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a63a8b1fca1677aa125bac96dfec290dcd736b5
-ms.sourcegitcommit: ea4baf9953a78d2d6bd530b680601e39f3884541
+ms.openlocfilehash: 05146645e01406fed0129c4f31660509e04581ce889213c7addf01731e45e87f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "105765783"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119932166"
 ---
 # <a name="secure-boot-feature-signing-requirements-for-kernel-mode-drivers"></a>Requisitos de assinatura de recursos de inicialização segura para drivers de modo kernel
 
 ## <a name="platforms"></a>Plataformas
 
-**Clientes** – Windows 8  
-**Servidores** – Windows Server 2012  
+**clientes** – Windows 8  
+**servidores** – Windows Server 2012  
 
 
 ## <a name="description"></a>Descrição
 
-No Windows 8 e no Windows Server 2012, incluindo o WinPE, o kernel foi bloqueado para evitar que malwares introduzidos por kits de inicialização ou raiz contornem os requisitos de segurança do sistema operacional Windows para drivers assinados.
+em Windows 8 e Windows Server 2012, incluindo o WinPE, o kernel foi bloqueado para evitar que o malware introduzido pelos kits de inicialização ou raiz evite burlar Windows requisitos de segurança do sistema operacional para drivers assinados.
 
-Essa alteração afeta todos os drivers de modo kernel para dispositivos que dão suporte à inicialização segura da UEFI (Unified Extensible Firmware Interface); A inicialização segura de UEFI é necessária para a certificação do Windows 8 para computadores cliente e opcional para servidores. Ele não afeta os drivers do modo de usuário.
+Essa alteração afeta todos os drivers de modo kernel para dispositivos que dão suporte à inicialização segura da UEFI (Unified Extensible Firmware Interface); a inicialização segura de UEFI é necessária para a certificação Windows 8 para computadores cliente e opcional para servidores. Ele não afeta os drivers do modo de usuário.
 
 O desenvolvimento padrão para drivers de modo kernel envolve o uso de depuração de modo kernel ou da configuração BCD (dados de configuração de inicialização) <testsigning> . Ambos são desabilitados quando a inicialização segura está ativada.
 
@@ -41,6 +41,6 @@ Ao distribuir drivers mais amplamente eles devem ser assinados corretamente por 
 
 -   [Drivers de assinatura](/previous-versions/windows/hardware/design/dn653563(v=vs.85))
 
- 
+ 
 
- 
+ 

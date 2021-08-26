@@ -1,119 +1,119 @@
 ---
 title: Trabalhando com galerias
-description: O Windows Ribbon Framework fornece aos desenvolvedores um modelo robusto e consistente para o gerenciamento de conteúdo dinâmico em uma variedade de controles baseados em coleção.
+description: A Windows Ribbon fornece aos desenvolvedores um modelo robusto e consistente para gerenciar conteúdo dinâmico em uma variedade de controles baseados em coleção.
 ms.assetid: 447039f3-1428-4b6f-94cf-78cf81974041
 keywords:
-- Faixa de das, galerias do Windows
-- Faixa de, galerias
-- Faixa de, controle DropDownGallery do Windows
-- Faixa de, controle DropDownGallery
-- Faixa de, controle SplitButtonGallery do Windows
-- Faixa de, controle SplitButtonGallery
+- Windows Faixa de opções, galerias
+- Faixa de opções, galerias
+- Windows Faixa de opções, controle DropDownGallery
+- Faixa de opções, controle DropDownGallery
+- Windows Faixa de opções, controle SplitButtonGallery
+- Faixa de opções, controle SplitButtonGallery
 - Controle DropDownGallery
 - Controle SplitButtonGallery
-- Faixa de das galerias do Windows
+- galerias para Windows faixa de opções
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 784c69b0cf23edad906fbb35ee9a2a45454eacea
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: ce142c1159d7a7c4129f402716ed7e394ebb4829f043d7c58dd23221b1479720
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641582"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119933437"
 ---
 # <a name="working-with-galleries"></a>Trabalhando com galerias
 
-O Windows Ribbon Framework fornece aos desenvolvedores um modelo robusto e consistente para o gerenciamento de conteúdo dinâmico em uma variedade de controles baseados em coleção. Ao adaptar e reconfigurar a interface do usuário da faixa de opções, esses controles dinâmicos permitem que a estrutura responda à interação do usuário tanto no aplicativo host quanto na faixa de opções e forneça a flexibilidade para lidar com vários ambientes de tempo de execução.
+A Windows Ribbon fornece aos desenvolvedores um modelo robusto e consistente para gerenciar conteúdo dinâmico em uma variedade de controles baseados em coleção. Ao adaptar e reconfigurar a interface do usuário da Faixa de Opções, esses controles dinâmicos permitem que a estrutura responda à interação do usuário no aplicativo host e na própria Faixa de Opções e forneça a flexibilidade para lidar com vários ambientes de tempo de run time.
 
 -   [Introdução](#introduction)
 -   [Galerias](#working-with-galleries)
     -   [Galerias de itens](#item-galleries)
-    -   [Galerias de comandos](#command-galleries)
+    -   [Galerias de Comandos](#command-galleries)
     -   [Controles da Galeria](#working-with-galleries)
 -   [Como implementar uma galeria](#how-to-implement-a-gallery)
     -   [Os componentes básicos](#the-basic-components)
     -   [Declarar os controles na marcação](#declare-the-controls-in-markup)
     -   [Criar um manipulador de comandos](#create-a-command-handler)
-    -   [Associar o manipulador de comandos](#bind-the-command-handler)
+    -   [Vincular o manipulador de comandos](#bind-the-command-handler)
     -   [Inicializar uma coleção](#initialize-a-collection)
-    -   [Manipular eventos de coleta](#handle-collection-events)
+    -   [Manipular eventos de coleção](#handle-collection-events)
 -   [Tópicos relacionados](#related-topics)
 
 ## <a name="introduction"></a>Introdução
 
-Essa capacidade da estrutura da faixa de opções se adaptar dinamicamente às condições de tempo de execução, aos requisitos de aplicativos e à entrada do usuário final realça os recursos avançados da interface do usuário da estrutura e fornece aos desenvolvedores a flexibilidade de atender a uma ampla gama de necessidades do cliente.
+Essa capacidade da estrutura da Faixa de Opções de se adaptar dinamicamente às condições de tempo de run-time, aos requisitos de aplicativo e à entrada do usuário final realça os recursos avançados da interface do usuário da estrutura e fornece aos desenvolvedores a flexibilidade para atender a uma ampla variedade de necessidades do cliente.
 
-O foco deste guia é descrever os controles da Galeria dinâmica com suporte da estrutura, explicar suas diferenças, discutir quando e onde eles podem ser usados melhor e demonstrar como eles podem ser incorporados a um aplicativo da faixa de faixas.
+O foco deste guia é descrever os controles de galeria dinâmicos com suporte da estrutura, explicar suas diferenças, discutir quando e onde eles podem ser melhor usados e demonstrar como eles podem ser incorporados em um aplicativo de Faixa de Opções.
 
 ## <a name="galleries"></a>Galerias
 
-As galerias são controles de caixa de listagem de forma funcional e graficamente ricos. A coleção de itens de uma galeria pode ser organizada por categorias, exibidas em layouts baseados em colunas flexíveis e em linhas, representadas com imagens e texto, e dependendo do tipo de galeria, suporte à visualização dinâmica.
+As galerias são controles de caixa de listagem funcional e graficamente rich. A coleção de itens de uma galeria pode ser organizada por categorias, exibida em layouts flexíveis baseados em colunas e linhas, representadas com imagens e texto e, dependendo do tipo de galeria, dar suporte à visualização ao vivo.
 
-As galerias são funcionalmente diferentes de outros controles de faixa de opções dinâmicos pelos seguintes motivos:
+As galerias são funcionalmente diferentes de outros controles de Faixa de Opções dinâmicos pelos seguintes motivos:
 
 -   As galerias implementam a interface [**IUICollection**](/windows/desktop/api/uiribbon/nn-uiribbon-iuicollection) que define os vários métodos para manipular coleções de itens da galeria.
--   As galerias podem ser atualizadas em tempo de execução, com base na atividade que ocorre diretamente na faixa de, por exemplo, quando um usuário adiciona um comando à barra de ferramentas de acesso rápido (QAT).
--   As galerias podem ser atualizadas em tempo de execução, com base na atividade que ocorre indiretamente no ambiente de tempo de execução, como quando um driver de impressora dá suporte apenas a layouts de página de retrato.
--   As galerias podem ser atualizadas em tempo de execução, com base na atividade que ocorre indiretamente no aplicativo host, como quando um usuário seleciona um item em um documento.
+-   As galerias podem ser atualizadas em tempo de operação, com base na atividade que ocorre diretamente na Faixa de Opções, como quando um usuário adiciona um Comando à QAT (Barra de Ferramentas de Acesso Rápido).
+-   As galerias podem ser atualizadas em tempo de operação, com base na atividade que ocorre indiretamente do ambiente de tempo de executar, como quando um driver de impressora dá suporte apenas a layouts de página retrato.
+-   As galerias podem ser atualizadas em tempo de operação, com base na atividade que ocorre indiretamente no aplicativo host, como quando um usuário seleciona um item em um documento.
 
-A estrutura da faixa de faixas expõe dois tipos de galerias: galerias de itens e galerias de comandos.
+A estrutura ribbon expõe dois tipos de galerias: galerias de itens e galerias de comandos.
 
 ### <a name="item-galleries"></a>Galerias de itens
 
-As galerias de itens contêm uma coleção baseada em índice de itens relacionados, em que cada item é representado por uma imagem, uma cadeia de caracteres ou ambos. O controle está associado a um único manipulador de comando que se baseia no valor de índice que é identificado pela [propriedade \_ PKEY \_ SelectedItem da interface do usuário](windowsribbon-reference-properties-uipkey-selecteditem.md) .
+As galerias de itens contêm uma coleção baseada em índice de itens relacionados em que cada item é representado por uma imagem, uma cadeia de caracteres ou ambos. O controle é vinculado a um único manipulador de comandos que se baseia no valor de índice identificado pela propriedade [ \_ PKEY \_ SelectedItem da](windowsribbon-reference-properties-uipkey-selecteditem.md) interface do usuário.
 
-As galerias de itens dão suporte à visualização dinâmica, o que significa exibir um resultado de comando, com base em mouseover ou Focus, sem confirmar ou realmente invocar o comando.
+As galerias de itens são suportadas com visualização ao vivo, o que significa exibir um resultado de Comando, com base no mouse ou no foco, sem se comprometer ou realmente invocar o comando.
 
 > [!IMPORTANT]
-> A estrutura não oferece suporte a galerias de itens de hospedagem no menu do aplicativo.
+> A estrutura não dá suporte a galerias de itens de hospedagem no Menu do Aplicativo.
 
- 
+ 
 
-### <a name="command-galleries"></a>Galerias de comandos
+### <a name="command-galleries"></a>Galerias de Comandos
 
-As galerias de comandos contêm uma coleção de itens distintos não indexados. Cada item é representado por um único controle associado a um manipulador de comando por meio de uma ID de comando. Como controles autônomos, cada item em uma galeria de comandos roteia eventos de entrada para um manipulador de comandos associado — a Galeria de comandos em si não escuta eventos.
+As galerias de comandos contêm uma coleção de itens distintos e não indexados. Cada item é representado por um único controle vinculado a um manipulador de comandos por meio de uma ID de comando. Assim como os controles autônomos, cada item em uma galeria de comandos encaminha eventos de entrada para um manipulador de comandos associado– a galeria de comandos em si não escuta eventos.
 
-As galerias de comandos não dão suporte à visualização dinâmica.
+As galerias de comandos não são suportadas com visualização ao vivo.
 
 ### <a name="gallery-controls"></a>Controles da Galeria
 
-Há quatro controles de galeria na estrutura da faixa de faixas: [**DropDownGallery**](windowsribbon-element-dropdowngallery.md), [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md), [**InRibbonGallery**](windowsribbon-element-inribbongallery.md)e [**ComboBox**](windowsribbon-element-combobox.md). Tudo, exceto a **ComboBox** , pode ser implementado como uma galeria de itens ou uma galeria de comandos.
+Há quatro controles da galeria na estrutura da Faixa de Opções: [**DropDownGallery,**](windowsribbon-element-dropdowngallery.md) [**SplitButtonGallery,**](windowsribbon-element-splitbuttongallery.md) [**InRibbonGallery**](windowsribbon-element-inribbongallery.md)e [**ComboBox.**](windowsribbon-element-combobox.md) Todos, exceto **o ComboBox,** podem ser implementados como uma galeria de itens ou uma galeria de comandos.
 
 ### <a name="dropdowngallery"></a>DropDownGallery
 
-Um [**DropDownGallery**](windowsribbon-element-dropdowngallery.md) é um botão que exibe uma lista suspensa que contém uma coleção de itens ou comandos mutuamente exclusivos.
+Um [**DropDownGallery**](windowsribbon-element-dropdowngallery.md) é um botão que exibe uma lista suspenso que contém uma coleção de itens ou comandos mutuamente exclusivos.
 
-A captura de tela a seguir ilustra o controle da [Galeria suspensa](windowsribbon-controls-dropdowngallery.md) da faixa de opções no Microsoft Paint para Windows 7.
+A captura de tela a seguir ilustra o controle [galeria](windowsribbon-controls-dropdowngallery.md) de lista Microsoft Paint faixa de opções Windows 7.
 
-![captura de tela de um controle de galeria suspensa no Microsoft Paint para Windows 7.](images/controls/dropdowngallery.png)
+![captura de tela de um controle de galeria listada no Microsoft Paint para Windows 7.](images/controls/dropdowngallery.png)
 
 ### <a name="splitbuttongallery"></a>SplitButtonGallery
 
-Um [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md) é um controle composto que expõe um único item ou comando padrão de sua coleção em um botão primário e exibe outros itens ou comandos em uma lista suspensa mutuamente exclusiva que é exibida quando um botão secundário é clicado.
+[**Um SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md) é um controle composto que expõe um único item padrão ou Comando de sua coleção em um botão primário e exibe outros itens ou comandos em uma lista de lista de listas listadas mutuamente exclusivas que é exibida quando um botão secundário é clicado.
 
-A captura de tela a seguir ilustra o controle da [Galeria de botões de divisão](windowsribbon-controls-splitbuttongallery.md) da faixa de opções no Microsoft Paint para Windows 7.
+A captura de tela a seguir ilustra o controle [Galeria](windowsribbon-controls-splitbuttongallery.md) de Botões de Divisão de Faixa de Opções Microsoft Paint para Windows 7.
 
-![captura de tela de um controle de galeria de botões de divisão no Microsoft Paint para Windows 7.](images/controls/splitbuttongallery.png)
+![captura de tela de um controle de galeria de botões divididos no Microsoft Paint para Windows 7.](images/controls/splitbuttongallery.png)
 
 ### <a name="inribbongallery"></a>InRibbonGallery
 
-Um [**InRibbonGallery**](windowsribbon-element-inribbongallery.md) é uma galeria que exibe uma coleção de itens ou comandos relacionados na faixa de faixas. Se houver muitos itens na Galeria, será fornecida uma seta de expansão para exibir o restante da coleção em um painel expandido.
+Uma [**InRibbonGallery**](windowsribbon-element-inribbongallery.md) é uma galeria que exibe uma coleção de itens relacionados ou Comandos na Faixa de Opções. Se houver muitos itens na galeria, uma seta de expansão será fornecida para exibir o restante da coleção em um painel expandido.
 
-A captura de tela a seguir ilustra o controle da [Galeria de faixa de](windowsribbon-controls-inribbongallery.md) opções no Microsoft Paint para Windows 7.
+A captura de tela a seguir ilustra o controle [Galeria](windowsribbon-controls-inribbongallery.md) na Faixa de Opções na Faixa de Opções Microsoft Paint para Windows 7.
 
-![captura de tela de um controle da galeria na faixa de faixas na faixa de bits do Microsoft Paint.](images/controls/inribbongallery.png)
+![captura de tela de um controle na galeria na faixa de opções na faixa de opções do Microsoft Paint.](images/controls/inribbongallery.png)
 
 ### <a name="combobox"></a>ComboBox
 
-Uma [**ComboBox**](windowsribbon-element-combobox.md) é uma caixa de listagem de coluna única que contém uma coleção de itens com um controle estático ou um controle de edição e uma seta suspensa. A parte da caixa de listagem do controle é exibida quando o usuário clica na seta suspensa.
+Uma [**ComboBox é**](windowsribbon-element-combobox.md) uma caixa de listagem de coluna única que contém uma coleção de itens com um controle estático ou controle de edição e seta para baixo. A parte da caixa de listagem do controle é exibida quando o usuário clica na seta para baixo.
 
-A captura de tela a seguir ilustra um controle de [caixa de combinação](windowsribbon-controls-combobox.md) da faixa de opções do Windows Live Movie Maker.
+A captura de tela a seguir ilustra um controle [Caixa de Combinação](windowsribbon-controls-combobox.md) da Faixa de Opções Windows Live Movie Maker.
 
-![captura de tela de um controle ComboBox na faixa de faixas do Microsoft Paint.](images/controls/combobox.png)
+![captura de tela de um controle de caixa de combinação na faixa de opções de pintura da Microsoft.](images/controls/combobox.png)
 
-Como a [**ComboBox**](windowsribbon-element-combobox.md) é exclusivamente uma galeria de itens, ela não oferece suporte a itens de comando. Ele também é o único controle de galeria que não oferece suporte a um espaço de comando. (Um espaço de comando é uma coleção de comandos que são declarados em marcação e listados na parte inferior de uma galeria de itens ou galeria de comandos.)
+Como o [**ComboBox**](windowsribbon-element-combobox.md) é exclusivamente uma galeria de itens, ele não dá suporte a itens command. Ele também é o único controle de galeria que não dá suporte a um Espaço de Comando. (Um Espaço de Comando é uma coleção de Comandos que são declarados na marcação e listados na parte inferior de uma galeria de itens ou galeria de comandos.)
 
-O exemplo de código a seguir mostra a marcação necessária para declarar um espaço de comando de três botões em um [**DropDownGallery**](windowsribbon-element-dropdowngallery.md).
+O exemplo de código a seguir mostra a marcação necessária para declarar um Espaço de Comando de três botões em [**um DropDownGallery**](windowsribbon-element-dropdowngallery.md).
 
 
 ```C++
@@ -134,46 +134,46 @@ O exemplo de código a seguir mostra a marcação necessária para declarar um e
 
 
 
-A captura de tela a seguir ilustra o espaço de comando de três botões do exemplo de código anterior.
+A captura de tela a seguir ilustra o Espaço de Comando de três botões do exemplo de código anterior.
 
-![captura de tela de um espaço de comando de três botões em um dropdowngallery.](images/markup/gallerysample-commandspace.png)
+![captura de tela de um espaço de comando de três botões em uma dropdowngallery.](images/markup/gallerysample-commandspace.png)
 
 ## <a name="how-to-implement-a-gallery"></a>Como implementar uma galeria
 
-Esta seção aborda os detalhes de implementação das galerias de faixa de das faixas e explica como incorporá-las em um aplicativo da faixa de faixas.
+Esta seção discute os detalhes de implementação das galerias da Faixa de Opções e explica como incorporá-las em um aplicativo de Faixa de Opções.
 
 ### <a name="the-basic-components"></a>Os componentes básicos
 
-Esta seção descreve o conjunto de propriedades e métodos que formam o backbone do conteúdo dinâmico na estrutura da faixa de opção e dão suporte à adição, exclusão, atualização e à manipulação do conteúdo e do layout visual de galerias de faixa de opção em tempo de execução.
+Esta seção descreve o conjunto de propriedades e métodos que formam o backbone do conteúdo dinâmico na estrutura da Faixa de Opções e suportam adicionar, excluir, atualizar e manipular o conteúdo e o layout visual das galerias da Faixa de Opções em tempo de operação.
 
 ### <a name="iuicollection"></a>IUICollection
 
 As galerias exigem um conjunto básico de métodos para acessar e manipular os itens individuais em suas coleções.
 
-A interface [IEnumUnknown](/windows/win32/api/objidlbase/nn-objidlbase-ienumunknown) define esses métodos, e a estrutura complementa sua funcionalidade com métodos adicionais que são definidos na interface [**IUICollection**](/windows/desktop/api/uiribbon/nn-uiribbon-iuicollection) . O **IUICollection** é implementado pela estrutura para cada declaração da galeria na marcação da faixa de medida.
+A interface [IEnumUnknown](/windows/win32/api/objidlbase/nn-objidlbase-ienumunknown) define esses métodos e a estrutura complementa sua funcionalidade com métodos adicionais definidos na interface [**IUICollection.**](/windows/desktop/api/uiribbon/nn-uiribbon-iuicollection) **IUICollection é** implementado pela estrutura para cada declaração da galeria na marcação Faixa de Opções.
 
-Se for necessária uma funcionalidade adicional que não seja fornecida pela interface [**IUICollection**](/windows/desktop/api/uiribbon/nn-uiribbon-iuicollection) , um objeto de coleção personalizado implementado pelo aplicativo host e derivado de [IEnumUnknown](/windows/win32/api/objidlbase/nn-objidlbase-ienumunknown) poderá ser substituído pela coleção de estruturas.
+Se for necessária uma funcionalidade adicional que não seja fornecida pela interface [**IUICollection,**](/windows/desktop/api/uiribbon/nn-uiribbon-iuicollection) um objeto de coleção personalizado implementado pelo aplicativo host e derivado de [IEnumUnknown](/windows/win32/api/objidlbase/nn-objidlbase-ienumunknown) poderá ser substituído pela coleção de estruturas.
 
 ### <a name="iuicollectionchangedevent"></a>IUICollectionChangedEvent
 
-Para que um aplicativo responda às alterações em uma coleção da galeria, ele deve implementar a interface [**IUICollectionChangedEvent**](/windows/desktop/api/uiribbon/nn-uiribbon-iuicollectionchangedevent) . Os aplicativos podem assinar notificações de um objeto [**IUICollection**](/windows/desktop/api/uiribbon/nn-uiribbon-iuicollection) por meio do ouvinte de eventos [**IUICollectionChangedEvent:: OnChanged**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicollectionchangedevent-onchanged) .
+Para que um aplicativo responda às alterações em uma coleção da galeria, ele deve implementar a interface [**IUICollectionChangedEvent.**](/windows/desktop/api/uiribbon/nn-uiribbon-iuicollectionchangedevent) Os aplicativos podem assinar notificações de um objeto [**IUICollection**](/windows/desktop/api/uiribbon/nn-uiribbon-iuicollection) por meio do ouvinte de eventos [**IUICollectionChangedEvent::OnChanged.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicollectionchangedevent-onchanged)
 
-Quando o aplicativo substitui a coleção da Galeria fornecida pela estrutura por uma coleção personalizada, o aplicativo deve implementar a interface [IConnectionPointContainer](/windows/win32/api/ocidl/nn-ocidl-iconnectionpointcontainer) . Se [IConnectionPointContainer](/windows/win32/api/ocidl/nn-ocidl-iconnectionpointcontainer) não for implementado, o aplicativo não poderá notificar a estrutura das alterações na coleção personalizada que exigem atualizações dinâmicas para o controle da galeria.
+Quando o aplicativo substitui a coleção da galeria fornecida pela estrutura por uma coleção personalizada, o aplicativo deve implementar a interface [IConnectionPointContainer.](/windows/win32/api/ocidl/nn-ocidl-iconnectionpointcontainer) Se [IConnectionPointContainer](/windows/win32/api/ocidl/nn-ocidl-iconnectionpointcontainer) não for implementado, o aplicativo não poderá notificar a estrutura das alterações na coleção personalizada que exigem atualizações dinâmicas para o controle da galeria.
 
-Nesses casos em que [IConnectionPointContainer](/windows/win32/api/ocidl/nn-ocidl-iconnectionpointcontainer) não está implementado, o controle galeria só pode ser atualizado por meio de invalidação por meio de [**IUIFramework:: InvalidateUICommand**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand) e [**IUICommandHandler:: updateproperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty)ou chamando [**IUIFramework:: SetUICommandProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty).
+Nos casos em que [IConnectionPointContainer](/windows/win32/api/ocidl/nn-ocidl-iconnectionpointcontainer) não é implementado, o controle da galeria pode ser atualizado somente por invalidação por meio de [**IUIFramework::InvalidateUICommand**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand) e [**IUICommandHandler::UpdateProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty)ou chamando [**IUIFramework::SetUICommandProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty).
 
 ### <a name="iuisimplepropertyset"></a>IUISimplePropertySet
 
-Os aplicativos devem implementar IUISimplePropertySet para cada item ou comando em uma coleção da galeria. No entanto, as propriedades que podem ser solicitadas com [**IUISimplePropertySet:: GetValue**](/windows/desktop/api/uiribbon/nf-uiribbon-iuisimplepropertyset-getvalue) variam.
+Os aplicativos devem implementar IUISimplePropertySet para cada item ou Comando em uma coleção da galeria. No entanto, as propriedades que podem ser solicitadas com [**IUISimplePropertySet::GetValue variam.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuisimplepropertyset-getvalue)
 
-Os itens são definidos e vinculados a uma Galeria por meio da chave de propriedade [ \_ PKEY \_ ItemsSource da interface do usuário](windowsribbon-reference-properties-uipkey-itemssource.md) e expõem propriedades com um objeto [**IUICollection**](/windows/desktop/api/uiribbon/nn-uiribbon-iuicollection) .
+Os itens são definidos e vinculados a uma galeria por meio da chave de propriedade [ \_ PKEY \_ ItemsSource](windowsribbon-reference-properties-uipkey-itemssource.md) da interface do usuário e expõem propriedades com [**um objeto IUICollection.**](/windows/desktop/api/uiribbon/nn-uiribbon-iuicollection)
 
-As propriedades válidas para itens em galerias de itens ([**\_ \_ coleção de COMMANDTYPE de interface do usuário**](/windows/desktop/api/uiribbon/ne-uiribbon-ui_commandtype)) são descritas na tabela a seguir.
+As propriedades válidas para itens em galerias de itens ([**UI \_ COMMANDTYPE \_ COLLECTION**](/windows/desktop/api/uiribbon/ne-uiribbon-ui_commandtype)) são descritas na tabela a seguir.
 
 > [!Note]  
-> Algumas propriedades de item, como [o \_ \_ rótulo PKEY da interface do usuário](windowsribbon-reference-properties-uipkey-label.md), podem ser definidas na marcação. Para obter mais detalhes, consulte a documentação de referência de [chaves de propriedade](windowsribbon-reference-properties.md) .
+> Algumas propriedades de item, como [o rótulo \_ PKEY \_ da](windowsribbon-reference-properties-uipkey-label.md)interface do usuário, podem ser definidas na marcação. Para obter mais detalhes, consulte a [documentação de referência de Chaves](windowsribbon-reference-properties.md) de Propriedade.
 
- 
+ 
 
 
 
@@ -201,7 +201,7 @@ Propriedades
 
 
 
- 
+ 
 
 As propriedades de item válidas para galerias de comando ([**interface do usuário de \_ COMMANDTYPE \_**](/windows/desktop/api/uiribbon/ne-uiribbon-ui_commandtype)) são descritas na tabela a seguir.
 
@@ -215,7 +215,7 @@ As propriedades de item válidas para galerias de comando ([**interface do usuá
 
 
 
- 
+ 
 
 As categorias são usadas para organizar itens e comandos em galerias. As categorias são definidas e associadas a uma Galeria por meio da chave de propriedade [ \_ \_ categorias de PKEY de interface do usuário](windowsribbon-reference-properties-uipkey-categories.md) e expõem propriedades com um objeto [**IUICollection**](/windows/desktop/api/uiribbon/nn-uiribbon-iuicollection) específico à categoria.
 
@@ -224,7 +224,7 @@ As categorias não têm um CommandType e não dão suporte à interação do usu
 > [!IMPORTANT]
 > [**IUISimplePropertySet:: GetValue**](/windows/desktop/api/uiribbon/nf-uiribbon-iuisimplepropertyset-getvalue) deve retornar [**a \_ coleção \_ de interface do usuário INVALIDINDEX**](/windows/desktop/windowsribbon/windowsribbon-ui-collection-invalidindex) quando a [interface do usuário \_ PKEY \_ CategoryID](windowsribbon-reference-properties-uipkey-categoryid.md) é solicitada para um item que não tem uma categoria associada.
 
- 
+ 
 
 ### <a name="declare-the-controls-in-markup"></a>Declarar os controles na marcação
 
@@ -369,7 +369,7 @@ O exemplo a seguir mostra uma declaração de controle para o [**InRibbonGallery
 > [!Note]  
 > Como o [**InRibbonGallery**](windowsribbon-element-inribbongallery.md) foi projetado para exibir um subconjunto de sua coleção de itens na faixa de opção sem ativar um menu suspenso, ele fornece vários atributos opcionais que regem seu tamanho e o layout do item na inicialização da faixa de opção. Esses atributos são exclusivos do **InRibbonGallery** e não estão disponíveis nos outros controles dinâmicos.
 
- 
+ 
 
 
 ```XML
@@ -420,7 +420,7 @@ Para cada comando, a estrutura da faixa de faixas requer um manipulador de coman
 > [!Note]  
 > Vários comandos podem ser associados a um único manipulador de comando.
 
- 
+ 
 
 Um manipulador de comandos tem duas finalidades:
 
@@ -856,6 +856,6 @@ HRESULT CQATHandler::OnCollectionChanged(
 [Exemplo de galeria](windowsribbon-gallerysample.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

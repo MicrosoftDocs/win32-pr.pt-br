@@ -1,19 +1,19 @@
 ---
-description: Evento por usuário gerado pelo sistema na tentativa de iniciar um jogo. Vários valores de campo são fornecidos pelo sistema do explorador de jogos e pelos metadados de GDF (arquivo de definição de jogo) correspondentes fornecidos por jogos com suporte.
+description: Evento por usuário gerado pelo sistema ao tentar iniciar um jogo. Vários valores de campo são fornecidos pelo sistema Do Games Explorer e metadados correspondentes do GDF (Arquivo de Definição de Jogo) fornecidos por jogos com suporte.
 ms.assetid: c870f9fb-3be1-4039-9a33-dddff17a4faa
-title: WPCEVENT_GAME_START evento (Wpcevent. h)
+title: WPCEVENT_GAME_START evento (Wpcevent.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c5cc47144910f624005031573e28f5078db10ee9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 41367a47a9bace8dd615ab4b6eea0a875099aab465c285389478c4bee0a39392
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010977"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119951496"
 ---
-# <a name="wpcevent_game_start-event"></a>Evento de início do \_ jogo WPCEVENT \_
+# <a name="wpcevent_game_start-event"></a>Evento WPCEVENT \_ GAME \_ START
 
-Evento por usuário gerado pelo sistema na tentativa de iniciar um jogo. Vários valores de campo são fornecidos pelo sistema do explorador de jogos e pelos metadados de GDF (arquivo de definição de jogo) correspondentes fornecidos por jogos com suporte.
+Evento por usuário gerado pelo sistema ao tentar iniciar um jogo. Vários valores de campo são fornecidos pelo sistema Do Games Explorer e metadados correspondentes do GDF (Arquivo de Definição de Jogo) fornecidos por jogos com suporte.
 
 
 ```C++
@@ -43,7 +43,7 @@ O GUID usado para distinguir entre várias instalações.
 *AppVersion* 
 </dt> <dd>
 
-A cadeia de caracteres da versão para o jogo.
+A cadeia de caracteres de versão do jogo.
 
 </dd> <dt>
 
@@ -71,28 +71,28 @@ Um GUID que identifica o sistema de classificação atual ao qual o nível de cl
 *Motivo* 
 </dt> <dd>
 
-Um valor da enumeração [**\_ IsBlocked de WPCFLAG**](/windows/win32/api/wpcevent/ne-wpcevent-wpcflag_isblocked) que indica informações sobre quais eventos são bloqueados do uso e quais controles estão em vigor.
+Um valor da [**enumeração \_ ISBLOCKED WPCFLAG**](/windows/win32/api/wpcevent/ne-wpcevent-wpcflag_isblocked) que indica informações sobre quais eventos são impedidos de usar e quais controles estão em uso.
 
 </dd> <dt>
 
 *DescCount* 
 </dt> <dd>
 
-A contagem de descritores que estão presentes no campo de descritor.
+A contagem de descritores que estão presentes no campo descritor.
 
 </dd> <dt>
 
 *Descritor* 
 </dt> <dd>
 
-Uma cadeia de caracteres delimitada que contém descritores que estão bloqueados para o jogo.
+Uma cadeia de caracteres delimitada que contém descritores bloqueados para o jogo.
 
 </dd> <dt>
 
-*PESSOAL* 
+*Pid* 
 </dt> <dd>
 
-A ID do processo do jogo, que é usada para correlacionar com um desligamento de Shim do processo.
+A ID do processo do jogo, que é usada para correlacionar com um desligamento de shim do processo.
 
 </dd> </dl>
 
@@ -102,9 +102,9 @@ A ID do processo do jogo, que é usada para correlacionar com um desligamento de
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                             |
-| parâmetro<br/>                   | <dl> <dt>Wpcevent. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Wpcevent.h</dt> </dl> |
 
 
 
@@ -115,7 +115,7 @@ A ID do processo do jogo, que é usada para correlacionar com um desligamento de
 [Usando APIs de log para controles dos pais](using-logging-apis-for-parental-controls.md)
 </dt> <dt>
 
-[**WPC \_ args \_ CONVERSATIONINITEVENT**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_conversationinitevent)
+[**WPC \_ ARGS \_ CONVERSATIONINITEVENT**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_conversationinitevent)
 </dt> </dl>
 
  

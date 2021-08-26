@@ -3,18 +3,18 @@ title: Arquivos de arte
 description: Arquivos de arte
 ms.assetid: 93893610-de8d-4b9a-b23d-75ddb3e1e557
 keywords:
-- Capas do Windows Media Player, arquivos de arte
+- Windows Media Player capas, arquivos de arte
 - capas, arquivos de arte
 - arquivos para capas, arte
 - arquivos de arte para capas, sobre
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a246ac411a3dfe2c5bab529ddcccce5596434617
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 89ccf07757e511f7717cbe3bbeff2cdacee004da8d3b64d27ddcef7ae2199a29
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105781465"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119956366"
 ---
 # <a name="art-files"></a>Arquivos de arte
 
@@ -32,7 +32,7 @@ Você também pode ter imagens secundárias, como uma bandeja deslizante, que n�
 
 ## <a name="mapping-images"></a>Mapeando imagens
 
-Um dos recursos mais poderosos das capas do Windows Media Player é que você pode usar o mapeamento de imagem para disparar eventos para sua capa. Mapas de imagem são arquivos que contêm imagens especiais. As imagens em um arquivo de mapa de imagem, no entanto, não devem ser exibidas pelo usuário, mas são usadas pelo Windows Media Player para executar uma ação quando o usuário clica em sua capa.
+um dos recursos mais poderosos das capas Windows Media Player é que você pode usar o mapeamento de imagem para disparar eventos para sua capa. Mapas de imagem são arquivos que contêm imagens especiais. as imagens em um arquivo de mapa de imagem, no entanto, não devem ser exibidas pelo usuário, mas são usadas pelo Windows Media Player para executar uma ação quando o usuário clica em sua capa.
 
 Controles diferentes precisam de diferentes tipos de mapas de imagem. Por exemplo, se você colorir parte de um mapa de imagem de um valor vermelho específico e o usuário clicar na área correspondente da imagem primária, um botão acionará um evento. A cor é usada para definir quais eventos são disparados clicando em uma área específica da capa.
 
@@ -55,9 +55,9 @@ As seções a seguir fornecem mais informações sobre arquivos de arte:
 [**Arquivos de capa**](skin-files.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

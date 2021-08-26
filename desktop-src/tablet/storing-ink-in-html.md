@@ -4,18 +4,18 @@ ms.assetid: 1cef7f91-118c-4a16-802d-bd2ec5d15416
 title: Armazenando tinta em HTML
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8372e6e77ea0284bc44fa70883964e53b3063bab
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3d8949582c5743ba7be5ac664627792c7b7f8a0cd5968a67f5db08b6428cb886
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105757336"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119934356"
 ---
 # <a name="storing-ink-in-html"></a>Armazenando tinta em HTML
 
 Geralmente, é desejável copiar um conjunto mais complicado de informações do que pode estar contido no formato serializado da tinta (ISF). O HTML é especialmente útil como um formato de interoperabilidade devido à sua forte aceitação como um padrão do setor e à sua capacidade de representar conteúdo heterogêneo.
 
-O HTML é amplamente compreendido, bem documentado e familiar para muitos desenvolvedores. Há muitas ferramentas para produção em HTML. Além disso, o Microsoft Windows contém APIs (interfaces de programação de aplicativo) para renderização e manipulação de HTML. Por fim, as APIs da plataforma do Tablet PC fornecem o formato de persistência GIF reforçada, que é adequado para inserção em outros formatos, o que é o HTML mais importante. Esse formato consiste em um arquivo GIF com ISF (Ink serializado Format) incorporado em um bloco de extensão de aplicativo.
+O HTML é amplamente compreendido, bem documentado e familiar para muitos desenvolvedores. Há muitas ferramentas para produção em HTML. além disso, o Microsoft Windows contém APIs (interfaces de programação de aplicativo) para renderização e manipulação de HTML. Por fim, as APIs da plataforma do Tablet PC fornecem o formato de persistência GIF reforçada, que é adequado para inserção em outros formatos, o que é o HTML mais importante. Esse formato consiste em um arquivo GIF com ISF (Ink serializado Format) incorporado em um bloco de extensão de aplicativo.
 
 Esses arquivos GIF são representações de objetos de tinta que:
 
@@ -24,7 +24,7 @@ Esses arquivos GIF são representações de objetos de tinta que:
 
 Esses arquivos GIF podem ser produzidos usando os métodos de persistência das APIs da plataforma Tablet PC. Eles são GIFs e devem usar a extensão GIF e, para um aplicativo que não está habilitado para tinta, não há nada diferente sobre eles de um GIF normal. Para um aplicativo habilitado para tinta, no entanto, há um conjunto avançado de dados subjacentes à imagem.
 
-Depois que ele é produzido pelas APIs da plataforma Tablet PC, um GIF reforçada é referenciado por uma marca IMG em HTML. Em seguida, o HTML é armazenado no slot de área de transferência HTML do CF padrão \_ . Isso permite que o HTML fique visível para outros aplicativos, sejam eles habilitados para tinta. A própria imagem pode ser armazenada no cache da Internet do Windows e definida para atingir a idade após um período de tempo apropriado.
+Depois que ele é produzido pelas APIs da plataforma Tablet PC, um GIF reforçada é referenciado por uma marca IMG em HTML. Em seguida, o HTML é armazenado no slot de área de transferência HTML do CF padrão \_ . Isso permite que o HTML fique visível para outros aplicativos, sejam eles habilitados para tinta. a própria imagem pode ser armazenada no cache Windows Internet e definida para atingir a idade após um período de tempo apropriado.
 
 Adorners específicos para a marca IMG são fornecidos ou necessários. Esses adornos identificam o HTML como contendo tinta. O exemplo a seguir refere-se a um GIF reforçada usando marcas HTML:
 

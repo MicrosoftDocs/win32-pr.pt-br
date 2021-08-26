@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: métodos EsentSLVCorruptedException'
+description: 'Saiba mais sobre: Métodos EsentSLVCorruptedException'
 title: 'Métodos EsentSLVCorruptedException '
 TOCTitle: EsentSLVCorruptedException methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.EsentSLVCorruptedException
@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102735
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 1080efcffb9c1ae489ca70eddfe9a6edf96e0167
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 03f65015d31e0a9bf0fcc831569130a89a16daa836b4bd929c75100b4cf8144a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104552479"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119970736"
 ---
 # <a name="esentslvcorruptedexception-methods"></a>Métodos EsentSLVCorruptedException 
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo [EsentSLVCorruptedException](./esentslvcorruptedexception-class.md) expõe os membros a seguir.
+O [tipo EsentSLVCorruptedException](./esentslvcorruptedexception-class.md) expõe os membros a seguir.
 
 ## <a name="methods"></a>Métodos
 
@@ -44,7 +44,7 @@ O tipo [EsentSLVCorruptedException](./esentslvcorruptedexception-class.md) expõ
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">GetBaseException</a></td>
+<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">Getbaseexception</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
@@ -59,12 +59,12 @@ O tipo [EsentSLVCorruptedException](./esentslvcorruptedexception-class.md) expõ
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">Gettype</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></td>
+<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Memberwiseclone</a></td>
 <td>(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</td>
 </tr>
 <tr class="even">
@@ -84,4 +84,4 @@ Parte superior
 
 [Classe EsentSLVCorruptedException](./esentslvcorruptedexception-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

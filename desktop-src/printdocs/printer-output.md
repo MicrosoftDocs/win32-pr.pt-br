@@ -4,12 +4,12 @@ ms.assetid: 5bdcec28-e28d-402d-8d80-e8aa5ecb4e74
 title: Contextos de dispositivo de impressora (documentos e impressão)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a1b75fb79d6ab8bb4198bf52bff10eccf5ec3cf0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c0c868d5bf8247375375b33bcb034a70bd6f28c5b9104b61e264543a63281069
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104169930"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119947396"
 ---
 # <a name="printer-device-contexts-documents-and-printing"></a>Contextos de dispositivo de impressora (documentos e impressão)
 

@@ -6,12 +6,12 @@ keywords:
 - WS_HEAP
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 05d996d3a3905a7f247cfc84840e5aae4baa781f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 79ca6f8eb745fa53b035cdb79d068099e96d2e037c87c139f4b19c30f933ecac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455360"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119926796"
 ---
 # <a name="ws_heap"></a>HEAP do WS \_
 
@@ -34,9 +34,9 @@ Este objeto não é thread-safe. Para obter mais informações, consulte [segura
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 7 \| UWP\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Aplicativos UWP para aplicativos da área de trabalho do Windows Server 2008 R2 \|\]<br/>                           |
-| parâmetro<br/>                   | <dl> <dt>WebServices. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[aplicativos UWP para aplicativos de área de trabalho Windows 7 \|\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Aplicativos de aplicativos de área de trabalho do servidor 2008 R2 \[ \| UWP\]<br/>                           |
+| Cabeçalho<br/>                   | <dl> <dt>WebServices. h</dt> </dl> |
 
 
 
@@ -44,7 +44,7 @@ Este objeto não é thread-safe. Para obter mais informações, consulte [segura
 
 <dl> <dt>
 
-[Áreas](heap.md)
+[Pilha](heap.md)
 </dt> <dt>
 
 [Acesso thread-safe](thread-safety.md)

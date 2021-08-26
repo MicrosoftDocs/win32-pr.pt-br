@@ -1,9 +1,9 @@
 ---
-title: EN_STOPNOUNDO código de notificação (RichEdit. h)
-description: Notifica uma janela pai do controle de edição rico que ocorreu uma ação para a qual o controle não pode alocar memória suficiente para manter o estado de desfazer. Um controle de edição rico envia esse código de notificação na forma de uma \_ mensagem de notificação do WM.
+title: EN_STOPNOUNDO de notificação (Richedit.h)
+description: Notifica a janela pai de um controle de edição rich que ocorreu uma ação para a qual o controle não pode alocar memória suficiente para manter o estado de desfazer. Um controle de edição rich envia esse código de notificação na forma de uma mensagem WM \_ NOTIFY.
 ms.assetid: 5608f6dd-83dc-4712-b485-dd9bc17dea24
 keywords:
-- EN_STOPNOUNDO de código de notificação controles do Windows
+- EN_STOPNOUNDO código de notificação Windows Controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ab71e6e1a78c468e6349fc1f42d03e9b68fb043
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2e2bd22161f215e9544db08f845eb144fe94ec083b8a887a3db6fc46220d822d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086178"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120047386"
 ---
-# <a name="en_stopnoundo-notification-code"></a>\_Código de notificação en STOPNOUNDO
+# <a name="en_stopnoundo-notification-code"></a>Código de \_ notificação EN STOPNOUNDO
 
-Notifica uma janela pai do controle de edição rico que ocorreu uma ação para a qual o controle não pode alocar memória suficiente para manter o estado de desfazer. Um controle de edição rico envia esse código de notificação na forma de uma mensagem de [**\_ notificação do WM**](wm-notify.md) .
+Notifica a janela pai de um controle de edição rich que ocorreu uma ação para a qual o controle não pode alocar memória suficiente para manter o estado de desfazer. Um controle de edição rich envia esse código de notificação na forma de uma [**mensagem WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,19 +41,19 @@ EN_STOPNOUNDO
 *lParam* 
 </dt> <dd>
 
-Uma estrutura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) .
+Uma [**estrutura NMHDR.**](/windows/desktop/api/richedit/ns-richedit-nmhdr)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retornar zero para continuar a operação de **desfazer** .
+Retorne zero para continuar a **operação Desfazer.**
 
-Retornar um valor diferente de zero para interromper a operação de **desfazer** .
+Retornar um valor não zero para interromper a **operação Desfazer.**
 
 ## <a name="remarks"></a>Comentários
 
-A janela pai sempre obterá uma mensagem de [**\_ notificação do WM**](wm-notify.md) para esse evento; ela não requer uma máscara de notificação enviada com em [**\_ SETEVENTMASK**](em-seteventmask.md).
+A janela pai sempre receberá uma mensagem [**WM \_ NOTIFY**](wm-notify.md) para esse evento, não requer uma máscara de notificação enviada com [**EM \_ SETEVENTMASK**](em-seteventmask.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,9 +61,9 @@ A janela pai sempre obterá uma mensagem de [**\_ notificação do WM**](wm-noti
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -77,7 +77,7 @@ A janela pai sempre obterá uma mensagem de [**\_ notificação do WM**](wm-noti
 [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr)
 </dt> <dt>
 
-[**notificação do WM \_**](wm-notify.md)
+[**WM \_ NOTIFY**](wm-notify.md)
 </dt> </dl>
 
  

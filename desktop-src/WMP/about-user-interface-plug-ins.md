@@ -1,30 +1,30 @@
 ---
-title: Sobre plug-ins de interface do usuário
-description: Sobre plug-ins de interface do usuário
+title: Sobre Interface do Usuário plug-ins
+description: Sobre Interface do Usuário plug-ins
 ms.assetid: 2f683876-02b3-48c8-a487-4f665ab7cf91
 keywords:
-- Windows Media Player, plug-ins
-- Windows Media Player, plug-ins de interface do usuário
-- Plug-ins do Windows Media Player, interface do usuário
+- Windows Media Player,plug-ins
+- Windows Media Player plug-ins de interface do usuário
+- Windows Media Player plug-ins, interface do usuário
 - plug-ins, interface do usuário
 - plug-ins de interface do usuário, sobre
 - Plug-ins de interface do usuário, sobre
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e3c64894b9db5d11ec4e9d8c5aee9c6e0bb103bc
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: bd188c34608aaa598a12e8e24f199fca657dca67287b180755fe832833c91c54
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103636464"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119903076"
 ---
-# <a name="about-user-interface-plug-ins"></a>Sobre plug-ins de interface do usuário
+# <a name="about-user-interface-plug-ins"></a>Sobre Interface do Usuário plug-ins
 
-O Windows Media Player fornece uma variedade de painéis de controle que permitem ao usuário modificar vários aspectos do Player, como as configurações de equalizador gráfico e vídeo. Esses painéis de controle podem aprimorar a experiência de multimídia fornecida pelo Windows Media Player, mas eles não fornecem necessariamente toda a funcionalidade que o usuário pode procurar.
+Windows Media Player fornece uma variedade de painéis de controle que permitem que o usuário modifique vários aspectos do player, como as configurações de vídeo e equalizador gráfico. Esses painéis de controle podem aprimorar a experiência multimídia fornecida pelo Windows Media Player, mas não necessariamente fornecem toda a funcionalidade que o usuário pode estar procurando.
 
-As capas são uma maneira de fornecer funcionalidade adicional, mas exigem que o desenvolvedor recrie toda a interface do usuário. Como alternativa, o Windows Media Player permite a criação de plug-ins de interface do usuário personalizados que são exibidos no modo completo do Player. Essa funcionalidade é fornecida por meio de uma interface de programação que segue as diretrizes padrão do Microsoft Component Object Model (COM). Você pode implementar essa interface em Microsoft Visual C++ usando o assistente de plug-in do Windows Media Player para ajudá-lo a começar.
+As capas são uma maneira de fornecer funcionalidade adicional, mas exigem que o desenvolvedor recrie a interface do usuário inteira. Como alternativa, Windows Media Player permite a criação de plug-ins de interface do usuário personalizados que são exibidos no modo completo do player. Essa funcionalidade é fornecida por meio de uma interface de programação que segue as diretrizes padrão do COM (Microsoft Component Object Model). Você pode implementar essa interface no Microsoft Visual C++ usando o Assistente Windows Media Player Plug-in do Windows Media Player para ajudá-lo a começar.
 
-Os plug-ins de interface do usuário são descritos mais detalhadamente nos tópicos a seguir.
+Plug-ins de interface do usuário são descritos em mais detalhes nos tópicos a seguir.
 
 
 
@@ -35,18 +35,18 @@ Os plug-ins de interface do usuário são descritos mais detalhadamente nos tóp
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[**Plug-ins de interface do usuário do Windows Media Player**](windows-media-player-user-interface-plug-ins.md)
+[**Windows Media Player Interface do Usuário plug-ins do Interface do Usuário**](windows-media-player-user-interface-plug-ins.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

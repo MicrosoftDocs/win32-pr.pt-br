@@ -8,12 +8,12 @@ keywords:
 - Referência do provedor WMI Serviços de Área de Trabalho Remota
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f72645ce77e2200eb82a2caaf5d598b2269fba82
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 6a484a5f874c8e14c4fba07a269d00c64a09d36afacf9f6c2ce8f7e5921220fc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103917439"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119987065"
 ---
 # <a name="remote-desktop-services-wmi-provider-reference"></a>Serviços de Área de Trabalho Remota referência do provedor WMI
 
@@ -80,12 +80,12 @@ Erros retornados pelo provedor WMI de Serviços de Área de Trabalho Remota. Par
 </dd> </dl>
 
 > [!Note]  
-> No Windows Server 2008 R2, o nome do recurso de agente de conexão dos serviços de terminal foi alterado para agente de conexão RD.
+> no Windows Server 2008 R2, o nome do recurso de agente de conexão dos serviços de Terminal foi alterado para agente de conexão RD.
 
- 
+ 
 
 Para obter informações sobre problemas de segurança e aplicativos WMI, consulte [mantendo a segurança do WMI](/windows/desktop/WmiSdk/maintaining-wmi-security).
 
- 
+ 
 
- 
+ 

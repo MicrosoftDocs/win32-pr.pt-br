@@ -29,12 +29,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: e2371ba7ee449497e2d695e60d75c59454282d54
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 0a780e0997ef3a56bc644adda2842b905aaf9744d28a2075fbc4726134c16aa6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105756034"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119972286"
 ---
 # <a name="win32_osrecoveryconfiguration-class"></a>\_Classe Win32 OSRecoveryConfiguration
 
@@ -126,7 +126,7 @@ Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Re
 
 Caminho completo para o arquivo de depuração. Um arquivo de depuração é criado com o estado de memória do computador após uma falha do computador.
 
-Exemplo: "C: \\ Windows \\ Memory. dmp"
+exemplo: "C: \\ Windows \\ Memory. dmp"
 
 </dd> <dt>
 
@@ -199,7 +199,7 @@ Tipo de acesso: leitura/gravação
 
 Versão expandida da propriedade **DebugFilePath** .
 
-Exemplo: "C: \\ Windows \\ Memory. dmp"
+exemplo: "C: \\ Windows \\ Memory. dmp"
 
 </dd> <dt>
 
@@ -214,7 +214,7 @@ Tipo de acesso: leitura/gravação
 
 Versão expandida da propriedade **MiniDumpDirectory** .
 
-Exemplo: "C: \\ minidespejo do Windows \\ "
+exemplo: "C: \\ Windows \\ minidespejo"
 
 </dd> <dt>
 

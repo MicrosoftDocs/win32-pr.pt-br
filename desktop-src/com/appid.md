@@ -1,21 +1,21 @@
 ---
-title: AppID (chave AppID)
-description: Identifica o GUID AppID que corresponde ao executável nomeado.
+title: AppID (AppID Key)
+description: Identifica o GUID do AppID que corresponde ao executável nomeado.
 ms.assetid: 960abcc5-c97f-47d6-9d8a-840473c136bf
 keywords:
-- Valor do registro AppID (AppID) COM
+- AppID registry value (AppID) COM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 183bc18e55ee157e42fc2b35ef1d0b278e2683f0
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: d1cf49a9f1148c9d89c793021a007827e418c68f6e9192e70e98c21e5037a882
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104369136"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119993936"
 ---
-# <a name="appid-appid-key"></a>AppID (chave AppID)
+# <a name="appid-appid-key"></a>AppID (AppID Key)
 
-Identifica o GUID AppID que corresponde ao executável nomeado.
+Identifica o GUID do AppID que corresponde ao executável nomeado.
 
 ## <a name="registry-entry"></a>Entrada do Registro
 
@@ -27,13 +27,13 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID
 
 ## <a name="remarks"></a>Comentários
 
-Este é um valor de **\_ sz do reg** .
+Esse é um **valor \_ REG SZ.**
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Chave AppID](appid-key.md)
+[AppID Key](appid-key.md)
 </dt> </dl>
 
  

@@ -1,19 +1,19 @@
 ---
-description: Notifica um AppBar quando ocorreu um evento que pode afetar o tamanho e a posição do AppBar.
+description: Notifica uma barra de aplicativos quando ocorreu um evento que pode afetar o tamanho e a posição da barra de aplicativos.
 ms.assetid: 1016a362-4d2b-410e-aec9-c1cc8f497778
-title: Mensagem de ABN_POSCHANGED (shellapi. h)
+title: ABN_POSCHANGED mensagem (Shellapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 24b0a800b1c112cba18fbadbba79a999ec83c77e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 92528de38b60c1f4705873427616b1ed7a5be6be5875a21e352d2136313c84df
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967369"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119943596"
 ---
-# <a name="abn_poschanged-message"></a>\_Mensagem POSCHANGED do ABN
+# <a name="abn_poschanged-message"></a>Mensagem POSCHANGED do ABN \_
 
-Notifica um AppBar quando ocorreu um evento que pode afetar o tamanho e a posição do AppBar. Os eventos incluem alterações no estado de tamanho, posição e visibilidade da barra de tarefas, bem como a adição, remoção ou redimensionamento de outro AppBar no mesmo lado da tela.
+Notifica uma barra de aplicativos quando ocorreu um evento que pode afetar o tamanho e a posição da barra de aplicativos. Os eventos incluem alterações no tamanho, na posição e no estado de visibilidade da barra de tarefas, bem como a adição, remoção ou replicação de outra barra de aplicativos no mesmo lado da tela.
 
 
 ```C++
@@ -24,15 +24,15 @@ ABN_POSCHANGED
 
 ## <a name="parameters"></a>Parâmetros
 
-Esta mensagem não tem parâmetros.
+Essa mensagem não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sem valor de retorno.
 
 ## <a name="remarks"></a>Comentários
 
-Um AppBar deve responder a essa mensagem de notificação enviando as mensagens [**ABM \_ QUERYPOS**](abm-querypos.md) e [**ABM \_ SETPOS**](abm-setpos.md) . Se sua posição for alterada, o AppBar deverá chamar a função [**MoveWindow**](/windows/desktop/api/winuser/nf-winuser-movewindow) para se mover para a nova posição.
+Uma barra de aplicativos deve responder a essa mensagem de notificação enviando as mensagens [**ABM \_ QUERYPOS**](abm-querypos.md) e [**ABM \_ SETPOS.**](abm-setpos.md) Se sua posição tiver sido alterada, a barra de aplicativos deverá chamar a [**função MoveWindow**](/windows/desktop/api/winuser/nf-winuser-movewindow) para se mover para a nova posição.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -40,9 +40,9 @@ Um AppBar deve responder a essa mensagem de notificação enviando as mensagens 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                           |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                           |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                  |
-| Cabeçalho<br/>                   | <dl> <dt>Shellapi. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Shellapi.h</dt> </dl> |
 
 
 

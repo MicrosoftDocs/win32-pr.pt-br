@@ -4,12 +4,12 @@ description: Você pode usar esse efeito para gerar uma parte de uma imagem, mas
 ms.assetid: D35E32CB-4DF7-408F-A717-1E421DDC8763
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f9e1d4c6df0698d47a35eb2cbdaf670b98ed125
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 71b0d55e7751ef73d8f6bdff65a6ae5d5933695600a1003b9c4a010231628019
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455652"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119929037"
 ---
 # <a name="atlas-effect"></a>Efeito do Atlas
 
@@ -25,7 +25,7 @@ Para criar a saída do efeito:
 2.  Traduz a origem do resultado para (0, 0).
 
 > [!Note]  
-> A propriedade *InputPaddingRect* só deverá ser maior se e somente se os pixels entre os dois retângulos forem transparentes em preto na entrada. Isso pode resultar em Direct2D executando o grafo de forma mais ideal.
+> A propriedade *InputPaddingRect* só deverá ser maior se e somente se os pixels entre os dois retângulos forem transparentes em preto na entrada. isso pode resultar na Direct2D de executar o grafo de forma mais ideal.
 
  
 
@@ -90,9 +90,9 @@ O código anterior seleciona um retângulo que está ao seu lado no segundo tri�
 
 | Requisito | Valor |
 |--------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho do Windows 7 \[ \| aplicativos da Windows Store\] |
-| Servidor mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho do Windows 7 \[ \| aplicativos da Windows Store\] |
-| parâmetro                   | d2d1effects. h                                                                      |
+| Cliente mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho Windows 7 \[ \| Windows aplicativos da loja\] |
+| Servidor mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho Windows 7 \[ \| Windows aplicativos da loja\] |
+| Cabeçalho                   | d2d1effects. h                                                                      |
 | Biblioteca                  | d2d1. lib, dxguid. lib                                                               |
 
 

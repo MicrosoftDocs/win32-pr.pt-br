@@ -1,23 +1,23 @@
 ---
-description: Este tópico lista as tabelas de frequência usadas para ajuste de TV analógica para a Turquia.
+description: Este tópico lista as tabelas de frequência usadas para ajuste de TV análogo para o País.
 ms.assetid: 840dbd02-a500-47fe-b8ce-5ed2e902b4a6
-title: Atribuições de canal da Turquia
+title: Atribuições de canal do Canal do Ausão
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c68b24b6226572877c007e67e03502192bd0f1a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8c621e2e73bbf850adec34f9f65f847d9b1f688b6bd86b5d9bf92d96430190ba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104169879"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119903676"
 ---
-# <a name="turkey-channel-assignments"></a>Atribuições de canal da Turquia
+# <a name="turkey-channel-assignments"></a>Atribuições de canal do Canal do Ausão
 
-Este tópico lista as tabelas de frequência usadas para ajuste de TV analógica para a Turquia.
+Este tópico lista as tabelas de frequência usadas para ajuste de TV análogo para o País.
 
-Para obter uma explicação das tabelas a seguir, consulte [tabelas e atribuições](tables-and-assignments.md).
+Para uma explicação das tabelas a seguir, consulte [Tabelas e Atribuições](tables-and-assignments.md).
 
-As seguintes atribuições de canal foram introduzidas no Windows 7. Anteriormente, a [tabela de frequência unicable](unicable-frequency-table.md) foi usada.
+As atribuições de canal a seguir foram introduzidas Windows 7. Anteriormente, a [Tabela de Frequência Unicavel](unicable-frequency-table.md) era usada.
 
 -   [Atribuições de difusão](#broadcast-assignments)
 -   [Atribuições de cabo](#cable-assignments)
@@ -251,7 +251,7 @@ As seguintes atribuições de canal foram introduzidas no Windows 7. Anteriormen
 
 <dl> <dt>
 
-[Ajuste de TV analógica internacional](international-analog-tv-tuning.md)
+[Ajuste de TV análogo internacional](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

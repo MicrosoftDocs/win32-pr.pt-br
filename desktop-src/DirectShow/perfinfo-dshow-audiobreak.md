@@ -1,7 +1,7 @@
 ---
-description: A estrutura PERFINFO do \_ DShow \_ AUDIOBREAK contém dados para um evento de rastreamento do tipo Guid \_ AUDIOBREAK. O filtro de renderizador do DirectSound registra esse evento quando há uma interrupção no fluxo de áudio.
+description: A estrutura PERFINFO \_ DSHOW \_ AUDIOBREAK contém dados para um evento de rastreamento do tipo GUID \_ AUDIOBREAK. O filtro Do renderador DirectSound registra esse evento quando há uma quebra no fluxo de áudio.
 ms.assetid: 9e7abdca-7d4c-4006-997f-9605f8d18e1d
-title: Estrutura de PERFINFO_DSHOW_AUDIOBREAK (Perfstruct. h)
+title: PERFINFO_DSHOW_AUDIOBREAK estrutura (Perfstruct.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - Perfstruct.h
-ms.openlocfilehash: 599befea67b28acbedffd5c98ebce84aadf70838
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c7b8f83fffaa718c27e0333d864a564282228c0943f4d77fb653dc1800a6ddd2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105758140"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119928186"
 ---
-# <a name="perfinfo_dshow_audiobreak-structure"></a>Estrutura do PERFINFO \_ DShow \_ AUDIOBREAK
+# <a name="perfinfo_dshow_audiobreak-structure"></a>Estrutura AUDIOBREAK PERFINFO \_ DSHOW \_
 
-A `PERFINFO_DSHOW_AUDIOBREAK` estrutura contém dados para um evento de rastreamento do tipo Guid \_ AUDIOBREAK.
+A `PERFINFO_DSHOW_AUDIOBREAK` estrutura contém dados para um evento de rastreamento do tipo GUID \_ AUDIOBREAK.
 
-O filtro de [renderizador do DirectSound](directsound-renderer-filter.md) registra esse evento quando há uma interrupção no fluxo de áudio.
+O [filtro Do renderador DirectSound](directsound-renderer-filter.md) registra esse evento quando há uma quebra no fluxo de áudio.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,36 +47,36 @@ typedef struct PERFINFO_DSHOW_AUDIOBREAK {
 **cycleCounter**
 </dt> <dd>
 
-Contagem de ciclos de relógio mais recente (instrução RDTSC).
+Contagem de ciclo de relógio mais recente (instrução RDTSC).
 
 </dd> <dt>
 
 **dshowClock**
 </dt> <dd>
 
-Posição de gravação atual no buffer do DirectSound.
+Posição de gravação atual no buffer DirectSound.
 
 </dd> <dt>
 
-**exemplo de**
+**sampleTime**
 </dt> <dd>
 
-Início do intervalo de áudio no buffer do DirectSound.
+Início da quebra de áudio no buffer DirectSound.
 
 </dd> <dt>
 
 **sampleDuration**
 </dt> <dd>
 
-Duração da interrupção, em milissegundos.
+Duração da quebra, em milissegundos.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Para habilitar esse evento, você deve definir o \_ sinalizador de bit AUDIOBREAK no parâmetro *EnableFlag* ao chamar **EnableTrace**. Esse sinalizador é definido no arquivo de cabeçalho Dxmperf. h, que está incluído nas classes base do DirectShow.
+Para habilitar esse evento, você deve definir o sinalizador AUDIOBREAK BIT no parâmetro \_ *EnableFlag* ao chamar **EnableTrace**. Esse sinalizador é definido no arquivo de header Dxmperf.h, que está incluído nas classes DirectShow base.
 
-Para registrar esse evento de um filtro do DirectShow, use a macro **PERFLOG \_ AUDIOBREAK** , que é definida em Dxmperf. h.
+Para registrar esse evento em um DirectShow, use a macro **PERFLOG \_ AUDIOBREAK,** que é definida em Dxmperf.h.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -84,7 +84,7 @@ Para registrar esse evento de um filtro do DirectShow, use a macro **PERFLOG \_ 
 
 | Requisito | Valor |
 |-------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Perfstruct. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Perfstruct.h</dt> </dl> |
 
 
 
@@ -92,10 +92,10 @@ Para registrar esse evento de um filtro do DirectShow, use a macro **PERFLOG \_ 
 
 <dl> <dt>
 
-[Estruturas do DirectShow](directshow-structures.md)
+[DirectShow Estruturas](directshow-structures.md)
 </dt> <dt>
 
-[Rastreamento de eventos no DirectShow](event-tracing-in-directshow.md)
+[Rastreamento de eventos em DirectShow](event-tracing-in-directshow.md)
 </dt> <dt>
 
 [GUIDs de evento de rastreamento](trace-guids.md)

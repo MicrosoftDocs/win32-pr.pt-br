@@ -4,12 +4,12 @@ description: Conversão por componente de dados de ponto flutuante de precisão 
 ms.assetid: 95297556-41ED-4ED0-8F9A-16B7A440AF25
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6790735745805426d32aefcc5d5d771ade644e43
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: d31396aa0f2b82dc4ea366bbdde704d55fa850d0d0a9f2f1f3de539a763facb3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104293581"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119982426"
 ---
 # <a name="ftod-sm5---asm"></a>ftod (SM5-ASM)
 
@@ -51,7 +51,7 @@ Essa instrução se aplica aos seguintes estágios de sombreador:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 

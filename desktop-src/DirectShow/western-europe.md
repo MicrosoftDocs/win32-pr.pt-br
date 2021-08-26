@@ -4,16 +4,16 @@ ms.assetid: 3af46a07-027f-4b31-9958-4a16971c81f8
 title: Europa Ocidental
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 552d2fc92b8a3c8433e863e7a69f63859b7efab8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8238078aa5b5c8fc0776fa0e604b09a1255823a6c348b2e9701087755afeadc5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105768772"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119982356"
 ---
 # <a name="western-europe"></a>Europa Ocidental
 
-Para obter uma explicação das tabelas a seguir, consulte [tabelas e atribuições](tables-and-assignments.md).
+Para uma explicação das tabelas a seguir, consulte [Tabelas e Atribuições](tables-and-assignments.md).
 
 Os índices de frequência nas tabelas da Europa Ocidental não são adequados para uso como números de canal.
 
@@ -101,7 +101,7 @@ Os índices de frequência nas tabelas da Europa Ocidental não são adequados p
 
 ### <a name="western-europe-cable-assignments"></a>Atribuições de cabo da Europa Ocidental
 
-Havia dados para dar suporte a uma linha de cabos padronizada para alguns países/regiões. Para os países/regiões que não relataram os dados da lista de canais, a [tabela de frequência unicable](unicable-frequency-table.md) é usada.
+Havia dados para dar suporte a um cabo padronizado para alguns países/regiões. Para os países/regiões que não relataram dados de corte de canal, a Tabela de Frequência [Unicavel](unicable-frequency-table.md) é usada.
 
 ``` syntax
          1L,            // Lowest channel
@@ -221,7 +221,7 @@ Havia dados para dar suporte a uma linha de cabos padronizada para alguns paíse
 
 <dl> <dt>
 
-[Ajuste de TV analógica internacional](international-analog-tv-tuning.md)
+[Ajuste de TV análogo internacional](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

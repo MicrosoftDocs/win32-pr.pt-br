@@ -1,19 +1,19 @@
 ---
 title: Referência de comando (ferramenta de edição de som de informações linguísticas)
-description: Essa referência de comando descreve a ferramenta lingüística de edição de som de informações. O Microsoft Agent foi preterido a partir do Windows 7.
+description: Essa referência de comando descreve a ferramenta lingüística de edição de som de informações. o Microsoft Agent foi preterido a partir do Windows 7.
 ms.assetid: 084f14ee-6774-46e2-a4ec-92f480f2f74a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a929691a96cfa62417785e1348448d78cc227be
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 7d942bccfc8d995b716902b3569eb05ddcd4cad5b12dc9e5fa2a781d692b6ac3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112405709"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119963226"
 ---
 # <a name="command-reference-linguistic-information-sound-editing-tool"></a>Referência de comando (ferramenta de edição de som de informações linguísticas)
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 ### <a name="the-file-menu"></a>O menu arquivo
 

@@ -1,34 +1,34 @@
 ---
-description: Saiba mais sobre a biblioteca de matemática fornecida pela biblioteca de utilitários D3DX nos Gráficos do Direct3D 9. A biblioteca fornece funções para computar operações matemáticas 3D.
+description: Saiba mais sobre a biblioteca de matemática fornecida pela biblioteca do utilitário D3DX em gráficos do Direct3D 9. A biblioteca fornece funções para computar operações matemáticas 3D.
 ms.assetid: 00f0f943-64fa-45e3-8bd3-ca61c8b87e1a
-title: Funções matemáticas (elementos gráficos do Direct3D 9)
+title: Funções matemáticas (gráficos do Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 17fa7e56282d74dbe6a67b023ca5f64d0f88be20
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: d3c9632b09c008ab0dba46f834e4faabe225f3c1ef779f59ee4214591188a065
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112408209"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119952156"
 ---
-# <a name="math-functions-direct3d-9-graphics"></a>Funções matemáticas (elementos gráficos do Direct3D 9)
+# <a name="math-functions-direct3d-9-graphics"></a>Funções matemáticas (gráficos do Direct3D 9)
 
 > [!Note]  
-> As funções matemáticas da biblioteca de utilitários D3DX são preterida para Windows 8. Em vez disso, recomendamos que você use [DirectXMath.](../dxmath/directxmath-portal.md)
+> As funções matemáticas da biblioteca do utilitário D3DX são preteridas para Windows 8. É recomendável que você use [DirectXMath](../dxmath/directxmath-portal.md) em vez disso.
 
  
 
-A biblioteca matemática fornecida pela biblioteca de utilitários D3DX fornece funções para computar operações matemáticas 3D. Cada uma das funções pode usar o mesmo objeto que os parâmetros \[ \] passados e \[ \] retornados. Além disso, os parâmetros out normalmente são retornados como valores retornados, para que a saída de uma função matemática possa ser usada como um parâmetro para outra função matemática.
+A biblioteca de matemática fornecida pela biblioteca do utilitário D3DX fornece funções para computar operações matemáticas 3D. Cada uma das funções pode usar o mesmo objeto que o passado \[ \] e retornar os \[ \] parâmetros. Além disso, os parâmetros de saída normalmente são retornados como valores de retorno, para que a saída de uma função matemática possa ser usada como um parâmetro para outra função matemática.
 
-Muitas das funções são implementadas em d3dx9math.inl.
+Muitas das funções são implementadas em d3dx9math. inl.
 
-As funções do aplicativo de matemática 3D podem ser organizadas nos grupos a seguir.
+As funções de aplicativo matemática 3D podem ser organizadas nos grupos a seguir.
 
 ## <a name="functions"></a>Funções
 
 -   [**D3DXColorAdd**](d3dxcoloradd.md)
 -   [**D3DXColorAdjustContrast**](d3dxcoloradjustcontrast.md)
--   [**D3DXColorAdjustS saturação**](d3dxcoloradjustsaturation.md)
+-   [**D3DXColorAdjustSaturation**](d3dxcoloradjustsaturation.md)
 -   [**D3DXColorLerp**](d3dxcolorlerp.md)
 -   [**D3DXColorModulate**](d3dxcolormodulate.md)
 -   [**D3DXColorNegative**](d3dxcolornegative.md)

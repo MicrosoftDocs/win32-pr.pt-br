@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6bb75d21cc640da39c3679ac118ead629b24f719
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2e442870961735d09c786a21ed1ea8be765e8f0c59b3f760278be9316daa0bb5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105787682"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119881076"
 ---
 # <a name="iwmdrmlicensemanagementcreatelicenseenumeration-method"></a>Método IWMDRMLicenseManagement:: CreateLicenseEnumeration
 
@@ -58,7 +58,7 @@ Ponteiro que recebe o endereço da interface [**IWMDRMLicense**](iwmdrmlicense.m
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 

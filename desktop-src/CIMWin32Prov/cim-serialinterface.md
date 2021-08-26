@@ -1,8 +1,8 @@
 ---
-description: A \_ classe CIM SerialInterface representa um \_ relacionamento CIM ControlledBy que indica quais dispositivos são acessados por meio do controlador serial e as características do acesso.
+description: A classe Cim SerialInterface representa uma relação CIM ControlledBy que indica quais dispositivos são acessados por meio do controlador serial e as \_ \_ características do acesso.
 ms.assetid: bebc304a-c2b7-41c7-b24a-8f450ee3c4bb
 ms.tgt_platform: multiple
-title: Classe CIM_SerialInterface
+title: CIM_SerialInterface classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -24,23 +24,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 1df787ff64798f412035a72e6db6d7b01b4b9b0a
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 6c6b704c8af9e6907150ed4d09caacaafb0229902005fdbc63453dc315a3401a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826342"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119919826"
 ---
-# <a name="cim_serialinterface-class"></a>\_Classe CIM SerialInterface
+# <a name="cim_serialinterface-class"></a>Classe Cim \_ SerialInterface
 
-A classe **CIM \_ SerialInterface** representa um relacionamento [**CIM \_ ControlledBy**](cim-controlledby.md) que indica quais dispositivos são acessados por meio do controlador serial e as características do acesso.
+A **classe Cim \_ SerialInterface** representa uma relação [**CIM \_ ControlledBy**](cim-controlledby.md) que indica quais dispositivos são acessados por meio do controlador serial e as características do acesso.
 
 > [!IMPORTANT]
-> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> As classes CIM (Distributed Management Task Force) do DMTF (Distributed Management Task Force) modelo CIM são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
-A sintaxe a seguir é simplificada do código formato MOF (MOF) e inclui todas as suas propriedades herdadas. As propriedades são listadas em ordem alfabética, não em ordem MOF.
+A sintaxe a seguir é simplificada Managed Object Format código (MOF) e inclui todas as suas propriedades herdadas. As propriedades são listadas em ordem alfabética, não em ordem MOF.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -63,28 +63,28 @@ class CIM_SerialInterface : CIM_ControlledBy
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ SerialInterface** tem estes tipos de membros:
+A **classe Cim \_ SerialInterface** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ SerialInterface** tem essas propriedades.
+A **classe Cim \_ SerialInterface** tem essas propriedades.
 
 <dl> <dt>
 
-**Accessstate**
+**AccessState**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se o controlador está ativando ou acessando ativamente o dispositivo. Essas informações são necessárias quando um dispositivo lógico pode ser acessado ou acessado por meio de vários controladores.
+Indica se o controlador está ativamente no comando ou acessando o dispositivo. Essas informações são necessárias quando um dispositivo lógico pode ser comandos por vários controladores ou acessados por meio de vários controladores.
 
-Essa propriedade é herdada do [**CIM \_ ControlledBy**](cim-controlledby.md).
+Essa propriedade é herdada de [**CIM \_ ControlledBy.**](cim-controlledby.md)
 
 <dt>
 
@@ -111,42 +111,42 @@ Essa propriedade é herdada do [**CIM \_ ControlledBy**](cim-controlledby.md).
 
 </dd> <dt>
 
-**Antecedent**
+**Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **CIM \_ SerialController**
+Tipo de dados: **\_ SerialController cim**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent")
+Qualificadores: [**substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecessor")
 </dt> </dl>
 
 Um [**\_ SerialController CIM**](cim-serialcontroller.md) que descreve o controlador serial.
 
 </dd> <dt>
 
-**Depende**
+**Dependente**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados **: \_ LogicalDevice CIM**
+Tipo de dados: **Cim \_ LogicalDevice**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependente")
+Qualificadores: [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependente")
 </dt> </dl>
 
-Um [**\_ LogicalDevice CIM**](cim-logicaldevice.md) que descreve o dispositivo lógico.
+Um [**\_ LogicalDevice cim**](cim-logicaldevice.md) que descreve o dispositivo lógico.
 
 </dd> <dt>
 
 **FlowControlInfo**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -179,7 +179,7 @@ Indica o controle de fluxo para dados transmitidos.
 
 <span id="XonXoff"></span><span id="xonxoff"></span><span id="XONXOFF"></span>
 
-<span id="XonXoff"></span><span id="xonxoff"></span><span id="XONXOFF"></span>**XOnXOff** (3)
+<span id="XonXoff"></span><span id="xonxoff"></span><span id="XONXOFF"></span>**NixXoff** (3)
 
 
 </dt> <dd></dd> <dt>
@@ -193,12 +193,12 @@ Indica o controle de fluxo para dados transmitidos.
 
 <span id="Both_XonXoff_and_RTS_CTS"></span><span id="both_xonxoff_and_rts_cts"></span><span id="BOTH_XONXOFF_AND_RTS_CTS"></span>
 
-<span id="Both_XonXoff_and_RTS_CTS"></span><span id="both_xonxoff_and_rts_cts"></span><span id="BOTH_XONXOFF_AND_RTS_CTS"></span>**XOnXOff e RTS/CTS** (5)
+<span id="Both_XonXoff_and_RTS_CTS"></span><span id="both_xonxoff_and_rts_cts"></span><span id="BOTH_XONXOFF_AND_RTS_CTS"></span>**NixXoff e RTS/CTS** (5)
 
 
 </dt> <dd>
 
-XonXoff e RTS/CTS
+NixXoff e RTS/CTS
 
 </dd> </dl>
 
@@ -207,25 +207,25 @@ XonXoff e RTS/CTS
 **NegotiatedDataWidth**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("bits")
+Qualificadores: [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("bits")
 </dt> </dl>
 
-Quando várias larguras de dados de barramento ou conexão são possíveis, essa propriedade define a que está em uso entre os dispositivos. A largura dos dados é especificada em bits. Se a largura dos dados não for negociada ou se essas informações não estiverem disponíveis ou importantes para o gerenciamento de dispositivos, a propriedade deverá ser definida como 0 (zero).
+Quando várias larguras de dados de conexão ou barramento são possíveis, essa propriedade define aquela em uso entre os dispositivos. A largura dos dados é especificada em bits. Se a largura dos dados não for negociada ou se essas informações não estão disponíveis ou importantes para o gerenciamento de dispositivos, a propriedade deve ser definida como 0 (zero).
 
-Essa propriedade é herdada do [**CIM \_ DeviceConnection**](cim-deviceconnection.md).
+Essa propriedade é herdada de [**\_ DEVICEConnection cim**](cim-deviceconnection.md).
 
 </dd> <dt>
 
 **NegotiatedSpeed**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -234,64 +234,64 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("bits por segundo")
 </dt> </dl>
 
-Quando várias velocidades de barramento ou conexão são possíveis, essa propriedade define a que está sendo usada entre os dispositivos. A velocidade é especificada em bits por segundo. Se as velocidades de conexão ou de barramento não forem negociadas ou se essas informações não estiverem disponíveis ou importantes para o gerenciamento de dispositivos, a propriedade deverá ser definida como 0 (zero).
+Quando várias velocidades de conexão ou barramento são possíveis, essa propriedade define aquela que está sendo usada entre os dispositivos. A velocidade é especificada em bits por segundo. Se as velocidades de conexão ou barramento não são negociadas ou se essas informações não estão disponíveis ou importantes para o gerenciamento de dispositivos, a propriedade deve ser definida como 0 (zero).
 
-Para obter mais informações sobre como usar valores de **UInt64** em scripts, consulte [scripts no WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obter mais informações sobre como **usar valores uint64** em scripts, consulte [Scripts no WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
-Essa propriedade é herdada do [**CIM \_ DeviceConnection**](cim-deviceconnection.md).
+Essa propriedade é herdada de [**\_ DEVICEConnection cim**](cim-deviceconnection.md).
 
 </dd> <dt>
 
 **NumberOfHardResets**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Número de redefinições de hardware emitidas pelo controlador. Uma reinicialização forçada retorna o dispositivo para seu estado de inicialização ou inicialização. Todos os dados e informações de estado do dispositivo interno são perdidos.
+Número de redefinições de disco rígido emitidas pelo controlador. Uma redefinição de disco rígido retorna o dispositivo para seu estado de inicialização ou inicialização. Todas as informações de estado do dispositivo interno e os dados são perdidos.
 
-Essa propriedade é herdada do [**CIM \_ ControlledBy**](cim-controlledby.md).
+Essa propriedade é herdada de [**CIM \_ ControlledBy.**](cim-controlledby.md)
 
 </dd> <dt>
 
 **NumberOfSoftResets**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Número de redefinições reversível emitidas pelo controlador. Uma redefinição reversível não limpa completamente o estado e os dados atuais do dispositivo. A semântica exata depende do dispositivo e dos protocolos e mecanismos usados para se comunicar com ele.
+Número de redefinições suaves emitidas pelo controlador. Uma redefinição suave não limpa completamente o estado e os dados atuais do dispositivo. A semântica exata depende do dispositivo e dos protocolos e mecanismos usados para se comunicar com ele.
 
-Essa propriedade é herdada do [**CIM \_ ControlledBy**](cim-controlledby.md).
+Essa propriedade é herdada de [**CIM \_ ControlledBy.**](cim-controlledby.md)
 
 </dd> <dt>
 
 **NumberOfStopBits**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("bits")
+Qualificadores: [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("bits")
 </dt> </dl>
 
-Número de bits de parada a serem transmitidos.
+Número de bits de parada a transmitir.
 
 </dd> <dt>
 
 **ParityInfo**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -317,14 +317,14 @@ Informações sobre a configuração de paridade para dados transmitidos.
 
 <span id="Even"></span><span id="even"></span><span id="EVEN"></span>
 
-**Par** (2)
+**Even** (2)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Odd"></span><span id="odd"></span><span id="ODD"></span>
 
-**Odd** (3)
+**Ímpar** (3)
 
 
 </dt> <dd></dd> </dl>
@@ -333,11 +333,11 @@ Informações sobre a configuração de paridade para dados transmitidos.
 
 ## <a name="remarks"></a>Comentários
 
-A classe **CIM \_ SerialInterface** é derivada de [**\_ ControlledBy CIM**](cim-controlledby.md).
+A **classe Cim \_ SerialInterface** é derivada de [**CIM \_ ControlledBy.**](cim-controlledby.md)
 
 O WMI não implementa essa classe.
 
-Esta documentação é derivada das descrições da classe CIM publicadas pela DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, obedecer aos padrões de documentação do Microsoft SDK ou fornecer mais informações.
+Esta documentação é derivada das descrições da classe CIM publicadas pelo DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, estar em conformidade com os padrões de documentação do SDK da Microsoft ou fornecer mais informações.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -347,8 +347,8 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -357,7 +357,7 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 
 <dl> <dt>
 
-[**\_CONTROLLEDBY CIM**](cim-controlledby.md)
+[**CIM \_ ControlledBy**](cim-controlledby.md)
 </dt> </dl>
 
  

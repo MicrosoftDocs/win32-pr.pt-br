@@ -4,19 +4,19 @@ ms.assetid: fa13d13a-f2e2-4732-8bf7-cb0a0f1d4ed7
 title: Esquema de contadores de desempenho
 ms.topic: article
 ms.date: 08/17/2020
-ms.openlocfilehash: 5c41e9d54e259d6e53453a55cc97f7734ce793fe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7e31aa6e42d185f95b142fac864dbaf725bbba456161c3484aba157c8afd6557
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103662183"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119962366"
 ---
 # <a name="performance-counters-schema"></a>Esquema de contadores de desempenho
 
-Os provedores de dados de desempenho v2 têm suporte no Windows Vista ou posterior. Eles usam um. Arquivo de MAN (manifesto de instrumentação XML) para definir o provedor, os conjuntos de linhas e os contadores.
+os provedores de dados de desempenho V2 têm suporte no Windows Vista ou posterior. Eles usam um. Arquivo de MAN (manifesto de instrumentação XML) para definir o provedor, os conjuntos de linhas e os contadores.
 
 > [!NOTE]
-> Os manifestos de instrumentação podem conter informações sobre provedores do ETW (rastreamento de eventos para Windows) e provedores de contador de desempenho. Para obter detalhes sobre os manifestos de instrumentação, consulte [esquema EventManifest](/windows/desktop/WES/eventmanifestschema-schema) e [gravando um manifesto de instrumentação](/windows/desktop/WES/writing-an-instrumentation-manifest)).
+> os manifestos de instrumentação podem conter informações sobre provedores ETW (rastreamento de eventos para Windows) e provedores de contador de desempenho. Para obter detalhes sobre os manifestos de instrumentação, consulte [esquema EventManifest](/windows/desktop/WES/eventmanifestschema-schema) e [gravando um manifesto de instrumentação](/windows/desktop/WES/writing-an-instrumentation-manifest)).
 
 Esta seção descreve os seguintes elementos e tipos que você usa na `counters` seção de um manifesto de instrumentação:
 
@@ -36,7 +36,7 @@ Se você precisar atualizar um CounterSet, não se esqueça de desinstalar o Cou
 
 ## <a name="schema"></a>Esquema
 
-Este é o esquema de contadores de desempenho que você pode usar para validar a `counters` seção do seu manifesto. Esse esquema é encontrado na SDK do Windows como `counterman.xsd` . Para obter detalhes sobre o esquema que você usa para validar a seção instrumentação do manifesto, consulte [EventManifest Schema](/windows/desktop/WES/eventmanifestschema-schema).
+Este é o esquema de contadores de desempenho que você pode usar para validar a `counters` seção do seu manifesto. esse esquema é encontrado na SDK do Windows como `counterman.xsd` . Para obter detalhes sobre o esquema que você usa para validar a seção instrumentação do manifesto, consulte [EventManifest Schema](/windows/desktop/WES/eventmanifestschema-schema).
 
 ``` syntax
 <xs:schema

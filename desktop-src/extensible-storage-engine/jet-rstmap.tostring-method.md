@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3e575907521ba4939ccf25334fc0c60b7eb15d1c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 14aaa40c1e97eb9b17981990eff99061237a10d9296a4822d418bdb053ca5be5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105798215"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119945376"
 ---
 # <a name="jet_rstmaptostring-method"></a>JET_RSTMAP. Método ToString
 
-Retorna uma [cadeia de caracteres](/dotnet/api/system.string) que representa a [JET_RSTMAP](./jet-rstmap-class.md)atual.
+Retorna uma [Cadeia de](/dotnet/api/system.string) caracteres que representa o [valor JET_RSTMAP](./jet-rstmap-class.md).
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -54,17 +54,17 @@ returnValue = instance.ToString()
 public override string ToString()
 ```
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
-Tipo: [System. String](/dotnet/api/system.string)  
-Uma [cadeia de caracteres](/dotnet/api/system.string) que representa a [JET_RSTMAP](./jet-rstmap-class.md)atual.  
+Tipo: [System.String](/dotnet/api/system.string)  
+Uma [Cadeia de](/dotnet/api/system.string) caracteres que representa o valor [JET_RSTMAP](./jet-rstmap-class.md).  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Classe JET_RSTMAP](./jet-rstmap-class.md)
+[JET_RSTMAP classe](./jet-rstmap-class.md)
 
-[Membros do JET_RSTMAP](./jet-rstmap-members.md)
+[JET_RSTMAP membros](./jet-rstmap-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

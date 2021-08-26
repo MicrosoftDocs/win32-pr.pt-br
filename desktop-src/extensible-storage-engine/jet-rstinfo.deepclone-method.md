@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9fa79884324fdfa06629140e71104b06477a078a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2c48ae33a1c12d5793b9c66b3fd9010f2d052ca4d8e25b14069b8cca36957c26
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105748950"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119945636"
 ---
 # <a name="jet_rstinfodeepclone-method"></a>JET_RSTINFO. Método DeepClone
 
@@ -54,7 +54,7 @@ returnValue = instance.DeepClone()
 public JET_RSTINFO DeepClone()
 ```
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
 Tipo: [Microsoft.ISAM.ESENT.Interop.JET_RSTINFO](./jet-rstinfo-class.md)  
 Uma cópia profunda do objeto.  

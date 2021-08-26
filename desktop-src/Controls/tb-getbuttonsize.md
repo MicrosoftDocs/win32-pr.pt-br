@@ -1,9 +1,9 @@
 ---
-title: Mensagem de TB_GETBUTTONSIZE (commctrl. h)
-description: Recupera a largura e a altura atuais dos botões da barra de ferramentas, em pixels.
+title: TB_GETBUTTONSIZE mensagem (Commctrl.h)
+description: Recupera a largura atual e a altura dos botões da barra de ferramentas, em pixels.
 ms.assetid: c1b72494-670b-4cf8-a78f-c67b6eee0677
 keywords:
-- Controles de TB_GETBUTTONSIZE de mensagens do Windows
+- TB_GETBUTTONSIZE controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c6a414f5b338353d7d8ce22a081e9b711a2b56a9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ddfdb632c81424cc2bcf4eef57b616d4dacc3510e1f55d003d9405ec72369ed8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824845"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119918996"
 ---
-# <a name="tb_getbuttonsize-message"></a>A \_ mensagem de TB GETbuttons
+# <a name="tb_getbuttonsize-message"></a>Mensagem \_ GETBUTTONSIZE de TB
 
-Recupera a largura e a altura atuais dos botões da barra de ferramentas, em pixels.
+Recupera a largura atual e a altura dos botões da barra de ferramentas, em pixels.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -35,9 +35,9 @@ Recupera a largura e a altura atuais dos botões da barra de ferramentas, em pix
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor **DWORD** que contém os valores de largura e altura na palavra inferior e na palavra alta, respectivamente.
+Retorna um **valor DWORD** que contém os valores de largura e altura nas palavras baixa e alta, respectivamente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,9 +45,9 @@ Retorna um valor **DWORD** que contém os valores de largura e altura na palavra
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

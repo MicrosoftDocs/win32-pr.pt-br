@@ -49,9 +49,9 @@ Esse método é implementado e acessado por meio do método [**shell. FindComput
 
 ## <a name="examples"></a>Exemplos
 
-Os exemplos a seguir mostram o uso de **FindComputer** em JScript, VBScript e Visual Basic.
+os exemplos a seguir mostram o uso de **FindComputer** em JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -109,9 +109,9 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos de área de trabalho do Windows XP\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
-| parâmetro<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
+| Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
 | INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
 | DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4,71 ou posterior)</dt> </dl> |
 

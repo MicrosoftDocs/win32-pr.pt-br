@@ -1,19 +1,19 @@
 ---
-description: O exemplo a seguir contém uma \# solicitação de renovação PKCS 7. O exemplo foi gerado usando as ferramentas Certreq.exe e Certutil.exe. O arquivo. inf usado como entrada para Certreq.exe contém a configuração a seguir.
+description: O exemplo a seguir contém uma solicitação de renovação PKCS \# 7. O exemplo foi gerado usando as ferramentas Certreq.exe e Certutil.exe dados. O arquivo .inf usado como entrada para Certreq.exe contém a configuração a seguir.
 ms.assetid: 3752600c-40a9-401b-9949-8536203d7f14
-title: '\#Solicitação de renovação PKCS 7'
+title: Solicitação de renovação do PKCS \# 7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ec3e8985ff77876295aa73b030e1c17d3e27c3f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 44473282c3b0efb283c4ad3e8b5cad17bed5b143449781f4708114a868546c60
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105756161"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119880696"
 ---
-# <a name="pkcs-7-renewal-request"></a>\#Solicitação de renovação PKCS 7
+# <a name="pkcs-7-renewal-request"></a>Solicitação de renovação do PKCS \# 7
 
-O exemplo a seguir contém uma \# solicitação de renovação PKCS 7. O exemplo foi gerado usando as ferramentas Certreq.exe e Certutil.exe. O arquivo. inf usado como entrada para Certreq.exe contém a configuração a seguir.
+O exemplo a seguir contém uma solicitação de renovação PKCS \# 7. O exemplo foi gerado usando as ferramentas Certreq.exe e Certutil.exe dados. O arquivo .inf usado como entrada para Certreq.exe contém a configuração a seguir.
 
 ``` syntax
 [NewRequest]
@@ -21,7 +21,7 @@ RequestType=pkcs7
 RenewalCert=248f7d3c00000000086e
 ```
 
-A configuração especifica o tipo de solicitação (PKCS \# 7) e o número de série do certificado no qual a solicitação se baseia. Isso gera a saída a seguir.
+A configuração especifica o tipo de solicitação (PKCS 7) e o número de série do certificado no \# qual a solicitação se baseia. Isso gera a saída a seguir.
 
 ``` syntax
 PKCS7 Message:
@@ -937,7 +937,7 @@ CertUtil: -dump command completed successfully.
 
 <dl> <dt>
 
-[Solicitações de amostra](sample-requests.md)
+[Solicitações de exemplo](sample-requests.md)
 </dt> </dl>
 
  

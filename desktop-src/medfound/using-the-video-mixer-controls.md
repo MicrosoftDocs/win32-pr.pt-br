@@ -1,19 +1,19 @@
 ---
-description: Usando os controles do mixer de vídeo
+description: usando os controles de Mixer de vídeo
 ms.assetid: 475996c6-a205-4133-8882-f55beaf9f8fd
-title: Usando os controles do mixer de vídeo
+title: usando os controles de Mixer de vídeo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a8a062c6f984e0eac0128bd67c72bf691c95af6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 72506a69cb1e3a8584a92cc7052541ffc210cd307073dece61f3a9d76a4c35d4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010799"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119887136"
 ---
-# <a name="using-the-video-mixer-controls"></a>Usando os controles do mixer de vídeo
+# <a name="using-the-video-mixer-controls"></a>usando os controles de Mixer de vídeo
 
-O mixer EVR fornece várias interfaces que um aplicativo pode usar para controlar como o mixer processa o vídeo. Essas interfaces podem ser usadas tanto no DirectShow quanto no Media Foundation.
+O mixer EVR fornece várias interfaces que um aplicativo pode usar para controlar como o mixer processa o vídeo. essas interfaces podem ser usadas em qualquer DirectShow ou Media Foundation.
 
 
 
@@ -27,13 +27,13 @@ O mixer EVR fornece várias interfaces que um aplicativo pode usar para controla
 
  
 
-A maneira correta de obter ponteiros para essas interfaces depende se você está usando a versão do DirectShow do EVR ou a versão Media Foundation. Para o Media Foundation EVR, também depende se você está usando o EVR diretamente ou usando-o por meio da [sessão de mídia](media-session.md). (Normalmente, um aplicativo usará o EVR por meio da sessão de mídia, não diretamente).
+a maneira correta de obter ponteiros para essas interfaces depende se você está usando a versão DirectShow do EVR ou a versão Media Foundation. Para o Media Foundation EVR, também depende se você está usando o EVR diretamente ou usando-o por meio da [sessão de mídia](media-session.md). (Normalmente, um aplicativo usará o EVR por meio da sessão de mídia, não diretamente).
 
 Para obter um ponteiro para qualquer uma dessas interfaces, faça o seguinte:
 
 1.  Obtenha um ponteiro para a interface [**IMFGetService**](/windows/desktop/api/mfidl/nn-mfidl-imfgetservice) no EVR.
 
-    -   Se você estiver usando o filtro EVR do DirectShow, chame **QueryInterface** no filtro.
+    -   se você estiver usando o filtro DirectShow EVR, chame **QueryInterface** no filtro.
 
     -   Se você estiver usando o coletor de mídia do EVR diretamente, chame **QueryInterface** no coletor de mídia.
 
@@ -83,7 +83,7 @@ A maioria dos campos na estrutura [**DXVA2 \_ VideoProcessorCaps**](/windows/des
 
 -   **DeinterlaceTechnology**. Este campo fornece alguma indicação de qual nível de qualidade de desentrelaçamento você pode esperar se o vídeo de origem estiver entrelaçado.
 
--   **ProcAmpControlCaps**. Este campo especifica quais controles de ajuste de cor estão disponíveis. Para obter uma lista de possíveis ajustes de cor, consulte [configurações do Procamp](procamp-settings.md). Se o driver não puder executar o ajuste de cor, esse campo será zero.
+-   **ProcAmpControlCaps**. Este campo especifica quais controles de ajuste de cor estão disponíveis. para obter uma lista de possíveis ajustes de cor, consulte [procamp Configurações](procamp-settings.md). Se o driver não puder executar o ajuste de cor, esse campo será zero.
 
 -   **VideoProcessorOperations**. Este campo contém sinalizadores que descrevem diversos recursos de processamento de vídeo. Dois sinalizadores de importância específica são o \_ sinalizador de \_ subfluxos do DXVA2 VideoProcess e \_ o \_ sinalizador de subfluxos do DXVA2 VideoProcess. Pelo menos um desses sinalizadores deve estar presente para que o EVR misture subfluxos para o fluxo de vídeo de referência. Se nenhum sinalizador estiver presente, o EVR será limitado a um fluxo de vídeo.
 
@@ -103,17 +103,17 @@ Para usar esses recursos, execute as seguintes etapas:
 
 3.  Para cada ajuste de cor com suporte no driver, chame [**IMFVideoProcessor:: GetProcAmpRange**](/windows/desktop/api/evr9/nf-evr9-imfvideoprocessor-getprocamprange) para localizar o intervalo de valor possível para essa configuração. Esse método também retorna o valor padrão para a configuração. Chame [**IMFVideoProcessor:: GetProcAmpValues**](/windows/desktop/api/evr9/nf-evr9-imfvideoprocessor-getprocampvalues) para localizar o valor atual das configurações. Os valores não têm unidades especificadas. Cabe ao driver definir o intervalo de valores.
 
-4.  Chame [**IMFVideoProcessor:: Setfiltervalue**](/windows/desktop/api/evr9/nf-evr9-imfvideoprocessor-setfilteringvalue) para definir um valor de ajuste de cor.
+4.  Chame [**IMFVideoProcessor::SetFilteringValue**](/windows/desktop/api/evr9/nf-evr9-imfvideoprocessor-setfilteringvalue) para definir um valor de ajuste de cor.
 
-5.  Se o driver oferecer suporte à filtragem de imagem, cada tipo de filtro (ruído e detalhes) dará suporte a três configurações — nível, raio e limite — em croma e Luma. (Consulte [configurações de filtro de imagem de DXVA](dxva-image-filter-settings.md).) Para cada configuração, chame [**IMFVideoProcessor:: GetFilteringRange**](/windows/desktop/api/evr9/nf-evr9-imfvideoprocessor-getfilteringrange) para obter o intervalo de valores possíveis e chame [**IMFVideoProcessor:: getfiltervalue**](/windows/desktop/api/evr9/nf-evr9-imfvideoprocessor-getfilteringvalue) para obter o valor atual.
+5.  Se o driver dá suporte à filtragem de imagem, cada tipo de filtro (ruído e detalhes) dá suporte a três configurações — nível, raio e limite — em chroma e luma. (Consulte [Filtro de imagem DXVA Configurações](dxva-image-filter-settings.md).) Para cada configuração, chame [**IMFVideoProcessor::GetFilteringRange**](/windows/desktop/api/evr9/nf-evr9-imfvideoprocessor-getfilteringrange) para obter o intervalo de valores possíveis e chame [**IMFVideoProcessor::GetFilteringValue**](/windows/desktop/api/evr9/nf-evr9-imfvideoprocessor-getfilteringvalue) para obter o valor atual.
 
-6.  Para alterar uma configuração de filtro de imagem, chame [**IMFVideoProcessor:: Setfiltervalue**](/windows/desktop/api/evr9/nf-evr9-imfvideoprocessor-setfilteringvalue).
+6.  Para alterar uma configuração de filtro de imagem, chame [**IMFVideoProcessor::SetFilteringValue**](/windows/desktop/api/evr9/nf-evr9-imfvideoprocessor-setfilteringvalue).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Processador de vídeo aprimorado](enhanced-video-renderer.md)
+[Renderização de vídeo aprimorada](enhanced-video-renderer.md)
 </dt> </dl>
 
  

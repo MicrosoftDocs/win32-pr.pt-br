@@ -4,12 +4,12 @@ ms.assetid: a4822b99-330a-4094-bad9-b9a5923e02a8
 title: Mensagem de WM_MDINEXT (WinUser. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 20e0af031c11ea37129e1405e31b07b18f023b7d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8aa2b88e5368db2a6b700e0b4d469d1ba680d3caa4d2c1e1c208c5143660396f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647076"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119931236"
 ---
 # <a name="wm_mdinext-message"></a>Mensagem do WM \_ MDINEXT
 
@@ -40,7 +40,7 @@ Se esse parâmetro for zero, o sistema ativará a próxima janela filho MDI e co
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **zero**
 
@@ -58,7 +58,7 @@ Se uma janela do cliente MDI receber qualquer mensagem que altere a ativação d
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 
