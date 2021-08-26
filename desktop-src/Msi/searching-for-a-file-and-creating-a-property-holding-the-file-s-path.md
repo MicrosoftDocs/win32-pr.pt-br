@@ -1,25 +1,25 @@
 ---
-description: Durante uma instalação de Windows Installer, o instalador pode pesquisar um arquivo e criar uma propriedade que contém o caminho do arquivo.
+description: Durante uma Windows do instalador, o instalador pode pesquisar um arquivo e criar uma propriedade que contém o caminho do arquivo.
 ms.assetid: 6587b349-852d-4d4e-a8d4-76dfb0ef0f0b
-title: Procurando um arquivo e criando uma propriedade que contém o caminho do arquivo
+title: Pesquisando um arquivo e criando uma propriedade que mantém o caminho do arquivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ed742ee874c2e4b76137e9f17e90fbf54e9729f1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 57d1315616c6d2ea24052ddad85c005d53716f8b130f4aa2d23d69754c946416
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103828862"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120041136"
 ---
-# <a name="searching-for-a-file-and-creating-a-property-holding-the-files-path"></a>Procurando um arquivo e criando uma propriedade que contém o caminho do arquivo
+# <a name="searching-for-a-file-and-creating-a-property-holding-the-files-path"></a>Pesquisando um arquivo e criando uma propriedade que mantém o caminho do arquivo
 
-**Para pesquisar um arquivo e criar uma propriedade que contém o caminho do arquivo**
+**Para pesquisar um arquivo e criar uma propriedade que mantenha o caminho desse arquivo**
 
-1.  Primeiro, faça uma pesquisa para o arquivo, listando a assinatura e o nome do arquivo na [tabela de assinatura](signature-table.md).
+1.  Primeiro, pesquise o arquivo listando a assinatura e o nome do arquivo na [Tabela de Assinatura](signature-table.md).
 
-    Os campos restantes desse registro podem ser deixados em branco para especificar uma pesquisa de qualquer versão do MyApp.exe.
+    Os campos restantes desse registro podem ser deixados vazios para especificar uma pesquisa para qualquer versão do MyApp.exe.
 
-    [Tabela de assinatura](signature-table.md) (parcial)
+    [Tabela de Assinatura](signature-table.md) (parcial)
 
     
 
@@ -31,9 +31,9 @@ ms.locfileid: "103828862"
 
      
 
-2.  Em seguida, especifique o caminho do arquivo que está sendo pesquisado na [tabela DrLocator](drlocator-table.md).
+2.  Em seguida, especifique o caminho do arquivo que está sendo pesquisado na [Tabela DrLocator](drlocator-table.md).
 
-    Como AppFolder não está listado na [tabela de assinatura](signature-table.md), o instalador determina que AppFolder é uma pasta em vez de um arquivo.
+    Como AppFolder não está listado na Tabela [de Assinatura,](signature-table.md)o Instalador determina que AppFolder é uma pasta em vez de um arquivo.
 
     [Tabela DrLocator](drlocator-table.md)
 
@@ -48,9 +48,9 @@ ms.locfileid: "103828862"
 
      
 
-3.  Por fim, preencha a [tabela AppSearch](appsearch-table.md) para que a [ação AppSearch](appsearch-action.md) retorne o caminho de AppFolder.
+3.  Por fim, preencha a [Tabela appSearch](appsearch-table.md) para que [a Ação do AppSearch](appsearch-action.md) retorne o caminho de AppFolder.
 
-    Depois que o instalador executar a ação AppSearch, o valor de MyFolder será o caminho completo de AppFolder.
+    Depois que o Instalador executar a ação AppSearch, o valor de MYFOLDER será o caminho completo de AppFolder.
 
     [Tabela AppSearch](appsearch-table.md) (parcial)
 
@@ -58,7 +58,7 @@ ms.locfileid: "103828862"
 
     | Propriedade            | Assinatura            |
     |---------------------|----------------------|
-    | MYFOLDER<br/> | AppFolder<br/> |
+    | Myfolder<br/> | AppFolder<br/> |
 
     
 

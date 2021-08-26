@@ -1,25 +1,25 @@
 ---
 description: O aplicativo de exemplo descrito neste tópico demonstra como determinadas funções NLS podem ser usadas para converter IDNs (nomes de domínio internacionalizados).
 ms.assetid: 9739efa5-8b88-4f9c-983d-806968caf9d5
-title: 'NLS: exemplo de conversão de nome de domínio internacionalizado'
+title: 'NLS: Exemplo de conversão de nome de domínio internacionalizado'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 90173b1ea6bd35b89d2cd6d6b723e419c97e7a77
-ms.sourcegitcommit: 9c8ddec1e955f181beecad0478c1fb79013b5e9d
+ms.openlocfilehash: 905c8eb11d4de1a5118a873df845feae2687d1ab44de2129f8be30a0c6e92217
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "105751463"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120040886"
 ---
-# <a name="nls-internationalized-domain-name-conversion-sample"></a>NLS: exemplo de conversão de nome de domínio internacionalizado
+# <a name="nls-internationalized-domain-name-conversion-sample"></a>NLS: Exemplo de conversão de nome de domínio internacionalizado
 
-O aplicativo de exemplo descrito neste tópico demonstra como determinadas funções NLS podem ser usadas para converter [IDNs (nomes de domínio internacionalizados)](handling-internationalized-domain-names--idns.md). Este aplicativo demonstra as seguintes funções de API NLS:
+O aplicativo de exemplo descrito neste tópico demonstra como determinadas funções NLS podem ser usadas para converter [IDNs (nomes](handling-internationalized-domain-names--idns.md)de domínio internacionalizados). Este aplicativo demonstra as seguintes funções de API NLS:
 
 -   [**IdnToAscii**](/windows/desktop/api/Winnls/nf-winnls-idntoascii)
 -   [**IdnToNameprepUnicode**](/windows/desktop/api/Winnls/nf-winnls-idntonameprepunicode)
 -   [**IdnToUnicode**](/windows/desktop/api/Winnls/nf-winnls-idntounicode)
 
-Na saída de exemplo, observe que, "ExAmPlE.cOm" é convertido em "Русский. ExAmPlE. com" para o exemplo cirílico.
+Na saída de exemplo, observe que ,"ExAmPlE.cOm" é convertido em "ºº acólica.example.com" para o exemplo cirílico.
 
 
 ```C++

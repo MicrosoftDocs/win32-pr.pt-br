@@ -1,7 +1,7 @@
 ---
-description: A estrutura de acompanhamento de PF \_ define os protocolos que podem preceder ou seguir um protocolo.
+description: A estrutura PF \_ FOLLOWSET define os protocolos que podem preceder ou seguir um protocolo.
 ms.assetid: ef444af9-edae-4547-9548-8a682c279f08
-title: Estrutura de PF_FOLLOWSET (Netmon. h)
+title: PF_FOLLOWSET (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: f5c286d3b137df24f7da7f0fc5ae269a7a3d946d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d404e602e78452a38343a6e62fce8c5b16941270eaa2825de8339f583c064a8b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105757235"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120036826"
 ---
-# <a name="pf_followset-structure"></a>Estrutura de acompanhamento de PF \_
+# <a name="pf_followset-structure"></a>Estrutura \_ FOLLOWSET do PF
 
-A estrutura de **\_ acompanhamento de PF** define os protocolos que podem preceder ou seguir um protocolo.
+A **estrutura PF \_ FOLLOWSET** define os protocolos que podem preceder ou seguir um protocolo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -50,15 +50,15 @@ Número de protocolos na lista.
 **Entrada**
 </dt> <dd>
 
-Matriz de [estruturas \_ FOLLOWENTRY de PF](pf-followentry.md) que descrevem cada protocolo.
+Matriz de [estruturas \_ FOLLOWENTRY do PF](pf-followentry.md) que descrevem cada protocolo.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-A estrutura de [ \_ PARSERINFO de PF](pf-parserinfo.md) usa a estrutura de **\_ acompanhamento de PF** para listar os protocolos que podem preceder ou seguir o protocolo que o analisador detecta.
+A [estrutura \_ PARSERINFO](pf-parserinfo.md) do PF usa a estrutura **PF \_ FOLLOWSET** para listar os protocolos que podem preceder ou seguir o protocolo detectado pelo analisador.
 
-Monitor de Rede usa as informações na estrutura do conjunto de **PP-PF \_** para atualizar os seguintes conjuntos de analisadores específicos. A estrutura de **\_ acompanhamento de PF** deve ser alocada usando **HeapAlloc**.
+Monitor de Rede usa as informações na estrutura **\_ FOLLOWSET do PF** para atualizar os conjuntos de analisadores específicos a seguir. A **estrutura PF \_ FOLLOWSET** deve ser alocada usando **HeapAlloc.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,7 +68,7 @@ Monitor de Rede usa as informações na estrutura do conjunto de **PP-PF \_** pa
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                          |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                |
-| Cabeçalho<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 
@@ -76,10 +76,10 @@ Monitor de Rede usa as informações na estrutura do conjunto de **PP-PF \_** pa
 
 <dl> <dt>
 
-[FOLLOWENTRY de PF \_](pf-followentry.md)
+[PF \_ FOLLOWENTRY](pf-followentry.md)
 </dt> <dt>
 
-[PARSERINFO de PF \_](pf-parserinfo.md)
+[PF \_ PARSERINFO](pf-parserinfo.md)
 </dt> </dl>
 
  

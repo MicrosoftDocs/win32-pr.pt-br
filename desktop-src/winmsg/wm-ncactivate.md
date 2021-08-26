@@ -1,21 +1,21 @@
 ---
-description: Enviado a uma janela quando sua área não cliente precisa ser alterada para indicar um estado ativo ou inativo.
+description: Enviado para uma janela quando sua área não cliente precisa ser alterada para indicar um estado ativo ou inativo.
 ms.assetid: d25732b9-b9ab-4754-a4cf-002d32e3945e
-title: Mensagem de WM_NCACTIVATE (WinUser. h)
+title: WM_NCACTIVATE mensagem (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a23cc5e0495d6679efea805eab80290b209906d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 095f0cc7f555b4daf80a67a2394e29286f32a49dcba687780e8747f5d1b193fb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105789914"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120055996"
 ---
-# <a name="wm_ncactivate-message"></a>Mensagem do WM \_ NCACTIVATE
+# <a name="wm_ncactivate-message"></a>Mensagem \_ WM NCACTIVATE
 
-Enviado a uma janela quando sua área não cliente precisa ser alterada para indicar um estado ativo ou inativo.
+Enviado para uma janela quando sua área não cliente precisa ser alterada para indicar um estado ativo ou inativo.
 
-Uma janela recebe essa mensagem por meio de sua função [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Uma janela recebe essa mensagem por meio de [**sua função WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -31,30 +31,30 @@ Uma janela recebe essa mensagem por meio de sua função [**WindowProc**](/previ
 *wParam* 
 </dt> <dd>
 
-Indica quando uma barra de título ou um ícone precisa ser alterado para indicar um estado ativo ou inativo. Se uma barra de título ou um ícone ativo for ser desenhado, o parâmetro *wParam* será **true**. Se uma barra de título ou um ícone inativo for ser desenhado, *wParam* será **false**.
+Indica quando uma barra de título ou ícone precisa ser alterado para indicar um estado ativo ou inativo. Se uma barra de título ou ícone ativo for desenhado, o *parâmetro wParam* será **TRUE.** Se uma barra de título ou ícone inativo for desenhado, *wParam* será **FALSE.**
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Quando um [estilo visual](../controls/themes-overview.md) está ativo para esta janela, esse parâmetro não é usado.
+Quando um [estilo visual](../controls/themes-overview.md) está ativo para essa janela, esse parâmetro não é usado.
 
-Quando um estilo visual não está ativo para esta janela, esse parâmetro é um identificador para uma região de atualização opcional para a área não cliente da janela. Se esse parâmetro for definido como-1, [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) não repintará a área não cliente para refletir a alteração de estado.
+Quando um estilo visual não está ativo para essa janela, esse parâmetro é um handle para uma região de atualização opcional para a área não dependente da janela. Se esse parâmetro for definido como -1, [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) não reintigue a área não dependente para refletir a alteração de estado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **LRESULT**
 
-Quando o parâmetro *wParam* é **false**, um aplicativo deve retornar **true** para indicar que o sistema deve continuar com o processamento padrão ou deve retornar **false** para impedir a alteração. Quando *wParam* é **true**, o valor de retorno é ignorado.
+Quando o *parâmetro wParam* é **FALSE**, um aplicativo deve retornar **TRUE** para indicar que o sistema deve continuar com o processamento padrão ou deve retornar **FALSE** para evitar a alteração. Quando *wParam* é **TRUE,** o valor de retorno é ignorado.
 
 ## <a name="remarks"></a>Comentários
 
-O processamento de mensagens relacionadas à área não cliente de uma janela padrão não é recomendado, pois o aplicativo deve ser capaz de desenhar todas as partes necessárias da área não cliente para a janela. Se um aplicativo processar essa mensagem, ele deverá retornar **true** para instruir o sistema a concluir a alteração da janela ativa. Se a janela for minimizada quando essa mensagem for recebida, o aplicativo deverá passar a mensagem para a função [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) .
+O processamento de mensagens relacionadas à área não dependente de uma janela padrão não é recomendado, pois o aplicativo deve ser capaz de desenhar todas as partes necessárias da área não dependente para a janela. Se um aplicativo processar essa mensagem, ele deverá retornar **TRUE** para direcionar o sistema para concluir a alteração da janela ativa. Se a janela for minimizada quando essa mensagem for recebida, o aplicativo deverá passar a mensagem para a [**função DefWindowProc.**](/windows/desktop/api/winuser/nf-winuser-defwindowproca)
 
-A função [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) desenha a barra de título ou o título do ícone em suas cores ativas quando o parâmetro *wParam* é **true** e em suas cores inativas quando *wParam* é **false**.
+A [**função DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) desenha a barra de título ou o título do ícone em suas cores ativas quando o parâmetro *wParam* é **TRUE** e em suas cores inativas quando *wParam* é **FALSE.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,7 +64,7 @@ A função [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindow
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -75,10 +75,10 @@ A função [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindow
 **Referência**
 </dt> <dt>
 
-[**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca)
+[**Defwindowproc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca)
 </dt> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
 [Windows](windows.md)

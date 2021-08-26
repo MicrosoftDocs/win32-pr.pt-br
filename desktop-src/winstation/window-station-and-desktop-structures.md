@@ -1,22 +1,22 @@
 ---
-title: Estruturas de área de trabalho e estação de janela
+title: Estação de janela e estruturas da área de trabalho
 description: A estrutura a seguir é usada com estações de janela e áreas de trabalho
 ms.assetid: 12ab8a6e-07c9-43f4-96ec-115480fb5654
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1abffed5bc51cdec73063d73b523ea79c8b2a216
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 615029a5ea744c08e567c54080b0376dcb0df4509ba343b35d31a6b7a739bce9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641396"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120110666"
 ---
-# <a name="window-station-and-desktop-structures"></a>Estruturas de área de trabalho e estação de janela
+# <a name="window-station-and-desktop-structures"></a>Estação de janela e estruturas da área de trabalho
 
-A seguinte estrutura é usada com estações de janela e áreas de trabalho:
+A estrutura a seguir é usada com estações de janela e áreas de trabalho:
 
 -   [**USEROBJECTFLAGS**](/windows/win32/api/winuser/ns-winuser-userobjectflags)
 
- 
+ 
 
- 
+ 

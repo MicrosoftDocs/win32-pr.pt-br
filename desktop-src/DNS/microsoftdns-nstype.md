@@ -1,10 +1,10 @@
 ---
-title: Classe MicrosoftDNS_NSType
-description: A subclasse de MicrosoftDNS \_ ResourceRecord que representa um registro de servidor de nomes (ns).
+title: MicrosoftDNS_NSType classe
+description: A subclasse do MicrosoftDNS \_ ResourceRecord que representa um registro NS (Servidor de Nomes).
 ms.assetid: 8d229acd-bc47-4a32-b6f1-b784a48dc91a
 keywords:
-- MicrosoftDNS_NSType de classe de DNS
-- MicrosoftDNS_NSType de classe de DNS, descrita
+- dns MicrosoftDNS_NSType classe
+- MicrosoftDNS_NSType classe DNS , descrita
 topic_type:
 - apiref
 api_name:
@@ -18,16 +18,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 07155c36089e60b12aeea214b19cb8aca146005a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 85142770587813d4d8533a22817ad3dc1980be7e30d1894668573cc24eeabdf7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103919222"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120104026"
 ---
-# <a name="microsoftdns_nstype-class"></a>\_Classe MicrosoftDNS NSType
+# <a name="microsoftdns_nstype-class"></a>Classe \_ NSType MicrosoftDNS
 
-A subclasse de [**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md) que representa um registro de servidor de nomes (ns).
+A subclasse [**do MicrosoftDNS \_ ResourceRecord que**](microsoftdns-resourcerecord.md) representa um registro NS (Servidor de Nomes).
 
 A sintaxe a seguir é simplificada do código MOF.
 
@@ -42,21 +42,21 @@ class MicrosoftDNS_NSType : MicrosoftDNS_ResourceRecord
 
 ## <a name="members"></a>Membros
 
-A classe **MicrosoftDNS \_ NSType** tem estes tipos de membros:
+A **classe \_ NSType MicrosoftDNS** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-A classe **MicrosoftDNS \_ NSType** tem esses métodos.
+A **classe \_ NSType MicrosoftDNS** tem esses métodos.
 
 
 
 | Método                             | Descrição                                                                                                                                                                                                                                                                                                                                                      |
 |:-----------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **CreateInstanceFromPropertyData** | Cria uma instância de um registro de recurso do DNS NS com base nos dados nos parâmetros de entrada do método: o nome do servidor DNS do registro, o nome do contêiner, o nome do proprietário, a classe (padrão = IN), o valor de vida útil e o host com autoridade para o domínio. Ele retorna uma referência ao novo objeto como um parâmetro de saída. <br/> Qualificadores: implementados, estáticos<br/> |
-| **Modificar**                         | Atualiza o TTL e o host NS para os valores especificados como os parâmetros de entrada deste método. Se um novo valor para um parâmetro não for especificado, o valor atual do parâmetro não será alterado. O método retorna uma referência ao objeto modificado como um parâmetro de saída. <br/> Qualificadores: implementados<br/>                               |
+| **CreateInstanceFromPropertyData** | Instalita um Registro de Recurso dns NS com base nos dados nos parâmetros de entrada do método: o Nome do Servidor DNS do registro, o Nome do Contêiner, o Nome do Proprietário, a classe (padrão = IN), o valor de vida real e o host com autoridade para o domínio. Ele retorna uma referência ao novo objeto como um parâmetro de saída. <br/> Qualificadores: implementados, estáticos<br/> |
+| **Modificar**                         | Atualiza o Host TTL e NS para os valores especificados como os parâmetros de entrada desse método. Se um novo valor para um parâmetro não for especificado, o valor atual do parâmetro não será alterado. O método retorna uma referência ao objeto modificado como um parâmetro de saída. <br/> Qualificadores: implementados<br/>                               |
 
 
 
@@ -64,7 +64,7 @@ A classe **MicrosoftDNS \_ NSType** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-A classe **MicrosoftDNS \_ NSType** tem essas propriedades.
+A **classe \_ NSType MicrosoftDNS** tem essas propriedades.
 
 <dl> <dt>
 
@@ -90,7 +90,7 @@ Host autoritativo para o domínio.
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                   |
 | Namespace<br/>                | \\MicrosoftDNS raiz<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -98,10 +98,10 @@ Host autoritativo para o domínio.
 
 <dl> <dt>
 
-[**Método CreateInstanceFromPropertyData da \_ classe NSType MicrosoftDNS**](microsoftdns-nstype-createinstancefrompropertydata.md)
+[**Método CreateInstanceFromPropertyData da classe NSType do MicrosoftDNS \_**](microsoftdns-nstype-createinstancefrompropertydata.md)
 </dt> <dt>
 
-[**Método Modify da classe MicrosoftDNS \_ NSType**](microsoftdns-nstype-modify.md)
+[**Método Modify da classe \_ NSType MicrosoftDNS**](microsoftdns-nstype-modify.md)
 </dt> <dt>
 
 [**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)

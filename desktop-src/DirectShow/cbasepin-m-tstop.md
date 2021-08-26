@@ -1,7 +1,7 @@
 ---
 description: Hora de parada do segmento.
 ms.assetid: 8724c608-28ab-4ae9-982c-6e53c03601a1
-title: 'Membro CBasePin:: m_tStop (Amfilter. h)'
+title: Membro CBasePin::m_tStop (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8a24bbae4ae302c829da4f1138adc97623664c2b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5bb974e64ae8d12707367f32fc9d70c48d1c995baffe56322c1362e08ae8629b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105778633"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120056286"
 ---
-# <a name="cbasepinm_tstop-member"></a>Membro de CBasePin:: m \_ tStop
+# <a name="cbasepinm_tstop-member"></a>Membro CBasePin::m \_ tStop
 
 Hora de parada do segmento.
 
@@ -42,8 +42,8 @@ CRefTime m_tStop;
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amfilter.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

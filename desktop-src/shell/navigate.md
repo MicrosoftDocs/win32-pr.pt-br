@@ -4,32 +4,32 @@ ms.assetid: bd9f903d-bea6-494f-af81-d90457dc2647
 title: Navegando no namespace
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d24993369222fb32f9de6c79a0c998b1d7be9f2e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e2778fc21df12e9228f9335a52c04556e97563cba5f8a4cb6b82eb779944c451
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010606"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120111476"
 ---
 # <a name="navigating-the-namespace"></a>Navegando no namespace
 
-Agora você tem todos os elementos essenciais necessários para navegar em qualquer lugar no namespace. A maneira mais simples de começar é fazer com que seu aplicativo chame [**SHGetDesktopFolder**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetdesktopfolder) para recuperar a interface [**IShellFolder**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellfolder) da área de trabalho. Em seguida, para navegar para baixo pelo namespace, seu aplicativo pode seguir estas etapas:
+Agora você tem todos os elementos essenciais necessários para navegar em qualquer lugar no namespace. A maneira mais simples de começar é fazer com que seu aplicativo chame [**SHGetDesktopFolder**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetdesktopfolder) para recuperar a interface [**IShellFolder da**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellfolder) área de trabalho. Em seguida, para navegar para baixo pelo namespace, seu aplicativo pode seguir estas etapas:
 
-1.  Enumere o conteúdo da pasta.
-2.  Determine quais objetos são subpastas e selecione um.
-3.  Associe-se à subpasta para recuperar sua interface [**IShellFolder**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellfolder) .
+1.  Enumerar o conteúdo da pasta.
+2.  Determine quais objetos são subpastas e selecione uma.
+3.  A bind à subpasta para recuperar sua interface [**IShellFolder.**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellfolder)
 
 Repita essas etapas sempre que necessário para alcançar o destino.
 
 ## <a name="a-simple-example-of-namespace-navigation"></a>Um exemplo simples de navegação de namespace
 
-A parte de código de exemplo a seguir é um aplicativo de console simples que ilustra vários dos procedimentos discutidos nas seções anteriores. A verificação de erros foi omitida para fins de clareza. O aplicativo executa as seguintes tarefas:
+O código de exemplo a seguir é um aplicativo de console simples que ilustra vários procedimentos discutidos nas seções anteriores. A verificação de erro foi omitida para maior clareza. O aplicativo executa as seguintes tarefas:
 
-1.  Recupera a interface [**IShellFolder**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellfolder) da pasta arquivos de programas ([usando a interface IShellFolder](folder-info.md)).
-2.  Enumera o conteúdo da pasta ([enumerando o conteúdo de uma pasta](folder-info.md)).
-3.  Determina todos os nomes de exibição e os imprime ([determinando nomes de exibição e outras propriedades](folder-info.md)).
-4.  Procura uma subpasta ([obtendo um ponteiro para a interface IShellFolder de uma subpasta](folder-info.md)).
-5.  Associa-se à primeira subpasta encontrada ([obtendo um ponteiro para a interface IShellFolder de uma subpasta](folder-info.md)).
+1.  Recupera a interface [**IShellFolder**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellfolder) da pasta Arquivos de Programas ([usando a interface IShellFolder](folder-info.md)).
+2.  Enumera o conteúdo da pasta ([Enumerando o conteúdo de uma pasta](folder-info.md)).
+3.  Determina todos os nomes de exibição e os imprime ([Determinando nomes de exibição e outras propriedades](folder-info.md)).
+4.  Procura uma subpasta ([Obter um ponteiro para a interface IShellFolder de uma subpasta](folder-info.md)).
+5.  É vinculada à primeira subpasta que encontra ( Obter um ponteiro para[a interface IShellFolder](folder-info.md)de uma subpasta ).
 6.  Imprime os nomes de exibição dos objetos na subpasta.
 
 

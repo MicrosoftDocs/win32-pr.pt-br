@@ -1,19 +1,19 @@
 ---
-description: A tabela MsiSFCBypass contém uma lista de arquivos que devem ignorar a proteção de arquivos do Windows quando os arquivos são instalados no Microsoft Windows me.
+description: a tabela MsiSFCBypass contém uma lista de arquivos que devem ignorar Windows proteção de arquivo quando os arquivos são instalados no Microsoft Windows Me.
 ms.assetid: 86de0dc1-ed8f-410c-a411-6c44c8e5c9fd
 title: Tabela MsiSFCBypass
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 707294e9461aaf321add8a3959682a0db555cc2c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d233f09aa62b5f6d17112b1f5a98753e328f3a1746c452de5a5a1689a36f971f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297116"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120042666"
 ---
 # <a name="msisfcbypass-table"></a>Tabela MsiSFCBypass
 
-A tabela MsiSFCBypass contém uma lista de arquivos que devem ignorar a proteção de arquivos do Windows quando os arquivos são instalados no Microsoft Windows me.
+a tabela MsiSFCBypass contém uma lista de arquivos que devem ignorar Windows proteção de arquivo quando os arquivos são instalados no Microsoft Windows Me.
 
 A tabela MsiSFCBypass tem a seguinte coluna.
 
@@ -21,7 +21,7 @@ A tabela MsiSFCBypass tem a seguinte coluna.
 
 | Coluna | Tipo                         | Chave | Nullable |
 |--------|------------------------------|-----|----------|
-| Arquivo\_ | [Identificador](identifier.md) | S   | N        |
+| Arquivo\_ | [Identificador](identifier.md) | Y   | N        |
 
 
 
@@ -34,7 +34,7 @@ A tabela MsiSFCBypass tem a seguinte coluna.
 <span id="File_"></span><span id="file_"></span><span id="FILE_"></span>Grupo\_
 </dt> <dd>
 
-A chave estrangeira para a [tabela de arquivos](file-table.md) que especifica o arquivo que deve ignorar a proteção de arquivos do Windows quando o arquivo é instalado no Windows me.
+a chave estrangeira para a [tabela de arquivos](file-table.md) que especifica o arquivo que deve ignorar Windows proteção de arquivo quando o arquivo é instalado no Windows Me.
 
 </dd> </dl>
 

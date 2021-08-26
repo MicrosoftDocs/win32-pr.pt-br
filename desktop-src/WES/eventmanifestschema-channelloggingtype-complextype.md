@@ -1,9 +1,9 @@
 ---
 title: Tipo complexo ChannelLoggingType
-description: Define as propriedades do arquivo de log que faz o backup do canal, como sua capacidade e se ele é sequencial ou circular. | Tipo complexo ChannelLoggingType
+description: Define as propriedades do arquivo de log que faz o retorno do canal, como sua capacidade e se ele é sequencial ou circular. | Tipo complexo ChannelLoggingType
 ms.assetid: 58da75dd-d303-4a57-8c9b-5fde575c3cbb
 keywords:
-- Log de eventos do tipo complexo ChannelLoggingType
+- Tipo complexo ChannelLoggingType EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4cfaf6dfa225799befcd0c7fb068c0f779ea33eb
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: e696837b1132a0b82ad428e7404892ae73de88e4435325d988b7936b3a6ba534
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104091931"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120032276"
 ---
 # <a name="channelloggingtype-complex-type"></a>Tipo complexo ChannelLoggingType
 
-Define as propriedades do arquivo de log que faz o backup do canal, como sua capacidade e se ele é sequencial ou circular.
+Define as propriedades do arquivo de log que faz o retorno do canal, como sua capacidade e se ele é sequencial ou circular.
 
 ``` syntax
 <xs:complexType name="ChannelLoggingType">
@@ -63,19 +63,19 @@ Define as propriedades do arquivo de log que faz o backup do canal, como sua cap
 
 | Elemento                                                                         | Type                                                              | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |---------------------------------------------------------------------------------|-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Backup automático**](eventmanifestschema-autobackup-channelloggingtype-element.md) | booleano                                                           | Determina se um novo arquivo de log deve ser criado quando o arquivo de log atual atinge seu tamanho máximo. Defina como **true** para solicitar que o serviço crie um novo arquivo quando o arquivo de log atingir seu tamanho máximo; caso contrário, **false**. Você pode definir o [**backup**](eventmanifestschema-autobackup-channelloggingtype-element.md) único como **true** somente se a [**retenção**](eventmanifestschema-retention-channelloggingtype-element.md) estiver definida como **true**. O padrão é **false**.<br/> Não há nenhum limite para o número de arquivos de backup que o serviço pode criar (limitado apenas pelo espaço em disco disponível). Os nomes dos arquivos de backup estão no formato Archive-*channelName* - *timestamp*. evtx e estão localizados na pasta% windir% \\ System32 \\ winevt \\ logs.<br/> |
-| [**maxSize**](eventmanifestschema-maxsize-channelloggingtype-element.md)       | [**UInt64type**](eventmanifestschema-hexint64type-simpletype.md) | O tamanho máximo, em bytes, do arquivo de log. O valor padrão (e mínimo) é 1 MB. Se o tamanho do log físico for menor que o tamanho máximo configurado e o espaço adicional for necessário no log para armazenar eventos, o serviço alocará outro bloco de espaço, mesmo se o tamanho físico resultante do log for maior do que o tamanho máximo configurado. O serviço aloca blocos de 1 MB para que o tamanho físico possa aumentar para até 1 MB maior do que o tamanho máximo configurado. <br/>                                                                                                                                                                                                                                                      |
-| [**políticas**](eventmanifestschema-retention-channelloggingtype-element.md)   | booleano                                                           | Determina se o arquivo de log é um arquivo de log seqüencial ou circular. Defina como **true** para um arquivo de log sequencial e **false** para um arquivo de log circular. O padrão é **false** para os tipos de canal de administração e operacionais e **verdadeiro** para os tipos de canal analítico e de depuração.<br/> Para consultar um log circular, primeiro você deve desabilitar o canal.<br/>                                                                                                                                                                                                                                                                                                                                                                                                  |
+| [**Autobackup**](eventmanifestschema-autobackup-channelloggingtype-element.md) | booleano                                                           | Determina se um novo arquivo de log deve ser criado quando o arquivo de log atual atingir seu tamanho máximo. Definido como **true para** solicitar que o serviço crie um novo arquivo quando o arquivo de log atingir seu tamanho máximo; caso contrário, **false.** Você poderá definir [**autoBackup como**](eventmanifestschema-autobackup-channelloggingtype-element.md) true somente **se** [**a retenção**](eventmanifestschema-retention-channelloggingtype-element.md) for definida como **true.** O padrão é **false**.<br/> Não há nenhum limite para o número de arquivos de backup que o serviço pode criar (limitado apenas pelo espaço em disco disponível). Os nomes de arquivo de backup são do formato *Archive-channelName* timestamp .evtx e estão localizados na pasta - Logs winevt %windir% \\ System32 \\ winevt. \\<br/> |
+| [**Maxsize**](eventmanifestschema-maxsize-channelloggingtype-element.md)       | [**UInt64Type**](eventmanifestschema-hexint64type-simpletype.md) | O tamanho máximo, em bytes, do arquivo de log. O valor padrão (e mínimo) é 1 MB. Se o tamanho do log físico for menor que o tamanho máximo configurado e for necessário espaço adicional no log para armazenar eventos, o serviço alocará outro bloco de espaço mesmo que o tamanho físico resultante do log seja maior que o tamanho máximo configurado. O serviço aloca blocos de 1 MB para que o tamanho físico possa aumentar para até 1 MB maior que o tamanho máximo configurado. <br/>                                                                                                                                                                                                                                                      |
+| [**Retenção**](eventmanifestschema-retention-channelloggingtype-element.md)   | booleano                                                           | Determina se o arquivo de log é um arquivo de log sequencial ou circular. Definido como **true para** um arquivo de log sequencial e **false para** um arquivo de log circular. O padrão é **false para** tipos de canal Admin e Operacional e **true para** tipos de canal Depuração e Análise.<br/> Para consultar um log circular, primeiro você deve desabilitar o canal.<br/>                                                                                                                                                                                                                                                                                                                                                                                                  |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-Você pode especificar o atributo **MaxSize** para qualquer tipo de canal.
+Você pode especificar o **atributo maxSize** para qualquer tipo de canal.
 
-Você pode especificar o atributo de **backup** único somente para os tipos de canal de administrador e operacional.
+Você pode especificar o **atributo autoBackup** somente para os tipos de canal Admin e Operational.
 
-Você pode definir o atributo de **retenção** como falso (log circular) para os tipos de canal de administrador e operacional. Você pode definir o atributo de **retenção** como falso (log circular) para tipos de canal analíticos e de depuração, mas para exibir os eventos no Visualizador de eventos do Windows, você precisará primeiro desabilitar o canal. Observe que, quando você habilita o canal novamente, os eventos são removidos do canal.
+Você pode definir o atributo **de retenção** como false (registro em log circular) para os tipos de canal Admin e Operational. Você pode definir o atributo **de** retenção como false (log circular) para tipos de canal Depuração e Análise, mas para exibir os eventos no Windows Visualizador de Eventos, primeiro você precisará desabilitar o canal. Observe que, quando você habilita o canal novamente, os eventos são removidos do canal.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -83,8 +83,8 @@ Você pode definir o atributo de **retenção** como falso (log circular) para o
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

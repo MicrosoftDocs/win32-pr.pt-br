@@ -1,19 +1,19 @@
 ---
-description: Evento por usuário gerado na tentativa de baixar arquivos da Web. Esse evento é gerado por aplicativos solicitados pelos controles dos pais.
+description: Evento por usuário gerado na tentativa de baixar arquivos da Web. Esse evento é gerado por aplicativos solicitados pelos Controles dos Pais.
 ms.assetid: 2291fc75-55e5-417e-b393-748750a5b3d6
-title: WPCEVENT_WEB_FILEDOWNLOAD evento (Wpcevent. h)
+title: WPCEVENT_WEB_FILEDOWNLOAD evento (Wpcevent.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 66bb04a53589a1cae41e2ba7d7a9c00835452e87
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7430b87e7c227fe351e3182f344c60ece0b5a3138b94fe19fee950f96ec24b6a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105780388"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120112706"
 ---
-# <a name="wpcevent_web_filedownload-event"></a>\_Evento WPCEVENT Web \_ FileDownload
+# <a name="wpcevent_web_filedownload-event"></a>Evento WPCEVENT \_ WEB \_ FILEDOWNLOAD
 
-Evento por usuário gerado na tentativa de baixar arquivos da Web. Esse evento é gerado por aplicativos solicitados pelos controles dos pais.
+Evento por usuário gerado na tentativa de baixar arquivos da Web. Esse evento é gerado por aplicativos solicitados pelos Controles dos Pais.
 
 
 ```C++
@@ -50,7 +50,7 @@ A versão do aplicativo que está gerando o evento.
 *Bloqueado* 
 </dt> <dd>
 
-Um valor da enumeração [**\_ IsBlocked de WPCFLAG**](/windows/win32/api/wpcevent/ne-wpcevent-wpcflag_isblocked) que indica informações sobre quais eventos são bloqueados do uso e quais controles estão em vigor.
+Um valor da [**enumeração \_ ISBLOCKED WPCFLAG**](/windows/win32/api/wpcevent/ne-wpcevent-wpcflag_isblocked) que indica informações sobre quais eventos são impedidos de usar e quais controles estão em uso.
 
 </dd> <dt>
 
@@ -67,9 +67,9 @@ O caminho de destino para o arquivo.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                             |
-| parâmetro<br/>                   | <dl> <dt>Wpcevent. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Wpcevent.h</dt> </dl> |
 
 
 
@@ -80,7 +80,7 @@ O caminho de destino para o arquivo.
 [Usando APIs de log para controles dos pais](using-logging-apis-for-parental-controls.md)
 </dt> <dt>
 
-[**WPC \_ args \_ CONVERSATIONINITEVENT**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_conversationinitevent)
+[**WPC \_ ARGS \_ CONVERSATIONINITEVENT**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_conversationinitevent)
 </dt> </dl>
 
  

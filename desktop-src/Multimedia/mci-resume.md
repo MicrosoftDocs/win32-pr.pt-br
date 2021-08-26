@@ -1,9 +1,9 @@
 ---
-title: MCI_RESUME comando (mmsystem. h)
-description: O \_ comando de retomada do MCI faz com que um dispositivo em pausa retome a operação pausada.
+title: MCI_RESUME comando (Mmsystem.h)
+description: O comando MCI \_ RESUME faz com que um dispositivo em pausa retome a operação em pausa.
 ms.assetid: 2df712c1-5005-4e89-a439-a651076bbb73
 keywords:
-- Multimídia do Windows de comando MCI_RESUME
+- MCI_RESUME comando Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bd83b6d753cd223235b8b11f2d4b0be4c828ec28
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4872162e4f4913d7165d9ec69e6cc1164b3be40919facacbfd1a94d569a46c89
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918107"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120038336"
 ---
-# <a name="mci_resume-command"></a>\_Comando de retomada do MCI
+# <a name="mci_resume-command"></a>Comando MCI \_ RESUME
 
-O \_ comando de retomada do MCI faz com que um dispositivo em pausa retome a operação pausada. Digital-Video, VCR e Wave-Audio Devices reconhecem este comando. Embora os dispositivos de áudio CD, MIDI Sequencer e VIDEODISC também reconheçam esse comando, os drivers de dispositivo MCICDA, MCISEQ e MCIPIONR não dão suporte a ele.
+O comando MCI \_ RESUME faz com que um dispositivo em pausa retome a operação em pausa. Os dispositivos de vídeo digital, VCR e waveform-audio reconhecem esse comando. Embora os dispositivos de áudio CD, MIDI sequencer e videodisc também reconheçam esse comando, os drivers de dispositivo MCICDA, MCISEQ e MCIPIONR não são compatíveis com ele.
 
-Para enviar esse comando, chame a função [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) com os parâmetros a seguir.
+Para enviar esse comando, chame a [**função mciSendCommand**](/previous-versions//dd757160(v=vs.85)) com os parâmetros a seguir.
 
 
 ```C++
@@ -50,27 +50,27 @@ Identificador de dispositivo do dispositivo MCI que deve receber a mensagem de c
 
 </dd> <dt>
 
-<span id="dwFlags"></span><span id="dwflags"></span><span id="DWFLAGS"></span>*dwFlags*
+<span id="dwFlags"></span><span id="dwflags"></span><span id="DWFLAGS"></span>*Dwflags*
 </dt> <dd>
 
-\_Notificação de MCI, \_ espera de MCI ou, para dispositivos de vídeo digital e VCR, \_ teste MCI. Para obter informações sobre esses sinalizadores, consulte [os sinalizadores aguardar, notificar e testar](the-wait-notify-and-test-flags.md).
+MCI \_ NOTIFY, MCI WAIT ou, para dispositivos de vídeo digital e \_ VCR, MCI \_ TEST. Para obter informações sobre esses sinalizadores, consulte [Os sinalizadores de espera, notificação e teste.](the-wait-notify-and-test-flags.md)
 
 </dd> <dt>
 
 <span id="lpResume"></span><span id="lpresume"></span><span id="LPRESUME"></span>*lpResume*
 </dt> <dd>
 
-Ponteiro para uma estrutura de [**\_ \_ parâmetros genéricos do MCI**](mci-generic-parms.md) . (Dispositivos com conjuntos de comandos estendidos podem substituir essa estrutura por uma estrutura específica do dispositivo.)
+Ponteiro para uma [**estrutura \_ \_ PARMS GENÉRICA da MCI.**](mci-generic-parms.md) (Dispositivos com conjuntos de comandos estendidos podem substituir essa estrutura por uma estrutura específica do dispositivo.)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retornará zero se for bem-sucedido ou um erro de outra forma.
+Retornará zero se for bem-sucedido ou um erro, caso contrário.
 
 ## <a name="remarks"></a>Comentários
 
-Esse comando retoma a reprodução e a gravação sem alterar o conjunto de posições de faixa atual com [o \_ registro](mci-record.md)MCI de [ \_ reprodução](mci-play.md) ou MCI.
+Esse comando retoma a reprodução e a gravação sem alterar a posição da faixa atual definida com [MCI \_ PLAY](mci-play.md) ou [MCI \_ RECORD.](mci-record.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -80,7 +80,7 @@ Esse comando retoma a reprodução e a gravação sem alterar o conjunto de posi
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                                |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                      |
-| Cabeçalho<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -88,7 +88,7 @@ Esse comando retoma a reprodução e a gravação sem alterar o conjunto de posi
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
 [Comandos MCI](mci-commands.md)

@@ -4,12 +4,12 @@ ms.assetid: f1196e31-65c6-4ade-a0b7-c7758ce97be1
 title: Constantes de PHONEBUTTONSTATE_ (TAPI. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c2b1cc2f669fb5c1171834f46e11a161e9390eab
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 95070eb24b5189b44f07a8ba2d2d7ed7d8234ec14a97889f09c0fe29ac72eed9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105788046"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120100499"
 ---
 # <a name="phonebuttonstate_-constants"></a>PHONEBUTTONSTATE_ constantes
 
@@ -70,7 +70,7 @@ Para compatibilidade com versões anteriores, é responsabilidade do provedor de
 | Requisito | Valor |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versão da TAPI<br/> | Requer TAPI 2,0 ou posterior<br/>                                             |
-| parâmetro<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Cabeçalho<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
 
 
 

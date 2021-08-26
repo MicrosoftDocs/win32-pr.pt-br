@@ -1,8 +1,8 @@
 ---
-description: Renomeia o arquivo de paginação especificado no caminho do objeto.
+description: Renomeia o arquivo de paging especificado no caminho do objeto.
 ms.assetid: 6a98e05f-337e-4224-a847-f01913031b20
 ms.tgt_platform: multiple
-title: Método Rename da classe Win32_PageFile
+title: Renomear o método da Win32_PageFile classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 7c9ba8162cd115a567e9e9010420c558061fed08
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: c47bda2b5466111594617a9f3fc0faa9d2dbf55e4452509015cbbe368ef15cba
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105754392"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120077426"
 ---
-# <a name="rename-method-of-the-win32_pagefile-class"></a>Método Rename da classe de \_ arquivo de paginação Win32
+# <a name="rename-method-of-the-win32_pagefile-class"></a>Renomear o método da classe PageFile win32 \_
 
-O método **renomear** [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) renomeia o arquivo de paginação especificado no caminho do objeto. Não haverá suporte para renomear se o destino estiver em outra unidade ou se for necessário substituir um arquivo lógico existente.
+O **método renomear** [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) renomeia o arquivo de paging especificado no caminho do objeto. Não há suporte para renomeação se o destino estiver em outra unidade ou se for necessário sobrescrever um arquivo lógico existente.
 
-Este tópico usa a sintaxe formato MOF (MOF). Para obter mais informações sobre como usar esse método, consulte [chamando um método](/windows/desktop/WmiSdk/calling-a-method).
+Este tópico usa sintaxe Managed Object Format (MOF). Para obter mais informações sobre como usar esse método, consulte [Chamando um método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,18 +42,18 @@ uint32 Rename(
 
 <dl> <dt>
 
-*Nome do arquivo* \[ no\]
+*FileName* \[ Em\]
 </dt> <dd>
 
-Novo nome totalmente qualificado do arquivo (ou diretório).
+Nome totalmente qualificado do arquivo (ou diretório).
 
 Exemplo: c: \\ temp \\newfile.txt
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor de 0 (zero) se o arquivo tiver sido renomeado com êxito e qualquer outro número para indicar um erro.
+Retornará um valor de 0 (zero) se o arquivo tiver sido renomeado com êxito e qualquer outro número para indicar um erro.
 
 <dl> <dt>
 
@@ -67,7 +67,7 @@ A solicitação foi bem-sucedida.
 **2**
 </dt> <dd>
 
-Acesso negado.
+O acesso foi negado.
 
 </dd> <dt>
 
@@ -102,7 +102,7 @@ O sistema de arquivos não é NTFS.
 **12**
 </dt> <dd>
 
-A plataforma não é o Windows.
+A plataforma não é Windows.
 
 </dd> <dt>
 
@@ -130,7 +130,7 @@ Houve uma violação de compartilhamento.
 **16**
 </dt> <dd>
 
-O arquivo de inicialização especificado não era válido.
+O arquivo inicial especificado não era válido.
 
 </dd> <dt>
 
@@ -141,7 +141,7 @@ Um privilégio necessário para a operação não é mantido.
 
 </dd> <dt>
 
-**Abril**
+**21**
 </dt> <dd>
 
 Um parâmetro especificado não é válido.
@@ -156,8 +156,8 @@ Um parâmetro especificado não é válido.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -169,7 +169,7 @@ Um parâmetro especificado não é válido.
 [Classes do sistema operacional](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_Arquivo de paginação Win32**](win32-pagefile.md)
+[**Win32 \_ PageFile**](win32-pagefile.md)
 </dt> </dl>
 
  

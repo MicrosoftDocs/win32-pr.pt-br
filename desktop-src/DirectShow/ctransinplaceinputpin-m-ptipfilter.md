@@ -1,7 +1,7 @@
 ---
-description: 'CTransInPlaceInputPin:: m_pTIPFilter ponteiro de membro para o filtro que criou esse PIN.'
+description: Membro CTransInPlaceInputPin::m_pTIPFilter – ponteiro para o filtro que criou esse pin.
 ms.assetid: a0be08c5-d120-4495-b80a-0fb90fad9238
-title: 'Membro CTransInPlaceInputPin:: m_pTIPFilter (TRANSip. h)'
+title: Membro CTransInPlaceInputPin::m_pTIPFilter (Transip.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9d6991ee65ae9b7dc7dc8b7e6108c0074e95b0be
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 3565eb55949c7b51d4064d2edcac285bc843f09e7637d4659bea1b6665bab732
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108084674"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120076206"
 ---
-# <a name="ctransinplaceinputpinm_ptipfilter-member"></a>Membro de CTransInPlaceInputPin:: m \_ pTIPFilter
+# <a name="ctransinplaceinputpinm_ptipfilter-member"></a>Membro CTransInPlaceInputPin::m \_ pTIPFilter
 
-Ponteiro para o filtro que criou este pin.
+Ponteiro para o filtro que criou esse pino.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -42,12 +42,12 @@ CTransInPlaceFilter * const m_pTIPFilter;
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>TRANSip. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Transip.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

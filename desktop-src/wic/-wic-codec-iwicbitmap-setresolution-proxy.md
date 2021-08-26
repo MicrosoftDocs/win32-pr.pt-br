@@ -1,7 +1,7 @@
 ---
-description: IWICBitmap_SetResolution_Proxy função de proxy de função para o método resolution.
+description: IWICBitmap_SetResolution_Proxy função - função proxy para o método SetResolution.
 ms.assetid: c4e3927c-6f9d-401d-acd7-711674cdbb53
-title: Função IWICBitmap_SetResolution_Proxy
+title: IWICBitmap_SetResolution_Proxy função
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: f11189307ad14dde6ea1e1373583a8ab4b08b9be
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: a32fa4e0d830d5307bc2927a1d5b6cb0a40e5b21f86517dc4421a0ce246a2ab8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108086374"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120056696"
 ---
-# <a name="iwicbitmap_setresolution_proxy-function"></a>\_Função de proxy resolution do IWICBitmap \_
+# <a name="iwicbitmap_setresolution_proxy-function"></a>Função proxy IWICBitmap \_ SetResolution \_
 
-Função de proxy para o método [**Resolution**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmap-setresolution) .
+Função proxy para o [**método SetResolution.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmap-setresolution)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,28 +42,28 @@ HRESULT IWICBitmap_SetResolution_Proxy(
 
 <dl> <dt>
 
-*Isso \_ PTR* \[\]
+*ESTE \_ PTR* \[ em\]
 </dt> <dd>
 
 Tipo: **[ **IWICBitmap**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmap)\***
 
-Ponteiro para este objeto [**IWICBitmap**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmap) .
+Ponteiro para este [**objeto IWICBitmap.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmap)
 
 </dd> <dt>
 
-*DpiX* \[ no\]
+*dpiX* \[ Em\]
 </dt> <dd>
 
-Tipo: **duplo**
+Tipo: **double**
 
 A resolução horizontal.
 
 </dd> <dt>
 
-*DpiY* \[ no\]
+*dpiY* \[ Em\]
 </dt> <dd>
 
-Tipo: **duplo**
+Tipo: **double**
 
 A resolução vertical.
 
@@ -73,7 +73,7 @@ A resolução vertical.
 
 Tipo: **HRESULT**
 
-Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se essa função for bem-sucedida, ela retornará **S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
@@ -83,9 +83,9 @@ Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows XP com SP2, \[ somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                                                                             |
-| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows XP com SP2, Windows aplicativos da área de trabalho do Vista \[\]<br/>                                                                                              |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                                                                                             |
+| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

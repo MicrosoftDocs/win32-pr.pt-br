@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 1a7400bb9a16e6ece5f5f26fe95a0398a7d45e19
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e7420e21a9f2c6ac92712326fa4a51159c6303d3972756e7a47c0797f22a1d83
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090255"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120037426"
 ---
 # <a name="iesp-interface"></a>Interface IESP
 
@@ -40,7 +40,7 @@ A interface **IESP** tem esses métodos.
 | Método                                          | Descrição                                                                                                                        |
 |:------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------|
 | [**Configurar**](iesp-configure.md)             | Envia informações de configuração para uma captura<br/>                                                                         |
-| [**Connect**](iesp-connect.md)                 | Conecta o NPP à rede.<br/>                                                                                        |
+| [**Conectar**](iesp-connect.md)                 | Conecta o NPP à rede.<br/>                                                                                        |
 | [**Desconectar**](iesp-disconnect.md)           | Desconecta o NPP da rede.<br/>                                                                                   |
 | [**Getcontrolstate**](iesp-getcontrolstate.md) | Recupera o estado da [*captura*](c.md), que indica se a captura está em execução ou em pausa.<br/> |
 | [**Pausar**](iesp-pause.md)                     | Interrompe temporariamente a captura atual.<br/>                                                                                  |

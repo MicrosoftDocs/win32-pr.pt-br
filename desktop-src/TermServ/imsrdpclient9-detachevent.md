@@ -1,14 +1,14 @@
 ---
 title: Método IMsRdpClient9 detachEvent
-description: Desanexa um evento.
+description: Desconecta um evento.
 ms.assetid: 6a3ca713-1d5c-4070-a527-ad4f532a4cbf
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota do método detachEvent
-- método detachEvent Serviços de Área de Trabalho Remota, interface IMsRdpClient9
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient9, método detachEvent
-- método detachEvent Serviços de Área de Trabalho Remota, interface IMsRdpClient10
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient10, método detachEvent
+- Método detachEvent Serviços de Área de Trabalho Remota
+- O método detachEvent Serviços de Área de Trabalho Remota , interface IMsRdpClient9
+- Interface IMsRdpClient9 Serviços de Área de Trabalho Remota , método detachEvent
+- O método detachEvent Serviços de Área de Trabalho Remota , interface IMsRdpClient10
+- Interface IMsRdpClient10 Serviços de Área de Trabalho Remota , método detachEvent
 topic_type:
 - apiref
 api_name:
@@ -20,16 +20,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 399611ea526338f4cfe40ef3a4d6543bf27f134a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cc60a3a7e1499632ac721192ce324fcf786e179604c11e2a70c4450b6171b779
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085193"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120099456"
 ---
-# <a name="imsrdpclient9detachevent-method"></a>IMsRdpClient9: método etachEvent de:d
+# <a name="imsrdpclient9detachevent-method"></a>Método IMsRdpClient9::d etachEvent
 
-Desanexa um evento.
+Desconecta um evento.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,23 +47,23 @@ HRESULT detachEvent(
 
 <dl> <dt>
 
-*eventoname* \[ no\]
+*eventName* \[ Em\]
 </dt> <dd>
 
 O nome do evento.
 
 </dd> <dt>
 
-*retorno de chamada* \[ no\]
+*retorno de chamada* \[ Em\]
 </dt> <dd>
 
 O retorno de chamada associado ao evento.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 

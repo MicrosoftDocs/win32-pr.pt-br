@@ -1,12 +1,12 @@
-- name: Registro de gerenciamento de dispositivo móvel
+- name: Registro de Gerenciamento de Dispositivos móvel
   href: mobile-device-management-registration-portal.md
   items:
-    - name: Referência de registro do MDM
+    - name: Referência de registro de MDM
       href: mdm-registration-reference.md
       items:
         - name: Valores de erro de registro do MDM
           href: mdm-registration-constants.md
-        - name: Funções de registro do MDM
+        - name: Funções de registro de MDM
           href: mdm-registration-functions.md
           items:
             - name: DiscoverManagementService

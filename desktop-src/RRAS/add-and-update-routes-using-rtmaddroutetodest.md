@@ -1,45 +1,45 @@
 ---
 title: Adicionar e atualizar rotas usando RtmAddRouteToDest
-description: A função RtmAddRouteToDest é usada para adicionar novas rotas e atualizar as rotas existentes para um destino. Os procedimentos a seguir explicam os dois casos. O código de exemplo a seguir mostra como implementar o primeiro procedimento.
+description: A função RtmAddRouteToDest é usada para adicionar novas rotas e atualizar rotas existentes para um destino. Os procedimentos a seguir explicam os dois casos. O código de exemplo a seguir mostra como implementar o primeiro procedimento.
 ms.assetid: 17a04511-69f8-4e50-993c-0e558ee72184
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6bd3594aee054e6815094834bedbc1aae158fc4e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 64032aa5f73019e08bb82405d85ffa5ef85abd0526cf7748ec8881b97ab900e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105766356"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120030596"
 ---
 # <a name="add-and-update-routes-using-rtmaddroutetodest"></a>Adicionar e atualizar rotas usando RtmAddRouteToDest
 
-A função [**RtmAddRouteToDest**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmaddroutetodest) é usada para adicionar novas rotas e atualizar as rotas existentes para um destino. Os procedimentos a seguir explicam os dois casos. O código de exemplo a seguir mostra como implementar o primeiro procedimento.
+A função [**RtmAddRouteToDest**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmaddroutetodest) é usada para adicionar novas rotas e atualizar rotas existentes para um destino. Os procedimentos a seguir explicam os dois casos. O código de exemplo a seguir mostra como implementar o primeiro procedimento.
 
-**Para adicionar uma rota, o cliente deve executar as seguintes etapas**
+**Para adicionar uma rota, o cliente deve seguir as etapas a seguir**
 
-1.  Se o cliente já armazenou em cache o identificador de próximo salto, vá para a etapa 4.
-2.  Crie uma estrutura de [**\_ \_ informações de NEXTHOP do RTM**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_nexthop_info) e preencha-a com as informações apropriadas.
-3.  Adicione o próximo salto à tabela de roteamento chamando [**RtmAddNextHop**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmaddnexthop). O Gerenciador de tabela de roteamento retorna um identificador para o próximo salto. Se o próximo salto já existir, a tabela de roteamento não adicionará o próximo salto; em vez disso, ele retorna o identificador para o próximo salto.
-4.  Crie uma estrutura de [**\_ \_ informações de rota RTM**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_route_info) e preencha-a com as informações apropriadas, incluindo o identificador de próximo salto retornado pelo Gerenciador de tabela de roteamento.
-5.  Adicione a rota à tabela de roteamento chamando [**RtmAddRouteToDest**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmaddroutetodest). O Gerenciador de tabela de roteamento compara a nova rota com as rotas que já estão na tabela de roteamento. Duas rotas serão iguais se todas as seguintes condições forem verdadeiras:
+1.  Se o cliente já tiver armazenado em cache o alça do próximo salto, vá para a etapa 4.
+2.  Crie uma [**estrutura \_ RTM NEXTHOP \_ INFO**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_nexthop_info) e preencha-a com as informações apropriadas.
+3.  Adicione o próximo salto à tabela de roteamento chamando [**RtmAddNextHop.**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmaddnexthop) O gerenciador de tabela de roteamento retorna um alça para o próximo salto. Se o próximo salto já existir, a tabela de roteamento não adicionará o próximo salto; em vez disso, ele retorna o alça para o próximo salto.
+4.  Crie uma [**estrutura \_ RTM ROUTE \_ INFO**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_route_info) e preencha-a com as informações apropriadas, incluindo o alça do próximo salto retornado pelo gerenciador de tabela de roteamento.
+5.  Adicione a rota à tabela de roteamento chamando [**RtmAddRouteToDest.**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmaddroutetodest) O gerenciador de tabela de roteamento compara a nova rota com as rotas que já estão na tabela de roteamento. Duas rotas serão iguais se todas as seguintes condições são verdadeiras:
 
     -   A rota está sendo adicionada ao mesmo destino.
-    -   A rota está sendo adicionada pelo mesmo cliente, conforme especificado pelo membro do **proprietário** da estrutura [**de \_ \_ informações da rota RTM**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_route_info) .
-    -   A rota é anunciada pelo mesmo vizinho conforme especificado pelo membro **vizinho** da estrutura de [**informações de \_ rota \_ RTM**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_route_info) .
+    -   A rota está sendo adicionada pelo mesmo cliente, conforme especificado pelo membro **Proprietário** da estrutura [**RTM \_ ROUTE \_ INFO.**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_route_info)
+    -   A rota é anunciada pelo mesmo vizinho, conforme especificado pelo membro **Vizinho** da estrutura [**RTM \_ ROUTE \_ INFO.**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_route_info)
 
-    Se a rota existir, o Gerenciador de tabela de roteamento retornará o identificador para a rota existente. Caso contrário, o Gerenciador de tabela de roteamento adicionará a rota e retornará o identificador para a nova rota.
+    Se a rota existir, o gerenciador de tabela de roteamento retornará o alçamento para a rota existente. Caso contrário, o gerenciador de tabela de roteamento adiciona a rota e retorna o alça para a nova rota.
 
-    O cliente pode definir o parâmetro de *\_ sinalizadores de alteração* para a \_ alteração de rota RTM \_ \_ nova para instruir o Gerenciador de tabelas de roteamento a adicionar uma nova rota no destino, mesmo que outra rota com os mesmos campos de proprietário e vizinho exista.
+    O cliente pode definir o parâmetro *Change \_ Flags* como RTM ROUTE CHANGE NEW para instruir o gerenciador de tabelas de roteamento a adicionar uma nova rota no destino, mesmo que exista outra rota com os mesmos campos proprietário e \_ \_ \_ vizinho.
 
-    O cliente pode definir o parâmetro de *\_ sinalizadores de alteração* para a \_ rota RTM \_ alterar \_ primeiro para informar ao Gerenciador de tabela de roteamento para atualizar a primeira rota no destino de Propriedade do cliente. Essa atualização pode ser executada se essa rota existir, mesmo se o campo vizinho não corresponder. Esse sinalizador é usado por clientes que mantêm uma rota única por destino.
+    O cliente pode definir o parâmetro *Change \_ Flags* como RTM ROUTE CHANGE FIRST para dizer ao gerenciador de tabelas de roteamento para atualizar a primeira rota no destino \_ pertencente ao \_ \_ cliente. Essa atualização poderá ser executada se essa rota existir, mesmo se o campo vizinho não corresponder. Esse sinalizador é usado por clientes que mantêm uma única rota por destino.
 
-**Para atualizar uma rota, o cliente deve executar as seguintes etapas**
+**Para atualizar uma rota, o cliente deve seguir as etapas a seguir**
 
-1.  Chame [**RtmGetRouteInfo**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmgetrouteinfo) com a alça para a rota. O identificador é anteriormente armazenado em cache pelo cliente, ou retornado pelo Gerenciador de tabelas de roteamento de uma chamada que retorna um identificador de rota como **RtmGetRouteInfo**.
-2.  Faça as alterações na estrutura [**de \_ \_ informações da rota RTM**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_route_info) retornada pelo Gerenciador de tabela de roteamento.
-3.  Chame [**RtmAddRouteToDest**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmaddroutetodest) com o identificador para a rota e a estrutura [**de \_ \_ informações da rota RTM**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_route_info) alterada.
+1.  Chame [**RtmGetRouteInfo**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmgetrouteinfo) com o alçamento para a rota. O handle é um armazenado anteriormente em cache pelo cliente ou retornado pelo gerenciador de tabela de roteamento de uma chamada que retorna um alça de rota como **RtmGetRouteInfo**.
+2.  Faça as alterações na estrutura [**RTM \_ ROUTE \_ INFO**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_route_info) retornada pelo gerenciador de tabela de roteamento.
+3.  Chame [**RtmAddRouteToDest com**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmaddroutetodest) o alçamento para a rota e a estrutura de INFORMAÇÕES DE [**ROTA RTM \_ \_ alterada.**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_route_info)
 
-O código de exemplo a seguir mostra como adicionar uma rota a um destino usando o Gerenciador de tabela de roteamento como um intermediário.
+O código de exemplo a seguir mostra como adicionar uma rota a um destino usando o gerenciador de tabela de roteamento como um intermediário.
 
 
 ```C++
@@ -132,9 +132,9 @@ if (Status == NO_ERROR)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 01e739077d38dec94c0a407e5779bec90369ffb9
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 035b8abe5440ffb80b902e1f4b1564b2fb80b77ee34b20f4f068d298b251478a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105813207"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120124246"
 ---
 # <a name="structdefinitiontype-complex-type"></a>Tipo complexo StructDefinitionType
 
@@ -59,7 +59,7 @@ Define uma estrutura que inclui um ou mais itens de dados que você deseja inclu
 
 | Elemento                                                               | Type                                                                             | Descrição                                                               |
 |-----------------------------------------------------------------------|----------------------------------------------------------------------------------|---------------------------------------------------------------------------|
-| [**dado**](eventmanifestschema-data-structdefinitiontype-element.md) | [**Datadefinitiontype**](eventmanifestschema-datadefinitiontype-complextype.md) | Define um item de dados que você deseja incluir na estrutura.<br/> |
+| [**data**](eventmanifestschema-data-structdefinitiontype-element.md) | [**Datadefinitiontype**](eventmanifestschema-datadefinitiontype-complextype.md) | Define um item de dados que você deseja incluir na estrutura.<br/> |
 
 
 
@@ -70,7 +70,7 @@ Define uma estrutura que inclui um ou mais itens de dados que você deseja inclu
 | Nome   | Tipo                                                            | Descrição                                                                                                                                                                                                                                                                               |
 |--------|-----------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | count  | [**Número de contagem**](eventmanifestschema-counttype-simpletype.md)   | O número de elementos em uma matriz de estruturas. Esse atributo indica que a estrutura está definindo uma matriz de estruturas. Você pode especificar a contagem real ou o nome de um item de dados fora da estrutura que contém a contagem. <br/>                               |
-| comprimento | [**Comprimentotype**](eventmanifestschema-lengthtype-simpletype.md) | Não disponível.<br/> **Windows Server 2008 e Windows Vista:** O comprimento dessa estrutura, em bytes. Não disponível a partir do Windows 7.<br/>                                                                                                                            |
+| comprimento | [**Comprimentotype**](eventmanifestschema-lengthtype-simpletype.md) | Não disponível.<br/> **Windows Server 2008 e Windows Vista:** O comprimento dessa estrutura, em bytes. não disponível a partir do Windows 7.<br/>                                                                                                                            |
 | name   | string                                                          | O nome para a estrutura. Você pode usar o nome para fazer referência ao item de dados no fragmento XML se especificar uma seção [**UserData**](eventmanifestschema-userdata-templateitemtype-element.md) em seu modelo.<br/> **Windows Vista:** Esse atributo é opcional.<br/> |
 
 
@@ -87,8 +87,8 @@ Você não deve usar estruturas, mas, em vez disso, deve definir itens de dados 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 

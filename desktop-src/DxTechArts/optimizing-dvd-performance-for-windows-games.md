@@ -1,19 +1,19 @@
 ---
-title: Otimizando o desempenho de DVD para jogos do Windows
-description: Este artigo discute como otimizar o desempenho de DVD para jogos do Windows.
+title: otimizando o desempenho de DVD para jogos de Windows
+description: este artigo discute como otimizar o desempenho de DVD para jogos de Windows.
 ms.assetid: 01e8dc7d-4ba7-40dd-d845-a20000201ae1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bb15063d0441423ccb3a9f67db84caa134f801c6
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: fe08ba6188df9b8bbc25a73595bf1509b257696955c1fcbd1ae98091b3c8aecf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105757562"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120042527"
 ---
-# <a name="optimizing-dvd-performance-for-windows-games"></a>Otimizando o desempenho de DVD para jogos do Windows
+# <a name="optimizing-dvd-performance-for-windows-games"></a>otimizando o desempenho de DVD para jogos de Windows
 
-Uma alta porcentagem de computadores que executam o Windows tem uma unidade de DVD e muitos jogos são fornecidos em DVD. Como resultado, recomendamos que você garanta que seus jogos usem a unidade de DVD para sua total vantagem. Ao entender como os dados são lidos de um DVD e como o local dos dados afeta seu tempo de leitura, você pode reduzir os tempos de carregamento e melhorar o desempenho geral durante o jogo. Este artigo discute como otimizar o desempenho de DVD para jogos do Windows.
+uma alta porcentagem de computadores que executam Windows ter uma unidade de DVD e muitos jogos são fornecidos em dvd. Como resultado, recomendamos que você garanta que seus jogos usem a unidade de DVD para sua total vantagem. Ao entender como os dados são lidos de um DVD e como o local dos dados afeta seu tempo de leitura, você pode reduzir os tempos de carregamento e melhorar o desempenho geral durante o jogo. este artigo discute como otimizar o desempenho de DVD para jogos de Windows.
 
 -   [Layout básico de um DVD](#basic-layout-of-a-dvd)
 -   [Lendo de um DVD](#reading-from-a-dvd)
@@ -50,7 +50,7 @@ Quando uma unidade de DVD recebe uma solicitação de leitura que excede o taman
 > [!Note]  
 > Cada leitura não armazenada em cache libera o cache da unidade.
 
- 
+ 
 
 ## <a name="reading-errors"></a>Lendo erros
 
@@ -80,7 +80,7 @@ O melhor princípio na leitura de um DVD é evitar a busca e a leitura de pequen
 
 ## <a name="dvd-compatibility"></a>Compatibilidade com DVD
 
-Há alguns problemas de compatibilidade importantes a serem considerados durante a liberação em DVD. Primeiro, as unidades de DVD em computadores baseados no Windows podem variar em desempenho, portanto, se o DVD tiver um requisito específico para a taxa de transferência, é importante garantir que o hardware dos usuários atenda a esses requisitos. Além disso, os DVDs multicamadas podem causar problemas de compatibilidade em algumas unidades de DVD. Para evitar esses problemas, é aconselhável entregar um DVD de camada única ou testar exaustivamente um DVD de várias camadas em uma maioria das unidades antes do lançamento.
+Há alguns problemas de compatibilidade importantes a serem considerados durante a liberação em DVD. primeiro, as unidades de DVD em computadores baseados em Windows podem variar em desempenho, portanto, se o DVD tiver um requisito específico para a taxa de transferência, é importante garantir que o hardware dos usuários atenda a esses requisitos. Além disso, os DVDs multicamadas podem causar problemas de compatibilidade em algumas unidades de DVD. Para evitar esses problemas, é aconselhável entregar um DVD de camada única ou testar exaustivamente um DVD de várias camadas em uma maioria das unidades antes do lançamento.
 
 ## <a name="summary"></a>Resumo
 
@@ -93,6 +93,6 @@ Para melhorar o desempenho do DVD, algumas regras gerais podem ser aplicadas. As
 -   Leitura assíncrona para reduzir a carga da CPU e o uso excessivo de memória
 -   Evite liberar DVDs multicamadas
 
- 
+ 
 
- 
+ 

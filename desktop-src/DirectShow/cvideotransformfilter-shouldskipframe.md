@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7f845ac7ae52537bfadfb6c913537b32e4d44171
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 26a0c35be9914641abfa053cd1ee00f46bb09222aecbebc55d45900331a2ee81
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749819"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120075936"
 ---
 # <a name="cvideotransformfiltershouldskipframe-method"></a>Método CVideoTransformFilter. ShouldSkipFrame
 
@@ -49,7 +49,7 @@ Ponteiro para a interface [**IMediaSample**](/windows/desktop/api/Strmif/nn-strm
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna **true** se o filtro deve descartar este exemplo ou **false** se o filtro deve processar este exemplo.
 
@@ -68,7 +68,7 @@ Para fins deste cálculo, o filtro registra as seguintes informações conforme 
 -   O número de quadros desde o último quadro chave (**m \_ nFramesSinceKeyFrame**)
 -   Uma estimativa de quantos quadros existem entre quadros-chave (**m \_ nKeyFramePeriod**)
 
-Depois que o filtro soltar um quadro, ele continuará a descartar os quadros até atingir o próximo quadro-chave. Se esse método retornar **true**, ele também enviará um evento de [**\_ \_ alteração de qualidade do EC**](ec-quality-change.md) para o Gerenciador do grafo de filtro.
+Depois que o filtro soltar um quadro, ele continuará a descartar os quadros até atingir o próximo quadro-chave. se esse método retornar **TRUE**, ele também enviará um evento de [**\_ \_ alteração de qualidade do EC**](ec-quality-change.md) para o filtro Graph Manager.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -76,7 +76,7 @@ Depois que o filtro soltar um quadro, ele continuará a descartar os quadros at�
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Vtrans. h (incluir fluxos. h)</dt> </dl>                                                                                    |
+| parâmetro<br/>  | <dl> <dt>Vtrans. h (incluir Fluxos. h)</dt> </dl>                                                                                    |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 

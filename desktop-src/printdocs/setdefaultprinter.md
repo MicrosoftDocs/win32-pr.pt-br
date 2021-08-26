@@ -1,7 +1,7 @@
 ---
 description: A função SetDefaultPrinter define o nome da impressora padrão para o usuário atual no computador local.
 ms.assetid: 55eec548-577f-422b-80e3-8b23aa4d2159
-title: Função SetDefaultPrinter (winspool. h)
+title: Função SetDefaultPrinter (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - Winspool.drv
-ms.openlocfilehash: 346d356aea3d806284823541aa219699e51c2187
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 570e0d57c4a04cd4845883e825acfbbef0282186cc7289751737798ed52b9592
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105764267"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120112116"
 ---
 # <a name="setdefaultprinter-function"></a>Função SetDefaultPrinter
 
-A função **SetDefaultPrinter** define o nome da impressora padrão para o usuário atual no computador local.
+A **função SetDefaultPrinter** define o nome da impressora padrão para o usuário atual no computador local.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,27 +41,27 @@ BOOL SetDefaultPrinter(
 
 <dl> <dt>
 
-*pszPrinter* \[ no\]
+*pszPrinter* \[ Em\]
 </dt> <dd>
 
-Um ponteiro para uma cadeia de caracteres terminada em nulo que contém o nome da impressora padrão. Para uma conexão de impressora remota, o formato de nome é **\\\\** _Server_ *_\\_* _PrinterName_. Para uma impressora local, o formato de nome é *PrinterName*.
+Um ponteiro para uma cadeia de caracteres terminada em nulo que contém o nome da impressora padrão. Para uma conexão de impressora remota, o formato de nome é **\\\\** _server_ *_\\_* _printername_. Para uma impressora local, o formato de nome é *printername*.
 
-Se esse parâmetro for **nulo** ou uma cadeia de caracteres vazia, ou seja, "", o **SetDefaultPrinter** selecionará uma impressora padrão de uma das impressoras instaladas. Se uma impressora padrão já existir, chamar **SetDefaultPrinter** com uma cadeia de caracteres **nula** ou vazia nesse parâmetro poderá alterar a impressora padrão.
+Se esse parâmetro for **NULL** ou uma cadeia de caracteres vazia, ou seja, "", **SetDefaultPrinter** selecionará uma impressora padrão de uma das impressoras instaladas. Se uma impressora padrão já existir, chamar **SetDefaultPrinter** com um **NULL** ou uma cadeia de caracteres vazia nesse parâmetro poderá alterar a impressora padrão.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se a função for realizada com sucesso, o valor de retorno será um valor diferente de zero.
+Se a função for bem-sucedida, o valor de retorno será um valor não zero.
 
 Se a função falhar, o valor retornado será zero.
 
 ## <a name="remarks"></a>Comentários
 
-Ao usar esse método, você deve especificar uma impressora, Driver e porta válidos. Se forem inválidas, as APIs não falharão, mas o resultado não será definido. Isso pode fazer com que outros programas configurassem a impressora de volta para a impressora válida anterior. Você pode usar [**EnumPrinters**](enumprinters.md) para recuperar o nome da impressora, o nome do driver e o nome da porta de todas as impressoras disponíveis.
+Ao usar esse método, você deve especificar uma impressora, um driver e uma porta válidos. Se elas são inválidas, as APIs não falham, mas o resultado não é definido. Isso poderia fazer com que outros programas definiam a impressora de volta para a impressora válida anterior. Você pode usar [**EnumPrinters**](enumprinters.md) para recuperar o nome da impressora, o nome do driver e o nome da porta de todas as impressoras disponíveis.
 
 > [!Note]  
-> Essa é uma função de bloqueio ou síncrona e pode não retornar imediatamente. A rapidez com que essa função retorna depende de fatores de tempo de execução, como status de rede, configuração de servidor de impressão e fatores de implementação de driver de impressora que são difíceis de prever ao escrever um aplicativo. Chamar essa função de um thread que gerencia a interação com a interface do usuário pode fazer com que o aplicativo pareça não responder.
+> Essa é uma função de bloqueio ou síncrona e pode não retornar imediatamente. A rapidez com que essa função retorna depende de fatores de tempo de execução, como status de rede, configuração do servidor de impressão e fatores de implementação de driver de impressora que são difíceis de prever ao escrever um aplicativo. Chamar essa função de um thread que gerencia a interação com a interface do usuário pode fazer com que o aplicativo pareça não responder.
 
  
 
@@ -73,9 +73,9 @@ Ao usar esse método, você deve especificar uma impressora, Driver e porta vál
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                                |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                      |
-| Cabeçalho<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Winspool. lib</dt> </dl>                   |
-| DLL<br/>                      | <dl> <dt>Winspool. drv</dt> </dl>                   |
+| Cabeçalho<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Winspool.lib</dt> </dl>                   |
+| DLL<br/>                      | <dl> <dt>Winspool.drv</dt> </dl>                   |
 | Nomes Unicode e ANSI<br/>   | **SetDefaultPrinterW** (Unicode) e **SetDefaultPrinterA** (ANSI)<br/>                             |
 
 

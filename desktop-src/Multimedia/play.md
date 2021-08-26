@@ -3,7 +3,7 @@ title: comando Play
 description: O comando Play começa a reproduzir um dispositivo. CD de áudio, digital-vídeo, MIDI Sequencer, VIDEODISC, VCR e Wave-Audio Devices reconhecem este comando.
 ms.assetid: 3ee707d6-6af4-494d-a887-d91ea5666ac4
 keywords:
-- reproduzir multimídia do Windows do comando
+- comando play Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dbf262db152677ef5a2f29de9526152c1d48d4c9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2da0df530f1c7a0166dcbb7c852fe491127a9e187d1cb6cb953ec46b2533ac00
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105758747"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120038046"
 ---
 # <a name="play-command"></a>comando Play
 
@@ -128,13 +128,13 @@ play mysound from 1000 to 2000 notify
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
 [Cadeias de caracteres de comando MCI](mci-command-strings.md)
 </dt> <dt>
 
-[advertência](cue.md)
+[Cue](cue.md)
 </dt> <dt>
 
 [set](set.md)

@@ -1,7 +1,7 @@
 ---
 description: O método GetTailPosition recupera a posição do último item da lista.
 ms.assetid: 53af7ecd-5ec5-4d45-9f38-f253649f9113
-title: Método CGenericList. GetTailPosition (Wxlist. h)
+title: Método CGenericList.GetTailPosition (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 66fc4e396fab558c79fb7333263442fac146e105
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 90b84369688c065445f7d8a127219e707a20867776d1c5949b2927dd22e24868
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105771857"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120076266"
 ---
-# <a name="cgenericlistgettailposition-method"></a>Método CGenericList. GetTailPosition
+# <a name="cgenericlistgettailposition-method"></a>Método CGenericList.GetTailPosition
 
 O `GetTailPosition` método recupera a posição do último item da lista.
 
@@ -40,9 +40,9 @@ POSITION GetTailPosition();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor de posição ou **NULL** se a lista estiver vazia.
+Retornará um valor POSITION ou **NULL se** a lista estiver vazia.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Retorna um valor de posição ou **NULL** se a lista estiver vazia.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Wxlist. h (incluir fluxos. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Wxlist.h (incluir Fluxos.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

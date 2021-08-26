@@ -64,12 +64,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4768e639cbfb1543e06c03f2d9e6566d0adb147e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0bcee521e5956242380c48fb07020db32eafeadb88f919ec6a20bdf2a10c4a23
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644806"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120125442"
 ---
 # <a name="imstscaxdisconnectedtext-property"></a>IMsTscAx: Propriedade isconnectedText de:D
 
@@ -106,7 +106,7 @@ A definição da propriedade **DisconnectedText** é opcional. Se não for espec
 
 Essa propriedade só poderá ser definida se o controle não estiver no estado conectado. O método retornará **E \_ falhará** se for chamado depois que o controle for conectado. Você pode verificar se o controle está conectado respondendo a eventos de conexão em [**IMsTscAxEvents**](imstscaxevents-interface.md) ou examinando a propriedade [**Connected**](imstscax-connected.md) .
 
-Esse método aloca a memória necessária para o buffer apontado pelo parâmetro *pDisconnectedText* . Chamar aplicativos C/C++ deve liberar a memória com uma chamada para a função [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) . Isso não é necessário para clientes de Visual Basic e de script.
+Esse método aloca a memória necessária para o buffer apontado pelo parâmetro *pDisconnectedText* . Chamar aplicativos C/C++ deve liberar a memória com uma chamada para a função [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) . isso não é necessário para clientes de Visual Basic e de script.
 
 Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for conexão Web de área de trabalho remota](requirements-for-remote-desktop-web-connection.md).
 

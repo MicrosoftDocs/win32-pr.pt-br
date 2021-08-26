@@ -4,12 +4,12 @@ description: O registro em log estendido do W3C é o tipo de log do lado do serv
 ms.assetid: a08b8f9e-2247-43c6-b253-81f72001d8d2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eb53ccf3b6bf5383a0a4da62538b6fa516c500f8
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 8fa67d2e0141dfb936ea44070479560ca90e9c3720db8ffebedf5af20b0442dc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113119941"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120078296"
 ---
 # <a name="w3c-logging"></a>Registro em log do W3C
 
@@ -26,7 +26,7 @@ Os campos que não estão marcados como "API do Servidor HTTP gerada" devem ser 
 | Campo                            | Aparece como      | Descrição                                                                                                                                | Membro DE \_ \_ DADOS DE CAMPOS DE LOG HTTP \_ | Constantes \_ HTTP LOG \_ FIELDS      |
 |----------------------------------|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|----------------------------------|
 | Data                             | data            | A data em que a atividade ocorreu.                                                                                                   | API do Servidor HTTP gerada.     | DATA DO \_ CAMPO DE LOG \_ \_ HTTP           |
-| Hora                             | time            | A hora, em UTC (tempo universal coordenado), em que a atividade ocorreu.                                                             | API do Servidor HTTP gerada.     | HORA DO \_ CAMPO DE LOG \_ \_ HTTP           |
+| Tempo                             | time            | A hora, em UTC (tempo universal coordenado), em que a atividade ocorreu.                                                             | API do Servidor HTTP gerada.     | HORA DO \_ CAMPO DE LOG \_ \_ HTTP           |
 | Nome do Serviço e Número da Instância | s-sitename      | O nome do serviço de Internet e o número da instância que estava em execução no cliente.                                                              | ServiceName                    | NOME \_ DO SITE DO CAMPO \_ \_ DE LOG \_ HTTP     |
 | Nome do Servidor                      | s-computername  | O nome do servidor no qual a entrada do arquivo de log foi gerada.                                                                          | ServerName                     | NOME \_ DO COMPUTADOR DO CAMPO \_ \_ DE LOG \_ HTTP |
 | Endereço IP do servidor                | s-ip            | O endereço IP do servidor no qual a entrada do arquivo de log foi gerada.                                                                    | ServerIp                       | IP \_ DO SERVIDOR DE CAMPO DE LOG \_ \_ \_ HTTP     |
@@ -43,7 +43,7 @@ Os campos que não estão marcados como "API do Servidor HTTP gerada" devem ser 
 | Host                             | cs-host         | O nome do cabeçalho de host, se houver.                                                                                                              | Host                           | \_host de \_ campo de log http \_           |
 | Status HTTP                      | sc-status       | O código de status HTTP.                                                                                                                      | ProtocolStatus                 | \_status do \_ campo de log http \_         |
 | Substatus do protocolo               | SC-substatus    | O código de erro de substatus.                                                                                                                  | SubStatus                      | substatus de \_ campo de log http \_ \_ \_    |
-| Status do Win32                     | SC-Win32-status | O código de status do Windows.                                                                                                                   | Win32Status                    | \_Status do \_ Win32 do campo de log http \_ \_  |
+| Status do Win32                     | SC-Win32-status | o código de status Windows.                                                                                                                   | Win32Status                    | \_Status do \_ Win32 do campo de log http \_ \_  |
 | Bytes Enviados                       | SC-bytes        | O número de bytes enviados pelo servidor.                                                                                                    | API do servidor HTTP gerada.     | \_bytes de campo de log http \_ \_ \_ enviados    |
 | Bytes Recebidos                   | cs-bytes        | O número de bytes recebidos e processados pelo servidor.                                                                                  | API do servidor HTTP gerada.     | \_bytes de campo de log http \_ \_ \_ recv    |
 | Tempo decorrido                       | tempo decorrido      | O período de tempo que a ação tomou em milissegundos.                                                                                  | API do servidor HTTP gerada.     | \_tempo de campo de log http \_ \_ \_ retirado    |

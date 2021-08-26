@@ -1,5 +1,5 @@
 ---
-title: Os atributos first_is e last_is
+title: Os atributos first_is e last_is dados
 description: Você pode determinar o número de elementos transmitidos especificando o primeiro e o último elementos.
 ms.assetid: bd4dcf42-64a7-4b05-ac55-be77c381eb2e
 keywords:
@@ -7,16 +7,16 @@ keywords:
 - last_is
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 159a2696db8e175f921b797176baaa8f3aa0263c
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 16c30c2e7e6689ba2a61f7f5e694a5b29f39af5cadcf7fa2ca2f51e14e1f3457
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104294453"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120017136"
 ---
-# <a name="the-first_is-and-last_is-attributes"></a>O \[ primeiro \_ é \] e o \[ último \_ são \] atributos
+# <a name="the-first_is-and-last_is-attributes"></a>O \[ primeiro é e o último é \_ \] \[ \_ \] Atributos
 
-Você pode determinar o número de elementos transmitidos especificando o primeiro e o último elementos. Use o \[ [**primeiro \_**](/windows/desktop/Midl/first-is) \] e o \[ [**último \_ são**](/windows/desktop/Midl/last-is) \] atributos, conforme mostrado:
+Você pode determinar o número de elementos transmitidos especificando o primeiro e o último elementos. Use o \[ [**primeiro é \_ e**](/windows/desktop/Midl/first-is) \] o último \[ [**\_ é**](/windows/desktop/Midl/last-is) \] atributos, conforme mostrado:
 
 ``` syntax
 /* IDL file */
@@ -38,6 +38,6 @@ interface arraytest
 }
 ```
 
- 
+ 
 
- 
+ 

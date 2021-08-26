@@ -3,13 +3,13 @@ title: Esquema e algoritmo de perfil do modelo de aparência de cores do WCS
 description: Esquema e algoritmo de perfil do modelo de aparência de cores do WCS
 ms.assetid: 017588fe-cec9-4178-a912-7950cefc036c
 keywords:
-- WCS (sistema de cores do Windows), perfil de modelo de aparência de cores (CAMP)
-- WCS (sistema de cores do Windows), perfil de modelo de aparência de cores (CAMP)
+- Windows Sistema de cores (WCS), perfil de modelo de aparência de cores (CAMP)
+- WCS (Windows sistema de cores), perfil de modelo de aparência de cores (CAMP)
 - gerenciamento de cores de imagem, perfil de modelo de aparência de cores (CAMP)
 - gerenciamento de cores, perfil de modelo de aparência de cores (CAMP)
 - cores, perfil de modelo de aparência de cor (CAMP)
-- WCS (sistema de cores do Windows), perfis
-- WCS (sistema de cores do Windows), perfis
+- Windows Sistema de cores (WCS), perfis
+- WCS (Windows sistema de cores), perfis
 - gerenciamento de cores de imagem, perfis
 - gerenciamento de cores, perfis
 - cores, perfis
@@ -21,12 +21,12 @@ keywords:
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a928aebcfe02f1db39de2452a0b49e5c888bccc
-ms.sourcegitcommit: 37f276b5d887a3aad04b1ba86e390dea9d87e591
+ms.openlocfilehash: 042cf74d264a7b5d40fdc30fec44784680a67b95363b579d0c7bebc7ececcedb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "105798335"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120090086"
 ---
 # <a name="wcs-color-appearance-model-profile-schema-and-algorithm"></a>Esquema e algoritmo de perfil do modelo de aparência de cores do WCS
 
@@ -158,7 +158,7 @@ targetNamespace = " http://schemas.microsoft.com/windows/2005/02/color/ColorAppe
 
 ## <a name="version"></a>Versão
 
-Versão &gt; 0,1 ou &lt; = "1,0" com a primeira versão do Windows Vista.
+versão &gt; 0,1 ou &lt; = "1,0" com a primeira versão do Windows Vista.
 
 **Condições de validação:** Qualquer valor &lt; de versão = 2,0 também é válido para dar suporte a alterações não significativas no formato.
 
@@ -166,7 +166,7 @@ Versão &gt; 0,1 ou &lt; = "1,0" com a primeira versão do Windows Vista.
 
 Esquema de perfil do modelo de aparência de cores.
 
-Copyright (C) Microsoft. Todos os direitos reservados.
+Copyright (C) Microsoft. All rights reserved.
 
 **Condições de validação:** Cada subelemento é validado por seu próprio tipo.
 
@@ -185,7 +185,7 @@ Esse elemento consiste nos seguintes subelementos:
 | Elemento                    | Type           |
 |----------------------------|----------------|
 | WhitePoint                 | WhitePointType |
-| Tela de fundo                 | CIEXYZ         |
+| Segundo plano                 | CIEXYZ         |
 | Ao                   | Surroundtype   |
 | LuminanceOfAdaptingField   | FLOAT          |
 | DegreeOfAdaptation         | FLOAT          |

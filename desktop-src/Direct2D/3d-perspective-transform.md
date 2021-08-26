@@ -6,12 +6,12 @@ keywords:
 - efeito de transformação de perspectiva 3D
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ed2b1c5131319dd711d2c7802a0bfabceaaa32e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 513d48a38e948f1255afa0cad3972a626c1e5b9039c9285c9c49b4180a5791d6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824835"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120079636"
 ---
 # <a name="3d-perspective-transform-effect"></a>Efeito de transformação de perspectiva 3D
 
@@ -36,7 +36,7 @@ O CLSID para esse efeito é CLSID \_ D2D13DPerspectiveTransform.
 | Antes                                                               |
 |----------------------------------------------------------------------|
 | ![a imagem antes do efeito.](images/default-before.jpg)           |
-| After (após)                                                                |
+| Depois                                                                |
 | ![a imagem após o efeito.](images/23-3dperspectivetransform.png) |
 
 
@@ -111,8 +111,8 @@ m_d2dContext->EndDraw();
 
 | Nome                     | Descrição                                                                                                      |
 |--------------------------|------------------------------------------------------------------------------------------------------------------|
-| \_Modo de borda d2d1 \_ \_ Soft | O efeito preenche a imagem com pixels pretos transparentes à medida que ele interpola, resultando em uma borda suave.<br/> |
-| \_Modo de borda d2d1 \_ \_ Hard | O efeito coloca a saída para o tamanho da imagem de entrada. <br/>                                         |
+| \_Modo de borda d2d1 \_ \_ Soft | O efeito padreira a imagem com pixels pretos transparentes à medida que interpola, resultando em uma borda suave.<br/> |
+| D2D1 \_ MODO DE BORDA \_ \_ RÍGIDO | O efeito fixa a saída ao tamanho da imagem de entrada. <br/>                                         |
 
 
 
@@ -122,7 +122,7 @@ m_d2dContext->EndDraw();
 
 O tamanho do bitmap de saída depende da matriz de transformação aplicada à imagem.
 
-O efeito executa a operação de transformação e, em seguida, aplica uma caixa delimitadora em volta do resultado. O bitmap de saída é o tamanho da caixa delimitadora.
+O efeito executa a operação de transformação e aplica uma caixa delimitador em torno do resultado. O bitmap de saída é o tamanho da caixa delimitada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -130,10 +130,10 @@ O efeito executa a operação de transformação e, em seguida, aplica uma caixa
 
 | Requisito | Valor |
 |--------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho do Windows 7 \[ \| aplicativos da Windows Store\] |
-| Servidor mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho do Windows 7 \[ \| aplicativos da Windows Store\] |
-| parâmetro                   | d2d1effects. h                                                                      |
-| Biblioteca                  | d2d1. lib, dxguid. lib                                                               |
+| Cliente mínimo com suporte | Windows 8 e Atualização de plataforma para Windows 7 aplicativos da área de trabalho \[ \| Windows Store\] |
+| Servidor mínimo com suporte | Windows 8 e Atualização de plataforma para Windows 7 aplicativos da área de trabalho \[ \| Windows Store\] |
+| Cabeçalho                   | d2d1effects.h                                                                      |
+| Biblioteca                  | d2d1.lib, dxguid.lib                                                               |
 
 
 

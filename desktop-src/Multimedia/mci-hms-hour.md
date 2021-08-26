@@ -3,7 +3,7 @@ title: Macro MCI_HMS_HOUR (Mciapi. h)
 description: A \_ macro HMS de hora do MCI \_ recupera o componente de horas de um parâmetro que contém as informações de horas/minutos/segundos (HMS) compactadas.
 ms.assetid: 55968b2b-2bfe-48ac-a50f-5c8741d11e33
 keywords:
-- Multimídia MCI_HMS_HOUR macro do Windows
+- macro de MCI_HMS_HOUR Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a7ecab8b5de7712a9c1a5ebd5c0a4401b264d7ee
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 97b8000e642d18f8499be5f8622a1cf7540fefbd041b7d34f23e1fd5e231815a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009747"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120039266"
 ---
 # <a name="mci_hms_hour-macro"></a>\_Macro de \_ hora HMS MCI
 
@@ -47,7 +47,7 @@ Hora no formato HMS.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o componente de horas das informações de HMS especificadas.
 

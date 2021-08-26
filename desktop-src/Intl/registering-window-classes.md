@@ -1,23 +1,23 @@
 ---
-description: Uma classe de janela é suportada por um procedimento de janela. Seu aplicativo pode registrar uma classe de janela usando a RegisterClassa ou RegisterClassW. Os novos aplicativos normalmente devem usar RegisterClassW.
+description: Uma classe de janela é suportada por um procedimento de janela. Seu aplicativo pode registrar uma classe de janela usando RegisterClassA ou RegisterClassW. Novos aplicativos normalmente devem usar RegisterClassW.
 ms.assetid: 016296ce-6151-4673-ad59-c69a2138a05a
 title: Registrando classes de janela
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 57c82e9daead566e5bcb5419fccc234014005f6f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3f508ebdbfa35f2551d723b3ef9a1ffd807917dfe71e503f9d77b2e8fdb136f2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104091817"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120040446"
 ---
 # <a name="registering-window-classes"></a>Registrando classes de janela
 
-Uma classe de janela é suportada por um procedimento de janela. Seu aplicativo pode registrar uma classe de janela usando a [**RegisterClassA**](/windows/win32/api/winuser/nf-winuser-registerclassa) ou [**RegisterClassW**](/windows/win32/api/winuser/nf-winuser-registerclassa). Os novos aplicativos normalmente devem usar **RegisterClassW**.
+Uma classe de janela é suportada por um procedimento de janela. Seu aplicativo pode registrar uma classe de janela usando [**RegisterClassA**](/windows/win32/api/winuser/nf-winuser-registerclassa) ou [**RegisterClassW.**](/windows/win32/api/winuser/nf-winuser-registerclassa) Novos aplicativos normalmente devem usar **RegisterClassW**.
 
-Se o aplicativo registrar a classe de janela usando [**RegisterClassA**](/windows/win32/api/winuser/nf-winuser-registerclassa), a função informará ao sistema operacional que as janelas da classe criada esperam mensagens com parâmetros de texto ou caracteres para usar um conjunto de caracteres de [página de código do Windows (ANSI)](code-pages.md) . O registro usando [**RegisterClassW**](/windows/win32/api/winuser/nf-winuser-registerclassa) permite que o aplicativo solicite que o sistema operacional passe parâmetros de texto de mensagens como [Unicode](unicode.md). A função [**IsWindowUnicode**](/windows/win32/api/winuser/nf-winuser-iswindowunicode) permite que um aplicativo consulte a natureza de cada janela.
+Se o aplicativo registrar a classe de janela usando [**RegisterClassA**](/windows/win32/api/winuser/nf-winuser-registerclassa), a função informará ao sistema operacional que as janelas da classe criada esperam mensagens com parâmetros de texto ou caractere para usar um conjunto de caracteres de página de [código ANSI (Windows).](code-pages.md) O registro [**usando RegisterClassW**](/windows/win32/api/winuser/nf-winuser-registerclassa) permite que o aplicativo solicite que o sistema operacional passe parâmetros de texto de mensagens como [Unicode.](unicode.md) A [**função IsWindowUnicode**](/windows/win32/api/winuser/nf-winuser-iswindowunicode) permite que um aplicativo consulte a natureza de cada janela.
 
-O exemplo a seguir mostra como registrar uma classe de janela de código do Windows e uma classe de janela Unicode e como escrever os procedimentos de janela para ambos os casos. Para os fins deste exemplo, todas as funções e estruturas são mostradas com os tipos de dados "A" (ANSI) ou "W" (Wide, Unicode) específicos. Usando as técnicas explicadas em como [usar tipos de dados genéricos](using-generic-data-types.md), você pode, como alternativa, escrever este exemplo para usar tipos de dados genéricos, para que ele possa ser compilado para usar páginas de código do Windows ou Unicode, dependendo se "Unicode" está definido.
+O exemplo a seguir mostra como registrar uma classe de Windows de página de código e uma classe de janela Unicode e como escrever os procedimentos de janela para ambos os casos. Para os fins deste exemplo, todas as funções e estruturas são mostradas com os tipos de dados específicos "A" (ANSI) ou "W" (wide, Unicode). Usando as técnicas explicadas em Usando tipos de dados genéricos [,](using-generic-data-types.md)você pode, como alternativa, escrever este exemplo para usar tipos de dados genéricos, para que ele possa ser compilado para usar páginas de código Windows ou Unicode, dependendo se "UNICODE" está definido.
 
 
 ```C++
@@ -58,7 +58,7 @@ RegisterClassW(&UnicodeWndCls);
 
 
 
-O exemplo a seguir mostra a diferença entre a manipulação da mensagem do [**WM \_ Char**](../inputdev/wm-char.md) em um procedimento de janela de página de código do Windows e um procedimento de janela Unicode.
+O exemplo a seguir mostra a diferença entre lidar com a mensagem [**CHAR \_ WM**](../inputdev/wm-char.md) em um procedimento de janela Windows página de código e um procedimento de janela Unicode.
 
 
 ```C++
@@ -127,13 +127,13 @@ LRESULT CALLBACK UniWndProc(HWND hWnd, UINT message,
 
 
 
-Todo texto em mensagens recebidas por **AnsiWndProc** é composto por caracteres de página de código do Windows. Todo o texto nas mensagens recebidas por **UniWndProc** é composto por caracteres Unicode.
+Todo o texto em mensagens **recebidas por AnsiWndProc** é composto por Windows de página de código. Todo o texto em mensagens recebidas **pelo UniWndProc** é composto por caracteres Unicode.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Usando Unicode e conjuntos de caracteres](using-unicode-and-character-sets.md)
+[Usando unicode e conjuntos de caracteres](using-unicode-and-character-sets.md)
 </dt> </dl>
 
  

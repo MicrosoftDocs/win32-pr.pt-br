@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: a9dcf6bdd3798b18e08b796eb268f93dc4ec6bbc
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 448b57e73bec0115d4c2ae87be96630cad6542833da66a2de8e02037c264de83
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646461"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120058576"
 ---
 # <a name="sdbbeginwritelisttag-function"></a>Função SdbBeginWriteListTag
 
@@ -54,7 +54,7 @@ A marca para a nova entrada. Esse valor deve ser do tipo **\_ \_ lista de tipos 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 A função retorna o [**TagId**](tagid.md) da nova lista em êxito ou **TagId \_ nulo** em caso de falha.
 
@@ -64,8 +64,8 @@ A função retorna o [**TagId**](tagid.md) da nova lista em êxito ou **TagId \_
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                   |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

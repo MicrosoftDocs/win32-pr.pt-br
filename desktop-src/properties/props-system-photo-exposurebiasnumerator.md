@@ -4,12 +4,12 @@ ms.assetid: 717808cb-7f73-4543-bc07-2ab252792b91
 title: System. Photo. ExposureBiasNumerator
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e0e12893d87de153189049d62e10bcfcad2c95f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 25c791c5ed25248aa58ef00fb2751be2cf7a0d201e8473fd2dfabc700f527508
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105810697"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120112056"
 ---
 # <a name="systemphotoexposurebiasnumerator"></a>System. Photo. ExposureBiasNumerator
 
