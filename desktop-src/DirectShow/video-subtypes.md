@@ -4,12 +4,12 @@ ms.assetid: 122beb40-410b-4f97-a09d-3d6278846a15
 title: Subtipos de vídeo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b89303463a9f180fbafa7e61c614849999afb1c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0edc964a2227db01711f4533cb07b2898d20cd683bc1b42d1800b2bda7a8ae49
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105769360"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120078526"
 ---
 # <a name="video-subtypes"></a>Subtipos de vídeo
 
@@ -26,7 +26,7 @@ Esta seção descreve os GUIDs de subtipo de vídeo:
 
 Para obter informações sobre os tipos de mídia MPEG-1 e MPEG-2, consulte:
 
--   [**Tipos de mídia MPEG-1**](mpeg-1-media-types.md)
+-   [**Tipos de Mídia MPEG-1**](mpeg-1-media-types.md)
 -   [Tipos de mídia MPEG-2](mpeg-2-media-types.md)
 
 ## <a name="related-topics"></a>Tópicos relacionados

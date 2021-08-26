@@ -1,9 +1,9 @@
 ---
-title: Mensagem de CB_DELETESTRING (WinUser. h)
+title: CB_DELETESTRING mensagem (Winuser.h)
 description: Exclui uma cadeia de caracteres na caixa de listagem de uma caixa de combinação.
 ms.assetid: 8d526796-04ef-4c01-94d6-fb50e6fef27b
 keywords:
-- Controles de CB_DELETESTRING de mensagens do Windows
+- CB_DELETESTRING controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eb0d3900c86874db1113c219fd9f7967c5f6bb6e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b0bed1d654b86ffeb4a02c780678822e1999847ef0e163e35ecba081af099f66
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086330"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120063576"
 ---
-# <a name="cb_deletestring-message"></a>\_Mensagem excluída CB
+# <a name="cb_deletestring-message"></a>Mensagem CB \_ DELETESTRING
 
 Exclui uma cadeia de caracteres na caixa de listagem de uma caixa de combinação.
 
@@ -32,7 +32,7 @@ Exclui uma cadeia de caracteres na caixa de listagem de uma caixa de combinaçã
 *wParam* 
 </dt> <dd>
 
-O índice de base zero da cadeia de caracteres a ser excluída.
+O índice baseado em zero da cadeia de caracteres a ser excluído.
 
 </dd> <dt>
 
@@ -43,13 +43,13 @@ Este parâmetro não é usado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O valor de retorno é uma contagem das cadeias de caracteres restantes na lista. Se o parâmetro *wParam* especificar um índice maior que o número de itens na lista, o valor de retorno será CB \_ Err.
+O valor de retorno é uma contagem das cadeias de caracteres restantes na lista. Se o *parâmetro wParam* especificar um índice maior que o número de itens na lista, o valor de retorno será CB \_ ERR.
 
 ## <a name="remarks"></a>Comentários
 
-Se você criar a caixa de combinação com um estilo desenhado pelo proprietário, mas sem o estilo [**CBS \_ HASSTRINGS**](combo-box-styles.md) , o sistema enviará uma mensagem do [**WM \_ DELETEITEM**](wm-deleteitem.md) para o proprietário da caixa de combinação para que o aplicativo possa liberar quaisquer dados adicionais associados ao item.
+Se você criar a caixa de combinação com um estilo desenhado pelo proprietário, mas sem o estilo [**\_ CBS HASSTRINGS,**](combo-box-styles.md) o sistema enviará uma mensagem [**WM \_ DELETEITEM**](wm-deleteitem.md) ao proprietário da caixa de combinação para que o aplicativo possa liberar quaisquer dados adicionais associados ao item.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,9 +57,9 @@ Se você criar a caixa de combinação com um estilo desenhado pelo proprietári
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -70,10 +70,10 @@ Se você criar a caixa de combinação com um estilo desenhado pelo proprietári
 **Referência**
 </dt> <dt>
 
-[**\_RESETCONTENT CB**](cb-resetcontent.md)
+[**CB \_ RESETCONTENT**](cb-resetcontent.md)
 </dt> <dt>
 
-[**DELETEITEM do WM \_**](wm-deleteitem.md)
+[**WM \_ DELETEITEM**](wm-deleteitem.md)
 </dt> </dl>
 
  

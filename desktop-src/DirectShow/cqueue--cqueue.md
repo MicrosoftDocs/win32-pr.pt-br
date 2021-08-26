@@ -1,7 +1,7 @@
 ---
-description: CQueue. ~ CQueue destruidor-método Destruitor.
+description: Destruidor CQueue.~CQueue – método destruidor.
 ms.assetid: 6c3f21cf-5353-4ccb-a6f6-f3e182dec874
-title: CQueue. ~ CQueue Destruitor (Wxutil. h)
+title: Destruidor CQueue.~CQueue (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 85681dff4b336c179a1dff94eca386593d98d156
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 713ef69ab64dc4dea41de49243be46aeafca03047e076a4e7c5e5ffe7d6ce705
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108095204"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120103136"
 ---
-# <a name="cqueuecqueue-destructor"></a>Destruidor CQueue. ~ CQueue
+# <a name="cqueuecqueue-destructor"></a>Destruidor CQueue.~CQueue
 
 Método destruidor.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -42,12 +42,12 @@ Método destruidor.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Wxutil. h (incluir fluxos. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Wxutil.h (incluir Fluxos.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

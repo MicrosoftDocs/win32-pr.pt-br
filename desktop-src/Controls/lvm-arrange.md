@@ -3,7 +3,7 @@ title: Mensagem de LVM_ARRANGE (commctrl. h)
 description: Organiza os itens na exibição de ícones. Você pode enviar essa mensagem explicitamente ou usando a macro de \_ organização de ListView.
 ms.assetid: f7dbcdd2-3cc9-4bae-827e-8bac3b49486c
 keywords:
-- Controles de LVM_ARRANGE de mensagens do Windows
+- controles de Windows de mensagem de LVM_ARRANGE
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a1b6a081cf963a649329951358ea4c972f200f5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 98d7e3595c276815af8708a54d6e81c2a40192d8d07e6cbce514481723799d04
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085178"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120062646"
 ---
 # <a name="lvm_arrange-message"></a>Mensagem de organização do LVM \_
 
@@ -56,7 +56,7 @@ Deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará **true** se for bem-sucedido; caso contrário, **false**.
 
@@ -66,9 +66,9 @@ Retornará **true** se for bem-sucedido; caso contrário, **false**.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

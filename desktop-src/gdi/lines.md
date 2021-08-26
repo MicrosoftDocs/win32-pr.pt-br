@@ -4,12 +4,12 @@ ms.assetid: 538aa3c3-e13a-40dc-b977-3e353a7e9893
 title: Linhas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 64cd678f782567e98d32ab7f8786d5b87aab1918
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4b81976984cecc3d4d3b27fb3e474e896c6e81f03e6f601db36418b9e3cf197c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104165070"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120062096"
 ---
 # <a name="lines"></a>Linhas
 
@@ -19,7 +19,7 @@ Quando um aplicativo chama uma das funções de desenho de linha, GDI (interface
 
 ![ilustração mostrando uma grade de pixels, pontos iniciais e finais, uma linha e sombreamento nos pixels que estão ao longo da linha](images/cslcv-01.png)
 
-O mais simples e mais comum DDA é o Bresenham, ou incremental, DDA. Uma versão modificada desse algoritmo desenha linhas no Windows. O DDA incremental é observado para sua simplicidade, mas também é anotado para sua inexatidão. Como ele arredonda para o valor inteiro mais próximo, às vezes, ele não representa a linha original solicitada pelo aplicativo. O DDA usado pelo GDI não é arredondado para o número inteiro mais próximo. Como resultado, esse novo DDA produz uma saída que às vezes é muito mais próxima da aparência à linha original solicitada pelo aplicativo.
+O mais simples e mais comum DDA é o Bresenham, ou incremental, DDA. Uma versão modificada desse algoritmo desenha linhas em Windows. O DDA incremental é observado para sua simplicidade, mas também é anotado para sua inexatidão. Como ele arredonda para o valor inteiro mais próximo, às vezes, ele não representa a linha original solicitada pelo aplicativo. O DDA usado pelo GDI não é arredondado para o número inteiro mais próximo. Como resultado, esse novo DDA produz uma saída que às vezes é muito mais próxima da aparência à linha original solicitada pelo aplicativo.
 
 > [!Note]  
 > Se um aplicativo exigir uma saída de linha que não possa ser obtida com o novo DDA, ele poderá desenhar suas próprias linhas chamando a função [**LineDDA**](/windows/desktop/api/Wingdi/nf-wingdi-linedda) e fornecendo um DDA ([**LineDDAProc**](/windows/desktop/api/Wingdi/nc-wingdi-lineddaproc)) particular. No entanto, a função **LineDDA** desenha linhas muito mais lentas do que as funções de desenho de linha. Não use essa função em um aplicativo se a velocidade for uma preocupação principal.

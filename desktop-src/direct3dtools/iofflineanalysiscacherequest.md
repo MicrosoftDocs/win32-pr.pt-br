@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 685a3dc9db41afb4962812cbd0221ec5b6b1b6ea037e1affb9df56e810647694
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 01551f7b0347b3b6f0920e47a2666a480c67439d
+ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120023096"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122786322"
 ---
 # <a name="span-idvspixengineiofflineanalysiscacherequestspaniofflineanalysiscacherequest-interface"></a><span id="vspixengine.iofflineanalysiscacherequest"></span>Interface IOfflineAnalysisCacheRequest
 
@@ -30,7 +30,7 @@ Solicita informações sobre se uma solicitação offline é armazenada em cache
 
 ## <a name="members"></a>Membros
 
-A interface **IOfflineAnalysisCacheRequest** herda da interface [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IOfflineAnalysisCacheRequest** também tem estes tipos de membros:
+A interface **IOfflineAnalysisCacheRequest** herda da interface [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IOfflineAnalysisCacheRequest** também tem estes tipos de membros:
 
 -   [Métodos](#methods)
 
@@ -38,13 +38,13 @@ A interface **IOfflineAnalysisCacheRequest** herda da interface [**IUnknown**](/
 
 A interface **IOfflineAnalysisCacheRequest** tem esses métodos.
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descrição</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/iofflineanalysiscacherequest-requestofflineanalysisreportavailabilityasync-dword-dword-arr-iofflineanalysiscachecallback-ptr"><strong>RequestOfflineAnalysisReportAvailabilityAsync</strong></a></td><td style="text-align: left;"><p>Solicitações para armazenar em cache o relatório de análise offline dos quadros especificados.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th >Método</th><th >Descrição</th></tr></thead><tbody><tr class="odd"><td ><a href="/windows/desktop/direct3dtools/iofflineanalysiscacherequest-requestofflineanalysisreportavailabilityasync-dword-dword-arr-iofflineanalysiscachecallback-ptr"><strong>RequestOfflineAnalysisReportAvailabilityAsync</strong></a></td><td ><p>Solicitações para armazenar em cache o relatório de análise offline dos quadros especificados.</p></td></tr></tbody></table>
 
  
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

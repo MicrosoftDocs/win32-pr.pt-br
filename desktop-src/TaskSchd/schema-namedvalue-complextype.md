@@ -1,9 +1,9 @@
 ---
-title: Tipo complexo nomeadovalue
-description: Define um nome que está associado a um valor em um par de nome-valor.
+title: Tipo complexo namedValue
+description: Define um nome associado a um valor em um par nome-valor.
 ms.assetid: 5e3ce01a-9be6-4f12-be02-42065aba46cd
 keywords:
-- tipo complexo nomeadovalue Agendador de Tarefas
+- tipo complexo namedValue Agendador de Tarefas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 39d6990194350dcc032d42838f30bdd7339b0d38
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1f0f92b89114dfedfbfdbc61d476aff99332191317c1f67b2163eb9416ef3a42
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918745"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120080416"
 ---
-# <a name="namedvalue-complex-type"></a>Tipo complexo nomeadovalue
+# <a name="namedvalue-complex-type"></a>Tipo complexo namedValue
 
-Define um nome que está associado a um valor em um par de nome-valor.
+Define um nome associado a um valor em um par nome-valor.
 
 ``` syntax
 <xs:complexType name="namedValue">
@@ -45,7 +45,7 @@ Define um nome que está associado a um valor em um par de nome-valor.
 
 | Nome | Tipo                                                                    | Descrição                                                                          |
 |------|-------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| name | [**não vazio**](taskschedulerschema-nonemptystring-simpletype.md) | Especifica o nome que está associado a um valor em um par de nome-valor. <br/> |
+| name | [**nonEmptyString**](taskschedulerschema-nonemptystring-simpletype.md) | Especifica o nome associado a um valor em um par nome-valor. <br/> |
 
 
 
@@ -55,8 +55,8 @@ Define um nome que está associado a um valor em um par de nome-valor.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

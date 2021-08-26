@@ -6,12 +6,12 @@ keywords:
 - Chamada de procedimento remoto RPC, tarefas, desenvolvendo o servidor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0fc3405c52c48f531572ab159ad083bad93f95e0
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: efeba77168abe53e1df823f416c80a015cc63bc7b89c79a0a86d79174a7c78fb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104294373"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120073396"
 ---
 # <a name="developing-the-server"></a>Desenvolvendo o servidor
 
@@ -25,8 +25,8 @@ O aplicativo de servidor foi desenvolvido em dois arquivos, Mysrvr. c e Rprocs. 
 
 Os arquivos Mysrvr. c e Rprocs. c foram compilados junto com MyApp \_ s. c para produzir arquivos de objeto. Os arquivos de objeto foram então vinculados com a biblioteca de tempo de execução RPC e quaisquer outras bibliotecas que possam precisar. O resultado é um programa de servidor executável chamado Mysrvr.exe.
 
-Se você não compilar seu arquivo IDL no modo de compatibilidade do uso (Open Software Foundation) ([**/OSF**](/windows/desktop/Midl/-osf)), o programa do servidor deverá fornecer uma função para alocar memória e uma função para desalocá-lo. Para o Windows 2000 e versões posteriores do Windows, o modo recomendado é [**/Oicf**](/windows/desktop/Midl/-oi). Para obter detalhes, consulte [como a memória é alocada e desalocada](how-memory-is-allocated-and-deallocated.md), e [ponteiros e alocação de memória](pointers-and-memory-allocation.md).
+Se você não compilar seu arquivo IDL no modo de compatibilidade do uso (Open Software Foundation) ([**/OSF**](/windows/desktop/Midl/-osf)), o programa do servidor deverá fornecer uma função para alocar memória e uma função para desalocá-lo. para Windows 2000 e versões posteriores do Windows, o modo recomendado é [**/Oicf**](/windows/desktop/Midl/-oi). Para obter detalhes, consulte [como a memória é alocada e desalocada](how-memory-is-allocated-and-deallocated.md), e [ponteiros e alocação de memória](pointers-and-memory-allocation.md).
 
- 
+ 
 
- 
+ 

@@ -4,12 +4,12 @@ ms.assetid: 7c9f2dd7-8dbc-4bbe-b53c-8036c79faa8a
 title: Funções PNRP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bc0e811c2d10927064e380970456c76f30730ee4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f109684be61bf1a9a194acb89b22fd4a50be652a6615a18a789e157ca2a5d909
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105748416"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120034376"
 ---
 # <a name="pnrp-functions"></a>Funções PNRP
 
@@ -19,7 +19,7 @@ A API do provedor de namespace do PNRP usa as funções a seguir.
 
 | Função                                                             | Descrição                                                                                                                                                  |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**PeerNameToPeerHostName**](/windows/desktop/api/P2P/nf-p2p-peernametopeerhostname)             | Codifica o nome de par fornecido como um formato que pode ser usado com uma chamada subsequente para a função [**Getaddrinfo**](/windows/desktop/api/ws2tcpip/nf-ws2tcpip-getaddrinfo) do Windows Sockets. |
+| [**PeerNameToPeerHostName**](/windows/desktop/api/P2P/nf-p2p-peernametopeerhostname)             | codifica o nome de par fornecido como um formato que pode ser usado com uma chamada subsequente para a função [**getaddrinfo**](/windows/desktop/api/ws2tcpip/nf-ws2tcpip-getaddrinfo) Windows sockets. |
 | [**PeerHostNameToPeerName**](/windows/desktop/api/P2P/nf-p2p-peerhostnametopeername)             | Decodifica um nome de host retornado por [**PeerNameToPeerHostName**](/windows/desktop/api/P2P/nf-p2p-peernametopeerhostname) na cadeia de caracteres de nome de par que ele representa.                            |
 | [**PeerPnrpStartup**](/windows/desktop/api/P2P/nf-p2p-peerpnrpstartup)                           | Inicia o serviço PNRP (Peer Name Resolution Protocol) para o ponto de chamada.                                                                                |
 | [**PeerPnrpShutdown**](/windows/desktop/api/P2P/nf-p2p-peerpnrpshutdown)                         | Desliga uma instância em execução do serviço PNRP (Peer Name Resolution Protocol) e libera todos os recursos associados a ele.                             |

@@ -4,12 +4,12 @@ description: O Microsoft RPC fornece vários níveis de autenticação.
 ms.assetid: d9ed938e-4cd4-4355-8d08-830f955dd00c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c5fd25efb84b4ee2834e6f79c7fdd21dd903d55
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 8cff12dae7331577da7748c2dc069bd6e7e4af6cfb1961f80d3de461930ddc3e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104159764"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120080896"
 ---
 # <a name="authentication-levels"></a>Níveis de autenticação
 
@@ -21,9 +21,9 @@ Lembre-se de que os níveis mais altos de autenticação exigem maior sobrecarga
 
 As partes do cliente e do servidor do aplicativo distribuído devem usar o mesmo nível de autenticação. Para obter uma lista de níveis de autenticação RPC, consulte [constantes de nível de autenticação](authentication-level-constants.md).
 
- 
+ 
 
- 
+ 
 
 
 

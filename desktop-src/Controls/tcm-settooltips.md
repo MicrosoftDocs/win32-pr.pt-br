@@ -3,7 +3,7 @@ title: Mensagem de TCM_SETTOOLTIPS (commctrl. h)
 description: Atribui um controle ToolTip a um controle guia. Você pode enviar essa mensagem explicitamente ou usando a \_ macro SetToolTips do TabCtrl.
 ms.assetid: c1b173b1-9da6-441a-a2b6-3875e2c343f8
 keywords:
-- Controles de TCM_SETTOOLTIPS de mensagens do Windows
+- controles de Windows de mensagem de TCM_SETTOOLTIPS
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 25e00166fb97c49c33b22811d28b79165bed4e9b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c8bfec3b7272ceae3dcbf1781e3bb17a988f2252b3c0a74822677bff6ea39209
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644242"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120104686"
 ---
 # <a name="tcm_settooltips-message"></a>Mensagem do TCM \_ SETtooltips
 
@@ -39,7 +39,7 @@ Identificador para o controle ToolTip.
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sem valor de retorno.
 
@@ -53,9 +53,9 @@ Você pode recuperar o controle de dica de ferramenta associado a um controle gu
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

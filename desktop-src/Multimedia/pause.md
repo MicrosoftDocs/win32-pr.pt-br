@@ -1,9 +1,9 @@
 ---
-title: comando Pause
-description: O comando PAUSE Pausa a reprodução ou a gravação.
+title: comando pause
+description: O comando pause pausa a reprodução ou a gravação.
 ms.assetid: 8fa1a40d-fdb1-4c9f-a8db-9dd6a0d83b87
 keywords:
-- pausar o comando multimídia do Windows
+- pause o comando Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 25957defa4db514ce84f2e013dcc3751e21779b8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 05f91441113d060a98219263e49388b99396fa2eeeb78d8f3eabdd6c71d8a3a4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824819"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120038086"
 ---
-# <a name="pause-command"></a>comando Pause
+# <a name="pause-command"></a>comando pause
 
-O comando PAUSE Pausa a reprodução ou a gravação. A maioria dos drivers mantém a posição atual e, eventualmente, reinicia a reprodução ou a gravação nessa posição. CD de áudio, digital-vídeo, MIDI Sequencer, VCR, VIDEODISC e formato de onda-os dispositivos de áudio reconhecem este comando.
+O comando pause pausa a reprodução ou a gravação. A maioria dos drivers mantém a posição atual e, eventualmente, retoma a reprodução ou a gravação nessa posição. Os dispositivos cd audio, digital-video, MIDI sequencer, VCR, videodisc e waveform-audio reconhecem esse comando.
 
-Para enviar esse comando, chame a função [**mciSendString**](/previous-versions//dd757161(v=vs.85)) com o parâmetro *lpszCommand* definido da seguinte maneira.
+Para enviar esse comando, chame a [**função mciSendString**](/previous-versions//dd757161(v=vs.85)) com *o parâmetro lpszCommand* definido da seguinte forma.
 
 ``` syntax
 _stprintf_s(
@@ -48,17 +48,17 @@ Identificador de um dispositivo MCI. Esse identificador ou alias é atribuído q
 <span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*
 </dt> <dd>
 
-Pode ser "Wait", "notificar" ou ambos. Para dispositivos de vídeo digital e VCR, o "teste" também pode ser especificado. Para obter mais informações sobre esses sinalizadores, consulte [os sinalizadores aguardar, notificar e testar](the-wait-notify-and-test-flags.md).
+Pode ser "wait", "notify" ou ambos. Para dispositivos de vídeo digital e VCR, "teste" também pode ser especificado. Para obter mais informações sobre esses sinalizadores, consulte [Os sinalizadores de espera, notificação e teste.](the-wait-notify-and-test-flags.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retornará zero se for bem-sucedido ou um erro de outra forma.
+Retornará zero se for bem-sucedido ou um erro, caso contrário.
 
 ## <a name="remarks"></a>Comentários
 
-Com os drivers MCICDA, MCISEQ e MCIPIONR, o comando Pause funciona da mesma forma que o comando [Stop](stop.md) .
+Com os drivers MCICDA, MCISEQ e MCIPIONR, o comando pause funciona da mesma forma que o [comando stop.](stop.md)
 
 ## <a name="examples"></a>Exemplos
 
@@ -83,7 +83,7 @@ pause mysound
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
 [Cadeias de caracteres de comando MCI](mci-command-strings.md)

@@ -4,12 +4,12 @@ ms.assetid: dbb50193-4c67-494e-9c46-2ac3106fac9a
 title: Estruturas de processo e thread
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 59b2b4a8209c3f1f9fb3163c849fa2c229d2bdf5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2b5893340c72ee46eff43b16db936025fbb5463fbe0cc10e2eba1829962269d1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105812883"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120081376"
 ---
 # <a name="process-and-thread-structures"></a>Estruturas de processo e thread
 

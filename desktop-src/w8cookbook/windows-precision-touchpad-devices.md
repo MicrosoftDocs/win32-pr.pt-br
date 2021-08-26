@@ -1,26 +1,26 @@
 ---
-title: Dispositivos Touchpad do Windows Precision
-description: Dispositivos Touchpad do Windows Precision
+title: dispositivos touchpad de Windows precision
+description: dispositivos touchpad de Windows precision
 ms.assetid: 026F9940-C985-4F3A-BDBB-2977B14EAB1F
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 07107c1d9532c4a4663a667a8e3db64124f23e5d
-ms.sourcegitcommit: 40dd8501397fc79a643deb528c6c57ac2e9726ce
+ms.openlocfilehash: bfb81978c9c9849dfa0d073a4b37af3760d1d4e5bc8e8fa2e81317293db04fc6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "104365426"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120007896"
 ---
-# <a name="windows-precision-touchpad-devices"></a>Dispositivos Touchpad do Windows Precision
+# <a name="windows-precision-touchpad-devices"></a>dispositivos touchpad de Windows precision
 
 ## <a name="platforms"></a>Plataformas
 
 <dl> Clientes-Windows 8.1  
 </dl>
 
-## <a name="description"></a>Description
+## <a name="description"></a>Descrição
 
-O touchpad do Windows Precision é uma nova classe de dispositivos de entrada que fornece funcionalidade de gesto e entrada de ponteiro de alta precisão. Por padrão, esses dispositivos geram mensagens de roda de rolagem de precisão extremamente alta para o consumo de aplicativos de área de trabalho.
+o Touchpad de precisão de Windows é uma nova classe de dispositivos de entrada que fornece funcionalidade de gesto e entrada de ponteiro de alta precisão. Por padrão, esses dispositivos geram mensagens de roda de rolagem de precisão extremamente alta para o consumo de aplicativos de área de trabalho.
 
 ## <a name="manifestations"></a>Manifestações
 
@@ -32,7 +32,7 @@ Os desenvolvedores de aplicativos devem examinar o Delta de rolagem nas mensagen
 
 ## <a name="solution"></a>Solução
 
-Se o aplicativo for capaz de lidar com mensagens de roda de rolagem de precisão extremamente alta, nada precisará ser feito, pois essa é a mensagem padrão enviada pelos touchpads do Windows Precision.
+se o aplicativo for capaz de lidar com mensagens de roda de rolagem de precisão extremamente alta, nada precisará ser feito, pois essa é a mensagem padrão enviada por touchpads de precisão Windows.
 
 Se o aplicativo for capaz de lidar com mensagens de roda de rolagem de alta precisão, mas não para mensagens de roda de precisão ultra alta, adicione o seguinte ao manifesto do aplicativo:
 
@@ -60,9 +60,9 @@ Se o aplicativo não for capaz de lidar com mensagens de roda de rolagem de alta
 
 
 
- 
+ 
 
- 
+ 
 
 
 

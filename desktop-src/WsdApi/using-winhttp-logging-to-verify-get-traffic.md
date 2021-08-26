@@ -1,45 +1,45 @@
 ---
-description: Se o host genérico e o cliente forem bem-sucedidos, mas o host e o cliente reais ainda falharem, é possível que a solicitação de metadados não esteja sendo iniciada. O log de WinHTTP pode ser usado para verificar se as mensagens de saída estão sendo geradas e enviadas corretamente.
+description: Se o host genérico e o cliente são bem-sucedidos, mas o host e o cliente reais ainda falham, é possível que a solicitação de metadados não esteja sendo iniciada. O registro em log do WinHTTP pode ser usado para verificar se as mensagens de saída estão sendo geradas e enviadas corretamente.
 ms.assetid: ab4568bd-fc05-4e2a-ac8c-f035e6583a36
-title: Usando o log do WinHTTP para verificar o tráfego de obtenção
+title: Usando o registro em log do WinHTTP para verificar o tráfego
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 448e4a127baf90a64291cbd14477c424270b332d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 031359dac8c8fa890568d6833cbfdf8c3d41d43bd52403a7def61a7392e8e23a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104169648"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119995216"
 ---
-# <a name="using-winhttp-logging-to-verify-get-traffic"></a>Usando o log do WinHTTP para verificar o tráfego de obtenção
+# <a name="using-winhttp-logging-to-verify-get-traffic"></a>Usando o registro em log do WinHTTP para verificar o tráfego
 
-Se o host genérico e o cliente forem bem-sucedidos, mas o host e o cliente reais ainda falharem, é possível que a solicitação de metadados não esteja sendo iniciada. O log de [WinHTTP](/windows/desktop/WinHttp/winhttp-start-page) pode ser usado para verificar se as mensagens de saída estão sendo geradas e enviadas corretamente.
+Se o host genérico e o cliente são bem-sucedidos, mas o host e o cliente reais ainda falham, é possível que a solicitação de metadados não esteja sendo iniciada. O registro em log do [WinHTTP](/windows/desktop/WinHttp/winhttp-start-page) pode ser usado para verificar se as mensagens de saída estão sendo geradas e enviadas corretamente.
 
-Os aplicativos cliente baseados em WSDAPI usam o [WinHTTP](/windows/desktop/WinHttp/winhttp-start-page) para se conectar a dispositivos. Os hosts de dispositivo baseados em WSDAPI não usam o WinHTTP. Além disso, alguns proxies de terceiros não usam o WinHTTP. Ao solucionar problemas de um host ou proxy que não usa o WinHTTP, ignore este procedimento de diagnóstico e continue a solução de problemas seguindo os procedimentos em [inspecionar rastreamentos de rede para troca de metadados http](inspecting-network-traces-for-http-metadata-exchange.md).
+Aplicativos cliente baseados em WSDAPI usam [WinHTTP](/windows/desktop/WinHttp/winhttp-start-page) para se conectar a dispositivos. Hosts de dispositivo baseados em WSDAPI não usam WinHTTP. Além disso, alguns proxies de terceiros não usam WinHTTP. Ao solucionar problemas de um host ou proxy que não usa WinHTTP, ignore este procedimento de diagnóstico e continue a solução de problemas seguindo os procedimentos em Inspecionando rastreamentos de rede para metadados [HTTP Exchange](inspecting-network-traces-for-http-metadata-exchange.md).
 
-O log de [WinHTTP](/windows/desktop/WinHttp/winhttp-start-page) não mostra todo o tráfego de nível de TCP. Pule para [inspecionar rastreamentos de rede para troca de metadados http](inspecting-network-traces-for-http-metadata-exchange.md) se o tráfego além do tráfego http for de seu interesse.
+O registro em log do [WinHTTP](/windows/desktop/WinHttp/winhttp-start-page) não mostra todo o tráfego no nível do TCP. Pule para [Inspecionar rastreamentos de rede para metadados HTTP Exchange](inspecting-network-traces-for-http-metadata-exchange.md) se o tráfego além do tráfego HTTP for de interesse.
 
-**Para usar o log de WinHTTP para verificar o tráfego de obtenção**
+**Para usar o registro em log do WinHTTP para verificar Obter tráfego**
 
 1.  [Capture os logs do WinHTTP.](capturing-winhttp-logs.md)
-2.  Inicie o bloco de notas ou outro editor de texto. O editor de texto deve ser executado como administrador.
-3.  Abra o arquivo de log do WinHTTP.
+2.  Inicie Bloco de notas ou outro editor de texto. O editor de texto deve ser executado como Administrador.
+3.  Abra o arquivo de log WinHTTP.
 4.  Verifique se as solicitações HTTP necessárias e as mensagens de metadados foram enviadas.
 
-Se uma mensagem [Get](get--metadata-exchange--http-request-and-message.md) para o host for encontrada nos logs do WinHTTP, as solicitações de metadados serão enviadas ao WinHTTP com êxito. Continue a solução de problemas seguindo os procedimentos em [inspecionar rastreamentos de rede para troca de metadados http](inspecting-network-traces-for-http-metadata-exchange.md).
+Se uma [mensagem Get](get--metadata-exchange--http-request-and-message.md) para o host for encontrada nos logs do WinHTTP, as solicitações de metadados serão enviadas ao WinHTTP com êxito. Continue a solução de problemas seguindo os procedimentos em [Inspecionando rastreamentos de rede para metadados HTTP Exchange](inspecting-network-traces-for-http-metadata-exchange.md).
 
-Se uma mensagem [Get](get--metadata-exchange--http-request-and-message.md) não puder ser encontrada para o host nos logs do WinHTTP, a solicitação de metadados não será iniciada. Isso pode acontecer quando o host publica XAddrs inválida. Verifique se o XAddrs no host está em conformidade com as [regras de validação do XAddr](xaddr-validation-rules.md).
+Se uma [mensagem Get](get--metadata-exchange--http-request-and-message.md) não puder ser encontrada para o host nos logs do WinHTTP, a solicitação de metadados não será iniciada. Isso pode acontecer quando o host publica XAddrs inválidos. Verifique se os XAddrs no host estão em conformidade com as [regras de validação XAddr](xaddr-validation-rules.md).
 
 ## <a name="verifying-that-the-required-http-requests-and-metadata-messages-were-sent"></a>Verificando se as solicitações HTTP necessárias e as mensagens de metadados foram enviadas
 
-Os eventos a seguir devem ocorrer para uma troca de metadados bem-sucedida:
+Os seguintes eventos devem ocorrer para troca de metadados bem-sucedida:
 
 -   O cliente WSDAPI gera uma solicitação HTTP de saída. Essa solicitação é enviada para o host WSDAPI.
--   O cliente envia uma mensagem [Get](get--metadata-exchange--http-request-and-message.md) para o host.
+-   O cliente envia uma [mensagem Get](get--metadata-exchange--http-request-and-message.md) para o host.
 
 Esses eventos são capturados nos logs do WinHTTP.
 
-O trecho de arquivo de log do WinHTTP a seguir mostra uma solicitação HTTP de saída gerada por um cliente WSDAPI.
+O snippet de arquivo de log WinHTTP a seguir mostra uma solicitação HTTP de saída gerada por um cliente WSDAPI.
 
 ``` syntax
 16:51:47.893 ::*0000004* :: WinHttpSendRequest(0x36aae0, "", 0, 0x0, 0, 658, 0)
@@ -60,7 +60,7 @@ O trecho de arquivo de log do WinHTTP a seguir mostra uma solicitação HTTP de 
 16:51:47.897 ::*0000004* :: <<<<-------- End ----------------------------------------------->>>>
 ```
 
-O trecho de arquivo de log do WinHTTP a seguir mostra uma mensagem [Get](get--metadata-exchange--http-request-and-message.md) . Essa mensagem deve seguir imediatamente a solicitação HTTP.
+O snippet de arquivo de log WinHTTP a seguir mostra uma [mensagem Get.](get--metadata-exchange--http-request-and-message.md) Essa mensagem deve seguir imediatamente a solicitação HTTP.
 
 ``` syntax
 16:51:47.898 ::*0000004* :: WinHttpWriteData(0x36aae0, 0x11aa7c4, 658, 0x0)
@@ -73,11 +73,11 @@ O trecho de arquivo de log do WinHTTP a seguir mostra uma mensagem [Get](get--me
 16:51:47.899 ::*0000004* :: WinHttpWriteData() returning TRUE
 ```
 
-O elemento **Action** ( `<wsa:Action>https://schemas.xmlsoap.org/ws/2004/09/transfer/Get</wsa:Action>` ) identifica a mensagem como uma mensagem [Get](get--metadata-exchange--http-request-and-message.md) . Verifique se o valor do elemento **to** (por exemplo, `<wsa:To>urn:uuid:dbe17c74-3b21-4f52-addc-b84b444f73a0</wsa:To>` ) corresponde à ID do dispositivo anunciada pelo host nas mensagens de WS-Discovery UDP originais. A ID do dispositivo anunciada pelo host pode ser verificada usando o host de depuração WSD. Para obter mais informações, consulte [usando um host genérico e um cliente para WS-Discovery de UDP](using-a-generic-host-and-client-for-udp-ws-discovery.md).
+O **elemento Action** ( ) identifica a mensagem como uma mensagem `<wsa:Action>https://schemas.xmlsoap.org/ws/2004/09/transfer/Get</wsa:Action>` [Get.](get--metadata-exchange--http-request-and-message.md) Verifique se o valor do elemento **To** (por exemplo, ) corresponde à ID do dispositivo anunciada pelo host nas mensagens `<wsa:To>urn:uuid:dbe17c74-3b21-4f52-addc-b84b444f73a0</wsa:To>` UDP WS-Discovery originais. A ID do dispositivo anunciada pelo host pode ser verificada usando o Host de Depuração do WSD. Para obter mais informações, [consulte Using a Generic Host and Client for UDP WS-Discovery](using-a-generic-host-and-client-for-udp-ws-discovery.md).
 
-Além disso, a resposta do host para a solicitação de metadados pode ser encontrada nos logs do WinHTTP do cliente. O host gera uma mensagem [GetResponse](getresponse--metadata-exchange--message.md) em resposta à mensagem [Get](get--metadata-exchange--http-request-and-message.md) do cliente.
+Além disso, a resposta do host à solicitação de metadados pode ser encontrada nos logs winHTTP do cliente. O host gera uma [mensagem GetResponse](getresponse--metadata-exchange--message.md) em resposta à mensagem [Get](get--metadata-exchange--http-request-and-message.md) do cliente.
 
-O trecho de arquivo de log do WinHTTP a seguir mostra uma mensagem [GetResponse](getresponse--metadata-exchange--message.md) de entrada recebida por um cliente WSDAPI.
+O snippet de arquivo de log WinHTTP a seguir mostra uma mensagem [GetResponse](getresponse--metadata-exchange--message.md) de entrada recebida por um cliente WSDAPI.
 
 ``` syntax
 16:51:47.899 ::*0000004* :: WinHttpReceiveResponse(0x36aae0, 0x0)
@@ -97,7 +97,7 @@ O trecho de arquivo de log do WinHTTP a seguir mostra uma mensagem [GetResponse]
 16:51:47.905 ::*0000004* :: <<<<-------- End ----------------------------------------------->>>>
 ```
 
-O elemento **Action** ( `<wsa:Action>https://schemas.xmlsoap.org/ws/2004/09/transfer/GetResponse</wsa:Action>` ) identifica a mensagem como uma mensagem [GetResponse](getresponse--metadata-exchange--message.md) . Verifique se o valor do elemento **RelatesTo** da mensagem GetResponse corresponde ao valor do elemento **MessageId** da mensagem [Get](get--metadata-exchange--http-request-and-message.md) . Neste exemplo, o valor do elemento **RelatesTo** ( `<wsa:RelatesTo>urn:uuid:8506ac50-3646-4621-9680-86f484d87909</wsa:RelatesTo>` ) corresponde ao valor do elemento **MessageId** da mensagem Get ( `<wsa:MessageID>urn:uuid:8506ac50-3646-4621-9680-86f484d87909</wsa:MessageID>` ).
+O **elemento Action** ( ) identifica a mensagem como uma mensagem `<wsa:Action>https://schemas.xmlsoap.org/ws/2004/09/transfer/GetResponse</wsa:Action>` [GetResponse.](getresponse--metadata-exchange--message.md) Verifique se o valor do **elemento RelatesTo** da mensagem GetResponse corresponde ao valor do **elemento MessageID** da [mensagem Get.](get--metadata-exchange--http-request-and-message.md) Neste exemplo, o valor do elemento **RelatesTo** ( ) corresponde ao valor do `<wsa:RelatesTo>urn:uuid:8506ac50-3646-4621-9680-86f484d87909</wsa:RelatesTo>` **elemento MessageID** da mensagem Get ( `<wsa:MessageID>urn:uuid:8506ac50-3646-4621-9680-86f484d87909</wsa:MessageID>` ).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -112,7 +112,7 @@ O elemento **Action** ( `<wsa:Action>https://schemas.xmlsoap.org/ws/2004/09/tran
 [Procedimentos de diagnóstico do WSDAPI](wsdapi-diagnostic-procedures.md)
 </dt> <dt>
 
-[Introdução com a solução de problemas de WSDAPI](getting-started-with-wsdapi-troubleshooting.md)
+[Ponto de Partida solução de problemas do WSDAPI](getting-started-with-wsdapi-troubleshooting.md)
 </dt> </dl>
 
  

@@ -4,12 +4,12 @@ description: Saiba como implementar o suporte a NAP para um suplicant de EAPHost
 ms.assetid: c25e4f03-759a-47a7-8b35-bbe669501c5c
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cff84c24aeb475b83146f2c56e9e139fd930eac27656349c594f05d91c1036fb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 00860057baeedbfdbae1939ab402db6f28fd74bd
+ms.sourcegitcommit: 0dec0044816af3f2b2e6403659e1cf11138c90cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118273310"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121812387"
 ---
 # <a name="implementing-nap-support-for-eap-methods"></a>Implementando o suporte nap para métodos EAP
 
@@ -28,7 +28,7 @@ EAPHost chamará a função de retorno de chamada fornecida pelo suplicant com o
 
 O EAPHost pode chamar a função de retorno de chamada fornecida pelo suplicant a qualquer momento: antes, durante uma autenticação ativa ou depois que a autenticação tiver sido concluída (depois que [**EapHostPeerEndSession**](/previous-versions/windows/desktop/api/eappapis/nf-eappapis-eaphostpeerendsession) tiver sido chamado, mas não antes [**de EapHostPeerClearConnection**](/previous-versions/windows/desktop/api/eappapis/nf-eappapis-eaphostpeerclearconnection) ter sido chamado). O suplílico sempre deve responder por meio da redução da conexão de rede lógica e da autenticação.
 
-Se o suplente estiver desligando ou escolhendo não receber mais notificação de alterações de estado de isolamento, o suplente deverá chamar [**EapHostPeerClearConnection**](/previous-versions/windows/desktop/api/eappapis/nf-eappapis-eaphostpeerclearconnection) e especificar o GUID de interface apropriado. Se o suplente quiser determinar o isolamento da conexão de rede lógica, o suplente poderá obter essas informações de **EapHostPeerMethodResult.isolationState** quando [**O EapHostPeerMethodResult**](/windows/win32/api/eaphostpeertypes/ns-eaphostpeertypes-eaphostpeermethodresult) for obtido de [**EapHostPeerGetResult**](/previous-versions/windows/desktop/api/eappapis/nf-eappapis-eaphostpeergetresult).
+Se o suplente estiver desligando ou escolhendo não receber mais a notificação de alterações de estado de isolamento, o suplente deverá chamar [**EapHostPeerClearConnection**](/previous-versions/windows/desktop/api/eappapis/nf-eappapis-eaphostpeerclearconnection) e especificar o GUID de interface apropriado. Se o suplente quiser determinar o isolamento da conexão de rede lógica, o suplente poderá obter essas informações de **EapHostPeerMethodResult.isolationState** quando [**O EapHostPeerMethodResult**](/windows/win32/api/eaphostpeertypes/ns-eaphostpeertypes-eaphostpeermethodresult) for obtido de [**EapHostPeerGetResult**](/previous-versions/windows/desktop/api/eappapis/nf-eappapis-eaphostpeergetresult).
 
 ## <a name="eaphost-related-nap-information"></a>Informações nap relacionadas ao EAPHost
 
@@ -36,7 +36,7 @@ Para obter informações nap relacionadas à API do EAPHost, consulte os tópico
 
 -   [**TIPO DE ATRIBUTO EAP \_ \_**](/windows/desktop/api/eaptypes/ne-eaptypes-eap_attribute_type)
 -   [**ERRO \_ DE EAP**](/windows/desktop/api/eaptypes/ns-eaptypes-eap_error)
--   [Perguntas frequentes sobre o supplicant EAPHost](eaphost-supplicant-frequently-asked-questions.md)
+-   [Perguntas frequentes sobre o supplicant EAPHost](eaphost-supplicant-frequently-asked-questions.yml)
 -   [**Propriedades do método EAP**](eap-method-properties.md)
 -   [**EapHostPeerBeginSession**](/previous-versions/windows/desktop/api/eappapis/nf-eappapis-eaphostpeerbeginsession)
 -   [**Constantes de informações e erros relacionados ao EAP**](eap-related-error-and-information-constants.md)
@@ -47,8 +47,8 @@ Para obter informações nap relacionadas à API do EAPHost, consulte os tópico
 
 
 -   Para ver uma lista de recursos NAP, consulte Proteção [de Acesso à Rede.](https://go.microsoft.com/fwlink/p/?linkid=84107)
--   Para obter informações sobre a instrução de saúde, consulte Mensagens da [Instrução soH (Proteção](https://go.microsoft.com/fwlink/p/?linkid=83918)de Acesso à Rede) .
--   Para a página Enterprise web e blog do Grupo de Rede, consulte [NAP (Proteção de Acesso à Rede).](https://go.microsoft.com/fwlink/p/?linkid=83845)
+-   Para obter informações sobre a instrução de saúde, consulte [Mensagens de SoH (Network Access Protection) Statement of Health (SoH).](https://go.microsoft.com/fwlink/p/?linkid=83918)
+-   Para ver a Enterprise web e blog do Grupo de Rede, consulte [NAP (Proteção de Acesso à Rede).](https://go.microsoft.com/fwlink/p/?linkid=83845)
 -   Para obter informações sobre a API NAP, consulte [Proteção de Acesso à Rede](/windows/desktop/NAP/network-access-protection-start-page).
 
 

@@ -1,6 +1,6 @@
 ---
-title: dcl_immediateConstantBuffer (sm4-ASM)
-description: DCL \_ immediateConstantBuffer (sm4-ASM)
+title: dcl_immediateConstantBuffer (sm4 – asm)
+description: dcl \_ immediateConstantBuffer (sm4 - asm)
 ms.assetid: 55e21ab1-0749-4200-8e68-bb098e935dac
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,40 +9,40 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 6f4b4868f3b07285465abb9080688adf6129e1bf
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 781a792257b23a3d89cfa432ccc1ead9e5d756159beb428defc3404ba32df47c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104293602"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120024796"
 ---
-# <a name="dcl_immediateconstantbuffer-sm4---asm"></a>DCL \_ immediateConstantBuffer (sm4-ASM)
+# <a name="dcl_immediateconstantbuffer-sm4---asm"></a>dcl \_ immediateConstantBuffer (sm4 - asm)
 
-Declara um buffer de constante de sombreador imediato.
+Declara um buffer de constante imediata do sombreador.
 
 
 
-| \_ *valor (es) de immediateConstantBuffer de* DCL |
+| dcl \_ immediateConstantBuffer *value(s)* |
 |-----------------------------------------|
 
 
 
- 
+ 
 
 <dl> <dt>
 
-<span id="value_s_"></span><span id="VALUE_S_"></span>*valor (es)*
+<span id="value_s_"></span><span id="VALUE_S_"></span>*value(s)*
 </dt> <dd>
 
-\[no \] buffer deve conter pelo menos um valor, mas não mais de 4096 valores.
+\[em \] O buffer deve conter pelo menos um valor, mas não mais de 4096 valores.
 
 </dd> </dl>
 
 ### <a name="remarks"></a>Comentários
 
-Um sombreador é permitido para um buffer de constante imediata. Um buffer de constante imediata é acessado exatamente como um buffer constante com indexação dinâmica.
+Um sombreador tem permissão para um buffer de constante imediata. Um buffer constante imediato é acessado como um buffer constante com indexação dinâmica.
 
-Essa instrução se aplica aos seguintes estágios de sombreador:
+Essa instrução se aplica aos seguintes estágios do sombreador:
 
 
 
@@ -52,20 +52,20 @@ Essa instrução se aplica aos seguintes estágios de sombreador:
 
 
 
- 
+ 
 
-Essa instrução está incluída para auxiliar na depuração de um sombreador no assembly; Você não pode criar um sombreador na linguagem de assembly usando o modelo de sombreador 4.
+Essa instrução é incluída para auxiliar na depuração de um sombreador no assembly; não é possível autor de um sombreador na linguagem de assembly usando o Modelo de Sombreador 4.
 
-## <a name="minimum-shader-model"></a>Modelo de sombreamento mínimo
+## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
 
-Essa função tem suporte nos seguintes modelos de sombreador.
+Essa função tem suporte nos modelos de sombreador a seguir.
 
 
 
 | Modelo de Sombreador                                              | Com suporte |
 |-----------------------------------------------------------|-----------|
 | [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sim       |
-| [Modelo do sombreador 4,1](dx-graphics-hlsl-sm4.md)              | sim       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | sim       |
 | [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | sim       |
 | [Modelo de sombreador 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | não        |
 | [Modelo de sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | não        |
@@ -73,18 +73,18 @@ Essa função tem suporte nos seguintes modelos de sombreador.
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Assembly do Shader Model 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Assembly do modelo de sombreador 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

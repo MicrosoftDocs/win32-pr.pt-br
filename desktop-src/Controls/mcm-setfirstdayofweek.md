@@ -1,9 +1,9 @@
 ---
-title: Mensagem de MCM_SETFIRSTDAYOFWEEK (commctrl. h)
-description: Define o primeiro dia da semana para um controle de calendário mensal. Você pode enviar essa mensagem explicitamente ou usando a macro calendário mensal \_ setFirstDayOfWeek.
+title: MCM_SETFIRSTDAYOFWEEK mensagem (Commctrl.h)
+description: Define o primeiro dia da semana para um controle de calendário mensal. Você pode enviar essa mensagem explicitamente ou usando a \_ macro MonthCal SetFirstDayOfWeek.
 ms.assetid: 6e0dc906-a41e-4c3a-9528-1f5428dceb8d
 keywords:
-- Controles de MCM_SETFIRSTDAYOFWEEK de mensagens do Windows
+- MCM_SETFIRSTDAYOFWEEK controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a32452c9043bbd7c3bbcf96f9dc32e67714eacce
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1e34732257c18acceec3fd7db9807753e9a930e106198b33a0dd61dc27a33eef
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105756425"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120077106"
 ---
-# <a name="mcm_setfirstdayofweek-message"></a>\_Mensagem MCM SETfirstdayofweek
+# <a name="mcm_setfirstdayofweek-message"></a>Mensagem MCM \_ SETFIRSTDAYOFWEEK
 
-Define o primeiro dia da semana para um controle de calendário mensal. Você pode enviar essa mensagem explicitamente ou usando a macro [**calendário mensal \_ setFirstDayOfWeek**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_setfirstdayofweek) .
+Define o primeiro dia da semana para um controle de calendário mensal. Você pode enviar essa mensagem explicitamente ou usando a macro [**\_ MonthCal SetFirstDayOfWeek.**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_setfirstdayofweek)
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -39,13 +39,13 @@ Valor do tipo **int** que representa qual dia deve ser definido como o primeiro 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor **DWORD** que contém dois valores. A palavra alta é um valor **bool** que será diferente de zero se o primeiro dia da semana anterior não for igual a IFIRSTDAYOFWEEK de localidade \_ nem nenhum outro. A palavra inferior é um valor inteiro que representa o primeiro dia da semana anterior.
+Retorna um **valor DWORD** que contém dois valores. A palavra alta será um **valor BOOL** diferente de zero se o primeiro dia anterior da semana não for igual a LOCALE \_ IFIRSTDAYOFWEEK ou zero caso contrário. A palavra baixa é um valor INT que representa o primeiro dia anterior da semana.
 
 ## <a name="remarks"></a>Comentários
 
-Se o primeiro dia da semana for definido como algo diferente do padrão (localidade \_ IFIRSTDAYOFWEEK), o controle não atualizará automaticamente as alterações do primeiro dia da semana com base nas alterações de localidade.
+Se o primeiro dia da semana for definido como algo diferente do padrão (LOCALE IFIRSTDAYOFWEEK), o controle não atualizará automaticamente as alterações do primeiro dia da semana com base nas alterações de \_ localidade.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ Se o primeiro dia da semana for definido como algo diferente do padrão (localid
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

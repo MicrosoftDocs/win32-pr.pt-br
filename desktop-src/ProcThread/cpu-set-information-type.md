@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Processthreadapi.h
-ms.openlocfilehash: 0283275856e8e68bf983aaeb9a7660a5a0a6bf59
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7c932a143553c1101d6a81bac86ba54e21603eaf80ed5d2613484bff22a7e625
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105759613"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120101926"
 ---
 # <a name="cpu_set_information_type-enumeration"></a>\_Enumeração de \_ tipo de informação de conjunto de CPU \_
 
@@ -52,9 +52,9 @@ A estrutura contém informações de conjunto de CPU.
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                                       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2016\]<br/>                                                              |
-| parâmetro<br/>                   | <dl> <dt>Processthreadsapi. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                                                       |
+| Servidor mínimo com suporte<br/> | Windows Server 2016 \[ somente aplicativos da área de trabalho\]<br/>                                                              |
+| Cabeçalho<br/>                   | <dl> <dt>Processthreadsapi. h (incluir Windows. h)</dt> </dl> |
 
 
 

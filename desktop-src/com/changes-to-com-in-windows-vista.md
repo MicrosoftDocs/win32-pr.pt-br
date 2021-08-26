@@ -1,22 +1,22 @@
 ---
 title: Alterações no COM no Windows Vista
 ms.assetid: b0f843ff-b50f-4cff-8e74-89bfcea8ce62
-description: 'Saiba mais sobre: alterações em COM no Windows Vista'
+description: 'Saiba mais sobre: Alterações no COM no Windows Vista'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c23af13b1ae6c4724558f5593019549ddf117af5
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: eb032c020d1a92f837a683f2c68441809595b56a82f8f2ba2f725d76ea8c65e6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104457164"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120096986"
 ---
 # <a name="changes-to-com-in-windows-vista"></a>Alterações no COM no Windows Vista
 
-As seguintes alterações foram feitas em COM no Windows Vista:
+As seguintes alterações foram feitas no COM no Windows Vista:
 
--   O moniker de elevação de COM permite que os aplicativos que estão sendo executados em uma LUA (conta de usuário limitada) ativem classes COM com funcionalidade elevada. Para obter mais informações, consulte [o moniker de elevação com](the-com-elevation-moniker.md).
--   Quando você instala um aplicativo que faz chamadas COM em um computador COM Windows Vista e planeja executar o aplicativo como administrador, você deve instalar o aplicativo por máquina, em vez de por usuário, ou ele não funcionará corretamente.
+-   O moniker de elevação COM permite que os aplicativos que estão em execução em uma CONTA de usuário limitada (LUA) ativem classes COM com funcionalidade elevada. Para obter mais informações, consulte [O moniker de elevação COM](the-com-elevation-moniker.md).
+-   Ao instalar um aplicativo que faz chamadas COM em um computador Windows Vista e planeja executar o aplicativo como administrador, você deve instalar o aplicativo por computador, em vez de por usuário, ou ele não funcionará corretamente.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

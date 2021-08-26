@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 4ab8a4421244f2c2ee21c5243923f5d0827317e8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a5285faad36f83dbab693c63a0c96ca2b1d2b6a25220bb601a9527aac9dc5ac1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105782191"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120051286"
 ---
 # <a name="ixml2dexwritexml-method"></a>Método IXml2Dex:: WriteXML
 
@@ -60,7 +60,7 @@ Ponteiro para uma variável do tipo BSTR que recebe a cadeia de caracteres XML q
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará S \_ OK se for bem-sucedido. Se não houver memória suficiente para a conversão, retornará E \_ OUTOFMEMORY. Caso contrário, retorna outro código de erro.
 
@@ -74,7 +74,7 @@ O método aloca memória para a cadeia de caracteres. O aplicativo deve chamar *
  
 
 > [!Note]  
-> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> para obter o Qedit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
 
  
 
@@ -85,7 +85,7 @@ O método aloca memória para a cadeia de caracteres. O aplicativo deve chamar *
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
 | Versão<br/> | Internet Explorer 4,0 ou posterior<br/>                                               |
-| parâmetro<br/>  | <dl> <dt>QEdit. h</dt> </dl>      |
+| Cabeçalho<br/>  | <dl> <dt>QEdit. h</dt> </dl>      |
 | Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
 
 

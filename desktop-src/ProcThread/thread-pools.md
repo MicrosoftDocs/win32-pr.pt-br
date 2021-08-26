@@ -4,12 +4,12 @@ ms.assetid: abe0798a-0b60-4bdb-a61e-45393f1e958d
 title: Pools de threads
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 690aa3eb6fd3ce7a99d71e0f57118529ef79113f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d7918a0f6f0b881233ebea8e664d6e743a7bff105e265270063b08af313417e7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105757741"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120081256"
 ---
 # <a name="thread-pools"></a>Pools de threads
 
@@ -25,7 +25,7 @@ Os aplicativos a seguir podem se beneficiar do uso de um pool de threads:
 -   Um aplicativo que deve executar uma espera exclusiva em objetos de kernel ou bloquear eventos de entrada em um objeto. O uso do pool de threads pode reduzir a complexidade do gerenciamento de threads e aumentar o desempenho, reduzindo o número de alternâncias de contexto.
 -   Um aplicativo que cria threads de WaIter personalizados para aguardar eventos.
 
-O pool de threads original foi totalmente rearquitetado no Windows Vista. O novo pool de segmentos é melhorado porque fornece um único tipo de thread de trabalho (dá suporte a e/s e não e/s), não usa um thread de temporizador, fornece uma fila de temporizador único e fornece um thread persistente dedicado. Ele também fornece grupos de limpeza, melhor desempenho, vários pools por processo que são agendados de forma independente e uma nova API de pool de threads.
+o pool de threads original foi totalmente rearquitetado no Windows Vista. O novo pool de segmentos é melhorado porque fornece um único tipo de thread de trabalho (dá suporte a e/s e não e/s), não usa um thread de temporizador, fornece uma fila de temporizador único e fornece um thread persistente dedicado. Ele também fornece grupos de limpeza, melhor desempenho, vários pools por processo que são agendados de forma independente e uma nova API de pool de threads.
 
 A arquitetura do pool de threads consiste no seguinte:
 

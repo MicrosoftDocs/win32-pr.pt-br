@@ -1,9 +1,9 @@
 ---
-title: Mensagem de TB_SETSTYLE (commctrl. h)
-description: Define o estilo de um controle ToolBar.
+title: TB_SETSTYLE mensagem (Commctrl.h)
+description: Define o estilo de um controle de barra de ferramentas.
 ms.assetid: a1056136-e027-4ce4-b348-2d912a3ab467
 keywords:
-- Controles de TB_SETSTYLE de mensagens do Windows
+- TB_SETSTYLE controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 00c49a4239d131f1fe54a73e79beea8f32108681
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 70974f6ae4291da3b6a4b93b66b14f46a7933dd49a2594b935c15f93c80e4cbf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086524"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120061236"
 ---
-# <a name="tb_setstyle-message"></a>\_Mensagem SETstyle de TB
+# <a name="tb_setstyle-message"></a>Mensagem \_ SETSTYLE de TB
 
-Define o estilo de um controle ToolBar.
+Define o estilo de um controle de barra de ferramentas.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -35,11 +35,11 @@ Define o estilo de um controle ToolBar.
 *lParam* 
 </dt> <dd>
 
-Valor que especifica os estilos a serem definidos para o controle. Esse valor pode ser uma combinação de [estilos de controle da barra de ferramentas](toolbar-control-and-button-styles.md).
+Valor que especifica os estilos a serem definidos para o controle. Esse valor pode ser uma combinação de estilos [de controle da barra de ferramentas](toolbar-control-and-button-styles.md).
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sem valor de retorno.
 
@@ -49,9 +49,9 @@ Sem valor de retorno.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

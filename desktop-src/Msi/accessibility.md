@@ -1,17 +1,17 @@
 ---
 description: Os autores devem estar cientes das tabelas e dos campos na lista a seguir ao projetar sua interface do usuário para estar em conformidade com as diretrizes de Acessibilidade Ativa.
 ms.assetid: 516e504e-7895-4388-a38e-fd2fc7dfd61d
-title: Acessibilidade (Windows Installer)
+title: acessibilidade (Windows Installer)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 46325c11337ef1e1db6f2da5728f06f9d4ee0649
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b8811d47bc7288e966ca5d536b435611c79fd81f3a38fa0b2dbdd422b5939a42
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828094"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120078226"
 ---
-# <a name="accessibility-windows-installer"></a>Acessibilidade (Windows Installer)
+# <a name="accessibility-windows-installer"></a>acessibilidade (Windows Installer)
 
 Os autores devem estar cientes das tabelas e dos campos na lista a seguir ao projetar sua interface do usuário para estar em conformidade com as diretrizes de Acessibilidade Ativa. A interface do usuário de um pacote do instalador deve facilitar a acessibilidade do aplicativo ou produto a todos os usuários.
 
@@ -25,8 +25,8 @@ Os autores devem estar cientes das tabelas e dos campos na lista a seguir ao pro
 -   Como o texto estático não pode assumir o foco, um [controle de texto](text-control.md) que descreve um controle [Edit](edit-control.md), [PathEdit](pathedit-control.md), [ListView](listview-control.md), [ComboBox](combobox-control.md) ou [VolumeSelectCombo](volumeselectcombo-control.md) deve ser tornado o primeiro controle na caixa de diálogo para garantir a compatibilidade com leitores de tela.
 -   Para um [controle de pressão](pushbutton-control.md) que exibe um ícone ou imagem de bitmap, AccName e accKeyboardShortcut são especificados no campo ajuda do registro da [tabela de controle](control-table.md) à esquerda do \| separador.
 -   Evite o uso de controles de texto sobre bitmaps brancos, pois, em Alto Contraste preto, o texto pode se tornar invisível.
--   Não coloque um controle de texto preto em um plano de fundo que seja uma imagem de bitmap em branco. Esse texto não é visível para um usuário que altera a exibição do Windows para Alto Contraste preto.
--   Não coloque um controle de texto branco em um plano de fundo que seja uma imagem de bitmap preta. Esse texto não é visível para um usuário que altera a exibição do Windows para Alto Contraste branco.
+-   Não coloque um controle de texto preto em um plano de fundo que seja uma imagem de bitmap em branco. esse texto não é visível para um usuário que altera a exibição do Windows para Alto Contraste preto.
+-   Não coloque um controle de texto branco em um plano de fundo que seja uma imagem de bitmap preta. esse texto não é visível para um usuário que altera a exibição do Windows para Alto Contraste branco.
 -   Não coloque controles de [texto](text-control.md) transparentes na parte superior dos bitmaps coloridos. O texto pode não estar visível se o usuário alterar o esquema de cores de exibição. Por exemplo, o texto pode se tornar invisível se o usuário definir o parâmetro de alto contraste para acessibilidade.
 -   Observe que o foco em uma caixa de diálogo não é tabulado para um controle de grupo de [botões de opção](radiobuttongroup-control.md) até que um dos botões no grupo tenha sido selecionado. Para colocar a guia foco nesse grupo de botões, especifique um dos botões como uma configuração padrão para o controle.
 -   Para fornecer programas de leitor de tela com texto descritivo extra sobre um [controle de botão de opção](radiobuttongroup-control.md). Siga o exemplo fornecido em [adicionando texto extra a botões de opção](adding-extra-text-to-radio-buttons.md).

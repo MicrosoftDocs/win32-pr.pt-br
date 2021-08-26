@@ -1,23 +1,23 @@
 ---
-description: Este tópico lista as tabelas de frequência usadas para ajuste de TV analógica para a Rússia.
+description: Este tópico lista as tabelas de frequência usadas para ajuste de TV análogo para a Rússia.
 ms.assetid: 7585ce79-39ef-4174-833a-c314289fec43
 title: Atribuições de canal da Rússia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 099e1f6929077a9370b543e1725d700ccdd24229
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 9e336b3b6c5b0e8afba56625014a6798284c7a16fcef5a147d381f916a178ba3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104456733"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120078916"
 ---
 # <a name="russia-channel-assignments"></a>Atribuições de canal da Rússia
 
-Este tópico lista as tabelas de frequência usadas para ajuste de TV analógica para a Rússia.
+Este tópico lista as tabelas de frequência usadas para ajuste de TV análogo para a Rússia.
 
-Para obter uma explicação das tabelas a seguir, consulte [tabelas e atribuições](tables-and-assignments.md).
+Para uma explicação das tabelas a seguir, consulte [Tabelas e Atribuições](tables-and-assignments.md).
 
-As seguintes atribuições de canal foram introduzidas no Windows 7. Anteriormente, a [tabela de frequência unicable](unicable-frequency-table.md) foi usada.
+As atribuições de canal a seguir foram introduzidas Windows 7. Anteriormente, a [Tabela de Frequência Unicavel](unicable-frequency-table.md) era usada.
 
 -   [Atribuições de difusão](#broadcast-assignments)
 -   [Atribuições de cabo](#cable-assignments)
@@ -242,7 +242,7 @@ As seguintes atribuições de canal foram introduzidas no Windows 7. Anteriormen
 
 <dl> <dt>
 
-[Ajuste de TV analógica internacional](international-analog-tv-tuning.md)
+[Ajuste de TV análogo internacional](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

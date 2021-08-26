@@ -1,21 +1,21 @@
 ---
-description: Este tópico é a etapa 4 do tutorial de reprodução de áudio/vídeo no DirectShow.
+description: Este tópico é a etapa 4 do tutorial de reprodução de áudio/vídeo em DirectShow.
 ms.assetid: 34f35a95-1981-4467-a581-46db96c05224
 title: 'Etapa 4: Adicionar o processador de vídeo'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ea17a0622909525f69cf64fd374c8512a8fa9bb4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ae2d73dce5bba34f92c8df59cd9730ef1e25b57b9757039d9bda5c2e4432d734
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105768778"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120051406"
 ---
 # <a name="step-4-add-the-video-renderer"></a>Etapa 4: Adicionar o processador de vídeo
 
-Este tópico é a etapa 4 do tutorial de [reprodução de áudio/vídeo no DirectShow](audio-video-playback-in-directshow.md). O código completo é mostrado no exemplo do tópico [reprodução do DirectShow](directshow-playback-example.md).
+Este tópico é a etapa 4 do tutorial de [reprodução de áudio/vídeo em DirectShow](audio-video-playback-in-directshow.md). o código completo é mostrado no tópico [DirectShow exemplo de reprodução](directshow-playback-example.md).
 
-O DirectShow fornece vários filtros diferentes que renderizam vídeo:
+DirectShow fornece vários filtros diferentes que renderizam vídeo:
 
 -   [**Filtro de processador de vídeo avançado**](enhanced-video-renderer-filter.md) (EVR)
 -   [Filtro de processador de mixagem de vídeo 9](video-mixing-renderer-filter-9.md) (VMR-9)
@@ -465,10 +465,10 @@ done:
 
 <dl> <dt>
 
-[Exemplo de reprodução do DirectShow](directshow-playback-example.md)
+[DirectShow Exemplo de reprodução](directshow-playback-example.md)
 </dt> <dt>
 
-[Usando o filtro EVR do DirectShow](../medfound/using-the-directshow-evr-filter.md)
+[usando o filtro de EVR de DirectShow](../medfound/using-the-directshow-evr-filter.md)
 </dt> <dt>
 
 [Usando o processador de mixagem de vídeo](using-the-video-mixing-renderer.md)

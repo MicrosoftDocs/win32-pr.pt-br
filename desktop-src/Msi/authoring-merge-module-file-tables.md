@@ -4,16 +4,16 @@ ms.assetid: 436933c7-6e5d-4b4e-9147-c60a26871dbe
 title: Criando tabelas de arquivos do módulo de mesclagem
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e2687ed69c1a0362f96db896a5fdf4237ac4681
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 715fe570a96015f62e45b0c2924b2a83be8eefc067e5d054decd59110b7797c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010914"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120045466"
 ---
 # <a name="authoring-merge-module-file-tables"></a>Criando tabelas de arquivos do módulo de mesclagem
 
-Uma [tabela de arquivos](file-table.md) é necessária em cada módulo de mesclagem e deve ter um registro para cada arquivo que está sendo entregue ao pacote de instalação de destino pelo módulo de mesclagem. Quando o módulo de mesclagem é mesclado em um arquivo. msi, cada arquivo na tabela de arquivos do módulo de mesclagem é armazenado dentro de um [*arquivo de gabinete*](c-gly.md) no arquivo. msm. O nome do gabinete em um módulo de mesclagem é sempre o seguinte: MergeModule.CABinet.
+Uma [tabela de arquivos](file-table.md) é necessária em cada módulo de mesclagem e deve ter um registro para cada arquivo que está sendo entregue ao pacote de instalação de destino pelo módulo de mesclagem. Quando o módulo de mesclagem é mesclado em um arquivo de .msi, cada arquivo na tabela de arquivos do módulo de mesclagem é armazenado dentro de um [*arquivo de gabinete*](c-gly.md) no arquivo. msm. O nome do gabinete em um módulo de mesclagem é sempre o seguinte: MergeModule.CABinet.
 
 Para obter mais informações, consulte [gerando MergeModule.CABarquivos de gabinete inet](generating-mergemodule-cabinet-cabinet-files.md).
 

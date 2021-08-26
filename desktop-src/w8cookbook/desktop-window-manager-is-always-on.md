@@ -1,17 +1,17 @@
 ---
-title: Gerenciador de Janelas da Área de Trabalho está sempre ativada
-description: Gerenciador de Janelas da Área de Trabalho está sempre ativada
+title: Gerenciador de Janelas da Área de Trabalho está sempre em
+description: Gerenciador de Janelas da Área de Trabalho está sempre em
 ms.assetid: 36E2DD1B-E480-47A9-850B-3057119641C0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f855635615dee734b9a719d4e51d3ead663d144e
-ms.sourcegitcommit: ea4baf9953a78d2d6bd530b680601e39f3884541
+ms.openlocfilehash: b256b4270ab0bbeba588a4beff9bd1bd2bbe1c8166b40cd527f8b48a4f897df0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "104294545"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120057356"
 ---
-# <a name="desktop-window-manager-is-always-on"></a>Gerenciador de Janelas da Área de Trabalho está sempre ativada
+# <a name="desktop-window-manager-is-always-on"></a>Gerenciador de Janelas da Área de Trabalho está sempre em
 
 ## <a name="platforms"></a>Plataformas
 
@@ -21,88 +21,88 @@ ms.locfileid: "104294545"
 
 ## <a name="description"></a>Descrição
 
-No Windows 8, o Gerenciador de Janelas da Área de Trabalho (DWM) está sempre ativo e não pode ser desabilitado por usuários finais e aplicativos. Como no Windows 7, o DWM é usado para compor a área de trabalho. Além das experiências habilitadas no Windows 7, agora a composição de área de trabalho do DWM permite a composição de área de trabalho para todos os temas, suporte para estereoscópico 3D e gerenciamento, separação e proteção da experiência com aplicativos da Windows Store.
+No Windows 8, Gerenciador de Janelas da Área de Trabalho (DWM) está sempre ON e não pode ser desabilitado por usuários e aplicativos finais. Como no Windows 7, a DWM é usada para compor a área de trabalho. Além das experiências habilitadas no Windows 7, agora a composição da área de trabalho DWM permite a composição da área de trabalho para todos os temas, suporte para 3D estereoscópico e gerenciamento, separação e proteção da experiência com aplicativos da Windows Store.
 
-**Composição de área de trabalho para todos os temas**
+**Composição da área de trabalho para todos os temas**
 
-No Windows Vista e no Windows 7, a composição de área de trabalho é habilitada apenas com o tema AERO Glass. Portanto, os usuários do Windows Classic e os temas de alto contraste não podem usar experiências habilitadas pela composição de área de trabalho, como o Windows Flip, dimensionamento automático para escala de alta resolução (DPI), visualização de miniatura e lupa de tela inteira. Além disso, nessas versões anteriores do Windows, os desenvolvedores de aplicativos devem gravar e manter vários caminhos de código – um em que a composição de área de trabalho está habilitada e outra em que a composição de área de trabalho está desabilitada.
+No Windows Vista e Windows 7, a composição da área de trabalho é habilitada somente com o Tema DO AERO Glass. Portanto, os usuários Windows temas clássicos e de alto contraste não podem usar experiências habilitadas pela composição da área de trabalho, como Windows Flip, dimensionamento automático para dimensionamento de DPI (alta resolução), visualização em miniatura e lupa de tela inteira. Além disso, nessas versões anteriores do Windows, os desenvolvedores de aplicativos devem escrever e manter vários caminhos de código – um em que a composição da área de trabalho está habilitada e outra em que a composição da área de trabalho está desabilitada.
 
-Com o Windows 8, a composição de área de trabalho está habilitada para todos os temas. Os usuários dos temas clássico e de alto contraste do Windows podem usar as experiências habilitadas pela composição da área de trabalho, como o Windows Flip, o dimensionamento automático para escala de alta resolução (DPI), visualizações de miniaturas e lupa de tela inteira. Além disso, os desenvolvedores não precisam escrever e manter vários caminhos de código, simplificando assim o desenvolvimento.
+Com Windows 8, a composição da área de trabalho está habilitada para todos os temas. Os usuários de temas clássicos e de alto contraste do Windows podem usar as experiências habilitadas pela composição da área de trabalho, como o Windows Flip, o dimensionamento automático para dimensionamento de DPI (alta resolução), as visualizações em miniatura e a lupa de tela inteira. Além disso, os desenvolvedores não precisam escrever e manter vários caminhos de código, simplificando assim o desenvolvimento.
 
-**Suporte para estereoscópico 3D**
+**Suporte para estereotipagem 3D**
 
-A composição de área de trabalho do DWM dá suporte à renderização e apresentação de conteúdo de aplicativo 3D estereoscópico e de tela inteira.
+A composição da área de trabalho DWM dá suporte à renderização e à apresentação de conteúdo de aplicativo 3D com tela inteira e com janela.
 
-**Gerenciamento, separação e proteção da experiência com aplicativos da Windows Store**
+**Gerenciamento, separação e proteção da experiência com aplicativos Windows Store**
 
-A composição de área de trabalho do DWM permite a separação e a proteção de janelas de aplicativos de desktop das janelas de aplicativos da Windows Store, gerenciando e separando as janelas de aplicativos de desktop das janelas de aplicativos da Windows Store. Como a composição de área de trabalho é responsável pelo gerenciamento de todas as janelas de aplicativo, a desabilitação da composição de área de trabalho pode resultar em um comportamento Além disso, a composição de área de trabalho é responsável por compor o novo menu Iniciar, bem como animações de janelas adicionais que formam a personalidade principal do novo sistema operacional Windows.
+A composição da área de trabalho da DWM permite a separação e a proteção das janelas do aplicativo da área de trabalho das novas janelas de aplicativo da Windows Store gerenciando e separando as janelas do aplicativo da área de trabalho das janelas do aplicativo Windows Store. Como a composição da área de trabalho é responsável por gerenciar todas as janelas do aplicativo, desabilitar a composição da área de trabalho pode resultar em comportamento inesperado. Além disso, a composição da área de trabalho é responsável por compor o novo menu Iniciar, bem como animações de janela adicionais que formam a personalidade principal da nova Windows operacional.
 
-## <a name="controlling-desktop-composition"></a>Controlando composição de área de trabalho
+## <a name="controlling-desktop-composition"></a>Controlando a composição da área de trabalho
 
-No Windows Vista e no Windows 7, a composição de área de trabalho é desabilitada em vários cenários. No Windows 8, a composição de área de trabalho do DWM é um componente principal do sistema operacional e não pode ser desabilitada. Com algumas exceções, a composição de área de trabalho está sempre ativa; Ele é iniciado antes do logon do usuário e permanece ativo durante o período de uma sessão. Esta seção descreve como o Windows 8 trata os cenários no Windows 7 em que a composição de área de trabalho está desabilitada.
+No Windows Vista e Windows 7, a composição da área de trabalho é desabilitada em vários cenários. No Windows 8, a composição da área de trabalho DWM é um componente principal do sistema operacional e não pode ser desabilitada. Com algumas exceções, a composição da área de trabalho está sempre disponível; ele é iniciado antes do logon do usuário e permanece ativo durante uma sessão. Esta seção descreve como o Windows 8 trata os cenários no Windows 7 em que a composição da área de trabalho está desabilitada.
 
-**SKU do servidor e determinados SKUs de cliente**
+**SKU do servidor e determinadas SKUs de cliente**
 
-No Windows 8, todos os SKUs de servidor e cliente têm a composição de área de trabalho habilitada. Isso garante que os administradores de servidor e os usuários possam se beneficiar das experiências habilitadas pela composição da área de trabalho.
+No Windows 8, todos os SKUs de servidor e cliente têm a composição da área de trabalho habilitada. Isso garante que os administradores do servidor e os usuários possam se beneficiar das experiências habilitadas pela composição da área de trabalho.
 
-**Requisitos fundamentais para composição de área de trabalho**
+**Requisitos fundamentais para composição da área de trabalho**
 
-O Windows 8 garante que os requisitos de profundidade de cores do sistema e adaptador de gráficos sejam atendidos por meio de suporte de Driver WDDM e profundidade de cores do sistema.
+Windows 8 garante que os requisitos de profundidade de cores do sistema e do adaptador gráfico sejam atendidos por meio do suporte ao driver WDDM e da profundidade da cor do sistema.
 
-**Suporte a Driver WDDM**
+**Suporte a driver WDDM**
 
-Se um sistema não tiver um driver de gráficos compatível com o WDDM, o Windows 8 usará o adaptador de vídeo básico da Microsoft como o adaptador padrão. Como o DWM sempre é executado no adaptador padrão, ele escolherá o adaptador de vídeo básico da Microsoft para compor a área de trabalho quando um driver de gráficos compatível com WDDM não estiver disponível (se não estiver instalado ou desabilitado) no sistema.
+Se um sistema não tiver um driver gráfico compatível com WDDM, o Windows 8 usará o Adaptador de Exibição Básico da Microsoft como o adaptador padrão. Como o DWM sempre é executado no adaptador padrão, ele escolherá o Adaptador de Exibição Básico da Microsoft para compor a área de trabalho quando um driver gráfico compatível com WDDM não estiver disponível (instalado ou desabilitado) no sistema.
 
-O adaptador de vídeo básico da Microsoft é um rasterizador de software que usa a CPU em vez da GPU para executar todo o desenho. Observe que o desempenho da composição de desktop no adaptador de vídeo básico da Microsoft (especialmente animações) pode não ser tão suave quanto ao executar a composição de área de trabalho em uma GPU.
+O Adaptador de Exibição Básico da Microsoft é um rasterizador de software que usa a CPU em vez da GPU para executar todo o desenho. Observe que o desempenho da composição da área de trabalho no Microsoft Basic Display Adapter (especialmente animações) pode não ser tão suave quanto ao executar a composição da área de trabalho em uma GPU.
 
 **Profundidade de cor do sistema**
 
-A composição de área de trabalho não pode ser executada, a menos que a intensidade de cor seja definida como 32 bits por pixel. No Windows 7, a intensidade de cor do sistema pode ser alterada nestes cenários:
+A Composição da Área de Trabalho não pode ser executado, a menos que a profundidade de cor esteja definida como 32 bits por pixel. No Windows 7, a profundidade de cor do sistema pode ser alterada nestes cenários:
 
--   Um usuário final usa o painel de controle de exibição do Windows ou um painel de controle de terceiros para alterar a cor do sistema
--   Um usuário final executa um aplicativo que altera a intensidade de cor do sistema por meio de uma API pública
+-   Um usuário final usa o painel Windows De exibição ou um painel de controle de terceiros para alterar a cor do sistema
+-   Um usuário final executa um aplicativo que altera a profundidade de cor do sistema por meio de uma API pública
 
-Ao contrário do Windows 7, o Windows 8 não oferece suporte a profundidade de cor diferente de 32 bits por pixel. O usuário não pode mais alterar a intensidade de cor do sistema usando o painel de controle.
+Ao Windows 7, Windows 8 não dá suporte à profundidade de cor diferente de 32 bits por pixel. O usuário não pode mais alterar a profundidade de cor do sistema usando o painel de controle.
 
-Além disso, os desenvolvedores de aplicativos não podem usar APIs para alterar a intensidade de cor do sistema. O Windows 8 detectará aplicativos que tentam alterar a profundidade de cor do sistema para menos de 32 bits por pixel e informar ao usuário que um Shim de compatibilidade de aplicativo deve ser aplicado para executar os aplicativos. Após a confirmação do usuário, o Shim de compatibilidade do aplicativo é aplicado e o Shim virtualiza o modo de baixa cor para o aplicativo enquanto mantém o sistema em execução em 32 bits por pixel.
+Além disso, os desenvolvedores de aplicativos não podem usar APIs para alterar a profundidade de cor do sistema. Windows 8 detectará aplicativos que tentam alterar a profundidade de cor do sistema para menos de 32 bits por pixel e informará ao usuário que um shim de compatibilidade do aplicativo deve ser aplicado para executar os aplicativos. Após a confirmação do usuário, o shim de compatibilidade do aplicativo é aplicado e o shim virtualiza o modo de cor baixa para o aplicativo, mantendo o sistema em execução em 32 bits por pixel.
 
 **WinSAT**
 
-No Windows 8, a composição de área de trabalho não depende das pontuações do WinSAT. Além disso, o WinSAT não inclui mais a avaliação do DWM.
+No Windows 8, a composição da área de trabalho não depende das pontuações do WinSAT. Além disso, o WinSAT não inclui mais a avaliação de DWM.
 
-**Compatibilidade de aplicativos e ação do usuário**
+**Compatibilidade do aplicativo e ação do usuário**
 
-No Windows 8:
+Em Windows 8:
 
--   Todas as opções para desabilitar a composição de área de trabalho que existem no Windows 7 são removidas
--   A composição de área de trabalho é responsável por compor todos os temas
--   Os aplicativos não podem usar DwmEnableComposition para desabilitar a composição de área de trabalho. Para manter a compatibilidade com versões anteriores, uma chamada para essa API retornará êxito; no entanto, a composição de área de trabalho não está desabilitada
--   O Shim "Desabilitar composição de área de trabalho" foi removido
--   A opção "Desabilitar composição de área de trabalho" da guia Compatibilidade da caixa de diálogo Propriedades do aplicativo é removida
+-   Todas as opções para desabilitar a composição da área de trabalho que existem na Janela 7 são removidas
+-   A composição da área de trabalho é responsável por compor todos os temas
+-   Os aplicativos não podem usar DwmEnableComposition para desabilitar a composição da área de trabalho. Para manter a compatibilidade com backward, uma chamada para essa API retornará êxito; no entanto, a composição da área de trabalho não está desabilitada
+-   O shim "Desabilitar composição da área de trabalho" foi removido
+-   A opção "Desabilitar a composição da área de trabalho" na guia compatibilidade da caixa de diálogo Propriedades do Aplicativo é removida
 
-**Um aplicativo usa um driver de espelhamento para comunicação remota**
+**Um aplicativo usa um driver de espelhamento para a conexão**
 
-No Windows 8:
+Em Windows 8:
 
--   Não oferece suporte a drivers de espelhamento para cenários de comunicação remota; Embora a maioria dos aplicativos existentes que usam drivers de espelho deva continuar funcionando, devido à alteração infraestrutura necessária para dar suporte a drivers de espelhamento existentes no Windows 8 com DWM em, alguns recursos ou aplicativos que usam drivers de espelho podem não funcionar
--   O oferece suporte a APIs de duplicação de desktop para desenvolvedores de aplicativos que usam drivers de espelho para cenários de comunicação remota.
--   Não oferece suporte a drivers de espelho de acessibilidade existentes
--   Os drivers de espelhamento existentes devem ser atualizados para garantir que eles sejam compatíveis com o Windows 8
+-   Não dá suporte a drivers espelho para cenários de remoção; enquanto a maioria dos aplicativos existentes que usam drivers espelho deve continuar a funcionar, devido à alteração de infraestrutura necessária para dar suporte a drivers espelho existentes no Windows 8 com DWM ON, alguns recursos ou aplicativos que usam drivers espelho podem não funcionar
+-   Dá suporte a APIs de Duplicação de Área de Trabalho para desenvolvedores de aplicativos que usam drivers espelho para cenários de remotação.
+-   Não dá suporte a drivers espelho de acessibilidade existentes
+-   Drivers espelho existentes devem ser atualizados para garantir que sejam compatíveis com Windows 8
 
-**Conexão de área de trabalho remota**
+**Área de trabalho remota conexão**
 
-No Windows 8, a composição de área de trabalho está sempre habilitada para uma conexão de área de trabalho remota. Um computador cliente que se conecta a um computador remoto com Windows 8 sempre obterá a composição de área de trabalho habilitada para a sessão de área de trabalho remota, independentemente da versão do cliente do Windows. A composição de área de trabalho tem suporte para vários monitores no computador cliente, bem como para a sessão de aplicativo remoto.
+No Windows 8, a composição da área de trabalho sempre está habilitada para uma conexão de área de trabalho remota. Um computador cliente que se conecta a um Windows 8 remoto sempre terá a composição da área de trabalho habilitada para a sessão de área de trabalho remota, independentemente da versão Windows cliente. A composição da área de trabalho tem suporte para vários monitores no computador cliente, bem como para a sessão de aplicativo remoto.
 
-Além disso, ao se conectar a um computador remoto com Windows 8, essas configurações no cliente Conexão de Área de Trabalho Remota não entram em vigor:
+Além disso, ao se conectar a um Windows 8 remoto remoto, essas configurações no Conexão de Área de Trabalho Remota cliente não entrarão em vigor:
 
--   Profundidade de cor
+-   Profundidade da cor
 -   Caixa de seleção "Habilitar composição"
 
-A intensidade de cor da conexão é sempre definida como 32 bits por pixel e a composição de área de trabalho está sempre habilitada.
+A profundidade de cor da conexão sempre é definida como 32 bits por pixel e a composição da área de trabalho está sempre habilitada.
 
- 
+ 
 
- 
+ 
 
 
 

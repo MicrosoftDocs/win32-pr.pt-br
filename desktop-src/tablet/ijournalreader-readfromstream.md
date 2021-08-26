@@ -1,7 +1,7 @@
 ---
-description: Usa um fluxo para um arquivo de anotação do diário e retorna um fluxo XML que representa o conteúdo do documento.
+description: Leva um fluxo para um arquivo de Anotação de Diário e retorna um fluxo XML que representa o conteúdo do documento.
 ms.assetid: 5a169dfe-b102-4aef-9efe-5db2cd2fb96f
-title: 'Método IJournalReader:: ReadFromStream (Journal. h)'
+title: Método IJournalReader::ReadFromStream (Journal.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,19 +13,19 @@ api_type:
 - COM
 api_location:
 - Journal.dll
-ms.openlocfilehash: 258ac30b8857fa4ef24bd86a08c7e402229f4bff
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7dbe9d7929f616914d06cad237f486677cd8e5616cb04bf28a5836751ca0a3c0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105761220"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120057846"
 ---
-# <a name="ijournalreaderreadfromstream-method"></a>Método IJournalReader:: ReadFromStream
+# <a name="ijournalreaderreadfromstream-method"></a>Método IJournalReader::ReadFromStream
 
-Usa um fluxo para um arquivo de anotação do diário e retorna um fluxo XML que representa o conteúdo do documento.
+Leva um fluxo para um arquivo de Anotação de Diário e retorna um fluxo XML que representa o conteúdo do documento.
 
 > [!Note]  
-> O componente de leitor de diário não pode ler arquivos de diário do Windows criados por computadores que executam o Windows 7 ou posterior. A interface IJournalReader deve ser considerada preterida ou obsoleta e não deve ser usada.
+> O componente Leitor de Diário não pode Windows arquivos de Diário criados por máquinas que executam Windows 7 ou posterior. A interface IJournalReader deve ser considerada preterida ou obsoleta e não deve ser usada.
 
  
 
@@ -45,31 +45,31 @@ HRESULT ReadFromStream(
 
 <dl> <dt>
 
-*pJournalFileStream* \[ no\]
+*pJournalFileStream* \[ Em\]
 </dt> <dd>
 
-Um objeto [**IStream**](/windows/desktop/api/objidl/nn-objidl-istream) que representa o arquivo de diário a ser lido.
+Um [**objeto IStream**](/windows/desktop/api/objidl/nn-objidl-istream) que representa o arquivo Journal a ser lido.
 
 </dd> <dt>
 
 *ppXmlStream* \[ out, retval\]
 </dt> <dd>
 
-Um ponteiro para o endereço de um objeto [**IStream**](/windows/desktop/api/objidl/nn-objidl-istream) que receberá o fluxo XML criado lendo o arquivo de diário.
+Um ponteiro para o endereço de um [**objeto IStream**](/windows/desktop/api/objidl/nn-objidl-istream) que receberá o fluxo XML criado lendo o arquivo Journal.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
-Os fluxos são usados para evitar o acesso direto ao sistema de arquivos e permitir a escolha do método de análise de XML a ser usado.
+Fluxos são usados para evitar o acesso direto ao sistema de arquivos e para permitir a escolha em qual método de análise XML usar.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir de um manipulador para o evento [**Click**](/dotnet/api/system.windows.forms.control.click?view=netcore-3.1) de um botão cria uma instância da interface de [**interface IJournalReader**](ijournalreader.md) e a usa para ler um arquivo de diário existente.
+O exemplo a seguir de um manipulador para o evento [**Click**](/dotnet/api/system.windows.forms.control.click?view=netcore-3.1) de um botão cria uma instância da [**interface IJournalReader e**](ijournalreader.md) a usa para ler um arquivo de Diário existente.
 
 
 ```C++
@@ -154,9 +154,9 @@ void CJntlReaderMFCDlg::OnBnClickedButton1()
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                                                     |
+| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/>                                                     |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                         |
-| parâmetro<br/>                   | <dl> <dt>Journal. h (também requer Journal \_ i. c)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Journal.h (também requer o diário \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Journal.dll</dt> </dl>                            |
 
 
@@ -165,10 +165,10 @@ void CJntlReaderMFCDlg::OnBnClickedButton1()
 
 <dl> <dt>
 
-[**Interface IJournalReader**](ijournalreader.md)
+[**IJournalReader Interface**](ijournalreader.md)
 </dt> <dt>
 
-[Referência de esquema do leitor de diário](journal-reader-schema-reference.md)
+[Referência de esquema de leitor de diário](journal-reader-schema-reference.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Estrutura D3DXCOLOR (D3DX10Math. h) – descreve os valores de cor.
+description: Estrutura D3DXCOLOR (D3DX10Math.h) – descreve valores de cor.
 ms.assetid: bb5e36c8-4f24-41b5-84e7-3034e497721d
-title: Estrutura D3DXCOLOR (D3DX10Math. h)
+title: Estrutura D3DXCOLOR (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: 9e919f86cebba1526908020881b73c01e02b7df3
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 522b16d24d32376d8305cf04d1eb8e1d54b9eed327bedd797721697fcb5d24db
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108103554"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120070176"
 ---
-# <a name="d3dxcolor-structure-d3dx10mathh"></a>Estrutura D3DXCOLOR (D3DX10Math. h)
+# <a name="d3dxcolor-structure-d3dx10mathh"></a>Estrutura D3DXCOLOR (D3DX10Math.h)
 
-Descreve os valores de cor.
+Descreve valores de cor.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,7 +45,7 @@ typedef struct D3DXCOLOR {
 **r**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -53,10 +53,10 @@ Componente vermelho da cor.
 
 </dd> <dt>
 
-**m**
+**G**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -67,7 +67,7 @@ Componente verde da cor.
 **b**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -75,10 +75,10 @@ Componente azul da cor.
 
 </dd> <dt>
 
-**um**
+**Um**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -92,11 +92,11 @@ Componente alfa da cor.
 
 | Requisito | Valor |
 |-------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3DX10Math. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3DX10Math.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

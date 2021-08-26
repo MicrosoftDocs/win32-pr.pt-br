@@ -1,19 +1,19 @@
 ---
-description: Função GetToc para gerar um sumário
+description: Função GetToc para gerar um tabela de conteúdo
 ms.assetid: f2f312ff-3519-4269-8252-eb52d2bc2e56
-title: Função GetToc para gerar um sumário
+title: Função GetToc para gerar um tabela de conteúdo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b24da42f39ba5a499492bac8a166ffcfa883aab
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0f1d70317c77bf73df12983946abafc10675b6f63f62759335604871df3633d1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089734"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120061566"
 ---
-# <a name="gettoc-function-for-generating-a-table-of-contents"></a>Função GetToc para gerar um sumário
+# <a name="gettoc-function-for-generating-a-table-of-contents"></a>Função GetToc para gerar um tabela de conteúdo
 
-A função a seguir é uma função auxiliar em um programa de exemplo que é abordada na [geração automática de um](generating-a-table-of-contents-automatically.md)Sumário.
+A função a seguir é uma função auxiliar em um programa de exemplo que é discutido em Gerando um [tabela de conteúdo automaticamente.](generating-a-table-of-contents-automatically.md)
 
 
 ```C++
@@ -72,7 +72,7 @@ HRESULT GetToc(IDMOWrapperFilter* pWrap, IToc** ppToc)
 
 <dl> <dt>
 
-[Gerando um sumário automaticamente](generating-a-table-of-contents-automatically.md)
+[Gerando um tabela de conteúdo automaticamente](generating-a-table-of-contents-automatically.md)
 </dt> </dl>
 
  

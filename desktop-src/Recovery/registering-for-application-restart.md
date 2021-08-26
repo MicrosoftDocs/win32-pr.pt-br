@@ -1,27 +1,27 @@
 ---
-title: Registrando para reinicialização do aplicativo
+title: Registrando-se para reinicialização do aplicativo
 description: Para registrar seu aplicativo a ser reiniciado, chame a função RegisterApplicationRestart.
 ms.assetid: 4dfbced7-77db-4042-823f-b4b81b2b27a6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 717f8984f26570284a70b40eef70a9d6f753d66a
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: fe5777d3ed6b99d421f7eba6b5b104b92a1c2c71462c675b2573f18da0ba69f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104162393"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120024566"
 ---
-# <a name="registering-for-application-restart"></a>Registrando para reinicialização do aplicativo
+# <a name="registering-for-application-restart"></a>Registrando-se para reinicialização do aplicativo
 
-Para registrar seu aplicativo a ser reiniciado, chame a função [**RegisterApplicationRestart**](/windows/win32/api/winbase/nf-winbase-registerapplicationrestart) . [Relatório de erros do Windows (WER)](/windows/desktop/wer/windows-error-reporting) reiniciará seu aplicativo se ele estiver em execução por pelo menos 60 segundos antes de deixar de responder ou encontrar uma exceção sem tratamento.
+Para registrar seu aplicativo a ser reiniciado, chame [**a função RegisterApplicationRestart.**](/windows/win32/api/winbase/nf-winbase-registerapplicationrestart) [Relatório de Erros do Windows (WER)](/windows/desktop/wer/windows-error-reporting) reiniciará seu aplicativo se ele estiver em execução por pelo menos 60 segundos antes de se tornar sem resposta ou encontrar uma exceção sem resposta.
 
-Você deve considerar também [o registro para recuperação](registering-for-application-recovery.md), que permite salvar dados e informações de estado que podem ser úteis quando o wer reinicia seu aplicativo. O WER reiniciará o aplicativo após a conclusão do processo de recuperação, se você também se registrar para recuperação.
+Você também deve considerar [o registro](registering-for-application-recovery.md)para recuperação , que permite salvar dados e informações de estado que podem ser úteis quando o WER reinicia seu aplicativo. O WER reiniciará o aplicativo após a conclusão do processo de recuperação, se você também se registrar para recuperação.
 
-Após a conclusão do processo de recuperação, o WER encerra o aplicativo e o reinicia. Para aplicativos de console, o aplicativo é iniciado em uma janela de console separada que fecha quando o aplicativo é encerrado.
+Depois que o processo de recuperação é concluído, o WER encerra o aplicativo e o reinicia. Para aplicativos de console, o aplicativo é iniciado em uma janela separada do console que é fechada quando o aplicativo é fechado.
 
-**Observação para os autores do instalador de aplicativos:** O registro para a reinicialização do aplicativo também fará com que o Windows reinicie automaticamente o aplicativo depois que o computador for reiniciado nos casos em que o computador for reiniciado devido a uma atualização de software. Para que isso funcione, o instalador do aplicativo deve chamar a função [**ExitWindowsEx**](/windows/desktop/api/winuser/nf-winuser-exitwindowsex) com o sinalizador EWX \_ RESTARTAPPS definido ou a função [**InitiateShutdown**](/windows/desktop/api/winreg/nf-winreg-initiateshutdowna) com o sinalizador de desligamento \_ RESTARTAPPS definido.
+**Observação para autores do instalador de aplicativo:** Registrar-se para reinicialização do aplicativo também fará Windows reiniciar automaticamente o aplicativo depois que o computador for reiniciado nos casos em que o computador for reiniciado devido a uma atualização de software. Para que isso funcione, o instalador do aplicativo deve chamar a função [**ExitWindowsEx**](/windows/desktop/api/winuser/nf-winuser-exitwindowsex) com o sinalizador EWX RESTARTAPPS definido ou a função \_ [**InitiateShutdown**](/windows/desktop/api/winreg/nf-winreg-initiateshutdowna) com o sinalizador SHUTDOWN \_ RESTARTAPPS definido.
 
-O exemplo a seguir mostra como registrar para que o WER reinicie seu aplicativo. O exemplo causa uma violação de acesso após o registro para a reinicialização do aplicativo. A violação de acesso será coletada por Relatório de Erros do Windows e demonstrará a experiência do usuário de relatório de erros, incluindo a reinicialização do aplicativo. Ele deve ser executado em uma janela de console sem argumentos de linha de comando.
+O exemplo a seguir mostra como registrar para que o WER reinicie seu aplicativo. O exemplo causa uma violação de acesso após o registro para reinicialização do aplicativo. A violação de acesso será escolhida pelo Relatório de Erros do Windows e demonstrará a experiência do usuário de relatório de erros, incluindo a reinicialização do aplicativo. Ele deve ser executado em uma janela do console sem argumentos de linha de comando.
 
 
 ```C++
@@ -240,6 +240,6 @@ cleanup:
 
 
 
- 
+ 
 
- 
+ 

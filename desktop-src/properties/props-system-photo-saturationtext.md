@@ -4,12 +4,12 @@ ms.assetid: 2d6a524c-515a-439a-a57d-d0506cfddcca
 title: System. Photo. SaturationText
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5973a95fa9300066b1c1c787a938cb9e4898e056
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fe40f17e784633d74656dd9cdb79ddc80200e0eb01f16e08ac0568cbacd71518
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921549"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120058446"
 ---
 # <a name="systemphotosaturationtext"></a>System. Photo. SaturationText
 

@@ -1,18 +1,18 @@
 ---
-title: Criando descritores
+title: Como criar descritores
 description: Descreve e mostra exemplos de como criar exibições de índice, vértice e buffer constante; recurso de sombreador, destino de renderização, acesso não ordenado, saída de fluxo e exibições de estêncil de profundidade; e amostras. Todos os métodos para criar descritores são threads livres.
 ms.assetid: 0D360A7C-8A2F-49E1-A5CC-98C958B59D1C
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aac9aab5dde0f5ca0864fcc1627ade984c6b6ccf
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 915cf1d92165f6d802bf4e8698180675a3edb32bd77da0510f4d9b52d6e044b1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104548245"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120069706"
 ---
-# <a name="creating-descriptors"></a>Criando descritores
+# <a name="creating-descriptors"></a>Como criar descritores
 
 Descreve e mostra exemplos de como criar exibições de índice, vértice e buffer constante; recurso de sombreador, destino de renderização, acesso não ordenado, saída de fluxo e exibições de estêncil de profundidade; e amostras. Todos os métodos para criar descritores são threads livres.
 
@@ -489,6 +489,6 @@ Por exemplo,
 [Heaps de descritores](descriptor-heaps.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
