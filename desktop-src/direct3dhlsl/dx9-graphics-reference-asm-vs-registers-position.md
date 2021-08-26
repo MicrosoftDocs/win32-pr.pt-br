@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 89470bb920db7c612b21cefb2c44c2c89d48ce28
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: cda82431990ed3ea545adfcc5e6eb2801be0607d8bac45aa1bcd8c0e121f3d68
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103636097"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120023896"
 ---
 # <a name="position-register"></a>Registro de posição
 
@@ -28,7 +28,7 @@ Este registro de saída do sombreador de vértice contém dados de posição por
 
 
 
- 
+ 
 
 Um registro consiste em propriedades que determinam se o registro se comporta.
 
@@ -36,13 +36,13 @@ Um registro consiste em propriedades que determinam se o registro se comporta.
 
 | Propriedade        | Descrição |
 |-----------------|-------------|
-| Name            | oPos        |
+| Nome            | oPos        |
 | Contagem           | 1 vetor    |
 | Permissões de e/s | Somente gravação. |
 
 
 
- 
+ 
 
 O valor é a posição no espaço de recorte homogêneo. Esse valor deve ser gravado pelo sombreador de vértice.
 
@@ -69,9 +69,9 @@ Exemplo
 [Registros de sombreador de vértice](dx9-graphics-reference-asm-vs-registers.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

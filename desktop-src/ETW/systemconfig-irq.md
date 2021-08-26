@@ -1,7 +1,7 @@
 ---
-description: Essa classe é a classe de tipo de evento para eventos de solicitação de interrupção (IRQ). A sintaxe a seguir é simplificada do código MOF.
+description: Essa classe é a classe de tipo de evento para eventos irQ (solicitação de interrupção). A sintaxe a seguir é simplificada do código MOF.
 ms.assetid: 9d4692e8-f19f-478c-a003-396722e426c3
-title: Classe SystemConfig_IRQ
+title: SystemConfig_IRQ classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: e1dd674c34c06259bc343615c17d165be3f57d32
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3da720de11aa7dbbd759131a521e44e546b7cad6d2525565c81d0aa6920dd0ac
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967410"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120078286"
 ---
-# <a name="systemconfig_irq-class"></a>\_Classe de IRQ SystemConfig
+# <a name="systemconfig_irq-class"></a>Classe IRQ SystemConfig \_
 
-Essa classe é a classe de tipo de evento para eventos de solicitação de interrupção (IRQ).
+Essa classe é a classe de tipo de evento para eventos irQ (solicitação de interrupção).
 
 A sintaxe a seguir é simplificada do código MOF.
 
@@ -44,13 +44,13 @@ class SystemConfig_IRQ : SystemConfig
 
 ## <a name="members"></a>Membros
 
-A **classe \_ IRQ SystemConfig** tem estes tipos de membros:
+A **classe SYSTEMConfig \_ IRQ** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A **classe \_ IRQ SystemConfig** tem essas propriedades.
+A **classe SYSTEMConfig \_ IRQ** tem essas propriedades.
 
 <dl> <dt>
 
@@ -63,58 +63,58 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (4), StringTermination ("NullTerminated"), Format ("w")
+Qualificadores: WmiDataId(4), StringTermination("NullTerminated"), Format("w")
 </dt> </dl>
 
-Descrição do dispositivo ou software que faz a solicitação.
+Descrição do dispositivo ou software que está fazendo a solicitação.
 
 </dd> <dt>
 
 **DeviceDescriptionLen**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (3)
+Qualificadores: WmiDataId(3)
 </dt> </dl>
 
-Comprimento, em caracteres, da cadeia de caracteres em **DeviceDescription**.
+Comprimento, em caracteres, da cadeia de caracteres **em DeviceDescription.**
 
 </dd> <dt>
 
 **IRQAffinity**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (1), formato ("x")
+Qualificadores: WmiDataId(1), Format("x")
 </dt> </dl>
 
-Máscara de afinidade de IRQ. A máscara de afinidade identifica os processadores específicos (ou grupos de processadores) que podem receber o IRQ.
+Máscara de afinidade irq. A máscara de afinidade identifica os processadores específicos (ou grupos de processadores) que podem receber o IRQ.
 
 </dd> <dt>
 
 **IRQNum**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (2)
+Qualificadores: WmiDataId(2)
 </dt> </dl>
 
-Número da linha da solicitação de interrupção.
+Número da linha de solicitação de interrupção.
 
 </dd> </dl>
 
@@ -124,8 +124,8 @@ Número da linha da solicitação de interrupção.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

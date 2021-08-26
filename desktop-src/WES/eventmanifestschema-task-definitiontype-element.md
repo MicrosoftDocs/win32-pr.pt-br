@@ -1,9 +1,9 @@
 ---
-title: Elemento Task (Definitiontype)
-description: Define um evento específico de tarefa que seu provedor pode registrar. | Elemento Task (Definitiontype)
+title: Elemento task (DefinitionType)
+description: Define um evento específico de tarefa que seu provedor pode registrar em log. | Elemento task (DefinitionType)
 ms.assetid: 0e880720-1896-43cf-b702-cabca8ab1430
 keywords:
-- elemento de tarefa EventLog
+- Elemento task EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,18 +13,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 35fe629c17b8ede4064de3fb11d05c8e8c84f202
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 9cdd0cfbf1cd9295b3ac3ff1cc12c087819974c82c7510c7558519aec471b18e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105788814"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120005946"
 ---
-# <a name="task-definitiontype-element"></a>Elemento Task (Definitiontype)
+# <a name="task-definitiontype-element"></a>Elemento task (DefinitionType)
 
-\[A partir do compilador de mensagens fornecido com a versão do Windows 7 do SDK do Windows, esse elemento não estará mais disponível.\]
+\[Começando com o compilador de mensagem que é Windows versão 7 do SDK do Windows, esse elemento não está mais disponível.\]
 
-Define um evento específico de tarefa que seu provedor pode registrar.
+Define um evento específico de tarefa que seu provedor pode registrar em log.
 
 ``` syntax
 <xs:element name="task"
@@ -32,7 +32,7 @@ Define um evento específico de tarefa que seu provedor pode registrar.
  />
 ```
 
-O elemento **Task** é definido pelo tipo complexo [**definitiontype**](eventmanifestschema-definitiontype-complextype.md) .
+O **elemento task** é definido pelo tipo complexo [**DefinitionType.**](eventmanifestschema-definitiontype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -40,8 +40,8 @@ O elemento **Task** é definido pelo tipo complexo [**definitiontype**](eventman
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

@@ -4,12 +4,12 @@ description: O código de exemplo a seguir demonstra como adicionar um filtro qu
 ms.assetid: f1ca483e-cf60-499f-8a4a-29656ed9503a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f00ddd6f1d5f7a7515abbdb32047c530dd5c3db4
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 8aa513809b294451235c5e14cf8b7c79bf41ca754b27134e9366ffce77b4c7cc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103636480"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120078485"
 ---
 # <a name="permitting-and-blocking-applications-and-users"></a>Permitindo e bloqueando aplicativos e usuários
 
@@ -155,9 +155,9 @@ CLEANUP:
 [**Condições de filtragem disponíveis em cada camada de filtragem**](filtering-conditions-available-at-each-filtering-layer.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

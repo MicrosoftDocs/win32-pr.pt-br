@@ -4,23 +4,23 @@ description: Para usar o HTTP como um protocolo de transporte para RPC, o proxy 
 ms.assetid: 5a67af51-924a-4f2b-b013-a4fd1bfaeddd
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 62d1b39276633f3b827f778deef77edd5630c599
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b4628339afe09e2b6e9a6f216504f411550d37b7a285614e507c89a4a8052c2c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105751618"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120022466"
 ---
 # <a name="configuring-computers-for-rpc-over-http"></a>Configurando computadores para RPC sobre HTTP
 
-Para usar o HTTP como um protocolo de transporte para RPC, o proxy RPC em execução no IIS (servidor de informações da Internet) deve ser configurado na rede do programa do servidor. Esta seção descreve as opções de configuração. Para obter recomendações sobre práticas recomendadas de programação e configuração ao usar RPC sobre HTTP, confira [recomendações de implantação de RPC sobre http](rpc-over-http-deployment-recommendations.md). A tarefa principal é configurar o proxy RPC para aceitar e encaminhar conexões RPC sobre HTTP a um programa de servidor RPC sobre HTTP.
+Para usar o HTTP como um protocolo de transporte para RPC, o proxy RPC em execução no IIS (servidor de informações da Internet) deve ser configurado na rede do programa do servidor. Esta seção descreve as opções de configuração. para obter recomendações sobre práticas recomendadas de programação e configuração ao usar rpc sobre http, consulte [Recomendações de implantação rpc sobre http](rpc-over-http-deployment-recommendations.md). A tarefa principal é configurar o proxy RPC para aceitar e encaminhar conexões RPC sobre HTTP a um programa de servidor RPC sobre HTTP.
 
-O IIS deve primeiro ser instalado no computador que executa o proxy RPC. Depois que o IIS é instalado, o proxy RPC é instalado. O IIS e o proxy RPC podem ser instalados simultaneamente por meio de **Adicionar ou remover componentes do Windows** no painel de controle. O proxy RPC é instalado dos **serviços de rede** e é chamado de **RPC sobre proxy http** na instalação do Windows. Se o IIS e o proxy RPC forem instalados ao mesmo tempo, o Windows garante que eles sejam instalados na ordem correta.
+O IIS deve primeiro ser instalado no computador que executa o proxy RPC. Depois que o IIS é instalado, o proxy RPC é instalado. o IIS e o Proxy RPC podem ser instalados simultaneamente de **adicionar/remover Windows componentes** no painel de controle. o proxy RPC é instalado dos **serviços de rede** e é chamado de **RPC sobre Proxy HTTP** na instalação do Windows. se o Proxy do IIS e do RPC forem instalados ao mesmo tempo, o Windows garantirá que eles sejam instalados na ordem correta.
 
 > [!Note]  
 > Após a conclusão da instalação, o IIS deverá ser reiniciado se estiver em execução durante o processo de instalação.
 
- 
+ 
 
 Após a instalação do proxy RPC, algumas tarefas adicionais de configuração devem ser executadas:
 
@@ -64,7 +64,7 @@ DWORD. Quando presente, especifica a janela de recebimento usada pelo servidor p
 
 \-
 
-**HKLM \\ software \\ Policies \\ Microsoft \\ Windows NT \\ RPC \\ MinimumConnectionTimeout**
+**HKLM \\ Software \\ policies \\ Microsoft \\ Windows NT \\ Rpc \\ MinimumConnectionTimeout**
 
 DWORD. Quando presente, especifica o tempo limite mínimo de conexão usado pelo cliente e proxy de RPC, em segundos. O tempo limite real usado é o menor desse valor e o tempo limite de conexão ociosa do IIS. Se zero, ou a chave não estiver presente, o tempo limite de conexão ociosa do IIS será usado. Usado somente no RPC sobre HTTP v2. Quando são feitas alterações nesse valor no proxy RPC, o IIS deve ser reiniciado para que a alteração entre em vigor.
 
@@ -72,7 +72,7 @@ DWORD. Quando presente, especifica o tempo limite mínimo de conexão usado pelo
 
 **HKLM \\ software \\ Microsoft \\ RPC \\ UseProxyForIPAddrIfRDNSFails**
 
-Quando presente e definido como diferente de zero e um endereço IP numérico é fornecido como o endereço de proxy RPC, um cliente RPC sobre HTTP tentará reverter a resolução de nome e, se isso falhar, tentará conectar-se ao proxy RPC por meio de um proxy HTTP. Pode ser usado para emular o comportamento do Windows NT em instalações que exigem tal comportamento. Ignorado para RPC sobre HTTP v2. Usado somente quando RPC sobre HTTP v1 é usado. Com suporte apenas no Windows 2000 com Service Pack 3 (SP3) e posterior.
+Quando presente e definido como diferente de zero e um endereço IP numérico é fornecido como o endereço de proxy RPC, um cliente RPC sobre HTTP tentará reverter a resolução de nome e, se isso falhar, tentará conectar-se ao proxy RPC por meio de um proxy HTTP. pode ser usado para emular o comportamento de Windows NT em instalações que exigem tal comportamento. Ignorado para RPC sobre HTTP v2. Usado somente quando RPC sobre HTTP v1 é usado. com suporte apenas no Windows 2000 com Service Pack 3 (SP3) e posterior.
 
 \-
 
@@ -83,11 +83,11 @@ DWORD. Quando não estiver presente ou definido como zero, o proxy RPC verificar
 > [!WARNING]
 > A Microsoft recomenda enfaticamente a definição do valor de **AllowAnonymous** em sistemas de produção para considerações de segurança. A única razão pela qual essa chave deve ser definida é para teste em redes fechadas sem acesso externo. Qualquer sistema conectado à Internet e executando o proxy RPC com a chave **AllowAnonymous** definida como um valor diferente de zero pode ser vulnerável a ataques.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

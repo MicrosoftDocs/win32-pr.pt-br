@@ -1,19 +1,19 @@
 ---
-description: O exemplo a seguir demonstra como codificar um manipulador de retorno de chamada simples para receber Windows Installer mensagens de progresso durante uma instalação.
+description: o exemplo a seguir demonstra como codificar um manipulador de retorno de chamada simples para receber Windows Installer mensagens de progresso durante uma instalação.
 ms.assetid: ae1589ae-0ad7-4314-8bf1-c8ad51eac5a2
 title: Manipulando mensagens de progresso usando MsiSetExternalUI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 30cab15cbbed030ecaa43f7c034df4661555243d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 87a0d91a38bc89511a3119a30bdd3b229b1094ce2aa834c17ea84a9cc6aabb59
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103828986"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120044216"
 ---
 # <a name="handling-progress-messages-using-msisetexternalui"></a>Manipulando mensagens de progresso usando MsiSetExternalUI
 
-O exemplo a seguir demonstra como codificar um manipulador de retorno de chamada simples para receber Windows Installer mensagens de progresso durante uma instalação.
+o exemplo a seguir demonstra como codificar um manipulador de retorno de chamada simples para receber Windows Installer mensagens de progresso durante uma instalação.
 
 > [!Note]  
 > Ao usar [**MsiSetExternalUI**](/windows/desktop/api/Msi/nf-msi-msisetexternaluia) com um tipo de mensagem de INSTALLMESSAGE \_ FILESINUSE, a mensagem enviada para a função de manipulador de interface do usuário externa não contém informações sobre arquivos em uso ou títulos de janela usados pela caixa de diálogo [FILESINUSE](filesinuse-dialog.md) . Você deve usar o [**MsiSetExternalUIRecord**](/windows/desktop/api/Msi/nf-msi-msisetexternaluirecord) para obter informações.

@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: métodos EsentFileIOBeyondEOFException'
+description: 'Saiba mais sobre: Métodos EsentFileIOBeyondEOFException'
 title: 'Métodos EsentFileIOBeyondEOFException '
 TOCTitle: EsentFileIOBeyondEOFException methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.EsentFileIOBeyondEOFException
@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101693
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 1af1601851dec699a864eecd1978e83c3c969e06
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aa4d193efc279ee8fa781ec06f9035d75dc8a2a8807be8389de32543f7e03fcc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104554462"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120020570"
 ---
 # <a name="esentfileiobeyondeofexception-methods"></a>Métodos EsentFileIOBeyondEOFException 
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo [EsentFileIOBeyondEOFException](./esentfileiobeyondeofexception-class.md) expõe os membros a seguir.
+O [tipo EsentFileIOBeyondEOFException](./esentfileiobeyondeofexception-class.md) expõe os membros a seguir.
 
 ## <a name="methods"></a>Métodos
 
@@ -44,7 +44,7 @@ O tipo [EsentFileIOBeyondEOFException](./esentfileiobeyondeofexception-class.md)
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">GetBaseException</a></td>
+<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">Getbaseexception</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
@@ -59,12 +59,12 @@ O tipo [EsentFileIOBeyondEOFException](./esentfileiobeyondeofexception-class.md)
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">Gettype</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></td>
+<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Memberwiseclone</a></td>
 <td>(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</td>
 </tr>
 <tr class="even">
@@ -84,4 +84,4 @@ Parte superior
 
 [Classe EsentFileIOBeyondEOFException](./esentfileiobeyondeofexception-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

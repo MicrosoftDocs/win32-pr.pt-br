@@ -4,12 +4,12 @@ ms.assetid: bdbd88f0-43d8-456d-87ca-37e718c08ec4
 title: As atribuições de canal Holanda
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b341bc99bbab99f2d78abee21dfbfca1f9a852aa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2f9c47777b404a152271fc494f460ecd3f3d9ca8daa59a84064b0d977958948d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829574"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120078756"
 ---
 # <a name="the-netherlands-channel-assignments"></a>As atribuições de canal Holanda
 
@@ -17,7 +17,7 @@ Este tópico lista as tabelas de frequência usadas para ajuste de TV analógica
 
 Para obter uma explicação das tabelas a seguir, consulte [tabelas e atribuições](tables-and-assignments.md).
 
-As seguintes atribuições de canal foram introduzidas no Windows 7. Anteriormente, a [tabela de frequência unicable](unicable-frequency-table.md) foi usada.
+as seguintes atribuições de canal foram introduzidas no Windows 7. Anteriormente, a [tabela de frequência unicable](unicable-frequency-table.md) foi usada.
 
 ## <a name="cable-assignments"></a>Atribuições de cabo
 

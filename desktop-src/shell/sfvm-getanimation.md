@@ -4,12 +4,12 @@ ms.assetid: 6f8b3894-f08f-4ebf-a645-87869e7d1b20
 title: Mensagem de SFVM_GETANIMATION (shlobj. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 60e4281689556e8315da7a9550fd69acc1a327a1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 746d8bc9bc4a6d4e15d9cd5190d7cfcb7d1362daba8ec5478b333458f62787da
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104091771"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120008986"
 ---
 # <a name="sfvm_getanimation-message"></a>\_Mensagem GETanimation do SFVM
 
@@ -42,7 +42,7 @@ O identificador de instância do módulo do qual o recurso deve ser carregado.
 *pwszName* \[ fora\]
 </dt> <dd>
 
-Um ponteiro para uma cadeia de caracteres Unicode terminada em nulo que contém o caminho do arquivo. avi ou o nome de um recurso AVI. Como alternativa, esse parâmetro pode consistir no identificador de recurso na palavra de ordem inferior e 0 na palavra de ordem superior. Para criar esse valor, use a macro [**MAKEINTRESOURCE**](/windows/win32/api/winuser/nf-winuser-makeintresourcea) . O controle carrega o recurso do módulo especificado por hinst. Um recurso AVI deve ter o tipo "AVI".
+Um ponteiro para uma cadeia de caracteres Unicode terminada em nulo que contém o caminho do arquivo de .avi ou o nome de um recurso AVI. Como alternativa, esse parâmetro pode consistir no identificador de recurso na palavra de ordem inferior e 0 na palavra de ordem superior. Para criar esse valor, use a macro [**MAKEINTRESOURCE**](/windows/win32/api/winuser/nf-winuser-makeintresourcea) . O controle carrega o recurso do módulo especificado por hinst. Um recurso AVI deve ter o tipo "AVI".
 
 </dd> </dl>
 

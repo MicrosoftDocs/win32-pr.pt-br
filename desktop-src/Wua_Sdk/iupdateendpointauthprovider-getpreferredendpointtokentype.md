@@ -1,7 +1,7 @@
 ---
 description: Retorna o tipo preferencial de token de autenticação para o ponto de extremidade do serviço.
 ms.assetid: DF60C49A-89FE-4EEB-8E82-C2C43F2D2F2A
-title: 'Método IUpdateEndpointAuthProvider:: GetPreferredEndpointTokenType (UpdateEndpointAuth. h)'
+title: Método IUpdateEndpointAuthProvider::GetPreferredEndpointTokenType (UpdateEndpointAuth.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - UpdateEndpointAuth.dll
-ms.openlocfilehash: 670835ee3c2dfd01ae46a7cf78395959ea9a26de
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a9b7d15d6d27170106118c720d25567389884c50e27aac202adedf00290236c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164610"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119994576"
 ---
-# <a name="iupdateendpointauthprovidergetpreferredendpointtokentype-method"></a>Método IUpdateEndpointAuthProvider:: GetPreferredEndpointTokenType
+# <a name="iupdateendpointauthprovidergetpreferredendpointtokentype-method"></a>Método IUpdateEndpointAuthProvider::GetPreferredEndpointTokenType
 
 Retorna o tipo preferencial de token de autenticação para o ponto de extremidade do serviço.
 
@@ -42,41 +42,41 @@ HRESULT GetPreferredEndpointTokenType(
 
 <dl> <dt>
 
-*ServiceId* \[ no\]
+*serviceId* \[ Em\]
 </dt> <dd>
 
 Identifica o serviço a ser atualizado.
 
 </dd> <dt>
 
-*ponto de extremidade* \[ no\]
+*endpointType* \[ Em\]
 </dt> <dd>
 
-Identifica o tipo de ponto de extremidade tneeded para se conectar ao serviço.
+Identifica o tipo de ponto de extremidade que precisa se conectar ao serviço.
 
 </dd> <dt>
 
-*ulRequestedTypes* \[ no\]
+*ulRequestedTypes* \[ Em\]
 </dt> <dd>
 
-Identifica o conjunto de tokens com or sem suporte no ponto de extremidade.
+Identifica o conjunto ORed de tokens com suporte pelo ponto de extremidade.
 
 </dd> <dt>
 
-*pulPreferredTokenTypes* \[ fora\]
+*pulPreferredTokenTypes* \[ out\]
 </dt> <dd>
 
-Especifique o conjunto de tipos de token de autenticação com or. preferencial. (Defina como 0 para indicar que nenhum token de autenticação é necessário).
+Especifique o conjunto ORed de tipos de token de autenticação preferenciais. (De definido como 0 para indicar que nenhum token de autenticação é necessário).
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retornará S \_ OK se for bem-sucedido. Caso contrário, retorna um código de erro COM do Windows.
+Retornará S \_ OK se for bem-sucedido. Caso contrário, retornará um com ou Windows código de erro.
 
 ## <a name="remarks"></a>Comentários
 
-Quando esse método é retornado, o WUA escolhe um tipo de token dos tipos preferenciais e o passa para o parâmetro TokenType do método [**GetEndpointToken**](iupdateendpointauthprovider-getendpointtoken.md) .
+Quando esse método é retornado, o WUA escolhe um tipo de token dos tipos preferenciais e o passa para o parâmetro tokenType do [**método GetEndpointToken.**](iupdateendpointauthprovider-getendpointtoken.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -84,11 +84,11 @@ Quando esse método é retornado, o WUA escolhe um tipo de token dos tipos prefe
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente Windows XP, Windows 2000 Professional com \[ aplicativos de área de trabalho do SP3\]<br/>                   |
-| Servidor mínimo com suporte<br/> | Windows Server 2003, Windows 2000 Server com aplicativos de área de trabalho do SP3 \[ somente\]<br/>                |
-| parâmetro<br/>                   | <dl> <dt>UpdateEndpointAuth. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>UpdateEndpointAuth. idl</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>UpdateEndpointAuth. lib</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows XP, Windows 2000 Professional somente com aplicativos da área de trabalho SP3 \[\]<br/>                   |
+| Servidor mínimo com suporte<br/> | Windows Server 2003, Windows 2000 Server somente com aplicativos da área de trabalho SP3 \[\]<br/>                |
+| Cabeçalho<br/>                   | <dl> <dt>UpdateEndpointAuth.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>UpdateEndpointAuth.idl</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>UpdateEndpointAuth.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>UpdateEndpointAuth.dll</dt> </dl> |
 
 

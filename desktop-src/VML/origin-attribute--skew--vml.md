@@ -1,26 +1,26 @@
 ---
-title: Atributo de origem (distorção) (VML)
-description: Atributo de origem (distorção) (VML)
+title: Atributo de origem (distorção)(VML)
+description: Atributo de origem (distorção)(VML)
 ms.assetid: 36f77073-7438-41b3-9107-95e27b01b776
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bbf0c134ad8e7000e71a4237a6b5aac80e874c12
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 8c0706e80a05682fbee7937f06a2d1267c028674536ef64534f6679004a34831
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366665"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120007576"
 ---
-# <a name="origin-attribute-skewvml"></a>Atributo de origem (distorção) (VML)
+# <a name="origin-attribute-skewvml"></a>Atributo de origem (distorção)(VML)
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Define a origem da distorção. Leitura/gravação. **VgVector2D**.
+Define a origem da distorção. Leitura/gravação. **VgVector2D.**
 
 **Aplica-se a**
 
@@ -28,20 +28,20 @@ Define a origem da distorção. Leitura/gravação. **VgVector2D**.
 
 **Sintaxe de marca**
 
-<o: *elemento* Origin = " *expressão* " >
+<o: *element* origin=" *expressão* ">
 
 **Sintaxe do script**
 
-*elemento* . Origin = "*expressão * * *"**
+*element* .origin="*expression***"**
 
-*expressão* = de *elemento*. Origin
+*expressão* = *elemento*.origin
 
 **Comentários**
 
-Normalmente, os valores são uma porcentagem do tamanho da forma e do intervalo de-0,5 a + 0,5. São permitidos valores maiores que dão deslocamentos como múltiplos do tamanho da forma. O padrão é 0, 0.
+Normalmente, os valores são uma porcentagem do tamanho e do intervalo da forma de -0,5 a +0,5. Valores maiores são permitidos que dão deslocamentos como múltiplos do tamanho da forma. O padrão é 0,0.
 
-*Atributo de extensões de Microsoft Office*
+*Microsoft Office Atributo Extensions*
 
- 
+ 
 
- 
+ 

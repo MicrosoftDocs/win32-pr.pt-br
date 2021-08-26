@@ -1,38 +1,38 @@
 ---
-description: Como alternativa ao gerenciamento de partições Active Directory por meio da ferramenta administrativa usuários e computadores Active Directory, você pode gerenciar partições COM+ programaticamente por meio do uso de um conjunto de objetos COM+ na ADSI (interface do sistema do Active Directory).
+description: Como alternativa ao gerenciamento de partições do Active Directory por meio da ferramenta administrativa Usuários e Computadores do Active Directory, você pode gerenciar partições COM+ programaticamente por meio do uso de um conjunto de objetos COM+ na ADSI (Interface do Sistema do Active Directory).
 ms.assetid: 915b4643-cbda-433a-a383-65a6b0fd0874
 title: Gerenciando partições no Active Directory
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6635e49b7d2833a1e6e177c25f9f2fb05ff0dff4
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a87c0aebc9ca52dee005a0343e504756e3e117c3e012098e529fb6d52033428f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501081"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120070576"
 ---
 # <a name="managing-partitions-within-active-directory"></a>Gerenciando partições no Active Directory
 
-Como alternativa ao gerenciamento de partições Active Directory por meio da ferramenta administrativa usuários e computadores Active Directory, você pode gerenciar partições COM+ programaticamente por meio do uso de um conjunto de objetos COM+ na ADSI (interface do sistema do Active Directory).
+Como alternativa ao gerenciamento de partições do Active Directory por meio da ferramenta administrativa Usuários e Computadores do Active Directory, você pode gerenciar partições COM+ programaticamente por meio do uso de um conjunto de objetos COM+ na ADSI (Interface do Sistema do Active Directory).
 
-Independentemente da técnica administrativa que você escolher para gerenciar partições COM+, há uma sequência geral de etapas que os administradores devem seguir:
+Independentemente da técnica administrativa escolhida para gerenciar partições COM+, há uma sequência geral de etapas que os administradores devem seguir:
 
-1.  Crie as novas partições COM+ dentro de Active Directory para seu domínio.
-2.  Crie conjuntos de partições COM+ dentro de Active Directory e mapeie-os para suas partições COM+ recém-criadas.
-3.  Configure suas partições de Active Directory no computador local, usando o objeto COM+ apropriado. Quando você configura uma partição de Active Directory em um computador local, uma pasta de **aplicativos com+** é criada automaticamente nessa pasta de partição.
+1.  Crie as novas partições COM+ no Active Directory para seu domínio.
+2.  Crie conjuntos de partições COM+ no Active Directory e mapeie-os para suas partições COM+ recém-criadas.
+3.  Configure suas partições do Active Directory em seu computador local usando o objeto COM+ apropriado. Quando você configura uma partição do Active Directory em um computador local, uma **pasta Aplicativos COM+** é criada automaticamente nessa pasta de partição.
 4.  Instale seus aplicativos COM+ nas partições COM+ apropriadas.
 
-Todas as etapas anteriores podem ser feitas programaticamente, usando um conjunto de interfaces Active Directory chamado ADSI. Os objetos disponíveis para o gerenciamento de partições que estão disponíveis no ADSI são os seguintes:
+Todas as etapas anteriores podem ser feitas programaticamente, usando um conjunto de interfaces do Active Directory chamada ADSI. Os objetos disponíveis para gerenciar partições que estão disponíveis no ADSI são os exemplos a seguir:
 
--   \_nome do USERPARTITIONSETLINK DS \_
--   \_nome do PARTITIONLINK DS \_
--   \_nome do OBJECTID DS \_
--   \_nome do DEFAULTPARTITIONLINK DS \_
--   \_nome do USERlink do DS \_
--   \_nome do particionado DS \_
--   \_nome da partição DS \_
+-   DS \_ USERPARTITIONSETLINK \_ NAME
+-   DS \_ PARTITIONLINK \_ NAME
+-   DS \_ OBJECTID \_ NAME
+-   DS \_ DEFAULTPARTITIONLINK \_ NAME
+-   NOME DO \_ USERLINK DO DS \_
+-   NOME DO \_ PARTITIONSET \_ DS
+-   NOME DA \_ PARTIÇÃO \_ DS
 
-Para obter informações sobre como criar e gerenciar partições COM+ por meio do uso do Active Directory usuários e computadores e ferramentas administrativas de serviços de componentes, consulte a ajuda online disponível em cada ferramenta.
+Para obter informações sobre como criar e gerenciar partições COM+ por meio do uso das ferramentas administrativas Usuários e Computadores do Active Directory e Serviços de Componentes, consulte a ajuda online disponível de dentro de cada ferramenta.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -50,7 +50,7 @@ Para obter informações sobre como criar e gerenciar partições COM+ por meio 
 [Gerenciando partições locais](managing-local-partitions.md)
 </dt> <dt>
 
-[Configurando direitos administrativos para uma partição](setting-administrative-rights-for-a-partition.md)
+[Definindo direitos administrativos para uma partição](setting-administrative-rights-for-a-partition.md)
 </dt> </dl>
 
  

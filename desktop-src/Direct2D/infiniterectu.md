@@ -1,9 +1,9 @@
 ---
-title: Função InfiniteRectU (D2d1helper \_ 3. h)
+title: Função InfiniteRectU (D2d1helper \_ 3.h)
 description: Cria um retângulo que tem seu canto superior esquerdo definido como (0u, 0u) e seu canto inferior direito definido como (infinito, infinito).
 ms.assetid: 9d8b7874-5fa3-d7aa-3289-303e88c2f744
 keywords:
-- Direct2D da função InfiniteRectU
+- Função InfiniteRectU Direct2D
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 81a43c3ca7e1151f18608bec5554c034ba537af5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1602f947ee7d6699002be1e5074f8c723db7f9534460f39f7fe3fe29e66f68f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759327"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120057996"
 ---
 # <a name="infiniterectu-function"></a>Função InfiniteRectU
 
@@ -40,7 +40,7 @@ Essa função não tem parâmetros.
 
 ## <a name="return-value"></a>Valor retornado
 
-Tipo: **[ **d2d1 \_ Rect \_ U**](d2d1-rect-u.md)**
+Tipo: **[ **D2D1 \_ RECT \_ U**](d2d1-rect-u.md)**
 
 O novo retângulo.
 
@@ -50,8 +50,8 @@ O novo retângulo.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D2d1helper \_ 3. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D2d1. lib</dt> </dl>        |
+| parâmetro<br/>  | <dl> <dt>D2d1helper \_ 3.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D2d1.lib</dt> </dl>        |
 | DLL<br/>     | <dl> <dt>D2d1.dll</dt> </dl>        |
 
 

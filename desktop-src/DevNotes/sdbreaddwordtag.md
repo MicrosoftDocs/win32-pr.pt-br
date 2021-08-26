@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: 0f1f7acc113bc40388d62927b6d98f8ff7bdebf1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4ce168aab7755dcd11f145caf44678a489bca152753ea010edbd7387b3e730f5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086305"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120044946"
 ---
 # <a name="sdbreaddwordtag-function"></a>Função SdbReadDWORDTag
 
-Recupera o valor **DWORD** para o **TagId** especificado.
+Recupera o **valor DWORD** para o **TAGID especificado.**
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,30 +41,30 @@ DWORD WINAPI SdbReadDWORDTag(
 
 <dl> <dt>
 
-*PDB* \[ no\]
+*pdb* \[ Em\]
 </dt> <dd>
 
-Um identificador para o banco de dados de Shim.
+Um alça para o banco de dados shim.
 
 </dd> <dt>
 
-*tiWhich* \[ no\]
+*tiWhich* \[ Em\]
 </dt> <dd>
 
-O **TagId** que corresponde aos dados a serem recuperados.
+O **TAGID** que corresponde aos dados a serem recuperados.
 
 </dd> <dt>
 
-*dwDefault* \[ no\]
+*dwDefault* \[ Em\]
 </dt> <dd>
 
 O valor padrão a ser retornado em caso de falha.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-A função retorna o valor em êxito ou *dwDefault* em caso de falha.
+A função retorna o valor em caso de êxito ou *dwDefault* em caso de falha.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -72,8 +72,8 @@ A função retorna o valor em êxito ou *dwDefault* em caso de falha.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                   |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

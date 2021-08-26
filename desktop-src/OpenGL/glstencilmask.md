@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e63790fa30e88abbde6e1ba47e624c6caf2dcfc4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9eb2e0af89bf2c66e7fa73cf6e4ace8bc8272e8ea581e17bab17754164d3f068
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086462"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120036516"
 ---
 # <a name="glstencilmask-function"></a>função glStencilMask
 
@@ -40,7 +40,7 @@ void WINAPI glStencilMask(
 
 <dl> <dt>
 
-*mascara* 
+*mask* 
 </dt> <dd>
 
 Uma máscara de bits para habilitar e desabilitar a gravação de bits individuais nos planos de estêncil. Inicialmente, a máscara é tudo.

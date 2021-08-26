@@ -4,12 +4,12 @@ description: A maneira como você configura a segurança COM para seu aplicativo
 ms.assetid: db5c9adb-b04b-4621-b738-2959cac40985
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 62cacef6d4e3aab59cb3b603125c36dd17d07846
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d57ccbbc8fc96b7c94e90fd3925dfb2ffff07225c34ebe1da34353f42b08b3ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103637213"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119993226"
 ---
 # <a name="determining-your-security-needs"></a>Determinando suas necessidades de segurança
 
@@ -36,9 +36,9 @@ A segurança em COM conta COM os serviços de autenticação administrados por p
 [Segurança em COM](security-in-com.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

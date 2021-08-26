@@ -4,12 +4,12 @@ description: DXCore é uma API de enumeração de adaptador para dispositivos Di
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 06/20/2019
-ms.openlocfilehash: 80e93ac7440629a809cb01b4d1d4fa2e73b7ee91
-ms.sourcegitcommit: aa021b23d7e8bba2e1df9de93a1c315a17681810
+ms.openlocfilehash: c78da216f706adb7a0142e8b628fe5168d93d0ab06f197ab46a8ec7a45379bef
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "105764319"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120022146"
 ---
 # <a name="dxcore"></a>DXCore
 
@@ -21,7 +21,7 @@ Este conjunto de documentação contém informações sobre programação com DX
 
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Ambientes de tempo de execução com suporte** | Windows/C++ |
+| **Ambientes de tempo de execução com suporte** | Windows/C + + |
 | **Linguagens de programação recomendadas** | C++ |
 | **Cliente mínimo com suporte** | Windows 10, versão 2004 (10,0; Build 19041) |
 | **Cabeçalho** | dxcore. h e dxcore_interface. h |

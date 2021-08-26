@@ -1,57 +1,57 @@
 ---
-description: Há vários tipos de consultas que são projetadas para consultar o status dos recursos.
+description: Há vários tipos de consultas que são projetados para consultar o status dos recursos.
 ms.assetid: 2c65d199-141d-43a7-b513-4cb4459d7c27
 title: Consultas (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 22f450aa7015d4b66ad28b6c4d0632b2995bedd7
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 2113500673def3e2cca5816e534b567a29fc322fb51f853db98eada20ba62674
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103825488"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120068986"
 ---
 # <a name="queries-direct3d-9"></a>Consultas (Direct3D 9)
 
-Há vários tipos de consultas que são projetadas para consultar o status dos recursos. O status de um determinado recurso inclui o status da GPU (unidade de processamento gráfico), o status do driver ou o status do tempo de execução. Para entender a diferença entre os diferentes tipos de consulta, você precisa entender os Estados de consulta. O diagrama de transição de estado a seguir explica cada um dos Estados de consulta.
+Há vários tipos de consultas que são projetados para consultar o status dos recursos. O status de um determinado recurso inclui status de GPU (unidade de processamento gráfico), status do driver ou status de runtime. Para entender a diferença entre os diferentes tipos de consulta, você precisa entender os estados de consulta. O diagrama de transição de estado a seguir explica cada um dos estados de consulta.
 
-![diagrama mostrando transições entre Estados de consulta](images/queries.png)
+![diagrama mostrando transições entre estados de consulta](images/queries.png)
 
-O diagrama mostra três Estados, cada um definido pelos círculos. Cada uma das linhas sólidas são eventos controlados por aplicativo que causam uma transição de estado. A linha tracejada é um evento controlado por recursos que alterna uma consulta do estado emitido para o estado sinalizado. Cada um desses Estados tem uma finalidade diferente:
+O diagrama mostra três estados, cada um definido por círculos. Cada uma das linhas sólidas são eventos orientados por aplicativo que causam uma transição de estado. A linha tracejada é um evento orientado a recursos que alterna uma consulta do estado emitido para o estado sinalizado. Cada um desses estados tem uma finalidade diferente:
 
--   O estado sinalizado é como um estado ocioso. O objeto de consulta foi gerado e está aguardando que o aplicativo emita a consulta. Depois que uma consulta for concluída e feita a transição de volta para o estado sinalizado, a resposta para a consulta poderá ser recuperada.
--   O estado de compilação é como uma área de preparo para uma consulta. A partir do estado de compilação, uma consulta foi emitida (chamando [**D3DISSUE \_ begin**](d3dissue-begin.md)), mas ainda não foi transferida para o estado emitido. Quando um aplicativo emite uma extremidade de consulta (chamando [**D3DISSUE \_ end**](d3dissue-end.md)), a consulta faz a transição para o estado emitido.
--   O estado emitido significa que o recurso que está sendo consultado tem controle da consulta. Depois que o recurso concluir seu trabalho, o recurso faz a transição da máquina de estado para o estado sinalizado. Durante o estado emitido, o aplicativo deve sondar para detectar a transição para o estado sinalizado. Quando ocorre a transição para o estado sinalizado, [**GetData**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-getdata) retorna o resultado da consulta (por meio de um argumento) para o aplicativo.
+-   O estado sinalizado é como um estado ocioso. O objeto de consulta foi gerado e está aguardando o aplicativo emitir a consulta. Depois que uma consulta tiver sido concluída e tiver feito a transição de volta para o estado sinalizado, a resposta para a consulta poderá ser recuperada.
+-   O estado de construção é como uma área de preparação para uma consulta. Do estado de construção, uma consulta foi emitida (chamando [**D3DISSUE \_ BEGIN**](d3dissue-begin.md)), mas ainda não fez a transição para o estado emitido. Quando um aplicativo emite uma extremidade de consulta (chamando [**D3DISSUE \_ END),**](d3dissue-end.md)a consulta faz a transição para o estado emitido.
+-   O estado emitido significa que o recurso que está sendo consultado tem controle da consulta. Depois que o recurso concluir seu trabalho, o recurso faz a transição do computador de estado para o estado sinalizado. Durante o estado emitido, o aplicativo deve sondar para detectar a transição para o estado sinalizado. Depois que a transição para o estado sinalizado ocorre, [**GetData**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-getdata) retorna o resultado da consulta (por meio de um argumento) para o aplicativo.
 
 A tabela a seguir lista os tipos de consulta disponíveis.
 
 
 
-| Tipo de consulta        | Evento de problema                                                                      | Buffer GetData                                                              | Runtime      | Início implícito da consulta                      |
+| Tipo de consulta        | Evento issue                                                                      | Buffer GetData                                                              | Runtime      | Início implícito da consulta                      |
 |-------------------|----------------------------------------------------------------------------------|-----------------------------------------------------------------------------|--------------|--------------------------------------------------|
-| BANDWIDTHTIMINGS  | [**D3DISSUE \_ Início**](d3dissue-begin.md), [ **\_ fim do D3DISSUE**](d3dissue-end.md) | [**D3DDEVINFO \_ D3D9BANDWIDTHTIMINGS**](d3ddevinfo-d3d9bandwidthtimings.md) | Varejo/depuração | N/D                                              |
-| CACHEUTILIZATION  | [**D3DISSUE \_ Início**](d3dissue-begin.md), [ **\_ fim do D3DISSUE**](d3dissue-end.md) | [**D3DDEVINFO \_ D3D9CACHEUTILIZATION**](d3ddevinfo-d3d9cacheutilization.md) | Varejo/depuração | N/D                                              |
-| CIRCUNSTÂNCIA             | [**D3DISSUE \_ fim**](d3dissue-end.md)                                            | BOOL                                                                        | Varejo/depuração | [**CreateDevice**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-createdevice) |
-| INTERFACETIMINGS  | [**D3DISSUE \_ Início**](d3dissue-begin.md), [ **\_ fim do D3DISSUE**](d3dissue-end.md) | [**D3DDEVINFO \_ D3D9INTERFACETIMINGS**](d3ddevinfo-d3d9interfacetimings.md) | Varejo/depuração | N/D                                              |
-| OCLUSÃO         | [**D3DISSUE \_ Início**](d3dissue-begin.md), [ **\_ fim do D3DISSUE**](d3dissue-end.md) | DWORD                                                                       | Varejo/depuração | N/D                                              |
-| PIPELINETIMINGS   | [**D3DISSUE \_ Início**](d3dissue-begin.md), [ **\_ fim do D3DISSUE**](d3dissue-end.md) | [**D3DDEVINFO \_ D3D9PIPELINETIMINGS**](d3ddevinfo-d3d9pipelinetimings.md)   | Varejo/depuração | N/D                                              |
-| RESOURCEMANAGER   | [**D3DISSUE \_ fim**](d3dissue-end.md)                                            | [**\_RESOURCEMANAGER D3DDEVINFO**](d3ddevinfo-resourcemanager.md)           | Somente depuração   | [**Existi**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-present)     |
-| timestamp         | [**D3DISSUE \_ fim**](d3dissue-end.md)                                            | UINT64                                                                      | Varejo/depuração | N/D                                              |
-| TIMESTAMPDISJOINT | [**D3DISSUE \_ Início**](d3dissue-begin.md), [ **\_ fim do D3DISSUE**](d3dissue-end.md) | BOOL                                                                        | Varejo/depuração | N/D                                              |
-| TIMESTAMPFREQ     | [**D3DISSUE \_ fim**](d3dissue-end.md)                                            | UINT64                                                                      | Varejo/depuração | N/D                                              |
-| VCACHE            | [**D3DISSUE \_ fim**](d3dissue-end.md)                                            | [**D3DDEVINFO \_ VCACHE**](d3ddevinfo-vcache.md)                             | Varejo/depuração | [**CreateDevice**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-createdevice) |
-| VERTEXSTATS       | [**D3DISSUE \_ fim**](d3dissue-end.md)                                            | [**D3DDEVINFO \_ D3DVERTEXSTATS**](d3ddevinfo-d3dvertexstats.md)             | Somente depuração   | [**Existi**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-present)     |
-| VERTEXTIMINGS     | [**D3DISSUE \_ Início**](d3dissue-begin.md), [ **\_ fim do D3DISSUE**](d3dissue-end.md) | [**D3DDEVINFO \_ D3D9STAGETIMINGS**](d3ddevinfo-d3d9stagetimings.md)         | Varejo/depuração | N/D                                              |
+| BANDWIDTHTIMINGS  | [**D3DISSUE \_ BEGIN**](d3dissue-begin.md), [ **D3DISSUE \_ END**](d3dissue-end.md) | [**D3DDEVINFO \_ D3D9BANDWIDTHTIMINGS**](d3ddevinfo-d3d9bandwidthtimings.md) | Varejo/Depuração | N/D                                              |
+| CACHEUTILIZATION  | [**D3DISSUE \_ BEGIN**](d3dissue-begin.md), [ **D3DISSUE \_ END**](d3dissue-end.md) | [**D3DDEVINFO \_ D3D9CACHEUTILIZATION**](d3ddevinfo-d3d9cacheutilization.md) | Varejo/Depuração | N/D                                              |
+| Evento             | [**D3DISSUE \_ END**](d3dissue-end.md)                                            | BOOL                                                                        | Varejo/Depuração | [**Createdevice**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-createdevice) |
+| INTERFACETIMINGS  | [**D3DISSUE \_ BEGIN**](d3dissue-begin.md), [ **D3DISSUE \_ END**](d3dissue-end.md) | [**D3DDEVINFO \_ D3D9INTERFACETIMINGS**](d3ddevinfo-d3d9interfacetimings.md) | Varejo/Depuração | N/D                                              |
+| Oclusão         | [**D3DISSUE \_ BEGIN**](d3dissue-begin.md), [ **D3DISSUE \_ END**](d3dissue-end.md) | DWORD                                                                       | Varejo/Depuração | N/D                                              |
+| PIPELINETIMINGS   | [**D3DISSUE \_ BEGIN**](d3dissue-begin.md), [ **D3DISSUE \_ END**](d3dissue-end.md) | [**D3DDEVINFO \_ D3D9PIPELINETIMINGS**](d3ddevinfo-d3d9pipelinetimings.md)   | Varejo/Depuração | N/D                                              |
+| Resourcemanager   | [**D3DISSUE \_ END**](d3dissue-end.md)                                            | [**D3DDEVINFO \_ ResourceManager**](d3ddevinfo-resourcemanager.md)           | Somente depuração   | [**Presente**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-present)     |
+| timestamp         | [**D3DISSUE \_ END**](d3dissue-end.md)                                            | UINT64                                                                      | Varejo/Depuração | N/D                                              |
+| TIMESTAMPDISJOINT | [**D3DISSUE \_ BEGIN**](d3dissue-begin.md), [ **D3DISSUE \_ END**](d3dissue-end.md) | BOOL                                                                        | Varejo/Depuração | N/D                                              |
+| TIMESTAMPFREQ     | [**D3DISSUE \_ END**](d3dissue-end.md)                                            | UINT64                                                                      | Varejo/Depuração | N/D                                              |
+| VCACHE            | [**D3DISSUE \_ END**](d3dissue-end.md)                                            | [**D3DDEVINFO \_ VCACHE**](d3ddevinfo-vcache.md)                             | Varejo/Depuração | [**Createdevice**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-createdevice) |
+| VERTEXSTATS       | [**D3DISSUE \_ END**](d3dissue-end.md)                                            | [**D3DDEVINFO \_ D3DVERTEXSTATS**](d3ddevinfo-d3dvertexstats.md)             | Somente depuração   | [**Presente**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-present)     |
+| VERTEXT OPERAÇÃO     | [**D3DISSUE \_ BEGIN**](d3dissue-begin.md), [ **D3DISSUE \_ END**](d3dissue-end.md) | [**D3DDEVINFO \_ D3D9STAGETIMINGS**](d3ddevinfo-d3d9stagetimings.md)         | Varejo/Depuração | N/D                                              |
 
 
 
  
 
-Algumas das consultas exigem um evento de início e término, enquanto outras exigem apenas um evento de término. As consultas que exigem apenas um evento de término começam quando outro evento implícito ocorre (que é listado na tabela). Todas as consultas retornam uma resposta, exceto a consulta de evento cuja resposta é sempre **verdadeira**. Um aplicativo usa o estado da consulta ou o código de retorno de [**GetData**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-getdata).
+Algumas das consultas exigem um evento de início e término, enquanto outras exigem apenas um evento final. As consultas que exigem apenas um evento final começam quando ocorre outro evento implícito (que está listado na tabela). Todas as consultas retornam uma resposta, exceto a consulta de evento cuja resposta é sempre **TRUE.** Um aplicativo usa o estado da consulta ou o código de retorno de [**GetData.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dquery9-getdata)
 
 ## <a name="create-a-query"></a>Criar uma consulta
 
-Antes de criar uma consulta, você pode verificar se o tempo de execução dá suporte a consultas chamando [**CreateQuery**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createquery) com um ponteiro **nulo** como este:
+Antes de criar uma consulta, você pode verificar se o runtime dá suporte a consultas chamando [**CreateQuery**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createquery) com um ponteiro **NULL** como este:
 
 
 ```
@@ -65,7 +65,7 @@ HRESULT hr = m_pd3dDevice->CreateQuery(D3DQUERYTYPE_EVENT, NULL);
 
 
 
-Esse método retornará um código de êxito se uma consulta puder ser criada; caso contrário, ele retorna um código de erro. Depois que o [**CreateQuery**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createquery) for executado com sucesso, você poderá criar um objeto de consulta como este:
+Esse método retornará um código de êxito se uma consulta puder ser criada; caso contrário, retornará um código de erro. Depois que o [**CreateQuery**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createquery) for executado com sucesso, você poderá criar um objeto de consulta como este:
 
 
 ```

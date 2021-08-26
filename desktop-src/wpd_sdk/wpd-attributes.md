@@ -1,5 +1,5 @@
 ---
-description: Para o Windows 7, os dispositivos portáteis do Windows oferecem suporte aos seguintes atributos de parâmetro para métodos e eventos de um serviço de dispositivo.
+description: para Windows 7, Windows dispositivos portáteis dão suporte aos seguintes atributos de parâmetro para métodos e eventos de um serviço de dispositivo.
 ms.assetid: a7708c60-758a-4fb6-8ef9-074ecdc9cf60
 title: Atributos de parâmetro (PortableDevice. h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 113b2b35a5b6e61cd2cc1d3666d1a13fbade5ec7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8004f4e2f9f7c22d795b6ce4e4cb0affac1b55ecd876c21288c02e226ee14262
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105793372"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120006106"
 ---
 # <a name="parameter-attributes"></a>Atributos de parâmetro
 
-Para o Windows 7, os dispositivos portáteis do Windows oferecem suporte aos seguintes atributos de parâmetro para métodos e eventos de um serviço de dispositivo. Esses atributos são retornados pelos seguintes métodos:
+para Windows 7, Windows dispositivos portáteis dão suporte aos seguintes atributos de parâmetro para métodos e eventos de um serviço de dispositivo. Esses atributos são retornados pelos seguintes métodos:
 
 -   [**IPortableDeviceServiceCapabilities::GetMethodParameterAttributes**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicecapabilities-getmethodparameterattributes)
 -   [**IPortableDeviceServiceCapabilities::GetEventParameterAttributes**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicecapabilities-geteventparameterattributes)

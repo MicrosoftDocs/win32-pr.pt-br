@@ -1,21 +1,21 @@
 ---
 title: Funções (STG)
-description: As funções são rotinas ou sub-rotinas que retornam um valor ou valores específicos. As funções de armazenamento estruturado são descritas nas seções a seguir.
+description: As funções são rotinas ou sub-rotinas que retornam um valor ou valores específicos. as funções Armazenamento estruturadas são descritas nas seções a seguir.
 ms.assetid: 5fbb05ae-594d-4fa5-97d2-a2371e94c054
 keywords:
-- Strctd de armazenamento estruturado STG, referência, funções
+- structured Armazenamento Strctd Stg, reference, functions
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 69f49c091b5ba9619b649e620da7b436ebac4ccb
-ms.sourcegitcommit: 4570ac533e129ff88b23f2c2b69e0140ead3a4a4
+ms.openlocfilehash: b84583c4daed1c929ed4ca2204e94e82bd2f8e873c7d3cc454ac14700dd6b9e4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "105754930"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120034896"
 ---
-# <a name="structured-storage-functions"></a>Funções de armazenamento estruturado
+# <a name="structured-storage-functions"></a>funções Armazenamento estruturadas
 
-As funções são rotinas ou sub-rotinas que retornam um valor ou valores específicos. As funções de armazenamento estruturado são descritas nas seções a seguir:
+As funções são rotinas ou sub-rotinas que retornam um valor ou valores específicos. as funções Armazenamento estruturadas são descritas nas seções a seguir:
 
 -   [**CreateILockBytesOnHGlobal**](/windows/desktop/api/coml2api/nf-coml2api-createilockbytesonhglobal)
 -   [**CreateStreamOnHGlobal**](/windows/desktop/api/combaseapi/nf-combaseapi-createstreamonhglobal)

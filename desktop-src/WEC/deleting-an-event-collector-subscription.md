@@ -5,12 +5,12 @@ ms.assetid: d3102149-906d-4286-85c8-e5b1eb6dd382
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 47cec036625bbb94e33e71af0f1d9808ad9252a4
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9edf2f9dda2b6393ab147d5f58ff8f889952eaeb7f31f82080558697f117f3c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103635779"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120006086"
 ---
 # <a name="deleting-an-event-collector-subscription"></a>Excluindo uma assinatura do coletor de eventos
 
@@ -24,7 +24,7 @@ Você pode excluir uma assinatura do coletor de eventos de um computador local. 
 >
 > **wecutil ds** *subscriptionname*
 
- 
+ 
 
 Depois de recuperar o nome da assinatura do coletor de eventos a ser excluída, você pode fornecer o nome da assinatura como um parâmetro para [**EcDeleteSubscription**](/windows/desktop/api/Evcoll/nf-evcoll-ecdeletesubscription).
 
@@ -81,12 +81,12 @@ void __cdecl wmain()
 [Listando assinaturas do coletor de eventos](listing-event-collector-subscriptions.md)
 </dt> <dt>
 
-[Referência do coletor de eventos do Windows](windows-event-collector-reference.md)
+[Windows Referência do coletor de eventos](windows-event-collector-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

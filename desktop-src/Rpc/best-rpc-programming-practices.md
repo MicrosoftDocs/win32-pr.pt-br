@@ -1,37 +1,37 @@
 ---
 title: Melhores práticas de programação RPC
-description: As seções a seguir fornecem orientação sobre as práticas de programação RPC que ajudam a criar os melhores aplicativos RPC possíveis. Essas práticas são divididas entre as tarefas de programação de RPC, mas, caso contrário, não são ordenadas de nenhuma maneira significativa.
+description: As seções a seguir fornecem diretrizes sobre práticas de programação RPC que ajudam a criar os melhores aplicativos RPC possíveis. Essas práticas são divididas entre tarefas de programação RPC, mas, caso contrário, não são ordenadas de nenhuma maneira significativa.
 ms.assetid: 83aae673-f7ef-40b5-abac-7b85ead801ac
 keywords:
-- RPC de chamada de procedimento remoto, práticas recomendadas
+- RPC de Chamada de Procedimento Remoto , práticas recomendadas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c88cbc9cda1fee3f41b12d41eceba4a9c63f744
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: fdad2a69c19efc11554bffc1d58b84a1dceb93f2ff41c37e7bae07ab55cfb717
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292024"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120023146"
 ---
 # <a name="best-rpc-programming-practices"></a>Melhores práticas de programação RPC
 
-As seções a seguir fornecem orientação sobre as práticas de programação RPC que ajudam a criar os melhores aplicativos RPC possíveis. Essas práticas são divididas entre as tarefas de programação de RPC, mas, caso contrário, não são ordenadas de nenhuma maneira significativa.
+As seções a seguir fornecem diretrizes sobre práticas de programação RPC que ajudam a criar os melhores aplicativos RPC possíveis. Essas práticas são divididas entre tarefas de programação RPC, mas, caso contrário, não são ordenadas de nenhuma maneira significativa.
 
-Informações adicionais sobre a programação RPC podem ser encontradas na seção [visão geral](overviews.md) do RPC no SDK (Software Development Kit) da plataforma.
+Informações adicionais sobre programação RPC podem ser encontradas na seção [Visão](overviews.md) geral do RPC no SDK (Kit de Desenvolvimento de Software de Plataforma).
 
 As práticas de programação abordadas nesta seção são as seguintes:
 
 -   [Fazendo chamadas de função RPC](making-rpc-function-calls.md)
--   [Usando identificadores de contexto](using-context-handles.md)
+-   [Usando alças de contexto](using-context-handles.md)
 -   [RPC e a rede](rpc-and-the-network.md)
--   [Gravando clientes e servidores compatíveis com versões anteriores](writing-backward-compatible-clients-and-servers.md)
--   [Gravando um cliente ou servidor RPC seguro](writing-a-secure-rpc-client-or-server.md)
+-   [Escrevendo clientes e servidores compatíveis com versões anteriores](writing-backward-compatible-clients-and-servers.md)
+-   [Escrevendo um cliente ou servidor RPC seguro](writing-a-secure-rpc-client-or-server.md)
 -   [Desenvolvendo um servidor RPC de alto desempenho](developing-a-high-performance-rpc-server.md)
--   [Obtendo informações estendidas de erro RPC](obtaining-extended-rpc-error-information.md)
+-   [Obtendo informações de erro RPC estendidas](obtaining-extended-rpc-error-information.md)
 
- 
+ 
 
- 
+ 
 
 
 

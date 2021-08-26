@@ -1,11 +1,11 @@
 ---
-title: Método IVMGuestOS InstallIntegrationComponents (VPCCOMInterfaces. h)
-description: Localiza e instala os componentes de integração mais recentes no sistema operacional convidado.
+title: Método IVMGuestOS InstallIntegrationComponents (VPCCOMInterfaces.h)
+description: Localiza e instala os Componentes de Integração mais recentes no sistema operacional convidado.
 ms.assetid: 06f302b3-ec2b-471a-8e2e-095ed6ecbd3d
 keywords:
-- InstallIntegrationComponents do método virtual PC
-- Método InstallIntegrationComponents Virtual PC, interface IVMGuestOS
-- IVMGuestOS interface virtual PC, método InstallIntegrationComponents
+- Pc Virtual do método InstallIntegrationComponents
+- Método InstallIntegrationComponents pc virtual, interface IVMGuestOS
+- INTERFACE IVMGuestOS Pc Virtual , método InstallIntegrationComponents
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 879ded1464ebd310e1d1da4e3a952dc086600350
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c61ade15736cec16976566f464573b30df7fd918f0f2be84f2f4ebd56e5db514
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369260"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120007186"
 ---
-# <a name="ivmguestosinstallintegrationcomponents-method"></a>Método IVMGuestOS:: InstallIntegrationComponents
+# <a name="ivmguestosinstallintegrationcomponents-method"></a>Método IVMGuestOS::InstallIntegrationComponents
 
-\[O Windows Virtual PC não está mais disponível para uso a partir do Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows O PC virtual não está mais disponível para uso a partir Windows 8. Em vez disso, use o provedor WMI do [Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
 
-Localiza e instala os componentes de integração mais recentes no sistema operacional convidado.
+Localiza e instala os Componentes de Integração mais recentes no sistema operacional convidado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,21 +42,21 @@ HRESULT InstallIntegrationComponents();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
 
 
-| Código/valor de retorno                                                                                                                                                                            | Descrição                                                                            |
+| Valor/código de retorno                                                                                                                                                                            | Descrição                                                                            |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> <dt>0</dt> </dl>                                                  | A operação foi bem-sucedida.<br/>                                               |
-| <dl> <dt>**VM \_ E a \_ VM \_ não \_ está executando**</dt> <dt>0xA0040206</dt> </dl>                       | A máquina virtual deve estar em execução para esta operação.<br/>                     |
-| <dl> <dt>**VM \_ E 0xA0040207 de \_ VM \_ desconhecido**</dt> <dt></dt> </dl>                            | Não foi possível encontrar a máquina virtual.<br/>                                     |
-| <dl> <dt>**VM \_ Unidade E 0xA0040502 \_ \_ inválidas**</dt> <dt></dt> </dl>                         | A máquina virtual não tem uma unidade de DVD vazia.<br/>                       |
-| <dl> <dt>**VM \_ \_Falha de \_ desmontagem \_ de mídia E**</dt> <dt>0xA0040508</dt> </dl>                   | Falha na tentativa de desmontar a mídia da unidade de DVD da máquina virtual.<br/> |
-| <dl> <dt>**DISP \_ E \_**</dt> <dt>0x80020009</dt> de exceção </dl>                            | Ocorreu um erro inesperado.<br/>                                           |
-| <dl> <dt>**HRESULT \_ Do \_ Win32 (arquivo de erro \_ \_ não \_ encontrado)**</dt> <dt>0x80070002</dt> </dl> | O sistema não pode localizar o arquivo ISO para os componentes de integração.<br/>         |
+| <dl> <dt>**VM \_ E \_ VM \_ NÃO \_ EXECUTANDO**</dt> <dt>0XA0040206</dt> </dl>                       | A máquina virtual deve estar em execução para essa operação.<br/>                     |
+| <dl> <dt>**VM \_ E \_ VM \_ UNKNOWN**</dt> <dt>0xA0040207</dt> </dl>                            | Não foi possível encontrar a máquina virtual.<br/>                                     |
+| <dl> <dt>**VM \_ E \_ UNIDADE \_ INVÁLIDA**</dt> <dt>0XA0040502</dt> </dl>                         | A máquina virtual não tem uma unidade de DVD vazia.<br/>                       |
+| <dl> <dt>**VM \_ E \_ MEDIA \_ UNMOUNT \_ FALHA**</dt> <dt>0XA0040508</dt> </dl>                   | Falha na tentativa de desmontar a mídia da unidade de DVD da máquina virtual.<br/> |
+| <dl> <dt>**DISP \_ E \_ EXCEPTION**</dt> <dt>0x80020009</dt> </dl>                            | Ocorreu um erro inesperado.<br/>                                           |
+| <dl> <dt>**HRESULT \_ FROM \_ WIN32(ERROR \_ FILE NOT \_ \_ FOUND)**</dt> <dt>0X80070002</dt> </dl> | O sistema não pode encontrar o arquivo ISO para os Componentes de Integração.<br/>         |
 
 
 
@@ -68,12 +68,12 @@ Esse método pode retornar um desses valores.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                     |
-| Fim do suporte do cliente<br/>    | Windows 7<br/>                                                                          |
+| Fim do suporte ao cliente<br/>    | Windows 7<br/>                                                                          |
 | Produto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| parâmetro<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMGuestOS é definido como 99fea0db-4880-499a-B6D8-73dff9bc91be<br/>                 |
+| Cabeçalho<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMGuestOS é definido como \_ 99fea0db-4880-499a-b6d8-73dff9bc91be<br/>                 |
 
 
 

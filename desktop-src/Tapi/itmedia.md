@@ -4,16 +4,16 @@ ms.assetid: f5cd7971-3456-4e2f-8808-deb16678099a
 title: Interface ITMedia (Sdpblb. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8dd00d7eab685fe99b089556bcdb0ed2bf6329df
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bfd1cf7dcf8ef294481a4687dbac950f97b4adede6a6871222292127e6255057
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105757213"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120034636"
 ---
 # <a name="itmedia-interface"></a>Interface ITMedia
 
-\[ Os controles e as interfaces da conferência de telefonia IP de reunião não estão disponíveis para uso no Windows Vista, no Windows Server 2008 e nas versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
+\[os controles e as interfaces de conferência de telefonia IP de reunião não estão disponíveis para uso no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
 
 A interface **ITMedia** é uma representação de mídia em um protocolo de descritor de sessão (SDP, consulte RFC 2327). Essa interface exporta métodos para obter e definir propriedades básicas de mídia, como tipo. Os métodos [**ITMediaCollection:: get \_ Item**](itmediacollection-get-item.md) e [**ITMediaCollection:: Create**](itmediacollection-create.md) criam a interface **ITMedia** .
 
@@ -54,7 +54,7 @@ A interface **ITMedia** tem esses métodos.
 | Requisito | Valor |
 |-------------------------|---------------------------------------------------------------------------------------|
 | Versão da TAPI<br/> | Requer TAPI 3,0 ou posterior<br/>                                                 |
-| parâmetro<br/>       | <dl> <dt>Sdpblb. h</dt> </dl>   |
+| Cabeçalho<br/>       | <dl> <dt>Sdpblb. h</dt> </dl>   |
 | Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
 | DLL<br/>          | <dl> <dt>Sdpblb.dll</dt> </dl> |
 

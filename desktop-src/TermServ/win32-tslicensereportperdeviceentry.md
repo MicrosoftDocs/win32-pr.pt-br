@@ -22,12 +22,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a120d477ff03675f160d94f1506f59cdf1462fa1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dfbcdad271a346820b318c94bed7ce6b9b9527d3fdd7df9cc3f1dc9d9a97aae3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454728"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120008416"
 ---
 # <a name="win32_tslicensereportperdeviceentry-class"></a>\_Classe Win32 TSLicenseReportPerDeviceEntry
 
@@ -124,21 +124,21 @@ A versão do Serviços de Área de Trabalho Remota para a qual a CAL RDS por usu
 "Windows Server 2012"
 </dt> <dd>
 
-Somente os servidores que executam o Windows Server 2012, Windows Server 2008 R2 ou Windows Server 2008 têm suporte com esta licença.
+somente os servidores que executam Windows Server 2012, Windows server 2008 R2 ou Windows server 2008 têm suporte com esta licença.
 
 </dd> <dt>
 
 "Windows Server 7"
 </dt> <dd>
 
-Somente os servidores que executam o Windows Server 2008 R2 ou o Windows Server 2008 têm suporte com esta licença.
+somente os servidores que executam o Windows server 2008 R2 ou o Windows server 2008 têm suporte com esta licença.
 
 </dd> <dt>
 
 "Windows Server 2008"
 </dt> <dd>
 
-Somente servidores que executam o Windows Server 2008 têm suporte com esta licença.
+somente os servidores que executam o Windows Server 2008 têm suporte com esta licença.
 
 </dd> </dl>
 
@@ -181,14 +181,14 @@ Windows Server 2008
 1
 </dt> <dd>
 
-Não há suporte.
+Sem suporte.
 
 </dd> <dt>
 
 0
 </dt> <dd>
 
-Não há suporte.
+Sem suporte.
 
 </dd> </dl>
 

@@ -1,34 +1,34 @@
 ---
-title: Considerações de segurança de host de dispositivo
-description: O uso do host de dispositivo cria problemas de segurança.
+title: Considerações sobre segurança do host do dispositivo
+description: Usar o host do dispositivo cria problemas de segurança.
 ms.assetid: 7cb445ea-5df4-4030-babd-62527b4d6210
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b5a51b90bff33949a33cd9fa1046deb1916ab30
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: cb4e8cdce90cdc5801010833db4cb97c49487c16a3926bf235f126f33e1078f9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104454136"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120008086"
 ---
-# <a name="device-host-security-considerations"></a>Considerações de segurança de host de dispositivo
+# <a name="device-host-security-considerations"></a>Considerações sobre segurança do host do dispositivo
 
-O uso do host de dispositivo cria problemas de segurança devido ao seguinte:
+O uso do host do dispositivo cria problemas de segurança devido ao seguinte:
 
--   Os dispositivos hospedados em um computador que executa o Windows XP enviam anúncios em todas as redes.
--   Os dispositivos hospedados em um computador que executa o Windows XP permitem o controle de dispositivos de todas as redes.
+-   Dispositivos hospedados em um computador que executa Windows XP envia anúncios em todas as redes.
+-   Dispositivos hospedados em um computador que executa Windows XP permitem o controle de dispositivos de todas as redes.
 
-Isso aumenta o risco para os consumidores domésticos, pois dispositivos como um player de mídia ou um sistema HVAC ou de iluminação hospedado em um computador que executa o Windows XP estão visíveis e podem ser controlados a partir de pontos de controle fora do início.
+Isso aumenta o risco para os consumidores de casa, porque dispositivos como um player de mídia ou uma iluminação ponte ou sistema HVAC hospedado em um computador que executa o Windows XP estão visíveis e podem ser controlados de pontos de controle fora da casa.
 
 Ao criar um dispositivo hospedado, você precisa levar em consideração alguns problemas de segurança.
 
--   Para reduzir o escopo de descoberta e ataque de dispositivos baseados em UPnP, a TTL de todas as mensagens SSDP é 1. Isso significa que um dispositivo registrado só é descoberto por pontos de controle na mesma rede. Você pode configurar uma TTL mais alta no registro.
--   O registro de um dispositivo que não está em execução requer o registro prévio do Device. dll com COM, o que exige privilégio de administrador.
--   O registro de um dispositivo em execução requer privilégio de administrador, serviço local ou sistema local.
--   Quando o host do dispositivo é iniciado, ele é executado como [LocalService](/windows/desktop/Services/localservice-account). Isso dá ao dispositivo a capacidade de gerar auditorias e ler a chave do registro **HKEY \_ local \_ Machine** . O dispositivo tem acesso ao **HKEY \_ Current \_ User**. A conta LocalService pode usar recursos para os quais o LocalService recebeu acesso, bem como aqueles que concedem acesso ao AuthenticatedUser. O dispositivo restringiu o acesso ao sistema de arquivos.
--   As ACLs do sistema de arquivos devem ser atualizadas para permitir o acesso de [LocalService](/windows/desktop/Services/localservice-account) ao diretório de recursos.
--   Se o dispositivo precisar ter mais acesso de segurança, você poderá criar seu próprio processo para o dispositivo e registrá-lo usando [**IUPnPRegistrar:: RegisterRunningDevice**](/windows/desktop/api/Upnphost/nf-upnphost-iupnpregistrar-registerrunningdevice).
+-   Para reduzir o escopo de descoberta e ataque de dispositivos baseados em UPnP, o TTL de todas as mensagens SSDP é 1. Isso significa que um dispositivo registrado só é descoberto por pontos de controle na mesma rede. Você pode configurar um TTL mais alto no Registro.
+-   Registrar um dispositivo não em execução requer o registro antecipado do dispositivo .dll com COM, o que requer privilégio de administrador.
+-   O registro de um dispositivo em execução requer privilégios de Administrador, Serviço Local ou Sistema Local.
+-   Quando o host do dispositivo é iniciado, ele é executado como [LocalService.](/windows/desktop/Services/localservice-account) Isso dá ao dispositivo a capacidade de gerar auditorias e ler a **chave do registro HKEY LOCAL \_ \_ MACHINE.** O dispositivo tem acesso ao **HKEY \_ CURRENT \_ USER.** A conta LocalService pode usar recursos aos quais LocalService recebeu acesso, bem como aqueles que concedem acesso a AuthenticatedUser. O dispositivo tem acesso restrito ao sistema de arquivos.
+-   As ACLs do sistema de arquivos devem ser atualizadas para permitir [o acesso de LocalService](/windows/desktop/Services/localservice-account) ao diretório de recursos.
+-   Se o dispositivo precisa ter mais acesso à segurança, você pode criar seu próprio processo para o dispositivo e registrá-lo usando [**IUPnPRegistrar::RegisterRunningDevice**](/windows/desktop/api/Upnphost/nf-upnphost-iupnpregistrar-registerrunningdevice).
 
- 
+ 
 
- 
+ 

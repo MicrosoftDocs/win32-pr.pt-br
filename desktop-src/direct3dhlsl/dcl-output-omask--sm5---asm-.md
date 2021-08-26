@@ -4,12 +4,12 @@ description: Declare um registro de saída para ser gravado pelo sombreador.
 ms.assetid: 23FC5FA3-F550-4CD1-9AA9-86738818686F
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1831a47680a06eba085f61badfe56529eed4ba32
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 8a6860904b557bc21a5202bbfd60105852adc260580457afb02b4fe6d92352b5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104365290"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120068506"
 ---
 # <a name="dcl_output-omask-sm5---asm"></a>\_oMask de saída DCL (SM5-ASM)
 
@@ -53,7 +53,7 @@ Essa instrução se aplica aos seguintes estágios de sombreador:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     |         |
 

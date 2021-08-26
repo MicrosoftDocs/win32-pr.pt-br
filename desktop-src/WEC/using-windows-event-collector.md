@@ -1,20 +1,20 @@
 ---
-title: Usando o coletor de eventos do Windows
-description: Esta seção lista os tópicos que explicam as tarefas que podem ser realizadas usando o SDK do coletor de eventos do Windows. Exemplos de código e explicações para todas as tarefas são incluídos em cada um dos tópicos a seguir.
+title: usando Windows coletor de eventos
+description: esta seção lista os tópicos que explicam as tarefas que podem ser realizadas usando o SDK do coletor de eventos Windows. Exemplos de código e explicações para todas as tarefas são incluídos em cada um dos tópicos a seguir.
 ms.assetid: 3396454a-4f43-45d0-951e-3096b9a4a077
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dc618ced4cefc7f17fb63b27bb1e097e65b3adac
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: cb8b928dddcd3e70848d510a8986962d478bedbe6f2f8bffcbec19c276983328
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105788824"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120006006"
 ---
-# <a name="using-windows-event-collector"></a>Usando o coletor de eventos do Windows
+# <a name="using-windows-event-collector"></a>usando Windows coletor de eventos
 
-Esta seção lista os tópicos que explicam as tarefas que podem ser realizadas usando o SDK do coletor de eventos do Windows. Exemplos de código e explicações para todas as tarefas são incluídos em cada um dos tópicos a seguir.
+esta seção lista os tópicos que explicam as tarefas que podem ser realizadas usando o SDK do coletor de eventos Windows. Exemplos de código e explicações para todas as tarefas são incluídos em cada um dos tópicos a seguir.
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -58,9 +58,9 @@ Esta seção lista os tópicos que explicam as tarefas que podem ser realizadas 
 
     Fornece informações e um exemplo de código C++ para repetir uma assinatura do coletor de eventos quando uma ou mais origens de evento falharam. Você pode repetir uma única origem de evento ou pode repetir a assinatura inteira.
 
- 
+ 
 
- 
+ 
 
 
 

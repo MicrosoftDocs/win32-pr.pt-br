@@ -1,19 +1,19 @@
 ---
-description: O D3DX fornece as seguintes funções de animação.
+description: D3DX fornece as seguintes funções de animação.
 ms.assetid: c4a9cffe-1be2-4c6a-910d-ebae9632dd33
 title: Funções de animação
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3811f4c0abed5b4e6a64e7744a834640708af581
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 286d0c091a57088f271ebdbf99e8af5e89f3adc0c01adcd17a5af3e8e758261f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104370055"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120069176"
 ---
 # <a name="animation-functions"></a>Funções de animação
 
-O D3DX fornece as seguintes funções de animação.
+D3DX fornece as seguintes funções de animação.
 
 -   [**D3DXCreateAnimationController**](d3dxcreateanimationcontroller.md)
 -   [**D3DXCreateCompressedAnimationSet**](d3dxcreatecompressedanimationset.md)

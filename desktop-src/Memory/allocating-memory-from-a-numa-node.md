@@ -1,19 +1,19 @@
 ---
-description: O código de exemplo a seguir demonstra o uso das funções de NUMA GetNumaHighestNodeNumber, GetNumaProcessorNode e VirtualAllocExNuma.
+description: O código de exemplo a seguir demonstra o uso das funções NUMA GetNumaHighestNodeNumber, GetNumaProcessorNode e VirtualAllocExNuma.
 ms.assetid: df025b35-fb6b-4987-806e-9c76e6b130a1
 title: Alocando memória de um nó NUMA
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d5eb4a9af260c9d8b28a6bf83fa37744a85d5d4d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f7d6f845b5b071b48561c18aab81848bee1bb36675bff1ca2f634b46c291f066
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090482"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120078246"
 ---
 # <a name="allocating-memory-from-a-numa-node"></a>Alocando memória de um nó NUMA
 
-O código de exemplo a seguir demonstra o uso das funções de NUMA [**GetNumaHighestNodeNumber**](/windows/win32/api/systemtopologyapi/nf-systemtopologyapi-getnumahighestnodenumber), [**GetNumaProcessorNode**](/windows/win32/api/winbase/nf-winbase-getnumaprocessornode)e [**VirtualAllocExNuma**](/windows/win32/api/memoryapi/nf-memoryapi-virtualallocexnuma). Ele também demonstra o uso da função [**QueryWorkingSetEx**](/windows/win32/api/psapi/nf-psapi-queryworkingsetex) para recuperar o nó numa no qual as páginas são alocadas.
+O código de exemplo a seguir demonstra o uso das funções NUMA [**GetNumaHighestNodeNumber**](/windows/win32/api/systemtopologyapi/nf-systemtopologyapi-getnumahighestnodenumber), [**GetNumaProcessorNode**](/windows/win32/api/winbase/nf-winbase-getnumaprocessornode)e [**VirtualAllocExNuma**](/windows/win32/api/memoryapi/nf-memoryapi-virtualallocexnuma). Ele também demonstra o uso da função [**QueryWorkingSetEx**](/windows/win32/api/psapi/nf-psapi-queryworkingsetex) para recuperar o nó NUMA no qual as páginas são alocadas.
 
 
 ```C++
@@ -256,7 +256,7 @@ void DumpNumaNodeInfo (PVOID Buffer, SIZE_T Size)
 
 <dl> <dt>
 
-[Suporte a NUMA](../procthread/numa-support.md)
+[Suporte ao NUMA](../procthread/numa-support.md)
 </dt> </dl>
 
  

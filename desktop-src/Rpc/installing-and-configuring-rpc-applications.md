@@ -1,23 +1,23 @@
 ---
 title: Instalando e Configurando aplicativos RPC
-description: Quando o sistema operacional Microsoft Windows é instalado em um servidor ou cliente, a instalação instala automaticamente os arquivos de tempo de execução RPC.
+description: quando o sistema operacional Microsoft Windows está instalado em um servidor ou cliente, a instalação instala automaticamente os arquivos de tempo de execução RPC.
 ms.assetid: cfcada3d-cf7c-42a9-9ed4-0b1bba7a98cf
 keywords:
 - Chamada de procedimento remoto RPC, tarefas, instalação e configuração de aplicativos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 90837261c571276a74bb3a5354c7b9a5db2da6cc
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: bf5cf5d408e2b23042074031ce0307b3a13cf3461df31cc39899b0315f99e8c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104453725"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120020436"
 ---
 # <a name="installing-and-configuring-rpc-applications"></a>Instalando e Configurando aplicativos RPC
 
-Quando o sistema operacional Microsoft Windows é instalado em um servidor ou cliente, a instalação instala automaticamente os arquivos de tempo de execução RPC. Nenhuma outra instalação de RPC é necessária. No entanto, você deve garantir que a versão do Windows instalada ofereça suporte a todos os recursos usados em seu aplicativo distribuído.
+quando o sistema operacional Microsoft Windows está instalado em um servidor ou cliente, a instalação instala automaticamente os arquivos de tempo de execução RPC. Nenhuma outra instalação de RPC é necessária. no entanto, você deve garantir que a versão do Windows instalada ofereça suporte a todos os recursos usados em seu aplicativo distribuído.
 
-Ao usar um aplicativo RPC em um sistema operacional Windows 3. x ou Microsoft MS-DOS, você deve copiar os arquivos executáveis de tempo de execução RPC para os computadores com Windows 3. x ou MS-DOS que usarão o aplicativo. O diretório \\ mstools \\ RPC \_ rt16 no CD do SDK (Software Development Kit) da plataforma contém uma imagem de disco desses arquivos junto com um programa de instalação para instalar os arquivos. Use esta imagem de disco para criar um disco de instalação para distribuição com seu aplicativo RPC. Você também pode usar aplicativos cliente de 16 bits direcionados para o MS-DOS ou Windows em um sistema operacional Windows de 32 bits/64 bits. No entanto, o programa de instalação do aplicativo deve instalar os arquivos executáveis contidos nesta imagem de disco.
+ao usar um aplicativo RPC em um sistema operacional Windows 3. x ou Microsoft MS-DOS, você deve copiar os arquivos executáveis de tempo de execução RPC para os computadores Windows 3. x ou MS-DOS que usarão o aplicativo. O diretório \\ mstools \\ RPC \_ rt16 no CD do SDK (Software Development Kit) da plataforma contém uma imagem de disco desses arquivos junto com um programa de instalação para instalar os arquivos. Use esta imagem de disco para criar um disco de instalação para distribuição com seu aplicativo RPC. você também pode usar aplicativos cliente de 16 bits direcionados para o MS-DOS ou Windows em um sistema operacional Windows de 32 bits/64 bits. No entanto, o programa de instalação do aplicativo deve instalar os arquivos executáveis contidos nesta imagem de disco.
 
 Ao criar um aplicativo RPC para um cliente Macintosh, você deve vincular os arquivos necessários ao aplicativo no momento da compilação. Nenhuma instalação adicional de RPC é necessária.
 
@@ -31,9 +31,9 @@ Esta seção contém informações sobre como configurar aplicativos RPC em uma 
 -   [Instalação de SPX/IPX](spx-ipx-installation.md)
 -   [Configurando o servidor de segurança](configuring-the-security-server.md)
 
- 
+ 
 
- 
+ 
 
 
 

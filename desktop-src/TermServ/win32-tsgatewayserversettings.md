@@ -39,12 +39,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c0fb9b93f75c47760da8778e4aef8bed7f4e022
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 00c199b4b8e98832dcc8dbe65b8fc2ef636df71c8bd6e3c096670e6333f83a75
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455845"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120008516"
 ---
 # <a name="win32_tsgatewayserversettings-class"></a>\_Classe Win32 TSGatewayServerSettings
 
@@ -97,36 +97,36 @@ A classe **Win32 \_ TSGatewayServerSettings** tem esses métodos.
 
 | Método                                                                                                                                             | Descrição                                                                                                                                                                                                                                                      |
 |:---------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Configurar**](configure-win32-tsgatewayserversettings.md)                                                                                       | Define as configurações de IIS e RPC exigidas pelo serviço de gateway de área de trabalho remota.<br/> **Windows Server 2008:** Esse método não está disponível antes do Windows Server 2008 R2.<br/>                                                                               |
+| [**Configurar**](configure-win32-tsgatewayserversettings.md)                                                                                       | Define as configurações de IIS e RPC exigidas pelo serviço de gateway de área de trabalho remota.<br/> **Windows Server 2008:** este método não está disponível antes do Windows Server 2008 R2.<br/>                                                                               |
 | [**EnableCentralCAP**](enablecentralcap-win32-tsgatewayserversettings.md)                                                                         | Habilita ou desabilita a propriedade **CentralCAPEnabled** , que controla se os servidores de política de autorização de conexão central Área de Trabalho Remota (RD CAP) são usados para controlar as políticas de autorização de conexão para este servidor.<br/>                    |
 | [**EnableLogEvent**](enablelogevent-win32-tsgatewayserversettings.md)                                                                             | Habilita ou desabilita o registro em log do tipo de evento especificado.<br/>                                                                                                                                                                                              |
-| [**EnableOnlyConsentCapableClients**](enableonlyconsentcapableclients-win32-tsgatewayserversettings.md)                                           | Define a propriedade **OnlyConsentCapableClients** .<br/> **Windows Server 2008:** Esse método não está disponível antes do Windows Server 2008 R2.<br/>                                                                                                      |
-| [**EnableRequestSOH**](win32-tsgatewayserversettings-enablerequestsoh.md)                                                                         | Este método não tem suporte a partir do Windows Server 2016.<br/> **Windows server 2012 R2, Windows server 2012, Windows server 2008 R2 e Windows server 2008:** Habilita ou desabilita solicitações para uma SoH (declaração de integridade).<br/> <br/> |
-| [**EnableTransport**](enabletransport-win32-tsgatewayserversettings.md)                                                                           | Habilita ou desabilita o transporte especificado.<br/> **Windows server 2008 R2 e Windows server 2008:** Este método não está disponível antes do Windows Server 2012.<br/>                                                                                  |
+| [**EnableOnlyConsentCapableClients**](enableonlyconsentcapableclients-win32-tsgatewayserversettings.md)                                           | Define a propriedade **OnlyConsentCapableClients** .<br/> **Windows Server 2008:** este método não está disponível antes do Windows Server 2008 R2.<br/>                                                                                                      |
+| [**EnableRequestSOH**](win32-tsgatewayserversettings-enablerequestsoh.md)                                                                         | Não há suporte para esse método a partir do Windows Server 2016.<br/> **Windows Server 2012 r2, Windows Server 2012, Windows server 2008 R2 e Windows server 2008:** Habilita ou desabilita solicitações para uma SoH (declaração de integridade).<br/> <br/> |
+| [**EnableTransport**](enabletransport-win32-tsgatewayserversettings.md)                                                                           | Habilita ou desabilita o transporte especificado.<br/> **Windows server 2008 R2 e Windows server 2008:** Este método não está disponível antes de Windows Server 2012.<br/>                                                                                  |
 | [**EnumAuthenticationPlugins**](enumauthenticationplugins-win32-tsgatewayserversettings.md)                                                       | Enumera todos os plug-ins de autenticação registrados.<br/> **Windows Server 2008:** Este método não está disponível.<br/>                                                                                                                                  |
-| [**EnumAuthorizationPlugins**](enumauthorizationplugins-win32-tsgatewayserversettings.md)                                                         | Enumera todos os plug-ins de autorização registrados.<br/> **Windows Server 2008:** Esse método não está disponível antes do Windows Server 2008 R2.<br/>                                                                                                     |
-| [**GetIPAndPort**](getipandport-win32-tsgatewayserversettings.md)                                                                                 | Obtém o endereço IP de escuta e o número da porta para o transporte especificado.<br/> **Windows server 2008 R2 e Windows server 2008:** Este método não está disponível antes do Windows Server 2012.<br/>                                                 |
+| [**EnumAuthorizationPlugins**](enumauthorizationplugins-win32-tsgatewayserversettings.md)                                                         | Enumera todos os plug-ins de autorização registrados.<br/> **Windows Server 2008:** este método não está disponível antes do Windows Server 2008 R2.<br/>                                                                                                     |
+| [**GetIPAndPort**](getipandport-win32-tsgatewayserversettings.md)                                                                                 | Obtém o endereço IP de escuta e o número da porta para o transporte especificado.<br/> **Windows server 2008 R2 e Windows server 2008:** Este método não está disponível antes de Windows Server 2012.<br/>                                                 |
 | [**GetLogEventName**](getlogeventname-win32-tsgatewayserversettings.md)                                                                           | Retorna o nome do evento de log para o índice de evento de log especificado.<br/>                                                                                                                                                                                         |
 | [**Getprotocolname**](getprotocolname-win32-tsgatewayserversettings.md)                                                                           | Retorna o nome do protocolo para o índice de protocolo especificado.<br/>                                                                                                                                                                                           |
 | [**IsLogEventEnabled**](islogeventenabled-win32-tsgatewayserversettings.md)                                                                       | Indica se o tipo de log de eventos especificado está habilitado.<br/>                                                                                                                                                                                            |
-| [**IsTransportEnabled**](istransportenabled-win32-tsgatewayserversettings.md)                                                                     | Determina se o transporte especificado está habilitado.<br/> **Windows server 2008 R2 e Windows server 2008:** Este método não está disponível antes do Windows Server 2012.<br/>                                                                        |
+| [**IsTransportEnabled**](istransportenabled-win32-tsgatewayserversettings.md)                                                                     | Determina se o transporte especificado está habilitado.<br/> **Windows server 2008 R2 e Windows server 2008:** Este método não está disponível antes de Windows Server 2012.<br/>                                                                        |
 | [**QueryCertContext**](win32-tsgatewayserversettings-querycertcontext.md)                                                                         | Indica se o certificado especificado está instalado.<br/>                                                                                                                                                                                             |
-| [**RecycleRpcApplicationPools**](recyclerpcapplicationpools-win32-tsgatewayserversettings.md)                                                     | Recicla os pools de aplicativos RPC no IIS.<br/> **Windows Server 2008:** Esse método não está disponível antes do Windows Server 2008 R2.<br/>                                                                                                            |
+| [**RecycleRpcApplicationPools**](recyclerpcapplicationpools-win32-tsgatewayserversettings.md)                                                     | Recicla os pools de aplicativos RPC no IIS.<br/> **Windows Server 2008:** este método não está disponível antes do Windows Server 2008 R2.<br/>                                                                                                            |
 | [**RefreshCertContext**](win32-tsgatewayserversettings-refreshcertcontext.md)                                                                     | Atualiza o certificado que é usado pelo servidor de gateway de área de trabalho remota.<br/>                                                                                                                                                                                      |
-| [**SetAuthenticationPlugin**](setauthenticationplugin-win32-tsgatewayserversettings.md)                                                           | Define o plug-in de autenticação atual para o servidor de gateway de área de trabalho remota.<br/> **Windows Server 2008:** Esse método não está disponível antes do Windows Server 2008 R2.<br/>                                                                                    |
-| [**SetAuthenticationPluginAndRecycleRpcApplicationPools**](setauthenticationpluginandrecyclerpcapplicationpools-win32-tsgatewayserversettings.md) | Define o plug-in de autenticação atual para o servidor de gateway de área de trabalho remota e recicla os pools de aplicativos RPC no IIS.<br/> **Windows Server 2008:** Esse método não está disponível antes do Windows Server 2008 R2.<br/>                                      |
-| [**SetAuthorizationPlugin**](setauthorizationplugin-win32-tsgatewayserversettings.md)                                                             | Define o plug-in de autorização atual para o servidor de gateway de área de trabalho remota.<br/> **Windows Server 2008:** Esse método não está disponível antes do Windows Server 2008 R2.<br/>                                                                                     |
-| [**SetCertificate**](setcertificate-win32-tsgatewayserversettings.md)                                                                             | Define o hash de certificado para associação HTTPS na porta 443 no IIS.<br/> **Windows Server 2008:** Esse método não está disponível antes do Windows Server 2008 R2.<br/>                                                                                       |
+| [**SetAuthenticationPlugin**](setauthenticationplugin-win32-tsgatewayserversettings.md)                                                           | Define o plug-in de autenticação atual para o servidor de gateway de área de trabalho remota.<br/> **Windows Server 2008:** este método não está disponível antes do Windows Server 2008 R2.<br/>                                                                                    |
+| [**SetAuthenticationPluginAndRecycleRpcApplicationPools**](setauthenticationpluginandrecyclerpcapplicationpools-win32-tsgatewayserversettings.md) | Define o plug-in de autenticação atual para o servidor de gateway de área de trabalho remota e recicla os pools de aplicativos RPC no IIS.<br/> **Windows Server 2008:** este método não está disponível antes do Windows Server 2008 R2.<br/>                                      |
+| [**SetAuthorizationPlugin**](setauthorizationplugin-win32-tsgatewayserversettings.md)                                                             | Define o plug-in de autorização atual para o servidor de gateway de área de trabalho remota.<br/> **Windows Server 2008:** este método não está disponível antes do Windows Server 2008 R2.<br/>                                                                                     |
+| [**SetCertificate**](setcertificate-win32-tsgatewayserversettings.md)                                                                             | Define o hash de certificado para associação HTTPS na porta 443 no IIS.<br/> **Windows Server 2008:** este método não está disponível antes do Windows Server 2008 R2.<br/>                                                                                       |
 | [**SetCertificateACL**](setcertificateacl-win32-tsgatewayserversettings.md)                                                                       | Define as listas de controle de acesso (ACLs) do certificado para este servidor.<br/>                                                                                                                                                                                     |
-| [**SetDefaultPluginsAndRecycleRpcApplicationPools**](setdefaultpluginsandrecyclerpcapplicationpools-win32-tsgatewayserversettings.md)             | Define os plug-ins de autenticação e autorização atuais para o servidor de gateway de área de trabalho remota e recicla os pools de aplicativos RPC no IIS.<br/> **Windows Server 2008:** Esse método não está disponível antes do Windows Server 2008 R2.<br/>                   |
-| [**SetEnforceChannelBinding**](setenforcechannelbinding-win32-tsgatewayserversettings.md)                                                         | Define a propriedade **EnforceChannelBinding** .<br/> **Windows server 2008 R2 e Windows server 2008:** Este método não está disponível antes do Windows Server 2012.<br/>                                                                                  |
-| [**SetIPAndPort**](setipandport-win32-tsgatewayserversettings.md)                                                                                 | Define o endereço IP de escuta e o número da porta para o transporte especificado.<br/> **Windows server 2008 R2 e Windows server 2008:** Este método não está disponível antes do Windows Server 2012.<br/>                                                    |
+| [**SetDefaultPluginsAndRecycleRpcApplicationPools**](setdefaultpluginsandrecyclerpcapplicationpools-win32-tsgatewayserversettings.md)             | Define os plug-ins de autenticação e autorização atuais para o servidor de gateway de área de trabalho remota e recicla os pools de aplicativos RPC no IIS.<br/> **Windows Server 2008:** este método não está disponível antes do Windows Server 2008 R2.<br/>                   |
+| [**SetEnforceChannelBinding**](setenforcechannelbinding-win32-tsgatewayserversettings.md)                                                         | Define a propriedade **EnforceChannelBinding** .<br/> **Windows server 2008 R2 e Windows server 2008:** Este método não está disponível antes de Windows Server 2012.<br/>                                                                                  |
+| [**SetIPAndPort**](setipandport-win32-tsgatewayserversettings.md)                                                                                 | Define o endereço IP de escuta e o número da porta para o transporte especificado.<br/> **Windows server 2008 R2 e Windows server 2008:** Este método não está disponível antes de Windows Server 2012.<br/>                                                    |
 | [**SetMaxConnections**](setmaxconnections-win32-tsgatewayserversettings.md)                                                                       | Define o número máximo de conexões permitidas por meio do gateway RD. Esse método altera as propriedades **MaxConnections** e **UnlimitedConnections** .<br/>                                                                                                |
-| [**SetSslBridging**](setsslbridging-win32-tsgatewayserversettings.md)                                                                             | Define o tipo de ponte SSL a ser usado pelo servidor de gateway de área de trabalho remota.<br/> **Windows Server 2008:** Esse método não está disponível antes do Windows Server 2008 R2.<br/>                                                                                    |
-| [**TSGRemoveAdminMsg**](tsgremoveadminmsg-win32-tsgatewayserversettings.md)                                                                       | Remove a mensagem administrativa para o servidor de gateway.<br/> **Windows Server 2008:** Esse método não está disponível antes do Windows Server 2008 R2.<br/>                                                                                            |
-| [**TSGRemoveConsentMsg**](tsgremoveconsentmsg-win32-tsgatewayserversettings.md)                                                                   | Remove a mensagem administrativa para o servidor de gateway.<br/> **Windows Server 2008:** Esse método não está disponível antes do Windows Server 2008 R2.<br/>                                                                                            |
-| [**TSGStoreAdminMsg**](tsgstoreadminmsg-win32-tsgatewayserversettings.md)                                                                         | Atualiza a mensagem administrativa para o servidor de gateway.<br/> **Windows Server 2008:** Esse método não está disponível antes do Windows Server 2008 R2.<br/>                                                                                            |
-| [**TSGStoreConsentMsg**](tsgstoreconsentmsg-win32-tsgatewayserversettings.md)                                                                     | Atualiza a mensagem de consentimento para o servidor de gateway.<br/> **Windows Server 2008:** Esse método não está disponível antes do Windows Server 2008 R2.<br/>                                                                                                   |
+| [**SetSslBridging**](setsslbridging-win32-tsgatewayserversettings.md)                                                                             | Define o tipo de ponte SSL a ser usado pelo servidor de gateway de área de trabalho remota.<br/> **Windows Server 2008:** este método não está disponível antes do Windows Server 2008 R2.<br/>                                                                                    |
+| [**TSGRemoveAdminMsg**](tsgremoveadminmsg-win32-tsgatewayserversettings.md)                                                                       | Remove a mensagem administrativa para o servidor de gateway.<br/> **Windows Server 2008:** este método não está disponível antes do Windows Server 2008 R2.<br/>                                                                                            |
+| [**TSGRemoveConsentMsg**](tsgremoveconsentmsg-win32-tsgatewayserversettings.md)                                                                   | Remove a mensagem administrativa para o servidor de gateway.<br/> **Windows Server 2008:** este método não está disponível antes do Windows Server 2008 R2.<br/>                                                                                            |
+| [**TSGStoreAdminMsg**](tsgstoreadminmsg-win32-tsgatewayserversettings.md)                                                                         | Atualiza a mensagem administrativa para o servidor de gateway.<br/> **Windows Server 2008:** este método não está disponível antes do Windows Server 2008 R2.<br/>                                                                                            |
+| [**TSGStoreConsentMsg**](tsgstoreconsentmsg-win32-tsgatewayserversettings.md)                                                                     | Atualiza a mensagem de consentimento para o servidor de gateway.<br/> **Windows Server 2008:** este método não está disponível antes do Windows Server 2008 R2.<br/>                                                                                                   |
 
 
 
@@ -149,7 +149,7 @@ Tipo de acesso: Somente leitura
 
 A hora de término da mensagem administrativa.
 
-**Windows Server 2008:** Essa propriedade não está disponível antes do Windows Server 2008 R2.
+**Windows Server 2008:** essa propriedade não está disponível antes do Windows Server 2008 R2.
 
 </dd> <dt>
 
@@ -164,7 +164,7 @@ Tipo de acesso: Somente leitura
 
 A hora de início da mensagem administrativa.
 
-**Windows Server 2008:** Essa propriedade não está disponível antes do Windows Server 2008 R2.
+**Windows Server 2008:** essa propriedade não está disponível antes do Windows Server 2008 R2.
 
 </dd> <dt>
 
@@ -179,7 +179,7 @@ Tipo de acesso: Somente leitura
 
 O texto da mensagem administrativa.
 
-**Windows Server 2008:** Essa propriedade não está disponível antes do Windows Server 2008 R2.
+**Windows Server 2008:** essa propriedade não está disponível antes do Windows Server 2008 R2.
 
 </dd> <dt>
 
@@ -194,7 +194,7 @@ Tipo de acesso: Somente leitura
 
 O CLSID do plug-in de autenticação atual.
 
-**Windows Server 2008:** Essa propriedade não está disponível antes do Windows Server 2008 R2.
+**Windows Server 2008:** essa propriedade não está disponível antes do Windows Server 2008 R2.
 
 </dd> <dt>
 
@@ -209,7 +209,7 @@ Tipo de acesso: Somente leitura
 
 A descrição do plug-in de autenticação atual.
 
-**Windows Server 2008:** Essa propriedade não está disponível antes do Windows Server 2008 R2.
+**Windows Server 2008:** essa propriedade não está disponível antes do Windows Server 2008 R2.
 
 </dd> <dt>
 
@@ -224,7 +224,7 @@ Tipo de acesso: Somente leitura
 
 O nome do plug-in de autenticação atual.
 
-**Windows Server 2008:** Essa propriedade não está disponível antes do Windows Server 2008 R2.
+**Windows Server 2008:** essa propriedade não está disponível antes do Windows Server 2008 R2.
 
 </dd> <dt>
 
@@ -239,7 +239,7 @@ Tipo de acesso: Somente leitura
 
 O CLSID do plug-in de autorização atual.
 
-**Windows Server 2008:** Essa propriedade não está disponível antes do Windows Server 2008 R2.
+**Windows Server 2008:** essa propriedade não está disponível antes do Windows Server 2008 R2.
 
 </dd> <dt>
 
@@ -254,7 +254,7 @@ Tipo de acesso: Somente leitura
 
 A descrição do plug-in de autorização atual.
 
-**Windows Server 2008:** Essa propriedade não está disponível antes do Windows Server 2008 R2.
+**Windows Server 2008:** essa propriedade não está disponível antes do Windows Server 2008 R2.
 
 </dd> <dt>
 
@@ -269,7 +269,7 @@ Tipo de acesso: Somente leitura
 
 O nome do plug-in de autorização atual.
 
-**Windows Server 2008:** Essa propriedade não está disponível antes do Windows Server 2008 R2.
+**Windows Server 2008:** essa propriedade não está disponível antes do Windows Server 2008 R2.
 
 </dd> <dt>
 
@@ -297,7 +297,7 @@ Tipo de acesso: Somente leitura
 
 Especifica o hash de certificado para associação HTTPS na porta 443 no IIS.
 
-**Windows Server 2008:** Essa propriedade não está disponível antes do Windows Server 2008 R2.
+**Windows Server 2008:** essa propriedade não está disponível antes do Windows Server 2008 R2.
 
 </dd> <dt>
 
@@ -312,7 +312,7 @@ Tipo de acesso: Somente leitura
 
 O texto da mensagem de consentimento.
 
-**Windows Server 2008:** Essa propriedade não está disponível antes do Windows Server 2008 R2.
+**Windows Server 2008:** essa propriedade não está disponível antes do Windows Server 2008 R2.
 
 </dd> <dt>
 
@@ -327,7 +327,7 @@ Tipo de acesso: Somente leitura
 
 Indica se a associação de canal é imposta para o transporte HTTP. Esse valor de propriedade pode ser alterado usando o método [**SetEnforceChannelBinding**](setenforcechannelbinding-win32-tsgatewayserversettings.md) .
 
-**Windows server 2008 R2 e Windows server 2008:** Essa propriedade não está disponível antes do Windows Server 2012.
+**Windows server 2008 R2 e Windows server 2008:** Essa propriedade não está disponível antes de Windows Server 2012.
 
 </dd> <dt>
 
@@ -342,7 +342,7 @@ Tipo de acesso: Somente leitura
 
 Especifica se as configurações de IIS e RPC exigidas pelo serviço de gateway de área de trabalho remota estão configuradas.
 
-**Windows Server 2008:** Essa propriedade não está disponível antes do Windows Server 2008 R2.
+**Windows Server 2008:** essa propriedade não está disponível antes do Windows Server 2008 R2.
 
 </dd> <dt>
 
@@ -412,7 +412,7 @@ Tipo de acesso: Somente leitura
 
 Especifica se somente clientes capazes de autorizar mensagens de consentimento têm permissão para se conectar ao gateway de área de trabalho remota.
 
-**Windows Server 2008:** Essa propriedade não está disponível antes do Windows Server 2008 R2.
+**Windows Server 2008:** essa propriedade não está disponível antes do Windows Server 2008 R2.
 
 <dt>
 
@@ -443,9 +443,9 @@ Tipo de acesso: Somente leitura
 
 Não há suporte para essa propriedade a partir do Windows Server 2016.
 
-* * Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2 e Windows Server 2008: * *
+**Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2 e Windows Server 2008: **
 
-Especifica se o servidor deve solicitar uma SoH (declaração de integridade) do cliente. Essa propriedade pode ser alterada usando o método [**EnableRequestSOH**](win32-tsgatewayserversettings-enablerequestsoh.md) .
+Especifica se o servidor deve solicitar uma SoH (Instrução de Saúde) do cliente. Essa propriedade pode ser alterada usando o [**método EnableRequestSOH.**](win32-tsgatewayserversettings-enablerequestsoh.md)
 
 </dd> <dt>
 
@@ -465,36 +465,36 @@ O nome da SKU.
 **SslBridging**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Especifica o tipo de ponte SSL a ser usado pelo servidor de gateway de área de trabalho remota. Isso pode ser um dos valores a seguir.
+Especifica o tipo de ponte SSL a ser usado pelo servidor de Gateway de RD. Esse pode ser um dos valores a seguir.
 
-**Windows Server 2008:** Essa propriedade não está disponível antes do Windows Server 2008 R2.
+**Windows Server 2008:** Essa propriedade não está disponível antes Windows Server 2008 R2.
 
 <dt>
 
 0
 </dt> <dd>
 
-Sem ponte SSL.
+Nenhuma ponte SSL.
 
 </dd> <dt>
 
 1
 </dt> <dd>
 
-Conexão HTTPS com HTTP.
+HttpS para ponte HTTP.
 
 </dd> <dt>
 
 2
 </dt> <dd>
 
-Conexão HTTPS com HTTPS.
+Ponte HTTPS para HTTPS.
 
 </dd> </dl>
 
@@ -503,13 +503,13 @@ Conexão HTTPS com HTTPS.
 **UnlimitedConnections**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se um número ilimitado de conexões é permitido por meio do gateway de área de trabalho remota. Essa propriedade pode ser definida usando o método [**SetMaxConnections**](setmaxconnections-win32-tsgatewayserversettings.md) .
+Indica se um número ilimitado de conexões é permitido por meio do Gateway de Área de Trabalho Local. Essa propriedade pode ser definida usando o [**método SetMaxConnections.**](setmaxconnections-win32-tsgatewayserversettings.md)
 
 </dd> </dl>
 
@@ -517,7 +517,7 @@ Indica se um número ilimitado de conexões é permitido por meio do gateway de 
 
 Você deve ser um membro do grupo Administradores para usar essa classe.
 
-Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). Os arquivos MOF não são instalados como parte do SDK (Software Development Kit) do Microsoft Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+arquivos Managed Object Format (MOF) contêm as definições para classes WMI (Instrumentação de Gerenciamento de Windows). Os arquivos MOF não são instalados como parte do Microsoft Windows Software Development Kit (SDK). Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, [consulte Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -527,8 +527,8 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                           |
-| Namespace<br/>                | \\TerminalServices da CIMv2 raiz \\<br/>                                                 |
-| MOF<br/>                      | <dl> <dt>TS. mof</dt> </dl> |
+| Namespace<br/>                | \\CiMv2 \\ TerminalServices raiz<br/>                                                 |
+| MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 
 
@@ -537,22 +537,22 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 
 <dl> <dt>
 
-[**\_TSGatewayConnection Win32**](win32-tsgatewayconnection.md)
+[**Win32 \_ TSGatewayConnection**](win32-tsgatewayconnection.md)
 </dt> <dt>
 
-[**\_TSGatewayConnectionAuthorizationPolicy Win32**](win32-tsgatewayconnectionauthorizationpolicy.md)
+[**Win32 \_ TSGatewayConnectionAuthorizationPolicy**](win32-tsgatewayconnectionauthorizationpolicy.md)
 </dt> <dt>
 
-[**\_TSGatewayLoadBalancer Win32**](win32-tsgatewayloadbalancer.md)
+[**Win32 \_ TSGatewayLoadBalancer**](win32-tsgatewayloadbalancer.md)
 </dt> <dt>
 
-[**\_TSGatewayRADIUSServer Win32**](win32-tsgatewayradiusserver.md)
+[**Win32 \_ TSGatewayRADIUSServer**](win32-tsgatewayradiusserver.md)
 </dt> <dt>
 
-[**\_TSGatewayResourceAuthorizationPolicy Win32**](win32-tsgatewayresourceauthorizationpolicy.md)
+[**Win32 \_ TSGatewayResourceAuthorizationPolicy**](win32-tsgatewayresourceauthorizationpolicy.md)
 </dt> <dt>
 
-[**\_TSGatewayResourceGroup Win32**](win32-tsgatewayresourcegroup.md)
+[**Win32 \_ TSGatewayResourceGroup**](win32-tsgatewayresourcegroup.md)
 </dt> </dl>
 
  

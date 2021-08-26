@@ -14,12 +14,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: d41d3e2a170deffb73f1f533226421d88f150c01
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a305e18677c6a12e14b71b062324630021407231dac6b749f289b58396f4c1f4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501088"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120070646"
 ---
 # <a name="ieventsubscription3eventclasspartitionid-property"></a>Propriedade IEventSubscription3:: EventClassPartitionID
 
