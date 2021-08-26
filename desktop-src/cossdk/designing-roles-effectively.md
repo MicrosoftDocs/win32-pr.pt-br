@@ -4,12 +4,12 @@ ms.assetid: 6a1e6cf3-7a8c-4249-926d-675a54061adf
 title: Criando funções com eficiência
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c0a340cb2fc643a414ebf784a14e7b61a45bccd3
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 134b1caa68c06aef14a21963bb01ee4dfd12f43153ea917487598d76b0e36d5a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104500849"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119991116"
 ---
 # <a name="designing-roles-effectively"></a>Criando funções com eficiência
 
@@ -17,13 +17,13 @@ Em muitos cenários, a segurança baseada em funções é um mecanismo muito efi
 
 ## <a name="user-and-data-characteristics-and-the-suitability-of-roles"></a>Características de usuário e de dados e a adequação das funções
 
-As funções funcionam muito bem para caracterizar os grupos de usuários e, nessa base, filtrar as ações que esses usuários podem executar. Geralmente, isso é realizado na prática criando funções que refletem o local de um usuário em uma organização — por exemplo, as funções "gerentes" e "Dizems", "administradores" e "leitores", "projeto um funcionário" e "projeto dois funcionários". Nesses casos, onde os dados que estão sendo acessados são razoavelmente genéricos em relação aos usuários, as funções podem ser usadas com eficiência para impor regras de negócio, como as seguintes:
+As funções funcionam muito bem para caracterizar os grupos de usuários e, nessa base, filtrar as ações que esses usuários podem executar. geralmente, isso é realizado na prática criando funções que refletem o local de um usuário em uma organização — por exemplo, as funções "gerentes" e "dizems", "administradores" e "leitores", "Project um funcionário" e "Project dois funcionários". Nesses casos, onde os dados que estão sendo acessados são razoavelmente genéricos em relação aos usuários, as funções podem ser usadas com eficiência para impor regras de negócio, como as seguintes:
 
 -   "Os gerentes podem transferir qualquer quantidade de dinheiro. Os informadores podem transferir apenas até $10000. "
 
 -   "Os administradores podem alterar qualquer coisa. Todos os outros podem ler apenas. "
 
--   "O projeto um funcionário pode acessar um determinado banco de dados. Ninguém mais pode ".
+-   "Project um funcionário pode acessar um determinado banco de dados. Ninguém mais pode ".
 
 Os usuários podem se enquadrar naturalmente em várias funções, dependendo de como as funções modelam a estrutura organizacional de um negócio.
 

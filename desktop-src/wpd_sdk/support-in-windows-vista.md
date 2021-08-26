@@ -1,36 +1,36 @@
 ---
-description: Suporte no Windows 7 e no Windows Vista
+description: Suporte no Windows 7 e Windows Vista
 ms.assetid: 4c6cf5b5-db6a-4da0-b9c3-8ddbc867f29b
-title: Suporte no Windows 7 e no Windows Vista
+title: Suporte no Windows 7 e Windows Vista
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3bdc433de74350b29881631241250ffd3832d521
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 33da0a3be816b00c69349194a0e0b365afcf16ed35af7420c35104f4cd8cf034
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105770042"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119928036"
 ---
-# <a name="support-in-windows-7-and-windows-vista"></a>Suporte no Windows 7 e no Windows Vista
+# <a name="support-in-windows-7-and-windows-vista"></a>Suporte no Windows 7 e Windows Vista
 
-Para todos, exceto para os N SKUs do Windows 7 e do Windows Vista, o tempo de execução WPD é agrupado como parte do sistema operacional.
+Para todos, menos os N SKUs do Windows 7 e Windows Vista, o runtime wpd é agrupado como parte do sistema operacional.
 
-### <a name="suported-api-elements"></a>Elementos da API suportado
+### <a name="suported-api-elements"></a>Elementos de API com suporte
 
-A tabela a seguir identifica os recursos com suporte para o Windows 7, Windows Vista e Windows Vista com a atualização da plataforma.
+A tabela a seguir identifica os recursos com suporte para Windows 7, Windows Vista e Windows Vista com a Atualização de Plataforma.
 
 
 
-| Recurso                        | Windows 7 | Windows Vista | Windows Vista com a atualização de plataforma |
+| Recurso                        | Windows 7 | Windows Vista | Windows Vista com a Atualização da Plataforma |
 |--------------------------------|-----------|---------------|----------------------------------------|
 | MTP sobre USB                   | Sim       | Sim           | Sim                                    |
 | MTP sobre IP                    | Sim       | Sim           | Sim                                    |
-| MTP em Bluetooth             | Sim       | Não            | Sim                                    |
-| Serviços de dispositivos WPD e MTP    | Sim       | Não            | Sim                                    |
+| MTP por Bluetooth             | Sim       | Não            | Sim                                    |
+| Serviços de Dispositivo WPD e MTP    | Sim       | Não            | Sim                                    |
 | Automação WPD                 | Sim       | Não            | Não                                     |
-| Multifuncional/multi-transporte | Sim       | Não            | Não                                     |
+| Multi-function/Multi-transport | Sim       | Não            | Não                                     |
 | Device Stage                   | Sim       | Não            | Não                                     |
-| Plataforma de sincronização de dispositivo           | Sim       | Não            | Não                                     |
+| Plataforma de Sincronização de Dispositivos           | Sim       | Não            | Não                                     |
 
 
 
@@ -38,12 +38,12 @@ A tabela a seguir identifica os recursos com suporte para o Windows 7, Windows V
 
 ### <a name="the-platform-update-for-windows-vista"></a>A atualização da plataforma para Windows Vista
 
-A atualização da plataforma para o Windows Vista dá suporte às extensões do Windows 7 para a plataforma de dispositivos portáteis do Windows (WPD).
+A Atualização de Plataforma para Windows Vista dá suporte Windows extensões do Windows 7 à plataforma WPD (Windows Dispositivos Portáteis) do Windows.
 
-### <a name="windows-vista-n-and-kn-versions-require-installation-of-windows-media-format-11-sdk"></a>As versões Windows Vista N e KN exigem a instalação do SDK do Windows Media Format 11
+### <a name="windows-vista-n-and-kn-versions-require-installation-of-windows-media-format-11-sdk"></a>Windows As versões do Vista N e do KN exigem a instalação do SDK Windows Media Format 11
 
--   Para versões do Windows 7 N e KN, você precisa instalar o SDK do Windows Media Format 11 para habilitar a funcionalidade WPD.
--   Para versões do Windows Vista N e KN, você precisa instalar o SDK do Windows Media Format 11 para habilitar a funcionalidade WPD.
+-   Para Windows 7 versões N e KN, você precisa instalar o SDK Windows Media Format 11 para habilitar a funcionalidade WPD.
+-   Para Windows as versões N e KN do Vista, você precisa instalar o SDK Windows Media Format 11 para habilitar a funcionalidade WPD.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

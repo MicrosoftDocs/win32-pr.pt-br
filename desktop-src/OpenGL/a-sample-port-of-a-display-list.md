@@ -1,27 +1,27 @@
 ---
 title: Uma porta de exemplo de uma lista de exibição
-description: Este tópico fornece um exemplo de código do íris GL que define três listas de exibição; uma das listas de exibição refere-se às outras em sua definição. Seguindo o exemplo do íris GL há um exemplo de como o código é semelhante ao portado para OpenGL.
+description: Este tópico fornece um exemplo de código IRIS GL que define três listas de exibição; uma das listas de exibição refere-se às outras em sua definição. Seguir o exemplo IRIS GL é um exemplo da aparência do código quando portado para OpenGL.
 ms.assetid: 03283b00-fb5b-4e89-9384-171b38f141ee
 keywords:
-- Portabilidade do íris GL, listas de exibição
-- portando do íris GL, listas de exibição
-- portando para OpenGL do íris GL, listas de exibição
-- Portabilidade OpenGL do íris GL, listas de exibição
-- Exibir listas, portando do íris GL
+- Portação IRIS GL, listas de exibição
+- portando do IRIS GL, listas de exibição
+- portando para OpenGL do IRIS GL, listas de exibição
+- Portação openGL do IRIS GL, listas de exibição
+- listas de exibição, portando do IRIS GL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 77a856350a0a248bf7dcac51c36b9d35cf114956
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 5fbb696673da7f4dc83abd625bb616b67449de64a40df1cfc99bd429a2a980e4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103635879"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119962426"
 ---
 # <a name="a-sample-port-of-a-display-list"></a>Uma porta de exemplo de uma lista de exibição
 
-Este tópico fornece um exemplo de código do íris GL que define três listas de exibição; uma das listas de exibição refere-se às outras em sua definição. Seguindo o exemplo do íris GL há um exemplo de como o código é semelhante ao portado para OpenGL.
+Este tópico fornece um exemplo de código IRIS GL que define três listas de exibição; uma das listas de exibição refere-se às outras em sua definição. Seguir o exemplo IRIS GL é um exemplo da aparência do código quando portado para OpenGL.
 
-## <a name="iris-gl-sample-display-list-code"></a>Código da lista de exibição de exemplo do íris GL
+## <a name="iris-gl-sample-display-list-code"></a>Código de lista de exibição de exemplo IRIS GL
 
 
 ```C++
@@ -49,9 +49,9 @@ call(30);
 
 
 
-## <a name="opengl-sample-display-list-code"></a>Exemplo de código de lista de exibição do OpenGL
+## <a name="opengl-sample-display-list-code"></a>Código da lista de exibição de exemplo do OpenGL
 
-Aqui está o código do íris GL anterior convertido em OpenGL:
+Este é o código IRIS GL anterior convertido em OpenGL:
 
 
 ```C++
@@ -92,9 +92,9 @@ glCallList(30);
 
 
 
- 
+ 
 
- 
+ 
 
 
 

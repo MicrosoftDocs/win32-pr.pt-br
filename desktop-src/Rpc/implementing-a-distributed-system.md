@@ -4,12 +4,12 @@ description: Uma maneira de implementar o software em um sistema distribuído é
 ms.assetid: 46abbbec-caa1-4fee-a713-4a4a2b462051
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ab45f8175e82bdd1f5d6e49f3d94578473ed5c7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 098263f916129115f41840e15ac689fab7e4544621989d1a4d3179e50ef17d27
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822453"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120020525"
 ---
 # <a name="implementing-a-distributed-system"></a>Implementando um sistema distribuído
 
@@ -23,9 +23,9 @@ Outro fardo da implementação de um sistema distribuído seguro são os algorit
 
 Usando RPC, essas cargas são resolvidas muito facilmente. Um desenvolvedor simplesmente precisa informar ao RPC qual pacote de segurança usar e qual proteção de segurança deve ser aplicada à troca de mensagens (em termos de autenticação, criptografia, autenticação mútua, controle de identidade do chamador e assim por diante). O RPC cuida de todos os detalhes nos bastidores de maneira eficiente, embora forneça ao desenvolvedor controle total sobre como os dados serão protegidos.
 
- 
+ 
 
- 
+ 
 
 
 

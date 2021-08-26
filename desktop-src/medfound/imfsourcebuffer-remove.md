@@ -1,7 +1,7 @@
 ---
 description: Remove os segmentos de mídia definidos pelo intervalo de tempo especificado do IMFSourceBuffer.
 ms.assetid: 86536d73-18c0-4acc-81ec-72f1dfe400c5
-title: 'Método IMFSourceBuffer:: Remove'
+title: Método IMFSourceBuffer::Remove
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - mfmediaengine.h
-ms.openlocfilehash: d82660d08efe651b321672b6ccd0cb475875beee
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: af9aed011a1a4b53733d70646fc14b21e7c97f9d193a60e679f5f5f532679e2b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105771390"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119941906"
 ---
-# <a name="imfsourcebufferremove-method"></a>Método IMFSourceBuffer:: Remove
+# <a name="imfsourcebufferremove-method"></a>Método IMFSourceBuffer::Remove
 
-Remove os segmentos de mídia definidos pelo intervalo de tempo especificado do [**IMFSourceBuffer**](/windows/desktop/api/mfmediaengine/nn-mfmediaengine-imfsourcebuffer).
+Remove os segmentos de mídia definidos pelo intervalo de tempo especificado do [**IMFSourceBuffer.**](/windows/desktop/api/mfmediaengine/nn-mfmediaengine-imfsourcebuffer)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,23 +40,23 @@ HRESULT Remove(
 
 <dl> <dt>
 
-*Iniciar* \[ no\]
+*iniciar* \[ Em\]
 </dt> <dd>
 
 O início do intervalo de tempo.
 
 </dd> <dt>
 
-*fim* \[ no\]
+*end* \[ Em\]
 </dt> <dd>
 
-O fim do intervalo de tempo.
+O final do intervalo de tempo.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,9 +64,9 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 8.1 \[ apenas aplicativos de área de trabalho\]<br/>                                                 |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012 R2\]<br/>                                      |
-| INSERI<br/>                      | <dl> <dt>Mfmediaengine. idl</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8.1 somente aplicativos da área de trabalho\]<br/>                                                 |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 Somente \[ aplicativos da área de trabalho R2\]<br/>                                      |
+| Idl<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
 
 
 

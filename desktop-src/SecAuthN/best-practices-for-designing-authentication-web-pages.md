@@ -4,12 +4,12 @@ ms.assetid: 271EC68B-5E58-4C1C-B631-DED6A694E98F
 title: Melhores práticas para o design de páginas da Web de autenticação
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dfdd6ab5dc067c23cfb29d21d2ff4780cee0ef1c
-ms.sourcegitcommit: 6377cd944d1f09f2dfe5727170ca8b330c8235bf
+ms.openlocfilehash: a80fbf38c0e020cad342331d67278818b56ce331ff39434aefd726dea52bae1f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "113353669"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119883596"
 ---
 # <a name="best-practices-for-designing-authentication-web-pages"></a>Melhores práticas para o design de páginas da Web de autenticação
 

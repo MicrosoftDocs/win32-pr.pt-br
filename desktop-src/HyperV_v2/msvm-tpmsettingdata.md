@@ -18,12 +18,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 8a14f50f01212129ed34cc7e45ee28facbdb991f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f25cd57e1f3cd6ebf015009af176b3bcc68c1d271836c5bb548b9358e9007086
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104502194"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119899116"
 ---
 # <a name="msvm_tpmsettingdata-class"></a>\_Classe Msvm TPMSettingData
 
@@ -161,7 +161,7 @@ Qualificadores: [ **obrigatório**](/windows/desktop/WmiSdk/standard-qualifiers)
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                             |
+| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                                             |
 | Servidor mínimo com suporte<br/> | Windows Server 2016<br/>                                                                          |
 | Fim do suporte do cliente<br/>    | Windows 10<br/>                                                                                   |
 | Fim do suporte do servidor<br/>    | Windows Server 2016<br/>                                                                          |

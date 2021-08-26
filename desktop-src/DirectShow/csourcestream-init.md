@@ -1,7 +1,7 @@
 ---
-description: O método Init Inicializa o thread de streaming.
+description: O método Init inicializa o thread de streaming.
 ms.assetid: c746e595-de97-478c-8b22-5c4dd5594a8f
-title: Método t CSourceStream.Ini(Source. h)
+title: CSourceStream.Init (Source.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6a3abf2b4637385616862c0613f72afd676f5b79
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e656ba46b25045406fb794653078b72e2c47155635cf24ae4a99b35238aa51df
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105812989"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119871306"
 ---
-# <a name="csourcestreaminit-method"></a>Método t CSourceStream.Ini
+# <a name="csourcestreaminit-method"></a>CSourceStream.Init
 
 O `Init` método inicializa o thread de streaming.
 
@@ -40,13 +40,13 @@ HRESULT Init();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna S \_ OK ou outro valor **HRESULT** .
+Retorna S \_ OK ou outro valor **HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
-Esse método deve ser a primeira solicitação de thread enviada ao método [**CSourceStream:: ThreadProc**](csourcestream-threadproc.md) . O método [**CSourceStream:: active**](csourcestream-active.md) chama esse método.
+Esse método deve ser a primeira solicitação de thread enviada para o [**método CSourceStream::ThreadProc.**](csourcestream-threadproc.md) O [**método CSourceStream::Active**](csourcestream-active.md) chama esse método.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Esse método deve ser a primeira solicitação de thread enviada ao método [**C
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Source. h (incluir fluxos. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Source.h (incluir Fluxos.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

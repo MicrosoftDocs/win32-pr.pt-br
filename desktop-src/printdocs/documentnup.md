@@ -4,12 +4,12 @@ ms.assetid: 941515a8-ba3f-47b9-9f3f-08a48122661a
 title: DocumentNUp
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b49bd4fa3eb9f2b3b0083fc8022dbd6f41d090e
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 0804d38bdb60cd28ba88832b21abe8426d8aaf3b4fedf6ce5ad38f624f10c596
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112409259"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119949717"
 ---
 # <a name="documentnup"></a>DocumentNUp
 
@@ -29,7 +29,7 @@ O diagrama a seguir ilustra um exemplo com o Documento 1 contendo 3 páginas e o
 
 
 
-| Name | Valor |
+| Nome | Valor |
 |----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tipo de elemento <br/>   | Recurso<br/>                                                                                                                              |
 | Prefixo de definição de scoping <br/> | Documento<br/>                                                                                                                             |
@@ -82,7 +82,7 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 
 ## <a name="extensible-markup-language-xml-content"></a>linguagem XML conteúdo (XML)
 
-As palavras-chave public Print Schema são definidas no https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords namespace . O conteúdo linguagem XML XML (public linguagem XML) para essa palavra-chave é definido abaixo:
+As palavras-chave public Print Schema são definidas no https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords namespace . O conteúdo linguagem XML xml público para essa palavra-chave está definido abaixo:
 
 ``` syntax
 <psf:Feature name="psk:DocumentNUp">

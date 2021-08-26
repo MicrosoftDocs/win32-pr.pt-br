@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c68fe1ab83724149dcd2fb58a60e9c6950d887ca
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 95c79071030b2f40613138e526abd1f965d3b5aeb7b233c2c53be57b65f97da7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108099384"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119916396"
 ---
 # <a name="cbasepinenummediatypes-method"></a>Método CBasePin. EnumMediaTypes
 
@@ -57,7 +57,7 @@ Retorna um valor **HRESULT** . Os valores possíveis incluem os da tabela a segu
 
 | Código de retorno                                                                                   | Descrição                           |
 |-----------------------------------------------------------------------------------------------|---------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>          | Sucesso.<br/>                   |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Êxito.<br/>                   |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memória insuficiente.<br/>       |
 | <dl> <dt>**\_ponteiro E**</dt> </dl>     | Argumento de ponteiro **nulo** .<br/> |
 
@@ -69,7 +69,7 @@ Retorna um valor **HRESULT** . Os valores possíveis incluem os da tabela a segu
 
 Os Pins de entrada não são necessários para enumerar os tipos preferenciais. Os Pins de saída devem enumerar pelo menos um tipo preferencial. Caso contrário, ambos os Pins podem não ter um tipo preferencial, tornando impossível uma conexão.
 
-A interface **IEnumMediaTypes** funciona como um enumerador com padrão. Para obter mais informações, consulte [Enumerando objetos em um grafo de filtro](enumerating-objects-in-a-filter-graph.md). Se o método tiver sucesso, a interface **IEnumMediaTypes** terá uma contagem de referência pendente. Certifique-se de liberá-lo quando terminar.
+A interface **IEnumMediaTypes** funciona como um enumerador com padrão. Para obter mais informações, consulte [Enumerando objetos em um filtro Graph](enumerating-objects-in-a-filter-graph.md). Se o método tiver sucesso, a interface **IEnumMediaTypes** terá uma contagem de referência pendente. Certifique-se de liberá-lo quando terminar.
 
 A classe base [**CEnumMediaTypes**](cenummediatypes.md) implementa **IEnumMediaTypes**. Ele chama o método [**CBasePin:: GetMediaType**](cbasepin-getmediatype.md) do PIN para enumerar os tipos de mídia.
 
@@ -79,12 +79,12 @@ A classe base [**CEnumMediaTypes**](cenummediatypes.md) implementa **IEnumMediaT
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
+| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir Fluxos. h)</dt> </dl>                                                                                  |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

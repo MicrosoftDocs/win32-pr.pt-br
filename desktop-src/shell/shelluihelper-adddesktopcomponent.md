@@ -1,5 +1,5 @@
 ---
-description: Adiciona um item ao Microsoft Active Desktop.
+description: Adiciona um item ao microsoft Active Desktop.
 title: Método ShellUIHelper.AddDesktopComponent (Exdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 41634a89-15b9-41c8-ba3f-4bf19b786f6f
-ms.openlocfilehash: 2edaa79bd62dcee40e4f197700d2128cb0b2070d
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 5141b35b9fb71b09b9b269016d0b38cdb0b9f01ec88a02070a0f936934159930
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842457"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119941496"
 ---
 # <a name="shelluihelperadddesktopcomponent-method"></a>Método ShellUIHelper.AddDesktopComponent
 
-Adiciona um item ao Microsoft Active Desktop.
+Adiciona um item ao microsoft Active Desktop.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -98,33 +98,33 @@ A posição da borda esquerda do componente, em coordenadas de tela.
 
 Tipo: **Variante**
 
-A posição da borda superior do componente, em coordenadas da tela.
+A posição da borda superior do componente, em coordenadas de tela.
 
 </dd> <dt>
 
-*Largura* \[ em, opcional\]
+*Largura* \[ in, opcional\]
 </dt> <dd>
 
-Tipo: **variante**
+Tipo: **Variante**
 
-A largura do componente, em unidades da tela.
+A largura do componente, em unidades de tela.
 
 </dd> <dt>
 
-*Altura* \[ em, opcional\]
+*Altura* \[ in, opcional\]
 </dt> <dd>
 
-Tipo: **variante**
+Tipo: **Variante**
 
-A altura do componente, em unidades da tela.
+A altura do componente, em unidades de tela.
 
 </dd> </dl>
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir mostra o uso correto desse método para JScript Embedded em HTML e Visual Basic.
+O exemplo a seguir mostra o uso adequado desse método para JScript inserido em HTML e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -175,10 +175,10 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, Windows aplicativos da área de \[ trabalho XP\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
-| Cabeçalho<br/>                   | <dl> <dt>O textdisp. h</dt> </dl>                            |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4,71 ou posterior)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Exdisp.h</dt> </dl>                            |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4.71 ou posterior)</dt> </dl> |
 
 
 

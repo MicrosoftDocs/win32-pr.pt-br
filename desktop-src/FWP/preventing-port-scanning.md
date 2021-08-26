@@ -4,12 +4,12 @@ description: O código de exemplo a seguir demonstra como impedir a verificaçã
 ms.assetid: 9e8f0948-dc83-4e7c-9505-4dfeac8bbcb2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a16edc13375ffc7c996b4d76abe6a20d336855ed
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0e42efe9997587966b0e67eefb9021c46b640fa96fb1faa3828073e967248270
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005702"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119900786"
 ---
 # <a name="preventing-port-scanning"></a>Impedindo a verificação de porta
 
@@ -138,9 +138,9 @@ CLEANUP:
 [**Condições de filtragem disponíveis em cada camada de filtragem**](filtering-conditions-available-at-each-filtering-layer.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

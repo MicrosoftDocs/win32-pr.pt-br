@@ -14,18 +14,18 @@ api_type:
 api_location:
 - InkDiv.dll
 - InkDiv.dll.dll
-ms.openlocfilehash: 51e75b810c2103afed2e8ac8a28706b9c9af5da0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fee6fa3f9f9743f048cab4d9bee5af3fa9215ca903227acd0aa67cb68037550d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103828736"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119934706"
 ---
 # <a name="recognizercontextset-function"></a>Função RecognizerContextSet
 
-Testa se o objeto [**InkDivider**](inkdivider-class.md) pode usar a classe [**InkRecognizerContext**](inkrecognizercontext-class.md) para analisar palavras.
+Testa se o [**objeto InkDivider**](inkdivider-class.md) pode usar a [**classe InkRecognizerContext**](inkrecognizercontext-class.md) para analisar palavras.
 
-Esta função não se destina a ser usada pelo código do aplicativo.
+Essa função não se destina a ser usada pelo código do aplicativo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,14 +42,14 @@ HRESULT WINAPI RecognizerContextSet(
 
 <dl> <dt>
 
-*hDivider* \[ no\]
+*hDivider* \[ Em\]
 </dt> <dd>
 
-Um identificador para o objeto [**InkDivider**](inkdivider-class.md) .
+Um identificador para o [**objeto InkDivider.**](inkdivider-class.md)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa função pode retornar um desses valores.
 
@@ -58,7 +58,7 @@ Essa função pode retornar um desses valores.
 | Código de retorno                                                                                  | Descrição                                     |
 |----------------------------------------------------------------------------------------------|-------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>         | A função foi bem-sucedida.<br/>              |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | O parâmetro *pDivider* é inválido.<br/> |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | O *parâmetro pDivider* é inválido.<br/> |
 
 
 
@@ -70,7 +70,7 @@ Essa função pode retornar um desses valores.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                         |
+| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/>                         |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                             |
 | Biblioteca<br/>                  | <dl> <dt>InkDiv.dll</dt> </dl> |
 

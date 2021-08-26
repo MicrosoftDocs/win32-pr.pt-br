@@ -1,25 +1,25 @@
 ---
 title: Suporte a SVG
-description: A partir da atualização de aniversário do Windows 10, o Direct2D dá suporte à renderização de fontes de cores que contêm contornos de glifos SVG, conforme descrito na especificação OpenType (consulte a tabela ' SVG ').
+description: a partir do Windows 10 atualização de aniversário, Direct2D dá suporte à renderização de fontes de cores que contêm contornos de glifos SVG, conforme descrito na especificação OpenType (consulte a tabela ' SVG ').
 ms.assetid: 5cb4cb7c-9b96-e110-bff9-d75ad1980010
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 678c5d9ef42a53c854bb2f175fac63816345c519
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 3c8c5f34531264f95c3617d1324079895b6444cbdbc776d5468fe51fc9890992
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366060"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119917096"
 ---
 # <a name="svg-support"></a>Suporte a SVG
 
-A partir da atualização de aniversário do Windows 10, o Direct2D dá suporte à renderização de [fontes de cores](../directwrite/color-fonts.md) que contêm contornos de glifos SVG, conforme descrito na [especificação OpenType](/typography/opentype/spec/) (consulte [a tabela SVG](/typography/opentype/spec/svg)). A partir da atualização do Windows 10 para criadores, o Direct2D também dá suporte à renderização de imagens SVG autônomas. No entanto, determinados recursos SVG não são permitidos em fontes de SVG OpenType e determinados recursos de SVG atualmente não são compatíveis com o Direct2D.  
+a partir do Windows 10 atualização de aniversário, Direct2D dá suporte à renderização de [fontes de cores](../directwrite/color-fonts.md) que contêm contornos de glifos SVG, conforme descrito na [especificação OpenType](/typography/opentype/spec/) (consulte [a tabela SVG](/typography/opentype/spec/svg)). a partir do Atualização do Windows 10 para Criadores, o Direct2D também dá suporte à renderização de imagens SVG autônomas. No entanto, determinados recursos SVG não são permitidos em fontes de SVG OpenType e determinados recursos de SVG atualmente não têm suporte pelo Direct2D.  
 
-Este tópico identifica o conjunto de recursos [SVG 1,1](https://www.w3.org/TR/SVG11/) com suporte do Direct2D na atualização de aniversário do Windows 10 e mais recente. Este documento se aplica ao SVG em fontes OpenType, bem como a imagens SVG autônomas.
+este tópico identifica o conjunto de recursos [SVG 1,1](https://www.w3.org/TR/SVG11/) com suporte pelo Direct2D na atualização Windows 10 aniversário e mais recente. Este documento se aplica ao SVG em fontes OpenType, bem como a imagens SVG autônomas.
 
 ## <a name="supported-svg-elements-and-attributes"></a>Elementos e atributos SVG com suporte
 
-O Direct2D dá suporte à renderização dos seguintes elementos SVG e dos atributos associados para cada elemento. Outros elementos e atributos regulares são ignorados.
+Direct2D dá suporte à renderização dos seguintes elementos SVG e dos atributos associados para cada elemento. Outros elementos e atributos regulares são ignorados.
 
 
 
@@ -29,7 +29,7 @@ O Direct2D dá suporte à renderização dos seguintes elementos SVG e dos atrib
 | [clipPath](https://www.w3.org/TR/SVG11/masking.mdl#clippathelement)                      | ID, estilo, transformação, clipPathUnits                                                      |
 | [defs](https://www.w3.org/TR/SVG11/struct.mdl#defselement)                               | ID, estilo, transformação                                                                     |
 | [crescente](https://www.w3.org/TR/SVG11/struct.mdl#descriptionandtitleelements)<sup>\*</sup>  | id                                                                                       |
-| [elipse](https://www.w3.org/TR/SVG11/shapes.mdl#ellipseelement)                         | ID, estilo, transformação, CX, Cy, RX, entar                                                     |
+| [ellipse](https://www.w3.org/TR/SVG11/shapes.mdl#ellipseelement)                         | ID, estilo, transformação, CX, Cy, RX, entar                                                     |
 | [m](https://www.w3.org/TR/SVG11/struct.mdl#gelement)                                     | ID, estilo, transformação                                                                     |
 | [imagem](https://www.w3.org/TR/SVG11/struct.mdl#imageelement)                             | ID, estilo, transformação, x, y, largura, altura, preserveAspectRatio, xlink: href               |
 | [descritos](https://www.w3.org/TR/SVG11/shapes.mdl#lineelement)                               | ID, estilo, transformação, x1, y1, X2, Y2                                                     |
@@ -46,13 +46,13 @@ O Direct2D dá suporte à renderização dos seguintes elementos SVG e dos atrib
 
 
 
- 
+ 
 
-<sup>\*</sup> Somente com suporte na atualização do Windows 10 para criadores e mais recente
+<sup>\*</sup>somente com suporte no Atualização do Windows 10 para Criadores e mais recente
 
 ## <a name="supported-svg-presentation-attributes"></a>Atributos de apresentação SVG com suporte
 
-O Direct2D também dá suporte aos seguintes atributos de apresentação. Elas podem ser especificadas em qualquer elemento SVG, mas afetam apenas a aparência de determinados elementos, conforme descrito na especificação SVG (consulte os [atributos de apresentação](https://www.w3.org/TR/SVG11/attindex.mdl#presentationattributes)).
+o Direct2D também dá suporte aos seguintes atributos de apresentação. Elas podem ser especificadas em qualquer elemento SVG, mas afetam apenas a aparência de determinados elementos, conforme descrito na especificação SVG (consulte os [atributos de apresentação](https://www.w3.org/TR/SVG11/attindex.mdl#presentationattributes)).
 
 -   caminho do clipe
 -   regra de clipe
@@ -75,7 +75,7 @@ O Direct2D também dá suporte aos seguintes atributos de apresentação. Elas p
 -   largura do traço
 -   Visualizar<sup>\*</sup>
 
-<sup>\*</sup> Somente com suporte na atualização do Windows 10 para criadores e mais recente
+<sup>\*</sup>somente com suporte no Atualização do Windows 10 para Criadores e mais recente
 
 ## <a name="unsupported-svg-features"></a>Recursos SVG sem suporte
 
@@ -85,14 +85,14 @@ Qualquer elemento ou atributo não incluído nas listas acima é considerado sem
 
 ### <a name="unsupported-length-units"></a>Unidades de comprimento sem suporte
 
-A partir da atualização de aniversário do Windows 10, o Direct2D dá suporte apenas a valores de comprimento de espaço de usuário e valores de comprimento percentual. Não há suporte para comprimentos com sufixos de unidade, como "mm" ou "em".
+a partir de Windows 10 atualização de aniversário, o Direct2D dá suporte apenas a valores de comprimento de espaço de usuário e valores de comprimento percentual. Não há suporte para comprimentos com sufixos de unidade, como "mm" ou "em".
 
-A partir da atualização dos criadores de outono do Windows 10, o Direct2D também dá suporte a identificadores de unidade absolutas: px, pt, PC, cm, mm e in. Não há suporte para identificadores de unidade relativos (em, ex).
+a partir do Windows 10 Fall Creators Update, o Direct2D também dá suporte a identificadores de unidade absolutas: px, pt, pc, cm, mm e in. Não há suporte para identificadores de unidade relativos (em, ex).
 
 ### <a name="unsupported-image-sources"></a>Fontes de imagens sem suporte
 
 O elemento Image só terá suporte se seu atributo xlink: href estiver definido como uma imagem codificada em base64. Não há suporte para referências remotas.
 
- 
+ 
 
- 
+ 

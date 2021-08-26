@@ -1,19 +1,19 @@
 ---
-description: Especifica o identificador para o dispositivo de ponto de extremidade de áudio.
+description: Especifica o identificador do dispositivo de ponto de extremidade de áudio.
 ms.assetid: f145fb80-c136-421c-9a65-e69c52109348
-title: Atributo MF_AUDIO_RENDERER_ATTRIBUTE_ENDPOINT_ID (Mfidl. h)
+title: MF_AUDIO_RENDERER_ATTRIBUTE_ENDPOINT_ID atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e042f59baf4812c177358acca6badb2422914afc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a1dd99a42442342e25c748e12f8af84a03f2322b8c3dd24bb915b50b57952d65
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296568"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119941126"
 ---
-# <a name="mf_audio_renderer_attribute_endpoint_id-attribute"></a>\_Atributo de \_ ID do \_ ponto de extremidade do atributo de processamento \_ de áudio \_ MF
+# <a name="mf_audio_renderer_attribute_endpoint_id-attribute"></a>Atributo MF \_ AUDIO \_ RENDERER \_ ATTRIBUTE \_ ENDPOINT \_ ID
 
-Especifica o identificador para o dispositivo de ponto de extremidade de áudio.
+Especifica o identificador do dispositivo de ponto de extremidade de áudio.
 
 ## <a name="data-type"></a>Tipo de dados
 
@@ -21,21 +21,21 @@ Cadeia de caracteres largos
 
 ## <a name="remarks"></a>Comentários
 
-Você pode usar esse atributo para configurar o processador de áudio. O uso depende de qual função você chama para criar o processador de áudio:
+Você pode usar esse atributo para configurar o renderador de áudio. O uso depende de qual função você chama para criar o renderdor de áudio:
 
--   [**MFCreateAudioRenderer**](/windows/desktop/api/mfidl/nf-mfidl-mfcreateaudiorenderer): defina esse atributo usando o ponteiro de interface [**IMFAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) especificado no parâmetro *pAudioAttributes* .
--   [**MFCreateAudioRendererActivate**](/windows/desktop/api/mfidl/nf-mfidl-mfcreateaudiorendereractivate): defina esse atributo usando o ponteiro de interface [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) recuperado no parâmetro *ppActivate* . Defina o atributo antes de chamar [**IMFActivate:: activateobject**](/windows/desktop/api/mfobjects/nf-mfobjects-imfactivate-activateobject).
+-   [**MFCreateAudioRenderer:**](/windows/desktop/api/mfidl/nf-mfidl-mfcreateaudiorenderer)de definir esse atributo usando o ponteiro de interface [**IMFAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) especificado no parâmetro *pAudioAttributes.*
+-   [**MFCreateAudioRendererActivate:**](/windows/desktop/api/mfidl/nf-mfidl-mfcreateaudiorendereractivate)de definir esse atributo usando o ponteiro da interface [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) recuperado no *parâmetro ppActivate.* De definir o atributo antes de [**chamar IMFActivate::ActivateObject**](/windows/desktop/api/mfobjects/nf-mfobjects-imfactivate-activateobject).
 
-Um dispositivo de ponto de extremidade de áudio é um dispositivo de hardware que está em uma extremidade de um caminho de dados de áudio, como um fone de ouvido ou um palestrante. Para obter o identificador de ponto de extremidade de áudio, use as seguintes APIs de áudio principal:
+Um dispositivo de ponto de extremidade de áudio é um dispositivo de hardware que está em uma extremidade de um caminho de dados de áudio, como um fone de ouvido ou um alto-falante. Para obter o identificador do ponto de extremidade de áudio, use as seguintes APIs de áudio principais:
 
 -   Use a interface [**IMMDeviceEnumerator**](/windows/win32/api/mmdeviceapi/nn-mmdeviceapi-immdeviceenumerator) para enumerar os dispositivos no sistema.
--   Chame [**IMMDevice:: GetID**](/windows/win32/api/mmdeviceapi/nf-mmdeviceapi-immdevice-getid) para obter o identificador para o dispositivo.
+-   Chame [**IMMDevice::GetId**](/windows/win32/api/mmdeviceapi/nf-mmdeviceapi-immdevice-getid) para obter o identificador do dispositivo.
 
-Para obter mais informações, consulte a documentação da API de [áudio principal](../coreaudio/core-audio-apis-in-windows-vista.md) . Se esse atributo não for definido, o processador de áudio usará o dispositivo de ponto de extremidade padrão.
+Para obter mais informações, consulte a [documentação da](../coreaudio/core-audio-apis-in-windows-vista.md) API de Áudio Principal. Se esse atributo não estiver definido, o renderador de áudio usará o dispositivo de ponto de extremidade padrão.
 
-Se esse atributo estiver definido, não defina o atributo [**de \_ função de \_ ponto de extremidade do atributo de processamento \_ \_ \_ de áudio MF**](mf-audio-renderer-attribute-endpoint-role-attribute.md) . Se ambos os atributos forem definidos, ocorrerá uma falha quando o processador de áudio for criado.
+Se esse atributo estiver definido, não de definido o atributo FUNÇÃO DE PONTO DE EXTREMIDADE DO ATRIBUTO DO [**\_ \_ RENDERADOR \_ \_ \_**](mf-audio-renderer-attribute-endpoint-role-attribute.md) DE ÁUDIO MF. Se ambos os atributos estão definidos, ocorrerá uma falha quando o renderdor de áudio for criado.
 
-A constante de GUID para esse atributo é exportada de mfuuid. lib.
+A constante GUID para esse atributo é exportada de mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,9 +43,9 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -53,19 +53,19 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[Atributos do processador de áudio](audio-renderer-attributes.md)
+[Atributos do renderador de áudio](audio-renderer-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getstring)
+[**IMFAttributes::GetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getstring)
 </dt> <dt>
 
-[**IMFAttributes:: SetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setstring)
+[**IMFAttributes::SetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setstring)
 </dt> <dt>
 
-[Processador de streaming de áudio](streaming-audio-renderer.md)
+[Renderização de áudio de streaming](streaming-audio-renderer.md)
 </dt> </dl>
 
  
