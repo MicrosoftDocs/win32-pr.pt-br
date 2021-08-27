@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Perfstruct.h
-ms.openlocfilehash: ee2d944d086f9c1a4ea7944f023321dfbc06d547
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 49cc76f4db1a5fae76678ee2d81f3e2fff0a6c5ca3d5c5532adebaec23f48215
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105780046"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120050706"
 ---
 # <a name="perfinfo_dshow_avrend-structure"></a>Estrutura do PERFINFO \_ DShow \_ AVREND
 
@@ -66,9 +66,9 @@ Hora de início do exemplo.
 
 ## <a name="remarks"></a>Comentários
 
-Para habilitar esse evento, você deve definir o \_ sinalizador DXMPERF VIDEOREND no parâmetro *EnableFlag* ao chamar **EnableTrace**. Esse sinalizador é definido no arquivo de cabeçalho Dxmperf. h, que está incluído nas classes base do DirectShow.
+Para habilitar esse evento, você deve definir o \_ sinalizador DXMPERF VIDEOREND no parâmetro *EnableFlag* ao chamar **EnableTrace**. esse sinalizador é definido no arquivo de cabeçalho Dxmperf. h, que é incluído no DirectShow classes base.
 
-Para registrar esse evento de um filtro do DirectShow, use a macro **PERFLOG \_ VIDEOREND** , que é definida em Dxmperf. h.
+para registrar esse evento em um filtro de DirectShow, use a macro **PERFLOG \_ VIDEOREND** , que é definida em Dxmperf. h.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -84,7 +84,7 @@ Para registrar esse evento de um filtro do DirectShow, use a macro **PERFLOG \_ 
 
 <dl> <dt>
 
-[Estruturas do DirectShow](directshow-structures.md)
+[DirectShow Estruturas](directshow-structures.md)
 </dt> <dt>
 
 [Rastreamento de eventos no DirectShow](event-tracing-in-directshow.md)

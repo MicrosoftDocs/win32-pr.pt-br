@@ -1,11 +1,11 @@
 ---
-title: atributo DHCP-sub-redes
-description: O atributo DHCP-sub-redes não é usado no momento.
+title: Atributo dhcp-Subnets
+description: O atributo dhcp-Subnets não é usado no momento.
 ms.assetid: 61ff1e42-3d6e-4246-a8f8-69bc75ff24fc
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo de sub-redes DHCP
-- Esquema de AD do atributo dhcpSubnets
+- Atributo dhcp-Subnets Esquema do AD
+- Esquema do AD do atributo dhcpSubnets
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0dd3e4349c6a1bf274fc4e441f36fb133316027d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ee738dc94fef1088f57257a6ca3f3b03e825e416bbebc0c6d7e703b70154e3b3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104370026"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120049706"
 ---
-# <a name="dhcp-subnets-attribute"></a>atributo DHCP-sub-redes
+# <a name="dhcp-subnets-attribute"></a>Atributo dhcp-Subnets
 
-O atributo **DHCP-sub-redes** não é usado no momento.
+O **atributo dhcp-Subnets** não é usado no momento.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | DHCP-sub-redes                         |
-| LDAP-Display-Name | dhcpSubnets                          |
+| CN                | dhcp-Subnets                         |
+| Ldap-Display-Name | dhcpSubnets                          |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.705               |
-| System-ID-GUID    | 963d2746-48be-11d1-a9c3-0000f80367c1 |
-| Syntax            | [**Cadeia de caracteres (IA5)**](s-string-ia5.md)  |
+| System-Id-Guid    | 963d2746-48be-11d1-a9c3-0000f80367c1 |
+| Syntax            | [**String(IA5)**](s-string-ia5.md)  |
 
 
 
@@ -58,10 +58,10 @@ O atributo **DHCP-sub-redes** não é usado no momento.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | Falso                                        |
+| Tem valor único       | Falso                                        |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
@@ -79,10 +79,10 @@ O atributo **DHCP-sub-redes** não é usado no momento.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | Falso                                        |
+| Tem valor único       | Falso                                        |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
@@ -100,10 +100,10 @@ O atributo **DHCP-sub-redes** não é usado no momento.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | Falso                                        |
+| Tem valor único       | Falso                                        |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |

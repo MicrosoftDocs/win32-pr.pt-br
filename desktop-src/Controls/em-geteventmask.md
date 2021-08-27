@@ -1,9 +1,9 @@
 ---
-title: Mensagem de EM_GETEVENTMASK (RichEdit. h)
+title: EM_GETEVENTMASK mensagem (Richedit.h)
 description: Recupera a máscara de evento para um controle de edição rico. A máscara de evento especifica quais códigos de notificação o controle envia para sua janela pai.
 ms.assetid: cdf99f2a-e747-4b0e-9235-2719477c3ce2
 keywords:
-- Controles de EM_GETEVENTMASK de mensagens do Windows
+- EM_GETEVENTMASK controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4f4d231bbb9d5592ff2f90da6a5096783b38c292
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c4261869276015151e920e96e6c419675a1bce097384d6a918c2eac2b8005393
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918810"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120049226"
 ---
-# <a name="em_geteventmask-message"></a>\_Mensagem em GETEVENTMASK
+# <a name="em_geteventmask-message"></a>Mensagem \_ EM GETEVENTMASK
 
 Recupera a máscara de evento para um controle de edição rico. A máscara de evento especifica quais códigos de notificação o controle envia para sua janela pai.
 
@@ -43,9 +43,9 @@ Não usado; deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Essa mensagem retorna a máscara de evento para o controle rich edit.
+Essa mensagem retorna a máscara de evento para o controle de edição rich.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ Essa mensagem retorna a máscara de evento para o controle rich edit.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -66,10 +66,10 @@ Essa mensagem retorna a máscara de evento para o controle rich edit.
 **Referência**
 </dt> <dt>
 
-[**em \_ SETEVENTMASK**](em-seteventmask.md)
+[**EM \_ SETEVENTMASK**](em-seteventmask.md)
 </dt> <dt>
 
-[**Sinalizadores de máscara de evento de controle de edição avançada**](rich-edit-control-event-mask-flags.md)
+[**Sinalizadores de máscara de evento rich edit control**](rich-edit-control-event-mask-flags.md)
 </dt> </dl>
 
  

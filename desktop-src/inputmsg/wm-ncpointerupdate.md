@@ -1,9 +1,9 @@
 ---
 title: WM_NCPOINTERUPDATE mensagem
-description: Postado para fornecer uma atualização em um ponteiro que fez contato na área não cliente de uma janela ou quando um contato não capturado é movido sobre a área não cliente de uma janela.
+description: Postado para fornecer uma atualização em um ponteiro que fez contato sobre a área não cliente de uma janela ou quando um contato sem controle de foco se move sobre a área não cliente de uma janela.
 ms.assetid: 3bdc37da-227c-4be1-bf0b-99704caa1322
 keywords:
-- Mensagens de entrada e notificações de WM_NCPOINTERUPDATE mensagem
+- WM_NCPOINTERUPDATE mensagens de entrada e notificações
 topic_type:
 - apiref
 api_name:
@@ -14,21 +14,21 @@ api_type:
 - HeaderDef
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: 09ef5fd6f3b7378a963be4278f1fabdf0f6ab351
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6f1cf786af00175f75b5faee11b384aa31618d89427826f9c1454006df461f0b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369493"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120062416"
 ---
 # <a name="wm_ncpointerupdate-message"></a>WM_NCPOINTERUPDATE mensagem
 
-Postado para fornecer uma atualização em um ponteiro que fez contato na área não cliente de uma janela ou quando um contato não capturado é movido sobre a área não cliente de uma janela. Enquanto o ponteiro estiver focalizando, a mensagem será direcionada a qualquer janela em que o ponteiro esteja. Enquanto o ponteiro está em contato com a superfície, o ponteiro é implicitamente capturado para a janela sobre a qual o ponteiro fez contato e essa janela continua a receber entrada para o ponteiro até que ele interrompa o contato.
+Postado para fornecer uma atualização em um ponteiro que fez contato sobre a área não cliente de uma janela ou quando um contato sem controle de foco se move sobre a área não cliente de uma janela. Enquanto o ponteiro está passeando, a mensagem tem como alvo qualquer janela em que o ponteiro está acima. Enquanto o ponteiro está em contato com a superfície, o ponteiro é implicitamente capturado para a janela sobre a qual o ponteiro fez contato e essa janela continua recebendo entrada para o ponteiro até que ele interrompe o contato.
 
-Se uma janela tiver capturado esse ponteiro, essa mensagem não será postada. Em vez disso, um [**WM_POINTERUPDATE**](wm-pointerupdate.md) é Postado na janela que capturou esse ponteiro.
+Se uma janela tiver capturado esse ponteiro, essa mensagem não será postada. Em vez disso, [**WM_POINTERUPDATE**](wm-pointerupdate.md) é postado na janela que capturou esse ponteiro.
 
-> \[! Fundamental\]  
-> Os aplicativos da área de trabalho devem ter reconhecimento de DPI. Se seu aplicativo não tiver reconhecimento de DPI, as coordenadas de tela contidas nas mensagens de ponteiro e estruturas relacionadas poderão parecer imprecisas devido à virtualização de DPI. A virtualização de DPI fornece suporte de dimensionamento automático para aplicativos que não têm reconhecimento de DPI e está ativo por padrão (os usuários podem desativá-lo). Para obter mais informações, consulte [Writing High-DPI Win32 Applications](/previous-versions//dd464660(v=vs.85)).
+> \[! Importante\]  
+> Os aplicativos da área de trabalho devem estar cientes de DPI. Se o aplicativo não estiver ciente de DPI, as coordenadas de tela contidas em mensagens de ponteiro e estruturas relacionadas poderão aparecer imprecisas devido à virtualização de DPI. A virtualização de DPI oferece suporte de dimensionamento automático para aplicativos que não têm conhecimento de DPI e estão ativos por padrão (os usuários podem desativar). Para obter mais informações, consulte [Escrevendo aplicativos Win32 de alto DPI.](/previous-versions//dd464660(v=vs.85))
 
  
 
@@ -50,7 +50,7 @@ Contém o identificador de ponteiro e informações adicionais. Use as macros a 
 
 [**GET_POINTERID_WPARAM**](/previous-versions/windows/desktop/api)(wParam): identificador de ponteiro
 
-[**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85))(wParam): valor de teste de sucesso retornado pelo processamento da mensagem de [**WM_NCHITTEST**](../inputdev/wm-nchittest.md) .
+[**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85))(wParam): valor de teste de acerto retornado do processamento da [**WM_NCHITTEST**](../inputdev/wm-nchittest.md) mensagem.
 
 </dd> <dt>
 
@@ -66,20 +66,20 @@ Contém o local do ponto do ponteiro.
 
 Use as macros a seguir para recuperar as coordenadas de tela física do ponto.
 
--   [**GET_X_LPARAM**](/windows/win32/api/windowsx/nf-windowsx-get_x_lparam)(lParam): a coordenada X (ponto horizontal).
--   [**GET_Y_LPARAM**](/windows/win32/api/windowsx/nf-windowsx-get_y_lparam)(lParam): a coordenada Y (ponto vertical).
+-   [**GET_X_LPARAM**](/windows/win32/api/windowsx/nf-windowsx-get_x_lparam)(lParam): a coordenada x (ponto horizontal).
+-   [**GET_Y_LPARAM**](/windows/win32/api/windowsx/nf-windowsx-get_y_lparam)(lParam): a coordenada y (ponto vertical).
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se um aplicativo processar essa mensagem, ele deverá retornar zero.
+Se um aplicativo processa essa mensagem, ele deve retornar zero.
 
 Se o aplicativo não processar essa mensagem, ele deverá chamar [**DefWindowProc**](/windows/win32/api/winuser/nf-winuser-defwindowproca).
 
 ## <a name="remarks"></a>Comentários
 
-Se o aplicativo não processar essa mensagem, o [**DefWindowProc**](/windows/win32/api/winuser/nf-winuser-defwindowproca) poderá executar uma ou mais ações do sistema, dependendo do resultado do teste de clique incluído na mensagem. Normalmente, os aplicativos não precisam lidar com essa mensagem.
+Se o aplicativo não processar essa mensagem, [**DefWindowProc**](/windows/win32/api/winuser/nf-winuser-defwindowproca) poderá executar uma ou mais ações do sistema, dependendo do resultado do teste de acerto incluído na mensagem. Normalmente, os aplicativos não devem precisar lidar com essa mensagem.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -87,9 +87,9 @@ Se o aplicativo não processar essa mensagem, o [**DefWindowProc**](/windows/win
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                               |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                               |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

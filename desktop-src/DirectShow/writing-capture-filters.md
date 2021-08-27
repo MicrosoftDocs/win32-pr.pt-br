@@ -4,16 +4,16 @@ ms.assetid: 7dfd1009-da09-49dc-a200-3d7a9f1c70c1
 title: Gravando filtros de captura
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8de1a64de2b56dbc0728432307036fc46387f539
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0aa4807f381dc925a68fa3c60e45d5c8c5c444653230f366895b370e97aaccb8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105767663"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120049086"
 ---
 # <a name="writing-capture-filters"></a>Gravando filtros de captura
 
-Não é recomendável escrever um filtro de captura de áudio ou vídeo para o DirectShow. Em vez disso, o DirectShow fornece suporte automático para dispositivos de captura de áudio e vídeo, usando filtros de wrapper e o [enumerador de dispositivo do sistema](system-device-enumerator.md). Para obter mais informações sobre como implementar um driver de dispositivo, consulte a documentação do Windows Driver Kit (WDK).
+não é recomendável escrever um filtro de captura de áudio ou vídeo para o DirectShow. em vez disso, DirectShow fornece suporte automático para dispositivos de captura de áudio e vídeo, usando filtros de wrapper e o [enumerador de dispositivo do sistema](system-device-enumerator.md). para obter mais informações sobre como implementar um driver de dispositivo, consulte a documentação do WDK (Windows driver Kit).
 
 Esta seção destina-se apenas a desenvolvedores que precisam capturar algum tipo de dados personalizados de um dispositivo de hardware incomum.
 
@@ -27,7 +27,7 @@ Este artigo inclui as seções a seguir:
 
 <dl> <dt>
 
-[Gravando filtros do DirectShow](writing-directshow-filters.md)
+[gravando filtros de DirectShow](writing-directshow-filters.md)
 </dt> </dl>
 
  

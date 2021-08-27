@@ -4,32 +4,32 @@ ms.assetid: 7719ed9d-e3b9-4c84-b587-4e120b5cabf8
 title: Filtro de renderização de vídeo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ca3becb4fbdbb52a9968481aade07d14d963828
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 96df49305b357cf4a889d283c64839c13c38e2b8f89b8d4eda35d06260f18c58
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107908414"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120083496"
 ---
 # <a name="video-renderer-filter"></a>Filtro de renderização de vídeo
 
 O filtro de renderização de vídeo é um renderizador de vídeo robusto e com todos os propósitos.
 
 > [!Note]  
-> No Windows XP e versões posteriores, o processador de vídeo padrão é o [filtro de mixagem de vídeo 7](video-mixing-renderer-filter-7.md) (VMR-7). O VMR-7 e o processador de vídeo têm o nome amigável "processador de vídeo". Em plataformas anteriores, o renderizador de vídeo é o renderizador padrão. Consulte [escolhendo o processador correto](choosing-the-right-renderer.md).
+> no Windows XP e versões posteriores, o processador de vídeo padrão é o [filtro de mixagem de vídeo 7](video-mixing-renderer-filter-7.md) (VMR-7). O VMR-7 e o processador de vídeo têm o nome amigável "processador de vídeo". Em plataformas anteriores, o renderizador de vídeo é o renderizador padrão. Consulte [escolhendo o processador correto](choosing-the-right-renderer.md).
 
  
 
-O processador de vídeo usa superfícies do DirectDraw e de sobreposição, se a placa de vídeo der suporte a eles. O Gerenciador de gráficos de filtro expõe a interface [**IVideoWindow**](/windows/desktop/api/Control/nn-control-ivideowindow) , que permite que os aplicativos definam e recuperem Propriedades no processador de vídeo. Com placas de vídeo mais recentes, o renderizador de vídeo dá suporte à renderização de tela inteira. Caso contrário, o Gerenciador de gráfico de filtro alternará automaticamente para o filtro de [processador de tela inteira](full-screen-renderer-filter.md) para o modo de tela inteira. Consulte [**IVideoWindow::p UT \_ fullscreenmode**](/windows/desktop/api/Control/nf-control-ivideowindow-put_fullscreenmode) para obter mais informações.
+O processador de vídeo usa superfícies do DirectDraw e de sobreposição, se a placa de vídeo der suporte a eles. o filtro Graph Manager expõe a interface [**IVideoWindow**](/windows/desktop/api/Control/nn-control-ivideowindow) , que permite que os aplicativos definam e recuperem propriedades no processador de vídeo. Com placas de vídeo mais recentes, o renderizador de vídeo dá suporte à renderização de tela inteira. caso contrário, o filtro Graph Manager alternará automaticamente para o filtro de [processador de tela inteira](full-screen-renderer-filter.md) para o modo de tela inteira. Consulte [**IVideoWindow::p UT \_ fullscreenmode**](/windows/desktop/api/Control/nf-control-ivideowindow-put_fullscreenmode) para obter mais informações.
 
 -   \[! Fundamental\]  
-    > Normalmente, a janela de vídeo desse filtro processa mensagens em um thread de trabalho criado pelo Gerenciador do grafo de filtro. Entretanto, se um aplicativo criar diretamente o filtro usando **CoCreateInstance**, a janela de vídeo processará mensagens no thread do aplicativo. Nesse caso, o thread do aplicativo deve ter um loop de mensagem para enviar mensagens para a janela de vídeo. Além disso, o thread não deve sair até a chamada de **versão** final para o processador de vídeo, que ocorre quando o Gerenciador do grafo de filtro é desligado. Caso contrário, o aplicativo poderá ser bloqueado.
+    > normalmente, a janela de vídeo desse filtro processa mensagens em um thread de trabalho criado pelo filtro Graph Manager. Entretanto, se um aplicativo criar diretamente o filtro usando **CoCreateInstance**, a janela de vídeo processará mensagens no thread do aplicativo. Nesse caso, o thread do aplicativo deve ter um loop de mensagem para enviar mensagens para a janela de vídeo. além disso, o thread não deve sair até a chamada de **versão** final para o processador de vídeo, que ocorre quando o filtro Graph Manager é desligado. Caso contrário, o aplicativo poderá ser bloqueado.
 
      
 
 
 
-| Label | Valor |
+| Rótulo | Valor |
 |------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Filtrar interfaces                        | [**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter), [**IBasicVideo**](/windows/desktop/api/Control/nn-control-ibasicvideo), [**IBasicVideo2**](/windows/desktop/api/Control/nn-control-ibasicvideo2), [**IDirectDrawVideo**](/previous-versions/windows/desktop/api/Amvideo/nn-amvideo-idirectdrawvideo), [**IKsPropertySet**](ikspropertyset.md), [**IMediaPosition**](/windows/desktop/api/Control/nn-control-imediaposition), [**IMediaSeeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking), [**IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol), [**IQualProp**](/previous-versions/windows/desktop/api/Amvideo/nn-amvideo-iqualprop), [**IVideoWindow**](/windows/desktop/api/Control/nn-control-ivideowindow) |
 | Tipos de mídia de pino de entrada                    | Formatos de vídeo descompactados.                                                                                                                                                                                                                                                                                                                                                                              |
@@ -69,7 +69,7 @@ Quando o processador de vídeo se desenha em uma superfície de sobreposição d
 
 <dl> <dt>
 
-[Filtros do DirectShow](directshow-filters.md)
+[DirectShow Filter](directshow-filters.md)
 </dt> </dl>
 
  

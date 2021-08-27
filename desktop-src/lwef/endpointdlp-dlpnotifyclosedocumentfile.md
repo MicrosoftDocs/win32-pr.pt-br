@@ -1,6 +1,6 @@
 ---
-description: Fornece ao sistema informações sobre um documento antes da operação de fechamento do arquivo de documento ser iniciada.
-title: Função DlpNotifyCloseDocumentFile (endpointdlp. h)
+description: Fornece ao sistema informações sobre um documento antes que a operação de fechamento do arquivo de documento seja iniciada.
+title: Função DlpNotifyCloseDocumentFile (endpointdlp.h)
 ms.topic: reference
 ms.date: 03/18/2021
 topic_type:
@@ -12,16 +12,16 @@ api_type:
 - DllExport
 api_location:
 - EndpointDlp.dll
-ms.openlocfilehash: 2438829cde84e9029a86d74e4ed704e1e8d33511
-ms.sourcegitcommit: 91110c16e4713ed82d7fb80562d3ddf40b5d76b2
+ms.openlocfilehash: fc4aff982ebfa8e16f4a7d2c0cd42a847825b422af761416d4a410a03df66446
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "107495346"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120062136"
 ---
 # <a name="dlpnotifyclosedocumentfile-function"></a>Função DlpNotifyCloseDocumentFile
 
-Fornece ao sistema informações sobre um documento antes da operação de fechamento do arquivo de documento ser iniciada.
+Fornece ao sistema informações sobre um documento antes que a operação de fechamento do arquivo de documento seja iniciada.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -36,17 +36,17 @@ void WINAPI DlpNotifyCloseDocumentFile(_In_ const PDLP_DOCUMENT_INFO DocumentInf
 
 <dl> <dt>
 
-*DocumentInfo* \[ no\]
+*DocumentInfo* \[ Em\]
 </dt> <dd>
 
-Um ponteiro para uma estrutura de [PDLP_DOCUMENT_INFO](endpointdlp-dlp_document_info.md) que contém informações sobre o documento a ser aberto.
+Um ponteiro para uma [PDLP_DOCUMENT_INFO](endpointdlp-dlp_document_info.md) que contém informações sobre o documento a ser aberto.
 
 </dd> </dl>
 
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retornar void.
+Retornar nulo.
 
 ## <a name="remarks"></a>Comentários
 
@@ -56,5 +56,5 @@ Retornar void.
 
 | Requisito          |    Valor                   |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 10, versão 1809 (10,0; Build 17763)           |
+| Cliente mínimo com suporte<br/> | Windows 10, versão 1809 (10.0; Build 17763)           |
 | DLL<br/>                      | EndpointDlp.dll |

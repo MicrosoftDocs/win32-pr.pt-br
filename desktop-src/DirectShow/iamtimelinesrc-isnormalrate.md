@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: e368efcf29d836cc23fa60ed34dae1a172978f77
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4d1c0b355b0eedee29dafb92debbabac5c7b3e574d2f161827626bc73f72c035
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105780057"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120083866"
 ---
 # <a name="iamtimelinesrcisnormalrate-method"></a>Método IAMTimelineSrc:: IsNormalRate
 
@@ -52,7 +52,7 @@ Recebe um valor booliano que indica como o clipe será renderizado. Se o valor f
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
@@ -67,7 +67,7 @@ Playback rate = (Media Stop <entity type="mdash"/> Media Start) / (Timeline Stop
 
 
 
-Se essa taxa for igual a 1, o clipe será reproduzido na velocidade criada. Caso contrário, ele será executado mais rápido ou mais devagar. Para obter mais informações, consulte [tempo em serviços de edição do DirectShow](time-in-directshow-editing-services.md).
+Se essa taxa for igual a 1, o clipe será reproduzido na velocidade criada. Caso contrário, ele será executado mais rápido ou mais devagar. para obter mais informações, consulte [tempo em DirectShow serviços de edição](time-in-directshow-editing-services.md).
 
 > [!Note]  
 > O arquivo de cabeçalho QEdit. h não é compatível com cabeçalhos do Direct3D posteriores à versão 7.
@@ -75,7 +75,7 @@ Se essa taxa for igual a 1, o clipe será reproduzido na velocidade criada. Caso
  
 
 > [!Note]  
-> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> para obter o Qedit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
 
  
 

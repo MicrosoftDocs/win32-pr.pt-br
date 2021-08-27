@@ -1,9 +1,9 @@
 ---
-title: Mensagem de TCM_GETCURFOCUS (commctrl. h)
-description: Retorna o índice do item que tem o foco em um controle guia. Você pode enviar essa mensagem explicitamente ou usando a macro TabCtrl \_ GetCurFocus.
+title: TCM_GETCURFOCUS mensagem (Commctrl.h)
+description: Retorna o índice do item que tem o foco em um controle de tabulação. Você pode enviar essa mensagem explicitamente ou usando a macro TabCtrl \_ GetCurFocus.
 ms.assetid: ae6ee159-c769-41d6-b0bb-2a9ade4c0e71
 keywords:
-- Controles de TCM_GETCURFOCUS de mensagens do Windows
+- TCM_GETCURFOCUS controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b0b0d0f3d2bbd4a7cf0ab2a63c5a988f60768eec
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 694fb64b033d279292a687c39959925a68999c0b232c847bdf6ec6b476c725e8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103919021"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120104936"
 ---
-# <a name="tcm_getcurfocus-message"></a>\_Mensagem GETCURFOCUS de TCM
+# <a name="tcm_getcurfocus-message"></a>Mensagem TCM \_ GETCURFOCUS
 
-Retorna o índice do item que tem o foco em um controle guia. Você pode enviar essa mensagem explicitamente ou usando a macro [**TabCtrl \_ GetCurFocus**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_getcurfocus) .
+Retorna o índice do item que tem o foco em um controle de tabulação. Você pode enviar essa mensagem explicitamente ou usando a [**macro TabCtrl \_ GetCurFocus.**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_getcurfocus)
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -35,7 +35,7 @@ Retorna o índice do item que tem o foco em um controle guia. Você pode enviar 
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o índice do item de guia que tem o foco.
 
@@ -49,9 +49,9 @@ O item que tem o foco pode ser diferente do item selecionado.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
