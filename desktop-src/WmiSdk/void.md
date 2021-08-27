@@ -1,5 +1,5 @@
 ---
-description: VOID é um tipo de dados que representa a ausência de um valor. Use VOID em MOF apenas para indicar um método que não tem nenhum valor de retorno.
+description: VOID é um tipo de dados que representa a ausência de um valor. Use VOID somente no MOF para indicar um método que não tem nenhum valor de retorno.
 ms.assetid: 27dc26ba-6411-4986-99b2-9a2960824dac
 ms.tgt_platform: multiple
 title: VOID
@@ -19,7 +19,7 @@ ms.locfileid: "118312225"
 ---
 # <a name="void"></a>VOID
 
-VOID é um tipo de dados que representa a ausência de um valor. Use VOID em MOF apenas para indicar um método que não tem nenhum valor de retorno.
+VOID é um tipo de dados que representa a ausência de um valor. Use VOID somente no MOF para indicar um método que não tem nenhum valor de retorno.
 
 ``` syntax
 void Method2 ([in] sint32 InParam);

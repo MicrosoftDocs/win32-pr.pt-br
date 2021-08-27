@@ -1,7 +1,7 @@
 ---
-description: Representa o objeto usado para capturar tinta de dispositivos tablets disponíveis.
+description: Representa o objeto usado para capturar tinta de dispositivos tablet disponíveis.
 ms.assetid: 189f430e-9d00-4e29-bb8c-8ac195896793
-title: Classe InkCollector (Msinkaut. h)
+title: Classe InkCollector (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,20 +15,20 @@ api_type:
 api_location:
 - InkObj.dll
 - InkObj.dll.dll
-ms.openlocfilehash: 17eff388a759b9b0873929447e4c8fe008e2fba5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 02ecf89a1ce8db89105ac9fa0243552efaf5218da98f6d3b0fdfbd58f874d449
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501398"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118718172"
 ---
 # <a name="inkcollector-class"></a>Classe InkCollector
 
-Representa o objeto usado para capturar tinta de dispositivos tablets disponíveis.
+Representa o objeto usado para capturar tinta de dispositivos tablet disponíveis.
 
-Criar o controle **InkCollector** por trás de um controle transparente (como uma GroupBox com o conjunto de propriedades de **WS \_ ex \_ Transparent** ) impedirá o **InkCollector** de coletar tinta.
+A criação **do controle InkCollector** por trás de um controle transparente (como uma GroupBox com o conjunto de **propriedades \_ WS EX \_ TRANSPARENT)** impedirá que **o InkCollector** colete tinta.
 
-O **InkCollector** tem estes tipos de membros:
+**InkCollector** tem estes tipos de membros:
 
 -   [Eventos](#events)
 -   [Interfaces](#interfaces)
@@ -37,27 +37,27 @@ O **InkCollector** tem estes tipos de membros:
 
 ### <a name="events"></a>Eventos
 
-A classe **InkCollector** tem esses eventos.
+A **classe InkCollector** tem esses eventos.
 
 
 
 | Evento                                                     | Descrição                                                                                                                                                                                                                                                   |
 |:----------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**CursorButtonDown**](inkcollector-cursorbuttondown.md) | Ocorre quando o **InkCollector** detecta um botão de cursor que está inativo.<br/>                                                                                                                                                                             |
-| [**CursorButtonUp**](inkcollector-cursorbuttonup.md)     | Ocorre quando o **InkCollector** detecta um botão de cursor que está ativo.<br/>                                                                                                                                                                               |
-| [**CursorDown**](inkcollector-cursordown.md)             | Ocorre quando a dica de cursor entra na superfície do Tablet de digitalização.<br/>                                                                                                                                                                                 |
-| [**CursorInRange**](inkcollector-cursorinrange.md)       | Ocorre quando um cursor entra no intervalo de detecção física (proximidade) do contexto do Tablet.<br/>                                                                                                                                                        |
-| [**CursorOutOfRange**](inkcollector-cursoroutofrange.md) | Ocorre quando o cursor sai do intervalo de detecção física (proximidade) do contexto do Tablet.<br/>                                                                                                                                                      |
-| [**Duplo**](inkcollector-doubleclick.md)           | Ocorre quando o objeto **InkCollector** é clicado duas vezes.<br/>                                                                                                                                                                                         |
+| [**CursorButtonDown**](inkcollector-cursorbuttondown.md) | Ocorre quando o **InkCollector** detecta um botão de cursor que está inocos.<br/>                                                                                                                                                                             |
+| [**CursorButtonUp**](inkcollector-cursorbuttonup.md)     | Ocorre quando o **InkCollector** detecta um botão de cursor que está para cima.<br/>                                                                                                                                                                               |
+| [**CursorDown**](inkcollector-cursordown.md)             | Ocorre quando a dica de cursor contata a superfície de tablet de digitalização.<br/>                                                                                                                                                                                 |
+| [**CursorInRange**](inkcollector-cursorinrange.md)       | Ocorre quando um cursor entra no intervalo de detecção física (proximidade) do contexto do tablet.<br/>                                                                                                                                                        |
+| [**CursorOutOfRange**](inkcollector-cursoroutofrange.md) | Ocorre quando o cursor sai do intervalo de detecção física (proximidade) do contexto do tablet.<br/>                                                                                                                                                      |
+| [**Doubleclick**](inkcollector-doubleclick.md)           | Ocorre quando o **objeto InkCollector** é clicado duas vezes.<br/>                                                                                                                                                                                         |
 | [**Gesto**](inkcollector-gesture.md)                   | Ocorre quando um gesto específico do aplicativo é reconhecido.<br/>                                                                                                                                                                                         |
-| [**MouseDown**](inkcollector-mousedown.md)               | Ocorre quando o ponteiro do mouse está sobre o objeto **InkCollector** e um botão do mouse é pressionado.<br/>                                                                                                                                                   |
-| [**Ocorra**](inkcollector-mousemove.md)               | Ocorre quando o ponteiro do mouse é movido sobre o objeto **InkCollector** .<br/>                                                                                                                                                                           |
-| [**MouseUp**](inkcollector-mouseup.md)                   | Ocorre quando o ponteiro do mouse está sobre o objeto **InkCollector** e um botão do mouse é liberado.<br/>                                                                                                                                                  |
-| [**MouseWheel**](inkcollector-mousewheel.md)             | Ocorre quando a roda do mouse se move enquanto o objeto **InkCollector** tem foco.<br/>                                                                                                                                                                     |
-| [**NewInAirPackets**](inkcollector-newinairpackets.md)   | Ocorre quando um pacote no ar é visto, o que acontece quando um usuário move uma caneta perto do Tablet e o cursor está dentro da janela do objeto **InkCollector** ou o usuário move um mouse na janela associada do objeto de objeto **InkCollector** .<br/> |
-| [**NewPackets**](inkcollector-newpackets.md)             | Ocorre quando o objeto **InkCollector** recebe pacotes.<br/>                                                                                                                                                                                          |
-| [**Pincel**](inkcollector-stroke.md)                     | Ocorre quando o usuário termina de desenhar um novo traço em qualquer mesa digitalizadora.<br/>                                                                                                                                                                                  |
-| [**SystemGesture**](inkcollector-systemgesture.md)       | Ocorre quando um gesto do sistema é reconhecido.<br/>                                                                                                                                                                                                        |
+| [**Mousedown**](inkcollector-mousedown.md)               | Ocorre quando o ponteiro do mouse está sobre o **objeto InkCollector** e um botão do mouse é pressionado.<br/>                                                                                                                                                   |
+| [**Mousemove**](inkcollector-mousemove.md)               | Ocorre quando o ponteiro do mouse é movido sobre o **objeto InkCollector.**<br/>                                                                                                                                                                           |
+| [**Mouseup**](inkcollector-mouseup.md)                   | Ocorre quando o ponteiro do mouse está sobre o **objeto InkCollector** e um botão do mouse é liberado.<br/>                                                                                                                                                  |
+| [**Mousewheel**](inkcollector-mousewheel.md)             | Ocorre quando a roda do mouse se move enquanto o **objeto InkCollector** tem foco.<br/>                                                                                                                                                                     |
+| [**NewInAirPackets**](inkcollector-newinairpackets.md)   | Ocorre quando um in-air packet é visto, o que acontece quando um usuário move uma caneta perto do tablet e o cursor está dentro da janela do objeto **InkCollector** ou o usuário move um mouse dentro da janela associada do objeto **InkCollector.**<br/> |
+| [**NewPackets**](inkcollector-newpackets.md)             | Ocorre quando o **objeto InkCollector** recebe pacotes.<br/>                                                                                                                                                                                          |
+| [**Curso**](inkcollector-stroke.md)                     | Ocorre quando o usuário termina de desenhar um novo traço em qualquer tablet.<br/>                                                                                                                                                                                  |
+| [**Systemgesture**](inkcollector-systemgesture.md)       | Ocorre quando um gesto do sistema é reconhecido.<br/>                                                                                                                                                                                                        |
 | [**TabletAdded**](inkcollector-tabletadded.md)           | Ocorre quando um [**Tablet**](/windows/desktop/api/msinkaut/nn-msinkaut-iinktablet) é adicionado ao sistema.<br/>                                                                                                                                                                                 |
 | [**TabletRemoved**](inkcollector-tabletremoved.md)       | Ocorre quando um [**Tablet**](/windows/desktop/api/msinkaut/nn-msinkaut-iinktablet) é removido do sistema.<br/>                                                                                                                                                                             |
 
@@ -67,13 +67,13 @@ A classe **InkCollector** tem esses eventos.
 
 ### <a name="interfaces"></a>Interfaces
 
-A classe **InkCollector** define essas interfaces.
+A **classe InkCollector** define essas interfaces.
 
 
 
 | Interface         | Descrição                                                            |
 |:------------------|:-----------------------------------------------------------------------|
-| **IInkCollector** | Esse objeto implementa a interface com do **IInkCollector** .<br/> |
+| **IInkCollector** | Esse objeto implementa a interface **COM IInkCollector.**<br/> |
 
 
 
@@ -81,20 +81,20 @@ A classe **InkCollector** define essas interfaces.
 
 ### <a name="methods"></a>Métodos
 
-A classe **InkCollector** tem esses métodos.
+A **classe InkCollector** tem esses métodos.
 
 
 
 | Método                                                                              | Descrição                                                                                                                                                    |
 |:------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**GetEventInterest**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-geteventinterest)                           | Recupera o estado atual de um evento de objeto **InkCollector** específico, ou seja, se o evento está sendo escutado ou usado.<br/>                |
-| [**GetGestureStatus**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-getgesturestatus)                           | Recupera se o objeto **InkCollector** está interessado em um gesto específico.<br/>                                                                |
-| [**GetWindowInputRectangle**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-getwindowinputrectangle)             | Recupera o retângulo da janela, em pixels, no qual a tinta é desenhada.<br/>                                                                               |
-| [**SetAllTabletsMode**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-setalltabletsmode)                         | Esse modo permite que o objeto **InkCollector** colete tinta de qualquer Tablet anexado ao Tablet PC.<br/>                                              |
-| [**SetEventInterest**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-seteventinterest)                           | Modifica um valor que indica se um evento específico deve ser escutado ou usado.<br/>                                                            |
+| [**GetEventInterest**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-geteventinterest)                           | Recupera o estado atual de um evento **de objeto InkCollector** específico, ou seja, se o evento está sendo ouvido ou usado.<br/>                |
+| [**GetGestureStatus**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-getgesturestatus)                           | Recupera se o **objeto InkCollector** está interessado em um gesto específico.<br/>                                                                |
+| [**GetWindowInputRectangle**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-getwindowinputrectangle)             | Recupera o retângulo da janela, em pixels, dentro do qual a tinta é desenhada.<br/>                                                                               |
+| [**SetAllTabletsMode**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-setalltabletsmode)                         | Esse modo permite que o **objeto InkCollector** colete tinta de qualquer tablet anexado ao tablet.<br/>                                              |
+| [**SetEventInterest**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-seteventinterest)                           | Modifica um valor que indica se um evento específico deve ser ouvido ou usado.<br/>                                                            |
 | [**SetGestureStatus**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-setgesturestatus)                           | Modifica o interesse do objeto **InkCollector** em um gesto conhecido.<br/>                                                                            |
-| [**SetSingleTabletIntegratedMode**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-setsingletabletintegratedmode) | Esse modo permite que o objeto **InkCollector** colete tinta de apenas um Tablet. A tinta de outros tablets é ignorada pelo objeto **InkCollector** .<br/> |
-| [**SetWindowInputRectangle**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-setwindowinputrectangle)             | Modifica o retângulo da janela, em pixels, para usar para mapear tinta desenhada para a janela.<br/>                                                                    |
+| [**SetSingleTabletIntegratedMode**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-setsingletabletintegratedmode) | Esse modo permite que o **objeto InkCollector** colete tinta de apenas um tablet. A tinta de outros tablets é ignorada pelo **objeto InkCollector.**<br/> |
+| [**SetWindowInputRectangle**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-setwindowinputrectangle)             | Modifica o retângulo da janela, em pixels, a ser usado para mapear a tinta desenhada para a janela.<br/>                                                                    |
 
 
 
@@ -102,18 +102,18 @@ A classe **InkCollector** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-A classe **InkCollector** tem essas propriedades.
+A **classe InkCollector** tem essas propriedades.
 
 
 
 | Propriedade                                                                             | Tipo de acesso          | Descrição                                                                                                                                                                                  |
 |:-------------------------------------------------------------------------------------|:---------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Redesenhar novamente**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_autoredraw)<br/>                             | Somente leitura<br/> | Obtém ou define um valor que especifica se o **InkCollector** redesenha a tinta quando a janela é invalidada.<br/>                                                                 |
-| [**CollectingInk**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_collectingink)<br/>                       | Somente leitura<br/> | Obtém um valor que especifica se a tinta está sendo desenhada no momento em um objeto **InkCollector** .<br/>                                                                                   |
-| [**CollectionMode**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_collectionmode)<br/>                     | Somente leitura<br/> | Obtém ou define o modo de coleta que determina se a tinta, os gestos ou ambos são reconhecidos conforme o usuário escreve.<br/>                                                                |
-| [**Cursores**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_cursors)<br/>                                   | Somente leitura<br/> | Obtém a coleção de [**cursores**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursors) que está disponível para uso na região de tinta.<br/>                                                                                |
-| [**DefaultDrawingAttributes**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_defaultdrawingattributes)<br/> | Somente leitura<br/> | Obtém ou define o objeto [**InkDrawingAttributes**](inkdrawingattributes-class.md) padrão, que especifica os atributos de desenho que são usados ao desenhar e exibir a tinta.<br/> |
-| [**DesiredPacketDescription**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_desiredpacketdescription)<br/> | Somente leitura<br/> | Obtém ou define o interesse em aspectos do pacote associado à tinta desenhada no objeto **InkCollector** .<br/>                                                                          |
+| [**AutoRedraw**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_autoredraw)<br/>                             | Somente leitura<br/> | Obtém ou define um valor que especifica se **o InkCollector** reintsifique a tinta quando a janela é invalidada.<br/>                                                                 |
+| [**CollectingInk**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_collectingink)<br/>                       | Somente leitura<br/> | Obtém um valor que especifica se a tinta está sendo desenhada no momento em um **objeto InkCollector.**<br/>                                                                                   |
+| [**Collectionmode**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_collectionmode)<br/>                     | Somente leitura<br/> | Obtém ou define o modo de coleta que determina se tinta, gestos ou ambos são reconhecidos como gravações do usuário.<br/>                                                                |
+| [**Cursores**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_cursors)<br/>                                   | Somente leitura<br/> | Obtém [**a coleção Cursores**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursors) que está disponível para uso na região de inking.<br/>                                                                                |
+| [**DefaultDrawingAttributes**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_defaultdrawingattributes)<br/> | Somente leitura<br/> | Obtém ou define o [**objeto InkDrawingAttributes**](inkdrawingattributes-class.md) padrão, que especifica os atributos de desenho usados ao desenhar e exibir tinta.<br/> |
+| [**DesiredPacketDescription**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_desiredpacketdescription)<br/> | Somente leitura<br/> | Obtém ou define o interesse nos aspectos do pacote associado à tinta desenhada no **objeto InkCollector.**<br/>                                                                          |
 | [**DynamicRendering**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_dynamicrendering)<br/>                   | Somente leitura<br/> | Obtém ou define um valor que indica se a tinta é renderizada conforme é desenhada.<br/>                                                                                                       |
 | [**habilitado**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_enabled)<br/>                                   | Somente leitura<br/> | Obtém ou define um valor que especifica se o objeto **InkCollector** coleta a entrada da caneta.<br/>                                                                                       |
 | [**Handle**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_hwnd)<br/>                                       | Somente leitura<br/> | Obtém ou define o identificador da janela à qual o objeto **InkCollector** está anexado.<br/>                                                                                           |
@@ -172,9 +172,9 @@ Para melhorar o desempenho do aplicativo, descarte seu objeto **InkCollector** q
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/>                                                       |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                           |
-| parâmetro<br/>                   | <dl> <dt>Msinkaut. h (também requer Msinkaut \_ i. c)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Msinkaut. h (também requer Msinkaut \_ i. c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 

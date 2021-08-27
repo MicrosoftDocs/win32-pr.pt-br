@@ -17,12 +17,12 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c168635a66eff012768a1eabbc803c6986a2c43
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 1adb585a3c82b7e85e6653efee6b3a1bf050051fec5cef0a2c82f0645fef542d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105807899"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118807493"
 ---
 # <a name="id3dx12pipelineparsercallbackscachedpsocb-method"></a>Método ID3DX12PipelineParserCallbacks:: CachedPSOCb
 
@@ -52,7 +52,7 @@ Detalhes do subobjeto de PSO (objeto de estado do Pipeline) em cache analisado a
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Não retorna nada.
 

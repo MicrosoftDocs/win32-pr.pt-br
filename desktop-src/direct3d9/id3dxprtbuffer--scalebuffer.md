@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 05bdd066f4b7c33ad06f089551f16f0489608c83
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e5cba39f6816e301f2d36e21e6f81c7bb1f6bb4792fe4ea8017de5d452faf357
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105772906"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118801484"
 ---
 # <a name="id3dxprtbufferscalebuffer-method"></a>Método ID3DXPRTBuffer:: ScaleBuffer
 
@@ -49,7 +49,7 @@ Valor constante usado para dimensionar o buffer. Cada valor no buffer é substit
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

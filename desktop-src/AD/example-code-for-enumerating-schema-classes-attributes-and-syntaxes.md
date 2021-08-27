@@ -7,12 +7,12 @@ keywords:
 - Exemplos de Active Directory Active Directory, enumerando classes de esquema, atributos e sintaxes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ceaea652c2e66b07a12b31096fb06bfe8839f6ee
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 282aeea3274e3e7eb8f7b4c71134bd1cbf95aefff58e5fe9c03e459b27671f1a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104004921"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118693812"
 ---
 # <a name="example-code-for-enumerating-schema-classes-attributes-and-syntaxes"></a>Código de exemplo para enumerar classes de esquema, atributos e sintaxes
 
@@ -167,7 +167,7 @@ cleanup:
 
 
 
-O exemplo de código a seguir Visual Basic lê o esquema abstrato para enumerar as classes de objeto estrutural, abstrato e auxiliar. Em seguida, o exemplo enumera as classes de atributo de valor único e de valores múltiplos.
+o exemplo de código a seguir Visual Basic lê o esquema abstrato para enumerar as classes de objeto estrutural, abstrato e auxiliar. Em seguida, o exemplo enumera as classes de atributo de valor único e de valores múltiplos.
 
 
 ```VB
@@ -204,9 +204,9 @@ Next aProp
 
 
 
- 
+ 
 
- 
+ 
 
 
 

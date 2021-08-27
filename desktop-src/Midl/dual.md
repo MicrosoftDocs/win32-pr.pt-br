@@ -1,9 +1,9 @@
 ---
 title: atributo dual
-description: O atributo duplo identifica uma interface que expõe propriedades e métodos por meio de IDispatch e diretamente por meio do VTBL.
+description: O atributo Dual identifica uma interface que expõe propriedades e métodos por meio de IDispatch e diretamente por meio de VTBL.
 ms.assetid: 1c214f10-57eb-4a05-99a8-a09770666a74
 keywords:
-- atributo duplo MIDL
+- MIDL de atributo duplo
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.locfileid: "118643090"
 ---
 # <a name="dual-attribute"></a>atributo dual
 
-O **atributo** duplo identifica uma interface que expõe propriedades e métodos por meio de [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) e diretamente por meio do VTBL.
+O atributo **Dual** identifica uma interface que expõe propriedades e métodos por meio de [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) e diretamente por meio de VTBL.
 
 ``` syntax
 [
@@ -40,47 +40,47 @@ interface interface-name
 
 <dl> <dt>
 
-*uuid-number* 
+*UUID-número* 
 </dt> <dd>
 
 Especifica um número de identificação universalmente exclusivo para a interface
 
 </dd> <dt>
 
-*optional-attribute-list* 
+*lista de atributos opcionais* 
 </dt> <dd>
 
 Especifica uma lista de zero ou mais atributos MIDL adicionais.
 
 </dd> <dt>
 
-*interface-name* 
+*nome da interface* 
 </dt> <dd>
 
-O nome da interface à qual o **atributo** duplo será aplicado.
+O nome da interface à qual o atributo **duplo** será aplicado.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-As interfaces identificadas pelo **atributo duplo** devem ser compatíveis com a Automação e ser derivadas de [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch). Esse atributo não é permitido em dispinterfaces.
+As interfaces identificadas pelo atributo **Dual** devem ser compatíveis com a automação e ser derivadas de [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch). Este atributo não é permitido em dispinterfaces.
 
-O **atributo** duplo cria uma interface que é uma interface [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) e uma interface COMPONENT OBJECT MODEL (COM). As primeiras sete entradas do VTBL para uma interface dupla são os sete membros de **IDispatch** e as entradas restantes são para acesso direto aos membros da interface dupla. Todos os parâmetros e tipos de retorno especificados para membros de uma interface dupla devem ser tipos compatíveis com Automação.
+O atributo **Dual** cria uma interface que é uma interface [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) e uma interface com (Component Object Model). As primeiras sete entradas do VTBL para uma interface dupla são os sete membros de **IDispatch**, e as entradas restantes são para o acesso direto aos membros da interface dupla. Todos os parâmetros e tipos de retorno especificados para membros de uma interface dupla devem ser tipos compatíveis com a automação.
 
-Todos os membros de uma interface dupla devem passar um HRESULT como o valor de retorno da função. Membros, como funções de acessador de propriedade, que precisam retornar outros valores, devem especificar o último parâmetro como [**out**](out-idl.md), [**retval**](retval.md), indicando um parâmetro de saída que retorna o valor da função. Além disso, os membros que precisam dar suporte a várias localidades devem passar um [**parâmetro lcid.**](lcid.md)
+Todos os membros de uma interface dupla devem passar um HRESULT como o valor de retorno da função. Membros, como funções de assessor de propriedade, que precisam retornar outros valores, devem especificar o último parâmetro como [**out**](out-idl.md), [**retval**](retval.md), indicando um parâmetro de saída que retorna o valor da função. Além disso, os membros que precisam dar suporte a várias localidades devem passar um parâmetro [**LCID**](lcid.md) .
 
-Uma interface dupla fornece a velocidade da associação VTBL direta e a flexibilidade da associação [**IDispatch.**](/windows/win32/api/oaidl/nn-oaidl-idispatch) Por esse motivo, interfaces duplas são recomendadas sempre que possível.
+Uma interface dupla fornece a velocidade da ligação VTBL direta e a flexibilidade da Associação de [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) . Por esse motivo, as interfaces duplas são recomendadas sempre que possível.
 
 > [!Note]  
-> Se o aplicativo acessar dados  de objeto ao lançar o ponteiro this dentro da chamada de interface, você deverá verificar os ponteiros VTBL no objeto em relação aos seus próprios ponteiros VTBL para garantir que você esteja conectado ao proxy apropriado.
+> Se seu aplicativo acessa dados de objeto ao converter o *ponteiro dentro* da chamada de interface, você deve verificar os ponteiros de VTBL no objeto em relação aos seus próprios ponteiros do VTBL para garantir que você esteja conectado ao proxy apropriado.
 
  
 
-Especificar **duplo em** uma interface implica que a interface é compatível com a Automação e, portanto, faz com que os sinalizadores \_ TYPEFLAG FDUAL e TYPEFLAG FOL \_ DIGITTOMATION sejam definidos.
+A especificação de **Dual** em uma interface implica que a interface é compatível com a automação e, portanto, faz com que os \_ sinalizadores TYPEFLAG FDUAL e TYPEFLAG \_ FOLEAUTOMATION sejam definidos.
 
 ### <a name="flags"></a>Flags
 
-TYPEFLAG \_ FDUAL, TYPEFLAG \_ FOL DIGITOTOMATION
+TYPEFLAG \_ FDUAL, TYPEFLAG \_ FOLEAUTOMATION
 
 ## <a name="examples"></a>Exemplos
 
@@ -102,22 +102,22 @@ interface IHello : IDispatch
 [Gerando uma biblioteca de tipos com MIDL](generating-a-type-library-with-midl-2.md)
 </dt> <dt>
 
-[**Interface**](interface.md)
+[**interface**](interface.md)
 </dt> <dt>
 
-[**Lcid**](lcid.md)
+[**LCID**](lcid.md)
 </dt> <dt>
 
 [**oleautomation**](oleautomation.md)
 </dt> <dt>
 
-[Sintaxe de arquivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintaxe do arquivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
 [Exemplo de arquivo ODL](/previous-versions/windows/desktop/automat/odl-file-example)
 </dt> <dt>
 
-[**out**](out-idl.md)
+[**fora**](out-idl.md)
 </dt> <dt>
 
 [**retval**](retval.md)

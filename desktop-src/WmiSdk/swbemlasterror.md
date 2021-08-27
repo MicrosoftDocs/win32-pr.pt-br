@@ -2,7 +2,7 @@
 description: Os métodos e as propriedades do objeto SWbemLastError contêm e manipulam objetos de erro.
 ms.assetid: 11a652fa-29e8-437b-8e62-e28e56a8a38d
 ms.tgt_platform: multiple
-title: Objeto SWbemLastError (Wbemdisp. h)
+title: Objeto SWbemLastError (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -48,44 +48,44 @@ ms.locfileid: "118314455"
 ---
 # <a name="swbemlasterror-object"></a>Objeto SWbemLastError
 
-Os métodos e as propriedades do objeto **SWbemLastError** contêm e manipulam objetos de erro. Os métodos e as propriedades desse objeto são exatamente iguais aos do objeto [**SWbemObject**](swbemobject.md) , mas são usados para conter informações de erro em vez de informações de classe WMI. Esse objeto pode ser criado pela chamada do VBScript **CreateObject** .
+Os métodos e as propriedades do objeto **SWbemLastError** contêm e manipulam objetos de erro. Os métodos e as propriedades desse objeto são exatamente iguais aos do objeto [**SWbemObject,**](swbemobject.md) mas são usados para conter informações de erro em vez de informações de classe WMI. Esse objeto pode ser criado pela chamada **CreateObject** do VBScript.
 
-Você pode criar um objeto de erro **SWbemLastError** para inspecionar as informações de erro estendidas que estão associadas a uma chamada de método anterior. Se as informações de erro não estiverem disponíveis, haverá falha na tentativa de criar um objeto de erro. Se a chamada for bem sucedido e um objeto de erro retornar, o status do objeto será redefinido. Outras tentativas de recuperar um objeto de erro falharão até que ocorra um novo erro. Se você fizer uma chamada assíncrona que falhe, um objeto **SWbemLastError** poderá ser retornado para você pelo evento [**SWbemSink. OnCompleted**](swbemsink-oncompleted.md) no parâmetro *objWbemErrorObject* .
+Você pode criar um **objeto de erro SWbemLastError** para inspecionar as informações de erro estendidas associadas a uma chamada de método anterior. Se as informações de erro não estão disponíveis, uma tentativa de criar um objeto de erro falhará. Se a chamada for bem-sucedida e um objeto de erro retornar, o status do objeto será redefinido. Outras tentativas de recuperar um objeto de erro falharão até que ocorra um novo erro. Se você fizer uma chamada assíncrona que falhe, um objeto **SWbemLastError** poderá ser retornado para você pelo evento [**SWbemSink.OnCompleted**](swbemsink-oncompleted.md) no parâmetro *objWbemErrorObject.*
 
 ## <a name="members"></a>Membros
 
-O objeto **SWbemLastError** tem estes tipos de membros:
+O **objeto SWbemLastError** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-O objeto **SWbemLastError** tem esses métodos.
+O **objeto SWbemLastError** tem esses métodos.
 
 
 
 | Método                                                   | Descrição                                                                                  |
 |:---------------------------------------------------------|:---------------------------------------------------------------------------------------------|
-| **ASSOCIADORES\_**                                        | Não usado. O objeto [**SWbemObject**](swbemobject.md) fornece o mesmo método.<br/> |
-| **AssociatorsAsync\_**                                   | Não usado. O objeto [**SWbemObject**](swbemobject.md) fornece o mesmo método.<br/> |
+| **Associadores\_**                                        | Não usado. O [**objeto SWbemObject**](swbemobject.md) fornece o mesmo método.<br/> |
+| **AssociatorsAsync\_**                                   | Não usado. O [**objeto SWbemObject**](swbemobject.md) fornece o mesmo método.<br/> |
 | [**Clone\_**](swbemlasterror-clone-.md)                 | Faz uma cópia do objeto atual.<br/>                                               |
-| [**CompareTo\_**](swbemlasterror-compareto-.md)         | Testa dois objetos para igualdade.<br/>                                                   |
-| **Excluir\_**                                             | Não usado. O objeto [**SWbemObject**](swbemobject.md) fornece o mesmo método.<br/> |
-| **DeleteAsync\_**                                        | Não usado. O objeto [**SWbemObject**](swbemobject.md) fornece o mesmo método.<br/> |
-| **ExecMethod\_**                                         | Não usado. O objeto [**SWbemObject**](swbemobject.md) fornece o mesmo método.<br/> |
-| **ExecMethodAsync\_**                                    | Não usado. O objeto [**SWbemObject**](swbemobject.md) fornece o mesmo método.<br/> |
-| [**GetObjectText\_**](swbemlasterror-getobjecttext-.md) | Recupera a representação textual do objeto escrito com a sintaxe MOF.<br/>       |
-| **Instâncias\_**                                          | Não usado. O objeto [**SWbemObject**](swbemobject.md) fornece o mesmo método.<br/> |
-| **InstancesAsync\_**                                     | Não usado. O objeto [**SWbemObject**](swbemobject.md) fornece o mesmo método.<br/> |
-| **Posicione\_**                                                | Não usado. O objeto [**SWbemObject**](swbemobject.md) fornece o mesmo método.<br/> |
-| **PutAsync\_**                                           | Não usado. O objeto [**SWbemObject**](swbemobject.md) fornece o mesmo método.<br/> |
-| **Referências\_**                                         | Não usado. O objeto [**SWbemObject**](swbemobject.md) fornece o mesmo método.<br/> |
-| **ReferencesAsync\_**                                    | Não usado. O objeto [**SWbemObject**](swbemobject.md) fornece o mesmo método.<br/> |
-| **SpawnDerivedClass\_**                                  | Não usado. O objeto [**SWbemObject**](swbemobject.md) fornece o mesmo método.<br/> |
-| **SpawnInstance\_**                                      | Não usado. O objeto [**SWbemObject**](swbemobject.md) fornece o mesmo método.<br/> |
-| **Subclasses\_**                                         | Não usado. O objeto [**SWbemObject**](swbemobject.md) fornece o mesmo método.<br/> |
-| **SubclassesAsync\_**                                    | Não usado. O objeto [**SWbemObject**](swbemobject.md) fornece o mesmo método.<br/> |
+| [**Compareto\_**](swbemlasterror-compareto-.md)         | Testa a igualdade de dois objetos.<br/>                                                   |
+| **Excluir\_**                                             | Não usado. O [**objeto SWbemObject**](swbemobject.md) fornece o mesmo método.<br/> |
+| **DeleteAsync\_**                                        | Não usado. O [**objeto SWbemObject**](swbemobject.md) fornece o mesmo método.<br/> |
+| **ExecMethod\_**                                         | Não usado. O [**objeto SWbemObject**](swbemobject.md) fornece o mesmo método.<br/> |
+| **ExecMethodAsync\_**                                    | Não usado. O [**objeto SWbemObject**](swbemobject.md) fornece o mesmo método.<br/> |
+| [**GetObjectText\_**](swbemlasterror-getobjecttext-.md) | Recupera a representação textual do objeto escrito com sintaxe MOF.<br/>       |
+| **Instâncias\_**                                          | Não usado. O [**objeto SWbemObject**](swbemobject.md) fornece o mesmo método.<br/> |
+| **InstancesAsync\_**                                     | Não usado. O [**objeto SWbemObject**](swbemobject.md) fornece o mesmo método.<br/> |
+| **Colocar\_**                                                | Não usado. O [**objeto SWbemObject**](swbemobject.md) fornece o mesmo método.<br/> |
+| **PutAsync\_**                                           | Não usado. O [**objeto SWbemObject**](swbemobject.md) fornece o mesmo método.<br/> |
+| **Referências\_**                                         | Não usado. O [**objeto SWbemObject**](swbemobject.md) fornece o mesmo método.<br/> |
+| **ReferencesAsync\_**                                    | Não usado. O [**objeto SWbemObject**](swbemobject.md) fornece o mesmo método.<br/> |
+| **SpawnDerivedClass\_**                                  | Não usado. O [**objeto SWbemObject**](swbemobject.md) fornece o mesmo método.<br/> |
+| **SpawnInstance\_**                                      | Não usado. O [**objeto SWbemObject**](swbemobject.md) fornece o mesmo método.<br/> |
+| **Subclasses\_**                                         | Não usado. O [**objeto SWbemObject**](swbemobject.md) fornece o mesmo método.<br/> |
+| **SubclassesAsync\_**                                    | Não usado. O [**objeto SWbemObject**](swbemobject.md) fornece o mesmo método.<br/> |
 
 
 
@@ -93,17 +93,17 @@ O objeto **SWbemLastError** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-O objeto **SWbemLastError** tem essas propriedades.
+O **objeto SWbemLastError** tem essas propriedades.
 
 
 
 | Propriedade                                                      | Tipo de acesso          | Descrição                                                                                                                                                   |
 |:--------------------------------------------------------------|:---------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Derivação\_**<br/>                                   | Somente leitura<br/> | Não usado. O objeto [**SWbemObject**](swbemobject.md) fornece o mesmo método.<br/>                                                                  |
-| **Métodos\_** <br/>                                     | Somente leitura<br/> | Não usado. O objeto [**SWbemObject**](swbemobject.md) fornece o mesmo método.<br/>                                                                  |
-| [**Caminho\_**](swbemlasterror-path-.md)<br/>             | Somente leitura<br/> | Contém um objeto [**SWbemObjectPath**](swbemobjectpath.md) que representa o caminho do objeto da classe ou instância atual.<br/>                    |
-| [**Propriedades\_**](swbemlasterror-properties-.md)<br/> | Somente leitura<br/> | Representa a coleção de propriedades do objeto **SWbemLastError** . Essa propriedade é um objeto [**SWbemPropertySet**](swbempropertyset.md) .<br/> |
-| **Qualificadores\_**<br/>                                   | Somente leitura<br/> | Não usado. O objeto [**SWbemObject**](swbemobject.md) fornece o mesmo método.<br/>                                                                  |
+| **Derivação\_**<br/>                                   | Somente leitura<br/> | Não usado. O [**objeto SWbemObject**](swbemobject.md) fornece o mesmo método.<br/>                                                                  |
+| **Métodos\_** <br/>                                     | Somente leitura<br/> | Não usado. O [**objeto SWbemObject**](swbemobject.md) fornece o mesmo método.<br/>                                                                  |
+| [**Caminho\_**](swbemlasterror-path-.md)<br/>             | Somente leitura<br/> | Contém um [**objeto SWbemObjectPath**](swbemobjectpath.md) que representa o caminho do objeto da classe ou instância atual.<br/>                    |
+| [**Propriedades\_**](swbemlasterror-properties-.md)<br/> | Somente leitura<br/> | Representa a coleção de propriedades do **objeto SWbemLastError.** Essa propriedade é um [**objeto SWbemPropertySet.**](swbempropertyset.md)<br/> |
+| **Qualificadores\_**<br/>                                   | Somente leitura<br/> | Não usado. O [**objeto SWbemObject**](swbemobject.md) fornece o mesmo método.<br/>                                                                  |
 | **Segurança\_**<br/>                                     | Somente leitura<br/> | Não usado. O [**objeto SWbemObject**](swbemobject.md) fornece o mesmo método.<br/>                                                                  |
 
 

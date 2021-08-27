@@ -1,11 +1,11 @@
 ---
 title: Propriedade IWMPSettings2 defaultAudioLanguage
-description: A propriedade defaultAudioLanguage obtém o LCID (identificador de localidade) da linguagem de áudio padrão especificada no Windows Media Player.
+description: A propriedade defaultAudioLanguage Obtém o LCID (identificador de localidade) do idioma de áudio padrão especificado em Windows Media Player.
 ms.assetid: 4b7c9639-9d9f-4ed7-bb70-12cc608dd57a
 keywords:
-- propriedade defaultAudioLanguage Windows Media Player
-- propriedade defaultAudioLanguage Windows Media Player interface , IWMPSettings2
-- Interface IWMPSettings2 Windows Media Player , propriedade defaultAudioLanguage
+- Windows Media Player da propriedade defaultAudioLanguage
+- propriedade defaultAudioLanguage Windows Media Player, interface IWMPSettings2
+- Windows Media Player de interface IWMPSettings2, propriedade defaultAudioLanguage
 topic_type:
 - apiref
 api_name:
@@ -24,9 +24,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118331096"
 ---
-# <a name="iwmpsettings2defaultaudiolanguage-property"></a>Propriedade IWMPSettings2::d efaultAudioLanguage
+# <a name="iwmpsettings2defaultaudiolanguage-property"></a>IWMPSettings2: Propriedade efaultAudioLanguage de:d
 
-A **propriedade defaultAudioLanguage** obtém o LCID (identificador de localidade) da linguagem de áudio padrão especificada no Windows Media Player.
+A propriedade **defaultAudioLanguage** Obtém o LCID (identificador de localidade) do idioma de áudio padrão especificado em Windows Media Player.
 
 Esta propriedade é somente para leitura.
 
@@ -49,7 +49,7 @@ Public ReadOnly Property defaultAudioLanguage As System.Int32
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Um **System.Int32** que é o LCID.
+Um **System. Int32** que é o LCID.
 
 ## <a name="remarks"></a>Comentários
 
@@ -61,7 +61,7 @@ Um LCID identifica exclusivamente um dialeto de idioma específico, chamado de l
 
 | Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/>   | Windows Media Player série 9 ou posterior<br/>                                                                      |
+| Versão<br/>   | Windows Media Player 9 Series ou posterior<br/>                                                                      |
 | Namespace<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -71,7 +71,7 @@ Um LCID identifica exclusivamente um dialeto de idioma específico, chamado de l
 
 <dl> <dt>
 
-[**IWMPControls3.currentAudioLanguage (VB e C#)**](wmplibiwmpcontrols3-iwmpcontrols3-currentaudiolanguage--vb-and-c.md)
+[**IWMPControls3. currentAudioLanguage (VB e C#)**](wmplibiwmpcontrols3-iwmpcontrols3-currentaudiolanguage--vb-and-c.md)
 </dt> <dt>
 
 [**Interface IWMPSettings (VB e C#)**](iwmpsettings--vb-and-c.md)

@@ -4,9 +4,9 @@ description: Cria uma nova instância de um recurso e retorna a referência do p
 ms.assetid: 7629dfff-6c66-4b09-81a4-b1458ff977fa
 ms.tgt_platform: multiple
 keywords:
-- Criar Gerenciamento Remoto do Windows do método
-- Criar Gerenciamento Remoto do Windows do método, objeto Session
-- Objeto de sessão Gerenciamento Remoto do Windows, criar método
+- criar Gerenciamento Remoto do Windows do método
+- criar Gerenciamento Remoto do Windows do método, objeto Session
+- objeto de sessão Gerenciamento Remoto do Windows, criar método
 topic_type:
 - apiref
 api_name:
@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3eacdbdffb9e2dac219e3922cabfc5615de34e69
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 97adac133adc4c636de395f564927a5f0194b3c52d50685ac034142e6c15aadf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455469"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118823258"
 ---
 # <a name="sessioncreate-method"></a>Método Session. Create
 
@@ -58,7 +58,7 @@ Esse parâmetro pode conter um dos seguintes:
 
 </dd> <dt>
 
-*Kit* 
+*recurso* 
 </dt> <dd>
 
 O XML que contém o conteúdo do recurso.
@@ -72,7 +72,7 @@ Reservado. Deve ser definido como 0.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O EPR do novo recurso.
 
@@ -142,7 +142,7 @@ End Function
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                 |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                           |
-| parâmetro<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>WSManDisp. idl</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>WSManDisp. tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>WSMAuto.dll</dt> </dl>   |
@@ -153,7 +153,7 @@ End Function
 
 <dl> <dt>
 
-[**Session**](session.md)
+[**Sessão**](session.md)
 </dt> <dt>
 
 [Protocolo WS-Management](ws-management-protocol.md)

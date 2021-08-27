@@ -21,7 +21,7 @@ A tabela binária tem as colunas a seguir.
 
 | Coluna | Tipo                         | Chave | Nullable |
 |--------|------------------------------|-----|----------|
-| Name   | [Identificador](identifier.md) | Y   | N        |
+| Nome   | [Identificador](identifier.md) | Y   | N        |
 | Dados   | [Binary](binary.md)         | N   | N        |
 
 

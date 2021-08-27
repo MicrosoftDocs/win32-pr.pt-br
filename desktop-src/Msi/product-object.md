@@ -67,7 +67,7 @@ O **objeto Product** tem essas propriedades.
 | [**MediaDisks**](product-mediadisks.md)<br/>           | Enumera todos os discos de mídia para esta instância do produto.<br/>                        |
 | [**ProductCode**](product-productcode.md)<br/>         | Retorna o código do produto. <br/>                                                       |
 | [**SourceListInfo**](product-sourcelistinfo.md)<br/>   | Obter e definir as propriedades de informações de origem. Essa é uma propriedade de leitura ou gravação.<br/> |
-| [**Fontes**](product-sources.md)<br/>                 | Enumera todas as fontes para esta instância do produto.<br/>                            |
+| [**Origens**](product-sources.md)<br/>                 | Enumera todas as fontes para esta instância do produto.<br/>                            |
 | [**Estado**](product-state.md)<br/>                     | Estado de instalação do produto.<br/>                                               |
 | [**UserSid**](product-usersid.md)<br/>                 | Retorna o SID do usuário, sob qual conta esta instância do produto está disponível.<br/>    |
 

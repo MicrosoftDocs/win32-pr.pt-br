@@ -4,7 +4,7 @@ description: Descreve os recursos de um adaptador de armazenamento biométrico.
 ms.assetid: e4924803-5a1b-4e0a-b2cb-01d018d27ba1
 keywords:
 - API de Windows Biometric Framework de estrutura de WINBIO_STORAGE_SCHEMA
-- Ponteiro de estrutura de PWINBIO_STORAGE_SCHEMA Windows Biometric Framework API
+- ponteiro de estrutura de PWINBIO_STORAGE_SCHEMA Windows Biometric Framework API
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 28db23d55a7b3e43caaae5a88ca4bbf32fdf1178
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2bc0bd0d61814b4133c3789b0c8119edcaf79945452cc26aa313504c055ac2f5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105778697"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118909253"
 ---
 # <a name="winbio_storage_schema-structure"></a>Estrutura de esquema de \_ armazenamento WINBIO \_
 
@@ -111,8 +111,8 @@ Um valor de cadeia de caracteres que pode ser enviado a um servidor de banco de 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                                    |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                                                       |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                                                    |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/>                                                       |
 | parâmetro<br/>                   | <dl> <dt>WinBio \_ Types. h (inclui WinBio. h)</dt> </dl> |
 
 

@@ -4,12 +4,12 @@ ms.assetid: 79203485-68a4-4e8c-90f8-43ba08264cff
 title: System. Contact. AssistantName
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a7ddd2ea4b2e577e202819668debf3c1074a7a6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b5dafd8ea076bbb4b3876daa8a685ad2c105782661c36425788e7d48295d0f7d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105813599"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118730318"
 ---
 # <a name="systemcontactassistantname"></a>System. Contact. AssistantName
 

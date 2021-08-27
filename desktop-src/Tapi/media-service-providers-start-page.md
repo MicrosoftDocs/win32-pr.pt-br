@@ -4,12 +4,12 @@ ms.assetid: f886380f-d970-4511-bf71-fb1eb767e4f4
 title: Provedores de serviços de mídia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3dd78f5ff4a13da4365f99bd2cb539738b6f3fd6
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 54d166ac78eebfaac5360bc53b8579c32e1de3421dde87a4f0889e2b38e6eb0e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105810458"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118863064"
 ---
 # <a name="media-service-providers"></a>Provedores de serviços de mídia
 
@@ -25,7 +25,7 @@ A MSPI (interface do provedor de serviços de mídia) é um conjunto de interfac
 
 ## <a name="run-time-requirements"></a>Requisitos de tempo de execução
 
-O MSPI permite o desenvolvimento de provedores de serviço de mídia para determinados protocolos ou dispositivos em execução em sistemas operacionais Windows Server 2003, Windows XP e Windows 2000.
+o MSPI permite o desenvolvimento de provedores de serviço de mídia para determinados protocolos ou dispositivos em execução nos sistemas operacionais Windows Server 2003, Windows XP e Windows 2000.
 
 ## <a name="in-this-section"></a>Nesta seção
 

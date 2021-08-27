@@ -11,12 +11,12 @@ keywords:
 - WM_SYS mensagem de comando
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1cd8cecd2fc1273750c75b8e5f33106d22343a14
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: df67f4879edc2e0e81a8715155bf2edfac05f1e5ce9d3557f9b051ae682a6afa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104365980"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118734464"
 ---
 # <a name="keyboard-accelerators"></a>Aceleradores de teclado
 
@@ -26,7 +26,7 @@ Um *acelerador de teclado* (ou, simplesmente, acelerador) é um pressionamento d
 
 
 
-| Nome                                                                 | Descrição                                                                |
+| Name                                                                 | Descrição                                                                |
 |----------------------------------------------------------------------|----------------------------------------------------------------------------|
 | [Sobre aceleradores de teclado](about-keyboard-accelerators.md)       | Discute aceleradores de teclado.<br/>                                |
 | [Usando aceleradores de teclado](using-keyboard-accelerators.md)       | Discute as tarefas associadas a aceleradores de teclado.<br/> |
@@ -40,7 +40,7 @@ Um *acelerador de teclado* (ou, simplesmente, acelerador) é um pressionamento d
 
 
 
-| Nome                                                       | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Name                                                       | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 |------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**CopyAcceleratorTable**](/windows/desktop/api/Winuser/nf-winuser-copyacceleratortablea)       | Copia a tabela de acelerador especificada. Essa função é usada para obter os dados da tabela de aceleração que correspondem a um identificador de tabela de aceleração ou para determinar o tamanho dos dados da tabela de aceleração. <br/>                                                                                                                                                                                                                                                                                                                                                                    |
 | [**CreateAcceleratorTable**](/windows/desktop/api/Winuser/nf-winuser-createacceleratortablea)   | Cria uma tabela de acelerador. <br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
@@ -56,7 +56,7 @@ Um *acelerador de teclado* (ou, simplesmente, acelerador) é um pressionamento d
 
 
 
-| Nome                                          | Descrição                                                                                                                                                                                                                                                                                                       |
+| Name                                          | Descrição                                                                                                                                                                                                                                                                                                       |
 |-----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**CHANGEUISTATE do WM \_**](wm-changeuistate.md) | Enviado para indicar que o estado da interface do usuário deve ser alterado.<br/>                                                                                                                                                                                                                                                  |
 | [**INITMENU do WM \_**](wm-initmenu.md)           | Enviado quando um menu está prestes a ficar ativo. Ele ocorre quando o usuário clica em um item na barra de menus ou pressiona uma tecla de menu. Isso permite que o aplicativo modifique o menu antes que ele seja exibido. <br/> Uma janela recebe essa mensagem por meio de sua função [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) . <br/> |
@@ -71,7 +71,7 @@ Um *acelerador de teclado* (ou, simplesmente, acelerador) é um pressionamento d
 
 
 
-| Nome                                          | Descrição                                                                                                                                                                                                                                                                                                                       |
+| Name                                          | Descrição                                                                                                                                                                                                                                                                                                                       |
 |-----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**INITMENUPOPUP do WM \_**](wm-initmenupopup.md) | Enviado quando um menu suspenso ou submenu está prestes a ficar ativo. Isso permite que um aplicativo modifique o menu antes que ele seja exibido, sem alterar o menu inteiro. <br/>                                                                                                                                              |
 | [**MENUCHAR do WM \_**](wm-menuchar.md)           | Enviado quando um menu está ativo e o usuário pressiona uma tecla que não corresponde a nenhum mnemônico ou tecla de aceleração. Essa mensagem é enviada para a janela que possui o menu. <br/>                                                                                                                                             |
@@ -87,7 +87,7 @@ Um *acelerador de teclado* (ou, simplesmente, acelerador) é um pressionamento d
 
 
 
-| Nome                   | Descrição                                                          |
+| Name                   | Descrição                                                          |
 |------------------------|----------------------------------------------------------------------|
 | [**DA aceleração extra**](/windows/win32/api/winuser/ns-winuser-accel) | Define uma chave de acelerador usada em uma tabela de acelerador. <br/> |
 

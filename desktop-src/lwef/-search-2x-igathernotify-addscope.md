@@ -1,11 +1,11 @@
 ---
 title: Método IGatherNotify addscope (preterido)
-description: Este tópico da interface do Windows Desktop Search foi preterido e é substituído pela API ISearchPersistentItemsChangedSink do Windows Search no SDK do Windows. | Método IGatherNotify addscope (preterido)
+description: este tópico Windows interface de pesquisa da área de trabalho foi preterido e é substituído pela API do ISearchPersistentItemsChangedSink search Windows no SDK do Windows. | Método IGatherNotify addscope (preterido)
 ms.assetid: 3b250818-1876-40b2-9a85-91f2bf6f52ec
 keywords:
-- Método addscope (preterido) recursos de ambiente herdado do Windows
-- Método addscope (preterido) recursos de ambiente herdados do Windows, interface IGatherNotify
-- Recursos do ambiente Windows herdado da interface IGatherNotify, método addscope (preterido)
+- método addscope (preterido) herdado Windows recursos de ambiente
+- método addscope (preterido) herdado Windows recursos de ambiente, interface IGatherNotify
+- IGatherNotify interface herdada Windows recursos de ambiente, método addscope (preterido)
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 967dc4f30acee2f8d8adbcfec04f0508e53bba15
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: a49c0cf652b0cfde59167fa98498a978d3c2c41d3a886ee092b8f4a28d35f61b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104298251"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118755587"
 ---
 # <a name="igathernotifyaddscope-deprecated-method"></a>Método IGatherNotify:: addscope (preterido)
 
 \[**Addscope** pode ser alterado ou indisponível nas versões subsequentes do sistema operacional ou produto.\]
 
-Este tópico da interface do Windows Desktop Search foi preterido e é substituído pela API [**ISearchPersistentItemsChangedSink**](/windows/desktop/api/searchapi/nn-searchapi-isearchpersistentitemschangedsink) do Windows Search no SDK do Windows.
+este tópico Windows interface de pesquisa da área de trabalho foi preterido e é substituído pela API do [**ISearchPersistentItemsChangedSink**](/windows/desktop/api/searchapi/nn-searchapi-isearchpersistentitemschangedsink) search Windows no SDK do Windows.
 
 Adiciona a página inicial ou a URL que você está monitorando. Isso inicia um rastreamento incremental quando você se conecta e, em seguida, pressupõe que todas as alterações de URL adicionais sejam feitas por notificação.
 
@@ -54,7 +54,7 @@ Uma cadeia de caracteres que especifica a página inicial ou URL que você está
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 

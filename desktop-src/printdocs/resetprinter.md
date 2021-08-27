@@ -1,7 +1,7 @@
 ---
-description: A função ResetPrinter especifica o tipo de dados e os valores do modo de dispositivo a serem usados para imprimir documentos enviados pela função StartDocPrinter. Esses valores podem ser substituídos usando a função SetJob após o início da impressão do documento.
+description: A função ResetPrinter especifica o tipo de dados e os valores de modo de dispositivo a serem usados para imprimir documentos enviados pela função StartDocPrinter. Esses valores podem ser substituídos usando a função SetJob após o início da impressão do documento.
 ms.assetid: 9efc6629-dbb7-4320-90b9-07c66f0add47
-title: Função ResetPrinter (winspool. h)
+title: Função ResetPrinter (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -24,7 +24,7 @@ ms.locfileid: "118470275"
 ---
 # <a name="resetprinter-function"></a>Função ResetPrinter
 
-A função **ResetPrinter** especifica o tipo de dados e os valores do modo de dispositivo a serem usados para imprimir documentos enviados pela função [**StartDocPrinter**](startdocprinter.md) . Esses valores podem ser substituídos usando a função [**SetJob**](setjob.md) após o início da impressão do documento.
+A **função ResetPrinter** especifica o tipo de dados e os valores de modo de dispositivo a serem usados para imprimir documentos enviados pela [**função StartDocPrinter.**](startdocprinter.md) Esses valores podem ser substituídos usando a [**função SetJob**](setjob.md) após o início da impressão do documento.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,32 +42,32 @@ BOOL ResetPrinter(
 
 <dl> <dt>
 
-*hPrinter* \[ no\]
+*hPrinter* \[ Em\]
 </dt> <dd>
 
-Identificador para a impressora. Use a função [**OpenPrinter**](openprinter.md) ou [**addprintr**](addprinter.md) para recuperar um identificador de impressora.
+Lidar com a impressora. Use a [**função OpenPrinter**](openprinter.md) [**ou AddPrinter**](addprinter.md) para recuperar um alça de impressora.
 
 </dd> <dt>
 
-*pDefault* \[ no\]
+*pDefault* \[ Em\]
 </dt> <dd>
 
-Ponteiro para uma estrutura de [**\_ padrões de impressora**](printer-defaults.md) .
+Ponteiro para uma [**estrutura PRINTER \_ DEFAULTS.**](printer-defaults.md)
 
-A função **ResetPrinter** ignora o membro **desiredAccess** da estrutura de [**\_ padrões da impressora**](printer-defaults.md) . Defina esse membro como zero.
+A **função ResetPrinter** ignora o **membro DesiredAccess** da estrutura [**PRINTER \_ DEFAULTS.**](printer-defaults.md) De definir esse membro como zero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Se a função for realizada com sucesso, o valor de retorno será um valor diferente de zero.
+Se a função for bem-sucedida, o valor de retorno será um valor não zero.
 
 Se a função falhar, o valor retornado será zero.
 
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> Essa é uma função de bloqueio ou síncrona e pode não retornar imediatamente. A rapidez com que essa função retorna depende de fatores de tempo de execução, como status de rede, configuração de servidor de impressão e fatores de implementação de driver de impressora que são difíceis de prever ao escrever um aplicativo. Chamar essa função de um thread que gerencia a interação com a interface do usuário pode fazer com que o aplicativo pareça não responder.
+> Essa é uma função de bloqueio ou síncrona e pode não retornar imediatamente. A rapidez com que essa função retorna depende de fatores de tempo de execução, como status de rede, configuração do servidor de impressão e fatores de implementação de driver de impressora que são difíceis de prever ao escrever um aplicativo. Chamar essa função de um thread que gerencia a interação com a interface do usuário pode fazer com que o aplicativo pareça não responder.
 
  
 
@@ -79,9 +79,9 @@ Se a função falhar, o valor retornado será zero.
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                                |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                      |
-| Cabeçalho<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Winspool. lib</dt> </dl>                   |
-| DLL<br/>                      | <dl> <dt>Winspool. drv</dt> </dl>                   |
+| Cabeçalho<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Winspool.lib</dt> </dl>                   |
+| DLL<br/>                      | <dl> <dt>Winspool.drv</dt> </dl>                   |
 | Nomes Unicode e ANSI<br/>   | **ResetPrinterW** (Unicode) e **ResetPrinterA** (ANSI)<br/>                                       |
 
 
@@ -99,7 +99,7 @@ Se a função falhar, o valor retornado será zero.
 [**OpenPrinter**](openprinter.md)
 </dt> <dt>
 
-[**padrões de impressora \_**](printer-defaults.md)
+[**PADRÕES \_ DE IMPRESSORA**](printer-defaults.md)
 </dt> <dt>
 
 [**StartDocPrinter**](startdocprinter.md)

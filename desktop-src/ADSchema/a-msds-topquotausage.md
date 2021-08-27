@@ -36,7 +36,7 @@ A lista dos principais usuários de cota atualmente no banco de dados de diretó
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1850                     |
 | System-Id-Guid    | 7b7cce4f-f1f5-4bb6-b7eb-23504af19e75        |
-| Sintaxe            | [**String(Unicode)**](s-string-unicode.md) |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -121,15 +121,15 @@ A lista dos principais usuários de cota atualmente no banco de dados de diretó
 | ID do link                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| Tem valor único       | Falso                                                             |
+| É de valor único       | Falso                                                             |
 | É indexado             | Falso                                                             |
-| No Catálogo Global      | Falso                                                             |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                      |
+| No catálogo global      | Falso                                                             |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000014                                                        |
-| Classes usadas em        | [**ms-DS-Quota-Container**](c-msds-quotacontainer.md)<br/> |
+| Classes usadas em        | [**ms-DS-quota-container**](c-msds-quotacontainer.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ A lista dos principais usuários de cota atualmente no banco de dados de diretó
 | ID do link                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| Tem valor único       | Falso                                                             |
+| É de valor único       | Falso                                                             |
 | É indexado             | Falso                                                             |
-| No Catálogo Global      | Falso                                                             |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                      |
+| No catálogo global      | Falso                                                             |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000014                                                        |
-| Classes usadas em        | [**ms-DS-Quota-Container**](c-msds-quotacontainer.md)<br/> |
+| Classes usadas em        | [**ms-DS-quota-container**](c-msds-quotacontainer.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ A lista dos principais usuários de cota atualmente no banco de dados de diretó
 | ID do link                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| Tem valor único       | Falso                                                             |
+| É de valor único       | Falso                                                             |
 | É indexado             | Falso                                                             |
-| No Catálogo Global      | Falso                                                             |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                      |
+| No catálogo global      | Falso                                                             |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000014                                                        |
-| Classes usadas em        | [**ms-DS-Quota-Container**](c-msds-quotacontainer.md)<br/> |
+| Classes usadas em        | [**ms-DS-quota-container**](c-msds-quotacontainer.md)<br/> |
 
 
 

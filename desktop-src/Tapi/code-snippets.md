@@ -4,12 +4,12 @@ ms.assetid: 78a690d2-ccb9-48e0-b137-fb102017fa6a
 title: Exemplos de código
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0882a5b2ba7e5897d120fe7c9e3a24571f0bca77
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7ebab66837ab37dee16329fbadf817c965cc285ca62f9933a488a7915f149b70
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104169667"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118868114"
 ---
 # <a name="code-examples"></a>Exemplos de código
 

@@ -3,9 +3,9 @@ title: Propriedade DisplayName IResultsViewer (WdsView. h)
 description: Nome de exibição localizado do tipo.
 ms.assetid: 22503996-e693-47bc-b84f-cc4d3af2cb78
 keywords:
-- Propriedade DisplayName recursos de ambiente do Windows herdados
-- Propriedade DisplayName recursos de ambiente do Windows herdados, interface IResultsViewer
-- Recursos do ambiente Windows herdado da interface IResultsViewer, Propriedade DisplayName
+- recursos de ambiente herdado de Windows da propriedade DisplayName
+- propriedade DisplayName herdada Windows recursos de ambiente, interface IResultsViewer
+- IResultsViewer interface herdada Windows recursos de ambiente, propriedade DisplayName
 topic_type:
 - apiref
 api_name:
@@ -17,17 +17,17 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fe5ba65729fb238dbed57b71d893a9814c8ac8f5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 98d3f0c5f7887861d2d757c71a4327ce57af7f39ae3f4811167789c6b4e662ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105761061"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118754391"
 ---
 # <a name="iresultsviewerdisplayname-property"></a>IResultsViewer::D Propriedade isplayname
 
 > [!NOTE]
-> O Windows Desktop Search 2. x é uma tecnologia obsoleta que originalmente estava disponível como um suplemento para o Windows XP e o Windows Server 2003. Em versões posteriores, use a [API de pesquisa do Windows](../search/-search-reference-entry-page.md) em vez disso. 
+> Windows o Desktop Search 2. x é uma tecnologia obsoleta que estava originalmente disponível como um suplemento para o Windows XP e o Windows Server 2003. em versões posteriores, use a [API de pesquisa Windows](../search/-search-reference-entry-page.md) em vez disso. 
 
 Nome de exibição localizado do tipo.
 
@@ -54,10 +54,10 @@ Ponteiro para um valor que recebe o nome de exibição localizado para o tipo.
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows XP com SP2\]<br/>                                 |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003 com SP1\]<br/>                        |
-| Redistribuível<br/>          | Windows Desktop Search (WDS) 2.6.5<br/>                                        |
-| parâmetro<br/>                   | <dl> <dt>WdsView. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows XP somente com \[ aplicativos de área de trabalho do SP2\]<br/>                                 |
+| Servidor mínimo com suporte<br/> | Windows Servidor 2003 somente com \[ aplicativos de área de trabalho do SP1\]<br/>                        |
+| Redistribuível<br/>          | Windows Pesquisador de desktops (WDS) 2.6.5<br/>                                        |
+| Cabeçalho<br/>                   | <dl> <dt>WdsView. h</dt> </dl> |
 
 
 

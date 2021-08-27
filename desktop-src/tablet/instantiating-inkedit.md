@@ -4,20 +4,20 @@ ms.assetid: 3ab0f10e-1a0d-4d0b-b5b2-69dc96570b33
 title: Instanciando InkEdit
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bde7e94566b076a4d9d6f6928fc08199ee71fa19
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 53df76fea92077e2d1dbfaea57213ad95cdccf91a4b40267cec02e28b887b984
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104461178"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119032014"
 ---
 # <a name="instantiating-inkedit"></a>Instanciando InkEdit
 
 Este tópico descreve as várias maneiras pelas quais você pode criar uma instância de um controle [InkEdit](inkedit-control.md) .
 
-## <a name="visual-basic-net-and-c"></a>Visual Basic .NET e C\#
+## <a name="visual-basic-net-and-c"></a>Visual Basic .net e C\#
 
-Se você estiver trabalhando com o Microsoft Visual Basic .NET ou C \# , arraste o controle [InkEdit](./inkedit-control.md) da caixa de ferramentas no Visual Studio para o formulário ou página onde você deseja que o controle apareça.
+se você estiver trabalhando com o Microsoft Visual Basic .net ou C \# , arraste o controle [InkEdit](./inkedit-control.md) da caixa de ferramentas em Visual Studio para o formulário ou página onde você deseja que o controle apareça.
 
 ## <a name="win32c"></a>Win32/C++
 
@@ -70,7 +70,7 @@ Se você usar o estilo de janela [es \_ NOIME](../controls/rich-edit-control-sty
 
 <dl> <dt>
 
-[Adicionando controles de tinta a um projeto](adding-ink-controls-to-a-project.md)
+[Adicionando controles de tinta a um Project](adding-ink-controls-to-a-project.md)
 </dt> </dl>
 
  

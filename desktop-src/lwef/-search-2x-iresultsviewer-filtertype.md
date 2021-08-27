@@ -3,9 +3,9 @@ title: Propriedade FilterType IResultsViewer (WdsView. h)
 description: Essa propriedade definirá ou retornará o nome do tipo preceived para filtrar os resultados por.
 ms.assetid: 025955eb-3e44-4e26-8b5f-ae92eb4c8300
 keywords:
-- Propriedade FilterType recursos de ambiente herdados do Windows
-- Propriedade FilterType recursos de ambiente herdados do Windows, interface IResultsViewer
-- Recursos do ambiente Windows herdado da interface IResultsViewer, Propriedade FilterType
+- propriedades herdadas Windows ambiente da propriedade filtertype
+- propriedade filtertype herdada Windows recursos de ambiente, interface IResultsViewer
+- IResultsViewer interface herdada Windows recursos de ambiente, propriedade filtertype
 topic_type:
 - apiref
 api_name:
@@ -18,23 +18,23 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 890d0ceadddb9f3b46ee8b45f109a389472be218
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b8f4e71a469ad68431721d99343b43b28ea0f0a82b7e393f5c402b0d88735db4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105761253"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118754302"
 ---
 # <a name="iresultsviewerfiltertype-property"></a>Propriedade IResultsViewer:: FilterType
 
 > [!NOTE]
-> O Windows Desktop Search 2. x é uma tecnologia obsoleta que originalmente estava disponível como um suplemento para o Windows XP e o Windows Server 2003. Em versões posteriores, use a [API de pesquisa do Windows](../search/-search-reference-entry-page.md) em vez disso. 
+> Windows o Desktop Search 2. x é uma tecnologia obsoleta que estava originalmente disponível como um suplemento para o Windows XP e o Windows Server 2003. em versões posteriores, use a [API de pesquisa Windows](../search/-search-reference-entry-page.md) em vez disso. 
 
 Essa propriedade definirá ou retornará o nome do tipo preceived para filtrar os resultados por.
 
 Esta propriedade é de leitura/gravação.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -59,10 +59,10 @@ Define o tipo percebido usado para filtrar os resultados.
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows XP com SP2\]<br/>                                 |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003 com SP1\]<br/>                        |
-| Redistribuível<br/>          | Windows Desktop Search (WDS) 2.6.5<br/>                                        |
-| parâmetro<br/>                   | <dl> <dt>WdsView. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows XP somente com \[ aplicativos de área de trabalho do SP2\]<br/>                                 |
+| Servidor mínimo com suporte<br/> | Windows Servidor 2003 somente com \[ aplicativos de área de trabalho do SP1\]<br/>                        |
+| Redistribuível<br/>          | Windows Pesquisador de desktops (WDS) 2.6.5<br/>                                        |
+| Cabeçalho<br/>                   | <dl> <dt>WdsView. h</dt> </dl> |
 
 
 

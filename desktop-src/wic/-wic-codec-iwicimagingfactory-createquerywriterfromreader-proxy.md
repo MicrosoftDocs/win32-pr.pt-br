@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 4fb0d9c2346fe854cf23acee288ee1086828a76e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ee6e03da055b5e48e21c044ce1708a8a8871c30fabeb860e486cde398650c23f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922563"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118711441"
 ---
 # <a name="iwicimagingfactory_createquerywriterfromreader_proxy-function"></a>\_Função de \_ proxy IWICImagingFactory CreateQueryWriterFromReader
 
@@ -46,29 +46,29 @@ HRESULT IWICImagingFactory_CreateQueryWriterFromReader_Proxy(
 *pFactory* \[ no\]
 </dt> <dd>
 
-Tipo: **[**IWICImagingFactory**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory) \** _
+Tipo: **[ **IWICImagingFactory**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory)\***
 
 </dd> <dt>
 
-_pIQueryReader * \[ in\]
+*pIQueryReader* \[ no\]
 </dt> <dd>
 
-Tipo: **[**IWICMetadataQueryReader**](/windows/desktop/api/Wincodec/nn-wincodec-iwicmetadataqueryreader) \** _
+Tipo: **[ **IWICMetadataQueryReader**](/windows/desktop/api/Wincodec/nn-wincodec-iwicmetadataqueryreader)\***
 
 O leitor de consulta de metadados do qual criar o gravador de metadados.
 
 </dd> <dt>
 
-_pguidVendor * \[ in\]
+*pguidVendor* \[ no\]
 </dt> <dd>
 
-Tipo: **const GUID \** _
+Tipo: **GUID \* const**
 
 O GUID do fornecedor para o gravador de consulta de metadados.
 
 </dd> <dt>
 
-_ppIQueryWriter * \[ out\]
+*ppIQueryWriter* \[ fora\]
 </dt> <dd>
 
 Tipo: **[ **IWICMetadataQueryWriter**](/windows/desktop/api/Wincodec/nn-wincodec-iwicmetadataquerywriter)\*\***
@@ -77,7 +77,7 @@ Um ponteiro que recebe um ponteiro para um novo [**IWICMetadataQueryWriter**](/w
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
@@ -91,8 +91,8 @@ Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows XP com SP2, \[ somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                                                                             |
+| Cliente mínimo com suporte<br/> | Windows XP com SP2, somente aplicativos do Windows Vista \[ desktop\]<br/>                                                                                              |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                                                                                             |
 | DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
 
 

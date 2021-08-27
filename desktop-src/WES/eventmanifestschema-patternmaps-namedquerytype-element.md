@@ -1,9 +1,9 @@
 ---
 title: Elemento patternMaps (NamedQueryType)
-description: Define uma lista de pares de expressões regulares que são usados para alterar a cadeia de caracteres da mensagem.
+description: Define uma lista de pares de expressões regulares que são usados para alterar a cadeia de caracteres de mensagem.
 ms.assetid: d471d61f-3f01-44eb-a61e-e1f5de67a31d
 keywords:
-- EventLog do elemento patternMaps
+- Elemento patternMaps EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 3cf7832cf0869c6df4779eac463e2e124257db25
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 539c174cb25a83a72de7011c46d527591ec25447410155639deabf17c308aaa8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824136"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118841675"
 ---
 # <a name="patternmaps-namedquerytype-element"></a>Elemento patternMaps (NamedQueryType)
 
-Define uma lista de pares de expressões regulares que são usados para alterar a cadeia de caracteres da mensagem.
+Define uma lista de pares de expressões regulares que são usados para alterar a cadeia de caracteres de mensagem.
 
 ``` syntax
 <xs:element name="patternMaps"
@@ -30,7 +30,7 @@ Define uma lista de pares de expressões regulares que são usados para alterar 
  />
 ```
 
-O elemento **patternMaps** é definido pelo tipo complexo [**NamedQueryType**](eventmanifestschema-namedquerytype-complextype.md) .
+O **elemento patternMaps** é definido pelo tipo complexo [**NamedQueryType.**](eventmanifestschema-namedquerytype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ O elemento **patternMaps** é definido pelo tipo complexo [**NamedQueryType**](e
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

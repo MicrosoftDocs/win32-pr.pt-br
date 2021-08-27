@@ -1,22 +1,22 @@
 ---
 title: Enumerando controladores de domínio
-description: Em versões anteriores do Windows, um aplicativo podia obter apenas um único controlador de domínio em um domínio chamando DsGetDcName.
+description: em versões anteriores do Windows, um aplicativo podia obter apenas um único controlador de domínio em um domínio chamando DsGetDcName.
 ms.assetid: bfc92777-6944-406a-8b93-949a1cf3e2c3
 ms.tgt_platform: multiple
 keywords:
 - Active Directory exemplos Active Directory, enumerando os controladores de domínio Active Directory
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 94384bb8c62edb7b0d45328dabe7765a43e4e610
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 54234301ad843708fd4e9b20e38f2b4fd8391e1134a78cea8b0d45a001d701d4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103634967"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118695144"
 ---
 # <a name="enumerating-domain-controllers"></a>Enumerando controladores de domínio
 
-Em versões anteriores do Windows, um aplicativo podia obter apenas um único controlador de domínio em um domínio chamando [**DsGetDcName**](/windows/desktop/api/DsGetDC/nf-dsgetdc-dsgetdcnamea). Não havia como prever qual controlador de domínio seria recuperado ou para obter uma lista dos controladores de domínio. O Windows permite que um aplicativo enumere os controladores de domínio em um domínio usando as funções [**DsGetDcOpen**](/windows/desktop/api/Dsgetdc/nf-dsgetdc-dsgetdcopena), [**DsGetDcNext**](/windows/desktop/api/Dsgetdc/nf-dsgetdc-dsgetdcnexta)e [**DsGetDcClose**](/windows/desktop/api/Dsgetdc/nf-dsgetdc-dsgetdcclosew) .
+em versões anteriores do Windows, um aplicativo podia obter apenas um único controlador de domínio em um domínio chamando [**DsGetDcName**](/windows/desktop/api/DsGetDC/nf-dsgetdc-dsgetdcnamea). Não havia como prever qual controlador de domínio seria recuperado ou para obter uma lista dos controladores de domínio. Windows permite que um aplicativo enumere os controladores de domínio em um domínio usando as funções [**DsGetDcOpen**](/windows/desktop/api/Dsgetdc/nf-dsgetdc-dsgetdcopena), [**DsGetDcNext**](/windows/desktop/api/Dsgetdc/nf-dsgetdc-dsgetdcnexta)e [**DsGetDcClose**](/windows/desktop/api/Dsgetdc/nf-dsgetdc-dsgetdcclosew) .
 
 Para enumerar um controlador de domínio, chame [**DsGetDcOpen**](/windows/desktop/api/Dsgetdc/nf-dsgetdc-dsgetdcopena). Essa função usa parâmetros que definem o domínio para enumerar e outras opções de enumeração. **DsGetDcOpen** fornece um identificador de contexto de enumeração de domínio que é usado para identificar a operação de enumeração quando [**DsGetDcNext**](/windows/desktop/api/Dsgetdc/nf-dsgetdc-dsgetdcnexta) e [**DsGetDcClose**](/windows/desktop/api/Dsgetdc/nf-dsgetdc-dsgetdcclosew) são chamados.
 
@@ -117,9 +117,9 @@ if(ERROR_SUCCESS == dwRet)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,19 +1,19 @@
 ---
-description: Esta seção contém informações sobre os codecs de imagens nativas disponíveis no Windows Imaging Component (WIC).
+description: esta seção contém informações sobre os codecs de imagens nativas disponíveis no Windows o componente de geração de imagens (WIC).
 ms.assetid: 8D3E4B3A-FA39-475C-B177-61FC81E5FFCC
 title: Codecs nativos do WIC
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cdac03bf1171659c7cad255c64dcdf77890289a9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3d33f82b2f044249431805c35ea569b58439e13e61a06403b1ea922eb6ee0c76
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105807883"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118709348"
 ---
 # <a name="native-wic-codecs"></a>Codecs nativos do WIC
 
-Esta seção contém informações sobre os codecs de imagens nativas disponíveis no Windows Imaging Component (WIC).
+esta seção contém informações sobre os codecs de imagens nativas disponíveis no Windows o componente de geração de imagens (WIC).
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -22,7 +22,7 @@ Esta seção contém informações sobre os codecs de imagens nativas disponíve
 | Tópico                                                              | Descrição                                                                                                                                                                    |
 |--------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Visão geral do formato BMP](bmp-format-overview.md)<br/>          | Este tópico fornece informações sobre o codec BMP nativo disponível por meio do WIC. <br/>                                                                              |
-| [Visão geral do formato DDS](dds-format-overview.md)<br/>          | Fornece informações sobre o codec do DDS nativo disponível por meio do Windows Imaging Component (WIC). <br/>                                                             |
+| [Visão geral do formato DDS](dds-format-overview.md)<br/>          | fornece informações sobre o codec do DDS nativo disponível por meio do Windows o componente de geração de imagens (WIC). <br/>                                                             |
 | [Visão geral do formato DNG](dng-format-overview.md)<br/>          | Este tópico fornece informações sobre o codec DNG nativo disponível por meio do WIC. <br/>                                                                                  |
 | [Visão geral do formato GIF](gif-format-overview.md)<br/>          | Este tópico fornece informações sobre o codec de GIF nativo disponível por meio do WIC. <br/>                                                                              |
 | [Visão geral do formato de foto HD](hdphoto-format-overview.md)<br/> | Este tópico fornece informações sobre o codec de foto HD nativo disponível por meio do WIC. <br/>                                                                         |

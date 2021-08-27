@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 83f5d194338debff3af9ff3097b52f3aef273dbd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 060cbf39d53365baf9b6c01f2ba71364006df180c6ff12b845bf157a8bb076c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105783729"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118770791"
 ---
 # <a name="esentspacehintsinvalidexception-constructor"></a>Construtor EsentSpaceHintsInvalidException
 
 Inicializa uma nova instância da classe EsentSpaceHintsInvalidException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentSpaceHintsInvalidException()
 
 [Classe EsentSpaceHintsInvalidException](./esentspacehintsinvalidexception-class.md)
 
-[Membros do EsentSpaceHintsInvalidException](./esentspacehintsinvalidexception-members.md)
+[Membros EsentSpaceHintsInvalidException](./esentspacehintsinvalidexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

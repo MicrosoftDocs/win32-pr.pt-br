@@ -15,13 +15,13 @@ ms.locfileid: "118472613"
 ---
 # <a name="user-defined-resource"></a>User-Defined recurso
 
-Uma instrução de definição de recurso definida pelo usuário define um recurso que contém dados específicos do aplicativo. Os dados podem ter qualquer formato e podem ser definidos como o conteúdo de um determinado arquivo (se o  parâmetro *filename* for especificado) ou como uma série de números e cadeias de caracteres (se o bloco de dados brutos for especificado).
+Uma instrução de definição de recurso definida pelo usuário define um recurso que contém dados específicos do aplicativo. Os dados podem ter qualquer formato e podem ser definidos como o conteúdo de um determinado arquivo (se o parâmetro *filename* for fornecido) ou como uma série de números e cadeias de caracteres (se o bloco de *dados brutos* for especificado).
 
 ``` syntax
 nameID typeID filename
 ```
 
-O *nome do* arquivo especifica o nome de um arquivo que contém os dados binários do recurso. O conteúdo do arquivo é incluído como o recurso. O RC não interpreta os dados binários de nenhuma maneira. É responsabilidade do programador garantir que os dados estejam alinhados corretamente para a arquitetura do computador de destino.
+O *filename* especifica o nome de um arquivo que contém os dados binários do recurso. O conteúdo do arquivo é incluído como o recurso. O RC não interpreta os dados binários de forma alguma. É responsabilidade do programador garantir que os dados estejam corretamente alinhados à arquitetura do computador de destino.
 
 Um recurso definido pelo usuário também pode ser definido completamente no script de recurso usando a seguinte sintaxe:
 
@@ -36,32 +36,32 @@ nameID typeID  {  raw-data  }
 <span id="nameID"></span><span id="nameid"></span><span id="NAMEID"></span>*nameID*
 </dt> <dd>
 
-Nome exclusivo ou um inteiro sem sinal de 16 bits que identifica o recurso.
+Nome exclusivo ou um inteiro de 16 bits sem sinal que identifica o recurso.
 
 </dd> <dt>
 
-<span id="typeID"></span><span id="typeid"></span><span id="TYPEID"></span>*Typeid*
+<span id="typeID"></span><span id="typeid"></span><span id="TYPEID"></span>*Identificação*
 </dt> <dd>
 
-Nome exclusivo ou um inteiro sem sinal de 16 bits que identifica o tipo de recurso. Se um número for determinado, ele deverá ser maior que 255. Os números de 1 a 255 são reservados para tipos de recursos redefinidos existentes e futuros.
+Nome exclusivo ou um inteiro de 16 bits sem sinal que identifica o tipo de recurso. Se um número for fornecido, ele deverá ser maior que 255. Os números de 1 a 255 são reservados para tipos de recursos redefinidos existentes e futuros.
 
 </dd> <dt>
 
-<span id="filename"></span><span id="FILENAME"></span>*Filename*
+<span id="filename"></span><span id="FILENAME"></span>*nome do arquivo*
 </dt> <dd>
 
-Nome do arquivo que contém os dados do recurso. O parâmetro deve ser um nome de arquivo válido; ele deverá ser um caminho completo se o arquivo não estiver no diretório de trabalho atual.
+Nome do arquivo que contém os dados do recurso. O parâmetro deve ser um nome de arquivo válido; Ele deve ser um caminho completo se o arquivo não estiver no diretório de trabalho atual.
 
 </dd> <dt>
 
 <span id="raw-data"></span><span id="RAW-DATA"></span>*dados brutos*
 </dt> <dd>
 
-Dados brutos que consistem em um ou mais inteiros ou cadeias de caracteres. Inteiros podem ser especificados em formato decimal, octal ou hexadecimal. Para ser compatível com o Windows de 16 bits, os inteiros são armazenados como valores WORD. Você pode armazenar um inteiro como um valor DWORD qualificando o inteiro com o sufixo "L".
+Dados brutos que consistem em um ou mais números inteiros ou cadeias de caracteres. Os inteiros podem ser especificados em formato decimal, octal ou hexadecimal. para ser compatível com Windows de 16 bits, os inteiros são armazenados como valores de palavra. Você pode armazenar um inteiro como um valor DWORD qualificando o inteiro com o sufixo "L".
 
-As cadeias de caracteres são entre aspas. RC não anexa automaticamente um caractere nulo de terminação a uma cadeia de caracteres. Cada cadeia de caracteres é uma sequência dos caracteres ANSI especificados, a menos que você a qualifique como uma cadeia de caracteres largos com o prefixo "L".
+As cadeias de caracteres são colocadas entre aspas. O RC não acrescenta automaticamente um caractere nulo de terminação a uma cadeia de caracteres. Cada cadeia de caracteres é uma sequência dos caracteres ANSI especificados, a menos que você o qualifique como uma cadeia de caracteres largos com o prefixo "L".
 
-O bloco de dados começa em um limite **DWORD** e o RC não executa nenhum preenchimento ou alinhamento de dados dentro do *bloco de dados* brutos. É responsabilidade do programador garantir o alinhamento adequado dos dados dentro do bloco.
+O bloco de dados começa em um limite **DWORD** e o RC não executa nenhum preenchimento ou alinhamento de dados dentro do bloco de *dados brutos* . É responsabilidade do programador garantir o alinhamento adequado dos dados dentro do bloco.
 
 </dd> </dl>
 

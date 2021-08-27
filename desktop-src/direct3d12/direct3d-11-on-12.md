@@ -26,7 +26,7 @@ D3D11On12 é um mecanismo pelo qual os desenvolvedores podem usar interfaces e o
 
 ## <a name="initializing-d3d11on12"></a>Inicializando D3D11On12
 
-Para começar a usar D3D11On12, a primeira etapa é criar um dispositivo D3D12 e uma fila de comandos. Esses objetos são fornecidos como entrada para o método de inicialização [**D3D11On12CreateDevice**](/windows/desktop/api/d3d11on12/nf-d3d11on12-d3d11on12createdevice). Você pode pensar nesse método como criando um dispositivo D3D11 com o tipo de driver imaginário D3D \_ DRIVER \_ TYPE 11ON12, em que o driver D3D11 é responsável por criar objetos e enviar listas de comandos para a \_ API D3D12.
+Para começar a usar D3D11On12, a primeira etapa é criar um dispositivo D3D12 e uma fila de comandos. Esses objetos são fornecidos como entrada para o método de inicialização [**D3D11On12CreateDevice**](/windows/desktop/api/d3d11on12/nf-d3d11on12-d3d11on12createdevice). Você pode pensar nesse método como criar um dispositivo D3D11 com o tipo de driver imaginário D3D \_ DRIVER \_ TYPE 11ON12, em que o driver D3D11 é responsável por criar objetos e enviar listas de comandos para a \_ API D3D12.
 
 Depois de ter um dispositivo D3D11 e um contexto imediato, você pode sair do dispositivo para a `QueryInterface` interface [**ID3D11On12Device.**](/windows/desktop/api/d3d11on12/nn-d3d11on12-id3d11on12device) Essa é a interface primária usada para a interop entre D3D11 e D3D12. Para que o contexto do dispositivo D3D11 e as listas de comandos D3D12 operem nos mesmos recursos, é necessário criar "recursos empacotados" usando a API [**CreateWrappedResource.**](/windows/desktop/api/d3d11on12/nf-d3d11on12-id3d11on12device-createwrappedresource) Esse método "promove" um recurso D3D12 para ser compreensível em D3D11. Um recurso empacotado começa no estado "adquirido", uma propriedade que é manipulada pelos métodos [**AcquireWrappedResources**](/windows/desktop/api/d3d11on12/nf-d3d11on12-id3d11on12device-acquirewrappedresources) e [**ReleaseWrappedResources.**](/windows/desktop/api/d3d11on12/nf-d3d11on12-id3d11on12device-releasewrappedresources)
 
@@ -36,7 +36,7 @@ O uso típico de D3D11On12 seria usar D2D para renderizar texto ou imagens sobre
 
 -   Crie um dispositivo D3D12 ([**D3D12CreateDevice**](/windows/desktop/api/d3d12/nf-d3d12-d3d12createdevice)) e uma cadeia de permuta D3D12 ([**CreateSwapChain**](/windows/desktop/api/dxgi/nf-dxgi-idxgifactory-createswapchain) com [**um ID3D12CommandQueue**](/windows/desktop/api/d3d12/nn-d3d12-id3d12commandqueue) como entrada).
 -   Crie um dispositivo D3D11On12 usando o dispositivo D3D12 e a mesma fila de comandos que a entrada.
--   Recupere os buffers de retorno da cadeia de permuta e crie recursos empacotados D3D11 para cada um deles. O estado de entrada usado deve ser a última maneira como D3D12 o usou (por exemplo, RENDER TARGET) e o estado de saída deve ser a maneira como D3D12 o usará depois que D3D11 tiver sido concluído \_ (por exemplo, PRESENT).
+-   Recupere os buffers de retorno da cadeia de permuta e crie recursos empacotados D3D11 para cada um deles. O estado de entrada usado deve ser a última maneira como D3D12 o usou (por exemplo, RENDER TARGET) e o estado de saída deve ser a maneira como D3D12 o usará depois que D3D11 tiver sido concluído (por exemplo, \_ PRESENT).
 -   Inicialize D2D e forneça os recursos empacotados D3D11 ao D2D para se preparar para renderização.
 
 Em seguida, em cada quadro, faça o seguinte:
@@ -71,7 +71,7 @@ A camada D3D11On12 implementa um subconjunto muito grande da API D3D11, mas há 
 
 A partir Windows 10, versão 1809 (10.0; Build 17763), desde que D3D11On12 seja executado em um driver que dá suporte ao Modelo de Sombreador 6.0 ou posterior, ele poderá executar sombreadores que usam interfaces. Em versões anteriores do Windows, o recurso de interfaces de sombreador não é implementado em D3D11On12 e tentar usar o recurso causará erros e mensagens de depuração.
 
-A partir Windows 10, versão 1803 (10.0; Build 17134), há suporte para cadeias de permuta em dispositivos D3D11On12. Em versões anteriores do Windows, elas não são.
+A partir Windows 10, versão 1803 (10.0; Build 17134), há suporte para cadeias de permuta em dispositivos D3D11On12. Em versões anteriores Windows, elas não.
 
 D3D11On12 não foi otimizado para desempenho. Provavelmente haverá sobrecarga moderada de CPU em comparação com um driver D3D11 padrão, sobrecarga mínima de GPU e é conhecido por haver sobrecarga de memória significativa. Portanto, não é recomendável usar D3D11On12 para cenas 3D complicadas e, em vez disso, é recomendado para cenas simples ou renderização 2D.
 

@@ -36,7 +36,7 @@ Um atributo vinculado em um objeto de referência cruzada para uma partição. L
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1967                 |
 | System-Id-Guid    | 3df793df-9858-4417-a701-735a1ecebf74    |
-| Sintaxe            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 

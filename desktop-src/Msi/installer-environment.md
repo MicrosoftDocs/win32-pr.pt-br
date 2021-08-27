@@ -26,7 +26,7 @@ A **propriedade Environment** do objeto [**Installer**](installer-object.md) é 
 
 Essa propriedade é leitura/gravação.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```JScript

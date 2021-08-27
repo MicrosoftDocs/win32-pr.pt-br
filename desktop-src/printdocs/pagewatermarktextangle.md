@@ -1,5 +1,5 @@
 ---
-description: Obter mais informações sobre o parâmetro PageWatermarkTextAngle. Este tópico não é atual. Para obter as informações mais atuais, consulte a Especificação de Esquema de Impressão.
+description: Obtenha mais informações sobre o parâmetro PageWatermarkTextAngle. Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
 ms.assetid: 157bb79c-68d2-4121-8a85-cd2f48095541
 title: PageWatermarkTextAngle
 ms.topic: article
@@ -13,9 +13,9 @@ ms.locfileid: "118470956"
 ---
 # <a name="pagewatermarktextangle"></a>PageWatermarkTextAngle
 
-Este tópico não é atual. Para obter as informações mais atuais, consulte a [Especificação de Esquema de Impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tópico não é atual. Para obter as informações mais atuais, consulte a [especificação do esquema de impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Especifica o ângulo do texto da marca-d'água em relação à direção PageImageableSizeWidth. O ângulo é medido na direção no sentido anti-horário.
+Especifica o ângulo do texto da marca d' água em relação à direção do PageImageableSizeWidth. O ângulo é medido na direção do sentido anti-horário.
 
 -   [Informações do elemento](#element-information)
 -   [Conteúdo da estrutura](#structure-content)
@@ -24,10 +24,10 @@ Especifica o ângulo do texto da marca-d'água em relação à direção PageIma
 
 
 
-| Name | Valor |
+| Nome | Valor |
 |----------------------------|--------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                    |
-| Prefixo de definição de scoping <br/> | ?<br/>                            |
+| Prefixo de escopo <br/> | ?<br/>                            |
 | Observações <br/>          | Vinculado ao elemento PageWatermark<br/> |
 
 
@@ -76,10 +76,10 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 | Tipo de dados<br/>     | string<br/>  | xs:integer<br/>      |
 | DefaultValue<br/> | inteiro<br/> | 0<br/>               |
 | MaxValue<br/>     | Número inteiro<br/> | 359<br/>             |
-| Minvalue<br/>     | inteiro<br/> | 0<br/>               |
+| MinValue<br/>     | inteiro<br/> | 0<br/>               |
 | Vários<br/>     | integer<br/> | 1<br/>               |
-| Obrigatório<br/>    | string<br/>  | psk:Conditional<br/> |
-| Unittype<br/>     | string<br/>  | graus<br/>         |
+| Obrigatório<br/>    | string<br/>  | PSK: condicional<br/> |
+| UnitType<br/>     | string<br/>  | graus<br/>         |
 
 
 

@@ -1,43 +1,43 @@
 ---
-title: Atributo de opção de VML
-description: Atributo de opção de VML
+title: Atributo de opção VML
+description: Atributo de opção VML
 ms.assetid: fc099c0a-6789-41e8-ab08-36f4fd2d3bfa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c9d102d6af20e698d8ec281cb1be6fae9690de4e
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: db2205f83449b09c22314c81ed460bee8410a3873e8f5550c073d7f3a1c1e8c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105779578"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118123888"
 ---
-# <a name="vml-switch-attribute"></a>Atributo de opção de VML
+# <a name="vml-switch-attribute"></a>Atributo de opção VML
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Determina se as direções do identificador são trocadas. Leitura/gravação. **VgTriState**.
+Determina se as instruções de alça são trocadas. Leitura/gravação. **VgTriState.**
 
 **Aplica-se a**
 
-[H](msdn-online-vml-h-element.md) (subelemento de [identificadores](msdn-online-vml-handles-element.md))
+[H](msdn-online-vml-h-element.md) (subelemento de [alças](msdn-online-vml-handles-element.md))
 
 **Sintaxe de marca**
 
-<v: *elemento* switch = " *expression* " >
+<v: *elemento* switch=" *expressão* ">
 
 **Comentários**
 
-Se for **true**, o identificador será alternado entre as direções x e y se a forma for mais alta do que a largura. O valor padrão é **Falso**.
+Se **True**, o alça será alternado entre as direções x e y se a forma for mais alta do que é larga. O valor padrão é **Falso**.
 
-Esse atributo é usado para formas com comportamento de ampliação limo.
+Esse atributo é usado para formas com o comportamento de alongamento de árvores.
 
-*Atributo padrão da VML*
+*Atributo padrão VML*
 
- 
+ 
 
- 
+ 

@@ -1,11 +1,11 @@
 ---
-title: msSFU-30-Pesquisar-atributo de contêiner
+title: Atributo msSFU-30-Search-Container
 description: Contém o identificador de um objeto que especifica onde cada pesquisa será iniciada.
 ms.assetid: a1bb0ff1-d938-4792-aa68-3c335a1a3b43
 ms.tgt_platform: multiple
 keywords:
-- msSFU-30-Search-Schema do atributo de contêiner do AD
-- Esquema de AD do atributo msSFU30SearchContainer
+- Esquema do AD do atributo msSFU-30-Search-Container
+- Esquema do AD do atributo msSFU30SearchContainer
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118682427"
 ---
-# <a name="mssfu-30-search-container-attribute"></a>msSFU-30-Pesquisar-atributo de contêiner
+# <a name="mssfu-30-search-container-attribute"></a>Atributo msSFU-30-Search-Container
 
 Contém o identificador de um objeto que especifica onde cada pesquisa será iniciada.
 
@@ -29,14 +29,14 @@ Contém o identificador de um objeto que especifica onde cada pesquisa será ini
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | msSFU-30-Search-container                   |
-| LDAP-Display-Name | msSFU30SearchContainer                      |
+| CN                | msSFU-30-Search-Container                   |
+| Ldap-Display-Name | msSFU30SearchContainer                      |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.6.18.1.300                 |
-| System-ID-GUID    | 27eebfa2-fbeb-4f8e-aad6-c50247994291        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 27eebfa2-fbeb-4f8e-aad6-c50247994291        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -56,15 +56,15 @@ Contém o identificador de um objeto que especifica onde cada pesquisa será ini
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
+| Tem valor único       | True                                                           |
 | É indexado             | Falso                                                          |
-| No catálogo global      | Falso                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
+| No Catálogo Global      | Falso                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000000                                                     |
-| Classes usadas em        | [**msSFU-30-Domain-info**](c-mssfu30domaininfo.md)<br/> |
+| Classes usadas em        | [**msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
 
 
 
@@ -77,15 +77,15 @@ Contém o identificador de um objeto que especifica onde cada pesquisa será ini
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
+| Tem valor único       | Verdadeiro                                                           |
 | É indexado             | Falso                                                          |
-| No catálogo global      | Falso                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
+| No Catálogo Global      | Falso                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000000                                                     |
-| Classes usadas em        | [**msSFU-30-Domain-info**](c-mssfu30domaininfo.md)<br/> |
+| Classes usadas em        | [**msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
 
 
 
@@ -98,15 +98,15 @@ Contém o identificador de um objeto que especifica onde cada pesquisa será ini
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
+| Tem valor único       | Verdadeiro                                                           |
 | É indexado             | Falso                                                          |
-| No catálogo global      | Falso                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
+| No Catálogo Global      | Falso                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000000                                                     |
-| Classes usadas em        | [**msSFU-30-Domain-info**](c-mssfu30domaininfo.md)<br/> |
+| Classes usadas em        | [**msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
 
 
 
@@ -119,15 +119,15 @@ Contém o identificador de um objeto que especifica onde cada pesquisa será ini
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
+| Tem valor único       | Verdadeiro                                                           |
 | É indexado             | Falso                                                          |
-| No catálogo global      | Falso                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
+| No Catálogo Global      | Falso                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000000                                                     |
-| Classes usadas em        | [**msSFU-30-Domain-info**](c-mssfu30domaininfo.md)<br/> |
+| Classes usadas em        | [**msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
 
 
 

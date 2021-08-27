@@ -1,9 +1,9 @@
 ---
-title: PLAYLIST. setSelectedState2
+title: PLAYLIST.setSelectedState2
 description: O método setSelectedState2 define o estado selecionado do item com o índice especificado no elemento PLAYLIST.
 ms.assetid: 990b834a-f7ed-45b8-99e1-3efd7f4447f4
 keywords:
-- Windows Media Player de PLAYLIST. setSelectedState2
+- PLAYLIST.setSelectedState2 Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118335808"
 ---
-# <a name="playlistsetselectedstate2"></a>PLAYLIST. setSelectedState2
+# <a name="playlistsetselectedstate2"></a>PLAYLIST.setSelectedState2
 
-O método **setSelectedState2** define o estado selecionado do item com o índice especificado no elemento **playlist** .
+O **método setSelectedState2** define o estado selecionado do item com o índice especificado no elemento **PLAYLIST.**
 
 ``` syntax
         elementID.setSelectedState2(item, selected)
@@ -32,17 +32,17 @@ O método **setSelectedState2** define o estado selecionado do item com o índic
 
 <dl> <dt>
 
-<span id="item"></span><span id="ITEM"></span>*item*
+<span id="item"></span><span id="ITEM"></span>*Item*
 </dt> <dd>
 
-**Número** (**longo**) indicando o índice de um item na lista de reprodução.
+**Número** (**longo**) que indica o índice de um item na playlist.
 
 </dd> <dt>
 
-<span id="selected"></span><span id="SELECTED"></span>*Selecione*
+<span id="selected"></span><span id="SELECTED"></span>*Selecionado*
 </dt> <dd>
 
-**Booliano** que indica se o item especificado deve ser selecionado (true) ou não selecionado (false).
+**Booliana** que indica se o item especificado deve ser selecionado (true) ou não selecionado (false).
 
 </dd> </dl>
 
@@ -52,7 +52,7 @@ Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método pode trabalhar com listas de reprodução aninhadas e substituir o método **Setselecionostate** que não pode. Você pode definir todos os itens para o estado solicitado especificando 1 no parâmetro *Item* .
+Esse método pode trabalhar com playlists aninhadas e substitui o **método setSelectedState** que não pode. Você pode definir todos os itens para o estado solicitado especificando 1 no parâmetro *item.*
 
 ## <a name="requirements"></a>Requisitos
 
@@ -60,7 +60,7 @@ Esse método pode trabalhar com listas de reprodução aninhadas e substituir o 
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versão<br/> | Windows Media Player 9 Series ou posterior<br/> |
+| Versão<br/> | Windows Media Player série 9 ou posterior<br/> |
 
 
 
@@ -71,7 +71,7 @@ Esse método pode trabalhar com listas de reprodução aninhadas e substituir o 
 [**Elemento PLAYLIST**](playlist-element.md)
 </dt> <dt>
 
-[**PLAYLIST. setselecionostate**](playlist-setselectedstate.md)
+[**PLAYLIST.setSelectedState**](playlist-setselectedstate.md)
 </dt> </dl>
 
  

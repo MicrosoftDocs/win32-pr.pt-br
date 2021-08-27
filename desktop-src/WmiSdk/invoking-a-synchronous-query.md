@@ -1,5 +1,5 @@
 ---
-description: Uma consulta síncrona é uma consulta que mantém o controle sobre o processo do aplicativo durante a consulta.
+description: Uma consulta síncrona é uma consulta que mantém o controle sobre o processo de seu aplicativo durante a consulta.
 ms.assetid: 628e9a31-7b0d-4099-bfa5-56330bb4eb6b
 ms.tgt_platform: multiple
 title: Invocando uma consulta síncrona
@@ -14,13 +14,13 @@ ms.locfileid: "118556114"
 ---
 # <a name="invoking-a-synchronous-query"></a>Invocando uma consulta síncrona
 
-Uma consulta síncrona é uma consulta que mantém o controle sobre o processo do aplicativo durante a consulta. Uma consulta síncrona requer uma única chamada de interface e, portanto, é mais simples do que uma chamada assíncrona. No entanto, uma consulta síncrona tem o potencial de bloquear seu aplicativo para consultas grandes ou consultas em uma rede.
+Uma consulta síncrona é uma consulta que mantém o controle sobre o processo de seu aplicativo durante a consulta. Uma consulta síncrona requer uma chamada de interface única e, portanto, é mais simples do que uma chamada assíncrona. No entanto, uma consulta síncrona tem o potencial de bloquear seu aplicativo para consultas ou consultas grandes em uma rede.
 
 O procedimento a seguir descreve como emitir uma consulta de dados síncrona usando o PowerShell.
 
 **Para emitir uma consulta de dados síncrona no PowerShell**
 
--   Descreva sua consulta ao WMI usando o cmdlet [Get-WmiObject](https://technet.microsoft.com/library/dd315379.aspx) do WMI e o *parâmetro -query.* O cmdlet retorna um único objeto ou uma coleção de objetos, dependendo de quantos objetos se ajustam à consulta.
+-   Descreva sua consulta ao WMI usando o cmdlet [Get-WmiObject](https://technet.microsoft.com/library/dd315379.aspx) do WMI e o parâmetro *-Query* . O cmdlet retorna um único objeto ou uma coleção de objetos, dependendo de quantos objetos se ajustam à consulta.
 
     ```PowerShell
     Get-WmiObject -query "SELECT * FROM Win32_logicalDisk WHERE DeviceID = 'C:'"
@@ -30,9 +30,9 @@ O procedimento a seguir descreve como emitir uma consulta de dados síncrona usa
 
 O procedimento a seguir descreve como emitir uma consulta de dados síncrona usando C#.
 
-**Para emitir uma consulta de dados síncrona em C# (Microsoft.Management.Infrastructure)**
+**Para emitir uma consulta de dados síncrona em C# (Microsoft. Management. Infrastructure)**
 
-1.  Descreva sua consulta ao WMI usando CimSession.QueryInstances. Esse método retorna uma coleção de objetos CimInstance.
+1.  Descreva sua consulta ao WMI usando CimSession. QueryInstances. Esse método retorna uma coleção de objetos CimInstance.
 
     ```CSharp
     using Microsoft.Management.Infrastructure;
@@ -45,7 +45,7 @@ O procedimento a seguir descreve como emitir uma consulta de dados síncrona usa
 
     
 
-2.  Use técnicas de coleção de linguagem C# padrão para acessar cada objeto retornado.
+2.  Use as técnicas padrão da coleção de idiomas C# para acessar cada objeto retornado.
 
     ```CSharp
     foreach (CimInstance drive in queryInstances)
@@ -58,11 +58,11 @@ O procedimento a seguir descreve como emitir uma consulta de dados síncrona usa
 
 O procedimento a seguir descreve como emitir uma consulta de dados síncrona usando C#.
 
-**Para emitir uma consulta de dados síncrona em C# (System.Management)**
+**Para emitir uma consulta de dados síncrona em C# (System. Management)**
 
-1.  Crie a consulta com um [objeto ManagementObjectSearcher](/dotnet/api/system.management.managementobjectsearcher) e recupere as informações com uma chamada para [ManagementObjectSearcher.Get](/dotnet/api/system.management.managementobjectsearcher.get#System_Management_ManagementObjectSearcher_Get).
+1.  Crie a consulta com um objeto [ManagementObjectSearcher](/dotnet/api/system.management.managementobjectsearcher) e recupere as informações com uma chamada para [ManagementObjectSearcher. Get](/dotnet/api/system.management.managementobjectsearcher.get#System_Management_ManagementObjectSearcher_Get).
 
-    Esse método retorna um [objeto ManagementObjectCollection.](/dotnet/api/system.management.managementobjectcollection)
+    Esse método retorna um objeto [ManagementObjectCollection](/dotnet/api/system.management.managementobjectcollection) .
 
     ```CSharp
     using System.Management;
@@ -73,7 +73,7 @@ O procedimento a seguir descreve como emitir uma consulta de dados síncrona usa
 
     
 
-2.  Use técnicas de coleção de linguagem C# padrão para acessar cada objeto retornado.
+2.  Use as técnicas padrão da coleção de idiomas C# para acessar cada objeto retornado.
 
     ```CSharp
     foreach (ManagementObject drive in objCol)
@@ -97,7 +97,7 @@ O procedimento a seguir descreve como emitir uma consulta de dados síncrona usa
 
     
 
-2.  Use técnicas de coleção [de](accessing-a-collection.md) linguagem de script padrão para acessar cada objeto retornado.
+2.  Use técnicas de [coleção](accessing-a-collection.md) de idiomas de script padrão para acessar cada objeto retornado.
 
     ```VB
     for each Service in _ 
@@ -113,13 +113,13 @@ O procedimento a seguir descreve como emitir uma consulta de dados síncrona usa
 
 **Para emitir uma consulta síncrona em C++**
 
-1.  Descreva sua consulta ao WMI por meio de uma chamada para [**IWbemServices::ExecQuery**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execquery).
+1.  Descreva sua consulta ao WMI por meio de uma chamada para [**IWbemServices:: ExecQuery**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execquery).
 
-    O [**método ExecQuery**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execquery) assume uma cadeia de caracteres de pesquisa WQL como um parâmetro que descreve sua consulta. O WMI executa a consulta e retorna um ponteiro de interface [**IEnumWbemClassObject.**](/windows/desktop/api/Wbemcli/nn-wbemcli-ienumwbemclassobject) Por meio da interface **IEnumWbemClassObject,** você pode acessar as classes ou instâncias que compoem o conjunto de resultados.
+    O método [**ExecQuery**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execquery) usa uma cadeia de caracteres de pesquisa WQL como um parâmetro que descreve sua consulta. O WMI executa a consulta e retorna um ponteiro de interface [**IEnumWbemClassObject**](/windows/desktop/api/Wbemcli/nn-wbemcli-ienumwbemclassobject) . Por meio da interface **IEnumWbemClassObject** , você pode acessar as classes ou instâncias que compõem o conjunto de resultados.
 
-2.  Depois de receber a consulta, você pode enumerar sua consulta com uma chamada para [**IEnumWbemClassObject::Next.**](/windows/desktop/api/Wbemcli/nf-wbemcli-ienumwbemclassobject-next) Para obter mais informações, consulte [Enumerando WMI](enumerating-wmi.md).
+2.  Depois de receber sua consulta, você pode enumerar sua consulta com uma chamada para [**IEnumWbemClassObject:: Next**](/windows/desktop/api/Wbemcli/nf-wbemcli-ienumwbemclassobject-next). Para obter mais informações, consulte [enumerando o WMI](enumerating-wmi.md).
 
-    O exemplo de código a seguir requer as seguintes referências e \# instruções include para compilar corretamente.
+    O exemplo de código a seguir requer as referências a seguir e \# inclui instruções para compilar corretamente.
 
     ```C++
     #include <wbemidl.h>

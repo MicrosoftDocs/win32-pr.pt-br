@@ -1,37 +1,37 @@
 ---
-description: Emitindo o comando SetDevicePropValue
+description: Emindo o comando SetDevicePropValue
 ms.assetid: d5917421-fbd4-477c-b29b-9f983c93cfdb
-title: Emitindo o comando SetDevicePropValue
+title: Emindo o comando SetDevicePropValue
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b8949cbf4fe22662de32c4c07de689fec2e6dbad
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f30190fc7de07c4ae84bbb53f4b3ddd23fcb438c1f08d497d901bd3185db8e95
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105791653"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118696660"
 ---
-# <a name="issuing-the-setdevicepropvalue-command"></a>Emitindo o comando SetDevicePropValue
+# <a name="issuing-the-setdevicepropvalue-command"></a>Emindo o comando SetDevicePropValue
 
-O exemplo nesta seção invoca o comando **SetDevicePropValue** MTP. (Para obter uma descrição completa desse comando e de seus parâmetros, consulte a [especificação do MTP](https://www.usb.org/sites/default/files/MTPv1_1.zip).)
+O exemplo nesta seção invoca o **comando SetDevicePropValue** MTP. (Para uma descrição completa desse comando e seus parâmetros, consulte a [especificação MTP](https://www.usb.org/sites/default/files/MTPv1_1.zip).)
 
-Como esse comando inclui dados (ou uma fase de dados), ele é mais envolvido do que o [exemplo](issuing-the-getnumobjects-command.md)anterior. Os comandos que incluem uma fase de dados podem ser divididos em três partes:
+Como esse comando inclui dados (ou uma fase de dados), ele está mais envolvido do que o exemplo [anterior.](issuing-the-getnumobjects-command.md) Comandos que incluem uma fase de dados podem ser divididos em três partes:
 
-1.  Inicialização: o aplicativo inicia o comando informando ao dispositivo que os dados estão chegando ou esperados.
-2.  Transferência: o aplicativo transfere os dados (gravando ou lendo os dados).
-3.  Conclusão: o aplicativo (ou o dispositivo) sinaliza que o comando está concluído e recupera um código de resposta.
+1.  Iniciação: o aplicativo inicia o comando informando ao dispositivo que os dados estão chegando ou esperados.
+2.  Transferência: o aplicativo transfere os dados (escrevendo ou lendo os dados).
+3.  Conclusão: o aplicativo (ou o dispositivo) sinaliza que o comando foi concluído e recupera um código de resposta.
 
-A lista anterior se traduz na seguinte sequência de comando:
+A lista anterior se traduz na seguinte sequência de comandos:
 
-1.  \_Comando WPD \_ MTP \_ ext \_ comando \_ \_ com \_ dados \_ para \_ gravar ou WPD comando \_ \_ MTP \_ ext \_ Execute \_ \_ com \_ dados \_ a serem \_ lidos.
-2.  \_Comando \_ de WPD \_ de \_ MTP \_ dados de gravação ou \_ comando WPD dados de \_ \_ \_ leitura \_ do MTP ext.
-3.  \_transferência de dados de extremidade de MTP do comando WPD \_ \_ \_ \_ \_ .
+1.  COMANDO WPD MTP EXT EXECUTE COMMAND WITH DATA TO WRITE OU \_ \_ \_ \_ \_ \_ \_ \_ \_ WPD COMMAND \_ \_ MTP EXT EXECUTE COMMAND \_ WITH DATA TO \_ \_ \_ \_ \_ \_ READ.
+2.  O COMANDO WPD \_ \_ MTP \_ EXT WRITE DATA \_ ou \_ WPD COMMAND \_ \_ MTP EXT READ \_ \_ \_ DATA.
+3.  TRANSFERÊNCIA DE DADOS DE EXTREMIDADE EXT DO COMANDO WPD \_ \_ \_ \_ \_ \_ MTP.
 
-No caso do **SetDevicePropValue**, o código de exemplo usa a seguinte sequência:
+No caso de **SetDevicePropValue**, o código de exemplo usa a seguinte sequência:
 
-1.  \_comando WPD \_ MTP \_ ext \_ Execute \_ \_ com \_ dados \_ a serem \_ gravados.
-2.  comando WPD de \_ \_ gravação de dados de extensão MTP \_ \_ \_ .
-3.  \_transferência de dados de extremidade de MTP do comando WPD \_ \_ \_ \_ \_ .
+1.  COMANDO WPD \_ \_ MTP \_ EXT EXECUTE COM DADOS A \_ \_ \_ \_ \_ \_ GRAVAR.
+2.  DADOS DE GRAVAÇÃO EXT DO MTP DO COMANDO \_ \_ \_ \_ \_ WPD.
+3.  TRANSFERÊNCIA DE DADOS DE EXTREMIDADE EXT DO COMANDO WPD \_ \_ \_ \_ \_ \_ MTP.
 
 O exemplo de código a seguir mostra como um aplicativo WPD inicia a sequência de comandos.
 
@@ -299,7 +299,7 @@ O exemplo de código a seguir mostra como um aplicativo recupera um código de r
 
 <dl> <dt>
 
-[Suporte a extensões de MTP](supporting-mtp-extensions.md)
+[Suporte a extensões MTP](supporting-mtp-extensions.md)
 </dt> </dl>
 
  

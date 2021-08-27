@@ -1,6 +1,6 @@
 ---
 description: 'Saiba mais sobre: Enumeração SnapshotPrepareInstanceGrbit'
-title: Enumeração SnapshotPrepareInstanceGrbit (Microsoft. ISAM. ESENT. Interop. vista)
+title: Enumeração SnapshotPrepareInstanceGrbit (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: SnapshotPrepareInstanceGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Vista.SnapshotPrepareInstanceGrbit
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.snapshotprepareinstancegrbit(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 27c911e01e909c12c74d53d5b2a5c54bc782cd25
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 07995c4746b87ec54bd11cfc47eb680a697aef5e911eadae45e2e35b76b8354f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105773024"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118978536"
 ---
 # <a name="snapshotprepareinstancegrbit-enumeration"></a>Enumeração SnapshotPrepareInstanceGrbit
 
-Opções para [JetOSSnapshotPrepareInstance (JET_OSSNAPID, JET_INSTANCE, SnapshotPrepareInstanceGrbit)](./vistaapi.jetossnapshotprepareinstance-method.md).
+Opções para [JetOSSnapshotPrepareInstance(JET_OSSNAPID, JET_INSTANCE, SnapshotPrepareInstanceGrbit)](./vistaapi.jetossnapshotprepareinstance-method.md).
 
 Esta enumeração tem um atributo [FlagsAttribute](/dotnet/api/system.flagsattribute) que permite uma combinação bit a bit dos valores membros dela.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -81,4 +81,4 @@ public enum SnapshotPrepareInstanceGrbit
 
 #### <a name="reference"></a>Referência
 
-[Namespace Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

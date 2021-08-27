@@ -20,12 +20,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: cbae5d08b7c6d233e7b14e0b183a2a89fb3a9857
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 96141d1d40f7be81963638b13ecd5c4f3a9a5649e97105d943d315f1a1b4b35a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105790259"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118766884"
 ---
 # <a name="jet_commit_idequals-method-object"></a>Método JET_COMMIT_ID. Equals (Object)
 
@@ -62,7 +62,7 @@ public override bool Equals(
     
     Um objeto a ser comparado com essa instância.
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
 Tipo: [System. Boolean](/dotnet/api/system.boolean)  
 true se as duas instâncias forem iguais.  

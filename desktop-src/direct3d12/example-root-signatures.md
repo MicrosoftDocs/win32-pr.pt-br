@@ -1,18 +1,18 @@
 ---
-title: Exemplo de assinaturas raiz
+title: Assinaturas raiz de exemplo
 description: A seção a seguir mostra as assinaturas raiz que variam em complexidade de vazia para completamente completa.
 ms.assetid: 493D35C9-2A90-4688-BD7E-74B9EB2B4E72
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 19d09d355cc1c96d77670c5536400f0b3f93c097
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2332a6efb36b309c5dc74a8578a0be9d2f46298375c309872cae8718d5bc5950
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "74104021"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118529362"
 ---
-# <a name="example-root-signatures"></a>Exemplo de assinaturas raiz
+# <a name="example-root-signatures"></a>Assinaturas raiz de exemplo
 
 A seção a seguir mostra as assinaturas raiz que variam em complexidade de vazia para completamente completa.
 
@@ -100,15 +100,15 @@ Este cenário requer hardware com associação de recursos tier2 +.
 [Camadas de hardware de associação de recursos](hardware-support.md)
 </dt> <dt>
 
-[Associação de recursos em HLSL](resource-binding-in-hlsl.md)
+[Associação de recursos no HLSL](resource-binding-in-hlsl.md)
 </dt> <dt>
 
 [Assinaturas raiz](root-signatures.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Crie um sprite para desenhar uma textura 2D. observação em vez de usar essa função, recomendamos que você use Direct2D e a biblioteca DirectXTK, SpriteBatch.
+description: Crie um sprite para desenhar uma textura 2D. Observação Em vez de usar essa função, recomendamos que você use Direct2D biblioteca DirectXTK, classe SpriteBatch.
 ms.assetid: 64efb8e4-da0b-4e67-874a-e0bb0083961c
-title: Função D3DX10CreateSprite (D3DX10. h)
+title: Função D3DX10CreateSprite (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -26,7 +26,7 @@ ms.locfileid: "118541050"
 Crie um sprite para desenhar uma textura 2D.
 
 > [!Note]  
-> em vez de usar essa função, recomendamos que você use [Direct2D](../direct2d/direct2d-portal.md) e a biblioteca [DirectXTK](https://github.com/Microsoft/DirectXTK) , a classe **SpriteBatch** .
+> Em vez de usar essa função, recomendamos que você [use](../direct2d/direct2d-portal.md) Direct2D biblioteca [DirectXTK,](https://github.com/Microsoft/DirectXTK) **classe SpriteBatch.**
 
  
 
@@ -47,30 +47,30 @@ HRESULT D3DX10CreateSprite(
 
 <dl> <dt>
 
-*pDevice* \[ no\]
+*pDevice* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **ID3D10Device**](/windows/desktop/api/D3D10/nn-d3d10-id3d10device)\***
 
-Um ponteiro para o dispositivo (consulte a [**interface ID3D10Device**](/windows/desktop/api/D3D10/nn-d3d10-id3d10device)) que irá desenhar o sprite.
+Um ponteiro para o dispositivo (consulte [**Interface ID3D10Device**](/windows/desktop/api/D3D10/nn-d3d10-id3d10device)) que desenhará o sprite.
 
 </dd> <dt>
 
-*cDeviceBufferSize* \[ no\]
+*cDeviceBufferSize* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-O tamanho do buffer de vértice, em número de sprites, que será enviado ao dispositivo quando [**ID3DX10Sprite:: flush**](id3dx10sprite-flush.md) ou [**ID3DX10Sprite::D rawspritesimmediate**](id3dx10sprite-drawspritesimmediate.md) for chamado. Isso deve ser um pequeno número se você souber que estará renderizando um pequeno número de sprites por vez (para economizar memória) e um grande número se você souber que será renderizado um grande número de sprites por vez. O valor máximo é 4096. Se 0 for especificado, o tamanho do buffer de vértice será definido automaticamente como 4096.
+O tamanho do buffer de vértice, em número de sprites, que será enviado ao dispositivo quando [**ID3DX10Sprite::Flush**](id3dx10sprite-flush.md) ou [**ID3DX10Sprite::D rawSpritesImmediate**](id3dx10sprite-drawspritesimmediate.md) for chamado. Esse deverá ser um número pequeno se você sabe que renderizará um pequeno número de sprites por vez (para economizar memória) e um número grande se você sabe que renderizará um grande número de sprites por vez. O valor máximo é 4096. Se 0 for especificado, o tamanho do buffer de vértice será definido automaticamente como 4096.
 
 </dd> <dt>
 
-*ppSprite* \[ fora\]
+*ppSprite* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DX10SPRITE**](id3dx10sprite.md)\***
 
-O endereço de um ponteiro para uma interface Sprite (consulte a [**interface ID3DX10Sprite**](id3dx10sprite.md)).
+O endereço de um ponteiro para uma interface sprite (consulte Interface [**ID3DX10Sprite**](id3dx10sprite.md)).
 
 </dd> </dl>
 
@@ -78,7 +78,7 @@ O endereço de um ponteiro para uma interface Sprite (consulte a [**interface ID
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se a função for bem sucedido, o valor de retorno será S \_ OK. Se a função falhar, o valor de retorno poderá ser um dos seguintes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Se a função for bem-sucedida, o valor de retorno será S \_ OK. Se a função falhar, o valor de retorno poderá ser um dos seguintes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -86,8 +86,8 @@ Se a função for bem sucedido, o valor de retorno será S \_ OK. Se a função 
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
@@ -95,7 +95,7 @@ Se a função for bem sucedido, o valor de retorno será S \_ OK. Se a função 
 
 <dl> <dt>
 
-[Funções de Uso Geral](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
+[Uso Geral funções](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
 </dt> </dl>
 
  

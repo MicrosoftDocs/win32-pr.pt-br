@@ -1,19 +1,19 @@
 ---
-description: Especifica o elemento que contém este nó de origem.
+description: Especifica o elemento que contém esse nó de origem.
 ms.assetid: f5fa5c10-8f30-43bd-8054-a39996f807a3
-title: Atributo MF_TOPONODE_SEQUENCE_ELEMENTID (Mfidl. h)
+title: MF_TOPONODE_SEQUENCE_ELEMENTID atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a3cd2c66c40a0bc3776d2fd2b7d78535cf24b6c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e00af7212013d26c51ecdf7d2ea4a22855f9b52524c5188d3514d34b5d6976b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105798468"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118739931"
 ---
-# <a name="mf_toponode_sequence_elementid-attribute"></a>\_ \_ Atributo ElementID da sequência MF TOPONODE \_
+# <a name="mf_toponode_sequence_elementid-attribute"></a>Atributo \_ ELEMENTID DE SEQUÊNCIA DE TOPNODE \_ \_ MF
 
-Especifica o elemento que contém este nó de origem.
+Especifica o elemento que contém esse nó de origem.
 
 ## <a name="data-type"></a>Tipo de dados
 
@@ -21,20 +21,20 @@ Especifica o elemento que contém este nó de origem.
 
 ## <a name="remarks"></a>Comentários
 
-Esse atributo se aplica a nós de origem (**\_ nó de \_ SOURCESTREAM \_ de topologia MF**).
+Esse atributo se aplica aos nós de origem **(NÓ SOURCESTREAM DA \_ \_ TOPOLOGIA \_ do MF).**
 
-O pipeline de mídia usa esse atributo para descobrir quando as fontes de mídia fazem parte do mesmo elemento. O pipeline trata todos os nós de origem que fazem parte do mesmo elemento como tendo o mesmo relógio.
+O pipeline de mídia usa esse atributo para descobrir quando as fontes de mídia fazem parte do mesmo elemento. O pipeline trata todos os nós de origem que fazem parte do mesmo elemento que ter o mesmo relógio.
 
-Quando o pipeline enfileira uma nova topologia que contém nós de origem que fazem parte de um elemento que está presente na topologia anterior, o pipeline trata esses nós de origem como tendo o mesmo relógio que os nós de origem desse elemento na topologia anterior.
+Quando o pipeline enfilra uma nova topologia que contém nós de origem que fazem parte de um elemento que está presente na topologia anterior, o pipeline trata esses nós de origem como tendo o mesmo relógio que os nós de origem desse elemento na topologia anterior.
 
 > [!Note]  
-> O pipeline de mídia não corrige carimbos de data/hora para nós de origem com taxas de clock diferentes.
+> O pipeline de mídia não corrige carimbos de data/hora para nós de origem com taxas de relógio diferentes.
 
  
 
-Uma fonte de mídia que pode fornecer topologias deve implementar a interface [**IMFMediaSourceTopologyProvider**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasourcetopologyprovider) ou a interface [**IMFSequencerSource**](/windows/desktop/api/mfidl/nn-mfidl-imfsequencersource) . Uma fonte de mídia que fornece topologias deve definir o atributo **\_ TOPONODE \_ Sequence \_ ElementID** em cada nó de origem que ele cria.
+Uma fonte de mídia que pode fornecer topologias deve implementar a interface [**IMFMediaSourceTopologyProvider**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasourcetopologyprovider) ou a interface [**IMFSequencerSource.**](/windows/desktop/api/mfidl/nn-mfidl-imfsequencersource) Uma fonte de mídia que fornece topologias deve definir o atributo **MF \_ TOPONODE \_ SEQUENCE \_ ELEMENTID** em cada nó de origem que ele cria.
 
-A constante de GUID para esse atributo é exportada de mfuuid. lib.
+A constante GUID para esse atributo é exportada de mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -42,9 +42,9 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                               |
+| parâmetro<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -52,13 +52,13 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: setuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
 [**IMFMediaSourceTopologyProvider**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasourcetopologyprovider)
@@ -73,7 +73,7 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 [Atributos de nó de topologia](topology-node-attributes.md)
 </dt> <dt>
 
-[Origem do sequenciador](sequencer-source.md)
+[Origem do Sequencer](sequencer-source.md)
 </dt> </dl>
 
  

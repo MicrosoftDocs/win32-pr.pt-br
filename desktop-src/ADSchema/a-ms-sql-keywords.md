@@ -36,7 +36,7 @@ Não usado. O padrão é definido como chave 1, chave 2, chave 3, chave 4 e chav
 | Frequência de atualização  | Na configuração do sistema.                            |
 | Attribute-Id      | 1.2.840.113556.1.4.1401                     |
 | System-ID-GUID    | 01e9a98a-ccef-11d2-9993-0000f87a57d4        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

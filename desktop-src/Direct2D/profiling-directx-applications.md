@@ -1,25 +1,25 @@
 ---
 title: Criação de perfil de aplicativos DirectX
-description: Mostra como medir algumas das medidas de tempo de desempenho mais importantes para um aplicativo do DirectX usando as ferramentas XPerf e GPUView que são fornecidas como parte do kit de ferramentas de desempenho do Windows.
+description: mostra como medir algumas das medidas de tempo de desempenho mais importantes para um aplicativo DirectX usando as ferramentas XPerf e GPUView que são fornecidas como parte do Toolkit de desempenho Windows.
 ms.assetid: 4B2F7273-C9B0-4DD3-B559-6220CDE62129
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0280389d4f8f2161e5e07f8906df7ea0484ad458
-ms.sourcegitcommit: 37f276b5d887a3aad04b1ba86e390dea9d87e591
+ms.openlocfilehash: c923f2917dbb8695bcd624f4d998043e7218cf2f976b19b24ab4cff2bc65f398
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "104565985"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118665333"
 ---
 # <a name="profiling-directx-apps"></a>Criação de perfil de aplicativos DirectX
 
-Isso mostra como medir algumas das medidas de tempo de desempenho mais importantes para um aplicativo [DirectX](/previous-versions/windows/apps/jj262109(v=win.10)) usando as ferramentas **Xperf** e **GPUView** que são fornecidas como parte do kit de ferramentas de desempenho do Windows. Este não é um guia abrangente para entender as ferramentas, em vez de sua aplicabilidade específica para analisar o desempenho do aplicativo DirectX. Embora a maioria das técnicas discutidas aqui seja relevante para todos os aplicativos do DirectX, ela é mais relevante para aplicativos que usam cadeias de permuta e não para aplicativos do DirectX criados em XAML que usam animações SIS/VSIS e XAML. Nós o orientamos pelas principais medições de tempo de desempenho, como adquirir e instalar as ferramentas, além de fazer rastreamentos de medição de desempenho e analisá-las para entender afunilamentos de aplicativo.
+isso mostra como medir algumas das medidas de tempo de desempenho mais importantes para um aplicativo do [DirectX](/previous-versions/windows/apps/jj262109(v=win.10)) usando as ferramentas **XPerf** e **GPUView** que são fornecidas como parte do Toolkit de desempenho Windows. Este não é um guia abrangente para entender as ferramentas, em vez de sua aplicabilidade específica para analisar o desempenho do aplicativo DirectX. Embora a maioria das técnicas discutidas aqui seja relevante para todos os aplicativos do DirectX, ela é mais relevante para aplicativos que usam cadeias de permuta e não para aplicativos do DirectX criados em XAML que usam animações SIS/VSIS e XAML. Nós o orientamos pelas principais medições de tempo de desempenho, como adquirir e instalar as ferramentas, além de fazer rastreamentos de medição de desempenho e analisá-las para entender afunilamentos de aplicativo.
 
 ## <a name="about-the-tools"></a>Sobre as ferramentas
 
 ### <a name="xperf"></a>**XPerf**
 
-**Xperf** é um conjunto de ferramentas de análise de desempenho criado com base no ETW (rastreamento de eventos para Windows) criado para medir e analisar o desempenho detalhado do sistema e do aplicativo e o uso de recursos. A partir do Windows 8, essa ferramenta de linha de comando tem uma interface gráfica do usuário e é chamada de WPR (gravador de desempenho do Windows) e o Windows Performance Analyzer (WPA). Mais informações sobre essas ferramentas podem ser encontradas na página da Web para o [Kit de ferramentas de desempenho do Windows](/previous-versions/windows/it-pro/windows-8.1-and-8/hh162945(v=win.10)) (WPT): kit de ferramentas de desempenho do [Windows](/previous-versions/windows/it-pro/windows-8.1-and-8/hh162945(v=win.10)).
+**XPerf** é um conjunto de ferramentas de análise de desempenho criado com base no rastreamento de eventos para Windows (ETW) criado para medir e analisar o desempenho e o uso de recursos detalhados do sistema e do aplicativo. a partir do Windows 8 essa ferramenta de linha de comando tem uma interface gráfica do usuário e é chamada de WPR (gravador de desempenho Windows) e o Windows o analisador de desempenho (WPA). mais informações sobre essas ferramentas podem ser encontradas na página da web para [Windows Toolkit de desempenho](/previous-versions/windows/it-pro/windows-8.1-and-8/hh162945(v=win.10)) (WPT): [Windows Toolkit de desempenho](/previous-versions/windows/it-pro/windows-8.1-and-8/hh162945(v=win.10)).
 
 Um ETW coleta eventos de kernel solicitados e os salva em um arquivo chamado de arquivo de log de rastreamento de eventos (ETL). Esses eventos de kernel fornecem informações abrangentes sobre as características do aplicativo e do sistema ao executar o aplicativo. Os dados são coletados habilitando a captura de rastreamento, executando o cenário de aplicativo desejado que precisa de análise, interrompendo a captura que salva os dados em um arquivo ETL. Em seguida, você pode analisar o arquivo no mesmo ou em um computador diferente usando a ferramenta de linha de comando **xperf.exe** ou a ferramenta de análise de rastreamento do Visual **xperfview.exe**.
 
@@ -35,15 +35,15 @@ Depois de instalar a ferramenta **GPUView** , é recomendável que você leia o 
 
 ## <a name="installing-the-tools"></a>Instalando as ferramentas
 
-Ambos os **Xperf** e **GPUView** estão incluídos no kit de ferramentas de desempenho do Windows (WPT).
+ambos os **XPerf** e **GPUView** estão incluídos no WPT (Toolkit de desempenho de Windows).
 
-O **Xperf** é fornecido como parte do SDK (Software Development Kit) do Windows para Windows. [Baixe o SDK do Windows](https://dev.windows.com/downloads).
+o **XPerf** é fornecido como parte do SDK (Software Development Kit) Windows para Windows. [baixe o SDK do Windows](https://dev.windows.com/downloads).
 
-O **GPUView** está disponível no Windows ADK (Kit de avaliação e implantação do Windows). [Baixe o Windows ADK](/windows-hardware/get-started/adk-install).
+o **GPUView** está disponível no Kit de avaliação e implantação do Windows (Windows ADK). [baixe o Windows ADK](/windows-hardware/get-started/adk-install).
 
 Após a instalação, você deve adicionar os diretórios que contêm **Xperf** e **GPUView** à variável "Path" do sistema.
 
-Clique no botão Iniciar e digite "variáveis do sistema". O janela Propriedades do sistema é aberto. Clique em "editar as variáveis de ambiente do sistema". Selecione "variáveis de ambiente" na caixa de diálogo "Propriedades do sistema". A variável "Path" é encontrada em "variáveis do sistema". Acrescente o diretório que contém **xperf.exe** e **GPUView.exe** ao caminho. Esses executáveis são encontrados no diretório "kit de ferramentas de desempenho do Windows" dentro dos "kits do Windows". O local padrão é: **C: \\ arquivos de programas (x86) \\ Windows kits \\ 10 kit de ferramentas de desempenho do \\ Windows**.
+Clique no botão Iniciar e digite "variáveis do sistema". O janela Propriedades do sistema é aberto. Clique em "editar as variáveis de ambiente do sistema". Selecione "variáveis de ambiente" na caixa de diálogo "Propriedades do sistema". A variável "Path" é encontrada em "variáveis do sistema". Acrescente o diretório que contém **xperf.exe** e **GPUView.exe** ao caminho. esses executáveis são encontrados no diretório "Windows Toolkit de desempenho" dentro dos "Windows Kits". o local padrão é: **C: \\ arquivos de programas (x86) \\ Windows Kits \\ 10 \\ Windows Toolkit de desempenho**.
 
 ## <a name="performance-time-measurements"></a>Medições de tempo de desempenho
 
@@ -75,7 +75,7 @@ Execute estas etapas para fazer um rastreamento:
 
 1.  Abra uma janela de comando como administrador.
 2.  Feche o aplicativo se ele já estiver em execução.
-3.  Altere os diretórios para o diretório *gpuview* dentro da pasta kit de ferramentas de desempenho do Windows.
+3.  altere os diretórios para o diretório *gpuview* dentro da pasta Windows Performance Toolkit.
 4.  Digite "log. cmd" para iniciar o rastreamento de eventos. Essa opção registra os eventos mais interessantes. Outras opções disponíveis registram o escopo diferente dos eventos. Por exemplo, ' v ' ou modo de log detalhado captura todos os eventos dos quais o **GPUView** está ciente.
 5.  Inicie o exemplo e exerça o exemplo de uma maneira que cubra o caminho de desempenho que você precisa analisar.
 6.  Volte para as janelas de comando e digite "log. cmd" novamente para parar o registro em log.
@@ -170,7 +170,7 @@ Em ambos os casos, foi observado que a taxa de quadros caiu drasticamente. Medin
 
 2.  Para analisar onde o tempo está sendo gasto, abra o rastreamento no **Xperf**. Para analisar o tempo de inicialização em **Xperf**, primeiro localize o intervalo de tempo em **GPUView**. Passe o mouse sobre a esquerda do intervalo e anote o tempo absoluto mostrado na parte inferior da janela **GPUView** . Em seguida, abra o mesmo arquivo. etl em **Xperf** e role para baixo até o grafo "amostragem de CPU por CPU", clique com o botão direito e selecione "selecionar intervalo..." Isso permite digitar o intervalo de interesse que foi descoberto examinando o rastreamento de GPU.
 
-    ![Captura de tela que mostra a amostragem de c P U por C P U em ' análise de desempenho do Windows '.](images/profile11.png)
+    ![captura de tela que mostra a amostragem de c p u por C p u em ' Windows análise de desempenho '.](images/profile11.png)
 
 3.  Vá para o menu de rastreamento e verifique se "carregar símbolos" está marcado. Além disso, acesse Trace-> configurar caminhos de símbolo e digite o caminho do símbolo do aplicativo. Um arquivo de símbolo contém informações de depuração sobre um executável compilado em um banco de dados separado (. pdb). Esse arquivo é comumente chamado de PDB. Mais informações sobre arquivos de símbolo podem ser encontradas aqui: [arquivos de símbolos](/windows/desktop/Debug/symbol-files). Esse arquivo pode estar localizado na pasta "debug" do diretório do aplicativo.
 

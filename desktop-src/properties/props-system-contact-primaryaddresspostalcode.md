@@ -4,12 +4,12 @@ ms.assetid: 156bda03-d31f-45d8-9457-5687370e4c09
 title: System. Contact. PrimaryAddressPostalCode
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a600faad183f344ab1a8a4b4ce6f1efee7cc5040
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f97f2e2513ecebe700e50615a5987c3d92411f924f8dfdbb89a59d1d667dd06b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105748539"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118729167"
 ---
 # <a name="systemcontactprimaryaddresspostalcode"></a>System. Contact. PrimaryAddressPostalCode
 

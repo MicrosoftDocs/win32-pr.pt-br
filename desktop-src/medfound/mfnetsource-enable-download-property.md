@@ -4,12 +4,12 @@ ms.assetid: c178693f-44ea-481e-b7f2-2ec94eea1994
 title: Propriedade MFNETSOURCE_ENABLE_DOWNLOAD (Mfidl. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d1b57d8ab984f7c198d1c1b43455f2d0d5dda68
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fe7749dcdf15c099284a73cf6c55c1d753825230126e77a972e906b280a0b09a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010611"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118738975"
 ---
 # <a name="mfnetsource_enable_download-property"></a>MFNETSOURCE \_ habilitar a \_ propriedade de download
 
@@ -43,8 +43,8 @@ Os aplicativos podem usar essa propriedade para configurar a origem da rede. Par
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                               |
 | parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
 
 

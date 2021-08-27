@@ -62,7 +62,7 @@ Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, e
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8<br/>                                                                                 |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                                       |
-| parâmetro<br/>                   | <dl> <dt>IVectorChangedEventArgs.h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>IVectorChangedEventArgs.h</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Representa um ponto de extremidade de comunicação sem fio, que pode enviar e receber quadros de dados quando seu dispositivo de interface associado estiver conectado a uma LAN sem fio IEEE 802.11.
+description: Representa um ponto de extremidade de comunicação sem fio, que pode enviar e receber quadros de dados quando seu dispositivo de interface associado está conectado a uma LAN sem fio IEEE 802,11.
 ms.assetid: 61743402-f333-4501-ba17-e676d85f72f3
-title: CIM_WiFiEndpoint classe
+title: Classe CIM_WiFiEndpoint
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -30,9 +30,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118646319"
 ---
-# <a name="cim_wifiendpoint-class"></a>Classe CIM \_ WiFiEndpoint
+# <a name="cim_wifiendpoint-class"></a>\_Classe CIM WiFiEndpoint
 
-Representa um ponto de extremidade de comunicação sem fio, que pode enviar e receber quadros de dados quando seu dispositivo de interface associado estiver conectado a uma LAN sem fio IEEE 802.11.
+Representa um ponto de extremidade de comunicação sem fio, que pode enviar e receber quadros de dados quando seu dispositivo de interface associado está conectado a uma LAN sem fio IEEE 802,11.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -55,13 +55,13 @@ class CIM_WiFiEndpoint : CIM_LANEndpoint
 
 ## <a name="members"></a>Membros
 
-A **classe CIM \_ WiFiEndpoint** tem estes tipos de membros:
+A classe **CIM \_ WiFiEndpoint** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A **classe CIM \_ WiFiEndpoint** tem essas propriedades.
+A classe **CIM \_ WiFiEndpoint** tem essas propriedades.
 
 <dl> <dt>
 
@@ -74,36 +74,36 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O endereço MAC do ponto de acesso associado ao ponto de Wi-Fi de acesso; caso contrário, **NULL.**
+O endereço MAC do ponto de acesso associado ao ponto de extremidade de Wi-Fi; caso contrário, **NULL**.
 
 </dd> <dt>
 
 **Associação**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliana**
+Tipo de dados: **booliano**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-**true** se o ponto de extremidade WiFi estiver associado atualmente a um ponto de acesso ou estação de cliente; caso contrário, **false.**
+**true** se o ponto de extremidade WiFi estiver atualmente associado a um ponto de acesso ou estação de cliente; caso contrário, **false**.
 
 </dd> <dt>
 
 **AuthenticationMethod**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **uint16**
+Tipo de dados: **UInt16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("IEEE 802.11-2007 \| 8"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ WiFiEndpoint**.**EncryptionMethod**", "**CIM \_ WiFiEndpoint**.**IEEE8021xAuthenticationProtocol**", "**CIM \_ WiFiEndpoint**.**OtherAuthenticationMethod**")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("IEEE 802.11-2007 \| 8"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ WiFiEndpoint**.**EncryptionMethod**","**CIM \_ WiFiEndpoint**.**IEEE8021xAuthenticationProtocol**","**CIM \_ WiFiEndpoint**.**OtherAuthenticationMethod**")
 </dt> </dl>
 
-O tipo de autenticação usado entre Wi-Fi ponto de extremidade e a rede.
+O tipo de autenticação usado entre o ponto de extremidade Wi-Fi e a rede.
 
 <dt>
 
@@ -116,35 +116,35 @@ O tipo de autenticação usado entre Wi-Fi ponto de extremidade e a rede.
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Outros** (1)
+**Outro** (1)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Open_System"></span><span id="open_system"></span><span id="OPEN_SYSTEM"></span>
 
-**Abrir Sistema** (2)
+**Sistema aberto** (2)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Shared_Key"></span><span id="shared_key"></span><span id="SHARED_KEY"></span>
 
-**Chave Compartilhada** (3)
+**Chave compartilhada** (3)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="WPA_PSK"></span><span id="wpa_psk"></span>
 
-**WPA PSK** (4)
+**PSK WPA** (4)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="WPA_IEEE_802.1x"></span><span id="wpa_ieee_802.1x"></span><span id="WPA_IEEE_802.1X"></span>
 
-**WPA IEEE 802.1x** (5)
+**WPA IEEE 802.1 x** (5)
 
 
 </dt> <dd></dd> <dt>
@@ -158,21 +158,21 @@ O tipo de autenticação usado entre Wi-Fi ponto de extremidade e a rede.
 
 <span id="WPA2_IEEE_802.1x"></span><span id="wpa2_ieee_802.1x"></span><span id="WPA2_IEEE_802.1X"></span>
 
-**WPA2 IEEE 802.1x** (7)
+**WPA2 IEEE 802.1 x** (7)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="CCKM_IEEE_802.1x"></span><span id="cckm_ieee_802.1x"></span><span id="CCKM_IEEE_802.1X"></span>
 
-**CCKM IEEE 802.1x** (8)
+Protocolo **CCKM IEEE 802.1 x** (8)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DMTF Reservado** (9..)
+**DMTF reservado** (9..)
 
 
 </dt> <dd></dd> </dl>
@@ -182,16 +182,16 @@ O tipo de autenticação usado entre Wi-Fi ponto de extremidade e a rede.
 **BSSType**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **uint16**
+Tipo de dados: **UInt16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("IEEE 802.11-2007 \| 3.16")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("IEEE 802.11-2007 \| 3,16")
 </dt> </dl>
 
-O tipo BSS (conjunto de serviços básico) da rede que corresponde à instância. Um BSS é um conjunto de estações controladas por uma única função de coordenação.
+O tipo de BSS (conjunto de serviços básico) da rede que corresponde à instância. Um BSS é um conjunto de estações controladas por uma única função de coordenação.
 
 <dt>
 
@@ -218,7 +218,7 @@ O tipo BSS (conjunto de serviços básico) da rede que corresponde à instância
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DMTF Reservado** (4..)
+**DMTF reservado** (4..)
 
 
 </dt> <dd></dd> </dl>
@@ -228,16 +228,16 @@ O tipo BSS (conjunto de serviços básico) da rede que corresponde à instância
 **EncryptionMethod**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **uint16**
+Tipo de dados: **UInt16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("IEEE 802.11-2007 \| 8"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ WiFiEndpoint**.**AuthenticationMethod**", "**CIM \_ WiFiEndpoint**.**OtherEncryptionMethod**")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("IEEE 802.11-2007 \| 8"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ WiFiEndpoint**.**AuthenticationMethod**","**CIM \_ WiFiEndpoint**.**OtherEncryptionMethod**")
 </dt> </dl>
 
-O tipo de criptografia usado ao enviar e receber dados por meio Wi-Fi ponto de extremidade.
+O tipo de criptografia usado ao enviar e receber dados por meio do ponto de extremidade Wi-Fi.
 
 <dt>
 
@@ -250,7 +250,7 @@ O tipo de criptografia usado ao enviar e receber dados por meio Wi-Fi ponto de e
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Outros** (1)
+**Outro** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -285,7 +285,7 @@ O tipo de criptografia usado ao enviar e receber dados por meio Wi-Fi ponto de e
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DMTF Reservado** (6..)
+**DMTF reservado** (6..)
 
 
 </dt> <dd></dd> </dl>
@@ -295,16 +295,16 @@ O tipo de criptografia usado ao enviar e receber dados por meio Wi-Fi ponto de e
 **IEEE8021xAuthenticationProtocol**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **uint16**
+Tipo de dados: **UInt16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("RFC4017. IETF", "RFC2716. IETF", "draft-ietf-pppext-eap-ttls. IETF", "draft-kamath-pppext-peapv0. IETF", "draft-draft-draftsson-pppext-eap-tls-eap", "RFC4851. IETF", "RFC3748. IETF", "RFC4764. IETF", "RFC4186. IETF", "RFC4187. IETF"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ WiFiEndpoint**.**AuthenticationMethod**")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("RFC4017. IETF "," RFC2716. IETF "," draft-ietf-pppext-EAP-TTLS. IETF "," Draft-kamath-pppext-PEAPv0. IETF "," Draft-Josefsson-pppext-EAP-TLS-EAP "," RFC4851. IETF "," RFC3748. IETF "," RFC4764. IETF "," RFC4186. IETF "," RFC4187. IETF "), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ WiFiEndpoint**.**AuthenticationMethod**")
 </dt> </dl>
 
-O tipo EAP (Protocolo de Autenticação Extensível) para o ponto de extremidade Wi-Fi quando **AuthenticationMethod** contém "7" (WPA IEEE 802.1x) ou "8" (CCKM IEEE 802.1x).
+O tipo de EAP (protocolo de autenticação extensível) para o ponto de extremidade Wi-Fi quando **AuthenticationMethod** contém "7" (WPA IEEE 802.1 x) ou "8" (CCKM IEEE 802.1 x).
 
 <dt>
 
@@ -366,7 +366,7 @@ O tipo EAP (Protocolo de Autenticação Extensível) para o ponto de extremidade
 
 <span id="EAP-SIM"></span><span id="eap-sim"></span>
 
-**EAP-SIM** (8)
+**EAP-Sim** (8)
 
 
 </dt> <dd></dd> <dt>
@@ -387,7 +387,7 @@ O tipo EAP (Protocolo de Autenticação Extensível) para o ponto de extremidade
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DMTF Reservado** (11..)
+**DMTF reservado** (11..)
 
 
 </dt> <dd></dd> </dl>
@@ -403,10 +403,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("LANID"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("IEEE 802.11-2007 \| 7.3.2.1")
+Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("LANID"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("IEEE 802.11-2007 \| 7.3.2.1")
 </dt> </dl>
 
-O SSID (identificador de conjunto de serviços) da LAN sem fio associada ao ponto de extremidade Wi-Fi serviço; caso contrário, **NULL.**
+O SSID (identificador de conjunto de serviços) da LAN sem fio que está associado ao ponto de extremidade de Wi-Fi; caso contrário, **NULL**.
 
 </dd> <dt>
 
@@ -422,7 +422,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ WiFiEndpoint**.**AuthenticationMethod**")
 </dt> </dl>
 
-O tipo de autenticação usado entre o ponto Wi-Fi e a rede quando **AuthenticationMethod** contém "1" (Outro).
+O tipo de autenticação usado entre o ponto de extremidade Wi-Fi e a rede quando **AuthenticationMethod** contém "1" (outro).
 
 </dd> <dt>
 
@@ -438,59 +438,59 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ WiFiEndpoint**.**EncryptionMethod**")
 </dt> </dl>
 
-Descreve o tipo de criptografia para o ponto de Wi-Fi quando **EncryptionMethod** contém "1" (Outro).
+Descreve o tipo de criptografia para o ponto de extremidade Wi-Fi quando **EncryptionMethod** contém "1" (outro).
 
 </dd> <dt>
 
 **ProtocolIFType**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **uint16**
+Tipo de dados: **UInt16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("ProtocolIFType")
+Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("ProtocolIFType")
 </dt> </dl>
 
-A categoria ou classificação dessa instância. Os valores possíveis são limitados aos valores Wi-Fi e reservados do MIB DMTF e [IANA ifType](https://www.iana.org/assignments/ianaiftype-mib).
+A categoria ou classificação dessa instância. Os valores possíveis são limitados à Wi-Fi e valores reservados da MIB e da [IANA ifType](https://www.iana.org/assignments/ianaiftype-mib)
 
-Se **ProtocolIFType** for definido como "1" (Outro), as informações de tipo deverão ser fornecidas na **propriedade OtherTypeDescription.**
+Se **ProtocolIFType** for definido como "1" (outro), as informações de tipo deverão ser fornecidas na propriedade **OtherTypeDescription** .
 
 <dt>
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Outros** (1)
+**Outro** (1)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="IEEE_802.11"></span><span id="ieee_802.11"></span>
 
-**IEEE 802.11** (71)
+**IEEE 802,11** (71)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="IANA_Reserved"></span><span id="iana_reserved"></span><span id="IANA_RESERVED"></span>
 
-**IANA Reservado** (225..4095)
+**IANA reservado** (225.. 4095)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DMTF Reservado** (4301..32767)
+**DMTF reservado** (4301.. 32767)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Fornecedor Reservado** (32768..)
+**Fornecedor reservado** (32768..)
 
 
 </dt> <dd></dd> </dl>
@@ -505,8 +505,8 @@ Se **ProtocolIFType** for definido como "1" (Outro), as informações de tipo de
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                                          |
-| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
+| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -515,7 +515,7 @@ Se **ProtocolIFType** for definido como "1" (Outro), as informações de tipo de
 
 <dl> <dt>
 
-[**CIM \_ LANEndpoint**](cim-lanendpoint.md)
+[**\_LANENDPOINT CIM**](cim-lanendpoint.md)
 </dt> </dl>
 
  

@@ -1,8 +1,8 @@
 ---
-description: Representa o índice do item em seu objeto pai SWbemRefresher.
+description: Representa o índice do item em seu objeto SWbemRefresher pai.
 ms.assetid: f076eb01-1e71-487d-a1af-687a052b4d67
 ms.tgt_platform: multiple
-title: Propriedade SWbemRefreshableItem.Index (Wbemdisp.h)
+title: Propriedade SWbemRefreshableItem. Index (Wbemdisp. h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -24,13 +24,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118312925"
 ---
-# <a name="swbemrefreshableitemindex-property"></a>Propriedade SWbemRefreshableItem.Index
+# <a name="swbemrefreshableitemindex-property"></a>Propriedade SWbemRefreshableItem. index
 
-A **propriedade SWbemRefreshableItem.Index** representa o índice do item em seu objeto [**pai SWbemRefresher.**](swbemrefresher.md)
+A propriedade **SWbemRefreshableItem. index** representa o índice do item em seu objeto [**SWbemRefresher**](swbemrefresher.md) pai.
 
-Para uma explicação dessa sintaxe, consulte [Convenções de documento para a API de Script](document-conventions-for-the-scripting-api.md).
+Para obter uma explicação dessa sintaxe, consulte [convenções de documento para a API de script](document-conventions-for-the-scripting-api.md).
 
-Essa propriedade é leitura/gravação.
+Esta propriedade é de leitura/gravação.
 
 ## <a name="syntax"></a>Syntax
 
@@ -51,11 +51,11 @@ SWbemRefreshableItem.Index As Long
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Cabeçalho<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
-| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
+| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
-| CLSID<br/>                    | CLSID \_ SWbemRefreshableItem<br/>                                                  |
-| IID<br/>                      | IID \_ ISWbemRefreshableItem<br/>                                                   |
+| CLSID<br/>                    | \_SWBEMREFRESHABLEITEM CLSID<br/>                                                  |
+| IID<br/>                      | ISWbemRefreshableItem de IID \_<br/>                                                   |
 
 
 

@@ -36,7 +36,7 @@ Um campo de bits que mantém informações sobre aspectos de uma réplica NC rel
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2024              |
 | System-Id-Guid    | 5a2eacd7-cc2b-48cf-9d9a-b6f1a0024de9 |
-| Sintaxe            | [**Enumeração**](s-enumeration.md) |
+| Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
 
@@ -54,8 +54,8 @@ Um campo de bits que mantém informações sobre aspectos de uma réplica NC rel
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tem valor único       | True                            |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
 | No Catálogo Global      | Falso                           |
 | Descritor de segurança NT | O:BAG:BAD:S:                    |
@@ -75,8 +75,8 @@ Um campo de bits que mantém informações sobre aspectos de uma réplica NC rel
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tem valor único       | True                            |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
 | No Catálogo Global      | Falso                           |
 | Descritor de segurança NT | O:BAG:BAD:S:                    |
@@ -96,8 +96,8 @@ Um campo de bits que mantém informações sobre aspectos de uma réplica NC rel
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tem valor único       | True                            |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
 | No Catálogo Global      | Falso                           |
 | Descritor de segurança NT | O:BAG:BAD:S:                    |

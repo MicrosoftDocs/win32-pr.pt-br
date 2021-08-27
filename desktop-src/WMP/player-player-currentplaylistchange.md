@@ -1,11 +1,11 @@
 ---
-title: Evento Player.CurrentPlaylistChange
-description: O evento CurrentPlaylistChange ocorre quando algo muda na playlist atual. | Evento Player.CurrentPlaylistChange
+title: Evento Player. CurrentPlaylistChange
+description: O evento CurrentPlaylistChange ocorre quando algo é alterado na playlist atual. | Evento Player. CurrentPlaylistChange
 ms.assetid: 5270373e-e401-40c6-bf8c-ef0557610372
 keywords:
-- Evento CurrentPlaylistChange Windows Media Player
-- Evento CurrentPlaylistChange Windows Media Player , classe Player
-- Classe player Windows Media Player evento , CurrentPlaylistChange
+- Windows Media Player de eventos CurrentPlaylistChange
+- Windows Media Player de eventos CurrentPlaylistChange, classe Player
+- classe de jogador Windows Media Player, evento CurrentPlaylistChange
 topic_type:
 - apiref
 api_name:
@@ -23,9 +23,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118338142"
 ---
-# <a name="playercurrentplaylistchange-event"></a>Evento Player.CurrentPlaylistChange
+# <a name="playercurrentplaylistchange-event"></a>Evento Player. CurrentPlaylistChange
 
-O **evento CurrentPlaylistChange** ocorre quando algo muda na playlist atual.
+O evento **CurrentPlaylistChange** ocorre quando algo é alterado na playlist atual.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,7 +45,7 @@ Player.CurrentPlaylistChange(
 *change* 
 </dt> <dd>
 
-**Número** (**longo**) que indica que tipo de alteração ocorreu na playlist. Consulte o *Player*. **Evento PlaylistChange** para uma tabela de valores possíveis.
+**Número** (**longo**) indicando que tipo de alteração ocorreu na lista de reprodução. Consulte o *Player*. Evento **PlaylistChange** para uma tabela de valores possíveis.
 
 </dd> </dl>
 
@@ -55,13 +55,13 @@ Esse evento não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Esse evento não ocorre quando uma playlist diferente se torna a playlist atual. Isso só ocorre quando ocorre uma alteração na playlist atual, como um item de mídia que está sendo anexado à playlist.
+Esse evento não ocorre quando uma playlist diferente se torna a playlist atual. Isso ocorre apenas quando uma alteração acontece na playlist atual, como um item de mídia que está sendo anexado à playlist.
 
-O valor dos parâmetros de evento é especificado por Windows Media Player e pode ser acessado ou passado para um método em um arquivo JScript importado usando o nome do parâmetro especificado. Esse nome de parâmetro deve ser digitado exatamente como mostrado, incluindo a capitalização.
+o valor dos parâmetros de evento é especificado por Windows Media Player e pode ser acessado ou passado para um método em um arquivo de JScript importado usando o nome de parâmetro fornecido. Esse nome de parâmetro deve ser digitado exatamente como mostrado, incluindo a capitalização.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo JScript a seguir atualiza o texto em um elemento DIV HTML, chamado PlItems, para exibir os nomes dos itens de mídia na playlist atual. O **objeto** Player foi criado com ID = "Player".
+o exemplo a seguir JScript atualiza o texto em um elemento HTML DIV, chamado PlItems, para exibir os nomes dos itens de mídia na playlist atual. O objeto de **jogador** foi criado com ID = "Player".
 
 
 ```JScript
@@ -95,7 +95,7 @@ O exemplo JScript a seguir atualiza o texto em um elemento DIV HTML, chamado PlI
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7.0 ou posterior.<br/>                              |
+| Versão<br/> | Windows Media Player versão 7,0 ou posterior.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -104,13 +104,13 @@ O exemplo JScript a seguir atualiza o texto em um elemento DIV HTML, chamado PlI
 
 <dl> <dt>
 
-[**Objeto Player**](player-object.md)
+[**Objeto de jogador**](player-object.md)
 </dt> <dt>
 
-[**Player.currentPlaylist**](player-currentplaylist.md)
+[**Player. currentPlaylist**](player-currentplaylist.md)
 </dt> <dt>
 
-[**Player.PlaylistChange**](player-player-playlistchange.md)
+[**Player. PlaylistChange**](player-player-playlistchange.md)
 </dt> </dl>
 
  

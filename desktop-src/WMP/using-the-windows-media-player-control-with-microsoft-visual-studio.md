@@ -1,65 +1,65 @@
 ---
-title: Usando o controle do Windows Media Player com Microsoft Visual Studio
-description: Usando o controle do Windows Media Player com Microsoft Visual Studio
+title: Usando o controle Windows Media Player com Microsoft Visual Studio
+description: Usando o controle Windows Media Player com Microsoft Visual Studio
 ms.assetid: e007876e-f215-4976-8a70-018fedc0e67d
 keywords:
-- Windows Media Player, incorporando controle ActiveX
-- Modelo de objeto do Windows Media Player, inserindo controle ActiveX
-- modelo de objeto, inserindo controle ActiveX
-- Windows Media Player Mobile, inserindo controle ActiveX
-- Controle ActiveX do Windows Media Player, incorporando
-- Controle ActiveX móvel do Windows Media Player, incorporando
-- Controle ActiveX, incorporando
-- Windows Media Player,. NET Framework
-- Modelo de objeto do Windows Media Player,. NET Framework
-- modelo de objeto,. NET Framework
-- Windows Media Player Mobile, .NET Framework
-- Controle ActiveX do Windows Media Player, .NET Framework
-- Controle ActiveX móvel do Windows Media Player, .NET Framework
-- Controle ActiveX, .NET Framework
-- Controle ActiveX do Windows Media Player, Visual Studio
-- Controle ActiveX móvel do Windows Media Player, Visual Studio
-- Controle ActiveX, Visual Studio
-- .NET Framework, incorporação de programa do Visual Studio
-- incorporando, programas do Visual Studio
-- Visual Studio, incorporação de programa
+- Windows Media Player, incorporando ActiveX controle
+- Windows Media Player modelo de objeto, incorporando ActiveX controle
+- modelo de objeto, incorporando ActiveX controle
+- Windows Media Player Mobile, incorporando ActiveX controle
+- Windows Media Player ActiveX controle,incorporação
+- Windows Media Player Controle ActiveX dispositivo móvel, incorporação
+- ActiveX controle,incorporação
+- Windows Media Player,.NET Framework
+- Windows Media Player modelo de objeto,.NET Framework
+- modelo de objeto, .NET Framework
+- Windows Media Player Mobile,.NET Framework
+- Windows Media Player ActiveX controle,.NET Framework
+- Windows Media Player Controle ActiveX dispositivo móvel, .NET Framework
+- ActiveX controle,.NET Framework
+- Windows Media Player ActiveX controle,Visual Studio
+- Windows Media Player Controle ActiveX dispositivo móvel, Visual Studio
+- ActiveX controle,Visual Studio
+- .NET Framework,Visual Studio de programação
+- incorporação, Visual Studio programas
+- Visual Studio,incorporação de programa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 44b01fecd6acdfd5ccc9a7d823740ef3915bf9c6
-ms.sourcegitcommit: e22adfb0dd3bb989e59455baedb4d905a877a240
+ms.openlocfilehash: 73bb9597b8ad5baadbd51625c68a1d7fb7ebc1791c2d6e8015fb79ba2cab3be6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "104006221"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118830445"
 ---
-# <a name="using-the-windows-media-player-control-with-microsoft-visual-studio"></a>Usando o controle do Windows Media Player com Microsoft Visual Studio
+# <a name="using-the-windows-media-player-control-with-microsoft-visual-studio"></a>Usando o controle Windows Media Player com Microsoft Visual Studio
 
-Você pode adicionar o controle ActiveX do Windows Media Player 9 Series ou posterior a um aplicativo .NET Framework por meio da caixa de ferramentas no Visual Studio.
+Você pode adicionar o controle Windows Media Player Série 9 ou posterior ActiveX a um aplicativo .NET Framework por meio da Caixa de Ferramentas Visual Studio.
 
-## <a name="adding-the-windows-media-player-control"></a>Adicionando o controle do Windows Media Player
+## <a name="adding-the-windows-media-player-control"></a>Adicionando o Windows Media Player controle
 
-Antes de criar um novo projeto, verifique se a versão mais recente do Windows Media Player e o SDK do Windows Media Player estão instalados no computador.
+Antes de criar um novo projeto, certifique-se de que a versão mais recente do Windows Media Player e do SDK do Windows Media Player está instalada em seu computador.
 
-Inicie o Visual Studio e crie um novo projeto.
+Inicie Visual Studio e, em seguida, crie um novo projeto.
 
-No Visual Studio, abra a caixa de ferramentas.
+No Visual Studio, abra a Caixa de Ferramentas.
 
-Se o Windows Media Player não aparecer na parte **componentes** da caixa de ferramentas, faça o seguinte:
+Se Windows Media Player não aparecer na **parte** Componentes da Caixa de Ferramentas, faça o seguinte:
 
-1.  Clique com o botão direito do mouse na caixa de ferramentas e selecione **escolher itens**. Isso abre a caixa de diálogo Personalizar caixas de **ferramentas** .
-2.  Na guia **componentes com** , selecione Windows Media Player.
+1.  Clique com o botão direito do mouse na Caixa de Ferramentas e selecione **Escolher Itens**. Isso abre a **caixa de diálogo Personalizar Caixa** de Ferramentas.
+2.  Na guia **Componentes COM,** selecione Windows Media Player.
 
-    Se o Windows Media Player não aparecer na lista, clique em **procurar** e abra Wmp.dll, que deve estar na pasta system32 do Windows \\ .
+    Se Windows Media Player aparecer na lista, clique em Procurar **e** abra Wmp.dll, que deve estar na pasta Windows \\ System32.
 
-3.  Clique em **OK**. O controle do Windows Media Player será colocado na guia atual da caixa de ferramentas.
+3.  Clique em **OK**. O Windows Media Player controle será colocado na guia Caixa de Ferramentas atual.
 
-Agora você pode selecionar o Windows Media Player na caixa de ferramentas e adicioná-lo a um formulário.
+Agora você pode selecionar Windows Media Player na Caixa de Ferramentas e adicioná-lo a um formulário.
 
-O Visual Studio dá ao controle do Windows Media Player um nome padrão, como "axWindowsMediaPlayer1". Talvez você queira alterar o nome para algo mais facilmente lembrado, como "Player".
+Visual Studio dá ao Windows Media Player um nome padrão, como "axWindowsMediaPlayer1". Talvez você queira alterar o nome para algo mais facilmente lembrado, como "Player".
 
-Adicionar o controle do Windows Media Player da caixa de ferramentas também adiciona referências a duas bibliotecas criadas pelo Visual Studio, AxWMPLib e WMPLib. Você pode encontrá-los na Gerenciador de Soluções em **referências**.
+Adicionar o Windows Media Player controle da Caixa de Ferramentas também adiciona referências a duas bibliotecas criadas por Visual Studio, AxWMPLib e WMPLib. Você pode encontrá-los no Gerenciador de Soluções em **Referências**.
 
-Para facilitar o uso dos objetos no namespace do Player, você deve incluir o namespace nas diretivas using ou Imports de seus arquivos, da seguinte maneira:
+Para facilitar o uso dos objetos no namespace player, você deve incluir o namespace nas diretivas using ou imports de seus arquivos, da seguinte maneira:
 
 
 ```Csharp
@@ -76,63 +76,63 @@ imports WMPLib
 
 
 
-A diretiva garante que você possa consultar objetos do **Player** sem qualificar totalmente seus nomes.
+A diretiva garante que você possa se referir a **objetos player** sem qualificar totalmente seus nomes.
 
 > [!Note]  
-> O controle do Windows Media Player é um objeto **AxWindowsMediaPlayer** do namespace **AxWMPLib** . No entanto, a classe **AxWindowsMediaPlayer** usa tipos de dados, interfaces e outros elementos do namespace **WMPLib** .
+> O Windows Media Player controle é um **objeto AxWindowsMediaPlayer** do namespace **AxWMPLib.** No entanto, **a classe AxWindowsMediaPlayer** usa tipos de dados, interfaces e outros elementos do namespace **WMPLib.**
 
- 
+ 
 
 ## <a name="configuring-visibility-of-the-control"></a>Configurando a visibilidade do controle
 
-Quando você adiciona o controle do Windows Media Player pela primeira vez a um formulário, ele ficará visível. Se você não quiser usar a imagem visível do Player em seu aplicativo, oculte o player padrão definindo qualquer uma das seguintes propriedades:
+Quando você adicionar o controle Windows Media Player a um formulário pela primeira vez, ele ficará visível. Se você não quiser usar a imagem visível do Player em seu aplicativo, o ocultará o Player padrão definindo qualquer uma das seguintes propriedades:
 
 
 
 | Propriedade        | Valor                                                 |
 |-----------------|-------------------------------------------------------|
-| **uiMode**      | "invisível" (consulte [Player. UIMODE](player-uimode.md).) |
+| **uiMode**      | "invisível" (consulte [Player.uiMode](player-uimode.md).) |
 | **Visível**     | "false"                                               |
-| **Tamanho. largura**  | 0                                                     |
-| **Tamanho. altura** | 0                                                     |
+| **Size.Width**  | 0                                                     |
+| **Size.Height** | 0                                                     |
 
 
 
- 
+ 
 
-Você pode definir essas propriedades no código ou na janela **Propriedades** quando o controle do Windows Media Player é selecionado no designer de formulário.
+Você pode definir essas propriedades no código ou na **janela Propriedades** quando o controle Windows Media Player é selecionado no designer de formulário.
 
 ## <a name="object-model-compatibility-of-the-control"></a>Compatibilidade do modelo de objeto do controle
 
-O modelo de objeto para o controle do Windows Media Player é basicamente o mesmo na .NET Framework como em código e script não gerenciados. No entanto, há diferenças em como os elementos são expostos:
+O modelo de objeto para o Windows Media Player controle é basicamente o mesmo no .NET Framework como no código e no script não controlados. No entanto, há diferenças em como os elementos são expostos:
 
--   A maioria dos objetos é exposta sob o nome da interface COM subjacente. Por exemplo, o objeto **playlist** é exposto como **IWMPPlaylist**.
--   Algumas interfaces têm versões posteriores. Por exemplo, **IWMPMedia** recebeu funcionalidade adicional em **IWMPMedia2** e **IWMPMedia3**. Se você declarar um objeto como **IWMPMedia**, normalmente terá acesso à funcionalidade de todas as versões da interface. No entanto, o IntelliSense® não reconhecerá os métodos ou as propriedades das interfaces de versão posteriores, e o Editor Visual Basic .NET não corrigirá automaticamente a capitalização. Para obter o benefício completo do IntelliSense e de outros recursos do Visual Studio, declare o objeto usando a versão mais recente da interface, como **IWMPMedia3**.
--   Não há propriedades indexadas (C#) ou propriedades padrão (Visual Basic .NET). Por exemplo, para recuperar um **playlist. Item**, você deve chamar o método acessador **IWMPlaylist. get \_ Item** em C# ou recuperar a propriedade **IWMPlayist. Item** no Visual Basic .net.
--   Devido a um conflito de nomenclatura entre a propriedade de **controles** do Windows Media Player e a propriedade **Controls** exposta por cada controle, a versão do Player dessa propriedade é chamada de **CtlControls** no contexto do controle ActiveX. (No entanto, esse não é o caso quando você cria o Player programaticamente, em vez de um controle ActiveX.)
+-   A maioria dos objetos é exposta sob o nome de sua interface COM subjacente. Por exemplo, o **objeto Playlist** é exposto como **IWMPPlaylist.**
+-   Algumas interfaces têm versões posteriores. Por exemplo, **O IWMPMedia** recebeu funcionalidade adicional em **IWMPMedia2** e **IWMPMedia3.** Se você declarar um objeto como **IWMPMedia**, geralmente terá acesso à funcionalidade de todas as versões da interface. No entanto, o IntelliSense® não reconhecerá os métodos ou as propriedades das interfaces de versão posterior, e o editor Visual Basic .NET não corrigirá automaticamente a capitalização. Para obter o benefício completo do IntelliSense e outros recursos do Visual Studio, declare o objeto usando a versão mais recente da interface, como **IWMPMedia3**.
+-   Não há propriedades indexadas (C#) ou propriedades padrão (Visual Basic .NET). Por exemplo, para recuperar um **Playlist.item**, você deve chamar o método de acessador de **\_ item IWMPlaylist.get** em C# ou recuperar a propriedade **IWMPlayist.Item** no Visual Basic .NET.
+-   Devido a um conflito de nomen entre a propriedade Windows Media Player **Controls** e a propriedade **Controls** exposta por cada controle, a versão do Player dessa propriedade é chamada **CtlControls** no contexto do controle ActiveX controle. (No entanto, esse não é o caso quando você cria o Player programaticamente em vez de como um ActiveX controle.)
 
-Use o pesquisador de objetos no Visual Studio para localizar os nomes de API corretos para métodos e objetos nos namespaces **AxWMPLib** e **WMPLib** .
+Use o Pesquisador de Objetos Visual Studio para localizar os nomes de API corretos para métodos e objetos nos namespaces **AxWMPLib** e **WMPLib.**
 
 ## <a name="distributing-your-application"></a>Distribuindo o aplicativo
 
-Ao distribuir seu aplicativo, certifique-se de instalar AxInterop.WMPLib.dll e Interop.WMPLib.dll na pasta do aplicativo. Você também precisará certificar-se de que a versão necessária do Windows Media Player esteja instalada no computador do usuário.
+Ao distribuir seu aplicativo, certifique-se de instalar AxInterop.WMPLib.dll e Interop.WMPLib.dll na pasta do aplicativo. Você também precisará certificar-se de que a versão Windows Media Player necessária está instalada no computador do usuário.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[**Criando o controle do Windows Media Player programaticamente**](creating-the-windows-media-player-control-programmatically.md)
+[**Criando o controle Windows Media Player programaticamente**](creating-the-windows-media-player-control-programmatically.md)
 </dt> <dt>
 
-[**Inserindo o controle do Windows Media Player em uma solução C#**](embedding-the-windows-media-player-control-in-a-c--solution.md)
+[**Incorporação do controle Windows Media Player em uma solução C#**](embedding-the-windows-media-player-control-in-a-c--solution.md)
 </dt> <dt>
 
-[**Inserindo o controle do Windows Media Player em uma solução Visual Basic .NET**](embedding-the-windows-media-player-control-in-a-visual-basic--net-solution.md)
+[**Incorporação do controle Windows Media Player em uma solução Visual Basic .NET**](embedding-the-windows-media-player-control-in-a-visual-basic--net-solution.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

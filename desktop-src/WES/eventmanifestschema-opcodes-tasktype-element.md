@@ -1,9 +1,9 @@
 ---
-title: opcodes (TaskType) elemento
+title: Elemento opcodes (TaskType)
 description: Define uma lista de opcodes específicos da tarefa.
 ms.assetid: 69e5228c-72ef-4041-bd2c-7c521341a358
 keywords:
-- código de eventos do elemento opcodes
+- Elemento opcodes EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1b2094e4a3ffebe3a66a5baf641a419be0b45c8c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 059f5707e82f4d939afa9660407da12360324b3cffbe2bf0d5c97b8bca544b5c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104295887"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118120563"
 ---
-# <a name="opcodes-tasktype-element"></a>opcodes (TaskType) elemento
+# <a name="opcodes-tasktype-element"></a>Elemento opcodes (TaskType)
 
 Define uma lista de opcodes específicos da tarefa.
 
@@ -30,7 +30,7 @@ Define uma lista de opcodes específicos da tarefa.
  />
 ```
 
-O elemento **opcodes** é definido pelo tipo complexo [**TaskType**](eventmanifestschema-tasktype-complextype.md) .
+O **elemento opcodes** é definido pelo [**tipo complexo TaskType.**](eventmanifestschema-tasktype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ O elemento **opcodes** é definido pelo tipo complexo [**TaskType**](eventmanife
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
@@ -50,7 +50,7 @@ O elemento **opcodes** é definido pelo tipo complexo [**TaskType**](eventmanife
 **Elemento pai**
 </dt> <dt>
 
-[**tarefa (TaskListtype)**](eventmanifestschema-task-tasklisttype-element.md)
+[**task (TaskListType)**](eventmanifestschema-task-tasklisttype-element.md)
 </dt> </dl>
 
  

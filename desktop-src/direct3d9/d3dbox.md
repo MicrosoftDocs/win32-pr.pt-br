@@ -1,7 +1,7 @@
 ---
 description: Define um volume.
 ms.assetid: 415a96bc-1621-4691-b87a-98ca22f0bf07
-title: Estrutura D3DBOX (D3D9Types. h)
+title: Estrutura D3DBOX (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 882f6aadf0d49284b30132d4f08a9c583e5c9d73
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 9b7e01641348594e962f546a431700db799600a08571bbb7cfaf13396e671036
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104172951"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118805509"
 ---
 # <a name="d3dbox-structure"></a>Estrutura D3DBOX
 
@@ -44,10 +44,10 @@ typedef struct D3DBOX {
 
 <dl> <dt>
 
-**Mantida**
+**Left**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -58,7 +58,7 @@ Posição do lado esquerdo da caixa no eixo x.
 **Top**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -66,10 +66,10 @@ Posição da parte superior da caixa no eixo y.
 
 </dd> <dt>
 
-**Certo**
+**Right**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -77,10 +77,10 @@ Posição do lado direito da caixa no eixo x.
 
 </dd> <dt>
 
-**Inferior**
+**Menor**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -91,7 +91,7 @@ Posição da parte inferior da caixa no eixo y.
 **Front**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -102,19 +102,19 @@ Posição da frente da caixa no eixo z.
 **Voltar**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Posição da parte de trás da caixa no eixo z.
+Posição da parte traseira da caixa no eixo z.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-**D3DBOX** inclui as bordas esquerda, superior e frontal; no entanto, as bordas direita, inferior e traseira não são incluídas. Por exemplo, uma caixa com 100 unidades de largura e começa em 0 (portanto, a inclusão de pontos até e incluindo 99) seria expressa com um valor de 0 para o membro esquerdo e um valor de 100 para o membro correto. Observe que um valor de 99 não é usado para o membro correto.
+**D3DBOX** inclui as bordas esquerda, superior e frontal; no entanto, as bordas direita, inferior e traseira não são incluídas. Por exemplo, uma caixa com 100 unidades de largura e começa em 0 (portanto, incluindo os pontos até e incluindo 99) seria expressa com um valor de 0 para o membro Left e um valor de 100 para o membro Right. Observe que um valor de 99 não é usado para o membro Right.
 
-As restrições de ordenação do lado observado para **D3DBOX** são da esquerda para a direita, de cima para baixo e de frente para trás.
+As restrições de ordenação lateral observadas para **D3DBOX** são da esquerda para a direita, de cima para baixo e de frente para trás.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -122,7 +122,7 @@ As restrições de ordenação do lado observado para **D3DBOX** são da esquerd
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 
@@ -130,7 +130,7 @@ As restrições de ordenação do lado observado para **D3DBOX** são da esquerd
 
 <dl> <dt>
 
-[Estruturas do Direct3D](dx9-graphics-reference-d3d-structures.md)
+[Estruturas Direct3D](dx9-graphics-reference-d3d-structures.md)
 </dt> </dl>
 
  

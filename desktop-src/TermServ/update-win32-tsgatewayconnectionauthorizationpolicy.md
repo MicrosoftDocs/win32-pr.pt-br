@@ -1,12 +1,12 @@
 ---
-title: Método Update da classe Win32_TSGatewayConnectionAuthorizationPolicy
-description: Atualiza a política de autorização de conexão do Área de Trabalho Remota atual (RD \ 160; CAP).
+title: Método update da classe Win32_TSGatewayConnectionAuthorizationPolicy dados
+description: Atualiza a política de Área de Trabalho Remota de conexão atual (RD \ 160; CAP).
 ms.assetid: 6d13d1b7-1c7d-4d22-b42c-36e0f4446e86
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota do método de atualização
-- Método Update Serviços de Área de Trabalho Remota, classe Win32_TSGatewayConnectionAuthorizationPolicy
-- Serviços de Área de Trabalho Remota de classe Win32_TSGatewayConnectionAuthorizationPolicy, método Update
+- Atualizar o método Serviços de Área de Trabalho Remota
+- Atualizar a Serviços de Área de Trabalho Remota , Win32_TSGatewayConnectionAuthorizationPolicy classe
+- Win32_TSGatewayConnectionAuthorizationPolicy classe Serviços de Área de Trabalho Remota , método Update
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 87b982030170e954342dc5ff99754dcb89afd0e3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2ec7c3d1802f4faa3da8e382d00aa14fc8b3e091baef9659ad45322ec2a909c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009442"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118850875"
 ---
-# <a name="update-method-of-the-win32_tsgatewayconnectionauthorizationpolicy-class"></a>Método Update da classe Win32 \_ TSGatewayConnectionAuthorizationPolicy
+# <a name="update-method-of-the-win32_tsgatewayconnectionauthorizationpolicy-class"></a>Método update da classe Win32 \_ TSGatewayConnectionAuthorizationPolicy
 
-Atualiza a RD CAP (política de autorização de conexão) do Área de Trabalho Remota atual.
+Atualiza a política atual Área de Trabalho Remota de autorização de conexão (RD CAP).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -60,58 +60,58 @@ uint32 Update(
 
 <dl> <dt>
 
-*Nome* \[ do no\]
+*Nome* \[ Em\]
 </dt> <dd>
 
 Nome do RD CAP. O nome deve ter 64 caracteres ou menos, exclusivo (o caso é ignorado) e não pode conter os seguintes caracteres reservados:
 
-<> :; " / \\ \| ? \*\[Guia\]
+<> : ; " / \\ \| ? \*\[TAB\]
 
 </dd> <dt>
 
-*Usergroupnames* \[ no\]
+*UserGroupNames* \[ Em\]
 </dt> <dd>
 
-Lista de nomes de grupos de usuários separados por ponto e vírgula. Os nomes são do formato *domínio \\ userGroupName*. Se o usuário pertencer a qualquer um desses grupos de usuários, o usuário terá permissão para acessar o servidor de gateway de área de trabalho remota.
+Lista de nomes de grupo de usuários separados por ponto e vírgula. Os nomes são do formato *Domain \\ UserGroupName*. Se o usuário pertencer a qualquer um desses grupos de usuários, o usuário terá permissão para acessar o servidor do Gateway de Área de Trabalho Remoto.
 
 </dd> <dt>
 
-*ComputerGroupNames* \[ no\]
+*ComputerGroupNames* \[ Em\]
 </dt> <dd>
 
-Lista de nomes de grupos de computadores separados por ponto e vírgula. Esse valor pode estar vazio. Os nomes são do formato *domínio \\ ComputerGroupName*. Se um valor for especificado, o computador cliente deverá pertencer a um desses grupos de computadores para que o usuário acesse o servidor de gateway de área de trabalho remota.
+Lista de nomes de grupos de máquinas separados por ponto e vírgula. Esse valor pode estar vazio. Os nomes são do formato *Domain \\ ComputerGroupName*. Se um valor for especificado, o computador cliente deverá pertencer a um desses grupos de computadores para que o usuário acesse o servidor do Gateway de Área de Trabalho Remoto.
 
 </dd> <dt>
 
-*Cartão inteligente* \[ no\]
+*Cartão Inteligente* \[ Em\]
 </dt> <dd>
 
-Especifica se os cartões inteligentes podem ser usados para autenticar com o servidor de gateway de área de trabalho remota.
+Especifica se os cartões inteligentes podem ser usados para autenticar com o servidor de Gateway de RD.
 
 </dd> <dt>
 
-*Senha* \[ do no\]
+*Senha* \[ Em\]
 </dt> <dd>
 
-Especifica se as senhas podem ser usadas para autenticar com o servidor de gateway de área de trabalho remota.
+Especifica se as senhas podem ser usadas para autenticar com o servidor de Gateway de RD.
 
 </dd> <dt>
 
-*Segurança segura* \[ no\]
+*SecureId* \[ Em\]
 </dt> <dd>
 
 Esse parâmetro é reservado para uso futuro.
 
 </dd> <dt>
 
-*Habilitado* \[ no\]
+*Habilitado* \[ Em\]
 </dt> <dd>
 
-Especifica se este RD CAP está habilitado.
+Especifica se essa RD CAP está habilitada.
 
 </dd> <dt>
 
-*DeviceRedirectionType* \[ no\]
+*DeviceRedirectionType* \[ Em\]
 </dt> <dd>
 
 Especifica quais tipos de dispositivo serão redirecionados.
@@ -135,89 +135,89 @@ Nenhum dispositivo será redirecionado.
 2
 </dt> <dd>
 
-Os dispositivos especificados não serão redirecionados. Os parâmetros *DiskDrivesDisabled*, *PrintersDisabled*, *SerialPortsDisabled*, *ClipboardDisabled* e *PlugAndPlayDevicesDisabled* controlam quais dispositivos não serão redirecionados.
+Os dispositivos especificados não serão redirecionados. Os *parâmetros DiskDrivesDisabled,* *PrintersDisabled,* *SerialPortsDisabled,* *ClipboardDisabled* e *PlugAndPlayDevicesDisabled* controlam quais dispositivos não serão redirecionados.
 
 </dd> </dl> </dd> <dt>
 
-*DiskDrivesDisabled* \[ no\]
+*DiskDrivesDisabled* \[ Em\]
 </dt> <dd>
 
-Especifica se o redirecionamento de unidade de disco será desabilitado se o parâmetro *DeviceRedirectionType* for "2".
+Especifica se o redirecionamento de unidade de disco deve ser desabilitado se *o parâmetro DeviceRedirectionType* for "2".
 
 </dd> <dt>
 
-*PrintersDisabled* \[ no\]
+*PrintersDisabled* \[ Em\]
 </dt> <dd>
 
-Especifica se o redirecionamento de impressora deve ser desabilitado se o parâmetro *DeviceRedirectionType* for "2".
+Especifica se o redirecionamento de impressora deve ser desabilitado se *o parâmetro DeviceRedirectionType* for "2".
 
 </dd> <dt>
 
-*SerialPortsDisabled* \[ no\]
+*SerialPortsDisabled* \[ Em\]
 </dt> <dd>
 
-Especifica se o redirecionamento de porta serial deve ser desabilitado se o parâmetro *DeviceRedirectionType* for "2".
+Especifica se o redirecionamento de porta serial deve ser desabilitado se *o parâmetro DeviceRedirectionType* for "2".
 
 </dd> <dt>
 
-*ClipboardDisabled* \[ no\]
+*ClipboardDisabled* \[ Em\]
 </dt> <dd>
 
-Especifica se o redirecionamento da área de transferência deve ser desabilitado se o parâmetro *DeviceRedirectionType* for "2".
+Especifica se o redirecionamento da área de transferência deve ser desabilitado se *o parâmetro DeviceRedirectionType* for "2".
 
 </dd> <dt>
 
-*PlugAndPlayDevicesDisabled* \[ no\]
+*PlugAndPlayDevicesDisabled* \[ Em\]
 </dt> <dd>
 
-Especifica se é para desabilitar o redirecionamento de dispositivos Plug and Play se o parâmetro *DeviceRedirectionType* for "2".
+Especifica se o redirecionamento de Plug and Play dispositivos se *o parâmetro DeviceRedirectionType* for "2".
 
 </dd> <dt>
 
-*IdleTimeout* \[ no\]
+*IdleTimeout* \[ Em\]
 </dt> <dd>
 
-Valor de tempo limite de ociosidade em minutos
+Valor de tempo de ociosidade em minutos
 
 </dd> <dt>
 
-*SessionTimeout* \[ no\]
+*SessionTimeout* \[ Em\]
 </dt> <dd>
 
-Valor de tempo limite da sessão em minutos
+Valor de tempo de tempo de sessão em minutos
 
 </dd> <dt>
 
-*SessionTimeoutAction* \[ no\]
+*SessionTimeoutAction* \[ Em\]
 </dt> <dd>
 
-Ação de tempo limite da sessão em minutos
+Ação de tempo de tempo de sessão em minutos
 
 </dd> <dt>
 
-*AllowOnlySDRServers* \[ no\]
+*AllowOnlySDRServers* \[ Em\]
 </dt> <dd>
 
-Se as conexões são permitidas apenas para servidores TS SDR
+Se as conexões só podem ser permitidas para servidores SDR TS
 
 </dd> <dt>
 
-*CookieAuthentication* \[ no\]
+*CookieAuthentication* \[ Em\]
 </dt> <dd>
 
-Indica se a autenticação de cookie pode ser usada para se conectar ao servidor Gateway TS
+Indica se a autenticação de cookie pode ser usada para se conectar ao servidor do Gateway do TS
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se o método tiver sucesso, ele retornará zero. Se o método não for bem-sucedido, ele retornará um valor diferente de zero. Para obter uma lista de códigos de erro, consulte [serviços de área de trabalho remota códigos de erro do provedor WMI](terminal-services-wmi-provider-error-codes.md).
+Se o método for bem-sucedido, ele retornará zero. Se o método não for bem-sucedido, ele retornará um valor diferente de zero. Para ver uma lista de códigos de erro, consulte Serviços de Área de Trabalho Remota códigos de erro do provedor [WMI.](terminal-services-wmi-provider-error-codes.md)
 
 ## <a name="remarks"></a>Comentários
 
 Você deve ser um membro do grupo Administradores para chamar esse método.
 
-Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). Os arquivos MOF não são instalados como parte do SDK (Software Development Kit) do Microsoft Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+arquivos Managed Object Format (MOF) contêm as definições para classes WMI (Instrumentação de Gerenciamento de Windows). Os arquivos MOF não são instalados como parte do Microsoft Windows Software Development Kit (SDK). Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, [consulte Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -227,8 +227,8 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                           |
-| Namespace<br/>                | \\TerminalServices da CIMv2 raiz \\<br/>                                                 |
-| MOF<br/>                      | <dl> <dt>TS. mof</dt> </dl> |
+| Namespace<br/>                | \\CiMv2 \\ TerminalServices raiz<br/>                                                 |
+| MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 
 
@@ -237,7 +237,7 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 
 <dl> <dt>
 
-[**\_TSGatewayConnectionAuthorizationPolicy Win32**](win32-tsgatewayconnectionauthorizationpolicy.md)
+[**Win32 \_ TSGatewayConnectionAuthorizationPolicy**](win32-tsgatewayconnectionauthorizationpolicy.md)
 </dt> </dl>
 
  

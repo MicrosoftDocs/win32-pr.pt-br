@@ -13,7 +13,7 @@ ms.locfileid: "118635994"
 ---
 # <a name="generating-a-customization-transform"></a>Gerando uma transformação de personalização
 
-Você pode gerar um arquivo de transformação usando [**MsiDatabaseGenerateTransform**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabasegeneratetransforma) ou o [**método GenerateTransform**](database-generatetransform.md) do [**objeto Database**](database-object.md). um exemplo disso é fornecido no SDK do Windows Installer como o WiGenXfm.vbs do utilitário. o trecho a seguir, Gen.vbs, também ilustra o método de **transformação** e é para uso com Windows Host de Script.
+Você pode gerar um arquivo de transformação usando [**MsiDatabaseGenerateTransform**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabasegeneratetransforma) ou o [**método GenerateTransform**](database-generatetransform.md) do objeto [**Database**](database-object.md). Um exemplo disso é fornecido no SDK Windows Instalador do WiGenXfm.vbs. O snippet a seguir, Gen.vbs, também ilustra o **método GenerateTransform** e é para uso com Windows Host de Script.
 
 
 ```VB
@@ -44,9 +44,9 @@ Dim transform : transform = Database2.GenerateTransform(Database1,
 
 
 
-Para gerar o arquivo de transformação MNPtrans. MST do banco de dados MNP2000.msi original e o banco de dados de MNP2000t.msi que você modificou na [personalização de um banco de dados original](customizing-an-original-database.md), altere os diretórios para a pasta que contém Gen.vbs, o banco de dados original e o banco de dados do instalador atualizado e insira a linha de comando a seguir.
+Para gerar o arquivo de transformação MNPtrans.mst do banco de dados original do MNP2000.msi e do banco de dados do MNP2000t.msi que você modificou em Personalização de um Banco de Dados [Original](customizing-an-original-database.md), altere os diretórios para a pasta que contém Gen.vbs, o banco de dados original e o banco de dados do instalador atualizado e insira a linha de comando a seguir.
 
-**Cscript.exe Gen.vbs MNP2000.msi MNP2000t.msi MNPtrans. MST**
+**Cscript.exe Gen.vbs MNP2000.msi MNP2000t.msi MNPtrans.mst**
 
 [Continuar](adding-summary-information-to-customization-transform.md)
 
