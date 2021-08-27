@@ -16,12 +16,12 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 8feace72eeb51ed0904ad748892ca3c1b3adea9c8ca6c97ac7a76ea11890dd08
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2f5772429fa0cd7f2f45009ff1867141a845088b
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117922424"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122885489"
 ---
 # <a name="swbemobjectexgettext_-method"></a>Método SWbemObjectEx. GetText \_
 
@@ -49,7 +49,7 @@ strObj = .GetText_( _
 *iTextFormat* \[ no\]
 </dt> <dd>
 
-Obrigatórios. Um valor de [**WbemObjectTextFormatEnum**](/windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemobjecttextformatenum) que especifica o formato XML resultante.
+Obrigatório. Um valor de [**WbemObjectTextFormatEnum**](/windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemobjecttextformatenum) que especifica o formato XML resultante.
 
 </dd> <dt>
 
@@ -113,8 +113,8 @@ Ao construir seu [**SWbemNamedValueSet**](swbemnamedvalueset.md), somente os seg
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -135,7 +135,7 @@ Ao construir seu [**SWbemNamedValueSet**](swbemnamedvalueset.md), somente os seg
 <td>PathLevel</td>
 <td><strong>VT-I4</strong><br/> O padrão é 0 (zero). Os valores possíveis são:<br/>
 <ul>
-<li>0: um <CLASS> <INSTANCE> elemento ou é criado dependendo se o objeto é uma classe ou instância.</li>
+<li>0: uma &lt; classe &gt; ou <INSTANCE> elemento é criado dependendo se o objeto é uma classe ou instância.</li>
 <li>1: um <VALUE.NAMEDOBJECT> elemento é gerado.</li>
 <li>2: um <VALUE.OBJECTWITHLOCALPATH> elemento é gerado.</li>
 <li>3: um <VALUE.OBJECTWITHPATH> elemento é gerado.</li>

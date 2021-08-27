@@ -7,12 +7,12 @@ keywords:
 - Active Directory de esquema, lendo o esquema abstrato
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 02d7fadba33bcc5e93bf2b9e89934e8b440d559b
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: b7095dc4fb5ffe5f11f64781ecd423a60b3d434d
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "103823633"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122881308"
 ---
 # <a name="reading-the-abstract-schema"></a>Lendo o esquema abstrato
 
@@ -40,7 +40,7 @@ Set adschema = GetObject("LDAP://schema")
 
 
 
-Use uma cadeia de vinculação semelhante, "LDAP://schema/ <object> ", para associar diretamente a uma classe ou a uma entrada de atributo no esquema abstrato. Nessa cadeia de caracteres, " &lt; Object &gt; " é o **lDAPDisplayName** de uma classe ou atributo. Para classes, associe-se à interface [**IADsClass**](/windows/desktop/api/iads/nn-iads-iadsclass) ; para atributos, associe à interface [**iadsproperty**](/windows/desktop/api/iads/nn-iads-iadsproperty) .
+Use uma cadeia de vinculação semelhante, "LDAP://schema/ &lt; Object &gt; ", para associar diretamente a uma classe ou a uma entrada de atributo no esquema abstrato. Nessa cadeia de caracteres, " &lt; Object &gt; " é o **lDAPDisplayName** de uma classe ou atributo. Para classes, associe-se à interface [**IADsClass**](/windows/desktop/api/iads/nn-iads-iadsclass) ; para atributos, associe à interface [**iadsproperty**](/windows/desktop/api/iads/nn-iads-iadsproperty) .
 
 
 ```C++
@@ -82,10 +82,10 @@ Para classes, a tabela a seguir lista as principais propriedades fornecidas pelo
 
 
 
- 
+ 
 
 O esquema abstrato é armazenado no objeto de **subesquema** no contêiner de esquema. Para obter o nome distinto do objeto de **subesquema** , associe-o a RootDSE e leia o atributo **subSchemaSubEntry** , conforme descrito em [associação sem servidor e RootDSE](serverless-binding-and-rootdse.md). Lembre-se de que é mais eficiente ler o esquema abstrato ligando-se a "LDAP://schema", do que associando diretamente ao objeto de **subesquema** .
 
- 
+ 
 
- 
+ 

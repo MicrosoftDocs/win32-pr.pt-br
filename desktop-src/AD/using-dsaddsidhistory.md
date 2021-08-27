@@ -4,29 +4,29 @@ description: Este tópico descreve como usar a função DsAddSidHistory.
 ms.assetid: cbf4983c-551d-4771-870e-a192ed898eb7
 ms.tgt_platform: multiple
 keywords:
-- Usando o DsAddSidHistory Active Directory
-- Active Directory Active Directory , usando, Usando DsAddSidHistory
+- Usando o Active Directory DsAddSidHistory
+- Active Directory Active Directory usando, Usando DsAddSidHistory
 - DsAddSidHistory Active Directory, usando
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: afb37e09d5c7b337717f27b0e68ad17331ee27270da9e7b79a0d6bba791d2e5a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c6e987a55f7fe39a8e4705f6aca9e44189e0f7a2
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118182520"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122881840"
 ---
 # <a name="using-dsaddsidhistory"></a>Usando DsAddSidHistory
 
-A [**função DsAddSidHistory**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsaddsidhistorya) obtém o SID (identificador de segurança) da conta primária de uma entidade de segurança de um domínio (o domínio de origem) e adiciona-o ao atributo **sIDHistory** de uma entidade de segurança em outro domínio (destino) em uma floresta diferente. Quando o domínio de origem está Windows modo nativo 2000, essa função também recupera os valores **sIDHistory** da entidade de segurança de origem e os adiciona ao **sIDHistory** da entidade de segurança de destino.
+A [**função DsAddSidHistory**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsaddsidhistorya) obtém o SID (identificador de segurança) da conta primária de uma entidade de segurança de um domínio (o domínio de origem) e adiciona-o ao atributo **sIDHistory** de uma entidade de segurança em outro domínio (destino) em uma floresta diferente. Quando o domínio de origem está no modo nativo Windows 2000, essa função também recupera os valores **sIDHistory** da entidade de segurança de origem e os adiciona ao **sIDHistory** da entidade de destino.
 
 Adicionar SIDs ao **sIDHistory** de uma entidade de segurança é uma operação sensível à segurança que efetivamente concede à entidade de segurança de destino acesso a todos os recursos acessíveis à entidade de segurança de origem, desde que existam confianças de domínios de recursos aplicáveis para o domínio de destino.
 
-Em um modo nativo Windows 2000, um logon de usuário cria um token de acesso que contém os SIDs de grupo e SID da conta primária do usuário, bem como o **usuário sIDHistory** e **o sIDHistory** dos grupos dos quais o usuário é membro. Ter esses SIDs antigos (**valores sIDHistory)** no token do usuário concede ao usuário acesso aos recursos protegidos por ACLs (listas de controle de acesso) que contêm os SIDs antigos.
+Em um modo nativo Windows 2000, um logon de usuário cria um token de acesso que contém os SIDs de grupo e SID da conta primária do usuário, bem como o **usuário sIDHistory** e **o sIDHistory** dos grupos dos quais o usuário é membro. Ter esses SIDs antigos **(valores sIDHistory)** no token do usuário concede ao usuário acesso aos recursos protegidos por ACLs (listas de controle de acesso) que contêm os SIDs antigos.
 
-Essa operação facilita determinados Windows de implantação 2000. Em particular, ele dá suporte a um cenário no qual as contas em uma nova floresta do Windows 2000 são criadas para usuários e grupos que já existem em um ambiente de produção Windows NT 4.0. Ao colocar o SID da conta Windows NT 4.0 na conta do Windows 2000 **sIDHistory,** o acesso aos recursos de rede é preservado para o usuário que faz logon em sua nova conta do Windows 2000.
+Essa operação facilita determinados Windows de implantação 2000. Em particular, ele dá suporte a um cenário no qual as contas em uma nova floresta do Windows 2000 são criadas para usuários e grupos que já existem em um ambiente de produção Windows NT 4.0. Ao colocar o SID da conta do Windows NT 4.0 na conta do Windows 2000 **sIDHistory,** o acesso aos recursos de rede é preservado para o logon do usuário em sua nova conta do Windows 2000.
 
-[**O DsAddSidHistory**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsaddsidhistorya) também dá suporte à migração de BDCs (controladores de domínio de backup) do Windows NT 4.0 (ou DCs e servidores membros em um domínio de modo nativo Windows 2000) para um domínio Windows 2000 como servidores membros. Essa migração requer a criação, no domínio de destino Windows 2000, de grupos locais de domínio que contêm, em **seu sIDHistory**, os SIDs primários dos grupos locais definidos no BDC (ou grupos locais de domínio referenciados em ACLs nos servidores Windows 2000) no domínio de origem. Ao criar um grupo local de destino que contém **o sIDHistory** e todos os membros do grupo local de origem, o acesso aos recursos de servidor migrados, protegidos por ACLs que referenciam o grupo local de origem, é mantido para todos os membros.
+[**O DsAddSidHistory**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsaddsidhistorya) também dá suporte à migração de BDCs (controladores de domínio de backup) do Windows NT 4.0 (ou DCs e servidores membros em um domínio Windows 2000) para um domínio Windows 2000 como servidores membros. Essa migração requer a criação, no domínio do Windows 2000, de grupos locais de domínio que contêm, em **seu sIDHistory,** os SIDs primários dos grupos locais definidos no BDC (ou grupos locais de domínio referenciados em ACLs nos servidores Windows 2000) no domínio de origem. Ao criar um grupo local de destino que contém **o sIDHistory** e todos os membros do grupo local de origem, o acesso aos recursos de servidor migrados, protegidos por ACLs que referenciam o grupo local de origem, é mantido para todos os membros.
 
 > [!Note]  
 > O uso [**de DsAddSidHistory**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsaddsidhistorya) requer uma compreensão de suas implicações administrativas e de segurança mais amplas nesses e em outros cenários. Para obter mais informações, consulte o white paper "Planning Migration from Windows NT to Microsoft Windows 2000", fornecido como Dommig.doc nas Ferramentas de Suporte do Windows 2000. Esta documentação também pode ser encontrada no CD do produto em ferramentas \\ de \\ suporte.
@@ -78,16 +78,16 @@ HKEY_LOCAL_MACHINE
 
 Definir esse valor habilita chamadas RPC pelo transporte TCP. Isso é necessário porque, por padrão, as interfaces SAMRPC só podem ser remotas em pipes nomeados. O uso de pipes nomeados resulta em um sistema de gerenciamento de credenciais adequado para usuários conectados interativamente que fazem chamadas em rede, mas não é flexível para um processo do sistema que faz chamadas de rede com credenciais fornecidas pelo usuário. RPC sobre TCP é mais adequado para essa finalidade. Definir esse valor não diminui a segurança do sistema. Se esse valor for criado ou alterado, o controlador de domínio de origem deverá ser reiniciado para que essa configuração entre em vigor.
 
-Um novo grupo local, " $$$", deve ser criado no domínio de origem <SrcDomainName> para fins de auditoria.
+Um novo grupo local, " &lt; SrcDomainName $$$", deve ser criado no domínio de origem &gt; para fins de auditoria.
 
 ## <a name="auditing"></a>Auditoria
 
 [**As operações DsAddSidHistory**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsaddsidhistorya) são auditadas para garantir que os administradores de domínio de origem e de destino sejam capazes de detectar quando essa função foi executado. A auditoria é obrigatória nos domínios de origem e de destino. **DsAddSidHistory** verifica se o Modo de Auditoria está em cada domínio e se a auditoria do Gerenciamento de Conta de eventos de Êxito/Falha está em. No domínio de destino, um evento de auditoria exclusivo "Adicionar Histórico de Sid" é gerado para cada operação **DsAddSidHistory bem-sucedida** ou com falha.
 
-Os eventos de auditoria exclusivos de auditoria "Adicionar Histórico de Sid" não estão disponíveis Windows NT sistemas 4.0. Para gerar eventos de auditoria que refletem inequivocamente o uso de [**DsAddSidHistory**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsaddsidhistorya) no domínio de origem, ele executa operações em um grupo especial cujo nome é o identificador exclusivo no log de auditoria. Um grupo local, " $$$", cujo nome é composto pelo nome NetBIOS do domínio de origem anexado com três cifrões <SrcDomainName> ($) (código ASCII = 0x24 e Unicode = U+0024), deve ser criado no controlador de domínio de origem antes de chamar **DsAddSidHistory**. Cada usuário de origem e grupo global que é um destino dessa operação é adicionado e removido da associação desse grupo. Isso gera eventos de auditoria Adicionar Membro e Excluir Membro no domínio de origem, que podem ser monitorados pesquisando eventos que referenciam o nome do grupo.
+Eventos de auditoria exclusivos de auditoria "Adicionar Histórico de Sid" não estão disponíveis Windows NT sistemas 4.0. Para gerar eventos de auditoria que refletem inequivocamente o uso de [**DsAddSidHistory**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsaddsidhistorya) no domínio de origem, ele executa operações em um grupo especial cujo nome é o identificador exclusivo no log de auditoria. Um grupo local, " SrcDomainName $$$", cujo nome é composto pelo nome NetBIOS do domínio de origem anexado com três cifrões &lt; &gt; ($) (código ASCII = 0x24 e Unicode = U+0024), deve ser criado no controlador de domínio de origem antes de chamar **DsAddSidHistory**. Cada usuário de origem e grupo global que é um destino dessa operação é adicionado e removido da associação desse grupo. Isso gera eventos de auditoria Adicionar Membro e Excluir Membro no domínio de origem, que podem ser monitorados pesquisando eventos que referenciam o nome do grupo.
 
 > [!Note]  
-> [**As operações DsAddSidHistory**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsaddsidhistorya) em grupos locais em um Windows NT 4.0 ou domínio de origem de modo misto do Windows 2000 não podem ser auditadas porque os grupos locais não podem ser membros de outro grupo local e, portanto, não podem ser adicionados ao grupo local especial " <SrcDomainName> $$$". Essa falta de auditoria não apresenta um problema de segurança para o domínio de origem, pois o acesso ao recurso de domínio de origem não é afetado por essa operação. Adicionar o SID de um grupo local de origem a um grupo local de destino não concede acesso aos recursos de origem, protegidos por esse grupo local, a nenhum usuário adicional. A adição de membros ao grupo local de destino não concede a eles acesso aos recursos de origem. Os membros adicionados recebem acesso somente aos servidores no domínio de destino migrados do domínio de origem, que podem ter recursos protegidos pelo SID do grupo local de origem.
+> As operações [**DsAddSidHistory**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsaddsidhistorya) em grupos locais em um domínio de origem de modo misto do Windows NT 4.0 ou Windows 2000 não podem ser auditadas porque os grupos locais não podem ser membros de outro grupo local e, portanto, não podem ser adicionados ao grupo local especial " &lt; SrcDomainName &gt; $$$". Essa falta de auditoria não apresenta um problema de segurança para o domínio de origem, pois o acesso ao recurso de domínio de origem não é afetado por essa operação. Adicionar o SID de um grupo local de origem a um grupo local de destino não concede acesso aos recursos de origem, protegidos por esse grupo local, a nenhum usuário adicional. A adição de membros ao grupo local de destino não concede a eles acesso aos recursos de origem. Os membros adicionados recebem acesso somente aos servidores no domínio de destino migrados do domínio de origem, que podem ter recursos protegidos pelo SID do grupo local de origem.
 
  
 
@@ -95,7 +95,7 @@ Os eventos de auditoria exclusivos de auditoria "Adicionar Histórico de Sid" n�
 
 [**DsAddSidHistory**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsaddsidhistorya) impõe as seguintes medidas de segurança:
 
--   Chamadas de uma Windows 2000, as credenciais do chamador são usadas para autenticar e proteger a privacidade da chamada RPC para o controlador de domínio de destino. Se *SrcDomainCreds* não for **NULL,** a estação de trabalho e o DC de destino deverão dar suporte à criptografia de 128 bits para proteger a privacidade das credenciais. Se a criptografia de 128 bits não estiver disponível e *o SrcDomainCreds* for fornecido, a chamada deverá ser feita no DC de destino.
+-   Chamadas de uma Windows 2000, as credenciais do chamador são usadas para autenticar e proteger a privacidade da chamada RPC para o controlador de domínio de destino. Se *SrcDomainCreds* não for **NULL,** a estação de trabalho e o DC de destino deverão dar suporte à criptografia de 128 bits para proteger a privacidade das credenciais. Se a criptografia de 128 bits não estiver disponível e *SrcDomainCreds* for fornecido, a chamada deverá ser feita no DC de destino.
 -   O controlador de domínio de destino se comunica com o controlador de domínio de origem usando *SrcDomainCreds* ou as credenciais do chamador para autenticar mutuamente e proteger a integridade da leitura do SID da conta de origem (usando uma busca SAM) e **sIDHistory** (usando uma leitura LDAP).
 
 ## <a name="threat-models"></a>Modelos de ameaça
@@ -104,56 +104,16 @@ A tabela a seguir lista as possíveis ameaças associadas à chamada [**DsAddSid
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Ameaça potencial</th>
-<th>Medida de segurança</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Man in the Middle Attack<br/> Um usuário não autorizado intercepta o <em>SID</em> de consulta da chamada de retorno do objeto de origem, substituindo o SID do objeto de origem por um SID arbitrário para inserção em um objeto de destino SIDhistory.<br/></td>
-<td>O <em>SID de lookup do objeto de</em> origem é um RPC autenticado, usando as credenciais de administrador do chamador, com proteção de mensagem de integridade do pacote. Isso garante que a chamada de retorno não possa ser modificada sem detecção. O controlador de domínio de destino cria um evento de auditoria adicionar histórico de SID exclusivo que reflete o SID adicionado à conta &quot; &quot; de destino <strong>sIDHistory</strong>.<br/></td>
-</tr>
-<tr class="even">
-<td>Domínio de origem do Troia<br/> Um usuário não autorizado cria um domínio de origem de Troia Em uma rede privada que tem o mesmo SID de domínio e alguns dos mesmos SIDs de conta que o &quot; &quot; domínio de origem legítimo. Em seguida, o usuário não autorizado tenta executar <a href="/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsaddsidhistorya"><strong>DsAddSidHistory</strong></a> em um domínio de destino para obter o SID de uma conta de origem. Isso é feito sem a necessidade das credenciais do Administrador de Domínio de origem real e sem deixar uma trilha de auditoria no domínio de origem real. O método do usuário não autorizado para criar o domínio de origem do Troia De troia pode ser um dos seguintes:
-<ul>
-<li>Obtenha uma cópia (backup do BDC) do domínio de origem SAM.</li>
-<li>Crie um novo domínio, alterando o SID de domínio no disco para corresponder ao SID de domínio de origem legítimo e, em seguida, crie usuários suficientes para criar uma conta com o SID desejado.</li>
-<li>Crie uma réplica BDC. Isso requer credenciais de administrador do domínio de origem. Em seguida, o usuário não autorizado leva a réplica para uma rede privada para implementar o ataque.</li>
-</ul>
-<br/></td>
-<td>Embora haja muitas maneiras para um usuário não autorizado recuperar ou criar um SID de objeto de origem desejado, o usuário não autorizado não pode usá-lo para atualizar o <strong>sIDHistory</strong> de uma conta sem ser membro do grupo administradores de domínio de destino. Como a verificação, no controlador de domínio de destino, para associação de Administrador de Domínio é em código, no DC de destino, não há nenhum método para fazer uma modificação de disco para alterar os dados de controle de acesso que protegem essa função. Uma tentativa de clonar uma conta de origem do Troia É auditada no domínio de destino. Esse ataque é atenuado com a reserva de associação no grupo Administradores de Domínio apenas para indivíduos altamente confiáveis.<br/></td>
-</tr>
-<tr class="odd">
-<td>Modificação no disco do histórico de SID<br/> Um usuário sofisticado não autorizado, com credenciais de Administrador de Domínio e com acesso físico a um controlador de domínio no domínio de destino, pode modificar um valor <strong>sIDHistory</strong> da conta no disco.<br/></td>
-<td>Essa tentativa não está habilitada com o <a href="/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsaddsidhistorya"><strong>uso de DsAddSidHistory.</strong></a> Esse ataque é mitigado ao impedir o acesso físico a controladores de domínio a todos, exceto administradores altamente confiáveis.<br/></td>
-</tr>
-<tr class="even">
-<td>Código não autorizado usado para remover proteções<br/> Um usuário não autorizado ou um administrador não autorizado com acesso físico ao código do serviço de diretório poderia criar um código não autorizado que:
-<ol>
-<li>Remove a verificação de associação no grupo Administradores de domínio no código.</li>
-<li>Altera as chamadas no controlador de domínio de origem que aponta o SID para um LookupSidFromName que não é auditado.</li>
-<li>Remove as chamadas de log de auditoria.</li>
-</ol>
-<br/></td>
-<td>Alguém com acesso físico ao código DS e com conhecimento suficiente para criar código não autorizado tem a capacidade de modificar arbitrariamente o atributo <strong>SIDHistory</strong> de uma conta. A API <a href="/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsaddsidhistorya"><strong>DsAddSidHistory</strong></a> não aumenta esse risco de segurança.<br/></td>
-</tr>
-<tr class="odd">
-<td>Recursos vulneráveis a SIDs roubados<br/> Se um usuário não autorizado tiver tido êxito no uso de um dos métodos descritos aqui para modificar um <strong>SIDHistory</strong>de conta e se os domínios de recursos de interesse confiarem no domínio de conta de usuário não autorizado, o usuário não autorizado poderá obter acesso não autorizado aos recursos do Sid roubado, potencialmente sem deixar uma trilha de auditoria no domínio da conta do qual o Sid foi roubado.<br/></td>
-<td>Os administradores de domínio de recursos protegem seus recursos Configurando apenas as relações de confiança que fazem sentido de uma perspectiva de segurança. O uso de <a href="/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsaddsidhistorya"><strong>DsAddSidHistory</strong></a> é restrito, no domínio de destino confiável, aos membros do grupo de administradores de domínio que já têm permissões amplas dentro do escopo de suas responsabilidades.<br/></td>
-</tr>
-<tr class="even">
-<td>Domínio de destino não autorizado<br/> um usuário não autorizado cria um domínio Windows 2000 com uma conta cujo <strong>sIDHistory</strong> contém um SID que foi roubado de um domínio de origem. O usuário não autorizado usa essa conta para acesso não autorizado aos recursos.<br/></td>
-<td>O usuário não autorizado requer credenciais de administrador para o domínio de origem a fim de usar o <a href="/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsaddsidhistorya"><strong>DsAddSidHistory</strong></a>e deixa uma trilha de auditoria no controlador de domínio de origem. O domínio de destino invasor obtém acesso não autorizado somente em outros domínios que confiam no domínio não autorizado, o que exige privilégios de administrador nesses domínios de recurso.<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Ameaça potencial | Medida de segurança | 
+|------------------|------------------|
+| Man in the Middle Attack<br /> Um usuário não autorizado intercepta o <em>SID</em> de consulta da chamada de retorno do objeto de origem, substituindo o SID do objeto de origem por um SID arbitrário para inserção em um objeto de destino SIDhistory.<br /> | O <em>SID de lookup do objeto de</em> origem é um RPC autenticado, usando as credenciais de administrador do chamador, com proteção de mensagem de integridade do pacote. Isso garante que a chamada de retorno não possa ser modificada sem detecção. O controlador de domínio de destino cria um evento de auditoria exclusivo "Adicionar Histórico de SID" que reflete o SID adicionado à conta de <strong>destino sIDHistory</strong>.<br /> | 
+| Domínio de origem do Troia<br /> Um usuário não autorizado cria um domínio de origem "Troia" em uma rede privada que tem o mesmo SID de domínio e alguns dos mesmos SIDs de conta que o domínio de origem legítimo. Em seguida, o usuário não autorizado tenta executar <a href="/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsaddsidhistorya"><strong>DsAddSidHistory</strong></a> em um domínio de destino para obter o SID de uma conta de origem. Isso é feito sem a necessidade das credenciais do Administrador de Domínio de origem real e sem deixar uma trilha de auditoria no domínio de origem real. O método do usuário não autorizado para criar o domínio de origem do Troia De troia pode ser um dos seguintes:<ul><li>Obtenha uma cópia (backup do BDC) do domínio de origem SAM.</li><li>Crie um novo domínio, alterando o SID de domínio no disco para corresponder ao SID de domínio de origem legítimo e, em seguida, crie usuários suficientes para criar uma conta com o SID desejado.</li><li>Crie uma réplica BDC. Isso requer credenciais de administrador do domínio de origem. Em seguida, o usuário não autorizado leva a réplica para uma rede privada para implementar o ataque.</li></ul><br /> | Embora haja muitas maneiras para um usuário não autorizado recuperar ou criar um SID de objeto de origem desejado, o usuário não autorizado não pode usá-lo para atualizar o <strong>sIDHistory</strong> de uma conta sem ser membro do grupo administradores de domínio de destino. Como a verificação, no controlador de domínio de destino, para associação de Administrador de Domínio é em código, no DC de destino, não há nenhum método para fazer uma modificação de disco para alterar os dados de controle de acesso que protegem essa função. Uma tentativa de clonar uma conta de origem do Troia É auditada no domínio de destino. Esse ataque é atenuado com a reserva de associação no grupo Administradores de Domínio apenas para indivíduos altamente confiáveis.<br /> | 
+| Modificação no disco do histórico de SID<br /> Um usuário sofisticado não autorizado, com credenciais de Administrador de Domínio e com acesso físico a um controlador de domínio no domínio de destino, pode modificar um valor <strong>sIDHistory</strong> da conta no disco.<br /> | Essa tentativa não está habilitada com o <a href="/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsaddsidhistorya"><strong>uso de DsAddSidHistory.</strong></a> Esse ataque é atenuado impedindo o acesso físico aos controladores de domínio a todos, exceto administradores altamente confiáveis.<br /> | 
+| Código não protegido usado para remover proteções<br /> Um usuário não autorizado ou administrador não autorizado com acesso físico ao código do Serviço de Diretório pode criar código não autorizado que:<ol><li>Remove a verificação de associação no grupo Administradores de Domínio no código.</li><li>Altera as chamadas no controlador de domínio de origem que aponta o SID para um LookupSidFromName que não é auditado.</li><li>Remove chamadas de log de auditoria.</li></ol><br /> | Alguém com acesso físico ao código DS e com conhecimento suficiente para criar código não autorizado tem a capacidade de modificar arbitrariamente o atributo <strong>sIDHistory</strong> de uma conta. A API <a href="/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsaddsidhistorya"><strong>DsAddSidHistory</strong></a> não aumenta esse risco de segurança.<br /> | 
+| Recursos vulneráveis a SIDs roubados<br /> Se um usuário não autorizado tiver êxito em usar um dos métodos descritos aqui para modificar uma conta <strong>sIDHistory</strong>e se os domínios de recursos de interesse confiarem no domínio de conta de usuário não autorizado, o usuário não autorizado poderá obter acesso não autorizado aos recursos do SID roubado, potencialmente sem deixar uma trilha de auditoria no domínio da conta do qual o SID foi roubado.<br /> | Os administradores de domínio de recursos protegem seus recursos configurando apenas as relações de confiança que fazem sentido de uma perspectiva de segurança. O uso <a href="/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsaddsidhistorya"><strong>de DsAddSidHistory</strong></a> é restrito, no domínio de destino confiável, a membros do grupo Administradores de Domínio que já têm permissões amplas dentro do escopo de suas responsabilidades.<br /> | 
+| Domínio de destino não está em operação<br /> Um usuário não autorizado cria um domínio Windows 2000 com uma conta cujo <strong>sIDHistory</strong> contém um SID que foi roubado de um domínio de origem. O usuário não autorizado usa essa conta para acesso não autorizado aos recursos.<br /> | O usuário não autorizado requer credenciais de Administrador para o domínio de origem para usar <a href="/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsaddsidhistorya"><strong>DsAddSidHistory</strong></a>e deixa uma trilha de auditoria no controlador de domínio de origem. O domínio de destino não autorizado obtém acesso não autorizado somente em outros domínios que confiam no domínio não autorizado, o que requer privilégios de Administrador nesses domínios de recurso.<br /> | 
+
 
 
 
@@ -161,12 +121,12 @@ A tabela a seguir lista as possíveis ameaças associadas à chamada [**DsAddSid
 
 ## <a name="operational-constraints"></a>Restrições operacionais
 
-Esta seção descreve as restrições operacionais do uso da função [**DsAddSidHistory**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsaddsidhistorya) .
+Esta seção descreve as restrições operacionais do uso [**da função DsAddSidHistory.**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsaddsidhistorya)
 
-O SID de *SrcPrincipal* já não deve existir na floresta de destino, seja como um SID de conta primária ou no **SIDHistory** de uma conta. A exceção é que [**DsAddSidHistory**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsaddsidhistorya) não gera um erro ao tentar adicionar um SID a um **SIDHistory** que contém um SID idêntico. Esse comportamento permite que o **DsAddSidHistory** seja executado várias vezes com entrada idêntica, resultando em êxito e em um estado final consistente, para a facilidade de uso do desenvolvedor de ferramentas.
+O SID *de SrcPrincipal* ainda não deve existir na floresta de destino, seja como um SID de conta primária ou no **sIDHistory** de uma conta. A exceção é [**que DsAddSidHistory**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsaddsidhistorya) não gera um erro ao tentar adicionar um SID a **um sIDHistory** que contém um SID idêntico. Esse comportamento permite que **DsAddSidHistory** seja executado várias vezes com entrada idêntica, resultando em êxito e um estado final consistente para a facilidade de uso do desenvolvedor de ferramentas.
 
 > [!Note]  
-> A latência de replicação de catálogo global pode fornecer uma janela durante a qual SIDs duplicados podem ser criados. No entanto, os SIDs duplicados podem ser facilmente excluídos por um administrador.
+> A latência de replicação do Catálogo Global pode fornecer uma janela durante a qual os SIDs duplicados podem ser criados. No entanto, SIDs duplicados podem ser facilmente excluídos por um administrador.
 
  
 
@@ -177,22 +137,22 @@ O SID de *SrcPrincipal* já não deve existir na floresta de destino, seja como 
 
     <dl> Grupo local  
     Grupo global  
-    grupo de domínio local (somente Windows modo nativo do 2000)  
-    grupo Universal (somente Windows modo nativo de 2000)  
+    Grupo local de domínio (Windows somente no modo nativo 2000)  
+    Grupo universal (Windows somente no modo nativo 2000)  
     </dl>
 
-Os tipos de objeto de *SrcPrincipal* e *DstPrincipal* devem corresponder.
+Os tipos de objeto *de SrcPrincipal* e *DstPrincipal* devem corresponder.
 
--   Se *SrcPrincipal* for um usuário, *DstPrincipal* deverá ser um usuário.
--   Se *SrcPrincipal* for um grupo local ou de domínio, *DstPrincipal* deverá ser um grupo de domínio local.
--   Se *SrcPrincipal* for um grupo global ou universal, *DstPrincipal* deverá ser um grupo global ou universal.
+-   Se *SrcPrincipal* for um Usuário, *DstPrincipal* deverá ser um Usuário.
+-   Se *SrcPrincipal* for um grupo local ou de domínio local, *DstPrincipal* deverá ser um grupo local de domínio.
+-   Se *SrcPrincipal* for um Grupo Global ou Universal, *DstPrincipal* deverá ser um Grupo Global ou Universal.
 
 *SrcPrincipal* e *DstPrincipal* não podem ser um dos seguintes tipos: ([**DsAddSidHistory**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsaddsidhistorya) falha com um erro nesses casos)
 
 -   Computador (estação de trabalho ou controlador de domínio)
 -   Confiança entre domínios
--   Conta duplicada temporária (um recurso virtualmente não utilizado, um herdado do LANman)
--   Contas com SIDs bem conhecidos. SIDs bem conhecidos são idênticos em todos os domínios; portanto, adicioná-los a um **sIDHistory** violaria o requisito de exclusividade de SID de uma floresta Windows 2000. As contas com SIDs bem conhecidos incluem os seguintes grupos locais:
+-   Conta duplicada temporária (recurso praticamente nãoutilado, um legado de LANman)
+-   Contas com SIDs bem conhecidos. SIDs bem conhecidos são idênticos em cada domínio; Portanto, adiá-los a **um sIDHistory** violaria o requisito de exclusividade do SID de uma floresta Windows 2000. Contas com SIDs bem conhecidos incluem os seguintes grupos locais:
 
     <dl> Operadores de conta  
     Administradores  
@@ -204,63 +164,63 @@ Os tipos de objeto de *SrcPrincipal* e *DstPrincipal* devem corresponder.
     Usuários  
     </dl>
 
-Se *SrcPrincipal* tiver um RID (identificador relativo) bem conhecido e um prefixo específico de domínio, ou seja, administradores de domínio, usuários de domínio e computadores de domínio, o *DstPrincipal* deverá ter o mesmo RID conhecido para que o [**DsAddSidHistory**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsaddsidhistorya) seja bem sucedido. As contas com RIDs bem conhecidos incluem os seguintes usuários e grupos globais:
+Se *SrcPrincipal* tiver um RID (identificador relativo) e um prefixo específico de domínio, ou seja, Administradores de Domínio, Usuários de Domínio e Computadores de Domínio, *DstPrincipal* deverá ter o mesmo RID conhecido para que [**DsAddSidHistory**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsaddsidhistorya) tenha êxito. Contas com RIDs conhecidos incluem os seguintes usuários e grupos globais:
 
 -   Administrador
 -   Convidado
 -   Administradores de domínio
--   Convidados do domínio
+-   Convidados de domínio
 -   Usuários de domínio
 
-## <a name="setting-the-registry-value"></a>Definindo o valor do registro
+## <a name="setting-the-registry-value"></a>Definindo o valor do Registro
 
-O procedimento a seguir mostra como definir o valor de Registro TcpipClientSupport.
+O procedimento a seguir mostra como definir o valor do Registro TcpipClientSupport.
 
-**Para definir o valor de Registro TcpipClientSupport**
+**Para definir o valor do Registro TcpipClientSupport**
 
-1.  Crie o seguinte valor de registro como um \_ valor de reg DWORD no controlador de domínio de origem e defina seu valor como 1.
+1.  Crie o valor do Registro a seguir como um valor REG DWORD no controlador de domínio de origem e \_ de definido seu valor como 1.
 
-    **HKEY \_ local \_ Machine \\ System \\ CurrentControlSet \\ Control \\ LSA \\ TcpipClientSupport**
+    **HKEY \_ LOCAL \_ MACHINE \\ SYSTEM \\ CurrentControlSet \\ Control \\ Lsa \\ TcpipClientSupport**
 
-2.  Em seguida, reinicie o controlador de domínio de origem. Esse valor de registro faz com que o SAM escute no TCP/IP. [**DsAddSidHistory**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsaddsidhistorya) falhará se esse valor não estiver definido no controlador de domínio de origem.
+2.  Em seguida, reinicie o controlador de domínio de origem. Esse valor do Registro faz com que o SAM escute em TCP/IP. [**DsAddSidHistory**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsaddsidhistorya) falhará se esse valor não estiver definido no controlador de domínio de origem.
 
-## <a name="enabling-auditing-of-usergroup-management-events"></a>Habilitando a auditoria de eventos de gerenciamento de usuário/grupo
+## <a name="enabling-auditing-of-usergroup-management-events"></a>Habilitando a auditoria de eventos de gerenciamento de usuários/grupos
 
-o procedimento a seguir mostra como habilitar a auditoria de eventos de gerenciamento de usuário/grupo em um domínio Windows 2000 ou Windows Server 2003 de origem ou de destino.
+O procedimento a seguir mostra como habilitar a auditoria de eventos de gerenciamento de usuário/grupo em um domínio de origem ou destino Windows 2000 ou Windows Server 2003.
 
-**para habilitar a auditoria de eventos de gerenciamento de usuário/grupo em um domínio de origem ou de destino Windows 2000 ou Windows Server 2003**
+**Para habilitar a auditoria de eventos de gerenciamento de usuário/grupo em um Windows 2000 ou Windows Server 2003 de origem ou de destino**
 
-1.  No snap-in Active Directory usuários e computadores do MMC, selecione o contêiner controladores de domínio de domínio de destino.
-2.  Clique com o botão direito do mouse em **controladores de domínio** e escolha **Propriedades**.
-3.  Clique na guia **política de grupo** .
-4.  Selecione a **política controladores de domínio padrão** e clique em **Editar**.
-5.  em **configuração do computador \\ Windows Configurações \\ segurança Configurações \\ política de \\ auditoria de políticas locais**, clique duas vezes em gerenciamento de conta de **auditoria**.
-6.  Na janela **Gerenciamento de conta de auditoria** , selecione auditoria de **êxito** e de **falha** . As atualizações de política entram em vigor após uma reinicialização ou após uma atualização.
-7.  Verifique se a auditoria está habilitada exibindo a diretiva de auditoria efetiva no snap-in do Política de Grupo MMC.
+1.  No snap-in Usuários e Computadores do Active Directory MMC, selecione o contêiner Controladores de Domínio do domínio de destino.
+2.  Clique com o botão **direito do mouse em Controladores de** Domínio e escolha **Propriedades**.
+3.  Clique na **Política de Grupo** guia.
+4.  Selecione a **Política de Controladores de Domínio Padrão** e clique em **Editar**.
+5.  Em **Configuração do \\ Computador Windows Configurações Segurança Configurações Política de \\ \\ Auditoria \\** de Políticas Locais , clique duas vezes em **Audit Account Management**.
+6.  Na janela **Gerenciamento de Conta de** Auditoria, selecione Auditoria de Êxito **e** Falha.  As atualizações de política entre em vigor após uma reinicialização ou após a atualização.
+7.  Verifique se a auditoria está habilitada exibindo a política de auditoria efetiva Política de Grupo snap-in do MMC.
 
-o procedimento a seguir mostra como habilitar a auditoria de eventos de gerenciamento de usuário/grupo em um domínio Windows NT 4,0.
+O procedimento a seguir mostra como habilitar a auditoria de eventos de gerenciamento de usuário/grupo em um domínio Windows NT 4.0.
 
-**para habilitar a auditoria de eventos de gerenciamento de usuário/grupo em um domínio Windows NT 4,0**
+**Para habilitar a auditoria de eventos de gerenciamento de usuário/grupo em um domínio Windows NT 4.0**
 
-1.  No **Gerenciador de usuários para domínios**, clique no menu **políticas** e selecione **auditoria**.
-2.  Selecione **auditar esses eventos**.
-3.  Para o **Gerenciamento de usuários e grupos**, verifique **êxito e falha**.
+1.  No **Gerenciador de Usuários para Domínios**, clique no menu **Políticas** e selecione **Auditar**.
+2.  Selecione **Auditar esses eventos.**
+3.  Para **Gerenciamento de Usuários e Grupos**, marque Êxito e **Falha.**
 
-o procedimento a seguir mostra como habilitar a auditoria de eventos de gerenciamento de usuário/grupo em um domínio de origem Windows NT 4,0, Windows 2000 ou Windows Server 2003.
+O procedimento a seguir mostra como habilitar a auditoria de eventos de gerenciamento de Usuário/Grupo em um domínio de origem do Windows NT 4.0, Windows 2000 ou Windows Server 2003.
 
-**para habilitar a auditoria de eventos de gerenciamento de usuário/grupo em um domínio de origem Windows NT 4,0, Windows 2000 ou Windows Server 2003**
+**Para habilitar a auditoria de eventos de gerenciamento de usuário/grupo em um domínio de origem Windows NT 4.0, Windows 2000 ou Windows Server 2003**
 
-1.  No **Gerenciador de usuários para domínios**, clique no menu **usuário** e selecione **novo grupo local**.
-2.  Insira um nome de grupo composto pelo nome NetBIOS do domínio de origem acrescentado com três sinais de dólar ($), por exemplo, FABRIKAM $ $ $. O campo descrição deve indicar que esse grupo é usado para auditar o uso de operações de clonagem ou [**DsAddSidHistory**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsaddsidhistorya) . Verifique se não há membros no grupo. Clique em **OK**.
+1.  No **Gerenciador de Usuários para Domínios**, clique **no** menu Usuário e selecione Novo **Grupo Local**.
+2.  Insira um nome de grupo composto pelo domínio de origem Nome NetBIOS anexado com três cifrões ($), por exemplo, FABRIKAM$$$$. O campo de descrição deve indicar que esse grupo é usado para auditar o uso [**de DsAddSidHistory**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsaddsidhistorya) ou operações de clonagem. Verifique se não há membros no grupo. Clique em **OK**.
 
-A operação [**DsAddSidHistory**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsaddsidhistorya) falhará se a auditoria de origem e de destino não estiver habilitada conforme descrito aqui.
+A [**operação DsAddSidHistory**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsaddsidhistorya) falhará se a auditoria de origem e destino não estiver habilitada, conforme descrito aqui.
 
-## <a name="set-up-trust-if-required"></a>Configurar confiança se necessário
+## <a name="set-up-trust-if-required"></a>Configurar a confiança se necessário
 
-Se uma das seguintes opções for verdadeira, uma relação de confiança deverá ser estabelecida do domínio de origem para o domínio de destino (isso deve ocorrer em uma floresta diferente):
+Se um dos seguintes for true, uma relação de confiança deverá ser estabelecida do domínio de origem para o domínio de destino (isso deve ocorrer em uma floresta diferente):
 
--   o domínio de origem é Windows Server 2003.
--   o domínio de origem é Windows NT 4,0 e *SrcDomainCreds* é **nulo**.
+-   O domínio de origem Windows Server 2003.
+-   O domínio de origem Windows NT 4.0 e *SrcDomainCreds* é **NULL.**
 
  
 

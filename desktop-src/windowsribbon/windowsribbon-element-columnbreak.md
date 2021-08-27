@@ -3,7 +3,7 @@ title: Elemento ColumnBreak
 description: Representa um separador vertical (visível ou oculto) em modelos de layout SizeDefinition personalizados.
 ms.assetid: 5979d3e6-366b-4c47-810f-90fb8039af8d
 keywords:
-- Elemento ColumnBreak Windows Faixa de Opções
+- elemento ColumnBreak da faixa de Windows
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: beaf97a34a062b3461cf2101cb436fb1ba131d00e8656186fd434045bdef30bc
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 95b5b5982b5348cef7a2dbaa3b60d639beabaf9d
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119393076"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122630494"
 ---
 # <a name="columnbreak-element"></a>Elemento ColumnBreak
 
@@ -37,10 +37,10 @@ Representa um separador vertical (visível ou oculto) em modelos de layout [**Si
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -52,11 +52,11 @@ Representa um separador vertical (visível ou oculto) em modelos de layout [**Si
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>ShowSeparator</strong><br/></td>
+<td><strong>Separador</strong><br/></td>
 <td>Boolean<br/></td>
 <td>Não<br/></td>
 <td>Restrito a um dos seguintes valores:<br/> <br/>
-<dt><span></span><span></span><strong></strong> (true)<br/> </dt> <dd> Padrão. <br/> </dd> <dt><span></span><span></span><strong></strong> (false)<br/> </dt> <dd></dd> </dl></td>
+<dt><span></span><span></span><strong></strong> true<br/> </dt> <dd> Padrão. <br/> </dd> <dt><span></span><span></span><strong></strong> for<br/> </dt> <dd></dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -81,11 +81,11 @@ Não há elementos filho.
 
 Opcional.
 
-Pode ocorrer uma ou mais vezes para cada [**elemento GroupSizeDefinition.**](windowsribbon-element-groupsizedefinition.md)
+Pode ocorrer uma ou mais vezes para cada elemento [**GroupSizeDefinition**](windowsribbon-element-groupsizedefinition.md) .
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir demonstra a marcação básica para um **elemento ColumnBreak** em um modelo de layout [**SizeDefinition**](windowsribbon-element-sizedefinition.md) de quatro botões personalizado. O **ColumnBreak** só é especificado para o `Large` modelo.
+O exemplo a seguir demonstra a marcação básica para um elemento **ColumnBreak** em um modelo personalizado de layout [**SizeDefinition**](windowsribbon-element-sizedefinition.md) de quatro botões. O **ColumnBreak** só é especificado para o `Large` modelo.
 
 
 ```XML
@@ -177,8 +177,8 @@ O exemplo a seguir demonstra a marcação básica para um **elemento ColumnBreak
 
 ## <a name="element-information"></a>Informações do elemento
 
-* **Sistema mínimo com suporte:** Windows 7
-* **Pode estar vazio:** Sim
+* **sistema mínimo com suporte**: Windows 7
+* **Pode estar vazio**: Sim
 
 
 
@@ -186,7 +186,7 @@ O exemplo a seguir demonstra a marcação básica para um **elemento ColumnBreak
 
 <dl> <dt>
 
-[Personalização de uma faixa de opções por meio de definições de tamanho e políticas de dimensionamento](windowsribbon-templates.md)
+[Personalizando uma faixa de guia por meio de definições de tamanho e políticas de dimensionamento](windowsribbon-templates.md)
 </dt> </dl>
 
  

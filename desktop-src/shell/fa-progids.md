@@ -4,12 +4,12 @@ ms.assetid: f2b666d6-bf22-47b5-87e1-8de5ff51c152
 title: Identificadores programáticos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7cdc29a3981461a178bdf528768bb12b1840ac5dbed46f310c10718fa9429153
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bf982f865fa8b856bc29c00a9b2371b88b34615b
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117860803"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122467283"
 ---
 # <a name="programmatic-identifiers"></a>Identificadores programáticos
 
@@ -31,57 +31,18 @@ Uma sub-chave ProgID deve incluir os elementos a seguir. Observe que alguns dado
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Elemento</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>(Padrão)</strong></td>
-<td>De definir a entrada padrão da sub-chave ProgID como um nome amigável para esse ProgID, adequado para exibição para o usuário. O uso dessa entrada para manter o nome amigável é preterido pela entrada FriendlyTypeName em sistemas que executam Windows 2000 ou posterior. No entanto, você deve definir esse valor para compatibilidade com backward.<br/></td>
-</tr>
-<tr class="even">
-<td><strong>AllowSilentDefaultTakeOver</strong> (introduzido no Windows 8)</td>
-<td>De definir essa entrada opcional para sinalizar Windows deve ignorar esse ProgID ao determinar um manipulador padrão para um tipo de arquivo público. Independentemente de esse valor ser definido, o ProgID continuará a aparecer no menu de atalho OpenWith e na caixa de diálogo. Esse é um REG_NONE valor.</td>
-</tr>
-<tr class="odd">
-<td><strong>AppUserModelID</strong> (introduzido no Windows 7)</td>
-<td>Defina essa entrada opcional como a ID explícita do modelo de usuário do aplicativo (AppUserModelID) se o aplicativo <strong></strong> usar <strong></strong> um AppUserModelID explícito e usar listas de salto recentes ou frequentes geradas automaticamente pelo sistema ou fornece um Lista de Atalhos. Se um aplicativo usar um AppUserModelID explícito e não definir esse valor, os itens não aparecerão nas Listas de Salto do aplicativo. Essa é uma cadeia REG_SZ cadeia de caracteres. Para obter mais informações, consulte IDs de modelo de usuário <a href="appids.md">do aplicativo (AppUserModelIDs)</a>.<br/></td>
-</tr>
-<tr class="even">
-<td><strong>EditFlags</strong></td>
-<td>Defina essa entrada opcional usando sinalizadores da <a href="/windows/desktop/api/Shlwapi/ne-shlwapi-filetypeattributeflags"><strong>enumeração FILETYPEATTRIBUTEFLAGS.</strong></a> A entrada EditFlags controla alguns aspectos da manipulação do Shell dos tipos de arquivo vinculados a esse ProgID. Você também pode usar a entrada EditFlags para limitar o quanto o usuário pode modificar determinados aspectos desses tipos de arquivo usando a folha de propriedades de um arquivo. Os <strong>valores FILETYPEATTRIBUTEFLAGS</strong> usados para EditFlags são valores binários projetados para que você possa combinar vários atributos em um único valor em uma operação OR bit a bit. Esse é um REG_DWORD ou REG_BINARY valor.<br/></td>
-</tr>
-<tr class="odd">
-<td><strong>FriendlyTypeName</strong></td>
-<td>De definir essa entrada como um nome amigável para o ProgID, adequado para exibição para o usuário. Para consistência, essa cadeia de caracteres deve conter os mesmos dados que a entrada Padrão para essa chave ProgID. Essa entrada pode ser uma cadeia de caracteres REG_SZ ou REG_EXPAND_SZ, mas deve ser formatada como uma cadeia de caracteres indireta (um nome de arquivo totalmente qualificado e valor de recurso precedido pelo símbolo @), por exemplo <em>, @%SystemRoot%\shell32.dll,-154</em>.<br/></td>
-</tr>
-<tr class="even">
-<td><strong>InfoTip</strong></td>
-<td>De definir essa entrada como uma breve mensagem de ajuda que o Shell exibe para este ProgID. A entrada InfoTip é exibida em uma caixa de diálogo de passar o mouse. Esse valor pode ser um REG_SZ ou REG_EXPAND_SZ cadeia de caracteres, mas, como FriendlyTypeName, ele deve ser formatado como uma cadeia de caracteres indireta.<br/></td>
-</tr>
-<tr class="odd">
-<td><strong>CurVer</strong></td>
-<td>De definir a entrada (Padrão) dessa sub-chave para a versão mais atual deste ProgID.<br/>
-<blockquote>
-[!Note]<br />
-A menos que você tenha versões de aplicativo lado a lado, ou seja, várias versões instaladas no mesmo sistema, evite usar <strong>o CurVer</strong>.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td><strong>DefaultIcon</strong>.</td>
-<td>De definir a entrada (Padrão) dessa sub-chave como o ícone padrão que você deseja exibir para tipos de arquivo associados a este ProgID. Esse valor pode ser uma cadeia de caracteres REG_SZ ou REG_EXPAND_SZ, mas deve ser fornecido como um nome de arquivo totalmente qualificado com seu valor de recurso de recurso de reserva, por exemplo <em>%SystemRoot%\shell32.dll,-154</em>.<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Elemento | Descrição | 
+|---------|-------------|
+| <strong>(Padrão)</strong> | De definir a entrada padrão da sub-chave ProgID como um nome amigável para esse ProgID, adequado para exibição para o usuário. O uso dessa entrada para manter o nome amigável é preterido pela entrada FriendlyTypeName em sistemas que executam Windows 2000 ou posterior. No entanto, você deve definir esse valor para compatibilidade com backward.<br /> | 
+| <strong>AllowSilentDefaultTakeOver</strong> (introduzido no Windows 8) | De definir essa entrada opcional para sinalizar Windows deve ignorar esse ProgID ao determinar um manipulador padrão para um tipo de arquivo público. Independentemente de esse valor ser definido, o ProgID continuará a aparecer no menu de atalho OpenWith e na caixa de diálogo. Esse é um REG_NONE valor. | 
+| <strong>AppUserModelID</strong> (introduzido no Windows 7) | Defina essa entrada opcional como a ID explícita do Modelo de Usuário do Aplicativo (AppUserModelID) explícita do aplicativo <strong></strong> se <strong></strong> o aplicativo usar um AppUserModelID explícito e usar listas de salto recentes ou frequentes geradas automaticamente pelo sistema ou fornece um Lista de Atalhos. Se um aplicativo usar um AppUserModelID explícito e não definir esse valor, os itens não aparecerão nas Listas de Salto do aplicativo. Essa é uma cadeia REG_SZ cadeia de caracteres. Para obter mais informações, consulte IDs de modelo de usuário <a href="appids.md">do aplicativo (AppUserModelIDs)</a>.<br /> | 
+| <strong>EditFlags</strong> | Defina essa entrada opcional usando sinalizadores da <a href="/windows/desktop/api/Shlwapi/ne-shlwapi-filetypeattributeflags"><strong>enumeração FILETYPEATTRIBUTEFLAGS.</strong></a> A entrada EditFlags controla alguns aspectos da manipulação do Shell dos tipos de arquivo vinculados a esse ProgID. Você também pode usar a entrada EditFlags para limitar o quanto o usuário pode modificar determinados aspectos desses tipos de arquivo usando a folha de propriedades de um arquivo. Os <strong>valores FILETYPEATTRIBUTEFLAGS</strong> usados para EditFlags são valores binários projetados para que você possa combinar vários atributos em um único valor em uma operação OR bit a bit. Esse é um REG_DWORD ou REG_BINARY valor.<br /> | 
+| <strong>FriendlyTypeName</strong> | De definir essa entrada como um nome amigável para o ProgID, adequado para exibição para o usuário. Para consistência, essa cadeia de caracteres deve conter os mesmos dados que a entrada Padrão para essa chave ProgID. Essa entrada pode ser uma cadeia de caracteres REG_SZ ou REG_EXPAND_SZ, mas deve ser formatada como uma cadeia de caracteres indireta (um nome de arquivo totalmente qualificado e valor de recurso precedido pelo símbolo @), por exemplo <em>, @%SystemRoot%\shell32.dll,-154</em>.<br /> | 
+| <strong>InfoTip</strong> | De definir essa entrada como uma breve mensagem de ajuda que o Shell exibe para este ProgID. A entrada InfoTip é exibida em uma caixa de diálogo de passar o mouse. Esse valor pode ser um REG_SZ ou REG_EXPAND_SZ cadeia de caracteres, mas, como FriendlyTypeName, ele deve ser formatado como uma cadeia de caracteres indireta.<br /> | 
+| <strong>CurVer</strong> | De definir a entrada (Padrão) dessa sub-chave para a versão mais atual deste ProgID.<br /><blockquote>[!Note]<br />A menos que você tenha versões de aplicativo lado a lado, ou seja, várias versões instaladas no mesmo sistema, evite usar <strong>o CurVer</strong>.</blockquote><br /> | 
+| <strong>DefaultIcon</strong>. | De definir a entrada (Padrão) dessa sub-chave como o ícone padrão que você deseja exibir para tipos de arquivo associados a este ProgID. Esse valor pode ser uma cadeia de caracteres REG_SZ ou REG_EXPAND_SZ, mas deve ser fornecido como um nome de arquivo totalmente qualificado com seu valor de recurso de recurso de reserva, por exemplo <em>%SystemRoot%\shell32.dll,-154</em>.<br /> | 
+
 
 
 

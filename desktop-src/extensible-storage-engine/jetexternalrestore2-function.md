@@ -20,12 +20,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6d2cbd4a13555d754cdbc1f9c02011b5891d6d6fcfae3fea822ddf6ad9953b78
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ad8cad0cfc31c77b3cc8e960153bda14b4f431e5
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119719186"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122475812"
 ---
 # <a name="jetexternalrestore2-function"></a>Função JetExternalRestore2
 
@@ -97,66 +97,23 @@ O retorno de chamada de status, que relata o progresso da recuperação.
 
 ### <a name="return-value"></a>Valor Retornado
 
-Essa função retorna o [JET_ERR](./jet-err.md) tipo de dados com um dos códigos de retorno a seguir. Para obter mais informações sobre os possíveis erros de ESE, consulte [Extensible Armazenamento Engine Errors](./extensible-storage-engine-errors.md) and [Error Handling Parameters](./error-handling-parameters.md).
+Essa função retorna o [JET_ERR](./jet-err.md) de dados com um dos códigos de retorno a seguir. Para obter mais informações sobre os possíveis erros de ESE, consulte [Extensible Armazenamento Engine Errors](./extensible-storage-engine-errors.md) and [Error Handling Parameters](./error-handling-parameters.md).
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Código de retorno</p></th>
-<th><p>Descrição</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>A operação foi concluída com sucesso.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errBadRestoreTargetInstance</p></td>
-<td><p>O <em>szTargetInstanceLogPath especificado</em> não pertence a uma instância inicializada. Esse erro só será retornado no Windows XP e posterior.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errDatabaseCorrupted</p></td>
-<td><p>Isso indica que o banco de dados foi corrompido ou um arquivo não reconheceu.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errEndingRestoreLogTooLow</p></td>
-<td><p>Esse erro será retornado se um para os arquivos de log no <em>szBackupLogPath</em>tiver uma geração de log acima da especificada em <em>genHigh</em> ou <em>pLogInfo.ulGenHigh.</em></p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errFileNotFound</p></td>
-<td><p>A operação falhou porque não foi possível abrir o arquivo solicitado porque ele não pôde ser encontrado no caminho especificado.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errInvalidParameter</p></td>
-<td><p>Um dos parâmetros fornecidos continha um valor inesperado ou continha um valor que não fazia sentido quando combinado com o valor de outro parâmetro. Isso pode acontecer para <a href="gg294088(v=exchg.10).md">JetExternalRestore</a>e assim por diante quando <em>szTargetCheckpointPath</em> e <em>szTargetInstanceLogPath</em> não são especificados ou não são especificados. Ou seja, eles devem corresponder e ser especificados ou ambos não especificados.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInvalidPath</p></td>
-<td><p>A operação falhou porque não foi possível encontrar o caminho especificado.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errOutOfMemory</p></td>
-<td><p>A operação falhou porque não foi possível alocar memória suficiente para a conclusão.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errRestoreOfNonBackupDatabase</p></td>
-<td><p>Esse erro será retornado se o arquivo de banco de dados especificado durante a restauração não for um banco de dados que foi feito backup com backup externo.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errRunningInOneInstanceMode</p></td>
-<td><p>O mecanismo de banco de dados não pode executar a restauração externa ou a recuperação em modo de instância única. Esse erro só será retornado no Windows XP e posterior.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errStartingRestoreLogTooHigh</p></td>
-<td><p>Esse erro será retornado se um dos arquivos de log no <em>szBackupLogPath</em>tiver uma geração de log abaixo da especificada pelo <em>genLow</em> ou <em>pLogInfo.ulGenLow.</em></p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Código de retorno</p> | <p>Descrição</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>A operação foi concluída com sucesso.</p> | 
+| <p>JET_errBadRestoreTargetInstance</p> | <p>O <em>szTargetInstanceLogPath especificado</em> não pertence a uma instância inicializada. Esse erro só será retornado no Windows XP e posterior.</p> | 
+| <p>JET_errDatabaseCorrupted</p> | <p>Isso indica que o banco de dados foi corrompido ou um arquivo não reconheceu.</p> | 
+| <p>JET_errEndingRestoreLogTooLow</p> | <p>Esse erro será retornado se um para os arquivos de log no <em>szBackupLogPath</em>tiver uma geração de log acima da especificada em <em>genHigh</em> ou <em>pLogInfo.ulGenHigh.</em></p> | 
+| <p>JET_errFileNotFound</p> | <p>A operação falhou porque não foi possível abrir o arquivo solicitado porque ele não pôde ser encontrado no caminho especificado.</p> | 
+| <p>JET_errInvalidParameter</p> | <p>Um dos parâmetros fornecidos continha um valor inesperado ou continha um valor que não fazia sentido quando combinado com o valor de outro parâmetro. Isso pode acontecer para <a href="gg294088(v=exchg.10).md">JetExternalRestore</a>e assim por diante quando <em>szTargetCheckpointPath</em> e <em>szTargetInstanceLogPath</em> não são especificados ou não são especificados. Ou seja, eles devem corresponder e ser especificados ou ambos não especificados.</p> | 
+| <p>JET_errInvalidPath</p> | <p>A operação falhou porque não foi possível encontrar o caminho especificado.</p> | 
+| <p>JET_errOutOfMemory</p> | <p>A operação falhou porque não foi possível alocar memória suficiente para a conclusão.</p> | 
+| <p>JET_errRestoreOfNonBackupDatabase</p> | <p>Esse erro será retornado se o arquivo de banco de dados especificado durante a restauração não for um banco de dados que foi feito backup com backup externo.</p> | 
+| <p>JET_errRunningInOneInstanceMode</p> | <p>O mecanismo de banco de dados não pode executar a restauração externa ou a recuperação em modo de instância única. Esse erro só será retornado no Windows XP e posterior.</p> | 
+| <p>JET_errStartingRestoreLogTooHigh</p> | <p>Esse erro será retornado se um dos arquivos de log no <em>szBackupLogPath</em>tiver uma geração de log abaixo da especificada pelo <em>genLow</em> ou <em>pLogInfo.ulGenLow.</em></p> | 
+
 
 
 Em caso de sucesso, todos os bancos de *dados do rgrstmap* são completamente recuperados e em um estado limpo ou consistente. Neste ponto, o banco de dados pode ser remontado a uma instância existente.
@@ -169,38 +126,9 @@ Consulte [JetExternalRestore](./jetexternalrestore-function.md).
 
 #### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requer Windows Vista ou Windows XP.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>Requer Windows Server 2008 ou Windows Server 2003.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em Esent.h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Biblioteca</strong></p></td>
-<td><p>Use ESENT.lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Requer ESENT.dll.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Unicode</strong></p></td>
-<td><p>Implementado como <strong>JetExternalRestore2W</strong> (Unicode) e <strong>JetExternalRestore2A</strong> (ANSI).</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requer Windows Vista ou Windows XP.</p> | | <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008 ou Windows Server 2003.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | | <p><strong>Biblioteca</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | | <p><strong>Unicode</strong></p> | <p>Implementado como <strong>JetExternalRestore2W</strong> (Unicode) e <strong>JetExternalRestore2A</strong> (ANSI).</p> | 
+
 
 
 #### <a name="see-also"></a>Consulte Também

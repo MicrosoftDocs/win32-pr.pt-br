@@ -5,16 +5,16 @@ ms.assetid: 6651a500-a95a-45a1-b46a-27b2e9b36a1c
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a1310efd37b913ae0bf8394015f6df792711ac6b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1f8cfa177d6f09552238471ff29d81d0ac0b7351
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292629"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122883216"
 ---
 # <a name="quota-management-for-remote-shells"></a>Gerenciamento de cota para shells remotos
 
-O gerenciamento de cotas permite que os usuários gerenciem recursos do sistema com mais eficiência. O Gerenciamento Remoto do Windows (WinRM) adicionou um conjunto específico de cotas que fornecem uma melhor qualidade de serviço, ajudam a evitar problemas de negação de serviço e aloca recursos de servidor a usuários simultâneos. O conjunto de cotas do WinRM é baseado na infraestrutura de cota que é implementada para o serviço de Serviços de Informações da Internet (IIS).
+O gerenciamento de cotas permite que os usuários gerenciem recursos do sistema com mais eficiência. Windows O gerenciamento remoto (WinRM) adicionou um conjunto específico de cotas que fornecem uma melhor qualidade de serviço, ajudam a evitar problemas de negação de serviço e aloca recursos de servidor para usuários simultâneos. o conjunto de cotas do WinRM é baseado na infraestrutura de cota que é implementada para o serviço de Serviços de Informações da Internet (IIS).
 
 A implementação de cotas ajudará a evitar a degradação do desempenho e a negação de problemas de serviço fazendo o seguinte:
 
@@ -25,7 +25,7 @@ A implementação de cotas ajudará a evitar a degradação do desempenho e a ne
 
 ## <a name="quota-settings"></a>Configurações de cota
 
-As cotas a seguir precisam ser impostas para o gerenciamento remoto de Shell. Essas cotas podem ser configuradas por meio do utilitário WinRM ou por meio de configurações de Política de Grupo. As configurações definidas por um Política de Grupo substituem as cotas definidas pelo utilitário WinRM. Para obter mais informações sobre como definir políticas de grupo para o WinRM, consulte [instalação e configuração para gerenciamento remoto do Windows](installation-and-configuration-for-windows-remote-management.md).
+As cotas a seguir precisam ser impostas para o gerenciamento remoto de Shell. Essas cotas podem ser configuradas por meio do utilitário WinRM ou por meio de configurações de Política de Grupo. Configurações configurado por um Política de Grupo substituir as cotas definidas pelo utilitário winrm. para obter mais informações sobre como definir políticas de grupo para o WinRM, consulte [instalação e configuração para Gerenciamento Remoto do Windows](installation-and-configuration-for-windows-remote-management.md).
 
 <dl> <dt>
 
@@ -51,7 +51,7 @@ A quantidade máxima de memória alocada por shell, incluindo os processos filho
 > [!Note]  
 > O comportamento não será suportado se MaxMemoryPerShellMB for definido como um valor menor que o padrão.
 
- 
+ 
 
 </dd> <dt>
 
@@ -101,25 +101,25 @@ Config
 
 ## <a name="configuring-shell-quotas"></a>Configurando cotas do Shell
 
-As cotas podem ser definidas por meio de uma configuração de Política de Grupo ou manualmente. Para obter mais informações sobre definições de configuração específicas, consulte [instalação e configuração para gerenciamento remoto do Windows](installation-and-configuration-for-windows-remote-management.md).
+As cotas podem ser definidas por meio de uma configuração de Política de Grupo ou manualmente. para obter mais informações sobre definições de configuração específicas, consulte [instalação e configuração para Gerenciamento Remoto do Windows](installation-and-configuration-for-windows-remote-management.md).
 
 **Para definir uma cota com Política de Grupo**
 
 1.  Abra uma janela de Prompt de comando como administrador.
 2.  No prompt de comando, digite **gpedit. msc**. A janela **Editor de objeto de política de grupo** é aberta.
-3.  Localize o **gerenciamento remoto do Windows** e o **Windows Remote Shell** política de grupo Objects (GPO) em **configuração do computador \\ modelos administrativos componentes do \\ Windows**.
+3.  localize o **Gerenciamento Remoto do Windows** e Windows objetos de Política de Grupo do **Shell remoto** (GPO) em **configuração do computador \\ Modelos Administrativos \\ componentes Windows**.
 4.  Na guia **estendida** , selecione uma configuração para ver uma descrição. Clique duas vezes em uma configuração para editá-la.
 
 **Para definir uma cota manualmente**
 
 1.  Abra uma janela de Prompt de comando como administrador.
-2.  No prompt de comando, digite **WinRM Set WinRM/config/WinRS ' @ { ***<Quota>*** = " ***<Value>*** "} '**
+2.  No prompt de comando, digite **WinRM Set WinRM/config/WinRS ' @ {**_&lt; quota &gt;_*_= "_*_&lt; valor &gt;_*_"} '_*
 
 Por exemplo, para aumentar o número máximo de shells por usuário de 5 para 7, digite **WinRM Set WinRM/config/WinRS ' @ {MaxShellsPerUser = "7"} '**.
 
- 
+ 
 
- 
+ 
 
 
 

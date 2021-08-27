@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0b99f5aa60f90a753a9c5d095e7a63417485b1fd
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: c187d57149b7f0589d56439bfacbf7129ab4fe4a
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122469833"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122987829"
 ---
 # <a name="jet_recsize2-structure"></a>estrutura JET_RECSIZE2 de JET_RECSIZE2
 
@@ -112,7 +112,11 @@ Os dados lógicos no registro são (cbData+cbLongValueData) e o tamanho físico 
 ### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requer Windows sistema operacional Vista.</p> | | <p><strong>Servidor</strong></p> | <p>Requer Windows sistema operacional server 2008.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | 
+| Requisito | Valor |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requer Windows sistema operacional Vista.</p> | 
+| <p><strong>Servidor</strong></p> | <p>Requer Windows sistema operacional server 2008.</p> | 
+| <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | 
 
 
 

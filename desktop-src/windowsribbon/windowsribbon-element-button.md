@@ -1,9 +1,9 @@
 ---
-title: Elemento button (estrutura da faixa de medida do Windows)
+title: elemento Button (Windows estrutura da faixa de faixas)
 description: Representa um controle de botão.
 ms.assetid: a17d4dd8-9b0d-4b4a-93f4-f2a8c008fc58
 keywords:
-- Faixa de das janelas do elemento Button
+- faixa de Windows de elemento de botão
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 40236b60a9fe9c72dd35d67fcf7c98bc188938af
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 066327000d490ac1615fe1e1447e1579939670d5
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111443567"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122630679"
 ---
 # <a name="button-element"></a>Elemento Button
 
@@ -39,10 +39,10 @@ Representa um controle de [botão](windowsribbon-controls-button.md) .
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -204,7 +204,7 @@ Esta seção de código mostra as declarações de controle de **botão** .
 
 ## <a name="element-information"></a>Informações do elemento
 
-* **Sistema mínimo com suporte**: Windows 7
+* **sistema mínimo com suporte**: Windows 7
 * **Pode estar vazio**: Sim
 
 

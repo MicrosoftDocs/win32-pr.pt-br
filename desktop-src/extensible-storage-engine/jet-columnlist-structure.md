@@ -15,17 +15,17 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9bce36c818dd35408d95c770540ff4865bdf639b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c61f3492a9f92700fc51b7e51e13f8c3c3febc69
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105812384"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122985259"
 ---
 # <a name="jet_columnlist-structure"></a>Estrutura JET_COLUMNLIST
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jet_columnlist-structure"></a>Estrutura JET_COLUMNLIST
 
@@ -181,26 +181,13 @@ A chamada para [JetGetColumnInfo](./jetgetcolumninfo-function.md) ou [JetGetTabl
 
 ### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista, o Windows XP ou o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008, o Windows Server 2003 ou o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Valor |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p> | 
+| <p><strong>Servidor</strong></p> | <p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p> | 
+| <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | 
+
 
 
 ### <a name="see-also"></a>Consulte Também

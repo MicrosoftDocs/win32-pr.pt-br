@@ -1,19 +1,19 @@
 ---
-description: Contém informações de título sobre a nota Do diário.
+description: Contém informações de título sobre a nota do diário.
 ms.assetid: efeed3a6-de5e-4698-9dc3-d0acb3d13dee
 title: Elemento Title
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ef687f809aae5c3722cdad84ee63d79c7bfcfb21
-ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
+ms.openlocfilehash: 05661be8566cf4136194af4e08d8f9774d3413dc
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111432218"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122473132"
 ---
 # <a name="title-element"></a>Elemento Title
 
-Contém informações de título sobre a nota Do diário.
+Contém informações de título sobre a nota do diário.
 
 ## <a name="definition"></a>Definição
 
@@ -23,7 +23,7 @@ Contém informações de título sobre a nota Do diário.
 
 ## <a name="parent-elements"></a>Elementos pai
 
-[**Papelaria**](stationery-element.md)
+[**Telas**](stationery-element.md)
 
 ## <a name="child-elements"></a>Elementos filho
 
@@ -33,57 +33,13 @@ Contém informações de título sobre a nota Do diário.
 
 
 
-<table>
-<colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Atributo</th>
-<th>Type</th>
-<th>Obrigatório</th>
-<th>Descrição</th>
-<th>Valores possíveis</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Estilo</strong></td>
-<td><strong>xs:string</strong></td>
-<td>Obrigatório</td>
-<td>Especifica o tipo de borda em torno do título da nota.</td>
-<td><ul>
-<li>Nenhum</li>
-<li>SolidSquare</li>
-<li>OutlineSquare</li>
-<li>SolidRoundRect</li>
-<li>OutlineRoundRect</li>
-<li>SolidRoundRectDottedBaseline</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><strong>DateStyle</strong></td>
-<td><strong>xs:string</strong></td>
-<td>Obrigatório</td>
-<td>Define se o título inclui uma data ou não.</td>
-<td><ul>
-<li>Nenhum</li>
-<li>Short</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><strong>Cor</strong></td>
-<td><a href="colortype-simple-type.md"><strong>ColorType simpleType</strong></a></td>
-<td>Opcional</td>
-<td>Especifica a cor do plano de fundo.</td>
-<td>Consulte <a href="colortype-simple-type.md"><strong>ColorType simpleType</strong></a>.</td>
-</tr>
-</tbody>
-</table>
+
+| Atributo | Type | Obrigatório | Descrição | Valores possíveis | 
+|-----------|------|----------|-------------|-----------------|
+| <strong>Estilo</strong> | <strong>xs:string</strong> | Obrigatório | Especifica o tipo de borda ao redor do título da nota. | <ul><li>Nenhum</li><li>SolidSquare</li><li>OutlineSquare</li><li>SolidRoundRect</li><li>OutlineRoundRect</li><li>SolidRoundRectDottedBaseline</li></ul> | 
+| <strong>Datastyle</strong> | <strong>xs:string</strong> | Obrigatório | Define se o título inclui uma data ou não. | <ul><li>Nenhum</li><li>Short</li></ul> | 
+| <strong>Cor</strong> | <a href="colortype-simple-type.md"><strong>SimpleType de ColorType</strong></a> | Opcional | Especifica a cor do plano de fundo. | Confira <a href="colortype-simple-type.md"><strong>simpleType de ColorType</strong></a>. | 
+
 
 
 
@@ -95,9 +51,9 @@ Contém informações de título sobre a nota Do diário.
 
 | Elemento      | Valor                                                   |
 |--------------|---------------------------------------------------------|
-| Tipo de elemento | [**ComplexType TitleType**](titletype-complex-type.md) |
-| Namespace    | urn:schemas-microsoft-com:tabletpc:richink              |
-| Nome do esquema  | Leitor de Diário                                          |
+| Tipo de elemento | ComplexType de [**títulotype**](titletype-complex-type.md) |
+| Namespace    | urn: esquemas-Microsoft-com: Tablet: RichInk              |
+| Nome do esquema  | Leitor de diário                                          |
 
 
 

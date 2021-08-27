@@ -1,9 +1,9 @@
 ---
-title: Elemento Image (Windows Ribbon Framework)
+title: elemento Image (Windows estrutura da faixa de faixas)
 description: Representa uma imagem.
 ms.assetid: 2c71bb16-93ac-484f-b81b-1b95842472b3
 keywords:
-- Elemento Image Windows Ribbon
+- elemento Image Windows Ribbon
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: aad95d62be63434653908d54a290c3213fd22bf644150b70fa995e86bf5e39af
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b05f7c93ea1597d2dde4724ff0b24b53769cd9ea
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119931446"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122631674"
 ---
 # <a name="image-element"></a>Elemento Image
 
@@ -42,10 +42,10 @@ Representa uma imagem.
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -58,29 +58,29 @@ Representa uma imagem.
 <tbody>
 <tr class="odd">
 <td><strong>Id</strong><br/></td>
-<td>xs:positiveInteger union xs:string<br/></td>
+<td>xs: positiveInteger Union xs: String<br/></td>
 <td>Não<br/></td>
 <td>A ID de recurso exclusiva. <br/> <br/>
-<dt><span></span><span></span><strong></strong> (A união de xs:positiveInteger e xs:string)<br/> </dt> <dd> Um valor inteiro entre 2 e 59999, inclusive ou 0x2 e 0xea5f em hexadecimal, inclusive. <br/> O comprimento máximo é de 10 caracteres, incluindo zeros à esquerda opcionais. <br/> </dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (A União de xs: positiveInteger e xs: String)<br/> </dt> <dd> Um valor inteiro entre 2 e 59999, inclusivo, ou 0x2 e 0xea5f em hexadecimal, inclusive. <br/> O comprimento máximo é de 10 caracteres, incluindo zeros à esquerda opcionais. <br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>MinDPI</strong><br/></td>
 <td>xs:positiveInteger<br/></td>
 <td>Não<br/></td>
-<td><dt><span></span><span></span><strong></strong> (xs:positiveInteger)<br/> </dt> <dd> Qualquer sequência de dígitos com um valor mínimo de 96. <br/> Se MinDPI for omitido, o valor padrão será 96. <br/> </dd> </dl></td>
+<td><dt><span></span><span></span><strong></strong> (xs: positiveInteger)<br/> </dt> <dd> Qualquer sequência de dígitos com um valor mínimo de 96. <br/> Se MinDPI for omitido, o valor padrão será 96. <br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>Origem</strong><br/></td>
 <td>xs:anyURI<br/></td>
 <td>Não<br/></td>
-<td><dt><span></span><span></span><strong></strong> (xs:anyURI)<br/> </dt> <dd> Qualquer sequência de caracteres que representa um URI. O valor de URI é um caminho absoluto ou relativo (para o arquivo de marcação faixa de opções) para um recurso de imagem do tipo BMP. <br/> </dd> </dl></td>
+<td><dt><span></span><span></span><strong></strong> (xs: anyURI)<br/> </dt> <dd> Qualquer sequência de caracteres que representa um URI. O valor do URI é um caminho absoluto ou relativo (para o arquivo de marcação da faixa de tipos) para um recurso de imagem do tipo BMP. <br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>Símbolo</strong><br/></td>
 <td>xs:string<br/></td>
 <td>Não<br/></td>
 <td>O símbolo de recurso para a imagem.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Uma cadeia de caracteres composta por uma letra ou sublinhado seguida por qualquer sequência de letras, dígitos ou sublinhados até um máximo de 100 caracteres. <br/> </dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (xs: String)<br/> </dt> <dd> Uma cadeia de caracteres composta de uma letra ou sublinhado seguida por qualquer sequência de letras, dígitos ou sublinhados até um máximo de 100 caracteres. <br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -93,7 +93,7 @@ Representa uma imagem.
 
 | Elemento                                                               | Descrição                                   |
 |-----------------------------------------------------------------------|-----------------------------------------------|
-| [**Image.Source**](windowsribbon-element-image-source.md)<br/> | Pode ocorrer no máximo uma vez<br/> <br/> |
+| [**Imagem. origem**](windowsribbon-element-image-source.md)<br/> | Pode ocorrer no máximo uma vez<br/> <br/> |
 
 
 
@@ -103,10 +103,10 @@ Representa uma imagem.
 
 | Elemento                                                                                                     |
 |-------------------------------------------------------------------------------------------------------------|
-| [**Command.LargeHighContrastImages**](windowsribbon-element-command-largehighcontrastimages.md)<br/> |
-| [**Command.LargeImages**](windowsribbon-element-command-largeimages.md)<br/>                         |
-| [**Command.SmallHighContrastImages**](windowsribbon-element-command-smallhighcontrastimages.md)<br/> |
-| [**Command.SmallImages**](windowsribbon-element-command-smallimages.md)<br/>                         |
+| [**Comando. LargeHighContrastImages**](windowsribbon-element-command-largehighcontrastimages.md)<br/> |
+| [**Comando. LargeImages**](windowsribbon-element-command-largeimages.md)<br/>                         |
+| [**Comando. SmallHighContrastImages**](windowsribbon-element-command-smallhighcontrastimages.md)<br/> |
+| [**Comando. SmallImages**](windowsribbon-element-command-smallimages.md)<br/>                         |
 
 
 
@@ -114,15 +114,15 @@ Representa uma imagem.
 
 Opcional.
 
-Pode ocorrer uma ou mais vezes para cada [**elemento Command.SmallImages**](windowsribbon-element-command-smallimages.md), [**Command.SmallHighContrastImages**](windowsribbon-element-command-smallhighcontrastimages.md), [**Command.LargeImages**](windowsribbon-element-command-largeimages.md)ou [**Command.LargeHighContrastImages.**](windowsribbon-element-command-largehighcontrastimages.md)
+Pode ocorrer uma ou mais vezes para cada [**comando. SmallImages**](windowsribbon-element-command-smallimages.md), [**Command. SmallHighContrastImages**](windowsribbon-element-command-smallhighcontrastimages.md), [**Command. LargeImages**](windowsribbon-element-command-largeimages.md)ou [**Command. LargeHighContrastImages**](windowsribbon-element-command-largehighcontrastimages.md) elemento.
 
-Quando uma coleção de recursos de imagem projetados para dar suporte a configurações específicas de dpi (pontos de  tela por polegada) é fornecida à estrutura de Faixa de Opções por meio de um conjunto de elementos Image, a estrutura usa a Imagem com um valor de atributo *MinDPI* que corresponde à configuração de dpi da tela atual. 
+Quando uma coleção de recursos de imagem que são projetados para dar suporte a configurações de pontos de tela específicos por polegada (DPI) é fornecida à estrutura da faixa de opções por meio de um conjunto de elementos **Image** , a estrutura usa a **imagem** com um valor de atributo *MinDPI* que corresponde à configuração de dpi de tela atual.
 
-Se nenhum elemento **Image** for declarado com um valor *MinDPI* que corresponde à  configuração de dpi da tela atual, a estrutura escolherá a Imagem que tem o valor *minDPI* mais próximo menor que a configuração de dpi da tela atual e escalará o recurso de imagem para cima. Caso contrário, se nenhum elemento **Image** for declarado com um valor de atributo *MinDPI* menor que a configuração de dpi da tela atual, a estrutura escolherá o valor *minDPI* mais próximo maior que a configuração de dpi da tela atual e dimensiona o recurso de imagem para baixo.
+Se nenhum elemento **Image** for declarado com um valor *MinDPI* que corresponda à configuração de dpi de tela atual, a estrutura selecionará a **imagem** que tem o valor de *MinDPI* mais próximo menor que a configuração de dpi de tela atual e dimensionará o recurso de imagem para cima. Caso contrário, se nenhum elemento **Image** for declarado com um valor de atributo *MinDPI* menor que a configuração de dpi de tela atual, a estrutura escolherá o valor de *MinDPI* mais próximo maior que a configuração de dpi de tela atual e dimensionará o recurso de imagem para baixo.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de código a seguir mostra a marcação necessária para declarar, por meio de um conjunto de elementos **Image,** uma coleção de recursos de imagem projetados para dar suporte a quatro configurações específicas de dpi de tela.
+O exemplo de código a seguir mostra a marcação necessária para declarar, por meio de um conjunto de elementos **Image** , uma coleção de recursos de imagem que são projetados para dar suporte a quatro configurações específicas de dpi de tela.
 
 
 ```XML
@@ -143,8 +143,8 @@ O exemplo de código a seguir mostra a marcação necessária para declarar, por
 
 ## <a name="element-information"></a>Informações do elemento
 
-* **Sistema mínimo com suporte:** Windows 7
-* **Pode estar vazio:** Não
+* **sistema mínimo com suporte**: Windows 7
+* **Pode estar vazio**: não
 
 
 
@@ -152,7 +152,7 @@ O exemplo de código a seguir mostra a marcação necessária para declarar, por
 
 <dl> <dt>
 
-[Especificando recursos de imagem da faixa de opções](windowsribbon-imageformats.md)
+[Especificando recursos de imagem da faixa de uma](windowsribbon-imageformats.md)
 </dt> </dl>
 
  

@@ -1,10 +1,10 @@
 ---
-description: Uma solicitação assíncrona para obter os arquivos de origem associados à pilha de chamadas de um evento.
+description: Uma solicitação assíncrona para obter os arquivos de origem associados ao callstack de um evento.
 MS-HAID: vspixengine.ISourceFileInfoRequest\_RequestAsync\_EventID\_ISourceFileInfoCallback\_ptr\_DWORD\_DWORD
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: 'Método ISourceFileInfoRequest:: RequestAsync'
+title: Método ISourceFileInfoRequest::RequestAsync
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 257361ED-7400-4320-8433-59A9A07E69E4
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: ba5fddf153b2a771ab54bf89036f8087ad0f7524
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: af2b1b924bd10afce3172ec0119c864fe4f7349c
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105765083"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122624152"
 ---
-# <a name="span-idvspixengineisourcefileinforequest_requestasync_eventid_isourcefileinfocallback_ptr_dword_dwordspanisourcefileinforequestrequestasync-method"></a><span id="vspixengine.isourcefileinforequest_requestasync_eventid_isourcefileinfocallback_ptr_dword_dword"></span>Método ISourceFileInfoRequest:: RequestAsync
+# <a name="span-idvspixengineisourcefileinforequest_requestasync_eventid_isourcefileinfocallback_ptr_dword_dwordspanisourcefileinforequestrequestasync-method"></a><span id="vspixengine.isourcefileinforequest_requestasync_eventid_isourcefileinfocallback_ptr_dword_dword"></span>Método ISourceFileInfoRequest::RequestAsync
 
-Uma solicitação assíncrona para obter os arquivos de origem associados à pilha de chamadas de um evento.
+Uma solicitação assíncrona para obter os arquivos de origem associados ao callstack de um evento.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,11 +42,11 @@ HRESULT RequestAsync(
 
 ## <a name="parameters"></a>Parâmetros
 
-*1008*   
+*Eventid*   
 O evento especificado.
 
 *requestCallback*   
-O endereço do retorno de chamada usado para notificar o host dos resultados.
+O endereço do retorno de chamada usado para notificar o host de resultados.
 
 *requestCookie*   
 Um cookie que identifica exclusivamente a solicitação e pode ser usado para sinalizar para que ela seja cancelada.
@@ -54,15 +54,15 @@ Um cookie que identifica exclusivamente a solicitação e pode ser usado para si
 *progressIntervalMsecs*   
 Não usado.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>parâmetro</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
-## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Consulte também
+## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Confira também
 
 [**ISourceFileInfoRequest**](/windows/desktop/direct3dtools/isourcefileinforequest)
 

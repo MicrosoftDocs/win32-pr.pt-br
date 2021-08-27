@@ -4,12 +4,12 @@ ms.assetid: 53a9538d-7a79-40bb-9468-d710eb238925
 title: Filtro do analisador de som WAVE
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8bb30465a25ab3a6eef190b5fbecd4a4878c2744
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d91508500b02743f7cac8b4ed5cff718d12e3b03
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105753304"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122987849"
 ---
 # <a name="wave-parser-filter"></a>Filtro do analisador de som WAVE
 
@@ -17,59 +17,20 @@ O filtro WAVE Parser analisa dados de áudio de formato WAV de arquivos. wav,. a
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Filtrar interfaces</td>
-<td><a href="/previous-versions/windows/desktop/api/Qnetwork/nn-qnetwork-iammediacontent"><strong>IAMMediaContent</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-ibasefilter"><strong>IBaseFilter</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-ipersistmediapropertybag"><strong>IPersistMediaPropertyBag</strong></a></td>
-</tr>
-<tr class="even">
-<td>Tipos de mídia de pino de entrada</td>
-<td>Tipo principal: MEDIATYPE_StreamThe seguintes subtipos são válidos:<br/>
-<ul>
-<li>MEDIASUBTYPE_AIFF</li>
-<li>MEDIASUBTYPE_AU</li>
-<li>MEDIASUBTYPE_WAVE</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>Interfaces de pino de entrada</td>
-<td><a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"> <strong>IQualityControl</strong></a></td>
-</tr>
-<tr class="even">
-<td>Tipos de mídia do pino de saída</td>
-<td>Tipo principal: MEDIATYPE_AudioSubtype: MEDIASUBTYPE_PCM ou outro tipo de compactação. (Consulte <a href="audio-subtypes.md"><strong>subtipos de áudio</strong></a>.)<br/> Tipo de formato: FORMAT_WaveFormatEx<br/></td>
-</tr>
-<tr class="odd">
-<td>Interfaces de pino de saída</td>
-<td><a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-imediaseeking"> <strong>IMediaSeeking</strong></a></td>
-</tr>
-<tr class="even">
-<td>CLSID do filtro</td>
-<td>{D51BD5A1-7548-11cf-A520-0080C77EF58A}</td>
-</tr>
-<tr class="odd">
-<td>CLSID de página de propriedades</td>
-<td>Nenhuma página de propriedades.</td>
-</tr>
-<tr class="even">
-<td>Executável</td>
-<td>quartz.dll</td>
-</tr>
-<tr class="odd">
-<td><a href="merit.md">Núcleo</a></td>
-<td>MERIT_UNLIKELY</td>
-</tr>
-<tr class="even">
-<td><a href="filter-categories.md">Categoria do filtro</a></td>
-<td>CLSID_LegacyAmFilterCategory</td>
-</tr>
-</tbody>
-</table>
+
+| Rótulo | Valor |
+|--------|-------|
+| Filtrar interfaces | <a href="/previous-versions/windows/desktop/api/Qnetwork/nn-qnetwork-iammediacontent"><strong>IAMMediaContent</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-ibasefilter"><strong>IBaseFilter</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-ipersistmediapropertybag"><strong>IPersistMediaPropertyBag</strong></a> | 
+| Tipos de mídia de pino de entrada | Tipo principal: MEDIATYPE_StreamThe seguintes subtipos são válidos:<br /><ul><li>MEDIASUBTYPE_AIFF</li><li>MEDIASUBTYPE_AU</li><li>MEDIASUBTYPE_WAVE</li></ul> | 
+| Interfaces de pino de entrada | <a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"> <strong>IQualityControl</strong></a> | 
+| Tipos de mídia do pino de saída | Tipo principal: MEDIATYPE_AudioSubtype: MEDIASUBTYPE_PCM ou outro tipo de compactação. (Consulte <a href="audio-subtypes.md"><strong>subtipos de áudio</strong></a>.)<br /> Tipo de formato: FORMAT_WaveFormatEx<br /> | 
+| Interfaces de pino de saída | <a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-imediaseeking"> <strong>IMediaSeeking</strong></a> | 
+| CLSID do filtro | {D51BD5A1-7548-11cf-A520-0080C77EF58A} | 
+| CLSID de página de propriedades | Nenhuma página de propriedades. | 
+| Executável | quartz.dll | 
+| <a href="merit.md">Núcleo</a> | MERIT_UNLIKELY | 
+| <a href="filter-categories.md">Categoria do filtro</a> | CLSID_LegacyAmFilterCategory | 
+
 
 
 
@@ -92,7 +53,7 @@ No entanto, ele tem as seguintes limitações no formato de áudio:
 
 <dl> <dt>
 
-[Filtros do DirectShow](directshow-filters.md)
+[DirectShow Filter](directshow-filters.md)
 </dt> </dl>
 
  

@@ -15,23 +15,23 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c4e39548b6bcb0a4742b926c1b618b9cc899c2e1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9ca27bcc8024d8d3f0f634f6f8e6b23082b8d075
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827422"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122480502"
 ---
 # <a name="jet_convert-structure"></a>Estrutura de JET_CONVERT
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jet_convert-structure"></a>Estrutura de JET_CONVERT
 
 A estrutura de **JET_CONVERT** contém o nome de uma DLL de versão anterior do ESE que é usada para ler os bancos de dados criados com essa versão anterior. Além disso, outros sinalizadores são fornecidos para controlar a natureza da conversão.
 
-**Windows Server 2003:** O recurso no [JetCompact](./jetcompact-function.md) que realizou uma conversão foi removido do produto no Windows Server 2003. Só há suporte para ele no Windows 2000 e no Windows XP.
+**Windows Server 2003:** o recurso no [JetCompact](./jetcompact-function.md) que realizou uma conversão foi removido do produto no Windows Server 2003. há suporte apenas no Windows 2000 e Windows XP.
 
 ```cpp
     typedef struct tagCONVERT {
@@ -61,30 +61,9 @@ Reservado para uso do sistema.
 
 ### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista, o Windows XP ou o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008, o Windows Server 2003 ou o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Unicode</strong></p></td>
-<td><p>Implementado como <strong>JET_CONVERT_W</strong> (Unicode) e <strong>JET_CONVERT_A</strong> (ANSI).</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | | <p><strong>Unicode</strong></p> | <p>Implementado como <strong>JET_CONVERT_W</strong> (Unicode) e <strong>JET_CONVERT_A</strong> (ANSI).</p> | 
+
 
 
 ### <a name="see-also"></a>Consulte Também

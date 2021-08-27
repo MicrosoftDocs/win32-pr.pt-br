@@ -1,26 +1,26 @@
 ---
-title: Solucionando problemas de aplicativos
+title: Solução de problemas de aplicativos
 description: Esta seção fornece soluções para problemas comuns.
 ms.assetid: dfdc5a97-aa0a-4011-8f61-6e405e28b6f8
 keywords:
-- Windows Touch, solução de problemas de aplicativos
-- Windows Touch, rejeição de Palm
-- rejeição do Palm
-- Windows Touch, suporte herdado
-- solução de problemas do Windows Touch
+- Windows Toque, solução de problemas de aplicativos
+- Windows Toque, rejeição de mão
+- rejeição de mãos
+- Windows Toque, suporte herddo
+- solução de problemas Windows Touch
 - inércia, solução de problemas de aplicativos
 - manipulações, solução de problemas de aplicativos
-- gestos, aplicativos de solução de problemas
+- gestos, solução de problemas de aplicativos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 389d200cedc57b7f128a535355b12a9288c6e9eb
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: bfadf28f5582f702c27f5cb1e15aff142ae14bcf
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111443137"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122625332"
 ---
-# <a name="troubleshooting-applications"></a>Solucionando problemas de aplicativos
+# <a name="troubleshooting-applications"></a>Solução de problemas de aplicativos
 
 Esta seção fornece soluções para problemas comuns.
 
@@ -30,9 +30,9 @@ Esta seção fornece soluções para problemas comuns.
 
 | Categoria | Descrição |
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Problema    | Estou executando o Windows Server 2008 e os recursos do Windows Touch não estão funcionando.                                                                                                                                                                                                                                       |
-| Causa    | Você não habilitou a experiência desktop.                                                                                                                                                                                                                                                                        |
-| Solução | Abra a ferramenta administrativa do Gerenciador do Servidor: clique em **Iniciar**, aponte para **Ferramentas administrativas** e clique em **Gerenciador do servidor**. Clique no item **recursos** na coluna esquerda. Clique em **Adicionar recursos** na seção **recursos** . Selecione **experiência da área de trabalho**, clique em **Avançar** e, em seguida, clique em **instalar**. |
+| Problema    | Estou executando o Windows Server 2008 e Windows recursos do Touch não estão funcionando.                                                                                                                                                                                                                                       |
+| Causa    | Você não habilitar a Experiência Desktop.                                                                                                                                                                                                                                                                        |
+| Solução | Abra a Gerenciador do Servidor ferramenta administrativa: clique em **Iniciar**, aponte para **Ferramentas** Administrativas e clique **em Gerenciador do Servidor**. Clique no item **Recursos** na coluna esquerda. Clique **em Adicionar Recursos** na **seção** Recursos. Selecione **Experiência Desktop,** clique **em Próximo** e, em seguida, clique em **Instalar**. |
 
 
 
@@ -42,9 +42,9 @@ Esta seção fornece soluções para problemas comuns.
 
 | Categoria | Descrição |
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Problema    | Sempre que eu mover meu dedo rapidamente pelo meu aplicativo, uma seta é exibida e meu gesto ou manipulação não está registrando corretamente.                                                             |
-| Causa    | Ter movimentos habilitados quando você não precisa dele.                                                                                                                                                      |
-| Solução | Você tem movimentos habilitados quando deseja que ele seja desabilitado. Consulte [suporte herdado para panorâmica com barras de rolagem](legacy-support-for-panning-with-scrollbars.md) para obter informações sobre como desabilitar movimentos de caneta. |
+| Problema    | Sempre que eu mover meu dedo rapidamente pelo meu aplicativo, uma seta será exibida e meu gesto ou manipulação não estiver sendo registrado corretamente.                                                             |
+| Causa    | Ter os movimento habilitados quando você não precisar dela.                                                                                                                                                      |
+| Solução | Você tem movimentos habilitados quando deseja que ele seja desabilitado. Consulte [Suporte herdado para panorâmico com barras](legacy-support-for-panning-with-scrollbars.md) de rolagem para obter informações sobre como desabilitar movimentos de caneta. |
 
 
 
@@ -54,24 +54,24 @@ Esta seção fornece soluções para problemas comuns.
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
 <td>Problema</td>
-<td>Não consigo distinguir entre entrada do mouse e entrada do Windows Touch.</td>
+<td>Não consigo distinguir entre a entrada do mouse e a Windows touch.</td>
 </tr>
 <tr class="even">
 <td>Causa</td>
-<td>O Windows gera mensagens de mouse para suporte herdado quando um usuário clica na tela.</td>
+<td>Windows gera mensagens do mouse para suporte herddo quando um usuário clica na tela.</td>
 </tr>
 <tr class="odd">
 <td>Solução</td>
-<td>Você pode chamar <a href="/windows/win32/api/winuser/nf-winuser-getmessageextrainfo">GetMessageExtraInfo</a> para o <strong>WM_LBUTTONDOWN</strong> e <strong>WM_LBUTTONUP</strong> mensagens para determinar a origem. O código a seguir mostra como isso pode ser feito. <span data-codelanguage="ManagedCPlusPlus"></span>
+<td>Você pode chamar <a href="/windows/win32/api/winuser/nf-winuser-getmessageextrainfo">GetMessageExtraInfo</a> para as <strong>mensagens WM_LBUTTONDOWN</strong> <strong>e</strong> WM_LBUTTONUP para determinar a origem. O código a seguir mostra como isso pode ser feito. <span data-codelanguage="ManagedCPlusPlus"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -104,23 +104,23 @@ if ((GetMessageExtraInfo() & MOUSEEVENTF_FROMTOUCH) == MOUSEEVENTF_FROMTOUCH) {
 
 | Categoria | Descrição |
 |----------|------------------------------------------------------------------------------------|
-| Problema    | Como fazer executar aplicativos do Microsoft PixelSense no Windows 7?                       |
-| Causa    | O Windows Touch e o Microsoft PixelSense são incompatíveis.                           |
-| Solução | Você precisa direcionar para a plataforma Windows 7 ou para a plataforma Microsoft PixelSense. |
+| Problema    | Como fazer executar aplicativos microsoft PixelSense no Windows 7?                       |
+| Causa    | Windows Touch e Microsoft PixelSense são incompatíveis.                           |
+| Solução | Você precisa direcionar a plataforma Windows 7 ou a plataforma microsoft PixelSense. |
 
 
 
  
 
-## <a name="troubleshooting-manipulations-and-inertia"></a>Solucionando problemas de manipulação e inércia
+## <a name="troubleshooting-manipulations-and-inertia"></a>Solução de problemas de manipulações e inércia
 
 
 
 | Categoria | Descrição |
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Problema    | Meu aplicativo está congelando sem motivo. Estou obtendo violações de acesso quando inicializo as interfaces de objeto.                                                                                                                                          |
-| Causa    | Falta uma chamada para o **CoInitialize** ao usar as interfaces [**IManipulationProcessor**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) ou [**IInertiaProcessor**](/windows/desktop/api/manipulations/nn-manipulations-iinertiaprocessor) .                                                                                 |
-| Solução | Isso pode ser causado pela instanciação dos objetos COM (Windows Touch Component Object Model) sem chamar o CoInitialize. Isso ocorre às vezes, quando você está convertendo projetos do uso de gestos para usar as interfaces Manipulation ou inércia. |
+| Problema    | Meu aplicativo está congelando sem motivo. Estou recebendo violações de acesso ao inicializar minhas interfaces de objeto.                                                                                                                                          |
+| Causa    | Não há uma chamada **para CoInitialize** ao usar as interfaces [**IManipulationProcessor**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) ou [**IInertiaProcessor.**](/windows/desktop/api/manipulations/nn-manipulations-iinertiaprocessor)                                                                                 |
+| Solução | Isso pode ser causado pela instanciação dos objetos WINDOWS Touch Component Object Model (COM) sem chamar CoInitialize. Isso acontece às vezes quando você está convertendo projetos do uso de gestos para usar as manipulações ou interfaces de inércia. |
 
 
 
@@ -130,23 +130,23 @@ if ((GetMessageExtraInfo() & MOUSEEVENTF_FROMTOUCH) == MOUSEEVENTF_FROMTOUCH) {
 
 | Categoria | Descrição |
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Problema    | Meu objeto está girando de forma inadequada quando está sendo traduzido. A rotação de um único dedo não está funcionando corretamente.                                                                                                                                                                                                                                                                           |
-| Causa    | Configuração inadequada de pivôs em um objeto.                                                                                                                                                                                                                                                                                                                                                 |
-| Solução | Você não está configurando os pontos de manipulação dinâmica corretamente. Defina as propriedades [**PivotPointX**](/windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-get_pivotpointx) e [**PivotPointY**](/windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-get_pivotpointy) como o centro do objeto ou o ponto que você deseja girar e defina a propriedade [**PivotRadius**](/windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-get_pivotradius) como o raio do seu objeto. |
+| Problema    | Meu objeto está girando incorretamente quando está sendo convertido. A rotação de dedo único não está funcionando corretamente.                                                                                                                                                                                                                                                                           |
+| Causa    | Definindo incorretamente os pivôs em um objeto .                                                                                                                                                                                                                                                                                                                                                 |
+| Solução | Você não está configurando os pontos pivôs de manipulação corretamente. De definir as propriedades [**PivotPointX**](/windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-get_pivotpointx) e [**PivotPointY**](/windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-get_pivotpointy) como o centro do objeto ou ponto que você deseja girar e de definir a propriedade [**PivotRadius**](/windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-get_pivotradius) como o raio do objeto. |
 
 
 
  
 
-## <a name="troubleshooting-windows-touch-input"></a>Solucionando problemas de entrada por toque do Windows
+## <a name="troubleshooting-windows-touch-input"></a>Solução de problemas Windows entrada de toque
 
 
 
 | Categoria | Descrição |
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Problema    | Depois de lidar com a mensagem do [**WM \_ Touch**](wm-touchdown.md) , eu pare de obter comentários sobre limites.                                                                                                                                                                                                                                        |
-| Causa    | Consumindo a mensagem do [**WM \_ Touch**](wm-touchdown.md) sem tratá-la.                                                                                                                                                                                                                                                           |
-| Solução | Provavelmente, você está consumindo uma mensagem do Windows Touch sem encaminhá-la para **DefWindowProc**, o que resultará em um comportamento inesperado. Verifique [introdução com as mensagens do Windows Touch](getting-started-with-multi-touch-messages.md) para obter mais informações sobre como lidar corretamente com o [**WM \_ Touch**](wm-touchdown.md) messages. |
+| Problema    | Depois de lidar com a [**mensagem WM \_ TOUCH,**](wm-touchdown.md) eu para de receber comentários de limite.                                                                                                                                                                                                                                        |
+| Causa    | Consumindo a [**mensagem WM \_ TOUCH**](wm-touchdown.md) sem lidar com ela.                                                                                                                                                                                                                                                           |
+| Solução | Você provavelmente está consumindo uma Windows Touch sem encaminhá-la para **DefWindowProc,** o que resultará em comportamento inesperado. Verifique [Ponto de Partida com Windows Touch Messages](getting-started-with-multi-touch-messages.md) para obter mais informações sobre como lidar corretamente com mensagens WM [**\_ TOUCH.**](wm-touchdown.md) |
 
 
 
@@ -156,24 +156,24 @@ if ((GetMessageExtraInfo() & MOUSEEVENTF_FROMTOUCH) == MOUSEEVENTF_FROMTOUCH) {
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
 <td>Problema</td>
-<td>Estou incluindo o Windows. h, mas ainda diz que <a href="wm-touchdown.md"><strong>WM_TOUCH</strong></a> não está definido.</td>
+<td>Estou incluindo windows.h, mas ele ainda diz que <a href="wm-touchdown.md"><strong>WM_TOUCH</strong></a> não está definido.</td>
 </tr>
 <tr class="even">
 <td>Causa</td>
-<td>A versão do Windows em targetver. h está incorreta.</td>
+<td>A Windows em Targetver.h está incorreta.</td>
 </tr>
 <tr class="odd">
 <td>Solução</td>
-<td>Você não definiu a versão correta do Windows no seu projeto. O código a seguir ilustra as versões do Windows definidas corretamente para o Windows Touch no Windows 7. <span data-codelanguage="ManagedCPlusPlus"></span>
+<td>Você não definiu a versão Windows correta em seu projeto. O código a seguir ilustra as versões Windows corretamente definidas para Windows Touch no Windows 7. <span data-codelanguage="ManagedCPlusPlus"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -201,24 +201,24 @@ if ((GetMessageExtraInfo() & MOUSEEVENTF_FROMTOUCH) == MOUSEEVENTF_FROMTOUCH) {
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
 <td>Problema</td>
-<td>Minhas coordenadas x de entrada por toque e coordenadas y parecem inválidas. Eles são valores maiores que o esperado ou são valores negativos.</td>
+<td>Minhas coordenadas x de entrada de toque e coordenadas y parecem inválidas. Eles são valores maiores do que eu esperava ou são valores negativos.</td>
 </tr>
 <tr class="even">
 <td>Causa</td>
-<td>Talvez seja necessário converter seus pontos de toque em pixels, ou talvez seja necessário converter as coordenadas da tela.</td>
+<td>Talvez seja necessário converter seus pontos de toque em pixels ou talvez seja necessário converter as coordenadas da tela.</td>
 </tr>
 <tr class="odd">
 <td>Solução</td>
-<td>Certifique-se de que você está chamando <a href="/windows/desktop/api/winuser/nf-winuser-touch_coord_to_pixel"><strong>TOUCH_COORD_TO_PIXEL</strong></a> e <a href="/windows/desktop/api/winuser/nf-winuser-screentoclient"><strong>ScreenToClient</strong></a>. O código a seguir mostra como fazer isso. <span data-codelanguage="ManagedCPlusPlus"></span>
+<td>Certifique-se de que você está <a href="/windows/desktop/api/winuser/nf-winuser-touch_coord_to_pixel"><strong>chamando TOUCH_COORD_TO_PIXEL</strong></a> <a href="/windows/desktop/api/winuser/nf-winuser-screentoclient"><strong>e ScreenToClient</strong></a>. O código a seguir mostra como fazer isso. <span data-codelanguage="ManagedCPlusPlus"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -248,7 +248,7 @@ if ((GetMessageExtraInfo() & MOUSEEVENTF_FROMTOUCH) == MOUSEEVENTF_FROMTOUCH) {
 <div class="alert">
 <blockquote>
 [!Note]<br />
-Para usar a função <a href="/windows/desktop/api/winuser/nf-winuser-screentoclient"><strong>ScreenToClient</strong></a> , você deve ter suporte a DPI alto em seu aplicativo. Para obter mais informações sobre como dar suporte a DPI alto, visite a seção <a href=" /windows/win32/hidpi/high-dpi-desktop-application-development-on-windows">alta dpi</a> do MSDN.
+Para usar a função <a href="/windows/desktop/api/winuser/nf-winuser-screentoclient"><strong>ScreenToClient,</strong></a> você deve ter suporte de DPI alto em seu aplicativo. Para obter mais informações sobre como dar suporte a alto DPI, visite a <a href=" /windows/win32/hidpi/high-dpi-desktop-application-development-on-windows">seção DPI</a> alto do MSDN.
 </blockquote>
 </div>
 <div>
@@ -286,7 +286,7 @@ Para usar a função <a href="/windows/desktop/api/winuser/nf-winuser-screentocl
 
  
 
-## <a name="troubleshooting-windows-touch-gestures"></a>Solução de problemas Windows Touch gestos
+## <a name="troubleshooting-windows-touch-gestures"></a>Solução de problemas Windows gestos de toque
 
 
 
@@ -294,7 +294,7 @@ Para usar a função <a href="/windows/desktop/api/winuser/nf-winuser-screentocl
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Problema    | Depois de lidar com [**a mensagem WM \_ GESTURE,**](wm-gesture.md) eu para de receber comentários de limite. Ou então, um gesto que funcionou anteriormente não funciona agora.                                                                                                                                                                                                                         |
 | Causa    | Consumindo a [**mensagem WM \_ GESTURE**](wm-gesture.md) sem lidar com ela.                                                                                                                                                                                                                                                                                                    |
-| Solução | Você provavelmente está consumindo uma Windows Touch sem encaminhá-la para [DefWindowProc,](/windows/win32/api/winuser/nf-winuser-defwindowproca)o que resultará em um comportamento inesperado. Verifique [Ponto de Partida com gestos do Windows](getting-started-with-multi-touch-gestures.md) para obter mais informações sobre como lidar corretamente com mensagens WM [**\_ GESTURE.**](wm-gesture.md) |
+| Solução | Você provavelmente está consumindo uma Windows Touch sem encaminhá-la para [DefWindowProc,](/windows/win32/api/winuser/nf-winuser-defwindowproca)o que resultará em comportamento inesperado. Verifique [Ponto de Partida com gestos Windows para](getting-started-with-multi-touch-gestures.md) obter mais informações sobre como lidar corretamente com mensagens WM [**\_ GESTURE.**](wm-gesture.md) |
 
 
 
@@ -316,8 +316,8 @@ Para usar a função <a href="/windows/desktop/api/winuser/nf-winuser-screentocl
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -330,10 +330,10 @@ Para usar a função <a href="/windows/desktop/api/winuser/nf-winuser-screentocl
 </tr>
 <tr class="odd">
 <td>Solução</td>
-<td>Você precisa chamar <a href="/windows/desktop/api/winuser/nf-winuser-setgestureconfig"><strong>SetGestureConfig</strong></a> quando receber uma mensagem <a href="wm-gesturenotify.md"><strong>WM_GESTURENOTIFY</strong></a> conforme descrito na referência <strong>do WM_GESTURENOTIFY</strong> ou você precisa adicionar um manipulador para a mensagem <strong>WM_GESTURENOTIFY.</strong> O código a seguir mostra como um manipulador pode ser implementado para habilitar o suporte para rotação. <span data-codelanguage="ManagedCPlusPlus"></span>
+<td>Você precisa chamar <a href="/windows/desktop/api/winuser/nf-winuser-setgestureconfig"><strong>SetGestureConfig</strong></a> quando receber uma mensagem <a href="wm-gesturenotify.md"><strong>WM_GESTURENOTIFY,</strong></a> conforme descrito na referência <strong>WM_GESTURENOTIFY</strong> ou você precisa adicionar um manipulador para a mensagem <strong>WM_GESTURENOTIFY.</strong> O código a seguir mostra como um manipulador pode ser implementado para habilitar o suporte para rotação. <span data-codelanguage="ManagedCPlusPlus"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -399,7 +399,7 @@ Para obter mais exemplos de configurações de gestos típicas, <strong>consulte
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Problema    | Estou recebendo atrasos para gestos.                                                                                                                                                                                                                               |
 | Causa    | Os movimento podem estar causando atrasos para gestos.                                                                                                                                                                                                                      |
-| Solução | Os movimento podem causar atrasos quanto tempo leva para o aplicativo receber [**mensagens WM \_ GESTURE.**](wm-gesture.md) Consulte [Suporte herdado para panorâmico com barras de rolagem](legacy-support-for-panning-with-scrollbars.md) para obter informações sobre como desabilitar movimento. |
+| Solução | Os movimento podem causar atrasos quanto tempo leva para o aplicativo receber mensagens [**WM \_ GESTURE.**](wm-gesture.md) Consulte [Suporte herdado para panorâmico com barras de rolagem](legacy-support-for-panning-with-scrollbars.md) para obter informações sobre como desabilitar movimento. |
 
 
 

@@ -1,41 +1,41 @@
 ---
-title: Formato de área de transferência HTML
-description: Esta seção discute o formato de área de transferência HTML.
+title: Formato da área de transferência HTML
+description: Esta seção discute o formato da Área de Transferência HTML.
 ms.assetid: e891393f-234f-4c94-b581-c4e5f885d2ab
 keywords:
-- Interface do usuário do Windows, área de transferência
-- área de transferência, recortando dados
+- Windows Interface do Usuário, área de transferência
+- área de transferência, reduzindo dados
 - área de transferência, copiando dados
-- área de transferência, colando dados
+- área de transferência, colar dados
 - área de transferência, formatos
 - área de transferência, formato HTML
-- área de transferência, cortando texto em HTML
-- área de transferência, colando texto HTML
-- Formato de área de transferência CF_HTML
-- área de transferência, formato de CF_HTML
+- área de transferência, reduzindo o texto HTML
+- área de transferência, colar texto HTML
+- CF_HTML da área de transferência
+- área de transferência, CF_HTML formato
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 75cdcd9c2fc982a7cbde38bba4b7dec6738f1793
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 18d73b5101d26fc55002d55e0c15144646b80445
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005691"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884989"
 ---
-# <a name="html-clipboard-format"></a>Formato de área de transferência HTML
+# <a name="html-clipboard-format"></a>Formato da área de transferência HTML
 
-Os requisitos para transferir texto HTML por meio da área de transferência diferem de acordo com o cenário. Este artigo se preocupa com a recorte e colagem de fragmentos de um documento HTML. Pode haver requisitos para transferir documentos HTML inteiros por meio da área de transferência; no entanto, este artigo é orientado por um requisito para transferir fragmentos de texto HTML selecionado. Dessa forma, um método que exigia que todo o documento HTML fosse copiado para a área de transferência é visto como muito pesado.
+Os requisitos para transferir texto HTML por meio da área de transferência diferem dependendo do cenário. Este artigo se preocupa com o corte e a colar fragmentos de um documento HTML. Pode haver requisitos para transferir documentos HTML inteiros por meio da área de transferência; no entanto, este artigo é orientado por um requisito para transferir fragmentos de texto HTML selecionado. Assim, um método que exigia que todo o documento HTML fosse copiado para a área de transferência é visto como muito pesado.
 
-O \_ formato de área de transferência HTML do CF permite que um fragmento de texto HTML bruto e seu contexto sejam armazenados na área de transferência como ASCII. Isso permite que o contexto do fragmento HTML, que consiste em todas as marcas adjacentes anteriores, seja examinado por um aplicativo para que as marcas ao redor do fragmento HTML possam ser observadas com seus atributos. Embora seja preciso que os aplicativos decidam como interpretar esses fragmentos, algumas diretrizes básicas são incluídas aqui com base nas implementações de IE4/MSHTML.
+O formato da área de transferência HTML do CF permite que um fragmento de texto HTML bruto e seu contexto sejam armazenados na área de \_ transferência como ASCII. Isso permite que o contexto do fragmento HTML, que consiste em todas as marcas ao redor anteriores, seja examinado por um aplicativo para que as marcas ao redor do fragmento HTML possam ser notadas com seus atributos. Embora seja responsabilidade dos aplicativos decidir como interpretar esses fragmentos, algumas diretrizes básicas são incluídas aqui com base em implementações de IE4/MSHTML.
 
-O nome oficial da área de transferência (a cadeia de caracteres usada por RegisterClipboardFormat) é o formato HTML.
+O nome oficial da área de transferência (a cadeia de caracteres usada por RegisterClipboardFormat) é Formato HTML.
 
 -   [Descrição](#description)
 -   [Cenários](#scenarios)
 
-## <a name="description"></a>Descrição
+## <a name="description"></a>Description
 
-\_O HTML do CF é totalmente um formato de texto (para ser, entre outras coisas, no espírito HTML, e usa UTF-8) e inclui um `description` , um opcional `context` e, dentro do contexto, o `fragment` .
+CF HTML é totalmente o formato de texto (para ser, entre outras coisas, no idioma HTML e usa UTF-8) e inclui um , um opcional e, dentro do \_ `description` `context` contexto, o `fragment` .
 
 Veja a seguir um exemplo de uma área de transferência:
 
@@ -66,97 +66,97 @@ Version:0.9
 
 
 
-A descrição inclui o número de versão da área de transferência e os deslocamentos, indicando onde o contexto e o início e término do fragmento. A descrição é uma lista de palavras-chave de texto ASCII (min/Maj não é significativa) seguida por uma cadeia de caracteres e separados por dois-pontos (:).
+A descrição inclui o número de versão e deslocamentos da área de transferência, indicando onde o contexto e o fragmento começam e terminam. A descrição é uma lista de palavras-chave de texto ASCII (min/major não é significativo) seguidas por uma cadeia de caracteres e separadas por dois-pontos (:).
 
-**Versão**: VV número de versão da área de transferência. A versão inicial é 0,9.
+**Versão:** número de versão vv da área de transferência. A versão inicial é 0.9.
 
-**StartHTML**: byteCount desde o início da área de transferência até o início do contexto, ou-1 se nenhum contexto.
+**StartHTML:** bytecount do início da área de transferência até o início do contexto ou -1 se nenhum contexto.
 
-**Endhtml**: byteCount desde o início da área de transferência até o final do contexto, ou-1, se não houver nenhum contexto.
+**EndHTML:** contagem de byte do início da área de transferência até o final do contexto ou -1 se nenhum contexto.
 
-**StartFragment**: byteCount desde o início da área de transferência até o início do fragmento.
+**StartFragment**: bytecount do início da área de transferência para o início do fragmento.
 
-**EndFragment**: byteCount desde o início da área de transferência até o fim do fragmento.
+**EndFragment**: bytecount do início da área de transferência até o final do fragmento.
 
-**StartSelection**: byteCount desde o início da área de transferência até o início da seleção.
+**StartSelection**: bytecount do início da área de transferência até o início da seleção.
 
-**Endselecting**: byteCount desde o início da área de transferência até o fim da seleção.
+**EndSelection**: bytecount do início da área de transferência até o final da seleção.
 
-As palavras-chave StartSelection e endseleções são opcionais e devem ser omitidas se você não quiser que o aplicativo gere essas informações.
+As palavras-chave StartSelection e EndSelection são opcionais e devem ser omitidas se você não quiser que o aplicativo gere essas informações.
 
-Outras informações desse tipo podem ser adicionadas aqui mais tarde, pois o HTML começa no StartHTMLoffset. Por exemplo, vários pares de StartFragment/endfrager podem ser adicionados posteriormente para dar suporte à seleção não contígua de fragmentos.
+Outras informações desse tipo podem ser adicionadas aqui mais tarde, pois o HTML começa no StartHTMLoffset. Por exemplo, vários pares de StartFragment/EndFragment podem ser adicionados posteriormente para dar suporte à seleção não contígua de fragmentos.
 
-Para a conveniência dos programas que geram os bytecounts, os bytecounts podem ser preenchidos por zeros. Por exemplo, os programas que geram os bytecounts poderiam afetar arbitrariamente dez (10) zeros para cada palavra-chave (StartHTML: 0000000000) e, em seguida, quando o StartHTML byteCount exato é conhecido (digamos, 71), o programa pode substituir o número apropriado de zeros pelo byteCount (StartHTML: 0000000071).
+Para a conveniência dos programas que geram as conta de byte, as contagems de byte podem ser deixadas em zeros. Por exemplo, programas que geram as contas de byte podem afetar arbitrariamente dez (10) zeros para cada palavra-chave (StartHTML: 0000000000) e, em seguida, quando a contagem de bytecount StartHTML exata é conhecida (digamos, 71), o programa pode substituir o número apropriado de zeros pela contagem de byte (StartHTML: 0000000071).
 
-O único conjunto de caracteres com suporte na área de transferência é Unicode em sua codificação UTF-8. Como os primeiros caracteres de UTF-8 e ASCII correspondem, a descrição é sempre ASCII, mas os bytes do contexto (começando em StartHTML) podem estar usando outros caracteres codificados em UTF-8.
+O único conjunto de caracteres com suporte pela área de transferência é Unicode em sua codificação UTF-8. Como os primeiros caracteres de UTF-8 e ASCII são correspondam, a descrição é sempre ASCII, mas os bytes do contexto (começando em StartHTML) podem estar usando qualquer outro caractere codificado em UTF-8.
 
-O fim das linhas no cabeçalho de formato da área de transferência pode ser CR ou CR/LF ou LF.
+O fim das linhas no header de formato da área de transferência pode ser CR ou CR/LF ou LF.
 
-O fragmento contém HTML puro e válido representando a área que o usuário selecionou (para copiar, por exemplo). Ele contém o texto selecionado, além das marcas de abertura e os atributos de qualquer elemento que tenha uma marca de fim dentro do texto selecionado e marcas de fim no final do fragmento para qualquer marca de início incluída. Todas as informações são necessárias para a colagem básica de um fragmento HTML.
+O fragmento contém HTML puro e válido que representa a área selecionada pelo usuário (para Copiar, por exemplo). Isso contém o texto selecionado mais as marcas de abertura e os atributos de qualquer elemento que tenha uma marca de término dentro do texto selecionado e marcas de término no final do fragmento para qualquer marca de início incluída. Essas são todas as informações necessárias para a colar básica de um fragmento HTML.
 
-O fragmento deve ser precedido e seguido pelos comentários HTML <!--StartFragment--> e <!--EndFragment--> (nenhum espaço é permitido entre o!--e o texto) para indicar convenientemente onde o fragmento começa e termina. Portanto, o início e o fim do fragmento são indicados pela presença desses comentários e por contagens de bytes StartFragment e endfrag na descrição. As ferramentas devem produzir essas informações. Essa redundância foi introduzida para conseguir encontrar rapidamente o início do fragmento (da contagem de bytes) e marcar a posição do fragmento diretamente na árvore HTML.
+O fragmento deve ser precedido e seguido pelos comentários HTML <!--StartFragment--> e <!--EndFragment--> (nenhum espaço permitido entre o !-- e o texto) para indicar convenientemente onde o fragmento começa e termina. Portanto, o início e o final do fragmento são indicados pela presença desses comentários e pelas contagens de byte StartFragment e EndFragment na descrição. Espera-se que as ferramentas produzam essas informações. Essa redundância foi introduzida para ser capaz de encontrar rapidamente o início do fragmento (da contagem de byte) e marcar a posição do fragmento diretamente na árvore HTML.
 
-A seleção indica dentro do fragmento a área HTML exata que o usuário selecionou (para copiar, por exemplo). Isso adiciona mais informações ao fragmento indicando o texto exato selecionado, sem as marcas de abertura e marcas de fim que foram adicionadas para garantir que o fragmento seja um HTML bem formado.
+A seleção indica dentro do fragmento a área HTML exata que o usuário selecionou (para Copiar, por exemplo). Isso adiciona mais informações ao fragmento indicando o texto selecionado exato, sem as marcas de abertura e as marcas de extremidade que foram adicionadas para garantir que o fragmento seja HTML bem formado.
 
-A seleção é opcional, já que informações suficientes são incluídas no fragmento para a colagem básica. Se a seleção não for armazenada, StartSelection e EndSelect não serão armazenadas no cabeçalho.
+A seleção é opcional, pois informações suficientes são incluídas no fragmento para colar básico. Se a seleção não estiver armazenada, StartSelection e EndSelection não serão armazenados no header.
 
-O contexto é um documento HTML válido e completo. Este artigo contém o fragmento e todas as marcas adjacentes anteriores (marcas de início e de término; elas antes das marcas ao redor representam todos os nós pai do fragmento, até o nó HTML). O artigo também contém o cabeçalho completo e permite que os elementos BASE e título, por exemplo, sejam incluídos para que essas informações adicionais possam ser obtidas. Um aplicativo que copia um fragmento de HTML para a área de transferência pode optar por criar um elemento BASE para incluir no contexto se esse elemento ainda não estiver presente, de modo que as URLs parciais no fragmento possam ser resolvidas.
+O contexto é um documento HTML válido e completo. Este artigo contém o fragmento e todas as marcas ao redor anteriores (marcas de início e término; essas marcas adjacentes anteriores representam todos os nós pai do fragmento, até o nó HTML). O artigo também contém o HEAD completo e permite que os elementos BASE e TITLE, por exemplo, sejam incluídos para que essas informações adicionais possam ser obtidas. Um aplicativo que copia um fragmento de HTML para a área de transferência pode optar por criar um elemento BASE para incluir no contexto se esse elemento ainda não estiver presente para que as URLs parciais no fragmento possam ser resolvidas.
 
-O contexto é opcional, pois informações suficientes são incluídas no fragmento para a colagem básica de um fragmento de HTML para ocorrer. Se o contexto não for armazenado, o fragmento somente será armazenado e o StartHTML = endhtml =-1.
+O contexto é opcional, pois informações suficientes são incluídas no fragmento para que a pastagem básica de um fragmento HTML seja realizada. Se o contexto não for armazenado, o fragmento será armazenado somente e StartHTML=EndHTML=-1.
 
 ## <a name="scenarios"></a>Cenários
 
-Os cenários a seguir descrevem como o editor de HTML IE4/MSHTML trata do HTML recortar e colar; outros aplicativos podem ou não seguir esses cenários. O formato da área de transferência descrito aqui destina-se a permitir a flexibilidade de como um aplicativo opta por funcionar. (Esses cenários mostram apenas um bom HTML, ou seja, não há marcas sobrepostas.)
+Os cenários a seguir descrevem como o editor HTML IE4/MSHTML lida com recortar e colar HTML; outros aplicativos podem ou não seguir esses cenários. O formato da área de transferência descrito aqui destina-se a permitir a flexibilidade de como um aplicativo opta por funcionar. (Esses cenários mostram apenas um HTML bom, ou seja, sem marcas sobrepostas.)
 
 1.  Fragmento simples de HTML.
     -   -   Texto HTML:
 
-            <BODY>Isso é normal. isso é <B>negrito </B>e <I> <B>negrito </B></I> é itálico</BODY>
+            &lt;BODY &gt; Isso é normal Este é <B>negrito </B> <I> <B>Este é itálico em negrito </B>Este é itálico </I> &lt; /BODY&gt;
 
         -   Aparece como:
 
-            Isso é normal. isso é **negrito** e    * **negrito** é itálico   *
+            Isso é normal **Este é negrito**  **_Este é um itálico em negrito_*  Este é itálico*
 
         -   O texto entre o \* \* é selecionado e copiado para a área de transferência:
 
-            Isso é normal. este é **um negrito em** \* \*     * **itálico**   este * \* \* *é itálico*
+            Isso é normal **Este é** \* \* **negrito****_Este é um itálico em negrito_** \* \* *Este é itálico*   
 
-        -   É isso que estará na área de transferência (Observe que é a interpretação de IE4/MSHTML):
+        -   Isso é o que estará na área de transferência (observe que esta é a interpretação de IE4/MSHTML):
 
-            Versão: 0,9
+            Versão:0.9
 
-            StartHTML: 71
+            StartHTML:71
 
-            Endhtml: 160
+            EndHTML:160
 
-            StartFragment: 130
+            StartFragment:130
 
-            EndFragment: 150
+            EndFragment:150
 
-            **StartSelection: 130**
+            **StartSelection:130**
 
-            **Fim da seleção: 150**
+            **EndSelection:150**
 
             <!DOCTYPE ...>
 
-            <BODY>
+            &lt;CORPO&gt;
 
             <!-- StartFragment -->>
 
-            **<B>negrito</B><I><B>este é negrito e itálico</B></I>**
+            **<B>negrito</B><I><B>Este é um itálico em negrito</B></I>**
 
             <!-- EndFragment -->
 
-            </BODY>
+            &lt;/BODY&gt;
 
-            </HTML>
+            &lt;/HTML&gt;
 
-        -   Nesse cenário, apenas a marca BODY e a marca HTML aparecem no contexto, pois ele precede o fragmento selecionado. Observe que as marcas de início e as marcas de fim são incluídas no contexto. A seleção, como delimitada por StartSelection e endselectation, é mostrada em negrito.
+        -   Nesse cenário, somente a marca BODY e a marca HTML aparecem no contexto à medida que precedem o fragmento selecionado. Observe que marcas de início e marcas de término estão incluídas no contexto. A seleção, conforme delimitada por StartSelection e EndSelection, é mostrada em negrito.
 
 2.  Fragmento de uma tabela em HTML.
     -   -   Texto HTML:
 
-            <BODY><TABLE BORDER><TR><TH ROWSPAN=2>Head1</TH><TD>Item 1</TD><TD>Item 2</TD><TD>Item 3</TD><TD>Item 4</TD></TR><TR><TD>Item 5</TD><TD>Item 6</TD><TD>Item 7</TD><TD>Item 8</TD></TR><TR><TH>Head2</TH><TD>Item 9</TD><TD>Item 10</TD><TD>Item 11</TD><TD>Item 12</TD></TR></TABLE></BODY>
+            &lt;CORPO&gt;<TABLE BORDER><TR><TH ROWSPAN=2>Head1</TH><TD>Item 1</TD><TD>Item 2</TD><TD>Item 3</TD><TD>Item 4</TD></TR><TR><TD>Item 5</TD><TD>Item 6</TD><TD>Item 7</TD><TD>Item 8</TD></TR><TR><TH>Head2</TH><TD>Item 9</TD><TD>Item 10</TD><TD>Item 11</TD><TD>Item 12</TD></TR></TABLE>&lt;/BODY&gt;
 
         -   Aparece como: ><TABLE BORDER><TR><TH ROWSPAN=2>Head1</TH><TD>Item 1</TD><TD>Item 2</TD><TD>Item 3</TD><TD>Item 4</TD></TR><TR><TD>Item 5</TD><TD>Item 6</TD><TD>Item 7</TD><TD>Item 8</TD></TR><TR><TH>Head2</TH><TD>Item 9</TD><TD>Item 10</TD><TD>Item 11</TD><TD>Item 12</TD></TR></TABLE><! \[ CDATA\[\]\]>
         -   Os elementos item 6, Item7, item 10 e item 11 da tabela são selecionados como um bloco e copiados para a área de transferência.
@@ -164,7 +164,7 @@ Os cenários a seguir descrevem como o editor de HTML IE4/MSHTML trata do HTML r
 
             <!DOCTYPE ...>
 
-            <HTML><BODY><TABLE BORDER>
+            &lt;&gt; &lt; corpo HTML&gt;<TABLE BORDER>
 
             <!--StartFragment-->
 
@@ -174,12 +174,12 @@ Os cenários a seguir descrevem como o editor de HTML IE4/MSHTML trata do HTML r
 
             </TABLE>
 
-            </BODY></HTML>The selection, as delimited by StartSelection and EndSelection, is shown in bold.
+            &lt;/BODY &gt; &lt; /HTML &gt; a seleção, como delimitada por StartSelection e endseleções, é mostrada em negrito.
 
 3.  Colando um fragmento de uma lista ordenada em texto sem formatação.
     -   -   Texto HTML:
 
-            <BODY><OL TYPE = a><LI>Item 1<LI>Item 2<LI>Item 3<LI>Item 4<LI>Item 5<LI>Item 6</OL></BODY>
+            &lt;CONTEÚDO&gt;<OL TYPE = a><LI>Item 1<LI>Item 2<LI>Item 3<LI>Item 4<LI>Item 5<LI>Item 6</OL>&lt;/BODY&gt;
 
         -   Aparece como:
             1.  Item 1
@@ -190,7 +190,7 @@ Os cenários a seguir descrevem como o editor de HTML IE4/MSHTML trata do HTML r
             6.  Item 6
         -   O usuário seleciona e copia os itens de 3 a 5 para a área de transferência. O HTML a seguir está na área de transferência:
 
-            <DOCTYPE... ><HTML><BODY><OL TYPE = a>
+            <DOCTYPE... >&lt; &gt; &lt; corpo HTML&gt;<OL TYPE = a>
 
             <!-- StartFragment-->
 
@@ -198,13 +198,13 @@ Os cenários a seguir descrevem como o editor de HTML IE4/MSHTML trata do HTML r
 
             <!-- EndFragment-->
 
-            </OL></BODY></HTML>
+            </OL>&lt;/BODY&gt;&lt;/HTML&gt;
 
             A seleção, como delimitada por StartSelection e endselectation, é mostrada em negrito.
 
         -   Se esse fragmento for agora colado em um documento vazio, o seguinte HTML será criado:
 
-            <BODY><OL TYPE = a><LI>Item 3<LI>Item 4<LI>Item 5</OL></BODY>
+            &lt;CONTEÚDO&gt;<OL TYPE = a><LI>Item 3<LI>Item 4<LI>Item 5</OL>&lt;/BODY&gt;
 
         -   Aparecendo como:
             1.  Item 3
@@ -223,7 +223,7 @@ Os cenários a seguir descrevem como o editor de HTML IE4/MSHTML trata do HTML r
 
         -   O usuário seleciona "WYSIWYG" até "Cop". O HTML a seguir está na área de transferência:
 
-            <DOCTYPE... ><HTML><BODY>
+            <DOCTYPE... >&lt; &gt; &lt; corpo HTML&gt;
 
             <!-- StartFragment-->
 
@@ -237,14 +237,14 @@ Os cenários a seguir descrevem como o editor de HTML IE4/MSHTML trata do HTML r
 
             <!-- EndFragment-->
 
-            </BODY></HTML>The selection, as delimited by StartSelection and EndSelection, is shown in bold.
+            &lt;/BODY &gt; &lt; /HTML &gt; a seleção, como delimitada por StartSelection e endseleções, é mostrada em negrito.
 
-     
+     
     -   -   O usuário seleciona "opiar" até "ótimo".
 
             O HTML a seguir está na área de transferência:
 
-            <DOCTYPE... ><HTML><BODY>
+            <DOCTYPE... >&lt; &gt; &lt; corpo HTML&gt;
 
             <!-- StartFragment-->
 
@@ -256,13 +256,13 @@ Os cenários a seguir descrevem como o editor de HTML IE4/MSHTML trata do HTML r
 
             <!-- EndFragment-->
 
-            </BODY></HTML>
+            &lt;/BODY &gt; &lt; /HTML&gt;
 
             A seleção, como delimitada por StartSelection e endselectation, é mostrada em negrito.
 
- 
+ 
 
- 
+ 
 
 
 

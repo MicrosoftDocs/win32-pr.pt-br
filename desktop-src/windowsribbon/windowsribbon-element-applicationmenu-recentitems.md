@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 415c7d05c29bf44a13d60062c1623cc18d9ba081550afaec8b98a7c6e23a1cb3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f6cfb5152cd1d9cc4d27abfa3432666f06880d8e
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117656491"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122630371"
 ---
 # <a name="applicationmenurecentitems-property"></a>Propriedade ApplicationMenu. RecentItems
 
@@ -39,10 +39,10 @@ Representa um contêiner para o controle [itens recentes](windowsribbon-controls
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

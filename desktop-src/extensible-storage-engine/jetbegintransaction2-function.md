@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: função JetBeginTransaction2'
+description: 'Saiba mais sobre: Função JetBeginTransaction2'
 title: Função JetBeginTransaction2
 TOCTitle: JetBeginTransaction2 Function
 ms:assetid: 638af3f1-b342-46bd-9fd0-dc281936355c
@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c228f7ac0c1b796cc3c6c489e9e83766ada5d716
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: d2d62a5d39f82771aa72b74aab5af14c617ffa90
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122466353"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122985099"
 ---
 # <a name="jetbegintransaction2-function"></a>Função JetBeginTransaction2
 
@@ -32,7 +32,7 @@ _**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jetbegintransaction2-function"></a>Função JetBeginTransaction2
 
-A função **JetBeginTransaction2** faz com que uma sessão Insira uma transação e crie um novo ponto de salvamento. Essa função pode ser chamada mais de uma vez em uma única sessão para criar pontos de salvamento adicionais. Esses pontos de salvamento podem ser usados para manter ou descartar as alterações no banco de dados de forma seletiva.
+A **função JetBeginTransaction2** faz com que uma sessão insira uma transação e crie um novo ponto de salvar. Essa função pode ser chamada mais de uma vez em uma única sessão para criar pontos de economia adicionais. Esses pontos de salvar podem ser usados seletivamente para manter ou descartar alterações no banco de dados.
 
 ```cpp
     JET_ERR JET_API JetBeginTransaction2(
@@ -45,40 +45,40 @@ A função **JetBeginTransaction2** faz com que uma sessão Insira uma transaç�
 
 *sesid*
 
-A sessão a ser usada para esta chamada.
+A sessão a ser usada para essa chamada.
 
 *grbit*
 
-Um grupo de bits que contém as opções a serem usadas para esta chamada, que incluem zero ou mais das ações a seguir.
+Um grupo de bits que contém as opções a serem usadas para essa chamada, que incluem zero ou mais dos seguintes.
 
 
 | <p>Valor</p> | <p>Significado</p> | 
 |--------------|----------------|
-| <p>JET_bitTransactionReadOnly</p> | <p>A transação não modificará o banco de dados. Se uma atualização for tentada, essa operação falhará com JET_errTransReadOnly. Essa opção é ignorada a menos que seja solicitada quando a sessão especificada ainda não estiver em uma transação. essa opção só está disponível a partir do Windows XP.</p> | 
+| <p>JET_bitTransactionReadOnly</p> | <p>A transação não modificará o banco de dados. Se uma atualização for tentada, essa operação falhará com JET_errTransReadOnly. Essa opção é ignorada, a menos que seja solicitada quando a sessão determinada ainda não estiver em uma transação. Essa opção só está disponível a partir Windows XP.</p> | 
 
 
 
 ### <a name="return-value"></a>Valor Retornado
 
-Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de Armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
+Essa função retorna o [JET_ERR](./jet-err.md) de dados com um dos códigos de retorno a seguir. Para obter mais informações sobre os possíveis erros de ESE, consulte [Extensible Armazenamento Engine Errors](./extensible-storage-engine-errors.md) and [Error Handling Parameters](./error-handling-parameters.md).
 
 
 | <p>Código de retorno</p> | <p>Descrição</p> | 
 |--------------------|--------------------|
 | <p>JET_errSuccess</p> | <p>A operação foi concluída com sucesso.</p> | 
-| <p>JET_errClientRequestToStopJetService</p> | <p>Não é possível concluir a operação porque toda a atividade na instância associada à sessão foi interrompida como resultado de uma chamada para <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p> | 
-| <p>JET_errInstanceUnavailable</p> | <p>Não é possível concluir a operação porque a instância associada à sessão encontrou um erro fatal que exige que o acesso a todos os dados seja revogado para proteger a integridade desses dados.</p><p>esse erro só será retornado pelo Windows XP e versões posteriores.</p> | 
+| <p>JET_errClientRequestToStopJetService</p> | <p>Não é possível concluir a operação porque todas as atividades na instância associada à sessão foram encerradas como resultado de uma chamada para <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p> | 
+| <p>JET_errInstanceUnavailable</p> | <p>Não é possível concluir a operação porque a instância associada à sessão encontrou um erro fatal que exige que o acesso a todos os dados seja revogado para proteger a integridade desses dados.</p><p>Esse erro só será retornado por Windows XP e versões posteriores.</p> | 
 | <p>JET_errNotInitialized</p> | <p>Não é possível concluir a operação porque a instância associada à sessão ainda não foi inicializada.</p> | 
 | <p>JET_errRestoreInProgress</p> | <p>Não é possível concluir a operação porque uma operação de restauração está em andamento na instância associada à sessão.</p> | 
-| <p>JET_errSessionSharingViolation</p> | <p>A mesma sessão não pode ser usada para mais de um thread ao mesmo tempo. esse erro só será retornado pelo Windows XP e versões posteriores.</p> | 
-| <p>JET_errTermInProgress</p> | <p>Não é possível concluir a operação porque a instância associada à sessão está sendo desligada.</p> | 
-| <p>JET_errTransTooDeep</p> | <p>Uma nova transação não pode ser iniciada porque a sessão já está na profundidade máxima de ponto de salvamento permitida pelo mecanismo de banco de dados.</p> | 
+| <p>JET_errSessionSharingViolation</p> | <p>A mesma sessão não pode ser usada para mais de um thread ao mesmo tempo. Esse erro só será retornado por Windows XP e versões posteriores.</p> | 
+| <p>JET_errTermInProgress</p> | <p>Não é possível concluir a operação porque a instância associada à sessão está sendo desligado.</p> | 
+| <p>JET_errTransTooDeep</p> | <p>Uma nova transação não pode ser iniciada porque a sessão já está na profundidade máxima do ponto de salvar permitida pelo mecanismo de banco de dados.</p> | 
 
 
 
-Em caso de sucesso, a sessão fornecida estará dentro de uma transação. Se a sessão estava anteriormente dentro de uma transação, um novo ponto de salvamento será criado.
+Em caso de êxito, a sessão fornecida estará dentro de uma transação. Se a sessão estava anteriormente dentro de uma transação, um novo ponto de salvar será criado.
 
-Se houver falha, o estado transacional da sessão permanecerá inalterado. Nenhuma alteração no estado do banco de dados ocorrerá.
+Em caso de falha, o estado transacional da sessão permanecerá inalterado. Nenhuma alteração no estado do banco de dados ocorrerá.
 
 #### <a name="remarks"></a>Comentários
 
@@ -87,7 +87,13 @@ Para obter mais informações sobre como as transações funcionam, consulte [Je
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | | <p><strong>Biblioteca</strong></p> | <p>Use ESENT. lib.</p> | | <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | 
+| Requisito | Valor |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p> | 
+| <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p> | 
+| <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | 
+| <p><strong>Biblioteca</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | 
 
 
 

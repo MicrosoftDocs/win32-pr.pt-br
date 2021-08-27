@@ -15,21 +15,21 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ecb483da26105a0d1f8fbdf0c27561e6d7e8fe26
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 303209c2b34f2f9ba44b9240662eddf2d93d7797
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103837072"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122987499"
 ---
 # <a name="jet_handle"></a>JET_HANDLE
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jet_handle"></a>JET_HANDLE
 
-O tipo de dados **JET_HANDLE** contém um identificador genérico.
+O **JET_HANDLE** de dados contém um identificador genérico.
 
 ```cpp
     typedef JET_API_PTR JET_HANDLE;
@@ -39,28 +39,15 @@ O tipo de dados **JET_HANDLE** contém um identificador genérico.
 
 JET_HANDLE
 
-Um valor **NULL** indica um identificador inválido.
+Um valor null **indica** um alça inválido.
 
 ### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista, o Windows XP ou o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008, o Windows Server 2003 ou o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Valor |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p> | 
+| <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p> | 
+| <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | 
+
 

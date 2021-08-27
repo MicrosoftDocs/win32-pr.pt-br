@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: estrutura JET_TABLECREATE2 dados'
+description: 'Saiba mais sobre: estrutura de JET_TABLECREATE2'
 title: Estrutura JET_TABLECREATE2
 TOCTitle: JET_TABLECREATE2 Structure
 ms:assetid: 2029e684-0d10-44e7-8033-d9cdbdffd7a4
@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 95e4d60ba80317624004fa7c9335005aa16a9300
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: b4d84a21fc9115823eaff0716b90ee37f1ae6655
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122476462"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122988099"
 ---
 # <a name="jet_tablecreate2-structure"></a>Estrutura JET_TABLECREATE2
 
@@ -29,9 +29,9 @@ _**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jet_tablecreate2-structure"></a>Estrutura JET_TABLECREATE2
 
-A **JET_TABLECREATE2** contém as informações necessárias para criar uma tabela preenchida com colunas e índices em um banco de dados ESE e que designa uma função de retorno de chamada. A **JET_TABLECREATE2** estrutura é usada por [JetCreateTableColumnIndex2.](./jetcreatetablecolumnindex2-function.md)
+A estrutura de **JET_TABLECREATE2** contém as informações necessárias para criar uma tabela populada com colunas e índices em um banco de dados ESE e que designa uma função de retorno de chamada. A estrutura de **JET_TABLECREATE2** é usada pelo [JetCreateTableColumnIndex2](./jetcreatetablecolumnindex2-function.md).
 
-**Windows XP:** A **estrutura JET_TABLECREATE2** é introduzida no Windows XP.
+**Windows XP:** a estrutura de **JET_TABLECREATE2** é introduzida no Windows XP.
 
 ```cpp
     typedef struct tagJET_TABLECREATE2 {
@@ -54,21 +54,21 @@ A **JET_TABLECREATE2** contém as informações necessárias para criar uma tabe
 
 ### <a name="members"></a>Membros
 
-**Cbstruct**
+**cbStruct**
 
-O tamanho dessa estrutura em bytes (para expansão futura). Ele deve ser definido como sizeof( JET_TABLECREATE2 ) em bytes.
+O tamanho dessa estrutura em bytes (para expansão futura). Ele deve ser definido como sizeof (JET_TABLECREATE2) em bytes.
 
 **szTableName**
 
-O nome da tabela a ser criado.
+O nome da tabela a ser criada.
 
-O nome deve usar para atender às seguintes condições:
+O nome deve usar atender às seguintes condições:
 
-  - Ter um valor menor que JET_cbNameMost, sem incluir o NULL de terminação.
+  - Ter um valor menor que JET_cbNameMost, não incluindo o nulo de terminação.
 
 <!-- end list -->
 
-  - Consiste no seguinte conjunto de caracteres: 0 a 9, A a Z, a a z e todas as outras pontuações, exceto ponto de exclamação ( ), vírgula (,), colchete de abertura ( ) e colchete de fechamento ( ), ou seja, caracteres \! \[ ASCII 0x20, 0x22 por meio de 0x2d, 0x2f por meio de 0x5a, 0x5c e 0x5d por meio \] 0x7f.
+  - Consiste no seguinte conjunto de caracteres: 0 a 9, A a Z, a a z e todas as outras pontuações, exceto para ponto de exclamação ( \! ), vírgula (,), colchete de abertura ( \[ ) e colchete de fechamento ( \] ), ou seja, caracteres ASCII 0x20, 0x22 a 0x2d, 0x2F a 0x5A, 0x5c e 0x5d até 0x7F.
 
 <!-- end list -->
 
@@ -76,45 +76,45 @@ O nome deve usar para atender às seguintes condições:
 
 <!-- end list -->
 
-  - Consiste em pelo menos um caractere sem espaço.
+  - Consistir em pelo menos um caractere que não seja de espaço.
 
 **szTemplateTableName**
 
-O nome de uma tabela já existente da qual herdar DDL base (Linguagem de Definição de Dados). O uso de uma tabela de modelo permite a criação fácil de muitas tabelas com colunas e índices idênticos.
+O nome de uma tabela já existente da qual herdar DDL base (linguagem de definição de dados). O uso de uma tabela de modelo permite a fácil criação de muitas tabelas com colunas e índices idênticos.
 
 **ulPages**
 
-O número inicial de páginas de banco de dados a ser alocada para a tabela. Especificar um número maior que um pode reduzir a fragmentação se muitas linhas são inseridas nesta tabela.
+O número inicial de páginas de banco de dados a serem alocadas para a tabela. A especificação de um número maior que um pode reduzir a fragmentação se várias linhas forem inseridas nessa tabela.
 
 **ulDensity**
 
-A densidade da tabela, em pontos percentuais. O número deve ser 0 ou no intervalo de 20 a 100. Passar 0 significa que o valor padrão deve ser usado. O padrão é 80.
+A densidade da tabela, em pontos percentuais. O número deve ser 0 ou estar no intervalo de 20 a 100. Passar 0 significa que o valor padrão deve ser usado. O padrão é 80.
 
 **rgcolumncreate**
 
-Uma matriz de [JET_COLUMNCREATE](./jet-columncreate-structure.md) estruturas, cada uma correspondendo a uma coluna a ser criada na nova tabela.
+Uma matriz de estruturas [JET_COLUMNCREATE](./jet-columncreate-structure.md) , cada uma correspondendo a uma coluna a ser criada na nova tabela.
 
-**Ccolumns**
+**cColumns**
 
-o número de [JET_COLUMNCREATE](./jet-columncreate-structure.md) elementos em **rgcolumncreate**.
+o número de elementos [JET_COLUMNCREATE](./jet-columncreate-structure.md) em **rgcolumncreate**.
 
 **rgindexcreate**
 
-Uma matriz de [JET_INDEXCREATE](./jet-indexcreate-structure.md) estruturas, cada uma correspondendo a um índice a ser criado na nova tabela.
+Uma matriz de estruturas [JET_INDEXCREATE](./jet-indexcreate-structure.md) , cada uma delas corresponde a um índice a ser criado na nova tabela.
 
 **cIndexes**
 
-O número de [JET_INDEXCREATE](./jet-indexcreate-structure.md) elementos em **rgindexcreate**.
+O número de elementos [JET_INDEXCREATE](./jet-indexcreate-structure.md) em **rgindexcreate**.
 
 **szCallback**
 
 A função que é chamada durante determinados eventos. **cbtyp** determina quando a função de retorno de chamada será chamada.
 
-O formato **de szCallback** deve ser "função de módulo"— por exemplo, "alpha beta" refere-se à função beta no módulo \! chamado \! "alpha". O protótipo da função deve corresponder [JET_CALLBACK](./jet-callback-callback-function.md). Para obter mais informações, [consulte JET_CALLBACK](./jet-callback-callback-function.md).
+O formato de **szCallback** deve ser "função do módulo \! " — por exemplo, "Alpha \! beta" refere-se à função beta no módulo chamado "Alpha". O protótipo da função deve corresponder a [JET_CALLBACK](./jet-callback-callback-function.md). Para obter mais informações, consulte [JET_CALLBACK](./jet-callback-callback-function.md).
 
 **cbtyp**
 
-Descreve o tipo de função de retorno de chamada designada por **szCallback**. Para obter mais informações, [consulte JET_CBTYP](./jet-cbtyp.md). Esse campo de bits é composto por um ou mais dos bits a seguir.
+Descreve o tipo de função de retorno de chamada designado por **szCallback**. Para obter mais informações, consulte [JET_CBTYP](./jet-cbtyp.md). Este campo de bits é composto de um ou mais dos seguintes itens.
 
 
 | <p>Valor</p> | <p>Significado</p> | 
@@ -127,9 +127,9 @@ Descreve o tipo de função de retorno de chamada designada por **szCallback**. 
 | <p>JET_cbtypBeforeDelete</p> | <p>A função de retorno de chamada será chamada antes da exclusão de um registro.</p> | 
 | <p>JET_cbtypAfterDelete</p> | <p>A função de retorno de chamada será chamada depois que um registro tiver sido excluído.</p> | 
 | <p>JET_cbtypUserDefinedDefaultValue</p> | <p>A função de retorno de chamada será chamada para calcular um padrão definido pelo usuário.</p> | 
-| <p>JET_cbtypOnlineDefragCompleted</p> | <p>A função de retorno de chamada será chamada após a conclusão de uma chamada para <a href="gg294095(v=exchg.10).md">JetDefragment2.</a></p> | 
-| <p>JET_cbtypFreeCursorLS</p> | <p>A função de retorno de chamada será chamada quando o armazenamento local associado a um cursor deve ser liberado.</p> | 
-| <p>JET_cbtypFreeTableLS</p> | <p>A função de retorno de chamada será chamada quando o armazenamento local associado a uma tabela deve ser liberado.</p> | 
+| <p>JET_cbtypOnlineDefragCompleted</p> | <p>A função de retorno de chamada será chamada depois que uma chamada para <a href="gg294095(v=exchg.10).md">JetDefragment2</a> for concluída.</p> | 
+| <p>JET_cbtypFreeCursorLS</p> | <p>A função de retorno de chamada será chamada quando o armazenamento local associado a um cursor precisar ser liberado.</p> | 
+| <p>JET_cbtypFreeTableLS</p> | <p>A função de retorno de chamada será chamada quando o armazenamento local associado a uma tabela precisar ser liberado.</p> | 
 
 
 
@@ -140,26 +140,31 @@ Um grupo de bits que contém as opções para essa chamada, que incluem zero ou 
 
 | <p>Valor</p> | <p>Significado</p> | 
 |--------------|----------------|
-| <p>JET_bitTableCreateFixedDDL</p> | <p>Definir JET_bitTableCreateFixedDDL impede operações DDL na tabela (como adicionar ou remover colunas).</p> | 
-| <p>JET_bitTableCreateTemplateTable</p> | <p>Definir JET_bitTableCreateTemplateTable faz com que a tabela seja uma tabela de modelo. Novas tabelas podem especificar o nome dessa tabela como sua tabela de modelo. Definir JET_bitTableCreateTemplateTable implica JET_bitTableCreateFixedDDL.</p> | 
+| <p>JET_bitTableCreateFixedDDL</p> | <p>A configuração JET_bitTableCreateFixedDDL impede operações DDL na tabela (como adicionar ou remover colunas).</p> | 
+| <p>JET_bitTableCreateTemplateTable</p> | <p>A configuração JET_bitTableCreateTemplateTable faz com que a tabela seja uma tabela de modelo. As novas tabelas podem especificar o nome dessa tabela como sua tabela de modelos. A configuração JET_bitTableCreateTemplateTable implica JET_bitTableCreateFixedDDL.</p> | 
 | <p>JET_bitTableCreateNoFixedVarColumnsInDerivedTables</p> | <p>Deve ser usado em conjunto com JET_bitTableCreateTemplateTable. Preterido. Não use.</p> | 
 
 
 
-**Tableid**
+**TableID**
 
-Um campo de saída que contém a [JET_TABLEID](./jet-tableid.md) da nova tabela se a chamada à API for bem-sucedida. Se a chamada à API falhar, o valor será indefinido.
+Um campo de saída que mantém o [JET_TABLEID](./jet-tableid.md) da nova tabela se a chamada à API for realizada com sucesso. Se a chamada à API falhar, o valor será indefinido.
 
 **cCreated**
 
-Um campo de saída que contém a contagem de objetos criados se a chamada à API for bem-sucedida. Se a chamada à API falhar, o valor será indefinido.
+Um campo de saída que contém a contagem de objetos que são criados se a chamada à API for realizada com sucesso. Se a chamada à API falhar, o valor será indefinido.
 
-A contagem de objetos criados é igual à soma de colunas, tabelas e índices criados com êxito.
+A contagem de objetos que é criada é igual à soma de colunas, tabelas e índices criados com êxito.
 
 ### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requer Windows Vista ou Windows XP.</p> | | <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008 ou Windows Server 2003.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | | <p><strong>Unicode</strong></p> | <p>Implementado como <strong>JET_TABLECREATE2_W</strong> (Unicode) e <strong>JET_TABLECREATE2_A</strong> (ANSI).</p> | 
+| Requisito | Valor |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>requer o Windows Vista ou Windows XP.</p> | 
+| <p><strong>Servidor</strong></p> | <p>requer o Windows server 2008 ou Windows server 2003.</p> | 
+| <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | 
+| <p><strong>Unicode</strong></p> | <p>Implementado como <strong>JET_TABLECREATE2_W</strong> (Unicode) <strong>e JET_TABLECREATE2_A</strong> (ANSI).</p> | 
 
 
 

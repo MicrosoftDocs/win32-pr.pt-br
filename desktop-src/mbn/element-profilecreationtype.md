@@ -7,12 +7,12 @@ MSHAttr:
 title: ProfileCreationType (em MBNProfileExt)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 29892e6a9dd0f32bb571103668d3a2d7dea32311
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 652d406689219c8a535e0a75ae7123180c7530a6
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122473942"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122885403"
 ---
 # <a name="span-idwwan_profile_v4element_profilecreationtypespanprofilecreationtype-in-mbnprofileext"></a><span id="WWAN_profile_v4.element_ProfileCreationType"></span>ProfileCreationType (em MBNProfileExt)
 
@@ -22,10 +22,10 @@ Para obter mais informações sobre esse elemento, consulte a documentação do 
 
 ## <a name="element-hierarchy"></a>Hierarquia de elementos
 
-[<MBNProfileExt>](element-mbnprofileext.md)  
-**<ProfileCreationType>**
+[&lt;MBNProfileExt&gt;](element-mbnprofileext.md)  
+**&lt;ProfileCreationType&gt;**
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` syntax
 <ProfileCreationType>
@@ -48,7 +48,7 @@ Nenhum.
 ### <a name="span-idparent_elementsspanspan-idparent_elementsspanparent-elements"></a><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Elementos pai
 
 
-| Elemento pai | Descrição | 
+| Elemento pai | Description | 
 |----------------|-------------|
 | <a href="element-mbnprofileext.md">MBNProfileExt</a> | <p>O <strong>elemento MBNProfileExt</strong> é uma extensão do elemento MBNProfile anterior. Ele identifica um perfil de Banda Larga Móvel com um conjunto mais avançado de opções do que o elemento MBNProfile.</p><p>Pode haver mais de um elemento MbnProfileExt em um perfil, descrevendo as configurações de perfil para um conjunto específico de condições operacionais. Use o <a href="element-profileconditionedon.md"><strong>elemento filho ProfileConditionedOn</strong></a> <strong>de MBNProfileExt</strong> para especificar quais condições operacionais fazem de um perfil específico o perfil ativo.</p> | 
 

@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1c4adc0b853054d448bc9955f3bd8c64115ac2ab
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1f5a689b74bd18138361d9377358ddee5cf5979f
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105813390"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122630187"
 ---
 # <a name="argument-element"></a>Elemento Argument
 
@@ -60,8 +60,8 @@ Quando o atributo **Name** de um elemento **Fragment** é uma característica de
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -95,8 +95,8 @@ Quando o atributo de **nome** de um elemento de **fragmento** é "limitar o tama
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -135,8 +135,8 @@ Quando o atributo **Name** de um elemento **Fragment** é "limitar número de it
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -176,7 +176,7 @@ Quando o atributo **Name** de um elemento **Fragment** é "limitar número de it
 [**Elemento Fragment**](fragment-element.md)
 </dt> <dt>
 
-[**Referência de elementos da playlist do Windows Media**](windows-media-playlist-elements-reference.md)
+[**Windows Referência de elementos de playlist de mídia**](windows-media-playlist-elements-reference.md)
 </dt> </dl>
 
  

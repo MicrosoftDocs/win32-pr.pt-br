@@ -7,12 +7,12 @@ MSHAttr:
 title: MBNProfileExt
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c47dd7c8b8064d7c9bed24763dfe3ec8fda0ac12
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 1cf6b821d36fc69c06fd42fad58efc4102e64f6a
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122472122"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122987909"
 ---
 # <a name="span-idwwan_profile_v4element_mbnprofileextspanmbnprofileext"></a><span id="WWAN_profile_v4.element_MBNProfileExt"></span>MBNProfileExt
 
@@ -22,9 +22,9 @@ Pode haver mais de um elemento MbnProfileExt em um perfil, descrevendo as config
 
 ## <a name="element-hierarchy"></a>Hierarquia de elementos
 
-**<MBNProfileExt>**
+**&lt;MBNProfileExt&gt;**
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` syntax
 <MBNProfileExt>
@@ -105,7 +105,9 @@ Esse elemento mais externo (documento) pode não estar contido por outros elemen
 ## <a name="requirements"></a>Requisitos
 
 
-| | | <p>Namespace</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+| Requisito | Valor |
+|------------|----------|
+| <p>Namespace</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
 
 
  

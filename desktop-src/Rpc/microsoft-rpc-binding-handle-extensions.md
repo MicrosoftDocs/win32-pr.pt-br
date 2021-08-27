@@ -4,12 +4,12 @@ description: As extensões da Microsoft para a linguagem IDL dão suporte a vár
 ms.assetid: 084b0d8e-0c8a-43b9-b3ae-4f69cab3a2c2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a947c10465cb24012be9c3f845fbd874f9de0567
-ms.sourcegitcommit: ae73f4dd3cf5a3c6a1ea7d191ca32a5b01f6686b
+ms.openlocfilehash: 8c93b68b20628bf6f7f65cee026412846e0b497d
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "104008511"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122475362"
 ---
 # <a name="microsoft-rpc-binding-handle-extensions"></a>Extensões de Binding-Handle RPC da Microsoft
 
@@ -44,63 +44,21 @@ A tabela a seguir contém exemplos e descreve como os identificadores de associa
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Exemplo</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><pre class="syntax" data-space="preserve"><code>void proc1( void );</code></pre></td>
-<td>Nenhum identificador explícito foi especificado. O identificador de associação implícito, especificado por [ <a href="/windows/desktop/Midl/implicit-handle">implicit_handle</a>] ou [ <a href="/windows/desktop/Midl/auto-handle">auto_handle</a>], é usado. Quando nenhum ACF estiver presente, um identificador automático será usado.</td>
-</tr>
-<tr class="even">
-<td><pre class="syntax" data-space="preserve"><code>void proc2([in] handle_t H,
-           [in] short s );</code></pre></td>
-<td>Um identificador explícito do tipo handle_t é especificado. O parâmetro <em>H</em> é o identificador de associação para o procedimento.</td>
-</tr>
-<tr class="odd">
-<td><pre class="syntax" data-space="preserve"><code>void proc3([in] short s,
-           [in] handle_t H );</code></pre></td>
-<td>O primeiro parâmetro não é um identificador. No modo padrão, o parâmetro de identificador mais à esquerda, <em>H</em>, é o identificador de associação. No modo/OSF, a associação implícita é usada. Um erro é relatado porque o segundo parâmetro deve ser transmissible e handle_t não pode ser transmitido.</td>
-</tr>
-<tr class="even">
-<td><pre class="syntax" data-space="preserve"><code>typedef [handle] short * MY_HDL;
 
-void proc1([in] short s,
-           [in] MY_HDL H );</code></pre></td>
-<td>O primeiro parâmetro não é um identificador. No modo padrão, o parâmetro de identificador mais à esquerda, <em>H</em>, é o identificador de associação. Os stubs chamam as rotinas fornecidas pelo usuário MY_HDL_bind e MY_HDL_unbind. No modo/uso, a associação implícita é usada. O parâmetro identificador <em>H</em> definido pelo programador é tratado como dados Transmissible.</td>
-</tr>
-<tr class="odd">
-<td><pre class="syntax" data-space="preserve"><code>Typedef [handle] short * MY_HDL;
-
-void proc1([in] MY_HDL H, 
-           [in] MY_HDL p );</code></pre></td>
-<td>O primeiro parâmetro é um identificador de associação. O parâmetro <em>H</em> é o parâmetro de identificador de associação. O segundo parâmetro de identificador definido pelo programador é tratado como dados de Transmissible.</td>
-</tr>
-<tr class="even">
-<td><pre class="syntax" data-space="preserve"><code>Typedef [context_handle] 
-void * CTXT_HDL;
-
-void proc1([in] short s,
-           [in] long l,
-           [in] CTXT_HDL H ,
-           [in] char c);</code></pre></td>
-<td>O identificador de associação é um identificador de contexto. O parâmetro <em>H</em> é o identificador de associação.</td>
-</tr>
-</tbody>
-</table>
+| Exemplo | Descrição | 
+|---------|-------------|
+| <pre class="syntax" data-space="preserve"><code>void proc1( void );</code></pre> | Nenhum identificador explícito foi especificado. O identificador de associação implícito, especificado por [ <a href="/windows/desktop/Midl/implicit-handle">implicit_handle</a>] ou [ <a href="/windows/desktop/Midl/auto-handle">auto_handle</a>], é usado. Quando nenhum ACF estiver presente, um identificador automático será usado. | 
+| <pre class="syntax" data-space="preserve"><code>void proc2([in] handle_t H,           [in] short s );</code></pre> | Um identificador explícito do tipo handle_t é especificado. O parâmetro <em>H</em> é o identificador de associação para o procedimento. | 
+| <pre class="syntax" data-space="preserve"><code>void proc3([in] short s,           [in] handle_t H );</code></pre> | O primeiro parâmetro não é um identificador. No modo padrão, o parâmetro de identificador mais à esquerda, <em>H</em>, é o identificador de associação. No modo/OSF, a associação implícita é usada. Um erro é relatado porque o segundo parâmetro deve ser transmissible e handle_t não pode ser transmitido. | 
+| <pre class="syntax" data-space="preserve"><code>typedef [handle] short * MY_HDL;void proc1([in] short s,           [in] MY_HDL H );</code></pre> | O primeiro parâmetro não é um identificador. No modo padrão, o parâmetro de identificador mais à esquerda, <em>H</em>, é o identificador de associação. Os stubs chamam as rotinas fornecidas pelo usuário MY_HDL_bind e MY_HDL_unbind. No modo/uso, a associação implícita é usada. O parâmetro identificador <em>H</em> definido pelo programador é tratado como dados Transmissible. | 
+| <pre class="syntax" data-space="preserve"><code>Typedef [handle] short * MY_HDL;void proc1([in] MY_HDL H,            [in] MY_HDL p );</code></pre> | O primeiro parâmetro é um identificador de associação. O parâmetro <em>H</em> é o parâmetro de identificador de associação. O segundo parâmetro de identificador definido pelo programador é tratado como dados de Transmissible. | 
+| <pre class="syntax" data-space="preserve"><code>Typedef [context_handle] void * CTXT_HDL;void proc1([in] short s,           [in] long l,           [in] CTXT_HDL H ,           [in] char c);</code></pre> | O identificador de associação é um identificador de contexto. O parâmetro <em>H</em> é o identificador de associação. | 
 
 
 
- 
 
- 
+ 
 
- 
+ 
+
+ 

@@ -1,8 +1,8 @@
 ---
-description: A \_ classe CIM SettingCheck especifica as informações necessárias para verificar um arquivo de configuração específico em busca de uma entrada específica que contenha um valor igual ao valor especificado. Todas as comparações são consideradas não diferenciando maiúsculas de minúsculas.
+description: A classe CIM SettingCheck especifica as informações necessárias para verificar um arquivo de configuração específico para uma entrada específica que contém um valor igual \_ ao valor especificado. Supõe-se que todas as comparações não sejam maiúsculas de minúsculas.
 ms.assetid: 0e40276c-e794-4ea1-8937-c6d7f110f97d
 ms.tgt_platform: multiple
-title: Classe CIM_SettingCheck
+title: CIM_SettingCheck classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -28,23 +28,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 4b360833f216d9feb839a4ed84a0e1ba4cd61ebf
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 2be1e96bc47889387e760ec082e50207c496cdeb
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105811166"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122885272"
 ---
-# <a name="cim_settingcheck-class"></a>\_Classe CIM SettingCheck
+# <a name="cim_settingcheck-class"></a>Classe CIM \_ SettingCheck
 
-A classe **CIM \_ SettingCheck** especifica as informações necessárias para verificar um arquivo de configuração específico em busca de uma entrada específica que contenha um valor igual ao valor especificado. Todas as comparações são consideradas não diferenciando maiúsculas de minúsculas.
+A **classe CIM \_ SettingCheck** especifica as informações necessárias para verificar um arquivo de configuração específico para uma entrada específica que contém um valor igual ao valor especificado. Supõe-se que todas as comparações não sejam maiúsculas de minúsculas.
 
 > [!IMPORTANT]
-> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> As classes CIM (Distributed Management Task Force) modelo CIM DMTF são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
-A sintaxe a seguir é simplificada do código formato MOF (MOF) e inclui todas as suas propriedades herdadas. As propriedades são listadas em ordem alfabética, não em ordem MOF.
+A sintaxe a seguir é simplificada do Managed Object Format (MOF) e inclui todas as suas propriedades herdadas. As propriedades são listadas em ordem alfabética, não em ordem MOF.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -71,20 +71,20 @@ class CIM_SettingCheck : CIM_Check
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ SettingCheck** tem estes tipos de membros:
+A **classe CIM \_ SettingCheck** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-A classe **CIM \_ SettingCheck** tem esses métodos.
+A **classe CIM \_ SettingCheck** tem esses métodos.
 
 
 
 | Método                                                    | Descrição                                                   |
 |:----------------------------------------------------------|:--------------------------------------------------------------|
-| [**Chame**](invoke-method-in-class-cim-settingcheck.md) | Executa uma ação específica. Não implementado pelo WMI.<br/> |
+| [**Invoke**](invoke-method-in-class-cim-settingcheck.md) | Toma uma ação específica. Não implementado pelo WMI.<br/> |
 
 
 
@@ -92,7 +92,7 @@ A classe **CIM \_ SettingCheck** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ SettingCheck** tem essas propriedades.
+A **classe CIM \_ SettingCheck** tem essas propriedades.
 
 <dl> <dt>
 
@@ -105,16 +105,16 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
+Qualificadores: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Breve descrição textual do objeto.
+Descrição textual curta do objeto.
 
-Essa propriedade é herdada [**da \_ verificação CIM**](cim-check.md).
+Essa propriedade é herdada de [**CIM \_ Check**](cim-check.md).
 
 </dd> <dt>
 
-**CheckID**
+**Checkid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -123,44 +123,44 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**chave**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Identificador usado em conjunto com outras chaves para identificar exclusivamente a verificação. Essa propriedade é herdada [**da \_ verificação CIM**](cim-check.md).
+Identificador usado em conjunto com outras chaves para identificar exclusivamente a verificação. Essa propriedade é herdada de [**CIM \_ Check**](cim-check.md).
 
 </dd> <dt>
 
 **CheckMode**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Se for **true**, espera-se que a condição exista no ambiente (por exemplo, se um arquivo estiver em um sistema, o método [**Invoke**](invoke-method-in-class-cim-settingcheck.md) deverá retornar **true**). Se for **false**, a condição não deverá existir (por exemplo, se um arquivo não estiver em um sistema, o método **Invoke** deverá retornar **false**).
+Se **TRUE**, a condição deverá existir no ambiente (por exemplo, se um arquivo estiver em um sistema, o método [**Invoke**](invoke-method-in-class-cim-settingcheck.md) deverá retornar **TRUE).** Se **FALSE**, a condição não deverá existir (por exemplo, se um arquivo não estiver em um sistema, o **método Invoke** deverá retornar **FALSE**).
 
-Essa propriedade é herdada [**da \_ verificação CIM**](cim-check.md).
+Essa propriedade é herdada de [**CIM \_ Check**](cim-check.md).
 
 </dd> <dt>
 
-**Checktype**
+**CheckType**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Forma como o valor da configuração deve ser comparado.
+Maneira na qual o valor de configuração deve ser comparado.
 
 <dt>
 
 <span id="Matches"></span><span id="matches"></span><span id="MATCHES"></span>
 
-**Correspondências** (0)
+**Corresponde** (0)
 
 
 </dt> <dd></dd> <dt>
@@ -185,11 +185,11 @@ Tipo de acesso: Somente leitura
 
 Descrição do objeto.
 
-Essa propriedade é herdada [**da \_ verificação CIM**](cim-check.md).
+Essa propriedade é herdada de [**CIM \_ Check**](cim-check.md).
 
 </dd> <dt>
 
-**Entryname**
+**Nome_da_entrada**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -198,14 +198,14 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificadores: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Nome da entrada a ser verificada
 
 </dd> <dt>
 
-**Entryvalue**
+**EntryValue**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -214,7 +214,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Valor que está associado à entrada nomeada a ser verificada.
+Valor associado à entrada nomeada a ser verificada.
 
 </dd> <dt>
 
@@ -227,10 +227,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (1024)
+Qualificadores: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (1024)
 </dt> </dl>
 
-Nome do arquivo de configuração a ser verificado.
+Nome do arquivo de configuração a ser verificar.
 
 </dd> <dt>
 
@@ -243,10 +243,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ softwareelement**](cim-softwareelement.md).**Name**"), [**\_ chave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificadores: [**Propagado**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**Name**"), [**cim \_ key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Nome usado para identificar o elemento de software. Essa propriedade é herdada [**da \_ verificação CIM**](cim-check.md).
+Nome usado para identificar o elemento de software. Essa propriedade é herdada de [**CIM \_ Check**](cim-check.md).
 
 </dd> <dt>
 
@@ -259,10 +259,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificadores: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Chave da seção que contém as configurações a serem verificadas.
+Chave da seção que contém as configurações a verificar.
 
 </dd> <dt>
 
@@ -275,30 +275,30 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ softwareelement**](cim-softwareelement.md).**SoftwareElementID**"), [**\_ chave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificadores: [**Propagado**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementID**"), [**chave \_ CIM,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Identificador para o elemento de software.
 
-Essa propriedade é herdada [**da \_ verificação CIM**](cim-check.md).
+Essa propriedade é herdada de [**CIM \_ Check**](cim-check.md).
 
 </dd> <dt>
 
 **SoftwareElementState**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ softwareelement**](cim-softwareelement.md).**SoftwareElementState**"), [**\_ chave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Qualificadores: [**Propagado**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementState**"), [**chave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Estado de um elemento de software.
 
-Essa propriedade é herdada [**da \_ verificação CIM**](cim-check.md).
+Essa propriedade é herdada de [**CIM \_ Check**](cim-check.md).
 
 <dt>
 
@@ -331,18 +331,18 @@ Descreve os detalhes necessários para a instalação bem-sucedida e os detalhes
 
 </dt> <dd>
 
-Descreve os detalhes necessários para a execução bem-sucedida e os detalhes (condições e ações) necessários para criar um elemento de software no estado em execução (ou seja, o próximo estado).
+Descreve os detalhes necessários para a execução bem-sucedida e os detalhes (condições e ações) necessários para criar um elemento de software no estado de execução (ou seja, o próximo estado).
 
 </dd> <dt>
 
 <span id="Running"></span><span id="running"></span><span id="RUNNING"></span>
 
-<span id="Running"></span><span id="running"></span><span id="RUNNING"></span>**Em execução** (3)
+<span id="Running"></span><span id="running"></span><span id="RUNNING"></span>**Executando** (3)
 
 
 </dt> <dd>
 
-Descreve os detalhes necessários para monitorar e operar em um elemento inicial.
+Descreve os detalhes necessários para monitorar e operar em um elemento start.
 
 </dd> </dl>
 
@@ -351,7 +351,7 @@ Descreve os detalhes necessários para monitorar e operar em um elemento inicial
 **TargetOperatingSystem**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -498,7 +498,7 @@ VM (máquina virtual) da Microsoft para Java
 
 </dt> <dd>
 
-Windows 3. x
+Windows Win
 
 </dd> <dt>
 
@@ -580,7 +580,7 @@ NCR 3000
 
 <span id="Reliant_UNIX"></span><span id="reliant_unix"></span><span id="RELIANT_UNIX"></span>
 
-<span id="Reliant_UNIX"></span><span id="reliant_unix"></span><span id="RELIANT_UNIX"></span>**Unix dependente** (24)
+<span id="Reliant_UNIX"></span><span id="reliant_unix"></span><span id="RELIANT_UNIX"></span>**UNIX dependentes** (24)
 
 
 </dt> <dd></dd> <dt>
@@ -708,7 +708,7 @@ BS2000/OSD
 
 <span id="Interactive_UNIX"></span><span id="interactive_unix"></span><span id="INTERACTIVE_UNIX"></span>
 
-<span id="Interactive_UNIX"></span><span id="interactive_unix"></span><span id="INTERACTIVE_UNIX"></span>**Unix interativo** (40)
+<span id="Interactive_UNIX"></span><span id="interactive_unix"></span><span id="INTERACTIVE_UNIX"></span>**UNIX interativos** (40)
 
 
 </dt> <dd></dd> <dt>
@@ -720,7 +720,7 @@ BS2000/OSD
 
 </dt> <dd>
 
-BSD UNIX
+UNIX BSD
 
 </dd> <dt>
 
@@ -890,8 +890,8 @@ Versão da operação.
 
 A versão da operação deve estar em um dos seguintes formatos:
 
--   <major>.<minor>.<revision>
--   <major>.<minor><letter><revision>
+-   &lt;principal &gt; . &lt; secundária &gt; . &lt; revisão&gt;
+-   &lt;principal &gt; . &lt; &gt; &lt; revisão de letra &gt; &lt; secundária&gt;
 
 Essa propriedade é herdada da classe de [**\_ verificação CIM**](cim-check.md) .
 
@@ -911,8 +911,8 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -921,7 +921,7 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 
 <dl> <dt>
 
-[**Verificação de CIM \_**](cim-check.md)
+[**Verificação \_ cim**](cim-check.md)
 </dt> </dl>
 
  

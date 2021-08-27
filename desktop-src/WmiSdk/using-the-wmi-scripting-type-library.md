@@ -10,12 +10,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 0d53f74db0ff4b744077c4e208be52dd749c2f4f150d867c3cfc7214c0e66ae2
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 20e5a2aa10bccfbd91b003f1db120691b6c61bb4
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120120766"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122881172"
 ---
 # <a name="using-the-wmi-scripting-type-library"></a>Usando a biblioteca de tipos de script WMI
 
@@ -68,7 +68,7 @@ Os scripts podem se conectar à API de script para a biblioteca de tipos do WMI 
 
     
 
--   Referenciando a biblioteca de tipos WMI usando a <reference> marca do formato de arquivo XML do WSH 2,0. Se você usar a <reference> marca, a marca deverá ter um atributo **UUID** cujo valor é o **GUID** da biblioteca de tipos WMI ou (recomendado) um atributo Object cujo valor é o **ProgID** de qualquer um dos objetos de script WMI que você pode criar.
+-   Referenciando a biblioteca de tipos WMI usando a &lt; &gt; marca de referência do formato de arquivo XML do WSH 2,0. Se você usar a &lt; marca de referência &gt; , a marca deverá ter um **atributo uuid** cujo valor é o **GUID** da biblioteca de tipos WMI ou (recomendado) um atributo de objeto cujo valor é o **ProgID** de qualquer um dos objetos de script WMI que você pode criar.
 
     O exemplo de código VBScript a seguir usa o PROGID de "WbemScripting". Para executar o script, salve o texto em um arquivo com uma extensão. wsf.
 

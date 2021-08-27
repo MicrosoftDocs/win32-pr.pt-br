@@ -7,12 +7,12 @@ MSHAttr:
 title: RoamApplicability
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e29438df96a3a12bb791870b1cc0d59e84f77d52
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a6fbd7b80e8f5cec49caaa0ea08d747d99e938b2
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105813739"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122986859"
 ---
 # <a name="span-idwwan_profile_v4element_roamapplicabilityspanmbnprofileextroamapplicability-v4"></a><span id="WWAN_profile_v4.element_RoamApplicability"></span>MBNProfileExt \/ RoamApplicability (v4)
 
@@ -26,7 +26,7 @@ Especifica que esse perfil está ativo somente quando a condição de roaming at
 [\<ModemDMConfigProfile\>](element-modemdmconfigprofile.md)  
 &nbsp;&nbsp;**\<RoamApplicability\>**
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` syntax
 <RoamApplicability>
@@ -48,46 +48,22 @@ Nenhum.
 
 ### <a name="span-idparent_elementsspanspan-idparent_elementsspanparent-elements"></a><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Elementos pai
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Elemento pai</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="element-modemdmconfigprofile.md">ModemDMConfigProfile</a></td>
-<td><p>Perfil de configuração de DM de modem.</p></td>
-</tr>
-<tr class="even">
-<td><a href="element-profileconditionedon.md">ProfileConditionedOn</a></td>
-<td><p>Especifica as condições que devem ser satisfeitas para que um perfil seja aplicável.</p>
-<p>Este elemento é novo para v4. Ele permite que você especifique vários perfis que se aplicam em diferentes condições e para que o perfil apropriado seja usado automaticamente quando aplicável. Esse elemento é opcional. Se você não especificá-lo, o perfil sempre será aplicável em relação às condições listadas.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Elemento pai | Descrição | 
+|----------------|-------------|
+| <a href="element-modemdmconfigprofile.md">ModemDMConfigProfile</a> | <p>Perfil de configuração de DM de modem.</p> | 
+| <a href="element-profileconditionedon.md">ProfileConditionedOn</a> | <p>Especifica as condições que devem ser satisfeitas para que um perfil seja aplicável.</p><p>Este elemento é novo para v4. Ele permite que você especifique vários perfis que se aplicam em diferentes condições e para que o perfil apropriado seja usado automaticamente quando aplicável. Esse elemento é opcional. Se você não especificá-lo, o perfil sempre será aplicável em relação às condições listadas.</p> | 
+
 
  
 
 ## <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Namespace</p></td>
-<td><p>https://www.microsoft.com/networking/WWAN/profile/v4</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Valor |
+|------------|----------|
+| <p>Namespace</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+
 
  
 

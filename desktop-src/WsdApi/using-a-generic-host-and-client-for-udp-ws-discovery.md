@@ -1,29 +1,29 @@
 ---
-description: Se o cliente e o host não puderem ver uns aos outros na rede, um host genérico e um cliente poderão ser substituídos pelo host e cliente personalizados para ajudar a solucionar o problema.
+description: Se o cliente e o host não puderem se ver na rede, um host genérico e um cliente poderão ser substituídos pelo host personalizado e pelo cliente para ajudar a solucionar o problema.
 ms.assetid: e82ce911-b2a7-4a57-a2f0-9aca6b74478f
 title: Usando um host genérico e um cliente para UDP WS-Discovery
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae6af77529116e21848e22812e04322273e08f1f0cf4d107787b4039b2442b19
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3a7b9f42cd76e54c3ee04a3299e9f23eecbfdd73
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118991486"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122883074"
 ---
 # <a name="using-a-generic-host-and-client-for-udp-ws-discovery"></a>Usando um host genérico e um cliente para UDP WS-Discovery
 
-Se o cliente e o host não puderem ver uns aos outros na rede, um host genérico e um cliente poderão ser substituídos pelo host e cliente personalizados para ajudar a solucionar o problema. Se o endereço do dispositivo não aparecer na saída do cliente de depuração WSD, o ambiente de rede provavelmente está causando a falha. Para obter mais informações sobre o host e o cliente genéricos, consulte [ferramentas de depuração](debugging-tools.md).
+Se o cliente e o host não puderem se ver na rede, um host genérico e um cliente poderão ser substituídos pelo host personalizado e pelo cliente para ajudar a solucionar o problema. Se o endereço do dispositivo não aparecer na saída do cliente de depuração do WSD, o ambiente de rede provavelmente está causando a falha. Para obter mais informações sobre o host genérico e o cliente, consulte [Ferramentas de depuração](debugging-tools.md).
 
-Se o host ou o cliente for um aplicativo em execução em um computador, o host ou cliente genérico deverá ser executado no mesmo contexto de segurança que o host ou cliente real. Por exemplo, se o host ou o cliente real for executado como administrador, o host ou cliente genérico deverá ser executado como administrador. Além disso, se o host ou o cliente for um dispositivo autônomo, ele deverá ser completamente substituído por um computador que esteja executando um cliente ou host genérico.
+Se o host ou o cliente for um aplicativo em execução em um computador, o host genérico ou o cliente deverá ser executado no mesmo contexto de segurança que o host ou o cliente real. Por exemplo, se o host ou cliente real for executado como Administrador, o host genérico ou o cliente deverá ser executado como Administrador. Além disso, se o host ou o cliente for um dispositivo autônomo, ele deverá ser completamente substituído por um computador que executa um host ou cliente genérico.
 
-**Para usar um host genérico e um cliente para solucionar problemas de descoberta de WS-Discovery**
+**Para usar um host genérico e um cliente para solucionar problemas de WS-Discovery UDP**
 
 1.  Abra uma janela de prompt de comando.
-2.  Execute o seguinte comando: **WSDDebug \_host.exe/Mode Metadata/Start**
+2.  Execute o seguinte comando: **WSDDebughost.exe \_ /mode metadata /start**
 
     > [!Note]  
-    > uma caixa de diálogo **Segurança do Windows alerta** pode ser exibida. Nesse caso, clique em **desbloquear** para permitir que o host de depuração WSD seja executado.
+    > Uma **Segurança do Windows caixa de diálogo Alerta** pode aparecer. Em caso afirmatório, **clique em Desbloquear** para permitir que o Host de Depuração do WSD seja executado.
 
      
 
@@ -36,13 +36,13 @@ Se o host ou o cliente for um aplicativo em execução em um computador, o host 
     Host metadata>
     ```
 
-3.  Execute o seguinte comando: **WSDDebug \_client.exe/Mode Metadata/Hello off/resolve** *<id>* . Substitua *<id>* pela ID do dispositivo identificada na etapa 2.
+3.  Execute o seguinte comando: **WSDDebug \_client.exe /mode metadata /hello off /resolve** *&lt; id &gt;*. Substitua *&lt; id &gt;* pela ID do dispositivo identificada na etapa 2.
     > [!Note]  
-    > uma caixa de diálogo **Segurança do Windows alerta** pode ser exibida. Nesse caso, clique em **desbloquear** para permitir que o cliente de depuração WSD seja executado.
+    > Uma **Segurança do Windows caixa de diálogo Alerta** pode aparecer. Em caso afirmatório, **clique em Desbloquear** para permitir que o Cliente de Depuração do WSD seja executado.
 
      
 
-O cliente de depuração WSD gera uma saída semelhante à seguinte.
+O cliente de depuração do WSD gera uma saída semelhante à seguinte.
 
 ``` syntax
 WSDAPI Debug Client
@@ -67,15 +67,15 @@ Add at 02/28/07 15:16:51
 Client metadata>
 ```
 
-O cliente de depuração WSD pode gerar muita saída em uma rede com muitos dispositivos DPWS. A saída pode ser redirecionada para um arquivo para facilitar a análise. Digite o arquivo de **log** de texto *<filename>* no prompt do cliente de depuração WSD para redirecionar a saída para um arquivo. O redirecionamento de saída pode ser interrompido digitando o registro de tempo de **interrupção do log** no prompt do cliente de depuração WSD.
+O cliente de depuração do WSD pode gerar muita saída em uma rede com muitos dispositivos DPWS. A saída pode ser redirecionada para um arquivo para uma análise mais fácil. Digite **log tee** *&lt; &gt; filename no* prompt do cliente de depuração do WSD para redirecionar a saída para um arquivo. O redirecionamento de saída pode ser interrompido digitando **log no** prompt do Cliente de Depuração do WSD.
 
-Anote o endereço de referência do ponto de extremidade (EPR). Esse endereço de EPR deve corresponder à ID do dispositivo identificada na etapa 2 acima. Se esse for o caso, a falha do aplicativo provavelmente não estará relacionada ao sistema operacional ou ao ambiente de rede. Substitua o host genérico e o cliente pelo host e cliente personalizados e continue a solução de problemas seguindo os procedimentos em [usando o cliente de depuração WSD para verificar o tráfego multicast](using-wsddebug-client-to-verify-multicast-traffic.md).
+Anote o endereço de EPR (referência de ponto de extremidade). Esse endereço de EPR deve corresponder à ID do dispositivo identificada na etapa 2 acima. Se esse for o caso, a falha do aplicativo provavelmente não está relacionada ao sistema operacional ou ao ambiente de rede. Substitua o host genérico e o cliente pelo host personalizado e pelo cliente e continue a solução de problemas seguindo os procedimentos em Usando o cliente de depuração do WSD para verificar o tráfego [multicast.](using-wsddebug-client-to-verify-multicast-traffic.md)
 
-Se a ID do dispositivo não corresponder ao endereço EPR, a falha do aplicativo provavelmente estará relacionada ao sistema operacional ou ao ambiente de rede. A falha pode ter uma ou mais das seguintes causas:
+Se a ID do dispositivo não corresponder ao endereço EPR, a falha do aplicativo provavelmente está relacionada ao sistema operacional ou ao ambiente de rede. A falha pode ter uma ou mais das seguintes causas:
 
--   O aplicativo está sendo executado no contexto de segurança incorreto. Verifique se o aplicativo está usando as credenciais corretas e se o cliente e o host têm permissão suficiente para acessar a rede.
--   A configuração do firewall está incorreta. siga as instruções em [inspecionando adaptador e Firewall Configurações](inspecting-adapter-and-firewall-settings.md) para verificar se as configurações de firewall do Windows estão corretas e se não há outras regras descartando os pacotes. O cliente e o host também podem ser copiados em um computador "original" (um com uma instalação padrão do sistema operacional que nunca tenha sido unida a um domínio) para tentar reproduzir a falha.
--   Uma política IPSec está bloqueando o aplicativo. Copie o cliente e o host em um computador que não esteja sujeito a diretivas IPSec e tente reproduzir a falha.
+-   O aplicativo está em execução no contexto de segurança errado. Verifique se o aplicativo está usando as credenciais corretas e se o cliente e o host têm permissão suficiente para acessar a rede.
+-   A configuração do firewall está errada. Siga as instruções em [Inspecionando](inspecting-adapter-and-firewall-settings.md) o adaptador e Configurações firewall para verificar se as configurações Windows Firewall do Windows estão corretas e se não há outras regras descartando os pacotes. O cliente e o host também podem ser copiados em um computador "pristine" (um com uma instalação de sistema operacional padrão que nunca foi ingressada em um domínio) para tentar reproduzir a falha.
+-   Uma política de IPSec está bloqueando o aplicativo. Copie o cliente e o host em um computador não sujeito a políticas IPSec e tente reproduzir a falha.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -84,7 +84,7 @@ Se a ID do dispositivo não corresponder ao endereço EPR, a falha do aplicativo
 [Procedimentos de diagnóstico do WSDAPI](wsdapi-diagnostic-procedures.md)
 </dt> <dt>
 
-[Introdução com a solução de problemas de WSDAPI](getting-started-with-wsdapi-troubleshooting.md)
+[Ponto de Partida solução de problemas do WSDAPI](getting-started-with-wsdapi-troubleshooting.md)
 </dt> </dl>
 
  

@@ -1,19 +1,19 @@
 ---
-description: O <propertyStore> elemento opcional especifica o local de um IPropertyStore baseado em XML para armazenar metadados abertos para esse conector de pesquisa. Este elemento não tem atributos e apenas um elemento filho.
+description: O &lt; elemento de propertyStore opcional &gt; especifica o local de um IPropertyStore baseado em XML para armazenar metadados abertos para esse conector de pesquisa. Este elemento não tem atributos e apenas um elemento filho.
 ms.assetid: 5720c69f-af87-432b-857c-dbd66ba74e80
 title: Elemento propertyStore (esquema do conector de pesquisa)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0de5a9e801163bd85635b82c1915394f24c39d3dfdafcb64c81fcff0bf84a219
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 73c617f560e0471062064bcec8020dd5e6efa026
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119351846"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886800"
 ---
 # <a name="propertystore-element-search-connector-schema"></a>Elemento propertyStore (esquema do conector de pesquisa)
 
-O <propertyStore> elemento opcional especifica o local de um IPropertyStore baseado em XML para armazenar metadados abertos para esse conector de pesquisa. Este elemento não tem atributos e apenas um elemento filho.
+O &lt; elemento de propertyStore opcional &gt; especifica o local de um IPropertyStore baseado em XML para armazenar metadados abertos para esse conector de pesquisa. Este elemento não tem atributos e apenas um elemento filho.
 
 ## <a name="syntax"></a>Syntax
 
@@ -49,7 +49,7 @@ O <propertyStore> elemento opcional especifica o local de um IPropertyStore base
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir mostra um <propertyStore> elemento com dois <property> elementos.
+O exemplo a seguir mostra &lt; um &gt; elemento propertyStore com &lt; dois &gt; elementos Property.
 
 
 ```

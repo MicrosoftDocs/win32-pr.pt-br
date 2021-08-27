@@ -20,23 +20,23 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 28abf76632f147b6e909c1b8fb036062d5d3af74
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8bbfac13e1536c0a8261e3c63a4308a84a60cf09
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103828643"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122474092"
 ---
 # <a name="jetgetattachinfoinstance-function"></a>Função JetGetAttachInfoInstance
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jetgetattachinfoinstance-function"></a>Função JetGetAttachInfoInstance
 
 A função **JetGetAttachInfoInstance** é usada durante um backup iniciado pelo [JetBeginExternalBackupInstance](./jetbeginexternalbackupinstance-function.md) para consultar uma instância para obter os nomes dos arquivos de banco de dados que devem se tornar parte do conjunto de arquivos de backup. Somente os bancos de dados que estão conectados à instância no momento usando [JetAttachDatabase](./jetattachdatabase-function.md) serão considerados. Esses arquivos podem ser abertos subsequentemente usando [JetOpenFileInstance](./jetopenfileinstance-function.md) e lidos usando [JetReadFileInstance](./jetreadfileinstance-function.md).
 
-**Windows XP: o JetGetAttachInfoInstance** é introduzido no Windows XP.
+**Windows xp: o JetGetAttachInfoInstance** é introduzido no Windows XP.
 
 ```cpp
     JET_ERR JET_API JetGetAttachInfoInstance(
@@ -53,9 +53,9 @@ A função **JetGetAttachInfoInstance** é usada durante um backup iniciado pelo
 
 A instância a ser usada para esta chamada.
 
-Para o Windows 2000, a variante de API que aceita esse parâmetro não está disponível porque há suporte para apenas uma instância. O uso dessa instância global é implícito nesse caso.
+para Windows 2000, a variante de API que aceita esse parâmetro não está disponível porque há suporte para apenas uma instância. O uso dessa instância global é implícito nesse caso.
 
-Para o Windows XP e versões posteriores, a variante de API que não aceita esse parâmetro só pode ser chamada quando o mecanismo está no modo herdado (modo de compatibilidade do Windows 2000), em que apenas uma instância tem suporte. Caso contrário, a operação falhará com JET_errRunningInMultiInstanceMode.
+para Windows XP e versões posteriores, a variante de API que não aceita esse parâmetro só pode ser chamada quando o mecanismo está no modo herdado (modo de compatibilidade Windows 2000) em que há suporte para apenas uma instância. Caso contrário, a operação falhará com JET_errRunningInMultiInstanceMode.
 
 *szz*
 
@@ -71,66 +71,23 @@ Ponteiro para o buffer de saída que recebe a quantidade real de dados de cadeia
 
 ### <a name="return-value"></a>Valor Retornado
 
-Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. Para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
+Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de Armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Código de retorno</p></th>
-<th><p>Descrição</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>A operação foi concluída com sucesso.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errBackupAbortByServer</p></td>
-<td><p>A operação falhou porque o backup externo atual foi anulado por uma chamada para <a href="gg269309(v=exchg.10).md">JetStopBackupInstance</a>. Esse erro só será retornado pelo Windows XP e por versões posteriores.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errClientRequestToStopJetService</p></td>
-<td><p>Não é possível concluir a operação porque toda a atividade na instância associada à sessão foi interrompida como resultado de uma chamada para <a href="gg294108(v=exchg.10).md">JetStopServiceInstance</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errInstanceUnavailable</p></td>
-<td><p>Não é possível concluir a operação porque a instância associada à sessão encontrou um erro fatal que exige que o acesso a todos os dados seja revogado para proteger a integridade desses dados. Esse erro só será retornado pelo Windows XP e por versões posteriores.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInvalidBackupSequence</p></td>
-<td><p>A operação de backup falhou porque ela foi chamada fora de sequência. <strong>JetGetAttachInfoInstance</strong> retornará esse erro se o backup atual não for um backup completo.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errInvalidParameter</p></td>
-<td><p>Um dos parâmetros fornecidos continha um valor inesperado ou continha um valor que não fazia sentido quando combinado com o valor de outro parâmetro. Isso pode ocorrer para <strong>JetGetAttachInfoInstance</strong> quando o identificador de instância especificado é inválido (Windows XP e versões posteriores).</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errNoBackup</p></td>
-<td><p>A operação falhou porque nenhum backup externo está em andamento.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errNotInitialized</p></td>
-<td><p>Não é possível concluir a operação porque a instância associada à sessão ainda não foi inicializada.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errRestoreInProgress</p></td>
-<td><p>Não é possível concluir a operação porque uma operação de restauração está em andamento na instância associada à sessão.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errRunningInMultiInstanceMode</p></td>
-<td><p>A operação falhou porque foi feita uma tentativa de usar o mecanismo no modo herdado (modo de compatibilidade do Windows 2000) em que apenas uma instância tem suporte quando, na verdade, várias instâncias já existem.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errTermInProgress</p></td>
-<td><p>Não é possível concluir a operação porque a instância associada à sessão está sendo desligada.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Código de retorno</p> | <p>Descrição</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>A operação foi concluída com sucesso.</p> | 
+| <p>JET_errBackupAbortByServer</p> | <p>A operação falhou porque o backup externo atual foi anulado por uma chamada para <a href="gg269309(v=exchg.10).md">JetStopBackupInstance</a>. esse erro só será retornado pelo Windows XP e versões posteriores.</p> | 
+| <p>JET_errClientRequestToStopJetService</p> | <p>Não é possível concluir a operação porque toda a atividade na instância associada à sessão foi interrompida como resultado de uma chamada para <a href="gg294108(v=exchg.10).md">JetStopServiceInstance</a>.</p> | 
+| <p>JET_errInstanceUnavailable</p> | <p>Não é possível concluir a operação porque a instância associada à sessão encontrou um erro fatal que exige que o acesso a todos os dados seja revogado para proteger a integridade desses dados. esse erro só será retornado pelo Windows XP e versões posteriores.</p> | 
+| <p>JET_errInvalidBackupSequence</p> | <p>A operação de backup falhou porque ela foi chamada fora de sequência. <strong>JetGetAttachInfoInstance</strong> retornará esse erro se o backup atual não for um backup completo.</p> | 
+| <p>JET_errInvalidParameter</p> | <p>Um dos parâmetros fornecidos continha um valor inesperado ou continha um valor que não fazia sentido quando combinado com o valor de outro parâmetro. isso pode ocorrer para <strong>JetGetAttachInfoInstance</strong> quando o identificador de instância especificado é inválido (Windows XP e versões posteriores).</p> | 
+| <p>JET_errNoBackup</p> | <p>A operação falhou porque nenhum backup externo está em andamento.</p> | 
+| <p>JET_errNotInitialized</p> | <p>Não é possível concluir a operação porque a instância associada à sessão ainda não foi inicializada.</p> | 
+| <p>JET_errRestoreInProgress</p> | <p>Não é possível concluir a operação porque uma operação de restauração está em andamento na instância associada à sessão.</p> | 
+| <p>JET_errRunningInMultiInstanceMode</p> | <p>a operação falhou porque foi feita uma tentativa de usar o mecanismo no modo herdado (Windows modo de compatibilidade 2000) em que há suporte para apenas uma instância quando, na verdade, várias instâncias já existem.</p> | 
+| <p>JET_errTermInProgress</p> | <p>Não é possível concluir a operação porque a instância associada à sessão está sendo desligada.</p> | 
+
 
 
 Em caso de sucesso, as informações solicitadas sobre o conjunto de arquivos de banco de dados que devem ser parte do conjunto de arquivos de backup serão colocadas nos buffers de saída onde forem fornecidos.
@@ -143,38 +100,9 @@ Em caso de falha, o estado dos buffers de saída é indefinido. A falha resultar
 
 #### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista ou o Windows XP.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008 ou o Windows Server 2003.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Biblioteca</strong></p></td>
-<td><p>Use ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Requer ESENT.dll.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Unicode</strong></p></td>
-<td><p>Implementado como <strong>JetGetAttachInfoInstanceW</strong> (Unicode) e <strong>JetGetAttachInfoInstanceA</strong> (ANSI).</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>requer o Windows Vista ou Windows XP.</p> | | <p><strong>Servidor</strong></p> | <p>requer o Windows server 2008 ou Windows server 2003.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | | <p><strong>Biblioteca</strong></p> | <p>Use ESENT. lib.</p> | | <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | | <p><strong>Unicode</strong></p> | <p>Implementado como <strong>JetGetAttachInfoInstanceW</strong> (Unicode) e <strong>JetGetAttachInfoInstanceA</strong> (ANSI).</p> | 
+
 
 
 #### <a name="see-also"></a>Consulte Também

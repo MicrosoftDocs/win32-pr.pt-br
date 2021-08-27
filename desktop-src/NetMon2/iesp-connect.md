@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: f2095f25128e524b32b8ad8561ee85119537c32be5e61f77d5c72637396a2183
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9383b6d7638df89bebd369a3657283c1fd6b56ac
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118365604"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122480142"
 ---
 # <a name="iespconnect-method"></a>Método I LTD::Conexão
 
@@ -79,65 +79,21 @@ Se o método não for bem-sucedido, o valor retornado será um dos seguintes có
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Código de retorno</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><dl> <dt><strong>NMERR_ALREADY_CONNECTED</strong></dt> </dl></td>
-<td>Essa instância do objeto COM do NPP já está conectada à rede.<br/></td>
-</tr>
-<tr class="even">
-<td><dl> <dt><strong>NMERR_BLOB_CONVERSION_ERROR</strong></dt> </dl></td>
-<td>O BLOB de configuração está corrompido. Esse erro é gerado pela <strong>chamada I LTD::Configure.</strong><br/></td>
-</tr>
-<tr class="odd">
-<td><dl> <dt><strong>NMERR_BLOB_ENTRY_DOES_NOT_EXIST</strong></dt> </dl></td>
-<td>O BLOB de entrada especificado pelo parâmetro <em>hInputBlob</em> não tem uma entrada necessária para executar essa operação. Esse erro pode ser gerado pela chamada <strong>I LTD::Conexão</strong> <strong>ou I LTD::Configure.</strong> Veja o erro BLOB retornado por <em>hErrorBlob</em> para determinar qual entrada não foi encontrada.<br/></td>
-</tr>
-<tr class="even">
-<td><dl> <dt><strong>NMERR_BLOB_NOT_INITIALIZED</strong></dt> </dl></td>
-<td>A <strong>função CreateBlob</strong> não foi chamada. Esse erro é gerado pela <strong>chamada I LTD::Configure.</strong><br/></td>
-</tr>
-<tr class="odd">
-<td><dl> <dt><strong>NMERR_BLOB_STRING_INVALID</strong></dt> </dl></td>
-<td>A cadeia de caracteres não é terminada em nulo. Esse erro é gerado pela <strong>chamada I LTD::Configure.</strong><br/></td>
-</tr>
-<tr class="even">
-<td><dl> <dt><strong>NMERR_ILLEGAL_TRIGGER</strong></dt> </dl></td>
-<td>A parte do gatilho do BLOB de entrada está corrompida. Esse erro é gerado pela <strong>chamada I LTD::Configure.</strong><br/></td>
-</tr>
-<tr class="odd">
-<td><dl> <dt><strong>NMERR_INVALID_BLOB</strong></dt> </dl></td>
-<td>O objeto especificado em <em>hInputBlob</em> não é um BLOB. Esse erro é gerado pela <strong>chamada I LTD::Configure.</strong><br/></td>
-</tr>
-<tr class="even">
-<td><dl> <dt><strong>NMERR_NO_DEFAULT_CAPTURE_DIRECTORY</strong></dt> </dl></td>
-<td>O diretório de captura padrão não foi definido no Registro. Use o caminho a seguir para definir o diretório de captura. <br/>
-<pre class="syntax" data-space="preserve"><code>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\nm\Parameters\CapturePath</code></pre></td>
-</tr>
-<tr class="odd">
-<td><dl> <dt><strong>NMERR_OUT_OF_MEMORY</strong></dt> </dl></td>
-<td>A memória necessária para executar essa operação não está disponível. Esse erro é gerado pela <strong>chamada I LTD::Configure.</strong><br/></td>
-</tr>
-<tr class="even">
-<td><dl> <dt><strong>NMERR_TIMEOUT</strong></dt> </dl></td>
-<td>A solicitação passou do tempo. Esse erro é gerado pela <strong>chamada I LTD::Configure.</strong><br/></td>
-</tr>
-<tr class="odd">
-<td><dl> <dt><strong>NMERR_UPLEVEL_BLOB</strong></dt> </dl></td>
-<td>O número de versão do BLOB especificado em <em>hInputBlob</em> está incorreto. Esse erro é gerado pela <strong>chamada I LTD::Configure.</strong><br/></td>
-</tr>
-</tbody>
-</table>
+
+| Código de retorno | Descrição | 
+|-------------|-------------|
+| <dl><dt><strong>NMERR_ALREADY_CONNECTED</strong></dt></dl> | Essa instância do objeto COM do NPP já está conectada à rede.<br /> | 
+| <dl><dt><strong>NMERR_BLOB_CONVERSION_ERROR</strong></dt></dl> | O BLOB de configuração está corrompido. Esse erro é gerado pela <strong>chamada I LTD::Configure.</strong><br /> | 
+| <dl><dt><strong>NMERR_BLOB_ENTRY_DOES_NOT_EXIST</strong></dt></dl> | O BLOB de entrada especificado pelo parâmetro <em>hInputBlob</em> não tem uma entrada necessária para executar essa operação. Esse erro pode ser gerado pela chamada <strong>I LTD::Conexão</strong> <strong>ou I LTD::Configure.</strong> Veja o erro BLOB retornado por <em>hErrorBlob</em> para determinar qual entrada não foi encontrada.<br /> | 
+| <dl><dt><strong>NMERR_BLOB_NOT_INITIALIZED</strong></dt></dl> | A <strong>função CreateBlob</strong> não foi chamada. Esse erro é gerado pela <strong>chamada I LTD::Configure.</strong><br /> | 
+| <dl><dt><strong>NMERR_BLOB_STRING_INVALID</strong></dt></dl> | A cadeia de caracteres não é terminada em nulo. Esse erro é gerado pela <strong>chamada I LTD::Configure.</strong><br /> | 
+| <dl><dt><strong>NMERR_ILLEGAL_TRIGGER</strong></dt></dl> | A parte do gatilho do BLOB de entrada está corrompida. Esse erro é gerado pela <strong>chamada I LTD::Configure.</strong><br /> | 
+| <dl><dt><strong>NMERR_INVALID_BLOB</strong></dt></dl> | O objeto especificado em <em>hInputBlob</em> não é um BLOB. Esse erro é gerado pela <strong>chamada I LTD::Configure.</strong><br /> | 
+| <dl><dt><strong>NMERR_NO_DEFAULT_CAPTURE_DIRECTORY</strong></dt></dl> | O diretório de captura padrão não foi definido no Registro. Use o caminho a seguir para definir o diretório de captura. <br /><pre class="syntax" data-space="preserve"><code>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\nm\Parameters\CapturePath</code></pre> | 
+| <dl><dt><strong>NMERR_OUT_OF_MEMORY</strong></dt></dl> | A memória necessária para executar essa operação não está disponível. Esse erro é gerado pela <strong>chamada I LTD::Configure.</strong><br /> | 
+| <dl><dt><strong>NMERR_TIMEOUT</strong></dt></dl> | A solicitação passou do tempo. Esse erro é gerado pela <strong>chamada I LTD::Configure.</strong><br /> | 
+| <dl><dt><strong>NMERR_UPLEVEL_BLOB</strong></dt></dl> | O número de versão do BLOB especificado em <em>hInputBlob</em> está incorreto. Esse erro é gerado pela <strong>chamada I LTD::Configure.</strong><br /> | 
+
 
 
 
@@ -145,13 +101,13 @@ Se o método não for bem-sucedido, o valor retornado será um dos seguintes có
 
 ## <a name="remarks"></a>Comentários
 
-Quando o **Conexão** é chamado, Monitor de Rede chama automaticamente **I LTD::Configure** usando o BLOB fornecido pelo *parâmetro hInputBlob.* Observe que todos os códigos de erro retornados pela chamada para **I LTD::Configure** são passados de volta e retornados pela chamada **I LTD::Conexão.**
+Quando o **Conexão** é chamado, o Monitor de Rede chama automaticamente **I LTD::Configure** usando o BLOB fornecido pelo *parâmetro hInputBlob.* Observe que todos os códigos de erro retornados pela chamada para **I LTD::Configure** são passados de volta e retornados pela chamada **I LTD::Conexão.**
 
 Esse método deve ser chamado antes que você possa iniciar a captura de quadros. Observe que, ao se conectar à rede usando esse método, você deve continuar a usar a interface **I TWITTER** para capturar quadros.
 
 O BLOB de entrada especificado por *hInputBlob* pode ser obtido chamando **GetNPPBlobFromUI**, **GetNPPBlobTable** e **SelectNPPBlobFromTable**.
 
-O BLOB de erro retornado por *hErrorBlob* contém entradas que Monitor de Rede não foi possível entender ou encontrar no BLOB de entrada especificado em *hInputBlob*. O BLOB de erro retornado contém informações de erro que o aplicativo pode usar para solução de problemas. Por exemplo, se A ENTRADA DE BLOB NMERR NÃO EXISTIR for retornada, a entrada que Monitor de Rede não foi possível encontrar será incluída no BLOB de erro \_ \_ \_ \_ \_ retornado.
+O BLOB de erro retornado por *hErrorBlob* contém entradas que Monitor de Rede não foi possível entender ou encontrar no BLOB de entrada especificado em *hInputBlob.* O BLOB de erro retornado contém informações de erro que o aplicativo pode usar para solução de problemas. Por exemplo, se A ENTRADA DE BLOB NMERR NÃO EXISTIR for retornada, a entrada que Monitor de Rede não foi possível encontrar será incluída no BLOB de erros \_ \_ \_ \_ \_ retornado.
 
 
 

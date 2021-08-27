@@ -4,12 +4,12 @@ ms.assetid: 7b9abfcc-28ab-4f29-af69-6dc68e3f51b6
 title: Mensagem de adeus
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 77d571e8633690f1a2fee5f6f9c09e1379a7a465
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.openlocfilehash: eb512694833de013ab116561a2e01d0f7b0f9463
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122622472"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122887190"
 ---
 # <a name="bye-message"></a>Mensagem de adeus
 
@@ -70,15 +70,15 @@ Uma mensagem de Bye tem os seguintes pontos de foco.
 <tr class="header">
 <th>Ponto de foco</th>
 <th>XML</th>
-<th>Descrição</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Tchau</td>
-<td><pre class="syntax" data-space="preserve"><code><wsa:Action>
+<td><pre class="syntax" data-space="preserve"><code>&lt;wsa:Action&gt;
     https://schemas.xmlsoap.org/ws/2005/04/discovery/Bye
-</wsa:Action></code></pre></td>
+&lt;/wsa:Action&gt;</code></pre></td>
 <td>A ação Soap de Adeus identifica a mensagem como uma mensagem de Bye.</td>
 </tr>
 <tr class="even">
@@ -86,14 +86,14 @@ Uma mensagem de Bye tem os seguintes pontos de foco.
 <td><pre class="syntax" data-space="preserve"><code><wsd:AppSequence InstanceId=&quot;2&quot;
     SequenceId=&quot;urn:uuid:369a7d7b-5f87-48a4-aa9a-189edf2a8772&quot;
     MessageNumber=&quot;21&quot;>
-</wsd:AppSequence></code></pre></td>
+&lt;/wsd:AppSequence&gt;</code></pre></td>
 <td>Contém informações de sequenciamento de aplicativos, o que ajuda a manter a sequência de mensagens, mesmo que elas sejam recebidas fora de ordem. O AppSequence é validado conforme descrito em Regras de validação do <a href="appsequence-validation-rules.md">AppSequence.</a></td>
 </tr>
 <tr class="odd">
 <td>Endereço</td>
-<td><pre class="syntax" data-space="preserve"><code><wsa:Address>
+<td><pre class="syntax" data-space="preserve"><code>&lt;wsa:Address&gt;
     urn:uuid:37f86d35-e6ac-4241-964f-1d9ae46fb366
-</wsa:Address></code></pre></td>
+&lt;/wsa:Address&gt;</code></pre></td>
 <td>Contém o endereço do ponto de extremidade que está offline.</td>
 </tr>
 </tbody>

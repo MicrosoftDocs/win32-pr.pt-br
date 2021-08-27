@@ -18,23 +18,23 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c1813658ed1fb569795bdfa65ccada3ef8ee629c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c4dae676cfbbb0f2509a7d86fbb6507b8e2110f1
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090112"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122987239"
 ---
 # <a name="jetstopbackupinstance-function"></a>Função JetStopBackupInstance
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jetstopbackupinstance-function"></a>Função JetStopBackupInstance
 
 A função **JetStopBackupInstance** impede que o streaming da atividade relacionada ao backup continue em uma instância em execução específica, encerrando assim o backup de streaming de forma previsível.
 
-**Windows XP:** o **JetStopBackupInstance** é introduzido no Windows XP.  
+**Windows xp:** o **JetStopBackupInstance** é introduzido no Windows XP.  
 
 ```cpp
     JET_ERR JET_API JetStopBackupInstance(
@@ -50,31 +50,14 @@ Identifica a instância em execução a ser usada para a chamada à API.
 
 ### <a name="return-value"></a>Valor Retornado
 
-Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. Para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
+Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de Armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Código de retorno</p></th>
-<th><p>Descrição</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>A operação foi concluída com sucesso.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errInvalidParameter</p></td>
-<td><p>O parâmetro de instância especificado tem um valor inválido (não uma instância que está sendo executada no momento).</p>
-<p><strong>Windows XP:</strong>  Esse valor de retorno é introduzido no Windows XP.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Código de retorno</p> | <p>Descrição</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>A operação foi concluída com sucesso.</p> | 
+| <p>JET_errInvalidParameter</p> | <p>O parâmetro de instância especificado tem um valor inválido (não uma instância que está sendo executada no momento).</p><p><strong>Windows XP:</strong>  esse valor de retorno é introduzido no Windows XP.</p> | 
+
 
 
 Se essa função for realizada com êxito, a instância especificada começará a falhar quaisquer novas APIs de backup de streaming.
@@ -87,34 +70,15 @@ O backup é geralmente disparado por um evento fora do mecanismo de processo e u
 
 #### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista ou o Windows XP.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008 ou o Windows Server 2003.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Biblioteca</strong></p></td>
-<td><p>Use ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Requer ESENT.dll.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Valor |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>requer o Windows Vista ou Windows XP.</p> | 
+| <p><strong>Servidor</strong></p> | <p>requer o Windows server 2008 ou Windows server 2003.</p> | 
+| <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | 
+| <p><strong>Biblioteca</strong></p> | <p>Use ESENT. lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | 
+
 
 
 #### <a name="see-also"></a>Consulte Também
