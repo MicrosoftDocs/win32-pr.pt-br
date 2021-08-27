@@ -3,7 +3,7 @@ title: Mensagem de TDM_UPDATE_ICON (commctrl. h)
 description: Atualiza o ícone de uma caixa de diálogo de tarefa.
 ms.assetid: 1094d9ca-90b4-4ba6-a14b-0d4e96243a34
 keywords:
-- Controles de TDM_UPDATE_ICON de mensagens do Windows
+- controles de Windows de mensagem de TDM_UPDATE_ICON
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b2da73ebb3bf0355f50bc08a08f0b35de97576b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 644e214a3edbc420a7aed3d4ba5bc688e6b7af1ed097be325006bb9481e00620
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103919165"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120104496"
 ---
 # <a name="tdm_update_icon-message"></a>Mensagem de ícone de \_ atualização TDM \_
 
@@ -73,7 +73,7 @@ Se o TDF \_ usar \_ HICON \_ Main ou TDF \_ use \_ HICON \_ sinalizadores de rod
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno é ignorado.
 
@@ -89,9 +89,9 @@ Se a caixa de diálogo de tarefa for criada sem um rodapé (ou seja, os membros 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

@@ -3,7 +3,7 @@ title: Mensagem de EM_GETFIRSTVISIBLELINE (WinUser. h)
 description: Obtém o índice de base zero da linha visível superior em um controle de edição de várias linhas. Você pode enviar essa mensagem para um controle de edição ou um controle de edição rico.
 ms.assetid: 022838d2-7948-4c5a-92ca-655822c4f672
 keywords:
-- Controles de EM_GETFIRSTVISIBLELINE de mensagens do Windows
+- controles de Windows de mensagem de EM_GETFIRSTVISIBLELINE
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2bb759be166b69b3cfa488e9e23d61d9e0ec42d5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 11eb93c1c7dcce7f502945df4e063b22c29514bc79fe7310875e9de055e1d745
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499549"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120049206"
 ---
 # <a name="em_getfirstvisibleline-message"></a>\_Mensagem em GETFIRSTVISIBLELINE
 
@@ -43,7 +43,7 @@ Não usado; deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno é o índice de base zero da linha visível superior em um controle de edição de várias linhas.
 
@@ -63,9 +63,9 @@ O número de linhas e o comprimento das linhas em um controle de edição depend
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

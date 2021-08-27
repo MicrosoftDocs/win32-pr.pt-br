@@ -4,12 +4,12 @@ ms.assetid: d4dbba0d-8225-48d7-a66b-b189fdae70a8
 title: Mensagem de LINE_REQUEST (TAPI. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 23987e370d5ae9c8eeb579780c5659f8075ac865
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ce3cd49b14aafabfdd4d7ab37c5f2beec1487a08a53385ae8a1439b7443d49cd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105782905"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120126226"
 ---
 # <a name="line_request-message"></a>Mensagem de solicitação de linha \_
 
@@ -61,7 +61,7 @@ Se *dwParam1* for definido como LINEREQUESTMODE \_ drop, a palavra de ordem infe
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sem valor de retorno.
 
@@ -76,7 +76,7 @@ A mensagem de **\_ solicitação de linha** é enviada para o aplicativo de prio
 | Requisito | Valor |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versão da TAPI<br/> | Requer TAPI 2,0 ou posterior<br/>                                             |
-| parâmetro<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Cabeçalho<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
 
 
 

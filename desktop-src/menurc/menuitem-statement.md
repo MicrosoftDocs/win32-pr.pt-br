@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: da2051b326b2f2f37c9e24e03bcb5e5116cf290a
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 45bca50025e1c9136c22166d6d3f758c5c9b5819a9328d33d375195285f1d4f7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "105759016"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120092186"
 ---
 # <a name="menuitem-statement"></a>Instrução MENUITEM
 
@@ -57,14 +57,14 @@ A aparência do item de menu. Esse parâmetro opcional usa uma ou mais das segui
 |------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **CHECK**      | O item de menu tem uma marca de seleção ao lado dele.                                                                                                                                |
 | **ESMAECIDO**       | O item de menu está inicialmente inativo e aparece no menu em cinza ou em uma tonalidade clareada da cor do texto do menu. Esta opção não pode ser usada com a opção **inativa** . |
-| **Ajuda**         | Identifica um item de ajuda. Essa opção não tem efeito sobre a aparência do item de menu.                                                                                 |
+| **AJUDA**         | Identifica um item de ajuda. Essa opção não tem efeito sobre a aparência do item de menu.                                                                                 |
 | **INATIVO**     | O item de menu é exibido, mas não pode ser selecionado. Esta opção não pode ser usada com a opção **cinza** .                                                              |
 | **MENUBARBREAK** | O mesmo que **MENUBREAK** , exceto que para menus pop-up, ele separa a nova coluna da coluna antiga com uma linha vertical.                                             |
 | **MENUBREAK**    | Coloca o item de menu em uma nova linha para itens de barra de menus estáticos. Para menus, ele coloca o item de menu em uma nova coluna sem linha de divisão entre as colunas.           |
 
 
 
- 
+ 
 
 </dd> <dt>
 
@@ -95,9 +95,9 @@ MENUITEM "&Blackletter", 301
 [**POP-up**](popup-resource.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

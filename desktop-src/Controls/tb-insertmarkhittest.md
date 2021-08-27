@@ -3,7 +3,7 @@ title: Mensagem de TB_INSERTMARKHITTEST (commctrl. h)
 description: Recupera as informações de marca de inserção de um ponto em uma barra de ferramentas.
 ms.assetid: 65c64fd0-f089-4b1a-84e5-1a3e10aa7f5e
 keywords:
-- Controles de TB_INSERTMARKHITTEST de mensagens do Windows
+- controles de Windows de mensagem de TB_INSERTMARKHITTEST
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5237d5a13250c3eb95bfe741415a9da245585c78
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cbc231b915d6d71cc22ee3cd98b1c6dd602451cc3c70d2153ba1bee8a0d55657
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009192"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120061356"
 ---
 # <a name="tb_insertmarkhittest-message"></a>TB de \_ mensagem INSERTMARKHITTEST
 
@@ -43,7 +43,7 @@ Ponteiro para uma estrutura [**TBINSERTMARK**](/windows/desktop/api/Commctrl/ns-
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará zero se o ponto for uma marca de inserção, ou zero caso contrário.
 
@@ -53,9 +53,9 @@ Retornará zero se o ponto for uma marca de inserção, ou zero caso contrário.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

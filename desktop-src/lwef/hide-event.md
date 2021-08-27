@@ -4,16 +4,16 @@ description: Ocultar evento
 ms.assetid: vs|msagent|~\pacontrol_9yuk.htm
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 87d396fb0985cd4c3c2e9647dfe0e7c9126ad9c5
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 02974d1d66a22eab24c93fc5c9d29b9c2d0e604082fef9f4f0583ebcf7354576
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822674"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120062056"
 ---
 # <a name="hide-event"></a>Ocultar evento
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 <dl> <dt>
 

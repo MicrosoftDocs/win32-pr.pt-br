@@ -1,7 +1,7 @@
 ---
-description: O método FixMediaTimes arredonda os valores de tempo especificados para o limite de quadro mais próximo, conforme definido pela taxa de quadros de saída. Em geral, os aplicativos não precisam chamar esse método.
+description: O método FixMediaTimes fecha os valores de tempo especificados para o limite de quadro mais próximo, conforme definido pela taxa de quadros de saída. Em geral, os aplicativos não precisam chamar esse método.
 ms.assetid: 11537715-3be1-4a3c-8700-50b13835ffe9
-title: 'Método IAMTimelineSrc:: FixMediaTimes (QEdit. h)'
+title: Método IAMTimelineSrc::FixMediaTimes (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 1db0a126ebf6ff90d4db7512eb7346d6dbca8b5f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dcace4e501a27b1f82b148533f382f5c86bafb17d9bf34343f1e43a8893672c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105758059"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120052396"
 ---
-# <a name="iamtimelinesrcfixmediatimes-method"></a>Método IAMTimelineSrc:: FixMediaTimes
+# <a name="iamtimelinesrcfixmediatimes-method"></a>Método IAMTimelineSrc::FixMediaTimes
 
 > [!Note]  
 > \[Preterido. Essa API pode ser removida de versões futuras do Windows.\]
 
  
 
-O `FixMediaTimes` método arredonda os valores de tempo especificados para o limite de quadro mais próximo, conforme definido pela taxa de quadros de saída. Em geral, os aplicativos não precisam chamar esse método.
+O método faz a rodada dos valores de tempo especificados para o limite de quadro mais `FixMediaTimes` próximo, conforme definido pela taxa de quadros de saída. Em geral, os aplicativos não precisam chamar esse método.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,35 +46,35 @@ HRESULT FixMediaTimes(
 
 <dl> <dt>
 
-*pStart* 
+*Pstart* 
 </dt> <dd>
 
-Ponteiro para uma variável que contém a hora de início, em unidades de 100 a nanossegundos. Se a chamada for realizada com sucesso, essa variável será definida como o tempo arredondado.
+Ponteiro para uma variável que contém a hora de início, em unidades de 100 nanossegundos. Se a chamada for bem-sucedida, essa variável será definida como o tempo arredondado.
 
 </dd> <dt>
 
 *pStop* 
 </dt> <dd>
 
-Ponteiro para uma variável que contém a hora de parada, em unidades de 100 a nanossegundos. Se a chamada for realizada com sucesso, essa variável será definida como o tempo arredondado.
+Ponteiro para uma variável que contém a hora de parada, em unidades de 100 nanossegundos. Se a chamada for bem-sucedida, essa variável será definida como o tempo arredondado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
-Esse método é semelhante ao método [**IAMTimelineObj:: FixTimes**](iamtimelineobj-fixtimes.md) , mas preserva a proporção original de tempos de mídia e tempos de linha do tempo. Apenas arredondar os horários para o limite de quadro mais próximo poderia distorcer essa proporção.
+Esse método é semelhante ao método [**IAMTimelineObj::FixTimes,**](iamtimelineobj-fixtimes.md) mas preserva a taxa original de tempos de mídia e tempos de linha do tempo. Apenas arredondando os horários para o limite de quadro mais próximo pode distorcer essa taxa.
 
 > [!Note]  
-> O arquivo de cabeçalho QEdit. h não é compatível com cabeçalhos do Direct3D posteriores à versão 7.
+> O arquivo de título Qedit.h não é compatível com os headers direct3D posteriores à versão 7.
 
  
 
 > [!Note]  
-> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Para obter o Qedit.h, baixe [o Microsoft Windows SDK Update para Windows Vista e .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O Qedit.h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -84,8 +84,8 @@ Esse método é semelhante ao método [**IAMTimelineObj:: FixTimes**](iamtimelin
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>QEdit. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -93,7 +93,7 @@ Esse método é semelhante ao método [**IAMTimelineObj:: FixTimes**](iamtimelin
 
 <dl> <dt>
 
-[**Interface IAMTimelineSrc**](iamtimelinesrc.md)
+[**IAMTimelineSrc Interface**](iamtimelinesrc.md)
 </dt> <dt>
 
 [Códigos de erro e êxito](error-and-success-codes.md)

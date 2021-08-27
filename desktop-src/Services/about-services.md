@@ -4,12 +4,12 @@ ms.assetid: a3af8340-d367-417b-9759-7282edf1d694
 title: Sobre serviços
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 87aeec6dfcdc4e2dc0cc0ab3ef084b7927b2c3bb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 58bcd2058ec8f8de5cbe56a521e2d83919a17532c00dab175d93305edd3684d2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922098"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120126476"
 ---
 # <a name="about-services"></a>Sobre serviços
 

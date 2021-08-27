@@ -3,7 +3,7 @@ title: Mensagem de TDM_NAVIGATE_PAGE (commctrl. h)
 description: Recria uma caixa de diálogo de tarefa com novo conteúdo, simulando a funcionalidade de um assistente de várias páginas.
 ms.assetid: e0eefd08-e279-47db-97e9-7ca86b41e22f
 keywords:
-- Controles de TDM_NAVIGATE_PAGE de mensagens do Windows
+- controles de Windows de mensagem de TDM_NAVIGATE_PAGE
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 56fc86e0e4fe457a43e035ed5d568e91303c7fcd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4c7894bdc5831af2c1fe2e779679aaab38eab94f976cf9c586dfe64d26a051b8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103919078"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120104626"
 ---
 # <a name="tdm_navigate_page-message"></a>\_ \_ Mensagem da página de navegação TDM
 
@@ -43,7 +43,7 @@ Um ponteiro para uma estrutura [**TASKDIALOGCONFIG**](/windows/desktop/api/Commc
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno é ignorado.
 
@@ -59,9 +59,9 @@ O layout da caixa de diálogo de tarefa pode falhar e isso pode não ser refleti
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

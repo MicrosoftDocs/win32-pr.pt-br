@@ -3,7 +3,7 @@ title: Mensagem de TB_SETTOOLTIPS (commctrl. h)
 description: Associa um controle ToolTip a uma barra de ferramentas.
 ms.assetid: a645f1f2-9333-4e25-985a-107cffb9b97f
 keywords:
-- Controles de TB_SETTOOLTIPS de mensagens do Windows
+- controles de Windows de mensagem de TB_SETTOOLTIPS
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 781565658d2c362ca32e36736d6e2d80c3641514
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a75827df49eeaf8b6175cd14180ebb26ddbb642588ee77d625c701eee457baaf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009122"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120061226"
 ---
 # <a name="tb_settooltips-message"></a>Mensagem de TB \_ SETtooltips
 
@@ -39,7 +39,7 @@ Identificador para o controle ToolTip.
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sem valor de retorno.
 
@@ -53,9 +53,9 @@ Todos os botões adicionados a uma barra de ferramentas antes de enviar a mensag
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

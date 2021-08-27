@@ -3,7 +3,7 @@ title: Mensagem de TB_GETUNICODEFORMAT (commctrl. h)
 description: Mensagem de TB_GETUNICODEFORMAT-recupera o sinalizador de formato de caractere Unicode para o controle.
 ms.assetid: aadce646-daf1-4f1e-9171-2aeac12d3484
 keywords:
-- Controles de TB_GETUNICODEFORMAT de mensagens do Windows
+- controles de Windows de mensagem de TB_GETUNICODEFORMAT
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4beb5a5ff0b71dd76c85db2788d9dc91aa9f4957
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: aa59269813dde63f15980abc919e50cfaf4dcf5a3c86da311f2aa5206618e88e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106784"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120061365"
 ---
 # <a name="tb_getunicodeformat-message"></a>TB de \_ mensagem GETUNICODEFORMAT
 
@@ -49,13 +49,13 @@ Consulte os comentários para [**CCM \_ GETUNICODEFORMAT**](ccm-getunicodeformat
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

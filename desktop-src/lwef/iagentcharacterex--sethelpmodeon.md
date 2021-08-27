@@ -4,16 +4,16 @@ description: IAgentCharacterEx SetHelpModeOn
 ms.assetid: d4d42122-3d27-40c4-8770-0de105e5d933
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 674fc8dcca3bca2f44c0928474d8684e77fc6e9b
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: aacbdf9c0ea9737bb73ba7a99e0839e1435379e42536a82aa30c2ca034a28860
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104084472"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120062026"
 ---
 # <a name="iagentcharacterexsethelpmodeon"></a>IAgentCharacterEx::SetHelpModeOn
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 ``` syntax
 HRESULT SetHelpModeOn(
@@ -45,6 +45,6 @@ Essa propriedade aplica-se somente ao uso do caractere do aplicativo cliente; a 
 [**IAgentCharacterEx:: GetHelpModeOn**](iagentcharacterex--gethelpmodeon.md), [ **IAgentNotifySinkEx:: HelpComplete**](iagentnotifysinkex--helpcomplete.md)
 
 
- 
+ 
 
- 
+ 

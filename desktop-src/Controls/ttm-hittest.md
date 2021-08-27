@@ -3,7 +3,7 @@ title: Mensagem de TTM_HITTEST (commctrl. h)
 description: Testa um ponto para determinar se ele está dentro do retângulo delimitador da ferramenta especificada e, se for, recupera informações sobre a ferramenta.
 ms.assetid: d4dcc29b-c64c-41b8-a153-300df68ecdf5
 keywords:
-- Controles de TTM_HITTEST de mensagens do Windows
+- controles de Windows de mensagem de TTM_HITTEST
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f7b515ccb5c283b66760f24c02749368e424e6fe
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 105edd555a1da1ba037f7dda114e1d9f9ef53048c02a7cb11e1df1ff0c01ad2e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455168"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120060516"
 ---
 # <a name="ttm_hittest-message"></a>\_Mensagem TTM HITTEST
 
@@ -41,7 +41,7 @@ Ponteiro para uma estrutura [**TTHITTESTINFO**](/windows/win32/api/commctrl/ns-c
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará **true** se a ferramenta ocupar o ponto especificado ou **false** caso contrário.
 
@@ -55,9 +55,9 @@ Esta mensagem deve ser enviada quando a ferramenta tiver o sinalizador de faixa 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 | Nomes Unicode e ANSI<br/>   | **TTM \_ HITTESTW** (Unicode) e **TTM \_ hittesta** (ANSI)<br/>                   |
 
 

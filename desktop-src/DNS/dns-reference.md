@@ -6,12 +6,12 @@ keywords:
 - Sistema de nomes de domínio, referência
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5da8c40e9da097dcdeb313388a133079363c866e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: dcaef447e9ff0a31fe42041a828ac702d7f02f59c7d04ebd24d701ddef19ea98
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005704"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120104066"
 ---
 # <a name="dns-reference"></a>Referência de DNS
 
@@ -24,9 +24,9 @@ Esta seção define os elementos programáticos na API do sistema de nomes de do
 -   [Funções de DNS](dns-functions.md)
 -   [Estruturas de DNS](dns-structures.md)
 
- 
+ 
 
- 
+ 
 
 
 

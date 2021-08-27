@@ -1,48 +1,48 @@
 ---
-title: Estruturas da versão 1 do Gerenciador de tabela de roteamento
-description: As funções do Gerenciador de tabela de roteamento versão 1 usam as seguintes estruturas
+title: Estruturas do Gerenciador de Tabelas de Roteamento versão 1
+description: As funções do Gerenciador de Tabelas de Roteamento versão 1 usam as seguintes estruturas
 ms.assetid: 9bcf1dc6-0032-4825-bf96-e72970fb76ce
 keywords:
-- Serviço de roteamento e acesso remoto RRAS, Gerenciador de tabela de roteamento versão 1, estruturas
-- Gerenciador de tabela de roteamento versão 1 RRAS, estruturas
+- RRAS do Serviço de Roteamento e Acesso Remoto, Estruturas do Gerenciador de Tabelas de Roteamento versão 1
+- Roteamento do RRAS do Gerenciador de Tabelas versão 1, estruturas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 592982dd64c57daf146885659f68f15ca7c3f829
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2ba556b537ec58b5d4412571b7adf74f05f37f83396eeb60c1c41532c011d990
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103636435"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120073906"
 ---
-# <a name="routing-table-manager-version-1-structures"></a>Estruturas da versão 1 do Gerenciador de tabela de roteamento
+# <a name="routing-table-manager-version-1-structures"></a>Estruturas do Gerenciador de Tabelas de Roteamento versão 1
 
-**Windows Server 2003:** Essa API foi substituída pela API do [Gerenciador de tabela de roteamento versão 2](about-routing-table-manager-version-2.md) e não estará disponível além do Windows Server 2003. Novos aplicativos devem usar a API da versão 2 do Gerenciador de tabela de roteamento.
+**Windows Server 2003:** Essa API foi superada pela API do Gerenciador de Tabelas de Roteamento versão [2](about-routing-table-manager-version-2.md) e não estará disponível além do Windows Server 2003. Novos aplicativos devem usar a API do Gerenciador de Tabelas de Roteamento versão 2.
 
-As [funções do Gerenciador de tabela de roteamento versão 1](routing-table-manager-version-1-functions.md) usam as seguintes estruturas:
+As [funções do Gerenciador de Tabelas de Roteamento versão 1](routing-table-manager-version-1-functions.md) usam as seguintes estruturas:
 
-[**\_rede IP**](ip-network.md)
+[**REDE \_ IP**](ip-network.md)
 
-[**\_endereço do próximo \_ salto \_ IP**](ip-next-hop-address.md)
+[**ENDEREÇO IP \_ DO \_ PRÓXIMO \_ SALTO**](ip-next-hop-address.md)
 
-[**\_dados específicos de IP \_**](ip-specific-data.md)
+[**DADOS \_ ESPECÍFICOS DO \_ IP**](ip-specific-data.md)
 
-[**\_rede IPX**](ipx-network.md)
+[**REDE \_ IPX**](ipx-network.md)
 
-[**\_endereço do próximo \_ salto \_ IPX**](ipx-next-hop-address.md)
+[**ENDEREÇO DO \_ PRÓXIMO \_ \_ SALTO DO IPX**](ipx-next-hop-address.md)
 
-[**\_dados específicos de IPX \_**](ipx-specific-data.md)
+[**DADOS \_ ESPECÍFICOS DO IPX \_**](ipx-specific-data.md)
 
-[**\_dados específicos de protocolo \_**](protocol-specific-data.md)
+[**DADOS \_ ESPECÍFICOS DO \_ PROTOCOLO**](protocol-specific-data.md)
 
-[Identificadores da família de protocolos do Gerenciador de tabela de roteamento versão 1](routing-table-manager-version-1-protocol-family-identifiers.md)
+[Identificadores de família de protocolo do Gerenciador de Tabelas de Roteamento versão 1](routing-table-manager-version-1-protocol-family-identifiers.md)
 
-[**\_rota de IP RTM \_**](rtm-ip-route.md)
+[**RTM \_ IP \_ ROUTE**](rtm-ip-route.md)
 
-[**\_rota IPX do RTM \_**](rtm-ipx-route.md)
+[**RTM \_ IPX \_ ROUTE**](rtm-ipx-route.md)
 
- 
+ 
 
- 
+ 
 
 
 

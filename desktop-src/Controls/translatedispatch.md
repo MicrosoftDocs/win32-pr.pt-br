@@ -3,7 +3,7 @@ title: Função de retorno de chamada TranslateDispatch
 description: Usado pelo cliente da função doreadermode para interceptar e controlar explicitamente todas as mensagens do Windows direcionadas para a área de rolagem da janela do modo de leitura. Essa é uma função de retorno de chamada definida pelo aplicativo.
 ms.assetid: a50cff4f-ae10-4c3c-a386-9ec7c7d6256f
 keywords:
-- Controles do Windows da função de retorno de chamada TranslateDispatch
+- controles de Windows de função de retorno de chamada TranslateDispatch
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1230ed1e65f8d739f9a0a05e4788eb919c45c4cd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 08f726c3f56579260e96a882f1123d035df37cb3f7f71fd0ecbc47d41672359c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918338"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120060526"
 ---
 # <a name="translatedispatch-callback-function"></a>Função de retorno de chamada TranslateDispatch
 
@@ -45,13 +45,13 @@ BOOL CALLBACK TranslateDispatch(
 *lpMsg* \[ no\]
 </dt> <dd>
 
-Tipo: **const [**msg**](/windows/win32/api/winuser/ns-winuser-msg) \** _
+Tipo: **[**mensagem**](/windows/win32/api/winuser/ns-winuser-msg) \* const**
 
-Um ponteiro para uma estrutura [_ *msg* *](/windows/win32/api/winuser/ns-winuser-msg) que contém a mensagem interceptada.
+Um ponteiro para uma estrutura de [**msg**](/windows/win32/api/winuser/ns-winuser-msg) que contém a mensagem interceptada.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **bool**](/windows/desktop/WinProg/windows-data-types)**
 
@@ -87,8 +87,8 @@ TranslateDispatchCallback(LPMSG lpmsg)
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Vista, \[ somente aplicativos da área de trabalho do Windows Vista\]<br/> |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>          |
+| Cliente mínimo com suporte<br/> | Windows vista, somente aplicativos do Windows vista \[ desktop\]<br/> |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>          |
 
 
 

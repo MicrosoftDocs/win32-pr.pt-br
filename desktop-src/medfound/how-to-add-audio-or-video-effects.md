@@ -4,12 +4,12 @@ ms.assetid: 90f34bf3-899f-46e0-80c8-af83caa4835d
 title: Como adicionar efeitos de áudio ou vídeo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e8d2b02453ce4561ead7fee0d272a07e694e8388
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2af2bb310ab4818cac5dd2804d2bb696c284fdd868d916e4e543a205328e909e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105798050"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120061546"
 ---
 # <a name="how-to-add-audio-or-video-effects"></a>Como adicionar efeitos de áudio ou vídeo
 
@@ -53,7 +53,7 @@ HRESULT AddPlaybackEffect(REFGUID clsid, IMFPMediaPlayer *pPlayer)
 
 ## <a name="requirements"></a>Requisitos
 
-O MFPlay requer o Windows 7.
+MFPlay requer Windows 7.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

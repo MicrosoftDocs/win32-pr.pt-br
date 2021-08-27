@@ -3,7 +3,7 @@ title: Mensagem de TDM_SET_MARQUEE_PROGRESS_BAR (commctrl. h)
 description: Indica se a barra de progresso hospedada de uma caixa de diálogo de tarefa deve ser exibida no modo de letreiro.
 ms.assetid: 28b9b519-6b96-4130-936c-b8fe8df86d25
 keywords:
-- Controles de TDM_SET_MARQUEE_PROGRESS_BAR de mensagens do Windows
+- controles de Windows de mensagem de TDM_SET_MARQUEE_PROGRESS_BAR
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 45a9384826b89d07c6564dc511d4909058871ca3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 13262339f7d87ea68755a38a49cc8c327706939d6b18025f350334dfdbe3dd4a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086319"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120104606"
 ---
 # <a name="tdm_set_marquee_progress_bar-message"></a>\_Mensagem da \_ barra de \_ progresso do letreiro de conjunto de TDM \_
 
@@ -43,7 +43,7 @@ Deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno é ignorado.
 
@@ -57,9 +57,9 @@ Para obter informações sobre o modo de letreiro, consulte [controle de barra d
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

@@ -1,27 +1,27 @@
 ---
-description: Este tópico descreve como recuperar e definir valores para propriedades de sensor. A interface ISensor fornece os métodos para definir e recuperar valores para propriedades de sensor.
+description: Este tópico descreve como recuperar e definir valores para propriedades do sensor. A interface ISensor fornece os métodos para definir e recuperar valores para propriedades do sensor.
 ms.assetid: 7d10e5b4-bae7-4564-84eb-75c6a2eeef8f
-title: Recuperando e definindo propriedades do sensor
+title: Recuperando e configurando propriedades do sensor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 78f64bf0e253f47ae2d8cd1f4945f3b87aa3406b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 71b13af3ee6cfc1a181f0a7f7a87adf7f0145f01e804562895d817abd993ac25
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105811281"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120126576"
 ---
-# <a name="retrieving-and-setting-sensor-properties"></a>Recuperando e definindo propriedades do sensor
+# <a name="retrieving-and-setting-sensor-properties"></a>Recuperando e configurando propriedades do sensor
 
-Este tópico descreve como recuperar e definir valores para propriedades de sensor. A interface [**ISensor**](/windows/desktop/api/sensorsapi/nn-sensorsapi-isensor) fornece os métodos para definir e recuperar valores para propriedades de sensor.
+Este tópico descreve como recuperar e definir valores para propriedades do sensor. A [**interface ISensor**](/windows/desktop/api/sensorsapi/nn-sensorsapi-isensor) fornece os métodos para definir e recuperar valores para propriedades do sensor.
 
 ## <a name="retrieving-sensor-properties"></a>Recuperando propriedades do sensor
 
-Você pode recuperar alguns valores de propriedade de um sensor antes que o usuário o habilite. Informações como o nome do fabricante ou o modelo do sensor podem ajudá-lo a decidir se seu programa pode usar o sensor.
+Você pode recuperar alguns valores de propriedade de um sensor antes que o usuário o tenha habilitado. Informações como o nome do fabricante ou o modelo do sensor podem ajudá-lo a decidir se o programa pode usar o sensor.
 
-Você pode optar por recuperar um único valor de propriedade ou recuperar uma coleção de valores de propriedade juntos. Para recuperar um único valor, chame [**ISensor:: GetProperty**](/windows/win32/api/sensorsapi/nf-sensorsapi-isensor-getproperty). Para recuperar uma coleção de valores, chame [**ISensor:: GetProperties**](/windows/win32/api/sensorsapi/nf-sensorsapi-isensor-getproperties). Você pode recuperar todas as propriedades de um sensor passando **NULL** por meio do primeiro parâmetro para **ISensor:: GetProperties**.
+Você pode optar por recuperar um único valor da propriedade ou recuperar uma coleção de valores de propriedade juntos. Para recuperar um único valor, chame [**ISensor::GetProperty.**](/windows/win32/api/sensorsapi/nf-sensorsapi-isensor-getproperty) Para recuperar uma coleção de valores, chame [**ISensor::GetProperties**](/windows/win32/api/sensorsapi/nf-sensorsapi-isensor-getproperties). Você pode recuperar todas as propriedades de um sensor passando **NULL** por meio do primeiro parâmetro para **ISensor::GetProperties.**
 
-O código de exemplo a seguir cria uma função auxiliar que imprime o valor de uma única propriedade. A função recebe um ponteiro para o sensor do qual recuperar o valor e uma chave de propriedade que contém a propriedade a ser impressa. A função pode imprimir valores para números, cadeias de caracteres e **GUID** s, mas não para outros tipos mais complexos.
+O código de exemplo a seguir cria uma função auxiliar que imprime o valor de uma única propriedade. A função recebe um ponteiro para o sensor do qual recuperar o valor e uma chave de propriedade que contém a propriedade a ser impressa. A função pode imprimir valores para números, cadeias de caracteres e **GUID** s, mas não outros tipos mais complexos.
 
 
 ```C++
@@ -71,7 +71,7 @@ HRESULT PrintSensorProperty(ISensor* pSensor, REFPROPERTYKEY pk)
 
 
 
-O código de exemplo a seguir cria uma função que recupera e imprime uma coleção de propriedades. O conjunto de propriedades a serem impressas é definido pela matriz chamada Sensorproperties.
+O código de exemplo a seguir cria uma função que recupera e imprime uma coleção de propriedades. O conjunto de propriedades a ser impresso é definido pela matriz chamada SensorProperties.
 
 
 ```C++
@@ -176,11 +176,11 @@ HRESULT PrintSensorProperties(ISensor* pSensor)
 
 ## <a name="setting-sensor-properties"></a>Definindo propriedades do sensor
 
-Antes de poder definir valores de propriedade para um sensor, o usuário deve habilitar o sensor. Além disso, nem todas as propriedades do sensor podem ser definidas.
+Antes de definir valores de propriedade para um sensor, o usuário deve habilitar o sensor. Além disso, nem todas as propriedades do sensor podem ser definidas.
 
-Para definir um ou mais valores para propriedades, chame [**ISensor:: SetProperties**](/windows/win32/api/sensorsapi/nf-sensorsapi-isensor-setproperties). Você fornece esse método com um ponteiro [IPortableDeviceValues](/previous-versions//ms740012(v=vs.85)) que contém a coleção de propriedades a serem definidas e seus valores associados. O método retorna uma interface [IPortableDeviceValues](/previous-versions//ms740012(v=vs.85)) correspondente que pode conter códigos de erro para propriedades que não puderam ser definidas.
+Para definir um ou mais valores para propriedades, chame [**ISensor::SetProperties**](/windows/win32/api/sensorsapi/nf-sensorsapi-isensor-setproperties). Você fornece esse método com um ponteiro [IPortableDeviceValues](/previous-versions//ms740012(v=vs.85)) que contém a coleção de propriedades a ser definida e seus valores associados. O método retorna uma interface [IPortableDeviceValues](/previous-versions//ms740012(v=vs.85)) correspondente que pode conter códigos de erro para propriedades que não puderam ser definidas.
 
-O código de exemplo a seguir cria uma função auxiliar que define um novo valor para a propriedade SENSOR \_ \_ atual \_ propriedade de intervalo de relatório \_ . A função usa um ponteiro para o sensor para o qual definir a propriedade e um valor **ULONG** que indica o novo intervalo de relatório a ser definido. (Observe que a definição de um valor para essa propriedade específica não garante que o sensor aceite o valor especificado. Consulte [**Propriedades do sensor**](sensor-properties.md) para obter informações sobre como essa propriedade funciona.)
+O código de exemplo a seguir cria uma função auxiliar que define um novo valor para a propriedade SENSOR \_ PROPERTY \_ CURRENT REPORT \_ \_ INTERVAL. A função leva um ponteiro para o sensor para o qual definir a propriedade e um **valor ULONG** que indica o novo intervalo de relatório a ser definido. (Observe que definir um valor para essa propriedade específica não garante que o sensor aceitará o valor especificado. Consulte [**Propriedades do sensor**](sensor-properties.md) para obter informações sobre como essa propriedade funciona.)
 
 
 ```C++

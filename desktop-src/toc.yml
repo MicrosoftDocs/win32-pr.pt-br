@@ -213,9 +213,9 @@
                   href: ./upnp/universal-plug-and-play-start-page.md
                 - name: Serviços Web em dispositivos
                   href: wsdapi/wsd-portal.md
-                - name: Wia
+                - name: WIA
                   href: ./wsdapi/wsd-portal.md
-            - name: Windows SDK Gerenciador de Dispositivos 11
+            - name: Windows SDK do Media Gerenciador de Dispositivos 11
               href: ./wmdm/windows-media-device-manager-11-sdk.md
             - name: Windows Dispositivos portáteis
               items:
@@ -235,21 +235,21 @@
                       href: ./recovery/application-recovery-and-restart-portal.md
                     - name: Tratamento de erros
                       href: ./debug/error-handling.md
-                - name: Estrutura de Diagnóstico de Rede
+                - name: Estrutura de diagnóstico de rede
                   href: ./ndf/portal.md
                 - name: Monitor de Rede
                   href: ./netmon2/network-monitor.md
                 - name: Contadores de desempenho
                   href: ./perfctrs/performance-counters-portal.md
-                - name: Instantâneo de processo
+                - name: Processar instantâneos
                   href: /windows/win32/api/_proc_snap/
-                - name: API de Status do Processo
+                - name: API de status do processo
                   href: ./psapi/process-status-helper.md
                 - name: Serviço de Notificação de Eventos do Sistema
                   href: ./sens/system-event-notification-service-portal.md
                 - name: Monitor do Sistema
                   href: ./sysmon/system-monitor-portal.md
-                - name: Biblioteca de Ajuda da Ferramenta
+                - name: Biblioteca de ajuda da ferramenta
                   href: ./toolhelp/tool-help-library.md
                 - name: Relatório de Erros do Windows
                   href: ./wer/windows-error-reporting.md
@@ -279,7 +279,7 @@
                       href: ./directx.md
                     - name: Introdução a elementos gráficos DirectX
                       href: ./getting-started-with-directx-graphics.md
-                    - name: Programando o DirectX com COM
+                    - name: Programando DirectX com com
                       href: ./prog-dx-with-com.md
                     - name: Direct2D
                       href: ./direct2d/direct2d-portal.md
@@ -287,7 +287,7 @@
                       items:
                         - name: Visão geral
                           href: ./direct3d.md
-                        - name: Como começar a trabalhar com o Direct3D
+                        - name: Introdução ao Direct3D
                           href: ./getting-started-with-direct3d.md
                         - name: Elementos gráficos do Direct3D 12
                           href: ./direct3d12/direct3d-12-graphics.md
@@ -305,17 +305,17 @@
                       href: ./directwrite/direct-write-portal.md
                     - name: DirectXMath
                       href: ./dxmath/directxmath-portal.md
-                    - name: APIs windowsnumerics.h
+                    - name: APIs windowsnumerics. h
                       href: ./numerics_h/windowsnumerics-h-apis-portal.md
-                    - name: Gráficos clássicos do DirectX
+                    - name: Elementos gráficos do DirectX clássico
                       items:
                         - name: Visão geral
                           href: ./directx.md
-                        - name: Elementos gráficos do Direct3D 10
+                        - name: Gráficos do Direct3D 10
                           href: ./direct3d10/d3d10-graphics.md
-                        - name: Elementos gráficos do Direct3D 9
+                        - name: Gráficos do Direct3D 9
                           href: ./direct3d9/dx9-graphics-reference.md
-                        - name: Directdraw
+                        - name: Acelera
                           href: ./directdraw/directdraw.md
                         - name: Artigos técnicos
                           href: ./dxtecharts/dx9-technical-articles.md
@@ -327,7 +327,7 @@
                       href: ./direct3darticles/directx-graphics-articles-portal.md
                     - name: APIs XAudio2
                       href: ./xaudio2/xaudio2-apis-portal.md
-                    - name: APIs do Controlador de Jogo XInput
+                    - name: APIs do XInput Game Controller
                       href: ./xinput/xinput-game-controller-apis-portal.md
                 - name: DirectComposition
                   href: ./directcomp/directcomposition-portal.md
@@ -337,7 +337,7 @@
                   href: ./gdi/windows-gdi.md
                 - name: Configuração do Monitor
                   href: ./monitor/monitor-configuration.md
-                - name: Opengl
+                - name: OpenGL
                   href: ./opengl/opengl.md
                 - name: Windows Imaging Component
                   href: ./wic/-wic-lh.md
@@ -361,7 +361,7 @@
                   href: /previous-versions/windows/desktop/legacy/ms711472(v=vs.85)
                 - name: Interfaces de Rede
                   href: ./network-interfaces.md
-                - name: Gerenciador de Lista de Rede
+                - name: Gerenciador de lista de rede
                   href: ./nla/portal.md
                 - name: Gerenciamento de Rede
                   href: ./netmgmt/network-management.md
@@ -375,11 +375,11 @@
                   href: ./rras/portal.md
                 - name: Protocolo SNMP
                   href: ./snmp/snmp-start-page.md
-                - name: Interfaces de programação de aplicativos de telefonia
+                - name: Interfaces de programação de aplicativo de telefonia
                   href: Tapi/telephony-application-programming-interfaces.md
                 - name: Teredo
                   href: ./teredo/portal.md
-                - name: API de componente do protocolo WebSocket
+                - name: API de componente de protocolo WebSocket
                   href: ./websock/web-socket-protocol-component-api-portal.md
                 - name: Plataforma de filtragem do Windows
                   href: ./fwp/windows-filtering-platform-start-page.md
@@ -395,7 +395,7 @@
                       href: ./bluetooth/bluetooth-start-page.md
                     - name: Banda Larga Móvel
                       href: ./mbn/mobile-broadband-networks-portal.md
-                    - name: Wi-Fi nativo
+                    - name: WiFi nativo
                       href: ./nativewifi/portal.md
                     - name: Conexão Fácil do Windows
                       href: ./wcn/portal.md

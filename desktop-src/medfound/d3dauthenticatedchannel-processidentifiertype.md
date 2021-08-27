@@ -1,7 +1,7 @@
 ---
-description: Especifica o tipo de processo que é identificado na estrutura de \_ saída D3DAUTHENTICATEDCHANNEL QUERYRESTRICTEDSHAREDRESOURCEPROCESS \_ .
+description: Especifica o tipo de processo identificado na estrutura D3DAUTHENTICATEDCHANNEL \_ QUERYRESTRICTEDSHAREDRESOURCEPROCESS \_ OUTPUT.
 ms.assetid: 8878905e-f55b-4dbc-9608-da0082daf673
-title: Enumeração de D3DAUTHENTICATEDCHANNEL_PROCESSIDENTIFIERTYPE (D3d9types. h)
+title: D3DAUTHENTICATEDCHANNEL_PROCESSIDENTIFIERTYPE enumeração (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3d9types.h
-ms.openlocfilehash: 1b2fdb7384ff868b02f54650de9662b297ce39db
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 522fee8421ec61b58bd67065c31b968252c2c7d563e94f7eda7a9f5105d20382
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089765"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120061976"
 ---
-# <a name="d3dauthenticatedchannel_processidentifiertype-enumeration"></a>\_Enumeração D3DAUTHENTICATEDCHANNEL PROCESSIDENTIFIERTYPE
+# <a name="d3dauthenticatedchannel_processidentifiertype-enumeration"></a>Enumeração D3DAUTHENTICATEDCHANNEL \_ PROCESSIDENTIFIERTYPE
 
-Especifica o tipo de processo que é identificado na estrutura [**de \_ \_ saída D3DAUTHENTICATEDCHANNEL QUERYRESTRICTEDSHAREDRESOURCEPROCESS**](d3dauthenticatedchannel-queryrestrictedsharedresourceprocess-output.md) .
+Especifica o tipo de processo identificado na estrutura [**D3DAUTHENTICATEDCHANNEL \_ QUERYRESTRICTEDSHAREDRESOURCEPROCESS \_ OUTPUT.**](d3dauthenticatedchannel-queryrestrictedsharedresourceprocess-output.md)
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,24 +41,24 @@ typedef enum  {
 
 <dl> <dt>
 
-<span id="PROCESSIDTYPE_UNKNOWN"></span><span id="processidtype_unknown"></span>**PROCESSIDtype \_ desconhecido**
+<span id="PROCESSIDTYPE_UNKNOWN"></span><span id="processidtype_unknown"></span>**PROCESSIDTYPE \_ UNKNOWN**
 </dt> <dd>
 
 Tipo de processo desconhecido.
 
 </dd> <dt>
 
-<span id="PROCESSIDTYPE_DWM"></span><span id="processidtype_dwm"></span>**DWM do PROCESSIDtype \_**
+<span id="PROCESSIDTYPE_DWM"></span><span id="processidtype_dwm"></span>**PROCESSIDTYPE \_ DWM**
 </dt> <dd>
 
-Processo de Gerenciador de Janelas da Área de Trabalho (DWM).
+Gerenciador de Janelas da Área de Trabalho (DWM).
 
 </dd> <dt>
 
-<span id="PROCESSIDTYPE_HANDLE"></span><span id="processidtype_handle"></span>**identificador de PROCESSIDtype \_**
+<span id="PROCESSIDTYPE_HANDLE"></span><span id="processidtype_handle"></span>**PROCESSIDTYPE \_ HANDLE**
 </dt> <dd>
 
-Identificador para um processo.
+Lidar com um processo.
 
 </dd> </dl>
 
@@ -68,9 +68,9 @@ Identificador para um processo.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                                                 |
-| parâmetro<br/>                   | <dl> <dt>D3d9types. h (incluir D3d9. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/>                                                 |
+| Cabeçalho<br/>                   | <dl> <dt>D3d9types.h (inclua D3d9.h)</dt> </dl> |
 
 
 

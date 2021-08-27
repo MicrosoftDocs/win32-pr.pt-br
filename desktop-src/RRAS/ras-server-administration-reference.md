@@ -6,12 +6,12 @@ keywords:
 - RAS do serviço de acesso remoto, referência de administração do servidor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 71da5a279fda522ee22ed5de9eda40b538215514
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6bfc255c87b72d02f4f681077ba3a02856ff0b64c6c92fa08e7c71413bc4175d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105775658"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120073996"
 ---
 # <a name="ras-server-administration-reference"></a>Referência de administração do servidor RAS
 
@@ -22,9 +22,9 @@ As seguintes funções, estruturas, mensagens e tipos de enumeração são usada
 -   [Enumerações de administração do servidor RAS](ras-server-administration-enumerations.md)
 -   [Union de administração do servidor RAS](ras-server-administration-union.md)
 
- 
+ 
 
- 
+ 
 
 
 

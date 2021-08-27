@@ -1,9 +1,9 @@
 ---
-title: Mensagem de EM_GETELLIPSISSTATE (RichEdit. h)
-description: Recupera o estado de reticências atual.
+title: EM_GETELLIPSISSTATE mensagem (Richedit.h)
+description: Recupera o estado de reellipse atual.
 ms.assetid: D02AE225-F5BF-401A-9877-55C68946CDBE
 keywords:
-- Controles de EM_GETELLIPSISSTATE de mensagens do Windows
+- EM_GETELLIPSISSTATE controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 905bc8ecc180189f46e896aa0d9aaa3ba88b3f0b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7aaa02fa5ecfdaa5e9f24a41a28ab696e6f2e76224cff8443fab3aa558d1e5a8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455185"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120049246"
 ---
-# <a name="em_getellipsisstate-message"></a>\_Mensagem em getreticências
+# <a name="em_getellipsisstate-message"></a>Mensagem EM \_ GETELLIPSISSTATE
 
-Recupera o estado de reticências atual.
+Recupera o estado de reellipse atual.
 
 
 ```C++
@@ -50,9 +50,9 @@ Não usado; deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O valor de retorno será TRUE se uma elipse estiver sendo exibida e FALSE caso contrário.
+O valor de retorno será TRUE se uma reellipse estiver sendo exibida e FALSE, caso contrário, .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -60,9 +60,9 @@ O valor de retorno será TRUE se uma elipse estiver sendo exibida e FALSE caso c
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -70,10 +70,10 @@ O valor de retorno será TRUE se uma elipse estiver sendo exibida e FALSE caso c
 
 <dl> <dt>
 
-[**em \_ GETreticênciamode**](em-getellipsismode.md)
+[**EM \_ GETELLIPSISMODE**](em-getellipsismode.md)
 </dt> <dt>
 
-[**em \_ setreticências**](em-setellipsismode.md)
+[**EM \_ SETELLIPSISMODE**](em-setellipsismode.md)
 </dt> </dl>
 
  

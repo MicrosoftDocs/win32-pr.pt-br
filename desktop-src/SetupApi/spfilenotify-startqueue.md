@@ -1,19 +1,19 @@
 ---
-description: A \_ notificação SPFILENOTIFY STARTQUEUE é enviada para a rotina de retorno de chamada quando o processo de compromisso de fila é iniciado.
+description: A notificação SPFILENOTIFY \_ STARTQUEUE é enviada para a rotina de retorno de chamada quando o processo de compromisso da fila é iniciado.
 ms.assetid: 682c2ce0-0c82-402c-a487-db5f2c377f3f
-title: Mensagem de SPFILENOTIFY_STARTQUEUE (Setupapi. h)
+title: SPFILENOTIFY_STARTQUEUE mensagem (Setupapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 090e3f97dceb1843d75934dd99cca500e6f93086
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a40d4fedde850d975edd697423339c686fe697911b9bef2fdc252baffda0158f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105756137"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120073206"
 ---
-# <a name="spfilenotify_startqueue-message"></a>\_Mensagem SPFILENOTIFY STARTQUEUE
+# <a name="spfilenotify_startqueue-message"></a>Mensagem SPFILENOTIFY \_ STARTQUEUE
 
-A notificação **SPFILENOTIFY \_ STARTQUEUE** é enviada para a rotina de retorno de chamada quando o processo de compromisso de fila é iniciado.
+A **notificação SPFILENOTIFY \_ STARTQUEUE** é enviada para a rotina de retorno de chamada quando o processo de compromisso da fila é iniciado.
 
 
 ```C++
@@ -32,7 +32,7 @@ SPFILENOTIFY_STARTQUEUE
 *Param1* 
 </dt> <dd>
 
-Manipule a janela que é proprietária das caixas de diálogo geradas pela rotina de retorno de chamada.
+Lidar com a janela que deve ter as caixas de diálogo que a rotina de retorno de chamada gera.
 
 </dd> <dt>
 
@@ -43,11 +43,11 @@ Não utilizado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se ocorrer um erro, a rotina de retorno de chamada deverá chamar [**SetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-setlasterror), especificando o erro e, em seguida, retornará zero. A função [**SetupCommitFileQueue**](/windows/desktop/api/Setupapi/nf-setupapi-setupcommitfilequeuea) retornará **false** e uma chamada subsequente para [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) retornará o código de erro definido pela rotina de retorno de chamada.
+Se ocorrer um erro, a rotina de retorno de chamada deverá chamar [**SetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-setlasterror), especificando o erro e retornar zero. A [**função SetupCommitFileQueue**](/windows/desktop/api/Setupapi/nf-setupapi-setupcommitfilequeuea) retornará **FALSE** e uma chamada subsequente para [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) retornará o código de erro definido pela rotina de retorno de chamada.
 
-Se nenhum erro ocorrer, a rotina de retorno de chamada deverá retornar um valor diferente de zero.
+Se nenhum erro ocorrer, a rotina de retorno de chamada deverá retornar um valor não zero.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,9 +55,9 @@ Se nenhum erro ocorrer, a rotina de retorno de chamada deverá retornar um valor
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Setupapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Setupapi.h</dt> </dl> |
 
 
 

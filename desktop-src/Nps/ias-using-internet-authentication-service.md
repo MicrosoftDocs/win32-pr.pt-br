@@ -1,59 +1,59 @@
 ---
-title: Usando extensões do NPS
-description: Saiba mais sobre como usar as extensões do NPS. O IAS (serviço de autenticação da Internet) foi renomeado como NPS (servidor de políticas de rede).
+title: Usando extensões NPS
+description: Saiba mais sobre como usar extensões NPS. O IAS (Serviço de Autenticação da Internet) foi renomeado como NPS (Servidor de Políticas de Rede).
 ms.assetid: 3ee16279-7e11-4587-ae43-f0296b7e7594
 ms.tgt_platform: multiple
 keywords:
-- IAS, tarefas do serviço de autenticação da Internet
-- Serviço de autenticação da Internet IAS, usando
+- IAS do Serviço de Autenticação da Internet, tarefas
+- IAS do Serviço de Autenticação da Internet, usando
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 06f422c005d6810a4035450e24de1324b28361f1
-ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
+ms.openlocfilehash: 4db3590ed10ec77e57c86bfad3e0e0b1160e70a2d6fcc08abc911a14614543f9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111989063"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120074296"
 ---
-# <a name="using-nps-extensions"></a>Usando extensões do NPS
+# <a name="using-nps-extensions"></a>Usando extensões NPS
 
-O IAS (serviço de autenticação da Internet) foi renomeado como NPS (servidor de políticas de rede). O conteúdo deste tópico aplica-se ao IAS e ao NPS. Em todo o texto, o NPS é usado para fazer referência a todas as versões do serviço, incluindo as versões originalmente chamadas de IAS.
+O IAS (Serviço de Autenticação da Internet) foi renomeado como NPS (Servidor de Políticas de Rede). O conteúdo deste tópico se aplica a IAS e NPS. Em todo o texto, o NPS é usado para se referir a todas as versões do serviço, incluindo as versões originalmente conhecidas como IAS.
 
-* * Windows Server 2008 R2 e Windows Server 2008: * *
+**Windows Server 2008 R2 e Windows Server 2008: **
 
-Os exemplos de Diale e MapName estendem a funcionalidade do NPS.
+Os exemplos DialIn e MapName estendem a funcionalidade NPS.
 
 
 
 | Amostra             | Descrição                                                                                                                                                                                                     |
 |--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Conexão<br/>  | Este exemplo implementa uma extensão RADIUS DLL que verifica o bit de discagem para o usuário.<br/>                                                                                                              |
-| MapName<br/> | Esta DLL de extensão de exemplo pesquisa todos os domínios confiáveis para a conta designada. Isso permite que os usuários de vários domínios sejam autenticados sem que os usuários precisem fornecer seu nome de domínio.<br/> |
+| Dialin<br/>  | Este exemplo implementa uma DLL de extensão RADIUS que verifica o bit discado do usuário.<br/>                                                                                                              |
+| Mapname<br/> | Esta DLL de extensão de exemplo pesquisa todos os domínios confiáveis para a conta designada. Isso permite que os usuários de vários domínios sejam autenticados sem que os usuários sejam obrigados a fornecer seu nome de domínio.<br/> |
 
 
 
  
 
-Você pode encontrar o código-fonte para os aplicativos de exemplo MapName e dial-in na lista a seguir. *Local*,% caminho de instalação%, designa o diretório de instalação base para computadores x64. Consulte também [Windows Software Development Kit (SDK) para Windows 8](https://developer.microsoft.com/windows/downloads/windows-8-sdk), SDK (Software Development Kit) do Microsoft Windows e [downloads para o desenvolvimento de aplicativos da Windows Store](https://msdn.microsoft.com/windows/apps/br229516).
+Você pode encontrar o código-fonte para os aplicativos de exemplo MapName e DialIn na lista a seguir. *Location*, %Install Path%, designa o diretório de instalação base para computadores x64. Consulte também [Windows SDK (Software Development Kit)](https://developer.microsoft.com/windows/downloads/windows-8-sdk)para Windows 8 , SDK (Software Development Kit) da Microsoft Windows e Downloads para desenvolvimento de aplicativos da [Windows Store.](https://msdn.microsoft.com/windows/apps/br229516)
 
 <dl> <dt>
 
-SDK do Windows para Windows 8
+Windows SDK para Windows 8
 </dt> <dd>
 
 Windows Server 2012
 
 Link de download: N/A
 
-MapName: não
+MapName: Não
 
-Conexão: não
+DialIn: Não
 
 Local: N/A
 
 </dd> <dt>
 
-SDK (Software Development Kit) do Microsoft Windows para Windows 7 e .NET Framework 4,0
+Microsoft Windows SDK (Software Development Kit) para Windows 7 e .NET Framework 4.0
 </dt> <dd>
 
 Windows Server 2008 R2
@@ -62,9 +62,9 @@ Link de download: <https://www.microsoft.com/download/en/confirmation.aspx?id=82
 
 MapName: Sim
 
-Conexão: não
+DialIn: Não
 
-Local:% Install caminho% \\ Microsoft SDKs \\ Windows \\ v 7.1 \\ Samples \\ netds \\ ias
+Local: %Install Path% \\ Microsoft SDKs \\ Windows \\ v7.1 \\ Exemplos \\ netds \\ ias
 
 </dd> <dt>
 
@@ -77,9 +77,9 @@ Link de download: <https://www.microsoft.com/download/details.aspx?id=5023>
 
 MapName: Sim
 
-Conexão: não
+DialIn: Não
 
-Local:% Install caminho% \\ Microsoft SDKs \\ Windows \\ v 6.1 \\ Samples \\ NetDs \\ ias
+Local: %Install Path% \\ Microsoft SDKs \\ Windows \\ v6.1 \\ \\ Samples NetDs \\ IAS
 
 </dd> </dl>
 
@@ -90,7 +90,7 @@ Local:% Install caminho% \\ Microsoft SDKs \\ Windows \\ v 6.1 \\ Samples \\ Net
 [Downloads para desenvolvedores](https://msdn.microsoft.com/windows/apps/br229516)
 </dt> <dt>
 
-[SDK do Windows para Windows 8](https://developer.microsoft.com/windows/downloads/windows-8-sdk)
+[Windows SDK para Windows 8](https://developer.microsoft.com/windows/downloads/windows-8-sdk)
 </dt> </dl>
 
  

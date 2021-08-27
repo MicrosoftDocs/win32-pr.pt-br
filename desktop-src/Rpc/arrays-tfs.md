@@ -4,12 +4,12 @@ description: As categorias de matriz de chamada de procedimento remoto (RPC) inc
 ms.assetid: 7144ec87-90f2-463a-80e4-28cb4771325f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d6d564a2dfd838006be1667343b14a57bdaf4b07
-ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
+ms.openlocfilehash: 6271f6a459ebfb96cc5c4d55153bb4c77b013a50925d9c3a4ba9dd81b0f6fbdf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "106388811"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120073486"
 ---
 # <a name="arrays-rpc"></a>Matrizes (RPC)
 

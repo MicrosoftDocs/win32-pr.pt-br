@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 50ec2ede228a27e753316860ac44e604d39e2e4b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7cce517ae33681fcb106e83720fc5ddd7685f26f673c466e24162ce95e9ca442
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499526"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120072696"
 ---
 # <a name="actioncollectioncreate-method"></a>Método ActionCollection. Create
 
@@ -62,7 +62,7 @@ Esse parâmetro é definido como uma das constantes de enumeração de [**\_ \_ 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Um objeto de [**ação**](action.md) que representa a nova ação.
 
@@ -76,8 +76,8 @@ Você não pode adicionar mais de 32 ações à coleção.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                    |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                    |
 | Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
@@ -96,7 +96,7 @@ Você não pode adicionar mais de 32 ações à coleção.
 [**Açãocollection**](actioncollection.md)
 </dt> <dt>
 
-[**Action**](action.md)
+[**Ação**](action.md)
 </dt> <dt>
 
 [**Execaction**](execaction.md)
