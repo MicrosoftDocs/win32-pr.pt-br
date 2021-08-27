@@ -1,17 +1,17 @@
 ---
 description: Seu aplicativo pode dar suporte a um conjunto diferente de idiomas de interface do usuário daqueles com suporte do sistema operacional de destino. Este tópico discute esse tipo de suporte, usando trechos de código de exemplos completos.
 ms.assetid: cb9f2a5f-3bb8-4287-a542-c71d20b37194
-title: Suporte a configurações de idioma Application-Specific
+title: suporte ao idioma do Application-Specific Configurações
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d6bddfe94586751d3b0f4757c670c006317e49b7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 96c934ea2f01c37eb2f9e846382447a50ccbedcd9b69fe20069216fa46521b02
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105752266"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120130056"
 ---
-# <a name="supporting-application-specific-language-settings"></a>Suporte a configurações de idioma Application-Specific
+# <a name="supporting-application-specific-language-settings"></a>suporte ao idioma do Application-Specific Configurações
 
 Seu aplicativo pode dar suporte a um conjunto diferente de idiomas de interface do usuário daqueles com suporte do sistema operacional de destino. Este tópico discute esse tipo de suporte, usando trechos de código de exemplos completos.
 
@@ -91,7 +91,7 @@ BOOL ConvertMyLangStrToMultiLangStr(WCHAR * langStr, WCHAR * langMultiStr, DWORD
 
 ## <a name="set-the-application-language"></a>Definir o idioma do aplicativo
 
-Depois de ler as informações de preferência de idioma, o código do aplicativo deve usar a configuração recuperada para definir o idioma do aplicativo. No Windows 7 e posterior, o aplicativo pode definir o idioma no nível do processo chamando a função [**SetProcessPreferredUILanguages**](/windows/desktop/api/Winnls/nf-winnls-setprocesspreferreduilanguages) .
+Depois de ler as informações de preferência de idioma, o código do aplicativo deve usar a configuração recuperada para definir o idioma do aplicativo. no Windows 7 e posterior, o aplicativo pode definir o idioma no nível do processo chamando a função [**SetProcessPreferredUILanguages**](/windows/desktop/api/Winnls/nf-winnls-setprocesspreferreduilanguages) .
 
 
 ```C++
@@ -108,7 +108,7 @@ if(!SetProcessPreferredUILanguages(MUI_LANGUAGE_NAME, userLanguagesMultiString, 
 
 
 
-No Windows Vista e posterior, o idioma do aplicativo é definido no nível do thread chamando a função [**SetThreadPreferredUILanguages**](/windows/desktop/api/Winnls/nf-winnls-setthreadpreferreduilanguages) .
+no Windows Vista e posterior, o idioma do aplicativo é definido no nível do thread chamando a função [**SetThreadPreferredUILanguages**](/windows/desktop/api/Winnls/nf-winnls-setthreadpreferreduilanguages) .
 
 
 ```C++
@@ -133,10 +133,10 @@ return 1;
 [Definindo preferências de idioma do aplicativo](setting-application-language-preferences.md)
 </dt> <dt>
 
-[MUI: exemplo de configurações de Application-Specific (Windows Vista)](mui-application-specific-settings-sample-vista.md)
+[MUI: exemplo de Configurações de Application-Specific (Windows Vista)](mui-application-specific-settings-sample-vista.md)
 </dt> <dt>
 
-[MUI: exemplo de configurações de Application-Specific (pré-Windows Vista)](mui-application-specific-settings-sample-pre-vista.md)
+[MUI: exemplo de Configurações de Application-Specific (pré-Windows Vista)](mui-application-specific-settings-sample-pre-vista.md)
 </dt> </dl>
 
  

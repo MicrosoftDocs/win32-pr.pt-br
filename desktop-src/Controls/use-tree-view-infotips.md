@@ -4,12 +4,12 @@ description: Quando você aplica o \_ estilo INFOTIP de TVs a um controle de exi
 ms.assetid: 779BEAC1-877E-43DD-AE1C-6D71C3013384
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f0ef862d68cfd9f6ac5a97e82c80622e9c02121
-ms.sourcegitcommit: 3e70ae762629e244028b437420ed50b5850db4e3
+ms.openlocfilehash: 6ff9273b28b614e7935f6ac507288a5733271fb455a6be1e85b52c5b0ba8bbb3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "105753779"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120132026"
 ---
 # <a name="how-to-use-tree-view-infotips"></a>Como usar Tree-View Infotips
 
@@ -19,12 +19,12 @@ Quando você aplica o [**estilo \_ INFOTIP de TVs**](tree-view-control-window-st
 
 ### <a name="technologies"></a>Tecnologias
 
--   [Controles do Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
 -   C/C++
--   Programação da interface do usuário do Windows
+-   Windows Programação de interface do usuário
 
 ## <a name="instructions"></a>Instruções
 
@@ -72,9 +72,9 @@ O código de exemplo a seguir mostra como um aplicativo pode responder à notifi
 [O exemplo de CustDTv ilustra o desenho personalizado em um controle de Tree-View](https://support.microsoft.com/default.aspx?scid=kb;EN-US;q248496)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

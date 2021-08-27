@@ -1,7 +1,7 @@
 ---
-description: 'O método IsPageDirty indica se a página de propriedades foi alterada desde que foi ativada ou desde a chamada mais recente para IPropertyPage:: apply. Esse método implementa o método IPropertyPage:: IsPageDirty.'
+description: O método IsPageDirty indica se a página de propriedades foi alterada desde que foi ativada ou desde a chamada mais recente para IPropertyPage::Apply. Esse método implementa o método IPropertyPage::IsPageDirty.
 ms.assetid: 95eeec26-7dbb-4add-a827-6505b40afe48
-title: Método CBasePropertyPage. IsPageDirty (cProp. h)
+title: Método CBasePropertyPage.IsPageDirty (Cprop.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c69c2e7d480f63542e146c73e56b9e692693f665
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 72b818ce117990f6f91ee58b8605e9d8cff9734fa9114d7f6114ed11d53a9521
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750064"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120108496"
 ---
-# <a name="cbasepropertypageispagedirty-method"></a>Método CBasePropertyPage. IsPageDirty
+# <a name="cbasepropertypageispagedirty-method"></a>Método CBasePropertyPage.IsPageDirty
 
-O `IsPageDirty` método indica se a página de propriedades foi alterada desde que foi ativada ou desde a chamada mais recente para **IPropertyPage:: apply**. Esse método implementa o método **IPropertyPage:: IsPageDirty** .
+O método indica se a página de propriedades foi alterada desde que foi ativada ou desde a chamada mais `IsPageDirty` recente para **IPropertyPage::Apply.** Esse método implementa o **método IPropertyPage::IsPageDirty.**
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,9 +40,9 @@ HRESULT IsPageDirty();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna S \_ OK se [**CBasePropertyPage:: m \_ bDirty**](cbasepropertypage-m-bdirty.md) for **true** ou S \_ false, caso contrário.
+Retornará S \_ OK [**se CBasePropertyPage::m \_ bDirty**](cbasepropertypage-m-bdirty.md) for **TRUE** ou S FALSE \_ caso contrário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Retorna S \_ OK se [**CBasePropertyPage:: m \_ bDirty**](cbasepropertypage-m-bdi
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>CProp. h (incluir fluxos. h)</dt> </dl>                                                                                     |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Cprop.h (incluir Fluxos.h)</dt> </dl>                                                                                     |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

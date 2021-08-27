@@ -1,7 +1,7 @@
 ---
-description: 'O método Next recupera um número especificado de tipos de mídia. Esse método implementa o método IEnumMediaTypes:: Next.'
+description: O método Next recupera um número especificado de tipos de mídia. Esse método implementa o método IEnumMediaTypes::Next.
 ms.assetid: d59dea48-e36c-4ee6-9935-5a47e8a12a9e
-title: Método CEnumMediaTypes. Next (Amfilter. h)
+title: Método CEnumMediaTypes.Next (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6b5eaa75a52f88539438cec58f024919577518e2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f8dd593fe6ca550c55ffc1f769a303dd2d5cbf7a8d8c986be8a39278d7f334ce
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751246"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120131286"
 ---
-# <a name="cenummediatypesnext-method"></a>Método CEnumMediaTypes. Next
+# <a name="cenummediatypesnext-method"></a>Método CEnumMediaTypes.Next
 
-O `Next` método recupera um número especificado de tipos de mídia. Esse método implementa o método [**IEnumMediaTypes:: Next**](/windows/desktop/api/Strmif/nf-strmif-ienummediatypes-next) .
+O `Next` método recupera um número especificado de tipos de mídia. Esse método implementa o [**método IEnumMediaTypes::Next.**](/windows/desktop/api/Strmif/nf-strmif-ienummediatypes-next)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,37 +47,37 @@ HRESULT Next(
 *cMediaTypes* 
 </dt> <dd>
 
-Número de tipos de mídia a serem recuperados.
+Número de tipos de mídia a recuperar.
 
 </dd> <dt>
 
 *ppMediaTypes* 
 </dt> <dd>
 
-Matriz de ponteiros para as estruturas de [**\_ \_ tipo de mídia**](/windows/win32/api/strmif/ns-strmif-am_media_type) , de tamanho *cPins*.
+Matriz de ponteiros para estruturas [**AM \_ MEDIA \_ TYPE,**](/windows/win32/api/strmif/ns-strmif-am_media_type) de *tamanho cPins*.
 
 </dd> <dt>
 
-*pcFetched* 
+*Pcfetched* 
 </dt> <dd>
 
-Ponteiro para uma variável que recebe o número de tipos de mídia que o método retornou. Pode ser **NULL** se *cMediaTypes* for 1.
+Ponteiro para uma variável que recebe o número de tipos de mídia retornados pelo método. Poderá ser **NULL** se *cMediaTypes* for 1.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um dos valores **HRESULT** mostrados na tabela a seguir.
+Retorna um dos **valores HRESULT** mostrados na tabela a seguir.
 
 
 
 | Código de retorno                                                                                                | Descrição                                                                         |
 |------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| <dl> <dt>**\_falso**</dt> </dl>                    | Não foi possível recuperar quantos tipos de mídia solicitados.<br/>                       |
+| <dl> <dt>**S \_ FALSE**</dt> </dl>                    | Não foi recuperado tantos tipos de mídia quanto solicitado.<br/>                       |
 | <dl> <dt>**S \_ OK**</dt> </dl>                       | Êxito.<br/>                                                                 |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>               | Argumento inválido.<br/>                                                        |
-| <dl> <dt>**\_ponteiro E**</dt> </dl>                  | Argumento de ponteiro **nulo** .<br/>                                               |
-| <dl> <dt>**VFW \_ E \_ enum \_ fora \_ de \_ sincronia**</dt> </dl> | O estado do PIN foi alterado e agora está inconsistente com o enumerador.<br/> |
+| <dl> <dt>**PONTEIRO \_ E**</dt> </dl>                  | Argumento de ponteiro **NULL.**<br/>                                               |
+| <dl> <dt>**VFW \_ \_ ENUM \_ FORA DE \_ \_ SINCRONIA**</dt> </dl> | O estado do pino foi alterado e agora está inconsistente com o enumerador.<br/> |
 
 
 
@@ -85,9 +85,9 @@ Retorna um dos valores **HRESULT** mostrados na tabela a seguir.
 
 ## <a name="remarks"></a>Comentários
 
-Se o método tiver sucesso, a matriz especificada por *ppMediaTypes* conterá ponteiros para \_ estruturas de tipo de mídia am \_ . O número de estruturas é igual a *\* pcFetched*. Libere cada tipo de mídia chamando a função [**DeleteMediaType**](deletemediatype.md) .
+Se o método for bem-sucedido, a matriz especificada por *ppMediaTypes* conterá ponteiros para estruturas AM \_ MEDIA \_ TYPE. O número de estruturas é igual a *\* pcFetched.* Liberar cada tipo de mídia chamando a [**função DeleteMediaType.**](deletemediatype.md)
 
-Esse método chama o método [**CBasePin:: GetMediaType**](cbasepin-getmediatype.md) do PIN para recuperar os tipos de mídia.
+Esse método chama o método [**CBasePin::GetMediaType**](cbasepin-getmediatype.md) do pino para recuperar os tipos de mídia.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -95,8 +95,8 @@ Esse método chama o método [**CBasePin:: GetMediaType**](cbasepin-getmediatype
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amfilter.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

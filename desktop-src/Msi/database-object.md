@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 5b47e4678d9475abe90c4b55d6adb514314dcc0e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3dcdb2c4098905d7e6a410e786d4af254732bc80cee4b760870a7c1c44a8ec26
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105769323"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120086196"
 ---
 # <a name="database-object"></a>Objeto de banco de dados
 
@@ -31,7 +31,7 @@ O cliente pode usar o procedimento a seguir para acesso a dados.
 **Para consultar o sequenciamento de API**
 
 1.  Obtenha um objeto de **banco de dados** chamando o objeto [**OpenDatabase**](installer-opendatabase.md) ou [**instalador**](installer-object.md) .
-2.  Inicie uma consulta usando uma cadeia de caracteres SQL chamando o método [**OpenView**](database-openview.md) do objeto **Database** .
+2.  inicie uma consulta usando uma cadeia de caracteres SQL chamando o método [**OpenView**](database-openview.md) do objeto **Database** .
 3.  Defina os parâmetros de consulta em um objeto de [**registro**](record-object.md) e execute a consulta de banco de dados chamando o método [**Execute**](view-execute.md) do objeto [**View**](view-object.md) . Isso produz um resultado que pode ser buscado ou atualizado.
 4.  Chame o método [**Fetch**](view-fetch.md) do objeto [**View**](view-object.md) repetidamente para retornar objetos [**Record**](record-object.md) .
 5.  Atualize as linhas de banco de dados de um objeto de [**registro**](record-object.md) obtido pelo método [**Fetch**](view-fetch.md) usando o método [**Modify**](view-modify.md) do objeto [**View**](view-object.md) .
@@ -54,14 +54,14 @@ O objeto de **banco de dados** tem esses métodos.
 | Método                                                                    | Descrição                                                                                                                                                               |
 |:--------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**ApplyTransform**](database-applytransform.md)                         | Aplica a transformação a este banco de dados.<br/>                                                                                                                        |
-| [**Compromisso**](database-commit.md)                                         | Finaliza a forma persistente do banco de dados.<br/>                                                                                                                 |
+| [**Commit**](database-commit.md)                                         | Finaliza a forma persistente do banco de dados.<br/>                                                                                                                 |
 | [**CreateTransformSummaryInfo**](database-createtransformsummaryinfo.md) | Cria e popula o fluxo de informações resumidas de um arquivo de transformação existente.<br/>                                                                            |
 | [**EnableUIPreview**](database-enableuipreview.md)                       | Facilita a criação de caixas de diálogo e de mural, fornecendo o suporte necessário para exibir caixas de diálogo da interface do usuário armazenadas no banco de dados do instalador.<br/> |
 | [**Exportação**](database-export.md)                                         | Copia a estrutura e os dados de uma tabela especificada para um arquivo morto de texto.<br/>                                                                                   |
 | [**GenerateTransform**](database-generatetransform.md)                   | Cria uma transformação.<br/>                                                                                                                                           |
 | [**Importar**](database-import.md)                                         | Importa uma tabela de banco de dados de um arquivo morto de texto.<br/>                                                                                                             |
 | [**Mescle**](database-merge.md)                                           | Mescla o banco de dados de referência com o banco de dados base.<br/>                                                                                                          |
-| [**AbrirModoDeExibição**](database-openview.md)                                     | Retorna um objeto [**View**](view-object.md) que representa a consulta especificada por uma cadeia de caracteres SQL.<br/>                                                                 |
+| [**AbrirModoDeExibição**](database-openview.md)                                     | retorna um objeto [**View**](view-object.md) que representa a consulta especificada por uma cadeia de caracteres SQL.<br/>                                                                 |
 
 
 
@@ -90,7 +90,7 @@ O objeto de **banco de dados** tem essas propriedades.
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou no Windows Vista. Windows Installer no Windows Server 2003 ou no Windows XP<br/> |
+| Versão<br/> | Windows instalador 5,0 em Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou Windows Vista. Windows instalador no Windows Server 2003 ou Windows XP<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
 | IID<br/>     | IID \_ IDatabase é definido como 000C109D-0000-0000-C000-000000000046<br/>                                                                                                                                                                            |
 
@@ -100,7 +100,7 @@ O objeto de **banco de dados** tem essas propriedades.
 
 <dl> <dt>
 
-[Exemplos de script de Windows Installer](windows-installer-scripting-examples.md)
+[Windows Exemplos de script do instalador](windows-installer-scripting-examples.md)
 </dt> </dl>
 
  

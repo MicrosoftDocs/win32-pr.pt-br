@@ -1,7 +1,7 @@
 ---
-description: Saiba mais sobre o método do Construtor CMediaType. CMediaType (mtype. h). Esse método usa os parâmetros ' mtype ' e ' PHR '.
+description: Saiba mais sobre o método do construtor CMediaType.CMediaType (Mtype.h). Esse método usa os parâmetros 'mtype' e 'phr'.
 ms.assetid: b7d5264a-2a5f-4111-96bb-1ea2b13405be
-title: Construtor CMediaType. CMediaType (mtype. h)-parâmetros mtype e PHR
+title: Construtor CMediaType.CMediaType (Mtype.h) – parâmetros mtype e phr
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 12ef9012e59dfce1f45d21aa720ae13bd660f2d8
-ms.sourcegitcommit: 11f52354f570aacaf1ba2a266b2e507abd73352a
+ms.openlocfilehash: 0c399073794f025122e1cfade3f15b3a96784f28e171482e4dcfb7bcec6a8271
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "105811326"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120084476"
 ---
-# <a name="cmediatypecmediatype-constructor-mtypeh---mtype-and-phr-parameters"></a>Construtor CMediaType. CMediaType (mtype. h)-parâmetros mtype e PHR
+# <a name="cmediatypecmediatype-constructor-mtypeh---mtype-and-phr-parameters"></a>Construtor CMediaType.CMediaType (Mtype.h) – parâmetros mtype e phr
 
-Método de construtor.
+Método do construtor.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,30 +43,30 @@ CMediaType(
 
 <dl> <dt>
 
-*mtype* \[ referência\]
+*mtype* \[ Ref\]
 </dt> <dd>
 
-Referência a uma estrutura de [**\_ \_ tipo de mídia am**](/windows/win32/api/strmif/ns-strmif-am_media_type) . O construtor copia o tipo de mídia para o novo objeto, incluindo o bloco de formato, se houver.
+Referência a uma [**estrutura AM \_ MEDIA \_ TYPE.**](/windows/win32/api/strmif/ns-strmif-am_media_type) O construtor copia o tipo de mídia para o novo objeto, incluindo o bloco de formato, se for o caso.
 
 </dd> <dt>
 
-*phr* 
+*Phr* 
 </dt> <dd>
 
-Ponteiro para uma variável que recebe um valor HRESULT. Esse parâmetro pode ser um ponteiro **nulo** . Caso contrário, o chamador deve definir o valor como S \_ OK antes de chamar o construtor. Se o Construtor falhar, ele definirá o valor como um código de falha.
+Ponteiro para uma variável que recebe um valor HRESULT. Esse parâmetro pode ser um **ponteiro NULL.** Caso contrário, o chamador deverá definir o valor como S \_ OK antes de chamar o construtor. Se o construtor falhar, ele define o valor como um código de falha.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-O construtor chama o método [**CMediaType:: InitMediaType**](cmediatype-initmediatype.md) para inicializar o tipo de mídia.
+O construtor chama o [**método CMediaType::InitMediaType**](cmediatype-initmediatype.md) para inicializar o tipo de mídia.
 
 ## <a name="requirements"></a>Requisitos
 
 | Requisito                   | Valor                                                                                                                                                                                           |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro  | Mtype. h (incluir fluxos. h)                                                                                     |
-| Biblioteca | Strmbase. lib (compilações de varejo); Strmbasd. lib (compilações de depuração) |
+| parâmetro  | Mtype.h (incluir Fluxos.h)                                                                                     |
+| Biblioteca | Strmbase.lib (builds de varejo); Strmbasd.lib (builds de depuração) |
 
 ## <a name="see-also"></a>Confira também
 

@@ -4,12 +4,12 @@ description: Os seguintes registros de entrada e saída são implementados no so
 ms.assetid: F16E5CB8-E1DB-48CD-8C20-DBF1DF971110
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d945e06ed3ae1847e15a32da973709b8ceb241ab
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d432e53626d547bcaf421a4b4ffd9c2aa0f5d0a78ecc3aff9f0b87059c40c0ac
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103916578"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120095336"
 ---
 # <a name="registers---ps_5_0"></a>Registros-PS \_ 5 \_ 0
 
@@ -21,17 +21,17 @@ Os seguintes registros de entrada e saída são implementados no sombreador de p
 
 | Tipo de registro                                     | Contagem              | R/W | Dimensão | Indexável por r\# | Padrões | Requer DCL |
 |---------------------------------------------------|--------------------|-----|-----------|------------------|----------|--------------|
-| Temp de 32 bits (r \# )                                 | 4096 (r \# + x \# \[ n \] ) | R/W | 4         | Não               | Nenhum     | Yes          |
-| Matriz temporária indexável de 32 bits (x \# \[ n \] )            | 4096 (r \# + x \# \[ n \] ) | R/W | 4         | Sim              | Nenhum     | Yes          |
-| Atributo de entrada de 32 bits (v \# )                      | 32                 | R   | 4         | Sim              | Nenhum     | Yes          |
-| Elemento em um recurso de entrada (t \# )                | 128                | R   | 1         | Não               | Nenhum     | Yes          |
-| Amostra (s \# )                                     | 16                 | R   | 1         | Não               | Nenhum     | Yes          |
-| Referência de ConstantBuffer ( \# \[ índice CB \] )          | 15                 | R   | 4         | Sim (conteúdo)    | Nenhum     | Yes          |
-| Referência imediata de ConstantBuffer ( \[ índice de ICB \] ) | 1                  | R   | 4         | Sim (conteúdo)    | Nenhum     | Yes          |
+| Temp de 32 bits (r \# )                                 | 4096 (r \# + x \# \[ n \] ) | R/W | 4         | Não               | Nenhum     | Sim          |
+| Matriz temporária indexável de 32 bits (x \# \[ n \] )            | 4096 (r \# + x \# \[ n \] ) | R/W | 4         | Sim              | Nenhum     | Sim          |
+| Atributo de entrada de 32 bits (v \# )                      | 32                 | R   | 4         | Sim              | Nenhum     | Sim          |
+| Elemento em um recurso de entrada (t \# )                | 128                | R   | 1         | Não               | Nenhum     | Sim          |
+| Amostra (s \# )                                     | 16                 | R   | 1         | Não               | Nenhum     | Sim          |
+| Referência de ConstantBuffer ( \# \[ índice CB \] )          | 15                 | R   | 4         | Sim (conteúdo)    | Nenhum     | Sim          |
+| Referência imediata de ConstantBuffer ( \[ índice de ICB \] ) | 1                  | R   | 4         | Sim (conteúdo)    | Nenhum     | Sim          |
 
 
 
- 
+ 
 
 ## <a name="output-registers"></a>Registros de saída
 
@@ -47,7 +47,7 @@ Os seguintes registros de entrada e saída são implementados no sombreador de p
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -56,9 +56,9 @@ Os seguintes registros de entrada e saída são implementados no sombreador de p
 [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

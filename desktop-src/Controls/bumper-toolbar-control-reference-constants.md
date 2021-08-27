@@ -4,12 +4,12 @@ description: Constantes de controle da barra de ferramentas
 ms.assetid: 8c38a806-d9fd-4050-be34-9c0daa7180dd
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 454816cf64bdc0803bc20a72e8560c2629301122
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 34c37fc44dc6a3b8af987edcd78a0f6d687da1f6f1ccbf07f63d00f2e55b7a8e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105748720"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120063676"
 ---
 # <a name="toolbar-control-constants"></a>Constantes de controle da barra de ferramentas
 

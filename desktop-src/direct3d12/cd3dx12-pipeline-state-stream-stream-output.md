@@ -1,9 +1,9 @@
 ---
-title: Estrutura de CD3DX12_PIPELINE_STATE_STREAM_STREAM_OUTPUT (D3dx12. h)
+title: CD3DX12_PIPELINE_STATE_STREAM_STREAM_OUTPUT (D3dx12.h)
 description: Uma estrutura auxiliar usada para descrever a descrição da saída do fluxo como um único objeto adequado para uma descrição de fluxo.
 ms.assetid: CC7E1E76-CD44-4D70-A5B8-7C2B6210468E
 keywords:
-- Estrutura de CD3DX12_PIPELINE_STATE_STREAM_STREAM_OUTPUT
+- CD3DX12_PIPELINE_STATE_STREAM_STREAM_OUTPUT estrutura
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: acc8f7bf059c4eee72b0b22abfc424ee82ffd2dc
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5c0dbaf9952575801846adfbbb825c2ddbdc2e90d9d8d64f60f373ea2bcc1be0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105812274"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120119666"
 ---
-# <a name="cd3dx12_pipeline_state_stream_stream_output-structure"></a>\_Estrutura de \_ \_ saída do fluxo de fluxo do estado do \_ pipeline CD3DX12 \_
+# <a name="cd3dx12_pipeline_state_stream_stream_output-structure"></a>Estrutura DE SAÍDA DE FLUXO DE FLUXO \_ DE ESTADO DO PIPELINE CD3DX12 \_ \_ \_ \_
 
 Uma estrutura auxiliar usada para descrever a descrição da saída do fluxo como um único objeto adequado para uma descrição de fluxo.
 
@@ -44,37 +44,37 @@ struct CD3DX12_PIPELINE_STATE_STREAM_STREAM_OUTPUT {
 
 <dl> <dt>
 
-**\_Saída de \_ fluxo de fluxo de estado de pipeline CD3DX12 \_ \_ \_**
+**SAÍDA DE FLUXO DE FLUXO DE \_ ESTADO DO PIPELINE CD3DX12 \_ \_ \_ \_**
 </dt> <dd>
 
-Cria uma nova instância, não inicializada, de uma \_ saída de fluxo de fluxo de estado de pipeline CD3DX12 \_ \_ \_ \_ .
+Cria uma nova instância, não reinicializada, de uma SAÍDA DE FLUXO DE FLUXO DE ESTADO DE PIPELINE CD3DX12. \_ \_ \_ \_ \_
 
 </dd> <dt>
 
-**\_ \_ \_ \_ \_ Saída de fluxo de fluxo de estado de pipeline CD3DX12 ( \_ saída de fluxo D3D12 \_ \_ desc const &i)**
+**CD3DX12 \_ PIPELINE STATE STREAM STREAM OUTPUT \_ \_ \_ \_ (D3D12 \_ STREAM OUTPUT \_ \_ DESC const &i)**
 </dt> <dd>
 
-Cria uma nova instância de uma saída de fluxo de fluxo de estado de pipeline do CD3DX12 \_ \_ \_ \_ \_ , inicializada com um tipo de subobjeto do tipo de subobjeto do estado do  **pipeline D3D12 de \_ \_ \_ \_ \_ \_ saída de fluxo** e dados de subobjeto copiados de i, uma estrutura [**desc de saída do fluxo de D3D12 \_ \_ \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_stream_output_desc) .
+Cria uma nova instância de uma SAÍDA DE FLUXO DE FLUXO DE ESTADO DE PIPELINE CD3DX12, inicializada com um \_ \_ tipo de \_ \_ \_ subobjeto **D3D12 \_ PIPELINE STATE \_ \_ SUBOBJECT \_ TYPE STREAM \_ \_ OUTPUT** e dados de subobjeto copiados de i , uma estrutura [**D3D12 \_ STREAM OUTPUT \_ \_ DESC.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_stream_output_desc)
 
 </dd> <dt>
 
-**Operator = (D3D12 \_ de \_ saída de fluxo \_ desc const& i)**
+**operator=(D3D12 \_ STREAM \_ OUTPUT \_ DESC const& i)**
 </dt> <dd>
 
 Operador de atribuição de cópia.
 
 </dd> <dt>
 
-**D3D12 \_ do operador \_ \_ de saída de fluxo DESC () const**
+**operador D3D12 \_ STREAM \_ OUTPUT \_ DESC() const**
 </dt> <dd>
 
-Conversão implícita em uma [**estrutura \_ \_ \_ desc de saída de fluxo de D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_stream_output_desc) .
+Conversão implícita em uma [**estrutura D3D12 \_ STREAM OUTPUT \_ \_ DESC.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_stream_output_desc)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-A \_ \_ \_ \_ \_ saída do fluxo de fluxo do estado do pipeline CD3DX12 é uma especialização de TYPEDEF do modelo de [**\_ \_ \_ \_ subobjeto Stream do estado do pipeline CD3DX12**](cd3dx12-pipeline-state-stream-subobject.md) e é definida da seguinte maneira:
+CD3DX12 PIPELINE STATE STREAM OUTPUT é uma especialização typedef do modelo \_ \_ \_ \_ \_ [**\_ \_ \_ \_ SUBOBJECT DE**](cd3dx12-pipeline-state-stream-subobject.md) FLUXO DE ESTADO DO PIPELINE CD3DX12 e é definida da seguinte forma:
 
 
 ```C++
@@ -91,7 +91,7 @@ typedef CD3DX12_PIPELINE_STATE_STREAM_SUBOBJECT<D3D12_STREAM_OUTPUT_DESC, D3D12_
 
 | Requisito | Valor |
 |-------------------|-------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3dx12. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3dx12.h</dt> </dl> |
 
 
 
@@ -102,10 +102,10 @@ typedef CD3DX12_PIPELINE_STATE_STREAM_SUBOBJECT<D3D12_STREAM_OUTPUT_DESC, D3D12_
 [Estruturas auxiliares do D3D12](helper-structures-for-d3d12.md)
 </dt> <dt>
 
-[**Subobjeto de fluxo do estado do \_ pipeline CD3DX12 \_ \_ \_**](cd3dx12-pipeline-state-stream-subobject.md)
+[**CD3DX12 \_ PIPELINE \_ STATE \_ STREAM \_ SUBOBJECT**](cd3dx12-pipeline-state-stream-subobject.md)
 </dt> <dt>
 
-[**\_Tipo de \_ subobjeto de estado de pipeline D3D12 \_ \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_pipeline_state_subobject_type)
+[**TIPO DE \_ \_ \_ SUBOBJETO DE ESTADO DO PIPELINE D3D12 \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_pipeline_state_subobject_type)
 </dt> </dl>
 
  

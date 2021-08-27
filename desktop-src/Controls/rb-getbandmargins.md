@@ -1,9 +1,9 @@
 ---
-title: Mensagem de RB_GETBANDMARGINS (commctrl. h)
+title: RB_GETBANDMARGINS mensagem (Commctrl.h)
 description: Recupera as margens de uma banda.
 ms.assetid: 262f4180-53f9-428f-9360-75b762470270
 keywords:
-- Controles de RB_GETBANDMARGINS de mensagens do Windows
+- RB_GETBANDMARGINS controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 51ab77c057073d9816d1310b1e8cb39fd374956b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7975e843417b8a47d90d011ad9a4b5367abdad2aa096f1a9652ba1cf704ddebf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918780"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120085096"
 ---
-# <a name="rb_getbandmargins-message"></a>\_Mensagem GETBANDMARGINS RB
+# <a name="rb_getbandmargins-message"></a>Mensagem \_ GETBANDMARGINS RB
 
 Recupera as margens de uma banda.
 
@@ -35,18 +35,18 @@ Recupera as margens de uma banda.
 *lParam* 
 </dt> <dd>
 
-Ponteiro para uma estrutura de [**margens**](/windows/desktop/api/Uxtheme/ns-uxtheme-margins) que recebe as margens recuperadas.
+Ponteiro para uma [**estrutura MARGINS**](/windows/desktop/api/Uxtheme/ns-uxtheme-margins) que recebe as margens recuperadas.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno não é usado.
 
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> Para usar essa mensagem, você deve fornecer um manifesto especificando Comclt32.dll versão 6,0. Para obter mais informações sobre manifestos, consulte [habilitando estilos visuais](cookbook-overview.md).
+> Para usar essa mensagem, você deve fornecer um manifesto especificando Comclt32.dll versão 6.0. Para obter mais informações sobre manifestos, consulte [Habilitando estilos visuais.](cookbook-overview.md)
 
  
 
@@ -56,9 +56,9 @@ O valor de retorno não é usado.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

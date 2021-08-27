@@ -4,12 +4,12 @@ ms.assetid: 9c044add-7761-4378-b7eb-bf4e84e913b3
 title: Configurando um nível de segurança para verificações de acesso
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 646a49a4966bff7c593f12cb7481f4a4aad8859e
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 06e912f671a27d35b51939376fa14af3b693c368e3375680913693d364ddf638
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089494"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120120366"
 ---
 # <a name="setting-a-security-level-for-access-checks"></a>Configurando um nível de segurança para verificações de acesso
 

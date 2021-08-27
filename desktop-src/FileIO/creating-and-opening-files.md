@@ -4,133 +4,62 @@ ms.assetid: 094cac29-c66d-409e-8928-878dc693d393
 title: Criando e abrindo arquivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1430675862b10f9e9221d968242481525dc7632f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e80449942fbceb39c37604bf6d8b5410d171d195
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105780989"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122469923"
 ---
 # <a name="creating-and-opening-files"></a>Criando e abrindo arquivos
 
-A função [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) pode criar um novo arquivo ou abrir um arquivo existente. Você deve especificar o nome do arquivo, as instruções de criação e outros atributos. Quando um aplicativo cria um novo arquivo, o sistema operacional o adiciona ao diretório especificado.
+A [**função CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) pode criar um novo arquivo ou abrir um arquivo existente. Você deve especificar o nome do arquivo, as instruções de criação e outros atributos. Quando um aplicativo cria um novo arquivo, o sistema operacional o adiciona ao diretório especificado.
 
-O sistema operacional atribui um identificador exclusivo, chamado de *identificador*, a cada arquivo que é aberto ou criado usando [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea). Um aplicativo pode usar esse identificador com funções que lêem, gravam e descrevem o arquivo. Ele é válido até que todas as referências a esse identificador sejam fechadas. Quando um aplicativo é iniciado, ele herda todos os identificadores abertos do processo que o iniciou se os identificadores foram criados como herdáveis.
+O sistema operacional atribui um identificador exclusivo, chamado de identificador *,* a cada arquivo que é aberto ou criado usando [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea). Um aplicativo pode usar esse handle com funções que leem, escrevem e descrevem o arquivo. Ela é válida até que todas as referências a esse alça sejam fechadas. Quando um aplicativo é iniciado, ele herda todos os alças abertas do processo que o iniciou se os alças foram criados como herdáveis.
 
-Um aplicativo deve verificar o valor do identificador retornado por [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) antes de tentar usar o identificador para acessar o arquivo. Se ocorrer um erro, o valor do identificador será **um \_ \_ valor de identificador inválido** e o aplicativo poderá usar a função [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) para obter informações de erro estendidas.
+Um aplicativo deve verificar o valor do alça retornado por [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) antes de tentar usar o alça para acessar o arquivo. Se ocorrer um erro, o valor do handle será **INVALID \_ HANDLE \_ VALUE** e o aplicativo poderá usar a [**função GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) para obter informações de erro estendidas.
 
-Quando um aplicativo usa [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea), ele deve usar o parâmetro *dwDesiredAccess* para especificar se ele pretende ler a partir do arquivo, gravar no arquivo, ler e gravar ou nenhum deles. Isso é conhecido como solicitação de um *modo de acesso*. O aplicativo também deve usar o parâmetro *dwCreationDisposition* para especificar a ação a ser tomada se o arquivo já existir, conhecido como a *disposição de criação*. Por exemplo, um aplicativo pode chamar **CreateFile** com *DwCreationDisposition* definido para **criar \_ sempre** para sempre criar um novo arquivo, mesmo que já exista um arquivo com o mesmo nome (substituindo assim o arquivo existente). Se isso é bem sucedido ou não depende de fatores como os atributos do arquivo anterior e as configurações de segurança (consulte as seções a seguir para obter mais informações).
+Quando um aplicativo usa [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea), ele deve usar o parâmetro *dwDesiredAccess* para especificar se ele pretende ler do arquivo, gravar no arquivo, ler e gravar ou não. Isso é conhecido como solicitar um *modo de acesso*. O aplicativo também deve usar o parâmetro *dwCreationDisposition* para especificar qual ação deve ser tomada se o arquivo já existir, conhecido como a disposição *de criação*. Por exemplo, um aplicativo pode chamar **CreateFile** com *dwCreationDisposition* definido como **CREATE \_ ALWAYS** para sempre criar um novo arquivo, mesmo se já existir um arquivo com o mesmo nome (assim, sobrescrever o arquivo existente). Se isso for bem-sucedido ou não dependerá de fatores como atributos e configurações de segurança do arquivo anterior (consulte as seções a seguir para obter mais informações).
 
-Um aplicativo também usa [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) para especificar se deseja compartilhar o arquivo para leitura, gravação, ambos ou nenhum. Isso é conhecido como o *modo de compartilhamento*. Um arquivo aberto que não é compartilhado (*dwShareMode* definido como zero) não pode ser aberto novamente, seja pelo aplicativo que o abriu ou por outro aplicativo, até que seu identificador tenha sido fechado. Isso também é conhecido como acesso exclusivo.
+Um aplicativo também usa [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) para especificar se deseja compartilhar o arquivo para leitura, escrita, ambos ou nenhum deles. Isso é conhecido como o modo *de compartilhamento*. Um arquivo aberto que não é compartilhado (*dwShareMode* definido como zero) não pode ser aberto novamente, seja pelo aplicativo que o abriu ou por outro aplicativo, até que seu handle tenha sido fechado. Isso também é conhecido como acesso exclusivo.
 
-Quando um processo usa [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) para tentar abrir um arquivo que já foi aberto em um modo de compartilhamento (*dwShareMode* definido como um valor válido de zero), o sistema compara os modos de acesso e compartilhamento solicitados àqueles especificados quando o arquivo foi aberto. Se você especificar um modo de compartilhamento ou acesso que esteja em conflito com os modos especificados na chamada anterior, **CreateFile** falhará.
+Quando um processo usa [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) para tentar abrir um arquivo que já foi aberto em um modo de compartilhamento (*dwShareMode* definido como um valor não zero válido), o sistema compara os modos de acesso e compartilhamento solicitados com aqueles especificados quando o arquivo foi aberto. Se você especificar um modo de acesso ou compartilhamento que entre em conflito com os modos especificados na chamada anterior, **CreateFile** falhará.
 
-A tabela a seguir ilustra as combinações válidas de duas chamadas para [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) usando vários modos de acesso e modos de compartilhamento (*dwDesiredAccess*, *dwShareMode* , respectivamente). Não importa em que ordem as chamadas **CreateFile** são feitas. No entanto, todas as operações de e/s de arquivo subsequentes em cada identificador de arquivo ainda serão restritas pelos modos de acesso e compartilhamento atuais associados a esse identificador de arquivo específico.
+A tabela a seguir ilustra as combinações válidas de duas chamadas para [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) usando vários modos de acesso e modos de compartilhamento (*dwDesiredAccess*, *dwShareMode,* respectivamente). Não importa em qual ordem as **chamadas CreateFile** são feitas. No entanto, quaisquer operações de E/S de arquivo subsequentes em cada alça de arquivo ainda serão restritas pelos modos atuais de acesso e compartilhamento associados a esse determinado alça de arquivo.
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Primeira chamada para <a href="/windows/desktop/api/FileAPI/nf-fileapi-createfilea"> <strong>CreateFile</strong></a></th>
-<th>Segunda chamada válida para <a href="/windows/desktop/api/FileAPI/nf-fileapi-createfilea"> <strong>CreateFile</strong></a></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>GENERIC_READ</strong>, <strong>FILE_SHARE_READ</strong><br/></td>
-<td><ul>
-<li><strong>GENERIC_READ</strong>, <strong>FILE_SHARE_READ</strong></li>
-<li><strong>GENERIC_READ</strong>, <strong>FILE_SHARE_READ</strong>  |  <strong>FILE_SHARE_WRITE</strong></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><strong>GENERIC_READ</strong>, <strong>FILE_SHARE_WRITE</strong><br/></td>
-<td><ul>
-<li><strong>GENERIC_WRITE</strong>, <strong>FILE_SHARE_READ</strong></li>
-<li><strong>GENERIC_WRITE</strong>, <strong>FILE_SHARE_READ</strong>  |  <strong>FILE_SHARE_WRITE</strong></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><strong>GENERIC_READ</strong>, <strong>FILE_SHARE_READ</strong>  |  <strong>FILE_SHARE_WRITE</strong><br/></td>
-<td><ul>
-<li><strong>GENERIC_READ</strong>, <strong>FILE_SHARE_READ</strong></li>
-<li><strong>GENERIC_READ</strong>, <strong>FILE_SHARE_READ</strong>  |  <strong>FILE_SHARE_WRITE</strong></li>
-<li><strong>GENERIC_WRITE</strong>, <strong>FILE_SHARE_READ</strong></li>
-<li><strong>GENERIC_WRITE</strong>, <strong>FILE_SHARE_READ</strong>  |  <strong>FILE_SHARE_WRITE</strong></li>
-<li><strong>GENERIC_READ</strong>  |  <strong>GENERIC_WRITE</strong>, <strong>FILE_SHARE_READ</strong></li>
-<li><strong>GENERIC_READ</strong>  |  <strong>GENERIC_WRITE</strong>, <strong>FILE_SHARE_READ</strong>  |  <strong>FILE_SHARE_WRITE</strong></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><strong>GENERIC_WRITE</strong>, <strong>FILE_SHARE_READ</strong><br/></td>
-<td><ul>
-<li><strong>GENERIC_READ</strong>, <strong>FILE_SHARE_WRITE</strong></li>
-<li><strong>GENERIC_READ</strong>, <strong>FILE_SHARE_READ</strong>  |  <strong>FILE_SHARE_WRITE</strong></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><strong>GENERIC_WRITE</strong>, <strong>FILE_SHARE_WRITE</strong><br/></td>
-<td><ul>
-<li><strong>GENERIC_WRITE</strong>, <strong>FILE_SHARE_WRITE</strong></li>
-<li><strong>GENERIC_WRITE</strong>, <strong>FILE_SHARE_READ</strong>  |  <strong>FILE_SHARE_WRITE</strong></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><strong>GENERIC_WRITE</strong>, <strong>FILE_SHARE_READ</strong>  |  <strong>FILE_SHARE_WRITE</strong><br/></td>
-<td><ul>
-<li><strong>GENERIC_READ</strong>, <strong>FILE_SHARE_WRITE</strong></li>
-<li><strong>GENERIC_READ</strong>, <strong>FILE_SHARE_READ</strong>  |  <strong>FILE_SHARE_WRITE</strong></li>
-<li><strong>GENERIC_WRITE</strong>, <strong>FILE_SHARE_WRITE</strong></li>
-<li><strong>GENERIC_WRITE</strong>, <strong>FILE_SHARE_READ</strong>  |  <strong>FILE_SHARE_WRITE</strong></li>
-<li><strong>GENERIC_READ</strong>  |  <strong>GENERIC_WRITE</strong>, <strong>FILE_SHARE_WRITE</strong></li>
-<li><strong>GENERIC_READ</strong>  |  <strong>GENERIC_WRITE</strong>, <strong>FILE_SHARE_READ</strong>  |  <strong>FILE_SHARE_WRITE</strong></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><strong>GENERIC_READ</strong>  |  <strong>GENERIC_WRITE</strong>, <strong>FILE_SHARE_READ</strong><br/></td>
-<td><ul>
-<li><strong>GENERIC_READ</strong>, <strong>FILE_SHARE_READ</strong>  |  <strong>FILE_SHARE_WRITE</strong></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><strong>GENERIC_READ</strong>  |  <strong>GENERIC_WRITE</strong>, <strong>FILE_SHARE_WRITE</strong><br/></td>
-<td><ul>
-<li><strong>GENERIC_WRITE</strong>, <strong>FILE_SHARE_READ</strong>  |  <strong>FILE_SHARE_WRITE</strong></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><strong>GENERIC_READ</strong>  |  <strong>GENERIC_WRITE</strong>, <strong>FILE_SHARE_READ</strong>  |  <strong>FILE_SHARE_WRITE</strong><br/></td>
-<td><ul>
-<li><strong>GENERIC_READ</strong>, <strong>FILE_SHARE_READ</strong>  |  <strong>FILE_SHARE_WRITE</strong></li>
-<li><strong>GENERIC_WRITE</strong>, <strong>FILE_SHARE_READ</strong>  |  <strong>FILE_SHARE_WRITE</strong></li>
-<li><strong>GENERIC_READ</strong>  |  <strong>GENERIC_WRITE</strong>, <strong>FILE_SHARE_READ</strong>  |  <strong>FILE_SHARE_WRITE</strong></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Primeira chamada para <a href="/windows/desktop/api/FileAPI/nf-fileapi-createfilea"> <strong>CreateFile</strong></a> | Segunda chamada válida para <a href="/windows/desktop/api/FileAPI/nf-fileapi-createfilea"> <strong>CreateFile</strong></a> | 
+|-------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
+| <strong>GENERIC_READ</strong>, <strong>FILE_SHARE_READ</strong><br /> | <ul><li><strong>GENERIC_READ</strong>, <strong>FILE_SHARE_READ</strong></li><li><strong>GENERIC_READ</strong>, <strong>FILE_SHARE_READ</strong> | <strong>FILE_SHARE_WRITE</strong></li></ul> | 
+| <strong>GENERIC_READ</strong>, <strong>FILE_SHARE_WRITE</strong><br /> | <ul><li><strong>GENERIC_WRITE</strong>, <strong>FILE_SHARE_READ</strong></li><li><strong>GENERIC_WRITE</strong>, <strong>FILE_SHARE_READ</strong> | <strong>FILE_SHARE_WRITE</strong></li></ul> | 
+| <strong>GENERIC_READ</strong>, <strong>FILE_SHARE_READ</strong> | <strong>FILE_SHARE_WRITE</strong><br /> | <ul><li><strong>GENERIC_READ</strong>, <strong>FILE_SHARE_READ</strong></li><li><strong>GENERIC_READ</strong>, <strong>FILE_SHARE_READ</strong> | <strong>FILE_SHARE_WRITE</strong></li><li><strong>GENERIC_WRITE</strong>, <strong>FILE_SHARE_READ</strong></li><li><strong>GENERIC_WRITE</strong>, <strong>FILE_SHARE_READ</strong> | <strong>FILE_SHARE_WRITE</strong></li><li><strong>GENERIC_READ</strong> | <strong>GENERIC_WRITE</strong>, <strong>FILE_SHARE_READ</strong></li><li><strong>GENERIC_READ</strong> | <strong>GENERIC_WRITE</strong>, <strong>FILE_SHARE_READ</strong> | <strong>FILE_SHARE_WRITE</strong></li></ul> | 
+| <strong>GENERIC_WRITE</strong>, <strong>FILE_SHARE_READ</strong><br /> | <ul><li><strong>GENERIC_READ</strong>, <strong>FILE_SHARE_WRITE</strong></li><li><strong>GENERIC_READ</strong>, <strong>FILE_SHARE_READ</strong> | <strong>FILE_SHARE_WRITE</strong></li></ul> | 
+| <strong>GENERIC_WRITE</strong>, <strong>FILE_SHARE_WRITE</strong><br /> | <ul><li><strong>GENERIC_WRITE</strong>, <strong>FILE_SHARE_WRITE</strong></li><li><strong>GENERIC_WRITE</strong>, <strong>FILE_SHARE_READ</strong> | <strong>FILE_SHARE_WRITE</strong></li></ul> | 
+| <strong>GENERIC_WRITE</strong>, <strong>FILE_SHARE_READ</strong> | <strong>FILE_SHARE_WRITE</strong><br /> | <ul><li><strong>GENERIC_READ</strong>, <strong>FILE_SHARE_WRITE</strong></li><li><strong>GENERIC_READ</strong>, <strong>FILE_SHARE_READ</strong> | <strong>FILE_SHARE_WRITE</strong></li><li><strong>GENERIC_WRITE</strong>, <strong>FILE_SHARE_WRITE</strong></li><li><strong>GENERIC_WRITE</strong>, <strong>FILE_SHARE_READ</strong> | <strong>FILE_SHARE_WRITE</strong></li><li><strong>GENERIC_READ</strong> | <strong>GENERIC_WRITE</strong>, <strong>FILE_SHARE_WRITE</strong></li><li><strong>GENERIC_READ</strong> | <strong>GENERIC_WRITE</strong>, <strong>FILE_SHARE_READ</strong> | <strong>FILE_SHARE_WRITE</strong></li></ul> | 
+| <strong>GENERIC_READ</strong> | <strong>GENERIC_WRITE</strong>, <strong>FILE_SHARE_READ</strong><br /> | <ul><li><strong>GENERIC_READ</strong>, <strong>FILE_SHARE_READ</strong> | <strong>FILE_SHARE_WRITE</strong></li></ul> | 
+| <strong>GENERIC_READ</strong> | <strong>GENERIC_WRITE</strong>, <strong>FILE_SHARE_WRITE</strong><br /> | <ul><li><strong>GENERIC_WRITE</strong>, <strong>FILE_SHARE_READ</strong> | <strong>FILE_SHARE_WRITE</strong></li></ul> | 
+| <strong>GENERIC_READ</strong> | <strong>GENERIC_WRITE</strong>, <strong>FILE_SHARE_READ</strong> | <strong>FILE_SHARE_WRITE</strong><br /> | <ul><li><strong>GENERIC_READ</strong>, <strong>FILE_SHARE_READ</strong> | <strong>FILE_SHARE_WRITE</strong></li><li><strong>GENERIC_WRITE</strong>, <strong>FILE_SHARE_READ</strong> | <strong>FILE_SHARE_WRITE</strong></li><li><strong>GENERIC_READ</strong> | <strong>GENERIC_WRITE</strong>, <strong>FILE_SHARE_READ</strong> | <strong>FILE_SHARE_WRITE</strong></li></ul> | 
+
 
 
 
  
 
-Além dos atributos de arquivo padrão, você também pode especificar atributos de segurança, incluindo um ponteiro para uma estrutura de [**\_ atributos de segurança**](/previous-versions/windows/desktop/legacy/aa379560(v=vs.85)) como o quarto parâmetro de [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea). No entanto, o sistema de arquivos subjacente deve dar suporte à segurança para que isso tenha algum efeito (por exemplo, o sistema de arquivos NTFS dá suporte a ele, mas os vários sistemas de arquivos FAT não). Para obter mais informações sobre atributos de segurança, consulte [controle de acesso](/windows/desktop/SecAuthZ/access-control).
+Além dos atributos de arquivo padrão, você também pode especificar atributos de segurança incluindo um ponteiro para uma estrutura [**SECURITY \_ ATTRIBUTES**](/previous-versions/windows/desktop/legacy/aa379560(v=vs.85)) como o quarto parâmetro [**de CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea). No entanto, o sistema de arquivos subjacente deve dar suporte à segurança para que isso tenha algum efeito (por exemplo, o sistema de arquivos NTFS dá suporte a ele, mas os vários sistemas de arquivos FAT não têm). Para obter mais informações sobre atributos de segurança, consulte [Controle de acesso](/windows/desktop/SecAuthZ/access-control).
 
-Um aplicativo que cria um novo arquivo pode fornecer um identificador opcional para um arquivo de modelo, do qual [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) Obtém atributos de arquivo e atributos estendidos para a criação do novo arquivo.
+Um aplicativo que cria um novo arquivo pode fornecer um handle opcional para um arquivo de modelo, do qual [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) recebe atributos de arquivo e atributos estendidos para a criação do novo arquivo.
 
 ## <a name="createfile-scenarios"></a>Cenários de CreateFile
 
-Há vários cenários fundamentais para iniciar o acesso a um arquivo usando a função [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) . Eles são resumidos como:
+Há vários cenários fundamentais para iniciar o acesso a um arquivo usando a [**função CreateFile.**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) Eles são resumidos como:
 
 -   Criar um novo arquivo quando um arquivo com esse nome ainda não existir.
--   Criar um novo arquivo mesmo que já exista um arquivo com o mesmo nome, limpando seus dados e iniciando em branco.
--   Abrir um arquivo existente somente se ele existir e somente intacto.
--   Abrir um arquivo existente somente se ele existir, truncando-o para ficar vazio.
--   Abrindo um arquivo sempre: como está, se ele existir, criar um novo se ele não existir.
+-   Criar um novo arquivo mesmo que já exista um arquivo com o mesmo nome, limpando seus dados e iniciando vazio.
+-   Abrir um arquivo existente somente se ele existir e apenas intacto.
+-   Abrir um arquivo existente somente se ele existir, truncando-o para que ele seja vazio.
+-   Abrir um arquivo sempre: como está se ele existir, criando um novo se ele não existir.
 
 Esses cenários são controlados pelo uso adequado do parâmetro *dwCreationDisposition* . Abaixo está uma análise de como esses cenários são mapeados para valores para esse parâmetro e o que acontece quando eles são usados.
 
@@ -138,16 +67,16 @@ Ao criar ou abrir um novo arquivo quando um arquivo com esse nome ainda não exi
 
 -   Combina os atributos de arquivo e os sinalizadores especificados por *dwFlagsAndAttributes* com o arquivo de **\_ atributo \_ File**.
 -   Define o comprimento do arquivo como zero.
--   Copia os atributos estendidos fornecidos pelo arquivo de modelo para o novo arquivo se o parâmetro *hTemplateFile* for especificado (isso substitui todos os **\_ atributos \_ \* de arquivo* _ sinalizadores especificados anteriormente).
--   Define o sinalizador Inherit especificado pelo membro _ *bInheritHandle** e o descritor de segurança especificado pelo membro **LpSecurityDescriptor** do parâmetro *lpSecurityAttributes* (estrutura [**de \_ atributos de segurança**](/previous-versions/windows/desktop/legacy/aa379560(v=vs.85)) ), se fornecido.
+-   Copia os atributos estendidos fornecidos pelo arquivo de modelo para o novo arquivo se o parâmetro *hTemplateFile* for especificado (isso substitui todos os sinalizadores de **\_ atributo \_ \* de arquivo** especificados anteriormente).
+-   Define o sinalizador de herança especificado pelo membro **bInheritHandle** e o descritor de segurança especificado pelo membro **LpSecurityDescriptor** do parâmetro *lpSecurityAttributes* (estrutura de [**\_ atributos de segurança**](/previous-versions/windows/desktop/legacy/aa379560(v=vs.85)) ), se fornecido.
 
 Ao criar um novo arquivo, mesmo que já exista um arquivo com o mesmo nome (*dwCreationDisposition* definido como **Create \_ Always**), a função [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) executará as seguintes ações:
 
 -   Verifica os atributos de arquivo atuais e as configurações de segurança para acesso de gravação, falhando se negado.
 -   Combina os atributos de arquivo e os sinalizadores especificados por *dwFlagsAndAttributes* com o arquivo de **\_ atributo File \_** e os atributos de arquivo existentes.
 -   Define o comprimento do arquivo como zero (ou seja, quaisquer dados que estavam no arquivo não estão mais disponíveis e o arquivo está vazio).
--   Copia os atributos estendidos fornecidos pelo arquivo de modelo para o novo arquivo se o parâmetro *hTemplateFile* for especificado (isso substitui todos os **\_ atributos \_ \* de arquivo* _ sinalizadores especificados anteriormente).
--   Define o sinalizador Inherit especificado pelo membro _ *bInheritHandle** do parâmetro *lpSecurityAttributes* (estrutura de [**\_ atributos de segurança**](/previous-versions/windows/desktop/legacy/aa379560(v=vs.85)) ), se fornecido, mas ignora o membro **lpSecurityDescriptor** da estrutura **de \_ atributos de segurança** .
+-   Copia os atributos estendidos fornecidos pelo arquivo de modelo para o novo arquivo se o parâmetro *hTemplateFile* for especificado (isso substitui todos os sinalizadores de **\_ atributo \_ \* de arquivo** especificados anteriormente).
+-   Define o sinalizador Inherit especificado pelo membro **bInheritHandle** do parâmetro *lpSecurityAttributes* (estrutura de [**\_ atributos de segurança**](/previous-versions/windows/desktop/legacy/aa379560(v=vs.85)) ), se fornecido, mas ignora o membro **lpSecurityDescriptor** da estrutura **de \_ atributos de segurança** .
 -   Se for bem-sucedida (ou seja, [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) retornar um identificador válido), chamar [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) produzirá o erro de código **\_ já \_ existe**, mesmo que para esse caso de uso específico, na verdade, ele não é um erro como tal (se você pretende criar um arquivo "novo" (vazio) no lugar do existente).
 
 Ao abrir um arquivo existente (*dwCreationDisposition* definido como **abrir \_ existente**, **abrir \_ sempre** ou **truncar o \_ existente**), a função [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) executa as seguintes ações:

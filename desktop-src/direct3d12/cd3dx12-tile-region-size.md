@@ -1,9 +1,9 @@
 ---
-title: Estrutura de CD3DX12_TILE_REGION_SIZE (D3dx12. h)
-description: Uma estrutura auxiliar para habilitar a inicialização fácil de uma \_ estrutura de tamanho de região de bloco do D3D12 \_ \_ .
+title: CD3DX12_TILE_REGION_SIZE (D3dx12.h)
+description: Uma estrutura auxiliar para habilitar a inicialização fácil de uma estrutura D3D12 \_ TILE \_ REGION \_ SIZE.
 ms.assetid: 07D2D8DE-C35C-48EE-8E9E-36545B60C594
 keywords:
-- Estrutura de CD3DX12_TILE_REGION_SIZE
+- CD3DX12_TILE_REGION_SIZE estrutura
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 40f64046f2a7efa32af8b43adbcf7349f43b6ec3
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 9cc1b96ae4d7d33101068a1ba08f0314b99950146e91a352ab49fea714376471
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105810852"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120119606"
 ---
-# <a name="cd3dx12_tile_region_size-structure"></a>\_Estrutura de \_ tamanho da região de bloco do CD3DX12 \_
+# <a name="cd3dx12_tile_region_size-structure"></a>Estrutura CD3DX12 \_ TILE \_ REGION \_ SIZE
 
-Uma estrutura auxiliar para habilitar a inicialização fácil de uma estrutura de [**tamanho de região de bloco do D3D12 \_ \_ \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tile_region_size) .
+Uma estrutura auxiliar para habilitar a inicialização fácil de uma [**estrutura D3D12 \_ TILE \_ REGION \_ SIZE.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tile_region_size)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,38 +44,38 @@ struct CD3DX12_TILE_REGION_SIZE  : public D3D12_TILE_REGION_SIZE{
 
 <dl> <dt>
 
-**\_Tamanho da \_ região do bloco CD3DX12 \_ ()**
+**CD3DX12 \_ TAMANHO DA REGIÃO DO \_ \_ TILE()**
 </dt> <dd>
 
-Cria uma nova instância, não inicializada, de um \_ tamanho de região de bloco CD3DX12 \_ \_ .
+Cria uma nova instância, não reinicializada, de um CD3DX12 \_ TILE \_ REGION \_ SIZE.
 
 </dd> <dt>
 
-**\_ \_ tamanho de região de bloco CD3DX12 explícito \_ (const D3D12 \_ tamanho da região do bloco \_ \_ &o)**
+**EXPLICIT CD3DX12 \_ TILE \_ REGION \_ SIZE(const D3D12 \_ TILE \_ REGION SIZE \_ &o)**
 </dt> <dd>
 
-Cria uma nova instância de um \_ tamanho de região de bloco CD3DX12 \_ \_ , inicializada com o conteúdo de outra estrutura de tamanho de [**\_ região de bloco \_ \_ D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tile_region_size) .
+Cria uma nova instância de um TAMANHO DA REGIÃO DE UM TILE CD3DX12, inicializado com o conteúdo de outra estrutura \_ \_ \_ [**D3D12 TAMANHO DA REGIÃO \_ \_ \_ DO TILE.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tile_region_size)
 
 </dd> <dt>
 
-**\_Tamanho da \_ região de bloco CD3DX12 \_ (UINT NumTiles, bool useBox, largura de uint, altura de UInt16, profundidade de UInt16)**
+**CD3DX12 TAMANHO DA REGIÃO DO \_ TILE \_ \_ (uint numTiles, bool useBox, largura UINT, altura UINT16, profundidade UINT16)**
 </dt> <dd>
 
-Cria uma nova instância de um \_ tamanho de região de bloco CD3DX12 \_ \_ , inicializando os seguintes parâmetros:
+Cria uma nova instância de um CD3DX12 \_ TILE \_ REGION \_ SIZE, inicializando os seguintes parâmetros:
 
 NumTiles UINT
 
-UseBox BOOL
+BOOL useBox
 
-Largura de UINT
+Largura UINT
 
-Altura de UINT16
+Altura UINT16
 
-Profundidade de UINT16
+Profundidade UINT16
 
 </dd> <dt>
 
-**const D3D12 \_ tamanho da \_ região \_ de bloco do operador& () constante**
+**operator const D3D12 \_ TILE \_ REGION SIZE \_&() const**
 </dt> <dd>
 
 Define o & operador de passagem por referência para o tipo de estrutura pai.
@@ -88,7 +88,7 @@ Define o & operador de passagem por referência para o tipo de estrutura pai.
 
 | Requisito | Valor |
 |-------------------|-------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3dx12. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3dx12.h</dt> </dl> |
 
 
 
@@ -96,7 +96,7 @@ Define o & operador de passagem por referência para o tipo de estrutura pai.
 
 <dl> <dt>
 
-[**\_Tamanho da \_ região do bloco D3D12 \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tile_region_size)
+[**TAMANHO DA REGIÃO DO TILE D3D12 \_ \_ \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tile_region_size)
 </dt> <dt>
 
 [Estruturas auxiliares do D3D12](helper-structures-for-d3d12.md)

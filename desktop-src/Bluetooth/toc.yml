@@ -1,7 +1,7 @@
 - name: Bluetooth
   href: bluetooth-start-page.md
   items:
-    - name: Sobre o Bluetooth
+    - name: Sobre Bluetooth
       href: about-bluetooth.md
       items:
         - name: Suporte do Windows Sockets para Bluetooth
@@ -9,22 +9,22 @@
           items:
             - name: Descobrir dispositivos e serviços Bluetooth
               href: discovering-bluetooth-devices-and-services.md
-        - name: Gerenciando dispositivos e serviços Bluetooth
+        - name: Gerenciando Bluetooth serviços e dispositivos
           href: managing-bluetooth-devices-and-services.md
           items:
-            - name: Selecionando um dispositivo Bluetooth
+            - name: Selecionando um Bluetooth dispositivo
               href: selecting-a-bluetooth-device.md
-            - name: Mensagens de WM_DEVICECHANGE e Bluetooth
+            - name: Bluetooth e WM_DEVICECHANGE mensagens
               href: bluetooth-and-wm-devicechange-messages.md
     - name: Usando Bluetooth
       href: using-bluetooth.md
       items:
-        - name: Programação de Bluetooth com Windows Sockets
+        - name: Bluetooth Programação com Windows soquetes
           href: bluetooth-programming-with-windows-sockets.md
           items:
             - name: Bluetooth e aceitar
               href: bluetooth-and-accept.md
-            - name: Bluetooth e ligar
+            - name: Bluetooth e bind
               href: bluetooth-and-bind.md
             - name: Bluetooth e BLOB
               href: bluetooth-and-blob.md
@@ -32,23 +32,23 @@
               href: bluetooth-and-connect.md
             - name: Bluetooth e getaddrinfo
               href: bluetooth-and-getaddrinfo.md
-            - name: Bluetooth e getemparelhaname
+            - name: Bluetooth getpeername
               href: bluetooth-and-getpeername.md
             - name: Bluetooth e getsockname
               href: bluetooth-and-getsockname.md
             - name: Bluetooth e getsockopt
               href: bluetooth-and-getsockopt.md
-            - name: 'Bluetooth e escutar, selecionar e fechamento'
+            - name: 'Bluetooth e escutar, selecionar e fechar oocket'
               href: bluetooth-and-listen-select-and-closesocket.md
-            - name: Operações de leitura ou gravação de Bluetooth
+            - name: Bluetooth operações de leitura ou gravação
               href: bluetooth-and-read-or-write-operations.md
             - name: Bluetooth e setsockopt
               href: bluetooth-and-setsockopt.md
-            - name: Bluetooth e desligar
+            - name: Bluetooth e desligamento
               href: bluetooth-and-shutdown.md
-            - name: Bluetooth e soquete
+            - name: Bluetooth soquete
               href: bluetooth-and-socket.md
-            - name: Opções de Bluetooth e soquete
+            - name: Bluetooth e opções de soquete
               href: bluetooth-and-socket-options.md
             - name: Bluetooth e WSAAddressToString
               href: bluetooth-and-wsaaddresstostring.md
@@ -57,7 +57,7 @@
               items:
                 - name: Bluetooth e WSALookupServiceBegin para consulta de dispositivo
                   href: bluetooth-and-wsalookupservicebegin-for-device-inquiry.md
-                - name: Bluetooth e WSALookupServiceBegin para descoberta de serviço
+                - name: Bluetooth e WSALookupServiceBegin para Descoberta de Serviço
                   href: bluetooth-and-wsalookupservicebegin-for-service-discovery.md
             - name: Bluetooth e WSALookupServiceEnd
               href: bluetooth-and-wsalookupserviceend.md
@@ -70,14 +70,14 @@
                   href: bluetooth-and-wsaqueryset-for-device-inquiry.md
                 - name: Bluetooth e WSAQUERYSET para consulta de serviço
                   href: bluetooth-and-wsaqueryset-for-service-inquiry.md
-                - name: Bluetooth e WSAQUERYSET para o serviço set
+                - name: Bluetooth e WSAQUERYSET para Definir Serviço
                   href: bluetooth-and-wsaqueryset-for-set-service.md
             - name: Bluetooth e WSASetService
               href: bluetooth-and-wsasetservice.md
-    - name: Referência de Bluetooth
+    - name: Bluetooth Referência
       href: bluetooth-reference.md
       items:
-        - name: Retornos de chamada Bluetooth
+        - name: Bluetooth Retornos
           href: bluetooth-callbacks.md
           items:
             - name: PFN_AUTHENTICATION_CALLBACK
@@ -88,7 +88,7 @@
               href: /windows/desktop/api/BluetoothAPIs/nc-bluetoothapis-pfn_bluetooth_enum_attributes_callback
             - name: PFN_DEVICE_CALLBACK
               href: /windows/desktop/api/BluetoothAPIs/nc-bluetoothapis-pfn_device_callback
-        - name: Enumerações Bluetooth
+        - name: Bluetooth Enumerações
           href: bluetooth-enumerations.md
           items:
             - name: BLUETOOTH_AUTHENTICATION_METHOD
@@ -97,7 +97,7 @@
               href: /windows/win32/api/BluetoothAPIs/ne-bluetoothapis-bluetooth_authentication_requirements
             - name: BLUETOOTH_IO_CAPABILITY
               href: /windows/win32/api/BluetoothAPIs/ne-bluetoothapis-bluetooth_io_capability
-        - name: Funções de Bluetooth
+        - name: Bluetooth Funções
           href: bluetooth-functions.md
           items:
             - name: BluetoothAuthenticateDevice
@@ -168,7 +168,7 @@
               href: /windows/desktop/api/BluetoothAPIs/nf-bluetoothapis-bluetoothunregisterauthentication
             - name: BluetoothUpdateDeviceRecord
               href: /windows/desktop/api/BluetoothAPIs/nf-bluetoothapis-bluetoothupdatedevicerecord
-        - name: Estruturas Bluetooth
+        - name: Bluetooth Estruturas
           href: bluetooth-structures.md
           items:
             - name: BLUETOOTH_ADDRESS

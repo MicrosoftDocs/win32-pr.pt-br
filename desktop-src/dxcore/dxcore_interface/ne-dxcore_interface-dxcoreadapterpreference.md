@@ -4,18 +4,18 @@ description: Define constantes que especificam as preferências do adaptador DXC
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 09/03/2019
-ms.openlocfilehash: 4301bdc1fe0ece8d9594ec3287e2ea8ddcce8f0a
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: a58f2c948751d5217a89e52bc862057ac6a67c85bdf2fabed96c2b5ad68364cc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366442"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120117726"
 ---
-# <a name="dxcoreadapterpreference-enum"></a>DXCoreAdapterPreference enum
+# <a name="dxcoreadapterpreference-enum"></a>Enum DXCoreAdapterPreference
 
 ## <a name="description"></a>Descrição
 
-Define constantes que especificam as preferências do adaptador DXCore a serem usadas como critérios de classificação de lista. Você pode classificar uma lista de adaptadores DXCore passando uma matriz de **DXCoreAdapterPreference** para [IDXCoreAdapterList:: Sort](./nf-dxcore_interface-idxcoreadapterlist-sort.md).
+Define constantes que especificam as preferências do adaptador DXCore a serem usadas como critérios de classificação de lista. Você pode classificar uma lista de adaptadores DXCore passando uma matriz **de DXCoreAdapterPreference** para [IDXCoreAdapterList::Sort](./nf-dxcore_interface-idxcoreadapterlist-sort.md).
 
 ## <a name="syntax"></a>Syntax
 
@@ -28,20 +28,20 @@ enum class DXCoreAdapterPreference : uint32_t
 };
 ```
 
-## <a name="enum-fields"></a>Campos de enumeração
+## <a name="enum-fields"></a>Campos de enum
 
 ### <a name="hardware"></a>Hardware
 
-Especifica uma preferência para adaptadores de hardware (em oposição aos adaptadores de software).
+Especifica uma preferência para adaptadores de hardware (em vez de adaptadores de software).
 
 ### <a name="minimumpower"></a>MinimumPower
 
-Especifica uma preferência para a GPU com capacidade mínima (como um processador gráfico integrado ou iGPU).
+Especifica uma preferência para a GPU de potência mínima (como um processador gráfico integrado ou iGPU).
 
 ### <a name="highperformance"></a>HighPerformance
 
-Especifica uma preferência para a GPU de alto desempenho, como um processador gráfico externo (xGPU), se disponível, ou dGPU (processador gráfico discreto), se disponível.
+Especifica uma preferência para a GPU de alto desempenho, como um xGPU (processador gráfico externo), se disponível, ou dGPU (processador gráfico discreto), se disponível.
 
 ## <a name="see-also"></a>Confira também
 
-[IDXCoreAdapterList:: Sort](./nf-dxcore_interface-idxcoreadapterlist-sort.md), [referência de DXCore](../dxcore-reference.md), [usando DXCore para enumerar adaptadores](../dxcore-enum-adapters.md)
+[IDXCoreAdapterList::Sort](./nf-dxcore_interface-idxcoreadapterlist-sort.md), [DXCore Reference](../dxcore-reference.md), [Using DXCore to enumerate adapters](../dxcore-enum-adapters.md)

@@ -1,23 +1,23 @@
 ---
-title: Resolvedores de DNS
-description: O resolvedor é um componente de software incluído na pilha TCP/IP (protocolo de controle de transmissão) do Windows 2000 que se comunica com os servidores DNS para criar e resolver consultas de resolução de nomes.
+title: Resolvedores dns
+description: O resolvedor é um componente de software agrupado na pilha TCP/IP (protocolo TCP/IP) do Windows 2000 que se comunica com servidores DNS para criar e resolver consultas de resolução de nomes.
 ms.assetid: c0326042-c040-4e20-b411-14426611475b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d9acfa0c4765684604681b0b001993444125e5a6
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 27462376866a0a27bd65bf36bee30e4d67f68043246c2299f9676f9fe333df87
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005705"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120084756"
 ---
-# <a name="dns-resolvers"></a>Resolvedores de DNS
+# <a name="dns-resolvers"></a>Resolvedores dns
 
-O [*resolvedor*](r-gly.md) é um componente de software incluído na pilha TCP/IP (protocolo de controle de transmissão) do Windows 2000 que se comunica com os servidores DNS para criar e resolver consultas de resolução de nomes. O pacote também está disponível em qualquer cliente não Microsoft compatível com o DNS. Os resolvedores existem em clientes DNS e servidores DNS.
+O [](r-gly.md) resolvedor é um componente de software agrupado na pilha TCP/IP (protocolo TCP/IP) do Windows 2000 que se comunica com servidores DNS para criar e resolver consultas de resolução de nomes. O pacote também está disponível em qualquer cliente que não seja da Microsoft com capacidade de DNS. Os resolvedores existem em clientes DNS e servidores DNS.
 
- 
+ 
 
- 
+ 
 
 
 

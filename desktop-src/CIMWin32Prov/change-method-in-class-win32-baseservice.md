@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: a70ee83229a830e22fba4241a6c50eb8d971c5ad
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 306f771df0e44cb11ec61631b2d6b51f11ccefac9a719776d3a483d5cc861133
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089410"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120085826"
 ---
 # <a name="change-method-of-the-win32_baseservice-class"></a>Método Change da classe Win32 \_ BaseService
 
@@ -186,7 +186,7 @@ O sistema tenta reiniciar com uma configuração adequada.
 *StartMode* \[ no\]
 </dt> <dd>
 
-Modo de início do serviço base do Windows.
+modo de início do serviço base de Windows.
 
 <dt>
 
@@ -294,7 +294,7 @@ Lista que contém os nomes dos serviços que devem ser iniciados antes do iníci
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos valores listados na lista a seguir ou um valor diferente para indicar um erro.
 
@@ -563,7 +563,7 @@ StartPassword = "" // - empty string, not NULL
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
 | Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| parâmetro<br/>                   | <dl> <dt>Mbnapi. h</dt> </dl>     |
+| Cabeçalho<br/>                   | <dl> <dt>Mbnapi. h</dt> </dl>     |
 | MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 

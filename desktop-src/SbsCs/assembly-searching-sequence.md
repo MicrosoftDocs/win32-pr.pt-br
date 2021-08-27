@@ -4,12 +4,12 @@ ms.assetid: 93496631-55cc-4dd9-9a51-b748c35fd477
 title: Sequência de pesquisa de assembly
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dc689ecb14c55f0e8a609c7e7497fce969e88b8e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 983466954d6cb9619d3fb0595c96f81fed7c9b73a29bfbf2f609b3f14203a957
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011252"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120127536"
 ---
 # <a name="assembly-searching-sequence"></a>Sequência de pesquisa de assembly
 
@@ -38,7 +38,7 @@ Se uma subpasta específica a um idioma existir, a estrutura de diretório do ap
 4.  \\\\< > \\ appdir < *idioma-cultura* > \\ <  > \\ AssemblyName < *AssemblyName* # C0.DLL
 5.  \\\\< > \\ appdir < *idioma-cultura* > \\ <  > \\ AssemblyName < *assemblyname*>. manifest
 
-Observe que a sequência de pesquisa lado a lado localiza um arquivo DLL com o nome do assembly e para de antes de procurar um arquivo de manifesto com o nome do assembly. A maneira recomendada para lidar com um assembly privado que é uma DLL é colocar o manifesto do assembly no arquivo DLL como um recurso. A ID do recurso deve ser igual a 1 e o nome do assembly privado pode ser o mesmo que o nome da DLL. Por exemplo, se o nome da DLL for MICROSOFT.WINDOWS.MYSAMPLE.DLL, o valor do atributo name usado no elemento **AssemblyIdentity** do manifesto do assembly também poderá ser Microsoft. Windows. MySample. Como alternativa, você pode colocar o manifesto do assembly em um arquivo separado, no entanto, o nome do assembly e seu manifesto devem ser diferentes do nome da DLL. Por exemplo, Microsoft. Windows. mysampleAsm, Microsoft. Windows. mysampleAsm. manifest e MICROSOFT.WINDOWS.MYSAMPLE.DLL.
+Observe que a sequência de pesquisa lado a lado localiza um arquivo DLL com o nome do assembly e para de antes de procurar um arquivo de manifesto com o nome do assembly. A maneira recomendada para lidar com um assembly privado que é uma DLL é colocar o manifesto do assembly no arquivo DLL como um recurso. A ID do recurso deve ser igual a 1 e o nome do assembly privado pode ser o mesmo que o nome da DLL. Por exemplo, se o nome da DLL for MICROSOFT.WINDOWS.MYSAMPLE.DLL, o valor do atributo name usado no elemento **AssemblyIdentity** do manifesto do assembly também poderá ser Microsoft. Windows. mysample. Como alternativa, você pode colocar o manifesto do assembly em um arquivo separado, no entanto, o nome do assembly e seu manifesto devem ser diferentes do nome da DLL. Por exemplo, Microsoft. Windows. mysampleAsm, Microsoft. Windows. mysampleAsm. manifest e MICROSOFT.WINDOWS.MYSAMPLE.DLL.
 
 Por exemplo, se MyApp estiver instalado na raiz da unidade c: e exigir MyAsm em francês-belga, lado a lado usa a seguinte sequência para pesquisar a melhor aproximação em uma instância localizada do MyAsm.
 
@@ -68,7 +68,7 @@ Por exemplo, se MyApp estiver instalado na raiz da unidade c: e exigir MyAsm em 
 24. c: \\ MyApp \\ MyAsm \\myasm.dll
 25. c: \\ MyApp \\ MyAsm \\ MyAsm. manifest
 
-Se a pesquisa lado a lado atingir uma versão neutra de idioma do assembly, e uma versão [MUI (interface do usuário multilíngüe)](/windows/desktop/Intl/multilingual-user-interface) do Windows estiver presente no sistema, lado a lado, tentará se associar a <*AssemblyName*>. mui. Lado a lado não tenta se associar a <*assemblyname*>. mui se a pesquisa atingir uma versão localizada do assembly. O [manifesto do assembly](assembly-manifests.md) de um assembly com neutralidade de idioma não terá um atributo de linguagem em seu elemento **AssemblyIdentity** . Se o lado a lado atingir um assembly com neutralidade de idioma e o MUI estiver instalado, o lado a lado pesquisará os seguintes locais usando a sequência a seguir para <*assemblyname*>. mui. Lado a lado usa a mesma sequência de pesquisa se o assembly for de cultura neutra, exceto <*nenhum idioma*> não for pesquisado.
+se a pesquisa lado a lado atingir uma versão neutra de idioma do assembly e uma versão [MUI (Interface do usuário multilíngüe)](/windows/desktop/Intl/multilingual-user-interface) do Windows estiver presente no sistema, lado a lado, tentará se associar a <*assemblyname*>. MUI. Lado a lado não tenta se associar a <*assemblyname*>. mui se a pesquisa atingir uma versão localizada do assembly. O [manifesto do assembly](assembly-manifests.md) de um assembly com neutralidade de idioma não terá um atributo de linguagem em seu elemento **AssemblyIdentity** . Se o lado a lado atingir um assembly com neutralidade de idioma e o MUI estiver instalado, o lado a lado pesquisará os seguintes locais usando a sequência a seguir para <*assemblyname*>. mui. Lado a lado usa a mesma sequência de pesquisa se o assembly for de cultura neutra, exceto <*nenhum idioma*> não for pesquisado.
 
 1.  O lado a lado pesquisa a pasta WinSxS para <*assemblyname*>. mui.
 2.  \\\\<cultura do idioma *do usuário* > \\ < *assemblyname*>. mui

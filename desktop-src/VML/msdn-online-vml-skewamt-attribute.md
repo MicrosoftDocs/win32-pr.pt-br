@@ -1,26 +1,26 @@
 ---
-title: Atributo SkewAmt de VML
-description: Atributo SkewAmt de VML
+title: Atributo SkewAmt VML
+description: Atributo SkewAmt VML
 ms.assetid: ea685ea7-0853-4bcf-8ff2-39b714091429
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f75e469492ccc15b0ef3a03beffed05a5b2b1031
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 3689969a804c8f27602ce414012e35acd78af8e158c274d1508b807dc1871856
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103917339"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120098996"
 ---
-# <a name="vml-skewamt-attribute"></a>Atributo SkewAmt de VML
+# <a name="vml-skewamt-attribute"></a>Atributo SkewAmt VML
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Define a quantidade de distorção de uma extrusão. Leitura/gravação. **VgPercent**.
+Define a quantidade de distorção de umaion. Leitura/gravação. **VgPercent.**
 
 **Aplica-se a**
 
@@ -28,20 +28,20 @@ Define a quantidade de distorção de uma extrusão. Leitura/gravação. **VgPer
 
 **Sintaxe de marca**
 
-<o: *Element* skewamt = " *expressão* " >
+<o: *expressão de elemento* skewamt=" "> 
 
 **Sintaxe do script**
 
-*Element* . skewamt = "*expressão*"
+*expressão* element .skewamt=""
 
-*expressão* = de *elemento*. skewamt
+*expressão* = *elemento*.skewamt
 
 **Comentários**
 
-Aplica-se a uma extrusão somente se o valor do atributo [tipo](type-attribute--extrusion--vml.md) de extrusão for *paralelo*. O valor padrão é 50%.
+Aplica-se a uma digitação somente se o valor do atributo [Type](type-attribute--extrusion--vml.md) de digitação for *paralelo.* O valor padrão é 50%.
 
-*Atributo de extensões de Microsoft Office*
+*Microsoft Office Atributo Extensions*
 
- 
+ 
 
- 
+ 

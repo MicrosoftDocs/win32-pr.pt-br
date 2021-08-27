@@ -6,12 +6,12 @@ keywords:
 - D2D1_TAG
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aacd11aa016e64ed463f1809595c865ae7e1f124
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b3dbea9f7c86f08a1c3c5df22b419bc5800db473aceed9f9a682a9d2e346a6a1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104294799"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120108866"
 ---
 # <a name="d2d1_tag"></a>Marca de D2D1 \_
 
@@ -34,10 +34,10 @@ Para definir uma marca antes de uma série de operações de renderização, use
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 7, Windows Vista com SP2 e atualização de plataforma para aplicativos UWP do Windows Vista \[ Desktop apps \|\]<br/>                          |
-| Servidor mínimo com suporte<br/> | Windows Server 2008 R2, Windows Server 2008 com SP2 e atualização de plataforma para aplicativos de aplicativos de desktop do Windows Server 2008 \[ \| UWP\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows 7, Windows vista com SP2 e atualização de plataforma para aplicativos UWP do Windows Vista \[ desktop apps \|\]<br/>                          |
+| Servidor mínimo com suporte<br/> | Windows server 2008 R2, Windows Server 2008 com SP2 e atualização de plataforma para aplicativos do Windows Server 2008 \[ desktop aplicativos \| UWP\]<br/> |
 | Número mínimo de telefone com suporte<br/>  | Windows Phone 8,1 \[ Windows Phone Silverlight 8,1 e aplicativos de Windows Runtime\]<br/>                                                  |
-| parâmetro<br/>                   | <dl> <dt>D2d1. h</dt> </dl>                                                        |
+| Cabeçalho<br/>                   | <dl> <dt>D2d1. h</dt> </dl>                                                        |
 
 
 

@@ -1,23 +1,23 @@
 ---
-description: A tabela MsiAssembly e a tabela MsiAssemblyName especificam Windows Installer configurações para assemblies de Common Language Runtime e assemblies do Win32.
+description: a tabela MsiAssembly e a tabela MsiAssemblyName especificam Windows Installer configurações para assemblies de Common Language Runtime e assemblies do Win32.
 ms.assetid: cfe9a0a3-e40f-4c59-b2e4-ad7654528e3b
 title: Tabela MsiAssemblyName
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 12008682c82d7be20ed8713d8dc1c416f9c7065c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b62c494f9669ad2c119606f3950a0ec34b6bfd6ba78ad7a965c45398a71ebafe
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105783268"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120129246"
 ---
 # <a name="msiassemblyname-table"></a>Tabela MsiAssemblyName
 
-A tabela [MsiAssembly](msiassembly-table.md) e a tabela MsiAssemblyName especificam Windows Installer configurações para assemblies de Common Language Runtime e assemblies do Win32. Para obter informações, consulte [instalação de assemblies no cache de assembly global](installation-of-assemblies-to-the-global-assembly-cache.md) e [instalação de assemblies do Win32](installation-of-win32-assemblies.md).
+a tabela [MsiAssembly](msiassembly-table.md) e a tabela MsiAssemblyName especificam Windows Installer configurações para assemblies de Common Language Runtime e assemblies do Win32. Para obter informações, consulte [instalação de assemblies no cache de assembly global](installation-of-assemblies-to-the-global-assembly-cache.md) e [instalação de assemblies do Win32](installation-of-win32-assemblies.md).
 
-A tabela MsiAssemblyName especifica o esquema para os elementos de um nome de cache de assembly forte para um assembly .NET Framework ou Win32. O nome é construído acrescentando todos os elementos com a mesma chave de componente \_ . Veja o exemplo a seguir.
+a tabela MsiAssemblyName especifica o esquema para os elementos de um nome de cache de assembly forte para um assembly .NET Framework ou Win32. O nome é construído acrescentando todos os elementos com a mesma chave de componente \_ . Veja o exemplo a seguir.
 
-Windows Installer pode instalar assemblies do Win32 como [assemblies lado a lado](side-by-side-assemblies.md). Para obter mais informações, consulte a [API do assembly lado a lado](../sbscs/side-by-side-assembly-api.md).
+Windows O instalador pode instalar assemblies do Win32 como [assemblies lado a lado](side-by-side-assemblies.md). Para obter mais informações, consulte a [API do assembly lado a lado](../sbscs/side-by-side-assembly-api.md).
 
 A tabela MsiAssemblyName tem as colunas a seguir.
 
@@ -25,8 +25,8 @@ A tabela MsiAssemblyName tem as colunas a seguir.
 
 | Coluna      | Tipo                         | Chave | Nullable |
 |-------------|------------------------------|-----|----------|
-| Componente\_ | [Identificador](identifier.md) | S   | N        |
-| Nome        | [Text](text.md)             | S   | N        |
+| Componente\_ | [Identificador](identifier.md) | Y   | N        |
+| Nome        | [Text](text.md)             | Y   | N        |
 | Valor       | [Text](text.md)             | N   | N        |
 
 
@@ -40,7 +40,7 @@ A tabela MsiAssemblyName tem as colunas a seguir.
 <span id="Component_"></span><span id="component_"></span><span id="COMPONENT_"></span>Componente\_
 </dt> <dd>
 
-A chave na [tabela de componentes](component-table.md) que especifica o componente de Windows Installer que contém esse assembly.
+a chave na [tabela de componentes](component-table.md) que especifica o componente de Windows Installer que contém esse assembly.
 
 </dd> <dt>
 
@@ -66,9 +66,9 @@ Para assemblies do Win32, deve haver uma linha na tabela MsiAssemblyName para ca
 
 Para assemblies de Common Language Runtime privada (.NET Frameworkversions 1,0 e 1,1), a tabela MsiAssemblyName deve incluir uma linha para cada uma das seguintes entradas no campo Nome: nome, versão e cultura. O valor correspondente para cada nome pode ser inserido no campo valor.
 
-Para assemblies de Common Language Runtime global (.NET Framework versões 1,0 e 1,1), a tabela MsiAssemblyName deve incluir uma linha para cada uma das seguintes entradas no campo Nome: nome, versão, cultura e PublicKeyToken. O valor correspondente para cada nome pode ser inserido no campo valor.
+para assemblies de Common Language Runtime global (.NET Framework versões 1,0 e 1,1), a tabela MsiAssemblyName deve incluir uma linha para cada uma das seguintes entradas no campo nome: nome, versão, cultura e PublicKeyToken. O valor correspondente para cada nome pode ser inserido no campo valor.
 
-A versão .NET Framework 1,1 é a versão mínima que pode ser usada para executar uma atualização in-loco de um assembly de Common Language Runtime global. Você pode verificar a propriedade [**MsiNetAssemblySupport**](msinetassemblysupport.md) para a versão. A tabela MsiAssemblyName também deve ter um campo FileVersion porque esse tipo de atualização de assembly altera apenas o FileVersion. Para obter mais informações, consulte [atualizando assemblies](updating-assemblies.md).
+a versão .NET Framework 1,1 é a versão mínima que pode ser usada para executar uma atualização in-loco de um assembly de Common Language Runtime global. Você pode verificar a propriedade [**MsiNetAssemblySupport**](msinetassemblysupport.md) para a versão. A tabela MsiAssemblyName também deve ter um campo FileVersion porque esse tipo de atualização de assembly altera apenas o FileVersion. Para obter mais informações, consulte [atualizando assemblies](updating-assemblies.md).
 
 Por exemplo, o manifesto do assembly para componenteA pode ter uma seção assemblyIdentity da seguinte maneira para um assembly Win32.
 

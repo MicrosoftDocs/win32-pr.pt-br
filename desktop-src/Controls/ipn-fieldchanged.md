@@ -3,7 +3,7 @@ title: IPN_FIELDCHANGED código de notificação (commctrl. h)
 description: Enviado quando o usuário altera um campo no controle ou move de um campo para outro. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
 ms.assetid: f9ca6435-1715-458e-8d0e-475920ed75bd
 keywords:
-- IPN_FIELDCHANGED de código de notificação controles do Windows
+- IPN_FIELDCHANGED código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e283d42d0aba3c237db51fe492a34ec93e8eb73
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 467cf7f14f3ff8d62f85d973e9a9d11c4dc6d20488ad5b7e30b4c0787b4b1a6c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009615"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120085546"
 ---
 # <a name="ipn_fieldchanged-notification-code"></a>\_Código de notificação do campo IPN
 
@@ -45,7 +45,7 @@ Um ponteiro para uma estrutura [**NMIPADDRESS**](/windows/win32/api/commctrl/ns-
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno é ignorado.
 
@@ -59,9 +59,9 @@ Esse código de notificação não é enviado em resposta a uma mensagem de [**\
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

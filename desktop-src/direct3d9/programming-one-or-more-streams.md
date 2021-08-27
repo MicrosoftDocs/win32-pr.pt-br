@@ -1,35 +1,35 @@
 ---
-description: Esta seção descreve os sombreadores que podem ser usados para o modelo de fluxo programável.
+description: Esta seção descreve sombreadores que podem ser usados para o modelo de fluxo programável.
 ms.assetid: 800aaa27-e1e6-4d35-8de4-7ac94d646870
-title: Programando um ou mais fluxos (Direct3D 9)
+title: Programando uma ou mais Fluxos (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 43210823911648ed11227faef44d980b60d0a335
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 92440abfb6e343bdd3440f5608d6446c0390b1271e5c4c6686a3a46e578476ab
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105791052"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120118595"
 ---
-# <a name="programming-one-or-more-streams-direct3d-9"></a>Programando um ou mais fluxos (Direct3D 9)
+# <a name="programming-one-or-more-streams-direct3d-9"></a>Programando uma ou mais Fluxos (Direct3D 9)
 
-Esta seção descreve os sombreadores que podem ser usados para o modelo de fluxo programável.
+Esta seção descreve sombreadores que podem ser usados para o modelo de fluxo programável.
 
-## <a name="using-streams"></a>Usando fluxos
+## <a name="using-streams"></a>Usando Fluxos
 
-O DirectX 8 introduziu a noção de um fluxo para associar dados a registros de entrada para uso por sombreadores. Um fluxo é uma matriz uniforme de dados de componente, onde cada componente consiste em um ou mais elementos que representam uma única entidade, como posição, normal, cor e assim por diante. Os fluxos permitem que os chips gráficos executem um acesso direto à memória a partir de vários buffers de vértice em paralelo e também forneçam um mapeamento mais natural dos dados do aplicativo. Eles também habilitam multitextura trivial versus MultiPASS. Considere o seguinte:
+O DirectX 8 introduziu a noção de um fluxo para vincular dados a registros de entrada para uso por sombreadores. Um fluxo é uma matriz uniforme de dados de componente, em que cada componente consiste em um ou mais elementos que representam uma única entidade, como posição, normal, cor e assim por diante. Fluxos chips gráficos para executar um acesso direto à memória de vários buffers de vértice em paralelo e também fornecer um mapeamento mais natural dos dados do aplicativo. Eles também habilitam multitexture trivial versus multipass. Pense assim:
 
 -   Um vértice é composto por n fluxos.
 -   Um fluxo é composto por elementos m.
--   Um elemento é \[ posição, cor, normal, coordenada de textura \] .
+-   Um elemento é \[ position, color, normal, texture coordinate \] .
 
-O método [**IDirect3DDevice9:: Setstreamname**](/windows/desktop/api) associa um buffer de vértice a um fluxo de dados do dispositivo, criando uma associação entre os dados de vértice e uma das várias portas de fluxo de dados que alimentam as funções de processamento primitivo. As referências reais aos dados de fluxo não ocorrem até que um método de desenho, como [**IDirect3DDevice9::D rawprimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive), seja chamado.
+O [**método IDirect3DDevice9::SetStreamSource**](/windows/desktop/api) associa um buffer de vértice a um fluxo de dados do dispositivo, criando uma associação entre os dados de vértice e uma das várias portas de fluxo de dados que alimentam as funções de processamento primitivas. As referências reais aos dados de fluxo não ocorrem até que um método de desenho, como [**IDirect3DDevice9::D rawPrimitive,**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive)seja chamado.
 
-O mapeamento dos elementos de vértice de entrada para os registros de entrada de vértice para sombreadores de vértice programáveis é definido na declaração de sombreador, mas os elementos de vértice de entrada não têm semântica específica sobre seu uso. A interpretação dos elementos de vértice de entrada é programada usando as instruções do sombreador. A função de sombreador de vértice é definida por uma matriz de instruções que são aplicadas a cada vértice. Os registros de saída de vértice são gravados explicitamente no, usando instruções na função de sombreador.
+O mapeamento dos elementos de vértice de entrada para os registros de entrada de vértice para sombreadores de vértice programáveis é definido na declaração do sombreador, mas os elementos de vértice de entrada não têm semântica específica sobre seu uso. A interpretação dos elementos de vértice de entrada é programada usando as instruções do sombreador. A função de sombreador de vértice é definida por uma matriz de instruções que são aplicadas a cada vértice. Os registros de saída de vértice são gravados explicitamente, usando instruções na função de sombreador.
 
-Para essa discussão, no entanto, esteja menos preocupado com o mapeamento semântico de elementos para registros e mais preocupados com o motivo do uso de fluxos e qual problema é resolvido usando fluxos. O principal benefício dos fluxos é que eles removem os custos de dados de vértice associados anteriormente ao multitexturing. Antes dos fluxos, um usuário tinha que duplicar conjuntos de dados de vértice para manipular o caso único e multitextura sem nenhum elemento de dados não utilizado ou transportar elementos de dados que não seriam usados, exceto no caso multitextura.
+Para essa discussão, no entanto, se preocupe menos com o mapeamento semântico de elementos para registros e mais preocupado com o motivo do uso de fluxos e qual problema é resolvido usando fluxos. O principal benefício dos fluxos é que eles removem os custos de dados de vértice associados anteriormente à multitextagem. Antes dos fluxos, um usuário precisava duplicar conjuntos de dados de vértice para lidar com o caso único e multitexto sem elementos de dados não utilizado ou carregar elementos de dados que não seriam usadas, exceto no caso de multitexto.
 
-Aqui está um exemplo de como usar dois conjuntos de dados de vértice, um para textura única e outro para multitexturing.
+Aqui está um exemplo de como usar dois conjuntos de dados de vértice, um para textura única e outro para multitexto.
 
 
 ```
@@ -52,7 +52,7 @@ struct CUSTOMVERTEX_TEX2
 
 
 
-A alternativa era ter um único elemento Vertex que contivesse ambos os conjuntos de coordenadas de textura.
+A alternativa era ter um único elemento de vértice que continha ambos os conjuntos de coordenadas de textura.
 
 
 ```
@@ -68,9 +68,9 @@ struct CUSTOMVERTEX_TEX2
 
 
 
-Com esses dados de vértice, apenas uma cópia dos dados de posição e cor é realizada na memória, às custas de carregar os dois conjuntos de coordenadas de textura para renderização, mesmo no caso de textura única.
+Com esses dados de vértice, apenas uma cópia dos dados de posição e cor é carregada na memória, às custas de carregar ambos os conjuntos de coordenadas de textura para renderização mesmo no caso de textura única.
 
-Agora que a compensação está clara, os fluxos fornecem uma correção elegante para esse dilema. Aqui está um conjunto de definições de vértice para dar suporte a três fluxos: um com posição e cor, um com o primeiro conjunto de coordenadas de textura e outro com o segundo conjunto de coordenadas de textura.
+Agora que a negociação está clara, os fluxos fornecem uma correção elegante para esse esclarecimento. Aqui está um conjunto de definições de vértice para dar suporte a três fluxos: um com posição e cor, um com o primeiro conjunto de coordenadas de textura e outro com o segundo conjunto de coordenadas de textura.
 
 
 ```
@@ -123,7 +123,7 @@ D3DVERTEXELEMENT9 dwDecl3[] =
 
 
 
-Agora, crie o objeto de declaração de vértice e defina-o como mostrado:
+Agora, crie o objeto de declaração de vértice e de definido como mostrado:
 
 
 ```
@@ -139,7 +139,7 @@ m_pd3dDevice->SetVertexDeclaration(m_pVertexDeclaration);
 
 ### <a name="one-stream-diffuse-color"></a>Cor difusa de um fluxo
 
-A declaração de vértice e as configurações de fluxo para renderização de cores difusas teriam a seguinte aparência:
+A declaração de vértice e as configurações de fluxo para renderização de cor difusa teriam esta aparência:
 
 
 ```
@@ -161,9 +161,9 @@ D3DVERTEXELEMENT9 dwDecl3[] =
 
 
 
-### <a name="two-streams-with-color-and-texture"></a>Dois fluxos com cor e textura
+### <a name="two-streams-with-color-and-texture"></a>Dois Fluxos com cor e textura
 
-A declaração de vértice e as configurações de fluxo para renderização de textura única teriam a seguinte aparência:
+A declaração de vértice e as configurações de fluxo para renderização de textura única seriam assim:
 
 
 ```
@@ -190,9 +190,9 @@ D3DVERTEXELEMENT9 dwDecl3[] =
 
 
 
-### <a name="two-streams-with-color-and-two-textures"></a>Dois fluxos com cores e duas texturas
+### <a name="two-streams-with-color-and-two-textures"></a>Dois Fluxos com cor e duas texturas
 
-A declaração de vértice e as configurações de fluxo para renderização de várias texturas de duas texturas teriam a seguinte aparência:
+A declaração de vértice e as configurações de fluxo para renderização de várias texturas de duas texturas seriam assim:
 
 
 ```
@@ -224,7 +224,7 @@ m_pd3dDevice->SetStreamSource(2, m_pVBTexC1, 0,
 
 
 
-Em todos os casos, o seguinte [**IDirect3DDevice9::D rawprimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive) invocação é suficiente.
+Em todos os casos, a invocação [**IDirect3DDevice9::D rawPrimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive) a seguir é suficiente.
 
 
 ```
@@ -233,7 +233,7 @@ Em todos os casos, o seguinte [**IDirect3DDevice9::D rawprimitive**](/windows/wi
 
 
 
-Isso mostra a flexibilidade dos fluxos para resolver o problema de duplicação de dados/transmissão de dados redundantes pelo barramento (ou seja, de desperdício de largura de banda).
+Isso mostra a flexibilidade dos fluxos para resolver o problema de duplicação de dados/transmissão de dados redundantes no barramento (ou seja, perda de largura de banda).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

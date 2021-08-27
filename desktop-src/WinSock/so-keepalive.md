@@ -4,12 +4,12 @@ ms.assetid: d6da7761-7a09-4c91-9737-550590a773b3
 title: Opção de soquete SO_KEEPALIVE (Ws2def. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9d829f957e23c48a325444de7d992397fba26d48
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2d3590b8813f584aad16896a5b990baa2e3ad5607b76a13bd987d87961ee5f6f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105760615"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120097466"
 ---
 # <a name="so_keepalive-socket-option"></a>\_Opção de soquete KeepAlive
 
@@ -90,7 +90,7 @@ Um ponteiro para o tamanho, em bytes, do buffer *optval* . Esse tamanho deve ser
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a operação for concluída com êxito, [**setsockopt**](/windows/desktop/api/winsock/nf-winsock-setsockopt) retornará zero.
 
@@ -103,8 +103,8 @@ Se a operação falhar, um valor de erro de soquete \_ será retornado e um cód
 | <dl> <dt>**[WSANOTINITIALISED](windows-sockets-error-codes-2.md)**</dt> </dl> | Uma chamada [**WSAStartup**](/windows/desktop/api/winsock/nf-winsock-wsastartup) bem-sucedida deve ocorrer antes de usar essa função.<br/>                                                                                                                                                     |
 | <dl> <dt>**[WSAENETDOWN](windows-sockets-error-codes-2.md)**</dt> </dl>             | Falha no subsistema de rede.<br/>                                                                                                                                                                                                               |
 | <dl> <dt>**[WSAEFAULT](windows-sockets-error-codes-2.md)**</dt> </dl>                 | Um dos parâmetros *optval* ou *optlen* aponta para a memória que não está em uma parte válida do espaço de endereço de usuário. Esse erro também será retornado se o valor apontado pelo parâmetro *optlen* for menor que o tamanho de um valor **DWORD** .<br/> |
-| <dl> <dt>**[WSAEINPROGRESS](windows-sockets-error-codes-2.md)**</dt> </dl>       | Uma chamada de bloqueio do Windows Sockets 1,1 está em andamento ou o provedor de serviços ainda está processando uma função de retorno de chamada.<br/>                                                                                                                            |
-| <dl> <dt>**[WSAEINVAL](windows-sockets-error-codes-2.md)**</dt> </dl>                 | O parâmetro de *nível* é desconhecido ou inválido. No Windows Vista e posterior, esse erro também será retornado se o soquete estava em um estado de transição.<br/>                                                                                                 |
+| <dl> <dt>**[WSAEINPROGRESS](windows-sockets-error-codes-2.md)**</dt> </dl>       | uma chamada Windows soquetes de bloqueio 1,1 está em andamento ou o provedor de serviços ainda está processando uma função de retorno de chamada.<br/>                                                                                                                            |
+| <dl> <dt>**[WSAEINVAL](windows-sockets-error-codes-2.md)**</dt> </dl>                 | O parâmetro de *nível* é desconhecido ou inválido. no Windows Vista e posterior, esse erro também será retornado se o soquete estava em um estado de transição.<br/>                                                                                                 |
 | <dl> <dt>**[WSAENOPROTOOPT](windows-sockets-error-codes-2.md)**</dt> </dl>       | A opção é desconhecida ou não é suportada pela família de protocolos indicada. Esse erro será retornado se o descritor de soquete passado no parâmetro *s* for para um soquete de datagrama.<br/>                                                                   |
 | <dl> <dt>**[WSAENOTSOCK](windows-sockets-error-codes-2.md)**</dt> </dl>             | O descritor não é um soquete.<br/>                                                                                                                                                                                                                 |
 
@@ -126,13 +126,13 @@ O código de controle do [**sio \_ KeepAlive \_ Vals**](/previous-versions/windo
 
 O valor padrão em todo o sistema do tempo limite de Keep-Alive é controlável por meio da configuração do registro [KeepAliveTime](/previous-versions/windows/it-pro/windows-server-2003/cc782936(v=ws.10)) que usa um valor em milissegundos. O valor padrão em todo o sistema do intervalo Keep-Alive é controlável por meio da configuração do registro [KeepAliveInterval](/previous-versions/windows/it-pro/windows-server-2003/cc758083(v=ws.10)) , que usa um valor em milissegundos.
 
-No Windows Vista e posterior, o número de investigações de Keep-Alive (retransmissões de dados) é definido como 10 e não pode ser alterado.
+no Windows Vista e posterior, o número de investigações de keep-alive (retransmissões de dados) é definido como 10 e não pode ser alterado.
 
-No Windows Server 2003, Windows XP e Windows 2000, a configuração padrão para o número de investigações Keep-Alive é 5. O número de investigações Keep Alive é controlável por meio das configurações de registro [TcpMaxDataRetransmissions](/previous-versions/windows/it-pro/windows-server-2003/cc780586(v=ws.10)) e [PPTPTcpMaxDataRetransmissions](/previous-versions/windows/it-pro/windows-server-2003/cc775408(v=ws.10)) . O número de investigações Keep Alive é definido como o maior dos dois valores de chave do registro. Se esse número for 0, as investigações Keep-Alive não serão enviadas. Se esse número estiver acima de 255, ele será ajustado para 255.
+no Windows Server 2003, Windows XP e Windows 2000, a configuração padrão para o número de investigações keep-alive é 5. O número de investigações Keep Alive é controlável por meio das configurações de registro [TcpMaxDataRetransmissions](/previous-versions/windows/it-pro/windows-server-2003/cc780586(v=ws.10)) e [PPTPTcpMaxDataRetransmissions](/previous-versions/windows/it-pro/windows-server-2003/cc775408(v=ws.10)) . O número de investigações Keep Alive é definido como o maior dos dois valores de chave do registro. Se esse número for 0, as investigações Keep-Alive não serão enviadas. Se esse número estiver acima de 255, ele será ajustado para 255.
 
-No Windows Vista e posterior, a opção de soquete de **\_ KeepAlive** só pode ser definida usando a função [**setsockopt**](/windows/desktop/api/winsock/nf-winsock-setsockopt) quando o soquete está em um estado bem conhecido, não em um estado de transição. Para TCP, a opção de soquete **\_ KeepAlive** deve ser definida antes da função Connect ([**Connect**](/windows/desktop/api/Winsock2/nf-winsock2-connect), [**ConnectEx**](/windows/desktop/api/Mswsock/nc-mswsock-lpfn_connectex), [**WSAConnect**](/windows/desktop/api/Winsock2/nf-winsock2-wsaconnect), [**WSAConnectByList**](/windows/desktop/api/Winsock2/nf-winsock2-wsaconnectbylist)ou [**WSAConnectByName**](/windows/desktop/api/Winsock2/nf-winsock2-wsaconnectbynamea)) ser chamada, ou após a solicitação de conexão ser realmente concluída. Se a função Connect tiver sido chamada de forma assíncrona, isso exigirá aguardar a conclusão da conexão antes de tentar definir a opção de soquete **\_ KeepAlive** . Se um aplicativo tentar definir a opção de soquete de **\_ KeepAlive** quando uma solicitação de conexão ainda estiver em andamento, a função **setsockopt** falhará e retornará [WSAEINVAL](windows-sockets-error-codes-2.md).
+no Windows Vista e posterior, a opção de soquete de **\_ KEEPALIVE** só pode ser definida usando a função [**setsockopt**](/windows/desktop/api/winsock/nf-winsock-setsockopt) quando o soquete está em um estado bem conhecido, não em um estado de transição. Para TCP, a opção de soquete **\_ KeepAlive** deve ser definida antes da função Connect ([**Connect**](/windows/desktop/api/Winsock2/nf-winsock2-connect), [**ConnectEx**](/windows/desktop/api/Mswsock/nc-mswsock-lpfn_connectex), [**WSAConnect**](/windows/desktop/api/Winsock2/nf-winsock2-wsaconnect), [**WSAConnectByList**](/windows/desktop/api/Winsock2/nf-winsock2-wsaconnectbylist)ou [**WSAConnectByName**](/windows/desktop/api/Winsock2/nf-winsock2-wsaconnectbynamea)) ser chamada, ou após a solicitação de conexão ser realmente concluída. Se a função Connect tiver sido chamada de forma assíncrona, isso exigirá aguardar a conclusão da conexão antes de tentar definir a opção de soquete **\_ KeepAlive** . Se um aplicativo tentar definir a opção de soquete de **\_ KeepAlive** quando uma solicitação de conexão ainda estiver em andamento, a função **setsockopt** falhará e retornará [WSAEINVAL](windows-sockets-error-codes-2.md).
 
-No Windows Server 2003, Windows XP e Windows 2000, a opção de soquete **\_ KeepAlive** pode ser definida usando a função [**setsockopt**](/windows/desktop/api/winsock/nf-winsock-setsockopt) quando o soquete é um estado de transição (uma solicitação de conexão ainda está em andamento), bem como um estado bem conhecido.
+no Windows Server 2003, Windows XP e Windows 2000, a opção de soquete **\_ KEEPALIVE** pode ser definida usando a função [**setsockopt**](/windows/desktop/api/winsock/nf-winsock-setsockopt) quando o soquete é um estado de transição (uma solicitação de conexão ainda está em andamento), bem como um estado bem conhecido.
 
 Observe que o arquivo de cabeçalho *Ws2def. h* é incluído automaticamente no *Winsock2. h* e nunca deve ser usado diretamente.
 
@@ -158,7 +158,7 @@ Observe que o arquivo de cabeçalho *Ws2def. h* é incluído automaticamente no 
 [**setsockopt**](/windows/desktop/api/winsock/nf-winsock-setsockopt)
 </dt> <dt>
 
-[KeepAlivetime](/previous-versions/windows/it-pro/windows-server-2003/cc782936(v=ws.10))
+[KeepAliveTime](/previous-versions/windows/it-pro/windows-server-2003/cc782936(v=ws.10))
 </dt> <dt>
 
 [KeepAliveInterval](/previous-versions/windows/it-pro/windows-server-2003/cc758083(v=ws.10))

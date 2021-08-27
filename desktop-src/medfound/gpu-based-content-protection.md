@@ -1,135 +1,135 @@
 ---
-description: Descreve o conteúdo de vídeo&\# 8211; recursos de proteção que um driver de gráficos pode fornecer.
+description: Descreve o conteúdo de vídeo&\# 8211;recursos de proteção que um driver gráfico pode fornecer.
 ms.assetid: FD0625BB-484A-43E6-8931-DB635D4F017F
 title: GPU-Based Proteção de Conteúdo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6bbc1a0f88cae199b9aab38e5ec429ea5427f44b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7e09829984273c35524fe9c8f3cd19e759e18dbc
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104568237"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122465033"
 ---
 # <a name="gpu-based-content-protection"></a>GPU-Based Proteção de Conteúdo
 
-Este tópico descreve o conteúdo de vídeo – recursos de proteção que um driver de gráficos pode fornecer.
+Este tópico descreve os recursos de proteção de conteúdo de vídeo que um driver gráfico pode fornecer.
 
 -   [Introdução](#introduction)
 -   [Visão geral do processo de decodificação](#overview-of-the-decoding-process)
 -   [Criptografando buffers de vídeo compactados para o decodificador](#encrypting-compressed-video-buffers-for-the-decoder)
-    -   [1. consulte os recursos de Proteção de Conteúdo do driver](#1-query-the-content-protection-capabilities-of-the-driver)
-    -   [2. configurar o canal autenticado](#2-configure-the-authenticated-channel)
-    -   [3. configurar a sessão de criptografia](#3-configure-the-cryptographic-session)
-    -   [4. obter um identificador para o dispositivo de decodificador de DXVA](#4-get-a-handle-to-the-dxva-decoder-device)
-    -   [5. associar o decodificador de DXVA à sessão criptográfica](#5-associate-the-dxva-decoder-with-the-cryptographic-session)
+    -   [1. Consultar as Proteção de Conteúdo do driver](#1-query-the-content-protection-capabilities-of-the-driver)
+    -   [2. Configurar o canal autenticado](#2-configure-the-authenticated-channel)
+    -   [3. Configurar a sessão criptográfica](#3-configure-the-cryptographic-session)
+    -   [4. Obter um handle para o dispositivo de decodificador DXVA](#4-get-a-handle-to-the-dxva-decoder-device)
+    -   [5. Associar o decodificador DXVA à sessão criptográfica](#5-associate-the-dxva-decoder-with-the-cryptographic-session)
 -   [Enviando comandos de canal autenticado](#sending-authenticated-channel-commands)
 -   [Enviando consultas de canal autenticado](#sending-authenticated-channel-queries)
 -   [Tópicos relacionados](#related-topics)
 
 ## <a name="introduction"></a>Introdução
 
-O diagrama a seguir mostra uma exibição simplificada de como o conteúdo de vídeo protegido passa pelo pipeline para ser renderizado.
+O diagrama a seguir mostra uma exibição simplificada de como o conteúdo de vídeo protegido percorre o pipeline a ser renderizado.
 
 ![um diagrama que mostra o conteúdo de vídeo protegido.](images/d3d9video01.png)
 
 > [!Note]  
-> O [caminho de mídia protegido](protected-media-path.md) (PMP) não está descrito neste diagrama. O fluxo de dados mostrado aqui pode ocorrer em um processo de PMP ou em um processo de aplicativo.
+> O [PMP (Caminho de](protected-media-path.md) Mídia Protegida) não é descrito neste diagrama. O fluxo de dados mostrado aqui pode ocorrer dentro de um processo PMP ou dentro de um processo de aplicativo.
 
  
 
-O decodificador recebe dados de vídeo criptografados e compactados de uma fonte externa. Presume-se também que o decodificador também receba uma chave de criptografia para descriptografar esses dados. Este tópico não descreve a troca de chaves entre a fonte de vídeo e o decodificador, mas a PMP define um mecanismo possível. A GPU não está envolvida neste estágio.
+O decodificador recebe dados de vídeo criptografados e compactados de uma fonte externa. Supõe-se também que o decodificador também recebe uma chave de criptografia para descriptografar esses dados. Este tópico não descreve a troca de chaves entre a fonte do vídeo e o decodificador, mas o PMP define um mecanismo possível. A GPU não está envolvida neste estágio.
 
-Para a decodificação acelerada por hardware, o decodificador de software passa o conteúdo de vídeo compactado para a GPU. Para proteger esse conteúdo, o decodificador criptografa novamente os dados, normalmente usando AES-CTR, antes de passá-los para o acelerador de hardware. Um mecanismo de troca de chaves é definido entre o decodificador e o driver de gráficos.
+Para decodificação acelerada por hardware, o decodificador de software passa o conteúdo de vídeo compactado para a GPU. Para proteger esse conteúdo, o decodificador criptografa os dados, normalmente usando AES-CTR, antes de passá-los para o acelerador de hardware. Um mecanismo de troca de chaves é definido entre o decodificador e o driver gráfico.
 
-Os quadros de vídeo decodificados são armazenados na memória de vídeo, geralmente em claro. Neste ponto, os quadros são processados e, em seguida, apresentados. Há duas opções principais para apresentação.
+Quadros de vídeo decodificados são armazenados na memória de vídeo, geralmente em claro. Neste ponto, os quadros são processados e apresentados. Há duas opções principais para apresentação.
 
--   Quadros podem ser apresentados usando uma sobreposição de hardware. Para obter mais informações, consulte [suporte à sobreposição de hardware](hardware-overlay-support.md).
--   Os quadros podem ser apresentados pelo DWM (gerenciamento de janelas da área de trabalho) usando uma superfície compartilhada.
+-   Os quadros podem ser apresentados usando uma sobreposição de hardware. Para obter mais informações, consulte [Suporte à sobreposição de hardware.](hardware-overlay-support.md)
+-   Os quadros podem ser apresentados pelo DWM (Gerenciamento de Janela de Área de Trabalho) usando uma superfície compartilhada.
 
-A última etapa é exibir o quadro no monitor, o que pode exigir proteção de link entre a placa gráfica e o dispositivo de vídeo. Um exemplo de proteção de link é High-Bandwidth Proteção de Conteúdo Digital (HDCP). A proteção de link é configurada usando o [Gerenciador de proteção de saída](output-protection-manager.md) (OPM). Este tópico não descreve OPM; para obter mais informações, consulte [usando o Gerenciador de proteção de saída](using-output-protection-manager.md).
+A última etapa é exibir o quadro no monitor, o que pode exigir proteção de vínculo entre a placa gráfica e o dispositivo de exibição. Um exemplo de proteção de link é High-Bandwidth HDCP (Proteção de Conteúdo Digital). A proteção de link é configurada usando o OPM [(Gerenciador](output-protection-manager.md) de Proteção de Saída). Este tópico não descreve o OPM; Para obter mais informações, consulte [Usando o Gerenciador de Proteção de Saída](using-output-protection-manager.md).
 
 ## <a name="overview-of-the-decoding-process"></a>Visão geral do processo de decodificação
 
-Durante a decodificação acelerada por hardware, o decodificador de software deve passar dados de vídeo compactados para a placa gráfica. Para conteúdo premium, esses dados normalmente devem ser criptografados, usando criptografia de chave simétrica, antes de serem enviados para a GPU.
+Durante a decodificação acelerada por hardware, o decodificador de software deve passar dados de vídeo compactados para a placa gráfica. Para conteúdo premium, esses dados normalmente devem ser criptografados, usando a criptografia de chave simétrica, antes de serem enviados para a GPU.
 
 Para criptografar o vídeo para decodificação, o decodificador de software usa as seguintes interfaces:
 
--   [**IDirectXVideoDecoder**](/windows/desktop/api/dxva2api/nn-dxva2api-idirectxvideodecoder). Representa o dispositivo de decodificador DXVA, também chamado de acelerador.
+-   [**IDirectXVideoDecoder**](/windows/desktop/api/dxva2api/nn-dxva2api-idirectxvideodecoder). Representa o dispositivo decodificador DXVA, também chamado de acelerador.
 -   [**IDirect3DCryptoSession9**](/windows/desktop/api/d3d9/nn-d3d9-idirect3dcryptosession9). Representa uma sessão criptográfica, que fornece a chave de criptografia.
 -   [**IDirect3DAuthenticatedChannel9**](/windows/desktop/api/d3d9/nn-d3d9-idirect3dauthenticatedchannel9). Representa um canal autenticado, que permite que o decodificador de software associe a sessão criptográfica ao decodificador DXVA.
 
-![um diagrama que mostra as interfaces de decodificação de Direct3D9.](images/d3d9video02.png)
+![um diagrama que mostra as interfaces de decodificação direct3d9.](images/d3d9video02.png)
 
-Todas essas interfaces são obtidas do dispositivo Direct3D, da seguinte maneira:
+Todas essas interfaces são obtidas do dispositivo Direct3D, da seguinte forma:
 
 
 
 | Interface                                                                | Criação                                                                                                                                                                      |
 |--------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**IDirectXVideoDecoder**](/windows/desktop/api/dxva2api/nn-dxva2api-idirectxvideodecoder)                     | Chame [**IDirectXVideoDecoderService:: CreateVideoDecoder**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideodecoderservice-createvideodecoder). O dispositivo de decodificador DXVA é identificado por um GUID de perfil de DXVA. |
-| [**IDirect3DCryptoSession9**](/windows/desktop/api/d3d9/nn-d3d9-idirect3dcryptosession9)               | Chame [**IDirect3DDevice9Video:: CreateCryptoSession**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9video-createcryptosession).                                                                         |
-| [**IDirect3DAuthenticatedChannel9**](/windows/desktop/api/d3d9/nn-d3d9-idirect3dauthenticatedchannel9) | Chame [**IDirect3DDevice9Video:: CreateAuthenticatedChannel**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9video-createauthenticatedchannel).                                                           |
+| [**IDirectXVideoDecoder**](/windows/desktop/api/dxva2api/nn-dxva2api-idirectxvideodecoder)                     | Chame [**IDirectXVideoDecoderService::CreateVideoDecoder**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideodecoderservice-createvideodecoder). O dispositivo de decodificador DXVA é identificado por um GUID de perfil DXVA. |
+| [**IDirect3DCryptoSession9**](/windows/desktop/api/d3d9/nn-d3d9-idirect3dcryptosession9)               | Chame [**IDirect3DDevice9Video::CreateCryptoSession**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9video-createcryptosession).                                                                         |
+| [**IDirect3DAuthenticatedChannel9**](/windows/desktop/api/d3d9/nn-d3d9-idirect3dauthenticatedchannel9) | Chame [**IDirect3DDevice9Video::CreateAuthenticatedChannel.**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9video-createauthenticatedchannel)                                                           |
 
 
 
  
 
 > [!Note]  
-> Para obter um ponteiro para a interface [**IDirect3DDevice9Video**](/windows/desktop/api/d3d9/nn-d3d9-idirect3ddevice9video) , chame [**QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) em um dispositivo D3D9Ex.
+> Para obter um ponteiro para a interface [**IDirect3DDevice9Video,**](/windows/desktop/api/d3d9/nn-d3d9-idirect3ddevice9video) chame [**QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) em um dispositivo D3D9Ex.
 
  
 
-O canal autenticado fornece um canal de comunicação confiável entre o decodificador de software e o driver. O canal de comunicação funciona da seguinte maneira:
+O canal autenticado fornece um canal de comunicação confiável entre o decodificador de software e o driver. O canal de comunicação funciona da seguinte forma:
 
--   O driver fornece uma cadeia de certificados X. 509 cujo certificado raiz é assinado pela Microsoft.
+-   O driver fornece uma cadeia de certificados X.509 cujo certificado raiz é assinado pela Microsoft.
 -   O certificado contém uma chave pública RSA para o driver.
--   O decodificador de software usa a chave pública para enviar o driver a uma chave de sessão AES de 128 bits.
+-   O decodificador de software usa a chave pública para enviar ao driver uma chave de sessão AES de 128 bits.
 -   O decodificador de software envia consultas e comandos para o canal autenticado.
--   A chave de sessão é usada para computar MACs (códigos de autenticação de mensagem) para as consultas e comandos. O driver usa os MACs para verificar a integridade dos dados de consulta/comando, e o decodificador de software os usa para verificar a integridade dos dados de resposta do driver.
+-   A chave de sessão é usada para computar MACs (códigos de autenticação de mensagem) para as consultas e comandos. O driver usa os MACs para verificar a integridade dos dados de consulta/comando e o decodificador de software os usa para verificar a integridade dos dados de resposta do driver.
 
 ## <a name="encrypting-compressed-video-buffers-for-the-decoder"></a>Criptografando buffers de vídeo compactados para o decodificador
 
 Aqui está uma visão geral de alto nível do processo de criptografia e decodificação:
 
-1.  O decodificador de software recebe um fluxo de dados criptografados da fonte de vídeo. O decodificador descriptografa esse fluxo.
+1.  O decodificador de software recebe um fluxo de dados criptografados da origem do vídeo. O decodificador descriptografa esse fluxo.
 2.  O decodificador de software negocia uma chave de sessão com a sessão criptográfica.
-3.  O decodificador de software usa o canal autenticado para associar a sessão criptográfica ao dispositivo de decodificador DXVA.
-4.  O decodificador de software coloca dados compactados em buffers de DXVA que obtém do dispositivo de decodificador de DXVA (acelerador). Para conteúdo protegido, o codificador de software criptografa os dados que são colocados nos buffers de DXVA, usando a chave de sessão para a criptografia.
+3.  O decodificador de software usa o canal autenticado para associar a sessão criptográfica ao dispositivo decodificador DXVA.
+4.  O decodificador de software coloca dados compactados em buffers DXVA que ele obtém do dispositivo de decodificador DXVA (acelerador). Para conteúdo protegido, o codificador de software criptografa os dados que são colocados nos buffers DXVA, usando a chave de sessão para a criptografia.
     > [!Note]  
-    > Alguns drivers usam uma chave de conteúdo, em vez da chave de sessão, para criptografia. A chave de conteúdo pode mudar de um quadro para o outro.
+    > Alguns drivers usam uma chave de conteúdo, em vez da chave de sessão, para criptografia. A chave de conteúdo pode mudar de um quadro para o próximo.
 
      
 
 5.  O decodificador envia os buffers compactados criptografados para o acelerador. Para AES-CTR, o decodificador também passa o vetor de inicialização. Se uma chave de conteúdo for usada, o decodificador passará a chave de conteúdo, criptografada usando a chave de sessão.
 
-O Direct3D tem suporte padrão para o AES-CTR de 128 bits, mas foi projetado para estender para tipos de criptografia adicionais.
+O Direct3D tem suporte padrão para AES-CTR de 128 bits, mas foi projetado para estender para tipos de criptografia adicionais.
 
-As próximas cinco seções fornecem etapas mais detalhadas.
+As próximas cinco seções dão etapas mais detalhadas.
 
--   [1. consulte os recursos de Proteção de Conteúdo do driver](#1-query-the-content-protection-capabilities-of-the-driver)
--   [2. configurar o canal autenticado](#2-configure-the-authenticated-channel)
--   [3. configurar a sessão de criptografia](#3-configure-the-cryptographic-session)
--   [4. obter um identificador para o dispositivo de decodificador de DXVA](#4-get-a-handle-to-the-dxva-decoder-device)
--   [5. associar o decodificador de DXVA à sessão criptográfica](#5-associate-the-dxva-decoder-with-the-cryptographic-session)
+-   [1. Consultar as Proteção de Conteúdo do driver](#1-query-the-content-protection-capabilities-of-the-driver)
+-   [2. Configurar o canal autenticado](#2-configure-the-authenticated-channel)
+-   [3. Configurar a sessão criptográfica](#3-configure-the-cryptographic-session)
+-   [4. Obter um handle para o dispositivo de decodificador DXVA](#4-get-a-handle-to-the-dxva-decoder-device)
+-   [5. Associar o decodificador DXVA à sessão criptográfica](#5-associate-the-dxva-decoder-with-the-cryptographic-session)
 
-### <a name="1-query-the-content-protection-capabilities-of-the-driver"></a>1. consulte os recursos de Proteção de Conteúdo do driver
+### <a name="1-query-the-content-protection-capabilities-of-the-driver"></a>1. Consultar as Proteção de Conteúdo do driver
 
-Antes de tentar aplicar a criptografia, obtenha os recursos de proteção de conteúdo do driver.
+Antes de tentar aplicar a criptografia, obter os recursos de proteção de conteúdo do driver.
 
-1.  Obtenha um ponteiro para o dispositivo Direct3D 9.
-2.  Chame [**QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) para a interface [**IDirect3DDevice9Video**](/windows/desktop/api/d3d9/nn-d3d9-idirect3ddevice9video) .
-3.  Chame [**IDirect3DDevice9Video:: GetContentProtectionCaps**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9video-getcontentprotectioncaps). Esse método preenche uma estrutura [**D3DCONTENTPROTECTIONCAPS**](/windows/desktop/api/d3d9caps/ns-d3d9caps-d3dcontentprotectioncaps) com os recursos de proteção de conteúdo do driver.
+1.  Obter um ponteiro para o dispositivo Direct3D 9.
+2.  Chame [**QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) para a interface [**IDirect3DDevice9Video.**](/windows/desktop/api/d3d9/nn-d3d9-idirect3ddevice9video)
+3.  Chame [**IDirect3DDevice9Video::GetContentProtectionCaps.**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9video-getcontentprotectioncaps) Esse método preenche uma estrutura [**D3DCONTENTPROTECTIONCAPS**](/windows/desktop/api/d3d9caps/ns-d3d9caps-d3dcontentprotectioncaps) com os recursos de proteção de conteúdo do driver.
 
 Em particular, procure os seguintes recursos:
 
--   Se o membro **Caps** contiver o sinalizador **D3DCPCAPS_SOFTWARE** ou **D3DCPCAPS_HARDWARE** , o driver poderá executar a criptografia.
--   O membro **Keyexchangetype** especifica como executar a troca de chaves para a chave de sessão.
--   Se o membro **Caps** contiver o sinalizador **D3DCPCAPS_CONTENTKEY** , o driver usará uma chave de conteúdo separada para criptografia. Isso é importante quando você gera a chave de sessão.
+-   Se o **membro Caps** contiver o **D3DCPCAPS_SOFTWARE** **ou D3DCPCAPS_HARDWARE,** o driver poderá executar a criptografia.
+-   O **membro KeyExchangeType** especifica como executar a troca de chaves para a chave de sessão.
+-   Se o **membro Caps** contiver o **sinalizador D3DCPCAPS_CONTENTKEY,** o driver usará uma chave de conteúdo separada para criptografia. Isso é importante quando você gera a chave de sessão.
 
-Recursos adicionais são indicados no membro **Caps** .
+Recursos adicionais são indicados no **membro Caps.**
 
-### <a name="2-configure-the-authenticated-channel"></a>2. configurar o canal autenticado
+### <a name="2-configure-the-authenticated-channel"></a>2. Configurar o canal autenticado
 
 A próxima etapa é configurar o canal autenticado.
 
@@ -218,41 +218,14 @@ Para enviar um comando para o canal autenticado, execute as etapas a seguir.
 
 1.  Preencha a estrutura de dados de entrada. Essa estrutura de dados é sempre uma estrutura de [**D3DAUTHENTICATEDCHANNEL_CONFIGURE_INPUT**](d3dauthenticatedchannel-configure-input.md) seguida por campos adicionais. Preencha a estrutura de **D3DAUTHENTICATEDCHANNEL_CONFIGURE_INPUT** , conforme mostrado na tabela a seguir.
 
-    <table>
-    <colgroup>
-    <col style="width: 50%" />
-    <col style="width: 50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th>Membro</th>
-    <th>DESCRIÇÃO</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><strong>omac</strong></td>
-    <td>Ignore este campo por enquanto.</td>
-    </tr>
-    <tr class="even">
-    <td><strong>Configuratype</strong></td>
-    <td>GUID que identifica o comando. Para obter uma lista de comandos, consulte <a href="content-protection-commands.md">proteção de conteúdo comandos</a>.</td>
-    </tr>
-    <tr class="odd">
-    <td><strong>hChannel</strong></td>
-    <td>O identificador para o canal autenticado.</td>
-    </tr>
-    <tr class="even">
-    <td><strong>SequenceNumber</strong></td>
-    <td>O número de sequência. O primeiro número de sequência é especificado com o envio de um comando <a href="d3dauthenticatedconfigure-initialize.md"><strong>D3DAUTHENTICATEDCONFIGURE_INITIALIZE</strong></a> . Cada vez que você enviar outro comando, aumente esse número em 1. O número de sequência protege contra ataques de repetição.
-    <blockquote>
-    [!Note]<br />
-Dois números de sequência separados são usados, um para comandos e outro para consultas.
-    </blockquote>
-    <br/> <br/></td>
-    </tr>
-    </tbody>
-    </table>
+    
+| Membro | DESCRIÇÃO | 
+|--------|-------------|
+| <strong>omac</strong> | Ignore este campo por enquanto. | 
+| <strong>Configuratype</strong> | GUID que identifica o comando. Para obter uma lista de comandos, consulte <a href="content-protection-commands.md">proteção de conteúdo comandos</a>. | 
+| <strong>hChannel</strong> | O identificador para o canal autenticado. | 
+| <strong>SequenceNumber</strong> | O número de sequência. O primeiro número de sequência é especificado com o envio de um comando <a href="d3dauthenticatedconfigure-initialize.md"><strong>D3DAUTHENTICATEDCONFIGURE_INITIALIZE</strong></a> . Cada vez que você enviar outro comando, aumente esse número em 1. O número de sequência protege contra ataques de repetição.    <blockquote>    [!Note]<br />    Dois números de sequência separados são usados, um para comandos e outro para consultas.    </blockquote><br /><br /> | 
+
 
     
 
@@ -273,37 +246,13 @@ Para enviar um comando para o canal autenticado, execute as etapas a seguir.
 
 1.  Preencha a estrutura de dados de entrada. Essa estrutura de dados é sempre uma estrutura de [**D3DAUTHENTICATEDCHANNEL_QUERY_INPUT**](d3dauthenticatedchannel-query-input.md) , possivelmente seguida por campos adicionais. Preencha a estrutura de **D3DAUTHENTICATEDCHANNEL_QUERY_INPUT** , conforme mostrado na tabela a seguir.
 
-    <table>
-    <colgroup>
-    <col style="width: 50%" />
-    <col style="width: 50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th>Membro</th>
-    <th>DESCRIÇÃO</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><strong>QueryType</strong></td>
-    <td>GUID que identifica a consulta. Para obter uma lista de consultas, consulte <a href="content-protection-queries.md">proteção de conteúdo consultas</a>.</td>
-    </tr>
-    <tr class="even">
-    <td><strong>hChannel</strong></td>
-    <td>O identificador para o canal autenticado.</td>
-    </tr>
-    <tr class="odd">
-    <td><strong>SequenceNumber</strong></td>
-    <td>O número de sequência. O primeiro número de sequência é especificado com o envio de um comando <a href="d3dauthenticatedconfigure-initialize.md"><strong>D3DAUTHENTICATEDCONFIGURE_INITIALIZE</strong></a> . Cada vez que você enviar outra consulta, aumente esse número em 1. O número de sequência protege contra ataques de repetição.
-    <blockquote>
-    [!Note]<br />
-Dois números de sequência separados são usados, um para comandos e outro para consultas.
-    </blockquote>
-    <br/> <br/></td>
-    </tr>
-    </tbody>
-    </table>
+    
+| Membro | DESCRIÇÃO | 
+|--------|-------------|
+| <strong>QueryType</strong> | GUID que identifica a consulta. Para obter uma lista de consultas, consulte <a href="content-protection-queries.md">proteção de conteúdo consultas</a>. | 
+| <strong>hChannel</strong> | O identificador para o canal autenticado. | 
+| <strong>SequenceNumber</strong> | O número de sequência. O primeiro número de sequência é especificado com o envio de um comando <a href="d3dauthenticatedconfigure-initialize.md"><strong>D3DAUTHENTICATEDCONFIGURE_INITIALIZE</strong></a> . Cada vez que você enviar outra consulta, aumente esse número em 1. O número de sequência protege contra ataques de repetição.    <blockquote>    [!Note]<br />    Dois números de sequência separados são usados, um para comandos e outro para consultas.    </blockquote><br /><br /> | 
+
 
     
 

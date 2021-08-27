@@ -1,7 +1,7 @@
 ---
-description: O método SetDefaultTargetRect define o retângulo de vídeo de destino padrão (virtual puro). Essa é uma função de membro interna que é chamada quando o retângulo de origem é redefinido.
+description: O método SetDefaultTargetRect define o retângulo de vídeo de destino padrão (virtual puro). Essa é uma função membro interna que é chamada quando o retângulo de origem é redefinido.
 ms.assetid: bb7e32b2-f02c-465f-a8cb-6172d9724790
-title: Método CBaseControlVideo. SetDefaultTargetRect (Ctlutil. h)
+title: Método CBaseControlVideo.SetDefaultTargetRect (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 54b31268935cb296543b3992bf67b7a2193c1a92
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1ab9cf310ffc35df07ecd9e332325bb5f20f3cb4884ee17e672294b89c5abc9d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748837"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120087476"
 ---
-# <a name="cbasecontrolvideosetdefaulttargetrect-method"></a>Método CBaseControlVideo. SetDefaultTargetRect
+# <a name="cbasecontrolvideosetdefaulttargetrect-method"></a>Método CBaseControlVideo.SetDefaultTargetRect
 
-O `SetDefaultTargetRect` método define o retângulo de vídeo de destino padrão (virtual puro). Essa é uma função de membro interna que é chamada quando o retângulo de origem é redefinido.
+O `SetDefaultTargetRect` método define o retângulo de vídeo de destino padrão (virtual puro). Essa é uma função membro interna que é chamada quando o retângulo de origem é redefinido.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,13 +40,13 @@ virtual HRESULT SetDefaultTargetRect() = 0;
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor **HRESULT** .
+Retorna um **valor HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
-Classes derivadas devem substituir isso para redefinir o retângulo de vídeo de destino. Ele é chamado a partir da função de membro [**CBaseControlVideo:: SetDefaultDestinationPosition**](cbasecontrolvideo-setdefaultdestinationposition.md) .
+As classes derivadas devem substituir isso para redefinir o retângulo de vídeo de destino. Ele é chamado da [**função membro CBaseControlVideo::SetDefaultDestinationPosition.**](cbasecontrolvideo-setdefaultdestinationposition.md)
 
 O exemplo a seguir demonstra uma implementação dessa função em uma classe derivada.
 
@@ -65,7 +65,7 @@ HRESULT CVideoText::SetDefaultTargetRect()
 
 
 
-Neste exemplo, CVideoText é uma classe derivada de [**CBaseControlVideo**](cbasecontrolvideo.md), m \_ pRenderer mantém um objeto de uma classe derivada de [**CBaseVideoRenderer**](cbasevideorenderer.md), e o membro de \_ dados da DrawImage m, definido na classe derivada, mantém um objeto [**CDrawImage**](cdrawimage.md) . O \_ membro de dados m mtIn, também definido na classe derivada, mantém um objeto [**CMediaType**](cmediatype.md) com o tipo de mídia do pino de entrada.
+Neste exemplo, CVideoText é uma classe derivada de [**CBaseControlVideo**](cbasecontrolvideo.md), m pRenderer contém um objeto de uma classe derivada de \_ [**CBaseVideoRenderer**](cbasevideorenderer.md)e o membro de dados m DrawImage, definido na classe derivada, contém um objeto \_ [**CDrawImage.**](cdrawimage.md) O membro de dados mtIn, também definido na classe derivada, contém um \_ [**objeto CMediaType**](cmediatype.md) com o tipo de mídia do pino de entrada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -73,8 +73,8 @@ Neste exemplo, CVideoText é uma classe derivada de [**CBaseControlVideo**](cbas
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Ctlutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

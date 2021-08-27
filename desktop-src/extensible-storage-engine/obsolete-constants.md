@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: constantes obsoletas'
+description: 'Saiba mais sobre: Constantes obsoletas'
 title: Constantes obsoletas
 TOCTitle: Obsolete Constants
 ms:assetid: 792aee52-0db3-4d6c-aba5-91fce2e3f481
@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6e1451c52aac0b65b11669fda5362ed0a118ba9a
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: 5477bf4b91861809f1f5b8f77f262552b60ac075
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122983248"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122465243"
 ---
 # <a name="obsolete-constants"></a>Constantes obsoletas
 
@@ -29,7 +29,7 @@ _**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="obsolete-constants"></a>Constantes obsoletas
 
-Essas constantes são obsoletas e não devem ser usadas em seu aplicativo. Eles são definidos em ESENT. H para aplicativos herdados.
+Essas constantes são obsoletas e não devem ser usadas em seu aplicativo. Eles são definidos no ESENT. H para aplicativos herddos.
 
 JET_DbInfoLangid
 
@@ -70,10 +70,6 @@ JET_bitTableClass15
 ### <a name="requirements"></a>Requisitos
 
 
-| Requisito | Valor |
-|------------|----------|
-| <p><strong>Cliente</strong></p> | <p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p> | 
-| <p><strong>Servidor</strong></p> | <p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p> | 
-| <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | 
+| | | <p><strong>Cliente</strong></p> | <p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | 
 
 

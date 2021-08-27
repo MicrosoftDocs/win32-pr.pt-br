@@ -4,16 +4,16 @@ ms.assetid: 82349a33-dc2c-4309-b0fc-890f230e3f2c
 title: Dynamic-Link atualizações da biblioteca
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a10f76103ddebc723466fb7e32a216c0c039691d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f294e16efac60da843c14d200aaa768d4fc78ce8a922cb0aa6958756a9903be0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010657"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120075536"
 ---
 # <a name="dynamic-link-library-updates"></a>Dynamic-Link atualizações da biblioteca
 
-Às vezes, é necessário substituir uma DLL por uma versão mais recente. Antes de substituir uma DLL, execute uma verificação de versão para garantir que você está substituindo uma versão mais antiga por uma versão mais recente. É possível substituir uma DLL que está em uso. O método usado para substituir DLLs que estão em uso depende do sistema operacional que você está usando. No Windows XP e posterior, os aplicativos devem usar [aplicativos isolados e assemblies lado a lado](/windows/desktop/SbsCs/isolated-applications-and-side-by-side-assemblies-portal).
+Às vezes, é necessário substituir uma DLL por uma versão mais recente. Antes de substituir uma DLL, execute uma verificação de versão para garantir que você está substituindo uma versão mais antiga por uma versão mais recente. É possível substituir uma DLL que está em uso. O método usado para substituir DLLs que estão em uso depende do sistema operacional que você está usando. no Windows XP e posterior, os aplicativos devem usar [aplicativos isolados e Assemblies](/windows/desktop/SbsCs/isolated-applications-and-side-by-side-assemblies-portal)lado a lado.
 
 Não é necessário reiniciar o computador se você executar as seguintes etapas:
 

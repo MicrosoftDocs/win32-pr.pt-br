@@ -4,12 +4,12 @@ ms.assetid: f411acd7-5e33-4760-8a12-31c2d615426f
 title: Taxonomia do MultiPoint
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f97159312a2e431cb82b73336a13904c6b5ab021
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a9d1928dde2935ab803d95d73db225f7b3be0bc051a082d3bdae937e9b8e7da0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827109"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120097716"
 ---
 # <a name="multipoint-taxonomy"></a>Taxonomia do MultiPoint
 
@@ -24,7 +24,7 @@ No plano de controle, há dois tipos distintos de estabelecimento de sessão:
 
 No caso do controle com raiz, um participante especial, a \_ raiz c, que é diferente do restante dos membros dessa sessão do MultiPoint, cada um deles é chamado de \_ folha c. A \_ raiz c deve permanecer presente por toda a duração da sessão do MultiPoint, pois a sessão é dividida na ausência da \_ raiz c. A \_ raiz c geralmente inicia a sessão do MultiPoint Configurando a conexão com uma \_ folha c ou um número de folhas c \_ . A \_ raiz c pode adicionar mais \_ folhas c ou (em alguns casos) uma folha c \_ pode unir a raiz c \_ em um momento posterior. Exemplos do plano de controle com raiz podem ser encontrados em ATM e ST-II.
 
-Para um plano de controle não raiz, todos os membros que pertencem a uma sessão do MultiPoint são folhas, ou seja, nenhum participante especial agindo como uma \_ raiz c existe. Cada \_ folha c deve se adicionar a uma sessão do MultiPoint pré-existente que está sempre disponível (como no caso de um endereço IP multicast) ou foi configurada por meio de um mecanismo OOB (fora de banda) que está fora do escopo da especificação do Windows Sockets.
+Para um plano de controle não raiz, todos os membros que pertencem a uma sessão do MultiPoint são folhas, ou seja, nenhum participante especial agindo como uma \_ raiz c existe. cada \_ folha c deve se adicionar a uma sessão do multipoint pré-existente que está sempre disponível (como no caso de um endereço IP multicast) ou foi configurada por meio de um mecanismo OOB (fora de banda) que está fora do escopo da especificação do Windows sockets.
 
 Outra maneira de examinar isso é que uma raiz c \_ ainda existe, mas pode ser considerada na nuvem de rede, em oposição a um dos participantes. Como uma raiz de controle ainda existe, um plano de controle não-raiz também poderia ser considerado implicitamente enraizada. Exemplos para esse tipo de esquemas MultiPoint com raiz implícita são:
 
@@ -43,7 +43,7 @@ Em um plano de dados com raiz, existe um participante especial chamado d \_ root
 
 Em um plano de dados não raiz, todos os participantes são iguais, ou seja, todos os dados que eles enviam são entregues a todos os outros participantes na mesma sessão do MultiPoint. Da mesma forma \_ , cada nó de folha d pode receber dados de todas as outras folhas de d \_ e, em alguns casos, de outros nós que não estão participando da sessão do MultiPoint. Não existe nenhum \_ nó raiz d especial. IP-multicast não tem raiz no plano de dados.
 
-Observe que a pergunta de onde ocorre a duplicação da unidade de dados ou se uma única árvore compartilhada ou várias árvores de caminho mais curto são usadas para a distribuição do MultiPoint são problemas de protocolo e é irrelevante para a interface que o aplicativo usaria para executar comunicações do MultiPoint. Portanto, esses problemas não são abordados neste apêndice ou na interface do Windows Sockets.
+Observe que a pergunta de onde ocorre a duplicação da unidade de dados ou se uma única árvore compartilhada ou várias árvores de caminho mais curto são usadas para a distribuição do MultiPoint são problemas de protocolo e é irrelevante para a interface que o aplicativo usaria para executar comunicações do MultiPoint. portanto, esses problemas não são abordados neste apêndice ou na interface do Windows sockets.
 
 A tabela a seguir descreve a taxonomia descrita acima e indica como os esquemas existentes se encaixam em cada uma das categorias. Observe que não parece haver nenhum esquema existente que empregue um plano de controle sem raiz junto com um plano de dados com raiz.
 

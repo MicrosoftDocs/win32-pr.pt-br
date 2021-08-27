@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 55404f2e32f45e5b19e7b0cd4c109a6d5a8bcc13
-ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
+ms.openlocfilehash: fe1044b14e2bda6595730a80b2d474aae1e692e8647835a44fe86105963da659
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106187687"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120117976"
 ---
 # <a name="samplebiassamplebiassfloatfloatfloat-function-for-texturecube"></a>Função SampleBias:: SampleBias (S, float, float, float) para TextureCube
 
@@ -91,7 +91,7 @@ Um valor opcional para fixe os valores de LOD de exemplo para. Por exemplo, se v
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **\_ formato dxgi**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**
 

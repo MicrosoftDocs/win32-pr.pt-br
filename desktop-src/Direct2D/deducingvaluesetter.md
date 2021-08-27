@@ -1,6 +1,6 @@
 ---
-title: DeducingValueSetter (D2d1effecthelpers. h)
-description: Deduz a classe e os argumentos e, em seguida, chama um retorno de chamada setter de propriedade de função de membro para uma propriedade de tipo de valor.
+title: DeducingValueSetter (D2d1effecthelpers.h)
+description: Deduz a classe e os argumentos e, em seguida, chama um retorno de chamada de setter de propriedade de função de membro para uma propriedade de tipo de valor.
 ms.assetid: 4C3D64A8-0CC0-405A-A5B3-627C2DF25EA1
 keywords:
 - DeducingValueSetter Direct2D
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e002c5a36c8ac0b196dfc5fb25e11f7f9d63806
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bfba4f6123b9e097d5c9c5fedb2e872974fc3d15a5c54464eca4ae6e27c3048c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105760718"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120108856"
 ---
 # <a name="deducingvaluesetter"></a>DeducingValueSetter
 
-Deduz a classe e os argumentos e, em seguida, chama um retorno de chamada setter de propriedade de função de membro para uma propriedade de tipo de valor.
+Deduz a classe e os argumentos e, em seguida, chama um retorno de chamada de setter de propriedade de função de membro para uma propriedade de tipo de valor.
 
 > [!Note]  
 > DeducingValueSetter não deve ser chamado diretamente.
@@ -46,7 +46,7 @@ HRESULT DeducingValueSetter(
 
 | Requisito | Valor |
 |-------------------|------------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D2d1effecthelpers. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D2d1effecthelpers.h</dt> </dl> |
 
 
 

@@ -1,110 +1,35 @@
 ---
 title: API WFP
-description: A API da WFP (Windows Filtering Platform) é dividida nos componentes a seguir.
+description: a API da Windows filtering Platform (WFP) é dividida nos componentes a seguir.
 ms.assetid: ff3f0d74-7e0b-4a3e-b66d-eaa61b89038a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4230c82105f85c36e6fb112508a7128758b2ad60
-ms.sourcegitcommit: db89157e3be911fdce2e543e99faa31fb2403bc8
+ms.openlocfilehash: 9eadbb3fb6383999b2bb8ef14c99ecb8beab3f88
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "105810376"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122470143"
 ---
 # <a name="wfp-api"></a>API WFP
 
-A API da WFP (Windows Filtering Platform) é dividida nos componentes a seguir.
+a API da Windows filtering Platform (WFP) é dividida nos componentes a seguir.
 
 
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Componente</th>
-<th>Descrição</th>
-<th>Arquivos de cabeçalho</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td rowspan="2"><a href="/windows-hardware/drivers/ddi/_netvista/">API de texto explicativo</a> (FWPS) $ {remove} $<br />
-</td>
-<td><a href="/windows-hardware/drivers/ddi/_netvista/">Tipos de dados</a> usados por textos explicativos. <strong>Observação</strong>  Esses tipos de dados estão documentados no Microsoft Windows Driver Development Kit (DDK).<br/></td>
-<td><dl> fwpstypes. h<br />
-fwpstypes. idl<br />
-</dl></td>
-</tr>
-<tr class="even">
-<td><a href="/windows-hardware/drivers/ddi/_netvista/">Funções</a> e <a href="/windows-hardware/drivers/ddi/_netvista/">tipos enumerados</a> usados para implementar textos explicativos. <strong>Observação</strong>  Essas funções e os tipos enumerados são documentados no DDK.<br/></td>
-<td><dl> fwpsu. h<br />
-fwpsk. h<br />
-</dl></td>
 
-</tr>
-<tr class="odd">
-<td rowspan="2">API IKE/AuthIP (IKEEXT) $ {REMOVE} $<br />
-</td>
-<td><a href="fwp-enums.md">Tipos enumerados</a> e <a href="fwp-structs.md">estruturas</a> usadas para gerenciar a política e as associações de segurança do modo principal (mm) Ike e AuthIP.</td>
-<td><dl> iketypes. h<br />
-iketypes. idl<br />
-</dl></td>
-</tr>
-<tr class="even">
-<td><a href="fwp-ike-functions.md">Funções</a> usadas para gerenciar a política e associações de segurança IKE e AuthIP mm.</td>
-<td><dl> fwpmu. h<br />
-fwpmk. h<br />
-</dl></td>
+| Componente | Descrição | Arquivos de cabeçalho | 
+|-----------|-------------|--------------|
+| <a href="/windows-hardware/drivers/ddi/_netvista/">API de texto explicativo</a> (FWPS) $ {remove} $<br /> | <a href="/windows-hardware/drivers/ddi/_netvista/">Tipos de dados</a> usados por textos explicativos. <strong>Observação</strong>  esses tipos de dados estão documentados no Microsoft Windows Driver Development Kit (DDK).<br /> | <dl> fwpstypes. h<br />fwpstypes. idl<br /></dl> | 
+| <a href="/windows-hardware/drivers/ddi/_netvista/">Funções</a> e <a href="/windows-hardware/drivers/ddi/_netvista/">tipos enumerados</a> usados para implementar textos explicativos. <strong>Observação</strong>  Essas funções e os tipos enumerados são documentados no DDK.<br /> | <dl> fwpsu. h<br />fwpsk. h<br /></dl> | 
+| API IKE/AuthIP (IKEEXT) $ {REMOVE} $<br /> | <a href="fwp-enums.md">Tipos enumerados</a> e <a href="fwp-structs.md">estruturas</a> usadas para gerenciar a política e as associações de segurança do modo principal (mm) Ike e AuthIP. | <dl> iketypes. h<br />iketypes. idl<br /></dl> | 
+| <a href="fwp-ike-functions.md">Funções</a> usadas para gerenciar a política e associações de segurança IKE e AuthIP mm. | <dl> fwpmu. h<br />fwpmk. h<br /></dl> | 
+| API IPsec (IPSEC) $ {REMOVE} $<br /> | <a href="fwp-enums.md">Tipos enumerados</a> e <a href="fwp-structs.md">estruturas</a> usadas para gerenciar diretivas IPSec e associações de segurança. | <dl> ipsectypes. h<br />ipsectypes. idl<br /></dl> | 
+| <a href="fwp-ipsec-functions.md">Funções</a> usadas para gerenciar diretivas IPSec e associações de segurança. | <dl> fwpmu. h<br />fwpmk. h<br /></dl> | 
+| API de gerenciamento (FWPM) $ {REMOVE} $<br /> | <a href="fwp-enums.md">Tipos enumerados</a> e <a href="fwp-structs.md">estruturas</a> usadas para gerenciar o mecanismo de filtro. | <dl> fwpmtypes. h<br />fwpmtypes. idl<br /></dl> | 
+| <a href="fwp-mgmt-functions.md">Funções</a> usadas para gerenciar o mecanismo de filtro. Essas funções são usadas para executar as seguintes tarefas:<br /><ul><li>Definir e consultar filtros, provedores e textos explicativos.</li><li>Recuperar estatísticas de IPsec.</li><li>Configure a plataforma de filtragem de Windows.</li></ul> | <dl> fwpmu. h<br />fwpmk. h<br /></dl> | 
+| API compartilhada (FWP) | <a href="fwp-enums.md">tipos enumerados</a> fundamentais e <a href="fwp-structs.md">estruturas</a> compartilhadas na plataforma de filtragem de Windows. | <dl> fwptypes. h<br />fwptypes. idl<br /></dl> | 
 
-</tr>
-<tr class="odd">
-<td rowspan="2">API IPsec (IPSEC) $ {REMOVE} $<br />
-</td>
-<td><a href="fwp-enums.md">Tipos enumerados</a> e <a href="fwp-structs.md">estruturas</a> usadas para gerenciar diretivas IPSec e associações de segurança.</td>
-<td><dl> ipsectypes. h<br />
-ipsectypes. idl<br />
-</dl></td>
-</tr>
-<tr class="even">
-<td><a href="fwp-ipsec-functions.md">Funções</a> usadas para gerenciar diretivas IPSec e associações de segurança.</td>
-<td><dl> fwpmu. h<br />
-fwpmk. h<br />
-</dl></td>
-
-</tr>
-<tr class="odd">
-<td rowspan="2">API de gerenciamento (FWPM) $ {REMOVE} $<br />
-</td>
-<td><a href="fwp-enums.md">Tipos enumerados</a> e <a href="fwp-structs.md">estruturas</a> usadas para gerenciar o mecanismo de filtro.</td>
-<td><dl> fwpmtypes. h<br />
-fwpmtypes. idl<br />
-</dl></td>
-</tr>
-<tr class="even">
-<td><a href="fwp-mgmt-functions.md">Funções</a> usadas para gerenciar o mecanismo de filtro. Essas funções são usadas para executar as seguintes tarefas:<br/>
-<ul>
-<li>Definir e consultar filtros, provedores e textos explicativos.</li>
-<li>Recuperar estatísticas de IPsec.</li>
-<li>Configure a plataforma de filtragem do Windows.</li>
-</ul></td>
-<td><dl> fwpmu. h<br />
-fwpmk. h<br />
-</dl></td>
-
-</tr>
-<tr class="odd">
-<td>API compartilhada (FWP)</td>
-<td><a href="fwp-enums.md">Tipos enumerados</a> fundamentais e <a href="fwp-structs.md">estruturas</a> compartilhadas na plataforma de filtragem do Windows.</td>
-<td><dl> fwptypes. h<br />
-fwptypes. idl<br />
-</dl></td>
-</tr>
-</tbody>
-</table>
 
 
 
@@ -127,9 +52,9 @@ A tabela a seguir lista os arquivos de cabeçalho do Win32 que definem as funç�
 | Arquivos de cabeçalho | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | fwpmk. h      | Protótipos de função em modo kernel para componentes FWPM, IPsec e IKEEXT. Disponível somente no DDK.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| fwpmu. h      | Protótipos de função de modo de usuário para componentes FWPM, IPsec e IKEEXT. Disponível apenas no Microsoft Windows Software Development Kit (SDK).                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| fwpmu. h      | Protótipos de função de modo de usuário para componentes FWPM, IPsec e IKEEXT. disponível somente no Microsoft Windows Software Development Kit (SDK).                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | fwpsk. h      | Protótipos de função no modo kernel e tipos enumerados para o componente FWPS. Disponível somente no DDK.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| fwpsu. h      | Protótipos de função de modo de usuário e tipos enumerados para o componente FWPS. Disponível somente no SDK do Windows. **Observação**  Os tipos enumerados do modo de usuário FWPS são idênticos aos tipos enumerados do modo kernel FWPS. Em consequência, esses tipos são documentados apenas no DDK.<br/> **Observação**  Os protótipos de função FWPS de modo de usuário são idênticos aos protótipos de função FWPS de modo kernel com a exceção do código de retorno. As funções FWPS de modo de usuário retornam uma **DWORD**, enquanto as funções FWPS de modo kernel retornam um **NTSTATUS**. Em consequência, essas funções são documentadas somente no DDK.<br/> |
+| fwpsu. h      | Protótipos de função de modo de usuário e tipos enumerados para o componente FWPS. disponível somente no SDK do Windows. **Observação**  Os tipos enumerados do modo de usuário FWPS são idênticos aos tipos enumerados do modo kernel FWPS. Em consequência, esses tipos são documentados apenas no DDK.<br/> **Observação**  Os protótipos de função FWPS de modo de usuário são idênticos aos protótipos de função FWPS de modo kernel com a exceção do código de retorno. As funções FWPS de modo de usuário retornam uma **DWORD**, enquanto as funções FWPS de modo kernel retornam um **NTSTATUS**. Em consequência, essas funções são documentadas somente no DDK.<br/> |
 
 
 

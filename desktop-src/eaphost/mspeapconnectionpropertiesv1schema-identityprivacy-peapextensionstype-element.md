@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7195ce43fb3f1a1f1710fe7aee3f5f74e18f3786
-ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
+ms.openlocfilehash: 1997f802c68c56232ee0680fd77d11007d88b7670c9b3277ddfb2d78901961bb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111989211"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120094306"
 ---
 # <a name="identityprivacy-peapextensionstype-element"></a>Elemento IdentityPrivacy (PeapExtensionsType)
 
-O **elemento IdentityPrivacy (PeapExtensionsType)** indica se a identidade verdadeira de um usuário ou uma identidade anônima é enviada.
+O elemento **IdentityPrivacy (PeapExtensionsType)** indica se a identidade verdadeira de um usuário ou uma identidade anônima é enviada.
 
 ``` syntax
 <xs:element
@@ -32,11 +32,11 @@ O **elemento IdentityPrivacy (PeapExtensionsType)** indica se a identidade verda
  />
 ```
 
-O elemento é definido pelo [**elemento PeapExtensionsType.**](mspeapconnectionpropertiesv1schema-peapextensionstype-complextype.md)
+O elemento é definido pelo elemento [**PeapExtensionsType**](mspeapconnectionpropertiesv1schema-peapextensionstype-complextype.md) .
 
 ## <a name="remarks"></a>Comentários
 
-O **elemento IdentityPrivacy** é opcional.
+O elemento **IdentityPrivacy** é opcional.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -44,8 +44,8 @@ O **elemento IdentityPrivacy** é opcional.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos \[ da área de trabalho do Windows 7\]<br/>              |
-| Servidor mínimo com suporte<br/> | Somente aplicativos da área de trabalho do Windows Server 2008 \[ R2\]<br/> |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>              |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/> |
 
 
 
@@ -74,7 +74,7 @@ O **elemento IdentityPrivacy** é opcional.
 [Esquema mspeapconnectionpropertiesv1](mspeapconnectionpropertiesv1schema-schema.md)
 </dt> <dt>
 
-[Elementos de esquema mspeapconnectionpropertiesv1](mspeapconnectionpropertiesv1schema-elements.md)
+[Elementos do esquema mspeapconnectionpropertiesv1](mspeapconnectionpropertiesv1schema-elements.md)
 </dt> <dt>
 
 [**IdentityPrivacy(PeapExtensionsType)**](mspeapconnectionpropertiesv2-identityprivacy-peapextensionstype-element.md)

@@ -4,12 +4,12 @@ ms.assetid: b41a56f9-b57e-4133-ae7d-c51b36bab44f
 title: ICE82
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8aa6ba2e0bd07af06bf90c604c333966b5581ba3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cf620bd58ca59315796941c6e8d9d3e4c12cdca9064d2be79058c89201a91bad
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103662793"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120105226"
 ---
 # <a name="ice82"></a>ICE82
 

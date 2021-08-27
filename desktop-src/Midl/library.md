@@ -1,6 +1,6 @@
 ---
-title: atributo de biblioteca
-description: A instrução Library contém todas as informações que o compilador MIDL usa para gerar uma biblioteca de tipos.
+title: atributo library
+description: A instrução library contém todas as informações que o compilador MIDL usa para gerar uma biblioteca de tipos.
 ms.assetid: d73acb17-abe4-4c31-a264-a131d1f9fa51
 keywords:
 - atributo de biblioteca MIDL
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 100c901c6b5d86ed3420d51e459627bdb5b461b8
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 4fc1f836174a57f6edfddd0575a10d40367c061c034369a1582cc8bf8ce17a53
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105753460"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120086366"
 ---
-# <a name="library-attribute"></a>atributo de biblioteca
+# <a name="library-attribute"></a>atributo library
 
-A instrução **library** contém todas as informações que o compilador MIDL usa para gerar uma biblioteca de tipos.
+A **instrução** library contém todas as informações que o compilador MIDL usa para gerar uma biblioteca de tipos.
 
 ``` syntax
 [
@@ -38,17 +38,17 @@ library library-name
 
 <dl> <dt>
 
-*UUID-número* 
+*uuid-number* 
 </dt> <dd>
 
 Especifica um número de identificação universalmente exclusivo para a biblioteca.
 
 </dd> <dt>
 
-*lista de atributos opcionais* 
+*optional-attribute-list* 
 </dt> <dd>
 
-Especifica atributos adicionais que se aplicam a toda a instrução da **biblioteca** . Os atributos permitidos incluem **\[** [**controle**](control.md) **\]** , **\[** [**HelpContext**](helpcontext.md) **\]** , **\[** [**HelpFile**](helpfile.md) **\]** , **\[** [**HelpString**](helpstring.md) **\]** , **\[** [**Hidden**](hidden.md) **\]** , **\[** [**LCID**](lcid.md) **\]** , **\[** [**Restricted**](restricted.md) **\]** e **\[** [**version**](version.md) **\]** .
+Especifica atributos adicionais que se aplicam à instrução **de biblioteca** inteira. Os atributos que permitem **\[** [**incluem controle**](control.md) **\]** , **\[** [**helpcontext,**](helpcontext.md) **\]** **\[** [**helpfile**](helpfile.md), **\]** **\[** [**helpstring**](helpstring.md), **\]** **\[** [**hidden**](hidden.md) **\]** , **\[** [**lcid,**](lcid.md) **\]** **\[** [**restricted**](restricted.md)e **\]** **\[** [**version**](version.md) **\]** .
 
 </dd> <dt>
 
@@ -59,7 +59,7 @@ O nome pelo qual os componentes de software se referem à **biblioteca**.
 
 </dd> <dt>
 
-*bibliotecas-definição-instruções* 
+*library-definition-statements* 
 </dt> <dd>
 
 Uma ou mais instruções MIDL que definem o conteúdo da **biblioteca**.
@@ -68,7 +68,7 @@ Uma ou mais instruções MIDL que definem o conteúdo da **biblioteca**.
 
 ## <a name="remarks"></a>Comentários
 
-As instruções dentro do bloco de biblioteca podem usar elementos que são declarados dentro ou fora do bloco de biblioteca. As instruções de biblioteca podem usar esses elementos como tipos base, herdando desses elementos ou simplesmente fazendo referência a eles em uma linha, da seguinte maneira:
+Instruções dentro do bloco de biblioteca podem usar elementos declarados dentro ou fora do bloco de biblioteca. As instruções de biblioteca podem usar esses elementos como tipos base, herdando desses elementos ou simplesmente referenciando-os em uma linha, da seguinte maneira:
 
 ``` syntax
 interface MyFace 
@@ -87,9 +87,9 @@ library
 };
 ```
 
-O compilador MIDL criará uma biblioteca de tipos que inclui definições para cada elemento dentro do bloco de biblioteca, além de definições para quaisquer elementos definidos fora e referenciados de dentro do bloco de biblioteca.
+O compilador MIDL criará uma biblioteca de tipos que inclui definições para cada elemento dentro do bloco de biblioteca, além de definições para todos os elementos definidos fora e referenciados de dentro do bloco de biblioteca.
 
-Para obter informações sobre como gerar uma biblioteca de tipos e stubs de proxy e cabeçalhos de um único arquivo IDL, consulte [gerando uma DLL de proxy e uma biblioteca de tipos de um único arquivo IDL](generating-a-proxy-dll-and-a-type-library-from-a-single-idl-file-2.md).
+Para obter informações sobre como gerar uma biblioteca de tipos e os stubs de proxy e os headers de um único arquivo IDL, consulte Gerando uma DLL de proxy e uma biblioteca de tipos de um único arquivo [IDL.](generating-a-proxy-dll-and-a-type-library-from-a-single-idl-file-2.md)
 
 ## <a name="examples"></a>Exemplos
 
@@ -113,7 +113,7 @@ library Hello
 [Conteúdo de uma biblioteca de tipos](/previous-versions/windows/desktop/automat/contents-of-a-type-library)
 </dt> <dt>
 
-[**controlo**](control.md)
+[**Controle**](control.md)
 </dt> <dt>
 
 [Gerando uma biblioteca de tipos com MIDL](generating-a-type-library-with-midl-2.md)
@@ -128,21 +128,21 @@ library Hello
 [**helpstring**](helpstring.md)
 </dt> <dt>
 
-[**oculto**](hidden.md)
+[**Escondidos**](hidden.md)
 </dt> <dt>
 
-[**LCID**](lcid.md)
+[**Lcid**](lcid.md)
 </dt> <dt>
 
-[Sintaxe do arquivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintaxe de arquivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
-[**Restricted**](restricted.md)
+[**Restrito**](restricted.md)
 </dt> <dt>
 
 [**Versão**](version.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

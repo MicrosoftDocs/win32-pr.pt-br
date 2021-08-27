@@ -1,7 +1,7 @@
 ---
-description: Descreve um vetor de dois componentes, incluindo sobrecargas de operador e conversões de tipo. O mesmo que um D3DXVECTOR2, mas usa valores de ponto flutuante de 16 bits para x, y e z.
+description: Descreve um vetor de dois componentes, incluindo sobrecargas de operador e casts de tipo. O mesmo que um D3DXVECTOR2, mas usa valores de ponto flutuante de 16 bits para x, y e z.
 ms.assetid: b410d2e1-a006-4563-928a-c9000f73c224
-title: Estrutura de D3DXVECTOR2_16F (D3DX10Math. h)
+title: D3DXVECTOR2_16F (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: 677f4f8c47cdc70791ad98e18582810bbff23920
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e7d1c24b40674fe2df202a0cdea42dc7ad96728a8710c21e443642c8b6152cea
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103663976"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120120256"
 ---
-# <a name="d3dxvector2_16f-structure"></a>\_Estrutura D3DXVECTOR2 16F
+# <a name="d3dxvector2_16f-structure"></a>Estrutura D3DXVECTOR2 \_ 16F
 
-Descreve um vetor de dois componentes, incluindo sobrecargas de operador e conversões de tipo. O mesmo que um [**D3DXVECTOR2**](d3d10-d3dxvector2.md), mas usa valores de ponto flutuante de 16 bits para x, y e z.
+Descreve um vetor de dois componentes, incluindo sobrecargas de operador e casts de tipo. O mesmo que [**um D3DXVECTOR2**](d3d10-d3dxvector2.md), mas usa valores de ponto flutuante de 16 bits para x, y e z.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,7 +43,7 @@ typedef struct D3DXVECTOR2_16F {
 **x**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -54,7 +54,7 @@ O componente x.
 **y**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -64,9 +64,9 @@ O componente y.
 
 ## <a name="remarks"></a>Comentários
 
-**D3DXVECTOR2 \_ 16F** tem as seguintes extensões de C++.
+**D3DXVECTOR2 \_ 16F** tem as seguintes extensões C++.
 
-### <a name="d3dxvector2_16f-extensions"></a>\_Extensões D3DXVECTOR2 16F
+### <a name="d3dxvector2_16f-extensions"></a>Extensões D3DXVECTOR2 \_ 16F
 
 
 ```
@@ -103,7 +103,7 @@ public:
 
 | Requisito | Valor |
 |-------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3DX10Math. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3DX10Math.h</dt> </dl> |
 
 
 

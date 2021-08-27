@@ -4,12 +4,12 @@ ms.assetid: 92e644be-df8b-415d-ac8e-c0c30c85f844
 title: RenderSharedEventDriven
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9901896b962717ed72fd36d022eef9510d7cb916
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: aafab0e2a9d073a963653ebaf53106ee737327a516df300a810632b0822c26f1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826481"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120109403"
 ---
 # <a name="rendersharedeventdriven"></a>RenderSharedEventDriven
 
@@ -50,9 +50,9 @@ Este exemplo está disponível nos locais a seguir.
 
 
 
-| Local    | Caminho/URL                                                                                                 |
+| Localização    | Caminho/URL                                                                                                 |
 |-------------|----------------------------------------------------------------------------------------------------------|
-| SDK do Windows | \\Arquivos de programas \\ Microsoft SDKs \\ Windows \\ v 7.0 \\ amostras \\ áudio multimídia \\ \\ RenderSharedEventDriven \\ ... |
+| SDK do Windows | \\arquivos de programas \\ Microsoft SDKs \\ Windows \\ v 7.0 \\ amostras \\ áudio multimídia \\ \\ RenderSharedEventDriven \\ ... |
 
 
 
@@ -62,9 +62,9 @@ Este exemplo está disponível nos locais a seguir.
 
 Para criar o exemplo de RenderSharedEventDriven, use as seguintes etapas:
 
-1.  Abra o Shell CMD para o SDK do Windows e altere para o diretório de exemplo RenderSharedEventDriven.
-2.  Execute o comando `start WASAPIRenderSharedEventDriven.sln` no diretório RenderSharedEventDriven para abrir o projeto WASAPIRenderSharedEventDriven na janela do Visual Studio.
-3.  De dentro da janela, selecione a configuração da solução de **depuração** ou **versão** , selecione o menu **Compilar** na barra de menus e selecione a opção **Compilar** . Se você não abrir o Visual Studio a partir do Shell CMD para o SDK, o Visual Studio não terá acesso ao ambiente de compilação do SDK. Nesse caso, o exemplo não será compilado, a menos que você defina explicitamente a variável de ambiente MSSdk, que é usada no arquivo de projeto, WASAPIRenderSharedEventDriven. vcproj.
+1.  abra o shell CMD para o SDK do Windows e altere para o diretório de exemplo RenderSharedEventDriven.
+2.  execute o comando `start WASAPIRenderSharedEventDriven.sln` no diretório RenderSharedEventDriven para abrir o projeto WASAPIRenderSharedEventDriven na janela Visual Studio.
+3.  De dentro da janela, selecione a configuração da solução de **depuração** ou **versão** , selecione o menu **Compilar** na barra de menus e selecione a opção **Compilar** . se você não abrir Visual Studio do shell CMD para o SDK, Visual Studio não terão acesso ao ambiente de compilação do sdk. Nesse caso, o exemplo não será compilado, a menos que você defina explicitamente a variável de ambiente MSSdk, que é usada no arquivo de projeto, WASAPIRenderSharedEventDriven. vcproj.
 
 ## <a name="running-the-sample"></a>Executando o exemplo
 

@@ -1,19 +1,19 @@
 ---
-description: Windows Installer pode reparar, substituir e verificar arquivos contidos em um aplicativo. Uma reinstalação de aplicativo parcial ou completa poderá ser necessária se algum arquivo ou entrada de registro associado a qualquer recurso estiver ausente ou corrompido.
+description: Windows O instalador pode reparar, substituir e verificar arquivos contidos em um aplicativo. Uma reinstalação de aplicativo parcial ou completa poderá ser necessária se algum arquivo ou entrada de registro associado a qualquer recurso estiver ausente ou corrompido.
 ms.assetid: fab23ab9-f1ab-4743-b883-cffc29b0124b
 title: Reinstalando um recurso ou aplicativo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 645f7dbf95204d96202c71a120eafb6e6e054ac6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 803fc3271cb69280ae84ae096e7a411dbf599f0a321bf15baac6dbd5ca8e1512
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104091603"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120085996"
 ---
 # <a name="reinstalling-a-feature-or-application"></a>Reinstalando um recurso ou aplicativo
 
-Windows Installer pode reparar, substituir e verificar arquivos contidos em um aplicativo. Uma reinstalação de aplicativo parcial ou completa poderá ser necessária se algum arquivo ou entrada de registro associado a qualquer recurso estiver ausente ou corrompido.
+Windows O instalador pode reparar, substituir e verificar arquivos contidos em um aplicativo. Uma reinstalação de aplicativo parcial ou completa poderá ser necessária se algum arquivo ou entrada de registro associado a qualquer recurso estiver ausente ou corrompido.
 
 Quando um recurso ou aplicativo é reinstalado, todos os serviços, variáveis de ambiente e ações personalizadas que pertencem ao recurso ou ao aplicativo também são reinstalados. Observe que isso significa que qualquer alteração feita nas variáveis de ambiente entre a instalação original e a reinstalação será perdida.
 

@@ -4,12 +4,12 @@ ms.assetid: 8c422592-ef59-4030-b684-81e4e552c6b0
 title: Comando IMC_OPENSTATUSWINDOW (IMM. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8cd0b5e19ef6a026459eedb050e9ac9587b5ea24
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 263640a3f104c9abf72a7eb5b33bce6ff3813ca40645c18b179b9b31a95fdda9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827292"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120107286"
 ---
 # <a name="imc_openstatuswindow-command"></a>\_Comando OPENSTATUSWINDOW do IMC
 
@@ -58,7 +58,7 @@ Se a janela de status já for mostrada, esse comando não fará nada. Embora o a
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                           |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                 |
-| Cabeçalho<br/>                   | <dl> <dt>IMM. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Imm. h (incluir Windows. h)</dt> </dl> |
 
 
 

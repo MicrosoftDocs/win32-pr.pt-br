@@ -1,7 +1,7 @@
 ---
-description: Essa classe é a classe de tipo de evento para eventos de término de operação de arquivo. A sintaxe a seguir é simplificada do código MOF.
+description: Essa classe é a classe de tipo de evento para eventos de fim de operação de arquivo. A sintaxe a seguir é simplificada do código MOF.
 ms.assetid: 3925d5bf-f412-4248-a61f-e667efa9debd
-title: Classe FileIo_OpEnd
+title: FileIo_OpEnd classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: d3f1c495cf44b84f8d7661b40cadec6ea255c6a0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 74042df74f8e128c4d92b6e4f1c886a7bba2f673c1a8a998a4b7f251475c3f93
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103662798"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120130586"
 ---
-# <a name="fileio_opend-class"></a>\_Classe aberta de FileIo
+# <a name="fileio_opend-class"></a>Classe \_ OpEnd FileIo
 
-Essa classe é a classe de tipo de evento para eventos de término de operação de arquivo.
+Essa classe é a classe de tipo de evento para eventos de fim de operação de arquivo.
 
 A sintaxe a seguir é simplificada do código MOF.
 
@@ -42,58 +42,58 @@ class FileIo_OpEnd : FileIo
 
 ## <a name="members"></a>Membros
 
-A **classe \_ aberta FileIo** tem estes tipos de membros:
+A **classe \_ OpEnd FileIo** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A **classe \_ aberta FileIo** tem essas propriedades.
+A **classe \_ OpEnd FileIo** tem essas propriedades.
 
 <dl> <dt>
 
-**ExtraInfo**
+**Extrainfo**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (2), ponteiro
+Qualificadores: WmiDataId(2), Pointer
 </dt> </dl>
 
-Informações extras retornadas pelo sistema de arquivos para a operação. Por exemplo, para uma solicitação de leitura, o número real de bytes lidos.
+Informações adicionais retornadas pelo sistema de arquivos para a operação. Por exemplo, para uma solicitação de leitura, o número real de bytes que foram lidos.
 
 </dd> <dt>
 
 **IrpPtr**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (1), ponteiro
+Qualificadores: WmiDataId(1), Pointer
 </dt> </dl>
 
-Pacote de solicitação de e/s. Essa propriedade identifica a atividade de e/s que está terminando.
+Pacote de solicitação de E/S. Essa propriedade identifica a atividade de E/S que está terminando.
 
 </dd> <dt>
 
 **NtStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (3)
+Qualificadores: WmiDataId(3)
 </dt> </dl>
 
 Valor de retorno da operação.
@@ -102,7 +102,7 @@ Valor de retorno da operação.
 
 ## <a name="remarks"></a>Comentários
 
-Os eventos de [**FileIo**](fileio.md) são registrados no início da operação. Os eventos abertos podem ser habilitados separadamente para indicar o fim dessas operações. O IRP pode ser usado para correlacionar os eventos de início e término.
+[**Os eventos fileIo**](fileio.md) são registrados no início da operação. Eventos OpEnd podem ser habilitados separadamente para indicar o final dessas operações. O Irp pode ser usado para correlacionar os eventos de início e término.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -110,8 +110,8 @@ Os eventos de [**FileIo**](fileio.md) são registrados no início da operação.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
@@ -119,7 +119,7 @@ Os eventos de [**FileIo**](fileio.md) são registrados no início da operação.
 
 <dl> <dt>
 
-[**FileIo**](fileio.md)
+[**Fileio**](fileio.md)
 </dt> </dl>
 
  

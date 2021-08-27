@@ -1,27 +1,27 @@
 ---
-description: 'Saiba mais sobre: membros do Int16ColumnValue'
-title: Membros do Int16ColumnValue
+description: 'Saiba mais sobre: Membros int16ColumnValue'
+title: Membros Int16ColumnValue
 TOCTitle: Int16ColumnValue members
 ms:assetid: AllMembers.T:Microsoft.Isam.Esent.Interop.Int16ColumnValue
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.int16columnvalue_members(v=EXCHG.10)
 ms:contentKeyID: 55103326
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 16b49b81707f9e2b8d463c4c93b389281d7107f8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8546476fb535065de7136e2e87f21edd2dd1d2bf15b9a5b2080a66b1965c1be0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104569110"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120064016"
 ---
-# <a name="int16columnvalue-members"></a>Membros do Int16ColumnValue
+# <a name="int16columnvalue-members"></a>Membros Int16ColumnValue
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-Um valor de coluna [Int16](/dotnet/api/system.int16) .
+Um [valor de coluna Int16.](/dotnet/api/system.int16)
 
-O tipo [Int16ColumnValue](./int16columnvalue-class.md) expõe os membros a seguir.
+O [tipo Int16ColumnValue](./int16columnvalue-class.md) expõe os membros a seguir.
 
 ## <a name="constructors"></a>Construtores
 
@@ -59,47 +59,47 @@ Parte superior
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn334166(v=exchg.10).md">Columnid</a></td>
-<td>Obtém ou define o columnid a ser definido ou recuperado. (Herdado de <a href="dn334206(v=exchg.10).md">columnvalue</a>.)</td>
+<td>Obtém ou define a columnid a ser definida ou recuperada. (Herdado de <a href="dn334206(v=exchg.10).md">ColumnValue</a>.)</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn334212(v=exchg.10).md">Erro</a></td>
-<td>Obtém o aviso gerado pela recuperação ou definição desta coluna. (Herdado de <a href="dn334206(v=exchg.10).md">columnvalue</a>.)</td>
+<td>Obtém o aviso gerado recuperando ou configurando essa coluna. (Herdado de <a href="dn334206(v=exchg.10).md">ColumnValue</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn334165(v=exchg.10).md">ItagSequence</a></td>
-<td>Obtém ou define a sequência de iTag da coluna. (Herdado de <a href="dn334206(v=exchg.10).md">columnvalue</a>.)</td>
+<td>Obtém ou define a sequência de itag da coluna. (Herdado de <a href="dn334206(v=exchg.10).md">ColumnValue</a>.)</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn334225(v=exchg.10).md">Comprimento</a></td>
-<td>Obtém o comprimento de bytes de um valor de coluna, que será zero se a coluna for nula, caso contrário, ela corresponderá ao tamanho dessa coluna de tamanho fixo. (Herdado <a href="dn334171(v=exchg.10).md">de &lt; ColumnValueOfStruct &gt; T</a>.)</td>
+<td>Obtém o comprimento de byte de um valor de coluna, que é zero se a coluna for nula; caso contrário, corresponde ao Tamanho dessa coluna de tamanho fixo. (Herdado <a href="dn334171(v=exchg.10).md">de ColumnValueOfStruct &lt; T &gt; </a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn334169(v=exchg.10).md">RetrieveGrbit</a></td>
-<td>Obtém ou define opções de recuperação de coluna. (Herdado de <a href="dn334206(v=exchg.10).md">columnvalue</a>.)</td>
+<td>Obtém ou define opções de recuperação de coluna. (Herdado de <a href="dn334206(v=exchg.10).md">ColumnValue</a>.)</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn334215(v=exchg.10).md">SetGrbit</a></td>
-<td>Obtém ou define opções de atualização de coluna. (Herdado de <a href="dn334206(v=exchg.10).md">columnvalue</a>.)</td>
+<td>Obtém ou define opções de atualização de coluna. (Herdado de <a href="dn334206(v=exchg.10).md">ColumnValue</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.protproperty(exchg.10).gif" title="Propriedade protegida" alt="Protected property" /></td>
 <td><a href="dn351012(v=exchg.10).md">Tamanho</a></td>
-<td>Obtém o tamanho do valor na coluna. Isso retorna 0 para colunas de tamanho variável (ou seja, binary e String). (Substitui <a href="dn334172(v=exchg.10).md">columnvalue. Size</a>.)</td>
+<td>Obtém o tamanho do valor na coluna. Isso retorna 0 para colunas de tamanho variável (ou seja, binário e cadeia de caracteres). (Substitui <a href="dn334172(v=exchg.10).md">ColumnValue.Size</a>.)</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn334180(v=exchg.10).md">Valor</a></td>
-<td>Obtém ou define o valor na estrutura. (Herdado <a href="dn334171(v=exchg.10).md">de &lt; ColumnValueOfStruct &gt; T</a>.)</td>
+<td>Obtém ou define o valor no struct. (Herdado <a href="dn334171(v=exchg.10).md">de ColumnValueOfStruct &lt; T &gt; </a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn334226(v=exchg.10).md">ValueAsObject</a></td>
-<td>Obtém o último conjunto ou o valor recuperado da coluna. O valor é retornado como um objeto genérico. (Herdado <a href="dn334171(v=exchg.10).md">de &lt; ColumnValueOfStruct &gt; T</a>.)</td>
+<td>Obtém o último valor definido ou recuperado da coluna. O valor é retornado como um objeto genérico. (Herdado <a href="dn334171(v=exchg.10).md">de ColumnValueOfStruct &lt; T &gt; </a>.)</td>
 </tr>
 </tbody>
 </table>
@@ -121,7 +121,7 @@ Parte superior
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
 <td><a href="dn334178(v=exchg.10).md">CheckDataCount</a></td>
-<td>Verifique se os dados recuperados são exatamente o tamanho necessário para a estrutura. Uma exceção será lançada se houver uma incompatibilidade. (Herdado <a href="dn334171(v=exchg.10).md">de &lt; ColumnValueOfStruct &gt; T</a>.)</td>
+<td>Certifique-se de que os dados recuperados são exatamente o tamanho necessário para a estrutura. Uma exceção será lançada se houver uma incompatibilidade. (Herdado <a href="dn334171(v=exchg.10).md">de ColumnValueOfStruct &lt; T &gt; </a>.)</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
@@ -140,23 +140,23 @@ Parte superior
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">Gettype</a></td>
 <td>(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
 <td><a href="dn351015(v=exchg.10).md">GetValueFromBytes</a></td>
-<td>Dados obtidos recuperados do ESENT, decodifique os dados e defina o valor no objeto Columnvalue. (Substitui <a href="dn334208(v=exchg.10).md">columnvalue. GetValueFromBytes ([], Int32, Int32, Int32)</a>.)</td>
+<td>Dados recuperados do ESENT, decodificar os dados e definir o valor no objeto ColumnValue. (Substitui <a href="dn334208(v=exchg.10).md">ColumnValue.GetValueFromBytes([], Int32, Int32, Int32)</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></td>
+<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Memberwiseclone</a></td>
 <td>(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn334223(v=exchg.10).md">ToString</a></td>
-<td>Obtém uma representação de cadeia de caracteres deste objeto. (Herdado <a href="dn334171(v=exchg.10).md">de &lt; ColumnValueOfStruct &gt; T</a>.)</td>
+<td>Obtém uma representação de cadeia de caracteres desse objeto. (Herdado <a href="dn334171(v=exchg.10).md">de ColumnValueOfStruct &lt; T &gt; </a>.)</td>
 </tr>
 </tbody>
 </table>
@@ -170,4 +170,4 @@ Parte superior
 
 [Classe Int16ColumnValue](./int16columnvalue-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

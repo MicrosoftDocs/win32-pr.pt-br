@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: função JetSetColumnDefaultValue'
+description: 'Saiba mais sobre: Função JetSetColumnDefaultValue'
 title: Função JetSetColumnDefaultValue
 TOCTitle: JetSetColumnDefaultValue Function
 ms:assetid: 74bfaf50-6c2e-4907-b931-d50ad314b552
@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ff0f704c30737d6cfc2d8bd823da8207e8d7d8c3fb4458687baf8bc400718304
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 402326a34a0551262d453b93db2287c69a7160b3
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117703844"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122469713"
 ---
 # <a name="jetsetcolumndefaultvalue-function"></a>Função JetSetColumnDefaultValue
 
@@ -32,7 +32,7 @@ _**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jetsetcolumndefaultvalue-function"></a>Função JetSetColumnDefaultValue
 
-A função **JetSetColumnDefaultValue** pode ser usada para alterar o valor padrão de uma coluna existente.
+A **função JetSetColumnDefaultValue** pode ser usada para alterar o valor padrão de uma coluna existente.
 
 ```cpp
     JET_ERR JET_API JetSetColumnDefaultValue(
@@ -50,11 +50,11 @@ A função **JetSetColumnDefaultValue** pode ser usada para alterar o valor padr
 
 *sesid*
 
-A sessão a ser usada para esta chamada.
+A sessão a ser usada para essa chamada.
 
-*DBID*
+*Dbid*
 
-O banco de dados a ser usado para esta chamada.
+O banco de dados a ser usado para essa chamada.
 
 *szTableName*
 
@@ -64,7 +64,7 @@ O nome da tabela que contém a coluna que será afetada.
 
 O nome da coluna cujo valor padrão será alterado.
 
-*pvData*
+*Pvdata*
 
 O buffer de entrada que contém o novo valor padrão.
 
@@ -78,152 +78,46 @@ Reservado para uso futuro.
 
 ### <a name="return-value"></a>Valor Retornado
 
-Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de Armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
-
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Código de retorno</p></th>
-<th><p>Descrição</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>A operação foi concluída com sucesso.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errClientRequestToStopJetService</p></td>
-<td><p>Não é possível concluir a operação porque toda a atividade na instância associada à sessão foi interrompida como resultado de uma chamada para <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errColumnIllegalNull</p></td>
-<td><p>O mesmo que JET_errNullInvalid.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errColumnInUse</p></td>
-<td><p>Esta coluna especificada está atualmente em uso por um índice.</p>
-<p><strong>JetSetColumnDefaultValue</strong> não pode alterar o valor padrão de uma coluna que é referenciada na definição de um índice. Isso ocorre porque isso pode alterar o conteúdo do índice.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errColumnNotFound</p></td>
-<td><p>Esta coluna especificada não existe para esta tabela.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errInstanceUnavailable</p></td>
-<td><p>Não é possível concluir a operação porque a instância associada à sessão encontrou um erro fatal que exige que o acesso a todos os dados seja revogado para proteger a integridade desses dados. esse erro só será retornado pelo Windows XP e versões posteriores.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInvalidDatabaseId</p></td>
-<td><p>A ID de banco de dados especificada era inválida.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errInvalidName</p></td>
-<td><p>Um dos nomes de objeto especificados era inválido. Todos os nomes de objeto devem estar em conformidade com o mesmo conjunto de regras. Essas regras são as seguintes:</p>
-<ul>
-<li><p>Os nomes de objeto devem ser compostos por caracteres ASCII.</p></li>
-<li><p>Os nomes de objeto devem ter pelo menos um caractere de comprimento.</p></li>
-<li><p>Os nomes de objeto não podem exceder JET_cbNameMost (64) caracteres de comprimento.</p></li>
-<li><p>Os nomes de objeto não podem começar com um espaço.</p></li>
-<li><p>Os nomes de objeto não podem conter caracteres de controle ASCII (0x00 a 0x1F).</p></li>
-<li><p>Os nomes de objeto não podem conter um ponto de exclamação (!), período (.), colchete à esquerda ([) ou caractere de colchete direito (]).</p></li>
-<li><p>Depois de validado, somente a parte da cadeia de caracteres até o primeiro espaço (se houver) será usada para o nome do objeto. Isso significa que os nomes de objeto também não podem conter um espaço.</p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errNotInitialized</p></td>
-<td><p>Não é possível concluir a operação porque a instância associada à sessão ainda não foi inicializada.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errNullInvalid</p></td>
-<td><p>Não foi possível definir a coluna como nula. Isso acontece para <strong>JetSetColumnDefaultValue</strong> quando:</p>
-<ul>
-<li><p><em>cbData</em> é zero.</p></li>
-<li><p><strong>pvData</strong> é nulo.</p></li>
-</ul>
-<p>Portanto, não é possível definir o valor padrão de uma coluna (back) para NULL ou para um valor de comprimento zero.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errObjectNotFound</p></td>
-<td><p>Esta tabela especificada não existe para este banco de dados.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errRestoreInProgress</p></td>
-<td><p>Não é possível concluir a operação porque uma operação de restauração está em andamento na instância associada à sessão.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errSessionSharingViolation</p></td>
-<td><p>A mesma sessão não pode ser usada para mais de um thread ao mesmo tempo. esse erro só será retornado pelo Windows XP e versões posteriores.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errTableInUse</p></td>
-<td><p>Esta tabela especificada está em uso por outra sessão.</p>
-<p>o <strong>JetSetColumnDefaultValue</strong> requer acesso exclusivo a uma tabela para alterar o valor padrão da coluna para versões anteriores ao Windows Server 2003.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errTermInProgress</p></td>
-<td><p>Não é possível concluir a operação porque a instância associada à sessão está sendo desligada.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errTransReadOnly</p></td>
-<td><p>É ilegal tentar uma atualização quando dentro do escopo de uma transação somente leitura. Uma transação somente leitura é uma transação que foi iniciada usando uma chamada para <a href="gg269268(v=exchg.10).md">JetBeginTransaction2</a> com JET_bitTransactionReadOnly. esse erro só será retornado pelo Windows XP e versões posteriores.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errWriteConflict</p></td>
-<td><p>Outra sessão bloqueou anteriormente o registro para atualização. A atualização tentada por esta sessão falhará.</p></td>
-</tr>
-</tbody>
-</table>
+Essa função retorna o [JET_ERR](./jet-err.md) de dados com um dos códigos de retorno a seguir. Para obter mais informações sobre os possíveis erros de ESE, consulte [Extensible Armazenamento Engine Errors](./extensible-storage-engine-errors.md) and [Error Handling Parameters](./error-handling-parameters.md).
 
 
-Em caso de sucesso, o valor padrão da coluna especificada na tabela fornecida no banco de dados especificado é permanentemente alterado para o novo valor padrão.
+| <p>Código de retorno</p> | <p>Descrição</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>A operação foi concluída com sucesso.</p> | 
+| <p>JET_errClientRequestToStopJetService</p> | <p>Não é possível concluir a operação porque todas as atividades na instância associada à sessão foram encerradas como resultado de uma chamada para <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p> | 
+| <p>JET_errColumnIllegalNull</p> | <p>O mesmo que JET_errNullInvalid.</p> | 
+| <p>JET_errColumnInUse</p> | <p>Essa coluna especificada está atualmente em uso por um índice.</p><p><strong>JetSetColumnDefaultValue</strong> não pode alterar o valor padrão de uma coluna referenciada na definição de um índice. Isso porque fazer isso pode alterar o conteúdo do índice.</p> | 
+| <p>JET_errColumnNotFound</p> | <p>Essa coluna especificada não existe para esta tabela.</p> | 
+| <p>JET_errInstanceUnavailable</p> | <p>Não é possível concluir a operação porque a instância associada à sessão encontrou um erro fatal que exige que o acesso a todos os dados seja revogado para proteger a integridade desses dados. Esse erro só será retornado por Windows XP e versões posteriores.</p> | 
+| <p>JET_errInvalidDatabaseId</p> | <p>A ID do banco de dados especificada era inválida.</p> | 
+| <p>JET_errInvalidName</p> | <p>Um dos nomes de objeto especificados era inválido. Todos os nomes de objeto devem estar em conformidade com o mesmo conjunto de regras. Essas regras são as seguintes:</p><ul><li><p>Os nomes de objeto devem ser compostos de caracteres ASCII.</p></li><li><p>Os nomes de objeto devem ter pelo menos um caractere de comprimento.</p></li><li><p>Os nomes de objeto não podem exceder JET_cbNameMost (64) caracteres de comprimento.</p></li><li><p>Os nomes de objeto podem não começar com um espaço.</p></li><li><p>Os nomes de objeto podem não conter caracteres de controle ASCII (0x00 por meio 0x1F).</p></li><li><p>Os nomes de objeto podem não conter um ponto de exclamação (!), ponto (.), colchete esquerdo ([) ou um caractere de colchete direito (]).</p></li><li><p>Depois de validada, somente a parte da cadeia de caracteres até o primeiro espaço (se algum) será usada para o nome do objeto. Isso significa que os nomes de objeto também podem não conter um espaço.</p></li></ul> | 
+| <p>JET_errNotInitialized</p> | <p>Não é possível concluir a operação porque a instância associada à sessão ainda não foi inicializada.</p> | 
+| <p>JET_errNullInvalid</p> | <p>Não foi possível definir a coluna como NULL. Isso acontece para <strong>JetSetColumnDefaultValue</strong> quando:</p><ul><li><p><em>cbData</em> é zero.</p></li><li><p><strong>pvData</strong> é NULL.</p></li></ul><p>Portanto, não é possível definir o valor padrão de uma coluna (de volta) como NULL ou com um valor de comprimento zero.</p> | 
+| <p>JET_errObjectNotFound</p> | <p>Essa tabela especificada não existe para esse banco de dados.</p> | 
+| <p>JET_errRestoreInProgress</p> | <p>Não é possível concluir a operação porque uma operação de restauração está em andamento na instância associada à sessão.</p> | 
+| <p>JET_errSessionSharingViolation</p> | <p>A mesma sessão não pode ser usada para mais de um thread ao mesmo tempo. Esse erro só será retornado por Windows XP e versões posteriores.</p> | 
+| <p>JET_errTableInUse</p> | <p>Essa tabela especificada está em uso por outra sessão.</p><p><strong>JetSetColumnDefaultValue</strong> requer acesso exclusivo a uma tabela para alterar o valor padrão da coluna para versões anteriores ao Windows Server 2003.</p> | 
+| <p>JET_errTermInProgress</p> | <p>Não é possível concluir a operação porque a instância associada à sessão está sendo desligado.</p> | 
+| <p>JET_errTransReadOnly</p> | <p>É ilegal tentar uma atualização quando estiver dentro do escopo de uma transação somente leitura. Uma transação somente leitura é uma transação que foi iniciada usando uma chamada para <a href="gg269268(v=exchg.10).md">JetBeginTransaction2</a> com JET_bitTransactionReadOnly. Esse erro só será retornado por Windows XP e versões posteriores.</p> | 
+| <p>JET_errWriteConflict</p> | <p>Outra sessão já travada o registro para atualização. A atualização tentada por esta sessão falhará.</p> | 
 
-Se houver falha, nenhuma alteração no estado do banco de dados ocorrerá.
+
+
+Em caso de êxito, o valor padrão da coluna especificada na tabela especificada no banco de dados especificado é alterado permanentemente para o novo valor padrão.
+
+Em caso de falha, nenhuma alteração no estado do banco de dados ocorrerá.
 
 #### <a name="remarks"></a>Comentários
 
 Não é possível alterar o valor padrão de uma coluna em uma tabela de modelo.
 
-O mecanismo de banco de dados truncará silenciosamente o valor padrão de uma coluna para 255 bytes para colunas de texto longo e binário longo.
+O mecanismo de banco de dados truncará silenciosamente o valor padrão de uma coluna para 255 bytes para texto longo e colunas binárias longas.
 
 #### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Biblioteca</strong></p></td>
-<td><p>Use ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Requer ESENT.dll.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Unicode</strong></p></td>
-<td><p>Implementado como <strong>JetSetColumnDefaultValueW</strong> (Unicode) e <strong>JetSetColumnDefaultValueA</strong> (ANSI).</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | | <p><strong>Biblioteca</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | | <p><strong>Unicode</strong></p> | <p>Implementado como <strong>JetSetColumnDefaultValueW</strong> (Unicode) e <strong>JetSetColumnDefaultValueA</strong> (ANSI).</p> | 
+
 
 
 #### <a name="see-also"></a>Consulte Também

@@ -1,131 +1,131 @@
 ---
-title: Autorização de identidade remota
-description: O cenário da política IPsec de autorização de identidade remota requer que as conexões de entrada venham de um conjunto específico de entidades de segurança remotas que são especificadas em uma ACL (lista de controle de acesso) do Windows Security Descriptor (SD).
+title: Autorização de Identidade Remota
+description: O cenário de política de IPsec de Autorização de Identidade Remota requer que as conexões de entrada sejam de um conjunto específico de entidades de segurança remotas especificadas em uma ACL (lista de controle de acesso) do SD (descritor de segurança) do Windows.
 ms.assetid: 4d9f83d6-6f56-4416-8c35-d0260f9e888c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 57287a0dd9af4686b1a2dab162677912213559a7
-ms.sourcegitcommit: 78b64f3865e64768b5319d4f010032ee68924a98
+ms.openlocfilehash: c426f0d153d45d3699020bb723b15d75d84df4662fd0bb61d66513c2af24fe31
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107314829"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120075376"
 ---
-# <a name="remote-identity-authorization"></a>Autorização de identidade remota
+# <a name="remote-identity-authorization"></a>Autorização de Identidade Remota
 
-O cenário da política IPsec de autorização de identidade remota requer que as conexões de entrada venham de um conjunto específico de entidades de segurança remotas que são especificadas em uma ACL (lista de controle de acesso) do Windows Security Descriptor (SD). Se a identidade remota (conforme determinado pelo IPsec) não corresponder ao conjunto de identidades permitidas, a conexão será descartada. Essa política deve ser especificada em conjunto com uma das opções de política do modo de transporte.
+O cenário de política de IPsec de Autorização de Identidade Remota requer que as conexões de entrada sejam de um conjunto específico de entidades de segurança remotas especificadas em uma ACL (lista de controle de acesso) do SD (descritor de segurança) do Windows. Se a identidade remota (conforme determinado pelo IPsec) não corresponder ao conjunto de identidades permitidas, a conexão será descartado. Essa política deve ser especificada em conjunto com uma das opções de política de modo de transporte.
 
-Se o AuthIP estiver habilitado, dois descritores de segurança poderão ser especificados, um correspondente ao modo principal de AuthIP e o outro correspondente ao modo estendido AuthIP.
+Se a AuthIP estiver habilitada, dois descritores de segurança poderão ser especificados, um correspondente ao modo principal do AuthIP e o outro correspondente ao modo estendido do AuthIP.
 
-Um exemplo de cenário de modo de transporte de descoberta de negociação é "proteger todos os tráfegos de dados unicast, exceto ICMP, usando o modo de transporte IPsec, habilitar a descoberta de negociação e restringir o acesso de entrada a identidades remotas permitidas de acordo com o modo estendido do AuthIP), para todo o tráfego unicast correspondente à porta TCP local 5555."
+Um exemplo de um possível cenário do Modo de Transporte de Descoberta de Negociação é "Proteger todo o tráfego de dados unicast, exceto ICMP, usando o modo de transporte IPsec, habilitar a descoberta de negociação e restringir o acesso de entrada a identidades remotas permitidas de acordo com o descritor de segurança SD1 (correspondente ao modo principal IKE/AuthIP) e o descritor de segurança SD2 (correspondente ao modo estendido do AuthIP), para todo o tráfego unicast correspondente à porta local TCP 5555."
 
-Para implementar este exemplo programaticamente, use a seguinte configuração de WFP.
+Para implementar este exemplo programaticamente, use a seguinte configuração do WFP.
 
 <dl>
 
-**Na \_ camada FWPM \_ IKEEXT \_ V {4 \| 6} política de negociação de instalação mm**  
+**Em FWPM \_ LAYER \_ IKEEXT \_ V{4 \| 6} configurar política de negociação mm**  
 
 1.  Adicione um ou ambos os seguintes contextos do provedor de política MM.  
-    -   Para IKE, um contexto de provedor de política do tipo **FWPM \_ IPSec \_ Ike \_ mm \_ Context**.
-    -   Para AuthIP, um contexto de provedor de política do tipo **FWPM \_ IPSec \_ AuthIP \_ mm \_ Context**.
+    -   Para IKE, um contexto de provedor de política do tipo **FWPM \_ IPSEC \_ IKE \_ MM \_ CONTEXT**.
+    -   Para o AuthIP, um contexto de provedor de política do tipo **FWPM \_ IPSEC \_ AUTHIP \_ MM \_ CONTEXT**.
 
     > [!Note]  
-    > Um módulo de chave comum será negociado e a política MM correspondente será aplicada. AuthIP é o módulo de chaveamento preferencial se o IKE e o AuthIP tiverem suporte.
+    > Um módulo de chave comum será negociado e a política mm correspondente será aplicada. AuthIP é o módulo de chave preferencial se há suporte para IKE e AuthIP.
 
      
 
 2.  Para cada um dos contextos adicionados na etapa 1, adicione um filtro com as propriedades a seguir. 
 
-    | Propriedade de filtro        | Valor                                            |
+    | Propriedade Filter        | Valor                                            |
     |------------------------|--------------------------------------------------|
     | Condições de filtragem   | Vazio. Todo o tráfego corresponderá ao filtro.        |
     | **providerContextKey** | GUID do contexto do provedor MM adicionado na etapa 1. |
 
         
 
-**Na \_ camada FWPM \_ IPSec \_ V {4 \| 6} configurar política de negociação QM e em**  
+**Em FWPM \_ LAYER \_ IPSEC \_ V{4 \| 6} configurar política de negociação de QM e EM**  
 
-1.  Adicione um ou ambos os seguintes contextos de provedor de política de modo de transporte QM e defina o sinalizador [**\_ \_ \_ \_ seguro do sinalizador de política IPSec**](/windows/desktop/api/Ipsectypes/ns-ipsectypes-ipsec_transport_policy0) .  
-    -   Para IKE, um contexto de provedor de política do tipo **FWPM \_ IPSec de transporte de IP \_ \_ qm \_ \_**.
-    -   Para AuthIP, um contexto de provedor de política do tipo **\_ \_ \_ \_ \_ contexto de transporte QM IPSec AuthIP de FWPM** que contém a política de negociação em modo estendido AuthIP.
+1.  Adicione um ou ambos os seguintes contextos de provedor de política de modo de transporte QM e de definido o sinalizador [**\_ IPSEC POLICY \_ \_ ND \_ SECURE.**](/windows/desktop/api/Ipsectypes/ns-ipsectypes-ipsec_transport_policy0)  
+    -   Para IKE, um contexto de provedor de política do tipo **FWPM \_ IPSEC \_ IKE \_ QM \_ TRANSPORT \_ CONTEXT**.
+    -   Para o AuthIP, um contexto de provedor de política do tipo **FWPM \_ IPSEC \_ AUTHIP \_ QM \_ TRANSPORT \_ CONTEXT** que contém a política de negociação em (modo estendido) do AuthIP.
 
     > [!Note]  
-    > Um módulo de chave comum será negociado e a política QM correspondente será aplicada. AuthIP é o módulo de chaveamento preferencial se o IKE e o AuthIP tiverem suporte.
+    > Um módulo de chave comum será negociado e a política de QM correspondente será aplicada. AuthIP é o módulo de chave preferencial se há suporte para IKE e AuthIP.
 
      
 
 2.  Para cada um dos contextos adicionados na etapa 1, adicione um filtro com as propriedades a seguir. 
 
-    | Propriedade de filtro        | Valor                                            |
+    | Propriedade Filter        | Valor                                            |
     |------------------------|--------------------------------------------------|
     | Condições de filtragem   | Vazio. Todo o tráfego corresponderá ao filtro.        |
-    | **providerContextKey** | GUID do contexto de provedor QM adicionado na etapa 1. |
+    | **providerContextKey** | GUID do contexto do provedor de QM adicionado na etapa 1. |
 
         
 
-**Na \_ camada FWPM \_ transporte de \_ entrada \_ V {4 \| 6} configurar regras de filtragem de entrada por pacote**  
+**Em FWPM \_ LAYER \_ INBOUND \_ TRANSPORT \_ V{4 \| 6} configure regras de filtragem de entrada por pacote**  
 
 1.  Adicione um filtro com as propriedades a seguir. 
 
-    | Propriedade de filtro                                                   | Valor                                                                                              |
+    | Propriedade Filter                                                   | Valor                                                                                              |
     |-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
-    | **FWPM \_ Condição de filtragem de \_ \_ tipo de \_ endereço \_ IP local de condição** | [NlatUnicast](/windows/win32/api/nldef/ne-nldef-nl_address_type)                                      |
-    | **ação. tipo**                                                   | **o \_ \_ texto explicativo de ação fwp \_ termina**                                                              |
-    | **ação. calloutKey**                                             | **FWPM \_ texto explicativo \_ IPSec de \_ transporte de entrada \_ \_ V {4 \| 6}**                                              |
-    | **rawContext**                                                    | [**\_segurança de \_ \_ conexão de persistência de entrada IPsec \_ \_ de contexto \_ de FWPM**](filter-context-identifiers.md) |
+    | **FWPM \_ Condição de \_ filtragem CONDITION IP \_ LOCAL \_ ADDRESS \_ TYPE** | [NlatUnicast](/windows/win32/api/nldef/ne-nldef-nl_address_type)                                      |
+    | **action.type**                                                   | **TERMINAÇÃO DO \_ \_ CALLOUT DA AÇÃO FWP \_**                                                              |
+    | **action.calloutKey**                                             | **FWPM \_ CALLOUT \_ IPSEC \_ INBOUND \_ TRANSPORT \_ V{4 \| 6}**                                              |
+    | **rawContext**                                                    | [**SEGURANÇA DE CONEXÃO DE PERSISTÊNCIA DE \_ \_ IPSEC \_ DE \_ \_ \_ CONTEXTO DO FWPM**](filter-context-identifiers.md) |
 
         
-2.  Isentar o tráfego ICMP do IPsec adicionando um filtro com as propriedades a seguir. 
+2.  Isente o tráfego ICMP do IPsec adicionando um filtro com as propriedades a seguir. 
 
-    | Propriedade de filtro                                                   | Valor                                                                      |
+    | Propriedade Filter                                                   | Valor                                                                      |
     |-------------------------------------------------------------------|----------------------------------------------------------------------------|
-    | **FWPM \_ Condição de filtragem de \_ \_ tipo de \_ endereço \_ IP local de condição** | NlatUnicast                                                                |
-    | **FWPM \_ Condição de filtragem de \_ \_ protocolo IP de condição**             | **IPPROTO \_ ICMP {V6}** essas constantes são definidas no Winsock2. h.<br/> |
-    | **ação. tipo**                                                   | \_permissão de ação fwp \_                                                        |
-    | **weight**                                                        | [**\_ \_ isenções Ike de intervalo de peso FWPM \_ \_**](filter-weight-identifiers.md)  |
+    | **FWPM \_ Condição de \_ filtragem CONDITION IP \_ LOCAL \_ ADDRESS \_ TYPE** | NlatUnicast                                                                |
+    | **FWPM \_ Condição de \_ \_ filtragem CONDITION IP PROTOCOL**             | **IPPROTO \_ ICMP{V6}** Essas constantes são definidas em winsock2.h.<br/> |
+    | **action.type**                                                   | PERMISSÃO DE AÇÃO \_ FWP \_                                                        |
+    | **weight**                                                        | [**ISENÇÕES DE IKE DO INTERVALO DE PESO DO FWPM \_ \_ \_ \_**](filter-weight-identifiers.md)  |
 
         
 
-**Em FWPM \_ camada de \_ saída do \_ transporte \_ V {4 \| 6} configurar regras de filtragem por pacote de saída**  
+**Em FWPM \_ LAYER \_ OUTBOUND \_ TRANSPORT \_ V{4 \| 6} configure regras de filtragem de saída por pacote**  
 
 1.  Adicione um filtro com as propriedades a seguir. 
 
-    | Propriedade de filtro                                                   | Valor                                                                                     |
+    | Propriedade Filter                                                   | Valor                                                                                     |
     |-------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-    | **FWPM \_ Condição de filtragem de \_ \_ tipo de \_ endereço \_ IP local de condição** | NlatUnicast                                                                               |
-    | **ação. tipo**                                                   | **o \_ \_ texto explicativo de ação fwp \_ termina**                                                     |
-    | **ação. calloutKey**                                             | **FWPM do \_ balão de \_ \_ saída IPSec \_ \_ V {4 \| 6}**                                    |
-    | **rawContext**                                                    | [**\_descoberta de \_ \_ negociação de saída IPSec de contexto \_ FWPM \_**](filter-context-identifiers.md) |
+    | **FWPM \_ Condição de \_ filtragem CONDITION IP \_ LOCAL \_ ADDRESS \_ TYPE** | NlatUnicast                                                                               |
+    | **action.type**                                                   | **TERMINAÇÃO DO \_ \_ CALLOUT DA AÇÃO FWP \_**                                                     |
+    | **action.calloutKey**                                             | **FWPM \_ CALLOUT \_ IPSEC \_ OUTBOUND \_ TRANSPORT \_ V{4 \| 6}**                                    |
+    | **rawContext**                                                    | [**FWPM \_ CONTEXT \_ IPSEC \_ OUTBOUND \_ NEGOTIATE \_ DISCOVER**](filter-context-identifiers.md) |
 
         
-2.  Isentar o tráfego ICMP do IPsec adicionando um filtro com as propriedades a seguir. 
+2.  Isente o tráfego ICMP do IPsec adicionando um filtro com as propriedades a seguir. 
 
-    | Propriedade de filtro                                                   | Valor                                                                  |
+    | Propriedade Filter                                                   | Valor                                                                  |
     |-------------------------------------------------------------------|------------------------------------------------------------------------|
-    | **FWPM \_ Condição de filtragem de \_ \_ tipo de \_ endereço \_ IP local de condição** | NlatUnicast                                                            |
-    | **FWPM \_ Condição de filtragem de \_ \_ protocolo IP de condição**             | IPPROTO \_ ICMP {V6} essas constantes são definidas no Winsock2. h.<br/> |
-    | **ação. tipo**                                                   | **\_permissão de ação fwp \_**                                                |
-    | **weight**                                                        | **\_ \_ isenções Ike de intervalo de peso FWPM \_ \_**                               |
+    | **FWPM \_ Condição de \_ filtragem CONDITION IP \_ LOCAL \_ ADDRESS \_ TYPE** | NlatUnicast                                                            |
+    | **FWPM \_ Condição de \_ \_ filtragem CONDITION IP PROTOCOL**             | IPPROTO \_ ICMP{V6}Essas constantes são definidas em winsock2.h.<br/> |
+    | **action.type**                                                   | **PERMISSÃO DE AÇÃO \_ FWP \_**                                                |
+    | **weight**                                                        | **ISENÇÕES DE IKE DO INTERVALO DE PESO DO FWPM \_ \_ \_ \_**                               |
 
         
 
-**Na camada FWPM de \_ \_ autenticação Ale, \_ \_ \_ aceite \_ V {4 \| 6} configurar regras de filtragem de entrada por conexão**  
+**Em FWPM \_ LAYER \_ ALE \_ AUTH \_ RECV \_ ACCEPT \_ V{4 \| 6} configurar regras de filtragem de entrada por conexão**  
 
-1.  Adicione um filtro com as propriedades a seguir. Esse filtro só permitirá tentativas de conexão de entrada se elas forem protegidas pelo IPsec. 
+1.  Adicione um filtro com as propriedades a seguir. Esse filtro só permitirá tentativas de conexão de entrada se elas são protegidas pelo IPsec. 
 
-    | Propriedade de filtro                                                   | Valor                                                        |
+    | Propriedade Filter                                                   | Valor                                                        |
     |-------------------------------------------------------------------|--------------------------------------------------------------|
-    | **FWPM \_ Condição de filtragem de \_ \_ tipo de \_ endereço \_ IP local de condição** | NlatUnicast                                                  |
-    | **ação. tipo**                                                   | **o \_ \_ texto explicativo de ação fwp \_ termina**                        |
-    | **ação. calloutKey**                                             | **FWPM \_ texto explicativo \_ IPSec de \_ entrada \_ Iniciar \_ segurança \_ V {4 \| 6}** |
+    | **FWPM \_ Condição de \_ filtragem CONDITION IP \_ LOCAL \_ ADDRESS \_ TYPE** | NlatUnicast                                                  |
+    | **action.type**                                                   | **TERMINAÇÃO DO \_ \_ CALLOUT DA AÇÃO FWP \_**                        |
+    | **action.calloutKey**                                             | **FWPM \_ CALLOUT \_ IPSEC \_ INBOUND \_ INITIATE SECURE \_ \_ V{4 \| 6}** |
 
         
-2.  Isentar o tráfego ICMP do IPsec adicionando um filtro com as propriedades a seguir. 
+2.  Isente o tráfego ICMP do IPsec adicionando um filtro com as propriedades a seguir. 
 
-    | Propriedade de filtro                                                   | Valor                                                                      |
+    | Propriedade Filter                                                   | Valor                                                                      |
     |-------------------------------------------------------------------|----------------------------------------------------------------------------|
-    | **FWPM \_ Condição de filtragem de \_ \_ tipo de \_ endereço \_ IP local de condição** | NlatUnicast                                                                |
-    | **FWPM \_ Condição de filtragem de \_ \_ protocolo IP de condição**             | **IPPROTO \_ ICMP {V6}** essas constantes são definidas no Winsock2. h.<br/> |
+    | **FWPM \_ Condição de \_ filtragem CONDITION IP \_ LOCAL \_ ADDRESS \_ TYPE** | NlatUnicast                                                                |
+    | **FWPM \_ Condição de \_ \_ filtragem CONDITION IP PROTOCOL**             | **IPPROTO \_ ICMP {V6}** essas constantes são definidas no Winsock2. h.<br/> |
     | **ação. tipo**                                                   | **\_permissão de ação fwp \_**                                                    |
     | **weight**                                                        | **\_ \_ isenções Ike de intervalo de peso FWPM \_ \_**                                   |
 

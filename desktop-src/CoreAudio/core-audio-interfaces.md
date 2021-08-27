@@ -4,12 +4,12 @@ ms.assetid: b18e2094-e974-4c23-b70b-ace5a168132d
 title: Interfaces de áudio de núcleo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0eed875bad93bed1625a175bd74b849f139a0140
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 330bb620b48b865db3db2ab5ea5625b7859588bd8e53e1addbcd8fd8ec9bda6a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104088863"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120109466"
 ---
 # <a name="core-audio-interfaces"></a>Interfaces de áudio de núcleo
 
@@ -17,9 +17,9 @@ Essa referência de programação para o SDK de áudio principal inclui as segui
 
 ## <a name="mmdevice-api"></a>API MMDevice
 
-A API do dispositivo de multimídia do Windows (MMDevice) permite que os clientes de áudio descubram [dispositivos de ponto de extremidade de áudio](audio-endpoint-devices.md), determinem seus recursos e criem instâncias de driver para esses dispositivos. O arquivo de cabeçalho Mmdeviceapi. h define as interfaces na API MMDevice. Para obter mais informações, consulte [about MMDEVICE API](mmdevice-api.md).
+a API do dispositivo de multimídia Windows (MMDevice) permite que os clientes de áudio descubram [dispositivos de ponto de extremidade de áudio](audio-endpoint-devices.md), determinem seus recursos e criem instâncias de driver para esses dispositivos. O arquivo de cabeçalho Mmdeviceapi. h define as interfaces na API MMDevice. Para obter mais informações, consulte [about MMDEVICE API](mmdevice-api.md).
 
-A tabela a seguir lista as interfaces MMDevice disponíveis com o SDK de áudio principal para Windows Vista.
+a tabela a seguir lista as interfaces MMDevice disponíveis com o SDK de áudio principal para Windows Vista.
 
 
 
@@ -37,16 +37,16 @@ A tabela a seguir lista as interfaces MMDevice disponíveis com o SDK de áudio 
 
 ## <a name="wasapi"></a>WASAPI
 
-A API de sessão de áudio do Windows (WASAPI) permite que os aplicativos cliente gerenciem o fluxo de dados de áudio entre o aplicativo e um [dispositivo de ponto de extremidade de áudio](audio-endpoint-devices.md). Os arquivos de cabeçalho Audioclient. h e Audiopolicy. h definem as interfaces WASAPI. Para obter mais informações, consulte [about WASAPI](wasapi.md).
+o Windows API de sessão de áudio (WASAPI) permite que os aplicativos cliente gerenciem o fluxo de dados de áudio entre o aplicativo e um [dispositivo de ponto de extremidade de áudio](audio-endpoint-devices.md). Os arquivos de cabeçalho Audioclient. h e Audiopolicy. h definem as interfaces WASAPI. Para obter mais informações, consulte [about WASAPI](wasapi.md).
 
-A tabela a seguir lista as interfaces WASAPI disponíveis com o SDK de áudio principal para Windows Vista e posterior.
+a tabela a seguir lista as interfaces WASAPI disponíveis com o SDK de áudio principal para Windows Vista e posterior.
 
 
 
 | Interface                                                                                    | Descrição                                                                                                                                                                                               |
 |----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**IActivateAudioInterfaceAsyncOperation**](/windows/desktop/api/mmdeviceapi/nn-mmdeviceapi-iactivateaudiointerfaceasyncoperation)       | Representa uma operação assíncrona ativando uma interface [WASAPI](wasapi.md) e fornece um método para recuperar os resultados da ativação.<br/> Aplica-se a partir do Windows 8.<br/> |
-| [**IActivateAudioInterfaceCompletionHandler**](/windows/desktop/api/mmdeviceapi/nn-mmdeviceapi-iactivateaudiointerfacecompletionhandler) | Fornece um retorno de chamada para indicar que a ativação de uma interface [WASAPI](wasapi.md) foi concluída.<br/> Aplica-se a partir do Windows 8.<br/>                                                  |
+| [**IActivateAudioInterfaceAsyncOperation**](/windows/desktop/api/mmdeviceapi/nn-mmdeviceapi-iactivateaudiointerfaceasyncoperation)       | Representa uma operação assíncrona ativando uma interface [WASAPI](wasapi.md) e fornece um método para recuperar os resultados da ativação.<br/> Aplica-se começando com Windows 8.<br/> |
+| [**IActivateAudioInterfaceCompletionHandler**](/windows/desktop/api/mmdeviceapi/nn-mmdeviceapi-iactivateaudiointerfacecompletionhandler) | Fornece um retorno de chamada para indicar que a ativação de uma interface [WASAPI](wasapi.md) foi concluída.<br/> Aplica-se começando com Windows 8.<br/>                                                  |
 | [**IAudioCaptureClient**](/windows/desktop/api/Audioclient/nn-audioclient-iaudiocaptureclient)                                           | Permite que um cliente leia dados de entrada de um buffer de ponto de extremidade de captura.                                                                                                                                       |
 | [**IAudioClient**](/windows/desktop/api/Audioclient/nn-audioclient-iaudioclient)                                                         | Permite que um cliente crie e inicialize um fluxo de áudio entre um aplicativo de áudio e o mecanismo de áudio ou o buffer de hardware de um dispositivo de ponto de extremidade de áudio.                                           |
 | [**IAudioClock**](/windows/desktop/api/Audioclient/nn-audioclient-iaudioclock)                                                           | Permite que um cliente monitore a taxa de dados de um fluxo e a posição atual no fluxo.                                                                                                                  |
@@ -73,7 +73,7 @@ A tabela a seguir lista as interfaces WASAPI disponíveis com o SDK de áudio pr
 
 A API do DeviceTopology fornece aos aplicativos cliente a capacidade de atravessar as topologias de hardware funcionais dos dispositivos de renderização e captura de áudio. O arquivo de cabeçalho Devicetopology. h define as interfaces na API DeviceTopology. Para obter mais informações, consulte [topologias de dispositivo](device-topologies.md) e [**API DeviceTopology**](/windows/desktop/api/Devicetopology/nn-devicetopology-idevicetopology).
 
-A tabela a seguir lista as interfaces DeviceTopology disponíveis com o SDK de áudio principal para Windows Vista e posterior.
+a tabela a seguir lista as interfaces DeviceTopology disponíveis com o SDK de áudio principal para Windows Vista e posterior.
 
 
 
@@ -94,34 +94,34 @@ A tabela a seguir lista as interfaces DeviceTopology disponíveis com o SDK de �
 | [**IControlInterface**](/windows/desktop/api/Devicetopology/nn-devicetopology-icontrolinterface)                      | Representa uma interface de controle em uma parte (subunidade ou conector).                                                                                                                                                          |
 | [**IDeviceSpecificProperty**](/windows/desktop/api/Devicetopology/nn-devicetopology-idevicespecificproperty)          | Representa uma propriedade específica do dispositivo de um conector ou subunidade.                                                                                                                                                          |
 | [**IDeviceTopology**](/windows/desktop/api/Devicetopology/nn-devicetopology-idevicetopology)                          | Fornece acesso à topologia de um dispositivo de áudio.                                                                                                                                                                       |
-| [**IKsFormatSupport**](/windows/desktop/api/Devicetopology/nn-devicetopology-iksformatsupport)                        | Fornece informações sobre os formatos de dados de áudio com suporte de uma conexão de e/s configurada por software (normalmente um canal DMA) entre o dispositivo de áudio e a memória do sistema.                                        |
-| [**IKsJackDescription**](/windows/desktop/api/Devicetopology/nn-devicetopology-iksjackdescription)                    | Fornece informações sobre as tomadas ou conectores internos que fornecem uma conexão física entre um dispositivo em um adaptador de áudio e um dispositivo de ponto de extremidade interno ou externo (por exemplo, um microfone ou CD player). |
-| [**IKsJackDescription2**](/windows/desktop/api/Devicetopology/nn-devicetopology-iksjackdescription2)<br/>       | Fornece acesso conveniente à propriedade **\_ \_ DESCRIPTION2 do KSPROPERTY Jack** de um conector para um dispositivo de ponto de extremidade.<br/>                                                                                            |
-| [**IKsJackSinkInformation**](/windows/desktop/api/Devicetopology/nn-devicetopology-iksjacksinkinformation)<br/> | Fornece informações sobre o receptor da Jack se houver suporte do hardware para o Jack.<br/>                                                                                                                             |
+| [**IKsFormatSupport**](/windows/desktop/api/Devicetopology/nn-devicetopology-iksformatsupport)                        | Fornece informações sobre os formatos de dados de áudio com suporte por uma conexão de E/S configurada por software (normalmente um canal DMA) entre o dispositivo de áudio e a memória do sistema.                                        |
+| [**IKsJackDescription**](/windows/desktop/api/Devicetopology/nn-devicetopology-iksjackdescription)                    | Fornece informações sobre os conectores internos ou conectores internos que fornecem uma conexão física entre um dispositivo em um adaptador de áudio e um dispositivo de ponto de extremidade externo ou interno (por exemplo, um microfone ou player de CD). |
+| [**IKsJackDescription2**](/windows/desktop/api/Devicetopology/nn-devicetopology-iksjackdescription2)<br/>       | Fornece acesso conveniente à **propriedade KSPROPERTY \_ JACK \_ DESCRIPTION2** de um conector para um dispositivo de ponto de extremidade.<br/>                                                                                            |
+| [**IKsJackSinkInformation**](/windows/desktop/api/Devicetopology/nn-devicetopology-iksjacksinkinformation)<br/> | Fornece informações sobre o valete se o jack for suportado pelo hardware.<br/>                                                                                                                             |
 | [**IPart**](/windows/desktop/api/Devicetopology/nn-devicetopology-ipart)                                              | Representa uma parte (conector ou subunidade) de uma topologia de dispositivo.                                                                                                                                                            |
 | [**IPartsList**](/windows/desktop/api/Devicetopology/nn-devicetopology-ipartslist)                                    | Representa uma lista de partes (conectores e subunidades).                                                                                                                                                                     |
-| [**IPerChannelDbLevel**](/windows/desktop/api/Devicetopology/nn-devicetopology-iperchanneldblevel)                    | Representa uma interface de controle de subunidade genérica que fornece controle por canal sobre o nível de volume, em decibéis, de um fluxo de áudio ou de uma banda de frequência em um fluxo de áudio.                                        |
+| [**IPerChannelDbLevel**](/windows/desktop/api/Devicetopology/nn-devicetopology-iperchanneldblevel)                    | Representa uma interface de controle de subunidade genérica que fornece controle por canal sobre o nível de volume, em decibéis, de um fluxo de áudio ou de uma faixa de frequência em um fluxo de áudio.                                        |
 | [**ISubunit**](/windows/win32/api/devicetopology/nn-devicetopology-isubunit)                                        | Representa uma subunidade de hardware (por exemplo, um controle de nível de volume) que está no caminho de dados entre um cliente e um dispositivo de ponto de extremidade de áudio.                                                                             |
-| [**IControlChangeNotify**](/windows/desktop/api/Devicetopology/nn-devicetopology-icontrolchangenotify)                | Fornece notificações quando o status de uma parte (conector ou subunidade) é alterado.                                                                                                                                          |
+| [**IControlChangeNotify**](/windows/desktop/api/Devicetopology/nn-devicetopology-icontrolchangenotify)                | Fornece notificações quando o status de uma parte (conector ou subunidade) muda.                                                                                                                                          |
 
 
 
  
 
-## <a name="endpointvolume-api"></a>API EndpointVolume
+## <a name="endpointvolume-api"></a>EndpointVolume API
 
-A API EndpointVolume permite que clientes especializados controlem e monitorem os níveis de volume de [dispositivos de ponto de extremidade de áudio](audio-endpoint-devices.md). O arquivo de cabeçalho Endpointvolume. h define as interfaces na API EndpointVolume. Para obter mais informações, consulte [**API do EndpointVolume**](/windows/desktop/api/Endpointvolume/nn-endpointvolume-iaudioendpointvolume) .
+A API EndpointVolume permite que clientes especializados controlem e monitorem os níveis de volume de dispositivos [de ponto de extremidade de áudio](audio-endpoint-devices.md). O arquivo de header Endpointvolume.h define as interfaces na API EndpointVolume. Para obter mais informações, consulte [**EndpointVolume API**](/windows/desktop/api/Endpointvolume/nn-endpointvolume-iaudioendpointvolume) .
 
-A tabela a seguir lista as interfaces EndpointVolume disponíveis com o SDK de áudio principal para Windows Vista.
+A tabela a seguir lista as interfaces EndpointVolume disponíveis com o SDK de Áudio Principal para Windows Vista.
 
 
 
 | **Interface**                                                        | **Descrição**                                                                                   |
 |----------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
 | [**IAudioEndpointVolume**](/windows/desktop/api/Endpointvolume/nn-endpointvolume-iaudioendpointvolume)                 | Representa os controles de volume no fluxo de áudio de ou para um dispositivo de ponto de extremidade de áudio.           |
-| [**IAudioEndpointVolumeEx**](/windows/desktop/api/Endpointvolume/nn-endpointvolume-iaudioendpointvolumeex)<br/>  | Fornece controles de volume no fluxo de áudio para ou de um ponto de extremidade do dispositivo.<br/>             |
+| [**IAudioEndpointVolumeEx**](/windows/desktop/api/Endpointvolume/nn-endpointvolume-iaudioendpointvolumeex)<br/>  | Fornece controles de volume no fluxo de áudio de ou para um ponto de extremidade do dispositivo.<br/>             |
 | [**IAudioMeterInformation**](/windows/desktop/api/Endpointvolume/nn-endpointvolume-iaudiometerinformation)             | Representa um medidor de pico no fluxo de áudio de ou para um dispositivo de ponto de extremidade de áudio.                  |
-| [**IAudioEndpointVolumeCallback**](/windows/desktop/api/Endpointvolume/nn-endpointvolume-iaudioendpointvolumecallback) | Fornece notificações quando o nível de volume ou estado de mudo de um dispositivo de ponto de extremidade de áudio é alterado. |
+| [**IAudioEndpointVolumeCallback**](/windows/desktop/api/Endpointvolume/nn-endpointvolume-iaudioendpointvolumecallback) | Fornece notificações quando o nível de volume ou o estado de muting de um dispositivo de ponto de extremidade de áudio muda. |
 
 
 

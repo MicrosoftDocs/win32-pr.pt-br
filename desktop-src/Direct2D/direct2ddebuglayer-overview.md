@@ -1,42 +1,42 @@
 ---
-title: Visão geral da camada de depuração Direct2D
-description: Visão geral da camada de depuração Direct2D
+title: Direct2D Visão geral da camada de depuração
+description: Direct2D Visão geral da camada de depuração
 ms.assetid: 7c28e00b-ebb9-4b79-939c-64eade1351ad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 833174e0d18b11e2384d838930d5508601cfceaf
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6ad960c50cd125ec8c335d836949457bb05ef65aba4b2edaff1dfbbd3a9cf6d7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108099984"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120087766"
 ---
-# <a name="direct2d-debug-layer-overview"></a>Visão geral da camada de depuração Direct2D
+# <a name="direct2d-debug-layer-overview"></a>Direct2D Visão geral da camada de depuração
 
-A camada de depuração Direct2D fornece mensagens de depuração de tempo de design para você minimizar a falha do aplicativo em tempo de execução. Esta visão geral descreve os conceitos básicos da camada de depuração Direct2D. Ele pressupõe que você esteja familiarizado com a criação de aplicativos Direct2D básicos.
+a camada de depuração Direct2D fornece mensagens de depuração de tempo de design para você minimizar a falha do aplicativo em tempo de execução. esta visão geral descreve os conceitos básicos da camada de depuração Direct2D. ele pressupõe que você esteja familiarizado com a criação de aplicativos Direct2D básicos.
 
 Esta visão geral contém as seções a seguir.
 
--   [O que é a camada de depuração Direct2D](#what-is-the-direct2d-debug-layer)
--   [Instalando a camada de depuração Direct2D](#installing-the-direct2d-debug-layer)
+-   [o que é a Direct2D camada de depuração](#what-is-the-direct2d-debug-layer)
+-   [instalando a camada de depuração Direct2D](#installing-the-direct2d-debug-layer)
 -   [Habilitando a camada de depuração](#enabling-the-debug-layer)
 -   [Níveis de depuração](#debug-levels)
 -   [Tópicos relacionados](#related-topics)
 
-## <a name="what-is-the-direct2d-debug-layer"></a>O que é a camada de depuração Direct2D
+## <a name="what-is-the-direct2d-debug-layer"></a>o que é a Direct2D camada de depuração
 
-A camada de depuração Direct2D, implementada separadamente de Direct2D em sua própria DLL chamada d2d1debug.dll, fornece mensagens de depuração para permitir que você use com precisão as funções do Direct2D. As mensagens de depuração geralmente resultam de violações de contrato de API, como parâmetros inválidos (podem ser relacionados a Direct3D), recursos inválidos, violações de threading e problemas de desempenho, como usar uma camada quando um clipe seria suficiente. Para especificar a quantidade de informações rastreadas pela camada de depuração, você pode especificar um dos três níveis de depuração: informações, aviso e erro; e uma mensagem de erro de nível dispara o ponto de interrupção para ajudá-lo a depurar.
+a camada de depuração Direct2D, implementada separadamente de Direct2D em sua própria DLL denominada d2d1debug.dll, fornece mensagens de depuração para permitir que você use com precisão as funções Direct2D. As mensagens de depuração geralmente resultam de violações de contrato de API, como parâmetros inválidos (podem ser relacionados a Direct3D), recursos inválidos, violações de threading e problemas de desempenho, como usar uma camada quando um clipe seria suficiente. Para especificar a quantidade de informações rastreadas pela camada de depuração, você pode especificar um dos três níveis de depuração: informações, aviso e erro; e uma mensagem de erro de nível dispara o ponto de interrupção para ajudá-lo a depurar.
 
-## <a name="installing-the-direct2d-debug-layer"></a>Instalando a camada de depuração Direct2D
+## <a name="installing-the-direct2d-debug-layer"></a>instalando a camada de depuração Direct2D
 
-Para obter instruções sobre como instalar a camada de depuração, consulte [instalando a camada de depuração Direct2D](installing-the-direct2d-debug-layer.md).
+para obter instruções sobre como instalar a camada de depuração, consulte [instalando a camada de depuração Direct2D](installing-the-direct2d-debug-layer.md).
 
 ## <a name="enabling-the-debug-layer"></a>Habilitando a camada de depuração
 
 Para habilitar a camada de depuração em seu aplicativo, especifique um valor de [**\_ \_ nível de depuração d2d1**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_debug_level) diferente de **d2d1 \_ nível de depuração \_ \_ nenhum** ao criar uma fábrica com a função [**D2D1CreateFactory**](/windows/desktop/api/d2d1/nf-d2d1-d2d1createfactory) .
 
 > [!Note]  
-> Se a camada de depuração Direct2D estiver habilitada, o efeito de gerenciamento de cores Direct2D (CLSID \_ D2D1ColorManagement) poderá causar uma violação de acesso ao definir um contexto de cor. A solução alternativa é desabilitar a camada de depuração ao usar o efeito de gerenciamento de cores
+> se a camada de depuração de Direct2D estiver habilitada, o efeito de gerenciamento de cores Direct2D (CLSID \_ D2D1ColorManagement) poderá causar uma violação de acesso ao definir um contexto de cor. A solução alternativa é desabilitar a camada de depuração ao usar o efeito de gerenciamento de cores
 
  
 
@@ -78,13 +78,13 @@ A próxima seção descreve os diferentes níveis de depuração definidos pela 
 
 A enumeração de [**\_ \_ nível de depuração d2d1**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_debug_level) especifica três níveis de depuração: \_ \_ \_ erro de nível de depuração d2d1 (erro), \_ aviso de \_ nível de depuração d2d1 \_ (aviso) e \_ informações de \_ nível de depuração d2d1 \_ (informações). Esses níveis são interpretados da seguinte maneira:
 
--   **Erro:** Direct2D envia mensagens de erro graves para a camada de depuração. Por exemplo, interromper uma restrição de Threading irá gerar um erro grave.
+-   **erro:** Direct2D envia mensagens de erro graves para a camada de depuração. Por exemplo, interromper uma restrição de Threading irá gerar um erro grave.
 
--   **AVISO:** O Direct2D envia mensagens de erro e avisos para a camada de depuração para que você possa endereçar qualquer uma dessas mensagens.
+-   **aviso:** Direct2D envia mensagens de erro e avisos para a camada de depuração para que você possa endereçar qualquer uma dessas mensagens.
 
--   **Informações:** O Direct2D envia mensagens de erro, avisos e informações adicionais de diagnóstico para a camada de depuração. Por exemplo, as mensagens de melhoria de desempenho serão enviadas neste nível de depuração.
+-   **informações:** Direct2D envia mensagens de erro, avisos e informações adicionais de diagnóstico para a camada de depuração. Por exemplo, as mensagens de melhoria de desempenho serão enviadas neste nível de depuração.
 
-O valor D2D1 \_ nível de depuração \_ \_ None (None) indica que o Direct2D não fornece nenhuma saída de depuração.
+o valor D2D1 \_ nível de depuração \_ \_ none (none) indica que Direct2D não fornece nenhuma saída de depuração.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

@@ -1,11 +1,11 @@
 ---
-title: Método StoreInstallMethod da classe MDM_EnterpriseModernAppManagement_AppInstallation01_01
+title: Método StoreInstallMethod da classe MDM_EnterpriseModernAppManagement_AppInstallation01_01 dados
 description: Método para executar uma instalação de um aplicativo e uma licença da Windows Store. Consulte também StoreInstall.
 ms.assetid: 4f8aff47-ad16-4fe5-85be-7ddb55ddff24
 keywords:
 - Método StoreInstallMethod
-- Método StoreInstallMethod, classe MDM_EnterpriseModernAppManagement_AppInstallation01_01
-- Classe MDM_EnterpriseModernAppManagement_AppInstallation01_01, método StoreInstallMethod
+- Método StoreInstallMethod, MDM_EnterpriseModernAppManagement_AppInstallation01_01 classe
+- MDM_EnterpriseModernAppManagement_AppInstallation01_01 classe, método StoreInstallMethod
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c4ae34e8502b7d408a7fb4d96fb9c2c4fadb509
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6a8e60134da45982773c0219ade8e0e0f12f37ec9e6d16cd97f4595ae8b507a8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918846"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120084936"
 ---
 # <a name="storeinstallmethod-method-of-the-mdm_enterprisemodernappmanagement_appinstallation01_01-class"></a>Método StoreInstallMethod da classe MDM \_ EnterpriseModernAppManagement \_ AppInstallation01 \_ 01
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto pré-lançado, que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
 Método para executar uma instalação de um aplicativo e uma licença da Windows Store. Consulte também [StoreInstall](/windows/client-management/mdm/enterprisemodernappmanagement-csp).
 
@@ -44,7 +44,7 @@ uint32 StoreInstallMethod(
 
 <dl> <dt>
 
-*parâmetro* \[ no\]
+*param* \[ Em\]
 </dt> <dd></dd> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -53,10 +53,10 @@ uint32 StoreInstallMethod(
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                      |
-| Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Namespace<br/>                | \\Cimv2 \\ mdm \\ dmmap raiz<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 

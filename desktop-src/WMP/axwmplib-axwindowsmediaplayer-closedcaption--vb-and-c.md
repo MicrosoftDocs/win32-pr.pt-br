@@ -1,11 +1,11 @@
 ---
-title: Propriedade AxWindowsMediaPlayer. closedCaption
-description: A propriedade closedCaption Obtém uma interface IWMPClosedCaption para o item de mídia atual.
+title: Propriedade AxWindowsMediaPlayer.closedCaption
+description: A propriedade closedCaption obtém uma interface IWMPClosedCaption para o item de mídia atual.
 ms.assetid: 459a04fd-daf5-46f9-925b-02011bbbf640
 keywords:
-- Propriedade closedCaption Windows Media Player
-- Propriedade closedCaption Windows Media Player, classe AxWindowsMediaPlayer
-- Classe AxWindowsMediaPlayer do Windows Media Player, Propriedade closedCaption
+- propriedade closedCaption Windows Media Player
+- propriedade closedCaption Windows Media Player , classe AxWindowsMediaPlayer
+- Classe AxWindowsMediaPlayer Windows Media Player , propriedade closedCaption
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 10210c5e3e068c52c9795cc6c760d2f79faabf1f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5d315b516e4b85e082ab0cc1d34016aa94b022e43c9d59a49b06a146c913d41b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105789582"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120098846"
 ---
-# <a name="axwindowsmediaplayerclosedcaption-property"></a>Propriedade AxWindowsMediaPlayer. closedCaption
+# <a name="axwindowsmediaplayerclosedcaption-property"></a>Propriedade AxWindowsMediaPlayer.closedCaption
 
-A propriedade closedCaption Obtém uma interface **IWMPClosedCaption** para o item de mídia atual.
+A propriedade closedCaption obtém uma interface **IWMPClosedCaption** para o item de mídia atual.
 
 Esta propriedade é somente para leitura.
 
@@ -56,7 +56,7 @@ O WMPLIB. Interface IWMPClosedCaption.
 
 | Requisito | Valor |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/>   | Windows Media Player 9 Series ou posterior<br/>                                                                          |
+| Versão<br/>   | Windows Media Player série 9 ou posterior<br/>                                                                          |
 | Namespace<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Assembly<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 
