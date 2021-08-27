@@ -3,7 +3,7 @@ title: Mensagem de LVM_GETNUMBEROFWORKAREAS (commctrl. h)
 description: Recupera o número de áreas de trabalho em um controle de exibição de lista. Você pode enviar essa mensagem explicitamente ou usar a \_ macro GetNumberOfWorkAreas do ListView.
 ms.assetid: ce0bcccd-62a2-45a4-959e-9959c9ca0c46
 keywords:
-- Controles de LVM_GETNUMBEROFWORKAREAS de mensagens do Windows
+- controles de Windows de mensagem de LVM_GETNUMBEROFWORKAREAS
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a73c62b7184ba60b979356a98a93d2579c8f74a8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 735dbb808755857df3dec4c5e8a021b9fe873e555607dc547bc77e67e123b948
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918968"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120088876"
 ---
 # <a name="lvm_getnumberofworkareas-message"></a>\_Mensagem GETNUMBEROFWORKAREAS LVM
 
@@ -39,7 +39,7 @@ Ponteiro para um valor UINT que recebe o número de áreas de trabalho no contro
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor retornado para esta mensagem não é usado.
 
@@ -49,9 +49,9 @@ O valor retornado para esta mensagem não é usado.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

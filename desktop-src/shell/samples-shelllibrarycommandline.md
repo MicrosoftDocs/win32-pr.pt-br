@@ -9,12 +9,12 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: c9db182498791fee344061c91ea570ed770f3a2a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e85595de3e7dab60be7741f95598f5d4e4d53276d5eff62f499874dea79bb99e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104461322"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120111186"
 ---
 # <a name="shell-library-command-line-sample"></a>Exemplo de linha de comando da biblioteca de shell
 
@@ -22,7 +22,7 @@ Demonstra como usar a interface [**IShellLibrary**](/windows/desktop/api/shobjid
 
 Este tópico inclui as seções a seguir.
 
--   [Requisitos](#requirements)
+-   [Requirements](#requirements)
 -   [Baixando o exemplo](#downloading-the-sample)
 -   [Compilando o exemplo](#building-the-sample)
 -   [Executando o exemplo](#running-the-sample)
@@ -40,13 +40,13 @@ Este tópico inclui as seções a seguir.
 
  
 
-Para obter requisitos adicionais, consulte o arquivo Leiame incluído com o exemplo.
+Para obter requisitos adicionais, consulte o arquivo Leiame incluído no exemplo.
 
 ## <a name="downloading-the-sample"></a>Baixando o exemplo
 
 | Localização      | URL do caminho                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------|
-| GitHub  | [Exemplo de ShellLibraryCommandLine](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appplatform/ShellLibraryCommandLine) |
+| GitHub  | [Exemplo shellLibraryCommandLine](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appplatform/ShellLibraryCommandLine) |
 
 ## <a name="building-the-sample"></a>Compilando o exemplo
 

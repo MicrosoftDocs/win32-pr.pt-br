@@ -1,57 +1,57 @@
 ---
-description: Criando um grafo de captura de áudio
+description: Criando um sistema de captura de Graph
 ms.assetid: 2302bb40-a5db-473a-afeb-71905ac41f47
-title: Criando um grafo de captura de áudio
+title: Criando um sistema de captura de Graph
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6bd3c731a7dc498fcb7180bc56ae6a7f94dbec6d
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: f8ff89cff8662bb5da81860053221596b18e89ab2300134cf2ff8826ae99b787
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105757023"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120108216"
 ---
-# <a name="creating-an-audio-capture-graph"></a>Criando um grafo de captura de áudio
+# <a name="creating-an-audio-capture-graph"></a>Criando um sistema de captura de Graph
 
 A primeira etapa para um aplicativo de captura de áudio é criar um grafo de filtro. A configuração do grafo depende do tipo de arquivo que você deseja criar.
 
--   Arquivo AVI somente de áudio: filtro de captura de áudio para filtro [AVI Mux](avi-mux-filter.md) e AVI Mux para filtro de [gravador de arquivo](file-writer-filter.md) .
--   Arquivo WAV: filtro de captura de áudio para [exemplo de filtro WavDest](wavdest-filter-sample.md) para o filtro de gravador de arquivo
--   Arquivo de áudio do Windows Media (. WMA): filtro de captura de áudio para o filtro de [gravador ASF do WM](wm-asf-writer-filter.md) .
+-   Arquivo AVI somente áudio: filtro de captura de áudio para [filtro Mux AVI](avi-mux-filter.md) e filtro AVI Mux para [File Writer.](file-writer-filter.md)
+-   Arquivo WAV: Filtro de captura de áudio para [exemplo de filtro wavDest](wavdest-filter-sample.md) para filtro de gravação de arquivo
+-   Windows Arquivo de áudio de mídia (.wma) : filtro de captura de áudio para [filtro de Gravação DO ASF](wm-asf-writer-filter.md) WM.
 
-O filtro WavDest é fornecido como um exemplo de SDK. Para usá-lo, você deve criar e registrar o filtro.
+O filtro WavDest é fornecido como um exemplo do SDK. Para usá-lo, você deve criar e registrar o filtro.
 
-Para usar o filtro do gravador ASF, você deve instalar o SDK do Windows Media e obter uma chave de software para desbloquear o filtro. Para obter mais informações, consulte [usando o Windows Media no DirectShow](using-windows-media-in-directshow.md).
+Para usar o filtro AsF Writer, você deve instalar o SDK Windows Mídia e obter uma chave de software para desbloquear o filtro. Para obter mais informações, [consulte Using Windows Media in DirectShow](using-windows-media-in-directshow.md).
 
-Você pode criar o grafo de filtro usando o objeto do [construtor do grafo de captura](capture-graph-builder.md) ou pode criar o grafo "manualmente"; ou seja, faça com que o aplicativo adicione e conecte cada filtro programaticamente. Este artigo descreve a abordagem manual. Para obter mais informações sobre como usar o construtor de gráficos de captura, consulte [captura de vídeo](video-capture.md). Grande parte das informações nesse artigo aplica-se a gráficos somente de áudio.
+Você pode criar o grafo de filtro usando o objeto [Capture Graph Builder](capture-graph-builder.md) ou pode criar o grafo "manualmente"; ou seja, fazer com que o aplicativo adicione e conecte cada filtro programaticamente. Este artigo descreve a abordagem manual. Para obter mais informações sobre como usar o Capture Graph Builder, consulte [Captura de vídeo](video-capture.md). Grande parte das informações nesse artigo se aplica a grafos somente de áudio.
 
 Adicionando o dispositivo de captura de áudio
 
-Como o filtro de captura de áudio se comunica com um dispositivo de hardware específico, você não pode simplesmente chamar **CoCreateInstance** para criar o filtro. Em vez disso, use o [enumerador de dispositivo do sistema](system-device-enumerator.md) para enumerar todos os dispositivos na categoria "fontes de captura de áudio", que é identificada pelo CLSID AudioInputDeviceCategory do identificador de classe \_ .
+Como o Filtro de Captura de Áudio se comunica com um dispositivo de hardware específico, você não pode simplesmente chamar **CoCreateInstance** para criar o filtro. Em vez disso, use o [Enumerador](system-device-enumerator.md) de Dispositivo do Sistema para enumerar todos os dispositivos na categoria "Fontes de Captura de Áudio", que é identificada pelo identificador de classe CLSID \_ AudioInputDeviceCategory.
 
-O enumerador de dispositivo do sistema retorna uma lista de monikers para os dispositivos; o nome amigável de cada moniker corresponde ao nome do dispositivo. Escolha um dos monikers retornados e use-o para criar uma instância do filtro de captura de áudio para esse dispositivo. Adicione o filtro ao gráfico de filtro. O dispositivo de gravação de áudio preferencial do usuário aparece primeiro na lista moniker. (O usuário seleciona um dispositivo preferencial clicando em sons e multimídia no painel de controle.)
+O Enumerador de Dispositivo do Sistema retorna uma lista de monikers para os dispositivos; O nome amigável de cada moniker corresponde ao nome do dispositivo. Escolha um dos monikers retornados e use-o para criar uma instância do Filtro de Captura de Áudio para esse dispositivo. Adicione o filtro ao grafo de filtro. O dispositivo de gravação de áudio preferencial do usuário aparece primeiro na lista de monikers. (O usuário seleciona um dispositivo preferencial clicando em Sons e Multimídia Painel de Controle.)
 
-Para obter mais informações, consulte [usando o enumerador de dispositivo do sistema](using-the-system-device-enumerator.md).
+Para obter mais informações, [consulte Usando o enumerador de dispositivo do sistema](using-the-system-device-enumerator.md).
 
-Para especificar a entrada a ser capturada, obtenha a interface [**IAMAudioInputMixer**](/windows/desktop/api/Strmif/nn-strmif-iamaudioinputmixer) do filtro de captura de áudio e chame o método **Put \_ Enable** para especificar a entrada. No entanto, uma limitação desse método é que diferentes dispositivos de hardware podem usar cadeias de caracteres diferentes para identificar suas entradas. Por exemplo, um cartão pode usar "microfone" para identificar a entrada do microfone e outro cartão pode usar "MIC". Para determinar o identificador de cadeia de caracteres de uma determinada entrada, use as funções de multimídia do Windows [**waveOutOpen**](/previous-versions//dd743866(v=vs.85)), [**mixerOpen**](/previous-versions//dd757308(v=vs.85))e [**mixerGetLineInfo**](/previous-versions//dd757303(v=vs.85)). Consulte o tópico do MSDN no [mixer consultas de dispositivo](/windows/desktop/Multimedia/mixer-device-queries) para obter mais informações.
+Para especificar de qual entrada capturar, obtenha a interface [**IAMAudioInputMixer**](/windows/desktop/api/Strmif/nn-strmif-iamaudioinputmixer) do filtro Captura de Áudio e chame o método **put \_ Enable** para especificar a entrada. No entanto, uma limitação desse método é que diferentes dispositivos de hardware podem usar cadeias de caracteres diferentes para identificar suas entradas. Por exemplo, um cartão pode usar "Microfone" para identificar a entrada do microfone e outro cartão pode usar "Mic". Para determinar o identificador de cadeia de caracteres para uma determinada entrada, use as funções Windows Multimídia [**waveOutOpen,**](/previous-versions//dd743866(v=vs.85)) [**mixerOpen**](/previous-versions//dd757308(v=vs.85))e [**mixerGetLineInfo**](/previous-versions//dd757303(v=vs.85)). Consulte o tópico MSDN [Mixer consultas de dispositivo](/windows/desktop/Multimedia/mixer-device-queries) para obter mais informações.
 
-Adicionando o multiplexador e o gravador de arquivos
+Adicionando o multiplexador e o File Writer
 
-Um grafo de captura de áudio deve conter um multiplexador e um gravador de arquivo.
+Um grafo de captura de áudio deve conter um multiplexador e um gravação de arquivo.
 
-Um *multiplexador* é um filtro que combina um ou mais fluxos em um único fluxo com um formato específico. Por exemplo, o filtro AVI Mux combina fluxos de áudio e vídeo em um fluxo AVI intercalado. Para captura de áudio, normalmente há apenas um único fluxo de áudio, mas os dados de áudio ainda devem ser empacotados em um formato que possa ser salvo em disco, o que requer um multiplexador. A escolha do Multiplexador depende do formato de destino:
+Um *multiplexador* é um filtro que combina um ou mais fluxos em um único fluxo com um formato específico. Por exemplo, o filtro AVI Mux combina fluxos de áudio e vídeo em um fluxo AVI intercalado. Para captura de áudio, normalmente há apenas um único fluxo de áudio, mas os dados de áudio ainda devem ser empacotados em um formato que pode ser salvo no disco, o que requer um multiplexador. A escolha do multiplexador depende do formato de destino:
 
--   AVI: multiplexador AVI
+-   AVI: Multiplexador AVI
 -   WAV: WavDest
--   WMA: gravador ASF
+-   WMA: ASF Writer
 
-Um *gravador de arquivo* é um filtro que grava dados de entrada em um arquivo. Para arquivos AVI ou WAV, use o [filtro gravador de arquivo](file-writer-filter.md). Para arquivos WMA, o gravador ASF atua como Multiplexador e gravador de arquivo.
+Um *file writer é* um filtro que grava dados de entrada em um arquivo. Para arquivos AVI ou WAV, use o [Filtro de Autor de Arquivos](file-writer-filter.md). Para arquivos WMA, o AsF Writer atua como multiplexador e autor de arquivos.
 
-Depois de criar os filtros e adicioná-los ao grafo, conecte o pino de saída do filtro de captura de áudio ao pino de entrada do Multiplexador e conecte o pino de saída do Multiplexador ao pino de entrada do gravador de filtro (supondo que eles sejam filtros separados). Para especificar o nome do arquivo, consulte o gravador de arquivo para a interface [**IFileSinkFilter**](/windows/desktop/api/Strmif/nn-strmif-ifilesinkfilter) e chame o método [**IFileSinkFilter:: SetFileName**](/windows/desktop/api/Strmif/nf-strmif-ifilesinkfilter-setfilename) .
+Depois de criar os filtros e adicioná-los ao grafo, conecte o pino de saída do Filtro de Captura de Áudio ao pino de entrada do multiplexador e conecte o pino de saída do multiplexador ao pino de entrada do autor do filtro (supondo que eles sejam filtros separados). Para especificar o nome do arquivo, consulte o autor do arquivo para a interface [**IFileSinkFilter**](/windows/desktop/api/Strmif/nn-strmif-ifilesinkfilter) e chame o [**método IFileSinkFilter::SetFileName.**](/windows/desktop/api/Strmif/nf-strmif-ifilesinkfilter-setfilename)
 
 ### <a name="example-code"></a>Código de exemplo
 
-O exemplo a seguir mostra como criar um grafo de captura de áudio usando o filtro WavDest. Os mesmos princípios se aplicam a outros tipos de arquivo.
+O exemplo a seguir mostra como criar um grafo de captura de áudio usando o filtro WavDest. Os mesmos princípios se aplicam aos outros tipos de arquivo.
 
 
 ```C++
@@ -89,7 +89,7 @@ hr = ConnectFilters(pGraph, pWaveDest, pWriter);
 
 
 
-Este exemplo usa a `AddFilterByCLSID` função descrita em [Adicionar um filtro por CLSID](add-a-filter-by-clsid.md)e a `ConnectFilters` função descrita em [conectar dois filtros](connect-two-filters.md). Nenhuma delas é uma API do DirectShow.
+Este exemplo usa a `AddFilterByCLSID` função descrita em Adicionar um filtro por [CLSID](add-a-filter-by-clsid.md)e a `ConnectFilters` função descrita em Conexão Dois [Filtros](connect-two-filters.md). Nenhum deles é uma API DirectShow dados.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

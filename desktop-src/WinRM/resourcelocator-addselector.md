@@ -4,9 +4,9 @@ description: Adiciona um seletor ao objeto ResourceLocator. O seletor especifica
 ms.assetid: 4b513d39-a377-487f-a03b-f3c5ab0f0b5a
 ms.tgt_platform: multiple
 keywords:
-- Método addselecter Gerenciamento Remoto do Windows
-- Método addselecter Gerenciamento Remoto do Windows, objeto ResourceLocator
-- Objeto ResourceLocator Gerenciamento Remoto do Windows, método addseletor
+- método addselecter Gerenciamento Remoto do Windows
+- método addselecter Gerenciamento Remoto do Windows, objeto ResourceLocator
+- objeto ResourceLocator Gerenciamento Remoto do Windows, método addseletor
 topic_type:
 - apiref
 api_name:
@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 064108f535c9f46dc074d1b37754e626dc3f1d40
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6fc59aab6e5194716fa3b0cda98bb874d0045011c0159c5caaa3cbd53e7fbfd5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918497"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120121636"
 ---
 # <a name="resourcelocatoraddselector-method"></a>Método ResourceLocator. addseletor
 
@@ -70,7 +70,7 @@ O valor do seletor. Por exemplo, para dados WMI, esse parâmetro contém um valo
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                 |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                           |
-| parâmetro<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>WSManDisp. idl</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>WSManDisp. tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>WSMAuto.dll</dt> </dl>   |

@@ -1,33 +1,33 @@
-- name: SDK do Windows Media Format 11
+- name: windows media format 11 sdk
   href: windows-media-format-11-sdk.md
   items:
-    - name: sobre o SDK do Windows Media Format
+    - name: sobre o SDK de formato de mídia do Windows
       href: about-the-windows-media-format-sdk.md
       items:
         - name: novidades
           href: whats-new.md
-        - name: 'recursos adicionados no SDK do Windows Media 9,5'
+        - name: recursos adicionados no sdk do Windows Media 9.5
           href: features-added-in-the-windows-media-9-5-sdk.md
-        - name: recursos adicionados no SDK da série Windows Media Format 9 Series
+        - name: recursos adicionados no sdk da série 9 de formato de mídia do Windows
           href: features-added-in-the-windows-media-format-9-series-sdk.md
-        - name: versões do SDK
+        - name: Versões do sdk
           href: sdk-versions.md
-        - name: 'Windows Media Format 9,5 SDK x64 Edition'
+        - name: windows media format 9.5 sdk x64 edition
           href: windows-media-format-9-5-sdk-x64-edition.md
         - name: política de privacidade
           href: privacy-statement.md
-        - name: Visão geral do Windows Media Format SDK
+        - name: visão geral do SDK de formato de mídia do Windows
           href: overview-of-the-windows-media-format-sdk.md
-        - name: Visão geral do formato ASF
+        - name: visão geral do formato asf
           href: overview-of-the-asf-format.md
         - name: conceitos
           href: concepts.md
           items:
-            - name: arquivos ASF (Advanced Systems Format)
+            - name: arquivos asf (formato de sistemas avançados)
               href: advanced-systems-format--asf--files.md
             - name: profiles
               href: profiles.md
-            - name: amostras de mídia
+            - name: exemplos de mídia
               href: media-samples.md
             - name: 'entradas, fluxos e saídas'
               href: inputs-streams-and-outputs.md
@@ -39,12 +39,12 @@
               href: metadata.md
             - name: hora da apresentação
               href: presentation-time.md
-            - name: armazenando conteúdo em buffer
+            - name: conteúdo de buffer
               href: buffering-content.md
         - name: recursos
           href: features.md
           items:
-            - name: recursos de arquivo ASF
+            - name: recursos de arquivo asf
               href: asf-file-features.md
               items:
                 - name: fluxos de áudio e vídeo
@@ -66,7 +66,7 @@
                   href: script-commands.md
                 - name: extensões de unidade de dados
                   href: data-unit-extensions.md
-                - name: suporte ao código de tempo SMPTE
+                - name: suporte a código de tempo de smpte
                   href: smpte-time-code-support.md
                 - name: exclusão mútua
                   href: mutual-exclusion.md
@@ -78,93 +78,93 @@
                   href: indexes.md
                 - name: marcadores
                   href: markers.md
-                - name: resposta do leitor para recursos do ASF
+                - name: resposta de leitor para recursos asf
                   href: reader-response-to-asf-features.md
-            - name: recursos do codec
+            - name: Recursos de codec
               href: codec-features.md
               items:
                 - name: codecs com suporte
                   href: supported-codecs.md
-                - name: codificação de taxa de bits constante (CBR)
+                - name: codificação de taxa de bits constante (cbr)
                   href: constant-bit-rate--cbr--encoding.md
-                - name: codificação de taxa de bits variável (VBR)
+                - name: codificação de taxa de bits variável (vbr)
                   href: variable-bit-rate--vbr--encoding.md
-                - name: codificação de duas passagens
+                - name: codificação de duas passs
                   href: two-pass-encoding.md
-                - name: suporte de áudio de alta resolução
+                - name: suporte a áudio de alta resolução
                   href: high-resolution-audio-support.md
-                - name: áudio de atraso baixo
+                - name: áudio de baixo atraso
                   href: low-delay-audio.md
-                - name: saída de áudio s/PDIF
+                - name: saída de áudio s/pdif
                   href: s-pdif-audio-output.md
                 - name: imagem de vídeo
                   href: video-image.md
                 - name: modelos de conformidade do dispositivo
                   href: device-conformance-templates.md
-                - name: configurações de complexidade do vídeo
+                - name: configurações de complexidade de vídeo
                   href: video-complexity-settings.md
-                - name: interpolação de quadros
+                - name: interpolação de quadro
                   href: frame-interpolation.md
-            - name: recursos de gravação de arquivo
+            - name: recursos de escrita de arquivo
               href: file-writing-features.md
               items:
-                - name: redimensionamento de vídeo
+                - name: reizing de vídeo
                   href: video-resizing.md
-                - name: conversão de espaço de cor
+                - name: conversão de espaço de cores
                   href: color-space-conversion.md
-                - name: reamostragem de áudio
+                - name: resampling de áudio
                   href: audio-resampling.md
                 - name: coletores
                   href: sinks.md
-                - name: suporte à marca d' água
+                - name: Suporte à marca d'água
                   href: watermarking-support.md
                 - name: 'formatos de entrada, configurações de entrada e extensões de unidade de dados'
                   href: input-formats-input-settings-and-data-unit-extensions.md
-                - name: Enumeração de formato de entrada
+                - name: enumeração de formato de entrada
                   href: input-format-enumeration.md
             - name: recursos de leitura de arquivo
               href: file-reading-features.md
               items:
-                - name: suporte de amostra alocado pelo usuário
+                - name: suporte de exemplo alocado pelo usuário
                   href: user-allocated-sample-support.md
-                - name: Enumeração de formato de saída
+                - name: enumeração de formato de saída
                   href: output-format-enumeration.md
             - name: recursos de metadados
               href: metadata-features.md
               items:
-                - name: suporte a ID3
+                - name: Suporte a id3
                   href: id3.md
                 - name: metadados personalizados
                   href: custom-metadata.md
-            - name: recursos do gerenciamento de direitos digitais
+            - name: recursos de gerenciamento de direitos digitais
               href: digital-rights-management-features.md
               items:
-                - name: Noções básicas de DRM
+                - name: noções básicas do drm
                   href: drm-basics.md
-                - name: versões de DRM
+                - name: versões drm
                   href: drm-versions.md
-                - name: DRM ao vivo
+                - name: drm ao vivo
                   href: live-drm.md
-                - name: individualização de DRM
+                - name: individualização drm
                   href: drm-individualization.md
-                - name: fazendo backup e restaurando licenças DRM
+                - name: fazer o back up e a restauração de licenças drm
                   href: backing-up-and-restoring-of-drm-licenses.md
-                - name: exibindo atributos DRM no editor de metadados
+                - name: exibindo atributos drm no editor de metadados
                   href: viewing-drm-attributes-in-the-metadata-editor.md
                 - name: níveis de proteção de saída
                   href: output-protection-levels.md
                 - name: revogação de licença
                   href: license-revocation.md
-                - name: Windows Media DRM 10 para dispositivos de rede
+                - name: windows media drm 10 para dispositivos de rede
                   href: windows-media-drm-10-for-network-devices.md
-                - name: caminho de áudio seguro da Microsoft (preterido)
+                - name: caminho de áudio seguro da microsoft (preterido)
                   href: microsoft-secure-audio-path--deprecated.md
                   items:
                     - name: o modelo de caminho de áudio seguro (preterido)
                       href: the-secure-audio-path-model--deprecated.md
-                    - name: Exibindo ou modificando o sinal de música (preterido)
+                    - name: exibindo ou modificando o sinal de música (preterido)
                       href: viewing-or-modifying-the-music-signal--deprecated.md
-                    - name: o componente de kernel do DRM (preterido)
+                    - name: o componente de kernel drm (preterido)
                       href: the-drm-kernel-component--deprecated.md
                     - name: desabilitando a saída digital (preterido)
                       href: disabling-digital-output--deprecated.md
@@ -187,34 +187,34 @@
         - name: usando os métodos de retorno de chamada
           href: using-the-callback-methods.md
           items:
-            - name: usando o retorno de chamada OnStatus
+            - name: usando o retorno de chamada onstatus
               href: using-the-onstatus-callback.md
             - name: usando eventos com chamadas assíncronas
               href: using-events-with-asynchronous-calls.md
-            - name: usando o parâmetro context
+            - name: usando o parâmetro de contexto
               href: using-the-context-parameter.md
         - name: trabalhando com perfis
           href: working-with-profiles.md
           items:
-            - name: Criando perfis
+            - name: projetando perfis
               href: designing-profiles.md
               items:
                 - name: selecionando recursos de perfil
                   href: selecting-profile-features.md
-                - name: Escolhendo um método de codificação
+                - name: escolhendo um método de codificação
                   href: choosing-an-encoding-method.md
                 - name: selecionando taxas de bits
                   href: selecting-bit-rates.md
                 - name: trabalhando com modelos de conformidade do dispositivo
                   href: working-with-device-conformance-templates.md
-            - name: Criando perfis
+            - name: criando perfis
               href: creating-profiles.md
-            - name: Configurando fluxos
+            - name: configurando fluxos
               href: configuring-streams.md
               items:
                 - name: configuração comum a todos os fluxos
                   href: configuration-common-to-all-streams.md
-                - name: obtendo informações de configuração de fluxo de codecs
+                - name: obter informações de configuração de fluxo de codecs
                   href: getting-stream-configuration-information-from-codecs.md
                   items:
                     - name: para enumerar todos os codecs de mídia do Windows instalados
@@ -876,32 +876,32 @@
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmbackuprestoreprops-removeallprops
                 - name: 'iwmbackuprestoreprops::removeprop'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmbackuprestoreprops-removeprop
-                - name: 'iwmbackuprestoreprops:: SetProp'
+                - name: 'iwmbackuprestoreprops::setprop'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmbackuprestoreprops-setprop
-            - name: interface iwmbandwidthsharing
+            - name: Interface iwmbandwidthsharing
               href: /previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmbandwidthsharing
               items:
-                - name: 'iwmbandwidthsharing:: getlargura de banda'
+                - name: 'iwmbandwidthsharing::getbandwidth'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmbandwidthsharing-getbandwidth
-                - name: 'iwmbandwidthsharing:: GetType'
+                - name: 'iwmbandwidthsharing::gettype'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmbandwidthsharing-gettype
-                - name: 'iwmbandwidthsharing:: setlargura de banda'
+                - name: 'iwmbandwidthsharing::setbandwidth'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmbandwidthsharing-setbandwidth
-                - name: 'iwmbandwidthsharing:: SetType'
+                - name: 'iwmbandwidthsharing::settype'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmbandwidthsharing-settype
-            - name: interface iwmclientconnections
+            - name: Interface iwmclientconnections
               href: /previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmclientconnections
               items:
                 - name: 'iwmclientconnections::getclientcount'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmclientconnections-getclientcount
-                - name: 'iwmclientconnections:: getclientproperties'
+                - name: 'iwmclientconnections::getclientproperties'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmclientconnections-getclientproperties
-            - name: interface iwmclientconnections2
+            - name: Interface iwmclientconnections2
               href: /previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmclientconnections2
               items:
-                - name: 'iwmclientconnections2:: getClientInfo'
+                - name: 'iwmclientconnections2::getclientinfo'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmclientconnections2-getclientinfo
-            - name: interface iwmcodecamvideoaccelerator
+            - name: Interface iwmcodecamvideoaccelerator
               href: /previous-versions/windows/desktop/api/wmdxva/nn-wmdxva-iwmcodecamvideoaccelerator
               items:
                 - name: 'iwmcodecamvideoaccelerator::negotiateconnection'
@@ -910,7 +910,7 @@
                   href: /previous-versions/windows/desktop/api/wmdxva/nf-wmdxva-iwmcodecamvideoaccelerator-setacceleratorinterface
                 - name: 'iwmcodecamvideoaccelerator::setplayernotify'
                   href: /previous-versions/windows/desktop/api/wmdxva/nf-wmdxva-iwmcodecamvideoaccelerator-setplayernotify
-            - name: interface iwmcodecinfo
+            - name: Interface iwmcodecinfo
               href: /previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmcodecinfo
               items:
                 - name: 'iwmcodecinfo::getcodecformat'
@@ -919,14 +919,14 @@
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmcodecinfo-getcodecformatcount
                 - name: 'iwmcodecinfo::getcodecinfocount'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmcodecinfo-getcodecinfocount
-            - name: interface iwmcodecinfo2
+            - name: Interface iwmcodecinfo2
               href: /previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmcodecinfo2
               items:
                 - name: 'iwmcodecinfo2::getcodecformatdesc'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmcodecinfo2-getcodecformatdesc
-                - name: 'iwmcodecinfo2:: getcodecname'
+                - name: 'iwmcodecinfo2::getcodecname'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmcodecinfo2-getcodecname
-            - name: interface iwmcodecinfo3
+            - name: Interface iwmcodecinfo3
               href: /previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmcodecinfo3
               items:
                 - name: 'iwmcodecinfo3::getcodecenumerationsetting'
@@ -937,12 +937,12 @@
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmcodecinfo3-getcodecprop
                 - name: 'iwmcodecinfo3::setcodecenumerationsetting'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmcodecinfo3-setcodecenumerationsetting
-            - name: interface iwmcredentialcallback
+            - name: Interface iwmcredentialcallback
               href: /previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmcredentialcallback
               items:
                 - name: 'iwmcredentialcallback::acquirecredentials'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmcredentialcallback-acquirecredentials
-            - name: interface iwmdeviceregistration
+            - name: Interface iwmdeviceregistration
               href: /previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmdeviceregistration
               items:
                 - name: 'iwmdeviceregistration::getfirstregistereddevice'
@@ -953,26 +953,26 @@
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmdeviceregistration-getregistereddevicebyid
                 - name: 'iwmdeviceregistration::getregistrationstats'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmdeviceregistration-getregistrationstats
-                - name: 'iwmdeviceregistration:: RegisterDevice'
+                - name: 'iwmdeviceregistration::registerdevice'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmdeviceregistration-registerdevice
                 - name: 'iwmdeviceregistration::unregisterdevice'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmdeviceregistration-unregisterdevice
-            - name: interface iwmdrmeditor
+            - name: Interface iwmdrmeditor
               href: /previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmdrmeditor
               items:
                 - name: 'iwmdrmeditor::getdrmproperty'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmdrmeditor-getdrmproperty
-            - name: interface iwmdrmmessageparser
+            - name: Interface iwmdrmmessageparser
               href: /previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmdrmmessageparser
               items:
                 - name: 'iwmdrmmessageparser::p arselicenserequestmsg'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmdrmmessageparser-parselicenserequestmsg
                 - name: 'iwmdrmmessageparser::p arseregistrationreqmsg'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmdrmmessageparser-parseregistrationreqmsg
-            - name: interface iwmdrmreader
+            - name: Interface iwmdrmreader
               href: /previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmdrmreader
               items:
-                - name: 'iwmdrmreader:: AcquireLicense'
+                - name: 'iwmdrmreader::acquirelicense'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmdrmreader-acquirelicense
                 - name: 'iwmdrmreader::cancelindividualization'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmdrmreader-cancelindividualization
@@ -982,13 +982,13 @@
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmdrmreader-cancelmonitorlicenseacquisition
                 - name: 'iwmdrmreader::getdrmproperty'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmdrmreader-getdrmproperty
-                - name: 'iwmdrmreader:: individualize'
+                - name: 'iwmdrmreader::individualize'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmdrmreader-individualize
                 - name: 'iwmdrmreader::monitorlicenseacquisition'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmdrmreader-monitorlicenseacquisition
                 - name: 'iwmdrmreader::setdrmproperty'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmdrmreader-setdrmproperty
-            - name: interface iwmdrmreader2
+            - name: Interface iwmdrmreader2
               href: /previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmdrmreader2
               items:
                 - name: 'iwmdrmreader2::getcopyoutputlevels'
@@ -999,28 +999,28 @@
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmdrmreader2-setevaluateoutputlevellicenses
                 - name: 'iwmdrmreader2::trynextlicense'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmdrmreader2-trynextlicense
-            - name: interface iwmdrmreader3
+            - name: Interface iwmdrmreader3
               href: /previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmdrmreader3
               items:
-                - name: 'iwmdrmreader3:: inclusionlist'
+                - name: 'iwmdrmreader3::getinclusionlist'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmdrmreader3-getinclusionlist
-            - name: interface iwmdrmtranscryptionmanager
+            - name: Interface iwmdrmtranscryptionmanager
               href: /previous-versions/windows/desktop/legacy/dd798365(v=vs.85)
               items:
                 - name: 'iwmdrmtranscryptionmanager::createtranscryptor'
                   href: /previous-versions/windows/desktop/legacy/dd798366(v=vs.85)
-            - name: interface iwmdrmtranscryptor
+            - name: Interface iwmdrmtranscryptor
               href: /previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmdrmtranscryptor
               items:
-                - name: 'iwmdrmtranscryptor:: fechar'
+                - name: 'iwmdrmtranscryptor::close'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmdrmtranscryptor-close
-                - name: 'iwmdrmtranscryptor:: Initialize'
+                - name: 'iwmdrmtranscryptor::initialize'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmdrmtranscryptor-initialize
-                - name: 'iwmdrmtranscryptor:: ler'
+                - name: 'iwmdrmtranscryptor::read'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmdrmtranscryptor-read
-                - name: 'iwmdrmtranscryptor:: Seek'
+                - name: 'iwmdrmtranscryptor::seek'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmdrmtranscryptor-seek
-            - name: interface iwmdrmwriter
+            - name: Interface iwmdrmwriter
               href: /previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmdrmwriter
               items:
                 - name: 'iwmdrmwriter::generatekeyid'
@@ -1031,27 +1031,27 @@
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmdrmwriter-generatesigningkeypair
                 - name: 'iwmdrmwriter::setdrmattribute'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmdrmwriter-setdrmattribute
-            - name: interface iwmdrmwriter2
+            - name: Interface iwmdrmwriter2
               href: /previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmdrmwriter2
               items:
                 - name: 'iwmdrmwriter2::setwmdrmnetencryption'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmdrmwriter2-setwmdrmnetencryption
-            - name: interface iwmdrmwriter3
+            - name: Interface iwmdrmwriter3
               href: /previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmdrmwriter3
               items:
                 - name: 'iwmdrmwriter3::setprotectstreamsamples'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmdrmwriter3-setprotectstreamsamples
-            - name: interface iwmgetsecurechannel
+            - name: Interface iwmgetsecurechannel
               href: /previous-versions/windows/desktop/api/wmsecure/nn-wmsecure-iwmgetsecurechannel
               items:
                 - name: 'iwmgetsecurechannel::getpeersecurechannelinterface'
                   href: /previous-versions/windows/desktop/api/wmsecure/nf-wmsecure-iwmgetsecurechannel-getpeersecurechannelinterface
-            - name: interface iwmheaderinfo
+            - name: Interface iwmheaderinfo
               href: /previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo
               items:
-                - name: 'iwmheaderinfo:: addmarcer'
+                - name: 'iwmheaderinfo::addmarker'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmheaderinfo-addmarker
-                - name: 'iwmheaderinfo:: addScript'
+                - name: 'iwmheaderinfo::addscript'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmheaderinfo-addscript
                 - name: 'iwmheaderinfo::getattributebyindex'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmheaderinfo-getattributebyindex
@@ -1059,11 +1059,11 @@
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmheaderinfo-getattributebyname
                 - name: 'iwmheaderinfo::getattributecount'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmheaderinfo-getattributecount
-                - name: 'iwmheaderinfo:: getmarcer'
+                - name: 'iwmheaderinfo::getmarker'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmheaderinfo-getmarker
                 - name: 'iwmheaderinfo::getmarkercount'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmheaderinfo-getmarkercount
-                - name: 'iwmheaderinfo:: GetScript'
+                - name: 'iwmheaderinfo::getscript'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmheaderinfo-getscript
                 - name: 'iwmheaderinfo::getscriptcount'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmheaderinfo-getscriptcount
@@ -1071,16 +1071,16 @@
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmheaderinfo-removemarker
                 - name: 'iwmheaderinfo::removescript'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmheaderinfo-removescript
-                - name: 'iwmheaderinfo:: SetAttribute'
+                - name: 'iwmheaderinfo::setattribute'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmheaderinfo-setattribute
-            - name: interface iwmheaderinfo2
+            - name: Interface iwmheaderinfo2
               href: /previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo2
               items:
                 - name: 'iwmheaderinfo2::getcodecinfo'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmheaderinfo2-getcodecinfo
                 - name: 'iwmheaderinfo2::getcodecinfocount'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmheaderinfo2-getcodecinfocount
-            - name: interface iwmheaderinfo3
+            - name: Interface iwmheaderinfo3
               href: /previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo3
               items:
                 - name: 'iwmheaderinfo3::addattribute'
@@ -1328,24 +1328,24 @@
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmprofilemanager-loadsystemprofile
                 - name: 'iwmprofilemanager::saveprofile'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmprofilemanager-saveprofile
-            - name: interface iwmprofilemanager2
+            - name: Interface iwmprofilemanager2
               href: /previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmprofilemanager2
               items:
                 - name: 'iwmprofilemanager2::getsystemprofileversion'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmprofilemanager2-getsystemprofileversion
                 - name: 'iwmprofilemanager2::setsystemprofileversion'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmprofilemanager2-setsystemprofileversion
-            - name: interface iwmprofilemanagerlanguage
+            - name: Interface iwmprofilemanagerlanguage
               href: /previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmprofilemanagerlanguage
               items:
                 - name: 'iwmprofilemanagerlanguage::getuserlanguageid'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmprofilemanagerlanguage-getuserlanguageid
                 - name: 'iwmprofilemanagerlanguage::setuserlanguageid'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmprofilemanagerlanguage-setuserlanguageid
-            - name: interface iwmpropertyvault
+            - name: Interface iwmpropertyvault
               href: /previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmpropertyvault
               items:
-                - name: 'iwmpropertyvault:: Clear'
+                - name: 'iwmpropertyvault::clear'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmpropertyvault-clear
                 - name: 'iwmpropertyvault::copypropertiesfrom'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmpropertyvault-copypropertiesfrom
@@ -1355,17 +1355,17 @@
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmpropertyvault-getpropertybyname
                 - name: 'iwmpropertyvault::getpropertycount'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmpropertyvault-getpropertycount
-                - name: 'iwmpropertyvault:: SetProperty'
+                - name: 'iwmpropertyvault::setproperty'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmpropertyvault-setproperty
-            - name: interface iwmproximitydetection
+            - name: Interface iwmproximitydetection
               href: /previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmproximitydetection
               items:
                 - name: 'iwmproximitydetection::startdetection'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmproximitydetection-startdetection
-            - name: interface iwmreader
+            - name: Interface iwmreader
               href: /previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmreader
               items:
-                - name: 'iwmreader:: fechar'
+                - name: 'iwmreader::close'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmreader-close
                 - name: 'iwmreader::getoutputcount'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmreader-getoutputcount
@@ -1375,26 +1375,26 @@
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmreader-getoutputformatcount
                 - name: 'iwmreader::getoutputprops'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmreader-getoutputprops
-                - name: 'iwmreader:: abrir'
+                - name: 'iwmreader::open'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmreader-open
                 - name: 'iwmreader::p ause'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmreader-pause
-                - name: 'iwmreader:: retomar'
+                - name: 'iwmreader::resume'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmreader-resume
                 - name: 'iwmreader::setoutputprops'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmreader-setoutputprops
-                - name: 'iwmreader:: iniciar'
+                - name: 'iwmreader::start'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmreader-start
-                - name: 'iwmreader:: Stop'
+                - name: 'iwmreader::stop'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmreader-stop
-            - name: interface iwmreaderaccelerator
+            - name: Interface iwmreaderaccelerator
               href: /previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmreaderaccelerator
               items:
                 - name: 'iwmreaderaccelerator::getcodecinterface'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmreaderaccelerator-getcodecinterface
-                - name: 'iwmreaderaccelerator:: Notify'
+                - name: 'iwmreaderaccelerator::notify'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmreaderaccelerator-notify
-            - name: interface iwmreaderadvanced
+            - name: Interface iwmreaderadvanced
               href: /previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmreaderadvanced
               items:
                 - name: 'iwmreaderadvanced::d elivertime'
@@ -1413,7 +1413,7 @@
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmreaderadvanced-getreceiveselectioncallbacks
                 - name: 'iwmreaderadvanced::getreceivestreamsamples'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmreaderadvanced-getreceivestreamsamples
-                - name: 'iwmreaderadvanced:: getstatistics'
+                - name: 'iwmreaderadvanced::getstatistics'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmreaderadvanced-getstatistics
                 - name: 'iwmreaderadvanced::getstreamselected'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmreaderadvanced-getstreamselected
@@ -1425,7 +1425,7 @@
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmreaderadvanced-setallocateforoutput
                 - name: 'iwmreaderadvanced::setallocateforstream'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmreaderadvanced-setallocateforstream
-                - name: 'iwmreaderadvanced:: setClientInfo'
+                - name: 'iwmreaderadvanced::setclientinfo'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmreaderadvanced-setclientinfo
                 - name: 'iwmreaderadvanced::setmanualstreamselection'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmreaderadvanced-setmanualstreamselection
@@ -1437,7 +1437,7 @@
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmreaderadvanced-setstreamsselected
                 - name: 'iwmreaderadvanced::setuserprovidedclock'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmreaderadvanced-setuserprovidedclock
-            - name: interface iwmreaderadvanced2
+            - name: Interface iwmreaderadvanced2
               href: /previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmreaderadvanced2
               items:
                 - name: 'iwmreaderadvanced2::getbufferprogress'
@@ -1448,36 +1448,36 @@
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmreaderadvanced2-getlogclientid
                 - name: 'iwmreaderadvanced2::getoutputsetting'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmreaderadvanced2-getoutputsetting
-                - name: 'iwmreaderadvanced2:: getplaymode'
+                - name: 'iwmreaderadvanced2::getplaymode'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmreaderadvanced2-getplaymode
-                - name: 'iwmreaderadvanced2:: getprotocolname'
+                - name: 'iwmreaderadvanced2::getprotocolname'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmreaderadvanced2-getprotocolname
                 - name: 'iwmreaderadvanced2::getsaveasprogress'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmreaderadvanced2-getsaveasprogress
                 - name: 'iwmreaderadvanced2::openstream'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmreaderadvanced2-openstream
-                - name: 'iwmreaderadvanced2: relançar:p'
+                - name: 'iwmreaderadvanced2::p reroll'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmreaderadvanced2-preroll
-                - name: 'iwmreaderadvanced2:: SaveFileAs'
+                - name: 'iwmreaderadvanced2::savefileas'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmreaderadvanced2-savefileas
                 - name: 'iwmreaderadvanced2::setlogclientid'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmreaderadvanced2-setlogclientid
                 - name: 'iwmreaderadvanced2::setoutputsetting'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmreaderadvanced2-setoutputsetting
-                - name: 'iwmreaderadvanced2:: SetPlayMode'
+                - name: 'iwmreaderadvanced2::setplaymode'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmreaderadvanced2-setplaymode
                 - name: 'iwmreaderadvanced2::startatmarker'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmreaderadvanced2-startatmarker
                 - name: 'iwmreaderadvanced2::stopbuffering'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmreaderadvanced2-stopbuffering
-            - name: interface iwmreaderadvanced3
+            - name: Interface iwmreaderadvanced3
               href: /previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmreaderadvanced3
               items:
                 - name: 'iwmreaderadvanced3::startatposition'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmreaderadvanced3-startatposition
                 - name: 'iwmreaderadvanced3::stopnetstreaming'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmreaderadvanced3-stopnetstreaming
-            - name: interface iwmreaderadvanced4
+            - name: Interface iwmreaderadvanced4
               href: /previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmreaderadvanced4
               items:
                 - name: 'iwmreaderadvanced4::addlogparam'
@@ -1486,41 +1486,41 @@
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmreaderadvanced4-cancelsavefileas
                 - name: 'iwmreaderadvanced4::cansavefileas'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmreaderadvanced4-cansavefileas
-                - name: 'iwmreaderadvanced4:: GetLanguage'
+                - name: 'iwmreaderadvanced4::getlanguage'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmreaderadvanced4-getlanguage
                 - name: 'iwmreaderadvanced4::getlanguagecount'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmreaderadvanced4-getlanguagecount
                 - name: 'iwmreaderadvanced4::getmaxspeedfactor'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmreaderadvanced4-getmaxspeedfactor
-                - name: 'iwmreaderadvanced4:: getURL'
+                - name: 'iwmreaderadvanced4::geturl'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmreaderadvanced4-geturl
                 - name: 'iwmreaderadvanced4::isusingfastcache'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmreaderadvanced4-isusingfastcache
                 - name: 'iwmreaderadvanced4::sendlogparams'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmreaderadvanced4-sendlogparams
-            - name: interface iwmreaderadvanced5
+            - name: Interface iwmreaderadvanced5
               href: /previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmreaderadvanced5
               items:
                 - name: 'iwmreaderadvanced5::setplayerhook'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmreaderadvanced5-setplayerhook
-            - name: interface iwmreaderadvanced6
+            - name: Interface iwmreaderadvanced6
               href: /previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmreaderadvanced6
               items:
                 - name: 'iwmreaderadvanced6::setprotectstreamsamples'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmreaderadvanced6-setprotectstreamsamples
-            - name: interface iwmreaderallocatorex
+            - name: Interface iwmreaderallocatorex
               href: /previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmreaderallocatorex
               items:
                 - name: 'iwmreaderallocatorex::allocateforoutputex'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmreaderallocatorex-allocateforoutputex
                 - name: 'iwmreaderallocatorex::allocateforstreamex'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmreaderallocatorex-allocateforstreamex
-            - name: interface iwmreadercallback
+            - name: Interface iwmreadercallback
               href: /previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmreadercallback
               items:
-                - name: 'iwmreadercallback:: onsample'
+                - name: 'iwmreadercallback::onsample'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmreadercallback-onsample
-            - name: interface iwmreadercallbackadvanced
+            - name: Interface iwmreadercallbackadvanced
               href: /previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmreadercallbackadvanced
               items:
                 - name: 'iwmreadercallbackadvanced::allocateforoutput'
@@ -1744,17 +1744,17 @@
                   href: /previous-versions/windows/desktop/api/wmsinternaladminnetsource/nf-wmsinternaladminnetsource-iwmsinternaladminnetsource-findproxyforurl
                 - name: 'iwmsinternaladminnetsource::getcredentialflags'
                   href: /previous-versions/windows/desktop/api/wmsinternaladminnetsource/nf-wmsinternaladminnetsource-iwmsinternaladminnetsource-getcredentialflags
-                - name: 'iwmsinternaladminnetsource:: GetCredentials'
+                - name: 'iwmsinternaladminnetsource::getcredentials'
                   href: /previous-versions/windows/desktop/api/wmsinternaladminnetsource/nf-wmsinternaladminnetsource-iwmsinternaladminnetsource-getcredentials
                 - name: 'iwmsinternaladminnetsource::registerproxyfailure'
                   href: /previous-versions/windows/desktop/api/wmsinternaladminnetsource/nf-wmsinternaladminnetsource-iwmsinternaladminnetsource-registerproxyfailure
                 - name: 'iwmsinternaladminnetsource::setcredentialflags'
                   href: /previous-versions/windows/desktop/api/wmsinternaladminnetsource/nf-wmsinternaladminnetsource-iwmsinternaladminnetsource-setcredentialflags
-                - name: 'iwmsinternaladminnetsource:: SetCredentials'
+                - name: 'iwmsinternaladminnetsource::setcredentials'
                   href: /previous-versions/windows/desktop/api/wmsinternaladminnetsource/nf-wmsinternaladminnetsource-iwmsinternaladminnetsource-setcredentials
                 - name: 'iwmsinternaladminnetsource::shutdownproxycontext'
                   href: /previous-versions/windows/desktop/api/wmsinternaladminnetsource/nf-wmsinternaladminnetsource-iwmsinternaladminnetsource-shutdownproxycontext
-            - name: interface iwmsinternaladminnetsource2
+            - name: Interface iwmsinternaladminnetsource2
               href: /previous-versions/windows/desktop/api/wmsinternaladminnetsource/nn-wmsinternaladminnetsource-iwmsinternaladminnetsource2
               items:
                 - name: 'iwmsinternaladminnetsource2::d eletecredentialsex'
@@ -1763,7 +1763,7 @@
                   href: /previous-versions/windows/desktop/api/wmsinternaladminnetsource/nf-wmsinternaladminnetsource-iwmsinternaladminnetsource2-getcredentialsex
                 - name: 'iwmsinternaladminnetsource2::setcredentialsex'
                   href: /previous-versions/windows/desktop/api/wmsinternaladminnetsource/nf-wmsinternaladminnetsource-iwmsinternaladminnetsource2-setcredentialsex
-            - name: interface iwmsinternaladminnetsource3
+            - name: Interface iwmsinternaladminnetsource3
               href: /previous-versions/windows/desktop/api/wmsinternaladminnetsource/nn-wmsinternaladminnetsource-iwmsinternaladminnetsource3
               items:
                 - name: 'iwmsinternaladminnetsource3::findproxyforurlex2'
@@ -1774,37 +1774,37 @@
                   href: /previous-versions/windows/desktop/api/wmsinternaladminnetsource/nf-wmsinternaladminnetsource-iwmsinternaladminnetsource3-setcredentialsex2
                 - name: 'iwmsinternaladminnetsource3::shutdownproxycontext2'
                   href: /previous-versions/windows/desktop/api/wmsinternaladminnetsource/nf-wmsinternaladminnetsource-iwmsinternaladminnetsource3-shutdownproxycontext2
-            - name: interface iwmstatuscallback
+            - name: Interface iwmstatuscallback
               href: /previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmstatuscallback
               items:
-                - name: 'iwmstatuscallback:: OnStatus'
+                - name: 'iwmstatuscallback::onstatus'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmstatuscallback-onstatus
-            - name: interface iwmstreamconfig
+            - name: Interface iwmstreamconfig
               href: /previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmstreamconfig
               items:
-                - name: 'iwmstreamconfig:: gettaxa de bits'
+                - name: 'iwmstreamconfig::getbitrate'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmstreamconfig-getbitrate
                 - name: 'iwmstreamconfig::getbufferwindow'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmstreamconfig-getbufferwindow
-                - name: 'iwmstreamconfig:: GetConnectionName'
+                - name: 'iwmstreamconfig::getconnectionname'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmstreamconfig-getconnectionname
-                - name: 'iwmstreamconfig:: getstreamname'
+                - name: 'iwmstreamconfig::getstreamname'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmstreamconfig-getstreamname
                 - name: 'iwmstreamconfig::getstreamnumber'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmstreamconfig-getstreamnumber
-                - name: 'iwmstreamconfig:: getstreamtype'
+                - name: 'iwmstreamconfig::getstreamtype'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmstreamconfig-getstreamtype
-                - name: 'iwmstreamconfig:: settaxa de bits'
+                - name: 'iwmstreamconfig::setbitrate'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmstreamconfig-setbitrate
                 - name: 'iwmstreamconfig::setbufferwindow'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmstreamconfig-setbufferwindow
-                - name: 'iwmstreamconfig:: setconnectionname'
+                - name: 'iwmstreamconfig::setconnectionname'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmstreamconfig-setconnectionname
-                - name: 'iwmstreamconfig:: setstreamname'
+                - name: 'iwmstreamconfig::setstreamname'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmstreamconfig-setstreamname
                 - name: 'iwmstreamconfig::setstreamnumber'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmstreamconfig-setstreamnumber
-            - name: interface iwmstreamconfig2
+            - name: Interface iwmstreamconfig2
               href: /previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmstreamconfig2
               items:
                 - name: 'iwmstreamconfig2::adddataunitextension'
@@ -1813,39 +1813,39 @@
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmstreamconfig2-getdataunitextension
                 - name: 'iwmstreamconfig2::getdataunitextensioncount'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmstreamconfig2-getdataunitextensioncount
-                - name: 'iwmstreamconfig2:: gettransporttype'
+                - name: 'iwmstreamconfig2::gettransporttype'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmstreamconfig2-gettransporttype
                 - name: 'iwmstreamconfig2::removealldataunitextensions'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmstreamconfig2-removealldataunitextensions
-                - name: 'iwmstreamconfig2:: settransporttype'
+                - name: 'iwmstreamconfig2::settransporttype'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmstreamconfig2-settransporttype
-            - name: interface iwmstreamconfig3
+            - name: Interface iwmstreamconfig3
               href: /previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmstreamconfig3
               items:
-                - name: 'iwmstreamconfig3:: GetLanguage'
+                - name: 'iwmstreamconfig3::getlanguage'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmstreamconfig3-getlanguage
-                - name: 'iwmstreamconfig3:: setlanguage'
+                - name: 'iwmstreamconfig3::setlanguage'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmstreamconfig3-setlanguage
-            - name: interface iwmstreamlist
+            - name: Interface iwmstreamlist
               href: /previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmstreamlist
               items:
-                - name: 'iwmstreamlist:: AddStream'
+                - name: 'iwmstreamlist::addstream'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmstreamlist-addstream
-                - name: 'iwmstreamlist:: GetStreams'
+                - name: 'iwmstreamlist::getstreams'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmstreamlist-getstreams
                 - name: 'iwmstreamlist::removestream'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmstreamlist-removestream
-            - name: interface iwmstreamprioritization
+            - name: Interface iwmstreamprioritization
               href: /previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmstreamprioritization
               items:
                 - name: 'iwmstreamprioritization::getpriorityrecords'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmstreamprioritization-getpriorityrecords
                 - name: 'iwmstreamprioritization::setpriorityrecords'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmstreamprioritization-setpriorityrecords
-            - name: interface iwmsyncreader
+            - name: Interface iwmsyncreader
               href: /previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmsyncreader
               items:
-                - name: 'iwmsyncreader:: fechar'
+                - name: 'iwmsyncreader::close'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmsyncreader-close
                 - name: 'iwmsyncreader::getmaxoutputsamplesize'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmsyncreader-getmaxoutputsamplesize
@@ -1871,7 +1871,7 @@
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmsyncreader-getstreamnumberforoutput
                 - name: 'iwmsyncreader::getstreamselected'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmsyncreader-getstreamselected
-                - name: 'iwmsyncreader:: abrir'
+                - name: 'iwmsyncreader::open'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmsyncreader-open
                 - name: 'iwmsyncreader::openstream'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmsyncreader-openstream
@@ -1879,7 +1879,7 @@
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmsyncreader-setoutputprops
                 - name: 'iwmsyncreader::setoutputsetting'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmsyncreader-setoutputsetting
-                - name: 'iwmsyncreader:: SetRange'
+                - name: 'iwmsyncreader::setrange'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmsyncreader-setrange
                 - name: 'iwmsyncreader::setrangebyframe'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmsyncreader-setrangebyframe
@@ -1887,7 +1887,7 @@
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmsyncreader-setreadstreamsamples
                 - name: 'iwmsyncreader::setstreamsselected'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmsyncreader-setstreamsselected
-            - name: interface iwmsyncreader2
+            - name: Interface iwmsyncreader2
               href: /previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmsyncreader2
               items:
                 - name: 'iwmsyncreader2::getallocateforoutput'
@@ -1907,29 +1907,29 @@
               items:
                 - name: 'iwmvideomediaprops::getmaxkeyframespacing'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmvideomediaprops-getmaxkeyframespacing
-                - name: 'iwmvideomediaprops:: getquality'
+                - name: 'iwmvideomediaprops::getquality'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmvideomediaprops-getquality
                 - name: 'iwmvideomediaprops::setmaxkeyframespacing'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmvideomediaprops-setmaxkeyframespacing
-                - name: 'iwmvideomediaprops:: setquality'
+                - name: 'iwmvideomediaprops::setquality'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmvideomediaprops-setquality
-            - name: interface iwmwatermarkinfo
+            - name: Interface iwmwatermarkinfo
               href: /previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmwatermarkinfo
               items:
                 - name: 'iwmwatermarkinfo::getwatermarkentry'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmwatermarkinfo-getwatermarkentry
                 - name: 'iwmwatermarkinfo::getwatermarkentrycount'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmwatermarkinfo-getwatermarkentrycount
-            - name: interface iwmwriter
+            - name: Interface iwmwriter
               href: /previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmwriter
               items:
                 - name: 'iwmwriter::allocatesample'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmwriter-allocatesample
                 - name: 'iwmwriter::beginwriting'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmwriter-beginwriting
-                - name: 'iwmwriter:: redação'
+                - name: 'iwmwriter::endwriting'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmwriter-endwriting
-                - name: 'iwmwriter:: flush'
+                - name: 'iwmwriter::flush'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmwriter-flush
                 - name: 'iwmwriter::getinputcount'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmwriter-getinputcount
@@ -1943,18 +1943,18 @@
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmwriter-setinputprops
                 - name: 'iwmwriter::setoutputfilename'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmwriter-setoutputfilename
-                - name: 'iwmwriter:: setprofile'
+                - name: 'iwmwriter::setprofile'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmwriter-setprofile
                 - name: 'iwmwriter::setprofilebyid'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmwriter-setprofilebyid
                 - name: 'iwmwriter::writesample'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmwriter-writesample
-            - name: interface iwmwriteradvanced
+            - name: Interface iwmwriteradvanced
               href: /previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmwriteradvanced
               items:
-                - name: 'iwmwriteradvanced:: addsink'
+                - name: 'iwmwriteradvanced::addsink'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmwriteradvanced-addsink
-                - name: 'iwmwriteradvanced:: getsink'
+                - name: 'iwmwriteradvanced::getsink'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmwriteradvanced-getsink
                 - name: 'iwmwriteradvanced::getsinkcount'
                   href: /previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmwriteradvanced-getsinkcount
@@ -2373,13 +2373,13 @@
                   href: nsc-phone.md
                 - name: numberofframes
                   href: numberofframes.md
-                - name: optimalbitrate
+                - name: taxa debite ideal
                   href: optimalbitrate.md
-                - name: picovalue
+                - name: peakvalue
                   href: peakvalue.md
                 - name: classificação
                   href: rating.md
-                - name: busca
+                - name: Pesquisável
                   href: seekable.md
                 - name: signature_name
                   href: signature-name.md
@@ -2389,203 +2389,203 @@
                   href: title.md
                 - name: vbrpeak
                   href: vbrpeak.md
-                - name: WM/albumartist
+                - name: wm/albumartist
                   href: wm-albumartist.md
-                - name: WM/albumcoverurl
+                - name: wm/albumcoverurl
                   href: wm-albumcoverurl.md
-                - name: WM/campos AlbumTitle
+                - name: wm/albumtitle
                   href: wm-albumtitle.md
-                - name: WM/asfpacketcount
+                - name: wm/asfpacketcount
                   href: wm-asfpacketcount.md
-                - name: WM/asfsecurityobjectssize
+                - name: wm/asfsecurityobjectssize
                   href: wm-asfsecurityobjectssize.md
-                - name: WM/audiofileurl
+                - name: wm/audiofileurl
                   href: wm-audiofileurl.md
-                - name: WM/audiosourceurl
+                - name: wm/audiosourceurl
                   href: wm-audiosourceurl.md
-                - name: WM/authorurl
+                - name: wm/authorurl
                   href: wm-authorurl.md
-                - name: WM/beatsperminute
+                - name: wm/beatsperminute
                   href: wm-beatsperminute.md
-                - name: WM/categoria
+                - name: wm/category
                   href: wm-category.md
-                - name: WM/codec
+                - name: wm/codec
                   href: wm-codec.md
-                - name: WM/Composer
+                - name: wm/composer
                   href: wm-composer.md
-                - name: WM/condutor
+                - name: wm/wm/wm
                   href: wm-conductor.md
-                - name: WM/containerFormat
+                - name: wm/containerformat
                   href: wm-containerformat.md
-                - name: WM/ContentDistributor
+                - name: wm/contentdistributor
                   href: wm-contentdistributor.md
-                - name: WM/contentgroupdescription
+                - name: wm/contentgroupdescription
                   href: wm-contentgroupdescription.md
-                - name: WM/diretor
+                - name: wm/director
                   href: wm-director.md
-                - name: WM/DRM
+                - name: wm/drm
                   href: wm-drm.md
-                - name: WM/dvdid
+                - name: wm/dvdid
                   href: wm-dvdid.md
-                - name: WM/encodedby
+                - name: wm/encodedby
                   href: wm-encodedby.md
-                - name: WM/encodingsettings
+                - name: wm/encodingsettings
                   href: wm-encodingsettings.md
-                - name: WM/codificaçãotime
+                - name: wm/encodingtime
                   href: wm-encodingtime.md
-                - name: WM/gênero
+                - name: wm/genre
                   href: wm-genre.md
-                - name: WM/gêneroid
+                - name: wm/genreid
                   href: wm-genreid.md
-                - name: WM/initialkey
+                - name: wm/initialkey
                   href: wm-initialkey.md
-                - name: WM/ISRC
+                - name: wm/isrc
                   href: wm-isrc.md
-                - name: WM/linguagem
+                - name: wm/language
                   href: wm-language.md
-                - name: WM/letras de música
+                - name: wm/wm
                   href: wm-lyrics.md
-                - name: WM/lyrics_synchronised
+                - name: wm/lyrics_synchronised
                   href: wm-lyrics-synchronised.md
-                - name: WM/MCDI
+                - name: wm/mcdi
                   href: wm-mcdi.md
-                - name: WM/mediaclassprimaryid
+                - name: wm/mediaclassprimaryid
                   href: wm-mediaprimaryid.md
-                - name: WM/mediaclasssecondaryid
+                - name: wm/mediaclasssecondaryid
                   href: wm-mediasecondaryid.md
-                - name: WM/mediacredits
+                - name: wm/mediacredits
                   href: wm-mediacredits.md
-                - name: WM/mediaisdelay
+                - name: wm/mediaisdelay
                   href: wm-mediaisdelay.md
-                - name: WM/mediaisfinale
+                - name: wm/mediaisfinale
                   href: wm-mediaisfinale.md
-                - name: WM/mediaislive
+                - name: wm/mediaislive
                   href: wm-mediaislive.md
-                - name: WM/mediaispremiere
+                - name: wm/mediaispreprere
                   href: wm-mediaispremiere.md
-                - name: WM/mediaisrepeat
+                - name: wm/mediaisrepeat
                   href: wm-mediaisrepeat.md
-                - name: WM/mediaissap
+                - name: wm/mediaissap
                   href: wm-mediaissap.md
-                - name: WM/mediaisstereo
+                - name: wm/mediaisstereo
                   href: wm-mediaisstereo.md
-                - name: WM/mediaissubtitled
+                - name: wm/mediaissubtitled
                   href: wm-mediaissubtitled.md
-                - name: WM/mediaistape
+                - name: wm/mediaistape
                   href: wm-mediaistape.md
-                - name: WM/medianetworkaffiliation
+                - name: wm/medianetworkaffiliation
                   href: wm-medianetworkaffiliation.md
-                - name: WM/mediaoriginalbroadcastdatetime
+                - name: wm/mediaoriginalbroadcastdatetime
                   href: wm-mediaoriginalbroadcastdatetime.md
-                - name: WM/mediaoriginalchannel
+                - name: wm/mediaoriginalchannel
                   href: wm-mediaoriginalchannel.md
-                - name: WM/mediastationcallsign
+                - name: wm/mediastationcallsign
                   href: wm-mediastationcallsign.md
-                - name: WM/mediastationname
+                - name: wm/mediastationname
                   href: wm-mediastationname.md
-                - name: WM/ModifiedBy
+                - name: wm/modifiedby
                   href: wm-modifiedby.md
-                - name: WM/humor
+                - name: wm/wm
                   href: wm-mood.md
-                - name: WM/originalalbumtitle
+                - name: wm/originalalbumtitle
                   href: wm-originalalbumtitle.md
-                - name: WM/originalartist
+                - name: wm/originalartist
                   href: wm-originalartist.md
-                - name: WM/OriginalFilename
+                - name: wm/originalfilename
                   href: wm-originalfilename.md
-                - name: WM/originallyricist
+                - name: wm/originallyricist
                   href: wm-originallyricist.md
-                - name: WM/originalreleasetime
+                - name: wm/originalreleasetime
                   href: wm-originalreleasetime.md
-                - name: WM/originalreleaseyear
+                - name: wm/originalreleaseyear
                   href: wm-originalreleaseyear.md
-                - name: WM/parentalrating
+                - name: wm/parentrating
                   href: wm-parentalrating.md
-                - name: WM/parentalratingreason
+                - name: wm/parentratingreason
                   href: wm-parentalratingreason.md
-                - name: WM/partofset
+                - name: wm/partofset
                   href: wm-partofset.md
-                - name: WM/peakbitrate
+                - name: wm/peakbitrate
                   href: wm-peakbitrate.md
-                - name: WM/período
+                - name: wm/period
                   href: wm-period.md
-                - name: WM/imagem
+                - name: wm/picture
                   href: wmpicture.md
-                - name: WM/playlistdelay
+                - name: wm/playlistdelay
                   href: wm-playlistdelay.md
-                - name: WM/produtor
+                - name: wm/producer
                   href: wm-producer.md
-                - name: WM/promotionurl
+                - name: wm/promotionurl
                   href: wm-promotionurl.md
-                - name: WM/ProtectionType
+                - name: wm/protectiontype
                   href: wm-protectiontype.md
-                - name: WM/provedor
+                - name: wm/provider
                   href: wm-provider.md
-                - name: WM/providercopyright
+                - name: wm/providercopyright
                   href: wm-providercopyright.md
-                - name: WM/providerrating
+                - name: wm/providerrating
                   href: wm-providerrating.md
-                - name: WM/provedorstyle
+                - name: wm/providerstyle
                   href: wm-providerstyle.md
-                - name: WM/Publicador
+                - name: wm/publisher
                   href: wm-publisher.md
-                - name: WM/radiostationname
+                - name: wm/radiostationname
                   href: wm-radiostationname.md
-                - name: WM/radiostationowner
+                - name: wm/radiostationowner
                   href: wm-radiostationowner.md
-                - name: WM/shareduserrating
+                - name: wm/shareduserrating
                   href: wm-shareduserrating.md
-                - name: WM/streamtypeinfo
+                - name: wm/streamtypeinfo
                   href: wm-streamtypeinfo.md
-                - name: WM/subscriptioncontentid
+                - name: wm/subscriptioncontentid
                   href: wm-subscriptioncontentid.md
-                - name: WM/subtítulo
+                - name: wm/subtítulo
                   href: wm-subtitle.md
-                - name: WM/subtitledescription
+                - name: wm/subtitledescription
                   href: wm-subtitledescription.md
-                - name: WM/texto
+                - name: wm/text
                   href: wm-text.md
-                - name: WM/ToolName
+                - name: wm/toolname
                   href: wm-toolname.md
-                - name: WM/toolversion
+                - name: wm/toolversion
                   href: wm-toolversion.md
-                - name: WM/Track
+                - name: wm/track
                   href: wm-track.md
-                - name: WM/tracknumber
+                - name: wm/tracknumber
                   href: wm-tracknumber.md
-                - name: WM/uniquefileidentifier
+                - name: wm/uniquefileidentifier
                   href: wm-uniquefileidentifier.md
-                - name: WM/userweburl
+                - name: wm/userweburl
                   href: wm-userweburl.md
-                - name: WM/videoclosedcaptioning
+                - name: wm/videoclosedcaptioning
                   href: wm-videoclosedcaptioning.md
-                - name: WM/videoframerate
+                - name: wm/videoframerate
                   href: wm-videoframerate.md
-                - name: WM/videoheight
+                - name: wm/videoheight
                   href: wm-videoheight.md
-                - name: WM/videowidth
+                - name: wm/videowidth
                   href: wm-videowidth.md
-                - name: WM/wmadrcaveragereference
+                - name: wm/wmadrcaveragereference
                   href: wm-wmadrcaveragereference.md
-                - name: WM/wmadrcaveragetarget
+                - name: wm/wmadrcaveragetarget
                   href: wm-wmadrcaveragetarget.md
-                - name: WM/wmadrcpeakreference
+                - name: wm/wmadrcpeakreference
                   href: wm-wmadrcpeakreference.md
-                - name: WM/wmadrcpeaktarget
+                - name: wm/wmadrcpeaktarget
                   href: wm-wmadrcpeaktarget.md
-                - name: WM/wmcollectiongroupid
+                - name: wm/wmcollectiongroupid
                   href: wm-wmcollectiongroupid.md
-                - name: WM/wmcollectionid
+                - name: wm/wmcollectionid
                   href: wm-wmcollectionid.md
-                - name: WM/wmcontentid
+                - name: wm/wmcontentid
                   href: wm-wmcontentid.md
-                - name: WM/wmshadowfilesourcedrmtype
+                - name: wm/wmshadowfilesourcedrmtype
                   href: wm-wmshadowfilesourcedrmtype.md
-                - name: WM/wmshadowfilesourcefiletype
+                - name: wm/wmshadowfilesourcefiletype
                   href: wm-wmshadowfilesourcefiletype.md
-                - name: WM/gravador
+                - name: wm/writer
                   href: wm-writer.md
-                - name: WM/ano
+                - name: wm/year
                   href: wm-year.md
             - name: atributos com vários valores
               href: attributes-with-multiple-values.md
@@ -2598,11 +2598,11 @@
                   href: attributes-for-video-files.md
                 - name: atributos de estação multicast
                   href: multicast-station-attributes.md
-                - name: lista de atributos DRM
+                - name: lista de atributos drm
                   href: drm-attribute-list.md
-            - name: suporte a marcas ID3
+            - name: Suporte à marca id3
               href: id3-tag-support.md
-        - name: Propriedades de DRM
+        - name: propriedades drm
           href: drm-properties.md
           items:
             - name: drm_actionallowed
@@ -2668,7 +2668,7 @@
           items:
             - name: subtipos de mídia descompactados
               href: uncompressed-media-subtypes.md
-            - name: subtipos de mídia compactados
+            - name: subtipos de mídia compactado
               href: compressed-media-subtypes.md
             - name: formatos de entrada de vídeo
               href: video-input-formats.md
@@ -2715,22 +2715,22 @@
               href: wmt-videoimage-transition-star.md
             - name: wmt_videoimage_transition_wheel
               href: wmt-videoimage-transition-wheel.md
-        - name: parâmetros do modelo de conformidade do dispositivo
+        - name: parâmetros de modelo de conformidade do dispositivo
           href: device-conformance-template-parameters.md
           items:
-            - name: modelos de conformidade de dispositivo de vídeo
+            - name: modelos de conformidade do dispositivo de vídeo
               href: video-device-conformance-templates.md
             - name: modelos de conformidade do dispositivo de áudio
               href: audio-device-conformance-templates.md
-            - name: combinações de modelo de conformidade do dispositivo recomendado
+            - name: combinações de modelo de conformidade de dispositivo recomendadas
               href: recommended-device-conformance-template-combinations.md
-        - name: perfis de sistema
+        - name: perfis do sistema
           href: system-profiles.md
         - name: perfis de sistema localizados
           href: localized-system-profiles.md
         - name: tipos de extensão de exemplo
           href: sample-extension-types.md
-        - name: valores GUID
+        - name: valores guid
           href: guid-values.md
           items:
             - name: identificadores de interface
@@ -2741,7 +2741,7 @@
               href: mutual-exclusion-types.md
             - name: tipos de compartilhamento de largura de banda
               href: bandwidth-sharing-types.md
-            - name: tipos de categoria de marca d' água
+            - name: tipos de categoria watermark
               href: watermark-category-types.md
         - name: códigos de erro
           href: error-codes.md
@@ -2750,30 +2750,30 @@
           items:
             - name: wmcreatestreamforurl
               href: wmcreatestreamforurl.md
-    - name: interfaces do codec de áudio e vídeo do Windows Media
+    - name: interfaces de codec de áudio e vídeo de mídia do Windows
       href: windows-media-audio-and-video-codec-interfaces--deprecated.md
       items:
-        - name: sobre as interfaces do codec de áudio e vídeo do Windows Media
+        - name: sobre as interfaces de codec de áudio e vídeo de mídia do Windows
           href: about-the-windows-media-audio-and-video-codec-interfaces--deprecated.md
           items:
-            - name: comparando as interfaces do codec de áudio e vídeo do Windows Media e o SDK do Windows Media Format
+            - name: comparando as interfaces de codec de áudio e vídeo de mídia do Windows e o sdk de formato de mídia do Windows
               href: comparing-the-windows-media-audio-and-video-codec-interfaces-and-the-windows-media-format-sdk--deprecated.md
-            - name: sobre os codecs de vídeo e áudio do Windows Media
+            - name: sobre os codecs de áudio e vídeo de mídia do Windows
               href: about-the-windows-media-audio-and-video-codecs--deprecated.md
-            - name: conceitos de codec
+            - name: Conceitos de codec
               href: codec-concepts--deprecated.md
               items:
                 - name: tipos de mídia
                   href: media-types--deprecated.md
                 - name: qualidade da mídia
                   href: media-quality--deprecated.md
-                - name: o modelo de buffer de buckets vazados
+                - name: o modelo de buffer de bucket vazado
                   href: the-leaky-bucket-buffer-model--deprecated.md
                 - name: métodos de codificação
                   href: encoding-methods--deprecated.md
                 - name: codificação de vídeo com compactação temporal
                   href: video-encoding-with-temporal-compression--deprecated.md
-            - name: exemplos de codec DMO
+            - name: Exemplos de codec dmo
               href: codec-dmo-samples--deprecated.md
               items:
                 - name: aviencoderdshow
@@ -2782,15 +2782,15 @@
                   href: aviencodervfw--deprecated.md
                 - name: avidecodervfw
                   href: avidecodervfw--deprecated.md
-        - name: Guia de programação do codec
+        - name: Guia de programação codec
           href: codec-programming-guide--deprecated.md
           items:
             - name: introdução
               href: getting-started--deprecated.md
               items:
-                - name: arquivos de cabeçalho e biblioteca
+                - name: arquivos de biblioteca e de header
                   href: header-and-library-files--deprecated.md
-                - name: Noções básicas do DMO
+                - name: Noções básicas do dmo
                   href: dmo-basics--deprecated.md
                 - name: trabalhando com tipos de mídia
                   href: working-with-media-types--deprecated.md
@@ -2798,99 +2798,99 @@
                   href: working-with-media-buffers--deprecated.md
                 - name: usando os exemplos de código
                   href: using-the-code-examples--deprecated.md
-            - name: instanciando o codec DMOs
+            - name: instando o codec dmos
               href: instantiating-the-codec-dmos--deprecated.md
-            - name: Configurando o codec DMOs
+            - name: configurando o codec dmos
               href: configuring-the-codec-dmos--deprecated.md
             - name: exemplos de processamento
               href: processing-samples--deprecated.md
             - name: trabalhando com áudio
               href: working-with-audio--deprecated.md
               items:
-                - name: Escolhendo um codec de áudio
+                - name: escolhendo um codec de áudio
                   href: choosing-an-audio-codec--deprecated.md
-                - name: Configurando codificação de áudio
+                - name: configurando a codificação de áudio
                   href: configuring-audio-encoding--deprecated.md
                   items:
-                    - name: Localizando tipos de saída do codificador de áudio
+                    - name: localizar tipos de saída do codificador de áudio
                       href: finding-audio-encoder-output-types--deprecated.md
-                    - name: Enumerando tipos de áudio para modos de codificação específicos
+                    - name: enumerando tipos de áudio para modos de codificação específicos
                       href: enumerating-audio-types-for-specific-encoding-modes--deprecated.md
-                - name: Configurando a decodificação de áudio
+                - name: configurando a decodificação de áudio
                   href: configuring-audio-decoding--deprecated.md
                 - name: usando áudio de alta definição
                   href: using-high-definition-audio--deprecated.md
-                - name: usando o codec de áudio do Windows Media
+                - name: usando o codec de áudio de mídia do Windows
                   href: using-the-windows-media-audio-codec--deprecated.md
-                - name: usando o codec do Windows Media Audio Professional
+                - name: usando o codec profissional de áudio de mídia do Windows
                   href: using-the-windows-media-audio-professional-codec--deprecated.md
-                - name: usando o codec de áudio do Windows Media Lossless
+                - name: usando o codec sem perda de áudio da mídia do Windows
                   href: using-the-windows-media-audio-lossless-codec--deprecated.md
-                - name: usando o codec de voz do Windows Media Audio 9
+                - name: usando o codec de voz de áudio de mídia do Windows 9
                   href: using-the-windows-media-audio-9-voice-codec--deprecated.md
                   items:
-                    - name: usando uma lista de decisões de edição de voz
+                    - name: usando uma lista de decisão de edição de voz
                       href: using-a-voice-editing-decision-list--deprecated.md
-                - name: decodificando para s/PDIF
+                - name: decodificação para s/pdif
                   href: decoding-to-s-pdif--deprecated.md
             - name: trabalhando com vídeo
               href: working-with-video--deprecated.md
               items:
-                - name: Escolhendo um codec de vídeo
+                - name: escolhendo um codec de vídeo
                   href: choosing-a-video-codec--deprecated.md
-                - name: Configurando a codificação de vídeo
+                - name: configurando a codificação de vídeo
                   href: configuring-video-encoding--deprecated.md
                   items:
                     - name: usando dados privados do codec de vídeo
                       href: using-video-codec-private-data--deprecated.md
-                - name: Configurando decodificação de vídeo
+                - name: configurando a decodificação de vídeo
                   href: configuring-video-decoding--deprecated.md
-                - name: inserção de quadro-chave forçada
+                - name: inserção forçada de quadro-chave
                   href: forced-key-frame-insertion--deprecated.md
-                - name: codificação de vídeo entrelaçado
+                - name: codificação de vídeo entrelaçadas
                   href: interlaced-video-encoding--deprecated.md
-                - name: usando o codec do Windows Media Video 9
+                - name: usando o codec do vídeo de mídia do Windows 9
                   href: using-the-windows-media-video-9-codec--deprecated.md
-                - name: usando o codec de tela do Windows Media Video 9
+                - name: usando o codec de tela do vídeo de mídia do Windows 9
                   href: using-the-windows-media-video-9-screen-codec--deprecated.md
-                - name: usando o codec de imagem do Windows Media Video 9
+                - name: usando o codec de imagem do vídeo de mídia do Windows 9
                   href: using-the-windows-media-video-9-image-codec--deprecated.md
             - name: usando duas passagens de codificação
               href: using-two-encoding-passes--deprecated.md
-            - name: usando a codificação de VBR
+            - name: usando a codificação vbr
               href: using-vbr-encoding--deprecated.md
-            - name: obtendo estatísticas de codificação
+            - name: obter estatísticas de codificação
               href: getting-encoding-statistics--deprecated.md
             - name: usando extensões de unidade de dados
               href: using-data-unit-extensions--deprecated.md
-            - name: usando o codec DMOs com o DirectShow
+            - name: usando o codec dmos com directshow
               href: using-the-codec-dmos-with-directshow--deprecated.md
-            - name: armazenando mídia compactada em arquivos AVI
+            - name: armazenar mídia compactada em arquivos avi
               href: storing-compressed-media-in-avi-files--deprecated.md
             - name: perguntas frequentes
               href: frequently-asked-questions--deprecated.md
               items:
-                - name: Por que um decodificador DMO não aceita o formato de entrada que eu defini?
+                - name: por que um dmo decodificador não aceita o formato de entrada que eu defini?
                   href: why-does-a-decoder-dmo-not-accept-the-input-format-that-i-set---deprecated.md
-                - name: Por que o codificador de áudio DMO não relata nenhum tipo de entrada com suporte?
+                - name: por que o dmo do codificador de áudio não relata nenhum tipo de entrada com suporte?
                   href: why-does-the-audio-encoder-dmo-report-no-supported-input-types---deprecated.md
-                - name: 'Por que o codificador de vídeo DMO rejeita um formato de saída que tento definir, quando recuperei o formato do mesmo DMO?'
+                - name: por que o dmo do codificador de vídeo rejeita um formato de saída que tento definir quando recuperei o formato do mesmo dmo?
                   href: why-does-the-video-encoder-dmo-reject-an-output-format-that-i-try-to-set-when-i-retrieved-the-format-from-the-same-dmo---deprecated.md
-                - name: como um fluxo de vídeo codificado usando a taxa de bits baseada em qualidade tem menos quadros do que o fluxo original?
+                - name: como um fluxo de vídeo codificado usando vbr baseado em qualidade pode ter menos quadros do que o fluxo original?
                   href: how-can-a-video-stream-encoded-using-quality-based-vbr-have-fewer-frames-than-the-original-stream---deprecated.md
-                - name: 'ao usar a VBR com restrição de pico, a taxa de bits média recuperada do DMO é maior do que a taxa de bits de pico. como isso é possível?'
+                - name: 'ao usar o vbr com restrição de pico, a taxa média de bits recuperada do dmo é maior que a taxa de bits de pico. como isso é possível?'
                   href: when-using-peak-constrained-vbr-the-average-bit-rate-retrieved-from-the-dmo-is-larger-than-the-peak-bit-rate--how-is-that-possible---deprecated.md
-                - name: Tenho um arquivo AVI contendo um fluxo de vídeo do Windows Media. Como posso convertê-lo em um arquivo WMV?
+                - name: Tenho um arquivo avi que contém um fluxo de vídeo de mídia do Windows. como posso convertê-lo em um arquivo wmv?
                   href: i-have-an-avi-file-containing-a-windows-media-video-stream--how-can-i-convert-it-to-a-wmv-file---deprecated.md
-                - name: Como faço para descompactar fluxos de um arquivo AVI ou outro arquivo sobre o qual não tenho informações de formato?
+                - name: como descompactar fluxos de um arquivo avi ou outro arquivo sobre o qual não tenho informações de formato?
                   href: how-do-i-decompress-streams-from-an-avi-file-or-other-file-about-which-i-have-no-format-information---deprecated.md
-        - name: referência de programação de codec
+        - name: Referência de programação codec
           href: codec-programming-reference--deprecated.md
           items:
-            - name: interfaces de codec
+            - name: Interfaces codec
               href: codec-interfaces--deprecated.md
               items:
-                - name: interface iwmcodecleakybucket
+                - name: Interface iwmcodecleakybucket
                   href: iwmcodecleakybucket--deprecated.md
                   items:
                     - name: 'iwmcodecleakybucket::getbufferfullnessbits'
@@ -2901,21 +2901,21 @@
                       href: iwmcodecleakybucket-setbufferfullnessbits.md
                     - name: 'iwmcodecleakybucket::setbuffersizebits'
                       href: iwmcodecleakybucket-setbuffersizebits.md
-                - name: interface iwmcodecmetadata
+                - name: Interface iwmcodecmetadata
                   href: iwmcodecmetadata--deprecated.md
                   items:
-                    - name: 'iwmcodecmetadata:: getbuffersizes'
+                    - name: 'iwmcodecmetadata::getbuffersizes'
                       href: iwmcodecmetadata-getbuffersizes.md
                     - name: 'iwmcodecmetadata::getnumberofvalues'
                       href: iwmcodecmetadata-getnumberofvalues.md
                     - name: 'iwmcodecmetadata::getvalueandname'
                       href: iwmcodecmetadata-getvalueandname.md
-                - name: interface iwmcodecoutputtimestamp
+                - name: Interface iwmcodecoutputtimestamp
                   href: iwmcodecoutputtimestamp-interface--deprecated.md
                   items:
                     - name: 'iwmcodecoutputtimestamp::getnextoutputtime'
                       href: iwmcodecoutputtimestamp-getnextoutputtime.md
-                - name: interface iwmcodecprivatedata
+                - name: Interface iwmcodecprivatedata
                   href: iwmcodecprivatedata--deprecated.md
                   items:
                     - name: 'iwmcodecprivatedata::getprivatedata'
@@ -2929,21 +2929,21 @@
                       href: iwmcodecprops-getcodecprop.md
                     - name: 'iwmcodecprops::getformatprop'
                       href: iwmcodecprops-getformatprop.md
-                - name: interface iwmcodecstrings
+                - name: Interface iwmcodecstrings
                   href: iwmcodecstrings--deprecated.md
                   items:
-                    - name: 'iwmcodecstrings:: GetDescription'
+                    - name: 'iwmcodecstrings::getdescription'
                       href: iwmcodecstrings-getdescription.md
-                    - name: 'iwmcodecstrings:: GetName'
+                    - name: 'iwmcodecstrings::getname'
                       href: iwmcodecstrings-getname.md
-                - name: interface iwmvideodecoderhurryup
+                - name: Interface iwmvideodecoderhurryup
                   href: iwmvideodecoderhurryup-interface--deprecated.md
                   items:
                     - name: 'iwmvideodecoderhurryup::gethurryup'
                       href: iwmvideodecoderhurryup-gethurryup.md
-                    - name: 'iwmvideodecoderhurryup::sethurryup'
+                    - name: 'iwmvideodecoderhurryup::planeturryup'
                       href: iwmvideodecoderhurryup-sethurryup.md
-            - name: tipos de enumeração de codec
+            - name: Tipos de enumeração codec
               href: codec-enumeration-types--deprecated.md
               items:
                 - name: wmt_prop_datatype
@@ -2951,18 +2951,18 @@
             - name: identificadores de tipo de mídia
               href: media-type-identifiers--deprecated.md
               items:
-                - name: identificadores de tipo de mídia compactados
+                - name: identificadores de tipo de mídia compactado
                   href: compressed-media-type-identifiers--deprecated.md
-                - name: identificadores de tipo de mídia não compactados
+                - name: identificadores de tipo de mídia descompactados
                   href: uncompressed-media-type-identifiers--deprecated.md
-            - name: identificadores de classe do codec DMO
+            - name: Identificadores de classe dmo codec
               href: codec-dmo-class-identifiers--deprecated.md
-            - name: constantes FOURCC
+            - name: constantes fourcc
               href: fourcc-constants--deprecated.md
-            - name: Propriedades do codec
+            - name: Propriedades codec
               href: codec-properties--deprecated.md
               items:
-                - name: lista de propriedades do codec
+                - name: lista de propriedades codec
                   href: codec-property-list--deprecated.md
                   items:
                     - name: g_wszwmacavgbytespersec
@@ -3220,58 +3220,58 @@
             - name: interfaces
               href: drm-interfaces.md
               items:
-                - name: interface idrmstatuscallback
+                - name: Interface idrmstatuscallback
                   href: idrmstatuscallback.md
                   items:
-                    - name: 'idrmstatuscallback:: OnStatus'
+                    - name: 'idrmstatuscallback::onstatus'
                       href: idrmstatuscallback-onstatus.md
-                - name: interface iwmdrmdecrypt
+                - name: Interface iwmdrmdecrypt
                   href: iwmdrmdecrypt.md
                   items:
                     - name: 'iwmdrmdecrypt::d ecrypt'
                       href: iwmdrmdecrypt-decrypt.md
-                - name: interface iwmdrmencrypt
+                - name: Interface iwmdrmencrypt
                   href: iwmdrmencrypt.md
                   items:
-                    - name: 'iwmdrmencrypt:: Encrypt'
+                    - name: 'iwmdrmencrypt::encrypt'
                       href: iwmdrmencrypt-encrypt.md
-                - name: interface iwmdrmencryptscatter
+                - name: Interface iwmdrmencryptscatter
                   href: iwmdrmencryptscatter.md
                   items:
                     - name: 'iwmdrmencryptscatter::encryptscatter'
                       href: iwmdrmencryptscatter-encryptscatter.md
                     - name: 'iwmdrmencryptscatter::initencryptscatter'
                       href: iwmdrmencryptscatter-initencryptscatter.md
-                - name: interface iwmdrmeventgenerator
+                - name: Interface iwmdrmeventgenerator
                   href: iwmdrmeventgenerator.md
                   items:
                     - name: 'iwmdrmeventgenerator::cancelasyncoperation'
                       href: iwmdrmeventgenerator-cancelasyncoperation.md
-                - name: interface iwmdrmindividualizationstatus
+                - name: Interface iwmdrmindividualizationstatus
                   href: iwmdrmindividualizationstatus.md
                   items:
-                    - name: 'iwmdrmindividualizationstatus:: GetStatus'
+                    - name: 'iwmdrmindividualizationstatus::getstatus'
                       href: iwmdrmindividualizationstatus-getstatus.md
-                - name: interface iwmdrmlicense
+                - name: Interface iwmdrmlicense
                   href: iwmdrmlicense.md
                   items:
-                    - name: 'iwmdrmlicense:: perpersist'
+                    - name: 'iwmdrmlicense::canpersist'
                       href: iwmdrmlicense-canpersist.md
-                    - name: 'iwmdrmlicense:: createdecryptr'
+                    - name: 'iwmdrmlicense::createdecryptor'
                       href: iwmdrmlicense-createdecryptor.md
-                    - name: 'iwmdrmlicense:: createcriptografer'
+                    - name: 'iwmdrmlicense::createencryptor'
                       href: iwmdrmlicense-createencryptor.md
                     - name: 'iwmdrmlicense::createsecuredecryptor'
                       href: iwmdrmlicense-createsecuredecryptor.md
                     - name: 'iwmdrmlicense::getanalogvideorestrictionlevels'
                       href: iwmdrmlicense-getanalogvideorestrictionlevels.md
-                    - name: 'iwmdrmlicense:: inclusionlist'
+                    - name: 'iwmdrmlicense::getinclusionlist'
                       href: iwmdrmlicense-getinclusionlist.md
-                    - name: 'iwmdrmlicense:: GetLicense'
+                    - name: 'iwmdrmlicense::getlicense'
                       href: iwmdrmlicense-getlicense.md
-                    - name: 'iwmdrmlicense:: getlicenseproperty'
+                    - name: 'iwmdrmlicense::getlicenseproperty'
                       href: iwmdrmlicense-getlicenseproperty.md
-                    - name: 'iwmdrmlicense:: GetNext'
+                    - name: 'iwmdrmlicense::getnext'
                       href: iwmdrmlicense-getnext.md
                     - name: 'iwmdrmlicense::getoutputprotectionlevels'
                       href: iwmdrmlicense-getoutputprotectionlevels.md
@@ -3279,15 +3279,15 @@
                       href: iwmdrmlicense-persistlicense.md
                     - name: 'iwmdrmlicense::resetenumeration'
                       href: iwmdrmlicense-resetenumeration.md
-                - name: interface iwmdrmlicensebackuprestorestatus
+                - name: Interface iwmdrmlicensebackuprestorestatus
                   href: iwmdrmlicensebackuprestorestatus.md
                   items:
-                    - name: 'iwmdrmlicensebackuprestorestatus:: GetStatus'
+                    - name: 'iwmdrmlicensebackuprestorestatus::getstatus'
                       href: iwmdrmlicensebackuprestorestatus-getstatus.md
-                - name: interface iwmdrmlicensemanagement
+                - name: Interface iwmdrmlicensemanagement
                   href: iwmdrmlicensemanagement.md
                   items:
-                    - name: 'iwmdrmlicensemanagement:: AcquireLicense'
+                    - name: 'iwmdrmlicensemanagement::acquirelicense'
                       href: iwmdrmlicensemanagement-acquirelicense.md
                     - name: 'iwmdrmlicensemanagement::backuplicenses'
                       href: iwmdrmlicensemanagement-backuplicenses.md
@@ -3309,7 +3309,7 @@
                       href: iwmdrmlicensemanagement-restorelicenses.md
                     - name: 'iwmdrmlicensemanagement::storelicense'
                       href: iwmdrmlicensemanagement-storelicense.md
-                - name: interface iwmdrmlicensequery
+                - name: Interface iwmdrmlicensequery
                   href: iwmdrmlicensequery.md
                   items:
                     - name: 'iwmdrmlicensequery::queryactionallowed'
@@ -3318,7 +3318,7 @@
                       href: iwmdrmlicensequery-querylicensestate.md
                     - name: 'iwmdrmlicensequery::setactionallowedqueryparams'
                       href: iwmdrmlicensequery-setactionallowedqueryparams.md
-                - name: interface iwmdrmnetreceiver
+                - name: Interface iwmdrmnetreceiver
                   href: iwmdrmnetreceiver.md
                   items:
                     - name: 'iwmdrmnetreceiver::getlicensechallenge'
@@ -3329,7 +3329,7 @@
                       href: iwmdrmnetreceiver-processlicenseresponse.md
                     - name: 'iwmdrmnetreceiver::p rocessregistrationresponse'
                       href: iwmdrmnetreceiver-processregistrationresponse.md
-                - name: interface iwmdrmnettransmitter
+                - name: Interface iwmdrmnettransmitter
                   href: iwmdrmnettransmitter.md
                   items:
                     - name: 'iwmdrmnettransmitter::getleaflicenseresponse'
@@ -3338,19 +3338,19 @@
                       href: iwmdrmnettransmitter-getrootlicenseresponse.md
                     - name: 'iwmdrmnettransmitter::setlicensechallenge'
                       href: iwmdrmnettransmitter-setlicensechallenge.md
-                - name: interface iwmdrmnonsilentlicenseaquisition
+                - name: Interface iwmdrmnonsilentlicenseaquisition
                   href: iwmdrmnonsilentlicenseaquisition.md
                   items:
-                    - name: 'iwmdrmnonsilentlicenseaquisition:: getchallenge'
+                    - name: 'iwmdrmnonsilentlicenseaquisition::getchallenge'
                       href: iwmdrmnonsilentlicenseaquisition-getchallenge.md
-                    - name: 'iwmdrmnonsilentlicenseaquisition:: getURL'
+                    - name: 'iwmdrmnonsilentlicenseaquisition::geturl'
                       href: iwmdrmnonsilentlicenseaquisition-geturl.md
-                - name: interface iwmdrmprovider
+                - name: Interface iwmdrmprovider
                   href: iwmdrmprovider.md
                   items:
-                    - name: 'iwmdrmprovider:: CreateObject'
+                    - name: 'iwmdrmprovider::createobject'
                       href: iwmdrmprovider-createobject.md
-                - name: interface iwmdrmsecurity
+                - name: Interface iwmdrmsecurity
                   href: iwmdrmsecurity.md
                   items:
                     - name: 'iwmdrmsecurity::checkcertforrevocation'
@@ -3371,12 +3371,12 @@
                       href: iwmdrmsecurity-performsecurityupdate.md
                     - name: 'iwmdrmsecurity::setrevocationdata'
                       href: iwmdrmsecurity-setrevocationdata.md
-                - name: interface iwmsecurebuffer
+                - name: Interface iwmsecurebuffer
                   href: iwmsecurebuffer.md
                   items:
                     - name: 'iwmsecurebuffer::d ecrypt'
                       href: iwmsecurebuffer-decrypt.md
-                    - name: 'iwmsecurebuffer:: Encrypt'
+                    - name: 'iwmsecurebuffer::encrypt'
                       href: iwmsecurebuffer-encrypt.md
             - name: estruturas
               href: drm-structures.md

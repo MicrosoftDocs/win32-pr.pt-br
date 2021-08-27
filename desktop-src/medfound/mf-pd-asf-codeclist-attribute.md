@@ -4,12 +4,12 @@ ms.assetid: 6dde30d3-dbdc-469c-ad7e-5e670b7e0a64
 title: Atributo MF_PD_ASF_CODECLIST (Wmcontainer. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 402c53c082ae57fed444168c559f99718322f8a9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c512dee499dbd2d006fb695c89d59add449e64fb
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105763915"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122471302"
 ---
 # <a name="mf_pd_asf_codeclist-attribute"></a>\_Atributo de codec MF PD \_ asflist \_
 
@@ -42,71 +42,17 @@ O campo entradas de código é uma matriz de estruturas. A tabela a seguir mostr
 
 
 
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Campo de objeto da lista de codecs</th>
-<th>Tipo de dados</th>
-<th>Tamanho</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Type</td>
-<td><strong>DWORD</strong></td>
-<td>4 bytes</td>
-<td>Tipo de codec. Esse valor pode ser um dos seguintes:<br/>
-<ul>
-<li>0x0001: codec de áudio</li>
-<li>0x0002: codec de vídeo</li>
-<li>0xFFFF: desconhecido</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>Comprimento do nome do codec</td>
-<td><strong>DWORD</strong></td>
-<td>4 bytes</td>
-<td>Tamanho da cadeia de caracteres do nome do codec, em bytes, incluindo o caractere <strong>nulo</strong> .</td>
-</tr>
-<tr class="odd">
-<td>Nome do codec</td>
-<td><strong>WCHAR</strong>[]</td>
-<td>Varia</td>
-<td>Cadeia de caracteres Unicode terminada em nulo que contém o nome do codec, como o &quot; Windows Media Video 9 &quot; .</td>
-</tr>
-<tr class="even">
-<td>Tamanho da descrição do codec</td>
-<td><strong>DWORD</strong></td>
-<td>4 bytes</td>
-<td>Tamanho da cadeia de caracteres de descrição do codec, em bytes, incluindo o caractere <strong>nulo</strong> .</td>
-</tr>
-<tr class="odd">
-<td>Descrição do codec</td>
-<td><strong>WCHAR</strong>[]</td>
-<td>Varia</td>
-<td>Uma cadeia de caracteres Unicode terminada em nulo que contém uma descrição do codec.</td>
-</tr>
-<tr class="even">
-<td>Comprimento das informações do codec</td>
-<td><strong>DWORD</strong></td>
-<td>4 bytes</td>
-<td>Tamanho do campo de informações do codec, em bytes.</td>
-</tr>
-<tr class="odd">
-<td>Informações do codec</td>
-<td><strong>Byte</strong>[]</td>
-<td>Varia</td>
-<td>Dados de codec. O significado desses dados depende do codec. Normalmente, esses dados indicam o formato.</td>
-</tr>
-</tbody>
-</table>
+
+| Campo de objeto da lista de codecs | Tipo de dados | Tamanho | Descrição | 
+|-------------------------|-----------|------|-------------|
+| Type | <strong>DWORD</strong> | 4 bytes | Tipo de codec. Esse valor pode ser um dos seguintes:<br /><ul><li>0x0001: codec de áudio</li><li>0x0002: codec de vídeo</li><li>0xFFFF: desconhecido</li></ul> | 
+| Comprimento do nome do codec | <strong>DWORD</strong> | 4 bytes | Tamanho da cadeia de caracteres do nome do codec, em bytes, incluindo o caractere <strong>nulo</strong> . | 
+| Nome do codec | <strong>WCHAR</strong>[] | Varia | cadeia de caracteres Unicode terminada em nulo que contém o nome do codec, como "Windows Media Video 9". | 
+| Tamanho da descrição do codec | <strong>DWORD</strong> | 4 bytes | Tamanho da cadeia de caracteres de descrição do codec, em bytes, incluindo o caractere <strong>nulo</strong> . | 
+| Descrição do codec | <strong>WCHAR</strong>[] | Varia | Uma cadeia de caracteres Unicode terminada em nulo que contém uma descrição do codec. | 
+| Comprimento das informações do codec | <strong>DWORD</strong> | 4 bytes | Tamanho do campo de informações do codec, em bytes. | 
+| Informações do codec | <strong>Byte</strong>[] | Varia | Dados de codec. O significado desses dados depende do codec. Normalmente, esses dados indicam o formato. | 
+
 
 
 
@@ -123,9 +69,9 @@ O campo entradas de código é uma matriz de estruturas. A tabela a seguir mostr
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                     |
-| parâmetro<br/>                   | <dl> <dt>Wmcontainer. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Wmcontainer. h</dt> </dl> |
 
 
 

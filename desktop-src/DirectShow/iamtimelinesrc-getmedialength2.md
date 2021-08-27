@@ -1,7 +1,7 @@
 ---
-description: 'O método GetMediaLength2 recupera o tamanho da mídia desse objeto de origem. Esse método é equivalente a IAMTimelineSrc:: GetMediaLength, mas usa os valores de REFTIME.'
+description: O método GetMediaLength2 recupera o comprimento da mídia desse objeto de origem. Esse método é equivalente a IAMTimelineSrc::GetMediaLength, mas aceita valores REFTIME.
 ms.assetid: 96685e00-4e16-4205-a6ad-8b83cf2f8c29
-title: 'Método IAMTimelineSrc:: GetMediaLength2 (QEdit. h)'
+title: Método IAMTimelineSrc::GetMediaLength2 (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: caee510db9ddeda1923327176a634a9011601e4e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 951e7909d55517489c77190434bf677ccdd8bee8dc1238ecd247d117a551610a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105810940"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120131106"
 ---
-# <a name="iamtimelinesrcgetmedialength2-method"></a>Método IAMTimelineSrc:: GetMediaLength2
+# <a name="iamtimelinesrcgetmedialength2-method"></a>Método IAMTimelineSrc::GetMediaLength2
 
 > [!Note]  
 > \[Preterido. Essa API pode ser removida de versões futuras do Windows.\]
 
  
 
-O `GetMediaLength2` método recupera o tamanho da mídia desse objeto de origem. Esse método é equivalente a [**IAMTimelineSrc:: GetMediaLength**](iamtimelinesrc-getmedialength.md), mas usa os valores de [**REFTIME**](reftime.md) .
+O `GetMediaLength2` método recupera o comprimento de mídia desse objeto de origem. Esse método é equivalente a [**IAMTimelineSrc::GetMediaLength,**](iamtimelinesrc-getmedialength.md)mas aceita [**valores REFTIME.**](reftime.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -52,17 +52,17 @@ Recebe o comprimento da mídia em segundos.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um dos seguintes valores de **HRESULT** :
+Retorna um dos seguintes **valores HRESULT:**
 
 
 
 | Código de retorno                                                                                     | Descrição                                        |
 |-------------------------------------------------------------------------------------------------|----------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>            | Êxito.<br/>                                |
-| <dl> <dt>**E não \_ determinado**</dt> </dl> | Os horários de mídia não estão definidos neste objeto.<br/> |
-| <dl> <dt>**\_ponteiro E**</dt> </dl>       | Argumento de ponteiro **nulo** .<br/>              |
+| <dl> <dt>**E \_ NOTDETERMINED**</dt> </dl> | Os tempos de mídia não são definidos neste objeto.<br/> |
+| <dl> <dt>**PONTEIRO \_ E**</dt> </dl>       | Argumento de ponteiro **NULL.**<br/>              |
 
 
 
@@ -71,12 +71,12 @@ Retorna um dos seguintes valores de **HRESULT** :
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> O arquivo de cabeçalho QEdit. h não é compatível com cabeçalhos do Direct3D posteriores à versão 7.
+> O arquivo de título Qedit.h não é compatível com os headers direct3D posteriores à versão 7.
 
  
 
 > [!Note]  
-> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Para obter o Qedit.h, baixe [o Microsoft Windows SDK Update para Windows Vista e .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O Qedit.h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -86,8 +86,8 @@ Retorna um dos seguintes valores de **HRESULT** :
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>QEdit. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -95,7 +95,7 @@ Retorna um dos seguintes valores de **HRESULT** :
 
 <dl> <dt>
 
-[**Interface IAMTimelineSrc**](iamtimelinesrc.md)
+[**IAMTimelineSrc Interface**](iamtimelinesrc.md)
 </dt> <dt>
 
 [Códigos de erro e êxito](error-and-success-codes.md)

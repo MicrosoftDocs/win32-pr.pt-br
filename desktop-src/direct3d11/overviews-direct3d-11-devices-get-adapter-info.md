@@ -1,24 +1,24 @@
 ---
 title: Como obter modos de exibição do adaptador
-description: Este tópico mostra como usar a Microsoft DirectX Graphics Infrastructure (DXGI) para obter os modos de exibição válidos associados a um adaptador.
+description: Este tópico mostra como usar o DXGI (Microsoft DirectX Graphic Infrastructure) para obter os modos de exibição válidos associados a um adaptador.
 ms.assetid: 3d182f29-48d4-4e25-b34e-b424cc9eed0b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 63c2602fcd4e1baa4476bb89273eda676f444e38
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 921d373a9ff0f79baaf848a55cbab0d08fd4e119d30a0a0cb917832830589dfa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104294084"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120119566"
 ---
-# <a name="how-to-get-adapter-display-modes"></a>Como: obter modos de exibição do adaptador
+# <a name="how-to-get-adapter-display-modes"></a>Como obter modos de exibição do adaptador
 
-Este tópico mostra como usar a Microsoft DirectX Graphics Infrastructure (DXGI) para obter os modos de exibição válidos associados a um adaptador. O DirectX 10 e 11 podem usar DXGI para obter os modos de exibição válidos. Conhecer os modos de exibição válidos garante que seu aplicativo possa escolher corretamente um modo de tela inteira válido.
+Este tópico mostra como usar o DXGI (Microsoft DirectX Graphic Infrastructure) para obter os modos de exibição válidos associados a um adaptador. O DirectX 10 e 11 podem usar o DXGI para obter os modos de exibição válidos. Conhecer os modos de exibição válidos garante que seu aplicativo possa escolher corretamente um modo de tela inteira válido.
 
 **Para obter modos de exibição do adaptador**
 
-1.  Crie um objeto [**IDXGIFactory**](/windows/desktop/api/dxgi/nn-dxgi-idxgifactory) e use-o para enumerar os adaptadores disponíveis. Para obter mais informações, consulte [como: enumerar adaptadores](overviews-direct3d-11-devices-enum.md).
-2.  Chame IDXGIAdapter:: EnumOutputs para enumerar as saídas de cada adaptador.
+1.  Crie um [**objeto IDXGIFactory**](/windows/desktop/api/dxgi/nn-dxgi-idxgifactory) e use-o para enumerar os adaptadores disponíveis. Para obter mais informações, [consulte Como enumerar adaptadores](overviews-direct3d-11-devices-enum.md).
+2.  Chame IDXGIAdapter::EnumOutputs para enumerar as saídas de cada adaptador.
     ```
     IDXGIOutput* pOutput = NULL; 
     HRESULT hr;
@@ -28,7 +28,7 @@ Este tópico mostra como usar a Microsoft DirectX Graphics Infrastructure (DXGI)
 
     
 
-3.  Chame IDXGIOutput:: getdisplaymodelist para recuperar uma matriz de [**estruturas \_ \_ desc de modo dxgi**](/previous-versions/windows/desktop/legacy/bb173064(v=vs.85)) e o número de elementos na matriz. Cada **estrutura \_ \_ desc de modo dxgi** representa um modo de exibição válido para a saída.
+3.  Chame IDXGIOutput::GetDisplayModeList para recuperar uma matriz de estruturas [**\_ DXGI MODE \_ DESC**](/previous-versions/windows/desktop/legacy/bb173064(v=vs.85)) e o número de elementos na matriz. Cada **estrutura DXGI \_ MODE \_ DESC** representa um modo de exibição válido para a saída.
     ```
     UINT numModes = 0;
     DXGI_MODE_DESC* displayModes = NULL;
@@ -55,6 +55,6 @@ Este tópico mostra como usar a Microsoft DirectX Graphics Infrastructure (DXGI)
 [Como usar o Direct3D 11](how-to-use-direct3d-11.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

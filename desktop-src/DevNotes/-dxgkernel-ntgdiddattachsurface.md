@@ -1,7 +1,7 @@
 ---
-description: Anexa duas representações de superfície no modo kernel.
+description: Anexa duas representações de superfície do modo kernel.
 ms.assetid: f1b1859f-8b62-4385-9e8a-296086446fe7
-title: Função NtGdiDdAttachSurface (Ntgdi. h)
+title: Função NtGdiDdAttachSurface (Ntgdi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_location:
 - Ext-MS-Win-GDI-Internal-Desktop-L1-1-0.dll
 - GDI32.dll
 - GDI32Full.dll
-ms.openlocfilehash: a3d099e7b3a3106e0e1e4285b37d2ea205baf3d5
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 8ec07f539cfa2a99338d8366f10f7c3d79dbdd5ef26a6de0ee0296941e2c84ff
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105755816"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120088026"
 ---
 # <a name="ntgdiddattachsurface-function"></a>Função NtGdiDdAttachSurface
 
-\[Essa função está sujeita a alterações em cada revisão do sistema operacional. Em vez disso, use o Microsoft DirectDraw e o Microsoft Direct3DAPIs; essas APIs isolam os aplicativos dessas alterações do sistema operacional e ocultam muitas outras dificuldades envolvidas na interação direta com os drivers de vídeo.\]
+\[Essa função está sujeita a alterações com cada revisão do sistema operacional. Em vez disso, use o Microsoft DirectDraw e o Microsoft Direct3DAPIs; essas APIs isolam aplicativos dessas alterações do sistema operacional e ocultam muitas outras dificuldades envolvidas na interação diretamente com drivers de exibição.\]
 
-Anexa duas representações de superfície no modo kernel.
+Anexa duas representações de superfície do modo kernel.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,21 +45,21 @@ BOOL APIENTRY NtGdiDdAttachSurface(
 
 <dl> <dt>
 
-*hSurfaceFrom* \[ no\]
+*hSurfaceFrom* \[ Em\]
 </dt> <dd>
 
-Identificador do objeto de superfície do modo kernel que será o ponto inicial do novo anexo.
+Identificador para o objeto de superfície do modo kernel que será o ponto de partida do novo anexo.
 
 </dd> <dt>
 
-*hSurfaceTo* \[ no\]
+*hSurfaceTo* \[ Em\]
 </dt> <dd>
 
-Identificador do objeto de superfície do modo kernel que será o ponto final do novo anexo.
+Identificador para o objeto de superfície do modo kernel que será o ponto de extremidade do novo anexo.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 **NtGdiDdAttachSurface** retorna um dos seguintes:
 
@@ -67,8 +67,8 @@ Identificador do objeto de superfície do modo kernel que será o ponto final do
 
 | Código de retorno                                                                          | Descrição                             |
 |--------------------------------------------------------------------------------------|-----------------------------------------|
-| <dl> <dt>**TRUE**</dt> </dl>  | A chamada de função foi bem-sucedida.<br/> |
-| <dl> <dt>**FOR**</dt> </dl> | Falha na chamada de função.<br/>    |
+| <dl> <dt>**Verdade**</dt> </dl>  | A chamada de função foi bem-sucedida.<br/> |
+| <dl> <dt>**False**</dt> </dl> | Falha na chamada de função.<br/>    |
 
 
 
@@ -76,10 +76,10 @@ Identificador do objeto de superfície do modo kernel que será o ponto final do
 
 ## <a name="remarks"></a>Comentários
 
-Consulte o DirectDraw Software Development Kit (SDK) e o Driver Development Kit (DDK) para obter uma descrição completa dos anexos de superfície.
+Consulte o SDK (Software Development Kit) do DirectDraw e o DDK (Kit de Desenvolvimento de Driver) para ver uma descrição completa dos anexos de superfície.
 
 > [!Note]  
-> Assim como ocorre com outros anexos de superfície, o anexo resultante é unidirecional. Depois que essa função for chamada, *hSurfaceTo* não será anexado a *hSurfaceFrom*.
+> Assim como com outros anexos de superfície, o anexo resultante é one-way. Depois que essa função for chamada, *hSurfaceTo* não será anexado *a hSurfaceFrom*.
 
  
 
@@ -91,7 +91,7 @@ Consulte o DirectDraw Software Development Kit (SDK) e o Driver Development Kit 
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                               |
-| Cabeçalho<br/>                   | <dl> <dt>Ntgdi. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Ntgdi.h</dt> </dl> |
 
 
 

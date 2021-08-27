@@ -7,12 +7,12 @@ MSHAttr:
 title: IgnorePassword
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bc73050a01f6f0f9799290ba267b8ecaaee1003a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ceb24eafebac1ab657a4a721031b05e043f3a2f9
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164584"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122465643"
 ---
 # <a name="span-idwwan_profile_v4element_ignorepasswordspanmbnprofileextignorepassword-v4"></a><span id="WWAN_profile_v4.element_IgnorePassword"></span>MBNProfileExt \/ ... \/ IgnorePassword (v4)
 
@@ -34,7 +34,7 @@ Para obter mais detalhes, consulte a documentação do elemento v1 [**IgnorePass
 &nbsp;&nbsp;&nbsp;&nbsp;[\<UserLogonCred\>](element-1-userlogoncred.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<IgnorePassword\>**
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ``` syntax
 <IgnorePassword>
@@ -56,41 +56,19 @@ Nenhum.
 
 ### <a name="span-idparent_elementsspanspan-idparent_elementsspanparent-elements"></a><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Elementos pai
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Elemento pai</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="element-userlogoncred.md">UserLogonCred</a></td>
-<td><p>Credenciais de logon para uma conexão.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Elemento pai | Descrição | 
+|----------------|-------------|
+| <a href="element-userlogoncred.md">UserLogonCred</a> | <p>Credenciais de logon para uma conexão.</p> | 
+
 
  
 
 ## <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Namespace</p></td>
-<td><p>https://www.microsoft.com/networking/WWAN/profile/v4</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Namespace</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+
 
  
 

@@ -1,7 +1,7 @@
 ---
-description: Exporte os dados de configuração a serem passados para o método ExportSnapshot da \_ classe Msvm CollectionSnapshotService.
+description: Exportar dados de configuração a serem passados para o método ExportSnapshot da classe Msvm \_ CollectionSnapshotService.
 ms.assetid: 03b448ed-72bc-485e-bb31-4445c53baa1c
-title: Classe Msvm_CollectionSnapshotExportSettingData
+title: Msvm_CollectionSnapshotExportSettingData classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 3e146fe2e2af17223e792d86cff16bf1c4149dd6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bd148b7ea73bf7c2eaff7f648c7084c37a8669779515749611c675e7f5564d1c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105753473"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120130626"
 ---
-# <a name="msvm_collectionsnapshotexportsettingdata-class"></a>\_Classe Msvm CollectionSnapshotExportSettingData
+# <a name="msvm_collectionsnapshotexportsettingdata-class"></a>Classe Msvm \_ CollectionSnapshotExportSettingData
 
-Exporte os dados de configuração a serem passados para o método ExportSnapshot da classe [**Msvm \_ CollectionSnapshotService**](msvm-collectionsnapshotservice.md) .
+Exportar dados de configuração a serem passados para o método ExportSnapshot da [**classe Msvm \_ CollectionSnapshotService.**](msvm-collectionsnapshotservice.md)
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas.
 
@@ -43,23 +43,23 @@ class Msvm_CollectionSnapshotExportSettingData : CIM_SettingData
 
 ## <a name="members"></a>Membros
 
-A classe **Msvm \_ CollectionSnapshotExportSettingData** tem estes tipos de membros:
+A **classe Msvm \_ CollectionSnapshotExportSettingData** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Msvm \_ CollectionSnapshotExportSettingData** tem essas propriedades.
+A **classe Msvm \_ CollectionSnapshotExportSettingData** tem essas propriedades.
 
 <dl> <dt>
 
 **BackupIntent**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 Indica a intenção de como os conjuntos de backup exportados seriam usados:
@@ -73,7 +73,7 @@ Indica a intenção de como os conjuntos de backup exportados seriam usados:
 
 </dt> <dd>
 
-Todos os conjuntos de backup exportados completos e diferenciais seriam preservados como estão.
+Todos os conjuntos de backup completos e diferenciais exportados seriam preservados como estão.
 
 </dd> <dt>
 
@@ -84,7 +84,7 @@ Todos os conjuntos de backup exportados completos e diferenciais seriam preserva
 
 </dt> <dd>
 
-Os conjuntos de backup exportados completos e diferenciais seriam mesclados para sintetizar conjuntos de backup completos.
+Os conjuntos de backup completos e diferenciais exportados seriam mesclados para sintetizar conjuntos de backup completos.
 
 </dd> </dl>
 
@@ -93,13 +93,13 @@ Os conjuntos de backup exportados completos e diferenciais seriam mesclados para
 **CopyVmStorage**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Se **for true**, o armazenamento da VM será copiado quando a VM for exportada. Caso contrário, **false.**
+se **true**, o armazenamento de VM será copiado quando a VM for exportada. Caso contrário, **false.**
 
 </dd> <dt>
 
@@ -109,10 +109,10 @@ Se **for true**, o armazenamento da VM será copiado quando a VM for exportada. 
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Base para exportação diferencial. Este é o caminho para uma instância [**Msvm \_ ReferencePointCollection**](msvm-referencepointcollection.md) que representa o ponto de referência, ou o caminho para uma instância do [**Msvm \_ snapshotcollection**](msvm-snapshotcollection.md) que representa o instantâneo a ser usado como base para a exportação diferencial.
+Base para exportação diferencial. Esse é o caminho para uma instância [**Msvm \_ ReferencePointCollection**](msvm-referencepointcollection.md) que representa o ponto de referência ou o caminho para uma instância [**de \_ SnapshotCollection Msvm**](msvm-snapshotcollection.md) que representa o instantâneo a ser usado como base para exportação diferencial.
 
 </dd> </dl>
 
@@ -122,10 +122,10 @@ Base para exportação diferencial. Este é o caminho para uma instância [**Msv
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                             |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                             |
 | Servidor mínimo com suporte<br/> | Windows Server 2016<br/>                                                                          |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -134,7 +134,7 @@ Base para exportação diferencial. Este é o caminho para uma instância [**Msv
 
 <dl> <dt>
 
-[**CIM \_ SettingData**](cim-settingdata.md)
+[**Configuração \_ cimData**](cim-settingdata.md)
 </dt> </dl>
 
  

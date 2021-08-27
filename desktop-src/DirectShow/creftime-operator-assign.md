@@ -1,7 +1,7 @@
 ---
 description: O operador = atribui um novo tempo de referência.
 ms.assetid: 0b11e2ea-23dc-4c75-88c6-94215a4b14b6
-title: CReftime. Operator = método (REFTIME. h)
+title: Método CRefTime.operator= (Reftime.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b87e6517946c64cb2a60e95912aba423a1880215
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f4fe9a8f6f40dd1d0a7b0e38339c3ab21c44a989648e6c032b17a0ed3ac3b4f6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105810240"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120108066"
 ---
-# <a name="creftimeoperator-method-reftimeh"></a>CReftime. Operator = método (REFTIME. h)
+# <a name="creftimeoperator-method-reftimeh"></a>Método CRefTime.operator= (Reftime.h)
 
 O operador = atribui um novo tempo de referência.
 
@@ -42,16 +42,16 @@ CRefTime& operator=(
 
 <dl> <dt>
 
-*RT* \[ referência\]
+*rt* \[ Ref\]
 </dt> <dd>
 
-Referência a um objeto **CRefTime** que especifica o novo tempo de referência.
+Referência a um **objeto CRefTime** que especifica a nova hora de referência.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna uma referência ao objeto.
+Retorna uma referência ao objeto .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,8 +59,8 @@ Retorna uma referência ao objeto.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>REFTIME. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Reftime.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

@@ -4,12 +4,12 @@ description: Este exemplo verifica o status de uma tarefa conhecida e encerra a 
 ms.assetid: 2131b966-6179-4a80-a3f1-ebb8967a7a90
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d2ea8adf901d417db13eb8c4f840acf0f283d3cc
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b65b470d2fdeb3ec308d57dbc108851eb59f99f63b00dd446be4f80744e17f5a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105811915"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120100486"
 ---
 # <a name="cc-code-example-terminating-a-task"></a>Exemplo de código do C/C++: finalizando uma tarefa
 
@@ -134,9 +134,9 @@ int main(int argc, char **argv)
 [Exemplos de Agendador de Tarefas 1,0](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

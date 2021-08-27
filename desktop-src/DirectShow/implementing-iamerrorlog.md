@@ -4,12 +4,12 @@ ms.assetid: 0a380854-f3a9-4077-a481-dda67737d4c8
 title: Implementando IAMErrorLog
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 446e193a6a28fc1cbd5515414b9914f2653e8bc27bb9b5a57e69d05dfc947d62
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 378d48ec9047da6068e8d95143f8b10b7016faea
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118398076"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122465233"
 ---
 # <a name="implementing-iamerrorlog"></a>Implementando IAMErrorLog
 
@@ -67,16 +67,11 @@ if( pExtraInfo )    // Report extra information, if any.
 >
 > <span codelanguage=""></span>
 >
-> <table>
-> <colgroup>
-> <col style="width: 100%" />
-> </colgroup>
-> <tbody>
-> <tr class="odd">
-> <td><pre><code>pExtraInfo</code></pre></td>
-> </tr>
-> </tbody>
-> </table> 
+> 
+| | | <pre><code>pExtraInfo</code></pre> | 
+
+>
+> 
 >
 > . Além disso, a variante torna-se inválida depois que o método retorna, portanto, não a referencie mais tarde.
 

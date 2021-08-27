@@ -4,12 +4,12 @@ ms.assetid: bd0a4382-f014-4f03-990d-d2f96aa76ab8
 title: Escolhendo quais formatos dar suporte
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 891fa1c21dd3178e925deab27525afa7fa70fa22
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f8b8b2197c37db603388a4191e08114800aaba37ee8e89803c7ddfb08be18d3e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171867"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120110996"
 ---
 # <a name="choosing-which-formats-to-support"></a>Escolhendo quais formatos dar suporte
 
@@ -25,7 +25,7 @@ Os aplicativos cujos documentos contêm outro conteúdo, como texto, devem copia
 
 ## <a name="rtf"></a>RTF
 
-Um aplicativo deve ser capaz de produzir Rich Text Format (RTF) se a interoperabilidade com o Microsoft Word 2002 ou outros aplicativos herdados for necessária.
+um aplicativo deve ser capaz de produzir rtf (Rich text Format) se a interoperabilidade com o Microsoft Word 2002 ou outros aplicativos herdados for necessária.
 
 ## <a name="mime-support"></a>Suporte a MIME
 
@@ -35,8 +35,8 @@ A tabela a seguir lista os cabeçalhos MIME (Multipurpose Internet Mail Extensio
 
 | Formato de persistência            | Cabeçalho MIME                                                                                    | Extensão do arquivo            |
 |-------------------------------|------------------------------------------------------------------------------------------------|---------------------------|
-| **Base64Gif**                 | Tipo de conteúdo: application/x-MS-Ink Content-transcodificação-Encoding: Base64<br/>                | Não aplicável<br/> |
-| **Base64InkSerializedFormat** | Tipo de conteúdo: Content-Type: image/gif; formato = conteúdo de tinta-transferência-codificação: Base64<br/> | Não aplicável<br/> |
+| **Base64Gif**                 | Tipo de conteúdo: application/x-MS-Ink Content-transcodificação-Encoding: Base64<br/>                | Não se aplica<br/> |
+| **Base64InkSerializedFormat** | Tipo de conteúdo: Content-Type: image/gif; formato = conteúdo de tinta-transferência-codificação: Base64<br/> | Não se aplica<br/> |
 | **Gifs**                       | Tipo de conteúdo: aplicativo/x-MS-Ink<br/>                                                  | .gif<br/>           |
 | **InkSerializedFormat**       | Tipo de conteúdo: Content-Type: image/gif; formato = tinta<br/>                                   | . ISF<br/>           |
 

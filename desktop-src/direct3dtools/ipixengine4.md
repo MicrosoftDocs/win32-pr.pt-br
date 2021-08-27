@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: c9fc86b7b5bc38ea42c085b676ed62146b65ab68
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: f330b8bb6fd7491c8a1be960fdad92e07e70e356
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104500671"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122621962"
 ---
 # <a name="span-idvspixengineipixengine4spanipixengine4-interface"></a><span id="vspixengine.ipixengine4"></span>Interface IPixEngine4
 
@@ -34,17 +34,17 @@ A interface **IPixEngine4** herda da interface [**IUnknown**](/windows/desktop/a
 
 -   [Métodos](#methods)
 
-### <a name="span-idmethodsspanmethods"></a><span id="methods"></span>Métodos
+### <a name="span-idmethodsspanmethods"></a><span id="methods"></span>Maneiras
 
 A interface **IPixEngine4** tem esses métodos.
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descrição</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/ipixengine4-updateobject-uint-dword-byte-arr"><strong>UpdateObject</strong></a></td><td style="text-align: left;"><p>Atualiza o estado inicial de um objeto; por exemplo, uma textura ou sombreador.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descrição</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/ipixengine4-updateobject-uint-dword-byte-arr"><strong>UpdateObject</strong></a></td><td style="text-align: left;"><p>Atualiza o estado inicial de um objeto; por exemplo, uma textura ou sombreador.</p></td></tr></tbody></table>
 
  
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>parâmetro</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine. h</td></tr></tbody></table>
 
  
 

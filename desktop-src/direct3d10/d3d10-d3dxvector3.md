@@ -1,7 +1,7 @@
 ---
-description: Estrutura D3DXVECTOR3 (D3DX10Math. h) – descreve um vetor de três componentes, incluindo sobrecargas de operador e conversões de tipo.
+description: Estrutura D3DXVECTOR3 (D3DX10Math.h) – descreve um vetor de três componentes, incluindo sobrecargas de operador e casts de tipo.
 ms.assetid: d170cd26-d705-4a31-82b3-f9ea070b6ca4
-title: Estrutura D3DXVECTOR3 (D3DX10Math. h)
+title: Estrutura D3DXVECTOR3 (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: 7b43348b6b5683e9fe75c5340fd0c2cab5efe719
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 61c9791f4e97fbde77f3b42154b2855f2fc31694efd19087dd78fdced9908e56
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108102844"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120120216"
 ---
-# <a name="d3dxvector3-structure-d3dx10mathh"></a>Estrutura D3DXVECTOR3 (D3DX10Math. h)
+# <a name="d3dxvector3-structure-d3dx10mathh"></a>Estrutura D3DXVECTOR3 (D3DX10Math.h)
 
-Descreve um vetor de três componentes, incluindo sobrecargas de operador e conversões de tipo.
+Descreve um vetor de três componentes, incluindo sobrecargas de operador e casts de tipo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,7 +44,7 @@ typedef struct D3DXVECTOR3 {
 **x**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -55,7 +55,7 @@ O componente x.
 **y**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -63,10 +63,10 @@ O componente y.
 
 </dd> <dt>
 
-**z**
+**Z**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -76,7 +76,7 @@ O componente z.
 
 ## <a name="remarks"></a>Comentários
 
-O **D3DXVECTOR3** tem as seguintes extensões C++.
+**D3DXVECTOR3** tem as seguintes extensões C++.
 
 ### <a name="d3dxvector3-extensions"></a>Extensões D3DXVECTOR3
 
@@ -133,11 +133,11 @@ typedef struct _D3DVECTOR D3DXVECTOR3, *LPD3DXVECTOR3;
 
 | Requisito | Valor |
 |-------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3DX10Math. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3DX10Math.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

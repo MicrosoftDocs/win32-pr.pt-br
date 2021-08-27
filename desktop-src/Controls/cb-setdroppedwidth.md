@@ -3,7 +3,7 @@ title: Mensagem de CB_SETDROPPEDWIDTH (WinUser. h)
 description: Um aplicativo envia a \_ mensagem CB SETDROPPEDWIDTH para definir a largura mínima permitida, em pixels, da caixa de listagem de uma caixa de combinação com o estilo de lista \_ suspensa CBS ou CBS \_ .
 ms.assetid: 89f44733-aebe-44ea-b62d-8bd988f1bd6f
 keywords:
-- Controles de CB_SETDROPPEDWIDTH de mensagens do Windows
+- controles de Windows de mensagem de CB_SETDROPPEDWIDTH
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c4c4f5ce64bfb1b48e9e811027792a11e4358edc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 05d59aee89c4be18ba8e5013fa1a1e685a56b727d293c833c7f99140b683efeb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824402"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120089046"
 ---
 # <a name="cb_setdroppedwidth-message"></a>\_Mensagem de SETDROPPEDWIDTH CB
 
@@ -43,7 +43,7 @@ Este parâmetro não é usado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a mensagem for bem-sucedida, o valor de retorno será a nova largura da caixa de listagem.
 
@@ -59,9 +59,9 @@ Por padrão, a largura mínima permitida da caixa de listagem suspensa é zero. 
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

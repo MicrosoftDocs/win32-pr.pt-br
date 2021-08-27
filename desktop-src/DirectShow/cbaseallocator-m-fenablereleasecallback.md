@@ -1,7 +1,7 @@
 ---
-description: 'Sinalizador que indica se o retorno de chamada de versão está habilitado. Esse sinalizador é definido no método do construtor. Se o valor for FALSE, chamar o método CBaseAllocator:: setnotificar fará com que uma asserção seja acionada (em compilações de depuração).'
+description: Sinalizador que indica se o retorno de chamada de versão está habilitado. Esse sinalizador é definido no método do construtor. Se o valor for FALSE, chamar o método CBaseAllocator::SetNotify faz com que uma declaração seja a incêndio (em builds de depuração).
 ms.assetid: cc9adc7c-ec44-41e7-875a-b3e553120804
-title: 'Membro CBaseAllocator:: m_fEnableReleaseCallback (Amfilter. h)'
+title: Membro CBaseAllocator::m_fEnableReleaseCallback (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 626f1e8f4101eb48e79bc1cf679d1b91be9b2b31
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2fc1dfebb051ddffffce341547562901153b47bd5da002ebd847965593a73d93
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105768409"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120131456"
 ---
-# <a name="cbaseallocatorm_fenablereleasecallback-member"></a>Membro de CBaseAllocator:: m \_ fEnableReleaseCallback
+# <a name="cbaseallocatorm_fenablereleasecallback-member"></a>Membro CBaseAllocator::m \_ fEnableReleaseCallback
 
-Sinalizador que indica se o retorno de chamada de versão está habilitado. Esse sinalizador é definido no método do construtor. Se o valor for **false**, chamar o método [**CBaseAllocator:: setnotificar**](cbaseallocator-setnotify.md) fará com que uma asserção seja acionada (em compilações de depuração).
+Sinalizador que indica se o retorno de chamada de versão está habilitado. Esse sinalizador é definido no método do construtor. Se o valor for **FALSE,** chamar o [**método CBaseAllocator::SetNotify**](cbaseallocator-setnotify.md) faz com que uma declaração seja a incêndio (em builds de depuração).
 
 ## <a name="syntax"></a>Syntax
 
@@ -42,8 +42,8 @@ BOOL m_fEnableReleaseCallback;
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amfilter.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

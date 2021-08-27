@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ec5c83bb78528a61bbe7af9bafa59567100ee9da669915b96230bfb97b8bf390
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 860aa0ab1b11107d4724f86689e2fd999921b027
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117891112"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122477862"
 ---
 # <a name="jetreadfileinstance-function"></a>Função JetReadFileInstance
 
@@ -76,73 +76,22 @@ A quantidade real de dados de arquivo recuperados.
 
 essa função facilita o retorno de quaisquer [JET_ERR](./jet-err.md) tipos de dados que são definidos na API do ESE (mecanismo de Armazenamento extensível). para obter mais informações sobre erros do JET, consulte [erros do mecanismo de Armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Código de retorno</p></th>
-<th><p>Significado</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>A operação foi concluída com sucesso.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errBackupAbortByServer</p></td>
-<td><p>A operação falhou porque o backup externo atual foi anulado por uma chamada para a função <a href="gg269240(v=exchg.10).md">JetStopService</a> . esse erro será retornado somente pelo Windows XP e versões posteriores Windows.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errClientRequestToStopJetService</p></td>
-<td><p>Não é possível concluir a operação porque toda a atividade na instância associada à sessão foi interrompida como resultado de uma chamada para a função <a href="gg269240(v=exchg.10).md">JetStopService</a> .</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errInstanceUnavailable</p></td>
-<td><p>Não é possível concluir a operação porque a instância associada à sessão encontrou um erro fatal que exige que o acesso a todos os dados seja revogado para proteger a integridade desses dados. esse erro será retornado somente pelo Windows XP e versões posteriores Windows.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInvalidParameter</p></td>
-<td><p>Um dos parâmetros especificados continha um valor inesperado ou um valor que não fazia sentido quando combinado com o valor de outro parâmetro. Isso pode acontecer para a função <strong>JetReadFileInstance</strong> quando ocorrer um dos seguintes:</p>
-<ul>
-<li><p>O identificador de instância especificado é inválido. Windows XP e versões mais recentes do Windows.</p></li>
-<li><p>O tamanho do buffer de saída não é um múltiplo do tamanho da página do banco de dados (<a href="gg269337(v=exchg.10).md">JET_paramDatabasePageSize</a>). Windows XP e versões mais recentes do Windows.</p></li>
-<li><p>O tamanho do buffer de saída é menor do que três páginas de banco de dados (<a href="gg269337(v=exchg.10).md">JET_paramDatabasePageSize</a>), e essa é a primeira chamada para a função <strong>JetReadFileInstance</strong> para o identificador especificado. Windows XP e versões mais recentes do Windows.</p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><p>JET_errLogReadVerifyFailure</p></td>
-<td><p>A operação falhou porque o corrompimento de dados irrecuperáveis foi detectado durante a leitura de um arquivo de log de transações. esse erro será retornado somente pelo Windows XP e versões posteriores Windows.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errNoBackup</p></td>
-<td><p>A operação falhou porque nenhum backup externo está em andamento.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errNotInitialized</p></td>
-<td><p>Não é possível concluir a operação porque a instância associada a esta sessão ainda não foi inicializada.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errReadVerifyFailure</p></td>
-<td><p>A operação falhou porque o corrompimento de dados irrecuperáveis foi detectado durante a leitura de uma página de banco de dado a partir de um arquivo de dados ou arquivo de patch de banco</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errRestoreInProgress</p></td>
-<td><p>Não é possível concluir a operação porque uma operação de restauração está em andamento na instância associada a esta sessão.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errRunningInMultiInstanceMode</p></td>
-<td><p>a operação falhou porque foi feita uma tentativa de usar o mecanismo no modo herdado (Windows modo de compatibilidade 2000) em um caso em que apenas uma instância tem suporte, mas várias instâncias já existem.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errTermInProgress</p></td>
-<td><p>Não é possível concluir a operação porque a instância associada a esta sessão está sendo desligada.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Código de retorno</p> | <p>Significado</p> | 
+|--------------------|----------------|
+| <p>JET_errSuccess</p> | <p>A operação foi concluída com sucesso.</p> | 
+| <p>JET_errBackupAbortByServer</p> | <p>A operação falhou porque o backup externo atual foi anulado por uma chamada para a função <a href="gg269240(v=exchg.10).md">JetStopService</a> . esse erro será retornado somente pelo Windows XP e versões posteriores Windows.</p> | 
+| <p>JET_errClientRequestToStopJetService</p> | <p>Não é possível concluir a operação porque toda a atividade na instância associada à sessão foi interrompida como resultado de uma chamada para a função <a href="gg269240(v=exchg.10).md">JetStopService</a> .</p> | 
+| <p>JET_errInstanceUnavailable</p> | <p>Não é possível concluir a operação porque a instância associada à sessão encontrou um erro fatal que exige que o acesso a todos os dados seja revogado para proteger a integridade desses dados. esse erro será retornado somente pelo Windows XP e versões posteriores Windows.</p> | 
+| <p>JET_errInvalidParameter</p> | <p>Um dos parâmetros especificados continha um valor inesperado ou um valor que não fazia sentido quando combinado com o valor de outro parâmetro. Isso pode acontecer para a função <strong>JetReadFileInstance</strong> quando ocorrer um dos seguintes:</p><ul><li><p>O identificador de instância especificado é inválido. Windows XP e versões mais recentes do Windows.</p></li><li><p>O tamanho do buffer de saída não é um múltiplo do tamanho da página do banco de dados (<a href="gg269337(v=exchg.10).md">JET_paramDatabasePageSize</a>). Windows XP e versões mais recentes do Windows.</p></li><li><p>O tamanho do buffer de saída é menor do que três páginas de banco de dados (<a href="gg269337(v=exchg.10).md">JET_paramDatabasePageSize</a>), e essa é a primeira chamada para a função <strong>JetReadFileInstance</strong> para o identificador especificado. Windows XP e versões mais recentes do Windows.</p></li></ul> | 
+| <p>JET_errLogReadVerifyFailure</p> | <p>A operação falhou porque o corrompimento de dados irrecuperáveis foi detectado durante a leitura de um arquivo de log de transações. esse erro será retornado somente pelo Windows XP e versões posteriores Windows.</p> | 
+| <p>JET_errNoBackup</p> | <p>A operação falhou porque nenhum backup externo está em andamento.</p> | 
+| <p>JET_errNotInitialized</p> | <p>Não é possível concluir a operação porque a instância associada a esta sessão ainda não foi inicializada.</p> | 
+| <p>JET_errReadVerifyFailure</p> | <p>A operação falhou porque o corrompimento de dados irrecuperáveis foi detectado durante a leitura de uma página de banco de dado a partir de um arquivo de dados ou arquivo de patch de banco</p> | 
+| <p>JET_errRestoreInProgress</p> | <p>Não é possível concluir a operação porque uma operação de restauração está em andamento na instância associada a esta sessão.</p> | 
+| <p>JET_errRunningInMultiInstanceMode</p> | <p>a operação falhou porque foi feita uma tentativa de usar o mecanismo no modo herdado (Windows modo de compatibilidade 2000) em um caso em que apenas uma instância tem suporte, mas várias instâncias já existem.</p> | 
+| <p>JET_errTermInProgress</p> | <p>Não é possível concluir a operação porque a instância associada a esta sessão está sendo desligada.</p> | 
+
 
 
 Em caso de sucesso, a próxima parte dos dados do arquivo será lida no buffer de saída. O número real de bytes recuperados também será retornado. O deslocamento do arquivo no qual a próxima leitura ocorrerá será avançado por esse valor.
@@ -167,34 +116,9 @@ A corrupção de dados é detectada pelo mecanismo de banco de dados com o uso d
 
 #### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Cliente</p></td>
-<td><p>requer o Windows Vista ou Windows XP.</p></td>
-</tr>
-<tr class="even">
-<td><p>Servidor</p></td>
-<td><p>requer o Windows server 2008 ou Windows server 2003.</p></td>
-</tr>
-<tr class="odd">
-<td><p>Cabeçalho</p></td>
-<td><p>É declarado em ESENT. h.</p></td>
-</tr>
-<tr class="even">
-<td><p>Biblioteca</p></td>
-<td><p>Usa ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p>DLL</p></td>
-<td><p>Requer ESENT.dll.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Cliente</p> | <p>requer o Windows Vista ou Windows XP.</p> | | <p>Servidor</p> | <p>requer o Windows server 2008 ou Windows server 2003.</p> | | <p>Cabeçalho</p> | <p>É declarado em ESENT. h.</p> | | <p>Biblioteca</p> | <p>Usa ESENT. lib.</p> | | <p>DLL</p> | <p>Requer ESENT.dll.</p> | 
+
 
 
 #### <a name="see-also"></a>Consulte Também

@@ -4,16 +4,16 @@ ms.assetid: F5ABAE57-E0F0-4AEB-825C-B53AEE8210E7
 title: SIO_TCP_INITIAL_RTO código de controle
 ms.topic: reference
 ms.date: 05/20/2019
-req.target-min-winverclnt: Windows Vista [desktop apps only]
-req.target-min-winversvr: Windows Server 2008 [desktop apps only]
+req.target-min-winverclnt: Windows Vista [desktop apps only]
+req.target-min-winversvr: Windows Server 2008 [desktop apps only]
 api_location:
 - mstcpip.h
-ms.openlocfilehash: 116bab23c2c5f4ef21b77a1b7f9fefa8b3ff3099
-ms.sourcegitcommit: 191184ea30e209f67267ebe5b222dc16965e54e0
+ms.openlocfilehash: 63ebbfd0d8d56c03d62c7bba417d69e3ac1a576abfc8c72ac489117a7d8b74c8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "104454434"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120097476"
 ---
 # <a name="sio_tcp_initial_rto-control-code"></a>SIO_TCP_INITIAL_RTO código de controle
 
@@ -126,7 +126,7 @@ Um ponteiro para o código de erro.
 
 **Observação**  Esse parâmetro se aplica somente à função **WSPIoctl** .
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a operação for concluída com êxito, a função [**WSAIoctl**](/windows/desktop/api/winsock2/nf-winsock2-wsaioctl) ou **WSPIoctl** retornará zero.
 

@@ -3,7 +3,7 @@ title: Mensagem de PSM_SETHEADERSUBTITLE (Prsht. h)
 description: Define o texto do subtítulo para o cabeçalho da página interior de um assistente. Você pode enviar essa mensagem explicitamente ou usar a \_ macro PropSheet SetHeaderSubTitle.
 ms.assetid: 6ef3017b-8a20-4d62-a604-135410d8bdf7
 keywords:
-- Controles de PSM_SETHEADERSUBTITLE de mensagens do Windows
+- controles de Windows de mensagem de PSM_SETHEADERSUBTITLE
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d73376b5ed35f20b43c743b31a4a78d3a4fa809
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 20e030b75a933ba7f647f8b3dffa5e45637999d45f3299f8280fd1db3afb9857
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918388"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120088496"
 ---
 # <a name="psm_setheadersubtitle-message"></a>Mensagem de PSM \_ SETHEADERSUBTITLE
 
@@ -45,7 +45,7 @@ Novo subtítulo do cabeçalho.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sem valor de retorno.
 
@@ -64,9 +64,9 @@ Se você especificar a página atual, ela será repintada imediatamente para exi
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                    |
-| parâmetro<br/>                   | <dl> <dt>Prsht. h</dt> </dl>      |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                    |
+| Cabeçalho<br/>                   | <dl> <dt>Prsht. h</dt> </dl>      |
 | Nomes Unicode e ANSI<br/>   | **PSM \_ SETHEADERSUBTITLEW** (Unicode) e **PSM \_ SETHEADERSUBTITLEA** (ANSI)<br/> |
 
 

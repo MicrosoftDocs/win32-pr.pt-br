@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 26e0b4d9781598495f358d21c0b06fbb7a34f466
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 447be3f91917d7aa7e1b606186aea32bc77f8f00f178495c35d2ae933ae936d3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103837941"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120118787"
 ---
 # <a name="id3dxbasemeshunlockvertexbuffer-method"></a>Método ID3DXBaseMesh:: UnlockVertexBuffer
 
@@ -38,7 +38,7 @@ HRESULT UnlockVertexBuffer();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

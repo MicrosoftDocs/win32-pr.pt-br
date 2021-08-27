@@ -1,9 +1,9 @@
 ---
-title: Mensagem de PSM_SETFINISHTEXT (Prsht. h)
-description: Define o texto do botão concluir em um assistente, mostra e habilita o botão e oculta os botões Avançar e voltar. Você pode enviar essa mensagem explicitamente ou usando a macro PropSheet \_ SetFinishText.
+title: PSM_SETFINISHTEXT mensagem (Prsht.h)
+description: Define o texto do botão Concluir em um assistente, mostra e habilita o botão e oculta os botões Próximo e Voltar. Você pode enviar essa mensagem explicitamente ou usando a \_ macro PropSheet SetFinishText.
 ms.assetid: fa89c6d7-9ab7-4e7c-ba08-d665420492a3
 keywords:
-- Controles de PSM_SETFINISHTEXT de mensagens do Windows
+- PSM_SETFINISHTEXT controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 08195cddc96c8b92f403be6940f31099e21151f1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5a08cafbeafeccb2235cb9b653f997aa8c60bd5fd21a3ccbc92e572fa5d3d0db
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644299"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120088556"
 ---
-# <a name="psm_setfinishtext-message"></a>Mensagem de PSM \_ SETFINISHTEXT
+# <a name="psm_setfinishtext-message"></a>Mensagem \_ SETFINISHTEXT do PSM
 
-Define o texto do botão **concluir** em um assistente, mostra e habilita o botão e oculta os botões **Avançar** e **voltar** . Você pode enviar essa mensagem explicitamente ou usando a macro [**PropSheet \_ SetFinishText**](/windows/desktop/api/Prsht/nf-prsht-propsheet_setfinishtext) .
+Define o texto do **botão** Concluir em um assistente, mostra e habilita o botão e oculta os **botões Próximo** **e** Voltar. Você pode enviar essa mensagem explicitamente ou usando a [**macro \_ PropSheet SetFinishText.**](/windows/desktop/api/Prsht/nf-prsht-propsheet_setfinishtext)
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -41,17 +41,17 @@ Deve ser zero.
 *lParam* 
 </dt> <dd>
 
-Ponteiro para o novo texto do botão **concluir** .
+Ponteiro para o novo texto do **botão** Concluir.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sem valor de retorno.
 
 ## <a name="remarks"></a>Comentários
 
-Por padrão, o botão **concluir** não tem um acelerador de teclado. Você pode criar um acelerador de teclado com essa mensagem incluindo um e comercial (&) na cadeia de texto que você atribui ao *lParam*. Por exemplo, "&concluir" define F como a tecla aceleradora.
+Por padrão, o **botão** Concluir não tem um acelerador de teclado. Você pode criar um acelerador de teclado com essa mensagem incluindo um e ampersand (&) na cadeia de caracteres de texto que você atribui a *lParam*. Por exemplo, "&Concluir" define F como a tecla de acelerador.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,9 +59,9 @@ Por padrão, o botão **concluir** não tem um acelerador de teclado. Você pode
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Prsht. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Prsht.h</dt> </dl> |
 | Nomes Unicode e ANSI<br/>   | **PSM \_ SETFINISHTEXTW** (Unicode) e **PSM \_ SETFINISHTEXTA** (ANSI)<br/>    |
 
 

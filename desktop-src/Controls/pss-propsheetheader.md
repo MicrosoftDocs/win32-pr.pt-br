@@ -1,8 +1,8 @@
 ---
-title: Estrutura PROPSHEETHEADER (Prsht. h)
+title: Estrutura PROPSHEETHEADER (Prsht.h)
 description: Define o quadro e as páginas de uma folha de propriedades.
 keywords:
-- Controles do Windows da estrutura PROPSHEETHEADER
+- controles de Windows de estrutura PROPSHEETHEADER
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 02/23/2021
-ms.openlocfilehash: 90a11ff727b491a1801f8071e28c39a3a6594408
-ms.sourcegitcommit: 11f52354f570aacaf1ba2a266b2e507abd73352a
+ms.openlocfilehash: 719982c1e17ab74dc5c624352625d226f8f4bef90ae84dce4f2b85d5dc2713f2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "105791118"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120085116"
 ---
 # <a name="propsheetheader--structure"></a>Estrutura PROPSHEETHEADER
 
@@ -85,7 +85,7 @@ Sinalizadores que indicam quais opções usar ao criar a página da folha de pro
 | PSH_NOCONTEXTHELP (0x02000000) | [Versão 5,80](common-control-versions.md) e posterior. Remove o botão de ajuda contextual ("?"), que geralmente está presente na barra de legenda das folhas de propriedades. Este sinalizador não é válido para assistentes. Consulte [sobre folhas de propriedades](property-sheets.md) para obter uma discussão de como remover o botão de **ajuda** da barra de legenda para versões anteriores dos controles comuns. Não há suporte para esse sinalizador em conjunto com PSH_AEROWIZARD. |
 | PSH_NOMARGIN (0x10000000) | [Versão 6, 0](common-control-versions.md) ou posterior. Especifica que nenhuma margem é inserida entre a página e o quadro. Deve ser usado em combinação com PSH_AEROWIZARD. |
 | PSH_PROPSHEETPAGE (0x00000008) | Usa o membro *PPSP* e ignora o membro *phpage* ao criar as páginas para a folha de propriedades. |
-| PSH_PROPTITLE (0x00000001) | Indica que *pszCaption* é o nome do item para o qual as propriedades estão sendo mostradas. O Windows torna um ajuste de versão e de idioma dependente da legenda. Por exemplo, em inglês, a frase "Propriedades de" é anexada a um *pszCaption* não vazio (e, se o *pszCaption* produz uma legenda vazia, o título é simplesmente "Propriedades"). Se esse sinalizador for omitido, o pszCaption será usado inalterado.  |
+| PSH_PROPTITLE (0x00000001) | Indica que *pszCaption* é o nome do item para o qual as propriedades estão sendo mostradas. Windows torna um ajuste de versão e de idioma dependente da legenda. Por exemplo, em inglês, a frase "Propriedades de" é anexada a um *pszCaption* não vazio (e, se o *pszCaption* produz uma legenda vazia, o título é simplesmente "Propriedades"). Se esse sinalizador for omitido, o pszCaption será usado inalterado.  |
 | PSH_RESIZABLE (0x04000000) | Permite que o assistente seja redimensionado pelo usuário. Os botões maximizar e minimizar aparecem no quadro do assistente e o quadro é dimensionável. Para usar esse sinalizador, você também deve definir PSH_AEROWIZARD. |
 | PSH_RTLREADING (0x00000800) | Define a folha de propriedades ou a janela do assistente como a ordem de leitura da direita para a esquerda (RTL), apropriada para linguagens como hebraico e árabe. Se esse sinalizador não for especificado, a janela da folha de propriedades padrão será a ordem de leitura da esquerda para a direita (EPD) e as janelas do assistente corresponderão à ordem de leitura da página atual. |
 | PSH_STRETCHWATERMARK (0x00040000) | Alonga a marca-d ' água nos assistentes de estilo Wizard97. Não há suporte para esse sinalizador em conjunto com PSH_AEROWIZARD. Esse sinalizador de estilo só é incluído para fornecer compatibilidade com versões anteriores para determinados aplicativos. Seu uso não é recomendado e só é compatível com as versões 4,0 e 4, 1 dos controles comuns. Com os controles comuns versão 5,80 e posteriores, esse sinalizador é ignorado. |
@@ -106,7 +106,7 @@ Sinalizadores que indicam quais opções usar ao criar a página da folha de pro
 
 *hwndParent* 
 
-Tipo: [HWND](../winprog/windows-data-types.md)
+Digite: [HWND](../winprog/windows-data-types.md)
 
 Identificador para a janela do proprietário da folha de propriedades.
 
@@ -210,7 +210,7 @@ Os estilos PSH_WIZARD, PSH_WIZARD97 e PSH_WIZARD_LITE são mutuamente incompatí
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte | \[Somente aplicativos da área de trabalho do Windows Vista\]                                    |
-| Servidor mínimo com suporte | \[Somente aplicativos da área de trabalho do Windows Server 2003\]                              |
-| parâmetro                   | Prsht. h |
+| Cliente mínimo com suporte | Windows \[Somente aplicativos da área de trabalho do vista\]                                    |
+| Servidor mínimo com suporte | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]                              |
+| Cabeçalho                   | Prsht. h |
 | Nomes Unicode e ANSI                   | **PROPSHEETHEADERW** (Unicode) e **PROPSHEETHEADERA** (ANSI) |

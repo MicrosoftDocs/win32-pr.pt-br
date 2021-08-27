@@ -1,42 +1,42 @@
 ---
-description: Esta seção descreve como imprimir de um programa nativo da área de trabalho do Windows.
+description: Esta seção descreve como imprimir de um programa Windows desktop nativo.
 ms.assetid: C1EDBE38-9D18-41BB-961C-12CF2283C639
-title: Impressão de aplicativo de desktop
+title: Impressão de aplicativo da área de trabalho
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cbecbac997d000f50e7c912e57be42cc8fe239b3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2bf5e0ebab666258f62b1e6bb87497d38a1b521fdde9a7668bb28e3bb3e9868e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105748361"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120112106"
 ---
-# <a name="desktop-app-printing"></a>Impressão de aplicativo de desktop
+# <a name="desktop-app-printing"></a>Impressão de aplicativo da área de trabalho
 
-Esta seção descreve como imprimir de um programa nativo da área de trabalho do Windows.
+Esta seção descreve como imprimir de um programa Windows desktop nativo.
 
 ## <a name="overview"></a>Visão geral
 
-Para fornecer a melhor experiência de usuário ao imprimir a partir de um programa nativo do Windows, o programa deve ser projetado para imprimir a partir de um thread dedicado. Em um programa nativo do Windows, o programa é responsável por gerenciar eventos e mensagens da interface do usuário. As operações de impressão podem exigir períodos de computação intensa à medida que o conteúdo do aplicativo é renderizado para a impressora, o que pode impedir que o programa responda à interação do usuário se esse processamento for executado no mesmo thread que o processamento de eventos da interação do usuário.
+Para fornecer a melhor experiência do usuário ao imprimir de um programa Windows nativo, o programa deve ser projetado para imprimir de um thread dedicado. Em um programa Windows nativo, o programa é responsável por gerenciar mensagens e eventos de interface do usuário. As operações de impressão podem exigir períodos de computação intensa, pois o conteúdo do aplicativo é renderizado para a impressora, o que pode impedir que o programa responde à interação do usuário se esse processamento for executado no mesmo thread que o processamento de eventos da interação do usuário.
 
-Se você já estiver familiarizado com a forma de escrever um programa nativo do Windows multithread, vá diretamente para [como imprimir a partir de um aplicativo do Windows](how-to--print-from-a-windows-application.md) e saiba como adicionar funcionalidade de impressão ao seu programa.
+Se você já estiver familiarizado com como escrever um programa Windows nativo multi-threaded, acesse Diretamente Como imprimir de um aplicativo [Windows](how-to--print-from-a-windows-application.md) e saiba como adicionar a funcionalidade de impressão ao programa.
 
-### <a name="basic-windows-program-requirements"></a>Requisitos básicos do programa Windows
+### <a name="basic-windows-program-requirements"></a>Requisitos básicos Windows programa básicos
 
-Para melhor desempenho e capacidade de resposta do programa, não execute o processamento do trabalho de impressão de um programa no thread que processa a interação do usuário.
+Para melhor desempenho e capacidade de resposta do programa, não execute o processamento de trabalho de impressão de um programa no thread que processa a interação do usuário.
 
-Essa separação de impressão da interação do usuário influenciará o modo como o programa gerencia os dados do aplicativo. Você deve compreender totalmente essas implicações antes de começar a gravar o aplicativo. Os tópicos a seguir descrevem os requisitos básicos de tratamento de impressão em um thread separado de um programa.
+Essa separação da impressão da interação do usuário influenciará como o programa gerencia os dados do aplicativo. Você deve entender completamente essas implicações antes de começar a escrever o aplicativo. Os tópicos a seguir descrevem os requisitos básicos de manipulação de impressão em um thread separado de um programa.
 
-### <a name="windows-program-basics"></a>Noções básicas do programa Windows
+### <a name="windows-program-basics"></a>Windows Noções básicas do programa
 
-Um programa nativo do Windows deve fornecer o procedimento de janela principal para processar as mensagens de janela que ele recebe do sistema operacional. Cada janela em um programa do Windows tem uma função **WndProc** correspondente que processa essas mensagens de janela. O thread no qual essa função é executada é chamado de interface do usuário, ou thread da interface do usuário.
+Um programa Windows nativo deve fornecer o procedimento de janela principal para processar as mensagens de janela que ele recebe do sistema operacional. Cada janela em um Windows tem uma **função WndProc** correspondente que processa essas mensagens de janela. O thread no qual essa função é executado é chamado de interface do usuário ou interface do usuário, thread.
 
-**Use os recursos para cadeias de caracteres.**  
-Use os recursos de cadeia de caracteres do arquivo de recursos do programa em vez de constantes de cadeia de caracteres para cadeias que talvez precisem ser alteradas quando você oferecer suporte a outro idioma. Antes que um programa possa usar um recurso de cadeia de caracteres como uma cadeia de caracteres, o programa deve recuperar o recurso do arquivo de recurso e copiá-lo para um buffer de memória local. Isso requer alguma programação adicional no início, mas permite modificação, tradução e localização mais fáceis do programa no futuro.  
+**Use recursos para cadeias de caracteres.**  
+Use recursos de cadeia de caracteres do arquivo de recurso do programa em vez de constantes de cadeia de caracteres para cadeias de caracteres que talvez precisem ser alteradas quando você dar suporte a outro idioma. Antes que um programa possa usar um recurso de cadeia de caracteres como uma cadeia de caracteres, o programa deve recuperar o recurso do arquivo de recurso e copiá-lo para um buffer de memória local. Isso requer programação adicional no início, mas permite facilitar a modificação, a tradução e a localização do programa no futuro.  
 **Processar dados em etapas.**  
-Processe o trabalho de impressão em etapas que podem ser interrompidas. Esse design possibilita que o usuário cancele uma operação de processamento longo antes de ser concluída e impede que o programa bloqueie outros programas que possam estar em execução ao mesmo tempo.  
-**Use os dados do usuário do Windows.**  
-Os aplicativos de impressão geralmente têm várias janelas e threads. Para manter os dados disponíveis entre threads e etapas de processamento sem usar variáveis estáticas, globais, referencie as estruturas de dados por um ponteiro de dados que faz parte da janela na qual elas são usadas.  
+Processe o trabalho de impressão em etapas que podem ser interrompidas. Esse design possibilita que o usuário cancele uma operação de processamento longo antes de ser concluída e impede que o programa bloquee outros programas que podem estar em execução ao mesmo tempo.  
+**Usar dados de usuário da janela.**  
+Os aplicativos de impressão geralmente têm várias janelas e threads. Para manter os dados disponíveis entre threads e etapas de processamento sem usar variáveis globais estáticas, consulte as estruturas de dados por um ponteiro de dados que faz parte da janela em que elas são usadas.  
 
 
 O exemplo de código a seguir mostra um ponto de entrada principal para um aplicativo de impressão. Este exemplo mostra como usar recursos de cadeia de caracteres em vez de constantes de cadeia de caracteres e também mostra o loop de mensagem principal que processa as mensagens de janela do programa.
@@ -120,26 +120,26 @@ wWinMain(
 
 ### <a name="document-information"></a>Informações do documento
 
-Programas nativos do Windows que são impressos devem ser projetados para processamento multi-threaded. Um dos requisitos de um design multi-threaded é proteger os elementos de dados do programa para que eles sejam seguros para que vários threads sejam usados ao mesmo tempo. Você pode proteger os elementos de dados usando objetos de sincronização e organizando os dados para evitar conflitos entre os threads. Ao mesmo tempo, o programa deve impedir alterações nos dados do programa enquanto ele está sendo impresso. O programa de exemplo usa várias técnicas de programação multi-threaded diferentes.
+Programas Windows nativos que imprimem devem ser projetados para processamento multi-threaded. Um dos requisitos de um design multi-threaded é proteger os elementos de dados do programa para que eles sejam seguros para que vários threads usem ao mesmo tempo. Você pode proteger elementos de dados usando objetos de sincronização e organizando os dados para evitar conflitos entre os threads. Ao mesmo tempo, o programa deve impedir alterações nos dados do programa enquanto eles estão sendo impressos. O programa de exemplo usa várias técnicas de programação multi-threaded diferentes.
 
  **Eventos de sincronização**  
-O programa de exemplo usa eventos, identificadores de thread e funções de espera para sincronizar o processamento entre o thread de impressão e o programa principal e indicar que os dados estão em uso.  
-**Mensagens do Windows específicas do aplicativo**  
-O programa de exemplo usa mensagens de janela específicas do aplicativo para tornar o programa mais compatível com outros programas nativos do Windows. Interromper o processamento em etapas menores e enfileirar essas etapas no loop de mensagem de janela torna mais fácil para o Windows gerenciar o processamento sem bloquear outros aplicativos que também podem estar em execução no computador.  
+O programa de exemplo usa eventos, alças de thread e funções de espera para sincronizar o processamento entre o thread de impressão e o programa principal e para indicar que os dados estão em uso.  
+**Mensagens de Windows específicas do aplicativo**  
+O programa de exemplo usa mensagens de janela específicas do aplicativo para tornar o programa mais compatível com outros programas Windows nativos. A quebra do processamento em etapas menores e a fila dessas etapas no loop de mensagem da janela torna mais fácil para Windows gerenciar o processamento sem bloquear outros aplicativos que também podem estar em execução no computador.  
 **estruturas de dados**  
-O programa de exemplo não é escrito em um estilo orientado a objeto usando objetos e classes, embora agrupe elementos de dados em estruturas de dados. O exemplo não usa uma abordagem orientada a objeto para evitar a implicação de que uma abordagem é melhor ou pior do que a outra.  
+O programa de exemplo não é escrito em um estilo orientado a objeto usando objetos e classes, embora ele agrupa elementos de dados em estruturas de dados. O exemplo não usa uma abordagem orientada a objeto para evitar implicar que uma abordagem é melhor ou pior do que outra.  
 Você pode usar as funções e estruturas de dados do programa de exemplo como um ponto de partida ao projetar seu programa. Independentemente de você decidir criar um programa orientado a objeto ou não, a consideração de design importante a ser lembrada é agrupar os elementos de dados relacionados para que você possa usá-los com segurança em threads diferentes, conforme necessário.  
 
 
 ### <a name="printer-device-context"></a>Contexto do dispositivo de impressora
 
-Ao imprimir, talvez você queira renderizar o conteúdo a ser impresso em um contexto de dispositivo. [Como recuperar um contexto de dispositivo de impressora](retrieving-a-printer-device-context.md) descreve as diferentes maneiras que você pode obter um contexto de dispositivo de impressora.
+Ao imprimir, talvez você queira renderizar o conteúdo a ser impresso em um contexto de dispositivo. [Como recuperar um contexto de dispositivo de impressora](retrieving-a-printer-device-context.md) descreve as diferentes maneiras pelas quais você pode obter um contexto de dispositivo de impressora.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 
 
-[Como imprimir a partir de um aplicativo do Windows](how-to--print-from-a-windows-application.md)
+[Como imprimir de um aplicativo Windows aplicativo](how-to--print-from-a-windows-application.md)
 
 
  

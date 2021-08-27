@@ -15,12 +15,12 @@ api_type:
 - DllExport
 api_location:
 - Spoolss.dll
-ms.openlocfilehash: f817f5e73537f6a71d8236ad9532acdf02a53552
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3248fc1a2392e2a04fd83c58ddcc08a110eec94779b634ce6a348639d4d2a5c2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171708"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120112466"
 ---
 # <a name="installprinterdriverfrompackage-function"></a>Função InstallPrinterDriverFromPackage
 
@@ -55,7 +55,7 @@ Um ponteiro para uma constante, Cadeia de caracteres terminada em nulo que espec
 *pszInfPath* \[ no\]
 </dt> <dd>
 
-Um ponteiro para uma constante, Cadeia de caracteres terminada em nulo que especifica o caminho do repositório de drivers para o arquivo. inf do driver de impressão. **NULL** significa que o driver está em um arquivo inf fornecido com o Windows.
+Um ponteiro para uma constante, Cadeia de caracteres terminada em nulo que especifica o caminho do repositório de drivers para o arquivo. inf do driver de impressão. **NULL** significa que o driver está em um arquivo inf enviado com Windows.
 
 </dd> <dt>
 
@@ -69,7 +69,7 @@ Um ponteiro para uma constante, Cadeia de caracteres terminada em nulo que espec
 *pszEnvironment* \[ no\]
 </dt> <dd>
 
-Um ponteiro para uma constante, Cadeia de caracteres terminada em nulo que especifica a arquitetura do processador (por exemplo, Windows NT x86). Isso pode ser **nulo**.
+um ponteiro para uma constante, cadeia de caracteres terminada em nulo que especifica a arquitetura do processador (por exemplo, Windows NT x86). Isso pode ser **nulo**.
 
 </dd> <dt>
 
@@ -80,7 +80,7 @@ Isso pode ser somente 0 ou IPDFP \_ copiar \_ todos os \_ arquivos. Um valor de 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a operação for concluída com sucesso, o valor de retorno será S \_ OK, caso contrário, o **HRESULT** conterá um código de erro.
 
@@ -107,9 +107,9 @@ Somente pacotes assinados podem ser instalados em um computador remoto.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                      |
-| parâmetro<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                            |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                                      |
+| Cabeçalho<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Winspool. lib</dt> </dl>                   |
 | DLL<br/>                      | <dl> <dt>Spoolss.dll</dt> </dl>                    |
 | Nomes Unicode e ANSI<br/>   | **InstallPrinterDriverFromPackageW** (Unicode) e **InstallPrinterDriverFromPackageA** (ANSI)<br/> |

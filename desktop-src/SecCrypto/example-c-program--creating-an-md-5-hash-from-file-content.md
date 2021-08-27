@@ -4,12 +4,12 @@ ms.assetid: 3186e292-87fd-425b-b9cf-92a294a57b69
 title: 'Programa de exemplo C: Criando um hash MD5 do conteúdo do arquivo'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aea252a0afe41574e7636e163e20e024719c4617
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9256436516aafb33d26c73a6e94b463c75ecd3c3c54606bd57ebf2add21652fc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922684"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120100816"
 ---
 # <a name="example-c-program-creating-an-md5-hash-from-file-content"></a>Programa de exemplo C: Criando um hash MD5 do conteúdo do arquivo
 

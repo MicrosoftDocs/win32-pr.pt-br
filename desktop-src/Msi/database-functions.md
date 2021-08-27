@@ -1,21 +1,21 @@
 ---
-description: Este material destina-se a desenvolvedores que estão escrevendo seus próprios programas de instalação e desenvolvedores que desejam saber mais sobre as tabelas de banco de dados do instalador. Para obter informações gerais sobre o instalador, consulte sobre o Windows Installer.
+description: Esse material destina-se a desenvolvedores que estão escrevendo seus próprios programas de instalação e desenvolvedores que querem saber mais sobre as tabelas de banco de dados do instalador. Para obter informações gerais sobre o instalador, consulte About Windows Installer.
 ms.assetid: 95516437-9708-4f4e-a5c2-7bcd4741c776
 title: Funções de banco de dados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e4a4233437d24944c8bb7fe5c7de6412e700022b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6214dadc413a2c4e2d5f257c396438c850446fb9106fb70970bdb971f4653d44
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647474"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120086206"
 ---
 # <a name="database-functions"></a>Funções de banco de dados
 
-Este material destina-se a desenvolvedores que estão escrevendo seus próprios programas de instalação e desenvolvedores que desejam saber mais sobre as tabelas de banco de dados do instalador. Para obter informações gerais sobre o instalador, consulte [sobre o Windows Installer](about-windows-installer.md).
+Esse material destina-se a desenvolvedores que estão escrevendo seus próprios programas de instalação e desenvolvedores que querem saber mais sobre as tabelas de banco de dados do instalador. Para obter informações gerais sobre o instalador, consulte [About Windows Installer](about-windows-installer.md).
 
-Você pode usar as funções de acesso do instalador para acessar o banco de dados e o processo de instalação. Essas funções só devem ser usadas por ações de instalação personalizadas e por ferramentas de criação. Algumas das funções de acesso do instalador exigem cadeias de caracteres de consulta SQL para consultar o banco de dados. As consultas devem aderir à sintaxe do instalador [SQL](sql-syntax.md).
+Você pode usar as funções de acesso do instalador para acessar o banco de dados e o processo de instalação. Essas funções só devem ser usadas por ações de instalação personalizadas e ferramentas de autor. Algumas das funções de acesso do instalador exigem SQL de consulta para consultar o banco de dados. As consultas devem aderir à sintaxe de SQL [instalador](sql-syntax.md).
 
 Este tópico lista as funções de acesso ao banco de dados do instalador por categoria.
 
@@ -30,12 +30,12 @@ Este tópico lista as funções de acesso ao banco de dados do instalador por ca
 | [**MsiDatabaseIsTablePersistent**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabaseistablepersistenta) | Retorna uma enumeração que descreve o estado de uma tabela.                                 |
 | [**MsiDatabaseOpenView**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabaseopenviewa)                   | Prepara uma consulta de banco de dados e cria um objeto de exibição.                                    |
 | [**MsiGetActiveDatabase**](/windows/desktop/api/Msiquery/nf-msiquery-msigetactivedatabase)                 | Retorna o banco de dados ativo para a instalação.                                       |
-| [**MsiViewGetColumnInfo**](/windows/desktop/api/Msiquery/nf-msiquery-msiviewgetcolumninfo)                 | Retorna nomes ou definições de coluna.                                                    |
-| [**MsiOpenDatabase**](/windows/desktop/api/Msiquery/nf-msiquery-msiopendatabasea)                           | Abre um arquivo de banco de dados para o acesso ao dado.                                                  |
+| [**MsiViewGetColumnInfo**](/windows/desktop/api/Msiquery/nf-msiquery-msiviewgetcolumninfo)                 | Retorna nomes de coluna ou definições.                                                    |
+| [**MsiOpenDatabase**](/windows/desktop/api/Msiquery/nf-msiquery-msiopendatabasea)                           | Abre um arquivo de banco de dados para acesso a dados.                                                  |
 | [**MsiViewClose**](/windows/desktop/api/Msiquery/nf-msiquery-msiviewclose)                                 | Libera o conjunto de resultados para uma exibição executada.                                           |
 | [**MsiViewExecute**](/windows/desktop/api/Msiquery/nf-msiquery-msiviewexecute)                             | Executa a consulta de exibição e fornece os parâmetros necessários.                               |
 | [**MsiViewFetch**](/windows/desktop/api/Msiquery/nf-msiquery-msiviewfetch)                                 | Busca o próximo registro sequencial da exibição.                                       |
-| [**MsiViewGetError**](/windows/desktop/api/Msiquery/nf-msiquery-msiviewgeterrora)                           | Retorna o erro que ocorreu na função [**MsiViewModify**](/windows/desktop/api/Msiquery/nf-msiquery-msiviewmodify) . |
+| [**MsiViewGetError**](/windows/desktop/api/Msiquery/nf-msiquery-msiviewgeterrora)                           | Retorna o erro que ocorreu na [**função MsiViewModify.**](/windows/desktop/api/Msiquery/nf-msiquery-msiviewmodify) |
 | [**MsiViewModify**](/windows/desktop/api/Msiquery/nf-msiquery-msiviewmodify)                               | Atualiza um registro buscado.                                                               |
 
 
@@ -48,35 +48,35 @@ Este tópico lista as funções de acesso ao banco de dados do instalador por ca
 
 | Função                                                               | Descrição                                                      |
 |------------------------------------------------------------------------|------------------------------------------------------------------|
-| [**MsiCreateTransformSummaryInfo**](/windows/desktop/api/Msiquery/nf-msiquery-msicreatetransformsummaryinfoa) | Cria informações de resumo para uma transformação existente.           |
+| [**MsiCreateTransformSummaryInfo**](/windows/desktop/api/Msiquery/nf-msiquery-msicreatetransformsummaryinfoa) | Cria informações resumidas para uma transformação existente.           |
 | [**MsiDatabaseApplyTransform**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabaseapplytransforma)         | Aplica uma transformação a um banco de dados.                               |
-| [**MsiDatabaseExport**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabaseexporta)                         | Exporta uma tabela de um banco de dados aberto para um arquivo morto de texto.    |
+| [**MsiDatabaseExport**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabaseexporta)                         | Exporta uma tabela de um banco de dados aberto para um arquivo de arquivo de texto.    |
 | [**MsiDatabaseGenerateTransform**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabasegeneratetransforma)   | Gera um arquivo de transformação de diferenças entre dois bancos de dados. |
-| [**MsiDatabaseImport**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabaseimporta)                         | Importa uma tabela de arquivamento de texto do instalador para um banco de dados aberto.   |
-| [**MsiDatabaseMerge**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabasemergea)                           | Mescla dois bancos de dados juntos.                                   |
+| [**MsiDatabaseImport**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabaseimporta)                         | Importa uma tabela de arquivos de texto do instalador para um banco de dados aberto.   |
+| [**MsiDatabaseMerge**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabasemergea)                           | Mescla dois bancos de dados.                                   |
 | [**MsiGetDatabaseState**](/windows/desktop/api/Msiquery/nf-msiquery-msigetdatabasestate)                     | Retorna o estado do banco de dados.                               |
 
 
 
  
 
-## <a name="record-processing-functions"></a>Funções de processamento de registros
+## <a name="record-processing-functions"></a>Funções de processamento de registro
 
 
 
 | Função                                                 | Descrição                                                     |
 |----------------------------------------------------------|-----------------------------------------------------------------|
 | [**MsiCreateRecord**](/windows/desktop/api/Msiquery/nf-msiquery-msicreaterecord)               | Cria um novo objeto de registro com o número especificado de campos.      |
-| [**MsiFormatRecord**](/windows/desktop/api/Msiquery/nf-msiquery-msiformatrecorda)               | Formata dados e propriedades do campo de registro usando uma cadeia de caracteres de formato. |
+| [**MsiFormatRecord**](/windows/desktop/api/Msiquery/nf-msiquery-msiformatrecorda)               | Formatar dados e propriedades do campo de registro usando uma cadeia de caracteres de formato. |
 | [**MsiRecordClearData**](/windows/desktop/api/Msiquery/nf-msiquery-msirecordcleardata)         | Define todos os campos em um registro como nulo.                            |
 | [**MsiRecordDataSize**](/windows/desktop/api/Msiquery/nf-msiquery-msirecorddatasize)           | Retorna o comprimento de um campo de registro.                           |
 | [**MsiRecordGetFieldCount**](/windows/desktop/api/Msiquery/nf-msiquery-msirecordgetfieldcount) | Retorna o número de campos em um registro.                       |
 | [**MsiRecordGetInteger**](/windows/desktop/api/Msiquery/nf-msiquery-msirecordgetinteger)       | Retorna o valor inteiro de um campo de registro.                  |
 | [**MsiRecordGetString**](/windows/desktop/api/Msiquery/nf-msiquery-msirecordgetstringa)         | Retorna o valor da cadeia de caracteres de um campo de registro.                     |
-| [**MsiRecordIsNull**](/windows/desktop/api/Msiquery/nf-msiquery-msirecordisnull)               | Relata se um campo de registro é nulo.                         |
+| [**MsiRecordIsNull**](/windows/desktop/api/Msiquery/nf-msiquery-msirecordisnull)               | Informa se um campo de registro é nulo.                         |
 | [**MsiRecordReadStream**](/windows/desktop/api/Msiquery/nf-msiquery-msirecordreadstream)       | Lê bytes de um campo de fluxo de registro em um buffer.           |
-| [**MsiRecordSetInteger**](/windows/desktop/api/Msiquery/nf-msiquery-msirecordsetinteger)       | Define um campo de registro como um campo de número inteiro.                        |
-| [**MsiRecordSetStream**](/windows/desktop/api/Msiquery/nf-msiquery-msirecordsetstreama)         | Define um campo de fluxo de registros de um arquivo.                         |
+| [**MsiRecordSetInteger**](/windows/desktop/api/Msiquery/nf-msiquery-msirecordsetinteger)       | Define um campo de registro como um campo inteiro.                        |
+| [**MsiRecordSetStream**](/windows/desktop/api/Msiquery/nf-msiquery-msirecordsetstreama)         | Define um campo de fluxo de registro de um arquivo.                         |
 | [**MsiRecordSetString**](/windows/desktop/api/Msiquery/nf-msiquery-msirecordsetstringa)         | Copia uma cadeia de caracteres no campo designado.                      |
 
 
@@ -89,10 +89,10 @@ Este tópico lista as funções de acesso ao banco de dados do instalador por ca
 
 | Função                                                                 | Descrição                                                            |
 |--------------------------------------------------------------------------|------------------------------------------------------------------------|
-| [**MsiGetSummaryInformation**](/windows/desktop/api/Msiquery/nf-msiquery-msigetsummaryinformationa)             | Obtém o identificador para o fluxo de informações de resumo do banco de dados do instalador.    |
+| [**MsiGetSummaryInformation**](/windows/desktop/api/Msiquery/nf-msiquery-msigetsummaryinformationa)             | Obtém o handle para o fluxo de informações resumidas do banco de dados do instalador.    |
 | [**MsiSummaryInfoGetProperty**](/windows/desktop/api/Msiquery/nf-msiquery-msisummaryinfogetpropertya)           | Obtém uma única propriedade das informações de resumo.                   |
 | [**MsiSummaryInfoGetPropertyCount**](/windows/desktop/api/Msiquery/nf-msiquery-msisummaryinfogetpropertycount) | Retorna o número de propriedades no fluxo de informações de resumo.        |
-| [**MsiSummaryInfoPersist**](/windows/desktop/api/Msiquery/nf-msiquery-msisummaryinfopersist)                   | Grava informações de resumo alteradas de volta no fluxo de informações de resumo. |
+| [**MsiSummaryInfoPersist**](/windows/desktop/api/Msiquery/nf-msiquery-msisummaryinfopersist)                   | Grava informações resumidas alteradas de volta no fluxo de informações resumidas. |
 | [**MsiSummaryInfoSetProperty**](/windows/desktop/api/Msiquery/nf-msiquery-msisummaryinfosetpropertya)           | Define uma única propriedade de informações de resumo.                            |
 
 

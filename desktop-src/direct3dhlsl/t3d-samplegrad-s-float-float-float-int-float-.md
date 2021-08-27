@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6d0bd1c47a82784b2b96a93a7f43ecd158e4782a
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: ba85c752223e3bccd9898a48b884a7149c8203ad7b7542ba22e30fadcdc33773
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "104968734"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120118036"
 ---
 # <a name="samplegradsamplegradsfloatfloatfloatintfloat-function-for-texture3d"></a>SampleGrad:: SampleGrad (S, float, float, float, int, float) function para Texture3D
 
@@ -150,7 +150,7 @@ Um valor opcional para fixe os valores de LOD de exemplo para. Por exemplo, se v
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **\_ formato dxgi**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**
 

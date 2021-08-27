@@ -12,16 +12,16 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: ef7f1bb6e7441b4e007c972f43bb45f59236ebe1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: adda7226f8d53e88e621ef18c679a170da77c216c14868647f91849f4f8d5f1a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105766987"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120129966"
 ---
 # <a name="locationdispdisplatlongreportlatitude-property"></a>Propriedade LocationDisp. DispLatLongReport. latitude
 
-\[O modelo de objeto de API de localização está disponível para uso nos sistemas operacionais especificados na seção requisitos. Ele poderá ser alterado ou ficar indisponível em versões subsequentes. Em vez disso, para acessar o local de um site, use a [API de localização geográfica do W3C](/previous-versions/windows/internet-explorer/ie-developer/samples/gg589513(v=vs.85)). Para acessar o local de um aplicativo de área de trabalho, use a API [**Windows. Devices. geolocalização**](/uwp/api/Windows.Devices.Geolocation) .\]
+\[O modelo de objeto de API de localização está disponível para uso nos sistemas operacionais especificados na seção requisitos. Ele poderá ser alterado ou ficar indisponível em versões subsequentes. Em vez disso, para acessar o local de um site, use a [API de localização geográfica do W3C](/previous-versions/windows/internet-explorer/ie-developer/samples/gg589513(v=vs.85)). Para acessar o local de um aplicativo de área de trabalho, use o [**Windows. API de dispositivos. geolocalização**](/uwp/api/Windows.Devices.Geolocation) .\]
 
 Latitude atual, em graus. A latitude está entre-90 e 90, em que o norte é positivo.
 
@@ -50,7 +50,7 @@ Para obter um exemplo de como usar essa propriedade, consulte [um exemplo de rel
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/> |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                  |
 
 

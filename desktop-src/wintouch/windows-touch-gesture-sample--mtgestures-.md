@@ -1,29 +1,29 @@
 ---
-title: Exemplo de gesto de toque do Windows (MTGestures)
-description: Esta seção descreve o exemplo de gesto de toque do Windows.
+title: Windows Exemplo de gesto de toque (MTGestures)
+description: esta seção descreve o exemplo de gesto de toque Windows.
 ms.assetid: 04166c9c-5de7-409e-9d5e-dd210a3a3f11
 keywords:
-- Windows Touch, exemplos de código
-- Windows Touch, código de exemplo
-- Toque do Windows, gestos
-- Toque do Windows, exemplos de gesto
+- Windows Toque, exemplos de código
+- Windows Toque, código de exemplo
+- Windows Toque, gestos
+- Windows Toque, exemplos de gestos
 - Amostras de gesto
 - gestos, código de exemplo
 - gestos, exemplos de código
 ms.topic: article
 ms.date: 02/18/2020
-ms.openlocfilehash: 0e01d97e844af37caeb5c33f3cb780601da4629d
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 656b269eae779cd999680e165ba071d983d18526c2e9b873c5a916d61ccdb9f1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "103640132"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120110576"
 ---
-# <a name="windows-touch-gesture-sample-mtgestures"></a>Exemplo de gesto de toque do Windows (MTGestures)
+# <a name="windows-touch-gesture-sample-mtgestures"></a>Windows Exemplo de gesto de toque (MTGestures)
 
-Esta seção descreve o exemplo de gesto de toque do Windows.
+esta seção descreve o exemplo de gesto de toque Windows.
 
-O exemplo de gesto de toque do Windows demonstra como usar mensagens de gesto para converter, girar e dimensionar uma caixa renderizada pelo Graphics Device Interface (GDI) manipulando a mensagem de [**WM_GESTURE**](wm-gesture.md) . A captura de tela a seguir mostra como a amostra parece quando está em execução.
+o exemplo de gesto de toque Windows demonstra como usar mensagens de gesto para converter, girar e dimensionar uma caixa renderizada pelo Graphics Device Interface (GDI) manipulando a mensagem [**WM_GESTURE**](wm-gesture.md) . A captura de tela a seguir mostra como a amostra parece quando está em execução.
 
 ![captura de tela mostrando o exemplo do gesto de toque do Windows quando ele está em execução, com um retângulo branco girado e com contorno preto na tela](images/mtgestures.png)
 
@@ -73,4 +73,4 @@ O código a seguir mostra como o objeto renderiza linhas diagonais em seu métod
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-[Aplicativo de gestos multitoque (C#)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTGestures/CS), [aplicativo de gestos multitoque (C++)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTGestures/cpp), exemplos de [toque do Windows](windows-touch-samples.md)
+[aplicativo de gestos multitoque (C#)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTGestures/CS), [aplicativo de gestos multitoque (C++)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTGestures/cpp), [Windows toque em exemplos](windows-touch-samples.md)

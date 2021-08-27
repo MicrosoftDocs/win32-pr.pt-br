@@ -3,7 +3,7 @@ title: Mensagem de UDM_SETPOS32 (commctrl. h)
 description: Define a posição de um controle de cima para baixo com precisão de 32 bits.
 ms.assetid: a337f2a1-0e3d-4ff4-a224-57b7f25c4bd0
 keywords:
-- Controles de UDM_SETPOS32 de mensagens do Windows
+- controles de Windows de mensagem de UDM_SETPOS32
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0153305bb535a79dbed59e8d42a7c25157c30cd1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 83d8dee48c580df72a32bb2072b00cc2dfbdf38b386825d686e8bc8510ba47e8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918772"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120088416"
 ---
 # <a name="udm_setpos32-message"></a>\_Mensagem de SETPOS32 UDM
 
@@ -39,7 +39,7 @@ Variável do tipo inteiro que especifica a nova posição para o controle acima-
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna a posição anterior.
 
@@ -49,9 +49,9 @@ Retorna a posição anterior.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

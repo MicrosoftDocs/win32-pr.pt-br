@@ -1,23 +1,23 @@
 ---
 description: Este tópico fornece um exemplo de como usar as interfaces relacionadas à geometria em um OM XPS.
 ms.assetid: 2663c6fc-301e-4765-b37c-b5e29a714ce8
-title: Objetos de geometria de OM XPS
+title: Objetos de geometria OM XPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cca767de311d2f2d49b0b194c372c0e69eaa637c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: db68127535b37e216d28423a034083e979f58c714cbbbee875bc3f1621974bfe
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105747669"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120112086"
 ---
-# <a name="xps-om-geometry-objects"></a>Objetos de geometria de OM XPS
+# <a name="xps-om-geometry-objects"></a>Objetos de geometria OM XPS
 
 Este tópico fornece um exemplo de como usar as interfaces relacionadas à geometria em um OM XPS.
 
 ## <a name="create-a-rectangular-geometry"></a>Criar uma geometria retangular
 
-O exemplo de código a seguir cria um objeto Geometry que descreve uma forma retangular fechada.
+O exemplo de código a seguir cria um objeto geometry que descreve uma forma retangular fechada.
 
 
 ```C++
@@ -92,25 +92,25 @@ O exemplo de código a seguir cria um objeto Geometry que descreve uma forma ret
 
 
 
-Para obter mais informações sobre como adicionar segmentos a uma figura de geometria, consulte os exemplos de código nos tópicos de referência do método [**IXpsOMGeometryFigure:: GetSegmentData**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomgeometryfigure-getsegmentdata) e [**IXpsOMGeometryFigure:: setsegments**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomgeometryfigure-setsegments) .
+Para obter mais informações sobre como adicionar segmentos a uma figura de geometria, consulte os exemplos de código nos tópicos de referência do método [**IXpsOMGeometryFigure::GetSegmentData**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomgeometryfigure-getsegmentdata) e [**IXpsOMGeometryFigure::SetSegments Method**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomgeometryfigure-setsegments) .
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[**Interface IXpsOMGeometry**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomgeometry)
+[**IXpsOMGeometry Interface**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomgeometry)
 </dt> <dt>
 
-[**Interface IXpsOMGeometryFigure**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomgeometryfigure)
+[**IXpsOMGeometryFigure Interface**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomgeometryfigure)
 </dt> <dt>
 
-[**Método IXpsOMGeometryFigure:: GetSegmentData**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomgeometryfigure-getsegmentdata)
+[**Método IXpsOMGeometryFigure::GetSegmentData**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomgeometryfigure-getsegmentdata)
 </dt> <dt>
 
-[**Método IXpsOMGeometryFigure:: setsegments**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomgeometryfigure-setsegments)
+[**Método IXpsOMGeometryFigure::SetSegments**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomgeometryfigure-setsegments)
 </dt> <dt>
 
-[**Interface IXpsOMGeometryFigureCollection**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomgeometryfigurecollection)
+[**IXpsOMGeometryFigureCollection Interface**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomgeometryfigurecollection)
 </dt> </dl>
 
  

@@ -3,7 +3,7 @@ title: Mensagem de CB_GETLBTEXTLEN (WinUser. h)
 description: Obtém o comprimento, em caracteres, de uma cadeia de caracteres na lista de uma caixa de combinação.
 ms.assetid: f0fe0eef-f9db-4d9f-9a42-5bb2aeae30a0
 keywords:
-- Controles de CB_GETLBTEXTLEN de mensagens do Windows
+- controles de Windows de mensagem de CB_GETLBTEXTLEN
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e42dc19b13b22f577fcc21bb32cb8810bab29be
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cb226a9012d9573e17bd88a114ebcd2b96e406a38208cc78a925bdca976cd4b6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918434"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120089146"
 ---
 # <a name="cb_getlbtextlen-message"></a>\_Mensagem de GETLBTEXTLEN CB
 
@@ -43,7 +43,7 @@ Este parâmetro não é usado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno é o comprimento da cadeia de caracteres, em **TCHAR** s, excluindo o caractere nulo de terminação. Se uma cadeia de caracteres ANSI for o número de bytes e se for uma cadeia de caracteres Unicode, esse será o número de caracteres. Em determinadas condições, esse valor pode ser, na verdade, maior que o comprimento do texto. Para obter mais informações, consulte a seção Comentários.
 
@@ -61,9 +61,9 @@ Para obter o comprimento exato do texto, use as mensagens [**do \_ WM gettext**]
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

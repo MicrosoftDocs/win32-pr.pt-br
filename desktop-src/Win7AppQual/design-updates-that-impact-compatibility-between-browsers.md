@@ -1,33 +1,33 @@
 ---
-description: Atualizações de design que afetam a compatibilidade entre navegadores
+description: Criar atualizações que impactam a compatibilidade entre navegadores
 ms.assetid: F2C13FEC-5537-4B0D-BFDB-E17A42A289CB
-title: Atualizações de design que afetam a compatibilidade entre navegadores
+title: Criar atualizações que impactam a compatibilidade entre navegadores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b7b47f7f8a83d7e03dcefec083cbbe962dcd3c12b250d224c2ef1762f749495b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7bc0600b0c0e79003a86c5b3777f7f569d8c73ef
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119795895"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122625922"
 ---
-# <a name="design-updates-that-impact-compatibility-between-browsers"></a>Atualizações de design que afetam a compatibilidade entre navegadores
+# <a name="design-updates-that-impact-compatibility-between-browsers"></a>Criar atualizações que impactam a compatibilidade entre navegadores
 
-Esta seção e a tabela a seguir mostram as quatro áreas principais de compatibilidade (não em ordem de incidência ou classificação de prioridade).
+Esta seção e a tabela a seguir mostram as quatro principais áreas de compatibilidade (não em ordem de reação ou classificação de prioridade).
 
 
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
 <th></th>
 <th>Alterações do Internet Explorer 6 para o Internet Explorer 7</th>
-<th>Alterações do Internet Explorer 7 para o Internet Explorer 8</th>
+<th>Alterações de Internet Explorer 7 para Internet Explorer 8</th>
 </tr>
 </thead>
 <tbody>
@@ -60,11 +60,11 @@ Esta seção e a tabela a seguir mostram as quatro áreas principais de compatib
 <td><ul>
 <li>Aperfeiçoamentos de HTTPS</li>
 <li>Script mais seguro</li>
-<li>modo protegido (Windows Vista e versões posteriores)</li>
+<li>Modo Protegido (Windows Vista e versões posteriores)</li>
 </ul></td>
 <td><ul>
 <li>Melhor proteção contra malware</li>
-<li>DEP/NX & filtro XSS ativado por padrão</li>
+<li>Filtro XSS de & DEP/NX por padrão</li>
 <li>Modo misto HTTP/HTTPS</li>
 <li>AJAX mais seguro</li>
 </ul></td>
@@ -73,7 +73,7 @@ Esta seção e a tabela a seguir mostram as quatro áreas principais de compatib
 <td><a href="architecture.md">Arquitetura</a></td>
 
 <td><ul>
-<li>Internet Explorer livremente acoplado</li>
+<li>Loosely coupled Internet Explorer</li>
 </ul></td>
 </tr>
 </tbody>

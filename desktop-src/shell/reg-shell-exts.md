@@ -4,12 +4,12 @@ ms.assetid: e4b98c18-746b-4909-8821-f25de9d15373
 title: Registrando manipuladores de extensão do Shell
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8ca50bfaff984884b74ecc8572d4af9d96c55d0c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ec883f6e843bdfbf663108c0acda123d786262916f4a347d9433e7fd5f77baca
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104968063"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120111206"
 ---
 # <a name="registering-shell-extension-handlers"></a>Registrando manipuladores de extensão do Shell
 
@@ -17,9 +17,9 @@ Um objeto de manipulador de extensão de Shell deve ser registrado antes que o S
 
 Sempre que você criar ou alterar um manipulador de extensão de Shell, será importante notificar o sistema de que você fez uma alteração. Faça isso chamando [**SHChangeNotify**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shchangenotify), especificando o evento **SHCNE \_ assocchanged** . Se você não chamar **SHChangeNotify**, a alteração poderá não ser reconhecida até que o sistema seja reinicializado.
 
-Há alguns fatores adicionais que se aplicam aos sistemas Windows 2000. Para obter detalhes, consulte a seção [Registrando manipuladores de extensão de Shell em sistemas Windows 2000](#registering-shell-extension-handlers) .
+há alguns fatores adicionais que se aplicam aos sistemas Windows 2000. para obter detalhes, consulte a seção [registrando manipuladores de extensão de Shell em Windows de sistemas 2000](#registering-shell-extension-handlers) .
 
-Assim como com todos os objetos COM (Component Object Model), você deve criar um GUID para o manipulador usando uma ferramenta como Guidgen.exe, que é fornecida com o SDK (Software Development Kit) do Windows. Crie uma subchave em **HKEY \_ classes \_ raiz** \\ **CLSID** cujo nome é a forma de cadeia de caracteres desse GUID. Como os manipuladores de extensão do shell são servidores em processo, você também deve criar uma subchave **InprocServer32** na subchave GUID com o valor (padrão) definido como o caminho da dll do manipulador. Use o modelo de Threading Apartment. Um exemplo é mostrado aqui:
+assim como com todos os objetos com (Component Object Model), você deve criar um GUID para o manipulador usando uma ferramenta como Guidgen.exe, que é fornecida com o Software Development Kit (SDK) do Windows. Crie uma subchave em **HKEY \_ classes \_ raiz** \\ **CLSID** cujo nome é a forma de cadeia de caracteres desse GUID. Como os manipuladores de extensão do shell são servidores em processo, você também deve criar uma subchave **InprocServer32** na subchave GUID com o valor (padrão) definido como o caminho da dll do manipulador. Use o modelo de Threading Apartment. Um exemplo é mostrado aqui:
 
 ```
 HKEY_CLASSES_ROOT
@@ -108,23 +108,23 @@ A tabela a seguir fornece as várias subchaves da **\_ \_ raiz de classes hKey**
 
 
 
-| Subchave                    | Description                                                          | Possíveis manipuladores                                |
+| Subchave                    | Descrição                                                          | Possíveis manipuladores                                |
 |---------------------------|----------------------------------------------------------------------|--------------------------------------------------|
-| **\** _                    | Todos os arquivos                                                            | Menu de atalho, folha de propriedades, verbos (veja abaixo) |
-| _ *AllFileSystemObjects**  | Todos os arquivos e pastas de arquivos                                           | Menu de atalho, folha de propriedades, verbos             |
-| **Pasta**                | Todas as pastas                                                          | Menu de atalho, folha de propriedades, verbos             |
-| **Active**             | Pastas de arquivos                                                         | Menu de atalho, folha de propriedades, verbos             |
-| **Plano de fundo do diretório \\** | Plano de fundo da pasta de arquivos                                               | Somente menu de atalho                               |
-| **DesktopBackground**     | Plano de fundo da área de trabalho (Windows 7 e superior)                            | Menu de atalho, verbos                             |
-| **Unidade**                 | Todas as unidades em MyComputer, como "C: \\ "                             | Menu de atalho, folha de propriedades, verbos             |
-| **Rede**               | Rede inteira (em meus locais de rede)                             | Menu de atalho, folha de propriedades, verbos             |
-| **Tipo de rede \\\\\#**     | Todos os objetos do tipo \# (veja abaixo)                                   | Menu de atalho, folha de propriedades, verbos             |
-| **NetShare**              | Todos os compartilhamentos de rede                                                   | Menu de atalho, folha de propriedades, verbos             |
-| **NetServer**             | Todos os servidores de rede                                                  | Menu de atalho, folha de propriedades, verbos             |
-| *\_nome do provedor de rede \_* | Todos os objetos fornecidos pelo "*nome do \_ provedor \_ de rede*" do provedor de rede | Menu de atalho, folha de propriedades, verbos             |
-| **Impressoras**              | Todas as impressoras                                                         | Menu de atalho, folha de propriedades                    |
-| **AudioCD**               | CD de áudio na unidade de CD                                                 | Somente verbos                                       |
-| **DVD**                   | Unidade de DVD (Windows 2000)                                             | Menu de atalho, folha de propriedades, verbos             |
+| **\***                    | Todos os arquivos                                                            | Menu de atalho, folha de propriedades, verbos (veja abaixo) |
+| **AllFileSystemObjects**  | Todos os arquivos e pastas de arquivos                                           | Menu de Atalho, Folha de Propriedades, Verbos             |
+| **Pasta**                | Todas as pastas                                                          | Menu de Atalho, Folha de Propriedades, Verbos             |
+| **Diretório**             | Pastas de arquivo                                                         | Menu de Atalho, Folha de Propriedades, Verbos             |
+| **Plano de \\ fundo do diretório** | Plano de fundo da pasta de arquivos                                               | Somente menu de atalho                               |
+| **DesktopBackground**     | Tela de fundo da área de trabalho (Windows 7 e superior)                            | Menu de atalho, verbos                             |
+| **Unidade**                 | Todas as unidades no MyComputer, como "C: \\ "                             | Menu de Atalho, Folha de Propriedades, Verbos             |
+| **Rede**               | Rede inteira (em Meus Locais de Rede)                             | Menu de Atalho, Folha de Propriedades, Verbos             |
+| **Tipo de \\ rede\\\#**     | Todos os objetos do \# tipo (veja abaixo)                                   | Menu de Atalho, Folha de Propriedades, Verbos             |
+| **Netshare**              | Todos os compartilhamentos de rede                                                   | Menu de Atalho, Folha de Propriedades, Verbos             |
+| **NetServer**             | Todos os servidores de rede                                                  | Menu de Atalho, Folha de Propriedades, Verbos             |
+| *nome \_ do provedor de \_ rede* | Todos os objetos fornecidos pelo provedor de rede "*nome do provedor de \_ \_ rede*" | Menu de Atalho, Folha de Propriedades, Verbos             |
+| **Impressoras**              | Todas as impressoras                                                         | Menu de Atalho, Folha de Propriedades                    |
+| **Audiocd**               | CD de áudio na unidade de CD                                                 | Somente verbos                                       |
+| **Dvd**                   | Unidade de DVD (Windows 2000)                                             | Menu de Atalho, Folha de Propriedades, Verbos             |
 
 
 
@@ -132,16 +132,16 @@ A tabela a seguir fornece as várias subchaves da **\_ \_ raiz de classes hKey**
 
 ### <a name="notes"></a>Observações
 
--   O menu de atalho de segundo plano da pasta de arquivo é acessado clicando com o botão direito do mouse em uma pasta de arquivo, mas não em qualquer conteúdo da pasta.
--   "Verbos" são comandos especiais registrados sob o verbo do Shell de subchave do **HKEY \_ classes \_ raiz** \\  \\  \\ .
--   Para o tipo de **rede** \\  \\ **\#** , " \# " é um código de tipo de provedor de rede em decimal. O código do tipo de provedor de rede é a palavra alta de um tipo de rede. A lista de tipos de rede é fornecida no arquivo de cabeçalho Winnetwk. h (WNNC \_ net \_ \* Values). Por exemplo, WNNC \_ net \_ Shiva é 0x00330000, portanto, a subchave de tipo correspondente seria tipo de rede **\_ \_ raiz de classes hKey** \\  \\  \\ **51**.
--   "*\_ \_ nome do provedor de rede*" é um nome de provedor de rede, conforme especificado por [**WNetGetProviderName**](/windows/win32/api/winnetwk/nf-winnetwk-wnetgetprovidernamea), com os espaços convertidos em sublinhados. Por exemplo, se o provedor de rede de rede da Microsoft estiver instalado, o nome do provedor será "rede do Microsoft Windows" e o *\_ \_ nome do provedor de rede* correspondente será a **\_ \_ rede do Microsoft Windows**.
+-   O menu de atalho em segundo plano da pasta de arquivos é acessado clicando com o botão direito do mouse em uma pasta de arquivos, mas não sobre qualquer conteúdo da pasta.
+-   "Verbos" são comandos especiais registrados em **HKEY \_ CLASSES \_ ROOT** \\ *Subkey* \\  \\ **Shell Verb**.
+-   Para **Tipo** \\ **de Rede**, " " é um código de tipo de provedor de rede em \\ **\#** \# decimal. O código de tipo de provedor de rede é a palavra alta de um tipo de rede. A lista de tipos de rede é dada no arquivo de título Winnetwk.h (valores WNNC \_ \_ \* NET). Por exemplo, WNNC NET LTD é 0x00330000, portanto, a sub-chave de tipo correspondente \_ \_ seria **HKEY CLASSES ROOT \_ \_ Network** \\  \\ **Type** \\ **51**.
+-   "*nome \_ do \_ provedor* de rede " é um nome de provedor de rede conforme especificado por [**WNetGetProviderName**](/windows/win32/api/winnetwk/nf-winnetwk-wnetgetprovidernamea), com os espaços convertidos em sublinhados. Por exemplo, se o provedor de rede de Rede da Microsoft estiver instalado, seu nome de provedor será "Microsoft Windows Network" e o nome do provedor de rede correspondente será **Microsoft \_ Windows \_ Network**. *\_ \_*
 
 ## <a name="example-of-an-extension-handler-registration"></a>Exemplo de um registro de manipulador de extensão
 
-Para habilitar um manipulador específico, crie uma subchave na subchave do tipo de manipulador de extensão com o nome do manipulador. O shell não usa o nome do manipulador, mas ele deve ser diferente de todos os outros nomes nessa subchave de tipo. Defina o valor padrão da subchave Name para a forma de cadeia de caracteres do GUID do manipulador.
+Para habilitar um manipulador específico, crie uma sub-chave na sub-chave de tipo de manipulador de extensão com o nome do manipulador. O Shell não usa o nome do manipulador, mas deve ser diferente de todos os outros nomes nessa sub-chave de tipo. De definir o valor padrão da sub-chave de nome para a forma de cadeia de caracteres do GUID do manipulador.
 
-O exemplo a seguir ilustra as entradas do registro que habilitam manipuladores de extensão de folha de propriedades e de menu de atalho, usando um tipo de arquivo. MYP de exemplo.
+O exemplo a seguir ilustra as entradas do Registro que habilitam manipuladores de extensão de menu de atalho e folha de propriedades, usando um tipo de arquivo .myp de exemplo.
 
 ```
 HKEY_CLASSES_ROOT
@@ -169,14 +169,14 @@ HKEY_CLASSES_ROOT
 
 ### <a name="registering-shell-extension-handlers"></a>Registrando manipuladores de extensão do Shell
 
-O procedimento de registro discutido nesta seção deve ser seguido para todos os sistemas Windows. No entanto, com os sistemas posteriores, uma etapa adicional pode ser necessária. Como essas versões posteriores do Windows são projetadas para serem usadas em um ambiente gerenciado, o acesso ao registro pode ser administrativamente restrito, exigindo uma abordagem um pouco diferente da instalação do que a descrita na seção anterior.
+O procedimento de registro discutido nesta seção deve ser seguido para todos os Windows sistemas. No entanto, com sistemas posteriores, uma etapa adicional pode ser necessária. Como essas versões posteriores do Windows são projetadas para serem usadas em um ambiente gerenciado, o acesso ao Registro pode ser restrito administrativamente, exigindo uma abordagem um pouco diferente da descrita na seção anterior.
 
 > [!Note]  
-> Os programas de instalação geralmente não devem gravar diretamente no registro. Em vez disso, a instalação deve ser realizada com Windows Installer pacotes. Essas ferramentas garantem que o software seja executado bem e fornece acesso a recursos como registro de classe por usuário.
+> Os programas de instalação geralmente não devem gravar diretamente no Registro. Em vez disso, a instalação deve ser realizada com Windows do Instalador. Essas ferramentas garantem que o software seja executado bem e fornece acesso a recursos como registro de classe por usuário.
 
  
 
-Os manipuladores de extensão do shell são executados no processo do Shell. Como é um processo do sistema, o administrador de um sistema pode limitar os manipuladores de extensão do Shell àqueles em uma lista aprovada definindo o valor de EnforceShellExtensionSecurity da chave do **Gerenciador** como 1, conforme mostrado aqui:
+Os manipuladores de extensão do Shell são executados no processo do Shell. Como se trata de um processo do sistema, o administrador de um sistema pode limitar manipuladores de extensão do Shell aos que estão em uma lista aprovada definindo o valor EnforceShellExtensionSecurity da chave **do Explorer** como 1, conforme mostrado aqui:
 
 ```
 HKEY_CURRENT_USER
@@ -189,7 +189,7 @@ HKEY_CURRENT_USER
                      EnforceShellExtensionSecurity = 1
 ```
 
-Para posicionar um manipulador de extensão de Shell na lista aprovada, crie um valor **reg \_ sz** cujo nome seja a forma de cadeia de caracteres do GUID do manipulador sob a subchave **aprovada** .
+Para colocar um manipulador de extensão do Shell na lista aprovada, crie um valor **REG \_ SZ** cujo nome é a forma de cadeia de caracteres do GUID do manipulador na **sub-chave** Aprovado.
 
 ```
 HKEY_LOCAL_MACHINE
@@ -201,7 +201,7 @@ HKEY_LOCAL_MACHINE
                   Approved
 ```
 
-Por exemplo, o exemplo a seguir adiciona os manipuladores *myCommand* e *MyPropSheet* à lista aprovada.
+Por exemplo, o exemplo a seguir adiciona os *manipuladores MyCommand* e *MyPropSheet* à lista aprovada.
 
 ```
 HKEY_LOCAL_MACHINE
@@ -215,9 +215,9 @@ HKEY_LOCAL_MACHINE
                      {11111111-2222-3333-4444-555555555555} = MyPropSheet
 ```
 
-O shell não usa o valor atribuído ao GUID, mas deve ser definido para facilitar a inspeção do registro.
+O Shell não usa o valor atribuído ao GUID, mas deve ser definido para facilitar a inspeção do Registro.
 
-Seu aplicativo de instalação poderá adicionar valores à subchave **aprovada** somente se a pessoa que está instalando o aplicativo tiver privilégios suficientes. Se a tentativa de adicionar um manipulador de extensão falhar, você deverá informar ao usuário que privilégios administrativos são necessários para instalar totalmente o aplicativo. Se o manipulador for essencial para o aplicativo, você deverá falhar a instalação e notificar o usuário para entrar em contato com um administrador.
+Seu aplicativo de instalação poderá adicionar valores **à** sub-chave Aprovado somente se a pessoa que está instalando o aplicativo tiver privilégios suficientes. Se a tentativa de adicionar um manipulador de extensão falhar, você deverá informar ao usuário que são necessários privilégios administrativos para instalar totalmente o aplicativo. Se o manipulador for essencial para o aplicativo, você deverá falhar na instalação e notificar o usuário para entrar em contato com um administrador.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

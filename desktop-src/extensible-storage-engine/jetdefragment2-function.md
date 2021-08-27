@@ -20,23 +20,23 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4bcde8d55032d2e07466668b5a4d96b9a447d843
-ms.sourcegitcommit: 35baf9ba19918a38c4ca8714f88c004af0c6f518
+ms.openlocfilehash: 3d31b6203de9feb9301b3c08c01bee84c666a9e9
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107838800"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122465833"
 ---
 # <a name="jetdefragment2-function"></a>Função JetDefragment2
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jetdefragment2-function"></a>Função JetDefragment2
 
 A função **JetDefragment2** inicia e interrompe as tarefas de desfragmentação do banco de dados, o que melhora a organização da data em um banco de dado, com um parâmetro de retorno de chamada disponível para relatar o progresso da desfragmentação. Isso é feito para limitar o crescimento do banco de dados usando a alocação de disco existente com mais eficiência no banco de dados. Ele também pode reduzir o conjunto de trabalho, garantindo que os dados sejam mais bem compactados. Por fim, ele pode melhorar o desempenho do aplicativo acelerando as operações comuns por meio de uma melhor organização de dados.
 
-**Windows XP:** o **JetDefragment2** é introduzido no Windows XP.  
+**Windows xp:** o **JetDefragment2** é introduzido no Windows XP.  
 
 **JetDefragment2** também contém um parâmetro de função de retorno de chamada que é usado para relatar o progresso do processo de desfragmentação.
 
@@ -107,164 +107,58 @@ Função de retorno de chamada que a desfragmentação chama regularmente para r
 
 Um grupo de bits que especifica zero ou mais das opções a seguir.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Valor</p></th>
-<th><p>Significado</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_bitDefragmentAvailSpaceTreesOnly</p></td>
-<td><p>Essa opção é usada para desfragmentar a parte de espaço disponível da alocação de espaço do banco de dados ESE. O espaço do banco de dados é dividido em dois tipos, espaço de propriedade e espaço disponível. O espaço de propriedade é alocado para uma tabela ou índice enquanto o espaço disponível está pronto para uso dentro da tabela ou índice, respectivamente. O espaço disponível é muito mais dinâmico no comportamento e requer a desfragmentação online mais do que o espaço de propriedade ou os dados de índice ou de tabela.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitDefragmentBatchStart</p></td>
-<td><p>Essa opção é usada para iniciar uma nova tarefa de desfragmentação.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_bitDefragmentBatchStop</p></td>
-<td><p>Essa opção é usada para interromper uma tarefa de desfragmentação iniciada existente.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitDefragmentBTree</p></td>
-<td><p>Essa opção é usada para desfragmentar uma árvore B, especificada por szTableName.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_bitDefragmentBTreeBatch</p></td>
-<td><p>Essa opção é usada para chamar OLD2 em todo o banco de dados.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Valor</p> | <p>Significado</p> | 
+|--------------|----------------|
+| <p>JET_bitDefragmentAvailSpaceTreesOnly</p> | <p>Essa opção é usada para desfragmentar a parte de espaço disponível da alocação de espaço do banco de dados ESE. O espaço do banco de dados é dividido em dois tipos, espaço de propriedade e espaço disponível. O espaço de propriedade é alocado para uma tabela ou índice enquanto o espaço disponível está pronto para uso dentro da tabela ou índice, respectivamente. O espaço disponível é muito mais dinâmico no comportamento e requer a desfragmentação online mais do que o espaço de propriedade ou os dados de índice ou de tabela.</p> | 
+| <p>JET_bitDefragmentBatchStart</p> | <p>Essa opção é usada para iniciar uma nova tarefa de desfragmentação.</p> | 
+| <p>JET_bitDefragmentBatchStop</p> | <p>Essa opção é usada para interromper uma tarefa de desfragmentação iniciada existente.</p> | 
+| <p>JET_bitDefragmentBTree</p> | <p>Essa opção é usada para desfragmentar uma árvore B, especificada por szTableName.</p> | 
+| <p>JET_bitDefragmentBTreeBatch</p> | <p>Essa opção é usada para chamar OLD2 em todo o banco de dados.</p> | 
+
 
 
 ### <a name="return-value"></a>Valor Retornado
 
-Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. Para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
-
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Código de retorno</p></th>
-<th><p>Descrição</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>A operação foi concluída com sucesso.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errClientRequestToStopJetService</p></td>
-<td><p>Não é possível concluir a operação porque toda a atividade na instância associada à sessão foi interrompida como resultado de uma chamada para <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errDatabaseFileReadOnly</p></td>
-<td><p>O banco de dados escolhido para desfragmentação é somente leitura e não pode ser atualizado de nenhuma forma, incluindo a desfragmentação.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errDistributedTransactionAlreadyPreparedToCommit</p></td>
-<td><p>A sessão fornecida está no estado preparado para confirmar e não pode iniciar novas atualizações até que a transação atual seja confirmada ou revertida.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInstanceUnavailable</p></td>
-<td><p>Não é possível concluir a operação porque a instância associada à sessão encontrou um erro fatal que exige que o acesso a todos os dados seja revogado para proteger a integridade desses dados. Esse erro só será retornado pelo Windows XP e por versões posteriores.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errInvalidDatabaseId</p></td>
-<td><p>A ID de banco de dados fornecida não corresponde a um banco de dados conhecido na instância.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errNotInitialized</p></td>
-<td><p>Não é possível concluir a operação porque a instância associada à sessão ainda não foi inicializada.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errRestoreInProgress</p></td>
-<td><p>Não é possível concluir a operação porque uma operação de restauração está em andamento na instância associada à sessão.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errSessionSharingViolation</p></td>
-<td><p>A mesma sessão não pode ser usada para mais de um thread ao mesmo tempo. Esse erro só será retornado pelo Windows XP e por versões posteriores.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errTermInProgress</p></td>
-<td><p>Não é possível concluir a operação porque a instância associada à sessão está sendo desligada.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errTransReadOnly</p></td>
-<td><p>A sessão fornecida tem somente privilégios somente leitura e não pode iniciar uma tarefa que possa executar uma atualização, incluindo a desfragmentação.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errVersionStoreOutOfMemory</p></td>
-<td><p>Esse erro ocorrerá quando o tamanho configurado do repositório de versão for insuficiente para manter todas as atualizações pendentes.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_wrnDefragAlreadyRunning</p></td>
-<td><p>A opção JET_bitDefragmentBatchStart foi aprovada, mas uma tarefa de desfragmentação já está executando a desfragmentação no banco de dados especificado.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_wrnDefragNotRunning</p></td>
-<td><p>A opção JET_bitDefragmentBatchStop foi aprovada, mas nenhuma tarefa de desfragmentação está em execução no momento.</p></td>
-</tr>
-</tbody>
-</table>
+Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de Armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
 
 
-Em caso de sucesso, a ação solicitada de iniciar uma tarefa de desfragmentação para determinados dados com determinadas opções é executada ou a ação de parar uma tarefa de desfragmentação existente é executada.
+| <p>Código de retorno</p> | <p>Descrição</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>A operação foi concluída com sucesso.</p> | 
+| <p>JET_errClientRequestToStopJetService</p> | <p>Não é possível concluir a operação porque toda a atividade na instância associada à sessão foi interrompida como resultado de uma chamada para <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p> | 
+| <p>JET_errDatabaseFileReadOnly</p> | <p>O banco de dados escolhido para desfragmentação é somente leitura e não pode ser atualizado de nenhuma forma, incluindo a desfragmentação.</p> | 
+| <p>JET_errDistributedTransactionAlreadyPreparedToCommit</p> | <p>A sessão fornecida está no estado preparado para confirmar e não pode iniciar novas atualizações até que a transação atual seja confirmada ou revertida.</p> | 
+| <p>JET_errInstanceUnavailable</p> | <p>Não é possível concluir a operação porque a instância associada à sessão encontrou um erro fatal que exige que o acesso a todos os dados seja revogado para proteger a integridade desses dados. esse erro só será retornado pelo Windows XP e versões posteriores.</p> | 
+| <p>JET_errInvalidDatabaseId</p> | <p>A ID de banco de dados fornecida não corresponde a um banco de dados conhecido na instância.</p> | 
+| <p>JET_errNotInitialized</p> | <p>Não é possível concluir a operação porque a instância associada à sessão ainda não foi inicializada.</p> | 
+| <p>JET_errRestoreInProgress</p> | <p>Não é possível concluir a operação porque uma operação de restauração está em andamento na instância associada à sessão.</p> | 
+| <p>JET_errSessionSharingViolation</p> | <p>A mesma sessão não pode ser usada para mais de um thread ao mesmo tempo. esse erro só será retornado pelo Windows XP e versões posteriores.</p> | 
+| <p>JET_errTermInProgress</p> | <p>Não é possível concluir a operação porque a instância associada à sessão está sendo desligada.</p> | 
+| <p>JET_errTransReadOnly</p> | <p>A sessão fornecida tem somente privilégios somente leitura e não pode iniciar uma tarefa que possa executar uma atualização, incluindo a desfragmentação.</p> | 
+| <p>JET_errVersionStoreOutOfMemory</p> | <p>Esse erro ocorrerá quando o tamanho configurado do repositório de versão for insuficiente para manter todas as atualizações pendentes.</p> | 
+| <p>JET_wrnDefragAlreadyRunning</p> | <p>A opção JET_bitDefragmentBatchStart foi aprovada, mas uma tarefa de desfragmentação já está executando a desfragmentação no banco de dados especificado.</p> | 
+| <p>JET_wrnDefragNotRunning</p> | <p>A JET_bitDefragmentBatchStop foi passada, mas nenhuma tarefa de desfragmentação está em execução no momento.</p> | 
+
+
+
+Em caso de êxito, a ação solicitada de iniciar uma tarefa de desfragmentação para determinados dados com determinadas opções é executada ou a ação de interromper uma tarefa de desfragmentação existente é executada.
 
 Em caso de falha, a ação solicitada de iniciar ou parar um trabalho de desfragmentação online não é feita. Nenhum outro efeito colateral ocorre.
 
 #### <a name="remarks"></a>Comentários
 
-A desfragmentação online é controlada por uma configuração de parâmetro, bem como por essa API. O valor do parâmetro do sistema padrão é JET_OnlineDefragAll, o que significa que a desfragmentação está habilitada para todas as estruturas de dados com suporte. No entanto, usando o [JetSetSystemParameter](./jetsetsystemparameter-function.md), é possível desabilitar a desfragmentação online ou habilitá-la seletivamente somente para árvores de espaço de banco de dados, somente para bancos, somente para arquivos de streaming ou qualquer combinação dessas opções. Se a configuração do sistema para desfragmentação online for para uma configuração obsoleta, **JetDefragment2** tratará a configuração como JET_OnlineDefragAll.
+A desfragmentação online é controlada por uma configuração de parâmetro, bem como por essa API. O valor padrão do parâmetro do sistema é JET_OnlineDefragAll, o que significa que a desfragmentação está habilitada para todas as estruturas de dados com suporte. No entanto, usando [JetSetSystemParameter](./jetsetsystemparameter-function.md), é possível desabilitar a desfragmentação online ou habilita-la seletivamente somente para árvores de espaço de banco de dados, somente bancos de dados, arquivos de streaming ou qualquer combinação dessas opções. Se a configuração do sistema para desfragmentação online for para uma configuração obsoleta, **JetDefragment2** tratará a configuração como JET_OnlineDefragAll.
 
-Pode haver, no máximo, uma tarefa em execução para cada banco de dados. A tarefa é executada como um thread no processo que hospeda o ESE.
+Pode haver no máximo uma tarefa em execução para cada banco de dados. A tarefa é executado como um thread no processo que hospeda o ESE.
 
-A sessão usada para iniciar a tarefa de desfragmentação online pode ser usada posteriormente para operações de banco de dados enquanto a tarefa de desfragmentação continuar, pois a tarefa de desfragmentação aloca sua própria sessão. A sessão fornecida é usada apenas para verificar as permissões associadas à sessão de início da tarefa e não é realmente usada para as operações de desfragmentação propriamente ditas.
+A sessão usada para iniciar a tarefa de desfragmentação online pode ser usada posteriormente para operações de banco de dados enquanto a tarefa de desfragmentação continua, porque a tarefa de desfragmentação aloca sua própria sessão. A sessão determinada só é usada para verificar as permissões associadas à sessão de início da tarefa e não é realmente usada para as próprias operações de desfragmentação.
 
 #### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista ou o Windows XP.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008 ou o Windows Server 2003.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Biblioteca</strong></p></td>
-<td><p>Use ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Requer ESENT.dll.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Unicode</strong></p></td>
-<td><p>Implementado como <strong>JetDefragment2W</strong> (Unicode) e <strong>JetDefragment2A</strong> (ANSI).</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requer Windows Vista ou Windows XP.</p> | | <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008 ou Windows Server 2003.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | | <p><strong>Biblioteca</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | | <p><strong>Unicode</strong></p> | <p>Implementado como <strong>JetDefragment2W</strong> (Unicode) e <strong>JetDefragment2A</strong> (ANSI).</p> | 
+
 
 
 #### <a name="see-also"></a>Consulte Também

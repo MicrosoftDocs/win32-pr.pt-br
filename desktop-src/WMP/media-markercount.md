@@ -1,9 +1,9 @@
 ---
-title: Media. markerCount
+title: Media.markerCount
 description: A propriedade markerCount recupera o número de marcadores no item de mídia.
 ms.assetid: 48313395-b225-4008-b0e8-82fa22d6aaef
 keywords:
-- Media. markerCount Windows Media Player
+- Media.markerCount Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,36 +14,36 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c97a874211c0c00ebf9f242887d4314ec490b552
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 00206991f81c6a445648a063a37bcc45bf91f647b60317772478142eefd1b20e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105763470"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120123346"
 ---
-# <a name="mediamarkercount"></a>Media. markerCount
+# <a name="mediamarkercount"></a>Media.markerCount
 
-A propriedade **markerCount** recupera o número de marcadores no item de mídia.
+A **propriedade markerCount** recupera o número de marcadores no item de mídia.
 
 ## <a name="syntax"></a>Syntax
 
-*Player*. *currentMedia*. **markerCount**
+*player*. *currentMedia*. **markerCount**
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Essa propriedade é um **número** somente leitura (**Long**) que especifica o número de marcadores no arquivo.
+Essa propriedade é um Número somente **leitura** (**long**) que especifica o número de marcadores no arquivo.
 
 ## <a name="remarks"></a>Comentários
 
-Essa propriedade retornará zero se um arquivo não tiver marcadores ou se o item de mídia não for o mesmo que o *Player*. **currentMedia**.
+Essa propriedade retornará zero se um arquivo não tiver marcadores ou se o item de mídia não for igual ao *Player*. **currentMedia**.
 
 Os números de marcador começam em 1.
 
-Para recuperar o valor dessa propriedade, é necessário ter acesso de leitura à biblioteca. Para obter mais informações, consulte [acesso à biblioteca](library-access.md).
+Para recuperar o valor dessa propriedade, é necessário ter acesso de leitura à biblioteca. Para obter mais informações, consulte [Acesso à biblioteca.](library-access.md)
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de JScript a seguir usa *mídia*. **markerCount** para recuperar o número de marcadores no item de mídia atual. Esse valor é usado como o limite superior para uma estrutura de loop, que itera na lista de marcadores para recuperar cada nome de marcador. Um elemento de TEXTAREA HTML chamado MNAMES exibe os nomes dos marcadores no item de mídia atual. O objeto de **jogador** foi criado com ID = "Player".
+O exemplo JScript a seguir usa *Mídia*. **markerCount** para recuperar o número de marcadores no item de mídia atual. Esse valor é usado como o limite superior para uma estrutura de looping, que itera pela lista de marcadores para recuperar cada nome de marcador. Um elemento HTML TEXTAREA chamado MNAMES exibe os nomes dos marcadores no item de mídia atual. O **objeto** Player foi criado com ID = "Player".
 
 
 ```JScript
@@ -71,7 +71,7 @@ for (var i = 1; i < mcount + 1; i++){
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior.<br/>                              |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -83,13 +83,13 @@ for (var i = 1; i < mcount + 1; i++){
 [**Objeto de mídia**](media-object.md)
 </dt> <dt>
 
-[**Player. currentMedia**](player-currentmedia.md)
+[**Player.currentMedia**](player-currentmedia.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Configurações.mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Configurações.requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

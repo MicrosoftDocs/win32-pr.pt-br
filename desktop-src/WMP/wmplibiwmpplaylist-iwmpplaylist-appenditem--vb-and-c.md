@@ -3,9 +3,9 @@ title: Método IWMPPlaylist appendItem
 description: O método appendItem adiciona um item de mídia ao final de uma lista de reprodução.
 ms.assetid: d659298b-ec4e-4771-8e9b-8cfd7b3e0eb2
 keywords:
-- método appendItem Windows Media Player
+- Windows Media Player do método appendItem
 - método appendItem Windows Media Player, interface IWMPPlaylist
-- Interface IWMPPlaylist Windows Media Player, método appendItem
+- Windows Media Player de interface IWMPPlaylist, método appendItem
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a94e1b515ec6301830af2de06bae32602bdf66e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: de67c7bbd3448e4b4fcdb562b2b10ace68ed7a2c92020650c79fdd90b05366b2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105765277"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120098696"
 ---
 # <a name="iwmpplaylistappenditem-method"></a>Método IWMPPlaylist:: appendItem
 
@@ -60,7 +60,7 @@ Uma interface **WMPLib. IWMPMedia** que representa o item de mídia a ser anexad
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
