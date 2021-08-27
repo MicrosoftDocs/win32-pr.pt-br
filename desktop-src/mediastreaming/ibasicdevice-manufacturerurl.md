@@ -3,9 +3,9 @@ title: Método IBasicDevice ManufacturerUrl
 description: Recupera a URL do fabricante do dispositivo.
 ms.assetid: E8372D15-D8B5-49E4-950A-96B4A88B0450
 keywords:
-- API de streaming de mídia do método ManufacturerUrl
-- API de streaming de mídia do método ManufacturerUrl, interface IBasicDevice
-- API de streaming de mídia da interface IBasicDevice, método ManufacturerUrl
+- API de Streaming de Mídia do método ManufacturerUrl
+- Api de Streaming de Mídia do método ManufacturerUrl, interface IBasicDevice
+- API de Streaming de Mídia da interface IBasicDevice, método ManufacturerUrl
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7e41ca83c98507c65ead8d1faf2922ee84b45649
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 306b4c194d7354b071d4daaf223a17f977b38b44243adaef856f9acffbf49c83
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104006484"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118972335"
 ---
-# <a name="ibasicdevicemanufacturerurl-method"></a>Método IBasicDevice:: ManufacturerUrl
+# <a name="ibasicdevicemanufacturerurl-method"></a>Método IBasicDevice::ManufacturerUrl
 
 Recupera a URL do fabricante do dispositivo.
 
@@ -41,16 +41,16 @@ HRESULT ManufacturerUrl(
 
 <dl> <dt>
 
-*valor* \[ do fora\]
+*value* \[ out\]
 </dt> <dd>
 
 Recebe um ponteiro para a URL do fabricante do dispositivo.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 

@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 25171d36a9d360f7c8eb77211c580c4f7676618f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b7ab3188425decca614ae104989fdc2f07930ac0de463e492be630a3fb54556e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105793856"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119027574"
 ---
 # <a name="iwmdrmlicensemanagementmonitorlicenseacquisition-method"></a>Método IWMDRMLicenseManagement:: MonitorLicenseAcquisition
 
@@ -74,7 +74,7 @@ Ponteiro que recebe um ponteiro para a interface **IUnknown** de um objeto que i
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 

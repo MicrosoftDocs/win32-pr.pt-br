@@ -1,7 +1,7 @@
 ---
-description: 'Método CRenderedInputPin. active – o método ativo notifica o PIN de que o filtro está ativo agora. Esse método substitui o método CBasePin:: active.'
+description: Método CRenderedInputPin.Active – o método Ativo notifica o pino de que o filtro agora está ativo. Esse método substitui o método CBasePin::Active.
 ms.assetid: e98ca947-df2f-41a7-9785-b35bd1dde1e6
-title: Método CRenderedInputPin. Active (Amextra. h)
+title: Método CRenderedInputPin.Active (Amextra.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d8c9b06f41454d2cb9a7ac35dd7e8f8b335632f9
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 0f7fce3525feb2c4ff50a93423697f80db6f1285ec354ac01b5f59e7bf9b7ada
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108098924"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118953895"
 ---
-# <a name="crenderedinputpinactive-method"></a>Método CRenderedInputPin. active
+# <a name="crenderedinputpinactive-method"></a>Método CRenderedInputPin.Active
 
-O `Active` método notifica o PIN de que o filtro está ativo agora. Esse método substitui o método [**CBasePin:: active**](cbasepin-active.md) .
+O `Active` método notifica o pino de que o filtro agora está ativo. Esse método substitui o [**método CBasePin::Active.**](cbasepin-active.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,7 +42,7 @@ Esse método não tem parâmetros.
 
 ## <a name="return-value"></a>Valor retornado
 
-Retorna S \_ OK se for bem-sucedido ou um código de erro do contrário.
+Retornará S \_ OK se for bem-sucedido ou um código de erro caso contrário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,12 +50,12 @@ Retorna S \_ OK se for bem-sucedido ou um código de erro do contrário.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amextra. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amextra.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

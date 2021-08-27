@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: método API. RetrieveColumnAsInt32'
-title: Método API. RetrieveColumnAsInt32
+description: 'Saiba mais sobre: Método Api.RetrieveColumnAsInt32'
+title: Método Api.RetrieveColumnAsInt32
 TOCTitle: 'RetrieveColumnAsInt32 method '
 ms:assetid: Overload:Microsoft.Isam.Esent.Interop.Api.RetrieveColumnAsInt32
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.retrievecolumnasint32(v=EXCHG.10)
@@ -14,14 +14,14 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 21e8fa75d83845f36563c660eb84f44e0e8296e3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c5a0c5314e0fc008036f002ef1cdab70497b9e46c1158c39a6dee96de4bb928c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104553567"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118983009"
 ---
-# <a name="apiretrievecolumnasint32-method"></a>Método API. RetrieveColumnAsInt32
+# <a name="apiretrievecolumnasint32-method"></a>Método Api.RetrieveColumnAsInt32
 
 Incluir membros protegidos  
 Incluir membros herdados  
@@ -39,13 +39,13 @@ Incluir membros herdados
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
-<td><a href="dn334100(v=exchg.10).md">RetrieveColumnAsInt32 (JET_SESID, JET_TABLEID, JET_COLUMNID)</a></td>
-<td>Recupera um valor de coluna única do registro atual. O registro é aquele associado à entrada de índice na posição atual do cursor.</td>
+<td><a href="dn334100(v=exchg.10).md">RetrieveColumnAsInt32(JET_SESID, JET_TABLEID, JET_COLUMNID)</a></td>
+<td>Recupera um único valor de coluna do registro atual. O registro é o registro associado à entrada de índice na posição atual do cursor.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
-<td><a href="dn334068(v=exchg.10).md">RetrieveColumnAsInt32 (JET_SESID, JET_TABLEID, JET_COLUMNID, RetrieveColumnGrbit)</a></td>
-<td>Recupera um valor de coluna Int32 do registro atual. O registro é aquele associado à entrada de índice na posição atual do cursor.</td>
+<td><a href="dn334068(v=exchg.10).md">RetrieveColumnAsInt32(JET_SESID, JET_TABLEID, JET_COLUMNID, RetrieveColumnGrbit)</a></td>
+<td>Recupera um valor de coluna int32 do registro atual. O registro é o registro associado à entrada de índice na posição atual do cursor.</td>
 </tr>
 </tbody>
 </table>
@@ -61,4 +61,4 @@ Parte superior
 
 [Membros da API](./api-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

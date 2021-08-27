@@ -1,23 +1,23 @@
 ---
-description: Esta seção descreve como imprimir a partir de um programa nativo do Windows.
+description: esta seção descreve como imprimir a partir de um programa de Windows nativo.
 ms.assetid: D0AE8FF8-D02D-43D3-80CA-E13EAA894F87
-title: 'Como: imprimir a partir de um programa do Windows'
+title: 'como: imprimir a partir de um programa de Windows'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 84229823944d7f7104da359b953e579f1b21cdca
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2999f112285dfff389583b15f7c7c2913a3e125bc58713e2ba5f18973aa6e1ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105785041"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118971335"
 ---
-# <a name="how-to-print-from-a-windows-program"></a>Como: imprimir a partir de um programa do Windows
+# <a name="how-to-print-from-a-windows-program"></a>como: imprimir a partir de um programa de Windows
 
-Esta seção descreve como imprimir a partir de um programa nativo do Windows.
+esta seção descreve como imprimir a partir de um programa de Windows nativo.
 
 ## <a name="overview"></a>Visão geral
 
-A impressão geralmente é parte integrante de um programa nativo do Windows. Portanto, não é um recurso que você pode adicionar facilmente depois de escrever o programa. Dito isso, se o programa for projetado para usar documentos XPS, não será necessário muito, se houver, código adicional para renderizar o conteúdo do documento para impressão. Os documentos XPS do aplicativo podem ser enviados diretamente para uma impressora que tem um driver de impressora XPSDrv.
+a impressão geralmente é parte integrante de um programa de Windows nativo. Portanto, não é um recurso que você pode adicionar facilmente depois de escrever o programa. Dito isso, se o programa for projetado para usar documentos XPS, não será necessário muito, se houver, código adicional para renderizar o conteúdo do documento para impressão. Os documentos XPS do aplicativo podem ser enviados diretamente para uma impressora que tem um driver de impressora XPSDrv.
 
 Use a [API de documento XPS](/previous-versions/windows/desktop/dd316976(v=vs.85)) para criar o conteúdo do documento e a [API de impressão XPS](xps-printing.md) para enviar o conteúdo do documento para a impressora. A API de impressão XPS processa o conteúdo do documento para a impressora de destino. Se a impressora selecionada tiver um driver de impressora XPSDrv, o documento será enviado para a impressora sem nenhuma conversão adicional. Se a impressora selecionada tiver um driver de impressora baseado em GDI, o programa também poderá enviar o conteúdo para a impressora e a API de impressão XPS converterá o conteúdo do documento para que ele seja compatível com o driver de impressora baseado em GDI. Em ambos os casos, o processamento que o aplicativo executa é o mesmo.
 
@@ -37,7 +37,7 @@ Os tópicos a seguir descrevem as etapas básicas de impressão do conteúdo do 
 
     Para obter informações sobre o indicador de progresso, consulte [como exibir o progresso do trabalho de impressão](cancel-dialog-box.md).
 
-    Para obter mais ideias sobre como exibir o progresso do trabalho de impressão, consulte as informações nas diretrizes de [desenvolvimento da interface do usuário do aplicativo do Windows](/windows/desktop/windows-application-ui-development) .
+    para obter mais ideias sobre como exibir o progresso do trabalho de impressão, consulte as informações na Windows diretrizes de [desenvolvimento da interface do usuário do aplicativo](/windows/desktop/windows-application-ui-development) .
 
 3.  **Inicie o thread de impressão.**
 

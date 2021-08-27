@@ -1,9 +1,9 @@
 ---
-title: EFFECTs. currentPreset
+title: EFFECTS.currentPreset
 description: O atributo currentPreset especifica ou recupera a predefinição atual da visualização atual.
 ms.assetid: 92c405fb-6a0b-4f4d-a8c6-61df89b035df
 keywords:
-- EFFECTs. currentPreset Windows Media Player
+- EFFECTS.currentPreset Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 24cab33d732bd8e148a0cdf9cd281db7a39182f4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f2a9ce067c2c53245184dcb8ed3cfa7b90b05546a27e5e0b91727599f446b958
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105783610"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996696"
 ---
-# <a name="effectscurrentpreset"></a>EFFECTs. currentPreset
+# <a name="effectscurrentpreset"></a>EFFECTS.currentPreset
 
-O atributo **currentPreset** especifica ou recupera a predefinição atual da visualização atual.
+O **atributo currentPreset** especifica ou recupera a predefinição atual da visualização atual.
 
 ``` syntax
         elementID.currentPreset
@@ -29,7 +29,7 @@ O atributo **currentPreset** especifica ou recupera a predefinição atual da vi
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esse atributo é um **número** de leitura/gravação (**longo**) que indica o índice da predefinição. Os índices começam com zero, que também é o valor padrão.
+Esse atributo é um  número de leitura/gravação (**longo**) que indica o índice da predefinição. Os índices começam com zero, que também é o valor padrão.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,7 +37,7 @@ Esse atributo é um **número** de leitura/gravação (**longo**) que indica o �
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior<br/> |
 
 
 
@@ -45,7 +45,7 @@ Esse atributo é um **número** de leitura/gravação (**longo**) que indica o �
 
 <dl> <dt>
 
-[**Elemento EFFECTs**](effects-element.md)
+[**Elemento EFFECTS**](effects-element.md)
 </dt> </dl>
 
  

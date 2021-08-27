@@ -9,7 +9,7 @@ keywords:
 - waveform audio,consultando dispositivos de saída
 - interface waveform-audio, consultando dispositivos de saída
 - consultando dispositivos de saída de áudio de forma de onda
-- áudio waveform, alças de dispositivo
+- waveform audio,device handles
 - interface waveform-audio, alças de dispositivo
 - áudio waveform, identificadores de dispositivo
 - interface waveform-audio, identificadores de dispositivo
@@ -28,12 +28,12 @@ keywords:
 - fechando dispositivos de saída waveform-audio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2abe0c2c20c52f4498316fb619885d41f85e41d6
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 165f740e260c4e1a25fbd40cac9b8efd66ccd401c3e166dd1119b92c7b9999f4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113120241"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118941264"
 ---
 # <a name="devices-and-data-types"></a>Dispositivos e tipos de dados
 
@@ -47,7 +47,7 @@ Alguns computadores multimídia têm vários dispositivos de saída de áudio de
 
 ## <a name="querying-audio-devices"></a>Consultando dispositivos de áudio
 
-O Windows fornece as funções a seguir para determinar quantos dispositivos de um determinado tipo estão disponíveis em um sistema.
+Windows fornece as funções a seguir para determinar quantos dispositivos de um determinado tipo estão disponíveis em um sistema.
 
 
 
@@ -133,7 +133,7 @@ Também há dois formatos de área de transferência que você pode usar para re
 
 ## <a name="writing-waveform-audio-data"></a>Gravando dados de Waveform-Audio
 
-Depois de abrir com êxito um driver de dispositivo de saída de wave-áudio, você pode começar a tocar um som. O Windows fornece a função [**waveOutWrite**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutwrite) para enviar blocos de dados para dispositivos de saída de wave-áudio.
+Depois de abrir com êxito um driver de dispositivo de saída de wave-áudio, você pode começar a tocar um som. Windows fornece a função [**waveOutWrite**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutwrite) para enviar blocos de dados para dispositivos de saída de wave-áudio.
 
 Use a estrutura [**WAVEHDR**](/windows/win32/api/mmeapi/ns-mmeapi-wavehdr) para especificar o bloco de dados de formato de onda-áudio que você está enviando usando **waveOutWrite**. Essa estrutura contém um ponteiro para um bloco de dados bloqueados, o comprimento do bloco de dados e alguns sinalizadores. Este bloco de dados deve ser preparado antes de você usá-lo; para obter informações sobre como preparar um bloco de dados, consulte [blocos de dados de áudio](audio-data-blocks.md).
 

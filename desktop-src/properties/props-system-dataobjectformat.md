@@ -1,17 +1,17 @@
 ---
 description: O formato do objeto de dados. Um valor de cadeia de caracteres que é o nome do formato da área de transferência.
 ms.assetid: D833838E-3B5A-42D5-BA19-0476A3141C9B
-title: System. DataObjectFormat
+title: System.DataObjectFormat
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 56e44a9b608f4e55b74b89e54e9b49bee39e3af5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4548bda3415edd63f185eaf2539a2bbe1e44d70c82fe9d0a4ede7f32ed2f750a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103828916"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118970495"
 ---
-# <a name="systemdataobjectformat"></a>System. DataObjectFormat
+# <a name="systemdataobjectformat"></a>System.DataObjectFormat
 
 O formato do objeto de dados. Um valor de cadeia de caracteres que é o nome do formato da área de transferência.
 
@@ -32,13 +32,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-Os valores de PKEY são definidos em Propkey. h.
+Os valores PKEY são definidos em Propkey.h.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[Propertydescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -47,19 +47,19 @@ Os valores de PKEY são definidos em Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[numberFormat](./propdesc-schema-numberformat.md)
+[Numberformat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -74,7 +74,7 @@ Os valores de PKEY são definidos em Propkey. h.
 [editControl](./propdesc-schema-editcontrol.md)
 </dt> <dt>
 
-[filterControl](./propdesc-schema-filtercontrol.md)
+[Filtercontrol](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
 [queryControl](./propdesc-schema-querycontrol.md)

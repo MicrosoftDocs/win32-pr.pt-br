@@ -4,12 +4,12 @@ ms.assetid: f87bef33-9a48-4568-b554-7eec34f0bd55
 title: Propriedade MFPKEY_WMAAECMA_DEVICEPAIR_GUID (Wmcodecdsp. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a586d7d31f29b20eb7ca39320d5fa57b9943715a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 174bbae3c83ef28ece7d05e36b0a05813078a9a9fba73ac7fae7dba25b67fb00
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104091069"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118973325"
 ---
 # <a name="mfpkey_wmaaecma_devicepair_guid-property"></a>\_Propriedade MFPKEY WMAAECMA \_ DEVICEPAIR \_ GUID
 
@@ -41,9 +41,9 @@ Se você estiver usando o DSP no modo de origem, não será necessário definir 
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                    |
-| parâmetro<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                    |
+| Cabeçalho<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
 
 
 

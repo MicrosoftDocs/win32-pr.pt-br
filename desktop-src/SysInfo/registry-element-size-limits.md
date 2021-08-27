@@ -4,12 +4,12 @@ ms.assetid: a6d3a884-f181-46a5-b655-226c68792e08
 title: Limites de tamanho de elemento do registro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 262609a64e60536dcfc41f29e5d94ea499158861
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5c76a11abc80f80a13e0643d7745d211168ecba8bcf06446af9ac842f8351567
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105749190"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118885229"
 ---
 # <a name="registry-element-size-limits"></a>Limites de tamanho de elemento do registro
 

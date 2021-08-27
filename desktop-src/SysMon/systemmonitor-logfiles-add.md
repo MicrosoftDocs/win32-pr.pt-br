@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f690670606cd7ee307ba945fc2daabe92953e81
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: af01c5c7a1bbe16826457d7e1f8700df01876827c522a36db41f6c3843101d6d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085605"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118882331"
 ---
 # <a name="logfilesadd-method"></a>Método LogFiles. Add
 
@@ -45,7 +45,7 @@ LogFiles.Add( _
 *nome do caminho* \[ no\]
 </dt> <dd>
 
-Caminho para o arquivo de log. Você pode especificar o caminho como um caminho absoluto, relativo ou UNC. A extensão do nome do arquivo de log deve ser. csv,. tsv ou. blg.
+Caminho para o arquivo de log. Você pode especificar o caminho como um caminho absoluto, relativo ou UNC. A extensão do nome do arquivo de log deve ser .csv,. tsv ou. blg.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Caminho para o arquivo de log. Você pode especificar o caminho como um caminho 
 
 Você deve usar a ferramenta Logman.exe ou o snap-in do MMC Perfmon. msc para gerar os arquivos de log que você adiciona a essa coleção. Para Perfmon. msc, os logs de contador estão localizados em **logs e alertas de desempenho**. Para obter detalhes sobre como usar Logman.exe ou Perfmon. msc, pesquise logman ou usando o desempenho, respectivamente, no **centro de ajuda e suporte**.
 
-**Antes do Windows Vista:** Você não poderá adicionar arquivos de log à [**coleção de arquivos de log**](systemmonitor-logfiles.md) se o valor de [**SystemMonitor. DataSourceType**](systemmonitor-datasourcetype.md) for definido como [**DataSourceTypeConstants.sysmonLogFiles**](/windows/desktop/api/ISysmon/ne-isysmon-datasourcetypeconstants). Primeiro, defina **SystemMonitor. DataSourceType** como **DataSourceTypeConstants.sysmonNullDataSource**, adicione os arquivos de log e contadores e, em seguida, defina **SystemMonitor. DataSourceType** como **DataSourceTypeConstants.sysmonLogFiles**.
+**antes do Windows Vista:** Você não poderá adicionar arquivos de log à [**coleção de arquivos de log**](systemmonitor-logfiles.md) se o valor de [**SystemMonitor. DataSourceType**](systemmonitor-datasourcetype.md) for definido como [**DataSourceTypeConstants.sysmonLogFiles**](/windows/desktop/api/ISysmon/ne-isysmon-datasourcetypeconstants). Primeiro, defina **SystemMonitor. DataSourceType** como **DataSourceTypeConstants.sysmonNullDataSource**, adicione os arquivos de log e contadores e, em seguida, defina **SystemMonitor. DataSourceType** como **DataSourceTypeConstants.sysmonLogFiles**.
 
 ## <a name="requirements"></a>Requisitos
 

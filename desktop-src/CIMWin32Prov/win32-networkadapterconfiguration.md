@@ -1,5 +1,5 @@
 ---
-description: Representa os atributos e comportamentos de um adaptador de rede. Essa classe inclui propriedades e métodos adicionais que suportam o gerenciamento do protocolo TCP/IP que são independentes do adaptador de rede.
+description: Representa os atributos e comportamentos de um adaptador de rede. Essa classe inclui propriedades e métodos extras que dão suporte ao gerenciamento do protocolo TCP/IP que são independentes do adaptador de rede.
 ms.assetid: 690b46ed-a065-4973-b044-0df4e81e41a1
 ms.tgt_platform: multiple
 title: Classe Win32_NetworkAdapterConfiguration
@@ -75,16 +75,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: e93ae76ae3c4880c7ad041e6e90d39f1b22820d3
-ms.sourcegitcommit: 88049609e29f91a42442235885abf56f598b06b3
+ms.openlocfilehash: aab5f52a3e8dbb910227eb91eb34c7d562a26ad7915f0d61b25d46c825c101a1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110153569"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118958925"
 ---
-# <a name="win32_networkadapterconfiguration-class"></a>Classe Win32 \_ NetworkAdapterConfiguration
+# <a name="win32_networkadapterconfiguration-class"></a>\_Classe Win32 NetworkAdapterConfiguration
 
-A classe [WMI](../wmisdk/retrieving-a-class.md) **\_ NetworkAdapterConfiguration do Win32** representa os atributos e comportamentos de um adaptador de rede. Essa classe inclui propriedades e métodos adicionais que suportam o gerenciamento do protocolo TCP/IP que são independentes do adaptador de rede.
+A [classe WMI](../wmisdk/retrieving-a-class.md) **\_ NetworkAdapterConfiguration do Win32** representa os atributos e comportamentos de um adaptador de rede. Essa classe inclui propriedades e métodos extras que dão suporte ao gerenciamento do protocolo TCP/IP que são independentes do adaptador de rede.
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas. As propriedades são listadas em ordem alfabética, não em ordem MOF.
 
@@ -160,24 +160,24 @@ class Win32_NetworkAdapterConfiguration : CIM_Setting
 
 ## <a name="members"></a>Membros
 
-A **classe \_ NetworkAdapterConfiguration do Win32** tem estes tipos de membros:
+A classe **Win32 \_ NetworkAdapterConfiguration** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-A **classe \_ NetworkAdapterConfiguration do Win32** tem esses métodos.
+A classe **Win32 \_ NetworkAdapterConfiguration** tem esses métodos.
 
 
 
 | Método                                                                                                                       | Descrição                                                                                                                                           |
 |:-----------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**DisableIPSec**](disableipsec-method-in-class-win32-networkadapterconfiguration.md)                                       | Desabilita o IPsec neste adaptador de rede habilitado para TCP/IP.<br/>                                                                                     |
-| [**EnableDHCP**](enabledhcp-method-in-class-win32-networkadapterconfiguration.md)                                           | Habilita o protocolo DHCP para serviço com esse adaptador de rede.<br/>                                              |
-| [**EnableDNS**](enabledns-method-in-class-win32-networkadapterconfiguration.md)                                             | Habilita o DNS (Sistema de Nomes de Domínio) para serviço neste adaptador de rede vinculado a TCP/IP.<br/>                                                     |
-| [**EnableIPFilterSec**](enableipfiltersec-method-in-class-win32-networkadapterconfiguration.md)                             | Habilita o IPsec globalmente em todos os adaptadores de rede vinculados a IP.<br/>                                                                               |
-| [**EnableIPSec**](enableipsec-method-in-class-win32-networkadapterconfiguration.md)                                         | Habilita o IPsec nesse adaptador de rede habilitado para TCP/IP específico.<br/>                                                                             |
+| [**EnableDHCP**](enabledhcp-method-in-class-win32-networkadapterconfiguration.md)                                           | Habilita o DHCP (protocolo de configuração dinâmica de hosts) para o serviço com este adaptador de rede.<br/>                                              |
+| [**EnableDNS**](enabledns-method-in-class-win32-networkadapterconfiguration.md)                                             | Habilita o DNS (sistema de nomes de domínio) para o serviço neste adaptador de rede associado a TCP/IP.<br/>                                                     |
+| [**EnableIPFilterSec**](enableipfiltersec-method-in-class-win32-networkadapterconfiguration.md)                             | Habilita o IPsec globalmente em todos os adaptadores de rede vinculados por IP.<br/>                                                                               |
+| [**EnableIPSec**](enableipsec-method-in-class-win32-networkadapterconfiguration.md)                                         | Habilita o IPsec neste adaptador de rede específico habilitado para TCP/IP.<br/>                                                                             |
 | [**EnableStatic**](enablestatic-method-in-class-win32-networkadapterconfiguration.md)                                       | Habilita o endereçamento TCP/IP estático para o adaptador de rede de destino.<br/>                                                                           |
 | [**EnableWINS ativa**](enablewins-method-in-class-win32-networkadapterconfiguration.md)                                           | Habilita configurações do WINS específicas para TCP/IP, mas independente do adaptador de rede.<br/>                                                          |
 | [**ReleaseDHCPLease**](releasedhcplease-method-in-class-win32-networkadapterconfiguration.md)                               | Libera o endereço IP associado a um adaptador de rede habilitado para DHCP específico.<br/>                                                                  |
@@ -189,18 +189,18 @@ A **classe \_ NetworkAdapterConfiguration do Win32** tem esses métodos.
 | [**DatabasePath**](setdatabasepath-method-in-class-win32-networkadapterconfiguration.md)                                 | Define o caminho para os arquivos de banco de dados da Internet padrão (HOSTs, LMHOSTs, redes e protocolos).<br/>                                           |
 | [**SetDeadGWDetect**](setdeadgwdetect-method-in-class-win32-networkadapterconfiguration.md)                                 | Habilita a detecção de gateway inativo.<br/>                                                                                                            |
 | [**SetDefaultTOS**](setdefaulttos-method-in-class-win32-networkadapterconfiguration.md)                                     | Obsoleto. Esse método define o valor do tipo de serviço (TOS) padrão no cabeçalho dos pacotes de IP de saída.<br/>                                   |
-| [**SetDefaultTTL**](setdefaultttl-method-in-class-win32-networkadapterconfiguration.md)                                     | Define o valor TTL (Vida Vida) padrão no header de pacotes IP de saída.<br/>                                                            |
+| [**SetDefaultTTL**](setdefaultttl-method-in-class-win32-networkadapterconfiguration.md)                                     | Define o valor da TTL (vida útil) padrão no cabeçalho dos pacotes IP de saída.<br/>                                                            |
 | [**SetDNSDomain**](setdnsdomain-method-in-class-win32-networkadapterconfiguration.md)                                       | Define o domínio DNS.<br/>                                                                                                                       |
 | [**SetDNSServerSearchOrder**](setdnsserversearchorder-method-in-class-win32-networkadapterconfiguration.md)                 | Define a ordem de pesquisa do servidor como uma matriz de elementos.<br/>                                                                                      |
 | [**SetDNSSuffixSearchOrder**](setdnssuffixsearchorder-method-in-class-win32-networkadapterconfiguration.md)                 | Define a ordem de pesquisa de sufixo como uma matriz de elementos.<br/>                                                                                      |
-| [**SetDynamicDNSRegistration**](setdynamicdnsregistration-method-in-class-win32-networkadapterconfiguration.md)             | Indica o registro DNS dinâmico de endereços IP para esse adaptador associado a IP.<br/>                                                              |
-| [**SetForwardBufferMemory**](setforwardbuffermemory-method-in-class-win32-networkadapterconfiguration.md)                   | Especifica quanto IP de memória aloca para armazenar dados de pacote na fila de pacotes do roteador.<br/>                                                    |
-| [**SetGateways**](setgateways-method-in-class-win32-networkadapterconfiguration.md)                                         | Especifica uma lista de gateways para pacotes de roteamento destinados a uma sub-rede diferente da que esse adaptador está conectado.<br/>                |
-| [**SetIGMPLevel**](setigmplevel-method-in-class-win32-networkadapterconfiguration.md)                                       | Define a extensão à qual o sistema dá suporte à multicast de IP e participa do Protocolo de Gerenciamento de Grupo da Internet.<br/>                   |
-| [**SetIPConnectionMetric**](setipconnectionmetric-method-in-class-win32-networkadapterconfiguration.md)                     | Define a métrica de roteamento associada a esse adaptador associado a IP.<br/>                                                                             |
-| [**SetIPUseZeroBroadcast**](setipusezerobroadcast-method-in-class-win32-networkadapterconfiguration.md)                     | Define o uso de difusão de IP zero.<br/>                                                                                                              |
-| [**SetIPXFrameTypeNetworkPairs**](win32-networkadapterconfiguration-setipxframetypenetworkpairs.md)                         | Define os pares de número/quadro de rede IPX (troca de pacotes Interrede) para esse adaptador de rede.<br/>                                            |
-| [**SetIPXVirtualNetworkNumber**](win32-networkadapterconfiguration-setipxvirtualnetworknumber.md)                           | Define o número de rede virtual de intercâmbio de pacotes entre redes (IPX) no sistema de computador de destino.<br/>                                       |
+| [**SetDynamicDNSRegistration**](setdynamicdnsregistration-method-in-class-win32-networkadapterconfiguration.md)             | Indica o registro DNS dinâmico de endereços IP para este adaptador associado a IP.<br/>                                                              |
+| [**SetForwardBufferMemory**](setforwardbuffermemory-method-in-class-win32-networkadapterconfiguration.md)                   | Especifica a quantidade de memória que o IP aloca para armazenar dados de pacote na fila de pacotes do roteador.<br/>                                                    |
+| [**SetGateways**](setgateways-method-in-class-win32-networkadapterconfiguration.md)                                         | Especifica uma lista de gateways para os pacotes de roteamento destinados a uma sub-rede diferente daquela à qual esse adaptador está conectado.<br/>                |
+| [**SetIGMPLevel**](setigmplevel-method-in-class-win32-networkadapterconfiguration.md)                                       | Define a extensão à qual o sistema dá suporte a multicast de IP e participa do protocolo de gerenciamento de grupo da Internet.<br/>                   |
+| [**SetIPConnectionMetric**](setipconnectionmetric-method-in-class-win32-networkadapterconfiguration.md)                     | Define a métrica de roteamento associada a este adaptador associado a IP.<br/>                                                                             |
+| [**SetIPUseZeroBroadcast**](setipusezerobroadcast-method-in-class-win32-networkadapterconfiguration.md)                     | Define o uso de difusão zero de IP.<br/>                                                                                                              |
+| [**SetIPXFrameTypeNetworkPairs**](win32-networkadapterconfiguration-setipxframetypenetworkpairs.md)                         | define os pares de número/quadro de rede IPX (Exchange de pacotes) para este adaptador de rede.<br/>                                            |
+| [**SetIPXVirtualNetworkNumber**](win32-networkadapterconfiguration-setipxvirtualnetworknumber.md)                           | define o número de rede virtual de Exchange de pacotes de rede (IPX) no sistema de computador de destino.<br/>                                       |
 | [**SetKeepAliveInterval**](setkeepaliveinterval-method-in-class-win32-networkadapterconfiguration.md)                       | Define o intervalo que separa as retransmissões Keep Alive até que uma resposta seja recebida.<br/>                                                      |
 | [**Setkeepalivetime**](setkeepalivetime-method-in-class-win32-networkadapterconfiguration.md)                               | Define a frequência com que o TCP tenta verificar se uma conexão ociosa ainda está disponível enviando um pacote keep alive.<br/>                           |
 | [**SetMTU**](setmtu-method-in-class-win32-networkadapterconfiguration.md)                                                   | Define a MTU (unidade máxima de transmissão) padrão para uma interface de rede.<br/> Não há suporte para o método.<br/>                         |
@@ -209,11 +209,11 @@ A **classe \_ NetworkAdapterConfiguration do Win32** tem esses métodos.
 | [**SetPMTUDiscovery**](setpmtudiscovery-method-in-class-win32-networkadapterconfiguration.md)                               | Habilita a descoberta de MTU (unidade máxima de transmissão).<br/>                                                                                         |
 | [**SetTcpipNetbios**](settcpipnetbios-method-in-class-win32-networkadapterconfiguration.md)                                 | Define a operação padrão de NetBIOS sobre TCP/IP.<br/>                                                                                         |
 | [**SetTcpMaxConnectRetransmissions**](settcpmaxconnectretransmissions-method-in-class-win32-networkadapterconfiguration.md) | Define o número de tentativas que o TCP retransmitirá uma solicitação de conexão antes de abortar.<br/>                                                         |
-| [**SetTcpMaxDataRetransmissions**](settcpmaxdataretransmissions-method-in-class-win32-networkadapterconfiguration.md)       | Define o número de vezes que o TCP retransmite um segmento de dados individual antes de anular a conexão.<br/>                                    |
+| [**SetTcpMaxDataRetransmissions**](settcpmaxdataretransmissions-method-in-class-win32-networkadapterconfiguration.md)       | Define o número de vezes que o TCP retransmitirá um segmento de dados individual antes de abortar a conexão.<br/>                                    |
 | [**SetTcpNumConnections**](settcpnumconnections-method-in-class-win32-networkadapterconfiguration.md)                       | Define o número máximo de conexões que o TCP pode ter aberto simultaneamente.<br/>                                                              |
-| [**SetTcpUseRFC1122EntPointer**](settcpuserfc1122urgentpointer-method-in-class-win32-networkadapterconfiguration.md)     | Especifica se o TCP usa a especificação RFC 1122 para dados urgentes ou o modo usado pelos sistemas derivados do BSD (Berkeley Software Design).<br/> |
-| [**SetTcpWindowSize**](settcpwindowsize-method-in-class-win32-networkadapterconfiguration.md)                               | Define o tamanho máximo da Janela de Recebimento TCP oferecido pelo sistema.<br/>                                                                            |
-| [**SetWINSServer**](setwinsserver-method-in-class-win32-networkadapterconfiguration.md)                                     | Define os servidores WINS (Windows Internet Serviço de Nomenclatura) primários e secundários neste adaptador de rede vinculado a TCP/IP.<br/>                        |
+| [**SetTcpUseRFC1122UrgentPointer**](settcpuserfc1122urgentpointer-method-in-class-win32-networkadapterconfiguration.md)     | Especifica se o TCP usa a especificação RFC 1122 para dados urgentes ou o modo usado pelos sistemas derivados do BSD (Berkeley Software Design).<br/> |
+| [**SetTcpWindowSize**](settcpwindowsize-method-in-class-win32-networkadapterconfiguration.md)                               | Define o tamanho máximo da janela de recepção TCP oferecida pelo sistema.<br/>                                                                            |
+| [**SetWINSServer**](setwinsserver-method-in-class-win32-networkadapterconfiguration.md)                                     | define os servidores WINS (Windows de Internet Serviço de Nomenclatura) primários e secundários neste adaptador de rede associado a TCP/IP.<br/>                        |
 
 
 
@@ -221,36 +221,36 @@ A **classe \_ NetworkAdapterConfiguration do Win32** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-A **classe \_ NetworkAdapterConfiguration do Win32** tem essas propriedades.
+A classe **Win32 \_ NetworkAdapterConfiguration** tem essas propriedades.
 
 <dl> <dt>
 
 **ArpAlwaysSourceRoute**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliana**
+Tipo de dados: **booliano**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ Tcpip \\ \\ Parameters \| ArpAlwaysSourceRoute")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ tcpip \\ \\ Parameters \| ArpAlwaysSourceRoute")
 </dt> </dl>
 
-Se **TRUE**, TCP/IP transmitirá consultas ARP (Protocolo de Resolução de Endereço) com o roteamento de origem habilitado em redes de Anel de Token. Por padrão (FALSE), o ARP primeiro consulta sem roteamento de origem e, em seguida, faz uma nova busca com o roteamento de origem habilitado se nenhuma resposta for recebida. O roteamento de origem permite o roteamento de pacotes de rede em diferentes tipos de redes.
+Se **verdadeiro**, o TCP/IP transmite consultas de ARP (protocolo de resolução de endereço) com o roteamento de origem habilitado em redes de token ring. Por padrão (FALSE), o ARP primeiro consulta sem roteamento de origem e, em seguida, tenta novamente com o roteamento de origem habilitado se nenhuma resposta for recebida. O roteamento de origem permite o roteamento de pacotes de rede entre diferentes tipos de redes.
 
 </dd> <dt>
 
 **ArpUseEtherSNAP**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliana**
+Tipo de dados: **booliano**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ Tcpip \\ \\ Parameters \| ArpUseEtherSNAP")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ tcpip \\ \\ Parameters \| ArpUseEtherSNAP")
 </dt> </dl>
 
 Se **for verdadeiro**, os pacotes de Ethernet seguem a codificação de snap (protocolo de acesso Sub-Network) do IEEE 802,3. Definir esse parâmetro como 1 força o TCP/IP a transmitir pacotes Ethernet usando a codificação de encaixe 802,3. Por padrão (FALSE), a pilha transmite pacotes no formato de Ethernet DIX.
@@ -287,7 +287,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry do \| sistema \\ \\ CurrentControlSet os \\ \\ \\ \\ \\ \\ parâmetros tcpip \| DatabasePath")
 </dt> </dl>
 
-Caminho de arquivo do Windows válido para arquivos de banco de dados da Internet padrão (HOSTs, LMHOSTs, redes e protocolos). O caminho do arquivo é usado pela interface do Windows Sockets.
+caminho de arquivo de Windows válido para arquivos de banco de dados da Internet padrão (hosts, lmhosts, redes e protocolos). o caminho do arquivo é usado pela interface do Windows sockets.
 
 </dd> <dt>
 
@@ -334,10 +334,10 @@ Tipo de dados: **uint8**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ Tcpip \\ \\ Parameters \| DefaultTOS")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ tcpip \\ \\ Parameters \| DefaultTOS")
 </dt> </dl>
 
-Valor padrão tipo de serviço (TOS) definido no header de pacotes IP de saída. A RFC (Solicitação de Comentários) 791 define os valores. Padrão: 0 (zero), Intervalo válido: 0 a 255.
+Valor padrão de TOS (tipo de serviço) definido no cabeçalho dos pacotes de IP de saída. A RFC (solicitação de comentários) 791 define os valores. Padrão: 0 (zero), intervalo válido: 0-255.
 
 </dd> <dt>
 
@@ -350,10 +350,10 @@ Tipo de dados: **uint8**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ Tcpip \\ \\ Parameters \| DefaultTTL")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ tcpip \\ \\ Parameters \| DefaultTtl")
 </dt> </dl>
 
-Valor TTL (Vida Vida Padrão) definido no header de pacotes IP de saída. A TTL especifica o número de roteadores que um pacote IP pode passar para alcançar seu destino antes de ser descartado. Cada roteador diminui por um a contagem de TTL de um pacote conforme ele passa e descarta os pacotes — se o TTL for 0 (zero). Padrão: 32, Intervalo válido: 1 a 255.
+Valor de TTL (vida útil) padrão definido no cabeçalho dos pacotes de IP de saída. O TTL especifica o número de roteadores que um pacote IP pode passar para alcançar seu destino antes de ser Descartado. Cada roteador diminui em uma contagem de TTL de um pacote à medida que ele passa e descarta os pacotes — se o TTL for 0 (zero). Padrão: 32, intervalo válido: 1-255.
 
 </dd> <dt>
 
@@ -368,23 +368,23 @@ Tipo de acesso: Somente leitura
 
 Descrição textual do objeto atual.
 
-Essa propriedade é herdada da [**Configuração cim \_**](cim-setting.md).
+Essa propriedade é herdada [**da \_ configuração de CIM**](cim-setting.md).
 
 </dd> <dt>
 
 **DHCPEnabled**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliana**
+Tipo de dados: **booliano**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \| EnableDHCP")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \| EnableDHCP")
 </dt> </dl>
 
-Se **TRUE**, o servidor DHCP (dynamic host configuration protocol) atribuirá automaticamente um endereço IP ao sistema de computador ao estabelecer uma conexão de rede.
+Se **for true**, o servidor de protocolo DHCP atribuirá automaticamente um endereço IP ao sistema de computador ao estabelecer uma conexão de rede.
 
 </dd> <dt>
 
@@ -463,16 +463,16 @@ Exemplo: "microsoft.com"
 **DNSDomainSuffixSearchOrder**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz **de cadeia de** caracteres
+Tipo de dados: matriz de **cadeia de caracteres**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ Tcpip \\ \\ Parameters \| SearchList")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ tcpip \\ \\ Parameters \| SearchList")
 </dt> </dl>
 
-Matriz de sufixos de domínio DNS a serem anexados ao final dos nomes de host durante a resolução de nomes. Ao tentar resolver um FQDN (nome de domínio totalmente qualificado) de um nome somente host, o sistema primeiro anexará o nome de domínio local. Se isso não for bem-sucedido, o sistema usará a lista de sufixos de domínio para criar FQDNs adicionais na ordem listada e consultar servidores DNS para cada um.
+Matriz de sufixos de domínio DNS a serem acrescentados ao final dos nomes de host durante a resolução de nomes. Ao tentar resolver um FQDN (nome de domínio totalmente qualificado) de um nome somente de host, o sistema primeiro acrescentará o nome de domínio local. Se isso não for bem-sucedido, o sistema usará a lista de sufixos de domínio para criar FQDNs adicionais na ordem listada e consultar servidores DNS para cada um.
 
 Exemplo: "samples.microsoft.com example.microsoft.com"
 
@@ -490,7 +490,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ Tcpip \\ \\ Parameters \| EnableDNS")
 </dt> </dl>
 
-Se **TRUE**, o DNS (Sistema de Nomes de Domínio) será habilitado para resolução de nomes pela resolução de Serviço de Nomenclatura Windows Internet (WINS). Se o nome não puder ser resolvido usando DNS, a solicitação de nome será encaminhada para WINS para resolução.
+Se **TRUE**, o DNS (Sistema de Nomes de Domínio) será habilitado para resolução de nomes Windows resolução wins (Internet Serviço de Nomenclatura). Se o nome não puder ser resolvido usando DNS, a solicitação de nome será encaminhada para WINS para resolução.
 
 </dd> <dt>
 
@@ -512,48 +512,48 @@ Exemplo: "corpdns"
 
 </dd> <dt>
 
-**DNSServerSearchOrder**
+**Dnsserversearchorder**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ tcpip \\ \\ Parameters \| nameserver")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ Tcpip \\ \\ Parameters \| NameServer")
 </dt> </dl>
 
-Matriz de endereços IP do servidor a ser usada na consulta de servidores DNS.
+Matriz de endereços IP do servidor a serem usados na consulta para servidores DNS.
 
 </dd> <dt>
 
 **DomainDNSRegistrationEnabled**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Se **for true**, os endereços IP para essa conexão serão registrados no DNS sob o nome de domínio dessa conexão, além de serem registrados sob o nome DNS completo do computador. O nome de domínio dessa conexão é definido usando o método [**SetDNSDomain**](setdnsdomain-method-in-class-win32-networkadapterconfiguration.md)() ou atribuído pelo DSCP. O nome registrado é o nome do host do computador com o nome de domínio anexado.
+Se **TRUE**, os endereços IP dessa conexão serão registrados no DNS sob o nome de domínio dessa conexão, além de serem registrados no nome DNS completo do computador. O nome de domínio dessa conexão é definido usando o [**método SetDNSDomain**](setdnsdomain-method-in-class-win32-networkadapterconfiguration.md)() ou atribuído por DSCP. O nome registrado é o nome do host do computador com o nome de domínio anexado.
 
 </dd> <dt>
 
 **ForwardBufferMemory**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ tcpip \\ \\ Parameters \| ForwardBufferMemory"), [**Units**](../wmisdk/standard-qualifiers.md) ("bytes")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ Tcpip \\ \\ Parameters \| ForwardBufferMemory"), [**Unidades**](../wmisdk/standard-qualifiers.md) ("bytes")
 </dt> </dl>
 
-Memória alocada por IP para armazenar dados de pacote na fila de pacotes do roteador. Quando esse espaço de buffer é preenchido, o roteador começa a descartar os pacotes aleatoriamente de sua fila. Buffers de dados de fila de pacotes têm 256 bytes de comprimento, portanto, o valor desse parâmetro deve ser um múltiplo de 256. Vários buffers são encadeados em pacotes maiores. O cabeçalho IP de um pacote é armazenado separadamente. Esse parâmetro será ignorado e nenhum buffer será alocado se o roteador IP não estiver habilitado. O tamanho do buffer pode variar da MTU de rede para um valor menor que 0xFFFFFFFF. Padrão: 74240 (1480 pacotes de 1480 byte, arredondados para um múltiplo de 256).
+Memória alocada pelo IP para armazenar dados de pacote na fila de pacotes do roteador. Quando esse espaço de buffer é preenchido, o roteador começa a descartar pacotes aleatoriamente de sua fila. Os buffers de dados da fila de pacotes têm 256 bytes de comprimento, portanto, o valor desse parâmetro deve ser um múltiplo de 256. Vários buffers são encadeados para pacotes maiores. O header IP de um pacote é armazenado separadamente. Esse parâmetro será ignorado e nenhum buffer será alocado se o roteador IP não estiver habilitado. O tamanho do buffer pode variar da MTU de rede para um valor menor que 0xFFFFFFFF. Padrão: 74240 (1480 pacotes de 1480 byte, arredondados para um múltiplo de 256).
 
 </dd> <dt>
 
@@ -615,12 +615,12 @@ Até que ponto o sistema dá suporte a multicast de IP e participa do protocolo 
 
 <span id="IP___IGMP_multicast"></span><span id="ip___igmp_multicast"></span><span id="IP___IGMP_MULTICAST"></span>
 
-<span id="IP___IGMP_multicast"></span><span id="ip___igmp_multicast"></span><span id="IP___IGMP_MULTICAST"></span>**Multicast IGMP & IP** (2)
+<span id="IP___IGMP_multicast"></span><span id="ip___igmp_multicast"></span><span id="IP___IGMP_MULTICAST"></span>**Multicast IGMP** & IP (2)
 
 
 </dt> <dd>
 
-IP e IGMP multicast (padrão)
+Multicast IP e IGMP (padrão)
 
 </dd> </dl>
 
@@ -629,67 +629,67 @@ IP e IGMP multicast (padrão)
 **Index**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualifiers: [**chave**](../wmisdk/key-qualifier.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry do \| sistema \\ \\ CurrentControlSet \\ \\ classe de controle \\ \\ \\ \\ {4D36E972-E325-11CE-BFC1-08002BE10318}")
+Qualificadores: [**chave**](../wmisdk/key-qualifier.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Classe de controle Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ \\ \\ \\ \\ {4D36E972-E325-11CE-BFC1-08002BE10318}")
 </dt> </dl>
 
-Número de índice da configuração do adaptador de rede do Windows. O número de índice é usado quando há mais de uma configuração disponível.
+Número de índice da configuração Windows adaptador de rede. O número do índice é usado quando há mais de uma configuração disponível.
 
 </dd> <dt>
 
-**InterfaceIndex**
+**Interfaceindex**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Valor de índice que identifica exclusivamente uma interface de rede local. O valor nessa propriedade é o mesmo que o valor na propriedade **InterfaceIndex** na instância do [**Win32 \_ IP4RouteTable**](/previous-versions/windows/desktop/wmiiprouteprov/win32-ip4routetable) que representa a interface de rede na tabela de rotas.
+Valor de índice que identifica exclusivamente um interface de rede local. O valor nessa propriedade é o mesmo que o valor na propriedade **InterfaceIndex** na instância de [**Win32 \_ IP4RouteTable**](/previous-versions/windows/desktop/wmiiprouteprov/win32-ip4routetable) que representa o interface de rede na tabela de rotas.
 
 </dd> <dt>
 
 **EndereçoIP**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry do \| sistema \\ \\ CurrentControlSet \\ \\ parâmetros de serviços \| \\ \\ \| " tcpip IPAddress ")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \| Parameters \\ \\ Tcpip \| IPAddress")
 </dt> </dl>
 
-Matriz de todos os endereços IP associados ao adaptador de rede atual. Essa propriedade pode conter endereços IPv6 ou endereços IPv4. Para obter mais informações, consulte [suporte a IPv6 e IPv4 no WMI](../wmisdk/ipv6-and-ipv4-support-in-wmi.md).
+Matriz de todos os endereços IP associados ao adaptador de rede atual. Essa propriedade pode conter endereços IPv6 ou endereços IPv4. Para obter mais informações, consulte [Suporte a IPv6 e IPv4 no WMI](../wmisdk/ipv6-and-ipv4-support-in-wmi.md).
 
-Endereço IPv6 de exemplo: "2010:836B: 4179:: 836B: 4179"
+Endereço IPv6 de exemplo: "2010:836B:4179::836B:4179"
 
 </dd> <dt>
 
 **IPConnectionMetric**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O custo de usar as rotas configuradas para o adaptador de IP ligado e é o valor ponderado para essas rotas na tabela de roteamento de IP. Se houver várias rotas para um destino na tabela de roteamento de IP, a rota com a métrica mais baixa será usada. O valor padrão é 1.
+O custo de usar as rotas configuradas para o adaptador de limite de IP e é o valor ponderado para essas rotas na tabela de roteamento de IP. Se houver várias rotas para um destino na tabela de roteamento de IP, a rota com a métrica mais baixa será usada. O valor padrão é 1.
 
 </dd> <dt>
 
 **IPEnabled**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -698,7 +698,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \| Parameters \\ \\ Tcpip")
 </dt> </dl>
 
-Se **TRUE**, o TCP/IP será vinculado e habilitado neste adaptador de rede.
+Se **TRUE**, o TCP/IP será vinculado e habilitado nesse adaptador de rede.
 
 </dd> <dt>
 
@@ -730,7 +730,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**PRETERIDO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ NetworkAdapterConfiguration \| IPFilterSecurityEnabled")
 </dt> </dl>
 
-Se **TRUE,** a segurança da porta IP será habilitada globalmente em todos os adaptadores de rede vinculados a IP. Esta propriedade está obsoleta. No lugar dessa propriedade, você deve usar **IPFilterSecurityEnabled**.
+Se **TRUE**, a segurança da porta IP será habilitada globalmente em todos os adaptadores de rede vinculados a IP. Esta propriedade está obsoleta. No lugar dessa propriedade, você deve usar **IPFilterSecurityEnabled**.
 
 </dd> <dt>
 
@@ -746,52 +746,52 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ Parâmetros Tcpip \\ \\ \| RawIPAllowedProtocols")
 </dt> </dl>
 
-Matriz dos protocolos permitidos para executar o IP. A lista de protocolos é definida usando o [**método EnableIPSec.**](enableipsec-method-in-class-win32-networkadapterconfiguration.md) A lista estará vazia ou conterá valores numéricos. Um valor numérico de 0 (zero) indica que a permissão de acesso é concedida para todos os protocolos. Uma cadeia de caracteres vazia indica que nenhum protocolo tem permissão para ser executado quando **IPFilterSecurityEnabled** é **true**.
+Matriz dos protocolos permitidos para executar o IP. A lista de protocolos é definida usando o [**método EnableIPSec.**](enableipsec-method-in-class-win32-networkadapterconfiguration.md) A lista estará vazia ou conterá valores numéricos. Um valor numérico de 0 (zero) indica que a permissão de acesso é concedida para todos os protocolos. Uma cadeia de caracteres vazia indica que nenhum protocolo tem permissão para ser executado quando **IPFilterSecurityEnabled** é **TRUE.**
 
 </dd> <dt>
 
 **IPSecPermitTCPPorts**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ tcpip \\ \\ Parameters \| TCPAllowedPorts")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ Tcpip \\ \\ Parameters \| TCPAllowedPorts")
 </dt> </dl>
 
-Matriz das portas às quais será concedida permissão de acesso para TCP. A lista de protocolos é definida usando o método [**EnableIPSec**](enableipsec-method-in-class-win32-networkadapterconfiguration.md) . A lista estará vazia ou conterá valores numéricos. Um valor numérico de 0 (zero) indica que a permissão de acesso é concedida para todas as portas. Uma cadeia de caracteres vazia indica que nenhuma porta recebe permissão de acesso quando **IPFilterSecurityEnabled** é **true**.
+Matriz das portas que receberão permissão de acesso para TCP. A lista de protocolos é definida usando o [**método EnableIPSec.**](enableipsec-method-in-class-win32-networkadapterconfiguration.md) A lista estará vazia ou conterá valores numéricos. Um valor numérico de 0 (zero) indica que a permissão de acesso é concedida para todas as portas. Uma cadeia de caracteres vazia indica que nenhuma porta recebe permissão de acesso quando **IPFilterSecurityEnabled** é **TRUE.**
 
 </dd> <dt>
 
 **IPSecPermitUDPPorts**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ tcpip \\ \\ Parameters \| UDPAllowedPorts")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ Tcpip \\ \\ Parameters \| UDPAllowedPorts")
 </dt> </dl>
 
-Matriz das portas às quais a permissão de acesso UDP (User Datagram Protocol) será concedida. A lista de protocolos é definida usando o método [**EnableIPSec**](enableipsec-method-in-class-win32-networkadapterconfiguration.md) . A lista estará vazia ou conterá valores numéricos. Um valor numérico de 0 (zero) indica que a permissão de acesso é concedida para todas as portas. Uma cadeia de caracteres vazia indica que nenhuma porta recebe permissão de acesso quando **IPFilterSecurityEnabled** é **true**.
+Matriz das portas que receberão permissão de acesso UDP (User Datagram Protocol). A lista de protocolos é definida usando o [**método EnableIPSec.**](enableipsec-method-in-class-win32-networkadapterconfiguration.md) A lista estará vazia ou conterá valores numéricos. Um valor numérico de 0 (zero) indica que a permissão de acesso é concedida para todas as portas. Uma cadeia de caracteres vazia indica que nenhuma porta recebe permissão de acesso quando **IPFilterSecurityEnabled** é **TRUE.**
 
 </dd> <dt>
 
 **IPSubnet**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ \| Parameters de parâmetros de serviços \| ")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \| Parameters \| SubnetMask")
 </dt> </dl>
 
 Matriz de todas as máscaras de sub-rede associadas ao adaptador de rede atual.
@@ -828,7 +828,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**PRETERIDO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Windows Sockets Versão 2 \| [**getsockopt**](/windows/win32/api/winsock/nf-winsock-getsockopt) \| IPX \_ ADDRESS")
 </dt> </dl>
 
-Não há mais suporte para a tecnologia IPX (Internetwork Packet Exchange) e essa propriedade não contém dados úteis.
+A tecnologia IPX (Internetwork Packet Exchange) não tem mais suporte e essa propriedade não contém dados úteis.
 
 </dd> <dt>
 
@@ -844,7 +844,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**PRETERIDO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
 </dt> </dl>
 
-Não há mais suporte para a tecnologia IPX (Internetwork Packet Exchange) e essa propriedade não contém dados úteis.
+A tecnologia IPX (Internetwork Packet Exchange) não tem mais suporte e essa propriedade não contém dados úteis.
 
 </dd> <dt>
 
@@ -860,7 +860,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**PRETERIDO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ nwlnkipx \\ \\ Parameters \| PktType")
 </dt> </dl>
 
-Não há mais suporte para a tecnologia IPX (Internetwork Packet Exchange) e essa propriedade não contém dados úteis.
+A tecnologia IPX (Internetwork Packet Exchange) não tem mais suporte e essa propriedade não contém dados úteis.
 
 <dt>
 
@@ -873,28 +873,28 @@ Não há mais suporte para a tecnologia IPX (Internetwork Packet Exchange) e ess
 
 <span id="Ethernet_802.3"></span><span id="ethernet_802.3"></span><span id="ETHERNET_802.3"></span>
 
-**Ethernet 802,3** (1)
+**Ethernet 802.3** (1)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Ethernet_802.2"></span><span id="ethernet_802.2"></span><span id="ETHERNET_802.2"></span>
 
-**Ethernet 802,2** (2)
+**Ethernet 802.2** (2)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Ethernet_SNAP"></span><span id="ethernet_snap"></span><span id="ETHERNET_SNAP"></span>
 
-**Ajuste de Ethernet** (3)
+**Ethernet SNAP** (3)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="AUTO"></span><span id="auto"></span>
 
-**Automático** (255)
+**AUTO** (255)
 
 
 </dt> <dd></dd> </dl>
@@ -904,16 +904,16 @@ Não há mais suporte para a tecnologia IPX (Internetwork Packet Exchange) e ess
 **IPXMediaType**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**preteridos**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ NwlnkIpx \\ \\ Parameters \| MediaType")
+Qualificadores: [**PRETERIDO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ nwlnkipx \\ \\ Parameters \| MediaType")
 </dt> </dl>
 
-A tecnologia de intercâmbio de pacotes de rede (IPX) não é mais suportada e essa propriedade não contém dados úteis.
+A tecnologia IPX (Internetwork Packet Exchange) não tem mais suporte e essa propriedade não contém dados úteis.
 
 <dt>
 
@@ -926,7 +926,7 @@ A tecnologia de intercâmbio de pacotes de rede (IPX) não é mais suportada e e
 
 <span id="Token_ring"></span><span id="token_ring"></span><span id="TOKEN_RING"></span>
 
-**Token ring** (2)
+**Anel de token** (2)
 
 
 </dt> <dd></dd> <dt>
@@ -940,7 +940,7 @@ A tecnologia de intercâmbio de pacotes de rede (IPX) não é mais suportada e e
 
 <span id="ARCNET"></span><span id="arcnet"></span>
 
-**ARCnet** (8)
+**ARCNET** (8)
 
 
 </dt> <dd></dd> </dl>
@@ -950,16 +950,16 @@ A tecnologia de intercâmbio de pacotes de rede (IPX) não é mais suportada e e
 **IPXNetworkNumber**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**preteridos**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ NwlnkIpx \\ \\ Parameters \| NetworkNumber")
+Qualificadores: [**PRETERIDO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ nwlnkipx \\ \\ Parameters \| NetworkNumber")
 </dt> </dl>
 
-A tecnologia de intercâmbio de pacotes de rede (IPX) não é mais suportada e essa propriedade não contém dados úteis.
+A tecnologia IPX (Internetwork Packet Exchange) não tem mais suporte e essa propriedade não contém dados úteis.
 
 </dd> <dt>
 
@@ -972,10 +972,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**preteridos**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ NwlnkIpx \\ \\ Parameters \| VirtualNetworkNumber")
+Qualificadores: [**PRETERIDO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ nwlnkipx \\ \\ Parameters \| VirtualNetworkNumber")
 </dt> </dl>
 
-Não há mais suporte para a tecnologia IPX (Internetwork Packet Exchange) e essa propriedade não contém dados úteis.
+A tecnologia IPX (Internetwork Packet Exchange) não tem mais suporte e essa propriedade não contém dados úteis.
 
 </dd> <dt>
 
@@ -1007,7 +1007,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ Tcpip \\ \\ Parameters \| KeepAliveInterval"), [**Units**](../wmisdk/standard-qualifiers.md) ("milissegundos")
 </dt> </dl>
 
-A **propriedade KeepAliveTime** indica com que frequência o TCP tenta verificar se uma conexão ociosa ainda está intacta enviando um pacote Keep Alive. Um sistema remoto acessível reconhecerá a keep alive transmissão. Os pacotes Keep Alive não são enviados por padrão. Esse recurso pode ser habilitado em uma conexão por um aplicativo. Padrão: 7.200.000 (duas horas).
+A **propriedade KeepAliveTime** indica com que frequência o TCP tenta verificar se uma conexão ociosa ainda está intacta enviando um pacote Keep Alive. Um sistema remoto acessível reconhecerá a keep alive remota. Os pacotes Keep Alive não são enviados por padrão. Esse recurso pode ser habilitado em uma conexão por um aplicativo. Padrão: 7.200.000 (duas horas).
 
 </dd> <dt>
 
@@ -1025,39 +1025,39 @@ Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Funçõ
 
 Endereço MAC (Controle de Acesso à Mídia) do adaptador de rede. Um endereço MAC é atribuído pelo fabricante para identificar exclusivamente o adaptador de rede.
 
-Exemplo: "00:80: C7:8F: 6C: 96"
+Exemplo: "00:80:C7:8F:6C:96"
 
 </dd> <dt>
 
 **MTU**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ tcpip \\ \\ Parameters \| MTU"), [**Units**](../wmisdk/standard-qualifiers.md) ("bytes")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ Tcpip \\ \\ Parameters \| MTU"), [**Unidades**](../wmisdk/standard-qualifiers.md) ("bytes")
 </dt> </dl>
 
-Substitui a unidade máxima de transmissão (MTU) padrão para uma interface de rede. A MTU é o tamanho máximo do pacote (incluindo o cabeçalho de transporte) que o transporte transmitirá pela rede subjacente. O datagrama IP pode abranger vários pacotes. O intervalo desse valor abrange o tamanho mínimo do pacote (68) para a MTU com suporte da rede subjacente.
+Substitui a MTU (Unidade máxima de transmissão) padrão para um interface de rede. A MTU é o tamanho máximo do pacote (incluindo o header de transporte) que o transporte transmitirá pela rede subjacente. O datagrama IP pode abranger vários pacotes. O intervalo desse valor abrange o tamanho mínimo do pacote (68) para a MTU com suporte da rede subjacente.
 
 </dd> <dt>
 
 **NumForwardPackets**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ tcpip \\ \\ Parameters \| NumForwardPackets")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ Tcpip \\ \\ Parameters \| NumForwardPackets")
 </dt> </dl>
 
-Número de cabeçalhos de pacote IP alocados para a fila de pacotes do roteador. Quando todos os cabeçalhos estiverem em uso, o roteador começará a descartar os pacotes da fila aleatoriamente. Esse valor deve ser pelo menos tão grande quanto o valor de **ForwardBufferMemory** dividido pelo tamanho máximo de dados IP das redes conectadas ao roteador. Não deve ser maior do que o valor de **ForwardBufferMemory** dividido por 256, pois pelo menos 256 bytes de memória de buffer de encaminhamento são usados para cada pacote. O número ideal de pacotes de encaminhamento para um determinado tamanho de **ForwardBufferMemory** depende do tipo de tráfego na rede. Ele estará em algum lugar entre esses dois valores. Se o roteador não estiver habilitado, esse parâmetro será ignorado e nenhum cabeçalho será alocado. Padrão: 50, intervalo válido: 1-0xFFFFFFFE.
+Número de headers de pacotes IP alocados para a fila de pacotes do roteador. Quando todos os headers estão em uso, o roteador começará a descartar pacotes da fila aleatoriamente. Esse valor deve ser pelo menos tão grande quanto o **valor ForwardBufferMemory** dividido pelo tamanho máximo de dados IP das redes conectadas ao roteador. Ele não deve ser maior que o **valor ForwardBufferMemory** dividido por 256, uma vez que pelo menos 256 bytes de memória de buffer de avanço são usados para cada pacote. O número ideal de pacotes de encaminhamento para um determinado tamanho **forwardBufferMemory** depende do tipo de tráfego na rede. Ele estará em algum lugar entre esses dois valores. Se o roteador não estiver habilitado, esse parâmetro será ignorado e nenhum headers será alocado. Padrão: 50, Intervalo válido: 1 – 0xFFFFFFFE.
 
 </dd> <dt>
 
@@ -1093,7 +1093,7 @@ Se **TRUE**, o caminho MTU (Unidade máxima de transmissão) será descoberto no
 
 </dd> <dt>
 
-**Servicename**
+**ServiceName**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -1102,16 +1102,16 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| software \\ \\ Microsoft \\ \\ Windows NT \\ \\ CurrentVersion \\ \\ NetworkCards \| ServiceName")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| Software Microsoft Windows NT \\ \\ \\ \\ \\ \\ CurrentVersion \\ \\ NetworkCards \| ServiceName")
 </dt> </dl>
 
-Nome do serviço do adaptador de rede. Esse nome é geralmente mais curto do que o nome completo do produto.
+Nome do serviço do adaptador de rede. Esse nome geralmente é menor que o nome completo do produto.
 
 Exemplo: "Elnkii"
 
 </dd> <dt>
 
-**SettingID**
+**Settingid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -1120,25 +1120,25 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](../wmisdk/standard-qualifiers.md) (256)
+Qualificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
 </dt> </dl>
 
 Identificador pelo qual o objeto atual é conhecido.
 
-Essa propriedade é herdada [**da \_ configuração de CIM**](cim-setting.md).
+Essa propriedade é herdada da [**Configuração cim \_**](cim-setting.md).
 
 </dd> <dt>
 
 **TcpipNetbiosOptions**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Bitmap das configurações possíveis relacionadas ao NetBIOS sobre TCP/IP. Os valores são identificados na lista a seguir.
+Bitmap das possíveis configurações relacionadas ao NetBIOS por TCP/IP. Os valores são identificados na lista a seguir.
 
 <dt>
 
@@ -1168,16 +1168,16 @@ Bitmap das configurações possíveis relacionadas ao NetBIOS sobre TCP/IP. Os v
 **TcpMaxConnectRetransmissions**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ tcpip \\ \\ Parameters \| TcpMaxConnectRetransmissions")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ Tcpip \\ \\ Parameters \| Tcpip Parameters TcpMaxConnectRetransmissions")
 </dt> </dl>
 
-Número de vezes que o TCP tenta retransmitir uma solicitação de conexão antes de encerrar a conexão. O tempo de retransmissão inicial é de 3 segundos. O tempo de retransmissão dobra para cada tentativa. Padrão: 3, Intervalo Válido: 0 – 0xFFFFFFFF.
+Número de vezes que o TCP tenta retransmitir uma solicitação Conexão antes de encerrar a conexão. O tempo de retransmissão inicial é de 3 segundos. O tempo de retransmissão dobra para cada tentativa. Padrão: 3, Intervalo válido: 0 – 0xFFFFFFFF.
 
 </dd> <dt>
 
@@ -1190,7 +1190,7 @@ Tipo de dados: **uint32**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ Tcpip \\ \\ Parameters \| Tcpip Parameters TcpMaxDataRetransmissions")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ Tcpip \\ \\ Parameters \| TcpipMaxDataRetransmissions")
 </dt> </dl>
 
 Número de vezes que o TCP retransmite um segmento de dados individual (segmento não conectado) antes de encerrar a conexão. O tempo de retransmissão dobra com cada retransmissão sucessiva em uma conexão. Padrão: 5, Intervalo válido: 0 – 0xFFFFFFFF.
@@ -1209,7 +1209,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ Tcpip \\ \\ Parameters \| Tcpip Parameters TcpNumConnections")
 </dt> </dl>
 
-Número máximo de conexões que o TCP pode ter abertas simultaneamente. Padrão: 0xFFFFFE, Intervalo Válido: 0 – 0xFFFFFE.
+Número máximo de conexões que o TCP pode ter aberto simultaneamente. Padrão: 0xFFFFFE, Intervalo válido: 0 – 0xFFFFFE.
 
 </dd> <dt>
 
@@ -1232,7 +1232,7 @@ Se **TRUE**, o TCP usará a especificação RFC 1122 para dados urgentes. Se **F
 **TcpWindowSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -1275,10 +1275,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("win32api \| funções de informações do sistema \| [**GetSystemDirectory**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getsystemdirectorya) \| \\ \\ drivers, \\ \\ etc. \\ \\ Lmhosts")
+qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Informações do Sistema funções \| [**GetSystemDirectory**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getsystemdirectorya) \| \\ \\ drivers, \\ \\ etc. \\ \\ lmhosts")
 </dt> </dl>
 
-Caminho para um arquivo de pesquisa WINS no sistema local. Esse arquivo conterá um mapa de endereços IP para nomes de host. Se o arquivo especificado nessa propriedade for encontrado, ele será copiado para a pasta %SystemRoot% \\ system32 \\ drivers \\ etc. do sistema local. Válido somente se a **propriedade WINSEnableLMHostsLookup** for **TRUE.**
+Caminho para um arquivo de pesquisa WINS no sistema local. Esse arquivo conterá um mapa de endereços IP para nomes de host. Se o arquivo especificado nessa propriedade for encontrado, ele será copiado para a pasta% SystemRoot% \\ System32 \\ drivers \\ etc do sistema local. Válido somente se a propriedade **WINSEnableLMHostsLookup** for **true**.
 
 </dd> <dt>
 
@@ -1291,7 +1291,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Funções de entrada e saída do dispositivo Win32API \| \| DeviceIoControl")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| funções de entrada e saída de dispositivo do win32api \| DeviceIoControl")
 </dt> </dl>
 
 Endereço IP do servidor WINS primário.
@@ -1307,10 +1307,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Services \\ \\ Tcpip \\ \\ Parameters \| ScopeID")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ tcpip \\ \\ Parameters \| Scope Identificação_do_escopo")
 </dt> </dl>
 
-Valor anexado ao final do nome NetBIOS que isola um grupo de sistemas de computador que se comunicam entre si. Ele é usado para todas as transações NetBIOS em comunicações TCP/IP desse sistema de computador. Computadores configurados com identificadores de escopo idênticos podem se comunicar com este computador. Clientes TCP/IP com identificadores de escopo diferentes desconsideram pacotes de computadores com esse identificador de escopo. Válido somente quando o [**método EnableWINS**](enablewins-method-in-class-win32-networkadapterconfiguration.md) é executado com êxito.
+Valor acrescentado ao final do nome NetBIOS que isola um grupo de sistemas de computador que se comunicam entre si. Ele é usado para todas as transações NetBIOS em comunicações TCP/IP desse sistema de computador. Computadores configurados com identificadores de escopo idênticos podem se comunicar com este computador. Clientes TCP/IP com diferentes identificadores de escopo desconsideram pacotes de computadores com esse identificador de escopo. Válido somente quando o método [**EnableWINS ativa**](enablewins-method-in-class-win32-networkadapterconfiguration.md) é executado com êxito.
 
 </dd> <dt>
 
@@ -1323,7 +1323,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Funções de entrada e saída do dispositivo Win32API \| \| DeviceIoControl")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| funções de entrada e saída de dispositivo do win32api \| DeviceIoControl")
 </dt> </dl>
 
 Endereço IP do servidor WINS secundário.
@@ -1332,7 +1332,7 @@ Endereço IP do servidor WINS secundário.
 
 ## <a name="remarks"></a>Comentários
 
-A **classe \_ NetworkAdapterConfiguration do Win32** é derivada da [**configuração cim \_**](cim-setting.md).
+A classe **Win32 \_ NetworkAdapterConfiguration** é derivada da [**\_ configuração de CIM**](cim-setting.md).
 
 ## <a name="examples"></a>Exemplos
 

@@ -4,12 +4,12 @@ ms.assetid: 8add2d72-efd3-4971-89d9-428190115ba0
 title: System. ItemName
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ab5ba987d8bdcd966724c15f0632edbfc8eb3d9f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: deb6fa89b55ddb2b9050916db6d05f359839c52134c849a54a8768b4b16cd9fc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921571"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118970395"
 ---
 # <a name="systemitemname"></a>System. ItemName
 

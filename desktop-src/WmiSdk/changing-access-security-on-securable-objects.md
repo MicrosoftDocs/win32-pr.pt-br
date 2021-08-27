@@ -1,5 +1,5 @@
 ---
-description: A partir do Windows Vista, muitos objetos protegíveis têm métodos para obter ou definir o descritor de segurança. Com as permissões apropriadas, você pode ler ou alterar descritores de segurança em objetos protegíveis.
+description: a partir do Windows Vista, muitos objetos protegíveis têm métodos para obter ou definir o descritor de segurança. Com as permissões apropriadas, você pode ler ou alterar descritores de segurança em objetos protegíveis.
 ms.assetid: da660e7e-f32d-4b7d-b979-f7b482a73fa2
 ms.tgt_platform: multiple
 title: Alterando a segurança de acesso em objetos protegíveis
@@ -10,16 +10,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 9682c259fc2f7e45409f7ddcaaa95dac2cba1b54
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e4cdaa948e6f0e695b3e77576b0a0726f0b38f3b649f005b42aa8e205c894db8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105757724"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119050984"
 ---
 # <a name="changing-access-security-on-securable-objects"></a>Alterando a segurança de acesso em objetos protegíveis
 
-Impressoras, serviços, chaves do registro, aplicativos DCOM e namespaces do WMI são objetos protegíveis. O acesso a objetos protegíveis é protegido por [*descritores de segurança*](/windows/desktop/SecGloss/s-gly), que especificam os usuários que têm acesso. A partir do Windows Vista, muitos objetos protegíveis têm métodos para obter ou definir o descritor de segurança. Com as permissões apropriadas, você pode ler ou alterar descritores de segurança em objetos protegíveis. Usando esses métodos, você pode controlar quais contas de usuário ou grupos têm acesso a uma impressora, serviço, namespace WMI ou outro objeto. Para obter mais informações sobre descritores de segurança e seu uso no WMI, consulte [acesso a objetos protegíveis do WMI](access-to-wmi-securable-objects.md).
+Impressoras, serviços, chaves do registro, aplicativos DCOM e namespaces do WMI são objetos protegíveis. O acesso a objetos protegíveis é protegido por [*descritores de segurança*](/windows/desktop/SecGloss/s-gly), que especificam os usuários que têm acesso. a partir do Windows Vista, muitos objetos protegíveis têm métodos para obter ou definir o descritor de segurança. Com as permissões apropriadas, você pode ler ou alterar descritores de segurança em objetos protegíveis. Usando esses métodos, você pode controlar quais contas de usuário ou grupos têm acesso a uma impressora, serviço, namespace WMI ou outro objeto. Para obter mais informações sobre descritores de segurança e seu uso no WMI, consulte [acesso a objetos protegíveis do WMI](access-to-wmi-securable-objects.md).
 
 As seções a seguir são discutidas neste tópico:
 
@@ -34,23 +34,23 @@ A lista a seguir contém os métodos que os objetos protegíveis têm para permi
 
 -   Namespaces WMI
 
-    Um provedor pode estabelecer a segurança que só permite que determinados grupos tenham acesso aos dados em um namespace WMI. A segurança do namespace é controlada por métodos na classe [**\_ \_ SystemSecurity**](--systemsecurity.md) . A partir do Windows Vista, os métodos [**GetSecurityDescriptor**](getsecuritydescriptor-method-in-class---systemsecurity-.md) e [**SetSecurityDescriptor**](setsecuritydescriptor-method-in-class---systemsecurity.md) retornam e gravam objetos [**\_ \_ SecurityDescriptor**](--securitydescriptor.md) . Para obter mais informações, consulte [Configurando descritores de segurança de namespace](setting-namespace-security-descriptors.md).
+    Um provedor pode estabelecer a segurança que só permite que determinados grupos tenham acesso aos dados em um namespace WMI. A segurança do namespace é controlada por métodos na classe [**\_ \_ SystemSecurity**](--systemsecurity.md) . a partir do Windows Vista, os métodos [**GetSecurityDescriptor**](getsecuritydescriptor-method-in-class---systemsecurity-.md) e [**SetSecurityDescriptor**](setsecuritydescriptor-method-in-class---systemsecurity.md) retornam e gravam objetos [**\_ \_ SecurityDescriptor**](--securitydescriptor.md) . Para obter mais informações, consulte [Configurando descritores de segurança de namespace](setting-namespace-security-descriptors.md).
 
 -   Chaves do Registro
 
-    A partir do Windows Vista, você pode proteger as chaves do registro para que elas não possam ser alteradas por usuários não autorizados. A classe [**StdRegProv**](/previous-versions/windows/desktop/regprov/stdregprov) tem os métodos [**GetSecurityDescriptor**](/previous-versions/windows/desktop/regprov/getsecuritydescriptor-method-in-class-stdregprov) e [**SetSecurityDescriptor**](/previous-versions/windows/desktop/regprov/setsecuritydescriptor-method-in-class-stdregprov) . Esses métodos retornam e gravam objetos [**Win32 \_ SecurityDescriptor**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) .
+    a partir do Windows Vista, você pode proteger as chaves do registro para que elas não possam ser alteradas por usuários não autorizados. A classe [**StdRegProv**](/previous-versions/windows/desktop/regprov/stdregprov) tem os métodos [**GetSecurityDescriptor**](/previous-versions/windows/desktop/regprov/getsecuritydescriptor-method-in-class-stdregprov) e [**SetSecurityDescriptor**](/previous-versions/windows/desktop/regprov/setsecuritydescriptor-method-in-class-stdregprov) . Esses métodos retornam e gravam objetos [**Win32 \_ SecurityDescriptor**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) .
 
 -   Impressoras
 
-    A partir do Windows Vista, você pode proteger o acesso a instâncias da classe de [**\_ impressora do Win32**](/windows/desktop/CIMWin32Prov/win32-printer) usando os métodos [**GetSecurityDescriptor**](/windows/desktop/CIMWin32Prov/getsecuritydescriptor-method-in-class-win32-printer) e [**SetSecurityDescriptor**](/windows/desktop/CIMWin32Prov/setsecuritydescriptor-method-in-class-win32-printer) . Esses métodos retornam e gravam objetos [**Win32 \_ SecurityDescriptor**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) .
+    a partir do Windows Vista, você pode proteger o acesso a instâncias da classe de [**\_ impressora do Win32**](/windows/desktop/CIMWin32Prov/win32-printer) usando os métodos [**GetSecurityDescriptor**](/windows/desktop/CIMWin32Prov/getsecuritydescriptor-method-in-class-win32-printer) e [**SetSecurityDescriptor**](/windows/desktop/CIMWin32Prov/setsecuritydescriptor-method-in-class-win32-printer) . Esses métodos retornam e gravam objetos [**Win32 \_ SecurityDescriptor**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) .
 
 -   Serviços
 
-    A partir do Windows Vista, você pode proteger o acesso a instâncias da classe de [**\_ serviço do Win32**](/windows/desktop/CIMWin32Prov/win32-service) usando os métodos [**GetSecurityDescriptor**](/windows/desktop/CIMWin32Prov/getsecuritydescriptor-method-in-class-win32-service) e [**SetSecurityDescriptor**](/windows/desktop/CIMWin32Prov/setsecuritydescriptor-method-in-class-win32-service) . Esses métodos retornam e gravam objetos [**Win32 \_ SecurityDescriptor**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) .
+    a partir do Windows Vista, você pode proteger o acesso a instâncias da classe de [**\_ serviço do Win32**](/windows/desktop/CIMWin32Prov/win32-service) usando os métodos [**GetSecurityDescriptor**](/windows/desktop/CIMWin32Prov/getsecuritydescriptor-method-in-class-win32-service) e [**SetSecurityDescriptor**](/windows/desktop/CIMWin32Prov/setsecuritydescriptor-method-in-class-win32-service) . Esses métodos retornam e gravam objetos [**Win32 \_ SecurityDescriptor**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) .
 
 -   Aplicativos DCOM
 
-    As instâncias do aplicativo DCOM têm vários descritores de segurança. A partir do Windows Vista, use métodos da classe [**Win32 \_ DCOMApplicationSetting**](/windows/desktop/CIMWin32Prov/win32-dcomapplicationsetting) para obter ou alterar os vários descritores de segurança. Descritores de segurança são retornados como instâncias da classe [**Win32 \_ SecurityDescriptor**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) .
+    As instâncias do aplicativo DCOM têm vários descritores de segurança. a partir do Windows Vista, use métodos da classe [**Win32 \_ DCOMApplicationSetting**](/windows/desktop/CIMWin32Prov/win32-dcomapplicationsetting) para obter ou alterar os vários descritores de segurança. Descritores de segurança são retornados como instâncias da classe [**Win32 \_ SecurityDescriptor**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) .
 
     Para obter ou alterar as permissões de configuração, chame os métodos [**GetConfigurationSecurityDescriptor**](/windows/desktop/CIMWin32Prov/getconfigurationsecuritydescriptor-method-in-class-win32-dcomapplicationsetting) ou [**SetConfigurationSecurityDescriptor**](/windows/desktop/CIMWin32Prov/setconfigurationsecuritydescriptor-method-in-class-win32-dcomapplicationsetting) .
 

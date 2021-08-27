@@ -14,12 +14,12 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 14ba07894c74567487704bb1f63e7242542af313
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f5f6a59dfd741eb524c4b6015c5384123b6a2d491b5bdc030053bbc88ad6800a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105793919"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119026884"
 ---
 # <a name="iportabledevicepropvariantcollection-interface"></a>Interface IPortableDevicePropVariantCollection
 
@@ -43,7 +43,7 @@ A interface **IPortableDevicePropVariantCollection** tem esses métodos.
 |:----------------------------------------------------------------------|:------------------------------------------------------------------------------------|
 | [**Agrega**](iportabledevicepropvariantcollection-add.md)               | Adiciona um item à coleção.<br/>                                          |
 | [**ChangeType**](iportabledevicepropvariantcollection-changetype.md) | Converte todos os itens da coleção no VARTYPE especificado.<br/>           |
-| [**Formatação**](iportabledevicepropvariantcollection-clear.md)           | Libera e, em seguida, remove todos os itens da coleção.<br/>                  |
+| [**Limpar**](iportabledevicepropvariantcollection-clear.md)           | Libera e, em seguida, remove todos os itens da coleção.<br/>                  |
 | [**GetAt**](iportabledevicepropvariantcollection-getat.md)           | Recupera um item da coleção por um índice baseado em zero.<br/>             |
 | [**GetCount**](iportabledevicepropvariantcollection-getcount.md)     | Recupera o número de itens nesta coleção.<br/>                        |
 | [**GetType**](iportabledevicepropvariantcollection-gettype.md)       | Recupera o tipo de dados dos itens na coleção.<br/>                  |

@@ -1,7 +1,7 @@
 ---
-description: 'O método ZeroBetween2 remove tudo da faixa entre os horários especificados. Esse método é equivalente a IAMTimelineTrack:: ZeroBetween, mas usa os valores de REFTIME.'
+description: O método ZeroBetween2 remove tudo da faixa entre os horários especificados. Esse método é equivalente a IAMTimelineTrack::ZeroBetween, mas aceita valores REFTIME.
 ms.assetid: 56b9be30-cc3f-4843-bf35-910498242d71
-title: 'Método IAMTimelineTrack:: ZeroBetween2 (QEdit. h)'
+title: Método IAMTimelineTrack::ZeroBetween2 (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 27e3ab5cc2a631cb54c926824c2f3410413cd981
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 72ea9d96be976f1b09e1cdc9721eb5eebe7adce2905d7a028d70a9ff50ff58bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759440"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118952775"
 ---
-# <a name="iamtimelinetrackzerobetween2-method"></a>Método IAMTimelineTrack:: ZeroBetween2
+# <a name="iamtimelinetrackzerobetween2-method"></a>Método IAMTimelineTrack::ZeroBetween2
 
 > [!Note]  
 > \[Preterido. Essa API pode ser removida de versões futuras do Windows.\]
 
  
 
-O `ZeroBetween2` método remove tudo da faixa entre os horários especificados. Esse método é equivalente a [**IAMTimelineTrack:: ZeroBetween**](iamtimelinetrack-zerobetween.md), mas usa os valores de [**REFTIME**](reftime.md) .
+O `ZeroBetween2` método remove tudo da faixa entre os horários especificados. Esse método é equivalente a [**IAMTimelineTrack::ZeroBetween**](iamtimelinetrack-zerobetween.md), mas aceita [**valores REFTIME.**](reftime.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -60,15 +60,15 @@ Fim do intervalo a ser limpo, em segundos.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor **HRESULT** . Os possíveis valores incluem os seguintes.
+Retorna um **valor HRESULT.** Os possíveis valores incluem os seguintes.
 
 
 
 | Código de retorno                                                                             | Descrição                                                     |
 |-----------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| <dl> <dt>**\_falso**</dt> </dl> | O intervalo de tempo cai além de tudo na faixa.<br/> |
+| <dl> <dt>**S \_ FALSE**</dt> </dl> | O intervalo de tempo vai além de tudo na faixa.<br/> |
 | <dl> <dt>**S \_ OK**</dt> </dl>    | Êxito.<br/>                                             |
 
 
@@ -78,12 +78,12 @@ Retorna um valor **HRESULT** . Os possíveis valores incluem os seguintes.
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> O arquivo de cabeçalho QEdit. h não é compatível com cabeçalhos do Direct3D posteriores à versão 7.
+> O arquivo de título Qedit.h não é compatível com os headers direct3D posteriores à versão 7.
 
  
 
 > [!Note]  
-> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Para obter o Qedit.h, baixe [o Microsoft Windows SDK Update para Windows Vista e .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O Qedit.h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -93,8 +93,8 @@ Retorna um valor **HRESULT** . Os possíveis valores incluem os seguintes.
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>QEdit. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -102,7 +102,7 @@ Retorna um valor **HRESULT** . Os possíveis valores incluem os seguintes.
 
 <dl> <dt>
 
-[**Interface IAMTimelineTrack**](iamtimelinetrack.md)
+[**IAMTimelineTrack Interface**](iamtimelinetrack.md)
 </dt> <dt>
 
 [Códigos de erro e êxito](error-and-success-codes.md)

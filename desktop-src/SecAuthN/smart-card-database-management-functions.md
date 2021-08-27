@@ -4,12 +4,12 @@ ms.assetid: a2f457e1-c042-42e7-9071-cf0edd68e27a
 title: Funções de gerenciamento de banco de dados de cartão inteligente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c424494a30c71e15647da773027311ed53a2599
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 61b107663df8b80b5883c9ce9b3f045e8d7913ac92b5acb23d9ae758dafa2ac9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297110"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118917802"
 ---
 # <a name="smart-card-database-management-functions"></a>Funções de gerenciamento de banco de dados de cartão inteligente
 

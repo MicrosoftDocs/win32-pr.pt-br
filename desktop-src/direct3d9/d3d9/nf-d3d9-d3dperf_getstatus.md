@@ -1,6 +1,6 @@
 ---
-title: Função D3DPERF_GetStatus
-description: Determine o estado atual do criador de perfil do programa de destino.
+title: D3DPERF_GetStatus função
+description: Determine o estado atual do profiler do programa de destino.
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 04/06/2020
@@ -16,16 +16,16 @@ api_location:
 api_name:
 - D3DPERF_GetStatus
 targetos: Windows
-ms.openlocfilehash: 626d56dd449b0a0aa92e85c82dabda119900680d
-ms.sourcegitcommit: 517a888e0370b9ec64c451635f12d60245ff5ae3
+ms.openlocfilehash: 78ff9eda9ab224faf4b2a117f6230e3361664bbfea35d8b2a8484ba7f5ab764a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "104293836"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118805741"
 ---
-# <a name="d3dperf_getstatus-function"></a>Função D3DPERF_GetStatus
+# <a name="d3dperf_getstatus-function"></a>D3DPERF_GetStatus função
 
-Determine o estado atual do criador de perfil do programa de destino.
+Determine o estado atual do profiler do programa de destino.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,14 +33,14 @@ Determine o estado atual do criador de perfil do programa de destino.
 DWORD WINAPI D3DPERF_GetStatus( void );
 ```
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Um valor diferente de zero quando o PIX está criando o perfil do programa de destino; caso contrário, zero.
+Um valor não zero quando o SEGMENT está criação de perfil do programa de destino; caso contrário, zero.
 
 ## <a name="requirements"></a>Requisitos
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Plataforma de Destino** | Windows |
-| **Cabeçalho** | d3d9. h |
-| **Biblioteca** | d3d9. lib |
+| **Cabeçalho** | d3d9.h |
+| **Biblioteca** | d3d9.lib |
 | **DLL** | d3d9.dll |

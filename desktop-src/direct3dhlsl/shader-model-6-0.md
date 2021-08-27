@@ -4,12 +4,12 @@ description: O Shader Model 6,0 adiciona uma variedade de intrínsecores de oper
 ms.assetid: 2F28F86D-F599-47EA-90D7-6833ABA976FC
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 33eb4eab2a92e929bdefdc1df0f9cb1e0d84909a
-ms.sourcegitcommit: 39fe65a8a7c1cbea382c78820663c548f4e77079
+ms.openlocfilehash: 609f0a9d36fbf7414e724cd31bc05a8e4d6abdefa5c842f30934feba0dffb868
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104084998"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118790695"
 ---
 # <a name="shader-model-6"></a>Modelo do sombreador 6
 

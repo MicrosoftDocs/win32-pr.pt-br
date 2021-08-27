@@ -47,7 +47,7 @@ A **estrutura \_ \_ \_ req logon de credenciais EAP** é idêntica à estrutura 
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
 | Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Eaptypes. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Eaptypes. h</dt> </dl> |
 
 
 

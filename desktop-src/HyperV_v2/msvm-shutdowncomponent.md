@@ -57,12 +57,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 49729568a1625b3df723b1b5b88cc1044b41e715
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4e0e88779d34867d8f37f33e0cf8a300e7f066dca537ac3fc3151f524be09b78
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010710"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118950345"
 ---
 # <a name="msvm_shutdowncomponent-class"></a>\_Classe Msvm ShutdownComponent
 
@@ -138,7 +138,7 @@ A classe **Msvm \_ ShutdownComponent** tem esses métodos.
 | **OnlineDevice**                                                        | Não há suporte para o método.<br/>                                                           |
 | **QuiesceDevice**                                                       | Não há suporte para o método.<br/>                                                           |
 | [**RequestStateChange**](msvm-shutdowncomponent-requeststatechange.md) | Solicita uma alteração de estado.<br/>                                                                |
-| [**Redefinir**](msvm-shutdowncomponent-reset.md)                           | Redefine o componente.<br/>                                                                   |
+| [**Definido**](msvm-shutdowncomponent-reset.md)                           | Redefine o componente.<br/>                                                                   |
 | **Restaurarproperties**                                                   | Não há suporte para o método.<br/>                                                           |
 | **Salvarproperties**                                                      | Não há suporte para o método.<br/>                                                           |
 | **SetPowerState**                                                       | Não há suporte para o método.<br/>                                                           |
@@ -855,8 +855,8 @@ O acesso à classe **Msvm \_ ShutdownComponent** pode ser restringido pela filtr
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                                    |
 | Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |

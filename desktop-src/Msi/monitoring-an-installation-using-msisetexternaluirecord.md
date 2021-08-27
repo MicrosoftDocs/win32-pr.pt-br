@@ -1,21 +1,21 @@
 ---
-description: Os autores de pacote podem monitorar mensagens Windows Installer internas por meio da criação de um aplicativo executável que contém um manipulador de retorno de chamada baseado em registro para receber as mensagens e a funcionalidade para iniciar uma instalação.
+description: Os autores do pacote podem monitorar mensagens internas Windows do Instalador por meio da criação de um aplicativo executável que contém um manipulador de retorno de chamada baseado em registro para receber as mensagens e a funcionalidade para iniciar uma instalação.
 ms.assetid: 5d9e51dd-7918-491f-aea9-01a6e0317c57
-title: Monitorando uma instalação usando o MsiSetExternalUIRecord
+title: Monitorando uma instalação usando MsiSetExternalUIRecord
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ce3fd0caf3d24eed49ff8a373b6f4d38037f840f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2fc74001a52d7eb1ef2cfbc3a052eaad1a2d72e127571f6f51d5afac992343a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105747961"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118945081"
 ---
-# <a name="monitoring-an-installation-using-msisetexternaluirecord"></a>Monitorando uma instalação usando o MsiSetExternalUIRecord
+# <a name="monitoring-an-installation-using-msisetexternaluirecord"></a>Monitorando uma instalação usando MsiSetExternalUIRecord
 
-Os autores de pacote podem monitorar mensagens Windows Installer internas por meio da criação de um aplicativo executável que contém um manipulador de retorno de chamada baseado em registro para receber as mensagens e a funcionalidade para iniciar uma instalação.
+Os autores do pacote podem monitorar mensagens internas Windows do Instalador por meio da criação de um aplicativo executável que contém um manipulador de retorno de chamada baseado em registro para receber as mensagens e a funcionalidade para iniciar uma instalação.
 
-O manipulador baseado em registro no exemplo a seguir está em conformidade com o protótipo de [**\_ \_ registro do manipulador INSTALLUI**](/windows/win32/api/msi/nc-msi-installui_handler_record) e um ponteiro para esse manipulador de retorno de chamada é passado para a função [**MsiSetExternalUIRecord**](/windows/desktop/api/Msi/nf-msi-msisetexternaluirecord) .
+O manipulador baseado em registro no exemplo a seguir está em conformidade com o protótipo [**INSTALLUI \_ HANDLER \_ RECORD**](/windows/win32/api/msi/nc-msi-installui_handler_record) e um ponteiro para esse manipulador de retorno de chamada é passado para a [**função MsiSetExternalUIRecord.**](/windows/desktop/api/Msi/nf-msi-msisetexternaluirecord)
 
 
 ```C++

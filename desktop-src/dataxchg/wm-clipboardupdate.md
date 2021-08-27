@@ -3,7 +3,7 @@ title: Mensagem de WM_CLIPBOARDUPDATE (WinUser. h)
 description: Enviado quando o conteúdo da área de transferência foi alterado.
 ms.assetid: 1508aa22-9cf0-40a2-8cb0-ce7c8671df2c
 keywords:
-- Troca de dados de mensagem WM_CLIPBOARDUPDATE
+- WM_CLIPBOARDUPDATE Exchange de dados da mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 303110f0d094cfed336a9f92006b3720a0ccc83b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d0483ba43b6b0c660daee74637fd9f9ac8d377a16097b5cfd60632c1b691ead7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085691"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118991216"
 ---
 # <a name="wm_clipboardupdate-message"></a>Mensagem do WM \_ CLIPBOARDUPDATE
 
@@ -50,7 +50,7 @@ Esse parâmetro não é usado e deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se um aplicativo processar essa mensagem, ele deverá retornar zero.
 
@@ -64,9 +64,9 @@ Para registrar uma janela para receber essa mensagem, use a função [**AddClipb
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

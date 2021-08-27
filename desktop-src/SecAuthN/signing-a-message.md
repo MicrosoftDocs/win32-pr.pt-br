@@ -4,12 +4,12 @@ ms.assetid: a65054bd-31cb-4842-af59-82cfe799fb70
 title: Assinando uma mensagem
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 36f8151a66120575bfcaeda62955a7f6aa47e8e5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b605ccaaa4adfe37dc2bbe5f5c0ed809f0656896e5e85478b0b63740bf6f63e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105749222"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118918045"
 ---
 # <a name="signing-a-message"></a>Assinando uma mensagem
 
@@ -17,7 +17,7 @@ Quando um cliente e um servidor concluem a configuração do [*contexto de segur
 
 O exemplo a seguir mostra o lado do cliente que gera uma mensagem assinada para enviar ao servidor. Antes de chamar [**MakeSignature**](/windows/desktop/api/Sspi/nf-sspi-makesignature), o cliente chama [**QueryContextAttributes (geral)**](/windows/win32/api/sspi/nf-sspi-querycontextattributesa) com uma estrutura de [**\_ tamanhos SecPkgContext**](/windows/desktop/api/Sspi/ns-sspi-secpkgcontext_sizes) para determinar o tamanho do buffer necessário para manter a assinatura da mensagem. Se o membro **cbMaxSignature** for zero, o [*pacote de segurança*](../secgloss/s-gly.md) não oferecerá suporte a mensagens de assinatura. Caso contrário, esse membro indica o tamanho do buffer a ser alocado para receber a assinatura.
 
-O exemplo supõe que uma variável **SecHandle** chamada *phContext* e uma estrutura de **soquete** chamada *s* são inicializadas. Para as declarações e as iniciações dessas variáveis, consulte [usando o SSPI com um cliente do Windows Sockets](using-sspi-with-a-windows-sockets-client.md) e [usando o SSPI com um servidor do Windows Sockets](using-sspi-with-a-windows-sockets-server.md). Este exemplo inclui chamadas para funções em Secur32. lib, que devem ser incluídas entre as bibliotecas de link.
+O exemplo supõe que uma variável **SecHandle** chamada *phContext* e uma estrutura de **soquete** chamada *s* são inicializadas. para as declarações e as iniciações dessas variáveis, consulte [usando sspi com um cliente de soquetes Windows](using-sspi-with-a-windows-sockets-client.md) e [usando sspi com um servidor de soquetes de Windows](using-sspi-with-a-windows-sockets-server.md). Este exemplo inclui chamadas para funções em Secur32. lib, que devem ser incluídas entre as bibliotecas de link.
 
 
 ```C++

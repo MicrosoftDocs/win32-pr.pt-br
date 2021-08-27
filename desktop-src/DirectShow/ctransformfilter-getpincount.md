@@ -1,7 +1,7 @@
 ---
-description: O método GetPinCount recupera o número de Pins no filtro.
+description: O método GetPinCount recupera o número de pinos no filtro.
 ms.assetid: 29039ada-fccd-4890-b36b-3dd5c0bbdc3e
-title: Método CTransformFilter. GetPinCount (Transfrm. h)
+title: Método CTransformFilter.GetPinCount (Transfrm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ba1d2046bf7be31a9c0d3f3d43b13aeeffd1f76b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ac9269149d7f2bbc95e811515f70aa279a4aafd8cf34b2d5077ed69019b86c2d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751481"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118953595"
 ---
-# <a name="ctransformfiltergetpincount-method"></a>Método CTransformFilter. GetPinCount
+# <a name="ctransformfiltergetpincount-method"></a>Método CTransformFilter.GetPinCount
 
-O `GetPinCount` método recupera o número de Pins no filtro.
+O `GetPinCount` método recupera o número de pinos no filtro.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,13 +40,13 @@ virtual int GetPinCount();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna 2.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método substitui o método [**CBaseFilter:: GetPinCount**](cbasefilter-getpincount.md) . A classe **CTransformFilter** dá suporte a exatamente um PIN de entrada e um PIN de saída.
+Esse método substitui o [**método CBaseFilter::GetPinCount.**](cbasefilter-getpincount.md) A **classe CTransformFilter** dá suporte a exatamente um pino de entrada e um pino de saída.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Esse método substitui o método [**CBaseFilter:: GetPinCount**](cbasefilter-get
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Transfrm. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Transfrm.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

@@ -3,7 +3,7 @@ title: Mensagem de TB_GETBITMAP (commctrl. h)
 description: Recupera o índice do bitmap associado a um botão em uma barra de ferramentas.
 ms.assetid: 64878cca-7d71-48ad-b2ed-d2bdc3067592
 keywords:
-- Controles de TB_GETBITMAP de mensagens do Windows
+- controles de Windows de mensagem de TB_GETBITMAP
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 771073b67b1421a5d9bda9d162bc234400c85885
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ebb976d206de0cdbd0234763f92ac0417cc974355a3371d04476d7969e1f763c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103919231"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118957905"
 ---
 # <a name="tb_getbitmap-message"></a>+ TB de \_ mensagem de bitmap
 
@@ -39,7 +39,7 @@ Identificador de comando do botão cujo índice de bitmap deve ser recuperado.
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o índice do bitmap se tiver êxito ou nenhum outro.
 
@@ -49,9 +49,9 @@ Retorna o índice do bitmap se tiver êxito ou nenhum outro.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

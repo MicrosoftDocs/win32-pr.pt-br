@@ -1,7 +1,7 @@
 ---
-description: Associa uma máquina virtual e seus dispositivos a instâncias do CIM \_ SettingData que representam as configurações atuais que se aplicam a esses objetos.
+description: Associa uma máquina virtual e seus dispositivos a instâncias de Cim SettingData que representam as configurações atuais que \_ se aplicam a esses objetos.
 ms.assetid: 991FE773-1F87-4D5E-89E6-CB1A33989B1A
-title: Classe Msvm_SettingsDefineState
+title: Msvm_SettingsDefineState classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,18 +15,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: f104943be80df696b58c9d5d6eaad4c430362338
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eea8a6cce263ddb3ad00ecd6951c1d5b47c6d98d58e99763b3f28780cb3438b6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170252"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118950455"
 ---
-# <a name="msvm_settingsdefinestate-class"></a>\_Classe Msvm SettingsDefineState
+# <a name="msvm_settingsdefinestate-class"></a>Classe Msvm \_ SettingsDefineState
 
-Associa uma máquina virtual e seus dispositivos a instâncias do [**CIM \_ SettingData**](/previous-versions//cc136911(v=vs.85)) que representam as configurações atuais que se aplicam a esses objetos. Mais especificamente, ele associa o [**Msvm \_ ComputerSystem**](msvm-computersystem.md) a instâncias [**de Msvm \_ VirtualSystemSettingData**](msvm-virtualsystemsettingdata.md)e associa **Msvm \_ \** _ derivados de [_ *CIM \_ LogicalDevice* *](/windows/desktop/CIMWin32Prov/cim-logicaldevice) com **Msvm \_ \** _ derivados de [_ *CIM \_ ResourceAllocationSettingData*. *](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata)
+Associa uma máquina virtual e seus dispositivos a instâncias de [**Cim \_ SettingData**](/previous-versions//cc136911(v=vs.85)) que representam as configurações atuais que se aplicam a esses objetos. Mais especificamente, ele associa [**msvm \_ ComputerSystem**](msvm-computersystem.md) a instâncias de [**Msvm \_ VirtualSystemSettingData**](msvm-virtualsystemsettingdata.md)e associa **\_ \* Msvm* _ derivados de [_ CIM *\_ LogicalDevice* *](/windows/desktop/CIMWin32Prov/cim-logicaldevice) a **\_ \* Msvm* _ derivados de _ CIM [*\_ ResourceAllocationSettingData* *](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
 
-A sintaxe a seguir é simplificada formato MOF código (MOF) e inclui todas as propriedades herdadas.
+A sintaxe a seguir é simplificada Managed Object Format código MOF e inclui todas as propriedades herdadas.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,17 +41,17 @@ class Msvm_SettingsDefineState : CIM_SettingsDefineState
 
 ## <a name="members"></a>Membros
 
-A classe **Msvm \_ SettingsDefineState** tem estes tipos de membros:
+A **classe Msvm \_ SettingsDefineState** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Msvm \_ SettingsDefineState** tem essas propriedades.
+A **classe Msvm \_ SettingsDefineState** tem essas propriedades.
 
 <dl> <dt>
 
-**Managedelement**
+**ManagedElement**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **[ **Msvm \_ ComputerSystem**](msvm-computersystem.md)**
@@ -64,7 +64,7 @@ Uma referência à máquina virtual.
 
 </dd> <dt>
 
-**SettingData**
+**Settingdata**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **[ **Msvm \_ VirtualSystemSettingData**](msvm-virtualsystemsettingdata.md)**
@@ -79,7 +79,7 @@ Uma referência às configurações ativas no momento para a máquina virtual.
 
 ## <a name="remarks"></a>Comentários
 
-O acesso à classe **Msvm \_ SettingsDefineState** pode ser restringido pela filtragem do UAC. Para obter mais informações, consulte [controle de conta de usuário e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+O acesso à **classe Msvm \_ SettingsDefineState** pode ser restrito pela Filtragem de UAC. Para obter mais informações, consulte [Controle de conta de usuário e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -87,10 +87,10 @@ O acesso à classe **Msvm \_ SettingsDefineState** pode ser restringido pela fil
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 8.1 \[ apenas aplicativos de área de trabalho\]<br/>                                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012 R2\]<br/>                                                 |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8.1 somente aplicativos da área de trabalho\]<br/>                                                            |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 Somente \[ aplicativos da área de trabalho R2\]<br/>                                                 |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -99,13 +99,13 @@ O acesso à classe **Msvm \_ SettingsDefineState** pode ser restringido pela fil
 
 <dl> <dt>
 
-[**\_SETTINGSDEFINESTATE CIM**](cim-settingsdefinestate.md)
+[**Configurações \_ cimDefineState**](cim-settingsdefinestate.md)
 </dt> <dt>
 
-[**\_SETTINGSDEFINESTATE CIM**](/previous-versions/windows/desktop/clushyperv/cim-settingsdefinestate)
+[**Configurações \_ cimDefineState**](/previous-versions/windows/desktop/clushyperv/cim-settingsdefinestate)
 </dt> <dt>
 
-[Classes de gerenciamento do sistema virtual](virtual-system-management-classes.md)
+[Classes de gerenciamento de sistema virtual](virtual-system-management-classes.md)
 </dt> </dl>
 
  

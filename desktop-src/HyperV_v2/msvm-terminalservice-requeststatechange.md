@@ -1,7 +1,7 @@
 ---
-description: O método RequestStateChange da classe Msvm_TerminalService-solicita uma alteração de estado.
+description: Método RequestStateChange da classe Msvm_TerminalService - Solicita uma alteração de estado.
 ms.assetid: 5bba12da-fde0-40b6-869c-6e6822adba3b
-title: Método RequestStateChange da classe Msvm_TerminalService
+title: Método RequestStateChange da classe Msvm_TerminalService classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 816bde8dfc58a94e15fb0d96a9915e7490c4e42b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: dcaf35f7d91d56ceb70c01a96d310275fb69fbe344eb8e86164ef9e5e7d417e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108111144"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118949668"
 ---
 # <a name="requeststatechange-method-of-the-msvm_terminalservice-class"></a>Método RequestStateChange da classe Msvm \_ TerminalService
 
@@ -41,10 +41,10 @@ uint32 RequestStateChange(
 
 <dl> <dt>
 
-*Requestedstate* \[ no\]
+*RequestedState* \[ Em\]
 </dt> <dd>
 
-O novo estado. As informações serão colocadas na propriedade **requestedstate** da instância se o código de retorno do método **RequestStateChange** for 0 ou 4096. Para obter mais informações, consulte a descrição das propriedades **enabledstate** e **requestedstate** para o elemento. Deve ser um dos valores a seguir.
+O novo estado. As informações são colocadas na propriedade **RequestedState** da instância se o código de retorno do **método RequestStateChange** for 0 ou 4096. Para obter mais informações, consulte a descrição das **propriedades EnabledState** e **RequestedState** para o elemento. Esse deve ser um dos valores a seguir.
 
 <dt>
 
@@ -85,14 +85,14 @@ O novo estado. As informações serão colocadas na propriedade **requestedstate
 
 <span id="Defer"></span><span id="defer"></span><span id="DEFER"></span>
 
-**Defer** (8)
+**Adiar** (8)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Quiesce"></span><span id="quiesce"></span><span id="QUIESCE"></span>
 
-**Desativar** (9)
+**Quiesce** (9)
 
 
 </dt> <dd></dd> <dt>
@@ -113,29 +113,29 @@ O novo estado. As informações serão colocadas na propriedade **requestedstate
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DMTF reservado** (..)
+**DMTF Reservado** (..)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Fornecedor reservado** (32768.. 65535)
+**Fornecedor Reservado** (32768..65535)
 
 
 </dt> <dd></dd> </dl> </dd> <dt>
 
-*Trabalho* \[ do fora\]
+*Trabalho* \[ out\]
 </dt> <dd>
 
-Pode conter uma referência para o [**CIM \_ ConcreteJob**](cim-concretejob.md) criado para acompanhar a transição de estado iniciada pela invocação de método.
+Pode conter uma referência ao [**\_ ConcreteJob CIM**](cim-concretejob.md) criado para acompanhar a transição de estado iniciada pela invocação de método.
 
 </dd> <dt>
 
-*TimeoutPeriod* \[ no\]
+*TimeoutPeriod* \[ Em\]
 </dt> <dd>
 
-Um período de tempo limite que especifica a quantidade máxima de tempo que o cliente espera que a transição para o novo Estado tenha. O formato do intervalo deve ser usado para especificar o período de tempo limite. Um valor 0 ou **NULL** indica que o cliente não tem requisitos de tempo para a transição. Se essa propriedade não contiver 0 ou **NULL** e a implementação não oferecer suporte a esse parâmetro, um código de retorno 4098 (**uso do parâmetro timeout sem suporte**) deverá ser retornado.
+Um período de tempo limite que especifica a quantidade máxima de tempo que o cliente espera que a transição para o novo estado leve. O formato de intervalo deve ser usado para especificar o período de tempo." Um valor de 0 ou **Null** indica que o cliente não tem requisitos de tempo para a transição. Se essa propriedade não contém 0 ou **Null** e a implementação não dá suporte a esse parâmetro, um código de retorno de 4098 ( Uso do parâmetro **de** tempoout sem suporte ) deve ser retornado.
 
 </dd> </dl>
 
@@ -159,13 +159,13 @@ Esse método retorna um dos seguintes valores:
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo com suporte<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

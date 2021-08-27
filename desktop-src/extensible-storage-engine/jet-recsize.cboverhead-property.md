@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre a propriedade: JET_RECSIZE. cbOverhead'
-title: Propriedade JET_RECSIZE. cbOverhead (Microsoft. ISAM. ESENT. Interop. vista)
+description: 'Saiba mais sobre: JET_RECSIZE.cbOverhead'
+title: JET_RECSIZE.cbOverhead (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: 'cbOverhead property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.Vista.JET_RECSIZE.cbOverhead
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.jet_recsize.cboverhead(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2e7318428ef4b50a08a05f5021d293ad1d8d78cf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f2f964956741c814fe0a54831f89b43d7a8ca4c521e179028c447f4c0f8843d6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105811508"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118979616"
 ---
-# <a name="jet_recsizecboverhead-property"></a>Propriedade JET_RECSIZE. cbOverhead
+# <a name="jet_recsizecboverhead-property"></a>JET_RECSIZE.cbOverhead
 
-Obtém a sobrecarga da estrutura de registro ESENT para este registro. Isso inclui o tamanho da chave do registro.
+Obtém a sobrecarga da estrutura de registro ESENT para esse registro. Isso inclui o tamanho da chave do registro.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -60,14 +60,14 @@ public long cbOverhead { get; internal set; }
 
 #### <a name="property-value"></a>Valor da propriedade
 
-Tipo: [System. Int64](/dotnet/api/system.int64)  
+Tipo: [System.Int64](/dotnet/api/system.int64)  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Estrutura de JET_RECSIZE](./jet-recsize-structure2.md)
+[JET_RECSIZE estrutura](./jet-recsize-structure2.md)
 
-[Membros do JET_RECSIZE](./jet-recsize-members.md)
+[JET_RECSIZE membros](./jet-recsize-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

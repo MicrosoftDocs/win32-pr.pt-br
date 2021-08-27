@@ -7,12 +7,12 @@ keywords:
 - Active Directory estruturas de página de propriedades do MMC Active Directory
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f8356bb01c2ba317fc25a6cf283da1f16d38d5a5
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: bb39624dfe36eeae90319e9a0a28ed0f150bde6899a670c26ece90078f1acf4f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103634935"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119025904"
 ---
 # <a name="mmc-property-page-structures-in-active-directory-domain-services"></a>Estruturas de página de propriedades do MMC no Active Directory Domain Services
 
@@ -21,9 +21,9 @@ O snap-in do MMC do Active Directory Manager usa folhas de propriedades para exi
 -   [**ADSPROPERROR**](/windows/desktop/api/Adsprop/ns-adsprop-adsproperror)
 -   [**ADSPROPINITPARAMS**](/windows/desktop/api/Adsprop/ns-adsprop-adspropinitparams)
 
- 
+ 
 
- 
+ 
 
 
 

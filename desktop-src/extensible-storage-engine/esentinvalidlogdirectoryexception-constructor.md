@@ -35,8 +35,8 @@ ms.locfileid: "118777785"
 
 Inicializa uma nova instância da classe EsentInvalidLogDirectoryException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentInvalidLogDirectoryException()
 
 [Classe EsentInvalidLogDirectoryException](./esentinvalidlogdirectoryexception-class.md)
 
-[Membros do EsentInvalidLogDirectoryException](./esentinvalidlogdirectoryexception-members.md)
+[Membros EsentInvalidLogDirectoryException](./esentinvalidlogdirectoryexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

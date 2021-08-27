@@ -1,9 +1,9 @@
 ---
-title: Estrutura de BG_FILE_PROGRESS (Deliveryoptimization. h)
-description: A estrutura de BG_FILE_PROGRESS fornece informações de progresso relacionadas a arquivos, como o número de bytes transferidos.
+title: BG_FILE_PROGRESS (Deliveryoptimization.h)
+description: A BG_FILE_PROGRESS fornece informações de progresso relacionadas ao arquivo, como o número de bytes transferidos.
 ms.assetid: 49BDFEEE-D7BF-489A-8BC1-951549B06252
 keywords:
-- Estrutura de BG_FILE_PROGRESS
+- BG_FILE_PROGRESS estrutura
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 93507b8aeefa9c0ea16f70f67e221ecc4218427f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dd0bec0f21fb652ccc5c8d543f04816468fff9bc28db74a68a1d05c072a895a6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644991"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119047244"
 ---
-# <a name="bg_file_progress-structure"></a>Estrutura de BG_FILE_PROGRESS
+# <a name="bg_file_progress-structure"></a>BG_FILE_PROGRESS estrutura
 
-A estrutura de **BG_FILE_PROGRESS** fornece informações de progresso relacionadas a arquivos, como o número de bytes transferidos.
+A **BG_FILE_PROGRESS** fornece informações de progresso relacionadas ao arquivo, como o número de bytes transferidos.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,9 +46,9 @@ typedef struct _BG_FILE_PROGRESS {
 **BytesTotal**
 </dt> <dd>
 
-Tamanho do arquivo em bytes. Se o não puder determinar o tamanho do arquivo (por exemplo, se o arquivo ou o servidor não existir), o valor será DO_UNKNOWN_FILE_SIZE.
+Tamanho do arquivo em bytes. Se DO não puder determinar o tamanho do arquivo (por exemplo, se o arquivo ou o servidor não existir), o valor será DO_UNKNOWN_FILE_SIZE.
 
-Se você estiver baixando intervalos de um arquivo, **bytesTotal** refletirá o número total de bytes que você deseja baixar do arquivo.
+Se você estiver baixando intervalos de um arquivo, **BytesTotal** refletirá o número total de bytes que você deseja baixar do arquivo.
 
 </dd> <dt>
 
@@ -62,15 +62,15 @@ Número de bytes transferidos.
 **Concluído**
 </dt> <dd>
 
-Para downloads, o valor será **true** se o arquivo estiver disponível para o usuário; caso contrário, o valor será **false**. Os arquivos estão disponíveis para o usuário depois de chamar o método [**método ibackgroundcopyjob:: Complete**](ibackgroundcopyjob-complete.md) . Se o método **Complete** gerar um erro transitório, os arquivos processados antes do erro estarão disponíveis para o usuário; os outros não são. Use o membro **concluído** para determinar se o arquivo está disponível para o usuário quando a **conclusão** falhar.
+Para downloads, o valor será **TRUE** se o arquivo estiver disponível para o usuário; caso contrário, o valor será **FALSE.** Os arquivos ficam disponíveis para o usuário depois de chamar o [**método IBackgroundCopyJob::Complete.**](ibackgroundcopyjob-complete.md) Se o **método Complete** gerar um erro transitório, esses arquivos processados antes do erro ocorrer estarão disponíveis para o usuário; os outros não são. Use o **membro Concluído** para determinar se o arquivo está disponível para o usuário quando **Concluir** falhar.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Para determinar se o arquivo foi transferido, você pode:
+Para determinar se DO transferiu o arquivo, você pode:
 
--   Compare **bytesTransferred** com **bytesTotal**.
+-   Compare **BytesTransferred com** **BytesTotal.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -78,9 +78,9 @@ Para determinar se o arquivo foi transferido, você pode:
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10, versão 1709\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | Windows Server, \[ somente aplicativos da área de trabalho da versão 1709\]<br/>                                     |
-| parâmetro<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 10, versão 1709 somente para \[ aplicativos da área de trabalho\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows Servidor, versão 1709 somente \[ aplicativos da área de trabalho\]<br/>                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl> |
 
 
 
@@ -91,7 +91,7 @@ Para determinar se o arquivo foi transferido, você pode:
 [**BG_JOB_PROGRESS**](bg-job-progress.md)
 </dt> <dt>
 
-[**IBackgroundCopyFile:: GetProgress**](ibackgroundcopyfile-getprogress-method.md)
+[**IBackgroundCopyFile::GetProgress**](ibackgroundcopyfile-getprogress-method.md)
 </dt> </dl>
 
  

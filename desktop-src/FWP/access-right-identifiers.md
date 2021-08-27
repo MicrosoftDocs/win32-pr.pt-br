@@ -1,6 +1,6 @@
 ---
 title: Identificadores de direito de acesso (Fwpmu. h)
-description: A WFP (Windows Filtering Platform) usa os direitos de acesso padrão do Win32, além de um conjunto de direitos de acesso específicos de WFP incorporados à plataforma de filtragem.
+description: Windows A WFP (plataforma de filtragem) usa os direitos de acesso padrão do Win32, além de um conjunto de direitos de acesso específicos de WFP incorporados à plataforma de filtragem.
 ms.assetid: 77f0a1ac-3e99-4cba-a7c6-b8747f35cd0c
 topic_type:
 - apiref
@@ -26,16 +26,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8af182a087ade590e278bd3dd1d2bb1a64b5c598
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6deee82b792f525814ac4c841da8a848e4f7b978720755c82f93a9569ba21ca7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103919120"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118951371"
 ---
 # <a name="access-right-identifiers"></a>Identificadores de direito de acesso
 
-A WFP (Windows Filtering Platform) usa os [direitos de acesso padrão do Win32](/windows/desktop/SecAuthZ/standard-access-rights) , além de um conjunto de direitos de acesso específicos de WFP incorporados à plataforma de filtragem. Esses direitos de acesso são usados para proteger objetos somente no modo de usuário. Os chamadores de modo kernel ignoram todas as verificações de acesso.
+Windows A WFP (plataforma de filtragem) usa os [direitos de acesso padrão do Win32](/windows/desktop/SecAuthZ/standard-access-rights) , além de um conjunto de direitos de acesso específicos de WFP incorporados à plataforma de filtragem. Esses direitos de acesso são usados para proteger objetos somente no modo de usuário. Os chamadores de modo kernel ignoram todas as verificações de acesso.
 
 Os identificadores corretos de acesso específico à WFP são os seguintes.
 
@@ -197,9 +197,9 @@ STANDARD \_ Rights \_ Write \| excluir \| FWPM \_ ACTRL \_ Adicionar \| FWPM \_ 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Fwpmu. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Fwpmu. h</dt> </dl> |
 
 
 
@@ -207,7 +207,7 @@ STANDARD \_ Rights \_ Write \| excluir \| FWPM \_ ACTRL \_ Adicionar \| FWPM \_ 
 
 <dl> <dt>
 
-[Modelo de controle de acesso da plataforma de filtragem do Windows](access-control.md)
+[Windows Modelo de controle de acesso à plataforma de filtragem](access-control.md)
 </dt> <dt>
 
 [Direitos de acesso padrão](/windows/desktop/SecAuthZ/standard-access-rights)

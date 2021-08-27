@@ -1,5 +1,5 @@
 ---
-title: 'Métodos RWByteAddressBuffer:: RWByteAddressBuffer Load3'
+title: Métodos RWByteAddressBuffer::RWByteAddressBuffer Load3
 description: Obtém três valores de um RWByteAddressBuffer.
 ms.assetid: BB36AF51-1C2A-4DA2-A257-4BE837E8587A
 keywords:
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 8c93b55bc2093232b3128c78f05b8bc9cb5611f1
-ms.sourcegitcommit: 476861130ea63675206d1f06e517059705b930ed
+ms.openlocfilehash: f1723b428994a62040939b390fcbd0f205cc38b40c3e0341d3a7bc6966ba6d99
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "104498919"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118791208"
 ---
-# <a name="rwbyteaddressbufferload3-methods"></a>Métodos RWByteAddressBuffer:: Load3
+# <a name="rwbyteaddressbufferload3-methods"></a>Métodos RWByteAddressBuffer::Load3
 
-Obtém três valores de um [**RWByteAddressBuffer**](sm5-object-rwbyteaddressbuffer.md).
+Obtém três valores de [**um RWByteAddressBuffer**](sm5-object-rwbyteaddressbuffer.md).
 
 ### <a name="overload-list"></a>Lista de sobrecargas
 
@@ -29,8 +29,8 @@ Obtém três valores de um [**RWByteAddressBuffer**](sm5-object-rwbyteaddressbuf
 
 | Método                                                            | Descrição                                                       |
 |:------------------------------------------------------------------|:------------------------------------------------------------------|
-| [**Load3 (UINT)**](sm5-object-rwbyteaddressbuffer-load3.md)       | Obtém três valores.<br/>                                     |
-| [**Load3 (uint, uint)**](rwbyteaddressbuffer-load3-float-uint-.md) | Obtém três valores e retorna o status da operação.<br/> |
+| [**Load3(uint)**](sm5-object-rwbyteaddressbuffer-load3.md)       | Obtém três valores.<br/>                                     |
+| [**Load3(uint,uint)**](rwbyteaddressbuffer-load3-float-uint-.md) | Obtém três valores e retorna o status da operação.<br/> |
 
 
 

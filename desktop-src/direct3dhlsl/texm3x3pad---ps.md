@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 0013c4d2baf9a404406982b5a8e984698a964f33
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 10e473b30417d6797ffe227eff11b0d5d607264560bfd8506b76f333e0275cf2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104365224"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118787702"
 ---
 # <a name="texm3x3pad---ps"></a>texm3x3pad-PS
 
@@ -29,7 +29,7 @@ Executa a primeira ou segunda linha multiplicada por uma multiplicação de trê
 
 
 
- 
+ 
 
 onde
 
@@ -46,7 +46,7 @@ onde
 
 
 
- 
+ 
 
 Essa instrução não pode ser usada por si só.
 
@@ -57,9 +57,9 @@ Essa instrução não pode ser usada por si só.
 [Instruções do sombreador de pixel](dx9-graphics-reference-asm-ps-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,8 +1,8 @@
 ---
-description: Representa uma propriedade de dispositivo PnP do tipo DateTime.
+description: Representa uma propriedade de dispositivo PnP do tipo datetime.
 ms.assetid: 30B11948-4AF9-490F-B22F-260DDE5514AF
 ms.tgt_platform: multiple
-title: Classe Win32_PnPDevicePropertyDateTime
+title: Win32_PnPDevicePropertyDateTime classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -19,16 +19,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 7c03bf3723337c382733b1302fd9e86d2f598af7
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 7fee1f6caf730e5686f363e422596b2ee1c506d746252b534dd7d8dd5704134b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920581"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118958915"
 ---
-# <a name="win32_pnpdevicepropertydatetime-class"></a>\_Classe Win32 PnPDevicePropertyDateTime
+# <a name="win32_pnpdevicepropertydatetime-class"></a>Classe Win32 \_ PnPDevicePropertyDateTime
 
-Representa uma propriedade de dispositivo PnP do tipo **DateTime**.
+Representa uma propriedade de dispositivo PnP do tipo **datetime**.
 
 A sintaxe a seguir é simplificada do código MOF e inclui todas as propriedades herdadas.
 
@@ -47,20 +47,20 @@ class Win32_PnPDevicePropertyDateTime : Win32_PnPDeviceProperty
 
 ## <a name="members"></a>Membros
 
-A classe **Win32 \_ PnPDevicePropertyDateTime** tem estes tipos de membros:
+A **classe Win32 \_ PnPDevicePropertyDateTime** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Win32 \_ PnPDevicePropertyDateTime** tem essas propriedades.
+A **classe Win32 \_ PnPDevicePropertyDateTime** tem essas propriedades.
 
 <dl> <dt>
 
 **Dados**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -70,7 +70,7 @@ O valor da propriedade.
 
 </dd> <dt>
 
-**DeviceID**
+**Deviceid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -81,7 +81,7 @@ Tipo de acesso: Somente leitura
 
 Identifica o dispositivo PnP.
 
-Esta propriedade é herdada do [**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
+Essa propriedade é herdada [**de Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
 
 </dd> <dt>
 
@@ -94,13 +94,13 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O valor do par de Name-Value de chave que identifica a propriedade de **dados** .
+O valor do par chave Name-Value que identifica a **propriedade** Data.
 
-Esta propriedade é herdada do [**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
+Essa propriedade é herdada [**de Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
 
 </dd> <dt>
 
-**KeyName**
+**Keyname**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -109,24 +109,24 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O nome do par de Name-Value de chave que identifica a propriedade de **dados** .
+O nome do par chave Name-Value que identifica a **propriedade** Data.
 
-Esta propriedade é herdada do [**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
+Essa propriedade é herdada [**de Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
 
 </dd> <dt>
 
 **Tipo**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **Uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O tipo da propriedade de **dados** .
+O tipo da **propriedade** Data.
 
-Esta propriedade é herdada do [**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
+Essa propriedade é herdada [**de Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
 
 Os valores possíveis são.
 
@@ -141,7 +141,7 @@ Os valores possíveis são.
 
 <span id="Null"></span><span id="null"></span><span id="NULL"></span>
 
-**NULL** (1)
+**Nulo** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -183,7 +183,7 @@ Os valores possíveis são.
 
 <span id="Uint32"></span><span id="uint32"></span><span id="UINT32"></span>
 
-**UInt32** (7)
+**Uint32** (7)
 
 
 </dt> <dd></dd> <dt>
@@ -211,7 +211,7 @@ Os valores possíveis são.
 
 <span id="Double"></span><span id="double"></span><span id="DOUBLE"></span>
 
-**Duplo** (11)
+**Double** (11)
 
 
 </dt> <dd></dd> <dt>
@@ -225,14 +225,14 @@ Os valores possíveis são.
 
 <span id="Guid"></span><span id="guid"></span><span id="GUID"></span>
 
-**GUID** (13)
+**Guid** (13)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Currency"></span><span id="currency"></span><span id="CURRENCY"></span>
 
-**Moeda** (14)
+**Conversor de Moedas** (14)
 
 
 </dt> <dd></dd> <dt>
@@ -246,21 +246,21 @@ Os valores possíveis são.
 
 <span id="FileTime"></span><span id="filetime"></span><span id="FILETIME"></span>
 
-**FILETIME** (16)
+**FileTime** (16)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Boolean"></span><span id="boolean"></span><span id="BOOLEAN"></span>
 
-**Booliano** (17)
+**Booliana** (17)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="String"></span><span id="string"></span><span id="STRING"></span>
 
-**Cadeia de caracteres** (18)
+**Cadeia de** caracteres (18)
 
 
 </dt> <dd></dd> <dt>
@@ -319,7 +319,7 @@ Os valores possíveis são.
 **Reserved**
 
 
-</dt> <dd>26 – 4097</dd> <dt>
+</dt> <dd>26–4097</dd> <dt>
 
 <span id="SByteArray"></span><span id="sbytearray"></span><span id="SBYTEARRAY"></span>
 
@@ -477,7 +477,7 @@ Os valores possíveis são.
 
 <span id="Unknown_-_check_in_devpropdef.h"></span><span id="unknown_-_check_in_devpropdef.h"></span><span id="UNKNOWN_-_CHECK_IN_DEVPROPDEF.H"></span>
 
-**Desconhecido-verifique em devpropdef. h** (4120)
+**Desconhecido – check-in devpropdef.h** (4120)
 
 
 </dt> <dd></dd> <dt>
@@ -494,7 +494,7 @@ Os valores possíveis são.
 **Reserved**
 
 
-</dt> <dd>8218 – 4294967295</dd> </dl>
+</dt> <dd>8218–4294967295</dd> </dl>
 
 </dd> </dl>
 
@@ -504,9 +504,9 @@ Os valores possíveis são.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                             |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                             |
 | Servidor mínimo com suporte<br/> | Windows Server 2016<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
 | MOF<br/>                      | <dl> <dt>Cimwin32. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 

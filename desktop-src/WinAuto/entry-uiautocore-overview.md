@@ -15,12 +15,12 @@ keywords:
 - Automação da interface do usuário da Microsoft para API do Microsoft Win32
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8ba8147a8dd7f8d03340fad43465c225a174e606
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a1d62627d1e096738abad67d7bb2bcf0e482052c5e5b4e0e913d9c2ea0ee56c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104364216"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119052734"
 ---
 # <a name="ui-automation-fundamentals"></a>Fundamentos de automação da interface do usuário
 
@@ -41,7 +41,7 @@ A API de automação da interface do usuário está em duas partes. Uma parte é
 -   [Suporte à automação da interface do usuário para conteúdo textual](uiauto-ui-automation-textpattern-overview.md)
 -   [Suporte à automação da interface do usuário para arrastar e soltar](ui-automation-support-for-drag-and-drop.md)
 -   [Considerações de segurança para tecnologias assistenciais](uiauto-securityoverview.md)
--   [Práticas recomendadas para usar matrizes seguras](uiauto-workingwithsafearrays.md)
+-   [práticas recomendadas para usar matrizes de Cofre](uiauto-workingwithsafearrays.md)
 -   [Especificação da automação da interface do usuário e promessa da comunidade](uiauto-specandcommunitypromise.md)
 
 ## <a name="related-topics"></a>Tópicos relacionados
@@ -51,9 +51,9 @@ A API de automação da interface do usuário está em duas partes. Uma parte é
 [Automação da Interface do Usuário](entry-uiauto-win32.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

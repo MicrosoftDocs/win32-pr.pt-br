@@ -1,24 +1,24 @@
 ---
 title: Exibindo eventos de rede
-description: O código de exemplo a seguir demonstra como um aplicativo de servidor pode localizar eventos líquidos recentes que podem tê-lo afetado.
+description: O código de exemplo a seguir demonstra como um aplicativo de servidor pode localizar eventos de rede recentes que podem tê-lo afetado.
 ms.assetid: 24c1cf68-a67f-415a-a45d-0e0eb4aae636
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 582a2ad40d47fa3e999391d49b2f5a3a7dc23d3f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ff774a8a66899979150cb83936e45e200c2f2cb76a9266c01e233041356db93e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105810375"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118951285"
 ---
 # <a name="displaying-net-events"></a>Exibindo eventos de rede
 
-O código de exemplo a seguir demonstra como um aplicativo de servidor pode localizar eventos líquidos recentes que podem tê-lo afetado.
+O código de exemplo a seguir demonstra como um aplicativo de servidor pode localizar eventos de rede recentes que podem tê-lo afetado.
 
 > [!Note]  
-> As condições de filtro são as mesmas que as suportadas pela API **IsPortAllowed** de nível inferior.
+> As condições de filtro são as mesmas que as suportadas pela API **IsPortAllowed** de nível baixo.
 
- 
+ 
 
 
 ```C++
@@ -197,9 +197,9 @@ DWORD wmain(int argc,
 
 
 
- 
+ 
 
- 
+ 
 
 
 

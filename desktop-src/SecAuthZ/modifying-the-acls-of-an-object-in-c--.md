@@ -4,12 +4,12 @@ ms.assetid: 0c168bb7-996f-42a8-96cd-2ba7870a3333
 title: Modificando as ACLs de um objeto em C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 21195b1164ce949d1305f0c1748d24b0dbb7525b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 42681a22e6b5f4b478d55d21f9b0b71dbe3f9c081ef5d18ba3da7a33f8709d32
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922517"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118912456"
 ---
 # <a name="modifying-the-acls-of-an-object-in-c"></a>Modificando as ACLs de um objeto em C++
 

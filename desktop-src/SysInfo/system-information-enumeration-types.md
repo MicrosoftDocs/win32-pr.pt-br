@@ -1,17 +1,17 @@
 ---
 description: Os tipos de enumeração a seguir são usados para recuperar ou definir informações do sistema.
 ms.assetid: 477c1dc7-04c7-4332-95ed-3d833f5650df
-title: Tipos de enumeração de informações do sistema
+title: Informações do Sistema Tipos de enumeração
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b34cd48b93aca0efa43a142b466b3430eb3b006e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4d230b0ec8344b34681587fd2bfb57cfb24ca3b384916a05a89294f3a73c5d58
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922222"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118884821"
 ---
-# <a name="system-information-enumeration-types"></a>Tipos de enumeração de informações do sistema
+# <a name="system-information-enumeration-types"></a>Informações do Sistema Tipos de enumeração
 
 Os tipos de enumeração a seguir são usados para recuperar ou definir informações do sistema.
 

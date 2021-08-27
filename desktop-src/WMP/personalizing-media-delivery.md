@@ -3,14 +3,14 @@ title: Personalizando a entrega de mídia
 description: Personalizando a entrega de mídia
 ms.assetid: ffd62602-8bfc-4ca7-91fd-c610faa330cd
 keywords:
-- Playlists do metarquivo do Windows Media, personalizando a entrega de mídia
-- listas de reprodução, personalizando a entrega de mídia
-- listas de reprodução de metarquivo, personalizando a entrega de mídia
-- Playlists do metarquivo do Windows Media, personalização de entrega de mídia
-- listas de reprodução, personalização de entrega de mídia
-- listas de reprodução de metarquivo, personalização de entrega de mídia
+- Windows Playlists de metadados de mídia, personalizando a entrega de mídia
+- playlists, personalizando a entrega de mídia
+- listas de reprodução de metadados, personalizando a entrega de mídia
+- Windows Playlists de metadados de mídia, personalização de entrega de mídia
+- playlists, personalização de entrega de mídia
+- playlists de metadados, personalização de entrega de mídia
 - personalização de entrega de mídia
-- Personalizando a entrega de mídia
+- personalizando a entrega de mídia
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -18,33 +18,33 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: ddb01364e2ea36214b94d01517f1d3d3b802ba63
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9483f4fc7a068c6f6456a5d170b4be73a9ba31ef85294f9a6939181dff00c826
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104159401"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996006"
 ---
 # <a name="personalizing-media-delivery"></a>Personalizando a entrega de mídia
 
-Ao contrário da comunicação unidirecional que transmite conteúdo idêntico a um público em massa, as tecnologias de mídia do Windows fornecem as ferramentas para usar os dados demográficos para individualizar as difusões. Com a Internet, a comunicação bidirecional em grande escala está prontamente disponível. Esse intercâmbio dinâmico de informações permite que os provedores de conteúdo saibam seu público e respondam com apresentações personalizadas.
+Ao contrário da comunicação única que transmite conteúdo idêntico para um público-alvo em massa, o Windows Media Technologies fornece as ferramentas para usar dados demográficos para individualizar difusões. Com a Internet, a comunicação de duas vias em grande escala está prontamente disponível. Esse intercâmbio dinâmico de informações permite que os provedores de conteúdo conheçam seu público-alvo e respondam com apresentações personalizadas.
 
-O exemplo a seguir, usando uma empresa fictícia, ilustra como a entrega de conteúdo de streaming pode ser personalizada. Esta discussão pressupõe que você esteja familiarizado com Active Server páginas (arquivos ASP ou. asp) e Definindo variáveis.
+O exemplo a seguir, usando uma empresa fictícia, ilustra como a entrega de conteúdo de streaming pode ser personalizada. Esta discussão pressuém que você está familiarizado com Active Server páginas (arquivos ASP ou .asp) e definindo variáveis.
 
-A rede de notícias é uma organização de notícias de difusão fictícia que expandiu suas operações para incluir um site. O principal recurso do site é uma seção em que os usuários podem criar seus próprios newscasts personalizados. Em vez de exibir um newscast tradicional destinado a um público em massa, um usuário vê um programa de notícias completo que contém apenas tópicos de interesse pessoal. A sequência a seguir descreve uma experiência de usuário típica.
+A Rede de Notícias é uma organização fictícia de notícias de difusão que expandiu suas operações para incluir um site. O principal recurso do site é uma seção em que os usuários podem criar seus próprios newscasts personalizados. Em vez de exibir um newscast tradicional destinado a um público em massa, um usuário vê um programa de notícias completo que contém apenas tópicos de interesse pessoal. A sequência a seguir descreve uma experiência típica do usuário.
 
-1.  Um novo usuário vai para o site e clica em **criar seu newscast pessoal**.
-2.  Um formulário de preferência é aberto. Neste formulário, o usuário responde às perguntas sobre as preferências pessoais, como histórias de notícias favoritas, menos histórias de notícias favoritas, Hobbies e o método habitual de receber notícias diárias.
-3.  O usuário envia essas informações e alguns segundos depois exibe um newscast pessoal completo, de 15 minutos, que contém o conteúdo do programa, as transições e os negócios. A seleção de cada elemento de mídia, incluindo os comerciais, é baseada no perfil do usuário e é realizada automaticamente com os componentes das tecnologias de mídia do Windows e as ferramentas de Internet prontas.
+1.  Um novo usuário vai para o site e clica em **Criar Seu Newscast Pessoal.**
+2.  Um formulário de preferência é aberto. Nesse formulário, o usuário responde a perguntas sobre preferências pessoais, como histórias de notícias favoritas, histórias de notícias menos favoritas, contos e método comum de recebimento de notícias diárias.
+3.  O usuário envia essas informações e, alguns segundos depois, visualiza um newscast completo, de 15 minutos, pessoal contendo conteúdo do programa, transições e comerciais. A seleção de cada elemento de mídia, incluindo comerciais, é baseada no perfil do usuário e é realizada automaticamente com componentes Windows Tecnologias de Mídia e ferramentas de Internet fora da plataforma.
 
 A lista a seguir descreve como as várias ferramentas interagem para criar um newscast personalizado.
 
-1.  O formulário de preferência que o usuário preenche é uma página de Active Server (ASP) (Choices. asp). Os dados obtidos do formulário de preferência são analisados por dois componentes de servidor. Um componente usa as informações para consultar um banco de dados Microsoft SQL Server de histórias de notícias. O outro componente é um servidor do AD que usa um conjunto complexo de regras com base em requisitos contratuais e demográficos para agendar anúncios apropriados para o usuário naquele momento.
-2.  Os dois bancos de dados retornam partes diferentes de uma lista de reprodução. O banco de dados de história de notícias retorna um conjunto de entradas da história apropriadas e o servidor do AD retorna um conjunto de entradas comerciais apropriadas.
-3.  Uma segunda página ASP (PlayShow. asp) recebe as entradas do banco de dados da história de notícias e do servidor do AD e combina aquelas com entradas padrão de exibição abrir, fechar e de transição. Em seguida, todas as entradas são dispostas de acordo com o modelo fornecido pelo PlayShow. asp, e a página ASP retorna uma lista de reprodução para o usuário.
-4.  O controle do Windows Media Player inserido no computador do usuário reproduz a lista de reprodução do início ao fim e o usuário exibe um newscast personalizado.
+1.  O formulário de preferência que o usuário preenche é uma ASP (página Active Server) (Choices.asp). Os dados obtidos do formulário de preferência são analisados por dois componentes do servidor. Um componente usa as informações para consultar um banco de dados Microsoft SQL Server de notícias. O outro componente é um servidor de anúncios que usa um conjunto complexo de regras com base em requisitos contratuais e dados demográficos para agendar anúncios apropriados para o usuário no momento.
+2.  Os dois bancos de dados retornam diferentes partes de uma playlist. O banco de dados de notícias retorna um conjunto de entradas de história apropriadas e o servidor de anúncios retorna um conjunto de entradas comerciais apropriadas.
+3.  Uma segunda página do ASP (PlayShow.asp) recebe as Entradas do banco de dados de notícias e do servidor de ad e combina-as com as entradas padrão show open, close e transition. Todas as entradas são então colocadas de acordo com o modelo fornecido pelo PlayShow.asp e a página ASP retorna uma playlist para o usuário.
+4.  O controle Windows Media Player inserido no computador do usuário reproduz a playlist do início ao fim e o usuário visualiza um newscast personalizado.
 
-O exemplo a seguir é uma parte de um arquivo de lista de reprodução que um usuário pode receber. Faixas do AD, links MOREINFO e ABSTRATOs foram adicionados a ele.
+O exemplo a seguir é uma parte de um arquivo de playlist que um usuário pode receber. Faixas de anúncio, links MOREINFO e ABSTRACTS foram adicionados a ele.
 
 
 ```XML
@@ -95,24 +95,24 @@ O exemplo a seguir é uma parte de um arquivo de lista de reprodução que um us
 
 <dl> <dt>
 
-[**Criando listas de reprodução de metarquivo**](creating-metafile-playlists.md)
+[**Criando playlists de metadados**](creating-metafile-playlists.md)
 </dt> <dt>
 
-[**Playlists de metarquivo**](metafile-playlists.md)
+[**Playlists de metadados**](metafile-playlists.md)
 </dt> <dt>
 
-[**Usando listas de reprodução de metarquivo**](using-metafile-playlists.md)
+[**Usando playlists de metadados**](using-metafile-playlists.md)
 </dt> <dt>
 
-[**Referência de elementos de metarquivo do Windows Media**](windows-media-metafile-elements-reference.md)
+[**Windows Referência de elementos de metadados de mídia**](windows-media-metafile-elements-reference.md)
 </dt> <dt>
 
-[**Guia de metarquivo do Windows Media**](windows-media-metafile-guide.md)
+[**Windows Guia de metadados de mídia**](windows-media-metafile-guide.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

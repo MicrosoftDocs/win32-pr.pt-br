@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: d52324edd4a502388ac6064de07a6ab58a68074d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b97569f967c76c985eb05099a21ed10e90456563a871f3e5d9803c6a5875ebdd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164283"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119008104"
 ---
 # <a name="iscarddatabaselistcardinterfaces-method"></a>Método ISCardDatabase:: ListCardInterfaces
 
-\[O método **ListCardInterfaces** está disponível para uso nos sistemas operacionais especificados na seção requisitos. Ele não está disponível para uso no Windows Server 2003 com Service Pack 1 (SP1) e posterior, no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. Os [módulos de cartão inteligente](/previous-versions/windows/desktop/secsmart/smart-card-modules) fornecem funcionalidade semelhante.\]
+\[O método **ListCardInterfaces** está disponível para uso nos sistemas operacionais especificados na seção requisitos. ele não está disponível para uso no Windows server 2003 com Service Pack 1 (SP1) e posterior, Windows Vista, Windows Server 2008 e versões subsequentes do sistema operacional. Os [módulos de cartão inteligente](/previous-versions/windows/desktop/secsmart/smart-card-modules) fornecem funcionalidade semelhante.\]
 
 O método **ListCardInterfaces** recupera os identificadores (GUIDs) de todas as interfaces com suporte para o [*cartão inteligente*](../secgloss/s-gly.md)especificado.
 
@@ -56,7 +56,7 @@ Ponteiro para os GUIDs de interface se for bem-sucedido; **Nulo** se a operaçã
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um dos seguintes valores possíveis.
 
@@ -120,11 +120,11 @@ else
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                    |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                    |
 | Fim do suporte do cliente<br/>    | Windows XP<br/>                                                                   |
 | Fim do suporte do servidor<br/>    | Windows Server 2003<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Scardmgr. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>Scardmgr. h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Scardmgr. tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
 | IID<br/>                      | IID \_ ISCardDatabase é definido como 1461AAC8-6810-11D0-918F-00AA00C18068<br/>       |

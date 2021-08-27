@@ -35,8 +35,8 @@ ms.locfileid: "118781829"
 
 Inicializa uma nova instância da classe EsentDatabase200FormatException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentDatabase200FormatException()
 
 [Classe EsentDatabase200FormatException](./esentdatabase200formatexception-class.md)
 
-[Membros do EsentDatabase200FormatException](./esentdatabase200formatexception-members.md)
+[Membros EsentDatabase200FormatException](./esentdatabase200formatexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

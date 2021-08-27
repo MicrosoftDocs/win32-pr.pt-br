@@ -4,12 +4,12 @@ description: Segurança de ativação
 ms.assetid: 0c13d473-a9f9-40b5-951b-731eab736fe6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e5b01b918666e911d96ed16528ba5045103f445
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: 4be436997889edd14704d5fa7646db689bba405825c1e8bcf9d021ea850ae70f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104454387"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119048904"
 ---
 # <a name="activation-security"></a>Segurança de ativação
 
@@ -26,6 +26,6 @@ Para obter mais informações sobre segurança de ativação, consulte [**COAUTH
 [Segurança em COM](security-in-com.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

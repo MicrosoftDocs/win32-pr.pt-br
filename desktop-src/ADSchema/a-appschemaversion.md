@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 09265299a676ef6b9d319153c7efdbe3929ee883
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 3db892ebaa613cf95c016162e12ee3f9de0a101e433a73aa203640be8645f0ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105771721"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081980"
 ---
 # <a name="app-schema-version-attribute"></a>Aplicativo-esquema-versão do atributo
 
@@ -58,7 +58,7 @@ Esse atributo armazena a versão do esquema do repositório de classe. Ele é us
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| É de valor único       | True                                           |
+| É de valor único       | Verdadeiro                                           |
 | É indexado             | Falso                                          |
 | No catálogo global      | Falso                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
@@ -79,7 +79,7 @@ Esse atributo armazena a versão do esquema do repositório de classe. Ele é us
 | ID do link                | \-                                                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                                                 |
-| É de valor único       | True                                                                                                                                                                                  |
+| É de valor único       | Verdadeiro                                                                                                                                                                                  |
 | É indexado             | Falso                                                                                                                                                                                 |
 | No catálogo global      | Falso                                                                                                                                                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                          |
@@ -100,7 +100,7 @@ Esse atributo armazena a versão do esquema do repositório de classe. Ele é us
 | ID do link                | \-                                                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                                                 |
-| É de valor único       | True                                                                                                                                                                                  |
+| É de valor único       | Verdadeiro                                                                                                                                                                                  |
 | É indexado             | Falso                                                                                                                                                                                 |
 | No catálogo global      | Falso                                                                                                                                                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                          |
@@ -121,7 +121,7 @@ Esse atributo armazena a versão do esquema do repositório de classe. Ele é us
 | ID do link                | \-                                                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                                                 |
-| É de valor único       | True                                                                                                                                                                                  |
+| É de valor único       | Verdadeiro                                                                                                                                                                                  |
 | É indexado             | Falso                                                                                                                                                                                 |
 | No catálogo global      | Falso                                                                                                                                                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                          |
@@ -142,7 +142,7 @@ Esse atributo armazena a versão do esquema do repositório de classe. Ele é us
 | ID do link                | \-                                                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                                                 |
-| É de valor único       | True                                                                                                                                                                                  |
+| É de valor único       | Verdadeiro                                                                                                                                                                                  |
 | É indexado             | Falso                                                                                                                                                                                 |
 | No catálogo global      | Falso                                                                                                                                                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                          |
@@ -163,7 +163,7 @@ Esse atributo armazena a versão do esquema do repositório de classe. Ele é us
 | ID do link                | \-                                                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                                                 |
-| É de valor único       | True                                                                                                                                                                                  |
+| É de valor único       | Verdadeiro                                                                                                                                                                                  |
 | É indexado             | Falso                                                                                                                                                                                 |
 | No catálogo global      | Falso                                                                                                                                                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                          |

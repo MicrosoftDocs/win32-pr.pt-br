@@ -1,7 +1,7 @@
 ---
-description: Função D3DXVec4CatmullRom (D3DX10Math. h) – executa uma interpolação Catmull-Rom, usando os vetores de 4D especificados.
+description: Função D3DXVec4CatmullRom (D3DX10Math.h) – executa uma interpolação Catmull-Rom, usando os vetores 4D especificados.
 ms.assetid: e3a10989-e25e-46fa-b72e-bade936cacf1
-title: Função D3DXVec4CatmullRom (D3DX10Math. h)
+title: Função D3DXVec4CatmullRom (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: 4e3665709564f578046273facbd3311253d8c2b9
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 4d565d1e9b567ff0c3320d6e0ba6023a6c4917720a2a13f32f98164cb7632123
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108102954"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118990546"
 ---
-# <a name="d3dxvec4catmullrom-function-d3dx10mathh"></a>Função D3DXVec4CatmullRom (D3DX10Math. h)
+# <a name="d3dxvec4catmullrom-function-d3dx10mathh"></a>Função D3DXVec4CatmullRom (D3DX10Math.h)
 
-Executa uma interpolação de Catmull-Rom, usando os vetores de 4D especificados.
+Executa uma Catmull-Rom, usando os vetores 4D especificados.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,55 +44,55 @@ D3DXVECTOR4* D3DXVec4CatmullRom(
 
 <dl> <dt>
 
-*pout* \[ entrada, saída\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR4**](../direct3d9/d3dxvector4.md)\***
 
-Ponteiro para o [**D3DXVECTOR4**](d3d10-d3dxvector4.md) que é o resultado da operação.
+Ponteiro para [**o D3DXVECTOR4**](d3d10-d3dxvector4.md) que é o resultado da operação.
 
 </dd> <dt>
 
-*pV0* \[ no\]
+*pV0* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR4**](../direct3d9/d3dxvector4.md) \***
 
-Ponteiro para uma estrutura de D3DXVECTOR4 de origem, um vetor de posição.
+Ponteiro para uma estrutura D3DXVECTOR4 de origem, um vetor de posição.
 
 </dd> <dt>
 
-*pV1* \[ no\]
+*pV1* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR4**](../direct3d9/d3dxvector4.md) \***
 
-Ponteiro para uma estrutura de D3DXVECTOR4 de origem, um vetor de posição.
+Ponteiro para uma estrutura D3DXVECTOR4 de origem, um vetor de posição.
 
 </dd> <dt>
 
-*pV2* \[ no\]
+*pV2* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR4**](../direct3d9/d3dxvector4.md) \***
 
-Ponteiro para uma estrutura de D3DXVECTOR4 de origem, um vetor de posição.
+Ponteiro para uma estrutura D3DXVECTOR4 de origem, um vetor de posição.
 
 </dd> <dt>
 
-*pV3* \[ no\]
+*pV3* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR4**](../direct3d9/d3dxvector4.md) \***
 
-Ponteiro para uma estrutura de D3DXVECTOR4 de origem, um vetor de posição.
+Ponteiro para uma estrutura D3DXVECTOR4 de origem, um vetor de posição.
 
 </dd> <dt>
 
 *s* \[ em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Fator de ponderação. Consulte Observações.
 
@@ -102,11 +102,11 @@ Fator de ponderação. Consulte Observações.
 
 Tipo: **[ **D3DXVECTOR4**](../direct3d9/d3dxvector4.md)\***
 
-Ponteiro para uma estrutura D3DXVECTOR4 que é o resultado da interpolação de Catmull-Rom.
+Ponteiro para uma estrutura D3DXVECTOR4 que é o resultado da interpolação Catmull-Rom dados.
 
 ## <a name="remarks"></a>Comentários
 
-Considerando quatro pontos (P1, P2, P3, P4), encontre uma função Q (s) de modo que:
+Considerando quatro pontos (p1, p2, p3, p4), encontre uma função Q(s) de forma que:
 
 
 ```
@@ -118,7 +118,7 @@ Q(s) is parallel to the line joining p2 to p4 when s is 1.
 
 
 
-O Catmull-Rom spline pode ser derivado do spline Hermite por meio da configuração:
+O Catmull-Rom spline pode ser derivado do spline hermite definindo:
 
 
 ```
@@ -134,13 +134,13 @@ em que:
 
 v1 é o conteúdo de pV0.
 
-V2 no conteúdo de pV1.
+v2 no conteúdo de pV1.
 
-P3 é o conteúdo de pV2.
+p3 é o conteúdo de pV2.
 
-P4 é o conteúdo de pV3.
+p4 é o conteúdo de pV3.
 
-Usando a equação de spline Hermite:
+Usando a equação de spline hermite:
 
 
 ```
@@ -149,7 +149,7 @@ Q(s) = (2s3 - 3s2 + 1)v1 + (-2s3 + 3s2)v2 + (s3 - 2s2 + s)t1 + (s3 - s2)t2
 
 
 
-e a substituição para v1, v2, T1, T2 produz:
+e substituir por v1, v2, t1, t2 produz:
 
 
 ```
@@ -158,7 +158,7 @@ Q(s) = (2s3 - 3s2 + 1)p2 + (-2s3 + 3s2)p3 + (s3 - 2s2 + s)(p3 - p1) / 2 + (s3 - 
 
 
 
-Isso pode ser reorganizado como:
+Isso pode ser reorganizar como:
 
 
 ```
@@ -173,11 +173,11 @@ Q(s) = [(-s3 + 2s2 - s)p1 + (3s3 - 5s2 + 2)p2 + (-3s3 + 4s2 + s)p3 + (s3 - s2)p4
 
 | Requisito | Valor |
 |-------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3DX10Math. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3DX10Math.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

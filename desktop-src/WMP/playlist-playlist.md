@@ -1,9 +1,9 @@
 ---
-title: PLAYLIST. playlist
-description: O atributo playlist especifica ou recupera o objeto playlist ao qual o elemento PLAYLIST fornece uma interface.
+title: PLAYLIST.playlist
+description: O atributo playlist especifica ou recupera o objeto Playlist para o que o elemento PLAYLIST fornece uma interface.
 ms.assetid: 4cfbf9d1-8381-4f59-8e6f-9b07f5642c39
 keywords:
-- PLAYLIST. playlist do Windows Media Player
+- PLAYLIST.playlist Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8bb9fde4af32356da79e7c8941b76f51e0714b4f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7d7a62fd76fd3a458640c417c2de50af510ffbb96780ed4f91cb2355564df8d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105765639"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118995646"
 ---
-# <a name="playlistplaylist"></a>PLAYLIST. playlist
+# <a name="playlistplaylist"></a>PLAYLIST.playlist
 
-O atributo **playlist** especifica ou recupera o objeto **playlist** ao qual o elemento **playlist** fornece uma interface.
+O **atributo playlist** especifica ou recupera o objeto **Playlist** para o que o elemento **PLAYLIST** fornece uma interface.
 
 ``` syntax
         elementID.playlist
@@ -29,11 +29,11 @@ O atributo **playlist** especifica ou recupera o objeto **playlist** ao qual o e
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Este atributo é um objeto de **playlist** de leitura/gravação sem valor padrão.
+Esse atributo é um objeto **playlist** de leitura/gravação sem valor padrão.
 
 ## <a name="remarks"></a>Comentários
 
-Se a playlist especificada for inválida ou se nenhum valor for especificado, o elemento **playlist** exibirá o item de mídia em execução no momento.
+Se a playlist especificada for inválida ou se nenhum valor for especificado, o elemento **PLAYLIST** exibirá o item de mídia atualmente em reprodução.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -41,7 +41,7 @@ Se a playlist especificada for inválida ou se nenhum valor for especificado, o 
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior<br/> |
 
 
 
@@ -52,7 +52,7 @@ Se a playlist especificada for inválida ou se nenhum valor for especificado, o 
 [**Elemento PLAYLIST**](playlist-element.md)
 </dt> <dt>
 
-[**Objeto playlist**](playlist-object.md)
+[**Objeto Playlist**](playlist-object.md)
 </dt> </dl>
 
  

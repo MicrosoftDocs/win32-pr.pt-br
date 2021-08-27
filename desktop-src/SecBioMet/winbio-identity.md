@@ -1,9 +1,9 @@
 ---
-title: Estrutura de WINBIO_IDENTITY (WinBio \_ Types. h)
+title: WINBIO_IDENTITY estrutura (Tipos \_ winbio.h)
 description: Contém um valor de identificação associado a um modelo biométrico.
 ms.assetid: 58a5f4ba-2f58-466c-90fd-9480c3c095db
 keywords:
-- API de Windows Biometric Framework de estrutura de WINBIO_IDENTITY
+- WINBIO_IDENTITY estrutura Windows API do Biometric Framework
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8092754b9107029e0be5800bbd5bc98bc3efb91c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c677a341386bcc937061798f406397028c23c10b65989480da975a9fdf81a3c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085661"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118910114"
 ---
-# <a name="winbio_identity-structure"></a>\_Estrutura de identidade WINBIO
+# <a name="winbio_identity-structure"></a>Estrutura WINBIO \_ IDENTITY
 
-A estrutura de **\_ identidade WINBIO** contém um valor de identificação associado a um modelo biométrico.
+A **estrutura WINBIO \_ IDENTITY** contém um valor de identificação associado a um modelo biométrico.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,10 +58,10 @@ Especifica o formato das informações de identidade contidas nesta estrutura. E
 
 | Valor                                                                                                                                                                                         | Significado                                                                         |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
-| <span id="WINBIO_ID_TYPE_NULL"></span><span id="winbio_id_type_null"></span><dl> <dt>**\_tipo de ID WINBIO \_ \_ NULL**</dt> </dl>             | O modelo não tem nenhuma ID associada.<br/>                                   |
-| <span id="WINBIO_ID_TYPE_WILDCARD"></span><span id="winbio_id_type_wildcard"></span><dl> <dt>**\_tipo de ID WINBIO \_ \_ curinga**</dt> </dl> | A estrutura corresponde a todas as identidades de modelo.<br/>                       |
-| <span id="WINBIO_ID_TYPE_GUID"></span><span id="winbio_id_type_guid"></span><dl> <dt>**\_GUID do \_ tipo de ID de WINBIO \_**</dt> </dl>             | A estrutura contém um GUID associado ao modelo.<br/>          |
-| <span id="WINBIO_ID_TYPE_SID"></span><span id="winbio_id_type_sid"></span><dl> <dt>**\_SID do \_ tipo de ID de WINBIO \_**</dt> </dl>                | A estrutura contém o SID da conta associado ao modelo.<br/> |
+| <span id="WINBIO_ID_TYPE_NULL"></span><span id="winbio_id_type_null"></span><dl> <dt>**TIPO \_ DE ID \_ WINBIO \_ NULL**</dt> </dl>             | O modelo não tem nenhuma ID associada.<br/>                                   |
+| <span id="WINBIO_ID_TYPE_WILDCARD"></span><span id="winbio_id_type_wildcard"></span><dl> <dt>**CURINGA DE \_ TIPO DE ID \_ \_ WINBIO**</dt> </dl> | A estrutura corresponde a todas as identidades de modelo.<br/>                       |
+| <span id="WINBIO_ID_TYPE_GUID"></span><span id="winbio_id_type_guid"></span><dl> <dt>**GUID DE \_ TIPO DE ID \_ DO WINBIO \_**</dt> </dl>             | A estrutura contém um GUID associado ao modelo.<br/>          |
+| <span id="WINBIO_ID_TYPE_SID"></span><span id="winbio_id_type_sid"></span><dl> <dt>**SID DE \_ TIPO DE ID \_ \_ DO WINBIO**</dt> </dl>                | A estrutura contém o SID da conta associado ao modelo.<br/> |
 
 
 
@@ -72,35 +72,35 @@ Especifica o formato das informações de identidade contidas nesta estrutura. E
 **Valor**
 </dt> <dd>
 
-Uma União que pode conter um dos seguintes valores:
+Uma união que pode conter um dos seguintes valores:
 
 <dl> <dt>
 
 **Nulo**
 </dt> <dd>
 
-Contém 1 se o membro do **tipo** for **WINBIO \_ ID \_ Type \_ NULL**.
+Conterá 1 se **o membro Type** for **WINBIO \_ ID TYPE \_ \_ NULL.**
 
 </dd> <dt>
 
-**Amplia**
+**Curinga**
 </dt> <dd>
 
-Contém 1 se o membro de **tipo** for um **tipo de \_ ID WINBIO \_ \_ curinga**.
+Conterá 1 se **o membro Type** for **WINBIO \_ ID TYPE \_ \_ WILDCARD**.
 
 </dd> <dt>
 
 **TemplateGuid**
 </dt> <dd>
 
-Contém um valor de GUID de 128 bits que identifica o modelo se o membro de **tipo** for o **tipo de \_ ID WINBIO \_ \_ GUID**.
+Contém um valor guid de 128 bits que identifica o modelo se o membro **Type** for **WINBIO \_ ID \_ TYPE \_ GUID**.
 
 </dd> <dt>
 
 **AccountSid**
 </dt> <dd>
 
-Uma estrutura que contém um SID de conta se o membro do **tipo** for **WINBIO \_ ID do \_ tipo \_ Sid**.
+Uma estrutura que contém um SID de conta se **o membro Type** for **WINBIO \_ ID TYPE \_ \_ SID.**
 
 <dl> <dt>
 
@@ -137,9 +137,9 @@ Essa estrutura é usada nas seguintes funções:
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                                    |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                                                       |
-| parâmetro<br/>                   | <dl> <dt>WinBio \_ Types. h (inclui WinBio. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                                                    |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/>                                                       |
+| parâmetro<br/>                   | <dl> <dt>Winbio \_ types.h (inclua Winbio.h)</dt> </dl> |
 
 
 

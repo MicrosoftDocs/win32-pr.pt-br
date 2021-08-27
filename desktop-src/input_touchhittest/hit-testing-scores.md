@@ -1,6 +1,6 @@
 ---
-title: Pontuações de teste de colisão de toque
-description: As constantes a seguir identificam as possíveis pontuações de teste de clique para um objeto, em relação a outros objetos que interseccionam a área de contato de toque.
+title: Pontuações de teste de toque de toque
+description: As constantes a seguir identificam as pontuações de teste de acerto possíveis para um objeto, em relação a outros objetos que intersectam a área de contato de toque.
 ms.assetid: EACDE6DB-ADBD-4F0C-8C31-7321AB6A73EA
 topic_type:
 - apiref
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 ms.topic: article
 ms.date: 02/07/2020
-ms.openlocfilehash: f6590e7d56c1c9d92f0ff20524b6e4222d8655b6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 18b321272637f4e6931bdc9115e64f8b0553e90e94d8013147ca7a577bad1eb3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499321"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118758008"
 ---
-# <a name="touch-hit-testing-scores"></a>Pontuações de teste de colisão de toque
+# <a name="touch-hit-testing-scores"></a>Pontuações de teste de toque de toque
 
-As constantes a seguir identificam as possíveis pontuações de teste de clique para um objeto, em relação a outros objetos que interseccionam a área de contato de toque.
+As constantes a seguir identificam as pontuações de teste de acerto possíveis para um objeto, em relação a outros objetos que intersectam a área de contato de toque.
 
 | Constante/valor | Descrição |
 |---|---|
@@ -33,6 +33,6 @@ As constantes a seguir identificam as possíveis pontuações de teste de clique
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                           |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                           |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                            |
-| parâmetro<br/>                   | WinUser. h |
+| Cabeçalho<br/>                   | Winuser.h |

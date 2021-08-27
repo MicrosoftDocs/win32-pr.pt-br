@@ -12,16 +12,16 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 25e6ae1ab657d92dda0ad421b650eaaa7076bd63
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 196f25dcaaf8eba39038a4e1c7aac699abde9b597058876466376aa73f130abf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105747854"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119007984"
 ---
 # <a name="iscardfileaccessgetproperties-method"></a>Método ISCardFileAccess:: GetProperties
 
-\[O método **GetProperties** está disponível para uso nos sistemas operacionais especificados na seção requisitos. Ele não está disponível para uso no Windows Server 2003 com Service Pack 1 (SP1) e posterior, no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. Os [módulos de cartão inteligente](/previous-versions/windows/desktop/secsmart/smart-card-modules) fornecem funcionalidade semelhante.\]
+\[O método **GetProperties** está disponível para uso nos sistemas operacionais especificados na seção requisitos. ele não está disponível para uso no Windows server 2003 com Service Pack 1 (SP1) e posterior, Windows Vista, Windows Server 2008 e versões subsequentes do sistema operacional. Os [módulos de cartão inteligente](/previous-versions/windows/desktop/secsmart/smart-card-modules) fornecem funcionalidade semelhante.\]
 
 O método **GetProperties** recupera os dados primitivos referenciados por TLVs (marca, comprimento, valor) para o objeto especificado.
 
@@ -86,7 +86,7 @@ Ponteiro para estruturas TLV cujo valor foi recuperado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um dos seguintes valores possíveis.
 
@@ -115,8 +115,8 @@ Além dos códigos de erro COM listados acima, essa interface pode retornar um c
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>          |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/> |
 | Fim do suporte do cliente<br/>    | Windows XP<br/>                                |
 | Fim do suporte do servidor<br/>    | Windows Server 2003<br/>                       |
 

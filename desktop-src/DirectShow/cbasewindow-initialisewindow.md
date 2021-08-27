@@ -1,7 +1,7 @@
 ---
-description: O método InitialiseWindow Inicializa a janela.
+description: O método InitialiseWindow inicializa a janela.
 ms.assetid: 0cf07714-6846-4271-8095-bc4ab865171f
-title: CBaseWindow.Inimétodo tialiseWindow (Winutil. h)
+title: CBaseWindow.Inimétodo tialiseWindow (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 75668846c700c33a26b7bb7ad2af2a3fd6e8eea2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f260f60111f715bfce357e264b65bb4b821c5ca890d39d4d54e7269a191df303
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105812853"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118954655"
 ---
 # <a name="cbasewindowinitialisewindow-method"></a>CBaseWindow.Inimétodo tialiseWindow
 
@@ -42,10 +42,10 @@ virtual HRESULT InitialiseWindow(
 
 <dl> <dt>
 
-*HWND* 
+*Hwnd* 
 </dt> <dd>
 
-Identificador para a janela.
+Identificador da janela.
 
 </dd> </dl>
 
@@ -55,9 +55,9 @@ Retorna S \_ OK.
 
 ## <a name="remarks"></a>Comentários
 
-Por padrão, esse método recupera um identificador para o contexto de dispositivo (DC) da janela e cria um controlador de domínio de memória compatível. No entanto, se o valor do sinalizador [**CBaseWindow:: m \_ BDoGetDC**](cbasewindow-m-bdogetdc.md) for **false**, esse método não recuperará os contextos do dispositivo. O DC de memória é útil para selecionar bitmaps antes de blittable para a janela.
+Por padrão, esse método recupera um handle para o DC (contexto de dispositivo) da janela e cria um DC de memória compatível. Se o valor do [**sinalizador CBaseWindow::m \_ bDoGetDC**](cbasewindow-m-bdogetdc.md) for **FALSE,** no entanto, esse método não recuperará os contextos do dispositivo. O DC de memória é útil para selecionar bitmaps antes de blitá-los na janela.
 
-O método [**CBaseWindow::D ocreatewindow**](cbasewindow-docreatewindow.md) chama esse método.
+O [**método CBaseWindow::D oCreateWindow**](cbasewindow-docreatewindow.md) chama esse método.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,8 +65,8 @@ O método [**CBaseWindow::D ocreatewindow**](cbasewindow-docreatewindow.md) cham
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Winutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

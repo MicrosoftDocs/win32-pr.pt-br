@@ -9,12 +9,12 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 6f966ab31644a41ff745e19b99fb06be8691a2d7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aea8cb7db76cf77f3ac8f694412a937d5dfaf2e5c879ad81245edd1f75e9ab98
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967353"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119032854"
 ---
 # <a name="conversion-functions"></a>Funções de Conversão
 
@@ -109,7 +109,7 @@ ms.locfileid: "104967353"
 -   [**LongToUInt8**](/windows/desktop/api/intsafe/nf-intsafe-longtouint8)
 -   [**LongToUIntPtr**](/windows/desktop/api/Intsafe/nf-intsafe-longtouintptr)
 -   [**LongToULong**](/windows/desktop/api/Intsafe/nf-intsafe-longtoulong)
--   [**LongToULongLong**](/windows/desktop/api/Intsafe/nf-intsafe-longtoulonglong)
+-   [**LongTouLongLong**](/windows/desktop/api/Intsafe/nf-intsafe-longtoulonglong)
 -   [**LongToULongPtr**](/windows/desktop/api/Intsafe/nf-intsafe-longtoulongptr)
 -   [**LongToUShort**](/windows/desktop/api/Intsafe/nf-intsafe-longtoushort)
 -   [**ShortToByte**](/previous-versions/windows/desktop/legacy/bb762359(v=vs.85))

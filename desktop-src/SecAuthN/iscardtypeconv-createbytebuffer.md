@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: ab69c8061d2e2740e652e29b2fe6407574fe7076
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e95ab8989027cb79dfd48720b08d27042c7bd8f9252d1438152dafbae017d762
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011083"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118922405"
 ---
 # <a name="iscardtypeconvcreatebytebuffer-method"></a>Método ISCardTypeConv:: CreateByteBuffer
 
-\[O método **CreateByteBuffer** está disponível para uso nos sistemas operacionais especificados na seção requisitos. Ele não está disponível para uso no Windows Server 2003 com Service Pack 1 (SP1) e posterior, no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. Os [módulos de cartão inteligente](/previous-versions/windows/desktop/secsmart/smart-card-modules) fornecem funcionalidade semelhante.\]
+\[O método **CreateByteBuffer** está disponível para uso nos sistemas operacionais especificados na seção requisitos. ele não está disponível para uso no Windows server 2003 com Service Pack 1 (SP1) e posterior, Windows Vista, Windows Server 2008 e versões subsequentes do sistema operacional. Os [módulos de cartão inteligente](/previous-versions/windows/desktop/secsmart/smart-card-modules) fornecem funcionalidade semelhante.\]
 
 O método **CreateByteBuffer** cria um buffer universal de bytes mapeados em um objeto **IStream** ([**IByteBuffer**](ibytebuffer.md)).
 
@@ -58,13 +58,13 @@ Ponteiro para o objeto IStream a ser retornado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Os possíveis valores de retorno são os seguintes:
 
 
 
-| Código de retorno                                                                                   | Descrição                                                                                      |
+| Código de retorno                                                                                   | Description                                                                                      |
 |-----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>          | Memória alocada com êxito.<br/>                                                        |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Há algo errado com um ou mais dos parâmetros passados para a função.<br/> |
@@ -88,8 +88,8 @@ Para criar um SAFEARRAY de automação de caracteres não assinados (bytes), cha
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                    |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                    |
 | Fim do suporte do cliente<br/>    | Windows XP<br/>                                                                   |
 | Fim do suporte do servidor<br/>    | Windows Server 2003<br/>                                                          |
 | parâmetro<br/>                   | <dl> <dt>Scarddat. h</dt> </dl>   |

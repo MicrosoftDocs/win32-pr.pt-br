@@ -1,36 +1,36 @@
 ---
-description: 'O exemplo a seguir funciona em conjunto com o programa no programa C de exemplo: enviar e receber uma mensagem assinada e criptografada. Ele lê a mensagem assinada e criptografada e, em seguida, descriptografa e verifica a mensagem.'
+description: 'O exemplo a seguir funciona em conjunto com o programa no Programa C de Exemplo: enviando e recebendo uma mensagem assinada e criptografada. Ele lê a mensagem assinada e criptografada e, em seguida, descriptografa e verifica a mensagem.'
 ms.assetid: 65ca30ba-a184-46ef-808c-e2fedcc86079
-title: 'Programa C de exemplo: recebendo uma mensagem assinada e criptografada'
+title: 'Exemplo de programa C: recebendo uma mensagem assinada e criptografada'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a1d97b50eb401568ebf1732f347f800eed0c26f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7b9e468eeb2204534bff13e756c72a0a6c7ca583b5493338864b52fef6f44590
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922118"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119007584"
 ---
-# <a name="example-c-program-receiving-a-signed-and-encrypted-message"></a>Programa C de exemplo: recebendo uma mensagem assinada e criptografada
+# <a name="example-c-program-receiving-a-signed-and-encrypted-message"></a>Exemplo de programa C: recebendo uma mensagem assinada e criptografada
 
-O exemplo a seguir funciona em conjunto com o programa no [programa C de exemplo: enviar e receber uma mensagem assinada e criptografada](example-c-program-sending-and-receiving-a-signed-and-encrypted-message.md). Ele lê a mensagem assinada e criptografada e, em seguida, descriptografa e verifica a mensagem.
+O exemplo a seguir funciona em conjunto com o programa no Programa C de Exemplo: enviando e [recebendo uma mensagem assinada e criptografada.](example-c-program-sending-and-receiving-a-signed-and-encrypted-message.md) Ele lê a mensagem assinada e criptografada e, em seguida, descriptografa e verifica a mensagem.
 
-Para descriptografar e verificar a mensagem, a [*chave privada*](../secgloss/p-gly.md) do receptor pretendido da mensagem deve estar disponível. O certificado do assinante está incluído no [*blob*](../secgloss/b-gly.md) de mensagens lido no arquivo.
+Para descriptografar e verificar a mensagem, a chave [*privada*](../secgloss/p-gly.md) do receptor pretendido da mensagem deve estar disponível. O certificado do signante está incluído na mensagem [*BLOB*](../secgloss/b-gly.md) lida do arquivo.
 
 Este exemplo ilustra as seguintes tarefas:
 
--   Abrir e fechar repositórios de certificados do sistema.
--   Lendo um [**\_ \_ blob de nome de certificado**](/previous-versions/windows/desktop/legacy/aa381414(v=vs.85)) de um arquivo.
+-   Abrindo e fechando os armazenamentos de certificados do sistema.
+-   Lendo um [**\_ \_ BLOB DE NOME DO CERTIFICADO**](/previous-versions/windows/desktop/legacy/aa381414(v=vs.85)) de um arquivo.
 -   Inicializando estruturas de dados necessárias para descriptografar e verificar uma mensagem.
--   Chamar uma função CryptoAPI para localizar o tamanho necessário de um buffer, alocar o buffer do tamanho necessário e chamar a função CryptoAPI novamente para preencher o buffer. Para obter mais informações, consulte [recuperando dados de comprimento desconhecido](retrieving-data-of-unknown-length.md).
+-   Chamar uma função CryptoAPI para encontrar o tamanho necessário de um buffer, alocar o buffer do tamanho necessário e chamar a função CryptoAPI novamente para preencher o buffer. Para obter mais informações, [consulte Recuperando dados de comprimento desconhecido.](retrieving-data-of-unknown-length.md)
 
-Este exemplo usa as seguintes funções de CryptoAPI:
+Este exemplo usa as seguintes funções CryptoAPI:
 
--   [**CertOpenStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopenstore)
+-   [**Certopenstore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopenstore)
 -   [**CryptDecryptAndVerifyMessageSignature**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptdecryptandverifymessagesignature)
--   [**CertCloseStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore)
+-   [**Certclosestore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore)
 
-Este exemplo usa [**MyHandleError**](myhandleerror.md) para sair do programa normalmente no caso de qualquer falha. O código **MyHandleError** está incluído no exemplo e também pode ser encontrado junto com outras funções auxiliares em [funções uso geral](general-purpose-functions.md).
+Este exemplo usa [**MyHandleError**](myhandleerror.md) para sair do programa normalmente em caso de falha. O código **MyHandleError** está incluído no exemplo e também pode ser encontrado junto com outras funções auxiliares [em Uso Geral Functions](general-purpose-functions.md).
 
 
 ```C++

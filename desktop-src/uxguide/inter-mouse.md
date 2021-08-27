@@ -4,19 +4,19 @@ description: O mouse é o dispositivo de entrada primário usado para interagir 
 ms.assetid: 4d99287d-e908-4c8b-b4f6-6e8c91c6c93e
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 6462c69216ee9acb5149a01a805503cea721bb1c
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: e973ad46ec864c20ad7eef5708388f86e8489909df1fdae609106d1ca65d4614
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "103930073"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119030175"
 ---
 # <a name="mouse-and-pointers"></a>Mouse e ponteiros
 
 > [!NOTE]
-> Este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte da orientação ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais](/windows/uwp/design/).
+> este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte da orientação ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais](/windows/uwp/design/).
 
-O mouse é o dispositivo de entrada primário usado para interagir com objetos no Windows. A funcionalidade do mouse também pode abranger outros dispositivos apontadores, como trackball, touchpads e pontos de apontador incorporados em computadores notebook, canetas usadas com a tecnologia Tablet e Touch do Windows e, em computadores com telas de toque, até mesmo o dedo de um usuário.
+O mouse é o dispositivo de entrada primário usado para interagir com objetos no Windows. a funcionalidade do Mouse também pode abranger outros dispositivos apontadores, como trackball, touchpads e pontos de apontador criados em computadores notebook, canetas usadas com Tecnologia Windows Tablet and Touch e, em computadores com telas de toque, até mesmo o dedo de um usuário.
 
 > [!NOTE]
 > As diretrizes relacionadas à [acessibilidade](inter-accessibility.md), à [caneta](inter-pen.md)e ao [toque](inter-touch.md) são apresentadas em artigos separados.
@@ -31,7 +31,7 @@ Os dispositivos com o mouse geralmente têm um botão principal (geralmente o bo
 
 Todos os ponteiros, exceto o ponteiro ocupado, têm um ponto de acesso de pixel único que define o local exato da tela do mouse. O ponto de acesso determina qual objeto é afetado pelas ações do mouse. Os objetos definem uma zona de acesso, que é a área em que o ponto de acesso é considerado sobre o objeto. Normalmente, a zona quente coincide com as bordas de um objeto, mas pode ser maior para facilitar a execução do usuário.
 
-O cursor é a barra vertical piscando que é exibida quando o usuário está digitando em uma caixa de texto ou em outro editor de texto. O cursor é independente do ponteiro (por padrão, o Windows oculta o ponteiro enquanto o usuário está digitando).
+O cursor é a barra vertical piscando que é exibida quando o usuário está digitando em uma caixa de texto ou em outro editor de texto. o cursor é independente do ponteiro (por padrão, Windows oculta o ponteiro enquanto o usuário está digitando).
 
 ![captura de tela da caixa de texto com cursor ](images/inter-mouse-image2.png)
 
@@ -61,7 +61,7 @@ Por outro lado, os objetos com baixo custo são difíceis de descobrir. Esses ob
 
 ### <a name="single-click-or-double-click"></a>Clicar uma vez ou clicar duas vezes?
 
-O clique duplo é usado tão extensivamente na área de trabalho do Windows que talvez não pareça uma interação avançada. Por exemplo, abrir pastas, programas ou documentos no painel arquivo do Windows Explorer é executado clicando duas vezes em. Abrir um atalho na área de trabalho do Windows também usa um clique duplo. Por outro lado, a abertura de pastas ou programas no menu iniciar requer um único clique.
+o clique duplo é usado tão extensivamente na área de trabalho Windows que talvez não pareça uma interação avançada. por exemplo, abrir pastas, programas ou documentos no painel arquivo do Windows Explorer é executado clicando duas vezes em. abrir um atalho na área de trabalho do Windows também usa um clique duplo. por outro lado, a abertura de pastas ou programas na menu Iniciar requer um único clique.
 
 Os objetos selecionáveis usam um clique único para executar a seleção, para que eles precisem de um clique duplo para abrir, enquanto objetos não selecionáveis exigem apenas um único clique para abrir. Essa distinção não é compreendida por muitos usuários (clicar em um ícone de programa está clicando em um ícone de programa, certo?) e, como resultado, alguns usuários simplesmente continuam clicando nos ícones até obter o que desejam.
 
@@ -98,244 +98,244 @@ A tabela a seguir descreve as interações e efeitos comuns do mouse.
 
 ### <a name="pointer-shapes"></a>Formas de ponteiro
 
-A tabela a seguir descreve as formas de ponteiro e usos comuns.
+A tabela a seguir descreve formas e usos de ponteiro comuns.
 
 | Forma | Nome | Quando usado |
 |:---|:---|:---|
-| ![captura de tela de ponteiro com forma de seta ](images/inter-mouse-image5.png)<br/>           | Seleção normal<br/>    | Usado para a maioria dos objetos.<br/>                                             |
-| ![captura de tela de mão com indicador de dedo de índice ](images/inter-mouse-image6.png)<br/>    | Selecionar link<br/>      | Usado para links de texto e gráficos devido à sua baixa viabilidade.<br/> |
-| ![captura de tela de ponteiro com forma de feixe ](images/inter-mouse-image7.png)<br/>          | Seleção de texto<br/>      | Usado para texto para indicar um local entre os caracteres.<br/>           |
-| ![captura de tela de ponteiro com forma de sinal de mais grande ](images/inter-mouse-image8.png)<br/> | Seleção de precisão<br/> | Usado para a interação gráfica e outra de duas dimensões.<br/>            |
+| ![captura de tela do ponteiro com forma de seta ](images/inter-mouse-image5.png)<br/>           | Seleção normal<br/>    | Usado para a maioria dos objetos.<br/>                                             |
+| ![captura de tela da mão com o dedo indicador apontando ](images/inter-mouse-image6.png)<br/>    | Seleção de link<br/>      | Usado para links de texto e gráficos devido à sua fraca governança.<br/> |
+| ![captura de tela do ponteiro com a forma de i-shape ](images/inter-mouse-image7.png)<br/>          | Seleção de texto<br/>      | Usado para texto para indicar um local entre caracteres.<br/>           |
+| ![captura de tela do ponteiro com forma grande de sinal de adoção ](images/inter-mouse-image8.png)<br/> | Seleção de precisão<br/> | Usado para interação gráfica e outra bidimensional.<br/>            |
 
-### <a name="compound-mouse-interactions"></a>Interações de mouse compostas
+### <a name="compound-mouse-interactions"></a>Interações compostas do mouse
 
 A tabela a seguir descreve as interações comuns do mouse.
 
 | Ação composta | Interação | Efeito típico | Ponteiros |
 |:---|:---|:---|:---|
-| Movimenta<br/>                | Se a movimentação for um modo (inserido fornecendo um comando), insira o modo, posicione o ponteiro sobre um objeto móvel, pressione o botão e mova o mouse, solte o botão do mouse. Nesse caso, o ponteiro muda de forma para indicar o modo.<br/> caso contrário, posicione o ponteiro sobre o apoio de um objeto móvel, pressione botão e mova o mouse, solte o botão do mouse. Nesse caso, o ponteiro não precisa alterar a forma.<br/> | o objeto é movido para a direção do movimento do ponteiro.<br/>            | move<br/> ![captura de tela de ponteiro com quatro setas ](images/inter-mouse-image9.png)<br/> usado para mover uma janela em qualquer direção.<br/> panorâmico<br/> ![captura de tela de ponteiro com forma de mão ](images/inter-mouse-image10.png)<br/> Usado para mover um objeto dentro de uma janela em qualquer direção.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| Redimensionamento<br/>              | Posicione o ponteiro sobre uma borda redimensionável ou um identificador de redimensionamento, pressione um botão do mouse e mova o mouse e solte o botão do mouse.<br/>                                                                                                                                                                                                                                                                                 | o objeto é redimensionado na direção do movimento do ponteiro.<br/>          | redimensionamento vertical e horizontal<br/> ![Captura de tela que mostra ponteiros acima.](images/inter-mouse-image11.png)![captura de tela de ponteiros para cima e para a direita à esquerda ](images/inter-mouse-image12.png)<br/> usado para redimensionar uma única dimensão.<br/> redimensionamento diagonal<br/> ![bb545459. mouse13 (en-US, msdn. 10). png](images/inter-mouse-image13.png)![captura de tela de ponteiros diagonais com dicas de seta](images/inter-mouse-image14.png)<br/> usado para redimensionar duas dimensões simultaneamente.<br/> redimensionamento de linha e coluna<br/> ![bb545459. mouse15 (en-US, msdn. 10). png](images/inter-mouse-image15.png)![captura de tela de ponteiros de seta com Crossbar ](images/inter-mouse-image16.png)<br/> Usado para redimensionar uma linha ou coluna em uma grade.<br/> |
-| Divisão<br/>             | Posicione o ponteiro sobre um divisor, pressione um botão do mouse e mova o mouse e solte o botão do mouse.<br/>                                                                                                                                                                                                                                                                                                          | a borda do painel de divisão se move na direção do movimento do ponteiro.<br/> | divisores de janela<br/> ![bb545459. mouse17 (en-US, msdn. 10). png](images/inter-mouse-image17.png)![captura de tela de ponteiros de seta com barra dupla ](images/inter-mouse-image18.png)<br/> Usado para redimensionar um painel de divisão vertical ou horizontalmente.<br/> |
-| Arrastando e soltando<br/> | Posicione o ponteiro sobre um objeto válido para arrastar, pressione um botão do mouse e mova o mouse para um destino de soltar e solte o botão do mouse.<br/> | o objeto é movido ou copiado para o destino de soltura.<br/>             | seleção normal<br/> ![captura de tela de foto, ponteiro padrão e InfoTip ](images/inter-mouse-image19.png)<br/> usado em destinos de arrastar válidos. também pode ter um InfoTip para indicar efeito específico.<br/> indisponível<br/> ![captura de tela do ícone pequeno bloqueado/offline ](images/inter-mouse-image20.png)<br/> Usado para indicar que uma superfície não é um destino de soltura válido.<br/> |
+| Movendo<br/>                | Se mover for um modo (inserido dando um comando), insira o modo , posicione o ponteiro sobre um objeto móvel, pressione o botão e mova o mouse, solte o botão do mouse. nesse caso, o ponteiro altera a forma para indicar o modo.<br/> caso contrário, posicione o ponteiro sobre o grabber de um objeto móvel, pressione o botão e mova o mouse, solte o botão do mouse. nesse caso, o ponteiro não precisa alterar a forma.<br/> | O objeto se move na direção do movimento do ponteiro.<br/>            | move<br/> ![captura de tela do ponteiro com quatro setas ](images/inter-mouse-image9.png)<br/> usado para mover uma janela em qualquer direção.<br/> panorâmico<br/> ![captura de tela do ponteiro com forma de mão ](images/inter-mouse-image10.png)<br/> Usado para mover um objeto dentro de uma janela em qualquer direção.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Redimensionamento<br/>              | Posiciona o ponteiro sobre uma borda resizável ou alça de reeslização, pressione um botão do mouse e mova o mouse e, em seguida, solte o botão do mouse.<br/>                                                                                                                                                                                                                                                                                 | O objeto resize na direção do movimento do ponteiro.<br/>          | resize vertical e horizontal<br/> ![Captura de tela que mostra ponteiros para cima para baixo.](images/inter-mouse-image11.png)![captura de tela de ponteiros para cima para baixo e para a direita ](images/inter-mouse-image12.png)<br/> usado para re dimensionar uma única dimensão.<br/> resize diagonal<br/> ![bb545459.mouse13(en-us,msdn.10).png](images/inter-mouse-image13.png)![captura de tela de ponteiros diagonais com dicas de seta](images/inter-mouse-image14.png)<br/> usado para re dimensionar duas dimensões simultaneamente.<br/> resize de linha e coluna<br/> ![bb545459.mouse15(en-us,msdn.10).png](images/inter-mouse-image15.png)![captura de tela de ponteiros de seta com barra cruzada ](images/inter-mouse-image16.png)<br/> Usado para reorganizar uma linha ou coluna em uma grade.<br/> |
+| Divisão<br/>             | Posiciona o ponteiro sobre um divisor, pressione um botão do mouse e mova o mouse e solte o botão do mouse.<br/>                                                                                                                                                                                                                                                                                                          | A borda do painel dividido se move na direção do movimento do ponteiro.<br/> | divisor de janela<br/> ![bb545459.mouse17(en-us,msdn.10).png](images/inter-mouse-image17.png)![captura de tela de ponteiros de seta com barra cruzada dupla ](images/inter-mouse-image18.png)<br/> Usado para reorganizar um painel de divisão vertical ou horizontalmente.<br/> |
+| Arrastando e soltando<br/> | Posiciona o ponteiro sobre um objeto válido para arrastar, pressione um botão do mouse e mova o mouse para um destino de soltar e solte o botão do mouse.<br/> | O objeto é movido ou copiado para o destino de soltar.<br/>             | seleção normal<br/> ![captura de tela de foto, ponteiro padrão e infotip ](images/inter-mouse-image19.png)<br/> usado em destinos de arrastar válidos. também pode ter uma infotip para indicar um efeito específico.<br/> indisponível<br/> ![captura de tela do pequeno ícone bloqueado/offline ](images/inter-mouse-image20.png)<br/> Usado para indicar que uma superfície não é um destino de soltar válido.<br/> |
 
 ### <a name="activity-indicators"></a>Indicadores de atividade
 
-A tabela a seguir mostra os ponteiros que os usuários veem ao executar uma ação que leva mais de alguns segundos para ser concluída.
+A tabela a seguir mostra ponteiros que os usuários veem ao executar uma ação que leva mais de alguns segundos para ser concluída.
 
 | Forma | Nome | Quando usado |
 |:---|:---|:---|
-| ![Captura de tela que mostra um ponteiro ' ocupado ' com formato de rosca.](images/inter-mouse-image21.png)<br/>          | Ponteiro ocupado<br/>                  | Usado para aguardar uma janela ser responsiva.<br/>                                  |
-| ![captura de tela do ponteiro e da seta moldados em forma de rosca](images/inter-mouse-image22.png)<br/> | Trabalhando em ponteiro em segundo plano<br/> | Usado para apontar, clicar, pressionar ou selecionar enquanto uma tarefa é concluída em segundo plano.<br/> |
+| ![Captura de tela que mostra um ponteiro "ocupado" em forma de rosca.](images/inter-mouse-image21.png)<br/>          | Ponteiro ocupado<br/>                  | Usado para aguardar uma janela se tornar responsiva.<br/>                                  |
+| ![captura de tela do ponteiro e da seta em forma de rosca](images/inter-mouse-image22.png)<br/> | Trabalhando no ponteiro em segundo plano<br/> | Usado para apontar, clicar, pressionar ou selecionar enquanto uma tarefa é concluída em segundo plano.<br/> |
 
-### <a name="hand-pointers"></a>Ponteiros à mão
+### <a name="hand-pointers"></a>Ponteiros de mão
 
-Os links de texto e gráficos usam um ponteiro de mão ou "vincular seleção" (uma mão com o indicador de dedo de índice ![captura de tela de mão com indicador de dedo de índice ](images/inter-mouse-image6.png)) devido à sua baixa viabilidade. Embora os links possam ter outras pistas visuais para indicar que são links (como sublinhados e posicionamento especial), exibir o ponteiro à mão em foco é a indicação definitiva de um link.
+Links de texto e elementos gráficos usam um ponteiro de mão ou "seleção de link" (uma mão com o dedo indicador apontando ![captura de tela da mão com o dedo indicador apontando ](images/inter-mouse-image6.png)) devido à sua fraca governança. Embora os links possam ter outras pistas visuais para indicar que são links (como sublinhados e posicionamento especial), exibir o ponteiro de mão ao passar o mouse é a indicação definitiva de um link.
 
-**Para evitar confusão, é imperativo não usar o ponteiro de mão para outras finalidades.** Por exemplo, os botões de comando já têm uma forte unificação e, portanto, não precisam de um ponteiro de mão. O ponteiro à mão deve significar "Este destino é um link" e nada mais.
+**Para evitar confusão, é imperativo não usar o ponteiro de mão para outras finalidades.** Por exemplo, os botões de comando já têm uma forte governança, portanto, eles não precisam de um ponteiro de mão. O ponteiro de mão deve significar "este destino é um link" e nada mais.
 
 ### <a name="custom-pointers"></a>Ponteiros personalizados
 
-O Windows dá suporte à criação de ponteiros personalizados. Para obter mais detalhes, consulte [definindo a imagem do cursor e a entrada do](../learnwin32/setting-the-cursor-image.md) [usuário: exemplo estendido](../learnwin32/user-input--extended-example.md).
+Windows dá suporte à criação de ponteiros personalizados. Para obter mais detalhes, consulte [Configurando a imagem do cursor e](../learnwin32/setting-the-cursor-image.md) a [entrada do usuário: Exemplo estendido.](../learnwin32/user-input--extended-example.md)
 
 Muitos aplicativos fornecem uma paleta de controles com ponteiros personalizados para dar suporte à funcionalidade do aplicativo.
 
-![captura de tela de paleta com spray – pode ponteiro ](images/inter-mouse-image23.png)
+![captura de tela da paleta com ponteiro de spray-can ](images/inter-mouse-image23.png)
 
-*O Microsoft Paint inclui uma paleta de funções diferentes, cada uma com um ponteiro exclusivo*
+*Microsoft Paint inclui uma paleta de funções diferentes, cada uma com um ponteiro exclusivo*
 
-### <a name="fitts-law"></a>Lei de Fitts
+### <a name="fitts-law"></a>Lei do Fitts
 
-Fitts ' Law é um princípio conhecido em design de interface gráfica do usuário Ergonomics que, essencialmente, diz:
+A Lei do Fitts é um princípio conhecido em design de interface gráfica do usuário que basicamente declara:
 
-- Quanto mais distante for o alvo, mais tempo levará para adquiri-lo com o mouse.
-- Quanto menor for o destino, mais tempo levará para adquiri-lo com o mouse.
+- Quanto mais distante for um destino, mais tempo demorará para adquira-lo com o mouse.
+- Quanto menor for o destino, mais tempo demorará para adquira-lo com o mouse.
 
-Assim, grandes destinos são bons. Certifique-se de tornar toda a área de destino clicável.
+Portanto, destinos grandes são bons. Certifique-se de tornar toda a área de destino clicável.
 
-| Incorreto | Correto (o destino inteiro é clicável) |
+| Incorreto | Correto (o destino inteiro pode ser clicado) |
 |:---|:---|
-| ![captura de tela do ícone com apenas um rótulo clicável ](images/inter-mouse-image24.png) | ![captura de tela de ícone clicável e rótulo clicável ](images/inter-mouse-image25.png) |
+| ![captura de tela do ícone com apenas rótulo clicável ](images/inter-mouse-image24.png) | ![captura de tela do ícone clicável e do rótulo clicável ](images/inter-mouse-image25.png) |
 
-Você pode alterar dinamicamente o tamanho de um destino ao apontar para torná-lo mais fácil de adquirir.
+Você pode alterar dinamicamente o tamanho de um destino ao apontar para facilitar a aquisição.
 
 ![captura de tela do mapa de caracteres com número ampliado ](images/inter-mouse-image26.png)
 
 *Um destino se torna maior quando o usuário está apontando para facilitar a aquisição*
 
-E os destinos de fechamento também são bons. Localize itens clicáveis perto de onde eles serão mais provavelmente usados. Na imagem a seguir, a paleta de cores está muito longe do seletor de ferramentas.
+E os destinos de fechamento também são bons. Localize itens clicáveis perto de onde eles provavelmente serão usados. Na imagem a seguir, a paleta de cores está muito longe do seletor de ferramentas.
 
 ![captura de tela da paleta de cores separada das ferramentas ](images/inter-mouse-image27.png)
 
-*A paleta de cores está muito longe de onde é provável que seja usada*
+*A paleta de cores está muito longe de onde é provável que ela seja usada*
 
-Considere o fato de que o local do ponteiro atual do usuário está tão próximo quanto um destino pode ser, tornando-o trivial de adquirir. Portanto, os menus de contexto aproveitam totalmente a lei de Fitts, assim como as mini barras de ferramentas usadas pelo Microsoft Office.
+Considere o fato de que o local atual do ponteiro do usuário é o mais próximo possível de um destino, tornando trivial a aquisição. Assim, os menus de contexto aproveitam ao máximo a lei do Fitts, assim como as minibaras de ferramentas usadas pelo Microsoft Office.
 
-![captura de tela de ponteiros perto da lista suspensa ](images/inter-mouse-image28.png)
+![captura de tela de ponteiros próximo à lista de listas listadas ](images/inter-mouse-image28.png)
 
 *O local do ponteiro atual é sempre o mais fácil de adquirir*
 
-Além disso, considere os dispositivos de entrada alternativos ao determinar os tamanhos de objeto. Por exemplo, o tamanho mínimo de destino recomendado para Touch é 23x23 pixels (13x13 DLUs).
+Além disso, considere dispositivos de entrada alternativos ao determinar tamanhos de objetos. Por exemplo, o tamanho mínimo de destino recomendado para toque é de 23x23 pixels (13x13 DLUs).
 
 ### <a name="environments-without-a-mouse"></a>Ambientes sem um mouse
 
-Nem todos os ambientes Windows têm um mouse. Por exemplo, os quiosques raramente têm um mouse e geralmente têm uma tela sensível ao contrário. Isso significa que os usuários podem executar interações simples, como clicar com o botão esquerdo e, talvez, arrastar e soltar. No entanto, eles não podem focalizar, clicar com o botão direito do mouse ou clicar duas vezes em. Essa situação é fácil de criar porque essas limitações geralmente são conhecidas com antecedência.
+Nem todos Windows ambientes têm um mouse. Por exemplo, os quiosques raramente têm um mouse e geralmente têm uma tela sensível ao toque. Isso significa que os usuários podem executar interações simples, como clicar com o botão esquerdo e, talvez, arrastar e soltar. No entanto, eles não podem passar o mouse, clicar com o botão direito do mouse ou clicar duas vezes. Essa situação é fácil de projetar porque essas limitações geralmente são conhecidas com antecedência.
 
-O uso de um mouse requer habilidades de motor finos e, como resultado, nem todos os usuários podem usar um mouse. Para tornar seu software acessível para o público mais amplo, certifique-se de que todas as interações para as quais as habilidades do motor fino não sejam essenciais podem ser executadas usando o teclado em vez disso.
+Usar um mouse requer habilidades motoras finas e, como resultado, nem todos os usuários podem usar um mouse. Para tornar seu software acessível ao público mais amplo, certifique-se de que todas as interações para as quais as habilidades motoras finas não são essenciais podem ser executadas usando o teclado.
 
-Para obter mais informações e diretrizes, consulte [acessibilidade](inter-accessibility.md).
+Para obter mais informações e diretrizes, consulte [Acessibilidade.](inter-accessibility.md)
 
 **Se você fizer apenas quatro coisas...**
 
-1.  Forneça comportamentos de interações com o mouse consistentes com seus efeitos padrão, usando os ponteiros padrão sempre que apropriado.
-2.  Limite as interações de mouse avançadas (aquelas que exigem cliques com o botão direito, vários cliques ou chaves de modificadores) para tarefas avançadas direcionadas a usuários avançados.
-3.  Atribua comportamentos avançados de interações de mouse consistentes e previsíveis para que eles possam ser usados com eficiência.
-4.  Verifique se o programa fornece a capacidade de reverter ou corrigir qualquer ação indesejada, especialmente para comandos destrutivos. Ações acidentais são mais prováveis ao usar a manipulação direta.
+1.  Dê comportamentos de interações do mouse consistentes com seus efeitos padrão, usando os ponteiros padrão sempre que apropriado.
+2.  Limite interações avançadas do mouse (aquelas que exigem cliques com o botão direito do mouse, vários cliques ou teclas modificadora) a tarefas avançadas direcionadas a usuários avançados.
+3.  Atribua comportamentos consistentes e previsíveis às interações avançadas do mouse para que elas possam ser usadas com eficiência.
+4.  Certifique-se de que seu programa fornece a capacidade de reverter ou corrigir quaisquer ações indesejáveis, especialmente para comandos destrutivas. Ações acidentais são mais prováveis ao usar a manipulação direta.
 
 ## <a name="guidelines"></a>Diretrizes
 
-### <a name="click-affordance"></a>Clique em pagar
+### <a name="click-affordance"></a>Clique em recursos
 
-- **Nunca exija que os usuários cliquem em um objeto para determinar se ele é clicável.** Os usuários devem ser capazes de determinar a possibilidade de clicar por inspeção visual apenas.
-  - A interface do usuário primária (como botões de confirmação) deve ter uma premissa de clique estático. Os usuários não devem ter que focalizar para descobrir a interface do usuário principal.
-  - A interface do usuário secundária (como comandos secundários ou controles de divulgação progressiva) pode exibir a sua preposição de clique ao focalizar.
-  - Os [links de texto](ctrl-links.md) devem sugerir estaticamente o texto do link e, em seguida, exibir as respectivas preparações de clique (sublinhado ou outra alteração de apresentação, com [ponteiro à mão](#hand-pointers)) ao focalizar.
-  - Os [links gráficos](ctrl-links.md) exibem apenas um ponteiro de mão ao focalizar.
-- **Use o ponteiro de mão (ou "vincular seleção") somente para links de texto e gráficos.** Caso contrário, os usuários teriam que clicar em objetos para determinar se eles são links.
+- **Nunca exigir que os usuários cliquem em um objeto para determinar se ele é clicável.** Os usuários devem ser capazes de determinar a capacidade de clique somente pela inspeção visual.
+  - A interface do usuário primária (como botões de commit) deve ter uma capacidade de clique estático. Os usuários não devem ter que passar o mouse para descobrir a interface do usuário primária.
+  - A interface do usuário secundária (como comandos secundários ou controles de divulgação progressiva) pode exibir sua responsabilidade de clique ao passar o mouse.
+  - [Os links de](ctrl-links.md) texto devem sugerir estaticamente o texto do link e exibir a capacidade de clique (sublinhado ou outra alteração de apresentação, com ponteiro [de](#hand-pointers)mão ) ao passar o mouse.
+  - [Os links gráficos](ctrl-links.md) exibem apenas um ponteiro de mão ao passar o mouse.
+- **Use o ponteiro de mão (ou "seleção de link") somente para links de texto e gráficos.** Caso contrário, os usuários teriam que clicar em objetos para determinar se são links.
 
-### <a name="standard-mouse-button-interactions"></a>Interações com o botão do mouse padrão
+### <a name="standard-mouse-button-interactions"></a>Interações padrão do botão do mouse
 
-A tabela a seguir resume as interações do botão do mouse que se aplicam na maioria dos casos:
+A tabela a seguir resume as interações de botão do mouse que se aplicam na maioria dos casos:
 
 
 
 | Interação                                    | Efeito                                                                                                                                                                                                                                                          |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Passar o mouse<br/>                    | Target exibe sua dica de ferramenta, InfoTip ou equivalente.<br/>                                                                                                                                                                                           |
-| Clique com o botão esquerdo simples<br/>        | Ativa ou seleciona o objeto. Para texto, define o ponto de inserção.<br/>                                                                                                                                                                           |
-| Único clique com o botão direito do mouse<br/>       | Seleciona o objeto e exibe seu menu de contexto.<br/>                                                                                                                                                                                              |
-| Clique duas vezes com o botão esquerdo<br/>        | Ativa ou seleciona o objeto e executa o comando padrão. Para texto, seleciona o Word no ponto de inserção (um terceiro clique seleciona a frase ou o parágrafo).<br/>                                                                            |
-| Clique duas vezes com o botão direito<br/>       | O mesmo que clicar com o botão direito do mouse.<br/>                                                                                                                                                                                                                    |
-| Shift único clique com o botão esquerdo<br/>  | Para objetos selecionáveis, o estende a seleção de forma contígua. Caso contrário, o mesmo ocorre com o clique com o botão esquerdo com as possíveis modificações. Por exemplo, no Paint, desenhar uma elipse com o modificador de tecla Shift resulta em desenho de um círculo.<br/>                  |
-| Shift único clique com o botão direito do mouse<br/> | O mesmo que Shift único clique com o botão esquerdo.<br/>                                                                                                                                                                                                               |
-| Shift duplo clique com o botão esquerdo<br/>  | O mesmo que Shift único clique com o botão esquerdo e executa o comando padrão em toda a seleção.<br/>                                                                                                                                                     |
-| Shift clique com o botão direito do mouse<br/> | O mesmo que Shift único clique com o botão esquerdo.<br/>                                                                                                                                                                                                               |
-| CTRL único clique com o botão esquerdo<br/>   | Para objetos selecionáveis, o estende a seleção alternando o estado de seleção do item clicado sem afetar a seleção de outros objetos (portanto, permitindo a seleção que não seja contígua). Caso contrário, o mesmo é o único clique com o botão esquerdo.<br/> |
-| CTRL único clique com o botão direito do mouse<br/>  | O mesmo que CTRL único clique com o botão esquerdo.<br/>                                                                                                                                                                                                                |
-| CTRL duplo clique com o botão esquerdo<br/>   | O mesmo que CTRL único clique com o botão esquerdo e executa o comando padrão em toda a seleção.<br/>                                                                                                                                                      |
-| CTRL duplo clique com o botão direito<br/>  | O mesmo que CTRL único clique com o botão esquerdo.<br/>                                                                                                                                                                                                                |
+| Passar o mouse<br/>                    | O destino exibe sua dica de ferramenta, infotip ou equivalente.<br/>                                                                                                                                                                                           |
+| Clique com o botão esquerdo único<br/>        | Ativa ou seleciona o objeto . Para texto, define o ponto de inserção.<br/>                                                                                                                                                                           |
+| Clique com o botão direito do mouse<br/>       | Seleciona o objeto e exibe seu menu de contexto.<br/>                                                                                                                                                                                              |
+| Clique duas vezes com o botão esquerdo do mouse<br/>        | Ativa ou seleciona o objeto e executa o comando padrão. Para texto, seleciona a palavra no ponto de inserção (um terceiro clique seleciona a frase ou parágrafo).<br/>                                                                            |
+| Clique duas vezes com o botão direito do mouse<br/>       | O mesmo que clicar com o botão direito do mouse.<br/>                                                                                                                                                                                                                    |
+| Shift único clique à esquerda<br/>  | Para objetos selecionáveis, estende contíguamente a seleção. Caso contrário, o mesmo que um único clique esquerdo com possíveis modificações. Por exemplo, no Paint, desenhar uma oval com o modificador de tecla Shift resulta no desenho de um círculo.<br/>                  |
+| Shift único clique com o botão direito do mouse<br/> | O mesmo que Shift com um único clique esquerdo.<br/>                                                                                                                                                                                                               |
+| Shift double left-click<br/>  | O mesmo que Shift clica com o botão esquerdo único e executa o comando padrão em toda a seleção.<br/>                                                                                                                                                     |
+| Shift duplo clique com o botão direito do mouse<br/> | O mesmo que Shift com um único clique esquerdo.<br/>                                                                                                                                                                                                               |
+| Ctrl com um único clique esquerdo<br/>   | Para objetos selecionáveis, estende a seleção, acionando o estado de seleção do item clicado sem afetar a seleção de outros objetos (permitindo, portanto, a seleção que não é contígua). Caso contrário, o mesmo que um único clique à esquerda.<br/> |
+| Clique com o botão direito do mouse único em Ctrl<br/>  | O mesmo que Ctrl com um único clique esquerdo.<br/>                                                                                                                                                                                                                |
+| Clique duas vezes com o botão esquerdo do mouse em Ctrl<br/>   | O mesmo que Ctrl com um único clique esquerdo e executa o comando padrão em toda a seleção.<br/>                                                                                                                                                      |
+| Clique duas vezes com o botão direito do mouse em Ctrl<br/>  | O mesmo que Ctrl com um único clique esquerdo.<br/>                                                                                                                                                                                                                |
 
 
 
  
 
-### <a name="mouse-interaction"></a>Interação com o mouse
+### <a name="mouse-interaction"></a>Interação do mouse
 
-- **Faça com que o clique tenha como alvo pelo menos 16x16 pixels para que eles possam ser facilmente clicados por qualquer dispositivo de entrada.** Para [toque](inter-touch.md), o tamanho de controle mínimo recomendado é 23x23 pixels (13x13 DLUs). Considere alterar dinamicamente o tamanho de pequenos destinos quando o usuário estiver apontando para torná-los mais fáceis de adquirir.
+- **Faça com que os destinos de clique sejam pelo menos 16 x 16 pixels para que eles possam ser facilmente clicados por qualquer dispositivo de entrada.** Para [toque,](inter-touch.md)o tamanho mínimo recomendado do controle é de 23x23 pixels (DLUs de 13x13). Considere alterar dinamicamente o tamanho de destinos pequenos quando o usuário estiver apontando para torná-los mais fáceis de adquirir.
 
-    Neste exemplo, os botões de controle de rotação são muito pequenos para serem usados efetivamente com toque ou caneta.
+    Neste exemplo, os botões de controle de rotação são muito pequenos para serem usados efetivamente com toque ou uma caneta.
 
     ![captura de tela do controle de rotação com setas pequenas ](images/inter-mouse-image29.png) 
 
-- **Faça com que os divisores tenham pelo menos cinco pixels de largura para que possam ser facilmente clicados por qualquer dispositivo de entrada.** Considere alterar dinamicamente o tamanho de pequenos destinos quando o usuário estiver apontando para torná-los mais fáceis de adquirir.
+- **Tornar divisores com pelo menos cinco pixels de largura para que eles possam ser facilmente clicados por qualquer dispositivo de entrada.** Considere alterar dinamicamente o tamanho de destinos pequenos quando o usuário estiver apontando para torná-los mais fáceis de adquirir.
 
-    Neste exemplo, o divisor no painel de navegação do Windows Explorer é muito estreito para ser usado com eficiência com um mouse ou uma caneta.
+    Neste exemplo, o divisor no painel de navegação Windows Explorer é muito estreito para ser usado efetivamente com um mouse ou caneta.
 
-    ![captura de tela de divisor estreito e quase invisível ](images/inter-mouse-image30.png)
+    ![captura de tela de divisor estreito quase invisível ](images/inter-mouse-image30.png)
 
-- **Fornecer aos usuários uma margem de erro espacialmente.** Permitir um movimento de mouse (por exemplo, três pixels) quando os usuários lançarem um botão do mouse. Às vezes, os usuários movem um pouco o mouse à medida que liberam o botão do mouse, de modo que a posição do mouse logo antes do lançamento do botão reflita melhor a intenção do usuário do que a posição logo após.
-- **Fornecer aos usuários uma margem de erro de temporal.** Use a velocidade de clique duplo do sistema para distinguir entre cliques únicos e duplos.
-- **Fazer com que os cliques tenham efeito sobre o botão do mouse.** Permita que os usuários abandonem ações do mouse removendo o mouse de destinos válidos antes de soltar o botão do mouse. Para a maioria das interações com o mouse, pressionar um botão do mouse indica apenas o destino selecionado e soltar o botão ativa a ação. As funções de repetição automática (como pressionar uma seta de rolagem para rolagem contínua) são uma exceção.
-- [Capture o mouse](/windows/win32/api/winuser/nf-winuser-setcapture) para selecionar, mover, redimensionar, dividir e arrastar.
-- Use a tecla ESC para permitir que os usuários abandonem as interações do mouse de compostos, como mover, redimensionar, dividir e arrastar.
-- **Se um objeto não der suporte a cliques duplos, mas os usuários provavelmente presumirem, interprete um "clique duplo" como um único clique.** Suponha que o usuário pretendia uma única ação em vez de duas.
+- **Forneça aos usuários uma margem de erro espacialmente.** Permita algum movimento do mouse (por exemplo, três pixels) quando os usuários liberarem um botão do mouse. Às vezes, os usuários movem o mouse ligeiramente à medida que liberam o botão do mouse, portanto, a posição do mouse logo antes da liberação do botão reflete melhor a intenção do usuário do que a posição logo após.
+- **Forneça aos usuários uma margem de erro temporalmente.** Use a velocidade de clique duplo do sistema para distinguir entre cliques simples e duplos.
+- **Fazer com que os cliques tenham efeito no botão do mouse para cima.** Permita que os usuários abandonem ações do mouse removendo o mouse de destinos válidos antes de liberar o botão do mouse. Para a maioria das interações do mouse, pressionar um botão do mouse indica apenas o destino selecionado e liberar o botão ativa a ação. As funções de repetição automática (como pressionar uma seta de rolagem para rolar continuamente) são uma exceção.
+- [Capture o mouse](/windows/win32/api/winuser/nf-winuser-setcapture) para selecionar, mover, reizing, dividir e arrastar.
+- Use a chave Esc para permitir que os usuários abandonem interações compostas do mouse, como mover, reizing, dividir e arrastar.
+- **Se um objeto não dá suporte a cliques duplos, mas os usuários provavelmente supõem que sim, interprete um "clique duplo" como um único clique.** Suponha que o usuário pretenda uma única ação em vez de duas.
 
-    Como os usuários tendem a assumir que os botões da barra de tarefas dão suporte a cliques duplos, um "clique duplo" deve ser tratado como um único clique.
+    Como os usuários provavelmente supõem que os botões da barra de tarefas suportam cliques duplos, um "clique duplo" deve ser tratado como um único clique.
 
-    ![captura de tela do botão da barra de tarefas e ponteiro padrão ](images/inter-mouse-image31.png)
+    ![captura de tela do botão de barra de tarefas e do ponteiro padrão ](images/inter-mouse-image31.png)
 
-- **Ignore os cliques de mouse redundantes enquanto o programa estiver inativo.** Por exemplo, se o usuário clicar em um botão 10 vezes enquanto um programa estiver inativo, interprete-o como um único clique.
-- **Não use os arrastos duplos ou as cordas.** Um arrastar duplo é uma ação de arrastar iniciada com um clique duplo e uma corda é quando vários botões do mouse são pressionados simultaneamente. Essas interações não são padrão, não são detectáveis, são difíceis de executar e, provavelmente, são executadas acidentalmente.
-- **Não use Alt como um modificador para interações com o mouse.** A tecla Alt é reservada para acesso à barra de ferramentas e chaves de acesso.
-- **Não use Shift + Ctrl como um modificador para interações com o mouse.** Fazer isso seria muito difícil de usar.
-- **Torne o foco redundante.** Para tornar o programa tocável, aproveite ao máximo o foco, mas apenas de maneiras que não são necessárias para executar uma ação. Isso geralmente significa que uma ação também pode ser executada clicando, mas não necessariamente exatamente da mesma maneira. O foco não tem suporte na maioria das tecnologias de toque, para que os usuários com essas telas de toque não possam executar nenhuma tarefa que exija o passe do mouse.
+- **Ignore os cliques redundantes do mouse enquanto o programa está inativo.** Por exemplo, se o usuário clicar em um botão 10 vezes enquanto um programa estiver inativo, interprete-o como um único clique.
+- **Não use arrastar duplos ou instrumentos.** Um arrastar duplo é uma ação de arrastar iniciada com um clique duplo e é quando vários botões do mouse são pressionados simultaneamente. Essas interações não são padrão, não são descobriveis, são difíceis de executar e provavelmente são executadas acidentalmente.
+- **Não use Alt como um modificador para interações do mouse.** A tecla Alt é reservada para chaves de acesso e acesso da barra de ferramentas.
+- **Não use Shift+Ctrl como um modificador para interações do mouse.** Fazer isso seria muito difícil de usar.
+- **Tornar o foco redundante.** Para tornar seu programa sensível ao toque, aproveite ao máximo o foco, mas apenas de maneiras que não são necessárias para executar uma ação. Isso geralmente significa que uma ação também pode ser executada clicando, mas não necessariamente da mesma maneira. O foco não é suportado pela maioria das tecnologias de toque, portanto, os usuários com essas telas touch não podem executar tarefas que exigem passar o mouse.
 
 ### <a name="mouse-wheel"></a>Botão de rolagem do mouse
 
-- **Faça com que a roda do mouse afete o controle, o painel ou a janela em que o ponteiro está no momento.** Isso evita resultados não intencionais.
-- **Faça com que a roda do mouse entre em vigor sem clicar ou ter foco de entrada.** O cursor é suficiente.
-- **Faça com que a roda do mouse afete o objeto com o escopo mais específico.** Por exemplo, se o ponteiro estiver sobre um controle de caixa de listagem rolável em um painel rolável dentro de uma janela rolável, a roda do mouse afetará o controle caixa de listagem.
+- **Faça com que a roda do mouse afete o controle, o painel ou a janela em que o ponteiro está atualmente.** Isso evita resultados não intencionais.
+- **Faça com que a roda do mouse entre em vigor sem clicar ou ter o foco de entrada.** Passar o mouse é suficiente.
+- **Faça com que a roda do mouse afete o objeto com o escopo mais específico.** Por exemplo, se o ponteiro estiver sobre um controle de caixa de listagem rolável em um painel rolável dentro de uma janela rolável, a roda do mouse afetará o controle da caixa de listagem.
 - **Não altere o foco de entrada ao usar a roda do mouse.**
 - Dê à roda do mouse os seguintes efeitos:
-  - Para janelas, painéis e controles roláveis:
-    - **Girar a roda do mouse rola o objeto verticalmente, em que a rotação rola para cima.** Para que a roda tenha um mapeamento natural, girar a roda do mouse nunca deve rolar horizontalmente porque isso está desorientando e inesperado.
-      - **Se a tecla CTRL for pressionada, girar a roda do mouse ampliará o objeto,** em que a rotação amplia e diminui o zoom.
+  - Para janelas roláveis, painéis e controles:
+    - **Girar a roda do mouse rola o objeto verticalmente, em que a rotação para cima rola para cima.** Para que a roda tenha mapeamento natural, girar a roda do mouse nunca deve rolar horizontalmente porque isso é confuso e inesperado.
+      - **Se a tecla Ctrl** for pressionada, girar a roda do mouse ampliará o objeto, em que girar para cima ampliará e reduzirá o zoom.
       - **Inclinar a roda do mouse rola o objeto horizontalmente.**
   - Para janelas e painéis com zoom (sem barras de rolagem):
-    - **Girar a roda do mouse amplia o objeto,** em que a rotação aumenta e diminui o zoom.
+    - **Girar a roda do mouse amplia o objeto,** em que a rotação para cima amplia e a rotação para baixo é ampliada.
     - Inclinar a roda do mouse não tem nenhum efeito.
   - Para guias:
     - **Girar a roda do mouse pode alterar a guia atual,** independentemente da orientação das guias.
     - Inclinar a roda do mouse não tem nenhum efeito.
-  - Se as teclas Shift e Alt estiverem pressionadas, a roda do mouse não terá nenhum efeito.
-- **Use as configurações do sistema do Windows para o tamanho vertical da rolagem (para girar) e o tamanho da rolagem horizontal (para inclinar).** Essas configurações são configuráveis por meio do item do painel de controle do mouse.
-- **Girar a roda do mouse mais rapidamente fará com que a rolagem mais rapidamente.** Isso permite que os usuários rolem documentos grandes com mais eficiência.
-- **Para janelas roláveis, considere clicar no botão de roda do mouse colocar a janela em "modo de leitura".** O modo leitor plantas de um ícone de origem de rolagem especial e rola a janela em direção e velocidade em relação à origem da rolagem.
+  - Se as teclas Shift e Alt estão desaixadas, a roda do mouse não tem nenhum efeito.
+- **Use as Windows do sistema para o tamanho vertical da rolagem (para girar) e o tamanho da rolagem horizontal (para inclinação).** Essas configurações são configuráveis por meio do item do painel de controle do mouse.
+- **Fazer girar a roda do mouse mais rapidamente resulta na rolagem mais rapidamente.** Isso permite que os usuários rolem documentos grandes com mais eficiência.
+- **Para janelas roláveis, considere clicar no botão de roda do mouse para colocar a janela no "modo de leitor".** O modo leitor planta um ícone de origem de rolagem especial e rola a janela em uma direção e velocidade em relação à origem da rolagem.
 
-![captura de tela da página com o ícone de origem da rolagem ](images/inter-mouse-image32.png)
+![captura de tela da página com o ícone de origem de rolagem ](images/inter-mouse-image32.png)
 
-*O Internet Explorer dá suporte ao modo de leitura, que apresenta o ícone de origem da rolagem*
+*Internet Explorer dá suporte ao modo de leitor, que apresenta o ícone de origem de rolagem*
 
 ### <a name="hiding-the-pointer"></a>Ocultando o ponteiro
 
-- **Não oculte o ponteiro.** Exceções:
-  - Os aplicativos de apresentação em execução no modo de apresentação de tela inteira podem ocultar o ponteiro. No entanto, o ponteiro deve ser restaurado imediatamente quando os usuários movem o mouse e podem ser reocultados após dois segundos de inatividade.
+- **Não o oculta.** Exceções:
+  - Aplicativos de apresentação em execução no modo de apresentação de tela inteira podem ocultar o ponteiro. No entanto, o ponteiro deve ser restaurado imediatamente quando os usuários movem o mouse e podem ser rehidden após dois segundos de inatividade.
   - Ambientes sem um mouse (como quiosques) podem ocultar permanentemente o ponteiro.
-- Por padrão, o Windows oculta o ponteiro enquanto o usuário está digitando em uma caixa de texto. Essa configuração do sistema do Windows é configurável por meio do item do painel de controle do mouse.
+- Por padrão, Windows oculta o ponteiro enquanto o usuário está digitando em uma caixa de texto. Essa Windows do sistema é configurável por meio do item do painel de controle do mouse.
 
 ### <a name="activity-pointers"></a>Ponteiros de atividade
 
-Os ponteiros de atividade no Windows são o ponteiro ocupado (![captura de tela do ponteiro moldado em forma de rosca ](images/inter-mouse-image33.png)) e o ponteiro de trabalho em segundo plano (![captura de tela do ponteiro e da seta moldados em forma de rosca ](images/inter-mouse-image34.png)).
+Os ponteiros de atividade Windows são o ponteiro ocupado (![captura de tela do ponteiro em forma de rosca ](images/inter-mouse-image33.png)) e o trabalho no ponteiro em segundo plano (![captura de tela do ponteiro e da seta em forma de rosca ](images/inter-mouse-image34.png)).
 
-- Exibe o ponteiro ocupado quando os usuários precisam aguardar mais de um segundo para que uma ação seja concluída. Observe que o ponteiro ocupado não tem nenhum ponto de acesso, para que os usuários não possam clicar em nada enquanto forem exibidos.
-- Exibe o ponteiro de trabalho em segundo plano quando os usuários precisam aguardar mais de um segundo para que uma ação seja concluída, mas o programa está respondendo e não há nenhum outro comentário visual de que a ação não está completa.
+- Exibe o ponteiro ocupado quando os usuários têm que aguardar mais de um segundo para que uma ação seja concluída. Observe que o ponteiro ocupado não tem nenhum ponto de calor, portanto, os usuários não podem clicar em nada enquanto ele é exibido.
+- Exibe o ponteiro de trabalho em segundo plano quando os usuários têm que aguardar mais de um segundo para que uma ação seja concluída, mas o programa está respondendo e não há outros comentários visuais de que a ação não foi concluída.
 - Não combine ponteiros de atividade com barras de progresso ou animações de progresso.
 
-### <a name="caret"></a>Acento
+### <a name="caret"></a>Cursor
 
-- **Não exibir o cursor até que a janela de entrada de texto ou controle tenha o foco de entrada.** O cursor sugere o foco de entrada para os usuários, mas uma janela ou controle pode exibir o cursor sem foco de entrada. É claro que não roube o foco de entrada para que uma caixa de diálogo fora de contexto possa exibir o cursor.
+- **Não exibir o achamado até que a janela de entrada de texto ou o controle tenha o foco de entrada.** O sinal de adoção sugere o foco de entrada para os usuários, mas uma janela ou controle pode exibir o a careta sem o foco de entrada. É claro que não roubar o foco de entrada para que uma caixa de diálogo fora do contexto possa exibir o cursor.
 
-    O Gerenciador de credenciais do Windows é exibido fora do contexto com o cursor, mas sem o foco de entrada. Como resultado, os usuários acabam digitando sua senha em locais inesperados.
+    O Windows Gerenciador de Credenciais é exibido fora do contexto com o a caret, mas sem o foco de entrada. Como resultado, os usuários terminam digitando sua senha em locais inesperados.
 
-    ![captura de tela do Gerenciador de credenciais sem foco ](images/inter-mouse-image35.png)
+    ![captura de tela do gerenciador de credenciais sem foco ](images/inter-mouse-image35.png)
 
-- **Coloque o cursor onde os usuários têm mais probabilidade de digitar primeiro.** Normalmente, esse é o último lugar em que o usuário estava digitando ou no final do texto.
+- **Coloque o a careta em que os usuários têm maior probabilidade de digitar primeiro.** Geralmente, esse é o último lugar em que o usuário estava digitando ou no final do texto.
 
 ### <a name="accessibility"></a>Acessibilidade
 
-- Para os usuários que não podem usar o mouse, torne o mouse redundante com o teclado.
-  - Os usuários devem ser capazes de fazer tudo com o teclado que eles podem com o mouse, exceto ações para as quais as habilidades do motor fino são essenciais, como o desenho e a reprodução de jogos.
-  - Os usuários devem ser capazes de fazer tudo com o mouse que eles podem com o teclado, exceto a entrada de texto eficiente.
+- Para usuários que não podem usar o mouse, faça com que o mouse seja redundante com o teclado.
+  - Os usuários devem ser capazes de fazer tudo com o teclado que puderem com o mouse, exceto ações para as quais habilidades motoras finas são essenciais, como desenho e jogo.
+  - Os usuários devem ser capazes de fazer tudo com o mouse que puderem com o teclado, exceto a entrada de texto eficiente.
 - Para usuários com capacidade limitada de usar o mouse:
-  - Não faça um clique duplo e arraste a única maneira de executar uma ação.
+  - Não faça clique duas vezes e arraste a única maneira de executar uma ação.
 
-Para obter mais informações e diretrizes, consulte [acessibilidade](inter-accessibility.md).
+Para obter mais informações e diretrizes, consulte [Acessibilidade.](inter-accessibility.md)
 
 ## <a name="documentation"></a>Documentação
 
 Ao fazer referência ao mouse:
 
-- Evite usar o mouse no plural; Se você precisar fazer referência a mais de um mouse, use dispositivos de mouse.
-- Use o botão do mouse para indicar o botão esquerdo do mouse. Não use o botão principal do mouse. Da mesma forma, use o botão direito do mouse em vez do botão secundário do mouse. Independentemente da exatidão, os usuários entendem esses termos e os usuários que reprogramam seus botões fazem a mudança mental.
+- Evite usar os mouses plurais; se você precisar se referir a mais de um mouse, use dispositivos do mouse.
+- Use o botão do mouse para indicar o botão esquerdo do mouse. Não use o botão principal do mouse. Da mesma forma, use o botão direito do mouse em vez do botão secundário do mouse. Independentemente da precisão, os usuários entendem esses termos e os usuários que têm seus botões fazem a mudança mental.
 - Use a roda para a parte giratória da roda do mouse e o botão de roda para se referir à parte clicável.
-- Use verbos como clicar, apontar e arrastar para se referir a ações do mouse. Os usuários giram a roda verticalmente, inclinam horizontalmente e clicam no botão de roda.
-- Use arrastar, não arrastar e soltar, para a ação de mover um documento ou uma pasta. É aceitável usar o recurso de arrastar e soltar como um adjetivo, como em "mover a pasta é uma operação de arrastar e soltar".
-- Sempre hifene o clique duplo e clique com o botão direito do mouse como verbos.
+- Use verbos como clique, aponte e arraste para se referir a ações do mouse. Os usuários giram a roda verticalmente, inclinam-na horizontalmente e clicam no botão de roda.
+- Use arrastar, não arrastar e soltar para a ação de mover um documento ou pasta. É aceitável usar o tipo "arrastar e soltar" como um adjetivo, como em "mover a pasta é uma operação do tipo "arrastar e soltar".
+- Sempre hifenizar clique duas vezes e clique com o botão direito do mouse como verbos.
 - Use clique, não clique em. Clique em (como em "clique na janela") é aceitável.
 
 Ao fazer referência a ponteiros do mouse:
 
 - Consulte o ponteiro do mouse como o ponteiro. Use o cursor somente na documentação técnica.
-- Para ponteiros com indicadores de atividade, use ponteiro ocupado para o ponteiro que consiste em apenas um indicador de atividade e trabalhando no ponteiro em segundo plano para o ponteiro de combinação e o indicador de atividade.
+- Para ponteiros com indicadores de atividade, use o ponteiro ocupado para o ponteiro que consiste em apenas um indicador de atividade e trabalhando em ponteiro de segundo plano para o ponteiro de combinação e o indicador de atividade.
 - Para os outros tipos de ponteiros, não use rótulos descritivos para se referir ao ponteiro. Se necessário, use um gráfico para descrever como o ponteiro do mouse pode aparecer na tela.
 
 **Exemplos:**

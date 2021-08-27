@@ -3,7 +3,7 @@ title: Mensagem de WM_MEASUREITEM (WinUser. h)
 description: Enviado para a janela do proprietário de uma caixa de combinação, caixa de listagem, controle de exibição de lista ou item de menu quando o controle ou o menu é criado.
 ms.assetid: 6947bcd1-fd40-4238-b8f2-d4e06b90c0dc
 keywords:
-- Controles de WM_MEASUREITEM de mensagens do Windows
+- controles de Windows de mensagem de WM_MEASUREITEM
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 43e14cc0c39e1d319fb9190f8ad7d51ea25f821c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7eae57fc163f19edcef6dc924072cd3389146b66e614b61d6f121237e82e1344
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824560"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118957505"
 ---
 # <a name="wm_measureitem-message"></a>Mensagem do WM \_ MEASUREITEM
 
@@ -55,7 +55,7 @@ Ponteiro para uma estrutura [**MEASUREITEMSTRUCT**](/windows/win32/api/winuser/n
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se um aplicativo processar essa mensagem, ele deverá retornar **true**.
 
@@ -71,9 +71,9 @@ O sistema envia a mensagem do **WM \_ MEASUREITEM** para a janela do proprietár
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

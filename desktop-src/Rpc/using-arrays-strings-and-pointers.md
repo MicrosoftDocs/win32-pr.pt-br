@@ -4,12 +4,12 @@ description: O programa de doutor ( \\ consulte \\ exemplos \\ de RPC Doctor na 
 ms.assetid: 9aea94a1-ae1f-4bd6-9dd3-146edf0b5fec
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 542a174b9ffd742ecf88de7231449a780be8dca9
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 8371c9c60f19e6ce59c62da637cbe2e844e919984b9c2c905053b61e6deb251b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104084605"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119010834"
 ---
 # <a name="using-arrays-strings-and-pointers"></a>Usando matrizes, cadeias de caracteres e ponteiros
 
@@ -28,13 +28,13 @@ O programa Eliza gravou a sessão a seguir.
 | É verdade, sou infeliz.                            | Vocês acham que chegar aqui ajudarão você a não ser infeliz? |
 | Preciso de ajuda; Isso parece muito certo.          | O que significa se você tem alguma ajuda?           |
 | Talvez eu aprenda a conhecer minha mãe.  | Mais informações sobre sua família.                           |
-| Minha mãe cuida de mim.                         | Quem mais em sua família cuida de você?                |
+| Minha mãe cuida de mim.                         | Who mais em sua família cuida de você?                |
 | Meu pai.                                          | Seu pai.                                              |
 | Você é como meu pai de algumas maneiras.                | Que aparência você vê?                              |
 
 
 
- 
+ 
 
 O programa médico pode ser dividido em aplicativos do lado do cliente e do servidor. O lado do cliente solicita a entrada do paciente e exibe a resposta do médico. O lado do servidor processa a entrada do paciente e gera a resposta do médico. Este é um exemplo clássico de um aplicativo cliente-servidor: o cliente é responsável pela interação do usuário, enquanto o servidor manipula a carga computacional extensiva. Muitos dados são passados para e retornados pela função, mas, como os dados podem exigir uma quantidade significativa de processamento, o servidor o processa.
 
@@ -51,7 +51,7 @@ O programa de doutor usa uma matriz de caracteres para entrada e retorna outra m
 
 
 
- 
+ 
 
 Dentro das restrições associadas a essas combinações de atributos, há maneiras alternativas de enviar uma matriz de caracteres do cliente para o servidor e retornar outra matriz de caracteres do servidor para o cliente.
 
@@ -61,6 +61,6 @@ Os tópicos a seguir demonstram as compensações de design entre as várias int
 -   [Cadeias de caracteres](strings.md)
 -   [Vários níveis de ponteiros](multiple-levels-of-pointers.md)
 
- 
+ 
 
- 
+ 

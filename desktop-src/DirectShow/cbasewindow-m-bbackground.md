@@ -1,7 +1,7 @@
 ---
-description: Sinalizador que especifica se a paleta deve ser uma paleta de plano de fundo. Se for TRUE, a paleta será selecionada como uma paleta de plano de fundo.
+description: Sinalizador que especifica se a paleta deve ser uma paleta de plano de fundo. Se TRUE, a paleta será selecionada como uma paleta de plano de fundo.
 ms.assetid: 908deebc-c978-4423-8e8b-c9cf0b3a0775
-title: 'Membro CBaseWindow:: m_bBackground (Winutil. h)'
+title: Membro CBaseWindow::m_bBackground (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: fb25972f35c7d264ae56e27e863229c8269b0b22
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 66013b0444ffff585587ba47ba52cb9b5c0946f80d64db1c2442a6e2ac52677a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747397"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118954615"
 ---
-# <a name="cbasewindowm_bbackground-member"></a>Membro de CBaseWindow:: m \_ bBackground
+# <a name="cbasewindowm_bbackground-member"></a>Membro CBaseWindow::m \_ bBackground
 
-Sinalizador que especifica se a paleta deve ser uma paleta de plano de fundo. Se for **true**, a paleta será selecionada como uma paleta de plano de fundo.
+Sinalizador que especifica se a paleta deve ser uma paleta de plano de fundo. Se **TRUE**, a paleta será selecionada como uma paleta de plano de fundo.
 
 ## <a name="syntax"></a>Syntax
 
@@ -42,8 +42,8 @@ BYTE m_bBackground;
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Winutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

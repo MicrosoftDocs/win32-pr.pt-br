@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: classe EsentRollbackErrorException'
+description: 'Saiba mais sobre: Classe EsentRollbackErrorException'
 title: Classe EsentRollbackErrorException
 TOCTitle: EsentRollbackErrorException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentRollbackErrorException
@@ -24,31 +24,31 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6e56e3e829b8c44ff6325ed877606fb44471f6a3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ca299e1547cf7a45a439867ce26cd8b492e1dfcd6c85ae3af18a7ae296ec8a59
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105765141"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118981916"
 ---
 # <a name="esentrollbackerrorexception-class"></a>Classe EsentRollbackErrorException
 
-Classe base para JET_err. RollbackError exceções.
+Classe base para JET_err. Exceções RollbackError.
 
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. ESENT. EsentException](./esentexception-class.md)  
-      [Microsoft. ISAM. ESENT. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft. ISAM. ESENT. Interop. EsentOperationException](./esentoperationexception-class.md)  
-          [Microsoft. ISAM. ESENT. Interop. EsentFatalException](./esentfatalexception-class.md)  
-            Microsoft. ISAM. ESENT. Interop. EsentRollbackErrorException  
+  [System.Exception](/dotnet/api/system.exception)  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentOperationException](./esentoperationexception-class.md)  
+          [Microsoft.Isam.Esent.Interop.EsentFatalException](./esentfatalexception-class.md)  
+            Microsoft.Isam.Esent.Interop.EsentRollbackErrorException  
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -72,6 +72,6 @@ Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro
 
 #### <a name="reference"></a>Referência
 
-[Membros do EsentRollbackErrorException](./esentrollbackerrorexception-members.md)
+[Membros EsentRollbackErrorException](./esentrollbackerrorexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

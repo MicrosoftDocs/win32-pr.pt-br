@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: Propriedades de EsentLogGenerationMismatchException'
-title: Propriedades de EsentLogGenerationMismatchException
+description: 'Saiba mais sobre: propriedades EsentLogGenerationMismatchException'
+title: Propriedades EsentLogGenerationMismatchException
 TOCTitle: EsentLogGenerationMismatchException properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.EsentLogGenerationMismatchException
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentloggenerationmismatchexception_properties(v=EXCHG.10)
@@ -14,12 +14,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118776748"
 ---
-# <a name="esentloggenerationmismatchexception-properties"></a>Propriedades de EsentLogGenerationMismatchException
+# <a name="esentloggenerationmismatchexception-properties"></a>Propriedades EsentLogGenerationMismatchException
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo [EsentLogGenerationMismatchException](./esentloggenerationmismatchexception-class.md) expõe os membros a seguir.
+O [tipo EsentLogGenerationMismatchException](./esentloggenerationmismatchexception-class.md) expõe os membros a seguir.
 
 ## <a name="properties"></a>Propriedades
 
@@ -40,11 +40,11 @@ O tipo [EsentLogGenerationMismatchException](./esentloggenerationmismatchexcepti
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn274313(v=exchg.10).md">Erro</a></td>
-<td>Obtém o erro de ESENT subjacente para esta exceção. (Herdado de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.)</td>
+<td>Obtém o erro Esent subjacente para essa exceção. (Herdado de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">HelpLink</a></td>
+<td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">Helplink</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
@@ -89,4 +89,4 @@ Parte superior
 
 [Classe EsentLogGenerationMismatchException](./esentloggenerationmismatchexception-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

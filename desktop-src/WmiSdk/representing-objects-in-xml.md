@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Representando objetos em XML
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9698c54eeff61517a1389ceea14bc2415727f085
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cae7eefc495cee7e515d699faf5074d187c726365d4723d9bbf443d346edb1dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105773007"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119050374"
 ---
 # <a name="representing-objects-in-xml"></a>Representando objetos em XML
 
@@ -18,7 +18,7 @@ O componente codificador XML no WMI gera representações XML de objetos.
 
 Em C++, você pode iniciar o codificador XML com uma chamada para o método [**IWbemObjectTextSrc. GetText**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjecttextsrc-gettext) , especificando o objeto a ser representado em XML e o formato de texto a ser usado na representação. Para obter mais informações e um exemplo de código, consulte para codificar um objeto em XML usando C/C++.
 
-No VBScript ou Visual Basic, para codificar dados para uma instância XML, chame [**SWbemObjectEx. GetText**](swbemobjectex-gettext-.md). Para obter mais informações e um exemplo de código, consulte para codificar um objeto em XML usando o VBScript.
+no VBScript ou Visual Basic, para codificar dados para uma instância XML, chame [**SWbemObjectEx. gettext**](swbemobjectex-gettext-.md). Para obter mais informações e um exemplo de código, consulte para codificar um objeto em XML usando o VBScript.
 
 As seções a seguir são discutidas neste tópico:
 
@@ -56,15 +56,15 @@ O procedimento a seguir descreve como codificar um objeto em XML usando C ou C++
     <tbody>
     <tr class="odd">
     <td>&quot;&quot; <strong>VT_BOOL</strong> LocalOnly</td>
-    <td>Quando <strong>true</strong>, somente as propriedades e os métodos definidos localmente na classe estão presentes no XML resultante. O valor padrão é <strong>false</strong>.</td>
+    <td>Quando <strong>true</strong>, somente as propriedades e os métodos definidos localmente na classe estão presentes no XML resultante. O valor padrão é <strong>FALSE</strong>.</td>
     </tr>
     <tr class="even">
     <td>&quot;&quot; <strong>VT_BOOL</strong> IncludeQualifiers</td>
-    <td>Quando <strong>verdadeiro</strong>, a classe, a instância, as propriedades e os qualificadores de método são incluídos no XML resultante. O valor padrão é <strong>false</strong>.</td>
+    <td>Quando <strong>verdadeiro</strong>, a classe, a instância, as propriedades e os qualificadores de método são incluídos no XML resultante. O valor padrão é <strong>FALSE</strong>.</td>
     </tr>
     <tr class="odd">
     <td>&quot;&quot; <strong>VT_BOOL</strong> ExcludeSystemProperties</td>
-    <td>Quando <strong>true</strong>, as propriedades do sistema WMI são filtradas fora da saída. O valor padrão é <strong>false</strong>.</td>
+    <td>Quando <strong>true</strong>, as propriedades do sistema WMI são filtradas fora da saída. O valor padrão é <strong>FALSE</strong>.</td>
     </tr>
     <tr class="even">
     <td>&quot;&quot; <strong>VT_I4</strong> PathLevel</td>

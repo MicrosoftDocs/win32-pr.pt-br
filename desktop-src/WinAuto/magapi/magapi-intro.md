@@ -12,12 +12,12 @@ keywords:
 - ampliação seletiva
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 16d66595cc2f5fdd8402ecd9d525e6deb1d07078
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 9bb908623d6d6419925801119369f4f660110e680dd2499a1d61caa4c0c05de4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105812428"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119052584"
 ---
 # <a name="magnification-api-overview"></a>Visão geral da API de ampliação
 
@@ -44,12 +44,12 @@ A API de ampliação permite que fornecedores de tecnologia assistencial desenvo
 
 ## <a name="getting-started"></a>Introdução
 
-A versão original da API de ampliação tem suporte no Windows Vista e em sistemas operacionais posteriores. No Windows 8 e posterior, a API dá suporte a recursos adicionais, incluindo a ampliação de tela inteira e a definição da visibilidade do cursor do sistema ampliado.
+a versão original da API de ampliação tem suporte no Windows Vista e em sistemas operacionais posteriores. no Windows 8 e posterior, a API dá suporte a recursos adicionais, incluindo a ampliação de tela inteira e a definição da visibilidade do cursor do sistema ampliado.
 
 O suporte para a API de ampliação é fornecido pelo Magnification.dll. Para compilar seu aplicativo, inclua ampliação. h e vincule a ampliação. lib.
 
 > [!Note]  
-> A API de ampliação não tem suporte no WOW64; ou seja, um aplicativo de lupa de 32 bits não será executado corretamente em janelas de 64 bits.
+> A API de ampliação não tem suporte no WOW64; ou seja, um aplicativo de lupa de 32 bits não será executado corretamente em Windows de 64 bits.
 
 ## <a name="basic-concepts"></a>Conceitos básicos
 
@@ -68,7 +68,7 @@ Esta seção descreve os conceitos fundamentais em que a API de ampliação se b
 A API dá suporte a dois tipos de ampliadores, à *lupa em tela inteira* e ao *controle de lupa*. A lupa de tela inteira aumenta o conteúdo da tela inteira, enquanto o controle de lupa aumenta o conteúdo de uma área específica da tela e exibe o conteúdo em uma janela. Para Lupas, imagens e texto são ampliados e ambos permitem controlar a quantidade de ampliação. Você também pode aplicar efeitos de cor ao conteúdo da tela ampliado, facilitando a visualização para pessoas que têm deficiências de cor ou precisam de cores com mais ou menos contraste.
 
 > [!Important]  
-> A API de controle de lupa está disponível no Windows Vista e em sistemas operacionais posteriores, enquanto a API de lupa de tela inteira está disponível apenas no Windows 8 e em sistemas operacionais posteriores.
+> a api de controle de lupa está disponível no Windows Vista e em sistemas operacionais posteriores, enquanto a api de lupa de tela inteira está disponível apenas em Windows 8 e sistemas operacionais posteriores.
 
 ### <a name="magnification-factor"></a>Fator de ampliação
 
@@ -76,7 +76,7 @@ Tanto a lupa em tela inteira quanto o controle lupa aplicam uma transformação 
 
 ### <a name="color-effects"></a>Efeitos de cor
 
-Os efeitos de cor são obtidos com a aplicação de uma matriz de transformação de cor 5 por 5 às cores do conteúdo da tela ampliado. A matriz determina as intensidades dos componentes vermelho, azul, verde e alfa do conteúdo. Para obter mais informações, consulte [usando uma matriz de cores para transformar uma única cor](../../gdiplus/-gdiplus-using-a-color-matrix-to-transform-a-single-color-use.md) na documentação do Windows GDI+.
+Os efeitos de cor são obtidos com a aplicação de uma matriz de transformação de cor 5 por 5 às cores do conteúdo da tela ampliado. A matriz determina as intensidades dos componentes vermelho, azul, verde e alfa do conteúdo. para obter mais informações, consulte [usando uma matriz de cores para transformar uma única cor](../../gdiplus/-gdiplus-using-a-color-matrix-to-transform-a-single-color-use.md) na documentação do Windows GDI+.
 
 ### <a name="source-rectangle"></a>Retângulo de origem
 
@@ -111,7 +111,7 @@ Para usar a lupa de tela inteira, chame a função [**MagSetFullscreenTransform*
 
 Quando o conteúdo da tela é ampliado, ele se torna maior do que a própria tela. Parte do conteúdo ultrapassa as bordas da tela e torna-se invisível para o usuário. Os parâmetros *xOffset* e *YOffset* da função [**MagSetFullscreenTransform**](/windows/win32/api/Magnification/nf-magnification-magsetfullscreentransform) determinam qual parte do conteúdo da tela ampliada aparece na tela. Juntos, os parâmetros especificam as coordenadas de um ponto no conteúdo da tela não ampliada. Quando o conteúdo é ampliado, ele é posicionado com o ponto especificado no canto superior esquerdo da tela.
 
-O exemplo a seguir define o fator de ampliação para a lupa de tela inteira e coloca o centro do conteúdo da tela ampliado no centro da tela.
+O exemplo a seguir define o fator de ampliação para a lupa de tela inteira e coloca o centro do conteúdo da tela ampliada no centro da tela.
 
 ```C++
 BOOL SetZoom(float magnificationFactor)
@@ -134,7 +134,7 @@ BOOL SetZoom(float magnificationFactor)
 }
 ```
 
-Use a função [**MagSetFullscreenColorEffect**](/windows/win32/api/Magnification/nf-magnification-magsetfullscreencoloreffect) para aplicar efeitos de cor ao conteúdo de tela inteira definindo uma matriz de transformação de cor definida pelo aplicativo. Por exemplo, o exemplo a seguir define uma matriz de transformação de cor que converte cores em escala de cinza.
+Use a [**função MagSetFullscreenColorEffect**](/windows/win32/api/Magnification/nf-magnification-magsetfullscreencoloreffect) para aplicar efeitos de cor ao conteúdo de tela inteira definindo uma matriz de transformação de cores definida pelo aplicativo. Por exemplo, o exemplo a seguir define uma matriz de transformação de cores que converte cores em escala de cinza.
 
 ```C++
 // Initialize color transformation matrices used to apply grayscale and to 
@@ -162,33 +162,33 @@ BOOL SetColorGrayscale(__in BOOL fGrayscaleOn)
 }
 ```
 
-Você pode recuperar o fator de ampliação e os valores de deslocamento atuais chamando a função [**MagGetFullscreenTransform**](/windows/win32/api/Magnification/nf-magnification-maggetfullscreentransform) . Você pode recuperar a matriz de transformação de cor atual chamando a função [**MagGetFullscreenColorEffect**](/windows/win32/api/Magnification/nf-magnification-maggetfullscreencoloreffect) .
+Você pode recuperar os valores atuais de fator de ampliação e deslocamento chamando a [**função MagGetFullscreenTransform.**](/windows/win32/api/Magnification/nf-magnification-maggetfullscreentransform) Você pode recuperar a matriz de transformação de cores atual chamando a [**função MagGetFullscreenColorEffect.**](/windows/win32/api/Magnification/nf-magnification-maggetfullscreencoloreffect)
 
-## <a name="using-the-magnifier-control"></a>Usando o controle lupa
+## <a name="using-the-magnifier-control"></a>Usando o controle de lupa
 
-O controle lupa amplia o conteúdo de uma área específica da tela e exibe o conteúdo em uma janela. Esta seção descreve como usar o controle lupa. Ele contém as seguintes partes:
+O controle de lupa amplia o conteúdo de uma área específica da tela e exibe o conteúdo em uma janela. Esta seção descreve como usar o controle de lupa. Ele contém as seguintes partes:
 
-- [Criando o controle lupa](#creating-the-magnifier-control)
+- [Criando o controle de lupa](#creating-the-magnifier-control)
 - [Inicializando o controle](#initializing-the-control)
-- [Configurando o retângulo de origem](#setting-the-source-rectangle)
+- [Definindo o retângulo de origem](#setting-the-source-rectangle)
 - [Aplicando efeitos de cor](#applying-color-effects)
 - [Ampliação seletiva](#selective-magnification)
 
-### <a name="creating-the-magnifier-control"></a>Criando o controle lupa
+### <a name="creating-the-magnifier-control"></a>Criando o controle de lupa
 
-O controle lupa deve ser hospedado em uma janela criada com o estilo estendido [**WS_EX_LAYERED**](../../winmsg/extended-window-styles.md) . Depois de criar a janela do host, chame [**SetLayeredWindowAttributes**](/windows/win32/api/winuser/nf-winuser-setlayeredwindowattributes) para definir a opacidade da janela do host. A janela do host é normalmente definida como opacidade total para evitar que o conteúdo da tela subjacente seja mostrado no entanto. O exemplo a seguir mostra como definir a janela do host para opacidade total:
+O controle de lupa deve ser hospedado em uma janela criada com o [**WS_EX_LAYERED**](../../winmsg/extended-window-styles.md) estilo estendido. Depois de criar a janela do host, chame [**SetLayeredWindowAttributes**](/windows/win32/api/winuser/nf-winuser-setlayeredwindowattributes) para definir a opacidade da janela do host. A janela do host normalmente é definida como opacidade completa para impedir que o conteúdo da tela subjacente seja exibido. O exemplo a seguir mostra como definir a janela do host como opacidade total:
 
 ```C++
 SetLayeredWindowAttributes(hwndHost, NULL, 255, LWA_ALPHA);
 ```
 
-Se você aplicar o estilo de [**WS_EX_TRANSPARENT**](../../winmsg/extended-window-styles.md) à janela do host, os cliques do mouse serão passados para qualquer objeto que esteja atrás da janela do host no local do cursor do mouse. Lembre-se de que, como a janela do host não processa cliques do mouse, o usuário não poderá mover ou redimensionar a janela de ampliação usando o mouse.
+Se você aplicar o [**WS_EX_TRANSPARENT**](../../winmsg/extended-window-styles.md) à janela do host, os cliques do mouse serão passados para qualquer objeto atrás da janela do host no local do cursor do mouse. Esteja ciente de que, como a janela do host não processa cliques do mouse, o usuário não poderá mover ou reorganizar a janela de ampliação usando o mouse.
 
-A classe Window da janela de controle lupa deve ser **WC_MAGNIFIER**. Se você aplicar o estilo de [**MS_SHOWMAGNIFIEDCURSOR**](magapi-magnifier-styles.md) , o controle lupa incluirá o cursor do sistema no conteúdo da tela ampliada e o cursor será ampliado junto com o conteúdo da tela.
+A classe de janela da janela de controle de lupa deve ser **WC_MAGNIFIER**. Se você aplicar o [**MS_SHOWMAGNIFIEDCURSOR,**](magapi-magnifier-styles.md) o controle de lupa incluirá o cursor do sistema no conteúdo da tela ampliada e o cursor será ampliado junto com o conteúdo da tela.
 
-Depois de criar o controle de lupa, mantenha o identificador de janela para que você possa passá-lo para outras funções.
+Depois de criar o controle de lupa, mantenha o controle de janela para que você possa passá-lo para outras funções.
 
-O exemplo a seguir mostra como criar o controle lupa.
+O exemplo a seguir mostra como criar o controle de lupa.
 
 ```C++
 // Description: 
@@ -253,17 +253,17 @@ BOOL CreateMagnifier(HINSTANCE hInstance)
 
 ### <a name="initializing-the-control"></a>Inicializando o controle
 
-Depois de criar o controle lupa, você deve chamar a função [**MagSetWindowTransform**](/windows/win32/api/Magnification/nf-magnification-magsetwindowtransform) para especificar o fator de ampliação. Isso é simplesmente uma questão de especificar uma matriz de
+Depois de criar o controle de lupa, você deve chamar a [**função MagSetWindowTransform**](/windows/win32/api/Magnification/nf-magnification-magsetwindowtransform) para especificar o fator de ampliação. Isso é simplesmente uma questão de especificar uma matriz de
 
-(*n*, 0,0, 0,0)
+(*n*, 0.0, 0.0)
 
-(0,0, *n*, 0,0)
+(0.0, *n*, 0.0)
 
-(0,0, 0,0, 1,0)
+(0.0, 0.0, 1.0)
 
-onde *n* é o fator de ampliação.
+em *que n* é o fator de ampliação.
 
-O exemplo a seguir mostra como definir o fator de ampliação para o controle lupa.
+O exemplo a seguir mostra como definir o fator de ampliação para o controle de lupa.
 
 ```C++
 // Description:
@@ -284,11 +284,11 @@ BOOL SetMagnificationFactor(HWND hwndMag, float magFactor)
 }
 ```
 
-### <a name="setting-the-source-rectangle"></a>Configurando o retângulo de origem
+### <a name="setting-the-source-rectangle"></a>Definindo o retângulo de origem
 
-À medida que o usuário move o cursor do mouse pela tela, seu aplicativo chama a função [**MagSetWindowSource**](/windows/win32/api/Magnification/nf-magnification-magsetwindowsource) para especificar a parte da tela subjacente que será ampliada.
+À medida que o usuário move o cursor do mouse em torno da tela, seu aplicativo chama a [**função MagSetWindowSource**](/windows/win32/api/Magnification/nf-magnification-magsetwindowsource) para especificar a parte da tela subjacente que deve ser ampliada.
 
-A função de exemplo a seguir calcula a posição e as dimensões do retângulo de origem (com base na posição do mouse e as dimensões da janela da lupa dividida pelo fator de ampliação) e define o retângulo de origem de acordo. A função também centraliza a área cliente da janela host na posição do mouse. Essa função seria chamada em intervalos para atualizar a janela de ampliação.
+A função de exemplo a seguir calcula a posição e as dimensões do retângulo de origem (com base na posição do mouse e nas dimensões da janela de lupa divididas pelo fator de ampliação) e define o retângulo de origem adequadamente. A função também centraliza a área do cliente da janela do host na posição do mouse. Essa função seria chamada em intervalos para atualizar a janela de ampliação.
 
 ```C++
 // Description: 
@@ -341,11 +341,11 @@ void CALLBACK UpdateMagWindow(HWND /*hwnd*/, UINT /*uMsg*/,
 
 ### <a name="applying-color-effects"></a>Aplicando efeitos de cor
 
-Um controle de lupa com o estilo [**MS_INVERTCOLORS**](magapi-magnifier-styles.md) aplica uma matriz de transformação de cor interna que inverte as cores do conteúdo da tela ampliada. A ilustração a seguir mostra o conteúdo de tela em um controle de lupa que tem o estilo de **MS_INVERTCOLORS** .
+Um controle de lupa que tem o [**estilo MS_INVERTCOLORS**](magapi-magnifier-styles.md) aplica uma matriz de transformação de cores interna que inverte as cores do conteúdo de tela ampliado. A ilustração a seguir mostra o conteúdo da tela em um controle de lupa que tem o **MS_INVERTCOLORS** estilo.
 
-![captura de tela do conteúdo ampliado com cores invertidas](images/color-inversion.png)
+![captura de tela de conteúdo ampliado com cores invertidas](images/color-inversion.png)
 
-A função [**MagSetColorEffect**](/windows/win32/api/Magnification/nf-magnification-magsetcoloreffect) permite que você aplique outros efeitos de cor configurando uma matriz de transformação de cor definida pelo aplicativo. Por exemplo, a função a seguir define uma matriz de transformação de cor que converte cores em escala de cinza.
+A [**função MagSetColorEffect**](/windows/win32/api/Magnification/nf-magnification-magsetcoloreffect) permite aplicar outros efeitos de cor definindo uma matriz de transformação de cores definida pelo aplicativo. Por exemplo, a função a seguir define uma matriz de transformação de cores que converte cores em escala de cinza.
 
 
 ```C++
@@ -381,11 +381,11 @@ BOOL ConvertToGrayscale(HWND hwndMag, BOOL fConvert)
 }
 ```
 
-Para obter mais informações sobre como funcionam as transformações de cores, consulte [usando uma matriz de cores para transformar uma única cor](../../gdiplus/-gdiplus-using-a-color-matrix-to-transform-a-single-color-use.md) na documentação do GDI+.
+Para obter mais informações sobre como as transformações de cores funcionam, consulte [Using a Color Matrix to Transform a Single Color](../../gdiplus/-gdiplus-using-a-color-matrix-to-transform-a-single-color-use.md) in the GDI+ documentation.
 
 ### <a name="selective-magnification"></a>Ampliação seletiva
 
-Por padrão, a ampliação é aplicada a todas as janelas que não sejam a própria janela de ampliação. Para especificar quais janelas devem ser ampliadas, chame a função [**MagSetWindowFilterList**](/windows/win32/api/Magnification/nf-magnification-magsetwindowfilterlist) . Esse método usa uma lista do Windows para ampliar ou uma lista de janelas a serem excluídas da ampliação.
+Por padrão, a ampliação é aplicada a todas as janelas que não a própria janela de ampliação. Para especificar quais janelas devem ser ampliadas, chame a [**função MagSetWindowFilterList.**](/windows/win32/api/Magnification/nf-magnification-magsetwindowfilterlist) Esse método leva uma lista de janelas para ampliar ou uma lista de janelas para excluir da ampliação.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
