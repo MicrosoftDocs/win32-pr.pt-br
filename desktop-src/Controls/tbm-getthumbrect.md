@@ -1,9 +1,9 @@
 ---
-title: Mensagem de TBM_GETTHUMBRECT (commctrl. h)
-description: Recupera o tamanho e a posição do retângulo delimitador para o controle deslizante em um TrackBar.
+title: TBM_GETTHUMBRECT mensagem (Commctrl.h)
+description: Recupera o tamanho e a posição do retângulo delimitador para o controle deslizante em uma barra de faixa.
 ms.assetid: f53fd7af-36f8-4490-aa95-f1fa20f34efb
 keywords:
-- Controles de TBM_GETTHUMBRECT de mensagens do Windows
+- TBM_GETTHUMBRECT controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dce1bba8af9a65f297aa0515c1103c50daa1626d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f4d2582ccfb5276f65cbf1187458774622e62f6dd87d8dcadd2e16a7447f769a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009391"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120046356"
 ---
-# <a name="tbm_getthumbrect-message"></a>\_Mensagem tbm GETTHUMBRECT
+# <a name="tbm_getthumbrect-message"></a>Mensagem \_ TBM GETTHUMBRECT
 
-Recupera o tamanho e a posição do retângulo delimitador para o controle deslizante em um TrackBar.
+Recupera o tamanho e a posição do retângulo delimitador para o controle deslizante em uma barra de faixa.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -35,11 +35,11 @@ Recupera o tamanho e a posição do retângulo delimitador para o controle desli
 *lParam* 
 </dt> <dd>
 
-Ponteiro para uma estrutura [**Rect**](/previous-versions//dd162897(v=vs.85)) . A mensagem preenche essa estrutura com o retângulo delimitador do controle deslizante do TrackBar nas coordenadas do cliente da janela do TrackBar.
+Ponteiro para uma [**estrutura RECT.**](/previous-versions//dd162897(v=vs.85)) A mensagem preenche essa estrutura com o retângulo delimitador do controle deslizante da barra de faixa nas coordenadas do cliente da janela da barra de faixas.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sem valor de retorno.
 
@@ -49,9 +49,9 @@ Sem valor de retorno.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

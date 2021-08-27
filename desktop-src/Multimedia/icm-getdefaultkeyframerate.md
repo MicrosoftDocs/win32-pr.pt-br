@@ -1,9 +1,9 @@
 ---
 title: Mensagem de ICM_GETDEFAULTKEYFRAMERATE (VFW. h)
-description: A \_ mensagem ICM GETDEFAULTKEYFRAMERATE consulta um driver de compactação de vídeo para seu espaçamento padrão (ou preferencial) de quadro-chave. Você pode enviar essa mensagem explicitamente ou usando a macro ICGetDefaulteyFrameRate.
+description: o ICM \_ mensagem GETDEFAULTKEYFRAMERATE consulta um driver de compactação de vídeo para seu espaçamento padrão (ou preferencial) de quadro de chave. Você pode enviar essa mensagem explicitamente ou usando a macro ICGetDefaulteyFrameRate.
 ms.assetid: 2ebe37cc-3ec2-4b52-bd8f-71c44b704647
 keywords:
-- Multimídia do Windows de mensagem ICM_GETDEFAULTKEYFRAMERATE
+- mensagem de ICM_GETDEFAULTKEYFRAMERATE Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e64f2796ca1c2de10222330217a0e1deb7883baa
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bff21682f08dfdcda120f5efb5f7f8629a9e93e21faaf27ff4ee9ee59da8c762
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369672"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120038696"
 ---
-# <a name="icm_getdefaultkeyframerate-message"></a>\_Mensagem GETDEFAULTKEYFRAMERATE de ICM
+# <a name="icm_getdefaultkeyframerate-message"></a>ICM \_ Mensagem GETDEFAULTKEYFRAMERATE
 
-A mensagem **ICM \_ GETDEFAULTKEYFRAMERATE** consulta um driver de compactação de vídeo para seu espaçamento padrão (ou preferencial) de quadro-chave. Você pode enviar essa mensagem explicitamente ou usando a macro [**ICGetDefaulteyFrameRate**](/windows/desktop/api/Vfw/nf-vfw-icgetdefaultkeyframerate) .
+o **ICM mensagem \_ GETDEFAULTKEYFRAMERATE** consulta um driver de compactação de vídeo para seu espaçamento padrão (ou preferencial) de quadro de chave. Você pode enviar essa mensagem explicitamente ou usando a macro [**ICGetDefaulteyFrameRate**](/windows/desktop/api/Vfw/nf-vfw-icgetdefaultkeyframerate) .
 
 
 ```C++

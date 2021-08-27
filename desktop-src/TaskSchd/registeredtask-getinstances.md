@@ -1,11 +1,11 @@
 ---
-title: Método RegisteredTask. GetInstances
+title: Método RegisteredTask.GetInstances
 description: Para scripts, retorna todas as instâncias atualmente em execução da tarefa registrada.
 ms.assetid: 01fea94e-fdec-4edf-886a-f6d9b566f201
 keywords:
 - Método GetInstances Agendador de Tarefas
-- Método GetInstances Agendador de Tarefas, objeto RegisteredTask
-- Objeto RegisteredTask Agendador de Tarefas, método GetInstances
+- Método GetInstances Agendador de Tarefas , objeto RegisteredTask
+- Método Agendador de Tarefas objeto RegisteredTask , GetInstances
 topic_type:
 - apiref
 api_name:
@@ -16,19 +16,19 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 78b1579df1124fcd6d26ea658730190b5eb0f5de
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4f9224922e70242304423950a67bf4acd866d1a551a90f4c9a6dadb94470ba1f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086077"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120126056"
 ---
-# <a name="registeredtaskgetinstances-method"></a>Método RegisteredTask. GetInstances
+# <a name="registeredtaskgetinstances-method"></a>Método RegisteredTask.GetInstances
 
 Para scripts, retorna todas as instâncias atualmente em execução da tarefa registrada.
 
 > [!Note]  
-> **RegisteredTask. GetInstances** retornará apenas instâncias da tarefa registrada em execução no momento que estão em execução no contexto de segurança de um usuário ou abaixo dele. Por exemplo, para membros do grupo Administradores, as **GetInstances** retornarão todas as instâncias da tarefa registrada atualmente em execução, mas, para os membros do grupo usuários, **GetInstances** retornará apenas as instâncias da tarefa registrada atualmente em execução no contexto de segurança do grupo de usuários.
+> **RegisteredTask.GetInstances** retornará apenas instâncias da tarefa registrada em execução no momento que estão em execução no contexto de segurança de um usuário ou abaixo. Por exemplo, para membros do grupo Administradores, **GetInstances** retornará todas as instâncias da tarefa registrada em execução no momento, mas para membros do grupo Usuários, **GetInstances** retornará apenas instâncias da tarefa registrada em execução no momento em execução no contexto de segurança do grupo Usuários.
 
  
 
@@ -55,14 +55,14 @@ Esse parâmetro é reservado para uso futuro e deve ser definido como 0.
 
 </dd> <dt>
 
-*runningTasks* \[ fora\]
+*runningTasks* \[ out\]
 </dt> <dd>
 
-Um objeto [**RunningTaskCollection**](runningtaskcollection.md) que contém todas as instâncias atualmente em execução da tarefa.
+Um [**objeto RunningTaskCollection**](runningtaskcollection.md) que contém todas as instâncias em execução atualmente da tarefa.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
@@ -72,9 +72,9 @@ Esse método não retorna um valor.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

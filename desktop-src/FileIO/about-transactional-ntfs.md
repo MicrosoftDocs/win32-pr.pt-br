@@ -4,12 +4,12 @@ ms.assetid: 52341315-0412-4a87-aca0-9adea7aae62f
 title: Sobre o NTFS Transacional
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2dcf8cd99dfb1ff18ef7da88d3b3c7b0a647417e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 404dc966673eac9d61229ab127877941fe82354ddffcfd021ba76b9931c8e097
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296377"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120102106"
 ---
 # <a name="about-transactional-ntfs"></a>Sobre o NTFS Transacional
 
@@ -19,7 +19,7 @@ O NTFS Transacional (TxF) integra as transações no sistema de arquivos NTFS, o
 
 O TxF pode participar de transações distribuídas que o [Coordenador de transações distribuídas (DTC)](/previous-versions/windows/desktop/ms684146(v=vs.85)) coordena, que permite que você use o TxF para o seguinte:
 
--   Transações que abrangem vários repositórios de dados, por exemplo, uma única transação para operações de arquivo e SQL
+-   transações que abrangem vários repositórios de dados, por exemplo, uma única transação para operações de arquivo e SQL
 -   Transações que abrangem vários computadores, por exemplo, uma única transação para atualizações de arquivo em vários computadores
 
 ## <a name="in-this-section"></a>Nesta seção
@@ -29,7 +29,7 @@ O TxF pode participar de transações distribuídas que o [Coordenador de transa
 | Tópico                                                                                                                 | Descrição                                                                                                                          |
 |-----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
 | [Quando usar o NTFS Transacional](when-to-use-transactional-ntfs.md)<br/>                                       | Use o NTFS transacional para manter a integridade dos dados.<br/>                                                                        |
-| [Implantando o NTFS Transacional](deploying-transactional-ntfs.md)<br/>                                           | Controle de cache em NTFS Transacional.<br/>                                                                                    |
+| [Implantando o NTFS Transacional](deploying-transactional-ntfs.md)<br/>                                           | Caching controle no NTFS transacional.<br/>                                                                                    |
 | [Como usar o NTFS Transacional](how-to-use-transactional-ntfs.md)<br/>                                         | Gerenciando identificadores de arquivo transacionais em NTFS Transacional.<br/>                                                                   |
 | [Conceitos básicos do TxF](txf-basic-concepts.md)<br/>                                                               | Descreve a consistência de leitura confirmada, isolamento de confirmação de leitura e conceitos de bloqueio transacional em NTFS Transacional.<br/> |
 | [Considerações de programação para NTFS Transacional](programming-considerations-for-transacted-fileio-.md)<br/> | Descreve várias considerações de programação para NTFS Transacional.<br/>                                                      |

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: a5fa56c05036380b5dba42089979b43d776a4b57
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eabba7b5cf234d48b2839074ec1ad07380a7ed14858f6bd43b07f7d2eaa033b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105747732"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120037186"
 ---
 # <a name="istatsdisconnect-method"></a>Método IStats::D isconnect
 
@@ -38,7 +38,7 @@ HRESULT STDMETHODCALLTYPE Disconnect();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se o método for bem-sucedido, o valor de retorno será NMERR com \_ êxito.
 
@@ -50,7 +50,7 @@ Se o método não for bem-sucedido, o valor de retorno será um dos seguintes c�
 |--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**captura de NMERR \_**</dt> </dl>        | O NPP está capturando dados no momento. Não é possível desconectar da rede enquanto uma captura de dados está em andamento.<br/> |
 | <dl> <dt>**NMERR \_ não \_ conectado**</dt> </dl>   | O NPP não está conectado à rede.<br/>                                                                         |
-| <dl> <dt>**NMERR \_ \_ somente não estatísticas \_**</dt> </dl> | O NPP está conectado à rede, mas não com o método [**IStats:: Connect**](istats-connect.md) .<br/>          |
+| <dl> <dt>**NMERR \_ \_ somente não estatísticas \_**</dt> </dl> | o NPP está conectado à rede, mas não com o método [**IStats:: Conexão**](istats-connect.md) .<br/>          |
 
 
 
@@ -80,7 +80,7 @@ Este método não pode ser chamado quando o NPP está capturando dados. Chame o 
 [**IStats**](istats.md)
 </dt> <dt>
 
-[**IStats:: conectar**](istats-connect.md)
+[**IStats:: Conexão**](istats-connect.md)
 </dt> <dt>
 
 [**IStats:: Stop**](istats-stop.md)

@@ -1,9 +1,9 @@
 ---
-title: Mensagem de TBM_GETPAGESIZE (commctrl. h)
-description: Recupera o número de posições lógicas que o controle deslizante do TrackBar move em resposta à entrada do teclado, como as chaves ou, ou entrada do mouse, como cliques no canal do TrackBar.
+title: TBM_GETPAGESIZE mensagem (Commctrl.h)
+description: Recupera o número de posições lógicas que o controle deslizante da barra de faixa move em resposta à entrada do teclado, como as teclas ou ou a entrada do mouse, como cliques no canal da barra de faixa.
 ms.assetid: f0c5feac-2723-440e-96c0-dac37b0531ed
 keywords:
-- Controles de TBM_GETPAGESIZE de mensagens do Windows
+- TBM_GETPAGESIZE controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ac58c0b935b468cf8af565fba2db67c88418ee4f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b1aa3ef3412fd00c18972b62d4d868ff1dbc97cb4787693b3746281b4884706e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085581"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120046496"
 ---
-# <a name="tbm_getpagesize-message"></a>TBM obter \_ mensagem
+# <a name="tbm_getpagesize-message"></a>Mensagem \_ GETPAGESIZE do TBM
 
-Recupera o número de posições lógicas que o controle deslizante do TrackBar move em resposta à entrada do teclado, como as chaves ou, ou entrada do mouse, como cliques no canal do TrackBar. As posições lógicas são os incrementos inteiros no intervalo de TrackBar de mínimo a máximo de posições do controle deslizante.
+Recupera o número de posições lógicas que o controle deslizante da barra de faixa move em resposta à entrada do teclado, como as teclas ou ou a entrada do mouse, como cliques no canal da barra de faixa. As posições lógicas são os incrementos inteiros no intervalo da barra de faixa de posições mínimas para máximas do controle deslizante.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -35,13 +35,13 @@ Recupera o número de posições lógicas que o controle deslizante do TrackBar 
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor de 32 bits que especifica o tamanho da página para o TrackBar.
+Retorna um valor de 32 bits que especifica o tamanho da página para a barra de faixas.
 
 ## <a name="remarks"></a>Comentários
 
-O TrackBar também envia uma mensagem do [**WM \_ HSCROLL**](wm-hscroll.md) ou do [**WM \_ VSCROLL**](wm-vscroll.md) com os códigos de notificação de TB \_ PageUp e TB \_ PageDown para sua janela pai quando recebe entrada de teclado ou mouse que rola a página.
+A barra de faixa também envia uma mensagem [**WM \_ HSCROLL**](wm-hscroll.md) ou [**WM \_ VSCROLL**](wm-vscroll.md) com os códigos de notificação PAGEUP e PAGEDOWN de TB para sua janela pai quando recebe uma entrada do teclado ou mouse que rola a \_ \_ página.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,9 +49,9 @@ O TrackBar também envia uma mensagem do [**WM \_ HSCROLL**](wm-hscroll.md) ou d
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ O TrackBar também envia uma mensagem do [**WM \_ HSCROLL**](wm-hscroll.md) ou d
 
 <dl> <dt>
 
-[**TBM de \_ páginas**](tbm-setpagesize.md)
+[**TBM \_ SETPAGESIZE**](tbm-setpagesize.md)
 </dt> </dl>
 
  

@@ -1,22 +1,22 @@
 ---
-title: Visualizando vídeo (Multimídia do Windows)
-description: Este exemplo em Multimídia do Windows usa capPreviewRate para definir a taxa de exibição do quadro para o modo de visualização e capPreview para colocar a janela de captura no modo de visualização.
+title: visualizando vídeo (Windows multimídia)
+description: este exemplo em Windows multimídia usa capPreviewRate para definir a taxa de exibição do quadro para o modo de visualização e capPreview para colocar a janela de captura no modo de visualização.
 ms.assetid: 33ae7d07-5fea-47d7-b60d-4ee412e91dec
 keywords:
 - macro capPreview
 - macro capPreviewRate
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bdc3aaeb9a8ff0f040218fca4822af93ab8bfe29
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 0e70d0520af3bb71906c6b0ea4d1c0a61464559eedfd2385753b228841fa6af4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112405539"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120037906"
 ---
-# <a name="previewing-video-windows-multimedia"></a>Visualizando vídeo (Multimídia do Windows)
+# <a name="previewing-video-windows-multimedia"></a>visualizando vídeo (Windows multimídia)
 
-O exemplo a seguir usa a macro [**capPreviewRate**](/windows/desktop/api/Vfw/nf-vfw-cappreviewrate) para definir a taxa de exibição do quadro para o modo de visualização como 66 milissegundos por quadro e, em seguida, usa a macro [**capPreview**](/windows/desktop/api/Vfw/nf-vfw-cappreview) para colocar a janela de captura no modo de visualização.
+O exemplo a seguir usa a macro [**capPreviewRate**](/windows/desktop/api/Vfw/nf-vfw-cappreviewrate) para definir a taxa de exibição do quadro para o modo de visualização como 66 milissegundos por quadro e, em seguida, usa a macro [**capPreview**](/windows/desktop/api/Vfw/nf-vfw-cappreview) para posicionar a janela de captura no modo de visualização.
 
 
 ```C++
@@ -38,7 +38,7 @@ capPreview(hWndC, FALSE);        // disables preview
 
 <dl> <dt>
 
-[Usando a Captura de Vídeo](using-video-capture.md)
+[Usando a captura de vídeo](using-video-capture.md)
 </dt> </dl>
 
  

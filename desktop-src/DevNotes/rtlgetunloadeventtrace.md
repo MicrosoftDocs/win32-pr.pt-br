@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ntdll.dll
-ms.openlocfilehash: 9297ba0019c89c5e93961d4b36e0fe16da04d6bb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d8575610ab34b62c9228f87fa64fbd6a40fa0201b7fe1a70ab95c7daae706854
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748686"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120058586"
 ---
 # <a name="rtlgetunloadeventtrace-function"></a>Função RtlGetUnloadEventTrace
 
-\[Essa função pode ser alterada ou removida do Windows sem aviso prévio.\]
+\[essa função pode ser alterada ou removida de Windows sem aviso prévio.\]
 
 Permite que o código de despejo obtenha as informações do módulo descarregado de Ntdll.dll para armazenamento no minidespejo.
 
@@ -62,7 +62,7 @@ typedef struct _RTL_UNLOAD_EVENT_TRACE {
 RTL_UNLOAD_EVENT_TRACE RtlpUnloadEventTrace[RTL_UNLOAD_EVENT_TRACE_NUMBER];
 ```
 
-Esta função não tem nenhum arquivo de cabeçalho associado. A biblioteca de importação associada, ntdll. lib, está disponível no Windows Driver Kit (WDK). Você também pode chamar essa função usando as funções [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+Esta função não tem nenhum arquivo de cabeçalho associado. a biblioteca de importação associada, Ntdll. lib, está disponível no Windows Driver Kit (WDK). Você também pode chamar essa função usando as funções [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
 
 ## <a name="requirements"></a>Requisitos
 

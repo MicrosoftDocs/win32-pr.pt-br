@@ -4,16 +4,16 @@ ms.assetid: 7d25be71-ffbe-4e8c-9a45-cdeb35d10292
 title: Enumerações de áudio de núcleo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 35c786e1e18f25374a942a4140b67f0992ca7281
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 0210d52f1bde431cb661b38c8e06e83f646331a6c1726a98f2d05b3090ba41f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104457174"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120059016"
 ---
 # <a name="core-audio-enumerations"></a>Enumerações de áudio de núcleo
 
-Esta seção descreve as enumerações usadas pelas principais APIs de áudio no Windows Vista e versões posteriores.
+esta seção descreve as enumerações usadas pelas APIs de áudio principal no Windows Vista e posterior.
 
 
 

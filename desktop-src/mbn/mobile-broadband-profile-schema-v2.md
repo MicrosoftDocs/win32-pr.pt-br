@@ -4,16 +4,16 @@ ms.assetid: 0E140DCC-373C-44B3-8A91-F38AE7A5797C
 title: Esquema de perfil de banda larga móvel v2
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1328e2b108c80addc8f69584cd1b3cbd797ac777
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b7ea5420435b715c83757731d538b80857576982b2d4b0b426d96f86680f2b19
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090306"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120114346"
 ---
 # <a name="mobile-broadband-profile-schema-v2"></a>Esquema de perfil de banda larga móvel v2
 
-O esquema de perfil de banda larga 8Mobile do Windows v2 está disponível no namespace `https://www.microsoft.com/networking/WWAN/profile/v2` .
+a Windows esquema de perfil de banda larga 8Mobile v2 está disponível no namespace `https://www.microsoft.com/networking/WWAN/profile/v2` .
 
 -   [Elementos do esquema de perfil de banda larga móvel v2](mobile-broadband-profile-schema-v2-elements.md)
 

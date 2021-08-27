@@ -3,7 +3,7 @@ title: Mensagem de TBM_GETTHUMBLENGTH (commctrl. h)
 description: Recupera o comprimento do controle deslizante em um TrackBar.
 ms.assetid: 290187a2-7bf7-4a4b-a4cf-132f8ad38020
 keywords:
-- Controles de TBM_GETTHUMBLENGTH de mensagens do Windows
+- controles de Windows de mensagem de TBM_GETTHUMBLENGTH
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 320789c7d3fb94cb4e8afa9abab412887533de9e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c14f7f64ff288c7e3266919bfcd0444e394077d28f515cb9bc255164db3e8819
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009392"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120046406"
 ---
 # <a name="tbm_getthumblength-message"></a>\_Mensagem tbm GETTHUMBLENGTH
 
@@ -35,7 +35,7 @@ Recupera o comprimento do controle deslizante em um TrackBar.
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o comprimento, em pixels, do controle deslizante.
 
@@ -45,9 +45,9 @@ Retorna o comprimento, em pixels, do controle deslizante.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

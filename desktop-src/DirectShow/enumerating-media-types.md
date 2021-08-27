@@ -4,18 +4,18 @@ ms.assetid: 7878885f-c285-4744-8eab-445678dcfd49
 title: Enumerando tipos de mídia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3909c25e9ae5f90a3084eebb531431cc93ef46cd
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: a4e2f063fc243d081b930a1bf47f85904dfbc2fc7eef00fb595d5f0fb3a451ec
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104297927"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120102796"
 ---
 # <a name="enumerating-media-types"></a>Enumerando tipos de mídia
 
 Os Pins dão suporte ao método [**IPin:: EnumMediaTypes**](/windows/desktop/api/Strmif/nf-strmif-ipin-enummediatypes) , que enumera os tipos de mídia preferenciais de um PIN. Ele retorna um ponteiro para a interface [**IEnumMediaTypes**](/windows/desktop/api/Strmif/nn-strmif-ienummediatypes) . O método [**IEnumMediaTypes:: Next**](/windows/desktop/api/Strmif/nf-strmif-ienummediatypes-next) recupera ponteiros para as estruturas do [**\_ \_ tipo mídia**](/windows/win32/api/strmif/ns-strmif-am_media_type) que descrevem os tipos de mídia.
 
-O enumerador de tipo de mídia existe principalmente para ajudar o Gerenciador do grafo de filtro a fazer conexões inteligentes e seus aplicativos provavelmente não o usarão. Um PIN não retorna necessariamente nenhum tipo de mídia preferencial. Além disso, os tipos de mídia que ele retorna podem depender do status da conexão do filtro. Por exemplo, o PIN de saída de um filtro pode retornar um conjunto diferente de tipos de mídia, dependendo de qual tipo de mídia foi definido para o PIN de entrada do filtro.
+o enumerador de tipo de mídia existe principalmente para ajudar o filtro Graph Manager a fazer conexões inteligentes e seus aplicativos provavelmente não o usarão. Um PIN não retorna necessariamente nenhum tipo de mídia preferencial. Além disso, os tipos de mídia que ele retorna podem depender do status da conexão do filtro. Por exemplo, o PIN de saída de um filtro pode retornar um conjunto diferente de tipos de mídia, dependendo de qual tipo de mídia foi definido para o PIN de entrada do filtro.
 
 O exemplo a seguir localiza um tipo de mídia preferencial que corresponde a um tipo principal, subtipo ou tipo de formato especificado.
 
@@ -104,7 +104,7 @@ HRESULT GetPinMediaType(
 
 <dl> <dt>
 
-[Enumerando objetos em um grafo de filtro](enumerating-objects-in-a-filter-graph.md)
+[Enumerando objetos em um filtro Graph](enumerating-objects-in-a-filter-graph.md)
 </dt> <dt>
 
 [**IEnumMediaTypes**](/windows/desktop/api/Strmif/nn-strmif-ienummediatypes)

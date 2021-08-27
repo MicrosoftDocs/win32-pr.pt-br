@@ -1,12 +1,12 @@
 - name: Gerenciamento de compartilhamento de rede
   href: network-share-management.md
   items:
-    - name: Sobre o gerenciamento de compartilhamento de rede
+    - name: Sobre o Gerenciamento de Compartilhamento de Rede
       href: about-network-share-management.md
       items:
-        - name: O que há de novo no gerenciamento de compartilhamento de rede no Windows Server 2008 R2 e no Windows 7
+        - name: Novidades no Gerenciamento de Compartilhamento de Rede no Windows Server 2008 R2 e Windows 7
           href: what-s-new-in-network-share-management-in-windows-server-2008-r2-and-windows-7.md
-        - name: Funções de netfile
+        - name: Funções NetFile
           href: netfile-functions.md
         - name: Funções de compartilhamento de rede
           href: network-share-functions.md
@@ -46,7 +46,7 @@
               href: /windows/desktop/api/Lmshare/nf-lmshare-netshareenum
             - name: NetShareGetInfo
               href: /windows/desktop/api/Lmshare/nf-lmshare-netsharegetinfo
-            - name: NetShareSetInfo
+            - name: Netsharesetinfo
               href: /windows/desktop/api/Lmshare/nf-lmshare-netsharesetinfo
             - name: NetStatisticsGet
               href: /windows/desktop/api/Lmstats/nf-lmstats-netstatisticsget

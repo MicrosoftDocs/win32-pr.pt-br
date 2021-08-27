@@ -3,7 +3,7 @@ title: Mensagem de TBM_SETPAGESIZE (commctrl. h)
 description: Define o número de posições lógicas que o controle deslizante do TrackBar move em resposta à entrada do teclado, como as chaves ou, ou entrada do mouse, como cliques no canal do TrackBar.
 ms.assetid: 34edb868-4b6b-4b3f-b315-3ce39346b134
 keywords:
-- Controles de TBM_SETPAGESIZE de mensagens do Windows
+- controles de Windows de mensagem de TBM_SETPAGESIZE
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ec5d8a396bb605b4276346e84e7b46bfbefe0657
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 87cf41547a996e9726002101998ea859b7dbc6cc3e7ed3f87927fdae8bdadd2f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009598"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120046096"
 ---
 # <a name="tbm_setpagesize-message"></a>TBMr a \_ mensagem de página
 
@@ -39,7 +39,7 @@ Novo tamanho da página.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor de 32 bits que especifica o tamanho da página anterior.
 
@@ -53,9 +53,9 @@ O TrackBar também envia uma mensagem do [**WM \_ HSCROLL**](wm-hscroll.md) ou d
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

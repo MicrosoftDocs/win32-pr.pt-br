@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Offreg.dll
-ms.openlocfilehash: 375dae37e2e6b6299a7bf1fd36f9b950d0433d89
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fc364e208e9c243754edf8731f077ec48e9133d4a95ba86b5a1f99971192b51e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748904"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120058646"
 ---
 # <a name="orgetvalue-function"></a>Função ORGetValue
 
@@ -102,7 +102,7 @@ Se *pvData* for **nulo** e *pcbData* for não **nulo**, a função retornará ê
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for bem-sucedida, o valor de retorno será \_ êxito no erro.
 
@@ -118,8 +118,8 @@ Um aplicativo normalmente chama a função [**OREnumValue**](orenumvalue.md) par
 
 | Requisito | Valor |
 |----------------------------|---------------------------------------------------------------------------------------|
-| Redistribuível<br/> | Biblioteca de registro offline do Windows versão 1,0 ou posterior<br/>                      |
-| parâmetro<br/>          | <dl> <dt>Offreg. h</dt> </dl>   |
+| Redistribuível<br/> | Windows Biblioteca de registro offline versão 1,0 ou posterior<br/>                      |
+| Cabeçalho<br/>          | <dl> <dt>Offreg. h</dt> </dl>   |
 | DLL<br/>             | <dl> <dt>Offreg.dll</dt> </dl> |
 
 

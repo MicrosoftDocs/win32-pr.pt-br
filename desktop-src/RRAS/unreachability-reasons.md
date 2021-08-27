@@ -1,52 +1,52 @@
 ---
-title: Motivos de inacessibilidade
-description: A tabela a seguir lista os valores constantes que indicam por que uma interface está inacessível.
+title: Motivos de inatividade
+description: A tabela a seguir lista valores constantes que indicam por que uma interface está inacessível.
 ms.assetid: 55c0519e-02c8-4a04-bed9-9fe94327a4b6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f8b99d36ba895394a417130ab3ae45d1a47c7ed6
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 64cb833409d9d2ba31adedbc2942d39399c0a5763ad4d65dc7cdcaf234f97efb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104007898"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120025406"
 ---
-# <a name="unreachability-reasons"></a>Motivos de inacessibilidade
+# <a name="unreachability-reasons"></a>Motivos de inatividade
 
-A tabela a seguir lista os valores constantes que indicam por que uma interface está inacessível.
+A tabela a seguir lista valores constantes que indicam por que uma interface está inacessível.
 
 
 
 | Valor                                       | Significado                                                                                        |
 |---------------------------------------------|------------------------------------------------------------------------------------------------|
-| \_administrador da interface MPR \_ \_ desabilitado             | O administrador desabilitou a interface.                                                  |
-| \_ \_ falha na conexão da interface MPR \_         | Falha na tentativa de conexão anterior. Examine o membro **dwLastError** do código de erro. |
-| \_restrição de \_ horas de discagem da interface MPR \_ \_ | A conexão discada não é permitida no momento atual.                                                   |
-| \_interface \_ de MPR \_ sem \_ recursos          | Não há portas ou dispositivos disponíveis para uso.                                                     |
-| serviço de interface de MPR em \_ \_ \_ pausa             | O serviço está em pausa.                                                                         |
-| \_interface MPR \_ sem \_ sensor de mídia \_            | O cabo de rede está desconectado da placa de rede.                                       |
-| INTERFACE de MPR \_ \_ sem \_ dispositivo                  | A placa de rede foi removida do computador.                                            |
+| ADMINISTRADOR DA INTERFACE MPR \_ \_ \_ DESABILITADO             | O administrador desabilitou a interface.                                                  |
+| FALHA NA CONEXÃO DA INTERFACE MPR \_ \_ \_         | Falha na tentativa de conexão anterior. Veja o membro **dwLastError para** ver o código de erro. |
+| RESTRIÇÃO DE HORAS \_ \_ DE DISCAGEM DA INTERFACE \_ MPR \_ | A discagem não é permitida no momento.                                                   |
+| INTERFACE MPR \_ \_ SEM \_ \_ RECURSOS          | Nenhuma porta ou dispositivo está disponível para uso.                                                     |
+| SERVIÇO \_ DE INTERFACE MPR \_ \_ PAUSADO             | O serviço está em pausa.                                                                         |
+| INTERFACE MPR \_ \_ SEM SENTIDO DE \_ \_ MÍDIA            | O cabo de rede está desconectado da placa de rede.                                       |
+| INTERFACE MPR \_ \_ SEM \_ DISPOSITIVO                  | A placa de rede foi removida do computador.                                            |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[**INTERFACE de MPR \_ \_ 0**](/windows/desktop/api/Mprapi/ns-mprapi-mpr_interface_0)
+[**INTERFACE MPR \_ \_ 0**](/windows/desktop/api/Mprapi/ns-mprapi-mpr_interface_0)
 </dt> <dt>
 
-[**INTERFACE de MPR \_ \_ 1**](/windows/desktop/api/Mprapi/ns-mprapi-mpr_interface_1)
+[**INTERFACE \_ 1 da MPR \_**](/windows/desktop/api/Mprapi/ns-mprapi-mpr_interface_1)
 </dt> <dt>
 
-[**\_IFROW MIB**](/windows/desktop/api/ifmib/ns-ifmib-mib_ifrow)
+[**MIB \_ IFROW**](/windows/desktop/api/ifmib/ns-ifmib-mib_ifrow)
 </dt> <dt>
 
-[**\_IFSTATUS MIB**](/windows/desktop/api/iprtrmib/ns-iprtrmib-mib_ifstatus)
+[**MIB \_ IFSTATUS**](/windows/desktop/api/iprtrmib/ns-iprtrmib-mib_ifstatus)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

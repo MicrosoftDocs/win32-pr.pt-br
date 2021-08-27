@@ -1,11 +1,11 @@
 ---
-title: Método INapServerManagement UnregisterSystemHealthValidator (NapServerManagement. h)
-description: É usado para cancelar o registro de um SHV com o servidor NAP.
+title: Método INapServerManagement UnregisterSystemHealthValidator (NapServerManagement.h)
+description: É usado para não fazer o registro de um SHV com o servidor NAP.
 ms.assetid: f4148df1-a230-4845-ac8b-9e04be9e0d6c
 keywords:
-- Método UnregisterSystemHealthValidator NAP
-- Método UnregisterSystemHealthValidator NAP, interface INapServerManagement
-- INapServerManagement interface NAP, método UnregisterSystemHealthValidator
+- Nap do método UnregisterSystemHealthValidator
+- Método NAP unregisterSystemHealthValidator , interface INapServerManagement
+- INapServerManagement interface NAP , método UnregisterSystemHealthValidator
 topic_type:
 - apiref
 api_name:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d0715445504b862d9ae9e8478b543f8e80378f08
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 116bcf2d2eec17389cf230bf0a1ad24ba386d2a6e35872570efda092e5992869
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499658"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120037826"
 ---
-# <a name="inapservermanagementunregistersystemhealthvalidator-method"></a>Método INapServerManagement:: UnregisterSystemHealthValidator
+# <a name="inapservermanagementunregistersystemhealthvalidator-method"></a>Método INapServerManagement::UnregisterSystemHealthValidator
 
 > [!Note]  
-> A plataforma de proteção de acesso à rede não está disponível a partir do Windows 10
+> A plataforma de Proteção de Acesso à Rede não está disponível a partir do Windows 10
 
  
 
-O método **INapServerManagement:: UnregisterSystemHealthValidator** é usado para cancelar o registro de um SHV com o servidor NAP.
+O **método INapServerManagement::UnregisterSystemHealthValidator** é usado para não fazer o registro de um SHV com o servidor NAP.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -50,21 +50,21 @@ HRESULT UnregisterSystemHealthValidator(
 *ID* \[ em\]
 </dt> <dd>
 
-Um [**SystemHealthEntityId**](nap-type-constants.md) que contém o identificador exclusivo do SHV para cancelar o registro.
+Um [**SystemHealthEntityId**](nap-type-constants.md) que contém o identificador exclusivo do SHV para o registro.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Outros códigos de erro específicos de COM também podem ser retornados.
+Outros códigos de erro específicos do COM também podem ser retornados.
 
 
 
 | Código de retorno                                                                                     | Descrição                                                        |
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>           | Operação bem-sucedida.<br/>                                    |
+| <dl> <dt>**S \_ OK**</dt> </dl>           | Êxito na operação.<br/>                                    |
 | <dl> <dt>**E \_ ACCESSDENIED**</dt> </dl> | Erro de permissões, acesso negado.<br/>                       |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | O limite de recursos do sistema não pôde executar a operação.<br/> |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | Limite de recursos do sistema, não foi possível executar a operação.<br/> |
 
 
 
@@ -72,7 +72,7 @@ Outros códigos de erro específicos de COM também podem ser retornados.
 
 ## <a name="remarks"></a>Comentários
 
-Se houver qualquer chamada assíncrona pendente no SHV, elas serão concluídas posteriormente e serão descartadas.
+Se houver chamadas assíncronas pendentes no SHV, elas serão concluídas posteriormente e serão descartadas.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -81,9 +81,9 @@ Se houver qualquer chamada assíncrona pendente no SHV, elas serão concluídas 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                               |
-| parâmetro<br/>                   | <dl> <dt>NapServerManagement. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>NapServerManagement. idl</dt> </dl> |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                               |
+| Cabeçalho<br/>                   | <dl> <dt>NapServerManagement.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapServerManagement.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qsvrmgmt.dll</dt> </dl>            |
 
 

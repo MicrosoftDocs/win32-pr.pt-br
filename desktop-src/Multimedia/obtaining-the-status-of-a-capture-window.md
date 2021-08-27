@@ -7,16 +7,16 @@ keywords:
 - Estrutura CAPSTATUS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 01f848898247ad8ea2ddbb0dde7a13c08b6a7274
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 8effedac3950f0f57aaa6e57ccd5a93fe3044982c3d6ec6d6bb69b56024a1255
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103917215"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120038366"
 ---
 # <a name="obtaining-the-status-of-a-capture-window"></a>Obtendo o status de uma janela de captura
 
-O exemplo a seguir usa a função [SetWindowPos](/windows/win32/api/winuser/nf-winuser-setwindowpos) para definir o tamanho da janela de captura para as dimensões gerais do fluxo de vídeo de entrada com base nas informações retornadas pela macro [**CapGetStatus**](/windows/desktop/api/Vfw/nf-vfw-capgetstatus) na estrutura [**CAPSTATUS**](/windows/win32/api/vfw/ns-vfw-capstatus) .
+O exemplo a seguir usa a função [SetWindowPos](/windows/win32/api/winuser/nf-winuser-setwindowpos) para definir o tamanho da janela de captura para as dimensões gerais do fluxo de vídeo de entrada com base nas informações retornadas pela macro [**capGetStatus**](/windows/desktop/api/Vfw/nf-vfw-capgetstatus) na estrutura [**CAPSTATUS.**](/windows/win32/api/vfw/ns-vfw-capstatus)
 
 
 ```C++
@@ -34,9 +34,9 @@ SetWindowPos(hWndC, NULL, 0, 0, CapStatus.uiImageWidth,
 
 <dl> <dt>
 
-[Usando a captura de vídeo](using-video-capture.md)
+[Usando a Captura de Vídeo](using-video-capture.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

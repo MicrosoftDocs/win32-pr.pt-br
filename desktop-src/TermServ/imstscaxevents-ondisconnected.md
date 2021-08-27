@@ -1,12 +1,12 @@
 ---
-title: Método OnDisconnect IMsTscAxEvents
-description: Chamado quando o controle de cliente foi desconectado do servidor de Host da Sessão da Área de Trabalho Remota (Host da Sessão RD).
+title: Método OnDisconnected IMsTscAxEvents
+description: Chamado quando o controle de cliente foi desconectado do servidor Host da Sessão da Área de Trabalho Remota (Host da Sessão RD).
 ms.assetid: f01086e7-61d1-41df-ba0a-4eecfa57d492
 ms.tgt_platform: multiple
 keywords:
-- Método OnDisconnect Serviços de Área de Trabalho Remota
-- Método OnDisconnect Serviços de Área de Trabalho Remota, interface IMsTscAxEvents
-- Serviços de Área de Trabalho Remota de interface IMsTscAxEvents, método ondisconnectd
+- Método OnDisconnected Serviços de Área de Trabalho Remota
+- Método OnDisconnected Serviços de Área de Trabalho Remota interface , IMsTscAxEvents
+- Interface IMsTscAxEvents Serviços de Área de Trabalho Remota , método OnDisconnected
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 372ad98c73b1b0e90753891e01e46c61a78c23dd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 02bc7351d1cc0fafa46aab1f93feed4cafc184dc33090d4d2c7947a285fbb234
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105753326"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120125126"
 ---
-# <a name="imstscaxeventsondisconnected-method"></a>Método IMsTscAxEvents:: OnDisconnect
+# <a name="imstscaxeventsondisconnected-method"></a>Método IMsTscAxEvents::OnDisconnected
 
-Chamado quando o controle de cliente foi desconectado do servidor de Host da Sessão da Área de Trabalho Remota (Host da Sessão RD).
+Chamado quando o controle de cliente foi desconectado do servidor Host da Sessão da Área de Trabalho Remota (Host da Sessão RD).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,10 +43,10 @@ void OnDisconnected(
 
 <dl> <dt>
 
-*discReason* \[ no\]
+*discReason* \[ Em\]
 </dt> <dd>
 
-Especifica o motivo para a desconexão. A seguir está uma lista de códigos de erro. Alguns desses códigos de erro são definidos em Wincred. h.
+Especifica o motivo da desconexão. Veja a seguir uma lista de códigos de erro. Alguns desses códigos de erro são definidos em Wincred.h.
 
 <dt>
 
@@ -68,7 +68,7 @@ Soquete fechado.
 
 </dt> <dd>
 
-Desconexão remota por servidor. Este não é um código de erro.
+Desconexão remota por servidor. Esse não é um código de erro.
 
 </dd> <dt>
 
@@ -112,7 +112,7 @@ Erro de descriptografia.
 
 </dt> <dd>
 
-Falha na pesquisa de nome DNS.
+Falha na lookup de nome DNS.
 
 </dd> <dt>
 
@@ -123,7 +123,7 @@ Falha na pesquisa de nome DNS.
 
 </dt> <dd>
 
-Falha na pesquisa de DNS.
+Falha na lookup do DNS.
 
 </dd> <dt>
 
@@ -145,7 +145,7 @@ Erro de criptografia.
 
 </dt> <dd>
 
-Falha na chamada [**gethostbyname**](/windows/desktop/api/wsipv6ok/nf-wsipv6ok-gethostbyname) do Windows Sockets.
+Windows Falha na [**chamada gethostbyname**](/windows/desktop/api/wsipv6ok/nf-wsipv6ok-gethostbyname) dos soquetes.
 
 </dd> <dt>
 
@@ -178,7 +178,7 @@ Erro interno.
 
 </dt> <dd>
 
-Erro interno de segurança.
+Erro de segurança interno.
 
 </dd> <dt>
 
@@ -189,7 +189,7 @@ Erro interno de segurança.
 
 </dt> <dd>
 
-Erro interno de segurança.
+Erro de segurança interno.
 
 </dd> <dt>
 
@@ -211,7 +211,7 @@ O método de criptografia especificado não é válido.
 
 </dt> <dd>
 
-Endereço IP inadequado especificado.
+Endereço IP ruim especificado.
 
 </dd> <dt>
 
@@ -266,7 +266,7 @@ Falha na negociação de licença.
 
 </dt> <dd>
 
-Tempo limite de licenciamento.
+Tempo de licenciamento.
 
 </dd> <dt>
 
@@ -277,7 +277,7 @@ Tempo limite de licenciamento.
 
 </dt> <dd>
 
-Desconexão local. Este não é um código de erro.
+Desconexão local. Esse não é um código de erro.
 
 </dd> <dt>
 
@@ -288,7 +288,7 @@ Desconexão local. Este não é um código de erro.
 
 </dt> <dd>
 
-Não há informações disponíveis.
+Nenhuma informação está disponível.
 
 </dd> <dt>
 
@@ -332,7 +332,7 @@ Sem memória.
 
 </dt> <dd>
 
-Desconexão remota por usuário. Este não é um código de erro.
+Desconexão remota por usuário. Esse não é um código de erro.
 
 </dd> <dt>
 
@@ -354,7 +354,7 @@ Falha ao desempacotar o certificado do servidor.
 
 </dt> <dd>
 
-Falha no Windows Sockets [**Connect**](/windows/desktop/api/winsock2/nf-winsock2-connect) .
+Windows Falha na conexão [**de soquetes.**](/windows/desktop/api/winsock2/nf-winsock2-connect)
 
 </dd> <dt>
 
@@ -365,7 +365,7 @@ Falha no Windows Sockets [**Connect**](/windows/desktop/api/winsock2/nf-winsock2
 
 </dt> <dd>
 
-Falha na chamada de [**recepção**](/windows/desktop/api/winsock/nf-winsock-recv) do Windows Sockets.
+Windows Falha na [**chamada recv**](/windows/desktop/api/winsock/nf-winsock-recv) de soquetes.
 
 </dd> <dt>
 
@@ -376,7 +376,7 @@ Falha na chamada de [**recepção**](/windows/desktop/api/winsock/nf-winsock-rec
 
 </dt> <dd>
 
-Tempo limite excedido.
+O tempo decorrida ocorreu.
 
 </dd> <dt>
 
@@ -387,7 +387,7 @@ Tempo limite excedido.
 
 </dt> <dd>
 
-Erro de temporizador interno.
+Erro interno do temporizador.
 
 </dd> <dt>
 
@@ -398,13 +398,13 @@ Erro de temporizador interno.
 
 </dt> <dd>
 
-Falha na chamada de [**envio**](/windows/desktop/api/winsock2/nf-winsock2-send) do Windows Sockets.
+Windows Falha na chamada [**de envio**](/windows/desktop/api/winsock2/nf-winsock2-send) de soquetes.
 
 </dd> <dt>
 
 <span id="SSL_ERR_ACCOUNT_DISABLED"></span><span id="ssl_err_account_disabled"></span>
 
-<span id="SSL_ERR_ACCOUNT_DISABLED"></span><span id="ssl_err_account_disabled"></span>**SSL \_ Conta de erro \_ \_ desabilitada** (2823 (0xB07))
+<span id="SSL_ERR_ACCOUNT_DISABLED"></span><span id="ssl_err_account_disabled"></span>**SSL \_ ERR \_ ACCOUNT \_ DISABLED** (2823 (0xB07))
 
 
 </dt> <dd>
@@ -415,7 +415,7 @@ A conta está desabilitada.
 
 <span id="SSL_ERR_ACCOUNT_EXPIRED"></span><span id="ssl_err_account_expired"></span>
 
-<span id="SSL_ERR_ACCOUNT_EXPIRED"></span><span id="ssl_err_account_expired"></span>**SSL \_ A \_ conta \_ de erro expirou** (3591 (0xE07))
+<span id="SSL_ERR_ACCOUNT_EXPIRED"></span><span id="ssl_err_account_expired"></span>**SSL \_ ERR \_ ACCOUNT \_ EXPIRED** (3591 (0xE07))
 
 
 </dt> <dd>
@@ -426,7 +426,7 @@ A conta expirou.
 
 <span id="SSL_ERR_ACCOUNT_LOCKED_OUT"></span><span id="ssl_err_account_locked_out"></span>
 
-<span id="SSL_ERR_ACCOUNT_LOCKED_OUT"></span><span id="ssl_err_account_locked_out"></span>**SSL \_ Conta de erro \_ \_ bloqueada \_** (3335 (0xD07))
+<span id="SSL_ERR_ACCOUNT_LOCKED_OUT"></span><span id="ssl_err_account_locked_out"></span>**SSL \_ ERR \_ ACCOUNT \_ LOCKED \_ OUT** (3335 (0xD07))
 
 
 </dt> <dd>
@@ -437,7 +437,7 @@ A conta está bloqueada.
 
 <span id="SSL_ERR_ACCOUNT_RESTRICTION"></span><span id="ssl_err_account_restriction"></span>
 
-<span id="SSL_ERR_ACCOUNT_RESTRICTION"></span><span id="ssl_err_account_restriction"></span>**SSL \_ \_ \_ Restrição de conta de erro** (3079 (0xC07))
+<span id="SSL_ERR_ACCOUNT_RESTRICTION"></span><span id="ssl_err_account_restriction"></span>**SSL \_ ERR \_ ACCOUNT \_ RESTRICTION** (3079 (0xC07))
 
 
 </dt> <dd>
@@ -448,7 +448,7 @@ A conta é restrita.
 
 <span id="SSL_ERR_CERT_EXPIRED"></span><span id="ssl_err_cert_expired"></span>
 
-<span id="SSL_ERR_CERT_EXPIRED"></span><span id="ssl_err_cert_expired"></span>**SSL \_ Certificado de erro \_ \_ expirado** (6919 (0x1B07))
+<span id="SSL_ERR_CERT_EXPIRED"></span><span id="ssl_err_cert_expired"></span>**SSL \_ ERR \_ CERT \_ EXPIRED** (6919 (0x1B07))
 
 
 </dt> <dd>
@@ -459,7 +459,7 @@ O certificado recebido expirou.
 
 <span id="SSL_ERR_DELEGATION_POLICY"></span><span id="ssl_err_delegation_policy"></span>
 
-<span id="SSL_ERR_DELEGATION_POLICY"></span><span id="ssl_err_delegation_policy"></span>**SSL \_ \_ \_ Política de delegação de erro** (5639 (0x1607))
+<span id="SSL_ERR_DELEGATION_POLICY"></span><span id="ssl_err_delegation_policy"></span>**SSL \_ POLÍTICA \_ DE \_ DELEGAÇÃO DE ERR** (5639 (0x1607))
 
 
 </dt> <dd>
@@ -470,18 +470,18 @@ A política não dá suporte à delegação de credenciais para o servidor de de
 
 <span id="SSL_ERR_FRESH_CRED_REQUIRED_BY_SERVER"></span><span id="ssl_err_fresh_cred_required_by_server"></span>
 
-<span id="SSL_ERR_FRESH_CRED_REQUIRED_BY_SERVER"></span><span id="ssl_err_fresh_cred_required_by_server"></span>**SSL \_ \_Novas credenciais de erro \_ \_ exigidas \_ pelo \_ servidor** (8455 (0x2107))
+<span id="SSL_ERR_FRESH_CRED_REQUIRED_BY_SERVER"></span><span id="ssl_err_fresh_cred_required_by_server"></span>**SSL \_ ERR \_ FRESH \_ CRED \_ \_ REQUIRED BY \_ SERVER** (8455 (0x2107))
 
 
 </dt> <dd>
 
-A política de autenticação de servidor não permite solicitações de conexão usando credenciais salvas. O usuário deve inserir novas credenciais.
+A política de autenticação do servidor não permite solicitações de conexão usando credenciais salvas. O usuário deve inserir novas credenciais.
 
 </dd> <dt>
 
 <span id="SSL_ERR_LOGON_FAILURE"></span><span id="ssl_err_logon_failure"></span>
 
-<span id="SSL_ERR_LOGON_FAILURE"></span><span id="ssl_err_logon_failure"></span>**SSL \_ \_ \_ Falha de logon de erro** (2055 (0x807))
+<span id="SSL_ERR_LOGON_FAILURE"></span><span id="ssl_err_logon_failure"></span>**SSL \_ ERR \_ LOGON \_ FAILURE** (2055 (0x807))
 
 
 </dt> <dd>
@@ -492,12 +492,12 @@ Falha no logon.
 
 <span id="SSL_ERR_NO_AUTHENTICATING_AUTHORITY"></span><span id="ssl_err_no_authenticating_authority"></span>
 
-<span id="SSL_ERR_NO_AUTHENTICATING_AUTHORITY"></span><span id="ssl_err_no_authenticating_authority"></span>**SSL \_ \_Não erro \_ \_ autoridade de autenticação** (6151 (0x1807))
+<span id="SSL_ERR_NO_AUTHENTICATING_AUTHORITY"></span><span id="ssl_err_no_authenticating_authority"></span>**SSL \_ ERR \_ NO \_ AUTHENTICATING \_ AUTHORITY** (6151 (0x1807))
 
 
 </dt> <dd>
 
-Nenhuma autoridade pode ser contatada para autenticação. O nome de domínio da parte de autenticação pode estar errado, o domínio pode estar inacessível ou pode ter havido uma falha de relação de confiança.
+Nenhuma autoridade pode ser contata para autenticação. O nome de domínio da parte de autenticação pode estar errado, o domínio pode estar inacessível ou pode ter sido uma falha de relação de confiança.
 
 </dd> <dt>
 
@@ -567,7 +567,7 @@ Um PIN incorreto foi apresentado ao cartão inteligente.
 
 </dd> </dl> </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
